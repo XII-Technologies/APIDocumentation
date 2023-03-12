@@ -1,0 +1,26 @@
+var structxii_string_reverse_iterator =
+[
+    [ "difference_type", "d8/d78/structxii_string_reverse_iterator.htm#af52ba9b7262b95e49e3cce1237ba3d84", null ],
+    [ "iterator_category", "d8/d78/structxii_string_reverse_iterator.htm#a0f05be8c93fa73ac2fa55b4a28e908f2", null ],
+    [ "pointer", "d8/d78/structxii_string_reverse_iterator.htm#aba58b8fea911f7367b216e57c4ce0bc1", null ],
+    [ "reference", "d8/d78/structxii_string_reverse_iterator.htm#a4c7ba573d3b00cfc3c5538f84c9e6281", null ],
+    [ "value_type", "d8/d78/structxii_string_reverse_iterator.htm#a5568a8d803fe31620e9f11c44d6dcc16", null ],
+    [ "xiiStringReverseIterator", "d8/d78/structxii_string_reverse_iterator.htm#afac5c118a40a4272ed1218094d9aea85", null ],
+    [ "xiiStringReverseIterator", "d8/d78/structxii_string_reverse_iterator.htm#aea633a96f97731f4ec8cfbff2a647cf1", null ],
+    [ "GetCharacter", "d8/d78/structxii_string_reverse_iterator.htm#a1a22d5900004ce7015d1c5f5ba5e8fc5", null ],
+    [ "GetData", "d8/d78/structxii_string_reverse_iterator.htm#a23c6d0dc0e355fd058bbfcee511f3626", null ],
+    [ "IsValid", "d8/d78/structxii_string_reverse_iterator.htm#a5a8f74a06980ec33ff8774d911e5d385", null ],
+    [ "operator!=", "d8/d78/structxii_string_reverse_iterator.htm#a8db458eb3323d2b74d410b84078fcfa5", null ],
+    [ "operator*", "d8/d78/structxii_string_reverse_iterator.htm#a6bc485bbb5f5ab9401d4f349c3183d10", null ],
+    [ "operator+", "d8/d78/structxii_string_reverse_iterator.htm#a0ca42aa2663ee2234ddb207a08116e8a", null ],
+    [ "operator++", "d8/d78/structxii_string_reverse_iterator.htm#ac1addbda122092b6c5a26491d1600a83", null ],
+    [ "operator++", "d8/d78/structxii_string_reverse_iterator.htm#a05309d59e19e1ff3bed1a33b2336ec56", null ],
+    [ "operator+=", "d8/d78/structxii_string_reverse_iterator.htm#a2916322be50c3db88053b59865b817ec", null ],
+    [ "operator-", "d8/d78/structxii_string_reverse_iterator.htm#a69469b86f56bfb1de7b2d61e6c6148cf", null ],
+    [ "operator--", "d8/d78/structxii_string_reverse_iterator.htm#a486c6d9d5238bcea60a49b0725a8e32b", null ],
+    [ "operator--", "d8/d78/structxii_string_reverse_iterator.htm#a7f2e6e223043593b7d99b72976f8c3e3", null ],
+    [ "operator-=", "d8/d78/structxii_string_reverse_iterator.htm#aa2600da020cb04ae706a527f80a1aebc", null ],
+    [ "operator==", "d8/d78/structxii_string_reverse_iterator.htm#a44932fd4f7d20dc254d0b07a85e277b5", null ],
+    [ "SetCurrentPosition", "d8/d78/structxii_string_reverse_iterator.htm#a173c64931e1f810f20766755742166cb", null ],
+    [ "XII_DECLARE_POD_TYPE", "d8/d78/structxii_string_reverse_iterator.htm#a6536a9fb9df2ca44b202333c1a66e493", null ]
+];

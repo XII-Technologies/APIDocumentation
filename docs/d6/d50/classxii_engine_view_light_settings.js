@@ -1,0 +1,26 @@
+var classxii_engine_view_light_settings =
+[
+    [ "xiiEngineViewLightSettings", "d6/d50/classxii_engine_view_light_settings.htm#a9f5c7e559cfe062011df4a6e3044c5d1", null ],
+    [ "~xiiEngineViewLightSettings", "d6/d50/classxii_engine_view_light_settings.htm#a16660d240329c74643743b9cba8f8926", null ],
+    [ "GetDirectionalLight", "d6/d50/classxii_engine_view_light_settings.htm#a5c08d8de25c40fc027e82c3d8bd93903", null ],
+    [ "GetDirectionalLightAngle", "d6/d50/classxii_engine_view_light_settings.htm#a75e3b5cf2fa5c82317d56912cc664d1d", null ],
+    [ "GetDirectionalLightIntensity", "d6/d50/classxii_engine_view_light_settings.htm#aa18735efde32d3c6af5c3f1eafbaa02a", null ],
+    [ "GetDirectionalLightShadows", "d6/d50/classxii_engine_view_light_settings.htm#a085e1cc3ebe08e44d8abfd9455f270c4", null ],
+    [ "GetFog", "d6/d50/classxii_engine_view_light_settings.htm#a145a1f59e1e255968ba506925eccc2a0", null ],
+    [ "GetSkyBox", "d6/d50/classxii_engine_view_light_settings.htm#a30eb3879c9913bb699931aa8e048b21d", null ],
+    [ "GetSkyLight", "d6/d50/classxii_engine_view_light_settings.htm#af1fa735d03c19d3041c347f79c2c1388", null ],
+    [ "GetSkyLightCubeMap", "d6/d50/classxii_engine_view_light_settings.htm#ae3c4b0714c51b3a51daba8d9b1458d89", null ],
+    [ "GetSkyLightIntensity", "d6/d50/classxii_engine_view_light_settings.htm#ac487bdc5ec5ca91b8917dfab5ed047db", null ],
+    [ "SetDirectionalLight", "d6/d50/classxii_engine_view_light_settings.htm#a3a7c5798853c1c213bda2ee8e6b0aa80", null ],
+    [ "SetDirectionalLightAngle", "d6/d50/classxii_engine_view_light_settings.htm#ac27c0a0f402fa7382d5d5d4027d19f17", null ],
+    [ "SetDirectionalLightIntensity", "d6/d50/classxii_engine_view_light_settings.htm#ad97c7d259ca89ed863550e0327e3d09d", null ],
+    [ "SetDirectionalLightShadows", "d6/d50/classxii_engine_view_light_settings.htm#af8a4b23bb84eaeea82d03bc3f5b71fed", null ],
+    [ "SetFog", "d6/d50/classxii_engine_view_light_settings.htm#af71b491cabfe76ccc89e51ac44b0ddca", null ],
+    [ "SetSkyBox", "d6/d50/classxii_engine_view_light_settings.htm#aca7e95b703e6c518fd8f46e8f086e046", null ],
+    [ "SetSkyLight", "d6/d50/classxii_engine_view_light_settings.htm#aa88d86481fe5449f6ceacc50f54a6fdd", null ],
+    [ "SetSkyLightCubeMap", "d6/d50/classxii_engine_view_light_settings.htm#a1b17dc93cc015451ce54a96e2891eda2", null ],
+    [ "SetSkyLightIntensity", "d6/d50/classxii_engine_view_light_settings.htm#a896264cda74a478e517c1d795e6b132b", null ],
+    [ "SetupForEngine", "d6/d50/classxii_engine_view_light_settings.htm#ab304a4666f3ccadf0aef0d54aa228fc0", null ],
+    [ "UpdateForEngine", "d6/d50/classxii_engine_view_light_settings.htm#aeb16e8716b6611ebe6ae530f1e9acd72", null ],
+    [ "m_EngineViewLightSettingsEvents", "d6/d50/classxii_engine_view_light_settings.htm#a65dd909f3d7ec8d390a58f112af207e2", null ]
+];

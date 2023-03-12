@@ -1,0 +1,25 @@
+var structxii_object_flags_1_1_bits =
+[
+    [ "ActiveFlag", "de/d49/structxii_object_flags_1_1_bits.htm#a698eeb1121a856f40196fb81e1b65ac6", null ],
+    [ "ActiveState", "de/d49/structxii_object_flags_1_1_bits.htm#a4dff868bd993ade62e94cc9267e175a7", null ],
+    [ "ChildChangesNotifications", "de/d49/structxii_object_flags_1_1_bits.htm#acf173563eaa20b2045907d8321473f41", null ],
+    [ "ComponentChangesNotifications", "de/d49/structxii_object_flags_1_1_bits.htm#ae39dc9ce4516c12db739dc48f43421af", null ],
+    [ "Dynamic", "de/d49/structxii_object_flags_1_1_bits.htm#a962d3e7f8db4e3bb27608a44212216ec", null ],
+    [ "ForceDynamic", "de/d49/structxii_object_flags_1_1_bits.htm#abc1ec1476da451f659ce5c4201c40ac2", null ],
+    [ "Initialized", "de/d49/structxii_object_flags_1_1_bits.htm#a8ef2020f12479e8ccd60cc612e12b777", null ],
+    [ "Initializing", "de/d49/structxii_object_flags_1_1_bits.htm#a6e341a69db986f0e1be0a308fda01494", null ],
+    [ "Padding", "de/d49/structxii_object_flags_1_1_bits.htm#a6020cab2f74dfc5793c10a9b0a8303c6", null ],
+    [ "ParentChangesNotifications", "de/d49/structxii_object_flags_1_1_bits.htm#a1da0fab02542b72780db7a155f51bffa", null ],
+    [ "SimulationStarted", "de/d49/structxii_object_flags_1_1_bits.htm#a5c6727107d4a66f7e22bd6671850355b", null ],
+    [ "SimulationStarting", "de/d49/structxii_object_flags_1_1_bits.htm#a2f290f76342364918957816a48255e82", null ],
+    [ "StaticTransformChangesNotifications", "de/d49/structxii_object_flags_1_1_bits.htm#a2af854804c00713281e833c40fa66de8", null ],
+    [ "UnhandledMessageHandler", "de/d49/structxii_object_flags_1_1_bits.htm#a9e74ab610cb396600d4257c3999d092b", null ],
+    [ "UserFlag0", "de/d49/structxii_object_flags_1_1_bits.htm#a1d3fc28a21b60646af3f4dc41d4c3a8c", null ],
+    [ "UserFlag1", "de/d49/structxii_object_flags_1_1_bits.htm#a690fa458e3710db5f3eb98d5c9c86c37", null ],
+    [ "UserFlag2", "de/d49/structxii_object_flags_1_1_bits.htm#aea9c9009dcf0b969393cc52d07cda3e4", null ],
+    [ "UserFlag3", "de/d49/structxii_object_flags_1_1_bits.htm#aba6c36845cac2606ec6070054eeb6fda", null ],
+    [ "UserFlag4", "de/d49/structxii_object_flags_1_1_bits.htm#a85bd3f2f5b9d013a409b6fd668ac2611", null ],
+    [ "UserFlag5", "de/d49/structxii_object_flags_1_1_bits.htm#a247b4448c70983efdda0a775cf32ba55", null ],
+    [ "UserFlag6", "de/d49/structxii_object_flags_1_1_bits.htm#ad3e1aea77be1100a950d9f36ceb4944f", null ],
+    [ "UserFlag7", "de/d49/structxii_object_flags_1_1_bits.htm#a9c2641b85a2d628e0819e18cfad680ef", null ]
+];

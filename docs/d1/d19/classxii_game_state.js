@@ -1,0 +1,27 @@
+var classxii_game_state =
+[
+    [ "xiiGameState", "d1/d19/classxii_game_state.htm#a6c8e34cc0e1993e24e63bd8b96c43c20", null ],
+    [ "~xiiGameState", "d1/d19/classxii_game_state.htm#a4bc92649b02901529dc61ab1323b10ad", null ],
+    [ "ChangeMainWorld", "d1/d19/classxii_game_state.htm#af63ddc5c41a406f21ba3802274e34b6e", null ],
+    [ "ConfigureInputActions", "d1/d19/classxii_game_state.htm#a4611e39b74bca1b0b955e23df550c563", null ],
+    [ "ConfigureMainCamera", "d1/d19/classxii_game_state.htm#aca6472aa0418d27e77dc749d3c65146d", null ],
+    [ "ConfigureMainWindowInputDevices", "d1/d19/classxii_game_state.htm#ab9552c40f43f3c20751f53e64596bf1a", null ],
+    [ "CreateActors", "d1/d19/classxii_game_state.htm#a26c4d9d701b0be6cff619dc1d9d6bb84", null ],
+    [ "CreateMainOutputTarget", "d1/d19/classxii_game_state.htm#a79f314ccb301c6449d9ec9c216d2386f", null ],
+    [ "CreateMainView", "d1/d19/classxii_game_state.htm#a345587fa373bee57561a832f7b0f90a6", null ],
+    [ "CreateMainWindow", "d1/d19/classxii_game_state.htm#a3007143bc2a87f32ca2310f9081cb7fd", null ],
+    [ "CreateXRActor", "d1/d19/classxii_game_state.htm#a349767789a617c550b6f253eb4f51074", null ],
+    [ "GetMainCamera", "d1/d19/classxii_game_state.htm#add688f726a4ade359efaf0f92f4db022", null ],
+    [ "OnActivation", "d1/d19/classxii_game_state.htm#ae30ed5d987592a260de917485f638ab0", null ],
+    [ "OnDeactivation", "d1/d19/classxii_game_state.htm#a43c949ae7d5447924a3a4838193c60e6", null ],
+    [ "ScheduleRendering", "d1/d19/classxii_game_state.htm#a8958e26c97b6467226006a1b55f0485c", null ],
+    [ "SetupMainView", "d1/d19/classxii_game_state.htm#a958e737aee2658061efe277105465f55", null ],
+    [ "SpawnPlayer", "d1/d19/classxii_game_state.htm#af3c176418afe46ba29c796ecd3f16860", null ],
+    [ "m_bStateWantsToQuit", "d1/d19/classxii_game_state.htm#a4b4b6548a8a0fd3ce25475a1d3a9fa45", null ],
+    [ "m_bXREnabled", "d1/d19/classxii_game_state.htm#ace826c0e768a22b64003e4ffd0078cbb", null ],
+    [ "m_bXRRemotingEnabled", "d1/d19/classxii_game_state.htm#a760c83fd84b83db168176346e8094035", null ],
+    [ "m_hMainView", "d1/d19/classxii_game_state.htm#a43ad0a11db7f5cd5761adbf68fc062f3", null ],
+    [ "m_MainCamera", "d1/d19/classxii_game_state.htm#ad442cd4a86bbe4625a93e870d90ce18d", null ],
+    [ "m_pDummyXR", "d1/d19/classxii_game_state.htm#a41e3770814f409104a15a5630d050f75", null ],
+    [ "m_pMainWorld", "d1/d19/classxii_game_state.htm#ac1a6b0c0f7541749a1e55415b398ab65", null ]
+];

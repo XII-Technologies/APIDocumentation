@@ -1,0 +1,26 @@
+var classxii_spot_light_component =
+[
+    [ "xiiSpotLightComponent", "d5/d5e/classxii_spot_light_component.htm#a4f71513cc39ce17903fa70e0538b0e71", null ],
+    [ "~xiiSpotLightComponent", "d5/d5e/classxii_spot_light_component.htm#ab3380d566af44dee44d25bc1607b28f7", null ],
+    [ "CalculateBoundingSphere", "d5/d5e/classxii_spot_light_component.htm#a174a7fa2009eb469b67f2b9fd79ae43f", null ],
+    [ "DeserializeComponent", "d5/d5e/classxii_spot_light_component.htm#a638f691e67f68ca0a50bd00d2009fc77", null ],
+    [ "GetEffectiveRange", "d5/d5e/classxii_spot_light_component.htm#ace8d92cc19ddac485bafb26bc7cbbdd0", null ],
+    [ "GetInnerSpotAngle", "d5/d5e/classxii_spot_light_component.htm#a37a61abc849b1290a4aa4b014f540f22", null ],
+    [ "GetLocalBounds", "d5/d5e/classxii_spot_light_component.htm#ae7d91b88addb86de28f996f1d17886ba", null ],
+    [ "GetOuterSpotAngle", "d5/d5e/classxii_spot_light_component.htm#ab0ade82d7ede85f36c72a8f8ec2e3582", null ],
+    [ "GetProjectedTexture", "d5/d5e/classxii_spot_light_component.htm#a22d4f65fe454cfc66f4324b58eac1f60", null ],
+    [ "GetProjectedTextureFile", "d5/d5e/classxii_spot_light_component.htm#aab66a44942e2f5bf5a3e035816c40691", null ],
+    [ "GetRange", "d5/d5e/classxii_spot_light_component.htm#a36d93b0dfea131a85e936107137b0496", null ],
+    [ "OnMsgExtractRenderData", "d5/d5e/classxii_spot_light_component.htm#a6ab5b30674adab4219e7ca1400b9fac8", null ],
+    [ "SerializeComponent", "d5/d5e/classxii_spot_light_component.htm#ac78f09ea5a63a669e5cd943267f0c0a7", null ],
+    [ "SetInnerSpotAngle", "d5/d5e/classxii_spot_light_component.htm#ad525a4ab052473cfb15d276aa8e7bde5", null ],
+    [ "SetOuterSpotAngle", "d5/d5e/classxii_spot_light_component.htm#a4d6448e03fff0a359ca6646fffb48fa0", null ],
+    [ "SetProjectedTexture", "d5/d5e/classxii_spot_light_component.htm#ad83d395275a2052c97b916dd560b8d7e", null ],
+    [ "SetProjectedTextureFile", "d5/d5e/classxii_spot_light_component.htm#afae1cb8a5b03a32581612c2b345d7707", null ],
+    [ "SetRange", "d5/d5e/classxii_spot_light_component.htm#a066554f5fd38eca5b7c7b348e6004de0", null ],
+    [ "m_fEffectiveRange", "d5/d5e/classxii_spot_light_component.htm#a0c402839d8c576b26e4f36d60d9c3b7d", null ],
+    [ "m_fRange", "d5/d5e/classxii_spot_light_component.htm#afe6ac9bcfd16a0928b843beccb4f46ca", null ],
+    [ "m_hProjectedTexture", "d5/d5e/classxii_spot_light_component.htm#adf65fcb1b5414f93d4409b343d1e0d92", null ],
+    [ "m_InnerSpotAngle", "d5/d5e/classxii_spot_light_component.htm#a7ca434047c1f3d3f190bedb51624b76b", null ],
+    [ "m_OuterSpotAngle", "d5/d5e/classxii_spot_light_component.htm#accf155d8fbdad07d601112da4b4bd335", null ]
+];

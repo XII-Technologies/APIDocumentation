@@ -1,0 +1,36 @@
+var classxii_qt_group_box_base =
+[
+    [ "Constants", "d4/dc3/classxii_qt_group_box_base.htm#ae2510b1209043d73addd9f33a7f06056", [
+      [ "Rounding", "d4/dc3/classxii_qt_group_box_base.htm#ae2510b1209043d73addd9f33a7f06056aaa5ab4c6579301a155207594d12cb9f0", null ],
+      [ "Spacing", "d4/dc3/classxii_qt_group_box_base.htm#ae2510b1209043d73addd9f33a7f06056acfe43528a92b556a9dc3a87bbbc8c8a9", null ]
+    ] ],
+    [ "xiiQtGroupBoxBase", "d4/dc3/classxii_qt_group_box_base.htm#a00b8016c2b52b0d3cd0c9bec79ac87ef", null ],
+    [ "CollapseStateChanged", "d4/dc3/classxii_qt_group_box_base.htm#a4fc67298cd1ed2804280ef6643ab7925", null ],
+    [ "DragStarted", "d4/dc3/classxii_qt_group_box_base.htm#a63334b2d4d50db368438fd47b2f0dfe2", null ],
+    [ "DrawHeader", "d4/dc3/classxii_qt_group_box_base.htm#af6169bcacb2bd4bc3f686888eb10f6cb", null ],
+    [ "GetBoldTitle", "d4/dc3/classxii_qt_group_box_base.htm#aeffedf79d4afabbdb5574481112a2f92", null ],
+    [ "GetCollapseState", "d4/dc3/classxii_qt_group_box_base.htm#ae8ba3524a4bb88cdb7772618f04c6f24", null ],
+    [ "GetContent", "d4/dc3/classxii_qt_group_box_base.htm#a3204cc4e523e423b2e8f408285772b67", null ],
+    [ "GetFillColor", "d4/dc3/classxii_qt_group_box_base.htm#a17a7fd436e69db85976d28c2a08c0129", null ],
+    [ "GetHeader", "d4/dc3/classxii_qt_group_box_base.htm#aca6dd8333a8dfd74bb71ad0eb81f3ddd", null ],
+    [ "GetIcon", "d4/dc3/classxii_qt_group_box_base.htm#ae7d94ef2ee9783f0fc3f6779d6705823", null ],
+    [ "GetTitle", "d4/dc3/classxii_qt_group_box_base.htm#a806725987e0af416bf18c02b517d1657", null ],
+    [ "HeaderMouseMove", "d4/dc3/classxii_qt_group_box_base.htm#a7901e3d1034661edb54a2bbddf4420ac", null ],
+    [ "HeaderMousePress", "d4/dc3/classxii_qt_group_box_base.htm#ab84bae6264291dcacb63f0b6a769011e", null ],
+    [ "HeaderMouseRelease", "d4/dc3/classxii_qt_group_box_base.htm#a0948e1669fe03840755390d7d626f3f1", null ],
+    [ "IsDraggable", "d4/dc3/classxii_qt_group_box_base.htm#a1b1906031aead458c17c3adcb6b1de25", null ],
+    [ "SetBoldTitle", "d4/dc3/classxii_qt_group_box_base.htm#aa0a640adca620a49b594465fe03d72fe", null ],
+    [ "SetCollapseState", "d4/dc3/classxii_qt_group_box_base.htm#a7fdbff22520b684c3b8158456aedc106", null ],
+    [ "SetDraggable", "d4/dc3/classxii_qt_group_box_base.htm#a54cf4b3da0bed280691aedd92dd8543c", null ],
+    [ "SetFillColor", "d4/dc3/classxii_qt_group_box_base.htm#a5bf9d76f0760b638459f491fe2c68b01", null ],
+    [ "SetIcon", "d4/dc3/classxii_qt_group_box_base.htm#ac2640dc03f5840994f1c014b901f88d4", null ],
+    [ "SetTitle", "d4/dc3/classxii_qt_group_box_base.htm#a34d1b814913c59aad7e18a3648cf886d", null ],
+    [ "m_bBoldTitle", "d4/dc3/classxii_qt_group_box_base.htm#a4dd72b80f1d022172e9570025f2402b7", null ],
+    [ "m_bCollapsible", "d4/dc3/classxii_qt_group_box_base.htm#a99d39760259021741aa11dc2763bde3b", null ],
+    [ "m_bDraggable", "d4/dc3/classxii_qt_group_box_base.htm#a83900840edb5eb39f5bdf7845173a450", null ],
+    [ "m_bDragging", "d4/dc3/classxii_qt_group_box_base.htm#aff0043abc2c686601e360a00548591c2", null ],
+    [ "m_FillColor", "d4/dc3/classxii_qt_group_box_base.htm#ad606ff4de347b5ad7ddf1ccd0f7da409", null ],
+    [ "m_Icon", "d4/dc3/classxii_qt_group_box_base.htm#adb0f97dec18a274c1031549e5347fe8b", null ],
+    [ "m_StartCursor", "d4/dc3/classxii_qt_group_box_base.htm#abcf5620d93692745f26388edb0e93613", null ],
+    [ "m_sTitle", "d4/dc3/classxii_qt_group_box_base.htm#a12e4ce3f176c75115d1a8c97e89a8f34", null ]
+];

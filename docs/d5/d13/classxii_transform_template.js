@@ -1,0 +1,26 @@
+var classxii_transform_template =
+[
+    [ "ComponentType", "d5/d13/classxii_transform_template.htm#a34467a5bc7cc93f9b9a0e7057b3cd2fd", null ],
+    [ "xiiTransformTemplate", "d5/d13/classxii_transform_template.htm#a2668a3c155ef45a9675eda39c4cbd508", null ],
+    [ "xiiTransformTemplate", "d5/d13/classxii_transform_template.htm#afc9c45f3aaecc379266bd0e9491911c3", null ],
+    [ "ContainsNegativeScale", "d5/d13/classxii_transform_template.htm#a33662d5ecbe759b7b29cf3e14f456652", null ],
+    [ "ContainsUniformScale", "d5/d13/classxii_transform_template.htm#a425ad7398ce0d3d84707b7b6ee7c04a6", null ],
+    [ "GetAsMat4", "d5/d13/classxii_transform_template.htm#a9e7c0d80aebfb786dd22d57b98f415dc", null ],
+    [ "GetInverse", "d5/d13/classxii_transform_template.htm#a70ed1d718e1e7b27e52b3d43113de7d5", null ],
+    [ "GetMaxScale", "d5/d13/classxii_transform_template.htm#a253a2035630ccd15b1c5d39a9a5d5826", null ],
+    [ "Invert", "d5/d13/classxii_transform_template.htm#a1351dca4ceb5c54ddfbaab055a46968e", null ],
+    [ "IsEqual", "d5/d13/classxii_transform_template.htm#aae7aa3f59b94d2c080f9ae4bfefb444d", null ],
+    [ "IsIdentical", "d5/d13/classxii_transform_template.htm#a45eb6fe689f441aea3fa9fdab05ad91b", null ],
+    [ "operator+=", "d5/d13/classxii_transform_template.htm#a6def2ae113afac2c6bbed04e05102d87", null ],
+    [ "operator-=", "d5/d13/classxii_transform_template.htm#a64a3c5e3997b637f226b3f1161cac953", null ],
+    [ "SetFromMat4", "d5/d13/classxii_transform_template.htm#ae27c8b4efc70eaf8d04bed5372303b31", null ],
+    [ "SetGlobalTransform", "d5/d13/classxii_transform_template.htm#a99f940c18190adb7c15cc7f248b6ef81", null ],
+    [ "SetIdentity", "d5/d13/classxii_transform_template.htm#a44e06a8cc7377e41f52049dab22ebcbf", null ],
+    [ "SetLocalTransform", "d5/d13/classxii_transform_template.htm#af9db2b39083e3c9d47f639ebf71aa69d", null ],
+    [ "TransformDirection", "d5/d13/classxii_transform_template.htm#a65d24a1050c26b6e626f625914797565", null ],
+    [ "TransformPosition", "d5/d13/classxii_transform_template.htm#a36a35049b6989f075e8771082194fcbb", null ],
+    [ "XII_DECLARE_POD_TYPE", "d5/d13/classxii_transform_template.htm#abcaa99c183b2b7e36a71bc41504a43b0", null ],
+    [ "m_qRotation", "d5/d13/classxii_transform_template.htm#a78464bfa8dac10f0c2af517583701e17", null ],
+    [ "m_vPosition", "d5/d13/classxii_transform_template.htm#adca09d3129d8d58d9998eb49bb65587c", null ],
+    [ "m_vScale", "d5/d13/classxii_transform_template.htm#a4a05a77e148447123f241d65aaf3e900", null ]
+];

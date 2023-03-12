@@ -1,0 +1,35 @@
+var classxii_game_grid =
+[
+    [ "Orientation", "dc/d30/classxii_game_grid.htm#a0259a8eed6ec1405402e187f15ed9984", [
+      [ "InPlaneXY", "dc/d30/classxii_game_grid.htm#a0259a8eed6ec1405402e187f15ed9984a9d95222d1aef6288bb42b17369fc7c56", null ],
+      [ "InPlaneXZ", "dc/d30/classxii_game_grid.htm#a0259a8eed6ec1405402e187f15ed9984a94558a771e5c96d89bcd0afcb3491085", null ],
+      [ "InPlaneXminusZ", "dc/d30/classxii_game_grid.htm#a0259a8eed6ec1405402e187f15ed9984affd7a1aaeec7926e0acaab4918fa9148", null ]
+    ] ],
+    [ "xiiGameGrid", "dc/d30/classxii_game_grid.htm#a03c72546d67fb2e56326aa9aeed04da4", null ],
+    [ "ConvertCellCoordinateToIndex", "dc/d30/classxii_game_grid.htm#a56f9eaece06aeeddad00aaca09a25a41", null ],
+    [ "ConvertCellIndexToCoordinate", "dc/d30/classxii_game_grid.htm#abd3d60b9db2afd41f376ee5da260a8e8", null ],
+    [ "CreateGrid", "dc/d30/classxii_game_grid.htm#a27c03dc47e231198ef7e4d09676da697", null ],
+    [ "GetCell", "dc/d30/classxii_game_grid.htm#ac41475d7daef654ad720ef8a5337f16a", null ],
+    [ "GetCell", "dc/d30/classxii_game_grid.htm#a9b3c5c60ab0bed9b28fedd2219fb0984", null ],
+    [ "GetCell", "dc/d30/classxii_game_grid.htm#a79a50e94392e8f6c8640aef7af59e0de", null ],
+    [ "GetCell", "dc/d30/classxii_game_grid.htm#a3c0ca9bd0856157880d3b4cc81ce9425", null ],
+    [ "GetCellAtWorldPosition", "dc/d30/classxii_game_grid.htm#ac9cb9c3e177c19476bc0ab837b84e42e", null ],
+    [ "GetCellLocalSpaceCenter", "dc/d30/classxii_game_grid.htm#a8c243083a992ac107683d68f9795f6a7", null ],
+    [ "GetCellLocalSpaceOrigin", "dc/d30/classxii_game_grid.htm#a536c93f501d628cbae92c9832ad9affc", null ],
+    [ "GetCellSize", "dc/d30/classxii_game_grid.htm#af6bc408333aba798277494525df9a243", null ],
+    [ "GetCellWorldSpaceCenter", "dc/d30/classxii_game_grid.htm#ab283c4c319d3f61e7ce4d6cccebcc19e", null ],
+    [ "GetCellWorldSpaceOrigin", "dc/d30/classxii_game_grid.htm#a1780c36146da46610077d8ba9585b2f4", null ],
+    [ "GetGridSizeX", "dc/d30/classxii_game_grid.htm#a4a8b835837825ea1f3baf5f91f59629e", null ],
+    [ "GetGridSizeY", "dc/d30/classxii_game_grid.htm#aa20c5275555db7cd8d4d084d583b4a00", null ],
+    [ "GetNumCells", "dc/d30/classxii_game_grid.htm#a6cea8755dc38e5b872a6cdacba4b9a10", null ],
+    [ "GetRayIntersection", "dc/d30/classxii_game_grid.htm#af60ca476dd44d96529076900cadb7c35", null ],
+    [ "GetRayIntersectionExpandedBBox", "dc/d30/classxii_game_grid.htm#a3c197e964fcd4c22f31ccdf2a99b53a9", null ],
+    [ "GetRotationToGridSpace", "dc/d30/classxii_game_grid.htm#a118c2fc85cc4e417f22e52f49002b259", null ],
+    [ "GetRotationToWorldSpace", "dc/d30/classxii_game_grid.htm#ac99727bccdace1bc5dc41accb13ed7eb", null ],
+    [ "GetWorldBoundingBox", "dc/d30/classxii_game_grid.htm#a31a35fa2ef139ebc9edaa57f226e403c", null ],
+    [ "GetWorldSpaceOrigin", "dc/d30/classxii_game_grid.htm#abcf9d81c1373c43f117e2c63af8f1ec9", null ],
+    [ "IsValidCellCoordinate", "dc/d30/classxii_game_grid.htm#ab281946f20c0ab46377f0327716459a0", null ],
+    [ "PickCell", "dc/d30/classxii_game_grid.htm#a37ce35b3a23fdde028b9c2f96605c16d", null ],
+    [ "SetWorldSpaceDimensions", "dc/d30/classxii_game_grid.htm#ab482556b3592713075dc84d40d4b10db", null ],
+    [ "SetWorldSpaceDimensions", "dc/d30/classxii_game_grid.htm#a96675b46e658d61d45b59933c5b420bb", null ]
+];

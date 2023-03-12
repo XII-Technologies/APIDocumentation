@@ -1,0 +1,28 @@
+var classxii_fixed_point =
+[
+    [ "xiiFixedPoint", "d1/dee/classxii_fixed_point.htm#af9d9239ff1bcbd516493db7bfafa5341", null ],
+    [ "xiiFixedPoint", "d1/dee/classxii_fixed_point.htm#a8c179bc45c3b3b0dec9e550b189a8b7a", null ],
+    [ "xiiFixedPoint", "d1/dee/classxii_fixed_point.htm#a2b4f4209d648768a8676260a58543893", null ],
+    [ "xiiFixedPoint", "d1/dee/classxii_fixed_point.htm#a35fbb1f63f4d38c0f1bd0672feb17e2d", null ],
+    [ "GetRawValue", "d1/dee/classxii_fixed_point.htm#a166359fefd6fb6fce9a7c910634b8c22", null ],
+    [ "operator!=", "d1/dee/classxii_fixed_point.htm#a87848adfa7080ca769d11f2790f5d5c5", null ],
+    [ "operator*=", "d1/dee/classxii_fixed_point.htm#adb25da16a201a79314fd68c7d6384edc", null ],
+    [ "operator*=", "d1/dee/classxii_fixed_point.htm#aa4f144ef3ee580036eb342fa28fd624e", null ],
+    [ "operator+=", "d1/dee/classxii_fixed_point.htm#a1a7322f02466e53c0c775b78fc15d6df", null ],
+    [ "operator-", "d1/dee/classxii_fixed_point.htm#a57a849c951e34d3d67aa12213d0bc83d", null ],
+    [ "operator-=", "d1/dee/classxii_fixed_point.htm#aecaec626c649edc8ee4d7eeedd189abd", null ],
+    [ "operator/=", "d1/dee/classxii_fixed_point.htm#aa2ce4aab23b3b3456c010c43e75cc560", null ],
+    [ "operator/=", "d1/dee/classxii_fixed_point.htm#ac864a211e2201c30b344fd0d6d25570b", null ],
+    [ "operator<", "d1/dee/classxii_fixed_point.htm#a83e58bf0eca118d439201c9d04019bc5", null ],
+    [ "operator<=", "d1/dee/classxii_fixed_point.htm#aa344fefbb63a981e5ecd62df0b2b52a2", null ],
+    [ "operator=", "d1/dee/classxii_fixed_point.htm#a9de7f71a4970924da2749b0dafb6ed8d", null ],
+    [ "operator=", "d1/dee/classxii_fixed_point.htm#ac69c42c678ecc7876fb94e3c129dfa91", null ],
+    [ "operator=", "d1/dee/classxii_fixed_point.htm#ad60a3cdfb4c47950b6f41738d1657358", null ],
+    [ "operator==", "d1/dee/classxii_fixed_point.htm#a1867e0b910e0683b2f8fead9641d13e9", null ],
+    [ "operator>", "d1/dee/classxii_fixed_point.htm#adc29b32b3e895632051ebcdf7db3fd70", null ],
+    [ "operator>=", "d1/dee/classxii_fixed_point.htm#a2fc2dc283f3dc09423889bc00f6f639e", null ],
+    [ "SetRawValue", "d1/dee/classxii_fixed_point.htm#a3563530e8fcb0dcc8e8e7f78402d8b8b", null ],
+    [ "ToDouble", "d1/dee/classxii_fixed_point.htm#ae2fff39d3971e715ff9dc01d7a430146", null ],
+    [ "ToFloat", "d1/dee/classxii_fixed_point.htm#a54b6a85c8c4a816aa9fe4a05381b937f", null ],
+    [ "ToInt", "d1/dee/classxii_fixed_point.htm#ae4d319126ace276baf6dbd5dc4ae90e7", null ]
+];

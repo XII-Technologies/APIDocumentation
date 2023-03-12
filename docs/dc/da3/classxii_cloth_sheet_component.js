@@ -1,0 +1,25 @@
+var classxii_cloth_sheet_component =
+[
+    [ "xiiClothSheetComponent", "dc/da3/classxii_cloth_sheet_component.htm#a5a08e47908b667e373d695d6359c2a69", null ],
+    [ "~xiiClothSheetComponent", "dc/da3/classxii_cloth_sheet_component.htm#ab9f48668d83d5454427e6c76132ce9c7", null ],
+    [ "DeserializeComponent", "dc/da3/classxii_cloth_sheet_component.htm#ab54837ba5213ef0cade528f3e884bf48", null ],
+    [ "GetFlags", "dc/da3/classxii_cloth_sheet_component.htm#a010fbc17a7da3a5430ee79edbdc239e5", null ],
+    [ "GetLocalBounds", "dc/da3/classxii_cloth_sheet_component.htm#a641244ebeda6d5c4768a1655aea87e02", null ],
+    [ "GetMaterialFile", "dc/da3/classxii_cloth_sheet_component.htm#af198c4f04067946ca22446a6b3da35cc", null ],
+    [ "GetSegments", "dc/da3/classxii_cloth_sheet_component.htm#ad2f83db7eb31ff64699746bce85b028b", null ],
+    [ "GetSize", "dc/da3/classxii_cloth_sheet_component.htm#aa584ee5c6b70de89e62014345861094d", null ],
+    [ "GetSlack", "dc/da3/classxii_cloth_sheet_component.htm#a3f6cae474b10cae0c718fefa4b43be4e", null ],
+    [ "OnActivated", "dc/da3/classxii_cloth_sheet_component.htm#a6d849bb5182d7d6cd80dcf236c8f26cb", null ],
+    [ "OnDeactivated", "dc/da3/classxii_cloth_sheet_component.htm#a115651209bab99cde203dd1a264b098f", null ],
+    [ "OnSimulationStarted", "dc/da3/classxii_cloth_sheet_component.htm#adc095e2bb935badc5e9edd21c426a732", null ],
+    [ "SerializeComponent", "dc/da3/classxii_cloth_sheet_component.htm#ab7d3cde9e6ac2ec9c27cf4d990d4bbe6", null ],
+    [ "SetFlags", "dc/da3/classxii_cloth_sheet_component.htm#aff46f7c5456955f665504961a9981d7a", null ],
+    [ "SetMaterialFile", "dc/da3/classxii_cloth_sheet_component.htm#a9986927765a31f264d8d566d32cbd29f", null ],
+    [ "SetSegments", "dc/da3/classxii_cloth_sheet_component.htm#a20c0c4ceb0a0b321e3206b22c6f6b733", null ],
+    [ "SetSize", "dc/da3/classxii_cloth_sheet_component.htm#a0acbffe9ecdca5da3f9a8781bb7e064a", null ],
+    [ "SetSlack", "dc/da3/classxii_cloth_sheet_component.htm#ac3cbb16cca278fa23eefb3d8eb13beb9", null ],
+    [ "m_Color", "dc/da3/classxii_cloth_sheet_component.htm#ab4eb07aea1e54e594922b8ae7ffd3647", null ],
+    [ "m_fDamping", "dc/da3/classxii_cloth_sheet_component.htm#a75fdf6e00b697845a6e28ec5a801f43c", null ],
+    [ "m_fWindInfluence", "dc/da3/classxii_cloth_sheet_component.htm#a00e465dbc63f845978c2446f575065d1", null ],
+    [ "m_hMaterial", "dc/da3/classxii_cloth_sheet_component.htm#a9cbd5aed7ef4a9df0db1d608265e19c1", null ]
+];

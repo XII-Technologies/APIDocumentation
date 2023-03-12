@@ -1,0 +1,27 @@
+var structxii_enum =
+[
+    [ "SelfType", "de/dfd/structxii_enum.htm#ab176fda0c99722b7c303eb8c39aa3ec9", null ],
+    [ "StorageType", "de/dfd/structxii_enum.htm#afe96bebaf065bee20500065817fdea27", null ],
+    [ "xiiEnum", "de/dfd/structxii_enum.htm#a971ff4a5b2791331913a86da618748e6", null ],
+    [ "xiiEnum", "de/dfd/structxii_enum.htm#a720c893085cb2da2b211255cf6455bee", null ],
+    [ "xiiEnum", "de/dfd/structxii_enum.htm#a4a5ef288a599d72828d1ca65854601b9", null ],
+    [ "GetValue", "de/dfd/structxii_enum.htm#a2643cb33f38a4feba80a79879895bfac", null ],
+    [ "operator typename Derived::Enum", "de/dfd/structxii_enum.htm#a3ef4474b1f3cd7100cb05af96fd93014", null ],
+    [ "operator!=", "de/dfd/structxii_enum.htm#a70c45ea1487f3708b3298d6dded93628", null ],
+    [ "operator!=", "de/dfd/structxii_enum.htm#acaf9631c384ee86b0e82283e9eb91a62", null ],
+    [ "operator&", "de/dfd/structxii_enum.htm#a3cf36f150264b1cb0cc9713bde0d9e01", null ],
+    [ "operator<", "de/dfd/structxii_enum.htm#aa1d181a12a2e971ff23205b2f0d8ed48", null ],
+    [ "operator<", "de/dfd/structxii_enum.htm#aac35f217df7da05c1b275d9c576aa906", null ],
+    [ "operator<=", "de/dfd/structxii_enum.htm#aa9deb6c25a08e32a7de79e3a747cf220", null ],
+    [ "operator<=", "de/dfd/structxii_enum.htm#a6dab75510771ed91d3630bfa9d11cd09", null ],
+    [ "operator=", "de/dfd/structxii_enum.htm#ad5d5cc970a11dff182cb9c2c512e9845", null ],
+    [ "operator=", "de/dfd/structxii_enum.htm#a1c6ccac0135bee6253d888fec72d9791", null ],
+    [ "operator==", "de/dfd/structxii_enum.htm#aaadf775782234af4a6c385d2499829d0", null ],
+    [ "operator==", "de/dfd/structxii_enum.htm#abfaf25e2bcb7308aba40d998b5ff0d4d", null ],
+    [ "operator>", "de/dfd/structxii_enum.htm#abc94f9fa92e27554c3483248ce6a4006", null ],
+    [ "operator>", "de/dfd/structxii_enum.htm#a146674652f622c05e0c337078e10a5df", null ],
+    [ "operator>=", "de/dfd/structxii_enum.htm#a6de6771f890da3d8a5d2c4f423395955", null ],
+    [ "operator>=", "de/dfd/structxii_enum.htm#adc62b9cf6c81e2b28fe1e207b82d3ac9", null ],
+    [ "operator|", "de/dfd/structxii_enum.htm#ab6a8288f3a378f03d4aef597551ed4d4", null ],
+    [ "SetValue", "de/dfd/structxii_enum.htm#aadc9c71e941f60494bd1737cac4950ba", null ]
+];

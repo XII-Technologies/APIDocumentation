@@ -1,0 +1,5 @@
+var classxii_internal_1_1xii_allocator_mixin_reallocate_3_01_allocation_policy_00_01_tracking_flags_00_01true_01_4 =
+[
+    [ "xiiAllocatorMixinReallocate", "d7/d0d/classxii_internal_1_1xii_allocator_mixin_reallocate_3_01_allocation_policy_00_01_tracking_flags_00_01true_01_4.htm#aa2dd6e28611b31262ef5c1192bc1cbf1", null ],
+    [ "Reallocate", "d7/d0d/classxii_internal_1_1xii_allocator_mixin_reallocate_3_01_allocation_policy_00_01_tracking_flags_00_01true_01_4.htm#a61abcec04e02072fbe32eaeaeb9f1e7a", null ]
+];
