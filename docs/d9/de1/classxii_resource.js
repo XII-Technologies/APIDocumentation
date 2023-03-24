@@ -35,7 +35,7 @@ var classxii_resource =
     [ "SetHasLoadingFallback", "d9/de1/classxii_resource.htm#a07d5954f763eed4f411251733cc12ce5", null ],
     [ "SetIsReloadable", "d9/de1/classxii_resource.htm#a35962e4b0448f41a840ad47405f386bf", null ],
     [ "SetPriority", "d9/de1/classxii_resource.htm#a95a473e75a4278e92a32704f36df7b5e", null ],
-    [ "SetResourceDescription", "d9/de1/classxii_resource.htm#aef4a79f9995cfae3a3dbbd80396f1c8b", null ],
+    [ "SetResourceDescription", "d9/de1/classxii_resource.htm#a5457d7842f48c77f380861a7f9080db3", null ],
     [ "UnloadData", "d9/de1/classxii_resource.htm#a02b8e6565d09c03e0e7038eb05bf311c", null ],
     [ "UpdateContent", "d9/de1/classxii_resource.htm#aec592e9010ff171261e3554aedc1f465", null ],
     [ "UpdateMemoryUsage", "d9/de1/classxii_resource.htm#ac9c3e409747cbd0ca5cdfe2a2a83aef1", null ],

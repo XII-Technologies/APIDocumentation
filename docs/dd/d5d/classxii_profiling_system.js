@@ -5,6 +5,6 @@ var classxii_profiling_system =
     [ "GPUScope", "d6/dbd/structxii_profiling_system_1_1_g_p_u_scope.htm", "d6/dbd/structxii_profiling_system_1_1_g_p_u_scope" ],
     [ "ProfilingData", "df/d05/structxii_profiling_system_1_1_profiling_data.htm", "df/d05/structxii_profiling_system_1_1_profiling_data" ],
     [ "ThreadInfo", "d2/d10/structxii_profiling_system_1_1_thread_info.htm", "d2/d10/structxii_profiling_system_1_1_thread_info" ],
-    [ "ScopeTimeoutDelegate", "dd/d5d/classxii_profiling_system.htm#a445d21751294aebc2dbcae0fb48e0be4", null ],
+    [ "ScopeTimeoutDelegate", "dd/d5d/classxii_profiling_system.htm#a7cae65b17b679a3023280d3e7ce02085", null ],
     [ "RunThread", "dd/d5d/classxii_profiling_system.htm#a6541f7f4cd64588b53bbf837cd61a2f6", null ]
 ];

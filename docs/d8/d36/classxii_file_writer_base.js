@@ -5,7 +5,7 @@ var classxii_file_writer_base =
     [ "GetFilePathAbsolute", "d8/d36/classxii_file_writer_base.htm#a3051090b1da6988c06a9b03ccb873b43", null ],
     [ "GetFilePathRelative", "d8/d36/classxii_file_writer_base.htm#a539e95d0a7b05bece944661da891badf", null ],
     [ "GetFileSize", "d8/d36/classxii_file_writer_base.htm#a2c7f3dfd5e1b69ef82f3386819f32ea6", null ],
-    [ "GetFileWriter", "d8/d36/classxii_file_writer_base.htm#afac901b2f608a9b597835fa3ed227358", null ],
+    [ "GetFileWriter", "d8/d36/classxii_file_writer_base.htm#acc6d38be61e3e67c83b009dc83e7fb53", null ],
     [ "IsOpen", "d8/d36/classxii_file_writer_base.htm#afc25424736147223b872a4663c133b05", null ],
     [ "m_pDataDirWriter", "d8/d36/classxii_file_writer_base.htm#a679ed12fc2bd160da5105d44a792ecf2", null ]
 ];

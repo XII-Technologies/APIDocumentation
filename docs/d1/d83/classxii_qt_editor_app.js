@@ -55,6 +55,7 @@ var classxii_qt_editor_app =
     [ "OpenDocumentQueued", "d1/d83/classxii_qt_editor_app.htm#a2210d87163dbc2c95a16c507b07750da", null ],
     [ "OpenProject", "d1/d83/classxii_qt_editor_app.htm#a219e8b621c29070a5b17d39e57b2260d", null ],
     [ "ReloadEngineResources", "d1/d83/classxii_qt_editor_app.htm#ae5aeb2b5adf9f34017c5ce537140d02e", null ],
+    [ "RestartEngineProcessIfPluginsChanged", "d1/d83/classxii_qt_editor_app.htm#a526eb1c64cede7a5e0d19ba771b7f47c", null ],
     [ "RunEditor", "d1/d83/classxii_qt_editor_app.htm#ae22b9aac5cf6d1d3aac64f3de45419e6", null ],
     [ "RunFileserve", "d1/d83/classxii_qt_editor_app.htm#ab6d8ab34414838fd7d051ec1cc7a931e", null ],
     [ "RunInspector", "d1/d83/classxii_qt_editor_app.htm#a4690972d48badcf04a5181b198ec750e", null ],

@@ -123,22 +123,22 @@ $(document).ready(function(){initNavTree('d2/daa/_collection_resource_8h_source.
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <span class="keywordtype">void</span> UnregisterNames();</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  <span class="keywordtype">void</span> PreloadResources();</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  <span class="keywordtype">bool</span> IsLoadingFinished(<span class="keywordtype">float</span>* out_progress = <span class="keyword">nullptr</span>) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  <span class="keyword">const</span> <a class="code" href="../../d8/d73/structxii_collection_resource_descriptor.htm">xiiCollectionResourceDescriptor</a>&amp; GetDescriptor() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  <span class="keyword">virtual</span> <a class="code" href="../../d7/d9e/structxii_resource_load_desc.htm">xiiResourceLoadDesc</a> <a class="code" href="../../d9/de1/classxii_resource.htm#a02b8e6565d09c03e0e7038eb05bf311c">UnloadData</a>(Unload WhatToUnload) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  <span class="keyword">virtual</span> <a class="code" href="../../d7/d9e/structxii_resource_load_desc.htm">xiiResourceLoadDesc</a> <a class="code" href="../../d9/de1/classxii_resource.htm#aec592e9010ff171261e3554aedc1f465">UpdateContent</a>(<a class="code" href="../../d4/d5e/classxii_stream_reader.htm">xiiStreamReader</a>* Stream) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span>                <a class="code" href="../../d9/de1/classxii_resource.htm#ac9c3e409747cbd0ca5cdfe2a2a83aef1">UpdateMemoryUsage</a>(<a class="code" href="../../da/da5/structxii_resource_1_1_memory_usage.htm">MemoryUsage</a>&amp; out_NewMemoryUsage) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  <span class="keyword">mutable</span> <a class="code" href="../../dd/d52/classxii_mutex.htm">xiiMutex</a>                           m_PreloadMutex;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  <span class="keywordtype">bool</span>                                       m_bRegistered = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  <a class="code" href="../../d8/d73/structxii_collection_resource_descriptor.htm">xiiCollectionResourceDescriptor</a>            m_Collection;</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  <a class="code" href="../../dc/da4/classxii_dynamic_array.htm">xiiDynamicArray&lt;xiiTypelessResourceHandle&gt;</a> m_PreloadedResources;</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;};</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  <span class="keywordtype">bool</span> PreloadResources(xiiUInt32 numResourcesToPreload = xiiMath::MaxValue&lt;xiiUInt32&gt;());</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  <span class="keywordtype">bool</span> IsLoadingFinished(<span class="keywordtype">float</span>* out_progress = <span class="keyword">nullptr</span>) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  <span class="keyword">const</span> <a class="code" href="../../d8/d73/structxii_collection_resource_descriptor.htm">xiiCollectionResourceDescriptor</a>&amp; GetDescriptor() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  <span class="keyword">virtual</span> <a class="code" href="../../d7/d9e/structxii_resource_load_desc.htm">xiiResourceLoadDesc</a> <a class="code" href="../../d9/de1/classxii_resource.htm#a02b8e6565d09c03e0e7038eb05bf311c">UnloadData</a>(Unload WhatToUnload) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  <span class="keyword">virtual</span> <a class="code" href="../../d7/d9e/structxii_resource_load_desc.htm">xiiResourceLoadDesc</a> <a class="code" href="../../d9/de1/classxii_resource.htm#aec592e9010ff171261e3554aedc1f465">UpdateContent</a>(<a class="code" href="../../d4/d5e/classxii_stream_reader.htm">xiiStreamReader</a>* Stream) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span>                <a class="code" href="../../d9/de1/classxii_resource.htm#ac9c3e409747cbd0ca5cdfe2a2a83aef1">UpdateMemoryUsage</a>(<a class="code" href="../../da/da5/structxii_resource_1_1_memory_usage.htm">MemoryUsage</a>&amp; out_NewMemoryUsage) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  <span class="keyword">mutable</span> <a class="code" href="../../dd/d52/classxii_mutex.htm">xiiMutex</a>                           m_PreloadMutex;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  <span class="keywordtype">bool</span>                                       m_bRegistered = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  <a class="code" href="../../d8/d73/structxii_collection_resource_descriptor.htm">xiiCollectionResourceDescriptor</a>            m_Collection;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  <a class="code" href="../../dc/da4/classxii_dynamic_array.htm">xiiDynamicArray&lt;xiiTypelessResourceHandle&gt;</a> m_PreloadedResources;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;};</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclassxii_resource_htm_aec592e9010ff171261e3554aedc1f465"><div class="ttname"><a href="../../d9/de1/classxii_resource.htm#aec592e9010ff171261e3554aedc1f465">xiiResource::UpdateContent</a></div><div class="ttdeci">virtual xiiResourceLoadDesc UpdateContent(xiiStreamReader *pStream)=0</div><div class="ttdoc">Called whenever more data for the resource is available. The resource must read the stream to update ...</div></div>
@@ -163,7 +163,7 @@ $(document).ready(function(){initNavTree('d2/daa/_collection_resource_8h_source.
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.htm">home</a></li><li class="navelem"><a class="el" href="../../dir_1036706e55c22cab35bc1c58ee689f1d.htm">runner</a></li><li class="navelem"><a class="el" href="../../dir_629f8151d55d307162ff2d619fb1783d.htm">work</a></li><li class="navelem"><a class="el" href="../../dir_1ddc44fe1263a8c7935fa6130b7d9499.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_2c1b6808f12952f4c36e05ba7068379a.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_b5a1c4ecfca018ad24b729e213296d41.htm">Source</a></li><li class="navelem"><a class="el" href="../../dir_e321052006a51284e67389ab20037e7c.htm">Engine</a></li><li class="navelem"><a class="el" href="../../dir_6934db396743bb3844d563c7fa1f32a7.htm">Core</a></li><li class="navelem"><a class="el" href="../../dir_eb032126d0edbc66078e1c4cbd74f70f.htm">Collection</a></li><li class="navelem"><b>CollectionResource.h</b></li>
-    <li class="footer">Generated on Sun Mar 12 2023 21:19:38 for XIIEngine by
+    <li class="footer">Generated on Fri Mar 24 2023 17:20:08 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

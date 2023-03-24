@@ -131,25 +131,26 @@ $(document).ready(function(){initNavTree('dc/d62/_shader_metadata_8h_source.htm'
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  xiiGALResourceFormat::Enum          m_eFormat         = xiiGALResourceFormat::XYZFloat;</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;};</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keyword">namespace </span>xiiShaderMetaData</div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="../../dd/d60/classxii_shader_meta_data.htm">   48</a></span>&#160;<span class="keyword">class </span>XII_SHADERCOMPILER_DLL <a class="code" href="../../dd/d60/classxii_shader_meta_data.htm">xiiShaderMetaData</a></div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;{</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  constexpr xiiUInt32 x_uiMetaDataTag = 0x58494958; <span class="comment">// XIIX</span></div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <span class="keyword">enum</span> MetaDataVersion</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  {</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    Version1 = 1,</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    Version2 = 2, </div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    Version3 = 3, </div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    ENUM_COUNT,</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    CurrentVerion = ENUM_COUNT - 1</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  };</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  <span class="keywordtype">void</span> XII_SHADERCOMPILER_DLL Write(<a class="code" href="../../d0/d18/classxii_stream_writer.htm">xiiStreamWriter</a>&amp; stream, <span class="keyword">const</span> <a class="code" href="../../d0/d60/classxii_array_ptr.htm">xiiArrayPtr&lt;xiiUInt8&gt;</a>&amp; shaderCode, <span class="keyword">const</span> <a class="code" href="../../dc/da4/classxii_dynamic_array.htm">xiiDynamicArray&lt;xiiShaderDescriptorSetLayout&gt;</a>&amp; sets, <span class="keyword">const</span> <a class="code" href="../../dc/da4/classxii_dynamic_array.htm">xiiDynamicArray&lt;xiiShaderVertexInputAttribute&gt;</a>&amp; vertexInputAttributes);</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  <span class="keywordtype">void</span> XII_SHADERCOMPILER_DLL Read(<span class="keyword">const</span> <a class="code" href="../../d0/d60/classxii_array_ptr.htm">xiiArrayPtr&lt;const xiiUInt8&gt;</a> data, <a class="code" href="../../d0/d60/classxii_array_ptr.htm">xiiArrayPtr&lt;const xiiUInt8&gt;</a>&amp; out_shaderCode, <a class="code" href="../../dc/da4/classxii_dynamic_array.htm">xiiDynamicArray&lt;xiiShaderDescriptorSetLayout&gt;</a>&amp; out_sets, <a class="code" href="../../dc/da4/classxii_dynamic_array.htm">xiiDynamicArray&lt;xiiShaderVertexInputAttribute&gt;</a>&amp; out_vertexInputAttributes);</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;} <span class="comment">// namespace xiiShaderMetaData</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <span class="keyword">static</span> constexpr xiiUInt32 x_uiMetaDataTag = 0x58494958; <span class="comment">// XIIX</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="../../dd/d60/classxii_shader_meta_data.htm#a944d62eed9e1d7f22f6806896b282686">   53</a></span>&#160;  <span class="keyword">enum</span> <a class="code" href="../../dd/d60/classxii_shader_meta_data.htm#a944d62eed9e1d7f22f6806896b282686">MetaDataVersion</a></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  {</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    Version1 = 1,</div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="../../dd/d60/classxii_shader_meta_data.htm#a944d62eed9e1d7f22f6806896b282686a10bc2b0437c48f9c626091d9feb75081">   56</a></span>&#160;    Version2 = 2, </div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="../../dd/d60/classxii_shader_meta_data.htm#a944d62eed9e1d7f22f6806896b282686afa2a70e14c8d665f3dcff7e5d1c2d361">   57</a></span>&#160;    Version3 = 3, </div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    ENUM_COUNT,</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    CurrentVerion = ENUM_COUNT - 1</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  };</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> Write(<a class="code" href="../../d0/d18/classxii_stream_writer.htm">xiiStreamWriter</a>&amp; stream, <span class="keyword">const</span> <a class="code" href="../../d0/d60/classxii_array_ptr.htm">xiiArrayPtr&lt;xiiUInt8&gt;</a>&amp; shaderCode, <span class="keyword">const</span> <a class="code" href="../../dc/da4/classxii_dynamic_array.htm">xiiDynamicArray&lt;xiiShaderDescriptorSetLayout&gt;</a>&amp; sets, <span class="keyword">const</span> <a class="code" href="../../dc/da4/classxii_dynamic_array.htm">xiiDynamicArray&lt;xiiShaderVertexInputAttribute&gt;</a>&amp; vertexInputAttributes);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> Read(<span class="keyword">const</span> <a class="code" href="../../d0/d60/classxii_array_ptr.htm">xiiArrayPtr&lt;const xiiUInt8&gt;</a> data, <a class="code" href="../../d0/d60/classxii_array_ptr.htm">xiiArrayPtr&lt;const xiiUInt8&gt;</a>&amp; out_shaderCode, <a class="code" href="../../dc/da4/classxii_dynamic_array.htm">xiiDynamicArray&lt;xiiShaderDescriptorSetLayout&gt;</a>&amp; out_sets, <a class="code" href="../../dc/da4/classxii_dynamic_array.htm">xiiDynamicArray&lt;xiiShaderVertexInputAttribute&gt;</a>&amp; out_vertexInputAttributes);</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;};</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="astructxii_shader_descriptor_set_layout_htm"><div class="ttname"><a href="../../da/dff/structxii_shader_descriptor_set_layout.htm">xiiShaderDescriptorSetLayout</a></div><div class="ttdoc">Shader Descriptor Set Layout.</div><div class="ttdef"><b>Definition:</b> ShaderMetadata.h:34</div></div>
@@ -160,13 +161,15 @@ $(document).ready(function(){initNavTree('dc/d62/_shader_metadata_8h_source.htm'
 <div class="ttc" id="astructxii_string_view_htm"><div class="ttname"><a href="../../da/d9d/structxii_string_view.htm">xiiStringView</a></div><div class="ttdoc">xiiStringView represent a read-only sub-string of a larger string, as it can store a dedicated string...</div><div class="ttdef"><b>Definition:</b> StringView.h:23</div></div>
 <div class="ttc" id="aclassxii_stream_writer_htm"><div class="ttname"><a href="../../d0/d18/classxii_stream_writer.htm">xiiStreamWriter</a></div><div class="ttdoc">Interface for binary out (write) streams.</div><div class="ttdef"><b>Definition:</b> Stream.h:106</div></div>
 <div class="ttc" id="astructxii_shader_vertex_input_attribute_htm"><div class="ttname"><a href="../../d0/d85/structxii_shader_vertex_input_attribute.htm">xiiShaderVertexInputAttribute</a></div><div class="ttdoc">Shader Vertex Input Attributes.</div><div class="ttdef"><b>Definition:</b> ShaderMetadata.h:41</div></div>
+<div class="ttc" id="aclassxii_shader_meta_data_htm"><div class="ttname"><a href="../../dd/d60/classxii_shader_meta_data.htm">xiiShaderMetaData</a></div><div class="ttdef"><b>Definition:</b> ShaderMetadata.h:48</div></div>
 <div class="ttc" id="aclassxii_dynamic_array_htm"><div class="ttname"><a href="../../dc/da4/classxii_dynamic_array.htm">xiiDynamicArray&lt; xiiShaderDescriptorSetLayout &gt;</a></div></div>
 <div class="ttc" id="astructxii_shader_descriptor_set_layout_binding_htm"><div class="ttname"><a href="../../d0/d4f/structxii_shader_descriptor_set_layout_binding.htm">xiiShaderDescriptorSetLayoutBinding</a></div><div class="ttdoc">Shader Descriptor Layout Binding.</div><div class="ttdef"><b>Definition:</b> ShaderMetadata.h:11</div></div>
+<div class="ttc" id="aclassxii_shader_meta_data_htm_a944d62eed9e1d7f22f6806896b282686"><div class="ttname"><a href="../../dd/d60/classxii_shader_meta_data.htm#a944d62eed9e1d7f22f6806896b282686">xiiShaderMetaData::MetaDataVersion</a></div><div class="ttdeci">MetaDataVersion</div><div class="ttdef"><b>Definition:</b> ShaderMetadata.h:53</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.htm">home</a></li><li class="navelem"><a class="el" href="../../dir_1036706e55c22cab35bc1c58ee689f1d.htm">runner</a></li><li class="navelem"><a class="el" href="../../dir_629f8151d55d307162ff2d619fb1783d.htm">work</a></li><li class="navelem"><a class="el" href="../../dir_1ddc44fe1263a8c7935fa6130b7d9499.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_2c1b6808f12952f4c36e05ba7068379a.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_b5a1c4ecfca018ad24b729e213296d41.htm">Source</a></li><li class="navelem"><a class="el" href="../../dir_e321052006a51284e67389ab20037e7c.htm">Engine</a></li><li class="navelem"><a class="el" href="../../dir_c9f61176a4f20333564ea897f2d5f334.htm">ShaderCompiler</a></li><li class="navelem"><b>ShaderMetadata.h</b></li>
-    <li class="footer">Generated on Sun Mar 12 2023 21:19:50 for XIIEngine by
+    <li class="footer">Generated on Fri Mar 24 2023 17:20:17 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

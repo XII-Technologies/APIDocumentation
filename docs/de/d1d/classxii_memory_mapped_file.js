@@ -16,6 +16,6 @@ var classxii_memory_mapped_file =
     [ "GetMode", "de/d1d/classxii_memory_mapped_file.htm#a31bd81ec252d6fe286a523294a40b15e", null ],
     [ "GetReadPointer", "de/d1d/classxii_memory_mapped_file.htm#a67a7878f74314b33b2889c8941bb9673", null ],
     [ "GetWritePointer", "de/d1d/classxii_memory_mapped_file.htm#a482d204d84ee808877c90f82beeaf5f3", null ],
-    [ "Open", "de/d1d/classxii_memory_mapped_file.htm#ad408d9d33af4ead601e2c008dd15d8f3", null ],
-    [ "OpenShared", "de/d1d/classxii_memory_mapped_file.htm#a1ed1ace7fc7761db4bbd63a72215dfcc", null ]
+    [ "Open", "de/d1d/classxii_memory_mapped_file.htm#aeba7d2741c6cf56879fec11e286a47ab", null ],
+    [ "OpenShared", "de/d1d/classxii_memory_mapped_file.htm#a30cee8e0ee130c2aa735f9bc26d37956", null ]
 ];

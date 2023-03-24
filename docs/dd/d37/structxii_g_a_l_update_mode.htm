@@ -93,12 +93,42 @@ $(document).ready(function(){initNavTree('dd/d37/structxii_g_a_l_update_mode.htm
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a5947c438b461207eb67c3f3676d23448"><td class="memItemLeft" align="right" valign="top"><a id="a5947c438b461207eb67c3f3676d23448"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>Enum</b> { <b>Discard</b>, 
-<b>NoOverwrite</b>, 
-<b>CopyToTempStorage</b>
+<tr class="memitem:a5947c438b461207eb67c3f3676d23448"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d37/structxii_g_a_l_update_mode.htm#a5947c438b461207eb67c3f3676d23448">Enum</a> { <br />
+&#160;&#160;<b>None</b> = XII_BIT(0), 
+<a class="el" href="../../dd/d37/structxii_g_a_l_update_mode.htm#a5947c438b461207eb67c3f3676d23448a23204b0ff2c6c4a20ec5bca180de5ef0">DoNotWait</a> = XII_BIT(1), 
+<a class="el" href="../../dd/d37/structxii_g_a_l_update_mode.htm#a5947c438b461207eb67c3f3676d23448ae2db104bf06a9264d4f8d7c35b769a82">Discard</a> = XII_BIT(2), 
+<a class="el" href="../../dd/d37/structxii_g_a_l_update_mode.htm#a5947c438b461207eb67c3f3676d23448aec34a77cf380bd8b756563f826d72d33">NoOverWrite</a> = XII_BIT(3), 
+<br />
+&#160;&#160;<a class="el" href="../../dd/d37/structxii_g_a_l_update_mode.htm#a5947c438b461207eb67c3f3676d23448a221a7630bd0497d18f819c824b734fa4">CopyToTempStorage</a> = XII_BIT(4)
+<br />
  }</td></tr>
 <tr class="separator:a5947c438b461207eb67c3f3676d23448"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Enumeration Documentation</h2>
+<a id="a5947c438b461207eb67c3f3676d23448"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5947c438b461207eb67c3f3676d23448">&#9670;&nbsp;</a></span>Enum</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="../../dd/d37/structxii_g_a_l_update_mode.htm#a5947c438b461207eb67c3f3676d23448">xiiGALUpdateMode::Enum</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a5947c438b461207eb67c3f3676d23448a23204b0ff2c6c4a20ec5bca180de5ef0"></a>DoNotWait&#160;</td><td class="fielddoc"><p>Do not wait another previous command using the resource completes. Map returns null pointer if the resource is still in use. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a5947c438b461207eb67c3f3676d23448ae2db104bf06a9264d4f8d7c35b769a82"></a>Discard&#160;</td><td class="fielddoc"><p>Discard the previous contents of the resource. Thus, making its contents undefined. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a5947c438b461207eb67c3f3676d23448aec34a77cf380bd8b756563f826d72d33"></a>NoOverWrite&#160;</td><td class="fielddoc"><p>The system will not synchronize pending operations before mapping the buffer. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a5947c438b461207eb67c3f3676d23448a221a7630bd0497d18f819c824b734fa4"></a>CopyToTempStorage&#160;</td><td class="fielddoc"><p>Use a temporary staging resource to upload data to the GPU. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li>/home/runner/work/XII/XII/Source/Engine/RendererFoundation/<a class="el" href="../../da/d9c/_renderer_foundation_d_l_l_8h_source.htm">RendererFoundationDLL.h</a></li>
 </ul>
@@ -108,7 +138,7 @@ Public Types</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dd/d37/structxii_g_a_l_update_mode.htm">xiiGALUpdateMode</a></li>
-    <li class="footer">Generated on Sun Mar 12 2023 21:19:55 for XIIEngine by
+    <li class="footer">Generated on Fri Mar 24 2023 17:20:21 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

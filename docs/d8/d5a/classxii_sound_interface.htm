@@ -85,6 +85,7 @@ $(document).ready(function(){initNavTree('d8/d5a/classxii_sound_interface.htm','
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="../../da/d19/classxii_sound_interface-members.htm">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">xiiSoundInterface Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
@@ -147,8 +148,78 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d5a/classxii_sound_interface.htm#a8e47d62876ec5a180ecfdbd84e0ed2dd">SetListener</a> (xiiInt32 iIndex, const <a class="el" href="../../d9/d9a/classxii_vec3_template.htm">xiiVec3</a> &amp;vPosition, const <a class="el" href="../../d9/d9a/classxii_vec3_template.htm">xiiVec3</a> &amp;vForward, const <a class="el" href="../../d9/d9a/classxii_vec3_template.htm">xiiVec3</a> &amp;vUp, const <a class="el" href="../../d9/d9a/classxii_vec3_template.htm">xiiVec3</a> &amp;vVelocity)=0</td></tr>
 <tr class="memdesc:a8e47d62876ec5a180ecfdbd84e0ed2dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the position for listener N. Index -1 is used for the override mode listener. <br /></td></tr>
 <tr class="separator:a8e47d62876ec5a180ecfdbd84e0ed2dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab57d045927c1a66dad557d09ae4ea44e"><td class="memItemLeft" align="right" valign="top"><a id="ab57d045927c1a66dad557d09ae4ea44e"></a>
+virtual <a class="el" href="../../dd/dad/structxii_result.htm">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d5a/classxii_sound_interface.htm#ab57d045927c1a66dad557d09ae4ea44e">OneShotSound</a> (<a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sResourceID, const <a class="el" href="../../d5/d13/classxii_transform_template.htm">xiiTransform</a> &amp;globalPosition, float fPitch=1.0f, float fVolume=1.0f, bool bBlockIfNotLoaded=true)=0</td></tr>
+<tr class="memdesc:ab57d045927c1a66dad557d09ae4ea44e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Plays a sound once. Callced by <a class="el" href="../../d8/d5a/classxii_sound_interface.htm#a59e4922acdb30599a13f6f37f89ec7a1" title="Plays a sound once.">xiiSoundInterface::PlaySound()</a>. <br /></td></tr>
+<tr class="separator:ab57d045927c1a66dad557d09ae4ea44e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a59e4922acdb30599a13f6f37f89ec7a1"><td class="memItemLeft" align="right" valign="top">static XII_CORE_DLL <a class="el" href="../../dd/dad/structxii_result.htm">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d5a/classxii_sound_interface.htm#a59e4922acdb30599a13f6f37f89ec7a1">PlaySound</a> (<a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sResourceID, const <a class="el" href="../../d5/d13/classxii_transform_template.htm">xiiTransform</a> &amp;globalPosition, float fPitch=1.0f, float fVolume=1.0f, bool bBlockIfNotLoaded=true)</td></tr>
+<tr class="memdesc:a59e4922acdb30599a13f6f37f89ec7a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Plays a sound once.  <a href="../../d8/d5a/classxii_sound_interface.htm#a59e4922acdb30599a13f6f37f89ec7a1">More...</a><br /></td></tr>
+<tr class="separator:a59e4922acdb30599a13f6f37f89ec7a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a59e4922acdb30599a13f6f37f89ec7a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a59e4922acdb30599a13f6f37f89ec7a1">&#9670;&nbsp;</a></span>PlaySound()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dd/dad/structxii_result.htm">xiiResult</a> xiiSoundInterface::PlaySound </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a>&#160;</td>
+          <td class="paramname"><em>sResourceID</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d5/d13/classxii_transform_template.htm">xiiTransform</a> &amp;&#160;</td>
+          <td class="paramname"><em>globalPosition</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>fPitch</em> = <code>1.0f</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>fVolume</em> = <code>1.0f</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bBlockIfNotLoaded</em> = <code>true</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Plays a sound once. </p>
+<p>Convenience function to call <a class="el" href="../../d8/d5a/classxii_sound_interface.htm#ab57d045927c1a66dad557d09ae4ea44e" title="Plays a sound once. Callced by xiiSoundInterface::PlaySound().">OneShotSound()</a> without having to retrieve the <a class="el" href="../../d8/d5a/classxii_sound_interface.htm">xiiSoundInterface</a> first.</p>
+<p>Which sound to play is specified through a resource ID ('Asset GUID'). This is not the most efficient way to load a sound, as there is no way to preload the resource. If preloading is desired, you need to access the implementation-specific resource type directly (e.g. xiiFmodSoundEventResource). Also see xiiFmodSoundEventResource::PlayOnce(). In practice, though, sounds are typically loaded in bulk from sound-banks, and preloading is not necessary.</p>
+<p>Be aware that this does not allow to adjust volume, pitch or position after creation. Stopping is also not possible. Use a sound component, if that is necessary.</p>
+<p>Also by default a pitch of 1 is always used. If the game speed is not 1 (<a class="el" href="../../d6/d89/classxii_world.htm" title="A world encapsulates a scene graph of game objects and various component managers and their component...">xiiWorld</a> clock), a custom pitch would need to be provided, if the sound should play at the same speed. </p>
+
+</div>
+</div>
 <a id="a14f5ec6a4e682e9a8e6dfb1f898a4c23"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a14f5ec6a4e682e9a8e6dfb1f898a4c23">&#9670;&nbsp;</a></span>SetSoundGroupVolume()</h2>
 
@@ -188,8 +259,9 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following file:<ul>
+<hr/>The documentation for this class was generated from the following files:<ul>
 <li>/home/runner/work/XII/XII/Source/Engine/Core/Interfaces/<a class="el" href="../../d7/d60/_sound_interface_8h_source.htm">SoundInterface.h</a></li>
+<li>/home/runner/work/XII/XII/Source/Engine/Core/Interfaces/Implementation/SoundInterface.cpp</li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -197,7 +269,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d8/d5a/classxii_sound_interface.htm">xiiSoundInterface</a></li>
-    <li class="footer">Generated on Sun Mar 12 2023 21:20:01 for XIIEngine by
+    <li class="footer">Generated on Fri Mar 24 2023 17:20:25 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

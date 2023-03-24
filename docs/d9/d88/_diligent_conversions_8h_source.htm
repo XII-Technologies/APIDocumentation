@@ -105,22 +105,25 @@ $(document).ready(function(){initNavTree('d9/d88/_diligent_conversions_8h_source
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;  <span class="keyword">static</span> Diligent::SHADER_TYPE GALToDiligentShaderStage(xiiGALShaderStage::Enum e);</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;  <span class="keyword">static</span> Diligent::VALUE_TYPE  GALToDiligentFormat(Diligent::TEXTURE_FORMAT format);</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;  <span class="keyword">static</span> xiiInt32              GALToDiligentNumComponent(Diligent::TEXTURE_FORMAT format);</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  <span class="keyword">static</span> Diligent::COLOR_MASK ToDiligentColorWriteMask(<a class="code" href="../../d5/da8/structxii_g_a_l_color_write_mask.htm#a5607aff6f7aec6047a8528540ed66a09">xiiGALColorWriteMask::Enum</a> mask);</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;};</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">bool</span>                  GALIsFormatNormalized(Diligent::TEXTURE_FORMAT format);</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  <span class="keyword">static</span> xiiInt32              GALToDiligentNumComponent(Diligent::TEXTURE_FORMAT format);</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  <span class="keyword">static</span> Diligent::COLOR_MASK ToDiligentColorWriteMask(<a class="code" href="../../d5/da8/structxii_g_a_l_color_write_mask.htm#a5607aff6f7aec6047a8528540ed66a09">xiiGALColorWriteMask::Enum</a> mask);</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &lt;RendererDiligent/Utilities/Implementation/DiligentConversions_inl.h&gt;</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">bool</span> IsDepthFormat(Diligent::TEXTURE_FORMAT format);</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;};</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include &lt;RendererDiligent/Utilities/Implementation/DiligentConversions_inl.h&gt;</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="astructxii_enum_htm"><div class="ttname"><a href="../../de/dfd/structxii_enum.htm">xiiEnum&lt; xiiGALMSAASampleCount &gt;</a></div></div>
-<div class="ttc" id="astructxii_g_a_l_color_write_mask_htm_a5607aff6f7aec6047a8528540ed66a09"><div class="ttname"><a href="../../d5/da8/structxii_g_a_l_color_write_mask.htm#a5607aff6f7aec6047a8528540ed66a09">xiiGALColorWriteMask::Enum</a></div><div class="ttdeci">Enum</div><div class="ttdef"><b>Definition:</b> RendererFoundationDLL.h:105</div></div>
+<div class="ttc" id="astructxii_g_a_l_color_write_mask_htm_a5607aff6f7aec6047a8528540ed66a09"><div class="ttname"><a href="../../d5/da8/structxii_g_a_l_color_write_mask.htm#a5607aff6f7aec6047a8528540ed66a09">xiiGALColorWriteMask::Enum</a></div><div class="ttdeci">Enum</div><div class="ttdef"><b>Definition:</b> RendererFoundationDLL.h:104</div></div>
 <div class="ttc" id="aclassxii_diligent_utils_htm"><div class="ttname"><a href="../../d3/dfa/classxii_diligent_utils.htm">xiiDiligentUtils</a></div><div class="ttdef"><b>Definition:</b> DiligentConversions.h:5</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.htm">home</a></li><li class="navelem"><a class="el" href="../../dir_1036706e55c22cab35bc1c58ee689f1d.htm">runner</a></li><li class="navelem"><a class="el" href="../../dir_629f8151d55d307162ff2d619fb1783d.htm">work</a></li><li class="navelem"><a class="el" href="../../dir_1ddc44fe1263a8c7935fa6130b7d9499.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_2c1b6808f12952f4c36e05ba7068379a.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_b5a1c4ecfca018ad24b729e213296d41.htm">Source</a></li><li class="navelem"><a class="el" href="../../dir_e321052006a51284e67389ab20037e7c.htm">Engine</a></li><li class="navelem"><a class="el" href="../../dir_e27f557319c003a17fbd4dca8e84207a.htm">RendererDiligent</a></li><li class="navelem"><a class="el" href="../../dir_c5155349fc1b45db2d8753c58b539fca.htm">Utilities</a></li><li class="navelem"><b>DiligentConversions.h</b></li>
-    <li class="footer">Generated on Sun Mar 12 2023 21:19:50 for XIIEngine by
+    <li class="footer">Generated on Fri Mar 24 2023 17:20:17 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

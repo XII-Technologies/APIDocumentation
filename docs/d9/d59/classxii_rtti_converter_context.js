@@ -8,6 +8,7 @@ var classxii_rtti_converter_context =
     [ "GenerateObjectGuid", "d9/d59/classxii_rtti_converter_context.htm#a746e5b9411f6726714d479f811e72bd8", null ],
     [ "GetObjectByGUID", "d9/d59/classxii_rtti_converter_context.htm#a458dad6733dac6f786d9fab9de0b2d56", null ],
     [ "GetObjectGUID", "d9/d59/classxii_rtti_converter_context.htm#ae38eb1122d30b3ffc7b041fc4d6dc8d7", null ],
+    [ "OnUnknownTypeError", "d9/d59/classxii_rtti_converter_context.htm#a996f84e2cbf1dbdb6ce7b33accec9429", null ],
     [ "RegisterObject", "d9/d59/classxii_rtti_converter_context.htm#a85c4a74dd0263feccde0401647615e80", null ],
     [ "UnregisterObject", "d9/d59/classxii_rtti_converter_context.htm#a9553ecc20cb7e5a86e93948a0999921e", null ],
     [ "m_GuidToObject", "d9/d59/classxii_rtti_converter_context.htm#ac859bef32d0a8e5f5689ab3104819a8a", null ],

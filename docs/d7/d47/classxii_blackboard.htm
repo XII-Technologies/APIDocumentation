@@ -117,9 +117,9 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a903a0d92815c8136f291eb2cb76a4c55"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d47/classxii_blackboard.htm#a903a0d92815c8136f291eb2cb76a4c55">SetName</a> (const char *szName)</td></tr>
-<tr class="memdesc:a903a0d92815c8136f291eb2cb76a4c55"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes the name of the blackboard.  <a href="../../d7/d47/classxii_blackboard.htm#a903a0d92815c8136f291eb2cb76a4c55">More...</a><br /></td></tr>
-<tr class="separator:a903a0d92815c8136f291eb2cb76a4c55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d0fe3c22c428667f9c0d9b4ff7fd979"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d47/classxii_blackboard.htm#a5d0fe3c22c428667f9c0d9b4ff7fd979">SetName</a> (<a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sName)</td></tr>
+<tr class="memdesc:a5d0fe3c22c428667f9c0d9b4ff7fd979"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes the name of the blackboard.  <a href="../../d7/d47/classxii_blackboard.htm#a5d0fe3c22c428667f9c0d9b4ff7fd979">More...</a><br /></td></tr>
+<tr class="separator:a5d0fe3c22c428667f9c0d9b4ff7fd979"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5724088fe6755ed58bacba5734d729dc"><td class="memItemLeft" align="right" valign="top"><a id="a5724088fe6755ed58bacba5734d729dc"></a>
 const char *&#160;</td><td class="memItemRight" valign="bottom"><b>GetName</b> () const</td></tr>
 <tr class="separator:a5724088fe6755ed58bacba5734d729dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -443,12 +443,12 @@ static <a class="el" href="../../d8/d9b/classxii_shared_ptr.htm">xiiSharedPtr</a
 <p>Sets the value of the named entry. </p>
 <p>If the entry doesn't exist, XII_FAILURE is returned.</p>
 <p>If the 'OnChangeEvent' flag is set for this entry, <a class="el" href="../../d7/d47/classxii_blackboard.htm#a0709165cfcfdb106ac09b206c11f4b79" title="Allows you to register to the OnEntryEvent. This is broadcast whenever an entry is modified that has ...">OnEntryEvent()</a> will be broadcast. However, if the new value is no different to the old, no event will be broadcast, unless 'force' is set to true.</p>
-<p>Logs an error, if the named entry hasn't been registered before. </p>
+<p>Returns XII_FAILURE, if the named entry hasn't been registered before. </p>
 
 </div>
 </div>
-<a id="a903a0d92815c8136f291eb2cb76a4c55"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a903a0d92815c8136f291eb2cb76a4c55">&#9670;&nbsp;</a></span>SetName()</h2>
+<a id="a5d0fe3c22c428667f9c0d9b4ff7fd979"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d0fe3c22c428667f9c0d9b4ff7fd979">&#9670;&nbsp;</a></span>SetName()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -456,8 +456,8 @@ static <a class="el" href="../../d8/d9b/classxii_shared_ptr.htm">xiiSharedPtr</a
         <tr>
           <td class="memname">void xiiBlackboard::SetName </td>
           <td>(</td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>szName</em></td><td>)</td>
+          <td class="paramtype"><a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a>&#160;</td>
+          <td class="paramname"><em>sName</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -478,7 +478,7 @@ static <a class="el" href="../../d8/d9b/classxii_shared_ptr.htm">xiiSharedPtr</a
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d7/d47/classxii_blackboard.htm">xiiBlackboard</a></li>
-    <li class="footer">Generated on Sun Mar 12 2023 21:19:53 for XIIEngine by
+    <li class="footer">Generated on Fri Mar 24 2023 17:20:20 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

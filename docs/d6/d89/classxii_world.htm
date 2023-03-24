@@ -115,10 +115,10 @@ Public Member Functions</h2></td></tr>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d89/classxii_world.htm#a3b7b2ff09bf7bed357a09a75ec486f8b">Clear</a> ()</td></tr>
 <tr class="memdesc:a3b7b2ff09bf7bed357a09a75ec486f8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deletes all game objects in a world. <br /></td></tr>
 <tr class="separator:a3b7b2ff09bf7bed357a09a75ec486f8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaf4efe8ec0ad412966f08a5bd6d3766a"><td class="memItemLeft" align="right" valign="top"><a id="aaf4efe8ec0ad412966f08a5bd6d3766a"></a>
-const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d89/classxii_world.htm#aaf4efe8ec0ad412966f08a5bd6d3766a">GetName</a> () const</td></tr>
-<tr class="memdesc:aaf4efe8ec0ad412966f08a5bd6d3766a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the name of this world. <br /></td></tr>
-<tr class="separator:aaf4efe8ec0ad412966f08a5bd6d3766a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a866ec031f1d82f11716e3f55db08ba2d"><td class="memItemLeft" align="right" valign="top"><a id="a866ec031f1d82f11716e3f55db08ba2d"></a>
+<a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d89/classxii_world.htm#a866ec031f1d82f11716e3f55db08ba2d">GetName</a> () const</td></tr>
+<tr class="memdesc:a866ec031f1d82f11716e3f55db08ba2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the name of this world. <br /></td></tr>
+<tr class="separator:a866ec031f1d82f11716e3f55db08ba2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5a0ba3ae4ca090f8e8ff05bb0387a125"><td class="memItemLeft" align="right" valign="top"><a id="a5a0ba3ae4ca090f8e8ff05bb0387a125"></a>
 xiiUInt32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d89/classxii_world.htm#a5a0ba3ae4ca090f8e8ff05bb0387a125">GetIndex</a> () const</td></tr>
 <tr class="memdesc:a5a0ba3ae4ca090f8e8ff05bb0387a125"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the index of this world. <br /></td></tr>
@@ -329,10 +329,10 @@ template&lt;typename ComponentType &gt; </td></tr>
 <tr class="memitem:a6476db25c6548de3e752d1647324e640"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d6/d89/classxii_world.htm#a6476db25c6548de3e752d1647324e640">TryGetComponent</a> (const <a class="el" href="../../da/d8d/structxii_component_handle.htm">xiiComponentHandle</a> &amp;component, const ComponentType *&amp;out_pComponent) const</td></tr>
 <tr class="memdesc:a6476db25c6548de3e752d1647324e640"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether a component with the given handle exists and if so writes out the corresponding pointer to out_pComponent. <br /></td></tr>
 <tr class="separator:a6476db25c6548de3e752d1647324e640"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abad17a3612d00b6c7f86578aba8c73eb"><td class="memItemLeft" align="right" valign="top"><a id="abad17a3612d00b6c7f86578aba8c73eb"></a>
-<a class="el" href="../../de/de2/classxii_component_init_batch_handle.htm">xiiComponentInitBatchHandle</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d89/classxii_world.htm#abad17a3612d00b6c7f86578aba8c73eb">CreateComponentInitBatch</a> (const char *szBatchName, bool bMustFinishWithinOneFrame=true)</td></tr>
-<tr class="memdesc:abad17a3612d00b6c7f86578aba8c73eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new component init batch. It is ensured that the Initialize function is called for all components in a batch before the OnSimulationStarted is called. If bMustFinishWithinOneFrame is set to false the processing of an init batch can be distributed over multiple frames if m_MaxComponentInitializationTimePerFrame in the world desc is set to a reasonable value. <br /></td></tr>
-<tr class="separator:abad17a3612d00b6c7f86578aba8c73eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a638d51a01d207c99389598df27845bf0"><td class="memItemLeft" align="right" valign="top"><a id="a638d51a01d207c99389598df27845bf0"></a>
+<a class="el" href="../../de/de2/classxii_component_init_batch_handle.htm">xiiComponentInitBatchHandle</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d89/classxii_world.htm#a638d51a01d207c99389598df27845bf0">CreateComponentInitBatch</a> (<a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sBatchName, bool bMustFinishWithinOneFrame=true)</td></tr>
+<tr class="memdesc:a638d51a01d207c99389598df27845bf0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new component init batch. It is ensured that the Initialize function is called for all components in a batch before the OnSimulationStarted is called. If bMustFinishWithinOneFrame is set to false the processing of an init batch can be distributed over multiple frames if m_MaxComponentInitializationTimePerFrame in the world desc is set to a reasonable value. <br /></td></tr>
+<tr class="separator:a638d51a01d207c99389598df27845bf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aba8393db0bbb4abd806af3f2720561a1"><td class="memItemLeft" align="right" valign="top"><a id="aba8393db0bbb4abd806af3f2720561a1"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d89/classxii_world.htm#aba8393db0bbb4abd806af3f2720561a1">DeleteComponentInitBatch</a> (const <a class="el" href="../../de/de2/classxii_component_init_batch_handle.htm">xiiComponentInitBatchHandle</a> &amp;batch)</td></tr>
 <tr class="memdesc:aba8393db0bbb4abd806af3f2720561a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deletes a component init batch. It must be completely processed before it can be deleted. <br /></td></tr>
@@ -707,7 +707,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../.
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d6/d89/classxii_world.htm">xiiWorld</a></li>
-    <li class="footer">Generated on Sun Mar 12 2023 21:20:03 for XIIEngine by
+    <li class="footer">Generated on Fri Mar 24 2023 17:20:27 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

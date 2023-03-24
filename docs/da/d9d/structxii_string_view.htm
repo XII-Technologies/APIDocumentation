@@ -264,6 +264,14 @@ const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d9d/structxii_string_view.htm#a13022b4950ea182e3d50ecdf2d3d953b">GetShrunk</a> (xiiUInt32 uiShrinkCharsFront, xiiUInt32 uiShrinkCharsBack=0) const</td></tr>
 <tr class="memdesc:a13022b4950ea182e3d50ecdf2d3d953b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a sub-string that is shrunk at the start and front by the given amount of characters (not bytes!). <br /></td></tr>
 <tr class="separator:a13022b4950ea182e3d50ecdf2d3d953b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21212f66212bf8d7c5786193208d2c0d"><td class="memItemLeft" align="right" valign="top"><a id="a21212f66212bf8d7c5786193208d2c0d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d9d/structxii_string_view.htm#a21212f66212bf8d7c5786193208d2c0d">ChopAwayFirstCharacterUtf8</a> ()</td></tr>
+<tr class="memdesc:a21212f66212bf8d7c5786193208d2c0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Identical to 'Shrink(1, 0)' in functionality, but slightly more efficient. <br /></td></tr>
+<tr class="separator:a21212f66212bf8d7c5786193208d2c0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04c31dcdc0ed0e95641c70d57db8e97e"><td class="memItemLeft" align="right" valign="top"><a id="a04c31dcdc0ed0e95641c70d57db8e97e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d9d/structxii_string_view.htm#a04c31dcdc0ed0e95641c70d57db8e97e">ChopAwayFirstCharacterAscii</a> ()</td></tr>
+<tr class="memdesc:a04c31dcdc0ed0e95641c70d57db8e97e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Similar to <a class="el" href="../../da/d9d/structxii_string_view.htm#a21212f66212bf8d7c5786193208d2c0d" title="Identical to &#39;Shrink(1, 0)&#39; in functionality, but slightly more efficient.">ChopAwayFirstCharacterUtf8()</a>, but assumes that the first character is ASCII and thus exactly one byte in length. Asserts that this is the case. More efficient than <a class="el" href="../../da/d9d/structxii_string_view.htm#a21212f66212bf8d7c5786193208d2c0d" title="Identical to &#39;Shrink(1, 0)&#39; in functionality, but slightly more efficient.">ChopAwayFirstCharacterUtf8()</a>, if it is known that the first character is ASCII. <br /></td></tr>
+<tr class="separator:a04c31dcdc0ed0e95641c70d57db8e97e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab8e3cab7b427f8f870b367d23a5066b6"><td class="memItemLeft" align="right" valign="top"><a id="ab8e3cab7b427f8f870b367d23a5066b6"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d9d/structxii_string_view.htm#ab8e3cab7b427f8f870b367d23a5066b6">Trim</a> (const char *szTrimChars)</td></tr>
 <tr class="memdesc:ab8e3cab7b427f8f870b367d23a5066b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes all characters from the start and end that appear in the given strings by adjusting the begin and end of the view. <br /></td></tr>
@@ -972,7 +980,7 @@ template&lt;size_t N&gt; </td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a></li>
-    <li class="footer">Generated on Sun Mar 12 2023 21:20:02 for XIIEngine by
+    <li class="footer">Generated on Fri Mar 24 2023 17:20:26 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

@@ -112,8 +112,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:afdb1a0e5a8e475c1d17e691d9089800f"><td class="memItemLeft" align="right" valign="top"><a id="afdb1a0e5a8e475c1d17e691d9089800f"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SetShaderPlatform</b> (const <a class="el" href="../../d3/db8/classxii_g_a_l_shader.htm">xiiGALShader</a> *pShader) override</td></tr>
 <tr class="separator:afdb1a0e5a8e475c1d17e691d9089800f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abd1f7fe42d8349a371027070302f739d"><td class="memItemLeft" align="right" valign="top"><a id="abd1f7fe42d8349a371027070302f739d"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SetConstantBufferPlatform</b> (xiiUInt32 uiSlot, const <a class="el" href="../../da/d03/classxii_g_a_l_buffer.htm">xiiGALBuffer</a> *pBuffer) override</td></tr>
+<tr class="memitem:abd1f7fe42d8349a371027070302f739d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dda/classxii_g_a_l_command_encoder_impl_diligent.htm#abd1f7fe42d8349a371027070302f739d">SetConstantBufferPlatform</a> (xiiUInt32 uiSlot, const <a class="el" href="../../da/d03/classxii_g_a_l_buffer.htm">xiiGALBuffer</a> *pBuffer) override</td></tr>
 <tr class="separator:abd1f7fe42d8349a371027070302f739d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a59ca3783812d9c8aebdca2abcea84fe6"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dda/classxii_g_a_l_command_encoder_impl_diligent.htm#a59ca3783812d9c8aebdca2abcea84fe6">SetSamplerStatePlatform</a> (xiiGALShaderStage::Enum Stage, xiiUInt32 uiSlot, const <a class="el" href="../../da/d71/classxii_g_a_l_sampler_state.htm">xiiGALSamplerState</a> *pSamplerState) override</td></tr>
 <tr class="separator:a59ca3783812d9c8aebdca2abcea84fe6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -148,7 +147,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>CopyBufferPla
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>CopyBufferRegionPlatform</b> (const <a class="el" href="../../da/d03/classxii_g_a_l_buffer.htm">xiiGALBuffer</a> *pDestination, xiiUInt32 uiDestOffset, const <a class="el" href="../../da/d03/classxii_g_a_l_buffer.htm">xiiGALBuffer</a> *pSource, xiiUInt32 uiSourceOffset, xiiUInt32 uiByteCount) override</td></tr>
 <tr class="separator:abb83bfeefde466edf0b364b33fe36b2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9d70d61a374237c93c684eb445aff39d"><td class="memItemLeft" align="right" valign="top"><a id="a9d70d61a374237c93c684eb445aff39d"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>UpdateBufferPlatform</b> (const <a class="el" href="../../da/d03/classxii_g_a_l_buffer.htm">xiiGALBuffer</a> *pDestination, xiiUInt32 uiDestOffset, <a class="el" href="../../d0/d60/classxii_array_ptr.htm">xiiArrayPtr</a>&lt; const xiiUInt8 &gt; pSourceData, xiiGALUpdateMode::Enum updateMode) override</td></tr>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>UpdateBufferPlatform</b> (const <a class="el" href="../../da/d03/classxii_g_a_l_buffer.htm">xiiGALBuffer</a> *pDestination, xiiUInt32 uiDestOffset, <a class="el" href="../../d0/d60/classxii_array_ptr.htm">xiiArrayPtr</a>&lt; const xiiUInt8 &gt; pSourceData, <a class="el" href="../../dd/d37/structxii_g_a_l_update_mode.htm#a5947c438b461207eb67c3f3676d23448">xiiGALUpdateMode::Enum</a> updateMode) override</td></tr>
 <tr class="separator:a9d70d61a374237c93c684eb445aff39d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac841ff71f342f5b9272524ccf0986374"><td class="memItemLeft" align="right" valign="top"><a id="ac841ff71f342f5b9272524ccf0986374"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>CopyTexturePlatform</b> (const <a class="el" href="../../d3/d9a/classxii_g_a_l_texture.htm">xiiGALTexture</a> *pDestination, const <a class="el" href="../../d3/d9a/classxii_g_a_l_texture.htm">xiiGALTexture</a> *pSource) override</td></tr>
@@ -174,14 +173,11 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>GenerateMipMa
 <tr class="memitem:a6d8aef92acdd3b2d24ebf3185c45acf3"><td class="memItemLeft" align="right" valign="top"><a id="a6d8aef92acdd3b2d24ebf3185c45acf3"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>FlushPlatform</b> () override</td></tr>
 <tr class="separator:a6d8aef92acdd3b2d24ebf3185c45acf3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a65cc828f68dc381abdd43e17177fb0ce"><td class="memItemLeft" align="right" valign="top"><a id="a65cc828f68dc381abdd43e17177fb0ce"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>PushMarkerPlatform</b> (const char *szMarker) override</td></tr>
+<tr class="memitem:a65cc828f68dc381abdd43e17177fb0ce"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dda/classxii_g_a_l_command_encoder_impl_diligent.htm#a65cc828f68dc381abdd43e17177fb0ce">PushMarkerPlatform</a> (const char *szMarker) override</td></tr>
 <tr class="separator:a65cc828f68dc381abdd43e17177fb0ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab6c589ecfe7b29e727b1a74089b89434"><td class="memItemLeft" align="right" valign="top"><a id="ab6c589ecfe7b29e727b1a74089b89434"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>PopMarkerPlatform</b> () override</td></tr>
+<tr class="memitem:ab6c589ecfe7b29e727b1a74089b89434"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dda/classxii_g_a_l_command_encoder_impl_diligent.htm#ab6c589ecfe7b29e727b1a74089b89434">PopMarkerPlatform</a> () override</td></tr>
 <tr class="separator:ab6c589ecfe7b29e727b1a74089b89434"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa60c97ffd5bfe9212a11b0dbd706b04d"><td class="memItemLeft" align="right" valign="top"><a id="aa60c97ffd5bfe9212a11b0dbd706b04d"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>InsertEventMarkerPlatform</b> (const char *szMarker) override</td></tr>
+<tr class="memitem:aa60c97ffd5bfe9212a11b0dbd706b04d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dda/classxii_g_a_l_command_encoder_impl_diligent.htm#aa60c97ffd5bfe9212a11b0dbd706b04d">InsertEventMarkerPlatform</a> (const char *szMarker) override</td></tr>
 <tr class="separator:aa60c97ffd5bfe9212a11b0dbd706b04d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af36e649b1549b6396d7446988cb25c13"><td class="memItemLeft" align="right" valign="top"><a id="af36e649b1549b6396d7446988cb25c13"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>BeginRendering</b> (const <a class="el" href="../../df/da6/structxii_g_a_l_rendering_setup.htm">xiiGALRenderingSetup</a> &amp;renderingSetup)</td></tr>
@@ -234,8 +230,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SetPrimitiveT
 <tr class="memitem:a7187b2228e199ed7e189842d3da823df"><td class="memItemLeft" align="right" valign="top"><a id="a7187b2228e199ed7e189842d3da823df"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SetBlendStatePlatform</b> (const <a class="el" href="../../d8/dac/classxii_g_a_l_blend_state.htm">xiiGALBlendState</a> *pBlendState, const <a class="el" href="../../d3/de6/classxii_color.htm">xiiColor</a> &amp;BlendFactor, xiiUInt32 uiSampleMask) override</td></tr>
 <tr class="separator:a7187b2228e199ed7e189842d3da823df"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a73123e5637e66e3f5b7aab00f934ab44"><td class="memItemLeft" align="right" valign="top"><a id="a73123e5637e66e3f5b7aab00f934ab44"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SetDepthStencilStatePlatform</b> (const <a class="el" href="../../d7/d17/classxii_g_a_l_depth_stencil_state.htm">xiiGALDepthStencilState</a> *pDepthStencilState, xiiUInt8 uiStencilRefValue) override</td></tr>
+<tr class="memitem:a73123e5637e66e3f5b7aab00f934ab44"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dda/classxii_g_a_l_command_encoder_impl_diligent.htm#a73123e5637e66e3f5b7aab00f934ab44">SetDepthStencilStatePlatform</a> (const <a class="el" href="../../d7/d17/classxii_g_a_l_depth_stencil_state.htm">xiiGALDepthStencilState</a> *pDepthStencilState, xiiUInt8 uiStencilRefValue) override</td></tr>
 <tr class="separator:a73123e5637e66e3f5b7aab00f934ab44"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a37878f632e6213475993cff9a6b91034"><td class="memItemLeft" align="right" valign="top"><a id="a37878f632e6213475993cff9a6b91034"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SetRasterizerStatePlatform</b> (const <a class="el" href="../../da/d06/classxii_g_a_l_rasterizer_state.htm">xiiGALRasterizerState</a> *pRasterizerState) override</td></tr>
@@ -261,18 +256,18 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>DispatchPlatf
 <tr class="memitem:a1d6ea2fcff4cb5fb36a414a7df83f295"><td class="memItemLeft" align="right" valign="top"><a id="a1d6ea2fcff4cb5fb36a414a7df83f295"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>DispatchIndirectPlatform</b> (const <a class="el" href="../../da/d03/classxii_g_a_l_buffer.htm">xiiGALBuffer</a> *pIndirectArgumentBuffer, xiiUInt32 uiArgumentOffsetInBytes) override</td></tr>
 <tr class="separator:a1d6ea2fcff4cb5fb36a414a7df83f295"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7951d7ac6fc190ef2e3434a2e9ea733a"><td class="memItemLeft" align="right" valign="top"><a id="a7951d7ac6fc190ef2e3434a2e9ea733a"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>MarkDirty</b> ()</td></tr>
-<tr class="separator:a7951d7ac6fc190ef2e3434a2e9ea733a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aea3dfa2d43cd1c289f843997ce401a55"><td class="memItemLeft" align="right" valign="top"><a id="aea3dfa2d43cd1c289f843997ce401a55"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>Reset</b> ()</td></tr>
-<tr class="separator:aea3dfa2d43cd1c289f843997ce401a55"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:a7159319cfe2a67181e02901c7560c268"><td class="memItemLeft" align="right" valign="top"><a id="a7159319cfe2a67181e02901c7560c268"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>FlushDeferredStateChanges</b> ()</td></tr>
-<tr class="separator:a7159319cfe2a67181e02901c7560c268"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a466a06574d9cbf189c55644b7bb860a8"><td class="memItemLeft" align="right" valign="top"><a id="a466a06574d9cbf189c55644b7bb860a8"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>FlushDeferredStateChangesCompute</b> ()</td></tr>
+<tr class="separator:a466a06574d9cbf189c55644b7bb860a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed80762640697134d0892756cbd6a690"><td class="memItemLeft" align="right" valign="top"><a id="aed80762640697134d0892756cbd6a690"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>FlushDeferredStateChangesGraphics</b> ()</td></tr>
+<tr class="separator:aed80762640697134d0892756cbd6a690"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac32ca4c5cdaee84b79eebc0f387f8ac8"><td class="memItemLeft" align="right" valign="top"><a id="ac32ca4c5cdaee84b79eebc0f387f8ac8"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>FillDescriptorBindings</b> (Diligent::IPipelineState *pPipelineState)</td></tr>
+<tr class="separator:ac32ca4c5cdaee84b79eebc0f387f8ac8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
@@ -284,6 +279,170 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>xiiGALSwapchainDilig
 <tr class="separator:aa04246f35a46ba0791f10c1ffc9fd55b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="aa60c97ffd5bfe9212a11b0dbd706b04d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa60c97ffd5bfe9212a11b0dbd706b04d">&#9670;&nbsp;</a></span>InsertEventMarkerPlatform()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void xiiGALCommandEncoderImplDiligent::InsertEventMarkerPlatform </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>szMarker</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.htm#_todo000093">Todo:</a></b></dt><dd>Fix Debug Groups </dd></dl>
+
+<p>Implements <a class="el" href="../../d7/d9f/classxii_g_a_l_command_encoder_common_platform_interface.htm">xiiGALCommandEncoderCommonPlatformInterface</a>.</p>
+
+</div>
+</div>
+<a id="ab6c589ecfe7b29e727b1a74089b89434"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab6c589ecfe7b29e727b1a74089b89434">&#9670;&nbsp;</a></span>PopMarkerPlatform()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void xiiGALCommandEncoderImplDiligent::PopMarkerPlatform </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.htm#_todo000092">Todo:</a></b></dt><dd>Fix Debug Groups </dd></dl>
+
+<p>Implements <a class="el" href="../../d7/d9f/classxii_g_a_l_command_encoder_common_platform_interface.htm">xiiGALCommandEncoderCommonPlatformInterface</a>.</p>
+
+</div>
+</div>
+<a id="a65cc828f68dc381abdd43e17177fb0ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a65cc828f68dc381abdd43e17177fb0ce">&#9670;&nbsp;</a></span>PushMarkerPlatform()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void xiiGALCommandEncoderImplDiligent::PushMarkerPlatform </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>szMarker</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.htm#_todo000091">Todo:</a></b></dt><dd>Fix Debug Groups </dd></dl>
+
+<p>Implements <a class="el" href="../../d7/d9f/classxii_g_a_l_command_encoder_common_platform_interface.htm">xiiGALCommandEncoderCommonPlatformInterface</a>.</p>
+
+</div>
+</div>
+<a id="abd1f7fe42d8349a371027070302f739d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd1f7fe42d8349a371027070302f739d">&#9670;&nbsp;</a></span>SetConstantBufferPlatform()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void xiiGALCommandEncoderImplDiligent::SetConstantBufferPlatform </td>
+          <td>(</td>
+          <td class="paramtype">xiiUInt32&#160;</td>
+          <td class="paramname"><em>uiSlot</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../da/d03/classxii_g_a_l_buffer.htm">xiiGALBuffer</a> *&#160;</td>
+          <td class="paramname"><em>pBuffer</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.htm#_todo000089">Todo:</a></b></dt><dd>Check if the device supports the stage / the slot index </dd></dl>
+
+<p>Implements <a class="el" href="../../d7/d9f/classxii_g_a_l_command_encoder_common_platform_interface.htm">xiiGALCommandEncoderCommonPlatformInterface</a>.</p>
+
+</div>
+</div>
+<a id="a73123e5637e66e3f5b7aab00f934ab44"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a73123e5637e66e3f5b7aab00f934ab44">&#9670;&nbsp;</a></span>SetDepthStencilStatePlatform()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void xiiGALCommandEncoderImplDiligent::SetDepthStencilStatePlatform </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d7/d17/classxii_g_a_l_depth_stencil_state.htm">xiiGALDepthStencilState</a> *&#160;</td>
+          <td class="paramname"><em>pDepthStencilState</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">xiiUInt8&#160;</td>
+          <td class="paramname"><em>uiStencilRefValue</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.htm#_todo000094">Todo:</a></b></dt><dd>Diligent: Implement uiStenciValue </dd></dl>
+
+<p>Implements <a class="el" href="../../db/ddc/classxii_g_a_l_command_encoder_render_platform_interface.htm">xiiGALCommandEncoderRenderPlatformInterface</a>.</p>
+
+</div>
+</div>
 <a id="a59ca3783812d9c8aebdca2abcea84fe6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a59ca3783812d9c8aebdca2abcea84fe6">&#9670;&nbsp;</a></span>SetSamplerStatePlatform()</h2>
 
@@ -323,7 +482,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>xiiGALSwapchainDilig
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.htm#_todo000089">Todo:</a></b></dt><dd>Check if the device supports the stage / the slot index </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.htm#_todo000090">Todo:</a></b></dt><dd>Check if the device supports the stage / the slot index </dd></dl>
 
 <p>Implements <a class="el" href="../../d7/d9f/classxii_g_a_l_command_encoder_common_platform_interface.htm">xiiGALCommandEncoderCommonPlatformInterface</a>.</p>
 
@@ -339,7 +498,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>xiiGALSwapchainDilig
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d1/dda/classxii_g_a_l_command_encoder_impl_diligent.htm">xiiGALCommandEncoderImplDiligent</a></li>
-    <li class="footer">Generated on Sun Mar 12 2023 21:19:55 for XIIEngine by
+    <li class="footer">Generated on Fri Mar 24 2023 17:20:21 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

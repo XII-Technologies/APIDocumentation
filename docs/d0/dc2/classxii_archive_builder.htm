@@ -116,9 +116,16 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a79ed6bf54149bed426fcdc8ede30739c"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dc2/classxii_archive_builder.htm#a79ed6bf54149bed426fcdc8ede30739c">InclusionMode</a> { <a class="el" href="../../d0/dc2/classxii_archive_builder.htm#a79ed6bf54149bed426fcdc8ede30739ca843f2812f595e7ec7c5036e89fde02d6">InclusionMode::Exclude</a>, 
+<tr class="memitem:a79ed6bf54149bed426fcdc8ede30739c"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dc2/classxii_archive_builder.htm#a79ed6bf54149bed426fcdc8ede30739c">InclusionMode</a> { <br />
+&#160;&#160;<a class="el" href="../../d0/dc2/classxii_archive_builder.htm#a79ed6bf54149bed426fcdc8ede30739ca843f2812f595e7ec7c5036e89fde02d6">InclusionMode::Exclude</a>, 
 <a class="el" href="../../d0/dc2/classxii_archive_builder.htm#a79ed6bf54149bed426fcdc8ede30739caadf6b3d6508faa5f47e983c09bf39f5a">InclusionMode::Uncompressed</a>, 
-<a class="el" href="../../d0/dc2/classxii_archive_builder.htm#a79ed6bf54149bed426fcdc8ede30739ca8a52e8e5a5e279f4091859972866590d">InclusionMode::Compress_zstd</a>
+<a class="el" href="../../d0/dc2/classxii_archive_builder.htm#a79ed6bf54149bed426fcdc8ede30739ca0f8609c82d5fe6ff1730059add7b8ffa">InclusionMode::Compress_zstd_fastest</a>, 
+<a class="el" href="../../d0/dc2/classxii_archive_builder.htm#a79ed6bf54149bed426fcdc8ede30739ca926190f37b74feaee6d136100a168ab3">InclusionMode::Compress_zstd_fast</a>, 
+<br />
+&#160;&#160;<a class="el" href="../../d0/dc2/classxii_archive_builder.htm#a79ed6bf54149bed426fcdc8ede30739ca713a5e197593cdfd61763d42784b4779">InclusionMode::Compress_zstd_average</a>, 
+<a class="el" href="../../d0/dc2/classxii_archive_builder.htm#a79ed6bf54149bed426fcdc8ede30739caa4cf9cacd421dfed126ca895191a872a">InclusionMode::Compress_zstd_high</a>, 
+<a class="el" href="../../d0/dc2/classxii_archive_builder.htm#a79ed6bf54149bed426fcdc8ede30739ca607012b7ce97186fe5e534560aa3040e">InclusionMode::Compress_zstd_highest</a>
+<br />
  }</td></tr>
 <tr class="separator:a79ed6bf54149bed426fcdc8ede30739c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac5b33d9308fb627bd3bab0d5cec54033"><td class="memItemLeft" align="right" valign="top"><a id="ac5b33d9308fb627bd3bab0d5cec54033"></a>
@@ -128,13 +135,13 @@ typedef <a class="el" href="../../dc/d84/structxii_delegate.htm">xiiDelegate</a>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a86d432a13a403dddfae306b8d263c758"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dc2/classxii_archive_builder.htm#a86d432a13a403dddfae306b8d263c758">AddFolder</a> (const char *szAbsFolderPath, xiiArchiveCompressionMode defaultMode=xiiArchiveCompressionMode::Uncompressed, <a class="el" href="../../d0/dc2/classxii_archive_builder.htm#ac5b33d9308fb627bd3bab0d5cec54033">InclusionCallback</a> callback=<a class="el" href="../../d0/dc2/classxii_archive_builder.htm#ac5b33d9308fb627bd3bab0d5cec54033">InclusionCallback</a>())</td></tr>
-<tr class="memdesc:a86d432a13a403dddfae306b8d263c758"><td class="mdescLeft">&#160;</td><td class="mdescRight">Iterates over all files in a folder and adds them to m_Entries for later.  <a href="../../d0/dc2/classxii_archive_builder.htm#a86d432a13a403dddfae306b8d263c758">More...</a><br /></td></tr>
-<tr class="separator:a86d432a13a403dddfae306b8d263c758"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5ff3917d6b4d2ae0c243bff4dc559fab"><td class="memItemLeft" align="right" valign="top"><a id="a5ff3917d6b4d2ae0c243bff4dc559fab"></a>
-<a class="el" href="../../dd/dad/structxii_result.htm">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dc2/classxii_archive_builder.htm#a5ff3917d6b4d2ae0c243bff4dc559fab">WriteArchive</a> (const char *szFile) const</td></tr>
-<tr class="memdesc:a5ff3917d6b4d2ae0c243bff4dc559fab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overwrites the given file with the archive. <br /></td></tr>
-<tr class="separator:a5ff3917d6b4d2ae0c243bff4dc559fab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a2996f18c14d76f307a9a026c6cb8ed"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dc2/classxii_archive_builder.htm#a1a2996f18c14d76f307a9a026c6cb8ed">AddFolder</a> (<a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sAbsFolderPath, xiiArchiveCompressionMode defaultMode=xiiArchiveCompressionMode::Uncompressed, <a class="el" href="../../d0/dc2/classxii_archive_builder.htm#ac5b33d9308fb627bd3bab0d5cec54033">InclusionCallback</a> callback=<a class="el" href="../../d0/dc2/classxii_archive_builder.htm#ac5b33d9308fb627bd3bab0d5cec54033">InclusionCallback</a>())</td></tr>
+<tr class="memdesc:a1a2996f18c14d76f307a9a026c6cb8ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Iterates over all files in a folder and adds them to m_Entries for later.  <a href="../../d0/dc2/classxii_archive_builder.htm#a1a2996f18c14d76f307a9a026c6cb8ed">More...</a><br /></td></tr>
+<tr class="separator:a1a2996f18c14d76f307a9a026c6cb8ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f72451c8755ca0752dd97107772e52c"><td class="memItemLeft" align="right" valign="top"><a id="a5f72451c8755ca0752dd97107772e52c"></a>
+<a class="el" href="../../dd/dad/structxii_result.htm">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dc2/classxii_archive_builder.htm#a5f72451c8755ca0752dd97107772e52c">WriteArchive</a> (<a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sFile) const</td></tr>
+<tr class="memdesc:a5f72451c8755ca0752dd97107772e52c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overwrites the given file with the archive. <br /></td></tr>
+<tr class="separator:a5f72451c8755ca0752dd97107772e52c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab151d0471f212dc831fcd8bb6824a587"><td class="memItemLeft" align="right" valign="top"><a id="ab151d0471f212dc831fcd8bb6824a587"></a>
 <a class="el" href="../../dd/dad/structxii_result.htm">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dc2/classxii_archive_builder.htm#ab151d0471f212dc831fcd8bb6824a587">WriteArchive</a> (<a class="el" href="../../d0/d18/classxii_stream_writer.htm">xiiStreamWriter</a> &amp;stream) const</td></tr>
 <tr class="memdesc:ab151d0471f212dc831fcd8bb6824a587"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes the previously gathered files to the file stream. <br /></td></tr>
@@ -148,14 +155,18 @@ Public Attributes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:ab51f4487e630e223d1a4ed7e1529e8ef"><td class="memItemLeft" align="right" valign="top"><a id="ab51f4487e630e223d1a4ed7e1529e8ef"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dc2/classxii_archive_builder.htm#ab51f4487e630e223d1a4ed7e1529e8ef">WriteNextFileCallback</a> (xiiUInt32 uiCurEntry, xiiUInt32 uiMaxEntries, const char *szSourceFile) const</td></tr>
-<tr class="memdesc:ab51f4487e630e223d1a4ed7e1529e8ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Override this to get a callback when the next file is being written to the output. <br /></td></tr>
-<tr class="separator:ab51f4487e630e223d1a4ed7e1529e8ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad12c9c838c5ce0f3cdd96de63a034d63"><td class="memItemLeft" align="right" valign="top"><a id="ad12c9c838c5ce0f3cdd96de63a034d63"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dc2/classxii_archive_builder.htm#ad12c9c838c5ce0f3cdd96de63a034d63">WriteNextFileCallback</a> (xiiUInt32 uiCurEntry, xiiUInt32 uiMaxEntries, <a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sSourceFile) const</td></tr>
+<tr class="memdesc:ad12c9c838c5ce0f3cdd96de63a034d63"><td class="mdescLeft">&#160;</td><td class="mdescRight">Override this to get a callback when the next file is being written to the output. Return 'true' to continue, 'false' to cancel the entire archive generation. <br /></td></tr>
+<tr class="separator:ad12c9c838c5ce0f3cdd96de63a034d63"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a22fb61a4592d0c3ba655a82f36d24071"><td class="memItemLeft" align="right" valign="top"><a id="a22fb61a4592d0c3ba655a82f36d24071"></a>
 virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dc2/classxii_archive_builder.htm#a22fb61a4592d0c3ba655a82f36d24071">WriteFileProgressCallback</a> (xiiUInt64 bytesWritten, xiiUInt64 bytesTotal) const</td></tr>
 <tr class="memdesc:a22fb61a4592d0c3ba655a82f36d24071"><td class="mdescLeft">&#160;</td><td class="mdescRight">Override this to get a progress report for writing a single file to the output. <br /></td></tr>
 <tr class="separator:a22fb61a4592d0c3ba655a82f36d24071"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab726a4ae6eb049442f1e1ac587d7a3f"><td class="memItemLeft" align="right" valign="top"><a id="aab726a4ae6eb049442f1e1ac587d7a3f"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dc2/classxii_archive_builder.htm#aab726a4ae6eb049442f1e1ac587d7a3f">WriteFileResultCallback</a> (xiiUInt32 uiCurEntry, xiiUInt32 uiMaxEntries, <a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sSourceFile, xiiUInt64 uiSourceSize, xiiUInt64 uiStoredSize, <a class="el" href="../../d7/dc1/structxii_time.htm">xiiTime</a> duration) const</td></tr>
+<tr class="memdesc:aab726a4ae6eb049442f1e1ac587d7a3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Override this to get a callback after a file has been processed. Gets additional information about the compression result and duration. <br /></td></tr>
+<tr class="separator:aab726a4ae6eb049442f1e1ac587d7a3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Utility class to build an xiiArchive file from files/folders on disk. </p>
@@ -185,15 +196,23 @@ virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 </td></tr>
 <tr><td class="fieldname"><a id="a79ed6bf54149bed426fcdc8ede30739caadf6b3d6508faa5f47e983c09bf39f5a"></a>Uncompressed&#160;</td><td class="fielddoc"><p>Add the file to the archive, but do not even try to compress it. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a79ed6bf54149bed426fcdc8ede30739ca8a52e8e5a5e279f4091859972866590d"></a>Compress_zstd&#160;</td><td class="fielddoc"><p>Add the file and try out compression. If compression does not help, the file will end up uncompressed in the archive. </p>
+<tr><td class="fieldname"><a id="a79ed6bf54149bed426fcdc8ede30739ca0f8609c82d5fe6ff1730059add7b8ffa"></a>Compress_zstd_fastest&#160;</td><td class="fielddoc"><p>Add the file and try out compression. If compression does not help, the file will end up uncompressed in the archive. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a79ed6bf54149bed426fcdc8ede30739ca926190f37b74feaee6d136100a168ab3"></a>Compress_zstd_fast&#160;</td><td class="fielddoc"><p>Add the file and try out compression. If compression does not help, the file will end up uncompressed in the archive. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a79ed6bf54149bed426fcdc8ede30739ca713a5e197593cdfd61763d42784b4779"></a>Compress_zstd_average&#160;</td><td class="fielddoc"><p>Add the file and try out compression. If compression does not help, the file will end up uncompressed in the archive. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a79ed6bf54149bed426fcdc8ede30739caa4cf9cacd421dfed126ca895191a872a"></a>Compress_zstd_high&#160;</td><td class="fielddoc"><p>Add the file and try out compression. If compression does not help, the file will end up uncompressed in the archive. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a79ed6bf54149bed426fcdc8ede30739ca607012b7ce97186fe5e534560aa3040e"></a>Compress_zstd_highest&#160;</td><td class="fielddoc"><p>Add the file and try out compression. If compression does not help, the file will end up uncompressed in the archive. </p>
 </td></tr>
 </table>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a86d432a13a403dddfae306b8d263c758"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a86d432a13a403dddfae306b8d263c758">&#9670;&nbsp;</a></span>AddFolder()</h2>
+<a id="a1a2996f18c14d76f307a9a026c6cb8ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a2996f18c14d76f307a9a026c6cb8ed">&#9670;&nbsp;</a></span>AddFolder()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -201,8 +220,8 @@ virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
         <tr>
           <td class="memname">void xiiArchiveBuilder::AddFolder </td>
           <td>(</td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>szAbsFolderPath</em>, </td>
+          <td class="paramtype"><a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a>&#160;</td>
+          <td class="paramname"><em>sAbsFolderPath</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -239,7 +258,7 @@ virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d0/dc2/classxii_archive_builder.htm">xiiArchiveBuilder</a></li>
-    <li class="footer">Generated on Sun Mar 12 2023 21:19:53 for XIIEngine by
+    <li class="footer">Generated on Fri Mar 24 2023 17:20:19 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

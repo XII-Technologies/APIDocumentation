@@ -6,6 +6,7 @@ var classxii_sound_interface =
     [ "GetNumListeners", "d8/d5a/classxii_sound_interface.htm#a48a03e1ead8db4d400060a51ace5bb13", null ],
     [ "GetSoundGroupVolume", "d8/d5a/classxii_sound_interface.htm#a7bb477dd7a3c6636e1bed5789515a223", null ],
     [ "LoadConfiguration", "d8/d5a/classxii_sound_interface.htm#ac7c6673597d6e836344b2caae5f37c94", null ],
+    [ "OneShotSound", "d8/d5a/classxii_sound_interface.htm#ab57d045927c1a66dad557d09ae4ea44e", null ],
     [ "SetListener", "d8/d5a/classxii_sound_interface.htm#a8e47d62876ec5a180ecfdbd84e0ed2dd", null ],
     [ "SetListenerOverrideMode", "d8/d5a/classxii_sound_interface.htm#a29c4892e49bdbc40523e51c86f430b3e", null ],
     [ "SetMasterChannelMute", "d8/d5a/classxii_sound_interface.htm#a654d11131edab84f16ad06a2e5592106", null ],

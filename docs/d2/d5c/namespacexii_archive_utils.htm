@@ -125,13 +125,13 @@ XII_FOUNDATION_DLL <a class="el" href="../../dd/dad/structxii_result.htm">xiiRes
 XII_FOUNDATION_DLL <a class="el" href="../../dd/dad/structxii_result.htm">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d5c/namespacexii_archive_utils.htm#a7c8ce3faa5d4a2d1ce8883ec26201045">ExtractTOC</a> (<a class="el" href="../../de/d1d/classxii_memory_mapped_file.htm">xiiMemoryMappedFile</a> &amp;memFile, <a class="el" href="../../d8/d66/classxii_archive_t_o_c.htm">xiiArchiveTOC</a> &amp;toc, xiiUInt8 uiArchiveVersion)</td></tr>
 <tr class="memdesc:a7c8ce3faa5d4a2d1ce8883ec26201045"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deserializes the TOC from the memory mapped file. Assumes the TOC is the very last data in the file and reads it from the back. <br /></td></tr>
 <tr class="separator:a7c8ce3faa5d4a2d1ce8883ec26201045"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aafcf6ebccb1e746552348621201e03d7"><td class="memItemLeft" align="right" valign="top">XII_FOUNDATION_DLL <a class="el" href="../../dd/dad/structxii_result.htm">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d5c/namespacexii_archive_utils.htm#aafcf6ebccb1e746552348621201e03d7">WriteEntry</a> (<a class="el" href="../../d0/d18/classxii_stream_writer.htm">xiiStreamWriter</a> &amp;stream, const char *szAbsSourcePath, xiiUInt32 uiPathStringOffset, xiiArchiveCompressionMode compression, <a class="el" href="../../d6/def/classxii_archive_entry.htm">xiiArchiveEntry</a> &amp;tocEntry, xiiUInt64 &amp;inout_uiCurrentStreamPosition, <a class="el" href="../../dc/d84/structxii_delegate.htm">FileWriteProgressCallback</a> progress=<a class="el" href="../../dc/d84/structxii_delegate.htm">FileWriteProgressCallback</a>())</td></tr>
-<tr class="memdesc:aafcf6ebccb1e746552348621201e03d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes a single file entry to an xiiArchive stream with the given compression level.  <a href="../../d2/d5c/namespacexii_archive_utils.htm#aafcf6ebccb1e746552348621201e03d7">More...</a><br /></td></tr>
-<tr class="separator:aafcf6ebccb1e746552348621201e03d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a541a7f374d0a57ac8c87387477735f80"><td class="memItemLeft" align="right" valign="top"><a id="a541a7f374d0a57ac8c87387477735f80"></a>
-XII_FOUNDATION_DLL <a class="el" href="../../dd/dad/structxii_result.htm">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d5c/namespacexii_archive_utils.htm#a541a7f374d0a57ac8c87387477735f80">WriteEntryOptimal</a> (<a class="el" href="../../d0/d18/classxii_stream_writer.htm">xiiStreamWriter</a> &amp;stream, const char *szAbsSourcePath, xiiUInt32 uiPathStringOffset, xiiArchiveCompressionMode compression, <a class="el" href="../../d6/def/classxii_archive_entry.htm">xiiArchiveEntry</a> &amp;tocEntry, xiiUInt64 &amp;inout_uiCurrentStreamPosition, <a class="el" href="../../dc/d84/structxii_delegate.htm">FileWriteProgressCallback</a> progress=<a class="el" href="../../dc/d84/structxii_delegate.htm">FileWriteProgressCallback</a>())</td></tr>
-<tr class="memdesc:a541a7f374d0a57ac8c87387477735f80"><td class="mdescLeft">&#160;</td><td class="mdescRight">Similar to WriteEntry, but if compression is enabled, checks that compression makes enough of a difference. If compression does not reduce file size enough, the file is stored uncompressed instead. <br /></td></tr>
-<tr class="separator:a541a7f374d0a57ac8c87387477735f80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73b2e53f2b6bcc9b2311474c16b31c36"><td class="memItemLeft" align="right" valign="top">XII_FOUNDATION_DLL <a class="el" href="../../dd/dad/structxii_result.htm">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d5c/namespacexii_archive_utils.htm#a73b2e53f2b6bcc9b2311474c16b31c36">WriteEntry</a> (<a class="el" href="../../d0/d18/classxii_stream_writer.htm">xiiStreamWriter</a> &amp;stream, <a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sAbsSourcePath, xiiUInt32 uiPathStringOffset, xiiArchiveCompressionMode compression, xiiInt32 iCompressionLevel, <a class="el" href="../../d6/def/classxii_archive_entry.htm">xiiArchiveEntry</a> &amp;tocEntry, xiiUInt64 &amp;inout_uiCurrentStreamPosition, <a class="el" href="../../dc/d84/structxii_delegate.htm">FileWriteProgressCallback</a> progress=<a class="el" href="../../dc/d84/structxii_delegate.htm">FileWriteProgressCallback</a>())</td></tr>
+<tr class="memdesc:a73b2e53f2b6bcc9b2311474c16b31c36"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes a single file entry to an xiiArchive stream with the given compression level.  <a href="../../d2/d5c/namespacexii_archive_utils.htm#a73b2e53f2b6bcc9b2311474c16b31c36">More...</a><br /></td></tr>
+<tr class="separator:a73b2e53f2b6bcc9b2311474c16b31c36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a276e8340bc32588722c38c9547a07431"><td class="memItemLeft" align="right" valign="top"><a id="a276e8340bc32588722c38c9547a07431"></a>
+XII_FOUNDATION_DLL <a class="el" href="../../dd/dad/structxii_result.htm">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d5c/namespacexii_archive_utils.htm#a276e8340bc32588722c38c9547a07431">WriteEntryOptimal</a> (<a class="el" href="../../d0/d18/classxii_stream_writer.htm">xiiStreamWriter</a> &amp;stream, <a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sAbsSourcePath, xiiUInt32 uiPathStringOffset, xiiArchiveCompressionMode compression, xiiInt32 iCompressionLevel, <a class="el" href="../../d6/def/classxii_archive_entry.htm">xiiArchiveEntry</a> &amp;tocEntry, xiiUInt64 &amp;inout_uiCurrentStreamPosition, <a class="el" href="../../dc/d84/structxii_delegate.htm">FileWriteProgressCallback</a> progress=<a class="el" href="../../dc/d84/structxii_delegate.htm">FileWriteProgressCallback</a>())</td></tr>
+<tr class="memdesc:a276e8340bc32588722c38c9547a07431"><td class="mdescLeft">&#160;</td><td class="mdescRight">Similar to WriteEntry, but if compression is enabled, checks that compression makes enough of a difference. If compression does not reduce file size enough, the file is stored uncompressed instead. <br /></td></tr>
+<tr class="separator:a276e8340bc32588722c38c9547a07431"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2c77caa394d3a24ce46f81b8eb154bbb"><td class="memItemLeft" align="right" valign="top">XII_FOUNDATION_DLL void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d5c/namespacexii_archive_utils.htm#a2c77caa394d3a24ce46f81b8eb154bbb">ConfigureRawMemoryStreamReader</a> (const <a class="el" href="../../d6/def/classxii_archive_entry.htm">xiiArchiveEntry</a> &amp;entry, const void *pStartOfArchiveData, <a class="el" href="../../d8/de5/classxii_raw_memory_stream_reader.htm">xiiRawMemoryStreamReader</a> &amp;memReader)</td></tr>
 <tr class="memdesc:a2c77caa394d3a24ce46f81b8eb154bbb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configures <em>memReader</em> as a view into the data stored for <em>entry</em> in the archive file.  <a href="../../d2/d5c/namespacexii_archive_utils.htm#a2c77caa394d3a24ce46f81b8eb154bbb">More...</a><br /></td></tr>
 <tr class="separator:a2c77caa394d3a24ce46f81b8eb154bbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -236,8 +236,8 @@ XII_FOUNDATION_DLL <a class="el" href="../../dd/dad/structxii_result.htm">xiiRes
 
 </div>
 </div>
-<a id="aafcf6ebccb1e746552348621201e03d7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aafcf6ebccb1e746552348621201e03d7">&#9670;&nbsp;</a></span>WriteEntry()</h2>
+<a id="a73b2e53f2b6bcc9b2311474c16b31c36"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a73b2e53f2b6bcc9b2311474c16b31c36">&#9670;&nbsp;</a></span>WriteEntry()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -251,8 +251,8 @@ XII_FOUNDATION_DLL <a class="el" href="../../dd/dad/structxii_result.htm">xiiRes
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>szAbsSourcePath</em>, </td>
+          <td class="paramtype"><a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a>&#160;</td>
+          <td class="paramname"><em>sAbsSourcePath</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -265,6 +265,12 @@ XII_FOUNDATION_DLL <a class="el" href="../../dd/dad/structxii_result.htm">xiiRes
           <td></td>
           <td class="paramtype">xiiArchiveCompressionMode&#160;</td>
           <td class="paramname"><em>compression</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">xiiInt32&#160;</td>
+          <td class="paramname"><em>iCompressionLevel</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -303,7 +309,7 @@ XII_FOUNDATION_DLL <a class="el" href="../../dd/dad/structxii_result.htm">xiiRes
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d2/d5c/namespacexii_archive_utils.htm">xiiArchiveUtils</a></li>
-    <li class="footer">Generated on Sun Mar 12 2023 21:20:03 for XIIEngine by
+    <li class="footer">Generated on Fri Mar 24 2023 17:20:27 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

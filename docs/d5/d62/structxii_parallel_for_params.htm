@@ -99,88 +99,35 @@ $(document).ready(function(){initNavTree('d5/d62/structxii_parallel_for_params.h
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a65eb3cc61f7ff92e0a098a551a963328"><td class="memItemLeft" align="right" valign="top">xiiUInt32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d62/structxii_parallel_for_params.htm#a65eb3cc61f7ff92e0a098a551a963328">DetermineMultiplicity</a> (xiiUInt64 uiNumTaskItems) const</td></tr>
-<tr class="separator:a65eb3cc61f7ff92e0a098a551a963328"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa7350c5a380d025dbe705a7d353988c7"><td class="memItemLeft" align="right" valign="top">xiiUInt64&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d62/structxii_parallel_for_params.htm#aa7350c5a380d025dbe705a7d353988c7">DetermineItemsPerInvocation</a> (xiiUInt64 uiNumTaskItems, xiiUInt32 uiMultiplicity) const</td></tr>
-<tr class="separator:aa7350c5a380d025dbe705a7d353988c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af82c85fd4101e8bf848eb525996e5a90"><td class="memItemLeft" align="right" valign="top"><a id="af82c85fd4101e8bf848eb525996e5a90"></a>
-xiiUInt32&#160;</td><td class="memItemRight" valign="bottom"><b>DetermineItemsPerInvocation</b> (xiiUInt32 uiNumTaskItems, xiiUInt32 uiMultiplicity) const</td></tr>
-<tr class="separator:af82c85fd4101e8bf848eb525996e5a90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae68114d3165e9dff0f50fa2a20cc7d79"><td class="memItemLeft" align="right" valign="top"><a id="ae68114d3165e9dff0f50fa2a20cc7d79"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>DetermineThreading</b> (xiiUInt64 uiNumItemsToExecute, xiiUInt32 &amp;out_uiNumTasksToRun, xiiUInt64 &amp;out_uiNumItemsPerTask) const</td></tr>
+<tr class="separator:ae68114d3165e9dff0f50fa2a20cc7d79"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:aa52038645b67fffea61e27cfd5d65025"><td class="memItemLeft" align="right" valign="top">xiiUInt32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d62/structxii_parallel_for_params.htm#aa52038645b67fffea61e27cfd5d65025">uiBinSize</a> = 1</td></tr>
-<tr class="separator:aa52038645b67fffea61e27cfd5d65025"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac0b7cbe3d33fbc15c3b26ff6c212b0b0"><td class="memItemLeft" align="right" valign="top">xiiUInt32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d62/structxii_parallel_for_params.htm#ac0b7cbe3d33fbc15c3b26ff6c212b0b0">uiMaxTasksPerThread</a> = 2</td></tr>
-<tr class="separator:ac0b7cbe3d33fbc15c3b26ff6c212b0b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af567c52fd749d7b52c95ce0015745331"><td class="memItemLeft" align="right" valign="top"><a id="af567c52fd749d7b52c95ce0015745331"></a>
-xiiTaskNesting&#160;</td><td class="memItemRight" valign="bottom"><b>nestingMode</b> = xiiTaskNesting::Never</td></tr>
-<tr class="separator:af567c52fd749d7b52c95ce0015745331"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a39b66e0f676b4b61b3a021aabf42f528"><td class="memItemLeft" align="right" valign="top"><a id="a39b66e0f676b4b61b3a021aabf42f528"></a>
-<a class="el" href="../../d5/d66/classxii_allocator_base.htm">xiiAllocatorBase</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d62/structxii_parallel_for_params.htm#a39b66e0f676b4b61b3a021aabf42f528">pTaskAllocator</a> = nullptr</td></tr>
-<tr class="memdesc:a39b66e0f676b4b61b3a021aabf42f528"><td class="mdescLeft">&#160;</td><td class="mdescRight">The allocator used to for the tasks that the parallel-for uses internally. If null, will use the default allocator. <br /></td></tr>
-<tr class="separator:a39b66e0f676b4b61b3a021aabf42f528"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1644654abd76fe9b4612a0211756b220"><td class="memItemLeft" align="right" valign="top">xiiUInt32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d62/structxii_parallel_for_params.htm#a1644654abd76fe9b4612a0211756b220">m_uiBinSize</a> = 1</td></tr>
+<tr class="separator:a1644654abd76fe9b4612a0211756b220"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a868c88fcafb5d8b7e514193a23bdf2f2"><td class="memItemLeft" align="right" valign="top">xiiUInt32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d62/structxii_parallel_for_params.htm#a868c88fcafb5d8b7e514193a23bdf2f2">m_uiMaxTasksPerThread</a> = 2</td></tr>
+<tr class="separator:a868c88fcafb5d8b7e514193a23bdf2f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3d6d805f0d29da8017f4271b54ac3d1"><td class="memItemLeft" align="right" valign="top"><a id="aa3d6d805f0d29da8017f4271b54ac3d1"></a>
+xiiTaskNesting&#160;</td><td class="memItemRight" valign="bottom"><b>m_NestingMode</b> = xiiTaskNesting::Never</td></tr>
+<tr class="separator:aa3d6d805f0d29da8017f4271b54ac3d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29cdf822b65dcd444ede65403a6414f3"><td class="memItemLeft" align="right" valign="top"><a id="a29cdf822b65dcd444ede65403a6414f3"></a>
+<a class="el" href="../../d5/d66/classxii_allocator_base.htm">xiiAllocatorBase</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d62/structxii_parallel_for_params.htm#a29cdf822b65dcd444ede65403a6414f3">m_pTaskAllocator</a> = nullptr</td></tr>
+<tr class="memdesc:a29cdf822b65dcd444ede65403a6414f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">The allocator used to for the tasks that the parallel-for uses internally. If null, will use the default allocator. <br /></td></tr>
+<tr class="separator:a29cdf822b65dcd444ede65403a6414f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Settings for <a class="el" href="../../d1/dc7/classxii_task_system.htm#a46596241a0106714af8f8126d0ff7cec">xiiTaskSystem::ParallelFor</a> invocations. </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="aa7350c5a380d025dbe705a7d353988c7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa7350c5a380d025dbe705a7d353988c7">&#9670;&nbsp;</a></span>DetermineItemsPerInvocation()</h2>
+</div><h2 class="groupheader">Member Data Documentation</h2>
+<a id="a1644654abd76fe9b4612a0211756b220"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1644654abd76fe9b4612a0211756b220">&#9670;&nbsp;</a></span>m_uiBinSize</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">xiiUInt64 xiiParallelForParams::DetermineItemsPerInvocation </td>
-          <td>(</td>
-          <td class="paramtype">xiiUInt64&#160;</td>
-          <td class="paramname"><em>uiNumTaskItems</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">xiiUInt32&#160;</td>
-          <td class="paramname"><em>uiMultiplicity</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Returns the number of task items to work on per invocation (multiplicity). This is aligned with the multiplicity, i.e., multiplicity * bin_size &gt;= # task items. </p>
-
-</div>
-</div>
-<a id="a65eb3cc61f7ff92e0a098a551a963328"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a65eb3cc61f7ff92e0a098a551a963328">&#9670;&nbsp;</a></span>DetermineMultiplicity()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">xiiUInt32 xiiParallelForParams::DetermineMultiplicity </td>
-          <td>(</td>
-          <td class="paramtype">xiiUInt64&#160;</td>
-          <td class="paramname"><em>uiNumTaskItems</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Returns the multiplicity to use for the given task. If 0 is returned, serial execution is to be performed. </p>
-
-</div>
-</div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a id="aa52038645b67fffea61e27cfd5d65025"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa52038645b67fffea61e27cfd5d65025">&#9670;&nbsp;</a></span>uiBinSize</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">xiiUInt32 xiiParallelForParams::uiBinSize = 1</td>
+          <td class="memname">xiiUInt32 xiiParallelForParams::m_uiBinSize = 1</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -188,14 +135,14 @@ xiiTaskNesting&#160;</td><td class="memItemRight" valign="bottom"><b>nestingMode
 
 </div>
 </div>
-<a id="ac0b7cbe3d33fbc15c3b26ff6c212b0b0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac0b7cbe3d33fbc15c3b26ff6c212b0b0">&#9670;&nbsp;</a></span>uiMaxTasksPerThread</h2>
+<a id="a868c88fcafb5d8b7e514193a23bdf2f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a868c88fcafb5d8b7e514193a23bdf2f2">&#9670;&nbsp;</a></span>m_uiMaxTasksPerThread</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">xiiUInt32 xiiParallelForParams::uiMaxTasksPerThread = 2</td>
+          <td class="memname">xiiUInt32 xiiParallelForParams::m_uiMaxTasksPerThread = 2</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -213,7 +160,7 @@ xiiTaskNesting&#160;</td><td class="memItemRight" valign="bottom"><b>nestingMode
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d5/d62/structxii_parallel_for_params.htm">xiiParallelForParams</a></li>
-    <li class="footer">Generated on Sun Mar 12 2023 21:19:58 for XIIEngine by
+    <li class="footer">Generated on Fri Mar 24 2023 17:20:23 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

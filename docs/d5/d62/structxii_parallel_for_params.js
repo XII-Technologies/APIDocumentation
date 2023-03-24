@@ -1,11 +1,9 @@
 var structxii_parallel_for_params =
 [
     [ "xiiParallelForParams", "d5/d62/structxii_parallel_for_params.htm#a2f8e0a3911af7da0aacd8a68fac928d8", null ],
-    [ "DetermineItemsPerInvocation", "d5/d62/structxii_parallel_for_params.htm#af82c85fd4101e8bf848eb525996e5a90", null ],
-    [ "DetermineItemsPerInvocation", "d5/d62/structxii_parallel_for_params.htm#aa7350c5a380d025dbe705a7d353988c7", null ],
-    [ "DetermineMultiplicity", "d5/d62/structxii_parallel_for_params.htm#a65eb3cc61f7ff92e0a098a551a963328", null ],
-    [ "nestingMode", "d5/d62/structxii_parallel_for_params.htm#af567c52fd749d7b52c95ce0015745331", null ],
-    [ "pTaskAllocator", "d5/d62/structxii_parallel_for_params.htm#a39b66e0f676b4b61b3a021aabf42f528", null ],
-    [ "uiBinSize", "d5/d62/structxii_parallel_for_params.htm#aa52038645b67fffea61e27cfd5d65025", null ],
-    [ "uiMaxTasksPerThread", "d5/d62/structxii_parallel_for_params.htm#ac0b7cbe3d33fbc15c3b26ff6c212b0b0", null ]
+    [ "DetermineThreading", "d5/d62/structxii_parallel_for_params.htm#ae68114d3165e9dff0f50fa2a20cc7d79", null ],
+    [ "m_NestingMode", "d5/d62/structxii_parallel_for_params.htm#aa3d6d805f0d29da8017f4271b54ac3d1", null ],
+    [ "m_pTaskAllocator", "d5/d62/structxii_parallel_for_params.htm#a29cdf822b65dcd444ede65403a6414f3", null ],
+    [ "m_uiBinSize", "d5/d62/structxii_parallel_for_params.htm#a1644654abd76fe9b4612a0211756b220", null ],
+    [ "m_uiMaxTasksPerThread", "d5/d62/structxii_parallel_for_params.htm#a868c88fcafb5d8b7e514193a23bdf2f2", null ]
 ];

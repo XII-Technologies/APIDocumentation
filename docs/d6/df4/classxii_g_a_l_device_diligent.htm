@@ -492,7 +492,7 @@ const <a class="el" href="../../d5/d07/classxii_g_a_l_swap_chain.htm">xiiGALSwap
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
 <tr class="memitem:aa372babbc8fedc2928c52b38109d6c6f"><td class="memItemLeft" align="right" valign="top"><a id="aa372babbc8fedc2928c52b38109d6c6f"></a>
-Diligent::RENDER_DEVICE_TYPE&#160;</td><td class="memItemRight" valign="bottom"><b>m_DeviceType</b> = Diligent::RENDER_DEVICE_TYPE_D3D11</td></tr>
+Diligent::RENDER_DEVICE_TYPE&#160;</td><td class="memItemRight" valign="bottom"><b>m_DeviceType</b> = Diligent::RENDER_DEVICE_TYPE_UNDEFINED</td></tr>
 <tr class="separator:aa372babbc8fedc2928c52b38109d6c6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a76431398c99c68f95f80e675eb6f33c2"><td class="memItemLeft" align="right" valign="top"><a id="a76431398c99c68f95f80e675eb6f33c2"></a>
 Diligent::RefCntAutoPtr&lt; Diligent::IEngineFactory &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_pEngineFactory</b></td></tr>
@@ -639,9 +639,15 @@ Friends</h2></td></tr>
 <tr class="memitem:a1da389f9716d01585b9694caedc24d0b"><td class="memItemLeft" align="right" valign="top"><a id="a1da389f9716d01585b9694caedc24d0b"></a>
 class&#160;</td><td class="memItemRight" valign="bottom"><b>xiiGALCommandEncoderImplDiligent</b></td></tr>
 <tr class="separator:a1da389f9716d01585b9694caedc24d0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a285a6275662386296009ab9d5b128753"><td class="memItemLeft" align="right" valign="top"><a id="a285a6275662386296009ab9d5b128753"></a>
-<a class="el" href="../../de/d3c/structxii_internal_1_1_new_instance.htm">xiiInternal::NewInstance</a>&lt; <a class="el" href="../../d5/d19/classxii_g_a_l_device.htm">xiiGALDevice</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>CreateDiligentDevice</b> (<a class="el" href="../../d5/d66/classxii_allocator_base.htm">xiiAllocatorBase</a> *pAllocator, const <a class="el" href="../../d6/dd5/structxii_g_a_l_device_creation_description.htm">xiiGALDeviceCreationDescription</a> &amp;Description)</td></tr>
-<tr class="separator:a285a6275662386296009ab9d5b128753"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ffd20e9740e0c9630f1ef204a07a439"><td class="memItemLeft" align="right" valign="top"><a id="a5ffd20e9740e0c9630f1ef204a07a439"></a>
+<a class="el" href="../../de/d3c/structxii_internal_1_1_new_instance.htm">xiiInternal::NewInstance</a>&lt; <a class="el" href="../../d5/d19/classxii_g_a_l_device.htm">xiiGALDevice</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>CreateDiligentDeviceD3D11</b> (<a class="el" href="../../d5/d66/classxii_allocator_base.htm">xiiAllocatorBase</a> *pAllocator, const <a class="el" href="../../d6/dd5/structxii_g_a_l_device_creation_description.htm">xiiGALDeviceCreationDescription</a> &amp;Description)</td></tr>
+<tr class="separator:a5ffd20e9740e0c9630f1ef204a07a439"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a881f3aeaa797a6d2ffe0ad5211f358d0"><td class="memItemLeft" align="right" valign="top"><a id="a881f3aeaa797a6d2ffe0ad5211f358d0"></a>
+<a class="el" href="../../de/d3c/structxii_internal_1_1_new_instance.htm">xiiInternal::NewInstance</a>&lt; <a class="el" href="../../d5/d19/classxii_g_a_l_device.htm">xiiGALDevice</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>CreateDiligentDeviceD3D12</b> (<a class="el" href="../../d5/d66/classxii_allocator_base.htm">xiiAllocatorBase</a> *pAllocator, const <a class="el" href="../../d6/dd5/structxii_g_a_l_device_creation_description.htm">xiiGALDeviceCreationDescription</a> &amp;Description)</td></tr>
+<tr class="separator:a881f3aeaa797a6d2ffe0ad5211f358d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1f61dc1b28785406d032f2d8a5ee81f"><td class="memItemLeft" align="right" valign="top"><a id="aa1f61dc1b28785406d032f2d8a5ee81f"></a>
+<a class="el" href="../../de/d3c/structxii_internal_1_1_new_instance.htm">xiiInternal::NewInstance</a>&lt; <a class="el" href="../../d5/d19/classxii_g_a_l_device.htm">xiiGALDevice</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>CreateDiligentDeviceVulkan</b> (<a class="el" href="../../d5/d66/classxii_allocator_base.htm">xiiAllocatorBase</a> *pAllocator, const <a class="el" href="../../d6/dd5/structxii_g_a_l_device_creation_description.htm">xiiGALDeviceCreationDescription</a> &amp;Description)</td></tr>
+<tr class="separator:aa1f61dc1b28785406d032f2d8a5ee81f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -747,7 +753,7 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>VertexDeclarationTab
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d6/df4/classxii_g_a_l_device_diligent.htm">xiiGALDeviceDiligent</a></li>
-    <li class="footer">Generated on Sun Mar 12 2023 21:19:55 for XIIEngine by
+    <li class="footer">Generated on Fri Mar 24 2023 17:20:21 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

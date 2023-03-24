@@ -8,6 +8,7 @@ var classxii_world_rtti_converter_context =
     [ "DeleteObject", "d2/d12/classxii_world_rtti_converter_context.htm#ac34823ee5c1dd38c200e8ed104d83940", null ],
     [ "GetObjectByGUID", "d2/d12/classxii_world_rtti_converter_context.htm#a65cd4452eaf93becd0984992d8556bb4", null ],
     [ "GetObjectGUID", "d2/d12/classxii_world_rtti_converter_context.htm#ab4d6806d02acc0286054b682f56bf024", null ],
+    [ "OnUnknownTypeError", "d2/d12/classxii_world_rtti_converter_context.htm#ab676ef8f3ff2e0c4df8c4601660309c7", null ],
     [ "RegisterObject", "d2/d12/classxii_world_rtti_converter_context.htm#a62dee2c3d27325fcbd3d526915db107f", null ],
     [ "UnregisterObject", "d2/d12/classxii_world_rtti_converter_context.htm#a9913c579a46c08e3be5dabeae52bc90d", null ],
     [ "m_ComponentMap", "d2/d12/classxii_world_rtti_converter_context.htm#a7dc9e68e47d528c40817d87d48dc6dd3", null ],
@@ -17,5 +18,6 @@ var classxii_world_rtti_converter_context =
     [ "m_OtherPickingMap", "d2/d12/classxii_world_rtti_converter_context.htm#a39eb2bb18f1443455e2c2212dd3757c5", null ],
     [ "m_pWorld", "d2/d12/classxii_world_rtti_converter_context.htm#a921e79495365f312bcb6bb3ec9463057", null ],
     [ "m_uiHighlightID", "d2/d12/classxii_world_rtti_converter_context.htm#affdc49fb56ddf61a577bb86d69e1e469", null ],
-    [ "m_uiNextComponentPickingID", "d2/d12/classxii_world_rtti_converter_context.htm#a3c6c6783f584479257192ebcc13b3717", null ]
+    [ "m_uiNextComponentPickingID", "d2/d12/classxii_world_rtti_converter_context.htm#a3c6c6783f584479257192ebcc13b3717", null ],
+    [ "m_UnknownTypes", "d2/d12/classxii_world_rtti_converter_context.htm#ab90af92bb6b1d45665f4796777d53cc8", null ]
 ];

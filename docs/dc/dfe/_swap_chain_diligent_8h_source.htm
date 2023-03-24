@@ -90,65 +90,89 @@ $(document).ready(function(){initNavTree('dc/dfe/_swap_chain_diligent_8h_source.
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#pragma once</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;RendererDiligent/RendererDiligentDLL.h&gt;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;RendererFoundation/Descriptors/Descriptors.h&gt;</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;RendererFoundation/Device/SwapChain.h&gt;</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">class </span><a class="code" href="../../d6/df4/classxii_g_a_l_device_diligent.htm">xiiGALDeviceDiligent</a>;</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
-<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="../../d1/d4e/classxii_g_a_l_swap_chain_diligent.htm">   10</a></span>&#160;<span class="keyword">class </span>XII_RENDERERDILIGENT_DLL <a class="code" href="../../d1/d4e/classxii_g_a_l_swap_chain_diligent.htm">xiiGALSwapChainDiligent</a> : <span class="keyword">public</span> <a class="code" href="../../dc/de2/classxii_g_a_l_window_swap_chain.htm">xiiGALWindowSwapChain</a></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;{</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span>      AcquireNextRenderTarget(<a class="code" href="../../d5/d19/classxii_g_a_l_device.htm">xiiGALDevice</a>* pDevice) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span>      PresentRenderTarget(<a class="code" href="../../d5/d19/classxii_g_a_l_device.htm">xiiGALDevice</a>* pDevice) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;  <span class="keyword">virtual</span> <a class="code" href="../../dd/dad/structxii_result.htm">xiiResult</a> UpdateSwapChain(<a class="code" href="../../d5/d19/classxii_g_a_l_device.htm">xiiGALDevice</a>* pDevice, <a class="code" href="../../de/dfd/structxii_enum.htm">xiiEnum&lt;xiiGALPresentMode&gt;</a> newPresentMode) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;  XII_ALWAYS_INLINE Diligent::ISwapChain* GetSwapChain();</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;Foundation/Algorithm/HashingUtils.h&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;RendererDiligent/RendererDiligentDLL.h&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;RendererFoundation/Descriptors/Descriptors.h&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;RendererFoundation/Device/SwapChain.h&gt;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">class </span><a class="code" href="../../d6/df4/classxii_g_a_l_device_diligent.htm">xiiGALDeviceDiligent</a>;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="../../d9/daa/struct_render_target_info.htm">   11</a></span>&#160;<span class="keyword">struct </span><a class="code" href="../../d9/daa/struct_render_target_info.htm">RenderTargetInfo</a></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;{</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;  XII_DECLARE_POD_TYPE();</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;  Diligent::ITexture*     m_pTexture;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;  Diligent::ITextureView* m_pTextureView;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;};</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="../../d6/df4/classxii_g_a_l_device_diligent.htm">xiiGALDeviceDiligent</a>;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="../../d8/d9d/classxii_memory_utils.htm">xiiMemoryUtils</a>;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="../../d3/d9a/classxii_g_a_l_texture.htm">xiiGALTexture</a>;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  <a class="code" href="../../d1/d4e/classxii_g_a_l_swap_chain_diligent.htm">xiiGALSwapChainDiligent</a>(<span class="keyword">const</span> <a class="code" href="../../d9/d43/structxii_g_a_l_window_swap_chain_creation_description.htm">xiiGALWindowSwapChainCreationDescription</a>&amp; Description);</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  <span class="keyword">virtual</span> ~<a class="code" href="../../d1/d4e/classxii_g_a_l_swap_chain_diligent.htm">xiiGALSwapChainDiligent</a>();</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  <span class="keyword">virtual</span> <a class="code" href="../../dd/dad/structxii_result.htm">xiiResult</a> InitPlatform(<a class="code" href="../../d5/d19/classxii_g_a_l_device.htm">xiiGALDevice</a>* pDevice) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  <span class="keyword">virtual</span> <a class="code" href="../../dd/dad/structxii_result.htm">xiiResult</a> DeInitPlatform(<a class="code" href="../../d5/d19/classxii_g_a_l_device.htm">xiiGALDevice</a>* pDevice) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  <a class="code" href="../../dd/dad/structxii_result.htm">xiiResult</a> CreateBackBufferInternal(<a class="code" href="../../d6/df4/classxii_g_a_l_device_diligent.htm">xiiGALDeviceDiligent</a>* pDeviceDiligent);</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  <span class="keywordtype">void</span>      DestroyBackBufferInternal(<a class="code" href="../../d6/df4/classxii_g_a_l_device_diligent.htm">xiiGALDeviceDiligent</a>* pDeviceDiligent);</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  <a class="code" href="../../d6/df4/classxii_g_a_l_device_diligent.htm">xiiGALDeviceDiligent</a>* m_pDeviceDiligent = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  Diligent::RefCntAutoPtr&lt;Diligent::ISwapChain&gt; m_pSwapChain;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  Diligent::ITextureView* m_pCurrentBackbufferRTV;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <a class="code" href="../../df/de3/classxii_g_a_l_texture_handle.htm">xiiGALTextureHandle</a> m_hBackbufferTexture;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">template</span> &lt;&gt;</div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="../../de/dbc/structxii_hash_helper_3_01_render_target_info_01_4.htm">   20</a></span>&#160;<span class="keyword">struct </span><a class="code" href="../../d6/dcd/structxii_hash_helper.htm">xiiHashHelper</a>&lt;<a class="code" href="../../d9/daa/struct_render_target_info.htm">RenderTargetInfo</a>&gt;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;{</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  XII_ALWAYS_INLINE <span class="keyword">static</span> xiiUInt32 Hash(<span class="keyword">const</span> <a class="code" href="../../d9/daa/struct_render_target_info.htm">RenderTargetInfo</a>&amp; value)</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  {</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keyword">const</span> xiiUInt32 hashA = <a class="code" href="../../d6/dcd/structxii_hash_helper.htm">xiiHashHelper&lt;const void*&gt;::Hash</a>(value.m_pTexture);</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keyword">const</span> xiiUInt32 hashB = <a class="code" href="../../d6/dcd/structxii_hash_helper.htm">xiiHashHelper&lt;const void*&gt;::Hash</a>(value.m_pTextureView);</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="../../dc/d66/classxii_hashing_utils.htm#ae039f53b6833328361aed5bd74256140">xiiHashingUtils::CombineHashValues32</a>(hashA, hashB);</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  }</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  XII_ALWAYS_INLINE <span class="keyword">static</span> <span class="keywordtype">bool</span> Equal(<span class="keyword">const</span> <a class="code" href="../../d9/daa/struct_render_target_info.htm">RenderTargetInfo</a>&amp; a, <span class="keyword">const</span> <a class="code" href="../../d9/daa/struct_render_target_info.htm">RenderTargetInfo</a>&amp; b)</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  {</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keywordflow">return</span> a.m_pTexture == b.m_pTexture &amp;&amp; a.m_pTextureView == b.m_pTextureView;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  }</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;};</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="../../d1/d4e/classxii_g_a_l_swap_chain_diligent.htm">   35</a></span>&#160;<span class="keyword">class </span>XII_RENDERERDILIGENT_DLL <a class="code" href="../../d1/d4e/classxii_g_a_l_swap_chain_diligent.htm">xiiGALSwapChainDiligent</a> : <span class="keyword">public</span> <a class="code" href="../../dc/de2/classxii_g_a_l_window_swap_chain.htm">xiiGALWindowSwapChain</a></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;{</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span>      AcquireNextRenderTarget(<a class="code" href="../../d5/d19/classxii_g_a_l_device.htm">xiiGALDevice</a>* pDevice) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span>      PresentRenderTarget(<a class="code" href="../../d5/d19/classxii_g_a_l_device.htm">xiiGALDevice</a>* pDevice) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <span class="keyword">virtual</span> <a class="code" href="../../dd/dad/structxii_result.htm">xiiResult</a> UpdateSwapChain(<a class="code" href="../../d5/d19/classxii_g_a_l_device.htm">xiiGALDevice</a>* pDevice, <a class="code" href="../../de/dfd/structxii_enum.htm">xiiEnum&lt;xiiGALPresentMode&gt;</a> newPresentMode) <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <a class="code" href="../../de/dfd/structxii_enum.htm">xiiEnum&lt;xiiGALPresentMode&gt;</a> m_CurrentPresentMode;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;};</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor">#include &lt;RendererDiligent/Device/Implementation/SwapChainDiligent_inl.h&gt;</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  XII_ALWAYS_INLINE Diligent::ISwapChain* GetSwapChain();</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="../../d6/df4/classxii_g_a_l_device_diligent.htm">xiiGALDeviceDiligent</a>;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="../../d8/d9d/classxii_memory_utils.htm">xiiMemoryUtils</a>;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="../../d3/d9a/classxii_g_a_l_texture.htm">xiiGALTexture</a>;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <a class="code" href="../../d1/d4e/classxii_g_a_l_swap_chain_diligent.htm">xiiGALSwapChainDiligent</a>(<span class="keyword">const</span> <a class="code" href="../../d9/d43/structxii_g_a_l_window_swap_chain_creation_description.htm">xiiGALWindowSwapChainCreationDescription</a>&amp; Description);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <span class="keyword">virtual</span> ~<a class="code" href="../../d1/d4e/classxii_g_a_l_swap_chain_diligent.htm">xiiGALSwapChainDiligent</a>();</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <span class="keyword">virtual</span> <a class="code" href="../../dd/dad/structxii_result.htm">xiiResult</a> InitPlatform(<a class="code" href="../../d5/d19/classxii_g_a_l_device.htm">xiiGALDevice</a>* pDevice) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <span class="keyword">virtual</span> <a class="code" href="../../dd/dad/structxii_result.htm">xiiResult</a> DeInitPlatform(<a class="code" href="../../d5/d19/classxii_g_a_l_device.htm">xiiGALDevice</a>* pDevice) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <a class="code" href="../../dd/dad/structxii_result.htm">xiiResult</a> CreateBackBufferInternal(<a class="code" href="../../d6/df4/classxii_g_a_l_device_diligent.htm">xiiGALDeviceDiligent</a>* pDeviceDiligent, <span class="keywordtype">bool</span> bInitPlatform);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  <span class="keywordtype">void</span>      DestroyBackBufferInternal(<a class="code" href="../../d6/df4/classxii_g_a_l_device_diligent.htm">xiiGALDeviceDiligent</a>* pDeviceDiligent);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  Diligent::RefCntAutoPtr&lt;Diligent::ISwapChain&gt; m_pSwapChain;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  <a class="code" href="../../d8/dc2/classxii_hash_table.htm">xiiHashTable&lt;RenderTargetInfo, xiiGALTextureHandle&gt;</a> m_BackbufferTextures;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  <a class="code" href="../../de/dfd/structxii_enum.htm">xiiEnum&lt;xiiGALPresentMode&gt;</a> m_CurrentPresentMode;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;};</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="preprocessor">#include &lt;RendererDiligent/Device/Implementation/SwapChainDiligent_inl.h&gt;</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="astructxii_enum_htm"><div class="ttname"><a href="../../de/dfd/structxii_enum.htm">xiiEnum&lt; xiiGALPresentMode &gt;</a></div></div>
+<div class="ttc" id="astruct_render_target_info_htm"><div class="ttname"><a href="../../d9/daa/struct_render_target_info.htm">RenderTargetInfo</a></div><div class="ttdef"><b>Definition:</b> SwapChainDiligent.h:11</div></div>
+<div class="ttc" id="aclassxii_hashing_utils_htm_ae039f53b6833328361aed5bd74256140"><div class="ttname"><a href="../../dc/d66/classxii_hashing_utils.htm#ae039f53b6833328361aed5bd74256140">xiiHashingUtils::CombineHashValues32</a></div><div class="ttdeci">constexpr static xiiUInt32 CombineHashValues32(xiiUInt32 h0, xiiUInt32 h1)</div><div class="ttdoc">Combines two 32 bit hash values into one.</div><div class="ttdef"><b>Definition:</b> HashingUtils_inl.h:133</div></div>
 <div class="ttc" id="aclassxii_memory_utils_htm"><div class="ttname"><a href="../../d8/d9d/classxii_memory_utils.htm">xiiMemoryUtils</a></div><div class="ttdoc">This class provides functions to work on raw memory.</div><div class="ttdef"><b>Definition:</b> MemoryUtils.h:19</div></div>
-<div class="ttc" id="aclassxii_g_a_l_texture_handle_htm"><div class="ttname"><a href="../../df/de3/classxii_g_a_l_texture_handle.htm">xiiGALTextureHandle</a></div><div class="ttdef"><b>Definition:</b> RendererFoundationDLL.h:346</div></div>
 <div class="ttc" id="aclassxii_g_a_l_texture_htm"><div class="ttname"><a href="../../d3/d9a/classxii_g_a_l_texture.htm">xiiGALTexture</a></div><div class="ttdef"><b>Definition:</b> Texture.h:7</div></div>
 <div class="ttc" id="aclassxii_g_a_l_device_diligent_htm"><div class="ttname"><a href="../../d6/df4/classxii_g_a_l_device_diligent.htm">xiiGALDeviceDiligent</a></div><div class="ttdoc">The Diligent device implementation of the graphics abstraction layer.</div><div class="ttdef"><b>Definition:</b> DeviceDiligent.h:22</div></div>
 <div class="ttc" id="aclassxii_g_a_l_window_swap_chain_htm"><div class="ttname"><a href="../../dc/de2/classxii_g_a_l_window_swap_chain.htm">xiiGALWindowSwapChain</a></div><div class="ttdef"><b>Definition:</b> SwapChain.h:37</div></div>
-<div class="ttc" id="astructxii_g_a_l_window_swap_chain_creation_description_htm"><div class="ttname"><a href="../../d9/d43/structxii_g_a_l_window_swap_chain_creation_description.htm">xiiGALWindowSwapChainCreationDescription</a></div><div class="ttdef"><b>Definition:</b> Descriptors.h:61</div></div>
+<div class="ttc" id="astructxii_g_a_l_window_swap_chain_creation_description_htm"><div class="ttname"><a href="../../d9/d43/structxii_g_a_l_window_swap_chain_creation_description.htm">xiiGALWindowSwapChainCreationDescription</a></div><div class="ttdef"><b>Definition:</b> Descriptors.h:63</div></div>
 <div class="ttc" id="astructxii_result_htm"><div class="ttname"><a href="../../dd/dad/structxii_result.htm">xiiResult</a></div><div class="ttdoc">Default enum for returning failure or success, instead of using a bool.</div><div class="ttdef"><b>Definition:</b> Types.h:54</div></div>
-<div class="ttc" id="aclassxii_g_a_l_swap_chain_diligent_htm"><div class="ttname"><a href="../../d1/d4e/classxii_g_a_l_swap_chain_diligent.htm">xiiGALSwapChainDiligent</a></div><div class="ttdef"><b>Definition:</b> SwapChainDiligent.h:10</div></div>
+<div class="ttc" id="aclassxii_hash_table_htm"><div class="ttname"><a href="../../d8/dc2/classxii_hash_table.htm">xiiHashTable&lt; RenderTargetInfo, xiiGALTextureHandle &gt;</a></div></div>
+<div class="ttc" id="aclassxii_g_a_l_swap_chain_diligent_htm"><div class="ttname"><a href="../../d1/d4e/classxii_g_a_l_swap_chain_diligent.htm">xiiGALSwapChainDiligent</a></div><div class="ttdef"><b>Definition:</b> SwapChainDiligent.h:35</div></div>
+<div class="ttc" id="astructxii_hash_helper_htm"><div class="ttname"><a href="../../d6/dcd/structxii_hash_helper.htm">xiiHashHelper</a></div><div class="ttdoc">Helper struct to calculate the Hash of different types.</div><div class="ttdef"><b>Definition:</b> HashingUtils.h:74</div></div>
 <div class="ttc" id="aclassxii_g_a_l_device_htm"><div class="ttname"><a href="../../d5/d19/classxii_g_a_l_device.htm">xiiGALDevice</a></div><div class="ttdoc">The xiiRenderDevice class is the primary interface for interactions with rendering APIs It contains a...</div><div class="ttdef"><b>Definition:</b> Device.h:18</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.htm">home</a></li><li class="navelem"><a class="el" href="../../dir_1036706e55c22cab35bc1c58ee689f1d.htm">runner</a></li><li class="navelem"><a class="el" href="../../dir_629f8151d55d307162ff2d619fb1783d.htm">work</a></li><li class="navelem"><a class="el" href="../../dir_1ddc44fe1263a8c7935fa6130b7d9499.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_2c1b6808f12952f4c36e05ba7068379a.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_b5a1c4ecfca018ad24b729e213296d41.htm">Source</a></li><li class="navelem"><a class="el" href="../../dir_e321052006a51284e67389ab20037e7c.htm">Engine</a></li><li class="navelem"><a class="el" href="../../dir_e27f557319c003a17fbd4dca8e84207a.htm">RendererDiligent</a></li><li class="navelem"><a class="el" href="../../dir_dc4258a255fb58d0346cd43711c6cc48.htm">Device</a></li><li class="navelem"><b>SwapChainDiligent.h</b></li>
-    <li class="footer">Generated on Sun Mar 12 2023 21:19:50 for XIIEngine by
+    <li class="footer">Generated on Fri Mar 24 2023 17:20:17 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

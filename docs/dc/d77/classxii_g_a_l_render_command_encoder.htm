@@ -208,7 +208,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>CopyBuffer</b> (<a cl
 void&#160;</td><td class="memItemRight" valign="bottom"><b>CopyBufferRegion</b> (<a class="el" href="../../d1/dba/classxii_g_a_l_buffer_handle.htm">xiiGALBufferHandle</a> hDest, xiiUInt32 uiDestOffset, <a class="el" href="../../d1/dba/classxii_g_a_l_buffer_handle.htm">xiiGALBufferHandle</a> hSource, xiiUInt32 uiSourceOffset, xiiUInt32 uiByteCount)</td></tr>
 <tr class="separator:a7b2da004431296e7f4444af6a297d654 inherit pub_methods_classxii_g_a_l_command_encoder"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad3aac73cd94fb577e66fa37658f61975 inherit pub_methods_classxii_g_a_l_command_encoder"><td class="memItemLeft" align="right" valign="top"><a id="ad3aac73cd94fb577e66fa37658f61975"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>UpdateBuffer</b> (<a class="el" href="../../d1/dba/classxii_g_a_l_buffer_handle.htm">xiiGALBufferHandle</a> hDest, xiiUInt32 uiDestOffset, <a class="el" href="../../d0/d60/classxii_array_ptr.htm">xiiArrayPtr</a>&lt; const xiiUInt8 &gt; pSourceData, xiiGALUpdateMode::Enum updateMode=xiiGALUpdateMode::Discard)</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>UpdateBuffer</b> (<a class="el" href="../../d1/dba/classxii_g_a_l_buffer_handle.htm">xiiGALBufferHandle</a> hDest, xiiUInt32 uiDestOffset, <a class="el" href="../../d0/d60/classxii_array_ptr.htm">xiiArrayPtr</a>&lt; const xiiUInt8 &gt; pSourceData, <a class="el" href="../../dd/d37/structxii_g_a_l_update_mode.htm#a5947c438b461207eb67c3f3676d23448">xiiGALUpdateMode::Enum</a> updateMode=<a class="el" href="../../dd/d37/structxii_g_a_l_update_mode.htm#a5947c438b461207eb67c3f3676d23448ae2db104bf06a9264d4f8d7c35b769a82">xiiGALUpdateMode::Discard</a>)</td></tr>
 <tr class="separator:ad3aac73cd94fb577e66fa37658f61975 inherit pub_methods_classxii_g_a_l_command_encoder"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa8a8ee4d443d018b5b14a12cc22cf0fa inherit pub_methods_classxii_g_a_l_command_encoder"><td class="memItemLeft" align="right" valign="top"><a id="aa8a8ee4d443d018b5b14a12cc22cf0fa"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>CopyTexture</b> (<a class="el" href="../../df/de3/classxii_g_a_l_texture_handle.htm">xiiGALTextureHandle</a> hDest, <a class="el" href="../../df/de3/classxii_g_a_l_texture_handle.htm">xiiGALTextureHandle</a> hSource)</td></tr>
@@ -281,7 +281,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>CountRedundantStateCh
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.htm#_todo000119">Todo:</a></b></dt><dd>Assert for streamout support </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.htm#_todo000124">Todo:</a></b></dt><dd>Assert for streamout support </dd></dl>
 
 </div>
 </div>
@@ -370,7 +370,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>CountRedundantStateCh
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.htm#_todo000106">Todo:</a></b></dt><dd>If platform indicates that non-indexed rendering is not possible bind a helper index buffer which contains continuous indices (0, 1, 2, ..) </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.htm#_todo000111">Todo:</a></b></dt><dd>If platform indicates that non-indexed rendering is not possible bind a helper index buffer which contains continuous indices (0, 1, 2, ..) </dd></dl>
 
 </div>
 </div>
@@ -388,7 +388,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>CountRedundantStateCh
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.htm#_todo000118">Todo:</a></b></dt><dd>Assert for draw auto support </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.htm#_todo000123">Todo:</a></b></dt><dd>Assert for draw auto support </dd></dl>
 
 </div>
 </div>
@@ -423,7 +423,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>CountRedundantStateCh
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.htm#_todo000107">Todo:</a></b></dt><dd>Assert for instancing </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.htm#_todo000112">Todo:</a></b></dt><dd>Assert for instancing </dd></dl>
 
 </div>
 </div>
@@ -452,10 +452,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>CountRedundantStateCh
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.htm#_todo000108">Todo:</a></b></dt><dd>Assert for instancing </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.htm#_todo000109">Todo:</a></b></dt><dd>Assert for indirect draw </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.htm#_todo000110">Todo:</a></b></dt><dd>Assert offset &lt; buffer size </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.htm#_todo000111">Todo:</a></b></dt><dd>Assert that the buffer can be used for indirect arguments (flag in desc) </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.htm#_todo000113">Todo:</a></b></dt><dd>Assert for instancing </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.htm#_todo000114">Todo:</a></b></dt><dd>Assert for indirect draw </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.htm#_todo000115">Todo:</a></b></dt><dd>Assert offset &lt; buffer size </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.htm#_todo000116">Todo:</a></b></dt><dd>Assert that the buffer can be used for indirect arguments (flag in desc) </dd></dl>
 
 </div>
 </div>
@@ -490,8 +490,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>CountRedundantStateCh
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.htm#_todo000112">Todo:</a></b></dt><dd>Assert for instancing </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.htm#_todo000113">Todo:</a></b></dt><dd>If platform indicates that non-indexed rendering is not possible bind a helper index buffer which contains continuous indices (0, 1, 2, ..) </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.htm#_todo000117">Todo:</a></b></dt><dd>Assert for instancing </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.htm#_todo000118">Todo:</a></b></dt><dd>If platform indicates that non-indexed rendering is not possible bind a helper index buffer which contains continuous indices (0, 1, 2, ..) </dd></dl>
 
 </div>
 </div>
@@ -520,10 +520,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>CountRedundantStateCh
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.htm#_todo000114">Todo:</a></b></dt><dd>Assert for instancing </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.htm#_todo000115">Todo:</a></b></dt><dd>Assert for indirect draw </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.htm#_todo000116">Todo:</a></b></dt><dd>Assert offset &lt; buffer size </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.htm#_todo000117">Todo:</a></b></dt><dd>Assert that the buffer can be used for indirect arguments (flag in desc) </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.htm#_todo000119">Todo:</a></b></dt><dd>Assert for instancing </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.htm#_todo000120">Todo:</a></b></dt><dd>Assert for indirect draw </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.htm#_todo000121">Todo:</a></b></dt><dd>Assert offset &lt; buffer size </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.htm#_todo000122">Todo:</a></b></dt><dd>Assert that the buffer can be used for indirect arguments (flag in desc) </dd></dl>
 
 </div>
 </div>
@@ -542,7 +542,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>CountRedundantStateCh
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.htm#_todo000120">Todo:</a></b></dt><dd>Assert on index buffer type (if non nullptr) </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.htm#_todo000125">Todo:</a></b></dt><dd>Assert on index buffer type (if non nullptr) </dd></dl>
 
 </div>
 </div>
@@ -556,7 +556,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>CountRedundantStateCh
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dc/d77/classxii_g_a_l_render_command_encoder.htm">xiiGALRenderCommandEncoder</a></li>
-    <li class="footer">Generated on Sun Mar 12 2023 21:19:55 for XIIEngine by
+    <li class="footer">Generated on Fri Mar 24 2023 17:20:21 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

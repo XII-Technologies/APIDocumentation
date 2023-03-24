@@ -15,6 +15,8 @@ var structxii_string_view =
     [ "xiiStringView", "da/d9d/structxii_string_view.htm#a3f4b1ff29eb146cd01bbad2d53628fa9", null ],
     [ "xiiStringView", "da/d9d/structxii_string_view.htm#a28a2f3964fd87986372e2ba31a36c4c1", null ],
     [ "xiiStringView", "da/d9d/structxii_string_view.htm#a20bc837bd121cfbc7b93a2068f789a30", null ],
+    [ "ChopAwayFirstCharacterAscii", "da/d9d/structxii_string_view.htm#a04c31dcdc0ed0e95641c70d57db8e97e", null ],
+    [ "ChopAwayFirstCharacterUtf8", "da/d9d/structxii_string_view.htm#a21212f66212bf8d7c5786193208d2c0d", null ],
     [ "Compare", "da/d9d/structxii_string_view.htm#ab6b5f4c7fdc35fa1aad794a36299c5f0", null ],
     [ "Compare_NoCase", "da/d9d/structxii_string_view.htm#aa37ae842ddaf3243a98b1206b77f2e5f", null ],
     [ "CompareN", "da/d9d/structxii_string_view.htm#a18557d7a7ef5c94ceedc229b0943b893", null ],

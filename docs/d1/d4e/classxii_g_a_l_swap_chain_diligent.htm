@@ -186,9 +186,9 @@ virtual <a class="el" href="../../dd/dad/structxii_result.htm">xiiResult</a>&#16
 <tr class="memitem:ab6ac4926890ce7845b17ba6592eb9c6a"><td class="memItemLeft" align="right" valign="top"><a id="ab6ac4926890ce7845b17ba6592eb9c6a"></a>
 virtual <a class="el" href="../../dd/dad/structxii_result.htm">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><b>DeInitPlatform</b> (<a class="el" href="../../d5/d19/classxii_g_a_l_device.htm">xiiGALDevice</a> *pDevice) override</td></tr>
 <tr class="separator:ab6ac4926890ce7845b17ba6592eb9c6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a654cd9f93575775bc73ae161575b95d0"><td class="memItemLeft" align="right" valign="top"><a id="a654cd9f93575775bc73ae161575b95d0"></a>
-<a class="el" href="../../dd/dad/structxii_result.htm">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><b>CreateBackBufferInternal</b> (<a class="el" href="../../d6/df4/classxii_g_a_l_device_diligent.htm">xiiGALDeviceDiligent</a> *pDeviceDiligent)</td></tr>
-<tr class="separator:a654cd9f93575775bc73ae161575b95d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae208fa50598f3e1cf2d43a128ff65fb"><td class="memItemLeft" align="right" valign="top"><a id="aae208fa50598f3e1cf2d43a128ff65fb"></a>
+<a class="el" href="../../dd/dad/structxii_result.htm">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><b>CreateBackBufferInternal</b> (<a class="el" href="../../d6/df4/classxii_g_a_l_device_diligent.htm">xiiGALDeviceDiligent</a> *pDeviceDiligent, bool bInitPlatform)</td></tr>
+<tr class="separator:aae208fa50598f3e1cf2d43a128ff65fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8aff7e1c62411ba4a89762fe5a64143f"><td class="memItemLeft" align="right" valign="top"><a id="a8aff7e1c62411ba4a89762fe5a64143f"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>DestroyBackBufferInternal</b> (<a class="el" href="../../d6/df4/classxii_g_a_l_device_diligent.htm">xiiGALDeviceDiligent</a> *pDeviceDiligent)</td></tr>
 <tr class="separator:a8aff7e1c62411ba4a89762fe5a64143f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -203,18 +203,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>DestroyBackBufferInte
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr class="memitem:a61405729197c2e6a0cbb7820d39ce097"><td class="memItemLeft" align="right" valign="top"><a id="a61405729197c2e6a0cbb7820d39ce097"></a>
-<a class="el" href="../../d6/df4/classxii_g_a_l_device_diligent.htm">xiiGALDeviceDiligent</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_pDeviceDiligent</b> = nullptr</td></tr>
-<tr class="separator:a61405729197c2e6a0cbb7820d39ce097"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa22f47d64cae0b484f7e196f979adedb"><td class="memItemLeft" align="right" valign="top"><a id="aa22f47d64cae0b484f7e196f979adedb"></a>
 Diligent::RefCntAutoPtr&lt; Diligent::ISwapChain &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_pSwapChain</b></td></tr>
 <tr class="separator:aa22f47d64cae0b484f7e196f979adedb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7ff5e06941029ac7dfeafe1f299a3a98"><td class="memItemLeft" align="right" valign="top"><a id="a7ff5e06941029ac7dfeafe1f299a3a98"></a>
-Diligent::ITextureView *&#160;</td><td class="memItemRight" valign="bottom"><b>m_pCurrentBackbufferRTV</b></td></tr>
-<tr class="separator:a7ff5e06941029ac7dfeafe1f299a3a98"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afbf17a8d85406e94ffac51e645e86a82"><td class="memItemLeft" align="right" valign="top"><a id="afbf17a8d85406e94ffac51e645e86a82"></a>
-<a class="el" href="../../df/de3/classxii_g_a_l_texture_handle.htm">xiiGALTextureHandle</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_hBackbufferTexture</b></td></tr>
-<tr class="separator:afbf17a8d85406e94ffac51e645e86a82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d190285e738f1e62d03c537fbae88db"><td class="memItemLeft" align="right" valign="top"><a id="a6d190285e738f1e62d03c537fbae88db"></a>
+<a class="el" href="../../d8/dc2/classxii_hash_table.htm">xiiHashTable</a>&lt; <a class="el" href="../../d9/daa/struct_render_target_info.htm">RenderTargetInfo</a>, <a class="el" href="../../df/de3/classxii_g_a_l_texture_handle.htm">xiiGALTextureHandle</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_BackbufferTextures</b></td></tr>
+<tr class="separator:a6d190285e738f1e62d03c537fbae88db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2c1fdc379edd836958047c90a3c9d96c"><td class="memItemLeft" align="right" valign="top"><a id="a2c1fdc379edd836958047c90a3c9d96c"></a>
 <a class="el" href="../../de/dfd/structxii_enum.htm">xiiEnum</a>&lt; <a class="el" href="../../d9/d19/structxii_g_a_l_present_mode.htm">xiiGALPresentMode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_CurrentPresentMode</b></td></tr>
 <tr class="separator:a2c1fdc379edd836958047c90a3c9d96c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -275,7 +269,7 @@ static <a class="el" href="../../dc/d84/structxii_delegate.htm">Functor</a>&#160
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d1/d4e/classxii_g_a_l_swap_chain_diligent.htm">xiiGALSwapChainDiligent</a></li>
-    <li class="footer">Generated on Sun Mar 12 2023 21:19:55 for XIIEngine by
+    <li class="footer">Generated on Fri Mar 24 2023 17:20:21 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

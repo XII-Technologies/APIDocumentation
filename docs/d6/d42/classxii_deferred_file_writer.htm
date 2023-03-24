@@ -111,17 +111,17 @@ Public Member Functions</h2></td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d42/classxii_deferred_file_writer.htm#af616e7db8897185cd4204aa2a56610b6">~xiiDeferredFileWriter</a> ()</td></tr>
 <tr class="memdesc:af616e7db8897185cd4204aa2a56610b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Upon destruction the file is closed and thus written, unless Discard was called before. <br /></td></tr>
 <tr class="separator:af616e7db8897185cd4204aa2a56610b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af207dd44fc5a9820b8539d4b67456c32"><td class="memItemLeft" align="right" valign="top"><a id="af207dd44fc5a9820b8539d4b67456c32"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d42/classxii_deferred_file_writer.htm#af207dd44fc5a9820b8539d4b67456c32">SetOutput</a> (const char *szFileToWriteTo, bool bOnlyWriteIfDifferent=false)</td></tr>
-<tr class="memdesc:af207dd44fc5a9820b8539d4b67456c32"><td class="mdescLeft">&#160;</td><td class="mdescRight">This must be configured before anything is written to the file. <br /></td></tr>
-<tr class="separator:af207dd44fc5a9820b8539d4b67456c32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6bfb2b3672ca574e5e113227175fa943"><td class="memItemLeft" align="right" valign="top"><a id="a6bfb2b3672ca574e5e113227175fa943"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d42/classxii_deferred_file_writer.htm#a6bfb2b3672ca574e5e113227175fa943">SetOutput</a> (<a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sFileToWriteTo, bool bOnlyWriteIfDifferent=false)</td></tr>
+<tr class="memdesc:a6bfb2b3672ca574e5e113227175fa943"><td class="mdescLeft">&#160;</td><td class="mdescRight">This must be configured before anything is written to the file. <br /></td></tr>
+<tr class="separator:a6bfb2b3672ca574e5e113227175fa943"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a465e8c79ea4ec8769bc4a3019d479fab"><td class="memItemLeft" align="right" valign="top"><a id="a465e8c79ea4ec8769bc4a3019d479fab"></a>
 virtual <a class="el" href="../../dd/dad/structxii_result.htm">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d42/classxii_deferred_file_writer.htm#a465e8c79ea4ec8769bc4a3019d479fab">WriteBytes</a> (const void *pWriteBuffer, xiiUInt64 uiBytesToWrite) override</td></tr>
 <tr class="memdesc:a465e8c79ea4ec8769bc4a3019d479fab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes a raw number of bytes from the buffer, this is the only method which has to be implemented to fully implement the interface. <br /></td></tr>
 <tr class="separator:a465e8c79ea4ec8769bc4a3019d479fab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3ff51bfbf7b2f16a3a84a677b85fe067"><td class="memItemLeft" align="right" valign="top"><a id="a3ff51bfbf7b2f16a3a84a677b85fe067"></a>
 <a class="el" href="../../dd/dad/structxii_result.htm">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d42/classxii_deferred_file_writer.htm#a3ff51bfbf7b2f16a3a84a677b85fe067">Close</a> ()</td></tr>
-<tr class="memdesc:a3ff51bfbf7b2f16a3a84a677b85fe067"><td class="mdescLeft">&#160;</td><td class="mdescRight">Upon calling this the content is written to the file specified with <a class="el" href="../../d6/d42/classxii_deferred_file_writer.htm#af207dd44fc5a9820b8539d4b67456c32" title="This must be configured before anything is written to the file.">SetOutput()</a>. The return value is XII_FAILURE if the file could not be opened or not completely written. <br /></td></tr>
+<tr class="memdesc:a3ff51bfbf7b2f16a3a84a677b85fe067"><td class="mdescLeft">&#160;</td><td class="mdescRight">Upon calling this the content is written to the file specified with <a class="el" href="../../d6/d42/classxii_deferred_file_writer.htm#a6bfb2b3672ca574e5e113227175fa943" title="This must be configured before anything is written to the file.">SetOutput()</a>. The return value is XII_FAILURE if the file could not be opened or not completely written. <br /></td></tr>
 <tr class="separator:a3ff51bfbf7b2f16a3a84a677b85fe067"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a609ee68f6c9002de1ac0522bfb2a7b3c"><td class="memItemLeft" align="right" valign="top"><a id="a609ee68f6c9002de1ac0522bfb2a7b3c"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d42/classxii_deferred_file_writer.htm#a609ee68f6c9002de1ac0522bfb2a7b3c">Discard</a> ()</td></tr>
@@ -206,7 +206,7 @@ template&lt;typename KeyType , typename ValueType , typename Hasher &gt; </td></
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d6/d42/classxii_deferred_file_writer.htm">xiiDeferredFileWriter</a></li>
-    <li class="footer">Generated on Sun Mar 12 2023 21:19:54 for XIIEngine by
+    <li class="footer">Generated on Fri Mar 24 2023 17:20:20 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

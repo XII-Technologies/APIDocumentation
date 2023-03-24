@@ -9,7 +9,7 @@ var classxii_engine_process_document_context =
     [ "Deinitialize", "db/df8/classxii_engine_process_document_context.htm#a6864c40d9ab513892b83e46dde07fa0f", null ],
     [ "DestroyThumbnailViewContext", "db/df8/classxii_engine_process_document_context.htm#a3aee966b4f9d0f0262836e2b11e23755", null ],
     [ "DestroyViewContext", "db/df8/classxii_engine_process_document_context.htm#acb4f16c39b43a61dc75bef43c22d9d91", null ],
-    [ "ExportDocument", "db/df8/classxii_engine_process_document_context.htm#a0e17e300ab292f855bdfee6e231c22f6", null ],
+    [ "ExportDocument", "db/df8/classxii_engine_process_document_context.htm#ac71430d6b5b1d9a42e3812bfbab6a01e", null ],
     [ "GetDocumentGuid", "db/df8/classxii_engine_process_document_context.htm#a16450f3c634f7e67433f82b525c34c40", null ],
     [ "GetViewContext", "db/df8/classxii_engine_process_document_context.htm#a42953edd3da108a98deb667bfa3d0fb9", null ],
     [ "GetWorld", "db/df8/classxii_engine_process_document_context.htm#aeeded5ce4eb3ad245405d5f8da3a639b", null ],

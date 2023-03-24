@@ -9,6 +9,5 @@ var classxii_g_a_l_buffer_diligent =
     [ "xiiGALDeviceDiligent", "d6/d6e/classxii_g_a_l_buffer_diligent.htm#aa4c4e61f06413b5554bad4d3f222b37c", null ],
     [ "xiiMemoryUtils", "d6/d6e/classxii_g_a_l_buffer_diligent.htm#aefc9ff75d6833fd2f05be48e16436db6", null ],
     [ "m_IndexFormat", "d6/d6e/classxii_g_a_l_buffer_diligent.htm#a41730489571755bfe5800f3b3b430331", null ],
-    [ "m_InitialData", "d6/d6e/classxii_g_a_l_buffer_diligent.htm#a674391247c5d372a811049d6957ebad7", null ],
     [ "m_pBuffer", "d6/d6e/classxii_g_a_l_buffer_diligent.htm#a35f6ae60fd57d1340993a443b7e895ec", null ]
 ];

@@ -16,7 +16,7 @@ var classxii_blackboard =
     [ "RegisterEntry", "d7/d47/classxii_blackboard.htm#a697fed9479ce8e39809930b956142968", null ],
     [ "Serialize", "d7/d47/classxii_blackboard.htm#a09e7beeda085a78413cbde33ed1b2c4c", null ],
     [ "SetEntryValue", "d7/d47/classxii_blackboard.htm#a3bf7636061cdf0c389081fffa8baaacb", null ],
-    [ "SetName", "d7/d47/classxii_blackboard.htm#a903a0d92815c8136f291eb2cb76a4c55", null ],
+    [ "SetName", "d7/d47/classxii_blackboard.htm#a5d0fe3c22c428667f9c0d9b4ff7fd979", null ],
     [ "UnregisterAllEntries", "d7/d47/classxii_blackboard.htm#a126050ba6fc92fbde842a852ec7d0f16", null ],
     [ "UnregisterEntry", "d7/d47/classxii_blackboard.htm#ac71c7dfcd1093eba58c9424d235e8107", null ]
 ];

@@ -6,5 +6,5 @@ var classxii_semaphore =
     [ "Create", "dd/d62/classxii_semaphore.htm#ac90d308f09cca8b2783a937c458f3e43", null ],
     [ "Open", "dd/d62/classxii_semaphore.htm#aa9570edd0fed8598832dd0a6c0482884", null ],
     [ "ReturnToken", "dd/d62/classxii_semaphore.htm#a0e1c9a591dc3926e8d8ca201ea29d1da", null ],
-    [ "TryAcquireToken", "dd/d62/classxii_semaphore.htm#aac871d949c6962792748c90f28b06ba6", null ]
+    [ "TryAcquireToken", "dd/d62/classxii_semaphore.htm#aa592e4fa36247ca4b7682028ac2fe7df", null ]
 ];

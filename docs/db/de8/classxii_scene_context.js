@@ -5,7 +5,7 @@ var classxii_scene_context =
     [ "AddLayerIndexTag", "db/de8/classxii_scene_context.htm#a2c160bc54deaeeab3c74dbfd4fbbe174", null ],
     [ "CreateViewContext", "db/de8/classxii_scene_context.htm#ab6dcace4db036edb0af0d7729bd11227", null ],
     [ "DestroyViewContext", "db/de8/classxii_scene_context.htm#a3f3842e583623a600f2854a7b4de0218", null ],
-    [ "ExportDocument", "db/de8/classxii_scene_context.htm#ab1dcd625afe0be358b3fa6b0dd1947f1", null ],
+    [ "ExportDocument", "db/de8/classxii_scene_context.htm#a9febbc2d61cc2e0e626860a2dc583bc0", null ],
     [ "ExportExposedParameters", "db/de8/classxii_scene_context.htm#a82ff21572b468d80d7eeb9ca6dda165d", null ],
     [ "GetActiveContext", "db/de8/classxii_scene_context.htm#a053341f263a475fd8677596d2ddf69dd", null ],
     [ "GetActiveContext", "db/de8/classxii_scene_context.htm#ac966c9cec9410895412d8a483778faab", null ],

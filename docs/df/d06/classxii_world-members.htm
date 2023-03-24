@@ -94,7 +94,7 @@ $(document).ready(function(){initNavTree('d6/d89/classxii_world.htm','../../'); 
   <tr bgcolor="#f0f0f0"><td class="entry"><b>BreadthFirst</b> enum value (defined in <a class="el" href="../../d6/d89/classxii_world.htm">xiiWorld</a>)</td><td class="entry"><a class="el" href="../../d6/d89/classxii_world.htm">xiiWorld</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="../../d6/d89/classxii_world.htm#a3a497cfe409a4989838fe5046d5bbffe">CancelComponentInitBatch</a>(const xiiComponentInitBatchHandle &amp;batch)</td><td class="entry"><a class="el" href="../../d6/d89/classxii_world.htm">xiiWorld</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="../../d6/d89/classxii_world.htm#a3b7b2ff09bf7bed357a09a75ec486f8b">Clear</a>()</td><td class="entry"><a class="el" href="../../d6/d89/classxii_world.htm">xiiWorld</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="../../d6/d89/classxii_world.htm#abad17a3612d00b6c7f86578aba8c73eb">CreateComponentInitBatch</a>(const char *szBatchName, bool bMustFinishWithinOneFrame=true)</td><td class="entry"><a class="el" href="../../d6/d89/classxii_world.htm">xiiWorld</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="../../d6/d89/classxii_world.htm#a638d51a01d207c99389598df27845bf0">CreateComponentInitBatch</a>(xiiStringView sBatchName, bool bMustFinishWithinOneFrame=true)</td><td class="entry"><a class="el" href="../../d6/d89/classxii_world.htm">xiiWorld</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="../../d6/d89/classxii_world.htm#ac1ad5ba372c5eaf29a38e8316e193ce3">CreateObject</a>(const xiiGameObjectDesc &amp;desc)</td><td class="entry"><a class="el" href="../../d6/d89/classxii_world.htm">xiiWorld</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="../../d6/d89/classxii_world.htm#a05422ca63500eb572e596a7c7ab4d46e">CreateObject</a>(const xiiGameObjectDesc &amp;desc, xiiGameObject *&amp;out_pObject)</td><td class="entry"><a class="el" href="../../d6/d89/classxii_world.htm">xiiWorld</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="../../d6/d89/classxii_world.htm#aba8393db0bbb4abd806af3f2720561a1">DeleteComponentInitBatch</a>(const xiiComponentInitBatchHandle &amp;batch)</td><td class="entry"><a class="el" href="../../d6/d89/classxii_world.htm">xiiWorld</a></td><td class="entry"></td></tr>
@@ -137,7 +137,7 @@ $(document).ready(function(){initNavTree('d6/d89/classxii_world.htm','../../'); 
   <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>GetModule</b>() const (defined in <a class="el" href="../../d6/d89/classxii_world.htm">xiiWorld</a>)</td><td class="entry"><a class="el" href="../../d6/d89/classxii_world.htm">xiiWorld</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="../../d6/d89/classxii_world.htm#aa812a5c12fdd0483abc529f9219fe7b2">GetModuleReadOnly</a>() const</td><td class="entry"><a class="el" href="../../d6/d89/classxii_world.htm">xiiWorld</a></td><td class="entry"></td></tr>
   <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>GetModuleReadOnly</b>() const (defined in <a class="el" href="../../d6/d89/classxii_world.htm">xiiWorld</a>)</td><td class="entry"><a class="el" href="../../d6/d89/classxii_world.htm">xiiWorld</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="../../d6/d89/classxii_world.htm#aaf4efe8ec0ad412966f08a5bd6d3766a">GetName</a>() const</td><td class="entry"><a class="el" href="../../d6/d89/classxii_world.htm">xiiWorld</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="../../d6/d89/classxii_world.htm#a866ec031f1d82f11716e3f55db08ba2d">GetName</a>() const</td><td class="entry"><a class="el" href="../../d6/d89/classxii_world.htm">xiiWorld</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="../../d6/d89/classxii_world.htm#ae1895dfef2aed40956f7d51e4eb83a2e">GetObjectCount</a>() const</td><td class="entry"><a class="el" href="../../d6/d89/classxii_world.htm">xiiWorld</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="../../d6/d89/classxii_world.htm#a19c0391a95d47123cb3305ac6d92c959">GetObjectDeletionEvent</a>() const</td><td class="entry"><a class="el" href="../../d6/d89/classxii_world.htm">xiiWorld</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="../../d6/d89/classxii_world.htm#a802fd101a25b204d9d5ce3dc1184130d">GetObjects</a>()</td><td class="entry"><a class="el" href="../../d6/d89/classxii_world.htm">xiiWorld</a></td><td class="entry"></td></tr>
@@ -197,7 +197,7 @@ $(document).ready(function(){initNavTree('d6/d89/classxii_world.htm','../../'); 
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sun Mar 12 2023 21:20:03 for XIIEngine by
+    <li class="footer">Generated on Fri Mar 24 2023 17:20:27 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>
