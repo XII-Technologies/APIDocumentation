@@ -9,9 +9,9 @@ var classxii_collision_filter_config =
     [ "GetNamedGroupIndex", "d5/d2e/classxii_collision_filter_config.htm#abaabbd18f89a6e8633074dab56e86ecf", null ],
     [ "GetNumNamedGroups", "d5/d2e/classxii_collision_filter_config.htm#a68fe4a238327628e6c75204783f95b91", null ],
     [ "IsCollisionEnabled", "d5/d2e/classxii_collision_filter_config.htm#af505f03c739a45ffb057d977255b616e", null ],
-    [ "Load", "d5/d2e/classxii_collision_filter_config.htm#a84ad739de114eb73885506d356ee6377", null ],
     [ "Load", "d5/d2e/classxii_collision_filter_config.htm#a73f29682b2f89292ef9ae1a56b90dc1d", null ],
-    [ "Save", "d5/d2e/classxii_collision_filter_config.htm#ada704cd1da558a13f56e871ae057b54d", null ],
+    [ "Load", "d5/d2e/classxii_collision_filter_config.htm#a35edbc1f40075a87f8fbc45f73dfaa6c", null ],
     [ "Save", "d5/d2e/classxii_collision_filter_config.htm#a8ea166c9e9df484e3ed4afd546460635", null ],
+    [ "Save", "d5/d2e/classxii_collision_filter_config.htm#a9bef137312bd5eca1905e01e7e6573f9", null ],
     [ "SetGroupName", "d5/d2e/classxii_collision_filter_config.htm#a4eaa6f816bfc9831bd2b90595b264e49", null ]
 ];

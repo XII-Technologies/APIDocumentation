@@ -1,5 +1,7 @@
 var classxii_g_a_l_command_encoder_impl_diligent =
 [
+    [ "PipelineStateInfo", "de/d43/structxii_g_a_l_command_encoder_impl_diligent_1_1_pipeline_state_info.htm", "de/d43/structxii_g_a_l_command_encoder_impl_diligent_1_1_pipeline_state_info" ],
+    [ "ResourceCacheHash", "db/d0b/structxii_g_a_l_command_encoder_impl_diligent_1_1_resource_cache_hash.htm", null ],
     [ "xiiGALCommandEncoderImplDiligent", "d1/dda/classxii_g_a_l_command_encoder_impl_diligent.htm#a02980f43d0a78930c841eb4024cacf2f", null ],
     [ "~xiiGALCommandEncoderImplDiligent", "d1/dda/classxii_g_a_l_command_encoder_impl_diligent.htm#a72f61b2d21856f806676a48675d34636", null ],
     [ "BeginCompute", "d1/dda/classxii_g_a_l_command_encoder_impl_diligent.htm#acbb906bd3d615984ca84ea378eef8910", null ],
@@ -27,7 +29,8 @@ var classxii_g_a_l_command_encoder_impl_diligent =
     [ "EndQueryPlatform", "d1/dda/classxii_g_a_l_command_encoder_impl_diligent.htm#a1bb26c4bbbfd12279deab79797fa17a9", null ],
     [ "EndRendering", "d1/dda/classxii_g_a_l_command_encoder_impl_diligent.htm#a49359837886527236dbeef5e0718d79d", null ],
     [ "EndStreamOutPlatform", "d1/dda/classxii_g_a_l_command_encoder_impl_diligent.htm#a1211c4dfdd86d17292531d82a164b152", null ],
-    [ "FillDescriptorBindings", "d1/dda/classxii_g_a_l_command_encoder_impl_diligent.htm#ac32ca4c5cdaee84b79eebc0f387f8ac8", null ],
+    [ "FillPipelineDescriptorBindings", "d1/dda/classxii_g_a_l_command_encoder_impl_diligent.htm#a7355d8aa31ae05501c6c8b70ffa41d77", null ],
+    [ "FillShaderDescriptorBindings", "d1/dda/classxii_g_a_l_command_encoder_impl_diligent.htm#a61c7419eff87b54d77d614855761902d", null ],
     [ "FlushDeferredStateChangesCompute", "d1/dda/classxii_g_a_l_command_encoder_impl_diligent.htm#a466a06574d9cbf189c55644b7bb860a8", null ],
     [ "FlushDeferredStateChangesGraphics", "d1/dda/classxii_g_a_l_command_encoder_impl_diligent.htm#aed80762640697134d0892756cbd6a690", null ],
     [ "FlushPlatform", "d1/dda/classxii_g_a_l_command_encoder_impl_diligent.htm#a6d8aef92acdd3b2d24ebf3185c45acf3", null ],

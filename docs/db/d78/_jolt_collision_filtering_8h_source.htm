@@ -190,8 +190,8 @@ $(document).ready(function(){initNavTree('db/d78/_jolt_collision_filtering_8h_so
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;  xiiUInt32 m_uiObjectFilterIDToIgnore = xiiInvalidIndex - 1;</div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160; </div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;  <a class="code" href="../../d9/d6d/classxii_jolt_body_filter.htm">xiiJoltBodyFilter</a>(xiiUInt32 bodyFilterIdToIgnore = xiiInvalidIndex - 1) :</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    m_uiObjectFilterIDToIgnore(bodyFilterIdToIgnore)</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;  <a class="code" href="../../d9/d6d/classxii_jolt_body_filter.htm">xiiJoltBodyFilter</a>(xiiUInt32 uiBodyFilterIdToIgnore = xiiInvalidIndex - 1) :</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    m_uiObjectFilterIDToIgnore(uiBodyFilterIdToIgnore)</div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;  {</div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;  }</div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160; </div>
@@ -200,9 +200,9 @@ $(document).ready(function(){initNavTree('db/d78/_jolt_collision_filtering_8h_so
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    m_uiObjectFilterIDToIgnore = xiiInvalidIndex - 1;</div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;  }</div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160; </div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">bool</span> ShouldCollideLocked(<span class="keyword">const</span> JPH::Body&amp; inBody)<span class="keyword"> const override</span></div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">bool</span> ShouldCollideLocked(<span class="keyword">const</span> JPH::Body&amp; body)<span class="keyword"> const override</span></div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="keyword">  </span>{</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    <span class="keywordflow">return</span> inBody.GetCollisionGroup().GetGroupID() != m_uiObjectFilterIDToIgnore;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    <span class="keywordflow">return</span> body.GetCollisionGroup().GetGroupID() != m_uiObjectFilterIDToIgnore;</div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;  }</div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;};</div>
 </div><!-- fragment --></div><!-- contents -->
@@ -220,7 +220,7 @@ $(document).ready(function(){initNavTree('db/d78/_jolt_collision_filtering_8h_so
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.htm">home</a></li><li class="navelem"><a class="el" href="../../dir_1036706e55c22cab35bc1c58ee689f1d.htm">runner</a></li><li class="navelem"><a class="el" href="../../dir_629f8151d55d307162ff2d619fb1783d.htm">work</a></li><li class="navelem"><a class="el" href="../../dir_1ddc44fe1263a8c7935fa6130b7d9499.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_2c1b6808f12952f4c36e05ba7068379a.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_b5a1c4ecfca018ad24b729e213296d41.htm">Source</a></li><li class="navelem"><a class="el" href="../../dir_260e93b09b1f607a5a2893957a57de87.htm">EnginePlugins</a></li><li class="navelem"><a class="el" href="../../dir_c903cff3404a68d1e186e5120eea8b72.htm">JoltPlugin</a></li><li class="navelem"><a class="el" href="../../dir_fc48007bd4f727edd9cbe2223e5b5467.htm">System</a></li><li class="navelem"><b>JoltCollisionFiltering.h</b></li>
-    <li class="footer">Generated on Fri Mar 24 2023 17:20:18 for XIIEngine by
+    <li class="footer">Generated on Mon Apr 17 2023 20:10:34 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

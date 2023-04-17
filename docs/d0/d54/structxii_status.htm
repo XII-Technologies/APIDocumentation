@@ -120,8 +120,16 @@ XII_ALWAYS_INLINE bool&#160;</td><td class="memItemRight" valign="bottom"><b>Suc
 <tr class="memitem:af79d656784eeec2f21b1d4d46d99e713"><td class="memItemLeft" align="right" valign="top"><a id="af79d656784eeec2f21b1d4d46d99e713"></a>
 XII_ALWAYS_INLINE bool&#160;</td><td class="memItemRight" valign="bottom"><b>Failed</b> () const</td></tr>
 <tr class="separator:af79d656784eeec2f21b1d4d46d99e713"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa214cd09376901b76a9851205079eeb0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d54/structxii_status.htm#aa214cd09376901b76a9851205079eeb0">operator bool</a> () const</td></tr>
+<tr class="memdesc:aa214cd09376901b76a9851205079eeb0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Same as 'Succeeded()'.  <a href="../../d0/d54/structxii_status.htm#aa214cd09376901b76a9851205079eeb0">More...</a><br /></td></tr>
+<tr class="separator:aa214cd09376901b76a9851205079eeb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40f676b55ef215a049c02f2770263a27"><td class="memItemLeft" align="right" valign="top"><a id="a40f676b55ef215a049c02f2770263a27"></a>
+<a class="el" href="../../dd/dad/structxii_result.htm">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d54/structxii_status.htm#a40f676b55ef215a049c02f2770263a27">operator!</a> () const</td></tr>
+<tr class="memdesc:a40f676b55ef215a049c02f2770263a27"><td class="mdescLeft">&#160;</td><td class="mdescRight">Special case to prevent this from working: "bool b = !r". <br /></td></tr>
+<tr class="separator:a40f676b55ef215a049c02f2770263a27"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4f7760fb76ed38cc4aff09895e807ead"><td class="memItemLeft" align="right" valign="top"><a id="a4f7760fb76ed38cc4aff09895e807ead"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>LogFailure</b> (<a class="el" href="../../d6/d6b/classxii_log_interface.htm">xiiLogInterface</a> *pLog=nullptr)</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d54/structxii_status.htm#a4f7760fb76ed38cc4aff09895e807ead">LogFailure</a> (<a class="el" href="../../d6/d6b/classxii_log_interface.htm">xiiLogInterface</a> *pLog=nullptr)</td></tr>
+<tr class="memdesc:a4f7760fb76ed38cc4aff09895e807ead"><td class="mdescLeft">&#160;</td><td class="mdescRight">If the state is XII_FAILURE, the message is written to the given log (or the currently active thread-local log). <br /></td></tr>
 <tr class="separator:a4f7760fb76ed38cc4aff09895e807ead"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
@@ -135,7 +143,47 @@ Public Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>An <a class="el" href="../../dd/dad/structxii_result.htm" title="Default enum for returning failure or success, instead of using a bool.">xiiResult</a> with an additional message for the reason of failure. </p>
-</div><hr/>The documentation for this struct was generated from the following files:<ul>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="aa214cd09376901b76a9851205079eeb0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa214cd09376901b76a9851205079eeb0">&#9670;&nbsp;</a></span>operator bool()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">xiiStatus::operator bool </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Same as 'Succeeded()'. </p>
+<p>Allows <a class="el" href="../../d0/d54/structxii_status.htm" title="An xiiResult with an additional message for the reason of failure.">xiiStatus</a> to be used in if statements:</p><ul>
+<li>if (r)</li>
+<li>if (!r)</li>
+<li>if (r1 &amp;&amp; r2)</li>
+<li>if (r1 || r2)</li>
+</ul>
+<p>Disallows anything else implicitly, e.g. all these won't compile:</p><ul>
+<li>if (r == true)</li>
+<li>bool b = r;</li>
+<li>void* p = r;</li>
+<li>return r; // with bool return type </li>
+</ul>
+
+</div>
+</div>
+<hr/>The documentation for this struct was generated from the following files:<ul>
 <li>/home/runner/work/XII/XII/Source/Engine/Foundation/Types/<a class="el" href="../../d3/ddd/_status_8h_source.htm">Status.h</a></li>
 <li>/home/runner/work/XII/XII/Source/Engine/Foundation/Types/Implementation/Status.cpp</li>
 </ul>
@@ -145,7 +193,7 @@ Public Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d0/d54/structxii_status.htm">xiiStatus</a></li>
-    <li class="footer">Generated on Fri Mar 24 2023 17:20:26 for XIIEngine by
+    <li class="footer">Generated on Mon Apr 17 2023 20:10:42 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

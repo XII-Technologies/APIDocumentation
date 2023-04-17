@@ -117,10 +117,10 @@ $(document).ready(function(){initNavTree('df/d4c/_m_s_v_c_8h_source.htm','../../
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#    define XII_FORCE_INLINE __forceinline</span></div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#  endif</span></div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="comment">// workaround for MSVC compiler issue with alignment determination of dependent types</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="comment">// Workaround for MSVC compiler issue with alignment determination of dependent types</span></div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#  define XII_ALIGNMENT_OF(type) XII_COMPILE_TIME_MAX(XII_ALIGNMENT_MINIMUM, XII_COMPILE_TIME_MIN(sizeof(type), __alignof(type)))</span></div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#  if XII_ENABLED(XII_COMPILE_FOR_DEBUG) || (_MSC_VER &gt;= 1929 </span><span class="comment">/* broken in early VS2019 but works again in VS2022 and later 2019 versions*/</span><span class="preprocessor">)</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#  if XII_ENABLED(XII_COMPILE_FOR_DEBUG) || (_MSC_VER &gt;= 1929 </span><span class="comment">/* Was broken in early VS2019 but works again in VS2022 and later 2019 versions*/</span><span class="preprocessor">)</span></div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#    define XII_DEBUG_BREAK \</span></div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">      {                     \</span></div>
@@ -146,12 +146,12 @@ $(document).ready(function(){initNavTree('df/d4c/_m_s_v_c_8h_source.htm','../../
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="preprocessor">#  define XII_SOURCE_LINE __LINE__</span></div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="preprocessor">#  define XII_SOURCE_FILE __FILE__</span></div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="comment">// XII_VA_NUM_ARGS() is a very nifty macro to retrieve the number of arguments handed to a variable-argument macro</span></div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="comment">// unfortunately, VS 2010 still has this compiler bug which treats a __VA_ARGS__ argument as being one single parameter:</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="comment">// XII_VA_NUM_ARGS() is a very nifty macro to retrieve the number of arguments handed to a variable-argument macro.</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="comment">// Unfortunately, VS 2010 still has this compiler bug which treats a __VA_ARGS__ argument as being one single parameter:</span></div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="comment">// https://connect.microsoft.com/VisualStudio/feedback/details/521844/variadic-macro-treating-va-args-as-a-single-parameter-for-other-macros#details</span></div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="preprocessor">#  if _MSC_VER &gt;= 1400 &amp;&amp; XII_DISABLED(XII_COMPILER_MSVC_CLANG)</span></div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="preprocessor">#    define XII_VA_NUM_ARGS_HELPER(_1, _2, _3, _4, _5, _6, _7, _8, _9, _10, _11, _12, _13, _14, _15, _16, _17, _18, _19, _20, N, ...) N</span></div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="preprocessor">#    define XII_VA_NUM_ARGS_REVERSE_SEQUENCE                                                                                          20, 19, 18, 17, 16, 15, 14, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="preprocessor">#    define XII_VA_NUM_ARGS_HELPER(_1, _2, _3, _4, _5, _6, _7, _8, _9, _10, _11, _12, _13, _14, _15, _16, _17, _18, _19, _20, _21, _22, _23, _24, _25, _26, _27, _28, _29, _30, _31, _32, N, ...) N</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="preprocessor">#    define XII_VA_NUM_ARGS_REVERSE_SEQUENCE                                                                                                                                                      32, 31, 30, 29, 28, 27, 26, 25, 24, 23, 22, 21, 20, 19, 18, 17, 16, 15, 14, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1</span></div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="preprocessor">#    define XII_LEFT_PARENTHESIS (</span></div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="preprocessor">#    define XII_RIGHT_PARENTHESIS )</span></div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="preprocessor">#    define XII_VA_NUM_ARGS(...) XII_VA_NUM_ARGS_HELPER XII_LEFT_PARENTHESIS __VA_ARGS__, XII_VA_NUM_ARGS_REVERSE_SEQUENCE XII_RIGHT_PARENTHESIS</span></div>
@@ -164,7 +164,7 @@ $(document).ready(function(){initNavTree('df/d4c/_m_s_v_c_8h_source.htm','../../
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.htm">home</a></li><li class="navelem"><a class="el" href="../../dir_1036706e55c22cab35bc1c58ee689f1d.htm">runner</a></li><li class="navelem"><a class="el" href="../../dir_629f8151d55d307162ff2d619fb1783d.htm">work</a></li><li class="navelem"><a class="el" href="../../dir_1ddc44fe1263a8c7935fa6130b7d9499.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_2c1b6808f12952f4c36e05ba7068379a.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_b5a1c4ecfca018ad24b729e213296d41.htm">Source</a></li><li class="navelem"><a class="el" href="../../dir_e321052006a51284e67389ab20037e7c.htm">Engine</a></li><li class="navelem"><a class="el" href="../../dir_be0c42c58b36f42c54ec54024ed4f6af.htm">Foundation</a></li><li class="navelem"><a class="el" href="../../dir_864d26a8cb97342baee8bb044fc1552e.htm">Basics</a></li><li class="navelem"><a class="el" href="../../dir_53407c794e3db240529077ce197d7c54.htm">Compiler</a></li><li class="navelem"><a class="el" href="../../dir_ee2709aa40d5a0e1c97c3e5b6d14a3d8.htm">MSVC</a></li><li class="navelem"><b>MSVC.h</b></li>
-    <li class="footer">Generated on Fri Mar 24 2023 17:20:09 for XIIEngine by
+    <li class="footer">Generated on Mon Apr 17 2023 20:10:25 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

@@ -15,5 +15,5 @@ var classxii_g_a_l_swap_chain_diligent =
     [ "xiiMemoryUtils", "d1/d4e/classxii_g_a_l_swap_chain_diligent.htm#aefc9ff75d6833fd2f05be48e16436db6", null ],
     [ "m_BackbufferTextures", "d1/d4e/classxii_g_a_l_swap_chain_diligent.htm#a6d190285e738f1e62d03c537fbae88db", null ],
     [ "m_CurrentPresentMode", "d1/d4e/classxii_g_a_l_swap_chain_diligent.htm#a2c1fdc379edd836958047c90a3c9d96c", null ],
-    [ "m_pSwapChain", "d1/d4e/classxii_g_a_l_swap_chain_diligent.htm#aa22f47d64cae0b484f7e196f979adedb", null ]
+    [ "m_pSwapChain", "d1/d4e/classxii_g_a_l_swap_chain_diligent.htm#a5d80cce3098cab8c9148b940a18bb4a9", null ]
 ];

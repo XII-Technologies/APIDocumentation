@@ -8,6 +8,8 @@ var structxii_status =
     [ "xiiStatus", "d0/d54/structxii_status.htm#a2cfe400690ee6a55db99119697dbcb78", null ],
     [ "Failed", "d0/d54/structxii_status.htm#af79d656784eeec2f21b1d4d46d99e713", null ],
     [ "LogFailure", "d0/d54/structxii_status.htm#a4f7760fb76ed38cc4aff09895e807ead", null ],
+    [ "operator bool", "d0/d54/structxii_status.htm#aa214cd09376901b76a9851205079eeb0", null ],
+    [ "operator!", "d0/d54/structxii_status.htm#a40f676b55ef215a049c02f2770263a27", null ],
     [ "Succeeded", "d0/d54/structxii_status.htm#aaa789b57f1ca39e257b5c37a0b84ba47", null ],
     [ "m_Result", "d0/d54/structxii_status.htm#a2b3bd1f27c0fce60950032a5221a2520", null ],
     [ "m_sMessage", "d0/d54/structxii_status.htm#a5b82ac626242a7177580ca85d890a0c2", null ]

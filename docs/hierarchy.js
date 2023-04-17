@@ -31,31 +31,32 @@ var hierarchy =
     [ "xiiRenderContextFlags::Bits", "d8/d01/structxii_render_context_flags_1_1_bits.htm", null ],
     [ "xiiDefaultSamplerFlags::Bits", "df/d45/structxii_default_sampler_flags_1_1_bits.htm", null ],
     [ "xiiShaderCompilerFlags::Bits", "dd/d05/structxii_shader_compiler_flags_1_1_bits.htm", null ],
-    [ "xiiMemoryTrackingFlags::Bits", "de/d72/structxii_memory_tracking_flags_1_1_bits.htm", null ],
     [ "xiiFileSystemIteratorFlags::Bits", "db/dc7/structxii_file_system_iterator_flags_1_1_bits.htm", null ],
+    [ "xiiMemoryTrackingFlags::Bits", "de/d72/structxii_memory_tracking_flags_1_1_bits.htm", null ],
     [ "xiiTransformFlags::Bits", "d4/d73/structxii_transform_flags_1_1_bits.htm", null ],
     [ "xiiPropertyFlags::Bits", "d1/dcd/structxii_property_flags_1_1_bits.htm", null ],
     [ "xiiMoveToComponentFlags::Bits", "dd/d5b/structxii_move_to_component_flags_1_1_bits.htm", null ],
     [ "xiiClothSheetFlags::Bits", "d9/d7d/structxii_cloth_sheet_flags_1_1_bits.htm", null ],
     [ "xiiJoltCharacterControllerComponent::ShapeContacts::Bits", "d7/d96/structxii_jolt_character_controller_component_1_1_shape_contacts_1_1_bits.htm", null ],
     [ "xiiOnJoltContact::Bits", "dc/dbd/structxii_on_jolt_contact_1_1_bits.htm", null ],
-    [ "xiiAssetDocumentFlags::Bits", "d6/df4/structxii_asset_document_flags_1_1_bits.htm", null ],
     [ "xiiEngineProcessDocumentContextFlags::Bits", "d5/dcb/structxii_engine_process_document_context_flags_1_1_bits.htm", null ],
+    [ "xiiAssetDocumentFlags::Bits", "d6/df4/structxii_asset_document_flags_1_1_bits.htm", null ],
+    [ "xiiDependencyFlags::Bits", "d3/db0/structxii_dependency_flags_1_1_bits.htm", null ],
     [ "xiiVisualizerAnchor::Bits", "dd/d39/structxii_visualizer_anchor_1_1_bits.htm", null ],
     [ "xiiTypeFlags::Bits", "da/dce/structxii_type_flags_1_1_bits.htm", null ],
-    [ "xiiInputSlotFlags::Bits", "de/def/structxii_input_slot_flags_1_1_bits.htm", null ],
+    [ "xiiResourceFlags::Bits", "df/d78/structxii_resource_flags_1_1_bits.htm", null ],
     [ "xiiDynamicMenuAction::Item::ItemFlags::Bits", "d9/dbf/structxii_dynamic_menu_action_1_1_item_1_1_item_flags_1_1_bits.htm", null ],
     [ "xiiStandardMenuTypes::Bits", "dd/d51/structxii_standard_menu_types_1_1_bits.htm", null ],
-    [ "xiiResourceFlags::Bits", "df/d78/structxii_resource_flags_1_1_bits.htm", null ],
+    [ "xiiCrashHandler_WriteMiniDump::PathFlags::Bits", "d2/d7a/structxii_crash_handler___write_mini_dump_1_1_path_flags_1_1_bits.htm", null ],
     [ "xiiNodeFlags::Bits", "d9/d5a/structxii_node_flags_1_1_bits.htm", null ],
     [ "xiiQtNodeScene::ConnectionDecorationFlags::Bits", "d8/d80/structxii_qt_node_scene_1_1_connection_decoration_flags_1_1_bits.htm", null ],
-    [ "xiiCrashHandler_WriteMiniDump::PathFlags::Bits", "d2/d7a/structxii_crash_handler___write_mini_dump_1_1_path_flags_1_1_bits.htm", null ],
+    [ "xiiInputSlotFlags::Bits", "de/def/structxii_input_slot_flags_1_1_bits.htm", null ],
     [ "xiiDocumentFlags::Bits", "d3/d80/structxii_document_flags_1_1_bits.htm", null ],
-    [ "xiiBlackboardEntryFlags::Bits", "d1/d09/structxii_blackboard_entry_flags_1_1_bits.htm", null ],
     [ "xiiQtEditorApp::StartupFlags::Bits", "d2/de1/structxii_qt_editor_app_1_1_startup_flags_1_1_bits.htm", null ],
+    [ "xiiBlackboardEntryFlags::Bits", "d1/d09/structxii_blackboard_entry_flags_1_1_bits.htm", null ],
     [ "xiiObjectFlags::Bits", "de/d49/structxii_object_flags_1_1_bits.htm", null ],
-    [ "xiiSpatialData::Flags::Bits", "d9/d23/structxii_spatial_data_1_1_flags_1_1_bits.htm", null ],
     [ "xiiTransformComponentFlags::Bits", "d8/d10/structxii_transform_component_flags_1_1_bits.htm", null ],
+    [ "xiiSpatialData::Flags::Bits", "d9/d23/structxii_spatial_data_1_1_flags_1_1_bits.htm", null ],
     [ "xiiSpawnComponentFlags::Bits", "d6/d6d/structxii_spawn_component_flags_1_1_bits.htm", null ],
     [ "BodyFilter", null, [
       [ "xiiJoltBodyFilter", "d9/d6d/classxii_jolt_body_filter.htm", null ]
@@ -165,6 +166,7 @@ var hierarchy =
       [ "xiiRmlUiInternal::ContextInstancer", "d9/d4d/classxii_rml_ui_internal_1_1_context_instancer.htm", null ]
     ] ],
     [ "xiiCurve1D::ControlPoint", "dd/dda/structxii_curve1_d_1_1_control_point.htm", null ],
+    [ "xiiPathComponent::ControlPoint", "da/da1/structxii_path_component_1_1_control_point.htm", null ],
     [ "xiiImageConversion::ConversionPathNode", "d9/d15/structxii_image_conversion_1_1_conversion_path_node.htm", null ],
     [ "xiiGridNavmesh::ConvexArea", "da/d1b/structxii_grid_navmesh_1_1_convex_area.htm", null ],
     [ "xiiProfilingSystem::CPUScope", "db/d89/structxii_profiling_system_1_1_c_p_u_scope.htm", null ],
@@ -322,6 +324,9 @@ var hierarchy =
       ] ],
       [ "IDxcVersionInfo3", "da/ddb/struct_i_dxc_version_info3.htm", null ]
     ] ],
+    [ "xiiPhysicsWorldModuleInterface::JointConfig", "d7/dc8/structxii_physics_world_module_interface_1_1_joint_config.htm", [
+      [ "xiiPhysicsWorldModuleInterface::FixedJointConfig", "d5/d28/structxii_physics_world_module_interface_1_1_fixed_joint_config.htm", null ]
+    ] ],
     [ "xiiAnimationClipResourceDescriptor::JointInfo", "d1/d1b/structxii_animation_clip_resource_descriptor_1_1_joint_info.htm", null ],
     [ "JSEdit", "d6/d81/struct_j_s_edit.htm", null ],
     [ "xiiStandardJSONWriter::JSONState", "da/d0c/structxii_standard_j_s_o_n_writer_1_1_j_s_o_n_state.htm", null ],
@@ -333,6 +338,8 @@ var hierarchy =
     [ "xiiJoltRagdollComponent::LimbConfig", "d6/dd5/structxii_jolt_ragdoll_component_1_1_limb_config.htm", null ],
     [ "xiiDebugRenderer::Line", "d3/df9/structxii_debug_renderer_1_1_line.htm", null ],
     [ "xiiGeometry::Line", "d8/d15/structxii_geometry_1_1_line.htm", null ],
+    [ "xiiPathComponent::LinearizedElement", "d9/de2/structxii_path_component_1_1_linearized_element.htm", null ],
+    [ "xiiPathComponent::LinearSampler", "d0/d2b/structxii_path_component_1_1_linear_sampler.htm", null ],
     [ "xiiDecalResourceLoader::LoadedData", "da/d5a/structxii_decal_resource_loader_1_1_loaded_data.htm", null ],
     [ "xiiTextureResourceLoader::LoadedData", "d5/d45/structxii_texture_resource_loader_1_1_loaded_data.htm", null ],
     [ "xiiConfigFileResourceLoader::LoadedData", "db/d3c/structxii_config_file_resource_loader_1_1_loaded_data.htm", null ],
@@ -421,6 +428,7 @@ var hierarchy =
       [ "xiiJoltMaterial", "d5/d47/classxii_jolt_material.htm", null ]
     ] ],
     [ "xiiAnimationControllerAssetDocument::PinCount", "da/d59/structxii_animation_controller_asset_document_1_1_pin_count.htm", null ],
+    [ "xiiGALCommandEncoderImplDiligent::PipelineStateInfo", "de/d43/structxii_g_a_l_command_encoder_impl_diligent_1_1_pipeline_state_info.htm", null ],
     [ "xiiProcGenInternal::PlacementData", "de/dd3/structxii_proc_gen_internal_1_1_placement_data.htm", null ],
     [ "xiiProcGenInternal::PlacementPoint", "d1/dc9/structxii_proc_gen_internal_1_1_placement_point.htm", null ],
     [ "xiiProcGenInternal::PlacementTile", "d2/da2/classxii_proc_gen_internal_1_1_placement_tile.htm", null ],
@@ -749,6 +757,7 @@ var hierarchy =
     ] ],
     [ "RenderTargetInfo", "d9/daa/struct_render_target_info.htm", null ],
     [ "xiiDocumentManager::Request", "de/d51/structxii_document_manager_1_1_request.htm", null ],
+    [ "xiiGALCommandEncoderImplDiligent::ResourceCacheHash", "db/d0b/structxii_g_a_l_command_encoder_impl_diligent_1_1_resource_cache_hash.htm", null ],
     [ "xiiGatherObjectsOfTypeMsgInterDoc::Result", "df/d88/structxii_gather_objects_of_type_msg_inter_doc_1_1_result.htm", null ],
     [ "S", null, [
       [ "xiiEnum< S >", "de/dfd/structxii_enum.htm", null ]
@@ -1466,22 +1475,15 @@ var hierarchy =
         [ "xiiDynamicArray< Diligent::DisplayModeAttribs >", "dc/da4/classxii_dynamic_array.htm", null ]
       ] ]
     ] ],
+    [ "xiiArrayBase< Diligent::IDeviceContext *, xiiDynamicArrayBase< Diligent::IDeviceContext * > >", "da/d4c/classxii_array_base.htm", [
+      [ "xiiDynamicArrayBase< Diligent::IDeviceContext * >", "d2/dea/classxii_dynamic_array_base.htm", [
+        [ "xiiDynamicArray< Diligent::IDeviceContext * >", "dc/da4/classxii_dynamic_array.htm", null ]
+      ] ]
+    ] ],
     [ "xiiArrayBase< Diligent::LayoutElement, xiiDynamicArrayBase< Diligent::LayoutElement > >", "da/d4c/classxii_array_base.htm", [
       [ "xiiDynamicArrayBase< Diligent::LayoutElement >", "d2/dea/classxii_dynamic_array_base.htm", [
         [ "xiiDynamicArray< Diligent::LayoutElement, xiiDefaultAllocatorWrapper >", "dc/da4/classxii_dynamic_array.htm", [
           [ "xiiHybridArray< Diligent::LayoutElement, 8 >", "dc/da9/classxii_hybrid_array.htm", null ]
-        ] ]
-      ] ]
-    ] ],
-    [ "xiiArrayBase< Diligent::RefCntAutoPtr< Diligent::IDeviceContext >, xiiDynamicArrayBase< Diligent::RefCntAutoPtr< Diligent::IDeviceContext > > >", "da/d4c/classxii_array_base.htm", [
-      [ "xiiDynamicArrayBase< Diligent::RefCntAutoPtr< Diligent::IDeviceContext > >", "d2/dea/classxii_dynamic_array_base.htm", [
-        [ "xiiDynamicArray< Diligent::RefCntAutoPtr< Diligent::IDeviceContext > >", "dc/da4/classxii_dynamic_array.htm", null ]
-      ] ]
-    ] ],
-    [ "xiiArrayBase< Diligent::TextureSubResData, xiiDynamicArrayBase< Diligent::TextureSubResData > >", "da/d4c/classxii_array_base.htm", [
-      [ "xiiDynamicArrayBase< Diligent::TextureSubResData >", "d2/dea/classxii_dynamic_array_base.htm", [
-        [ "xiiDynamicArray< Diligent::TextureSubResData, xiiDefaultAllocatorWrapper >", "dc/da4/classxii_dynamic_array.htm", [
-          [ "xiiHybridArray< Diligent::TextureSubResData, 16 >", "dc/da9/classxii_hybrid_array.htm", null ]
         ] ]
       ] ]
     ] ],
@@ -2920,6 +2922,23 @@ var hierarchy =
         ] ]
       ] ]
     ] ],
+    [ "xiiArrayBase< xiiPathComponent *, xiiDynamicArrayBase< xiiPathComponent * > >", "da/d4c/classxii_array_base.htm", [
+      [ "xiiDynamicArrayBase< xiiPathComponent * >", "d2/dea/classxii_dynamic_array_base.htm", [
+        [ "xiiDynamicArray< xiiPathComponent *, xiiDefaultAllocatorWrapper >", "dc/da4/classxii_dynamic_array.htm", [
+          [ "xiiHybridArray< xiiPathComponent *, 32 >", "dc/da9/classxii_hybrid_array.htm", null ]
+        ] ]
+      ] ]
+    ] ],
+    [ "xiiArrayBase< xiiPathComponent::ControlPoint, xiiDynamicArrayBase< xiiPathComponent::ControlPoint > >", "da/d4c/classxii_array_base.htm", [
+      [ "xiiDynamicArrayBase< xiiPathComponent::ControlPoint >", "d2/dea/classxii_dynamic_array_base.htm", [
+        [ "xiiDynamicArray< xiiPathComponent::ControlPoint >", "dc/da4/classxii_dynamic_array.htm", null ]
+      ] ]
+    ] ],
+    [ "xiiArrayBase< xiiPathComponent::LinearizedElement, xiiDynamicArrayBase< xiiPathComponent::LinearizedElement > >", "da/d4c/classxii_array_base.htm", [
+      [ "xiiDynamicArrayBase< xiiPathComponent::LinearizedElement >", "d2/dea/classxii_dynamic_array_base.htm", [
+        [ "xiiDynamicArray< xiiPathComponent::LinearizedElement >", "dc/da4/classxii_dynamic_array.htm", null ]
+      ] ]
+    ] ],
     [ "xiiArrayBase< xiiPathPattern, xiiDynamicArrayBase< xiiPathPattern > >", "da/d4c/classxii_array_base.htm", [
       [ "xiiDynamicArrayBase< xiiPathPattern >", "d2/dea/classxii_dynamic_array_base.htm", [
         [ "xiiDynamicArray< xiiPathPattern >", "dc/da4/classxii_dynamic_array.htm", null ]
@@ -4112,6 +4131,7 @@ var hierarchy =
     [ "xiiBitflags< xiiBlackboardEntryFlags >", "d7/d55/structxii_bitflags.htm", null ],
     [ "xiiBitflags< xiiClothSheetFlags >", "d7/d55/structxii_bitflags.htm", null ],
     [ "xiiBitflags< xiiCVarFlags >", "d7/d55/structxii_bitflags.htm", null ],
+    [ "xiiBitflags< xiiDependencyFlags >", "d7/d55/structxii_bitflags.htm", null ],
     [ "xiiBitflags< xiiDirectoryWatcher::Watch >", "d7/d55/structxii_bitflags.htm", null ],
     [ "xiiBitflags< xiiDynamicMenuAction::Item::ItemFlags >", "d7/d55/structxii_bitflags.htm", null ],
     [ "xiiBitflags< xiiEngineProcessDocumentContextFlags >", "d7/d55/structxii_bitflags.htm", null ],
@@ -4124,6 +4144,7 @@ var hierarchy =
     [ "xiiBitflags< xiiNodeFlags >", "d7/d55/structxii_bitflags.htm", null ],
     [ "xiiBitflags< xiiObjectFlags >", "d7/d55/structxii_bitflags.htm", null ],
     [ "xiiBitflags< xiiOnJoltContact >", "d7/d55/structxii_bitflags.htm", null ],
+    [ "xiiBitflags< xiiPathComponentFlags >", "d7/d55/structxii_bitflags.htm", null ],
     [ "xiiBitflags< xiiPhysicsShapeType >", "d7/d55/structxii_bitflags.htm", null ],
     [ "xiiBitflags< xiiPluginLoadFlags >", "d7/d55/structxii_bitflags.htm", null ],
     [ "xiiBitflags< xiiProbeFlags >", "d7/d55/structxii_bitflags.htm", null ],
@@ -4292,6 +4313,8 @@ var hierarchy =
     [ "xiiConvexHullGenerator", "d6/d63/classxii_convex_hull_generator.htm", null ],
     [ "xiiCoordinateSystemConversionTemplate< Type >", "da/db5/classxii_coordinate_system_conversion_template.htm", null ],
     [ "xiiCoordinateSystemTemplate< Type >", "db/d2a/structxii_coordinate_system_template.htm", null ],
+    [ "xiiCppProject", "d4/d9f/structxii_cpp_project.htm", null ],
+    [ "xiiCppSettings", "dd/ddb/classxii_cpp_settings.htm", null ],
     [ "xiiCpuFeatures", "de/db9/structxii_cpu_features.htm", null ],
     [ "xiiCrashHandler", "d4/dc7/classxii_crash_handler.htm", [
       [ "xiiCrashHandler_WriteMiniDump", "d5/da4/classxii_crash_handler___write_mini_dump.htm", null ]
@@ -4392,6 +4415,7 @@ var hierarchy =
       [ "xiiDelegate< xiiVisitorExecution::Enum(xiiGameObject *)>", "dc/d84/structxii_delegate.htm", null ]
     ] ],
     [ "xiiDependencyFile", "d8/d7c/classxii_dependency_file.htm", null ],
+    [ "xiiDependencyFlags", "de/d7c/structxii_dependency_flags.htm", null ],
     [ "xiiDequeBase< T, Construct >", "d1/d7d/classxii_deque_base.htm", null ],
     [ "xiiDequeBase< ComponentToUpdate, true >", "d1/d7d/classxii_deque_base.htm", [
       [ "xiiDeque< ComponentToUpdate >", "d8/df8/classxii_deque.htm", null ]
@@ -4732,6 +4756,9 @@ var hierarchy =
     [ "xiiEventBase< const xiiConsoleEvent &, xiiNoMutex, xiiEventType::Default >", "d0/d7f/classxii_event_base.htm", [
       [ "xiiEvent< const xiiConsoleEvent & >", "dc/d22/classxii_event.htm", null ]
     ] ],
+    [ "xiiEventBase< const xiiCppSettings &, xiiNoMutex, xiiEventType::Default >", "d0/d7f/classxii_event_base.htm", [
+      [ "xiiEvent< const xiiCppSettings & >", "dc/d22/classxii_event.htm", null ]
+    ] ],
     [ "xiiEventBase< const xiiCVarEvent &, xiiNoMutex, xiiEventType::Default >", "d0/d7f/classxii_event_base.htm", [
       [ "xiiEvent< const xiiCVarEvent & >", "dc/d22/classxii_event.htm", null ],
       [ "xiiEvent< const xiiCVarEvent &, xiiNoMutex, xiiStaticAllocatorWrapper >", "dc/d22/classxii_event.htm", null ]
@@ -4802,8 +4829,8 @@ var hierarchy =
     [ "xiiEventBase< const xiiImageDataAssetEvent &, xiiNoMutex, xiiEventType::Default >", "d0/d7f/classxii_event_base.htm", [
       [ "xiiEvent< const xiiImageDataAssetEvent & >", "dc/d22/classxii_event.htm", null ]
     ] ],
-    [ "xiiEventBase< const xiiIpcChannelEvent &, xiiNoMutex, xiiEventType::Default >", "d0/d7f/classxii_event_base.htm", [
-      [ "xiiEvent< const xiiIpcChannelEvent & >", "dc/d22/classxii_event.htm", null ]
+    [ "xiiEventBase< const xiiIpcChannelEvent &, xiiMutex, xiiEventType::Default >", "d0/d7f/classxii_event_base.htm", [
+      [ "xiiEvent< const xiiIpcChannelEvent &, xiiMutex >", "dc/d22/classxii_event.htm", null ]
     ] ],
     [ "xiiEventBase< const xiiLoggingEventData &, xiiMutex, xiiEventType::Default >", "d0/d7f/classxii_event_base.htm", [
       [ "xiiEvent< const xiiLoggingEventData &, xiiMutex >", "dc/d22/classxii_event.htm", null ]
@@ -5013,8 +5040,8 @@ var hierarchy =
     [ "xiiFunctionType", "dc/d96/structxii_function_type.htm", [
       [ "xiiEnum< xiiFunctionType >", "de/dfd/structxii_enum.htm", null ]
     ] ],
-    [ "xiiGALBlend", "db/d5d/structxii_g_a_l_blend.htm", null ],
-    [ "xiiGALBlendOp", "d5/d0b/structxii_g_a_l_blend_op.htm", null ],
+    [ "xiiGALBlendFactor", "d0/d09/structxii_g_a_l_blend_factor.htm", null ],
+    [ "xiiGALBlendOperation", "d0/d2e/structxii_g_a_l_blend_operation.htm", null ],
     [ "xiiGALBlendStateHandle", "d2/d51/classxii_g_a_l_blend_state_handle.htm", null ],
     [ "xiiGALBufferHandle", "d1/dba/classxii_g_a_l_buffer_handle.htm", null ],
     [ "xiiGALBufferType", "db/d04/structxii_g_a_l_buffer_type.htm", [
@@ -5088,8 +5115,8 @@ var hierarchy =
     [ "xiiGALSamplerStateHandle", "d3/d15/classxii_g_a_l_sampler_state_handle.htm", null ],
     [ "xiiGALShaderHandle", "d9/d71/classxii_g_a_l_shader_handle.htm", null ],
     [ "xiiGALShaderStage", "d7/d93/structxii_g_a_l_shader_stage.htm", null ],
-    [ "xiiGALStencilOp", "d8/d18/structxii_g_a_l_stencil_op.htm", [
-      [ "xiiEnum< xiiGALStencilOp >", "de/dfd/structxii_enum.htm", null ]
+    [ "xiiGALStencilOperation", "db/d73/structxii_g_a_l_stencil_operation.htm", [
+      [ "xiiEnum< xiiGALStencilOperation >", "de/dfd/structxii_enum.htm", null ]
     ] ],
     [ "xiiGALSwapChainHandle", "de/dc7/classxii_g_a_l_swap_chain_handle.htm", null ],
     [ "xiiGALSystemMemoryDescription", "d5/d1b/structxii_g_a_l_system_memory_description.htm", null ],
@@ -5104,6 +5131,7 @@ var hierarchy =
     [ "xiiGALTimestampHandle", "db/d4b/structxii_g_a_l_timestamp_handle.htm", null ],
     [ "xiiGALUnorderedAccessViewHandle", "d0/d76/classxii_g_a_l_unordered_access_view_handle.htm", null ],
     [ "xiiGALUpdateMode", "dd/d37/structxii_g_a_l_update_mode.htm", null ],
+    [ "xiiGALUpdateType", "d9/d4e/structxii_g_a_l_update_type.htm", null ],
     [ "xiiGALVertexAttribute", "d9/df2/structxii_g_a_l_vertex_attribute.htm", null ],
     [ "xiiGALVertexAttributeSemantic", "d5/d61/structxii_g_a_l_vertex_attribute_semantic.htm", null ],
     [ "xiiGALVertexDeclarationHandle", "d1/df5/classxii_g_a_l_vertex_declaration_handle.htm", null ],
@@ -5138,7 +5166,7 @@ var hierarchy =
     [ "xiiGizmoFlags", "df/dae/structxii_gizmo_flags.htm", null ],
     [ "xiiGPUResourcePool", "da/d8d/classxii_g_p_u_resource_pool.htm", null ],
     [ "xiiGrabbableItemGrabPoint", "db/d34/structxii_grabbable_item_grab_point.htm", null ],
-    [ "xiiGraphicsDevice", "d9/dc8/structxii_graphics_device.htm", null ],
+    [ "xiiGraphicsDeviceType", "d4/d0e/structxii_graphics_device_type.htm", null ],
     [ "xiiGraphPatchContext", "d8/d4a/classxii_graph_patch_context.htm", null ],
     [ "xiiGraphVersioning", "d3/dd5/classxii_graph_versioning.htm", null ],
     [ "xiiGraphVersioningHash", "d9/d26/structxii_graph_versioning_hash.htm", null ],
@@ -5203,7 +5231,6 @@ var hierarchy =
     [ "xiiHashedString", "d6/d0c/classxii_hashed_string.htm", null ],
     [ "xiiHashHelper< T >", "d6/dcd/structxii_hash_helper.htm", null ],
     [ "xiiHashHelper< const char * >", "d3/d3c/structxii_hash_helper_3_01const_01char_01_5_01_4.htm", null ],
-    [ "xiiHashHelper< RenderTargetInfo >", "de/dbc/structxii_hash_helper_3_01_render_target_info_01_4.htm", null ],
     [ "xiiHashHelper< T * >", "dd/df1/structxii_hash_helper_3_01_t_01_5_01_4.htm", null ],
     [ "xiiHashHelper< xiiArchiveStoredString >", "d4/df9/structxii_hash_helper_3_01xii_archive_stored_string_01_4.htm", null ],
     [ "xiiHashHelper< xiiComponentHandle >", "d5/d5a/structxii_hash_helper_3_01xii_component_handle_01_4.htm", null ],
@@ -5303,6 +5330,12 @@ var hierarchy =
     ] ],
     [ "xiiHashTableBase< const xiiRTTI *, xiiWorldModuleTypeId, xiiHashHelper< const xiiRTTI * > >", "d0/da6/classxii_hash_table_base.htm", [
       [ "xiiHashTable< const xiiRTTI *, xiiWorldModuleTypeId >", "d8/dc2/classxii_hash_table.htm", null ]
+    ] ],
+    [ "xiiHashTableBase< Diligent::ComputePipelineStateCreateInfo, xiiGALCommandEncoderImplDiligent::PipelineStateInfo, xiiGALCommandEncoderImplDiligent::ResourceCacheHash >", "d0/da6/classxii_hash_table_base.htm", [
+      [ "xiiHashTable< Diligent::ComputePipelineStateCreateInfo, xiiGALCommandEncoderImplDiligent::PipelineStateInfo, xiiGALCommandEncoderImplDiligent::ResourceCacheHash >", "d8/dc2/classxii_hash_table.htm", null ]
+    ] ],
+    [ "xiiHashTableBase< Diligent::GraphicsPipelineStateCreateInfo, xiiGALCommandEncoderImplDiligent::PipelineStateInfo, xiiGALCommandEncoderImplDiligent::ResourceCacheHash >", "d0/da6/classxii_hash_table_base.htm", [
+      [ "xiiHashTable< Diligent::GraphicsPipelineStateCreateInfo, xiiGALCommandEncoderImplDiligent::PipelineStateInfo, xiiGALCommandEncoderImplDiligent::ResourceCacheHash >", "d8/dc2/classxii_hash_table.htm", null ]
     ] ],
     [ "xiiHashTableBase< DocObjAndOutput, xiiExpressionAST::Node *, xiiHashHelper< DocObjAndOutput > >", "d0/da6/classxii_hash_table_base.htm", [
       [ "xiiHashTable< DocObjAndOutput, xiiExpressionAST::Node * >", "d8/dc2/classxii_hash_table.htm", null ]
@@ -6568,6 +6601,7 @@ var hierarchy =
             [ "xiiVisualScriptComponent", "d7/d22/classxii_visual_script_component.htm", null ]
           ] ],
           [ "xiiFakeRopeComponent", "de/d24/classxii_fake_rope_component.htm", null ],
+          [ "xiiFollowPathComponent", "dc/d74/classxii_follow_path_component.htm", null ],
           [ "xiiGrabbableItemComponent", "d8/ded/classxii_grabbable_item_component.htm", null ],
           [ "xiiHeadBoneComponent", "df/d8f/classxii_head_bone_component.htm", null ],
           [ "xiiInputComponent", "d5/dcc/classxii_input_component.htm", null ],
@@ -6609,6 +6643,8 @@ var hierarchy =
             [ "xiiSoldierComponent", "d1/d78/classxii_soldier_component.htm", null ]
           ] ],
           [ "xiiOccluderComponent", "dd/d32/classxii_occluder_component.htm", null ],
+          [ "xiiPathComponent", "dd/dd0/classxii_path_component.htm", null ],
+          [ "xiiPathNodeComponent", "dd/dd9/classxii_path_node_component.htm", null ],
           [ "xiiPlayerStartPointComponent", "dc/d56/classxii_player_start_point_component.htm", null ],
           [ "xiiPrefabReferenceComponent", "d3/d15/classxii_prefab_reference_component.htm", null ],
           [ "xiiProcPlacementComponent", "dc/d90/classxii_proc_placement_component.htm", null ],
@@ -6964,6 +7000,7 @@ var hierarchy =
         [ "xiiMeshAssetProperties", "d1/d88/classxii_mesh_asset_properties.htm", null ],
         [ "xiiMessage", "d9/d55/classxii_message.htm", [
           [ "xiiEventMessage", "d6/de3/structxii_event_message.htm", [
+            [ "xiiEventMsgPathChanged", "dd/daf/structxii_event_msg_path_changed.htm", null ],
             [ "xiiMsgAnimationReachedEnd", "d4/d6a/structxii_msg_animation_reached_end.htm", null ],
             [ "xiiMsgBlackboardEntryChanged", "dd/d7a/structxii_msg_blackboard_entry_changed.htm", null ],
             [ "xiiMsgDamage", "dd/d19/structxii_msg_damage.htm", null ],
@@ -6989,13 +7026,13 @@ var hierarchy =
           [ "xiiMsgExtractRenderData", "d3/d47/structxii_msg_extract_render_data.htm", null ],
           [ "xiiMsgExtractVolumes", "d5/d22/structxii_msg_extract_volumes.htm", null ],
           [ "xiiMsgMoveCharacterController", "d4/d2e/structxii_msg_move_character_controller.htm", null ],
-          [ "xiiMsgObjectGrabbed", "d2/d42/classxii_msg_object_grabbed.htm", null ],
+          [ "xiiMsgObjectGrabbed", "dc/ddd/structxii_msg_object_grabbed.htm", null ],
           [ "xiiMsgOnlyApplyToObject", "d1/de5/structxii_msg_only_apply_to_object.htm", null ],
           [ "xiiMsgParentChanged", "d0/d96/structxii_msg_parent_changed.htm", null ],
           [ "xiiMsgPhysicsAddForce", "d2/dd1/structxii_msg_physics_add_force.htm", null ],
           [ "xiiMsgPhysicsAddImpulse", "d9/d2c/structxii_msg_physics_add_impulse.htm", null ],
           [ "xiiMsgQueryAnimationSkeleton", "d6/d36/structxii_msg_query_animation_skeleton.htm", null ],
-          [ "xiiMsgReleaseObjectGrab", "d2/da7/classxii_msg_release_object_grab.htm", null ],
+          [ "xiiMsgReleaseObjectGrab", "d9/d68/structxii_msg_release_object_grab.htm", null ],
           [ "xiiMsgRetrieveBoneState", "d7/d35/structxii_msg_retrieve_bone_state.htm", null ],
           [ "xiiMsgRmlUiReload", "d4/df1/structxii_msg_rml_ui_reload.htm", null ],
           [ "xiiMsgRopePoseUpdated", "d4/d46/structxii_msg_rope_pose_updated.htm", null ],
@@ -7421,6 +7458,7 @@ var hierarchy =
         [ "xiiSceneExportModifier", "de/db8/classxii_scene_export_modifier.htm", [
           [ "xiiSceneExportModifier_JoltStaticMeshConversion", "d6/d4c/classxii_scene_export_modifier___jolt_static_mesh_conversion.htm", null ],
           [ "xiiSceneExportModifier_RemoveCommentComponents", "d4/d15/classxii_scene_export_modifier___remove_comment_components.htm", null ],
+          [ "xiiSceneExportModifier_RemovePathNodeComponents", "d1/dc2/classxii_scene_export_modifier___remove_path_node_components.htm", null ],
           [ "xiiSceneExportModifier_RemoveShapeIconComponents", "d3/d65/classxii_scene_export_modifier___remove_shape_icon_components.htm", null ]
         ] ],
         [ "xiiSceneLayerBase", "dc/dd3/classxii_scene_layer_base.htm", [
@@ -7580,6 +7618,9 @@ var hierarchy =
             [ "xiiComponentManager< class xiiParticleFinisherComponent, xiiBlockStorageType::Compact >", "d4/d5d/classxii_component_manager.htm", [
               [ "xiiParticleFinisherComponentManager", "db/dd5/classxii_particle_finisher_component_manager.htm", null ]
             ] ],
+            [ "xiiComponentManager< class xiiPathComponent, xiiBlockStorageType::FreeList >", "d4/d5d/classxii_component_manager.htm", [
+              [ "xiiPathComponentManager", "dd/d0e/classxii_path_component_manager.htm", null ]
+            ] ],
             [ "xiiComponentManager< class xiiRaycastComponent, xiiBlockStorageType::Compact >", "d4/d5d/classxii_component_manager.htm", [
               [ "xiiRaycastComponentManager", "d2/de4/classxii_raycast_component_manager.htm", null ]
             ] ],
@@ -7722,6 +7763,9 @@ var hierarchy =
     ] ],
     [ "xiiParticleTypeRenderMode", "d8/d30/structxii_particle_type_render_mode.htm", [
       [ "xiiEnum< xiiParticleTypeRenderMode >", "de/dfd/structxii_enum.htm", null ]
+    ] ],
+    [ "xiiPathNodeTangentMode", "de/d6d/structxii_path_node_tangent_mode.htm", [
+      [ "xiiEnum< xiiPathNodeTangentMode >", "de/dfd/structxii_enum.htm", null ]
     ] ],
     [ "xiiPathPattern", "d4/d8e/structxii_path_pattern.htm", null ],
     [ "xiiPathPatternFilter", "d9/d62/structxii_path_pattern_filter.htm", null ],
@@ -8590,8 +8634,6 @@ var hierarchy =
     [ "xiiUniquePtr< class xiiBakedProbesComponent >", "d9/d4a/classxii_unique_ptr.htm", null ],
     [ "xiiUniquePtr< ComponentType >", "d9/d4a/classxii_unique_ptr.htm", null ],
     [ "xiiUniquePtr< Data >", "d9/d4a/classxii_unique_ptr.htm", null ],
-    [ "xiiUniquePtr< Diligent::DurationQueryHelper >", "d9/d4a/classxii_unique_ptr.htm", null ],
-    [ "xiiUniquePtr< Diligent::ScopedQueryHelper >", "d9/d4a/classxii_unique_ptr.htm", null ],
     [ "xiiUniquePtr< dtNavMeshQuery >", "d9/d4a/classxii_unique_ptr.htm", null ],
     [ "xiiUniquePtr< dtPathCorridor >", "d9/d4a/classxii_unique_ptr.htm", null ],
     [ "xiiUniquePtr< Grid >", "d9/d4a/classxii_unique_ptr.htm", null ],

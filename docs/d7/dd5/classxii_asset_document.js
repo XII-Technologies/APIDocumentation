@@ -45,6 +45,7 @@ var classxii_asset_document =
     [ "RemoveSyncObject", "d7/dd5/classxii_asset_document.htm#ad7a4d82aa0d7e6ddd4d36fd4b84048bd", null ],
     [ "SaveThumbnail", "d7/dd5/classxii_asset_document.htm#a80f99b7b6323ead608a8d4a1cf75008b", null ],
     [ "SaveThumbnail", "d7/dd5/classxii_asset_document.htm#ae758f8542a048d796e1a826b82f066ac", null ],
+    [ "SendDocumentOpenMessage", "d7/dd5/classxii_asset_document.htm#a06465680396cbdde5c35c2462465c8f1", null ],
     [ "SendMessageToEngine", "d7/dd5/classxii_asset_document.htm#a10f31d7c42c8a6c9ec4f8a4d7542a715", null ],
     [ "SetCommonAssetUiState", "d7/dd5/classxii_asset_document.htm#ada5db433f6cd863528bac14924149110", null ],
     [ "SyncObjectsToEngine", "d7/dd5/classxii_asset_document.htm#adc51b5bf57d6b9108913c54536a77b31", null ],

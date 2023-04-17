@@ -157,7 +157,7 @@ $(document).ready(function(){initNavTree('df/ddd/_stack_tracer__win_8h_source.ht
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    StackTracerImplementation()</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    {</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;      <a class="code" href="../../d8/d9d/classxii_memory_utils.htm#a81836e063ab5d7ce1d29e5cfc5357f1c">xiiMemoryUtils::ZeroFill</a>(<span class="keyword">this</span>, 1);</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;      <a class="code" href="../../d8/d9d/classxii_memory_utils.htm#aa46340f1eaae0121ec1bcb712ea2755f">xiiMemoryUtils::ZeroFill</a>(<span class="keyword">this</span>, 1);</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;      kernel32Dll = LoadLibraryW(L<span class="stringliteral">&quot;kernel32.dll&quot;</span>);</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;      XII_ASSERT_DEV(kernel32Dll != <span class="keyword">nullptr</span>, <span class="stringliteral">&quot;StackTracer could not load kernel32.dll&quot;</span>);</div>
@@ -254,7 +254,7 @@ $(document).ready(function(){initNavTree('df/ddd/_stack_tracer__win_8h_source.ht
 <div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;    }</div>
 <div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160; </div>
 <div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    IMAGEHLP_MODULEW64 moduleInfo;</div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;    <a class="code" href="../../d8/d9d/classxii_memory_utils.htm#a81836e063ab5d7ce1d29e5cfc5357f1c">xiiMemoryUtils::ZeroFill</a>(&amp;moduleInfo, 1);</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;    <a class="code" href="../../d8/d9d/classxii_memory_utils.htm#aa46340f1eaae0121ec1bcb712ea2755f">xiiMemoryUtils::ZeroFill</a>(&amp;moduleInfo, 1);</div>
 <div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;    moduleInfo.SizeOfStruct = <span class="keyword">sizeof</span>(IMAGEHLP_MODULEW64);</div>
 <div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160; </div>
 <div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;    <span class="keywordflow">if</span> (!(*s_pImplementation-&gt;getModuleInfo)(currentProcess, moduleAddress, &amp;moduleInfo))</div>
@@ -372,7 +372,7 @@ $(document).ready(function(){initNavTree('df/ddd/_stack_tracer__win_8h_source.ht
 <div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;      DWORD64 pSymbolAddress = <span class="keyword">reinterpret_cast&lt;</span>UINT_PTR<span class="keyword">&gt;</span>(trace[i]);</div>
 <div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160; </div>
 <div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;      _SYMBOL_INFOW&amp; symbolInfo = *(_SYMBOL_INFOW*)buffer;</div>
-<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;      <a class="code" href="../../d8/d9d/classxii_memory_utils.htm#a81836e063ab5d7ce1d29e5cfc5357f1c">xiiMemoryUtils::ZeroFill</a>(&amp;symbolInfo, 1);</div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;      <a class="code" href="../../d8/d9d/classxii_memory_utils.htm#aa46340f1eaae0121ec1bcb712ea2755f">xiiMemoryUtils::ZeroFill</a>(&amp;symbolInfo, 1);</div>
 <div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;      symbolInfo.SizeOfStruct = <span class="keyword">sizeof</span>(_SYMBOL_INFOW);</div>
 <div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;      symbolInfo.MaxNameLen   = (XII_ARRAY_SIZE(buffer) - symbolInfo.SizeOfStruct) / <span class="keyword">sizeof</span>(WCHAR);</div>
 <div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160; </div>
@@ -402,12 +402,12 @@ $(document).ready(function(){initNavTree('df/ddd/_stack_tracer__win_8h_source.ht
 <div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160; </div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclassxii_memory_utils_htm_a81836e063ab5d7ce1d29e5cfc5357f1c"><div class="ttname"><a href="../../d8/d9d/classxii_memory_utils.htm#a81836e063ab5d7ce1d29e5cfc5357f1c">xiiMemoryUtils::ZeroFill</a></div><div class="ttdeci">static void ZeroFill(T *pDestination, size_t uiCount)</div><div class="ttdoc">Zeros every byte in the provided memory buffer.</div></div>
 <div class="ttc" id="anamespacexii_math_htm_aecb2efabd89887be2341e03ed2701069"><div class="ttname"><a href="../../d1/d37/namespacexii_math.htm#aecb2efabd89887be2341e03ed2701069">xiiMath::e</a></div><div class="ttdeci">constexpr TYPE e()</div><div class="ttdoc">Returns the natural constant e.</div><div class="ttdef"><b>Definition:</b> Constants_inl.h:38</div></div>
 <div class="ttc" id="aclassxii_array_ptr_htm"><div class="ttname"><a href="../../d0/d60/classxii_array_ptr.htm">xiiArrayPtr&lt; void * &gt;</a></div></div>
 <div class="ttc" id="aclassxii_array_ptr_htm_acfb4db6e3a381669be860ce1a5500c6b"><div class="ttname"><a href="../../d0/d60/classxii_array_ptr.htm#acfb4db6e3a381669be860ce1a5500c6b">xiiArrayPtr::GetPtr</a></div><div class="ttdeci">XII_ALWAYS_INLINE PointerType GetPtr() const</div><div class="ttdoc">Returns the pointer to the array.</div><div class="ttdef"><b>Definition:</b> ArrayPtr.h:118</div></div>
 <div class="ttc" id="aclassxii_log_htm_a9312254ec6a5da7419b6e62163192464"><div class="ttname"><a href="../../d4/dc6/classxii_log.htm#a9312254ec6a5da7419b6e62163192464">xiiLog::Error</a></div><div class="ttdeci">static void Error(xiiLogInterface *pInterface, const xiiFormatString &amp;string)</div><div class="ttdoc">An error that needs to be fixed as soon as possible.</div><div class="ttdef"><b>Definition:</b> Log.cpp:362</div></div>
 <div class="ttc" id="anamespacexii_math_htm_a4d6f8bf4858245e40a706a3aabd0a59e"><div class="ttname"><a href="../../d1/d37/namespacexii_math.htm#a4d6f8bf4858245e40a706a3aabd0a59e">xiiMath::Max</a></div><div class="ttdeci">constexpr XII_ALWAYS_INLINE T Max(T f1, T f2)</div><div class="ttdoc">Returns the greater value, f1 or f2.</div><div class="ttdef"><b>Definition:</b> Math_inl.h:59</div></div>
+<div class="ttc" id="aclassxii_memory_utils_htm_aa46340f1eaae0121ec1bcb712ea2755f"><div class="ttname"><a href="../../d8/d9d/classxii_memory_utils.htm#aa46340f1eaae0121ec1bcb712ea2755f">xiiMemoryUtils::ZeroFill</a></div><div class="ttdeci">static void ZeroFill(T *pDestination, size_t uiCount=1)</div><div class="ttdoc">Zeros every byte in the provided memory buffer.</div></div>
 <div class="ttc" id="astructxii_plugin_event_htm"><div class="ttname"><a href="../../d9/dc8/structxii_plugin_event.htm">xiiPluginEvent</a></div><div class="ttdoc">The data that is broadcast whenever a plugin is (un-) loaded.</div><div class="ttdef"><b>Definition:</b> Plugin.h:10</div></div>
 <div class="ttc" id="aclassxii_array_ptr_htm_af1e072a93ee1a583d0db00e821c2d999"><div class="ttname"><a href="../../d0/d60/classxii_array_ptr.htm#af1e072a93ee1a583d0db00e821c2d999">xiiArrayPtr::GetCount</a></div><div class="ttdeci">XII_ALWAYS_INLINE xiiUInt32 GetCount() const</div><div class="ttdoc">Returns the number of elements in the array.</div><div class="ttdef"><b>Definition:</b> ArrayPtr.h:142</div></div>
 <div class="ttc" id="aclassxii_stack_tracer_htm_a0436f8323b5f7ca25deb4f72438a2c0d"><div class="ttname"><a href="../../dd/dbd/classxii_stack_tracer.htm#a0436f8323b5f7ca25deb4f72438a2c0d">xiiStackTracer::GetStackTrace</a></div><div class="ttdeci">static xiiUInt32 GetStackTrace(xiiArrayPtr&lt; void * &gt; &amp;trace, void *pContext=nullptr)</div><div class="ttdoc">Captures the current stack trace.</div><div class="ttdef"><b>Definition:</b> StackTracer_android.h:38</div></div>
@@ -420,7 +420,7 @@ $(document).ready(function(){initNavTree('df/ddd/_stack_tracer__win_8h_source.ht
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.htm">home</a></li><li class="navelem"><a class="el" href="../../dir_1036706e55c22cab35bc1c58ee689f1d.htm">runner</a></li><li class="navelem"><a class="el" href="../../dir_629f8151d55d307162ff2d619fb1783d.htm">work</a></li><li class="navelem"><a class="el" href="../../dir_1ddc44fe1263a8c7935fa6130b7d9499.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_2c1b6808f12952f4c36e05ba7068379a.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_b5a1c4ecfca018ad24b729e213296d41.htm">Source</a></li><li class="navelem"><a class="el" href="../../dir_e321052006a51284e67389ab20037e7c.htm">Engine</a></li><li class="navelem"><a class="el" href="../../dir_be0c42c58b36f42c54ec54024ed4f6af.htm">Foundation</a></li><li class="navelem"><a class="el" href="../../dir_93ea1dc105d79df7757252ae41d4400e.htm">System</a></li><li class="navelem"><a class="el" href="../../dir_f794a5464cdd7c796ca802b0cf288ca7.htm">Implementation</a></li><li class="navelem"><a class="el" href="../../dir_e30f03732e66a59b2c3b7eb9894859b8.htm">Win</a></li><li class="navelem"><b>StackTracer_win.h</b></li>
-    <li class="footer">Generated on Fri Mar 24 2023 17:20:15 for XIIEngine by
+    <li class="footer">Generated on Mon Apr 17 2023 20:10:31 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

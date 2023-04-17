@@ -1,7 +1,7 @@
 var classxii_particle_type_light =
 [
     [ "CreateRequiredStreams", "dc/d8a/classxii_particle_type_light.htm#a0ab7100a122d2f60dd10c15ce6f5cae6", null ],
-    [ "ExtractTypeRenderData", "dc/d8a/classxii_particle_type_light.htm#aa2b29cee204fc9f21e32ed082b14cd56", null ],
+    [ "ExtractTypeRenderData", "dc/d8a/classxii_particle_type_light.htm#a3af1f6956d5884914afc573726c6e9fd", null ],
     [ "GetMaxParticleRadius", "dc/d8a/classxii_particle_type_light.htm#a0d75d2997b63eb49f17f6d6ccddb3a13", null ],
     [ "Process", "dc/d8a/classxii_particle_type_light.htm#a9a1287033a6d3a8382e0ea9afb7480a7", null ],
     [ "m_fIntensity", "dc/d8a/classxii_particle_type_light.htm#a05a69a750a0c0f984936ac61407ae3c9", null ],

@@ -26,7 +26,7 @@ var classxii_document =
     [ "GetDocumentTypeDescriptor", "d8/da9/classxii_document.htm#af0ae3aaf9c250248528968305d1543d4", null ],
     [ "GetDocumentTypeName", "d8/da9/classxii_document.htm#ac513a669cc99a0cfc6f25a191ba20ee6", null ],
     [ "GetEditorInputContextOverride", "d8/da9/classxii_document.htm#a137cc194d43c012510eea10fcc1455fe", null ],
-    [ "GetGuid", "d8/da9/classxii_document.htm#a105896ae0cab9fdba83692acf4f498e0", null ],
+    [ "GetGuid", "d8/da9/classxii_document.htm#a28f3e049f7e507a374643dc892fadc21", null ],
     [ "GetMainDocument", "d8/da9/classxii_document.htm#aae2b890ab391a74ca75dd17535f44765", null ],
     [ "GetMainDocument", "d8/da9/classxii_document.htm#a03dae4a0f093410097147cf277a3caba", null ],
     [ "GetManipulatorSearchStrategy", "d8/da9/classxii_document.htm#a49604b82f55246ad90e9202c2a9d7331", null ],

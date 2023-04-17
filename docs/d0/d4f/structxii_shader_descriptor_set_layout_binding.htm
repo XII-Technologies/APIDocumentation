@@ -100,10 +100,19 @@ $(document).ready(function(){initNavTree('d0/d4f/structxii_shader_descriptor_set
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:aa90a750573c97f3289ddfaa508f22ec5"><td class="memItemLeft" align="right" valign="top"><a id="aa90a750573c97f3289ddfaa508f22ec5"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>ResourceType</b> : xiiUInt8 { <b>ConstantBuffer</b>, 
-<b>ResourceView</b>, 
-<b>UnorderedAccessView</b>, 
-<b>Sampler</b>
+<tr class="memitem:aa90a750573c97f3289ddfaa508f22ec5"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d4f/structxii_shader_descriptor_set_layout_binding.htm#aa90a750573c97f3289ddfaa508f22ec5">ResourceType</a> : xiiUInt8 { <br />
+&#160;&#160;<a class="el" href="../../d0/d4f/structxii_shader_descriptor_set_layout_binding.htm#aa90a750573c97f3289ddfaa508f22ec5ad48760aff7859b3092ab6dc327b6def5">Unknown</a> = 0, 
+<a class="el" href="../../d0/d4f/structxii_shader_descriptor_set_layout_binding.htm#aa90a750573c97f3289ddfaa508f22ec5a69f75efa261633f611405f74e423e33f">ConstantBuffer</a>, 
+<a class="el" href="../../d0/d4f/structxii_shader_descriptor_set_layout_binding.htm#aa90a750573c97f3289ddfaa508f22ec5a7b5b92a515034a7c58906a8d9bf5138e">ResourceViewTexture</a>, 
+<a class="el" href="../../d0/d4f/structxii_shader_descriptor_set_layout_binding.htm#aa90a750573c97f3289ddfaa508f22ec5a2d8e9df3c53555ecad18d676374948db">ResourceViewBuffer</a>, 
+<br />
+&#160;&#160;<a class="el" href="../../d0/d4f/structxii_shader_descriptor_set_layout_binding.htm#aa90a750573c97f3289ddfaa508f22ec5a6eb562c2324b11094a0ab9f75e2068f1">UnorderedAccessViewTexture</a>, 
+<a class="el" href="../../d0/d4f/structxii_shader_descriptor_set_layout_binding.htm#aa90a750573c97f3289ddfaa508f22ec5a3d93da9a452de4a796244cd9349e69ad">UnorderedAccessViewBuffer</a>, 
+<a class="el" href="../../d0/d4f/structxii_shader_descriptor_set_layout_binding.htm#aa90a750573c97f3289ddfaa508f22ec5a3a7666d020970cae00c7f4a060fb3b6c">Sampler</a>, 
+<a class="el" href="../../d0/d4f/structxii_shader_descriptor_set_layout_binding.htm#aa90a750573c97f3289ddfaa508f22ec5a25441735bcb664fa4a4348368f2c89a0">InputAttachment</a>, 
+<br />
+&#160;&#160;<a class="el" href="../../d0/d4f/structxii_shader_descriptor_set_layout_binding.htm#aa90a750573c97f3289ddfaa508f22ec5a285ef5158f3bb0d681f9067171f01078">AccelerationStructure</a>
+<br />
  }</td></tr>
 <tr class="separator:aa90a750573c97f3289ddfaa508f22ec5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -132,7 +141,7 @@ xiiUInt8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 <tr class="memdesc:acb1835205cb41d470248a972a2b5b752"><td class="mdescLeft">&#160;</td><td class="mdescRight">XII shader resource type, needed to find compatible fallback resources. <br /></td></tr>
 <tr class="separator:acb1835205cb41d470248a972a2b5b752"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af42b285bc3d458b6ba3c66d68b1ca184"><td class="memItemLeft" align="right" valign="top"><a id="af42b285bc3d458b6ba3c66d68b1ca184"></a>
-ResourceType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d4f/structxii_shader_descriptor_set_layout_binding.htm#af42b285bc3d458b6ba3c66d68b1ca184">m_Type</a> = ResourceType::ConstantBuffer</td></tr>
+<a class="el" href="../../d0/d4f/structxii_shader_descriptor_set_layout_binding.htm#aa90a750573c97f3289ddfaa508f22ec5">ResourceType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d4f/structxii_shader_descriptor_set_layout_binding.htm#af42b285bc3d458b6ba3c66d68b1ca184">m_Type</a> = ResourceType::Unknown</td></tr>
 <tr class="memdesc:af42b285bc3d458b6ba3c66d68b1ca184"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resource type, used to map to the correct XII resource type. <br /></td></tr>
 <tr class="separator:af42b285bc3d458b6ba3c66d68b1ca184"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab4e544fe74c0a9a44085dac739650cde"><td class="memItemLeft" align="right" valign="top"><a id="ab4e544fe74c0a9a44085dac739650cde"></a>
@@ -147,10 +156,49 @@ xiiUInt32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href=
 xiiUInt32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d4f/structxii_shader_descriptor_set_layout_binding.htm#acf9cf6875e422ca67df56c370634c53a">m_uiWordOffset</a> = 0</td></tr>
 <tr class="memdesc:acf9cf6875e422ca67df56c370634c53a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Offset of the location in the spirv or hlsl code where the binding index is located to allow changing it at runtime. <br /></td></tr>
 <tr class="separator:acf9cf6875e422ca67df56c370634c53a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a070597c112216ae341618fe81844cbab"><td class="memItemLeft" align="right" valign="top"><a id="a070597c112216ae341618fe81844cbab"></a>
+xiiUInt32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d4f/structxii_shader_descriptor_set_layout_binding.htm#a070597c112216ae341618fe81844cbab">m_uiArraySize</a> = 1</td></tr>
+<tr class="memdesc:a070597c112216ae341618fe81844cbab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resource array size. This must be 1 for non-array resources. <br /></td></tr>
+<tr class="separator:a070597c112216ae341618fe81844cbab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Shader Descriptor Layout Binding. </p>
-</div><hr/>The documentation for this struct was generated from the following file:<ul>
+</div><h2 class="groupheader">Member Enumeration Documentation</h2>
+<a id="aa90a750573c97f3289ddfaa508f22ec5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa90a750573c97f3289ddfaa508f22ec5">&#9670;&nbsp;</a></span>ResourceType</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="../../d0/d4f/structxii_shader_descriptor_set_layout_binding.htm#aa90a750573c97f3289ddfaa508f22ec5">xiiShaderDescriptorSetLayoutBinding::ResourceType</a> : xiiUInt8</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="aa90a750573c97f3289ddfaa508f22ec5ad48760aff7859b3092ab6dc327b6def5"></a>Unknown&#160;</td><td class="fielddoc"><p>Unknown resource type. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa90a750573c97f3289ddfaa508f22ec5a69f75efa261633f611405f74e423e33f"></a>ConstantBuffer&#160;</td><td class="fielddoc"><p>Constant (uniform) buffer. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa90a750573c97f3289ddfaa508f22ec5a7b5b92a515034a7c58906a8d9bf5138e"></a>ResourceViewTexture&#160;</td><td class="fielddoc"><p>Shader resource view of a texture. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa90a750573c97f3289ddfaa508f22ec5a2d8e9df3c53555ecad18d676374948db"></a>ResourceViewBuffer&#160;</td><td class="fielddoc"><p>Shader resource view of a buffer. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa90a750573c97f3289ddfaa508f22ec5a6eb562c2324b11094a0ab9f75e2068f1"></a>UnorderedAccessViewTexture&#160;</td><td class="fielddoc"><p>Unordered access view of a texture. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa90a750573c97f3289ddfaa508f22ec5a3d93da9a452de4a796244cd9349e69ad"></a>UnorderedAccessViewBuffer&#160;</td><td class="fielddoc"><p>Unordered access view of a buffer. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa90a750573c97f3289ddfaa508f22ec5a3a7666d020970cae00c7f4a060fb3b6c"></a>Sampler&#160;</td><td class="fielddoc"><p>Sampler (separate sampler). </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa90a750573c97f3289ddfaa508f22ec5a25441735bcb664fa4a4348368f2c89a0"></a>InputAttachment&#160;</td><td class="fielddoc"><p>Input attachment in a render pass. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa90a750573c97f3289ddfaa508f22ec5a285ef5158f3bb0d681f9067171f01078"></a>AccelerationStructure&#160;</td><td class="fielddoc"><p>Acceleration structure. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<hr/>The documentation for this struct was generated from the following file:<ul>
 <li>/home/runner/work/XII/XII/Source/Engine/ShaderCompiler/<a class="el" href="../../dc/d62/_shader_metadata_8h_source.htm">ShaderMetadata.h</a></li>
 </ul>
 </div><!-- contents -->
@@ -159,7 +207,7 @@ xiiUInt32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href=
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d0/d4f/structxii_shader_descriptor_set_layout_binding.htm">xiiShaderDescriptorSetLayoutBinding</a></li>
-    <li class="footer">Generated on Fri Mar 24 2023 17:20:25 for XIIEngine by
+    <li class="footer">Generated on Mon Apr 17 2023 20:10:42 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

@@ -84,7 +84,6 @@ $(document).ready(function(){initNavTree('d8/dbd/classxii_asset_curator.htm','..
 
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="#friends">Friends</a> &#124;
 <a href="../../d2/d9c/classxii_asset_curator-members.htm">List of all members</a>  </div>
@@ -95,9 +94,6 @@ $(document).ready(function(){initNavTree('d8/dbd/classxii_asset_curator.htm','..
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a78bf7935d3aab8bb41768b2500c48a8d"><td class="memItemLeft" align="right" valign="top"><a id="a78bf7935d3aab8bb41768b2500c48a8d"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>InvalidateAssetsWithTransformState</b> (xiiAssetInfo::TransformState state)</td></tr>
-<tr class="separator:a78bf7935d3aab8bb41768b2500c48a8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Setup</div></td></tr>
 <tr class="memitem:a18a4ee5566c6a8ff9bf4fe687d206204"><td class="memItemLeft" align="right" valign="top"><a id="a18a4ee5566c6a8ff9bf4fe687d206204"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dbd/classxii_asset_curator.htm#a18a4ee5566c6a8ff9bf4fe687d206204">StartInitialize</a> (const <a class="el" href="../../d0/d32/classxii_application_file_system_config.htm">xiiApplicationFileSystemConfig</a> &amp;cfg)</td></tr>
@@ -156,6 +152,25 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../.
 <tr class="memitem:ab9a1365d52468f232080bc4b7a8273a2"><td class="memItemLeft" align="right" valign="top"><a id="ab9a1365d52468f232080bc4b7a8273a2"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>NeedsReloadResources</b> (const <a class="el" href="../../dc/d1d/classxii_uuid.htm">xiiUuid</a> &amp;assetGuid)</td></tr>
 <tr class="separator:ab9a1365d52468f232080bc4b7a8273a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78bf7935d3aab8bb41768b2500c48a8d"><td class="memItemLeft" align="right" valign="top"><a id="a78bf7935d3aab8bb41768b2500c48a8d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>InvalidateAssetsWithTransformState</b> (xiiAssetInfo::TransformState state)</td></tr>
+<tr class="separator:a78bf7935d3aab8bb41768b2500c48a8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">Utilities</div></td></tr>
+<tr class="memitem:af8d172af27c47e7f09efdd2276725c3e"><td class="memItemLeft" align="right" valign="top"><a id="af8d172af27c47e7f09efdd2276725c3e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dbd/classxii_asset_curator.htm#af8d172af27c47e7f09efdd2276725c3e">GenerateTransitiveHull</a> (const <a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sAssetOrPath, <a class="el" href="../../d6/d31/classxii_set.htm">xiiSet</a>&lt; <a class="el" href="../../df/dfb/structxii_hybrid_string.htm">xiiString</a> &gt; &amp;inout_deps, bool bIncludeTransformDeps=false, bool bIncludeThumbnailDeps=false, bool bIncludePackageDeps=false) const</td></tr>
+<tr class="memdesc:af8d172af27c47e7f09efdd2276725c3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates one transitive hull for all the dependencies that are enabled. The set will contain dependencies that are reachable via any combination of enabled reference types. <br /></td></tr>
+<tr class="separator:af8d172af27c47e7f09efdd2276725c3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adcc0f37dc76c605da0a1c7aa038f5f91"><td class="memItemLeft" align="right" valign="top"><a id="adcc0f37dc76c605da0a1c7aa038f5f91"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dbd/classxii_asset_curator.htm#adcc0f37dc76c605da0a1c7aa038f5f91">GenerateInverseTransitiveHull</a> (const <a class="el" href="../../d5/dc8/structxii_asset_info.htm">xiiAssetInfo</a> *pAssetInfo, <a class="el" href="../../d6/d31/classxii_set.htm">xiiSet</a>&lt; <a class="el" href="../../dc/d1d/classxii_uuid.htm">xiiUuid</a> &gt; &amp;inout_inverseDeps, bool bIncludeTransformDeps=false, bool bIncludeThumbnailDeps=false) const</td></tr>
+<tr class="memdesc:adcc0f37dc76c605da0a1c7aa038f5f91"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates one inverse transitive hull for all the types dependencies that are enabled. The set will contain inverse dependencies that can reach the given asset (pAssetInfo) via any combination of the enabled reference types. As only assets can have dependencies, the inverse hull is always just asset GUIDs. <br /></td></tr>
+<tr class="separator:adcc0f37dc76c605da0a1c7aa038f5f91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2da7752018934c36de06e3ed9520bd9d"><td class="memItemLeft" align="right" valign="top"><a id="a2da7752018934c36de06e3ed9520bd9d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dbd/classxii_asset_curator.htm#a2da7752018934c36de06e3ed9520bd9d">WriteDependencyDGML</a> (const <a class="el" href="../../dc/d1d/classxii_uuid.htm">xiiUuid</a> &amp;guid, <a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sOutputFile) const</td></tr>
+<tr class="memdesc:a2da7752018934c36de06e3ed9520bd9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates a DGML graph of all transform and thumbnail dependencies. <br /></td></tr>
+<tr class="separator:a2da7752018934c36de06e3ed9520bd9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a4ac71d036ba9e97fd4f2cebd3094af"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dbd/classxii_asset_curator.htm#a8a4ac71d036ba9e97fd4f2cebd3094af">ClearAssetCaches</a> (<a class="el" href="../../d4/da4/classxii_asset_document_manager.htm#a9a375f71a155ef917885c91836cca2e8">xiiAssetDocumentManager::OutputReliability</a> threshold)</td></tr>
+<tr class="memdesc:a8a4ac71d036ba9e97fd4f2cebd3094af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deletes all files in all asset caches, except for the asset outputs that exceed the threshold.  <a href="../../d8/dbd/classxii_asset_curator.htm#a8a4ac71d036ba9e97fd4f2cebd3094af">More...</a><br /></td></tr>
+<tr class="separator:a8a4ac71d036ba9e97fd4f2cebd3094af"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -261,9 +276,6 @@ xiiUInt64&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href=
 xiiUInt64&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dbd/classxii_asset_curator.htm#a999cf3c9312705c3b52e1f258a38fc7e">GetAssetReferenceHash</a> (<a class="el" href="../../dc/d1d/classxii_uuid.htm">xiiUuid</a> assetGuid)</td></tr>
 <tr class="memdesc:a999cf3c9312705c3b52e1f258a38fc7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the combined hash for the asset and its references. Returns 0 if anything went wrong. <br /></td></tr>
 <tr class="separator:a999cf3c9312705c3b52e1f258a38fc7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2b99ee728ba552af324dd25baee78cf5"><td class="memItemLeft" align="right" valign="top"><a id="a2b99ee728ba552af324dd25baee78cf5"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>GenerateTransitiveHull</b> (const <a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sAssetOrPath, <a class="el" href="../../d6/d31/classxii_set.htm">xiiSet</a>&lt; <a class="el" href="../../df/dfb/structxii_hybrid_string.htm">xiiString</a> &gt; *pDependencies, <a class="el" href="../../d6/d31/classxii_set.htm">xiiSet</a>&lt; <a class="el" href="../../df/dfb/structxii_hybrid_string.htm">xiiString</a> &gt; *pReferences)</td></tr>
-<tr class="separator:a2b99ee728ba552af324dd25baee78cf5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1382f7b86411b2397e221dcdaf37e4c2"><td class="memItemLeft" align="right" valign="top"><a id="a1382f7b86411b2397e221dcdaf37e4c2"></a>
 xiiAssetInfo::TransformState&#160;</td><td class="memItemRight" valign="bottom"><b>IsAssetUpToDate</b> (const <a class="el" href="../../dc/d1d/classxii_uuid.htm">xiiUuid</a> &amp;assetGuid, const <a class="el" href="../../d6/db6/classxii_platform_profile.htm">xiiPlatformProfile</a> *pAssetProfile, const <a class="el" href="../../de/d67/structxii_asset_document_type_descriptor.htm">xiiAssetDocumentTypeDescriptor</a> *pTypeDescriptor, xiiUInt64 &amp;out_uiAssetHash, xiiUInt64 &amp;out_uiThumbHash, bool bForce=false)</td></tr>
 <tr class="separator:a1382f7b86411b2397e221dcdaf37e4c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -287,6 +299,27 @@ const <a class="el" href="../../d6/d31/classxii_set.htm">xiiSet</a>&lt; <a class
 <tr class="separator:a5aa4edf6a62b41c40ffdb31e522c443e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a8a4ac71d036ba9e97fd4f2cebd3094af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8a4ac71d036ba9e97fd4f2cebd3094af">&#9670;&nbsp;</a></span>ClearAssetCaches()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void xiiAssetCurator::ClearAssetCaches </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d4/da4/classxii_asset_document_manager.htm#a9a375f71a155ef917885c91836cca2e8">xiiAssetDocumentManager::OutputReliability</a>&#160;</td>
+          <td class="paramname"><em>threshold</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Deletes all files in all asset caches, except for the asset outputs that exceed the threshold. </p>
+<p>-&gt; OutputReliability::Perfect -&gt; deletes everything -&gt; OutputReliability::Good -&gt; keeps the 'Perfect' files -&gt; OutputReliability::Unknown -&gt; keeps the 'Good' and 'Perfect' files </p>
+
+</div>
+</div>
 <a id="a0804833f709cc43ec4a6dce395b83f3f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0804833f709cc43ec4a6dce395b83f3f">&#9670;&nbsp;</a></span>DeleteAssetProfile()</h2>
 
@@ -483,7 +516,7 @@ const <a class="el" href="../../d6/d31/classxii_set.htm">xiiSet</a>&lt; <a class
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d8/dbd/classxii_asset_curator.htm">xiiAssetCurator</a></li>
-    <li class="footer">Generated on Fri Mar 24 2023 17:20:19 for XIIEngine by
+    <li class="footer">Generated on Mon Apr 17 2023 20:10:36 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

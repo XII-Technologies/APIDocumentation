@@ -1,7 +1,7 @@
 var classxii_particle_type =
 [
     [ "xiiParticleType", "dd/d04/classxii_particle_type.htm#a8376e8ffc75659f802460e865aa2c563", null ],
-    [ "ExtractTypeRenderData", "dd/d04/classxii_particle_type.htm#a775c8de45f072656d5fd893939cb7207", null ],
+    [ "ExtractTypeRenderData", "dd/d04/classxii_particle_type.htm#a3eee1c08c6b25e0016c80c18642b92f8", null ],
     [ "GetMaxParticleRadius", "dd/d04/classxii_particle_type.htm#a9322ef06e19ad16008142c69771e6f62", null ],
     [ "InitializeElements", "dd/d04/classxii_particle_type.htm#a655a77f67b4fe0b133c16b53d1b95e13", null ],
     [ "StepParticleSystem", "dd/d04/classxii_particle_type.htm#a0fe91455863efa667d73c0fabea95cdf", null ],

@@ -7,6 +7,7 @@ var classxii_selection_context =
       [ "MarqueeRemove", "d0/dc6/classxii_selection_context.htm#a90cc71726d60fd5cc2224bf03604cb1aa3657d9124b8d3ad43be5345b69cd74af", null ]
     ] ],
     [ "xiiSelectionContext", "d0/dc6/classxii_selection_context.htm#a95ffcb1cdbf4b253696ba2379fedc06e", null ],
+    [ "~xiiSelectionContext", "d0/dc6/classxii_selection_context.htm#a6b7fb934af9ec7ed8da677c1acabe278", null ],
     [ "determineObjectToSelect", "d0/dc6/classxii_selection_context.htm#aeaa1e7bc6dc1099a918f7d2061f4115e", null ],
     [ "DoFocusLost", "d0/dc6/classxii_selection_context.htm#adaa9bfb42da1a88e75e62282a9ad49ff", null ],
     [ "DoKeyPressEvent", "d0/dc6/classxii_selection_context.htm#a47cbe01e6254b85413ae57cfaa2a691d", null ],

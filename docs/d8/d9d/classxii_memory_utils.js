@@ -45,7 +45,7 @@ var classxii_memory_utils =
     [ "MoveConstruct", "d8/d9d/classxii_memory_utils.htm#a8959ea95ba3d3da19ee0966eecd79924", null ],
     [ "MoveConstruct", "d8/d9d/classxii_memory_utils.htm#a8f8cce0975231e29cfefebb94edb5630", null ],
     [ "PatternFill", "d8/d9d/classxii_memory_utils.htm#af1fe876de1c98abeb73de8df144656c0", null ],
-    [ "PatternFill", "d8/d9d/classxii_memory_utils.htm#a4409974271d04a9ef5fd19f229eb7b28", null ],
+    [ "PatternFillArray", "d8/d9d/classxii_memory_utils.htm#a5571a89ba82040a6d6490321eb02042b", null ],
     [ "Prepend", "d8/d9d/classxii_memory_utils.htm#a0ab85a3f68a743115c60d6fafcee4102", null ],
     [ "Prepend", "d8/d9d/classxii_memory_utils.htm#ab1abee92813e5af50bfbb1ce058e8c85", null ],
     [ "Prepend", "d8/d9d/classxii_memory_utils.htm#a884a31d8de6844c621d2eec029870a71", null ],
@@ -67,5 +67,5 @@ var classxii_memory_utils =
     [ "RelocateOverlapped", "d8/d9d/classxii_memory_utils.htm#ae5291ed2eb0f594460d3b7560f538127", null ],
     [ "RelocateOverlapped", "d8/d9d/classxii_memory_utils.htm#ac105aa764881cb3c7a1cfdb026f232dd", null ],
     [ "ZeroFill", "d8/d9d/classxii_memory_utils.htm#a3dc304f5c13bf004717d121b62b9b329", null ],
-    [ "ZeroFill", "d8/d9d/classxii_memory_utils.htm#abbdfa10ae3bacdac4b8253d8e9b7b439", null ]
+    [ "ZeroFillArray", "d8/d9d/classxii_memory_utils.htm#a68f58542c7a40cf036a78d45711b333b", null ]
 ];

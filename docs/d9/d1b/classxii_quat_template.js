@@ -8,6 +8,7 @@ var classxii_quat_template =
     [ "GetAsMat3", "d9/d1b/classxii_quat_template.htm#aa6d32f6602a305f9bb2b80d578db647f", null ],
     [ "GetAsMat4", "d9/d1b/classxii_quat_template.htm#ae4acab9c811fa6a9f02c2312599526fc", null ],
     [ "GetRotationAxisAndAngle", "d9/d1b/classxii_quat_template.htm#a71507ed8bee68fa44b0ff5ba2021f64e", null ],
+    [ "Invert", "d9/d1b/classxii_quat_template.htm#a1ccee339c17216c8ed01970c2c4bfea2", null ],
     [ "IsEqualRotation", "d9/d1b/classxii_quat_template.htm#a09a33fa5dcfe6cfaab85362445b27898", null ],
     [ "IsNaN", "d9/d1b/classxii_quat_template.htm#acac88d8e4caf8ddb378b3c8afcc1efce", null ],
     [ "IsValid", "d9/d1b/classxii_quat_template.htm#ae8d1ef81f529aa01674735ee3095d2a0", null ],

@@ -114,8 +114,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a8d48082c2d55c5cdc917d4ca99366edc"><td class="memItemLeft" align="right" valign="top"><a id="a8d48082c2d55c5cdc917d4ca99366edc"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetWindowConfig</b> (const <a class="el" href="../../d1/d0d/classxii_vec2_template.htm">xiiVec2I32</a> &amp;viewport)</td></tr>
 <tr class="separator:a8d48082c2d55c5cdc917d4ca99366edc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af3af7f50ed3a16abf94058b0f5460e01"><td class="memItemLeft" align="right" valign="top"><a id="af3af7f50ed3a16abf94058b0f5460e01"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SetPickObjectOverride</b> (<a class="el" href="../../dc/d84/structxii_delegate.htm">xiiDelegate</a>&lt; void(const <a class="el" href="../../da/dd8/classxii_document_object.htm">xiiDocumentObject</a> *)&gt; pickOverride)</td></tr>
+<tr class="memitem:af3af7f50ed3a16abf94058b0f5460e01"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dc6/classxii_selection_context.htm#af3af7f50ed3a16abf94058b0f5460e01">SetPickObjectOverride</a> (<a class="el" href="../../dc/d84/structxii_delegate.htm">xiiDelegate</a>&lt; void(const <a class="el" href="../../da/dd8/classxii_document_object.htm">xiiDocumentObject</a> *)&gt; pickOverride)</td></tr>
+<tr class="memdesc:af3af7f50ed3a16abf94058b0f5460e01"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a delegate that gets called whenever an object is picked, as long as the override is active.  <a href="../../d0/dc6/classxii_selection_context.htm#af3af7f50ed3a16abf94058b0f5460e01">More...</a><br /></td></tr>
 <tr class="separator:af3af7f50ed3a16abf94058b0f5460e01"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a798f82d0a06cd2ad1a80ed1f7a3b505b"><td class="memItemLeft" align="right" valign="top"><a id="a798f82d0a06cd2ad1a80ed1f7a3b505b"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>ResetPickObjectOverride</b> ()</td></tr>
@@ -322,6 +322,27 @@ static const <a class="el" href="../../db/d89/classxii_r_t_t_i.htm">xiiRTTI</a> 
 
 </div>
 </div>
+<a id="af3af7f50ed3a16abf94058b0f5460e01"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af3af7f50ed3a16abf94058b0f5460e01">&#9670;&nbsp;</a></span>SetPickObjectOverride()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void xiiSelectionContext::SetPickObjectOverride </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/structxii_delegate.htm">xiiDelegate</a>&lt; void(const <a class="el" href="../../da/dd8/classxii_document_object.htm">xiiDocumentObject</a> *)&gt;&#160;</td>
+          <td class="paramname"><em>pickOverride</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Adds a delegate that gets called whenever an object is picked, as long as the override is active. </p>
+<p>It also changes the owner view's cursor to a cross-hair. If something gets picked, the override is called with a non-null object. In case the user presses ESC or the view gets destroyed while the override is active, the delegate is called with nullptr. This indicates that all picking should be stopped and the registered user should clean up. </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>/home/runner/work/XII/XII/Source/Editor/EditorFramework/InputContexts/<a class="el" href="../../d8/d6b/_selection_context_8h_source.htm">SelectionContext.h</a></li>
 <li>/home/runner/work/XII/XII/Source/Editor/EditorFramework/InputContexts/Implementation/SelectionContext.cpp</li>
@@ -332,7 +353,7 @@ static const <a class="el" href="../../db/d89/classxii_r_t_t_i.htm">xiiRTTI</a> 
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d0/dc6/classxii_selection_context.htm">xiiSelectionContext</a></li>
-    <li class="footer">Generated on Fri Mar 24 2023 17:20:25 for XIIEngine by
+    <li class="footer">Generated on Mon Apr 17 2023 20:10:42 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

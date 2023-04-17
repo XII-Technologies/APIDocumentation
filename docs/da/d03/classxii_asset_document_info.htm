@@ -121,9 +121,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>ClearMetaData</b> ()<
 <tr class="memitem:a85b6e7643f516a0f660dac428feb1631"><td class="memItemLeft" align="right" valign="top"><a id="a85b6e7643f516a0f660dac428feb1631"></a>
 const char *&#160;</td><td class="memItemRight" valign="bottom"><b>GetAssetsDocumentTypeName</b> () const</td></tr>
 <tr class="separator:a85b6e7643f516a0f660dac428feb1631"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a115ef1f2c225486cab7a079bd4730559"><td class="memItemLeft" align="right" valign="top"><a id="a115ef1f2c225486cab7a079bd4730559"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SetAssetsDocumentTypeName</b> (const char *sz)</td></tr>
-<tr class="separator:a115ef1f2c225486cab7a079bd4730559"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2518bd3b7e9587c81be92924e89d210a"><td class="memItemLeft" align="right" valign="top"><a id="a2518bd3b7e9587c81be92924e89d210a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetAssetsDocumentTypeName</b> (const char *szSz)</td></tr>
+<tr class="separator:a2518bd3b7e9587c81be92924e89d210a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9a2bd9d030a83dc385eb88bf57c8ca3d"><td class="memItemLeft" align="right" valign="top"><a id="a9a2bd9d030a83dc385eb88bf57c8ca3d"></a>
 const <a class="el" href="../../dc/d71/classxii_reflected_class.htm">xiiReflectedClass</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d03/classxii_asset_document_info.htm#a9a2bd9d030a83dc385eb88bf57c8ca3d">GetMetaInfo</a> (const <a class="el" href="../../db/d89/classxii_r_t_t_i.htm">xiiRTTI</a> *pType) const</td></tr>
 <tr class="memdesc:a9a2bd9d030a83dc385eb88bf57c8ca3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an object from m_MetaInfo of the given base type, or nullptr if none exists. <br /></td></tr>
@@ -149,14 +149,22 @@ template&lt;typename T &gt; </td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a3f74d6bf00beb2caff9d0b147ebfcbf4"><td class="memItemLeft" align="right" valign="top">xiiUInt64&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d03/classxii_asset_document_info.htm#a3f74d6bf00beb2caff9d0b147ebfcbf4">m_uiSettingsHash</a></td></tr>
+<tr class="memitem:a3f74d6bf00beb2caff9d0b147ebfcbf4"><td class="memItemLeft" align="right" valign="top"><a id="a3f74d6bf00beb2caff9d0b147ebfcbf4"></a>
+xiiUInt64&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d03/classxii_asset_document_info.htm#a3f74d6bf00beb2caff9d0b147ebfcbf4">m_uiSettingsHash</a></td></tr>
+<tr class="memdesc:a3f74d6bf00beb2caff9d0b147ebfcbf4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Current hash over all settings in the document, used to check resulting resource for being up-to-date in combination with dependency hashes. <br /></td></tr>
 <tr class="separator:a3f74d6bf00beb2caff9d0b147ebfcbf4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0db25b30ca4d546e1c6fd5acd8581b0d"><td class="memItemLeft" align="right" valign="top"><a id="a0db25b30ca4d546e1c6fd5acd8581b0d"></a>
-<a class="el" href="../../d6/d31/classxii_set.htm">xiiSet</a>&lt; <a class="el" href="../../df/dfb/structxii_hybrid_string.htm">xiiString</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d03/classxii_asset_document_info.htm#a0db25b30ca4d546e1c6fd5acd8581b0d">m_AssetTransformDependencies</a></td></tr>
-<tr class="memdesc:a0db25b30ca4d546e1c6fd5acd8581b0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Files that are required to generate the asset, ie. if one changes, the asset needs to be recreated. <br /></td></tr>
-<tr class="separator:a0db25b30ca4d546e1c6fd5acd8581b0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a73ea33b5d1551ba5818aac6adc57ddc5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d6/d31/classxii_set.htm">xiiSet</a>&lt; <a class="el" href="../../df/dfb/structxii_hybrid_string.htm">xiiString</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d03/classxii_asset_document_info.htm#a73ea33b5d1551ba5818aac6adc57ddc5">m_RuntimeDependencies</a></td></tr>
-<tr class="separator:a73ea33b5d1551ba5818aac6adc57ddc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac49987e319505234451fd66e69782eb9"><td class="memItemLeft" align="right" valign="top"><a id="ac49987e319505234451fd66e69782eb9"></a>
+<a class="el" href="../../d6/d31/classxii_set.htm">xiiSet</a>&lt; <a class="el" href="../../df/dfb/structxii_hybrid_string.htm">xiiString</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d03/classxii_asset_document_info.htm#ac49987e319505234451fd66e69782eb9">m_TransformDependencies</a></td></tr>
+<tr class="memdesc:ac49987e319505234451fd66e69782eb9"><td class="mdescLeft">&#160;</td><td class="mdescRight">[Data dir relative path or GUID] Files that are required to generate the asset, ie. if one changes, the asset needs to be recreated <br /></td></tr>
+<tr class="separator:ac49987e319505234451fd66e69782eb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a541160b6be26a27bc1435156f1863d0d"><td class="memItemLeft" align="right" valign="top"><a id="a541160b6be26a27bc1435156f1863d0d"></a>
+<a class="el" href="../../d6/d31/classxii_set.htm">xiiSet</a>&lt; <a class="el" href="../../df/dfb/structxii_hybrid_string.htm">xiiString</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d03/classxii_asset_document_info.htm#a541160b6be26a27bc1435156f1863d0d">m_ThumbnailDependencies</a></td></tr>
+<tr class="memdesc:a541160b6be26a27bc1435156f1863d0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">[Data dir relative path or GUID] Files that are used to generate the thumbnail. <br /></td></tr>
+<tr class="separator:a541160b6be26a27bc1435156f1863d0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc885c5dbe7a599593fc4859f30f0e54"><td class="memItemLeft" align="right" valign="top"><a id="afc885c5dbe7a599593fc4859f30f0e54"></a>
+<a class="el" href="../../d6/d31/classxii_set.htm">xiiSet</a>&lt; <a class="el" href="../../df/dfb/structxii_hybrid_string.htm">xiiString</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d03/classxii_asset_document_info.htm#afc885c5dbe7a599593fc4859f30f0e54">m_PackageDependencies</a></td></tr>
+<tr class="memdesc:afc885c5dbe7a599593fc4859f30f0e54"><td class="mdescLeft">&#160;</td><td class="mdescRight">[Data dir relative path or GUID] Files that are needed at runtime and should be packaged with the game. <br /></td></tr>
+<tr class="separator:afc885c5dbe7a599593fc4859f30f0e54"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6acd50b514061641fcc951ba70bf5eda"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d6/d31/classxii_set.htm">xiiSet</a>&lt; <a class="el" href="../../df/dfb/structxii_hybrid_string.htm">xiiString</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d03/classxii_asset_document_info.htm#a6acd50b514061641fcc951ba70bf5eda">m_Outputs</a></td></tr>
 <tr class="separator:a6acd50b514061641fcc951ba70bf5eda"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a874a8dc2949994961b4a1ea8069368e3"><td class="memItemLeft" align="right" valign="top"><a id="a874a8dc2949994961b4a1ea8069368e3"></a>
@@ -207,36 +215,6 @@ static const <a class="el" href="../../db/d89/classxii_r_t_t_i.htm">xiiRTTI</a> 
 
 </div>
 </div>
-<a id="a73ea33b5d1551ba5818aac6adc57ddc5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a73ea33b5d1551ba5818aac6adc57ddc5">&#9670;&nbsp;</a></span>m_RuntimeDependencies</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="../../d6/d31/classxii_set.htm">xiiSet</a>&lt;<a class="el" href="../../df/dfb/structxii_hybrid_string.htm">xiiString</a>&gt; xiiAssetDocumentInfo::m_RuntimeDependencies</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Other files that are used at runtime together with this asset, e.g. materials for a mesh, needed for thumbnails and packaging. </p>
-
-</div>
-</div>
-<a id="a3f74d6bf00beb2caff9d0b147ebfcbf4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3f74d6bf00beb2caff9d0b147ebfcbf4">&#9670;&nbsp;</a></span>m_uiSettingsHash</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">xiiUInt64 xiiAssetDocumentInfo::m_uiSettingsHash</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Current hash over all settings in the document, used to check resulting resource for being up-to-date in combination with dependency hashes. </p>
-
-</div>
-</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>/home/runner/work/XII/XII/Source/Editor/EditorFramework/Assets/<a class="el" href="../../d6/d73/_asset_document_info_8h_source.htm">AssetDocumentInfo.h</a></li>
 <li>/home/runner/work/XII/XII/Source/Editor/EditorFramework/Assets/Implementation/AssetDocumentInfo.cpp</li>
@@ -247,7 +225,7 @@ static const <a class="el" href="../../db/d89/classxii_r_t_t_i.htm">xiiRTTI</a> 
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../da/d03/classxii_asset_document_info.htm">xiiAssetDocumentInfo</a></li>
-    <li class="footer">Generated on Fri Mar 24 2023 17:20:19 for XIIEngine by
+    <li class="footer">Generated on Mon Apr 17 2023 20:10:36 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

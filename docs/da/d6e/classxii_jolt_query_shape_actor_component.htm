@@ -112,13 +112,13 @@ Inheritance diagram for xiiJoltQueryShapeActorComponent:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a55ae7dfb0bb098e43c932c8ab507ca3e"><td class="memItemLeft" align="right" valign="top"><a id="a55ae7dfb0bb098e43c932c8ab507ca3e"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d6e/classxii_jolt_query_shape_actor_component.htm#a55ae7dfb0bb098e43c932c8ab507ca3e">SerializeComponent</a> (<a class="el" href="../../de/d8c/classxii_world_writer.htm">xiiWorldWriter</a> &amp;stream) const override</td></tr>
-<tr class="memdesc:a55ae7dfb0bb098e43c932c8ab507ca3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Override this to save the current state of the component to the given stream. <br /></td></tr>
-<tr class="separator:a55ae7dfb0bb098e43c932c8ab507ca3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a96114109b958406a8b92173f8ff237ff"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d6e/classxii_jolt_query_shape_actor_component.htm#a96114109b958406a8b92173f8ff237ff">DeserializeComponent</a> (<a class="el" href="../../df/df8/classxii_world_reader.htm">xiiWorldReader</a> &amp;stream) override</td></tr>
-<tr class="memdesc:a96114109b958406a8b92173f8ff237ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Override this to load the current state of the component from the given stream.  <a href="../../da/d6e/classxii_jolt_query_shape_actor_component.htm#a96114109b958406a8b92173f8ff237ff">More...</a><br /></td></tr>
-<tr class="separator:a96114109b958406a8b92173f8ff237ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8f0f3d75a0b87cf60ca2c6fc77bf256"><td class="memItemLeft" align="right" valign="top"><a id="ad8f0f3d75a0b87cf60ca2c6fc77bf256"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d6e/classxii_jolt_query_shape_actor_component.htm#ad8f0f3d75a0b87cf60ca2c6fc77bf256">SerializeComponent</a> (<a class="el" href="../../de/d8c/classxii_world_writer.htm">xiiWorldWriter</a> &amp;inout_stream) const override</td></tr>
+<tr class="memdesc:ad8f0f3d75a0b87cf60ca2c6fc77bf256"><td class="mdescLeft">&#160;</td><td class="mdescRight">Override this to save the current state of the component to the given stream. <br /></td></tr>
+<tr class="separator:ad8f0f3d75a0b87cf60ca2c6fc77bf256"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76557f41408825834d2132bc0221f2ae"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d6e/classxii_jolt_query_shape_actor_component.htm#a76557f41408825834d2132bc0221f2ae">DeserializeComponent</a> (<a class="el" href="../../df/df8/classxii_world_reader.htm">xiiWorldReader</a> &amp;inout_stream) override</td></tr>
+<tr class="memdesc:a76557f41408825834d2132bc0221f2ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Override this to load the current state of the component from the given stream.  <a href="../../da/d6e/classxii_jolt_query_shape_actor_component.htm#a76557f41408825834d2132bc0221f2ae">More...</a><br /></td></tr>
+<tr class="separator:a76557f41408825834d2132bc0221f2ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac2da5f7e2d17decd787b493b5e039801"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d6e/classxii_jolt_query_shape_actor_component.htm#ac2da5f7e2d17decd787b493b5e039801">OnSimulationStarted</a> () override</td></tr>
 <tr class="memdesc:ac2da5f7e2d17decd787b493b5e039801"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method is called once for active components, at the start of the next world update, but only when the world is simulated.  <a href="../../da/d6e/classxii_jolt_query_shape_actor_component.htm#ac2da5f7e2d17decd787b493b5e039801">More...</a><br /></td></tr>
 <tr class="separator:ac2da5f7e2d17decd787b493b5e039801"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -330,8 +330,8 @@ const <a class="el" href="../../db/d89/classxii_r_t_t_i.htm">xiiRTTI</a> *&#160;
 <div class="textblock"><p>A physics actor that can be moved procedurally (like a kinematic actor) but that doesn't affect rigid bodies. </p>
 <p>It passes right through dynamic actors. However, you can detect it via raycasts or shape casts. This is useful to represent detail shapes (like the collision shapes of animated meshes) that should be pickable, but that shouldn't interact with the world otherwise. They are more lightweight at runtime than full kinematic dynamic actors. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a96114109b958406a8b92173f8ff237ff"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a96114109b958406a8b92173f8ff237ff">&#9670;&nbsp;</a></span>DeserializeComponent()</h2>
+<a id="a76557f41408825834d2132bc0221f2ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a76557f41408825834d2132bc0221f2ae">&#9670;&nbsp;</a></span>DeserializeComponent()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -357,7 +357,7 @@ const <a class="el" href="../../db/d89/classxii_r_t_t_i.htm">xiiRTTI</a> *&#160;
 <p>Override this to load the current state of the component from the given stream. </p>
 <p>The active state will be automatically serialized. The 'initialized' state is not serialized, all components will be initialized after creation, even if they were already in an initialized state when they were serialized. </p>
 
-<p>Reimplemented from <a class="el" href="../../d4/d9f/classxii_jolt_actor_component.htm#aecfc6c1ebe692562f8d27db74e40632d">xiiJoltActorComponent</a>.</p>
+<p>Reimplemented from <a class="el" href="../../d4/d9f/classxii_jolt_actor_component.htm#a24ca17786f72747883c54a921711beb5">xiiJoltActorComponent</a>.</p>
 
 </div>
 </div>
@@ -435,7 +435,7 @@ const <a class="el" href="../../db/d89/classxii_r_t_t_i.htm">xiiRTTI</a> *&#160;
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../da/d6e/classxii_jolt_query_shape_actor_component.htm">xiiJoltQueryShapeActorComponent</a></li>
-    <li class="footer">Generated on Fri Mar 24 2023 17:20:22 for XIIEngine by
+    <li class="footer">Generated on Mon Apr 17 2023 20:10:38 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

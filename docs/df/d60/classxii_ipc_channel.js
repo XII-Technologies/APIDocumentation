@@ -26,7 +26,7 @@ var classxii_ipc_channel =
     [ "WaitForMessages", "df/d60/classxii_ipc_channel.htm#a502ad93e3ef73897c7f59825ccd66890", null ],
     [ "xiiMessageLoop", "df/d60/classxii_ipc_channel.htm#a7351873dd862738143801d47878d2fb5", null ],
     [ "m_bConnected", "df/d60/classxii_ipc_channel.htm#a282a99461c2e9a80445487366a26e757", null ],
-    [ "m_Events", "df/d60/classxii_ipc_channel.htm#a7f53251ac39b80d8e938881ff91bdbad", null ],
+    [ "m_Events", "df/d60/classxii_ipc_channel.htm#a8f6f2e3a9adaa6da4447fafc15b1e705", null ],
     [ "m_IncomingMessages", "df/d60/classxii_ipc_channel.htm#a401d636ed0adce16b6dc18116ad20baa", null ],
     [ "m_IncomingQueue", "df/d60/classxii_ipc_channel.htm#adb1ec4b704dd76976e957a8cf8c48ca6", null ],
     [ "m_IncomingQueueMutex", "df/d60/classxii_ipc_channel.htm#aa47b984baa478c8d67d88003bd02daf6", null ],

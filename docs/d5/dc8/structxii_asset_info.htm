@@ -103,10 +103,11 @@ Public Types</h2></td></tr>
 <br />
 &#160;&#160;<b>NeedsThumbnail</b>, 
 <b>TransformError</b>, 
-<b>MissingDependency</b>, 
-<b>MissingReference</b>, 
+<b>MissingTransformDependency</b>, 
+<b>MissingThumbnailDependency</b>, 
 <br />
-&#160;&#160;<b>COUNT</b>
+&#160;&#160;<b>CircularDependency</b>, 
+<b>COUNT</b>
 <br />
  }</td></tr>
 <tr class="separator:a4e968c73359618df66df1ead5113e39f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -158,12 +159,15 @@ const <a class="el" href="../../de/d67/structxii_asset_document_type_descriptor.
 <tr class="memitem:adb43ce358351dd0479907e572a2f202c"><td class="memItemLeft" align="right" valign="top"><a id="adb43ce358351dd0479907e572a2f202c"></a>
 <a class="el" href="../../d9/d4a/classxii_unique_ptr.htm">xiiUniquePtr</a>&lt; <a class="el" href="../../da/d03/classxii_asset_document_info.htm">xiiAssetDocumentInfo</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_Info</b></td></tr>
 <tr class="separator:adb43ce358351dd0479907e572a2f202c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad7241b6adf83f195f86da2e8b7bedc7b"><td class="memItemLeft" align="right" valign="top"><a id="ad7241b6adf83f195f86da2e8b7bedc7b"></a>
-<a class="el" href="../../d6/d31/classxii_set.htm">xiiSet</a>&lt; <a class="el" href="../../df/dfb/structxii_hybrid_string.htm">xiiString</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_MissingDependencies</b></td></tr>
-<tr class="separator:ad7241b6adf83f195f86da2e8b7bedc7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aef244e12d95f06e5f4da73b99472d0f6"><td class="memItemLeft" align="right" valign="top"><a id="aef244e12d95f06e5f4da73b99472d0f6"></a>
-<a class="el" href="../../d6/d31/classxii_set.htm">xiiSet</a>&lt; <a class="el" href="../../df/dfb/structxii_hybrid_string.htm">xiiString</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_MissingReferences</b></td></tr>
-<tr class="separator:aef244e12d95f06e5f4da73b99472d0f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86a9a8fb2b3e9c6c5bd2e9a9829cf2bb"><td class="memItemLeft" align="right" valign="top"><a id="a86a9a8fb2b3e9c6c5bd2e9a9829cf2bb"></a>
+<a class="el" href="../../d6/d31/classxii_set.htm">xiiSet</a>&lt; <a class="el" href="../../df/dfb/structxii_hybrid_string.htm">xiiString</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_MissingTransformDeps</b></td></tr>
+<tr class="separator:a86a9a8fb2b3e9c6c5bd2e9a9829cf2bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f960b9a976cb03767c2a5e518817877"><td class="memItemLeft" align="right" valign="top"><a id="a4f960b9a976cb03767c2a5e518817877"></a>
+<a class="el" href="../../d6/d31/classxii_set.htm">xiiSet</a>&lt; <a class="el" href="../../df/dfb/structxii_hybrid_string.htm">xiiString</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_MissingThumbnailDeps</b></td></tr>
+<tr class="separator:a4f960b9a976cb03767c2a5e518817877"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70d9f4f871bfabfcbf12c67f5c18fca0"><td class="memItemLeft" align="right" valign="top"><a id="a70d9f4f871bfabfcbf12c67f5c18fca0"></a>
+<a class="el" href="../../d6/d31/classxii_set.htm">xiiSet</a>&lt; <a class="el" href="../../df/dfb/structxii_hybrid_string.htm">xiiString</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_CircularDependencies</b></td></tr>
+<tr class="separator:a70d9f4f871bfabfcbf12c67f5c18fca0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a921e44504423815c085ab6210bf9aa5f"><td class="memItemLeft" align="right" valign="top"><a id="a921e44504423815c085ab6210bf9aa5f"></a>
 <a class="el" href="../../d6/d31/classxii_set.htm">xiiSet</a>&lt; <a class="el" href="../../dc/d1d/classxii_uuid.htm">xiiUuid</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dc8/structxii_asset_info.htm#a921e44504423815c085ab6210bf9aa5f">m_SubAssets</a></td></tr>
 <tr class="memdesc:a921e44504423815c085ab6210bf9aa5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Main asset uses the same GUID as this (see m_Info), but is NOT stored in m_SubAssets. <br /></td></tr>
@@ -179,7 +183,7 @@ const <a class="el" href="../../de/d67/structxii_asset_document_type_descriptor.
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d5/dc8/structxii_asset_info.htm">xiiAssetInfo</a></li>
-    <li class="footer">Generated on Fri Mar 24 2023 17:20:19 for XIIEngine by
+    <li class="footer">Generated on Mon Apr 17 2023 20:10:36 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

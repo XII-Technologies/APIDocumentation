@@ -14,7 +14,6 @@ var classxii_drag_to_position_gizmo =
     [ "OnVisibleChanged", "dd/d9f/classxii_drag_to_position_gizmo.htm#a6902e3d8b5c15dade32ae5b6b057e996", null ],
     [ "UpdateStatusBarText", "dd/d9f/classxii_drag_to_position_gizmo.htm#aeeccb88a110be5de19973e1fa3cb3d14", null ],
     [ "m_bModifiesRotation", "dd/d9f/classxii_drag_to_position_gizmo.htm#aa6b561d12bf3b265961f199f826522a2", null ],
-    [ "m_bUseExperimentalGizmo", "dd/d9f/classxii_drag_to_position_gizmo.htm#a12b708e3063cc757aead6ec7ed2f68c8", null ],
     [ "m_hAlignNX", "dd/d9f/classxii_drag_to_position_gizmo.htm#a9e5e0fd00542eb6c3259d1e55208c5bb", null ],
     [ "m_hAlignNY", "dd/d9f/classxii_drag_to_position_gizmo.htm#a285cc95c8d32491940b510b9d7d5b41c", null ],
     [ "m_hAlignNZ", "dd/d9f/classxii_drag_to_position_gizmo.htm#ab6856b96ea68bf1f8f9f4516d9d283b0", null ],

@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['status_20713',['Status',['../da/d4e/structxii_file_status.htm#ae66743b14baf93afda46575d5ab745f5',1,'xiiFileStatus']]],
-  ['stepresult_20714',['StepResult',['../d0/dd5/classxii_world_reader_1_1_instantiation_context_base.htm#aaf1ed87cc370d712fdcdf90dcd00a23d',1,'xiiWorldReader::InstantiationContextBase']]]
+  ['resourcetype_20943',['ResourceType',['../d0/d4f/structxii_shader_descriptor_set_layout_binding.htm#aa90a750573c97f3289ddfaa508f22ec5',1,'xiiShaderDescriptorSetLayoutBinding']]]
 ];

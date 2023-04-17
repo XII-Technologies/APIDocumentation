@@ -104,15 +104,15 @@ Inheritance diagram for xiiJoltCustomShapeInfo:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a3cb7adeb9da172c1fba80ba06460db64"><td class="memItemLeft" align="right" valign="top"><a id="a3cb7adeb9da172c1fba80ba06460db64"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>xiiJoltCustomShapeInfo</b> (const Shape *inInnerShape)</td></tr>
-<tr class="separator:a3cb7adeb9da172c1fba80ba06460db64"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4d43b07eead728c91a6eb98954088071"><td class="memItemLeft" align="right" valign="top"><a id="a4d43b07eead728c91a6eb98954088071"></a>
-virtual const JPH::PhysicsMaterial *&#160;</td><td class="memItemRight" valign="bottom"><b>GetMaterial</b> (const JPH::SubShapeID &amp;inSubShapeID) const override</td></tr>
-<tr class="separator:a4d43b07eead728c91a6eb98954088071"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8d73fa5d68ecbb4c0b09054ef80464e3"><td class="memItemLeft" align="right" valign="top"><a id="a8d73fa5d68ecbb4c0b09054ef80464e3"></a>
-virtual JPH::uint64&#160;</td><td class="memItemRight" valign="bottom"><b>GetSubShapeUserData</b> (const JPH::SubShapeID &amp;inSubShapeID) const override</td></tr>
-<tr class="separator:a8d73fa5d68ecbb4c0b09054ef80464e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af82fe31433cfaeed23ab129d9b895f12"><td class="memItemLeft" align="right" valign="top"><a id="af82fe31433cfaeed23ab129d9b895f12"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>xiiJoltCustomShapeInfo</b> (const Shape *pInInnerShape)</td></tr>
+<tr class="separator:af82fe31433cfaeed23ab129d9b895f12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acaacd1f3df24c9acf49f6cd03aa6d681"><td class="memItemLeft" align="right" valign="top"><a id="acaacd1f3df24c9acf49f6cd03aa6d681"></a>
+virtual const JPH::PhysicsMaterial *&#160;</td><td class="memItemRight" valign="bottom"><b>GetMaterial</b> (const JPH::SubShapeID &amp;subShapeID) const override</td></tr>
+<tr class="separator:acaacd1f3df24c9acf49f6cd03aa6d681"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91a33646a1825e7bf53f173c561a0803"><td class="memItemLeft" align="right" valign="top"><a id="a91a33646a1825e7bf53f173c561a0803"></a>
+virtual JPH::uint64&#160;</td><td class="memItemRight" valign="bottom"><b>GetSubShapeUserData</b> (const JPH::SubShapeID &amp;subShapeID) const override</td></tr>
+<tr class="separator:a91a33646a1825e7bf53f173c561a0803"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8ca4f458ef5c3c1c75ebce3534750eaa"><td class="memItemLeft" align="right" valign="top"><a id="a8ca4f458ef5c3c1c75ebce3534750eaa"></a>
 virtual JPH::MassProperties&#160;</td><td class="memItemRight" valign="bottom"><b>GetMassProperties</b> () const override</td></tr>
 <tr class="separator:a8ca4f458ef5c3c1c75ebce3534750eaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -125,30 +125,30 @@ virtual JPH::AABox&#160;</td><td class="memItemRight" valign="bottom"><b>GetLoca
 <tr class="memitem:abff199c199f66ba6b404219879a093b2"><td class="memItemLeft" align="right" valign="top"><a id="abff199c199f66ba6b404219879a093b2"></a>
 virtual float&#160;</td><td class="memItemRight" valign="bottom"><b>GetInnerRadius</b> () const override</td></tr>
 <tr class="separator:abff199c199f66ba6b404219879a093b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6db3206a201338142ea8520fc6b4982e"><td class="memItemLeft" align="right" valign="top"><a id="a6db3206a201338142ea8520fc6b4982e"></a>
-virtual JPH::Vec3&#160;</td><td class="memItemRight" valign="bottom"><b>GetSurfaceNormal</b> (const JPH::SubShapeID &amp;inSubShapeID, JPH::Vec3Arg inLocalSurfacePosition) const override</td></tr>
-<tr class="separator:a6db3206a201338142ea8520fc6b4982e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7419c8f4a5bc1586296b92b5b9993793"><td class="memItemLeft" align="right" valign="top"><a id="a7419c8f4a5bc1586296b92b5b9993793"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>GetSubmergedVolume</b> (JPH::Mat44Arg inCenterOfMassTransform, JPH::Vec3Arg inScale, const JPH::Plane &amp;inSurface, float &amp;outTotalVolume, float &amp;outSubmergedVolume, JPH::Vec3 &amp;outCenterOfBuoyancy) const override</td></tr>
-<tr class="separator:a7419c8f4a5bc1586296b92b5b9993793"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aea52a2c47e08f0700833d14943939b55"><td class="memItemLeft" align="right" valign="top"><a id="aea52a2c47e08f0700833d14943939b55"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>Draw</b> (JPH::DebugRenderer *inRenderer, JPH::Mat44Arg inCenterOfMassTransform, JPH::Vec3Arg inScale, JPH::ColorArg inColor, bool inUseMaterialColors, bool inDrawWireframe) const override</td></tr>
-<tr class="separator:aea52a2c47e08f0700833d14943939b55"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5c2e0f35d8ae46e2ae09a8bc649e19b6"><td class="memItemLeft" align="right" valign="top"><a id="a5c2e0f35d8ae46e2ae09a8bc649e19b6"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>CastRay</b> (const JPH::RayCast &amp;inRay, const JPH::SubShapeIDCreator &amp;inSubShapeIDCreator, JPH::RayCastResult &amp;ioHit) const override</td></tr>
-<tr class="separator:a5c2e0f35d8ae46e2ae09a8bc649e19b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afa5baa670f767a9f79298b650fa7622f"><td class="memItemLeft" align="right" valign="top"><a id="afa5baa670f767a9f79298b650fa7622f"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>CastRay</b> (const JPH::RayCast &amp;inRay, const JPH::RayCastSettings &amp;inRayCastSettings, const JPH::SubShapeIDCreator &amp;inSubShapeIDCreator, JPH::CastRayCollector &amp;ioCollector, const JPH::ShapeFilter &amp;inShapeFilter) const override</td></tr>
-<tr class="separator:afa5baa670f767a9f79298b650fa7622f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4da63fe94d35b827aef0849a93546734"><td class="memItemLeft" align="right" valign="top"><a id="a4da63fe94d35b827aef0849a93546734"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>CollidePoint</b> (JPH::Vec3Arg inPoint, const JPH::SubShapeIDCreator &amp;inSubShapeIDCreator, JPH::CollidePointCollector &amp;ioCollector, const JPH::ShapeFilter &amp;inShapeFilter) const override</td></tr>
-<tr class="separator:a4da63fe94d35b827aef0849a93546734"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7dd7c94d536b33f887249e9b237dda1d"><td class="memItemLeft" align="right" valign="top"><a id="a7dd7c94d536b33f887249e9b237dda1d"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>GetTrianglesStart</b> (JPH::Shape::GetTrianglesContext &amp;ioContext, const JPH::AABox &amp;inBox, JPH::Vec3Arg inPositionCOM, JPH::QuatArg inRotation, JPH::Vec3Arg inScale) const override</td></tr>
-<tr class="separator:a7dd7c94d536b33f887249e9b237dda1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a34b7979da67261ff92ba051aa4f442ea"><td class="memItemLeft" align="right" valign="top"><a id="a34b7979da67261ff92ba051aa4f442ea"></a>
-virtual int&#160;</td><td class="memItemRight" valign="bottom"><b>GetTrianglesNext</b> (JPH::Shape::GetTrianglesContext &amp;ioContext, int inMaxTrianglesRequested, JPH::Float3 *outTriangleVertices, const JPH::PhysicsMaterial **outMaterials=nullptr) const override</td></tr>
-<tr class="separator:a34b7979da67261ff92ba051aa4f442ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8476ccec94b68dd9556c0cd5398665bd"><td class="memItemLeft" align="right" valign="top"><a id="a8476ccec94b68dd9556c0cd5398665bd"></a>
+virtual JPH::Vec3&#160;</td><td class="memItemRight" valign="bottom"><b>GetSurfaceNormal</b> (const JPH::SubShapeID &amp;subShapeID, JPH::Vec3Arg inLocalSurfacePosition) const override</td></tr>
+<tr class="separator:a8476ccec94b68dd9556c0cd5398665bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa300c25074bc221f377bcc6fbcf6448"><td class="memItemLeft" align="right" valign="top"><a id="afa300c25074bc221f377bcc6fbcf6448"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>GetSubmergedVolume</b> (JPH::Mat44Arg centerOfMassTransform, JPH::Vec3Arg inScale, const JPH::Plane &amp;surface, float &amp;out_fTotalVolume, float &amp;out_fSubmergedVolume, JPH::Vec3 &amp;out_centerOfBuoyancy) const override</td></tr>
+<tr class="separator:afa300c25074bc221f377bcc6fbcf6448"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c9c02f4433f15b03c5fdd6c616a6edd"><td class="memItemLeft" align="right" valign="top"><a id="a5c9c02f4433f15b03c5fdd6c616a6edd"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>Draw</b> (JPH::DebugRenderer *pInRenderer, JPH::Mat44Arg centerOfMassTransform, JPH::Vec3Arg inScale, JPH::ColorArg inColor, bool bInUseMaterialColors, bool bInDrawWireframe) const override</td></tr>
+<tr class="separator:a5c9c02f4433f15b03c5fdd6c616a6edd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:affc67cbf0aec412f845e2986e0bf1183"><td class="memItemLeft" align="right" valign="top"><a id="affc67cbf0aec412f845e2986e0bf1183"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>CastRay</b> (const JPH::RayCast &amp;ray, const JPH::SubShapeIDCreator &amp;subShapeIDCreator, JPH::RayCastResult &amp;ref_hit) const override</td></tr>
+<tr class="separator:affc67cbf0aec412f845e2986e0bf1183"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3bea40130b8ec0da4c06fd028ca2de0f"><td class="memItemLeft" align="right" valign="top"><a id="a3bea40130b8ec0da4c06fd028ca2de0f"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>CastRay</b> (const JPH::RayCast &amp;ray, const JPH::RayCastSettings &amp;rayCastSettings, const JPH::SubShapeIDCreator &amp;subShapeIDCreator, JPH::CastRayCollector &amp;ref_collector, const JPH::ShapeFilter &amp;shapeFilter) const override</td></tr>
+<tr class="separator:a3bea40130b8ec0da4c06fd028ca2de0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afdc7a47fbf35555a9be12645989f4ce6"><td class="memItemLeft" align="right" valign="top"><a id="afdc7a47fbf35555a9be12645989f4ce6"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>CollidePoint</b> (JPH::Vec3Arg inPoint, const JPH::SubShapeIDCreator &amp;subShapeIDCreator, JPH::CollidePointCollector &amp;ref_collector, const JPH::ShapeFilter &amp;shapeFilter) const override</td></tr>
+<tr class="separator:afdc7a47fbf35555a9be12645989f4ce6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b43c5aec36a575555ed1e7345344f97"><td class="memItemLeft" align="right" valign="top"><a id="a5b43c5aec36a575555ed1e7345344f97"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>GetTrianglesStart</b> (JPH::Shape::GetTrianglesContext &amp;ref_context, const JPH::AABox &amp;box, JPH::Vec3Arg inPositionCOM, JPH::QuatArg inRotation, JPH::Vec3Arg inScale) const override</td></tr>
+<tr class="separator:a5b43c5aec36a575555ed1e7345344f97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06a0abbbffed5a914e86430f6a4f70f5"><td class="memItemLeft" align="right" valign="top"><a id="a06a0abbbffed5a914e86430f6a4f70f5"></a>
+virtual int&#160;</td><td class="memItemRight" valign="bottom"><b>GetTrianglesNext</b> (JPH::Shape::GetTrianglesContext &amp;ref_context, int iInMaxTrianglesRequested, JPH::Float3 *pTriangleVertices, const JPH::PhysicsMaterial **pMaterials=nullptr) const override</td></tr>
+<tr class="separator:a06a0abbbffed5a914e86430f6a4f70f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa208f5eb899e2670e7200ee86c73a8f5"><td class="memItemLeft" align="right" valign="top"><a id="aa208f5eb899e2670e7200ee86c73a8f5"></a>
 virtual Stats&#160;</td><td class="memItemRight" valign="bottom"><b>GetStats</b> () const override</td></tr>
 <tr class="separator:aa208f5eb899e2670e7200ee86c73a8f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -181,7 +181,7 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>m_fDensity</b> = 1.0
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d4/d2b/classxii_jolt_custom_shape_info.htm">xiiJoltCustomShapeInfo</a></li>
-    <li class="footer">Generated on Fri Mar 24 2023 17:20:22 for XIIEngine by
+    <li class="footer">Generated on Mon Apr 17 2023 20:10:38 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

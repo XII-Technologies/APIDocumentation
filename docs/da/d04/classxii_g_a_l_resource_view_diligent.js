@@ -9,6 +9,6 @@ var classxii_g_a_l_resource_view_diligent =
     [ "InitPlatform", "da/d04/classxii_g_a_l_resource_view_diligent.htm#ab26025074a612e52ea1ed59e79fd368d", null ],
     [ "xiiGALDeviceDiligent", "da/d04/classxii_g_a_l_resource_view_diligent.htm#aa4c4e61f06413b5554bad4d3f222b37c", null ],
     [ "xiiMemoryUtils", "da/d04/classxii_g_a_l_resource_view_diligent.htm#aefc9ff75d6833fd2f05be48e16436db6", null ],
-    [ "m_pBufferView", "da/d04/classxii_g_a_l_resource_view_diligent.htm#a6c733169c6e621051f6254732d73d9bb", null ],
-    [ "m_pTextureView", "da/d04/classxii_g_a_l_resource_view_diligent.htm#abeb8fe6d389bf1c78055f295ad02cc80", null ]
+    [ "m_pBufferView", "da/d04/classxii_g_a_l_resource_view_diligent.htm#ae3dd20ccd56c9a2dee48e9a9080e481b", null ],
+    [ "m_pTextureView", "da/d04/classxii_g_a_l_resource_view_diligent.htm#a5be90acd429b2d86f199813f1e1de1d8", null ]
 ];

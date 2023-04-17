@@ -4,7 +4,7 @@ var classxii_particle_type_trail =
     [ "xiiParticleTypeTrail", "da/df0/classxii_particle_type_trail.htm#a6819b21733e0dfe5ebd7f947793477d3", null ],
     [ "~xiiParticleTypeTrail", "da/df0/classxii_particle_type_trail.htm#a831cb323ce7522fae6079e088b087c40", null ],
     [ "CreateRequiredStreams", "da/df0/classxii_particle_type_trail.htm#a0952d90dd29d284f58d57701ad1a8118", null ],
-    [ "ExtractTypeRenderData", "da/df0/classxii_particle_type_trail.htm#a571ffaf9625949e3c6b08b7d66a8c3f3", null ],
+    [ "ExtractTypeRenderData", "da/df0/classxii_particle_type_trail.htm#a79b7f521f7b5b5e469a8a06b296b6c50", null ],
     [ "GetIndexForTrailPoints", "da/df0/classxii_particle_type_trail.htm#a0476b62c7ec1b54e5937ec4b7eb76fcc", null ],
     [ "GetMaxParticleRadius", "da/df0/classxii_particle_type_trail.htm#a91314b012f6ba962d843a53f43104381", null ],
     [ "GetTrailPointsPositions", "da/df0/classxii_particle_type_trail.htm#a43d06b0cc148b9e21e5539fdb3d4b94e", null ],

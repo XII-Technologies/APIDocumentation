@@ -22,9 +22,12 @@ var classxii_project_action =
       [ "ImportAsset", "d4/d6c/classxii_project_action.htm#af1c22871395255aeab8ed94bb7f2890ea9b07d2c9a390cf91dc877c44844bb8ee", null ],
       [ "AssetProfiles", "d4/d6c/classxii_project_action.htm#af1c22871395255aeab8ed94bb7f2890ead79d0e186ebc8656555e6a1270c1bfce", null ],
       [ "SetupCppProject", "d4/d6c/classxii_project_action.htm#af1c22871395255aeab8ed94bb7f2890ea447e967c783155c70fbdae4288e6943f", null ],
+      [ "OpenCppProject", "d4/d6c/classxii_project_action.htm#af1c22871395255aeab8ed94bb7f2890ea7296567da0107e21c64a4b2a4249815d", null ],
+      [ "CompileCppProject", "d4/d6c/classxii_project_action.htm#af1c22871395255aeab8ed94bb7f2890ea4974815c0139bd10a9fe379f967148f0", null ],
       [ "ShowDocsAndCommunity", "d4/d6c/classxii_project_action.htm#af1c22871395255aeab8ed94bb7f2890ea47a34af8c11617b12899ffe04a6da551", null ],
       [ "ExportProject", "d4/d6c/classxii_project_action.htm#af1c22871395255aeab8ed94bb7f2890ea3598233290d60081ea5a20513f4cb769", null ],
-      [ "PluginSelection", "d4/d6c/classxii_project_action.htm#af1c22871395255aeab8ed94bb7f2890eabdb07ed35c2e76faf736fe95a6f32488", null ]
+      [ "PluginSelection", "d4/d6c/classxii_project_action.htm#af1c22871395255aeab8ed94bb7f2890eabdb07ed35c2e76faf736fe95a6f32488", null ],
+      [ "ClearAssetCaches", "d4/d6c/classxii_project_action.htm#af1c22871395255aeab8ed94bb7f2890eadac331d41f6660617281a9401f506d94", null ]
     ] ],
     [ "xiiProjectAction", "d4/d6c/classxii_project_action.htm#aedfc54a5f99dc2e3a59f550094af727c", null ],
     [ "~xiiProjectAction", "d4/d6c/classxii_project_action.htm#a17a7ed4dde31a76c6fa51077ec0716d2", null ],

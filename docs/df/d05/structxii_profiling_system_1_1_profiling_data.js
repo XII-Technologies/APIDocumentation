@@ -1,7 +1,7 @@
 var structxii_profiling_system_1_1_profiling_data =
 [
     [ "Clear", "df/d05/structxii_profiling_system_1_1_profiling_data.htm#a7941347c272cbf9fd4d725983422c1e9", null ],
-    [ "Write", "df/d05/structxii_profiling_system_1_1_profiling_data.htm#a8970a369a0b80cd98fe19c61b14a430a", null ],
+    [ "Write", "df/d05/structxii_profiling_system_1_1_profiling_data.htm#ad1678b56c59ec904768f497af045ed43", null ],
     [ "m_AllEventBuffers", "df/d05/structxii_profiling_system_1_1_profiling_data.htm#adbd07a3ad910acaad8bb217ee2205bb2", null ],
     [ "m_FrameStartTimes", "df/d05/structxii_profiling_system_1_1_profiling_data.htm#a2aa85afc090ca3c25860d2f6e95f1999", null ],
     [ "m_GPUScopes", "df/d05/structxii_profiling_system_1_1_profiling_data.htm#aca49fe1ab268ddb2442ecd2127f5864c", null ],

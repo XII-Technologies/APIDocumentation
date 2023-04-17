@@ -152,6 +152,9 @@ static <a class="el" href="../../dd/dad/structxii_result.htm">xiiResult</a>&#160
 static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d0a/classxii_file_system.htm#a9abfaf036f4391db83674478735c9f32">ResolveAssetRedirection</a> (<a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sPathOrAssetGuid, <a class="el" href="../../d4/dbb/classxii_string_builder.htm">xiiStringBuilder</a> &amp;out_sRedirection)</td></tr>
 <tr class="memdesc:a9abfaf036f4391db83674478735c9f32"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true, if any data directory knows how to redirect the given path. Otherwise the original string is returned in out_sRedirection. <br /></td></tr>
 <tr class="separator:a9abfaf036f4391db83674478735c9f32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a959bc69e9131fe9383ff9b0367a0d3b0"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d0a/classxii_file_system.htm#a959bc69e9131fe9383ff9b0367a0d3b0">MigrateFileLocation</a> (<a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sOldLocation, <a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sNewLocation)</td></tr>
+<tr class="memdesc:a959bc69e9131fe9383ff9b0367a0d3b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Migrates a file from an old location to a new one, and returns the path that should be used to open it (either the old or the new path).  <a href="../../d7/d0a/classxii_file_system.htm#a959bc69e9131fe9383ff9b0367a0d3b0">More...</a><br /></td></tr>
+<tr class="separator:a959bc69e9131fe9383ff9b0367a0d3b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Special Directories</div></td></tr>
 <tr class="memitem:a1d36b6c014638a19bc2f48011f31ae66"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../dd/dad/structxii_result.htm">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d0a/classxii_file_system.htm#a1d36b6c014638a19bc2f48011f31ae66">DetectSdkRootDirectory</a> (<a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sExpectedSubFolder=&quot;Data/Base&quot;)</td></tr>
 <tr class="memdesc:a1d36b6c014638a19bc2f48011f31ae66"><td class="mdescLeft">&#160;</td><td class="mdescRight">Searches for a directory to use as the "Sdk" special directory.  <a href="../../d7/d0a/classxii_file_system.htm#a1d36b6c014638a19bc2f48011f31ae66">More...</a><br /></td></tr>
@@ -490,6 +493,45 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 
 </div>
 </div>
+<a id="a959bc69e9131fe9383ff9b0367a0d3b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a959bc69e9131fe9383ff9b0367a0d3b0">&#9670;&nbsp;</a></span>MigrateFileLocation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> xiiFileSystem::MigrateFileLocation </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a>&#160;</td>
+          <td class="paramname"><em>sOldLocation</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a>&#160;</td>
+          <td class="paramname"><em>sNewLocation</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Migrates a file from an old location to a new one, and returns the path that should be used to open it (either the old or the new path). </p>
+<p>If the file does not exist in the old location, nothing is done, and the new location is returned. Otherwise, it is attempted to move the file from the old location to the new location. In case that fails (target not writeable or so), the old path is returned, so that code that needs to read that file, finds it in the correct location. If it succeeds, the new location is returned. Afterwards, the file does not exist in the old location anymore. </p>
+
+</div>
+</div>
 <a id="aed3f11051fb93c5efd13d9f22b5ef6ee"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aed3f11051fb93c5efd13d9f22b5ef6ee">&#9670;&nbsp;</a></span>RemoveDataDirectory()</h2>
 
@@ -703,7 +745,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d7/d0a/classxii_file_system.htm">xiiFileSystem</a></li>
-    <li class="footer">Generated on Fri Mar 24 2023 17:20:21 for XIIEngine by
+    <li class="footer">Generated on Mon Apr 17 2023 20:10:37 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

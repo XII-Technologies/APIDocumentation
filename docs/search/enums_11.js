@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['xiieasingfunctions_20723',['xiiEasingFunctions',['../d1/d37/namespacexii_math.htm#a646b0ff6e3974612edf83c6401adb22d',1,'xiiMath']]],
-  ['xiithreadstatus_20724',['xiiThreadStatus',['../d8/d8c/classxii_thread.htm#a8666ac8d93cfd51672c0a5719e91d1b0',1,'xiiThread']]]
+  ['whitespacemode_20953',['WhitespaceMode',['../d1/d23/classxii_j_s_o_n_writer.htm#a97a0a6862b1641a63c4683aeb52488e1',1,'xiiJSONWriter']]]
 ];

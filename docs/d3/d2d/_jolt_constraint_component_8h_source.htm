@@ -142,8 +142,8 @@ $(document).ready(function(){initNavTree('d3/d2d/_jolt_constraint_component_8h_s
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <span class="comment">// xiiComponent</span></div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="../../db/d60/classxii_component.htm#ac0ba57397ebd4d7d491ba21ecc46ba80">SerializeComponent</a>(<a class="code" href="../../de/d8c/classxii_world_writer.htm">xiiWorldWriter</a>&amp; stream) <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="../../db/d60/classxii_component.htm#ae16371b604c9c9827ad927bc5bab1b20">DeserializeComponent</a>(<a class="code" href="../../df/df8/classxii_world_reader.htm">xiiWorldReader</a>&amp; stream) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="../../db/d60/classxii_component.htm#ac0ba57397ebd4d7d491ba21ecc46ba80">SerializeComponent</a>(<a class="code" href="../../de/d8c/classxii_world_writer.htm">xiiWorldWriter</a>&amp; inout_stream) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="../../db/d60/classxii_component.htm#ae16371b604c9c9827ad927bc5bab1b20">DeserializeComponent</a>(<a class="code" href="../../df/df8/classxii_world_reader.htm">xiiWorldReader</a>&amp; inout_stream) <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="keyword">protected</span>:</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="../../db/d60/classxii_component.htm#a2b0e0564cb2cdf071357136c990a7b37">OnSimulationStarted</a>() <span class="keyword">override</span>;</div>
@@ -156,11 +156,11 @@ $(document).ready(function(){initNavTree('d3/d2d/_jolt_constraint_component_8h_s
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  <a class="code" href="../../da/d69/classxii_jolt_constraint_component.htm">xiiJoltConstraintComponent</a>();</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  ~<a class="code" href="../../da/d69/classxii_jolt_constraint_component.htm">xiiJoltConstraintComponent</a>();</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  <span class="comment">// void SetBreakForce(float value);                      // [ property ]</span></div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  <span class="comment">// float GetBreakForce() const { return m_fBreakForce; } // [ property ]</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  <span class="keywordtype">void</span>  SetBreakForce(<span class="keywordtype">float</span> value);                     <span class="comment">// [ property ]</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  <span class="keywordtype">float</span> GetBreakForce()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_fBreakForce; } <span class="comment">// [ property ]</span></div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  <span class="comment">// void SetBreakTorque(float value);                       // [ property ]</span></div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  <span class="comment">// float GetBreakTorque() const { return m_fBreakTorque; } // [ property ]</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  <span class="keywordtype">void</span>  SetBreakTorque(<span class="keywordtype">float</span> value);                      <span class="comment">// [ property ]</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  <span class="keywordtype">float</span> GetBreakTorque()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_fBreakTorque; } <span class="comment">// [ property ]</span></div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  <span class="keywordtype">void</span> SetPairCollision(<span class="keywordtype">bool</span> value);                         <span class="comment">// [ property ]</span></div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  <span class="keywordtype">bool</span> GetPairCollision()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_bPairCollision; } <span class="comment">// [ property ]</span></div>
@@ -177,35 +177,37 @@ $(document).ready(function(){initNavTree('d3/d2d/_jolt_constraint_component_8h_s
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> ApplySettings() = 0;</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  <a class="code" href="../../dd/dad/structxii_result.htm">xiiResult</a> FindParentBody(xiiUInt32&amp; out_uiJoltBodyID);</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  <a class="code" href="../../dd/dad/structxii_result.htm">xiiResult</a> FindChildBody(xiiUInt32&amp; out_uiJoltBodyID);</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> CreateContstraintType(JPH::Body* pBody0, JPH::Body* pBody1) = 0;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">bool</span> ExceededBreakingPoint() = 0;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160; </div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  <a class="code" href="../../dd/dad/structxii_result.htm">xiiResult</a> FindParentBody(xiiUInt32&amp; out_uiJoltBodyID);</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  <a class="code" href="../../dd/dad/structxii_result.htm">xiiResult</a> FindChildBody(xiiUInt32&amp; out_uiJoltBodyID);</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  <a class="code" href="../../d5/d13/classxii_transform_template.htm">xiiTransform</a> ComputeParentBodyGlobalFrame() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;  <a class="code" href="../../d5/d13/classxii_transform_template.htm">xiiTransform</a> ComputeChildBodyGlobalFrame() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160; </div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;  <span class="keywordtype">void</span> QueueApplySettings();</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> CreateContstraintType(JPH::Body* pBody0, JPH::Body* pBody1) = 0;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; </div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  <a class="code" href="../../d5/d13/classxii_transform_template.htm">xiiTransform</a> ComputeParentBodyGlobalFrame() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;  <a class="code" href="../../d5/d13/classxii_transform_template.htm">xiiTransform</a> ComputeChildBodyGlobalFrame() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160; </div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;  <a class="code" href="../../da/d2c/structxii_game_object_handle.htm">xiiGameObjectHandle</a> m_hActorA;</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;  <a class="code" href="../../da/d2c/structxii_game_object_handle.htm">xiiGameObjectHandle</a> m_hActorB;</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;  <a class="code" href="../../da/d2c/structxii_game_object_handle.htm">xiiGameObjectHandle</a> m_hActorBAnchor;</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160; </div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;  <span class="comment">// UserFlag0 specifies whether m_localFrameA is already set</span></div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;  <a class="code" href="../../d5/d13/classxii_transform_template.htm">xiiTransform</a> m_LocalFrameA;</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;  <span class="comment">// UserFlag1 specifies whether m_localFrameB is already set</span></div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;  <a class="code" href="../../d5/d13/classxii_transform_template.htm">xiiTransform</a> m_LocalFrameB;</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160; </div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;  JPH::Constraint* m_pConstraint = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;  <span class="keywordtype">void</span> QueueApplySettings();</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160; </div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;  <a class="code" href="../../da/d2c/structxii_game_object_handle.htm">xiiGameObjectHandle</a> m_hActorA;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;  <a class="code" href="../../da/d2c/structxii_game_object_handle.htm">xiiGameObjectHandle</a> m_hActorB;</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;  <a class="code" href="../../da/d2c/structxii_game_object_handle.htm">xiiGameObjectHandle</a> m_hActorBAnchor;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160; </div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;  <span class="comment">// UserFlag0 specifies whether m_localFrameA is already set</span></div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;  <a class="code" href="../../d5/d13/classxii_transform_template.htm">xiiTransform</a> m_LocalFrameA;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;  <span class="comment">// UserFlag1 specifies whether m_localFrameB is already set</span></div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;  <a class="code" href="../../d5/d13/classxii_transform_template.htm">xiiTransform</a> m_LocalFrameB;</div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160; </div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;  <span class="comment">// float m_fBreakForce = 0.0f;</span></div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;  <span class="comment">// float m_fBreakTorque = 0.0f;</span></div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;  <span class="keywordtype">bool</span> m_bPairCollision = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160; </div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">char</span>* DummyGetter()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <span class="keyword">nullptr</span>; }</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;};</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;  JPH::Constraint* m_pConstraint = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160; </div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;  <span class="keywordtype">float</span> m_fBreakForce    = 0.0f;</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;  <span class="keywordtype">float</span> m_fBreakTorque   = 0.0f;</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;  <span class="keywordtype">bool</span>  m_bPairCollision = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160; </div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">char</span>* DummyGetter()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <span class="keyword">nullptr</span>; }</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;};</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclassxii_component_htm"><div class="ttname"><a href="../../db/d60/classxii_component.htm">xiiComponent</a></div><div class="ttdoc">Base class of all component types.</div><div class="ttdef"><b>Definition:</b> Component.h:24</div></div>
@@ -225,7 +227,7 @@ $(document).ready(function(){initNavTree('d3/d2d/_jolt_constraint_component_8h_s
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.htm">home</a></li><li class="navelem"><a class="el" href="../../dir_1036706e55c22cab35bc1c58ee689f1d.htm">runner</a></li><li class="navelem"><a class="el" href="../../dir_629f8151d55d307162ff2d619fb1783d.htm">work</a></li><li class="navelem"><a class="el" href="../../dir_1ddc44fe1263a8c7935fa6130b7d9499.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_2c1b6808f12952f4c36e05ba7068379a.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_b5a1c4ecfca018ad24b729e213296d41.htm">Source</a></li><li class="navelem"><a class="el" href="../../dir_260e93b09b1f607a5a2893957a57de87.htm">EnginePlugins</a></li><li class="navelem"><a class="el" href="../../dir_c903cff3404a68d1e186e5120eea8b72.htm">JoltPlugin</a></li><li class="navelem"><a class="el" href="../../dir_ae949dd1941697d5fbacb32f97ff00d7.htm">Constraints</a></li><li class="navelem"><b>JoltConstraintComponent.h</b></li>
-    <li class="footer">Generated on Fri Mar 24 2023 17:20:18 for XIIEngine by
+    <li class="footer">Generated on Mon Apr 17 2023 20:10:34 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

@@ -91,7 +91,7 @@ $(document).ready(function(){initNavTree('de/ddb/structxii_g_a_l_cull_mode.htm',
 </div><!--header-->
 <div class="contents">
 
-<p>Defines which sides of a polygon gets culled by the graphics card.  
+<p>Defines which triangles are not drawn during the rasterization stage.  
  <a href="../../de/ddb/structxii_g_a_l_cull_mode.htm#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="../../da/d9c/_renderer_foundation_d_l_l_8h_source.htm">RendererFoundationDLL.h</a>&gt;</code></p>
@@ -100,50 +100,53 @@ Inheritance diagram for xiiGALCullMode:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../de/d38/structxii_g_a_l_cull_mode__inherit__graph.png" border="0" usemap="#xii_g_a_l_cull_mode_inherit__map" alt="Inheritance graph"/></div>
 <map name="xii_g_a_l_cull_mode_inherit__map" id="xii_g_a_l_cull_mode_inherit__map">
-<area shape="rect" title="Defines which sides of a polygon gets culled by the graphics card." alt="" coords="47,5,172,32"/>
+<area shape="rect" title="Defines which triangles are not drawn during the rasterization stage." alt="" coords="47,5,172,32"/>
 <area shape="rect" href="../../de/dfd/structxii_enum.htm" title=" " alt="" coords="5,80,213,107"/>
 </map>
 <center><span class="legend">[<a target="top" href="../../graph_legend.htm">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a704dbff1573532d0767a8bf79e6e0826"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/ddb/structxii_g_a_l_cull_mode.htm#a704dbff1573532d0767a8bf79e6e0826">Enum</a> { <br />
-&#160;&#160;<a class="el" href="../../de/ddb/structxii_g_a_l_cull_mode.htm#a704dbff1573532d0767a8bf79e6e0826adbb2f12e1ab058fe69a7331e5ee36b0c">None</a> = 0, 
-<a class="el" href="../../de/ddb/structxii_g_a_l_cull_mode.htm#a704dbff1573532d0767a8bf79e6e0826aad8112c3eeb1615141fcebade3e8e7cc">Front</a> = 1, 
-<a class="el" href="../../de/ddb/structxii_g_a_l_cull_mode.htm#a704dbff1573532d0767a8bf79e6e0826ac0e19c227fb596f7bb9b47162c828515">Back</a> = 2, 
-<b>ENUM_COUNT</b>, 
+<tr class="memitem:a99cb2ec87d6f27adf5aedc38991ace2b"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/ddb/structxii_g_a_l_cull_mode.htm#a99cb2ec87d6f27adf5aedc38991ace2b">Enum</a> : xiiUInt8 { <br />
+&#160;&#160;<a class="el" href="../../de/ddb/structxii_g_a_l_cull_mode.htm#a99cb2ec87d6f27adf5aedc38991ace2ba998497c381d4aba9daa0776beaa6f6f6">Undefined</a> = 0, 
+<a class="el" href="../../de/ddb/structxii_g_a_l_cull_mode.htm#a99cb2ec87d6f27adf5aedc38991ace2badbb2f12e1ab058fe69a7331e5ee36b0c">None</a>, 
+<a class="el" href="../../de/ddb/structxii_g_a_l_cull_mode.htm#a99cb2ec87d6f27adf5aedc38991ace2baad8112c3eeb1615141fcebade3e8e7cc">Front</a>, 
+<a class="el" href="../../de/ddb/structxii_g_a_l_cull_mode.htm#a99cb2ec87d6f27adf5aedc38991ace2bac0e19c227fb596f7bb9b47162c828515">Back</a>, 
 <br />
-&#160;&#160;<b>Default</b> = Back
+&#160;&#160;<b>ENUM_COUNT</b>, 
+<b>Default</b> = Back
 <br />
  }</td></tr>
-<tr class="memdesc:a704dbff1573532d0767a8bf79e6e0826"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines which sides of a polygon gets culled by the graphics card.  <a href="../../de/ddb/structxii_g_a_l_cull_mode.htm#a704dbff1573532d0767a8bf79e6e0826">More...</a><br /></td></tr>
-<tr class="separator:a704dbff1573532d0767a8bf79e6e0826"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1324448feb5caaba9a40018ad59b5945"><td class="memItemLeft" align="right" valign="top"><a id="a1324448feb5caaba9a40018ad59b5945"></a>
-typedef xiiUInt8&#160;</td><td class="memItemRight" valign="bottom"><b>StorageType</b></td></tr>
-<tr class="separator:a1324448feb5caaba9a40018ad59b5945"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memdesc:a99cb2ec87d6f27adf5aedc38991ace2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines which sides of a polygon gets culled by the graphics card.  <a href="../../de/ddb/structxii_g_a_l_cull_mode.htm#a99cb2ec87d6f27adf5aedc38991ace2b">More...</a><br /></td></tr>
+<tr class="separator:a99cb2ec87d6f27adf5aedc38991ace2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a347a21d0df56b2eb71b66e118f6c7a3b"><td class="memItemLeft" align="right" valign="top"><a id="a347a21d0df56b2eb71b66e118f6c7a3b"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>StorageType</b> = xiiUInt8</td></tr>
+<tr class="separator:a347a21d0df56b2eb71b66e118f6c7a3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Defines which sides of a polygon gets culled by the graphics card. </p>
+<div class="textblock"><p>Defines which triangles are not drawn during the rasterization stage. </p>
 </div><h2 class="groupheader">Member Enumeration Documentation</h2>
-<a id="a704dbff1573532d0767a8bf79e6e0826"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a704dbff1573532d0767a8bf79e6e0826">&#9670;&nbsp;</a></span>Enum</h2>
+<a id="a99cb2ec87d6f27adf5aedc38991ace2b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a99cb2ec87d6f27adf5aedc38991ace2b">&#9670;&nbsp;</a></span>Enum</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">enum <a class="el" href="../../de/ddb/structxii_g_a_l_cull_mode.htm#a704dbff1573532d0767a8bf79e6e0826">xiiGALCullMode::Enum</a></td>
+          <td class="memname">enum <a class="el" href="../../de/ddb/structxii_g_a_l_cull_mode.htm#a99cb2ec87d6f27adf5aedc38991ace2b">xiiGALCullMode::Enum</a> : xiiUInt8</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Defines which sides of a polygon gets culled by the graphics card. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a704dbff1573532d0767a8bf79e6e0826adbb2f12e1ab058fe69a7331e5ee36b0c"></a>None&#160;</td><td class="fielddoc"><p>Triangles do not get culled. </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a99cb2ec87d6f27adf5aedc38991ace2ba998497c381d4aba9daa0776beaa6f6f6"></a>Undefined&#160;</td><td class="fielddoc"><p>Undefined cull mode. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a704dbff1573532d0767a8bf79e6e0826aad8112c3eeb1615141fcebade3e8e7cc"></a>Front&#160;</td><td class="fielddoc"><p>When the 'front' of a triangle is visible, it gets culled. The rasterizer state defines which side is the 'front'. See <a class="el" href="../../d2/d58/structxii_g_a_l_rasterizer_state_creation_description.htm" title="Describes the settings for a new rasterizer state. See xiiGALDevice::CreateRasterizerState.">xiiGALRasterizerStateCreationDescription</a> for details. </p>
+<tr><td class="fieldname"><a id="a99cb2ec87d6f27adf5aedc38991ace2badbb2f12e1ab058fe69a7331e5ee36b0c"></a>None&#160;</td><td class="fielddoc"><p>Draw all triangles. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a704dbff1573532d0767a8bf79e6e0826ac0e19c227fb596f7bb9b47162c828515"></a>Back&#160;</td><td class="fielddoc"><p>When the 'back' of a triangle is visible, it gets culled. The rasterizer state defines which side is the 'front'. See <a class="el" href="../../d2/d58/structxii_g_a_l_rasterizer_state_creation_description.htm" title="Describes the settings for a new rasterizer state. See xiiGALDevice::CreateRasterizerState.">xiiGALRasterizerStateCreationDescription</a> for details. </p>
+<tr><td class="fieldname"><a id="a99cb2ec87d6f27adf5aedc38991ace2baad8112c3eeb1615141fcebade3e8e7cc"></a>Front&#160;</td><td class="fielddoc"><p>Do not draw trangles that are front facing. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a99cb2ec87d6f27adf5aedc38991ace2bac0e19c227fb596f7bb9b47162c828515"></a>Back&#160;</td><td class="fielddoc"><p>Do not draw triangles that are back facing. </p>
 </td></tr>
 </table>
 
@@ -158,7 +161,7 @@ typedef xiiUInt8&#160;</td><td class="memItemRight" valign="bottom"><b>StorageTy
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../de/ddb/structxii_g_a_l_cull_mode.htm">xiiGALCullMode</a></li>
-    <li class="footer">Generated on Fri Mar 24 2023 17:20:21 for XIIEngine by
+    <li class="footer">Generated on Mon Apr 17 2023 20:10:37 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

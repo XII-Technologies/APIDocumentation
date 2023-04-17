@@ -5,10 +5,10 @@ var classxii_particle_system_instance =
     [ "AddParticleDeathEventHandler", "d2/d9c/classxii_particle_system_instance.htm#a6b3f3319d07eb3277a7774a7e00c9e24", null ],
     [ "ConfigureFromTemplate", "d2/d9c/classxii_particle_system_instance.htm#a2fed138caf1d0af54c0900b3d31da999", null ],
     [ "Construct", "d2/d9c/classxii_particle_system_instance.htm#afb64abc472a4d7681ddb8dd23ab17254", null ],
-    [ "CreateStream", "d2/d9c/classxii_particle_system_instance.htm#a24c29409e0cd46bdb066c41a914fdcdb", null ],
+    [ "CreateStream", "d2/d9c/classxii_particle_system_instance.htm#aa1deaa92168f147ccd42041c8dbf331e", null ],
     [ "CreateStreamProcessors", "d2/d9c/classxii_particle_system_instance.htm#a39a566b243316f27cb6018fc2b6a9c22", null ],
     [ "Destruct", "d2/d9c/classxii_particle_system_instance.htm#a5aa7796ce7ec133d068c22b2a97e1f80", null ],
-    [ "ExtractSystemRenderData", "d2/d9c/classxii_particle_system_instance.htm#ab8aa8f43a14d1ae672c93e023d6348c2", null ],
+    [ "ExtractSystemRenderData", "d2/d9c/classxii_particle_system_instance.htm#a0259fc102faf69522eb4b42aa498fe28", null ],
     [ "Finalize", "d2/d9c/classxii_particle_system_instance.htm#a7a29ee6e98fdb520183ab4ade6e21836", null ],
     [ "GetBoundingVolume", "d2/d9c/classxii_particle_system_instance.htm#ab7c8e7309f415c84fe941200b0cc8191", null ],
     [ "GetEmitterEnabled", "d2/d9c/classxii_particle_system_instance.htm#ad350e500929bbe1342391540819e6f4f", null ],
@@ -24,12 +24,12 @@ var classxii_particle_system_instance =
     [ "IsContinuous", "d2/d9c/classxii_particle_system_instance.htm#a9f186bee724e74cb911e841a2a25a5ec", null ],
     [ "IsVisible", "d2/d9c/classxii_particle_system_instance.htm#a3e1d4d7bb4734cd94914a9c4a5594a7e", null ],
     [ "ProcessEventQueue", "d2/d9c/classxii_particle_system_instance.htm#a0c0f1e0bfc07f8164299f0894f8e5e99", null ],
-    [ "QueryStream", "d2/d9c/classxii_particle_system_instance.htm#a7b5bb5eaf795a39dbcca1d3b709d5c7a", null ],
+    [ "QueryStream", "d2/d9c/classxii_particle_system_instance.htm#a01668ab9b5f60aa0ae9e72bc8af07825", null ],
     [ "ReinitializeStreamProcessors", "d2/d9c/classxii_particle_system_instance.htm#a0b71e51107078866830b02aa1711406d", null ],
     [ "RemoveParticleDeathEventHandler", "d2/d9c/classxii_particle_system_instance.htm#a83eac8f12bfc9239790876b09e7e22cb", null ],
     [ "SetBoundingVolume", "d2/d9c/classxii_particle_system_instance.htm#addca2ca9e365496b9d75201730b944b8", null ],
-    [ "SetEmitterEnabled", "d2/d9c/classxii_particle_system_instance.htm#a6789805e8152689903e570192178442b", null ],
+    [ "SetEmitterEnabled", "d2/d9c/classxii_particle_system_instance.htm#a44249a0b967debd494cb5009782ac8f6", null ],
     [ "SetTransform", "d2/d9c/classxii_particle_system_instance.htm#a2d7b5eae79a239013933684c9f9de5b2", null ],
     [ "SetupOptionalStreams", "d2/d9c/classxii_particle_system_instance.htm#a37a8dd146455bd774d794574f95fd8b8", null ],
-    [ "Update", "d2/d9c/classxii_particle_system_instance.htm#a7f640ee3eaa9c738dcd70df67825e61f", null ]
+    [ "Update", "d2/d9c/classxii_particle_system_instance.htm#a9353b78c4b8b6bedb12b4f303d376eda", null ]
 ];

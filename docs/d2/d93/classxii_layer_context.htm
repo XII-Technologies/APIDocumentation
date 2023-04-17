@@ -124,12 +124,16 @@ const <a class="el" href="../../db/d3b/classxii_tag.htm">xiiTag</a> &amp;&#160;<
 <tr class="memitem:a84a6c3d04ffcc4ef26a0c6e32bfcab20 inherit pub_methods_classxii_engine_process_document_context"><td class="memItemLeft" align="right" valign="top"><a id="a84a6c3d04ffcc4ef26a0c6e32bfcab20"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>xiiEngineProcessDocumentContext</b> (<a class="el" href="../../d7/d55/structxii_bitflags.htm">xiiBitflags</a>&lt; <a class="el" href="../../df/d3a/structxii_engine_process_document_context_flags.htm">xiiEngineProcessDocumentContextFlags</a> &gt; flags)</td></tr>
 <tr class="separator:a84a6c3d04ffcc4ef26a0c6e32bfcab20 inherit pub_methods_classxii_engine_process_document_context"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1b0f624bb70959ae03b1c806329449e8 inherit pub_methods_classxii_engine_process_document_context"><td class="memItemLeft" align="right" valign="top"><a id="a1b0f624bb70959ae03b1c806329449e8"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>Initialize</b> (const <a class="el" href="../../dc/d1d/classxii_uuid.htm">xiiUuid</a> &amp;DocumentGuid, const <a class="el" href="../../db/d1a/classxii_variant.htm">xiiVariant</a> &amp;metaData, <a class="el" href="../../dd/da1/classxii_engine_process_communication_channel.htm">xiiEngineProcessCommunicationChannel</a> *pIPC)</td></tr>
-<tr class="separator:a1b0f624bb70959ae03b1c806329449e8 inherit pub_methods_classxii_engine_process_document_context"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc4e1c104ea87d98d6e94e8176004d15 inherit pub_methods_classxii_engine_process_document_context"><td class="memItemLeft" align="right" valign="top"><a id="adc4e1c104ea87d98d6e94e8176004d15"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>Initialize</b> (const <a class="el" href="../../dc/d1d/classxii_uuid.htm">xiiUuid</a> &amp;documentGuid, const <a class="el" href="../../db/d1a/classxii_variant.htm">xiiVariant</a> &amp;metaData, <a class="el" href="../../dd/da1/classxii_engine_process_communication_channel.htm">xiiEngineProcessCommunicationChannel</a> *pIPC, <a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sDocumentType)</td></tr>
+<tr class="separator:adc4e1c104ea87d98d6e94e8176004d15 inherit pub_methods_classxii_engine_process_document_context"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6864c40d9ab513892b83e46dde07fa0f inherit pub_methods_classxii_engine_process_document_context"><td class="memItemLeft" align="right" valign="top"><a id="a6864c40d9ab513892b83e46dde07fa0f"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>Deinitialize</b> ()</td></tr>
 <tr class="separator:a6864c40d9ab513892b83e46dde07fa0f inherit pub_methods_classxii_engine_process_document_context"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93b2a830cc5611a0352a3725506dea43 inherit pub_methods_classxii_engine_process_document_context"><td class="memItemLeft" align="right" valign="top"><a id="a93b2a830cc5611a0352a3725506dea43"></a>
+<a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/df8/classxii_engine_process_document_context.htm#a93b2a830cc5611a0352a3725506dea43">GetDocumentType</a> () const</td></tr>
+<tr class="memdesc:a93b2a830cc5611a0352a3725506dea43 inherit pub_methods_classxii_engine_process_document_context"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the document type for which this context was created. Useful in case a context may be used for multiple document types. <br /></td></tr>
+<tr class="separator:a93b2a830cc5611a0352a3725506dea43 inherit pub_methods_classxii_engine_process_document_context"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af1bd46819bf98d049b47ff1336158e6e inherit pub_methods_classxii_engine_process_document_context"><td class="memItemLeft" align="right" valign="top"><a id="af1bd46819bf98d049b47ff1336158e6e"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SendProcessMessage</b> (<a class="el" href="../../d4/d06/classxii_process_message.htm">xiiProcessMessage</a> *pMsg=nullptr)</td></tr>
 <tr class="separator:af1bd46819bf98d049b47ff1336158e6e inherit pub_methods_classxii_engine_process_document_context"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -177,9 +181,9 @@ static <a class="el" href="../../db/df8/classxii_engine_process_document_context
 <tr class="memitem:ac6f983727d089e4e9a8f49adbbb6cc0f inherit pub_static_methods_classxii_engine_process_document_context"><td class="memItemLeft" align="right" valign="top"><a id="ac6f983727d089e4e9a8f49adbbb6cc0f"></a>
 static <a class="el" href="../../db/df8/classxii_engine_process_document_context.htm">xiiEngineProcessDocumentContext</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetDocumentContext</b> (<a class="el" href="../../dc/d1d/classxii_uuid.htm">xiiUuid</a> guid)</td></tr>
 <tr class="separator:ac6f983727d089e4e9a8f49adbbb6cc0f inherit pub_static_methods_classxii_engine_process_document_context"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af5eef1004093c3a602f8b3a93a823aa7 inherit pub_static_methods_classxii_engine_process_document_context"><td class="memItemLeft" align="right" valign="top"><a id="af5eef1004093c3a602f8b3a93a823aa7"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>AddDocumentContext</b> (<a class="el" href="../../dc/d1d/classxii_uuid.htm">xiiUuid</a> guid, const <a class="el" href="../../db/d1a/classxii_variant.htm">xiiVariant</a> &amp;metaData, <a class="el" href="../../db/df8/classxii_engine_process_document_context.htm">xiiEngineProcessDocumentContext</a> *pView, <a class="el" href="../../dd/da1/classxii_engine_process_communication_channel.htm">xiiEngineProcessCommunicationChannel</a> *pIPC)</td></tr>
-<tr class="separator:af5eef1004093c3a602f8b3a93a823aa7 inherit pub_static_methods_classxii_engine_process_document_context"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba14a50b13e86f2583f4f848d9087373 inherit pub_static_methods_classxii_engine_process_document_context"><td class="memItemLeft" align="right" valign="top"><a id="aba14a50b13e86f2583f4f848d9087373"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>AddDocumentContext</b> (<a class="el" href="../../dc/d1d/classxii_uuid.htm">xiiUuid</a> guid, const <a class="el" href="../../db/d1a/classxii_variant.htm">xiiVariant</a> &amp;metaData, <a class="el" href="../../db/df8/classxii_engine_process_document_context.htm">xiiEngineProcessDocumentContext</a> *pView, <a class="el" href="../../dd/da1/classxii_engine_process_communication_channel.htm">xiiEngineProcessCommunicationChannel</a> *pIPC, <a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sDocumentType)</td></tr>
+<tr class="separator:aba14a50b13e86f2583f4f848d9087373 inherit pub_static_methods_classxii_engine_process_document_context"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aafed65962840c7c67e5b424fdad3a949 inherit pub_static_methods_classxii_engine_process_document_context"><td class="memItemLeft" align="right" valign="top"><a id="aafed65962840c7c67e5b424fdad3a949"></a>
 static bool&#160;</td><td class="memItemRight" valign="bottom"><b>PendingOperationsInProgress</b> ()</td></tr>
 <tr class="separator:aafed65962840c7c67e5b424fdad3a949 inherit pub_static_methods_classxii_engine_process_document_context"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -339,7 +343,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d2/d93/classxii_layer_context.htm">xiiLayerContext</a></li>
-    <li class="footer">Generated on Fri Mar 24 2023 17:20:22 for XIIEngine by
+    <li class="footer">Generated on Mon Apr 17 2023 20:10:39 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

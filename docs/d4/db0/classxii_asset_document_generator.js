@@ -4,12 +4,12 @@ var classxii_asset_document_generator =
     [ "Info", "d4/d07/structxii_asset_document_generator_1_1_info.htm", "d4/d07/structxii_asset_document_generator_1_1_info" ],
     [ "xiiAssetDocumentGenerator", "d4/db0/classxii_asset_document_generator.htm#a73cb7183d8b5122ede866c6a3392c05a", null ],
     [ "~xiiAssetDocumentGenerator", "d4/db0/classxii_asset_document_generator.htm#aae2ecf800cfb15898df6ad338b730cdc", null ],
-    [ "AddSupportedFileType", "d4/db0/classxii_asset_document_generator.htm#ac5f5b0a38f29e07df1263c616712c0ac", null ],
-    [ "AppendFileFilterStrings", "d4/db0/classxii_asset_document_generator.htm#a07123f0bd2b2b87843ab4c27eb2fedb7", null ],
-    [ "BuildFileDialogFilterString", "d4/db0/classxii_asset_document_generator.htm#a4882ed09a7293146ca6b478713f2a12f", null ],
-    [ "Generate", "d4/db0/classxii_asset_document_generator.htm#ac193fd9a495d2b7b21392f791e4cd273", null ],
-    [ "GetDocumentExtension", "d4/db0/classxii_asset_document_generator.htm#ad5358d3e42cd3bc8ef2859d22d47fd1c", null ],
-    [ "GetGeneratorGroup", "d4/db0/classxii_asset_document_generator.htm#acfebd0d93efe22b9fb106872f5954235", null ],
-    [ "GetImportModes", "d4/db0/classxii_asset_document_generator.htm#a659e750e92b7c972b451116eb13c32a4", null ],
-    [ "SupportsFileType", "d4/db0/classxii_asset_document_generator.htm#a29cd9090b50f3a71c179d6b313bd74d9", null ]
+    [ "AddSupportedFileType", "d4/db0/classxii_asset_document_generator.htm#ac39923b985b699c7dd6695df57605260", null ],
+    [ "AppendFileFilterStrings", "d4/db0/classxii_asset_document_generator.htm#aa799121da70f64cac4c8d2c947b506b8", null ],
+    [ "BuildFileDialogFilterString", "d4/db0/classxii_asset_document_generator.htm#a2a4118b7fe71e1ef5446ba3ec8ebb0ca", null ],
+    [ "Generate", "d4/db0/classxii_asset_document_generator.htm#ab268d546b3936460a035c8c1b64011e7", null ],
+    [ "GetDocumentExtension", "d4/db0/classxii_asset_document_generator.htm#ae5ae0c6918ff6d7d891b1dc88ca278c1", null ],
+    [ "GetGeneratorGroup", "d4/db0/classxii_asset_document_generator.htm#a7c50a3fb1475a8f1751d0a09e74e6a4b", null ],
+    [ "GetImportModes", "d4/db0/classxii_asset_document_generator.htm#a7ae1cb2b77b8df2348e3e52596e041fa", null ],
+    [ "SupportsFileType", "d4/db0/classxii_asset_document_generator.htm#ad7b922382be4b6850750f0935e294299", null ]
 ];

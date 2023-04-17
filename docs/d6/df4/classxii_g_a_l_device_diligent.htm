@@ -191,7 +191,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>DestroyBuffer</b> (<a
 <a class="el" href="../../d1/dba/classxii_g_a_l_buffer_handle.htm">xiiGALBufferHandle</a>&#160;</td><td class="memItemRight" valign="bottom"><b>CreateVertexBuffer</b> (xiiUInt32 uiVertexSize, xiiUInt32 uiVertexCount, const char *szName, <a class="el" href="../../d0/d60/classxii_array_ptr.htm">xiiArrayPtr</a>&lt; const xiiUInt8 &gt; pInitialData=<a class="el" href="../../d0/d60/classxii_array_ptr.htm">xiiArrayPtr</a>&lt; const xiiUInt8 &gt;(), bool bDataIsMutable=false)</td></tr>
 <tr class="separator:abda368bf6649700c8a65500fec95658c inherit pub_methods_classxii_g_a_l_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae6b0c2a485f51bd0da37689b442a015d inherit pub_methods_classxii_g_a_l_device"><td class="memItemLeft" align="right" valign="top"><a id="ae6b0c2a485f51bd0da37689b442a015d"></a>
-<a class="el" href="../../d1/dba/classxii_g_a_l_buffer_handle.htm">xiiGALBufferHandle</a>&#160;</td><td class="memItemRight" valign="bottom"><b>CreateIndexBuffer</b> (xiiGALIndexType::Enum IndexType, xiiUInt32 uiIndexCount, const char *szName, <a class="el" href="../../d0/d60/classxii_array_ptr.htm">xiiArrayPtr</a>&lt; const xiiUInt8 &gt; pInitialData=<a class="el" href="../../d0/d60/classxii_array_ptr.htm">xiiArrayPtr</a>&lt; const xiiUInt8 &gt;(), bool bDataIsMutable=false)</td></tr>
+<a class="el" href="../../d1/dba/classxii_g_a_l_buffer_handle.htm">xiiGALBufferHandle</a>&#160;</td><td class="memItemRight" valign="bottom"><b>CreateIndexBuffer</b> (<a class="el" href="../../d2/d85/structxii_g_a_l_index_type.htm#ac2ea7152a752302d2051e618c93a5e02">xiiGALIndexType::Enum</a> IndexType, xiiUInt32 uiIndexCount, const char *szName, <a class="el" href="../../d0/d60/classxii_array_ptr.htm">xiiArrayPtr</a>&lt; const xiiUInt8 &gt; pInitialData=<a class="el" href="../../d0/d60/classxii_array_ptr.htm">xiiArrayPtr</a>&lt; const xiiUInt8 &gt;(), bool bDataIsMutable=false)</td></tr>
 <tr class="separator:ae6b0c2a485f51bd0da37689b442a015d inherit pub_methods_classxii_g_a_l_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad904c91d356cb6920cbb5e795a01cf63 inherit pub_methods_classxii_g_a_l_device"><td class="memItemLeft" align="right" valign="top"><a id="ad904c91d356cb6920cbb5e795a01cf63"></a>
 <a class="el" href="../../d1/dba/classxii_g_a_l_buffer_handle.htm">xiiGALBufferHandle</a>&#160;</td><td class="memItemRight" valign="bottom"><b>CreateConstantBuffer</b> (xiiUInt32 uiBufferSize, const char *szName)</td></tr>
@@ -494,15 +494,15 @@ Protected Attributes</h2></td></tr>
 <tr class="memitem:aa372babbc8fedc2928c52b38109d6c6f"><td class="memItemLeft" align="right" valign="top"><a id="aa372babbc8fedc2928c52b38109d6c6f"></a>
 Diligent::RENDER_DEVICE_TYPE&#160;</td><td class="memItemRight" valign="bottom"><b>m_DeviceType</b> = Diligent::RENDER_DEVICE_TYPE_UNDEFINED</td></tr>
 <tr class="separator:aa372babbc8fedc2928c52b38109d6c6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a76431398c99c68f95f80e675eb6f33c2"><td class="memItemLeft" align="right" valign="top"><a id="a76431398c99c68f95f80e675eb6f33c2"></a>
-Diligent::RefCntAutoPtr&lt; Diligent::IEngineFactory &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_pEngineFactory</b></td></tr>
-<tr class="separator:a76431398c99c68f95f80e675eb6f33c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af9f900a4f36d86bf4396fecb474a2010"><td class="memItemLeft" align="right" valign="top"><a id="af9f900a4f36d86bf4396fecb474a2010"></a>
-Diligent::RefCntAutoPtr&lt; Diligent::IRenderDevice &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_pDevice</b></td></tr>
-<tr class="separator:af9f900a4f36d86bf4396fecb474a2010"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa87a12985ed0ceeb97cff39f2f9ecdfc"><td class="memItemLeft" align="right" valign="top"><a id="aa87a12985ed0ceeb97cff39f2f9ecdfc"></a>
-<a class="el" href="../../dc/da4/classxii_dynamic_array.htm">xiiDynamicArray</a>&lt; Diligent::RefCntAutoPtr&lt; Diligent::IDeviceContext &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_pDeviceContexts</b></td></tr>
-<tr class="separator:aa87a12985ed0ceeb97cff39f2f9ecdfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a71803cad906251d576e69c81715c69"><td class="memItemLeft" align="right" valign="top"><a id="a2a71803cad906251d576e69c81715c69"></a>
+Diligent::IEngineFactory *&#160;</td><td class="memItemRight" valign="bottom"><b>m_pEngineFactory</b> = nullptr</td></tr>
+<tr class="separator:a2a71803cad906251d576e69c81715c69"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3affb60b9e43560a6f4a1ca96a5c45b"><td class="memItemLeft" align="right" valign="top"><a id="aa3affb60b9e43560a6f4a1ca96a5c45b"></a>
+Diligent::IRenderDevice *&#160;</td><td class="memItemRight" valign="bottom"><b>m_pDevice</b> = nullptr</td></tr>
+<tr class="separator:aa3affb60b9e43560a6f4a1ca96a5c45b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac92dfce1c21defa7ed389826058eb9ad"><td class="memItemLeft" align="right" valign="top"><a id="ac92dfce1c21defa7ed389826058eb9ad"></a>
+<a class="el" href="../../dc/da4/classxii_dynamic_array.htm">xiiDynamicArray</a>&lt; Diligent::IDeviceContext * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_pDeviceContexts</b></td></tr>
+<tr class="separator:ac92dfce1c21defa7ed389826058eb9ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a65f5d437e14141e38b3ecacefed4f9dc"><td class="memItemLeft" align="right" valign="top"><a id="a65f5d437e14141e38b3ecacefed4f9dc"></a>
 xiiUInt32&#160;</td><td class="memItemRight" valign="bottom"><b>m_uiNumImmediateContexts</b> = 0</td></tr>
 <tr class="separator:a65f5d437e14141e38b3ecacefed4f9dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -533,30 +533,6 @@ std::unique_ptr&lt; xiiDiligentMemoryAllocator &gt;&#160;</td><td class="memItem
 <tr class="memitem:a4b475ac70ea7cf668906970697bef79b"><td class="memItemLeft" align="right" valign="top"><a id="a4b475ac70ea7cf668906970697bef79b"></a>
 <a class="el" href="../../d9/d4a/classxii_unique_ptr.htm">xiiUniquePtr</a>&lt; <a class="el" href="../../dd/da5/classxii_g_a_l_pass_diligent.htm">xiiGALPassDiligent</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_pDefaultPass</b></td></tr>
 <tr class="separator:a4b475ac70ea7cf668906970697bef79b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae6573e14e439745dc54f34b514d06184"><td class="memItemLeft" align="right" valign="top"><a id="ae6573e14e439745dc54f34b514d06184"></a>
-<a class="el" href="../../d9/d4a/classxii_unique_ptr.htm">xiiUniquePtr</a>&lt; Diligent::ScopedQueryHelper &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_pPipelineStatsQuery</b></td></tr>
-<tr class="separator:ae6573e14e439745dc54f34b514d06184"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaec7bec3019d0341fd5f36b29bb5c238"><td class="memItemLeft" align="right" valign="top"><a id="aaec7bec3019d0341fd5f36b29bb5c238"></a>
-<a class="el" href="../../d9/d4a/classxii_unique_ptr.htm">xiiUniquePtr</a>&lt; Diligent::ScopedQueryHelper &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_pOcclusionQuery</b></td></tr>
-<tr class="separator:aaec7bec3019d0341fd5f36b29bb5c238"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad5ffa91b9e20d03d01a0eaa41f54e0ca"><td class="memItemLeft" align="right" valign="top"><a id="ad5ffa91b9e20d03d01a0eaa41f54e0ca"></a>
-<a class="el" href="../../d9/d4a/classxii_unique_ptr.htm">xiiUniquePtr</a>&lt; Diligent::ScopedQueryHelper &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_pDurationQuery</b></td></tr>
-<tr class="separator:ad5ffa91b9e20d03d01a0eaa41f54e0ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4b76f9bd0e107a6221d788f6a1345532"><td class="memItemLeft" align="right" valign="top"><a id="a4b76f9bd0e107a6221d788f6a1345532"></a>
-<a class="el" href="../../d9/d4a/classxii_unique_ptr.htm">xiiUniquePtr</a>&lt; Diligent::DurationQueryHelper &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_pDurationFromTimestamps</b></td></tr>
-<tr class="separator:a4b76f9bd0e107a6221d788f6a1345532"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a584ab139ac6cc3dab6ef5cca916bc1ab"><td class="memItemLeft" align="right" valign="top"><a id="a584ab139ac6cc3dab6ef5cca916bc1ab"></a>
-Diligent::QueryDataPipelineStatistics&#160;</td><td class="memItemRight" valign="bottom"><b>m_PipelineStatsData</b></td></tr>
-<tr class="separator:a584ab139ac6cc3dab6ef5cca916bc1ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1860f7ba7320705e10ce108aeea9de6f"><td class="memItemLeft" align="right" valign="top"><a id="a1860f7ba7320705e10ce108aeea9de6f"></a>
-Diligent::QueryDataOcclusion&#160;</td><td class="memItemRight" valign="bottom"><b>m_OcclusionData</b></td></tr>
-<tr class="separator:a1860f7ba7320705e10ce108aeea9de6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac23d7a61de5b8d0091b17fc07c12f19c"><td class="memItemLeft" align="right" valign="top"><a id="ac23d7a61de5b8d0091b17fc07c12f19c"></a>
-Diligent::QueryDataDuration&#160;</td><td class="memItemRight" valign="bottom"><b>m_DurationData</b></td></tr>
-<tr class="separator:ac23d7a61de5b8d0091b17fc07c12f19c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8ba7e03671360c8979d5133699b7dfe3"><td class="memItemLeft" align="right" valign="top"><a id="a8ba7e03671360c8979d5133699b7dfe3"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>m_DurationFromTimestamps</b> = 0</td></tr>
-<tr class="separator:a8ba7e03671360c8979d5133699b7dfe3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abe2d7726a532cc56978cf3a601a1eb80"><td class="memItemLeft" align="right" valign="top"><a id="abe2d7726a532cc56978cf3a601a1eb80"></a>
 <a class="el" href="../../d7/dc1/structxii_time.htm">xiiTime</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_SyncTimeDiff</b></td></tr>
 <tr class="separator:abe2d7726a532cc56978cf3a601a1eb80"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -753,7 +729,7 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>VertexDeclarationTab
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d6/df4/classxii_g_a_l_device_diligent.htm">xiiGALDeviceDiligent</a></li>
-    <li class="footer">Generated on Fri Mar 24 2023 17:20:21 for XIIEngine by
+    <li class="footer">Generated on Mon Apr 17 2023 20:10:37 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

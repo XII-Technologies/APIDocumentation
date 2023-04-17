@@ -4,7 +4,7 @@ var classxii_particle_type_effect =
     [ "~xiiParticleTypeEffect", "d8/dc5/classxii_particle_type_effect.htm#ade16d42abb7ab5112a4fe28ec733e349", null ],
     [ "ClearEffects", "d8/dc5/classxii_particle_type_effect.htm#a3faf2ab5ff47d5a987017b6ef9b5ee44", null ],
     [ "CreateRequiredStreams", "d8/dc5/classxii_particle_type_effect.htm#a3d91c534f9fd5d91136a4ccbec7db2ff", null ],
-    [ "ExtractTypeRenderData", "d8/dc5/classxii_particle_type_effect.htm#aa9978ecae5030de98a1bba43bc9ac7bf", null ],
+    [ "ExtractTypeRenderData", "d8/dc5/classxii_particle_type_effect.htm#a028567e7da0795ee7bbf1102806c3d70", null ],
     [ "GetMaxParticleRadius", "d8/dc5/classxii_particle_type_effect.htm#aa8da7d339c5ec85415078cab2b203f9f", null ],
     [ "OnParticleDeath", "d8/dc5/classxii_particle_type_effect.htm#aadeba89eb6648b6156923f878dc1d821", null ],
     [ "OnReset", "d8/dc5/classxii_particle_type_effect.htm#abe0215f37069c3e91ae1352c42b2a0f2", null ],

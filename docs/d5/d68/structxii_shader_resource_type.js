@@ -1,6 +1,6 @@
 var structxii_shader_resource_type =
 [
-    [ "StorageType", "d5/d68/structxii_shader_resource_type.htm#a4609bd04a804c3050fdfb91f4efa28ff", null ],
+    [ "StorageType", "d5/d68/structxii_shader_resource_type.htm#ac5469c20b236348bd0f95766b10c00b5", null ],
     [ "Enum", "d5/d68/structxii_shader_resource_type.htm#aeece93733eaa56d5213c7bfc14f9d78a", [
       [ "Unknown", "d5/d68/structxii_shader_resource_type.htm#aeece93733eaa56d5213c7bfc14f9d78aaf0499b686bfa476ae1b45ba1e334004a", null ],
       [ "Texture1D", "d5/d68/structxii_shader_resource_type.htm#aeece93733eaa56d5213c7bfc14f9d78aa16ca9ba1fc32e992966aa3a6c519725c", null ],
@@ -16,6 +16,8 @@ var structxii_shader_resource_type =
       [ "ConstantBuffer", "d5/d68/structxii_shader_resource_type.htm#aeece93733eaa56d5213c7bfc14f9d78aabc0a4e201f34de7086ee58ccfd628ba6", null ],
       [ "GenericBuffer", "d5/d68/structxii_shader_resource_type.htm#aeece93733eaa56d5213c7bfc14f9d78aaddd090af1de53401e9bdde63fdca12fb", null ],
       [ "Sampler", "d5/d68/structxii_shader_resource_type.htm#aeece93733eaa56d5213c7bfc14f9d78aa85b7edd87f5531ed581cb23e4cb5e80e", null ],
+      [ "InputAttachment", "d5/d68/structxii_shader_resource_type.htm#aeece93733eaa56d5213c7bfc14f9d78aae8ca92b614586bdf73486b3804e737ab", null ],
+      [ "AccelerationStructure", "d5/d68/structxii_shader_resource_type.htm#aeece93733eaa56d5213c7bfc14f9d78aa9f7dec0f8106f5eddb27cc5edcec0b64", null ],
       [ "Default", "d5/d68/structxii_shader_resource_type.htm#aeece93733eaa56d5213c7bfc14f9d78aa640b49aef24bd1bf0a7a1cc7b01fb87d", null ]
     ] ]
 ];

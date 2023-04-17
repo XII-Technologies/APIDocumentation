@@ -9,7 +9,7 @@ var classxii_g_a_l_render_target_view_diligent =
     [ "InitPlatform", "df/dc6/classxii_g_a_l_render_target_view_diligent.htm#a3ffaf5d58f2bbbafe399505c241ada3e", null ],
     [ "xiiGALDeviceDiligent", "df/dc6/classxii_g_a_l_render_target_view_diligent.htm#aa4c4e61f06413b5554bad4d3f222b37c", null ],
     [ "xiiMemoryUtils", "df/dc6/classxii_g_a_l_render_target_view_diligent.htm#aefc9ff75d6833fd2f05be48e16436db6", null ],
-    [ "m_pDepthStencilView", "df/dc6/classxii_g_a_l_render_target_view_diligent.htm#a716daa14339bc5e9c2c4c29a7da5068f", null ],
-    [ "m_pRenderTargetView", "df/dc6/classxii_g_a_l_render_target_view_diligent.htm#a1e8130a3372761eec9673ec9ff793fd5", null ],
-    [ "m_pUnorderedAccessView", "df/dc6/classxii_g_a_l_render_target_view_diligent.htm#a9c1bcb5e2ee26ab24ebeeefa68cf8fe8", null ]
+    [ "m_pDepthStencilView", "df/dc6/classxii_g_a_l_render_target_view_diligent.htm#aad2a6a1b01dd8895b096feb586e4b8a7", null ],
+    [ "m_pRenderTargetView", "df/dc6/classxii_g_a_l_render_target_view_diligent.htm#a7bd3f231b4f41ecf922e8ba3a11de97c", null ],
+    [ "m_pUnorderedAccessView", "df/dc6/classxii_g_a_l_render_target_view_diligent.htm#a12ed011a520d5d256edb77d34c97c234", null ]
 ];

@@ -124,9 +124,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a2161a646055348d9ac129f4a0236d04d"><td class="memItemLeft" align="right" valign="top"><a id="a2161a646055348d9ac129f4a0236d04d"></a>
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>Clear</b> ()</td></tr>
 <tr class="separator:a2161a646055348d9ac129f4a0236d04d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac4321e5620a6ab565dcc65fcb2baf796"><td class="memItemLeft" align="right" valign="top"><a id="ac4321e5620a6ab565dcc65fcb2baf796"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>Capture</b> (<a class="el" href="../../df/d05/structxii_profiling_system_1_1_profiling_data.htm">xiiProfilingSystem::ProfilingData</a> &amp;out_Capture, bool bClearAfterCapture=false)</td></tr>
-<tr class="separator:ac4321e5620a6ab565dcc65fcb2baf796"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0fec6a40c90127e8ead456620cdf9841"><td class="memItemLeft" align="right" valign="top"><a id="a0fec6a40c90127e8ead456620cdf9841"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>Capture</b> (<a class="el" href="../../df/d05/structxii_profiling_system_1_1_profiling_data.htm">xiiProfilingSystem::ProfilingData</a> &amp;out_capture, bool bClearAfterCapture=false)</td></tr>
+<tr class="separator:a0fec6a40c90127e8ead456620cdf9841"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a76bdfc24f84fb57db5d63fff9937b8bd"><td class="memItemLeft" align="right" valign="top"><a id="a76bdfc24f84fb57db5d63fff9937b8bd"></a>
 static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d5d/classxii_profiling_system.htm#a76bdfc24f84fb57db5d63fff9937b8bd">SetDiscardThreshold</a> (<a class="el" href="../../d7/dc1/structxii_time.htm">xiiTime</a> threshold)</td></tr>
 <tr class="memdesc:a76bdfc24f84fb57db5d63fff9937b8bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Scopes are discarded if their duration is shorter than the specified threshold. Default is 0.1ms. <br /></td></tr>
@@ -147,14 +147,14 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 static xiiUInt64&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d5d/classxii_profiling_system.htm#a134d5dce822fde4062ce40257ded9b7e">GetFrameCount</a> ()</td></tr>
 <tr class="memdesc:a134d5dce822fde4062ce40257ded9b7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get current frame counter. <br /></td></tr>
 <tr class="separator:a134d5dce822fde4062ce40257ded9b7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a499d1f10f458ad814dad8b09ef9bcc2f"><td class="memItemLeft" align="right" valign="top"><a id="a499d1f10f458ad814dad8b09ef9bcc2f"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d5d/classxii_profiling_system.htm#a499d1f10f458ad814dad8b09ef9bcc2f">InitializeGPUData</a> (xiiUInt32 gpuCount=1)</td></tr>
-<tr class="memdesc:a499d1f10f458ad814dad8b09ef9bcc2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialized internal data structures for GPU profiling data. Needs to be called before adding any data. <br /></td></tr>
-<tr class="separator:a499d1f10f458ad814dad8b09ef9bcc2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2dff07950651e03d17a17cbea98df4a4"><td class="memItemLeft" align="right" valign="top"><a id="a2dff07950651e03d17a17cbea98df4a4"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d5d/classxii_profiling_system.htm#a2dff07950651e03d17a17cbea98df4a4">AddGPUScope</a> (<a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sName, <a class="el" href="../../d7/dc1/structxii_time.htm">xiiTime</a> beginTime, <a class="el" href="../../d7/dc1/structxii_time.htm">xiiTime</a> endTime, xiiUInt32 gpuIndex=0)</td></tr>
-<tr class="memdesc:a2dff07950651e03d17a17cbea98df4a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a GPU profiling scope in the internal event ringbuffer. <br /></td></tr>
-<tr class="separator:a2dff07950651e03d17a17cbea98df4a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1660fd681fd57354fd22a87405db342e"><td class="memItemLeft" align="right" valign="top"><a id="a1660fd681fd57354fd22a87405db342e"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d5d/classxii_profiling_system.htm#a1660fd681fd57354fd22a87405db342e">InitializeGPUData</a> (xiiUInt32 uiGpuCount=1)</td></tr>
+<tr class="memdesc:a1660fd681fd57354fd22a87405db342e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialized internal data structures for GPU profiling data. Needs to be called before adding any data. <br /></td></tr>
+<tr class="separator:a1660fd681fd57354fd22a87405db342e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae843a0212d42fa4649ef263c07538754"><td class="memItemLeft" align="right" valign="top"><a id="ae843a0212d42fa4649ef263c07538754"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d5d/classxii_profiling_system.htm#ae843a0212d42fa4649ef263c07538754">AddGPUScope</a> (<a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sName, <a class="el" href="../../d7/dc1/structxii_time.htm">xiiTime</a> beginTime, <a class="el" href="../../d7/dc1/structxii_time.htm">xiiTime</a> endTime, xiiUInt32 uiGpuIndex=0)</td></tr>
+<tr class="memdesc:ae843a0212d42fa4649ef263c07538754"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a GPU profiling scope in the internal event ringbuffer. <br /></td></tr>
+<tr class="separator:ae843a0212d42fa4649ef263c07538754"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
@@ -174,7 +174,7 @@ xiiUInt32&#160;</td><td class="memItemRight" valign="bottom"><b>RunThread</b> (<
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dd/d5d/classxii_profiling_system.htm">xiiProfilingSystem</a></li>
-    <li class="footer">Generated on Fri Mar 24 2023 17:20:24 for XIIEngine by
+    <li class="footer">Generated on Mon Apr 17 2023 20:10:40 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

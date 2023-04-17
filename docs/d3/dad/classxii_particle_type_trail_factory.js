@@ -2,8 +2,8 @@ var classxii_particle_type_trail_factory =
 [
     [ "CopyTypeProperties", "d3/dad/classxii_particle_type_trail_factory.htm#ac51abe1f221a04268dec77d7d7189c82", null ],
     [ "GetTypeType", "d3/dad/classxii_particle_type_trail_factory.htm#ab7d0f46c889196b1b5972e25258d3c6c", null ],
-    [ "Load", "d3/dad/classxii_particle_type_trail_factory.htm#a19fd33656a77a8025d3d2b559bd11d95", null ],
-    [ "Save", "d3/dad/classxii_particle_type_trail_factory.htm#a0f84e4703d5a6531f6ebc236ab5e2db7", null ],
+    [ "Load", "d3/dad/classxii_particle_type_trail_factory.htm#a7660b0e77025192ec167a749e5fc76f5", null ],
+    [ "Save", "d3/dad/classxii_particle_type_trail_factory.htm#a6ffd845d850fd7f7881de8793fe2eaa0", null ],
     [ "m_fDistortionStrength", "d3/dad/classxii_particle_type_trail_factory.htm#a4e5028eacedf60b8027d3507d666273c", null ],
     [ "m_RenderMode", "d3/dad/classxii_particle_type_trail_factory.htm#aa4cbe59763af73fce64005cb38c18e13", null ],
     [ "m_sDistortionTexture", "d3/dad/classxii_particle_type_trail_factory.htm#a103f7895cd40cc1f8240d759e6521085", null ],

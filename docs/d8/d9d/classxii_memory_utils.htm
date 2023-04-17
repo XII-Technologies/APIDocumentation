@@ -200,18 +200,18 @@ template&lt;typename T &gt; </td></tr>
 template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a3dc304f5c13bf004717d121b62b9b329"><td class="memTemplItemLeft" align="right" valign="top">XII_ALWAYS_INLINE void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>ZeroFill</b> (T *pDestination, size_t uiCount)</td></tr>
 <tr class="separator:a3dc304f5c13bf004717d121b62b9b329"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abbdfa10ae3bacdac4b8253d8e9b7b439"><td class="memTemplParams" colspan="2"><a id="abbdfa10ae3bacdac4b8253d8e9b7b439"></a>
+<tr class="memitem:a68f58542c7a40cf036a78d45711b333b"><td class="memTemplParams" colspan="2"><a id="a68f58542c7a40cf036a78d45711b333b"></a>
 template&lt;typename T , size_t N&gt; </td></tr>
-<tr class="memitem:abbdfa10ae3bacdac4b8253d8e9b7b439"><td class="memTemplItemLeft" align="right" valign="top">XII_ALWAYS_INLINE void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>ZeroFill</b> (T(&amp;destination)[N])</td></tr>
-<tr class="separator:abbdfa10ae3bacdac4b8253d8e9b7b439"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68f58542c7a40cf036a78d45711b333b"><td class="memTemplItemLeft" align="right" valign="top">XII_ALWAYS_INLINE void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>ZeroFillArray</b> (T(&amp;destination)[N])</td></tr>
+<tr class="separator:a68f58542c7a40cf036a78d45711b333b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af1fe876de1c98abeb73de8df144656c0"><td class="memTemplParams" colspan="2"><a id="af1fe876de1c98abeb73de8df144656c0"></a>
 template&lt;typename T &gt; </td></tr>
 <tr class="memitem:af1fe876de1c98abeb73de8df144656c0"><td class="memTemplItemLeft" align="right" valign="top">XII_ALWAYS_INLINE void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>PatternFill</b> (T *pDestination, xiiUInt8 uiBytePattern, size_t uiCount)</td></tr>
 <tr class="separator:af1fe876de1c98abeb73de8df144656c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4409974271d04a9ef5fd19f229eb7b28"><td class="memTemplParams" colspan="2"><a id="a4409974271d04a9ef5fd19f229eb7b28"></a>
+<tr class="memitem:a5571a89ba82040a6d6490321eb02042b"><td class="memTemplParams" colspan="2"><a id="a5571a89ba82040a6d6490321eb02042b"></a>
 template&lt;typename T , size_t N&gt; </td></tr>
-<tr class="memitem:a4409974271d04a9ef5fd19f229eb7b28"><td class="memTemplItemLeft" align="right" valign="top">XII_ALWAYS_INLINE void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>PatternFill</b> (T(&amp;destination)[N], xiiUInt8 uiBytePattern)</td></tr>
-<tr class="separator:a4409974271d04a9ef5fd19f229eb7b28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5571a89ba82040a6d6490321eb02042b"><td class="memTemplItemLeft" align="right" valign="top">XII_ALWAYS_INLINE void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>PatternFillArray</b> (T(&amp;destination)[N], xiiUInt8 uiBytePattern)</td></tr>
+<tr class="separator:a5571a89ba82040a6d6490321eb02042b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1e6007f6fc532c6edbb5c41d8d028f45"><td class="memTemplParams" colspan="2"><a id="a1e6007f6fc532c6edbb5c41d8d028f45"></a>
 template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a1e6007f6fc532c6edbb5c41d8d028f45"><td class="memTemplItemLeft" align="right" valign="top">XII_ALWAYS_INLINE xiiInt32&#160;</td><td class="memTemplItemRight" valign="bottom"><b>Compare</b> (const T *a, const T *b, size_t uiCount)</td></tr>
@@ -375,30 +375,30 @@ template&lt;typename T &gt; </td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:ae4d8d28ce0d7cb97a853fbe17c38747f"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:ae4d8d28ce0d7cb97a853fbe17c38747f"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d8/d9d/classxii_memory_utils.htm#ae4d8d28ce0d7cb97a853fbe17c38747f">Construct</a> (T *pDestination, size_t uiCount)</td></tr>
-<tr class="memdesc:ae4d8d28ce0d7cb97a853fbe17c38747f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs <em>uiCount</em> objects of type T in a raw buffer at <em>pDestination</em>.  <a href="../../d8/d9d/classxii_memory_utils.htm#ae4d8d28ce0d7cb97a853fbe17c38747f">More...</a><br /></td></tr>
-<tr class="separator:ae4d8d28ce0d7cb97a853fbe17c38747f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3da14f91515aad7930bd6524a70f40b"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:af3da14f91515aad7930bd6524a70f40b"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d8/d9d/classxii_memory_utils.htm#af3da14f91515aad7930bd6524a70f40b">Construct</a> (T *pDestination, size_t uiCount=1)</td></tr>
+<tr class="memdesc:af3da14f91515aad7930bd6524a70f40b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs <em>uiCount</em> objects of type T in a raw buffer at <em>pDestination.s</em>.  <a href="../../d8/d9d/classxii_memory_utils.htm#af3da14f91515aad7930bd6524a70f40b">More...</a><br /></td></tr>
+<tr class="separator:af3da14f91515aad7930bd6524a70f40b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a24a2580c2e0aaa578ef931e902108885"><td class="memTemplParams" colspan="2"><a id="a24a2580c2e0aaa578ef931e902108885"></a>
 template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a24a2580c2e0aaa578ef931e902108885"><td class="memTemplItemLeft" align="right" valign="top">static ConstructorFunction&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d8/d9d/classxii_memory_utils.htm#a24a2580c2e0aaa578ef931e902108885">MakeConstructorFunction</a> ()</td></tr>
 <tr class="memdesc:a24a2580c2e0aaa578ef931e902108885"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a function pointer to construct an instance of T. Returns nullptr for trivial types. <br /></td></tr>
 <tr class="separator:a24a2580c2e0aaa578ef931e902108885"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9692056f3fd14c804725ec923ba2a3da"><td class="memTemplParams" colspan="2"><a id="a9692056f3fd14c804725ec923ba2a3da"></a>
+<tr class="memitem:a245cf437a25b93067264757598b0365a"><td class="memTemplParams" colspan="2"><a id="a245cf437a25b93067264757598b0365a"></a>
 template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a9692056f3fd14c804725ec923ba2a3da"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d8/d9d/classxii_memory_utils.htm#a9692056f3fd14c804725ec923ba2a3da">DefaultConstruct</a> (T *pDestination, size_t uiCount)</td></tr>
-<tr class="memdesc:a9692056f3fd14c804725ec923ba2a3da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructs <em>uiCount</em> objects of type T in a raw buffer at <em>pDestination</em> regardless of T being a class, POD or trivial. <br /></td></tr>
-<tr class="separator:a9692056f3fd14c804725ec923ba2a3da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a245cf437a25b93067264757598b0365a"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d8/d9d/classxii_memory_utils.htm#a245cf437a25b93067264757598b0365a">DefaultConstruct</a> (T *pDestination, size_t uiCount=1)</td></tr>
+<tr class="memdesc:a245cf437a25b93067264757598b0365a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructs <em>uiCount</em> objects of type T in a raw buffer at <em>pDestination</em> regardless of T being a class, POD or trivial. <br /></td></tr>
+<tr class="separator:a245cf437a25b93067264757598b0365a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abebce9b6c8f39ea5b07e82c0f0a63e8d"><td class="memTemplParams" colspan="2"><a id="abebce9b6c8f39ea5b07e82c0f0a63e8d"></a>
 template&lt;typename T &gt; </td></tr>
 <tr class="memitem:abebce9b6c8f39ea5b07e82c0f0a63e8d"><td class="memTemplItemLeft" align="right" valign="top">static ConstructorFunction&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d8/d9d/classxii_memory_utils.htm#abebce9b6c8f39ea5b07e82c0f0a63e8d">MakeDefaultConstructorFunction</a> ()</td></tr>
 <tr class="memdesc:abebce9b6c8f39ea5b07e82c0f0a63e8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a function pointer to construct an instance of T. Always returns a constructor function regardless of T being a class, POD or trivial. <br /></td></tr>
 <tr class="separator:abebce9b6c8f39ea5b07e82c0f0a63e8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2181782ccffe2694df518ce53dba6649"><td class="memTemplParams" colspan="2"><a id="a2181782ccffe2694df518ce53dba6649"></a>
+<tr class="memitem:aece4fdeb5f8a35b58bd979302f3e9768"><td class="memTemplParams" colspan="2"><a id="aece4fdeb5f8a35b58bd979302f3e9768"></a>
 template&lt;typename Destination , typename Source &gt; </td></tr>
-<tr class="memitem:a2181782ccffe2694df518ce53dba6649"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d8/d9d/classxii_memory_utils.htm#a2181782ccffe2694df518ce53dba6649">CopyConstruct</a> (Destination *pDestination, const Source &amp;copy, size_t uiCount)</td></tr>
-<tr class="memdesc:a2181782ccffe2694df518ce53dba6649"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs <em>uiCount</em> objects of type T in a raw buffer at <em>pDestination</em>, by creating <em>uiCount</em> copies of <em>copy</em>. <br /></td></tr>
-<tr class="separator:a2181782ccffe2694df518ce53dba6649"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aece4fdeb5f8a35b58bd979302f3e9768"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d8/d9d/classxii_memory_utils.htm#aece4fdeb5f8a35b58bd979302f3e9768">CopyConstruct</a> (Destination *pDestination, const Source &amp;copy, size_t uiCount=1)</td></tr>
+<tr class="memdesc:aece4fdeb5f8a35b58bd979302f3e9768"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs <em>uiCount</em> objects of type T in a raw buffer at <em>pDestination</em>, by creating <em>uiCount</em> copies of <em>copy</em>. <br /></td></tr>
+<tr class="separator:aece4fdeb5f8a35b58bd979302f3e9768"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae8fab7dfd33a7693c95a8c58def775fd"><td class="memTemplParams" colspan="2"><a id="ae8fab7dfd33a7693c95a8c58def775fd"></a>
 template&lt;typename T &gt; </td></tr>
 <tr class="memitem:ae8fab7dfd33a7693c95a8c58def775fd"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d8/d9d/classxii_memory_utils.htm#ae8fab7dfd33a7693c95a8c58def775fd">CopyConstructArray</a> (T *pDestination, const T *pSource, size_t uiCount)</td></tr>
@@ -414,52 +414,52 @@ template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a16883e3b910453d68ffb96562b92eed4"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d8/d9d/classxii_memory_utils.htm#a16883e3b910453d68ffb96562b92eed4">MoveConstruct</a> (T *pDestination, T &amp;&amp;source)</td></tr>
 <tr class="memdesc:a16883e3b910453d68ffb96562b92eed4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs an object of type T in a raw buffer at <em>pDestination</em>, by using move construction from <em>source</em>. <br /></td></tr>
 <tr class="separator:a16883e3b910453d68ffb96562b92eed4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a244ae18c6b31fc432647c883555da106"><td class="memTemplParams" colspan="2"><a id="a244ae18c6b31fc432647c883555da106"></a>
+<tr class="memitem:aab365456e389316a9c6c123b0d67b34e"><td class="memTemplParams" colspan="2"><a id="aab365456e389316a9c6c123b0d67b34e"></a>
 template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a244ae18c6b31fc432647c883555da106"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d8/d9d/classxii_memory_utils.htm#a244ae18c6b31fc432647c883555da106">MoveConstruct</a> (T *pDestination, T *pSource, size_t uiCount)</td></tr>
-<tr class="memdesc:a244ae18c6b31fc432647c883555da106"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs <em>uiCount</em> objects of type T in a raw buffer at <em>pDestination</em> from an existing array of objects at <em>pSource</em> by using move construction. <br /></td></tr>
-<tr class="separator:a244ae18c6b31fc432647c883555da106"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab365456e389316a9c6c123b0d67b34e"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d8/d9d/classxii_memory_utils.htm#aab365456e389316a9c6c123b0d67b34e">MoveConstruct</a> (T *pDestination, T *pSource, size_t uiCount=1)</td></tr>
+<tr class="memdesc:aab365456e389316a9c6c123b0d67b34e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs <em>uiCount</em> objects of type T in a raw buffer at <em>pDestination</em> from an existing array of objects at <em>pSource</em> by using move construction. <br /></td></tr>
+<tr class="separator:aab365456e389316a9c6c123b0d67b34e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a86dc640bd82c5855ecbace5d95b1549e"><td class="memTemplParams" colspan="2"><a id="a86dc640bd82c5855ecbace5d95b1549e"></a>
 template&lt;typename Destination , typename Source &gt; </td></tr>
 <tr class="memitem:a86dc640bd82c5855ecbace5d95b1549e"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d8/d9d/classxii_memory_utils.htm#a86dc640bd82c5855ecbace5d95b1549e">CopyOrMoveConstruct</a> (Destination *pDestination, Source &amp;&amp;source)</td></tr>
 <tr class="memdesc:a86dc640bd82c5855ecbace5d95b1549e"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function will either move call MoveConstruct or CopyConstruct for a single element <em>source</em>, depending on whether it was called with a rvalue reference or a const reference to <em>source</em>. <br /></td></tr>
 <tr class="separator:a86dc640bd82c5855ecbace5d95b1549e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a03c349592cb3f5d73a6e87ee7bdaa36a"><td class="memTemplParams" colspan="2"><a id="a03c349592cb3f5d73a6e87ee7bdaa36a"></a>
+<tr class="memitem:acddb7a04ed071f62321060eb8c59ab87"><td class="memTemplParams" colspan="2"><a id="acddb7a04ed071f62321060eb8c59ab87"></a>
 template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a03c349592cb3f5d73a6e87ee7bdaa36a"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d8/d9d/classxii_memory_utils.htm#a03c349592cb3f5d73a6e87ee7bdaa36a">RelocateConstruct</a> (T *pDestination, T *pSource, size_t uiCount)</td></tr>
-<tr class="memdesc:a03c349592cb3f5d73a6e87ee7bdaa36a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs <em>uiCount</em> objects of type T in a raw buffer at <em>pDestination</em> from an existing array of objects at <em>pSource</em> by using move construction if availble, otherwise by copy construction. Calls destructor of source elements in any case (if it is a non primitive or memrelocatable type). <br /></td></tr>
-<tr class="separator:a03c349592cb3f5d73a6e87ee7bdaa36a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a07a8f07f7dbc5a8ccb1d616b37b9899c"><td class="memTemplParams" colspan="2"><a id="a07a8f07f7dbc5a8ccb1d616b37b9899c"></a>
+<tr class="memitem:acddb7a04ed071f62321060eb8c59ab87"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d8/d9d/classxii_memory_utils.htm#acddb7a04ed071f62321060eb8c59ab87">RelocateConstruct</a> (T *pDestination, T *pSource, size_t uiCount=1)</td></tr>
+<tr class="memdesc:acddb7a04ed071f62321060eb8c59ab87"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs <em>uiCount</em> objects of type T in a raw buffer at <em>pDestination</em> from an existing array of objects at <em>pSource</em> by using move construction if availble, otherwise by copy construction. Calls destructor of source elements in any case (if it is a non primitive or memrelocatable type). <br /></td></tr>
+<tr class="separator:acddb7a04ed071f62321060eb8c59ab87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c8728654ad1b5c0c9dcbb597a93594d"><td class="memTemplParams" colspan="2"><a id="a6c8728654ad1b5c0c9dcbb597a93594d"></a>
 template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a07a8f07f7dbc5a8ccb1d616b37b9899c"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d8/d9d/classxii_memory_utils.htm#a07a8f07f7dbc5a8ccb1d616b37b9899c">Destruct</a> (T *pDestination, size_t uiCount)</td></tr>
-<tr class="memdesc:a07a8f07f7dbc5a8ccb1d616b37b9899c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructs <em>uiCount</em> objects of type T at <em>pDestination</em>. <br /></td></tr>
-<tr class="separator:a07a8f07f7dbc5a8ccb1d616b37b9899c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c8728654ad1b5c0c9dcbb597a93594d"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d8/d9d/classxii_memory_utils.htm#a6c8728654ad1b5c0c9dcbb597a93594d">Destruct</a> (T *pDestination, size_t uiCount=1)</td></tr>
+<tr class="memdesc:a6c8728654ad1b5c0c9dcbb597a93594d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructs <em>uiCount</em> objects of type T at <em>pDestination</em>. <br /></td></tr>
+<tr class="separator:a6c8728654ad1b5c0c9dcbb597a93594d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3e650fe41b1daf971f0aa240cabd7e4b"><td class="memTemplParams" colspan="2"><a id="a3e650fe41b1daf971f0aa240cabd7e4b"></a>
 template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a3e650fe41b1daf971f0aa240cabd7e4b"><td class="memTemplItemLeft" align="right" valign="top">static DestructorFunction&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d8/d9d/classxii_memory_utils.htm#a3e650fe41b1daf971f0aa240cabd7e4b">MakeDestructorFunction</a> ()</td></tr>
 <tr class="memdesc:a3e650fe41b1daf971f0aa240cabd7e4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a function pointer to destruct an instance of T. Returns nullptr for POD-types. <br /></td></tr>
 <tr class="separator:a3e650fe41b1daf971f0aa240cabd7e4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab2a7ebf23393241cbcb64bdd7c4e7f62"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:ab2a7ebf23393241cbcb64bdd7c4e7f62"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d8/d9d/classxii_memory_utils.htm#ab2a7ebf23393241cbcb64bdd7c4e7f62">Copy</a> (T *pDestination, const T *pSource, size_t uiCount)</td></tr>
-<tr class="memdesc:ab2a7ebf23393241cbcb64bdd7c4e7f62"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies objects of type T from <em>pSource</em> to <em>pDestination</em>.  <a href="../../d8/d9d/classxii_memory_utils.htm#ab2a7ebf23393241cbcb64bdd7c4e7f62">More...</a><br /></td></tr>
-<tr class="separator:ab2a7ebf23393241cbcb64bdd7c4e7f62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a802d7a152c551948e45e7d0e19ae1e88"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a802d7a152c551948e45e7d0e19ae1e88"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d8/d9d/classxii_memory_utils.htm#a802d7a152c551948e45e7d0e19ae1e88">Copy</a> (T *pDestination, const T *pSource, size_t uiCount=1)</td></tr>
+<tr class="memdesc:a802d7a152c551948e45e7d0e19ae1e88"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies objects of type T from <em>pSource</em> to <em>pDestination</em>.  <a href="../../d8/d9d/classxii_memory_utils.htm#a802d7a152c551948e45e7d0e19ae1e88">More...</a><br /></td></tr>
+<tr class="separator:a802d7a152c551948e45e7d0e19ae1e88"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae398b2ac13d3229a487d1fbfa657b8eb"><td class="memItemLeft" align="right" valign="top"><a id="ae398b2ac13d3229a487d1fbfa657b8eb"></a>
 static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d9d/classxii_memory_utils.htm#ae398b2ac13d3229a487d1fbfa657b8eb">RawByteCopy</a> (void *pDestination, const void *pSource, size_t uiNumBytesToCopy)</td></tr>
 <tr class="memdesc:ae398b2ac13d3229a487d1fbfa657b8eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies exactly <em>uiNumBytesToCopy</em> from <em>pSource</em> to <em>pDestination</em>, independent of the involved types and their sizes. <br /></td></tr>
 <tr class="separator:ae398b2ac13d3229a487d1fbfa657b8eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afa215fd658fd335dd1ffe8b6ac210211"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:afa215fd658fd335dd1ffe8b6ac210211"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d8/d9d/classxii_memory_utils.htm#afa215fd658fd335dd1ffe8b6ac210211">CopyOverlapped</a> (T *pDestination, const T *pSource, size_t uiCount)</td></tr>
-<tr class="memdesc:afa215fd658fd335dd1ffe8b6ac210211"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies objects of type T from <em>pSource</em> to <em>pDestination</em>.  <a href="../../d8/d9d/classxii_memory_utils.htm#afa215fd658fd335dd1ffe8b6ac210211">More...</a><br /></td></tr>
-<tr class="separator:afa215fd658fd335dd1ffe8b6ac210211"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a02606eee67fec5b92b7d4a8e77994a2a"><td class="memTemplParams" colspan="2"><a id="a02606eee67fec5b92b7d4a8e77994a2a"></a>
+<tr class="memitem:aebfbcf3941811757985367ac3e1cb8de"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:aebfbcf3941811757985367ac3e1cb8de"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d8/d9d/classxii_memory_utils.htm#aebfbcf3941811757985367ac3e1cb8de">CopyOverlapped</a> (T *pDestination, const T *pSource, size_t uiCount=1)</td></tr>
+<tr class="memdesc:aebfbcf3941811757985367ac3e1cb8de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies objects of type T from <em>pSource</em> to <em>pDestination</em>.  <a href="../../d8/d9d/classxii_memory_utils.htm#aebfbcf3941811757985367ac3e1cb8de">More...</a><br /></td></tr>
+<tr class="separator:aebfbcf3941811757985367ac3e1cb8de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af833dc3b0241b97da5b6e2e96d67499f"><td class="memTemplParams" colspan="2"><a id="af833dc3b0241b97da5b6e2e96d67499f"></a>
 template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a02606eee67fec5b92b7d4a8e77994a2a"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d8/d9d/classxii_memory_utils.htm#a02606eee67fec5b92b7d4a8e77994a2a">Relocate</a> (T *pDestination, T *pSource, size_t uiCount)</td></tr>
-<tr class="memdesc:a02606eee67fec5b92b7d4a8e77994a2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Moves objects of type T from <em>pSource</em> to <em>pDestination</em>. <br /></td></tr>
-<tr class="separator:a02606eee67fec5b92b7d4a8e77994a2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a17e22557a2486bdd8b79c57817e93549"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a17e22557a2486bdd8b79c57817e93549"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d8/d9d/classxii_memory_utils.htm#a17e22557a2486bdd8b79c57817e93549">RelocateOverlapped</a> (T *pDestination, T *pSource, size_t uiCount)</td></tr>
-<tr class="memdesc:a17e22557a2486bdd8b79c57817e93549"><td class="mdescLeft">&#160;</td><td class="mdescRight">Moves objects of type T from <em>pSource</em> to <em>pDestination</em>.  <a href="../../d8/d9d/classxii_memory_utils.htm#a17e22557a2486bdd8b79c57817e93549">More...</a><br /></td></tr>
-<tr class="separator:a17e22557a2486bdd8b79c57817e93549"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af833dc3b0241b97da5b6e2e96d67499f"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d8/d9d/classxii_memory_utils.htm#af833dc3b0241b97da5b6e2e96d67499f">Relocate</a> (T *pDestination, T *pSource, size_t uiCount=1)</td></tr>
+<tr class="memdesc:af833dc3b0241b97da5b6e2e96d67499f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Moves objects of type T from <em>pSource</em> to <em>pDestination</em>. <br /></td></tr>
+<tr class="separator:af833dc3b0241b97da5b6e2e96d67499f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87bf347cd7290d597774bfead29edb46"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a87bf347cd7290d597774bfead29edb46"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d8/d9d/classxii_memory_utils.htm#a87bf347cd7290d597774bfead29edb46">RelocateOverlapped</a> (T *pDestination, T *pSource, size_t uiCount=1)</td></tr>
+<tr class="memdesc:a87bf347cd7290d597774bfead29edb46"><td class="mdescLeft">&#160;</td><td class="mdescRight">Moves objects of type T from <em>pSource</em> to <em>pDestination</em>.  <a href="../../d8/d9d/classxii_memory_utils.htm#a87bf347cd7290d597774bfead29edb46">More...</a><br /></td></tr>
+<tr class="separator:a87bf347cd7290d597774bfead29edb46"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a37c0501684dc3bcc11f47bf8d77bcfa5"><td class="memTemplParams" colspan="2"><a id="a37c0501684dc3bcc11f47bf8d77bcfa5"></a>
 template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a37c0501684dc3bcc11f47bf8d77bcfa5"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d8/d9d/classxii_memory_utils.htm#a37c0501684dc3bcc11f47bf8d77bcfa5">Prepend</a> (T *pDestination, const T &amp;source, size_t uiCount)</td></tr>
@@ -470,36 +470,36 @@ template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a92a1e1a322b07566aec73065a5c599f0"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d8/d9d/classxii_memory_utils.htm#a92a1e1a322b07566aec73065a5c599f0">Prepend</a> (T *pDestination, T &amp;&amp;source, size_t uiCount)</td></tr>
 <tr class="memdesc:a92a1e1a322b07566aec73065a5c599f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Moves <em>uiCount</em> objects in <em>pDestination</em> by one object and moves <em>source</em> to the free space. <br /></td></tr>
 <tr class="separator:a92a1e1a322b07566aec73065a5c599f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a32a1a481ce09dc4a2e2970d18b0cc14a"><td class="memTemplParams" colspan="2"><a id="a32a1a481ce09dc4a2e2970d18b0cc14a"></a>
+<tr class="memitem:af8b797b996ed13cf68f5878d3cf7427b"><td class="memTemplParams" colspan="2"><a id="af8b797b996ed13cf68f5878d3cf7427b"></a>
 template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a32a1a481ce09dc4a2e2970d18b0cc14a"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d8/d9d/classxii_memory_utils.htm#a32a1a481ce09dc4a2e2970d18b0cc14a">Prepend</a> (T *pDestination, const T *source, size_t uiSourceCount, size_t uiCount)</td></tr>
-<tr class="memdesc:a32a1a481ce09dc4a2e2970d18b0cc14a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Moves <em>uiCount</em> objects in <em>pDestination</em> by <em>uiSourceCount</em> objects and copies <em>source</em> to the free space. <br /></td></tr>
-<tr class="separator:a32a1a481ce09dc4a2e2970d18b0cc14a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8b797b996ed13cf68f5878d3cf7427b"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d8/d9d/classxii_memory_utils.htm#af8b797b996ed13cf68f5878d3cf7427b">Prepend</a> (T *pDestination, const T *pSource, size_t uiSourceCount, size_t uiCount)</td></tr>
+<tr class="memdesc:af8b797b996ed13cf68f5878d3cf7427b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Moves <em>uiCount</em> objects in <em>pDestination</em> by <em>uiSourceCount</em> objects and copies <em>source</em> to the free space. <br /></td></tr>
+<tr class="separator:af8b797b996ed13cf68f5878d3cf7427b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a82f92064b280ab0015bd5a88c42618bc"><td class="memTemplParams" colspan="2"><a id="a82f92064b280ab0015bd5a88c42618bc"></a>
 template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a82f92064b280ab0015bd5a88c42618bc"><td class="memTemplItemLeft" align="right" valign="top">static bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d8/d9d/classxii_memory_utils.htm#a82f92064b280ab0015bd5a88c42618bc">IsEqual</a> (const T *a, const T *b, size_t uiCount=1)</td></tr>
 <tr class="memdesc:a82f92064b280ab0015bd5a88c42618bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tests if objects of type T from <em>pSource</em> and <em>pDestination</em> are equal. <br /></td></tr>
 <tr class="separator:a82f92064b280ab0015bd5a88c42618bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a81836e063ab5d7ce1d29e5cfc5357f1c"><td class="memTemplParams" colspan="2"><a id="a81836e063ab5d7ce1d29e5cfc5357f1c"></a>
+<tr class="memitem:aa46340f1eaae0121ec1bcb712ea2755f"><td class="memTemplParams" colspan="2"><a id="aa46340f1eaae0121ec1bcb712ea2755f"></a>
 template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a81836e063ab5d7ce1d29e5cfc5357f1c"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d8/d9d/classxii_memory_utils.htm#a81836e063ab5d7ce1d29e5cfc5357f1c">ZeroFill</a> (T *pDestination, size_t uiCount)</td></tr>
-<tr class="memdesc:a81836e063ab5d7ce1d29e5cfc5357f1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Zeros every byte in the provided memory buffer. <br /></td></tr>
-<tr class="separator:a81836e063ab5d7ce1d29e5cfc5357f1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4856f13ad7dee862c02325c08bb48ce2"><td class="memTemplParams" colspan="2"><a id="a4856f13ad7dee862c02325c08bb48ce2"></a>
+<tr class="memitem:aa46340f1eaae0121ec1bcb712ea2755f"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d8/d9d/classxii_memory_utils.htm#aa46340f1eaae0121ec1bcb712ea2755f">ZeroFill</a> (T *pDestination, size_t uiCount=1)</td></tr>
+<tr class="memdesc:aa46340f1eaae0121ec1bcb712ea2755f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Zeros every byte in the provided memory buffer. <br /></td></tr>
+<tr class="separator:aa46340f1eaae0121ec1bcb712ea2755f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac489879b6d9d0d6e7846d27f694d6a09"><td class="memTemplParams" colspan="2"><a id="ac489879b6d9d0d6e7846d27f694d6a09"></a>
 template&lt;typename T , size_t N&gt; </td></tr>
-<tr class="memitem:a4856f13ad7dee862c02325c08bb48ce2"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d8/d9d/classxii_memory_utils.htm#a4856f13ad7dee862c02325c08bb48ce2">ZeroFill</a> (T(&amp;destination)[N])</td></tr>
-<tr class="memdesc:a4856f13ad7dee862c02325c08bb48ce2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Zeros every byte in the provided memory buffer. <br /></td></tr>
-<tr class="separator:a4856f13ad7dee862c02325c08bb48ce2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a988eb37e48878dad6f429dce76771d95"><td class="memTemplParams" colspan="2"><a id="a988eb37e48878dad6f429dce76771d95"></a>
+<tr class="memitem:ac489879b6d9d0d6e7846d27f694d6a09"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d8/d9d/classxii_memory_utils.htm#ac489879b6d9d0d6e7846d27f694d6a09">ZeroFillArray</a> (T(&amp;destination)[N])</td></tr>
+<tr class="memdesc:ac489879b6d9d0d6e7846d27f694d6a09"><td class="mdescLeft">&#160;</td><td class="mdescRight">Zeros every byte in the provided memory buffer. <br /></td></tr>
+<tr class="separator:ac489879b6d9d0d6e7846d27f694d6a09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82d1689dbbce07b7432809db6f56db84"><td class="memTemplParams" colspan="2"><a id="a82d1689dbbce07b7432809db6f56db84"></a>
 template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a988eb37e48878dad6f429dce76771d95"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d8/d9d/classxii_memory_utils.htm#a988eb37e48878dad6f429dce76771d95">PatternFill</a> (T *pDestination, xiiUInt8 uiBytePattern, size_t uiCount)</td></tr>
-<tr class="memdesc:a988eb37e48878dad6f429dce76771d95"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fills every byte of the provided buffer with the given value. <br /></td></tr>
-<tr class="separator:a988eb37e48878dad6f429dce76771d95"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaa89fc85b9b686c72a00018cf5b70d37"><td class="memTemplParams" colspan="2"><a id="aaa89fc85b9b686c72a00018cf5b70d37"></a>
+<tr class="memitem:a82d1689dbbce07b7432809db6f56db84"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d8/d9d/classxii_memory_utils.htm#a82d1689dbbce07b7432809db6f56db84">PatternFill</a> (T *pDestination, xiiUInt8 uiBytePattern, size_t uiCount=1)</td></tr>
+<tr class="memdesc:a82d1689dbbce07b7432809db6f56db84"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fills every byte of the provided buffer with the given value. <br /></td></tr>
+<tr class="separator:a82d1689dbbce07b7432809db6f56db84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0657820caa2f079d1f1595316f2f992"><td class="memTemplParams" colspan="2"><a id="ac0657820caa2f079d1f1595316f2f992"></a>
 template&lt;typename T , size_t N&gt; </td></tr>
-<tr class="memitem:aaa89fc85b9b686c72a00018cf5b70d37"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d8/d9d/classxii_memory_utils.htm#aaa89fc85b9b686c72a00018cf5b70d37">PatternFill</a> (T(&amp;destination)[N], xiiUInt8 uiBytePattern)</td></tr>
-<tr class="memdesc:aaa89fc85b9b686c72a00018cf5b70d37"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fills every byte of the provided buffer with the given value. <br /></td></tr>
-<tr class="separator:aaa89fc85b9b686c72a00018cf5b70d37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0657820caa2f079d1f1595316f2f992"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d8/d9d/classxii_memory_utils.htm#ac0657820caa2f079d1f1595316f2f992">PatternFillArray</a> (T(&amp;destination)[N], xiiUInt8 uiBytePattern)</td></tr>
+<tr class="memdesc:ac0657820caa2f079d1f1595316f2f992"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fills every byte of the provided buffer with the given value. <br /></td></tr>
+<tr class="separator:ac0657820caa2f079d1f1595316f2f992"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af5a4a8c395b376137b66eaa16e633ab6"><td class="memTemplParams" colspan="2"><a id="af5a4a8c395b376137b66eaa16e633ab6"></a>
 template&lt;typename T &gt; </td></tr>
 <tr class="memitem:af5a4a8c395b376137b66eaa16e633ab6"><td class="memTemplItemLeft" align="right" valign="top">static xiiInt32&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d8/d9d/classxii_memory_utils.htm#af5a4a8c395b376137b66eaa16e633ab6">Compare</a> (const T *a, const T *b, size_t uiCount=1)</td></tr>
@@ -509,30 +509,30 @@ template&lt;typename T &gt; </td></tr>
 static xiiInt32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d9d/classxii_memory_utils.htm#a763dcee45dee6711685b5c9f6aed4442">RawByteCompare</a> (const void *a, const void *b, size_t uiNumBytesToCompare)</td></tr>
 <tr class="memdesc:a763dcee45dee6711685b5c9f6aed4442"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compares exactly <em>uiNumBytesToCompare</em> from <em>a</em> and <em>b</em>, independent of the involved types and their sizes. <br /></td></tr>
 <tr class="separator:a763dcee45dee6711685b5c9f6aed4442"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a73bcd8906ae86426c7db94716596f58f"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a73bcd8906ae86426c7db94716596f58f"><td class="memTemplItemLeft" align="right" valign="top">static T *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d8/d9d/classxii_memory_utils.htm#a73bcd8906ae86426c7db94716596f58f">AddByteOffset</a> (T *ptr, ptrdiff_t iOffset)</td></tr>
-<tr class="memdesc:a73bcd8906ae86426c7db94716596f58f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the address stored in <em>ptr</em> plus the given byte offset <em>iOffset</em>, cast to type <em>T</em>.  <a href="../../d8/d9d/classxii_memory_utils.htm#a73bcd8906ae86426c7db94716596f58f">More...</a><br /></td></tr>
-<tr class="separator:a73bcd8906ae86426c7db94716596f58f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8a508f58238517418a85412491ca9983"><td class="memTemplParams" colspan="2"><a id="a8a508f58238517418a85412491ca9983"></a>
+<tr class="memitem:ab25d38b037822ed8c510f8756feaf7e7"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:ab25d38b037822ed8c510f8756feaf7e7"><td class="memTemplItemLeft" align="right" valign="top">static T *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d8/d9d/classxii_memory_utils.htm#ab25d38b037822ed8c510f8756feaf7e7">AddByteOffset</a> (T *pPtr, ptrdiff_t iOffset)</td></tr>
+<tr class="memdesc:ab25d38b037822ed8c510f8756feaf7e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the address stored in <em>ptr</em> plus the given byte offset <em>iOffset</em>, cast to type <em>T</em>.  <a href="../../d8/d9d/classxii_memory_utils.htm#ab25d38b037822ed8c510f8756feaf7e7">More...</a><br /></td></tr>
+<tr class="separator:ab25d38b037822ed8c510f8756feaf7e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29c4bbca4faffdf508bd5a24bf52d563"><td class="memTemplParams" colspan="2"><a id="a29c4bbca4faffdf508bd5a24bf52d563"></a>
 template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a8a508f58238517418a85412491ca9983"><td class="memTemplItemLeft" align="right" valign="top">static T *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d8/d9d/classxii_memory_utils.htm#a8a508f58238517418a85412491ca9983">AlignBackwards</a> (T *ptr, size_t uiAlignment)</td></tr>
-<tr class="memdesc:a8a508f58238517418a85412491ca9983"><td class="mdescLeft">&#160;</td><td class="mdescRight">Aligns the pointer <em>ptr</em> by moving its address backwards to the previous multiple of <em>uiAlignment</em>. <br /></td></tr>
-<tr class="separator:a8a508f58238517418a85412491ca9983"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a02df72276bb5bb5d2dddb3e77deb538d"><td class="memTemplParams" colspan="2"><a id="a02df72276bb5bb5d2dddb3e77deb538d"></a>
+<tr class="memitem:a29c4bbca4faffdf508bd5a24bf52d563"><td class="memTemplItemLeft" align="right" valign="top">static T *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d8/d9d/classxii_memory_utils.htm#a29c4bbca4faffdf508bd5a24bf52d563">AlignBackwards</a> (T *pPtr, size_t uiAlignment)</td></tr>
+<tr class="memdesc:a29c4bbca4faffdf508bd5a24bf52d563"><td class="mdescLeft">&#160;</td><td class="mdescRight">Aligns the pointer <em>ptr</em> by moving its address backwards to the previous multiple of <em>uiAlignment</em>. <br /></td></tr>
+<tr class="separator:a29c4bbca4faffdf508bd5a24bf52d563"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aabfccfea65b8bacddffdd4cdebb11a39"><td class="memTemplParams" colspan="2"><a id="aabfccfea65b8bacddffdd4cdebb11a39"></a>
 template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a02df72276bb5bb5d2dddb3e77deb538d"><td class="memTemplItemLeft" align="right" valign="top">static T *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d8/d9d/classxii_memory_utils.htm#a02df72276bb5bb5d2dddb3e77deb538d">AlignForwards</a> (T *ptr, size_t uiAlignment)</td></tr>
-<tr class="memdesc:a02df72276bb5bb5d2dddb3e77deb538d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Aligns the pointer <em>ptr</em> by moving its address forwards to the next multiple of <em>uiAlignment</em>. <br /></td></tr>
-<tr class="separator:a02df72276bb5bb5d2dddb3e77deb538d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aabfccfea65b8bacddffdd4cdebb11a39"><td class="memTemplItemLeft" align="right" valign="top">static T *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d8/d9d/classxii_memory_utils.htm#aabfccfea65b8bacddffdd4cdebb11a39">AlignForwards</a> (T *pPtr, size_t uiAlignment)</td></tr>
+<tr class="memdesc:aabfccfea65b8bacddffdd4cdebb11a39"><td class="mdescLeft">&#160;</td><td class="mdescRight">Aligns the pointer <em>ptr</em> by moving its address forwards to the next multiple of <em>uiAlignment</em>. <br /></td></tr>
+<tr class="separator:aabfccfea65b8bacddffdd4cdebb11a39"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a49b9826f878346f165be1d4b0f85a819"><td class="memTemplParams" colspan="2"><a id="a49b9826f878346f165be1d4b0f85a819"></a>
 template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a49b9826f878346f165be1d4b0f85a819"><td class="memTemplItemLeft" align="right" valign="top">static T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d8/d9d/classxii_memory_utils.htm#a49b9826f878346f165be1d4b0f85a819">AlignSize</a> (T uiSize, T uiAlignment)</td></tr>
 <tr class="memdesc:a49b9826f878346f165be1d4b0f85a819"><td class="mdescLeft">&#160;</td><td class="mdescRight">Aligns the given size <em>uiSize</em> by rounding up to the next multiple of the size. <br /></td></tr>
 <tr class="separator:a49b9826f878346f165be1d4b0f85a819"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a67102b62f012216ffab8972419d2197f"><td class="memTemplParams" colspan="2"><a id="a67102b62f012216ffab8972419d2197f"></a>
+<tr class="memitem:abe0de153a571b0a2cf908bb4b729de36"><td class="memTemplParams" colspan="2"><a id="abe0de153a571b0a2cf908bb4b729de36"></a>
 template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a67102b62f012216ffab8972419d2197f"><td class="memTemplItemLeft" align="right" valign="top">static bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d8/d9d/classxii_memory_utils.htm#a67102b62f012216ffab8972419d2197f">IsAligned</a> (const T *ptr, size_t uiAlignment)</td></tr>
-<tr class="memdesc:a67102b62f012216ffab8972419d2197f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether <em>ptr</em> is aligned to a memory address that is a multiple of <em>uiAlignment</em>. <br /></td></tr>
-<tr class="separator:a67102b62f012216ffab8972419d2197f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe0de153a571b0a2cf908bb4b729de36"><td class="memTemplItemLeft" align="right" valign="top">static bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d8/d9d/classxii_memory_utils.htm#abe0de153a571b0a2cf908bb4b729de36">IsAligned</a> (const T *pPtr, size_t uiAlignment)</td></tr>
+<tr class="memdesc:abe0de153a571b0a2cf908bb4b729de36"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether <em>ptr</em> is aligned to a memory address that is a multiple of <em>uiAlignment</em>. <br /></td></tr>
+<tr class="separator:abe0de153a571b0a2cf908bb4b729de36"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab9628a593bc5ab8c9331e5c613c26281"><td class="memTemplParams" colspan="2"><a id="ab9628a593bc5ab8c9331e5c613c26281"></a>
 template&lt;typename T &gt; </td></tr>
 <tr class="memitem:ab9628a593bc5ab8c9331e5c613c26281"><td class="memTemplItemLeft" align="right" valign="top">static bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d8/d9d/classxii_memory_utils.htm#ab9628a593bc5ab8c9331e5c613c26281">IsSizeAligned</a> (T uiSize, T uiAlignment)</td></tr>
@@ -546,8 +546,8 @@ template&lt;typename T &gt; </td></tr>
 <div class="textblock"><p>This class provides functions to work on raw memory. </p>
 <p>The following concepts are realized: Copy: Copying a object from a to b means that two equivalent objects will exists in both a and b. Move: Moving an object from a to b means that the object will exist in b afterwards but a will be empty afterwards, but not destructed. This strictly requires an available move constructor (compile error otherwise). Relocate: Relocating an object from a to b means that the object will exist in b afterwards but will no longer exist in a, which means a will be moved if available or copied, but destructed afterwards in any case. Construct: Constructing assumes that the destination does not contain a valid object. Overlapped: The source and destination range may overlap for the operation to be performed. The above mentioned concepts can be combined, e.g. RelocateConstruct for relocating to an uninitialized buffer. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a73bcd8906ae86426c7db94716596f58f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a73bcd8906ae86426c7db94716596f58f">&#9670;&nbsp;</a></span>AddByteOffset()</h2>
+<a id="ab25d38b037822ed8c510f8756feaf7e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab25d38b037822ed8c510f8756feaf7e7">&#9670;&nbsp;</a></span>AddByteOffset()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -561,7 +561,7 @@ template&lt;typename T &gt; </div>
           <td class="memname">static T* xiiMemoryUtils::AddByteOffset </td>
           <td>(</td>
           <td class="paramtype">T *&#160;</td>
-          <td class="paramname"><em>ptr</em>, </td>
+          <td class="paramname"><em>pPtr</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -587,8 +587,8 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="ae4d8d28ce0d7cb97a853fbe17c38747f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae4d8d28ce0d7cb97a853fbe17c38747f">&#9670;&nbsp;</a></span>Construct()</h2>
+<a id="af3da14f91515aad7930bd6524a70f40b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af3da14f91515aad7930bd6524a70f40b">&#9670;&nbsp;</a></span>Construct()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -608,7 +608,7 @@ template&lt;typename T &gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>uiCount</em>&#160;</td>
+          <td class="paramname"><em>uiCount</em> = <code>1</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -623,13 +623,13 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Constructs <em>uiCount</em> objects of type T in a raw buffer at <em>pDestination</em>. </p>
+<p>Constructs <em>uiCount</em> objects of type T in a raw buffer at <em>pDestination.s</em>. </p>
 <p>You should use 'DefaultConstruct' instead if default construction is needed for trivial types as well. </p>
 
 </div>
 </div>
-<a id="ab2a7ebf23393241cbcb64bdd7c4e7f62"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab2a7ebf23393241cbcb64bdd7c4e7f62">&#9670;&nbsp;</a></span>Copy()</h2>
+<a id="a802d7a152c551948e45e7d0e19ae1e88"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a802d7a152c551948e45e7d0e19ae1e88">&#9670;&nbsp;</a></span>Copy()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -655,7 +655,7 @@ template&lt;typename T &gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>uiCount</em>&#160;</td>
+          <td class="paramname"><em>uiCount</em> = <code>1</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -675,8 +675,8 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="afa215fd658fd335dd1ffe8b6ac210211"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afa215fd658fd335dd1ffe8b6ac210211">&#9670;&nbsp;</a></span>CopyOverlapped()</h2>
+<a id="aebfbcf3941811757985367ac3e1cb8de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aebfbcf3941811757985367ac3e1cb8de">&#9670;&nbsp;</a></span>CopyOverlapped()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -702,7 +702,7 @@ template&lt;typename T &gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>uiCount</em>&#160;</td>
+          <td class="paramname"><em>uiCount</em> = <code>1</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -722,8 +722,8 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="a17e22557a2486bdd8b79c57817e93549"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a17e22557a2486bdd8b79c57817e93549">&#9670;&nbsp;</a></span>RelocateOverlapped()</h2>
+<a id="a87bf347cd7290d597774bfead29edb46"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a87bf347cd7290d597774bfead29edb46">&#9670;&nbsp;</a></span>RelocateOverlapped()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -749,7 +749,7 @@ template&lt;typename T &gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>uiCount</em>&#160;</td>
+          <td class="paramname"><em>uiCount</em> = <code>1</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -809,7 +809,7 @@ template&lt;typename T &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d8/d9d/classxii_memory_utils.htm">xiiMemoryUtils</a></li>
-    <li class="footer">Generated on Fri Mar 24 2023 17:20:23 for XIIEngine by
+    <li class="footer">Generated on Mon Apr 17 2023 20:10:39 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

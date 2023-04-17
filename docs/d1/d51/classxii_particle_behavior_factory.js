@@ -3,7 +3,7 @@ var classxii_particle_behavior_factory =
     [ "CopyBehaviorProperties", "d1/d51/classxii_particle_behavior_factory.htm#a82ca8f629bff9ec9e1cea089ed5ccea4", null ],
     [ "CreateBehavior", "d1/d51/classxii_particle_behavior_factory.htm#adac93a94aef93382f173db5faadebc1f", null ],
     [ "GetBehaviorType", "d1/d51/classxii_particle_behavior_factory.htm#ae79f255a0a21cb22863fd03271178e0a", null ],
-    [ "Load", "d1/d51/classxii_particle_behavior_factory.htm#aec2d04f336dc34783d9c8a0a2f863dc3", null ],
-    [ "QueryFinalizerDependencies", "d1/d51/classxii_particle_behavior_factory.htm#a2b35c731c2a834f11050f602d76e9032", null ],
-    [ "Save", "d1/d51/classxii_particle_behavior_factory.htm#adc70ccf91833d93f3ef46b0b4f453922", null ]
+    [ "Load", "d1/d51/classxii_particle_behavior_factory.htm#a09d7d55ef8eec805bb684411846692ce", null ],
+    [ "QueryFinalizerDependencies", "d1/d51/classxii_particle_behavior_factory.htm#ab49967e3df03d7877492d5c90c17ef6c", null ],
+    [ "Save", "d1/d51/classxii_particle_behavior_factory.htm#a8cb75749d79dab2237e4f58dae8e000a", null ]
 ];

@@ -53,6 +53,6 @@ var classxii_scene_action =
     [ "xiiSceneAction", "d8/dda/classxii_scene_action.htm#ab5aeb6b0fa85cb661ce6f3715b656333", null ],
     [ "~xiiSceneAction", "d8/dda/classxii_scene_action.htm#ad0b23b5ceb0d0b3e1b7791a53238a137", null ],
     [ "Execute", "d8/dda/classxii_scene_action.htm#aea1b016dac702798c6c8b76c8d03cf7c", null ],
-    [ "GetPlayerCommandLine", "d8/dda/classxii_scene_action.htm#a6138fc13130129a1a35a468f4f9f3ecc", null ],
+    [ "GetPlayerCommandLine", "d8/dda/classxii_scene_action.htm#a948168edad65fe921b2cc01602e87e57", null ],
     [ "LaunchPlayer", "d8/dda/classxii_scene_action.htm#ab2507d8b97b5f0f4434e7580726a36dd", null ]
 ];

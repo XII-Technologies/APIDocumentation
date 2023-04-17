@@ -3,7 +3,7 @@ var classxii_particle_trail_renderer =
     [ "xiiParticleTrailRenderer", "d7/dd8/classxii_particle_trail_renderer.htm#a3d598a8bafdc8275221da3c608dc8990", null ],
     [ "~xiiParticleTrailRenderer", "d7/dd8/classxii_particle_trail_renderer.htm#ab6b5848dd46b5da0b4e316d00744be24", null ],
     [ "ConfigureShader", "d7/dd8/classxii_particle_trail_renderer.htm#a2381cfb1f72f1458e5c6b9c102063d76", null ],
-    [ "GetSupportedRenderDataTypes", "d7/dd8/classxii_particle_trail_renderer.htm#a9a56784295431ee531c5c7619a22907d", null ],
+    [ "GetSupportedRenderDataTypes", "d7/dd8/classxii_particle_trail_renderer.htm#aa198902684d338e4869d8001e1422e43", null ],
     [ "RenderBatch", "d7/dd8/classxii_particle_trail_renderer.htm#afe9e18f70e76cd4787c516d349297bdc", null ],
     [ "m_hActiveTrailPointsDataBuffer", "d7/dd8/classxii_particle_trail_renderer.htm#af7fe10f8e527a4c7069f560dabd0ceb6", null ],
     [ "m_hBaseDataBuffer", "d7/dd8/classxii_particle_trail_renderer.htm#a0d9f749cf41314b69fe16c976d2ec811", null ],

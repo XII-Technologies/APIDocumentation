@@ -91,44 +91,30 @@ $(document).ready(function(){initNavTree('df/d5f/_shape_icon_component_8h_source
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;Core/World/Component.h&gt;</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;Core/World/World.h&gt;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;EditorEngineProcessFramework/SceneExport/SceneExportModifier.h&gt;</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;GameEngine/GameEngineDLL.h&gt;</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">typedef</span> <a class="code" href="../../d4/d5d/classxii_component_manager.htm">xiiComponentManager&lt;class xiiShapeIconComponent, xiiBlockStorageType::Compact&gt;</a> <a class="code" href="../../d4/d5d/classxii_component_manager.htm">xiiShapeIconComponentManager</a>;</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
-<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="../../d9/d83/classxii_shape_icon_component.htm">   13</a></span>&#160;<span class="keyword">class </span>XII_ENGINEPLUGINSCENE_DLL <a class="code" href="../../d9/d83/classxii_shape_icon_component.htm">xiiShapeIconComponent</a> : <span class="keyword">public</span> <a class="code" href="../../db/d60/classxii_component.htm">xiiComponent</a></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;{</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;  XII_DECLARE_COMPONENT_TYPE(<a class="code" href="../../d9/d83/classxii_shape_icon_component.htm">xiiShapeIconComponent</a>, <a class="code" href="../../db/d60/classxii_component.htm">xiiComponent</a>, <a class="code" href="../../d4/d5d/classxii_component_manager.htm">xiiShapeIconComponentManager</a>);</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;  <span class="comment">// xiiShapeIconComponent</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  <a class="code" href="../../d9/d83/classxii_shape_icon_component.htm">xiiShapeIconComponent</a>();</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  ~<a class="code" href="../../d9/d83/classxii_shape_icon_component.htm">xiiShapeIconComponent</a>();</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;};</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
-<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="../../d3/d65/classxii_scene_export_modifier___remove_shape_icon_components.htm">   27</a></span>&#160;<span class="keyword">class </span>XII_ENGINEPLUGINSCENE_DLL <a class="code" href="../../d3/d65/classxii_scene_export_modifier___remove_shape_icon_components.htm">xiiSceneExportModifier_RemoveShapeIconComponents</a> : <span class="keyword">public</span> <a class="code" href="../../de/db8/classxii_scene_export_modifier.htm">xiiSceneExportModifier</a></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;{</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  XII_ADD_DYNAMIC_REFLECTION(<a class="code" href="../../d3/d65/classxii_scene_export_modifier___remove_shape_icon_components.htm">xiiSceneExportModifier_RemoveShapeIconComponents</a>, <a class="code" href="../../de/db8/classxii_scene_export_modifier.htm">xiiSceneExportModifier</a>);</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> ModifyWorld(<a class="code" href="../../d6/d89/classxii_world.htm">xiiWorld</a>&amp; world, <span class="keyword">const</span> <a class="code" href="../../dc/d1d/classxii_uuid.htm">xiiUuid</a>&amp; documentGuid, <span class="keywordtype">bool</span> bForExport) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;};</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;GameEngine/GameEngineDLL.h&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">using</span> <a class="code" href="../../d4/d5d/classxii_component_manager.htm">xiiShapeIconComponentManager</a> = <a class="code" href="../../d4/d5d/classxii_component_manager.htm">xiiComponentManager&lt;class xiiShapeIconComponent, xiiBlockStorageType::Compact&gt;</a>;</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="../../d9/d83/classxii_shape_icon_component.htm">   12</a></span>&#160;<span class="keyword">class </span>XII_ENGINEPLUGINSCENE_DLL <a class="code" href="../../d9/d83/classxii_shape_icon_component.htm">xiiShapeIconComponent</a> : <span class="keyword">public</span> <a class="code" href="../../db/d60/classxii_component.htm">xiiComponent</a></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;{</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;  XII_DECLARE_COMPONENT_TYPE(<a class="code" href="../../d9/d83/classxii_shape_icon_component.htm">xiiShapeIconComponent</a>, <a class="code" href="../../db/d60/classxii_component.htm">xiiComponent</a>, <a class="code" href="../../d4/d5d/classxii_component_manager.htm">xiiShapeIconComponentManager</a>);</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;  <span class="comment">// xiiShapeIconComponent</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  <a class="code" href="../../d9/d83/classxii_shape_icon_component.htm">xiiShapeIconComponent</a>();</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  ~<a class="code" href="../../d9/d83/classxii_shape_icon_component.htm">xiiShapeIconComponent</a>();</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;};</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclassxii_world_htm"><div class="ttname"><a href="../../d6/d89/classxii_world.htm">xiiWorld</a></div><div class="ttdoc">A world encapsulates a scene graph of game objects and various component managers and their component...</div><div class="ttdef"><b>Definition:</b> World.h:21</div></div>
 <div class="ttc" id="aclassxii_component_htm"><div class="ttname"><a href="../../db/d60/classxii_component.htm">xiiComponent</a></div><div class="ttdoc">Base class of all component types.</div><div class="ttdef"><b>Definition:</b> Component.h:24</div></div>
-<div class="ttc" id="aclassxii_shape_icon_component_htm"><div class="ttname"><a href="../../d9/d83/classxii_shape_icon_component.htm">xiiShapeIconComponent</a></div><div class="ttdoc">This is a dummy component that the editor creates on all 'empty' nodes for the sole purpose to render...</div><div class="ttdef"><b>Definition:</b> ShapeIconComponent.h:13</div></div>
-<div class="ttc" id="aclassxii_scene_export_modifier___remove_shape_icon_components_htm"><div class="ttname"><a href="../../d3/d65/classxii_scene_export_modifier___remove_shape_icon_components.htm">xiiSceneExportModifier_RemoveShapeIconComponents</a></div><div class="ttdef"><b>Definition:</b> ShapeIconComponent.h:27</div></div>
+<div class="ttc" id="aclassxii_shape_icon_component_htm"><div class="ttname"><a href="../../d9/d83/classxii_shape_icon_component.htm">xiiShapeIconComponent</a></div><div class="ttdoc">This is a dummy component that the editor creates on all 'empty' nodes for the sole purpose to render...</div><div class="ttdef"><b>Definition:</b> ShapeIconComponent.h:12</div></div>
 <div class="ttc" id="aclassxii_component_manager_htm"><div class="ttname"><a href="../../d4/d5d/classxii_component_manager.htm">xiiComponentManager</a></div><div class="ttdef"><b>Definition:</b> ComponentManager.h:87</div></div>
-<div class="ttc" id="aclassxii_scene_export_modifier_htm"><div class="ttname"><a href="../../de/db8/classxii_scene_export_modifier.htm">xiiSceneExportModifier</a></div><div class="ttdef"><b>Definition:</b> SceneExportModifier.h:8</div></div>
-<div class="ttc" id="aclassxii_uuid_htm"><div class="ttname"><a href="../../dc/d1d/classxii_uuid.htm">xiiUuid</a></div><div class="ttdoc">This data type is the abstraction for 128-bit Uuid (also known as GUID) instances.</div><div class="ttdef"><b>Definition:</b> Uuid.h:10</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.htm">home</a></li><li class="navelem"><a class="el" href="../../dir_1036706e55c22cab35bc1c58ee689f1d.htm">runner</a></li><li class="navelem"><a class="el" href="../../dir_629f8151d55d307162ff2d619fb1783d.htm">work</a></li><li class="navelem"><a class="el" href="../../dir_1ddc44fe1263a8c7935fa6130b7d9499.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_2c1b6808f12952f4c36e05ba7068379a.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_b5a1c4ecfca018ad24b729e213296d41.htm">Source</a></li><li class="navelem"><a class="el" href="../../dir_8b2872ebfb9e9766b55af832f324e224.htm">EditorPlugins</a></li><li class="navelem"><a class="el" href="../../dir_c642feaeb18ef88402e5c1122103be28.htm">Scene</a></li><li class="navelem"><a class="el" href="../../dir_63518dabd7b797596422f4226e48248e.htm">EnginePluginScene</a></li><li class="navelem"><a class="el" href="../../dir_f1145ee7dbce7a2695caa21a9ebff8e3.htm">Components</a></li><li class="navelem"><b>ShapeIconComponent.h</b></li>
-    <li class="footer">Generated on Fri Mar 24 2023 17:20:08 for XIIEngine by
+    <li class="footer">Generated on Mon Apr 17 2023 20:10:25 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

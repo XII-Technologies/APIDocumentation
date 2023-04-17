@@ -172,9 +172,9 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsModified</b> () con
 <tr class="memitem:ae95a8b7b4843fd9a56f1e35412c78572 inherit pub_methods_classxii_document"><td class="memItemLeft" align="right" valign="top"><a id="ae95a8b7b4843fd9a56f1e35412c78572"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsReadOnly</b> () const</td></tr>
 <tr class="separator:ae95a8b7b4843fd9a56f1e35412c78572 inherit pub_methods_classxii_document"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a105896ae0cab9fdba83692acf4f498e0 inherit pub_methods_classxii_document"><td class="memItemLeft" align="right" valign="top"><a id="a105896ae0cab9fdba83692acf4f498e0"></a>
-const <a class="el" href="../../dc/d1d/classxii_uuid.htm">xiiUuid</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetGuid</b> () const</td></tr>
-<tr class="separator:a105896ae0cab9fdba83692acf4f498e0 inherit pub_methods_classxii_document"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28f3e049f7e507a374643dc892fadc21 inherit pub_methods_classxii_document"><td class="memItemLeft" align="right" valign="top"><a id="a28f3e049f7e507a374643dc892fadc21"></a>
+const <a class="el" href="../../dc/d1d/classxii_uuid.htm">xiiUuid</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetGuid</b> () const</td></tr>
+<tr class="separator:a28f3e049f7e507a374643dc892fadc21 inherit pub_methods_classxii_document"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a86ca8277865e8a39d4e6e70367a08cf0 inherit pub_methods_classxii_document"><td class="memItemLeft" align="right" valign="top"><a id="a86ca8277865e8a39d4e6e70367a08cf0"></a>
 const <a class="el" href="../../d2/d8c/classxii_document_object_manager.htm">xiiDocumentObjectManager</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetObjectManager</b> () const</td></tr>
 <tr class="separator:a86ca8277865e8a39d4e6e70367a08cf0 inherit pub_methods_classxii_document"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -577,6 +577,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../.
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dd5/classxii_asset_document.htm#adc51b5bf57d6b9108913c54536a77b31">SyncObjectsToEngine</a> () const</td></tr>
 <tr class="memdesc:adc51b5bf57d6b9108913c54536a77b31"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends messages to sync all sync objects to the engine process side. <br /></td></tr>
 <tr class="separator:adc51b5bf57d6b9108913c54536a77b31"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06465680396cbdde5c35c2462465c8f1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dd5/classxii_asset_document.htm#a06465680396cbdde5c35c2462465c8f1">SendDocumentOpenMessage</a> (bool bOpen)</td></tr>
+<tr class="separator:a06465680396cbdde5c35c2462465c8f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="member-group"></a>
 Common Asset States</h2></td></tr>
@@ -848,6 +850,26 @@ static <a class="el" href="../../dc/d22/classxii_event.htm">xiiEvent</a>&lt; con
 
 </div>
 </div>
+<a id="a06465680396cbdde5c35c2462465c8f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a06465680396cbdde5c35c2462465c8f1">&#9670;&nbsp;</a></span>SendDocumentOpenMessage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void xiiAssetDocument::SendDocumentOpenMessage </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bOpen</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>/brief Sends a message that the document has been opened or closed. Resends all document data.</p>
+<p>Calling this will always clear the existing document on the engine side and reset the state to the editor state. </p>
+
+</div>
+</div>
 <a id="ada5db433f6cd863528bac14924149110"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ada5db433f6cd863528bac14924149110">&#9670;&nbsp;</a></span>SetCommonAssetUiState()</h2>
 
@@ -947,7 +969,7 @@ static <a class="el" href="../../dc/d22/classxii_event.htm">xiiEvent</a>&lt; con
 <p>Override this to add custom data (e.g. additional file dependencies) to the info struct. </p>
 <dl class="section note"><dt>Note</dt><dd>ALWAYS call the base function! It automatically fills out references that it can determine. In most cases that is already sufficient. </dd></dl>
 
-<p>Reimplemented in <a class="el" href="../../da/d0a/classxii_scene_document.htm#a35807be5f128bda5c97290daa9441bb4">xiiSceneDocument</a>, <a class="el" href="../../d6/d64/classxii_material_asset_document.htm#a11757b8c3f1ab31b8ab254e83989e333">xiiMaterialAssetDocument</a>, <a class="el" href="../../dc/d84/classxii_visual_script_asset_document.htm#a2e6b11de48b126a8804edba90af77a1a">xiiVisualScriptAssetDocument</a>, <a class="el" href="../../d0/daa/classxii_skeleton_asset_document.htm#a57e31679f1783651aed71db9519c8149">xiiSkeletonAssetDocument</a>, <a class="el" href="../../db/da0/classxii_particle_effect_asset_document.htm#a180cbffae1c22ffb72f49333070a6ffe">xiiParticleEffectAssetDocument</a>, <a class="el" href="../../d7/d60/classxii_texture_asset_document.htm#a92e20150a53f980067d14daa797db05d">xiiTextureAssetDocument</a>, <a class="el" href="../../d9/d25/classxii_texture_cube_asset_document.htm#a8616789d9349134c499d4d3d41d6e66c">xiiTextureCubeAssetDocument</a>, <a class="el" href="../../dd/d06/classxii_type_script_asset_document.htm#a816002a5b93f6f75b1c63f40a4e1368f">xiiTypeScriptAssetDocument</a>, <a class="el" href="../../d0/d63/classxii_collection_asset_document.htm#ae3880ce9d21ccf6811d759f6e2aaac39">xiiCollectionAssetDocument</a>, <a class="el" href="../../d6/de7/classxii_jolt_collision_mesh_asset_document.htm#aacf4d5f27e6ddc3b6dce64515267c88e">xiiJoltCollisionMeshAssetDocument</a>, <a class="el" href="../../d3/d95/classxii_mesh_asset_document.htm#a563cfe35ec38b7d33371dfab8673c880">xiiMeshAssetDocument</a>, and <a class="el" href="../../df/d37/classxii_proc_gen_graph_asset_document.htm#a2fdc4fda8ac5f157e19f836878d99d35">xiiProcGenGraphAssetDocument</a>.</p>
+<p>Reimplemented in <a class="el" href="../../da/d0a/classxii_scene_document.htm#a35807be5f128bda5c97290daa9441bb4">xiiSceneDocument</a>, <a class="el" href="../../d6/d64/classxii_material_asset_document.htm#a11757b8c3f1ab31b8ab254e83989e333">xiiMaterialAssetDocument</a>, <a class="el" href="../../dc/d84/classxii_visual_script_asset_document.htm#a2e6b11de48b126a8804edba90af77a1a">xiiVisualScriptAssetDocument</a>, <a class="el" href="../../d0/daa/classxii_skeleton_asset_document.htm#a57e31679f1783651aed71db9519c8149">xiiSkeletonAssetDocument</a>, <a class="el" href="../../db/da0/classxii_particle_effect_asset_document.htm#a180cbffae1c22ffb72f49333070a6ffe">xiiParticleEffectAssetDocument</a>, <a class="el" href="../../d7/d60/classxii_texture_asset_document.htm#a92e20150a53f980067d14daa797db05d">xiiTextureAssetDocument</a>, <a class="el" href="../../d9/d25/classxii_texture_cube_asset_document.htm#a8616789d9349134c499d4d3d41d6e66c">xiiTextureCubeAssetDocument</a>, <a class="el" href="../../dd/d06/classxii_type_script_asset_document.htm#a816002a5b93f6f75b1c63f40a4e1368f">xiiTypeScriptAssetDocument</a>, <a class="el" href="../../d6/de7/classxii_jolt_collision_mesh_asset_document.htm#aacf4d5f27e6ddc3b6dce64515267c88e">xiiJoltCollisionMeshAssetDocument</a>, <a class="el" href="../../d3/d95/classxii_mesh_asset_document.htm#a563cfe35ec38b7d33371dfab8673c880">xiiMeshAssetDocument</a>, and <a class="el" href="../../df/d37/classxii_proc_gen_graph_asset_document.htm#a2fdc4fda8ac5f157e19f836878d99d35">xiiProcGenGraphAssetDocument</a>.</p>
 
 </div>
 </div>
@@ -961,7 +983,7 @@ static <a class="el" href="../../dc/d22/classxii_event.htm">xiiEvent</a>&lt; con
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d7/dd5/classxii_asset_document.htm">xiiAssetDocument</a></li>
-    <li class="footer">Generated on Fri Mar 24 2023 17:20:19 for XIIEngine by
+    <li class="footer">Generated on Mon Apr 17 2023 20:10:36 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

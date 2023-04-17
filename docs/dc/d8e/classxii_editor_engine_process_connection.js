@@ -12,7 +12,6 @@ var classxii_editor_engine_process_connection =
     [ "IsEngineSetup", "dc/d8e/classxii_editor_engine_process_connection.htm#a369b4f7900ddf958bba6976a67fda1b3", null ],
     [ "IsProcessCrashed", "dc/d8e/classxii_editor_engine_process_connection.htm#a1b548182043096cc2cbffd8bb6494f98", null ],
     [ "RestartProcess", "dc/d8e/classxii_editor_engine_process_connection.htm#a88e67ae0c0776aacf7c7b857ba5dde82", null ],
-    [ "SendDocumentOpenMessage", "dc/d8e/classxii_editor_engine_process_connection.htm#a1127fc5a864194d3e656a721f287307a", null ],
     [ "SendMessage", "dc/d8e/classxii_editor_engine_process_connection.htm#adadc5ebf78c341b473a9f525e780adf8", null ],
     [ "SetFileSystemConfig", "dc/d8e/classxii_editor_engine_process_connection.htm#a5fb87948d312eefd8169ecc748c0834a", null ],
     [ "SetPluginConfig", "dc/d8e/classxii_editor_engine_process_connection.htm#a9bc66c53474fadde9b58ba67153824f1", null ],

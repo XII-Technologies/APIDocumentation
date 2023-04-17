@@ -123,6 +123,13 @@ XII_ALWAYS_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a cla
 <tr class="memitem:a6ec98d9c292f16f67a3cedecc122d887"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dad/structxii_result.htm#a6ec98d9c292f16f67a3cedecc122d887">AssertSuccess</a> (const char *msg=nullptr, const char *details=nullptr) const</td></tr>
 <tr class="memdesc:a6ec98d9c292f16f67a3cedecc122d887"><td class="mdescLeft">&#160;</td><td class="mdescRight">Asserts that the function succeeded. In case of failure, the program will terminate.  <a href="../../dd/dad/structxii_result.htm#a6ec98d9c292f16f67a3cedecc122d887">More...</a><br /></td></tr>
 <tr class="separator:a6ec98d9c292f16f67a3cedecc122d887"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa74804da47252bff7848b6e73ef15b04"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dad/structxii_result.htm#aa74804da47252bff7848b6e73ef15b04">operator bool</a> () const</td></tr>
+<tr class="memdesc:aa74804da47252bff7848b6e73ef15b04"><td class="mdescLeft">&#160;</td><td class="mdescRight">Same as 'Succeeded()'.  <a href="../../dd/dad/structxii_result.htm#aa74804da47252bff7848b6e73ef15b04">More...</a><br /></td></tr>
+<tr class="separator:aa74804da47252bff7848b6e73ef15b04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63d775bae20a1c7f303fb4c41a3b70a2"><td class="memItemLeft" align="right" valign="top"><a id="a63d775bae20a1c7f303fb4c41a3b70a2"></a>
+<a class="el" href="../../dd/dad/structxii_result.htm">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dad/structxii_result.htm#a63d775bae20a1c7f303fb4c41a3b70a2">operator!</a> () const</td></tr>
+<tr class="memdesc:a63d775bae20a1c7f303fb4c41a3b70a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Special case to prevent this from working: "bool b = !r". <br /></td></tr>
+<tr class="separator:a63d775bae20a1c7f303fb4c41a3b70a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Default enum for returning failure or success, instead of using a bool. </p>
@@ -158,6 +165,45 @@ XII_ALWAYS_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a cla
 
 </div>
 </div>
+<a id="aa74804da47252bff7848b6e73ef15b04"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa74804da47252bff7848b6e73ef15b04">&#9670;&nbsp;</a></span>operator bool()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">xiiResult::operator bool </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Same as 'Succeeded()'. </p>
+<p>Allows <a class="el" href="../../dd/dad/structxii_result.htm" title="Default enum for returning failure or success, instead of using a bool.">xiiResult</a> to be used in if statements:</p><ul>
+<li>if (r)</li>
+<li>if (!r)</li>
+<li>if (r1 &amp;&amp; r2)</li>
+<li>if (r1 || r2)</li>
+</ul>
+<p>Disallows anything else implicitly, e.g. all these won't compile:</p><ul>
+<li>if (r == true)</li>
+<li>bool b = r;</li>
+<li>void* p = r;</li>
+<li>return r; // With bool return type </li>
+</ul>
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following files:<ul>
 <li>/home/runner/work/XII/XII/Source/Engine/Foundation/Types/<a class="el" href="../../dc/d8c/_foundation_2_types_2_types_8h_source.htm">Types.h</a></li>
 <li>/home/runner/work/XII/XII/Source/Engine/Foundation/Types/Implementation/Status.cpp</li>
@@ -168,7 +214,7 @@ XII_ALWAYS_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a cla
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dd/dad/structxii_result.htm">xiiResult</a></li>
-    <li class="footer">Generated on Fri Mar 24 2023 17:20:25 for XIIEngine by
+    <li class="footer">Generated on Mon Apr 17 2023 20:10:41 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

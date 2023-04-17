@@ -11,8 +11,7 @@ var classxii_g_a_l_texture_diligent =
     [ "IsNativeWrapperObject", "d0/d2a/classxii_g_a_l_texture_diligent.htm#a37496107ca6787c88ee3463e7b3bd335", null ],
     [ "xiiGALDeviceDiligent", "d0/d2a/classxii_g_a_l_texture_diligent.htm#aa4c4e61f06413b5554bad4d3f222b37c", null ],
     [ "xiiMemoryUtils", "d0/d2a/classxii_g_a_l_texture_diligent.htm#aefc9ff75d6833fd2f05be48e16436db6", null ],
-    [ "m_InitialData", "d0/d2a/classxii_g_a_l_texture_diligent.htm#aead0c6b155507603be9ce8dc9e367467", null ],
     [ "m_pExisitingNativeObject", "d0/d2a/classxii_g_a_l_texture_diligent.htm#ab466b739d4e529888d4c722553ffd934", null ],
-    [ "m_pStagingTexture", "d0/d2a/classxii_g_a_l_texture_diligent.htm#a3b160fd6cb05d2660d35e9f8104dfa41", null ],
-    [ "m_pTexture", "d0/d2a/classxii_g_a_l_texture_diligent.htm#a5836774bedd41eab8a13404e5e236c9a", null ]
+    [ "m_pStagingTexture", "d0/d2a/classxii_g_a_l_texture_diligent.htm#a286e8ca7441647125048d58a662b9655", null ],
+    [ "m_pTexture", "d0/d2a/classxii_g_a_l_texture_diligent.htm#a9cc73d992b2d498beb0f615b144d5a63", null ]
 ];

@@ -2,7 +2,7 @@ var classxii_type_script_component =
 [
     [ "xiiTypeScriptComponent", "df/d25/classxii_type_script_component.htm#a19b3cb559e7f536a72164faa14e768d7", null ],
     [ "~xiiTypeScriptComponent", "df/d25/classxii_type_script_component.htm#a1cb84506aecb4125d6c669b26446acec", null ],
-    [ "BroadcastEventMsg", "df/d25/classxii_type_script_component.htm#abbd8e90099ec14eebe0853dc4d488b6a", null ],
+    [ "BroadcastEventMsg", "df/d25/classxii_type_script_component.htm#a837d8745919944c087e4511c249eddee", null ],
     [ "Deinitialize", "df/d25/classxii_type_script_component.htm#ad385eeb1c262d7302b8e5e36cd91530d", null ],
     [ "DeserializeComponent", "df/d25/classxii_type_script_component.htm#ad4b9b4d42cde1f480c914c76e042c311", null ],
     [ "GetParameter", "df/d25/classxii_type_script_component.htm#ae1eb9f7093e5250c86f0849da7de0b88", null ],
@@ -19,6 +19,6 @@ var classxii_type_script_component =
     [ "RemoveParameter", "df/d25/classxii_type_script_component.htm#aed1fa167fb33bbc893780e1b832127f2", null ],
     [ "SerializeComponent", "df/d25/classxii_type_script_component.htm#a13f8cd2beb69da6252574e14d492709b", null ],
     [ "SetParameter", "df/d25/classxii_type_script_component.htm#a043055945833b1fb5226e22bd778cfe8", null ],
-    [ "SetTypeScriptComponentGuid", "df/d25/classxii_type_script_component.htm#aad3a4be9006c2a2aadd9e2768805d810", null ],
+    [ "SetTypeScriptComponentGuid", "df/d25/classxii_type_script_component.htm#ad08e5e398558410de7f3dfc3fda39f01", null ],
     [ "SetUpdateInterval", "df/d25/classxii_type_script_component.htm#a4ac927ad4393630369eae3469d30696d", null ]
 ];
