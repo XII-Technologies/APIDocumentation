@@ -6,7 +6,7 @@ var classxii_anim_graph_node =
     [ "GetCustomNodeTitle", "de/dfb/classxii_anim_graph_node.htm#a5dcab5542a7b8027d071129e208df3d0", null ],
     [ "Initialize", "de/dfb/classxii_anim_graph_node.htm#a21de43a813ec2717a395115fc4d80c5c", null ],
     [ "SerializeNode", "de/dfb/classxii_anim_graph_node.htm#a2d0133ff65e289e39e3f67825af3fdd6", null ],
-    [ "SetCustomNodeTitle", "de/dfb/classxii_anim_graph_node.htm#a2f8c2835961d271687df25422301edf8", null ],
+    [ "SetCustomNodeTitle", "de/dfb/classxii_anim_graph_node.htm#a533354cb7076f36129f33e22abed64fd", null ],
     [ "Step", "de/dfb/classxii_anim_graph_node.htm#a9b80c5bcf3bf7af55ab7580c4777bf97", null ],
     [ "xiiAnimGraph", "de/dfb/classxii_anim_graph_node.htm#a1e128252660c8ade88f34e4b6515b17f", null ],
     [ "m_sCustomNodeTitle", "de/dfb/classxii_anim_graph_node.htm#ad325ce64748e99c06146a64067a39df8", null ]

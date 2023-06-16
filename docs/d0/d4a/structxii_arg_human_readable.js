@@ -1,7 +1,7 @@
 var structxii_arg_human_readable =
 [
-    [ "xiiArgHumanReadable", "d0/d4a/structxii_arg_human_readable.htm#a8d4763b3ef53de77b150c39e090c6a7a", null ],
-    [ "xiiArgHumanReadable", "d0/d4a/structxii_arg_human_readable.htm#a6bb193ba41737a4b1e704244e5d0fcbc", null ],
+    [ "xiiArgHumanReadable", "d0/d4a/structxii_arg_human_readable.htm#a84b26b7d4e1efeee2204d994906f4ec0", null ],
+    [ "xiiArgHumanReadable", "d0/d4a/structxii_arg_human_readable.htm#af34f7a637603cfc616f4423edaf6bd14", null ],
     [ "xiiArgHumanReadable", "d0/d4a/structxii_arg_human_readable.htm#adc4ac28d4e0c8cc3230c9e4d0ffc8337", null ],
     [ "xiiArgHumanReadable", "d0/d4a/structxii_arg_human_readable.htm#a32b464178b900612da718a4c16e66913", null ],
     [ "m_Base", "d0/d4a/structxii_arg_human_readable.htm#a231844aca2bd635e7b4d25a38bf396ed", null ],

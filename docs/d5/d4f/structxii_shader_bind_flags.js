@@ -1,7 +1,7 @@
 var structxii_shader_bind_flags =
 [
     [ "Bits", "d4/d56/structxii_shader_bind_flags_1_1_bits.htm", "d4/d56/structxii_shader_bind_flags_1_1_bits" ],
-    [ "StorageType", "d5/d4f/structxii_shader_bind_flags.htm#a3e4e0dab4ea16b10207935e2e45b020d", null ],
+    [ "StorageType", "d5/d4f/structxii_shader_bind_flags.htm#a94114db356e3f5f5b2501fe4c395c8ac", null ],
     [ "Enum", "d5/d4f/structxii_shader_bind_flags.htm#af47761c138fc627e3ab65bf906b28df1", [
       [ "None", "d5/d4f/structxii_shader_bind_flags.htm#af47761c138fc627e3ab65bf906b28df1a44067a6b77ae7fdf58ec1be374848a25", null ],
       [ "ForceRebind", "d5/d4f/structxii_shader_bind_flags.htm#af47761c138fc627e3ab65bf906b28df1a0a7cefbccd7ebad4a50e56fe44fe2a23", null ],

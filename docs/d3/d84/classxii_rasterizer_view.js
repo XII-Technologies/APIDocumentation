@@ -11,5 +11,5 @@ var classxii_rasterizer_view =
     [ "IsVisible", "d3/d84/classxii_rasterizer_view.htm#aa6e3c9e39d383cf8e5ae0c1e08b778ed", null ],
     [ "ReadBackFrame", "d3/d84/classxii_rasterizer_view.htm#a5262158c9dad65fa9b57d714ce293282", null ],
     [ "SetCamera", "d3/d84/classxii_rasterizer_view.htm#a1b1481f3a0fb12db3d14ec40efaa9755", null ],
-    [ "SetResolution", "d3/d84/classxii_rasterizer_view.htm#a7351d8384eb267773890189e5dfcb2c4", null ]
+    [ "SetResolution", "d3/d84/classxii_rasterizer_view.htm#ab1fcb668735f19916d81f11c7ab6510f", null ]
 ];

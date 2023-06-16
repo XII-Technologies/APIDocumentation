@@ -1,7 +1,7 @@
 var structxii_property_flags =
 [
     [ "Bits", "d1/dcd/structxii_property_flags_1_1_bits.htm", "d1/dcd/structxii_property_flags_1_1_bits" ],
-    [ "StorageType", "d6/d7c/structxii_property_flags.htm#a6f7b2eaa188888bf8f18b94fe15e6b51", null ],
+    [ "StorageType", "d6/d7c/structxii_property_flags.htm#a7ee8190bd865c1b531ab84847b5c8262", null ],
     [ "Enum", "d6/d7c/structxii_property_flags.htm#aae39faa8d08fe7b2717a8a32f5e6d038", [
       [ "StandardType", "d6/d7c/structxii_property_flags.htm#aae39faa8d08fe7b2717a8a32f5e6d038acea1c0d6708f0daa477a8942038d2429", null ],
       [ "IsEnum", "d6/d7c/structxii_property_flags.htm#aae39faa8d08fe7b2717a8a32f5e6d038ab11ca3a66615488391f2a8ebc2548c5e", null ],

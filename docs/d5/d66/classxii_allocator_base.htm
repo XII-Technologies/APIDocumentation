@@ -133,15 +133,15 @@ Public Member Functions</h2></td></tr>
 virtual void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d66/classxii_allocator_base.htm#aa6d955a078790ddbd0f26d1a39ea220f">Allocate</a> (size_t uiSize, size_t uiAlign, xiiMemoryUtils::DestructorFunction destructorFunc=nullptr)=0</td></tr>
 <tr class="memdesc:aa6d955a078790ddbd0f26d1a39ea220f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interface, do not use this directly, always use the new/delete macros below. <br /></td></tr>
 <tr class="separator:aa6d955a078790ddbd0f26d1a39ea220f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8ada8aa67f54681500449d4bca87234f"><td class="memItemLeft" align="right" valign="top"><a id="a8ada8aa67f54681500449d4bca87234f"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>Deallocate</b> (void *ptr)=0</td></tr>
-<tr class="separator:a8ada8aa67f54681500449d4bca87234f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af9943fcf5e9de0190ac37179e342acee"><td class="memItemLeft" align="right" valign="top"><a id="af9943fcf5e9de0190ac37179e342acee"></a>
-virtual void *&#160;</td><td class="memItemRight" valign="bottom"><b>Reallocate</b> (void *ptr, size_t uiCurrentSize, size_t uiNewSize, size_t uiAlign)</td></tr>
-<tr class="separator:af9943fcf5e9de0190ac37179e342acee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a12cedbc47c1c046347c0667f238085f2"><td class="memItemLeft" align="right" valign="top">virtual size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d66/classxii_allocator_base.htm#a12cedbc47c1c046347c0667f238085f2">AllocatedSize</a> (const void *ptr)=0</td></tr>
-<tr class="memdesc:a12cedbc47c1c046347c0667f238085f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of bytes allocated at this address.  <a href="../../d5/d66/classxii_allocator_base.htm#a12cedbc47c1c046347c0667f238085f2">More...</a><br /></td></tr>
-<tr class="separator:a12cedbc47c1c046347c0667f238085f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa31efa8831bb864839cd0cd57d4309c"><td class="memItemLeft" align="right" valign="top"><a id="afa31efa8831bb864839cd0cd57d4309c"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>Deallocate</b> (void *pPtr)=0</td></tr>
+<tr class="separator:afa31efa8831bb864839cd0cd57d4309c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a513d4d045fb7deae7dc2430c52fcdb48"><td class="memItemLeft" align="right" valign="top"><a id="a513d4d045fb7deae7dc2430c52fcdb48"></a>
+virtual void *&#160;</td><td class="memItemRight" valign="bottom"><b>Reallocate</b> (void *pPtr, size_t uiCurrentSize, size_t uiNewSize, size_t uiAlign)</td></tr>
+<tr class="separator:a513d4d045fb7deae7dc2430c52fcdb48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a055d26af1731c4fd6141217098156082"><td class="memItemLeft" align="right" valign="top">virtual size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d66/classxii_allocator_base.htm#a055d26af1731c4fd6141217098156082">AllocatedSize</a> (const void *pPtr)=0</td></tr>
+<tr class="memdesc:a055d26af1731c4fd6141217098156082"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of bytes allocated at this address.  <a href="../../d5/d66/classxii_allocator_base.htm#a055d26af1731c4fd6141217098156082">More...</a><br /></td></tr>
+<tr class="separator:a055d26af1731c4fd6141217098156082"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a70762e85455c7ef33fe5afc71fec8a90"><td class="memItemLeft" align="right" valign="top"><a id="a70762e85455c7ef33fe5afc71fec8a90"></a>
 virtual <a class="el" href="../../d0/dcc/structxii_generic_id.htm">xiiAllocatorId</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetId</b> () const =0</td></tr>
 <tr class="separator:a70762e85455c7ef33fe5afc71fec8a90"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -152,8 +152,8 @@ virtual <a class="el" href="../../d1/d87/structxii_allocator_base_1_1_stats.htm"
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Base class for all memory allocators. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a12cedbc47c1c046347c0667f238085f2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a12cedbc47c1c046347c0667f238085f2">&#9670;&nbsp;</a></span>AllocatedSize()</h2>
+<a id="a055d26af1731c4fd6141217098156082"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a055d26af1731c4fd6141217098156082">&#9670;&nbsp;</a></span>AllocatedSize()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -165,7 +165,7 @@ virtual <a class="el" href="../../d1/d87/structxii_allocator_base_1_1_stats.htm"
           <td class="memname">virtual size_t xiiAllocatorBase::AllocatedSize </td>
           <td>(</td>
           <td class="paramtype">const void *&#160;</td>
-          <td class="paramname"><em>ptr</em></td><td>)</td>
+          <td class="paramname"><em>pPtr</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -179,7 +179,7 @@ virtual <a class="el" href="../../d1/d87/structxii_allocator_base_1_1_stats.htm"
 <p>Returns the number of bytes allocated at this address. </p>
 <dl class="section note"><dt>Note</dt><dd>Careful! This information is only available, if allocation tracking is enabled! Otherwise 0 is returned. See <a class="el" href="../../d9/d14/structxii_memory_tracking_flags.htm#a040960956de726e6b11c50dd1519d59fae0610e13bef7e0ef87de7c64208f974f" title="Enable tracking of individual allocations.">xiiMemoryTrackingFlags::EnableAllocationTracking</a> and XII_USE_ALLOCATION_TRACKING. </dd></dl>
 
-<p>Implemented in <a class="el" href="../../d4/deb/classxii_internal_1_1xii_allocator_impl.htm#a37429155fd2122e542161992800aa245">xiiInternal::xiiAllocatorImpl&lt; AllocationPolicy, TrackingFlags &gt;</a>, <a class="el" href="../../d4/deb/classxii_internal_1_1xii_allocator_impl.htm#a37429155fd2122e542161992800aa245">xiiInternal::xiiAllocatorImpl&lt; xiiMemoryPolicies::xiiStackAllocation, TrackingFlags &gt;</a>, <a class="el" href="../../d4/deb/classxii_internal_1_1xii_allocator_impl.htm#a37429155fd2122e542161992800aa245">xiiInternal::xiiAllocatorImpl&lt; xiiMemoryPolicies::xiiProxyAllocation, TrackingFlags &gt;</a>, and <a class="el" href="../../d4/deb/classxii_internal_1_1xii_allocator_impl.htm#a37429155fd2122e542161992800aa245">xiiInternal::xiiAllocatorImpl&lt; xiiMemoryPolicies::xiiHeapAllocation, TrackingFlags &gt;</a>.</p>
+<p>Implemented in <a class="el" href="../../d4/deb/classxii_internal_1_1xii_allocator_impl.htm#ab8dfd4e6902e53de854ed78dc39c455b">xiiInternal::xiiAllocatorImpl&lt; AllocationPolicy, TrackingFlags &gt;</a>, <a class="el" href="../../d4/deb/classxii_internal_1_1xii_allocator_impl.htm#ab8dfd4e6902e53de854ed78dc39c455b">xiiInternal::xiiAllocatorImpl&lt; xiiMemoryPolicies::xiiStackAllocation, TrackingFlags &gt;</a>, <a class="el" href="../../d4/deb/classxii_internal_1_1xii_allocator_impl.htm#ab8dfd4e6902e53de854ed78dc39c455b">xiiInternal::xiiAllocatorImpl&lt; xiiMemoryPolicies::xiiProxyAllocation, TrackingFlags &gt;</a>, and <a class="el" href="../../d4/deb/classxii_internal_1_1xii_allocator_impl.htm#ab8dfd4e6902e53de854ed78dc39c455b">xiiInternal::xiiAllocatorImpl&lt; xiiMemoryPolicies::xiiHeapAllocation, TrackingFlags &gt;</a>.</p>
 
 </div>
 </div>
@@ -194,7 +194,7 @@ virtual <a class="el" href="../../d1/d87/structxii_allocator_base_1_1_stats.htm"
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d5/d66/classxii_allocator_base.htm">xiiAllocatorBase</a></li>
-    <li class="footer">Generated on Mon Apr 17 2023 20:10:35 for XIIEngine by
+    <li class="footer">Generated on Fri Jun 16 2023 14:12:49 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

@@ -1,6 +1,6 @@
 var classxii_qt_stat_vis_widget =
 [
-    [ "xiiQtStatVisWidget", "da/dee/classxii_qt_stat_vis_widget.htm#ad9c6ef951e9857a6b7468fb8b8f12551", null ],
+    [ "xiiQtStatVisWidget", "da/dee/classxii_qt_stat_vis_widget.htm#a7d197fefd32f86a9ea60aaf710b7ea26", null ],
     [ "~xiiQtStatVisWidget", "da/dee/classxii_qt_stat_vis_widget.htm#a1aecd2e256fcd8433d84f766c6745b5a", null ],
     [ "AddStat", "da/dee/classxii_qt_stat_vis_widget.htm#a5960a1095539b0e6971b84ef59fe9021", null ],
     [ "Load", "da/dee/classxii_qt_stat_vis_widget.htm#a103448ce4ac82b00b96433b5aa1292e3", null ],

@@ -12,7 +12,7 @@ var classxii_map_base =
     [ "Find", "d6/d86/classxii_map_base.htm#a0ff03d4d0ca8214bd7d859adf077431d", null ],
     [ "Find", "d6/d86/classxii_map_base.htm#ae4fece4e55174d9f0e55c9324b145d27", null ],
     [ "Find", "d6/d86/classxii_map_base.htm#aee572534f4d25597511f0f9b05dacb01", null ],
-    [ "FindOrAdd", "d6/d86/classxii_map_base.htm#a08de90c6fc7c81e497fbc18cb653380d", null ],
+    [ "FindOrAdd", "d6/d86/classxii_map_base.htm#a0f2538fb01cd98917a7229f2d286ebfb", null ],
     [ "GetAllocator", "d6/d86/classxii_map_base.htm#ab2fd6d4223ca42409cf0a33299f58438", null ],
     [ "GetCount", "d6/d86/classxii_map_base.htm#a7d45470ae96a09b661b5fb92fad8d694", null ],
     [ "GetHeapMemoryUsage", "d6/d86/classxii_map_base.htm#a0127200a605bcedf21568f6d6b5c6ea3", null ],

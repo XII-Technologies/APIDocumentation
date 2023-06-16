@@ -138,16 +138,16 @@ static <a class="el" href="../../dd/dad/structxii_result.htm">xiiResult</a>&#160
 <tr class="memitem:a6a8520902a7dafd1db5fe4a356991063"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d0a/classxii_file_system.htm#a6a8520902a7dafd1db5fe4a356991063">ExistsFile</a> (<a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sFile)</td></tr>
 <tr class="memdesc:a6a8520902a7dafd1db5fe4a356991063"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether the given file exists in any data directory.  <a href="../../d7/d0a/classxii_file_system.htm#a6a8520902a7dafd1db5fe4a356991063">More...</a><br /></td></tr>
 <tr class="separator:a6a8520902a7dafd1db5fe4a356991063"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad9cdb1e10f3b400c137f816eeef4c905"><td class="memItemLeft" align="right" valign="top"><a id="ad9cdb1e10f3b400c137f816eeef4c905"></a>
-static <a class="el" href="../../dd/dad/structxii_result.htm">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d0a/classxii_file_system.htm#ad9cdb1e10f3b400c137f816eeef4c905">GetFileStats</a> (<a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sFileOrFolder, <a class="el" href="../../d6/dd0/structxii_file_stats.htm">xiiFileStats</a> &amp;out_Stats)</td></tr>
-<tr class="memdesc:ad9cdb1e10f3b400c137f816eeef4c905"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tries to get the <a class="el" href="../../d6/dd0/structxii_file_stats.htm" title="Holds the stats for a file.">xiiFileStats</a> for the given file. Typically should give the same results as <a class="el" href="../../da/d95/classxii_o_s_file.htm#a8b1e593d70e4187f4eba9c6a0688ff1c" title="Gets the stats about the given file or folder. Returns false, if the stats could not be determined.">xiiOSFile::GetFileStats</a>, but some data dir implementations may not support retrieving all data (e.g. GetFileStats on folders might not always work). <br /></td></tr>
-<tr class="separator:ad9cdb1e10f3b400c137f816eeef4c905"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a715235b7c4a6efc00775a801845793a6"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../dd/dad/structxii_result.htm">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d0a/classxii_file_system.htm#a715235b7c4a6efc00775a801845793a6">ResolvePath</a> (<a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sPath, <a class="el" href="../../d4/dbb/classxii_string_builder.htm">xiiStringBuilder</a> *out_sAbsolutePath, <a class="el" href="../../d4/dbb/classxii_string_builder.htm">xiiStringBuilder</a> *out_sDataDirRelativePath, <a class="el" href="../../de/d33/classxii_data_directory_type.htm">xiiDataDirectoryType</a> **out_ppDataDir=nullptr)</td></tr>
-<tr class="memdesc:a715235b7c4a6efc00775a801845793a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tries to resolve the given path and returns the absolute and relative path to the final file.  <a href="../../d7/d0a/classxii_file_system.htm#a715235b7c4a6efc00775a801845793a6">More...</a><br /></td></tr>
-<tr class="separator:a715235b7c4a6efc00775a801845793a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8f9b9327d58bf9cc0d91d31cfca718bc"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../dd/dad/structxii_result.htm">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d0a/classxii_file_system.htm#a8f9b9327d58bf9cc0d91d31cfca718bc">FindFolderWithSubPath</a> (<a class="el" href="../../d4/dbb/classxii_string_builder.htm">xiiStringBuilder</a> &amp;result, <a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sStartDirectory, <a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sSubPath, <a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sRedirectionFileName={})</td></tr>
-<tr class="memdesc:a8f9b9327d58bf9cc0d91d31cfca718bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts at szStartDirectory and goes up until it finds a folder that contains the given sub folder structure.  <a href="../../d7/d0a/classxii_file_system.htm#a8f9b9327d58bf9cc0d91d31cfca718bc">More...</a><br /></td></tr>
-<tr class="separator:a8f9b9327d58bf9cc0d91d31cfca718bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4ce900e8d06a0c462f5215a7fa4cf3c"><td class="memItemLeft" align="right" valign="top"><a id="af4ce900e8d06a0c462f5215a7fa4cf3c"></a>
+static <a class="el" href="../../dd/dad/structxii_result.htm">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d0a/classxii_file_system.htm#af4ce900e8d06a0c462f5215a7fa4cf3c">GetFileStats</a> (<a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sFileOrFolder, <a class="el" href="../../d6/dd0/structxii_file_stats.htm">xiiFileStats</a> &amp;out_stats)</td></tr>
+<tr class="memdesc:af4ce900e8d06a0c462f5215a7fa4cf3c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tries to get the <a class="el" href="../../d6/dd0/structxii_file_stats.htm" title="Holds the stats for a file.">xiiFileStats</a> for the given file. Typically should give the same results as <a class="el" href="../../da/d95/classxii_o_s_file.htm#adc699c70c70c4ed0ad6e9375ebff36d4" title="Gets the stats about the given file or folder. Returns false, if the stats could not be determined.">xiiOSFile::GetFileStats</a>, but some data dir implementations may not support retrieving all data (e.g. GetFileStats on folders might not always work). <br /></td></tr>
+<tr class="separator:af4ce900e8d06a0c462f5215a7fa4cf3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9bb224cba38034f810bb4635a9767b47"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../dd/dad/structxii_result.htm">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d0a/classxii_file_system.htm#a9bb224cba38034f810bb4635a9767b47">ResolvePath</a> (<a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sPath, <a class="el" href="../../d4/dbb/classxii_string_builder.htm">xiiStringBuilder</a> *out_pAbsolutePath, <a class="el" href="../../d4/dbb/classxii_string_builder.htm">xiiStringBuilder</a> *out_pDataDirRelativePath, <a class="el" href="../../de/d33/classxii_data_directory_type.htm">xiiDataDirectoryType</a> **out_pDataDir=nullptr)</td></tr>
+<tr class="memdesc:a9bb224cba38034f810bb4635a9767b47"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tries to resolve the given path and returns the absolute and relative path to the final file.  <a href="../../d7/d0a/classxii_file_system.htm#a9bb224cba38034f810bb4635a9767b47">More...</a><br /></td></tr>
+<tr class="separator:a9bb224cba38034f810bb4635a9767b47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae646f369d5e85f1c9304e0f618cf4223"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../dd/dad/structxii_result.htm">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d0a/classxii_file_system.htm#ae646f369d5e85f1c9304e0f618cf4223">FindFolderWithSubPath</a> (<a class="el" href="../../d4/dbb/classxii_string_builder.htm">xiiStringBuilder</a> &amp;ref_sResult, <a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sStartDirectory, <a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sSubPath, <a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sRedirectionFileName={})</td></tr>
+<tr class="memdesc:ae646f369d5e85f1c9304e0f618cf4223"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts at szStartDirectory and goes up until it finds a folder that contains the given sub folder structure.  <a href="../../d7/d0a/classxii_file_system.htm#ae646f369d5e85f1c9304e0f618cf4223">More...</a><br /></td></tr>
+<tr class="separator:ae646f369d5e85f1c9304e0f618cf4223"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9abfaf036f4391db83674478735c9f32"><td class="memItemLeft" align="right" valign="top"><a id="a9abfaf036f4391db83674478735c9f32"></a>
 static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d0a/classxii_file_system.htm#a9abfaf036f4391db83674478735c9f32">ResolveAssetRedirection</a> (<a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sPathOrAssetGuid, <a class="el" href="../../d4/dbb/classxii_string_builder.htm">xiiStringBuilder</a> &amp;out_sRedirection)</td></tr>
 <tr class="memdesc:a9abfaf036f4391db83674478735c9f32"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true, if any data directory knows how to redirect the given path. Otherwise the original string is returned in out_sRedirection. <br /></td></tr>
@@ -168,9 +168,9 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 <tr class="memitem:a8e6b9c492ba466750205dd9500e1ee35"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d0a/classxii_file_system.htm#a8e6b9c492ba466750205dd9500e1ee35">SetSpecialDirectory</a> (<a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sName, <a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sReplacement)</td></tr>
 <tr class="memdesc:a8e6b9c492ba466750205dd9500e1ee35"><td class="mdescLeft">&#160;</td><td class="mdescRight">Special directories are used when mounting data directories as basic references.  <a href="../../d7/d0a/classxii_file_system.htm#a8e6b9c492ba466750205dd9500e1ee35">More...</a><br /></td></tr>
 <tr class="separator:a8e6b9c492ba466750205dd9500e1ee35"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6bbe54e96982729decafa2eaf0266937"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../dd/dad/structxii_result.htm">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d0a/classxii_file_system.htm#a6bbe54e96982729decafa2eaf0266937">ResolveSpecialDirectory</a> (<a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sDirectory, <a class="el" href="../../d4/dbb/classxii_string_builder.htm">xiiStringBuilder</a> &amp;out_Path)</td></tr>
-<tr class="memdesc:a6bbe54e96982729decafa2eaf0266937"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the absolute path to <em>szDirectory</em>.  <a href="../../d7/d0a/classxii_file_system.htm#a6bbe54e96982729decafa2eaf0266937">More...</a><br /></td></tr>
-<tr class="separator:a6bbe54e96982729decafa2eaf0266937"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4dba8e3fa1ccf2ec1071a8f13dee44f"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../dd/dad/structxii_result.htm">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d0a/classxii_file_system.htm#ad4dba8e3fa1ccf2ec1071a8f13dee44f">ResolveSpecialDirectory</a> (<a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sDirectory, <a class="el" href="../../d4/dbb/classxii_string_builder.htm">xiiStringBuilder</a> &amp;out_sPath)</td></tr>
+<tr class="memdesc:ad4dba8e3fa1ccf2ec1071a8f13dee44f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the absolute path to <em>szDirectory</em>.  <a href="../../d7/d0a/classxii_file_system.htm#ad4dba8e3fa1ccf2ec1071a8f13dee44f">More...</a><br /></td></tr>
+<tr class="separator:ad4dba8e3fa1ccf2ec1071a8f13dee44f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Misc</div></td></tr>
 <tr class="memitem:a107ed45a9258f204ad59256509e8294b"><td class="memItemLeft" align="right" valign="top"><a id="a107ed45a9258f204ad59256509e8294b"></a>
 static <a class="el" href="../../dd/d52/classxii_mutex.htm">xiiMutex</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d0a/classxii_file_system.htm#a107ed45a9258f204ad59256509e8294b">GetMutex</a> ()</td></tr>
@@ -196,17 +196,17 @@ Data Directory Modifications</h2></td></tr>
 <tr class="memitem:aa84886028191f72bfab9522a330776d0"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d0a/classxii_file_system.htm#aa84886028191f72bfab9522a330776d0">xiiDataDirFactory</a> = <a class="el" href="../../de/d33/classxii_data_directory_type.htm">xiiDataDirectoryType</a> *(*)(<a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a>, <a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a>, <a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a>, <a class="el" href="../../d7/d0a/classxii_file_system.htm#a54bad68a9749727d4e8be83bb5a5999a">xiiFileSystem::DataDirUsage</a>)</td></tr>
 <tr class="memdesc:aa84886028191f72bfab9522a330776d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">This factory creates a data directory type, if it can handle the given data directory. Otherwise it returns nullptr.  <a href="../../d7/d0a/classxii_file_system.htm#aa84886028191f72bfab9522a330776d0">More...</a><br /></td></tr>
 <tr class="separator:aa84886028191f72bfab9522a330776d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a89fe26d72957f233965f74eb677575c8"><td class="memItemLeft" align="right" valign="top"><a id="a89fe26d72957f233965f74eb677575c8"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d0a/classxii_file_system.htm#a89fe26d72957f233965f74eb677575c8">RegisterDataDirectoryFactory</a> (<a class="el" href="../../d7/d0a/classxii_file_system.htm#aa84886028191f72bfab9522a330776d0">xiiDataDirFactory</a> Factory, float fPriority=0)</td></tr>
-<tr class="memdesc:a89fe26d72957f233965f74eb677575c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function allows to register another data directory factory, which might be invoked when a new data directory is to be added. <br /></td></tr>
-<tr class="separator:a89fe26d72957f233965f74eb677575c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec01ac143bd3bc243aa8dd15da12784c"><td class="memItemLeft" align="right" valign="top"><a id="aec01ac143bd3bc243aa8dd15da12784c"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d0a/classxii_file_system.htm#aec01ac143bd3bc243aa8dd15da12784c">RegisterDataDirectoryFactory</a> (<a class="el" href="../../d7/d0a/classxii_file_system.htm#aa84886028191f72bfab9522a330776d0">xiiDataDirFactory</a> factory, float fPriority=0)</td></tr>
+<tr class="memdesc:aec01ac143bd3bc243aa8dd15da12784c"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function allows to register another data directory factory, which might be invoked when a new data directory is to be added. <br /></td></tr>
+<tr class="separator:aec01ac143bd3bc243aa8dd15da12784c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a032908ccb6f0b94157310b7e12fd4d0a"><td class="memItemLeft" align="right" valign="top"><a id="a032908ccb6f0b94157310b7e12fd4d0a"></a>
 static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d0a/classxii_file_system.htm#a032908ccb6f0b94157310b7e12fd4d0a">ClearAllDataDirectoryFactories</a> ()</td></tr>
 <tr class="memdesc:a032908ccb6f0b94157310b7e12fd4d0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Will remove all known data directory factories. <br /></td></tr>
 <tr class="separator:a032908ccb6f0b94157310b7e12fd4d0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a39bca3af9aabf61cc4bdd094015faaf7"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../dd/dad/structxii_result.htm">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d0a/classxii_file_system.htm#a39bca3af9aabf61cc4bdd094015faaf7">AddDataDirectory</a> (<a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sDataDirectory, <a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sGroup={}, <a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sRootName={}, <a class="el" href="../../d7/d0a/classxii_file_system.htm#a54bad68a9749727d4e8be83bb5a5999a">xiiFileSystem::DataDirUsage</a> Usage=ReadOnly)</td></tr>
-<tr class="memdesc:a39bca3af9aabf61cc4bdd094015faaf7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a data directory. It will try all the registered factories to find a data directory type that can handle the given path.  <a href="../../d7/d0a/classxii_file_system.htm#a39bca3af9aabf61cc4bdd094015faaf7">More...</a><br /></td></tr>
-<tr class="separator:a39bca3af9aabf61cc4bdd094015faaf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4f21defbf902cd791d6926e62fde2db"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../dd/dad/structxii_result.htm">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d0a/classxii_file_system.htm#ae4f21defbf902cd791d6926e62fde2db">AddDataDirectory</a> (<a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sDataDirectory, <a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sGroup={}, <a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sRootName={}, <a class="el" href="../../d7/d0a/classxii_file_system.htm#a54bad68a9749727d4e8be83bb5a5999a">xiiFileSystem::DataDirUsage</a> usage=ReadOnly)</td></tr>
+<tr class="memdesc:ae4f21defbf902cd791d6926e62fde2db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a data directory. It will try all the registered factories to find a data directory type that can handle the given path.  <a href="../../d7/d0a/classxii_file_system.htm#ae4f21defbf902cd791d6926e62fde2db">More...</a><br /></td></tr>
+<tr class="separator:ae4f21defbf902cd791d6926e62fde2db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aed3f11051fb93c5efd13d9f22b5ef6ee"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d0a/classxii_file_system.htm#aed3f11051fb93c5efd13d9f22b5ef6ee">RemoveDataDirectory</a> (<a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sRootName)</td></tr>
 <tr class="memdesc:aed3f11051fb93c5efd13d9f22b5ef6ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Searches for a data directory with the given root name and removes it.  <a href="../../d7/d0a/classxii_file_system.htm#aed3f11051fb93c5efd13d9f22b5ef6ee">More...</a><br /></td></tr>
 <tr class="separator:aed3f11051fb93c5efd13d9f22b5ef6ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -260,8 +260,8 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a39bca3af9aabf61cc4bdd094015faaf7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a39bca3af9aabf61cc4bdd094015faaf7">&#9670;&nbsp;</a></span>AddDataDirectory()</h2>
+<a id="ae4f21defbf902cd791d6926e62fde2db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae4f21defbf902cd791d6926e62fde2db">&#9670;&nbsp;</a></span>AddDataDirectory()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -291,7 +291,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="../../d7/d0a/classxii_file_system.htm#a54bad68a9749727d4e8be83bb5a5999a">xiiFileSystem::DataDirUsage</a>&#160;</td>
-          <td class="paramname"><em>Usage</em> = <code>ReadOnly</code>&#160;</td>
+          <td class="paramname"><em>usage</em> = <code>ReadOnly</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -366,10 +366,10 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 
 <p>Searches for a directory to use as the "Sdk" special directory. </p>
 <p>It does so by starting at the directory where the application binary is located and then goes up until it finds a folder that contains the given sub-folder. The sub-folder is usually where the engine loads the most basic data from, so it should exist.</p>
-<p>Additionally the 'redirection file' feature of <a class="el" href="../../d7/d0a/classxii_file_system.htm#a8f9b9327d58bf9cc0d91d31cfca718bc" title="Starts at szStartDirectory and goes up until it finds a folder that contains the given sub folder str...">xiiFileSystem::FindFolderWithSubPath()</a> is used to allow finding a relocated SDK folder. To do that, place a file called 'xiiSdkRoot.txt' in your top level folder. It should contain the relative path pointing to the SDK folder.</p>
+<p>Additionally the 'redirection file' feature of <a class="el" href="../../d7/d0a/classxii_file_system.htm#ae646f369d5e85f1c9304e0f618cf4223" title="Starts at szStartDirectory and goes up until it finds a folder that contains the given sub folder str...">xiiFileSystem::FindFolderWithSubPath()</a> is used to allow finding a relocated SDK folder. To do that, place a file called 'xiiSdkRoot.txt' in your top level folder. It should contain the relative path pointing to the SDK folder.</p>
 <p>Upon success <a class="el" href="../../d7/d0a/classxii_file_system.htm#a5379337feec025e28164fe34f96ce8c3" title="the special directory &quot;&gt;Sdk&quot; is the root folder of the SDK data, it is often used as the main referen...">SetSdkRootDirectory()</a> is called with the resulting path.</p>
 <dl class="section note"><dt>Note</dt><dd>If the Sdk root directory has been set before, this function does nothing! It will not override a previously set value. If that is desired, call SetSdkRootDirectory("") first.</dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d7/d0a/classxii_file_system.htm#a8f9b9327d58bf9cc0d91d31cfca718bc" title="Starts at szStartDirectory and goes up until it finds a folder that contains the given sub folder str...">xiiFileSystem::FindFolderWithSubPath()</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d7/d0a/classxii_file_system.htm#ae646f369d5e85f1c9304e0f618cf4223" title="Starts at szStartDirectory and goes up until it finds a folder that contains the given sub folder str...">xiiFileSystem::FindFolderWithSubPath()</a> </dd></dl>
 
 </div>
 </div>
@@ -402,8 +402,8 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 
 </div>
 </div>
-<a id="a8f9b9327d58bf9cc0d91d31cfca718bc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8f9b9327d58bf9cc0d91d31cfca718bc">&#9670;&nbsp;</a></span>FindFolderWithSubPath()</h2>
+<a id="ae646f369d5e85f1c9304e0f618cf4223"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae646f369d5e85f1c9304e0f618cf4223">&#9670;&nbsp;</a></span>FindFolderWithSubPath()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -415,7 +415,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
           <td class="memname"><a class="el" href="../../dd/dad/structxii_result.htm">xiiResult</a> xiiFileSystem::FindFolderWithSubPath </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="../../d4/dbb/classxii_string_builder.htm">xiiStringBuilder</a> &amp;&#160;</td>
-          <td class="paramname"><em>result</em>, </td>
+          <td class="paramname"><em>ref_sResult</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -561,8 +561,8 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 
 </div>
 </div>
-<a id="a715235b7c4a6efc00775a801845793a6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a715235b7c4a6efc00775a801845793a6">&#9670;&nbsp;</a></span>ResolvePath()</h2>
+<a id="a9bb224cba38034f810bb4635a9767b47"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9bb224cba38034f810bb4635a9767b47">&#9670;&nbsp;</a></span>ResolvePath()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -580,19 +580,19 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="../../d4/dbb/classxii_string_builder.htm">xiiStringBuilder</a> *&#160;</td>
-          <td class="paramname"><em>out_sAbsolutePath</em>, </td>
+          <td class="paramname"><em>out_pAbsolutePath</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="../../d4/dbb/classxii_string_builder.htm">xiiStringBuilder</a> *&#160;</td>
-          <td class="paramname"><em>out_sDataDirRelativePath</em>, </td>
+          <td class="paramname"><em>out_pDataDirRelativePath</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="../../de/d33/classxii_data_directory_type.htm">xiiDataDirectoryType</a> **&#160;</td>
-          <td class="paramname"><em>out_ppDataDir</em> = <code>nullptr</code>&#160;</td>
+          <td class="paramname"><em>out_pDataDir</em> = <code>nullptr</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -625,8 +625,8 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 
 </div>
 </div>
-<a id="a6bbe54e96982729decafa2eaf0266937"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6bbe54e96982729decafa2eaf0266937">&#9670;&nbsp;</a></span>ResolveSpecialDirectory()</h2>
+<a id="ad4dba8e3fa1ccf2ec1071a8f13dee44f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad4dba8e3fa1ccf2ec1071a8f13dee44f">&#9670;&nbsp;</a></span>ResolveSpecialDirectory()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -644,7 +644,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="../../d4/dbb/classxii_string_builder.htm">xiiStringBuilder</a> &amp;&#160;</td>
-          <td class="paramname"><em>out_Path</em>&#160;</td>
+          <td class="paramname"><em>out_sPath</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -731,7 +731,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 </div><div class="memdoc">
 
 <p>Special directories are used when mounting data directories as basic references. </p>
-<p>They are indicated with a "&gt;", ie. "&gt;sdk/Test", but using them is only allowed in few places, e.g. in <a class="el" href="../../d7/d0a/classxii_file_system.htm#a39bca3af9aabf61cc4bdd094015faaf7" title="Adds a data directory. It will try all the registered factories to find a data directory type that ca...">AddDataDirectory()</a>. Special directories are needed to be able to set up other paths relative to them and to be able to use different ones on different PCs. For instance when using file-serve functionality, the special directories may be different on the host and client machines, but the paths used to mount data directories can stay the same because of this. </p>
+<p>They are indicated with a "&gt;", ie. "&gt;sdk/Test", but using them is only allowed in few places, e.g. in <a class="el" href="../../d7/d0a/classxii_file_system.htm#ae4f21defbf902cd791d6926e62fde2db" title="Adds a data directory. It will try all the registered factories to find a data directory type that ca...">AddDataDirectory()</a>. Special directories are needed to be able to set up other paths relative to them and to be able to use different ones on different PCs. For instance when using file-serve functionality, the special directories may be different on the host and client machines, but the paths used to mount data directories can stay the same because of this. </p>
 
 </div>
 </div>
@@ -745,7 +745,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d7/d0a/classxii_file_system.htm">xiiFileSystem</a></li>
-    <li class="footer">Generated on Mon Apr 17 2023 20:10:37 for XIIEngine by
+    <li class="footer">Generated on Fri Jun 16 2023 14:12:52 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

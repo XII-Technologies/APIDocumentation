@@ -1,7 +1,7 @@
 var structxii_standard_menu_types =
 [
     [ "Bits", "dd/d51/structxii_standard_menu_types_1_1_bits.htm", "dd/d51/structxii_standard_menu_types_1_1_bits" ],
-    [ "StorageType", "d1/d6e/structxii_standard_menu_types.htm#afc308733d1a383dfe863b365b03bb117", null ],
+    [ "StorageType", "d1/d6e/structxii_standard_menu_types.htm#afbbdec494cb16700fadf4f318f274edb", null ],
     [ "Enum", "d1/d6e/structxii_standard_menu_types.htm#a855e4480e8326a8023a4542fab537e9c", [
       [ "File", "d1/d6e/structxii_standard_menu_types.htm#a855e4480e8326a8023a4542fab537e9ca301031afff5d2baeb8942740bcd1c103", null ],
       [ "Edit", "d1/d6e/structxii_standard_menu_types.htm#a855e4480e8326a8023a4542fab537e9ca2ce9696da528c2ac042ef556dd0e016d", null ],

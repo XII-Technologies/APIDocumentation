@@ -12,12 +12,12 @@ var classxii_command_line_option =
       [ "AlwaysIfSpecified", "dd/da4/classxii_command_line_option.htm#aeecfc1ea4f7297497d9e99f9274c8ac4a1644dc20516cb1b423acc5b7cac81bcf", null ]
     ] ],
     [ "xiiCommandLineOption", "dd/da4/classxii_command_line_option.htm#a71c85d3a9182b4c27a9b5c60716002d2", null ],
-    [ "GetLongDesc", "dd/da4/classxii_command_line_option.htm#a2cec1d300a92eba97dc08b65cb607ed6", null ],
-    [ "GetOptions", "dd/da4/classxii_command_line_option.htm#ad7fde9a9d111d47142dd71d0372f5572", null ],
-    [ "GetParamDefaultValueDesc", "dd/da4/classxii_command_line_option.htm#ace26f3fde11af81e3e9fb18704f73237", null ],
-    [ "GetParamShortDesc", "dd/da4/classxii_command_line_option.htm#a5131e4e7a839d1ec2256861117930b1b", null ],
-    [ "GetSortingGroup", "dd/da4/classxii_command_line_option.htm#abd5e9be95b41de5b22e19d11cf6b5422", null ],
-    [ "GetSplitOptions", "dd/da4/classxii_command_line_option.htm#a622401ba3e05a7a5c9ba9b83760f8aed", null ],
+    [ "GetLongDesc", "dd/da4/classxii_command_line_option.htm#a3584d22bb28de41c92bfd398847ae6ae", null ],
+    [ "GetOptions", "dd/da4/classxii_command_line_option.htm#aa78187ddd7d5f3ca3c1fe8606baa3f22", null ],
+    [ "GetParamDefaultValueDesc", "dd/da4/classxii_command_line_option.htm#a0d088b99e0e50ab991e920c8668ce5c9", null ],
+    [ "GetParamShortDesc", "dd/da4/classxii_command_line_option.htm#afefb32bb09107ded0553ffc925e7c3de", null ],
+    [ "GetSortingGroup", "dd/da4/classxii_command_line_option.htm#a140b6cc484c22e77899b1a9ca6894d63", null ],
+    [ "GetSplitOptions", "dd/da4/classxii_command_line_option.htm#a852ced85440e0026bd0d30cd59a08f68", null ],
     [ "GetType", "dd/da4/classxii_command_line_option.htm#ade1f2c3780fbcf391737400eb503597b", null ],
     [ "m_szSortingGroup", "dd/da4/classxii_command_line_option.htm#a6f889a54a4037899113fe77193c5fec1", null ]
 ];

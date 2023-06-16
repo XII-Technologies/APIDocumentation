@@ -1,7 +1,7 @@
 var structxii_spawn_component_flags =
 [
     [ "Bits", "d6/d6d/structxii_spawn_component_flags_1_1_bits.htm", "d6/d6d/structxii_spawn_component_flags_1_1_bits" ],
-    [ "StorageType", "df/df6/structxii_spawn_component_flags.htm#a47763eba3354cf6038b8a9eb30065b41", null ],
+    [ "StorageType", "df/df6/structxii_spawn_component_flags.htm#ac85d7d02bd1d88fdfab64f9576909881", null ],
     [ "Enum", "df/df6/structxii_spawn_component_flags.htm#ad8f31817365831bd91807d1f3db87b2e", [
       [ "None", "df/df6/structxii_spawn_component_flags.htm#ad8f31817365831bd91807d1f3db87b2eab90f1633049f3a3f62ca0aa64c54bd0d", null ],
       [ "SpawnAtStart", "df/df6/structxii_spawn_component_flags.htm#ad8f31817365831bd91807d1f3db87b2eabc1561d1d7fe2ebcbe576410df6d36bc", null ],

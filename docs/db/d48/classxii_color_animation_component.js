@@ -1,13 +1,13 @@
 var classxii_color_animation_component =
 [
     [ "xiiColorAnimationComponent", "db/d48/classxii_color_animation_component.htm#af513be59b2fddbc519425453fe8ae3b6", null ],
-    [ "DeserializeComponent", "db/d48/classxii_color_animation_component.htm#a32317c5df886539d010caedeebc8254c", null ],
+    [ "DeserializeComponent", "db/d48/classxii_color_animation_component.htm#a57052c7dd80d9d1441ad1d010b383faf", null ],
     [ "GetApplyRecursive", "db/d48/classxii_color_animation_component.htm#aac85f8f5a2d8e62099f765ffd1f3c0c5", null ],
     [ "GetColorGradient", "db/d48/classxii_color_animation_component.htm#af0c86e9408acc11fe9696d23e1c7375e", null ],
     [ "GetColorGradientFile", "db/d48/classxii_color_animation_component.htm#ab3dae0ffef434b6dd2f084058f16ebc1", null ],
     [ "GetRandomStartOffset", "db/d48/classxii_color_animation_component.htm#adcd52b9eb0ab28c557876e0fded5194c", null ],
     [ "OnSimulationStarted", "db/d48/classxii_color_animation_component.htm#a5a17e701739aa735b0927d90962922db", null ],
-    [ "SerializeComponent", "db/d48/classxii_color_animation_component.htm#a60000253df13682e8ea30597822ac3f9", null ],
+    [ "SerializeComponent", "db/d48/classxii_color_animation_component.htm#a3694ffce2cbc760a3c008eb9ff4edb45", null ],
     [ "SetApplyRecursive", "db/d48/classxii_color_animation_component.htm#a1dcccc647450f55e478b402890f95cc7", null ],
     [ "SetColorGradient", "db/d48/classxii_color_animation_component.htm#a9a52e8d8d8a37c246fd4a654480a8aee", null ],
     [ "SetColorGradientFile", "db/d48/classxii_color_animation_component.htm#a9ded560ee3d5653d4ea71d9dddd3f366", null ],

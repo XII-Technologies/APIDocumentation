@@ -7,7 +7,7 @@ var classxii_qt_container_window =
     [ "closeEvent", "d4/dfd/classxii_qt_container_window.htm#ac0fa2d711491d4b01c9545964ec3f637", null ],
     [ "eventFilter", "d4/dfd/classxii_qt_container_window.htm#ac7e092ad4594ec68f4d0ea7795eb78df", null ],
     [ "GetDockManager", "d4/dfd/classxii_qt_container_window.htm#a14e4086c87cbbe5275abfee468a1976d", null ],
-    [ "GetDocumentWindows", "d4/dfd/classxii_qt_container_window.htm#abf6b08da996fe7bfd3ad4213606e44d5", null ],
+    [ "GetDocumentWindows", "d4/dfd/classxii_qt_container_window.htm#a93f43b607ef2045cb4a0ebf5904fac72", null ],
     [ "RestoreWindowLayout", "d4/dfd/classxii_qt_container_window.htm#ad0e058b7e40e0a9161e6e4fb2be7a368", null ],
     [ "SaveDocumentLayouts", "d4/dfd/classxii_qt_container_window.htm#aef02e8bb3891319acbae60bd806f8357", null ],
     [ "SaveWindowLayout", "d4/dfd/classxii_qt_container_window.htm#a7e71464a807607b53ee858c32959d0a8", null ],

@@ -134,9 +134,9 @@ XII_ALWAYS_INLINE RESOURCE_TYPE *&#160;</td><td class="memItemRight" valign="bot
 class xiiResourceLock&lt; RESOURCE_TYPE &gt;</h3>
 
 <p>Helper class to acquire and release a resource safely. </p>
-<p>The constructor calls <a class="el" href="../../d4/d8e/classxii_resource_manager.htm#aaeb46a3010ec736d655cd0eae27d487c" title="Acquires a resource pointer from a handle. Prefer to use xiiResourceLock, which wraps BeginAcquireRes...">xiiResourceManager::BeginAcquireResource</a>, the destructor makes sure to call <a class="el" href="../../d4/d8e/classxii_resource_manager.htm#a69d96e946aa3e79a3af69bfa249e78fa" title="Needs to be called in concert with BeginAcquireResource() after accessing a resource has been finishe...">xiiResourceManager::EndAcquireResource</a>. The instance of this class can be used like a pointer to the resource.</p>
+<p>The constructor calls <a class="el" href="../../d4/d8e/classxii_resource_manager.htm#a5479934b8fc637ff4067fdd2d24bc2e0" title="Acquires a resource pointer from a handle. Prefer to use xiiResourceLock, which wraps BeginAcquireRes...">xiiResourceManager::BeginAcquireResource</a>, the destructor makes sure to call <a class="el" href="../../d4/d8e/classxii_resource_manager.htm#a69d96e946aa3e79a3af69bfa249e78fa" title="Needs to be called in concert with BeginAcquireResource() after accessing a resource has been finishe...">xiiResourceManager::EndAcquireResource</a>. The instance of this class can be used like a pointer to the resource.</p>
 <p>Whether the acquisition succeeded or returned a loading fallback, missing fallback or even no result, at all, can be retrieved through GetAcquireResult(). </p><dl class="section note"><dt>Note</dt><dd>If a resource is missing, but no missing fallback is specified for the resource type, the code will fail with an assertion, unless you used xiiResourceAcquireMode::BlockTillLoaded_NeverFail. Only then will the error be silently ignored and the acquire result will be xiiResourceAcquireResult::None.</dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d4/d8e/classxii_resource_manager.htm#aaeb46a3010ec736d655cd0eae27d487c" title="Acquires a resource pointer from a handle. Prefer to use xiiResourceLock, which wraps BeginAcquireRes...">xiiResourceManager::BeginAcquireResource()</a> </dd>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d4/d8e/classxii_resource_manager.htm#a5479934b8fc637ff4067fdd2d24bc2e0" title="Acquires a resource pointer from a handle. Prefer to use xiiResourceLock, which wraps BeginAcquireRes...">xiiResourceManager::BeginAcquireResource()</a> </dd>
 <dd>
 xiiResourceAcquireMode </dd>
 <dd>
@@ -150,7 +150,7 @@ xiiResourceAcquireResult </dd></dl>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d2/d79/classxii_resource_lock.htm">xiiResourceLock</a></li>
-    <li class="footer">Generated on Mon Apr 17 2023 20:10:41 for XIIEngine by
+    <li class="footer">Generated on Fri Jun 16 2023 14:12:56 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

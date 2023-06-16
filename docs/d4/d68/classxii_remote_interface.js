@@ -26,7 +26,7 @@ var classxii_remote_interface =
     [ "ReportDisconnectedFromClient", "d4/d68/classxii_remote_interface.htm#ad63a8cec4f9870f2cc5eccd58b2564c9", null ],
     [ "ReportDisconnectedFromServer", "d4/d68/classxii_remote_interface.htm#aef312782423cabf846dd64811d6f351c", null ],
     [ "ReportMessage", "d4/d68/classxii_remote_interface.htm#a3c7d3792ec94813acb608e3dc77e407c", null ],
-    [ "Send", "d4/d68/classxii_remote_interface.htm#ad98af280527a3c5580d678a3eb277516", null ],
+    [ "Send", "d4/d68/classxii_remote_interface.htm#a6a66a12b495f1c233464dff2a64b5da3", null ],
     [ "Send", "d4/d68/classxii_remote_interface.htm#a9cec9e3ab299e56bf2a0d3dd92bcd153", null ],
     [ "Send", "d4/d68/classxii_remote_interface.htm#a927764dfb696e4ff51dbe155edcc45fa", null ],
     [ "Send", "d4/d68/classxii_remote_interface.htm#a6953e547be1b17907d09f2b576991f92", null ],

@@ -5,7 +5,6 @@ var structxii_g_a_l_buffer_creation_description =
     [ "m_bAllowUAV", "d7/d69/structxii_g_a_l_buffer_creation_description.htm#a5b260af15059af340b2b01814c4bed29", null ],
     [ "m_bStreamOutputTarget", "d7/d69/structxii_g_a_l_buffer_creation_description.htm#ad6215dba57573e58d3539f490cd431ec", null ],
     [ "m_BufferType", "d7/d69/structxii_g_a_l_buffer_creation_description.htm#a4bc8f682d914ae1abaa5da7348e6dccd", null ],
-    [ "m_bUseAsFormattedBuffer", "d7/d69/structxii_g_a_l_buffer_creation_description.htm#a149c7da13c410816213e3d8182b56e8d", null ],
     [ "m_bUseAsStructuredBuffer", "d7/d69/structxii_g_a_l_buffer_creation_description.htm#a1ba64629dc4ea82a7bb7552e5454c420", null ],
     [ "m_bUseForIndirectArguments", "d7/d69/structxii_g_a_l_buffer_creation_description.htm#a977a86b87f65c2b08fe034d28b95c7a3", null ],
     [ "m_ResourceAccess", "d7/d69/structxii_g_a_l_buffer_creation_description.htm#ac22123f4cb4409327c74f356456563e7", null ],

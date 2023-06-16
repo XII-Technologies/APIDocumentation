@@ -1,6 +1,6 @@
 var structxii_particle_type_render_mode =
 [
-    [ "StorageType", "d8/d30/structxii_particle_type_render_mode.htm#a84c51f0895c989d5a8b24b68aa480bd7", null ],
+    [ "StorageType", "d8/d30/structxii_particle_type_render_mode.htm#a32ab73826b760d19d23f760fbfd38414", null ],
     [ "Enum", "d8/d30/structxii_particle_type_render_mode.htm#add8280d258b438be43d20c2fa904e19f", [
       [ "Additive", "d8/d30/structxii_particle_type_render_mode.htm#add8280d258b438be43d20c2fa904e19fa2ad333b61a5f43dec2fe401ebd830e93", null ],
       [ "Blended", "d8/d30/structxii_particle_type_render_mode.htm#add8280d258b438be43d20c2fa904e19fa78effe148c97695d00eac6517fec811d", null ],

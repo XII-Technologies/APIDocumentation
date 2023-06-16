@@ -96,7 +96,7 @@ $(document).ready(function(){initNavTree('d4/dad/_reflection_probe_data_8h_sourc
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
 <div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="../../db/d2a/structxii_reflection_probe_mode.htm">    8</a></span>&#160;<span class="keyword">struct </span><a class="code" href="../../db/d2a/structxii_reflection_probe_mode.htm">xiiReflectionProbeMode</a></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;{</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;  <span class="keyword">typedef</span> xiiUInt8 StorageType;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;  <span class="keyword">using</span> StorageType = xiiUInt8;</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;  <span class="keyword">enum</span> Enum</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;  {</div>
@@ -127,7 +127,7 @@ $(document).ready(function(){initNavTree('d4/dad/_reflection_probe_data_8h_sourc
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <a class="code" href="../../d9/d9a/classxii_vec3_template.htm">xiiVec3</a> m_vCaptureOffset = <a class="code" href="../../d9/d9a/classxii_vec3_template.htm#ae11f5900a8e3748216ebdd2d5caa6c02">xiiVec3::ZeroVector</a>();</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;};</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keyword">typedef</span> <a class="code" href="../../d0/dcc/structxii_generic_id.htm">xiiGenericId&lt;24, 8&gt;</a> <a class="code" href="../../d0/dcc/structxii_generic_id.htm">xiiReflectionProbeId</a>;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keyword">using</span> <a class="code" href="../../d0/dcc/structxii_generic_id.htm">xiiReflectionProbeId</a> = <a class="code" href="../../d0/dcc/structxii_generic_id.htm">xiiGenericId&lt;24, 8&gt;</a>;</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keyword">template</span> &lt;&gt;</div>
 <div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="../../df/da2/structxii_hash_helper_3_01xii_reflection_probe_id_01_4.htm">   45</a></span>&#160;<span class="keyword">struct </span><a class="code" href="../../d6/dcd/structxii_hash_helper.htm">xiiHashHelper</a>&lt;<a class="code" href="../../d0/dcc/structxii_generic_id.htm">xiiReflectionProbeId</a>&gt;</div>
@@ -180,7 +180,7 @@ $(document).ready(function(){initNavTree('d4/dad/_reflection_probe_data_8h_sourc
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
 <div class="line"><a name="l00096"></a><span class="lineno"><a class="line" href="../../d3/dff/structxii_probe_flags.htm">   96</a></span>&#160;<span class="keyword">struct </span><a class="code" href="../../d3/dff/structxii_probe_flags.htm">xiiProbeFlags</a></div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;{</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  <span class="keyword">typedef</span> xiiUInt8 StorageType;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  <span class="keyword">using</span> StorageType = xiiUInt8;</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  <span class="keyword">enum</span> Enum</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;  {</div>
@@ -217,7 +217,7 @@ $(document).ready(function(){initNavTree('d4/dad/_reflection_probe_data_8h_sourc
 <div class="ttc" id="astructxii_reflection_probe_desc_htm"><div class="ttname"><a href="../../d8/d70/structxii_reflection_probe_desc.htm">xiiReflectionProbeDesc</a></div><div class="ttdoc">Describes how a cube map should be generated.</div><div class="ttdef"><b>Definition:</b> ReflectionProbeData.h:23</div></div>
 <div class="ttc" id="astructxii_reflection_probe_ref_htm"><div class="ttname"><a href="../../da/d44/structxii_reflection_probe_ref.htm">xiiReflectionProbeRef</a></div><div class="ttdoc">A unique reference to a reflection probe.</div><div class="ttdef"><b>Definition:</b> ReflectionProbeData.h:75</div></div>
 <div class="ttc" id="astructxii_generic_id_htm"><div class="ttname"><a href="../../d0/dcc/structxii_generic_id.htm">xiiGenericId&lt; 24, 8 &gt;</a></div></div>
-<div class="ttc" id="aclassxii_tag_set_template_htm"><div class="ttname"><a href="../../d6/dc8/classxii_tag_set_template.htm">xiiTagSetTemplate</a></div><div class="ttdoc">A dynamic collection of tags featuring fast lookups.</div><div class="ttdef"><b>Definition:</b> TagSet.h:22</div></div>
+<div class="ttc" id="aclassxii_tag_set_template_htm"><div class="ttname"><a href="../../d6/dc8/classxii_tag_set_template.htm">xiiTagSetTemplate&lt;&gt;</a></div></div>
 <div class="ttc" id="astructxii_hash_helper_htm"><div class="ttname"><a href="../../d6/dcd/structxii_hash_helper.htm">xiiHashHelper</a></div><div class="ttdoc">Helper struct to calculate the Hash of different types.</div><div class="ttdef"><b>Definition:</b> HashingUtils.h:74</div></div>
 <div class="ttc" id="astructxii_probe_flags_htm"><div class="ttname"><a href="../../d3/dff/structxii_probe_flags.htm">xiiProbeFlags</a></div><div class="ttdoc">Flags that describe a reflection probe.</div><div class="ttdef"><b>Definition:</b> ReflectionProbeData.h:96</div></div>
 <div class="ttc" id="aclassxii_vec3_template_htm"><div class="ttname"><a href="../../d9/d9a/classxii_vec3_template.htm">xiiVec3Template&lt; float &gt;</a></div></div>
@@ -226,7 +226,7 @@ $(document).ready(function(){initNavTree('d4/dad/_reflection_probe_data_8h_sourc
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.htm">home</a></li><li class="navelem"><a class="el" href="../../dir_1036706e55c22cab35bc1c58ee689f1d.htm">runner</a></li><li class="navelem"><a class="el" href="../../dir_629f8151d55d307162ff2d619fb1783d.htm">work</a></li><li class="navelem"><a class="el" href="../../dir_1ddc44fe1263a8c7935fa6130b7d9499.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_2c1b6808f12952f4c36e05ba7068379a.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_b5a1c4ecfca018ad24b729e213296d41.htm">Source</a></li><li class="navelem"><a class="el" href="../../dir_e321052006a51284e67389ab20037e7c.htm">Engine</a></li><li class="navelem"><a class="el" href="../../dir_ce7209769439328870c665a52885ba73.htm">RendererCore</a></li><li class="navelem"><a class="el" href="../../dir_fd84db95fe8b70e1ac5503110ff12a40.htm">Lights</a></li><li class="navelem"><a class="el" href="../../dir_260ee0ca73e4e919bbc207aa47580de4.htm">Implementation</a></li><li class="navelem"><b>ReflectionProbeData.h</b></li>
-    <li class="footer">Generated on Mon Apr 17 2023 20:10:33 for XIIEngine by
+    <li class="footer">Generated on Fri Jun 16 2023 14:12:47 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

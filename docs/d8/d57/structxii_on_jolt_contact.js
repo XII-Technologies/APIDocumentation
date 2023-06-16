@@ -1,7 +1,7 @@
 var structxii_on_jolt_contact =
 [
     [ "Bits", "dc/dbd/structxii_on_jolt_contact_1_1_bits.htm", "dc/dbd/structxii_on_jolt_contact_1_1_bits" ],
-    [ "StorageType", "d8/d57/structxii_on_jolt_contact.htm#a86d366f68af2ee7bf566cd48c644f008", null ],
+    [ "StorageType", "d8/d57/structxii_on_jolt_contact.htm#a0aa60fd6cb0860a943a2eb0def553480", null ],
     [ "Enum", "d8/d57/structxii_on_jolt_contact.htm#a40322928cbbed82933952caadedadbcd", [
       [ "None", "d8/d57/structxii_on_jolt_contact.htm#a40322928cbbed82933952caadedadbcdaf7b59a893ab10934890d3692db4d48db", null ],
       [ "ImpactReactions", "d8/d57/structxii_on_jolt_contact.htm#a40322928cbbed82933952caadedadbcdac52c3fa572da71d2980b72e0a2d63793", null ],

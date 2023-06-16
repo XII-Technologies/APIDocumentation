@@ -1,8 +1,8 @@
 var classxii_telemetry =
 [
     [ "TelemetryEventData", "d0/de3/structxii_telemetry_1_1_telemetry_event_data.htm", "d0/de3/structxii_telemetry_1_1_telemetry_event_data" ],
-    [ "ProcessMessagesCallback", "d9/d32/classxii_telemetry.htm#a9b39e8ad7735b2b58467c6bc27001270", null ],
-    [ "xiiEventTelemetry", "d9/d32/classxii_telemetry.htm#a304c7e18a767bedd3e9a49280efc3eb7", null ],
+    [ "ProcessMessagesCallback", "d9/d32/classxii_telemetry.htm#a38e948780097b77fb6547d20fda2d79c", null ],
+    [ "xiiEventTelemetry", "d9/d32/classxii_telemetry.htm#a812a6c8659bf7be7e8f824d6c1495fd9", null ],
     [ "ConnectionMode", "d9/d32/classxii_telemetry.htm#abbf62b23f17def0037ab9d63cba81877", [
       [ "None", "d9/d32/classxii_telemetry.htm#abbf62b23f17def0037ab9d63cba81877abcc5d32dc4a8576f08ecfc08775aa31e", null ],
       [ "Server", "d9/d32/classxii_telemetry.htm#abbf62b23f17def0037ab9d63cba81877ac68215209e4a63dbcf5b7e57d899bfde", null ],

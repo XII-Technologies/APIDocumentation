@@ -9,7 +9,7 @@ var classxii_array_ptr =
     [ "ValueType", "d0/d60/classxii_array_ptr.htm#a75489008098bb5f7829dc4502be01952", null ],
     [ "xiiArrayPtr", "d0/d60/classxii_array_ptr.htm#a610cb5906b7d1515d0bb56f64b2b8d87", null ],
     [ "xiiArrayPtr", "d0/d60/classxii_array_ptr.htm#a639f8a332f876ff220abc92e4b15e2e1", null ],
-    [ "xiiArrayPtr", "d0/d60/classxii_array_ptr.htm#a90cefd4853e53da187d095f326f81925", null ],
+    [ "xiiArrayPtr", "d0/d60/classxii_array_ptr.htm#a46ed905c533a7e8e0e350a4d1c5d155f", null ],
     [ "xiiArrayPtr", "d0/d60/classxii_array_ptr.htm#a31189825c3aff3c2846dc53ca4fab7f2", null ],
     [ "xiiArrayPtr", "d0/d60/classxii_array_ptr.htm#af73229b7dec4dbaaec59e06c93e4b990", null ],
     [ "Cast", "d0/d60/classxii_array_ptr.htm#af5615d7f0dcf35a3660ac69b3bba7b6b", null ],

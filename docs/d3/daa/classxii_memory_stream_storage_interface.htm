@@ -103,7 +103,7 @@ Inheritance diagram for xiiMemoryStreamStorageInterface:</div>
 <map name="xii_memory_stream_storage_interface_inherit__map" id="xii_memory_stream_storage_interface_inherit__map">
 <area shape="rect" title="Instances of this class act as storage for memory streams." alt="" coords="5,101,252,128"/>
 <area shape="rect" href="../../dc/df7/classxii_default_memory_stream_storage.htm" title="The default implementation for memory stream storage." alt="" coords="300,5,537,32"/>
-<area shape="rect" href="../../d4/d1e/classxii_memory_stream_container_storage.htm" title="Templated implementation of xiiMemoryStreamStorageInterface that adapts most standard xii containers ..." alt="" coords="317,57,520,98"/>
+<area shape="rect" href="../../d4/d1e/classxii_memory_stream_container_storage.htm" title="Templated implementation of xiiMemoryStreamStorageInterface that adapts most standard XII containers ..." alt="" coords="317,57,520,98"/>
 <area shape="rect" href="../../d4/d1e/classxii_memory_stream_container_storage.htm" title=" " alt="" coords="317,123,520,179"/>
 <area shape="rect" href="../../dd/d1a/classxii_memory_stream_container_wrapper_storage.htm" title="Wrapper around an existing container to implement xiiMemoryStreamStorageInterface." alt="" coords="302,203,535,245"/>
 <area shape="rect" href="../../d5/d12/classxii_contiguous_memory_stream_storage.htm" title=" " alt="" coords="585,130,797,171"/>
@@ -132,18 +132,18 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 virtual xiiUInt64&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/daa/classxii_memory_stream_storage_interface.htm#a100e0aef1b36bcc858c22bcb5aa31388">GetHeapMemoryUsage</a> () const =0</td></tr>
 <tr class="memdesc:a100e0aef1b36bcc858c22bcb5aa31388"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the amount of bytes that are currently allocated on the heap. <br /></td></tr>
 <tr class="separator:a100e0aef1b36bcc858c22bcb5aa31388"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9e4db1474736370b8e67447ac880e048"><td class="memItemLeft" align="right" valign="top"><a id="a9e4db1474736370b8e67447ac880e048"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/daa/classxii_memory_stream_storage_interface.htm#a9e4db1474736370b8e67447ac880e048">ReadAll</a> (<a class="el" href="../../d4/d5e/classxii_stream_reader.htm">xiiStreamReader</a> &amp;Stream, xiiUInt64 uiMaxBytes=<a class="el" href="../../d1/d37/namespacexii_math.htm#a6bbce1588f70c91d6cad87e82a0238c1">xiiMath::MaxValue</a>&lt; xiiUInt64 &gt;())</td></tr>
-<tr class="memdesc:a9e4db1474736370b8e67447ac880e048"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies all data from the given stream into the storage. <br /></td></tr>
-<tr class="separator:a9e4db1474736370b8e67447ac880e048"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a5cf499f2dd9001a28f4c6eb6bb6a75"><td class="memItemLeft" align="right" valign="top"><a id="a6a5cf499f2dd9001a28f4c6eb6bb6a75"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/daa/classxii_memory_stream_storage_interface.htm#a6a5cf499f2dd9001a28f4c6eb6bb6a75">ReadAll</a> (<a class="el" href="../../d4/d5e/classxii_stream_reader.htm">xiiStreamReader</a> &amp;ref_stream, xiiUInt64 uiMaxBytes=<a class="el" href="../../d1/d37/namespacexii_math.htm#a6bbce1588f70c91d6cad87e82a0238c1">xiiMath::MaxValue</a>&lt; xiiUInt64 &gt;())</td></tr>
+<tr class="memdesc:a6a5cf499f2dd9001a28f4c6eb6bb6a75"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies all data from the given stream into the storage. <br /></td></tr>
+<tr class="separator:a6a5cf499f2dd9001a28f4c6eb6bb6a75"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acc41ddad201402651d597a29082a7397"><td class="memItemLeft" align="right" valign="top"><a id="acc41ddad201402651d597a29082a7397"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/daa/classxii_memory_stream_storage_interface.htm#acc41ddad201402651d597a29082a7397">Reserve</a> (xiiUInt64 uiBytes)=0</td></tr>
 <tr class="memdesc:acc41ddad201402651d597a29082a7397"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reserves N bytes of storage. <br /></td></tr>
 <tr class="separator:acc41ddad201402651d597a29082a7397"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af5a460bc957473e2d06aeaea9c12d622"><td class="memItemLeft" align="right" valign="top"><a id="af5a460bc957473e2d06aeaea9c12d622"></a>
-virtual <a class="el" href="../../dd/dad/structxii_result.htm">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/daa/classxii_memory_stream_storage_interface.htm#af5a460bc957473e2d06aeaea9c12d622">CopyToStream</a> (<a class="el" href="../../d0/d18/classxii_stream_writer.htm">xiiStreamWriter</a> &amp;stream) const =0</td></tr>
-<tr class="memdesc:af5a460bc957473e2d06aeaea9c12d622"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes the entire content of the storage to the provided stream. <br /></td></tr>
-<tr class="separator:af5a460bc957473e2d06aeaea9c12d622"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45961434325bd79e88d32522c82d9767"><td class="memItemLeft" align="right" valign="top"><a id="a45961434325bd79e88d32522c82d9767"></a>
+virtual <a class="el" href="../../dd/dad/structxii_result.htm">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/daa/classxii_memory_stream_storage_interface.htm#a45961434325bd79e88d32522c82d9767">CopyToStream</a> (<a class="el" href="../../d0/d18/classxii_stream_writer.htm">xiiStreamWriter</a> &amp;ref_stream) const =0</td></tr>
+<tr class="memdesc:a45961434325bd79e88d32522c82d9767"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes the entire content of the storage to the provided stream. <br /></td></tr>
+<tr class="separator:a45961434325bd79e88d32522c82d9767"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7fc9181fa4d93e445f3d0cba44ad29e1"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d0/d60/classxii_array_ptr.htm">xiiArrayPtr</a>&lt; const xiiUInt8 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/daa/classxii_memory_stream_storage_interface.htm#a7fc9181fa4d93e445f3d0cba44ad29e1">GetContiguousMemoryRange</a> (xiiUInt64 uiStartByte) const =0</td></tr>
 <tr class="memdesc:a7fc9181fa4d93e445f3d0cba44ad29e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a read-only <a class="el" href="../../d0/d60/classxii_array_ptr.htm" title="This class encapsulates an array and it&#39;s size. It is recommended to use this class instead of plain ...">xiiArrayPtr</a> that represents a contiguous area in memory which starts at the given first byte.  <a href="../../d3/daa/classxii_memory_stream_storage_interface.htm#a7fc9181fa4d93e445f3d0cba44ad29e1">More...</a><br /></td></tr>
 <tr class="separator:a7fc9181fa4d93e445f3d0cba44ad29e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -206,7 +206,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>xiiMemoryStreamWrite
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d3/daa/classxii_memory_stream_storage_interface.htm">xiiMemoryStreamStorageInterface</a></li>
-    <li class="footer">Generated on Mon Apr 17 2023 20:10:39 for XIIEngine by
+    <li class="footer">Generated on Fri Jun 16 2023 14:12:54 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

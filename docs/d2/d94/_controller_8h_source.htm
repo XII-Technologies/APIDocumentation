@@ -120,9 +120,9 @@ $(document).ready(function(){initNavTree('d2/d94/_controller_8h_source.htm','../
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <span class="keywordtype">bool</span> IsVibrationEnabled(xiiUInt8 uiVirtual) <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <span class="keywordtype">void</span> SetVibrationStrength(xiiUInt8 uiVirtual, Motor::Enum eMotor, <span class="keywordtype">float</span> fValue);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <span class="keywordtype">void</span> SetVibrationStrength(xiiUInt8 uiVirtual, Motor::Enum motor, <span class="keywordtype">float</span> fValue);</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <span class="keywordtype">float</span> GetVibrationStrength(xiiUInt8 uiVirtual, Motor::Enum eMotor);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <span class="keywordtype">float</span> GetVibrationStrength(xiiUInt8 uiVirtual, Motor::Enum motor);</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <span class="keywordtype">void</span> SetControllerMapping(xiiUInt8 uiVirtualController, xiiInt8 iTakeInputFromPhysical);</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
@@ -130,7 +130,7 @@ $(document).ready(function(){initNavTree('d2/d94/_controller_8h_source.htm','../
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">bool</span> IsControllerConnected(xiiUInt8 uiPhysical) <span class="keyword">const</span> = 0;</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  <span class="keywordtype">void</span> AddVibrationTrack(xiiUInt8 uiVirtual, Motor::Enum eMotor, <span class="keywordtype">float</span>* fVibrationTrackValue, xiiUInt32 uiSamples, <span class="keywordtype">float</span> fScalingFactor = 1.0f);</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  <span class="keywordtype">void</span> AddVibrationTrack(xiiUInt8 uiVirtual, Motor::Enum motor, <span class="keywordtype">float</span>* pVibrationTrackValue, xiiUInt32 uiSamples, <span class="keywordtype">float</span> fScalingFactor = 1.0f);</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="keyword">protected</span>:</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  <span class="keywordtype">void</span> UpdateVibration(<a class="code" href="../../d7/dc1/structxii_time.htm">xiiTime</a> tTimeDifference);</div>
@@ -154,7 +154,7 @@ $(document).ready(function(){initNavTree('d2/d94/_controller_8h_source.htm','../
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.htm">home</a></li><li class="navelem"><a class="el" href="../../dir_1036706e55c22cab35bc1c58ee689f1d.htm">runner</a></li><li class="navelem"><a class="el" href="../../dir_629f8151d55d307162ff2d619fb1783d.htm">work</a></li><li class="navelem"><a class="el" href="../../dir_1ddc44fe1263a8c7935fa6130b7d9499.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_2c1b6808f12952f4c36e05ba7068379a.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_b5a1c4ecfca018ad24b729e213296d41.htm">Source</a></li><li class="navelem"><a class="el" href="../../dir_e321052006a51284e67389ab20037e7c.htm">Engine</a></li><li class="navelem"><a class="el" href="../../dir_6934db396743bb3844d563c7fa1f32a7.htm">Core</a></li><li class="navelem"><a class="el" href="../../dir_c4fec11ccf1e859a90dd25bc0dca3b53.htm">Input</a></li><li class="navelem"><a class="el" href="../../dir_5236c32178b05033e6bdb0358acd5f86.htm">DeviceTypes</a></li><li class="navelem"><b>Controller.h</b></li>
-    <li class="footer">Generated on Mon Apr 17 2023 20:10:25 for XIIEngine by
+    <li class="footer">Generated on Fri Jun 16 2023 14:12:38 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

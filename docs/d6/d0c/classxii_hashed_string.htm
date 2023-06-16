@@ -105,12 +105,12 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:add0faf380d360aab49f7cb35217dcc12"><td class="memItemLeft" align="right" valign="top"><a id="add0faf380d360aab49f7cb35217dcc12"></a>
-typedef <a class="el" href="../../d6/df7/classxii_map.htm">xiiMap</a>&lt; xiiUInt64, <a class="el" href="../../de/df9/structxii_hashed_string_1_1_hashed_data.htm">HashedData</a>, <a class="el" href="../../d1/deb/structxii_compare_helper.htm">xiiCompareHelper</a>&lt; xiiUInt64 &gt;, <a class="el" href="../../df/d02/structxii_static_allocator_wrapper.htm">xiiStaticAllocatorWrapper</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>StringStorage</b></td></tr>
-<tr class="separator:add0faf380d360aab49f7cb35217dcc12"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1b3f55d11e5bb06f6d6e5a5aa3c45732"><td class="memItemLeft" align="right" valign="top"><a id="a1b3f55d11e5bb06f6d6e5a5aa3c45732"></a>
-typedef StringStorage::Iterator&#160;</td><td class="memItemRight" valign="bottom"><b>HashedType</b></td></tr>
-<tr class="separator:a1b3f55d11e5bb06f6d6e5a5aa3c45732"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a969152d0f5be54cced398088bf7011b8"><td class="memItemLeft" align="right" valign="top"><a id="a969152d0f5be54cced398088bf7011b8"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>StringStorage</b> = <a class="el" href="../../d6/df7/classxii_map.htm">xiiMap</a>&lt; xiiUInt64, <a class="el" href="../../de/df9/structxii_hashed_string_1_1_hashed_data.htm">HashedData</a>, <a class="el" href="../../d1/deb/structxii_compare_helper.htm">xiiCompareHelper</a>&lt; xiiUInt64 &gt;, <a class="el" href="../../df/d02/structxii_static_allocator_wrapper.htm">xiiStaticAllocatorWrapper</a> &gt;</td></tr>
+<tr class="separator:a969152d0f5be54cced398088bf7011b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ae61f30a21d053e64aacceb938f90d1"><td class="memItemLeft" align="right" valign="top"><a id="a0ae61f30a21d053e64aacceb938f90d1"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>HashedType</b> = StringStorage::Iterator</td></tr>
+<tr class="separator:a0ae61f30a21d053e64aacceb938f90d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -141,17 +141,17 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../.
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d0c/classxii_hashed_string.htm#a87eeaecd77b3034b28f93958421303e4">operator=</a> (<a class="el" href="../../d6/d0c/classxii_hashed_string.htm">xiiHashedString</a> &amp;&amp;rhs)</td></tr>
 <tr class="memdesc:a87eeaecd77b3034b28f93958421303e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Moves the given <a class="el" href="../../d6/d0c/classxii_hashed_string.htm" title="This class is optimized to take nearly no memory (sizeof(void*)) and to allow very fast checks whethe...">xiiHashedString</a>. <br /></td></tr>
 <tr class="separator:a87eeaecd77b3034b28f93958421303e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5d13f4cf5475c8994c102b71c4fce073"><td class="memTemplParams" colspan="2">template&lt;size_t N&gt; </td></tr>
-<tr class="memitem:a5d13f4cf5475c8994c102b71c4fce073"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d6/d0c/classxii_hashed_string.htm#a5d13f4cf5475c8994c102b71c4fce073">Assign</a> (const char(&amp;szString)[N])</td></tr>
-<tr class="memdesc:a5d13f4cf5475c8994c102b71c4fce073"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assigning a new string from a string constant is a slow operation, but the hash computation can happen at compile time.  <a href="../../d6/d0c/classxii_hashed_string.htm#a5d13f4cf5475c8994c102b71c4fce073">More...</a><br /></td></tr>
-<tr class="separator:a5d13f4cf5475c8994c102b71c4fce073"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a81229495122454374c39cfe52874366a"><td class="memTemplParams" colspan="2"><a id="a81229495122454374c39cfe52874366a"></a>
+<tr class="memitem:a54c8ecc5b07fff781b4c8fb18b9d89cc"><td class="memTemplParams" colspan="2">template&lt;size_t N&gt; </td></tr>
+<tr class="memitem:a54c8ecc5b07fff781b4c8fb18b9d89cc"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d6/d0c/classxii_hashed_string.htm#a54c8ecc5b07fff781b4c8fb18b9d89cc">Assign</a> (const char(&amp;string)[N])</td></tr>
+<tr class="memdesc:a54c8ecc5b07fff781b4c8fb18b9d89cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assigning a new string from a string constant is a slow operation, but the hash computation can happen at compile time.  <a href="../../d6/d0c/classxii_hashed_string.htm#a54c8ecc5b07fff781b4c8fb18b9d89cc">More...</a><br /></td></tr>
+<tr class="separator:a54c8ecc5b07fff781b4c8fb18b9d89cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55ad522187e4a55bf3aeb90f6b01c421"><td class="memTemplParams" colspan="2"><a id="a55ad522187e4a55bf3aeb90f6b01c421"></a>
 template&lt;size_t N&gt; </td></tr>
-<tr class="memitem:a81229495122454374c39cfe52874366a"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>Assign</b> (char(&amp;szString)[N])=delete</td></tr>
-<tr class="separator:a81229495122454374c39cfe52874366a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae93b5ebe14a194d16d6a3a9ef9b09c3e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d0c/classxii_hashed_string.htm#ae93b5ebe14a194d16d6a3a9ef9b09c3e">Assign</a> (<a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> szString)</td></tr>
-<tr class="memdesc:ae93b5ebe14a194d16d6a3a9ef9b09c3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assigning a new string from a non-hashed string is a very slow operation, this should be used rarely.  <a href="../../d6/d0c/classxii_hashed_string.htm#ae93b5ebe14a194d16d6a3a9ef9b09c3e">More...</a><br /></td></tr>
-<tr class="separator:ae93b5ebe14a194d16d6a3a9ef9b09c3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55ad522187e4a55bf3aeb90f6b01c421"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>Assign</b> (char(&amp;string)[N])=delete</td></tr>
+<tr class="separator:a55ad522187e4a55bf3aeb90f6b01c421"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae43c79600e55af0daf8bcbcee592a544"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d0c/classxii_hashed_string.htm#ae43c79600e55af0daf8bcbcee592a544">Assign</a> (<a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sString)</td></tr>
+<tr class="memdesc:ae43c79600e55af0daf8bcbcee592a544"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assigning a new string from a non-hashed string is a very slow operation, this should be used rarely.  <a href="../../d6/d0c/classxii_hashed_string.htm#ae43c79600e55af0daf8bcbcee592a544">More...</a><br /></td></tr>
+<tr class="separator:ae43c79600e55af0daf8bcbcee592a544"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaee48674cfaf6da1188ff096ced2c952"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d0c/classxii_hashed_string.htm#aaee48674cfaf6da1188ff096ced2c952">operator==</a> (const <a class="el" href="../../d6/d0c/classxii_hashed_string.htm">xiiHashedString</a> &amp;rhs) const</td></tr>
 <tr class="memdesc:aaee48674cfaf6da1188ff096ced2c952"><td class="mdescLeft">&#160;</td><td class="mdescRight">Comparing whether two hashed strings are identical is just a pointer comparison. This operation is what <a class="el" href="../../d6/d0c/classxii_hashed_string.htm" title="This class is optimized to take nearly no memory (sizeof(void*)) and to allow very fast checks whethe...">xiiHashedString</a> is optimized for.  <a href="../../d6/d0c/classxii_hashed_string.htm#aaee48674cfaf6da1188ff096ced2c952">More...</a><br /></td></tr>
 <tr class="separator:aaee48674cfaf6da1188ff096ced2c952"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -203,10 +203,10 @@ XII_ALWAYS_INLINE <a class="el" href="../../da/d9d/structxii_string_view.htm">xi
 XII_ALWAYS_INLINE&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d0c/classxii_hashed_string.htm#a7da5f3b8b35deaaac42acae20b3080cb">operator const char *</a> () const</td></tr>
 <tr class="memdesc:a7da5f3b8b35deaaac42acae20b3080cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a pointer to the internal Utf8 string. <br /></td></tr>
 <tr class="separator:a7da5f3b8b35deaaac42acae20b3080cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af6482b20a6827df89aaab064c9e81930"><td class="memTemplParams" colspan="2"><a id="af6482b20a6827df89aaab064c9e81930"></a>
+<tr class="memitem:a1dca8ce2fd7362eda35a9edd8d3caec1"><td class="memTemplParams" colspan="2"><a id="a1dca8ce2fd7362eda35a9edd8d3caec1"></a>
 template&lt;size_t N&gt; </td></tr>
-<tr class="memitem:af6482b20a6827df89aaab064c9e81930"><td class="memTemplItemLeft" align="right" valign="top">XII_FORCE_INLINE void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>Assign</b> (const char(&amp;szString)[N])</td></tr>
-<tr class="separator:af6482b20a6827df89aaab064c9e81930"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1dca8ce2fd7362eda35a9edd8d3caec1"><td class="memTemplItemLeft" align="right" valign="top">XII_FORCE_INLINE void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>Assign</b> (const char(&amp;string)[N])</td></tr>
+<tr class="separator:a1dca8ce2fd7362eda35a9edd8d3caec1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This class is optimized to take nearly no memory (sizeof(void*)) and to allow very fast checks whether two strings are identical. </p>
@@ -219,8 +219,8 @@ You can also get access to the actual string data via <a class="el" href="../../
 You should use <a class="el" href="../../d6/d0c/classxii_hashed_string.htm" title="This class is optimized to take nearly no memory (sizeof(void*)) and to allow very fast checks whethe...">xiiHashedString</a> whenever the size of the encapsulating object is important and when changes to the string itself are rare, but checks for equality might be frequent (e.g. in a system where objects are identified via their name).<br  />
 At runtime when you need to compare <a class="el" href="../../d6/d0c/classxii_hashed_string.htm" title="This class is optimized to take nearly no memory (sizeof(void*)) and to allow very fast checks whethe...">xiiHashedString</a> objects with some temporary string object, used <a class="el" href="../../d5/dd2/classxii_temp_hashed_string.htm" title="A class to use together with xiiHashedString for quick comparisons with temporary strings that need n...">xiiTempHashedString</a>, as it will only use the string's hash value for comparison, but will not store the actual string anywhere. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a5d13f4cf5475c8994c102b71c4fce073"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5d13f4cf5475c8994c102b71c4fce073">&#9670;&nbsp;</a></span>Assign() <span class="overload">[1/2]</span></h2>
+<a id="a54c8ecc5b07fff781b4c8fb18b9d89cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a54c8ecc5b07fff781b4c8fb18b9d89cc">&#9670;&nbsp;</a></span>Assign() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -231,7 +231,7 @@ template&lt;size_t N&gt; </div>
           <td class="memname">void xiiHashedString::Assign </td>
           <td>(</td>
           <td class="paramtype">const char(&amp;)&#160;</td>
-          <td class="paramname"><em>szString</em>[N]</td><td>)</td>
+          <td class="paramname"><em>string</em>[N]</td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -242,8 +242,8 @@ template&lt;size_t N&gt; </div>
 
 </div>
 </div>
-<a id="ae93b5ebe14a194d16d6a3a9ef9b09c3e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae93b5ebe14a194d16d6a3a9ef9b09c3e">&#9670;&nbsp;</a></span>Assign() <span class="overload">[2/2]</span></h2>
+<a id="ae43c79600e55af0daf8bcbcee592a544"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae43c79600e55af0daf8bcbcee592a544">&#9670;&nbsp;</a></span>Assign() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -252,7 +252,7 @@ template&lt;size_t N&gt; </div>
           <td class="memname">XII_FORCE_INLINE void xiiHashedString::Assign </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a>&#160;</td>
-          <td class="paramname"><em>szString</em></td><td>)</td>
+          <td class="paramname"><em>sString</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -357,7 +357,7 @@ template&lt;size_t N&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d6/d0c/classxii_hashed_string.htm">xiiHashedString</a></li>
-    <li class="footer">Generated on Mon Apr 17 2023 20:10:38 for XIIEngine by
+    <li class="footer">Generated on Fri Jun 16 2023 14:12:52 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

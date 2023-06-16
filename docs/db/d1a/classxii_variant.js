@@ -110,7 +110,7 @@ var classxii_variant =
     [ "operator==", "db/d1a/classxii_variant.htm#a7a487abc4475c9a59671182fc6d14b19", null ],
     [ "operator==", "db/d1a/classxii_variant.htm#aac853f5c5892d15873583b7fb198b796", null ],
     [ "operator==", "db/d1a/classxii_variant.htm#a617d04558bc8eeda5d153a303441e951", null ],
-    [ "operator[]", "db/d1a/classxii_variant.htm#abf2a1c01804f0001a7a539f2614464d6", null ],
+    [ "operator[]", "db/d1a/classxii_variant.htm#aa06681dbe2f7d2c77e9950fe751db1c8", null ],
     [ "operator[]", "db/d1a/classxii_variant.htm#a76510f1eabf746f6aa92fc0ea42a733d", null ],
     [ "CompareFunc", "db/d1a/classxii_variant.htm#a4c30e09ce4827ae59948f694bbc95495", null ],
     [ "GetTypeFromVariantFunc", "db/d1a/classxii_variant.htm#aa3fb9dde7601af1db3639dc733818fff", null ],

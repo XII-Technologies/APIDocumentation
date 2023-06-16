@@ -1,7 +1,7 @@
 var structxii_document_flags =
 [
     [ "Bits", "d3/d80/structxii_document_flags_1_1_bits.htm", "d3/d80/structxii_document_flags_1_1_bits" ],
-    [ "StorageType", "df/dc8/structxii_document_flags.htm#a8b3749c8b553668b47276f0ebfefb204", null ],
+    [ "StorageType", "df/dc8/structxii_document_flags.htm#a0c44a8e60b4c614f423b88a08cfd35d2", null ],
     [ "Enum", "df/dc8/structxii_document_flags.htm#acfa2d5b155a47d31c5d46002da3811e3", [
       [ "None", "df/dc8/structxii_document_flags.htm#acfa2d5b155a47d31c5d46002da3811e3a061688bf430552964a81d2c0a6b2fb12", null ],
       [ "RequestWindow", "df/dc8/structxii_document_flags.htm#acfa2d5b155a47d31c5d46002da3811e3a2976efd03f5a535183d511e46e94f9b5", null ],

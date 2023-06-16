@@ -1,6 +1,6 @@
 var classxii_qt_image_widget =
 [
-    [ "xiiQtImageWidget", "d5/db7/classxii_qt_image_widget.htm#a765648c3a6d8eeed3bc7aeab20f32c5e", null ],
+    [ "xiiQtImageWidget", "d5/db7/classxii_qt_image_widget.htm#a25002ac057d655a5d4191d422eaee50a", null ],
     [ "~xiiQtImageWidget", "d5/db7/classxii_qt_image_widget.htm#a87e3757650a86adf8651ec4213c6cea9", null ],
     [ "ScaleImage", "d5/db7/classxii_qt_image_widget.htm#ac278dd4ee0c99e9ad2c880cdea5a6c68", null ],
     [ "SetImage", "d5/db7/classxii_qt_image_widget.htm#a4e5e180d4a6b73a25f514605131045df", null ],

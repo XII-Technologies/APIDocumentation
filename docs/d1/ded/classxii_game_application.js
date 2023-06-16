@@ -1,6 +1,6 @@
 var classxii_game_application =
 [
-    [ "SUPER", "d1/ded/classxii_game_application.htm#a8e5721a6367504792e5a1c04318924e8", null ],
+    [ "SUPER", "d1/ded/classxii_game_application.htm#aa6ddc1d46fbbc37d8e15c557a4c40623", null ],
     [ "xiiGameApplication", "d1/ded/classxii_game_application.htm#a1a3bbc578b1e4e054b05b48919d45e38", null ],
     [ "~xiiGameApplication", "d1/ded/classxii_game_application.htm#a729964626a9108101543dd40ae644cdd", null ],
     [ "Deinit_ShutdownGraphicsDevice", "d1/ded/classxii_game_application.htm#a9f98f1103e8f2a93a222431d1ecf84fd", null ],

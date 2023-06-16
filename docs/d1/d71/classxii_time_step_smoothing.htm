@@ -107,19 +107,19 @@ Inheritance diagram for xiiTimeStepSmoothing:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a5272630d17f26921b099d5a2ef9ca47a"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d7/dc1/structxii_time.htm">xiiTime</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d71/classxii_time_step_smoothing.htm#a5272630d17f26921b099d5a2ef9ca47a">GetSmoothedTimeStep</a> (<a class="el" href="../../d7/dc1/structxii_time.htm">xiiTime</a> RawTimeStep, const <a class="el" href="../../d5/da3/classxii_clock.htm">xiiClock</a> *pClock)=0</td></tr>
-<tr class="memdesc:a5272630d17f26921b099d5a2ef9ca47a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The function to override to implement time step smoothing.  <a href="../../d1/d71/classxii_time_step_smoothing.htm#a5272630d17f26921b099d5a2ef9ca47a">More...</a><br /></td></tr>
-<tr class="separator:a5272630d17f26921b099d5a2ef9ca47a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac76b87eaff5b58749f62f9be69567f0c"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d7/dc1/structxii_time.htm">xiiTime</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d71/classxii_time_step_smoothing.htm#ac76b87eaff5b58749f62f9be69567f0c">GetSmoothedTimeStep</a> (<a class="el" href="../../d7/dc1/structxii_time.htm">xiiTime</a> rawTimeStep, const <a class="el" href="../../d5/da3/classxii_clock.htm">xiiClock</a> *pClock)=0</td></tr>
+<tr class="memdesc:ac76b87eaff5b58749f62f9be69567f0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">The function to override to implement time step smoothing.  <a href="../../d1/d71/classxii_time_step_smoothing.htm#ac76b87eaff5b58749f62f9be69567f0c">More...</a><br /></td></tr>
+<tr class="separator:ac76b87eaff5b58749f62f9be69567f0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a23e36aa18b4e0f5828a4dd61c41c1c33"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d71/classxii_time_step_smoothing.htm#a23e36aa18b4e0f5828a4dd61c41c1c33">Reset</a> (const <a class="el" href="../../d5/da3/classxii_clock.htm">xiiClock</a> *pClock)=0</td></tr>
-<tr class="memdesc:a23e36aa18b4e0f5828a4dd61c41c1c33"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when <a class="el" href="../../d5/da3/classxii_clock.htm#a43a924fbbf7910264906e996a7df0e48" title="Resets all values to their default. E.g. call this after a new level has loaded to start fresh.">xiiClock::Reset()</a>, <a class="el" href="../../d5/da3/classxii_clock.htm#af262914c6415faa35871ad80a7d1d837" title="Deserializes the current clock state from a stream.">xiiClock::Load()</a> or xiiClock::SetPaused(true) was called.  <a href="../../d1/d71/classxii_time_step_smoothing.htm#a23e36aa18b4e0f5828a4dd61c41c1c33">More...</a><br /></td></tr>
+<tr class="memdesc:a23e36aa18b4e0f5828a4dd61c41c1c33"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when <a class="el" href="../../d5/da3/classxii_clock.htm#a43a924fbbf7910264906e996a7df0e48" title="Resets all values to their default. E.g. call this after a new level has loaded to start fresh.">xiiClock::Reset()</a>, <a class="el" href="../../d5/da3/classxii_clock.htm#a54d97abd5fefb5607679b08aae01c41f" title="Deserializes the current clock state from a stream.">xiiClock::Load()</a> or xiiClock::SetPaused(true) was called.  <a href="../../d1/d71/classxii_time_step_smoothing.htm#a23e36aa18b4e0f5828a4dd61c41c1c33">More...</a><br /></td></tr>
 <tr class="separator:a23e36aa18b4e0f5828a4dd61c41c1c33"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Base class for all time step smoothing algorithms. </p>
 <p>By deriving from this class you can implement your own algorithms for time step smoothing. Then just set an instance of that class on one of the clocks and it will be applied to the time step. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a5272630d17f26921b099d5a2ef9ca47a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5272630d17f26921b099d5a2ef9ca47a">&#9670;&nbsp;</a></span>GetSmoothedTimeStep()</h2>
+<a id="ac76b87eaff5b58749f62f9be69567f0c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac76b87eaff5b58749f62f9be69567f0c">&#9670;&nbsp;</a></span>GetSmoothedTimeStep()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -131,7 +131,7 @@ Public Member Functions</h2></td></tr>
           <td class="memname">virtual <a class="el" href="../../d7/dc1/structxii_time.htm">xiiTime</a> xiiTimeStepSmoothing::GetSmoothedTimeStep </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="../../d7/dc1/structxii_time.htm">xiiTime</a>&#160;</td>
-          <td class="paramname"><em>RawTimeStep</em>, </td>
+          <td class="paramname"><em>rawTimeStep</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -162,7 +162,7 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section note"><dt>Note</dt><dd>It is the responsibility of each <a class="el" href="../../d1/d71/classxii_time_step_smoothing.htm" title="Base class for all time step smoothing algorithms.">xiiTimeStepSmoothing</a> class to implement clock speed and also to clamp the time step to the min/max values. This allows the smoothing algorithm to override these values, if necessary. </dd></dl>
 
-<p>Implemented in <a class="el" href="../../dc/d0e/classxii_default_time_step_smoothing.htm#a16955819b1b844437564c4bb728aed15">xiiDefaultTimeStepSmoothing</a>.</p>
+<p>Implemented in <a class="el" href="../../dc/d0e/classxii_default_time_step_smoothing.htm#aa7f6a246d70532014a7cea6201852447">xiiDefaultTimeStepSmoothing</a>.</p>
 
 </div>
 </div>
@@ -190,7 +190,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Called when <a class="el" href="../../d5/da3/classxii_clock.htm#a43a924fbbf7910264906e996a7df0e48" title="Resets all values to their default. E.g. call this after a new level has loaded to start fresh.">xiiClock::Reset()</a>, <a class="el" href="../../d5/da3/classxii_clock.htm#af262914c6415faa35871ad80a7d1d837" title="Deserializes the current clock state from a stream.">xiiClock::Load()</a> or xiiClock::SetPaused(true) was called. </p>
+<p>Called when <a class="el" href="../../d5/da3/classxii_clock.htm#a43a924fbbf7910264906e996a7df0e48" title="Resets all values to their default. E.g. call this after a new level has loaded to start fresh.">xiiClock::Reset()</a>, <a class="el" href="../../d5/da3/classxii_clock.htm#a54d97abd5fefb5607679b08aae01c41f" title="Deserializes the current clock state from a stream.">xiiClock::Load()</a> or xiiClock::SetPaused(true) was called. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">pClock</td><td>The clock that is calling this function. </td></tr>
@@ -211,7 +211,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d1/d71/classxii_time_step_smoothing.htm">xiiTimeStepSmoothing</a></li>
-    <li class="footer">Generated on Mon Apr 17 2023 20:10:43 for XIIEngine by
+    <li class="footer">Generated on Fri Jun 16 2023 14:12:58 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

@@ -1,6 +1,6 @@
 var classxii_bounding_box_template =
 [
-    [ "ComponentType", "d2/dd6/classxii_bounding_box_template.htm#af17ef1e008ecaa1b72a97e5d270c9b16", null ],
+    [ "ComponentType", "d2/dd6/classxii_bounding_box_template.htm#ae2c7d69f04d610d7bb2030e687aa48fa", null ],
     [ "xiiBoundingBoxTemplate", "d2/dd6/classxii_bounding_box_template.htm#a063f7fc7c04b31aec13471ace1144fc5", null ],
     [ "xiiBoundingBoxTemplate", "d2/dd6/classxii_bounding_box_template.htm#af5bfe5d94dfb75949440f08afdcf65ff", null ],
     [ "Contains", "d2/dd6/classxii_bounding_box_template.htm#affdfec5156382d1871ea0a0549bd4098", null ],
@@ -22,8 +22,8 @@ var classxii_bounding_box_template =
     [ "GetDistanceTo", "d2/dd6/classxii_bounding_box_template.htm#a22605a395d904f5a277063a6e7fb525c", null ],
     [ "GetExtents", "d2/dd6/classxii_bounding_box_template.htm#a517e4b42bfbc02fd69a028a841391042", null ],
     [ "GetHalfExtents", "d2/dd6/classxii_bounding_box_template.htm#aabb63fb49e887e923983cd67f59b5ae7", null ],
-    [ "GetLineSegmentIntersection", "d2/dd6/classxii_bounding_box_template.htm#ab5b667e7a8e12d5a4f908aaffd072846", null ],
-    [ "GetRayIntersection", "d2/dd6/classxii_bounding_box_template.htm#a118e1e7630ec4e59ef9e3fdc3fe1b86f", null ],
+    [ "GetLineSegmentIntersection", "d2/dd6/classxii_bounding_box_template.htm#affe3dcffc6da6213e0fbac3a49e7c1f4", null ],
+    [ "GetRayIntersection", "d2/dd6/classxii_bounding_box_template.htm#a938e576e307314e6e05d78023c08e321", null ],
     [ "Grow", "d2/dd6/classxii_bounding_box_template.htm#a8f987db601043d5a81c7a52a5126e886", null ],
     [ "IsEqual", "d2/dd6/classxii_bounding_box_template.htm#aaf80982020904f6c3ffc079391a54d62", null ],
     [ "IsIdentical", "d2/dd6/classxii_bounding_box_template.htm#ae11c768b2605472896635bb2c1bf3d72", null ],

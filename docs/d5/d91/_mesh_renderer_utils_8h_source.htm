@@ -95,15 +95,15 @@ $(document).ready(function(){initNavTree('d5/d91/_mesh_renderer_utils_8h_source.
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">namespace </span>xiiInternal</div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;{</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;  XII_FORCE_INLINE <span class="keywordtype">void</span> FillPerInstanceData(xiiPerInstanceData&amp; perInstanceData, <span class="keyword">const</span> <a class="code" href="../../d6/d05/classxii_mesh_render_data.htm">xiiMeshRenderData</a>* pRenderData)</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;  XII_FORCE_INLINE <span class="keywordtype">void</span> FillPerInstanceData(xiiPerInstanceData&amp; ref_perInstanceData, <span class="keyword">const</span> <a class="code" href="../../d6/d05/classxii_mesh_render_data.htm">xiiMeshRenderData</a>* pRenderData)</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;  {</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <a class="code" href="../../d1/dec/classxii_mat4_template.htm">xiiMat4</a> objectToWorld = pRenderData-&gt;m_GlobalTransform.<a class="code" href="../../d5/d13/classxii_transform_template.htm#a9e7c0d80aebfb786dd22d57b98f415dc">GetAsMat4</a>();</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    perInstanceData.ObjectToWorld = objectToWorld;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    ref_perInstanceData.ObjectToWorld = objectToWorld;</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keywordflow">if</span> (pRenderData-&gt;m_uiUniformScale)</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    {</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;      perInstanceData.ObjectToWorldNormal = objectToWorld;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;      ref_perInstanceData.ObjectToWorldNormal = objectToWorld;</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    }</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keywordflow">else</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    {</div>
@@ -113,14 +113,14 @@ $(document).ready(function(){initNavTree('d5/d91/_mesh_renderer_utils_8h_source.
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;      <span class="comment">// because when we have a scale of 0 (which happens temporarily during editing) that would be annoying</span></div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;      <a class="code" href="../../d1/db9/classxii_shader_transform.htm">xiiShaderTransform</a> shaderT;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;      shaderT                             = mInverse.<a class="code" href="../../d3/d74/classxii_mat3_template.htm#a4ffe2392cb9735c15cefafde2fa91fe5">GetTranspose</a>();</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;      perInstanceData.ObjectToWorldNormal = shaderT;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;      shaderT                                 = mInverse.<a class="code" href="../../d3/d74/classxii_mat3_template.htm#a4ffe2392cb9735c15cefafde2fa91fe5">GetTranspose</a>();</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;      ref_perInstanceData.ObjectToWorldNormal = shaderT;</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    }</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    perInstanceData.BoundingSphereRadius  = pRenderData-&gt;m_GlobalBounds.m_fSphereRadius;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    perInstanceData.GameObjectID          = pRenderData-&gt;m_uiUniqueID;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    perInstanceData.VertexColorAccessData = 0;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    perInstanceData.Color                 = pRenderData-&gt;m_Color;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    ref_perInstanceData.BoundingSphereRadius  = pRenderData-&gt;m_GlobalBounds.m_fSphereRadius;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    ref_perInstanceData.GameObjectID          = pRenderData-&gt;m_uiUniqueID;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    ref_perInstanceData.VertexColorAccessData = 0;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    ref_perInstanceData.Color                 = pRenderData-&gt;m_Color;</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  }</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;} <span class="comment">// namespace xiiInternal</span></div>
 </div><!-- fragment --></div><!-- contents -->
@@ -129,7 +129,7 @@ $(document).ready(function(){initNavTree('d5/d91/_mesh_renderer_utils_8h_source.
 <div class="ttc" id="aclassxii_shader_transform_htm"><div class="ttname"><a href="../../d1/db9/classxii_shader_transform.htm">xiiShaderTransform</a></div><div class="ttdoc">A wrapper class that converts a xiiTransform into the correct data layout for shaders.</div><div class="ttdef"><b>Definition:</b> Types.h:34</div></div>
 <div class="ttc" id="aclassxii_mat4_template_htm"><div class="ttname"><a href="../../d1/dec/classxii_mat4_template.htm">xiiMat4Template&lt; float &gt;</a></div></div>
 <div class="ttc" id="aclassxii_mat3_template_htm"><div class="ttname"><a href="../../d3/d74/classxii_mat3_template.htm">xiiMat3Template&lt; float &gt;</a></div></div>
-<div class="ttc" id="aclassxii_mat4_template_htm_a0d3ec2c3862c2da2413a69bae4ca3473"><div class="ttname"><a href="../../d1/dec/classxii_mat4_template.htm#a0d3ec2c3862c2da2413a69bae4ca3473">xiiMat4Template::GetRotationalPart</a></div><div class="ttdeci">const xiiMat3Template&lt; Type &gt; GetRotationalPart() const</div><div class="ttdoc">Returns the 3x3 rotational and scaling part of the matrix.</div><div class="ttdef"><b>Definition:</b> Mat4_inl.h:382</div></div>
+<div class="ttc" id="aclassxii_mat4_template_htm_a0d3ec2c3862c2da2413a69bae4ca3473"><div class="ttname"><a href="../../d1/dec/classxii_mat4_template.htm#a0d3ec2c3862c2da2413a69bae4ca3473">xiiMat4Template::GetRotationalPart</a></div><div class="ttdeci">const xiiMat3Template&lt; Type &gt; GetRotationalPart() const</div><div class="ttdoc">Returns the 3x3 rotational and scaling part of the matrix.</div><div class="ttdef"><b>Definition:</b> Mat4_inl.h:379</div></div>
 <div class="ttc" id="aclassxii_mesh_render_data_htm"><div class="ttname"><a href="../../d6/d05/classxii_mesh_render_data.htm">xiiMeshRenderData</a></div><div class="ttdef"><b>Definition:</b> MeshComponentBase.h:12</div></div>
 <div class="ttc" id="aclassxii_transform_template_htm_a9e7c0d80aebfb786dd22d57b98f415dc"><div class="ttname"><a href="../../d5/d13/classxii_transform_template.htm#a9e7c0d80aebfb786dd22d57b98f415dc">xiiTransformTemplate::GetAsMat4</a></div><div class="ttdeci">const xiiMat4Template&lt; Type &gt; GetAsMat4() const</div><div class="ttdoc">Returns the transformation as a matrix.</div><div class="ttdef"><b>Definition:</b> Transform_inl.h:89</div></div>
 <div class="ttc" id="aclassxii_mat3_template_htm_a4ffe2392cb9735c15cefafde2fa91fe5"><div class="ttname"><a href="../../d3/d74/classxii_mat3_template.htm#a4ffe2392cb9735c15cefafde2fa91fe5">xiiMat3Template::GetTranspose</a></div><div class="ttdeci">const xiiMat3Template&lt; Type &gt; GetTranspose() const</div><div class="ttdoc">Returns the transpose of this matrix.</div><div class="ttdef"><b>Definition:</b> Mat3_inl.h:144</div></div>
@@ -138,7 +138,7 @@ $(document).ready(function(){initNavTree('d5/d91/_mesh_renderer_utils_8h_source.
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.htm">home</a></li><li class="navelem"><a class="el" href="../../dir_1036706e55c22cab35bc1c58ee689f1d.htm">runner</a></li><li class="navelem"><a class="el" href="../../dir_629f8151d55d307162ff2d619fb1783d.htm">work</a></li><li class="navelem"><a class="el" href="../../dir_1ddc44fe1263a8c7935fa6130b7d9499.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_2c1b6808f12952f4c36e05ba7068379a.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_b5a1c4ecfca018ad24b729e213296d41.htm">Source</a></li><li class="navelem"><a class="el" href="../../dir_e321052006a51284e67389ab20037e7c.htm">Engine</a></li><li class="navelem"><a class="el" href="../../dir_ce7209769439328870c665a52885ba73.htm">RendererCore</a></li><li class="navelem"><a class="el" href="../../dir_3f8d220e0c1a9f2244f630530bfff4a7.htm">Meshes</a></li><li class="navelem"><a class="el" href="../../dir_c34c914834f9ace5617bc04f3ac45a92.htm">Implementation</a></li><li class="navelem"><b>MeshRendererUtils.h</b></li>
-    <li class="footer">Generated on Mon Apr 17 2023 20:10:33 for XIIEngine by
+    <li class="footer">Generated on Fri Jun 16 2023 14:12:47 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

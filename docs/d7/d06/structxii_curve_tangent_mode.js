@@ -1,6 +1,6 @@
 var structxii_curve_tangent_mode =
 [
-    [ "StorageType", "d7/d06/structxii_curve_tangent_mode.htm#a9993bf18ecf4a9a2a62ce76dfff32de7", null ],
+    [ "StorageType", "d7/d06/structxii_curve_tangent_mode.htm#a523f80c7843798bdc9eab708c4cee6f6", null ],
     [ "Enum", "d7/d06/structxii_curve_tangent_mode.htm#a0d8f9c9279f95a684cb346c310587162", [
       [ "Bezier", "d7/d06/structxii_curve_tangent_mode.htm#a0d8f9c9279f95a684cb346c310587162aa56d7d8031ce0ca7fbb49c0d101d07e4", null ],
       [ "FixedLength", "d7/d06/structxii_curve_tangent_mode.htm#a0d8f9c9279f95a684cb346c310587162a99f2aa7d7acb36ef1ca373e19671aeb0", null ],

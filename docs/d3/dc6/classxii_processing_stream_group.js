@@ -3,7 +3,7 @@ var classxii_processing_stream_group =
     [ "xiiProcessingStreamGroup", "d3/dc6/classxii_processing_stream_group.htm#ade621e66496dda7a42d3f9c64858ea4b", null ],
     [ "~xiiProcessingStreamGroup", "d3/dc6/classxii_processing_stream_group.htm#a89258f141cc2f9a41a398b1ad259a20f", null ],
     [ "AddProcessor", "d3/dc6/classxii_processing_stream_group.htm#ad5db2b24e07d6c54053b2a72ad7fc986", null ],
-    [ "AddStream", "d3/dc6/classxii_processing_stream_group.htm#a9c850f5b0edcf29a4d7352fee52af0b2", null ],
+    [ "AddStream", "d3/dc6/classxii_processing_stream_group.htm#ad91d95223ced9550dc41c203e51ce077", null ],
     [ "Clear", "d3/dc6/classxii_processing_stream_group.htm#aa918671f025b6d17b62cf2d37ff4a088", null ],
     [ "ClearProcessors", "d3/dc6/classxii_processing_stream_group.htm#af2c2f01457528371419555cb84213b72", null ],
     [ "GetHighestNumActiveElements", "d3/dc6/classxii_processing_stream_group.htm#adb93647d86edf4cb67cc40a7d043c6cb", null ],

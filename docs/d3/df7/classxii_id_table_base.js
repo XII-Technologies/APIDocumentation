@@ -2,8 +2,8 @@ var classxii_id_table_base =
 [
     [ "ConstIterator", "da/db5/classxii_id_table_base_1_1_const_iterator.htm", "da/db5/classxii_id_table_base_1_1_const_iterator" ],
     [ "Iterator", "df/dcc/structxii_id_table_base_1_1_iterator.htm", "df/dcc/structxii_id_table_base_1_1_iterator" ],
-    [ "IndexType", "d3/df7/classxii_id_table_base.htm#a97a9b4f67f05745642f2b8ed1a1b599f", null ],
-    [ "TypeOfId", "d3/df7/classxii_id_table_base.htm#a9feb3c121bea106074b03400baa7b49b", null ],
+    [ "IndexType", "d3/df7/classxii_id_table_base.htm#ab21e5e356474535ff24295a51937646f", null ],
+    [ "TypeOfId", "d3/df7/classxii_id_table_base.htm#adff70de4bb0e6623b86ff4a5c210cc7a", null ],
     [ "xiiIdTableBase", "d3/df7/classxii_id_table_base.htm#aa3e2172ef62d8514836e1bff3290f93c", null ],
     [ "xiiIdTableBase", "d3/df7/classxii_id_table_base.htm#ad5d131fda61103498e6addc6eb43c9c5", null ],
     [ "~xiiIdTableBase", "d3/df7/classxii_id_table_base.htm#a5df9454dc6f372c40fe8e7308dc04702", null ],
@@ -22,8 +22,8 @@ var classxii_id_table_base =
     [ "operator=", "d3/df7/classxii_id_table_base.htm#a7ebe6fe356a16e3038330f3f9af7471f", null ],
     [ "operator[]", "d3/df7/classxii_id_table_base.htm#a5c719b776a8b8ccec419429e258f338e", null ],
     [ "operator[]", "d3/df7/classxii_id_table_base.htm#adb3f1d5025eff4e19755984b2bc5ec16", null ],
-    [ "Remove", "d3/df7/classxii_id_table_base.htm#af6c3a18423b43c3ea6585ce2d7820357", null ],
-    [ "Reserve", "d3/df7/classxii_id_table_base.htm#ab90f1ab23bc01c2576f85b6935caa799", null ],
+    [ "Remove", "d3/df7/classxii_id_table_base.htm#a22aed313a651afb42af61a461397b04d", null ],
+    [ "Reserve", "d3/df7/classxii_id_table_base.htm#a64ad1a2d9725ea2135599ece26dbe8fc", null ],
     [ "TryGetValue", "d3/df7/classxii_id_table_base.htm#aa1a09c6eed7767f470cfaf9479e1c911", null ],
     [ "TryGetValue", "d3/df7/classxii_id_table_base.htm#af73fa53c42dbba64094d007da57c8cdb", null ]
 ];

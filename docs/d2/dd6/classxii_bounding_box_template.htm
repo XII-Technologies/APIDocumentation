@@ -100,9 +100,9 @@ $(document).ready(function(){initNavTree('d2/dd6/classxii_bounding_box_template.
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:af17ef1e008ecaa1b72a97e5d270c9b16"><td class="memItemLeft" align="right" valign="top"><a id="af17ef1e008ecaa1b72a97e5d270c9b16"></a>
-typedef Type&#160;</td><td class="memItemRight" valign="bottom"><b>ComponentType</b></td></tr>
-<tr class="separator:af17ef1e008ecaa1b72a97e5d270c9b16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2c7d69f04d610d7bb2030e687aa48fa"><td class="memItemLeft" align="right" valign="top"><a id="ae2c7d69f04d610d7bb2030e687aa48fa"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>ComponentType</b> = Type</td></tr>
+<tr class="separator:ae2c7d69f04d610d7bb2030e687aa48fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -257,14 +257,14 @@ Type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../.
 Type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dd6/classxii_bounding_box_template.htm#a7a5c65fdda532b243c5cecedae5328e8">GetDistanceTo</a> (const <a class="el" href="../../d2/dd6/classxii_bounding_box_template.htm">xiiBoundingBoxTemplate</a> &amp;rhs) const</td></tr>
 <tr class="memdesc:a7a5c65fdda532b243c5cecedae5328e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the minimum distance between the two boxes. Zero if the boxes overlap. <br /></td></tr>
 <tr class="separator:a7a5c65fdda532b243c5cecedae5328e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a118e1e7630ec4e59ef9e3fdc3fe1b86f"><td class="memItemLeft" align="right" valign="top"><a id="a118e1e7630ec4e59ef9e3fdc3fe1b86f"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dd6/classxii_bounding_box_template.htm#a118e1e7630ec4e59ef9e3fdc3fe1b86f">GetRayIntersection</a> (const <a class="el" href="../../d9/d9a/classxii_vec3_template.htm">xiiVec3Template</a>&lt; Type &gt; &amp;vStartPos, const <a class="el" href="../../d9/d9a/classxii_vec3_template.htm">xiiVec3Template</a>&lt; Type &gt; &amp;vRayDir, Type *out_fIntersection=nullptr, <a class="el" href="../../d9/d9a/classxii_vec3_template.htm">xiiVec3Template</a>&lt; Type &gt; *out_vIntersection=nullptr) const</td></tr>
-<tr class="memdesc:a118e1e7630ec4e59ef9e3fdc3fe1b86f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether the given ray intersects the box. Optionally returns the intersection distance and position. Note that vRayDir is not required to be normalized. <br /></td></tr>
-<tr class="separator:a118e1e7630ec4e59ef9e3fdc3fe1b86f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab5b667e7a8e12d5a4f908aaffd072846"><td class="memItemLeft" align="right" valign="top"><a id="ab5b667e7a8e12d5a4f908aaffd072846"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dd6/classxii_bounding_box_template.htm#ab5b667e7a8e12d5a4f908aaffd072846">GetLineSegmentIntersection</a> (const <a class="el" href="../../d9/d9a/classxii_vec3_template.htm">xiiVec3Template</a>&lt; Type &gt; &amp;vStartPos, const <a class="el" href="../../d9/d9a/classxii_vec3_template.htm">xiiVec3Template</a>&lt; Type &gt; &amp;vEndPos, Type *out_fLineFraction=nullptr, <a class="el" href="../../d9/d9a/classxii_vec3_template.htm">xiiVec3Template</a>&lt; Type &gt; *out_vIntersection=nullptr) const</td></tr>
-<tr class="memdesc:ab5b667e7a8e12d5a4f908aaffd072846"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether the line segment intersects the box. Optionally returns the intersection point and the fraction along the line segment where the intersection occurred. <br /></td></tr>
-<tr class="separator:ab5b667e7a8e12d5a4f908aaffd072846"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a938e576e307314e6e05d78023c08e321"><td class="memItemLeft" align="right" valign="top"><a id="a938e576e307314e6e05d78023c08e321"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dd6/classxii_bounding_box_template.htm#a938e576e307314e6e05d78023c08e321">GetRayIntersection</a> (const <a class="el" href="../../d9/d9a/classxii_vec3_template.htm">xiiVec3Template</a>&lt; Type &gt; &amp;vStartPos, const <a class="el" href="../../d9/d9a/classxii_vec3_template.htm">xiiVec3Template</a>&lt; Type &gt; &amp;vRayDir, Type *out_pIntersectionDistance=nullptr, <a class="el" href="../../d9/d9a/classxii_vec3_template.htm">xiiVec3Template</a>&lt; Type &gt; *out_pIntersection=nullptr) const</td></tr>
+<tr class="memdesc:a938e576e307314e6e05d78023c08e321"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether the given ray intersects the box. Optionally returns the intersection distance and position. Note that vRayDir is not required to be normalized. <br /></td></tr>
+<tr class="separator:a938e576e307314e6e05d78023c08e321"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:affe3dcffc6da6213e0fbac3a49e7c1f4"><td class="memItemLeft" align="right" valign="top"><a id="affe3dcffc6da6213e0fbac3a49e7c1f4"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dd6/classxii_bounding_box_template.htm#affe3dcffc6da6213e0fbac3a49e7c1f4">GetLineSegmentIntersection</a> (const <a class="el" href="../../d9/d9a/classxii_vec3_template.htm">xiiVec3Template</a>&lt; Type &gt; &amp;vStartPos, const <a class="el" href="../../d9/d9a/classxii_vec3_template.htm">xiiVec3Template</a>&lt; Type &gt; &amp;vEndPos, Type *out_pLineFraction=nullptr, <a class="el" href="../../d9/d9a/classxii_vec3_template.htm">xiiVec3Template</a>&lt; Type &gt; *out_pIntersection=nullptr) const</td></tr>
+<tr class="memdesc:affe3dcffc6da6213e0fbac3a49e7c1f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether the line segment intersects the box. Optionally returns the intersection point and the fraction along the line segment where the intersection occurred. <br /></td></tr>
+<tr class="separator:affe3dcffc6da6213e0fbac3a49e7c1f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a06747cf715c31d0dbc552020b9d74247"><td class="memItemLeft" align="right" valign="top"><a id="a06747cf715c31d0dbc552020b9d74247"></a>
 const <a class="el" href="../../dd/d79/classxii_bounding_sphere_template.htm">xiiBoundingSphereTemplate</a>&lt; Type &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dd6/classxii_bounding_box_template.htm#a06747cf715c31d0dbc552020b9d74247">GetBoundingSphere</a> () const</td></tr>
 <tr class="memdesc:a06747cf715c31d0dbc552020b9d74247"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a bounding sphere that encloses this box. <br /></td></tr>
@@ -296,7 +296,7 @@ class xiiBoundingBoxTemplate&lt; Type &gt;</h3>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d2/dd6/classxii_bounding_box_template.htm">xiiBoundingBoxTemplate</a></li>
-    <li class="footer">Generated on Mon Apr 17 2023 20:10:36 for XIIEngine by
+    <li class="footer">Generated on Fri Jun 16 2023 14:12:50 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

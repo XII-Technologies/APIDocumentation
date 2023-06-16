@@ -108,11 +108,11 @@ $(document).ready(function(){initNavTree('df/d5e/_uuid_8h_source.htm','../../');
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    m_uiHigh = uiHigh;</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  }</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  XII_ALWAYS_INLINE <span class="keywordtype">bool</span> operator==(<span class="keyword">const</span> <a class="code" href="../../dc/d1d/classxii_uuid.htm">xiiUuid</a>&amp; Other) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  XII_ALWAYS_INLINE <span class="keywordtype">bool</span> operator==(<span class="keyword">const</span> <a class="code" href="../../dc/d1d/classxii_uuid.htm">xiiUuid</a>&amp; other) <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  XII_ALWAYS_INLINE <span class="keywordtype">bool</span> operator!=(<span class="keyword">const</span> <a class="code" href="../../dc/d1d/classxii_uuid.htm">xiiUuid</a>&amp; Other) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  XII_ALWAYS_INLINE <span class="keywordtype">bool</span> operator!=(<span class="keyword">const</span> <a class="code" href="../../dc/d1d/classxii_uuid.htm">xiiUuid</a>&amp; other) <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  XII_ALWAYS_INLINE <span class="keywordtype">bool</span> operator&lt;(<span class="keyword">const</span> <a class="code" href="../../dc/d1d/classxii_uuid.htm">xiiUuid</a>&amp; Other) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  XII_ALWAYS_INLINE <span class="keywordtype">bool</span> operator&lt;(<span class="keyword">const</span> <a class="code" href="../../dc/d1d/classxii_uuid.htm">xiiUuid</a>&amp; other) <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  XII_ALWAYS_INLINE <span class="keywordtype">bool</span> IsValid() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
@@ -120,10 +120,10 @@ $(document).ready(function(){initNavTree('df/d5e/_uuid_8h_source.htm','../../');
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <span class="keywordtype">void</span> CreateNewUuid();</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
-<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="../../dc/d1d/classxii_uuid.htm#ae3cf4afd5f9e771df2f4b0352ac7c9fb">   44</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="../../dc/d1d/classxii_uuid.htm#ae3cf4afd5f9e771df2f4b0352ac7c9fb">GetValues</a>(xiiUInt64&amp; uiLow, xiiUInt64&amp; uiHigh)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="../../dc/d1d/classxii_uuid.htm#a1c583ef619a3e43c9a412b8879ca4df0">   44</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="../../dc/d1d/classxii_uuid.htm#a1c583ef619a3e43c9a412b8879ca4df0">GetValues</a>(xiiUInt64&amp; ref_uiLow, xiiUInt64&amp; ref_uiHigh)<span class="keyword"> const</span></div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keyword">  </span>{</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    uiHigh = m_uiHigh;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    uiLow  = m_uiLow;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    ref_uiHigh = m_uiHigh;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    ref_uiLow  = m_uiLow;</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  }</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <span class="keyword">static</span> <a class="code" href="../../dc/d1d/classxii_uuid.htm">xiiUuid</a> StableUuidForString(<a class="code" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sString);</div>
@@ -137,8 +137,8 @@ $(document).ready(function(){initNavTree('df/d5e/_uuid_8h_source.htm','../../');
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  XII_ALWAYS_INLINE <span class="keywordtype">void</span> HashCombine(<span class="keyword">const</span> <a class="code" href="../../dc/d1d/classxii_uuid.htm">xiiUuid</a>&amp; hash);</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <span class="keyword">friend</span> XII_FOUNDATION_DLL_FRIEND <span class="keywordtype">void</span> operator&gt;&gt;(<a class="code" href="../../d4/d5e/classxii_stream_reader.htm">xiiStreamReader</a>&amp; Stream, <a class="code" href="../../dc/d1d/classxii_uuid.htm">xiiUuid</a>&amp; Value);</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <span class="keyword">friend</span> XII_FOUNDATION_DLL_FRIEND <span class="keywordtype">void</span> operator&lt;&lt;(<a class="code" href="../../d0/d18/classxii_stream_writer.htm">xiiStreamWriter</a>&amp; Stream, <span class="keyword">const</span> <a class="code" href="../../dc/d1d/classxii_uuid.htm">xiiUuid</a>&amp; Value);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <span class="keyword">friend</span> XII_FOUNDATION_DLL_FRIEND <span class="keywordtype">void</span> operator&gt;&gt;(<a class="code" href="../../d4/d5e/classxii_stream_reader.htm">xiiStreamReader</a>&amp; ref_stream, <a class="code" href="../../dc/d1d/classxii_uuid.htm">xiiUuid</a>&amp; ref_value);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <span class="keyword">friend</span> XII_FOUNDATION_DLL_FRIEND <span class="keywordtype">void</span> operator&lt;&lt;(<a class="code" href="../../d0/d18/classxii_stream_writer.htm">xiiStreamWriter</a>&amp; ref_stream, <span class="keyword">const</span> <a class="code" href="../../dc/d1d/classxii_uuid.htm">xiiUuid</a>&amp; value);</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  xiiUInt64 m_uiHigh;</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  xiiUInt64 m_uiLow;</div>
@@ -147,17 +147,17 @@ $(document).ready(function(){initNavTree('df/d5e/_uuid_8h_source.htm','../../');
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="preprocessor">#include &lt;Foundation/Types/Implementation/Uuid_inl.h&gt;</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
+<div class="ttc" id="aclassxii_uuid_htm_a1c583ef619a3e43c9a412b8879ca4df0"><div class="ttname"><a href="../../dc/d1d/classxii_uuid.htm#a1c583ef619a3e43c9a412b8879ca4df0">xiiUuid::GetValues</a></div><div class="ttdeci">void GetValues(xiiUInt64 &amp;ref_uiLow, xiiUInt64 &amp;ref_uiHigh) const</div><div class="ttdoc">Returns the internal 128 Bit of data.</div><div class="ttdef"><b>Definition:</b> Uuid.h:44</div></div>
 <div class="ttc" id="aclassxii_uuid_htm_a308fd26c76caeff8f1249166520111c3"><div class="ttname"><a href="../../dc/d1d/classxii_uuid.htm#a308fd26c76caeff8f1249166520111c3">xiiUuid::xiiUuid</a></div><div class="ttdeci">XII_ALWAYS_INLINE xiiUuid(xiiUInt64 uiLow, xiiUInt64 uiHigh)</div><div class="ttdoc">Constructs the Uuid from existing values.</div><div class="ttdef"><b>Definition:</b> Uuid.h:19</div></div>
 <div class="ttc" id="astructxii_string_view_htm"><div class="ttname"><a href="../../da/d9d/structxii_string_view.htm">xiiStringView</a></div><div class="ttdoc">xiiStringView represent a read-only sub-string of a larger string, as it can store a dedicated string...</div><div class="ttdef"><b>Definition:</b> StringView.h:23</div></div>
 <div class="ttc" id="aclassxii_stream_writer_htm"><div class="ttname"><a href="../../d0/d18/classxii_stream_writer.htm">xiiStreamWriter</a></div><div class="ttdoc">Interface for binary out (write) streams.</div><div class="ttdef"><b>Definition:</b> Stream.h:106</div></div>
-<div class="ttc" id="aclassxii_uuid_htm_ae3cf4afd5f9e771df2f4b0352ac7c9fb"><div class="ttname"><a href="../../dc/d1d/classxii_uuid.htm#ae3cf4afd5f9e771df2f4b0352ac7c9fb">xiiUuid::GetValues</a></div><div class="ttdeci">void GetValues(xiiUInt64 &amp;uiLow, xiiUInt64 &amp;uiHigh) const</div><div class="ttdoc">Returns the internal 128 Bit of data.</div><div class="ttdef"><b>Definition:</b> Uuid.h:44</div></div>
 <div class="ttc" id="aclassxii_stream_reader_htm"><div class="ttname"><a href="../../d4/d5e/classxii_stream_reader.htm">xiiStreamReader</a></div><div class="ttdoc">Interface for binary in (read) streams.</div><div class="ttdef"><b>Definition:</b> Stream.h:21</div></div>
 <div class="ttc" id="aclassxii_uuid_htm"><div class="ttname"><a href="../../dc/d1d/classxii_uuid.htm">xiiUuid</a></div><div class="ttdoc">This data type is the abstraction for 128-bit Uuid (also known as GUID) instances.</div><div class="ttdef"><b>Definition:</b> Uuid.h:10</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.htm">home</a></li><li class="navelem"><a class="el" href="../../dir_1036706e55c22cab35bc1c58ee689f1d.htm">runner</a></li><li class="navelem"><a class="el" href="../../dir_629f8151d55d307162ff2d619fb1783d.htm">work</a></li><li class="navelem"><a class="el" href="../../dir_1ddc44fe1263a8c7935fa6130b7d9499.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_2c1b6808f12952f4c36e05ba7068379a.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_b5a1c4ecfca018ad24b729e213296d41.htm">Source</a></li><li class="navelem"><a class="el" href="../../dir_e321052006a51284e67389ab20037e7c.htm">Engine</a></li><li class="navelem"><a class="el" href="../../dir_be0c42c58b36f42c54ec54024ed4f6af.htm">Foundation</a></li><li class="navelem"><a class="el" href="../../dir_fd654f0525c8869fa0409c81d19e3265.htm">Types</a></li><li class="navelem"><b>Uuid.h</b></li>
-    <li class="footer">Generated on Mon Apr 17 2023 20:10:32 for XIIEngine by
+    <li class="footer">Generated on Fri Jun 16 2023 14:12:46 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

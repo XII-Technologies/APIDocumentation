@@ -113,31 +113,31 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 static <a class="el" href="../../d5/dd3/structxii_image_format.htm#a005ef22274255637febbc13f075b9e38">xiiImageFormat::Enum</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/da6/classxii_image_conversion.htm#ad1f78666b3a01ebf5053289ab0e5689c">FindClosestCompatibleFormat</a> (<a class="el" href="../../d5/dd3/structxii_image_format.htm#a005ef22274255637febbc13f075b9e38">xiiImageFormat::Enum</a> format, <a class="el" href="../../d0/d60/classxii_array_ptr.htm">xiiArrayPtr</a>&lt; const <a class="el" href="../../d5/dd3/structxii_image_format.htm#a005ef22274255637febbc13f075b9e38">xiiImageFormat::Enum</a> &gt; compatibleFormats)</td></tr>
 <tr class="memdesc:ad1f78666b3a01ebf5053289ab0e5689c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finds the image format from a given list of formats which is the cheapest to convert to. <br /></td></tr>
 <tr class="separator:ad1f78666b3a01ebf5053289ab0e5689c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac0d531c023afd7fb7e9e0694f6ebd14d"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../dd/dad/structxii_result.htm">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/da6/classxii_image_conversion.htm#ac0d531c023afd7fb7e9e0694f6ebd14d">BuildPath</a> (<a class="el" href="../../d5/dd3/structxii_image_format.htm#a005ef22274255637febbc13f075b9e38">xiiImageFormat::Enum</a> sourceFormat, <a class="el" href="../../d5/dd3/structxii_image_format.htm#a005ef22274255637febbc13f075b9e38">xiiImageFormat::Enum</a> targetFormat, bool sourceEqualsTarget, <a class="el" href="../../dc/da9/classxii_hybrid_array.htm">xiiHybridArray</a>&lt; <a class="el" href="../../d9/d15/structxii_image_conversion_1_1_conversion_path_node.htm">ConversionPathNode</a>, 16 &gt; &amp;path_out, xiiUInt32 &amp;numScratchBuffers_out)</td></tr>
-<tr class="memdesc:ac0d531c023afd7fb7e9e0694f6ebd14d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Precomputes an optimal conversion path between two formats and the minimal number of required scratch buffers.  <a href="../../de/da6/classxii_image_conversion.htm#ac0d531c023afd7fb7e9e0694f6ebd14d">More...</a><br /></td></tr>
-<tr class="separator:ac0d531c023afd7fb7e9e0694f6ebd14d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8cbcbef3689639936553adac2e1d5a8e"><td class="memItemLeft" align="right" valign="top"><a id="a8cbcbef3689639936553adac2e1d5a8e"></a>
-static <a class="el" href="../../dd/dad/structxii_result.htm">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/da6/classxii_image_conversion.htm#a8cbcbef3689639936553adac2e1d5a8e">Convert</a> (const <a class="el" href="../../d6/d21/classxii_image_view.htm">xiiImageView</a> &amp;source, <a class="el" href="../../d4/d6a/classxii_image.htm">xiiImage</a> &amp;target, <a class="el" href="../../d5/dd3/structxii_image_format.htm#a005ef22274255637febbc13f075b9e38">xiiImageFormat::Enum</a> targetFormat)</td></tr>
-<tr class="memdesc:a8cbcbef3689639936553adac2e1d5a8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts the source image into a target image with the given format. Source and target may be the same. <br /></td></tr>
-<tr class="separator:a8cbcbef3689639936553adac2e1d5a8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae722a99a2f5dd06ba88896fac7fbc0e8"><td class="memItemLeft" align="right" valign="top"><a id="ae722a99a2f5dd06ba88896fac7fbc0e8"></a>
-static <a class="el" href="../../dd/dad/structxii_result.htm">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/da6/classxii_image_conversion.htm#ae722a99a2f5dd06ba88896fac7fbc0e8">Convert</a> (const <a class="el" href="../../d6/d21/classxii_image_view.htm">xiiImageView</a> &amp;source, <a class="el" href="../../d4/d6a/classxii_image.htm">xiiImage</a> &amp;target, <a class="el" href="../../d0/d60/classxii_array_ptr.htm">xiiArrayPtr</a>&lt; <a class="el" href="../../d9/d15/structxii_image_conversion_1_1_conversion_path_node.htm">ConversionPathNode</a> &gt; path, xiiUInt32 numScratchBuffers)</td></tr>
-<tr class="memdesc:ae722a99a2f5dd06ba88896fac7fbc0e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts the source image into a target image using a precomputed conversion path. <br /></td></tr>
-<tr class="separator:ae722a99a2f5dd06ba88896fac7fbc0e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aec8fe69628a5a807c87a0d8329fa59b9"><td class="memItemLeft" align="right" valign="top"><a id="aec8fe69628a5a807c87a0d8329fa59b9"></a>
-static <a class="el" href="../../dd/dad/structxii_result.htm">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/da6/classxii_image_conversion.htm#aec8fe69628a5a807c87a0d8329fa59b9">ConvertRaw</a> (<a class="el" href="../../d3/d93/classxii_blob_ptr.htm">xiiConstByteBlobPtr</a> source, <a class="el" href="../../d3/d93/classxii_blob_ptr.htm">xiiByteBlobPtr</a> target, xiiUInt32 numElements, <a class="el" href="../../d5/dd3/structxii_image_format.htm#a005ef22274255637febbc13f075b9e38">xiiImageFormat::Enum</a> sourceFormat, <a class="el" href="../../d5/dd3/structxii_image_format.htm#a005ef22274255637febbc13f075b9e38">xiiImageFormat::Enum</a> targetFormat)</td></tr>
-<tr class="memdesc:aec8fe69628a5a807c87a0d8329fa59b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts the raw source data into a target data buffer with the given format. Source and target may be the same. <br /></td></tr>
-<tr class="separator:aec8fe69628a5a807c87a0d8329fa59b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a491c37a7f06267d6328d79c638be436a"><td class="memItemLeft" align="right" valign="top"><a id="a491c37a7f06267d6328d79c638be436a"></a>
-static <a class="el" href="../../dd/dad/structxii_result.htm">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/da6/classxii_image_conversion.htm#a491c37a7f06267d6328d79c638be436a">ConvertRaw</a> (<a class="el" href="../../d3/d93/classxii_blob_ptr.htm">xiiConstByteBlobPtr</a> source, <a class="el" href="../../d3/d93/classxii_blob_ptr.htm">xiiByteBlobPtr</a> target, xiiUInt32 numElements, <a class="el" href="../../d0/d60/classxii_array_ptr.htm">xiiArrayPtr</a>&lt; <a class="el" href="../../d9/d15/structxii_image_conversion_1_1_conversion_path_node.htm">ConversionPathNode</a> &gt; path, xiiUInt32 numScratchBuffers)</td></tr>
-<tr class="memdesc:a491c37a7f06267d6328d79c638be436a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts the raw source data into a target data buffer using a precomputed conversion path. <br /></td></tr>
-<tr class="separator:a491c37a7f06267d6328d79c638be436a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad80a03c252d0452c57c967341d667141"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../dd/dad/structxii_result.htm">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/da6/classxii_image_conversion.htm#ad80a03c252d0452c57c967341d667141">BuildPath</a> (<a class="el" href="../../d5/dd3/structxii_image_format.htm#a005ef22274255637febbc13f075b9e38">xiiImageFormat::Enum</a> sourceFormat, <a class="el" href="../../d5/dd3/structxii_image_format.htm#a005ef22274255637febbc13f075b9e38">xiiImageFormat::Enum</a> targetFormat, bool bSourceEqualsTarget, <a class="el" href="../../dc/da9/classxii_hybrid_array.htm">xiiHybridArray</a>&lt; <a class="el" href="../../d9/d15/structxii_image_conversion_1_1_conversion_path_node.htm">ConversionPathNode</a>, 16 &gt; &amp;ref_path_out, xiiUInt32 &amp;ref_uiNumScratchBuffers_out)</td></tr>
+<tr class="memdesc:ad80a03c252d0452c57c967341d667141"><td class="mdescLeft">&#160;</td><td class="mdescRight">Precomputes an optimal conversion path between two formats and the minimal number of required scratch buffers.  <a href="../../de/da6/classxii_image_conversion.htm#ad80a03c252d0452c57c967341d667141">More...</a><br /></td></tr>
+<tr class="separator:ad80a03c252d0452c57c967341d667141"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1612136fe6e2e1168ae9cc2f0454b409"><td class="memItemLeft" align="right" valign="top"><a id="a1612136fe6e2e1168ae9cc2f0454b409"></a>
+static <a class="el" href="../../dd/dad/structxii_result.htm">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/da6/classxii_image_conversion.htm#a1612136fe6e2e1168ae9cc2f0454b409">Convert</a> (const <a class="el" href="../../d6/d21/classxii_image_view.htm">xiiImageView</a> &amp;source, <a class="el" href="../../d4/d6a/classxii_image.htm">xiiImage</a> &amp;ref_target, <a class="el" href="../../d5/dd3/structxii_image_format.htm#a005ef22274255637febbc13f075b9e38">xiiImageFormat::Enum</a> targetFormat)</td></tr>
+<tr class="memdesc:a1612136fe6e2e1168ae9cc2f0454b409"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts the source image into a target image with the given format. Source and target may be the same. <br /></td></tr>
+<tr class="separator:a1612136fe6e2e1168ae9cc2f0454b409"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5c98ee92e92deef0dce26179585f4da"><td class="memItemLeft" align="right" valign="top"><a id="ae5c98ee92e92deef0dce26179585f4da"></a>
+static <a class="el" href="../../dd/dad/structxii_result.htm">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/da6/classxii_image_conversion.htm#ae5c98ee92e92deef0dce26179585f4da">Convert</a> (const <a class="el" href="../../d6/d21/classxii_image_view.htm">xiiImageView</a> &amp;source, <a class="el" href="../../d4/d6a/classxii_image.htm">xiiImage</a> &amp;ref_target, <a class="el" href="../../d0/d60/classxii_array_ptr.htm">xiiArrayPtr</a>&lt; <a class="el" href="../../d9/d15/structxii_image_conversion_1_1_conversion_path_node.htm">ConversionPathNode</a> &gt; path, xiiUInt32 uiNumScratchBuffers)</td></tr>
+<tr class="memdesc:ae5c98ee92e92deef0dce26179585f4da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts the source image into a target image using a precomputed conversion path. <br /></td></tr>
+<tr class="separator:ae5c98ee92e92deef0dce26179585f4da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a809707024e801d66deecf2fef2953f6c"><td class="memItemLeft" align="right" valign="top"><a id="a809707024e801d66deecf2fef2953f6c"></a>
+static <a class="el" href="../../dd/dad/structxii_result.htm">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/da6/classxii_image_conversion.htm#a809707024e801d66deecf2fef2953f6c">ConvertRaw</a> (<a class="el" href="../../d3/d93/classxii_blob_ptr.htm">xiiConstByteBlobPtr</a> source, <a class="el" href="../../d3/d93/classxii_blob_ptr.htm">xiiByteBlobPtr</a> target, xiiUInt32 uiNumElements, <a class="el" href="../../d5/dd3/structxii_image_format.htm#a005ef22274255637febbc13f075b9e38">xiiImageFormat::Enum</a> sourceFormat, <a class="el" href="../../d5/dd3/structxii_image_format.htm#a005ef22274255637febbc13f075b9e38">xiiImageFormat::Enum</a> targetFormat)</td></tr>
+<tr class="memdesc:a809707024e801d66deecf2fef2953f6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts the raw source data into a target data buffer with the given format. Source and target may be the same. <br /></td></tr>
+<tr class="separator:a809707024e801d66deecf2fef2953f6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b8581184559cccdd0e6861afb5b39dd"><td class="memItemLeft" align="right" valign="top"><a id="a8b8581184559cccdd0e6861afb5b39dd"></a>
+static <a class="el" href="../../dd/dad/structxii_result.htm">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/da6/classxii_image_conversion.htm#a8b8581184559cccdd0e6861afb5b39dd">ConvertRaw</a> (<a class="el" href="../../d3/d93/classxii_blob_ptr.htm">xiiConstByteBlobPtr</a> source, <a class="el" href="../../d3/d93/classxii_blob_ptr.htm">xiiByteBlobPtr</a> target, xiiUInt32 uiNumElements, <a class="el" href="../../d0/d60/classxii_array_ptr.htm">xiiArrayPtr</a>&lt; <a class="el" href="../../d9/d15/structxii_image_conversion_1_1_conversion_path_node.htm">ConversionPathNode</a> &gt; path, xiiUInt32 uiNumScratchBuffers)</td></tr>
+<tr class="memdesc:a8b8581184559cccdd0e6861afb5b39dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts the raw source data into a target data buffer using a precomputed conversion path. <br /></td></tr>
+<tr class="separator:a8b8581184559cccdd0e6861afb5b39dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Helper class containing utilities to convert between different image formats and layouts. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="ac0d531c023afd7fb7e9e0694f6ebd14d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac0d531c023afd7fb7e9e0694f6ebd14d">&#9670;&nbsp;</a></span>BuildPath()</h2>
+<a id="ad80a03c252d0452c57c967341d667141"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad80a03c252d0452c57c967341d667141">&#9670;&nbsp;</a></span>BuildPath()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -161,19 +161,19 @@ static <a class="el" href="../../dd/dad/structxii_result.htm">xiiResult</a>&#160
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>sourceEqualsTarget</em>, </td>
+          <td class="paramname"><em>bSourceEqualsTarget</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="../../dc/da9/classxii_hybrid_array.htm">xiiHybridArray</a>&lt; <a class="el" href="../../d9/d15/structxii_image_conversion_1_1_conversion_path_node.htm">ConversionPathNode</a>, 16 &gt; &amp;&#160;</td>
-          <td class="paramname"><em>path_out</em>, </td>
+          <td class="paramname"><em>ref_path_out</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">xiiUInt32 &amp;&#160;</td>
-          <td class="paramname"><em>numScratchBuffers_out</em>&#160;</td>
+          <td class="paramname"><em>ref_uiNumScratchBuffers_out</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -214,7 +214,7 @@ static <a class="el" href="../../dd/dad/structxii_result.htm">xiiResult</a>&#160
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../de/da6/classxii_image_conversion.htm">xiiImageConversion</a></li>
-    <li class="footer">Generated on Mon Apr 17 2023 20:10:38 for XIIEngine by
+    <li class="footer">Generated on Fri Jun 16 2023 14:12:52 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

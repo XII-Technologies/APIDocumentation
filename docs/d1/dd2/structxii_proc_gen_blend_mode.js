@@ -1,6 +1,6 @@
 var structxii_proc_gen_blend_mode =
 [
-    [ "StorageType", "d1/dd2/structxii_proc_gen_blend_mode.htm#ab620bcc0662af7fe81624b8cd267f472", null ],
+    [ "StorageType", "d1/dd2/structxii_proc_gen_blend_mode.htm#a5c0bc8d23814ce4e12c6a2a5c4391409", null ],
     [ "Enum", "d1/dd2/structxii_proc_gen_blend_mode.htm#a17ae9837edb954793c9b2b4fdfb53d50", [
       [ "Add", "d1/dd2/structxii_proc_gen_blend_mode.htm#a17ae9837edb954793c9b2b4fdfb53d50a6f923a2b71150ca16d2bd501e086f7b1", null ],
       [ "Subtract", "d1/dd2/structxii_proc_gen_blend_mode.htm#a17ae9837edb954793c9b2b4fdfb53d50a02553ece41c63ae2c5de6c40c1db4295", null ],

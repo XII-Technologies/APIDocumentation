@@ -131,7 +131,7 @@ $(document).ready(function(){initNavTree('d6/d8e/_event__inl_8h_source.htm','../
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;}</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> EventData, <span class="keyword">typename</span> MutexType, xiiEventType EventType&gt;</div>
-<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="../../d0/d7f/classxii_event_base.htm#a0fd92de56d5113b248f3da0b00e4b867">   47</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d0/d7f/classxii_event_base.htm#ae7539570090c1f7b00c7a91005b45f50">xiiEventBase&lt;EventData, MutexType, EventType&gt;::AddEventHandler</a>(<a class="code" href="../../dc/d84/structxii_delegate.htm">Handler</a> handler, Unsubscriber&amp; unsubscriber)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="../../d0/d7f/classxii_event_base.htm#aeba7db2bfa882561fa4c23f3a01320f4">   47</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d0/d7f/classxii_event_base.htm#ae7539570090c1f7b00c7a91005b45f50">xiiEventBase&lt;EventData, MutexType, EventType&gt;::AddEventHandler</a>(<a class="code" href="../../dc/d84/structxii_delegate.htm">Handler</a> handler, Unsubscriber&amp; ref_unsubscriber)<span class="keyword"> const</span></div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keyword"></span>{</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  XII_LOCK(m_Mutex);</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
@@ -143,9 +143,9 @@ $(document).ready(function(){initNavTree('d6/d8e/_event__inl_8h_source.htm','../
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    }</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  }</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  unsubscriber.Unsubscribe();</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  unsubscriber.m_pEvent         = <span class="keyword">this</span>;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  unsubscriber.m_SubscriptionID = AddEventHandler(std::move(handler));</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  ref_unsubscriber.Unsubscribe();</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  ref_unsubscriber.m_pEvent         = <span class="keyword">this</span>;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  ref_unsubscriber.m_SubscriptionID = AddEventHandler(std::move(handler));</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;}</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
@@ -192,13 +192,13 @@ $(document).ready(function(){initNavTree('d6/d8e/_event__inl_8h_source.htm','../
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;}</div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160; </div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> EventData, <span class="keyword">typename</span> MutexType, xiiEventType EventType&gt;</div>
-<div class="line"><a name="l00110"></a><span class="lineno"><a class="line" href="../../d0/d7f/classxii_event_base.htm#a11e8cbb027e903b6ee61d4fa05dff651">  110</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d0/d7f/classxii_event_base.htm#aeec508e0a7fd0232284d9f84c4711e7e">xiiEventBase&lt;EventData, MutexType, EventType&gt;::RemoveEventHandler</a>(xiiEventSubscriptionID&amp; <span class="keywordtype">id</span>)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00110"></a><span class="lineno"><a class="line" href="../../d0/d7f/classxii_event_base.htm#a75137acbb8e90256e9026851f036032a">  110</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d0/d7f/classxii_event_base.htm#aeec508e0a7fd0232284d9f84c4711e7e">xiiEventBase&lt;EventData, MutexType, EventType&gt;::RemoveEventHandler</a>(xiiEventSubscriptionID&amp; ref_id)<span class="keyword"> const</span></div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="keyword"></span>{</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;  <span class="keywordflow">if</span> (<span class="keywordtype">id</span> == 0)</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;  <span class="keywordflow">if</span> (ref_id == 0)</div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160; </div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;  <span class="keyword">const</span> xiiEventSubscriptionID subId = id;</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;  <span class="keywordtype">id</span>                                 = 0;</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;  <span class="keyword">const</span> xiiEventSubscriptionID subId = ref_id;</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;  ref_id                             = 0;</div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160; </div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;  XII_LOCK(m_Mutex);</div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160; </div>
@@ -377,14 +377,14 @@ $(document).ready(function(){initNavTree('d6/d8e/_event__inl_8h_source.htm','../
 <div class="ttc" id="aclassxii_array_base_htm_a43100f93e19bb795ea0980dae2b28e0b"><div class="ttname"><a href="../../da/d4c/classxii_array_base.htm#a43100f93e19bb795ea0980dae2b28e0b">xiiArrayBase&lt; T, xiiDynamicArrayBase&lt; T &gt; &gt;::GetCount</a></div><div class="ttdeci">xiiUInt32 GetCount() const</div><div class="ttdoc">Returns the number of active elements in the array.</div><div class="ttdef"><b>Definition:</b> ArrayBase_inl.h:164</div></div>
 <div class="ttc" id="aclassxii_event_base_htm_a82c447f89fbe6bfe74b0ecfed7476762"><div class="ttname"><a href="../../d0/d7f/classxii_event_base.htm#a82c447f89fbe6bfe74b0ecfed7476762">xiiEventBase::xiiEventBase</a></div><div class="ttdeci">xiiEventBase(xiiAllocatorBase *pAllocator)</div><div class="ttdoc">Constructor.</div><div class="ttdef"><b>Definition:</b> Event_inl.h:6</div></div>
 <div class="ttc" id="aclassxii_event_base_htm_aeec508e0a7fd0232284d9f84c4711e7e"><div class="ttname"><a href="../../d0/d7f/classxii_event_base.htm#aeec508e0a7fd0232284d9f84c4711e7e">xiiEventBase::RemoveEventHandler</a></div><div class="ttdeci">void RemoveEventHandler(const Handler &amp;handler) const</div><div class="ttdoc">Removes a previously registered handler. It is an error to remove a handler that was not registered.</div><div class="ttdef"><b>Definition:</b> Event_inl.h:68</div></div>
-<div class="ttc" id="aclassxii_allocator_base_htm"><div class="ttname"><a href="../../d5/d66/classxii_allocator_base.htm">xiiAllocatorBase</a></div><div class="ttdoc">Base class for all memory allocators.</div><div class="ttdef"><b>Definition:</b> AllocatorBase.h:22</div></div>
+<div class="ttc" id="aclassxii_allocator_base_htm"><div class="ttname"><a href="../../d5/d66/classxii_allocator_base.htm">xiiAllocatorBase</a></div><div class="ttdoc">Base class for all memory allocators.</div><div class="ttdef"><b>Definition:</b> AllocatorBase.h:21</div></div>
 <div class="ttc" id="aclassxii_event_base_htm_a4706d57e34a30668ccdae23968458b16"><div class="ttname"><a href="../../d0/d7f/classxii_event_base.htm#a4706d57e34a30668ccdae23968458b16">xiiEventBase::Clear</a></div><div class="ttdeci">void Clear()</div><div class="ttdoc">Removes all registered event handlers.</div><div class="ttdef"><b>Definition:</b> Event_inl.h:172</div></div>
 <div class="ttc" id="aclassxii_event_htm"><div class="ttname"><a href="../../dc/d22/classxii_event.htm">xiiEvent</a></div><div class="ttdef"><b>Definition:</b> Event.h:174</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.htm">home</a></li><li class="navelem"><a class="el" href="../../dir_1036706e55c22cab35bc1c58ee689f1d.htm">runner</a></li><li class="navelem"><a class="el" href="../../dir_629f8151d55d307162ff2d619fb1783d.htm">work</a></li><li class="navelem"><a class="el" href="../../dir_1ddc44fe1263a8c7935fa6130b7d9499.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_2c1b6808f12952f4c36e05ba7068379a.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_b5a1c4ecfca018ad24b729e213296d41.htm">Source</a></li><li class="navelem"><a class="el" href="../../dir_e321052006a51284e67389ab20037e7c.htm">Engine</a></li><li class="navelem"><a class="el" href="../../dir_be0c42c58b36f42c54ec54024ed4f6af.htm">Foundation</a></li><li class="navelem"><a class="el" href="../../dir_a114401e9c99597f3e9367f4986aadc8.htm">Communication</a></li><li class="navelem"><a class="el" href="../../dir_4ee8e8f80b4f116ca58de70cefde2b0a.htm">Implementation</a></li><li class="navelem"><b>Event_inl.h</b></li>
-    <li class="footer">Generated on Mon Apr 17 2023 20:10:26 for XIIEngine by
+    <li class="footer">Generated on Fri Jun 16 2023 14:12:38 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

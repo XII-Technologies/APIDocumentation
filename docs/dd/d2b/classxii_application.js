@@ -24,7 +24,7 @@ var classxii_application =
     [ "RequestQuit", "dd/d2b/classxii_application.htm#a426c3434af987f8310759eb5b8aaa475", null ],
     [ "Run", "dd/d2b/classxii_application.htm#add6d74803256b335b6765297248775f6", null ],
     [ "SetApplicationName", "dd/d2b/classxii_application.htm#aee72be58821b1dde57155de5d346d264", null ],
-    [ "SetCommandLineArguments", "dd/d2b/classxii_application.htm#a2fe9426cab138de292b61fada61569b6", null ],
+    [ "SetCommandLineArguments", "dd/d2b/classxii_application.htm#ad991d929e2271ad91c5d8cc7905f3c4c", null ],
     [ "SetReturnCode", "dd/d2b/classxii_application.htm#a1df98d9182653abafa3eac1d938d3764", null ],
     [ "TranslateReturnCode", "dd/d2b/classxii_application.htm#a68fa040cbc14b6cfe03825976ec4be04", null ],
     [ "WasQuitRequested", "dd/d2b/classxii_application.htm#a4995a8322131a8a7534afd83ba19b26f", null ],

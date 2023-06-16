@@ -8,6 +8,6 @@ var classxii_graph_patch =
     [ "GetPatchType", "d9/d48/classxii_graph_patch.htm#aaaa7d35a3e3b8abd2e9e900e8ad3f4a3", null ],
     [ "GetType", "d9/d48/classxii_graph_patch.htm#aa1daa45db6e9c794472f1b16adf09da5", null ],
     [ "GetTypeVersion", "d9/d48/classxii_graph_patch.htm#a84a25d825bc72b73c17758641b660e15", null ],
-    [ "Patch", "d9/d48/classxii_graph_patch.htm#aa9abc7891ae117cb51947e4dc745c6db", null ],
+    [ "Patch", "d9/d48/classxii_graph_patch.htm#a051e715b3fa20e709081e7f3664f0256", null ],
     [ "XII_DECLARE_ENUMERABLE_CLASS", "d9/d48/classxii_graph_patch.htm#ae03924e70ca7f6e739c76d841e0009e0", null ]
 ];

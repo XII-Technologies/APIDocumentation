@@ -1,12 +1,12 @@
 var classxii_command_line_option_doc =
 [
     [ "xiiCommandLineOptionDoc", "de/da9/classxii_command_line_option_doc.htm#a5edabb917e95b257e455e6f84e0e5d5a", null ],
-    [ "GetLongDesc", "de/da9/classxii_command_line_option_doc.htm#ae6299d1c7e80fb52fb947289dad0bf00", null ],
-    [ "GetOptions", "de/da9/classxii_command_line_option_doc.htm#a93667ddc84655a033b0ce0d67e0ff11c", null ],
-    [ "GetParamDefaultValueDesc", "de/da9/classxii_command_line_option_doc.htm#ae80302ff5944f869aa078e01c30ce6c1", null ],
-    [ "GetParamShortDesc", "de/da9/classxii_command_line_option_doc.htm#a80fd60e2b8b504a4d77e517940867bc2", null ],
+    [ "GetLongDesc", "de/da9/classxii_command_line_option_doc.htm#aa4662d7ea78eba18780e05a71bdaa32a", null ],
+    [ "GetOptions", "de/da9/classxii_command_line_option_doc.htm#a99f7a571d006847b8997a91d9d29071f", null ],
+    [ "GetParamDefaultValueDesc", "de/da9/classxii_command_line_option_doc.htm#a8f7315067eb8220911ee1af8c6681e3c", null ],
+    [ "GetParamShortDesc", "de/da9/classxii_command_line_option_doc.htm#a77f98eae10243a416eb64d7442944813", null ],
     [ "GetType", "de/da9/classxii_command_line_option_doc.htm#a1642ce8082edba9d77d51059e9841fee", null ],
-    [ "IsOptionSpecified", "de/da9/classxii_command_line_option_doc.htm#a463be5e936cc41a4631f2b5812b18a25", null ],
+    [ "IsOptionSpecified", "de/da9/classxii_command_line_option_doc.htm#a8ad72d7964c537d538da4790daf5261f", null ],
     [ "LogOption", "de/da9/classxii_command_line_option_doc.htm#a4c1ff607f5f3757e159262697cfe3d21", null ],
     [ "ShouldLog", "de/da9/classxii_command_line_option_doc.htm#ab2dd496842640f7e3a8e5d42b07a2cd1", null ],
     [ "m_bCaseSensitive", "de/da9/classxii_command_line_option_doc.htm#a76a9688c4da46a5ab9c72598422d7993", null ],

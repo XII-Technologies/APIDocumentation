@@ -1,7 +1,7 @@
 var classxii_qt_manipulator_label =
 [
-    [ "xiiQtManipulatorLabel", "db/dec/classxii_qt_manipulator_label.htm#a9841cff1361821739dfcd602e539631d", null ],
-    [ "xiiQtManipulatorLabel", "db/dec/classxii_qt_manipulator_label.htm#ad74fc36287948aa1b357ec3861b0b814", null ],
+    [ "xiiQtManipulatorLabel", "db/dec/classxii_qt_manipulator_label.htm#ab807d8de59049dad5979086ce3277799", null ],
+    [ "xiiQtManipulatorLabel", "db/dec/classxii_qt_manipulator_label.htm#ac55f2dc35c4bbfe922e5bf99a030b1a1", null ],
     [ "contextMenuEvent", "db/dec/classxii_qt_manipulator_label.htm#a402ec2f883cc058c7c322c72517dd8d2", null ],
     [ "enterEvent", "db/dec/classxii_qt_manipulator_label.htm#a0b2cb407e65c649a235c1150b2b6cc3a", null ],
     [ "GetManipulator", "db/dec/classxii_qt_manipulator_label.htm#a57ff9afe01f1a89d33a31acc4a39117a", null ],

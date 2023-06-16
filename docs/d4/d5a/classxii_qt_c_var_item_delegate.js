@@ -1,8 +1,8 @@
 var classxii_qt_c_var_item_delegate =
 [
-    [ "xiiQtCVarItemDelegate", "d4/d5a/classxii_qt_c_var_item_delegate.htm#ad4dc33611c5ead15eb8d5379ef68fef1", null ],
-    [ "createEditor", "d4/d5a/classxii_qt_c_var_item_delegate.htm#a1be44df4dbbafe766e06e9ea319e5e27", null ],
-    [ "setEditorData", "d4/d5a/classxii_qt_c_var_item_delegate.htm#a63f73640b789048e1e1168956ee03a8e", null ],
-    [ "setModelData", "d4/d5a/classxii_qt_c_var_item_delegate.htm#a8cb938cb718f7526675f998f28d3a9ad", null ],
+    [ "xiiQtCVarItemDelegate", "d4/d5a/classxii_qt_c_var_item_delegate.htm#abcec3bc7c6149e559631c0ef9d9b2248", null ],
+    [ "createEditor", "d4/d5a/classxii_qt_c_var_item_delegate.htm#a7e7747bad9975e6365caeb00ed0e6298", null ],
+    [ "setEditorData", "d4/d5a/classxii_qt_c_var_item_delegate.htm#a90531dd9781798d1603f0c427a12e002", null ],
+    [ "setModelData", "d4/d5a/classxii_qt_c_var_item_delegate.htm#a4e808f00c40d3a107aa8e43eabb779ed", null ],
     [ "m_pModel", "d4/d5a/classxii_qt_c_var_item_delegate.htm#adbd26172307546bf9642825c932abf99", null ]
 ];

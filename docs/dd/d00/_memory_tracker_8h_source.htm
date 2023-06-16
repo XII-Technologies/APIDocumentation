@@ -95,7 +95,7 @@ $(document).ready(function(){initNavTree('dd/d00/_memory_tracker_8h_source.htm',
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
 <div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="../../d9/d14/structxii_memory_tracking_flags.htm">    7</a></span>&#160;<span class="keyword">struct </span><a class="code" href="../../d9/d14/structxii_memory_tracking_flags.htm">xiiMemoryTrackingFlags</a></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;{</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;  <span class="keyword">typedef</span> xiiUInt32 StorageType;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;  <span class="keyword">using</span> StorageType = xiiUInt32;</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
 <div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="../../d9/d14/structxii_memory_tracking_flags.htm#a040960956de726e6b11c50dd1519d59f">   11</a></span>&#160;  <span class="keyword">enum</span> <a class="code" href="../../d9/d14/structxii_memory_tracking_flags.htm#a040960956de726e6b11c50dd1519d59f">Enum</a></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;  {</div>
@@ -134,79 +134,76 @@ $(document).ready(function(){initNavTree('dd/d00/_memory_tracker_8h_source.htm',
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  {</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    XII_DECLARE_POD_TYPE();</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    XII_FORCE_INLINE <a class="code" href="../../da/df7/structxii_memory_tracker_1_1_allocation_info.htm">AllocationInfo</a>() :</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;      m_pStackTrace(<span class="keyword">nullptr</span>), m_uiSize(0), m_uiAlignment(0), m_uiStackTraceLength(0)</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    {</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    }</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordtype">void</span>**    m_pStackTrace;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordtype">size_t</span>    m_uiSize;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    xiiUInt16 m_uiAlignment;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    xiiUInt16 m_uiStackTraceLength;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    XII_ALWAYS_INLINE <span class="keyword">const</span> <a class="code" href="../../d0/d60/classxii_array_ptr.htm">xiiArrayPtr&lt;void*&gt;</a> GetStackTrace()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code" href="../../d0/d60/classxii_array_ptr.htm">xiiArrayPtr&lt;void*&gt;</a>(m_pStackTrace, (xiiUInt32)m_uiStackTraceLength); }</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    XII_ALWAYS_INLINE <a class="code" href="../../d0/d60/classxii_array_ptr.htm">xiiArrayPtr&lt;void*&gt;</a> GetStackTrace() { <span class="keywordflow">return</span> <a class="code" href="../../d0/d60/classxii_array_ptr.htm">xiiArrayPtr&lt;void*&gt;</a>(m_pStackTrace, (xiiUInt32)m_uiStackTraceLength); }</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    XII_FORCE_INLINE <span class="keywordtype">void</span> SetStackTrace(<a class="code" href="../../d0/d60/classxii_array_ptr.htm">xiiArrayPtr&lt;void*&gt;</a> stackTrace)</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    {</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;      m_pStackTrace = stackTrace.<a class="code" href="../../d0/d60/classxii_array_ptr.htm#acfb4db6e3a381669be860ce1a5500c6b">GetPtr</a>();</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;      XII_ASSERT_DEV(stackTrace.<a class="code" href="../../d0/d60/classxii_array_ptr.htm#af1e072a93ee1a583d0db00e821c2d999">GetCount</a>() &lt; 0xFFFF, <span class="stringliteral">&quot;stack trace too long&quot;</span>);</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;      m_uiStackTraceLength = (xiiUInt16)stackTrace.<a class="code" href="../../d0/d60/classxii_array_ptr.htm#af1e072a93ee1a583d0db00e821c2d999">GetCount</a>();</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    }</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  };</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
-<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="../../d3/d8c/classxii_memory_tracker_1_1_iterator.htm">   72</a></span>&#160;  <span class="keyword">class </span>XII_FOUNDATION_DLL <a class="code" href="../../d3/d8c/classxii_memory_tracker_1_1_iterator.htm">Iterator</a></div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  {</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    ~<a class="code" href="../../d3/d8c/classxii_memory_tracker_1_1_iterator.htm">Iterator</a>();</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <a class="code" href="../../d0/dcc/structxii_generic_id.htm">xiiAllocatorId</a>                 Id() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">char</span>*                    Name() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <a class="code" href="../../d0/dcc/structxii_generic_id.htm">xiiAllocatorId</a>                 ParentId() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keyword">const</span> <a class="code" href="../../d1/d87/structxii_allocator_base_1_1_stats.htm">xiiAllocatorBase::Stats</a>&amp; Stats() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    XII_FORCE_INLINE <a class="code" href="../../da/df7/structxii_memory_tracker_1_1_allocation_info.htm">AllocationInfo</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordtype">void</span>**    m_pStackTrace        = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordtype">size_t</span>    m_uiSize             = 0;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    xiiUInt16 m_uiAlignment        = 0;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    xiiUInt16 m_uiStackTraceLength = 0;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    XII_ALWAYS_INLINE <span class="keyword">const</span> <a class="code" href="../../d0/d60/classxii_array_ptr.htm">xiiArrayPtr&lt;void*&gt;</a> GetStackTrace()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code" href="../../d0/d60/classxii_array_ptr.htm">xiiArrayPtr&lt;void*&gt;</a>(m_pStackTrace, (xiiUInt32)m_uiStackTraceLength); }</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    XII_ALWAYS_INLINE <a class="code" href="../../d0/d60/classxii_array_ptr.htm">xiiArrayPtr&lt;void*&gt;</a> GetStackTrace() { <span class="keywordflow">return</span> <a class="code" href="../../d0/d60/classxii_array_ptr.htm">xiiArrayPtr&lt;void*&gt;</a>(m_pStackTrace, (xiiUInt32)m_uiStackTraceLength); }</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    XII_FORCE_INLINE <span class="keywordtype">void</span> SetStackTrace(<a class="code" href="../../d0/d60/classxii_array_ptr.htm">xiiArrayPtr&lt;void*&gt;</a> stackTrace)</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    {</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;      m_pStackTrace = stackTrace.<a class="code" href="../../d0/d60/classxii_array_ptr.htm#acfb4db6e3a381669be860ce1a5500c6b">GetPtr</a>();</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;      XII_ASSERT_DEV(stackTrace.<a class="code" href="../../d0/d60/classxii_array_ptr.htm#af1e072a93ee1a583d0db00e821c2d999">GetCount</a>() &lt; 0xFFFF, <span class="stringliteral">&quot;stack trace too long&quot;</span>);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;      m_uiStackTraceLength = (xiiUInt16)stackTrace.<a class="code" href="../../d0/d60/classxii_array_ptr.htm#af1e072a93ee1a583d0db00e821c2d999">GetCount</a>();</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    }</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  };</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
+<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="../../d3/d8c/classxii_memory_tracker_1_1_iterator.htm">   69</a></span>&#160;  <span class="keyword">class </span>XII_FOUNDATION_DLL <a class="code" href="../../d3/d8c/classxii_memory_tracker_1_1_iterator.htm">Iterator</a></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  {</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    ~<a class="code" href="../../d3/d8c/classxii_memory_tracker_1_1_iterator.htm">Iterator</a>();</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <a class="code" href="../../d0/dcc/structxii_generic_id.htm">xiiAllocatorId</a>                 Id() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">char</span>*                    Name() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <a class="code" href="../../d0/dcc/structxii_generic_id.htm">xiiAllocatorId</a>                 ParentId() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keyword">const</span> <a class="code" href="../../d1/d87/structxii_allocator_base_1_1_stats.htm">xiiAllocatorBase::Stats</a>&amp; Stats() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordtype">void</span> Next();</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keywordtype">bool</span> IsValid() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keywordtype">void</span> Next();</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keywordtype">bool</span> IsValid() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    XII_ALWAYS_INLINE <span class="keywordtype">void</span> operator++() { Next(); }</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    XII_ALWAYS_INLINE <span class="keywordtype">void</span> operator++() { Next(); }</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="../../de/df3/classxii_memory_tracker.htm">xiiMemoryTracker</a>;</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="../../de/df3/classxii_memory_tracker.htm">xiiMemoryTracker</a>;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    XII_ALWAYS_INLINE <a class="code" href="../../d3/d8c/classxii_memory_tracker_1_1_iterator.htm">Iterator</a>(<span class="keywordtype">void</span>* pData) :</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;      m_pData(pData)</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    {</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    }</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    XII_ALWAYS_INLINE <a class="code" href="../../d3/d8c/classxii_memory_tracker_1_1_iterator.htm">Iterator</a>(<span class="keywordtype">void</span>* pData) :</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;      m_pData(pData)</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    {</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    }</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keywordtype">void</span>* m_pData;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  };</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keywordtype">void</span>* m_pData;</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  };</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  <span class="keyword">static</span> <a class="code" href="../../d0/dcc/structxii_generic_id.htm">xiiAllocatorId</a> RegisterAllocator(<span class="keyword">const</span> <span class="keywordtype">char</span>* szName, <a class="code" href="../../d7/d55/structxii_bitflags.htm">xiiBitflags&lt;xiiMemoryTrackingFlags&gt;</a> flags, <a class="code" href="../../d0/dcc/structxii_generic_id.htm">xiiAllocatorId</a> parentId);</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span>           DeregisterAllocator(<a class="code" href="../../d0/dcc/structxii_generic_id.htm">xiiAllocatorId</a> allocatorId);</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  <span class="keyword">static</span> <a class="code" href="../../d0/dcc/structxii_generic_id.htm">xiiAllocatorId</a> RegisterAllocator(<span class="keyword">const</span> <span class="keywordtype">char</span>* szName, <a class="code" href="../../d7/d55/structxii_bitflags.htm">xiiBitflags&lt;xiiMemoryTrackingFlags&gt;</a> flags, <a class="code" href="../../d0/dcc/structxii_generic_id.htm">xiiAllocatorId</a> parentId);</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span>           DeregisterAllocator(<a class="code" href="../../d0/dcc/structxii_generic_id.htm">xiiAllocatorId</a> allocatorId);</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160; </div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> AddAllocation(</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <a class="code" href="../../d0/dcc/structxii_generic_id.htm">xiiAllocatorId</a>                      allocatorId,</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <a class="code" href="../../d7/d55/structxii_bitflags.htm">xiiBitflags&lt;xiiMemoryTrackingFlags&gt;</a> flags,</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">void</span>*                         ptr,</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <span class="keywordtype">size_t</span>                              uiSize,</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <span class="keywordtype">size_t</span>                              uiAlign,</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <a class="code" href="../../d7/dc1/structxii_time.htm">xiiTime</a>                             allocationTime);</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> RemoveAllocation(<a class="code" href="../../d0/dcc/structxii_generic_id.htm">xiiAllocatorId</a> allocatorId, <span class="keyword">const</span> <span class="keywordtype">void</span>* ptr);</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> RemoveAllAllocations(<a class="code" href="../../d0/dcc/structxii_generic_id.htm">xiiAllocatorId</a> allocatorId);</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> SetAllocatorStats(<a class="code" href="../../d0/dcc/structxii_generic_id.htm">xiiAllocatorId</a> allocatorId, <span class="keyword">const</span> <a class="code" href="../../d1/d87/structxii_allocator_base_1_1_stats.htm">xiiAllocatorBase::Stats</a>&amp; stats);</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160; </div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> ResetPerFrameAllocatorStats();</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160; </div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;  <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">char</span>*                    GetAllocatorName(<a class="code" href="../../d0/dcc/structxii_generic_id.htm">xiiAllocatorId</a> allocatorId);</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;  <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="../../d1/d87/structxii_allocator_base_1_1_stats.htm">xiiAllocatorBase::Stats</a>&amp; GetAllocatorStats(<a class="code" href="../../d0/dcc/structxii_generic_id.htm">xiiAllocatorId</a> allocatorId);</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;  <span class="keyword">static</span> <a class="code" href="../../d0/dcc/structxii_generic_id.htm">xiiAllocatorId</a>                 GetAllocatorParentId(<a class="code" href="../../d0/dcc/structxii_generic_id.htm">xiiAllocatorId</a> allocatorId);</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;  <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="../../da/df7/structxii_memory_tracker_1_1_allocation_info.htm">AllocationInfo</a>&amp;          GetAllocationInfo(<a class="code" href="../../d0/dcc/structxii_generic_id.htm">xiiAllocatorId</a> allocatorId, <span class="keyword">const</span> <span class="keywordtype">void</span>* ptr);</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160; </div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> DumpMemoryLeaks();</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160; </div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;  <span class="keyword">static</span> <a class="code" href="../../d3/d8c/classxii_memory_tracker_1_1_iterator.htm">Iterator</a> GetIterator();</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;};</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> AddAllocation(</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <a class="code" href="../../d0/dcc/structxii_generic_id.htm">xiiAllocatorId</a>                      allocatorId,</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <a class="code" href="../../d7/d55/structxii_bitflags.htm">xiiBitflags&lt;xiiMemoryTrackingFlags&gt;</a> flags,</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">void</span>*                         pPtr,</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="keywordtype">size_t</span>                              uiSize,</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <span class="keywordtype">size_t</span>                              uiAlign,</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <a class="code" href="../../d7/dc1/structxii_time.htm">xiiTime</a>                             allocationTime);</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> RemoveAllocation(<a class="code" href="../../d0/dcc/structxii_generic_id.htm">xiiAllocatorId</a> allocatorId, <span class="keyword">const</span> <span class="keywordtype">void</span>* pPtr);</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> RemoveAllAllocations(<a class="code" href="../../d0/dcc/structxii_generic_id.htm">xiiAllocatorId</a> allocatorId);</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> SetAllocatorStats(<a class="code" href="../../d0/dcc/structxii_generic_id.htm">xiiAllocatorId</a> allocatorId, <span class="keyword">const</span> <a class="code" href="../../d1/d87/structxii_allocator_base_1_1_stats.htm">xiiAllocatorBase::Stats</a>&amp; stats);</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160; </div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> ResetPerFrameAllocatorStats();</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160; </div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;  <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">char</span>*                    GetAllocatorName(<a class="code" href="../../d0/dcc/structxii_generic_id.htm">xiiAllocatorId</a> allocatorId);</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;  <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="../../d1/d87/structxii_allocator_base_1_1_stats.htm">xiiAllocatorBase::Stats</a>&amp; GetAllocatorStats(<a class="code" href="../../d0/dcc/structxii_generic_id.htm">xiiAllocatorId</a> allocatorId);</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;  <span class="keyword">static</span> <a class="code" href="../../d0/dcc/structxii_generic_id.htm">xiiAllocatorId</a>                 GetAllocatorParentId(<a class="code" href="../../d0/dcc/structxii_generic_id.htm">xiiAllocatorId</a> allocatorId);</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;  <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="../../da/df7/structxii_memory_tracker_1_1_allocation_info.htm">AllocationInfo</a>&amp;          GetAllocationInfo(<a class="code" href="../../d0/dcc/structxii_generic_id.htm">xiiAllocatorId</a> allocatorId, <span class="keyword">const</span> <span class="keywordtype">void</span>* pPtr);</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160; </div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> DumpMemoryLeaks();</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160; </div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;  <span class="keyword">static</span> <a class="code" href="../../d3/d8c/classxii_memory_tracker_1_1_iterator.htm">Iterator</a> GetIterator();</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;};</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="astructxii_memory_tracking_flags_htm_a040960956de726e6b11c50dd1519d59fae0610e13bef7e0ef87de7c64208f974f"><div class="ttname"><a href="../../d9/d14/structxii_memory_tracking_flags.htm#a040960956de726e6b11c50dd1519d59fae0610e13bef7e0ef87de7c64208f974f">xiiMemoryTrackingFlags::EnableAllocationTracking</a></div><div class="ttdeci">@ EnableAllocationTracking</div><div class="ttdoc">Enable tracking of individual allocations.</div><div class="ttdef"><b>Definition:</b> MemoryTracker.h:16</div></div>
@@ -218,8 +215,8 @@ $(document).ready(function(){initNavTree('dd/d00/_memory_tracker_8h_source.htm',
 <div class="ttc" id="astructxii_memory_tracking_flags_htm_a040960956de726e6b11c50dd1519d59fa2210d4f43f6b71fcb6a2b66b766e0984"><div class="ttname"><a href="../../d9/d14/structxii_memory_tracking_flags.htm#a040960956de726e6b11c50dd1519d59fa2210d4f43f6b71fcb6a2b66b766e0984">xiiMemoryTrackingFlags::RegisterAllocator</a></div><div class="ttdeci">@ RegisterAllocator</div><div class="ttdef"><b>Definition:</b> MemoryTracker.h:14</div></div>
 <div class="ttc" id="astructxii_memory_tracking_flags_1_1_bits_htm"><div class="ttname"><a href="../../de/d72/structxii_memory_tracking_flags_1_1_bits.htm">xiiMemoryTrackingFlags::Bits</a></div><div class="ttdef"><b>Definition:</b> MemoryTracker.h:30</div></div>
 <div class="ttc" id="astructxii_memory_tracking_flags_htm_a040960956de726e6b11c50dd1519d59faa6e0038023b70d98ddf67837c26cd997"><div class="ttname"><a href="../../d9/d14/structxii_memory_tracking_flags.htm#a040960956de726e6b11c50dd1519d59faa6e0038023b70d98ddf67837c26cd997">xiiMemoryTrackingFlags::EnableStackTrace</a></div><div class="ttdeci">@ EnableStackTrace</div><div class="ttdoc">Enable stack traces for each allocation.</div><div class="ttdef"><b>Definition:</b> MemoryTracker.h:17</div></div>
-<div class="ttc" id="aclassxii_memory_tracker_1_1_iterator_htm"><div class="ttname"><a href="../../d3/d8c/classxii_memory_tracker_1_1_iterator.htm">xiiMemoryTracker::Iterator</a></div><div class="ttdef"><b>Definition:</b> MemoryTracker.h:72</div></div>
-<div class="ttc" id="astructxii_allocator_base_1_1_stats_htm"><div class="ttname"><a href="../../d1/d87/structxii_allocator_base_1_1_stats.htm">xiiAllocatorBase::Stats</a></div><div class="ttdef"><b>Definition:</b> AllocatorBase.h:25</div></div>
+<div class="ttc" id="aclassxii_memory_tracker_1_1_iterator_htm"><div class="ttname"><a href="../../d3/d8c/classxii_memory_tracker_1_1_iterator.htm">xiiMemoryTracker::Iterator</a></div><div class="ttdef"><b>Definition:</b> MemoryTracker.h:69</div></div>
+<div class="ttc" id="astructxii_allocator_base_1_1_stats_htm"><div class="ttname"><a href="../../d1/d87/structxii_allocator_base_1_1_stats.htm">xiiAllocatorBase::Stats</a></div><div class="ttdef"><b>Definition:</b> AllocatorBase.h:24</div></div>
 <div class="ttc" id="astructxii_memory_tracker_1_1_allocation_info_htm"><div class="ttname"><a href="../../da/df7/structxii_memory_tracker_1_1_allocation_info.htm">xiiMemoryTracker::AllocationInfo</a></div><div class="ttdef"><b>Definition:</b> MemoryTracker.h:46</div></div>
 <div class="ttc" id="astructxii_bitflags_htm"><div class="ttname"><a href="../../d7/d55/structxii_bitflags.htm">xiiBitflags&lt; xiiMemoryTrackingFlags &gt;</a></div></div>
 <div class="ttc" id="aclassxii_memory_tracker_htm"><div class="ttname"><a href="../../de/df3/classxii_memory_tracker.htm">xiiMemoryTracker</a></div><div class="ttdoc">Memory tracker which keeps track of all allocations and constructions.</div><div class="ttdef"><b>Definition:</b> MemoryTracker.h:43</div></div>
@@ -229,7 +226,7 @@ $(document).ready(function(){initNavTree('dd/d00/_memory_tracker_8h_source.htm',
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.htm">home</a></li><li class="navelem"><a class="el" href="../../dir_1036706e55c22cab35bc1c58ee689f1d.htm">runner</a></li><li class="navelem"><a class="el" href="../../dir_629f8151d55d307162ff2d619fb1783d.htm">work</a></li><li class="navelem"><a class="el" href="../../dir_1ddc44fe1263a8c7935fa6130b7d9499.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_2c1b6808f12952f4c36e05ba7068379a.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_b5a1c4ecfca018ad24b729e213296d41.htm">Source</a></li><li class="navelem"><a class="el" href="../../dir_e321052006a51284e67389ab20037e7c.htm">Engine</a></li><li class="navelem"><a class="el" href="../../dir_be0c42c58b36f42c54ec54024ed4f6af.htm">Foundation</a></li><li class="navelem"><a class="el" href="../../dir_f4c376a517d02920cdbc41b4ea2fc5f5.htm">Memory</a></li><li class="navelem"><b>MemoryTracker.h</b></li>
-    <li class="footer">Generated on Mon Apr 17 2023 20:10:30 for XIIEngine by
+    <li class="footer">Generated on Fri Jun 16 2023 14:12:43 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

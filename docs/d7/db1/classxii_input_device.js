@@ -1,7 +1,7 @@
 var classxii_input_device =
 [
     [ "xiiInputDevice", "d7/db1/classxii_input_device.htm#aa1b45a240189f6f5fe1d1562f8bbb7f5", null ],
-    [ "GetInputSlotState", "d7/db1/classxii_input_device.htm#a3de8480701615f9e9cbda1ea31cd32e0", null ],
+    [ "GetInputSlotState", "d7/db1/classxii_input_device.htm#a1286a2c82d2084a41f722019f698e650", null ],
     [ "HasDeviceBeenUsedLastFrame", "d7/db1/classxii_input_device.htm#a15dbf12f97646a010591fd4c17bef015", null ],
     [ "InitializeDevice", "d7/db1/classxii_input_device.htm#a64a5704203d595606857a582508f77ca", null ],
     [ "RegisterInputSlots", "d7/db1/classxii_input_device.htm#accb25b55755a4846a568b367b6a67718", null ],

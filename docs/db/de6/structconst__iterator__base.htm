@@ -100,9 +100,9 @@ $(document).ready(function(){initNavTree('db/de6/structconst__iterator__base.htm
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:aa024c16b62a5b2e8cb25a0a0d56e7ea3"><td class="memItemLeft" align="right" valign="top"><a id="aa024c16b62a5b2e8cb25a0a0d56e7ea3"></a>
-typedef std::random_access_iterator_tag&#160;</td><td class="memItemRight" valign="bottom"><b>iterator_category</b></td></tr>
-<tr class="separator:aa024c16b62a5b2e8cb25a0a0d56e7ea3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7606f92c1b626ba7d01514be03ad5a1"><td class="memItemLeft" align="right" valign="top"><a id="ac7606f92c1b626ba7d01514be03ad5a1"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>iterator_category</b> = std::random_access_iterator_tag</td></tr>
+<tr class="separator:ac7606f92c1b626ba7d01514be03ad5a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af3ad80a0bbbc1c32132ff388986fdf1e"><td class="memItemLeft" align="right" valign="top"><a id="af3ad80a0bbbc1c32132ff388986fdf1e"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>value_type</b> = T</td></tr>
 <tr class="separator:af3ad80a0bbbc1c32132ff388986fdf1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -118,9 +118,9 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>reference</b> = cons
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a159757e43bf90dcba27ec6ac314915a7"><td class="memItemLeft" align="right" valign="top"><a id="a159757e43bf90dcba27ec6ac314915a7"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>const_iterator_base</b> (const ARRAY &amp;deque, size_t index)</td></tr>
-<tr class="separator:a159757e43bf90dcba27ec6ac314915a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31267ada9a93fdc04455575d1970ac59"><td class="memItemLeft" align="right" valign="top"><a id="a31267ada9a93fdc04455575d1970ac59"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>const_iterator_base</b> (const ARRAY &amp;deque, size_t uiIndex)</td></tr>
+<tr class="separator:a31267ada9a93fdc04455575d1970ac59"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a172422a5050761ba1e48ef7918e11639"><td class="memItemLeft" align="right" valign="top"><a id="a172422a5050761ba1e48ef7918e11639"></a>
 XII_ALWAYS_INLINE <a class="el" href="../../db/de6/structconst__iterator__base.htm">const_iterator_base</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator++</b> ()</td></tr>
 <tr class="separator:a172422a5050761ba1e48ef7918e11639"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -172,9 +172,9 @@ XII_ALWAYS_INLINE bool&#160;</td><td class="memItemRight" valign="bottom"><b>ope
 <tr class="memitem:a3e3cffd2887947dabb6cdf94f5f9c423"><td class="memItemLeft" align="right" valign="top"><a id="a3e3cffd2887947dabb6cdf94f5f9c423"></a>
 XII_ALWAYS_INLINE bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator&gt;=</b> (const <a class="el" href="../../db/de6/structconst__iterator__base.htm">const_iterator_base</a> &amp;rhs) const</td></tr>
 <tr class="separator:a3e3cffd2887947dabb6cdf94f5f9c423"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7da636c5a1446156eb52daa8d6f254df"><td class="memItemLeft" align="right" valign="top"><a id="a7da636c5a1446156eb52daa8d6f254df"></a>
-const XII_ALWAYS_INLINE T &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator[]</b> (size_t index) const</td></tr>
-<tr class="separator:a7da636c5a1446156eb52daa8d6f254df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad6a62fef31f521ff87a647bc5a3cc35"><td class="memItemLeft" align="right" valign="top"><a id="aad6a62fef31f521ff87a647bc5a3cc35"></a>
+const XII_ALWAYS_INLINE T &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator[]</b> (size_t uiIndex) const</td></tr>
+<tr class="separator:aad6a62fef31f521ff87a647bc5a3cc35"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -199,7 +199,7 @@ struct const_iterator_base&lt; ARRAY, T, reverse &gt;</h3>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../db/de6/structconst__iterator__base.htm">const_iterator_base</a></li>
-    <li class="footer">Generated on Mon Apr 17 2023 20:10:35 for XIIEngine by
+    <li class="footer">Generated on Fri Jun 16 2023 14:12:49 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

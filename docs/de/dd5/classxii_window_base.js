@@ -1,6 +1,6 @@
 var classxii_window_base =
 [
-    [ "~xiiWindowBase", "de/dd5/classxii_window_base.htm#a68f4a5512c72e1fcd8a04287a694f9ff", null ],
+    [ "~xiiWindowBase", "de/dd5/classxii_window_base.htm#ac5b6f3cf76494b8110ddc62447ab3f58", null ],
     [ "AddReference", "de/dd5/classxii_window_base.htm#ad27c0f9fbe11f319e2b00d908634b7a9", null ],
     [ "GetClientAreaSize", "de/dd5/classxii_window_base.htm#a204eb3360fb492d1617d3f82b19d38cb", null ],
     [ "GetNativeWindowHandle", "de/dd5/classxii_window_base.htm#aa063d75bdde1e1985fc9df8b72cec351", null ],

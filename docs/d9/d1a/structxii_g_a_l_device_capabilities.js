@@ -15,6 +15,7 @@ var structxii_g_a_l_device_capabilities =
     [ "m_bStreamOut", "d9/d1a/structxii_g_a_l_device_capabilities.htm#a78838fefc755d511b9e1bbb51762ca74", null ],
     [ "m_bTextureArrays", "d9/d1a/structxii_g_a_l_device_capabilities.htm#a096b0772aa79c368cb1ad3f6f1459054", null ],
     [ "m_bVertexShaderRenderTargetArrayIndex", "d9/d1a/structxii_g_a_l_device_capabilities.htm#aafdac3bbe6db7b175b05bfdf11820bcc", null ],
+    [ "m_DeviceType", "d9/d1a/structxii_g_a_l_device_capabilities.htm#ad12fdb6dec84ddc8b37dbb4895c5eada", null ],
     [ "m_sAdapterName", "d9/d1a/structxii_g_a_l_device_capabilities.htm#a6d6bde2af191edde9f959bb4a166a01c", null ],
     [ "m_uiDedicatedSystemRAM", "d9/d1a/structxii_g_a_l_device_capabilities.htm#a3fae6594567bf3058897d055382c8b6b", null ],
     [ "m_uiDedicatedVRAM", "d9/d1a/structxii_g_a_l_device_capabilities.htm#a0d23697b95341b992f7fdd3260e1be97", null ],

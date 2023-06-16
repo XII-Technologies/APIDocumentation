@@ -23,9 +23,9 @@ var classxii_frustum =
     [ "xiiFrustum", "d8/d89/classxii_frustum.htm#ab142dff992473c36fa368de231177b1b", null ],
     [ "~xiiFrustum", "d8/d89/classxii_frustum.htm#adc530e6168bd5adf68723b0f8133ba0e", null ],
     [ "AccessPlane", "d8/d89/classxii_frustum.htm#ae2c2e8483f7dd8e4a0681a73c42bffb4", null ],
-    [ "ComputeCornerPoints", "d8/d89/classxii_frustum.htm#a19451c9c187274f98d065f99a9507c65", null ],
-    [ "GetObjectPosition", "d8/d89/classxii_frustum.htm#a8fd244855ef334680ecba179e7a2e877", null ],
-    [ "GetObjectPosition", "d8/d89/classxii_frustum.htm#ab58147d66c89214fed59c267a4af237a", null ],
+    [ "ComputeCornerPoints", "d8/d89/classxii_frustum.htm#a0ebd8f17f503a16b589682729dd7ae99", null ],
+    [ "GetObjectPosition", "d8/d89/classxii_frustum.htm#a875e4ffbfcd7268c730ea5f680baad1d", null ],
+    [ "GetObjectPosition", "d8/d89/classxii_frustum.htm#a179eab4feddd7e19969bb9604475413a", null ],
     [ "GetObjectPosition", "d8/d89/classxii_frustum.htm#aab3f1a9b80df081da71f12f58abf15ff", null ],
     [ "GetObjectPosition", "d8/d89/classxii_frustum.htm#aac0b0e4588f3d6f6aad30a19b7d695fd", null ],
     [ "GetPlane", "d8/d89/classxii_frustum.htm#a3e639f42532527a7c7cb1fac8cc0657f", null ],
@@ -33,8 +33,8 @@ var classxii_frustum =
     [ "IsValid", "d8/d89/classxii_frustum.htm#ad8a43dfcff338f3f4705badcc1127bff", null ],
     [ "Overlaps", "d8/d89/classxii_frustum.htm#adc7ba12ab56ef8ea5ea9772093ca11f6", null ],
     [ "Overlaps", "d8/d89/classxii_frustum.htm#a7f353e6b7fb35787a2c7fee2f5df6f00", null ],
-    [ "SetFrustum", "d8/d89/classxii_frustum.htm#abba2ff2bcee9449f8023a2ab32a8a944", null ],
+    [ "SetFrustum", "d8/d89/classxii_frustum.htm#a68456cef8acaf273238c369693b743af", null ],
     [ "SetFrustum", "d8/d89/classxii_frustum.htm#a46f8977884d486ded39c16f52a4b3cc9", null ],
-    [ "SetFrustum", "d8/d89/classxii_frustum.htm#abcc3ba0bef3d3587e088acb678a7c71d", null ],
+    [ "SetFrustum", "d8/d89/classxii_frustum.htm#a14fbe723698cc1a24eb401276f66e03c", null ],
     [ "TransformFrustum", "d8/d89/classxii_frustum.htm#a658ebcee15901c0c8ae9acaf8958b329", null ]
 ];

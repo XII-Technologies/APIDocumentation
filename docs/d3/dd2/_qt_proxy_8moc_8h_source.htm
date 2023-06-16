@@ -122,10 +122,10 @@ $(document).ready(function(){initNavTree('d3/dd2/_qt_proxy_8moc_8h_source.htm','
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> SetAction(<a class="code" href="../../d8/d30/classxii_action.htm">xiiAction</a>* pAction);</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  <a class="code" href="../../d8/d30/classxii_action.htm">xiiAction</a>*   GetAction() { <span class="keywordflow">return</span> m_pAction; }</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">bool</span> TriggerDocumentAction(<a class="code" href="../../d8/da9/classxii_document.htm">xiiDocument</a>* pDocument, QKeyEvent* event);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">bool</span> TriggerDocumentAction(<a class="code" href="../../d8/da9/classxii_document.htm">xiiDocument</a>* pDocument, QKeyEvent* pEvent);</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <span class="keyword">static</span> <a class="code" href="../../d5/da2/classxii_rtti_mapped_object_factory.htm">xiiRttiMappedObjectFactory&lt;xiiQtProxy&gt;</a>&amp; GetFactory();</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <span class="keyword">static</span> QSharedPointer&lt;xiiQtProxy&gt;              GetProxy(<a class="code" href="../../d9/d45/structxii_action_context.htm">xiiActionContext</a>&amp; context, <a class="code" href="../../df/dcf/classxii_action_descriptor_handle.htm">xiiActionDescriptorHandle</a> hAction);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <span class="keyword">static</span> QSharedPointer&lt;xiiQtProxy&gt;              GetProxy(<a class="code" href="../../d9/d45/structxii_action_context.htm">xiiActionContext</a>&amp; ref_context, <a class="code" href="../../df/dcf/classxii_action_descriptor_handle.htm">xiiActionDescriptorHandle</a> hAction);</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keyword">protected</span>:</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  XII_MAKE_SUBSYSTEM_STARTUP_FRIEND(GuiFoundation, QtProxies);</div>
@@ -238,7 +238,7 @@ $(document).ready(function(){initNavTree('d3/dd2/_qt_proxy_8moc_8h_source.htm','
 <div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;  Q_OBJECT</div>
 <div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160; </div>
 <div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;  <a class="code" href="../../d0/dce/classxii_qt_labeled_slider.htm">xiiQtLabeledSlider</a>(QWidget* parent);</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;  <a class="code" href="../../d0/dce/classxii_qt_labeled_slider.htm">xiiQtLabeledSlider</a>(QWidget* pParent);</div>
 <div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160; </div>
 <div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;  QLabel*  m_pLabel;</div>
 <div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;  QSlider* m_pSlider;</div>
@@ -250,7 +250,7 @@ $(document).ready(function(){initNavTree('d3/dd2/_qt_proxy_8moc_8h_source.htm','
 <div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;  Q_OBJECT</div>
 <div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160; </div>
 <div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;  <a class="code" href="../../d9/d9c/classxii_qt_slider_widget_action.htm">xiiQtSliderWidgetAction</a>(QWidget* parent);</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;  <a class="code" href="../../d9/d9c/classxii_qt_slider_widget_action.htm">xiiQtSliderWidgetAction</a>(QWidget* pParent);</div>
 <div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;  <span class="keywordtype">void</span> setMinimum(<span class="keywordtype">int</span> value);</div>
 <div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;  <span class="keywordtype">void</span> setMaximum(<span class="keywordtype">int</span> value);</div>
 <div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;  <span class="keywordtype">void</span> setValue(<span class="keywordtype">int</span> value);</div>
@@ -301,11 +301,11 @@ $(document).ready(function(){initNavTree('d3/dd2/_qt_proxy_8moc_8h_source.htm','
 <div class="ttc" id="aclassxii_qt_action_proxy_htm"><div class="ttname"><a href="../../d9/d4f/classxii_qt_action_proxy.htm">xiiQtActionProxy</a></div><div class="ttdef"><b>Definition:</b> QtProxy.moc.h:61</div></div>
 <div class="ttc" id="aclassxii_hybrid_array_htm"><div class="ttname"><a href="../../dc/da9/classxii_hybrid_array.htm">xiiHybridArray&lt; xiiDynamicMenuAction::Item, 16 &gt;</a></div></div>
 <div class="ttc" id="aclassxii_qt_slider_widget_action_htm"><div class="ttname"><a href="../../d9/d9c/classxii_qt_slider_widget_action.htm">xiiQtSliderWidgetAction</a></div><div class="ttdef"><b>Definition:</b> QtProxy.moc.h:167</div></div>
-<div class="ttc" id="aclassxii_action_descriptor_handle_htm"><div class="ttname"><a href="../../df/dcf/classxii_action_descriptor_handle.htm">xiiActionDescriptorHandle</a></div><div class="ttdoc">Handle for a xiiAction.</div><div class="ttdef"><b>Definition:</b> Action.h:26</div></div>
+<div class="ttc" id="aclassxii_action_descriptor_handle_htm"><div class="ttname"><a href="../../df/dcf/classxii_action_descriptor_handle.htm">xiiActionDescriptorHandle</a></div><div class="ttdoc">Handle for a xiiAction.</div><div class="ttdef"><b>Definition:</b> Action.h:27</div></div>
 <div class="ttc" id="aclassxii_qt_button_proxy_htm"><div class="ttname"><a href="../../d8/d99/classxii_qt_button_proxy.htm">xiiQtButtonProxy</a></div><div class="ttdef"><b>Definition:</b> QtProxy.moc.h:93</div></div>
-<div class="ttc" id="astructxii_action_context_htm"><div class="ttname"><a href="../../d9/d45/structxii_action_context.htm">xiiActionContext</a></div><div class="ttdef"><b>Definition:</b> Action.h:65</div></div>
+<div class="ttc" id="astructxii_action_context_htm"><div class="ttname"><a href="../../d9/d45/structxii_action_context.htm">xiiActionContext</a></div><div class="ttdef"><b>Definition:</b> Action.h:66</div></div>
 <div class="ttc" id="aclassxii_qt_dynamic_action_and_menu_proxy_htm"><div class="ttname"><a href="../../d1/d3d/classxii_qt_dynamic_action_and_menu_proxy.htm">xiiQtDynamicActionAndMenuProxy</a></div><div class="ttdef"><b>Definition:</b> QtProxy.moc.h:132</div></div>
-<div class="ttc" id="aclassxii_action_htm"><div class="ttname"><a href="../../d8/d30/classxii_action.htm">xiiAction</a></div><div class="ttdef"><b>Definition:</b> Action.h:107</div></div>
+<div class="ttc" id="aclassxii_action_htm"><div class="ttname"><a href="../../d8/d30/classxii_action.htm">xiiAction</a></div><div class="ttdef"><b>Definition:</b> Action.h:109</div></div>
 <div class="ttc" id="aclassxii_qt_slider_proxy_htm"><div class="ttname"><a href="../../da/dfe/classxii_qt_slider_proxy.htm">xiiQtSliderProxy</a></div><div class="ttdef"><b>Definition:</b> QtProxy.moc.h:192</div></div>
 <div class="ttc" id="aclassxii_qt_dynamic_menu_proxy_htm"><div class="ttname"><a href="../../d0/de2/classxii_qt_dynamic_menu_proxy.htm">xiiQtDynamicMenuProxy</a></div><div class="ttdef"><b>Definition:</b> QtProxy.moc.h:117</div></div>
 <div class="ttc" id="aclassxii_qt_proxy_htm"><div class="ttname"><a href="../../d7/da8/classxii_qt_proxy.htm">xiiQtProxy</a></div><div class="ttdoc">Glue class that maps xiiActions to QActions. QActions are only created if the xiiAction is actually m...</div><div class="ttdef"><b>Definition:</b> QtProxy.moc.h:24</div></div>
@@ -315,7 +315,7 @@ $(document).ready(function(){initNavTree('d3/dd2/_qt_proxy_8moc_8h_source.htm','
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.htm">home</a></li><li class="navelem"><a class="el" href="../../dir_1036706e55c22cab35bc1c58ee689f1d.htm">runner</a></li><li class="navelem"><a class="el" href="../../dir_629f8151d55d307162ff2d619fb1783d.htm">work</a></li><li class="navelem"><a class="el" href="../../dir_1ddc44fe1263a8c7935fa6130b7d9499.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_2c1b6808f12952f4c36e05ba7068379a.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_b5a1c4ecfca018ad24b729e213296d41.htm">Source</a></li><li class="navelem"><a class="el" href="../../dir_64f53f8da7bf780a58c32bb848e7873b.htm">Tools</a></li><li class="navelem"><a class="el" href="../../dir_4b5bc41f7c4cbfc8ca80bdea56300f1d.htm">Libs</a></li><li class="navelem"><a class="el" href="../../dir_8694d7149aa3c4cbc4b219c953b250c5.htm">GuiFoundation</a></li><li class="navelem"><a class="el" href="../../dir_1ee6bfe234044993686f76b8bd8b6c42.htm">ActionViews</a></li><li class="navelem"><b>QtProxy.moc.h</b></li>
-    <li class="footer">Generated on Mon Apr 17 2023 20:10:35 for XIIEngine by
+    <li class="footer">Generated on Fri Jun 16 2023 14:12:49 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

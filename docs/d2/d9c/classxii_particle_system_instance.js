@@ -1,6 +1,6 @@
 var classxii_particle_system_instance =
 [
-    [ "ParticleDeathHandler", "d2/d9c/classxii_particle_system_instance.htm#ac0d0e2b789f90919b776aa0fb6186cde", null ],
+    [ "ParticleDeathHandler", "d2/d9c/classxii_particle_system_instance.htm#a1418f8477785653ebd9cea23e98d1135", null ],
     [ "xiiParticleSystemInstance", "d2/d9c/classxii_particle_system_instance.htm#a2b065a755bdd00ecf2be7d334e7476a8", null ],
     [ "AddParticleDeathEventHandler", "d2/d9c/classxii_particle_system_instance.htm#a6b3f3319d07eb3277a7774a7e00c9e24", null ],
     [ "ConfigureFromTemplate", "d2/d9c/classxii_particle_system_instance.htm#a2fed138caf1d0af54c0900b3d31da999", null ],

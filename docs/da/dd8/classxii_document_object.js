@@ -1,8 +1,8 @@
 var classxii_document_object =
 [
-    [ "xiiDocumentObject", "da/dd8/classxii_document_object.htm#a102b403b71cceb6fda5db21e46162cac", null ],
-    [ "~xiiDocumentObject", "da/dd8/classxii_document_object.htm#a548d65752153a2fd29f61aebdea78e5c", null ],
-    [ "ComputeObjectHash", "da/dd8/classxii_document_object.htm#a3bc27341e88eb92f321bebf079631bdd", null ],
+    [ "xiiDocumentObject", "da/dd8/classxii_document_object.htm#a63e1c65ace197f4e77a20465c04897c0", null ],
+    [ "~xiiDocumentObject", "da/dd8/classxii_document_object.htm#aa93e4b85d904b2913cad4f9f5390626a", null ],
+    [ "ComputeObjectHash", "da/dd8/classxii_document_object.htm#a10cee6be42bda6a0ed50cc2809ba279c", null ],
     [ "GetChild", "da/dd8/classxii_document_object.htm#a68fbc09ae403981bca4b681a4ad8d5bb", null ],
     [ "GetChild", "da/dd8/classxii_document_object.htm#a7a5a80e08e5a75fa7bee7659426ba40d", null ],
     [ "GetChildIndex", "da/dd8/classxii_document_object.htm#a789e723e784a3d4d8bc255d38ea47690", null ],

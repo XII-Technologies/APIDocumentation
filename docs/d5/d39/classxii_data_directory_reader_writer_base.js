@@ -10,7 +10,7 @@ var classxii_data_directory_reader_writer_base =
     [ "InternalClose", "d5/d39/classxii_data_directory_reader_writer_base.htm#a4bbd5ff4551a1f8145a3c35436a73fe5", null ],
     [ "InternalOpen", "d5/d39/classxii_data_directory_reader_writer_base.htm#aa129d11e5372a330d9796e2453edf77a", null ],
     [ "IsReader", "d5/d39/classxii_data_directory_reader_writer_base.htm#a698b031b7fad732a898fcf2dbb274213", null ],
-    [ "Open", "d5/d39/classxii_data_directory_reader_writer_base.htm#ab942d1e0f3208c107cf1475eafb8ceba", null ],
+    [ "Open", "d5/d39/classxii_data_directory_reader_writer_base.htm#a08d74710717b4e6cdaf4d938f42d8f5c", null ],
     [ "m_bIsReader", "d5/d39/classxii_data_directory_reader_writer_base.htm#aff47c4809dbc802668ff19d02c2f58ac", null ],
     [ "m_iDataDirUserData", "d5/d39/classxii_data_directory_reader_writer_base.htm#ad63510e05189c095c1f98deeb1ab8792", null ],
     [ "m_pDataDirectory", "d5/d39/classxii_data_directory_reader_writer_base.htm#aee755ccd9fe36c5f59d4ca1b67b41fbf", null ],

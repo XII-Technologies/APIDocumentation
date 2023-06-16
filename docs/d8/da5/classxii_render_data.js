@@ -2,7 +2,7 @@ var classxii_render_data =
 [
     [ "Caching", "d7/dd0/structxii_render_data_1_1_caching.htm", "d7/dd0/structxii_render_data_1_1_caching" ],
     [ "Category", "d0/d8b/structxii_render_data_1_1_category.htm", "d0/d8b/structxii_render_data_1_1_category" ],
-    [ "SortingKeyFunc", "d8/da5/classxii_render_data.htm#a77f1aa78780721c301c3cfaff688ce3a", null ],
+    [ "SortingKeyFunc", "d8/da5/classxii_render_data.htm#af6016ad746c0332561d68347c41a1939", null ],
     [ "GetCategorySortingKey", "d8/da5/classxii_render_data.htm#a1f91676952717bb6398f759b6d869799", null ],
     [ "m_GlobalBounds", "d8/da5/classxii_render_data.htm#aa3d0d2c2f397b6ef2fd8cbe9db3fa665", null ],
     [ "m_GlobalTransform", "d8/da5/classxii_render_data.htm#a757f53c197c44e5bb0312284fc849042", null ],

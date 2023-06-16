@@ -1,7 +1,7 @@
 var structxii_render_context_flags =
 [
     [ "Bits", "d8/d01/structxii_render_context_flags_1_1_bits.htm", "d8/d01/structxii_render_context_flags_1_1_bits" ],
-    [ "StorageType", "d1/da3/structxii_render_context_flags.htm#a0b88a2343d9d589175d0222644301b47", null ],
+    [ "StorageType", "d1/da3/structxii_render_context_flags.htm#a9765a24b3758cd4ba990192f172e9d62", null ],
     [ "Enum", "d1/da3/structxii_render_context_flags.htm#a11b9210393a8b5bf54a3a970838750ba", [
       [ "None", "d1/da3/structxii_render_context_flags.htm#a11b9210393a8b5bf54a3a970838750baa6b8758ea3167a137063ab0ee790c76b4", null ],
       [ "ShaderStateChanged", "d1/da3/structxii_render_context_flags.htm#a11b9210393a8b5bf54a3a970838750baab8d1d92982c01e1578fe97d225885bc3", null ],

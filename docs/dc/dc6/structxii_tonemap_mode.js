@@ -1,6 +1,6 @@
 var structxii_tonemap_mode =
 [
-    [ "StorageType", "dc/dc6/structxii_tonemap_mode.htm#a6dbb5301000fbbc48ae9f45ed694635e", null ],
+    [ "StorageType", "dc/dc6/structxii_tonemap_mode.htm#aee6a7db081198780d7737aa313881fb4", null ],
     [ "Enum", "dc/dc6/structxii_tonemap_mode.htm#a2cb63b26f02580bf54c8f96e7daf75dd", [
       [ "Exponential", "dc/dc6/structxii_tonemap_mode.htm#a2cb63b26f02580bf54c8f96e7daf75ddad1e1cc32c74c208a9740dc2db18c09de", null ],
       [ "Reinhard", "dc/dc6/structxii_tonemap_mode.htm#a2cb63b26f02580bf54c8f96e7daf75dda57aa172403b82ca59668fc99141b7651", null ],

@@ -8,5 +8,5 @@ var classxii_atomic_bool =
     [ "operator=", "da/d93/classxii_atomic_bool.htm#a2991aaf316e71d887afc332ac6cf9084", null ],
     [ "operator=", "da/d93/classxii_atomic_bool.htm#a6a93b5e4bfc0105764a260426bfbe4db", null ],
     [ "Set", "da/d93/classxii_atomic_bool.htm#a1cb0ba5e0a3e10ac1658b7d34fad823b", null ],
-    [ "TestAndSet", "da/d93/classxii_atomic_bool.htm#ad61f79ae3cb2f5180fc8e1595fa44b94", null ]
+    [ "TestAndSet", "da/d93/classxii_atomic_bool.htm#a0ed309f7bde9da7dd39c1cb69da46c7b", null ]
 ];

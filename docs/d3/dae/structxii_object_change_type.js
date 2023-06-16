@@ -1,6 +1,6 @@
 var structxii_object_change_type =
 [
-    [ "StorageType", "d3/dae/structxii_object_change_type.htm#aaf8e13e867646b448e9080af21860e48", null ],
+    [ "StorageType", "d3/dae/structxii_object_change_type.htm#afda816433456911653a680e9747ffd9e", null ],
     [ "Enum", "d3/dae/structxii_object_change_type.htm#a555b8f5a0f3ba5202a1f2faf4d4756b0", [
       [ "NodeAdded", "d3/dae/structxii_object_change_type.htm#a555b8f5a0f3ba5202a1f2faf4d4756b0ad52036c4cd8ed7ed35d2fa2dfb76b184", null ],
       [ "NodeRemoved", "d3/dae/structxii_object_change_type.htm#a555b8f5a0f3ba5202a1f2faf4d4756b0acbbf4ff8a17e1f9944f72715f9216bde", null ],

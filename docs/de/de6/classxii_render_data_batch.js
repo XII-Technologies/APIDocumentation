@@ -1,7 +1,7 @@
 var classxii_render_data_batch =
 [
     [ "Iterator", "d8/d57/classxii_render_data_batch_1_1_iterator.htm", "d8/d57/classxii_render_data_batch_1_1_iterator" ],
-    [ "Filter", "de/de6/classxii_render_data_batch.htm#ae53a0f88be8a6420aba602c88cb33efd", null ],
+    [ "Filter", "de/de6/classxii_render_data_batch.htm#ae8823b7785d8c3eac98debed01eff75b", null ],
     [ "GetCount", "de/de6/classxii_render_data_batch.htm#a24034f753d29e4f8ebdf47b1f8620b5f", null ],
     [ "GetFirstData", "de/de6/classxii_render_data_batch.htm#a3e5582b5e01c3d722a7ec51d7f7b0b2c", null ],
     [ "GetFirstData", "de/de6/classxii_render_data_batch.htm#ab2e9dac5579c49bf066bb4645db833bf", null ],

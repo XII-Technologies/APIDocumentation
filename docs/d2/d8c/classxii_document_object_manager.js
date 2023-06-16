@@ -11,7 +11,7 @@ var classxii_document_object_manager =
     [ "CreateObject", "d2/d8c/classxii_document_object_manager.htm#a9094b846345bc1563d86d411df2825c9", null ],
     [ "DestroyAllObjects", "d2/d8c/classxii_document_object_manager.htm#a5831dbd79725b21374de2832edd294bd", null ],
     [ "DestroyObject", "d2/d8c/classxii_document_object_manager.htm#a44b04a69e133772012d573c2e3b009ad", null ],
-    [ "GetCreateableTypes", "d2/d8c/classxii_document_object_manager.htm#a0a76dc71bfa217b789fca0aa7b501211", null ],
+    [ "GetCreateableTypes", "d2/d8c/classxii_document_object_manager.htm#a492017da9f5fcbb81b23b864d57bd9aa", null ],
     [ "GetDocument", "d2/d8c/classxii_document_object_manager.htm#a793d2355dbad8635f1670192f6bb1e7e", null ],
     [ "GetDocument", "d2/d8c/classxii_document_object_manager.htm#ad843e06896ef5ac009eebf6525c4563c", null ],
     [ "GetObject", "d2/d8c/classxii_document_object_manager.htm#a2eb3b752d8672cb9c8ed06d4e0951bfc", null ],

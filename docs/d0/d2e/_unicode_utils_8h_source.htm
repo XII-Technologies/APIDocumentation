@@ -107,50 +107,50 @@ $(document).ready(function(){initNavTree('d0/d2e/_unicode_utils_8h_source.htm','
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">bool</span> IsASCII(xiiUInt32 uiChar); <span class="comment">// [tested]</span></div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">bool</span> IsUtf8StartByte(<span class="keywordtype">char</span> uiByte); <span class="comment">// [tested]</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">bool</span> IsUtf8StartByte(<span class="keywordtype">char</span> iByte); <span class="comment">// [tested]</span></div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">bool</span> IsUtf8ContinuationByte(<span class="keywordtype">char</span> uiByte); <span class="comment">// [tested]</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">bool</span> IsUtf8ContinuationByte(<span class="keywordtype">char</span> iByte); <span class="comment">// [tested]</span></div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  <span class="keyword">static</span> xiiUInt32 GetUtf8SequenceLength(<span class="keywordtype">char</span> uiFirstByte); <span class="comment">// [tested]</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  <span class="keyword">static</span> xiiUInt32 GetUtf8SequenceLength(<span class="keywordtype">char</span> iFirstByte); <span class="comment">// [tested]</span></div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  <span class="keyword">static</span> xiiUInt32 ConvertUtf8ToUtf32(<span class="keyword">const</span> <span class="keywordtype">char</span>* pFirstChar); <span class="comment">// [tested]</span></div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <span class="keyword">static</span> xiiUInt32 GetSizeForCharacterInUtf8(xiiUInt32 uiCharacter); <span class="comment">// [tested]</span></div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> MoveToNextUtf8(<span class="keyword">const</span> <span class="keywordtype">char</span>*&amp; szUtf8, xiiUInt32 uiNumCharacters = 1); <span class="comment">// [tested]</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> MoveToNextUtf8(<span class="keyword">const</span> <span class="keywordtype">char</span>*&amp; ref_szUtf8, xiiUInt32 uiNumCharacters = 1); <span class="comment">// [tested]</span></div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> MoveToNextUtf8(<span class="keyword">const</span> <span class="keywordtype">char</span>*&amp; szUtf8, <span class="keyword">const</span> <span class="keywordtype">char</span>* szUtf8End, xiiUInt32 uiNumCharacters = 1); <span class="comment">// [tested]</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> MoveToNextUtf8(<span class="keyword">const</span> <span class="keywordtype">char</span>*&amp; ref_szUtf8, <span class="keyword">const</span> <span class="keywordtype">char</span>* szUtf8End, xiiUInt32 uiNumCharacters = 1); <span class="comment">// [tested]</span></div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> MoveToPriorUtf8(<span class="keyword">const</span> <span class="keywordtype">char</span>*&amp; szUtf8, xiiUInt32 uiNumCharacters = 1); <span class="comment">// [tested]</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> MoveToPriorUtf8(<span class="keyword">const</span> <span class="keywordtype">char</span>*&amp; ref_szUtf8, xiiUInt32 uiNumCharacters = 1); <span class="comment">// [tested]</span></div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">bool</span> IsValidUtf8(<span class="keyword">const</span> <span class="keywordtype">char</span>* szString, <span class="keyword">const</span> <span class="keywordtype">char</span>* szStringEnd = GetMaxStringEnd&lt;char&gt;());</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">bool</span> SkipUtf8Bom(<span class="keyword">const</span> <span class="keywordtype">char</span>*&amp; szUtf8); <span class="comment">// [tested]</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">bool</span> SkipUtf8Bom(<span class="keyword">const</span> <span class="keywordtype">char</span>*&amp; ref_szUtf8); <span class="comment">// [tested]</span></div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">bool</span> SkipUtf16BomLE(<span class="keyword">const</span> xiiUInt16*&amp; szUtf16); <span class="comment">// [tested]</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">bool</span> SkipUtf16BomLE(<span class="keyword">const</span> xiiUInt16*&amp; ref_pUtf16); <span class="comment">// [tested]</span></div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">bool</span> SkipUtf16BomBE(<span class="keyword">const</span> xiiUInt16*&amp; szUtf16); <span class="comment">// [tested]</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">bool</span> SkipUtf16BomBE(<span class="keyword">const</span> xiiUInt16*&amp; ref_pUtf16); <span class="comment">// [tested]</span></div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> ByteIterator&gt;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  <span class="keyword">static</span> xiiUInt32 DecodeUtf8ToUtf32(ByteIterator&amp; szUtf8Iterator); <span class="comment">// [tested]</span></div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  <span class="keyword">static</span> xiiUInt32 DecodeUtf8ToUtf32(ByteIterator&amp; ref_szUtf8Iterator); <span class="comment">// [tested]</span></div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> UInt16Iterator&gt;</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">bool</span> IsUtf16Surrogate(UInt16Iterator&amp; szUtf16Iterator); <span class="comment">// [tested]</span></div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">bool</span> IsUtf16Surrogate(UInt16Iterator&amp; ref_szUtf16Iterator); <span class="comment">// [tested]</span></div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> UInt16Iterator&gt;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  <span class="keyword">static</span> xiiUInt32 DecodeUtf16ToUtf32(UInt16Iterator&amp; szUtf16Iterator); <span class="comment">// [tested]</span></div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  <span class="keyword">static</span> xiiUInt32 DecodeUtf16ToUtf32(UInt16Iterator&amp; ref_szUtf16Iterator); <span class="comment">// [tested]</span></div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> WCharIterator&gt;</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  <span class="keyword">static</span> xiiUInt32 DecodeWCharToUtf32(WCharIterator&amp; szWCharIterator); <span class="comment">// [tested]</span></div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  <span class="keyword">static</span> xiiUInt32 DecodeWCharToUtf32(WCharIterator&amp; ref_szWCharIterator); <span class="comment">// [tested]</span></div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> ByteIterator&gt;</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> EncodeUtf32ToUtf8(xiiUInt32 uiUtf32, ByteIterator&amp; szUtf8Output); <span class="comment">// [tested]</span></div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> EncodeUtf32ToUtf8(xiiUInt32 uiUtf32, ByteIterator&amp; ref_szUtf8Output); <span class="comment">// [tested]</span></div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> UInt16Iterator&gt;</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> EncodeUtf32ToUtf16(xiiUInt32 uiUtf32, UInt16Iterator&amp; szUtf16Output); <span class="comment">// [tested]</span></div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> EncodeUtf32ToUtf16(xiiUInt32 uiUtf32, UInt16Iterator&amp; ref_szUtf16Output); <span class="comment">// [tested]</span></div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160; </div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> WCharIterator&gt;</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> EncodeUtf32ToWChar(xiiUInt32 uiUtf32, WCharIterator&amp; szWCharOutput); <span class="comment">// [tested]</span></div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> EncodeUtf32ToWChar(xiiUInt32 uiUtf32, WCharIterator&amp; ref_szWCharOutput); <span class="comment">// [tested]</span></div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160; </div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> IntType, <span class="keyword">typename</span> Container&gt;</div>
 <div class="line"><a name="l00109"></a><span class="lineno"><a class="line" href="../../dd/db2/structxii_unicode_utils_1_1_utf_inserter.htm">  109</a></span>&#160;  <span class="keyword">struct </span><a class="code" href="../../dd/db2/structxii_unicode_utils_1_1_utf_inserter.htm">UtfInserter</a></div>
@@ -167,7 +167,7 @@ $(document).ready(function(){initNavTree('d0/d2e/_unicode_utils_8h_source.htm','
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;  };</div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160; </div>
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> Container&gt;</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">bool</span> RepairNonUtf8Text(<span class="keyword">const</span> <span class="keywordtype">char</span>* pStartData, <span class="keyword">const</span> <span class="keywordtype">char</span>* pEndData, Container&amp; out_Result);</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">bool</span> RepairNonUtf8Text(<span class="keyword">const</span> <span class="keywordtype">char</span>* pStartData, <span class="keyword">const</span> <span class="keywordtype">char</span>* pEndData, Container&amp; out_result);</div>
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;};</div>
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160; </div>
 <div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;<span class="preprocessor">#include &lt;Foundation/Strings/Implementation/UnicodeUtils_inl.h&gt;</span></div>
@@ -179,7 +179,7 @@ $(document).ready(function(){initNavTree('d0/d2e/_unicode_utils_8h_source.htm','
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.htm">home</a></li><li class="navelem"><a class="el" href="../../dir_1036706e55c22cab35bc1c58ee689f1d.htm">runner</a></li><li class="navelem"><a class="el" href="../../dir_629f8151d55d307162ff2d619fb1783d.htm">work</a></li><li class="navelem"><a class="el" href="../../dir_1ddc44fe1263a8c7935fa6130b7d9499.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_2c1b6808f12952f4c36e05ba7068379a.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_b5a1c4ecfca018ad24b729e213296d41.htm">Source</a></li><li class="navelem"><a class="el" href="../../dir_e321052006a51284e67389ab20037e7c.htm">Engine</a></li><li class="navelem"><a class="el" href="../../dir_be0c42c58b36f42c54ec54024ed4f6af.htm">Foundation</a></li><li class="navelem"><a class="el" href="../../dir_b0d9e1007714c8956662e529025ab552.htm">Strings</a></li><li class="navelem"><b>UnicodeUtils.h</b></li>
-    <li class="footer">Generated on Mon Apr 17 2023 20:10:31 for XIIEngine by
+    <li class="footer">Generated on Fri Jun 16 2023 14:12:45 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

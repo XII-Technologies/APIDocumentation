@@ -1,9 +1,9 @@
 var classxii_qt_connection =
 [
-    [ "xiiQtConnection", "d0/dde/classxii_qt_connection.htm#af82f1b9dedfc596eb658fe6361abdf88", null ],
+    [ "xiiQtConnection", "d0/dde/classxii_qt_connection.htm#a7a14592ad3c48bbe2608ea3957476f2f", null ],
     [ "~xiiQtConnection", "d0/dde/classxii_qt_connection.htm#ab46b56e10e56fc73bb78bf63056ef4b3", null ],
     [ "DeterminePen", "d0/dde/classxii_qt_connection.htm#a82ec49775bba2c8bc1ffd0e36ab6d829", null ],
-    [ "ExtendContextMenu", "d0/dde/classxii_qt_connection.htm#a5dfc9bec8fffbbf61be53459be8dbf7e", null ],
+    [ "ExtendContextMenu", "d0/dde/classxii_qt_connection.htm#a4f4bee75aadb3842d2d2ffccb4df7f3c", null ],
     [ "GetConnection", "d0/dde/classxii_qt_connection.htm#a774a8667cb05ec0c335417cbcb7a8b21", null ],
     [ "GetInPos", "d0/dde/classxii_qt_connection.htm#afcd07ff7b8a7d403e521fe0ebb59c3b0", null ],
     [ "GetObject", "d0/dde/classxii_qt_connection.htm#ae69846b8d7b29d32bc129db723cdbd7a", null ],

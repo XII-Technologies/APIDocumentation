@@ -103,21 +103,21 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ab2016713264a8646ac1c31bcd5e0f816"><td class="memItemLeft" align="right" valign="top"><a id="ab2016713264a8646ac1c31bcd5e0f816"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>XII_DECLARE_POD_TYPE</b> ()</td></tr>
 <tr class="separator:ab2016713264a8646ac1c31bcd5e0f816"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a595f32735c47525d305eca9e21f4c896"><td class="memItemLeft" align="right" valign="top"><a id="a595f32735c47525d305eca9e21f4c896"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>xiiSimdVec4f</b> (float xyzw)</td></tr>
-<tr class="separator:a595f32735c47525d305eca9e21f4c896"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a05d583143dcbfb6270b798653b523a72"><td class="memItemLeft" align="right" valign="top"><a id="a05d583143dcbfb6270b798653b523a72"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>xiiSimdVec4f</b> (const <a class="el" href="../../d2/d73/classxii_simd_float.htm">xiiSimdFloat</a> &amp;xyzw)</td></tr>
-<tr class="separator:a05d583143dcbfb6270b798653b523a72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab947ca97e5bffbb82a79bdd2a014eb57"><td class="memItemLeft" align="right" valign="top"><a id="ab947ca97e5bffbb82a79bdd2a014eb57"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>xiiSimdVec4f</b> (float fXyzw)</td></tr>
+<tr class="separator:ab947ca97e5bffbb82a79bdd2a014eb57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4bdfbf1c7ad460e2048edf41e4149ad"><td class="memItemLeft" align="right" valign="top"><a id="af4bdfbf1c7ad460e2048edf41e4149ad"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>xiiSimdVec4f</b> (const <a class="el" href="../../d2/d73/classxii_simd_float.htm">xiiSimdFloat</a> &amp;fXyzw)</td></tr>
+<tr class="separator:af4bdfbf1c7ad460e2048edf41e4149ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae2da8089d46e88ab1f0ea3ea52c4f50c"><td class="memItemLeft" align="right" valign="top"><a id="ae2da8089d46e88ab1f0ea3ea52c4f50c"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>xiiSimdVec4f</b> (float x, float y, float z, float w=1.0f)</td></tr>
 <tr class="separator:ae2da8089d46e88ab1f0ea3ea52c4f50c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1b15d6d907e21c1ff06e6e8320dd24f7"><td class="memItemLeft" align="right" valign="top"><a id="a1b15d6d907e21c1ff06e6e8320dd24f7"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>xiiSimdVec4f</b> (<a class="el" href="../../d1/d20/classxii_vec4_template.htm">xiiInternal::QuadFloat</a> v)</td></tr>
 <tr class="separator:a1b15d6d907e21c1ff06e6e8320dd24f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad7405d6b8a69ef8ba1f9f5abc925365c"><td class="memItemLeft" align="right" valign="top"><a id="ad7405d6b8a69ef8ba1f9f5abc925365c"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>Set</b> (float xyzw)</td></tr>
-<tr class="separator:ad7405d6b8a69ef8ba1f9f5abc925365c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72b1f68dfdb9a9647c95609e8773338c"><td class="memItemLeft" align="right" valign="top"><a id="a72b1f68dfdb9a9647c95609e8773338c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Set</b> (float fXyzw)</td></tr>
+<tr class="separator:a72b1f68dfdb9a9647c95609e8773338c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aab92f0f41960ef12b5ce3281d1bed9ae"><td class="memItemLeft" align="right" valign="top"><a id="aab92f0f41960ef12b5ce3281d1bed9ae"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>Set</b> (float x, float y, float z, float w)</td></tr>
 <tr class="separator:aab92f0f41960ef12b5ce3281d1bed9ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -145,23 +145,23 @@ template&lt;xiiInt32 N&gt; </td></tr>
 <tr class="memitem:af5f224b74ad3924e950520efa8117b1f"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>Store</b> (float *pFloats) const</td></tr>
 <tr class="separator:af5f224b74ad3924e950520efa8117b1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaee789e6e73d5fc6be3d9700d1bbec14"><td class="memTemplParams" colspan="2"><a id="aaee789e6e73d5fc6be3d9700d1bbec14"></a>
-template&lt;xiiMathAcc::Enum acc = xiiMathAcc::FULL&gt; </td></tr>
+template&lt;xiiMathFloatBits::Enum acc = xiiMathFloatBits::FULL&gt; </td></tr>
 <tr class="memitem:aaee789e6e73d5fc6be3d9700d1bbec14"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="../../d3/da5/classxii_simd_vec4f.htm">xiiSimdVec4f</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><b>GetReciprocal</b> () const</td></tr>
 <tr class="separator:aaee789e6e73d5fc6be3d9700d1bbec14"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a312a0d0c33b4d5c644e28a300c53a314"><td class="memTemplParams" colspan="2"><a id="a312a0d0c33b4d5c644e28a300c53a314"></a>
-template&lt;xiiMathAcc::Enum acc = xiiMathAcc::FULL&gt; </td></tr>
+template&lt;xiiMathFloatBits::Enum acc = xiiMathFloatBits::FULL&gt; </td></tr>
 <tr class="memitem:a312a0d0c33b4d5c644e28a300c53a314"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="../../d3/da5/classxii_simd_vec4f.htm">xiiSimdVec4f</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><b>GetSqrt</b> () const</td></tr>
 <tr class="separator:a312a0d0c33b4d5c644e28a300c53a314"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa8aeccd0a482099ed17af15f40515f0e"><td class="memTemplParams" colspan="2"><a id="aa8aeccd0a482099ed17af15f40515f0e"></a>
-template&lt;xiiMathAcc::Enum acc = xiiMathAcc::FULL&gt; </td></tr>
+template&lt;xiiMathFloatBits::Enum acc = xiiMathFloatBits::FULL&gt; </td></tr>
 <tr class="memitem:aa8aeccd0a482099ed17af15f40515f0e"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="../../d3/da5/classxii_simd_vec4f.htm">xiiSimdVec4f</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><b>GetInvSqrt</b> () const</td></tr>
 <tr class="separator:aa8aeccd0a482099ed17af15f40515f0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8c65019cd1655bc473eb58ed9820266b"><td class="memTemplParams" colspan="2"><a id="a8c65019cd1655bc473eb58ed9820266b"></a>
-template&lt;xiiInt32 N, xiiMathAcc::Enum acc = xiiMathAcc::FULL&gt; </td></tr>
+template&lt;xiiInt32 N, xiiMathFloatBits::Enum acc = xiiMathFloatBits::FULL&gt; </td></tr>
 <tr class="memitem:a8c65019cd1655bc473eb58ed9820266b"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="../../d2/d73/classxii_simd_float.htm">xiiSimdFloat</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><b>GetLength</b> () const</td></tr>
 <tr class="separator:a8c65019cd1655bc473eb58ed9820266b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae231f486c096b745a27ac3c2af06b135"><td class="memTemplParams" colspan="2"><a id="ae231f486c096b745a27ac3c2af06b135"></a>
-template&lt;xiiInt32 N, xiiMathAcc::Enum acc = xiiMathAcc::FULL&gt; </td></tr>
+template&lt;xiiInt32 N, xiiMathFloatBits::Enum acc = xiiMathFloatBits::FULL&gt; </td></tr>
 <tr class="memitem:ae231f486c096b745a27ac3c2af06b135"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="../../d2/d73/classxii_simd_float.htm">xiiSimdFloat</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><b>GetInvLength</b> () const</td></tr>
 <tr class="separator:ae231f486c096b745a27ac3c2af06b135"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abbd5cb348dacb6e4a3d858e48561e932"><td class="memTemplParams" colspan="2"><a id="abbd5cb348dacb6e4a3d858e48561e932"></a>
@@ -169,19 +169,19 @@ template&lt;xiiInt32 N&gt; </td></tr>
 <tr class="memitem:abbd5cb348dacb6e4a3d858e48561e932"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="../../d2/d73/classxii_simd_float.htm">xiiSimdFloat</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><b>GetLengthSquared</b> () const</td></tr>
 <tr class="separator:abbd5cb348dacb6e4a3d858e48561e932"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaa8f4155f04f1486faf6a7b1c80f19cb"><td class="memTemplParams" colspan="2"><a id="aaa8f4155f04f1486faf6a7b1c80f19cb"></a>
-template&lt;xiiInt32 N, xiiMathAcc::Enum acc = xiiMathAcc::FULL&gt; </td></tr>
+template&lt;xiiInt32 N, xiiMathFloatBits::Enum acc = xiiMathFloatBits::FULL&gt; </td></tr>
 <tr class="memitem:aaa8f4155f04f1486faf6a7b1c80f19cb"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="../../d2/d73/classxii_simd_float.htm">xiiSimdFloat</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><b>GetLengthAndNormalize</b> ()</td></tr>
 <tr class="separator:aaa8f4155f04f1486faf6a7b1c80f19cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae36baad62c6d00753288f98ae1fd2135"><td class="memTemplParams" colspan="2"><a id="ae36baad62c6d00753288f98ae1fd2135"></a>
-template&lt;xiiInt32 N, xiiMathAcc::Enum acc = xiiMathAcc::FULL&gt; </td></tr>
+template&lt;xiiInt32 N, xiiMathFloatBits::Enum acc = xiiMathFloatBits::FULL&gt; </td></tr>
 <tr class="memitem:ae36baad62c6d00753288f98ae1fd2135"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="../../d3/da5/classxii_simd_vec4f.htm">xiiSimdVec4f</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><b>GetNormalized</b> () const</td></tr>
 <tr class="separator:ae36baad62c6d00753288f98ae1fd2135"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1f4fd6c1875ebe5ae7e2747ff49e0c4b"><td class="memTemplParams" colspan="2"><a id="a1f4fd6c1875ebe5ae7e2747ff49e0c4b"></a>
-template&lt;xiiInt32 N, xiiMathAcc::Enum acc = xiiMathAcc::FULL&gt; </td></tr>
+template&lt;xiiInt32 N, xiiMathFloatBits::Enum acc = xiiMathFloatBits::FULL&gt; </td></tr>
 <tr class="memitem:a1f4fd6c1875ebe5ae7e2747ff49e0c4b"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>Normalize</b> ()</td></tr>
 <tr class="separator:a1f4fd6c1875ebe5ae7e2747ff49e0c4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a84f6238dd4d1527551446b5975f9531a"><td class="memTemplParams" colspan="2"><a id="a84f6238dd4d1527551446b5975f9531a"></a>
-template&lt;xiiInt32 N, xiiMathAcc::Enum acc = xiiMathAcc::FULL&gt; </td></tr>
+template&lt;xiiInt32 N, xiiMathFloatBits::Enum acc = xiiMathFloatBits::FULL&gt; </td></tr>
 <tr class="memitem:a84f6238dd4d1527551446b5975f9531a"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>NormalizeIfNotZero</b> (const <a class="el" href="../../d2/d73/classxii_simd_float.htm">xiiSimdFloat</a> &amp;fEpsilon=xiiMath::SmallEpsilon&lt; float &gt;())</td></tr>
 <tr class="separator:a84f6238dd4d1527551446b5975f9531a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a99ca172c05088cef9c47d4ec69a80715"><td class="memTemplParams" colspan="2"><a id="a99ca172c05088cef9c47d4ec69a80715"></a>
@@ -251,7 +251,7 @@ template&lt;xiiSwizzle::Enum s&gt; </td></tr>
 <a class="el" href="../../d3/da5/classxii_simd_vec4f.htm">xiiSimdVec4f</a>&#160;</td><td class="memItemRight" valign="bottom"><b>CompMul</b> (const <a class="el" href="../../d3/da5/classxii_simd_vec4f.htm">xiiSimdVec4f</a> &amp;v) const</td></tr>
 <tr class="separator:a30d6a840b7488e87bc5f2e2f0bbb6659"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5ff8fd74e3e1197335e0ebc7fd3014e3"><td class="memTemplParams" colspan="2"><a id="a5ff8fd74e3e1197335e0ebc7fd3014e3"></a>
-template&lt;xiiMathAcc::Enum acc = xiiMathAcc::FULL&gt; </td></tr>
+template&lt;xiiMathFloatBits::Enum acc = xiiMathFloatBits::FULL&gt; </td></tr>
 <tr class="memitem:a5ff8fd74e3e1197335e0ebc7fd3014e3"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="../../d3/da5/classxii_simd_vec4f.htm">xiiSimdVec4f</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><b>CompDiv</b> (const <a class="el" href="../../d3/da5/classxii_simd_vec4f.htm">xiiSimdVec4f</a> &amp;v) const</td></tr>
 <tr class="separator:a5ff8fd74e3e1197335e0ebc7fd3014e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a58b5da5cb0475f54852d4d005208309a"><td class="memItemLeft" align="right" valign="top"><a id="a58b5da5cb0475f54852d4d005208309a"></a>
@@ -278,9 +278,9 @@ template&lt;xiiMathAcc::Enum acc = xiiMathAcc::FULL&gt; </td></tr>
 <tr class="memitem:a37bd85db946ee58a01130ec7c154d550"><td class="memItemLeft" align="right" valign="top"><a id="a37bd85db946ee58a01130ec7c154d550"></a>
 <a class="el" href="../../d3/da5/classxii_simd_vec4f.htm">xiiSimdVec4f</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Fraction</b> () const</td></tr>
 <tr class="separator:a37bd85db946ee58a01130ec7c154d550"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae9d02c14d2652f52eee68d93876db4d4"><td class="memItemLeft" align="right" valign="top"><a id="ae9d02c14d2652f52eee68d93876db4d4"></a>
-<a class="el" href="../../d3/da5/classxii_simd_vec4f.htm">xiiSimdVec4f</a>&#160;</td><td class="memItemRight" valign="bottom"><b>FlipSign</b> (const <a class="el" href="../../de/d88/classxii_simd_vec4b.htm">xiiSimdVec4b</a> &amp;cmp) const</td></tr>
-<tr class="separator:ae9d02c14d2652f52eee68d93876db4d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b42f7cb2fadaaa2cedf4ccdae685d95"><td class="memItemLeft" align="right" valign="top"><a id="a7b42f7cb2fadaaa2cedf4ccdae685d95"></a>
+<a class="el" href="../../d3/da5/classxii_simd_vec4f.htm">xiiSimdVec4f</a>&#160;</td><td class="memItemRight" valign="bottom"><b>FlipSign</b> (const <a class="el" href="../../de/d88/classxii_simd_vec4b.htm">xiiSimdVec4b</a> &amp;vCmp) const</td></tr>
+<tr class="separator:a7b42f7cb2fadaaa2cedf4ccdae685d95"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa96668e60e7159d0a8d27190ecb6f32d"><td class="memItemLeft" align="right" valign="top"><a id="aa96668e60e7159d0a8d27190ecb6f32d"></a>
 <a class="el" href="../../d3/da5/classxii_simd_vec4f.htm">xiiSimdVec4f</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator+=</b> (const <a class="el" href="../../d3/da5/classxii_simd_vec4f.htm">xiiSimdVec4f</a> &amp;v)</td></tr>
 <tr class="separator:aa96668e60e7159d0a8d27190ecb6f32d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -347,11 +347,11 @@ template&lt;xiiInt32 N&gt; </td></tr>
 <tr class="memitem:a419f23c70605548ac733b61b57063cf5"><td class="memTemplItemLeft" align="right" valign="top">XII_ALWAYS_INLINE void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>Store</b> (float *pFloats) const</td></tr>
 <tr class="separator:a419f23c70605548ac733b61b57063cf5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:add9776f68e2fcba77b0c25300481d2e4"><td class="memTemplParams" colspan="2"><a id="add9776f68e2fcba77b0c25300481d2e4"></a>
-template&lt;xiiMathAcc::Enum acc&gt; </td></tr>
+template&lt;xiiMathFloatBits::Enum acc&gt; </td></tr>
 <tr class="memitem:add9776f68e2fcba77b0c25300481d2e4"><td class="memTemplItemLeft" align="right" valign="top">XII_ALWAYS_INLINE <a class="el" href="../../d3/da5/classxii_simd_vec4f.htm">xiiSimdVec4f</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><b>GetReciprocal</b> () const</td></tr>
 <tr class="separator:add9776f68e2fcba77b0c25300481d2e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af38df87a1e3c337a25f0bf77d73ff262"><td class="memTemplParams" colspan="2"><a id="af38df87a1e3c337a25f0bf77d73ff262"></a>
-template&lt;xiiMathAcc::Enum acc&gt; </td></tr>
+template&lt;xiiMathFloatBits::Enum acc&gt; </td></tr>
 <tr class="memitem:af38df87a1e3c337a25f0bf77d73ff262"><td class="memTemplItemLeft" align="right" valign="top">XII_ALWAYS_INLINE <a class="el" href="../../d3/da5/classxii_simd_vec4f.htm">xiiSimdVec4f</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><b>GetSqrt</b> () const</td></tr>
 <tr class="separator:af38df87a1e3c337a25f0bf77d73ff262"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a67f95657b4bd38632f6e9efa78ed9c25"><td class="memTemplParams" colspan="2"><a id="a67f95657b4bd38632f6e9efa78ed9c25"></a>
@@ -383,7 +383,7 @@ template&lt;xiiSwizzle::Enum s&gt; </td></tr>
 <tr class="memitem:a862cda561f53ee281d94bbee27a727a1"><td class="memTemplItemLeft" align="right" valign="top">XII_ALWAYS_INLINE <a class="el" href="../../d3/da5/classxii_simd_vec4f.htm">xiiSimdVec4f</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><b>GetCombined</b> (const <a class="el" href="../../d3/da5/classxii_simd_vec4f.htm">xiiSimdVec4f</a> &amp;other) const</td></tr>
 <tr class="separator:a862cda561f53ee281d94bbee27a727a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0673db2959c178af282f0daa4b39d818"><td class="memTemplParams" colspan="2"><a id="a0673db2959c178af282f0daa4b39d818"></a>
-template&lt;xiiMathAcc::Enum acc&gt; </td></tr>
+template&lt;xiiMathFloatBits::Enum acc&gt; </td></tr>
 <tr class="memitem:a0673db2959c178af282f0daa4b39d818"><td class="memTemplItemLeft" align="right" valign="top">XII_ALWAYS_INLINE <a class="el" href="../../d3/da5/classxii_simd_vec4f.htm">xiiSimdVec4f</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><b>CompDiv</b> (const <a class="el" href="../../d3/da5/classxii_simd_vec4f.htm">xiiSimdVec4f</a> &amp;v) const</td></tr>
 <tr class="separator:a0673db2959c178af282f0daa4b39d818"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aee430f51bd6c4ce52b5226c061419b8a"><td class="memItemLeft" align="right" valign="top"><a id="aee430f51bd6c4ce52b5226c061419b8a"></a>
@@ -427,11 +427,11 @@ template&lt;int N&gt; </td></tr>
 <tr class="memitem:af760ea44551f89fd2939ff1c22270a7f"><td class="memTemplItemLeft" align="right" valign="top">XII_ALWAYS_INLINE <a class="el" href="../../d2/d73/classxii_simd_float.htm">xiiSimdFloat</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><b>Dot</b> (const <a class="el" href="../../d3/da5/classxii_simd_vec4f.htm">xiiSimdVec4f</a> &amp;v) const</td></tr>
 <tr class="separator:af760ea44551f89fd2939ff1c22270a7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a07afd2f2c5e4b82158c7d71b0a41ec40"><td class="memTemplParams" colspan="2"><a id="a07afd2f2c5e4b82158c7d71b0a41ec40"></a>
-template&lt;xiiInt32 N, xiiMathAcc::Enum acc&gt; </td></tr>
+template&lt;xiiInt32 N, xiiMathFloatBits::Enum acc&gt; </td></tr>
 <tr class="memitem:a07afd2f2c5e4b82158c7d71b0a41ec40"><td class="memTemplItemLeft" align="right" valign="top">XII_ALWAYS_INLINE <a class="el" href="../../d2/d73/classxii_simd_float.htm">xiiSimdFloat</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><b>GetLength</b> () const</td></tr>
 <tr class="separator:a07afd2f2c5e4b82158c7d71b0a41ec40"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8fcdb67f14bdc0a110a8ca728e7dd841"><td class="memTemplParams" colspan="2"><a id="a8fcdb67f14bdc0a110a8ca728e7dd841"></a>
-template&lt;xiiInt32 N, xiiMathAcc::Enum acc&gt; </td></tr>
+template&lt;xiiInt32 N, xiiMathFloatBits::Enum acc&gt; </td></tr>
 <tr class="memitem:a8fcdb67f14bdc0a110a8ca728e7dd841"><td class="memTemplItemLeft" align="right" valign="top">XII_ALWAYS_INLINE <a class="el" href="../../d2/d73/classxii_simd_float.htm">xiiSimdFloat</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><b>GetInvLength</b> () const</td></tr>
 <tr class="separator:a8fcdb67f14bdc0a110a8ca728e7dd841"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5849a66d1f222fffb3840b2a0da010c2"><td class="memTemplParams" colspan="2"><a id="a5849a66d1f222fffb3840b2a0da010c2"></a>
@@ -439,15 +439,15 @@ template&lt;xiiInt32 N&gt; </td></tr>
 <tr class="memitem:a5849a66d1f222fffb3840b2a0da010c2"><td class="memTemplItemLeft" align="right" valign="top">XII_ALWAYS_INLINE <a class="el" href="../../d2/d73/classxii_simd_float.htm">xiiSimdFloat</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><b>GetLengthSquared</b> () const</td></tr>
 <tr class="separator:a5849a66d1f222fffb3840b2a0da010c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3105292ea2ace362f44ebb74b423363c"><td class="memTemplParams" colspan="2"><a id="a3105292ea2ace362f44ebb74b423363c"></a>
-template&lt;xiiInt32 N, xiiMathAcc::Enum acc&gt; </td></tr>
+template&lt;xiiInt32 N, xiiMathFloatBits::Enum acc&gt; </td></tr>
 <tr class="memitem:a3105292ea2ace362f44ebb74b423363c"><td class="memTemplItemLeft" align="right" valign="top">XII_ALWAYS_INLINE <a class="el" href="../../d2/d73/classxii_simd_float.htm">xiiSimdFloat</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><b>GetLengthAndNormalize</b> ()</td></tr>
 <tr class="separator:a3105292ea2ace362f44ebb74b423363c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3c75fa60457042de31df8d4747f9668d"><td class="memTemplParams" colspan="2"><a id="a3c75fa60457042de31df8d4747f9668d"></a>
-template&lt;xiiInt32 N, xiiMathAcc::Enum acc&gt; </td></tr>
+template&lt;xiiInt32 N, xiiMathFloatBits::Enum acc&gt; </td></tr>
 <tr class="memitem:a3c75fa60457042de31df8d4747f9668d"><td class="memTemplItemLeft" align="right" valign="top">XII_ALWAYS_INLINE <a class="el" href="../../d3/da5/classxii_simd_vec4f.htm">xiiSimdVec4f</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><b>GetNormalized</b> () const</td></tr>
 <tr class="separator:a3c75fa60457042de31df8d4747f9668d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a95cae9cf1dba1f069fed23ae86bc6588"><td class="memTemplParams" colspan="2"><a id="a95cae9cf1dba1f069fed23ae86bc6588"></a>
-template&lt;xiiInt32 N, xiiMathAcc::Enum acc&gt; </td></tr>
+template&lt;xiiInt32 N, xiiMathFloatBits::Enum acc&gt; </td></tr>
 <tr class="memitem:a95cae9cf1dba1f069fed23ae86bc6588"><td class="memTemplItemLeft" align="right" valign="top">XII_ALWAYS_INLINE void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>Normalize</b> ()</td></tr>
 <tr class="separator:a95cae9cf1dba1f069fed23ae86bc6588"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6638bfd25f28373bf3534c600549e656"><td class="memTemplParams" colspan="2"><a id="a6638bfd25f28373bf3534c600549e656"></a>
@@ -553,9 +553,9 @@ template&lt;&gt; </td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:ab5f900daa7ef90c39dd43d378cfd7083"><td class="memItemLeft" align="right" valign="top"><a id="ab5f900daa7ef90c39dd43d378cfd7083"></a>
-static <a class="el" href="../../d3/da5/classxii_simd_vec4f.htm">xiiSimdVec4f</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Select</b> (const <a class="el" href="../../de/d88/classxii_simd_vec4b.htm">xiiSimdVec4b</a> &amp;cmp, const <a class="el" href="../../d3/da5/classxii_simd_vec4f.htm">xiiSimdVec4f</a> &amp;ifTrue, const <a class="el" href="../../d3/da5/classxii_simd_vec4f.htm">xiiSimdVec4f</a> &amp;ifFalse)</td></tr>
-<tr class="separator:ab5f900daa7ef90c39dd43d378cfd7083"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6c1d02a3af721b4de611fc272ced4c5"><td class="memItemLeft" align="right" valign="top"><a id="ab6c1d02a3af721b4de611fc272ced4c5"></a>
+static <a class="el" href="../../d3/da5/classxii_simd_vec4f.htm">xiiSimdVec4f</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Select</b> (const <a class="el" href="../../de/d88/classxii_simd_vec4b.htm">xiiSimdVec4b</a> &amp;vCmp, const <a class="el" href="../../d3/da5/classxii_simd_vec4f.htm">xiiSimdVec4f</a> &amp;vIfTrue, const <a class="el" href="../../d3/da5/classxii_simd_vec4f.htm">xiiSimdVec4f</a> &amp;vIfFalse)</td></tr>
+<tr class="separator:ab6c1d02a3af721b4de611fc272ced4c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa18c39d0a2e01ac7291d24a0073fcee0"><td class="memItemLeft" align="right" valign="top"><a id="aa18c39d0a2e01ac7291d24a0073fcee0"></a>
 static <a class="el" href="../../d3/da5/classxii_simd_vec4f.htm">xiiSimdVec4f</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Lerp</b> (const <a class="el" href="../../d3/da5/classxii_simd_vec4f.htm">xiiSimdVec4f</a> &amp;a, const <a class="el" href="../../d3/da5/classxii_simd_vec4f.htm">xiiSimdVec4f</a> &amp;b, const <a class="el" href="../../d3/da5/classxii_simd_vec4f.htm">xiiSimdVec4f</a> &amp;t)</td></tr>
 <tr class="separator:aa18c39d0a2e01ac7291d24a0073fcee0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -574,9 +574,9 @@ static <a class="el" href="../../d3/da5/classxii_simd_vec4f.htm">xiiSimdVec4f</a
 <tr class="memitem:a1709e7a5107ca679e1a0a8667aaf657b"><td class="memItemLeft" align="right" valign="top"><a id="a1709e7a5107ca679e1a0a8667aaf657b"></a>
 static <a class="el" href="../../d3/da5/classxii_simd_vec4f.htm">xiiSimdVec4f</a>&#160;</td><td class="memItemRight" valign="bottom"><b>MulSub</b> (const <a class="el" href="../../d3/da5/classxii_simd_vec4f.htm">xiiSimdVec4f</a> &amp;a, const <a class="el" href="../../d2/d73/classxii_simd_float.htm">xiiSimdFloat</a> &amp;b, const <a class="el" href="../../d3/da5/classxii_simd_vec4f.htm">xiiSimdVec4f</a> &amp;c)</td></tr>
 <tr class="separator:a1709e7a5107ca679e1a0a8667aaf657b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a92d38a894caffd0e331f9f7c488a4351"><td class="memItemLeft" align="right" valign="top"><a id="a92d38a894caffd0e331f9f7c488a4351"></a>
-static <a class="el" href="../../d3/da5/classxii_simd_vec4f.htm">xiiSimdVec4f</a>&#160;</td><td class="memItemRight" valign="bottom"><b>CopySign</b> (const <a class="el" href="../../d3/da5/classxii_simd_vec4f.htm">xiiSimdVec4f</a> &amp;magnitude, const <a class="el" href="../../d3/da5/classxii_simd_vec4f.htm">xiiSimdVec4f</a> &amp;sign)</td></tr>
-<tr class="separator:a92d38a894caffd0e331f9f7c488a4351"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a873792995c31b3932e9a25df7eea5ebc"><td class="memItemLeft" align="right" valign="top"><a id="a873792995c31b3932e9a25df7eea5ebc"></a>
+static <a class="el" href="../../d3/da5/classxii_simd_vec4f.htm">xiiSimdVec4f</a>&#160;</td><td class="memItemRight" valign="bottom"><b>CopySign</b> (const <a class="el" href="../../d3/da5/classxii_simd_vec4f.htm">xiiSimdVec4f</a> &amp;vMagnitude, const <a class="el" href="../../d3/da5/classxii_simd_vec4f.htm">xiiSimdVec4f</a> &amp;vSign)</td></tr>
+<tr class="separator:a873792995c31b3932e9a25df7eea5ebc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -598,7 +598,7 @@ Public Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d3/da5/classxii_simd_vec4f.htm">xiiSimdVec4f</a></li>
-    <li class="footer">Generated on Mon Apr 17 2023 20:10:42 for XIIEngine by
+    <li class="footer">Generated on Fri Jun 16 2023 14:12:57 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

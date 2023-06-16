@@ -118,13 +118,13 @@ const <a class="el" href="../../d6/dc7/classxii_skeleton_joint.htm">xiiSkeletonJ
 xiiUInt16&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d0c/classxii_skeleton.htm#ac4e7aed90f74f6ff02ff2ba362e38847">FindJointByName</a> (const <a class="el" href="../../d5/dd2/classxii_temp_hashed_string.htm">xiiTempHashedString</a> &amp;sName) const</td></tr>
 <tr class="memdesc:ac4e7aed90f74f6ff02ff2ba362e38847"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allows to find a specific joint in the skeleton by name. Returns xiiInvalidJointIndex if not found. <br /></td></tr>
 <tr class="separator:ac4e7aed90f74f6ff02ff2ba362e38847"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9f8a544a7082481f0df0f7bccdc88b87"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d0c/classxii_skeleton.htm#a9f8a544a7082481f0df0f7bccdc88b87">Save</a> (<a class="el" href="../../d0/d18/classxii_stream_writer.htm">xiiStreamWriter</a> &amp;stream) const</td></tr>
-<tr class="memdesc:a9f8a544a7082481f0df0f7bccdc88b87"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if two skeletons are compatible (same joint count and hierarchy)  <a href="../../d0/d0c/classxii_skeleton.htm#a9f8a544a7082481f0df0f7bccdc88b87">More...</a><br /></td></tr>
-<tr class="separator:a9f8a544a7082481f0df0f7bccdc88b87"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7ae73dde52d8070001902e6249f8ee96"><td class="memItemLeft" align="right" valign="top"><a id="a7ae73dde52d8070001902e6249f8ee96"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d0c/classxii_skeleton.htm#a7ae73dde52d8070001902e6249f8ee96">Load</a> (<a class="el" href="../../d4/d5e/classxii_stream_reader.htm">xiiStreamReader</a> &amp;stream)</td></tr>
-<tr class="memdesc:a7ae73dde52d8070001902e6249f8ee96"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads the skeleton from the given stream. <br /></td></tr>
-<tr class="separator:a7ae73dde52d8070001902e6249f8ee96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc7ddbc9f88780fb776deca1a887a6ed"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d0c/classxii_skeleton.htm#afc7ddbc9f88780fb776deca1a887a6ed">Save</a> (<a class="el" href="../../d0/d18/classxii_stream_writer.htm">xiiStreamWriter</a> &amp;ref_stream) const</td></tr>
+<tr class="memdesc:afc7ddbc9f88780fb776deca1a887a6ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if two skeletons are compatible (same joint count and hierarchy)  <a href="../../d0/d0c/classxii_skeleton.htm#afc7ddbc9f88780fb776deca1a887a6ed">More...</a><br /></td></tr>
+<tr class="separator:afc7ddbc9f88780fb776deca1a887a6ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca257f13cf86b5ff78f7d97198cfe6b6"><td class="memItemLeft" align="right" valign="top"><a id="aca257f13cf86b5ff78f7d97198cfe6b6"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d0c/classxii_skeleton.htm#aca257f13cf86b5ff78f7d97198cfe6b6">Load</a> (<a class="el" href="../../d4/d5e/classxii_stream_reader.htm">xiiStreamReader</a> &amp;ref_stream)</td></tr>
+<tr class="memdesc:aca257f13cf86b5ff78f7d97198cfe6b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads the skeleton from the given stream. <br /></td></tr>
+<tr class="separator:aca257f13cf86b5ff78f7d97198cfe6b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a21846505e2fa600603c8cb2ddfb71072"><td class="memItemLeft" align="right" valign="top"><a id="a21846505e2fa600603c8cb2ddfb71072"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsJointDescendantOf</b> (xiiUInt16 uiJoint, xiiUInt16 uiExpectedParent) const</td></tr>
 <tr class="separator:a21846505e2fa600603c8cb2ddfb71072"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -157,8 +157,8 @@ friend&#160;</td><td class="memItemRight" valign="bottom"><b>xiiSkeletonBuilder<
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The skeleton class encapsulates the information about the joint structure for a model. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a9f8a544a7082481f0df0f7bccdc88b87"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9f8a544a7082481f0df0f7bccdc88b87">&#9670;&nbsp;</a></span>Save()</h2>
+<a id="afc7ddbc9f88780fb776deca1a887a6ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc7ddbc9f88780fb776deca1a887a6ed">&#9670;&nbsp;</a></span>Save()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -167,7 +167,7 @@ friend&#160;</td><td class="memItemRight" valign="bottom"><b>xiiSkeletonBuilder<
           <td class="memname">void xiiSkeleton::Save </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="../../d0/d18/classxii_stream_writer.htm">xiiStreamWriter</a> &amp;&#160;</td>
-          <td class="paramname"><em>stream</em></td><td>)</td>
+          <td class="paramname"><em>ref_stream</em></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
@@ -188,7 +188,7 @@ friend&#160;</td><td class="memItemRight" valign="bottom"><b>xiiSkeletonBuilder<
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d0/d0c/classxii_skeleton.htm">xiiSkeleton</a></li>
-    <li class="footer">Generated on Mon Apr 17 2023 20:10:42 for XIIEngine by
+    <li class="footer">Generated on Fri Jun 16 2023 14:12:57 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

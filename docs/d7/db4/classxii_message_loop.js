@@ -1,7 +1,7 @@
 var classxii_message_loop =
 [
     [ "xiiMessageLoop", "d7/db4/classxii_message_loop.htm#a65b578c2895369be7c07612b405617e4", null ],
-    [ "~xiiMessageLoop", "d7/db4/classxii_message_loop.htm#acda12239e1a28e4c984befc75beb7305", null ],
+    [ "~xiiMessageLoop", "d7/db4/classxii_message_loop.htm#a06c6c240e22332727716560f5fd543d6", null ],
     [ "AddChannel", "d7/db4/classxii_message_loop.htm#a214bb10b6a87d38b6aa05f302e14cda0", null ],
     [ "ProcessTasks", "d7/db4/classxii_message_loop.htm#a8281b490a526dcb621a01c069fa4b08e", null ],
     [ "Quit", "d7/db4/classxii_message_loop.htm#a83fac5e37c3502b670407f2c84c638f1", null ],

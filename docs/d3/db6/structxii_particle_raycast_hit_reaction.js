@@ -1,6 +1,6 @@
 var structxii_particle_raycast_hit_reaction =
 [
-    [ "StorageType", "d3/db6/structxii_particle_raycast_hit_reaction.htm#a2b328c0fbad795eecb8000ac3ffc032f", null ],
+    [ "StorageType", "d3/db6/structxii_particle_raycast_hit_reaction.htm#ae79137ed81e1645a862134238d4f0b55", null ],
     [ "Enum", "d3/db6/structxii_particle_raycast_hit_reaction.htm#ac6c36283f8058741ab2c87e2d1d3fccf", [
       [ "Bounce", "d3/db6/structxii_particle_raycast_hit_reaction.htm#ac6c36283f8058741ab2c87e2d1d3fccfa6584228aaa142c637e51a823799b3f68", null ],
       [ "Die", "d3/db6/structxii_particle_raycast_hit_reaction.htm#ac6c36283f8058741ab2c87e2d1d3fccfa90a615ecaab15876ff8b5476c5f0755a", null ],

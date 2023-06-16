@@ -127,12 +127,12 @@ static const <a class="el" href="../../db/d89/classxii_r_t_t_i.htm">xiiRTTI</a> 
 <tr class="memitem:a7398fb085cf68e9b7e8fe3183a88789a"><td class="memItemLeft" align="right" valign="top">static xiiUInt32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d93/classxii_reflection_utils.htm#a7398fb085cf68e9b7e8fe3183a88789a">GetComponentCount</a> (<a class="el" href="../../dd/dba/structxii_variant_type.htm#a0ab11c9dae08774c11eec36483643874">xiiVariantType::Enum</a> type)</td></tr>
 <tr class="memdesc:a7398fb085cf68e9b7e8fe3183a88789a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the Nth component of the vector to the given value.  <a href="../../d3/d93/classxii_reflection_utils.htm#a7398fb085cf68e9b7e8fe3183a88789a">More...</a><br /></td></tr>
 <tr class="separator:a7398fb085cf68e9b7e8fe3183a88789a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7d8056a5750330d4aef7ef921c0b34c2"><td class="memItemLeft" align="right" valign="top"><a id="a7d8056a5750330d4aef7ef921c0b34c2"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>SetComponent</b> (<a class="el" href="../../db/d1a/classxii_variant.htm">xiiVariant</a> &amp;vector, xiiUInt32 iComponent, double fValue)</td></tr>
-<tr class="separator:a7d8056a5750330d4aef7ef921c0b34c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab8be9df1642a2b29ad6da9c3f65a1837"><td class="memItemLeft" align="right" valign="top"><a id="ab8be9df1642a2b29ad6da9c3f65a1837"></a>
-static double&#160;</td><td class="memItemRight" valign="bottom"><b>GetComponent</b> (const <a class="el" href="../../db/d1a/classxii_variant.htm">xiiVariant</a> &amp;vector, xiiUInt32 iComponent)</td></tr>
-<tr class="separator:ab8be9df1642a2b29ad6da9c3f65a1837"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8df46ce23885072d660ccfbcf414c46"><td class="memItemLeft" align="right" valign="top"><a id="aa8df46ce23885072d660ccfbcf414c46"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>SetComponent</b> (<a class="el" href="../../db/d1a/classxii_variant.htm">xiiVariant</a> &amp;ref_vector, xiiUInt32 uiComponent, double fValue)</td></tr>
+<tr class="separator:aa8df46ce23885072d660ccfbcf414c46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88389eb2c5360ba12b19798b8888615c"><td class="memItemLeft" align="right" valign="top"><a id="a88389eb2c5360ba12b19798b8888615c"></a>
+static double&#160;</td><td class="memItemRight" valign="bottom"><b>GetComponent</b> (const <a class="el" href="../../db/d1a/classxii_variant.htm">xiiVariant</a> &amp;vector, xiiUInt32 uiComponent)</td></tr>
+<tr class="separator:a88389eb2c5360ba12b19798b8888615c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa5b606ea3ecdd9d1736f8743999dc4ba"><td class="memItemLeft" align="right" valign="top"><a id="aa5b606ea3ecdd9d1736f8743999dc4ba"></a>
 static <a class="el" href="../../db/d1a/classxii_variant.htm">xiiVariant</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetMemberPropertyValue</b> (const <a class="el" href="../../dd/d67/classxii_abstract_member_property.htm">xiiAbstractMemberProperty</a> *pProp, const void *pObject)</td></tr>
 <tr class="separator:aa5b606ea3ecdd9d1736f8743999dc4ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -191,17 +191,17 @@ template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a5ddda7fc64ddc0a5068fbf2d0aace11f"><td class="memTemplItemLeft" align="right" valign="top">static bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d3/d93/classxii_reflection_utils.htm#a5ddda7fc64ddc0a5068fbf2d0aace11f">BitflagsToString</a> (<a class="el" href="../../d7/d55/structxii_bitflags.htm">xiiBitflags</a>&lt; T &gt; value, <a class="el" href="../../d4/dbb/classxii_string_builder.htm">xiiStringBuilder</a> &amp;out_sOutput, <a class="el" href="../../de/dfd/structxii_enum.htm">xiiEnum</a>&lt; <a class="el" href="../../dd/d61/structxii_reflection_utils_1_1_enum_conversion_mode.htm">EnumConversionMode</a> &gt; conversionMode=EnumConversionMode::Default)</td></tr>
 <tr class="memdesc:a5ddda7fc64ddc0a5068fbf2d0aace11f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper template to shorten the call for <a class="el" href="../../d7/d55/structxii_bitflags.htm" title="The xiiBitflags class allows you to work with type-safe bitflags.">xiiBitflags</a>. <br /></td></tr>
 <tr class="separator:a5ddda7fc64ddc0a5068fbf2d0aace11f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a84ea3914f5b6d31ebf5de8988fccd5b6"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d93/classxii_reflection_utils.htm#a84ea3914f5b6d31ebf5de8988fccd5b6">GetEnumKeysAndValues</a> (const <a class="el" href="../../db/d89/classxii_r_t_t_i.htm">xiiRTTI</a> *pEnumerationRtti, <a class="el" href="../../dc/da4/classxii_dynamic_array.htm">xiiDynamicArray</a>&lt; <a class="el" href="../../df/d67/structxii_reflection_utils_1_1_enum_key_value_pair.htm">EnumKeyValuePair</a> &gt; &amp;entries, <a class="el" href="../../de/dfd/structxii_enum.htm">xiiEnum</a>&lt; <a class="el" href="../../dd/d61/structxii_reflection_utils_1_1_enum_conversion_mode.htm">EnumConversionMode</a> &gt; conversionMode=EnumConversionMode::Default)</td></tr>
-<tr class="memdesc:a84ea3914f5b6d31ebf5de8988fccd5b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">If the given type is an enum, <em>entries</em> will be filled with all available keys (strings) and values (integers).  <a href="../../d3/d93/classxii_reflection_utils.htm#a84ea3914f5b6d31ebf5de8988fccd5b6">More...</a><br /></td></tr>
-<tr class="separator:a84ea3914f5b6d31ebf5de8988fccd5b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3c2d2488738b5b264097d6b3f911582"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d93/classxii_reflection_utils.htm#ab3c2d2488738b5b264097d6b3f911582">GetEnumKeysAndValues</a> (const <a class="el" href="../../db/d89/classxii_r_t_t_i.htm">xiiRTTI</a> *pEnumerationRtti, <a class="el" href="../../dc/da4/classxii_dynamic_array.htm">xiiDynamicArray</a>&lt; <a class="el" href="../../df/d67/structxii_reflection_utils_1_1_enum_key_value_pair.htm">EnumKeyValuePair</a> &gt; &amp;ref_entries, <a class="el" href="../../de/dfd/structxii_enum.htm">xiiEnum</a>&lt; <a class="el" href="../../dd/d61/structxii_reflection_utils_1_1_enum_conversion_mode.htm">EnumConversionMode</a> &gt; conversionMode=EnumConversionMode::Default)</td></tr>
+<tr class="memdesc:ab3c2d2488738b5b264097d6b3f911582"><td class="mdescLeft">&#160;</td><td class="mdescRight">If the given type is an enum, <em>entries</em> will be filled with all available keys (strings) and values (integers).  <a href="../../d3/d93/classxii_reflection_utils.htm#ab3c2d2488738b5b264097d6b3f911582">More...</a><br /></td></tr>
+<tr class="separator:ab3c2d2488738b5b264097d6b3f911582"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:add9c9c8f873e9f144198d5b0247445c9"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d93/classxii_reflection_utils.htm#add9c9c8f873e9f144198d5b0247445c9">StringToEnumeration</a> (const <a class="el" href="../../db/d89/classxii_r_t_t_i.htm">xiiRTTI</a> *pEnumerationRtti, const char *szValue, xiiInt64 &amp;out_iValue)</td></tr>
 <tr class="memdesc:add9c9c8f873e9f144198d5b0247445c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts an enum or bitfield in its string representation to its value.  <a href="../../d3/d93/classxii_reflection_utils.htm#add9c9c8f873e9f144198d5b0247445c9">More...</a><br /></td></tr>
 <tr class="separator:add9c9c8f873e9f144198d5b0247445c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa9ff3e6443b64a809a2719b1b54d2bcf"><td class="memTemplParams" colspan="2"><a id="aa9ff3e6443b64a809a2719b1b54d2bcf"></a>
+<tr class="memitem:a90b4ff09d10a78e878d57c81ba7466dc"><td class="memTemplParams" colspan="2"><a id="a90b4ff09d10a78e878d57c81ba7466dc"></a>
 template&lt;typename T &gt; </td></tr>
-<tr class="memitem:aa9ff3e6443b64a809a2719b1b54d2bcf"><td class="memTemplItemLeft" align="right" valign="top">static bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d3/d93/classxii_reflection_utils.htm#aa9ff3e6443b64a809a2719b1b54d2bcf">StringToEnumeration</a> (const char *szValue, <a class="el" href="../../de/dfd/structxii_enum.htm">xiiEnum</a>&lt; T &gt; &amp;out_iValue)</td></tr>
-<tr class="memdesc:aa9ff3e6443b64a809a2719b1b54d2bcf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper template to shorten the call for xiiEnums. <br /></td></tr>
-<tr class="separator:aa9ff3e6443b64a809a2719b1b54d2bcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90b4ff09d10a78e878d57c81ba7466dc"><td class="memTemplItemLeft" align="right" valign="top">static bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d3/d93/classxii_reflection_utils.htm#a90b4ff09d10a78e878d57c81ba7466dc">StringToEnumeration</a> (const char *szValue, <a class="el" href="../../de/dfd/structxii_enum.htm">xiiEnum</a>&lt; T &gt; &amp;out_value)</td></tr>
+<tr class="memdesc:a90b4ff09d10a78e878d57c81ba7466dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper template to shorten the call for xiiEnums. <br /></td></tr>
+<tr class="separator:a90b4ff09d10a78e878d57c81ba7466dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5a6cc50722c9e90bcdb13373d1766058"><td class="memItemLeft" align="right" valign="top"><a id="a5a6cc50722c9e90bcdb13373d1766058"></a>
 static xiiInt64&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d93/classxii_reflection_utils.htm#a5a6cc50722c9e90bcdb13373d1766058">DefaultEnumerationValue</a> (const <a class="el" href="../../db/d89/classxii_r_t_t_i.htm">xiiRTTI</a> *pEnumerationRtti)</td></tr>
 <tr class="memdesc:a5a6cc50722c9e90bcdb13373d1766058"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the default value (Enum::Default) for the given enumeration type. <br /></td></tr>
@@ -453,8 +453,8 @@ static <a class="el" href="../../dd/dad/structxii_result.htm">xiiResult</a>&#160
 
 </div>
 </div>
-<a id="a84ea3914f5b6d31ebf5de8988fccd5b6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a84ea3914f5b6d31ebf5de8988fccd5b6">&#9670;&nbsp;</a></span>GetEnumKeysAndValues()</h2>
+<a id="ab3c2d2488738b5b264097d6b3f911582"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab3c2d2488738b5b264097d6b3f911582">&#9670;&nbsp;</a></span>GetEnumKeysAndValues()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -472,7 +472,7 @@ static <a class="el" href="../../dd/dad/structxii_result.htm">xiiResult</a>&#160
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="../../dc/da4/classxii_dynamic_array.htm">xiiDynamicArray</a>&lt; <a class="el" href="../../df/d67/structxii_reflection_utils_1_1_enum_key_value_pair.htm">EnumKeyValuePair</a> &gt; &amp;&#160;</td>
-          <td class="paramname"><em>entries</em>, </td>
+          <td class="paramname"><em>ref_entries</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -637,7 +637,7 @@ static <a class="el" href="../../dd/dad/structxii_result.htm">xiiResult</a>&#160
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d3/d93/classxii_reflection_utils.htm">xiiReflectionUtils</a></li>
-    <li class="footer">Generated on Mon Apr 17 2023 20:10:41 for XIIEngine by
+    <li class="footer">Generated on Fri Jun 16 2023 14:12:56 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

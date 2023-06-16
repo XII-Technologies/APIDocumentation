@@ -1,6 +1,6 @@
 var classxii_game_application_base =
 [
-    [ "SUPER", "da/d67/classxii_game_application_base.htm#a5465ba15aecfb0f20ebc42028db3b112", null ],
+    [ "SUPER", "da/d67/classxii_game_application_base.htm#a9ca72ef25485ba831d1f0294f2b47bac", null ],
     [ "xiiGameApplicationBase", "da/d67/classxii_game_application_base.htm#a1b38f3248ca89cb172e99764295e841d", null ],
     [ "~xiiGameApplicationBase", "da/d67/classxii_game_application_base.htm#a750ab3ddd4c72c8184eca4ee4a11064c", null ],
     [ "ActivateGameState", "da/d67/classxii_game_application_base.htm#a3c4dfbd5608c87db224e8349c16611c3", null ],
@@ -21,7 +21,7 @@ var classxii_game_application_base =
     [ "ExecuteInitFunctions", "da/d67/classxii_game_application_base.htm#a4d5f8e4020e8ce792b073f4ecfc3c6c8", null ],
     [ "ExecuteTakeScreenshot", "da/d67/classxii_game_application_base.htm#afafd2a0bfed509cbec739d06accd3acd", null ],
     [ "FindProjectDirectory", "da/d67/classxii_game_application_base.htm#a8a3f438fb6a5197a9c32abb686294d67", null ],
-    [ "GetAbsFrameCaptureOutputPath", "da/d67/classxii_game_application_base.htm#acdbc666ab25ed505443eb7dabfba838a", null ],
+    [ "GetAbsFrameCaptureOutputPath", "da/d67/classxii_game_application_base.htm#a42c40c2fc67c4aabe2bf42754d81c846", null ],
     [ "GetActiveGameState", "da/d67/classxii_game_application_base.htm#af29f4eb6113780756d7f0cd740223d3b", null ],
     [ "GetActiveGameStateLinkedToWorld", "da/d67/classxii_game_application_base.htm#a50336ebf20016950892db2ffa37dd781", null ],
     [ "GetBaseDataDirectoryPath", "da/d67/classxii_game_application_base.htm#ab060d40e04f67ee1d74a608f5b282100", null ],
@@ -53,7 +53,7 @@ var classxii_game_application_base =
     [ "Run_ProcessApplicationInput", "da/d67/classxii_game_application_base.htm#a790084f097c41b6ff150d0d6392778e6", null ],
     [ "Run_UpdatePlugins", "da/d67/classxii_game_application_base.htm#ad80631b6db857f26a82f6882d6e92066", null ],
     [ "Run_WorldUpdateAndRender", "da/d67/classxii_game_application_base.htm#a52712789b119f550b0db1041b921746d", null ],
-    [ "SetContinuousFrameCapture", "da/d67/classxii_game_application_base.htm#a24cb1ba982038dcf1f8f886b8ebc678a", null ],
+    [ "SetContinuousFrameCapture", "da/d67/classxii_game_application_base.htm#a93504cd63157c2b0852ece8c35172dd1", null ],
     [ "StoreScreenshot", "da/d67/classxii_game_application_base.htm#a05c46fef78f7bad611ae0f89de45e5c2", null ],
     [ "TakeProfilingCapture", "da/d67/classxii_game_application_base.htm#af5be99caab4ed39b6a9d7bc3060e3706", null ],
     [ "TakeScreenshot", "da/d67/classxii_game_application_base.htm#ac4f7c21f745264a05ed7dade505f302c", null ],

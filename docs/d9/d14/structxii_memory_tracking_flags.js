@@ -1,7 +1,7 @@
 var structxii_memory_tracking_flags =
 [
     [ "Bits", "de/d72/structxii_memory_tracking_flags_1_1_bits.htm", "de/d72/structxii_memory_tracking_flags_1_1_bits" ],
-    [ "StorageType", "d9/d14/structxii_memory_tracking_flags.htm#aa3ad734d73c65c9809ab0672e8e7a21b", null ],
+    [ "StorageType", "d9/d14/structxii_memory_tracking_flags.htm#ad480307c5fbdc93ac33db16afa89d006", null ],
     [ "Enum", "d9/d14/structxii_memory_tracking_flags.htm#a040960956de726e6b11c50dd1519d59f", [
       [ "None", "d9/d14/structxii_memory_tracking_flags.htm#a040960956de726e6b11c50dd1519d59fa412cbfef52530e62ee849671a1fab3fb", null ],
       [ "RegisterAllocator", "d9/d14/structxii_memory_tracking_flags.htm#a040960956de726e6b11c50dd1519d59fa2210d4f43f6b71fcb6a2b66b766e0984", null ],

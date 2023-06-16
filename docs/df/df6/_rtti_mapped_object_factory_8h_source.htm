@@ -101,7 +101,7 @@ $(document).ready(function(){initNavTree('df/df6/_rtti_mapped_object_factory_8h_
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;  <a class="code" href="../../d5/da2/classxii_rtti_mapped_object_factory.htm">xiiRttiMappedObjectFactory</a>();</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;  ~<a class="code" href="../../d5/da2/classxii_rtti_mapped_object_factory.htm">xiiRttiMappedObjectFactory</a>();</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  <span class="keyword">typedef</span> Object* (*CreateObjectFunc)(<span class="keyword">const</span> <a class="code" href="../../db/d89/classxii_r_t_t_i.htm">xiiRTTI</a>* pType);</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  <span class="keyword">using</span> CreateObjectFunc = Object* (*)(<span class="keyword">const</span> <a class="code" href="../../db/d89/classxii_r_t_t_i.htm">xiiRTTI</a>*);</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  <span class="keywordtype">void</span>    RegisterCreator(<span class="keyword">const</span> <a class="code" href="../../db/d89/classxii_r_t_t_i.htm">xiiRTTI</a>* pType, CreateObjectFunc creator);</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  <span class="keywordtype">void</span>    UnregisterCreator(<span class="keyword">const</span> <a class="code" href="../../db/d89/classxii_r_t_t_i.htm">xiiRTTI</a>* pType);</div>
@@ -130,14 +130,14 @@ $(document).ready(function(){initNavTree('df/df6/_rtti_mapped_object_factory_8h_
 </div><!-- doc-content -->
 <div class="ttc" id="aclassxii_rtti_mapped_object_factory_htm"><div class="ttname"><a href="../../d5/da2/classxii_rtti_mapped_object_factory.htm">xiiRttiMappedObjectFactory</a></div><div class="ttdoc">A factory that creates the closest matching objects according to the passed type.</div><div class="ttdef"><b>Definition:</b> RttiMappedObjectFactory.h:12</div></div>
 <div class="ttc" id="astructxii_rtti_mapped_object_factory_1_1_event_htm"><div class="ttname"><a href="../../d3/df0/structxii_rtti_mapped_object_factory_1_1_event.htm">xiiRttiMappedObjectFactory::Event</a></div><div class="ttdef"><b>Definition:</b> RttiMappedObjectFactory.h:26</div></div>
-<div class="ttc" id="aclassxii_r_t_t_i_htm"><div class="ttname"><a href="../../db/d89/classxii_r_t_t_i.htm">xiiRTTI</a></div><div class="ttdoc">This enumerable class holds information about reflected types. Each instance represents one type that...</div><div class="ttdef"><b>Definition:</b> RTTI.h:30</div></div>
+<div class="ttc" id="aclassxii_r_t_t_i_htm"><div class="ttname"><a href="../../db/d89/classxii_r_t_t_i.htm">xiiRTTI</a></div><div class="ttdoc">This enumerable class holds information about reflected types. Each instance represents one type that...</div><div class="ttdef"><b>Definition:</b> RTTI.h:31</div></div>
 <div class="ttc" id="aclassxii_hash_table_htm"><div class="ttname"><a href="../../d8/dc2/classxii_hash_table.htm">xiiHashTable&lt; const xiiRTTI *, CreateObjectFunc &gt;</a></div></div>
 <div class="ttc" id="aclassxii_event_htm"><div class="ttname"><a href="../../dc/d22/classxii_event.htm">xiiEvent</a></div><div class="ttdef"><b>Definition:</b> Event.h:174</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.htm">home</a></li><li class="navelem"><a class="el" href="../../dir_1036706e55c22cab35bc1c58ee689f1d.htm">runner</a></li><li class="navelem"><a class="el" href="../../dir_629f8151d55d307162ff2d619fb1783d.htm">work</a></li><li class="navelem"><a class="el" href="../../dir_1ddc44fe1263a8c7935fa6130b7d9499.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_2c1b6808f12952f4c36e05ba7068379a.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_b5a1c4ecfca018ad24b729e213296d41.htm">Source</a></li><li class="navelem"><a class="el" href="../../dir_64f53f8da7bf780a58c32bb848e7873b.htm">Tools</a></li><li class="navelem"><a class="el" href="../../dir_4b5bc41f7c4cbfc8ca80bdea56300f1d.htm">Libs</a></li><li class="navelem"><a class="el" href="../../dir_ba58a103e79106e89914cc52b64849d5.htm">ToolsFoundation</a></li><li class="navelem"><a class="el" href="../../dir_b1b6934632d2ba9a180b62620325419c.htm">Factory</a></li><li class="navelem"><b>RttiMappedObjectFactory.h</b></li>
-    <li class="footer">Generated on Mon Apr 17 2023 20:10:35 for XIIEngine by
+    <li class="footer">Generated on Fri Jun 16 2023 14:12:49 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

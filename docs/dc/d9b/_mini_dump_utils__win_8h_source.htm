@@ -108,7 +108,7 @@ $(document).ready(function(){initNavTree('dc/d9b/_mini_dump_utils__win_8h_source
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<a class="code" href="../../db/d51/classxii_command_line_option_bool.htm">xiiCommandLineOptionBool</a> opt_FullCrashDumps(<span class="stringliteral">&quot;app&quot;</span>, <span class="stringliteral">&quot;-fullcrashdumps&quot;</span>, <span class="stringliteral">&quot;If enabled, crash dumps will contain the full memory image.&quot;</span>, <span class="keyword">false</span>);</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">typedef</span> BOOL(WINAPI* MINIDUMPWRITEDUMP)(HANDLE hProcess, DWORD ProcessId, HANDLE hFile, MINIDUMP_TYPE DumpType, PMINIDUMP_EXCEPTION_INFORMATION ExceptionParam, PMINIDUMP_USER_STREAM_INFORMATION UserStreamParam, PMINIDUMP_CALLBACK_INFORMATION CallbackParam);</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">using</span> MINIDUMPWRITEDUMP = BOOL(WINAPI*)(HANDLE hProcess, DWORD ProcessId, HANDLE hFile, MINIDUMP_TYPE DumpType, PMINIDUMP_EXCEPTION_INFORMATION ExceptionParam, PMINIDUMP_USER_STREAM_INFORMATION UserStreamParam, PMINIDUMP_CALLBACK_INFORMATION CallbackParam);</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;xiiMinWindows::HANDLE xiiMiniDumpUtils::GetProcessHandleWithNecessaryRights(xiiUInt32 uiProcessID)</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;{</div>
@@ -133,7 +133,7 @@ $(document).ready(function(){initNavTree('dc/d9b/_mini_dump_utils__win_8h_source
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<a class="code" href="../../d0/d54/structxii_status.htm">xiiStatus</a> xiiMiniDumpUtils::WriteProcessMiniDump(</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">char</span>*                 szDumpFile,</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  xiiUInt32                   uiProcessID,</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  xiiMinWindows::HANDLE       hProcess,</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  xiiMinWindows::HANDLE       pProcess,</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <span class="keyword">struct</span> _EXCEPTION_POINTERS* pExceptionInfo)</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;{</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  HMODULE hDLL = ::LoadLibraryA(<span class="stringliteral">&quot;dbghelp.dll&quot;</span>);</div>
@@ -181,7 +181,7 @@ $(document).ready(function(){initNavTree('dc/d9b/_mini_dump_utils__win_8h_source
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  exceptionParam.ClientPointers    = TRUE;</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  <span class="keywordflow">if</span> (MiniDumpWriteDumpFunc(</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        hProcess, uiProcessID, hFile, (MINIDUMP_TYPE)dumpType, pExceptionInfo != <span class="keyword">nullptr</span> ? &amp;exceptionParam : <span class="keyword">nullptr</span>, <span class="keyword">nullptr</span>, <span class="keyword">nullptr</span>) == FALSE)</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        pProcess, uiProcessID, hFile, (MINIDUMP_TYPE)dumpType, pExceptionInfo != <span class="keyword">nullptr</span> ? &amp;exceptionParam : <span class="keyword">nullptr</span>, <span class="keyword">nullptr</span>, <span class="keyword">nullptr</span>) == FALSE)</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  {</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="../../d0/d54/structxii_status.htm">xiiStatus</a>(xiiFmt(<span class="stringliteral">&quot;Writing dump file failed: &#39;{}&#39;.&quot;</span>, xiiArgErrorCode(GetLastError())));</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  }</div>
@@ -194,9 +194,9 @@ $(document).ready(function(){initNavTree('dc/d9b/_mini_dump_utils__win_8h_source
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;  <span class="keywordflow">return</span> WriteProcessMiniDump(szDumpFile, GetCurrentProcessId(), GetCurrentProcess(), pExceptionInfo);</div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;}</div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160; </div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<a class="code" href="../../d0/d54/structxii_status.htm">xiiStatus</a> <a class="code" href="../../d7/d26/structxii_mini_dump_utils.htm#aeb5e4c754d45f3cbfa0940bd1722f652">xiiMiniDumpUtils::WriteExternalProcessMiniDump</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* szDumpFile, xiiUInt32 uiProcessID, xiiMinWindows::HANDLE hProcess)</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<a class="code" href="../../d0/d54/structxii_status.htm">xiiStatus</a> <a class="code" href="../../d7/d26/structxii_mini_dump_utils.htm#aeb5e4c754d45f3cbfa0940bd1722f652">xiiMiniDumpUtils::WriteExternalProcessMiniDump</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* szDumpFile, xiiUInt32 uiProcessID, xiiMinWindows::HANDLE pProcess)</div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;{</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;  <span class="keywordflow">return</span> WriteProcessMiniDump(szDumpFile, uiProcessID, hProcess, <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;  <span class="keywordflow">return</span> WriteProcessMiniDump(szDumpFile, uiProcessID, pProcess, <span class="keyword">nullptr</span>);</div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;}</div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160; </div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="preprocessor">#endif</span></div>
@@ -273,7 +273,7 @@ $(document).ready(function(){initNavTree('dc/d9b/_mini_dump_utils__win_8h_source
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.htm">home</a></li><li class="navelem"><a class="el" href="../../dir_1036706e55c22cab35bc1c58ee689f1d.htm">runner</a></li><li class="navelem"><a class="el" href="../../dir_629f8151d55d307162ff2d619fb1783d.htm">work</a></li><li class="navelem"><a class="el" href="../../dir_1ddc44fe1263a8c7935fa6130b7d9499.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_2c1b6808f12952f4c36e05ba7068379a.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_b5a1c4ecfca018ad24b729e213296d41.htm">Source</a></li><li class="navelem"><a class="el" href="../../dir_e321052006a51284e67389ab20037e7c.htm">Engine</a></li><li class="navelem"><a class="el" href="../../dir_be0c42c58b36f42c54ec54024ed4f6af.htm">Foundation</a></li><li class="navelem"><a class="el" href="../../dir_93ea1dc105d79df7757252ae41d4400e.htm">System</a></li><li class="navelem"><a class="el" href="../../dir_f794a5464cdd7c796ca802b0cf288ca7.htm">Implementation</a></li><li class="navelem"><a class="el" href="../../dir_e30f03732e66a59b2c3b7eb9894859b8.htm">Win</a></li><li class="navelem"><b>MiniDumpUtils_win.h</b></li>
-    <li class="footer">Generated on Mon Apr 17 2023 20:10:31 for XIIEngine by
+    <li class="footer">Generated on Fri Jun 16 2023 14:12:45 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

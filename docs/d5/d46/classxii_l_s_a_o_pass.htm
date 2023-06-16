@@ -169,7 +169,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <tr class="memdesc:a8a4c82ddf770dc1087d05c4ff0d182db inherit pub_methods_classxii_render_pipeline_pass"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allows for the pass to write data back using xiiView::SetRenderPassReadBackProperty. E.g. picking results etc. <br /></td></tr>
 <tr class="separator:a8a4c82ddf770dc1087d05c4ff0d182db inherit pub_methods_classxii_render_pipeline_pass"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0fa8a688ab7a56c17b9dfe8633186956 inherit pub_methods_classxii_render_pipeline_pass"><td class="memItemLeft" align="right" valign="top"><a id="a0fa8a688ab7a56c17b9dfe8633186956"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>RenderDataWithCategory</b> (const <a class="el" href="../../d9/d0f/structxii_render_view_context.htm">xiiRenderViewContext</a> &amp;renderViewContext, <a class="el" href="../../d0/d8b/structxii_render_data_1_1_category.htm">xiiRenderData::Category</a> category, <a class="el" href="../../de/de6/classxii_render_data_batch.htm#ae53a0f88be8a6420aba602c88cb33efd">xiiRenderDataBatch::Filter</a> filter=<a class="el" href="../../de/de6/classxii_render_data_batch.htm#ae53a0f88be8a6420aba602c88cb33efd">xiiRenderDataBatch::Filter</a>())</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>RenderDataWithCategory</b> (const <a class="el" href="../../d9/d0f/structxii_render_view_context.htm">xiiRenderViewContext</a> &amp;renderViewContext, <a class="el" href="../../d0/d8b/structxii_render_data_1_1_category.htm">xiiRenderData::Category</a> category, <a class="el" href="../../de/de6/classxii_render_data_batch.htm#ae8823b7785d8c3eac98debed01eff75b">xiiRenderDataBatch::Filter</a> filter=<a class="el" href="../../de/de6/classxii_render_data_batch.htm#ae8823b7785d8c3eac98debed01eff75b">xiiRenderDataBatch::Filter</a>())</td></tr>
 <tr class="separator:a0fa8a688ab7a56c17b9dfe8633186956 inherit pub_methods_classxii_render_pipeline_pass"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a411e8f650e49eb700301f9a744500845 inherit pub_methods_classxii_render_pipeline_pass"><td class="memItemLeft" align="right" valign="top"><a id="a411e8f650e49eb700301f9a744500845"></a>
 XII_ALWAYS_INLINE <a class="el" href="../../df/d0e/classxii_render_pipeline.htm">xiiRenderPipeline</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetPipeline</b> ()</td></tr>
@@ -235,7 +235,7 @@ Protected Attributes</h2></td></tr>
 <a class="el" href="../../d7/d1a/classxii_constant_buffer_storage_handle.htm">xiiConstantBufferStorageHandle</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_hLineSweepCB</b></td></tr>
 <tr class="separator:a21b39710132858fdf610a8f0457757b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3fd565cfc982a7bc825c4bd0864140b3"><td class="memItemLeft" align="right" valign="top"><a id="a3fd565cfc982a7bc825c4bd0864140b3"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_bSweepDataDirty</b></td></tr>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_bSweepDataDirty</b> = true</td></tr>
 <tr class="separator:a3fd565cfc982a7bc825c4bd0864140b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8826813fce9e19aa5a9511168678ac65"><td class="memItemLeft" align="right" valign="top"><a id="a8826813fce9e19aa5a9511168678ac65"></a>
 <a class="el" href="../../d1/dba/classxii_g_a_l_buffer_handle.htm">xiiGALBufferHandle</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d46/classxii_l_s_a_o_pass.htm#a8826813fce9e19aa5a9511168678ac65">m_hLineSweepOutputBuffer</a></td></tr>
@@ -259,16 +259,16 @@ xiiUInt32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href=
 <tr class="memdesc:a50ddc6d9be1c721b88b0c6c84427fa7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Total number of lines to be traced. <br /></td></tr>
 <tr class="separator:a50ddc6d9be1c721b88b0c6c84427fa7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7b272ce3898ed0ddf80d0c51ab5be518"><td class="memItemLeft" align="right" valign="top"><a id="a7b272ce3898ed0ddf80d0c51ab5be518"></a>
-xiiInt32&#160;</td><td class="memItemRight" valign="bottom"><b>m_iLineToLinePixelOffset</b></td></tr>
+xiiInt32&#160;</td><td class="memItemRight" valign="bottom"><b>m_iLineToLinePixelOffset</b> = 2</td></tr>
 <tr class="separator:a7b272ce3898ed0ddf80d0c51ab5be518"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab57df82f187e9d143d3228bbb04c5f3f"><td class="memItemLeft" align="right" valign="top"><a id="ab57df82f187e9d143d3228bbb04c5f3f"></a>
-xiiInt32&#160;</td><td class="memItemRight" valign="bottom"><b>m_iLineSamplePixelOffsetFactor</b></td></tr>
+xiiInt32&#160;</td><td class="memItemRight" valign="bottom"><b>m_iLineSamplePixelOffsetFactor</b> = 1</td></tr>
 <tr class="separator:ab57df82f187e9d143d3228bbb04c5f3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a35ff60ddf19cf367b2c75baf1de1fc7f"><td class="memItemLeft" align="right" valign="top"><a id="a35ff60ddf19cf367b2c75baf1de1fc7f"></a>
 <a class="el" href="../../de/dfd/structxii_enum.htm">xiiEnum</a>&lt; <a class="el" href="../../db/daa/structxii_l_s_a_o_depth_compare_function.htm">xiiLSAODepthCompareFunction</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_DepthCompareFunction</b></td></tr>
 <tr class="separator:a35ff60ddf19cf367b2c75baf1de1fc7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0a4fe8fa81bb99438a2d65141240596d"><td class="memItemLeft" align="right" valign="top"><a id="a0a4fe8fa81bb99438a2d65141240596d"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_bDistributedGathering</b></td></tr>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_bDistributedGathering</b> = true</td></tr>
 <tr class="separator:a0a4fe8fa81bb99438a2d65141240596d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac6948888338371d50767300c5ca9cba7"><td class="memItemLeft" align="right" valign="top"><a id="ac6948888338371d50767300c5ca9cba7"></a>
 <a class="el" href="../../d6/d16/classxii_typed_resource_handle.htm">xiiShaderResourceHandle</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_hShaderLineSweep</b></td></tr>
@@ -301,7 +301,7 @@ static const <a class="el" href="../../db/d89/classxii_r_t_t_i.htm">xiiRTTI</a> 
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d5/d46/classxii_l_s_a_o_pass.htm">xiiLSAOPass</a></li>
-    <li class="footer">Generated on Mon Apr 17 2023 20:10:39 for XIIEngine by
+    <li class="footer">Generated on Fri Jun 16 2023 14:12:54 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

@@ -1,6 +1,6 @@
 var structxii_camera_usage_hint =
 [
-    [ "StorageType", "de/d2b/structxii_camera_usage_hint.htm#ac76e3202beb67c763a65638af1486ac7", null ],
+    [ "StorageType", "de/d2b/structxii_camera_usage_hint.htm#a9669b5772892414f0506142b9bb1802c", null ],
     [ "Enum", "de/d2b/structxii_camera_usage_hint.htm#a9be341161d0131e9fa8102e73cccf0cd", [
       [ "None", "de/d2b/structxii_camera_usage_hint.htm#a9be341161d0131e9fa8102e73cccf0cda4ff721fe02015086f01b1aaf3e0c09b4", null ],
       [ "MainView", "de/d2b/structxii_camera_usage_hint.htm#a9be341161d0131e9fa8102e73cccf0cda5bc06029be8b4eb28059c098d77ba4bd", null ],

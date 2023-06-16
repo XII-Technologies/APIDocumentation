@@ -7,5 +7,5 @@ var classxii_g_a_l_blend_state_diligent =
     [ "InitPlatform", "d2/d91/classxii_g_a_l_blend_state_diligent.htm#a947f3630eba72e785541378a8b4ffdea", null ],
     [ "xiiGALDeviceDiligent", "d2/d91/classxii_g_a_l_blend_state_diligent.htm#aa4c4e61f06413b5554bad4d3f222b37c", null ],
     [ "xiiMemoryUtils", "d2/d91/classxii_g_a_l_blend_state_diligent.htm#aefc9ff75d6833fd2f05be48e16436db6", null ],
-    [ "m_BlendState", "d2/d91/classxii_g_a_l_blend_state_diligent.htm#aa6c022c45353ddbcfcff54271bfb9728", null ]
+    [ "m_BlendStateDesc", "d2/d91/classxii_g_a_l_blend_state_diligent.htm#a2db9504f0b5f2d0c12357f497141e5d6", null ]
 ];

@@ -1,7 +1,7 @@
 var classxii_simd_vec4i =
 [
     [ "xiiSimdVec4i", "d5/d4f/classxii_simd_vec4i.htm#af6df3cf3cb779e47b93b721f957c7aeb", null ],
-    [ "xiiSimdVec4i", "d5/d4f/classxii_simd_vec4i.htm#a4fb3ddce202df2521fe5cd97c482db05", null ],
+    [ "xiiSimdVec4i", "d5/d4f/classxii_simd_vec4i.htm#a13b0c8e05f823ec472e4fa41a454ba7b", null ],
     [ "xiiSimdVec4i", "d5/d4f/classxii_simd_vec4i.htm#a59cebdcbb13e0059a546e7604aca6a23", null ],
     [ "xiiSimdVec4i", "d5/d4f/classxii_simd_vec4i.htm#aaac564f7fd1f5bf03991f5114639ae8c", null ],
     [ "xiiSimdVec4i", "d5/d4f/classxii_simd_vec4i.htm#a2754e9ad4ec37a95eb5f8bc5bff88dd7", null ],
@@ -44,8 +44,8 @@ var classxii_simd_vec4i =
     [ "operator|", "d5/d4f/classxii_simd_vec4i.htm#ad202b4d41be26aa5f91b18f1f1a552a2", null ],
     [ "operator|=", "d5/d4f/classxii_simd_vec4i.htm#a05c323868b785cc30d8db7f471102275", null ],
     [ "operator~", "d5/d4f/classxii_simd_vec4i.htm#a9d9f9ea70f77ce4fd01b49859d7d52f0", null ],
+    [ "Set", "d5/d4f/classxii_simd_vec4i.htm#aaa8ced354f68b6cbd79a30cdf7dcf53b", null ],
     [ "Set", "d5/d4f/classxii_simd_vec4i.htm#a58979fd5ede7b2ea25ed34317d95dc8a", null ],
-    [ "Set", "d5/d4f/classxii_simd_vec4i.htm#a2acf898cc9e288517bafc24a611160fc", null ],
     [ "SetZero", "d5/d4f/classxii_simd_vec4i.htm#a77b0b5be40c3cf1d0d80abaafcc5776c", null ],
     [ "Store", "d5/d4f/classxii_simd_vec4i.htm#a27f2090db96bfae11dad6a27711fd2cb", null ],
     [ "Store", "d5/d4f/classxii_simd_vec4i.htm#a9b92d86cf557349fe868d55294ac0705", null ],

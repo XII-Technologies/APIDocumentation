@@ -15,7 +15,7 @@ var classxii_window =
     [ "OnClickClose", "d2/d13/classxii_window.htm#aadda987a4153f41525bb655dcc6d7467", null ],
     [ "OnFocus", "d2/d13/classxii_window.htm#a8d0fcb10ac3fd4ab68af552196068acf", null ],
     [ "OnResize", "d2/d13/classxii_window.htm#ab7628f8ff7dd616739ae632a6eef9609", null ],
-    [ "OnWindowMove", "d2/d13/classxii_window.htm#aed16d7725b44718dbd7cbe9531cbe0db", null ],
+    [ "OnWindowMove", "d2/d13/classxii_window.htm#a1da83eb7c4c4d0abcb4b010f66497d1c", null ],
     [ "ProcessWindowMessages", "d2/d13/classxii_window.htm#a72949bac5290ba9d2955df3d2b5bbabc", null ],
     [ "RemoveReference", "d2/d13/classxii_window.htm#a201c329dcba1c9b66da479483159106f", null ],
     [ "Resize", "d2/d13/classxii_window.htm#a76e1b136feeb2c818ffa108aa02d0190", null ],

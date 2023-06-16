@@ -1,6 +1,6 @@
 var structxii_on_component_finished_action2 =
 [
-    [ "StorageType", "da/d84/structxii_on_component_finished_action2.htm#a53e8e3e5e839862c47ab8aea75119cc2", null ],
+    [ "StorageType", "da/d84/structxii_on_component_finished_action2.htm#a7a132d9cf522e8b76ecb5a201f7dad28", null ],
     [ "Enum", "da/d84/structxii_on_component_finished_action2.htm#ae7ed721ab6140fdeea22d93b520efffc", [
       [ "None", "da/d84/structxii_on_component_finished_action2.htm#ae7ed721ab6140fdeea22d93b520efffca259430cd287070c0f546eb65c461a53e", null ],
       [ "DeleteComponent", "da/d84/structxii_on_component_finished_action2.htm#ae7ed721ab6140fdeea22d93b520efffcabc39b656effadbb55941bef44edc0f78", null ],

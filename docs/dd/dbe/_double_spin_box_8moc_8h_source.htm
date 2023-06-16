@@ -99,7 +99,7 @@ $(document).ready(function(){initNavTree('dd/dbe/_double_spin_box_8moc_8h_source
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="../../dc/ded/classxii_qt_double_spin_box.htm">xiiQtDoubleSpinBox</a>(QWidget* pParent, <span class="keywordtype">bool</span> bIntMode = <span class="keyword">false</span>);</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;  <span class="keywordtype">void</span> SetIntMode(<span class="keywordtype">bool</span> enable);</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;  <span class="keywordtype">void</span> SetIntMode(<span class="keywordtype">bool</span> bEnable);</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;  <span class="keywordtype">void</span> setDisplaySuffix(<span class="keyword">const</span> <span class="keywordtype">char</span>* szSuffix);</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;  <span class="keywordtype">void</span> setDefaultValue(<span class="keywordtype">double</span> value);</div>
@@ -109,11 +109,11 @@ $(document).ready(function(){initNavTree('dd/dbe/_double_spin_box_8moc_8h_source
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  <span class="keywordtype">void</span> setMinimum(<span class="keyword">const</span> <a class="code" href="../../db/d1a/classxii_variant.htm">xiiVariant</a>&amp; val);</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  <span class="keywordtype">void</span> setMaximum(<span class="keyword">const</span> <a class="code" href="../../db/d1a/classxii_variant.htm">xiiVariant</a>&amp; val);</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  <span class="keyword">virtual</span> QString textFromValue(<span class="keywordtype">double</span> val) <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">double</span>  valueFromText(<span class="keyword">const</span> QString&amp; text) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  <span class="keyword">virtual</span> QString textFromValue(<span class="keywordtype">double</span> fVal) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">double</span>  valueFromText(<span class="keyword">const</span> QString&amp; sText) <span class="keyword">const override</span>;</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  <span class="keywordtype">void</span>   setValueInvalid();</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  <span class="keywordtype">void</span>   setValue(<span class="keywordtype">double</span> val);</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  <span class="keywordtype">void</span>   setValue(<span class="keywordtype">double</span> fVal);</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  <span class="keywordtype">void</span>   setValue(<span class="keyword">const</span> <a class="code" href="../../db/d1a/classxii_variant.htm">xiiVariant</a>&amp; val);</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  <span class="keywordtype">double</span> value() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
@@ -150,7 +150,7 @@ $(document).ready(function(){initNavTree('dd/dbe/_double_spin_box_8moc_8h_source
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.htm">home</a></li><li class="navelem"><a class="el" href="../../dir_1036706e55c22cab35bc1c58ee689f1d.htm">runner</a></li><li class="navelem"><a class="el" href="../../dir_629f8151d55d307162ff2d619fb1783d.htm">work</a></li><li class="navelem"><a class="el" href="../../dir_1ddc44fe1263a8c7935fa6130b7d9499.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_2c1b6808f12952f4c36e05ba7068379a.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_b5a1c4ecfca018ad24b729e213296d41.htm">Source</a></li><li class="navelem"><a class="el" href="../../dir_64f53f8da7bf780a58c32bb848e7873b.htm">Tools</a></li><li class="navelem"><a class="el" href="../../dir_4b5bc41f7c4cbfc8ca80bdea56300f1d.htm">Libs</a></li><li class="navelem"><a class="el" href="../../dir_8694d7149aa3c4cbc4b219c953b250c5.htm">GuiFoundation</a></li><li class="navelem"><a class="el" href="../../dir_9a2348ba360553a58aa9ebac918c2653.htm">Widgets</a></li><li class="navelem"><b>DoubleSpinBox.moc.h</b></li>
-    <li class="footer">Generated on Mon Apr 17 2023 20:10:35 for XIIEngine by
+    <li class="footer">Generated on Fri Jun 16 2023 14:12:49 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

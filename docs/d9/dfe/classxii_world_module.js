@@ -2,7 +2,7 @@ var classxii_world_module =
 [
     [ "UpdateContext", "de/d2b/structxii_world_module_1_1_update_context.htm", "de/d2b/structxii_world_module_1_1_update_context" ],
     [ "UpdateFunctionDesc", "d6/dc3/structxii_world_module_1_1_update_function_desc.htm", "d6/dc3/structxii_world_module_1_1_update_function_desc" ],
-    [ "UpdateFunction", "d9/dfe/classxii_world_module.htm#a6d4bcde59baacdcc603508274a11e983", null ],
+    [ "UpdateFunction", "d9/dfe/classxii_world_module.htm#a37328ef7216b181772ed63453973897c", null ],
     [ "xiiWorldModule", "d9/dfe/classxii_world_module.htm#ace727ec314d70a24bba1aec24dac87e4", null ],
     [ "~xiiWorldModule", "d9/dfe/classxii_world_module.htm#a1279f469fa1386bdf62213f76fc3426e", null ],
     [ "Deinitialize", "d9/dfe/classxii_world_module.htm#a1536af5f9f223828a3afdf41894d91b6", null ],

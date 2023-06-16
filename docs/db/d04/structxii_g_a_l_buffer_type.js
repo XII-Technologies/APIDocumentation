@@ -1,6 +1,6 @@
 var structxii_g_a_l_buffer_type =
 [
-    [ "StorageType", "db/d04/structxii_g_a_l_buffer_type.htm#a3d72c6a6e9ad8214069f4ce2da66a113", null ],
+    [ "StorageType", "db/d04/structxii_g_a_l_buffer_type.htm#a1e754c79a00100dd7ef1e1618b8c3b67", null ],
     [ "Enum", "db/d04/structxii_g_a_l_buffer_type.htm#a5a725b9c2a756d9c876f0a500eeb995c", [
       [ "Generic", "db/d04/structxii_g_a_l_buffer_type.htm#a5a725b9c2a756d9c876f0a500eeb995ca63eaaea6b95dfb097a27b1b4b7413e50", null ],
       [ "VertexBuffer", "db/d04/structxii_g_a_l_buffer_type.htm#a5a725b9c2a756d9c876f0a500eeb995cadd3cfcd7a38b7eeaa7dcc0c22a3aa358", null ],

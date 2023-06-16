@@ -1,6 +1,6 @@
 var structxii_particle_texture_atlas_type =
 [
-    [ "StorageType", "d8/df8/structxii_particle_texture_atlas_type.htm#a88a8ab2edd84d38f0fadef9fe875fcc1", null ],
+    [ "StorageType", "d8/df8/structxii_particle_texture_atlas_type.htm#aeb8f273bb15bccaa376158de200d03b0", null ],
     [ "Enum", "d8/df8/structxii_particle_texture_atlas_type.htm#a7d5467fb4fdbe1970cf40201d601b999", [
       [ "None", "d8/df8/structxii_particle_texture_atlas_type.htm#a7d5467fb4fdbe1970cf40201d601b999a83c058eede543b6b5843f71c8822d15d", null ],
       [ "RandomVariations", "d8/df8/structxii_particle_texture_atlas_type.htm#a7d5467fb4fdbe1970cf40201d601b999a4c5a4c61a6f1ec116411568409e00ea5", null ],

@@ -17,7 +17,7 @@ var classxii_j_s_o_n_reader =
     [ "OnReadValue", "d8/d05/classxii_j_s_o_n_reader.htm#a37cfe40765f21d01cc3ca05b12a9905c", null ],
     [ "OnReadValueNULL", "d8/d05/classxii_j_s_o_n_reader.htm#a151b99a4f0103cfd4a271bec15a3eb4e", null ],
     [ "OnVariable", "d8/d05/classxii_j_s_o_n_reader.htm#a92022a9ebc0cc860da7399794835ee46", null ],
-    [ "Parse", "d8/d05/classxii_j_s_o_n_reader.htm#a2e67f165743415fb86e002c60a25894f", null ],
+    [ "Parse", "d8/d05/classxii_j_s_o_n_reader.htm#a4ba81a35fbd382289024546c19738a54", null ],
     [ "m_bParsingError", "d8/d05/classxii_j_s_o_n_reader.htm#a5f5bd623a3da472606374c8521d7a0d8", null ],
     [ "m_sLastName", "d8/d05/classxii_j_s_o_n_reader.htm#ad50d3ef674f3cbc003f2b3cd4b4c299f", null ],
     [ "m_Stack", "d8/d05/classxii_j_s_o_n_reader.htm#abdf2ea39868bff7dc09d164c756da889", null ]

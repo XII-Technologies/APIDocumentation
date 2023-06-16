@@ -101,7 +101,7 @@ $(document).ready(function(){initNavTree('dc/d09/_set_8h_source.htm','../../'); 
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;  {</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    NilNode();</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    xiiUInt16 m_uiLevel;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    xiiUInt16 m_uiLevel = 0;</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    Node*     m_pParent;</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    Node*     m_pLink[2];</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  };</div>
@@ -278,9 +278,9 @@ $(document).ready(function(){initNavTree('dc/d09/_set_8h_source.htm','../../'); 
 <div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160; </div>
 <div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160; </div>
 <div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> KeyType, <span class="keyword">typename</span> Comparer&gt;</div>
-<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;<span class="keyword">typename</span> <a class="code" href="../../dd/d12/structxii_set_base_1_1_iterator.htm">xiiSetBase&lt;KeyType, Comparer&gt;::Iterator</a> begin(<a class="code" href="../../d6/daa/classxii_set_base.htm">xiiSetBase&lt;KeyType, Comparer&gt;</a>&amp; container)</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;<span class="keyword">typename</span> <a class="code" href="../../dd/d12/structxii_set_base_1_1_iterator.htm">xiiSetBase&lt;KeyType, Comparer&gt;::Iterator</a> begin(<a class="code" href="../../d6/daa/classxii_set_base.htm">xiiSetBase&lt;KeyType, Comparer&gt;</a>&amp; ref_container)</div>
 <div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;{</div>
-<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;  <span class="keywordflow">return</span> container.<a class="code" href="../../d6/daa/classxii_set_base.htm#ae94d47ef967975a5a4b2f2a0fb953dd7">GetIterator</a>();</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;  <span class="keywordflow">return</span> ref_container.<a class="code" href="../../d6/daa/classxii_set_base.htm#ae94d47ef967975a5a4b2f2a0fb953dd7">GetIterator</a>();</div>
 <div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;}</div>
 <div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160; </div>
 <div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> KeyType, <span class="keyword">typename</span> Comparer&gt;</div>
@@ -296,7 +296,7 @@ $(document).ready(function(){initNavTree('dc/d09/_set_8h_source.htm','../../'); 
 <div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;}</div>
 <div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160; </div>
 <div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> KeyType, <span class="keyword">typename</span> Comparer&gt;</div>
-<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;<span class="keyword">typename</span> <a class="code" href="../../dd/d12/structxii_set_base_1_1_iterator.htm">xiiSetBase&lt;KeyType, Comparer&gt;::Iterator</a> end(<a class="code" href="../../d6/daa/classxii_set_base.htm">xiiSetBase&lt;KeyType, Comparer&gt;</a>&amp; container)</div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;<span class="keyword">typename</span> <a class="code" href="../../dd/d12/structxii_set_base_1_1_iterator.htm">xiiSetBase&lt;KeyType, Comparer&gt;::Iterator</a> end(<a class="code" href="../../d6/daa/classxii_set_base.htm">xiiSetBase&lt;KeyType, Comparer&gt;</a>&amp; ref_container)</div>
 <div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;{</div>
 <div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;  <span class="keywordflow">return</span> <span class="keyword">typename</span> <a class="code" href="../../dd/d12/structxii_set_base_1_1_iterator.htm">xiiSetBase&lt;KeyType, Comparer&gt;::Iterator</a>();</div>
 <div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;}</div>
@@ -343,7 +343,7 @@ $(document).ready(function(){initNavTree('dc/d09/_set_8h_source.htm','../../'); 
 <div class="ttc" id="aclassxii_set_base_htm_ab5dd55c4e09e2e15e987db19cb64eaf1"><div class="ttname"><a href="../../d6/daa/classxii_set_base.htm#ab5dd55c4e09e2e15e987db19cb64eaf1">xiiSetBase::GetLastIterator</a></div><div class="ttdeci">Iterator GetLastIterator() const</div><div class="ttdoc">Returns a constant Iterator to the very last element. For reverse traversal.</div><div class="ttdef"><b>Definition:</b> Set_inl.h:205</div></div>
 <div class="ttc" id="aclassxii_set_base_htm_ad442d03eea8de7d9c91c3e0c1f6cdc35"><div class="ttname"><a href="../../d6/daa/classxii_set_base.htm#ad442d03eea8de7d9c91c3e0c1f6cdc35">xiiSetBase::GetHeapMemoryUsage</a></div><div class="ttdeci">xiiUInt64 GetHeapMemoryUsage() const</div><div class="ttdoc">Returns the amount of bytes that are currently allocated on the heap.</div><div class="ttdef"><b>Definition:</b> Set.h:173</div></div>
 <div class="ttc" id="aclassxii_set_base_htm_a7f9b3ee58fb5f2d0f35c7a7177e64afb"><div class="ttname"><a href="../../d6/daa/classxii_set_base.htm#a7f9b3ee58fb5f2d0f35c7a7177e64afb">xiiSetBase::Intersection</a></div><div class="ttdeci">void Intersection(const xiiSetBase&lt; KeyType, Comparer &gt; &amp;operand)</div><div class="ttdoc">Makes this set the intersection of itself and the operand.</div><div class="ttdef"><b>Definition:</b> Set_inl.h:372</div></div>
-<div class="ttc" id="aclassxii_allocator_base_htm"><div class="ttname"><a href="../../d5/d66/classxii_allocator_base.htm">xiiAllocatorBase</a></div><div class="ttdoc">Base class for all memory allocators.</div><div class="ttdef"><b>Definition:</b> AllocatorBase.h:22</div></div>
+<div class="ttc" id="aclassxii_allocator_base_htm"><div class="ttname"><a href="../../d5/d66/classxii_allocator_base.htm">xiiAllocatorBase</a></div><div class="ttdoc">Base class for all memory allocators.</div><div class="ttdef"><b>Definition:</b> AllocatorBase.h:21</div></div>
 <div class="ttc" id="astructxii_set_base_1_1_iterator_htm_a9217295e49a112b28cbf16e15f04cfde"><div class="ttname"><a href="../../dd/d12/structxii_set_base_1_1_iterator.htm#a9217295e49a112b28cbf16e15f04cfde">xiiSetBase::Iterator::Prev</a></div><div class="ttdeci">void Prev()</div><div class="ttdoc">Advances the iterator to the previous element in the set. The iterator will not be valid anymore,...</div><div class="ttdef"><b>Definition:</b> Set_inl.h:61</div></div>
 <div class="ttc" id="aclassxii_set_base_htm_a0d39b63f88f77dfff248b0586c9f9c24"><div class="ttname"><a href="../../d6/daa/classxii_set_base.htm#a0d39b63f88f77dfff248b0586c9f9c24">xiiSetBase::Clear</a></div><div class="ttdeci">void Clear()</div><div class="ttdoc">Destroys all elements in the set and resets its size to zero.</div><div class="ttdef"><b>Definition:</b> Set_inl.h:167</div></div>
 <div class="ttc" id="aclassxii_set_base_htm_a8f118b4eae296d75dbbb6b8636bee278"><div class="ttname"><a href="../../d6/daa/classxii_set_base.htm#a8f118b4eae296d75dbbb6b8636bee278">xiiSetBase::Contains</a></div><div class="ttdeci">bool Contains(const CompatibleKeyType &amp;key) const</div><div class="ttdoc">Checks whether the given key is in the container.</div></div>
@@ -361,7 +361,7 @@ $(document).ready(function(){initNavTree('dc/d09/_set_8h_source.htm','../../'); 
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.htm">home</a></li><li class="navelem"><a class="el" href="../../dir_1036706e55c22cab35bc1c58ee689f1d.htm">runner</a></li><li class="navelem"><a class="el" href="../../dir_629f8151d55d307162ff2d619fb1783d.htm">work</a></li><li class="navelem"><a class="el" href="../../dir_1ddc44fe1263a8c7935fa6130b7d9499.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_2c1b6808f12952f4c36e05ba7068379a.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_b5a1c4ecfca018ad24b729e213296d41.htm">Source</a></li><li class="navelem"><a class="el" href="../../dir_e321052006a51284e67389ab20037e7c.htm">Engine</a></li><li class="navelem"><a class="el" href="../../dir_be0c42c58b36f42c54ec54024ed4f6af.htm">Foundation</a></li><li class="navelem"><a class="el" href="../../dir_7f59ab18dbc50035dfc0ee7070867286.htm">Containers</a></li><li class="navelem"><b>Set.h</b></li>
-    <li class="footer">Generated on Mon Apr 17 2023 20:10:29 for XIIEngine by
+    <li class="footer">Generated on Fri Jun 16 2023 14:12:42 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

@@ -119,28 +119,28 @@ $(document).ready(function(){initNavTree('d9/dd2/_aligned_allocation_8h_source.h
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;      <span class="keywordflow">return</span> pAlignedMemory;</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    }</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordtype">void</span> Deallocate(<span class="keywordtype">void</span>* ptr)</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordtype">void</span> Deallocate(<span class="keywordtype">void</span>* pPtr)</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    {</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;      <span class="keyword">const</span> xiiUInt32 uiOffset = UnpackOffset(GetMetadata(ptr));</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;      xiiUInt8*       pMemory  = <span class="keyword">static_cast&lt;</span>xiiUInt8*<span class="keyword">&gt;</span>(ptr) - uiOffset;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;      <span class="keyword">const</span> xiiUInt32 uiOffset = UnpackOffset(GetMetadata(pPtr));</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;      xiiUInt8*       pMemory  = <span class="keyword">static_cast&lt;</span>xiiUInt8*<span class="keyword">&gt;</span>(pPtr) - uiOffset;</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;      m_allocator.Deallocate(pMemory);</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    }</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordtype">size_t</span> AllocatedSize(<span class="keyword">const</span> <span class="keywordtype">void</span>* ptr)</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordtype">size_t</span> AllocatedSize(<span class="keyword">const</span> <span class="keywordtype">void</span>* pPtr)</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    {</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;      <span class="keyword">const</span> xiiUInt32 uiMetadata = GetMetadata(ptr);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;      <span class="keyword">const</span> xiiUInt32 uiMetadata = GetMetadata(pPtr);</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;      <span class="keyword">const</span> xiiUInt32 uiOffset   = UnpackOffset(uiMetadata);</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;      <span class="keyword">const</span> xiiUInt32 uiAlign    = UnpackAlignment(uiMetadata);</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;      <span class="keyword">const</span> xiiUInt32 uiPadding  = uiAlign - 1 + MetadataSize;</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;      <span class="keyword">const</span> xiiUInt8* pMemory = <span class="keyword">static_cast&lt;</span><span class="keyword">const </span>xiiUInt8*<span class="keyword">&gt;</span>(ptr) - uiOffset;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;      <span class="keyword">const</span> xiiUInt8* pMemory = <span class="keyword">static_cast&lt;</span><span class="keyword">const </span>xiiUInt8*<span class="keyword">&gt;</span>(pPtr) - uiOffset;</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;      <span class="keywordflow">return</span> m_allocator.AllocatedSize(pMemory) - uiPadding;</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    }</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordtype">size_t</span> UsedMemorySize(<span class="keyword">const</span> <span class="keywordtype">void</span>* ptr)</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordtype">size_t</span> UsedMemorySize(<span class="keyword">const</span> <span class="keywordtype">void</span>* pPtr)</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    {</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;      <span class="keyword">const</span> xiiUInt32 uiOffset = UnpackOffset(GetMetadata(ptr));</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;      <span class="keyword">const</span> xiiUInt8* pMemory  = <span class="keyword">static_cast&lt;</span><span class="keyword">const </span>xiiUInt8*<span class="keyword">&gt;</span>(ptr) - uiOffset;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;      <span class="keyword">const</span> xiiUInt32 uiOffset = UnpackOffset(GetMetadata(pPtr));</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;      <span class="keyword">const</span> xiiUInt8* pMemory  = <span class="keyword">static_cast&lt;</span><span class="keyword">const </span>xiiUInt8*<span class="keyword">&gt;</span>(pPtr) - uiOffset;</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;      <span class="keywordflow">return</span> m_allocator.UsedMemorySize(pMemory);</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    }</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
@@ -165,7 +165,7 @@ $(document).ready(function(){initNavTree('d9/dd2/_aligned_allocation_8h_source.h
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="comment">// Store offset between pMemory and pAlignedMemory in the lower 24 bit of meta-data.</span></div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="comment">// The upper 8 bit are used to store the Log2 of the alignment.</span></div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    XII_ALWAYS_INLINE xiiUInt32 PackMetadata(xiiUInt32 uiOffset, xiiUInt32 uiAlignment) { <span class="keywordflow">return</span> uiOffset | (<a class="code" href="../../d1/d37/namespacexii_math.htm#a1404263aa65f851c78f7e024ad62bd0b">xiiMath::Log2i</a>(uiAlignment) &lt;&lt; 24); }</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    XII_ALWAYS_INLINE xiiUInt32 PackMetadata(xiiUInt32 uiOffset, xiiUInt32 uiAlignment) { <span class="keywordflow">return</span> uiOffset | (<a class="code" href="../../d1/d37/namespacexii_math.htm#aae654100da810abeac0d11e755a66d15">xiiMath::Log2i</a>(uiAlignment) &lt;&lt; 24); }</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    XII_ALWAYS_INLINE xiiUInt32 UnpackOffset(xiiUInt32 uiMetadata) { <span class="keywordflow">return</span> uiMetadata &amp; 0x00FFFFFF; }</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
@@ -178,14 +178,14 @@ $(document).ready(function(){initNavTree('d9/dd2/_aligned_allocation_8h_source.h
 </div><!-- doc-content -->
 <div class="ttc" id="aclassxii_memory_utils_htm_ab25d38b037822ed8c510f8756feaf7e7"><div class="ttname"><a href="../../d8/d9d/classxii_memory_utils.htm#ab25d38b037822ed8c510f8756feaf7e7">xiiMemoryUtils::AddByteOffset</a></div><div class="ttdeci">static T * AddByteOffset(T *pPtr, ptrdiff_t iOffset)</div><div class="ttdoc">Returns the address stored in ptr plus the given byte offset iOffset, cast to type T.</div></div>
 <div class="ttc" id="aclassxii_memory_policies_1_1xii_aligned_allocation_htm"><div class="ttname"><a href="../../d6/d67/classxii_memory_policies_1_1xii_aligned_allocation.htm">xiiMemoryPolicies::xiiAlignedAllocation</a></div><div class="ttdoc">Allocation policy to support custom alignment per allocation.</div><div class="ttdef"><b>Definition:</b> AlignedAllocation.h:11</div></div>
-<div class="ttc" id="anamespacexii_math_htm_a1404263aa65f851c78f7e024ad62bd0b"><div class="ttname"><a href="../../d1/d37/namespacexii_math.htm#a1404263aa65f851c78f7e024ad62bd0b">xiiMath::Log2i</a></div><div class="ttdeci">XII_ALWAYS_INLINE xiiUInt32 Log2i(xiiUInt32 val)</div><div class="ttdoc">Returns the integral logarithm to the base 2, that comes closest to the given integer.</div><div class="ttdef"><b>Definition:</b> MathInt32_inl.h:41</div></div>
-<div class="ttc" id="aclassxii_allocator_base_htm"><div class="ttname"><a href="../../d5/d66/classxii_allocator_base.htm">xiiAllocatorBase</a></div><div class="ttdoc">Base class for all memory allocators.</div><div class="ttdef"><b>Definition:</b> AllocatorBase.h:22</div></div>
+<div class="ttc" id="aclassxii_allocator_base_htm"><div class="ttname"><a href="../../d5/d66/classxii_allocator_base.htm">xiiAllocatorBase</a></div><div class="ttdoc">Base class for all memory allocators.</div><div class="ttdef"><b>Definition:</b> AllocatorBase.h:21</div></div>
+<div class="ttc" id="anamespacexii_math_htm_aae654100da810abeac0d11e755a66d15"><div class="ttname"><a href="../../d1/d37/namespacexii_math.htm#aae654100da810abeac0d11e755a66d15">xiiMath::Log2i</a></div><div class="ttdeci">XII_ALWAYS_INLINE xiiUInt32 Log2i(xiiUInt32 uiVal)</div><div class="ttdoc">Returns the integral logarithm to the base 2, that comes closest to the given integer.</div><div class="ttdef"><b>Definition:</b> MathInt32_inl.h:41</div></div>
 <div class="ttc" id="aclassxii_memory_utils_htm_a29c4bbca4faffdf508bd5a24bf52d563"><div class="ttname"><a href="../../d8/d9d/classxii_memory_utils.htm#a29c4bbca4faffdf508bd5a24bf52d563">xiiMemoryUtils::AlignBackwards</a></div><div class="ttdeci">static T * AlignBackwards(T *pPtr, size_t uiAlignment)</div><div class="ttdoc">Aligns the pointer ptr by moving its address backwards to the previous multiple of uiAlignment.</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.htm">home</a></li><li class="navelem"><a class="el" href="../../dir_1036706e55c22cab35bc1c58ee689f1d.htm">runner</a></li><li class="navelem"><a class="el" href="../../dir_629f8151d55d307162ff2d619fb1783d.htm">work</a></li><li class="navelem"><a class="el" href="../../dir_1ddc44fe1263a8c7935fa6130b7d9499.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_2c1b6808f12952f4c36e05ba7068379a.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_b5a1c4ecfca018ad24b729e213296d41.htm">Source</a></li><li class="navelem"><a class="el" href="../../dir_e321052006a51284e67389ab20037e7c.htm">Engine</a></li><li class="navelem"><a class="el" href="../../dir_be0c42c58b36f42c54ec54024ed4f6af.htm">Foundation</a></li><li class="navelem"><a class="el" href="../../dir_f4c376a517d02920cdbc41b4ea2fc5f5.htm">Memory</a></li><li class="navelem"><a class="el" href="../../dir_2a5e9a7a2f5f78531e2c7d0b6f1ae434.htm">Policies</a></li><li class="navelem"><b>AlignedAllocation.h</b></li>
-    <li class="footer">Generated on Mon Apr 17 2023 20:10:30 for XIIEngine by
+    <li class="footer">Generated on Fri Jun 16 2023 14:12:43 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

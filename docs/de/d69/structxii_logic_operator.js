@@ -1,6 +1,6 @@
 var structxii_logic_operator =
 [
-    [ "StorageType", "de/d69/structxii_logic_operator.htm#aed23ab4416e4b92a5f856e9588e52351", null ],
+    [ "StorageType", "de/d69/structxii_logic_operator.htm#a5ea5eef1b4b9feacfb5b8b25b706e5be", null ],
     [ "Enum", "de/d69/structxii_logic_operator.htm#a76cef3db4bdd6d8f5c4c7d91fea0c322", [
       [ "Equal", "de/d69/structxii_logic_operator.htm#a76cef3db4bdd6d8f5c4c7d91fea0c322a3eabfdf92fd3d2d0253682e63b602f85", null ],
       [ "Unequal", "de/d69/structxii_logic_operator.htm#a76cef3db4bdd6d8f5c4c7d91fea0c322acc434ce26f8b360568afd63f6bfcf533", null ],

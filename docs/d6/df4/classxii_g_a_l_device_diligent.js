@@ -1,5 +1,7 @@
 var classxii_g_a_l_device_diligent =
 [
+    [ "TempResourceType", "d9/d8e/structxii_g_a_l_device_diligent_1_1_temp_resource_type.htm", "d9/d8e/structxii_g_a_l_device_diligent_1_1_temp_resource_type" ],
+    [ "UsedTempResource", "d5/dd9/structxii_g_a_l_device_diligent_1_1_used_temp_resource.htm", "d5/dd9/structxii_g_a_l_device_diligent_1_1_used_temp_resource" ],
     [ "~xiiGALDeviceDiligent", "d6/df4/classxii_g_a_l_device_diligent.htm#a3a5b69ff830432e3610e2be2bb47753e", null ],
     [ "BeginFramePlatform", "d6/df4/classxii_g_a_l_device_diligent.htm#a23075142b256ee39c6fec32f535ba9d3", null ],
     [ "BeginPassPlatform", "d6/df4/classxii_g_a_l_device_diligent.htm#ae6309a5c781c74600449fd8893c52927", null ],
@@ -33,7 +35,9 @@ var classxii_g_a_l_device_diligent =
     [ "EndPipelinePlatform", "d6/df4/classxii_g_a_l_device_diligent.htm#ab3e6047c441f15e58e3e7ba37a33bf23", null ],
     [ "FillCapabilitiesPlatform", "d6/df4/classxii_g_a_l_device_diligent.htm#a00ad2a2ebab44bcf14891e02a1550c50", null ],
     [ "FillFormatLookupTable", "d6/df4/classxii_g_a_l_device_diligent.htm#a6b8d37a3fcfd81c13758ab241d14d45e", null ],
-    [ "FlushDeadObjects", "d6/df4/classxii_g_a_l_device_diligent.htm#a4adfb426bd3e08063f155dd9512e7c3c", null ],
+    [ "FindTempBuffer", "d6/df4/classxii_g_a_l_device_diligent.htm#a6dc284a8b8e81f185242542e45260bd6", null ],
+    [ "FindTempTexture", "d6/df4/classxii_g_a_l_device_diligent.htm#a2b2e6440f22bd5c205065ea2824fc75d", null ],
+    [ "FreeTempResources", "d6/df4/classxii_g_a_l_device_diligent.htm#a779d44edbcef1d5207673d3d371875ec", null ],
     [ "GetDevice", "d6/df4/classxii_g_a_l_device_diligent.htm#a6f7f37849089362c4ce60febc523c226", null ],
     [ "GetDeviceType", "d6/df4/classxii_g_a_l_device_diligent.htm#a196a2983107ac3122a1df99d570af69b", null ],
     [ "GetFactory", "d6/df4/classxii_g_a_l_device_diligent.htm#a01dbc8c41a1e80360d130814bab5407f", null ],
@@ -58,14 +62,16 @@ var classxii_g_a_l_device_diligent =
     [ "m_DeviceType", "d6/df4/classxii_g_a_l_device_diligent.htm#aa372babbc8fedc2928c52b38109d6c6f", null ],
     [ "m_DisplayModes", "d6/df4/classxii_g_a_l_device_diligent.htm#a9fab1b94e03bcedb7681f468e9f18481", null ],
     [ "m_FormatLookupTable", "d6/df4/classxii_g_a_l_device_diligent.htm#a5a8ab8bf60e9ae54376782ff09ce38d5", null ],
+    [ "m_FreeTempResources", "d6/df4/classxii_g_a_l_device_diligent.htm#aecfc732025813f6008ae21f5e1c373cc", null ],
     [ "m_iValidationLevel", "d6/df4/classxii_g_a_l_device_diligent.htm#af57d21c508509fd9105db081e11b8474", null ],
     [ "m_pDefaultPass", "d6/df4/classxii_g_a_l_device_diligent.htm#a4b475ac70ea7cf668906970697bef79b", null ],
-    [ "m_pDevice", "d6/df4/classxii_g_a_l_device_diligent.htm#aa3affb60b9e43560a6f4a1ca96a5c45b", null ],
-    [ "m_pDeviceContexts", "d6/df4/classxii_g_a_l_device_diligent.htm#ac92dfce1c21defa7ed389826058eb9ad", null ],
-    [ "m_pEngineFactory", "d6/df4/classxii_g_a_l_device_diligent.htm#a2a71803cad906251d576e69c81715c69", null ],
-    [ "m_pMemoryAllocator", "d6/df4/classxii_g_a_l_device_diligent.htm#a0b4aa096ae38f48f1d433aea6f95f4ce", null ],
+    [ "m_pDevice", "d6/df4/classxii_g_a_l_device_diligent.htm#af9f900a4f36d86bf4396fecb474a2010", null ],
+    [ "m_pDeviceContexts", "d6/df4/classxii_g_a_l_device_diligent.htm#aa87a12985ed0ceeb97cff39f2f9ecdfc", null ],
+    [ "m_pEngineFactory", "d6/df4/classxii_g_a_l_device_diligent.htm#a76431398c99c68f95f80e675eb6f33c2", null ],
+    [ "m_pPipelineBarrier", "d6/df4/classxii_g_a_l_device_diligent.htm#a66defc012456a18f4f2b678097ed7f53", null ],
     [ "m_sAdapterDetailsString", "d6/df4/classxii_g_a_l_device_diligent.htm#a3299d8d82167719e2365d4c88641e267", null ],
     [ "m_SyncTimeDiff", "d6/df4/classxii_g_a_l_device_diligent.htm#abe2d7726a532cc56978cf3a601a1eb80", null ],
     [ "m_uiAdapterId", "d6/df4/classxii_g_a_l_device_diligent.htm#a6fb73d56dcfa324b07ed67eeda07b750", null ],
-    [ "m_uiNumImmediateContexts", "d6/df4/classxii_g_a_l_device_diligent.htm#a65f5d437e14141e38b3ecacefed4f9dc", null ]
+    [ "m_uiNumImmediateContexts", "d6/df4/classxii_g_a_l_device_diligent.htm#a65f5d437e14141e38b3ecacefed4f9dc", null ],
+    [ "m_UsedTempResources", "d6/df4/classxii_g_a_l_device_diligent.htm#a47ab8c4b10b221eaf41c1e33e8a1edff", null ]
 ];

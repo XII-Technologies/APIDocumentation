@@ -19,7 +19,7 @@ var classxii_simd_b_sphere =
     [ "Overlaps", "d6/da2/classxii_simd_b_sphere.htm#a1216f535ea062f3e336fa09da554f7e1", null ],
     [ "SetFromPoints", "d6/da2/classxii_simd_b_sphere.htm#a3c7067a2915d8209c9188db7809c68ca", null ],
     [ "SetInvalid", "d6/da2/classxii_simd_b_sphere.htm#abb71b78a69ac1e7161df51d02eda926e", null ],
-    [ "Transform", "d6/da2/classxii_simd_b_sphere.htm#a96c84d3342622e51ccd2860162b8cb99", null ],
+    [ "Transform", "d6/da2/classxii_simd_b_sphere.htm#aa9ba7b49625fc2b9600c2e340e3ccd3d", null ],
     [ "Transform", "d6/da2/classxii_simd_b_sphere.htm#a467f7388ec7b3a34143cae1e66d9f860", null ],
     [ "XII_DECLARE_POD_TYPE", "d6/da2/classxii_simd_b_sphere.htm#ade010fcd562ce33be04e81e83933d20a", null ],
     [ "m_CenterAndRadius", "d6/da2/classxii_simd_b_sphere.htm#a59df5af2e89e30a72e4a10ca0f57a0c5", null ]

@@ -2,9 +2,9 @@ var classxii_rotor_component =
 [
     [ "xiiRotorComponent", "d3/d6e/classxii_rotor_component.htm#af1e18f1f5afe9994046a5ff86f13a0d8", null ],
     [ "~xiiRotorComponent", "d3/d6e/classxii_rotor_component.htm#a84331dc0cb696ee2b2c5f6a92edb6483", null ],
-    [ "DeserializeComponent", "d3/d6e/classxii_rotor_component.htm#a1d72ba131b7049c030944bbde8e7a506", null ],
+    [ "DeserializeComponent", "d3/d6e/classxii_rotor_component.htm#a166438de781ecf370c76e11044ffb2f5", null ],
     [ "OnSimulationStarted", "d3/d6e/classxii_rotor_component.htm#a100ef330860dc676d5199c44b1cef1c8", null ],
-    [ "SerializeComponent", "d3/d6e/classxii_rotor_component.htm#a45c9606d1eb6fa1ec8a151756029d820", null ],
+    [ "SerializeComponent", "d3/d6e/classxii_rotor_component.htm#a40771dec1e77fee843baf99d600ca89d", null ],
     [ "Update", "d3/d6e/classxii_rotor_component.htm#ae28a991858f35f04aac2f92245bdc674", null ],
     [ "m_Axis", "d3/d6e/classxii_rotor_component.htm#a3e30de5c28ee8d9a326e942e1436275f", null ],
     [ "m_AxisDeviation", "d3/d6e/classxii_rotor_component.htm#abad66c709ecaf1273413375fd928eb95", null ],

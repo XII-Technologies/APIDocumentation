@@ -1,7 +1,7 @@
 var classxii_tex_conv =
 [
     [ "KeyEnumValuePair", "d8/d15/structxii_tex_conv_1_1_key_enum_value_pair.htm", "d8/d15/structxii_tex_conv_1_1_key_enum_value_pair" ],
-    [ "SUPER", "d5/ddb/classxii_tex_conv.htm#a2a8df005d1dbb284d05af7bb8e273350", null ],
+    [ "SUPER", "d5/ddb/classxii_tex_conv.htm#ab7121d912ac0835816c3c494bd5b7581", null ],
     [ "xiiTexConv", "d5/ddb/classxii_tex_conv.htm#ad882bfe761049de3cf30057566003087", null ],
     [ "AfterCoreSystemsStartup", "d5/ddb/classxii_tex_conv.htm#a7a2eff265739d7a41e43c75d7ce41c7d", null ],
     [ "BeforeCoreSystemsShutdown", "d5/ddb/classxii_tex_conv.htm#a6f69e9f9ff303d4c94a73afdf7661d0f", null ],
@@ -10,12 +10,12 @@ var classxii_tex_conv =
     [ "IsTexFormat", "d5/ddb/classxii_tex_conv.htm#a80dd16082607f9f3fb4203b517993379", null ],
     [ "ParseAssetHeader", "d5/ddb/classxii_tex_conv.htm#ab143bdd5e2c02d3301b46015d5577ad9", null ],
     [ "ParseBumpMapFilter", "d5/ddb/classxii_tex_conv.htm#aa881d9fdee524defc928cd3c4215d07e", null ],
-    [ "ParseChannelMappingConfig", "d5/ddb/classxii_tex_conv.htm#af924063c9e4e616b6f9c07ab15ae889b", null ],
+    [ "ParseChannelMappingConfig", "d5/ddb/classxii_tex_conv.htm#a3bacd78a5bb10ff72aa5567b596001e6", null ],
     [ "ParseChannelMappings", "d5/ddb/classxii_tex_conv.htm#a7469508eb6f55a4dfe9cf55fcf2921ae", null ],
     [ "ParseChannelSliceMapping", "d5/ddb/classxii_tex_conv.htm#aba474b3018ed9c23a9962ec3435c5406", null ],
     [ "ParseCommandLine", "d5/ddb/classxii_tex_conv.htm#a9b0cfb6e724577857aa3f131a0c4e43f", null ],
     [ "ParseCompressionMode", "d5/ddb/classxii_tex_conv.htm#a76865d29105e6f47eddc32a37769cbcb", null ],
-    [ "ParseFile", "d5/ddb/classxii_tex_conv.htm#a7f93f95632d2fc1784efc34fbad23711", null ],
+    [ "ParseFile", "d5/ddb/classxii_tex_conv.htm#a6335f41c63fe8f031b58f3e3fdb5b5ea", null ],
     [ "ParseFilterModes", "d5/ddb/classxii_tex_conv.htm#ade50f39b1071e376f0f6113c39ef62dc", null ],
     [ "ParseInputFiles", "d5/ddb/classxii_tex_conv.htm#a6c964cb4090c2107a759505957e4abe5", null ],
     [ "ParseMipmapMode", "d5/ddb/classxii_tex_conv.htm#abf8f3d812dfbfca252f4a72b859e31d8", null ],
@@ -23,14 +23,14 @@ var classxii_tex_conv =
     [ "ParseOutputFiles", "d5/ddb/classxii_tex_conv.htm#a99fef4a101b971f15f079e939eb1253b", null ],
     [ "ParseOutputType", "d5/ddb/classxii_tex_conv.htm#ab812baaf419d5b32fbeede08074d2a89", null ],
     [ "ParseResolutionModifiers", "d5/ddb/classxii_tex_conv.htm#ad3ae31f3b69c6f18924d680a1614e700", null ],
-    [ "ParseStringOption", "d5/ddb/classxii_tex_conv.htm#ab6267deac89cfecdca61ec3c006e3f31", null ],
+    [ "ParseStringOption", "d5/ddb/classxii_tex_conv.htm#a823deb9d82f3e914bee0091e979ece07", null ],
     [ "ParseTargetPlatform", "d5/ddb/classxii_tex_conv.htm#a992f394830ccda697931b79d420f129a", null ],
-    [ "ParseUIntOption", "d5/ddb/classxii_tex_conv.htm#a7bbdde0a3cacae38e94a789d9188d60a", null ],
+    [ "ParseUIntOption", "d5/ddb/classxii_tex_conv.htm#af470a33db916b04f08e2fba4b370c856", null ],
     [ "ParseUsage", "d5/ddb/classxii_tex_conv.htm#adbffc0b9e650c8960e18ab7694cce797", null ],
     [ "ParseWrapModes", "d5/ddb/classxii_tex_conv.htm#a1abccc75d3d6c0bc65f15eadbec59602", null ],
     [ "PrintOptionValues", "d5/ddb/classxii_tex_conv.htm#acc9b42ff2e454e19defc3f37dc26bc76", null ],
     [ "PrintOptionValuesHelp", "d5/ddb/classxii_tex_conv.htm#aac7ef239e8f432852c79b517c3564b4c", null ],
     [ "Run", "d5/ddb/classxii_tex_conv.htm#aa1fdff9c0b7910c50d32664df164ba6b", null ],
     [ "WriteOutputFile", "d5/ddb/classxii_tex_conv.htm#a49f7aad132822bf6c522997b738888e7", null ],
-    [ "WriteTexFile", "d5/ddb/classxii_tex_conv.htm#a5430041d8889fb52438bd53b0f87e741", null ]
+    [ "WriteTexFile", "d5/ddb/classxii_tex_conv.htm#aedaed5e1fc46bed4ae46a5e8420d1ac1", null ]
 ];

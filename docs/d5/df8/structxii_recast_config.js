@@ -1,7 +1,7 @@
 var structxii_recast_config =
 [
-    [ "Deserialize", "d5/df8/structxii_recast_config.htm#a44a9e63df2e0878a5174b6fab844aa61", null ],
-    [ "Serialize", "d5/df8/structxii_recast_config.htm#a24db2879ae672b27dade397b4c2097e5", null ],
+    [ "Deserialize", "d5/df8/structxii_recast_config.htm#a61c84f83654068e5fc15b421b3243be2", null ],
+    [ "Serialize", "d5/df8/structxii_recast_config.htm#a5d8cd39fb72eb73ab1de790dd67743d7", null ],
     [ "m_fAgentClimbHeight", "d5/df8/structxii_recast_config.htm#a7e7e18c0f0054df1884bdcf99d32918a", null ],
     [ "m_fAgentHeight", "d5/df8/structxii_recast_config.htm#aef2d5c6de20db48acdddf94769281b0f", null ],
     [ "m_fAgentRadius", "d5/df8/structxii_recast_config.htm#a1deef082eb56b9d1a4fd50c282db5aa0", null ],

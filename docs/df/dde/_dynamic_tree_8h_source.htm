@@ -126,10 +126,10 @@ $(document).ready(function(){initNavTree('df/dde/_dynamic_tree_8h_source.htm','.
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  };</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;};</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">typedef</span> <a class="code" href="../../d6/df7/classxii_map.htm">xiiMap&lt;xiiDynamicTree::xiiMultiMapKey, xiiDynamicTree::xiiObjectData&gt;::Iterator</a>      xiiDynamicTreeObject;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keyword">typedef</span> <a class="code" href="../../d6/df7/classxii_map.htm">xiiMap&lt;xiiDynamicTree::xiiMultiMapKey, xiiDynamicTree::xiiObjectData&gt;::ConstIterator</a> xiiDynamicTreeObjectConst;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">using</span> xiiDynamicTreeObject      = <a class="code" href="../../d6/df7/classxii_map.htm">xiiMap&lt;xiiDynamicTree::xiiMultiMapKey, xiiDynamicTree::xiiObjectData&gt;::Iterator</a>;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keyword">using</span> xiiDynamicTreeObjectConst = <a class="code" href="../../d6/df7/classxii_map.htm">xiiMap&lt;xiiDynamicTree::xiiMultiMapKey, xiiDynamicTree::xiiObjectData&gt;::ConstIterator</a>;</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keyword">typedef</span> bool (*XII_VISIBLE_OBJ_CALLBACK)(<span class="keywordtype">void</span>* pPassThrough, xiiDynamicTreeObjectConst Object);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keyword">using</span> XII_VISIBLE_OBJ_CALLBACK = bool (*)(<span class="keywordtype">void</span>*, xiiDynamicTreeObjectConst);</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keyword">class </span><a class="code" href="../../d5/d96/classxii_dynamic_octree.htm">xiiDynamicOctree</a>;</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keyword">class </span><a class="code" href="../../d6/db3/classxii_dynamic_quadtree.htm">xiiDynamicQuadtree</a>;</div>
@@ -145,7 +145,7 @@ $(document).ready(function(){initNavTree('df/dde/_dynamic_tree_8h_source.htm','.
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.htm">home</a></li><li class="navelem"><a class="el" href="../../dir_1036706e55c22cab35bc1c58ee689f1d.htm">runner</a></li><li class="navelem"><a class="el" href="../../dir_629f8151d55d307162ff2d619fb1783d.htm">work</a></li><li class="navelem"><a class="el" href="../../dir_1ddc44fe1263a8c7935fa6130b7d9499.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_2c1b6808f12952f4c36e05ba7068379a.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_b5a1c4ecfca018ad24b729e213296d41.htm">Source</a></li><li class="navelem"><a class="el" href="../../dir_e321052006a51284e67389ab20037e7c.htm">Engine</a></li><li class="navelem"><a class="el" href="../../dir_9ee72279ab281f6aaaae1c60885125b9.htm">Utilities</a></li><li class="navelem"><a class="el" href="../../dir_d5cf2893ed31c2d648feac176a3c2f32.htm">DataStructures</a></li><li class="navelem"><a class="el" href="../../dir_ef92af153c6087d12005555083d3b583.htm">Implementation</a></li><li class="navelem"><b>DynamicTree.h</b></li>
-    <li class="footer">Generated on Mon Apr 17 2023 20:10:34 for XIIEngine by
+    <li class="footer">Generated on Fri Jun 16 2023 14:12:48 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

@@ -7,7 +7,7 @@ var classxii_slider_action =
     [ "IsVisible", "d0/df6/classxii_slider_action.htm#a0600708ef197882f477a451c0e398432", null ],
     [ "SetEnabled", "d0/df6/classxii_slider_action.htm#a349f5cdb2f02eed9e0839aa4fb2e3ab3", null ],
     [ "SetRange", "d0/df6/classxii_slider_action.htm#a0887c89a039ab14a4735176f7f7f665c", null ],
-    [ "SetValue", "d0/df6/classxii_slider_action.htm#adebe25e6ae73da461a2a2314d4b0a2a0", null ],
+    [ "SetValue", "d0/df6/classxii_slider_action.htm#a29808822123fd977f0233742b1c107e9", null ],
     [ "SetVisible", "d0/df6/classxii_slider_action.htm#aa38ba3409107b69f991570c8bc7bb770", null ],
     [ "m_bEnabled", "d0/df6/classxii_slider_action.htm#a2f126da5c60f443318eed579ddb02e9d", null ],
     [ "m_bVisible", "d0/df6/classxii_slider_action.htm#aae65bfd6150d99473c4bfae9918ee36e", null ],

@@ -1,8 +1,8 @@
 var structxii_tex_format =
 [
-    [ "ReadHeader", "d3/dde/structxii_tex_format.htm#a77447ecf26cda43fb0907a7624b586aa", null ],
-    [ "WriteRenderTargetHeader", "d3/dde/structxii_tex_format.htm#ade4baefdcf0d012e1d17b4eb613f9c4d", null ],
-    [ "WriteTextureHeader", "d3/dde/structxii_tex_format.htm#a9d5c7ce4a6912bab22f2dc57f5952537", null ],
+    [ "ReadHeader", "d3/dde/structxii_tex_format.htm#a47002750a9cf875bb470e2301ce6aa67", null ],
+    [ "WriteRenderTargetHeader", "d3/dde/structxii_tex_format.htm#a3f0f5bb9921c667a3884fb58c1146ead", null ],
+    [ "WriteTextureHeader", "d3/dde/structxii_tex_format.htm#ab58f756794fc053c5a8cb03b915adb85", null ],
     [ "m_AddressModeU", "d3/dde/structxii_tex_format.htm#afc4faf9d4621f1659028c6731f4bed4e", null ],
     [ "m_AddressModeV", "d3/dde/structxii_tex_format.htm#a290faf928348485a50bfad0001093e23", null ],
     [ "m_AddressModeW", "d3/dde/structxii_tex_format.htm#a0e0e0e37912a3e3c1ad15901e17beaf1", null ],

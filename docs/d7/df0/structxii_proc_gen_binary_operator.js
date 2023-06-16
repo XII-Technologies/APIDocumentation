@@ -1,6 +1,6 @@
 var structxii_proc_gen_binary_operator =
 [
-    [ "StorageType", "d7/df0/structxii_proc_gen_binary_operator.htm#a20843f0eb32416fe0379abe9f0856d78", null ],
+    [ "StorageType", "d7/df0/structxii_proc_gen_binary_operator.htm#a8716301f37d4823acc71139f098f0636", null ],
     [ "Enum", "d7/df0/structxii_proc_gen_binary_operator.htm#a93df339550fd2dbdeb1b54e3a6ff9b50", [
       [ "Add", "d7/df0/structxii_proc_gen_binary_operator.htm#a93df339550fd2dbdeb1b54e3a6ff9b50a56dc7d9ff6509cfd58f6889180d74315", null ],
       [ "Subtract", "d7/df0/structxii_proc_gen_binary_operator.htm#a93df339550fd2dbdeb1b54e3a6ff9b50a6093975c8297ca346df082c7f4c1f924", null ],

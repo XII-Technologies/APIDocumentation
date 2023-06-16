@@ -1,6 +1,6 @@
 var structxii_proc_vertex_color_channel_mapping =
 [
-    [ "StorageType", "db/d28/structxii_proc_vertex_color_channel_mapping.htm#ab29d887d40eaa70438f27a6de2e52984", null ],
+    [ "StorageType", "db/d28/structxii_proc_vertex_color_channel_mapping.htm#a4e2b95771791ad6fdf8c3cc538b1c4ab", null ],
     [ "Enum", "db/d28/structxii_proc_vertex_color_channel_mapping.htm#a8f8fea4980c28e13bf23b2c166faa118", [
       [ "R", "db/d28/structxii_proc_vertex_color_channel_mapping.htm#a8f8fea4980c28e13bf23b2c166faa118a1a71c48dfc0475d30da8f08ae29e7c0e", null ],
       [ "G", "db/d28/structxii_proc_vertex_color_channel_mapping.htm#a8f8fea4980c28e13bf23b2c166faa118a6ed1fc871b22b562b55c585ad9dd0d35", null ],

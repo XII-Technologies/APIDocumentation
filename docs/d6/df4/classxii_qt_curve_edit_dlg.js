@@ -1,6 +1,6 @@
 var classxii_qt_curve_edit_dlg =
 [
-    [ "xiiQtCurveEditDlg", "d6/df4/classxii_qt_curve_edit_dlg.htm#adcab712162b2038594e52c0f8e46c7ab", null ],
+    [ "xiiQtCurveEditDlg", "d6/df4/classxii_qt_curve_edit_dlg.htm#a9fc3f85ee6d2c0078e4b3613925b1184", null ],
     [ "~xiiQtCurveEditDlg", "d6/df4/classxii_qt_curve_edit_dlg.htm#a07f4666fec63703d322dbfe24a104a85", null ],
     [ "accept", "d6/df4/classxii_qt_curve_edit_dlg.htm#ad7c1d6eb93497b7e4e6e0fd4e2de0b91", null ],
     [ "cancel", "d6/df4/classxii_qt_curve_edit_dlg.htm#ad59567c0b3c54d372d3b69e443849798", null ],

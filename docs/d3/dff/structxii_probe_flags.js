@@ -1,7 +1,7 @@
 var structxii_probe_flags =
 [
     [ "Bits", "dc/d8e/structxii_probe_flags_1_1_bits.htm", "dc/d8e/structxii_probe_flags_1_1_bits" ],
-    [ "StorageType", "d3/dff/structxii_probe_flags.htm#a444a28b5a899e8f0e048a7805ecf63d5", null ],
+    [ "StorageType", "d3/dff/structxii_probe_flags.htm#a8cef5cf000a502e704c496fcf067d504", null ],
     [ "Enum", "d3/dff/structxii_probe_flags.htm#aa7eddd721881673878ee117c971a579e", [
       [ "SkyLight", "d3/dff/structxii_probe_flags.htm#aa7eddd721881673878ee117c971a579eaff1d2f2b94640124e22bd4c215e9efc4", null ],
       [ "HasCustomCubeMap", "d3/dff/structxii_probe_flags.htm#aa7eddd721881673878ee117c971a579eaa3306b438fc63afb47f3ae1cf6e27675", null ],

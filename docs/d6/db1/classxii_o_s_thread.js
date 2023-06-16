@@ -1,6 +1,6 @@
 var classxii_o_s_thread =
 [
-    [ "xiiOSThread", "d6/db1/classxii_o_s_thread.htm#ab23b334379eea554769f57b108efff95", null ],
+    [ "xiiOSThread", "d6/db1/classxii_o_s_thread.htm#a419f906612d1f42a4185b63654fb4ae8", null ],
     [ "~xiiOSThread", "d6/db1/classxii_o_s_thread.htm#af55ef206c959b2db5fc5bace02ed2268", null ],
     [ "GetThreadID", "d6/db1/classxii_o_s_thread.htm#a548685b4d52874a16140b5fcc75c50a4", null ],
     [ "Join", "d6/db1/classxii_o_s_thread.htm#a2ee60bbb38a34f6ed88b3842defe9b3f", null ],

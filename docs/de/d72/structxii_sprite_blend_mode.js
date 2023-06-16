@@ -1,6 +1,6 @@
 var structxii_sprite_blend_mode =
 [
-    [ "StorageType", "de/d72/structxii_sprite_blend_mode.htm#ab7768735ee47d61c8ac8363c1b829ef8", null ],
+    [ "StorageType", "de/d72/structxii_sprite_blend_mode.htm#a3ad955909b3369df4dbb599d57bcf7eb", null ],
     [ "Enum", "de/d72/structxii_sprite_blend_mode.htm#ad2fd29e9ea7a30b35c546f613f8ef496", [
       [ "Masked", "de/d72/structxii_sprite_blend_mode.htm#ad2fd29e9ea7a30b35c546f613f8ef496a81222bd7d9fbb07977ceb82d8cc1eeb8", null ],
       [ "Transparent", "de/d72/structxii_sprite_blend_mode.htm#ad2fd29e9ea7a30b35c546f613f8ef496aa5067c18a2951b65be14a5d6cc98a1fc", null ],

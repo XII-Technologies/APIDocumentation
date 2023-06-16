@@ -4,7 +4,7 @@ var structxii_typeless_bitflags =
     [ "xiiTypelessBitflags", "da/df9/structxii_typeless_bitflags.htm#ac61235b3781fc75d3f914658cf1b3895", null ],
     [ "xiiTypelessBitflags", "da/df9/structxii_typeless_bitflags.htm#a98c156a5eb4a57499a5b3d2bb3255a9e", null ],
     [ "Add", "da/df9/structxii_typeless_bitflags.htm#aa6e886f4d290a296279edcf7f978aa4f", null ],
-    [ "AddOrRemove", "da/df9/structxii_typeless_bitflags.htm#a3a5cf06fb14bec469c2e08c03d787da9", null ],
+    [ "AddOrRemove", "da/df9/structxii_typeless_bitflags.htm#ae4ac2502b0c5daa27f801e8058e35289", null ],
     [ "AreAllSet", "da/df9/structxii_typeless_bitflags.htm#ae38d3d9dd7fd11bc3b945e6d0924add7", null ],
     [ "AreNoneSet", "da/df9/structxii_typeless_bitflags.htm#aee640d29869e67c254d5fd623a61df6b", null ],
     [ "Clear", "da/df9/structxii_typeless_bitflags.htm#a31e81c25770f6aa116b21457b1a5d67b", null ],

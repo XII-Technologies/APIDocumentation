@@ -2,10 +2,10 @@ var classxii_camera_shake_component =
 [
     [ "xiiCameraShakeComponent", "d4/d34/classxii_camera_shake_component.htm#abc13d6c9f468e8518e9725361d44b404", null ],
     [ "~xiiCameraShakeComponent", "d4/d34/classxii_camera_shake_component.htm#afb74f574de09a2c4548e82e39c9b751d", null ],
-    [ "DeserializeComponent", "d4/d34/classxii_camera_shake_component.htm#afd3aa5430da1cd021d58efca7068e4b4", null ],
+    [ "DeserializeComponent", "d4/d34/classxii_camera_shake_component.htm#a86e9efa80f84abcb21b7844725e57494", null ],
     [ "GenerateKeyframe", "d4/d34/classxii_camera_shake_component.htm#ad4e54fe995b67bc0b1a9ced49fc7e7a4", null ],
     [ "GetStrengthAtPosition", "d4/d34/classxii_camera_shake_component.htm#a5c400c02a64d7116faba5d298639d65d", null ],
-    [ "SerializeComponent", "d4/d34/classxii_camera_shake_component.htm#a75c5f072dd01735ba236d1df511470ac", null ],
+    [ "SerializeComponent", "d4/d34/classxii_camera_shake_component.htm#a8befc4ad684ba2319acb2570dfba7354", null ],
     [ "Update", "d4/d34/classxii_camera_shake_component.htm#a2b68c7acb092bff8c87b4fee9e0e0e7c", null ],
     [ "m_fLastStrength", "d4/d34/classxii_camera_shake_component.htm#a420fbdcb8092af60395f7c72bb0c918b", null ],
     [ "m_MaxShake", "d4/d34/classxii_camera_shake_component.htm#a522598ed028747ad9604bac80f2e31a0", null ],

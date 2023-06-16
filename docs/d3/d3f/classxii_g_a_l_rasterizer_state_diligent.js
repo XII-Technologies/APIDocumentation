@@ -7,5 +7,5 @@ var classxii_g_a_l_rasterizer_state_diligent =
     [ "InitPlatform", "d3/d3f/classxii_g_a_l_rasterizer_state_diligent.htm#a718d5384c66d1b22ed388dc033473fe7", null ],
     [ "xiiGALDeviceDiligent", "d3/d3f/classxii_g_a_l_rasterizer_state_diligent.htm#aa4c4e61f06413b5554bad4d3f222b37c", null ],
     [ "xiiMemoryUtils", "d3/d3f/classxii_g_a_l_rasterizer_state_diligent.htm#aefc9ff75d6833fd2f05be48e16436db6", null ],
-    [ "m_RasterizerState", "d3/d3f/classxii_g_a_l_rasterizer_state_diligent.htm#abfe341befed1951c76e0da60b80e35b0", null ]
+    [ "m_RasterizerStateDesc", "d3/d3f/classxii_g_a_l_rasterizer_state_diligent.htm#a4afeb3eb68881cdd52544b00171e8808", null ]
 ];

@@ -1,6 +1,6 @@
 var classxii_archive_reader =
 [
-    [ "ConfigureRawMemoryStreamReader", "de/d00/classxii_archive_reader.htm#a8f20522c4d1648d64cea3c8268c75b15", null ],
+    [ "ConfigureRawMemoryStreamReader", "de/d00/classxii_archive_reader.htm#a2c390e5012a8f859a5be33fd35ef6c15", null ],
     [ "CreateEntryReader", "de/d00/classxii_archive_reader.htm#a00516b4720405ef94590a4a44904ff45", null ],
     [ "ExtractAllFiles", "de/d00/classxii_archive_reader.htm#a3d97bdc021f7472346c82695a0dee32e", null ],
     [ "ExtractFile", "de/d00/classxii_archive_reader.htm#a29407e4d7c6b659067d61538ddd81a79", null ],

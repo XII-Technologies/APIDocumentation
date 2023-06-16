@@ -1,6 +1,6 @@
 var structxii_agent_path_finding_state =
 [
-    [ "StorageType", "d3/dd1/structxii_agent_path_finding_state.htm#a60d2f7b2ae4d1a5f84df1184a1fcf7bc", null ],
+    [ "StorageType", "d3/dd1/structxii_agent_path_finding_state.htm#a0a37c1db2b82bd58bf345c4bd04fca25", null ],
     [ "Enum", "d3/dd1/structxii_agent_path_finding_state.htm#a7f85a437c4d9a2bb40e4a139879de6f3", [
       [ "HasNoTarget", "d3/dd1/structxii_agent_path_finding_state.htm#a7f85a437c4d9a2bb40e4a139879de6f3a1a706b7161b73a4c8018e2e63584fd21", null ],
       [ "HasTargetWaitingForPath", "d3/dd1/structxii_agent_path_finding_state.htm#a7f85a437c4d9a2bb40e4a139879de6f3a3d7906b20cb3dcf0a9408063d4608c0a", null ],

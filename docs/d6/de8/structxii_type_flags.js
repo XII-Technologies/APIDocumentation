@@ -1,7 +1,7 @@
 var structxii_type_flags =
 [
     [ "Bits", "da/dce/structxii_type_flags_1_1_bits.htm", "da/dce/structxii_type_flags_1_1_bits" ],
-    [ "StorageType", "d6/de8/structxii_type_flags.htm#ad95473a7d2ff281e55b6ea0c10a25f93", null ],
+    [ "StorageType", "d6/de8/structxii_type_flags.htm#ad2eae5415d54699286c51e5c5d6c1034", null ],
     [ "Enum", "d6/de8/structxii_type_flags.htm#a91f9df8f69a1a163305414f423ec98c0", [
       [ "StandardType", "d6/de8/structxii_type_flags.htm#a91f9df8f69a1a163305414f423ec98c0a35aa0c3c2bac99db16ff8a2c1232c033", null ],
       [ "IsEnum", "d6/de8/structxii_type_flags.htm#a91f9df8f69a1a163305414f423ec98c0add88157262db9ffc318c25acde3105ba", null ],

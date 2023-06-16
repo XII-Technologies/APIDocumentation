@@ -1,7 +1,7 @@
 var structxii_component_id =
 [
-    [ "StorageType", "d7/d00/structxii_component_id.htm#a35e79ea166d38bd6cec2c29cd9855cd5", null ],
-    [ "xiiComponentId", "d7/d00/structxii_component_id.htm#a14204befa44836ddb527f848502dd0ac", null ],
+    [ "StorageType", "d7/d00/structxii_component_id.htm#a788681140e40cd161272b1a79a947d29", null ],
+    [ "xiiComponentId", "d7/d00/structxii_component_id.htm#af93727881fbcb2d35d6b06e8a3126687", null ],
     [ "XII_DECLARE_ID_TYPE", "d7/d00/structxii_component_id.htm#a47945c9a090eb70f02037cb28344df90", null ],
     [ "m_Data", "d7/d00/structxii_component_id.htm#a72cf5288ca0e8596c34530f5a88f2c18", null ],
     [ "m_Generation", "d7/d00/structxii_component_id.htm#a7dc17c009faea85321e7f66ce027e363", null ],

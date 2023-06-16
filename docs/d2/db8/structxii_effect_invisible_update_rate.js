@@ -1,6 +1,6 @@
 var structxii_effect_invisible_update_rate =
 [
-    [ "StorageType", "d2/db8/structxii_effect_invisible_update_rate.htm#a7bab954ac665362f884d760bdc7972ab", null ],
+    [ "StorageType", "d2/db8/structxii_effect_invisible_update_rate.htm#af334fc11a5d98a60e9f32dd6ac887218", null ],
     [ "Enum", "d2/db8/structxii_effect_invisible_update_rate.htm#a0806d48c83267ea0a19a674665417019", [
       [ "FullUpdate", "d2/db8/structxii_effect_invisible_update_rate.htm#a0806d48c83267ea0a19a674665417019abe2e66be2d3608364bbf36b340cb6506", null ],
       [ "Max20fps", "d2/db8/structxii_effect_invisible_update_rate.htm#a0806d48c83267ea0a19a674665417019a592e31ba7ad8841478feb32db59e4fba", null ],

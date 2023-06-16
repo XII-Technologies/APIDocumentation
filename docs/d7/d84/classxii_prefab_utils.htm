@@ -96,12 +96,12 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a52c35a7663ef5fe168c903d185f45dbc"><td class="memItemLeft" align="right" valign="top"><a id="a52c35a7663ef5fe168c903d185f45dbc"></a>
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>LoadGraph</b> (<a class="el" href="../../d9/d21/classxii_abstract_object_graph.htm">xiiAbstractObjectGraph</a> &amp;out_graph, const char *szGraph)</td></tr>
 <tr class="separator:a52c35a7663ef5fe168c903d185f45dbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a59ae6ff54350deba0af2e91f88a521ee"><td class="memItemLeft" align="right" valign="top"><a id="a59ae6ff54350deba0af2e91f88a521ee"></a>
-static <a class="el" href="../../d1/d94/classxii_abstract_object_node.htm">xiiAbstractObjectNode</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetFirstRootNode</b> (<a class="el" href="../../d9/d21/classxii_abstract_object_graph.htm">xiiAbstractObjectGraph</a> &amp;graph)</td></tr>
-<tr class="separator:a59ae6ff54350deba0af2e91f88a521ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abdbe8cf3561c5ac9c5c7fa0e06350414"><td class="memItemLeft" align="right" valign="top"><a id="abdbe8cf3561c5ac9c5c7fa0e06350414"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>GetRootNodes</b> (<a class="el" href="../../d9/d21/classxii_abstract_object_graph.htm">xiiAbstractObjectGraph</a> &amp;graph, <a class="el" href="../../dc/da9/classxii_hybrid_array.htm">xiiHybridArray</a>&lt; <a class="el" href="../../d1/d94/classxii_abstract_object_node.htm">xiiAbstractObjectNode</a> *, 4 &gt; &amp;out_Nodes)</td></tr>
-<tr class="separator:abdbe8cf3561c5ac9c5c7fa0e06350414"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74b52b9e9d026fd875ea4aacb8f2fc48"><td class="memItemLeft" align="right" valign="top"><a id="a74b52b9e9d026fd875ea4aacb8f2fc48"></a>
+static <a class="el" href="../../d1/d94/classxii_abstract_object_node.htm">xiiAbstractObjectNode</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetFirstRootNode</b> (<a class="el" href="../../d9/d21/classxii_abstract_object_graph.htm">xiiAbstractObjectGraph</a> &amp;ref_graph)</td></tr>
+<tr class="separator:a74b52b9e9d026fd875ea4aacb8f2fc48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeaf8ab27f633979729ce7a93a83a992e"><td class="memItemLeft" align="right" valign="top"><a id="aeaf8ab27f633979729ce7a93a83a992e"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>GetRootNodes</b> (<a class="el" href="../../d9/d21/classxii_abstract_object_graph.htm">xiiAbstractObjectGraph</a> &amp;ref_graph, <a class="el" href="../../dc/da9/classxii_hybrid_array.htm">xiiHybridArray</a>&lt; <a class="el" href="../../d1/d94/classxii_abstract_object_node.htm">xiiAbstractObjectNode</a> *, 4 &gt; &amp;out_nodes)</td></tr>
+<tr class="separator:aeaf8ab27f633979729ce7a93a83a992e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0b46b2c1b88cb2f74618b484e19467bd"><td class="memItemLeft" align="right" valign="top"><a id="a0b46b2c1b88cb2f74618b484e19467bd"></a>
 static <a class="el" href="../../dc/d1d/classxii_uuid.htm">xiiUuid</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetPrefabRoot</b> (const <a class="el" href="../../da/dd8/classxii_document_object.htm">xiiDocumentObject</a> *pObject, const <a class="el" href="../../d6/d03/classxii_object_meta_data.htm">xiiObjectMetaData</a>&lt; <a class="el" href="../../dc/d1d/classxii_uuid.htm">xiiUuid</a>, <a class="el" href="../../d4/d38/classxii_document_object_meta_data.htm">xiiDocumentObjectMetaData</a> &gt; &amp;documentObjectMetaData, xiiInt32 *pDepth=nullptr)</td></tr>
 <tr class="separator:a0b46b2c1b88cb2f74618b484e19467bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -115,10 +115,10 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>WriteDiff</b> 
 static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d84/classxii_prefab_utils.htm#a0d997c24219283cde3774a3b39169ae3">Merge</a> (const <a class="el" href="../../d9/d21/classxii_abstract_object_graph.htm">xiiAbstractObjectGraph</a> &amp;baseGraph, const <a class="el" href="../../d9/d21/classxii_abstract_object_graph.htm">xiiAbstractObjectGraph</a> &amp;leftGraph, const <a class="el" href="../../d9/d21/classxii_abstract_object_graph.htm">xiiAbstractObjectGraph</a> &amp;rightGraph, <a class="el" href="../../d8/df8/classxii_deque.htm">xiiDeque</a>&lt; <a class="el" href="../../d1/d21/structxii_abstract_graph_diff_operation.htm">xiiAbstractGraphDiffOperation</a> &gt; &amp;out_mergedDiff)</td></tr>
 <tr class="memdesc:a0d997c24219283cde3774a3b39169ae3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Merges diffs of left and right graphs relative to their base graph. Conflicts prefer the right graph. <br /></td></tr>
 <tr class="separator:a0d997c24219283cde3774a3b39169ae3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3e9f84bf9e5cf067fb867a214584a07f"><td class="memItemLeft" align="right" valign="top"><a id="a3e9f84bf9e5cf067fb867a214584a07f"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d84/classxii_prefab_utils.htm#a3e9f84bf9e5cf067fb867a214584a07f">Merge</a> (const char *szBase, const char *szLeft, <a class="el" href="../../da/dd8/classxii_document_object.htm">xiiDocumentObject</a> *pRight, bool bRightIsNotPartOfPrefab, const <a class="el" href="../../dc/d1d/classxii_uuid.htm">xiiUuid</a> &amp;PrefabSeed, <a class="el" href="../../d4/dbb/classxii_string_builder.htm">xiiStringBuilder</a> &amp;out_sNewGraph)</td></tr>
-<tr class="memdesc:a3e9f84bf9e5cf067fb867a214584a07f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Merges diffs of left and right graphs relative to their base graph. Conflicts prefer the right graph. Base and left are provided as serialized DDL graphs and the right graph is build directly from pRight and its PrefabSeed. <br /></td></tr>
-<tr class="separator:a3e9f84bf9e5cf067fb867a214584a07f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc5e170d9ea5f88cd9783cabec38ae4d"><td class="memItemLeft" align="right" valign="top"><a id="adc5e170d9ea5f88cd9783cabec38ae4d"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d84/classxii_prefab_utils.htm#adc5e170d9ea5f88cd9783cabec38ae4d">Merge</a> (const char *szBase, const char *szLeft, <a class="el" href="../../da/dd8/classxii_document_object.htm">xiiDocumentObject</a> *pRight, bool bRightIsNotPartOfPrefab, const <a class="el" href="../../dc/d1d/classxii_uuid.htm">xiiUuid</a> &amp;prefabSeed, <a class="el" href="../../d4/dbb/classxii_string_builder.htm">xiiStringBuilder</a> &amp;out_sNewGraph)</td></tr>
+<tr class="memdesc:adc5e170d9ea5f88cd9783cabec38ae4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Merges diffs of left and right graphs relative to their base graph. Conflicts prefer the right graph. Base and left are provided as serialized DDL graphs and the right graph is build directly from pRight and its PrefabSeed. <br /></td></tr>
+<tr class="separator:adc5e170d9ea5f88cd9783cabec38ae4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afc44d69b7970ea7977693a4b8862d0ca"><td class="memItemLeft" align="right" valign="top"><a id="afc44d69b7970ea7977693a4b8862d0ca"></a>
 static <a class="el" href="../../df/dfb/structxii_hybrid_string.htm">xiiString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>ReadDocumentAsString</b> (const char *szFile)</td></tr>
 <tr class="separator:afc44d69b7970ea7977693a4b8862d0ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -133,7 +133,7 @@ static <a class="el" href="../../df/dfb/structxii_hybrid_string.htm">xiiString</
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d7/d84/classxii_prefab_utils.htm">xiiPrefabUtils</a></li>
-    <li class="footer">Generated on Mon Apr 17 2023 20:10:40 for XIIEngine by
+    <li class="footer">Generated on Fri Jun 16 2023 14:12:55 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

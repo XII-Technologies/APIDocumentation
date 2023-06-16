@@ -1,7 +1,7 @@
 var classxii_view =
 [
-    [ "ComputeCullingFrustum", "dd/df1/classxii_view.htm#a4ee26cc6ff9e4503e02e3e5fa8bc2ff4", null ],
-    [ "ComputePickingRay", "dd/df1/classxii_view.htm#a304950b79557f330cc6e4341d666211c", null ],
+    [ "ComputeCullingFrustum", "dd/df1/classxii_view.htm#a7103929a19469b465636fdc6f0aba469", null ],
+    [ "ComputePickingRay", "dd/df1/classxii_view.htm#ac4a1e935a89bc00266d9852c0575a4cb", null ],
     [ "ComputeScreenSpacePos", "dd/df1/classxii_view.htm#aa7b6c7c2120ec90b58f022a74752bbf7", null ],
     [ "ExtractData", "dd/df1/classxii_view.htm#af4def1901428e290b48cd3c3ac7710ce", null ],
     [ "ForceUpdate", "dd/df1/classxii_view.htm#a74441752a0cae35fcf29acc60103fcfa", null ],

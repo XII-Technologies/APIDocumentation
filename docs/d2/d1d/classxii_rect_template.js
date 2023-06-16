@@ -1,11 +1,11 @@
 var classxii_rect_template =
 [
     [ "xiiRectTemplate", "d2/d1d/classxii_rect_template.htm#a34ed761eda61993f1a0a8963e0e4bde0", null ],
-    [ "xiiRectTemplate", "d2/d1d/classxii_rect_template.htm#a783fb74529b3d29b32f66112084619f8", null ],
-    [ "xiiRectTemplate", "d2/d1d/classxii_rect_template.htm#a90e8e6092a2be042f55babfc3441fae7", null ],
+    [ "xiiRectTemplate", "d2/d1d/classxii_rect_template.htm#abdf3d9bfd9eb4ff6f4d9030e218d8c39", null ],
+    [ "xiiRectTemplate", "d2/d1d/classxii_rect_template.htm#ac46f5a7b5893417c4459cfb57f24ea6f", null ],
     [ "Bottom", "d2/d1d/classxii_rect_template.htm#a12b5988fa1f1929f72e967c3e1c6d93b", null ],
     [ "Clip", "d2/d1d/classxii_rect_template.htm#a1920bbf409e461eb00fb58e0aed0fd3e", null ],
-    [ "Contains", "d2/d1d/classxii_rect_template.htm#a0b605fba476c763b0d58b136ddcadf4c", null ],
+    [ "Contains", "d2/d1d/classxii_rect_template.htm#a39b74918c1bec1c63327ec4ffc663d5b", null ],
     [ "ExpandToInclude", "d2/d1d/classxii_rect_template.htm#a1d21a40703e16a8a078831a0ac0d29a0", null ],
     [ "GetClampedPoint", "d2/d1d/classxii_rect_template.htm#a6216509334479cabaf997dfca6fb0831", null ],
     [ "GetX1", "d2/d1d/classxii_rect_template.htm#a0bf9f19126954191f882f6f2f3f8c67c", null ],

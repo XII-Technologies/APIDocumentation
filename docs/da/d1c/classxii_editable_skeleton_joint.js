@@ -5,7 +5,7 @@ var classxii_editable_skeleton_joint =
     [ "ClearJoints", "da/d1c/classxii_editable_skeleton_joint.htm#af365b738a8dd852f5f03b43e7c1077e6", null ],
     [ "CopyPropertiesFrom", "da/d1c/classxii_editable_skeleton_joint.htm#a7866c208b588469fbc2c2b458d3bc858", null ],
     [ "GetName", "da/d1c/classxii_editable_skeleton_joint.htm#a7781a78a1bd50482afad3baf1859c34c", null ],
-    [ "SetName", "da/d1c/classxii_editable_skeleton_joint.htm#a5157d35d2d78ac63642f129183a6e8cb", null ],
+    [ "SetName", "da/d1c/classxii_editable_skeleton_joint.htm#a24ed9a1cbc3db7c3001e9d2dcb63a22f", null ],
     [ "m_bLimitSwing", "da/d1c/classxii_editable_skeleton_joint.htm#acffb8fe0a004c4493c64fdf414fc5a8a", null ],
     [ "m_bLimitTwist", "da/d1c/classxii_editable_skeleton_joint.htm#a845f82f56d421f85b2ac88fb87b9780f", null ],
     [ "m_BoneShapes", "da/d1c/classxii_editable_skeleton_joint.htm#aeafd2d8de42fdcf6e5ac0ffd71115a62", null ],

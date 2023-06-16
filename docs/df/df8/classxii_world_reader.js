@@ -10,9 +10,9 @@ var classxii_world_reader =
     [ "GetHeapMemoryUsage", "df/df8/classxii_world_reader.htm#a649d32f35c1514bc277fc7195ad3c559", null ],
     [ "GetRootObjectCount", "df/df8/classxii_world_reader.htm#af3efdcd65d9ba7c35dd311c482ac6e0b", null ],
     [ "GetStream", "df/df8/classxii_world_reader.htm#ad1295f4889e01050fd5bd00bbf418240", null ],
-    [ "InstantiatePrefab", "df/df8/classxii_world_reader.htm#a5ad061dbf185cdce094bb43ad0ddded2", null ],
-    [ "InstantiateWorld", "df/df8/classxii_world_reader.htm#a510012cd7a5b51ea4206f91cf10df2d0", null ],
+    [ "InstantiatePrefab", "df/df8/classxii_world_reader.htm#a3a39b2f837a942905fcbe65514211095", null ],
+    [ "InstantiateWorld", "df/df8/classxii_world_reader.htm#aa1099b15bf6bebc718a6839fda57c214", null ],
     [ "ReadComponentHandle", "df/df8/classxii_world_reader.htm#a6fc5b21a361bcdb9ceaa3ba9b7fe748c", null ],
     [ "ReadGameObjectHandle", "df/df8/classxii_world_reader.htm#ad853278811d50bc38605fff4e990c648", null ],
-    [ "ReadWorldDescription", "df/df8/classxii_world_reader.htm#a86db5db4196ba0295d4fd5aa24499882", null ]
+    [ "ReadWorldDescription", "df/df8/classxii_world_reader.htm#afc06291393041165c611241c7d7340bc", null ]
 ];

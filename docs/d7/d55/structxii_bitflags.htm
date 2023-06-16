@@ -157,10 +157,10 @@ XII_ALWAYS_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a cla
 XII_ALWAYS_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d55/structxii_bitflags.htm#a0635b2009f32f25b318df037225c07d1">Toggle</a> (const <a class="el" href="../../d7/d55/structxii_bitflags.htm">xiiBitflags</a>&lt; T &gt; &amp;rhs)</td></tr>
 <tr class="memdesc:a0635b2009f32f25b318df037225c07d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Toggles the state of the given flag. <br /></td></tr>
 <tr class="separator:a0635b2009f32f25b318df037225c07d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7f94f9f8b857efb329583e4c839b9f29"><td class="memItemLeft" align="right" valign="top"><a id="a7f94f9f8b857efb329583e4c839b9f29"></a>
-XII_ALWAYS_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d55/structxii_bitflags.htm#a7f94f9f8b857efb329583e4c839b9f29">AddOrRemove</a> (const <a class="el" href="../../d7/d55/structxii_bitflags.htm">xiiBitflags</a>&lt; T &gt; &amp;rhs, bool state)</td></tr>
-<tr class="memdesc:a7f94f9f8b857efb329583e4c839b9f29"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets or clears the given flag. <br /></td></tr>
-<tr class="separator:a7f94f9f8b857efb329583e4c839b9f29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad658467820facde2db8df6f63e56de98"><td class="memItemLeft" align="right" valign="top"><a id="ad658467820facde2db8df6f63e56de98"></a>
+XII_ALWAYS_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d55/structxii_bitflags.htm#ad658467820facde2db8df6f63e56de98">AddOrRemove</a> (const <a class="el" href="../../d7/d55/structxii_bitflags.htm">xiiBitflags</a>&lt; T &gt; &amp;rhs, bool bState)</td></tr>
+<tr class="memdesc:ad658467820facde2db8df6f63e56de98"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets or clears the given flag. <br /></td></tr>
+<tr class="separator:ad658467820facde2db8df6f63e56de98"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab3453f1bf3294074969fbc3cd8cf8035"><td class="memItemLeft" align="right" valign="top"><a id="ab3453f1bf3294074969fbc3cd8cf8035"></a>
 XII_ALWAYS_INLINE <a class="el" href="../../d7/d55/structxii_bitflags.htm">xiiBitflags</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d55/structxii_bitflags.htm#ab3453f1bf3294074969fbc3cd8cf8035">operator|</a> (const <a class="el" href="../../d7/d55/structxii_bitflags.htm">xiiBitflags</a>&lt; T &gt; &amp;rhs) const</td></tr>
 <tr class="memdesc:ab3453f1bf3294074969fbc3cd8cf8035"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an object that has the flags of <em>this</em> and <em>rhs</em> combined. <br /></td></tr>
@@ -211,7 +211,7 @@ Example:<br  />
 </p><div class="fragment"><div class="line">RenderScene(1);</div>
 </div><!-- fragment --><p>The second way to declare your bitflags type allows even more flexibility. Here you need to declare your bitflag type manually: </p><div class="fragment"><div class="line"><span class="keyword">struct </span>SimpleRenderFlags</div>
 <div class="line">{</div>
-<div class="line">  <span class="keyword">typedef</span> xiiUInt32 StorageType;</div>
+<div class="line">  <span class="keyword">using</span> StorageType = xiiUInt32;</div>
 <div class="line"> </div>
 <div class="line">  <span class="keyword">enum</span> Enum</div>
 <div class="line">  {</div>
@@ -234,7 +234,7 @@ Example:<br  />
 <div class="line">XII_DECLARE_FLAGS_OPERATORS(SimpleRenderFlags);</div>
 </div><!-- fragment --><p>Here we declare a struct which contains our enum that contains all the flags that we want to have. This enum can contain flags that are combinations of other flags. Note also the 'Default' flag, which is mandatory.<br  />
 The 'Bits' struct enables debuggers to show exactly which flags are enabled (with nice names) when you inspect an <a class="el" href="../../d7/d55/structxii_bitflags.htm" title="The xiiBitflags class allows you to work with type-safe bitflags.">xiiBitflags</a> instance. You could leave this struct empty, but then your debugger can not show helpful information about the flags anymore. The Bits struct should contain one named entry for each individual bit. E.g. here only the flags 'EnableEffects', 'EnableLighting' and 'EnableShadows' actually map to single bits, the other flags are combinations of those. Therefore the Bits struct only specifies names for those first three Bits.<br  />
-The typedef 'StorageType' is also mandatory, such that <a class="el" href="../../d7/d55/structxii_bitflags.htm" title="The xiiBitflags class allows you to work with type-safe bitflags.">xiiBitflags</a> can access it.<br  />
+The alias 'StorageType' is also mandatory, such that <a class="el" href="../../d7/d55/structxii_bitflags.htm" title="The xiiBitflags class allows you to work with type-safe bitflags.">xiiBitflags</a> can access it.<br  />
 Finally the macro XII_DECLARE_FLAGS_OPERATORS will define the required operator to be able to combine bitflags of your type. I.e. it enables to write xiiBitflags&lt;SimpleRenderFlags&gt; f = EnableEffects | EnableLighting;<br  />
  For a real world usage example, see <a class="el" href="../../dc/db8/structxii_c_var_flags.htm" title="The flags that can be used on an xiiCVar.">xiiCVarFlags</a>. </p>
 </div><hr/>The documentation for this struct was generated from the following file:<ul>
@@ -247,7 +247,7 @@ Finally the macro XII_DECLARE_FLAGS_OPERATORS will define the required operator 
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d7/d55/structxii_bitflags.htm">xiiBitflags</a></li>
-    <li class="footer">Generated on Mon Apr 17 2023 20:10:36 for XIIEngine by
+    <li class="footer">Generated on Fri Jun 16 2023 14:12:50 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

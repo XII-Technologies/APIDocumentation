@@ -7,5 +7,5 @@ var classxii_g_a_l_depth_stencil_state_diligent =
     [ "InitPlatform", "d6/dc4/classxii_g_a_l_depth_stencil_state_diligent.htm#ad4cb9ee3054619e3f6490018f94d15d1", null ],
     [ "xiiGALDeviceDiligent", "d6/dc4/classxii_g_a_l_depth_stencil_state_diligent.htm#aa4c4e61f06413b5554bad4d3f222b37c", null ],
     [ "xiiMemoryUtils", "d6/dc4/classxii_g_a_l_depth_stencil_state_diligent.htm#aefc9ff75d6833fd2f05be48e16436db6", null ],
-    [ "m_DepthStencilState", "d6/dc4/classxii_g_a_l_depth_stencil_state_diligent.htm#a9f0c6ab376d12a2f576e149ce728be53", null ]
+    [ "m_DepthStencilStateDesc", "d6/dc4/classxii_g_a_l_depth_stencil_state_diligent.htm#a12ec5c787abce5933b9acca2dc995c36", null ]
 ];

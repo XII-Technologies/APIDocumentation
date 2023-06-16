@@ -1,7 +1,7 @@
 var classxii_curve_control_point_data =
 [
     [ "GetTickAsTime", "d4/d74/classxii_curve_control_point_data.htm#a628e8be85da12ec684569e8ebd91bf41", null ],
-    [ "SetTickFromTime", "d4/d74/classxii_curve_control_point_data.htm#ade7754d41c605e73fe2e19510debf146", null ],
+    [ "SetTickFromTime", "d4/d74/classxii_curve_control_point_data.htm#a5c29683f51e7a4135a4de34e81031a60", null ],
     [ "m_bTangentsLinked", "d4/d74/classxii_curve_control_point_data.htm#a067de26ec433ea8f4911361c3cb74dd6", null ],
     [ "m_fValue", "d4/d74/classxii_curve_control_point_data.htm#aec613fb16a71a004a04e02619df40da7", null ],
     [ "m_iTick", "d4/d74/classxii_curve_control_point_data.htm#a00b09e95ed7276aedff4f8e34af8535a", null ],

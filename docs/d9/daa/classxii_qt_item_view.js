@@ -1,9 +1,9 @@
 var classxii_qt_item_view =
 [
     [ "xiiQtItemView", "d9/daa/classxii_qt_item_view.htm#ae20a23c5d5c0d8bdc40b9f5d1686a9ff", null ],
-    [ "event", "d9/daa/classxii_qt_item_view.htm#a4799e885a5646ec40323db318b721a7b", null ],
-    [ "mouseDoubleClickEvent", "d9/daa/classxii_qt_item_view.htm#ac3b7ec5caa17125de4f5e93f1c9cfbbe", null ],
-    [ "mouseMoveEvent", "d9/daa/classxii_qt_item_view.htm#acaaffc42ac6a17c2d182138679f40ed0", null ],
-    [ "mousePressEvent", "d9/daa/classxii_qt_item_view.htm#a3e538b880786825803b590bc6ad1ec51", null ],
-    [ "mouseReleaseEvent", "d9/daa/classxii_qt_item_view.htm#a1e72f272c9dba8bd591227cb73dd60ca", null ]
+    [ "event", "d9/daa/classxii_qt_item_view.htm#ab342f1b3bf402b7b9241baa346b228df", null ],
+    [ "mouseDoubleClickEvent", "d9/daa/classxii_qt_item_view.htm#a48d645cb73ce963f0bd7b7949f3b6cc3", null ],
+    [ "mouseMoveEvent", "d9/daa/classxii_qt_item_view.htm#a591091debaf64d5c3a8e9d05b5cac4c5", null ],
+    [ "mousePressEvent", "d9/daa/classxii_qt_item_view.htm#ae5e156a061cee1eb3dc4409c74eae58e", null ],
+    [ "mouseReleaseEvent", "d9/daa/classxii_qt_item_view.htm#a27e44f2adf0865c7bf84fb08fdf6ff2b", null ]
 ];

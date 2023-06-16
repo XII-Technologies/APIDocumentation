@@ -3,7 +3,7 @@ var classxii_qt_property_grid_widget =
     [ "xiiQtPropertyGridWidget", "d5/df1/classxii_qt_property_grid_widget.htm#afb731bbf000468dfb6ec91abc24c32c3", null ],
     [ "~xiiQtPropertyGridWidget", "d5/df1/classxii_qt_property_grid_widget.htm#ae6710ac8b0818ddaadf89c20a991ba00", null ],
     [ "ClearSelection", "d5/df1/classxii_qt_property_grid_widget.htm#afd49c211bb1d19c767efb22caac3d93e", null ],
-    [ "ExtendContextMenu", "d5/df1/classxii_qt_property_grid_widget.htm#abcbde10f065f57c904ca0995aa1834d1", null ],
+    [ "ExtendContextMenu", "d5/df1/classxii_qt_property_grid_widget.htm#af7af0c08c2a3da91e7bbff7177aa56ed", null ],
     [ "GetCommandHistory", "d5/df1/classxii_qt_property_grid_widget.htm#a387ca360e0cdf5e3c5beb9ded561c2a0", null ],
     [ "GetDocument", "d5/df1/classxii_qt_property_grid_widget.htm#a660684099ba26dd48bcd7abe88bbf4dd", null ],
     [ "GetObjectAccessor", "d5/df1/classxii_qt_property_grid_widget.htm#abd9bbc8be00f30751d698059193a82be", null ],

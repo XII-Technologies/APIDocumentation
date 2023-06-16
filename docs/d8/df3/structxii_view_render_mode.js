@@ -1,6 +1,6 @@
 var structxii_view_render_mode =
 [
-    [ "StorageType", "d8/df3/structxii_view_render_mode.htm#a2483d6ae1e4337675723c0ce3b00b842", null ],
+    [ "StorageType", "d8/df3/structxii_view_render_mode.htm#ab6726ae583c833fd1e107be3fa1531fe", null ],
     [ "Enum", "d8/df3/structxii_view_render_mode.htm#a3a5a5cddeb4d7ce78abddb0c62557bd3", [
       [ "None", "d8/df3/structxii_view_render_mode.htm#a3a5a5cddeb4d7ce78abddb0c62557bd3a65727f3ff1c2a5b746928fe21257f184", null ],
       [ "WireframeColor", "d8/df3/structxii_view_render_mode.htm#a3a5a5cddeb4d7ce78abddb0c62557bd3a62136e2131361b97daa705b1de4139ba", null ],

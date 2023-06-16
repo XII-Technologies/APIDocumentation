@@ -28,9 +28,9 @@ var classxii_processing_stream =
       [ "Count", "de/d63/classxii_processing_stream.htm#a61a5f8d7dfbc0d30a08a35f369334b7dae93f994f01c537c4e2f7d8528c3eb5e9", null ]
     ] ],
     [ "xiiProcessingStream", "de/d63/classxii_processing_stream.htm#a451f62ecc457bbc53cbfd3bb694c5b0a", null ],
-    [ "xiiProcessingStream", "de/d63/classxii_processing_stream.htm#a0db42813cb8bd49bea2df2f8dd4c8a33", null ],
-    [ "xiiProcessingStream", "de/d63/classxii_processing_stream.htm#a4e984c48cb2e6bd13c95a6f1b23d18af", null ],
-    [ "xiiProcessingStream", "de/d63/classxii_processing_stream.htm#ae01d3c9ad4529a838b6930f9a4fc8a9e", null ],
+    [ "xiiProcessingStream", "de/d63/classxii_processing_stream.htm#ac745e3d0b21e7738cd3a3d48bb01cb0d", null ],
+    [ "xiiProcessingStream", "de/d63/classxii_processing_stream.htm#a3dc9e7d3a26a5eb997d7e7fc7bff7ae2", null ],
+    [ "xiiProcessingStream", "de/d63/classxii_processing_stream.htm#abcd8173a14123d70e8c309f4856c3b86", null ],
     [ "~xiiProcessingStream", "de/d63/classxii_processing_stream.htm#a73305079d3c0e6c51121a176b2c67513", null ],
     [ "FreeData", "de/d63/classxii_processing_stream.htm#a2c7472dd576d90e7ead84b990d2752b9", null ],
     [ "GetAlignment", "de/d63/classxii_processing_stream.htm#a651423caa0e9435a24c9d95442231d00", null ],

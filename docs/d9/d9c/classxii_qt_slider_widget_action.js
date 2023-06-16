@@ -1,6 +1,6 @@
 var classxii_qt_slider_widget_action =
 [
-    [ "xiiQtSliderWidgetAction", "d9/d9c/classxii_qt_slider_widget_action.htm#afaee83f4f855c8fb3952bccddfee46cd", null ],
+    [ "xiiQtSliderWidgetAction", "d9/d9c/classxii_qt_slider_widget_action.htm#a391c7445a86d8a88f4d0d82671342c43", null ],
     [ "createWidget", "d9/d9c/classxii_qt_slider_widget_action.htm#a23c6b412ef770e429bcf9a6b634901c2", null ],
     [ "eventFilter", "d9/d9c/classxii_qt_slider_widget_action.htm#a517914e98dd971909eb15120fc66c8b0", null ],
     [ "setMaximum", "d9/d9c/classxii_qt_slider_widget_action.htm#aae8a401d49cac99e210958909ec51f8a", null ],

@@ -5,8 +5,8 @@ var classxii_asset_file_header =
     [ "GetFileVersion", "d2/d2f/classxii_asset_file_header.htm#a17c45fcb20587e3f69917dd87b9ff9e8", null ],
     [ "GetGenerator", "d2/d2f/classxii_asset_file_header.htm#a2bca97f113525ecfbb06f2ed32db42d6", null ],
     [ "IsFileUpToDate", "d2/d2f/classxii_asset_file_header.htm#a40202fc9301c8d087b74c5b09e1db8ea", null ],
-    [ "Read", "d2/d2f/classxii_asset_file_header.htm#a4a61b9a4abd73202c325f88d87c6df5c", null ],
-    [ "SetFileHashAndVersion", "d2/d2f/classxii_asset_file_header.htm#a19e6f8e916642f562c3a8c38c63c4ebf", null ],
-    [ "SetGenerator", "d2/d2f/classxii_asset_file_header.htm#acd8044766d723ebd72fb53fb071b78c7", null ],
-    [ "Write", "d2/d2f/classxii_asset_file_header.htm#aab8e3ab0f265433462ca6fe37caa3f75", null ]
+    [ "Read", "d2/d2f/classxii_asset_file_header.htm#a9b2eff0e96e1e0d5d6ebc216abf60608", null ],
+    [ "SetFileHashAndVersion", "d2/d2f/classxii_asset_file_header.htm#a1d4934eca3088794659a41a7e5c946f0", null ],
+    [ "SetGenerator", "d2/d2f/classxii_asset_file_header.htm#aabddaee048c258b6b57a2ed323642cef", null ],
+    [ "Write", "d2/d2f/classxii_asset_file_header.htm#ab44d95d4e03339afa6835dacc667d18c", null ]
 ];

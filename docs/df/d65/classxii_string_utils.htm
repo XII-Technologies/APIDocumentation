@@ -115,10 +115,10 @@ template&lt;typename T &gt; </td></tr>
 template&lt;typename T &gt; </td></tr>
 <tr class="memitem:ae8ee4ae5d0ada748c020fafc5ddcfecd"><td class="memTemplItemLeft" align="right" valign="top">XII_ALWAYS_INLINE bool&#160;</td><td class="memTemplItemRight" valign="bottom"><b>IsNullOrEmpty</b> (const T *pString, const T *pStringEnd)</td></tr>
 <tr class="separator:ae8ee4ae5d0ada748c020fafc5ddcfecd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a58f8c9c4ad9f0f67d7912a96950b6fd3"><td class="memTemplParams" colspan="2"><a id="a58f8c9c4ad9f0f67d7912a96950b6fd3"></a>
+<tr class="memitem:ab652c25f4d4e0280d0e1476c25babd76"><td class="memTemplParams" colspan="2"><a id="ab652c25f4d4e0280d0e1476c25babd76"></a>
 template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a58f8c9c4ad9f0f67d7912a96950b6fd3"><td class="memTemplItemLeft" align="right" valign="top">XII_ALWAYS_INLINE void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>UpdateStringEnd</b> (const T *szStringStart, const T *&amp;szStringEnd)</td></tr>
-<tr class="separator:a58f8c9c4ad9f0f67d7912a96950b6fd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab652c25f4d4e0280d0e1476c25babd76"><td class="memTemplItemLeft" align="right" valign="top">XII_ALWAYS_INLINE void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>UpdateStringEnd</b> (const T *pStringStart, const T *&amp;ref_pStringEnd)</td></tr>
+<tr class="separator:ab652c25f4d4e0280d0e1476c25babd76"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -132,11 +132,11 @@ template&lt;typename T &gt; </td></tr>
 <tr class="memitem:ae08945bfcd20a0a83b1387d12e9a64ba"><td class="memTemplItemLeft" align="right" valign="top">static bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../df/d65/classxii_string_utils.htm#ae08945bfcd20a0a83b1387d12e9a64ba">IsNullOrEmpty</a> (const T *pString, const T *pStringEnd)</td></tr>
 <tr class="memdesc:ae08945bfcd20a0a83b1387d12e9a64ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true, if the given string is a nullptr pointer, is equal to its end or a string that immediately terminates with a '\0' character. <br /></td></tr>
 <tr class="separator:ae08945bfcd20a0a83b1387d12e9a64ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a32cf53189de3b7b216549bc3744f8b71"><td class="memTemplParams" colspan="2"><a id="a32cf53189de3b7b216549bc3744f8b71"></a>
+<tr class="memitem:a98e19f956607e291a7972109ed9e577f"><td class="memTemplParams" colspan="2"><a id="a98e19f956607e291a7972109ed9e577f"></a>
 template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a32cf53189de3b7b216549bc3744f8b71"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../df/d65/classxii_string_utils.htm#a32cf53189de3b7b216549bc3744f8b71">UpdateStringEnd</a> (const T *szStringStart, const T *&amp;szStringEnd)</td></tr>
-<tr class="memdesc:a32cf53189de3b7b216549bc3744f8b71"><td class="mdescLeft">&#160;</td><td class="mdescRight">Recomputes the end pointer of a string (<em>szStringEnd</em>), if that is currently set to xiiMaxStringEnd. Otherwise does nothing. <br /></td></tr>
-<tr class="separator:a32cf53189de3b7b216549bc3744f8b71"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98e19f956607e291a7972109ed9e577f"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../df/d65/classxii_string_utils.htm#a98e19f956607e291a7972109ed9e577f">UpdateStringEnd</a> (const T *pStringStart, const T *&amp;ref_pStringEnd)</td></tr>
+<tr class="memdesc:a98e19f956607e291a7972109ed9e577f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Recomputes the end pointer of a string (<em>szStringEnd</em>), if that is currently set to xiiMaxStringEnd. Otherwise does nothing. <br /></td></tr>
+<tr class="separator:a98e19f956607e291a7972109ed9e577f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af9de18eab321e420a8c5e42fbbe4703d"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:af9de18eab321e420a8c5e42fbbe4703d"><td class="memTemplItemLeft" align="right" valign="top">static constexpr xiiUInt32&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../df/d65/classxii_string_utils.htm#af9de18eab321e420a8c5e42fbbe4703d">GetStringElementCount</a> (const T *pString)</td></tr>
 <tr class="memdesc:af9de18eab321e420a8c5e42fbbe4703d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of elements of type T that the string contains, until it hits an element that is zero OR until it hits the end pointer.  <a href="../../df/d65/classxii_string_utils.htm#af9de18eab321e420a8c5e42fbbe4703d">More...</a><br /></td></tr>
@@ -149,10 +149,10 @@ template&lt;typename T &gt; </td></tr>
 static xiiUInt32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d65/classxii_string_utils.htm#a660d4fb3b9d622789dc720402d13eb55">GetCharacterCount</a> (const char *szUtf8, const char *pStringEnd=<a class="el" href="../../de/d05/classxii_unicode_utils.htm#a660bf5a88b574b4be176332064e55fbe">xiiUnicodeUtils::GetMaxStringEnd</a>&lt; char &gt;())</td></tr>
 <tr class="memdesc:a660d4fb3b9d622789dc720402d13eb55"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of characters (not Bytes!) in a Utf8 string (excluding the zero terminator), until it hits zero or the end pointer. <br /></td></tr>
 <tr class="separator:a660d4fb3b9d622789dc720402d13eb55"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2d5a6a5ddf453493f22e12df2c7915e6"><td class="memItemLeft" align="right" valign="top"><a id="a2d5a6a5ddf453493f22e12df2c7915e6"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d65/classxii_string_utils.htm#a2d5a6a5ddf453493f22e12df2c7915e6">GetCharacterAndElementCount</a> (const char *szUtf8, xiiUInt32 &amp;uiCharacterCount, xiiUInt32 &amp;uiElementCount, const char *pStringEnd=<a class="el" href="../../de/d05/classxii_unicode_utils.htm#a660bf5a88b574b4be176332064e55fbe">xiiUnicodeUtils::GetMaxStringEnd</a>&lt; char &gt;())</td></tr>
-<tr class="memdesc:a2d5a6a5ddf453493f22e12df2c7915e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns both the number of characters and the number of bytes in a Utf8 string, until it hits zero or the end pointer. <br /></td></tr>
-<tr class="separator:a2d5a6a5ddf453493f22e12df2c7915e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae40dee43f8cded5ed4ec6fb0dfec9eb1"><td class="memItemLeft" align="right" valign="top"><a id="ae40dee43f8cded5ed4ec6fb0dfec9eb1"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d65/classxii_string_utils.htm#ae40dee43f8cded5ed4ec6fb0dfec9eb1">GetCharacterAndElementCount</a> (const char *szUtf8, xiiUInt32 &amp;ref_uiCharacterCount, xiiUInt32 &amp;ref_uiElementCount, const char *pStringEnd=<a class="el" href="../../de/d05/classxii_unicode_utils.htm#a660bf5a88b574b4be176332064e55fbe">xiiUnicodeUtils::GetMaxStringEnd</a>&lt; char &gt;())</td></tr>
+<tr class="memdesc:ae40dee43f8cded5ed4ec6fb0dfec9eb1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns both the number of characters and the number of bytes in a Utf8 string, until it hits zero or the end pointer. <br /></td></tr>
+<tr class="separator:ae40dee43f8cded5ed4ec6fb0dfec9eb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a44289a040ea3318f4a776e5d8035cf5b"><td class="memItemLeft" align="right" valign="top">static xiiUInt32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d65/classxii_string_utils.htm#a44289a040ea3318f4a776e5d8035cf5b">Copy</a> (char *szDest, xiiUInt32 uiDstSize, const char *szSource, const char *pSourceEnd=<a class="el" href="../../de/d05/classxii_unicode_utils.htm#a660bf5a88b574b4be176332064e55fbe">xiiUnicodeUtils::GetMaxStringEnd</a>&lt; char &gt;())</td></tr>
 <tr class="memdesc:a44289a040ea3318f4a776e5d8035cf5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies the string from szSource into the given buffer, which can hold at least uiDstSize bytes.  <a href="../../df/d65/classxii_string_utils.htm#a44289a040ea3318f4a776e5d8035cf5b">More...</a><br /></td></tr>
 <tr class="separator:a44289a040ea3318f4a776e5d8035cf5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -214,9 +214,9 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 <tr class="memitem:a2b5677b0dd4004f7ee6d20a31eee913c"><td class="memItemLeft" align="right" valign="top">static xiiInt32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d65/classxii_string_utils.htm#a2b5677b0dd4004f7ee6d20a31eee913c">snprintf</a> (char *szDst, xiiUInt32 uiDstSize, const char *szFormat,...)</td></tr>
 <tr class="memdesc:a2b5677b0dd4004f7ee6d20a31eee913c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a formated string in szDst. uiDstSize defines how many bytes szDst can hold.  <a href="../../df/d65/classxii_string_utils.htm#a2b5677b0dd4004f7ee6d20a31eee913c">More...</a><br /></td></tr>
 <tr class="separator:a2b5677b0dd4004f7ee6d20a31eee913c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac4df15233df5a9ab4fb460982d856c8d"><td class="memItemLeft" align="right" valign="top">static xiiInt32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d65/classxii_string_utils.htm#ac4df15233df5a9ab4fb460982d856c8d">vsnprintf</a> (char *szDst, xiiUInt32 uiDstSize, const char *szFormat, va_list ap)</td></tr>
-<tr class="memdesc:ac4df15233df5a9ab4fb460982d856c8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a formated string in szDst. uiDstSize defines how many bytes szDst can hold.  <a href="../../df/d65/classxii_string_utils.htm#ac4df15233df5a9ab4fb460982d856c8d">More...</a><br /></td></tr>
-<tr class="separator:ac4df15233df5a9ab4fb460982d856c8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0baa3e2dc382fae0d4bea6b91e10ab85"><td class="memItemLeft" align="right" valign="top">static xiiInt32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d65/classxii_string_utils.htm#a0baa3e2dc382fae0d4bea6b91e10ab85">vsnprintf</a> (char *szDst, xiiUInt32 uiDstSize, const char *szFormat, va_list szAp)</td></tr>
+<tr class="memdesc:a0baa3e2dc382fae0d4bea6b91e10ab85"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a formated string in szDst. uiDstSize defines how many bytes szDst can hold.  <a href="../../df/d65/classxii_string_utils.htm#a0baa3e2dc382fae0d4bea6b91e10ab85">More...</a><br /></td></tr>
+<tr class="separator:a0baa3e2dc382fae0d4bea6b91e10ab85"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afb2538341d8cd31778bebdff947e2a59"><td class="memItemLeft" align="right" valign="top"><a id="afb2538341d8cd31778bebdff947e2a59"></a>
 static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d65/classxii_string_utils.htm#afb2538341d8cd31778bebdff947e2a59">StartsWith</a> (const char *szString, const char *szStartsWith, const char *pStringEnd=<a class="el" href="../../de/d05/classxii_unicode_utils.htm#a660bf5a88b574b4be176332064e55fbe">xiiUnicodeUtils::GetMaxStringEnd</a>&lt; char &gt;(), const char *szStartsWithEnd=<a class="el" href="../../de/d05/classxii_unicode_utils.htm#a660bf5a88b574b4be176332064e55fbe">xiiUnicodeUtils::GetMaxStringEnd</a>&lt; char &gt;())</td></tr>
 <tr class="memdesc:afb2538341d8cd31778bebdff947e2a59"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if szString starts with the string given in szStartsWith. <br /></td></tr>
@@ -249,15 +249,15 @@ static const char *&#160;</td><td class="memItemRight" valign="bottom"><a class=
 static const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d65/classxii_string_utils.htm#a8e6aad91c372195c7e565e3f281b55f9">FindLastSubString_NoCase</a> (const char *szSource, const char *szStringToFind, const char *szStartSearchAt=nullptr, const char *pSourceEnd=<a class="el" href="../../de/d05/classxii_unicode_utils.htm#a660bf5a88b574b4be176332064e55fbe">xiiUnicodeUtils::GetMaxStringEnd</a>&lt; char &gt;(), const char *szStringToFindEnd=<a class="el" href="../../de/d05/classxii_unicode_utils.htm#a660bf5a88b574b4be176332064e55fbe">xiiUnicodeUtils::GetMaxStringEnd</a>&lt; char &gt;())</td></tr>
 <tr class="memdesc:a8e6aad91c372195c7e565e3f281b55f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Searches for the last occurrence of szStringToFind in szSource before szStartSearchAt. Ignores case. <br /></td></tr>
 <tr class="separator:a8e6aad91c372195c7e565e3f281b55f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a72a6a917b8eda24e75e249d864f92bcf"><td class="memItemLeft" align="right" valign="top">static const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d65/classxii_string_utils.htm#a72a6a917b8eda24e75e249d864f92bcf">SkipCharacters</a> (const char *szString, <a class="el" href="../../df/d65/classxii_string_utils.htm#af474cd805cbd076c00d508adacd057bd">XII_CHARACTER_FILTER</a> SkipCharacterCB, bool bAlwaysSkipFirst=false)</td></tr>
-<tr class="memdesc:a72a6a917b8eda24e75e249d864f92bcf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts at szString and advances to the next character for which SkipCharacterCB returns false;.  <a href="../../df/d65/classxii_string_utils.htm#a72a6a917b8eda24e75e249d864f92bcf">More...</a><br /></td></tr>
-<tr class="separator:a72a6a917b8eda24e75e249d864f92bcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a58dee67de68e752a638c6dccb352f366"><td class="memItemLeft" align="right" valign="top">static const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d65/classxii_string_utils.htm#a58dee67de68e752a638c6dccb352f366">FindWordEnd</a> (const char *szString, <a class="el" href="../../df/d65/classxii_string_utils.htm#af474cd805cbd076c00d508adacd057bd">XII_CHARACTER_FILTER</a> IsDelimiterCB, bool bAlwaysSkipFirst=true)</td></tr>
-<tr class="memdesc:a58dee67de68e752a638c6dccb352f366"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the position in szString at which <em>IsDelimiterCB</em> returns true.  <a href="../../df/d65/classxii_string_utils.htm#a58dee67de68e752a638c6dccb352f366">More...</a><br /></td></tr>
-<tr class="separator:a58dee67de68e752a638c6dccb352f366"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a610ef2231671f7958ef47889d4d24f2c"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d65/classxii_string_utils.htm#a610ef2231671f7958ef47889d4d24f2c">Trim</a> (const char *&amp;pString, const char *&amp;pStringEnd, const char *szTrimCharsStart, const char *szTrimCharsEnd)</td></tr>
-<tr class="memdesc:a610ef2231671f7958ef47889d4d24f2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes all characters at the start and end of the string that match the respective characters and updates the new start and end of the string.  <a href="../../df/d65/classxii_string_utils.htm#a610ef2231671f7958ef47889d4d24f2c">More...</a><br /></td></tr>
-<tr class="separator:a610ef2231671f7958ef47889d4d24f2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94f0deead6e274cb780d4171c4b12bc7"><td class="memItemLeft" align="right" valign="top">static const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d65/classxii_string_utils.htm#a94f0deead6e274cb780d4171c4b12bc7">SkipCharacters</a> (const char *szString, <a class="el" href="../../df/d65/classxii_string_utils.htm#af474cd805cbd076c00d508adacd057bd">XII_CHARACTER_FILTER</a> skipCharacterCB, bool bAlwaysSkipFirst=false)</td></tr>
+<tr class="memdesc:a94f0deead6e274cb780d4171c4b12bc7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts at szString and advances to the next character for which SkipCharacterCB returns false;.  <a href="../../df/d65/classxii_string_utils.htm#a94f0deead6e274cb780d4171c4b12bc7">More...</a><br /></td></tr>
+<tr class="separator:a94f0deead6e274cb780d4171c4b12bc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aebb3fca85f4d33a25455bc92483cc944"><td class="memItemLeft" align="right" valign="top">static const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d65/classxii_string_utils.htm#aebb3fca85f4d33a25455bc92483cc944">FindWordEnd</a> (const char *szString, <a class="el" href="../../df/d65/classxii_string_utils.htm#af474cd805cbd076c00d508adacd057bd">XII_CHARACTER_FILTER</a> isDelimiterCB, bool bAlwaysSkipFirst=true)</td></tr>
+<tr class="memdesc:aebb3fca85f4d33a25455bc92483cc944"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the position in szString at which <em>IsDelimiterCB</em> returns true.  <a href="../../df/d65/classxii_string_utils.htm#aebb3fca85f4d33a25455bc92483cc944">More...</a><br /></td></tr>
+<tr class="separator:aebb3fca85f4d33a25455bc92483cc944"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace52b990b8af8413bc0622ffa96cc036"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d65/classxii_string_utils.htm#ace52b990b8af8413bc0622ffa96cc036">Trim</a> (const char *&amp;ref_pString, const char *&amp;ref_pStringEnd, const char *szTrimCharsStart, const char *szTrimCharsEnd)</td></tr>
+<tr class="memdesc:ace52b990b8af8413bc0622ffa96cc036"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes all characters at the start and end of the string that match the respective characters and updates the new start and end of the string.  <a href="../../df/d65/classxii_string_utils.htm#ace52b990b8af8413bc0622ffa96cc036">More...</a><br /></td></tr>
+<tr class="separator:ace52b990b8af8413bc0622ffa96cc036"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a89486e340fecb622b116e72c8dda0839"><td class="memItemLeft" align="right" valign="top"><a id="a89486e340fecb622b116e72c8dda0839"></a>
 static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d65/classxii_string_utils.htm#a89486e340fecb622b116e72c8dda0839">IsWhiteSpace</a> (xiiUInt32 uiChar)</td></tr>
 <tr class="memdesc:a89486e340fecb622b116e72c8dda0839"><td class="mdescLeft">&#160;</td><td class="mdescRight">A default word delimiter function that returns true for ' ' (space), '\r' (carriage return), '<br  />
@@ -283,30 +283,30 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d65/classxii_string_utils.htm#a25a1a2b433a1f85e25cb26735c2124e2">IsValidIdentifierName</a> (const char *pString, const char *pStringEnd=<a class="el" href="../../de/d05/classxii_unicode_utils.htm#a660bf5a88b574b4be176332064e55fbe">xiiUnicodeUtils::GetMaxStringEnd</a>&lt; char &gt;())</td></tr>
 <tr class="memdesc:a25a1a2b433a1f85e25cb26735c2124e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether the given string is a valid identifier name in C code, ie has no white-spaces, starts with a literal etc. <br /></td></tr>
 <tr class="separator:a25a1a2b433a1f85e25cb26735c2124e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a93b3cf23a8051b3960b23c7129eb97bc"><td class="memItemLeft" align="right" valign="top"><a id="a93b3cf23a8051b3960b23c7129eb97bc"></a>
-static const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d65/classxii_string_utils.htm#a93b3cf23a8051b3960b23c7129eb97bc">FindWholeWord</a> (const char *szString, const char *szSearchFor, <a class="el" href="../../df/d65/classxii_string_utils.htm#af474cd805cbd076c00d508adacd057bd">XII_CHARACTER_FILTER</a> IsDelimiterCB, const char *pStringEnd=<a class="el" href="../../de/d05/classxii_unicode_utils.htm#a660bf5a88b574b4be176332064e55fbe">xiiUnicodeUtils::GetMaxStringEnd</a>&lt; char &gt;())</td></tr>
-<tr class="memdesc:a93b3cf23a8051b3960b23c7129eb97bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Searches szString for the word szSearchFor. If IsDelimiterCB returns true for both characters in front and back of the word, the position is returned. Otherwise nullptr. <br /></td></tr>
-<tr class="separator:a93b3cf23a8051b3960b23c7129eb97bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acf4bf6f943961f21d2931a5b2d8d51d0"><td class="memItemLeft" align="right" valign="top"><a id="acf4bf6f943961f21d2931a5b2d8d51d0"></a>
-static const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d65/classxii_string_utils.htm#acf4bf6f943961f21d2931a5b2d8d51d0">FindWholeWord_NoCase</a> (const char *szString, const char *szSearchFor, <a class="el" href="../../df/d65/classxii_string_utils.htm#af474cd805cbd076c00d508adacd057bd">XII_CHARACTER_FILTER</a> IsDelimiterCB, const char *pStringEnd=<a class="el" href="../../de/d05/classxii_unicode_utils.htm#a660bf5a88b574b4be176332064e55fbe">xiiUnicodeUtils::GetMaxStringEnd</a>&lt; char &gt;())</td></tr>
-<tr class="memdesc:acf4bf6f943961f21d2931a5b2d8d51d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Searches szString for the word szSearchFor. If IsDelimiterCB returns true for both characters in front and back of the word, the position is returned. Otherwise nullptr. Ignores case. <br /></td></tr>
-<tr class="separator:acf4bf6f943961f21d2931a5b2d8d51d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a071d71ef59f164b0c6039b7477c6c5ba"><td class="memItemLeft" align="right" valign="top"><a id="a071d71ef59f164b0c6039b7477c6c5ba"></a>
+static const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d65/classxii_string_utils.htm#a071d71ef59f164b0c6039b7477c6c5ba">FindWholeWord</a> (const char *szString, const char *szSearchFor, <a class="el" href="../../df/d65/classxii_string_utils.htm#af474cd805cbd076c00d508adacd057bd">XII_CHARACTER_FILTER</a> isDelimiterCB, const char *pStringEnd=<a class="el" href="../../de/d05/classxii_unicode_utils.htm#a660bf5a88b574b4be176332064e55fbe">xiiUnicodeUtils::GetMaxStringEnd</a>&lt; char &gt;())</td></tr>
+<tr class="memdesc:a071d71ef59f164b0c6039b7477c6c5ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Searches szString for the word szSearchFor. If IsDelimiterCB returns true for both characters in front and back of the word, the position is returned. Otherwise nullptr. <br /></td></tr>
+<tr class="separator:a071d71ef59f164b0c6039b7477c6c5ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a914bb1b6d798187f4884d153f22d8946"><td class="memItemLeft" align="right" valign="top"><a id="a914bb1b6d798187f4884d153f22d8946"></a>
+static const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d65/classxii_string_utils.htm#a914bb1b6d798187f4884d153f22d8946">FindWholeWord_NoCase</a> (const char *szString, const char *szSearchFor, <a class="el" href="../../df/d65/classxii_string_utils.htm#af474cd805cbd076c00d508adacd057bd">XII_CHARACTER_FILTER</a> isDelimiterCB, const char *pStringEnd=<a class="el" href="../../de/d05/classxii_unicode_utils.htm#a660bf5a88b574b4be176332064e55fbe">xiiUnicodeUtils::GetMaxStringEnd</a>&lt; char &gt;())</td></tr>
+<tr class="memdesc:a914bb1b6d798187f4884d153f22d8946"><td class="mdescLeft">&#160;</td><td class="mdescRight">Searches szString for the word szSearchFor. If IsDelimiterCB returns true for both characters in front and back of the word, the position is returned. Otherwise nullptr. Ignores case. <br /></td></tr>
+<tr class="separator:a914bb1b6d798187f4884d153f22d8946"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae1eb465543c949b432db27bf8ab6d8a6"><td class="memItemLeft" align="right" valign="top"><a id="ae1eb465543c949b432db27bf8ab6d8a6"></a>
 static <a class="el" href="../../dd/dad/structxii_result.htm">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d65/classxii_string_utils.htm#ae1eb465543c949b432db27bf8ab6d8a6">FindUIntAtTheEnd</a> (const char *szString, xiiUInt32 &amp;out_uiValue, xiiUInt32 *pStringLengthBeforeUInt=nullptr)</td></tr>
 <tr class="memdesc:ae1eb465543c949b432db27bf8ab6d8a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the given szString ends with an unsigned integer (e.g. "MyString123"). If pStringLengthBeforeUInt is non-null the string length up to the first digit is stored. Returns XII_SUCCESS if there is a value at the end of string, XII_FAILURE otherwise. <br /></td></tr>
 <tr class="separator:ae1eb465543c949b432db27bf8ab6d8a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2c1942896e6751b4667dd88ffee27778"><td class="memItemLeft" align="right" valign="top"><a id="a2c1942896e6751b4667dd88ffee27778"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d65/classxii_string_utils.htm#a2c1942896e6751b4667dd88ffee27778">OutputFormattedInt</a> (char *szOutputBuffer, xiiUInt32 uiBufferSize, xiiUInt32 &amp;uiWritePos, xiiInt64 value, xiiUInt8 uiWidth, bool bPadZeros, xiiUInt8 uiBase)</td></tr>
-<tr class="memdesc:a2c1942896e6751b4667dd88ffee27778"><td class="mdescLeft">&#160;</td><td class="mdescRight">[internal] Prefer to use snprintf. <br /></td></tr>
-<tr class="separator:a2c1942896e6751b4667dd88ffee27778"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad5ca3ce1202713f7758bebe97f9b9757"><td class="memItemLeft" align="right" valign="top"><a id="ad5ca3ce1202713f7758bebe97f9b9757"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d65/classxii_string_utils.htm#ad5ca3ce1202713f7758bebe97f9b9757">OutputFormattedUInt</a> (char *szOutputBuffer, xiiUInt32 uiBufferSize, xiiUInt32 &amp;uiWritePos, xiiUInt64 value, xiiUInt8 uiWidth, bool bPadZeros, xiiUInt8 uiBase, bool bUpperCase)</td></tr>
-<tr class="memdesc:ad5ca3ce1202713f7758bebe97f9b9757"><td class="mdescLeft">&#160;</td><td class="mdescRight">[internal] Prefer to use snprintf. <br /></td></tr>
-<tr class="separator:ad5ca3ce1202713f7758bebe97f9b9757"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aac0b2b45289de7e8d8a6dcf79773bab4"><td class="memItemLeft" align="right" valign="top"><a id="aac0b2b45289de7e8d8a6dcf79773bab4"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d65/classxii_string_utils.htm#aac0b2b45289de7e8d8a6dcf79773bab4">OutputFormattedFloat</a> (char *szOutputBuffer, xiiUInt32 uiBufferSize, xiiUInt32 &amp;uiWritePos, double value, xiiUInt8 uiWidth, bool bPadZeros, xiiInt8 iPrecision, bool bScientific, bool bRemoveTrailingZeroes=false)</td></tr>
-<tr class="memdesc:aac0b2b45289de7e8d8a6dcf79773bab4"><td class="mdescLeft">&#160;</td><td class="mdescRight">[internal] Prefer to use snprintf. <br /></td></tr>
-<tr class="separator:aac0b2b45289de7e8d8a6dcf79773bab4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a0b74f61d0e82ea0b3e9cd58ce4cfa2"><td class="memItemLeft" align="right" valign="top"><a id="a5a0b74f61d0e82ea0b3e9cd58ce4cfa2"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d65/classxii_string_utils.htm#a5a0b74f61d0e82ea0b3e9cd58ce4cfa2">OutputFormattedInt</a> (char *szOutputBuffer, xiiUInt32 uiBufferSize, xiiUInt32 &amp;ref_uiWritePos, xiiInt64 value, xiiUInt8 uiWidth, bool bPadZeros, xiiUInt8 uiBase)</td></tr>
+<tr class="memdesc:a5a0b74f61d0e82ea0b3e9cd58ce4cfa2"><td class="mdescLeft">&#160;</td><td class="mdescRight">[internal] Prefer to use snprintf. <br /></td></tr>
+<tr class="separator:a5a0b74f61d0e82ea0b3e9cd58ce4cfa2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a542dbaf977c7e0eaaaf2767f0a643113"><td class="memItemLeft" align="right" valign="top"><a id="a542dbaf977c7e0eaaaf2767f0a643113"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d65/classxii_string_utils.htm#a542dbaf977c7e0eaaaf2767f0a643113">OutputFormattedUInt</a> (char *szOutputBuffer, xiiUInt32 uiBufferSize, xiiUInt32 &amp;ref_uiWritePos, xiiUInt64 value, xiiUInt8 uiWidth, bool bPadZeros, xiiUInt8 uiBase, bool bUpperCase)</td></tr>
+<tr class="memdesc:a542dbaf977c7e0eaaaf2767f0a643113"><td class="mdescLeft">&#160;</td><td class="mdescRight">[internal] Prefer to use snprintf. <br /></td></tr>
+<tr class="separator:a542dbaf977c7e0eaaaf2767f0a643113"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa09ca69a3e92c9f37131f49406c2ae7f"><td class="memItemLeft" align="right" valign="top"><a id="aa09ca69a3e92c9f37131f49406c2ae7f"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d65/classxii_string_utils.htm#aa09ca69a3e92c9f37131f49406c2ae7f">OutputFormattedFloat</a> (char *szOutputBuffer, xiiUInt32 uiBufferSize, xiiUInt32 &amp;ref_uiWritePos, double value, xiiUInt8 uiWidth, bool bPadZeros, xiiInt8 iPrecision, bool bScientific, bool bRemoveTrailingZeroes=false)</td></tr>
+<tr class="memdesc:aa09ca69a3e92c9f37131f49406c2ae7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">[internal] Prefer to use snprintf. <br /></td></tr>
+<tr class="separator:aa09ca69a3e92c9f37131f49406c2ae7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7f17d12ee53866f542591c778a20665f"><td class="memItemLeft" align="right" valign="top"><a id="a7f17d12ee53866f542591c778a20665f"></a>
 static XII_ALWAYS_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><b>AddUsedStringLength</b> (xiiUInt32)</td></tr>
 <tr class="separator:a7f17d12ee53866f542591c778a20665f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -797,8 +797,8 @@ static XII_ALWAYS_INLINE void&#160;</td><td class="memItemRight" valign="bottom"
 
 </div>
 </div>
-<a id="a58dee67de68e752a638c6dccb352f366"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a58dee67de68e752a638c6dccb352f366">&#9670;&nbsp;</a></span>FindWordEnd()</h2>
+<a id="aebb3fca85f4d33a25455bc92483cc944"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aebb3fca85f4d33a25455bc92483cc944">&#9670;&nbsp;</a></span>FindWordEnd()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -816,7 +816,7 @@ static XII_ALWAYS_INLINE void&#160;</td><td class="memItemRight" valign="bottom"
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="../../df/d65/classxii_string_utils.htm#af474cd805cbd076c00d508adacd057bd">XII_CHARACTER_FILTER</a>&#160;</td>
-          <td class="paramname"><em>IsDelimiterCB</em>, </td>
+          <td class="paramname"><em>isDelimiterCB</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1028,8 +1028,8 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="a72a6a917b8eda24e75e249d864f92bcf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a72a6a917b8eda24e75e249d864f92bcf">&#9670;&nbsp;</a></span>SkipCharacters()</h2>
+<a id="a94f0deead6e274cb780d4171c4b12bc7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a94f0deead6e274cb780d4171c4b12bc7">&#9670;&nbsp;</a></span>SkipCharacters()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1047,7 +1047,7 @@ template&lt;typename T &gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="../../df/d65/classxii_string_utils.htm#af474cd805cbd076c00d508adacd057bd">XII_CHARACTER_FILTER</a>&#160;</td>
-          <td class="paramname"><em>SkipCharacterCB</em>, </td>
+          <td class="paramname"><em>skipCharacterCB</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1207,8 +1207,8 @@ Formatting works exactly like printf, except that it additionally supports outpu
 
 </div>
 </div>
-<a id="a610ef2231671f7958ef47889d4d24f2c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a610ef2231671f7958ef47889d4d24f2c">&#9670;&nbsp;</a></span>Trim()</h2>
+<a id="ace52b990b8af8413bc0622ffa96cc036"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ace52b990b8af8413bc0622ffa96cc036">&#9670;&nbsp;</a></span>Trim()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1220,13 +1220,13 @@ Formatting works exactly like printf, except that it additionally supports outpu
           <td class="memname">void xiiStringUtils::Trim </td>
           <td>(</td>
           <td class="paramtype">const char *&amp;&#160;</td>
-          <td class="paramname"><em>pString</em>, </td>
+          <td class="paramname"><em>ref_pString</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const char *&amp;&#160;</td>
-          <td class="paramname"><em>pStringEnd</em>, </td>
+          <td class="paramname"><em>ref_pStringEnd</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1266,8 +1266,8 @@ Formatting works exactly like printf, except that it additionally supports outpu
 
 </div>
 </div>
-<a id="ac4df15233df5a9ab4fb460982d856c8d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac4df15233df5a9ab4fb460982d856c8d">&#9670;&nbsp;</a></span>vsnprintf()</h2>
+<a id="a0baa3e2dc382fae0d4bea6b91e10ab85"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0baa3e2dc382fae0d4bea6b91e10ab85">&#9670;&nbsp;</a></span>vsnprintf()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1297,7 +1297,7 @@ Formatting works exactly like printf, except that it additionally supports outpu
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">va_list&#160;</td>
-          <td class="paramname"><em>ap</em>&#160;</td>
+          <td class="paramname"><em>szAp</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1333,7 +1333,7 @@ Formatting works exactly like printf, except that it additionally supports outpu
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../df/d65/classxii_string_utils.htm">xiiStringUtils</a></li>
-    <li class="footer">Generated on Mon Apr 17 2023 20:10:42 for XIIEngine by
+    <li class="footer">Generated on Fri Jun 16 2023 14:12:58 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

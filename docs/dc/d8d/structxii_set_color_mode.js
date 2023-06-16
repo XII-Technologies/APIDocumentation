@@ -1,6 +1,6 @@
 var structxii_set_color_mode =
 [
-    [ "StorageType", "dc/d8d/structxii_set_color_mode.htm#a05a1cb17e5ef782414f54e8dac7d5d8a", null ],
+    [ "StorageType", "dc/d8d/structxii_set_color_mode.htm#adb9b5b2f4a32898138bfb2a024854507", null ],
     [ "Enum", "dc/d8d/structxii_set_color_mode.htm#a5ae6dbcbc9375444a865aece17db9a52", [
       [ "SetRGBA", "dc/d8d/structxii_set_color_mode.htm#a5ae6dbcbc9375444a865aece17db9a52a247cba30daea1a2dacc0277be2ad1536", null ],
       [ "SetRGB", "dc/d8d/structxii_set_color_mode.htm#a5ae6dbcbc9375444a865aece17db9a52a5a7ad19a48d991fcffbe0fecbc2d42a9", null ],

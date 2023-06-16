@@ -25,7 +25,7 @@ var classxii_simd_b_box =
     [ "SetCenterAndHalfExtents", "dd/d35/classxii_simd_b_box.htm#ae422c7f3da74a91580636a8b0ea1be6d", null ],
     [ "SetFromPoints", "dd/d35/classxii_simd_b_box.htm#acd7ab605978edd80523b3b48edc05451", null ],
     [ "SetInvalid", "dd/d35/classxii_simd_b_box.htm#a8ac7235821e8bdc01d9e54d7caeed053", null ],
-    [ "Transform", "dd/d35/classxii_simd_b_box.htm#a354686560b166f89cfe22ebd041bdac3", null ],
+    [ "Transform", "dd/d35/classxii_simd_b_box.htm#afbe9bc8827f7f85c98e2a585ee652c24", null ],
     [ "Transform", "dd/d35/classxii_simd_b_box.htm#aa0750401f8af052742144bee6b277d97", null ],
     [ "Translate", "dd/d35/classxii_simd_b_box.htm#ad4d2d930f522048b0abb06634b4aaed1", null ],
     [ "XII_DECLARE_POD_TYPE", "dd/d35/classxii_simd_b_box.htm#a73f3fcdc1146f967b0e192490070d8fb", null ],

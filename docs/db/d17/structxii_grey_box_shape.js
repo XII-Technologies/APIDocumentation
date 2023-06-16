@@ -1,6 +1,6 @@
 var structxii_grey_box_shape =
 [
-    [ "StorageType", "db/d17/structxii_grey_box_shape.htm#a3f5936d505347ee5a60506d554eac837", null ],
+    [ "StorageType", "db/d17/structxii_grey_box_shape.htm#a64b4d2d953004869c39a6ce605811624", null ],
     [ "Enum", "db/d17/structxii_grey_box_shape.htm#a556500d9c93aeb71259077cd8c97c7b6", [
       [ "Box", "db/d17/structxii_grey_box_shape.htm#a556500d9c93aeb71259077cd8c97c7b6ad4302cc8a61bbc74b9fedb3d7b0c4fb2", null ],
       [ "RampX", "db/d17/structxii_grey_box_shape.htm#a556500d9c93aeb71259077cd8c97c7b6a250bb22f6e7805ee34857be615ff128b", null ],

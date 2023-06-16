@@ -29,10 +29,9 @@ var classxii_g_a_l_command_encoder_impl_diligent =
     [ "EndQueryPlatform", "d1/dda/classxii_g_a_l_command_encoder_impl_diligent.htm#a1bb26c4bbbfd12279deab79797fa17a9", null ],
     [ "EndRendering", "d1/dda/classxii_g_a_l_command_encoder_impl_diligent.htm#a49359837886527236dbeef5e0718d79d", null ],
     [ "EndStreamOutPlatform", "d1/dda/classxii_g_a_l_command_encoder_impl_diligent.htm#a1211c4dfdd86d17292531d82a164b152", null ],
-    [ "FillPipelineDescriptorBindings", "d1/dda/classxii_g_a_l_command_encoder_impl_diligent.htm#a7355d8aa31ae05501c6c8b70ffa41d77", null ],
     [ "FillShaderDescriptorBindings", "d1/dda/classxii_g_a_l_command_encoder_impl_diligent.htm#a61c7419eff87b54d77d614855761902d", null ],
-    [ "FlushDeferredStateChangesCompute", "d1/dda/classxii_g_a_l_command_encoder_impl_diligent.htm#a466a06574d9cbf189c55644b7bb860a8", null ],
-    [ "FlushDeferredStateChangesGraphics", "d1/dda/classxii_g_a_l_command_encoder_impl_diligent.htm#aed80762640697134d0892756cbd6a690", null ],
+    [ "FlushDeferredStateChanges", "d1/dda/classxii_g_a_l_command_encoder_impl_diligent.htm#a7159319cfe2a67181e02901c7560c268", null ],
+    [ "FlushPipelineStateCache", "d1/dda/classxii_g_a_l_command_encoder_impl_diligent.htm#a315d9f7d79d2a83cae7a846951166f8a", null ],
     [ "FlushPlatform", "d1/dda/classxii_g_a_l_command_encoder_impl_diligent.htm#a6d8aef92acdd3b2d24ebf3185c45acf3", null ],
     [ "GenerateMipMapsPlatform", "d1/dda/classxii_g_a_l_command_encoder_impl_diligent.htm#a684eff537dba72ef182a4282615f729e", null ],
     [ "GetQueryResultPlatform", "d1/dda/classxii_g_a_l_command_encoder_impl_diligent.htm#a57115f20c7829fcfaa0157b6987d88b2", null ],
@@ -57,8 +56,8 @@ var classxii_g_a_l_command_encoder_impl_diligent =
     [ "SetVertexBufferPlatform", "d1/dda/classxii_g_a_l_command_encoder_impl_diligent.htm#addcbb62139a7f86238acf32992e69a70", null ],
     [ "SetVertexDeclarationPlatform", "d1/dda/classxii_g_a_l_command_encoder_impl_diligent.htm#a7a20cfc1764c830dfd0857c6cf88f497", null ],
     [ "SetViewportPlatform", "d1/dda/classxii_g_a_l_command_encoder_impl_diligent.htm#a5691c753ff9da570a1f2c9b854707b8e", null ],
+    [ "TransitionResources", "d1/dda/classxii_g_a_l_command_encoder_impl_diligent.htm#a01649cb564fc2371f4a5585720932640", null ],
     [ "UpdateBufferPlatform", "d1/dda/classxii_g_a_l_command_encoder_impl_diligent.htm#a9d70d61a374237c93c684eb445aff39d", null ],
     [ "UpdateTexturePlatform", "d1/dda/classxii_g_a_l_command_encoder_impl_diligent.htm#a96b53534f1fb97d9641dc87e4187c8f1", null ],
-    [ "xiiGALPassDiligent", "d1/dda/classxii_g_a_l_command_encoder_impl_diligent.htm#acb3b4c62f9aced66a379bad084cad63c", null ],
-    [ "xiiGALSwapchainDiligent", "d1/dda/classxii_g_a_l_command_encoder_impl_diligent.htm#aa04246f35a46ba0791f10c1ffc9fd55b", null ]
+    [ "xiiGALPassDiligent", "d1/dda/classxii_g_a_l_command_encoder_impl_diligent.htm#acb3b4c62f9aced66a379bad084cad63c", null ]
 ];

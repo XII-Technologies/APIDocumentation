@@ -113,9 +113,9 @@ Public Member Functions</h2></td></tr>
 virtual void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d0e/classxii_stack_allocator.htm#a3ff0f6a8206372ca2a992dc13073359b">Allocate</a> (size_t uiSize, size_t uiAlign, xiiMemoryUtils::DestructorFunction destructorFunc) override</td></tr>
 <tr class="memdesc:a3ff0f6a8206372ca2a992dc13073359b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interface, do not use this directly, always use the new/delete macros below. <br /></td></tr>
 <tr class="separator:a3ff0f6a8206372ca2a992dc13073359b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac72e61e2490f63f3f16343cc9a09b0ba"><td class="memItemLeft" align="right" valign="top"><a id="ac72e61e2490f63f3f16343cc9a09b0ba"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>Deallocate</b> (void *ptr) override</td></tr>
-<tr class="separator:ac72e61e2490f63f3f16343cc9a09b0ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0d3a161417f446e5fff6c19ec8c12e4"><td class="memItemLeft" align="right" valign="top"><a id="ac0d3a161417f446e5fff6c19ec8c12e4"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>Deallocate</b> (void *pPtr) override</td></tr>
+<tr class="separator:ac0d3a161417f446e5fff6c19ec8c12e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a98ab029b1f58b3ae99d019ec7229031e"><td class="memItemLeft" align="right" valign="top"><a id="a98ab029b1f58b3ae99d019ec7229031e"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d0e/classxii_stack_allocator.htm#a98ab029b1f58b3ae99d019ec7229031e">Reset</a> ()</td></tr>
 <tr class="memdesc:a98ab029b1f58b3ae99d019ec7229031e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resets the allocator freeing all memory. <br /></td></tr>
@@ -132,9 +132,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../.
 <tr class="memitem:a2f6e2077504cacf618c6f71b8bb6aec3 inherit pub_methods_classxii_internal_1_1xii_allocator_impl"><td class="memItemLeft" align="right" valign="top"><a id="a2f6e2077504cacf618c6f71b8bb6aec3"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>xiiAllocatorImpl</b> (const char *szName, <a class="el" href="../../d5/d66/classxii_allocator_base.htm">xiiAllocatorBase</a> *pParent)</td></tr>
 <tr class="separator:a2f6e2077504cacf618c6f71b8bb6aec3 inherit pub_methods_classxii_internal_1_1xii_allocator_impl"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a37429155fd2122e542161992800aa245 inherit pub_methods_classxii_internal_1_1xii_allocator_impl"><td class="memItemLeft" align="right" valign="top">virtual size_t&#160;</td><td class="memItemRight" valign="bottom"><b>AllocatedSize</b> (const void *ptr) override</td></tr>
-<tr class="memdesc:a37429155fd2122e542161992800aa245 inherit pub_methods_classxii_internal_1_1xii_allocator_impl"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of bytes allocated at this address.  <a href="../../d4/deb/classxii_internal_1_1xii_allocator_impl.htm#a37429155fd2122e542161992800aa245">More...</a><br /></td></tr>
-<tr class="separator:a37429155fd2122e542161992800aa245 inherit pub_methods_classxii_internal_1_1xii_allocator_impl"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8dfd4e6902e53de854ed78dc39c455b inherit pub_methods_classxii_internal_1_1xii_allocator_impl"><td class="memItemLeft" align="right" valign="top">virtual size_t&#160;</td><td class="memItemRight" valign="bottom"><b>AllocatedSize</b> (const void *pPtr) override</td></tr>
+<tr class="memdesc:ab8dfd4e6902e53de854ed78dc39c455b inherit pub_methods_classxii_internal_1_1xii_allocator_impl"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of bytes allocated at this address.  <a href="../../d4/deb/classxii_internal_1_1xii_allocator_impl.htm#ab8dfd4e6902e53de854ed78dc39c455b">More...</a><br /></td></tr>
+<tr class="separator:ab8dfd4e6902e53de854ed78dc39c455b inherit pub_methods_classxii_internal_1_1xii_allocator_impl"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2505871a8e38041a1fb7903ce0cb4ef8 inherit pub_methods_classxii_internal_1_1xii_allocator_impl"><td class="memItemLeft" align="right" valign="top"><a id="a2505871a8e38041a1fb7903ce0cb4ef8"></a>
 virtual <a class="el" href="../../d0/dcc/structxii_generic_id.htm">xiiAllocatorId</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetId</b> () const override</td></tr>
 <tr class="separator:a2505871a8e38041a1fb7903ce0cb4ef8 inherit pub_methods_classxii_internal_1_1xii_allocator_impl"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -145,9 +145,9 @@ virtual <a class="el" href="../../d1/d87/structxii_allocator_base_1_1_stats.htm"
 <a class="el" href="../../d5/d66/classxii_allocator_base.htm">xiiAllocatorBase</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetParent</b> () const</td></tr>
 <tr class="separator:aa78c530024654951a8eaafbc739215c9 inherit pub_methods_classxii_internal_1_1xii_allocator_impl"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classxii_allocator_base"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classxii_allocator_base')"><img src="../../closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="../../d5/d66/classxii_allocator_base.htm">xiiAllocatorBase</a></td></tr>
-<tr class="memitem:af9943fcf5e9de0190ac37179e342acee inherit pub_methods_classxii_allocator_base"><td class="memItemLeft" align="right" valign="top"><a id="af9943fcf5e9de0190ac37179e342acee"></a>
-virtual void *&#160;</td><td class="memItemRight" valign="bottom"><b>Reallocate</b> (void *ptr, size_t uiCurrentSize, size_t uiNewSize, size_t uiAlign)</td></tr>
-<tr class="separator:af9943fcf5e9de0190ac37179e342acee inherit pub_methods_classxii_allocator_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a513d4d045fb7deae7dc2430c52fcdb48 inherit pub_methods_classxii_allocator_base"><td class="memItemLeft" align="right" valign="top"><a id="a513d4d045fb7deae7dc2430c52fcdb48"></a>
+virtual void *&#160;</td><td class="memItemRight" valign="bottom"><b>Reallocate</b> (void *pPtr, size_t uiCurrentSize, size_t uiNewSize, size_t uiAlign)</td></tr>
+<tr class="separator:a513d4d045fb7deae7dc2430c52fcdb48 inherit pub_methods_classxii_allocator_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a70762e85455c7ef33fe5afc71fec8a90 inherit pub_methods_classxii_allocator_base"><td class="memItemLeft" align="right" valign="top"><a id="a70762e85455c7ef33fe5afc71fec8a90"></a>
 virtual <a class="el" href="../../d0/dcc/structxii_generic_id.htm">xiiAllocatorId</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetId</b> () const =0</td></tr>
 <tr class="separator:a70762e85455c7ef33fe5afc71fec8a90 inherit pub_methods_classxii_allocator_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -178,7 +178,7 @@ xiiThreadID&#160;</td><td class="memItemRight" valign="bottom"><b>m_ThreadID</b>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../de/d0e/classxii_stack_allocator.htm">xiiStackAllocator</a></li>
-    <li class="footer">Generated on Mon Apr 17 2023 20:10:42 for XIIEngine by
+    <li class="footer">Generated on Fri Jun 16 2023 14:12:57 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

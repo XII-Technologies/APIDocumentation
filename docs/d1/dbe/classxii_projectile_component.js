@@ -2,11 +2,11 @@ var classxii_projectile_component =
 [
     [ "xiiProjectileComponent", "d1/dbe/classxii_projectile_component.htm#a1227bdeaf10fa5df338eb6f9f7b0221e", null ],
     [ "~xiiProjectileComponent", "d1/dbe/classxii_projectile_component.htm#a70ad0d28e843e2a1a93c337207018951", null ],
-    [ "DeserializeComponent", "d1/dbe/classxii_projectile_component.htm#a91f5501cdd924d25d837dedf5e1c9c46", null ],
+    [ "DeserializeComponent", "d1/dbe/classxii_projectile_component.htm#a9b5a93f4d030f21b4bc4ddfeda3752b6", null ],
     [ "GetFallbackSurfaceFile", "d1/dbe/classxii_projectile_component.htm#aabf546794716a053b133693fef36dd34", null ],
     [ "GetTimeoutPrefab", "d1/dbe/classxii_projectile_component.htm#a3545ddd880aaa364104527987dbcb7dd", null ],
     [ "OnSimulationStarted", "d1/dbe/classxii_projectile_component.htm#ae8ab0a57619b5ee594f47c18d2a3c99c", null ],
-    [ "SerializeComponent", "d1/dbe/classxii_projectile_component.htm#aaf4f0dfd906b1ce4863b4605c8eed85a", null ],
+    [ "SerializeComponent", "d1/dbe/classxii_projectile_component.htm#accea3a4b5ddba31497339b6b3eb218bd", null ],
     [ "SetFallbackSurfaceFile", "d1/dbe/classxii_projectile_component.htm#aeb158f2882578f80d8d3c2ac7b196e3a", null ],
     [ "SetTimeoutPrefab", "d1/dbe/classxii_projectile_component.htm#a08bc508bb1e32b25f5f6f286aee6c10b", null ],
     [ "m_fGravityMultiplier", "d1/dbe/classxii_projectile_component.htm#a69ddb96b057543762d202664b31556aa", null ],

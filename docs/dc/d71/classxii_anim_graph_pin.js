@@ -9,9 +9,9 @@ var classxii_anim_graph_pin =
       [ "ModelPose", "dc/d71/classxii_anim_graph_pin.htm#a95e97cf665c6de6a88f45cd3782d3999a96ad9bbcc419b8b584b93964f373eace", null ],
       [ "ENUM_COUNT", "dc/d71/classxii_anim_graph_pin.htm#a95e97cf665c6de6a88f45cd3782d3999a4f518a1d0dd88ea1d7565733b5ec31b9", null ]
     ] ],
-    [ "Deserialize", "dc/d71/classxii_anim_graph_pin.htm#a75a5107512758ceb18dcd96e4131fcc9", null ],
+    [ "Deserialize", "dc/d71/classxii_anim_graph_pin.htm#a650398abdf6bb211c94fa12d32e4e2eb", null ],
     [ "IsConnected", "dc/d71/classxii_anim_graph_pin.htm#a67b63bfe8ad5c9f4de621b74cdd4b814", null ],
-    [ "Serialize", "dc/d71/classxii_anim_graph_pin.htm#afe5a7e3d57c9b853dd1414b78253dcb9", null ],
+    [ "Serialize", "dc/d71/classxii_anim_graph_pin.htm#a5582b6e1655c6c3afe9941259982edcc", null ],
     [ "m_iPinIndex", "dc/d71/classxii_anim_graph_pin.htm#aedc7e9da50e84981a9feaa7f8245b261", null ],
     [ "m_uiNumConnections", "dc/d71/classxii_anim_graph_pin.htm#a28b968ce00fec22cbf024c4ec7bc8a61", null ]
 ];

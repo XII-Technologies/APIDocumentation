@@ -15,7 +15,7 @@ var classxii_selection_manager =
     [ "IsSelected", "d6/df0/classxii_selection_manager.htm#ae684288a55c99571a157ad66fcf20d25", null ],
     [ "IsSelectionEmpty", "d6/df0/classxii_selection_manager.htm#a74d7acdf692430918a1da3f486daf50b", null ],
     [ "RemoveObject", "d6/df0/classxii_selection_manager.htm#add8e846c30fffbae5084a5d19265cdb7", null ],
-    [ "SetSelection", "d6/df0/classxii_selection_manager.htm#af975e99e96f02ddc90e61dcdcca08128", null ],
+    [ "SetSelection", "d6/df0/classxii_selection_manager.htm#ae3e6f9067326d1c892a1b8004ed364ad", null ],
     [ "SetSelection", "d6/df0/classxii_selection_manager.htm#a05d489f07a237c9cf79748bf5fffdaad", null ],
     [ "SwapStorage", "d6/df0/classxii_selection_manager.htm#a68d9bafccb029c0d376d921e47c1764d", null ],
     [ "ToggleObject", "d6/df0/classxii_selection_manager.htm#af84251ed6105e2c4887c8fc26e8fdfb4", null ],

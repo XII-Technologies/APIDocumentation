@@ -1,6 +1,6 @@
 var structxii_world_desc =
 [
-    [ "xiiWorldDesc", "d3/d43/structxii_world_desc.htm#a39355ddedfc4228179ed95775a732009", null ],
+    [ "xiiWorldDesc", "d3/d43/structxii_world_desc.htm#a5eacf380b6612c9dacb469c4a32b63ba", null ],
     [ "XII_DECLARE_POD_TYPE", "d3/d43/structxii_world_desc.htm#a083de1825932e4091c8b1a38c9967f8e", null ],
     [ "m_bAutoCreateSpatialSystem", "d3/d43/structxii_world_desc.htm#ab760622107964a48e423937d696a7da6", null ],
     [ "m_bReportErrorWhenStaticObjectMoves", "d3/d43/structxii_world_desc.htm#a189abe8127208f9dcf189a08cc298643", null ],

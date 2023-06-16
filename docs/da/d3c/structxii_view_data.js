@@ -1,7 +1,7 @@
 var structxii_view_data =
 [
     [ "xiiViewData", "da/d3c/structxii_view_data.htm#a27ca1d9750257d48f15d11297f506d8a", null ],
-    [ "ComputePickingRay", "da/d3c/structxii_view_data.htm#a4bbad6d8662784ff4ba29bd15b49fd40", null ],
+    [ "ComputePickingRay", "da/d3c/structxii_view_data.htm#a08c05b729aacdc6a547b5a53710ebcfe", null ],
     [ "ComputeScreenSpacePos", "da/d3c/structxii_view_data.htm#ab5f23726de0bda8a05f16a55b4798338", null ],
     [ "m_CameraUsageHint", "da/d3c/structxii_view_data.htm#a7eba5d0d44b6672948828b860bb2d819", null ],
     [ "m_hSwapChain", "da/d3c/structxii_view_data.htm#a44ad0aa2131207a911980e7dab894d98", null ],

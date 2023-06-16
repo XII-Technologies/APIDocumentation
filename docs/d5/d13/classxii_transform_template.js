@@ -1,7 +1,7 @@
 var classxii_transform_template =
 [
     [ "ComponentType", "d5/d13/classxii_transform_template.htm#a34467a5bc7cc93f9b9a0e7057b3cd2fd", null ],
-    [ "xiiTransformTemplate", "d5/d13/classxii_transform_template.htm#a2668a3c155ef45a9675eda39c4cbd508", null ],
+    [ "xiiTransformTemplate", "d5/d13/classxii_transform_template.htm#ac27efcd528f8d8fcedae8a557fa2753e", null ],
     [ "xiiTransformTemplate", "d5/d13/classxii_transform_template.htm#afc9c45f3aaecc379266bd0e9491911c3", null ],
     [ "ContainsNegativeScale", "d5/d13/classxii_transform_template.htm#a33662d5ecbe759b7b29cf3e14f456652", null ],
     [ "ContainsUniformScale", "d5/d13/classxii_transform_template.htm#a425ad7398ce0d3d84707b7b6ee7c04a6", null ],
@@ -13,10 +13,10 @@ var classxii_transform_template =
     [ "IsIdentical", "d5/d13/classxii_transform_template.htm#a45eb6fe689f441aea3fa9fdab05ad91b", null ],
     [ "operator+=", "d5/d13/classxii_transform_template.htm#a6def2ae113afac2c6bbed04e05102d87", null ],
     [ "operator-=", "d5/d13/classxii_transform_template.htm#a64a3c5e3997b637f226b3f1161cac953", null ],
-    [ "SetFromMat4", "d5/d13/classxii_transform_template.htm#ae27c8b4efc70eaf8d04bed5372303b31", null ],
-    [ "SetGlobalTransform", "d5/d13/classxii_transform_template.htm#a99f940c18190adb7c15cc7f248b6ef81", null ],
+    [ "SetFromMat4", "d5/d13/classxii_transform_template.htm#aebafcbcf8590f912d2e6d419383c780c", null ],
+    [ "SetGlobalTransform", "d5/d13/classxii_transform_template.htm#a922779422cb31f6bf0ec05ef3bd5a298", null ],
     [ "SetIdentity", "d5/d13/classxii_transform_template.htm#a44e06a8cc7377e41f52049dab22ebcbf", null ],
-    [ "SetLocalTransform", "d5/d13/classxii_transform_template.htm#af9db2b39083e3c9d47f639ebf71aa69d", null ],
+    [ "SetLocalTransform", "d5/d13/classxii_transform_template.htm#a69615c191cfadcb8869f114b51ed81ea", null ],
     [ "TransformDirection", "d5/d13/classxii_transform_template.htm#a65d24a1050c26b6e626f625914797565", null ],
     [ "TransformPosition", "d5/d13/classxii_transform_template.htm#a36a35049b6989f075e8771082194fcbb", null ],
     [ "XII_DECLARE_POD_TYPE", "d5/d13/classxii_transform_template.htm#abcaa99c183b2b7e36a71bc41504a43b0", null ],

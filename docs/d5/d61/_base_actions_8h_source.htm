@@ -164,7 +164,7 @@ $(document).ready(function(){initNavTree('d5/d61/_base_actions_8h_source.htm','.
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
 <div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="../../d8/d49/structxii_dynamic_menu_action_1_1_item_1_1_item_flags.htm">   80</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="../../d8/d49/structxii_dynamic_menu_action_1_1_item_1_1_item_flags.htm">ItemFlags</a></div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    {</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;      <span class="keyword">typedef</span> xiiUInt8 StorageType;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;      <span class="keyword">using</span> StorageType = xiiUInt8;</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;      <span class="keyword">enum</span> Enum</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;      {</div>
@@ -190,7 +190,7 @@ $(document).ready(function(){initNavTree('d5/d61/_base_actions_8h_source.htm','.
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <a class="code" href="../../d9/d0c/classxii_menu_action.htm">xiiMenuAction</a>(context, szName, szIconPath)</div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;  {</div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;  }</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> GetEntries(<a class="code" href="../../dc/da9/classxii_hybrid_array.htm">xiiHybridArray&lt;Item, 16&gt;</a>&amp; out_Entries) = 0;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> GetEntries(<a class="code" href="../../dc/da9/classxii_hybrid_array.htm">xiiHybridArray&lt;Item, 16&gt;</a>&amp; out_entries) = 0;</div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;};</div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160; </div>
 <div class="line"><a name="l00112"></a><span class="lineno"><a class="line" href="../../d9/d2d/classxii_dynamic_action_and_menu_action.htm">  112</a></span>&#160;<span class="keyword">class </span>XII_GUIFOUNDATION_DLL <a class="code" href="../../d9/d2d/classxii_dynamic_action_and_menu_action.htm">xiiDynamicActionAndMenuAction</a> : <span class="keyword">public</span> <a class="code" href="../../de/da6/classxii_dynamic_menu_action.htm">xiiDynamicMenuAction</a></div>
@@ -228,7 +228,7 @@ $(document).ready(function(){initNavTree('d5/d61/_base_actions_8h_source.htm','.
 <div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;  <a class="code" href="../../da/dec/classxii_enumeration_menu_action.htm">xiiEnumerationMenuAction</a>(<span class="keyword">const</span> <a class="code" href="../../d9/d45/structxii_action_context.htm">xiiActionContext</a>&amp; context, <span class="keyword">const</span> <span class="keywordtype">char</span>* szName, <span class="keyword">const</span> <span class="keywordtype">char</span>* szIconPath);</div>
 <div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;  <span class="keywordtype">void</span>             InitEnumerationType(<span class="keyword">const</span> <a class="code" href="../../db/d89/classxii_r_t_t_i.htm">xiiRTTI</a>* pEnumerationType);</div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span>     GetEntries(<a class="code" href="../../dc/da9/classxii_hybrid_array.htm">xiiHybridArray&lt;xiiDynamicMenuAction::Item, 16&gt;</a>&amp; out_Entries) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span>     GetEntries(<a class="code" href="../../dc/da9/classxii_hybrid_array.htm">xiiHybridArray&lt;xiiDynamicMenuAction::Item, 16&gt;</a>&amp; out_entries) <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;  <span class="keyword">virtual</span> xiiInt64 GetValue() <span class="keyword">const</span> = 0;</div>
 <div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160; </div>
 <div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;<span class="keyword">protected</span>:</div>
@@ -314,7 +314,7 @@ $(document).ready(function(){initNavTree('d5/d61/_base_actions_8h_source.htm','.
 <div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;  <span class="keywordtype">void</span> SetRange(xiiInt32 iMin, xiiInt32 iMax, <span class="keywordtype">bool</span> bTriggerUpdate = <span class="keyword">true</span>);</div>
 <div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160; </div>
 <div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;  xiiInt32 GetValue()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_iCurValue; }</div>
-<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;  <span class="keywordtype">void</span>     SetValue(xiiInt32 val, <span class="keywordtype">bool</span> bTriggerUpdate = <span class="keyword">true</span>);</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;  <span class="keywordtype">void</span>     SetValue(xiiInt32 iVal, <span class="keywordtype">bool</span> bTriggerUpdate = <span class="keyword">true</span>);</div>
 <div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160; </div>
 <div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;<span class="keyword">protected</span>:</div>
 <div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;  <span class="keywordtype">bool</span>     m_bEnabled;</div>
@@ -333,12 +333,12 @@ $(document).ready(function(){initNavTree('d5/d61/_base_actions_8h_source.htm','.
 <div class="ttc" id="astructxii_dynamic_menu_action_1_1_item_1_1_item_flags_htm"><div class="ttname"><a href="../../d8/d49/structxii_dynamic_menu_action_1_1_item_1_1_item_flags.htm">xiiDynamicMenuAction::Item::ItemFlags</a></div><div class="ttdef"><b>Definition:</b> BaseActions.h:80</div></div>
 <div class="ttc" id="aclassxii_dynamic_menu_action_htm"><div class="ttname"><a href="../../de/da6/classxii_dynamic_menu_action.htm">xiiDynamicMenuAction</a></div><div class="ttdef"><b>Definition:</b> BaseActions.h:66</div></div>
 <div class="ttc" id="aclassxii_category_action_htm"><div class="ttname"><a href="../../d4/db0/classxii_category_action.htm">xiiCategoryAction</a></div><div class="ttdef"><b>Definition:</b> BaseActions.h:38</div></div>
-<div class="ttc" id="aclassxii_r_t_t_i_htm"><div class="ttname"><a href="../../db/d89/classxii_r_t_t_i.htm">xiiRTTI</a></div><div class="ttdoc">This enumerable class holds information about reflected types. Each instance represents one type that...</div><div class="ttdef"><b>Definition:</b> RTTI.h:30</div></div>
+<div class="ttc" id="aclassxii_r_t_t_i_htm"><div class="ttname"><a href="../../db/d89/classxii_r_t_t_i.htm">xiiRTTI</a></div><div class="ttdoc">This enumerable class holds information about reflected types. Each instance represents one type that...</div><div class="ttdef"><b>Definition:</b> RTTI.h:31</div></div>
 <div class="ttc" id="aclassxii_slider_action_htm"><div class="ttname"><a href="../../d0/df6/classxii_slider_action.htm">xiiSliderAction</a></div><div class="ttdef"><b>Definition:</b> BaseActions.h:203</div></div>
-<div class="ttc" id="astructxii_action_context_htm"><div class="ttname"><a href="../../d9/d45/structxii_action_context.htm">xiiActionContext</a></div><div class="ttdef"><b>Definition:</b> Action.h:65</div></div>
+<div class="ttc" id="astructxii_action_context_htm"><div class="ttname"><a href="../../d9/d45/structxii_action_context.htm">xiiActionContext</a></div><div class="ttdef"><b>Definition:</b> Action.h:66</div></div>
 <div class="ttc" id="aclassxii_button_action_htm"><div class="ttname"><a href="../../dc/ddb/classxii_button_action.htm">xiiButtonAction</a></div><div class="ttdef"><b>Definition:</b> BaseActions.h:156</div></div>
 <div class="ttc" id="astructxii_bitflags_htm"><div class="ttname"><a href="../../d7/d55/structxii_bitflags.htm">xiiBitflags</a></div><div class="ttdoc">The xiiBitflags class allows you to work with type-safe bitflags.</div><div class="ttdef"><b>Definition:</b> Bitflags.h:80</div></div>
-<div class="ttc" id="aclassxii_action_htm"><div class="ttname"><a href="../../d8/d30/classxii_action.htm">xiiAction</a></div><div class="ttdef"><b>Definition:</b> Action.h:107</div></div>
+<div class="ttc" id="aclassxii_action_htm"><div class="ttname"><a href="../../d8/d30/classxii_action.htm">xiiAction</a></div><div class="ttdef"><b>Definition:</b> Action.h:109</div></div>
 <div class="ttc" id="aclassxii_enumeration_menu_action_htm"><div class="ttname"><a href="../../da/dec/classxii_enumeration_menu_action.htm">xiiEnumerationMenuAction</a></div><div class="ttdef"><b>Definition:</b> BaseActions.h:141</div></div>
 <div class="ttc" id="astructxii_dynamic_menu_action_1_1_item_htm"><div class="ttname"><a href="../../d5/d06/structxii_dynamic_menu_action_1_1_item.htm">xiiDynamicMenuAction::Item</a></div><div class="ttdef"><b>Definition:</b> BaseActions.h:71</div></div>
 <div class="ttc" id="aclassxii_dynamic_action_and_menu_action_htm"><div class="ttname"><a href="../../d9/d2d/classxii_dynamic_action_and_menu_action.htm">xiiDynamicActionAndMenuAction</a></div><div class="ttdef"><b>Definition:</b> BaseActions.h:112</div></div>
@@ -347,7 +347,7 @@ $(document).ready(function(){initNavTree('d5/d61/_base_actions_8h_source.htm','.
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.htm">home</a></li><li class="navelem"><a class="el" href="../../dir_1036706e55c22cab35bc1c58ee689f1d.htm">runner</a></li><li class="navelem"><a class="el" href="../../dir_629f8151d55d307162ff2d619fb1783d.htm">work</a></li><li class="navelem"><a class="el" href="../../dir_1ddc44fe1263a8c7935fa6130b7d9499.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_2c1b6808f12952f4c36e05ba7068379a.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_b5a1c4ecfca018ad24b729e213296d41.htm">Source</a></li><li class="navelem"><a class="el" href="../../dir_64f53f8da7bf780a58c32bb848e7873b.htm">Tools</a></li><li class="navelem"><a class="el" href="../../dir_4b5bc41f7c4cbfc8ca80bdea56300f1d.htm">Libs</a></li><li class="navelem"><a class="el" href="../../dir_8694d7149aa3c4cbc4b219c953b250c5.htm">GuiFoundation</a></li><li class="navelem"><a class="el" href="../../dir_40e014400703acd3da42316ebab15bea.htm">Action</a></li><li class="navelem"><b>BaseActions.h</b></li>
-    <li class="footer">Generated on Mon Apr 17 2023 20:10:35 for XIIEngine by
+    <li class="footer">Generated on Fri Jun 16 2023 14:12:48 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

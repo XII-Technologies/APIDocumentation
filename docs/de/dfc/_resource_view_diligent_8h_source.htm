@@ -107,24 +107,24 @@ $(document).ready(function(){initNavTree('de/dfc/_resource_view_diligent_8h_sour
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;  <a class="code" href="../../da/d04/classxii_g_a_l_resource_view_diligent.htm">xiiGALResourceViewDiligent</a>(<a class="code" href="../../d4/d76/classxii_g_a_l_resource_base.htm">xiiGALResourceBase</a>* pResource, <span class="keyword">const</span> <a class="code" href="../../dd/d15/structxii_g_a_l_resource_view_creation_description.htm">xiiGALResourceViewCreationDescription</a>&amp; Description);</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  ~<a class="code" href="../../da/d04/classxii_g_a_l_resource_view_diligent.htm">xiiGALResourceViewDiligent</a>();</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  <span class="keyword">virtual</span> ~<a class="code" href="../../da/d04/classxii_g_a_l_resource_view_diligent.htm">xiiGALResourceViewDiligent</a>();</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  <span class="keyword">virtual</span> <a class="code" href="../../dd/dad/structxii_result.htm">xiiResult</a> InitPlatform(<a class="code" href="../../d5/d19/classxii_g_a_l_device.htm">xiiGALDevice</a>* pDevice) <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  <span class="keyword">virtual</span> <a class="code" href="../../dd/dad/structxii_result.htm">xiiResult</a> DeInitPlatform(<a class="code" href="../../d5/d19/classxii_g_a_l_device.htm">xiiGALDevice</a>* pDevice) <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  Diligent::ITextureView* m_pTextureView = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  Diligent::RefCntAutoPtr&lt;Diligent::ITextureView&gt; m_pTextureView;</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  Diligent::IBufferView* m_pBufferView = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  Diligent::RefCntAutoPtr&lt;Diligent::IBufferView&gt; m_pBufferView;</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;};</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &lt;RendererDiligent/Resources/Implementation/ResourceViewDiligent_inl.h&gt;</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclassxii_g_a_l_resource_base_htm"><div class="ttname"><a href="../../d4/d76/classxii_g_a_l_resource_base.htm">xiiGALResourceBase</a></div><div class="ttdef"><b>Definition:</b> Resource.h:8</div></div>
-<div class="ttc" id="astructxii_g_a_l_resource_view_creation_description_htm"><div class="ttname"><a href="../../dd/d15/structxii_g_a_l_resource_view_creation_description.htm">xiiGALResourceViewCreationDescription</a></div><div class="ttdef"><b>Definition:</b> Descriptors.h:325</div></div>
+<div class="ttc" id="astructxii_g_a_l_resource_view_creation_description_htm"><div class="ttname"><a href="../../dd/d15/structxii_g_a_l_resource_view_creation_description.htm">xiiGALResourceViewCreationDescription</a></div><div class="ttdef"><b>Definition:</b> Descriptors.h:330</div></div>
 <div class="ttc" id="aclassxii_memory_utils_htm"><div class="ttname"><a href="../../d8/d9d/classxii_memory_utils.htm">xiiMemoryUtils</a></div><div class="ttdoc">This class provides functions to work on raw memory.</div><div class="ttdef"><b>Definition:</b> MemoryUtils.h:19</div></div>
-<div class="ttc" id="aclassxii_g_a_l_device_diligent_htm"><div class="ttname"><a href="../../d6/df4/classxii_g_a_l_device_diligent.htm">xiiGALDeviceDiligent</a></div><div class="ttdoc">The Diligent device implementation of the graphics abstraction layer.</div><div class="ttdef"><b>Definition:</b> DeviceDiligent.h:16</div></div>
+<div class="ttc" id="aclassxii_g_a_l_device_diligent_htm"><div class="ttname"><a href="../../d6/df4/classxii_g_a_l_device_diligent.htm">xiiGALDeviceDiligent</a></div><div class="ttdoc">The Diligent device implementation of the graphics abstraction layer.</div><div class="ttdef"><b>Definition:</b> DeviceDiligent.h:18</div></div>
 <div class="ttc" id="aclassxii_g_a_l_resource_view_diligent_htm"><div class="ttname"><a href="../../da/d04/classxii_g_a_l_resource_view_diligent.htm">xiiGALResourceViewDiligent</a></div><div class="ttdef"><b>Definition:</b> ResourceViewDiligent.h:6</div></div>
 <div class="ttc" id="astructxii_result_htm"><div class="ttname"><a href="../../dd/dad/structxii_result.htm">xiiResult</a></div><div class="ttdoc">Default enum for returning failure or success, instead of using a bool.</div><div class="ttdef"><b>Definition:</b> Types.h:54</div></div>
 <div class="ttc" id="aclassxii_g_a_l_resource_view_htm"><div class="ttname"><a href="../../dc/d10/classxii_g_a_l_resource_view.htm">xiiGALResourceView</a></div><div class="ttdef"><b>Definition:</b> ResourceView.h:7</div></div>
@@ -133,7 +133,7 @@ $(document).ready(function(){initNavTree('de/dfc/_resource_view_diligent_8h_sour
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.htm">home</a></li><li class="navelem"><a class="el" href="../../dir_1036706e55c22cab35bc1c58ee689f1d.htm">runner</a></li><li class="navelem"><a class="el" href="../../dir_629f8151d55d307162ff2d619fb1783d.htm">work</a></li><li class="navelem"><a class="el" href="../../dir_1ddc44fe1263a8c7935fa6130b7d9499.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_2c1b6808f12952f4c36e05ba7068379a.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_b5a1c4ecfca018ad24b729e213296d41.htm">Source</a></li><li class="navelem"><a class="el" href="../../dir_e321052006a51284e67389ab20037e7c.htm">Engine</a></li><li class="navelem"><a class="el" href="../../dir_e27f557319c003a17fbd4dca8e84207a.htm">RendererDiligent</a></li><li class="navelem"><a class="el" href="../../dir_557dfd41704b5f3d2e60793a75920294.htm">Resources</a></li><li class="navelem"><b>ResourceViewDiligent.h</b></li>
-    <li class="footer">Generated on Mon Apr 17 2023 20:10:33 for XIIEngine by
+    <li class="footer">Generated on Fri Jun 16 2023 14:12:47 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

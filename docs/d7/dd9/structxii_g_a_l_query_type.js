@@ -1,6 +1,6 @@
 var structxii_g_a_l_query_type =
 [
-    [ "StorageType", "d7/dd9/structxii_g_a_l_query_type.htm#ac71a5127ba40b820aa2ccaf999a294fb", null ],
+    [ "StorageType", "d7/dd9/structxii_g_a_l_query_type.htm#a4056e1a10c019b19e756d9d992171d8a", null ],
     [ "Enum", "d7/dd9/structxii_g_a_l_query_type.htm#a79dc576b080513ba6405c76548a57fa2", [
       [ "Occlusion", "d7/dd9/structxii_g_a_l_query_type.htm#a79dc576b080513ba6405c76548a57fa2abd3bb6bbb594ca562ea2a74343df60dc", null ],
       [ "BinaryOcclusion", "d7/dd9/structxii_g_a_l_query_type.htm#a79dc576b080513ba6405c76548a57fa2a4529df13397f03fb211774f13381ff53", null ],

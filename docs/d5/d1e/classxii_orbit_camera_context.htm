@@ -119,10 +119,19 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>SetCamera</b> (<a cla
 <tr class="memitem:aeaa33c53055bb980d453bea31a02038b"><td class="memItemLeft" align="right" valign="top"><a id="aeaa33c53055bb980d453bea31a02038b"></a>
 <a class="el" href="../../dc/d68/classxii_camera.htm">xiiCamera</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetCamera</b> () const</td></tr>
 <tr class="separator:aeaa33c53055bb980d453bea31a02038b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab8f367c421054d8e24f073b57fe00e73"><td class="memItemLeft" align="right" valign="top"><a id="ab8f367c421054d8e24f073b57fe00e73"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d1e/classxii_orbit_camera_context.htm#ab8f367c421054d8e24f073b57fe00e73">SetOrbitVolume</a> (const <a class="el" href="../../d9/d9a/classxii_vec3_template.htm">xiiVec3</a> &amp;vCenterPos, const <a class="el" href="../../d9/d9a/classxii_vec3_template.htm">xiiVec3</a> &amp;vHalfBoxSize, const <a class="el" href="../../d9/d9a/classxii_vec3_template.htm">xiiVec3</a> &amp;vDefaultCameraPosition, bool bSetCamLookat)</td></tr>
-<tr class="memdesc:ab8f367c421054d8e24f073b57fe00e73"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines the box in which the user may move the camera around. <br /></td></tr>
-<tr class="separator:ab8f367c421054d8e24f073b57fe00e73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f7e981c34cd00d95c61060b3e0b5039"><td class="memItemLeft" align="right" valign="top"><a id="a9f7e981c34cd00d95c61060b3e0b5039"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetDefaultCameraRelative</b> (const <a class="el" href="../../d9/d9a/classxii_vec3_template.htm">xiiVec3</a> &amp;vDirection, float fDistanceScale)</td></tr>
+<tr class="separator:a9f7e981c34cd00d95c61060b3e0b5039"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae95748103bcba030733d8cff68742b74"><td class="memItemLeft" align="right" valign="top"><a id="ae95748103bcba030733d8cff68742b74"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetDefaultCameraFixed</b> (const <a class="el" href="../../d9/d9a/classxii_vec3_template.htm">xiiVec3</a> &amp;vPosition)</td></tr>
+<tr class="separator:ae95748103bcba030733d8cff68742b74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7722d51df78006dc0636c096d766cf9"><td class="memItemLeft" align="right" valign="top"><a id="aa7722d51df78006dc0636c096d766cf9"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>MoveCameraToDefaultPosition</b> ()</td></tr>
+<tr class="separator:aa7722d51df78006dc0636c096d766cf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8d3aa389eacdb903b645ff95b67ad1c"><td class="memItemLeft" align="right" valign="top"><a id="ae8d3aa389eacdb903b645ff95b67ad1c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d1e/classxii_orbit_camera_context.htm#ae8d3aa389eacdb903b645ff95b67ad1c">SetOrbitVolume</a> (const <a class="el" href="../../d9/d9a/classxii_vec3_template.htm">xiiVec3</a> &amp;vCenterPos, const <a class="el" href="../../d9/d9a/classxii_vec3_template.htm">xiiVec3</a> &amp;vHalfBoxSize)</td></tr>
+<tr class="memdesc:ae8d3aa389eacdb903b645ff95b67ad1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines the box in which the user may move the camera around. <br /></td></tr>
+<tr class="separator:ae8d3aa389eacdb903b645ff95b67ad1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a10620a1048a55ab910cb2c0d0f7f79fa"><td class="memItemLeft" align="right" valign="top"><a id="a10620a1048a55ab910cb2c0d0f7f79fa"></a>
 <a class="el" href="../../d9/d9a/classxii_vec3_template.htm">xiiVec3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d1e/classxii_orbit_camera_context.htm#a10620a1048a55ab910cb2c0d0f7f79fa">GetVolumeCenter</a> () const</td></tr>
 <tr class="memdesc:a10620a1048a55ab910cb2c0d0f7f79fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">The center point around which the camera can be moved and rotated. <br /></td></tr>
@@ -221,13 +230,12 @@ virtual xiiEditorInput&#160;</td><td class="memItemRight" valign="bottom"><b>DoW
 <tr class="memitem:a810775e25cbad0068bf4ef6c52f947a1"><td class="memItemLeft" align="right" valign="top"><a id="a810775e25cbad0068bf4ef6c52f947a1"></a>
 virtual xiiEditorInput&#160;</td><td class="memItemRight" valign="bottom"><b>DoKeyPressEvent</b> (QKeyEvent *e) override</td></tr>
 <tr class="separator:a810775e25cbad0068bf4ef6c52f947a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a514139b8e8ac59829e034ce527eacbae"><td class="memItemLeft" align="right" valign="top"><a id="a514139b8e8ac59829e034ce527eacbae"></a>
+virtual xiiEditorInput&#160;</td><td class="memItemRight" valign="bottom"><b>DoKeyReleaseEvent</b> (QKeyEvent *e) override</td></tr>
+<tr class="separator:a514139b8e8ac59829e034ce527eacbae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afc8f3dfebb89b02cbc7d5c15d9ce0139"><td class="memItemLeft" align="right" valign="top"><a id="afc8f3dfebb89b02cbc7d5c15d9ce0139"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>OnSetOwner</b> (<a class="el" href="../../d0/d97/classxii_qt_engine_document_window.htm">xiiQtEngineDocumentWindow</a> *pOwnerWindow, <a class="el" href="../../d3/d93/classxii_qt_engine_view_widget.htm">xiiQtEngineViewWidget</a> *pOwnerView) override</td></tr>
 <tr class="separator:afc8f3dfebb89b02cbc7d5c15d9ce0139"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pro_methods_classxii_editor_input_context"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classxii_editor_input_context')"><img src="../../closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="../../d0/d47/classxii_editor_input_context.htm">xiiEditorInputContext</a></td></tr>
-<tr class="memitem:a69f8de43022bfed4d2c366ed7033d2c2 inherit pro_methods_classxii_editor_input_context"><td class="memItemLeft" align="right" valign="top"><a id="a69f8de43022bfed4d2c366ed7033d2c2"></a>
-virtual xiiEditorInput&#160;</td><td class="memItemRight" valign="bottom"><b>DoKeyReleaseEvent</b> (QKeyEvent *e)</td></tr>
-<tr class="separator:a69f8de43022bfed4d2c366ed7033d2c2 inherit pro_methods_classxii_editor_input_context"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -268,7 +276,7 @@ static const <a class="el" href="../../db/d89/classxii_r_t_t_i.htm">xiiRTTI</a> 
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d5/d1e/classxii_orbit_camera_context.htm">xiiOrbitCameraContext</a></li>
-    <li class="footer">Generated on Mon Apr 17 2023 20:10:40 for XIIEngine by
+    <li class="footer">Generated on Fri Jun 16 2023 14:12:54 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

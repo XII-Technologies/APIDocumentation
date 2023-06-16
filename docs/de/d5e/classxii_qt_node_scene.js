@@ -7,7 +7,7 @@ var classxii_qt_node_scene =
       [ "Pin", "de/d5e/classxii_qt_node_scene.htm#a79f7bc974ee4769b9c26f4a1486b88afa519b62e4a988bb0357b112e67ee910cf", null ],
       [ "Connection", "de/d5e/classxii_qt_node_scene.htm#a79f7bc974ee4769b9c26f4a1486b88afabbae477bb4a60d7d82fcb18312b87762", null ]
     ] ],
-    [ "xiiQtNodeScene", "de/d5e/classxii_qt_node_scene.htm#a1def7ac27c49e156a9ec813093723553", null ],
+    [ "xiiQtNodeScene", "de/d5e/classxii_qt_node_scene.htm#af0ece7737fd25262823e01cdcb9c4311", null ],
     [ "~xiiQtNodeScene", "de/d5e/classxii_qt_node_scene.htm#a3a06c53f8d77e303086d082a8d0e11ca", null ],
     [ "ConnectPinsAction", "de/d5e/classxii_qt_node_scene.htm#a7d8d6ee0eec03728ada808e755cf99b6", null ],
     [ "contextMenuEvent", "de/d5e/classxii_qt_node_scene.htm#af31c027061e8eb5bc0333b00d0ec1460", null ],

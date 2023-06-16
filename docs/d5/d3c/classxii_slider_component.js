@@ -2,9 +2,9 @@ var classxii_slider_component =
 [
     [ "xiiSliderComponent", "d5/d3c/classxii_slider_component.htm#a505194c2592173101d6f130bf192dade", null ],
     [ "~xiiSliderComponent", "d5/d3c/classxii_slider_component.htm#ac190c7972d586b5fa436c73c6470e796", null ],
-    [ "DeserializeComponent", "d5/d3c/classxii_slider_component.htm#aaa6b0377897addde9c60286539c50a91", null ],
+    [ "DeserializeComponent", "d5/d3c/classxii_slider_component.htm#af2a859a3b5eb6a05c808719da4bcc0d4", null ],
     [ "OnSimulationStarted", "d5/d3c/classxii_slider_component.htm#ac65adf0c8fddd97cd1d2da5d76effdea", null ],
-    [ "SerializeComponent", "d5/d3c/classxii_slider_component.htm#a593bb87624c544f4a2531f663de8c821", null ],
+    [ "SerializeComponent", "d5/d3c/classxii_slider_component.htm#a5433b23a4d88066f6dc8fce49a7fd7d6", null ],
     [ "Update", "d5/d3c/classxii_slider_component.htm#a80c3a835d10845440a0066c0c7dac0f4", null ],
     [ "m_Axis", "d5/d3c/classxii_slider_component.htm#ac6161950f5d255d6de85564adb9ae364", null ],
     [ "m_fAcceleration", "d5/d3c/classxii_slider_component.htm#a89058838d73e13f4489271988de8144c", null ],

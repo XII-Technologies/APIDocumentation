@@ -1,7 +1,7 @@
 var structxii_kraut_generator_resource_descriptor =
 [
-    [ "Deserialize", "d5/d2d/structxii_kraut_generator_resource_descriptor.htm#a88a76830f8258051a71707e0d5ff0eab", null ],
-    [ "Serialize", "d5/d2d/structxii_kraut_generator_resource_descriptor.htm#aa45b43d12aa6dda17481c5f8b412409f", null ],
+    [ "Deserialize", "d5/d2d/structxii_kraut_generator_resource_descriptor.htm#a34bf2c255244638f1a4ae8ea11bbb76b", null ],
+    [ "Serialize", "d5/d2d/structxii_kraut_generator_resource_descriptor.htm#aad32287d0176aa084c0ceec29e992617", null ],
     [ "m_fLodDistanceScale", "d5/d2d/structxii_kraut_generator_resource_descriptor.htm#a60d4d8d0f18d6be54c94ee25ecb2b99c", null ],
     [ "m_fStaticColliderRadius", "d5/d2d/structxii_kraut_generator_resource_descriptor.htm#ac352500abbcaeff5f3293e1f732bfe37", null ],
     [ "m_fTreeStiffness", "d5/d2d/structxii_kraut_generator_resource_descriptor.htm#a0381d9b404094a83018c6c86890a8296", null ],

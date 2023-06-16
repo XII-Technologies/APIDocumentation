@@ -1,6 +1,6 @@
 var classxii_resource_loader_from_memory =
 [
-    [ "CloseDataStream", "d7/dbb/classxii_resource_loader_from_memory.htm#a918d2210aeaf2453b7d51eaa02db1033", null ],
+    [ "CloseDataStream", "d7/dbb/classxii_resource_loader_from_memory.htm#ab844da99c8e56ab4a0d6a691748d5bcb", null ],
     [ "IsResourceOutdated", "d7/dbb/classxii_resource_loader_from_memory.htm#a7c7bd293c27628640c93777ce6329b35", null ],
     [ "OpenDataStream", "d7/dbb/classxii_resource_loader_from_memory.htm#ac50476657aff491b8a4155172185ccaa", null ],
     [ "m_CustomData", "d7/dbb/classxii_resource_loader_from_memory.htm#aeef3e82608b6b4aa7271019494fc767f", null ],

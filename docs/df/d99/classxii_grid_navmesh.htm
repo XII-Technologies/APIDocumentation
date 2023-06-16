@@ -107,26 +107,26 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:acc0c50a9ad349ec26961ba3c7ec730e2"><td class="memItemLeft" align="right" valign="top"><a id="acc0c50a9ad349ec26961ba3c7ec730e2"></a>
-typedef bool(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d99/classxii_grid_navmesh.htm#acc0c50a9ad349ec26961ba3c7ec730e2">CellComparator</a>) (xiiUInt32 uiCell1, xiiUInt32 uiCell2, void *pPassThrough)</td></tr>
-<tr class="memdesc:acc0c50a9ad349ec26961ba3c7ec730e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback that determines whether the cell with index <em>uiCell1</em> and the cell with index <em>uiCell2</em> represent the same type of terrain. <br /></td></tr>
-<tr class="separator:acc0c50a9ad349ec26961ba3c7ec730e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a20f6cef4dae5e03ea8cadc8b33008cc7"><td class="memItemLeft" align="right" valign="top"><a id="a20f6cef4dae5e03ea8cadc8b33008cc7"></a>
-typedef bool(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d99/classxii_grid_navmesh.htm#a20f6cef4dae5e03ea8cadc8b33008cc7">CellBlocked</a>) (xiiUInt32 uiCell, void *pPassThrough)</td></tr>
-<tr class="memdesc:a20f6cef4dae5e03ea8cadc8b33008cc7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback that determines whether the cell with index <em>uiCell</em> is blocked entirely (for every type of unit) and therefore can be optimized away. <br /></td></tr>
-<tr class="separator:a20f6cef4dae5e03ea8cadc8b33008cc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af26c5cb8f31e33fae5bc8844a107b968"><td class="memItemLeft" align="right" valign="top"><a id="af26c5cb8f31e33fae5bc8844a107b968"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d99/classxii_grid_navmesh.htm#af26c5cb8f31e33fae5bc8844a107b968">CellComparator</a> = bool(*)(xiiUInt32, xiiUInt32, void *)</td></tr>
+<tr class="memdesc:af26c5cb8f31e33fae5bc8844a107b968"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback that determines whether the cell with index <em>uiCell1</em> and the cell with index <em>uiCell2</em> represent the same type of terrain. <br /></td></tr>
+<tr class="separator:af26c5cb8f31e33fae5bc8844a107b968"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92fb5f09af0c23fc3f3d6b69ba68b686"><td class="memItemLeft" align="right" valign="top"><a id="a92fb5f09af0c23fc3f3d6b69ba68b686"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d99/classxii_grid_navmesh.htm#a92fb5f09af0c23fc3f3d6b69ba68b686">CellBlocked</a> = bool(*)(xiiUInt32, void *)</td></tr>
+<tr class="memdesc:a92fb5f09af0c23fc3f3d6b69ba68b686"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback that determines whether the cell with index <em>uiCell</em> is blocked entirely (for every type of unit) and therefore can be optimized away. <br /></td></tr>
+<tr class="separator:a92fb5f09af0c23fc3f3d6b69ba68b686"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a7101c6dff80b4fe62f7027c3143f1c5e"><td class="memTemplParams" colspan="2"><a id="a7101c6dff80b4fe62f7027c3143f1c5e"></a>
+<tr class="memitem:a8a19582f8be3eff733b0155e01ebc067"><td class="memTemplParams" colspan="2"><a id="a8a19582f8be3eff733b0155e01ebc067"></a>
 template&lt;class CellData &gt; </td></tr>
-<tr class="memitem:a7101c6dff80b4fe62f7027c3143f1c5e"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../df/d99/classxii_grid_navmesh.htm#a7101c6dff80b4fe62f7027c3143f1c5e">CreateFromGrid</a> (const <a class="el" href="../../dc/d30/classxii_game_grid.htm">xiiGameGrid</a>&lt; CellData &gt; &amp;Grid, <a class="el" href="../../df/d99/classxii_grid_navmesh.htm#acc0c50a9ad349ec26961ba3c7ec730e2">CellComparator</a> IsSameCellType, void *pPassThroughSame, <a class="el" href="../../df/d99/classxii_grid_navmesh.htm#a20f6cef4dae5e03ea8cadc8b33008cc7">CellBlocked</a> IsCellBlocked, void *pPassThroughBlocked)</td></tr>
-<tr class="memdesc:a7101c6dff80b4fe62f7027c3143f1c5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates the navmesh from the given <a class="el" href="../../dc/d30/classxii_game_grid.htm" title="xiiGameGrid is a general purpose 2D grid structure that has several convenience functions which are o...">xiiGameGrid</a>. <br /></td></tr>
-<tr class="separator:a7101c6dff80b4fe62f7027c3143f1c5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa4e1142ad5b9af134088d19b950f73fa"><td class="memItemLeft" align="right" valign="top"><a id="aa4e1142ad5b9af134088d19b950f73fa"></a>
-xiiInt32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d99/classxii_grid_navmesh.htm#aa4e1142ad5b9af134088d19b950f73fa">GetAreaAt</a> (const <a class="el" href="../../d1/d0d/classxii_vec2_template.htm">xiiVec2I32</a> &amp;Coord) const</td></tr>
-<tr class="memdesc:aa4e1142ad5b9af134088d19b950f73fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the index of the <a class="el" href="../../da/d1b/structxii_grid_navmesh_1_1_convex_area.htm">ConvexArea</a> at the given cell coordinates. Negative, if the cell is blocked. <br /></td></tr>
-<tr class="separator:aa4e1142ad5b9af134088d19b950f73fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a19582f8be3eff733b0155e01ebc067"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../df/d99/classxii_grid_navmesh.htm#a8a19582f8be3eff733b0155e01ebc067">CreateFromGrid</a> (const <a class="el" href="../../dc/d30/classxii_game_grid.htm">xiiGameGrid</a>&lt; CellData &gt; &amp;grid, <a class="el" href="../../df/d99/classxii_grid_navmesh.htm#af26c5cb8f31e33fae5bc8844a107b968">CellComparator</a> isSameCellType, void *pPassThroughSame, <a class="el" href="../../df/d99/classxii_grid_navmesh.htm#a92fb5f09af0c23fc3f3d6b69ba68b686">CellBlocked</a> isCellBlocked, void *pPassThroughBlocked)</td></tr>
+<tr class="memdesc:a8a19582f8be3eff733b0155e01ebc067"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates the navmesh from the given <a class="el" href="../../dc/d30/classxii_game_grid.htm" title="xiiGameGrid is a general purpose 2D grid structure that has several convenience functions which are o...">xiiGameGrid</a>. <br /></td></tr>
+<tr class="separator:a8a19582f8be3eff733b0155e01ebc067"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade09307b7928de6c9609ef7d2d83dd7c"><td class="memItemLeft" align="right" valign="top"><a id="ade09307b7928de6c9609ef7d2d83dd7c"></a>
+xiiInt32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d99/classxii_grid_navmesh.htm#ade09307b7928de6c9609ef7d2d83dd7c">GetAreaAt</a> (const <a class="el" href="../../d1/d0d/classxii_vec2_template.htm">xiiVec2I32</a> &amp;vCoord) const</td></tr>
+<tr class="memdesc:ade09307b7928de6c9609ef7d2d83dd7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the index of the <a class="el" href="../../da/d1b/structxii_grid_navmesh_1_1_convex_area.htm">ConvexArea</a> at the given cell coordinates. Negative, if the cell is blocked. <br /></td></tr>
+<tr class="separator:ade09307b7928de6c9609ef7d2d83dd7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a199ebbb8ab6a00ae3c29e52b9a1ddda4"><td class="memItemLeft" align="right" valign="top"><a id="a199ebbb8ab6a00ae3c29e52b9a1ddda4"></a>
 xiiUInt32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d99/classxii_grid_navmesh.htm#a199ebbb8ab6a00ae3c29e52b9a1ddda4">GetNumConvexAreas</a> () const</td></tr>
 <tr class="memdesc:a199ebbb8ab6a00ae3c29e52b9a1ddda4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of convex areas that this navmesh consists of. <br /></td></tr>
@@ -157,7 +157,7 @@ const <a class="el" href="../../d9/d5d/structxii_grid_navmesh_1_1_area_edge.htm"
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../df/d99/classxii_grid_navmesh.htm">xiiGridNavmesh</a></li>
-    <li class="footer">Generated on Mon Apr 17 2023 20:10:38 for XIIEngine by
+    <li class="footer">Generated on Fri Jun 16 2023 14:12:52 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

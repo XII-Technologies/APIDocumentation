@@ -14,7 +14,7 @@ var classxii_actor_manager =
     [ "DestroyApiService", "d6/d35/classxii_actor_manager.htm#a06309bc9a63db1babc50759dce853353", null ],
     [ "DestroyQueuedActorApiServices", "d6/d35/classxii_actor_manager.htm#a09b638e0ad26e126f226f72d1673610b", null ],
     [ "DestroyQueuedActors", "d6/d35/classxii_actor_manager.htm#ab91be6be75eef8290e7142ece32a8e54", null ],
-    [ "GetAllActors", "d6/d35/classxii_actor_manager.htm#a3ccb2c146ed929ec50ca9763c2858bed", null ],
+    [ "GetAllActors", "d6/d35/classxii_actor_manager.htm#aece0db4da9a1aaec86529a64b0b6d835", null ],
     [ "GetApiService", "d6/d35/classxii_actor_manager.htm#a3f3e9eb68839140bc2d0ff5d2f0d0cb3", null ],
     [ "GetApiService", "d6/d35/classxii_actor_manager.htm#acdac5ed012e8cc888cd4f29bf3ea12dc", null ],
     [ "Shutdown", "d6/d35/classxii_actor_manager.htm#acc944eed781dbe4f20af668a95bce34e", null ],

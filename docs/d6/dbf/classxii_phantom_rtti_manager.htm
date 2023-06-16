@@ -99,9 +99,9 @@ $(document).ready(function(){initNavTree('d6/dbf/classxii_phantom_rtti_manager.h
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a465764e703bc202cbe90bf8c7effbc22"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="../../db/d89/classxii_r_t_t_i.htm">xiiRTTI</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/dbf/classxii_phantom_rtti_manager.htm#a465764e703bc202cbe90bf8c7effbc22">RegisterType</a> (<a class="el" href="../../d2/d17/structxii_reflected_type_descriptor.htm">xiiReflectedTypeDescriptor</a> &amp;desc)</td></tr>
-<tr class="memdesc:a465764e703bc202cbe90bf8c7effbc22"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a reflected type to the list of accessible types.  <a href="../../d6/dbf/classxii_phantom_rtti_manager.htm#a465764e703bc202cbe90bf8c7effbc22">More...</a><br /></td></tr>
-<tr class="separator:a465764e703bc202cbe90bf8c7effbc22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1cf7d76821b38efd798cca88e71fa444"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="../../db/d89/classxii_r_t_t_i.htm">xiiRTTI</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/dbf/classxii_phantom_rtti_manager.htm#a1cf7d76821b38efd798cca88e71fa444">RegisterType</a> (<a class="el" href="../../d2/d17/structxii_reflected_type_descriptor.htm">xiiReflectedTypeDescriptor</a> &amp;ref_desc)</td></tr>
+<tr class="memdesc:a1cf7d76821b38efd798cca88e71fa444"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a reflected type to the list of accessible types.  <a href="../../d6/dbf/classxii_phantom_rtti_manager.htm#a1cf7d76821b38efd798cca88e71fa444">More...</a><br /></td></tr>
+<tr class="separator:a1cf7d76821b38efd798cca88e71fa444"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2cab48ce95262fe048727ae72e800627"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/dbf/classxii_phantom_rtti_manager.htm#a2cab48ce95262fe048727ae72e800627">UnregisterType</a> (const <a class="el" href="../../db/d89/classxii_r_t_t_i.htm">xiiRTTI</a> *pRtti)</td></tr>
 <tr class="memdesc:a2cab48ce95262fe048727ae72e800627"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes a type from the list of accessible types.  <a href="../../d6/dbf/classxii_phantom_rtti_manager.htm#a2cab48ce95262fe048727ae72e800627">More...</a><br /></td></tr>
 <tr class="separator:a2cab48ce95262fe048727ae72e800627"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -116,8 +116,8 @@ static <a class="el" href="../../dc/d22/classxii_event.htm">xiiCopyOnBroadcastEv
 <div class="textblock"><p>Manages all <a class="el" href="../../db/d2f/classxii_phantom_r_t_t_i.htm">xiiPhantomRTTI</a> types that have been added to him. </p>
 <p>A <a class="el" href="../../db/d2f/classxii_phantom_r_t_t_i.htm">xiiPhantomRTTI</a> cannot be created directly but must be created via this managers RegisterType function with a given <a class="el" href="../../d2/d17/structxii_reflected_type_descriptor.htm" title="Stores the description of a reflected type in a serializable form. Used by xiiPhantomRttiManager to a...">xiiReflectedTypeDescriptor</a>. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a465764e703bc202cbe90bf8c7effbc22"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a465764e703bc202cbe90bf8c7effbc22">&#9670;&nbsp;</a></span>RegisterType()</h2>
+<a id="a1cf7d76821b38efd798cca88e71fa444"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1cf7d76821b38efd798cca88e71fa444">&#9670;&nbsp;</a></span>RegisterType()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -129,7 +129,7 @@ static <a class="el" href="../../dc/d22/classxii_event.htm">xiiCopyOnBroadcastEv
           <td class="memname">const <a class="el" href="../../db/d89/classxii_r_t_t_i.htm">xiiRTTI</a> * xiiPhantomRttiManager::RegisterType </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="../../d2/d17/structxii_reflected_type_descriptor.htm">xiiReflectedTypeDescriptor</a> &amp;&#160;</td>
-          <td class="paramname"><em>desc</em></td><td>)</td>
+          <td class="paramname"><em>ref_desc</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -143,7 +143,7 @@ static <a class="el" href="../../dc/d22/classxii_event.htm">xiiCopyOnBroadcastEv
 <p>Adds a reflected type to the list of accessible types. </p>
 <p>Types must be added in the correct order, any type must be added before it can be referenced in other types. Any base class must be added before any class deriving from it can be added. Call the function again if a type has changed during the run of the program. If the type actually differs the last known class layout the m_TypeChangedEvent event will be called with the old and new <a class="el" href="../../db/d89/classxii_r_t_t_i.htm" title="This enumerable class holds information about reflected types. Each instance represents one type that...">xiiRTTI</a>.</p>
 <dl class="section see"><dt>See also</dt><dd>xiiReflectionUtils::GetReflectedTypeDescriptorFromRtti </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.htm#_todo000177">Todo:</a></b></dt><dd>Had to increase the recursion depth to allow registering phantom types that are based on actual types coming from the engine process </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.htm#_todo000169">Todo:</a></b></dt><dd>Had to increase the recursion depth to allow registering phantom types that are based on actual types coming from the engine process </dd></dl>
 
 </div>
 </div>
@@ -186,7 +186,7 @@ static <a class="el" href="../../dc/d22/classxii_event.htm">xiiCopyOnBroadcastEv
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d6/dbf/classxii_phantom_rtti_manager.htm">xiiPhantomRttiManager</a></li>
-    <li class="footer">Generated on Mon Apr 17 2023 20:10:40 for XIIEngine by
+    <li class="footer">Generated on Fri Jun 16 2023 14:12:55 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

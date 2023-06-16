@@ -391,7 +391,7 @@ static const <a class="el" href="../../db/d89/classxii_r_t_t_i.htm">xiiRTTI</a> 
 <p>Tries to resolve a 'reference' (given in pData) to an <a class="el" href="../../d0/d91/classxii_game_object.htm" title="This class represents an object inside the world.">xiiGameObject</a>. hThis is the 'owner' of the reference and szComponentProperty is the name of the reference property in that component.</p>
 <p>There are two different use cases:</p>
 <p>1) hThis is invalid and szComponentProperty is null:</p>
-<p>This is used by <a class="el" href="../../d3/d15/classxii_prefab_reference_component.htm#ab6bf6d9060eb94a12871a92d569e72f7" title="Override this to save the current state of the component to the given stream.">xiiPrefabReferenceComponent::SerializeComponent()</a> to check whether a string represents a game object reference. It may be any arbitrary string and thus must not assert. In this case a reference is always a stringyfied GUID. Since this is only used for scene export, only the lookup shall be done and nothing else.</p>
+<p>This is used by <a class="el" href="../../d3/d15/classxii_prefab_reference_component.htm#a00edea2331244b22d38af1679b5fe9cc" title="Override this to save the current state of the component to the given stream.">xiiPrefabReferenceComponent::SerializeComponent()</a> to check whether a string represents a game object reference. It may be any arbitrary string and thus must not assert. In this case a reference is always a stringyfied GUID. Since this is only used for scene export, only the lookup shall be done and nothing else.</p>
 <p>2) hThis and szComponentProperty represent a valid component+property combination:</p>
 <p>This is called at edit time whenever a reference property is queried, which also happens whenever a reference is modified. In this case we need to maintain two maps: one that know which object references which other objects one that knows by which other objects an object is referenced These are needed to fix up references during undo/redo when objects get deleted and recreated. Ie. when an object that has references or is referenced gets deleted and then undo restores it, the references should appear as well. </p>
 
@@ -470,7 +470,7 @@ static const <a class="el" href="../../db/d89/classxii_r_t_t_i.htm">xiiRTTI</a> 
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../db/de8/classxii_scene_context.htm">xiiSceneContext</a></li>
-    <li class="footer">Generated on Mon Apr 17 2023 20:10:42 for XIIEngine by
+    <li class="footer">Generated on Fri Jun 16 2023 14:12:57 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

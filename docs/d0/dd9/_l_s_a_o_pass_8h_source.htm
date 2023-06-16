@@ -98,7 +98,7 @@ $(document).ready(function(){initNavTree('d0/dd9/_l_s_a_o_pass_8h_source.htm','.
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
 <div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="../../db/daa/structxii_l_s_a_o_depth_compare_function.htm">   11</a></span>&#160;<span class="keyword">struct </span>XII_RENDERERCORE_DLL <a class="code" href="../../db/daa/structxii_l_s_a_o_depth_compare_function.htm">xiiLSAODepthCompareFunction</a></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;{</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;  <span class="keyword">typedef</span> xiiUInt8 StorageType;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;  <span class="keyword">using</span> StorageType = xiiUInt8;</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
 <div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="../../db/daa/structxii_l_s_a_o_depth_compare_function.htm#aad613b6174c5f15954f7bad9f8f1819e">   15</a></span>&#160;  <span class="keyword">enum</span> <a class="code" href="../../db/daa/structxii_l_s_a_o_depth_compare_function.htm#aad613b6174c5f15954f7bad9f8f1819e">Enum</a></div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;  {</div>
@@ -151,7 +151,7 @@ $(document).ready(function(){initNavTree('d0/dd9/_l_s_a_o_pass_8h_source.htm','.
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  <a class="code" href="../../d7/d1a/classxii_constant_buffer_storage_handle.htm">xiiConstantBufferStorageHandle</a> m_hLineSweepCB;</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  <span class="keywordtype">bool</span> m_bSweepDataDirty;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  <span class="keywordtype">bool</span> m_bSweepDataDirty = <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
 <div class="line"><a name="l00082"></a><span class="lineno"><a class="line" href="../../d5/d46/classxii_l_s_a_o_pass.htm#a8826813fce9e19aa5a9511168678ac65">   82</a></span>&#160;  <a class="code" href="../../d1/dba/classxii_g_a_l_buffer_handle.htm">xiiGALBufferHandle</a>              <a class="code" href="../../d5/d46/classxii_l_s_a_o_pass.htm#a8826813fce9e19aa5a9511168678ac65">m_hLineSweepOutputBuffer</a>;</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  <a class="code" href="../../d0/d76/classxii_g_a_l_unordered_access_view_handle.htm">xiiGALUnorderedAccessViewHandle</a> m_hLineSweepOutputUAV;</div>
@@ -162,10 +162,10 @@ $(document).ready(function(){initNavTree('d0/dd9/_l_s_a_o_pass_8h_source.htm','.
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
 <div class="line"><a name="l00091"></a><span class="lineno"><a class="line" href="../../d5/d46/classxii_l_s_a_o_pass.htm#a50ddc6d9be1c721b88b0c6c84427fa7e">   91</a></span>&#160;  xiiUInt32 <a class="code" href="../../d5/d46/classxii_l_s_a_o_pass.htm#a50ddc6d9be1c721b88b0c6c84427fa7e">m_uiNumSweepLines</a>;</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  xiiInt32                             m_iLineToLinePixelOffset;</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  xiiInt32                             m_iLineSamplePixelOffsetFactor;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  xiiInt32                             m_iLineToLinePixelOffset       = 2;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  xiiInt32                             m_iLineSamplePixelOffsetFactor = 1;</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  <a class="code" href="../../de/dfd/structxii_enum.htm">xiiEnum&lt;xiiLSAODepthCompareFunction&gt;</a> m_DepthCompareFunction;</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  <span class="keywordtype">bool</span>                                 m_bDistributedGathering;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  <span class="keywordtype">bool</span>                                 m_bDistributedGathering = <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  <a class="code" href="../../d6/d16/classxii_typed_resource_handle.htm">xiiShaderResourceHandle</a> m_hShaderLineSweep;</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  <a class="code" href="../../d6/d16/classxii_typed_resource_handle.htm">xiiShaderResourceHandle</a> m_hShaderGather;</div>
@@ -201,7 +201,7 @@ $(document).ready(function(){initNavTree('d0/dd9/_l_s_a_o_pass_8h_source.htm','.
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.htm">home</a></li><li class="navelem"><a class="el" href="../../dir_1036706e55c22cab35bc1c58ee689f1d.htm">runner</a></li><li class="navelem"><a class="el" href="../../dir_629f8151d55d307162ff2d619fb1783d.htm">work</a></li><li class="navelem"><a class="el" href="../../dir_1ddc44fe1263a8c7935fa6130b7d9499.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_2c1b6808f12952f4c36e05ba7068379a.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_b5a1c4ecfca018ad24b729e213296d41.htm">Source</a></li><li class="navelem"><a class="el" href="../../dir_e321052006a51284e67389ab20037e7c.htm">Engine</a></li><li class="navelem"><a class="el" href="../../dir_ce7209769439328870c665a52885ba73.htm">RendererCore</a></li><li class="navelem"><a class="el" href="../../dir_9c2667fdf49db6e838f493650a9b2158.htm">Pipeline</a></li><li class="navelem"><a class="el" href="../../dir_bc870099acb034b7822e2ea1e6d19b80.htm">Passes</a></li><li class="navelem"><b>LSAOPass.h</b></li>
-    <li class="footer">Generated on Mon Apr 17 2023 20:10:33 for XIIEngine by
+    <li class="footer">Generated on Fri Jun 16 2023 14:12:47 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

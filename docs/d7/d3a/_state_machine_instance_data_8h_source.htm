@@ -124,7 +124,7 @@ $(document).ready(function(){initNavTree('d7/d3a/_state_machine_instance_data_8h
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordtype">void</span> Destruct(<span class="keyword">const</span> <a class="code" href="../../d3/d93/classxii_blob_ptr.htm">xiiByteBlobPtr</a>&amp; blobPtr) <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <a class="code" href="../../d0/dec/classxii_blob.htm">xiiBlob</a> AllocateAndConstruct() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordtype">void</span>    DestructAndDeallocate(<a class="code" href="../../d0/dec/classxii_blob.htm">xiiBlob</a>&amp; blob) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordtype">void</span>    DestructAndDeallocate(<a class="code" href="../../d0/dec/classxii_blob.htm">xiiBlob</a>&amp; ref_blob) <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    xiiUInt32 GetTotalDataSize()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_uiTotalDataSize; }</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
@@ -164,9 +164,9 @@ $(document).ready(function(){initNavTree('d7/d3a/_state_machine_instance_data_8h
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;      }</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    };</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    XII_ALWAYS_INLINE <span class="keywordtype">void</span>* GetSubInstanceData(<a class="code" href="../../d2/d75/structxii_state_machine_internal_1_1_compound_1_1_instance_data.htm">InstanceData</a>* pData, xiiUInt32 index)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    XII_ALWAYS_INLINE <span class="keywordtype">void</span>* GetSubInstanceData(<a class="code" href="../../d2/d75/structxii_state_machine_internal_1_1_compound_1_1_instance_data.htm">InstanceData</a>* pData, xiiUInt32 uiIndex)<span class="keyword"> const</span></div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;      <span class="keywordflow">return</span> pData != <span class="keyword">nullptr</span> ? m_InstanceDataAllocator.GetInstanceData(pData-&gt;GetBlobPtr(), m_InstanceDataOffsets[index]) : <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;      <span class="keywordflow">return</span> pData != <span class="keyword">nullptr</span> ? m_InstanceDataAllocator.GetInstanceData(pData-&gt;GetBlobPtr(), m_InstanceDataOffsets[uiIndex]) : <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    }</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    XII_FORCE_INLINE <span class="keywordtype">void</span> Initialize(InstanceData* pData)<span class="keyword"> const</span></div>
@@ -237,7 +237,7 @@ $(document).ready(function(){initNavTree('d7/d3a/_state_machine_instance_data_8h
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.htm">home</a></li><li class="navelem"><a class="el" href="../../dir_1036706e55c22cab35bc1c58ee689f1d.htm">runner</a></li><li class="navelem"><a class="el" href="../../dir_629f8151d55d307162ff2d619fb1783d.htm">work</a></li><li class="navelem"><a class="el" href="../../dir_1ddc44fe1263a8c7935fa6130b7d9499.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_2c1b6808f12952f4c36e05ba7068379a.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_b5a1c4ecfca018ad24b729e213296d41.htm">Source</a></li><li class="navelem"><a class="el" href="../../dir_e321052006a51284e67389ab20037e7c.htm">Engine</a></li><li class="navelem"><a class="el" href="../../dir_16b55c55cbcae272b81765d1a4443891.htm">GameEngine</a></li><li class="navelem"><a class="el" href="../../dir_440d6ac3f2c3e2e9186a45956cfa8a76.htm">StateMachine</a></li><li class="navelem"><a class="el" href="../../dir_4e1a1ba3b7067c046fbbc532d98ba2a8.htm">Implementation</a></li><li class="navelem"><b>StateMachineInstanceData.h</b></li>
-    <li class="footer">Generated on Mon Apr 17 2023 20:10:32 for XIIEngine by
+    <li class="footer">Generated on Fri Jun 16 2023 14:12:46 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

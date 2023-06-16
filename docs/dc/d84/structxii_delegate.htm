@@ -118,7 +118,7 @@ struct xiiDelegate&lt; T, DataSize &gt;</h3>
 <p>A generic delegate class which supports static functions and member functions. </p>
 <p>A delegate is a function pointer that may be used to call both simple C functions, as well as member functions of some class, which requires a 'this' pointer to go along with. The delegate can capture both these use cases dynamically, so this distinction does not need to be made statically, but is the choice of the user who assigns some function to the delegate.</p>
 <p>Delegates have a rather strange syntax:</p>
-<div class="fragment"><div class="line"><span class="keyword">typedef</span> <a class="code" href="../../dc/d84/structxii_delegate.htm">xiiDelegate</a>&lt;void (xiiUInt32, <span class="keywordtype">float</span>)&gt; SomeCallback;</div>
+<div class="fragment"><div class="line"><span class="keyword">using</span> SomeCallback = <a class="code" href="../../dc/d84/structxii_delegate.htm">xiiDelegate</a>&lt;void (xiiUInt32, <span class="keywordtype">float</span>)&gt;;</div>
 </div><!-- fragment --><p>This defines a type 'SomeCallback' that can call any function that returns void and takes two parameters, the first being xiiUInt32, the second being a float parameter. Now you can use SomeCallback just like any other function pointer type.</p>
 <p>Assigning a C function as the value to the delegate is straight-forward:</p>
 <div class="fragment"><div class="line"><span class="keywordtype">void</span> SomeFunction(xiiUInt32 i, <span class="keywordtype">float</span> f);</div>
@@ -147,7 +147,7 @@ struct xiiDelegate&lt; T, DataSize &gt;</h3>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dc/d84/structxii_delegate.htm">xiiDelegate</a></li>
-    <li class="footer">Generated on Mon Apr 17 2023 20:10:37 for XIIEngine by
+    <li class="footer">Generated on Fri Jun 16 2023 14:12:51 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

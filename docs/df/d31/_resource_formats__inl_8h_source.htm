@@ -115,91 +115,86 @@ $(document).ready(function(){initNavTree('df/d31/_resource_formats__inl_8h_sourc
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment">// static</span></div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;XII_FORCE_INLINE <span class="keywordtype">bool</span> xiiGALResourceFormat::IsSrgb(xiiGALResourceFormat::Enum format)</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;{</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  <span class="keywordflow">return</span> format == BGRAUByteNormalizedsRGB || format == RGBAUByteNormalizedsRGB || format == BC1sRGB || format == BC2sRGB || format == BC3sRGB ||</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    format == BC7UNormalizedsRGB;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;}</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  <span class="keywordflow">return</span> format == BGRAUByteNormalizedsRGB || format == RGBAUByteNormalizedsRGB || format == BC1sRGB || format == BC2sRGB || format == BC3sRGB || format == BC7UNormalizedsRGB;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;}</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> NativeFormatType, NativeFormatType Inval<span class="keywordtype">id</span>Format&gt;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<a class="code" href="../../d5/de0/classxii_g_a_l_format_lookup_entry.htm">xiiGALFormatLookupEntry&lt;NativeFormatType, InvalidFormat&gt;::xiiGALFormatLookupEntry</a>() :</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  m_eStorage(InvalidFormat), m_eRenderTarget(InvalidFormat), m_eDepthOnlyType(InvalidFormat), m_eStencilOnlyType(InvalidFormat), m_eDepthStencilType(InvalidFormat), m_eVertexAttributeType(InvalidFormat), m_eResourceViewType(InvalidFormat)</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;{</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;}</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> NativeFormatType, NativeFormatType Inval<span class="keywordtype">id</span>Format&gt;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<a class="code" href="../../d5/de0/classxii_g_a_l_format_lookup_entry.htm">xiiGALFormatLookupEntry&lt;NativeFormatType, InvalidFormat&gt;::xiiGALFormatLookupEntry</a>() :</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  m_eStorage(InvalidFormat), m_eRenderTarget(InvalidFormat), m_eDepthOnlyType(InvalidFormat), m_eStencilOnlyType(InvalidFormat), m_eDepthStencilType(InvalidFormat), m_eVertexAttributeType(InvalidFormat), m_eResourceViewType(InvalidFormat)</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;{</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;}</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> NativeFormatType, NativeFormatType Inval<span class="keywordtype">id</span>Format&gt;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<a class="code" href="../../d5/de0/classxii_g_a_l_format_lookup_entry.htm">xiiGALFormatLookupEntry&lt;NativeFormatType, InvalidFormat&gt;::xiiGALFormatLookupEntry</a>(NativeFormatType Storage) :</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  m_eStorage(Storage), m_eRenderTarget(InvalidFormat), m_eDepthOnlyType(InvalidFormat), m_eStencilOnlyType(InvalidFormat), m_eDepthStencilType(InvalidFormat), m_eVertexAttributeType(InvalidFormat), m_eResourceViewType(InvalidFormat)</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;{</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;}</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> NativeFormatType, NativeFormatType Inval<span class="keywordtype">id</span>Format&gt;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<a class="code" href="../../d5/de0/classxii_g_a_l_format_lookup_entry.htm">xiiGALFormatLookupEntry&lt;NativeFormatType, InvalidFormat&gt;</a>&amp; <a class="code" href="../../d5/de0/classxii_g_a_l_format_lookup_entry.htm">xiiGALFormatLookupEntry&lt;NativeFormatType, InvalidFormat&gt;::RT</a>(</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  NativeFormatType RenderTargetType)</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;{</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  m_eRenderTarget = RenderTargetType;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;}</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> NativeFormatType, NativeFormatType Inval<span class="keywordtype">id</span>Format&gt;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<a class="code" href="../../d5/de0/classxii_g_a_l_format_lookup_entry.htm">xiiGALFormatLookupEntry&lt;NativeFormatType, InvalidFormat&gt;</a>&amp; <a class="code" href="../../d5/de0/classxii_g_a_l_format_lookup_entry.htm">xiiGALFormatLookupEntry&lt;NativeFormatType, InvalidFormat&gt;::D</a>(NativeFormatType DepthOnlyType)</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;{</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  m_eDepthOnlyType = DepthOnlyType;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;}</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> NativeFormatType, NativeFormatType Inval<span class="keywordtype">id</span>Format&gt;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<a class="code" href="../../d5/de0/classxii_g_a_l_format_lookup_entry.htm">xiiGALFormatLookupEntry&lt;NativeFormatType, InvalidFormat&gt;</a>&amp; <a class="code" href="../../d5/de0/classxii_g_a_l_format_lookup_entry.htm">xiiGALFormatLookupEntry&lt;NativeFormatType, InvalidFormat&gt;::S</a>(NativeFormatType StencilOnlyType)</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;{</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  m_eStencilOnlyType = StencilOnlyType;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;}</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> NativeFormatType, NativeFormatType Inval<span class="keywordtype">id</span>Format&gt;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<a class="code" href="../../d5/de0/classxii_g_a_l_format_lookup_entry.htm">xiiGALFormatLookupEntry&lt;NativeFormatType, InvalidFormat&gt;</a>&amp; <a class="code" href="../../d5/de0/classxii_g_a_l_format_lookup_entry.htm">xiiGALFormatLookupEntry&lt;NativeFormatType, InvalidFormat&gt;::DS</a>(</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  NativeFormatType DepthStencilType)</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;{</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  m_eDepthStencilType = DepthStencilType;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;}</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> NativeFormatType, NativeFormatType Inval<span class="keywordtype">id</span>Format&gt;</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<a class="code" href="../../d5/de0/classxii_g_a_l_format_lookup_entry.htm">xiiGALFormatLookupEntry&lt;NativeFormatType, InvalidFormat&gt;</a>&amp; <a class="code" href="../../d5/de0/classxii_g_a_l_format_lookup_entry.htm">xiiGALFormatLookupEntry&lt;NativeFormatType, InvalidFormat&gt;::VA</a>(</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  NativeFormatType VertexAttributeType)</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;{</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  m_eVertexAttributeType = VertexAttributeType;</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;}</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> NativeFormatType, NativeFormatType Inval<span class="keywordtype">id</span>Format&gt;</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<a class="code" href="../../d5/de0/classxii_g_a_l_format_lookup_entry.htm">xiiGALFormatLookupEntry&lt;NativeFormatType, InvalidFormat&gt;</a>&amp; <a class="code" href="../../d5/de0/classxii_g_a_l_format_lookup_entry.htm">xiiGALFormatLookupEntry&lt;NativeFormatType, InvalidFormat&gt;::RV</a>(</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  NativeFormatType ResourceViewType)</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;{</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  m_eResourceViewType = ResourceViewType;</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;}</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> FormatClass&gt;</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<a class="code" href="../../d3/daa/classxii_g_a_l_format_lookup_table.htm">xiiGALFormatLookupTable&lt;FormatClass&gt;::xiiGALFormatLookupTable</a>()</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;{</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  <span class="keywordflow">for</span> (xiiUInt32 i = 0; i &lt; xiiGALResourceFormat::ENUM_COUNT; i++)</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  {</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    m_Formats[i] = FormatClass();</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  }</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;}</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160; </div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> FormatClass&gt;</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="keyword">const</span> FormatClass&amp; <a class="code" href="../../d3/daa/classxii_g_a_l_format_lookup_table.htm">xiiGALFormatLookupTable&lt;FormatClass&gt;::GetFormatInfo</a>(xiiGALResourceFormat::Enum eFormat)<span class="keyword"> const</span></div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="keyword"></span>{</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;  <span class="keywordflow">return</span> m_Formats[eFormat];</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;}</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160; </div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> FormatClass&gt;</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d3/daa/classxii_g_a_l_format_lookup_table.htm">xiiGALFormatLookupTable&lt;FormatClass&gt;::SetFormatInfo</a>(xiiGALResourceFormat::Enum eFormat, <span class="keyword">const</span> FormatClass&amp; NewFormatInfo)</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;{</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;  m_Formats[eFormat] = NewFormatInfo;</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;}</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> NativeFormatType, NativeFormatType Inval<span class="keywordtype">id</span>Format&gt;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<a class="code" href="../../d5/de0/classxii_g_a_l_format_lookup_entry.htm">xiiGALFormatLookupEntry&lt;NativeFormatType, InvalidFormat&gt;::xiiGALFormatLookupEntry</a>(NativeFormatType storage) :</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  m_eStorage(storage), m_eRenderTarget(InvalidFormat), m_eDepthOnlyType(InvalidFormat), m_eStencilOnlyType(InvalidFormat), m_eDepthStencilType(InvalidFormat), m_eVertexAttributeType(InvalidFormat), m_eResourceViewType(InvalidFormat)</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;{</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;}</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> NativeFormatType, NativeFormatType Inval<span class="keywordtype">id</span>Format&gt;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<a class="code" href="../../d5/de0/classxii_g_a_l_format_lookup_entry.htm">xiiGALFormatLookupEntry&lt;NativeFormatType, InvalidFormat&gt;</a>&amp; <a class="code" href="../../d5/de0/classxii_g_a_l_format_lookup_entry.htm">xiiGALFormatLookupEntry&lt;NativeFormatType, InvalidFormat&gt;::RT</a>(NativeFormatType renderTargetType)</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;{</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  m_eRenderTarget = renderTargetType;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;}</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> NativeFormatType, NativeFormatType Inval<span class="keywordtype">id</span>Format&gt;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<a class="code" href="../../d5/de0/classxii_g_a_l_format_lookup_entry.htm">xiiGALFormatLookupEntry&lt;NativeFormatType, InvalidFormat&gt;</a>&amp; <a class="code" href="../../d5/de0/classxii_g_a_l_format_lookup_entry.htm">xiiGALFormatLookupEntry&lt;NativeFormatType, InvalidFormat&gt;::D</a>(NativeFormatType depthOnlyType)</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;{</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  m_eDepthOnlyType = depthOnlyType;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;}</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> NativeFormatType, NativeFormatType Inval<span class="keywordtype">id</span>Format&gt;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<a class="code" href="../../d5/de0/classxii_g_a_l_format_lookup_entry.htm">xiiGALFormatLookupEntry&lt;NativeFormatType, InvalidFormat&gt;</a>&amp; <a class="code" href="../../d5/de0/classxii_g_a_l_format_lookup_entry.htm">xiiGALFormatLookupEntry&lt;NativeFormatType, InvalidFormat&gt;::S</a>(NativeFormatType stencilOnlyType)</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;{</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  m_eStencilOnlyType = stencilOnlyType;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;}</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> NativeFormatType, NativeFormatType Inval<span class="keywordtype">id</span>Format&gt;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<a class="code" href="../../d5/de0/classxii_g_a_l_format_lookup_entry.htm">xiiGALFormatLookupEntry&lt;NativeFormatType, InvalidFormat&gt;</a>&amp; <a class="code" href="../../d5/de0/classxii_g_a_l_format_lookup_entry.htm">xiiGALFormatLookupEntry&lt;NativeFormatType, InvalidFormat&gt;::DS</a>(NativeFormatType depthStencilType)</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;{</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  m_eDepthStencilType = depthStencilType;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;}</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> NativeFormatType, NativeFormatType Inval<span class="keywordtype">id</span>Format&gt;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<a class="code" href="../../d5/de0/classxii_g_a_l_format_lookup_entry.htm">xiiGALFormatLookupEntry&lt;NativeFormatType, InvalidFormat&gt;</a>&amp; <a class="code" href="../../d5/de0/classxii_g_a_l_format_lookup_entry.htm">xiiGALFormatLookupEntry&lt;NativeFormatType, InvalidFormat&gt;::VA</a>(NativeFormatType vertexAttributeType)</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;{</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  m_eVertexAttributeType = vertexAttributeType;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;}</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> NativeFormatType, NativeFormatType Inval<span class="keywordtype">id</span>Format&gt;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<a class="code" href="../../d5/de0/classxii_g_a_l_format_lookup_entry.htm">xiiGALFormatLookupEntry&lt;NativeFormatType, InvalidFormat&gt;</a>&amp; <a class="code" href="../../d5/de0/classxii_g_a_l_format_lookup_entry.htm">xiiGALFormatLookupEntry&lt;NativeFormatType, InvalidFormat&gt;::RV</a>(NativeFormatType resourceViewType)</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;{</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  m_eResourceViewType = resourceViewType;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;}</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> FormatClass&gt;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<a class="code" href="../../d3/daa/classxii_g_a_l_format_lookup_table.htm">xiiGALFormatLookupTable&lt;FormatClass&gt;::xiiGALFormatLookupTable</a>()</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;{</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  <span class="keywordflow">for</span> (xiiUInt32 i = 0; i &lt; xiiGALResourceFormat::ENUM_COUNT; i++)</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  {</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    m_Formats[i] = FormatClass();</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  }</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;}</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> FormatClass&gt;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="keyword">const</span> FormatClass&amp; <a class="code" href="../../d3/daa/classxii_g_a_l_format_lookup_table.htm">xiiGALFormatLookupTable&lt;FormatClass&gt;::GetFormatInfo</a>(xiiGALResourceFormat::Enum format)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;  <span class="keywordflow">return</span> m_Formats[format];</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;}</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; </div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> FormatClass&gt;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d3/daa/classxii_g_a_l_format_lookup_table.htm">xiiGALFormatLookupTable&lt;FormatClass&gt;::SetFormatInfo</a>(xiiGALResourceFormat::Enum format, <span class="keyword">const</span> FormatClass&amp; newFormatInfo)</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;{</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;  m_Formats[format] = newFormatInfo;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="astructxii_g_a_l_resource_format_htm_a6490fc4a894b0ae5e109dccbca2fcd4c"><div class="ttname"><a href="../../de/d10/structxii_g_a_l_resource_format.htm#a6490fc4a894b0ae5e109dccbca2fcd4c">xiiGALResourceFormat::GetBitsPerElement</a></div><div class="ttdeci">static xiiUInt32 GetBitsPerElement(xiiGALResourceFormat::Enum format)</div><div class="ttdoc">The size in bits per element (usually pixels, except for mesh stream elements) of a single element of...</div><div class="ttdef"><b>Definition:</b> ResourceFormats_inl.h:3</div></div>
@@ -211,7 +206,7 @@ $(document).ready(function(){initNavTree('df/d31/_resource_formats__inl_8h_sourc
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.htm">home</a></li><li class="navelem"><a class="el" href="../../dir_1036706e55c22cab35bc1c58ee689f1d.htm">runner</a></li><li class="navelem"><a class="el" href="../../dir_629f8151d55d307162ff2d619fb1783d.htm">work</a></li><li class="navelem"><a class="el" href="../../dir_1ddc44fe1263a8c7935fa6130b7d9499.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_2c1b6808f12952f4c36e05ba7068379a.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_b5a1c4ecfca018ad24b729e213296d41.htm">Source</a></li><li class="navelem"><a class="el" href="../../dir_e321052006a51284e67389ab20037e7c.htm">Engine</a></li><li class="navelem"><a class="el" href="../../dir_72790d5d8681310f00e88643f6bdf7ad.htm">RendererFoundation</a></li><li class="navelem"><a class="el" href="../../dir_43b1a4f3c9d70db046e5e2a67d4c9bbd.htm">Resources</a></li><li class="navelem"><a class="el" href="../../dir_31ebaa1c0ddd788178b8e391261ed614.htm">Implementation</a></li><li class="navelem"><b>ResourceFormats_inl.h</b></li>
-    <li class="footer">Generated on Mon Apr 17 2023 20:10:34 for XIIEngine by
+    <li class="footer">Generated on Fri Jun 16 2023 14:12:47 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

@@ -1,7 +1,7 @@
 var structxii_game_object_id =
 [
-    [ "StorageType", "d7/d42/structxii_game_object_id.htm#af2791562757046510d8ceda02d136993", null ],
-    [ "xiiGameObjectId", "d7/d42/structxii_game_object_id.htm#a98a07ed960ae6dd6b4935913c461ffc1", null ],
+    [ "StorageType", "d7/d42/structxii_game_object_id.htm#af18a4975707a285e8427df1621a79fb0", null ],
+    [ "xiiGameObjectId", "d7/d42/structxii_game_object_id.htm#ae56bfb10c49c0320b8b9985c10f9b140", null ],
     [ "XII_DECLARE_ID_TYPE", "d7/d42/structxii_game_object_id.htm#a3be49c9d8b1d58361d3bcf5626ea90b9", null ],
     [ "m_Data", "d7/d42/structxii_game_object_id.htm#aaed44a1ba7fba9836941e7742c1d9d75", null ],
     [ "m_Generation", "d7/d42/structxii_game_object_id.htm#afcba16f2dbce1f3879e1cf07798ef75f", null ],

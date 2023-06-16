@@ -114,7 +114,7 @@ $(document).ready(function(){initNavTree('d3/ddd/_event_track_widget_8moc_8h_sou
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    xiiUInt32 m_uiSortedIdx;</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  };</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  <a class="code" href="../../dd/dc8/classxii_qt_event_track_widget.htm">xiiQtEventTrackWidget</a>(QWidget* parent);</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  <a class="code" href="../../dd/dc8/classxii_qt_event_track_widget.htm">xiiQtEventTrackWidget</a>(QWidget* pParent);</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  <span class="keywordtype">void</span> SetData(<span class="keyword">const</span> <a class="code" href="../../db/d4f/classxii_event_track_data.htm">xiiEventTrackData</a>* pData, <span class="keywordtype">double</span> fMinCurveLength);</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  <span class="keywordtype">void</span> SetGridBarWidget(<a class="code" href="../../d8/d4d/classxii_q_grid_bar_widget.htm">xiiQGridBarWidget</a>* pGridBar) { m_pGridBar = pGridBar; }</div>
@@ -127,15 +127,15 @@ $(document).ready(function(){initNavTree('d3/ddd/_event_track_widget_8moc_8h_sou
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  QPointF MapToScene(<span class="keyword">const</span> QPoint&amp; pos) <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <span class="keywordtype">void</span> ClearSelection();</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <span class="keywordtype">void</span> GetSelection(<a class="code" href="../../dc/da9/classxii_hybrid_array.htm">xiiHybridArray&lt;xiiUInt32, 32&gt;</a>&amp; out_Selection) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <span class="keywordtype">void</span> GetSelection(<a class="code" href="../../dc/da9/classxii_hybrid_array.htm">xiiHybridArray&lt;xiiUInt32, 32&gt;</a>&amp; out_selection) <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;Q_SIGNALS:</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <span class="keywordtype">void</span> DoubleClickEvent(<span class="keywordtype">double</span> scenePosX, <span class="keywordtype">double</span> epsilon);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <span class="keywordtype">void</span> DoubleClickEvent(<span class="keywordtype">double</span> fScenePosX, <span class="keywordtype">double</span> fEpsilon);</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <span class="keywordtype">void</span> DeleteControlPointsEvent();</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <span class="keywordtype">void</span> MoveControlPointsEvent(<span class="keywordtype">double</span> moveX);</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <span class="keywordtype">void</span> BeginOperationEvent(QString name);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <span class="keywordtype">void</span> MoveControlPointsEvent(<span class="keywordtype">double</span> fMoveX);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <span class="keywordtype">void</span> BeginOperationEvent(QString sName);</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <span class="keywordtype">void</span> EndOperationEvent(<span class="keywordtype">bool</span> bCommit);</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <span class="keywordtype">void</span> ScaleControlPointsEvent(<span class="keyword">const</span> QPointF&amp; centerPos, <span class="keywordtype">double</span> scaleX);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <span class="keywordtype">void</span> ScaleControlPointsEvent(<span class="keyword">const</span> QPointF&amp; centerPos, <span class="keywordtype">double</span> fScaleX);</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <span class="keywordtype">void</span> ContextMenuEvent(QPoint pos, QPointF scenePos);</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <span class="keywordtype">void</span> SelectionChangedEvent();</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
@@ -253,7 +253,7 @@ $(document).ready(function(){initNavTree('d3/ddd/_event_track_widget_8moc_8h_sou
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.htm">home</a></li><li class="navelem"><a class="el" href="../../dir_1036706e55c22cab35bc1c58ee689f1d.htm">runner</a></li><li class="navelem"><a class="el" href="../../dir_629f8151d55d307162ff2d619fb1783d.htm">work</a></li><li class="navelem"><a class="el" href="../../dir_1ddc44fe1263a8c7935fa6130b7d9499.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_2c1b6808f12952f4c36e05ba7068379a.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_b5a1c4ecfca018ad24b729e213296d41.htm">Source</a></li><li class="navelem"><a class="el" href="../../dir_64f53f8da7bf780a58c32bb848e7873b.htm">Tools</a></li><li class="navelem"><a class="el" href="../../dir_4b5bc41f7c4cbfc8ca80bdea56300f1d.htm">Libs</a></li><li class="navelem"><a class="el" href="../../dir_8694d7149aa3c4cbc4b219c953b250c5.htm">GuiFoundation</a></li><li class="navelem"><a class="el" href="../../dir_9a2348ba360553a58aa9ebac918c2653.htm">Widgets</a></li><li class="navelem"><b>EventTrackWidget.moc.h</b></li>
-    <li class="footer">Generated on Mon Apr 17 2023 20:10:35 for XIIEngine by
+    <li class="footer">Generated on Fri Jun 16 2023 14:12:49 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

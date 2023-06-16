@@ -3,7 +3,7 @@ var structxii_window_creation_desc =
     [ "AdjustWindowSizeAndPosition", "d6/d8c/structxii_window_creation_desc.htm#a44d11053ebf6284ac36d3250b8fc6723", null ],
     [ "LoadFromDDL", "d6/d8c/structxii_window_creation_desc.htm#a5f552ce820fa8f263d31aaf7976be501", null ],
     [ "LoadFromDDL", "d6/d8c/structxii_window_creation_desc.htm#a1d98001d0f4cf130fc3335de201c5751", null ],
-    [ "SaveToDDL", "d6/d8c/structxii_window_creation_desc.htm#ae459738bb341826c34297c072beca096", null ],
+    [ "SaveToDDL", "d6/d8c/structxii_window_creation_desc.htm#afd6cbf55f7d879fc727dacb46531115b", null ],
     [ "SaveToDDL", "d6/d8c/structxii_window_creation_desc.htm#a0035ccbe231adc5468cb59ab42227b74", null ],
     [ "m_bClipMouseCursor", "d6/d8c/structxii_window_creation_desc.htm#ac1ac18d561a602db57b5c4692b7a8a96", null ],
     [ "m_bSetForegroundOnInit", "d6/d8c/structxii_window_creation_desc.htm#a0f5a8c301f102e58fa8917ed1a016288", null ],

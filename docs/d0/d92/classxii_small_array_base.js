@@ -61,7 +61,7 @@ var classxii_small_array_base =
     [ "RemoveAtAndSwap", "d0/d92/classxii_small_array_base.htm#a7e7a03a9dd9f3e63aea8e06b4cbf4fc8", null ],
     [ "Reserve", "d0/d92/classxii_small_array_base.htm#a43d17a7db94868fe8a57ab6e6cea617e", null ],
     [ "SetCapacity", "d0/d92/classxii_small_array_base.htm#adb120ffd5a46b27b5a42ef9dc779fb1c", null ],
-    [ "SetCount", "d0/d92/classxii_small_array_base.htm#ab5bcf33b53dd5733a382b118cd29e240", null ],
+    [ "SetCount", "d0/d92/classxii_small_array_base.htm#ad7051d28f6960ec14a5ef5b86b5d09bc", null ],
     [ "SetCount", "d0/d92/classxii_small_array_base.htm#aec2c31c5c5ffb46b0633dd7e280dfee2", null ],
     [ "SetCountUninitialized", "d0/d92/classxii_small_array_base.htm#a96b254cbe8fc346df30bf263c780270f", null ],
     [ "Sort", "d0/d92/classxii_small_array_base.htm#a2aa60d2364c32767f44ed6d05dd7642e", null ],

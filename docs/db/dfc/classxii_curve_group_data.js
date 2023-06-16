@@ -5,7 +5,7 @@ var classxii_curve_group_data =
     [ "~xiiCurveGroupData", "db/dfc/classxii_curve_group_data.htm#a38b82b2c9657f0226aaaafd59e4fe75d", null ],
     [ "Clear", "db/dfc/classxii_curve_group_data.htm#a1a06c17a240b0cf39b0b94214abfdba7", null ],
     [ "CloneFrom", "db/dfc/classxii_curve_group_data.htm#a5d5cb333352c315de71999b2250588ca", null ],
-    [ "ConvertToRuntimeData", "db/dfc/classxii_curve_group_data.htm#a116cba3a1589d7f97ddf993d0677ec35", null ],
+    [ "ConvertToRuntimeData", "db/dfc/classxii_curve_group_data.htm#ad100b2628bf52007e9528f31740f7655", null ],
     [ "operator=", "db/dfc/classxii_curve_group_data.htm#a91d38d3ea52787dbd027591517649228", null ],
     [ "TickFromTime", "db/dfc/classxii_curve_group_data.htm#acc75e6675f4d8a7870b14a06ea57fe20", null ],
     [ "m_bOwnsData", "db/dfc/classxii_curve_group_data.htm#a3bd8ea00946da242b75e5eeed2be0b3d", null ],

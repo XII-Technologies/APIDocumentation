@@ -1,5 +1,10 @@
 var structxii_g_a_l_texture_creation_description =
 [
+    [ "Is1D", "de/dd4/structxii_g_a_l_texture_creation_description.htm#a6f798125cd88056c533d8d82c61d7d16", null ],
+    [ "Is2D", "de/dd4/structxii_g_a_l_texture_creation_description.htm#a2d5585ab1dc89763d7181f48812dfabf", null ],
+    [ "Is3D", "de/dd4/structxii_g_a_l_texture_creation_description.htm#a6fca4e0f3d435ba77cf3d32272c8f10f", null ],
+    [ "IsArray", "de/dd4/structxii_g_a_l_texture_creation_description.htm#aca4dad534b1866bcd15611fda1451f6d", null ],
+    [ "IsCube", "de/dd4/structxii_g_a_l_texture_creation_description.htm#a8a5a0b1115b9337f56e59691e7f0c715", null ],
     [ "SetAsRenderTarget", "de/dd4/structxii_g_a_l_texture_creation_description.htm#a30c52053d83edbd12d4a6c7e9da7d68d", null ],
     [ "m_bAllowDynamicMipGeneration", "de/dd4/structxii_g_a_l_texture_creation_description.htm#ad0090b49670b19849cd0c3cd60baa862", null ],
     [ "m_bAllowShaderResourceView", "de/dd4/structxii_g_a_l_texture_creation_description.htm#a369bfbe9477dac3bcdb09400bf363f61", null ],

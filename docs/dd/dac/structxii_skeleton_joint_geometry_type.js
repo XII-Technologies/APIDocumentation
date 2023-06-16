@@ -1,6 +1,6 @@
 var structxii_skeleton_joint_geometry_type =
 [
-    [ "StorageType", "dd/dac/structxii_skeleton_joint_geometry_type.htm#aae2390ea8984e159f24025550618e97d", null ],
+    [ "StorageType", "dd/dac/structxii_skeleton_joint_geometry_type.htm#a6a14096709c553c45ab1d88cfb403d18", null ],
     [ "Enum", "dd/dac/structxii_skeleton_joint_geometry_type.htm#aa7ec707fc550c029e130bc150cc6acfc", [
       [ "None", "dd/dac/structxii_skeleton_joint_geometry_type.htm#aa7ec707fc550c029e130bc150cc6acfcaab654d343e6232169238342dd96562a6", null ],
       [ "Capsule", "dd/dac/structxii_skeleton_joint_geometry_type.htm#aa7ec707fc550c029e130bc150cc6acfca086e4f16b0f29eccf4ffd8f5651d76b8", null ],

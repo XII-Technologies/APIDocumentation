@@ -101,12 +101,12 @@ $(document).ready(function(){initNavTree('d4/d57/_curve_edit_data_8h_source.htm'
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;XII_DECLARE_REFLECTABLE_TYPE(XII_GUIFOUNDATION_DLL, <a class="code" href="../../d7/d06/structxii_curve_tangent_mode.htm">xiiCurveTangentMode</a>);</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keywordtype">void</span> FindNearestControlPoints(<a class="code" href="../../d0/d60/classxii_array_ptr.htm">xiiArrayPtr&lt;T&gt;</a> cps, xiiInt64 iTick, T*&amp; llhs, T*&amp; lhs, T*&amp; rhs, T*&amp; rrhs)</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keywordtype">void</span> FindNearestControlPoints(<a class="code" href="../../d0/d60/classxii_array_ptr.htm">xiiArrayPtr&lt;T&gt;</a> cps, xiiInt64 iTick, T*&amp; ref_pLlhs, T*&amp; lhs, T*&amp; rhs, T*&amp; ref_pRrhs)</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;{</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;  llhs              = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;  ref_pLlhs         = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;  lhs               = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;  rhs               = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  rrhs              = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  ref_pRrhs         = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  xiiInt64 lhsTick  = xiiMath::MinValue&lt;xiiInt64&gt;();</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  xiiInt64 llhsTick = xiiMath::MinValue&lt;xiiInt64&gt;();</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  xiiInt64 rhsTick  = xiiMath::MaxValue&lt;xiiInt64&gt;();</div>
@@ -118,16 +118,16 @@ $(document).ready(function(){initNavTree('d4/d57/_curve_edit_data_8h_source.htm'
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    {</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;      <span class="keywordflow">if</span> (cp.m_iTick &gt; lhsTick)</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;      {</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        llhs     = lhs;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        llhsTick = lhsTick;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        ref_pLlhs = lhs;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        llhsTick  = lhsTick;</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        lhs     = &amp;cp;</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        lhsTick = cp.m_iTick;</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;      }</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;      <span class="keywordflow">else</span> <span class="keywordflow">if</span> (cp.m_iTick &gt; llhsTick)</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;      {</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        llhs     = &amp;cp;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        llhsTick = cp.m_iTick;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        ref_pLlhs = &amp;cp;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        llhsTick  = cp.m_iTick;</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;      }</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    }</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
@@ -135,16 +135,16 @@ $(document).ready(function(){initNavTree('d4/d57/_curve_edit_data_8h_source.htm'
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    {</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;      <span class="keywordflow">if</span> (cp.m_iTick &lt; rhsTick)</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;      {</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        rrhs     = rhs;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        rrhsTick = rhsTick;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        ref_pRrhs = rhs;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        rrhsTick  = rhsTick;</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        rhs     = &amp;cp;</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        rhsTick = cp.m_iTick;</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;      }</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;      <span class="keywordflow">else</span> <span class="keywordflow">if</span> (cp.m_iTick &lt; rrhsTick)</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;      {</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        rrhs     = &amp;cp;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        rrhsTick = cp.m_iTick;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        ref_pRrhs = &amp;cp;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        rrhsTick  = cp.m_iTick;</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;      }</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    }</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  }</div>
@@ -156,7 +156,7 @@ $(document).ready(function(){initNavTree('d4/d57/_curve_edit_data_8h_source.htm'
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  <a class="code" href="../../d7/dc1/structxii_time.htm">xiiTime</a> GetTickAsTime()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code" href="../../d7/dc1/structxii_time.htm#a0d30e51875577941d5f0e312d7041c76">xiiTime::Seconds</a>(m_iTick / 4800.0); }</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  <span class="keywordtype">void</span>    SetTickFromTime(<a class="code" href="../../d7/dc1/structxii_time.htm">xiiTime</a> time, xiiInt64 fps);</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  <span class="keywordtype">void</span>    SetTickFromTime(<a class="code" href="../../d7/dc1/structxii_time.htm">xiiTime</a> time, xiiInt64 iFps);</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  xiiInt64                     m_iTick; <span class="comment">// 4800 ticks per second</span></div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  <span class="keywordtype">double</span>                       m_fValue;</div>
@@ -175,8 +175,8 @@ $(document).ready(function(){initNavTree('d4/d57/_curve_edit_data_8h_source.htm'
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  <a class="code" href="../../df/d71/classxii_color_gamma_u_b.htm">xiiColorGammaUB</a>                           m_CurveColor;</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  <a class="code" href="../../dc/da4/classxii_dynamic_array.htm">xiiDynamicArray&lt;xiiCurveControlPointData&gt;</a> m_ControlPoints;</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  <span class="keywordtype">void</span>   ConvertToRuntimeData(<a class="code" href="../../d1/d87/classxii_curve1_d.htm">xiiCurve1D</a>&amp; out_Result) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  <span class="keywordtype">double</span> Evaluate(xiiInt64 uiTick) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  <span class="keywordtype">void</span>   ConvertToRuntimeData(<a class="code" href="../../d1/d87/classxii_curve1_d.htm">xiiCurve1D</a>&amp; out_result) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  <span class="keywordtype">double</span> Evaluate(xiiInt64 iTick) <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;};</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
 <div class="line"><a name="l00093"></a><span class="lineno"><a class="line" href="../../da/da4/classxii_curve_extents_attribute.htm">   93</a></span>&#160;<span class="keyword">class </span>XII_GUIFOUNDATION_DLL <a class="code" href="../../da/da4/classxii_curve_extents_attribute.htm">xiiCurveExtentsAttribute</a> : <span class="keyword">public</span> <a class="code" href="../../d5/df0/classxii_property_attribute.htm">xiiPropertyAttribute</a></div>
@@ -214,7 +214,7 @@ $(document).ready(function(){initNavTree('d4/d57/_curve_edit_data_8h_source.htm'
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160; </div>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;  xiiInt64 TickFromTime(<a class="code" href="../../d7/dc1/structxii_time.htm">xiiTime</a> time) <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160; </div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;  <span class="keywordtype">void</span> ConvertToRuntimeData(xiiUInt32 uiCurveIdx, <a class="code" href="../../d1/d87/classxii_curve1_d.htm">xiiCurve1D</a>&amp; out_Result) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;  <span class="keywordtype">void</span> ConvertToRuntimeData(xiiUInt32 uiCurveIdx, <a class="code" href="../../d1/d87/classxii_curve1_d.htm">xiiCurve1D</a>&amp; out_result) <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;};</div>
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160; </div>
 <div class="line"><a name="l00134"></a><span class="lineno"><a class="line" href="../../db/dfc/structxii_selected_curve_c_p.htm">  134</a></span>&#160;<span class="keyword">struct </span>XII_GUIFOUNDATION_DLL <a class="code" href="../../db/dfc/structxii_selected_curve_c_p.htm">xiiSelectedCurveCP</a></div>
@@ -232,7 +232,7 @@ $(document).ready(function(){initNavTree('d4/d57/_curve_edit_data_8h_source.htm'
 <div class="ttc" id="aclassxii_curve1_d_htm"><div class="ttname"><a href="../../d1/d87/classxii_curve1_d.htm">xiiCurve1D</a></div><div class="ttdoc">A 1D curve for animating a single value over time.</div><div class="ttdef"><b>Definition:</b> Curve1D.h:28</div></div>
 <div class="ttc" id="astructxii_time_htm"><div class="ttname"><a href="../../d7/dc1/structxii_time.htm">xiiTime</a></div><div class="ttdoc">The time class encapsulates a double value storing the time in seconds.</div><div class="ttdef"><b>Definition:</b> Time.h:11</div></div>
 <div class="ttc" id="aclassxii_curve_extents_attribute_htm"><div class="ttname"><a href="../../da/da4/classxii_curve_extents_attribute.htm">xiiCurveExtentsAttribute</a></div><div class="ttdef"><b>Definition:</b> CurveEditData.h:93</div></div>
-<div class="ttc" id="aclassxii_reflected_class_htm"><div class="ttname"><a href="../../dc/d71/classxii_reflected_class.htm">xiiReflectedClass</a></div><div class="ttdoc">All classes that should be dynamically reflectable, need to be derived from this base class.</div><div class="ttdef"><b>Definition:</b> DynamicRTTI.h:67</div></div>
+<div class="ttc" id="aclassxii_reflected_class_htm"><div class="ttname"><a href="../../dc/d71/classxii_reflected_class.htm">xiiReflectedClass</a></div><div class="ttdoc">All classes that should be dynamically reflectable, need to be derived from this base class.</div><div class="ttdef"><b>Definition:</b> DynamicRTTI.h:76</div></div>
 <div class="ttc" id="aclassxii_curve_control_point_data_htm"><div class="ttname"><a href="../../d4/d74/classxii_curve_control_point_data.htm">xiiCurveControlPointData</a></div><div class="ttdef"><b>Definition:</b> CurveEditData.h:64</div></div>
 <div class="ttc" id="astructxii_selected_curve_c_p_htm"><div class="ttname"><a href="../../db/dfc/structxii_selected_curve_c_p.htm">xiiSelectedCurveCP</a></div><div class="ttdef"><b>Definition:</b> CurveEditData.h:134</div></div>
 <div class="ttc" id="aclassxii_property_attribute_htm"><div class="ttname"><a href="../../d5/df0/classxii_property_attribute.htm">xiiPropertyAttribute</a></div><div class="ttdoc">Base class of all attributes can be used to decorate a RTTI property.</div><div class="ttdef"><b>Definition:</b> PropertyAttributes.h:10</div></div>
@@ -246,7 +246,7 @@ $(document).ready(function(){initNavTree('d4/d57/_curve_edit_data_8h_source.htm'
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.htm">home</a></li><li class="navelem"><a class="el" href="../../dir_1036706e55c22cab35bc1c58ee689f1d.htm">runner</a></li><li class="navelem"><a class="el" href="../../dir_629f8151d55d307162ff2d619fb1783d.htm">work</a></li><li class="navelem"><a class="el" href="../../dir_1ddc44fe1263a8c7935fa6130b7d9499.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_2c1b6808f12952f4c36e05ba7068379a.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_b5a1c4ecfca018ad24b729e213296d41.htm">Source</a></li><li class="navelem"><a class="el" href="../../dir_64f53f8da7bf780a58c32bb848e7873b.htm">Tools</a></li><li class="navelem"><a class="el" href="../../dir_4b5bc41f7c4cbfc8ca80bdea56300f1d.htm">Libs</a></li><li class="navelem"><a class="el" href="../../dir_8694d7149aa3c4cbc4b219c953b250c5.htm">GuiFoundation</a></li><li class="navelem"><a class="el" href="../../dir_9a2348ba360553a58aa9ebac918c2653.htm">Widgets</a></li><li class="navelem"><b>CurveEditData.h</b></li>
-    <li class="footer">Generated on Mon Apr 17 2023 20:10:35 for XIIEngine by
+    <li class="footer">Generated on Fri Jun 16 2023 14:12:49 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

@@ -1,6 +1,6 @@
 var classxii_unlink_prefab_command =
 [
-    [ "xiiUnlinkPrefabCommand", "de/d3c/classxii_unlink_prefab_command.htm#a85a4100e5fbb76499c4af9c2f2f86bcd", null ],
+    [ "xiiUnlinkPrefabCommand", "de/d3c/classxii_unlink_prefab_command.htm#a0678323bbebd06e0a9f588fd7dae899b", null ],
     [ "CleanupInternal", "de/d3c/classxii_unlink_prefab_command.htm#a58571c3a223490cb39aab45619dc7b27", null ],
     [ "DoInternal", "de/d3c/classxii_unlink_prefab_command.htm#a9bca70e60796e67904e8a4e853b7a4ce", null ],
     [ "HasReturnValues", "de/d3c/classxii_unlink_prefab_command.htm#a0fce00904860889581535a5e15cc5fae", null ],

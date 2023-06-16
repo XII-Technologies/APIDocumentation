@@ -1,6 +1,6 @@
 var structxii_visual_script_data_pin_type =
 [
-    [ "StorageType", "df/d7d/structxii_visual_script_data_pin_type.htm#af20b5e3fbf7cf4ac21925dcea49d6386", null ],
+    [ "StorageType", "df/d7d/structxii_visual_script_data_pin_type.htm#ad4e0590855c2d6adf7195dfa0f93787c", null ],
     [ "Enum", "df/d7d/structxii_visual_script_data_pin_type.htm#a61e12aaa13d4d689f22ed2f9653f35cb", [
       [ "None", "df/d7d/structxii_visual_script_data_pin_type.htm#a61e12aaa13d4d689f22ed2f9653f35cba272876dfef13ef29979d2a2691ebc991", null ],
       [ "Number", "df/d7d/structxii_visual_script_data_pin_type.htm#a61e12aaa13d4d689f22ed2f9653f35cba2a92790c57097c283edd416034775db2", null ],

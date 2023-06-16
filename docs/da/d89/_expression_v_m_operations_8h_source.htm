@@ -311,22 +311,22 @@ $(document).ready(function(){initNavTree('da/d89/_expression_v_m_operations_8h_s
 <div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;  }</div>
 <div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160; </div>
 <div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> ValueType, <span class="keyword">typename</span> StreamType&gt;</div>
-<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;  XII_ALWAYS_INLINE ValueType ReadInputData(<span class="keyword">const</span> xiiUInt8*&amp; pData, xiiUInt32 uiStride)</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;  XII_ALWAYS_INLINE ValueType ReadInputData(<span class="keyword">const</span> xiiUInt8*&amp; ref_pData, xiiUInt32 uiStride)</div>
 <div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;  {</div>
-<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;    ValueType value = *<span class="keyword">reinterpret_cast&lt;</span><span class="keyword">const </span>StreamType*<span class="keyword">&gt;</span>(pData);</div>
-<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;    pData += uiStride;</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;    ValueType value = *<span class="keyword">reinterpret_cast&lt;</span><span class="keyword">const </span>StreamType*<span class="keyword">&gt;</span>(ref_pData);</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;    ref_pData += uiStride;</div>
 <div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;    <span class="keywordflow">return</span> value;</div>
 <div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;  }</div>
 <div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160; </div>
 <div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> RegisterType, <span class="keyword">typename</span> ValueType, <span class="keyword">typename</span> StreamType&gt;</div>
-<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;  <span class="keywordtype">void</span> LoadInput(RegisterType* r, RegisterType* re, <span class="keyword">const</span> <a class="code" href="../../de/d63/classxii_processing_stream.htm">xiiProcessingStream</a>&amp; input, xiiUInt32 uiNumRemainderInstances)</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;  <span class="keywordtype">void</span> LoadInput(RegisterType* r, RegisterType* pRe, <span class="keyword">const</span> <a class="code" href="../../de/d63/classxii_processing_stream.htm">xiiProcessingStream</a>&amp; input, xiiUInt32 uiNumRemainderInstances)</div>
 <div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;  {</div>
 <div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;    <span class="keyword">const</span> xiiUInt8* pInputData   = input.<a class="code" href="../../de/d63/classxii_processing_stream.htm#a0e5e11fa7f1cdec74e7924d5f0f915b0">GetData</a>&lt;xiiUInt8&gt;();</div>
 <div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;    <span class="keyword">const</span> xiiUInt32 uiByteStride = input.<a class="code" href="../../de/d63/classxii_processing_stream.htm#a812b3d3a4f446f20ee2f35ff4fff6aaf">GetElementStride</a>();</div>
 <div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160; </div>
 <div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;    <span class="keywordflow">if</span> (uiByteStride == <span class="keyword">sizeof</span>(ValueType) &amp;&amp; std::is_same&lt;ValueType, StreamType&gt;::value)</div>
 <div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;    {</div>
-<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;      <span class="keywordflow">while</span> (r != re)</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;      <span class="keywordflow">while</span> (r != pRe)</div>
 <div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;      {</div>
 <div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;        r-&gt;template Load&lt;4&gt;(<span class="keyword">reinterpret_cast&lt;</span><span class="keyword">const </span>ValueType*<span class="keyword">&gt;</span>(pInputData));</div>
 <div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160; </div>
@@ -337,7 +337,7 @@ $(document).ready(function(){initNavTree('da/d89/_expression_v_m_operations_8h_s
 <div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;    <span class="keywordflow">else</span></div>
 <div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;    {</div>
 <div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;      ValueType x[4] = {};</div>
-<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;      <span class="keywordflow">while</span> (r != re)</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;      <span class="keywordflow">while</span> (r != pRe)</div>
 <div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;      {</div>
 <div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;        x[0] = ReadInputData&lt;ValueType, StreamType&gt;(pInputData, uiByteStride);</div>
 <div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;        x[1] = ReadInputData&lt;ValueType, StreamType&gt;(pInputData, uiByteStride);</div>
@@ -362,21 +362,21 @@ $(document).ready(function(){initNavTree('da/d89/_expression_v_m_operations_8h_s
 <div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;  }</div>
 <div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160; </div>
 <div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> ValueType, <span class="keyword">typename</span> StreamType&gt;</div>
-<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;  XII_ALWAYS_INLINE <span class="keywordtype">void</span> StoreOutputData(xiiUInt8*&amp; pData, xiiUInt32 uiStride, ValueType value)</div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;  XII_ALWAYS_INLINE <span class="keywordtype">void</span> StoreOutputData(xiiUInt8*&amp; ref_pData, xiiUInt32 uiStride, ValueType value)</div>
 <div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;  {</div>
-<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;    *<span class="keyword">reinterpret_cast&lt;</span>StreamType*<span class="keyword">&gt;</span>(pData) = <span class="keyword">static_cast&lt;</span>StreamType<span class="keyword">&gt;</span>(value);</div>
-<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;    pData += uiStride;</div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;    *<span class="keyword">reinterpret_cast&lt;</span>StreamType*<span class="keyword">&gt;</span>(ref_pData) = <span class="keyword">static_cast&lt;</span>StreamType<span class="keyword">&gt;</span>(value);</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;    ref_pData += uiStride;</div>
 <div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;  }</div>
 <div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160; </div>
 <div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> RegisterType, <span class="keyword">typename</span> ValueType, <span class="keyword">typename</span> StreamType&gt;</div>
-<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;  <span class="keywordtype">void</span> StoreOutput(RegisterType* r, RegisterType* re, <a class="code" href="../../de/d63/classxii_processing_stream.htm">xiiProcessingStream</a>&amp; output, xiiUInt32 uiNumRemainderInstances)</div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;  <span class="keywordtype">void</span> StoreOutput(RegisterType* r, RegisterType* pRe, <a class="code" href="../../de/d63/classxii_processing_stream.htm">xiiProcessingStream</a>&amp; ref_output, xiiUInt32 uiNumRemainderInstances)</div>
 <div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;  {</div>
-<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;    xiiUInt8*       pOutputData  = output.<a class="code" href="../../de/d63/classxii_processing_stream.htm#acd4cdbef910a1fea33ad89ebc73374ea">GetWritableData</a>&lt;xiiUInt8&gt;();</div>
-<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;    <span class="keyword">const</span> xiiUInt32 uiByteStride = output.<a class="code" href="../../de/d63/classxii_processing_stream.htm#a812b3d3a4f446f20ee2f35ff4fff6aaf">GetElementStride</a>();</div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;    xiiUInt8*       pOutputData  = ref_output.<a class="code" href="../../de/d63/classxii_processing_stream.htm#acd4cdbef910a1fea33ad89ebc73374ea">GetWritableData</a>&lt;xiiUInt8&gt;();</div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;    <span class="keyword">const</span> xiiUInt32 uiByteStride = ref_output.<a class="code" href="../../de/d63/classxii_processing_stream.htm#a812b3d3a4f446f20ee2f35ff4fff6aaf">GetElementStride</a>();</div>
 <div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160; </div>
 <div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;    <span class="keywordflow">if</span> (uiByteStride == <span class="keyword">sizeof</span>(ValueType) &amp;&amp; std::is_same&lt;ValueType, StreamType&gt;::value)</div>
 <div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;    {</div>
-<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;      <span class="keywordflow">while</span> (r != re)</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;      <span class="keywordflow">while</span> (r != pRe)</div>
 <div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;      {</div>
 <div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;        r-&gt;template Store&lt;4&gt;(<span class="keyword">reinterpret_cast&lt;</span>ValueType*<span class="keyword">&gt;</span>(pOutputData));</div>
 <div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160; </div>
@@ -387,7 +387,7 @@ $(document).ready(function(){initNavTree('da/d89/_expression_v_m_operations_8h_s
 <div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;    <span class="keywordflow">else</span></div>
 <div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;    {</div>
 <div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;      ValueType x[4] = {};</div>
-<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;      <span class="keywordflow">while</span> (r != re)</div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;      <span class="keywordflow">while</span> (r != pRe)</div>
 <div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;      {</div>
 <div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;        r-&gt;template Store&lt;4&gt;(x);</div>
 <div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160; </div>
@@ -472,13 +472,13 @@ $(document).ready(function(){initNavTree('da/d89/_expression_v_m_operations_8h_s
 <div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;    <span class="keywordflow">if</span> (uiNumRemainderInstances &gt; 0)</div>
 <div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;      --re;</div>
 <div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160; </div>
-<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;    <span class="keywordflow">if</span> (output.<a class="code" href="../../de/d63/classxii_processing_stream.htm#a25729a2cee37a0ce16ca112daa2d9e91">GetDataType</a>() == xiiProcessingStream::DataType::Float)</div>
+<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;    <span class="keywordflow">if</span> (output.GetDataType() == xiiProcessingStream::DataType::Float)</div>
 <div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;    {</div>
 <div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;      StoreOutput&lt;xiiSimdVec4f, float, float&gt;(<span class="keyword">reinterpret_cast&lt;</span><a class="code" href="../../d3/da5/classxii_simd_vec4f.htm">xiiSimdVec4f</a>*<span class="keyword">&gt;</span>(r), <span class="keyword">reinterpret_cast&lt;</span><a class="code" href="../../d3/da5/classxii_simd_vec4f.htm">xiiSimdVec4f</a>*<span class="keyword">&gt;</span>(re), output, uiNumRemainderInstances);</div>
 <div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;    }</div>
 <div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;    <span class="keywordflow">else</span></div>
 <div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;    {</div>
-<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;      XII_ASSERT_DEBUG(output.<a class="code" href="../../de/d63/classxii_processing_stream.htm#a25729a2cee37a0ce16ca112daa2d9e91">GetDataType</a>() == xiiProcessingStream::DataType::Half, <span class="stringliteral">&quot;Unsupported input type &#39;{}&#39; for StoreF instruction&quot;</span>, xiiProcessingStream::GetDataTypeName(output.<a class="code" href="../../de/d63/classxii_processing_stream.htm#a25729a2cee37a0ce16ca112daa2d9e91">GetDataType</a>()));</div>
+<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;      XII_ASSERT_DEBUG(output.GetDataType() == xiiProcessingStream::DataType::Half, <span class="stringliteral">&quot;Unsupported input type &#39;{}&#39; for StoreF instruction&quot;</span>, xiiProcessingStream::GetDataTypeName(output.GetDataType()));</div>
 <div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;      StoreOutput&lt;xiiSimdVec4f, float, xiiFloat16&gt;(<span class="keyword">reinterpret_cast&lt;</span><a class="code" href="../../d3/da5/classxii_simd_vec4f.htm">xiiSimdVec4f</a>*<span class="keyword">&gt;</span>(r), <span class="keyword">reinterpret_cast&lt;</span><a class="code" href="../../d3/da5/classxii_simd_vec4f.htm">xiiSimdVec4f</a>*<span class="keyword">&gt;</span>(re), output, uiNumRemainderInstances);</div>
 <div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;    }</div>
 <div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;  }</div>
@@ -495,17 +495,17 @@ $(document).ready(function(){initNavTree('da/d89/_expression_v_m_operations_8h_s
 <div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;    <span class="keywordflow">if</span> (uiNumRemainderInstances &gt; 0)</div>
 <div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;      --re;</div>
 <div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160; </div>
-<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;    <span class="keywordflow">if</span> (output.<a class="code" href="../../de/d63/classxii_processing_stream.htm#a25729a2cee37a0ce16ca112daa2d9e91">GetDataType</a>() == xiiProcessingStream::DataType::Int)</div>
+<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;    <span class="keywordflow">if</span> (output.GetDataType() == xiiProcessingStream::DataType::Int)</div>
 <div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;    {</div>
 <div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;      StoreOutput&lt;xiiSimdVec4i, int, int&gt;(<span class="keyword">reinterpret_cast&lt;</span><a class="code" href="../../d5/d4f/classxii_simd_vec4i.htm">xiiSimdVec4i</a>*<span class="keyword">&gt;</span>(r), <span class="keyword">reinterpret_cast&lt;</span><a class="code" href="../../d5/d4f/classxii_simd_vec4i.htm">xiiSimdVec4i</a>*<span class="keyword">&gt;</span>(re), output, uiNumRemainderInstances);</div>
 <div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;    }</div>
-<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (output.<a class="code" href="../../de/d63/classxii_processing_stream.htm#a25729a2cee37a0ce16ca112daa2d9e91">GetDataType</a>() == xiiProcessingStream::DataType::Short)</div>
+<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (output.GetDataType() == xiiProcessingStream::DataType::Short)</div>
 <div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;    {</div>
 <div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;      StoreOutput&lt;xiiSimdVec4i, int, xiiInt16&gt;(<span class="keyword">reinterpret_cast&lt;</span><a class="code" href="../../d5/d4f/classxii_simd_vec4i.htm">xiiSimdVec4i</a>*<span class="keyword">&gt;</span>(r), <span class="keyword">reinterpret_cast&lt;</span><a class="code" href="../../d5/d4f/classxii_simd_vec4i.htm">xiiSimdVec4i</a>*<span class="keyword">&gt;</span>(re), output, uiNumRemainderInstances);</div>
 <div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;    }</div>
 <div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;    <span class="keywordflow">else</span></div>
 <div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;    {</div>
-<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;      XII_ASSERT_DEBUG(output.<a class="code" href="../../de/d63/classxii_processing_stream.htm#a25729a2cee37a0ce16ca112daa2d9e91">GetDataType</a>() == xiiProcessingStream::DataType::Byte, <span class="stringliteral">&quot;Unsupported input type &#39;{}&#39; for StoreI instruction&quot;</span>, xiiProcessingStream::GetDataTypeName(output.<a class="code" href="../../de/d63/classxii_processing_stream.htm#a25729a2cee37a0ce16ca112daa2d9e91">GetDataType</a>()));</div>
+<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;      XII_ASSERT_DEBUG(output.GetDataType() == xiiProcessingStream::DataType::Byte, <span class="stringliteral">&quot;Unsupported input type &#39;{}&#39; for StoreI instruction&quot;</span>, xiiProcessingStream::GetDataTypeName(output.GetDataType()));</div>
 <div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;      StoreOutput&lt;xiiSimdVec4i, int, xiiInt8&gt;(<span class="keyword">reinterpret_cast&lt;</span><a class="code" href="../../d5/d4f/classxii_simd_vec4i.htm">xiiSimdVec4i</a>*<span class="keyword">&gt;</span>(r), <span class="keyword">reinterpret_cast&lt;</span><a class="code" href="../../d5/d4f/classxii_simd_vec4i.htm">xiiSimdVec4i</a>*<span class="keyword">&gt;</span>(re), output, uiNumRemainderInstances);</div>
 <div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;    }</div>
 <div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;  }</div>
@@ -721,7 +721,7 @@ $(document).ready(function(){initNavTree('da/d89/_expression_v_m_operations_8h_s
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.htm">home</a></li><li class="navelem"><a class="el" href="../../dir_1036706e55c22cab35bc1c58ee689f1d.htm">runner</a></li><li class="navelem"><a class="el" href="../../dir_629f8151d55d307162ff2d619fb1783d.htm">work</a></li><li class="navelem"><a class="el" href="../../dir_1ddc44fe1263a8c7935fa6130b7d9499.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_2c1b6808f12952f4c36e05ba7068379a.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_b5a1c4ecfca018ad24b729e213296d41.htm">Source</a></li><li class="navelem"><a class="el" href="../../dir_e321052006a51284e67389ab20037e7c.htm">Engine</a></li><li class="navelem"><a class="el" href="../../dir_be0c42c58b36f42c54ec54024ed4f6af.htm">Foundation</a></li><li class="navelem"><a class="el" href="../../dir_a310e74f255299a0e9ba52ecb9387fcd.htm">CodeUtils</a></li><li class="navelem"><a class="el" href="../../dir_51e0e3172f0ee149d61456fae3821a25.htm">Expression</a></li><li class="navelem"><a class="el" href="../../dir_743443243d7831ea588a534107a225dd.htm">Implementation</a></li><li class="navelem"><b>ExpressionVMOperations.h</b></li>
-    <li class="footer">Generated on Mon Apr 17 2023 20:10:26 for XIIEngine by
+    <li class="footer">Generated on Fri Jun 16 2023 14:12:38 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

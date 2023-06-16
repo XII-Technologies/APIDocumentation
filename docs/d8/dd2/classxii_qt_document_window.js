@@ -24,13 +24,13 @@ var classxii_qt_document_window =
     [ "InternalRedraw", "d8/dd2/classxii_qt_document_window.htm#af1ae0afbe7eb019b51b45424ae9d8d5e", null ],
     [ "InternalVisibleInContainerChanged", "d8/dd2/classxii_qt_document_window.htm#a740b584d046fefe6d81b71ecbd0c7f2b", null ],
     [ "IsVisibleInContainer", "d8/dd2/classxii_qt_document_window.htm#aec9b1b582a3d11dd9e0c62314f0bd324", null ],
-    [ "RequestWindowTabContextMenu", "d8/dd2/classxii_qt_document_window.htm#a580be788f8ef8e1d68ba5eb516162da3", null ],
+    [ "RequestWindowTabContextMenu", "d8/dd2/classxii_qt_document_window.htm#a87c8c10f6378be5c76383eea26a1e002", null ],
     [ "SaveDocument", "d8/dd2/classxii_qt_document_window.htm#a96416c7a84092025db77ff1d6c30fc10", null ],
     [ "ScheduleRestoreWindowLayout", "d8/dd2/classxii_qt_document_window.htm#a7eda20d6eff0e2239b46494aff6d0cf8", null ],
-    [ "SetPermanentStatusBarMsg", "d8/dd2/classxii_qt_document_window.htm#a8ba663109e62cf522f5fe5de396388bb", null ],
-    [ "SetTargetFramerate", "d8/dd2/classxii_qt_document_window.htm#a50382a354a659c11418788b5b1354386", null ],
+    [ "SetPermanentStatusBarMsg", "d8/dd2/classxii_qt_document_window.htm#a74a229239e504587da980ddd568fbea7", null ],
+    [ "SetTargetFramerate", "d8/dd2/classxii_qt_document_window.htm#a60a66df9740d893128e33c6cc5f43313", null ],
     [ "showEvent", "d8/dd2/classxii_qt_document_window.htm#a12c2fc734b7a6e7afab448a9bed6a17a", null ],
-    [ "ShowTemporaryStatusBarMsg", "d8/dd2/classxii_qt_document_window.htm#a0f640716314d5a229b564281915ac35b", null ],
+    [ "ShowTemporaryStatusBarMsg", "d8/dd2/classxii_qt_document_window.htm#ac28a5e5ad253fc81ef4e691599c79fd2", null ],
     [ "TriggerRedraw", "d8/dd2/classxii_qt_document_window.htm#af26e326afd22235206f405d6374e8398", null ],
     [ "xiiQtContainerWindow", "d8/dd2/classxii_qt_document_window.htm#af68b497013daa2a3fb1bb0f608b8d9d9", null ]
 ];

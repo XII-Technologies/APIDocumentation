@@ -24,6 +24,6 @@ var structxii_hybrid_string_base =
     [ "operator=", "df/d4f/structxii_hybrid_string_base.htm#afe050796950d0116a3267a57af955a0a", null ],
     [ "operator=", "df/d4f/structxii_hybrid_string_base.htm#abc3c84e912233afa04cfb344402d14da", null ],
     [ "operator=", "df/d4f/structxii_hybrid_string_base.htm#aa835ff9b820b2c7dcbbd808fbd1bf154", null ],
-    [ "ReadAll", "df/d4f/structxii_hybrid_string_base.htm#aa5828754530fb0fd2fa55d330b021752", null ],
+    [ "ReadAll", "df/d4f/structxii_hybrid_string_base.htm#afd77513023512269df5bd1a13c52a255", null ],
     [ "xiiStringBuilder", "df/d4f/structxii_hybrid_string_base.htm#ac47f61ebaab9b4a8ee83ad94d6ec85b7", null ]
 ];

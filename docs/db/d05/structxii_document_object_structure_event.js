@@ -11,7 +11,7 @@ var structxii_document_object_structure_event =
       [ "AfterObjectMoved", "db/d05/structxii_document_object_structure_event.htm#a6660fdad81f5363d0b3f67acc2226eb5a4a55211f2b4194e230a319ec6633bb52", null ],
       [ "AfterObjectMoved2", "db/d05/structxii_document_object_structure_event.htm#a6660fdad81f5363d0b3f67acc2226eb5a80b2a88b5ebfcc8ec633a06924bc04e9", null ]
     ] ],
-    [ "xiiDocumentObjectStructureEvent", "db/d05/structxii_document_object_structure_event.htm#a2eceb848460ac37fc1b47e6bdffcafc9", null ],
+    [ "xiiDocumentObjectStructureEvent", "db/d05/structxii_document_object_structure_event.htm#ab30358ed9bbc736c1decf77baf3a8c5f", null ],
     [ "getInsertIndex", "db/d05/structxii_document_object_structure_event.htm#ad11fb18d0b9ac3bbd5e73381fe0315d5", null ],
     [ "GetProperty", "db/d05/structxii_document_object_structure_event.htm#a1a7fce1375e31b2730d845ed3ef6e01d", null ],
     [ "m_EventType", "db/d05/structxii_document_object_structure_event.htm#a51491b84303a10e257047628af944d9e", null ],

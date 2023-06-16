@@ -10,7 +10,7 @@ var classxii_visual_script_instance =
     [ "GetOwner", "d5/d6f/classxii_visual_script_instance.htm#a2756c284037fcdafa1831b736ace1085", null ],
     [ "GetOwnerComponent", "d5/d6f/classxii_visual_script_instance.htm#a764132fead8f44f38f00a921b4344647", null ],
     [ "GetWorld", "d5/d6f/classxii_visual_script_instance.htm#aa780c751a11988194124550783d3c5d5", null ],
-    [ "HandleMessage", "d5/d6f/classxii_visual_script_instance.htm#a43c35bfca28aa9b63e07965f268a467c", null ],
+    [ "HandleMessage", "d5/d6f/classxii_visual_script_instance.htm#a1536ca952a6ec37df496cd2b17327b30", null ],
     [ "HandlesMessage", "d5/d6f/classxii_visual_script_instance.htm#a406417af1330268434f25d0b8146cb9b", null ],
     [ "SetOutputPinValue", "d5/d6f/classxii_visual_script_instance.htm#a0cf5337b13c10b5eb708cea0eb8d51fe", null ],
     [ "xiiVisualScriptNode", "d5/d6f/classxii_visual_script_instance.htm#a3066f457fc1c82167234fab4512e13c4", null ]

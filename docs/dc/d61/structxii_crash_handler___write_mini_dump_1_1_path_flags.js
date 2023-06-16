@@ -1,7 +1,7 @@
 var structxii_crash_handler___write_mini_dump_1_1_path_flags =
 [
     [ "Bits", "d2/d7a/structxii_crash_handler___write_mini_dump_1_1_path_flags_1_1_bits.htm", "d2/d7a/structxii_crash_handler___write_mini_dump_1_1_path_flags_1_1_bits" ],
-    [ "StorageType", "dc/d61/structxii_crash_handler___write_mini_dump_1_1_path_flags.htm#a6c57691f8cac1abbfb6a7e92acc7c958", null ],
+    [ "StorageType", "dc/d61/structxii_crash_handler___write_mini_dump_1_1_path_flags.htm#a04e206a7beb5a98ae80df6e316e3ab71", null ],
     [ "Enum", "dc/d61/structxii_crash_handler___write_mini_dump_1_1_path_flags.htm#a9ccf056c450bfbfb3a820ce20ad3a7d3", [
       [ "AppendDate", "dc/d61/structxii_crash_handler___write_mini_dump_1_1_path_flags.htm#a9ccf056c450bfbfb3a820ce20ad3a7d3a49eebb00b6cd77edab90608067b2c293", null ],
       [ "AppendSubFolder", "dc/d61/structxii_crash_handler___write_mini_dump_1_1_path_flags.htm#a9ccf056c450bfbfb3a820ce20ad3a7d3ad69804266b80197c342aeecfa3f0a024", null ],

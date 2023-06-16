@@ -11,9 +11,9 @@ var classxii_o_s_file =
     [ "GetFileSize", "da/d95/classxii_o_s_file.htm#af3b58bf9d7b2711165fd22a8cc22b8c2", null ],
     [ "GetOpenFileName", "da/d95/classxii_o_s_file.htm#a7b83b378d4553178dcfbc8045a056ddd", null ],
     [ "IsOpen", "da/d95/classxii_o_s_file.htm#aba1688c4744562bdb24ccf1f1dd7902c", null ],
-    [ "Open", "da/d95/classxii_o_s_file.htm#a8481bff65bffe6c87568fc63e72fbdb0", null ],
+    [ "Open", "da/d95/classxii_o_s_file.htm#aeaf0f76784ea8dcf94dc58fc0ffdf05d", null ],
     [ "Read", "da/d95/classxii_o_s_file.htm#a931370575cd781afdc6a7f28a2d4c25d", null ],
-    [ "ReadAll", "da/d95/classxii_o_s_file.htm#abe73f737ab08b2f35411fcfda2539a7d", null ],
-    [ "SetFilePosition", "da/d95/classxii_o_s_file.htm#a8277f832fc104b9549090e861ccb35e8", null ],
+    [ "ReadAll", "da/d95/classxii_o_s_file.htm#a881d1644aad44ce96caa186a623faf8e", null ],
+    [ "SetFilePosition", "da/d95/classxii_o_s_file.htm#a0a5b90401342c6d70d76340c94a91dc4", null ],
     [ "Write", "da/d95/classxii_o_s_file.htm#aefa4c0d37ce378d816ed08fdcb231da4", null ]
 ];
