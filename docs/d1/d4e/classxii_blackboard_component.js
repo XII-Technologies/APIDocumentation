@@ -7,7 +7,7 @@ var classxii_blackboard_component =
     [ "GetBlackboardName", "d1/d4e/classxii_blackboard_component.htm#ab85b38317892a18bf74cc8e08ab1687d", null ],
     [ "GetBoard", "d1/d4e/classxii_blackboard_component.htm#a8f198b40af2d75f5dd6fe7e9843b67ef", null ],
     [ "GetBoard", "d1/d4e/classxii_blackboard_component.htm#a0fcffcd8c1fc992e9f155ac41ef2efa4", null ],
-    [ "GetEntryValue", "d1/d4e/classxii_blackboard_component.htm#a6f7858661184b3e4769bfdd6d4a09300", null ],
+    [ "GetEntryValue", "d1/d4e/classxii_blackboard_component.htm#a26f42098dc6182cd8a74afd0d30441ad", null ],
     [ "GetSendEntryChangedMessage", "d1/d4e/classxii_blackboard_component.htm#ad30bb268f681796203d29c66e64318dc", null ],
     [ "GetShowDebugInfo", "d1/d4e/classxii_blackboard_component.htm#aeb6b017ba0c4717e669f5cf839e4c85f", null ],
     [ "OnActivated", "d1/d4e/classxii_blackboard_component.htm#a043955dba6d06d28035a61ec07874d9b", null ],

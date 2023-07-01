@@ -1,11 +1,11 @@
 var classxii_open_ddl_reader_element =
 [
-    [ "FindChild", "d1/d33/classxii_open_ddl_reader_element.htm#ad288d2b6029bd5da801a50dcdcb798a2", null ],
-    [ "FindChildOfType", "d1/d33/classxii_open_ddl_reader_element.htm#ab05e0db94e2fbfb081e3a27ce21619d8", null ],
-    [ "FindChildOfType", "d1/d33/classxii_open_ddl_reader_element.htm#a76851c58d5a3bae84660af1d9ff3c49b", null ],
-    [ "GetCustomType", "d1/d33/classxii_open_ddl_reader_element.htm#a8ac1b94ee52d2c5e7abf51da7dcb1f40", null ],
+    [ "FindChild", "d1/d33/classxii_open_ddl_reader_element.htm#a804d349b876a462f365ffad930e22cf9", null ],
+    [ "FindChildOfType", "d1/d33/classxii_open_ddl_reader_element.htm#a2ce29878f3006c498a6884b3bc702efb", null ],
+    [ "FindChildOfType", "d1/d33/classxii_open_ddl_reader_element.htm#ac703117a34e40ea43e970da97362ae5e", null ],
+    [ "GetCustomType", "d1/d33/classxii_open_ddl_reader_element.htm#a681c586f2043525d6304bc20cdc1f7e0", null ],
     [ "GetFirstChild", "d1/d33/classxii_open_ddl_reader_element.htm#ace625e938051ceeb6925d4e518a7974e", null ],
-    [ "GetName", "d1/d33/classxii_open_ddl_reader_element.htm#a3c628b648f0dac92224562516441dd90", null ],
+    [ "GetName", "d1/d33/classxii_open_ddl_reader_element.htm#ad1b5dd5efea504b0b50ebcab4c235df1", null ],
     [ "GetNumChildObjects", "d1/d33/classxii_open_ddl_reader_element.htm#a2df77ab4c65cd448afc15ee7190f5c6a", null ],
     [ "GetNumPrimitives", "d1/d33/classxii_open_ddl_reader_element.htm#a9a10a1d69acf525582b56ea20dd19e25", null ],
     [ "GetPrimitivesBool", "d1/d33/classxii_open_ddl_reader_element.htm#ad75c61714daf30689db9d8a96d7a207f", null ],
@@ -25,7 +25,7 @@ var classxii_open_ddl_reader_element =
     [ "HasName", "d1/d33/classxii_open_ddl_reader_element.htm#a651a16fb38af9fddfadb2df7c9b872f9", null ],
     [ "HasPrimitives", "d1/d33/classxii_open_ddl_reader_element.htm#a73cb7370c5ee5d8ef8d67bd4dcd278c1", null ],
     [ "IsCustomType", "d1/d33/classxii_open_ddl_reader_element.htm#a39e7299bb36a2014770241f8f1aa2cc2", null ],
-    [ "IsCustomType", "d1/d33/classxii_open_ddl_reader_element.htm#a4535c07a367f2b8c377fe25ff83691e2", null ],
+    [ "IsCustomType", "d1/d33/classxii_open_ddl_reader_element.htm#a6da01b397d5643b81a8c60f0243765e3", null ],
     [ "IsNameGlobal", "d1/d33/classxii_open_ddl_reader_element.htm#a4510e1546d07b9dd1e0752829f066cc1", null ],
     [ "XII_DECLARE_POD_TYPE", "d1/d33/classxii_open_ddl_reader_element.htm#a07b915789103d21abb3cc6a1daef39ee", null ],
     [ "xiiOpenDdlReader", "d1/d33/classxii_open_ddl_reader_element.htm#a4a4b948ae1b6e8e597df8e502a47c5d5", null ]

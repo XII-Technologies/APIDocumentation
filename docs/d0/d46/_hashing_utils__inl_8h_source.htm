@@ -184,54 +184,65 @@ $(document).ready(function(){initNavTree('d0/d46/_hashing_utils__inl_8h_source.h
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  XII_ALWAYS_INLINE <span class="keyword">static</span> <span class="keywordtype">bool</span> Equal(<span class="keyword">const</span> <span class="keywordtype">char</span>* a, <span class="keyword">const</span> <span class="keywordtype">char</span>* b) { <span class="keywordflow">return</span> <a class="code" href="../../df/d65/classxii_string_utils.htm#a39bb50553ad3fbca2c342abbca08fee5">xiiStringUtils::IsEqual</a>(a, b); }</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;};</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00099"></a><span class="lineno"><a class="line" href="../../dd/df1/structxii_hash_helper_3_01_t_01_5_01_4.htm">   99</a></span>&#160;<span class="keyword">struct </span><a class="code" href="../../d6/dcd/structxii_hash_helper.htm">xiiHashHelper</a>&lt;T*&gt;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="keyword">template</span> &lt;&gt;</div>
+<div class="line"><a name="l00099"></a><span class="lineno"><a class="line" href="../../d9/d24/structxii_hash_helper_3_01xii_string_view_01_4.htm">   99</a></span>&#160;<span class="keyword">struct </span><a class="code" href="../../d6/dcd/structxii_hash_helper.htm">xiiHashHelper</a>&lt;<a class="code" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a>&gt;</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;{</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;  XII_ALWAYS_INLINE <span class="keyword">static</span> xiiUInt32 Hash(T* value)</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;  XII_ALWAYS_INLINE <span class="keyword">static</span> xiiUInt32 Hash(<a class="code" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sValue)</div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  {</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="preprocessor">#if XII_ENABLED(XII_PLATFORM_64BIT)</span></div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="../../d6/dcd/structxii_hash_helper.htm">xiiHashHelper&lt;xiiUInt64&gt;::Hash</a>(<span class="keyword">reinterpret_cast&lt;</span>xiiUInt64<span class="keyword">&gt;</span>(value) &gt;&gt; 4);</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="../../d6/dcd/structxii_hash_helper.htm">xiiHashHelper&lt;xiiUInt32&gt;::Hash</a>(<span class="keyword">reinterpret_cast&lt;</span>xiiUInt32<span class="keyword">&gt;</span>(value) &gt;&gt; 4);</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;  }</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160; </div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;  XII_ALWAYS_INLINE <span class="keyword">static</span> <span class="keywordtype">bool</span> Equal(T* a, T* b)</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;  {</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <span class="keywordflow">return</span> a == b;</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;  }</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;};</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160; </div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="keyword">template</span> &lt;<span class="keywordtype">size_t</span> N&gt;</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;constexpr XII_ALWAYS_INLINE xiiUInt64 <a class="code" href="../../dc/d66/classxii_hashing_utils.htm#aafe5be4737dcb59d3c6bb1f70db8579c">xiiHashingUtils::StringHash</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> (&amp;str)[N], xiiUInt64 uiSeed)</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;{</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="../../dc/d66/classxii_hashing_utils.htm#abedbea315ba19ffd2c80d3a43c84c09e">xxHash64String</a>(str, uiSeed);</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;}</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160; </div>
-<div class="line"><a name="l00122"></a><span class="lineno"><a class="line" href="../../dc/d66/classxii_hashing_utils.htm#a978d45039a8334a0fb700b0e790e7460">  122</a></span>&#160;XII_ALWAYS_INLINE xiiUInt64 <a class="code" href="../../dc/d66/classxii_hashing_utils.htm#aafe5be4737dcb59d3c6bb1f70db8579c">xiiHashingUtils::StringHash</a>(<a class="code" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sStr, xiiUInt64 uiSeed)</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;{</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="../../dc/d66/classxii_hashing_utils.htm#abedbea315ba19ffd2c80d3a43c84c09e">xxHash64String</a>(sStr, uiSeed);</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;}</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="../../dc/d66/classxii_hashing_utils.htm#afa26c1ad1f288a5c3040f8045fab4382">xiiHashingUtils::StringHashTo32</a>(<a class="code" href="../../dc/d66/classxii_hashing_utils.htm#aafe5be4737dcb59d3c6bb1f70db8579c">xiiHashingUtils::StringHash</a>(sValue));</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;  }</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160; </div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;  XII_ALWAYS_INLINE <span class="keyword">static</span> <span class="keywordtype">bool</span> Equal(<a class="code" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> a, <a class="code" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> b) { <span class="keywordflow">return</span> a == b; }</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;};</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160; </div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00110"></a><span class="lineno"><a class="line" href="../../dd/df1/structxii_hash_helper_3_01_t_01_5_01_4.htm">  110</a></span>&#160;<span class="keyword">struct </span><a class="code" href="../../d6/dcd/structxii_hash_helper.htm">xiiHashHelper</a>&lt;T*&gt;</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;{</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;  XII_ALWAYS_INLINE <span class="keyword">static</span> xiiUInt32 Hash(T* value)</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;  {</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="preprocessor">#if XII_ENABLED(XII_PLATFORM_64BIT)</span></div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="../../d6/dcd/structxii_hash_helper.htm">xiiHashHelper&lt;xiiUInt64&gt;::Hash</a>(<span class="keyword">reinterpret_cast&lt;</span>xiiUInt64<span class="keyword">&gt;</span>(value) &gt;&gt; 4);</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="../../d6/dcd/structxii_hash_helper.htm">xiiHashHelper&lt;xiiUInt32&gt;::Hash</a>(<span class="keyword">reinterpret_cast&lt;</span>xiiUInt32<span class="keyword">&gt;</span>(value) &gt;&gt; 4);</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;  }</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160; </div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;  XII_ALWAYS_INLINE <span class="keyword">static</span> <span class="keywordtype">bool</span> Equal(T* a, T* b)</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;  {</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    <span class="keywordflow">return</span> a == b;</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;  }</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;};</div>
 <div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160; </div>
-<div class="line"><a name="l00127"></a><span class="lineno"><a class="line" href="../../dc/d66/classxii_hashing_utils.htm#afa26c1ad1f288a5c3040f8045fab4382">  127</a></span>&#160;constexpr XII_ALWAYS_INLINE xiiUInt32 <a class="code" href="../../dc/d66/classxii_hashing_utils.htm#afa26c1ad1f288a5c3040f8045fab4382">xiiHashingUtils::StringHashTo32</a>(xiiUInt64 uiHash)</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;{</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;  <span class="comment">// just throw away the upper bits</span></div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;  <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>xiiUInt32<span class="keyword">&gt;</span>(uiHash);</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;<span class="keyword">template</span> &lt;<span class="keywordtype">size_t</span> N&gt;</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;constexpr XII_ALWAYS_INLINE xiiUInt64 <a class="code" href="../../dc/d66/classxii_hashing_utils.htm#aafe5be4737dcb59d3c6bb1f70db8579c">xiiHashingUtils::StringHash</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> (&amp;str)[N], xiiUInt64 uiSeed)</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;{</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="../../dc/d66/classxii_hashing_utils.htm#abedbea315ba19ffd2c80d3a43c84c09e">xxHash64String</a>(str, uiSeed);</div>
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;}</div>
 <div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160; </div>
-<div class="line"><a name="l00133"></a><span class="lineno"><a class="line" href="../../dc/d66/classxii_hashing_utils.htm#a1f21bbacb3193c90ed2d6ef7ce20a725">  133</a></span>&#160;constexpr XII_ALWAYS_INLINE xiiUInt32 <a class="code" href="../../dc/d66/classxii_hashing_utils.htm#a1f21bbacb3193c90ed2d6ef7ce20a725">xiiHashingUtils::CombineHashValues32</a>(xiiUInt32 ui0, xiiUInt32 ui1)</div>
+<div class="line"><a name="l00133"></a><span class="lineno"><a class="line" href="../../dc/d66/classxii_hashing_utils.htm#a978d45039a8334a0fb700b0e790e7460">  133</a></span>&#160;XII_ALWAYS_INLINE xiiUInt64 <a class="code" href="../../dc/d66/classxii_hashing_utils.htm#aafe5be4737dcb59d3c6bb1f70db8579c">xiiHashingUtils::StringHash</a>(<a class="code" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sStr, xiiUInt64 uiSeed)</div>
 <div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;{</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;  <span class="comment">// See boost::hash_combine</span></div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;  <span class="keywordflow">return</span> ui0 ^ (ui1 + 0x9e3779b9 + (ui0 &lt;&lt; 6) + (ui1 &gt;&gt; 2));</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;}</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="../../dc/d66/classxii_hashing_utils.htm#abedbea315ba19ffd2c80d3a43c84c09e">xxHash64String</a>(sStr, uiSeed);</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;}</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160; </div>
+<div class="line"><a name="l00138"></a><span class="lineno"><a class="line" href="../../dc/d66/classxii_hashing_utils.htm#afa26c1ad1f288a5c3040f8045fab4382">  138</a></span>&#160;constexpr XII_ALWAYS_INLINE xiiUInt32 <a class="code" href="../../dc/d66/classxii_hashing_utils.htm#afa26c1ad1f288a5c3040f8045fab4382">xiiHashingUtils::StringHashTo32</a>(xiiUInt64 uiHash)</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;{</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;  <span class="comment">// just throw away the upper bits</span></div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;  <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>xiiUInt32<span class="keyword">&gt;</span>(uiHash);</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;}</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160; </div>
+<div class="line"><a name="l00144"></a><span class="lineno"><a class="line" href="../../dc/d66/classxii_hashing_utils.htm#a1f21bbacb3193c90ed2d6ef7ce20a725">  144</a></span>&#160;constexpr XII_ALWAYS_INLINE xiiUInt32 <a class="code" href="../../dc/d66/classxii_hashing_utils.htm#a1f21bbacb3193c90ed2d6ef7ce20a725">xiiHashingUtils::CombineHashValues32</a>(xiiUInt32 ui0, xiiUInt32 ui1)</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;{</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;  <span class="comment">// See boost::hash_combine</span></div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;  <span class="keywordflow">return</span> ui0 ^ (ui1 + 0x9e3779b9 + (ui0 &lt;&lt; 6) + (ui1 &gt;&gt; 2));</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclassxii_string_utils_htm_a39bb50553ad3fbca2c342abbca08fee5"><div class="ttname"><a href="../../df/d65/classxii_string_utils.htm#a39bb50553ad3fbca2c342abbca08fee5">xiiStringUtils::IsEqual</a></div><div class="ttdeci">static bool IsEqual(const char *pString1, const char *pString2, const char *pString1End=xiiUnicodeUtils::GetMaxStringEnd&lt; char &gt;(), const char *pString2End=xiiUnicodeUtils::GetMaxStringEnd&lt; char &gt;())</div><div class="ttdoc">Returns true, if the two given strings are identical (bitwise).</div><div class="ttdef"><b>Definition:</b> StringUtils_inl.h:127</div></div>
 <div class="ttc" id="astructxii_this_is_a_string_htm"><div class="ttname"><a href="../../d5/d12/structxii_this_is_a_string.htm">xiiThisIsAString</a></div><div class="ttdoc">Base class which marks a class as containing string data.</div><div class="ttdef"><b>Definition:</b> StringView.h:8</div></div>
-<div class="ttc" id="aclassxii_hashing_utils_htm_a1f21bbacb3193c90ed2d6ef7ce20a725"><div class="ttname"><a href="../../dc/d66/classxii_hashing_utils.htm#a1f21bbacb3193c90ed2d6ef7ce20a725">xiiHashingUtils::CombineHashValues32</a></div><div class="ttdeci">constexpr static xiiUInt32 CombineHashValues32(xiiUInt32 ui0, xiiUInt32 ui1)</div><div class="ttdoc">Combines two 32 bit hash values into one.</div><div class="ttdef"><b>Definition:</b> HashingUtils_inl.h:133</div></div>
+<div class="ttc" id="aclassxii_hashing_utils_htm_a1f21bbacb3193c90ed2d6ef7ce20a725"><div class="ttname"><a href="../../dc/d66/classxii_hashing_utils.htm#a1f21bbacb3193c90ed2d6ef7ce20a725">xiiHashingUtils::CombineHashValues32</a></div><div class="ttdeci">constexpr static xiiUInt32 CombineHashValues32(xiiUInt32 ui0, xiiUInt32 ui1)</div><div class="ttdoc">Combines two 32 bit hash values into one.</div><div class="ttdef"><b>Definition:</b> HashingUtils_inl.h:144</div></div>
 <div class="ttc" id="astructxii_string_view_htm"><div class="ttname"><a href="../../da/d9d/structxii_string_view.htm">xiiStringView</a></div><div class="ttdoc">xiiStringView represent a read-only sub-string of a larger string, as it can store a dedicated string...</div><div class="ttdef"><b>Definition:</b> StringView.h:23</div></div>
 <div class="ttc" id="astructxii_internal_1_1_hash_helper_impl_htm"><div class="ttname"><a href="../../d0/dd6/structxii_internal_1_1_hash_helper_impl.htm">xiiInternal::HashHelperImpl</a></div><div class="ttdef"><b>Definition:</b> HashingUtils_inl.h:6</div></div>
-<div class="ttc" id="aclassxii_hashing_utils_htm_afa26c1ad1f288a5c3040f8045fab4382"><div class="ttname"><a href="../../dc/d66/classxii_hashing_utils.htm#afa26c1ad1f288a5c3040f8045fab4382">xiiHashingUtils::StringHashTo32</a></div><div class="ttdeci">constexpr static xiiUInt32 StringHashTo32(xiiUInt64 uiHash)</div><div class="ttdoc">Truncates a 64 bit string hash to 32 bit.</div><div class="ttdef"><b>Definition:</b> HashingUtils_inl.h:127</div></div>
+<div class="ttc" id="aclassxii_hashing_utils_htm_afa26c1ad1f288a5c3040f8045fab4382"><div class="ttname"><a href="../../dc/d66/classxii_hashing_utils.htm#afa26c1ad1f288a5c3040f8045fab4382">xiiHashingUtils::StringHashTo32</a></div><div class="ttdeci">constexpr static xiiUInt32 StringHashTo32(xiiUInt64 uiHash)</div><div class="ttdoc">Truncates a 64 bit string hash to 32 bit.</div><div class="ttdef"><b>Definition:</b> HashingUtils_inl.h:138</div></div>
 <div class="ttc" id="aclassxii_hashing_utils_htm_aafe5be4737dcb59d3c6bb1f70db8579c"><div class="ttname"><a href="../../dc/d66/classxii_hashing_utils.htm#aafe5be4737dcb59d3c6bb1f70db8579c">xiiHashingUtils::StringHash</a></div><div class="ttdeci">constexpr static xiiUInt64 StringHash(const char(&amp;str)[N], xiiUInt64 uiSeed=0)</div><div class="ttdoc">Calculates the hash of the given string literal at compile time.</div></div>
 <div class="ttc" id="aclassxii_hashing_utils_htm_abedbea315ba19ffd2c80d3a43c84c09e"><div class="ttname"><a href="../../dc/d66/classxii_hashing_utils.htm#abedbea315ba19ffd2c80d3a43c84c09e">xiiHashingUtils::xxHash64String</a></div><div class="ttdeci">constexpr static xiiUInt64 xxHash64String(const char(&amp;str)[N], xiiUInt64 uiSeed=0)</div><div class="ttdoc">Calculates the 64bit xxHash of the given string literal at compile time.</div></div>
 <div class="ttc" id="astructxii_hash_helper_htm"><div class="ttname"><a href="../../d6/dcd/structxii_hash_helper.htm">xiiHashHelper</a></div><div class="ttdoc">Helper struct to calculate the Hash of different types.</div><div class="ttdef"><b>Definition:</b> HashingUtils.h:74</div></div>
@@ -239,7 +250,7 @@ $(document).ready(function(){initNavTree('d0/d46/_hashing_utils__inl_8h_source.h
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.htm">home</a></li><li class="navelem"><a class="el" href="../../dir_1036706e55c22cab35bc1c58ee689f1d.htm">runner</a></li><li class="navelem"><a class="el" href="../../dir_629f8151d55d307162ff2d619fb1783d.htm">work</a></li><li class="navelem"><a class="el" href="../../dir_1ddc44fe1263a8c7935fa6130b7d9499.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_2c1b6808f12952f4c36e05ba7068379a.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_b5a1c4ecfca018ad24b729e213296d41.htm">Source</a></li><li class="navelem"><a class="el" href="../../dir_e321052006a51284e67389ab20037e7c.htm">Engine</a></li><li class="navelem"><a class="el" href="../../dir_be0c42c58b36f42c54ec54024ed4f6af.htm">Foundation</a></li><li class="navelem"><a class="el" href="../../dir_9c1e22d3e11d4a43084d1b1d2f918d61.htm">Algorithm</a></li><li class="navelem"><a class="el" href="../../dir_d4adea5aac12000137e383d06fa4b0f6.htm">Implementation</a></li><li class="navelem"><b>HashingUtils_inl.h</b></li>
-    <li class="footer">Generated on Fri Jun 16 2023 14:12:38 for XIIEngine by
+    <li class="footer">Generated on Sat Jul 1 2023 22:50:11 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

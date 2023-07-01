@@ -166,7 +166,7 @@ static <a class="el" href="../../d7/dc1/structxii_time.htm">xiiTime</a>&#160;</t
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
 <tr class="memitem:aa195b8556fd30fc2da1ca59652beceff"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../dc/d84/structxii_delegate.htm">FindComponentTypeCallback</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/df8/classxii_world_reader.htm#aa195b8556fd30fc2da1ca59652beceff">s_FindComponentTypeCallback</a></td></tr>
-<tr class="memdesc:aa195b8556fd30fc2da1ca59652beceff"><td class="mdescLeft">&#160;</td><td class="mdescRight">An optional callback to redirect the lookup of a component type name to an <a class="el" href="../../db/d89/classxii_r_t_t_i.htm" title="This enumerable class holds information about reflected types. Each instance represents one type that...">xiiRTTI</a> type.  <a href="../../df/df8/classxii_world_reader.htm#aa195b8556fd30fc2da1ca59652beceff">More...</a><br /></td></tr>
+<tr class="memdesc:aa195b8556fd30fc2da1ca59652beceff"><td class="mdescLeft">&#160;</td><td class="mdescRight">An optional callback to redirect the lookup of a component type name to a <a class="el" href="../../db/d89/classxii_r_t_t_i.htm" title="This enumerable class holds information about reflected types. Each instance represents one type that...">xiiRTTI</a> type.  <a href="../../df/df8/classxii_world_reader.htm#aa195b8556fd30fc2da1ca59652beceff">More...</a><br /></td></tr>
 <tr class="separator:aa195b8556fd30fc2da1ca59652beceff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -293,7 +293,7 @@ Static Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Reads all information about the world from the given stream. </p>
-<p>Call this once to populate <a class="el" href="../../df/df8/classxii_world_reader.htm" title="Reads a world description from a stream. Allows to instantiate that world multiple times in different...">xiiWorldReader</a> with information how to instantiate the world. Afterwards <em>stream</em> can be deleted. Call <a class="el" href="../../df/df8/classxii_world_reader.htm#aa1099b15bf6bebc718a6839fda57c214" title="Creates one instance of the world that was previously read by ReadWorldDescription().">InstantiateWorld()</a> or <a class="el" href="../../df/df8/classxii_world_reader.htm#a3a39b2f837a942905fcbe65514211095" title="Creates one instance of the world that was previously read by ReadWorldDescription().">InstantiatePrefab()</a> afterwards as often as you like to actually get an objects into an <a class="el" href="../../d6/d89/classxii_world.htm" title="A world encapsulates a scene graph of game objects and various component managers and their component...">xiiWorld</a>. By default, the method will warn if it skips bytes in the stream that are of unknown types. The warnings can be suppressed by setting warningOnUnkownSkip to false. </p>
+<p>Call this once to populate <a class="el" href="../../df/df8/classxii_world_reader.htm" title="Reads a world description from a stream. Allows to instantiate that world multiple times in different...">xiiWorldReader</a> with information how to instantiate the world. Afterwards <em>stream</em> can be deleted. Call <a class="el" href="../../df/df8/classxii_world_reader.htm#aa1099b15bf6bebc718a6839fda57c214" title="Creates one instance of the world that was previously read by ReadWorldDescription().">InstantiateWorld()</a> or <a class="el" href="../../df/df8/classxii_world_reader.htm#a3a39b2f837a942905fcbe65514211095" title="Creates one instance of the world that was previously read by ReadWorldDescription().">InstantiatePrefab()</a> afterwards as often as you like to actually get an objects into a <a class="el" href="../../d6/d89/classxii_world.htm" title="A world encapsulates a scene graph of game objects and various component managers and their component...">xiiWorld</a>. By default, the method will warn if it skips bytes in the stream that are of unknown types. The warnings can be suppressed by setting warningOnUnkownSkip to false. </p>
 
 </div>
 </div>
@@ -318,7 +318,7 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>An optional callback to redirect the lookup of a component type name to an <a class="el" href="../../db/d89/classxii_r_t_t_i.htm" title="This enumerable class holds information about reflected types. Each instance represents one type that...">xiiRTTI</a> type. </p>
+<p>An optional callback to redirect the lookup of a component type name to a <a class="el" href="../../db/d89/classxii_r_t_t_i.htm" title="This enumerable class holds information about reflected types. Each instance represents one type that...">xiiRTTI</a> type. </p>
 <p>If specified, this is used by ALL world readers. The intention is to use this either for logging purposes, or to implement a whitelist or blacklist for specific component types. E.g. if the callback returns nullptr, the component type is 'unknown' and skipped by the world reader. Thus one can remove unwanted component types. Theoretically one could also redirect an old (or renamed) component type to a new one, given that their deserialization code is compatible. </p>
 
 </div>
@@ -333,7 +333,7 @@ Static Public Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../df/df8/classxii_world_reader.htm">xiiWorldReader</a></li>
-    <li class="footer">Generated on Fri Jun 16 2023 14:12:59 for XIIEngine by
+    <li class="footer">Generated on Sat Jul 1 2023 22:50:35 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

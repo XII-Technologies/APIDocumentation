@@ -100,13 +100,14 @@ Inheritance diagram for xiiStateMachineState:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../d8/d91/classxii_state_machine_state__inherit__graph.png" border="0" usemap="#xii_state_machine_state_inherit__map" alt="Inheritance graph"/></div>
 <map name="xii_state_machine_state_inherit__map" id="xii_state_machine_state_inherit__map">
-<area shape="rect" title="Base class for a state in a state machine." alt="" coords="324,111,485,138"/>
+<area shape="rect" title="Base class for a state in a state machine." alt="" coords="324,143,485,170"/>
 <area shape="rect" href="../../d2/d80/classxii_state_machine_state___compound.htm" title="A state machine state implementation that combines multiple sub states into one." alt="" coords="535,5,696,47"/>
 <area shape="rect" href="../../d6/d25/classxii_state_machine_state___nested_state_machine.htm" title="A state machine state implementation that represents another state machine nested within this state...." alt="" coords="533,71,697,112"/>
-<area shape="rect" href="../../d4/df5/classxii_state_machine_state___send_msg.htm" title="A state machine state that sends a xiiMsgStateMachineStateChanged on state enter or exit to the owner..." alt="" coords="535,136,696,177"/>
-<area shape="rect" href="../../d3/d01/classxii_state_machine_state___switch_object.htm" title="A state machine state that sets the enabled flag on a game object and disables all other objects in t..." alt="" coords="535,201,696,243"/>
-<area shape="rect" href="../../dc/d71/classxii_reflected_class.htm" title="All classes that should be dynamically reflectable, need to be derived from this base class." alt="" coords="141,111,276,138"/>
-<area shape="rect" href="../../d2/d38/classxii_no_base.htm" title="Dummy type to pass to templates and macros that expect a base type for a class that has no base." alt="" coords="5,111,93,138"/>
+<area shape="rect" href="../../d6/d04/classxii_state_machine_state___script.htm" title="A state machine state implementation that can be scripted using e.g. visual scripting." alt="" coords="535,136,696,177"/>
+<area shape="rect" href="../../d4/df5/classxii_state_machine_state___send_msg.htm" title="A state machine state that sends a xiiMsgStateMachineStateChanged on state enter or exit to the owner..." alt="" coords="535,201,696,243"/>
+<area shape="rect" href="../../d3/d01/classxii_state_machine_state___switch_object.htm" title="A state machine state that sets the enabled flag on a game object and disables all other objects in t..." alt="" coords="535,267,696,308"/>
+<area shape="rect" href="../../dc/d71/classxii_reflected_class.htm" title="All classes that should be dynamically reflectable, need to be derived from this base class." alt="" coords="141,143,276,170"/>
+<area shape="rect" href="../../d2/d38/classxii_no_base.htm" title="Dummy type to pass to templates and macros that expect a base type for a class that has no base." alt="" coords="5,143,93,170"/>
 </map>
 <center><span class="legend">[<a target="top" href="../../graph_legend.htm">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -133,12 +134,12 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>OnExit</b> (<
 <tr class="memitem:a27b59f025d95f7b28a139ca9004516c3"><td class="memItemLeft" align="right" valign="top"><a id="a27b59f025d95f7b28a139ca9004516c3"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>Update</b> (<a class="el" href="../../d4/da9/classxii_state_machine_instance.htm">xiiStateMachineInstance</a> &amp;ref_instance, void *pInstanceData, <a class="el" href="../../d7/dc1/structxii_time.htm">xiiTime</a> deltaTime) const</td></tr>
 <tr class="separator:a27b59f025d95f7b28a139ca9004516c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aac927585e369888c79f44120564d5217"><td class="memItemLeft" align="right" valign="top"><a id="aac927585e369888c79f44120564d5217"></a>
-virtual <a class="el" href="../../dd/dad/structxii_result.htm">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Serialize</b> (<a class="el" href="../../d0/d18/classxii_stream_writer.htm">xiiStreamWriter</a> &amp;ref_stream) const</td></tr>
-<tr class="separator:aac927585e369888c79f44120564d5217"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab48180a355d78b438a208800ed83e968"><td class="memItemLeft" align="right" valign="top"><a id="ab48180a355d78b438a208800ed83e968"></a>
-virtual <a class="el" href="../../dd/dad/structxii_result.htm">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Deserialize</b> (<a class="el" href="../../d4/d5e/classxii_stream_reader.htm">xiiStreamReader</a> &amp;ref_stream)</td></tr>
-<tr class="separator:ab48180a355d78b438a208800ed83e968"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16224880166137f9caa2c156a0719860"><td class="memItemLeft" align="right" valign="top"><a id="a16224880166137f9caa2c156a0719860"></a>
+virtual <a class="el" href="../../dd/dad/structxii_result.htm">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Serialize</b> (<a class="el" href="../../d0/d18/classxii_stream_writer.htm">xiiStreamWriter</a> &amp;inout_stream) const</td></tr>
+<tr class="separator:a16224880166137f9caa2c156a0719860"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8cf6c3ebfb06f035a5fb88503aff685"><td class="memItemLeft" align="right" valign="top"><a id="aa8cf6c3ebfb06f035a5fb88503aff685"></a>
+virtual <a class="el" href="../../dd/dad/structxii_result.htm">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Deserialize</b> (<a class="el" href="../../d4/d5e/classxii_stream_reader.htm">xiiStreamReader</a> &amp;inout_stream)</td></tr>
+<tr class="separator:aa8cf6c3ebfb06f035a5fb88503aff685"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af7486c47d1079530b7ace0f0187aa087"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d41/classxii_state_machine_state.htm#af7486c47d1079530b7ace0f0187aa087">GetInstanceDataDesc</a> (<a class="el" href="../../de/d91/structxii_state_machine_instance_data_desc.htm">xiiStateMachineInstanceDataDesc</a> &amp;out_desc)</td></tr>
 <tr class="memdesc:af7486c47d1079530b7ace0f0187aa087"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether this state needs additional instance data and if so fills the out_desc.  <a href="../../da/d41/classxii_state_machine_state.htm#af7486c47d1079530b7ace0f0187aa087">More...</a><br /></td></tr>
 <tr class="separator:af7486c47d1079530b7ace0f0187aa087"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -194,7 +195,7 @@ static const <a class="el" href="../../db/d89/classxii_r_t_t_i.htm">xiiRTTI</a> 
 <p>Returns whether this state needs additional instance data and if so fills the out_desc. </p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="../../de/d91/structxii_state_machine_instance_data_desc.htm" title="Structure to describe an instance data type for a state or transition.">xiiStateMachineInstanceDataDesc</a> </dd></dl>
 
-<p>Reimplemented in <a class="el" href="../../d2/d80/classxii_state_machine_state___compound.htm#a43a84bebfa5d122a2d850f21cac9531f">xiiStateMachineState_Compound</a>, and <a class="el" href="../../d6/d25/classxii_state_machine_state___nested_state_machine.htm#a0ac6e868c26d61823774a0e06c1ff7c5">xiiStateMachineState_NestedStateMachine</a>.</p>
+<p>Reimplemented in <a class="el" href="../../d2/d80/classxii_state_machine_state___compound.htm#a43a84bebfa5d122a2d850f21cac9531f">xiiStateMachineState_Compound</a>, <a class="el" href="../../d6/d04/classxii_state_machine_state___script.htm#aa5383e4ccfaa00d4d600dbd1168a24f4">xiiStateMachineState_Script</a>, and <a class="el" href="../../d6/d25/classxii_state_machine_state___nested_state_machine.htm#a0ac6e868c26d61823774a0e06c1ff7c5">xiiStateMachineState_NestedStateMachine</a>.</p>
 
 </div>
 </div>
@@ -208,7 +209,7 @@ static const <a class="el" href="../../db/d89/classxii_r_t_t_i.htm">xiiRTTI</a> 
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../da/d41/classxii_state_machine_state.htm">xiiStateMachineState</a></li>
-    <li class="footer">Generated on Fri Jun 16 2023 14:12:58 for XIIEngine by
+    <li class="footer">Generated on Sat Jul 1 2023 22:50:34 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

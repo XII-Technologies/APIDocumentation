@@ -117,7 +117,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ac847bcb2bfafdde4a4db6da7c1f05e42"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5ef68f77d9e79de3a5933beda6b3db58"><td class="memItemLeft" align="right" valign="top"><a id="a5ef68f77d9e79de3a5933beda6b3db58"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d7a/classxii_j_s_o_n_parser.htm#a5ef68f77d9e79de3a5933beda6b3db58">SetLogInterface</a> (<a class="el" href="../../d6/d6b/classxii_log_interface.htm">xiiLogInterface</a> *pLog)</td></tr>
-<tr class="memdesc:a5ef68f77d9e79de3a5933beda6b3db58"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allows to specify an <a class="el" href="../../d6/d6b/classxii_log_interface.htm" title="Base class for all logging classes.">xiiLogInterface</a> through which errors and warnings are reported. <br /></td></tr>
+<tr class="memdesc:a5ef68f77d9e79de3a5933beda6b3db58"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allows to specify a <a class="el" href="../../d6/d6b/classxii_log_interface.htm" title="Base class for all logging classes.">xiiLogInterface</a> through which errors and warnings are reported. <br /></td></tr>
 <tr class="separator:a5ef68f77d9e79de3a5933beda6b3db58"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
@@ -141,25 +141,25 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../.
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d7a/classxii_j_s_o_n_parser.htm#a350c4dd3ddc7e8d9c912d26c9b2c8990">SkipArray</a> ()</td></tr>
 <tr class="memdesc:a350c4dd3ddc7e8d9c912d26c9b2c8990"><td class="mdescLeft">&#160;</td><td class="mdescRight">Skips the rest of the currently open array. No <a class="el" href="../../dd/d7a/classxii_j_s_o_n_parser.htm#a11c1c496fa48626e48529c170487b788" title="Called when the end of an array is encountered.">OnEndArray()</a> and <a class="el" href="../../dd/d7a/classxii_j_s_o_n_parser.htm#a06051c79ec7d986cb83e397343c9613f" title="Called when the end of an object is encountered.">OnEndObject()</a> calls will be done for this object, cleanup must be done manually. <br /></td></tr>
 <tr class="separator:a350c4dd3ddc7e8d9c912d26c9b2c8990"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3fc3ac96fe491731c3b5d75886ba8409"><td class="memItemLeft" align="right" valign="top"><a id="a3fc3ac96fe491731c3b5d75886ba8409"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d7a/classxii_j_s_o_n_parser.htm#a3fc3ac96fe491731c3b5d75886ba8409">ParsingError</a> (const char *szMessage, bool bFatal)</td></tr>
-<tr class="memdesc:a3fc3ac96fe491731c3b5d75886ba8409"><td class="mdescLeft">&#160;</td><td class="mdescRight">Outputs that a parsing error was detected (via OnParsingError) and stops further parsing, if bFatal is set to true. <br /></td></tr>
-<tr class="separator:a3fc3ac96fe491731c3b5d75886ba8409"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ad592f220e18137e30031bec0e70155"><td class="memItemLeft" align="right" valign="top"><a id="a7ad592f220e18137e30031bec0e70155"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d7a/classxii_j_s_o_n_parser.htm#a7ad592f220e18137e30031bec0e70155">ParsingError</a> (<a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sMessage, bool bFatal)</td></tr>
+<tr class="memdesc:a7ad592f220e18137e30031bec0e70155"><td class="mdescLeft">&#160;</td><td class="mdescRight">Outputs that a parsing error was detected (via OnParsingError) and stops further parsing, if bFatal is set to true. <br /></td></tr>
+<tr class="separator:a7ad592f220e18137e30031bec0e70155"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
 <tr class="memitem:a42b7757d0d16e0a145e98e741959cccd"><td class="memItemLeft" align="right" valign="top"><a id="a42b7757d0d16e0a145e98e741959cccd"></a>
-<a class="el" href="../../d6/d6b/classxii_log_interface.htm">xiiLogInterface</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_pLogInterface</b></td></tr>
+<a class="el" href="../../d6/d6b/classxii_log_interface.htm">xiiLogInterface</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_pLogInterface</b> = nullptr</td></tr>
 <tr class="separator:a42b7757d0d16e0a145e98e741959cccd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
-<tr class="memitem:a19c749c13d6ad4905a2a83852b6764da"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d7a/classxii_j_s_o_n_parser.htm#a19c749c13d6ad4905a2a83852b6764da">OnVariable</a> (const char *szVarName)=0</td></tr>
-<tr class="memdesc:a19c749c13d6ad4905a2a83852b6764da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called whenever a new variable is encountered. The variable name is passed along. At this point the type of the variable (simple, array, object) is not yet determined.  <a href="../../dd/d7a/classxii_j_s_o_n_parser.htm#a19c749c13d6ad4905a2a83852b6764da">More...</a><br /></td></tr>
-<tr class="separator:a19c749c13d6ad4905a2a83852b6764da"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a33e98003fbc7aa7b60b0fb6817692273"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d7a/classxii_j_s_o_n_parser.htm#a33e98003fbc7aa7b60b0fb6817692273">OnReadValue</a> (const char *szValue)=0</td></tr>
-<tr class="memdesc:a33e98003fbc7aa7b60b0fb6817692273"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called whenever a new value is read.  <a href="../../dd/d7a/classxii_j_s_o_n_parser.htm#a33e98003fbc7aa7b60b0fb6817692273">More...</a><br /></td></tr>
-<tr class="separator:a33e98003fbc7aa7b60b0fb6817692273"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a813329f2b13a8c676c3936d5cec25208"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d7a/classxii_j_s_o_n_parser.htm#a813329f2b13a8c676c3936d5cec25208">OnVariable</a> (<a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sVarName)=0</td></tr>
+<tr class="memdesc:a813329f2b13a8c676c3936d5cec25208"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called whenever a new variable is encountered. The variable name is passed along. At this point the type of the variable (simple, array, object) is not yet determined.  <a href="../../dd/d7a/classxii_j_s_o_n_parser.htm#a813329f2b13a8c676c3936d5cec25208">More...</a><br /></td></tr>
+<tr class="separator:a813329f2b13a8c676c3936d5cec25208"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1ec41838c2659b691e8ea933c9357be"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d7a/classxii_j_s_o_n_parser.htm#ab1ec41838c2659b691e8ea933c9357be">OnReadValue</a> (<a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sValue)=0</td></tr>
+<tr class="memdesc:ab1ec41838c2659b691e8ea933c9357be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called whenever a new value is read.  <a href="../../dd/d7a/classxii_j_s_o_n_parser.htm#ab1ec41838c2659b691e8ea933c9357be">More...</a><br /></td></tr>
+<tr class="separator:ab1ec41838c2659b691e8ea933c9357be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0fa12f9b283fc983bdd340e768712f79"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d7a/classxii_j_s_o_n_parser.htm#a0fa12f9b283fc983bdd340e768712f79">OnReadValue</a> (double fValue)=0</td></tr>
 <tr class="memdesc:a0fa12f9b283fc983bdd340e768712f79"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called whenever a new value is read.  <a href="../../dd/d7a/classxii_j_s_o_n_parser.htm#a0fa12f9b283fc983bdd340e768712f79">More...</a><br /></td></tr>
 <tr class="separator:a0fa12f9b283fc983bdd340e768712f79"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -183,9 +183,9 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d7a/classxii_j_s_o_n_parser.htm#a11c1c496fa48626e48529c170487b788">OnEndArray</a> ()=0</td></tr>
 <tr class="memdesc:a11c1c496fa48626e48529c170487b788"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when the end of an array is encountered. <br /></td></tr>
 <tr class="separator:a11c1c496fa48626e48529c170487b788"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aefc2253b8a53ad9bbbf3e047766f6afa"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d7a/classxii_j_s_o_n_parser.htm#aefc2253b8a53ad9bbbf3e047766f6afa">OnParsingError</a> (const char *szMessage, bool bFatal, xiiUInt32 uiLine, xiiUInt32 uiColumn)</td></tr>
-<tr class="memdesc:aefc2253b8a53ad9bbbf3e047766f6afa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when something unexpected is encountered in the JSON document.  <a href="../../dd/d7a/classxii_j_s_o_n_parser.htm#aefc2253b8a53ad9bbbf3e047766f6afa">More...</a><br /></td></tr>
-<tr class="separator:aefc2253b8a53ad9bbbf3e047766f6afa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4404012288d1e553cf6411dff80e3ad"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d7a/classxii_j_s_o_n_parser.htm#aa4404012288d1e553cf6411dff80e3ad">OnParsingError</a> (<a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sMessage, bool bFatal, xiiUInt32 uiLine, xiiUInt32 uiColumn)</td></tr>
+<tr class="memdesc:aa4404012288d1e553cf6411dff80e3ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when something unexpected is encountered in the JSON document.  <a href="../../dd/d7a/classxii_j_s_o_n_parser.htm#aa4404012288d1e553cf6411dff80e3ad">More...</a><br /></td></tr>
+<tr class="separator:aa4404012288d1e553cf6411dff80e3ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A low level JSON parser that can incrementally parse the structure of a JSON document. </p>
@@ -243,7 +243,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 </div><div class="memdoc">
 
 <p>Called when a new array is encountered. </p>
-<p>Directly following a call to <a class="el" href="../../dd/d7a/classxii_j_s_o_n_parser.htm#a19c749c13d6ad4905a2a83852b6764da" title="Called whenever a new variable is encountered. The variable name is passed along. At this point the t...">OnVariable()</a>, this means the variable is of type 'array' (and has a name). In between calls to <a class="el" href="../../dd/d7a/classxii_j_s_o_n_parser.htm#a6f0d71f4ad6c1b5be2ab5b5b16da83a4" title="Called when a new array is encountered.">OnBeginArray()</a> and <a class="el" href="../../dd/d7a/classxii_j_s_o_n_parser.htm#a11c1c496fa48626e48529c170487b788" title="Called when the end of an array is encountered.">OnEndArray()</a> it is another value in the array. </p>
+<p>Directly following a call to <a class="el" href="../../dd/d7a/classxii_j_s_o_n_parser.htm#a813329f2b13a8c676c3936d5cec25208" title="Called whenever a new variable is encountered. The variable name is passed along. At this point the t...">OnVariable()</a>, this means the variable is of type 'array' (and has a name). In between calls to <a class="el" href="../../dd/d7a/classxii_j_s_o_n_parser.htm#a6f0d71f4ad6c1b5be2ab5b5b16da83a4" title="Called when a new array is encountered.">OnBeginArray()</a> and <a class="el" href="../../dd/d7a/classxii_j_s_o_n_parser.htm#a11c1c496fa48626e48529c170487b788" title="Called when the end of an array is encountered.">OnEndArray()</a> it is another value in the array. </p>
 
 <p>Implemented in <a class="el" href="../../d8/d05/classxii_j_s_o_n_reader.htm#aa2b867e0526704e4c8da6b34eb2019bf">xiiJSONReader</a>.</p>
 
@@ -273,14 +273,14 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 </div><div class="memdoc">
 
 <p>Called when a new object is encountered. </p>
-<p>Directly following a call to <a class="el" href="../../dd/d7a/classxii_j_s_o_n_parser.htm#a19c749c13d6ad4905a2a83852b6764da" title="Called whenever a new variable is encountered. The variable name is passed along. At this point the t...">OnVariable()</a>, this means the variable is of type 'object' (and has a name). In between calls to <a class="el" href="../../dd/d7a/classxii_j_s_o_n_parser.htm#a6f0d71f4ad6c1b5be2ab5b5b16da83a4" title="Called when a new array is encountered.">OnBeginArray()</a> and <a class="el" href="../../dd/d7a/classxii_j_s_o_n_parser.htm#a11c1c496fa48626e48529c170487b788" title="Called when the end of an array is encountered.">OnEndArray()</a> it is another value in the array. </p>
+<p>Directly following a call to <a class="el" href="../../dd/d7a/classxii_j_s_o_n_parser.htm#a813329f2b13a8c676c3936d5cec25208" title="Called whenever a new variable is encountered. The variable name is passed along. At this point the t...">OnVariable()</a>, this means the variable is of type 'object' (and has a name). In between calls to <a class="el" href="../../dd/d7a/classxii_j_s_o_n_parser.htm#a6f0d71f4ad6c1b5be2ab5b5b16da83a4" title="Called when a new array is encountered.">OnBeginArray()</a> and <a class="el" href="../../dd/d7a/classxii_j_s_o_n_parser.htm#a11c1c496fa48626e48529c170487b788" title="Called when the end of an array is encountered.">OnEndArray()</a> it is another value in the array. </p>
 
 <p>Implemented in <a class="el" href="../../d8/d05/classxii_j_s_o_n_reader.htm#a80bc4100c41f5388d2fe01eac54f9744">xiiJSONReader</a>.</p>
 
 </div>
 </div>
-<a id="aefc2253b8a53ad9bbbf3e047766f6afa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aefc2253b8a53ad9bbbf3e047766f6afa">&#9670;&nbsp;</a></span>OnParsingError()</h2>
+<a id="aa4404012288d1e553cf6411dff80e3ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa4404012288d1e553cf6411dff80e3ad">&#9670;&nbsp;</a></span>OnParsingError()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -291,8 +291,8 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
         <tr>
           <td class="memname">virtual void xiiJSONParser::OnParsingError </td>
           <td>(</td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>szMessage</em>, </td>
+          <td class="paramtype"><a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a>&#160;</td>
+          <td class="paramname"><em>sMessage</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -328,7 +328,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <p>Called when something unexpected is encountered in the JSON document. </p>
 <p>The error message describes what was expected and what was encountered. If bFatal is true, the error has left the parser in an unrecoverable state and thus it not continue parsing. In that case client code will need to clean up it's open state, as no further <a class="el" href="../../dd/d7a/classxii_j_s_o_n_parser.htm#a06051c79ec7d986cb83e397343c9613f" title="Called when the end of an object is encountered.">OnEndObject()</a> / <a class="el" href="../../dd/d7a/classxii_j_s_o_n_parser.htm#a11c1c496fa48626e48529c170487b788" title="Called when the end of an array is encountered.">OnEndArray()</a> will be called. If bFatal is false, the document does not contain valid JSON, but the parser is able to continue still. </p>
 
-<p>Reimplemented in <a class="el" href="../../d8/d05/classxii_j_s_o_n_reader.htm#adf1c7265b870c771594d2ad3ac5b0fc9">xiiJSONReader</a>.</p>
+<p>Reimplemented in <a class="el" href="../../d8/d05/classxii_j_s_o_n_reader.htm#a79da4589235f56c4fc40a6b90dcebc2c">xiiJSONReader</a>.</p>
 
 </div>
 </div>
@@ -357,45 +357,14 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 </div><div class="memdoc">
 
 <p>Called whenever a new value is read. </p>
-<p>Directly following a call to <a class="el" href="../../dd/d7a/classxii_j_s_o_n_parser.htm#a19c749c13d6ad4905a2a83852b6764da" title="Called whenever a new variable is encountered. The variable name is passed along. At this point the t...">OnVariable()</a>, this means that the variable is a simple variable. In between calls to <a class="el" href="../../dd/d7a/classxii_j_s_o_n_parser.htm#a6f0d71f4ad6c1b5be2ab5b5b16da83a4" title="Called when a new array is encountered.">OnBeginArray()</a> and <a class="el" href="../../dd/d7a/classxii_j_s_o_n_parser.htm#a11c1c496fa48626e48529c170487b788" title="Called when the end of an array is encountered.">OnEndArray()</a> it is another value in the array. </p>
+<p>Directly following a call to <a class="el" href="../../dd/d7a/classxii_j_s_o_n_parser.htm#a813329f2b13a8c676c3936d5cec25208" title="Called whenever a new variable is encountered. The variable name is passed along. At this point the t...">OnVariable()</a>, this means that the variable is a simple variable. In between calls to <a class="el" href="../../dd/d7a/classxii_j_s_o_n_parser.htm#a6f0d71f4ad6c1b5be2ab5b5b16da83a4" title="Called when a new array is encountered.">OnBeginArray()</a> and <a class="el" href="../../dd/d7a/classxii_j_s_o_n_parser.htm#a11c1c496fa48626e48529c170487b788" title="Called when the end of an array is encountered.">OnEndArray()</a> it is another value in the array. </p>
 
 <p>Implemented in <a class="el" href="../../d8/d05/classxii_j_s_o_n_reader.htm#a915a46ded21f1ba6b017088d7b04d168">xiiJSONReader</a>.</p>
 
 </div>
 </div>
-<a id="a33e98003fbc7aa7b60b0fb6817692273"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a33e98003fbc7aa7b60b0fb6817692273">&#9670;&nbsp;</a></span>OnReadValue() <span class="overload">[2/3]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void xiiJSONParser::OnReadValue </td>
-          <td>(</td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>szValue</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Called whenever a new value is read. </p>
-<p>Directly following a call to <a class="el" href="../../dd/d7a/classxii_j_s_o_n_parser.htm#a19c749c13d6ad4905a2a83852b6764da" title="Called whenever a new variable is encountered. The variable name is passed along. At this point the t...">OnVariable()</a>, this means that the variable is a simple variable. In between calls to <a class="el" href="../../dd/d7a/classxii_j_s_o_n_parser.htm#a6f0d71f4ad6c1b5be2ab5b5b16da83a4" title="Called when a new array is encountered.">OnBeginArray()</a> and <a class="el" href="../../dd/d7a/classxii_j_s_o_n_parser.htm#a11c1c496fa48626e48529c170487b788" title="Called when the end of an array is encountered.">OnEndArray()</a> it is another value in the array. </p>
-
-<p>Implemented in <a class="el" href="../../d8/d05/classxii_j_s_o_n_reader.htm#a3596f6c77b7fc474a9b6a77ed0b20919">xiiJSONReader</a>.</p>
-
-</div>
-</div>
 <a id="a0fa12f9b283fc983bdd340e768712f79"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0fa12f9b283fc983bdd340e768712f79">&#9670;&nbsp;</a></span>OnReadValue() <span class="overload">[3/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a0fa12f9b283fc983bdd340e768712f79">&#9670;&nbsp;</a></span>OnReadValue() <span class="overload">[2/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -419,9 +388,40 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 </div><div class="memdoc">
 
 <p>Called whenever a new value is read. </p>
-<p>Directly following a call to <a class="el" href="../../dd/d7a/classxii_j_s_o_n_parser.htm#a19c749c13d6ad4905a2a83852b6764da" title="Called whenever a new variable is encountered. The variable name is passed along. At this point the t...">OnVariable()</a>, this means that the variable is a simple variable. In between calls to <a class="el" href="../../dd/d7a/classxii_j_s_o_n_parser.htm#a6f0d71f4ad6c1b5be2ab5b5b16da83a4" title="Called when a new array is encountered.">OnBeginArray()</a> and <a class="el" href="../../dd/d7a/classxii_j_s_o_n_parser.htm#a11c1c496fa48626e48529c170487b788" title="Called when the end of an array is encountered.">OnEndArray()</a> it is another value in the array. </p>
+<p>Directly following a call to <a class="el" href="../../dd/d7a/classxii_j_s_o_n_parser.htm#a813329f2b13a8c676c3936d5cec25208" title="Called whenever a new variable is encountered. The variable name is passed along. At this point the t...">OnVariable()</a>, this means that the variable is a simple variable. In between calls to <a class="el" href="../../dd/d7a/classxii_j_s_o_n_parser.htm#a6f0d71f4ad6c1b5be2ab5b5b16da83a4" title="Called when a new array is encountered.">OnBeginArray()</a> and <a class="el" href="../../dd/d7a/classxii_j_s_o_n_parser.htm#a11c1c496fa48626e48529c170487b788" title="Called when the end of an array is encountered.">OnEndArray()</a> it is another value in the array. </p>
 
 <p>Implemented in <a class="el" href="../../d8/d05/classxii_j_s_o_n_reader.htm#a37cfe40765f21d01cc3ca05b12a9905c">xiiJSONReader</a>.</p>
+
+</div>
+</div>
+<a id="ab1ec41838c2659b691e8ea933c9357be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab1ec41838c2659b691e8ea933c9357be">&#9670;&nbsp;</a></span>OnReadValue() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void xiiJSONParser::OnReadValue </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a>&#160;</td>
+          <td class="paramname"><em>sValue</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Called whenever a new value is read. </p>
+<p>Directly following a call to <a class="el" href="../../dd/d7a/classxii_j_s_o_n_parser.htm#a813329f2b13a8c676c3936d5cec25208" title="Called whenever a new variable is encountered. The variable name is passed along. At this point the t...">OnVariable()</a>, this means that the variable is a simple variable. In between calls to <a class="el" href="../../dd/d7a/classxii_j_s_o_n_parser.htm#a6f0d71f4ad6c1b5be2ab5b5b16da83a4" title="Called when a new array is encountered.">OnBeginArray()</a> and <a class="el" href="../../dd/d7a/classxii_j_s_o_n_parser.htm#a11c1c496fa48626e48529c170487b788" title="Called when the end of an array is encountered.">OnEndArray()</a> it is another value in the array. </p>
+
+<p>Implemented in <a class="el" href="../../d8/d05/classxii_j_s_o_n_reader.htm#a8c9f98d9b6791675bfec08246f7f1e92">xiiJSONReader</a>.</p>
 
 </div>
 </div>
@@ -449,14 +449,14 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 </div><div class="memdoc">
 
 <p>Called whenever a new value is read. </p>
-<p>Directly following a call to <a class="el" href="../../dd/d7a/classxii_j_s_o_n_parser.htm#a19c749c13d6ad4905a2a83852b6764da" title="Called whenever a new variable is encountered. The variable name is passed along. At this point the t...">OnVariable()</a>, this means that the variable is a simple variable. In between calls to <a class="el" href="../../dd/d7a/classxii_j_s_o_n_parser.htm#a6f0d71f4ad6c1b5be2ab5b5b16da83a4" title="Called when a new array is encountered.">OnBeginArray()</a> and <a class="el" href="../../dd/d7a/classxii_j_s_o_n_parser.htm#a11c1c496fa48626e48529c170487b788" title="Called when the end of an array is encountered.">OnEndArray()</a> it is another value in the array. </p>
+<p>Directly following a call to <a class="el" href="../../dd/d7a/classxii_j_s_o_n_parser.htm#a813329f2b13a8c676c3936d5cec25208" title="Called whenever a new variable is encountered. The variable name is passed along. At this point the t...">OnVariable()</a>, this means that the variable is a simple variable. In between calls to <a class="el" href="../../dd/d7a/classxii_j_s_o_n_parser.htm#a6f0d71f4ad6c1b5be2ab5b5b16da83a4" title="Called when a new array is encountered.">OnBeginArray()</a> and <a class="el" href="../../dd/d7a/classxii_j_s_o_n_parser.htm#a11c1c496fa48626e48529c170487b788" title="Called when the end of an array is encountered.">OnEndArray()</a> it is another value in the array. </p>
 
 <p>Implemented in <a class="el" href="../../d8/d05/classxii_j_s_o_n_reader.htm#a151b99a4f0103cfd4a271bec15a3eb4e">xiiJSONReader</a>.</p>
 
 </div>
 </div>
-<a id="a19c749c13d6ad4905a2a83852b6764da"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a19c749c13d6ad4905a2a83852b6764da">&#9670;&nbsp;</a></span>OnVariable()</h2>
+<a id="a813329f2b13a8c676c3936d5cec25208"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a813329f2b13a8c676c3936d5cec25208">&#9670;&nbsp;</a></span>OnVariable()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -467,8 +467,8 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
         <tr>
           <td class="memname">virtual bool xiiJSONParser::OnVariable </td>
           <td>(</td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>szVarName</em></td><td>)</td>
+          <td class="paramtype"><a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a>&#160;</td>
+          <td class="paramname"><em>sVarName</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -482,7 +482,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <p>Called whenever a new variable is encountered. The variable name is passed along. At this point the type of the variable (simple, array, object) is not yet determined. </p>
 <p>The entire variable (independent of whether it is a simple value, an array or an object) can be skipped by returning false. </p>
 
-<p>Implemented in <a class="el" href="../../d8/d05/classxii_j_s_o_n_reader.htm#a92022a9ebc0cc860da7399794835ee46">xiiJSONReader</a>.</p>
+<p>Implemented in <a class="el" href="../../d8/d05/classxii_j_s_o_n_reader.htm#ab3b28dac344a112689c1b37dc18d5b87">xiiJSONReader</a>.</p>
 
 </div>
 </div>
@@ -496,7 +496,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dd/d7a/classxii_j_s_o_n_parser.htm">xiiJSONParser</a></li>
-    <li class="footer">Generated on Fri Jun 16 2023 14:12:53 for XIIEngine by
+    <li class="footer">Generated on Sat Jul 1 2023 22:50:29 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

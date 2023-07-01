@@ -1,7 +1,7 @@
 var classxii_dummy_x_r =
 [
     [ "xiiDummyXR", "d4/d73/classxii_dummy_x_r.htm#a8f1e8a05d82eda61a357497daf4f609e", null ],
-    [ "~xiiDummyXR", "d4/d73/classxii_dummy_x_r.htm#a8a15dbf847df5e92b15ec1df93a922d4", null ],
+    [ "~xiiDummyXR", "d4/d73/classxii_dummy_x_r.htm#a233edc4501a5653ae11d0bcf3ed0e76c", null ],
     [ "CreateActor", "d4/d73/classxii_dummy_x_r.htm#ab0aae1a30422f4a514afaf38c60ee1c6", null ],
     [ "Deinitialize", "d4/d73/classxii_dummy_x_r.htm#ad4fbc7445508b9ed0d5036525b161623", null ],
     [ "GALDeviceEventHandler", "d4/d73/classxii_dummy_x_r.htm#a9121546ef5d4ad43bf09418b73867e1c", null ],

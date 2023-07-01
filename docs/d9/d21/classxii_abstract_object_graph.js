@@ -20,7 +20,7 @@ var classxii_abstract_object_graph =
     [ "MergeDiffs", "d9/d21/classxii_abstract_object_graph.htm#a044864233678cbd293197e72dc7a7bed", null ],
     [ "ModifyNodeViaNativeCounterpart", "d9/d21/classxii_abstract_object_graph.htm#a472994ed91bffcacd4d609d9a160e324", null ],
     [ "PruneGraph", "d9/d21/classxii_abstract_object_graph.htm#a93b0ec817eae9aa25c44c66b69c3034f", null ],
-    [ "RegisterString", "d9/d21/classxii_abstract_object_graph.htm#ae331dde645556347cdfbf6efb291f809", null ],
+    [ "RegisterString", "d9/d21/classxii_abstract_object_graph.htm#a4e0481d6452b1418cc9843172fac4b7e", null ],
     [ "ReMapNodeGuids", "d9/d21/classxii_abstract_object_graph.htm#a14f274c0e751cd1558fed067ec4680b4", null ],
     [ "ReMapNodeGuidsToMatchGraph", "d9/d21/classxii_abstract_object_graph.htm#af0e701276bfaec2d12302eba0bea7565", null ],
     [ "RemoveNode", "d9/d21/classxii_abstract_object_graph.htm#a23a43634c482db4fbf8655ea607a2a88", null ]

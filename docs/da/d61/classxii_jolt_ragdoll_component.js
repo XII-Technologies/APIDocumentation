@@ -20,7 +20,6 @@ var classxii_jolt_ragdoll_component =
     [ "FinishSetupLimbs", "da/d61/classxii_jolt_ragdoll_component.htm#a81f48184514baa1a39a40e6295449a34", null ],
     [ "GetGravityFactor", "da/d61/classxii_jolt_ragdoll_component.htm#aa55b0fcd4b8e1916ed4fcaff6bf2d53c", null ],
     [ "GetObjectFilterID", "da/d61/classxii_jolt_ragdoll_component.htm#a55c86b4e3fdd02347473f6d2cf46ecce", null ],
-    [ "IsSleeping", "da/d61/classxii_jolt_ragdoll_component.htm#aeebadbec2868f5f90492fb8a4c0b5dac", null ],
     [ "OnAnimationPoseProposal", "da/d61/classxii_jolt_ragdoll_component.htm#a259d6225bda1c7fe901ccf8588da64d1", null ],
     [ "OnAnimationPoseUpdated", "da/d61/classxii_jolt_ragdoll_component.htm#a5857a51a3348dbb0fef1a41d2be7fb65", null ],
     [ "OnDeactivated", "da/d61/classxii_jolt_ragdoll_component.htm#a38bc94bc04933aa1344a4f4f6d54ae3c", null ],

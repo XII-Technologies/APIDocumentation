@@ -2,8 +2,8 @@ var classxii_event_base =
 [
     [ "Unsubscriber", "db/de3/classxii_event_base_1_1_unsubscriber.htm", "db/de3/classxii_event_base_1_1_unsubscriber" ],
     [ "Handler", "d0/d7f/classxii_event_base.htm#ada90d4faae8102fb84947a77720e2f70", null ],
-    [ "RecursionDepthSupported", "d0/d7f/classxii_event_base.htm#a14eaea6839303c35216387d13f555d2babd0f5c5939dc65a7fc2af80ae3f87451", null ],
-    [ "MaxRecursionDepthDefault", "d0/d7f/classxii_event_base.htm#a14eaea6839303c35216387d13f555d2ba8abb769e7341b0ad6d6c82ad6a5b67e3", null ],
+    [ "RecursionDepthSupported", "d0/d7f/classxii_event_base.htm#a5c10a1054a0ee75c492400bc471cde1babd0f5c5939dc65a7fc2af80ae3f87451", null ],
+    [ "MaxRecursionDepthDefault", "d0/d7f/classxii_event_base.htm#a5c10a1054a0ee75c492400bc471cde1ba8abb769e7341b0ad6d6c82ad6a5b67e3", null ],
     [ "xiiEventBase", "d0/d7f/classxii_event_base.htm#a82c447f89fbe6bfe74b0ecfed7476762", null ],
     [ "~xiiEventBase", "d0/d7f/classxii_event_base.htm#a254be200702f88e998b5d0994e947fbb", null ],
     [ "AddEventHandler", "d0/d7f/classxii_event_base.htm#ae7539570090c1f7b00c7a91005b45f50", null ],

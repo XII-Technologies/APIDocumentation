@@ -14,7 +14,6 @@ var classxii_property_anim_asset_document =
     [ "GetAnimationDurationTicks", "d8/db8/classxii_property_anim_asset_document.htm#a95b65a7f215dbc2f25d2741a3e64f4f8", null ],
     [ "GetAnimationDurationTime", "d8/db8/classxii_property_anim_asset_document.htm#af4bd330dea3fcbdaa7639655ee7debb5", null ],
     [ "GetManipulatorSearchStrategy", "d8/db8/classxii_property_anim_asset_document.htm#ac68b4591a368eec8ec24ef4f2a135941", null ],
-    [ "GetObjectAccessor", "d8/db8/classxii_property_anim_asset_document.htm#a9b079d759f5fe1a943cbc3afedffc717", null ],
     [ "GetPlayAnimation", "d8/db8/classxii_property_anim_asset_document.htm#aa9eafae5e2763d4048d89ad9690afeb5", null ],
     [ "GetRepeatAnimation", "d8/db8/classxii_property_anim_asset_document.htm#a182db83c191d1180fd537b43acdb8c07", null ],
     [ "GetScrubberPosition", "d8/db8/classxii_property_anim_asset_document.htm#a48b6f20dce9d2e4fd591f68ed83a0905", null ],

@@ -176,12 +176,12 @@ Visibility Queries</h2></td></tr>
 <tr class="memitem:ae5c2bc818aa2856ae9e36f303fdac6be"><td class="memItemLeft" align="right" valign="top"><a id="ae5c2bc818aa2856ae9e36f303fdac6be"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>IsOccludedFunc</b> = <a class="el" href="../../dc/d84/structxii_delegate.htm">xiiDelegate</a>&lt; bool(const <a class="el" href="../../dd/d35/classxii_simd_b_box.htm">xiiSimdBBox</a> &amp;)&gt;</td></tr>
 <tr class="separator:ae5c2bc818aa2856ae9e36f303fdac6be"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a24185b5107df5bc64210a039786071f4"><td class="memItemLeft" align="right" valign="top"><a id="a24185b5107df5bc64210a039786071f4"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>FindVisibleObjects</b> (const <a class="el" href="../../d8/d89/classxii_frustum.htm">xiiFrustum</a> &amp;frustum, const <a class="el" href="../../dd/d25/structxii_spatial_system_1_1_query_params.htm">QueryParams</a> &amp;queryParams, <a class="el" href="../../dc/da4/classxii_dynamic_array.htm">xiiDynamicArray</a>&lt; const <a class="el" href="../../d0/d91/classxii_game_object.htm">xiiGameObject</a> * &gt; &amp;out_objects, <a class="el" href="../../dc/d84/structxii_delegate.htm">IsOccludedFunc</a> isOccluded) const =0</td></tr>
-<tr class="separator:a24185b5107df5bc64210a039786071f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af6ab505fd3ecc91779581a466e9ba57c"><td class="memItemLeft" align="right" valign="top"><a id="af6ab505fd3ecc91779581a466e9ba57c"></a>
-virtual xiiUInt64&#160;</td><td class="memItemRight" valign="bottom"><b>GetNumFramesSinceVisible</b> (const <a class="el" href="../../da/da9/classxii_spatial_data_handle.htm">xiiSpatialDataHandle</a> &amp;hData) const =0</td></tr>
-<tr class="separator:af6ab505fd3ecc91779581a466e9ba57c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66bfec57f3b923b9a866cb5f34ef880d"><td class="memItemLeft" align="right" valign="top"><a id="a66bfec57f3b923b9a866cb5f34ef880d"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>FindVisibleObjects</b> (const <a class="el" href="../../d8/d89/classxii_frustum.htm">xiiFrustum</a> &amp;frustum, const <a class="el" href="../../dd/d25/structxii_spatial_system_1_1_query_params.htm">QueryParams</a> &amp;queryParams, <a class="el" href="../../dc/da4/classxii_dynamic_array.htm">xiiDynamicArray</a>&lt; const <a class="el" href="../../d0/d91/classxii_game_object.htm">xiiGameObject</a> * &gt; &amp;out_objects, <a class="el" href="../../dc/d84/structxii_delegate.htm">IsOccludedFunc</a> isOccluded, xiiVisibilityState visType) const =0</td></tr>
+<tr class="separator:a66bfec57f3b923b9a866cb5f34ef880d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae08906f583682c8a5794c07f23e74567"><td class="memItemLeft" align="right" valign="top">virtual xiiVisibilityState&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d34/classxii_spatial_system.htm#ae08906f583682c8a5794c07f23e74567">GetVisibilityState</a> (const <a class="el" href="../../da/da9/classxii_spatial_data_handle.htm">xiiSpatialDataHandle</a> &amp;hData, xiiUInt32 uiNumFramesBeforeInvisible) const =0</td></tr>
+<tr class="memdesc:ae08906f583682c8a5794c07f23e74567"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves a state describing how visible the object is.  <a href="../../d3/d34/classxii_spatial_system.htm#ae08906f583682c8a5794c07f23e74567">More...</a><br /></td></tr>
+<tr class="separator:ae08906f583682c8a5794c07f23e74567"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -190,6 +190,52 @@ Additional Inherited Members</h2></td></tr>
 static const <a class="el" href="../../db/d89/classxii_r_t_t_i.htm">xiiRTTI</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetStaticRTTI</b> ()</td></tr>
 <tr class="separator:ac03a1d9fba3babf7db68227be61737e6 inherit pub_static_methods_classxii_no_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="ae08906f583682c8a5794c07f23e74567"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae08906f583682c8a5794c07f23e74567">&#9670;&nbsp;</a></span>GetVisibilityState()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual xiiVisibilityState xiiSpatialSystem::GetVisibilityState </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../da/da9/classxii_spatial_data_handle.htm">xiiSpatialDataHandle</a> &amp;&#160;</td>
+          <td class="paramname"><em>hData</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">xiiUInt32&#160;</td>
+          <td class="paramname"><em>uiNumFramesBeforeInvisible</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Retrieves a state describing how visible the object is. </p>
+<p>An object may be invisible, fully visible, or indirectly visible (through shadows or reflections).</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">uiNumFramesBeforeInvisible</td><td>Used to treat an object that was visible and just became invisible as visible for a few more frames. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>/home/runner/work/XII/XII/Source/Engine/Core/World/<a class="el" href="../../d9/d58/_spatial_system_8h_source.htm">SpatialSystem.h</a></li>
 <li>/home/runner/work/XII/XII/Source/Engine/Core/World/Implementation/SpatialSystem.cpp</li>
@@ -200,7 +246,7 @@ static const <a class="el" href="../../db/d89/classxii_r_t_t_i.htm">xiiRTTI</a> 
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d3/d34/classxii_spatial_system.htm">xiiSpatialSystem</a></li>
-    <li class="footer">Generated on Fri Jun 16 2023 14:12:57 for XIIEngine by
+    <li class="footer">Generated on Sat Jul 1 2023 22:50:33 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

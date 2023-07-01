@@ -1,5 +1,7 @@
 var classxii_g_a_l_device_diligent =
 [
+    [ "PendingDeletion", "d1/d60/structxii_g_a_l_device_diligent_1_1_pending_deletion.htm", "d1/d60/structxii_g_a_l_device_diligent_1_1_pending_deletion" ],
+    [ "PerFrameData", "dd/db1/structxii_g_a_l_device_diligent_1_1_per_frame_data.htm", "dd/db1/structxii_g_a_l_device_diligent_1_1_per_frame_data" ],
     [ "TempResourceType", "d9/d8e/structxii_g_a_l_device_diligent_1_1_temp_resource_type.htm", "d9/d8e/structxii_g_a_l_device_diligent_1_1_temp_resource_type" ],
     [ "UsedTempResource", "d5/dd9/structxii_g_a_l_device_diligent_1_1_used_temp_resource.htm", "d5/dd9/structxii_g_a_l_device_diligent_1_1_used_temp_resource" ],
     [ "~xiiGALDeviceDiligent", "d6/df4/classxii_g_a_l_device_diligent.htm#a3a5b69ff830432e3610e2be2bb47753e", null ],
@@ -18,6 +20,8 @@ var classxii_g_a_l_device_diligent =
     [ "CreateTexturePlatform", "d6/df4/classxii_g_a_l_device_diligent.htm#a86a898046c634faf3008bea514c60332", null ],
     [ "CreateUnorderedAccessViewPlatform", "d6/df4/classxii_g_a_l_device_diligent.htm#a99a73ce502554d8e152ee0021564d802", null ],
     [ "CreateVertexDeclarationPlatform", "d6/df4/classxii_g_a_l_device_diligent.htm#a72879bc0816bc42039760d9437e86711", null ],
+    [ "DeleteLater", "d6/df4/classxii_g_a_l_device_diligent.htm#afcfd9efd64b34f3fe34ae50c5f544325", null ],
+    [ "DeletePendingResources", "d6/df4/classxii_g_a_l_device_diligent.htm#ab0d0668216321bcc651c7508285bee88", null ],
     [ "DestroyBlendStatePlatform", "d6/df4/classxii_g_a_l_device_diligent.htm#a7b501564d51c5c5bbdd80b79cac93697", null ],
     [ "DestroyBufferPlatform", "d6/df4/classxii_g_a_l_device_diligent.htm#a78110b4c7518151cb71582ed6c43e630", null ],
     [ "DestroyDepthStencilStatePlatform", "d6/df4/classxii_g_a_l_device_diligent.htm#ade3bef22418d5735e70402f350ada8ac", null ],
@@ -43,6 +47,7 @@ var classxii_g_a_l_device_diligent =
     [ "GetFactory", "d6/df4/classxii_g_a_l_device_diligent.htm#a01dbc8c41a1e80360d130814bab5407f", null ],
     [ "GetFormatLookupTable", "d6/df4/classxii_g_a_l_device_diligent.htm#a2d02db615b3df4b6b253d27b70d69d6c", null ],
     [ "GetImmediateContext", "d6/df4/classxii_g_a_l_device_diligent.htm#a32ffb37db3ca5fbbd9f69c4cbeacddd1", null ],
+    [ "GetTimestamp", "d6/df4/classxii_g_a_l_device_diligent.htm#a9358b70d6cfac13015d0063211c3003b", null ],
     [ "GetTimestampPlatform", "d6/df4/classxii_g_a_l_device_diligent.htm#a58e013f117add5e84d5e21184822d0ac", null ],
     [ "GetTimestampResultPlatform", "d6/df4/classxii_g_a_l_device_diligent.htm#a90cd2fe26aa01588ac734e8febda1731", null ],
     [ "GetValidationLevel", "d6/df4/classxii_g_a_l_device_diligent.htm#a7bc61c5b7efa4728893e51a60ceaa6cb", null ],
@@ -68,10 +73,18 @@ var classxii_g_a_l_device_diligent =
     [ "m_pDevice", "d6/df4/classxii_g_a_l_device_diligent.htm#af9f900a4f36d86bf4396fecb474a2010", null ],
     [ "m_pDeviceContexts", "d6/df4/classxii_g_a_l_device_diligent.htm#aa87a12985ed0ceeb97cff39f2f9ecdfc", null ],
     [ "m_pEngineFactory", "d6/df4/classxii_g_a_l_device_diligent.htm#a76431398c99c68f95f80e675eb6f33c2", null ],
+    [ "m_PerFrameData", "d6/df4/classxii_g_a_l_device_diligent.htm#ad1fa20542cca6e2dfc7e02305ae72002", null ],
     [ "m_pPipelineBarrier", "d6/df4/classxii_g_a_l_device_diligent.htm#a66defc012456a18f4f2b678097ed7f53", null ],
     [ "m_sAdapterDetailsString", "d6/df4/classxii_g_a_l_device_diligent.htm#a3299d8d82167719e2365d4c88641e267", null ],
     [ "m_SyncTimeDiff", "d6/df4/classxii_g_a_l_device_diligent.htm#abe2d7726a532cc56978cf3a601a1eb80", null ],
+    [ "m_Timestamps", "d6/df4/classxii_g_a_l_device_diligent.htm#a0a018a3efbfee83a35da3f1148366c3f", null ],
     [ "m_uiAdapterId", "d6/df4/classxii_g_a_l_device_diligent.htm#a6fb73d56dcfa324b07ed67eeda07b750", null ],
+    [ "m_uiCurrentPerFrameData", "d6/df4/classxii_g_a_l_device_diligent.htm#a8907f0e0530f8683f35c49e15b7db8b9", null ],
+    [ "m_uiCurrentTimestamp", "d6/df4/classxii_g_a_l_device_diligent.htm#a2a3808771429cc084934c41320919856", null ],
+    [ "m_uiFrameCounter", "d6/df4/classxii_g_a_l_device_diligent.htm#a856dcb67e0d08534ceea5617b36136df", null ],
+    [ "m_uiNextPerFrameData", "d6/df4/classxii_g_a_l_device_diligent.htm#abd771e8f02016725c47edf43847318bd", null ],
+    [ "m_uiNextTimestamp", "d6/df4/classxii_g_a_l_device_diligent.htm#a3ceb43ed135248c1e762af5d4a9e86a2", null ],
     [ "m_uiNumImmediateContexts", "d6/df4/classxii_g_a_l_device_diligent.htm#a65f5d437e14141e38b3ecacefed4f9dc", null ],
+    [ "m_uiSafeFrame", "d6/df4/classxii_g_a_l_device_diligent.htm#ac9c7d6f98240529f25b333801da58162", null ],
     [ "m_UsedTempResources", "d6/df4/classxii_g_a_l_device_diligent.htm#a47ab8c4b10b221eaf41c1e33e8a1edff", null ]
 ];

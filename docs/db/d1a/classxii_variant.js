@@ -52,6 +52,7 @@ var classxii_variant =
     [ "xiiVariant", "db/d1a/classxii_variant.htm#a925dd3e0b1ef7b7e7fff6902fc26d1af", null ],
     [ "xiiVariant", "db/d1a/classxii_variant.htm#a6811bed2f547b232277b112a8a900678", null ],
     [ "xiiVariant", "db/d1a/classxii_variant.htm#a40cff2f1c7ab1f3ec643fbebe06366ac", null ],
+    [ "xiiVariant", "db/d1a/classxii_variant.htm#a30165a5610d8d3874b0d55519829bfce", null ],
     [ "xiiVariant", "db/d1a/classxii_variant.htm#adfb8491e53b58d26e1c6d4044d8e7a43", null ],
     [ "xiiVariant", "db/d1a/classxii_variant.htm#a3a6830a6262cc0e86299f5fee9404f15", null ],
     [ "xiiVariant", "db/d1a/classxii_variant.htm#a1440994ec48700c02043e62de669a617", null ],

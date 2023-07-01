@@ -6,7 +6,5 @@ var classxii_property_anim_object_manager =
     [ "InternalCanAdd", "d2/daa/classxii_property_anim_object_manager.htm#a5052bb684ae862f7f9f140d7a24bf469", null ],
     [ "InternalCanMove", "d2/daa/classxii_property_anim_object_manager.htm#a0d081e2e5106d2ba8e8a8bb405ca07ce", null ],
     [ "InternalCanRemove", "d2/daa/classxii_property_anim_object_manager.htm#ac74e3519e3f93cc2547237f0ded03229", null ],
-    [ "IsTemporary", "d2/daa/classxii_property_anim_object_manager.htm#a0134d1dfe01f8342e5058ef8b5860364", null ],
-    [ "IsTemporary", "d2/daa/classxii_property_anim_object_manager.htm#a53e35721f292136947da566a0bfcde33", null ],
     [ "SetAllowStructureChangeOnTemporaries", "d2/daa/classxii_property_anim_object_manager.htm#aba277c8be317cbe679a26d79de7fcb38", null ]
 ];

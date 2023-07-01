@@ -3,7 +3,6 @@ var classxii_qt_pin =
     [ "xiiQtPin", "d4/d6e/classxii_qt_pin.htm#a0be55273b7227e30d779992715be4e0a", null ],
     [ "~xiiQtPin", "d4/d6e/classxii_qt_pin.htm#a1d172afa45d33603d5cd7fd3f0977cd2", null ],
     [ "AddConnection", "d4/d6e/classxii_qt_pin.htm#a04f35f852198be3e03bb8d42154fc636", null ],
-    [ "AdjustRenderingForHighlight", "d4/d6e/classxii_qt_pin.htm#a2ce6f79b2bbde6e36fc9cdcbe772fe1f", null ],
     [ "ConnectedStateChanged", "d4/d6e/classxii_qt_pin.htm#ac9ec545f10fe1d585cf643898b5ed0d4", null ],
     [ "ExtendContextMenu", "d4/d6e/classxii_qt_pin.htm#a3e3ab3dfc68047651fefe75d01153aab", null ],
     [ "GetConnections", "d4/d6e/classxii_qt_pin.htm#a9390dc7ca88652ad3ff772a1d692854f", null ],
@@ -20,6 +19,7 @@ var classxii_qt_pin =
     [ "SetPin", "d4/d6e/classxii_qt_pin.htm#a96449923d9e7fa51f0c75fc76c3b1bec", null ],
     [ "type", "d4/d6e/classxii_qt_pin.htm#a0b82fb9f3147b12caaa3cb04aae721f4", null ],
     [ "UpdateConnections", "d4/d6e/classxii_qt_pin.htm#af6010353a7d9736f28da7597f972bfc7", null ],
+    [ "UpdatePinColors", "d4/d6e/classxii_qt_pin.htm#a609642b2314d5b57efa2139a5d01e500", null ],
     [ "m_HighlightState", "d4/d6e/classxii_qt_pin.htm#a852363445678aebd017b08c141583494", null ],
     [ "m_PinCenter", "d4/d6e/classxii_qt_pin.htm#a63d224676a58f496000d4d9b235fbc37", null ],
     [ "m_pLabel", "d4/d6e/classxii_qt_pin.htm#ab5c82f0bc3a9c0ad7deb072eecc0140e", null ]

@@ -11,7 +11,7 @@ var classxii_command_line_utils =
     [ "GetFloatOption", "d0/d67/classxii_command_line_utils.htm#aae67c54d174dc1c1d661fba29c114c51", null ],
     [ "GetIntOption", "d0/d67/classxii_command_line_utils.htm#a77b8870f2e5d18f5a751c9fa1a9b5d88", null ],
     [ "GetOptionIndex", "d0/d67/classxii_command_line_utils.htm#ab3974eb6798f90e64ba6e9b938faa4c4", null ],
-    [ "GetParameter", "d0/d67/classxii_command_line_utils.htm#a37bd37872cd27f0114f3aa7a212bb023", null ],
+    [ "GetParameter", "d0/d67/classxii_command_line_utils.htm#ab786b86c7c353aec53f152f995d68658", null ],
     [ "GetParameterCount", "d0/d67/classxii_command_line_utils.htm#afca01c59b9fecfa4ecc68a211c0bfef9", null ],
     [ "GetStringOption", "d0/d67/classxii_command_line_utils.htm#a58805b5e0a094e734cdb886540b84fa7", null ],
     [ "GetStringOptionArguments", "d0/d67/classxii_command_line_utils.htm#a28bf769aa598744a9ab327ae35f535c2", null ],

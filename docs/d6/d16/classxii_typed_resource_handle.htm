@@ -93,7 +93,7 @@ $(document).ready(function(){initNavTree('d6/d16/classxii_typed_resource_handle.
 </div><!--header-->
 <div class="contents">
 
-<p>The <a class="el" href="../../d6/d16/classxii_typed_resource_handle.htm" title="The xiiTypedResourceHandle controls access to an xiiResource.">xiiTypedResourceHandle</a> controls access to an <a class="el" href="../../d9/de1/classxii_resource.htm" title="The base class for all resources.">xiiResource</a>.  
+<p>The <a class="el" href="../../d6/d16/classxii_typed_resource_handle.htm" title="The xiiTypedResourceHandle controls access to a xiiResource.">xiiTypedResourceHandle</a> controls access to a <a class="el" href="../../d9/de1/classxii_resource.htm" title="The base class for all resources.">xiiResource</a>.  
  <a href="../../d6/d16/classxii_typed_resource_handle.htm#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="../../dc/d97/_resource_handle_8h_source.htm">ResourceHandle.h</a>&gt;</code></p>
@@ -182,6 +182,9 @@ XII_ALWAYS_INLINE xiiUInt64&#160;</td><td class="memItemRight" valign="bottom"><
 const XII_ALWAYS_INLINE <a class="el" href="../../df/dfb/structxii_hybrid_string.htm">xiiString</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d16/classxii_typed_resource_handle.htm#aa4f07a8ad3d3a81c69a806e06d08c409">GetResourceID</a> () const</td></tr>
 <tr class="memdesc:aa4f07a8ad3d3a81c69a806e06d08c409"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the Resource ID of the exact resource that this handle points to, without acquiring the resource. The handle must be valid. <br /></td></tr>
 <tr class="separator:aa4f07a8ad3d3a81c69a806e06d08c409"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18e367d12f112f1b1b7e603c6bb50796"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d16/classxii_typed_resource_handle.htm#a18e367d12f112f1b1b7e603c6bb50796">AssignFromTypelessHandle</a> (const <a class="el" href="../../d6/d01/classxii_typeless_resource_handle.htm">xiiTypelessResourceHandle</a> &amp;hHandle)</td></tr>
+<tr class="memdesc:a18e367d12f112f1b1b7e603c6bb50796"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attempts to copy the given typeless handle to this handle.  <a href="../../d6/d16/classxii_typed_resource_handle.htm#a18e367d12f112f1b1b7e603c6bb50796">More...</a><br /></td></tr>
+<tr class="separator:a18e367d12f112f1b1b7e603c6bb50796"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
@@ -202,11 +205,43 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>xiiResourceHandleStr
 <div class="textblock"><h3>template&lt;typename RESOURCE_TYPE&gt;<br />
 class xiiTypedResourceHandle&lt; RESOURCE_TYPE &gt;</h3>
 
-<p>The <a class="el" href="../../d6/d16/classxii_typed_resource_handle.htm" title="The xiiTypedResourceHandle controls access to an xiiResource.">xiiTypedResourceHandle</a> controls access to an <a class="el" href="../../d9/de1/classxii_resource.htm" title="The base class for all resources.">xiiResource</a>. </p>
-<p>All resources must be referenced using <a class="el" href="../../d6/d16/classxii_typed_resource_handle.htm" title="The xiiTypedResourceHandle controls access to an xiiResource.">xiiTypedResourceHandle</a> instances (instantiated with the proper resource type as the template argument). You must not store a direct pointer to a resource anywhere. Instead always store resource handles. To actually access a resource, use <a class="el" href="../../d4/d8e/classxii_resource_manager.htm#a5479934b8fc637ff4067fdd2d24bc2e0" title="Acquires a resource pointer from a handle. Prefer to use xiiResourceLock, which wraps BeginAcquireRes...">xiiResourceManager::BeginAcquireResource</a> and <a class="el" href="../../d4/d8e/classxii_resource_manager.htm#a69d96e946aa3e79a3af69bfa249e78fa" title="Needs to be called in concert with BeginAcquireResource() after accessing a resource has been finishe...">xiiResourceManager::EndAcquireResource</a> after you have finished using it.</p>
-<p><a class="el" href="../../d6/d16/classxii_typed_resource_handle.htm" title="The xiiTypedResourceHandle controls access to an xiiResource.">xiiTypedResourceHandle</a> implements reference counting on resources. It also allows to redirect resources to fallback resources when they are not yet loaded (if possible).</p>
+<p>The <a class="el" href="../../d6/d16/classxii_typed_resource_handle.htm" title="The xiiTypedResourceHandle controls access to a xiiResource.">xiiTypedResourceHandle</a> controls access to a <a class="el" href="../../d9/de1/classxii_resource.htm" title="The base class for all resources.">xiiResource</a>. </p>
+<p>All resources must be referenced using <a class="el" href="../../d6/d16/classxii_typed_resource_handle.htm" title="The xiiTypedResourceHandle controls access to a xiiResource.">xiiTypedResourceHandle</a> instances (instantiated with the proper resource type as the template argument). You must not store a direct pointer to a resource anywhere. Instead always store resource handles. To actually access a resource, use <a class="el" href="../../d4/d8e/classxii_resource_manager.htm#a5479934b8fc637ff4067fdd2d24bc2e0" title="Acquires a resource pointer from a handle. Prefer to use xiiResourceLock, which wraps BeginAcquireRes...">xiiResourceManager::BeginAcquireResource</a> and <a class="el" href="../../d4/d8e/classxii_resource_manager.htm#a69d96e946aa3e79a3af69bfa249e78fa" title="Needs to be called in concert with BeginAcquireResource() after accessing a resource has been finishe...">xiiResourceManager::EndAcquireResource</a> after you have finished using it.</p>
+<p><a class="el" href="../../d6/d16/classxii_typed_resource_handle.htm" title="The xiiTypedResourceHandle controls access to a xiiResource.">xiiTypedResourceHandle</a> implements reference counting on resources. It also allows to redirect resources to fallback resources when they are not yet loaded (if possible).</p>
 <p>As long as there is one resource handle that references a resource, it is considered 'in use' and thus might not get unloaded. So be careful where you store resource handles. If necessary you can call <a class="el" href="../../d6/d16/classxii_typed_resource_handle.htm#a0085567bd3ad2f1b4d616e10992122c0" title="Clears any reference to a resource and reduces its refcount.">Invalidate()</a> to clear a resource handle and thus also remove the reference to the resource. </p>
-</div><hr/>The documentation for this class was generated from the following files:<ul>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a18e367d12f112f1b1b7e603c6bb50796"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a18e367d12f112f1b1b7e603c6bb50796">&#9670;&nbsp;</a></span>AssignFromTypelessHandle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename RESOURCE_TYPE &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="../../d6/d16/classxii_typed_resource_handle.htm">xiiTypedResourceHandle</a>&lt; RESOURCE_TYPE &gt;::AssignFromTypelessHandle </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d6/d01/classxii_typeless_resource_handle.htm">xiiTypelessResourceHandle</a> &amp;&#160;</td>
+          <td class="paramname"><em>hHandle</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Attempts to copy the given typeless handle to this handle. </p>
+<p>It is an error to assign a typeless handle that references a resource with a mismatching type. </p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
 <li>/home/runner/work/XII/XII/Source/Engine/Core/ResourceManager/Implementation/<a class="el" href="../../dc/db6/_engine_2_core_2_resource_manager_2_implementation_2_declarations_8h_source.htm">Declarations.h</a></li>
 <li>/home/runner/work/XII/XII/Source/Engine/Core/ResourceManager/<a class="el" href="../../dc/d97/_resource_handle_8h_source.htm">ResourceHandle.h</a></li>
 </ul>
@@ -216,7 +251,7 @@ class xiiTypedResourceHandle&lt; RESOURCE_TYPE &gt;</h3>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d6/d16/classxii_typed_resource_handle.htm">xiiTypedResourceHandle</a></li>
-    <li class="footer">Generated on Fri Jun 16 2023 14:12:58 for XIIEngine by
+    <li class="footer">Generated on Sat Jul 1 2023 22:50:35 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

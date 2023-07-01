@@ -92,40 +92,40 @@ $(document).ready(function(){initNavTree('da/d4e/structxii_file_status.htm','../
 </div><!--header-->
 <div class="contents">
 
-<p>Information about a single file on disk. The file might be an asset or any other file (needed for dependencies).  
+<p>Information about a single file on disk. The file might be a document or any other file found in the data directories.  
  <a href="../../da/d4e/structxii_file_status.htm#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="../../d9/d1b/_asset_curator_8h_source.htm">AssetCurator.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="../../d5/d1f/_tools_2_libs_2_tools_foundation_2_file_system_2_declarations_8h_source.htm">Declarations.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:ae66743b14baf93afda46575d5ab745f5"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d4e/structxii_file_status.htm#ae66743b14baf93afda46575d5ab745f5">Status</a> { <a class="el" href="../../da/d4e/structxii_file_status.htm#ae66743b14baf93afda46575d5ab745f5a88183b946cc5f0e8c96b2e66e1c74a7e">Status::Unknown</a>, 
-<a class="el" href="../../da/d4e/structxii_file_status.htm#ae66743b14baf93afda46575d5ab745f5aea954723c25563dfa521f3f1dc346767">Status::FileLocked</a>, 
-<a class="el" href="../../da/d4e/structxii_file_status.htm#ae66743b14baf93afda46575d5ab745f5a3ac705f2acd51a4613f9188c05c91d0d">Status::Valid</a>
+<tr class="memitem:a439f91d5f2fe0332c73a06ae5397ef43"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d4e/structxii_file_status.htm#a439f91d5f2fe0332c73a06ae5397ef43">Status</a> : xiiUInt8 { <a class="el" href="../../da/d4e/structxii_file_status.htm#a439f91d5f2fe0332c73a06ae5397ef43a88183b946cc5f0e8c96b2e66e1c74a7e">Status::Unknown</a>, 
+<a class="el" href="../../da/d4e/structxii_file_status.htm#a439f91d5f2fe0332c73a06ae5397ef43aea954723c25563dfa521f3f1dc346767">Status::FileLocked</a>, 
+<a class="el" href="../../da/d4e/structxii_file_status.htm#a439f91d5f2fe0332c73a06ae5397ef43a3ac705f2acd51a4613f9188c05c91d0d">Status::Valid</a>
  }</td></tr>
-<tr class="separator:ae66743b14baf93afda46575d5ab745f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a439f91d5f2fe0332c73a06ae5397ef43"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:ad85abdd41542af2e1227f24d7511183b"><td class="memItemLeft" align="right" valign="top"><a id="ad85abdd41542af2e1227f24d7511183b"></a>
-<a class="el" href="../../d5/da2/classxii_timestamp.htm">xiiTimestamp</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_Timestamp</b></td></tr>
-<tr class="separator:ad85abdd41542af2e1227f24d7511183b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af93d1ac1479385211098f654ae595138"><td class="memItemLeft" align="right" valign="top"><a id="af93d1ac1479385211098f654ae595138"></a>
+<a class="el" href="../../d5/da2/classxii_timestamp.htm">xiiTimestamp</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_LastModified</b></td></tr>
+<tr class="separator:af93d1ac1479385211098f654ae595138"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af3ade177f2b09c8f0a18dc1f9acc260b"><td class="memItemLeft" align="right" valign="top"><a id="af3ade177f2b09c8f0a18dc1f9acc260b"></a>
-xiiUInt64&#160;</td><td class="memItemRight" valign="bottom"><b>m_uiHash</b></td></tr>
+xiiUInt64&#160;</td><td class="memItemRight" valign="bottom"><b>m_uiHash</b> = 0</td></tr>
 <tr class="separator:af3ade177f2b09c8f0a18dc1f9acc260b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ada6a01ff44706222d08bee256f91b513"><td class="memItemLeft" align="right" valign="top"><a id="ada6a01ff44706222d08bee256f91b513"></a>
-<a class="el" href="../../dc/d1d/classxii_uuid.htm">xiiUuid</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d4e/structxii_file_status.htm#ada6a01ff44706222d08bee256f91b513">m_AssetGuid</a></td></tr>
-<tr class="memdesc:ada6a01ff44706222d08bee256f91b513"><td class="mdescLeft">&#160;</td><td class="mdescRight">If the file is linked to an asset, the GUID is valid, otherwise not. <br /></td></tr>
-<tr class="separator:ada6a01ff44706222d08bee256f91b513"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e18fa314925e97d595a12f7e1f85e7f"><td class="memItemLeft" align="right" valign="top"><a id="a5e18fa314925e97d595a12f7e1f85e7f"></a>
+<a class="el" href="../../dc/d1d/classxii_uuid.htm">xiiUuid</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d4e/structxii_file_status.htm#a5e18fa314925e97d595a12f7e1f85e7f">m_DocumentID</a></td></tr>
+<tr class="memdesc:a5e18fa314925e97d595a12f7e1f85e7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">If the file is linked to a document, the GUID is valid, otherwise not. <br /></td></tr>
+<tr class="separator:a5e18fa314925e97d595a12f7e1f85e7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a21691ae880d02318bd1e34efddb5fc32"><td class="memItemLeft" align="right" valign="top"><a id="a21691ae880d02318bd1e34efddb5fc32"></a>
-<a class="el" href="../../da/d4e/structxii_file_status.htm#ae66743b14baf93afda46575d5ab745f5">Status</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_Status</b></td></tr>
+<a class="el" href="../../da/d4e/structxii_file_status.htm#a439f91d5f2fe0332c73a06ae5397ef43">Status</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_Status</b> = <a class="el" href="../../da/d4e/structxii_file_status.htm#a439f91d5f2fe0332c73a06ae5397ef43a88183b946cc5f0e8c96b2e66e1c74a7e">Status::Unknown</a></td></tr>
 <tr class="separator:a21691ae880d02318bd1e34efddb5fc32"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Information about a single file on disk. The file might be an asset or any other file (needed for dependencies). </p>
+<div class="textblock"><p>Information about a single file on disk. The file might be a document or any other file found in the data directories. </p>
 </div><h2 class="groupheader">Member Enumeration Documentation</h2>
-<a id="ae66743b14baf93afda46575d5ab745f5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae66743b14baf93afda46575d5ab745f5">&#9670;&nbsp;</a></span>Status</h2>
+<a id="a439f91d5f2fe0332c73a06ae5397ef43"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a439f91d5f2fe0332c73a06ae5397ef43">&#9670;&nbsp;</a></span>Status</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -134,7 +134,7 @@ xiiUInt64&#160;</td><td class="memItemRight" valign="bottom"><b>m_uiHash</b></td
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">enum <a class="el" href="../../da/d4e/structxii_file_status.htm#ae66743b14baf93afda46575d5ab745f5">xiiFileStatus::Status</a></td>
+          <td class="memname">enum <a class="el" href="../../da/d4e/structxii_file_status.htm#a439f91d5f2fe0332c73a06ae5397ef43">xiiFileStatus::Status</a> : xiiUInt8</td>
         </tr>
       </table>
   </td>
@@ -144,18 +144,18 @@ xiiUInt64&#160;</td><td class="memItemRight" valign="bottom"><b>m_uiHash</b></td
 </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ae66743b14baf93afda46575d5ab745f5a88183b946cc5f0e8c96b2e66e1c74a7e"></a>Unknown&#160;</td><td class="fielddoc"><p>Since the file has been tagged as 'Unknown' it has not been encountered again on disk (yet) </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a439f91d5f2fe0332c73a06ae5397ef43a88183b946cc5f0e8c96b2e66e1c74a7e"></a>Unknown&#160;</td><td class="fielddoc"><p>Since the file has been tagged as 'Unknown' it has not been encountered again on disk (yet). Use internally to find stale entries in the model. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ae66743b14baf93afda46575d5ab745f5aea954723c25563dfa521f3f1dc346767"></a>FileLocked&#160;</td><td class="fielddoc"><p>The file is probably an asset, but we could not read it. </p>
+<tr><td class="fieldname"><a id="a439f91d5f2fe0332c73a06ae5397ef43aea954723c25563dfa521f3f1dc346767"></a>FileLocked&#160;</td><td class="fielddoc"><p>The file is locked, i.e. reading is currently not possible. Try again at a later date. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ae66743b14baf93afda46575d5ab745f5a3ac705f2acd51a4613f9188c05c91d0d"></a>Valid&#160;</td><td class="fielddoc"><p>The file exists on disk. </p>
+<tr><td class="fieldname"><a id="a439f91d5f2fe0332c73a06ae5397ef43a3ac705f2acd51a4613f9188c05c91d0d"></a>Valid&#160;</td><td class="fielddoc"><p>The file exists on disk. </p>
 </td></tr>
 </table>
 
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li>/home/runner/work/XII/XII/Source/Editor/EditorFramework/Assets/<a class="el" href="../../d9/d1b/_asset_curator_8h_source.htm">AssetCurator.h</a></li>
+<li>/home/runner/work/XII/XII/Source/Tools/Libs/ToolsFoundation/FileSystem/<a class="el" href="../../d5/d1f/_tools_2_libs_2_tools_foundation_2_file_system_2_declarations_8h_source.htm">Declarations.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -163,7 +163,7 @@ xiiUInt64&#160;</td><td class="memItemRight" valign="bottom"><b>m_uiHash</b></td
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../da/d4e/structxii_file_status.htm">xiiFileStatus</a></li>
-    <li class="footer">Generated on Fri Jun 16 2023 14:12:52 for XIIEngine by
+    <li class="footer">Generated on Sat Jul 1 2023 22:50:27 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

@@ -111,6 +111,10 @@ Inheritance diagram for xiiGALDeviceDiligent:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d60/structxii_g_a_l_device_diligent_1_1_pending_deletion.htm">PendingDeletion</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/db1/structxii_g_a_l_device_diligent_1_1_per_frame_data.htm">PerFrameData</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d8e/structxii_g_a_l_device_diligent_1_1_temp_resource_type.htm">TempResourceType</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dd9/structxii_g_a_l_device_diligent_1_1_used_temp_resource.htm">UsedTempResource</a></td></tr>
@@ -139,6 +143,9 @@ const xiiInt32&#160;</td><td class="memItemRight" valign="bottom"><b>GetValidati
 <tr class="memitem:a368fde914abdd098be1e230a40370709"><td class="memItemLeft" align="right" valign="top"><a id="a368fde914abdd098be1e230a40370709"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>ReportLiveGpuObjects</b> ()</td></tr>
 <tr class="separator:a368fde914abdd098be1e230a40370709"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afcfd9efd64b34f3fe34ae50c5f544325"><td class="memItemLeft" align="right" valign="top"><a id="afcfd9efd64b34f3fe34ae50c5f544325"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>DeleteLater</b> (const <a class="el" href="../../d1/d60/structxii_g_a_l_device_diligent_1_1_pending_deletion.htm">PendingDeletion</a> &amp;deletion)</td></tr>
+<tr class="separator:afcfd9efd64b34f3fe34ae50c5f544325"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classxii_g_a_l_device"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classxii_g_a_l_device')"><img src="../../closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="../../d5/d19/classxii_g_a_l_device.htm">xiiGALDevice</a></td></tr>
 <tr class="memitem:aef7a5c9632312de1824cf090d16aa929 inherit pub_methods_classxii_g_a_l_device"><td class="memItemLeft" align="right" valign="top"><a id="aef7a5c9632312de1824cf090d16aa929"></a>
 <a class="el" href="../../dd/dad/structxii_result.htm">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Init</b> ()</td></tr>
@@ -450,8 +457,14 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>FillCapabilit
 <tr class="memitem:aa209db764ffc5727cb6f6edb5a7dc319"><td class="memItemLeft" align="right" valign="top"><a id="aa209db764ffc5727cb6f6edb5a7dc319"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>WaitIdlePlatform</b> () override</td></tr>
 <tr class="separator:aa209db764ffc5727cb6f6edb5a7dc319"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0d0668216321bcc651c7508285bee88"><td class="memItemLeft" align="right" valign="top"><a id="ab0d0668216321bcc651c7508285bee88"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>DeletePendingResources</b> (<a class="el" href="../../d8/df8/classxii_deque.htm">xiiDeque</a>&lt; <a class="el" href="../../d1/d60/structxii_g_a_l_device_diligent_1_1_pending_deletion.htm">PendingDeletion</a> &gt; &amp;pendingDeletions)</td></tr>
+<tr class="separator:ab0d0668216321bcc651c7508285bee88"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6b8d37a3fcfd81c13758ab241d14d45e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/df4/classxii_g_a_l_device_diligent.htm#a6b8d37a3fcfd81c13758ab241d14d45e">FillFormatLookupTable</a> ()</td></tr>
 <tr class="separator:a6b8d37a3fcfd81c13758ab241d14d45e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9358b70d6cfac13015d0063211c3003b"><td class="memItemLeft" align="right" valign="top"><a id="a9358b70d6cfac13015d0063211c3003b"></a>
+Diligent::IQuery *&#160;</td><td class="memItemRight" valign="bottom"><b>GetTimestamp</b> (<a class="el" href="../../db/d4b/structxii_g_a_l_timestamp_handle.htm">xiiGALTimestampHandle</a> hTimestamp)</td></tr>
+<tr class="separator:a9358b70d6cfac13015d0063211c3003b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad52ea2fc6f4e72eeb09012ee2be255d3"><td class="memItemLeft" align="right" valign="top"><a id="ad52ea2fc6f4e72eeb09012ee2be255d3"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsFenceReachedPlatform</b> (Diligent::IDeviceContext *pContext, Diligent::IQuery *pFence)</td></tr>
 <tr class="separator:ad52ea2fc6f4e72eeb09012ee2be255d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -547,12 +560,37 @@ Diligent::ADAPTER_TYPE&#160;</td><td class="memItemRight" valign="bottom"><b>m_A
 <tr class="memitem:a66defc012456a18f4f2b678097ed7f53"><td class="memItemLeft" align="right" valign="top"><a id="a66defc012456a18f4f2b678097ed7f53"></a>
 <a class="el" href="../../d9/d4a/classxii_unique_ptr.htm">xiiUniquePtr</a>&lt; <a class="el" href="../../d1/d89/classxii_pipeline_barrier_diligent.htm">xiiPipelineBarrierDiligent</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_pPipelineBarrier</b></td></tr>
 <tr class="separator:a66defc012456a18f4f2b678097ed7f53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a856dcb67e0d08534ceea5617b36136df"><td class="memItemLeft" align="right" valign="top"><a id="a856dcb67e0d08534ceea5617b36136df"></a>
+xiiUInt64&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/df4/classxii_g_a_l_device_diligent.htm#a856dcb67e0d08534ceea5617b36136df">m_uiFrameCounter</a> = 1u</td></tr>
+<tr class="memdesc:a856dcb67e0d08534ceea5617b36136df"><td class="mdescLeft">&#160;</td><td class="mdescRight">We start at 1 so m_uiFrameCounter and m_uiSafeFrame are not equal at the start. <br /></td></tr>
+<tr class="separator:a856dcb67e0d08534ceea5617b36136df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9c7d6f98240529f25b333801da58162"><td class="memItemLeft" align="right" valign="top"><a id="ac9c7d6f98240529f25b333801da58162"></a>
+xiiUInt64&#160;</td><td class="memItemRight" valign="bottom"><b>m_uiSafeFrame</b> = 0u</td></tr>
+<tr class="separator:ac9c7d6f98240529f25b333801da58162"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8907f0e0530f8683f35c49e15b7db8b9"><td class="memItemLeft" align="right" valign="top"><a id="a8907f0e0530f8683f35c49e15b7db8b9"></a>
+xiiUInt8&#160;</td><td class="memItemRight" valign="bottom"><b>m_uiCurrentPerFrameData</b> = 0u</td></tr>
+<tr class="separator:a8907f0e0530f8683f35c49e15b7db8b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd771e8f02016725c47edf43847318bd"><td class="memItemLeft" align="right" valign="top"><a id="abd771e8f02016725c47edf43847318bd"></a>
+xiiUInt8&#160;</td><td class="memItemRight" valign="bottom"><b>m_uiNextPerFrameData</b> = 0u</td></tr>
+<tr class="separator:abd771e8f02016725c47edf43847318bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1fa20542cca6e2dfc7e02305ae72002"><td class="memItemLeft" align="right" valign="top"><a id="ad1fa20542cca6e2dfc7e02305ae72002"></a>
+<a class="el" href="../../dd/db1/structxii_g_a_l_device_diligent_1_1_per_frame_data.htm">PerFrameData</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_PerFrameData</b> [4]</td></tr>
+<tr class="separator:ad1fa20542cca6e2dfc7e02305ae72002"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aecfc732025813f6008ae21f5e1c373cc"><td class="memItemLeft" align="right" valign="top"><a id="aecfc732025813f6008ae21f5e1c373cc"></a>
 <a class="el" href="../../d6/df7/classxii_map.htm">xiiMap</a>&lt; xiiUInt32, <a class="el" href="../../dc/da4/classxii_dynamic_array.htm">xiiDynamicArray</a>&lt; Diligent::IDeviceObject * &gt;, <a class="el" href="../../d1/deb/structxii_compare_helper.htm">xiiCompareHelper</a>&lt; xiiUInt32 &gt;, <a class="el" href="../../d9/d0d/structxii_local_allocator_wrapper.htm">xiiLocalAllocatorWrapper</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_FreeTempResources</b> [TempResourceType::ENUM_COUNT]</td></tr>
 <tr class="separator:aecfc732025813f6008ae21f5e1c373cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a47ab8c4b10b221eaf41c1e33e8a1edff"><td class="memItemLeft" align="right" valign="top"><a id="a47ab8c4b10b221eaf41c1e33e8a1edff"></a>
 <a class="el" href="../../d8/df8/classxii_deque.htm">xiiDeque</a>&lt; <a class="el" href="../../d5/dd9/structxii_g_a_l_device_diligent_1_1_used_temp_resource.htm">UsedTempResource</a>, <a class="el" href="../../d9/d0d/structxii_local_allocator_wrapper.htm">xiiLocalAllocatorWrapper</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_UsedTempResources</b> [TempResourceType::ENUM_COUNT]</td></tr>
 <tr class="separator:a47ab8c4b10b221eaf41c1e33e8a1edff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a018a3efbfee83a35da3f1148366c3f"><td class="memItemLeft" align="right" valign="top"><a id="a0a018a3efbfee83a35da3f1148366c3f"></a>
+<a class="el" href="../../dc/da4/classxii_dynamic_array.htm">xiiDynamicArray</a>&lt; Diligent::RefCntAutoPtr&lt; Diligent::IQuery &gt;, <a class="el" href="../../d9/d0d/structxii_local_allocator_wrapper.htm">xiiLocalAllocatorWrapper</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_Timestamps</b></td></tr>
+<tr class="separator:a0a018a3efbfee83a35da3f1148366c3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a3808771429cc084934c41320919856"><td class="memItemLeft" align="right" valign="top"><a id="a2a3808771429cc084934c41320919856"></a>
+xiiUInt32&#160;</td><td class="memItemRight" valign="bottom"><b>m_uiCurrentTimestamp</b> = 0</td></tr>
+<tr class="separator:a2a3808771429cc084934c41320919856"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ceb43ed135248c1e762af5d4a9e86a2"><td class="memItemLeft" align="right" valign="top"><a id="a3ceb43ed135248c1e762af5d4a9e86a2"></a>
+xiiUInt32&#160;</td><td class="memItemRight" valign="bottom"><b>m_uiNextTimestamp</b> = 0</td></tr>
+<tr class="separator:a3ceb43ed135248c1e762af5d4a9e86a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abe2d7726a532cc56978cf3a601a1eb80"><td class="memItemLeft" align="right" valign="top"><a id="abe2d7726a532cc56978cf3a601a1eb80"></a>
 <a class="el" href="../../d7/dc1/structxii_time.htm">xiiTime</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_SyncTimeDiff</b></td></tr>
 <tr class="separator:abe2d7726a532cc56978cf3a601a1eb80"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -749,7 +787,7 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>VertexDeclarationTab
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d6/df4/classxii_g_a_l_device_diligent.htm">xiiGALDeviceDiligent</a></li>
-    <li class="footer">Generated on Fri Jun 16 2023 14:12:52 for XIIEngine by
+    <li class="footer">Generated on Sat Jul 1 2023 22:50:27 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

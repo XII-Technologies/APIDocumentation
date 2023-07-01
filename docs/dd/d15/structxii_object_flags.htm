@@ -117,20 +117,21 @@ Public Types</h2></td></tr>
 <br />
 &#160;&#160;<a class="el" href="../../dd/d15/structxii_object_flags.htm#ab84c26953c65707e422df64a7fb08c30aa03c54219654e753695dde13d96820e4">SimulationStarting</a> = XII_BIT(7), 
 <a class="el" href="../../dd/d15/structxii_object_flags.htm#ab84c26953c65707e422df64a7fb08c30a6d5d0a71a3070c78837adaa11a3098a3">UnhandledMessageHandler</a> = XII_BIT(8), 
+<a class="el" href="../../dd/d15/structxii_object_flags.htm#ab84c26953c65707e422df64a7fb08c30acd065fa36ee7373201f20f81ef6d5277">CreatedByPrefab</a> = XII_BIT(13), 
 <a class="el" href="../../dd/d15/structxii_object_flags.htm#ab84c26953c65707e422df64a7fb08c30a40f646ba89d0ab461da850d2c9a1b04b">ChildChangesNotifications</a> = XII_BIT(9), 
-<a class="el" href="../../dd/d15/structxii_object_flags.htm#ab84c26953c65707e422df64a7fb08c30a71dce58bdd5c7d35bc3892b25c556adc">ComponentChangesNotifications</a> = XII_BIT(10), 
 <br />
-&#160;&#160;<a class="el" href="../../dd/d15/structxii_object_flags.htm#ab84c26953c65707e422df64a7fb08c30a1f8e99d82417934bd121d3bd93821be6">StaticTransformChangesNotifications</a> = XII_BIT(11), 
+&#160;&#160;<a class="el" href="../../dd/d15/structxii_object_flags.htm#ab84c26953c65707e422df64a7fb08c30a71dce58bdd5c7d35bc3892b25c556adc">ComponentChangesNotifications</a> = XII_BIT(10), 
+<a class="el" href="../../dd/d15/structxii_object_flags.htm#ab84c26953c65707e422df64a7fb08c30a1f8e99d82417934bd121d3bd93821be6">StaticTransformChangesNotifications</a> = XII_BIT(11), 
 <a class="el" href="../../dd/d15/structxii_object_flags.htm#ab84c26953c65707e422df64a7fb08c30a7f15dce180d10d5e11a0d250ebe45d28">ParentChangesNotifications</a> = XII_BIT(12), 
 <b>UserFlag0</b> = XII_BIT(24), 
-<b>UserFlag1</b> = XII_BIT(25), 
 <br />
-&#160;&#160;<b>UserFlag2</b> = XII_BIT(26), 
+&#160;&#160;<b>UserFlag1</b> = XII_BIT(25), 
+<b>UserFlag2</b> = XII_BIT(26), 
 <b>UserFlag3</b> = XII_BIT(27), 
 <b>UserFlag4</b> = XII_BIT(28), 
-<b>UserFlag5</b> = XII_BIT(29), 
 <br />
-&#160;&#160;<b>UserFlag6</b> = XII_BIT(30), 
+&#160;&#160;<b>UserFlag5</b> = XII_BIT(29), 
+<b>UserFlag6</b> = XII_BIT(30), 
 <b>UserFlag7</b> = XII_BIT(31), 
 <b>Default</b> = None
 <br />
@@ -173,6 +174,8 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>StorageType</b> = xi
 </td></tr>
 <tr><td class="fieldname"><a id="ab84c26953c65707e422df64a7fb08c30a6d5d0a71a3070c78837adaa11a3098a3"></a>UnhandledMessageHandler&#160;</td><td class="fielddoc"><p>For components, when a message is not handled, a virtual function is called. </p>
 </td></tr>
+<tr><td class="fieldname"><a id="ab84c26953c65707e422df64a7fb08c30acd065fa36ee7373201f20f81ef6d5277"></a>CreatedByPrefab&#160;</td><td class="fielddoc"><p>Such flagged objects and components are ignored during scene export (see <a class="el" href="../../de/d8c/classxii_world_writer.htm" title="Stores an entire xiiWorld in a stream.">xiiWorldWriter</a>) and will be removed when a prefab needs to be re-instantiated. </p>
+</td></tr>
 <tr><td class="fieldname"><a id="ab84c26953c65707e422df64a7fb08c30a40f646ba89d0ab461da850d2c9a1b04b"></a>ChildChangesNotifications&#160;</td><td class="fielddoc"><p>The object should send a notification message when children are added or removed. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="ab84c26953c65707e422df64a7fb08c30a71dce58bdd5c7d35bc3892b25c556adc"></a>ComponentChangesNotifications&#160;</td><td class="fielddoc"><p>The object should send a notification message when components are added or removed. </p>
@@ -194,7 +197,7 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>StorageType</b> = xi
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dd/d15/structxii_object_flags.htm">xiiObjectFlags</a></li>
-    <li class="footer">Generated on Fri Jun 16 2023 14:12:54 for XIIEngine by
+    <li class="footer">Generated on Sat Jul 1 2023 22:50:30 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

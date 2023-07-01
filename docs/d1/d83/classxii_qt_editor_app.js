@@ -13,7 +13,7 @@ var classxii_qt_editor_app =
     [ "CreateOrOpenProject", "d1/d83/classxii_qt_editor_app.htm#a8fe745b4318d03e42130d929f82046f2", null ],
     [ "CreatePluginSelectionDDL", "d1/d83/classxii_qt_editor_app.htm#a1e52f9cf58acf09b0efcaa3c2ad6edcc", null ],
     [ "DeInitQt", "d1/d83/classxii_qt_editor_app.htm#a98b1847ad4534d6da27cdc1dcc24af34", null ],
-    [ "DetectAvailablePluginBundles", "d1/d83/classxii_qt_editor_app.htm#a58b469b6954c81c03dc318332a67551b", null ],
+    [ "DetectAvailablePluginBundles", "d1/d83/classxii_qt_editor_app.htm#a15aa774f6abe71c4543c6c36f5772ccb", null ],
     [ "ExecuteTool", "d1/d83/classxii_qt_editor_app.htm#a1cafe18c2f01b9bd611090c72b8f7c72", null ],
     [ "ExistsPluginSelectionStateDDL", "d1/d83/classxii_qt_editor_app.htm#a75a8754f55c612219d85eb0db1b2799c", null ],
     [ "FindToolApplication", "d1/d83/classxii_qt_editor_app.htm#ad2c943eaaaa2c36f4dc54f7941e63de4", null ],

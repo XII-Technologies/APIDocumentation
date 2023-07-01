@@ -49,6 +49,7 @@ var structxii_variant_type =
       [ "Matrix3d", "dd/dba/structxii_variant_type.htm#a0ab11c9dae08774c11eec36483643874a1a84f65af26a38e279bb14132e3aa401", null ],
       [ "Matrix4d", "dd/dba/structxii_variant_type.htm#a0ab11c9dae08774c11eec36483643874acddf3e94b5d47ed47a9644546fd6e5ba", null ],
       [ "Transformd", "dd/dba/structxii_variant_type.htm#a0ab11c9dae08774c11eec36483643874a3f773ef671b2cc2468439e62898a46f5", null ],
+      [ "Angled", "dd/dba/structxii_variant_type.htm#a0ab11c9dae08774c11eec36483643874a2fb493562ef47c8eb600436750635e4d", null ],
       [ "LastStandardType", "dd/dba/structxii_variant_type.htm#a0ab11c9dae08774c11eec36483643874a4096e57ba25f62c58a671056283616d1", null ],
       [ "FirstExtendedType", "dd/dba/structxii_variant_type.htm#a0ab11c9dae08774c11eec36483643874a7851255697bdad1590d0280041fa3f81", null ],
       [ "VariantArray", "dd/dba/structxii_variant_type.htm#a0ab11c9dae08774c11eec36483643874acf5e38ac100b71d28a809c15e0480881", null ],

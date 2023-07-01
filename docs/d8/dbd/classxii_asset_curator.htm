@@ -189,12 +189,6 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>xiiAssetProcessor</b
 <tr class="memitem:a5c9100f0134d40a53aa447e3355e44ed"><td class="memItemLeft" align="right" valign="top"><a id="a5c9100f0134d40a53aa447e3355e44ed"></a>
 class&#160;</td><td class="memItemRight" valign="bottom"><b>xiiProcessTask</b></td></tr>
 <tr class="separator:a5c9100f0134d40a53aa447e3355e44ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a063847802b2f962d2debabbda9ff3be0"><td class="memItemLeft" align="right" valign="top"><a id="a063847802b2f962d2debabbda9ff3be0"></a>
-class&#160;</td><td class="memItemRight" valign="bottom"><b>xiiAssetWatcher</b></td></tr>
-<tr class="separator:a063847802b2f962d2debabbda9ff3be0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a920d99d41583c1381f50517b8226db2f"><td class="memItemLeft" align="right" valign="top"><a id="a920d99d41583c1381f50517b8226db2f"></a>
-class&#160;</td><td class="memItemRight" valign="bottom"><b>xiiDirectoryUpdateTask</b></td></tr>
-<tr class="separator:a920d99d41583c1381f50517b8226db2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="member-group"></a>
 Asset Platform Configurations</h2></td></tr>
@@ -244,9 +238,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>SaveRuntimeProfiles</
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="member-group"></a>
 Asset Access</h2></td></tr>
-<tr class="memitem:a3b538961f2263f6d98cfdb35fdf8d6f2"><td class="memItemLeft" align="right" valign="top"><a id="a3b538961f2263f6d98cfdb35fdf8d6f2"></a>
-typedef <a class="el" href="../../da/d7f/classxii_locked_object.htm">xiiLockedObject</a>&lt; <a class="el" href="../../dd/d52/classxii_mutex.htm">xiiMutex</a>, const <a class="el" href="../../d7/d7e/structxii_sub_asset.htm">xiiSubAsset</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>xiiLockedSubAsset</b></td></tr>
-<tr class="separator:a3b538961f2263f6d98cfdb35fdf8d6f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8fe670e56225683254fc02752cb881d5"><td class="memItemLeft" align="right" valign="top"><a id="a8fe670e56225683254fc02752cb881d5"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>xiiLockedSubAsset</b> = <a class="el" href="../../da/d7f/classxii_locked_object.htm">xiiLockedObject</a>&lt; <a class="el" href="../../dd/d52/classxii_mutex.htm">xiiMutex</a>, const <a class="el" href="../../d7/d7e/structxii_sub_asset.htm">xiiSubAsset</a> &gt;</td></tr>
+<tr class="separator:a8fe670e56225683254fc02752cb881d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a23ce7abf188d592eeefb647d29f42bc6"><td class="memItemLeft" align="right" valign="top"><a id="a23ce7abf188d592eeefb647d29f42bc6"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>xiiLockedSubAssetTable</b> = <a class="el" href="../../da/d7f/classxii_locked_object.htm">xiiLockedObject</a>&lt; <a class="el" href="../../dd/d52/classxii_mutex.htm">xiiMutex</a>, const <a class="el" href="../../d8/dc2/classxii_hash_table.htm">xiiHashTable</a>&lt; <a class="el" href="../../dc/d1d/classxii_uuid.htm">xiiUuid</a>, <a class="el" href="../../d7/d7e/structxii_sub_asset.htm">xiiSubAsset</a> &gt; &gt;</td></tr>
 <tr class="separator:a23ce7abf188d592eeefb647d29f42bc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -283,14 +277,10 @@ xiiAssetInfo::TransformState&#160;</td><td class="memItemRight" valign="bottom">
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dbd/classxii_asset_curator.htm#af89313c18632a6978fe680ca2f041b43">GetAssetTransformStats</a> (xiiUInt32 &amp;out_uiNumAssets, <a class="el" href="../../dc/da9/classxii_hybrid_array.htm">xiiHybridArray</a>&lt; xiiUInt32, xiiAssetInfo::TransformState::COUNT &gt; &amp;out_count)</td></tr>
 <tr class="memdesc:af89313c18632a6978fe680ca2f041b43"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of assets in the system and how many are in what transform state. <br /></td></tr>
 <tr class="separator:af89313c18632a6978fe680ca2f041b43"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af021f68c7ecb51e6ba5256522355ba07"><td class="memItemLeft" align="right" valign="top"><a id="af021f68c7ecb51e6ba5256522355ba07"></a>
-<a class="el" href="../../df/dfb/structxii_hybrid_string.htm">xiiString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dbd/classxii_asset_curator.htm#af021f68c7ecb51e6ba5256522355ba07">FindDataDirectoryForAsset</a> (const char *szAbsoluteAssetPath) const</td></tr>
-<tr class="memdesc:af021f68c7ecb51e6ba5256522355ba07"><td class="mdescLeft">&#160;</td><td class="mdescRight">Iterates over all known data directories and returns the absolute path to the directory in which this asset is located. <br /></td></tr>
-<tr class="separator:af021f68c7ecb51e6ba5256522355ba07"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab5973e3a33b184f2f07c5f79d7fbc1cc"><td class="memItemLeft" align="right" valign="top"><a id="ab5973e3a33b184f2f07c5f79d7fbc1cc"></a>
-const <a class="el" href="../../d6/d31/classxii_set.htm">xiiSet</a>&lt; <a class="el" href="../../df/dfb/structxii_hybrid_string.htm">xiiString</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dbd/classxii_asset_curator.htm#ab5973e3a33b184f2f07c5f79d7fbc1cc">GetAllAssetFolders</a> () const</td></tr>
-<tr class="memdesc:ab5973e3a33b184f2f07c5f79d7fbc1cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">The curator gathers all folders in which assets have been found. This list can only grow over the lifetime of the application. <br /></td></tr>
-<tr class="separator:ab5973e3a33b184f2f07c5f79d7fbc1cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeac871b5bc5d6b09528a2bec8545ae7f"><td class="memItemLeft" align="right" valign="top"><a id="aeac871b5bc5d6b09528a2bec8545ae7f"></a>
+<a class="el" href="../../df/dfb/structxii_hybrid_string.htm">xiiString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dbd/classxii_asset_curator.htm#aeac871b5bc5d6b09528a2bec8545ae7f">FindDataDirectoryForAsset</a> (<a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sAbsoluteAssetPath) const</td></tr>
+<tr class="memdesc:aeac871b5bc5d6b09528a2bec8545ae7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Iterates over all known data directories and returns the absolute path to the directory in which this asset is located. <br /></td></tr>
+<tr class="separator:aeac871b5bc5d6b09528a2bec8545ae7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aca0682be36738185d2caeb54ff11cec9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dd/dad/structxii_result.htm">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dbd/classxii_asset_curator.htm#aca0682be36738185d2caeb54ff11cec9">FindBestMatchForFile</a> (<a class="el" href="../../d4/dbb/classxii_string_builder.htm">xiiStringBuilder</a> &amp;ref_sFile, <a class="el" href="../../d0/d60/classxii_array_ptr.htm">xiiArrayPtr</a>&lt; <a class="el" href="../../df/dfb/structxii_hybrid_string.htm">xiiString</a> &gt; allowedFileExtensions) const</td></tr>
 <tr class="memdesc:aca0682be36738185d2caeb54ff11cec9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Uses knowledge about all existing files on disk to find the best match for a file. Very slow.  <a href="../../d8/dbd/classxii_asset_curator.htm#aca0682be36738185d2caeb54ff11cec9">More...</a><br /></td></tr>
 <tr class="separator:aca0682be36738185d2caeb54ff11cec9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -516,7 +506,7 @@ const <a class="el" href="../../d6/d31/classxii_set.htm">xiiSet</a>&lt; <a class
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d8/dbd/classxii_asset_curator.htm">xiiAssetCurator</a></li>
-    <li class="footer">Generated on Fri Jun 16 2023 14:12:50 for XIIEngine by
+    <li class="footer">Generated on Sat Jul 1 2023 22:50:25 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

@@ -38,6 +38,6 @@ var classxii_object_accessor_base =
     [ "RemoveValue", "de/d12/classxii_object_accessor_base.htm#a5050a869ad6676c973c2737f452affe6", null ],
     [ "SetValue", "de/d12/classxii_object_accessor_base.htm#ae93da931f8339d4dabbc8e9a60c688ab", null ],
     [ "SetValue", "de/d12/classxii_object_accessor_base.htm#a0b43e3bd9ce08e5f9a1da4dfa0402937", null ],
-    [ "StartTransaction", "de/d12/classxii_object_accessor_base.htm#ad1c54dd7874a181df02a3957959f1ba9", null ],
+    [ "StartTransaction", "de/d12/classxii_object_accessor_base.htm#a159814cc68128cbe59090e4a1e80f24f", null ],
     [ "m_pConstManager", "de/d12/classxii_object_accessor_base.htm#af6d5e81121efc5adbc3af8523de6cd45", null ]
 ];

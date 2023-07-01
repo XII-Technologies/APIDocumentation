@@ -1,9 +1,9 @@
 var classxii_clustered_data_c_p_u =
 [
-    [ "MAX_LIGHT_DATA", "d9/df8/classxii_clustered_data_c_p_u.htm#acdb4b988493290195e830c7e9ccb4ffcab83eddcdefe874588a38f37e12a400f4", null ],
-    [ "MAX_DECAL_DATA", "d9/df8/classxii_clustered_data_c_p_u.htm#acdb4b988493290195e830c7e9ccb4ffcaf1ba7b90c2ca977facb6147ba950d4a1", null ],
-    [ "MAX_REFLECTION_PROBE_DATA", "d9/df8/classxii_clustered_data_c_p_u.htm#acdb4b988493290195e830c7e9ccb4ffcac3087b3ad308cca945ca0ac057867fbe", null ],
-    [ "MAX_ITEMS_PER_CLUSTER", "d9/df8/classxii_clustered_data_c_p_u.htm#acdb4b988493290195e830c7e9ccb4ffca56d8e22be2591fd69d2d9ea097eb8fee", null ],
+    [ "MAX_LIGHT_DATA", "d9/df8/classxii_clustered_data_c_p_u.htm#a449ea550122e197c9b231e979d1b8188ab83eddcdefe874588a38f37e12a400f4", null ],
+    [ "MAX_DECAL_DATA", "d9/df8/classxii_clustered_data_c_p_u.htm#a449ea550122e197c9b231e979d1b8188af1ba7b90c2ca977facb6147ba950d4a1", null ],
+    [ "MAX_REFLECTION_PROBE_DATA", "d9/df8/classxii_clustered_data_c_p_u.htm#a449ea550122e197c9b231e979d1b8188ac3087b3ad308cca945ca0ac057867fbe", null ],
+    [ "MAX_ITEMS_PER_CLUSTER", "d9/df8/classxii_clustered_data_c_p_u.htm#a449ea550122e197c9b231e979d1b8188a56d8e22be2591fd69d2d9ea097eb8fee", null ],
     [ "xiiClusteredDataCPU", "d9/df8/classxii_clustered_data_c_p_u.htm#a48907371d3f0d1416fafd7ba38d972cf", null ],
     [ "~xiiClusteredDataCPU", "d9/df8/classxii_clustered_data_c_p_u.htm#a57232e2e4451e56876ced9a6666dc599", null ],
     [ "m_cameraUsageHint", "d9/df8/classxii_clustered_data_c_p_u.htm#a9c30a869b7c8c50710e5b44d114a70c2", null ],

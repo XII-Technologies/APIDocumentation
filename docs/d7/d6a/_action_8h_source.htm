@@ -114,127 +114,128 @@ $(document).ready(function(){initNavTree('d7/d6a/_action_8h_source.htm','../../'
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;{</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  <span class="keyword">using</span> StorageType = xiiUInt32;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  XII_DECLARE_HANDLE_TYPE(<a class="code" href="../../df/dcf/classxii_action_descriptor_handle.htm">xiiActionDescriptorHandle</a>, <a class="code" href="../../d0/dcc/structxii_generic_id.htm">xiiActionId</a>);</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="../../d0/dde/classxii_action_manager.htm">xiiActionManager</a>;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  <span class="keyword">const</span> <a class="code" href="../../db/d43/structxii_action_descriptor.htm">xiiActionDescriptor</a>* GetDescriptor() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;};</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
-<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="../../d7/da7/structxii_action_scope.htm">   39</a></span>&#160;<span class="keyword">struct </span><a class="code" href="../../d7/da7/structxii_action_scope.htm">xiiActionScope</a></div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;{</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <span class="keyword">enum</span> Enum</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  {</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    Global,</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    Document,</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    Window,</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    Default = Global</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  };</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <span class="keyword">using</span> StorageType = xiiUInt8;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;};</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
-<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="../../da/d70/structxii_action_type.htm">   52</a></span>&#160;<span class="keyword">struct </span><a class="code" href="../../da/d70/structxii_action_type.htm">xiiActionType</a></div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;{</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <span class="keyword">enum</span> Enum</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  {</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    Action,</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    Category,</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    Menu,</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    ActionAndMenu,</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    Default = Action</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  };</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  <span class="keyword">using</span> StorageType = xiiUInt8;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;};</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
-<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="../../d9/d45/structxii_action_context.htm">   66</a></span>&#160;<span class="keyword">struct </span>XII_GUIFOUNDATION_DLL <a class="code" href="../../d9/d45/structxii_action_context.htm">xiiActionContext</a></div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;{</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <a class="code" href="../../d9/d45/structxii_action_context.htm">xiiActionContext</a>() = <span class="keywordflow">default</span>;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  <a class="code" href="../../d9/d45/structxii_action_context.htm">xiiActionContext</a>(<a class="code" href="../../d8/da9/classxii_document.htm">xiiDocument</a>* pDoc) { m_pDocument = pDoc; }</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  <a class="code" href="../../d8/da9/classxii_document.htm">xiiDocument</a>* m_pDocument = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  <a class="code" href="../../df/dfb/structxii_hybrid_string.htm">xiiString</a>    m_sMapping;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  QWidget*     m_pWindow = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;};</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  XII_DECLARE_HANDLE_TYPE(<a class="code" href="../../df/dcf/classxii_action_descriptor_handle.htm">xiiActionDescriptorHandle</a>, <a class="code" href="../../d0/dcc/structxii_generic_id.htm">xiiActionId</a>);</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="../../d0/dde/classxii_action_manager.htm">xiiActionManager</a>;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  <span class="keyword">const</span> <a class="code" href="../../db/d43/structxii_action_descriptor.htm">xiiActionDescriptor</a>* GetDescriptor() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;};</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="../../d7/da7/structxii_action_scope.htm">   40</a></span>&#160;<span class="keyword">struct </span><a class="code" href="../../d7/da7/structxii_action_scope.htm">xiiActionScope</a></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;{</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <span class="keyword">enum</span> Enum</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  {</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    Global,</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    Document,</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    Window,</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    Default = Global</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  };</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <span class="keyword">using</span> StorageType = xiiUInt8;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;};</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="../../da/d70/structxii_action_type.htm">   53</a></span>&#160;<span class="keyword">struct </span><a class="code" href="../../da/d70/structxii_action_type.htm">xiiActionType</a></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;{</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <span class="keyword">enum</span> Enum</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  {</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    Action,</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    Category,</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    Menu,</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    ActionAndMenu,</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    Default = Action</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  };</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  <span class="keyword">using</span> StorageType = xiiUInt8;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;};</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
+<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="../../d9/d45/structxii_action_context.htm">   67</a></span>&#160;<span class="keyword">struct </span>XII_GUIFOUNDATION_DLL <a class="code" href="../../d9/d45/structxii_action_context.htm">xiiActionContext</a></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;{</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  <a class="code" href="../../d9/d45/structxii_action_context.htm">xiiActionContext</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  <a class="code" href="../../d9/d45/structxii_action_context.htm">xiiActionContext</a>(<a class="code" href="../../d8/da9/classxii_document.htm">xiiDocument</a>* pDoc) { m_pDocument = pDoc; }</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  <a class="code" href="../../d8/da9/classxii_document.htm">xiiDocument</a>* m_pDocument = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  <a class="code" href="../../df/dfb/structxii_hybrid_string.htm">xiiString</a>    m_sMapping;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  QWidget*     m_pWindow = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;};</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
-<div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="../../db/d43/structxii_action_descriptor.htm">   78</a></span>&#160;<span class="keyword">struct </span>XII_GUIFOUNDATION_DLL <a class="code" href="../../db/d43/structxii_action_descriptor.htm">xiiActionDescriptor</a></div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;{</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  <a class="code" href="../../db/d43/structxii_action_descriptor.htm">xiiActionDescriptor</a>() = <span class="keywordflow">default</span>;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  ;</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  <a class="code" href="../../db/d43/structxii_action_descriptor.htm">xiiActionDescriptor</a>(xiiActionType::Enum type, xiiActionScope::Enum scope, <span class="keyword">const</span> <span class="keywordtype">char</span>* szName, <span class="keyword">const</span> <span class="keywordtype">char</span>* szCategoryPath, <span class="keyword">const</span> <span class="keywordtype">char</span>* szShortcut, CreateActionFunc createAction, DeleteActionFunc deleteAction = <span class="keyword">nullptr</span>);</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  <a class="code" href="../../df/dcf/classxii_action_descriptor_handle.htm">xiiActionDescriptorHandle</a> m_Handle;</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  <a class="code" href="../../de/dfd/structxii_enum.htm">xiiEnum&lt;xiiActionType&gt;</a>    m_Type;</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  <a class="code" href="../../de/dfd/structxii_enum.htm">xiiEnum&lt;xiiActionScope&gt;</a> m_Scope;</div>
-<div class="line"><a name="l00088"></a><span class="lineno"><a class="line" href="../../db/d43/structxii_action_descriptor.htm#a8cc6da7f26476d219c91a1953371cc18">   88</a></span>&#160;  <a class="code" href="../../df/dfb/structxii_hybrid_string.htm">xiiString</a>               <a class="code" href="../../db/d43/structxii_action_descriptor.htm#a8cc6da7f26476d219c91a1953371cc18">m_sActionName</a>;   </div>
-<div class="line"><a name="l00089"></a><span class="lineno"><a class="line" href="../../db/d43/structxii_action_descriptor.htm#a9b66dfe2e5529b96649cf3d0ae8316f7">   89</a></span>&#160;  <a class="code" href="../../df/dfb/structxii_hybrid_string.htm">xiiString</a>               <a class="code" href="../../db/d43/structxii_action_descriptor.htm#a9b66dfe2e5529b96649cf3d0ae8316f7">m_sCategoryPath</a>; </div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  <a class="code" href="../../df/dfb/structxii_hybrid_string.htm">xiiString</a> m_sShortcut;</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  <a class="code" href="../../df/dfb/structxii_hybrid_string.htm">xiiString</a> m_sDefaultShortcut;</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  <a class="code" href="../../d8/d30/classxii_action.htm">xiiAction</a>* CreateAction(<span class="keyword">const</span> <a class="code" href="../../d9/d45/structxii_action_context.htm">xiiActionContext</a>&amp; context) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  <span class="keywordtype">void</span>       DeleteAction(<a class="code" href="../../d8/d30/classxii_action.htm">xiiAction</a>* pAction) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  <span class="keywordtype">void</span> UpdateExistingActions();</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  CreateActionFunc m_CreateAction;</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;  DeleteActionFunc m_DeleteAction;</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160; </div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;  <span class="keyword">mutable</span> <a class="code" href="../../dc/da9/classxii_hybrid_array.htm">xiiHybridArray&lt;xiiAction*, 4&gt;</a> m_CreatedActions;</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;};</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160; </div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
+<div class="line"><a name="l00079"></a><span class="lineno"><a class="line" href="../../db/d43/structxii_action_descriptor.htm">   79</a></span>&#160;<span class="keyword">struct </span>XII_GUIFOUNDATION_DLL <a class="code" href="../../db/d43/structxii_action_descriptor.htm">xiiActionDescriptor</a></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;{</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  <a class="code" href="../../db/d43/structxii_action_descriptor.htm">xiiActionDescriptor</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  ;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  <a class="code" href="../../db/d43/structxii_action_descriptor.htm">xiiActionDescriptor</a>(xiiActionType::Enum type, xiiActionScope::Enum scope, <span class="keyword">const</span> <span class="keywordtype">char</span>* szName, <span class="keyword">const</span> <span class="keywordtype">char</span>* szCategoryPath, <span class="keyword">const</span> <span class="keywordtype">char</span>* szShortcut, CreateActionFunc createAction, DeleteActionFunc deleteAction = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  <a class="code" href="../../df/dcf/classxii_action_descriptor_handle.htm">xiiActionDescriptorHandle</a> m_Handle;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  <a class="code" href="../../de/dfd/structxii_enum.htm">xiiEnum&lt;xiiActionType&gt;</a>    m_Type;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  <a class="code" href="../../de/dfd/structxii_enum.htm">xiiEnum&lt;xiiActionScope&gt;</a> m_Scope;</div>
+<div class="line"><a name="l00089"></a><span class="lineno"><a class="line" href="../../db/d43/structxii_action_descriptor.htm#a8cc6da7f26476d219c91a1953371cc18">   89</a></span>&#160;  <a class="code" href="../../df/dfb/structxii_hybrid_string.htm">xiiString</a>               <a class="code" href="../../db/d43/structxii_action_descriptor.htm#a8cc6da7f26476d219c91a1953371cc18">m_sActionName</a>;   </div>
+<div class="line"><a name="l00090"></a><span class="lineno"><a class="line" href="../../db/d43/structxii_action_descriptor.htm#a9b66dfe2e5529b96649cf3d0ae8316f7">   90</a></span>&#160;  <a class="code" href="../../df/dfb/structxii_hybrid_string.htm">xiiString</a>               <a class="code" href="../../db/d43/structxii_action_descriptor.htm#a9b66dfe2e5529b96649cf3d0ae8316f7">m_sCategoryPath</a>; </div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  <a class="code" href="../../df/dfb/structxii_hybrid_string.htm">xiiString</a> m_sShortcut;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  <a class="code" href="../../df/dfb/structxii_hybrid_string.htm">xiiString</a> m_sDefaultShortcut;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  <a class="code" href="../../d8/d30/classxii_action.htm">xiiAction</a>* CreateAction(<span class="keyword">const</span> <a class="code" href="../../d9/d45/structxii_action_context.htm">xiiActionContext</a>&amp; context) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  <span class="keywordtype">void</span>       DeleteAction(<a class="code" href="../../d8/d30/classxii_action.htm">xiiAction</a>* pAction) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  <span class="keywordtype">void</span> UpdateExistingActions();</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;  CreateActionFunc m_CreateAction;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  DeleteActionFunc m_DeleteAction;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; </div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;  <span class="keyword">mutable</span> <a class="code" href="../../dc/da9/classxii_hybrid_array.htm">xiiHybridArray&lt;xiiAction*, 4&gt;</a> m_CreatedActions;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;};</div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160; </div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160; </div>
-<div class="line"><a name="l00109"></a><span class="lineno"><a class="line" href="../../d8/d30/classxii_action.htm">  109</a></span>&#160;<span class="keyword">class </span>XII_GUIFOUNDATION_DLL <a class="code" href="../../d8/d30/classxii_action.htm">xiiAction</a> : <span class="keyword">public</span> <a class="code" href="../../dc/d71/classxii_reflected_class.htm">xiiReflectedClass</a></div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;{</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;  XII_ADD_DYNAMIC_REFLECTION(<a class="code" href="../../d8/d30/classxii_action.htm">xiiAction</a>, <a class="code" href="../../dc/d71/classxii_reflected_class.htm">xiiReflectedClass</a>);</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;  XII_DISALLOW_COPY_AND_ASSIGN(<a class="code" href="../../d8/d30/classxii_action.htm">xiiAction</a>);</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160; </div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;  <a class="code" href="../../d8/d30/classxii_action.htm">xiiAction</a>(<span class="keyword">const</span> <a class="code" href="../../d9/d45/structxii_action_context.htm">xiiActionContext</a>&amp; context) { m_Context = context; }</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> Execute(<span class="keyword">const</span> <a class="code" href="../../db/d1a/classxii_variant.htm">xiiVariant</a>&amp; value) = 0;</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160; </div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;  <span class="keywordtype">void</span>                      TriggerUpdate();</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;  <span class="keyword">const</span> <a class="code" href="../../d9/d45/structxii_action_context.htm">xiiActionContext</a>&amp;   GetContext()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_Context; }</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;  <a class="code" href="../../df/dcf/classxii_action_descriptor_handle.htm">xiiActionDescriptorHandle</a> GetDescriptorHandle() { <span class="keywordflow">return</span> m_hDescriptorHandle; }</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160; </div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00123"></a><span class="lineno"><a class="line" href="../../d8/d30/classxii_action.htm#af62be38568545a7002599c372befb702">  123</a></span>&#160;  <a class="code" href="../../dc/d22/classxii_event.htm">xiiEvent&lt;xiiAction*&gt;</a> <a class="code" href="../../d8/d30/classxii_action.htm#af62be38568545a7002599c372befb702">m_StatusUpdateEvent</a>; </div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160; </div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;  <a class="code" href="../../d9/d45/structxii_action_context.htm">xiiActionContext</a> m_Context;</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160; </div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;  <span class="keyword">friend</span> <span class="keyword">struct </span><a class="code" href="../../db/d43/structxii_action_descriptor.htm">xiiActionDescriptor</a>;</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;  <a class="code" href="../../df/dcf/classxii_action_descriptor_handle.htm">xiiActionDescriptorHandle</a> m_hDescriptorHandle;</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;};</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160; </div>
+<div class="line"><a name="l00110"></a><span class="lineno"><a class="line" href="../../d8/d30/classxii_action.htm">  110</a></span>&#160;<span class="keyword">class </span>XII_GUIFOUNDATION_DLL <a class="code" href="../../d8/d30/classxii_action.htm">xiiAction</a> : <span class="keyword">public</span> <a class="code" href="../../dc/d71/classxii_reflected_class.htm">xiiReflectedClass</a></div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;{</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;  XII_ADD_DYNAMIC_REFLECTION(<a class="code" href="../../d8/d30/classxii_action.htm">xiiAction</a>, <a class="code" href="../../dc/d71/classxii_reflected_class.htm">xiiReflectedClass</a>);</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;  XII_DISALLOW_COPY_AND_ASSIGN(<a class="code" href="../../d8/d30/classxii_action.htm">xiiAction</a>);</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160; </div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;  <a class="code" href="../../d8/d30/classxii_action.htm">xiiAction</a>(<span class="keyword">const</span> <a class="code" href="../../d9/d45/structxii_action_context.htm">xiiActionContext</a>&amp; context) { m_Context = context; }</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> Execute(<span class="keyword">const</span> <a class="code" href="../../db/d1a/classxii_variant.htm">xiiVariant</a>&amp; value) = 0;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160; </div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;  <span class="keywordtype">void</span>                      TriggerUpdate();</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;  <span class="keyword">const</span> <a class="code" href="../../d9/d45/structxii_action_context.htm">xiiActionContext</a>&amp;   GetContext()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_Context; }</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;  <a class="code" href="../../df/dcf/classxii_action_descriptor_handle.htm">xiiActionDescriptorHandle</a> GetDescriptorHandle() { <span class="keywordflow">return</span> m_hDescriptorHandle; }</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160; </div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00124"></a><span class="lineno"><a class="line" href="../../d8/d30/classxii_action.htm#af62be38568545a7002599c372befb702">  124</a></span>&#160;  <a class="code" href="../../dc/d22/classxii_event.htm">xiiEvent&lt;xiiAction*&gt;</a> <a class="code" href="../../d8/d30/classxii_action.htm#af62be38568545a7002599c372befb702">m_StatusUpdateEvent</a>; </div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160; </div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;  <a class="code" href="../../d9/d45/structxii_action_context.htm">xiiActionContext</a> m_Context;</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160; </div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;  <span class="keyword">friend</span> <span class="keyword">struct </span><a class="code" href="../../db/d43/structxii_action_descriptor.htm">xiiActionDescriptor</a>;</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;  <a class="code" href="../../df/dcf/classxii_action_descriptor_handle.htm">xiiActionDescriptorHandle</a> m_hDescriptorHandle;</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;};</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="astructxii_enum_htm"><div class="ttname"><a href="../../de/dfd/structxii_enum.htm">xiiEnum&lt; xiiActionType &gt;</a></div></div>
-<div class="ttc" id="astructxii_action_scope_htm"><div class="ttname"><a href="../../d7/da7/structxii_action_scope.htm">xiiActionScope</a></div><div class="ttdef"><b>Definition:</b> Action.h:39</div></div>
+<div class="ttc" id="astructxii_action_scope_htm"><div class="ttname"><a href="../../d7/da7/structxii_action_scope.htm">xiiActionScope</a></div><div class="ttdef"><b>Definition:</b> Action.h:40</div></div>
 <div class="ttc" id="aclassxii_variant_htm"><div class="ttname"><a href="../../db/d1a/classxii_variant.htm">xiiVariant</a></div><div class="ttdoc">xiiVariant is a class that can store different types of variables, which is useful in situations wher...</div><div class="ttdef"><b>Definition:</b> Variant.h:45</div></div>
 <div class="ttc" id="aclassxii_reflected_class_htm"><div class="ttname"><a href="../../dc/d71/classxii_reflected_class.htm">xiiReflectedClass</a></div><div class="ttdoc">All classes that should be dynamically reflectable, need to be derived from this base class.</div><div class="ttdef"><b>Definition:</b> DynamicRTTI.h:76</div></div>
 <div class="ttc" id="astructxii_hybrid_string_htm"><div class="ttname"><a href="../../df/dfb/structxii_hybrid_string.htm">xiiHybridString&lt; 32, xiiDefaultAllocatorWrapper &gt;</a></div></div>
 <div class="ttc" id="aclassxii_hybrid_array_htm"><div class="ttname"><a href="../../dc/da9/classxii_hybrid_array.htm">xiiHybridArray&lt; xiiAction *, 4 &gt;</a></div></div>
-<div class="ttc" id="astructxii_action_descriptor_htm"><div class="ttname"><a href="../../db/d43/structxii_action_descriptor.htm">xiiActionDescriptor</a></div><div class="ttdef"><b>Definition:</b> Action.h:78</div></div>
+<div class="ttc" id="astructxii_action_descriptor_htm"><div class="ttname"><a href="../../db/d43/structxii_action_descriptor.htm">xiiActionDescriptor</a></div><div class="ttdef"><b>Definition:</b> Action.h:79</div></div>
 <div class="ttc" id="aclassxii_action_descriptor_handle_htm"><div class="ttname"><a href="../../df/dcf/classxii_action_descriptor_handle.htm">xiiActionDescriptorHandle</a></div><div class="ttdoc">Handle for a xiiAction.</div><div class="ttdef"><b>Definition:</b> Action.h:27</div></div>
-<div class="ttc" id="aclassxii_action_htm_af62be38568545a7002599c372befb702"><div class="ttname"><a href="../../d8/d30/classxii_action.htm#af62be38568545a7002599c372befb702">xiiAction::m_StatusUpdateEvent</a></div><div class="ttdeci">xiiEvent&lt; xiiAction * &gt; m_StatusUpdateEvent</div><div class="ttdoc">Fire when the state of the action changes (enabled, value etc...)</div><div class="ttdef"><b>Definition:</b> Action.h:123</div></div>
-<div class="ttc" id="astructxii_action_descriptor_htm_a8cc6da7f26476d219c91a1953371cc18"><div class="ttname"><a href="../../db/d43/structxii_action_descriptor.htm#a8cc6da7f26476d219c91a1953371cc18">xiiActionDescriptor::m_sActionName</a></div><div class="ttdeci">xiiString m_sActionName</div><div class="ttdoc">Unique within category path, shown in key configuration dialog.</div><div class="ttdef"><b>Definition:</b> Action.h:88</div></div>
+<div class="ttc" id="aclassxii_action_htm_af62be38568545a7002599c372befb702"><div class="ttname"><a href="../../d8/d30/classxii_action.htm#af62be38568545a7002599c372befb702">xiiAction::m_StatusUpdateEvent</a></div><div class="ttdeci">xiiEvent&lt; xiiAction * &gt; m_StatusUpdateEvent</div><div class="ttdoc">Fire when the state of the action changes (enabled, value etc...)</div><div class="ttdef"><b>Definition:</b> Action.h:124</div></div>
+<div class="ttc" id="astructxii_action_descriptor_htm_a8cc6da7f26476d219c91a1953371cc18"><div class="ttname"><a href="../../db/d43/structxii_action_descriptor.htm#a8cc6da7f26476d219c91a1953371cc18">xiiActionDescriptor::m_sActionName</a></div><div class="ttdeci">xiiString m_sActionName</div><div class="ttdoc">Unique within category path, shown in key configuration dialog.</div><div class="ttdef"><b>Definition:</b> Action.h:89</div></div>
 <div class="ttc" id="aclassxii_action_manager_htm"><div class="ttname"><a href="../../d0/dde/classxii_action_manager.htm">xiiActionManager</a></div><div class="ttdef"><b>Definition:</b> ActionManager.h:39</div></div>
-<div class="ttc" id="astructxii_action_context_htm"><div class="ttname"><a href="../../d9/d45/structxii_action_context.htm">xiiActionContext</a></div><div class="ttdef"><b>Definition:</b> Action.h:66</div></div>
-<div class="ttc" id="astructxii_action_type_htm"><div class="ttname"><a href="../../da/d70/structxii_action_type.htm">xiiActionType</a></div><div class="ttdef"><b>Definition:</b> Action.h:52</div></div>
-<div class="ttc" id="aclassxii_action_htm"><div class="ttname"><a href="../../d8/d30/classxii_action.htm">xiiAction</a></div><div class="ttdef"><b>Definition:</b> Action.h:109</div></div>
+<div class="ttc" id="astructxii_action_context_htm"><div class="ttname"><a href="../../d9/d45/structxii_action_context.htm">xiiActionContext</a></div><div class="ttdef"><b>Definition:</b> Action.h:67</div></div>
+<div class="ttc" id="astructxii_action_type_htm"><div class="ttname"><a href="../../da/d70/structxii_action_type.htm">xiiActionType</a></div><div class="ttdef"><b>Definition:</b> Action.h:53</div></div>
+<div class="ttc" id="aclassxii_action_htm"><div class="ttname"><a href="../../d8/d30/classxii_action.htm">xiiAction</a></div><div class="ttdef"><b>Definition:</b> Action.h:110</div></div>
 <div class="ttc" id="astructxii_generic_id_htm"><div class="ttname"><a href="../../d0/dcc/structxii_generic_id.htm">xiiGenericId&lt; 24, 8 &gt;</a></div></div>
 <div class="ttc" id="aclassxii_event_htm"><div class="ttname"><a href="../../dc/d22/classxii_event.htm">xiiEvent&lt; xiiAction * &gt;</a></div></div>
-<div class="ttc" id="astructxii_action_descriptor_htm_a9b66dfe2e5529b96649cf3d0ae8316f7"><div class="ttname"><a href="../../db/d43/structxii_action_descriptor.htm#a9b66dfe2e5529b96649cf3d0ae8316f7">xiiActionDescriptor::m_sCategoryPath</a></div><div class="ttdeci">xiiString m_sCategoryPath</div><div class="ttdoc">Category in key configuration dialog, e.g. &quot;Tree View&quot; or &quot;File&quot;.</div><div class="ttdef"><b>Definition:</b> Action.h:89</div></div>
+<div class="ttc" id="astructxii_action_descriptor_htm_a9b66dfe2e5529b96649cf3d0ae8316f7"><div class="ttname"><a href="../../db/d43/structxii_action_descriptor.htm#a9b66dfe2e5529b96649cf3d0ae8316f7">xiiActionDescriptor::m_sCategoryPath</a></div><div class="ttdeci">xiiString m_sCategoryPath</div><div class="ttdoc">Category in key configuration dialog, e.g. &quot;Tree View&quot; or &quot;File&quot;.</div><div class="ttdef"><b>Definition:</b> Action.h:90</div></div>
 <div class="ttc" id="aclassxii_document_htm"><div class="ttname"><a href="../../d8/da9/classxii_document.htm">xiiDocument</a></div><div class="ttdef"><b>Definition:</b> Document.h:56</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.htm">home</a></li><li class="navelem"><a class="el" href="../../dir_1036706e55c22cab35bc1c58ee689f1d.htm">runner</a></li><li class="navelem"><a class="el" href="../../dir_629f8151d55d307162ff2d619fb1783d.htm">work</a></li><li class="navelem"><a class="el" href="../../dir_1ddc44fe1263a8c7935fa6130b7d9499.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_2c1b6808f12952f4c36e05ba7068379a.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_b5a1c4ecfca018ad24b729e213296d41.htm">Source</a></li><li class="navelem"><a class="el" href="../../dir_64f53f8da7bf780a58c32bb848e7873b.htm">Tools</a></li><li class="navelem"><a class="el" href="../../dir_4b5bc41f7c4cbfc8ca80bdea56300f1d.htm">Libs</a></li><li class="navelem"><a class="el" href="../../dir_8694d7149aa3c4cbc4b219c953b250c5.htm">GuiFoundation</a></li><li class="navelem"><a class="el" href="../../dir_40e014400703acd3da42316ebab15bea.htm">Action</a></li><li class="navelem"><b>Action.h</b></li>
-    <li class="footer">Generated on Fri Jun 16 2023 14:12:48 for XIIEngine by
+    <li class="footer">Generated on Sat Jul 1 2023 22:50:23 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

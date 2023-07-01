@@ -24,7 +24,7 @@ var classxii_scene_document =
     [ "CreateEmptyObject", "da/d0a/classxii_scene_document.htm#ae4f891e2730efd91e2035d9749224f74", null ],
     [ "CreateExposedProperty", "da/d0a/classxii_scene_document.htm#ada4227e7e79d9133fa9c85df58090efe", null ],
     [ "CreateLevelCamera", "da/d0a/classxii_scene_document.htm#acd3a07d006684cd6a16a1c219d23858d", null ],
-    [ "CreatePrefabDocumentFromSelection", "da/d0a/classxii_scene_document.htm#af41d499ff21cefaf84cf3298d18c10e2", null ],
+    [ "CreatePrefabDocumentFromSelection", "da/d0a/classxii_scene_document.htm#a0a2a13a203d79c6c7b47082d625c67a0", null ],
     [ "DeltaTransform", "da/d0a/classxii_scene_document.htm#a6c144c89978399d590f7d048bf8ed5d3", null ],
     [ "DetachFromParent", "da/d0a/classxii_scene_document.htm#a8c0d86c107725b270750a275b836a03b", null ],
     [ "DocumentObjectMetaDataEventHandler", "da/d0a/classxii_scene_document.htm#acd6bfb715d56421f7673ebc1a6d6ef7e", null ],

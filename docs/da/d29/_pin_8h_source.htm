@@ -133,7 +133,7 @@ $(document).ready(function(){initNavTree('da/d29/_pin_8h_source.htm','../../'); 
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> keyPressEvent(QKeyEvent* pEvent)<span class="keyword"> override </span>{}</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">bool</span>     AdjustRenderingForHighlight(xiiQtPinHighlightState state);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">bool</span>     UpdatePinColors(<span class="keyword">const</span> <a class="code" href="../../df/d71/classxii_color_gamma_u_b.htm">xiiColorGammaUB</a>* pOverwriteColor = <span class="keyword">nullptr</span>);</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <span class="keyword">virtual</span> QVariant itemChange(GraphicsItemChange change, <span class="keyword">const</span> QVariant&amp; value) <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  xiiQtPinHighlightState m_HighlightState = xiiQtPinHighlightState::None;</div>
@@ -152,13 +152,14 @@ $(document).ready(function(){initNavTree('da/d29/_pin_8h_source.htm','../../'); 
 <div class="ttc" id="aclassxii_array_ptr_htm_a034dc2f685e1e58c43b79212a914d02f"><div class="ttname"><a href="../../d0/d60/classxii_array_ptr.htm#a034dc2f685e1e58c43b79212a914d02f">xiiArrayPtr::IsEmpty</a></div><div class="ttdeci">XII_ALWAYS_INLINE bool IsEmpty() const</div><div class="ttdoc">Returns whether the array is empty.</div><div class="ttdef"><b>Definition:</b> ArrayPtr.h:136</div></div>
 <div class="ttc" id="aclassxii_hybrid_array_htm"><div class="ttname"><a href="../../dc/da9/classxii_hybrid_array.htm">xiiHybridArray&lt; xiiQtConnection *, 6 &gt;</a></div></div>
 <div class="ttc" id="aclassxii_qt_connection_htm"><div class="ttname"><a href="../../d0/dde/classxii_qt_connection.htm">xiiQtConnection</a></div><div class="ttdef"><b>Definition:</b> Connection.h:9</div></div>
+<div class="ttc" id="aclassxii_color_gamma_u_b_htm"><div class="ttname"><a href="../../df/d71/classxii_color_gamma_u_b.htm">xiiColorGammaUB</a></div><div class="ttdoc">A 8bit per channel unsigned normalized (values interpreted as 0-1) color storage format that represen...</div><div class="ttdef"><b>Definition:</b> Color8UNorm.h:69</div></div>
 <div class="ttc" id="aclassxii_qt_pin_htm"><div class="ttname"><a href="../../d4/d6e/classxii_qt_pin.htm">xiiQtPin</a></div><div class="ttdef"><b>Definition:</b> Pin.h:19</div></div>
 <div class="ttc" id="aclassxii_pin_htm"><div class="ttname"><a href="../../d1/da6/classxii_pin.htm">xiiPin</a></div><div class="ttdef"><b>Definition:</b> DocumentNodeManager.h:55</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.htm">home</a></li><li class="navelem"><a class="el" href="../../dir_1036706e55c22cab35bc1c58ee689f1d.htm">runner</a></li><li class="navelem"><a class="el" href="../../dir_629f8151d55d307162ff2d619fb1783d.htm">work</a></li><li class="navelem"><a class="el" href="../../dir_1ddc44fe1263a8c7935fa6130b7d9499.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_2c1b6808f12952f4c36e05ba7068379a.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_b5a1c4ecfca018ad24b729e213296d41.htm">Source</a></li><li class="navelem"><a class="el" href="../../dir_64f53f8da7bf780a58c32bb848e7873b.htm">Tools</a></li><li class="navelem"><a class="el" href="../../dir_4b5bc41f7c4cbfc8ca80bdea56300f1d.htm">Libs</a></li><li class="navelem"><a class="el" href="../../dir_8694d7149aa3c4cbc4b219c953b250c5.htm">GuiFoundation</a></li><li class="navelem"><a class="el" href="../../dir_0f5f6c22411ef9d75f22a821e4a3311f.htm">NodeEditor</a></li><li class="navelem"><b>Pin.h</b></li>
-    <li class="footer">Generated on Fri Jun 16 2023 14:12:49 for XIIEngine by
+    <li class="footer">Generated on Sat Jul 1 2023 22:50:23 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

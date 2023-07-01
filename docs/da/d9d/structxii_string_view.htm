@@ -348,7 +348,7 @@ template&lt;size_t N&gt; </td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="../../da/d9d/structxii_string_view.htm" title="xiiStringView represent a read-only sub-string of a larger string, as it can store a dedicated string...">xiiStringView</a> represent a read-only sub-string of a larger string, as it can store a dedicated string end position. It derives from <a class="el" href="../../d2/d29/structxii_string_base.htm" title="Base class for strings, which implements all read-only string functions.">xiiStringBase</a> and thus provides a large set of functions for search and comparisons. </p>
-<p>Attention: <a class="el" href="../../da/d9d/structxii_string_view.htm" title="xiiStringView represent a read-only sub-string of a larger string, as it can store a dedicated string...">xiiStringView</a> does not store string data itself. It only stores pointers into memory. For example, when you get an <a class="el" href="../../da/d9d/structxii_string_view.htm" title="xiiStringView represent a read-only sub-string of a larger string, as it can store a dedicated string...">xiiStringView</a> to an <a class="el" href="../../d4/dbb/classxii_string_builder.htm" title="xiiStringBuilder is a class that is meant for creating and modifying strings.">xiiStringBuilder</a>, the <a class="el" href="../../da/d9d/structxii_string_view.htm" title="xiiStringView represent a read-only sub-string of a larger string, as it can store a dedicated string...">xiiStringView</a> instance will point to the exact same memory, enabling you to iterate over it (read-only). That means that an <a class="el" href="../../da/d9d/structxii_string_view.htm" title="xiiStringView represent a read-only sub-string of a larger string, as it can store a dedicated string...">xiiStringView</a> is only valid as long as its source data is not modified. Once you make any kind of modification to the source data, you should not continue using the <a class="el" href="../../da/d9d/structxii_string_view.htm" title="xiiStringView represent a read-only sub-string of a larger string, as it can store a dedicated string...">xiiStringView</a> to that data anymore, as it might now point into invalid memory. </p>
+<p>Attention: <a class="el" href="../../da/d9d/structxii_string_view.htm" title="xiiStringView represent a read-only sub-string of a larger string, as it can store a dedicated string...">xiiStringView</a> does not store string data itself. It only stores pointers into memory. For example, when you get a <a class="el" href="../../da/d9d/structxii_string_view.htm" title="xiiStringView represent a read-only sub-string of a larger string, as it can store a dedicated string...">xiiStringView</a> to a <a class="el" href="../../d4/dbb/classxii_string_builder.htm" title="xiiStringBuilder is a class that is meant for creating and modifying strings.">xiiStringBuilder</a>, the <a class="el" href="../../da/d9d/structxii_string_view.htm" title="xiiStringView represent a read-only sub-string of a larger string, as it can store a dedicated string...">xiiStringView</a> instance will point to the exact same memory, enabling you to iterate over it (read-only). That means that a <a class="el" href="../../da/d9d/structxii_string_view.htm" title="xiiStringView represent a read-only sub-string of a larger string, as it can store a dedicated string...">xiiStringView</a> is only valid as long as its source data is not modified. Once you make any kind of modification to the source data, you should not continue using the <a class="el" href="../../da/d9d/structxii_string_view.htm" title="xiiStringView represent a read-only sub-string of a larger string, as it can store a dedicated string...">xiiStringView</a> to that data anymore, as it might now point into invalid memory. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a18557d7a7ef5c94ceedc229b0943b893"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a18557d7a7ef5c94ceedc229b0943b893">&#9670;&nbsp;</a></span>CompareN()</h2>
@@ -491,7 +491,7 @@ template&lt;size_t N&gt; </td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Returns a pointer to the first occurrence of szStringToFind, or nullptr if none was found. To find the next occurrence, use an <a class="el" href="../../da/d9d/structxii_string_view.htm" title="xiiStringView represent a read-only sub-string of a larger string, as it can store a dedicated string...">xiiStringView</a> which points to the next position and call FindSubString again. </p>
+<p>Returns a pointer to the first occurrence of szStringToFind, or nullptr if none was found. To find the next occurrence, use a <a class="el" href="../../da/d9d/structxii_string_view.htm" title="xiiStringView represent a read-only sub-string of a larger string, as it can store a dedicated string...">xiiStringView</a> which points to the next position and call FindSubString again. </p>
 
 </div>
 </div>
@@ -520,7 +520,7 @@ template&lt;size_t N&gt; </td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Returns a pointer to the first occurrence of szStringToFind, or nullptr if none was found. Case insensitive. To find the next occurrence, use an <a class="el" href="../../da/d9d/structxii_string_view.htm" title="xiiStringView represent a read-only sub-string of a larger string, as it can store a dedicated string...">xiiStringView</a> which points to the next position and call FindSubString again. </p>
+<p>Returns a pointer to the first occurrence of szStringToFind, or nullptr if none was found. Case insensitive. To find the next occurrence, use a <a class="el" href="../../da/d9d/structxii_string_view.htm" title="xiiStringView represent a read-only sub-string of a larger string, as it can store a dedicated string...">xiiStringView</a> which points to the next position and call FindSubString again. </p>
 
 </div>
 </div>
@@ -916,7 +916,7 @@ template&lt;size_t N&gt; </td></tr>
 </div><div class="memdoc">
 
 <p>If the string ends with one of the given words (case insensitive), it is removed and the function returns true. </p>
-<dl class="test"><dt><b><a class="el" href="../../d4/df6/test.htm#_test000039">Test:</a></b></dt><dd>TrimWordEnd </dd></dl>
+<dl class="test"><dt><b><a class="el" href="../../d4/df6/test.htm#_test000037">Test:</a></b></dt><dd>TrimWordEnd </dd></dl>
 
 </div>
 </div>
@@ -965,7 +965,7 @@ template&lt;size_t N&gt; </td></tr>
 </div><div class="memdoc">
 
 <p>If the string starts with one of the given words (case insensitive), it is removed and the function returns true. </p>
-<dl class="test"><dt><b><a class="el" href="../../d4/df6/test.htm#_test000038">Test:</a></b></dt><dd>TrimWordStart </dd></dl>
+<dl class="test"><dt><b><a class="el" href="../../d4/df6/test.htm#_test000036">Test:</a></b></dt><dd>TrimWordStart </dd></dl>
 
 </div>
 </div>
@@ -980,7 +980,7 @@ template&lt;size_t N&gt; </td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a></li>
-    <li class="footer">Generated on Fri Jun 16 2023 14:12:58 for XIIEngine by
+    <li class="footer">Generated on Sat Jul 1 2023 22:50:34 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

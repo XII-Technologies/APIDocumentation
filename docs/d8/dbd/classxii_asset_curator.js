@@ -1,7 +1,7 @@
 var classxii_asset_curator =
 [
     [ "xiiLockedAssetTable", "d8/dbd/classxii_asset_curator.htm#a2d70dbca757c17972add21953a821280", null ],
-    [ "xiiLockedSubAsset", "d8/dbd/classxii_asset_curator.htm#a3b538961f2263f6d98cfdb35fdf8d6f2", null ],
+    [ "xiiLockedSubAsset", "d8/dbd/classxii_asset_curator.htm#a8fe670e56225683254fc02752cb881d5", null ],
     [ "xiiLockedSubAssetTable", "d8/dbd/classxii_asset_curator.htm#a23ce7abf188d592eeefb647d29f42bc6", null ],
     [ "xiiAssetCurator", "d8/dbd/classxii_asset_curator.htm#a9425d93b8a9b961f540dbfc2e84051cb", null ],
     [ "~xiiAssetCurator", "d8/dbd/classxii_asset_curator.htm#ad54924213fddc471552b18905b63c135", null ],
@@ -14,13 +14,12 @@ var classxii_asset_curator =
     [ "FindAllUses", "d8/dbd/classxii_asset_curator.htm#a5aa4edf6a62b41c40ffdb31e522c443e", null ],
     [ "FindAssetProfileByName", "d8/dbd/classxii_asset_curator.htm#aecc0c5fd00e87a899a84db0791aadd03", null ],
     [ "FindBestMatchForFile", "d8/dbd/classxii_asset_curator.htm#aca0682be36738185d2caeb54ff11cec9", null ],
-    [ "FindDataDirectoryForAsset", "d8/dbd/classxii_asset_curator.htm#af021f68c7ecb51e6ba5256522355ba07", null ],
+    [ "FindDataDirectoryForAsset", "d8/dbd/classxii_asset_curator.htm#aeac871b5bc5d6b09528a2bec8545ae7f", null ],
     [ "FindSubAsset", "d8/dbd/classxii_asset_curator.htm#ae7f4f6b6a53974181c265801e6f86069", null ],
     [ "GenerateInverseTransitiveHull", "d8/dbd/classxii_asset_curator.htm#adcc0f37dc76c605da0a1c7aa038f5f91", null ],
     [ "GenerateTransitiveHull", "d8/dbd/classxii_asset_curator.htm#af8d172af27c47e7f09efdd2276725c3e", null ],
     [ "GetActiveAssetProfile", "d8/dbd/classxii_asset_curator.htm#a6455429669f6bda0c2aa7720b1d8bd65", null ],
     [ "GetActiveAssetProfileIndex", "d8/dbd/classxii_asset_curator.htm#a9dff152197160199a20d10d480e1b748", null ],
-    [ "GetAllAssetFolders", "d8/dbd/classxii_asset_curator.htm#ab5973e3a33b184f2f07c5f79d7fbc1cc", null ],
     [ "GetAssetDependencyHash", "d8/dbd/classxii_asset_curator.htm#a208209f54cc40727c9a388b90d286c87", null ],
     [ "GetAssetProfile", "d8/dbd/classxii_asset_curator.htm#a96b1d3ddb31d7c74dc2a90d6c90a28d7", null ],
     [ "GetAssetProfile", "d8/dbd/classxii_asset_curator.htm#af03ccda5d9168816e25cc38b52723f1c", null ],
@@ -51,8 +50,6 @@ var classxii_asset_curator =
     [ "WriteAssetTables", "d8/dbd/classxii_asset_curator.htm#adff6dba6321cca3dee01405faa4ae39a", null ],
     [ "WriteDependencyDGML", "d8/dbd/classxii_asset_curator.htm#a2da7752018934c36de06e3ed9520bd9d", null ],
     [ "xiiAssetProcessor", "d8/dbd/classxii_asset_curator.htm#a9c453fe8c4a4b97760857f5c0111542c", null ],
-    [ "xiiAssetWatcher", "d8/dbd/classxii_asset_curator.htm#a063847802b2f962d2debabbda9ff3be0", null ],
-    [ "xiiDirectoryUpdateTask", "d8/dbd/classxii_asset_curator.htm#a920d99d41583c1381f50517b8226db2f", null ],
     [ "xiiProcessTask", "d8/dbd/classxii_asset_curator.htm#a5c9100f0134d40a53aa447e3355e44ed", null ],
     [ "xiiUpdateTask", "d8/dbd/classxii_asset_curator.htm#a0be747679bcddcd831d98a58c32ed195", null ],
     [ "m_Events", "d8/dbd/classxii_asset_curator.htm#ad43d8283019b302fd1926664b97ce2a6", null ]

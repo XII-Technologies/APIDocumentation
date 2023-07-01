@@ -13,6 +13,7 @@ var structxii_object_flags =
       [ "SimulationStarted", "dd/d15/structxii_object_flags.htm#ab84c26953c65707e422df64a7fb08c30a6977afba8cc7498aaace8381921610b7", null ],
       [ "SimulationStarting", "dd/d15/structxii_object_flags.htm#ab84c26953c65707e422df64a7fb08c30aa03c54219654e753695dde13d96820e4", null ],
       [ "UnhandledMessageHandler", "dd/d15/structxii_object_flags.htm#ab84c26953c65707e422df64a7fb08c30a6d5d0a71a3070c78837adaa11a3098a3", null ],
+      [ "CreatedByPrefab", "dd/d15/structxii_object_flags.htm#ab84c26953c65707e422df64a7fb08c30acd065fa36ee7373201f20f81ef6d5277", null ],
       [ "ChildChangesNotifications", "dd/d15/structxii_object_flags.htm#ab84c26953c65707e422df64a7fb08c30a40f646ba89d0ab461da850d2c9a1b04b", null ],
       [ "ComponentChangesNotifications", "dd/d15/structxii_object_flags.htm#ab84c26953c65707e422df64a7fb08c30a71dce58bdd5c7d35bc3892b25c556adc", null ],
       [ "StaticTransformChangesNotifications", "dd/d15/structxii_object_flags.htm#ab84c26953c65707e422df64a7fb08c30a1f8e99d82417934bd121d3bd93821be6", null ],

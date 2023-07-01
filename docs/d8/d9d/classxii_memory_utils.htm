@@ -485,6 +485,11 @@ template&lt;typename T &gt; </td></tr>
 <tr class="memitem:aa46340f1eaae0121ec1bcb712ea2755f"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d8/d9d/classxii_memory_utils.htm#aa46340f1eaae0121ec1bcb712ea2755f">ZeroFill</a> (T *pDestination, size_t uiCount=1)</td></tr>
 <tr class="memdesc:aa46340f1eaae0121ec1bcb712ea2755f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Zeros every byte in the provided memory buffer. <br /></td></tr>
 <tr class="separator:aa46340f1eaae0121ec1bcb712ea2755f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab22975a84bca9a46570480a3513858bd"><td class="memTemplParams" colspan="2"><a id="ab22975a84bca9a46570480a3513858bd"></a>
+template&lt;typename T , size_t N&gt; </td></tr>
+<tr class="memitem:ab22975a84bca9a46570480a3513858bd"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d8/d9d/classxii_memory_utils.htm#ab22975a84bca9a46570480a3513858bd">ZeroFill</a> (T(&amp;destination)[N])=delete</td></tr>
+<tr class="memdesc:ab22975a84bca9a46570480a3513858bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overload to prevent confusing calling this on a single object or a static array of objects. Use <a class="el" href="../../d8/d9d/classxii_memory_utils.htm#ac489879b6d9d0d6e7846d27f694d6a09" title="Zeros every byte in the provided memory buffer.">ZeroFillArray()</a> instead. <br /></td></tr>
+<tr class="separator:ab22975a84bca9a46570480a3513858bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac489879b6d9d0d6e7846d27f694d6a09"><td class="memTemplParams" colspan="2"><a id="ac489879b6d9d0d6e7846d27f694d6a09"></a>
 template&lt;typename T , size_t N&gt; </td></tr>
 <tr class="memitem:ac489879b6d9d0d6e7846d27f694d6a09"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d8/d9d/classxii_memory_utils.htm#ac489879b6d9d0d6e7846d27f694d6a09">ZeroFillArray</a> (T(&amp;destination)[N])</td></tr>
@@ -495,6 +500,11 @@ template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a82d1689dbbce07b7432809db6f56db84"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d8/d9d/classxii_memory_utils.htm#a82d1689dbbce07b7432809db6f56db84">PatternFill</a> (T *pDestination, xiiUInt8 uiBytePattern, size_t uiCount=1)</td></tr>
 <tr class="memdesc:a82d1689dbbce07b7432809db6f56db84"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fills every byte of the provided buffer with the given value. <br /></td></tr>
 <tr class="separator:a82d1689dbbce07b7432809db6f56db84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84ef6c03f22c57b5e91bb0c56e208bb4"><td class="memTemplParams" colspan="2"><a id="a84ef6c03f22c57b5e91bb0c56e208bb4"></a>
+template&lt;typename T , size_t N&gt; </td></tr>
+<tr class="memitem:a84ef6c03f22c57b5e91bb0c56e208bb4"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d8/d9d/classxii_memory_utils.htm#a84ef6c03f22c57b5e91bb0c56e208bb4">PatternFill</a> (T(&amp;destination)[N], xiiUInt8 uiBytePattern)=delete</td></tr>
+<tr class="memdesc:a84ef6c03f22c57b5e91bb0c56e208bb4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overload to prevent confusing calling this on a single object or a static array of objects. Use <a class="el" href="../../d8/d9d/classxii_memory_utils.htm#ac0657820caa2f079d1f1595316f2f992" title="Fills every byte of the provided buffer with the given value.">PatternFillArray()</a> instead. <br /></td></tr>
+<tr class="separator:a84ef6c03f22c57b5e91bb0c56e208bb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac0657820caa2f079d1f1595316f2f992"><td class="memTemplParams" colspan="2"><a id="ac0657820caa2f079d1f1595316f2f992"></a>
 template&lt;typename T , size_t N&gt; </td></tr>
 <tr class="memitem:ac0657820caa2f079d1f1595316f2f992"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d8/d9d/classxii_memory_utils.htm#ac0657820caa2f079d1f1595316f2f992">PatternFillArray</a> (T(&amp;destination)[N], xiiUInt8 uiBytePattern)</td></tr>
@@ -809,7 +819,7 @@ template&lt;typename T &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d8/d9d/classxii_memory_utils.htm">xiiMemoryUtils</a></li>
-    <li class="footer">Generated on Fri Jun 16 2023 14:12:54 for XIIEngine by
+    <li class="footer">Generated on Sat Jul 1 2023 22:50:29 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

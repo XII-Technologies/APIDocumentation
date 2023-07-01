@@ -27,6 +27,8 @@ var classxii_document_object_manager =
     [ "InternalCanSelect", "d2/d8c/classxii_document_object_manager.htm#aee9baaac375519be5bc31fd0adbd4bf9", null ],
     [ "InternalCreateObject", "d2/d8c/classxii_document_object_manager.htm#a94c83ff8fd7188bc54a04e8ce5ac82f7", null ],
     [ "InternalDestroyObject", "d2/d8c/classxii_document_object_manager.htm#add39fa6b902234a44b70433423bcbab5", null ],
+    [ "IsTemporary", "d2/d8c/classxii_document_object_manager.htm#ac9b16027d5787af3d38e307c102b54c0", null ],
+    [ "IsTemporary", "d2/d8c/classxii_document_object_manager.htm#a3abe4eb999132654f10e365f26092684", null ],
     [ "IsUnderRootProperty", "d2/d8c/classxii_document_object_manager.htm#a941b843f8edd38f46a8fb4129af87cce", null ],
     [ "IsUnderRootProperty", "d2/d8c/classxii_document_object_manager.htm#a4763c6814a653373e1b3a2f8f24d41b0", null ],
     [ "MoveObject", "d2/d8c/classxii_document_object_manager.htm#ac54059fcf678618b91a062d2cf1c85ce", null ],

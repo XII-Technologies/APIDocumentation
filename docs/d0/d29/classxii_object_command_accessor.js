@@ -13,5 +13,6 @@ var classxii_object_command_accessor =
     [ "RemoveObject", "d0/d29/classxii_object_command_accessor.htm#a2e5bbdb8d5e59f028a75a69afecfdd2b", null ],
     [ "RemoveValue", "d0/d29/classxii_object_command_accessor.htm#a5d6014b7a50995b277447e7d7245acd1", null ],
     [ "SetValue", "d0/d29/classxii_object_command_accessor.htm#a14537be1e169c7079fa516175be9b1bf", null ],
-    [ "StartTransaction", "d0/d29/classxii_object_command_accessor.htm#abc95bada4c879477a730b7614ea362f6", null ]
+    [ "StartTransaction", "d0/d29/classxii_object_command_accessor.htm#ac7c53f7afe9a02b3ae2463bea21e872b", null ],
+    [ "m_pHistory", "d0/d29/classxii_object_command_accessor.htm#aa30bc7210d645ddd4e91dacb28e34414", null ]
 ];

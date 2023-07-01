@@ -19,6 +19,5 @@ var structxii_hybrid_string =
     [ "operator=", "df/dfb/structxii_hybrid_string.htm#ab9bae8a966287c99bbb368ac5bd37ef1", null ],
     [ "operator=", "df/dfb/structxii_hybrid_string.htm#acdaa37c02c0b001e00f2ff6a290115e9", null ],
     [ "operator=", "df/dfb/structxii_hybrid_string.htm#ae042b0c67818a26406436dbea5711167", null ],
-    [ "operator=", "df/dfb/structxii_hybrid_string.htm#ac176c19c8c69d4604f25587308038b3f", null ],
-    [ "XII_DECLARE_MEM_RELOCATABLE_TYPE", "df/dfb/structxii_hybrid_string.htm#af79ba38f0e6a3850f76a6aab55866bd3", null ]
+    [ "operator=", "df/dfb/structxii_hybrid_string.htm#ac176c19c8c69d4604f25587308038b3f", null ]
 ];

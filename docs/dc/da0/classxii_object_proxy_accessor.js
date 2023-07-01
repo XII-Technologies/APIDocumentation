@@ -19,6 +19,6 @@ var classxii_object_proxy_accessor =
     [ "RemoveObject", "dc/da0/classxii_object_proxy_accessor.htm#af51d78d8ce851f76fd55b6e0f2544a2e", null ],
     [ "RemoveValue", "dc/da0/classxii_object_proxy_accessor.htm#a58e8673222d5118890adc05218d8fbf0", null ],
     [ "SetValue", "dc/da0/classxii_object_proxy_accessor.htm#aae2b6ae8415ca16037b171a42277d07b", null ],
-    [ "StartTransaction", "dc/da0/classxii_object_proxy_accessor.htm#acaa98e87dff8a5b6c4a14dd23525722c", null ],
+    [ "StartTransaction", "dc/da0/classxii_object_proxy_accessor.htm#afb00704556b37d62e8d2a11ebb64dd0e", null ],
     [ "m_pSource", "dc/da0/classxii_object_proxy_accessor.htm#aba71f1b5d55e475c616ecb5bea1538f0", null ]
 ];

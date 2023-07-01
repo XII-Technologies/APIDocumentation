@@ -10,6 +10,5 @@ var classxii_hybrid_array =
     [ "GetStaticArray", "dc/da9/classxii_hybrid_array.htm#a22bbab6884cff29b3d2fe47af4ad9eee", null ],
     [ "operator=", "dc/da9/classxii_hybrid_array.htm#a01b80df68d2264104499af6e271d8361", null ],
     [ "operator=", "dc/da9/classxii_hybrid_array.htm#a24d3f7cce86e414d1da82bb0b4e4085b", null ],
-    [ "operator=", "dc/da9/classxii_hybrid_array.htm#a65cf753b8ea721e4a35d2f1cb334d3f2", null ],
-    [ "XII_DECLARE_MEM_RELOCATABLE_TYPE_CONDITIONAL", "dc/da9/classxii_hybrid_array.htm#a51b7e58d7aa0465f92dc82ee7daa6fb2", null ]
+    [ "operator=", "dc/da9/classxii_hybrid_array.htm#a65cf753b8ea721e4a35d2f1cb334d3f2", null ]
 ];

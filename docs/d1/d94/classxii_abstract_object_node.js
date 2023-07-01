@@ -2,7 +2,7 @@ var classxii_abstract_object_node =
 [
     [ "Property", "dc/da9/structxii_abstract_object_node_1_1_property.htm", "dc/da9/structxii_abstract_object_node_1_1_property" ],
     [ "xiiAbstractObjectNode", "d1/d94/classxii_abstract_object_node.htm#a7a892df5a6e043e7d36b7549abf99d90", null ],
-    [ "AddProperty", "d1/d94/classxii_abstract_object_node.htm#a7c1571838d0073197ce894f38401bde6", null ],
+    [ "AddProperty", "d1/d94/classxii_abstract_object_node.htm#af8994589936912ffb53a165afa72d75a", null ],
     [ "ChangeProperty", "d1/d94/classxii_abstract_object_node.htm#a5e33fd64dd4b55fe255c7245042edaf7", null ],
     [ "ClearProperties", "d1/d94/classxii_abstract_object_node.htm#ae2226a2db97cb21d2210f6596bdbe505", null ],
     [ "FindProperty", "d1/d94/classxii_abstract_object_node.htm#a215f4fe2e70d2a16f23c95ded5c3e677", null ],

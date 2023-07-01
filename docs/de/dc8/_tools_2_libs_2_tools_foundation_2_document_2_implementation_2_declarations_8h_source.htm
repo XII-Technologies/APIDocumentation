@@ -98,79 +98,86 @@ $(document).ready(function(){initNavTree('de/dc8/_tools_2_libs_2_tools_foundatio
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;{</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;  <span class="keyword">using</span> StorageType = xiiUInt8;</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;  <span class="keyword">enum</span> Enum</div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="../../df/dc8/structxii_document_flags.htm#acfa2d5b155a47d31c5d46002da3811e3">   12</a></span>&#160;  <span class="keyword">enum</span> <a class="code" href="../../df/dc8/structxii_document_flags.htm#acfa2d5b155a47d31c5d46002da3811e3">Enum</a></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;  {</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    None                 = 0,</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    RequestWindow        = XII_BIT(0),</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    AddToRecentFilesList = XII_BIT(1),</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    AsyncSave            = XII_BIT(2),</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    Default              = None,</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;  };</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
-<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="../../d3/d80/structxii_document_flags_1_1_bits.htm">   21</a></span>&#160;  <span class="keyword">struct </span><a class="code" href="../../d3/d80/structxii_document_flags_1_1_bits.htm">Bits</a></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  {</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    StorageType RequestWindow : 1;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    StorageType AddToRecentFilesList : 1;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    StorageType AsyncSave : 1;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  };</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;};</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;XII_DECLARE_FLAGS_OPERATORS(<a class="code" href="../../df/dc8/structxii_document_flags.htm">xiiDocumentFlags</a>);</div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="../../df/dc8/structxii_document_flags.htm#acfa2d5b155a47d31c5d46002da3811e3a2976efd03f5a535183d511e46e94f9b5">   15</a></span>&#160;    <a class="code" href="../../df/dc8/structxii_document_flags.htm#acfa2d5b155a47d31c5d46002da3811e3a2976efd03f5a535183d511e46e94f9b5">RequestWindow</a>        = XII_BIT(0), </div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="../../df/dc8/structxii_document_flags.htm#acfa2d5b155a47d31c5d46002da3811e3a64df94710dda3c80291735610fc16104">   16</a></span>&#160;    <a class="code" href="../../df/dc8/structxii_document_flags.htm#acfa2d5b155a47d31c5d46002da3811e3a64df94710dda3c80291735610fc16104">AddToRecentFilesList</a> = XII_BIT(1), </div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    AsyncSave            = XII_BIT(2), </div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="../../df/dc8/structxii_document_flags.htm#acfa2d5b155a47d31c5d46002da3811e3ac074f231f8d32faece6f81a029309ef1">   18</a></span>&#160;    <a class="code" href="../../df/dc8/structxii_document_flags.htm#acfa2d5b155a47d31c5d46002da3811e3ac074f231f8d32faece6f81a029309ef1">EmptyDocument</a>        = XII_BIT(3), </div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    Default = None,</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  };</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="../../d3/d80/structxii_document_flags_1_1_bits.htm">   23</a></span>&#160;  <span class="keyword">struct </span><a class="code" href="../../d3/d80/structxii_document_flags_1_1_bits.htm">Bits</a></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  {</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    StorageType RequestWindow : 1;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    StorageType AddToRecentFilesList : 1;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    StorageType AsyncSave : 1;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  };</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;};</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
-<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="../../d0/d90/structxii_document_type_descriptor.htm">   32</a></span>&#160;<span class="keyword">struct </span>XII_TOOLSFOUNDATION_DLL <a class="code" href="../../d0/d90/structxii_document_type_descriptor.htm">xiiDocumentTypeDescriptor</a></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;{</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  <a class="code" href="../../df/dfb/structxii_hybrid_string.htm">xiiString</a>           m_sFileExtension;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  <a class="code" href="../../df/dfb/structxii_hybrid_string.htm">xiiString</a>           m_sDocumentTypeName;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  <span class="keywordtype">bool</span>                m_bCanCreate = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <a class="code" href="../../df/dfb/structxii_hybrid_string.htm">xiiString</a>           m_sIcon;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <span class="keyword">const</span> <a class="code" href="../../db/d89/classxii_r_t_t_i.htm">xiiRTTI</a>*      m_pDocumentType = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <a class="code" href="../../d8/d34/classxii_document_manager.htm">xiiDocumentManager</a>* m_pManager      = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
-<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="../../d0/d90/structxii_document_type_descriptor.htm#ab51e1b352688f428ec6f6d23b692d7d5">   46</a></span>&#160;  <a class="code" href="../../dc/da9/classxii_hybrid_array.htm">xiiHybridArray&lt;xiiString, 1&gt;</a> <a class="code" href="../../d0/d90/structxii_document_type_descriptor.htm#ab51e1b352688f428ec6f6d23b692d7d5">m_CompatibleTypes</a>;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;};</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
-<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="../../d1/d29/structxii_document_event.htm">   50</a></span>&#160;<span class="keyword">struct </span><a class="code" href="../../d1/d29/structxii_document_event.htm">xiiDocumentEvent</a></div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;{</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <span class="keyword">enum class</span> Type</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  {</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    ModifiedChanged,</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    ReadOnlyChanged,</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    EnsureVisible,</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    DocumentSaved,</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    DocumentStatusMsg,</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  };</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  Type               m_Type;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  <span class="keyword">const</span> <a class="code" href="../../d8/da9/classxii_document.htm">xiiDocument</a>* m_pDocument;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">char</span>* m_szStatusMsg;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;};</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
-<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="../../d0/d18/classxii_document_info.htm">   67</a></span>&#160;<span class="keyword">class </span>XII_TOOLSFOUNDATION_DLL <a class="code" href="../../d0/d18/classxii_document_info.htm">xiiDocumentInfo</a> : <span class="keyword">public</span> <a class="code" href="../../dc/d71/classxii_reflected_class.htm">xiiReflectedClass</a></div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;{</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  XII_ADD_DYNAMIC_REFLECTION(<a class="code" href="../../d0/d18/classxii_document_info.htm">xiiDocumentInfo</a>, <a class="code" href="../../dc/d71/classxii_reflected_class.htm">xiiReflectedClass</a>);</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  <a class="code" href="../../d0/d18/classxii_document_info.htm">xiiDocumentInfo</a>();</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  <a class="code" href="../../dc/d1d/classxii_uuid.htm">xiiUuid</a> m_DocumentID;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;};</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;XII_DECLARE_FLAGS_OPERATORS(<a class="code" href="../../df/dc8/structxii_document_flags.htm">xiiDocumentFlags</a>);</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="../../d0/d90/structxii_document_type_descriptor.htm">   34</a></span>&#160;<span class="keyword">struct </span>XII_TOOLSFOUNDATION_DLL <a class="code" href="../../d0/d90/structxii_document_type_descriptor.htm">xiiDocumentTypeDescriptor</a></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;{</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  <a class="code" href="../../df/dfb/structxii_hybrid_string.htm">xiiString</a>           m_sFileExtension;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <a class="code" href="../../df/dfb/structxii_hybrid_string.htm">xiiString</a>           m_sDocumentTypeName;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <span class="keywordtype">bool</span>                m_bCanCreate = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <a class="code" href="../../df/dfb/structxii_hybrid_string.htm">xiiString</a>           m_sIcon;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <span class="keyword">const</span> <a class="code" href="../../db/d89/classxii_r_t_t_i.htm">xiiRTTI</a>*      m_pDocumentType = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <a class="code" href="../../d8/d34/classxii_document_manager.htm">xiiDocumentManager</a>* m_pManager      = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="../../d0/d90/structxii_document_type_descriptor.htm#ab51e1b352688f428ec6f6d23b692d7d5">   48</a></span>&#160;  <a class="code" href="../../dc/da9/classxii_hybrid_array.htm">xiiHybridArray&lt;xiiString, 1&gt;</a> <a class="code" href="../../d0/d90/structxii_document_type_descriptor.htm#ab51e1b352688f428ec6f6d23b692d7d5">m_CompatibleTypes</a>;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;};</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="../../d1/d29/structxii_document_event.htm">   52</a></span>&#160;<span class="keyword">struct </span><a class="code" href="../../d1/d29/structxii_document_event.htm">xiiDocumentEvent</a></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;{</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <span class="keyword">enum class</span> Type</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  {</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    ModifiedChanged,</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    ReadOnlyChanged,</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    EnsureVisible,</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    DocumentSaved,</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    DocumentStatusMsg,</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  };</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  Type               m_Type;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  <span class="keyword">const</span> <a class="code" href="../../d8/da9/classxii_document.htm">xiiDocument</a>* m_pDocument;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <a class="code" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> m_sStatusMsg;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;};</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
+<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="../../d0/d18/classxii_document_info.htm">   69</a></span>&#160;<span class="keyword">class </span>XII_TOOLSFOUNDATION_DLL <a class="code" href="../../d0/d18/classxii_document_info.htm">xiiDocumentInfo</a> : <span class="keyword">public</span> <a class="code" href="../../dc/d71/classxii_reflected_class.htm">xiiReflectedClass</a></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;{</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  XII_ADD_DYNAMIC_REFLECTION(<a class="code" href="../../d0/d18/classxii_document_info.htm">xiiDocumentInfo</a>, <a class="code" href="../../dc/d71/classxii_reflected_class.htm">xiiReflectedClass</a>);</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  <a class="code" href="../../d0/d18/classxii_document_info.htm">xiiDocumentInfo</a>();</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  <a class="code" href="../../dc/d1d/classxii_uuid.htm">xiiUuid</a> m_DocumentID;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;};</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="astructxii_document_event_htm"><div class="ttname"><a href="../../d1/d29/structxii_document_event.htm">xiiDocumentEvent</a></div><div class="ttdef"><b>Definition:</b> Declarations.h:50</div></div>
-<div class="ttc" id="aclassxii_document_manager_htm"><div class="ttname"><a href="../../d8/d34/classxii_document_manager.htm">xiiDocumentManager</a></div><div class="ttdef"><b>Definition:</b> DocumentManager.h:7</div></div>
+<div class="ttc" id="astructxii_document_flags_htm_acfa2d5b155a47d31c5d46002da3811e3a2976efd03f5a535183d511e46e94f9b5"><div class="ttname"><a href="../../df/dc8/structxii_document_flags.htm#acfa2d5b155a47d31c5d46002da3811e3a2976efd03f5a535183d511e46e94f9b5">xiiDocumentFlags::RequestWindow</a></div><div class="ttdeci">@ RequestWindow</div><div class="ttdoc">Open the document visibly (not only internally)</div><div class="ttdef"><b>Definition:</b> Declarations.h:15</div></div>
+<div class="ttc" id="astructxii_document_event_htm"><div class="ttname"><a href="../../d1/d29/structxii_document_event.htm">xiiDocumentEvent</a></div><div class="ttdef"><b>Definition:</b> Declarations.h:52</div></div>
+<div class="ttc" id="astructxii_document_flags_htm_acfa2d5b155a47d31c5d46002da3811e3"><div class="ttname"><a href="../../df/dc8/structxii_document_flags.htm#acfa2d5b155a47d31c5d46002da3811e3">xiiDocumentFlags::Enum</a></div><div class="ttdeci">Enum</div><div class="ttdef"><b>Definition:</b> Declarations.h:12</div></div>
+<div class="ttc" id="astructxii_document_flags_htm_acfa2d5b155a47d31c5d46002da3811e3ac074f231f8d32faece6f81a029309ef1"><div class="ttname"><a href="../../df/dc8/structxii_document_flags.htm#acfa2d5b155a47d31c5d46002da3811e3ac074f231f8d32faece6f81a029309ef1">xiiDocumentFlags::EmptyDocument</a></div><div class="ttdeci">@ EmptyDocument</div><div class="ttdoc">Do not populate the new document with default state (Eg. templates, etcetera).</div><div class="ttdef"><b>Definition:</b> Declarations.h:18</div></div>
+<div class="ttc" id="aclassxii_document_manager_htm"><div class="ttname"><a href="../../d8/d34/classxii_document_manager.htm">xiiDocumentManager</a></div><div class="ttdef"><b>Definition:</b> DocumentManager.h:8</div></div>
 <div class="ttc" id="aclassxii_reflected_class_htm"><div class="ttname"><a href="../../dc/d71/classxii_reflected_class.htm">xiiReflectedClass</a></div><div class="ttdoc">All classes that should be dynamically reflectable, need to be derived from this base class.</div><div class="ttdef"><b>Definition:</b> DynamicRTTI.h:76</div></div>
-<div class="ttc" id="astructxii_hybrid_string_htm"><div class="ttname"><a href="../../df/dfb/structxii_hybrid_string.htm">xiiHybridString&lt; 32, xiiDefaultAllocatorWrapper &gt;</a></div></div>
+<div class="ttc" id="astructxii_hybrid_string_htm"><div class="ttname"><a href="../../df/dfb/structxii_hybrid_string.htm">xiiHybridString</a></div><div class="ttdef"><b>Definition:</b> Stream.h:16</div></div>
 <div class="ttc" id="aclassxii_hybrid_array_htm"><div class="ttname"><a href="../../dc/da9/classxii_hybrid_array.htm">xiiHybridArray</a></div><div class="ttdoc">A hybrid array uses in-place storage to handle the first few elements without any allocation....</div><div class="ttdef"><b>Definition:</b> HybridArray.h:11</div></div>
-<div class="ttc" id="aclassxii_document_info_htm"><div class="ttname"><a href="../../d0/d18/classxii_document_info.htm">xiiDocumentInfo</a></div><div class="ttdef"><b>Definition:</b> Declarations.h:67</div></div>
+<div class="ttc" id="aclassxii_document_info_htm"><div class="ttname"><a href="../../d0/d18/classxii_document_info.htm">xiiDocumentInfo</a></div><div class="ttdef"><b>Definition:</b> Declarations.h:69</div></div>
 <div class="ttc" id="aclassxii_r_t_t_i_htm"><div class="ttname"><a href="../../db/d89/classxii_r_t_t_i.htm">xiiRTTI</a></div><div class="ttdoc">This enumerable class holds information about reflected types. Each instance represents one type that...</div><div class="ttdef"><b>Definition:</b> RTTI.h:31</div></div>
+<div class="ttc" id="astructxii_string_view_htm"><div class="ttname"><a href="../../da/d9d/structxii_string_view.htm">xiiStringView</a></div><div class="ttdoc">xiiStringView represent a read-only sub-string of a larger string, as it can store a dedicated string...</div><div class="ttdef"><b>Definition:</b> StringView.h:23</div></div>
 <div class="ttc" id="aclassxii_document_object_manager_htm"><div class="ttname"><a href="../../d2/d8c/classxii_document_object_manager.htm">xiiDocumentObjectManager</a></div><div class="ttdoc">Represents to content of a document. Every document has exactly one root object under which all objec...</div><div class="ttdef"><b>Definition:</b> DocumentObjectManager.h:112</div></div>
 <div class="ttc" id="aclassxii_abstract_object_graph_htm"><div class="ttname"><a href="../../d9/d21/classxii_abstract_object_graph.htm">xiiAbstractObjectGraph</a></div><div class="ttdef"><b>Definition:</b> AbstractObjectGraph.h:114</div></div>
-<div class="ttc" id="astructxii_document_type_descriptor_htm_ab51e1b352688f428ec6f6d23b692d7d5"><div class="ttname"><a href="../../d0/d90/structxii_document_type_descriptor.htm#ab51e1b352688f428ec6f6d23b692d7d5">xiiDocumentTypeDescriptor::m_CompatibleTypes</a></div><div class="ttdeci">xiiHybridArray&lt; xiiString, 1 &gt; m_CompatibleTypes</div><div class="ttdef"><b>Definition:</b> Declarations.h:46</div></div>
-<div class="ttc" id="astructxii_document_flags_1_1_bits_htm"><div class="ttname"><a href="../../d3/d80/structxii_document_flags_1_1_bits.htm">xiiDocumentFlags::Bits</a></div><div class="ttdef"><b>Definition:</b> Declarations.h:21</div></div>
-<div class="ttc" id="astructxii_document_type_descriptor_htm"><div class="ttname"><a href="../../d0/d90/structxii_document_type_descriptor.htm">xiiDocumentTypeDescriptor</a></div><div class="ttdef"><b>Definition:</b> Declarations.h:32</div></div>
+<div class="ttc" id="astructxii_document_type_descriptor_htm_ab51e1b352688f428ec6f6d23b692d7d5"><div class="ttname"><a href="../../d0/d90/structxii_document_type_descriptor.htm#ab51e1b352688f428ec6f6d23b692d7d5">xiiDocumentTypeDescriptor::m_CompatibleTypes</a></div><div class="ttdeci">xiiHybridArray&lt; xiiString, 1 &gt; m_CompatibleTypes</div><div class="ttdef"><b>Definition:</b> Declarations.h:48</div></div>
+<div class="ttc" id="astructxii_document_flags_1_1_bits_htm"><div class="ttname"><a href="../../d3/d80/structxii_document_flags_1_1_bits.htm">xiiDocumentFlags::Bits</a></div><div class="ttdef"><b>Definition:</b> Declarations.h:23</div></div>
+<div class="ttc" id="astructxii_document_type_descriptor_htm"><div class="ttname"><a href="../../d0/d90/structxii_document_type_descriptor.htm">xiiDocumentTypeDescriptor</a></div><div class="ttdef"><b>Definition:</b> Declarations.h:34</div></div>
+<div class="ttc" id="astructxii_document_flags_htm_acfa2d5b155a47d31c5d46002da3811e3a64df94710dda3c80291735610fc16104"><div class="ttname"><a href="../../df/dc8/structxii_document_flags.htm#acfa2d5b155a47d31c5d46002da3811e3a64df94710dda3c80291735610fc16104">xiiDocumentFlags::AddToRecentFilesList</a></div><div class="ttdeci">@ AddToRecentFilesList</div><div class="ttdoc">Add the document path to the recently used list for users.</div><div class="ttdef"><b>Definition:</b> Declarations.h:16</div></div>
 <div class="ttc" id="astructxii_document_flags_htm"><div class="ttname"><a href="../../df/dc8/structxii_document_flags.htm">xiiDocumentFlags</a></div><div class="ttdef"><b>Definition:</b> Declarations.h:8</div></div>
 <div class="ttc" id="aclassxii_document_htm"><div class="ttname"><a href="../../d8/da9/classxii_document.htm">xiiDocument</a></div><div class="ttdef"><b>Definition:</b> Document.h:56</div></div>
 <div class="ttc" id="aclassxii_uuid_htm"><div class="ttname"><a href="../../dc/d1d/classxii_uuid.htm">xiiUuid</a></div><div class="ttdoc">This data type is the abstraction for 128-bit Uuid (also known as GUID) instances.</div><div class="ttdef"><b>Definition:</b> Uuid.h:10</div></div>
@@ -178,7 +185,7 @@ $(document).ready(function(){initNavTree('de/dc8/_tools_2_libs_2_tools_foundatio
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.htm">home</a></li><li class="navelem"><a class="el" href="../../dir_1036706e55c22cab35bc1c58ee689f1d.htm">runner</a></li><li class="navelem"><a class="el" href="../../dir_629f8151d55d307162ff2d619fb1783d.htm">work</a></li><li class="navelem"><a class="el" href="../../dir_1ddc44fe1263a8c7935fa6130b7d9499.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_2c1b6808f12952f4c36e05ba7068379a.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_b5a1c4ecfca018ad24b729e213296d41.htm">Source</a></li><li class="navelem"><a class="el" href="../../dir_64f53f8da7bf780a58c32bb848e7873b.htm">Tools</a></li><li class="navelem"><a class="el" href="../../dir_4b5bc41f7c4cbfc8ca80bdea56300f1d.htm">Libs</a></li><li class="navelem"><a class="el" href="../../dir_ba58a103e79106e89914cc52b64849d5.htm">ToolsFoundation</a></li><li class="navelem"><a class="el" href="../../dir_891bf0811cf34e40d7bbe2b1179a6db6.htm">Document</a></li><li class="navelem"><a class="el" href="../../dir_1c3cda3dacd863646805f985674e2546.htm">Implementation</a></li><li class="navelem"><b>Declarations.h</b></li>
-    <li class="footer">Generated on Fri Jun 16 2023 14:12:37 for XIIEngine by
+    <li class="footer">Generated on Sat Jul 1 2023 22:50:09 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

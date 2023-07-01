@@ -136,7 +136,8 @@ Inheritance diagram for xiiQtPropertyWidget:</div>
 <area shape="rect" href="../../d3/d59/classxii_qt_property_editor_time_widget.htm" title="*** TIME SPINBOX ***" alt="" coords="608,1062,833,1089"/>
 <area shape="rect" href="../../d5/dd4/classxii_qt_variance_type_widget.htm" title=" " alt="" coords="628,1113,813,1139"/>
 <area shape="rect" href="../../df/d7e/classxii_qt_variant_property_widget.htm" title=" " alt="" coords="621,1163,821,1190"/>
-<area shape="rect" href="../../d8/dd3/classxii_qt_exposed_parameter_property_widget.htm" title=" " alt="" coords="893,1156,1123,1197"/>
+<area shape="rect" href="../../d8/dd3/classxii_qt_exposed_parameter_property_widget.htm" title=" " alt="" coords="893,1123,1123,1164"/>
+<area shape="rect" href="../../de/d6a/classxii_qt_visual_script_variable_widget.htm" title=" " alt="" coords="917,1188,1099,1229"/>
 </map>
 <center><span class="legend">[<a target="top" href="../../graph_legend.htm">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -166,12 +167,12 @@ const <a class="el" href="../../dc/da9/classxii_hybrid_array.htm">xiiHybridArray
 <tr class="separator:ab10fa3493094d5dddf9405fbdd07ab98"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa2415941f6d606187ce9d284c99a9050"><td class="memItemLeft" align="right" valign="top"><a id="aa2415941f6d606187ce9d284c99a9050"></a>
 virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d80/classxii_qt_property_widget.htm#aa2415941f6d606187ce9d284c99a9050">HasLabel</a> () const</td></tr>
-<tr class="memdesc:aa2415941f6d606187ce9d284c99a9050"><td class="mdescLeft">&#160;</td><td class="mdescRight">If this returns true (default), a QLabel is created and the text that <a class="el" href="../../d9/d80/classxii_qt_property_widget.htm#abb05c686b3f0986332a9dc595e6c4e09" title="The return value is used to display a label, if HasLabel() returns true.">GetLabel()</a> returns is displayed. <br /></td></tr>
+<tr class="memdesc:aa2415941f6d606187ce9d284c99a9050"><td class="mdescLeft">&#160;</td><td class="mdescRight">If this returns true (default), a QLabel is created and the text that <a class="el" href="../../d9/d80/classxii_qt_property_widget.htm#a849bfed8c0e8a92770ffae63ccd22fcf" title="The return value is used to display a label, if HasLabel() returns true.">GetLabel()</a> returns is displayed. <br /></td></tr>
 <tr class="separator:aa2415941f6d606187ce9d284c99a9050"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abb05c686b3f0986332a9dc595e6c4e09"><td class="memItemLeft" align="right" valign="top"><a id="abb05c686b3f0986332a9dc595e6c4e09"></a>
-virtual const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d80/classxii_qt_property_widget.htm#abb05c686b3f0986332a9dc595e6c4e09">GetLabel</a> (<a class="el" href="../../d4/dbb/classxii_string_builder.htm">xiiStringBuilder</a> &amp;ref_sTemp) const</td></tr>
-<tr class="memdesc:abb05c686b3f0986332a9dc595e6c4e09"><td class="mdescLeft">&#160;</td><td class="mdescRight">The return value is used to display a label, if <a class="el" href="../../d9/d80/classxii_qt_property_widget.htm#aa2415941f6d606187ce9d284c99a9050" title="If this returns true (default), a QLabel is created and the text that GetLabel() returns is displayed...">HasLabel()</a> returns true. <br /></td></tr>
-<tr class="separator:abb05c686b3f0986332a9dc595e6c4e09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a849bfed8c0e8a92770ffae63ccd22fcf"><td class="memItemLeft" align="right" valign="top"><a id="a849bfed8c0e8a92770ffae63ccd22fcf"></a>
+virtual const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d80/classxii_qt_property_widget.htm#a849bfed8c0e8a92770ffae63ccd22fcf">GetLabel</a> (<a class="el" href="../../d4/dbb/classxii_string_builder.htm">xiiStringBuilder</a> &amp;ref_sTmp) const</td></tr>
+<tr class="memdesc:a849bfed8c0e8a92770ffae63ccd22fcf"><td class="mdescLeft">&#160;</td><td class="mdescRight">The return value is used to display a label, if <a class="el" href="../../d9/d80/classxii_qt_property_widget.htm#aa2415941f6d606187ce9d284c99a9050" title="If this returns true (default), a QLabel is created and the text that GetLabel() returns is displayed...">HasLabel()</a> returns true. <br /></td></tr>
+<tr class="separator:a849bfed8c0e8a92770ffae63ccd22fcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afd8569e5f4aa0c553823b9d5d65a20b2"><td class="memItemLeft" align="right" valign="top"><a id="afd8569e5f4aa0c553823b9d5d65a20b2"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>ExtendContextMenu</b> (QMenu &amp;ref_menu)</td></tr>
 <tr class="separator:afd8569e5f4aa0c553823b9d5d65a20b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -272,7 +273,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../.
 <p>This is called whenever the selection in the editor changes and thus the widget may need to display a different value. </p>
 <p>If the array holds more than one element, the user selected multiple objects. In this case, the code should check whether the values differ across the selected objects and if so, the widget should display "multiple values". </p>
 
-<p>Reimplemented in <a class="el" href="../../df/d7e/classxii_qt_variant_property_widget.htm#a6154160fe7405c9b59f5d0098c2c17fc">xiiQtVariantPropertyWidget</a>, <a class="el" href="../../dc/d27/classxii_qt_property_editor_curve1_d_widget.htm#a34a90ba07941b5337b591b525cf2d7d5">xiiQtPropertyEditorCurve1DWidget</a>, <a class="el" href="../../dd/d44/classxii_qt_property_container_widget.htm#a839b45937db97da2b8e4511311f55891">xiiQtPropertyContainerWidget</a>, <a class="el" href="../../d4/dc5/classxii_qt_property_pointer_widget.htm#a51b18da3254322abe9f062688a84ccc5">xiiQtPropertyPointerWidget</a>, <a class="el" href="../../d3/d12/classxii_qt_property_type_widget.htm#a244928de8bfc62c0330d6b1278990a96">xiiQtPropertyTypeWidget</a>, <a class="el" href="../../d7/d85/classxii_qt_embedded_class_property_widget.htm#a892a3e3a0b8fde73dd6d5a82735fe001">xiiQtEmbeddedClassPropertyWidget</a>, <a class="el" href="../../d5/db2/classxii_qt_standard_property_widget.htm#a56f2beba33131fb7ca12450a797de63b">xiiQtStandardPropertyWidget</a>, <a class="el" href="../../d9/d92/classxii_qt_exposed_parameters_property_widget.htm#a5ea2c061785202eab06abf4b120378d1">xiiQtExposedParametersPropertyWidget</a>, <a class="el" href="../../d8/dc8/classxii_qt_property_editor_tag_set_widget.htm#a9276d9246318bb950484caacf96c08db">xiiQtPropertyEditorTagSetWidget</a>, <a class="el" href="../../d7/d0c/classxii_qt_exposed_bone_widget.htm#af89469476b680463495006cf0b953340">xiiQtExposedBoneWidget</a>, and <a class="el" href="../../d5/dd4/classxii_qt_variance_type_widget.htm#a657c8b5b5fed0db5cdd92263c82b5ab3">xiiQtVarianceTypeWidget</a>.</p>
+<p>Reimplemented in <a class="el" href="../../dc/d27/classxii_qt_property_editor_curve1_d_widget.htm#a34a90ba07941b5337b591b525cf2d7d5">xiiQtPropertyEditorCurve1DWidget</a>, <a class="el" href="../../dd/d44/classxii_qt_property_container_widget.htm#a839b45937db97da2b8e4511311f55891">xiiQtPropertyContainerWidget</a>, <a class="el" href="../../d4/dc5/classxii_qt_property_pointer_widget.htm#a51b18da3254322abe9f062688a84ccc5">xiiQtPropertyPointerWidget</a>, <a class="el" href="../../d3/d12/classxii_qt_property_type_widget.htm#a244928de8bfc62c0330d6b1278990a96">xiiQtPropertyTypeWidget</a>, <a class="el" href="../../d7/d85/classxii_qt_embedded_class_property_widget.htm#a892a3e3a0b8fde73dd6d5a82735fe001">xiiQtEmbeddedClassPropertyWidget</a>, <a class="el" href="../../d5/db2/classxii_qt_standard_property_widget.htm#a56f2beba33131fb7ca12450a797de63b">xiiQtStandardPropertyWidget</a>, <a class="el" href="../../d9/d92/classxii_qt_exposed_parameters_property_widget.htm#a5ea2c061785202eab06abf4b120378d1">xiiQtExposedParametersPropertyWidget</a>, <a class="el" href="../../d8/dc8/classxii_qt_property_editor_tag_set_widget.htm#a9276d9246318bb950484caacf96c08db">xiiQtPropertyEditorTagSetWidget</a>, <a class="el" href="../../d7/d0c/classxii_qt_exposed_bone_widget.htm#af89469476b680463495006cf0b953340">xiiQtExposedBoneWidget</a>, and <a class="el" href="../../d5/dd4/classxii_qt_variance_type_widget.htm#a657c8b5b5fed0db5cdd92263c82b5ab3">xiiQtVarianceTypeWidget</a>.</p>
 
 </div>
 </div>
@@ -286,7 +287,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../.
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d9/d80/classxii_qt_property_widget.htm">xiiQtPropertyWidget</a></li>
-    <li class="footer">Generated on Fri Jun 16 2023 14:12:56 for XIIEngine by
+    <li class="footer">Generated on Sat Jul 1 2023 22:50:32 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

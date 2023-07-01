@@ -2,6 +2,7 @@ var classxii_abstract_message_handler =
 [
     [ "ConstDispatchFunc", "d8/d84/classxii_abstract_message_handler.htm#a26bc62e7ee635aae993c52f8b256ad52", null ],
     [ "DispatchFunc", "d8/d84/classxii_abstract_message_handler.htm#ad870523d3963ecc404e565b221c57463", null ],
+    [ "~xiiAbstractMessageHandler", "d8/d84/classxii_abstract_message_handler.htm#a900623ae119c37c2051919bf280412bd", null ],
     [ "GetMessageId", "d8/d84/classxii_abstract_message_handler.htm#adc83697148023faaa9d45b7e1daa4356", null ],
     [ "IsConst", "d8/d84/classxii_abstract_message_handler.htm#a353c35759197ca5ab73167bca16fa824", null ],
     [ "operator()", "d8/d84/classxii_abstract_message_handler.htm#af496a9bf8c07aeeb4e94f0fe28d3d221", null ],

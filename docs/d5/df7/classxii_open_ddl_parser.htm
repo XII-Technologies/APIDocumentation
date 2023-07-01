@@ -113,14 +113,14 @@ Inheritance diagram for xiiOpenDdlParser:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ad52bf2e9c30b24e2ce7a5abbc3a4542b"><td class="memItemLeft" align="right" valign="top"><a id="ad52bf2e9c30b24e2ce7a5abbc3a4542b"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/df7/classxii_open_ddl_parser.htm#ad52bf2e9c30b24e2ce7a5abbc3a4542b">HadFatalParsingError</a> () const</td></tr>
-<tr class="memdesc:ad52bf2e9c30b24e2ce7a5abbc3a4542b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether an error occured during parsing that resulted in cancelation of further parsing. <br /></td></tr>
+<tr class="memdesc:ad52bf2e9c30b24e2ce7a5abbc3a4542b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether an error occurred during parsing that resulted in cancellation of further parsing. <br /></td></tr>
 <tr class="separator:ad52bf2e9c30b24e2ce7a5abbc3a4542b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
 <tr class="memitem:a7ff95cf607474448be3b6e790cd470e5"><td class="memItemLeft" align="right" valign="top"><a id="a7ff95cf607474448be3b6e790cd470e5"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/df7/classxii_open_ddl_parser.htm#a7ff95cf607474448be3b6e790cd470e5">SetLogInterface</a> (<a class="el" href="../../d6/d6b/classxii_log_interface.htm">xiiLogInterface</a> *pLog)</td></tr>
-<tr class="memdesc:a7ff95cf607474448be3b6e790cd470e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets an <a class="el" href="../../d6/d6b/classxii_log_interface.htm" title="Base class for all logging classes.">xiiLogInterface</a> through which errors and warnings are reported. <br /></td></tr>
+<tr class="memdesc:a7ff95cf607474448be3b6e790cd470e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets a <a class="el" href="../../d6/d6b/classxii_log_interface.htm" title="Base class for all logging classes.">xiiLogInterface</a> through which errors and warnings are reported. <br /></td></tr>
 <tr class="separator:a7ff95cf607474448be3b6e790cd470e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac27c85456445fb68e364ffe652f87dec"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/df7/classxii_open_ddl_parser.htm#ac27c85456445fb68e364ffe652f87dec">SetCacheSize</a> (xiiUInt32 uiSizeInKB)</td></tr>
 <tr class="memdesc:ac27c85456445fb68e364ffe652f87dec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Data is returned in larger chunks, to reduce the number of function calls. The cache size determines the maximum chunk size per primitive type.  <a href="../../d5/df7/classxii_open_ddl_parser.htm#ac27c85456445fb68e364ffe652f87dec">More...</a><br /></td></tr>
@@ -144,25 +144,25 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../.
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/df7/classxii_open_ddl_parser.htm#a0ae33ad2c26af59ee5e54b8c2ecc717b">StopParsing</a> ()</td></tr>
 <tr class="memdesc:a0ae33ad2c26af59ee5e54b8c2ecc717b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Can be used to prevent parsing the rest of the document. <br /></td></tr>
 <tr class="separator:a0ae33ad2c26af59ee5e54b8c2ecc717b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5de30d9a0d264ba5eef21ea4bca21654"><td class="memItemLeft" align="right" valign="top"><a id="a5de30d9a0d264ba5eef21ea4bca21654"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/df7/classxii_open_ddl_parser.htm#a5de30d9a0d264ba5eef21ea4bca21654">ParsingError</a> (const char *szMessage, bool bFatal)</td></tr>
-<tr class="memdesc:a5de30d9a0d264ba5eef21ea4bca21654"><td class="mdescLeft">&#160;</td><td class="mdescRight">Outputs that a parsing error was detected (via OnParsingError) and stops further parsing, if bFatal is set to true. <br /></td></tr>
-<tr class="separator:a5de30d9a0d264ba5eef21ea4bca21654"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a96237a4e764d61f7c9f4d141b939102f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/df7/classxii_open_ddl_parser.htm#a96237a4e764d61f7c9f4d141b939102f">OnParsingError</a> (const char *szMessage, bool bFatal, xiiUInt32 uiLine, xiiUInt32 uiColumn)</td></tr>
-<tr class="memdesc:a96237a4e764d61f7c9f4d141b939102f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when something unexpected is encountered in the document.  <a href="../../d5/df7/classxii_open_ddl_parser.htm#a96237a4e764d61f7c9f4d141b939102f">More...</a><br /></td></tr>
-<tr class="separator:a96237a4e764d61f7c9f4d141b939102f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaabb29d0bf973ba316a68ca3ebfca8de"><td class="memItemLeft" align="right" valign="top"><a id="aaabb29d0bf973ba316a68ca3ebfca8de"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/df7/classxii_open_ddl_parser.htm#aaabb29d0bf973ba316a68ca3ebfca8de">OnBeginObject</a> (const char *szType, const char *szName, bool bGlobalName)=0</td></tr>
-<tr class="memdesc:aaabb29d0bf973ba316a68ca3ebfca8de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when a new object is encountered. <br /></td></tr>
-<tr class="separator:aaabb29d0bf973ba316a68ca3ebfca8de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aded9fcb02afd1f84a2900522cf5a2470"><td class="memItemLeft" align="right" valign="top"><a id="aded9fcb02afd1f84a2900522cf5a2470"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/df7/classxii_open_ddl_parser.htm#aded9fcb02afd1f84a2900522cf5a2470">ParsingError</a> (<a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sMessage, bool bFatal)</td></tr>
+<tr class="memdesc:aded9fcb02afd1f84a2900522cf5a2470"><td class="mdescLeft">&#160;</td><td class="mdescRight">Outputs that a parsing error was detected (via OnParsingError) and stops further parsing, if bFatal is set to true. <br /></td></tr>
+<tr class="separator:aded9fcb02afd1f84a2900522cf5a2470"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5998c5b4817a163f94fa12721a71bf1b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/df7/classxii_open_ddl_parser.htm#a5998c5b4817a163f94fa12721a71bf1b">OnParsingError</a> (<a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sMessage, bool bFatal, xiiUInt32 uiLine, xiiUInt32 uiColumn)</td></tr>
+<tr class="memdesc:a5998c5b4817a163f94fa12721a71bf1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when something unexpected is encountered in the document.  <a href="../../d5/df7/classxii_open_ddl_parser.htm#a5998c5b4817a163f94fa12721a71bf1b">More...</a><br /></td></tr>
+<tr class="separator:a5998c5b4817a163f94fa12721a71bf1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a844a6db7d21225ad4fd11540473932c8"><td class="memItemLeft" align="right" valign="top"><a id="a844a6db7d21225ad4fd11540473932c8"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/df7/classxii_open_ddl_parser.htm#a844a6db7d21225ad4fd11540473932c8">OnBeginObject</a> (<a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sType, <a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sName, bool bGlobalName)=0</td></tr>
+<tr class="memdesc:a844a6db7d21225ad4fd11540473932c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when a new object is encountered. <br /></td></tr>
+<tr class="separator:a844a6db7d21225ad4fd11540473932c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a109c730d22325d19eab5c6f10786f48c"><td class="memItemLeft" align="right" valign="top"><a id="a109c730d22325d19eab5c6f10786f48c"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/df7/classxii_open_ddl_parser.htm#a109c730d22325d19eab5c6f10786f48c">OnEndObject</a> ()=0</td></tr>
 <tr class="memdesc:a109c730d22325d19eab5c6f10786f48c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when the end of an object is encountered. <br /></td></tr>
 <tr class="separator:a109c730d22325d19eab5c6f10786f48c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae3f2eda16b1cbc756f9ccb8868eb78e1"><td class="memItemLeft" align="right" valign="top"><a id="ae3f2eda16b1cbc756f9ccb8868eb78e1"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/df7/classxii_open_ddl_parser.htm#ae3f2eda16b1cbc756f9ccb8868eb78e1">OnBeginPrimitiveList</a> (xiiOpenDdlPrimitiveType type, const char *szName, bool bGlobalName)=0</td></tr>
-<tr class="memdesc:ae3f2eda16b1cbc756f9ccb8868eb78e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when a new primitive object is encountered. <br /></td></tr>
-<tr class="separator:ae3f2eda16b1cbc756f9ccb8868eb78e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44e7ba0d753af2bf537eef12ae0f927b"><td class="memItemLeft" align="right" valign="top"><a id="a44e7ba0d753af2bf537eef12ae0f927b"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/df7/classxii_open_ddl_parser.htm#a44e7ba0d753af2bf537eef12ae0f927b">OnBeginPrimitiveList</a> (xiiOpenDdlPrimitiveType type, <a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sName, bool bGlobalName)=0</td></tr>
+<tr class="memdesc:a44e7ba0d753af2bf537eef12ae0f927b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when a new primitive object is encountered. <br /></td></tr>
+<tr class="separator:a44e7ba0d753af2bf537eef12ae0f927b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3d2873e85662beb97bfc6c0754ff6d8a"><td class="memItemLeft" align="right" valign="top"><a id="a3d2873e85662beb97bfc6c0754ff6d8a"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/df7/classxii_open_ddl_parser.htm#a3d2873e85662beb97bfc6c0754ff6d8a">OnEndPrimitiveList</a> ()=0</td></tr>
 <tr class="memdesc:a3d2873e85662beb97bfc6c0754ff6d8a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when the end of a primitive object is encountered. <br /></td></tr>
@@ -218,7 +218,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
 <tr class="memitem:a8c69d7d1b83fbc906915684cd8a31200"><td class="memItemLeft" align="right" valign="top"><a id="a8c69d7d1b83fbc906915684cd8a31200"></a>
-<a class="el" href="../../d6/d6b/classxii_log_interface.htm">xiiLogInterface</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_pLogInterface</b></td></tr>
+<a class="el" href="../../d6/d6b/classxii_log_interface.htm">xiiLogInterface</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_pLogInterface</b> = nullptr</td></tr>
 <tr class="separator:a8c69d7d1b83fbc906915684cd8a31200"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -253,8 +253,8 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a96237a4e764d61f7c9f4d141b939102f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a96237a4e764d61f7c9f4d141b939102f">&#9670;&nbsp;</a></span>OnParsingError()</h2>
+<a id="a5998c5b4817a163f94fa12721a71bf1b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5998c5b4817a163f94fa12721a71bf1b">&#9670;&nbsp;</a></span>OnParsingError()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -265,8 +265,8 @@ Protected Attributes</h2></td></tr>
         <tr>
           <td class="memname">virtual void xiiOpenDdlParser::OnParsingError </td>
           <td>(</td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>szMessage</em>, </td>
+          <td class="paramtype"><a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a>&#160;</td>
+          <td class="paramname"><em>sMessage</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -302,7 +302,7 @@ Protected Attributes</h2></td></tr>
 <p>Called when something unexpected is encountered in the document. </p>
 <p>The error message describes what was expected and what was encountered. If bFatal is true, the error has left the parser in an unrecoverable state and thus it will not continue parsing. In that case client code will need to clean up it's open state, as no further callbacks will be called. If bFatal is false, the document is not entirely valid, but the parser is still able to continue. </p>
 
-<p>Reimplemented in <a class="el" href="../../d6/dbd/classxii_open_ddl_reader.htm#add54f2703b7fa84975b2add19a6b729b">xiiOpenDdlReader</a>.</p>
+<p>Reimplemented in <a class="el" href="../../d6/dbd/classxii_open_ddl_reader.htm#a7bde3f57d38e94c869df2a0fdf15b699">xiiOpenDdlReader</a>.</p>
 
 </div>
 </div>
@@ -392,7 +392,7 @@ Protected Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d5/df7/classxii_open_ddl_parser.htm">xiiOpenDdlParser</a></li>
-    <li class="footer">Generated on Fri Jun 16 2023 14:12:54 for XIIEngine by
+    <li class="footer">Generated on Sat Jul 1 2023 22:50:30 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

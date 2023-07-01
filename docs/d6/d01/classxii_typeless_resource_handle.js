@@ -7,6 +7,7 @@ var classxii_typeless_resource_handle =
     [ "~xiiTypelessResourceHandle", "d6/d01/classxii_typeless_resource_handle.htm#aae55764f9f9d6af91456112c442947c1", null ],
     [ "GetResourceID", "d6/d01/classxii_typeless_resource_handle.htm#a0c9e4a2eed6e993c0eaaeeed97696b02", null ],
     [ "GetResourceIDHash", "d6/d01/classxii_typeless_resource_handle.htm#a70ad395f31de25e2617d6c5f38b4986a", null ],
+    [ "GetResourceType", "d6/d01/classxii_typeless_resource_handle.htm#aa23e601bd786b400dd8f5a976d3f4f6e", null ],
     [ "Invalidate", "d6/d01/classxii_typeless_resource_handle.htm#a1a96edd04b446db8276900cc2017e032", null ],
     [ "IsValid", "d6/d01/classxii_typeless_resource_handle.htm#a920e9b261b31f39d632062d958b2068c", null ],
     [ "operator!=", "d6/d01/classxii_typeless_resource_handle.htm#a94b5bd0dcdb940c134d2e6abc8989ebe", null ],

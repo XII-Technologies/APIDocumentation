@@ -151,6 +151,14 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../.
 <tr class="memitem:aa4fe3a84f1be8921eb61bd9e27dae2e6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d91/classxii_game_object.htm#aa4fe3a84f1be8921eb61bd9e27dae2e6">IsActive</a> () const</td></tr>
 <tr class="memdesc:aa4fe3a84f1be8921eb61bd9e27dae2e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether this game object is in an active state.  <a href="../../d0/d91/classxii_game_object.htm#aa4fe3a84f1be8921eb61bd9e27dae2e6">More...</a><br /></td></tr>
 <tr class="separator:aa4fe3a84f1be8921eb61bd9e27dae2e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8313f51b477abcef6d60750110c6b394"><td class="memItemLeft" align="right" valign="top"><a id="a8313f51b477abcef6d60750110c6b394"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d91/classxii_game_object.htm#a8313f51b477abcef6d60750110c6b394">SetCreatedByPrefab</a> ()</td></tr>
+<tr class="memdesc:a8313f51b477abcef6d60750110c6b394"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds <a class="el" href="../../dd/d15/structxii_object_flags.htm#ab84c26953c65707e422df64a7fb08c30acd065fa36ee7373201f20f81ef6d5277" title="Such flagged objects and components are ignored during scene export (see xiiWorldWriter) and will be ...">xiiObjectFlags::CreatedByPrefab</a> to the object. See the flag for details. <br /></td></tr>
+<tr class="separator:a8313f51b477abcef6d60750110c6b394"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae631d92ec0ae1725f4769c87e2dfd536"><td class="memItemLeft" align="right" valign="top"><a id="ae631d92ec0ae1725f4769c87e2dfd536"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d91/classxii_game_object.htm#ae631d92ec0ae1725f4769c87e2dfd536">WasCreatedByPrefab</a> () const</td></tr>
+<tr class="memdesc:ae631d92ec0ae1725f4769c87e2dfd536"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether the <a class="el" href="../../dd/d15/structxii_object_flags.htm#ab84c26953c65707e422df64a7fb08c30acd065fa36ee7373201f20f81ef6d5277" title="Such flagged objects and components are ignored during scene export (see xiiWorldWriter) and will be ...">xiiObjectFlags::CreatedByPrefab</a> flag is set on this object. <br /></td></tr>
+<tr class="separator:ae631d92ec0ae1725f4769c87e2dfd536"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a878733af26b46c9f715649821815b514"><td class="memItemLeft" align="right" valign="top"><a id="a878733af26b46c9f715649821815b514"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d91/classxii_game_object.htm#a878733af26b46c9f715649821815b514">SetName</a> (<a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sName)</td></tr>
 <tr class="memdesc:a878733af26b46c9f715649821815b514"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the name to identify this object. Does not have to be a unique name. <br /></td></tr>
@@ -479,13 +487,13 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../.
 <tr class="memdesc:a83d30baae13e8ab8382e2fb22d16c95f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Queues the message for the given phase. The message is processed after the given delay in the corresponding phase. <br /></td></tr>
 <tr class="separator:a83d30baae13e8ab8382e2fb22d16c95f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aef57e6604d4469b0f3fd943d204856cf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d91/classxii_game_object.htm#aef57e6604d4469b0f3fd943d204856cf">SendEventMessage</a> (<a class="el" href="../../d9/d55/classxii_message.htm">xiiMessage</a> &amp;ref_msg, const <a class="el" href="../../db/d60/classxii_component.htm">xiiComponent</a> *pSenderComponent)</td></tr>
-<tr class="memdesc:aef57e6604d4469b0f3fd943d204856cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delivers an <a class="el" href="../../d6/de3/structxii_event_message.htm" title="Base class for all messages that are sent as &#39;events&#39;.">xiiEventMessage</a> to the closest (parent) object containing an <a class="el" href="../../de/dd8/classxii_event_message_handler_component.htm" title="Base class for components that want to handle &#39;event messages&#39;.">xiiEventMessageHandlerComponent</a>.  <a href="../../d0/d91/classxii_game_object.htm#aef57e6604d4469b0f3fd943d204856cf">More...</a><br /></td></tr>
+<tr class="memdesc:aef57e6604d4469b0f3fd943d204856cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delivers a <a class="el" href="../../d6/de3/structxii_event_message.htm" title="Base class for all messages that are sent as &#39;events&#39;.">xiiEventMessage</a> to the closest (parent) object containing a <a class="el" href="../../de/dd8/classxii_event_message_handler_component.htm" title="Base class for components that want to handle &#39;event messages&#39;.">xiiEventMessageHandlerComponent</a>.  <a href="../../d0/d91/classxii_game_object.htm#aef57e6604d4469b0f3fd943d204856cf">More...</a><br /></td></tr>
 <tr class="separator:aef57e6604d4469b0f3fd943d204856cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afc51fb8d78c599589a7762074ee734a0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d91/classxii_game_object.htm#afc51fb8d78c599589a7762074ee734a0">SendEventMessage</a> (<a class="el" href="../../d9/d55/classxii_message.htm">xiiMessage</a> &amp;ref_msg, const <a class="el" href="../../db/d60/classxii_component.htm">xiiComponent</a> *pSenderComponent) const</td></tr>
-<tr class="memdesc:afc51fb8d78c599589a7762074ee734a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delivers an <a class="el" href="../../d6/de3/structxii_event_message.htm" title="Base class for all messages that are sent as &#39;events&#39;.">xiiEventMessage</a> to the closest (parent) object containing an <a class="el" href="../../de/dd8/classxii_event_message_handler_component.htm" title="Base class for components that want to handle &#39;event messages&#39;.">xiiEventMessageHandlerComponent</a>.  <a href="../../d0/d91/classxii_game_object.htm#afc51fb8d78c599589a7762074ee734a0">More...</a><br /></td></tr>
+<tr class="memdesc:afc51fb8d78c599589a7762074ee734a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delivers a <a class="el" href="../../d6/de3/structxii_event_message.htm" title="Base class for all messages that are sent as &#39;events&#39;.">xiiEventMessage</a> to the closest (parent) object containing a <a class="el" href="../../de/dd8/classxii_event_message_handler_component.htm" title="Base class for components that want to handle &#39;event messages&#39;.">xiiEventMessageHandlerComponent</a>.  <a href="../../d0/d91/classxii_game_object.htm#afc51fb8d78c599589a7762074ee734a0">More...</a><br /></td></tr>
 <tr class="separator:afc51fb8d78c599589a7762074ee734a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8c7c618e9e32f6c71b56f505bf4cb4b7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d91/classxii_game_object.htm#a8c7c618e9e32f6c71b56f505bf4cb4b7">PostEventMessage</a> (<a class="el" href="../../d9/d55/classxii_message.htm">xiiMessage</a> &amp;ref_msg, const <a class="el" href="../../db/d60/classxii_component.htm">xiiComponent</a> *pSenderComponent, <a class="el" href="../../d7/dc1/structxii_time.htm">xiiTime</a> delay, <a class="el" href="../../dc/de3/structxii_object_msg_queue_type.htm#ac9e989f6c985a7752fee18b3b1a2b48c">xiiObjectMsgQueueType::Enum</a> queueType=<a class="el" href="../../dc/de3/structxii_object_msg_queue_type.htm#ac9e989f6c985a7752fee18b3b1a2b48ca6e15cf406df6d2e05d38fa50e235ffc0">xiiObjectMsgQueueType::NextFrame</a>) const</td></tr>
-<tr class="memdesc:a8c7c618e9e32f6c71b56f505bf4cb4b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delivers an <a class="el" href="../../d6/de3/structxii_event_message.htm" title="Base class for all messages that are sent as &#39;events&#39;.">xiiEventMessage</a> to the closest (parent) object containing an <a class="el" href="../../de/dd8/classxii_event_message_handler_component.htm" title="Base class for components that want to handle &#39;event messages&#39;.">xiiEventMessageHandlerComponent</a>.  <a href="../../d0/d91/classxii_game_object.htm#a8c7c618e9e32f6c71b56f505bf4cb4b7">More...</a><br /></td></tr>
+<tr class="memdesc:a8c7c618e9e32f6c71b56f505bf4cb4b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delivers a <a class="el" href="../../d6/de3/structxii_event_message.htm" title="Base class for all messages that are sent as &#39;events&#39;.">xiiEventMessage</a> to the closest (parent) object containing a <a class="el" href="../../de/dd8/classxii_event_message_handler_component.htm" title="Base class for components that want to handle &#39;event messages&#39;.">xiiEventMessageHandlerComponent</a>.  <a href="../../d0/d91/classxii_game_object.htm#a8c7c618e9e32f6c71b56f505bf4cb4b7">More...</a><br /></td></tr>
 <tr class="separator:a8c7c618e9e32f6c71b56f505bf4cb4b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae759bd88ed26062d708d86a823a4aac4"><td class="memItemLeft" align="right" valign="top"><a id="ae759bd88ed26062d708d86a823a4aac4"></a>
 const <a class="el" href="../../d6/dc8/classxii_tag_set_template.htm">xiiTagSet</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d91/classxii_game_object.htm#ae759bd88ed26062d708d86a823a4aac4">GetTags</a> () const</td></tr>
@@ -516,9 +524,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../.
 <tr class="memitem:aa9e081f61d0ab03167601ab33fcca5d3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d91/classxii_game_object.htm#aa9e081f61d0ab03167601ab33fcca5d3">SetStableRandomSeed</a> (xiiUInt32 uiSeed)</td></tr>
 <tr class="memdesc:aa9e081f61d0ab03167601ab33fcca5d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overwrites the object's random seed value.  <a href="../../d0/d91/classxii_game_object.htm#aa9e081f61d0ab03167601ab33fcca5d3">More...</a><br /></td></tr>
 <tr class="separator:aa9e081f61d0ab03167601ab33fcca5d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5e46a8e5dc5e66274509c82b650d35ec"><td class="memItemLeft" align="right" valign="top">xiiUInt64&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d91/classxii_game_object.htm#a5e46a8e5dc5e66274509c82b650d35ec">GetNumFramesSinceVisible</a> () const</td></tr>
-<tr class="memdesc:a5e46a8e5dc5e66274509c82b650d35ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of frames since this object was last visible in any view.  <a href="../../d0/d91/classxii_game_object.htm#a5e46a8e5dc5e66274509c82b650d35ec">More...</a><br /></td></tr>
-<tr class="separator:a5e46a8e5dc5e66274509c82b650d35ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ea5c9cfec10d04daeb9711308eda4cb"><td class="memItemLeft" align="right" valign="top">xiiVisibilityState&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d91/classxii_game_object.htm#a1ea5c9cfec10d04daeb9711308eda4cb">GetVisibilityState</a> (xiiUInt32 uiNumFramesBeforeInvisible=5) const</td></tr>
+<tr class="memdesc:a1ea5c9cfec10d04daeb9711308eda4cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves a state describing how visible the object is.  <a href="../../d0/d91/classxii_game_object.htm#a1ea5c9cfec10d04daeb9711308eda4cb">More...</a><br /></td></tr>
+<tr class="separator:a1ea5c9cfec10d04daeb9711308eda4cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a85cb70263b8f24740cbad96b46daa385"><td class="memTemplParams" colspan="2"><a id="a85cb70263b8f24740cbad96b46daa385"></a>
 template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a85cb70263b8f24740cbad96b46daa385"><td class="memTemplItemLeft" align="right" valign="top">XII_ALWAYS_INLINE bool&#160;</td><td class="memTemplItemRight" valign="bottom"><b>TryGetComponentOfBaseType</b> (T *&amp;out_pComponent)</td></tr>
@@ -659,26 +667,6 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>xiiGameObjectTest</b
 
 </div>
 </div>
-<a id="a5e46a8e5dc5e66274509c82b650d35ec"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5e46a8e5dc5e66274509c82b650d35ec">&#9670;&nbsp;</a></span>GetNumFramesSinceVisible()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">xiiUInt64 xiiGameObject::GetNumFramesSinceVisible </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Returns the number of frames since this object was last visible in any view. </p>
-<p>This value can be used to skip update logic of invisible objects. </p>
-
-</div>
-</div>
 <a id="a493c8923e7293ab98e3eb4be35c0fc3d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a493c8923e7293ab98e3eb4be35c0fc3d">&#9670;&nbsp;</a></span>GetStableRandomSeed()</h2>
 
@@ -726,6 +714,33 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>xiiGameObjectTest</b
 
 <p>Returns the 'team ID' that was given during creation (/see <a class="el" href="../../dd/d15/structxii_game_object_desc.htm" title="Describes the initial state of a game object.">xiiGameObjectDesc</a>) </p>
 <p>It is automatically passed on to objects created by this object. This makes it possible to identify which player or team an object belongs to. </p>
+
+</div>
+</div>
+<a id="a1ea5c9cfec10d04daeb9711308eda4cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1ea5c9cfec10d04daeb9711308eda4cb">&#9670;&nbsp;</a></span>GetVisibilityState()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">xiiVisibilityState xiiGameObject::GetVisibilityState </td>
+          <td>(</td>
+          <td class="paramtype">xiiUInt32&#160;</td>
+          <td class="paramname"><em>uiNumFramesBeforeInvisible</em> = <code>5</code></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Retrieves a state describing how visible the object is. </p>
+<p>An object may be invisible, fully visible, or indirectly visible (through shadows or reflections). This can be used to adjust the update logic of objects. An invisible object may stop updating entirely. An indirectly visible object may reduce its update rate.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">uiNumFramesBeforeInvisible</td><td>Used to treat an object that was visible and just became invisible as visible for a few more frames. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -788,9 +803,9 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>xiiGameObjectTest</b
       </table>
 </div><div class="memdoc">
 
-<p>Delivers an <a class="el" href="../../d6/de3/structxii_event_message.htm" title="Base class for all messages that are sent as &#39;events&#39;.">xiiEventMessage</a> to the closest (parent) object containing an <a class="el" href="../../de/dd8/classxii_event_message_handler_component.htm" title="Base class for components that want to handle &#39;event messages&#39;.">xiiEventMessageHandlerComponent</a>. </p>
+<p>Delivers a <a class="el" href="../../d6/de3/structxii_event_message.htm" title="Base class for all messages that are sent as &#39;events&#39;.">xiiEventMessage</a> to the closest (parent) object containing a <a class="el" href="../../de/dd8/classxii_event_message_handler_component.htm" title="Base class for components that want to handle &#39;event messages&#39;.">xiiEventMessageHandlerComponent</a>. </p>
 <p>Regular <a class="el" href="../../d0/d91/classxii_game_object.htm#a9acebff434fab9c9802e4b98d3c9d5b4" title="Sends a message to all components of this object.">SendMessage()</a> and <a class="el" href="../../d0/d91/classxii_game_object.htm#aa8cf94ee9f9b93d5350e9a627c17a8be" title="Queues the message for the given phase. The message is processed after the given delay in the corresp...">PostMessage()</a> send a message directly to the target object (and all attached components). <a class="el" href="../../d0/d91/classxii_game_object.htm#abb4b51ff5b640ceb0172a49cf6b32a0b" title="Sends a message to all components of this object and then recursively to all children.">SendMessageRecursive()</a> and <a class="el" href="../../d0/d91/classxii_game_object.htm#a83d30baae13e8ab8382e2fb22d16c95f" title="Queues the message for the given phase. The message is processed after the given delay in the corresp...">PostMessageRecursive()</a> send a message 'down' the graph to the target object and all children.</p>
-<p>In contrast, <a class="el" href="../../d0/d91/classxii_game_object.htm#aef57e6604d4469b0f3fd943d204856cf" title="Delivers an xiiEventMessage to the closest (parent) object containing an xiiEventMessageHandlerCompon...">SendEventMessage()</a> / <a class="el" href="../../d0/d91/classxii_game_object.htm#a8c7c618e9e32f6c71b56f505bf4cb4b7" title="Delivers an xiiEventMessage to the closest (parent) object containing an xiiEventMessageHandlerCompon...">PostEventMessage()</a> bubble the message 'up' the graph. They do so by inspecting the chain of parent objects for the existence of an <a class="el" href="../../de/dd8/classxii_event_message_handler_component.htm" title="Base class for components that want to handle &#39;event messages&#39;.">xiiEventMessageHandlerComponent</a> (typically a script component). If such a component is found, the message is delivered to it directly, and no other component. If it is found, but does not handle this type of message, the message is discarded and NOT tried to be delivered to anyone else.</p>
+<p>In contrast, <a class="el" href="../../d0/d91/classxii_game_object.htm#aef57e6604d4469b0f3fd943d204856cf" title="Delivers a xiiEventMessage to the closest (parent) object containing a xiiEventMessageHandlerComponen...">SendEventMessage()</a> / <a class="el" href="../../d0/d91/classxii_game_object.htm#a8c7c618e9e32f6c71b56f505bf4cb4b7" title="Delivers a xiiEventMessage to the closest (parent) object containing a xiiEventMessageHandlerComponen...">PostEventMessage()</a> bubble the message 'up' the graph. They do so by inspecting the chain of parent objects for the existence of a <a class="el" href="../../de/dd8/classxii_event_message_handler_component.htm" title="Base class for components that want to handle &#39;event messages&#39;.">xiiEventMessageHandlerComponent</a> (typically a script component). If such a component is found, the message is delivered to it directly, and no other component. If it is found, but does not handle this type of message, the message is discarded and NOT tried to be delivered to anyone else.</p>
 <p>If no such component is found in all parent objects, the message is delivered to one <a class="el" href="../../de/dd8/classxii_event_message_handler_component.htm" title="Base class for components that want to handle &#39;event messages&#39;.">xiiEventMessageHandlerComponent</a> instances that is set to 'handle global events' (typically used for level-logic scripts), no matter where in the graph it resides. If multiple global event handler component exist that handle the same message type, the result is non-deterministic.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -899,9 +914,9 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>xiiGameObjectTest</b
       </table>
 </div><div class="memdoc">
 
-<p>Delivers an <a class="el" href="../../d6/de3/structxii_event_message.htm" title="Base class for all messages that are sent as &#39;events&#39;.">xiiEventMessage</a> to the closest (parent) object containing an <a class="el" href="../../de/dd8/classxii_event_message_handler_component.htm" title="Base class for components that want to handle &#39;event messages&#39;.">xiiEventMessageHandlerComponent</a>. </p>
+<p>Delivers a <a class="el" href="../../d6/de3/structxii_event_message.htm" title="Base class for all messages that are sent as &#39;events&#39;.">xiiEventMessage</a> to the closest (parent) object containing a <a class="el" href="../../de/dd8/classxii_event_message_handler_component.htm" title="Base class for components that want to handle &#39;event messages&#39;.">xiiEventMessageHandlerComponent</a>. </p>
 <p>Regular <a class="el" href="../../d0/d91/classxii_game_object.htm#a9acebff434fab9c9802e4b98d3c9d5b4" title="Sends a message to all components of this object.">SendMessage()</a> and <a class="el" href="../../d0/d91/classxii_game_object.htm#aa8cf94ee9f9b93d5350e9a627c17a8be" title="Queues the message for the given phase. The message is processed after the given delay in the corresp...">PostMessage()</a> send a message directly to the target object (and all attached components). <a class="el" href="../../d0/d91/classxii_game_object.htm#abb4b51ff5b640ceb0172a49cf6b32a0b" title="Sends a message to all components of this object and then recursively to all children.">SendMessageRecursive()</a> and <a class="el" href="../../d0/d91/classxii_game_object.htm#a83d30baae13e8ab8382e2fb22d16c95f" title="Queues the message for the given phase. The message is processed after the given delay in the corresp...">PostMessageRecursive()</a> send a message 'down' the graph to the target object and all children.</p>
-<p>In contrast, <a class="el" href="../../d0/d91/classxii_game_object.htm#aef57e6604d4469b0f3fd943d204856cf" title="Delivers an xiiEventMessage to the closest (parent) object containing an xiiEventMessageHandlerCompon...">SendEventMessage()</a> / <a class="el" href="../../d0/d91/classxii_game_object.htm#a8c7c618e9e32f6c71b56f505bf4cb4b7" title="Delivers an xiiEventMessage to the closest (parent) object containing an xiiEventMessageHandlerCompon...">PostEventMessage()</a> bubble the message 'up' the graph. They do so by inspecting the chain of parent objects for the existence of an <a class="el" href="../../de/dd8/classxii_event_message_handler_component.htm" title="Base class for components that want to handle &#39;event messages&#39;.">xiiEventMessageHandlerComponent</a> (typically a script component). If such a component is found, the message is delivered to it directly, and no other component. If it is found, but does not handle this type of message, the message is discarded and NOT tried to be delivered to anyone else.</p>
+<p>In contrast, <a class="el" href="../../d0/d91/classxii_game_object.htm#aef57e6604d4469b0f3fd943d204856cf" title="Delivers a xiiEventMessage to the closest (parent) object containing a xiiEventMessageHandlerComponen...">SendEventMessage()</a> / <a class="el" href="../../d0/d91/classxii_game_object.htm#a8c7c618e9e32f6c71b56f505bf4cb4b7" title="Delivers a xiiEventMessage to the closest (parent) object containing a xiiEventMessageHandlerComponen...">PostEventMessage()</a> bubble the message 'up' the graph. They do so by inspecting the chain of parent objects for the existence of a <a class="el" href="../../de/dd8/classxii_event_message_handler_component.htm" title="Base class for components that want to handle &#39;event messages&#39;.">xiiEventMessageHandlerComponent</a> (typically a script component). If such a component is found, the message is delivered to it directly, and no other component. If it is found, but does not handle this type of message, the message is discarded and NOT tried to be delivered to anyone else.</p>
 <p>If no such component is found in all parent objects, the message is delivered to one <a class="el" href="../../de/dd8/classxii_event_message_handler_component.htm" title="Base class for components that want to handle &#39;event messages&#39;.">xiiEventMessageHandlerComponent</a> instances that is set to 'handle global events' (typically used for level-logic scripts), no matter where in the graph it resides. If multiple global event handler component exist that handle the same message type, the result is non-deterministic.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -939,9 +954,9 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>xiiGameObjectTest</b
       </table>
 </div><div class="memdoc">
 
-<p>Delivers an <a class="el" href="../../d6/de3/structxii_event_message.htm" title="Base class for all messages that are sent as &#39;events&#39;.">xiiEventMessage</a> to the closest (parent) object containing an <a class="el" href="../../de/dd8/classxii_event_message_handler_component.htm" title="Base class for components that want to handle &#39;event messages&#39;.">xiiEventMessageHandlerComponent</a>. </p>
+<p>Delivers a <a class="el" href="../../d6/de3/structxii_event_message.htm" title="Base class for all messages that are sent as &#39;events&#39;.">xiiEventMessage</a> to the closest (parent) object containing a <a class="el" href="../../de/dd8/classxii_event_message_handler_component.htm" title="Base class for components that want to handle &#39;event messages&#39;.">xiiEventMessageHandlerComponent</a>. </p>
 <p>Regular <a class="el" href="../../d0/d91/classxii_game_object.htm#a9acebff434fab9c9802e4b98d3c9d5b4" title="Sends a message to all components of this object.">SendMessage()</a> and <a class="el" href="../../d0/d91/classxii_game_object.htm#aa8cf94ee9f9b93d5350e9a627c17a8be" title="Queues the message for the given phase. The message is processed after the given delay in the corresp...">PostMessage()</a> send a message directly to the target object (and all attached components). <a class="el" href="../../d0/d91/classxii_game_object.htm#abb4b51ff5b640ceb0172a49cf6b32a0b" title="Sends a message to all components of this object and then recursively to all children.">SendMessageRecursive()</a> and <a class="el" href="../../d0/d91/classxii_game_object.htm#a83d30baae13e8ab8382e2fb22d16c95f" title="Queues the message for the given phase. The message is processed after the given delay in the corresp...">PostMessageRecursive()</a> send a message 'down' the graph to the target object and all children.</p>
-<p>In contrast, <a class="el" href="../../d0/d91/classxii_game_object.htm#aef57e6604d4469b0f3fd943d204856cf" title="Delivers an xiiEventMessage to the closest (parent) object containing an xiiEventMessageHandlerCompon...">SendEventMessage()</a> / <a class="el" href="../../d0/d91/classxii_game_object.htm#a8c7c618e9e32f6c71b56f505bf4cb4b7" title="Delivers an xiiEventMessage to the closest (parent) object containing an xiiEventMessageHandlerCompon...">PostEventMessage()</a> bubble the message 'up' the graph. They do so by inspecting the chain of parent objects for the existence of an <a class="el" href="../../de/dd8/classxii_event_message_handler_component.htm" title="Base class for components that want to handle &#39;event messages&#39;.">xiiEventMessageHandlerComponent</a> (typically a script component). If such a component is found, the message is delivered to it directly, and no other component. If it is found, but does not handle this type of message, the message is discarded and NOT tried to be delivered to anyone else.</p>
+<p>In contrast, <a class="el" href="../../d0/d91/classxii_game_object.htm#aef57e6604d4469b0f3fd943d204856cf" title="Delivers a xiiEventMessage to the closest (parent) object containing a xiiEventMessageHandlerComponen...">SendEventMessage()</a> / <a class="el" href="../../d0/d91/classxii_game_object.htm#a8c7c618e9e32f6c71b56f505bf4cb4b7" title="Delivers a xiiEventMessage to the closest (parent) object containing a xiiEventMessageHandlerComponen...">PostEventMessage()</a> bubble the message 'up' the graph. They do so by inspecting the chain of parent objects for the existence of a <a class="el" href="../../de/dd8/classxii_event_message_handler_component.htm" title="Base class for components that want to handle &#39;event messages&#39;.">xiiEventMessageHandlerComponent</a> (typically a script component). If such a component is found, the message is delivered to it directly, and no other component. If it is found, but does not handle this type of message, the message is discarded and NOT tried to be delivered to anyone else.</p>
 <p>If no such component is found in all parent objects, the message is delivered to one <a class="el" href="../../de/dd8/classxii_event_message_handler_component.htm" title="Base class for components that want to handle &#39;event messages&#39;.">xiiEventMessageHandlerComponent</a> instances that is set to 'handle global events' (typically used for level-logic scripts), no matter where in the graph it resides. If multiple global event handler component exist that handle the same message type, the result is non-deterministic.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -1030,7 +1045,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>xiiGameObjectTest</b
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d0/d91/classxii_game_object.htm">xiiGameObject</a></li>
-    <li class="footer">Generated on Fri Jun 16 2023 14:12:52 for XIIEngine by
+    <li class="footer">Generated on Sat Jul 1 2023 22:50:27 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

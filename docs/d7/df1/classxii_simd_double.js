@@ -14,7 +14,7 @@ var classxii_simd_double =
     [ "GetReciprocal", "d7/df1/classxii_simd_double.htm#a6582056a18ddc23db8aa6e035429ec00", null ],
     [ "GetSqrt", "d7/df1/classxii_simd_double.htm#a3526fabe06a6782c065823599069efd6", null ],
     [ "GetSqrt", "d7/df1/classxii_simd_double.htm#a370eb0fda6dadd31c7830019f18c0fe0", null ],
-    [ "IsEqual", "d7/df1/classxii_simd_double.htm#a6aa1e48f40bfc9c13042ee85f6b26bb4", null ],
+    [ "IsEqual", "d7/df1/classxii_simd_double.htm#a3646a48d4a2babf52c03c15b4b1efaf1", null ],
     [ "Max", "d7/df1/classxii_simd_double.htm#a018b85fa784e2416d3a707db33bc46ce", null ],
     [ "Min", "d7/df1/classxii_simd_double.htm#a061c2e0621e16f3578827d9783a830c0", null ],
     [ "operator double", "d7/df1/classxii_simd_double.htm#a3cbb5903ae6216d4aae79d294dd75783", null ],

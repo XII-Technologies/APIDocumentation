@@ -11,6 +11,7 @@ var classxii_animated_mesh_component =
     [ "OnAnimationPoseUpdated", "d4/d85/classxii_animated_mesh_component.htm#abe356dba8675d156594d664b0b39c0de", null ],
     [ "OnDeactivated", "d4/d85/classxii_animated_mesh_component.htm#a75c74a6abcc1a31602a2f37aba3a483c", null ],
     [ "OnQueryAnimationSkeleton", "d4/d85/classxii_animated_mesh_component.htm#a96d32adfdddd0cd3258c26ec113334dc", null ],
+    [ "RetrievePose", "d4/d85/classxii_animated_mesh_component.htm#a8f959efb0ce5fb72885e679d0a0b4bae", null ],
     [ "SerializeComponent", "d4/d85/classxii_animated_mesh_component.htm#a2e38e820680b7901954b174a87ffd05c", null ],
     [ "m_MaxBounds", "d4/d85/classxii_animated_mesh_component.htm#a4c802fdbefcfce867546486621a0080f", null ],
     [ "m_RootTransform", "d4/d85/classxii_animated_mesh_component.htm#a863304ad148cd754eb845a49b064b554", null ],

@@ -131,7 +131,7 @@ const <a class="el" href="../../d8/dc2/classxii_hash_table.htm">xiiVariantDictio
 <tr class="separator:ac847bcb2bfafdde4a4db6da7c1f05e42 inherit pub_methods_classxii_j_s_o_n_parser"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5ef68f77d9e79de3a5933beda6b3db58 inherit pub_methods_classxii_j_s_o_n_parser"><td class="memItemLeft" align="right" valign="top"><a id="a5ef68f77d9e79de3a5933beda6b3db58"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d7a/classxii_j_s_o_n_parser.htm#a5ef68f77d9e79de3a5933beda6b3db58">SetLogInterface</a> (<a class="el" href="../../d6/d6b/classxii_log_interface.htm">xiiLogInterface</a> *pLog)</td></tr>
-<tr class="memdesc:a5ef68f77d9e79de3a5933beda6b3db58 inherit pub_methods_classxii_j_s_o_n_parser"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allows to specify an <a class="el" href="../../d6/d6b/classxii_log_interface.htm" title="Base class for all logging classes.">xiiLogInterface</a> through which errors and warnings are reported. <br /></td></tr>
+<tr class="memdesc:a5ef68f77d9e79de3a5933beda6b3db58 inherit pub_methods_classxii_j_s_o_n_parser"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allows to specify a <a class="el" href="../../d6/d6b/classxii_log_interface.htm" title="Base class for all logging classes.">xiiLogInterface</a> through which errors and warnings are reported. <br /></td></tr>
 <tr class="separator:a5ef68f77d9e79de3a5933beda6b3db58 inherit pub_methods_classxii_j_s_o_n_parser"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-types"></a>
@@ -154,19 +154,19 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_bParsingError</b></
 <tr class="separator:ad50d3ef674f3cbc003f2b3cd4b4c299f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_classxii_j_s_o_n_parser"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classxii_j_s_o_n_parser')"><img src="../../closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="../../dd/d7a/classxii_j_s_o_n_parser.htm">xiiJSONParser</a></td></tr>
 <tr class="memitem:a42b7757d0d16e0a145e98e741959cccd inherit pro_attribs_classxii_j_s_o_n_parser"><td class="memItemLeft" align="right" valign="top"><a id="a42b7757d0d16e0a145e98e741959cccd"></a>
-<a class="el" href="../../d6/d6b/classxii_log_interface.htm">xiiLogInterface</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_pLogInterface</b></td></tr>
+<a class="el" href="../../d6/d6b/classxii_log_interface.htm">xiiLogInterface</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_pLogInterface</b> = nullptr</td></tr>
 <tr class="separator:a42b7757d0d16e0a145e98e741959cccd inherit pro_attribs_classxii_j_s_o_n_parser"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
-<tr class="memitem:a92022a9ebc0cc860da7399794835ee46"><td class="memItemLeft" align="right" valign="top"><a id="a92022a9ebc0cc860da7399794835ee46"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d05/classxii_j_s_o_n_reader.htm#a92022a9ebc0cc860da7399794835ee46">OnVariable</a> (const char *szVarName) override</td></tr>
-<tr class="memdesc:a92022a9ebc0cc860da7399794835ee46"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function can be overridden to skip certain variables, however the overriding function must still call this. <br /></td></tr>
-<tr class="separator:a92022a9ebc0cc860da7399794835ee46"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3596f6c77b7fc474a9b6a77ed0b20919"><td class="memItemLeft" align="right" valign="top"><a id="a3596f6c77b7fc474a9b6a77ed0b20919"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d05/classxii_j_s_o_n_reader.htm#a3596f6c77b7fc474a9b6a77ed0b20919">OnReadValue</a> (const char *szValue) override</td></tr>
-<tr class="memdesc:a3596f6c77b7fc474a9b6a77ed0b20919"><td class="mdescLeft">&#160;</td><td class="mdescRight">[internal] Do not override further. <br /></td></tr>
-<tr class="separator:a3596f6c77b7fc474a9b6a77ed0b20919"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3b28dac344a112689c1b37dc18d5b87"><td class="memItemLeft" align="right" valign="top"><a id="ab3b28dac344a112689c1b37dc18d5b87"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d05/classxii_j_s_o_n_reader.htm#ab3b28dac344a112689c1b37dc18d5b87">OnVariable</a> (<a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sVarName) override</td></tr>
+<tr class="memdesc:ab3b28dac344a112689c1b37dc18d5b87"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function can be overridden to skip certain variables, however the overriding function must still call this. <br /></td></tr>
+<tr class="separator:ab3b28dac344a112689c1b37dc18d5b87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c9f98d9b6791675bfec08246f7f1e92"><td class="memItemLeft" align="right" valign="top"><a id="a8c9f98d9b6791675bfec08246f7f1e92"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d05/classxii_j_s_o_n_reader.htm#a8c9f98d9b6791675bfec08246f7f1e92">OnReadValue</a> (<a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sValue) override</td></tr>
+<tr class="memdesc:a8c9f98d9b6791675bfec08246f7f1e92"><td class="mdescLeft">&#160;</td><td class="mdescRight">[internal] Do not override further. <br /></td></tr>
+<tr class="separator:a8c9f98d9b6791675bfec08246f7f1e92"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a37cfe40765f21d01cc3ca05b12a9905c"><td class="memItemLeft" align="right" valign="top"><a id="a37cfe40765f21d01cc3ca05b12a9905c"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d05/classxii_j_s_o_n_reader.htm#a37cfe40765f21d01cc3ca05b12a9905c">OnReadValue</a> (double fValue) override</td></tr>
 <tr class="memdesc:a37cfe40765f21d01cc3ca05b12a9905c"><td class="mdescLeft">&#160;</td><td class="mdescRight">[internal] Do not override further. <br /></td></tr>
@@ -195,9 +195,9 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d05/classxii_j_s_o_n_reader.htm#a32e9f4014600ecc3d2f556ca4a8e660b">OnEndArray</a> () override</td></tr>
 <tr class="memdesc:a32e9f4014600ecc3d2f556ca4a8e660b"><td class="mdescLeft">&#160;</td><td class="mdescRight">[internal] Do not override further. <br /></td></tr>
 <tr class="separator:a32e9f4014600ecc3d2f556ca4a8e660b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adf1c7265b870c771594d2ad3ac5b0fc9"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d05/classxii_j_s_o_n_reader.htm#adf1c7265b870c771594d2ad3ac5b0fc9">OnParsingError</a> (const char *szMessage, bool bFatal, xiiUInt32 uiLine, xiiUInt32 uiColumn) override</td></tr>
-<tr class="memdesc:adf1c7265b870c771594d2ad3ac5b0fc9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when something unexpected is encountered in the JSON document.  <a href="../../d8/d05/classxii_j_s_o_n_reader.htm#adf1c7265b870c771594d2ad3ac5b0fc9">More...</a><br /></td></tr>
-<tr class="separator:adf1c7265b870c771594d2ad3ac5b0fc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79da4589235f56c4fc40a6b90dcebc2c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d05/classxii_j_s_o_n_reader.htm#a79da4589235f56c4fc40a6b90dcebc2c">OnParsingError</a> (<a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sMessage, bool bFatal, xiiUInt32 uiLine, xiiUInt32 uiColumn) override</td></tr>
+<tr class="memdesc:a79da4589235f56c4fc40a6b90dcebc2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when something unexpected is encountered in the JSON document.  <a href="../../d8/d05/classxii_j_s_o_n_reader.htm#a79da4589235f56c4fc40a6b90dcebc2c">More...</a><br /></td></tr>
+<tr class="separator:a79da4589235f56c4fc40a6b90dcebc2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -221,17 +221,17 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../.
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d7a/classxii_j_s_o_n_parser.htm#a350c4dd3ddc7e8d9c912d26c9b2c8990">SkipArray</a> ()</td></tr>
 <tr class="memdesc:a350c4dd3ddc7e8d9c912d26c9b2c8990 inherit pro_methods_classxii_j_s_o_n_parser"><td class="mdescLeft">&#160;</td><td class="mdescRight">Skips the rest of the currently open array. No <a class="el" href="../../dd/d7a/classxii_j_s_o_n_parser.htm#a11c1c496fa48626e48529c170487b788" title="Called when the end of an array is encountered.">OnEndArray()</a> and <a class="el" href="../../dd/d7a/classxii_j_s_o_n_parser.htm#a06051c79ec7d986cb83e397343c9613f" title="Called when the end of an object is encountered.">OnEndObject()</a> calls will be done for this object, cleanup must be done manually. <br /></td></tr>
 <tr class="separator:a350c4dd3ddc7e8d9c912d26c9b2c8990 inherit pro_methods_classxii_j_s_o_n_parser"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3fc3ac96fe491731c3b5d75886ba8409 inherit pro_methods_classxii_j_s_o_n_parser"><td class="memItemLeft" align="right" valign="top"><a id="a3fc3ac96fe491731c3b5d75886ba8409"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d7a/classxii_j_s_o_n_parser.htm#a3fc3ac96fe491731c3b5d75886ba8409">ParsingError</a> (const char *szMessage, bool bFatal)</td></tr>
-<tr class="memdesc:a3fc3ac96fe491731c3b5d75886ba8409 inherit pro_methods_classxii_j_s_o_n_parser"><td class="mdescLeft">&#160;</td><td class="mdescRight">Outputs that a parsing error was detected (via OnParsingError) and stops further parsing, if bFatal is set to true. <br /></td></tr>
-<tr class="separator:a3fc3ac96fe491731c3b5d75886ba8409 inherit pro_methods_classxii_j_s_o_n_parser"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ad592f220e18137e30031bec0e70155 inherit pro_methods_classxii_j_s_o_n_parser"><td class="memItemLeft" align="right" valign="top"><a id="a7ad592f220e18137e30031bec0e70155"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d7a/classxii_j_s_o_n_parser.htm#a7ad592f220e18137e30031bec0e70155">ParsingError</a> (<a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sMessage, bool bFatal)</td></tr>
+<tr class="memdesc:a7ad592f220e18137e30031bec0e70155 inherit pro_methods_classxii_j_s_o_n_parser"><td class="mdescLeft">&#160;</td><td class="mdescRight">Outputs that a parsing error was detected (via OnParsingError) and stops further parsing, if bFatal is set to true. <br /></td></tr>
+<tr class="separator:a7ad592f220e18137e30031bec0e70155 inherit pro_methods_classxii_j_s_o_n_parser"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This JSON reader will read an entire JSON document into a hierarchical structure of xiiVariants. </p>
 <p>The reader will parse the entire document and create a data structure of xiiVariants, which can then be traversed easily. Note that this class is much less efficient at reading large JSON documents, as it will dynamically allocate and copy objects around quite a bit. For small to medium sized documents that might be good enough, for large files one should prefer to write a dedicated class derived from <a class="el" href="../../dd/d7a/classxii_j_s_o_n_parser.htm" title="A low level JSON parser that can incrementally parse the structure of a JSON document.">xiiJSONParser</a>. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="adf1c7265b870c771594d2ad3ac5b0fc9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adf1c7265b870c771594d2ad3ac5b0fc9">&#9670;&nbsp;</a></span>OnParsingError()</h2>
+<a id="a79da4589235f56c4fc40a6b90dcebc2c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a79da4589235f56c4fc40a6b90dcebc2c">&#9670;&nbsp;</a></span>OnParsingError()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -242,8 +242,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../.
         <tr>
           <td class="memname">void xiiJSONReader::OnParsingError </td>
           <td>(</td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>szMessage</em>, </td>
+          <td class="paramtype"><a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a>&#160;</td>
+          <td class="paramname"><em>sMessage</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -279,7 +279,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../.
 <p>Called when something unexpected is encountered in the JSON document. </p>
 <p>The error message describes what was expected and what was encountered. If bFatal is true, the error has left the parser in an unrecoverable state and thus it not continue parsing. In that case client code will need to clean up it's open state, as no further <a class="el" href="../../d8/d05/classxii_j_s_o_n_reader.htm#a95c593ddff70b8f9af3b9eef75c672be" title="[internal] Do not override further.">OnEndObject()</a> / <a class="el" href="../../d8/d05/classxii_j_s_o_n_reader.htm#a32e9f4014600ecc3d2f556ca4a8e660b" title="[internal] Do not override further.">OnEndArray()</a> will be called. If bFatal is false, the document does not contain valid JSON, but the parser is able to continue still. </p>
 
-<p>Reimplemented from <a class="el" href="../../dd/d7a/classxii_j_s_o_n_parser.htm#aefc2253b8a53ad9bbbf3e047766f6afa">xiiJSONParser</a>.</p>
+<p>Reimplemented from <a class="el" href="../../dd/d7a/classxii_j_s_o_n_parser.htm#aa4404012288d1e553cf6411dff80e3ad">xiiJSONParser</a>.</p>
 
 </div>
 </div>
@@ -293,7 +293,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../.
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d8/d05/classxii_j_s_o_n_reader.htm">xiiJSONReader</a></li>
-    <li class="footer">Generated on Fri Jun 16 2023 14:12:53 for XIIEngine by
+    <li class="footer">Generated on Sat Jul 1 2023 22:50:29 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

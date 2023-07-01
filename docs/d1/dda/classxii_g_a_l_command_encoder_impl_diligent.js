@@ -8,6 +8,7 @@ var classxii_g_a_l_command_encoder_impl_diligent =
     [ "BeginQueryPlatform", "d1/dda/classxii_g_a_l_command_encoder_impl_diligent.htm#ac9ff1dff0246bc198fb6ca4a6559ac54", null ],
     [ "BeginRendering", "d1/dda/classxii_g_a_l_command_encoder_impl_diligent.htm#af36e649b1549b6396d7446988cb25c13", null ],
     [ "BeginStreamOutPlatform", "d1/dda/classxii_g_a_l_command_encoder_impl_diligent.htm#a586b7fc562fc00b2ce1c6b82d7ee8865", null ],
+    [ "ClearActiveDebugGroups", "d1/dda/classxii_g_a_l_command_encoder_impl_diligent.htm#aa862f372dbc7bfb69bc4a55bd8a9fe91", null ],
     [ "ClearPlatform", "d1/dda/classxii_g_a_l_command_encoder_impl_diligent.htm#aa6e8b3eb018f98f1a68ca63399ae69bf", null ],
     [ "ClearUnorderedAccessViewPlatform", "d1/dda/classxii_g_a_l_command_encoder_impl_diligent.htm#a05b2269174adca49534ebd4af4a63398", null ],
     [ "ClearUnorderedAccessViewPlatform", "d1/dda/classxii_g_a_l_command_encoder_impl_diligent.htm#a62ced9de939250942b2c988f4f62f533", null ],

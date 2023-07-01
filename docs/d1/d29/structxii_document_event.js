@@ -8,6 +8,6 @@ var structxii_document_event =
       [ "DocumentStatusMsg", "d1/d29/structxii_document_event.htm#a309f5a3d04fd703a5fe8770adaf0ea9aa197dd6cd20b7b764a1360f417a1d50ca", null ]
     ] ],
     [ "m_pDocument", "d1/d29/structxii_document_event.htm#a7d3268b60d553740a86e3debe2148808", null ],
-    [ "m_szStatusMsg", "d1/d29/structxii_document_event.htm#aeb2072f8d32a6c16a48117406dad63b2", null ],
+    [ "m_sStatusMsg", "d1/d29/structxii_document_event.htm#ad3610364f5aee195c1aa0edbfd378247", null ],
     [ "m_Type", "d1/d29/structxii_document_event.htm#a34d8737b41474d396cf10bb7d226d8c4", null ]
 ];

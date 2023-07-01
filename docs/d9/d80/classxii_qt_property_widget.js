@@ -8,7 +8,7 @@ var classxii_qt_property_widget =
     [ "ExtendContextMenu", "d9/d80/classxii_qt_property_widget.htm#afd8569e5f4aa0c553823b9d5d65a20b2", null ],
     [ "GetCommonValue", "d9/d80/classxii_qt_property_widget.htm#ad5f9bf07bd6834ac58ccd7b77d1b55b2", null ],
     [ "GetCommonVariantSubType", "d9/d80/classxii_qt_property_widget.htm#a03c62e26ef896de5f266f063b5d8572f", null ],
-    [ "GetLabel", "d9/d80/classxii_qt_property_widget.htm#abb05c686b3f0986332a9dc595e6c4e09", null ],
+    [ "GetLabel", "d9/d80/classxii_qt_property_widget.htm#a849bfed8c0e8a92770ffae63ccd22fcf", null ],
     [ "GetProperty", "d9/d80/classxii_qt_property_widget.htm#a040c4ab9004ee68f1943a58cc310af90", null ],
     [ "GetSelection", "d9/d80/classxii_qt_property_widget.htm#ab10fa3493094d5dddf9405fbdd07ab98", null ],
     [ "HasLabel", "d9/d80/classxii_qt_property_widget.htm#aa2415941f6d606187ce9d284c99a9050", null ],
