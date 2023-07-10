@@ -50,7 +50,7 @@ var classxii_g_a_l_device_diligent =
     [ "GetTimestamp", "d6/df4/classxii_g_a_l_device_diligent.htm#a9358b70d6cfac13015d0063211c3003b", null ],
     [ "GetTimestampPlatform", "d6/df4/classxii_g_a_l_device_diligent.htm#a58e013f117add5e84d5e21184822d0ac", null ],
     [ "GetTimestampResultPlatform", "d6/df4/classxii_g_a_l_device_diligent.htm#a90cd2fe26aa01588ac734e8febda1731", null ],
-    [ "GetValidationLevel", "d6/df4/classxii_g_a_l_device_diligent.htm#a7bc61c5b7efa4728893e51a60ceaa6cb", null ],
+    [ "GetValidationLevel", "d6/df4/classxii_g_a_l_device_diligent.htm#adcab661d773efdd19fd9f95913325620", null ],
     [ "InitPlatform", "d6/df4/classxii_g_a_l_device_diligent.htm#a1333e94eae6040254d941281bf677819", null ],
     [ "IsFenceReachedPlatform", "d6/df4/classxii_g_a_l_device_diligent.htm#ad52ea2fc6f4e72eeb09012ee2be255d3", null ],
     [ "ReportLiveGpuObjects", "d6/df4/classxii_g_a_l_device_diligent.htm#a368fde914abdd098be1e230a40370709", null ],

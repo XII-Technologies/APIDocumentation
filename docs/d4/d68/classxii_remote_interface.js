@@ -1,8 +1,8 @@
 var classxii_remote_interface =
 [
     [ "~xiiRemoteInterface", "d4/d68/classxii_remote_interface.htm#abe7dc6606001591d5ab7b5a5c9213eb5", null ],
-    [ "ConnectToServer", "d4/d68/classxii_remote_interface.htm#a52832ff90fed6e7cc546ff575f3b217b", null ],
-    [ "DetermineTargetAddress", "d4/d68/classxii_remote_interface.htm#a117eb01bf944343bc7b25a3a6a6e52e5", null ],
+    [ "ConnectToServer", "d4/d68/classxii_remote_interface.htm#acb9d0b30ff55097679a3303b9d7e3e82", null ],
+    [ "DetermineTargetAddress", "d4/d68/classxii_remote_interface.htm#a1cc1248ac196c400d7ead5b8f847b16e", null ],
     [ "ExecuteAllMessageHandlers", "d4/d68/classxii_remote_interface.htm#ad88768817bac348d9d1cc4b56e016225", null ],
     [ "ExecuteMessageHandlers", "d4/d68/classxii_remote_interface.htm#a5f2cd4ecff644a4a66f09450d4ed00ec", null ],
     [ "GetApplicationID", "d4/d68/classxii_remote_interface.htm#a90f5e0b469cd466558bbbb8639924313", null ],
@@ -13,7 +13,7 @@ var classxii_remote_interface =
     [ "GetServerAddress", "d4/d68/classxii_remote_interface.htm#a2fb0da7092c265d297eea2c3b73fa9f1", null ],
     [ "GetServerID", "d4/d68/classxii_remote_interface.htm#a2aa5dd006d9c3da0dc574e1703ae53e1", null ],
     [ "GetServerInfoIP", "d4/d68/classxii_remote_interface.htm#a39dc214c1728e7e3577714f1a71f8319", null ],
-    [ "InternalCreateConnection", "d4/d68/classxii_remote_interface.htm#af4eedb15b18fe46b64057208bfa6846c", null ],
+    [ "InternalCreateConnection", "d4/d68/classxii_remote_interface.htm#a791646141c73a260e6f61beb171a494f", null ],
     [ "InternalGetPingToServer", "d4/d68/classxii_remote_interface.htm#a075ffc0852d5a41f1298e0b974d9c415", null ],
     [ "InternalShutdownConnection", "d4/d68/classxii_remote_interface.htm#a573022cb9a1ab0936eea51a4a8556c32", null ],
     [ "InternalTransmit", "d4/d68/classxii_remote_interface.htm#ab3f061cc921ecdfae47f195ad2203b84", null ],
@@ -33,7 +33,7 @@ var classxii_remote_interface =
     [ "Send", "d4/d68/classxii_remote_interface.htm#ab2b3353904e422eb93f234ee120a2e43", null ],
     [ "SetMessageHandler", "d4/d68/classxii_remote_interface.htm#a7b7bffe429f197a5e07c8c5084b78461", null ],
     [ "ShutdownConnection", "d4/d68/classxii_remote_interface.htm#af820df5a0e4c1b18deb949f6523c59f8", null ],
-    [ "StartServer", "d4/d68/classxii_remote_interface.htm#aec8176155be9f5e084abc02ba627e164", null ],
+    [ "StartServer", "d4/d68/classxii_remote_interface.htm#aba38bb5be79084ec66a16d180f6b81af", null ],
     [ "UpdatePingToServer", "d4/d68/classxii_remote_interface.htm#a4b75c746a3cfc958b77997646c1a7d49", null ],
     [ "UpdateRemoteInterface", "d4/d68/classxii_remote_interface.htm#afff14c1a7368f76b1922f51621109c6d", null ],
     [ "WaitForConnectionToServer", "d4/d68/classxii_remote_interface.htm#a08022869c6c09b7f8034e4f09df1f5d8", null ],

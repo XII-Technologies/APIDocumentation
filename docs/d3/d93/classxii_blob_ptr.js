@@ -7,7 +7,7 @@ var classxii_blob_ptr =
     [ "PointerType", "d3/d93/classxii_blob_ptr.htm#ad3d6e87361dcf801d4c214369dba7df5", null ],
     [ "reverse_iterator", "d3/d93/classxii_blob_ptr.htm#afb9924361529deac014e42df66369871", null ],
     [ "ValueType", "d3/d93/classxii_blob_ptr.htm#ab0cb094a61a82648b110b295632c5b1a", null ],
-    [ "xiiBlobPtr", "d3/d93/classxii_blob_ptr.htm#a537afccab3a9f0c30bef2822ccfba1c8", null ],
+    [ "xiiBlobPtr", "d3/d93/classxii_blob_ptr.htm#acc260bf3f97d20b73e656b1eb8a91485", null ],
     [ "xiiBlobPtr", "d3/d93/classxii_blob_ptr.htm#a696a9f67d62f621322e7c333e82b178f", null ],
     [ "xiiBlobPtr", "d3/d93/classxii_blob_ptr.htm#a7ed8a66d5f0b910e5ff62451f8f3729a", null ],
     [ "xiiBlobPtr", "d3/d93/classxii_blob_ptr.htm#a77579f53bc90ec636433cb8f5c1fbdaf", null ],

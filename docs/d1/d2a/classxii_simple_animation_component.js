@@ -15,10 +15,12 @@ var classxii_simple_animation_component =
     [ "UpdatePlaybackTime", "d1/d2a/classxii_simple_animation_component.htm#aebcbdd57418905282baa5f8f501f272c", null ],
     [ "m_AnimationMode", "d1/d2a/classxii_simple_animation_component.htm#ab9de57dbe33772a586bf7bfd9a97534d", null ],
     [ "m_Duration", "d1/d2a/classxii_simple_animation_component.htm#ab22d319f76f18aaae45e31533d8b0d5a", null ],
+    [ "m_ElapsedTimeSinceUpdate", "d1/d2a/classxii_simple_animation_component.htm#a1251a3901080e95e00429f6972042d1c", null ],
     [ "m_fNormalizedPlaybackPosition", "d1/d2a/classxii_simple_animation_component.htm#a2b8343f5431fe586c7a73b4cc10c007d", null ],
     [ "m_fSpeed", "d1/d2a/classxii_simple_animation_component.htm#a5e64e9dd7e1563d76eab443e6511b619", null ],
     [ "m_hAnimationClip", "d1/d2a/classxii_simple_animation_component.htm#a5133cc74e9be439caa8dc05d04ac7790", null ],
     [ "m_hSkeleton", "d1/d2a/classxii_simple_animation_component.htm#adf7c999b1fc265ed133dedf8983bdd79", null ],
+    [ "m_InvisibleUpdateRate", "d1/d2a/classxii_simple_animation_component.htm#a8620a019268f6d71718dfa53ba50e59f", null ],
     [ "m_OzzLocalTransforms", "d1/d2a/classxii_simple_animation_component.htm#aaa01c514f5ca784e59cfa02c2ac7686f", null ],
     [ "m_RootMotionMode", "d1/d2a/classxii_simple_animation_component.htm#a3cd5a55f634decc26c457ef2be6e6ed6", null ]
 ];

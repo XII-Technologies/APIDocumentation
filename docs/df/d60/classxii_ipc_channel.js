@@ -7,7 +7,7 @@ var classxii_ipc_channel =
       [ "MAX_MESSAGE_SIZE", "df/d60/classxii_ipc_channel.htm#ab3a7aca48b5c6086824e23326f7e0227af6593a588bddb8125072f9ae1d77a0d8", null ]
     ] ],
     [ "~xiiIpcChannel", "df/d60/classxii_ipc_channel.htm#aea2fcabcff5e3a408ed94bc1339d9715", null ],
-    [ "xiiIpcChannel", "df/d60/classxii_ipc_channel.htm#a8ef4299059986846ea76ecd7db7e9695", null ],
+    [ "xiiIpcChannel", "df/d60/classxii_ipc_channel.htm#abe59b4c682f0ced6828b4e39db19b9cc", null ],
     [ "AddToMessageLoop", "df/d60/classxii_ipc_channel.htm#a77affc4612e9375b54e37a72574ebc49", null ],
     [ "Connect", "df/d60/classxii_ipc_channel.htm#aa14be1cd0a271504239cc40975307da4", null ],
     [ "Disconnect", "df/d60/classxii_ipc_channel.htm#aa48f7ccb090abd7b742fbe61de63646b", null ],

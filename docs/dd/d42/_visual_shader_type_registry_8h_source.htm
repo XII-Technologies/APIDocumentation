@@ -175,20 +175,16 @@ $(document).ready(function(){initNavTree('dd/d42/_visual_shader_type_registry_8h
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  <span class="keyword">const</span> <a class="code" href="../../db/d89/classxii_r_t_t_i.htm">xiiRTTI</a>* GenerateTypeFromDesc(<span class="keyword">const</span> <a class="code" href="../../d8/d59/structxii_visual_shader_node_descriptor.htm">xiiVisualShaderNodeDescriptor</a>&amp; desc);</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  <span class="keywordtype">void</span>           LoadConfigFile(<span class="keyword">const</span> <span class="keywordtype">char</span>* szFile);</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  <span class="keywordtype">void</span> ExtractNodePins(</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keyword">const</span> <a class="code" href="../../d1/d33/classxii_open_ddl_reader_element.htm">xiiOpenDdlReaderElement</a>*                   pNode,</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">char</span>*                                      szPinType,</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <a class="code" href="../../dc/da9/classxii_hybrid_array.htm">xiiHybridArray&lt;xiiVisualShaderPinDescriptor, 4&gt;</a>&amp; pinArray,</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="keywordtype">bool</span>                                             bOutput);</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  <span class="keywordtype">void</span> ExtractNodeProperties(<span class="keyword">const</span> <a class="code" href="../../d1/d33/classxii_open_ddl_reader_element.htm">xiiOpenDdlReaderElement</a>* pNode, <a class="code" href="../../d8/d59/structxii_visual_shader_node_descriptor.htm">xiiVisualShaderNodeDescriptor</a>&amp; nd);</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  <span class="keywordtype">void</span> ExtractNodeConfig(<span class="keyword">const</span> <a class="code" href="../../d1/d33/classxii_open_ddl_reader_element.htm">xiiOpenDdlReaderElement</a>* pNode, <a class="code" href="../../d8/d59/structxii_visual_shader_node_descriptor.htm">xiiVisualShaderNodeDescriptor</a>&amp; nd);</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  <a class="code" href="../../d6/df7/classxii_map.htm">xiiMap&lt;const xiiRTTI*, xiiVisualShaderNodeDescriptor&gt;</a> m_NodeDescriptors;</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  <span class="keyword">const</span> <a class="code" href="../../db/d89/classxii_r_t_t_i.htm">xiiRTTI</a>* m_pBaseType;</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;  <span class="keyword">const</span> <a class="code" href="../../db/d89/classxii_r_t_t_i.htm">xiiRTTI</a>* m_pSamplerPinType;</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;};</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  <span class="keywordtype">void</span> ExtractNodePins(<span class="keyword">const</span> <a class="code" href="../../d1/d33/classxii_open_ddl_reader_element.htm">xiiOpenDdlReaderElement</a>* pNode, <span class="keyword">const</span> <span class="keywordtype">char</span>* szPinType, <a class="code" href="../../dc/da9/classxii_hybrid_array.htm">xiiHybridArray&lt;xiiVisualShaderPinDescriptor, 4&gt;</a>&amp; pinArray, <span class="keywordtype">bool</span> bOutput);</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  <span class="keywordtype">void</span> ExtractNodeProperties(<span class="keyword">const</span> <a class="code" href="../../d1/d33/classxii_open_ddl_reader_element.htm">xiiOpenDdlReaderElement</a>* pNode, <a class="code" href="../../d8/d59/structxii_visual_shader_node_descriptor.htm">xiiVisualShaderNodeDescriptor</a>&amp; nd);</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  <span class="keywordtype">void</span> ExtractNodeConfig(<span class="keyword">const</span> <a class="code" href="../../d1/d33/classxii_open_ddl_reader_element.htm">xiiOpenDdlReaderElement</a>* pNode, <a class="code" href="../../d8/d59/structxii_visual_shader_node_descriptor.htm">xiiVisualShaderNodeDescriptor</a>&amp; nd);</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  <a class="code" href="../../d6/df7/classxii_map.htm">xiiMap&lt;const xiiRTTI*, xiiVisualShaderNodeDescriptor&gt;</a> m_NodeDescriptors;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160; </div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  <span class="keyword">const</span> <a class="code" href="../../db/d89/classxii_r_t_t_i.htm">xiiRTTI</a>* m_pBaseType;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  <span class="keyword">const</span> <a class="code" href="../../db/d89/classxii_r_t_t_i.htm">xiiRTTI</a>* m_pSamplerPinType;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;};</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="astructxii_enum_htm"><div class="ttname"><a href="../../de/dfd/structxii_enum.htm">xiiEnum&lt; xiiVisualShaderNodeType &gt;</a></div></div>
@@ -210,7 +206,7 @@ $(document).ready(function(){initNavTree('dd/d42/_visual_shader_type_registry_8h
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.htm">home</a></li><li class="navelem"><a class="el" href="../../dir_1036706e55c22cab35bc1c58ee689f1d.htm">runner</a></li><li class="navelem"><a class="el" href="../../dir_629f8151d55d307162ff2d619fb1783d.htm">work</a></li><li class="navelem"><a class="el" href="../../dir_1ddc44fe1263a8c7935fa6130b7d9499.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_2c1b6808f12952f4c36e05ba7068379a.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_b5a1c4ecfca018ad24b729e213296d41.htm">Source</a></li><li class="navelem"><a class="el" href="../../dir_8b2872ebfb9e9766b55af832f324e224.htm">EditorPlugins</a></li><li class="navelem"><a class="el" href="../../dir_60986f88c7f489c7e6fb568a846b4dbd.htm">Assets</a></li><li class="navelem"><a class="el" href="../../dir_5aec14e1fa7619d5ababae0a678dbab6.htm">EditorPluginAssets</a></li><li class="navelem"><a class="el" href="../../dir_1f7cd80c52a1ad8341286c4cc7bd5125.htm">VisualShader</a></li><li class="navelem"><b>VisualShaderTypeRegistry.h</b></li>
-    <li class="footer">Generated on Sat Jul 1 2023 22:50:10 for XIIEngine by
+    <li class="footer">Generated on Mon Jul 10 2023 23:02:43 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

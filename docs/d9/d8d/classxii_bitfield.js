@@ -14,6 +14,7 @@ var classxii_bitfield =
     [ "SetAllBits", "d9/d8d/classxii_bitfield.htm#af8750e3e8bc835a04571fede728a6992", null ],
     [ "SetBit", "d9/d8d/classxii_bitfield.htm#a48826facb0abb3ed53e095ca0b6ef281", null ],
     [ "SetBitRange", "d9/d8d/classxii_bitfield.htm#a16626b5ef28cd30717e4708d17f4f30c", null ],
+    [ "SetBitValue", "d9/d8d/classxii_bitfield.htm#a20bc8e770be3e20b7489109de3122e71", null ],
     [ "SetCount", "d9/d8d/classxii_bitfield.htm#a9ad2778e76beb59fbbb3e9d5f2b51f3a", null ],
     [ "SetCountUninitialized", "d9/d8d/classxii_bitfield.htm#afa50cc0f06e3b478b90983a356f37799", null ]
 ];

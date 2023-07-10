@@ -678,7 +678,7 @@ $(document).ready(function(){initNavTree('d1/d1e/_s_s_e_vec4f__inl_8h_source.htm
 <div class="line"><a name="l00589"></a><span class="lineno">  589</span>&#160;<span class="comment">// static</span></div>
 <div class="line"><a name="l00590"></a><span class="lineno">  590</span>&#160;XII_ALWAYS_INLINE <a class="code" href="../../d3/da5/classxii_simd_vec4f.htm">xiiSimdVec4f</a> xiiSimdVec4f::MulAdd(<span class="keyword">const</span> <a class="code" href="../../d3/da5/classxii_simd_vec4f.htm">xiiSimdVec4f</a>&amp; a, <span class="keyword">const</span> <a class="code" href="../../d3/da5/classxii_simd_vec4f.htm">xiiSimdVec4f</a>&amp; b, <span class="keyword">const</span> <a class="code" href="../../d3/da5/classxii_simd_vec4f.htm">xiiSimdVec4f</a>&amp; c)</div>
 <div class="line"><a name="l00591"></a><span class="lineno">  591</span>&#160;{</div>
-<div class="line"><a name="l00592"></a><span class="lineno">  592</span>&#160;<span class="preprocessor">#if XII_SSE_LEVEL &gt;= XII_SSE_AVX2</span></div>
+<div class="line"><a name="l00592"></a><span class="lineno">  592</span>&#160;<span class="preprocessor">#if (XII_SIMD_IMPLEMENTATION == XII_SIMD_IMPLEMENTATION_AVX) &amp;&amp; (XII_SSE_LEVEL &gt;= XII_AVX_2)</span></div>
 <div class="line"><a name="l00593"></a><span class="lineno">  593</span>&#160;  <span class="keywordflow">return</span> _mm_fmadd_ps(a.m_v, b.m_v, c.m_v);</div>
 <div class="line"><a name="l00594"></a><span class="lineno">  594</span>&#160;<span class="preprocessor">#else</span></div>
 <div class="line"><a name="l00595"></a><span class="lineno">  595</span>&#160;  <span class="keywordflow">return</span> a.CompMul(b) + c;</div>
@@ -688,7 +688,7 @@ $(document).ready(function(){initNavTree('d1/d1e/_s_s_e_vec4f__inl_8h_source.htm
 <div class="line"><a name="l00599"></a><span class="lineno">  599</span>&#160;<span class="comment">// static</span></div>
 <div class="line"><a name="l00600"></a><span class="lineno">  600</span>&#160;XII_ALWAYS_INLINE <a class="code" href="../../d3/da5/classxii_simd_vec4f.htm">xiiSimdVec4f</a> xiiSimdVec4f::MulAdd(<span class="keyword">const</span> <a class="code" href="../../d3/da5/classxii_simd_vec4f.htm">xiiSimdVec4f</a>&amp; a, <span class="keyword">const</span> <a class="code" href="../../d2/d73/classxii_simd_float.htm">xiiSimdFloat</a>&amp; b, <span class="keyword">const</span> <a class="code" href="../../d3/da5/classxii_simd_vec4f.htm">xiiSimdVec4f</a>&amp; c)</div>
 <div class="line"><a name="l00601"></a><span class="lineno">  601</span>&#160;{</div>
-<div class="line"><a name="l00602"></a><span class="lineno">  602</span>&#160;<span class="preprocessor">#if XII_SSE_LEVEL &gt;= XII_SSE_AVX2</span></div>
+<div class="line"><a name="l00602"></a><span class="lineno">  602</span>&#160;<span class="preprocessor">#if (XII_SIMD_IMPLEMENTATION == XII_SIMD_IMPLEMENTATION_AVX) &amp;&amp; (XII_SSE_LEVEL &gt;= XII_AVX_2)</span></div>
 <div class="line"><a name="l00603"></a><span class="lineno">  603</span>&#160;  <span class="keywordflow">return</span> _mm_fmadd_ps(a.m_v, b.m_v, c.m_v);</div>
 <div class="line"><a name="l00604"></a><span class="lineno">  604</span>&#160;<span class="preprocessor">#else</span></div>
 <div class="line"><a name="l00605"></a><span class="lineno">  605</span>&#160;  <span class="keywordflow">return</span> a * b + c;</div>
@@ -698,7 +698,7 @@ $(document).ready(function(){initNavTree('d1/d1e/_s_s_e_vec4f__inl_8h_source.htm
 <div class="line"><a name="l00609"></a><span class="lineno">  609</span>&#160;<span class="comment">// static</span></div>
 <div class="line"><a name="l00610"></a><span class="lineno">  610</span>&#160;XII_ALWAYS_INLINE <a class="code" href="../../d3/da5/classxii_simd_vec4f.htm">xiiSimdVec4f</a> xiiSimdVec4f::MulSub(<span class="keyword">const</span> <a class="code" href="../../d3/da5/classxii_simd_vec4f.htm">xiiSimdVec4f</a>&amp; a, <span class="keyword">const</span> <a class="code" href="../../d3/da5/classxii_simd_vec4f.htm">xiiSimdVec4f</a>&amp; b, <span class="keyword">const</span> <a class="code" href="../../d3/da5/classxii_simd_vec4f.htm">xiiSimdVec4f</a>&amp; c)</div>
 <div class="line"><a name="l00611"></a><span class="lineno">  611</span>&#160;{</div>
-<div class="line"><a name="l00612"></a><span class="lineno">  612</span>&#160;<span class="preprocessor">#if XII_SSE_LEVEL &gt;= XII_SSE_AVX2</span></div>
+<div class="line"><a name="l00612"></a><span class="lineno">  612</span>&#160;<span class="preprocessor">#if (XII_SIMD_IMPLEMENTATION == XII_SIMD_IMPLEMENTATION_AVX) &amp;&amp; (XII_SSE_LEVEL &gt;= XII_AVX_2)</span></div>
 <div class="line"><a name="l00613"></a><span class="lineno">  613</span>&#160;  <span class="keywordflow">return</span> _mm_fmsub_ps(a.m_v, b.m_v, c.m_v);</div>
 <div class="line"><a name="l00614"></a><span class="lineno">  614</span>&#160;<span class="preprocessor">#else</span></div>
 <div class="line"><a name="l00615"></a><span class="lineno">  615</span>&#160;  <span class="keywordflow">return</span> a.CompMul(b) - c;</div>
@@ -708,7 +708,7 @@ $(document).ready(function(){initNavTree('d1/d1e/_s_s_e_vec4f__inl_8h_source.htm
 <div class="line"><a name="l00619"></a><span class="lineno">  619</span>&#160;<span class="comment">// static</span></div>
 <div class="line"><a name="l00620"></a><span class="lineno">  620</span>&#160;XII_ALWAYS_INLINE <a class="code" href="../../d3/da5/classxii_simd_vec4f.htm">xiiSimdVec4f</a> xiiSimdVec4f::MulSub(<span class="keyword">const</span> <a class="code" href="../../d3/da5/classxii_simd_vec4f.htm">xiiSimdVec4f</a>&amp; a, <span class="keyword">const</span> <a class="code" href="../../d2/d73/classxii_simd_float.htm">xiiSimdFloat</a>&amp; b, <span class="keyword">const</span> <a class="code" href="../../d3/da5/classxii_simd_vec4f.htm">xiiSimdVec4f</a>&amp; c)</div>
 <div class="line"><a name="l00621"></a><span class="lineno">  621</span>&#160;{</div>
-<div class="line"><a name="l00622"></a><span class="lineno">  622</span>&#160;<span class="preprocessor">#if XII_SSE_LEVEL &gt;= XII_SSE_AVX2</span></div>
+<div class="line"><a name="l00622"></a><span class="lineno">  622</span>&#160;<span class="preprocessor">#if (XII_SIMD_IMPLEMENTATION == XII_SIMD_IMPLEMENTATION_AVX) &amp;&amp; (XII_SSE_LEVEL &gt;= XII_AVX_2)</span></div>
 <div class="line"><a name="l00623"></a><span class="lineno">  623</span>&#160;  <span class="keywordflow">return</span> _mm_fmsub_ps(a.m_v, b.m_v, c.m_v);</div>
 <div class="line"><a name="l00624"></a><span class="lineno">  624</span>&#160;<span class="preprocessor">#else</span></div>
 <div class="line"><a name="l00625"></a><span class="lineno">  625</span>&#160;  <span class="keywordflow">return</span> a * b - c;</div>
@@ -733,7 +733,7 @@ $(document).ready(function(){initNavTree('d1/d1e/_s_s_e_vec4f__inl_8h_source.htm
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.htm">home</a></li><li class="navelem"><a class="el" href="../../dir_1036706e55c22cab35bc1c58ee689f1d.htm">runner</a></li><li class="navelem"><a class="el" href="../../dir_629f8151d55d307162ff2d619fb1783d.htm">work</a></li><li class="navelem"><a class="el" href="../../dir_1ddc44fe1263a8c7935fa6130b7d9499.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_2c1b6808f12952f4c36e05ba7068379a.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_b5a1c4ecfca018ad24b729e213296d41.htm">Source</a></li><li class="navelem"><a class="el" href="../../dir_e321052006a51284e67389ab20037e7c.htm">Engine</a></li><li class="navelem"><a class="el" href="../../dir_be0c42c58b36f42c54ec54024ed4f6af.htm">Foundation</a></li><li class="navelem"><a class="el" href="../../dir_6571b00f9c254a01b1735d75b2065daf.htm">SimdMath</a></li><li class="navelem"><a class="el" href="../../dir_421677d30b51fc7bb4bb6333857496b6.htm">Implementation</a></li><li class="navelem"><a class="el" href="../../dir_e8281a334185a03f4bf47922c4645da2.htm">SSE</a></li><li class="navelem"><b>SSEVec4f_inl.h</b></li>
-    <li class="footer">Generated on Sat Jul 1 2023 22:50:18 for XIIEngine by
+    <li class="footer">Generated on Mon Jul 10 2023 23:02:49 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

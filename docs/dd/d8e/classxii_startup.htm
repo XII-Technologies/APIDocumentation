@@ -98,13 +98,13 @@ $(document).ready(function(){initNavTree('dd/d8e/classxii_startup.htm','../../')
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a023af9eff4046873e07f377be5f86707"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d8e/classxii_startup.htm#a023af9eff4046873e07f377be5f86707">AddApplicationTag</a> (const char *szTag)</td></tr>
-<tr class="memdesc:a023af9eff4046873e07f377be5f86707"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stores the const char* as a tag. Does not copy the string, so this must be a string embedded in the application code.  <a href="../../dd/d8e/classxii_startup.htm#a023af9eff4046873e07f377be5f86707">More...</a><br /></td></tr>
-<tr class="separator:a023af9eff4046873e07f377be5f86707"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a811d74235f183737473769838b7b0b9f"><td class="memItemLeft" align="right" valign="top"><a id="a811d74235f183737473769838b7b0b9f"></a>
-static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d8e/classxii_startup.htm#a811d74235f183737473769838b7b0b9f">HasApplicationTag</a> (const char *szTag)</td></tr>
-<tr class="memdesc:a811d74235f183737473769838b7b0b9f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Query whether a tag was added with <a class="el" href="../../dd/d8e/classxii_startup.htm#a023af9eff4046873e07f377be5f86707" title="Stores the const char* as a tag. Does not copy the string, so this must be a string embedded in the a...">AddApplicationTag()</a> <br /></td></tr>
-<tr class="separator:a811d74235f183737473769838b7b0b9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22630c72c2df48497070e2f2b66cf02c"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d8e/classxii_startup.htm#a22630c72c2df48497070e2f2b66cf02c">AddApplicationTag</a> (<a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sTag)</td></tr>
+<tr class="memdesc:a22630c72c2df48497070e2f2b66cf02c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stores the <a class="el" href="../../da/d9d/structxii_string_view.htm" title="xiiStringView represent a read-only sub-string of a larger string, as it can store a dedicated string...">xiiStringView</a> as a tag. Does not copy the string, so this must be a string embedded in the application code.  <a href="../../dd/d8e/classxii_startup.htm#a22630c72c2df48497070e2f2b66cf02c">More...</a><br /></td></tr>
+<tr class="separator:a22630c72c2df48497070e2f2b66cf02c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4033b373734e87f7fa7dcd6d063eaced"><td class="memItemLeft" align="right" valign="top"><a id="a4033b373734e87f7fa7dcd6d063eaced"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d8e/classxii_startup.htm#a4033b373734e87f7fa7dcd6d063eaced">HasApplicationTag</a> (<a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sTag)</td></tr>
+<tr class="memdesc:a4033b373734e87f7fa7dcd6d063eaced"><td class="mdescLeft">&#160;</td><td class="mdescRight">Query whether a tag was added with <a class="el" href="../../dd/d8e/classxii_startup.htm#a22630c72c2df48497070e2f2b66cf02c" title="Stores the xiiStringView as a tag. Does not copy the string, so this must be a string embedded in the...">AddApplicationTag()</a> <br /></td></tr>
+<tr class="separator:a4033b373734e87f7fa7dcd6d063eaced"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a65c47d9fa70034b0c6d7677d2274263b"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d8e/classxii_startup.htm#a65c47d9fa70034b0c6d7677d2274263b">StartupBaseSystems</a> ()</td></tr>
 <tr class="memdesc:a65c47d9fa70034b0c6d7677d2274263b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Runs the 'base' startup sequence of all subsystems in the proper order.  <a href="../../dd/d8e/classxii_startup.htm#a65c47d9fa70034b0c6d7677d2274263b">More...</a><br /></td></tr>
 <tr class="separator:a65c47d9fa70034b0c6d7677d2274263b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -143,8 +143,8 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 <p>If however your subsystem is implemented as a normal class, you need to derive from the base class '<a class="el" href="../../de/d08/classxii_sub_system.htm" title="Base class for all subsystems.">xiiSubSystem</a>' and override the virtual functions. Then when you have an instance of that class and call xiiStartup::StartupCore etc., that instance will be properly initialized as well. However, you must ensure that the subsystem is properly shut down, before its instance is destroyed. Also you should never have two instances of the same subsystem.</p>
 <p>All startup / shutdown procedures broadcast global events before and after they execute. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a023af9eff4046873e07f377be5f86707"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a023af9eff4046873e07f377be5f86707">&#9670;&nbsp;</a></span>AddApplicationTag()</h2>
+<a id="a22630c72c2df48497070e2f2b66cf02c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a22630c72c2df48497070e2f2b66cf02c">&#9670;&nbsp;</a></span>AddApplicationTag()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -155,8 +155,8 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
         <tr>
           <td class="memname">void xiiStartup::AddApplicationTag </td>
           <td>(</td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>szTag</em></td><td>)</td>
+          <td class="paramtype"><a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a>&#160;</td>
+          <td class="paramname"><em>sTag</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -167,7 +167,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 </table>
 </div><div class="memdoc">
 
-<p>Stores the const char* as a tag. Does not copy the string, so this must be a string embedded in the application code. </p>
+<p>Stores the <a class="el" href="../../da/d9d/structxii_string_view.htm" title="xiiStringView represent a read-only sub-string of a larger string, as it can store a dedicated string...">xiiStringView</a> as a tag. Does not copy the string, so this must be a string embedded in the application code. </p>
 <p>Before executing the startup routines an application should set tags that allow plugins to identify the context in which they are running. This makes it possible for the startup functions to conditionally configure things.</p>
 <p>Strings that should be used for common things: 'runtime' : For all applications that run the full engine, automatically added by <a class="el" href="../../d1/ded/classxii_game_application.htm" title="The base class for all typical game applications made with xiiEngine.">xiiGameApplication</a>. Be aware that some tool applications have this set, even though they don't use graphical output. 'editor' : for all applications that run the editor framework, set on the Editor and the EditorProcessor 'testframework' : for applications that execute the xiiTestFramework 'tool' : for all stand-alone tool applications, set by the editor, editorprocessor, fileserve, etc. </p>
 
@@ -351,7 +351,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dd/d8e/classxii_startup.htm">xiiStartup</a></li>
-    <li class="footer">Generated on Sat Jul 1 2023 22:50:34 for XIIEngine by
+    <li class="footer">Generated on Mon Jul 10 2023 23:03:01 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

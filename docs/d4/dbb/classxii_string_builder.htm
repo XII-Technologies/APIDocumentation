@@ -412,12 +412,14 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../.
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dbb/classxii_string_builder.htm#a9a4139a496fd356c6fb418def7842be0">Trim</a> (const char *szTrimCharsStart, const char *szTrimCharsEnd)</td></tr>
 <tr class="memdesc:a9a4139a496fd356c6fb418def7842be0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes all characters from the start and/or end that appear in the given strings. <br /></td></tr>
 <tr class="separator:a9a4139a496fd356c6fb418def7842be0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5ebc675f494296175215ac1041ee8916"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dbb/classxii_string_builder.htm#a5ebc675f494296175215ac1041ee8916">TrimWordStart</a> (const char *szWord1, const char *szWord2=nullptr, const char *szWord3=nullptr, const char *szWord4=nullptr, const char *szWord5=nullptr)</td></tr>
-<tr class="memdesc:a5ebc675f494296175215ac1041ee8916"><td class="mdescLeft">&#160;</td><td class="mdescRight">If the string starts with one of the given words (case insensitive), it is removed and the function returns true.  <a href="../../d4/dbb/classxii_string_builder.htm#a5ebc675f494296175215ac1041ee8916">More...</a><br /></td></tr>
-<tr class="separator:a5ebc675f494296175215ac1041ee8916"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3895e140fd44a016eb9ddefa11f3b05b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dbb/classxii_string_builder.htm#a3895e140fd44a016eb9ddefa11f3b05b">TrimWordEnd</a> (const char *szWord1, const char *szWord2=nullptr, const char *szWord3=nullptr, const char *szWord4=nullptr, const char *szWord5=nullptr)</td></tr>
-<tr class="memdesc:a3895e140fd44a016eb9ddefa11f3b05b"><td class="mdescLeft">&#160;</td><td class="mdescRight">If the string ends with one of the given words (case insensitive), it is removed and the function returns true.  <a href="../../d4/dbb/classxii_string_builder.htm#a3895e140fd44a016eb9ddefa11f3b05b">More...</a><br /></td></tr>
-<tr class="separator:a3895e140fd44a016eb9ddefa11f3b05b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4d3b5cb3a935b4ebfd8e609fa09c76f"><td class="memItemLeft" align="right" valign="top"><a id="aa4d3b5cb3a935b4ebfd8e609fa09c76f"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dbb/classxii_string_builder.htm#aa4d3b5cb3a935b4ebfd8e609fa09c76f">TrimWordStart</a> (<a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sWord)</td></tr>
+<tr class="memdesc:aa4d3b5cb3a935b4ebfd8e609fa09c76f"><td class="mdescLeft">&#160;</td><td class="mdescRight">If the string starts with the given word (case insensitive), it is removed and the function returns true. <br /></td></tr>
+<tr class="separator:aa4d3b5cb3a935b4ebfd8e609fa09c76f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada2422be111f5859eec04c8b62b9c445"><td class="memItemLeft" align="right" valign="top"><a id="ada2422be111f5859eec04c8b62b9c445"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dbb/classxii_string_builder.htm#ada2422be111f5859eec04c8b62b9c445">TrimWordEnd</a> (<a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sWord)</td></tr>
+<tr class="memdesc:ada2422be111f5859eec04c8b62b9c445"><td class="mdescLeft">&#160;</td><td class="mdescRight">If the string ends with the given word (case insensitive), it is removed and the function returns true. <br /></td></tr>
+<tr class="separator:ada2422be111f5859eec04c8b62b9c445"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_structxii_string_base"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_structxii_string_base')"><img src="../../closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="../../d2/d29/structxii_string_base.htm">xiiStringBase&lt; xiiStringBuilder &gt;</a></td></tr>
 <tr class="memitem:a52ad52604f0b98226a0342393b8db662 inherit pub_methods_structxii_string_base"><td class="memItemLeft" align="right" valign="top"><a id="a52ad52604f0b98226a0342393b8db662"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d29/structxii_string_base.htm#a52ad52604f0b98226a0342393b8db662">IsEmpty</a> () const</td></tr>
@@ -1089,104 +1091,6 @@ IsFileBelowFolder ("", "") -&gt; always false<br  />
 
 </div>
 </div>
-<a id="a3895e140fd44a016eb9ddefa11f3b05b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3895e140fd44a016eb9ddefa11f3b05b">&#9670;&nbsp;</a></span>TrimWordEnd()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool xiiStringBuilder::TrimWordEnd </td>
-          <td>(</td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>szWord1</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>szWord2</em> = <code>nullptr</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>szWord3</em> = <code>nullptr</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>szWord4</em> = <code>nullptr</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>szWord5</em> = <code>nullptr</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>If the string ends with one of the given words (case insensitive), it is removed and the function returns true. </p>
-<dl class="test"><dt><b><a class="el" href="../../d4/df6/test.htm#_test000035">Test:</a></b></dt><dd>TrimWordEnd </dd></dl>
-
-</div>
-</div>
-<a id="a5ebc675f494296175215ac1041ee8916"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5ebc675f494296175215ac1041ee8916">&#9670;&nbsp;</a></span>TrimWordStart()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool xiiStringBuilder::TrimWordStart </td>
-          <td>(</td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>szWord1</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>szWord2</em> = <code>nullptr</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>szWord3</em> = <code>nullptr</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>szWord4</em> = <code>nullptr</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>szWord5</em> = <code>nullptr</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>If the string starts with one of the given words (case insensitive), it is removed and the function returns true. </p>
-<dl class="test"><dt><b><a class="el" href="../../d4/df6/test.htm#_test000034">Test:</a></b></dt><dd>TrimWordStart </dd></dl>
-
-</div>
-</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>/home/runner/work/XII/XII/Source/Engine/Foundation/Strings/<a class="el" href="../../d5/df1/_string_builder_8h_source.htm">StringBuilder.h</a></li>
 <li>/home/runner/work/XII/XII/Source/Engine/Foundation/Strings/Implementation/StringBuilder.cpp</li>
@@ -1198,7 +1102,7 @@ IsFileBelowFolder ("", "") -&gt; always false<br  />
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d4/dbb/classxii_string_builder.htm">xiiStringBuilder</a></li>
-    <li class="footer">Generated on Sat Jul 1 2023 22:50:34 for XIIEngine by
+    <li class="footer">Generated on Mon Jul 10 2023 23:03:01 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

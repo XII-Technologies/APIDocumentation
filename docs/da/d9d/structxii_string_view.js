@@ -63,7 +63,7 @@ var structxii_string_view =
     [ "StartsWith_NoCase", "da/d9d/structxii_string_view.htm#ab31f6dc792051eb0eb10d7a7a86ef835", null ],
     [ "Trim", "da/d9d/structxii_string_view.htm#ab8e3cab7b427f8f870b367d23a5066b6", null ],
     [ "Trim", "da/d9d/structxii_string_view.htm#aecc3e4dfa07b682a2366f476bd091564", null ],
-    [ "TrimWordEnd", "da/d9d/structxii_string_view.htm#a56923e1fc011f46139b9bd59fc1d799e", null ],
-    [ "TrimWordStart", "da/d9d/structxii_string_view.htm#a07129117b67e953fe84eb406983ebae1", null ],
+    [ "TrimWordEnd", "da/d9d/structxii_string_view.htm#a15957b2b568f11473a2309ee8923b53e", null ],
+    [ "TrimWordStart", "da/d9d/structxii_string_view.htm#a72cfec4f6beea1842358a4d9bc39d7ba", null ],
     [ "XII_DECLARE_POD_TYPE", "da/d9d/structxii_string_view.htm#a1ee8c00c115424c7f8cb1d58581714c2", null ]
 ];

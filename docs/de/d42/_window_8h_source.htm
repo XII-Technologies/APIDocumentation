@@ -108,294 +108,314 @@ $(document).ready(function(){initNavTree('de/d42/_window_8h_source.htm','../../'
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#  include &lt;Core/System/Implementation/Win/InputDevice_win32.h&gt;</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#elif XII_ENABLED(XII_PLATFORM_WINDOWS_UWP)</span></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#  include &lt;Core/System/Implementation/uwp/InputDevice_uwp.h&gt;</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#  include &lt;Core/System/Implementation/null/InputDevice_null.h&gt;</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment">// Currently the following scenarios are possible</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment">// - Windows native implementation, using HWND</span></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment">// - SDL on windows, using SDLWindow* internally and HWND to pass windows around</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment">// - SDL / XCB on linux. Runtime uses SDL_Window*. Editor uses xcb-window. Tagged union is passed around as window handle.</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#if XII_ENABLED(XII_SUPPORTS_SDL)</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;{</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  <span class="keyword">using</span> SDL_Window = <span class="keyword">struct </span>SDL_Window;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;}</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#  if XII_ENABLED(XII_PLATFORM_WINDOWS_DESKTOP)</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#    include &lt;Foundation/Basics/Platform/Win/MinWindows.h&gt;</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">using</span> xiiWindowHandle         = xiiMinWindows::HWND;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">using</span> xiiWindowInternalHandle = SDL_Window*;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#    define INVALID_WINDOW_HANDLE_VALUE (xiiWindowHandle)(0)</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">#  elif XII_ENABLED(XII_PLATFORM_LINUX)</span></div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">#    include &lt;Foundation/Basics/Platform/Linux/MinX11.h&gt;</span></div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keyword">struct </span>xiiXcbWindowHandle</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;{</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  xiiMinX11::xcb_connection_t m_pConnection;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  xiiMinX11::Window           m_hWindow;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;};</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keyword">struct </span>xiiWindowHandle</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;{</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <span class="keyword">enum class</span> Type</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  {</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    Invalid = 0,</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    SDL     = 1, <span class="comment">// Used by the Runtime</span></div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    XCB     = 2  <span class="comment">// Used by the Editor</span></div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  };</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  Type type;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <span class="keyword">union</span></div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  {</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    SDL_Window*        sdlWindow;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    xiiXcbWindowHandle xcbWindow;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  };</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  <span class="keywordtype">bool</span> operator==(xiiWindowHandle&amp; rhs)</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  {</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordflow">if</span> (type != rhs.type)</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordflow">if</span> (type == Type::SDL)</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    {</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;      <span class="keywordflow">return</span> sdlWindow == rhs.sdlWindow;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    }</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    {</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;      <span class="comment">// We don&#39;t compare the connection because we only want to know if we reference the same window.</span></div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;      <span class="keywordflow">return</span> xcbWindow.m_hWindow == rhs.xcbWindow.m_hWindow;</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    }</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  }</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;};</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="keyword">using</span> xiiWindowInternalHandle = xiiWindowHandle;</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="preprocessor">#    define INVALID_WINDOW_HANDLE_VALUE \</span></div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="preprocessor">      xiiWindowHandle                   \</span></div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="preprocessor">      {}</span></div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="preprocessor">#  elif XII_ENABLED(XII_PLATFORM_ANDROID)</span></div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span></div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;{</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  <span class="keyword">using</span> ANativeWindow = <span class="keyword">struct </span>ANativeWindow;</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;}</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="keyword">using</span> xiiWindowHandle         = ANativeWindow*;</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="keyword">using</span> xiiWindowInternalHandle = SDL_Window*;</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="preprocessor">#    define INVALID_WINDOW_HANDLE_VALUE nullptr</span></div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="preprocessor">#  else</span></div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="keyword">using</span> xiiWindowHandle         = SDL_Window*;</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="keyword">using</span> xiiWindowInternalHandle = SDL_Window*;</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="preprocessor">#    define INVALID_WINDOW_HANDLE_VALUE (SDL_Window*)(0)</span></div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="preprocessor">#  endif</span></div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160; </div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="preprocessor">#elif XII_ENABLED(XII_PLATFORM_WINDOWS_DESKTOP)</span></div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160; </div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="preprocessor">#  include &lt;Foundation/Basics/Platform/Win/MinWindows.h&gt;</span></div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="keyword">using</span> xiiWindowHandle         = xiiMinWindows::HWND;</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="keyword">using</span> xiiWindowInternalHandle = xiiWindowHandle;</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="preprocessor">#  define INVALID_WINDOW_HANDLE_VALUE (xiiWindowHandle)(0)</span></div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160; </div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="preprocessor">#elif XII_ENABLED(XII_PLATFORM_WINDOWS_UWP)</span></div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160; </div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="keyword">using</span> xiiWindowHandle         = IUnknown*;</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="keyword">using</span> xiiWindowInternalHandle = xiiWindowHandle;</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="preprocessor">#  define INVALID_WINDOW_HANDLE_VALUE nullptr</span></div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160; </div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160; </div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="keyword">using</span> xiiWindowHandle         = <span class="keywordtype">void</span>*;</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="keyword">using</span> xiiWindowInternalHandle = xiiWindowHandle;</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="preprocessor">#  define INVALID_WINDOW_HANDLE_VALUE nullptr</span></div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160; </div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160; </div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<span class="preprocessor">#ifndef INVALID_INTERNAL_WINDOW_HANDLE_VALUE</span></div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;<span class="preprocessor">#  define INVALID_INTERNAL_WINDOW_HANDLE_VALUE INVALID_WINDOW_HANDLE_VALUE</span></div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160; </div>
-<div class="line"><a name="l00127"></a><span class="lineno"><a class="line" href="../../de/dd5/classxii_window_base.htm">  127</a></span>&#160;<span class="keyword">class </span>XII_CORE_DLL <a class="code" href="../../de/dd5/classxii_window_base.htm">xiiWindowBase</a></div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;{</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;  <span class="keyword">virtual</span> ~<a class="code" href="../../de/dd5/classxii_window_base.htm">xiiWindowBase</a>() = <span class="keywordflow">default</span>;</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160; </div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;  <span class="keyword">virtual</span> <a class="code" href="../../db/d7f/classxii_size_template.htm">xiiSizeU32</a>      GetClientAreaSize() <span class="keyword">const</span>     = 0;</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;  <span class="keyword">virtual</span> xiiWindowHandle GetNativeWindowHandle() <span class="keyword">const</span> = 0;</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160; </div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">bool</span> IsFullscreenWindow(<span class="keywordtype">bool</span> bOnlyProperFullscreenMode = <span class="keyword">false</span>) <span class="keyword">const</span> = 0;</div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160; </div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> ProcessWindowMessages() = 0;</div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160; </div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> AddReference()    = 0;</div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> RemoveReference() = 0;</div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;};</div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160; </div>
-<div class="line"><a name="l00148"></a><span class="lineno"><a class="line" href="../../d4/d40/structxii_window_mode.htm">  148</a></span>&#160;<span class="keyword">struct </span>XII_CORE_DLL <a class="code" href="../../d4/d40/structxii_window_mode.htm">xiiWindowMode</a></div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;{</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;  <span class="keyword">using</span> StorageType = xiiUInt8;</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160; </div>
-<div class="line"><a name="l00152"></a><span class="lineno"><a class="line" href="../../d4/d40/structxii_window_mode.htm#a572581340725890ccb4f8b0c2c40ef73">  152</a></span>&#160;  <span class="keyword">enum</span> <a class="code" href="../../d4/d40/structxii_window_mode.htm#a572581340725890ccb4f8b0c2c40ef73">Enum</a></div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;  {</div>
-<div class="line"><a name="l00154"></a><span class="lineno"><a class="line" href="../../d4/d40/structxii_window_mode.htm#a572581340725890ccb4f8b0c2c40ef73a33e301fb73b0d227640bf2cf84f045b3">  154</a></span>&#160;    <a class="code" href="../../d4/d40/structxii_window_mode.htm#a572581340725890ccb4f8b0c2c40ef73a33e301fb73b0d227640bf2cf84f045b3">WindowFixedResolution</a>,                </div>
-<div class="line"><a name="l00155"></a><span class="lineno"><a class="line" href="../../d4/d40/structxii_window_mode.htm#a572581340725890ccb4f8b0c2c40ef73a267d8ec33bdf68fa657f3c763f5e3b21">  155</a></span>&#160;    <a class="code" href="../../d4/d40/structxii_window_mode.htm#a572581340725890ccb4f8b0c2c40ef73a267d8ec33bdf68fa657f3c763f5e3b21">WindowResizable</a>,                      </div>
-<div class="line"><a name="l00156"></a><span class="lineno"><a class="line" href="../../d4/d40/structxii_window_mode.htm#a572581340725890ccb4f8b0c2c40ef73ad5e32e9ff34c3be52e6ab48ce5cdcdc6">  156</a></span>&#160;    FullscreenBorderlessNativeResolution, </div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    FullscreenFixedResolution,            </div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160; </div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    Default = WindowFixedResolution</div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;  };</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160; </div>
-<div class="line"><a name="l00165"></a><span class="lineno"><a class="line" href="../../d4/d40/structxii_window_mode.htm#a618fbd5ea2b30748daa5289d03ee70e7">  165</a></span>&#160;  <span class="keyword">static</span> constexpr <span class="keywordtype">bool</span> <a class="code" href="../../d4/d40/structxii_window_mode.htm#a618fbd5ea2b30748daa5289d03ee70e7">IsFullscreen</a>(<a class="code" href="../../d4/d40/structxii_window_mode.htm#a572581340725890ccb4f8b0c2c40ef73">Enum</a> e) { <span class="keywordflow">return</span> e == FullscreenBorderlessNativeResolution || e == FullscreenFixedResolution; }</div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;};</div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160; </div>
-<div class="line"><a name="l00169"></a><span class="lineno"><a class="line" href="../../d6/d8c/structxii_window_creation_desc.htm">  169</a></span>&#160;<span class="keyword">struct </span>XII_CORE_DLL <a class="code" href="../../d6/d8c/structxii_window_creation_desc.htm">xiiWindowCreationDesc</a></div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;{</div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;  <a class="code" href="../../dd/dad/structxii_result.htm">xiiResult</a> AdjustWindowSizeAndPosition();</div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160; </div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;  <span class="keywordtype">void</span> SaveToDDL(<a class="code" href="../../d5/d15/classxii_open_ddl_writer.htm">xiiOpenDdlWriter</a>&amp; ref_writer);</div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160; </div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;  <a class="code" href="../../dd/dad/structxii_result.htm">xiiResult</a> SaveToDDL(<a class="code" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sFile);</div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160; </div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;  <span class="keywordtype">void</span> LoadFromDDL(<span class="keyword">const</span> <a class="code" href="../../d1/d33/classxii_open_ddl_reader_element.htm">xiiOpenDdlReaderElement</a>* pParentElement);</div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160; </div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;  <a class="code" href="../../dd/dad/structxii_result.htm">xiiResult</a> LoadFromDDL(<a class="code" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sFile);</div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160; </div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160; </div>
-<div class="line"><a name="l00194"></a><span class="lineno"><a class="line" href="../../d6/d8c/structxii_window_creation_desc.htm#a66942ecccb9f78d08ad509a2e20a4bf0">  194</a></span>&#160;  <a class="code" href="../../df/dfb/structxii_hybrid_string.htm">xiiString</a> m_Title = <span class="stringliteral">&quot;XII&quot;</span>;</div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160; </div>
-<div class="line"><a name="l00197"></a><span class="lineno"><a class="line" href="../../d6/d8c/structxii_window_creation_desc.htm#a48134bca01578e27267fc93cb3e0b601">  197</a></span>&#160;  <a class="code" href="../../de/dfd/structxii_enum.htm">xiiEnum&lt;xiiWindowMode&gt;</a> <a class="code" href="../../d6/d8c/structxii_window_creation_desc.htm#a48134bca01578e27267fc93cb3e0b601">m_WindowMode</a>;</div>
-<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160; </div>
-<div class="line"><a name="l00201"></a><span class="lineno"><a class="line" href="../../d6/d8c/structxii_window_creation_desc.htm#a69741d3a86b143665c3c6c26d62d60e6">  201</a></span>&#160;  xiiInt8 m_iMonitor = -1;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#elif XII_ENABLED(XII_PLATFORM_ANDROID)</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#  include &lt;Core/System/Implementation/Android/InputDevice_android.h&gt;</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#  include &lt;Core/System/Implementation/null/InputDevice_null.h&gt;</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment">// Currently the following scenarios are possible</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment">// - Windows native implementation, using HWND.</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment">// - Android native implementation, using ANativeWindow.</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="comment">// - SDL on windows, using SDLWindow* internally and HWND to pass windows around.</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="comment">// - SDL / XCB on linux. Runtime uses SDL_Window*. Editor uses xcb-window. Tagged union is passed around as window handle.</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#if XII_ENABLED(XII_SUPPORTS_SDL)</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;{</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <span class="keyword">using</span> SDL_Window = <span class="keyword">struct </span>SDL_Window;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;}</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#  if XII_ENABLED(XII_PLATFORM_WINDOWS_DESKTOP)</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#    include &lt;Foundation/Basics/Platform/Win/MinWindows.h&gt;</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keyword">using</span> xiiWindowHandle         = xiiMinWindows::HWND;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keyword">using</span> xiiWindowInternalHandle = SDL_Window*;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">#    define INVALID_WINDOW_HANDLE_VALUE (xiiWindowHandle)(0)</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">#  elif XII_ENABLED(XII_PLATFORM_LINUX)</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor">#    include &lt;Foundation/Basics/Platform/Linux/MinX11.h&gt;</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keyword">struct </span>xiiXcbWindowHandle</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;{</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  xiiMinX11::xcb_connection_t m_pConnection;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  xiiMinX11::Window           m_hWindow;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;};</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="keyword">struct </span>xiiWindowHandle</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;{</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <span class="keyword">enum class</span> Type</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  {</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    Invalid = 0,</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    SDL     = 1, <span class="comment">// Used by the Runtime</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    XCB     = 2  <span class="comment">// Used by the Editor</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  };</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  Type type;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  <span class="keyword">union</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  {</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    SDL_Window*        sdlWindow;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    xiiXcbWindowHandle xcbWindow;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  };</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <span class="keywordtype">bool</span> operator==(xiiWindowHandle&amp; rhs)</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  {</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordflow">if</span> (type != rhs.type)</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keywordflow">if</span> (type == Type::SDL)</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    {</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;      <span class="keywordflow">return</span> sdlWindow == rhs.sdlWindow;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    }</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    {</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;      <span class="comment">// We don&#39;t compare the connection because we only want to know if we reference the same window.</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;      <span class="keywordflow">return</span> xcbWindow.m_hWindow == rhs.xcbWindow.m_hWindow;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    }</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  }</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;};</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="keyword">using</span> xiiWindowInternalHandle = xiiWindowHandle;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="preprocessor">#    define INVALID_WINDOW_HANDLE_VALUE \</span></div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="preprocessor">      xiiWindowHandle                   \</span></div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="preprocessor">      {}</span></div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="preprocessor">#  elif XII_ENABLED(XII_PLATFORM_ANDROID)</span></div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span></div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;{</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  <span class="keyword">using</span> ANativeWindow = <span class="keyword">struct </span>ANativeWindow;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;}</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="keyword">using</span> xiiWindowHandle         = ANativeWindow*;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="keyword">using</span> xiiWindowInternalHandle = SDL_Window*;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="preprocessor">#    define INVALID_WINDOW_HANDLE_VALUE nullptr</span></div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="preprocessor">#  else</span></div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="keyword">using</span> xiiWindowHandle         = SDL_Window*;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="keyword">using</span> xiiWindowInternalHandle = SDL_Window*;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="preprocessor">#    define INVALID_WINDOW_HANDLE_VALUE (SDL_Window*)(0)</span></div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="preprocessor">#  endif</span></div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; </div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="preprocessor">#elif XII_ENABLED(XII_PLATFORM_WINDOWS_DESKTOP)</span></div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160; </div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="preprocessor">#  include &lt;Foundation/Basics/Platform/Win/MinWindows.h&gt;</span></div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="keyword">using</span> xiiWindowHandle         = xiiMinWindows::HWND;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="keyword">using</span> xiiWindowInternalHandle = xiiWindowHandle;</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="preprocessor">#  define INVALID_WINDOW_HANDLE_VALUE (xiiWindowHandle)(0)</span></div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160; </div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="preprocessor">#elif XII_ENABLED(XII_PLATFORM_WINDOWS_UWP)</span></div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160; </div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="keyword">using</span> xiiWindowHandle         = IUnknown*;</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="keyword">using</span> xiiWindowInternalHandle = xiiWindowHandle;</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="preprocessor">#  define INVALID_WINDOW_HANDLE_VALUE nullptr</span></div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160; </div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="preprocessor">#elif XII_ENABLED(XII_PLATFORM_ANDROID)</span></div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160; </div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span></div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;{</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;  <span class="keyword">using</span> ANativeWindow = <span class="keyword">struct </span>ANativeWindow;</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;}</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160; </div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;<span class="keyword">using</span> xiiWindowHandle         = ANativeWindow*;</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;<span class="keyword">using</span> xiiWindowInternalHandle = xiiWindowHandle;</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;<span class="preprocessor">#  define INVALID_WINDOW_HANDLE_VALUE nullptr</span></div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160; </div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160; </div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;<span class="keyword">using</span> xiiWindowHandle         = <span class="keywordtype">void</span>*;</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;<span class="keyword">using</span> xiiWindowInternalHandle = xiiWindowHandle;</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;<span class="preprocessor">#  define INVALID_WINDOW_HANDLE_VALUE nullptr</span></div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160; </div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160; </div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;<span class="preprocessor">#ifndef INVALID_INTERNAL_WINDOW_HANDLE_VALUE</span></div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;<span class="preprocessor">#  define INVALID_INTERNAL_WINDOW_HANDLE_VALUE INVALID_WINDOW_HANDLE_VALUE</span></div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160; </div>
+<div class="line"><a name="l00141"></a><span class="lineno"><a class="line" href="../../de/dd5/classxii_window_base.htm">  141</a></span>&#160;<span class="keyword">class </span>XII_CORE_DLL <a class="code" href="../../de/dd5/classxii_window_base.htm">xiiWindowBase</a></div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;{</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;  <span class="keyword">virtual</span> ~<a class="code" href="../../de/dd5/classxii_window_base.htm">xiiWindowBase</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160; </div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;  <span class="keyword">virtual</span> <a class="code" href="../../db/d7f/classxii_size_template.htm">xiiSizeU32</a>      GetClientAreaSize() <span class="keyword">const</span>     = 0;</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;  <span class="keyword">virtual</span> xiiWindowHandle GetNativeWindowHandle() <span class="keyword">const</span> = 0;</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160; </div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">bool</span> IsFullscreenWindow(<span class="keywordtype">bool</span> bOnlyProperFullscreenMode = <span class="keyword">false</span>) <span class="keyword">const</span> = 0;</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160; </div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> ProcessWindowMessages() = 0;</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160; </div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> AddReference()    = 0;</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> RemoveReference() = 0;</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;};</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160; </div>
+<div class="line"><a name="l00162"></a><span class="lineno"><a class="line" href="../../d4/d40/structxii_window_mode.htm">  162</a></span>&#160;<span class="keyword">struct </span>XII_CORE_DLL <a class="code" href="../../d4/d40/structxii_window_mode.htm">xiiWindowMode</a></div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;{</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;  <span class="keyword">using</span> StorageType = xiiUInt8;</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160; </div>
+<div class="line"><a name="l00166"></a><span class="lineno"><a class="line" href="../../d4/d40/structxii_window_mode.htm#a572581340725890ccb4f8b0c2c40ef73">  166</a></span>&#160;  <span class="keyword">enum</span> <a class="code" href="../../d4/d40/structxii_window_mode.htm#a572581340725890ccb4f8b0c2c40ef73">Enum</a></div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;  {</div>
+<div class="line"><a name="l00168"></a><span class="lineno"><a class="line" href="../../d4/d40/structxii_window_mode.htm#a572581340725890ccb4f8b0c2c40ef73a33e301fb73b0d227640bf2cf84f045b3">  168</a></span>&#160;    <a class="code" href="../../d4/d40/structxii_window_mode.htm#a572581340725890ccb4f8b0c2c40ef73a33e301fb73b0d227640bf2cf84f045b3">WindowFixedResolution</a>,                </div>
+<div class="line"><a name="l00169"></a><span class="lineno"><a class="line" href="../../d4/d40/structxii_window_mode.htm#a572581340725890ccb4f8b0c2c40ef73a267d8ec33bdf68fa657f3c763f5e3b21">  169</a></span>&#160;    <a class="code" href="../../d4/d40/structxii_window_mode.htm#a572581340725890ccb4f8b0c2c40ef73a267d8ec33bdf68fa657f3c763f5e3b21">WindowResizable</a>,                      </div>
+<div class="line"><a name="l00170"></a><span class="lineno"><a class="line" href="../../d4/d40/structxii_window_mode.htm#a572581340725890ccb4f8b0c2c40ef73ad5e32e9ff34c3be52e6ab48ce5cdcdc6">  170</a></span>&#160;    FullscreenBorderlessNativeResolution, </div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;    FullscreenFixedResolution,            </div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160; </div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;    Default = WindowFixedResolution</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;  };</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160; </div>
+<div class="line"><a name="l00179"></a><span class="lineno"><a class="line" href="../../d4/d40/structxii_window_mode.htm#a618fbd5ea2b30748daa5289d03ee70e7">  179</a></span>&#160;  <span class="keyword">static</span> constexpr <span class="keywordtype">bool</span> <a class="code" href="../../d4/d40/structxii_window_mode.htm#a618fbd5ea2b30748daa5289d03ee70e7">IsFullscreen</a>(<a class="code" href="../../d4/d40/structxii_window_mode.htm#a572581340725890ccb4f8b0c2c40ef73">Enum</a> e) { <span class="keywordflow">return</span> e == FullscreenBorderlessNativeResolution || e == FullscreenFixedResolution; }</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;};</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160; </div>
+<div class="line"><a name="l00183"></a><span class="lineno"><a class="line" href="../../d6/d8c/structxii_window_creation_desc.htm">  183</a></span>&#160;<span class="keyword">struct </span>XII_CORE_DLL <a class="code" href="../../d6/d8c/structxii_window_creation_desc.htm">xiiWindowCreationDesc</a></div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;{</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;  <a class="code" href="../../dd/dad/structxii_result.htm">xiiResult</a> AdjustWindowSizeAndPosition();</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160; </div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;  <span class="keywordtype">void</span> SaveToDDL(<a class="code" href="../../d5/d15/classxii_open_ddl_writer.htm">xiiOpenDdlWriter</a>&amp; ref_writer);</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160; </div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;  <a class="code" href="../../dd/dad/structxii_result.htm">xiiResult</a> SaveToDDL(<a class="code" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sFile);</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160; </div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;  <span class="keywordtype">void</span> LoadFromDDL(<span class="keyword">const</span> <a class="code" href="../../d1/d33/classxii_open_ddl_reader_element.htm">xiiOpenDdlReaderElement</a>* pParentElement);</div>
 <div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160; </div>
-<div class="line"><a name="l00204"></a><span class="lineno"><a class="line" href="../../d6/d8c/structxii_window_creation_desc.htm#a36a7ff1ca01631101ebb26dc68fb7599">  204</a></span>&#160;  <a class="code" href="../../d1/d0d/classxii_vec2_template.htm">xiiVec2I32</a> m_Position = <a class="code" href="../../d1/d0d/classxii_vec2_template.htm">xiiVec2I32</a>(0x80000000, 0x80000000); <span class="comment">// Magic number on windows that positions the window at a &#39;good default position&#39;</span></div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;  <a class="code" href="../../dd/dad/structxii_result.htm">xiiResult</a> LoadFromDDL(<a class="code" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sFile);</div>
 <div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160; </div>
-<div class="line"><a name="l00207"></a><span class="lineno"><a class="line" href="../../d6/d8c/structxii_window_creation_desc.htm#a55da1cc661d3c6ddbb0d53ebaff62298">  207</a></span>&#160;  <a class="code" href="../../db/d7f/classxii_size_template.htm">xiiSizeU32</a> m_Resolution = <a class="code" href="../../db/d7f/classxii_size_template.htm">xiiSizeU32</a>(1280u, 720u);</div>
-<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160; </div>
-<div class="line"><a name="l00211"></a><span class="lineno"><a class="line" href="../../d6/d8c/structxii_window_creation_desc.htm#ad32fee4b5c33c49e5d9c81a684095200">  211</a></span>&#160;  xiiUInt8 m_uiWindowNumber = 0;</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160; </div>
+<div class="line"><a name="l00208"></a><span class="lineno"><a class="line" href="../../d6/d8c/structxii_window_creation_desc.htm#a66942ecccb9f78d08ad509a2e20a4bf0">  208</a></span>&#160;  <a class="code" href="../../df/dfb/structxii_hybrid_string.htm">xiiString</a> m_Title = <span class="stringliteral">&quot;XII&quot;</span>;</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160; </div>
+<div class="line"><a name="l00211"></a><span class="lineno"><a class="line" href="../../d6/d8c/structxii_window_creation_desc.htm#a48134bca01578e27267fc93cb3e0b601">  211</a></span>&#160;  <a class="code" href="../../de/dfd/structxii_enum.htm">xiiEnum&lt;xiiWindowMode&gt;</a> <a class="code" href="../../d6/d8c/structxii_window_creation_desc.htm#a48134bca01578e27267fc93cb3e0b601">m_WindowMode</a>;</div>
 <div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160; </div>
-<div class="line"><a name="l00215"></a><span class="lineno"><a class="line" href="../../d6/d8c/structxii_window_creation_desc.htm#ac1ac18d561a602db57b5c4692b7a8a96">  215</a></span>&#160;  <span class="keywordtype">bool</span> m_bClipMouseCursor = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00215"></a><span class="lineno"><a class="line" href="../../d6/d8c/structxii_window_creation_desc.htm#a69741d3a86b143665c3c6c26d62d60e6">  215</a></span>&#160;  xiiInt8 m_iMonitor = -1;</div>
 <div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160; </div>
-<div class="line"><a name="l00219"></a><span class="lineno"><a class="line" href="../../d6/d8c/structxii_window_creation_desc.htm#a51eb1018e59e6911c8400d8523e5f3f3">  219</a></span>&#160;  <span class="keywordtype">bool</span> m_bShowMouseCursor = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160; </div>
-<div class="line"><a name="l00222"></a><span class="lineno"><a class="line" href="../../d6/d8c/structxii_window_creation_desc.htm#a0f5a8c301f102e58fa8917ed1a016288">  222</a></span>&#160;  <span class="keywordtype">bool</span> m_bSetForegroundOnInit = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;};</div>
-<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160; </div>
-<div class="line"><a name="l00230"></a><span class="lineno"><a class="line" href="../../d2/d13/classxii_window.htm">  230</a></span>&#160;<span class="keyword">class </span>XII_CORE_DLL <a class="code" href="../../d2/d13/classxii_window.htm">xiiWindow</a> : <span class="keyword">public</span> <a class="code" href="../../de/dd5/classxii_window_base.htm">xiiWindowBase</a></div>
-<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;{</div>
-<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;  <a class="code" href="../../d2/d13/classxii_window.htm">xiiWindow</a>();</div>
+<div class="line"><a name="l00218"></a><span class="lineno"><a class="line" href="../../d6/d8c/structxii_window_creation_desc.htm#a36a7ff1ca01631101ebb26dc68fb7599">  218</a></span>&#160;  <a class="code" href="../../d1/d0d/classxii_vec2_template.htm">xiiVec2I32</a> m_Position = <a class="code" href="../../d1/d0d/classxii_vec2_template.htm">xiiVec2I32</a>(0x80000000, 0x80000000); <span class="comment">// Magic number on windows that positions the window at a &#39;good default position&#39;</span></div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160; </div>
+<div class="line"><a name="l00221"></a><span class="lineno"><a class="line" href="../../d6/d8c/structxii_window_creation_desc.htm#a55da1cc661d3c6ddbb0d53ebaff62298">  221</a></span>&#160;  <a class="code" href="../../db/d7f/classxii_size_template.htm">xiiSizeU32</a> m_Resolution = <a class="code" href="../../db/d7f/classxii_size_template.htm">xiiSizeU32</a>(1280u, 720u);</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160; </div>
+<div class="line"><a name="l00225"></a><span class="lineno"><a class="line" href="../../d6/d8c/structxii_window_creation_desc.htm#ad32fee4b5c33c49e5d9c81a684095200">  225</a></span>&#160;  xiiUInt8 m_uiWindowNumber = 0;</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160; </div>
+<div class="line"><a name="l00229"></a><span class="lineno"><a class="line" href="../../d6/d8c/structxii_window_creation_desc.htm#ac1ac18d561a602db57b5c4692b7a8a96">  229</a></span>&#160;  <span class="keywordtype">bool</span> m_bClipMouseCursor = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160; </div>
+<div class="line"><a name="l00233"></a><span class="lineno"><a class="line" href="../../d6/d8c/structxii_window_creation_desc.htm#a51eb1018e59e6911c8400d8523e5f3f3">  233</a></span>&#160;  <span class="keywordtype">bool</span> m_bShowMouseCursor = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160; </div>
+<div class="line"><a name="l00236"></a><span class="lineno"><a class="line" href="../../d6/d8c/structxii_window_creation_desc.htm#a0f5a8c301f102e58fa8917ed1a016288">  236</a></span>&#160;  <span class="keywordtype">bool</span> m_bSetForegroundOnInit = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;};</div>
 <div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160; </div>
-<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;  <span class="keyword">virtual</span> ~<a class="code" href="../../d2/d13/classxii_window.htm">xiiWindow</a>();</div>
-<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160; </div>
-<div class="line"><a name="l00243"></a><span class="lineno"><a class="line" href="../../d2/d13/classxii_window.htm#a3218250bba61c72a9515e5c77c942060">  243</a></span>&#160;  <span class="keyword">inline</span> <span class="keyword">const</span> <a class="code" href="../../d6/d8c/structxii_window_creation_desc.htm">xiiWindowCreationDesc</a>&amp; <a class="code" href="../../d2/d13/classxii_window.htm#a3218250bba61c72a9515e5c77c942060">GetCreationDescription</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_CreationDescription; }</div>
-<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160; </div>
-<div class="line"><a name="l00246"></a><span class="lineno"><a class="line" href="../../d2/d13/classxii_window.htm#a85bafa14a75f946bd716ad5ebad22e2d">  246</a></span>&#160;  <span class="keyword">virtual</span> <a class="code" href="../../db/d7f/classxii_size_template.htm">xiiSizeU32</a> <a class="code" href="../../d2/d13/classxii_window.htm#a85bafa14a75f946bd716ad5ebad22e2d">GetClientAreaSize</a>()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> m_CreationDescription.m_Resolution; }</div>
-<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160; </div>
-<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;  <span class="keyword">virtual</span> xiiWindowHandle GetNativeWindowHandle() <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160; </div>
-<div class="line"><a name="l00254"></a><span class="lineno"><a class="line" href="../../d2/d13/classxii_window.htm#ab5c20ca3069fca37bda04ab08294edba">  254</a></span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="../../d2/d13/classxii_window.htm#ab5c20ca3069fca37bda04ab08294edba">IsFullscreenWindow</a>(<span class="keywordtype">bool</span> bOnlyProperFullscreenMode = <span class="keyword">false</span>)<span class="keyword"> const override</span></div>
-<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;<span class="keyword">  </span>{</div>
-<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;    <span class="keywordflow">if</span> (bOnlyProperFullscreenMode)</div>
-<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;      <span class="keywordflow">return</span> m_CreationDescription.m_WindowMode == <a class="code" href="../../d4/d40/structxii_window_mode.htm#a572581340725890ccb4f8b0c2c40ef73a1ebda2228190db68b14fb92a98246ced">xiiWindowMode::FullscreenFixedResolution</a>;</div>
+<div class="line"><a name="l00244"></a><span class="lineno"><a class="line" href="../../d2/d13/classxii_window.htm">  244</a></span>&#160;<span class="keyword">class </span>XII_CORE_DLL <a class="code" href="../../d2/d13/classxii_window.htm">xiiWindow</a> : <span class="keyword">public</span> <a class="code" href="../../de/dd5/classxii_window_base.htm">xiiWindowBase</a></div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;{</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;  <a class="code" href="../../d2/d13/classxii_window.htm">xiiWindow</a>();</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160; </div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;  <span class="keyword">virtual</span> ~<a class="code" href="../../d2/d13/classxii_window.htm">xiiWindow</a>();</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160; </div>
+<div class="line"><a name="l00257"></a><span class="lineno"><a class="line" href="../../d2/d13/classxii_window.htm#a3218250bba61c72a9515e5c77c942060">  257</a></span>&#160;  <span class="keyword">inline</span> <span class="keyword">const</span> <a class="code" href="../../d6/d8c/structxii_window_creation_desc.htm">xiiWindowCreationDesc</a>&amp; <a class="code" href="../../d2/d13/classxii_window.htm#a3218250bba61c72a9515e5c77c942060">GetCreationDescription</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_CreationDescription; }</div>
 <div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160; </div>
-<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="../../d4/d40/structxii_window_mode.htm#a618fbd5ea2b30748daa5289d03ee70e7">xiiWindowMode::IsFullscreen</a>(m_CreationDescription.m_WindowMode);</div>
-<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;  }</div>
+<div class="line"><a name="l00260"></a><span class="lineno"><a class="line" href="../../d2/d13/classxii_window.htm#a85bafa14a75f946bd716ad5ebad22e2d">  260</a></span>&#160;  <span class="keyword">virtual</span> <a class="code" href="../../db/d7f/classxii_size_template.htm">xiiSizeU32</a> <a class="code" href="../../d2/d13/classxii_window.htm#a85bafa14a75f946bd716ad5ebad22e2d">GetClientAreaSize</a>()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> m_CreationDescription.m_Resolution; }</div>
 <div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160; </div>
-<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> AddReference()<span class="keyword"> override </span>{ m_iReferenceCount.Increment(); }</div>
-<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> RemoveReference()<span class="keyword"> override </span>{ m_iReferenceCount.Decrement(); }</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;  <span class="keyword">virtual</span> xiiWindowHandle GetNativeWindowHandle() <span class="keyword">const override</span>;</div>
 <div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160; </div>
-<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160; </div>
-<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> ProcessWindowMessages() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160; </div>
-<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;  <a class="code" href="../../dd/dad/structxii_result.htm">xiiResult</a> Initialize();</div>
-<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160; </div>
-<div class="line"><a name="l00286"></a><span class="lineno"><a class="line" href="../../d2/d13/classxii_window.htm#a8bc7e9a93c79fe2a5f2647804aaee0d4">  286</a></span>&#160;  <a class="code" href="../../dd/dad/structxii_result.htm">xiiResult</a> <a class="code" href="../../d2/d13/classxii_window.htm#a8bc7e9a93c79fe2a5f2647804aaee0d4">Initialize</a>(<span class="keyword">const</span> <a class="code" href="../../d6/d8c/structxii_window_creation_desc.htm">xiiWindowCreationDesc</a>&amp; creationDescription)</div>
-<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;  {</div>
-<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;    m_CreationDescription = creationDescription;</div>
-<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;    <span class="keywordflow">return</span> Initialize();</div>
-<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;  }</div>
+<div class="line"><a name="l00268"></a><span class="lineno"><a class="line" href="../../d2/d13/classxii_window.htm#ab5c20ca3069fca37bda04ab08294edba">  268</a></span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="../../d2/d13/classxii_window.htm#ab5c20ca3069fca37bda04ab08294edba">IsFullscreenWindow</a>(<span class="keywordtype">bool</span> bOnlyProperFullscreenMode = <span class="keyword">false</span>)<span class="keyword"> const override</span></div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;<span class="keyword">  </span>{</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;    <span class="keywordflow">if</span> (bOnlyProperFullscreenMode)</div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;      <span class="keywordflow">return</span> m_CreationDescription.m_WindowMode == <a class="code" href="../../d4/d40/structxii_window_mode.htm#a572581340725890ccb4f8b0c2c40ef73a1ebda2228190db68b14fb92a98246ced">xiiWindowMode::FullscreenFixedResolution</a>;</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160; </div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="../../d4/d40/structxii_window_mode.htm#a618fbd5ea2b30748daa5289d03ee70e7">xiiWindowMode::IsFullscreen</a>(m_CreationDescription.m_WindowMode);</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;  }</div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160; </div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> AddReference()<span class="keyword"> override </span>{ m_iReferenceCount.Increment(); }</div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> RemoveReference()<span class="keyword"> override </span>{ m_iReferenceCount.Decrement(); }</div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160; </div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160; </div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> ProcessWindowMessages() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160; </div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;  <a class="code" href="../../dd/dad/structxii_result.htm">xiiResult</a> Initialize();</div>
 <div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160; </div>
-<div class="line"><a name="l00293"></a><span class="lineno"><a class="line" href="../../d2/d13/classxii_window.htm#a414030449608dd1ef8b5ed2aa93c5e4c">  293</a></span>&#160;  <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="../../d2/d13/classxii_window.htm#a414030449608dd1ef8b5ed2aa93c5e4c">IsInitialized</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_bInitialized; }</div>
-<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160; </div>
-<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;  <a class="code" href="../../dd/dad/structxii_result.htm">xiiResult</a> Destroy();</div>
-<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160; </div>
-<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;  <a class="code" href="../../dd/dad/structxii_result.htm">xiiResult</a> Resize(<span class="keyword">const</span> <a class="code" href="../../db/d7f/classxii_size_template.htm">xiiSizeU32</a>&amp; newWindowSize);</div>
-<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160; </div>
-<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> OnResize(<span class="keyword">const</span> <a class="code" href="../../db/d7f/classxii_size_template.htm">xiiSizeU32</a>&amp; newWindowSize);</div>
+<div class="line"><a name="l00300"></a><span class="lineno"><a class="line" href="../../d2/d13/classxii_window.htm#a8bc7e9a93c79fe2a5f2647804aaee0d4">  300</a></span>&#160;  <a class="code" href="../../dd/dad/structxii_result.htm">xiiResult</a> <a class="code" href="../../d2/d13/classxii_window.htm#a8bc7e9a93c79fe2a5f2647804aaee0d4">Initialize</a>(<span class="keyword">const</span> <a class="code" href="../../d6/d8c/structxii_window_creation_desc.htm">xiiWindowCreationDesc</a>&amp; creationDescription)</div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;  {</div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;    m_CreationDescription = creationDescription;</div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;    <span class="keywordflow">return</span> Initialize();</div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;  }</div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160; </div>
+<div class="line"><a name="l00307"></a><span class="lineno"><a class="line" href="../../d2/d13/classxii_window.htm#a414030449608dd1ef8b5ed2aa93c5e4c">  307</a></span>&#160;  <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="../../d2/d13/classxii_window.htm#a414030449608dd1ef8b5ed2aa93c5e4c">IsInitialized</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_bInitialized; }</div>
 <div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160; </div>
-<div class="line"><a name="l00310"></a><span class="lineno"><a class="line" href="../../d2/d13/classxii_window.htm#a1da83eb7c4c4d0abcb4b010f66497d1c">  310</a></span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="../../d2/d13/classxii_window.htm#a1da83eb7c4c4d0abcb4b010f66497d1c">OnWindowMove</a>(<span class="keyword">const</span> xiiInt32 iNewPosX, <span class="keyword">const</span> xiiInt32 iNewPosY) {}</div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;  <a class="code" href="../../dd/dad/structxii_result.htm">xiiResult</a> Destroy();</div>
 <div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160; </div>
-<div class="line"><a name="l00313"></a><span class="lineno"><a class="line" href="../../d2/d13/classxii_window.htm#a8d0fcb10ac3fd4ab68af552196068acf">  313</a></span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="../../d2/d13/classxii_window.htm#a8d0fcb10ac3fd4ab68af552196068acf">OnFocus</a>(<span class="keywordtype">bool</span> bHasFocus) {}</div>
-<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160; </div>
-<div class="line"><a name="l00316"></a><span class="lineno"><a class="line" href="../../d2/d13/classxii_window.htm#aadda987a4153f41525bb655dcc6d7467">  316</a></span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="../../d2/d13/classxii_window.htm#aadda987a4153f41525bb655dcc6d7467">OnClickClose</a>() {}</div>
-<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160; </div>
-<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160; </div>
-<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;<span class="preprocessor">#if XII_ENABLED(XII_PLATFORM_WINDOWS)</span></div>
-<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> OnWindowMessage(xiiMinWindows::HWND pWnd, xiiMinWindows::UINT msg, xiiMinWindows::WPARAM wparam, xiiMinWindows::LPARAM lparam);</div>
-<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160; </div>
-<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;<span class="preprocessor">#elif XII_ENABLED(XII_PLATFORM_OSX)</span></div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;  <a class="code" href="../../dd/dad/structxii_result.htm">xiiResult</a> Resize(<span class="keyword">const</span> <a class="code" href="../../db/d7f/classxii_size_template.htm">xiiSizeU32</a>&amp; newWindowSize);</div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160; </div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> OnResize(<span class="keyword">const</span> <a class="code" href="../../db/d7f/classxii_size_template.htm">xiiSizeU32</a>&amp; newWindowSize);</div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160; </div>
+<div class="line"><a name="l00324"></a><span class="lineno"><a class="line" href="../../d2/d13/classxii_window.htm#a1da83eb7c4c4d0abcb4b010f66497d1c">  324</a></span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="../../d2/d13/classxii_window.htm#a1da83eb7c4c4d0abcb4b010f66497d1c">OnWindowMove</a>(<span class="keyword">const</span> xiiInt32 iNewPosX, <span class="keyword">const</span> xiiInt32 iNewPosY) {}</div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160; </div>
+<div class="line"><a name="l00327"></a><span class="lineno"><a class="line" href="../../d2/d13/classxii_window.htm#a8d0fcb10ac3fd4ab68af552196068acf">  327</a></span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="../../d2/d13/classxii_window.htm#a8d0fcb10ac3fd4ab68af552196068acf">OnFocus</a>(<span class="keywordtype">bool</span> bHasFocus) {}</div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160; </div>
+<div class="line"><a name="l00330"></a><span class="lineno"><a class="line" href="../../d2/d13/classxii_window.htm#aadda987a4153f41525bb655dcc6d7467">  330</a></span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="../../d2/d13/classxii_window.htm#aadda987a4153f41525bb655dcc6d7467">OnClickClose</a>() {}</div>
 <div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160; </div>
-<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;<span class="preprocessor">#elif XII_ENABLED(XII_PLATFORM_LINUX)</span></div>
-<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160; </div>
-<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;<span class="preprocessor">#elif XII_ENABLED(XII_PLATFORM_ANDROID)</span></div>
-<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160; </div>
-<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;<span class="preprocessor">#  error &quot;Missing code for xiiWindow on this platform!&quot;</span></div>
-<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160; </div>
-<div class="line"><a name="l00341"></a><span class="lineno"><a class="line" href="../../d2/d13/classxii_window.htm#ad7197897395515ca1c8bfdf92c559fe0">  341</a></span>&#160;  <a class="code" href="../../dc/de5/classxii_standard_input_device.htm">xiiStandardInputDevice</a>* <a class="code" href="../../d2/d13/classxii_window.htm#ad7197897395515ca1c8bfdf92c559fe0">GetInputDevice</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_pInputDevice.Borrow(); }</div>
-<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160; </div>
-<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;  <span class="keyword">static</span> xiiUInt8 GetNextUnusedWindowNumber();</div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160; </div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;<span class="preprocessor">#if XII_ENABLED(XII_PLATFORM_WINDOWS)</span></div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> OnWindowMessage(xiiMinWindows::HWND pWnd, xiiMinWindows::UINT msg, xiiMinWindows::WPARAM wparam, xiiMinWindows::LPARAM lparam);</div>
+<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160; </div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;<span class="preprocessor">#elif XII_ENABLED(XII_PLATFORM_OSX)</span></div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160; </div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;<span class="preprocessor">#elif XII_ENABLED(XII_PLATFORM_LINUX)</span></div>
 <div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160; </div>
-<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00351"></a><span class="lineno"><a class="line" href="../../d2/d13/classxii_window.htm#a2e692ef61a473482f20ae6982f8711e6">  351</a></span>&#160;  <a class="code" href="../../d6/d8c/structxii_window_creation_desc.htm">xiiWindowCreationDesc</a> <a class="code" href="../../d2/d13/classxii_window.htm#a2e692ef61a473482f20ae6982f8711e6">m_CreationDescription</a>;</div>
-<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160; </div>
-<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;  <span class="keywordtype">bool</span> m_bInitialized = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160; </div>
-<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;  <a class="code" href="../../d9/d4a/classxii_unique_ptr.htm">xiiUniquePtr&lt;xiiStandardInputDevice&gt;</a> m_pInputDevice;</div>
-<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160; </div>
-<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;  <span class="keyword">mutable</span> xiiWindowInternalHandle m_hWindowHandle = xiiWindowInternalHandle();</div>
-<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160; </div>
-<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;  <span class="keyword">static</span> xiiUInt8    s_uiNextUnusedWindowNumber;</div>
-<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;  <a class="code" href="../../db/d8e/classxii_atomic_integer.htm">xiiAtomicInteger32</a> m_iReferenceCount = 0;</div>
-<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;};</div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;<span class="preprocessor">#elif XII_ENABLED(XII_PLATFORM_ANDROID)</span></div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160; </div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;<span class="preprocessor">#  error &quot;Missing code for xiiWindow on this platform!&quot;</span></div>
+<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160; </div>
+<div class="line"><a name="l00355"></a><span class="lineno"><a class="line" href="../../d2/d13/classxii_window.htm#ad7197897395515ca1c8bfdf92c559fe0">  355</a></span>&#160;  <a class="code" href="../../dc/de5/classxii_standard_input_device.htm">xiiStandardInputDevice</a>* <a class="code" href="../../d2/d13/classxii_window.htm#ad7197897395515ca1c8bfdf92c559fe0">GetInputDevice</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_pInputDevice.Borrow(); }</div>
+<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160; </div>
+<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;  <span class="keyword">static</span> xiiUInt8 GetNextUnusedWindowNumber();</div>
+<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160; </div>
+<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00365"></a><span class="lineno"><a class="line" href="../../d2/d13/classxii_window.htm#a2e692ef61a473482f20ae6982f8711e6">  365</a></span>&#160;  <a class="code" href="../../d6/d8c/structxii_window_creation_desc.htm">xiiWindowCreationDesc</a> <a class="code" href="../../d2/d13/classxii_window.htm#a2e692ef61a473482f20ae6982f8711e6">m_CreationDescription</a>;</div>
+<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160; </div>
+<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;<span class="preprocessor">#if XII_ENABLED(XII_PLATFORM_ANDROID)</span></div>
+<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span>     CommandCallback(android_app* pAndroidApp, xiiInt32 iCommand);</div>
+<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;  <span class="keyword">static</span> xiiInt32 InputEventCallback(android_app* pAndroidApp, AInputEvent* pInputEvent);</div>
+<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160; </div>
+<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;  <span class="keywordtype">bool</span> m_bInitialized = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160; </div>
+<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;  <a class="code" href="../../d9/d4a/classxii_unique_ptr.htm">xiiUniquePtr&lt;xiiStandardInputDevice&gt;</a> m_pInputDevice;</div>
+<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160; </div>
+<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;  <span class="keyword">mutable</span> xiiWindowInternalHandle m_hWindowHandle = xiiWindowInternalHandle();</div>
+<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160; </div>
+<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;  <span class="keyword">static</span> xiiUInt8    s_uiNextUnusedWindowNumber;</div>
+<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;  <a class="code" href="../../db/d8e/classxii_atomic_integer.htm">xiiAtomicInteger32</a> m_iReferenceCount = 0;</div>
+<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;};</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="astructxii_enum_htm"><div class="ttname"><a href="../../de/dfd/structxii_enum.htm">xiiEnum&lt; xiiWindowMode &gt;</a></div></div>
-<div class="ttc" id="astructxii_window_mode_htm_a572581340725890ccb4f8b0c2c40ef73a267d8ec33bdf68fa657f3c763f5e3b21"><div class="ttname"><a href="../../d4/d40/structxii_window_mode.htm#a572581340725890ccb4f8b0c2c40ef73a267d8ec33bdf68fa657f3c763f5e3b21">xiiWindowMode::WindowResizable</a></div><div class="ttdeci">@ WindowResizable</div><div class="ttdoc">The resolution and size are what the user picked and will not be changed. Allows window resizing by t...</div><div class="ttdef"><b>Definition:</b> Window.h:155</div></div>
-<div class="ttc" id="astructxii_window_mode_htm_a572581340725890ccb4f8b0c2c40ef73a33e301fb73b0d227640bf2cf84f045b3"><div class="ttname"><a href="../../d4/d40/structxii_window_mode.htm#a572581340725890ccb4f8b0c2c40ef73a33e301fb73b0d227640bf2cf84f045b3">xiiWindowMode::WindowFixedResolution</a></div><div class="ttdeci">@ WindowFixedResolution</div><div class="ttdoc">The resolution and size are what the user picked and will not be changed. The window will not be resi...</div><div class="ttdef"><b>Definition:</b> Window.h:154</div></div>
+<div class="ttc" id="astructxii_window_mode_htm_a572581340725890ccb4f8b0c2c40ef73a267d8ec33bdf68fa657f3c763f5e3b21"><div class="ttname"><a href="../../d4/d40/structxii_window_mode.htm#a572581340725890ccb4f8b0c2c40ef73a267d8ec33bdf68fa657f3c763f5e3b21">xiiWindowMode::WindowResizable</a></div><div class="ttdeci">@ WindowResizable</div><div class="ttdoc">The resolution and size are what the user picked and will not be changed. Allows window resizing by t...</div><div class="ttdef"><b>Definition:</b> Window.h:169</div></div>
+<div class="ttc" id="astructxii_window_mode_htm_a572581340725890ccb4f8b0c2c40ef73a33e301fb73b0d227640bf2cf84f045b3"><div class="ttname"><a href="../../d4/d40/structxii_window_mode.htm#a572581340725890ccb4f8b0c2c40ef73a33e301fb73b0d227640bf2cf84f045b3">xiiWindowMode::WindowFixedResolution</a></div><div class="ttdeci">@ WindowFixedResolution</div><div class="ttdoc">The resolution and size are what the user picked and will not be changed. The window will not be resi...</div><div class="ttdef"><b>Definition:</b> Window.h:168</div></div>
 <div class="ttc" id="aclassxii_open_ddl_writer_htm"><div class="ttname"><a href="../../d5/d15/classxii_open_ddl_writer.htm">xiiOpenDdlWriter</a></div><div class="ttdoc">The base class for OpenDDL writers.</div><div class="ttdef"><b>Definition:</b> OpenDdlWriter.h:12</div></div>
-<div class="ttc" id="aclassxii_window_htm_a1da83eb7c4c4d0abcb4b010f66497d1c"><div class="ttname"><a href="../../d2/d13/classxii_window.htm#a1da83eb7c4c4d0abcb4b010f66497d1c">xiiWindow::OnWindowMove</a></div><div class="ttdeci">virtual void OnWindowMove(const xiiInt32 iNewPosX, const xiiInt32 iNewPosY)</div><div class="ttdoc">Called when the window position is changed. Not possible on all OSes.</div><div class="ttdef"><b>Definition:</b> Window.h:310</div></div>
+<div class="ttc" id="aclassxii_window_htm_a1da83eb7c4c4d0abcb4b010f66497d1c"><div class="ttname"><a href="../../d2/d13/classxii_window.htm#a1da83eb7c4c4d0abcb4b010f66497d1c">xiiWindow::OnWindowMove</a></div><div class="ttdeci">virtual void OnWindowMove(const xiiInt32 iNewPosX, const xiiInt32 iNewPosY)</div><div class="ttdoc">Called when the window position is changed. Not possible on all OSes.</div><div class="ttdef"><b>Definition:</b> Window.h:324</div></div>
 <div class="ttc" id="aclassxii_open_ddl_reader_element_htm"><div class="ttname"><a href="../../d1/d33/classxii_open_ddl_reader_element.htm">xiiOpenDdlReaderElement</a></div><div class="ttdoc">Represents a single 'object' in a DDL document, e.g. either a custom type or a primitives list.</div><div class="ttdef"><b>Definition:</b> OpenDdlReader.h:10</div></div>
-<div class="ttc" id="astructxii_window_mode_htm_a618fbd5ea2b30748daa5289d03ee70e7"><div class="ttname"><a href="../../d4/d40/structxii_window_mode.htm#a618fbd5ea2b30748daa5289d03ee70e7">xiiWindowMode::IsFullscreen</a></div><div class="ttdeci">static constexpr bool IsFullscreen(Enum e)</div><div class="ttdoc">Returns whether the window covers an entire monitor. This includes borderless windows and proper full...</div><div class="ttdef"><b>Definition:</b> Window.h:165</div></div>
-<div class="ttc" id="aclassxii_standard_input_device_htm"><div class="ttname"><a href="../../dc/de5/classxii_standard_input_device.htm">xiiStandardInputDevice</a></div><div class="ttdef"><b>Definition:</b> InputDevice_null.h:5</div></div>
+<div class="ttc" id="astructxii_window_mode_htm_a618fbd5ea2b30748daa5289d03ee70e7"><div class="ttname"><a href="../../d4/d40/structxii_window_mode.htm#a618fbd5ea2b30748daa5289d03ee70e7">xiiWindowMode::IsFullscreen</a></div><div class="ttdeci">static constexpr bool IsFullscreen(Enum e)</div><div class="ttdoc">Returns whether the window covers an entire monitor. This includes borderless windows and proper full...</div><div class="ttdef"><b>Definition:</b> Window.h:179</div></div>
+<div class="ttc" id="aclassxii_standard_input_device_htm"><div class="ttname"><a href="../../dc/de5/classxii_standard_input_device.htm">xiiStandardInputDevice</a></div><div class="ttdef"><b>Definition:</b> InputDevice_android.h:11</div></div>
 <div class="ttc" id="aclassxii_open_ddl_reader_htm"><div class="ttname"><a href="../../d6/dbd/classxii_open_ddl_reader.htm">xiiOpenDdlReader</a></div><div class="ttdoc">An OpenDDL reader parses an entire DDL document and creates an in-memory representation of the docume...</div><div class="ttdef"><b>Definition:</b> OpenDdlReader.h:117</div></div>
-<div class="ttc" id="aclassxii_window_htm_a3218250bba61c72a9515e5c77c942060"><div class="ttname"><a href="../../d2/d13/classxii_window.htm#a3218250bba61c72a9515e5c77c942060">xiiWindow::GetCreationDescription</a></div><div class="ttdeci">const xiiWindowCreationDesc &amp; GetCreationDescription() const</div><div class="ttdoc">Returns the currently active description struct.</div><div class="ttdef"><b>Definition:</b> Window.h:243</div></div>
-<div class="ttc" id="aclassxii_window_base_htm"><div class="ttname"><a href="../../de/dd5/classxii_window_base.htm">xiiWindowBase</a></div><div class="ttdoc">Base class of all window classes that have a client area and a native window handle.</div><div class="ttdef"><b>Definition:</b> Window.h:127</div></div>
-<div class="ttc" id="astructxii_window_mode_htm_a572581340725890ccb4f8b0c2c40ef73"><div class="ttname"><a href="../../d4/d40/structxii_window_mode.htm#a572581340725890ccb4f8b0c2c40ef73">xiiWindowMode::Enum</a></div><div class="ttdeci">Enum</div><div class="ttdef"><b>Definition:</b> Window.h:152</div></div>
+<div class="ttc" id="aclassxii_window_htm_a3218250bba61c72a9515e5c77c942060"><div class="ttname"><a href="../../d2/d13/classxii_window.htm#a3218250bba61c72a9515e5c77c942060">xiiWindow::GetCreationDescription</a></div><div class="ttdeci">const xiiWindowCreationDesc &amp; GetCreationDescription() const</div><div class="ttdoc">Returns the currently active description struct.</div><div class="ttdef"><b>Definition:</b> Window.h:257</div></div>
+<div class="ttc" id="aclassxii_window_base_htm"><div class="ttname"><a href="../../de/dd5/classxii_window_base.htm">xiiWindowBase</a></div><div class="ttdoc">Base class of all window classes that have a client area and a native window handle.</div><div class="ttdef"><b>Definition:</b> Window.h:141</div></div>
+<div class="ttc" id="astructxii_window_mode_htm_a572581340725890ccb4f8b0c2c40ef73"><div class="ttname"><a href="../../d4/d40/structxii_window_mode.htm#a572581340725890ccb4f8b0c2c40ef73">xiiWindowMode::Enum</a></div><div class="ttdeci">Enum</div><div class="ttdef"><b>Definition:</b> Window.h:166</div></div>
 <div class="ttc" id="aclassxii_atomic_integer_htm"><div class="ttname"><a href="../../db/d8e/classxii_atomic_integer.htm">xiiAtomicInteger&lt; xiiInt32 &gt;</a></div></div>
 <div class="ttc" id="astructxii_hybrid_string_htm"><div class="ttname"><a href="../../df/dfb/structxii_hybrid_string.htm">xiiHybridString&lt; 32, xiiDefaultAllocatorWrapper &gt;</a></div></div>
-<div class="ttc" id="aclassxii_window_htm_a414030449608dd1ef8b5ed2aa93c5e4c"><div class="ttname"><a href="../../d2/d13/classxii_window.htm#a414030449608dd1ef8b5ed2aa93c5e4c">xiiWindow::IsInitialized</a></div><div class="ttdeci">bool IsInitialized() const</div><div class="ttdoc">Gets if the window is up and running.</div><div class="ttdef"><b>Definition:</b> Window.h:293</div></div>
-<div class="ttc" id="aclassxii_window_htm"><div class="ttname"><a href="../../d2/d13/classxii_window.htm">xiiWindow</a></div><div class="ttdoc">A simple abstraction for platform specific window creation.</div><div class="ttdef"><b>Definition:</b> Window.h:230</div></div>
-<div class="ttc" id="aclassxii_window_htm_a2e692ef61a473482f20ae6982f8711e6"><div class="ttname"><a href="../../d2/d13/classxii_window.htm#a2e692ef61a473482f20ae6982f8711e6">xiiWindow::m_CreationDescription</a></div><div class="ttdeci">xiiWindowCreationDesc m_CreationDescription</div><div class="ttdef"><b>Definition:</b> Window.h:351</div></div>
-<div class="ttc" id="aclassxii_window_htm_a8d0fcb10ac3fd4ab68af552196068acf"><div class="ttname"><a href="../../d2/d13/classxii_window.htm#a8d0fcb10ac3fd4ab68af552196068acf">xiiWindow::OnFocus</a></div><div class="ttdeci">virtual void OnFocus(bool bHasFocus)</div><div class="ttdoc">Called when the window gets focus or loses focus.</div><div class="ttdef"><b>Definition:</b> Window.h:313</div></div>
+<div class="ttc" id="aclassxii_window_htm_a414030449608dd1ef8b5ed2aa93c5e4c"><div class="ttname"><a href="../../d2/d13/classxii_window.htm#a414030449608dd1ef8b5ed2aa93c5e4c">xiiWindow::IsInitialized</a></div><div class="ttdeci">bool IsInitialized() const</div><div class="ttdoc">Gets if the window is up and running.</div><div class="ttdef"><b>Definition:</b> Window.h:307</div></div>
+<div class="ttc" id="aclassxii_window_htm"><div class="ttname"><a href="../../d2/d13/classxii_window.htm">xiiWindow</a></div><div class="ttdoc">A simple abstraction for platform specific window creation.</div><div class="ttdef"><b>Definition:</b> Window.h:244</div></div>
+<div class="ttc" id="aclassxii_window_htm_a2e692ef61a473482f20ae6982f8711e6"><div class="ttname"><a href="../../d2/d13/classxii_window.htm#a2e692ef61a473482f20ae6982f8711e6">xiiWindow::m_CreationDescription</a></div><div class="ttdeci">xiiWindowCreationDesc m_CreationDescription</div><div class="ttdef"><b>Definition:</b> Window.h:365</div></div>
+<div class="ttc" id="aclassxii_window_htm_a8d0fcb10ac3fd4ab68af552196068acf"><div class="ttname"><a href="../../d2/d13/classxii_window.htm#a8d0fcb10ac3fd4ab68af552196068acf">xiiWindow::OnFocus</a></div><div class="ttdeci">virtual void OnFocus(bool bHasFocus)</div><div class="ttdoc">Called when the window gets focus or loses focus.</div><div class="ttdef"><b>Definition:</b> Window.h:327</div></div>
 <div class="ttc" id="aclassxii_size_template_htm"><div class="ttname"><a href="../../db/d7f/classxii_size_template.htm">xiiSizeTemplate&lt; xiiUInt32 &gt;</a></div></div>
 <div class="ttc" id="astructxii_string_view_htm"><div class="ttname"><a href="../../da/d9d/structxii_string_view.htm">xiiStringView</a></div><div class="ttdoc">xiiStringView represent a read-only sub-string of a larger string, as it can store a dedicated string...</div><div class="ttdef"><b>Definition:</b> StringView.h:23</div></div>
-<div class="ttc" id="astructxii_window_creation_desc_htm_a48134bca01578e27267fc93cb3e0b601"><div class="ttname"><a href="../../d6/d8c/structxii_window_creation_desc.htm#a48134bca01578e27267fc93cb3e0b601">xiiWindowCreationDesc::m_WindowMode</a></div><div class="ttdeci">xiiEnum&lt; xiiWindowMode &gt; m_WindowMode</div><div class="ttdoc">Defines how the window size is determined.</div><div class="ttdef"><b>Definition:</b> Window.h:197</div></div>
-<div class="ttc" id="astructxii_window_mode_htm"><div class="ttname"><a href="../../d4/d40/structxii_window_mode.htm">xiiWindowMode</a></div><div class="ttdoc">Determines how the position and resolution for a window are picked.</div><div class="ttdef"><b>Definition:</b> Window.h:148</div></div>
-<div class="ttc" id="aclassxii_window_htm_aadda987a4153f41525bb655dcc6d7467"><div class="ttname"><a href="../../d2/d13/classxii_window.htm#aadda987a4153f41525bb655dcc6d7467">xiiWindow::OnClickClose</a></div><div class="ttdeci">virtual void OnClickClose()</div><div class="ttdoc">Called when the close button of the window is clicked. Does nothing by default.</div><div class="ttdef"><b>Definition:</b> Window.h:316</div></div>
-<div class="ttc" id="aclassxii_window_htm_a8bc7e9a93c79fe2a5f2647804aaee0d4"><div class="ttname"><a href="../../d2/d13/classxii_window.htm#a8bc7e9a93c79fe2a5f2647804aaee0d4">xiiWindow::Initialize</a></div><div class="ttdeci">xiiResult Initialize(const xiiWindowCreationDesc &amp;creationDescription)</div><div class="ttdoc">Creates a new platform specific window with the given settings.</div><div class="ttdef"><b>Definition:</b> Window.h:286</div></div>
-<div class="ttc" id="aclassxii_window_htm_ad7197897395515ca1c8bfdf92c559fe0"><div class="ttname"><a href="../../d2/d13/classxii_window.htm#ad7197897395515ca1c8bfdf92c559fe0">xiiWindow::GetInputDevice</a></div><div class="ttdeci">xiiStandardInputDevice * GetInputDevice() const</div><div class="ttdoc">Returns the input device that is attached to this window and typically provides mouse / keyboard inpu...</div><div class="ttdef"><b>Definition:</b> Window.h:341</div></div>
-<div class="ttc" id="astructxii_window_mode_htm_a572581340725890ccb4f8b0c2c40ef73a1ebda2228190db68b14fb92a98246ced"><div class="ttname"><a href="../../d4/d40/structxii_window_mode.htm#a572581340725890ccb4f8b0c2c40ef73a1ebda2228190db68b14fb92a98246ced">xiiWindowMode::FullscreenFixedResolution</a></div><div class="ttdeci">@ FullscreenFixedResolution</div><div class="ttdef"><b>Definition:</b> Window.h:158</div></div>
-<div class="ttc" id="astructxii_window_creation_desc_htm"><div class="ttname"><a href="../../d6/d8c/structxii_window_creation_desc.htm">xiiWindowCreationDesc</a></div><div class="ttdoc">Parameters for creating a window, such as position and resolution.</div><div class="ttdef"><b>Definition:</b> Window.h:169</div></div>
+<div class="ttc" id="astructxii_window_creation_desc_htm_a48134bca01578e27267fc93cb3e0b601"><div class="ttname"><a href="../../d6/d8c/structxii_window_creation_desc.htm#a48134bca01578e27267fc93cb3e0b601">xiiWindowCreationDesc::m_WindowMode</a></div><div class="ttdeci">xiiEnum&lt; xiiWindowMode &gt; m_WindowMode</div><div class="ttdoc">Defines how the window size is determined.</div><div class="ttdef"><b>Definition:</b> Window.h:211</div></div>
+<div class="ttc" id="astructxii_window_mode_htm"><div class="ttname"><a href="../../d4/d40/structxii_window_mode.htm">xiiWindowMode</a></div><div class="ttdoc">Determines how the position and resolution for a window are picked.</div><div class="ttdef"><b>Definition:</b> Window.h:162</div></div>
+<div class="ttc" id="aclassxii_window_htm_aadda987a4153f41525bb655dcc6d7467"><div class="ttname"><a href="../../d2/d13/classxii_window.htm#aadda987a4153f41525bb655dcc6d7467">xiiWindow::OnClickClose</a></div><div class="ttdeci">virtual void OnClickClose()</div><div class="ttdoc">Called when the close button of the window is clicked. Does nothing by default.</div><div class="ttdef"><b>Definition:</b> Window.h:330</div></div>
+<div class="ttc" id="aclassxii_window_htm_a8bc7e9a93c79fe2a5f2647804aaee0d4"><div class="ttname"><a href="../../d2/d13/classxii_window.htm#a8bc7e9a93c79fe2a5f2647804aaee0d4">xiiWindow::Initialize</a></div><div class="ttdeci">xiiResult Initialize(const xiiWindowCreationDesc &amp;creationDescription)</div><div class="ttdoc">Creates a new platform specific window with the given settings.</div><div class="ttdef"><b>Definition:</b> Window.h:300</div></div>
+<div class="ttc" id="aclassxii_window_htm_ad7197897395515ca1c8bfdf92c559fe0"><div class="ttname"><a href="../../d2/d13/classxii_window.htm#ad7197897395515ca1c8bfdf92c559fe0">xiiWindow::GetInputDevice</a></div><div class="ttdeci">xiiStandardInputDevice * GetInputDevice() const</div><div class="ttdoc">Returns the input device that is attached to this window and typically provides mouse / keyboard inpu...</div><div class="ttdef"><b>Definition:</b> Window.h:355</div></div>
+<div class="ttc" id="astructxii_window_mode_htm_a572581340725890ccb4f8b0c2c40ef73a1ebda2228190db68b14fb92a98246ced"><div class="ttname"><a href="../../d4/d40/structxii_window_mode.htm#a572581340725890ccb4f8b0c2c40ef73a1ebda2228190db68b14fb92a98246ced">xiiWindowMode::FullscreenFixedResolution</a></div><div class="ttdeci">@ FullscreenFixedResolution</div><div class="ttdef"><b>Definition:</b> Window.h:172</div></div>
+<div class="ttc" id="astructxii_window_creation_desc_htm"><div class="ttname"><a href="../../d6/d8c/structxii_window_creation_desc.htm">xiiWindowCreationDesc</a></div><div class="ttdoc">Parameters for creating a window, such as position and resolution.</div><div class="ttdef"><b>Definition:</b> Window.h:183</div></div>
 <div class="ttc" id="aclassxii_unique_ptr_htm"><div class="ttname"><a href="../../d9/d4a/classxii_unique_ptr.htm">xiiUniquePtr&lt; xiiStandardInputDevice &gt;</a></div></div>
 <div class="ttc" id="astructxii_result_htm"><div class="ttname"><a href="../../dd/dad/structxii_result.htm">xiiResult</a></div><div class="ttdoc">Default enum for returning failure or success, instead of using a bool.</div><div class="ttdef"><b>Definition:</b> Types.h:54</div></div>
-<div class="ttc" id="aclassxii_window_htm_a85bafa14a75f946bd716ad5ebad22e2d"><div class="ttname"><a href="../../d2/d13/classxii_window.htm#a85bafa14a75f946bd716ad5ebad22e2d">xiiWindow::GetClientAreaSize</a></div><div class="ttdeci">virtual xiiSizeU32 GetClientAreaSize() const override</div><div class="ttdoc">Returns the size of the client area / ie. the window resolution.</div><div class="ttdef"><b>Definition:</b> Window.h:246</div></div>
-<div class="ttc" id="aclassxii_window_htm_ab5c20ca3069fca37bda04ab08294edba"><div class="ttname"><a href="../../d2/d13/classxii_window.htm#ab5c20ca3069fca37bda04ab08294edba">xiiWindow::IsFullscreenWindow</a></div><div class="ttdeci">virtual bool IsFullscreenWindow(bool bOnlyProperFullscreenMode=false) const override</div><div class="ttdoc">Returns whether the window covers an entire monitor.</div><div class="ttdef"><b>Definition:</b> Window.h:254</div></div>
+<div class="ttc" id="aclassxii_window_htm_a85bafa14a75f946bd716ad5ebad22e2d"><div class="ttname"><a href="../../d2/d13/classxii_window.htm#a85bafa14a75f946bd716ad5ebad22e2d">xiiWindow::GetClientAreaSize</a></div><div class="ttdeci">virtual xiiSizeU32 GetClientAreaSize() const override</div><div class="ttdoc">Returns the size of the client area / ie. the window resolution.</div><div class="ttdef"><b>Definition:</b> Window.h:260</div></div>
+<div class="ttc" id="aclassxii_window_htm_ab5c20ca3069fca37bda04ab08294edba"><div class="ttname"><a href="../../d2/d13/classxii_window.htm#ab5c20ca3069fca37bda04ab08294edba">xiiWindow::IsFullscreenWindow</a></div><div class="ttdeci">virtual bool IsFullscreenWindow(bool bOnlyProperFullscreenMode=false) const override</div><div class="ttdoc">Returns whether the window covers an entire monitor.</div><div class="ttdef"><b>Definition:</b> Window.h:268</div></div>
 <div class="ttc" id="aclassxii_vec2_template_htm"><div class="ttname"><a href="../../d1/d0d/classxii_vec2_template.htm">xiiVec2Template&lt; xiiInt32 &gt;</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.htm">home</a></li><li class="navelem"><a class="el" href="../../dir_1036706e55c22cab35bc1c58ee689f1d.htm">runner</a></li><li class="navelem"><a class="el" href="../../dir_629f8151d55d307162ff2d619fb1783d.htm">work</a></li><li class="navelem"><a class="el" href="../../dir_1ddc44fe1263a8c7935fa6130b7d9499.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_2c1b6808f12952f4c36e05ba7068379a.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_b5a1c4ecfca018ad24b729e213296d41.htm">Source</a></li><li class="navelem"><a class="el" href="../../dir_e321052006a51284e67389ab20037e7c.htm">Engine</a></li><li class="navelem"><a class="el" href="../../dir_6934db396743bb3844d563c7fa1f32a7.htm">Core</a></li><li class="navelem"><a class="el" href="../../dir_010ee2ae163492535281bbc566e65bb8.htm">System</a></li><li class="navelem"><b>Window.h</b></li>
-    <li class="footer">Generated on Sat Jul 1 2023 22:50:11 for XIIEngine by
+    <li class="footer">Generated on Mon Jul 10 2023 23:02:43 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

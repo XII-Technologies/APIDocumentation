@@ -9,7 +9,9 @@ var classxii_animation_controller_component =
     [ "SetAnimationControllerFile", "d4/d74/classxii_animation_controller_component.htm#a8dc9fde9f93f8527dc258ff58a5ecda6", null ],
     [ "Update", "d4/d74/classxii_animation_controller_component.htm#af74b1b9e13aea31c1e47c06a34fb07db", null ],
     [ "m_AnimationGraph", "d4/d74/classxii_animation_controller_component.htm#a25dca90aade95188444012f24598c906", null ],
+    [ "m_ElapsedTimeSinceUpdate", "d4/d74/classxii_animation_controller_component.htm#a0d8abc22b4cb827070e1c7c36b781a00", null ],
     [ "m_hAnimationController", "d4/d74/classxii_animation_controller_component.htm#a96e032b336385dda5565ef4767a3f565", null ],
+    [ "m_InvisibleUpdateRate", "d4/d74/classxii_animation_controller_component.htm#a1651f197370f7dde63cab01c77fc4605", null ],
     [ "m_PoseGenerator", "d4/d74/classxii_animation_controller_component.htm#a64462b4b9140f04280ec5eec7eebfbc0", null ],
     [ "m_RootMotionMode", "d4/d74/classxii_animation_controller_component.htm#a274f9928463b03ce1497263d5e3278a9", null ]
 ];

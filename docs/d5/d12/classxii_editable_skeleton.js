@@ -10,6 +10,7 @@ var classxii_editable_skeleton =
     [ "m_bFlipForwardDir", "d5/d12/classxii_editable_skeleton.htm#a5e72e5ceb4b41182d927e84dea0ce0a0", null ],
     [ "m_BoneDirection", "d5/d12/classxii_editable_skeleton.htm#a36c57590b2c3f5c93a28cb4c5e3e9570", null ],
     [ "m_Children", "d5/d12/classxii_editable_skeleton.htm#a04d008a8b82db7699c2b0553241e5c6b", null ],
+    [ "m_fMaxImpulse", "d5/d12/classxii_editable_skeleton.htm#a6cee8e5bb31c8bccf63b58e148e33e1a", null ],
     [ "m_fUniformScaling", "d5/d12/classxii_editable_skeleton.htm#acec76e905576531264335785e4d34c8c", null ],
     [ "m_RightDir", "d5/d12/classxii_editable_skeleton.htm#a97860b0f286ac1cf22a5014b78bce73b", null ],
     [ "m_sSourceFile", "d5/d12/classxii_editable_skeleton.htm#aca77af7e1e1450801f2c20853dfb83c0", null ],

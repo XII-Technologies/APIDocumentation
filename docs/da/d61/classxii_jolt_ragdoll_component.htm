@@ -108,11 +108,9 @@ Inheritance diagram for xiiJoltRagdollComponent:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d3d/structxii_jolt_ragdoll_component_1_1_impulse.htm">Impulse</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/de5/structxii_jolt_ragdoll_component_1_1_limb.htm">Limb</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/dd5/structxii_jolt_ragdoll_component_1_1_limb_config.htm">LimbConfig</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/db4/structxii_jolt_ragdoll_component_1_1_limb_construction_info.htm">LimbConstructionInfo</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -127,9 +125,6 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <tr class="memitem:a55c86b4e3fdd02347473f6d2cf46ecce"><td class="memItemLeft" align="right" valign="top"><a id="a55c86b4e3fdd02347473f6d2cf46ecce"></a>
 xiiUInt32&#160;</td><td class="memItemRight" valign="bottom"><b>GetObjectFilterID</b> () const</td></tr>
 <tr class="separator:a55c86b4e3fdd02347473f6d2cf46ecce"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a259d6225bda1c7fe901ccf8588da64d1"><td class="memItemLeft" align="right" valign="top"><a id="a259d6225bda1c7fe901ccf8588da64d1"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>OnAnimationPoseProposal</b> (<a class="el" href="../../d2/d2b/structxii_msg_animation_pose_proposal.htm">xiiMsgAnimationPoseProposal</a> &amp;ref_msg)</td></tr>
-<tr class="separator:a259d6225bda1c7fe901ccf8588da64d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5857a51a3348dbb0fef1a41d2be7fb65"><td class="memItemLeft" align="right" valign="top"><a id="a5857a51a3348dbb0fef1a41d2be7fb65"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>OnAnimationPoseUpdated</b> (<a class="el" href="../../d9/d18/structxii_msg_animation_pose_updated.htm">xiiMsgAnimationPoseUpdated</a> &amp;ref_msg)</td></tr>
 <tr class="separator:a5857a51a3348dbb0fef1a41d2be7fb65"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -142,12 +137,25 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>GetGravityFactor</b>
 <tr class="memitem:a5b714ff093f5664cfc1343f7e4604bc1"><td class="memItemLeft" align="right" valign="top"><a id="a5b714ff093f5664cfc1343f7e4604bc1"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetGravityFactor</b> (float fFactor)</td></tr>
 <tr class="separator:a5b714ff093f5664cfc1343f7e4604bc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0c3426ddc89e16c88092d70a078ace61"><td class="memItemLeft" align="right" valign="top"><a id="a0c3426ddc89e16c88092d70a078ace61"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>AddImpulseAtPos</b> (<a class="el" href="../../d9/d2c/structxii_msg_physics_add_impulse.htm">xiiMsgPhysicsAddImpulse</a> &amp;ref_msg)</td></tr>
-<tr class="separator:a0c3426ddc89e16c88092d70a078ace61"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa6597e33e8840df7bdbb99c7dabd569f"><td class="memItemLeft" align="right" valign="top"><a id="aa6597e33e8840df7bdbb99c7dabd569f"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>AddForceAtPos</b> (<a class="el" href="../../d2/dd1/structxii_msg_physics_add_force.htm">xiiMsgPhysicsAddForce</a> &amp;ref_msg)</td></tr>
-<tr class="separator:aa6597e33e8840df7bdbb99c7dabd569f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae37c9e71dbef00b8214ae9c117e778e6"><td class="memItemLeft" align="right" valign="top"><a id="ae37c9e71dbef00b8214ae9c117e778e6"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetStartMode</b> (<a class="el" href="../../de/dfd/structxii_enum.htm">xiiEnum</a>&lt; <a class="el" href="../../d3/d50/structxii_jolt_ragdoll_start_mode.htm">xiiJoltRagdollStartMode</a> &gt; mode)</td></tr>
+<tr class="separator:ae37c9e71dbef00b8214ae9c117e778e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb7bb35421b3015b7e6cac378a15df6a"><td class="memItemLeft" align="right" valign="top"><a id="abb7bb35421b3015b7e6cac378a15df6a"></a>
+<a class="el" href="../../de/dfd/structxii_enum.htm">xiiEnum</a>&lt; <a class="el" href="../../d3/d50/structxii_jolt_ragdoll_start_mode.htm">xiiJoltRagdollStartMode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetStartMode</b> () const</td></tr>
+<tr class="separator:abb7bb35421b3015b7e6cac378a15df6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4724723c477474afc423ce6874c29fd"><td class="memItemLeft" align="right" valign="top"><a id="ac4724723c477474afc423ce6874c29fd"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnMsgPhysicsAddImpulse</b> (<a class="el" href="../../d9/d2c/structxii_msg_physics_add_impulse.htm">xiiMsgPhysicsAddImpulse</a> &amp;ref_msg)</td></tr>
+<tr class="separator:ac4724723c477474afc423ce6874c29fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff897bf259ec278d0040d3ea9d34af39"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d61/classxii_jolt_ragdoll_component.htm#aff897bf259ec278d0040d3ea9d34af39">OnMsgPhysicsAddForce</a> (<a class="el" href="../../d2/dd1/structxii_msg_physics_add_force.htm">xiiMsgPhysicsAddForce</a> &amp;ref_msg)</td></tr>
+<tr class="memdesc:aff897bf259ec278d0040d3ea9d34af39"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applies an impulse to a specific part of the ragdoll.  <a href="../../da/d61/classxii_jolt_ragdoll_component.htm#aff897bf259ec278d0040d3ea9d34af39">More...</a><br /></td></tr>
+<tr class="separator:aff897bf259ec278d0040d3ea9d34af39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1296a3fecf7bed541edfc9438b280d2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d61/classxii_jolt_ragdoll_component.htm#aa1296a3fecf7bed541edfc9438b280d2">SetInitialImpulse</a> (const <a class="el" href="../../d9/d9a/classxii_vec3_template.htm">xiiVec3</a> &amp;vPosition, const <a class="el" href="../../d9/d9a/classxii_vec3_template.htm">xiiVec3</a> &amp;vDirectionAndStrength)</td></tr>
+<tr class="memdesc:aa1296a3fecf7bed541edfc9438b280d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call this function BEFORE activating the ragdoll component to specify an impulse that shall be applied to the closest body part when it activates.  <a href="../../da/d61/classxii_jolt_ragdoll_component.htm#aa1296a3fecf7bed541edfc9438b280d2">More...</a><br /></td></tr>
+<tr class="separator:aa1296a3fecf7bed541edfc9438b280d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa98508b0400ada5e376e7690f4d3a4bf"><td class="memItemLeft" align="right" valign="top"><a id="aa98508b0400ada5e376e7690f4d3a4bf"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d61/classxii_jolt_ragdoll_component.htm#aa98508b0400ada5e376e7690f4d3a4bf">AddInitialImpulse</a> (const <a class="el" href="../../d9/d9a/classxii_vec3_template.htm">xiiVec3</a> &amp;vPosition, const <a class="el" href="../../d9/d9a/classxii_vec3_template.htm">xiiVec3</a> &amp;vDirectionAndStrength)</td></tr>
+<tr class="memdesc:aa98508b0400ada5e376e7690f4d3a4bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds to the existing initial impulse. See <a class="el" href="../../da/d61/classxii_jolt_ragdoll_component.htm#aa1296a3fecf7bed541edfc9438b280d2" title="Call this function BEFORE activating the ragdoll component to specify an impulse that shall be applie...">SetInitialImpulse()</a>. <br /></td></tr>
+<tr class="separator:aa98508b0400ada5e376e7690f4d3a4bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classxii_component"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classxii_component')"><img src="../../closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="../../db/d60/classxii_component.htm">xiiComponent</a></td></tr>
 <tr class="memitem:a650a7ec0f1f32f320e41d41274c59129 inherit pub_methods_classxii_component"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d60/classxii_component.htm#a650a7ec0f1f32f320e41d41274c59129">SetActiveFlag</a> (bool bEnabled)</td></tr>
 <tr class="memdesc:a650a7ec0f1f32f320e41d41274c59129 inherit pub_methods_classxii_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the active flag of the component, which affects its active state.  <a href="../../db/d60/classxii_component.htm#a650a7ec0f1f32f320e41d41274c59129">More...</a><br /></td></tr>
@@ -255,12 +263,28 @@ template&lt;typename T &gt; </td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:aea565abc6f9320a7c6017aa0c2c966cc"><td class="memItemLeft" align="right" valign="top"><a id="aea565abc6f9320a7c6017aa0c2c966cc"></a>
-xiiUInt8&#160;</td><td class="memItemRight" valign="bottom"><b>m_uiCollisionLayer</b> = 0</td></tr>
-<tr class="separator:aea565abc6f9320a7c6017aa0c2c966cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a153aafadce718ea7914b2e8352a9f4a6"><td class="memItemLeft" align="right" valign="top"><a id="a153aafadce718ea7914b2e8352a9f4a6"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_bSelfCollision</b> = false</td></tr>
 <tr class="separator:a153aafadce718ea7914b2e8352a9f4a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f42a1f798d2003a795d5fa346991617"><td class="memItemLeft" align="right" valign="top"><a id="a1f42a1f798d2003a795d5fa346991617"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>m_fStiffness</b> = 10.0f</td></tr>
+<tr class="separator:a1f42a1f798d2003a795d5fa346991617"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc31f57349f65c722de19932edf85314"><td class="memItemLeft" align="right" valign="top"><a id="acc31f57349f65c722de19932edf85314"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>m_fMass</b> = 50.0f</td></tr>
+<tr class="separator:acc31f57349f65c722de19932edf85314"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0fa407953a6eacd127ce11b054d1b45"><td class="memItemLeft" align="right" valign="top"><a id="ae0fa407953a6eacd127ce11b054d1b45"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d61/classxii_jolt_ragdoll_component.htm#ae0fa407953a6eacd127ce11b054d1b45">m_fOwnerVelocityScale</a> = 1.0f</td></tr>
+<tr class="memdesc:ae0fa407953a6eacd127ce11b054d1b45"><td class="mdescLeft">&#160;</td><td class="mdescRight">How much of the owner object's velocity to transfer to the new ragdoll bodies. <br /></td></tr>
+<tr class="separator:ae0fa407953a6eacd127ce11b054d1b45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5670ab5b5a75630f19310ccc0a5cb96b"><td class="memItemLeft" align="right" valign="top"><a id="a5670ab5b5a75630f19310ccc0a5cb96b"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>m_fCenterVelocity</b> = 0.0f</td></tr>
+<tr class="separator:a5670ab5b5a75630f19310ccc0a5cb96b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a623c57b635eb3f7527c92b8b0fcff5b8"><td class="memItemLeft" align="right" valign="top"><a id="a623c57b635eb3f7527c92b8b0fcff5b8"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>m_fCenterAngularVelocity</b> = 0.0f</td></tr>
+<tr class="separator:a623c57b635eb3f7527c92b8b0fcff5b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16d9a4ccbc614b78a95814aacc91823d"><td class="memItemLeft" align="right" valign="top"><a id="a16d9a4ccbc614b78a95814aacc91823d"></a>
+<a class="el" href="../../d9/d9a/classxii_vec3_template.htm">xiiVec3</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_vCenterPosition</b> = <a class="el" href="../../d9/d9a/classxii_vec3_template.htm#ae11f5900a8e3748216ebdd2d5caa6c02">xiiVec3::ZeroVector</a>()</td></tr>
+<tr class="separator:a16d9a4ccbc614b78a95814aacc91823d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -270,60 +294,75 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:a38bc94bc04933aa1344a4f4f6d54ae3c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d61/classxii_jolt_ragdoll_component.htm#a38bc94bc04933aa1344a4f4f6d54ae3c">OnDeactivated</a> () override</td></tr>
 <tr class="memdesc:a38bc94bc04933aa1344a4f4f6d54ae3c"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method is called when the component gets deactivated.  <a href="../../da/d61/classxii_jolt_ragdoll_component.htm#a38bc94bc04933aa1344a4f4f6d54ae3c">More...</a><br /></td></tr>
 <tr class="separator:a38bc94bc04933aa1344a4f4f6d54ae3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a628acabe4d687d335e3e7bb3dca4d08f"><td class="memItemLeft" align="right" valign="top"><a id="a628acabe4d687d335e3e7bb3dca4d08f"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>Update</b> ()</td></tr>
-<tr class="separator:a628acabe4d687d335e3e7bb3dca4d08f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aba753e98231d6a30a3226a07554696e1"><td class="memItemLeft" align="right" valign="top"><a id="aba753e98231d6a30a3226a07554696e1"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>CreateConstraints</b> ()</td></tr>
-<tr class="separator:aba753e98231d6a30a3226a07554696e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a212ae58c6b0088691f167090aaf5ab76"><td class="memItemLeft" align="right" valign="top"><a id="a212ae58c6b0088691f167090aaf5ab76"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SetupLimbsFromBindPose</b> ()</td></tr>
-<tr class="separator:a212ae58c6b0088691f167090aaf5ab76"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a60bcc997cbaaa316b09b76b3526061df"><td class="memItemLeft" align="right" valign="top"><a id="a60bcc997cbaaa316b09b76b3526061df"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>EnsureSkeletonIsKnown</b> ()</td></tr>
-<tr class="separator:a60bcc997cbaaa316b09b76b3526061df"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa4c2638343952614cece75c1d1d61a02"><td class="memItemLeft" align="right" valign="top"><a id="aa4c2638343952614cece75c1d1d61a02"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>ClearPhysicsObjects</b> ()</td></tr>
-<tr class="separator:aa4c2638343952614cece75c1d1d61a02"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a16165ed4e6ec6325cea98fbeaeb9b156"><td class="memItemLeft" align="right" valign="top"><a id="a16165ed4e6ec6325cea98fbeaeb9b156"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SetupJoltBasics</b> (<a class="el" href="../../d3/d91/classxii_jolt_world_module.htm">xiiJoltWorldModule</a> *pPxModule)</td></tr>
-<tr class="separator:a16165ed4e6ec6325cea98fbeaeb9b156"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a81f48184514baa1a39a40e6295449a34"><td class="memItemLeft" align="right" valign="top"><a id="a81f48184514baa1a39a40e6295449a34"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>FinishSetupLimbs</b> ()</td></tr>
-<tr class="separator:a81f48184514baa1a39a40e6295449a34"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acfab4642f369347762dd3a96ba0de244"><td class="memItemLeft" align="right" valign="top"><a id="acfab4642f369347762dd3a96ba0de244"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SetupLimbs</b> (const <a class="el" href="../../d9/d18/structxii_msg_animation_pose_updated.htm">xiiMsgAnimationPoseUpdated</a> &amp;pose)</td></tr>
-<tr class="separator:acfab4642f369347762dd3a96ba0de244"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a82ed83de4d6d28828538c63906919646"><td class="memItemLeft" align="right" valign="top"><a id="a82ed83de4d6d28828538c63906919646"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SetupLimbBodiesAndGeometry</b> (const <a class="el" href="../../d6/da3/classxii_skeleton_resource.htm">xiiSkeletonResource</a> *pSkeleton, const <a class="el" href="../../d9/d18/structxii_msg_animation_pose_updated.htm">xiiMsgAnimationPoseUpdated</a> &amp;pose)</td></tr>
-<tr class="separator:a82ed83de4d6d28828538c63906919646"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6449f6ce3a7fd904f6d3124b68d12411"><td class="memItemLeft" align="right" valign="top"><a id="a6449f6ce3a7fd904f6d3124b68d12411"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Update</b> (bool bForce)</td></tr>
+<tr class="separator:a6449f6ce3a7fd904f6d3124b68d12411"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8eb4e304fe5b81343fd4986650af21f5"><td class="memItemLeft" align="right" valign="top"><a id="a8eb4e304fe5b81343fd4986650af21f5"></a>
+<a class="el" href="../../dd/dad/structxii_result.htm">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><b>EnsureSkeletonIsKnown</b> ()</td></tr>
+<tr class="separator:a8eb4e304fe5b81343fd4986650af21f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adfa68e22dcdc069936fb6b7cfdaad821"><td class="memItemLeft" align="right" valign="top"><a id="adfa68e22dcdc069936fb6b7cfdaad821"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>CreateLimbsFromBindPose</b> ()</td></tr>
+<tr class="separator:adfa68e22dcdc069936fb6b7cfdaad821"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77b3acd36fe7714e96f669d26b658584"><td class="memItemLeft" align="right" valign="top"><a id="a77b3acd36fe7714e96f669d26b658584"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>CreateLimbsFromCurrentMeshPose</b> ()</td></tr>
+<tr class="separator:a77b3acd36fe7714e96f669d26b658584"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4df1efffbbff82e4c01f79359b81b11"><td class="memItemLeft" align="right" valign="top"><a id="ae4df1efffbbff82e4c01f79359b81b11"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>DestroyAllLimbs</b> ()</td></tr>
+<tr class="separator:ae4df1efffbbff82e4c01f79359b81b11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f259aa32ebe64b7c506bee679132ea7"><td class="memItemLeft" align="right" valign="top"><a id="a0f259aa32ebe64b7c506bee679132ea7"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>CreateLimbsFromPose</b> (const <a class="el" href="../../d9/d18/structxii_msg_animation_pose_updated.htm">xiiMsgAnimationPoseUpdated</a> &amp;pose)</td></tr>
+<tr class="separator:a0f259aa32ebe64b7c506bee679132ea7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a216888824402db2fa3ff0b2908df6cc9"><td class="memItemLeft" align="right" valign="top"><a id="a216888824402db2fa3ff0b2908df6cc9"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>HasCreatedLimbs</b> () const</td></tr>
+<tr class="separator:a216888824402db2fa3ff0b2908df6cc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1bdfb79eda5d989e6af7dc28ab04c712"><td class="memItemLeft" align="right" valign="top"><a id="a1bdfb79eda5d989e6af7dc28ab04c712"></a>
+<a class="el" href="../../d5/d13/classxii_transform_template.htm">xiiTransform</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetRagdollRootTransform</b> () const</td></tr>
+<tr class="separator:a1bdfb79eda5d989e6af7dc28ab04c712"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30b94b76d610ef0ec3d657ac322193d5"><td class="memItemLeft" align="right" valign="top"><a id="a30b94b76d610ef0ec3d657ac322193d5"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>UpdateOwnerPosition</b> ()</td></tr>
+<tr class="separator:a30b94b76d610ef0ec3d657ac322193d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42b93f3bc1d04cc66372b3b098b009fb"><td class="memItemLeft" align="right" valign="top"><a id="a42b93f3bc1d04cc66372b3b098b009fb"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>RetrieveRagdollPose</b> ()</td></tr>
+<tr class="separator:a42b93f3bc1d04cc66372b3b098b009fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af35e81fd68b3e9d092d795cf9dcc6a3d"><td class="memItemLeft" align="right" valign="top"><a id="af35e81fd68b3e9d092d795cf9dcc6a3d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SendAnimationPoseMsg</b> ()</td></tr>
+<tr class="separator:af35e81fd68b3e9d092d795cf9dcc6a3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a231082b89a6025911ba4947fe6d09a"><td class="memItemLeft" align="right" valign="top"><a id="a6a231082b89a6025911ba4947fe6d09a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ConfigureRagdollPart</b> (void *pRagdollSettingsPart, const <a class="el" href="../../d5/d13/classxii_transform_template.htm">xiiTransform</a> &amp;globalTransform, xiiUInt8 uiCollisionLayer, <a class="el" href="../../d3/d91/classxii_jolt_world_module.htm">xiiJoltWorldModule</a> &amp;worldModule)</td></tr>
+<tr class="separator:a6a231082b89a6025911ba4947fe6d09a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a582a6f3df282ffb238d6c01f6215e7ba"><td class="memItemLeft" align="right" valign="top"><a id="a582a6f3df282ffb238d6c01f6215e7ba"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>CreateAllLimbs</b> (const <a class="el" href="../../d6/da3/classxii_skeleton_resource.htm">xiiSkeletonResource</a> &amp;skeletonResource, const <a class="el" href="../../d9/d18/structxii_msg_animation_pose_updated.htm">xiiMsgAnimationPoseUpdated</a> &amp;pose, <a class="el" href="../../d3/d91/classxii_jolt_world_module.htm">xiiJoltWorldModule</a> &amp;worldModule, float fObjectScale)</td></tr>
+<tr class="separator:a582a6f3df282ffb238d6c01f6215e7ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a663171d1aeb8562f2beb39014d98e376"><td class="memItemLeft" align="right" valign="top"><a id="a663171d1aeb8562f2beb39014d98e376"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ComputeLimbModelSpaceTransform</b> (<a class="el" href="../../d5/d13/classxii_transform_template.htm">xiiTransform</a> &amp;transform, const <a class="el" href="../../d9/d18/structxii_msg_animation_pose_updated.htm">xiiMsgAnimationPoseUpdated</a> &amp;pose, xiiUInt32 uiPoseJointIndex)</td></tr>
+<tr class="separator:a663171d1aeb8562f2beb39014d98e376"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05ac9261d59651c05cffa97c7686acdd"><td class="memItemLeft" align="right" valign="top"><a id="a05ac9261d59651c05cffa97c7686acdd"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ComputeLimbGlobalTransform</b> (<a class="el" href="../../d5/d13/classxii_transform_template.htm">xiiTransform</a> &amp;transform, const <a class="el" href="../../d9/d18/structxii_msg_animation_pose_updated.htm">xiiMsgAnimationPoseUpdated</a> &amp;pose, xiiUInt32 uiPoseJointIndex)</td></tr>
+<tr class="separator:a05ac9261d59651c05cffa97c7686acdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9610beac2ece27209f879ff8c2fdb2f9"><td class="memItemLeft" align="right" valign="top"><a id="a9610beac2ece27209f879ff8c2fdb2f9"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>CreateLimb</b> (const <a class="el" href="../../d6/da3/classxii_skeleton_resource.htm">xiiSkeletonResource</a> &amp;skeletonResource, <a class="el" href="../../d6/df7/classxii_map.htm">xiiMap</a>&lt; xiiUInt16, <a class="el" href="../../d3/db4/structxii_jolt_ragdoll_component_1_1_limb_construction_info.htm">LimbConstructionInfo</a> &gt; &amp;limbConstructionInfos, <a class="el" href="../../d0/d60/classxii_array_ptr.htm">xiiArrayPtr</a>&lt; const <a class="el" href="../../d6/d6e/structxii_skeleton_resource_geometry.htm">xiiSkeletonResourceGeometry</a> * &gt; geometries, const <a class="el" href="../../d9/d18/structxii_msg_animation_pose_updated.htm">xiiMsgAnimationPoseUpdated</a> &amp;pose, <a class="el" href="../../d3/d91/classxii_jolt_world_module.htm">xiiJoltWorldModule</a> &amp;worldModule, float fObjectScale)</td></tr>
+<tr class="separator:a9610beac2ece27209f879ff8c2fdb2f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4bf3d23f792e0f5e3bafb64d9116d44e"><td class="memItemLeft" align="right" valign="top"><a id="a4bf3d23f792e0f5e3bafb64d9116d44e"></a>
+JPH::Shape *&#160;</td><td class="memItemRight" valign="bottom"><b>CreateLimbGeoShape</b> (const <a class="el" href="../../d3/db4/structxii_jolt_ragdoll_component_1_1_limb_construction_info.htm">LimbConstructionInfo</a> &amp;limbConstructionInfo, const <a class="el" href="../../d6/d6e/structxii_skeleton_resource_geometry.htm">xiiSkeletonResourceGeometry</a> &amp;geo, const <a class="el" href="../../d5/d47/classxii_jolt_material.htm">xiiJoltMaterial</a> *pJoltMaterial, const <a class="el" href="../../d9/d1b/classxii_quat_template.htm">xiiQuat</a> &amp;qBoneDirAdjustment, const <a class="el" href="../../d5/d13/classxii_transform_template.htm">xiiTransform</a> &amp;skeletonRootTransform, <a class="el" href="../../d5/d13/classxii_transform_template.htm">xiiTransform</a> &amp;out_shapeTransform, float fObjectScale)</td></tr>
+<tr class="separator:a4bf3d23f792e0f5e3bafb64d9116d44e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4cb645b5f9cd9ce5b311e7d54134d1b"><td class="memItemLeft" align="right" valign="top"><a id="ad4cb645b5f9cd9ce5b311e7d54134d1b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>CreateAllLimbGeoShapes</b> (const <a class="el" href="../../d3/db4/structxii_jolt_ragdoll_component_1_1_limb_construction_info.htm">LimbConstructionInfo</a> &amp;limbConstructionInfo, <a class="el" href="../../d0/d60/classxii_array_ptr.htm">xiiArrayPtr</a>&lt; const <a class="el" href="../../d6/d6e/structxii_skeleton_resource_geometry.htm">xiiSkeletonResourceGeometry</a> * &gt; geometries, const <a class="el" href="../../d6/dc7/classxii_skeleton_joint.htm">xiiSkeletonJoint</a> &amp;thisLimbJoint, const <a class="el" href="../../d6/da3/classxii_skeleton_resource.htm">xiiSkeletonResource</a> &amp;skeletonResource, float fObjectScale)</td></tr>
+<tr class="separator:ad4cb645b5f9cd9ce5b311e7d54134d1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad765d28718face8fdf4477de4a20b7a3"><td class="memItemLeft" align="right" valign="top"><a id="ad765d28718face8fdf4477de4a20b7a3"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>ApplyPartInitialVelocity</b> ()</td></tr>
+<tr class="separator:ad765d28718face8fdf4477de4a20b7a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03049c959f6cfb47d143a143866d3fee"><td class="memItemLeft" align="right" valign="top"><a id="a03049c959f6cfb47d143a143866d3fee"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ApplyBodyMass</b> ()</td></tr>
+<tr class="separator:a03049c959f6cfb47d143a143866d3fee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb6eedd7786171cc270e5efcb289eb13"><td class="memItemLeft" align="right" valign="top"><a id="adb6eedd7786171cc270e5efcb289eb13"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ApplyInitialImpulse</b> (<a class="el" href="../../d3/d91/classxii_jolt_world_module.htm">xiiJoltWorldModule</a> &amp;worldModule, float fMaxImpulse)</td></tr>
+<tr class="separator:adb6eedd7786171cc270e5efcb289eb13"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af5c0f98259641efc6b1e52a6c4a1192f"><td class="memItemLeft" align="right" valign="top"><a id="af5c0f98259641efc6b1e52a6c4a1192f"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetupLimbJoints</b> (const <a class="el" href="../../d6/da3/classxii_skeleton_resource.htm">xiiSkeletonResource</a> *pSkeleton)</td></tr>
 <tr class="separator:af5c0f98259641efc6b1e52a6c4a1192f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3a889cebae2f4a3f661c5e47e9df1bee"><td class="memItemLeft" align="right" valign="top"><a id="a3a889cebae2f4a3f661c5e47e9df1bee"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>CreateLimbBody</b> (const <a class="el" href="../../d6/dd5/structxii_jolt_ragdoll_component_1_1_limb_config.htm">LimbConfig</a> &amp;parentLimb, <a class="el" href="../../d6/dd5/structxii_jolt_ragdoll_component_1_1_limb_config.htm">LimbConfig</a> &amp;thisLimb)</td></tr>
-<tr class="separator:a3a889cebae2f4a3f661c5e47e9df1bee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afad22111a99467679723f133c460645e"><td class="memItemLeft" align="right" valign="top"><a id="afad22111a99467679723f133c460645e"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>AddLimbGeometry</b> (<a class="el" href="../../d9/dcc/structxii_basis_axis.htm#aa4a0a337fe2404df64a4543daa99f230">xiiBasisAxis::Enum</a> srcBoneDir, <a class="el" href="../../d6/dd5/structxii_jolt_ragdoll_component_1_1_limb_config.htm">LimbConfig</a> &amp;limb, const <a class="el" href="../../d6/d6e/structxii_skeleton_resource_geometry.htm">xiiSkeletonResourceGeometry</a> &amp;geo)</td></tr>
-<tr class="separator:afad22111a99467679723f133c460645e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af09a620c5f389f9bfa8ea42a4bf0f725"><td class="memItemLeft" align="right" valign="top"><a id="af09a620c5f389f9bfa8ea42a4bf0f725"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>CreateLimbJoint</b> (const <a class="el" href="../../d6/dc7/classxii_skeleton_joint.htm">xiiSkeletonJoint</a> &amp;thisJoint, void *pParentBodyDesc, const <a class="el" href="../../d5/d13/classxii_transform_template.htm">xiiTransform</a> &amp;parentFrame, void *pThisBodyDesc, const <a class="el" href="../../d5/d13/classxii_transform_template.htm">xiiTransform</a> &amp;thisFrame)</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>CreateLimbJoint</b> (const <a class="el" href="../../d6/dc7/classxii_skeleton_joint.htm">xiiSkeletonJoint</a> &amp;thisJoint, void *pParentBodyDesc, const <a class="el" href="../../d5/d13/classxii_transform_template.htm">xiiTransform</a> &amp;parentFrame, void *pThisBodyDesc, const <a class="el" href="../../d5/d13/classxii_transform_template.htm">xiiTransform</a> &amp;thisFrame)</td></tr>
 <tr class="separator:af09a620c5f389f9bfa8ea42a4bf0f725"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9b10e4b81d751fb668533cc49c7688f4"><td class="memItemLeft" align="right" valign="top"><a id="a9b10e4b81d751fb668533cc49c7688f4"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>ApplyImpulse</b> ()</td></tr>
-<tr class="separator:a9b10e4b81d751fb668533cc49c7688f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae404da0134bb67faf51d4bed33763fc9"><td class="memItemLeft" align="right" valign="top"><a id="ae404da0134bb67faf51d4bed33763fc9"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>ComputeLimbModelSpaceTransform</b> (<a class="el" href="../../d5/d13/classxii_transform_template.htm">xiiTransform</a> &amp;transform, const <a class="el" href="../../d9/d18/structxii_msg_animation_pose_updated.htm">xiiMsgAnimationPoseUpdated</a> &amp;pose, xiiUInt32 uiIndex)</td></tr>
-<tr class="separator:ae404da0134bb67faf51d4bed33763fc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a68aca04a94609e61f39c9205e04e1220"><td class="memItemLeft" align="right" valign="top"><a id="a68aca04a94609e61f39c9205e04e1220"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>ComputeLimbGlobalTransform</b> (<a class="el" href="../../d5/d13/classxii_transform_template.htm">xiiTransform</a> &amp;transform, const <a class="el" href="../../d9/d18/structxii_msg_animation_pose_updated.htm">xiiMsgAnimationPoseUpdated</a> &amp;pose, xiiUInt32 uiIndex)</td></tr>
-<tr class="separator:a68aca04a94609e61f39c9205e04e1220"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad48fcc41bd629050810a01aa80bf3a79"><td class="memItemLeft" align="right" valign="top"><a id="ad48fcc41bd629050810a01aa80bf3a79"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>RetrievePhysicsPose</b> ()</td></tr>
-<tr class="separator:ad48fcc41bd629050810a01aa80bf3a79"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5ec1173d5b7413f6e011d7dbdc40f21e"><td class="memItemLeft" align="right" valign="top"><a id="a5ec1173d5b7413f6e011d7dbdc40f21e"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>WakeUp</b> ()</td></tr>
-<tr class="separator:a5ec1173d5b7413f6e011d7dbdc40f21e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_classxii_component"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classxii_component')"><img src="../../closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="../../db/d60/classxii_component.htm">xiiComponent</a></td></tr>
 <tr class="memitem:a60c7db90d11a90e58501a07d0f051a92 inherit pro_methods_classxii_component"><td class="memItemLeft" align="right" valign="top"><a id="a60c7db90d11a90e58501a07d0f051a92"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d60/classxii_component.htm#a60c7db90d11a90e58501a07d0f051a92">xiiComponent</a> ()</td></tr>
@@ -370,27 +409,18 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsSimulationStarted</
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
+<tr class="memitem:a1872eecff709f3da0d8cc0acd053d953"><td class="memItemLeft" align="right" valign="top"><a id="a1872eecff709f3da0d8cc0acd053d953"></a>
+<a class="el" href="../../de/dfd/structxii_enum.htm">xiiEnum</a>&lt; <a class="el" href="../../d3/d50/structxii_jolt_ragdoll_start_mode.htm">xiiJoltRagdollStartMode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_StartMode</b></td></tr>
+<tr class="separator:a1872eecff709f3da0d8cc0acd053d953"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a37d87c342f76911b80f828e85ced4098"><td class="memItemLeft" align="right" valign="top"><a id="a37d87c342f76911b80f828e85ced4098"></a>
 float&#160;</td><td class="memItemRight" valign="bottom"><b>m_fGravityFactor</b> = 1.0f</td></tr>
 <tr class="separator:a37d87c342f76911b80f828e85ced4098"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a90c1c14d4e944b0359b3228386d28bc3"><td class="memItemLeft" align="right" valign="top"><a id="a90c1c14d4e944b0359b3228386d28bc3"></a>
-<a class="el" href="../../dc/da4/classxii_dynamic_array.htm">xiiDynamicArray</a>&lt; <a class="el" href="../../de/dfc/structxii_jolt_ragdoll_constraint.htm">xiiJoltRagdollConstraint</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_Constraints</b></td></tr>
-<tr class="separator:a90c1c14d4e944b0359b3228386d28bc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a048a86b9738409fedad92447308ead5a"><td class="memItemLeft" align="right" valign="top"><a id="a048a86b9738409fedad92447308ead5a"></a>
-<a class="el" href="../../de/dfd/structxii_enum.htm">xiiEnum</a>&lt; <a class="el" href="../../d5/d4a/structxii_jolt_ragdoll_start.htm">xiiJoltRagdollStart</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_Start</b></td></tr>
-<tr class="separator:a048a86b9738409fedad92447308ead5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeb914f4acae6443bea296d8b4618eee5"><td class="memItemLeft" align="right" valign="top"><a id="aeb914f4acae6443bea296d8b4618eee5"></a>
-<a class="el" href="../../db/d3d/structxii_jolt_ragdoll_component_1_1_impulse.htm">Impulse</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_NextImpulse</b></td></tr>
-<tr class="separator:aeb914f4acae6443bea296d8b4618eee5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a929d02d167aa9e6c7e6cce71c12e9813"><td class="memItemLeft" align="right" valign="top"><a id="a929d02d167aa9e6c7e6cce71c12e9813"></a>
 <a class="el" href="../../d6/d16/classxii_typed_resource_handle.htm">xiiSkeletonResourceHandle</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_hSkeleton</b></td></tr>
 <tr class="separator:a929d02d167aa9e6c7e6cce71c12e9813"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a328e6fb55551b7c0a30faf80a22c1f0b"><td class="memItemLeft" align="right" valign="top"><a id="a328e6fb55551b7c0a30faf80a22c1f0b"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_bLimbsSetup</b> = false</td></tr>
-<tr class="separator:a328e6fb55551b7c0a30faf80a22c1f0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1f42a1f798d2003a795d5fa346991617"><td class="memItemLeft" align="right" valign="top"><a id="a1f42a1f798d2003a795d5fa346991617"></a>
-float&#160;</td><td class="memItemRight" valign="bottom"><b>m_fStiffness</b> = 10.0f</td></tr>
-<tr class="separator:a1f42a1f798d2003a795d5fa346991617"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9bf544652717ec1700811ec1639497f2"><td class="memItemLeft" align="right" valign="top"><a id="a9bf544652717ec1700811ec1639497f2"></a>
+<a class="el" href="../../dc/da4/classxii_dynamic_array.htm">xiiDynamicArray</a>&lt; <a class="el" href="../../d1/dec/classxii_mat4_template.htm">xiiMat4</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_CurrentLimbTransforms</b></td></tr>
+<tr class="separator:a9bf544652717ec1700811ec1639497f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a58ad7ac631b058adc0e6de4116f2548f"><td class="memItemLeft" align="right" valign="top"><a id="a58ad7ac631b058adc0e6de4116f2548f"></a>
 xiiUInt32&#160;</td><td class="memItemRight" valign="bottom"><b>m_uiObjectFilterID</b> = xiiInvalidIndex</td></tr>
 <tr class="separator:a58ad7ac631b058adc0e6de4116f2548f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -400,21 +430,30 @@ xiiUInt32&#160;</td><td class="memItemRight" valign="bottom"><b>m_uiJoltUserData
 <tr class="memitem:a2401cb666a8cdb1611e8b20d93763b4b"><td class="memItemLeft" align="right" valign="top"><a id="a2401cb666a8cdb1611e8b20d93763b4b"></a>
 <a class="el" href="../../df/d24/classxii_jolt_user_data.htm">xiiJoltUserData</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_pJoltUserData</b> = nullptr</td></tr>
 <tr class="separator:a2401cb666a8cdb1611e8b20d93763b4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:affb65bd2aa07729c143a96694305c5aa"><td class="memItemLeft" align="right" valign="top"><a id="affb65bd2aa07729c143a96694305c5aa"></a>
-<a class="el" href="../../dc/da4/classxii_dynamic_array.htm">xiiDynamicArray</a>&lt; <a class="el" href="../../d4/de5/structxii_jolt_ragdoll_component_1_1_limb.htm">Limb</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_Limbs</b></td></tr>
-<tr class="separator:affb65bd2aa07729c143a96694305c5aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:affb3af3a367cce26b970640dee28a56b"><td class="memItemLeft" align="right" valign="top"><a id="affb3af3a367cce26b970640dee28a56b"></a>
 JPH::Ragdoll *&#160;</td><td class="memItemRight" valign="bottom"><b>m_pRagdoll</b> = nullptr</td></tr>
 <tr class="separator:affb3af3a367cce26b970640dee28a56b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abfe2e46582c315208df25a4ece04e840"><td class="memItemLeft" align="right" valign="top"><a id="abfe2e46582c315208df25a4ece04e840"></a>
 JPH::RagdollSettings *&#160;</td><td class="memItemRight" valign="bottom"><b>m_pRagdollSettings</b> = nullptr</td></tr>
 <tr class="separator:abfe2e46582c315208df25a4ece04e840"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:affb65bd2aa07729c143a96694305c5aa"><td class="memItemLeft" align="right" valign="top"><a id="affb65bd2aa07729c143a96694305c5aa"></a>
+<a class="el" href="../../dc/da4/classxii_dynamic_array.htm">xiiDynamicArray</a>&lt; <a class="el" href="../../d4/de5/structxii_jolt_ragdoll_component_1_1_limb.htm">Limb</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_Limbs</b></td></tr>
+<tr class="separator:affb65bd2aa07729c143a96694305c5aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acafee8a39bfe7023cf330d7d2f171940"><td class="memItemLeft" align="right" valign="top"><a id="acafee8a39bfe7023cf330d7d2f171940"></a>
 <a class="el" href="../../d5/d13/classxii_transform_template.htm">xiiTransform</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_RootBodyLocalTransform</b></td></tr>
 <tr class="separator:acafee8a39bfe7023cf330d7d2f171940"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa40f73956e9d46a5ebc97103a47c2427"><td class="memItemLeft" align="right" valign="top"><a id="aa40f73956e9d46a5ebc97103a47c2427"></a>
-<a class="el" href="../../dc/da4/classxii_dynamic_array.htm">xiiDynamicArray</a>&lt; <a class="el" href="../../d1/dec/classxii_mat4_template.htm">xiiMat4</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_LimbPoses</b></td></tr>
-<tr class="separator:aa40f73956e9d46a5ebc97103a47c2427"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a9556c1285903ecdca79ee0e58c32bd"><td class="memItemLeft" align="right" valign="top"><a id="a5a9556c1285903ecdca79ee0e58c32bd"></a>
+<a class="el" href="../../d7/dc1/structxii_time.htm">xiiTime</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_ElapsedTimeSinceUpdate</b> = <a class="el" href="../../d7/dc1/structxii_time.htm#a98ce26844e549b2f590dc01bbe6b742d">xiiTime::Zero</a>()</td></tr>
+<tr class="separator:a5a9556c1285903ecdca79ee0e58c32bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2b0c261cebae2caf4a827d87898eb76"><td class="memItemLeft" align="right" valign="top"><a id="ae2b0c261cebae2caf4a827d87898eb76"></a>
+<a class="el" href="../../d9/d9a/classxii_vec3_template.htm">xiiVec3</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_vInitialImpulsePosition</b> = <a class="el" href="../../d9/d9a/classxii_vec3_template.htm#ae11f5900a8e3748216ebdd2d5caa6c02">xiiVec3::ZeroVector</a>()</td></tr>
+<tr class="separator:ae2b0c261cebae2caf4a827d87898eb76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9e0084c3e6604e3265eec6ae076cef9"><td class="memItemLeft" align="right" valign="top"><a id="af9e0084c3e6604e3265eec6ae076cef9"></a>
+<a class="el" href="../../d9/d9a/classxii_vec3_template.htm">xiiVec3</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_vInitialImpulseDirection</b> = <a class="el" href="../../d9/d9a/classxii_vec3_template.htm#ae11f5900a8e3748216ebdd2d5caa6c02">xiiVec3::ZeroVector</a>()</td></tr>
+<tr class="separator:af9e0084c3e6604e3265eec6ae076cef9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a329472c58f7e1720d04be00a64c06ada"><td class="memItemLeft" align="right" valign="top"><a id="a329472c58f7e1720d04be00a64c06ada"></a>
+xiiUInt8&#160;</td><td class="memItemRight" valign="bottom"><b>m_uiNumInitialImpulses</b> = 0</td></tr>
+<tr class="separator:a329472c58f7e1720d04be00a64c06ada"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_classxii_component"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classxii_component')"><img src="../../closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="../../db/d60/classxii_component.htm">xiiComponent</a></td></tr>
 <tr class="memitem:ae8e397ade32eb7a5df4486207077e4ac inherit pro_attribs_classxii_component"><td class="memItemLeft" align="right" valign="top"><a id="ae8e397ade32eb7a5df4486207077e4ac"></a>
 const <a class="el" href="../../db/d89/classxii_r_t_t_i.htm">xiiRTTI</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d60/classxii_component.htm#ae8e397ade32eb7a5df4486207077e4ac">m_pMessageDispatchType</a> = nullptr</td></tr>
@@ -491,6 +530,27 @@ static const <a class="el" href="../../db/d89/classxii_r_t_t_i.htm">xiiRTTI</a> 
 
 </div>
 </div>
+<a id="aff897bf259ec278d0040d3ea9d34af39"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff897bf259ec278d0040d3ea9d34af39">&#9670;&nbsp;</a></span>OnMsgPhysicsAddForce()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void xiiJoltRagdollComponent::OnMsgPhysicsAddForce </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d2/dd1/structxii_msg_physics_add_force.htm">xiiMsgPhysicsAddForce</a> &amp;&#160;</td>
+          <td class="paramname"><em>ref_msg</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Applies an impulse to a specific part of the ragdoll. </p>
+<p>If this is called before the ragdoll becomes active, it is added to the 'initial impulse' (see <a class="el" href="../../da/d61/classxii_jolt_ragdoll_component.htm#aa1296a3fecf7bed541edfc9438b280d2" title="Call this function BEFORE activating the ragdoll component to specify an impulse that shall be applie...">SetInitialImpulse()</a>). Once the ragdoll is activated, this initial impulse is applied to the closest body part. </p>
+
+</div>
+</div>
 <a id="aa97df600ef1f79f3faaf18ae7f5bcf26"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa97df600ef1f79f3faaf18ae7f5bcf26">&#9670;&nbsp;</a></span>OnSimulationStarted()</h2>
 
@@ -524,6 +584,39 @@ static const <a class="el" href="../../db/d89/classxii_r_t_t_i.htm">xiiRTTI</a> 
 
 </div>
 </div>
+<a id="aa1296a3fecf7bed541edfc9438b280d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa1296a3fecf7bed541edfc9438b280d2">&#9670;&nbsp;</a></span>SetInitialImpulse()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void xiiJoltRagdollComponent::SetInitialImpulse </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d9/d9a/classxii_vec3_template.htm">xiiVec3</a> &amp;&#160;</td>
+          <td class="paramname"><em>vPosition</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d9/d9a/classxii_vec3_template.htm">xiiVec3</a> &amp;&#160;</td>
+          <td class="paramname"><em>vDirectionAndStrength</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Call this function BEFORE activating the ragdoll component to specify an impulse that shall be applied to the closest body part when it activates. </p>
+<p>Both position and direction are given in world space.</p>
+<p>This overrides any previously set or accumulated impulses. If AFTER this call additional impulses are recorded through OnMsgPhysicsAddImpulse(), they are 'added' to the initial impulse.</p>
+<p>Only a single initial impulse is applied after the ragdoll is created. If multiple impulses are added through OnMsgPhysicsAddImpulse(), their average start position is used to determine the closest body part to apply the impulse on. Their impulses are accumulated, so the applied impulse can become quite large. </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>/home/runner/work/XII/XII/Source/EnginePlugins/JoltPlugin/Components/<a class="el" href="../../dc/d7e/_jolt_ragdoll_component_8h_source.htm">JoltRagdollComponent.h</a></li>
 <li>/home/runner/work/XII/XII/Source/EnginePlugins/JoltPlugin/Components/Implementation/JoltRagdollComponent.cpp</li>
@@ -534,7 +627,7 @@ static const <a class="el" href="../../db/d89/classxii_r_t_t_i.htm">xiiRTTI</a> 
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../da/d61/classxii_jolt_ragdoll_component.htm">xiiJoltRagdollComponent</a></li>
-    <li class="footer">Generated on Sat Jul 1 2023 22:50:28 for XIIEngine by
+    <li class="footer">Generated on Mon Jul 10 2023 23:02:57 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

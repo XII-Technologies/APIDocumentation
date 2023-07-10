@@ -2,7 +2,7 @@ var classxii_fileserve_client =
 [
     [ "xiiFileserveClient", "db/d21/classxii_fileserve_client.htm#af59f373a361bbec8c199df76573e7b1d", null ],
     [ "~xiiFileserveClient", "db/d21/classxii_fileserve_client.htm#a7ef749240104b1b70ad253d03794a8aa", null ],
-    [ "AddServerAddressToTry", "db/d21/classxii_fileserve_client.htm#ac35529076cd04067bd62723655aacf50", null ],
+    [ "AddServerAddressToTry", "db/d21/classxii_fileserve_client.htm#a074d76ed0aa56fad7bd54171b4b2a8c0", null ],
     [ "EnsureConnected", "db/d21/classxii_fileserve_client.htm#a2fee6763358b5a6b164585b1ed6a0d59", null ],
     [ "GetServerConnectionAddress", "db/d21/classxii_fileserve_client.htm#a45a8b2e960007362ac89c03f7204090b", null ],
     [ "SaveCurrentConnectionInfoToDisk", "db/d21/classxii_fileserve_client.htm#a0858702c9ef4c2c4fe2e1139b628375f", null ],

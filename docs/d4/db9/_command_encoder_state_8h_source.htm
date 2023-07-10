@@ -113,28 +113,30 @@ $(document).ready(function(){initNavTree('d4/db9/_command_encoder_state_8h_sourc
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
 <div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="../../d9/d35/structxii_g_a_l_command_encoder_render_state.htm">   25</a></span>&#160;<span class="keyword">struct </span>XII_RENDERERFOUNDATION_DLL <a class="code" href="../../d9/d35/structxii_g_a_l_command_encoder_render_state.htm">xiiGALCommandEncoderRenderState</a> : <span class="keyword">public</span> <a class="code" href="../../df/d3b/structxii_g_a_l_command_encoder_state.htm">xiiGALCommandEncoderState</a></div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;{</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> InvalidateState() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  <span class="keyword">virtual</span> ~<a class="code" href="../../d9/d35/structxii_g_a_l_command_encoder_render_state.htm">xiiGALCommandEncoderRenderState</a>() = <span class="keywordflow">default</span>;</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  <a class="code" href="../../d1/dba/classxii_g_a_l_buffer_handle.htm">xiiGALBufferHandle</a> m_hVertexBuffers[XII_GAL_MAX_VERTEX_BUFFER_COUNT];</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  <a class="code" href="../../d1/dba/classxii_g_a_l_buffer_handle.htm">xiiGALBufferHandle</a> m_hIndexBuffer;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  <a class="code" href="../../d1/df5/classxii_g_a_l_vertex_declaration_handle.htm">xiiGALVertexDeclarationHandle</a> m_hVertexDeclaration;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  <a class="code" href="../../db/d19/structxii_g_a_l_primitive_topology.htm#ad35519002b72a19cd034038da42799ff">xiiGALPrimitiveTopology::Enum</a> m_Topology = xiiGALPrimitiveTopology::ENUM_COUNT;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  <a class="code" href="../../d2/d51/classxii_g_a_l_blend_state_handle.htm">xiiGALBlendStateHandle</a> m_hBlendState;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  <a class="code" href="../../d3/de6/classxii_color.htm">xiiColor</a>               m_BlendFactor  = <a class="code" href="../../d3/de6/classxii_color.htm">xiiColor</a>(0, 0, 0, 0);</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  xiiUInt32              m_uiSampleMask = 0;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <a class="code" href="../../de/dce/classxii_g_a_l_depth_stencil_state_handle.htm">xiiGALDepthStencilStateHandle</a> m_hDepthStencilState;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  xiiUInt8                      m_uiStencilRefValue = 0;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <a class="code" href="../../de/d86/classxii_g_a_l_rasterizer_state_handle.htm">xiiGALRasterizerStateHandle</a> m_hRasterizerState;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> InvalidateState() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  <a class="code" href="../../d1/dba/classxii_g_a_l_buffer_handle.htm">xiiGALBufferHandle</a> m_hVertexBuffers[XII_GAL_MAX_VERTEX_BUFFER_COUNT];</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  <a class="code" href="../../d1/dba/classxii_g_a_l_buffer_handle.htm">xiiGALBufferHandle</a> m_hIndexBuffer;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  <a class="code" href="../../d1/df5/classxii_g_a_l_vertex_declaration_handle.htm">xiiGALVertexDeclarationHandle</a> m_hVertexDeclaration;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  <a class="code" href="../../db/d19/structxii_g_a_l_primitive_topology.htm#ad35519002b72a19cd034038da42799ff">xiiGALPrimitiveTopology::Enum</a> m_Topology = xiiGALPrimitiveTopology::ENUM_COUNT;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <a class="code" href="../../d2/d51/classxii_g_a_l_blend_state_handle.htm">xiiGALBlendStateHandle</a> m_hBlendState;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <a class="code" href="../../d3/de6/classxii_color.htm">xiiColor</a>               m_BlendFactor  = <a class="code" href="../../d3/de6/classxii_color.htm">xiiColor</a>(0, 0, 0, 0);</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  xiiUInt32              m_uiSampleMask = 0;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <a class="code" href="../../de/dce/classxii_g_a_l_depth_stencil_state_handle.htm">xiiGALDepthStencilStateHandle</a> m_hDepthStencilState;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  xiiUInt8                      m_uiStencilRefValue = 0;</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <a class="code" href="../../d2/d1d/classxii_rect_template.htm">xiiRectU32</a>   m_ScissorRect       = <a class="code" href="../../d2/d1d/classxii_rect_template.htm">xiiRectU32</a>(0xFFFFFFFF, 0xFFFFFFFF, 0, 0);</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <a class="code" href="../../d2/d1d/classxii_rect_template.htm">xiiRectFloat</a> m_ViewPortRect      = <a class="code" href="../../d2/d1d/classxii_rect_template.htm">xiiRectFloat</a>(xiiMath::MaxValue&lt;float&gt;(), xiiMath::MaxValue&lt;float&gt;(), 0.0f, 0.0f);</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <span class="keywordtype">float</span>        m_fViewPortMinDepth = xiiMath::MaxValue&lt;float&gt;();</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <span class="keywordtype">float</span>        m_fViewPortMaxDepth = -xiiMath::MaxValue&lt;float&gt;();</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;};</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <a class="code" href="../../de/d86/classxii_g_a_l_rasterizer_state_handle.htm">xiiGALRasterizerStateHandle</a> m_hRasterizerState;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <a class="code" href="../../d2/d1d/classxii_rect_template.htm">xiiRectU32</a>   m_ScissorRect       = <a class="code" href="../../d2/d1d/classxii_rect_template.htm">xiiRectU32</a>(0xFFFFFFFF, 0xFFFFFFFF, 0, 0);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <a class="code" href="../../d2/d1d/classxii_rect_template.htm">xiiRectFloat</a> m_ViewPortRect      = <a class="code" href="../../d2/d1d/classxii_rect_template.htm">xiiRectFloat</a>(xiiMath::MaxValue&lt;float&gt;(), xiiMath::MaxValue&lt;float&gt;(), 0.0f, 0.0f);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <span class="keywordtype">float</span>        m_fViewPortMinDepth = xiiMath::MaxValue&lt;float&gt;();</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <span class="keywordtype">float</span>        m_fViewPortMaxDepth = -xiiMath::MaxValue&lt;float&gt;();</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;};</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclassxii_g_a_l_vertex_declaration_handle_htm"><div class="ttname"><a href="../../d1/df5/classxii_g_a_l_vertex_declaration_handle.htm">xiiGALVertexDeclarationHandle</a></div><div class="ttdef"><b>Definition:</b> RendererFoundationDLL.h:565</div></div>
@@ -154,7 +156,7 @@ $(document).ready(function(){initNavTree('d4/db9/_command_encoder_state_8h_sourc
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.htm">home</a></li><li class="navelem"><a class="el" href="../../dir_1036706e55c22cab35bc1c58ee689f1d.htm">runner</a></li><li class="navelem"><a class="el" href="../../dir_629f8151d55d307162ff2d619fb1783d.htm">work</a></li><li class="navelem"><a class="el" href="../../dir_1ddc44fe1263a8c7935fa6130b7d9499.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_2c1b6808f12952f4c36e05ba7068379a.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_b5a1c4ecfca018ad24b729e213296d41.htm">Source</a></li><li class="navelem"><a class="el" href="../../dir_e321052006a51284e67389ab20037e7c.htm">Engine</a></li><li class="navelem"><a class="el" href="../../dir_72790d5d8681310f00e88643f6bdf7ad.htm">RendererFoundation</a></li><li class="navelem"><a class="el" href="../../dir_de4950780a2c2580879a79e4b73386fb.htm">CommandEncoder</a></li><li class="navelem"><b>CommandEncoderState.h</b></li>
-    <li class="footer">Generated on Sat Jul 1 2023 22:50:22 for XIIEngine by
+    <li class="footer">Generated on Mon Jul 10 2023 23:02:52 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

@@ -101,7 +101,7 @@ $(document).ready(function(){initNavTree('d8/d67/_data_transfer_8h_source.htm','
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;  XII_DISALLOW_COPY_AND_ASSIGN(<a class="code" href="../../d2/dbb/classxii_data_transfer_object.htm">xiiDataTransferObject</a>);</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  <a class="code" href="../../d2/dbb/classxii_data_transfer_object.htm">xiiDataTransferObject</a>(<a class="code" href="../../de/d7d/classxii_data_transfer.htm">xiiDataTransfer</a>&amp; ref_belongsTo, <span class="keyword">const</span> <span class="keywordtype">char</span>* szObjectName, <span class="keyword">const</span> <span class="keywordtype">char</span>* szMimeType, <span class="keyword">const</span> <span class="keywordtype">char</span>* szFileExtension);</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  <a class="code" href="../../d2/dbb/classxii_data_transfer_object.htm">xiiDataTransferObject</a>(<a class="code" href="../../de/d7d/classxii_data_transfer.htm">xiiDataTransfer</a>&amp; ref_belongsTo, <a class="code" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sObjectName, <a class="code" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sMimeType, <a class="code" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sFileExtension);</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  ~<a class="code" href="../../d2/dbb/classxii_data_transfer_object.htm">xiiDataTransferObject</a>();</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
@@ -126,7 +126,7 @@ $(document).ready(function(){initNavTree('d8/d67/_data_transfer_8h_source.htm','
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  <span class="keywordtype">void</span> DisableDataTransfer();</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  <span class="keywordtype">void</span> EnableDataTransfer(<span class="keyword">const</span> <span class="keywordtype">char</span>* szDataName);</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  <span class="keywordtype">void</span> EnableDataTransfer(<a class="code" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sDataName);</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  <span class="keywordtype">void</span> RequestDataTransfer();</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
@@ -161,6 +161,7 @@ $(document).ready(function(){initNavTree('d8/d67/_data_transfer_8h_source.htm','
 <div class="ttc" id="aclassxii_set_htm"><div class="ttname"><a href="../../d6/d31/classxii_set.htm">xiiSet&lt; xiiDataTransfer * &gt;</a></div></div>
 <div class="ttc" id="astructxii_hybrid_string_htm"><div class="ttname"><a href="../../df/dfb/structxii_hybrid_string.htm">xiiHybridString&lt; 32, xiiDefaultAllocatorWrapper &gt;</a></div></div>
 <div class="ttc" id="aclassxii_data_transfer_object_htm_a08712a357d797528c8cc03861f6cbd3f"><div class="ttname"><a href="../../d2/dbb/classxii_data_transfer_object.htm#a08712a357d797528c8cc03861f6cbd3f">xiiDataTransferObject::GetWriter</a></div><div class="ttdeci">xiiStreamWriter &amp; GetWriter()</div><div class="ttdoc">Returns the stream writer that you need to use to write the data into the object.</div><div class="ttdef"><b>Definition:</b> DataTransfer.h:38</div></div>
+<div class="ttc" id="astructxii_string_view_htm"><div class="ttname"><a href="../../da/d9d/structxii_string_view.htm">xiiStringView</a></div><div class="ttdoc">xiiStringView represent a read-only sub-string of a larger string, as it can store a dedicated string...</div><div class="ttdef"><b>Definition:</b> StringView.h:23</div></div>
 <div class="ttc" id="aclassxii_stream_writer_htm"><div class="ttname"><a href="../../d0/d18/classxii_stream_writer.htm">xiiStreamWriter</a></div><div class="ttdoc">Interface for binary out (write) streams.</div><div class="ttdef"><b>Definition:</b> Stream.h:106</div></div>
 <div class="ttc" id="aclassxii_telemetry_message_htm"><div class="ttname"><a href="../../db/d6c/classxii_telemetry_message.htm">xiiTelemetryMessage</a></div><div class="ttdef"><b>Definition:</b> TelemetryMessage.h:5</div></div>
 <div class="ttc" id="astructxii_telemetry_1_1_telemetry_event_data_htm"><div class="ttname"><a href="../../d0/de3/structxii_telemetry_1_1_telemetry_event_data.htm">xiiTelemetry::TelemetryEventData</a></div><div class="ttdef"><b>Definition:</b> Telemetry.h:168</div></div>
@@ -168,7 +169,7 @@ $(document).ready(function(){initNavTree('d8/d67/_data_transfer_8h_source.htm','
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.htm">home</a></li><li class="navelem"><a class="el" href="../../dir_1036706e55c22cab35bc1c58ee689f1d.htm">runner</a></li><li class="navelem"><a class="el" href="../../dir_629f8151d55d307162ff2d619fb1783d.htm">work</a></li><li class="navelem"><a class="el" href="../../dir_1ddc44fe1263a8c7935fa6130b7d9499.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_2c1b6808f12952f4c36e05ba7068379a.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_b5a1c4ecfca018ad24b729e213296d41.htm">Source</a></li><li class="navelem"><a class="el" href="../../dir_e321052006a51284e67389ab20037e7c.htm">Engine</a></li><li class="navelem"><a class="el" href="../../dir_be0c42c58b36f42c54ec54024ed4f6af.htm">Foundation</a></li><li class="navelem"><a class="el" href="../../dir_a114401e9c99597f3e9367f4986aadc8.htm">Communication</a></li><li class="navelem"><b>DataTransfer.h</b></li>
-    <li class="footer">Generated on Sat Jul 1 2023 22:50:11 for XIIEngine by
+    <li class="footer">Generated on Mon Jul 10 2023 23:02:44 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

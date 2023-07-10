@@ -377,170 +377,168 @@ $(document).ready(function(){initNavTree('d5/d5f/_id_table__inl_8h_source.htm','
 <div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> IdType, <span class="keyword">typename</span> ValueType&gt;</div>
 <div class="line"><a name="l00289"></a><span class="lineno"><a class="line" href="../../d3/df7/classxii_id_table_base.htm#adb3f1d5025eff4e19755984b2bc5ec16">  289</a></span>&#160;XII_FORCE_INLINE <span class="keyword">const</span> ValueType&amp; <a class="code" href="../../d3/df7/classxii_id_table_base.htm#adb3f1d5025eff4e19755984b2bc5ec16">xiiIdTableBase&lt;IdType, ValueType&gt;::operator[]</a>(<span class="keyword">const</span> IdType <span class="keywordtype">id</span>)<span class="keyword"> const</span></div>
 <div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;<span class="keyword"></span>{</div>
-<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;  XII_ASSERT_DEV(<span class="keywordtype">id</span>.m_InstanceIndex &lt; m_Capacity, <span class="stringliteral">&quot;Out of bounds access. Table has {0} elements, trying to access element at index {1}.&quot;</span>,</div>
-<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;                 m_Capacity, <span class="keywordtype">id</span>.m_InstanceIndex);</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;  XII_ASSERT_DEBUG(<span class="keywordtype">id</span>.m_InstanceIndex &lt; m_Capacity, <span class="stringliteral">&quot;Out of bounds access. Table has {0} elements, trying to access element at index {1}.&quot;</span>, m_Capacity, <span class="keywordtype">id</span>.m_InstanceIndex);</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160; </div>
 <div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;  <span class="keyword">const</span> Entry&amp; entry = m_pEntries[<span class="keywordtype">id</span>.m_InstanceIndex];</div>
-<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;  XII_ASSERT_DEV(entry.id.IsIndexAndGenerationEqual(<span class="keywordtype">id</span>),</div>
-<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;                 <span class="stringliteral">&quot;Stale access. Trying to access a value (generation: {0}) that has been removed and replaced by a new value (generation: {1})&quot;</span>,</div>
-<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;                 entry.id.m_Generation, <span class="keywordtype">id</span>.m_Generation);</div>
-<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160; </div>
-<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;  <span class="keywordflow">return</span> entry.value;</div>
-<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;}</div>
-<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160; </div>
-<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> IdType, <span class="keyword">typename</span> ValueType&gt;</div>
-<div class="line"><a name="l00302"></a><span class="lineno"><a class="line" href="../../d3/df7/classxii_id_table_base.htm#a5c719b776a8b8ccec419429e258f338e">  302</a></span>&#160;XII_FORCE_INLINE ValueType&amp; <a class="code" href="../../d3/df7/classxii_id_table_base.htm#adb3f1d5025eff4e19755984b2bc5ec16">xiiIdTableBase&lt;IdType, ValueType&gt;::operator[]</a>(<span class="keyword">const</span> IdType <span class="keywordtype">id</span>)</div>
-<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;{</div>
-<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;  XII_ASSERT_DEV(<span class="keywordtype">id</span>.m_InstanceIndex &lt; m_Capacity, <span class="stringliteral">&quot;Out of bounds access. Table has {0} elements, trying to access element at index {1}.&quot;</span>,</div>
-<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;                 m_Capacity, <span class="keywordtype">id</span>.m_InstanceIndex);</div>
-<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;  Entry&amp; entry = m_pEntries[<span class="keywordtype">id</span>.m_InstanceIndex];</div>
-<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;  XII_ASSERT_DEV(entry.id.IsIndexAndGenerationEqual(<span class="keywordtype">id</span>),</div>
-<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;                 <span class="stringliteral">&quot;Stale access. Trying to access a value (generation: {0}) that has been removed and replaced by a new value (generation: {1})&quot;</span>,</div>
-<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;                 <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(entry.id.m_Generation), <span class="keywordtype">id</span>.m_Generation);</div>
-<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160; </div>
-<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;  <span class="keywordflow">return</span> entry.value;</div>
-<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;}</div>
-<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160; </div>
-<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> IdType, <span class="keyword">typename</span> ValueType&gt;</div>
-<div class="line"><a name="l00315"></a><span class="lineno"><a class="line" href="../../d3/df7/classxii_id_table_base.htm#aac90f88bc6ec21eef2ecbca0d2fa22cf">  315</a></span>&#160;XII_FORCE_INLINE <span class="keyword">const</span> ValueType&amp; <a class="code" href="../../d3/df7/classxii_id_table_base.htm#aac90f88bc6ec21eef2ecbca0d2fa22cf">xiiIdTableBase&lt;IdType, ValueType&gt;::GetValueUnchecked</a>(<span class="keyword">const</span> IndexType index)<span class="keyword"> const</span></div>
-<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;<span class="keyword"></span>{</div>
-<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;  XII_ASSERT_DEV(index &lt; m_Capacity, <span class="stringliteral">&quot;Out of bounds access. Table has {0} elements, trying to access element at index {1}.&quot;</span>, m_Capacity, index);</div>
-<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;  <span class="keywordflow">return</span> m_pEntries[index].value;</div>
-<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;}</div>
-<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160; </div>
-<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> IdType, <span class="keyword">typename</span> ValueType&gt;</div>
-<div class="line"><a name="l00322"></a><span class="lineno"><a class="line" href="../../d3/df7/classxii_id_table_base.htm#a0583774136b2b9979958b99fd3c482fd">  322</a></span>&#160;XII_FORCE_INLINE ValueType&amp; <a class="code" href="../../d3/df7/classxii_id_table_base.htm#aac90f88bc6ec21eef2ecbca0d2fa22cf">xiiIdTableBase&lt;IdType, ValueType&gt;::GetValueUnchecked</a>(<span class="keyword">const</span> IndexType index)</div>
-<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;{</div>
-<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;  XII_ASSERT_DEV(index &lt; m_Capacity, <span class="stringliteral">&quot;Out of bounds access. Table has {0} elements, trying to access element at index {1}.&quot;</span>, m_Capacity, index);</div>
-<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;  <span class="keywordflow">return</span> m_pEntries[index].value;</div>
-<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;}</div>
-<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160; </div>
-<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> IdType, <span class="keyword">typename</span> ValueType&gt;</div>
-<div class="line"><a name="l00329"></a><span class="lineno"><a class="line" href="../../d3/df7/classxii_id_table_base.htm#ab335e73479fc6d2800af53627b93e6a1">  329</a></span>&#160;XII_FORCE_INLINE <span class="keywordtype">bool</span> <a class="code" href="../../d3/df7/classxii_id_table_base.htm#ab335e73479fc6d2800af53627b93e6a1">xiiIdTableBase&lt;IdType, ValueType&gt;::Contains</a>(<span class="keyword">const</span> IdType <span class="keywordtype">id</span>)<span class="keyword"> const</span></div>
-<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;<span class="keyword"></span>{</div>
-<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;  <span class="keyword">const</span> IndexType index = <span class="keywordtype">id</span>.m_InstanceIndex;</div>
-<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;  <span class="keywordflow">return</span> index &lt; m_Capacity &amp;&amp; m_pEntries[index].id.IsIndexAndGenerationEqual(<span class="keywordtype">id</span>);</div>
-<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;}</div>
-<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160; </div>
-<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> IdType, <span class="keyword">typename</span> ValueType&gt;</div>
-<div class="line"><a name="l00336"></a><span class="lineno"><a class="line" href="../../d3/df7/classxii_id_table_base.htm#aa248f6c39f1fa65815987c68844a8593">  336</a></span>&#160;XII_ALWAYS_INLINE <span class="keyword">typename</span> <a class="code" href="../../df/dcc/structxii_id_table_base_1_1_iterator.htm">xiiIdTableBase&lt;IdType, ValueType&gt;::Iterator</a> <a class="code" href="../../d3/df7/classxii_id_table_base.htm#aa248f6c39f1fa65815987c68844a8593">xiiIdTableBase&lt;IdType, ValueType&gt;::GetIterator</a>()</div>
-<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;{</div>
-<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;  <span class="keywordflow">return</span> Iterator(*<span class="keyword">this</span>);</div>
-<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;}</div>
-<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160; </div>
-<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> IdType, <span class="keyword">typename</span> ValueType&gt;</div>
-<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;XII_ALWAYS_INLINE <span class="keyword">typename</span> <a class="code" href="../../da/db5/classxii_id_table_base_1_1_const_iterator.htm">xiiIdTableBase&lt;IdType, ValueType&gt;::ConstIterator</a> <a class="code" href="../../d3/df7/classxii_id_table_base.htm#aa248f6c39f1fa65815987c68844a8593">xiiIdTableBase&lt;IdType, ValueType&gt;::GetIterator</a>()<span class="keyword"> const</span></div>
-<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;<span class="keyword"></span>{</div>
-<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;  <span class="keywordflow">return</span> ConstIterator(*<span class="keyword">this</span>);</div>
-<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;}</div>
-<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160; </div>
-<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> IdType, <span class="keyword">typename</span> ValueType&gt;</div>
-<div class="line"><a name="l00348"></a><span class="lineno"><a class="line" href="../../d3/df7/classxii_id_table_base.htm#acc526a52e718245a2d13b2105a6b595b">  348</a></span>&#160;XII_ALWAYS_INLINE <a class="code" href="../../d5/d66/classxii_allocator_base.htm">xiiAllocatorBase</a>* <a class="code" href="../../d3/df7/classxii_id_table_base.htm#acc526a52e718245a2d13b2105a6b595b">xiiIdTableBase&lt;IdType, ValueType&gt;::GetAllocator</a>()<span class="keyword"> const</span></div>
-<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;<span class="keyword"></span>{</div>
-<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;  <span class="keywordflow">return</span> m_pAllocator;</div>
-<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;}</div>
-<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160; </div>
-<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> IdType, <span class="keyword">typename</span> ValueType&gt;</div>
-<div class="line"><a name="l00354"></a><span class="lineno"><a class="line" href="../../d3/df7/classxii_id_table_base.htm#a7bf49cb233d200249e7750c6efed73a7">  354</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="../../d3/df7/classxii_id_table_base.htm#a7bf49cb233d200249e7750c6efed73a7">xiiIdTableBase&lt;IdType, ValueType&gt;::IsFreelistValid</a>()<span class="keyword"> const</span></div>
-<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;<span class="keyword"></span>{</div>
-<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;  <span class="keywordflow">if</span> (m_pEntries == <span class="keyword">nullptr</span>)</div>
-<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160; </div>
-<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;  IndexType    uiIndex = m_FreelistDequeue;</div>
-<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;  <span class="keyword">const</span> Entry* pEntry  = m_pEntries + uiIndex;</div>
-<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160; </div>
-<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;  <span class="keywordflow">while</span> (pEntry-&gt;id.m_InstanceIndex &lt; m_Capacity)</div>
-<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;  {</div>
-<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;    uiIndex = pEntry-&gt;id.m_InstanceIndex;</div>
-<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;    pEntry  = m_pEntries + uiIndex;</div>
-<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;  }</div>
-<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160; </div>
-<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;  <span class="keywordflow">return</span> uiIndex == m_FreelistEnqueue;</div>
-<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;}</div>
-<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160; </div>
-<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160; </div>
-<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;<span class="comment">// private methods</span></div>
-<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> IdType, <span class="keyword">typename</span> ValueType&gt;</div>
-<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d3/df7/classxii_id_table_base.htm">xiiIdTableBase&lt;IdType, ValueType&gt;::SetCapacity</a>(IndexType uiCapacity)</div>
-<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;{</div>
-<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;  Entry* pNewEntries = XII_NEW_RAW_BUFFER(m_pAllocator, Entry, (<span class="keywordtype">size_t</span>)uiCapacity);</div>
-<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160; </div>
-<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;  <span class="keywordflow">for</span> (IndexType i = 0; i &lt; m_Capacity; ++i)</div>
-<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;  {</div>
-<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;    pNewEntries[i].id = m_pEntries[i].id;</div>
-<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160; </div>
-<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;    <span class="keywordflow">if</span> (m_pEntries[i].<span class="keywordtype">id</span>.m_InstanceIndex == i)</div>
-<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;    {</div>
-<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;      <a class="code" href="../../d8/d9d/classxii_memory_utils.htm#acddb7a04ed071f62321060eb8c59ab87">xiiMemoryUtils::RelocateConstruct</a>(&amp;pNewEntries[i].value, &amp;m_pEntries[i].value, 1);</div>
-<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;    }</div>
-<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;  }</div>
-<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160; </div>
-<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;  XII_DELETE_RAW_BUFFER(m_pAllocator, m_pEntries);</div>
-<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;  m_pEntries = pNewEntries;</div>
-<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160; </div>
-<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;  InitializeFreelist(m_Capacity, uiCapacity);</div>
-<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;  m_Capacity = uiCapacity;</div>
-<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;}</div>
-<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160; </div>
-<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> IdType, <span class="keyword">typename</span> ValueType&gt;</div>
-<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="../../d3/df7/classxii_id_table_base.htm">xiiIdTableBase&lt;IdType, ValueType&gt;::InitializeFreelist</a>(IndexType uiStart, IndexType uiEnd)</div>
-<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;{</div>
-<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;  <span class="keywordflow">for</span> (IndexType i = uiStart; i &lt; uiEnd; ++i)</div>
-<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;  {</div>
-<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;    IdType&amp; <span class="keywordtype">id</span> = m_pEntries[i].id;</div>
-<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;    <span class="keywordtype">id</span>         = IdType(i + 1, 1); <span class="comment">// initialize generation with 1, to prevent 0 from being a valid ID</span></div>
-<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;  }</div>
-<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160; </div>
-<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;  m_FreelistEnqueue = uiEnd - 1;</div>
-<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;}</div>
-<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160; </div>
-<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160; </div>
-<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> IdType, <span class="keyword">typename</span> V, <span class="keyword">typename</span> A&gt;</div>
-<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;<a class="code" href="../../d1/d8e/classxii_id_table.htm">xiiIdTable&lt;IdType, V, A&gt;::xiiIdTable</a>() :</div>
-<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;  <a class="code" href="../../d3/df7/classxii_id_table_base.htm">xiiIdTableBase</a>&lt;IdType, V&gt;(A::<a class="code" href="../../d3/df7/classxii_id_table_base.htm#acc526a52e718245a2d13b2105a6b595b">GetAllocator</a>())</div>
-<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;{</div>
-<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;}</div>
-<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160; </div>
-<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> IdType, <span class="keyword">typename</span> V, <span class="keyword">typename</span> A&gt;</div>
-<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;<a class="code" href="../../d1/d8e/classxii_id_table.htm">xiiIdTable&lt;IdType, V, A&gt;::xiiIdTable</a>(<a class="code" href="../../d5/d66/classxii_allocator_base.htm">xiiAllocatorBase</a>* pAllocator) :</div>
-<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;  <a class="code" href="../../d3/df7/classxii_id_table_base.htm">xiiIdTableBase</a>&lt;IdType, V&gt;(pAllocator)</div>
-<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;{</div>
-<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;}</div>
-<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160; </div>
-<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> IdType, <span class="keyword">typename</span> V, <span class="keyword">typename</span> A&gt;</div>
-<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;<a class="code" href="../../d1/d8e/classxii_id_table.htm">xiiIdTable&lt;IdType, V, A&gt;::xiiIdTable</a>(<span class="keyword">const</span> <a class="code" href="../../d1/d8e/classxii_id_table.htm">xiiIdTable&lt;IdType, V, A&gt;</a>&amp; other) :</div>
-<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;  <a class="code" href="../../d3/df7/classxii_id_table_base.htm">xiiIdTableBase</a>&lt;IdType, V&gt;(other, A::GetAllocator())</div>
-<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;{</div>
-<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;}</div>
-<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160; </div>
-<div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> IdType, <span class="keyword">typename</span> V, <span class="keyword">typename</span> A&gt;</div>
-<div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;<a class="code" href="../../d1/d8e/classxii_id_table.htm">xiiIdTable&lt;IdType, V, A&gt;::xiiIdTable</a>(<span class="keyword">const</span> <a class="code" href="../../d3/df7/classxii_id_table_base.htm">xiiIdTableBase&lt;IdType, V&gt;</a>&amp; other) :</div>
-<div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;  <a class="code" href="../../d3/df7/classxii_id_table_base.htm">xiiIdTableBase</a>&lt;IdType, V&gt;(other, A::GetAllocator())</div>
-<div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;{</div>
-<div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;}</div>
-<div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160; </div>
-<div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> IdType, <span class="keyword">typename</span> V, <span class="keyword">typename</span> A&gt;</div>
-<div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d1/d8e/classxii_id_table.htm">xiiIdTable&lt;IdType, V, A&gt;::operator=</a>(<span class="keyword">const</span> <a class="code" href="../../d1/d8e/classxii_id_table.htm">xiiIdTable&lt;IdType, V, A&gt;</a>&amp; rhs)</div>
-<div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;{</div>
-<div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;  <a class="code" href="../../d3/df7/classxii_id_table_base.htm#a7ebe6fe356a16e3038330f3f9af7471f">xiiIdTableBase&lt;IdType, V&gt;::operator=</a>(rhs);</div>
-<div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;}</div>
-<div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160; </div>
-<div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> IdType, <span class="keyword">typename</span> V, <span class="keyword">typename</span> A&gt;</div>
-<div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d1/d8e/classxii_id_table.htm">xiiIdTable&lt;IdType, V, A&gt;::operator=</a>(<span class="keyword">const</span> <a class="code" href="../../d3/df7/classxii_id_table_base.htm">xiiIdTableBase&lt;IdType, V&gt;</a>&amp; rhs)</div>
-<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;{</div>
-<div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;  <a class="code" href="../../d3/df7/classxii_id_table_base.htm#a7ebe6fe356a16e3038330f3f9af7471f">xiiIdTableBase&lt;IdType, V&gt;::operator=</a>(rhs);</div>
-<div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;}</div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160; </div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;  XII_ASSERT_DEBUG(entry.id.IsIndexAndGenerationEqual(<span class="keywordtype">id</span>), <span class="stringliteral">&quot;Stale access. Trying to access a value (generation: {0}) that has been removed and replaced by a new value (generation: {1})&quot;</span>, entry.id.m_Generation, <span class="keywordtype">id</span>.m_Generation);</div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160; </div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;  <span class="keywordflow">return</span> entry.value;</div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;}</div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160; </div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> IdType, <span class="keyword">typename</span> ValueType&gt;</div>
+<div class="line"><a name="l00301"></a><span class="lineno"><a class="line" href="../../d3/df7/classxii_id_table_base.htm#a5c719b776a8b8ccec419429e258f338e">  301</a></span>&#160;XII_FORCE_INLINE ValueType&amp; <a class="code" href="../../d3/df7/classxii_id_table_base.htm#adb3f1d5025eff4e19755984b2bc5ec16">xiiIdTableBase&lt;IdType, ValueType&gt;::operator[]</a>(<span class="keyword">const</span> IdType <span class="keywordtype">id</span>)</div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;{</div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;  XII_ASSERT_DEBUG(<span class="keywordtype">id</span>.m_InstanceIndex &lt; m_Capacity, <span class="stringliteral">&quot;Out of bounds access. Table has {0} elements, trying to access element at index {1}.&quot;</span>, m_Capacity, <span class="keywordtype">id</span>.m_InstanceIndex);</div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160; </div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;  Entry&amp; entry = m_pEntries[<span class="keywordtype">id</span>.m_InstanceIndex];</div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160; </div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;  XII_ASSERT_DEBUG(entry.id.IsIndexAndGenerationEqual(<span class="keywordtype">id</span>), <span class="stringliteral">&quot;Stale access. Trying to access a value (generation: {0}) that has been removed and replaced by a new value (generation: {1})&quot;</span>, <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(entry.id.m_Generation), <span class="keywordtype">id</span>.m_Generation);</div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160; </div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;  <span class="keywordflow">return</span> entry.value;</div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;}</div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160; </div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> IdType, <span class="keyword">typename</span> ValueType&gt;</div>
+<div class="line"><a name="l00313"></a><span class="lineno"><a class="line" href="../../d3/df7/classxii_id_table_base.htm#aac90f88bc6ec21eef2ecbca0d2fa22cf">  313</a></span>&#160;XII_FORCE_INLINE <span class="keyword">const</span> ValueType&amp; <a class="code" href="../../d3/df7/classxii_id_table_base.htm#aac90f88bc6ec21eef2ecbca0d2fa22cf">xiiIdTableBase&lt;IdType, ValueType&gt;::GetValueUnchecked</a>(<span class="keyword">const</span> IndexType index)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;  XII_ASSERT_DEBUG(index &lt; m_Capacity, <span class="stringliteral">&quot;Out of bounds access. Table has {0} elements, trying to access element at index {1}.&quot;</span>, m_Capacity, index);</div>
+<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;  <span class="keywordflow">return</span> m_pEntries[index].value;</div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;}</div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160; </div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> IdType, <span class="keyword">typename</span> ValueType&gt;</div>
+<div class="line"><a name="l00320"></a><span class="lineno"><a class="line" href="../../d3/df7/classxii_id_table_base.htm#a0583774136b2b9979958b99fd3c482fd">  320</a></span>&#160;XII_FORCE_INLINE ValueType&amp; <a class="code" href="../../d3/df7/classxii_id_table_base.htm#aac90f88bc6ec21eef2ecbca0d2fa22cf">xiiIdTableBase&lt;IdType, ValueType&gt;::GetValueUnchecked</a>(<span class="keyword">const</span> IndexType index)</div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;{</div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;  XII_ASSERT_DEBUG(index &lt; m_Capacity, <span class="stringliteral">&quot;Out of bounds access. Table has {0} elements, trying to access element at index {1}.&quot;</span>, m_Capacity, index);</div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;  <span class="keywordflow">return</span> m_pEntries[index].value;</div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;}</div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160; </div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> IdType, <span class="keyword">typename</span> ValueType&gt;</div>
+<div class="line"><a name="l00327"></a><span class="lineno"><a class="line" href="../../d3/df7/classxii_id_table_base.htm#ab335e73479fc6d2800af53627b93e6a1">  327</a></span>&#160;XII_FORCE_INLINE <span class="keywordtype">bool</span> <a class="code" href="../../d3/df7/classxii_id_table_base.htm#ab335e73479fc6d2800af53627b93e6a1">xiiIdTableBase&lt;IdType, ValueType&gt;::Contains</a>(<span class="keyword">const</span> IdType <span class="keywordtype">id</span>)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;  <span class="keyword">const</span> IndexType index = <span class="keywordtype">id</span>.m_InstanceIndex;</div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;  <span class="keywordflow">return</span> index &lt; m_Capacity &amp;&amp; m_pEntries[index].id.IsIndexAndGenerationEqual(<span class="keywordtype">id</span>);</div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;}</div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160; </div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> IdType, <span class="keyword">typename</span> ValueType&gt;</div>
+<div class="line"><a name="l00334"></a><span class="lineno"><a class="line" href="../../d3/df7/classxii_id_table_base.htm#aa248f6c39f1fa65815987c68844a8593">  334</a></span>&#160;XII_ALWAYS_INLINE <span class="keyword">typename</span> <a class="code" href="../../df/dcc/structxii_id_table_base_1_1_iterator.htm">xiiIdTableBase&lt;IdType, ValueType&gt;::Iterator</a> <a class="code" href="../../d3/df7/classxii_id_table_base.htm#aa248f6c39f1fa65815987c68844a8593">xiiIdTableBase&lt;IdType, ValueType&gt;::GetIterator</a>()</div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;{</div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;  <span class="keywordflow">return</span> Iterator(*<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;}</div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160; </div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> IdType, <span class="keyword">typename</span> ValueType&gt;</div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;XII_ALWAYS_INLINE <span class="keyword">typename</span> <a class="code" href="../../da/db5/classxii_id_table_base_1_1_const_iterator.htm">xiiIdTableBase&lt;IdType, ValueType&gt;::ConstIterator</a> <a class="code" href="../../d3/df7/classxii_id_table_base.htm#aa248f6c39f1fa65815987c68844a8593">xiiIdTableBase&lt;IdType, ValueType&gt;::GetIterator</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;  <span class="keywordflow">return</span> ConstIterator(*<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;}</div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160; </div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> IdType, <span class="keyword">typename</span> ValueType&gt;</div>
+<div class="line"><a name="l00346"></a><span class="lineno"><a class="line" href="../../d3/df7/classxii_id_table_base.htm#acc526a52e718245a2d13b2105a6b595b">  346</a></span>&#160;XII_ALWAYS_INLINE <a class="code" href="../../d5/d66/classxii_allocator_base.htm">xiiAllocatorBase</a>* <a class="code" href="../../d3/df7/classxii_id_table_base.htm#acc526a52e718245a2d13b2105a6b595b">xiiIdTableBase&lt;IdType, ValueType&gt;::GetAllocator</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;  <span class="keywordflow">return</span> m_pAllocator;</div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;}</div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160; </div>
+<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> IdType, <span class="keyword">typename</span> ValueType&gt;</div>
+<div class="line"><a name="l00352"></a><span class="lineno"><a class="line" href="../../d3/df7/classxii_id_table_base.htm#a7bf49cb233d200249e7750c6efed73a7">  352</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="../../d3/df7/classxii_id_table_base.htm#a7bf49cb233d200249e7750c6efed73a7">xiiIdTableBase&lt;IdType, ValueType&gt;::IsFreelistValid</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;  <span class="keywordflow">if</span> (m_pEntries == <span class="keyword">nullptr</span>)</div>
+<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160; </div>
+<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;  IndexType    uiIndex = m_FreelistDequeue;</div>
+<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;  <span class="keyword">const</span> Entry* pEntry  = m_pEntries + uiIndex;</div>
+<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160; </div>
+<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;  <span class="keywordflow">while</span> (pEntry-&gt;id.m_InstanceIndex &lt; m_Capacity)</div>
+<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;  {</div>
+<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;    uiIndex = pEntry-&gt;id.m_InstanceIndex;</div>
+<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;    pEntry  = m_pEntries + uiIndex;</div>
+<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;  }</div>
+<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160; </div>
+<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;  <span class="keywordflow">return</span> uiIndex == m_FreelistEnqueue;</div>
+<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;}</div>
+<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160; </div>
+<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160; </div>
+<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;<span class="comment">// private methods</span></div>
+<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> IdType, <span class="keyword">typename</span> ValueType&gt;</div>
+<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d3/df7/classxii_id_table_base.htm">xiiIdTableBase&lt;IdType, ValueType&gt;::SetCapacity</a>(IndexType uiCapacity)</div>
+<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;{</div>
+<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;  Entry* pNewEntries = XII_NEW_RAW_BUFFER(m_pAllocator, Entry, (<span class="keywordtype">size_t</span>)uiCapacity);</div>
+<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160; </div>
+<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;  <span class="keywordflow">for</span> (IndexType i = 0; i &lt; m_Capacity; ++i)</div>
+<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;  {</div>
+<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;    pNewEntries[i].id = m_pEntries[i].id;</div>
+<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160; </div>
+<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;    <span class="keywordflow">if</span> (m_pEntries[i].<span class="keywordtype">id</span>.m_InstanceIndex == i)</div>
+<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;    {</div>
+<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;      <a class="code" href="../../d8/d9d/classxii_memory_utils.htm#acddb7a04ed071f62321060eb8c59ab87">xiiMemoryUtils::RelocateConstruct</a>(&amp;pNewEntries[i].value, &amp;m_pEntries[i].value, 1);</div>
+<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;    }</div>
+<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;  }</div>
+<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160; </div>
+<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;  XII_DELETE_RAW_BUFFER(m_pAllocator, m_pEntries);</div>
+<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;  m_pEntries = pNewEntries;</div>
+<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160; </div>
+<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;  InitializeFreelist(m_Capacity, uiCapacity);</div>
+<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;  m_Capacity = uiCapacity;</div>
+<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;}</div>
+<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160; </div>
+<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> IdType, <span class="keyword">typename</span> ValueType&gt;</div>
+<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="../../d3/df7/classxii_id_table_base.htm">xiiIdTableBase&lt;IdType, ValueType&gt;::InitializeFreelist</a>(IndexType uiStart, IndexType uiEnd)</div>
+<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;{</div>
+<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;  <span class="keywordflow">for</span> (IndexType i = uiStart; i &lt; uiEnd; ++i)</div>
+<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;  {</div>
+<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;    IdType&amp; <span class="keywordtype">id</span> = m_pEntries[i].id;</div>
+<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;    <span class="keywordtype">id</span>         = IdType(i + 1, 1); <span class="comment">// initialize generation with 1, to prevent 0 from being a valid ID</span></div>
+<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;  }</div>
+<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160; </div>
+<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;  m_FreelistEnqueue = uiEnd - 1;</div>
+<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;}</div>
+<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160; </div>
+<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160; </div>
+<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> IdType, <span class="keyword">typename</span> V, <span class="keyword">typename</span> A&gt;</div>
+<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;<a class="code" href="../../d1/d8e/classxii_id_table.htm">xiiIdTable&lt;IdType, V, A&gt;::xiiIdTable</a>() :</div>
+<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;  <a class="code" href="../../d3/df7/classxii_id_table_base.htm">xiiIdTableBase</a>&lt;IdType, V&gt;(A::<a class="code" href="../../d3/df7/classxii_id_table_base.htm#acc526a52e718245a2d13b2105a6b595b">GetAllocator</a>())</div>
+<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;{</div>
+<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;}</div>
+<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160; </div>
+<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> IdType, <span class="keyword">typename</span> V, <span class="keyword">typename</span> A&gt;</div>
+<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;<a class="code" href="../../d1/d8e/classxii_id_table.htm">xiiIdTable&lt;IdType, V, A&gt;::xiiIdTable</a>(<a class="code" href="../../d5/d66/classxii_allocator_base.htm">xiiAllocatorBase</a>* pAllocator) :</div>
+<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;  <a class="code" href="../../d3/df7/classxii_id_table_base.htm">xiiIdTableBase</a>&lt;IdType, V&gt;(pAllocator)</div>
+<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;{</div>
+<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;}</div>
+<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160; </div>
+<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> IdType, <span class="keyword">typename</span> V, <span class="keyword">typename</span> A&gt;</div>
+<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;<a class="code" href="../../d1/d8e/classxii_id_table.htm">xiiIdTable&lt;IdType, V, A&gt;::xiiIdTable</a>(<span class="keyword">const</span> <a class="code" href="../../d1/d8e/classxii_id_table.htm">xiiIdTable&lt;IdType, V, A&gt;</a>&amp; other) :</div>
+<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;  <a class="code" href="../../d3/df7/classxii_id_table_base.htm">xiiIdTableBase</a>&lt;IdType, V&gt;(other, A::GetAllocator())</div>
+<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;{</div>
+<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;}</div>
+<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160; </div>
+<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> IdType, <span class="keyword">typename</span> V, <span class="keyword">typename</span> A&gt;</div>
+<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;<a class="code" href="../../d1/d8e/classxii_id_table.htm">xiiIdTable&lt;IdType, V, A&gt;::xiiIdTable</a>(<span class="keyword">const</span> <a class="code" href="../../d3/df7/classxii_id_table_base.htm">xiiIdTableBase&lt;IdType, V&gt;</a>&amp; other) :</div>
+<div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;  <a class="code" href="../../d3/df7/classxii_id_table_base.htm">xiiIdTableBase</a>&lt;IdType, V&gt;(other, A::GetAllocator())</div>
+<div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;{</div>
+<div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;}</div>
+<div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160; </div>
+<div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> IdType, <span class="keyword">typename</span> V, <span class="keyword">typename</span> A&gt;</div>
+<div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d1/d8e/classxii_id_table.htm">xiiIdTable&lt;IdType, V, A&gt;::operator=</a>(<span class="keyword">const</span> <a class="code" href="../../d1/d8e/classxii_id_table.htm">xiiIdTable&lt;IdType, V, A&gt;</a>&amp; rhs)</div>
+<div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;{</div>
+<div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;  <a class="code" href="../../d3/df7/classxii_id_table_base.htm#a7ebe6fe356a16e3038330f3f9af7471f">xiiIdTableBase&lt;IdType, V&gt;::operator=</a>(rhs);</div>
+<div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;}</div>
+<div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160; </div>
+<div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> IdType, <span class="keyword">typename</span> V, <span class="keyword">typename</span> A&gt;</div>
+<div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d1/d8e/classxii_id_table.htm">xiiIdTable&lt;IdType, V, A&gt;::operator=</a>(<span class="keyword">const</span> <a class="code" href="../../d3/df7/classxii_id_table_base.htm">xiiIdTableBase&lt;IdType, V&gt;</a>&amp; rhs)</div>
+<div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;{</div>
+<div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;  <a class="code" href="../../d3/df7/classxii_id_table_base.htm#a7ebe6fe356a16e3038330f3f9af7471f">xiiIdTableBase&lt;IdType, V&gt;::operator=</a>(rhs);</div>
+<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclassxii_id_table_htm"><div class="ttname"><a href="../../d1/d8e/classxii_id_table.htm">xiiIdTable</a></div><div class="ttdef"><b>Definition:</b> IdTable.h:170</div></div>
 <div class="ttc" id="aclassxii_memory_utils_htm_aece4fdeb5f8a35b58bd979302f3e9768"><div class="ttname"><a href="../../d8/d9d/classxii_memory_utils.htm#aece4fdeb5f8a35b58bd979302f3e9768">xiiMemoryUtils::CopyConstruct</a></div><div class="ttdeci">static void CopyConstruct(Destination *pDestination, const Source &amp;copy, size_t uiCount=1)</div><div class="ttdoc">Constructs uiCount objects of type T in a raw buffer at pDestination, by creating uiCount copies of c...</div></div>
 <div class="ttc" id="aclassxii_id_table_base_htm_a7ebe6fe356a16e3038330f3f9af7471f"><div class="ttname"><a href="../../d3/df7/classxii_id_table_base.htm#a7ebe6fe356a16e3038330f3f9af7471f">xiiIdTableBase::operator=</a></div><div class="ttdeci">void operator=(const xiiIdTableBase&lt; IdType, ValueType &gt; &amp;rhs)</div><div class="ttdoc">Copies the data from another table into this one.</div><div class="ttdef"><b>Definition:</b> IdTable_inl.h:126</div></div>
 <div class="ttc" id="aclassxii_id_table_base_1_1_const_iterator_htm_a2adc02bc94651829c4c20b6d9d7ffa1a"><div class="ttname"><a href="../../da/db5/classxii_id_table_base_1_1_const_iterator.htm#a2adc02bc94651829c4c20b6d9d7ffa1a">xiiIdTableBase::ConstIterator::operator==</a></div><div class="ttdeci">bool operator==(const typename xiiIdTableBase&lt; IdType, ValueType &gt;::ConstIterator &amp;it2) const</div><div class="ttdoc">Checks whether the two iterators point to the same element.</div><div class="ttdef"><b>Definition:</b> IdTable_inl.h:24</div></div>
-<div class="ttc" id="aclassxii_id_table_base_htm_a7bf49cb233d200249e7750c6efed73a7"><div class="ttname"><a href="../../d3/df7/classxii_id_table_base.htm#a7bf49cb233d200249e7750c6efed73a7">xiiIdTableBase::IsFreelistValid</a></div><div class="ttdeci">bool IsFreelistValid() const</div><div class="ttdoc">Returns whether the internal free-list is valid. For testing purpose only.</div><div class="ttdef"><b>Definition:</b> IdTable_inl.h:354</div></div>
-<div class="ttc" id="aclassxii_id_table_base_htm_acc526a52e718245a2d13b2105a6b595b"><div class="ttname"><a href="../../d3/df7/classxii_id_table_base.htm#acc526a52e718245a2d13b2105a6b595b">xiiIdTableBase::GetAllocator</a></div><div class="ttdeci">xiiAllocatorBase * GetAllocator() const</div><div class="ttdoc">Returns the allocator that is used by this instance.</div><div class="ttdef"><b>Definition:</b> IdTable_inl.h:348</div></div>
+<div class="ttc" id="aclassxii_id_table_base_htm_a7bf49cb233d200249e7750c6efed73a7"><div class="ttname"><a href="../../d3/df7/classxii_id_table_base.htm#a7bf49cb233d200249e7750c6efed73a7">xiiIdTableBase::IsFreelistValid</a></div><div class="ttdeci">bool IsFreelistValid() const</div><div class="ttdoc">Returns whether the internal free-list is valid. For testing purpose only.</div><div class="ttdef"><b>Definition:</b> IdTable_inl.h:352</div></div>
+<div class="ttc" id="aclassxii_id_table_base_htm_acc526a52e718245a2d13b2105a6b595b"><div class="ttname"><a href="../../d3/df7/classxii_id_table_base.htm#acc526a52e718245a2d13b2105a6b595b">xiiIdTableBase::GetAllocator</a></div><div class="ttdeci">xiiAllocatorBase * GetAllocator() const</div><div class="ttdoc">Returns the allocator that is used by this instance.</div><div class="ttdef"><b>Definition:</b> IdTable_inl.h:346</div></div>
 <div class="ttc" id="astructxii_id_table_base_1_1_iterator_htm_a18cae17cfc5edb8234df09b80cf75e58"><div class="ttname"><a href="../../df/dcc/structxii_id_table_base_1_1_iterator.htm#a18cae17cfc5edb8234df09b80cf75e58">xiiIdTableBase::Iterator::Value</a></div><div class="ttdeci">ValueType &amp; Value()</div><div class="ttdoc">Returns the 'value' of the element that this iterator points to.</div><div class="ttdef"><b>Definition:</b> IdTable_inl.h:78</div></div>
 <div class="ttc" id="aclassxii_memory_utils_htm_acddb7a04ed071f62321060eb8c59ab87"><div class="ttname"><a href="../../d8/d9d/classxii_memory_utils.htm#acddb7a04ed071f62321060eb8c59ab87">xiiMemoryUtils::RelocateConstruct</a></div><div class="ttdeci">static void RelocateConstruct(T *pDestination, T *pSource, size_t uiCount=1)</div><div class="ttdoc">Constructs uiCount objects of type T in a raw buffer at pDestination from an existing array of object...</div></div>
 <div class="ttc" id="aclassxii_id_table_base_htm_aa1a09c6eed7767f470cfaf9479e1c911"><div class="ttname"><a href="../../d3/df7/classxii_id_table_base.htm#aa1a09c6eed7767f470cfaf9479e1c911">xiiIdTableBase::TryGetValue</a></div><div class="ttdeci">bool TryGetValue(const IdType id, ValueType &amp;out_value) const</div><div class="ttdoc">Returns if an entry with the given id was found and if found writes out the corresponding value to ou...</div><div class="ttdef"><b>Definition:</b> IdTable_inl.h:265</div></div>
-<div class="ttc" id="aclassxii_id_table_base_htm_ab335e73479fc6d2800af53627b93e6a1"><div class="ttname"><a href="../../d3/df7/classxii_id_table_base.htm#ab335e73479fc6d2800af53627b93e6a1">xiiIdTableBase::Contains</a></div><div class="ttdeci">bool Contains(const IdType id) const</div><div class="ttdoc">Returns if the table contains an entry corresponding to the given id.</div><div class="ttdef"><b>Definition:</b> IdTable_inl.h:329</div></div>
+<div class="ttc" id="aclassxii_id_table_base_htm_ab335e73479fc6d2800af53627b93e6a1"><div class="ttname"><a href="../../d3/df7/classxii_id_table_base.htm#ab335e73479fc6d2800af53627b93e6a1">xiiIdTableBase::Contains</a></div><div class="ttdeci">bool Contains(const IdType id) const</div><div class="ttdoc">Returns if the table contains an entry corresponding to the given id.</div><div class="ttdef"><b>Definition:</b> IdTable_inl.h:327</div></div>
 <div class="ttc" id="aclassxii_id_table_base_htm_aee9358398db230d74286bc495e117746"><div class="ttname"><a href="../../d3/df7/classxii_id_table_base.htm#aee9358398db230d74286bc495e117746">xiiIdTableBase::GetCount</a></div><div class="ttdeci">IndexType GetCount() const</div><div class="ttdoc">Returns the number of active entries in the table.</div><div class="ttdef"><b>Definition:</b> IdTable_inl.h:166</div></div>
 <div class="ttc" id="aclassxii_id_table_base_1_1_const_iterator_htm_a682fa0ca9bb7febeddf76203229d599f"><div class="ttname"><a href="../../da/db5/classxii_id_table_base_1_1_const_iterator.htm#a682fa0ca9bb7febeddf76203229d599f">xiiIdTableBase::ConstIterator::Value</a></div><div class="ttdeci">const ValueType &amp; Value() const</div><div class="ttdoc">Returns the 'value' of the element that this iterator points to.</div><div class="ttdef"><b>Definition:</b> IdTable_inl.h:44</div></div>
 <div class="ttc" id="aclassxii_id_table_base_1_1_const_iterator_htm_a19342850dac5a978da6bc96d1fde7bb1"><div class="ttname"><a href="../../da/db5/classxii_id_table_base_1_1_const_iterator.htm#a19342850dac5a978da6bc96d1fde7bb1">xiiIdTableBase::ConstIterator::IsValid</a></div><div class="ttdeci">bool IsValid() const</div><div class="ttdoc">Checks whether this iterator points to a valid element.</div><div class="ttdef"><b>Definition:</b> IdTable_inl.h:18</div></div>
@@ -554,11 +552,11 @@ $(document).ready(function(){initNavTree('d5/d5f/_id_table__inl_8h_source.htm','
 <div class="ttc" id="aclassxii_allocator_base_htm"><div class="ttname"><a href="../../d5/d66/classxii_allocator_base.htm">xiiAllocatorBase</a></div><div class="ttdoc">Base class for all memory allocators.</div><div class="ttdef"><b>Definition:</b> AllocatorBase.h:21</div></div>
 <div class="ttc" id="aclassxii_id_table_base_htm_aa3e2172ef62d8514836e1bff3290f93c"><div class="ttname"><a href="../../d3/df7/classxii_id_table_base.htm#aa3e2172ef62d8514836e1bff3290f93c">xiiIdTableBase::xiiIdTableBase</a></div><div class="ttdeci">xiiIdTableBase(xiiAllocatorBase *pAllocator)</div><div class="ttdoc">Creates an empty id-table. Does not allocate any data yet.</div><div class="ttdef"><b>Definition:</b> IdTable_inl.h:87</div></div>
 <div class="ttc" id="aclassxii_id_table_base_htm_a041d00045a87ec0aef122a2174b537d5"><div class="ttname"><a href="../../d3/df7/classxii_id_table_base.htm#a041d00045a87ec0aef122a2174b537d5">xiiIdTableBase::Clear</a></div><div class="ttdeci">void Clear()</div><div class="ttdoc">Clears the table.</div><div class="ttdef"><b>Definition:</b> IdTable_inl.h:178</div></div>
-<div class="ttc" id="aclassxii_id_table_base_htm_aa248f6c39f1fa65815987c68844a8593"><div class="ttname"><a href="../../d3/df7/classxii_id_table_base.htm#aa248f6c39f1fa65815987c68844a8593">xiiIdTableBase::GetIterator</a></div><div class="ttdeci">Iterator GetIterator()</div><div class="ttdoc">Returns an Iterator to the very first element.</div><div class="ttdef"><b>Definition:</b> IdTable_inl.h:336</div></div>
+<div class="ttc" id="aclassxii_id_table_base_htm_aa248f6c39f1fa65815987c68844a8593"><div class="ttname"><a href="../../d3/df7/classxii_id_table_base.htm#aa248f6c39f1fa65815987c68844a8593">xiiIdTableBase::GetIterator</a></div><div class="ttdeci">Iterator GetIterator()</div><div class="ttdoc">Returns an Iterator to the very first element.</div><div class="ttdef"><b>Definition:</b> IdTable_inl.h:334</div></div>
 <div class="ttc" id="aclassxii_memory_utils_htm_a6c8728654ad1b5c0c9dcbb597a93594d"><div class="ttname"><a href="../../d8/d9d/classxii_memory_utils.htm#a6c8728654ad1b5c0c9dcbb597a93594d">xiiMemoryUtils::Destruct</a></div><div class="ttdeci">static void Destruct(T *pDestination, size_t uiCount=1)</div><div class="ttdoc">Destructs uiCount objects of type T at pDestination.</div></div>
 <div class="ttc" id="aclassxii_id_table_base_1_1_const_iterator_htm_a6a423dd700d44e4515be6206674b7313"><div class="ttname"><a href="../../da/db5/classxii_id_table_base_1_1_const_iterator.htm#a6a423dd700d44e4515be6206674b7313">xiiIdTableBase::ConstIterator::operator!=</a></div><div class="ttdeci">bool operator!=(const typename xiiIdTableBase&lt; IdType, ValueType &gt;::ConstIterator &amp;it2) const</div><div class="ttdoc">Checks whether the two iterators point to the same element.</div><div class="ttdef"><b>Definition:</b> IdTable_inl.h:31</div></div>
 <div class="ttc" id="aclassxii_id_table_base_htm_a2c0b54f213459aa6bd34a82ad67d63c6"><div class="ttname"><a href="../../d3/df7/classxii_id_table_base.htm#a2c0b54f213459aa6bd34a82ad67d63c6">xiiIdTableBase::IsEmpty</a></div><div class="ttdeci">bool IsEmpty() const</div><div class="ttdoc">Returns true, if the table does not contain any elements.</div><div class="ttdef"><b>Definition:</b> IdTable_inl.h:172</div></div>
-<div class="ttc" id="aclassxii_id_table_base_htm_aac90f88bc6ec21eef2ecbca0d2fa22cf"><div class="ttname"><a href="../../d3/df7/classxii_id_table_base.htm#aac90f88bc6ec21eef2ecbca0d2fa22cf">xiiIdTableBase::GetValueUnchecked</a></div><div class="ttdeci">const ValueType &amp; GetValueUnchecked(const IndexType index) const</div><div class="ttdoc">Returns the value at the given index. Does bounds checks in debug builds but does not check for stale...</div><div class="ttdef"><b>Definition:</b> IdTable_inl.h:315</div></div>
+<div class="ttc" id="aclassxii_id_table_base_htm_aac90f88bc6ec21eef2ecbca0d2fa22cf"><div class="ttname"><a href="../../d3/df7/classxii_id_table_base.htm#aac90f88bc6ec21eef2ecbca0d2fa22cf">xiiIdTableBase::GetValueUnchecked</a></div><div class="ttdeci">const ValueType &amp; GetValueUnchecked(const IndexType index) const</div><div class="ttdoc">Returns the value at the given index. Does bounds checks in debug builds but does not check for stale...</div><div class="ttdef"><b>Definition:</b> IdTable_inl.h:313</div></div>
 <div class="ttc" id="astructxii_id_table_base_1_1_iterator_htm"><div class="ttname"><a href="../../df/dcc/structxii_id_table_base_1_1_iterator.htm">xiiIdTableBase::Iterator</a></div><div class="ttdoc">Iterator with write access.</div><div class="ttdef"><b>Definition:</b> IdTable.h:59</div></div>
 <div class="ttc" id="aclassxii_id_table_base_htm_a64ad1a2d9725ea2135599ece26dbe8fc"><div class="ttname"><a href="../../d3/df7/classxii_id_table_base.htm#a64ad1a2d9725ea2135599ece26dbe8fc">xiiIdTableBase::Reserve</a></div><div class="ttdeci">void Reserve(IndexType capacity)</div><div class="ttdoc">Expands the table so it can at least store the given capacity.</div><div class="ttdef"><b>Definition:</b> IdTable_inl.h:147</div></div>
 <div class="ttc" id="aclassxii_id_table_base_htm"><div class="ttname"><a href="../../d3/df7/classxii_id_table_base.htm">xiiIdTableBase</a></div><div class="ttdoc">Implementation of an id mapping table which stores id/value pairs.</div><div class="ttdef"><b>Definition:</b> IdTable.h:17</div></div>
@@ -567,7 +565,7 @@ $(document).ready(function(){initNavTree('d5/d5f/_id_table__inl_8h_source.htm','
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.htm">home</a></li><li class="navelem"><a class="el" href="../../dir_1036706e55c22cab35bc1c58ee689f1d.htm">runner</a></li><li class="navelem"><a class="el" href="../../dir_629f8151d55d307162ff2d619fb1783d.htm">work</a></li><li class="navelem"><a class="el" href="../../dir_1ddc44fe1263a8c7935fa6130b7d9499.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_2c1b6808f12952f4c36e05ba7068379a.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_b5a1c4ecfca018ad24b729e213296d41.htm">Source</a></li><li class="navelem"><a class="el" href="../../dir_e321052006a51284e67389ab20037e7c.htm">Engine</a></li><li class="navelem"><a class="el" href="../../dir_be0c42c58b36f42c54ec54024ed4f6af.htm">Foundation</a></li><li class="navelem"><a class="el" href="../../dir_7f59ab18dbc50035dfc0ee7070867286.htm">Containers</a></li><li class="navelem"><a class="el" href="../../dir_acc055bf9d45372e5f916366fab93514.htm">Implementation</a></li><li class="navelem"><b>IdTable_inl.h</b></li>
-    <li class="footer">Generated on Sat Jul 1 2023 22:50:15 for XIIEngine by
+    <li class="footer">Generated on Mon Jul 10 2023 23:02:47 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

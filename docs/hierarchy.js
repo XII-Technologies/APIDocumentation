@@ -48,8 +48,8 @@ var hierarchy =
     [ "xiiDynamicMenuAction::Item::ItemFlags::Bits", "d9/dbf/structxii_dynamic_menu_action_1_1_item_1_1_item_flags_1_1_bits.htm", null ],
     [ "xiiStandardMenuTypes::Bits", "dd/d51/structxii_standard_menu_types_1_1_bits.htm", null ],
     [ "xiiNodeFlags::Bits", "d9/d5a/structxii_node_flags_1_1_bits.htm", null ],
-    [ "xiiQtNodeScene::ConnectionDecorationFlags::Bits", "d8/d80/structxii_qt_node_scene_1_1_connection_decoration_flags_1_1_bits.htm", null ],
     [ "xiiResourceFlags::Bits", "df/d78/structxii_resource_flags_1_1_bits.htm", null ],
+    [ "xiiQtNodeScene::ConnectionDecorationFlags::Bits", "d8/d80/structxii_qt_node_scene_1_1_connection_decoration_flags_1_1_bits.htm", null ],
     [ "xiiCrashHandler_WriteMiniDump::PathFlags::Bits", "d2/d7a/structxii_crash_handler___write_mini_dump_1_1_path_flags_1_1_bits.htm", null ],
     [ "xiiQtEditorApp::StartupFlags::Bits", "d2/de1/structxii_qt_editor_app_1_1_startup_flags_1_1_bits.htm", null ],
     [ "xiiDocumentFlags::Bits", "d3/d80/structxii_document_flags_1_1_bits.htm", null ],
@@ -140,10 +140,10 @@ var hierarchy =
     [ "xiiGameObject::ConstChildIterator", "d9/d28/classxii_game_object_1_1_const_child_iterator.htm", [
       [ "xiiGameObject::ChildIterator", "d2/dfe/classxii_game_object_1_1_child_iterator.htm", null ]
     ] ],
-    [ "xiiHashSetBase< KeyType, Hasher >::ConstIterator", "d1/dde/classxii_hash_set_base_1_1_const_iterator.htm", null ],
     [ "xiiHashTableBase< KeyType, ValueType, Hasher >::ConstIterator", "d2/d41/structxii_hash_table_base_1_1_const_iterator.htm", [
       [ "xiiHashTableBase< KeyType, ValueType, Hasher >::Iterator", "d7/dcf/structxii_hash_table_base_1_1_iterator.htm", null ]
     ] ],
+    [ "xiiHashSetBase< KeyType, Hasher >::ConstIterator", "d1/dde/classxii_hash_set_base_1_1_const_iterator.htm", null ],
     [ "xiiIdTableBase< IdType, ValueType >::ConstIterator", "da/db5/classxii_id_table_base_1_1_const_iterator.htm", [
       [ "xiiIdTableBase< IdType, ValueType >::Iterator", "df/dcc/structxii_id_table_base_1_1_iterator.htm", null ]
     ] ],
@@ -274,7 +274,6 @@ var hierarchy =
       [ "xiiModelImporter2::ImporterSourceBSP", "d8/de1/classxii_model_importer2_1_1_importer_source_b_s_p.htm", null ]
     ] ],
     [ "xiiModelImporter2::ImportOptions", "db/d06/structxii_model_importer2_1_1_import_options.htm", null ],
-    [ "xiiJoltRagdollComponent::Impulse", "db/d3d/structxii_jolt_ragdoll_component_1_1_impulse.htm", null ],
     [ "xiiAssetDocumentGenerator::Info", "d4/d07/structxii_asset_document_generator_1_1_info.htm", null ],
     [ "xiiPlugin::Init", "de/d5a/structxii_plugin_1_1_init.htm", null ],
     [ "xiiMathExpression::Input", "d6/df2/structxii_math_expression_1_1_input.htm", null ],
@@ -344,7 +343,7 @@ var hierarchy =
     [ "xiiAnimationClipResourceDescriptor::KeyframeVec3", "db/d6a/structxii_animation_clip_resource_descriptor_1_1_keyframe_vec3.htm", null ],
     [ "xiiTextureAtlasCreationDesc::Layer", "da/de8/structxii_texture_atlas_creation_desc_1_1_layer.htm", null ],
     [ "xiiJoltRagdollComponent::Limb", "d4/de5/structxii_jolt_ragdoll_component_1_1_limb.htm", null ],
-    [ "xiiJoltRagdollComponent::LimbConfig", "d6/dd5/structxii_jolt_ragdoll_component_1_1_limb_config.htm", null ],
+    [ "xiiJoltRagdollComponent::LimbConstructionInfo", "d3/db4/structxii_jolt_ragdoll_component_1_1_limb_construction_info.htm", null ],
     [ "xiiDebugRenderer::Line", "d3/df9/structxii_debug_renderer_1_1_line.htm", null ],
     [ "xiiGeometry::Line", "d8/d15/structxii_geometry_1_1_line.htm", null ],
     [ "xiiPathComponent::LinearizedElement", "d9/de2/structxii_path_component_1_1_linearized_element.htm", null ],
@@ -1195,6 +1194,9 @@ var hierarchy =
     [ "xiiAngleTemplate< double >", "d3/ddb/classxii_angle_template.htm", null ],
     [ "xiiAngleTemplate< float >", "d3/ddb/classxii_angle_template.htm", null ],
     [ "xiiAnimationClipResourceDescriptor", "d6/d8d/structxii_animation_clip_resource_descriptor.htm", null ],
+    [ "xiiAnimationInvisibleUpdateRate", "d1/d14/structxii_animation_invisible_update_rate.htm", [
+      [ "xiiEnum< xiiAnimationInvisibleUpdateRate >", "de/dfd/structxii_enum.htm", null ]
+    ] ],
     [ "xiiAnimClip1D", "de/d39/structxii_anim_clip1_d.htm", null ],
     [ "xiiAnimClip2D", "df/d6e/structxii_anim_clip2_d.htm", null ],
     [ "xiiAnimGraph", "d7/dd0/classxii_anim_graph.htm", null ],
@@ -1348,11 +1350,6 @@ var hierarchy =
         [ "xiiDynamicArray< ConsoleFuncCall, xiiDefaultAllocatorWrapper >", "dc/da4/classxii_dynamic_array.htm", [
           [ "xiiHybridArray< ConsoleFuncCall, 4 >", "dc/da9/classxii_hybrid_array.htm", null ]
         ] ]
-      ] ]
-    ] ],
-    [ "xiiArrayBase< const char *, xiiDynamicArrayBase< const char * > >", "da/d4c/classxii_array_base.htm", [
-      [ "xiiDynamicArrayBase< const char * >", "d2/dea/classxii_dynamic_array_base.htm", [
-        [ "xiiDynamicArray< const char * >", "dc/da4/classxii_dynamic_array.htm", null ]
       ] ]
     ] ],
     [ "xiiArrayBase< const char *, xiiStaticArray< const char *, Capacity > >", "da/d4c/classxii_array_base.htm", [
@@ -2400,6 +2397,11 @@ var hierarchy =
         [ "xiiDynamicArray< xiiDynamicMeshVertex, xiiAlignedAllocatorWrapper >", "dc/da4/classxii_dynamic_array.htm", null ]
       ] ]
     ] ],
+    [ "xiiArrayBase< xiiEditableSkeletonBoneCollider, xiiDynamicArrayBase< xiiEditableSkeletonBoneCollider > >", "da/d4c/classxii_array_base.htm", [
+      [ "xiiDynamicArrayBase< xiiEditableSkeletonBoneCollider >", "d2/dea/classxii_dynamic_array_base.htm", [
+        [ "xiiDynamicArray< xiiEditableSkeletonBoneCollider >", "dc/da4/classxii_dynamic_array.htm", null ]
+      ] ]
+    ] ],
     [ "xiiArrayBase< xiiEditableSkeletonBoneShape, xiiDynamicArrayBase< xiiEditableSkeletonBoneShape > >", "da/d4c/classxii_array_base.htm", [
       [ "xiiDynamicArrayBase< xiiEditableSkeletonBoneShape >", "d2/dea/classxii_dynamic_array_base.htm", [
         [ "xiiDynamicArray< xiiEditableSkeletonBoneShape, xiiDefaultAllocatorWrapper >", "dc/da4/classxii_dynamic_array.htm", [
@@ -2715,11 +2717,6 @@ var hierarchy =
     [ "xiiArrayBase< xiiJoltRagdollComponent::Limb, xiiDynamicArrayBase< xiiJoltRagdollComponent::Limb > >", "da/d4c/classxii_array_base.htm", [
       [ "xiiDynamicArrayBase< xiiJoltRagdollComponent::Limb >", "d2/dea/classxii_dynamic_array_base.htm", [
         [ "xiiDynamicArray< xiiJoltRagdollComponent::Limb >", "dc/da4/classxii_dynamic_array.htm", null ]
-      ] ]
-    ] ],
-    [ "xiiArrayBase< xiiJoltRagdollConstraint, xiiDynamicArrayBase< xiiJoltRagdollConstraint > >", "da/d4c/classxii_array_base.htm", [
-      [ "xiiDynamicArrayBase< xiiJoltRagdollConstraint >", "d2/dea/classxii_dynamic_array_base.htm", [
-        [ "xiiDynamicArray< xiiJoltRagdollConstraint >", "dc/da4/classxii_dynamic_array.htm", null ]
       ] ]
     ] ],
     [ "xiiArrayBase< xiiJoltSurfaceResourceSlot, xiiDynamicArrayBase< xiiJoltSurfaceResourceSlot > >", "da/d4c/classxii_array_base.htm", [
@@ -3555,6 +3552,11 @@ var hierarchy =
         [ "xiiDynamicArray< xiiStringBuilder >", "dc/da4/classxii_dynamic_array.htm", null ]
       ] ]
     ] ],
+    [ "xiiArrayBase< xiiStringView, xiiDynamicArrayBase< xiiStringView > >", "da/d4c/classxii_array_base.htm", [
+      [ "xiiDynamicArrayBase< xiiStringView >", "d2/dea/classxii_dynamic_array_base.htm", [
+        [ "xiiDynamicArray< xiiStringView >", "dc/da4/classxii_dynamic_array.htm", null ]
+      ] ]
+    ] ],
     [ "xiiArrayBase< xiiSurfaceInteraction, xiiDynamicArrayBase< xiiSurfaceInteraction > >", "da/d4c/classxii_array_base.htm", [
       [ "xiiDynamicArrayBase< xiiSurfaceInteraction >", "d2/dea/classxii_dynamic_array_base.htm", [
         [ "xiiDynamicArray< xiiSurfaceInteraction, xiiDefaultAllocatorWrapper >", "dc/da4/classxii_dynamic_array.htm", [
@@ -4346,6 +4348,7 @@ var hierarchy =
     [ "xiiCompareHelper< xiiReflectedTypeStorageAccessor * >", "d1/deb/structxii_compare_helper.htm", null ],
     [ "xiiCompareHelper< xiiResource * >", "d1/deb/structxii_compare_helper.htm", null ],
     [ "xiiCompareHelper< xiiString >", "d1/deb/structxii_compare_helper.htm", null ],
+    [ "xiiCompareHelper< xiiStringView >", "d1/deb/structxii_compare_helper.htm", null ],
     [ "xiiCompareHelper< xiiTempHashedString >", "d1/deb/structxii_compare_helper.htm", null ],
     [ "xiiCompareHelper< xiiTime >", "d1/deb/structxii_compare_helper.htm", null ],
     [ "xiiCompareHelper< xiiUInt32 >", "d1/deb/structxii_compare_helper.htm", null ],
@@ -5911,8 +5914,8 @@ var hierarchy =
     [ "xiiJoltCookingMesh", "d3/dfc/structxii_jolt_cooking_mesh.htm", null ],
     [ "xiiJoltCore", "d7/d83/classxii_jolt_core.htm", null ],
     [ "xiiJoltMeshResourceDescriptor", "d7/d25/structxii_jolt_mesh_resource_descriptor.htm", null ],
-    [ "xiiJoltRagdollStart", "d5/d4a/structxii_jolt_ragdoll_start.htm", [
-      [ "xiiEnum< xiiJoltRagdollStart >", "de/dfd/structxii_enum.htm", null ]
+    [ "xiiJoltRagdollStartMode", "d3/d50/structxii_jolt_ragdoll_start_mode.htm", [
+      [ "xiiEnum< xiiJoltRagdollStartMode >", "de/dfd/structxii_enum.htm", null ]
     ] ],
     [ "xiiJoltRopeAnchorConstraintMode", "d2/d79/structxii_jolt_rope_anchor_constraint_mode.htm", [
       [ "xiiEnum< xiiJoltRopeAnchorConstraintMode >", "de/dfd/structxii_enum.htm", null ]
@@ -5998,9 +6001,6 @@ var hierarchy =
     [ "xiiMapBase< KeyType, ValueType, Comparer >", "d6/d86/classxii_map_base.htm", null ],
     [ "xiiMapBase< AssignFuncKey, xiiVisualScriptDataPinAssignFunc, xiiCompareHelper< AssignFuncKey > >", "d6/d86/classxii_map_base.htm", [
       [ "xiiMap< AssignFuncKey, xiiVisualScriptDataPinAssignFunc >", "d6/df7/classxii_map.htm", null ]
-    ] ],
-    [ "xiiMapBase< const char *, xiiAbstractObjectNode *, CompareConstChar >", "d6/d86/classxii_map_base.htm", [
-      [ "xiiMap< const char *, xiiAbstractObjectNode *, CompareConstChar >", "d6/df7/classxii_map.htm", null ]
     ] ],
     [ "xiiMapBase< const char *, xiiGALVertexAttributeSemantic::Enum, CompareConstChar >", "d6/d86/classxii_map_base.htm", [
       [ "xiiMap< const char *, xiiGALVertexAttributeSemantic::Enum, CompareConstChar >", "d6/df7/classxii_map.htm", null ]
@@ -6337,6 +6337,9 @@ var hierarchy =
     ] ],
     [ "xiiMapBase< xiiString, xiiInputSlot, xiiCompareHelper< xiiString > >", "d6/d86/classxii_map_base.htm", [
       [ "xiiMap< xiiString, xiiInputSlot >", "d6/df7/classxii_map.htm", null ]
+    ] ],
+    [ "xiiMapBase< xiiStringView, xiiAbstractObjectNode *, xiiCompareHelper< xiiStringView > >", "d6/d86/classxii_map_base.htm", [
+      [ "xiiMap< xiiStringView, xiiAbstractObjectNode * >", "d6/df7/classxii_map.htm", null ]
     ] ],
     [ "xiiMapBase< xiiTempHashedString, xiiTag, xiiCompareHelper< xiiTempHashedString > >", "d6/d86/classxii_map_base.htm", [
       [ "xiiMap< xiiTempHashedString, xiiTag >", "d6/df7/classxii_map.htm", null ]
@@ -7032,6 +7035,7 @@ var hierarchy =
         ] ],
         [ "xiiDragDropInfo", "d7/d7c/classxii_drag_drop_info.htm", null ],
         [ "xiiEditableSkeleton", "d5/d12/classxii_editable_skeleton.htm", null ],
+        [ "xiiEditableSkeletonBoneCollider", "d5/dd2/structxii_editable_skeleton_bone_collider.htm", null ],
         [ "xiiEditableSkeletonBoneShape", "d3/d26/structxii_editable_skeleton_bone_shape.htm", null ],
         [ "xiiEditableSkeletonJoint", "da/d1c/classxii_editable_skeleton_joint.htm", null ],
         [ "xiiEditorEngineSyncObject", "d3/d05/classxii_editor_engine_sync_object.htm", [
@@ -7142,7 +7146,6 @@ var hierarchy =
         [ "xiiImageDataAssetProperties", "dc/d37/classxii_image_data_asset_properties.htm", null ],
         [ "xiiIntensityControlPoint", "db/dc4/classxii_intensity_control_point.htm", null ],
         [ "xiiJoltCollisionMeshAssetProperties", "d4/dc2/classxii_jolt_collision_mesh_asset_properties.htm", null ],
-        [ "xiiJoltRagdollConstraint", "de/dfc/structxii_jolt_ragdoll_constraint.htm", null ],
         [ "xiiKrautTreeAssetProperties", "da/ddb/classxii_kraut_tree_asset_properties.htm", null ],
         [ "xiiLongOpProxy", "d9/de0/classxii_long_op_proxy.htm", [
           [ "xiiLongOpProxy_BakeScene", "db/dcb/classxii_long_op_proxy___bake_scene.htm", null ],
@@ -8520,6 +8523,9 @@ var hierarchy =
     [ "xiiSkeletonJointGeometryType", "dd/dac/structxii_skeleton_joint_geometry_type.htm", [
       [ "xiiEnum< xiiSkeletonJointGeometryType >", "de/dfd/structxii_enum.htm", null ]
     ] ],
+    [ "xiiSkeletonJointType", "d3/de4/structxii_skeleton_joint_type.htm", [
+      [ "xiiEnum< xiiSkeletonJointType >", "de/dfd/structxii_enum.htm", null ]
+    ] ],
     [ "xiiSkeletonPoseMode", "db/db4/structxii_skeleton_pose_mode.htm", [
       [ "xiiEnum< xiiSkeletonPoseMode >", "de/dfd/structxii_enum.htm", null ]
     ] ],
@@ -8867,7 +8873,9 @@ var hierarchy =
     [ "xiiUniquePtr< Grid >", "d9/d4a/classxii_unique_ptr.htm", null ],
     [ "xiiUniquePtr< ozz::animation::Skeleton >", "d9/d4a/classxii_unique_ptr.htm", null ],
     [ "xiiUniquePtr< OzzImpl >", "d9/d4a/classxii_unique_ptr.htm", null ],
+    [ "xiiUniquePtr< PageDownloader >", "d9/d4a/classxii_unique_ptr.htm", null ],
     [ "xiiUniquePtr< ProbeUpdateInfo >", "d9/d4a/classxii_unique_ptr.htm", null ],
+    [ "xiiUniquePtr< QProcess >", "d9/d4a/classxii_unique_ptr.htm", null ],
     [ "xiiUniquePtr< Rasterizer >", "d9/d4a/classxii_unique_ptr.htm", null ],
     [ "xiiUniquePtr< WorkerOpInfo >", "d9/d4a/classxii_unique_ptr.htm", null ],
     [ "xiiUniquePtr< xiiAbstractFunctionProperty >", "d9/d4a/classxii_unique_ptr.htm", null ],
@@ -8927,6 +8935,7 @@ var hierarchy =
     [ "xiiUniquePtr< xiiProcGen_PlacementOutput >", "d9/d4a/classxii_unique_ptr.htm", null ],
     [ "xiiUniquePtr< xiiProcGenInternal::PlacementData >", "d9/d4a/classxii_unique_ptr.htm", null ],
     [ "xiiUniquePtr< xiiProgressRange >", "d9/d4a/classxii_unique_ptr.htm", null ],
+    [ "xiiUniquePtr< xiiQtVersionChecker >", "d9/d4a/classxii_unique_ptr.htm", null ],
     [ "xiiUniquePtr< xiiQuakeConsole >", "d9/d4a/classxii_unique_ptr.htm", null ],
     [ "xiiUniquePtr< xiiReflectionPool::Data::WorldReflectionData >", "d9/d4a/classxii_unique_ptr.htm", null ],
     [ "xiiUniquePtr< xiiRemoteInterface >", "d9/d4a/classxii_unique_ptr.htm", null ],

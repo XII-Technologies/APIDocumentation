@@ -109,7 +109,7 @@ $(document).ready(function(){initNavTree('d6/d66/_simd_double_8h_source.htm','..
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  <a class="code" href="../../d7/df1/classxii_simd_double.htm">xiiSimdDouble</a>(<a class="code" href="../../d3/ddb/classxii_angle_template.htm">xiiAngled</a> a); <span class="comment">// [tested]</span></div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  <a class="code" href="../../d7/df1/classxii_simd_double.htm">xiiSimdDouble</a>(<a class="code" href="../../d1/d20/classxii_vec4_template.htm">xiiInternal::QuadDouble</a> v); <span class="comment">// [tested]</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  <a class="code" href="../../d7/df1/classxii_simd_double.htm">xiiSimdDouble</a>(xiiInternal::QuadDouble v); <span class="comment">// [tested]</span></div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  <span class="keyword">operator</span> double() <span class="keyword">const</span>; <span class="comment">// [tested]</span></div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
@@ -156,12 +156,12 @@ $(document).ready(function(){initNavTree('d6/d66/_simd_double_8h_source.htm','..
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  <a class="code" href="../../d7/df1/classxii_simd_double.htm">xiiSimdDouble</a> Abs() <span class="keyword">const</span>;                       <span class="comment">// [tested]</span></div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  <a class="code" href="../../d1/d20/classxii_vec4_template.htm">xiiInternal::QuadDouble</a> m_v;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  xiiInternal::QuadDouble m_v;</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;};</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="preprocessor">#if XII_SIMD_IMPLEMENTATION == XII_SIMD_IMPLEMENTATION_SSE</span></div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="preprocessor">#  include &lt;Foundation/SimdMath/Implementation/SSE/SSEDouble_inl.h&gt;</span></div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="preprocessor">#elif XII_SIMD_IMPLEMENTATION == XII_SIMD_IMPLEMENTATION_FPU</span></div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="preprocessor">#if XII_SIMD_IMPLEMENTATION == XII_SIMD_IMPLEMENTATION_AVX</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="preprocessor">#  include &lt;Foundation/SimdMath/Implementation/AVX/AVXDouble_inl.h&gt;</span></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="preprocessor">#elif XII_SIMD_IMPLEMENTATION == XII_SIMD_IMPLEMENTATION_SSE || XII_SIMD_IMPLEMENTATION == XII_SIMD_IMPLEMENTATION_NEON || XII_SIMD_IMPLEMENTATION == XII_SIMD_IMPLEMENTATION_FPU</span></div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="preprocessor">#  include &lt;Foundation/SimdMath/Implementation/FPU/FPUDouble_inl.h&gt;</span></div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="preprocessor">#else</span></div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="preprocessor">#  error &quot;Unknown SIMD implementation.&quot;</span></div>
@@ -170,12 +170,11 @@ $(document).ready(function(){initNavTree('d6/d66/_simd_double_8h_source.htm','..
 </div><!-- doc-content -->
 <div class="ttc" id="aclassxii_simd_double_htm"><div class="ttname"><a href="../../d7/df1/classxii_simd_double.htm">xiiSimdDouble</a></div><div class="ttdef"><b>Definition:</b> SimdDouble.h:6</div></div>
 <div class="ttc" id="aclassxii_angle_template_htm"><div class="ttname"><a href="../../d3/ddb/classxii_angle_template.htm">xiiAngleTemplate&lt; double &gt;</a></div></div>
-<div class="ttc" id="aclassxii_vec4_template_htm"><div class="ttname"><a href="../../d1/d20/classxii_vec4_template.htm">xiiVec4Template</a></div><div class="ttdoc">A 4-component vector class.</div><div class="ttdef"><b>Definition:</b> Declarations.h:149</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.htm">home</a></li><li class="navelem"><a class="el" href="../../dir_1036706e55c22cab35bc1c58ee689f1d.htm">runner</a></li><li class="navelem"><a class="el" href="../../dir_629f8151d55d307162ff2d619fb1783d.htm">work</a></li><li class="navelem"><a class="el" href="../../dir_1ddc44fe1263a8c7935fa6130b7d9499.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_2c1b6808f12952f4c36e05ba7068379a.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_b5a1c4ecfca018ad24b729e213296d41.htm">Source</a></li><li class="navelem"><a class="el" href="../../dir_e321052006a51284e67389ab20037e7c.htm">Engine</a></li><li class="navelem"><a class="el" href="../../dir_be0c42c58b36f42c54ec54024ed4f6af.htm">Foundation</a></li><li class="navelem"><a class="el" href="../../dir_6571b00f9c254a01b1735d75b2065daf.htm">SimdMath</a></li><li class="navelem"><b>SimdDouble.h</b></li>
-    <li class="footer">Generated on Sat Jul 1 2023 22:50:18 for XIIEngine by
+    <li class="footer">Generated on Mon Jul 10 2023 23:02:49 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

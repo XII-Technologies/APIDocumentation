@@ -105,13 +105,19 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a2704a81197b323327977042585f1d897"><td class="memItemLeft" align="right" valign="top"><a id="a2704a81197b323327977042585f1d897"></a>
-xiiUInt16&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d81/classxii_skeleton_builder.htm#a2704a81197b323327977042585f1d897">AddJoint</a> (const char *szName, const <a class="el" href="../../d5/d13/classxii_transform_template.htm">xiiTransform</a> &amp;localBindPose, xiiUInt16 uiParentIndex=xiiInvalidJointIndex)</td></tr>
-<tr class="memdesc:a2704a81197b323327977042585f1d897"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a joint to the skeleton Since the only way to add a joint with a parent is through this method the order of joints in the array is guaranteed so that child joints always come after their parent joints. <br /></td></tr>
-<tr class="separator:a2704a81197b323327977042585f1d897"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab6228a06cbf09bad3991b2e8d265b7e3"><td class="memItemLeft" align="right" valign="top"><a id="ab6228a06cbf09bad3991b2e8d265b7e3"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SetJointLimit</b> (xiiUInt16 uiJointIndex, const <a class="el" href="../../d9/d1b/classxii_quat_template.htm">xiiQuat</a> &amp;qLocalOrientation, bool bLimitSwing, <a class="el" href="../../d3/ddb/classxii_angle_template.htm">xiiAngle</a> halfSwingLimitY, <a class="el" href="../../d3/ddb/classxii_angle_template.htm">xiiAngle</a> halfSwingLimitZ, bool bLimitTwist, <a class="el" href="../../d3/ddb/classxii_angle_template.htm">xiiAngle</a> twistLimitHalfAngle, <a class="el" href="../../d3/ddb/classxii_angle_template.htm">xiiAngle</a> twistLimitCenterAngle)</td></tr>
-<tr class="separator:ab6228a06cbf09bad3991b2e8d265b7e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d9984f3d2429dddf6aa8b6dc09f61c7"><td class="memItemLeft" align="right" valign="top"><a id="a7d9984f3d2429dddf6aa8b6dc09f61c7"></a>
+xiiUInt16&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d81/classxii_skeleton_builder.htm#a7d9984f3d2429dddf6aa8b6dc09f61c7">AddJoint</a> (<a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sName, const <a class="el" href="../../d5/d13/classxii_transform_template.htm">xiiTransform</a> &amp;localBindPose, xiiUInt16 uiParentIndex=xiiInvalidJointIndex)</td></tr>
+<tr class="memdesc:a7d9984f3d2429dddf6aa8b6dc09f61c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a joint to the skeleton Since the only way to add a joint with a parent is through this method the order of joints in the array is guaranteed so that child joints always come after their parent joints. <br /></td></tr>
+<tr class="separator:a7d9984f3d2429dddf6aa8b6dc09f61c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44f130c91f265fe893c1f3eae9758ed3"><td class="memItemLeft" align="right" valign="top"><a id="a44f130c91f265fe893c1f3eae9758ed3"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetJointLimit</b> (xiiUInt16 uiJointIndex, const <a class="el" href="../../d9/d1b/classxii_quat_template.htm">xiiQuat</a> &amp;qLocalOrientation, xiiSkeletonJointType::Enum jointType, bool bLimitSwing, <a class="el" href="../../d3/ddb/classxii_angle_template.htm">xiiAngle</a> halfSwingLimitY, <a class="el" href="../../d3/ddb/classxii_angle_template.htm">xiiAngle</a> halfSwingLimitZ, bool bLimitTwist, <a class="el" href="../../d3/ddb/classxii_angle_template.htm">xiiAngle</a> twistLimitHalfAngle, <a class="el" href="../../d3/ddb/classxii_angle_template.htm">xiiAngle</a> twistLimitCenterAngle)</td></tr>
+<tr class="separator:a44f130c91f265fe893c1f3eae9758ed3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab484d2ba5713460a389d1bb2230c6830"><td class="memItemLeft" align="right" valign="top"><a id="ab484d2ba5713460a389d1bb2230c6830"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetJointSurface</b> (xiiUInt16 uiJointIndex, <a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sSurface)</td></tr>
+<tr class="separator:ab484d2ba5713460a389d1bb2230c6830"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c2f918e44d24bdfdca274a807477c90"><td class="memItemLeft" align="right" valign="top"><a id="a5c2f918e44d24bdfdca274a807477c90"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetJointCollisionLayer</b> (xiiUInt16 uiJointIndex, xiiUInt8 uiCollsionLayer)</td></tr>
+<tr class="separator:a5c2f918e44d24bdfdca274a807477c90"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a43c800713a4ced757e976726b0b5711d"><td class="memItemLeft" align="right" valign="top"><a id="a43c800713a4ced757e976726b0b5711d"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d81/classxii_skeleton_builder.htm#a43c800713a4ced757e976726b0b5711d">BuildSkeleton</a> (<a class="el" href="../../d0/d0c/classxii_skeleton.htm">xiiSkeleton</a> &amp;ref_skeleton) const</td></tr>
 <tr class="memdesc:a43c800713a4ced757e976726b0b5711d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a skeleton from the accumulated data. <br /></td></tr>
@@ -139,7 +145,7 @@ Protected Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d3/d81/classxii_skeleton_builder.htm">xiiSkeletonBuilder</a></li>
-    <li class="footer">Generated on Sat Jul 1 2023 22:50:33 for XIIEngine by
+    <li class="footer">Generated on Mon Jul 10 2023 23:03:01 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

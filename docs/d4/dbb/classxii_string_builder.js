@@ -77,7 +77,7 @@ var classxii_string_builder =
     [ "ToUpper", "d4/dbb/classxii_string_builder.htm#a23e70f91aca7ebbcad2e635f7f9aea28", null ],
     [ "Trim", "d4/dbb/classxii_string_builder.htm#af663edf50873343132c3f970d8511dde", null ],
     [ "Trim", "d4/dbb/classxii_string_builder.htm#a9a4139a496fd356c6fb418def7842be0", null ],
-    [ "TrimWordEnd", "d4/dbb/classxii_string_builder.htm#a3895e140fd44a016eb9ddefa11f3b05b", null ],
-    [ "TrimWordStart", "d4/dbb/classxii_string_builder.htm#a5ebc675f494296175215ac1041ee8916", null ],
+    [ "TrimWordEnd", "d4/dbb/classxii_string_builder.htm#ada2422be111f5859eec04c8b62b9c445", null ],
+    [ "TrimWordStart", "d4/dbb/classxii_string_builder.htm#aa4d3b5cb3a935b4ebfd8e609fa09c76f", null ],
     [ "xiiHybridStringBase", "d4/dbb/classxii_string_builder.htm#af4d7573a936a1bc9c82897db4937e3bf", null ]
 ];

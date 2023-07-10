@@ -1,5 +1,6 @@
 var structxii_g_a_l_command_encoder_render_state =
 [
+    [ "~xiiGALCommandEncoderRenderState", "d9/d35/structxii_g_a_l_command_encoder_render_state.htm#a3876b543a1a111cb3900cdce0441764b", null ],
     [ "InvalidateState", "d9/d35/structxii_g_a_l_command_encoder_render_state.htm#a0377eba6368d695f892e24d2e9c9920b", null ],
     [ "m_BlendFactor", "d9/d35/structxii_g_a_l_command_encoder_render_state.htm#abb5fe25259f92ecf4c3ea76d370c82c6", null ],
     [ "m_fViewPortMaxDepth", "d9/d35/structxii_g_a_l_command_encoder_render_state.htm#aa11be63e581842492508e25c5584b7bf", null ],

@@ -15,7 +15,7 @@ var classxii_editor_engine_process_connection =
     [ "SendMessage", "dc/d8e/classxii_editor_engine_process_connection.htm#adadc5ebf78c341b473a9f525e780adf8", null ],
     [ "SetFileSystemConfig", "dc/d8e/classxii_editor_engine_process_connection.htm#a5fb87948d312eefd8169ecc748c0834a", null ],
     [ "SetPluginConfig", "dc/d8e/classxii_editor_engine_process_connection.htm#a9bc66c53474fadde9b58ba67153824f1", null ],
-    [ "SetRenderer", "dc/d8e/classxii_editor_engine_process_connection.htm#a6d2488474ad6f5126618366f9fa473b3", null ],
+    [ "SetRenderer", "dc/d8e/classxii_editor_engine_process_connection.htm#a654f52815325ca50d9b6e35909422344", null ],
     [ "SetWaitForDebugger", "dc/d8e/classxii_editor_engine_process_connection.htm#a59f27118b6c7d48caef34053f61e7e53", null ],
     [ "ShutdownProcess", "dc/d8e/classxii_editor_engine_process_connection.htm#a39cdb816b7a96ae3cc0085734014e678", null ],
     [ "Update", "dc/d8e/classxii_editor_engine_process_connection.htm#a78eece3e2bdba8ee24fa30eb34f4810f", null ],
