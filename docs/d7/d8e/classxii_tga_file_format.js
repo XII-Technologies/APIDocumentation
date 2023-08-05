@@ -1,8 +1,8 @@
 var classxii_tga_file_format =
 [
-    [ "CanReadFileType", "d7/d8e/classxii_tga_file_format.htm#a15f6c4d41b6edbea5e6e5a85b9605aa6", null ],
-    [ "CanWriteFileType", "d7/d8e/classxii_tga_file_format.htm#a4ca70bef55f671f003c3b277b39c80f6", null ],
-    [ "ReadImage", "d7/d8e/classxii_tga_file_format.htm#a895b568dd82d88a5ecf3a54be81332f7", null ],
-    [ "ReadImageHeader", "d7/d8e/classxii_tga_file_format.htm#a44218b9b215d2636992af71d53936a52", null ],
-    [ "WriteImage", "d7/d8e/classxii_tga_file_format.htm#a5f2dec1f29c79df56a84477b903f9f64", null ]
+    [ "CanReadFileType", "d7/d8e/classxii_tga_file_format.htm#a5be369acdf75e54d995024b719bb0486", null ],
+    [ "CanWriteFileType", "d7/d8e/classxii_tga_file_format.htm#aa9580846d000f00f48d5dff970ffa1a9", null ],
+    [ "ReadImage", "d7/d8e/classxii_tga_file_format.htm#a4541cf530ff37f2c7e16593c963bfa4b", null ],
+    [ "ReadImageHeader", "d7/d8e/classxii_tga_file_format.htm#a53937085708fe73b572dc3708616a326", null ],
+    [ "WriteImage", "d7/d8e/classxii_tga_file_format.htm#a43949cbd4de6d92a061f5fc7793ae257", null ]
 ];

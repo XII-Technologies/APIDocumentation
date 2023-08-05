@@ -1,6 +1,6 @@
 var classxii_qt_type_widget =
 [
-    [ "xiiQtTypeWidget", "d9/dc4/classxii_qt_type_widget.htm#aacb5f5f3e680035758a3b8b0c72349eb", null ],
+    [ "xiiQtTypeWidget", "d9/dc4/classxii_qt_type_widget.htm#a3223034db8afea33ed0c0e4e436ee5f8", null ],
     [ "~xiiQtTypeWidget", "d9/dc4/classxii_qt_type_widget.htm#aa1f16bfd12d3def6dccc100e4e8adc73", null ],
     [ "GetSelection", "d9/dc4/classxii_qt_type_widget.htm#a68186e8b92b8c9912b54790a5b794d21", null ],
     [ "GetType", "d9/dc4/classxii_qt_type_widget.htm#a8f5fb1659294f1e323c34723e717d40f", null ],

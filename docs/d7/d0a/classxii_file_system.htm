@@ -160,11 +160,11 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 <tr class="memdesc:a1d36b6c014638a19bc2f48011f31ae66"><td class="mdescLeft">&#160;</td><td class="mdescRight">Searches for a directory to use as the "Sdk" special directory.  <a href="../../d7/d0a/classxii_file_system.htm#a1d36b6c014638a19bc2f48011f31ae66">More...</a><br /></td></tr>
 <tr class="separator:a1d36b6c014638a19bc2f48011f31ae66"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5379337feec025e28164fe34f96ce8c3"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d0a/classxii_file_system.htm#a5379337feec025e28164fe34f96ce8c3">SetSdkRootDirectory</a> (<a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sSdkDir)</td></tr>
-<tr class="memdesc:a5379337feec025e28164fe34f96ce8c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">the special directory "&gt;Sdk" is the root folder of the SDK data, it is often used as the main reference from where other data directories are found. For higher level code (e.g. <a class="el" href="../../dd/d2b/classxii_application.htm" title="Base class to be used by applications based on xiiEngine.">xiiApplication</a>) it is often vital that this is set early at startup.  <a href="../../d7/d0a/classxii_file_system.htm#a5379337feec025e28164fe34f96ce8c3">More...</a><br /></td></tr>
+<tr class="memdesc:a5379337feec025e28164fe34f96ce8c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">the special directory "&gt;Sdk" is the root folder of the SDK data, it is often used as the main reference from where other data directories are found. For higher level code (e.g. <a class="el" href="../../dd/d2b/classxii_application.htm" title="Base class to be used by applications based on XII.">xiiApplication</a>) it is often vital that this is set early at startup.  <a href="../../d7/d0a/classxii_file_system.htm#a5379337feec025e28164fe34f96ce8c3">More...</a><br /></td></tr>
 <tr class="separator:a5379337feec025e28164fe34f96ce8c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8de6b2edbd6ffdef8d7b75521534b75a"><td class="memItemLeft" align="right" valign="top">static const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d0a/classxii_file_system.htm#a8de6b2edbd6ffdef8d7b75521534b75a">GetSdkRootDirectory</a> ()</td></tr>
-<tr class="memdesc:a8de6b2edbd6ffdef8d7b75521534b75a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the previously set Sdk root directory.  <a href="../../d7/d0a/classxii_file_system.htm#a8de6b2edbd6ffdef8d7b75521534b75a">More...</a><br /></td></tr>
-<tr class="separator:a8de6b2edbd6ffdef8d7b75521534b75a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd9567ebcf7ea5a6be1f1ee72a5ed37c"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d0a/classxii_file_system.htm#abd9567ebcf7ea5a6be1f1ee72a5ed37c">GetSdkRootDirectory</a> ()</td></tr>
+<tr class="memdesc:abd9567ebcf7ea5a6be1f1ee72a5ed37c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the previously set Sdk root directory.  <a href="../../d7/d0a/classxii_file_system.htm#abd9567ebcf7ea5a6be1f1ee72a5ed37c">More...</a><br /></td></tr>
+<tr class="separator:abd9567ebcf7ea5a6be1f1ee72a5ed37c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8e6b9c492ba466750205dd9500e1ee35"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d0a/classxii_file_system.htm#a8e6b9c492ba466750205dd9500e1ee35">SetSpecialDirectory</a> (<a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sName, <a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sReplacement)</td></tr>
 <tr class="memdesc:a8e6b9c492ba466750205dd9500e1ee35"><td class="mdescLeft">&#160;</td><td class="mdescRight">Special directories are used when mounting data directories as basic references.  <a href="../../d7/d0a/classxii_file_system.htm#a8e6b9c492ba466750205dd9500e1ee35">More...</a><br /></td></tr>
 <tr class="separator:a8e6b9c492ba466750205dd9500e1ee35"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -455,15 +455,15 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
     <tr><td class="paramname">result</td><td>If successful, this contains the folder path in which szSubPath exists. </td></tr>
     <tr><td class="paramname">szStartDirectory</td><td>The directory in which to start the search and iterate upwards. </td></tr>
     <tr><td class="paramname">szSubPath</td><td>the relative path to look for in each visited directory. The function succeeds if such a file or folder is found. </td></tr>
-    <tr><td class="paramname">szRedirectionFileName</td><td>An optional file name for a redirection file. If in any visited folder a file with this name is found, it will be opened, read entirely, and appended to the current search path, and it is checked whether <em>szSubPath</em> can be found there. This step is not recursive and can't result in an endless loop. It allows to relocate the SDK folder and still have it found, by placing such a redirection file. A common use case, is when xiiEngine is used as a Git submodule and therefore the overall file structure is slightly different. </td></tr>
+    <tr><td class="paramname">szRedirectionFileName</td><td>An optional file name for a redirection file. If in any visited folder a file with this name is found, it will be opened, read entirely, and appended to the current search path, and it is checked whether <em>szSubPath</em> can be found there. This step is not recursive and can't result in an endless loop. It allows to relocate the SDK folder and still have it found, by placing such a redirection file. A common use case, is when XII is used as a Git submodule and therefore the overall file structure is slightly different. </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a id="a8de6b2edbd6ffdef8d7b75521534b75a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8de6b2edbd6ffdef8d7b75521534b75a">&#9670;&nbsp;</a></span>GetSdkRootDirectory()</h2>
+<a id="abd9567ebcf7ea5a6be1f1ee72a5ed37c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd9567ebcf7ea5a6be1f1ee72a5ed37c">&#9670;&nbsp;</a></span>GetSdkRootDirectory()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -472,7 +472,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const char * xiiFileSystem::GetSdkRootDirectory </td>
+          <td class="memname"><a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> xiiFileSystem::GetSdkRootDirectory </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -620,8 +620,8 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The function will return XII_FAILURE if it was not able to determine any location where the file could be read from or written to. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.htm#_todo000040">Todo:</a></b></dt><dd>We might also need the none-redirected path as an output </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.htm#_todo000041">Todo:</a></b></dt><dd>We might also need the none-redirected path as an output </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.htm#_todo000019">Todo:</a></b></dt><dd>We might also need the none-redirected path as an output </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.htm#_todo000020">Todo:</a></b></dt><dd>We might also need the none-redirected path as an output </dd></dl>
 
 </div>
 </div>
@@ -662,7 +662,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 <p>Returns the absolute path to <em>szDirectory</em>. </p>
 <p>If the path starts with a known special directory marker ("&gt;marker/") it is replaced accordingly. See <a class="el" href="../../d7/d0a/classxii_file_system.htm#a8e6b9c492ba466750205dd9500e1ee35" title="Special directories are used when mounting data directories as basic references.">SetSpecialDirectory()</a> for setting custom special directories.</p>
 <p>Built-in special directories (always available) are:</p>
-<p>"&gt;sdk/" - Resolves to what <a class="el" href="../../d7/d0a/classxii_file_system.htm#a8de6b2edbd6ffdef8d7b75521534b75a" title="Returns the previously set Sdk root directory.">GetSdkRootDirectory()</a> returns. "&gt;user/" - Resolves to what <a class="el" href="../../da/d95/classxii_o_s_file.htm#adfde473e9550f3e0a4192d1b96d4c42a" title="Returns the folder into which user data may be safely written. Append a sub-folder for your applicati...">xiiOSFile::GetUserDataFolder()</a> returns. "&gt;temp/" - Resolves to what <a class="el" href="../../da/d95/classxii_o_s_file.htm#a4d878860c251454e27488c165a7e39c0" title="Returns the folder into which temp data may be written.">xiiOSFile::GetTempDataFolder()</a> returns. "&gt;appdir/" - Resolves to what <a class="el" href="../../da/d95/classxii_o_s_file.htm#a711646d84584fa4275cd01367f928803" title="Returns the path in which the applications binary file is located.">xiiOSFile::GetApplicationDirectory()</a> returns.</p>
+<p>"&gt;sdk/" - Resolves to what <a class="el" href="../../d7/d0a/classxii_file_system.htm#abd9567ebcf7ea5a6be1f1ee72a5ed37c" title="Returns the previously set Sdk root directory.">GetSdkRootDirectory()</a> returns. "&gt;user/" - Resolves to what <a class="el" href="../../da/d95/classxii_o_s_file.htm#adfde473e9550f3e0a4192d1b96d4c42a" title="Returns the folder into which user data may be safely written. Append a sub-folder for your applicati...">xiiOSFile::GetUserDataFolder()</a> returns. "&gt;temp/" - Resolves to what <a class="el" href="../../da/d95/classxii_o_s_file.htm#a4d878860c251454e27488c165a7e39c0" title="Returns the folder into which temp data may be written.">xiiOSFile::GetTempDataFolder()</a> returns. "&gt;appdir/" - Resolves to what <a class="el" href="../../da/d95/classxii_o_s_file.htm#a711646d84584fa4275cd01367f928803" title="Returns the path in which the applications binary file is located.">xiiOSFile::GetApplicationDirectory()</a> returns.</p>
 <p>Returns XII_FAILURE if <em>szDirectory</em> starts with an unknown special directory. </p>
 
 </div>
@@ -691,7 +691,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 </table>
 </div><div class="memdoc">
 
-<p>the special directory "&gt;Sdk" is the root folder of the SDK data, it is often used as the main reference from where other data directories are found. For higher level code (e.g. <a class="el" href="../../dd/d2b/classxii_application.htm" title="Base class to be used by applications based on xiiEngine.">xiiApplication</a>) it is often vital that this is set early at startup. </p>
+<p>the special directory "&gt;Sdk" is the root folder of the SDK data, it is often used as the main reference from where other data directories are found. For higher level code (e.g. <a class="el" href="../../dd/d2b/classxii_application.htm" title="Base class to be used by applications based on XII.">xiiApplication</a>) it is often vital that this is set early at startup. </p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d7/d0a/classxii_file_system.htm#a1d36b6c014638a19bc2f48011f31ae66" title="Searches for a directory to use as the &quot;Sdk&quot; special directory.">DetectSdkRootDirectory()</a> </dd></dl>
 
 </div>
@@ -745,7 +745,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d7/d0a/classxii_file_system.htm">xiiFileSystem</a></li>
-    <li class="footer">Generated on Mon Jul 10 2023 23:02:56 for XIIEngine by
+    <li class="footer">Generated on Sat Aug 5 2023 14:55:12 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

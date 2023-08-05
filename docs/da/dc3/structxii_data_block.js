@@ -1,7 +1,7 @@
 var structxii_data_block =
 [
-    [ "SIZE_IN_BYTES", "da/dc3/structxii_data_block.htm#a19e4f5f2664657ad889e4a6be0f3154ca8d9ad179374943026435afcce5db4007", null ],
-    [ "CAPACITY", "da/dc3/structxii_data_block.htm#a19e4f5f2664657ad889e4a6be0f3154caedb1ddb943ee382f2fcb1d8f4675dc3b", null ],
+    [ "SIZE_IN_BYTES", "da/dc3/structxii_data_block.htm#aef19189c50ca4196236ecff4163638afa8d9ad179374943026435afcce5db4007", null ],
+    [ "CAPACITY", "da/dc3/structxii_data_block.htm#aef19189c50ca4196236ecff4163638afaedb1ddb943ee382f2fcb1d8f4675dc3b", null ],
     [ "xiiDataBlock", "da/dc3/structxii_data_block.htm#a5e3e586859758274acee4fed0d19fac4", null ],
     [ "IsEmpty", "da/dc3/structxii_data_block.htm#a3449eace11c5dc641ca7144110f991dd", null ],
     [ "IsFull", "da/dc3/structxii_data_block.htm#a539cb996e3d4f3ef22947fb2d7dd7485", null ],

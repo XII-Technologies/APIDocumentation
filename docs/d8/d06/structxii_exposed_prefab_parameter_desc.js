@@ -1,7 +1,6 @@
 var structxii_exposed_prefab_parameter_desc =
 [
     [ "Load", "d8/d06/structxii_exposed_prefab_parameter_desc.htm#ae614183b03212bcf67112456957a0b0a", null ],
-    [ "LoadOld", "d8/d06/structxii_exposed_prefab_parameter_desc.htm#aa23e447776e40f72a9159d7443e5c1eb", null ],
     [ "Save", "d8/d06/structxii_exposed_prefab_parameter_desc.htm#ab9f533853ac78c3b2585f9d1f05eff49", null ],
     [ "m_CachedPropertyPath", "d8/d06/structxii_exposed_prefab_parameter_desc.htm#a46cbcf1eb7de2b4bfc24da2116d09fc2", null ],
     [ "m_sComponentType", "d8/d06/structxii_exposed_prefab_parameter_desc.htm#a12b83b80c7012e364c758ffbce6bc14f", null ],

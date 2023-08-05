@@ -7,10 +7,10 @@ var structreverse__pointer__iterator =
     [ "operator*", "d3/df2/structreverse__pointer__iterator.htm#a2794f5bb77687f79080fac2dc300c144", null ],
     [ "operator+", "d3/df2/structreverse__pointer__iterator.htm#ae70484062bbcaddc8e2a861d942092eb", null ],
     [ "operator++", "d3/df2/structreverse__pointer__iterator.htm#a359f61be50d2c718b1930d7ee124df91", null ],
-    [ "operator++", "d3/df2/structreverse__pointer__iterator.htm#a9aafbdee89681a291218a28624e0d9c7", null ],
+    [ "operator++", "d3/df2/structreverse__pointer__iterator.htm#a1f8c7868977481b879e3ecd4cf032b95", null ],
     [ "operator-", "d3/df2/structreverse__pointer__iterator.htm#ab6a724b8abd0b24c7836b14133335509", null ],
     [ "operator--", "d3/df2/structreverse__pointer__iterator.htm#a5847370fc45b274aa9c1c128a736ebd4", null ],
-    [ "operator--", "d3/df2/structreverse__pointer__iterator.htm#a2ea70e1524f4879fefa34a24b3e63cf4", null ],
+    [ "operator--", "d3/df2/structreverse__pointer__iterator.htm#a8251fcf29def486c020cfec8fa4d66e6", null ],
     [ "operator->", "d3/df2/structreverse__pointer__iterator.htm#aff23b302a54684babb0d5897b9b7c497", null ],
     [ "operator[]", "d3/df2/structreverse__pointer__iterator.htm#a11585fbc640ca6dbafb6e8913eb3d6ab", null ]
 ];

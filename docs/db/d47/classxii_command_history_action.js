@@ -4,7 +4,7 @@ var classxii_command_history_action =
       [ "Undo", "db/d47/classxii_command_history_action.htm#ace0029bd3739365ae786c6eab35a7fd3a1cdc076b28f70afac5fcedadf99fa119", null ],
       [ "Redo", "db/d47/classxii_command_history_action.htm#ace0029bd3739365ae786c6eab35a7fd3a5afeaba074ef570dc720caaa855d49f6", null ]
     ] ],
-    [ "xiiCommandHistoryAction", "db/d47/classxii_command_history_action.htm#a032cb18ed3a81beca58a01ba92e5e0b9", null ],
+    [ "xiiCommandHistoryAction", "db/d47/classxii_command_history_action.htm#ab5dfc9e0e4464e7f497b10880dc5be35", null ],
     [ "~xiiCommandHistoryAction", "db/d47/classxii_command_history_action.htm#ac634cdb07d8d4ec89693e0e25f9aabc5", null ],
     [ "Execute", "db/d47/classxii_command_history_action.htm#a1dbb1afa24de44ecaa67918dbb8fab9d", null ],
     [ "GetEntries", "db/d47/classxii_command_history_action.htm#a87dc2f633445119c3c4293d0ba1c3fd6", null ]

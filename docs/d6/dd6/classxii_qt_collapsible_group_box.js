@@ -9,6 +9,6 @@ var classxii_qt_collapsible_group_box =
     [ "SetCollapseState", "d6/dd6/classxii_qt_collapsible_group_box.htm#a3ed3cf64499553bd359a2b480b9bdc73", null ],
     [ "SetFillColor", "d6/dd6/classxii_qt_collapsible_group_box.htm#a810b7c53e4f3646ef8c329e6d06a3a87", null ],
     [ "SetIcon", "d6/dd6/classxii_qt_collapsible_group_box.htm#ac54a116f1d7bddc2d4de5a598204219a", null ],
-    [ "SetTitle", "d6/dd6/classxii_qt_collapsible_group_box.htm#a1954e2f4104f60a48bd69e2740a53f10", null ],
+    [ "SetTitle", "d6/dd6/classxii_qt_collapsible_group_box.htm#a45b3eede8bcfa0570c4f809ed1d17f26", null ],
     [ "m_bCollapsed", "d6/dd6/classxii_qt_collapsible_group_box.htm#a7f7728a5ab6f4b114bce6c424d93b291", null ]
 ];

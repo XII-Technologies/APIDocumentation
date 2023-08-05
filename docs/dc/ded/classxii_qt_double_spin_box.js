@@ -10,7 +10,7 @@ var classxii_qt_double_spin_box =
     [ "mouseReleaseEvent", "dc/ded/classxii_qt_double_spin_box.htm#a9ccca2c5f5aafadc7638db40ce4cb5d5", null ],
     [ "setDefaultValue", "dc/ded/classxii_qt_double_spin_box.htm#ac50c804d34b065fe7c4043b812326366", null ],
     [ "setDefaultValue", "dc/ded/classxii_qt_double_spin_box.htm#a6231a0d13268adb4fe27bab8360d2a10", null ],
-    [ "setDisplaySuffix", "dc/ded/classxii_qt_double_spin_box.htm#a02823531c7fb7d5f44281ce115b022b1", null ],
+    [ "setDisplaySuffix", "dc/ded/classxii_qt_double_spin_box.htm#a564f9866a7b4ff0b80d4253a08e604ca", null ],
     [ "SetIntMode", "dc/ded/classxii_qt_double_spin_box.htm#a7911c778214ae63adb778018df8b4e0a", null ],
     [ "setMaximum", "dc/ded/classxii_qt_double_spin_box.htm#a5d67574f93c425ddcf87090f67546875", null ],
     [ "setMinimum", "dc/ded/classxii_qt_double_spin_box.htm#a85b2eda9760b673b26fee0846441a7f6", null ],

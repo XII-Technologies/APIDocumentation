@@ -128,7 +128,7 @@ const <a class="el" href="../../d1/dee/classxii_fixed_point.htm">xiiFixedPoint</
 <tr class="separator:a569d62bdc56563b546c80d6ff71a5f7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae4d319126ace276baf6dbd5dc4ae90e7"><td class="memItemLeft" align="right" valign="top"><a id="ae4d319126ace276baf6dbd5dc4ae90e7"></a>
 xiiInt32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dee/classxii_fixed_point.htm#ae4d319126ace276baf6dbd5dc4ae90e7">ToInt</a> () const</td></tr>
-<tr class="memdesc:ae4d319126ace276baf6dbd5dc4ae90e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implicit conversion to int (the fractional part is dropped). <br /></td></tr>
+<tr class="memdesc:ae4d319126ace276baf6dbd5dc4ae90e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implicit conversion to xiiInt32 (the fractional part is dropped). <br /></td></tr>
 <tr class="separator:ae4d319126ace276baf6dbd5dc4ae90e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a54b6a85c8c4a816aa9fe4a05381b937f"><td class="memItemLeft" align="right" valign="top"><a id="a54b6a85c8c4a816aa9fe4a05381b937f"></a>
 float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dee/classxii_fixed_point.htm#a54b6a85c8c4a816aa9fe4a05381b937f">ToFloat</a> () const</td></tr>
@@ -203,7 +203,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../.
 class xiiFixedPoint&lt; DecimalBits &gt;</h3>
 
 <p>Implements fixed point arithmetic for fractional values. </p>
-<p>Advantages over float and double are mostly that the computations are entirely integer-based and therefore have a predictable (i.e. deterministic) result, independent from floating point settings, SSE support and differences among CPUs. Additionally fixed point arithmetic should be quite fast, compare to traditional floating point arithmetic (not comparing it to SSE though). With the template argument 'DecimalBits' you can specify how many bits are used for the fractional part. I.e. a simple integer has zero DecimalBits. For a precision of about 1/1000 you need at least 10 DecimalBits (1 &lt;&lt; 10) == 1024. Conversion between integer and fixed point is very fast (a shift), in contrast to float/int conversion.</p>
+<p>Advantages over float and double are mostly that the computations are entirely integer-based and therefore have a predictable (i.e. deterministic) result, independent from floating point settings, SSE support and differences among CPUs. Additionally fixed point arithmetic should be quite fast, compare to traditional floating point arithmetic (not comparing it to SSE though). With the template argument 'DecimalBits' you can specify how many bits are used for the fractional part. I.e. a simple integer has zero DecimalBits. For a precision of about 1/1000 you need at least 10 DecimalBits (1 &lt;&lt; 10) == 1024. Conversion between integer and fixed point is very fast (a shift), in contrast to float/xiiInt32 conversion.</p>
 <p>If you are using <a class="el" href="../../d1/dee/classxii_fixed_point.htm" title="Implements fixed point arithmetic for fractional values.">xiiFixedPoint</a> to get guaranteed deterministic behavior, you should minimize the usage of <a class="el" href="../../d1/dee/classxii_fixed_point.htm" title="Implements fixed point arithmetic for fractional values.">xiiFixedPoint</a> &lt;-&gt; float conversions. You can set <a class="el" href="../../d1/dee/classxii_fixed_point.htm" title="Implements fixed point arithmetic for fractional values.">xiiFixedPoint</a> variables from float constants, but you should never put data into <a class="el" href="../../d1/dee/classxii_fixed_point.htm" title="Implements fixed point arithmetic for fractional values.">xiiFixedPoint</a> variables that was computed using floating point arithmetic (even if the computations are simple and look harmless). Instead do all those computations with <a class="el" href="../../d1/dee/classxii_fixed_point.htm" title="Implements fixed point arithmetic for fractional values.">xiiFixedPoint</a> variables. </p>
 </div><hr/>The documentation for this class was generated from the following files:<ul>
 <li>/home/runner/work/XII/XII/Source/Engine/Foundation/Math/<a class="el" href="../../d4/dbc/_engine_2_foundation_2_math_2_declarations_8h_source.htm">Declarations.h</a></li>
@@ -216,7 +216,7 @@ class xiiFixedPoint&lt; DecimalBits &gt;</h3>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d1/dee/classxii_fixed_point.htm">xiiFixedPoint</a></li>
-    <li class="footer">Generated on Mon Jul 10 2023 23:02:56 for XIIEngine by
+    <li class="footer">Generated on Sat Aug 5 2023 14:55:12 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

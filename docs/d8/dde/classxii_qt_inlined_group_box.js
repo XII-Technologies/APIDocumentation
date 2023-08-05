@@ -9,7 +9,7 @@ var classxii_qt_inlined_group_box =
     [ "SetCollapseState", "d8/dde/classxii_qt_inlined_group_box.htm#a64bcb2927a3b65ede363c93525465367", null ],
     [ "SetFillColor", "d8/dde/classxii_qt_inlined_group_box.htm#a2f48b7583b7ace96d10cf90961dee343", null ],
     [ "SetIcon", "d8/dde/classxii_qt_inlined_group_box.htm#a3eef57f4cc779482ae701fc843257a22", null ],
-    [ "SetTitle", "d8/dde/classxii_qt_inlined_group_box.htm#a38f232cd90cd4b8188e3caa0374299b5", null ],
+    [ "SetTitle", "d8/dde/classxii_qt_inlined_group_box.htm#ac6f562b3bed291bab7f10646b32d5a7c", null ],
     [ "m_pContent", "d8/dde/classxii_qt_inlined_group_box.htm#ac4b11cbfc26737599de5603cb91ce4d6", null ],
     [ "m_pHeader", "d8/dde/classxii_qt_inlined_group_box.htm#aa180387a12a467742c270bc3c81e477a", null ]
 ];

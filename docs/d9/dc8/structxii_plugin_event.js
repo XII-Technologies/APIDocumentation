@@ -12,5 +12,5 @@ var structxii_plugin_event =
       [ "AfterPluginChanges", "d9/dc8/structxii_plugin_event.htm#a7486ddd9e1f8a817f4e23d864d808d1dab3285e9117649c816a2139582177a9f3", null ]
     ] ],
     [ "m_EventType", "d9/dc8/structxii_plugin_event.htm#aff4b1d968013edcc3af927037924a5b7", null ],
-    [ "m_szPluginBinary", "d9/dc8/structxii_plugin_event.htm#a5d683934642333855ff195b77632e29e", null ]
+    [ "m_sPluginBinary", "d9/dc8/structxii_plugin_event.htm#a869e12e353ad35721931c826fc87f028", null ]
 ];

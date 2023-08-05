@@ -1,8 +1,8 @@
 var classxii_direction_visualizer_attribute =
 [
     [ "xiiDirectionVisualizerAttribute", "d1/db6/classxii_direction_visualizer_attribute.htm#a15d4c106aaf730b09bda41cb93fac0e1", null ],
-    [ "xiiDirectionVisualizerAttribute", "d1/db6/classxii_direction_visualizer_attribute.htm#a1e6687723720e96adeb4d1e31d3bfa63", null ],
-    [ "xiiDirectionVisualizerAttribute", "d1/db6/classxii_direction_visualizer_attribute.htm#a1650175887005a975edc41843c7908b1", null ],
+    [ "xiiDirectionVisualizerAttribute", "d1/db6/classxii_direction_visualizer_attribute.htm#a9c8f885883815047a6e693c199e5a7fa", null ],
+    [ "xiiDirectionVisualizerAttribute", "d1/db6/classxii_direction_visualizer_attribute.htm#ab7ec6dd10e7f63631685160cadfc3ff1", null ],
     [ "GetAxisProperty", "d1/db6/classxii_direction_visualizer_attribute.htm#ad03b0b3fbf91c4b884f0fae392bed3dd", null ],
     [ "GetColorProperty", "d1/db6/classxii_direction_visualizer_attribute.htm#aea7912e3c38ec12096f175c4a5b4b2c6", null ],
     [ "GetLengthProperty", "d1/db6/classxii_direction_visualizer_attribute.htm#a2fee29360ccc4d14da2434ef5481335c", null ],

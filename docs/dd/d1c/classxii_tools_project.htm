@@ -114,16 +114,16 @@ const <a class="el" href="../../df/dfb/structxii_hybrid_string.htm">xiiString</a
 <a class="el" href="../../df/dfb/structxii_hybrid_string.htm">xiiString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d1c/classxii_tools_project.htm#a69f04a10e8a2e7df98001c1978f554a3">GetProjectDataFolder</a> () const</td></tr>
 <tr class="memdesc:a69f04a10e8a2e7df98001c1978f554a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the directory path in which project settings etc. should be stored. <br /></td></tr>
 <tr class="separator:a69f04a10e8a2e7df98001c1978f554a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4131c8a28cdb90dc465214a1c473e9ea"><td class="memItemLeft" align="right" valign="top"><a id="a4131c8a28cdb90dc465214a1c473e9ea"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsDocumentInAllowedRoot</b> (const char *szDocumentPath, <a class="el" href="../../df/dfb/structxii_hybrid_string.htm">xiiString</a> *out_pRelativePath=nullptr) const</td></tr>
-<tr class="separator:a4131c8a28cdb90dc465214a1c473e9ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab69b0a195068a6a4140d4c15b26ea61f"><td class="memItemLeft" align="right" valign="top"><a id="ab69b0a195068a6a4140d4c15b26ea61f"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>AddAllowedDocumentRoot</b> (const char *szPath)</td></tr>
-<tr class="separator:ab69b0a195068a6a4140d4c15b26ea61f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a99e2eb6bc01b3e8a385f4b20af8cf61f"><td class="memItemLeft" align="right" valign="top"><a id="a99e2eb6bc01b3e8a385f4b20af8cf61f"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d1c/classxii_tools_project.htm#a99e2eb6bc01b3e8a385f4b20af8cf61f">CreateSubFolder</a> (const char *szFolder) const</td></tr>
-<tr class="memdesc:a99e2eb6bc01b3e8a385f4b20af8cf61f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Makes sure the given sub-folder exists inside the project directory. <br /></td></tr>
-<tr class="separator:a99e2eb6bc01b3e8a385f4b20af8cf61f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98ac739a4b4914b896ce92c909d20c59"><td class="memItemLeft" align="right" valign="top"><a id="a98ac739a4b4914b896ce92c909d20c59"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsDocumentInAllowedRoot</b> (<a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sDocumentPath, <a class="el" href="../../df/dfb/structxii_hybrid_string.htm">xiiString</a> *out_pRelativePath=nullptr) const</td></tr>
+<tr class="separator:a98ac739a4b4914b896ce92c909d20c59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23e2cbd29b6e4591754b5e441c3aae94"><td class="memItemLeft" align="right" valign="top"><a id="a23e2cbd29b6e4591754b5e441c3aae94"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>AddAllowedDocumentRoot</b> (<a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sPath)</td></tr>
+<tr class="separator:a23e2cbd29b6e4591754b5e441c3aae94"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab73c34921e5e845a5ad909dc1acb87c3"><td class="memItemLeft" align="right" valign="top"><a id="ab73c34921e5e845a5ad909dc1acb87c3"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d1c/classxii_tools_project.htm#ab73c34921e5e845a5ad909dc1acb87c3">CreateSubFolder</a> (<a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sFolder) const</td></tr>
+<tr class="memdesc:ab73c34921e5e845a5ad909dc1acb87c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Makes sure the given sub-folder exists inside the project directory. <br /></td></tr>
+<tr class="separator:ab73c34921e5e845a5ad909dc1acb87c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -151,12 +151,12 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 static xiiInt32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d1c/classxii_tools_project.htm#ab91f6489bcc274d605b0091932bc46d4">SuggestContainerWindow</a> (<a class="el" href="../../d8/da9/classxii_document.htm">xiiDocument</a> *pDoc)</td></tr>
 <tr class="memdesc:ab91f6489bcc274d605b0091932bc46d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the unique ID of the container window this document should use for its window. Uses <a class="el" href="../../d6/da2/structxii_tools_project_request.htm#a821169319afd58a297fdda40cc0d784daf4686fc522014d0da8fa39482f132a5a">xiiToolsProjectRequest::Type::SuggestContainerWindow</a> event. <br /></td></tr>
 <tr class="separator:ab91f6489bcc274d605b0091932bc46d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a10b21696e62e61668da54de7f37fe889"><td class="memItemLeft" align="right" valign="top"><a id="a10b21696e62e61668da54de7f37fe889"></a>
-static <a class="el" href="../../d0/d54/structxii_status.htm">xiiStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><b>OpenProject</b> (const char *szProjectPath)</td></tr>
-<tr class="separator:a10b21696e62e61668da54de7f37fe889"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a85bcb9780c41bc891541fd75a7ba5808"><td class="memItemLeft" align="right" valign="top"><a id="a85bcb9780c41bc891541fd75a7ba5808"></a>
-static <a class="el" href="../../d0/d54/structxii_status.htm">xiiStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><b>CreateProject</b> (const char *szProjectPath)</td></tr>
-<tr class="separator:a85bcb9780c41bc891541fd75a7ba5808"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec1dfb10754eaed7ef75639f11d18597"><td class="memItemLeft" align="right" valign="top"><a id="aec1dfb10754eaed7ef75639f11d18597"></a>
+static <a class="el" href="../../d0/d54/structxii_status.htm">xiiStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><b>OpenProject</b> (<a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sProjectPath)</td></tr>
+<tr class="separator:aec1dfb10754eaed7ef75639f11d18597"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42787a2fb20a43119314b8322ec8e26a"><td class="memItemLeft" align="right" valign="top"><a id="a42787a2fb20a43119314b8322ec8e26a"></a>
+static <a class="el" href="../../d0/d54/structxii_status.htm">xiiStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><b>CreateProject</b> (<a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sProjectPath)</td></tr>
+<tr class="separator:a42787a2fb20a43119314b8322ec8e26a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a17dfeec81ce878020758dfd081137f0a"><td class="memItemLeft" align="right" valign="top"><a id="a17dfeec81ce878020758dfd081137f0a"></a>
 static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d1c/classxii_tools_project.htm#a17dfeec81ce878020758dfd081137f0a">BroadcastSaveAll</a> ()</td></tr>
 <tr class="memdesc:a17dfeec81ce878020758dfd081137f0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Broadcasts the SaveAll event, though otherwise has no direct effect. <br /></td></tr>
@@ -165,10 +165,10 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d1c/classxii_tools_project.htm#a7443ecc4dd8322036dbcc5c3f4718449">BroadcastConfigChanged</a> ()</td></tr>
 <tr class="memdesc:a7443ecc4dd8322036dbcc5c3f4718449"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sent when global project configuration data was changed and thus certain menus would need to update their content (or just deselect any item, forcing the user to reselect and thus update state) <br /></td></tr>
 <tr class="separator:a7443ecc4dd8322036dbcc5c3f4718449"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4a928e72b8c7fa0e9dc56ad9c908b7d3"><td class="memItemLeft" align="right" valign="top"><a id="a4a928e72b8c7fa0e9dc56ad9c908b7d3"></a>
-static <a class="el" href="../../df/dfb/structxii_hybrid_string.htm">xiiString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d1c/classxii_tools_project.htm#a4a928e72b8c7fa0e9dc56ad9c908b7d3">FindProjectDirectoryForDocument</a> (const char *szDocumentPath)</td></tr>
-<tr class="memdesc:a4a928e72b8c7fa0e9dc56ad9c908b7d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts at the given document and then searches the tree upwards until it finds a xiiProject file. <br /></td></tr>
-<tr class="separator:a4a928e72b8c7fa0e9dc56ad9c908b7d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05011ec2b5ec53c4f613a3d57bfaf6de"><td class="memItemLeft" align="right" valign="top"><a id="a05011ec2b5ec53c4f613a3d57bfaf6de"></a>
+static <a class="el" href="../../df/dfb/structxii_hybrid_string.htm">xiiString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d1c/classxii_tools_project.htm#a05011ec2b5ec53c4f613a3d57bfaf6de">FindProjectDirectoryForDocument</a> (<a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sDocumentPath)</td></tr>
+<tr class="memdesc:a05011ec2b5ec53c4f613a3d57bfaf6de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts at the given document and then searches the tree upwards until it finds a xiiProject file. <br /></td></tr>
+<tr class="separator:a05011ec2b5ec53c4f613a3d57bfaf6de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
@@ -216,7 +216,7 @@ static <a class="el" href="../../dc/d22/classxii_event.htm">xiiEvent</a>&lt; <a 
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dd/d1c/classxii_tools_project.htm">xiiToolsProject</a></li>
-    <li class="footer">Generated on Mon Jul 10 2023 23:03:01 for XIIEngine by
+    <li class="footer">Generated on Sat Aug 5 2023 14:55:14 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

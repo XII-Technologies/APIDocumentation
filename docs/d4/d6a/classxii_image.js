@@ -18,7 +18,7 @@ var classxii_image =
     [ "GetSliceView", "d4/d6a/classxii_image.htm#a54901f0256b7f9c83db33a9a1780524a", null ],
     [ "GetSubImageView", "d4/d6a/classxii_image.htm#ab7f97edd54fa0457c76fcb1f91e5369c", null ],
     [ "GetSubImageView", "d4/d6a/classxii_image.htm#a79c1138286f0004ed1d1fec2302e4d4e", null ],
-    [ "LoadFrom", "d4/d6a/classxii_image.htm#ad1988d2d365cd262d79c0fb6885f70c9", null ],
+    [ "LoadFrom", "d4/d6a/classxii_image.htm#a1f7c3cd3091470c653a9e67fb05db707", null ],
     [ "operator=", "d4/d6a/classxii_image.htm#adc32f97c259e7262784ad1d320c3f9dd", null ],
     [ "ResetAndAlloc", "d4/d6a/classxii_image.htm#a956464e593c690119390e73e1fa937e0", null ],
     [ "ResetAndCopy", "d4/d6a/classxii_image.htm#a4d138e943260de98675be7d9c93b9c24", null ],

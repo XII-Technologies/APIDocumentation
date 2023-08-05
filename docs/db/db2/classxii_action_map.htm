@@ -91,6 +91,11 @@ $(document).ready(function(){initNavTree('db/db2/classxii_action_map.htm','../..
 <div class="title">xiiActionMap Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Defines the structure of how actions are organized in a particular context.  
+ <a href="../../db/db2/classxii_action_map.htm#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="../../da/dae/_action_map_8h_source.htm">ActionMap.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -100,31 +105,149 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>TreeNode</b> = <a cl
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aa7e0e827239456130ab2295d6600d285"><td class="memItemLeft" align="right" valign="top"><a id="aa7e0e827239456130ab2295d6600d285"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>MapAction</b> (<a class="el" href="../../df/dcf/classxii_action_descriptor_handle.htm">xiiActionDescriptorHandle</a> hAction, const char *szPath, float fM_fOrder)</td></tr>
-<tr class="separator:aa7e0e827239456130ab2295d6600d285"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6513cd6629d7e713bd9bac5523272a14"><td class="memItemLeft" align="right" valign="top"><a id="a6513cd6629d7e713bd9bac5523272a14"></a>
-<a class="el" href="../../dc/d1d/classxii_uuid.htm">xiiUuid</a>&#160;</td><td class="memItemRight" valign="bottom"><b>MapAction</b> (const <a class="el" href="../../d9/dbf/structxii_action_map_descriptor.htm">xiiActionMapDescriptor</a> &amp;desc)</td></tr>
-<tr class="separator:a6513cd6629d7e713bd9bac5523272a14"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab49a54399261812ffde8c7914f4a68c1"><td class="memItemLeft" align="right" valign="top"><a id="ab49a54399261812ffde8c7914f4a68c1"></a>
-<a class="el" href="../../dd/dad/structxii_result.htm">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><b>UnmapAction</b> (<a class="el" href="../../df/dcf/classxii_action_descriptor_handle.htm">xiiActionDescriptorHandle</a> hAction, const char *szPath)</td></tr>
-<tr class="separator:ab49a54399261812ffde8c7914f4a68c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa3b2c812a5481e1fe82750f77e5f3833"><td class="memItemLeft" align="right" valign="top"><a id="aa3b2c812a5481e1fe82750f77e5f3833"></a>
-<a class="el" href="../../dd/dad/structxii_result.htm">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><b>UnmapAction</b> (const <a class="el" href="../../d9/dbf/structxii_action_map_descriptor.htm">xiiActionMapDescriptor</a> &amp;desc)</td></tr>
-<tr class="separator:aa3b2c812a5481e1fe82750f77e5f3833"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af752f2d49d9c2897b27ae7363cadd7f9"><td class="memItemLeft" align="right" valign="top"><a id="af752f2d49d9c2897b27ae7363cadd7f9"></a>
-<a class="el" href="../../dd/dad/structxii_result.htm">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><b>UnmapAction</b> (const <a class="el" href="../../dc/d1d/classxii_uuid.htm">xiiUuid</a> &amp;guid)</td></tr>
-<tr class="separator:af752f2d49d9c2897b27ae7363cadd7f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af17560f19e11da02ab5f679c0ad51baf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/db2/classxii_action_map.htm#af17560f19e11da02ab5f679c0ad51baf">MapAction</a> (<a class="el" href="../../df/dcf/classxii_action_descriptor_handle.htm">xiiActionDescriptorHandle</a> hAction, <a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sPath, float fOrder)</td></tr>
+<tr class="memdesc:af17560f19e11da02ab5f679c0ad51baf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds the given action to into the category or menu identified by sPath.  <a href="../../db/db2/classxii_action_map.htm#af17560f19e11da02ab5f679c0ad51baf">More...</a><br /></td></tr>
+<tr class="separator:af17560f19e11da02ab5f679c0ad51baf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39863850f8a0caa973180e6700a8f9b6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/db2/classxii_action_map.htm#a39863850f8a0caa973180e6700a8f9b6">MapAction</a> (<a class="el" href="../../df/dcf/classxii_action_descriptor_handle.htm">xiiActionDescriptorHandle</a> hAction, <a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sPath, <a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sSubPath, float fOrder)</td></tr>
+<tr class="memdesc:a39863850f8a0caa973180e6700a8f9b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">An overload of MapAction that takes a dedicated sPath and sSubPath argument for convenience.  <a href="../../db/db2/classxii_action_map.htm#a39863850f8a0caa973180e6700a8f9b6">More...</a><br /></td></tr>
+<tr class="separator:a39863850f8a0caa973180e6700a8f9b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69a13a0772b7ac101d67de628c4167d9"><td class="memItemLeft" align="right" valign="top"><a id="a69a13a0772b7ac101d67de628c4167d9"></a>
+<a class="el" href="../../dd/dad/structxii_result.htm">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/db2/classxii_action_map.htm#a69a13a0772b7ac101d67de628c4167d9">UnmapAction</a> (<a class="el" href="../../df/dcf/classxii_action_descriptor_handle.htm">xiiActionDescriptorHandle</a> hAction, <a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sPath)</td></tr>
+<tr class="memdesc:a69a13a0772b7ac101d67de628c4167d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes the named action from the action map. The same rules for 'global' names apply as for <a class="el" href="../../db/db2/classxii_action_map.htm#af17560f19e11da02ab5f679c0ad51baf" title="Adds the given action to into the category or menu identified by sPath.">MapAction()</a>. <br /></td></tr>
+<tr class="separator:a69a13a0772b7ac101d67de628c4167d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d01141165de337d02334ce1bffcf4e6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dd/dad/structxii_result.htm">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/db2/classxii_action_map.htm#a5d01141165de337d02334ce1bffcf4e6">SearchPathForAction</a> (<a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sUniqueName, <a class="el" href="../../d4/dbb/classxii_string_builder.htm">xiiStringBuilder</a> &amp;out_sPath) const</td></tr>
+<tr class="memdesc:a5d01141165de337d02334ce1bffcf4e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Searches for an action with the given name and returns the full path to it.  <a href="../../db/db2/classxii_action_map.htm#a5d01141165de337d02334ce1bffcf4e6">More...</a><br /></td></tr>
+<tr class="separator:a5d01141165de337d02334ce1bffcf4e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af90a9b2a8e996c53cdce15b02e96fb46"><td class="memItemLeft" align="right" valign="top"><a id="af90a9b2a8e996c53cdce15b02e96fb46"></a>
 const <a class="el" href="../../d8/db7/classxii_tree_node.htm">TreeNode</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetRootObject</b> () const</td></tr>
 <tr class="separator:af90a9b2a8e996c53cdce15b02e96fb46"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abec618f3431fe25a10991eba4fc09d77"><td class="memItemLeft" align="right" valign="top"><a id="abec618f3431fe25a10991eba4fc09d77"></a>
-const <a class="el" href="../../d9/dbf/structxii_action_map_descriptor.htm">xiiActionMapDescriptor</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetDescriptor</b> (const <a class="el" href="../../dc/d1d/classxii_uuid.htm">xiiUuid</a> &amp;guid) const</td></tr>
-<tr class="separator:abec618f3431fe25a10991eba4fc09d77"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a39149b03cca5cceff6080f3cfe6e7b90"><td class="memItemLeft" align="right" valign="top"><a id="a39149b03cca5cceff6080f3cfe6e7b90"></a>
 const <a class="el" href="../../d9/dbf/structxii_action_map_descriptor.htm">xiiActionMapDescriptor</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetDescriptor</b> (const <a class="el" href="../../d8/db7/classxii_tree_node.htm">xiiTreeNode</a>&lt; <a class="el" href="../../d9/dbf/structxii_action_map_descriptor.htm">xiiActionMapDescriptor</a> &gt; *pObject) const</td></tr>
 <tr class="separator:a39149b03cca5cceff6080f3cfe6e7b90"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Defines the structure of how actions are organized in a particular context. </p>
+<p>Actions are usually commands that are exposed through UI. For instance a button in a toolbar or a menu entry.</p>
+<p>Actions are unique. Each action only exists once in the <a class="el" href="../../d0/dde/classxii_action_manager.htm" title="Stores &#39;actions&#39; (things that can be triggered from UI).">xiiActionManager</a>.</p>
+<p>An action map defines where in a menu an action shows up. Actions are usually grouped by categories. So for example all actions related to opening, closing or saving a document may be in one group. Their position within that group is defined through an 'order' value. This allows plugins to insert actions easily.</p>
+<p>A window might use multiple action maps to build different structures. For example, usually there is one action map for a window menu, and another map for a toolbar. These will contain different actions, and they are organized differently.</p>
+<p>Action maps are created through the <a class="el" href="../../d5/db7/classxii_action_map_manager.htm" title="A central place for creating and retrieving action maps.">xiiActionMapManager</a> and are simply identified by name. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="af17560f19e11da02ab5f679c0ad51baf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af17560f19e11da02ab5f679c0ad51baf">&#9670;&nbsp;</a></span>MapAction() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void xiiActionMap::MapAction </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/dcf/classxii_action_descriptor_handle.htm">xiiActionDescriptorHandle</a>&#160;</td>
+          <td class="paramname"><em>hAction</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a>&#160;</td>
+          <td class="paramname"><em>sPath</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>fOrder</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Adds the given action to into the category or menu identified by sPath. </p>
+<p>All actions added to the same path will be sorted by 'fOrder' and the ones with the smaller values show up at the top.</p>
+<p>sPath must either be a fully qualified path OR the name of a uniquely named category or menu. If sPath is empty, the action (which may be a category itself) will be mapped into the root. This is common for top-level menus and for toolbars.</p>
+<p>If sPath is a fully qualified path, the segments are separated by slashes (/) and each segment must name either a category (see XII_REGISTER_CATEGORY) or a menu (see XII_REGISTER_MENU).</p>
+<p>sPath may also name a category or menu WITHOUT it being a full path. In this case the name must be unique. If sPath isn't empty and doesn't contain a slash, the system searches all available actions that are already in the action map. This allows you to insert an action into a category, without knowing the full path to that category. By convention, categories that are meant to be used that way are named "G.Something". The idea is, that where that category really shows up (and whether it is its own menu or just an area somewhere) may change in the future, or may be different in different contexts.</p>
+<p>To make it easier to use 'global' category names combined with an additional relative path, there is an overload of this function that takes an additional sSubPath argument. </p>
+
+</div>
+</div>
+<a id="a39863850f8a0caa973180e6700a8f9b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a39863850f8a0caa973180e6700a8f9b6">&#9670;&nbsp;</a></span>MapAction() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void xiiActionMap::MapAction </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/dcf/classxii_action_descriptor_handle.htm">xiiActionDescriptorHandle</a>&#160;</td>
+          <td class="paramname"><em>hAction</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a>&#160;</td>
+          <td class="paramname"><em>sPath</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a>&#160;</td>
+          <td class="paramname"><em>sSubPath</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>fOrder</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An overload of MapAction that takes a dedicated sPath and sSubPath argument for convenience. </p>
+<p>If sPath is a 'global' name of a category, it is searched for (see <a class="el" href="../../db/db2/classxii_action_map.htm#a5d01141165de337d02334ce1bffcf4e6" title="Searches for an action with the given name and returns the full path to it.">SearchPathForAction()</a>). Afterwards sSubPath is appended and the result is forwarded to <a class="el" href="../../db/db2/classxii_action_map.htm#af17560f19e11da02ab5f679c0ad51baf" title="Adds the given action to into the category or menu identified by sPath.">MapAction()</a> as a single path string. </p>
+
+</div>
+</div>
+<a id="a5d01141165de337d02334ce1bffcf4e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d01141165de337d02334ce1bffcf4e6">&#9670;&nbsp;</a></span>SearchPathForAction()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dd/dad/structxii_result.htm">xiiResult</a> xiiActionMap::SearchPathForAction </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a>&#160;</td>
+          <td class="paramname"><em>sUniqueName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d4/dbb/classxii_string_builder.htm">xiiStringBuilder</a> &amp;&#160;</td>
+          <td class="paramname"><em>out_sPath</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Searches for an action with the given name and returns the full path to it. </p>
+<p>This is mainly meant to be used with (unique) names to categories (or menus). </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>/home/runner/work/XII/XII/Source/Tools/Libs/GuiFoundation/Action/<a class="el" href="../../da/dae/_action_map_8h_source.htm">ActionMap.h</a></li>
 <li>/home/runner/work/XII/XII/Source/Tools/Libs/GuiFoundation/Action/Implementation/ActionMap.cpp</li>
@@ -135,7 +258,7 @@ const <a class="el" href="../../d9/dbf/structxii_action_map_descriptor.htm">xiiA
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../db/db2/classxii_action_map.htm">xiiActionMap</a></li>
-    <li class="footer">Generated on Mon Jul 10 2023 23:02:54 for XIIEngine by
+    <li class="footer">Generated on Sat Aug 5 2023 14:55:12 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

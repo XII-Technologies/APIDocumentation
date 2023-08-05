@@ -90,15 +90,6 @@ $(document).ready(function(){initNavTree('da/d40/classxii_frame_capture_interfac
 <div class="title">xiiFrameCaptureInterface Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="dynheader">
-Inheritance diagram for xiiFrameCaptureInterface:</div>
-<div class="dyncontent">
-<div class="center"><img src="../../d0/d01/classxii_frame_capture_interface__inherit__graph.png" border="0" usemap="#xii_frame_capture_interface_inherit__map" alt="Inheritance graph"/></div>
-<map name="xii_frame_capture_interface_inherit__map" id="xii_frame_capture_interface_inherit__map">
-<area shape="rect" title=" " alt="" coords="5,5,193,32"/>
-<area shape="rect" href="../../de/da7/classxii_render_doc.htm" title="RenderDoc implementation of the xiiFrameCaptureInterface interface." alt="" coords="45,80,154,107"/>
-</map>
-<center><span class="legend">[<a target="top" href="../../graph_legend.htm">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -106,14 +97,14 @@ Public Member Functions</h2></td></tr>
 virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d40/classxii_frame_capture_interface.htm#a78b0e8a0757521002787d2598cb4b063">IsInitialized</a> () const =0</td></tr>
 <tr class="memdesc:a78b0e8a0757521002787d2598cb4b063"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine if a singleton implementing this interface has successfully been initialized and frame capture functionality is available. <br /></td></tr>
 <tr class="separator:a78b0e8a0757521002787d2598cb4b063"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a47ff1f7fe85872254b4c9ad334eea7fe"><td class="memItemLeft" align="right" valign="top"><a id="a47ff1f7fe85872254b4c9ad334eea7fe"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d40/classxii_frame_capture_interface.htm#a47ff1f7fe85872254b4c9ad334eea7fe">SetAbsCaptureFilePathTemplate</a> (const char *szFilePathTemplate)=0</td></tr>
-<tr class="memdesc:a47ff1f7fe85872254b4c9ad334eea7fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specify the absolute base file path for storing frame captures. For the final output file name, an identifier and/or frame or capture number will be appended. Note that the final output file name is determined by the frame capture implementation. Use <a class="el" href="../../da/d40/classxii_frame_capture_interface.htm#a6bfcfd0a533ee608e2cbadb7e0bbbb49">GetLastAbsCaptureFileName()</a> for retrieving the actual absolute file name of the most recently written capture file. <br /></td></tr>
-<tr class="separator:a47ff1f7fe85872254b4c9ad334eea7fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7b3365797ad53e106f2d2f1864300bb2"><td class="memItemLeft" align="right" valign="top"><a id="a7b3365797ad53e106f2d2f1864300bb2"></a>
-virtual const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d40/classxii_frame_capture_interface.htm#a7b3365797ad53e106f2d2f1864300bb2">GetAbsCaptureFilePathTemplate</a> () const =0</td></tr>
-<tr class="memdesc:a7b3365797ad53e106f2d2f1864300bb2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve the absolute file path for storing frame captures. <br /></td></tr>
-<tr class="separator:a7b3365797ad53e106f2d2f1864300bb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae44be842345b7b1469dac1f81d7d5f78"><td class="memItemLeft" align="right" valign="top"><a id="ae44be842345b7b1469dac1f81d7d5f78"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d40/classxii_frame_capture_interface.htm#ae44be842345b7b1469dac1f81d7d5f78">SetAbsCaptureFilePathTemplate</a> (<a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sFilePathTemplate)=0</td></tr>
+<tr class="memdesc:ae44be842345b7b1469dac1f81d7d5f78"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specify the absolute base file path for storing frame captures. For the final output file name, an identifier and/or frame or capture number will be appended. Note that the final output file name is determined by the frame capture implementation. Use <a class="el" href="../../da/d40/classxii_frame_capture_interface.htm#a6bfcfd0a533ee608e2cbadb7e0bbbb49">GetLastAbsCaptureFileName()</a> for retrieving the actual absolute file name of the most recently written capture file. <br /></td></tr>
+<tr class="separator:ae44be842345b7b1469dac1f81d7d5f78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9e2985675616f6c0dfbb902ec0e7241"><td class="memItemLeft" align="right" valign="top"><a id="af9e2985675616f6c0dfbb902ec0e7241"></a>
+virtual <a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d40/classxii_frame_capture_interface.htm#af9e2985675616f6c0dfbb902ec0e7241">GetAbsCaptureFilePathTemplate</a> () const =0</td></tr>
+<tr class="memdesc:af9e2985675616f6c0dfbb902ec0e7241"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve the absolute file path for storing frame captures. <br /></td></tr>
+<tr class="separator:af9e2985675616f6c0dfbb902ec0e7241"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae93117a679b506194f8107bacc862745"><td class="memItemLeft" align="right" valign="top"><a id="ae93117a679b506194f8107bacc862745"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d40/classxii_frame_capture_interface.htm#ae93117a679b506194f8107bacc862745">StartFrameCapture</a> (xiiWindowHandle hWnd)=0</td></tr>
 <tr class="memdesc:ae93117a679b506194f8107bacc862745"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start capturing a frame rendered to the given window. <br /></td></tr>
@@ -124,7 +115,7 @@ virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <tr class="separator:aef93992372e810d71fcd5a25d68e32c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae923d2a75b68bda1c67c5374716d7ca0"><td class="memItemLeft" align="right" valign="top"><a id="ae923d2a75b68bda1c67c5374716d7ca0"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d40/classxii_frame_capture_interface.htm#ae923d2a75b68bda1c67c5374716d7ca0">EndFrameCaptureAndWriteOutput</a> (xiiWindowHandle hWnd)=0</td></tr>
-<tr class="memdesc:ae923d2a75b68bda1c67c5374716d7ca0"><td class="mdescLeft">&#160;</td><td class="mdescRight">End the current frame capture and write the result to the path given by <a class="el" href="../../da/d40/classxii_frame_capture_interface.htm#a47ff1f7fe85872254b4c9ad334eea7fe">SetAbsCaptureFilePathTemplate</a>. <br /></td></tr>
+<tr class="memdesc:ae923d2a75b68bda1c67c5374716d7ca0"><td class="mdescLeft">&#160;</td><td class="mdescRight">End the current frame capture and write the result to the path given by <a class="el" href="../../da/d40/classxii_frame_capture_interface.htm#ae44be842345b7b1469dac1f81d7d5f78">SetAbsCaptureFilePathTemplate</a>. <br /></td></tr>
 <tr class="separator:ae923d2a75b68bda1c67c5374716d7ca0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a49325fc91f2f553ad63cabcb4d79dfa1"><td class="memItemLeft" align="right" valign="top"><a id="a49325fc91f2f553ad63cabcb4d79dfa1"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d40/classxii_frame_capture_interface.htm#a49325fc91f2f553ad63cabcb4d79dfa1">EndFrameCaptureAndDiscardResult</a> (xiiWindowHandle hWnd)=0</td></tr>
@@ -144,7 +135,7 @@ virtual <a class="el" href="../../dd/dad/structxii_result.htm">xiiResult</a>&#16
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../da/d40/classxii_frame_capture_interface.htm">xiiFrameCaptureInterface</a></li>
-    <li class="footer">Generated on Mon Jul 10 2023 23:02:56 for XIIEngine by
+    <li class="footer">Generated on Sat Aug 5 2023 14:55:12 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

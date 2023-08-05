@@ -5,7 +5,7 @@ var classxii_qt_c_var_model =
     [ "~xiiQtCVarModel", "d1/d81/classxii_qt_c_var_model.htm#a7a06d4388b04ebc72457194b22ce150d", null ],
     [ "BeginResetModel", "d1/d81/classxii_qt_c_var_model.htm#afaa0dd43ec370069e4179132cd3476e2", null ],
     [ "columnCount", "d1/d81/classxii_qt_c_var_model.htm#a7904dfad76d8282d43bcd5e46deb0fb2", null ],
-    [ "CreateEntry", "d1/d81/classxii_qt_c_var_model.htm#ada7942248c4f7c3ac3fdddecc55e1a46", null ],
+    [ "CreateEntry", "d1/d81/classxii_qt_c_var_model.htm#a2f0602f59f90a92074f703c2af4de8fc", null ],
     [ "data", "d1/d81/classxii_qt_c_var_model.htm#a8a619f80921ca4894cdd41143b4c017d", null ],
     [ "EndResetModel", "d1/d81/classxii_qt_c_var_model.htm#a87a7e4dcf51ce2d488bf96aeb82aaf75", null ],
     [ "flags", "d1/d81/classxii_qt_c_var_model.htm#a1143806354ce955ffa02601f3d1b1e5c", null ],

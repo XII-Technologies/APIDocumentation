@@ -92,41 +92,43 @@ $(document).ready(function(){initNavTree('d9/d2c/_environment_variable_utils__po
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;stdlib.h&gt;</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<a class="code" href="../../df/dfb/structxii_hybrid_string.htm">xiiString</a> xiiEnvironmentVariableUtils::GetValueStringImpl(<span class="keyword">const</span> <span class="keywordtype">char</span>* szName, <span class="keyword">const</span> <span class="keywordtype">char</span>* szDefault)</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<a class="code" href="../../df/dfb/structxii_hybrid_string.htm">xiiString</a> xiiEnvironmentVariableUtils::GetValueStringImpl(<a class="code" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sName, <a class="code" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sDefault)</div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;{</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">char</span>* value = getenv(szName);</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;  <span class="keywordflow">return</span> value != <span class="keyword">nullptr</span> ? value : szDefault;</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">char</span>* szValue = getenv(sName.<a class="code" href="../../da/d9d/structxii_string_view.htm#a65d3c651c35878985c1a637a45ce9bd1">GetStartPointer</a>());</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;  <span class="keywordflow">return</span> szValue != <span class="keyword">nullptr</span> ? szValue : sDefault;</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;}</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<a class="code" href="../../dd/dad/structxii_result.htm">xiiResult</a> xiiEnvironmentVariableUtils::SetValueStringImpl(<span class="keyword">const</span> <span class="keywordtype">char</span>* szName, <span class="keyword">const</span> <span class="keywordtype">char</span>* szValue)</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<a class="code" href="../../dd/dad/structxii_result.htm">xiiResult</a> xiiEnvironmentVariableUtils::SetValueStringImpl(<a class="code" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sName, <a class="code" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sValue)</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;{</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;  <span class="keywordflow">if</span> (setenv(szName, szValue, 1) == 0)</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;  <span class="keywordflow">if</span> (setenv(sName.<a class="code" href="../../da/d9d/structxii_string_view.htm#a65d3c651c35878985c1a637a45ce9bd1">GetStartPointer</a>(), sValue.<a class="code" href="../../da/d9d/structxii_string_view.htm#a65d3c651c35878985c1a637a45ce9bd1">GetStartPointer</a>(), 1) == 0)</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keywordflow">return</span> XII_SUCCESS;</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;  <span class="keywordflow">else</span></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keywordflow">return</span> XII_FAILURE;</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;}</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keywordtype">bool</span> xiiEnvironmentVariableUtils::IsVariableSetImpl(<span class="keyword">const</span> <span class="keywordtype">char</span>* szName)</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keywordtype">bool</span> xiiEnvironmentVariableUtils::IsVariableSetImpl(<a class="code" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sName)</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;{</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  <span class="keywordflow">return</span> getenv(szName) != <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  <span class="keywordflow">return</span> getenv(sName.<a class="code" href="../../da/d9d/structxii_string_view.htm#a65d3c651c35878985c1a637a45ce9bd1">GetStartPointer</a>()) != <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;}</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<a class="code" href="../../dd/dad/structxii_result.htm">xiiResult</a> xiiEnvironmentVariableUtils::UnsetVariableImpl(<span class="keyword">const</span> <span class="keywordtype">char</span>* szName)</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<a class="code" href="../../dd/dad/structxii_result.htm">xiiResult</a> xiiEnvironmentVariableUtils::UnsetVariableImpl(<a class="code" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sName)</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;{</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  <span class="keywordflow">if</span> (unsetenv(szName) == 0)</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  <span class="keywordflow">if</span> (unsetenv(sName.<a class="code" href="../../da/d9d/structxii_string_view.htm#a65d3c651c35878985c1a637a45ce9bd1">GetStartPointer</a>()) == 0)</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keywordflow">return</span> XII_SUCCESS;</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  <span class="keywordflow">else</span></div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keywordflow">return</span> XII_FAILURE;</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="astructxii_hybrid_string_htm"><div class="ttname"><a href="../../df/dfb/structxii_hybrid_string.htm">xiiHybridString&lt; 32, xiiDefaultAllocatorWrapper &gt;</a></div></div>
+<div class="ttc" id="astructxii_hybrid_string_htm"><div class="ttname"><a href="../../df/dfb/structxii_hybrid_string.htm">xiiHybridString</a></div><div class="ttdef"><b>Definition:</b> Stream.h:16</div></div>
+<div class="ttc" id="astructxii_string_view_htm"><div class="ttname"><a href="../../da/d9d/structxii_string_view.htm">xiiStringView</a></div><div class="ttdoc">xiiStringView represent a read-only sub-string of a larger string, as it can store a dedicated string...</div><div class="ttdef"><b>Definition:</b> StringView.h:23</div></div>
 <div class="ttc" id="astructxii_result_htm"><div class="ttname"><a href="../../dd/dad/structxii_result.htm">xiiResult</a></div><div class="ttdoc">Default enum for returning failure or success, instead of using a bool.</div><div class="ttdef"><b>Definition:</b> Types.h:54</div></div>
+<div class="ttc" id="astructxii_string_view_htm_a65d3c651c35878985c1a637a45ce9bd1"><div class="ttname"><a href="../../da/d9d/structxii_string_view.htm#a65d3c651c35878985c1a637a45ce9bd1">xiiStringView::GetStartPointer</a></div><div class="ttdeci">const char * GetStartPointer() const</div><div class="ttdoc">Returns the start of the view range.</div><div class="ttdef"><b>Definition:</b> StringView.h:92</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.htm">home</a></li><li class="navelem"><a class="el" href="../../dir_1036706e55c22cab35bc1c58ee689f1d.htm">runner</a></li><li class="navelem"><a class="el" href="../../dir_629f8151d55d307162ff2d619fb1783d.htm">work</a></li><li class="navelem"><a class="el" href="../../dir_1ddc44fe1263a8c7935fa6130b7d9499.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_2c1b6808f12952f4c36e05ba7068379a.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_b5a1c4ecfca018ad24b729e213296d41.htm">Source</a></li><li class="navelem"><a class="el" href="../../dir_e321052006a51284e67389ab20037e7c.htm">Engine</a></li><li class="navelem"><a class="el" href="../../dir_be0c42c58b36f42c54ec54024ed4f6af.htm">Foundation</a></li><li class="navelem"><a class="el" href="../../dir_93ea1dc105d79df7757252ae41d4400e.htm">System</a></li><li class="navelem"><a class="el" href="../../dir_f794a5464cdd7c796ca802b0cf288ca7.htm">Implementation</a></li><li class="navelem"><a class="el" href="../../dir_b342b897904f051269c296e3c59158c5.htm">Posix</a></li><li class="navelem"><b>EnvironmentVariableUtils_posix.h</b></li>
-    <li class="footer">Generated on Mon Jul 10 2023 23:02:50 for XIIEngine by
+    <li class="footer">Generated on Sat Aug 5 2023 14:55:10 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

@@ -6,5 +6,6 @@ var structxii_standard_menu_types_1_1_bits =
     [ "Panels", "dd/d51/structxii_standard_menu_types_1_1_bits.htm#a480d5a1510da08b5a6d6993bd17b5786", null ],
     [ "Project", "dd/d51/structxii_standard_menu_types_1_1_bits.htm#acf0637f47b42ba67935fd16df4730c82", null ],
     [ "Scene", "dd/d51/structxii_standard_menu_types_1_1_bits.htm#a381b2bc220266ba2c0b5f8004b4386e9", null ],
+    [ "Tools", "dd/d51/structxii_standard_menu_types_1_1_bits.htm#a781eb7b6d6066d6f3f8f6518a312980d", null ],
     [ "View", "dd/d51/structxii_standard_menu_types_1_1_bits.htm#ae5185984d08ea5b5e02690bdf896e019", null ]
 ];

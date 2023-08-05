@@ -7,5 +7,5 @@ var structxii_stats_1_1_stats_event_data =
     ] ],
     [ "m_EventType", "dd/d57/structxii_stats_1_1_stats_event_data.htm#a2d1738733282dcd91a59d2a312235da0", null ],
     [ "m_NewStatValue", "dd/d57/structxii_stats_1_1_stats_event_data.htm#a378ea41c00a631ad1e24a775f1595694", null ],
-    [ "m_szStatName", "dd/d57/structxii_stats_1_1_stats_event_data.htm#ad15defb817b8e993d7ca70f5b7cc901a", null ]
+    [ "m_sStatName", "dd/d57/structxii_stats_1_1_stats_event_data.htm#abe6a4d8ab19feac27a3b641bf6e6f282", null ]
 ];

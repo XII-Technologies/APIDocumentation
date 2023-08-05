@@ -145,10 +145,10 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../.
 <tr class="memitem:a00c2ab7912ecc31dc17ada626f9c5ef8"><td class="memItemLeft" align="right" valign="top"><a id="a00c2ab7912ecc31dc17ada626f9c5ef8"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsInUndoRedo</b> () const</td></tr>
 <tr class="separator:a00c2ab7912ecc31dc17ada626f9c5ef8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6194d6215a26b8a42cec821aee48ce73"><td class="memItemLeft" align="right" valign="top"><a id="a6194d6215a26b8a42cec821aee48ce73"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/df0/classxii_command_history.htm#a6194d6215a26b8a42cec821aee48ce73">BeginTemporaryCommands</a> (const char *szDisplayString, bool bFireEventsWhenUndoingTempCommands=false)</td></tr>
-<tr class="memdesc:a6194d6215a26b8a42cec821aee48ce73"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call this to start a series of transactions that typically change the same value over and over (e.g. dragging an object to a position). Every time a new transaction is started, the previous one is undone first. At the end of a series of temporary transactions, only the last transaction will be stored as a single undo step. Call this first and then start a transaction inside it. <br /></td></tr>
-<tr class="separator:a6194d6215a26b8a42cec821aee48ce73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33cdce4d6fd2afc77643bbe2a6284748"><td class="memItemLeft" align="right" valign="top"><a id="a33cdce4d6fd2afc77643bbe2a6284748"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/df0/classxii_command_history.htm#a33cdce4d6fd2afc77643bbe2a6284748">BeginTemporaryCommands</a> (<a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sDisplayString, bool bFireEventsWhenUndoingTempCommands=false)</td></tr>
+<tr class="memdesc:a33cdce4d6fd2afc77643bbe2a6284748"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call this to start a series of transactions that typically change the same value over and over (e.g. dragging an object to a position). Every time a new transaction is started, the previous one is undone first. At the end of a series of temporary transactions, only the last transaction will be stored as a single undo step. Call this first and then start a transaction inside it. <br /></td></tr>
+<tr class="separator:a33cdce4d6fd2afc77643bbe2a6284748"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aabb476a736fa7d0f8ad4c7cf0425793e"><td class="memItemLeft" align="right" valign="top"><a id="aabb476a736fa7d0f8ad4c7cf0425793e"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>CancelTemporaryCommands</b> ()</td></tr>
 <tr class="separator:aabb476a736fa7d0f8ad4c7cf0425793e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -223,7 +223,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>xiiCommand</b></td><
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.htm#_todo000170">Todo:</a></b></dt><dd>This would not be necessary, if hierarchical transactions would not crash </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.htm#_todo000059">Todo:</a></b></dt><dd>This would not be necessary, if hierarchical transactions would not crash </dd></dl>
 
 </div>
 </div>
@@ -242,7 +242,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>xiiCommand</b></td><
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.htm#_todo000169">Todo:</a></b></dt><dd>Allow to have a limited transaction history and clean up transactions after a while </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.htm#_todo000058">Todo:</a></b></dt><dd>Allow to have a limited transaction history and clean up transactions after a while </dd></dl>
 
 </div>
 </div>
@@ -256,7 +256,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>xiiCommand</b></td><
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d0/df0/classxii_command_history.htm">xiiCommandHistory</a></li>
-    <li class="footer">Generated on Mon Jul 10 2023 23:02:55 for XIIEngine by
+    <li class="footer">Generated on Sat Aug 5 2023 14:55:12 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

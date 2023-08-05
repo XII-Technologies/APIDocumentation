@@ -1,8 +1,5 @@
 var searchData=
 [
-  ['offsetbase_21378',['OffsetBase',['../de/d1d/classxii_memory_mapped_file.htm#a87467459914609e33ca1514fd0351388',1,'xiiMemoryMappedFile']]],
-  ['onenterarea_21379',['OnEnterArea',['../d0/db4/structxii_input_action_config.htm#a8850d43986047decd114352fc791c829',1,'xiiInputActionConfig']]],
-  ['onleavearea_21380',['OnLeaveArea',['../d0/db4/structxii_input_action_config.htm#a98ec8d63a11a646389b276dc78980ce4',1,'xiiInputActionConfig']]],
-  ['orientation_21381',['Orientation',['../dc/d30/classxii_game_grid.htm#a0259a8eed6ec1405402e187f15ed9984',1,'xiiGameGrid']]],
-  ['outputreliability_21382',['OutputReliability',['../d4/da4/classxii_asset_document_manager.htm#a9a375f71a155ef917885c91836cca2e8',1,'xiiAssetDocumentManager']]]
+  ['status_12227',['Status',['../da/d4e/structxii_file_status.htm#a439f91d5f2fe0332c73a06ae5397ef43',1,'xiiFileStatus']]],
+  ['stepresult_12228',['StepResult',['../d0/dd5/classxii_world_reader_1_1_instantiation_context_base.htm#aaf1ed87cc370d712fdcdf90dcd00a23d',1,'xiiWorldReader::InstantiationContextBase']]]
 ];

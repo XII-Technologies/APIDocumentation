@@ -1,20 +1,14 @@
 var searchData=
 [
-  ['qlist_3403',['QList',['../db/daa/class_q_list.htm',1,'']]],
-  ['qlist_3c_20int_20_3e_3404',['QList&lt; int &gt;',['../db/daa/class_q_list.htm',1,'']]],
-  ['quaternion_3405',['Quaternion',['../dd/dba/structxii_variant_type.htm#a0ab11c9dae08774c11eec36483643874a054efb0d381798145ec3ed37a1dbfcc0',1,'xiiVariantType']]],
-  ['quaterniond_3406',['Quaterniond',['../dd/dba/structxii_variant_type.htm#a0ab11c9dae08774c11eec36483643874ab919acbbaaf48d8c629e950c070639ea',1,'xiiVariantType']]],
-  ['querycachednodename_3407',['QueryCachedNodeName',['../d1/dbf/classxii_game_object_document.htm#aa178736266fa1412b33e82a0b0cadabd',1,'xiiGameObjectDocument']]],
-  ['queryextents_3408',['QueryExtents',['../d1/d87/classxii_curve1_d.htm#ab6fff97ac225939a66afab9fc4502057',1,'xiiCurve1D']]],
-  ['queryextremevalues_3409',['QueryExtremeValues',['../d1/d87/classxii_curve1_d.htm#a43e6497ba30ba703e722c8bf1f713ca9',1,'xiiCurve1D']]],
-  ['querylocaltransform_3410',['QueryLocalTransform',['../d1/dbf/classxii_game_object_document.htm#a87b5c39e38b463d72a30f3de3a4c1c59',1,'xiiGameObjectDocument']]],
-  ['queryparams_3411',['QueryParams',['../dd/d25/structxii_spatial_system_1_1_query_params.htm',1,'xiiSpatialSystem']]],
-  ['querypixmap_3412',['QueryPixmap',['../d1/d47/classxii_qt_image_cache.htm#a95cd63e31864a03419e4ead34b8b5dd5',1,'xiiQtImageCache']]],
-  ['querypixmapfortype_3413',['QueryPixmapForType',['../d1/d47/classxii_qt_image_cache.htm#abcfb5768326e8edb341a32b3dda7d621',1,'xiiQtImageCache']]],
-  ['querypreferences_3414',['QueryPreferences',['../da/d6a/classxii_preferences.htm#a7ce2ec6cbd39b7869b6c154c7c06b21c',1,'xiiPreferences::QueryPreferences(const xiiDocument *pDocument=nullptr)'],['../da/d6a/classxii_preferences.htm#a0a21091555115c75fccb41bcb4fcb9c4',1,'xiiPreferences::QueryPreferences(const xiiRTTI *pRtti, const xiiDocument *pDocument=nullptr)']]],
-  ['querystream_3415',['QueryStream',['../d2/d9c/classxii_particle_system_instance.htm#a01668ab9b5f60aa0ae9e72bc8af07825',1,'xiiParticleSystemInstance']]],
-  ['querytypeimage_3416',['QueryTypeImage',['../d1/d47/classxii_qt_image_cache.htm#a7a48036f394a672ddef456b29ed5e0cd',1,'xiiQtImageCache']]],
-  ['queued_3417',['Queued',['../d6/d35/classxii_actor_manager.htm#a36654917f2a3afb90a589df82faaac8aa7b2f31b90fe1c2cc33a52233c1925df3',1,'xiiActorManager']]],
-  ['quicksort_3418',['QuickSort',['../da/d89/classxii_sorting.htm#a3e6e0255ac3dc4d93eff8b3c18aedf4c',1,'xiiSorting::QuickSort(Container &amp;ref_container, const Comparer &amp;comparer=Comparer())'],['../da/d89/classxii_sorting.htm#aaf6ba3069533ac874c9ac1b36c2ce3f8',1,'xiiSorting::QuickSort(xiiArrayPtr&lt; T &gt; &amp;ref_arrayPtr, const Comparer &amp;comparer=Comparer())']]],
-  ['quit_3419',['Quit',['../dd/d2b/classxii_application.htm#a15434b0054b5c87809df19e488693370a0d82790b0612935992bd564a17ce37d6',1,'xiiApplication']]]
+  ['quaternion_2520',['Quaternion',['../dd/dba/structxii_variant_type.htm#a38d867476ba7137c38a09976ece9ee6ba054efb0d381798145ec3ed37a1dbfcc0',1,'xiiVariantType']]],
+  ['quaterniond_2521',['Quaterniond',['../dd/dba/structxii_variant_type.htm#a38d867476ba7137c38a09976ece9ee6bab919acbbaaf48d8c629e950c070639ea',1,'xiiVariantType']]],
+  ['queryextents_2522',['QueryExtents',['../d1/d87/classxii_curve1_d.htm#ab6fff97ac225939a66afab9fc4502057',1,'xiiCurve1D']]],
+  ['queryextremevalues_2523',['QueryExtremeValues',['../d1/d87/classxii_curve1_d.htm#a43e6497ba30ba703e722c8bf1f713ca9',1,'xiiCurve1D']]],
+  ['queryparams_2524',['QueryParams',['../dd/d25/structxii_spatial_system_1_1_query_params.htm',1,'xiiSpatialSystem']]],
+  ['querypixmap_2525',['QueryPixmap',['../d1/d47/classxii_qt_image_cache.htm#a9a2d065eccef5e5f557c41f6725bc9d3',1,'xiiQtImageCache']]],
+  ['querypixmapfortype_2526',['QueryPixmapForType',['../d1/d47/classxii_qt_image_cache.htm#ae16fc033c195b0f1127769b27d76a882',1,'xiiQtImageCache']]],
+  ['querytypeimage_2527',['QueryTypeImage',['../d1/d47/classxii_qt_image_cache.htm#a9cd058e760b5b4ee73145af765c7df5b',1,'xiiQtImageCache']]],
+  ['queued_2528',['Queued',['../d6/d35/classxii_actor_manager.htm#a36654917f2a3afb90a589df82faaac8aa7b2f31b90fe1c2cc33a52233c1925df3',1,'xiiActorManager']]],
+  ['quicksort_2529',['QuickSort',['../da/d89/classxii_sorting.htm#a3e6e0255ac3dc4d93eff8b3c18aedf4c',1,'xiiSorting::QuickSort(Container &amp;ref_container, const Comparer &amp;comparer=Comparer())'],['../da/d89/classxii_sorting.htm#aaf6ba3069533ac874c9ac1b36c2ce3f8',1,'xiiSorting::QuickSort(xiiArrayPtr&lt; T &gt; &amp;ref_arrayPtr, const Comparer &amp;comparer=Comparer())']]],
+  ['quit_2530',['Quit',['../dd/d2b/classxii_application.htm#a15434b0054b5c87809df19e488693370a0d82790b0612935992bd564a17ce37d6',1,'xiiApplication']]]
 ];

@@ -151,7 +151,7 @@ $(document).ready(function(){initNavTree('d3/db2/_curve1_d_editor_widget_8moc_8h
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  <span class="keywordtype">void</span> onFlattenTangents();</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  <span class="keywordtype">void</span> onSelectionChanged();</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  <span class="keywordtype">void</span> onMoveCurve(xiiInt32 iCurve, <span class="keywordtype">double</span> moveY);</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  <span class="keywordtype">void</span> onGenerateCurve(<a class="code" href="../../d1/d37/namespacexii_math.htm#a646b0ff6e3974612edf83c6401adb22d">xiiMath::xiiEasingFunctions</a> <span class="keyword">function</span>, <span class="keywordtype">bool</span> inverse);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  <span class="keywordtype">void</span> onGenerateCurve(<a class="code" href="../../dc/d8d/structxii_easing_function.htm#a8be67e67471de2fe5de6c12b4c4247cf">xiiEasingFunction::Enum</a> <span class="keyword">function</span>, <span class="keywordtype">bool</span> inverse);</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <span class="keywordtype">void</span> onSaveAsPreset();</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <span class="keywordtype">void</span> onLoadPreset();</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
@@ -162,8 +162,8 @@ $(document).ready(function(){initNavTree('d3/db2/_curve1_d_editor_widget_8moc_8h
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  <span class="keywordtype">void</span>      UpdateSpinBoxes();</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  <span class="keywordtype">void</span>      SetTangentMode(xiiCurveTangentMode::Enum mode, <span class="keywordtype">bool</span> bLeft, <span class="keywordtype">bool</span> bRight);</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  <span class="keywordtype">void</span>      ClampPoint(<span class="keywordtype">double</span>&amp; x, <span class="keywordtype">double</span>&amp; y) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  <span class="keywordtype">void</span>      SaveCurvePreset(<span class="keyword">const</span> <span class="keywordtype">char</span>* szFile) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  <a class="code" href="../../dd/dad/structxii_result.htm">xiiResult</a> LoadCurvePreset(<span class="keyword">const</span> <span class="keywordtype">char</span>* szFile);</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  <span class="keywordtype">void</span>      SaveCurvePreset(<a class="code" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sFile) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  <a class="code" href="../../dd/dad/structxii_result.htm">xiiResult</a> LoadCurvePreset(<a class="code" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sFile);</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  <span class="keywordtype">void</span>      FindAllPresets();</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  <span class="keywordtype">double</span>            m_fCurveDuration;</div>
@@ -177,8 +177,9 @@ $(document).ready(function(){initNavTree('d3/db2/_curve1_d_editor_widget_8moc_8h
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;};</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="anamespacexii_math_htm_a646b0ff6e3974612edf83c6401adb22d"><div class="ttname"><a href="../../d1/d37/namespacexii_math.htm#a646b0ff6e3974612edf83c6401adb22d">xiiMath::xiiEasingFunctions</a></div><div class="ttdeci">xiiEasingFunctions</div><div class="ttdoc">Available Procedural Curve Generators.</div><div class="ttdef"><b>Definition:</b> Easing.h:18</div></div>
+<div class="ttc" id="astructxii_string_view_htm"><div class="ttname"><a href="../../da/d9d/structxii_string_view.htm">xiiStringView</a></div><div class="ttdoc">xiiStringView represent a read-only sub-string of a larger string, as it can store a dedicated string...</div><div class="ttdef"><b>Definition:</b> StringView.h:23</div></div>
 <div class="ttc" id="aclassxii_qt_curve1_d_editor_widget_htm"><div class="ttname"><a href="../../d2/d2f/classxii_qt_curve1_d_editor_widget.htm">xiiQtCurve1DEditorWidget</a></div><div class="ttdef"><b>Definition:</b> Curve1DEditorWidget.moc.h:10</div></div>
+<div class="ttc" id="astructxii_easing_function_htm_a8be67e67471de2fe5de6c12b4c4247cf"><div class="ttname"><a href="../../dc/d8d/structxii_easing_function.htm#a8be67e67471de2fe5de6c12b4c4247cf">xiiEasingFunction::Enum</a></div><div class="ttdeci">Enum</div><div class="ttdef"><b>Definition:</b> Easing.h:20</div></div>
 <div class="ttc" id="aclassxii_curve_group_data_htm"><div class="ttname"><a href="../../db/dfc/classxii_curve_group_data.htm">xiiCurveGroupData</a></div><div class="ttdef"><b>Definition:</b> CurveEditData.h:108</div></div>
 <div class="ttc" id="aclassxii_dynamic_array_htm"><div class="ttname"><a href="../../dc/da4/classxii_dynamic_array.htm">xiiDynamicArray</a></div><div class="ttdef"><b>Definition:</b> DynamicArray.h:80</div></div>
 <div class="ttc" id="astructxii_result_htm"><div class="ttname"><a href="../../dd/dad/structxii_result.htm">xiiResult</a></div><div class="ttdoc">Default enum for returning failure or success, instead of using a bool.</div><div class="ttdef"><b>Definition:</b> Types.h:54</div></div>
@@ -187,7 +188,7 @@ $(document).ready(function(){initNavTree('d3/db2/_curve1_d_editor_widget_8moc_8h
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.htm">home</a></li><li class="navelem"><a class="el" href="../../dir_1036706e55c22cab35bc1c58ee689f1d.htm">runner</a></li><li class="navelem"><a class="el" href="../../dir_629f8151d55d307162ff2d619fb1783d.htm">work</a></li><li class="navelem"><a class="el" href="../../dir_1ddc44fe1263a8c7935fa6130b7d9499.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_2c1b6808f12952f4c36e05ba7068379a.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_b5a1c4ecfca018ad24b729e213296d41.htm">Source</a></li><li class="navelem"><a class="el" href="../../dir_64f53f8da7bf780a58c32bb848e7873b.htm">Tools</a></li><li class="navelem"><a class="el" href="../../dir_4b5bc41f7c4cbfc8ca80bdea56300f1d.htm">Libs</a></li><li class="navelem"><a class="el" href="../../dir_8694d7149aa3c4cbc4b219c953b250c5.htm">GuiFoundation</a></li><li class="navelem"><a class="el" href="../../dir_9a2348ba360553a58aa9ebac918c2653.htm">Widgets</a></li><li class="navelem"><b>Curve1DEditorWidget.moc.h</b></li>
-    <li class="footer">Generated on Mon Jul 10 2023 23:02:53 for XIIEngine by
+    <li class="footer">Generated on Sat Aug 5 2023 14:55:11 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

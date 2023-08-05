@@ -1,6 +1,6 @@
 var classxii_typed_function_property =
 [
-    [ "xiiTypedFunctionProperty", "d9/dc8/classxii_typed_function_property.htm#a51666327c8fc6aebd9afc2a9246ee37c", null ],
+    [ "xiiTypedFunctionProperty", "d9/dc8/classxii_typed_function_property.htm#aec32d8ca7f9ecaaf0a96eb3e6b746c9a", null ],
     [ "GetArgumentCount", "d9/dc8/classxii_typed_function_property.htm#a725de67a87380b09c8de17723c77cceb", null ],
     [ "GetArgumentFlags", "d9/dc8/classxii_typed_function_property.htm#af806e6f92979c0e9e39a14c98588d421", null ],
     [ "GetArgumentType", "d9/dc8/classxii_typed_function_property.htm#abef5a4107948a40eac8e3307ad477dc9", null ],

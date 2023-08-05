@@ -5,5 +5,5 @@ var classxii_dynamic_enum =
     [ "GetValueName", "d0/dac/classxii_dynamic_enum.htm#a86cb1c582cf1a90d8d3a6d618b21b465", null ],
     [ "IsValueValid", "d0/dac/classxii_dynamic_enum.htm#ab18c31570086ed0b02edff56a0821f33", null ],
     [ "RemoveValue", "d0/dac/classxii_dynamic_enum.htm#a1440c8965aa723edb53e9dd24a02640d", null ],
-    [ "SetValueAndName", "d0/dac/classxii_dynamic_enum.htm#aaccd45bd644417598f4d35ce497b1729", null ]
+    [ "SetValueAndName", "d0/dac/classxii_dynamic_enum.htm#a34cf264b5ec6bb70f3ecb86b5bf5105e", null ]
 ];

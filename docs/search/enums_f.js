@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['updatebehaviorifstatic_21393',['UpdateBehaviorIfStatic',['../d0/d91/classxii_game_object.htm#a05ca9a629994b6e8be20ba6c74f46f45',1,'xiiGameObject']]]
+  ['xiithreadstatus_12237',['xiiThreadStatus',['../d8/d8c/classxii_thread.htm#a8666ac8d93cfd51672c0a5719e91d1b0',1,'xiiThread']]]
 ];

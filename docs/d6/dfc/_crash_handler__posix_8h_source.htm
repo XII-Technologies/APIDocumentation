@@ -105,36 +105,36 @@ $(document).ready(function(){initNavTree('d6/dfc/_crash_handler__posix_8h_source
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    xiiCrashHandler::GetCrashHandler()-&gt;HandleCrash(<span class="keyword">nullptr</span>);</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;  }</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;  <span class="comment">// restore the original signal handler for the abort signal and raise one so the kernel can do a core dump</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;  <span class="comment">// Restore the original signal handler for the abort signal and raise one so the kernel can do a core dump.</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  std::signal(SIGABRT, SIG_DFL);</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  std::raise(SIGABRT);</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;}</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> xiiSignalHandler(<span class="keywordtype">int</span> signum)</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> xiiSignalHandler(xiiInt32 signum)</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;{</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  <a class="code" href="../../d4/dc6/classxii_log.htm#ad00beb66f8576c8cbf7a033ece409f16">xiiLog::Printf</a>(<span class="stringliteral">&quot;***Unhandled Signal:***\n&quot;</span>);</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  <span class="keywordflow">switch</span> (signum)</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  {</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keywordflow">case</span> SIGINT:</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;      <a class="code" href="../../d4/dc6/classxii_log.htm#ad00beb66f8576c8cbf7a033ece409f16">xiiLog::Printf</a>(<span class="stringliteral">&quot;Signal SIGINT: interrupt\n&quot;</span>);</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;      <a class="code" href="../../d4/dc6/classxii_log.htm#ad00beb66f8576c8cbf7a033ece409f16">xiiLog::Printf</a>(<span class="stringliteral">&quot;Signal SIGINT: Interrupt\n&quot;</span>);</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;      <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordflow">case</span> SIGILL:</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;      <a class="code" href="../../d4/dc6/classxii_log.htm#ad00beb66f8576c8cbf7a033ece409f16">xiiLog::Printf</a>(<span class="stringliteral">&quot;Signal SIGILL: illegal instruction - invalid function image\n&quot;</span>);</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;      <a class="code" href="../../d4/dc6/classxii_log.htm#ad00beb66f8576c8cbf7a033ece409f16">xiiLog::Printf</a>(<span class="stringliteral">&quot;Signal SIGILL: Illegal Instruction - Invalid Function Image\n&quot;</span>);</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;      <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordflow">case</span> SIGFPE:</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;      <a class="code" href="../../d4/dc6/classxii_log.htm#ad00beb66f8576c8cbf7a033ece409f16">xiiLog::Printf</a>(<span class="stringliteral">&quot;Signal SIGFPE: floating point exception\n&quot;</span>);</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;      <a class="code" href="../../d4/dc6/classxii_log.htm#ad00beb66f8576c8cbf7a033ece409f16">xiiLog::Printf</a>(<span class="stringliteral">&quot;Signal SIGFPE: Floating Point WException\n&quot;</span>);</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;      <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordflow">case</span> SIGSEGV:</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;      <a class="code" href="../../d4/dc6/classxii_log.htm#ad00beb66f8576c8cbf7a033ece409f16">xiiLog::Printf</a>(<span class="stringliteral">&quot;Signal SIGSEGV: segment violation\n&quot;</span>);</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;      <a class="code" href="../../d4/dc6/classxii_log.htm#ad00beb66f8576c8cbf7a033ece409f16">xiiLog::Printf</a>(<span class="stringliteral">&quot;Signal SIGSEGV: Segment Violation\n&quot;</span>);</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;      <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordflow">case</span> SIGTERM:</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;      <a class="code" href="../../d4/dc6/classxii_log.htm#ad00beb66f8576c8cbf7a033ece409f16">xiiLog::Printf</a>(<span class="stringliteral">&quot;Signal SIGTERM: Software termination signal from kill\n&quot;</span>);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;      <a class="code" href="../../d4/dc6/classxii_log.htm#ad00beb66f8576c8cbf7a033ece409f16">xiiLog::Printf</a>(<span class="stringliteral">&quot;Signal SIGTERM: Software Termination Signal From Kill\n&quot;</span>);</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;      <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordflow">case</span> SIGABRT:</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;      <a class="code" href="../../d4/dc6/classxii_log.htm#ad00beb66f8576c8cbf7a033ece409f16">xiiLog::Printf</a>(<span class="stringliteral">&quot;Signal SIGABRT: abnormal termination triggered by abort call\n&quot;</span>);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;      <a class="code" href="../../d4/dc6/classxii_log.htm#ad00beb66f8576c8cbf7a033ece409f16">xiiLog::Printf</a>(<span class="stringliteral">&quot;Signal SIGABRT: Abnormal Termination Triggered By Abort Call\n&quot;</span>);</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;      <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordflow">default</span>:</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;      <a class="code" href="../../d4/dc6/classxii_log.htm#ad00beb66f8576c8cbf7a033ece409f16">xiiLog::Printf</a>(<span class="stringliteral">&quot;Signal %i: unknown signal\n&quot;</span>, signal);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;      <a class="code" href="../../d4/dc6/classxii_log.htm#ad00beb66f8576c8cbf7a033ece409f16">xiiLog::Printf</a>(<span class="stringliteral">&quot;Signal %i: Unknown Signal\n&quot;</span>, signal);</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;      <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  }</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
@@ -188,7 +188,7 @@ $(document).ready(function(){initNavTree('d6/dfc/_crash_handler__posix_8h_source
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  {</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="keywordflow">if</span> (<span class="keyword">const</span> <span class="keywordtype">char</span>* szName = type-&gt;name())</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    {</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;      <span class="keywordtype">int</span> status = -1;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;      xiiInt32 status = -1;</div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;      <span class="comment">// Try to print nice name</span></div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;      <span class="keywordflow">if</span> (<span class="keywordtype">char</span>* szNiceName = abi::__cxa_demangle(szName, 0, 0, &amp;status))</div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        <a class="code" href="../../d4/dc6/classxii_log.htm#ad00beb66f8576c8cbf7a033ece409f16">xiiLog::Printf</a>(<span class="stringliteral">&quot;Exception: %s\n&quot;</span>, szNiceName);</div>
@@ -218,7 +218,7 @@ $(document).ready(function(){initNavTree('d6/dfc/_crash_handler__posix_8h_source
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.htm">home</a></li><li class="navelem"><a class="el" href="../../dir_1036706e55c22cab35bc1c58ee689f1d.htm">runner</a></li><li class="navelem"><a class="el" href="../../dir_629f8151d55d307162ff2d619fb1783d.htm">work</a></li><li class="navelem"><a class="el" href="../../dir_1ddc44fe1263a8c7935fa6130b7d9499.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_2c1b6808f12952f4c36e05ba7068379a.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_b5a1c4ecfca018ad24b729e213296d41.htm">Source</a></li><li class="navelem"><a class="el" href="../../dir_e321052006a51284e67389ab20037e7c.htm">Engine</a></li><li class="navelem"><a class="el" href="../../dir_be0c42c58b36f42c54ec54024ed4f6af.htm">Foundation</a></li><li class="navelem"><a class="el" href="../../dir_93ea1dc105d79df7757252ae41d4400e.htm">System</a></li><li class="navelem"><a class="el" href="../../dir_f794a5464cdd7c796ca802b0cf288ca7.htm">Implementation</a></li><li class="navelem"><a class="el" href="../../dir_b342b897904f051269c296e3c59158c5.htm">Posix</a></li><li class="navelem"><b>CrashHandler_posix.h</b></li>
-    <li class="footer">Generated on Mon Jul 10 2023 23:02:50 for XIIEngine by
+    <li class="footer">Generated on Sat Aug 5 2023 14:55:10 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

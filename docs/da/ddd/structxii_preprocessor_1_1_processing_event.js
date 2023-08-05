@@ -12,8 +12,7 @@ var structxii_preprocessor_1_1_processing_event =
       [ "Define", "da/ddd/structxii_preprocessor_1_1_processing_event.htm#a802fe292e88c1d6864e3e14e68f89856ac7c3512d06937eb103b1a305a604b6ec", null ],
       [ "Redefine", "da/ddd/structxii_preprocessor_1_1_processing_event.htm#a802fe292e88c1d6864e3e14e68f89856af987fb76e3a3c52041f43362ce40303a", null ]
     ] ],
-    [ "ProcessingEvent", "da/ddd/structxii_preprocessor_1_1_processing_event.htm#a3d5ec9b2ff6ee2bf294b4813b8137afc", null ],
     [ "m_pToken", "da/ddd/structxii_preprocessor_1_1_processing_event.htm#a44433d69d344aaf9174134f6da215bac", null ],
-    [ "m_szInfo", "da/ddd/structxii_preprocessor_1_1_processing_event.htm#a067917d1ec84a9260b1ee4027cff2571", null ],
+    [ "m_sInfo", "da/ddd/structxii_preprocessor_1_1_processing_event.htm#a36dfb68e49fe3b0d298668649cea2161", null ],
     [ "m_Type", "da/ddd/structxii_preprocessor_1_1_processing_event.htm#af91246187c5f3f3314e1b256a953f362", null ]
 ];

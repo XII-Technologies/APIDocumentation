@@ -1,6 +1,8 @@
 var classxii_world =
 [
-    [ "ReferenceResolver", "d6/d89/classxii_world.htm#aa947eadf77d99134662673db8ddd7e9e", null ],
+    [ "ReferenceResolver", "d6/d89/classxii_world.htm#abb6879f609c4a3fa3ff32e200b8d9535", null ],
+    [ "ResourceReloadContext", "d6/d89/classxii_world.htm#a6617753923674663bbd3a9083afad6a4", null ],
+    [ "ResourceReloadFunc", "d6/d89/classxii_world.htm#a88c2c92f8ebf33e9c347ece57bbf88c8", null ],
     [ "VisitorFunc", "d6/d89/classxii_world.htm#a2a28037bf6e0847c42b7941e4861ea4b", null ],
     [ "TraversalMethod", "d6/d89/classxii_world.htm#aa0562df4eaa5617d4d07026c4d1fb3a5", [
       [ "BreadthFirst", "d6/d89/classxii_world.htm#aa0562df4eaa5617d4d07026c4d1fb3a5a1116ec8ad4acbab550083d405d3bcc7a", null ],
@@ -8,6 +10,7 @@ var classxii_world =
     ] ],
     [ "xiiWorld", "d6/d89/classxii_world.htm#a3dbf6f8ad1a6c3c79d367b3376763a83", null ],
     [ "~xiiWorld", "d6/d89/classxii_world.htm#aa3327fe4863a4efc5ca135eedd9763ad", null ],
+    [ "AddResourceReloadFunction", "d6/d89/classxii_world.htm#a908475811cde6737503dd807a0030c2e", null ],
     [ "BeginAddingComponentsToInitBatch", "d6/d89/classxii_world.htm#afe36b61833b4f761adb78853aa2e7eb9", null ],
     [ "CancelComponentInitBatch", "d6/d89/classxii_world.htm#a677a636069595346b20d131569124b84", null ],
     [ "Clear", "d6/d89/classxii_world.htm#a3b7b2ff09bf7bed357a09a75ec486f8b", null ],
@@ -62,6 +65,7 @@ var classxii_world =
     [ "GetSpatialSystem", "d6/d89/classxii_world.htm#a840da472b456e971656510e1b5acccac", null ],
     [ "GetSpatialSystem", "d6/d89/classxii_world.htm#a2e8651d870e82c108456907fee51f5d6", null ],
     [ "GetStackAllocator", "d6/d89/classxii_world.htm#a4d42df7ea2dabed071a6b0b417491191", null ],
+    [ "GetUpdateCounter", "d6/d89/classxii_world.htm#a2e02c9225e05f5a21352fa669fedd280", null ],
     [ "GetUpdateTask", "d6/d89/classxii_world.htm#ad3cb6b9fc7dc0b81d5c58719eb06be90", null ],
     [ "GetUserData", "d6/d89/classxii_world.htm#a4ea6dd2047161c57be8db5c32aeaafe1", null ],
     [ "GetWorldSimulationEnabled", "d6/d89/classxii_world.htm#a7fa6b37e35cfff3adc6f67a7dd4bccce", null ],
@@ -72,6 +76,7 @@ var classxii_world =
     [ "PostMessage", "d6/d89/classxii_world.htm#a2c07b46101e775295fb6ba2d9f547fd9", null ],
     [ "PostMessage", "d6/d89/classxii_world.htm#a086fb5c5c922948879a358e29442a28b", null ],
     [ "PostMessageRecursive", "d6/d89/classxii_world.htm#a04af13eebc0ce73d6f29b343e7a184f0", null ],
+    [ "RemoveResourceReloadFunction", "d6/d89/classxii_world.htm#a77d3f378149c66095f31574d8ba8a5cf", null ],
     [ "SendMessage", "d6/d89/classxii_world.htm#afdad906583df4b46d38eb97aa7a456f8", null ],
     [ "SendMessage", "d6/d89/classxii_world.htm#a2b007afa6b6e99aa0359e900cd610da3", null ],
     [ "SendMessageRecursive", "d6/d89/classxii_world.htm#a953ed4f90a20ff26a25bfa9096601149", null ],

@@ -278,7 +278,7 @@ $(document).ready(function(){initNavTree('d4/d73/_n_e_o_n_vec4f__inl_8h_source.h
 <div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;  <span class="keywordflow">return</span> vsqrtq_f32(m_v);</div>
 <div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;}</div>
 <div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160; </div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;<span class="keyword">template</span> &lt;<span class="keywordtype">int</span> N, xiiMathFloatBits::Enum acc&gt;</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;<span class="keyword">template</span> &lt;xiiInt32 N, xiiMathFloatBits::Enum acc&gt;</div>
 <div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;<span class="keywordtype">void</span> xiiSimdVec4f::NormalizeIfNotZero(<span class="keyword">const</span> <a class="code" href="../../d2/d73/classxii_simd_float.htm">xiiSimdFloat</a>&amp; fEpsilon)</div>
 <div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;{</div>
 <div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;  <a class="code" href="../../d2/d73/classxii_simd_float.htm">xiiSimdFloat</a> sqLength  = GetLengthSquared&lt;N&gt;();</div>
@@ -287,36 +287,36 @@ $(document).ready(function(){initNavTree('d4/d73/_n_e_o_n_vec4f__inl_8h_source.h
 <div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;  m_v                    = vreinterpretq_f32_u32(vandq_u32(isNotZero, vreinterpretq_u32_f32(m_v)));</div>
 <div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;}</div>
 <div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160; </div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;<span class="keyword">template</span> &lt;<span class="keywordtype">int</span> N&gt;</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;<span class="keyword">template</span> &lt;xiiInt32 N&gt;</div>
 <div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;XII_ALWAYS_INLINE <span class="keywordtype">bool</span> xiiSimdVec4f::IsZero()<span class="keyword"> const</span></div>
 <div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;<span class="keyword"></span>{</div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">int</span> mask = XII_BIT(N) - 1;</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;  <span class="keyword">const</span> xiiInt32 mask = XII_BIT(N) - 1;</div>
 <div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;  <span class="keywordflow">return</span> (xiiInternal::NeonMoveMask(vceqzq_f32(m_v)) &amp; mask) == mask;</div>
 <div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;}</div>
 <div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160; </div>
-<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;<span class="keyword">template</span> &lt;<span class="keywordtype">int</span> N&gt;</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;<span class="keyword">template</span> &lt;xiiInt32 N&gt;</div>
 <div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;XII_ALWAYS_INLINE <span class="keywordtype">bool</span> xiiSimdVec4f::IsZero(<span class="keyword">const</span> <a class="code" href="../../d2/d73/classxii_simd_float.htm">xiiSimdFloat</a>&amp; fEpsilon)<span class="keyword"> const</span></div>
 <div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;<span class="keyword"></span>{</div>
-<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">int</span>   mask   = XII_BIT(N) - 1;</div>
-<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;  float32x4_t absVal = Abs().m_v;</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;  <span class="keyword">const</span> xiiInt32 mask   = XII_BIT(N) - 1;</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;  float32x4_t    absVal = Abs().m_v;</div>
 <div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;  <span class="keywordflow">return</span> (xiiInternal::NeonMoveMask(vcltq_f32(absVal, fEpsilon.m_v)) &amp; mask) == mask;</div>
 <div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;}</div>
 <div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160; </div>
-<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;<span class="keyword">template</span> &lt;<span class="keywordtype">int</span> N&gt;</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;<span class="keyword">template</span> &lt;xiiInt32 N&gt;</div>
 <div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;<span class="keyword">inline</span> <span class="keywordtype">bool</span> xiiSimdVec4f::IsNaN()<span class="keyword"> const</span></div>
 <div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;<span class="keyword"></span>{</div>
-<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">int</span> mask = XII_BIT(N) - 1;</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;  <span class="keyword">const</span> xiiInt32 mask = XII_BIT(N) - 1;</div>
 <div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;  <span class="keywordflow">return</span> (xiiInternal::NeonMoveMask(vceqq_f32(m_v, m_v)) &amp; mask) != mask;</div>
 <div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;}</div>
 <div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160; </div>
-<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;<span class="keyword">template</span> &lt;<span class="keywordtype">int</span> N&gt;</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;<span class="keyword">template</span> &lt;xiiInt32 N&gt;</div>
 <div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;XII_ALWAYS_INLINE <span class="keywordtype">bool</span> xiiSimdVec4f::IsValid()<span class="keyword"> const</span></div>
 <div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;<span class="keyword"></span>{</div>
-<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">int</span> mask = XII_BIT(N) - 1;</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;  <span class="keyword">const</span> xiiInt32 mask = XII_BIT(N) - 1;</div>
 <div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;  <span class="keywordflow">return</span> (xiiInternal::NeonMoveMask(vcgeq_u32(vreinterpretq_u32_f32(m_v), vmovq_n_u32(0x7f800000))) &amp; mask) == 0;</div>
 <div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;}</div>
 <div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160; </div>
-<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;<span class="keyword">template</span> &lt;<span class="keywordtype">int</span> N&gt;</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;<span class="keyword">template</span> &lt;xiiInt32 N&gt;</div>
 <div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;XII_ALWAYS_INLINE <a class="code" href="../../d2/d73/classxii_simd_float.htm">xiiSimdFloat</a> xiiSimdVec4f::GetComponent()<span class="keyword"> const</span></div>
 <div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;<span class="keyword"></span>{</div>
 <div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;  <span class="keywordflow">return</span> vdupq_laneq_f32(m_v, N);</div>
@@ -643,7 +643,7 @@ $(document).ready(function(){initNavTree('d4/d73/_n_e_o_n_vec4f__inl_8h_source.h
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.htm">home</a></li><li class="navelem"><a class="el" href="../../dir_1036706e55c22cab35bc1c58ee689f1d.htm">runner</a></li><li class="navelem"><a class="el" href="../../dir_629f8151d55d307162ff2d619fb1783d.htm">work</a></li><li class="navelem"><a class="el" href="../../dir_1ddc44fe1263a8c7935fa6130b7d9499.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_2c1b6808f12952f4c36e05ba7068379a.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_b5a1c4ecfca018ad24b729e213296d41.htm">Source</a></li><li class="navelem"><a class="el" href="../../dir_e321052006a51284e67389ab20037e7c.htm">Engine</a></li><li class="navelem"><a class="el" href="../../dir_be0c42c58b36f42c54ec54024ed4f6af.htm">Foundation</a></li><li class="navelem"><a class="el" href="../../dir_6571b00f9c254a01b1735d75b2065daf.htm">SimdMath</a></li><li class="navelem"><a class="el" href="../../dir_421677d30b51fc7bb4bb6333857496b6.htm">Implementation</a></li><li class="navelem"><a class="el" href="../../dir_c9134eb9e5670f07e263b5c7fa011d15.htm">NEON</a></li><li class="navelem"><b>NEONVec4f_inl.h</b></li>
-    <li class="footer">Generated on Mon Jul 10 2023 23:02:49 for XIIEngine by
+    <li class="footer">Generated on Sat Aug 5 2023 14:55:10 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

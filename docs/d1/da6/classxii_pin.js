@@ -13,7 +13,7 @@ var classxii_pin =
     ] ],
     [ "xiiPin", "d1/da6/classxii_pin.htm#a72ef8d7dfd48425789a321ca8bd189ca", null ],
     [ "GetColor", "d1/da6/classxii_pin.htm#a62e94cb0b115934c59128308bef823d2", null ],
-    [ "GetName", "d1/da6/classxii_pin.htm#ac6b81c57a80c7ffad2ca705a9a40e6d2", null ],
+    [ "GetName", "d1/da6/classxii_pin.htm#a437de68e9db09742cce994578cd3de51", null ],
     [ "GetParent", "d1/da6/classxii_pin.htm#aad31ad1fb283ba736f6b7a12b832aa0c", null ],
     [ "GetType", "d1/da6/classxii_pin.htm#afead4dfb18bc55b6e259683a9ca9a075", null ],
     [ "xiiDocumentNodeManager", "d1/da6/classxii_pin.htm#a6468be2a9cd1abc281a54b67f1653c06", null ],

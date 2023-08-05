@@ -11,7 +11,7 @@ var classxii_document_action =
       [ "UpdatePrefabs", "d5/d9a/classxii_document_action.htm#a4fa212254e2c12c9e6a48e6cec2b6d4aa9d3b2494dbca4a6cba1b9fe752a603b4", null ],
       [ "CopyAssetGuid", "d5/d9a/classxii_document_action.htm#a4fa212254e2c12c9e6a48e6cec2b6d4aae9068a2f6f13d776fbaae10255302300", null ]
     ] ],
-    [ "xiiDocumentAction", "d5/d9a/classxii_document_action.htm#aa7670a4056a806a0908b3716094a37d9", null ],
+    [ "xiiDocumentAction", "d5/d9a/classxii_document_action.htm#a7216c702ba3c43faab3cdcdebdc8c139", null ],
     [ "~xiiDocumentAction", "d5/d9a/classxii_document_action.htm#ad0466b437225dd4f85e4a55d2e99b25e", null ],
     [ "Execute", "d5/d9a/classxii_document_action.htm#a80f891437944d51372d29b3095e72206", null ]
 ];

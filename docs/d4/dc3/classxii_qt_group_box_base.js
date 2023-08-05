@@ -24,7 +24,7 @@ var classxii_qt_group_box_base =
     [ "SetDraggable", "d4/dc3/classxii_qt_group_box_base.htm#a54cf4b3da0bed280691aedd92dd8543c", null ],
     [ "SetFillColor", "d4/dc3/classxii_qt_group_box_base.htm#a5bf9d76f0760b638459f491fe2c68b01", null ],
     [ "SetIcon", "d4/dc3/classxii_qt_group_box_base.htm#ac2640dc03f5840994f1c014b901f88d4", null ],
-    [ "SetTitle", "d4/dc3/classxii_qt_group_box_base.htm#a34d1b814913c59aad7e18a3648cf886d", null ],
+    [ "SetTitle", "d4/dc3/classxii_qt_group_box_base.htm#a8cedd52d0218c071e2471471af768b62", null ],
     [ "m_bBoldTitle", "d4/dc3/classxii_qt_group_box_base.htm#a4dd72b80f1d022172e9570025f2402b7", null ],
     [ "m_bCollapsible", "d4/dc3/classxii_qt_group_box_base.htm#a99d39760259021741aa11dc2763bde3b", null ],
     [ "m_bDraggable", "d4/dc3/classxii_qt_group_box_base.htm#a83900840edb5eb39f5bdf7845173a450", null ],

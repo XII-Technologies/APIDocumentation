@@ -139,15 +139,15 @@ $(document).ready(function(){initNavTree('d3/d62/_d_g_m_l_writer_8h_source.htm',
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <a class="code" href="../../d1/d8e/classxii_d_g_m_l_graph.htm">xiiDGMLGraph</a>(Direction graphDirection = Direction::LeftToRight, Layout graphLayout = Layout::Tree);</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  NodeId AddNode(<span class="keyword">const</span> <span class="keywordtype">char</span>* szTitle, <span class="keyword">const</span> <a class="code" href="../../da/d71/structxii_d_g_m_l_graph_1_1_node_desc.htm">NodeDesc</a>* pDesc = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  NodeId AddNode(<a class="code" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sTitle, <span class="keyword">const</span> <a class="code" href="../../da/d71/structxii_d_g_m_l_graph_1_1_node_desc.htm">NodeDesc</a>* pDesc = <span class="keyword">nullptr</span>);</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  NodeId AddGroup(<span class="keyword">const</span> <span class="keywordtype">char</span>* szTitle, GroupType type, <span class="keyword">const</span> <a class="code" href="../../da/d71/structxii_d_g_m_l_graph_1_1_node_desc.htm">NodeDesc</a>* pDesc = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  NodeId AddGroup(<a class="code" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sTitle, GroupType type, <span class="keyword">const</span> <a class="code" href="../../da/d71/structxii_d_g_m_l_graph_1_1_node_desc.htm">NodeDesc</a>* pDesc = <span class="keyword">nullptr</span>);</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  <span class="keywordtype">void</span> AddNodeToGroup(NodeId node, NodeId group);</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  ConnectionId AddConnection(NodeId source, NodeId target, <span class="keyword">const</span> <span class="keywordtype">char</span>* szLabel = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  ConnectionId AddConnection(NodeId source, NodeId target, <a class="code" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sLabel = {});</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  PropertyId AddPropertyType(<span class="keyword">const</span> <span class="keywordtype">char</span>* szName);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  PropertyId AddPropertyType(<a class="code" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sName);</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  <span class="keywordtype">void</span> AddNodeProperty(NodeId node, PropertyId property, <span class="keyword">const</span> <a class="code" href="../../da/d2e/classxii_format_string.htm">xiiFormatString</a>&amp; fmt);</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
@@ -221,7 +221,7 @@ $(document).ready(function(){initNavTree('d3/d62/_d_g_m_l_writer_8h_source.htm',
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.htm">home</a></li><li class="navelem"><a class="el" href="../../dir_1036706e55c22cab35bc1c58ee689f1d.htm">runner</a></li><li class="navelem"><a class="el" href="../../dir_629f8151d55d307162ff2d619fb1783d.htm">work</a></li><li class="navelem"><a class="el" href="../../dir_1ddc44fe1263a8c7935fa6130b7d9499.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_2c1b6808f12952f4c36e05ba7068379a.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_b5a1c4ecfca018ad24b729e213296d41.htm">Source</a></li><li class="navelem"><a class="el" href="../../dir_e321052006a51284e67389ab20037e7c.htm">Engine</a></li><li class="navelem"><a class="el" href="../../dir_be0c42c58b36f42c54ec54024ed4f6af.htm">Foundation</a></li><li class="navelem"><a class="el" href="../../dir_60b01b9cf7085128d92b58f1f1c49bb1.htm">Utilities</a></li><li class="navelem"><b>DGMLWriter.h</b></li>
-    <li class="footer">Generated on Mon Jul 10 2023 23:02:51 for XIIEngine by
+    <li class="footer">Generated on Sat Aug 5 2023 14:55:11 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

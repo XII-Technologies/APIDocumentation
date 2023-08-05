@@ -20,6 +20,7 @@ var classxii_simd_mat4d =
     [ "SetFromArray", "dc/dae/classxii_simd_mat4d.htm#ad8f7ef1f9816158d9c4957094cb21818", null ],
     [ "SetIdentity", "dc/dae/classxii_simd_mat4d.htm#a9a8c781bf84392a253291151688f42e8", null ],
     [ "SetRows", "dc/dae/classxii_simd_mat4d.htm#a493eaaf5af77dc6495e074829db772c5", null ],
+    [ "SetZero", "dc/dae/classxii_simd_mat4d.htm#af0e5b7d20497a36a64106110cf6aecd1", null ],
     [ "TransformDirection", "dc/dae/classxii_simd_mat4d.htm#ab81f88f843f25aba1eab147e8ce339c4", null ],
     [ "TransformPosition", "dc/dae/classxii_simd_mat4d.htm#ac6fecb950ddad3e6b3bb1cc9b5f42c56", null ],
     [ "Transpose", "dc/dae/classxii_simd_mat4d.htm#a85a97ab5e589dc6bc024d70d372d9770", null ],

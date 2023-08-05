@@ -21,6 +21,7 @@ var classxii_qt_node =
     [ "UpdateState", "d2/dfd/classxii_qt_node.htm#abe9a680b439e4f7c3fc2011dc70de218", null ],
     [ "m_HeaderColor", "d2/dfd/classxii_qt_node.htm#a1e2b03e3e55970b1aa122e064b46683a", null ],
     [ "m_HeaderRect", "d2/dfd/classxii_qt_node.htm#a80b95ba696a5ac2b456c04fa42c23d2e", null ],
+    [ "m_pIcon", "d2/dfd/classxii_qt_node.htm#a99c270860428a7fd90813fbe404aa9bd", null ],
     [ "m_pSubtitleLabel", "d2/dfd/classxii_qt_node.htm#ae18efcbd74029b608ee71d3f585381d8", null ],
     [ "m_pTitleLabel", "d2/dfd/classxii_qt_node.htm#adca2c98a829b3d77bb83d5eba96941ce", null ]
 ];

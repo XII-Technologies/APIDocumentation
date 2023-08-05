@@ -105,9 +105,9 @@ $(document).ready(function(){initNavTree('d6/d56/_process__posix_8h_source.htm',
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">namespace</span></div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;{</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;  <a class="code" href="../../dd/dad/structxii_result.htm">xiiResult</a> AddFdFlags(<span class="keywordtype">int</span> fd, <span class="keywordtype">int</span> addFlags)</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;  <a class="code" href="../../dd/dad/structxii_result.htm">xiiResult</a> AddFdFlags(xiiInt32 fd, xiiInt32 addFlags)</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  {</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keywordtype">int</span> flags = fcntl(fd, F_GETFD);</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    xiiInt32 flags = fcntl(fd, F_GETFD);</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    flags |= addFlags;</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keywordflow">if</span> (fcntl(fd, F_SETFD, flags) != 0)</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    {</div>
@@ -131,19 +131,19 @@ $(document).ready(function(){initNavTree('d6/d56/_process__posix_8h_source.htm',
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
 <div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="../../d0/d7a/structxii_process_impl_1_1_std_stream_info.htm">   43</a></span>&#160;  <span class="keyword">struct </span><a class="code" href="../../d0/d7a/structxii_process_impl_1_1_std_stream_info.htm">StdStreamInfo</a></div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  {</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordtype">int</span>                              fd;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    xiiInt32                         fd;</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <a class="code" href="../../dc/d84/structxii_delegate.htm">xiiDelegate</a>&lt;void(<a class="code" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a>)&gt; callback;</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  };</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <a class="code" href="../../dc/da9/classxii_hybrid_array.htm">xiiHybridArray&lt;StdStreamInfo, 2&gt;</a>  m_streams;</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <a class="code" href="../../dc/da4/classxii_dynamic_array.htm">xiiDynamicArray&lt;xiiStringBuilder&gt;</a> m_overflowBuffers;</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <a class="code" href="../../d9/d4a/classxii_unique_ptr.htm">xiiUniquePtr&lt;xiiOSThread&gt;</a>         m_streamWatcherThread;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <span class="keywordtype">int</span>                               m_wakeupPipeReadEnd  = -1;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <span class="keywordtype">int</span>                               m_wakeupPipeWriteEnd = -1;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  xiiInt32                          m_wakeupPipeReadEnd  = -1;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  xiiInt32                          m_wakeupPipeWriteEnd = -1;</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span>* StreamWatcherThread(<span class="keywordtype">void</span>* context)</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  {</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <a class="code" href="../../da/d24/structxii_process_impl.htm">xiiProcessImpl</a>* <span class="keyword">self</span> = <span class="keyword">reinterpret_cast&lt;</span><a class="code" href="../../da/d24/structxii_process_impl.htm">xiiProcessImpl</a>*<span class="keyword">&gt;</span>(context);</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordtype">char</span>            buffer[4096];</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordtype">char</span>            szBuffer[4096];</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <a class="code" href="../../dc/da9/classxii_hybrid_array.htm">xiiHybridArray&lt;struct pollfd, 3&gt;</a> pollfds;</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
@@ -156,7 +156,7 @@ $(document).ready(function(){initNavTree('d6/d56/_process__posix_8h_source.htm',
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordtype">bool</span> run = <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordflow">while</span> (run)</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    {</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;      <span class="keywordtype">int</span> result = poll(pollfds.<a class="code" href="../../da/d4c/classxii_array_base.htm#af72f1c85b6662559e15cf58c44117eae">GetData</a>(), pollfds.<a class="code" href="../../da/d4c/classxii_array_base.htm#a43100f93e19bb795ea0980dae2b28e0b">GetCount</a>(), -1);</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;      xiiInt32 result = poll(pollfds.<a class="code" href="../../da/d4c/classxii_array_base.htm#af72f1c85b6662559e15cf58c44117eae">GetData</a>(), pollfds.<a class="code" href="../../da/d4c/classxii_array_base.htm#a43100f93e19bb795ea0980dae2b28e0b">GetCount</a>(), -1);</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;      <span class="keywordflow">if</span> (result &gt; 0)</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;      {</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        <span class="comment">// Result at index 0 is special and means there was a WakeUp</span></div>
@@ -174,7 +174,7 @@ $(document).ready(function(){initNavTree('d6/d56/_process__posix_8h_source.htm',
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;            pollfds[i].revents               = 0;</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;            <span class="keywordflow">while</span> (<span class="keyword">true</span>)</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;            {</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;              ssize_t numBytes = read(stream.fd, buffer, XII_ARRAY_SIZE(buffer));</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;              ssize_t numBytes = read(stream.fd, szBuffer, XII_ARRAY_SIZE(szBuffer));</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;              <span class="keywordflow">if</span> (numBytes &lt; 0)</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;              {</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;                <span class="keywordflow">if</span> (errno == EWOULDBLOCK)</div>
@@ -189,8 +189,8 @@ $(document).ready(function(){initNavTree('d6/d56/_process__posix_8h_source.htm',
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;                <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;              }</div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160; </div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;              <span class="keyword">const</span> <span class="keywordtype">char</span>* szCurrentPos = buffer;</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;              <span class="keyword">const</span> <span class="keywordtype">char</span>* szEndPos     = buffer + numBytes;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;              <span class="keyword">const</span> <span class="keywordtype">char</span>* szCurrentPos = szBuffer;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;              <span class="keyword">const</span> <span class="keywordtype">char</span>* szEndPos     = szBuffer + numBytes;</div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;              <span class="keywordflow">while</span> (szCurrentPos &lt; szEndPos)</div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;              {</div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;                <span class="keyword">const</span> <span class="keywordtype">char</span>* szFound = <a class="code" href="../../df/d65/classxii_string_utils.htm#a0fa20e8fc3fdb98e0166ff5c1b6e83e8">xiiStringUtils::FindSubString</a>(szCurrentPos, <span class="stringliteral">&quot;\n&quot;</span>, szEndPos);</div>
@@ -198,7 +198,7 @@ $(document).ready(function(){initNavTree('d6/d56/_process__posix_8h_source.htm',
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;                {</div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;                  <span class="keywordflow">if</span> (overflowBuffer.<a class="code" href="../../d2/d29/structxii_string_base.htm#a52ad52604f0b98226a0342393b8db662">IsEmpty</a>())</div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;                  {</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;                    <span class="comment">// If there is nothing in the overflow buffer this is a complete line and can be fired as is.</span></div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;                    <span class="comment">// If there is nothing in the overflow buffer, this is a complete line and can be fired as is.</span></div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;                    stream.callback(<a class="code" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a>(szCurrentPos, szFound + 1));</div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;                  }</div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;                  <span class="keywordflow">else</span></div>
@@ -212,7 +212,7 @@ $(document).ready(function(){initNavTree('d6/d56/_process__posix_8h_source.htm',
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;                }</div>
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;                <span class="keywordflow">else</span></div>
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;                {</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;                  <span class="comment">// This is either the start or a middle segment of a line, append to overflow buffer.</span></div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;                  <span class="comment">// This is either the start or a middle segment of a line, append to overflow szBuffer.</span></div>
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;                  overflowBuffer.<a class="code" href="../../d4/dbb/classxii_string_builder.htm#aacd733a00453033fe245ff64350a0847">Append</a>(<a class="code" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a>(szCurrentPos, szEndPos));</div>
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;                  szCurrentPos = szEndPos;</div>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;                }</div>
@@ -243,7 +243,7 @@ $(document).ready(function(){initNavTree('d6/d56/_process__posix_8h_source.htm',
 <div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160; </div>
 <div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;  <a class="code" href="../../dd/dad/structxii_result.htm">xiiResult</a> StartStreamWatcher()</div>
 <div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;  {</div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    <span class="keywordtype">int</span> wakeupPipe[2] = {-1, -1};</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    xiiInt32 wakeupPipe[2] = {-1, -1};</div>
 <div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    <span class="keywordflow">if</span> (pipe(wakeupPipe) &lt; 0)</div>
 <div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    {</div>
 <div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;      <a class="code" href="../../d4/dc6/classxii_log.htm#a9312254ec6a5da7419b6e62163192464">xiiLog::Error</a>(<span class="stringliteral">&quot;Failed to setup wakeup pipe {}&quot;</span>, errno);</div>
@@ -285,16 +285,16 @@ $(document).ready(function(){initNavTree('d6/d56/_process__posix_8h_source.htm',
 <div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;    m_wakeupPipeWriteEnd = -1;</div>
 <div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;  }</div>
 <div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160; </div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;  <span class="keywordtype">void</span> AddStream(<span class="keywordtype">int</span> fd, <span class="keyword">const</span> <a class="code" href="../../dc/d84/structxii_delegate.htm">xiiDelegate</a>&lt;<span class="keywordtype">void</span>(<a class="code" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a>)&gt;&amp; callback)</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;  <span class="keywordtype">void</span> AddStream(xiiInt32 fd, <span class="keyword">const</span> <a class="code" href="../../dc/d84/structxii_delegate.htm">xiiDelegate</a>&lt;<span class="keywordtype">void</span>(<a class="code" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a>)&gt;&amp; callback)</div>
 <div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;  {</div>
 <div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;    m_streams.<a class="code" href="../../da/d4c/classxii_array_base.htm#a8b86f58a2097871da0e0b91eecc823e4">PushBack</a>({fd, callback});</div>
 <div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;    m_overflowBuffers.<a class="code" href="../../da/d4c/classxii_array_base.htm#aeb9f05e6229fcca31131a822a99bc1f9">SetCount</a>(m_streams.<a class="code" href="../../da/d4c/classxii_array_base.htm#a43100f93e19bb795ea0980dae2b28e0b">GetCount</a>());</div>
 <div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;  }</div>
 <div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160; </div>
-<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;  <span class="keyword">static</span> <a class="code" href="../../dd/dad/structxii_result.htm">xiiResult</a> StartChildProcess(<span class="keyword">const</span> xiiProcessOptions&amp; opt, pid_t&amp; outPid, <span class="keywordtype">bool</span> suspended, <span class="keywordtype">int</span>&amp; outStdOutFd, <span class="keywordtype">int</span>&amp; outStdErrFd)</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;  <span class="keyword">static</span> <a class="code" href="../../dd/dad/structxii_result.htm">xiiResult</a> StartChildProcess(<span class="keyword">const</span> xiiProcessOptions&amp; opt, pid_t&amp; outPid, <span class="keywordtype">bool</span> suspended, xiiInt32&amp; outStdOutFd, xiiInt32&amp; outStdErrFd)</div>
 <div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;  {</div>
-<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;    <span class="keywordtype">int</span> stdoutPipe[2] = {-1, -1};</div>
-<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;    <span class="keywordtype">int</span> stderrPipe[2] = {-1, -1};</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;    xiiInt32 stdoutPipe[2] = {-1, -1};</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;    xiiInt32 stderrPipe[2] = {-1, -1};</div>
 <div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160; </div>
 <div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;    <span class="keywordflow">if</span> (opt.m_onStdOut.IsValid())</div>
 <div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;    {</div>
@@ -331,20 +331,20 @@ $(document).ready(function(){initNavTree('d6/d56/_process__posix_8h_source.htm',
 <div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;      <span class="keywordflow">if</span> (opt.m_bHideConsoleWindow == <span class="keyword">true</span>)</div>
 <div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;      {</div>
 <div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;        <span class="comment">// Redirect STDIN to /dev/null</span></div>
-<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;        <span class="keywordtype">int</span> stdinReplace = open(<span class="stringliteral">&quot;/dev/null&quot;</span>, O_RDONLY);</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;        xiiInt32 stdinReplace = open(<span class="stringliteral">&quot;/dev/null&quot;</span>, O_RDONLY);</div>
 <div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;        dup2(stdinReplace, STDIN_FILENO);</div>
 <div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;        close(stdinReplace);</div>
 <div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160; </div>
 <div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;        <span class="keywordflow">if</span> (!opt.m_onStdOut.IsValid())</div>
 <div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;        {</div>
-<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;          <span class="keywordtype">int</span> stdoutReplace = open(<span class="stringliteral">&quot;/dev/null&quot;</span>, O_WRONLY);</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;          xiiInt32 stdoutReplace = open(<span class="stringliteral">&quot;/dev/null&quot;</span>, O_WRONLY);</div>
 <div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;          dup2(stdoutReplace, STDOUT_FILENO);</div>
 <div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;          close(stdoutReplace);</div>
 <div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;        }</div>
 <div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160; </div>
 <div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;        <span class="keywordflow">if</span> (!opt.m_onStdError.IsValid())</div>
 <div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;        {</div>
-<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;          <span class="keywordtype">int</span> stderrReplace = open(<span class="stringliteral">&quot;/dev/null&quot;</span>, O_WRONLY);</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;          xiiInt32 stderrReplace = open(<span class="stringliteral">&quot;/dev/null&quot;</span>, O_WRONLY);</div>
 <div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;          dup2(stderrReplace, STDERR_FILENO);</div>
 <div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;          close(stderrReplace);</div>
 <div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;        }</div>
@@ -432,9 +432,9 @@ $(document).ready(function(){initNavTree('d6/d56/_process__posix_8h_source.htm',
 <div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160; </div>
 <div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;<a class="code" href="../../dd/dad/structxii_result.htm">xiiResult</a> xiiProcess::Execute(<span class="keyword">const</span> xiiProcessOptions&amp; opt, xiiInt32* out_iExitCode <span class="comment">/*= nullptr*/</span>)</div>
 <div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;{</div>
-<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;  pid_t childPid = 0;</div>
-<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;  <span class="keywordtype">int</span>   stdoutFd = -1;</div>
-<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;  <span class="keywordtype">int</span>   stderrFd = -1;</div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;  pid_t    childPid = 0;</div>
+<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;  xiiInt32 stdoutFd = -1;</div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;  xiiInt32 stderrFd = -1;</div>
 <div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;  <span class="keywordflow">if</span> (xiiProcessImpl::StartChildProcess(opt, childPid, <span class="keyword">false</span>, stdoutFd, stderrFd).Failed())</div>
 <div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;  {</div>
 <div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;    <span class="keywordflow">return</span> XII_FAILURE;</div>
@@ -459,8 +459,8 @@ $(document).ready(function(){initNavTree('d6/d56/_process__posix_8h_source.htm',
 <div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;    }</div>
 <div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;  }</div>
 <div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160; </div>
-<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;  <span class="keywordtype">int</span>   childStatus = -1;</div>
-<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;  pid_t waitedPid   = waitpid(childPid, &amp;childStatus, 0);</div>
+<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;  xiiInt32 childStatus = -1;</div>
+<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;  pid_t    waitedPid   = waitpid(childPid, &amp;childStatus, 0);</div>
 <div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;  <span class="keywordflow">if</span> (waitedPid &lt; 0)</div>
 <div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;  {</div>
 <div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;    <span class="keywordflow">return</span> XII_FAILURE;</div>
@@ -483,8 +483,8 @@ $(document).ready(function(){initNavTree('d6/d56/_process__posix_8h_source.htm',
 <div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;{</div>
 <div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;  XII_ASSERT_DEV(m_pImpl-&gt;m_childPid == -1, <span class="stringliteral">&quot;Can not reuse an instance of xiiProcess&quot;</span>);</div>
 <div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160; </div>
-<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;  <span class="keywordtype">int</span> stdoutFd = -1;</div>
-<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;  <span class="keywordtype">int</span> stderrFd = -1;</div>
+<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;  xiiInt32 stdoutFd = -1;</div>
+<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;  xiiInt32 stderrFd = -1;</div>
 <div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160; </div>
 <div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;  <span class="keywordflow">if</span> (xiiProcessImpl::StartChildProcess(opt, m_pImpl-&gt;m_childPid, launchFlags.<a class="code" href="../../d7/d55/structxii_bitflags.htm#af2c990725fd731e800eeb6a22945003f">IsSet</a>(xiiProcessLaunchFlags::Suspended), stdoutFd, stderrFd).Failed())</div>
 <div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;  {</div>
@@ -537,7 +537,7 @@ $(document).ready(function(){initNavTree('d6/d56/_process__posix_8h_source.htm',
 <div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160; </div>
 <div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160;<a class="code" href="../../dd/dad/structxii_result.htm">xiiResult</a> xiiProcess::WaitToFinish(<a class="code" href="../../d7/dc1/structxii_time.htm">xiiTime</a> timeout <span class="comment">/*= xiiTime::Zero()*/</span>)</div>
 <div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160;{</div>
-<div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160;  <span class="keywordtype">int</span> childStatus = 0;</div>
+<div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160;  xiiInt32 childStatus = 0;</div>
 <div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;  XII_SCOPE_EXIT(m_pImpl-&gt;StopStreamWatcher());</div>
 <div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160; </div>
 <div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160;  <span class="keywordflow">if</span> (timeout.<a class="code" href="../../d7/dc1/structxii_time.htm#a0c6420bf3eee91dbe57bfd09ed62e62e">IsZero</a>())</div>
@@ -549,8 +549,8 @@ $(document).ready(function(){initNavTree('d6/d56/_process__posix_8h_source.htm',
 <div class="line"><a name="l00460"></a><span class="lineno">  460</span>&#160;  }</div>
 <div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160;  <span class="keywordflow">else</span></div>
 <div class="line"><a name="l00462"></a><span class="lineno">  462</span>&#160;  {</div>
-<div class="line"><a name="l00463"></a><span class="lineno">  463</span>&#160;    <span class="keywordtype">int</span>     waitResult = 0;</div>
-<div class="line"><a name="l00464"></a><span class="lineno">  464</span>&#160;    <a class="code" href="../../d7/dc1/structxii_time.htm">xiiTime</a> startWait  = <a class="code" href="../../d7/dc1/structxii_time.htm#a62c41574df46e952d657c3b678f3705b">xiiTime::Now</a>();</div>
+<div class="line"><a name="l00463"></a><span class="lineno">  463</span>&#160;    xiiInt32 waitResult = 0;</div>
+<div class="line"><a name="l00464"></a><span class="lineno">  464</span>&#160;    <a class="code" href="../../d7/dc1/structxii_time.htm">xiiTime</a>  startWait  = <a class="code" href="../../d7/dc1/structxii_time.htm#a62c41574df46e952d657c3b678f3705b">xiiTime::Now</a>();</div>
 <div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160;    <span class="keywordflow">while</span> (<span class="keyword">true</span>)</div>
 <div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160;    {</div>
 <div class="line"><a name="l00467"></a><span class="lineno">  467</span>&#160;      waitResult = waitpid(m_pImpl-&gt;m_childPid, &amp;childStatus, WNOHANG);</div>
@@ -618,8 +618,8 @@ $(document).ready(function(){initNavTree('d6/d56/_process__posix_8h_source.htm',
 <div class="line"><a name="l00529"></a><span class="lineno">  529</span>&#160;    <span class="keywordflow">return</span> xiiProcessState::Finished;</div>
 <div class="line"><a name="l00530"></a><span class="lineno">  530</span>&#160;  }</div>
 <div class="line"><a name="l00531"></a><span class="lineno">  531</span>&#160; </div>
-<div class="line"><a name="l00532"></a><span class="lineno">  532</span>&#160;  <span class="keywordtype">int</span> childStatus = -1;</div>
-<div class="line"><a name="l00533"></a><span class="lineno">  533</span>&#160;  <span class="keywordtype">int</span> waitResult  = waitpid(m_pImpl-&gt;m_childPid, &amp;childStatus, WNOHANG);</div>
+<div class="line"><a name="l00532"></a><span class="lineno">  532</span>&#160;  xiiInt32 childStatus = -1;</div>
+<div class="line"><a name="l00533"></a><span class="lineno">  533</span>&#160;  xiiInt32 waitResult  = waitpid(m_pImpl-&gt;m_childPid, &amp;childStatus, WNOHANG);</div>
 <div class="line"><a name="l00534"></a><span class="lineno">  534</span>&#160;  <span class="keywordflow">if</span> (waitResult &gt; 0)</div>
 <div class="line"><a name="l00535"></a><span class="lineno">  535</span>&#160;  {</div>
 <div class="line"><a name="l00536"></a><span class="lineno">  536</span>&#160;    m_iExitCode                  = WEXITSTATUS(childStatus);</div>
@@ -656,9 +656,9 @@ $(document).ready(function(){initNavTree('d6/d56/_process__posix_8h_source.htm',
 <div class="line"><a name="l00567"></a><span class="lineno">  567</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclassxii_array_base_htm_a8b86f58a2097871da0e0b91eecc823e4"><div class="ttname"><a href="../../da/d4c/classxii_array_base.htm#a8b86f58a2097871da0e0b91eecc823e4">xiiArrayBase&lt; T, xiiDynamicArrayBase&lt; T &gt; &gt;::PushBack</a></div><div class="ttdeci">void PushBack(const T &amp;value)</div><div class="ttdoc">Pushes value at the end of the array.</div><div class="ttdef"><b>Definition:</b> ArrayBase_inl.h:326</div></div>
-<div class="ttc" id="aclassxii_array_base_htm_af72f1c85b6662559e15cf58c44117eae"><div class="ttname"><a href="../../da/d4c/classxii_array_base.htm#af72f1c85b6662559e15cf58c44117eae">xiiArrayBase&lt; T, xiiDynamicArrayBase&lt; T &gt; &gt;::GetData</a></div><div class="ttdeci">T * GetData()</div><div class="ttdoc">Returns a pointer to the array data, or nullptr if the array is empty.</div><div class="ttdef"><b>Definition:</b> ArrayBase_inl.h:416</div></div>
-<div class="ttc" id="aclassxii_o_s_thread_htm_a2ee60bbb38a34f6ed88b3842defe9b3f"><div class="ttname"><a href="../../d6/db1/classxii_o_s_thread.htm#a2ee60bbb38a34f6ed88b3842defe9b3f">xiiOSThread::Join</a></div><div class="ttdeci">void Join()</div><div class="ttdoc">Waits in the calling thread until the thread has finished execution (e.g. returned from the thread fu...</div><div class="ttdef"><b>Definition:</b> OSThread_posix.h:66</div></div>
+<div class="ttc" id="aclassxii_array_base_htm_a8b86f58a2097871da0e0b91eecc823e4"><div class="ttname"><a href="../../da/d4c/classxii_array_base.htm#a8b86f58a2097871da0e0b91eecc823e4">xiiArrayBase&lt; T, xiiDynamicArrayBase&lt; T &gt; &gt;::PushBack</a></div><div class="ttdeci">void PushBack(const T &amp;value)</div><div class="ttdoc">Pushes value at the end of the array.</div><div class="ttdef"><b>Definition:</b> ArrayBase_inl.h:323</div></div>
+<div class="ttc" id="aclassxii_array_base_htm_af72f1c85b6662559e15cf58c44117eae"><div class="ttname"><a href="../../da/d4c/classxii_array_base.htm#af72f1c85b6662559e15cf58c44117eae">xiiArrayBase&lt; T, xiiDynamicArrayBase&lt; T &gt; &gt;::GetData</a></div><div class="ttdeci">T * GetData()</div><div class="ttdoc">Returns a pointer to the array data, or nullptr if the array is empty.</div><div class="ttdef"><b>Definition:</b> ArrayBase_inl.h:413</div></div>
+<div class="ttc" id="aclassxii_o_s_thread_htm_a2ee60bbb38a34f6ed88b3842defe9b3f"><div class="ttname"><a href="../../d6/db1/classxii_o_s_thread.htm#a2ee60bbb38a34f6ed88b3842defe9b3f">xiiOSThread::Join</a></div><div class="ttdeci">void Join()</div><div class="ttdoc">Waits in the calling thread until the thread has finished execution (e.g. returned from the thread fu...</div><div class="ttdef"><b>Definition:</b> OSThread_posix.h:62</div></div>
 <div class="ttc" id="astructxii_time_htm_a62c41574df46e952d657c3b678f3705b"><div class="ttname"><a href="../../d7/dc1/structxii_time.htm#a62c41574df46e952d657c3b678f3705b">xiiTime::Now</a></div><div class="ttdeci">static xiiTime Now()</div><div class="ttdoc">Gets the current time.</div><div class="ttdef"><b>Definition:</b> Time_osx.h:17</div></div>
 <div class="ttc" id="astructxii_delegate_htm"><div class="ttname"><a href="../../dc/d84/structxii_delegate.htm">xiiDelegate</a></div><div class="ttdoc">A generic delegate class which supports static functions and member functions.</div><div class="ttdef"><b>Definition:</b> Delegate.h:75</div></div>
 <div class="ttc" id="aclassxii_string_utils_htm_a0fa20e8fc3fdb98e0166ff5c1b6e83e8"><div class="ttname"><a href="../../df/d65/classxii_string_utils.htm#a0fa20e8fc3fdb98e0166ff5c1b6e83e8">xiiStringUtils::FindSubString</a></div><div class="ttdeci">static const char * FindSubString(const char *szSource, const char *szStringToFind, const char *pSourceEnd=xiiUnicodeUtils::GetMaxStringEnd&lt; char &gt;(), const char *szStringToFindEnd=xiiUnicodeUtils::GetMaxStringEnd&lt; char &gt;())</div><div class="ttdoc">Searches for the first occurrence of szStringToFind in szSource.</div><div class="ttdef"><b>Definition:</b> StringUtils.cpp:612</div></div>
@@ -666,16 +666,16 @@ $(document).ready(function(){initNavTree('d6/d56/_process__posix_8h_source.htm',
 <div class="ttc" id="astructxii_string_base_htm_a52ad52604f0b98226a0342393b8db662"><div class="ttname"><a href="../../d2/d29/structxii_string_base.htm#a52ad52604f0b98226a0342393b8db662">xiiStringBase::IsEmpty</a></div><div class="ttdeci">bool IsEmpty() const</div><div class="ttdoc">Returns whether the string is an empty string.</div><div class="ttdef"><b>Definition:</b> StringBase_inl.h:25</div></div>
 <div class="ttc" id="aclassxii_log_htm_a9312254ec6a5da7419b6e62163192464"><div class="ttname"><a href="../../d4/dc6/classxii_log.htm#a9312254ec6a5da7419b6e62163192464">xiiLog::Error</a></div><div class="ttdeci">static void Error(xiiLogInterface *pInterface, const xiiFormatString &amp;string)</div><div class="ttdoc">An error that needs to be fixed as soon as possible.</div><div class="ttdef"><b>Definition:</b> Log.cpp:362</div></div>
 <div class="ttc" id="astructxii_time_htm"><div class="ttname"><a href="../../d7/dc1/structxii_time.htm">xiiTime</a></div><div class="ttdoc">The time class encapsulates a double value storing the time in seconds.</div><div class="ttdef"><b>Definition:</b> Time.h:11</div></div>
-<div class="ttc" id="astructxii_hybrid_string_htm"><div class="ttname"><a href="../../df/dfb/structxii_hybrid_string.htm">xiiHybridString&lt; 32, xiiDefaultAllocatorWrapper &gt;</a></div></div>
+<div class="ttc" id="astructxii_hybrid_string_htm"><div class="ttname"><a href="../../df/dfb/structxii_hybrid_string.htm">xiiHybridString</a></div><div class="ttdef"><b>Definition:</b> Stream.h:16</div></div>
 <div class="ttc" id="aclassxii_hybrid_array_htm"><div class="ttname"><a href="../../dc/da9/classxii_hybrid_array.htm">xiiHybridArray</a></div><div class="ttdoc">A hybrid array uses in-place storage to handle the first few elements without any allocation....</div><div class="ttdef"><b>Definition:</b> HybridArray.h:11</div></div>
 <div class="ttc" id="astructxii_string_view_htm"><div class="ttname"><a href="../../da/d9d/structxii_string_view.htm">xiiStringView</a></div><div class="ttdoc">xiiStringView represent a read-only sub-string of a larger string, as it can store a dedicated string...</div><div class="ttdef"><b>Definition:</b> StringView.h:23</div></div>
 <div class="ttc" id="astructxii_time_htm_a350c072ea062ba8ed19357dac5047955"><div class="ttname"><a href="../../d7/dc1/structxii_time.htm#a350c072ea062ba8ed19357dac5047955">xiiTime::Milliseconds</a></div><div class="ttdeci">constexpr static XII_ALWAYS_INLINE xiiTime Milliseconds(double fMilliseconds)</div><div class="ttdoc">Creates an instance of xiiTime that was initialized from milliseconds.</div><div class="ttdef"><b>Definition:</b> Time.h:24</div></div>
-<div class="ttc" id="aclassxii_array_base_htm_a43100f93e19bb795ea0980dae2b28e0b"><div class="ttname"><a href="../../da/d4c/classxii_array_base.htm#a43100f93e19bb795ea0980dae2b28e0b">xiiArrayBase&lt; T, xiiDynamicArrayBase&lt; T &gt; &gt;::GetCount</a></div><div class="ttdeci">xiiUInt32 GetCount() const</div><div class="ttdoc">Returns the number of active elements in the array.</div><div class="ttdef"><b>Definition:</b> ArrayBase_inl.h:165</div></div>
+<div class="ttc" id="aclassxii_array_base_htm_a43100f93e19bb795ea0980dae2b28e0b"><div class="ttname"><a href="../../da/d4c/classxii_array_base.htm#a43100f93e19bb795ea0980dae2b28e0b">xiiArrayBase&lt; T, xiiDynamicArrayBase&lt; T &gt; &gt;::GetCount</a></div><div class="ttdeci">xiiUInt32 GetCount() const</div><div class="ttdoc">Returns the number of active elements in the array.</div><div class="ttdef"><b>Definition:</b> ArrayBase_inl.h:162</div></div>
 <div class="ttc" id="aclassxii_log_htm_a67477f0993da4b2f7b6fcdf86bf3d134"><div class="ttname"><a href="../../d4/dc6/classxii_log.htm#a67477f0993da4b2f7b6fcdf86bf3d134">xiiLog::Dev</a></div><div class="ttdeci">static void Dev(xiiLogInterface *pInterface, const xiiFormatString &amp;string)</div><div class="ttdoc">Status information that is nice to have during development.</div></div>
 <div class="ttc" id="astructxii_process_impl_htm"><div class="ttname"><a href="../../da/d24/structxii_process_impl.htm">xiiProcessImpl</a></div><div class="ttdef"><b>Definition:</b> Process_posix.h:32</div></div>
 <div class="ttc" id="aclassxii_o_s_thread_htm"><div class="ttname"><a href="../../d6/db1/classxii_o_s_thread.htm">xiiOSThread</a></div><div class="ttdoc">Implementation of a thread.</div><div class="ttdef"><b>Definition:</b> OSThread.h:11</div></div>
 <div class="ttc" id="aclassxii_thread_utils_htm_aab9b6ec6e0dd99a7b55f2bca67d17263"><div class="ttname"><a href="../../d4/d5c/classxii_thread_utils.htm#aab9b6ec6e0dd99a7b55f2bca67d17263">xiiThreadUtils::Sleep</a></div><div class="ttdeci">static void Sleep(const xiiTime &amp;duration)</div><div class="ttdoc">Suspends the execution of the current thread for the given amount of time. (Precision may vary accord...</div><div class="ttdef"><b>Definition:</b> ThreadUtils_posix.h:25</div></div>
-<div class="ttc" id="aclassxii_o_s_thread_htm_a9fbb6bcdde566264da1d8e10bb62b887"><div class="ttname"><a href="../../d6/db1/classxii_o_s_thread.htm#a9fbb6bcdde566264da1d8e10bb62b887">xiiOSThread::Start</a></div><div class="ttdeci">void Start()</div><div class="ttdoc">Starts the thread.</div><div class="ttdef"><b>Definition:</b> OSThread_posix.h:30</div></div>
+<div class="ttc" id="aclassxii_o_s_thread_htm_a9fbb6bcdde566264da1d8e10bb62b887"><div class="ttname"><a href="../../d6/db1/classxii_o_s_thread.htm#a9fbb6bcdde566264da1d8e10bb62b887">xiiOSThread::Start</a></div><div class="ttdeci">void Start()</div><div class="ttdoc">Starts the thread.</div><div class="ttdef"><b>Definition:</b> OSThread_posix.h:26</div></div>
 <div class="ttc" id="aclassxii_dynamic_array_htm"><div class="ttname"><a href="../../dc/da4/classxii_dynamic_array.htm">xiiDynamicArray&lt; xiiStringBuilder &gt;</a></div></div>
 <div class="ttc" id="aclassxii_unique_ptr_htm"><div class="ttname"><a href="../../d9/d4a/classxii_unique_ptr.htm">xiiUniquePtr&lt; xiiOSThread &gt;</a></div></div>
 <div class="ttc" id="astructxii_result_htm"><div class="ttname"><a href="../../dd/dad/structxii_result.htm">xiiResult</a></div><div class="ttdoc">Default enum for returning failure or success, instead of using a bool.</div><div class="ttdef"><b>Definition:</b> Types.h:54</div></div>
@@ -691,7 +691,7 @@ $(document).ready(function(){initNavTree('d6/d56/_process__posix_8h_source.htm',
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.htm">home</a></li><li class="navelem"><a class="el" href="../../dir_1036706e55c22cab35bc1c58ee689f1d.htm">runner</a></li><li class="navelem"><a class="el" href="../../dir_629f8151d55d307162ff2d619fb1783d.htm">work</a></li><li class="navelem"><a class="el" href="../../dir_1ddc44fe1263a8c7935fa6130b7d9499.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_2c1b6808f12952f4c36e05ba7068379a.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_b5a1c4ecfca018ad24b729e213296d41.htm">Source</a></li><li class="navelem"><a class="el" href="../../dir_e321052006a51284e67389ab20037e7c.htm">Engine</a></li><li class="navelem"><a class="el" href="../../dir_be0c42c58b36f42c54ec54024ed4f6af.htm">Foundation</a></li><li class="navelem"><a class="el" href="../../dir_93ea1dc105d79df7757252ae41d4400e.htm">System</a></li><li class="navelem"><a class="el" href="../../dir_f794a5464cdd7c796ca802b0cf288ca7.htm">Implementation</a></li><li class="navelem"><a class="el" href="../../dir_b342b897904f051269c296e3c59158c5.htm">Posix</a></li><li class="navelem"><b>Process_posix.h</b></li>
-    <li class="footer">Generated on Mon Jul 10 2023 23:02:50 for XIIEngine by
+    <li class="footer">Generated on Sat Aug 5 2023 14:55:10 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

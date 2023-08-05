@@ -12,5 +12,5 @@ var classxii_qt_property_grid_widget =
     [ "SetCollapseState", "d5/df1/classxii_qt_property_grid_widget.htm#a39304bcf8b1988e9efd7d60dd64fb65d", null ],
     [ "SetDocument", "d5/df1/classxii_qt_property_grid_widget.htm#a3f984b19c16dc450308144c8fc25630f", null ],
     [ "SetSelection", "d5/df1/classxii_qt_property_grid_widget.htm#a1a6d2e1dc39aa404e27ed084124d321c", null ],
-    [ "SetSelectionIncludeExcludeProperties", "d5/df1/classxii_qt_property_grid_widget.htm#a1267945ab988764fc8e1719db44f4c0e", null ]
+    [ "SetSelectionIncludeExcludeProperties", "d5/df1/classxii_qt_property_grid_widget.htm#aa3a7d066fe77000a22724cea017c3d66", null ]
 ];

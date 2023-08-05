@@ -4,7 +4,7 @@ var classxii_application =
       [ "Continue", "dd/d2b/classxii_application.htm#a15434b0054b5c87809df19e488693370aa0bfb8e59e6c13fc8d990781f77694fe", null ],
       [ "Quit", "dd/d2b/classxii_application.htm#a15434b0054b5c87809df19e488693370a0d82790b0612935992bd564a17ce37d6", null ]
     ] ],
-    [ "xiiApplication", "dd/d2b/classxii_application.htm#afce692a4d5b86a932951f0bc7f44a3a3", null ],
+    [ "xiiApplication", "dd/d2b/classxii_application.htm#a92765f1c00de63915482f750e0882437", null ],
     [ "~xiiApplication", "dd/d2b/classxii_application.htm#aa7b2aafeefdcdcc43549a96b516fe7c1", null ],
     [ "AfterCoreSystemsShutdown", "dd/d2b/classxii_application.htm#a4192dfd474d1e3a6361bd851e0c8ed08", null ],
     [ "AfterCoreSystemsStartup", "dd/d2b/classxii_application.htm#a5d424fee5b31f4a58bb0cf255317b0a1", null ],
@@ -23,7 +23,7 @@ var classxii_application =
     [ "IsMemoryLeakReportingEnabled", "dd/d2b/classxii_application.htm#ab7042572cd46f4c762de393771442570", null ],
     [ "RequestQuit", "dd/d2b/classxii_application.htm#a426c3434af987f8310759eb5b8aaa475", null ],
     [ "Run", "dd/d2b/classxii_application.htm#add6d74803256b335b6765297248775f6", null ],
-    [ "SetApplicationName", "dd/d2b/classxii_application.htm#aee72be58821b1dde57155de5d346d264", null ],
+    [ "SetApplicationName", "dd/d2b/classxii_application.htm#af3d94c01e34396ba47f294f0449b850b", null ],
     [ "SetCommandLineArguments", "dd/d2b/classxii_application.htm#ad991d929e2271ad91c5d8cc7905f3c4c", null ],
     [ "SetReturnCode", "dd/d2b/classxii_application.htm#a1df98d9182653abafa3eac1d938d3764", null ],
     [ "TranslateReturnCode", "dd/d2b/classxii_application.htm#a68fa040cbc14b6cfe03825976ec4be04", null ],

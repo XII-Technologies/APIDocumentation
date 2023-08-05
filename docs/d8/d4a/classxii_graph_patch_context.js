@@ -1,8 +1,8 @@
 var classxii_graph_patch_context =
 [
     [ "ChangeBaseClass", "d8/d4a/classxii_graph_patch_context.htm#a3a0ab6ad022d24a33cf26147b0517cdd", null ],
-    [ "PatchBaseClass", "d8/d4a/classxii_graph_patch_context.htm#af83182abc6320438e4ffed50e1f71e6f", null ],
-    [ "RenameClass", "d8/d4a/classxii_graph_patch_context.htm#a47fca6c5d5e3f5c403714912a10a9daf", null ],
-    [ "RenameClass", "d8/d4a/classxii_graph_patch_context.htm#add1c699da8613858cbc5e6792fbf92ef", null ],
+    [ "PatchBaseClass", "d8/d4a/classxii_graph_patch_context.htm#af5621f7cf4e22e4a69700909263bcfd4", null ],
+    [ "RenameClass", "d8/d4a/classxii_graph_patch_context.htm#ac979729bf09264c37363d114576fb10f", null ],
+    [ "RenameClass", "d8/d4a/classxii_graph_patch_context.htm#a820126ec3ddf6e0417d991f1e5a399f0", null ],
     [ "xiiGraphVersioning", "d8/d4a/classxii_graph_patch_context.htm#adacb294bacd0f212807b291e28e3860b", null ]
 ];

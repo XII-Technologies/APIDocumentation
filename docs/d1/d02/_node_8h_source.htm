@@ -103,8 +103,8 @@ $(document).ready(function(){initNavTree('d1/d02/_node_8h_source.htm','../../');
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">class </span><a class="code" href="../../db/d55/classxii_document_node_manager.htm">xiiDocumentNodeManager</a>;</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">class </span>QLabel;</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">class </span><a class="code" href="../../da/dd8/classxii_document_object.htm">xiiDocumentObject</a>;</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">class </span>QGraphicsGridLayout;</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">class </span>QGraphicsTextItem;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">class </span>QGraphicsTextItem;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">class </span>QGraphicsPixmapItem;</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">class </span>QGraphicsDropShadowEffect;</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
 <div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="../../d7/d79/structxii_node_flags.htm">   21</a></span>&#160;<span class="keyword">struct </span><a class="code" href="../../d7/d79/structxii_node_flags.htm">xiiNodeFlags</a></div>
@@ -160,24 +160,25 @@ $(document).ready(function(){initNavTree('d1/d02/_node_8h_source.htm','../../');
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span>     paint(QPainter* painter, <span class="keyword">const</span> QStyleOptionGraphicsItem* option, QWidget* widget) <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  <span class="keyword">virtual</span> QVariant itemChange(GraphicsItemChange change, <span class="keyword">const</span> QVariant&amp; value) <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  QColor             m_HeaderColor;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  QRectF             m_HeaderRect;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  QGraphicsTextItem* m_pTitleLabel    = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  QGraphicsTextItem* m_pSubtitleLabel = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  <span class="keyword">const</span> <a class="code" href="../../db/d55/classxii_document_node_manager.htm">xiiDocumentNodeManager</a>* m_pManager = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  <span class="keyword">const</span> <a class="code" href="../../da/dd8/classxii_document_object.htm">xiiDocumentObject</a>*      m_pObject  = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  <a class="code" href="../../d7/d55/structxii_bitflags.htm">xiiBitflags&lt;xiiNodeFlags&gt;</a>     m_DirtyFlags;</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  <span class="keywordtype">bool</span> m_bIsActive = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  QGraphicsDropShadowEffect* m_pShadow = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  <span class="comment">// Pins</span></div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  <a class="code" href="../../dc/da9/classxii_hybrid_array.htm">xiiHybridArray&lt;xiiQtPin*, 6&gt;</a> m_Inputs;</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  <a class="code" href="../../dc/da9/classxii_hybrid_array.htm">xiiHybridArray&lt;xiiQtPin*, 6&gt;</a> m_Outputs;</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;};</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  QColor               m_HeaderColor;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  QRectF               m_HeaderRect;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  QGraphicsTextItem*   m_pTitleLabel    = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  QGraphicsTextItem*   m_pSubtitleLabel = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  QGraphicsPixmapItem* m_pIcon          = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  <span class="keyword">const</span> <a class="code" href="../../db/d55/classxii_document_node_manager.htm">xiiDocumentNodeManager</a>* m_pManager = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  <span class="keyword">const</span> <a class="code" href="../../da/dd8/classxii_document_object.htm">xiiDocumentObject</a>*      m_pObject  = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  <a class="code" href="../../d7/d55/structxii_bitflags.htm">xiiBitflags&lt;xiiNodeFlags&gt;</a>     m_DirtyFlags;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  <span class="keywordtype">bool</span> m_bIsActive = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  QGraphicsDropShadowEffect* m_pShadow = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  <span class="comment">// Pins</span></div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  <a class="code" href="../../dc/da9/classxii_hybrid_array.htm">xiiHybridArray&lt;xiiQtPin*, 6&gt;</a> m_Inputs;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  <a class="code" href="../../dc/da9/classxii_hybrid_array.htm">xiiHybridArray&lt;xiiQtPin*, 6&gt;</a> m_Outputs;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;};</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclassxii_document_node_manager_htm"><div class="ttname"><a href="../../db/d55/classxii_document_node_manager.htm">xiiDocumentNodeManager</a></div><div class="ttdef"><b>Definition:</b> DocumentNodeManager.h:96</div></div>
@@ -193,7 +194,7 @@ $(document).ready(function(){initNavTree('d1/d02/_node_8h_source.htm','../../');
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.htm">home</a></li><li class="navelem"><a class="el" href="../../dir_1036706e55c22cab35bc1c58ee689f1d.htm">runner</a></li><li class="navelem"><a class="el" href="../../dir_629f8151d55d307162ff2d619fb1783d.htm">work</a></li><li class="navelem"><a class="el" href="../../dir_1ddc44fe1263a8c7935fa6130b7d9499.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_2c1b6808f12952f4c36e05ba7068379a.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_b5a1c4ecfca018ad24b729e213296d41.htm">Source</a></li><li class="navelem"><a class="el" href="../../dir_64f53f8da7bf780a58c32bb848e7873b.htm">Tools</a></li><li class="navelem"><a class="el" href="../../dir_4b5bc41f7c4cbfc8ca80bdea56300f1d.htm">Libs</a></li><li class="navelem"><a class="el" href="../../dir_8694d7149aa3c4cbc4b219c953b250c5.htm">GuiFoundation</a></li><li class="navelem"><a class="el" href="../../dir_0f5f6c22411ef9d75f22a821e4a3311f.htm">NodeEditor</a></li><li class="navelem"><b>Node.h</b></li>
-    <li class="footer">Generated on Mon Jul 10 2023 23:02:53 for XIIEngine by
+    <li class="footer">Generated on Sat Aug 5 2023 14:55:11 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

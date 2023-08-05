@@ -17,6 +17,7 @@ var classxii_qt_node_scene =
     [ "GetConnectionStyle", "de/d5e/classxii_qt_node_scene.htm#a89e3c7af56cc14f3aaa5abac5e4b8512", null ],
     [ "GetDocument", "de/d5e/classxii_qt_node_scene.htm#af9e429f84e40ef60dc4968be3e5065e3", null ],
     [ "GetDocumentNodeManager", "de/d5e/classxii_qt_node_scene.htm#aa15db6ecbffd67297f007dd231dcdf3b", null ],
+    [ "InitScene", "de/d5e/classxii_qt_node_scene.htm#aeb5824378af91b7d3e5fd7012270b6e4", null ],
     [ "keyPressEvent", "de/d5e/classxii_qt_node_scene.htm#ac6833d996054485d6826ac43141ed44c", null ],
     [ "mouseMoveEvent", "de/d5e/classxii_qt_node_scene.htm#a70ef842eacb9c907ebb35060945527a5", null ],
     [ "mousePressEvent", "de/d5e/classxii_qt_node_scene.htm#a76170484a00a10225055a188713a9e37", null ],
@@ -25,7 +26,6 @@ var classxii_qt_node_scene =
     [ "RemoveSelectedNodesAction", "de/d5e/classxii_qt_node_scene.htm#a90d4d7cd613a7b5040c6e9c99a296f63", null ],
     [ "SetConnectionDecorationFlags", "de/d5e/classxii_qt_node_scene.htm#ae32f088587559f7a8392e9f8df84facf", null ],
     [ "SetConnectionStyle", "de/d5e/classxii_qt_node_scene.htm#a9c8a49473b0a3d0e6bcc189c1eb91a16", null ],
-    [ "SetDocumentNodeManager", "de/d5e/classxii_qt_node_scene.htm#ac4ff45f3dba120fc40bbb36f5e3f4b28", null ],
     [ "m_Connections", "de/d5e/classxii_qt_node_scene.htm#a6f67f6787ea7217de4c08c7cdcd9a1f8", null ],
     [ "m_Nodes", "de/d5e/classxii_qt_node_scene.htm#a58f4f79a54c55ca488bafb0ffbbb2906", null ],
     [ "m_pManager", "de/d5e/classxii_qt_node_scene.htm#af995d35d80d3027a1b905704035bbef4", null ]

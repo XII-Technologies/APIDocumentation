@@ -7,10 +7,10 @@ var structiterator__base =
     [ "operator*", "db/d66/structiterator__base.htm#a4be2bea22fd4107ec24ddabd387f604e", null ],
     [ "operator+", "db/d66/structiterator__base.htm#a284cb860f61068422d2ede552179c9b0", null ],
     [ "operator++", "db/d66/structiterator__base.htm#aac740d436072e9059f9b0de10c3f02dc", null ],
-    [ "operator++", "db/d66/structiterator__base.htm#ab5a2aec2abbc38e3c7717d1c4cdbd30f", null ],
+    [ "operator++", "db/d66/structiterator__base.htm#afde771ed4eaae2d2a1c9b536734596bf", null ],
     [ "operator-", "db/d66/structiterator__base.htm#aee844b25469ac0e075065ba710c37d98", null ],
     [ "operator--", "db/d66/structiterator__base.htm#a75816f79ed3277d5876a6393505de002", null ],
-    [ "operator--", "db/d66/structiterator__base.htm#ae980a197737c6a2a7402ee9abf71852c", null ],
+    [ "operator--", "db/d66/structiterator__base.htm#a97f8cc9830bf492fafdab8a88c67d186", null ],
     [ "operator->", "db/d66/structiterator__base.htm#a02b4a56ac4e1138a385d32593b2eded1", null ],
     [ "operator[]", "db/d66/structiterator__base.htm#a096234ad8ac6afad209aa857d4eae57a", null ]
 ];

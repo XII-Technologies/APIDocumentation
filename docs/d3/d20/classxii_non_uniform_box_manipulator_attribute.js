@@ -1,8 +1,8 @@
 var classxii_non_uniform_box_manipulator_attribute =
 [
     [ "xiiNonUniformBoxManipulatorAttribute", "d3/d20/classxii_non_uniform_box_manipulator_attribute.htm#ac9708273430b32b5b9761dc30e628e25", null ],
-    [ "xiiNonUniformBoxManipulatorAttribute", "d3/d20/classxii_non_uniform_box_manipulator_attribute.htm#afde52006c98158dba9cb3ece4f28bce6", null ],
-    [ "xiiNonUniformBoxManipulatorAttribute", "d3/d20/classxii_non_uniform_box_manipulator_attribute.htm#aa02c52aaec23965cba71ba20021d9101", null ],
+    [ "xiiNonUniformBoxManipulatorAttribute", "d3/d20/classxii_non_uniform_box_manipulator_attribute.htm#a2a2cc62dded36b97f25375aa851cca40", null ],
+    [ "xiiNonUniformBoxManipulatorAttribute", "d3/d20/classxii_non_uniform_box_manipulator_attribute.htm#a9eb36ad968f5e16b6044b27726b88e14", null ],
     [ "GetNegXProperty", "d3/d20/classxii_non_uniform_box_manipulator_attribute.htm#a64003433600ae4ad67db1508994da366", null ],
     [ "GetNegYProperty", "d3/d20/classxii_non_uniform_box_manipulator_attribute.htm#aa2c19b14ae42679a1601f3ce451344b8", null ],
     [ "GetNegZProperty", "d3/d20/classxii_non_uniform_box_manipulator_attribute.htm#a32b0dadcfbe006197503a4f028b5fee9", null ],

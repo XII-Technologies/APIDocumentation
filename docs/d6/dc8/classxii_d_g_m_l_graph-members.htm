@@ -90,12 +90,12 @@ $(document).ready(function(){initNavTree('d1/d8e/classxii_d_g_m_l_graph.htm','..
 
 <p>This is the complete list of members for <a class="el" href="../../d1/d8e/classxii_d_g_m_l_graph.htm">xiiDGMLGraph</a>, including all inherited members.</p>
 <table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="../../d1/d8e/classxii_d_g_m_l_graph.htm#af246978cc97a965e4c582a2bfb69faa4">AddConnection</a>(NodeId source, NodeId target, const char *szLabel=nullptr)</td><td class="entry"><a class="el" href="../../d1/d8e/classxii_d_g_m_l_graph.htm">xiiDGMLGraph</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="../../d1/d8e/classxii_d_g_m_l_graph.htm#a06eec43be360801695bfe9b847136cc2">AddGroup</a>(const char *szTitle, GroupType type, const NodeDesc *pDesc=nullptr)</td><td class="entry"><a class="el" href="../../d1/d8e/classxii_d_g_m_l_graph.htm">xiiDGMLGraph</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="../../d1/d8e/classxii_d_g_m_l_graph.htm#a219ea04c6230fb922b4273d137bdd26c">AddNode</a>(const char *szTitle, const NodeDesc *pDesc=nullptr)</td><td class="entry"><a class="el" href="../../d1/d8e/classxii_d_g_m_l_graph.htm">xiiDGMLGraph</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="../../d1/d8e/classxii_d_g_m_l_graph.htm#ae1ec80ef54e0e637969a8f53f410b95e">AddConnection</a>(NodeId source, NodeId target, xiiStringView sLabel={})</td><td class="entry"><a class="el" href="../../d1/d8e/classxii_d_g_m_l_graph.htm">xiiDGMLGraph</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="../../d1/d8e/classxii_d_g_m_l_graph.htm#abb006c0f4d9a6051addf60c129aa9fcb">AddGroup</a>(xiiStringView sTitle, GroupType type, const NodeDesc *pDesc=nullptr)</td><td class="entry"><a class="el" href="../../d1/d8e/classxii_d_g_m_l_graph.htm">xiiDGMLGraph</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="../../d1/d8e/classxii_d_g_m_l_graph.htm#a0a64025984fb7ab980ada75394037ea5">AddNode</a>(xiiStringView sTitle, const NodeDesc *pDesc=nullptr)</td><td class="entry"><a class="el" href="../../d1/d8e/classxii_d_g_m_l_graph.htm">xiiDGMLGraph</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="../../d1/d8e/classxii_d_g_m_l_graph.htm#a3633a0fe9297573c7cd51300661944ad">AddNodeProperty</a>(NodeId node, PropertyId property, const xiiFormatString &amp;fmt)</td><td class="entry"><a class="el" href="../../d1/d8e/classxii_d_g_m_l_graph.htm">xiiDGMLGraph</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="../../d1/d8e/classxii_d_g_m_l_graph.htm#a65e38d4cbd37f8e8458a461f8f019432">AddNodeToGroup</a>(NodeId node, NodeId group)</td><td class="entry"><a class="el" href="../../d1/d8e/classxii_d_g_m_l_graph.htm">xiiDGMLGraph</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="../../d1/d8e/classxii_d_g_m_l_graph.htm#a58619ba2a50dc2c60dbe5ae54108058a">AddPropertyType</a>(const char *szName)</td><td class="entry"><a class="el" href="../../d1/d8e/classxii_d_g_m_l_graph.htm">xiiDGMLGraph</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="../../d1/d8e/classxii_d_g_m_l_graph.htm#a7ba2be702bbafbebf0a81635e6bf26ff">AddPropertyType</a>(xiiStringView sName)</td><td class="entry"><a class="el" href="../../d1/d8e/classxii_d_g_m_l_graph.htm">xiiDGMLGraph</a></td><td class="entry"></td></tr>
   <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>ConnectionId</b> typedef (defined in <a class="el" href="../../d1/d8e/classxii_d_g_m_l_graph.htm">xiiDGMLGraph</a>)</td><td class="entry"><a class="el" href="../../d1/d8e/classxii_d_g_m_l_graph.htm">xiiDGMLGraph</a></td><td class="entry"></td></tr>
   <tr bgcolor="#f0f0f0"><td class="entry"><b>Direction</b> enum name (defined in <a class="el" href="../../d1/d8e/classxii_d_g_m_l_graph.htm">xiiDGMLGraph</a>)</td><td class="entry"><a class="el" href="../../d1/d8e/classxii_d_g_m_l_graph.htm">xiiDGMLGraph</a></td><td class="entry"></td></tr>
   <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>GroupType</b> enum name (defined in <a class="el" href="../../d1/d8e/classxii_d_g_m_l_graph.htm">xiiDGMLGraph</a>)</td><td class="entry"><a class="el" href="../../d1/d8e/classxii_d_g_m_l_graph.htm">xiiDGMLGraph</a></td><td class="entry"></td></tr>
@@ -115,7 +115,7 @@ $(document).ready(function(){initNavTree('d1/d8e/classxii_d_g_m_l_graph.htm','..
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Jul 10 2023 23:02:55 for XIIEngine by
+    <li class="footer">Generated on Sat Aug 5 2023 14:55:12 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

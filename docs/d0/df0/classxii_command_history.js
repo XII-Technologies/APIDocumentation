@@ -4,7 +4,7 @@ var classxii_command_history =
     [ "xiiCommandHistory", "d0/df0/classxii_command_history.htm#a709e8982393d7a2ca828295c833fe708", null ],
     [ "~xiiCommandHistory", "d0/df0/classxii_command_history.htm#a802122a5017e9039b52d34e7d9a87b0b", null ],
     [ "AddCommand", "d0/df0/classxii_command_history.htm#aa8e379d01222fdc05c5cf97c2c8d72ea", null ],
-    [ "BeginTemporaryCommands", "d0/df0/classxii_command_history.htm#a6194d6215a26b8a42cec821aee48ce73", null ],
+    [ "BeginTemporaryCommands", "d0/df0/classxii_command_history.htm#a33cdce4d6fd2afc77643bbe2a6284748", null ],
     [ "CancelTemporaryCommands", "d0/df0/classxii_command_history.htm#aabb476a736fa7d0f8ad4c7cf0425793e", null ],
     [ "CancelTransaction", "d0/df0/classxii_command_history.htm#a3f00a1de7668033783331667ce883b00", null ],
     [ "CanRedo", "d0/df0/classxii_command_history.htm#a432f31d37960764739246db17e0c4d68", null ],

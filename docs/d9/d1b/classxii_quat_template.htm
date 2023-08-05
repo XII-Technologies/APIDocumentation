@@ -184,9 +184,8 @@ Type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../.
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d1b/classxii_quat_template.htm#a8d26c87261cce8521c28c4b3a1b12f99">GetAsEulerAngles</a> (<a class="el" href="../../d3/ddb/classxii_angle_template.htm">xiiAngleTemplate</a>&lt; Type &gt; &amp;out_x, <a class="el" href="../../d3/ddb/classxii_angle_template.htm">xiiAngleTemplate</a>&lt; Type &gt; &amp;out_y, <a class="el" href="../../d3/ddb/classxii_angle_template.htm">xiiAngleTemplate</a>&lt; Type &gt; &amp;out_z) const</td></tr>
 <tr class="memdesc:a8d26c87261cce8521c28c4b3a1b12f99"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts the quaternion to Euler angles. <br /></td></tr>
 <tr class="separator:a8d26c87261cce8521c28c4b3a1b12f99"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a57c283998a8fe1e5bc7c8725386f19d1"><td class="memItemLeft" align="right" valign="top"><a id="a57c283998a8fe1e5bc7c8725386f19d1"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d1b/classxii_quat_template.htm#a57c283998a8fe1e5bc7c8725386f19d1">SetFromEulerAngles</a> (const <a class="el" href="../../d3/ddb/classxii_angle_template.htm">xiiAngleTemplate</a>&lt; Type &gt; &amp;x, const <a class="el" href="../../d3/ddb/classxii_angle_template.htm">xiiAngleTemplate</a>&lt; Type &gt; &amp;y, const <a class="el" href="../../d3/ddb/classxii_angle_template.htm">xiiAngleTemplate</a>&lt; Type &gt; &amp;z)</td></tr>
-<tr class="memdesc:a57c283998a8fe1e5bc7c8725386f19d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the quaternion from Euler angles. <br /></td></tr>
+<tr class="memitem:a57c283998a8fe1e5bc7c8725386f19d1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d1b/classxii_quat_template.htm#a57c283998a8fe1e5bc7c8725386f19d1">SetFromEulerAngles</a> (const <a class="el" href="../../d3/ddb/classxii_angle_template.htm">xiiAngleTemplate</a>&lt; Type &gt; &amp;x, const <a class="el" href="../../d3/ddb/classxii_angle_template.htm">xiiAngleTemplate</a>&lt; Type &gt; &amp;y, const <a class="el" href="../../d3/ddb/classxii_angle_template.htm">xiiAngleTemplate</a>&lt; Type &gt; &amp;z)</td></tr>
+<tr class="memdesc:a57c283998a8fe1e5bc7c8725386f19d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the quaternion from Euler angles.  <a href="../../d9/d1b/classxii_quat_template.htm#a57c283998a8fe1e5bc7c8725386f19d1">More...</a><br /></td></tr>
 <tr class="separator:a57c283998a8fe1e5bc7c8725386f19d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
@@ -356,6 +355,45 @@ template&lt;typename Type &gt; </div>
 
 </div>
 </div>
+<a id="a57c283998a8fe1e5bc7c8725386f19d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a57c283998a8fe1e5bc7c8725386f19d1">&#9670;&nbsp;</a></span>SetFromEulerAngles()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Type &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="../../d9/d1b/classxii_quat_template.htm">xiiQuatTemplate</a>&lt; Type &gt;::SetFromEulerAngles </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d3/ddb/classxii_angle_template.htm">xiiAngleTemplate</a>&lt; Type &gt; &amp;&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d3/ddb/classxii_angle_template.htm">xiiAngleTemplate</a>&lt; Type &gt; &amp;&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d3/ddb/classxii_angle_template.htm">xiiAngleTemplate</a>&lt; Type &gt; &amp;&#160;</td>
+          <td class="paramname"><em>z</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the quaternion from Euler angles. </p>
+<p>Taken from here (yaw-&gt;pitch-&gt;roll, ZYX order or 3-2-1 order): <a href="https://en.wikipedia.org/wiki/Conversion_between_quaternions_and_Euler_angles">https://en.wikipedia.org/wiki/Conversion_between_quaternions_and_Euler_angles</a></p>
+
+</div>
+</div>
 <a id="a9eedbd0664e93fed324f940d37cc6791"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9eedbd0664e93fed324f940d37cc6791">&#9670;&nbsp;</a></span>SetShortestRotation()</h2>
 
@@ -400,7 +438,7 @@ template&lt;typename Type &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d9/d1b/classxii_quat_template.htm">xiiQuatTemplate</a></li>
-    <li class="footer">Generated on Mon Jul 10 2023 23:03:00 for XIIEngine by
+    <li class="footer">Generated on Sat Aug 5 2023 14:55:13 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

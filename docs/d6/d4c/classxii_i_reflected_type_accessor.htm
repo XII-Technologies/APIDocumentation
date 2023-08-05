@@ -92,7 +92,7 @@ $(document).ready(function(){initNavTree('d6/d4c/classxii_i_reflected_type_acces
 </div><!--header-->
 <div class="contents">
 
-<p>Provides access to the properties of a <a class="el" href="../../db/d89/classxii_r_t_t_i.htm" title="This enumerable class holds information about reflected types. Each instance represents one type that...">xiiRTTI</a> compatible data storage.  
+<p>Provides access to the properties of a <a class="el" href="../../db/d89/classxii_r_t_t_i.htm" title="This class holds information about reflected types. Each instance represents one type that is known t...">xiiRTTI</a> compatible data storage.  
  <a href="../../d6/d4c/classxii_i_reflected_type_accessor.htm#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="../../d5/d81/_i_reflected_type_accessor_8h_source.htm">IReflectedTypeAccessor.h</a>&gt;</code></p>
@@ -115,38 +115,38 @@ Public Member Functions</h2></td></tr>
 const <a class="el" href="../../db/d89/classxii_r_t_t_i.htm">xiiRTTI</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d4c/classxii_i_reflected_type_accessor.htm#a108e63fd1180cd1040c9ea2dd338cf55">GetType</a> () const</td></tr>
 <tr class="memdesc:a108e63fd1180cd1040c9ea2dd338cf55"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the xiiRTTI* of the wrapped instance type. <br /></td></tr>
 <tr class="separator:a108e63fd1180cd1040c9ea2dd338cf55"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adeba156b46d227eb822682c43cae1400"><td class="memItemLeft" align="right" valign="top"><a id="adeba156b46d227eb822682c43cae1400"></a>
-virtual const <a class="el" href="../../db/d1a/classxii_variant.htm">xiiVariant</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d4c/classxii_i_reflected_type_accessor.htm#adeba156b46d227eb822682c43cae1400">GetValue</a> (const char *szProperty, <a class="el" href="../../db/d1a/classxii_variant.htm">xiiVariant</a> index=<a class="el" href="../../db/d1a/classxii_variant.htm">xiiVariant</a>(), <a class="el" href="../../d0/d54/structxii_status.htm">xiiStatus</a> *pRes=nullptr) const =0</td></tr>
-<tr class="memdesc:adeba156b46d227eb822682c43cae1400"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the value of the property defined by its path. Return value is invalid iff the path was invalid. <br /></td></tr>
-<tr class="separator:adeba156b46d227eb822682c43cae1400"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad19956ac369e11844b3c9b362597757b"><td class="memItemLeft" align="right" valign="top"><a id="ad19956ac369e11844b3c9b362597757b"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d4c/classxii_i_reflected_type_accessor.htm#ad19956ac369e11844b3c9b362597757b">SetValue</a> (const char *szProperty, const <a class="el" href="../../db/d1a/classxii_variant.htm">xiiVariant</a> &amp;value, <a class="el" href="../../db/d1a/classxii_variant.htm">xiiVariant</a> index=<a class="el" href="../../db/d1a/classxii_variant.htm">xiiVariant</a>())=0</td></tr>
-<tr class="memdesc:ad19956ac369e11844b3c9b362597757b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets a property defined by its path to the given value. Returns whether the operation was successful. <br /></td></tr>
-<tr class="separator:ad19956ac369e11844b3c9b362597757b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad6bc47d75f17f7fca852e4ba28b30e5e"><td class="memItemLeft" align="right" valign="top"><a id="ad6bc47d75f17f7fca852e4ba28b30e5e"></a>
-virtual xiiInt32&#160;</td><td class="memItemRight" valign="bottom"><b>GetCount</b> (const char *szProperty) const =0</td></tr>
-<tr class="separator:ad6bc47d75f17f7fca852e4ba28b30e5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abd0b775b5c647cf789de457a17094212"><td class="memItemLeft" align="right" valign="top"><a id="abd0b775b5c647cf789de457a17094212"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>GetKeys</b> (const char *szProperty, <a class="el" href="../../dc/da4/classxii_dynamic_array.htm">xiiDynamicArray</a>&lt; <a class="el" href="../../db/d1a/classxii_variant.htm">xiiVariant</a> &gt; &amp;out_keys) const =0</td></tr>
-<tr class="separator:abd0b775b5c647cf789de457a17094212"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa690d2eda0f9fc9bcb98b223406a1236"><td class="memItemLeft" align="right" valign="top"><a id="aa690d2eda0f9fc9bcb98b223406a1236"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>InsertValue</b> (const char *szProperty, <a class="el" href="../../db/d1a/classxii_variant.htm">xiiVariant</a> index, const <a class="el" href="../../db/d1a/classxii_variant.htm">xiiVariant</a> &amp;value)=0</td></tr>
-<tr class="separator:aa690d2eda0f9fc9bcb98b223406a1236"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac30059bce17475ff807b7fd4955a3c30"><td class="memItemLeft" align="right" valign="top"><a id="ac30059bce17475ff807b7fd4955a3c30"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>RemoveValue</b> (const char *szProperty, <a class="el" href="../../db/d1a/classxii_variant.htm">xiiVariant</a> index)=0</td></tr>
-<tr class="separator:ac30059bce17475ff807b7fd4955a3c30"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4254edccb02335dc428c0a142d3696aa"><td class="memItemLeft" align="right" valign="top"><a id="a4254edccb02335dc428c0a142d3696aa"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>MoveValue</b> (const char *szProperty, <a class="el" href="../../db/d1a/classxii_variant.htm">xiiVariant</a> oldIndex, <a class="el" href="../../db/d1a/classxii_variant.htm">xiiVariant</a> newIndex)=0</td></tr>
-<tr class="separator:a4254edccb02335dc428c0a142d3696aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4b0e1ef0f689bd6ae8f50589eb43c27d"><td class="memItemLeft" align="right" valign="top"><a id="a4b0e1ef0f689bd6ae8f50589eb43c27d"></a>
-virtual <a class="el" href="../../db/d1a/classxii_variant.htm">xiiVariant</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetPropertyChildIndex</b> (const char *szProperty, const <a class="el" href="../../db/d1a/classxii_variant.htm">xiiVariant</a> &amp;value) const =0</td></tr>
-<tr class="separator:a4b0e1ef0f689bd6ae8f50589eb43c27d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7fdf779ec5d8a54f08eb01b3eeedea29"><td class="memItemLeft" align="right" valign="top"><a id="a7fdf779ec5d8a54f08eb01b3eeedea29"></a>
+virtual const <a class="el" href="../../db/d1a/classxii_variant.htm">xiiVariant</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d4c/classxii_i_reflected_type_accessor.htm#a7fdf779ec5d8a54f08eb01b3eeedea29">GetValue</a> (<a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sProperty, <a class="el" href="../../db/d1a/classxii_variant.htm">xiiVariant</a> index=<a class="el" href="../../db/d1a/classxii_variant.htm">xiiVariant</a>(), <a class="el" href="../../d0/d54/structxii_status.htm">xiiStatus</a> *pRes=nullptr) const =0</td></tr>
+<tr class="memdesc:a7fdf779ec5d8a54f08eb01b3eeedea29"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the value of the property defined by its path. Return value is invalid iff the path was invalid. <br /></td></tr>
+<tr class="separator:a7fdf779ec5d8a54f08eb01b3eeedea29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2bb8f56856deef67cfb406a76e9665b8"><td class="memItemLeft" align="right" valign="top"><a id="a2bb8f56856deef67cfb406a76e9665b8"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d4c/classxii_i_reflected_type_accessor.htm#a2bb8f56856deef67cfb406a76e9665b8">SetValue</a> (<a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sProperty, const <a class="el" href="../../db/d1a/classxii_variant.htm">xiiVariant</a> &amp;value, <a class="el" href="../../db/d1a/classxii_variant.htm">xiiVariant</a> index=<a class="el" href="../../db/d1a/classxii_variant.htm">xiiVariant</a>())=0</td></tr>
+<tr class="memdesc:a2bb8f56856deef67cfb406a76e9665b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets a property defined by its path to the given value. Returns whether the operation was successful. <br /></td></tr>
+<tr class="separator:a2bb8f56856deef67cfb406a76e9665b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adfffc45923615f937b4d8a91829f8c3c"><td class="memItemLeft" align="right" valign="top"><a id="adfffc45923615f937b4d8a91829f8c3c"></a>
+virtual xiiInt32&#160;</td><td class="memItemRight" valign="bottom"><b>GetCount</b> (<a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sProperty) const =0</td></tr>
+<tr class="separator:adfffc45923615f937b4d8a91829f8c3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaab44c099c8820360792251973ad8dac"><td class="memItemLeft" align="right" valign="top"><a id="aaab44c099c8820360792251973ad8dac"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>GetKeys</b> (<a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sProperty, <a class="el" href="../../dc/da4/classxii_dynamic_array.htm">xiiDynamicArray</a>&lt; <a class="el" href="../../db/d1a/classxii_variant.htm">xiiVariant</a> &gt; &amp;out_keys) const =0</td></tr>
+<tr class="separator:aaab44c099c8820360792251973ad8dac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0887050e5dcd5f15141d28529927c9b"><td class="memItemLeft" align="right" valign="top"><a id="ab0887050e5dcd5f15141d28529927c9b"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>InsertValue</b> (<a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sProperty, <a class="el" href="../../db/d1a/classxii_variant.htm">xiiVariant</a> index, const <a class="el" href="../../db/d1a/classxii_variant.htm">xiiVariant</a> &amp;value)=0</td></tr>
+<tr class="separator:ab0887050e5dcd5f15141d28529927c9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ef86b06ca1b7c0eb4b3985868736620"><td class="memItemLeft" align="right" valign="top"><a id="a8ef86b06ca1b7c0eb4b3985868736620"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>RemoveValue</b> (<a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sProperty, <a class="el" href="../../db/d1a/classxii_variant.htm">xiiVariant</a> index)=0</td></tr>
+<tr class="separator:a8ef86b06ca1b7c0eb4b3985868736620"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51e6cb7bdb448395dfc35e99c58f6d99"><td class="memItemLeft" align="right" valign="top"><a id="a51e6cb7bdb448395dfc35e99c58f6d99"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>MoveValue</b> (<a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sProperty, <a class="el" href="../../db/d1a/classxii_variant.htm">xiiVariant</a> oldIndex, <a class="el" href="../../db/d1a/classxii_variant.htm">xiiVariant</a> newIndex)=0</td></tr>
+<tr class="separator:a51e6cb7bdb448395dfc35e99c58f6d99"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a032808d85e0e5fe30738ea8d117da42b"><td class="memItemLeft" align="right" valign="top"><a id="a032808d85e0e5fe30738ea8d117da42b"></a>
+virtual <a class="el" href="../../db/d1a/classxii_variant.htm">xiiVariant</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetPropertyChildIndex</b> (<a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sProperty, const <a class="el" href="../../db/d1a/classxii_variant.htm">xiiVariant</a> &amp;value) const =0</td></tr>
+<tr class="separator:a032808d85e0e5fe30738ea8d117da42b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3b9e307bc91e4b7b5131303bb2dec2ae"><td class="memItemLeft" align="right" valign="top"><a id="a3b9e307bc91e4b7b5131303bb2dec2ae"></a>
 const <a class="el" href="../../da/dd8/classxii_document_object.htm">xiiDocumentObject</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetOwner</b> () const</td></tr>
 <tr class="separator:a3b9e307bc91e4b7b5131303bb2dec2ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a082dd1c4a3c904bdb46dabb47a2106a0"><td class="memItemLeft" align="right" valign="top"><a id="a082dd1c4a3c904bdb46dabb47a2106a0"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>GetValues</b> (const char *szProperty, <a class="el" href="../../dc/da4/classxii_dynamic_array.htm">xiiDynamicArray</a>&lt; <a class="el" href="../../db/d1a/classxii_variant.htm">xiiVariant</a> &gt; &amp;out_values) const</td></tr>
-<tr class="separator:a082dd1c4a3c904bdb46dabb47a2106a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2badc3202c12f6b92d77137bdb5ead8d"><td class="memItemLeft" align="right" valign="top"><a id="a2badc3202c12f6b92d77137bdb5ead8d"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>GetValues</b> (<a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sProperty, <a class="el" href="../../dc/da4/classxii_dynamic_array.htm">xiiDynamicArray</a>&lt; <a class="el" href="../../db/d1a/classxii_variant.htm">xiiVariant</a> &gt; &amp;out_values) const</td></tr>
+<tr class="separator:a2badc3202c12f6b92d77137bdb5ead8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
@@ -158,7 +158,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>xiiDocumentObject</b
 <tr class="separator:abd3e57f55b62df2f53caa21483677daf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Provides access to the properties of a <a class="el" href="../../db/d89/classxii_r_t_t_i.htm" title="This enumerable class holds information about reflected types. Each instance represents one type that...">xiiRTTI</a> compatible data storage. </p>
+<div class="textblock"><p>Provides access to the properties of a <a class="el" href="../../db/d89/classxii_r_t_t_i.htm" title="This class holds information about reflected types. Each instance represents one type that is known t...">xiiRTTI</a> compatible data storage. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a719d1274524ebd61f38db9801aa48370"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a719d1274524ebd61f38db9801aa48370">&#9670;&nbsp;</a></span>xiiIReflectedTypeAccessor()</h2>
@@ -209,7 +209,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>xiiDocumentObject</b
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d6/d4c/classxii_i_reflected_type_accessor.htm">xiiIReflectedTypeAccessor</a></li>
-    <li class="footer">Generated on Mon Jul 10 2023 23:02:57 for XIIEngine by
+    <li class="footer">Generated on Sat Aug 5 2023 14:55:13 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

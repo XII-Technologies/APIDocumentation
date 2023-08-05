@@ -1,6 +1,6 @@
 var classxii_internal_1_1xii_allocator_impl =
 [
-    [ "xiiAllocatorImpl", "d4/deb/classxii_internal_1_1xii_allocator_impl.htm#a2f6e2077504cacf618c6f71b8bb6aec3", null ],
+    [ "xiiAllocatorImpl", "d4/deb/classxii_internal_1_1xii_allocator_impl.htm#abdada829453743fce7d238e3ca8b17dd", null ],
     [ "~xiiAllocatorImpl", "d4/deb/classxii_internal_1_1xii_allocator_impl.htm#a6849d5793e277035585e770e722574cc", null ],
     [ "Allocate", "d4/deb/classxii_internal_1_1xii_allocator_impl.htm#af16d15239951848a4c924c12ad87e66c", null ],
     [ "AllocatedSize", "d4/deb/classxii_internal_1_1xii_allocator_impl.htm#ab8dfd4e6902e53de854ed78dc39c455b", null ],

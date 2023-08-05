@@ -12,9 +12,9 @@ var classxii_qt_log_model =
     [ "GetVisibleItemCount", "d6/da0/classxii_qt_log_model.htm#a12189eb9336e35739e8c682949e74511", null ],
     [ "headerData", "d6/da0/classxii_qt_log_model.htm#a334573fe5f4002984a4f30f422b300ce", null ],
     [ "index", "d6/da0/classxii_qt_log_model.htm#ae5ef1750a8db73e583202bceb03fa8ca", null ],
-    [ "NewErrorsOrWarnings", "d6/da0/classxii_qt_log_model.htm#a752a48f23be805926cdcdb41689d6e48", null ],
+    [ "NewErrorsOrWarnings", "d6/da0/classxii_qt_log_model.htm#a55b2b1ba19faf74df1b7e1f3d5fb8fa9", null ],
     [ "parent", "d6/da0/classxii_qt_log_model.htm#a836977a73871db1ae3e3a1bf23877c17", null ],
     [ "rowCount", "d6/da0/classxii_qt_log_model.htm#a24a8769cee3680f0c71473cfc81b045e", null ],
     [ "SetLogLevel", "d6/da0/classxii_qt_log_model.htm#a55e88a12f0531b337616d05fd40807c1", null ],
-    [ "SetSearchText", "d6/da0/classxii_qt_log_model.htm#a6511c3da573e6b5b4cd1deee5547dad2", null ]
+    [ "SetSearchText", "d6/da0/classxii_qt_log_model.htm#adff7190b3695f6c48021cc062717906c", null ]
 ];

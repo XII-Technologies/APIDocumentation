@@ -170,17 +170,20 @@ $(document).ready(function(){initNavTree('d0/df6/_interval_scheduler_8h_source.h
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <a class="code" href="../../d7/dc1/structxii_time.htm">xiiTime</a> m_Interval;</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <a class="code" href="../../d7/dc1/structxii_time.htm">xiiTime</a> m_DueTime;</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <a class="code" href="../../d7/dc1/structxii_time.htm">xiiTime</a> m_LastScheduledTime;</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  };</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  <span class="keyword">using</span> <a class="code" href="../../d6/df7/classxii_map.htm">DataMap</a> = <a class="code" href="../../d6/df7/classxii_map.htm">xiiMap&lt;xiiTime, Data&gt;</a>;</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  <a class="code" href="../../d6/df7/classxii_map.htm">DataMap</a>                                     m_Data;</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  <a class="code" href="../../d8/dc2/classxii_hash_table.htm">xiiHashTable&lt;T, typename DataMap::Iterator&gt;</a> m_WorkIdToData;</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  <span class="keyword">typename</span> DataMap::Iterator                  InsertData(Data&amp; data);</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  <a class="code" href="../../dc/da4/classxii_dynamic_array.htm">xiiDynamicArray&lt;typename DataMap::Iterator&gt;</a> m_ScheduledWork;</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;};</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160; </div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="preprocessor">#include &lt;Core/Utils/Implementation/IntervalScheduler_inl.h&gt;</span></div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="keywordtype">bool</span> IsValid() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keywordtype">void</span> MarkAsInvalid();</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  };</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  <span class="keyword">using</span> <a class="code" href="../../d6/df7/classxii_map.htm">DataMap</a> = <a class="code" href="../../d6/df7/classxii_map.htm">xiiMap&lt;xiiTime, Data&gt;</a>;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  <a class="code" href="../../d6/df7/classxii_map.htm">DataMap</a>                                     m_Data;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  <a class="code" href="../../d8/dc2/classxii_hash_table.htm">xiiHashTable&lt;T, typename DataMap::Iterator&gt;</a> m_WorkIdToData;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; </div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  <span class="keyword">typename</span> DataMap::Iterator                  InsertData(Data&amp; data);</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;  <a class="code" href="../../dc/da4/classxii_dynamic_array.htm">xiiDynamicArray&lt;typename DataMap::Iterator&gt;</a> m_ScheduledWork;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;};</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160; </div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="preprocessor">#include &lt;Core/Utils/Implementation/IntervalScheduler_inl.h&gt;</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclassxii_interval_scheduler_base_htm"><div class="ttname"><a href="../../d8/d2c/classxii_interval_scheduler_base.htm">xiiIntervalSchedulerBase</a></div><div class="ttdoc">Helper class to schedule work in intervals typically larger than the duration of one frame.</div><div class="ttdef"><b>Definition:</b> IntervalScheduler.h:34</div></div>
@@ -190,7 +193,7 @@ $(document).ready(function(){initNavTree('d0/df6/_interval_scheduler_8h_source.h
 <div class="ttc" id="aclassxii_map_htm"><div class="ttname"><a href="../../d6/df7/classxii_map.htm">xiiMap&lt; xiiTime, Data &gt;</a></div></div>
 <div class="ttc" id="astructxii_update_rate_htm"><div class="ttname"><a href="../../dd/d0e/structxii_update_rate.htm">xiiUpdateRate</a></div><div class="ttdef"><b>Definition:</b> IntervalScheduler.h:6</div></div>
 <div class="ttc" id="astructxii_time_htm_a350c072ea062ba8ed19357dac5047955"><div class="ttname"><a href="../../d7/dc1/structxii_time.htm#a350c072ea062ba8ed19357dac5047955">xiiTime::Milliseconds</a></div><div class="ttdeci">constexpr static XII_ALWAYS_INLINE xiiTime Milliseconds(double fMilliseconds)</div><div class="ttdoc">Creates an instance of xiiTime that was initialized from milliseconds.</div><div class="ttdef"><b>Definition:</b> Time.h:24</div></div>
-<div class="ttc" id="aclassxii_interval_scheduler_htm_a2aa961b42d07fb4d9db366afea9d783d"><div class="ttname"><a href="../../db/d37/classxii_interval_scheduler.htm#a2aa961b42d07fb4d9db366afea9d783d">xiiIntervalScheduler::Update</a></div><div class="ttdeci">void Update(xiiTime deltaTime, RunWorkCallback runWorkCallback)</div><div class="ttdoc">Advances the scheduler by deltaTime and triggers runWorkCallback for each work that should be run dur...</div><div class="ttdef"><b>Definition:</b> IntervalScheduler_inl.h:86</div></div>
+<div class="ttc" id="aclassxii_interval_scheduler_htm_a2aa961b42d07fb4d9db366afea9d783d"><div class="ttname"><a href="../../db/d37/classxii_interval_scheduler.htm#a2aa961b42d07fb4d9db366afea9d783d">xiiIntervalScheduler::Update</a></div><div class="ttdeci">void Update(xiiTime deltaTime, RunWorkCallback runWorkCallback)</div><div class="ttdoc">Advances the scheduler by deltaTime and triggers runWorkCallback for each work that should be run dur...</div><div class="ttdef"><b>Definition:</b> IntervalScheduler_inl.h:103</div></div>
 <div class="ttc" id="aclassxii_dynamic_array_htm"><div class="ttname"><a href="../../dc/da4/classxii_dynamic_array.htm">xiiDynamicArray&lt; typename DataMap::Iterator &gt;</a></div></div>
 <div class="ttc" id="astructxii_time_htm_a0d30e51875577941d5f0e312d7041c76"><div class="ttname"><a href="../../d7/dc1/structxii_time.htm#a0d30e51875577941d5f0e312d7041c76">xiiTime::Seconds</a></div><div class="ttdeci">constexpr static XII_ALWAYS_INLINE xiiTime Seconds(double fSeconds)</div><div class="ttdoc">Creates an instance of xiiTime that was initialized from seconds.</div><div class="ttdef"><b>Definition:</b> Time.h:27</div></div>
 <div class="ttc" id="aclassxii_hash_table_htm"><div class="ttname"><a href="../../d8/dc2/classxii_hash_table.htm">xiiHashTable&lt; T, typename DataMap::Iterator &gt;</a></div></div>
@@ -198,7 +201,7 @@ $(document).ready(function(){initNavTree('d0/df6/_interval_scheduler_8h_source.h
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.htm">home</a></li><li class="navelem"><a class="el" href="../../dir_1036706e55c22cab35bc1c58ee689f1d.htm">runner</a></li><li class="navelem"><a class="el" href="../../dir_629f8151d55d307162ff2d619fb1783d.htm">work</a></li><li class="navelem"><a class="el" href="../../dir_1ddc44fe1263a8c7935fa6130b7d9499.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_2c1b6808f12952f4c36e05ba7068379a.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_b5a1c4ecfca018ad24b729e213296d41.htm">Source</a></li><li class="navelem"><a class="el" href="../../dir_e321052006a51284e67389ab20037e7c.htm">Engine</a></li><li class="navelem"><a class="el" href="../../dir_6934db396743bb3844d563c7fa1f32a7.htm">Core</a></li><li class="navelem"><a class="el" href="../../dir_adebcc6adcff8ac19ff9e173a546d91f.htm">Utils</a></li><li class="navelem"><b>IntervalScheduler.h</b></li>
-    <li class="footer">Generated on Mon Jul 10 2023 23:02:43 for XIIEngine by
+    <li class="footer">Generated on Sat Aug 5 2023 14:55:07 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

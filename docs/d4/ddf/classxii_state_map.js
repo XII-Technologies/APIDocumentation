@@ -7,7 +7,7 @@ var classxii_state_map =
     [ "RetrieveColor", "d4/ddf/classxii_state_map.htm#a66cd3687af5478561aea6d61158c1012", null ],
     [ "RetrieveDouble", "d4/ddf/classxii_state_map.htm#a83d93262bd8bbdabca6bbdbf16fd860e", null ],
     [ "RetrieveInteger", "d4/ddf/classxii_state_map.htm#aa9074f84a0b957651cda5b5a59c73bd8", null ],
-    [ "RetrieveString", "d4/ddf/classxii_state_map.htm#a92699c743e1d2a32fc8e3a241a4577d1", null ],
+    [ "RetrieveString", "d4/ddf/classxii_state_map.htm#acd54c5365d75870627dca7b6de97dd87", null ],
     [ "RetrieveVec3", "d4/ddf/classxii_state_map.htm#acd6fb5e04c653730735887d7f32553e8", null ],
     [ "RetrieveVec3d", "d4/ddf/classxii_state_map.htm#a2c7e2140b00b9ddd6a2da0fdfbc7e0c4", null ],
     [ "StoreBool", "d4/ddf/classxii_state_map.htm#a6ee1d571a4ed70f36e8db6734c970d85", null ],
