@@ -1,0 +1,14 @@
+var structxii_g_a_l_misc_texture_flags =
+[
+    [ "Bits", "d2/d47/structxii_g_a_l_misc_texture_flags_1_1_bits.htm", "d2/d47/structxii_g_a_l_misc_texture_flags_1_1_bits" ],
+    [ "StorageType", "d6/dd3/structxii_g_a_l_misc_texture_flags.htm#a4ebb9321f493e0f999d768bc0f735879", null ],
+    [ "Enum", "d6/dd3/structxii_g_a_l_misc_texture_flags.htm#a2f778e42ec10d736dd6a5505a761b75a", [
+      [ "None", "d6/dd3/structxii_g_a_l_misc_texture_flags.htm#a2f778e42ec10d736dd6a5505a761b75aad75832e503a880f28d7ff3aa26d0d79a", null ],
+      [ "GenerateMips", "d6/dd3/structxii_g_a_l_misc_texture_flags.htm#a2f778e42ec10d736dd6a5505a761b75aafc8042b959890e820564a897da0ac65b", null ],
+      [ "Memoryless", "d6/dd3/structxii_g_a_l_misc_texture_flags.htm#a2f778e42ec10d736dd6a5505a761b75aad64cd0ab19952a2e462843d053eb43bf", null ],
+      [ "SparseAlias", "d6/dd3/structxii_g_a_l_misc_texture_flags.htm#a2f778e42ec10d736dd6a5505a761b75aa859eae7a2794355b50672ad48261e934", null ],
+      [ "Subsampled", "d6/dd3/structxii_g_a_l_misc_texture_flags.htm#a2f778e42ec10d736dd6a5505a761b75aa3f947f24110dd24bf569d642aa8fcb97", null ],
+      [ "ENUM_COUNT", "d6/dd3/structxii_g_a_l_misc_texture_flags.htm#a2f778e42ec10d736dd6a5505a761b75aa6ddde856f800d9a57cae509185e807f2", null ],
+      [ "Default", "d6/dd3/structxii_g_a_l_misc_texture_flags.htm#a2f778e42ec10d736dd6a5505a761b75aa7aa59996e16ac9f4025ef0623f29e52a", null ]
+    ] ]
+];

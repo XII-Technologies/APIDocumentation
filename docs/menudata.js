@@ -29,7 +29,8 @@ var menudata={children:[
 {text:"Class Hierarchy",url:"inherits.htm"},
 {text:"Class Members",url:"functions.htm",children:[
 {text:"All",url:"functions.htm",children:[
-{text:"a",url:"functions.htm#index_a"},
+{text:"_",url:"functions.htm#index__5F"},
+{text:"a",url:"functions_a.htm#index_a"},
 {text:"b",url:"functions_b.htm#index_b"},
 {text:"c",url:"functions_c.htm#index_c"},
 {text:"d",url:"functions_d.htm#index_d"},
@@ -124,7 +125,8 @@ var menudata={children:[
 {text:"v",url:"functions_enum.htm#index_v"},
 {text:"w",url:"functions_enum.htm#index_w"}]},
 {text:"Enumerator",url:"functions_eval.htm",children:[
-{text:"a",url:"functions_eval.htm#index_a"},
+{text:"_",url:"functions_eval.htm#index__5F"},
+{text:"a",url:"functions_eval_a.htm#index_a"},
 {text:"b",url:"functions_eval_b.htm#index_b"},
 {text:"c",url:"functions_eval_c.htm#index_c"},
 {text:"d",url:"functions_eval_d.htm#index_d"},
@@ -146,5 +148,6 @@ var menudata={children:[
 {text:"u",url:"functions_eval_u.htm#index_u"},
 {text:"v",url:"functions_eval_v.htm#index_v"},
 {text:"w",url:"functions_eval_w.htm#index_w"},
+{text:"x",url:"functions_eval_x.htm#index_x"},
 {text:"z",url:"functions_eval_z.htm#index_z"}]},
 {text:"Related Functions",url:"functions_rela.htm"}]}]}]}

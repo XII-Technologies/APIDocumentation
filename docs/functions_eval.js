@@ -1,6 +1,7 @@
 var functions_eval =
 [
-    [ "a", "functions_eval.htm", null ],
+    [ "_", "functions_eval.htm", null ],
+    [ "a", "functions_eval_a.htm", null ],
     [ "b", "functions_eval_b.htm", null ],
     [ "c", "functions_eval_c.htm", null ],
     [ "d", "functions_eval_d.htm", null ],
@@ -22,5 +23,6 @@ var functions_eval =
     [ "u", "functions_eval_u.htm", null ],
     [ "v", "functions_eval_v.htm", null ],
     [ "w", "functions_eval_w.htm", null ],
+    [ "x", "functions_eval_x.htm", null ],
     [ "z", "functions_eval_z.htm", null ]
 ];

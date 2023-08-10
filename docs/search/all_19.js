@@ -1,10 +1,7 @@
 var searchData=
 [
-  ['zero_6179',['Zero',['../d7/dc1/structxii_time.htm#a98ce26844e549b2f590dc01bbe6b742d',1,'xiiTime']]],
-  ['zerocolor_6180',['ZeroColor',['../d3/de6/classxii_color.htm#aa41c07071a3b733a25bf79eb434c6f1d',1,'xiiColor']]],
-  ['zerofill_6181',['ZeroFill',['../d0/dec/classxii_blob.htm#a2b3589b5f37607dc523cf25cde27e67e',1,'xiiBlob::ZeroFill()'],['../d8/d9d/classxii_memory_utils.htm#aa46340f1eaae0121ec1bcb712ea2755f',1,'xiiMemoryUtils::ZeroFill(T *pDestination, size_t uiCount=1)'],['../d8/d9d/classxii_memory_utils.htm#ab22975a84bca9a46570480a3513858bd',1,'xiiMemoryUtils::ZeroFill(T(&amp;destination)[N])=delete']]],
-  ['zerofillarray_6182',['ZeroFillArray',['../d8/d9d/classxii_memory_utils.htm#ac489879b6d9d0d6e7846d27f694d6a09',1,'xiiMemoryUtils']]],
-  ['zeromatrix_6183',['ZeroMatrix',['../d3/d74/classxii_mat3_template.htm#a31f50ba2a2350bae007d67562e43afef',1,'xiiMat3Template::ZeroMatrix()'],['../d1/dec/classxii_mat4_template.htm#a938a39e07bbcf837a0f0ea54b60d1388',1,'xiiMat4Template::ZeroMatrix()'],['../dc/dae/classxii_simd_mat4d.htm#aa674f8f6fa666847b0062d5938894dbc',1,'xiiSimdMat4d::ZeroMatrix()'],['../d4/d8d/classxii_simd_mat4f.htm#af350d3fd2f6cd18743a05fd65a900a70',1,'xiiSimdMat4f::ZeroMatrix()']]],
-  ['zerotoone_6184',['ZeroToOne',['../d5/d82/structxii_clip_space_depth_range.htm#a3c966a87c0a4727af25bf59d42cac790a0dcf1915e9bae421c885bafc80e5af7c',1,'xiiClipSpaceDepthRange']]],
-  ['zerovector_6185',['ZeroVector',['../d1/d0d/classxii_vec2_template.htm#a6923198918b90676514cd437586d7eac',1,'xiiVec2Template::ZeroVector()'],['../d9/d9a/classxii_vec3_template.htm#ae11f5900a8e3748216ebdd2d5caa6c02',1,'xiiVec3Template::ZeroVector()'],['../d1/d20/classxii_vec4_template.htm#a3064d2afe2a3f30ab8629a8246e689da',1,'xiiVec4Template::ZeroVector()']]]
+  ['yellow_7106',['Yellow',['../d3/de6/classxii_color.htm#a205e80fede9d66aeb8e3c34bf627610e',1,'xiiColor']]],
+  ['yellowgreen_7107',['YellowGreen',['../d3/de6/classxii_color.htm#afd757fed8db2fb0273d40a7313c38300',1,'xiiColor']]],
+  ['yieldhardwarethread_7108',['YieldHardwareThread',['../d4/d5c/classxii_thread_utils.htm#a64bc4ccc0b0f27b8bea0abb655f20ec3',1,'xiiThreadUtils']]],
+  ['yieldtimeslice_7109',['YieldTimeSlice',['../d4/d5c/classxii_thread_utils.htm#a5c2611b2861de635d4d99c3a7e61afda',1,'xiiThreadUtils']]]
 ];
