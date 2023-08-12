@@ -1,9 +1,8 @@
 var structxii_graphics_device_adapter_description =
 [
-    [ "XII_DECLARE_POD_TYPE", "d4/dcc/structxii_graphics_device_adapter_description.htm#a044e7d8919520908abfea27a26ab232c", null ],
     [ "m_AdapterQueuesCount", "d4/dcc/structxii_graphics_device_adapter_description.htm#aea5e0bf813857e82821943fd490432cb", null ],
     [ "m_BufferProperties", "d4/dcc/structxii_graphics_device_adapter_description.htm#a0a2ae74ec9ac08f1f6d38d2d22fc6b5a", null ],
-    [ "m_CommandQueueProperties", "d4/dcc/structxii_graphics_device_adapter_description.htm#ac824b8429592166562ccdf0ea9fb406d", null ],
+    [ "m_CommandQueueProperties", "d4/dcc/structxii_graphics_device_adapter_description.htm#af0eab123c386dc4231338aa04f673a4f", null ],
     [ "m_ComputeShaderProperties", "d4/dcc/structxii_graphics_device_adapter_description.htm#aeac3d02c844bcdb60181f783ed55f0b0", null ],
     [ "m_DrawCommandProperties", "d4/dcc/structxii_graphics_device_adapter_description.htm#a892487c030bb1dcd8313803ab9b113a4", null ],
     [ "m_Features", "d4/dcc/structxii_graphics_device_adapter_description.htm#ada39d1febfc45fb5cac4b3fadd1967f7", null ],

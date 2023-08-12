@@ -1,7 +1,7 @@
 var structxii_g_a_l_texture_properties =
 [
     [ "XII_DECLARE_POD_TYPE", "dd/dfa/structxii_g_a_l_texture_properties.htm#ad83af5a340597f573a5dafa97b651628", null ],
-    [ "m_bCubemapArraysSupported", "dd/dfa/structxii_g_a_l_texture_properties.htm#af20444256635b8fa9e0d28ffe72d1b2a", null ],
+    [ "m_bCubeMapArraysSupported", "dd/dfa/structxii_g_a_l_texture_properties.htm#a95e629efbf306f11886f5365c16f13dc", null ],
     [ "m_bTexture2DMSArraySupported", "dd/dfa/structxii_g_a_l_texture_properties.htm#a644c3858eaa1d6b6031e9fdb8e5a4faa", null ],
     [ "m_bTexture2DMSSupported", "dd/dfa/structxii_g_a_l_texture_properties.htm#aec82a9a0adb1f9db1ae0c4df6b117737", null ],
     [ "m_bTextureView2DOn3DSupported", "dd/dfa/structxii_g_a_l_texture_properties.htm#a4a6c8b0391382796299510f683784716", null ],

@@ -30,23 +30,23 @@ var hierarchy =
     [ "xiiGALResourceDimensionCapabilityFlags::Bits", "da/d56/structxii_g_a_l_resource_dimension_capability_flags_1_1_bits.htm", null ],
     [ "xiiGALSparseTextureFlags::Bits", "d6/d8f/structxii_g_a_l_sparse_texture_flags_1_1_bits.htm", null ],
     [ "xiiGALResourceStateFlags::Bits", "d4/d36/structxii_g_a_l_resource_state_flags_1_1_bits.htm", null ],
-    [ "xiiGALRaytTracingBuildASFlags::Bits", "d2/db5/structxii_g_a_l_rayt_tracing_build_a_s_flags_1_1_bits.htm", null ],
+    [ "xiiGALRayTracingBuildASFlags::Bits", "dd/d58/structxii_g_a_l_ray_tracing_build_a_s_flags_1_1_bits.htm", null ],
     [ "xiiGALMiscBufferFlags::Bits", "dc/d7b/structxii_g_a_l_misc_buffer_flags_1_1_bits.htm", null ],
+    [ "xiiMemoryTrackingFlags::Bits", "de/d72/structxii_memory_tracking_flags_1_1_bits.htm", null ],
     [ "xiiGALSamplerFlags::Bits", "d1/d06/structxii_g_a_l_sampler_flags_1_1_bits.htm", null ],
     [ "xiiGALMiscTextureFlags::Bits", "d2/d47/structxii_g_a_l_misc_texture_flags_1_1_bits.htm", null ],
     [ "xiiGALUnorderedAccessViewFlags::Bits", "de/d57/structxii_g_a_l_unordered_access_view_flags_1_1_bits.htm", null ],
     [ "xiiGALTextureViewFlags::Bits", "d6/d18/structxii_g_a_l_texture_view_flags_1_1_bits.htm", null ],
-    [ "xiiMemoryTrackingFlags::Bits", "de/d72/structxii_memory_tracking_flags_1_1_bits.htm", null ],
     [ "xiiGALColorMask::Bits", "d0/d47/structxii_g_a_l_color_mask_1_1_bits.htm", null ],
     [ "xiiBlackboardEntryFlags::Bits", "d1/d09/structxii_blackboard_entry_flags_1_1_bits.htm", null ],
     [ "xiiPropertyFlags::Bits", "d1/dcd/structxii_property_flags_1_1_bits.htm", null ],
     [ "xiiResourceFlags::Bits", "df/d78/structxii_resource_flags_1_1_bits.htm", null ],
     [ "xiiDynamicMenuAction::Item::ItemFlags::Bits", "d9/dbf/structxii_dynamic_menu_action_1_1_item_1_1_item_flags_1_1_bits.htm", null ],
-    [ "xiiStandardMenuTypes::Bits", "dd/d51/structxii_standard_menu_types_1_1_bits.htm", null ],
     [ "xiiDependencyFlags::Bits", "d3/db0/structxii_dependency_flags_1_1_bits.htm", null ],
+    [ "xiiStandardMenuTypes::Bits", "dd/d51/structxii_standard_menu_types_1_1_bits.htm", null ],
+    [ "xiiVisualizerAnchor::Bits", "dd/d39/structxii_visualizer_anchor_1_1_bits.htm", null ],
     [ "xiiNodeFlags::Bits", "d9/d5a/structxii_node_flags_1_1_bits.htm", null ],
     [ "xiiQtNodeScene::ConnectionDecorationFlags::Bits", "d8/d80/structxii_qt_node_scene_1_1_connection_decoration_flags_1_1_bits.htm", null ],
-    [ "xiiVisualizerAnchor::Bits", "dd/d39/structxii_visualizer_anchor_1_1_bits.htm", null ],
     [ "xiiInputSlotFlags::Bits", "de/def/structxii_input_slot_flags_1_1_bits.htm", null ],
     [ "xiiCVarFlags::Bits", "d3/df8/structxii_c_var_flags_1_1_bits.htm", null ],
     [ "xiiPluginLoadFlags::Bits", "df/d92/structxii_plugin_load_flags_1_1_bits.htm", null ],
@@ -1285,6 +1285,18 @@ var hierarchy =
         [ "xiiDynamicArray< xiiFunctionArgumentDescriptor >", "dc/da4/classxii_dynamic_array.htm", null ]
       ] ]
     ] ],
+    [ "xiiArrayBase< xiiGALCommandQueueProperties, xiiStaticArray< xiiGALCommandQueueProperties, Capacity > >", "da/d4c/classxii_array_base.htm", [
+      [ "xiiStaticArray< xiiGALCommandQueueProperties, XII_GAL_MAX_ADAPTER_QUEUES >", "d9/d25/classxii_static_array.htm", null ]
+    ] ],
+    [ "xiiArrayBase< xiiGALLayoutElement, xiiStaticArray< xiiGALLayoutElement, Capacity > >", "da/d4c/classxii_array_base.htm", [
+      [ "xiiStaticArray< xiiGALLayoutElement, XII_GAL_MAX_LAYOUT_ELEMENTS >", "d9/d25/classxii_static_array.htm", null ]
+    ] ],
+    [ "xiiArrayBase< xiiGALRenderTargetBlendDescription, xiiStaticArray< xiiGALRenderTargetBlendDescription, Capacity > >", "da/d4c/classxii_array_base.htm", [
+      [ "xiiStaticArray< xiiGALRenderTargetBlendDescription, XII_GAL_MAX_RENDERTARGET_COUNT >", "d9/d25/classxii_static_array.htm", null ]
+    ] ],
+    [ "xiiArrayBase< xiiGALShadingRateMode, xiiStaticArray< xiiGALShadingRateMode, Capacity > >", "da/d4c/classxii_array_base.htm", [
+      [ "xiiStaticArray< xiiGALShadingRateMode, XII_GAL_MAX_SHADING_RATE >", "d9/d25/classxii_static_array.htm", null ]
+    ] ],
     [ "xiiArrayBase< xiiGameObject *, xiiDynamicArrayBase< xiiGameObject * > >", "da/d4c/classxii_array_base.htm", [
       [ "xiiDynamicArrayBase< xiiGameObject * >", "d2/dea/classxii_dynamic_array_base.htm", [
         [ "xiiDynamicArray< xiiGameObject * >", "dc/da4/classxii_dynamic_array.htm", null ]
@@ -1916,8 +1928,8 @@ var hierarchy =
     [ "xiiBitflags< xiiGALDrawCommandCapabilityFlags >", "d7/d55/structxii_bitflags.htm", null ],
     [ "xiiBitflags< xiiGALMiscBufferFlags >", "d7/d55/structxii_bitflags.htm", null ],
     [ "xiiBitflags< xiiGALMiscTextureFlags >", "d7/d55/structxii_bitflags.htm", null ],
+    [ "xiiBitflags< xiiGALRayTracingBuildASFlags >", "d7/d55/structxii_bitflags.htm", null ],
     [ "xiiBitflags< xiiGALRayTracingCapabilityFlags >", "d7/d55/structxii_bitflags.htm", null ],
-    [ "xiiBitflags< xiiGALRaytTracingBuildASFlags >", "d7/d55/structxii_bitflags.htm", null ],
     [ "xiiBitflags< xiiGALSampleCount >", "d7/d55/structxii_bitflags.htm", null ],
     [ "xiiBitflags< xiiGALSamplerFlags >", "d7/d55/structxii_bitflags.htm", null ],
     [ "xiiBitflags< xiiGALShaderStage >", "d7/d55/structxii_bitflags.htm", null ],
@@ -1958,6 +1970,7 @@ var hierarchy =
     [ "xiiBoundingBoxTemplate< Type >", "d2/dd6/classxii_bounding_box_template.htm", null ],
     [ "xiiBoundingBoxTemplate< float >", "d2/dd6/classxii_bounding_box_template.htm", null ],
     [ "xiiBoundingSphereTemplate< Type >", "dd/d79/classxii_bounding_sphere_template.htm", null ],
+    [ "xiiShaderUtilities::xiiBuiltinShader", "d9/d14/structxii_shader_utilities_1_1xii_builtin_shader.htm", null ],
     [ "xiiCallbackResult", "d8/d2f/structxii_callback_result.htm", null ],
     [ "xiiCamera", "dc/d68/classxii_camera.htm", null ],
     [ "xiiCameraMode", "db/d4a/structxii_camera_mode.htm", null ],
@@ -2120,6 +2133,7 @@ var hierarchy =
       [ "xiiDelegate< void(EventData)>", "dc/d84/structxii_delegate.htm", null ],
       [ "xiiDelegate< void(IteratorType &)>", "dc/d84/structxii_delegate.htm", null ],
       [ "xiiDelegate< void(ResourceReloadContext &)>", "dc/d84/structxii_delegate.htm", null ],
+      [ "xiiDelegate< void(xiiBuiltinShaderType type, xiiShaderUtilities::xiiBuiltinShader &out_shader)>", "dc/d84/structxii_delegate.htm", null ],
       [ "xiiDelegate< void(xiiDocument *, xiiStatus)>", "dc/d84/structxii_delegate.htm", null ],
       [ "xiiDelegate< void(xiiLogEntry &)>", "dc/d84/structxii_delegate.htm", null ],
       [ "xiiDelegate< void(xiiRemoteMessage &)>", "dc/d84/structxii_delegate.htm", null ],
@@ -2491,6 +2505,7 @@ var hierarchy =
       [ "xiiEnum< xiiGALBlendOperation >", "de/dfd/structxii_enum.htm", null ]
     ] ],
     [ "xiiGALBlendStateHandle", "d2/d51/classxii_g_a_l_blend_state_handle.htm", null ],
+    [ "xiiGALBottomLevelASHandle", "d5/d6e/classxii_g_a_l_bottom_level_a_s_handle.htm", null ],
     [ "xiiGALBufferHandle", "d1/dba/classxii_g_a_l_buffer_handle.htm", null ],
     [ "xiiGALBufferMode", "de/dad/structxii_g_a_l_buffer_mode.htm", [
       [ "xiiEnum< xiiGALBufferMode >", "de/dfd/structxii_enum.htm", null ]
@@ -2520,7 +2535,9 @@ var hierarchy =
     [ "xiiGALDeviceFeatureState", "d0/d1e/structxii_g_a_l_device_feature_state.htm", [
       [ "xiiEnum< xiiGALDeviceFeatureState >", "de/dfd/structxii_enum.htm", null ]
     ] ],
+    [ "xiiGALDeviceHandle", "dc/d8b/classxii_g_a_l_device_handle.htm", null ],
     [ "xiiGALDrawCommandCapabilityFlags", "dc/dd9/structxii_g_a_l_draw_command_capability_flags.htm", null ],
+    [ "xiiGALFenceHandle", "dd/dc8/classxii_g_a_l_fence_handle.htm", null ],
     [ "xiiGALFenceType", "d9/d08/structxii_g_a_l_fence_type.htm", [
       [ "xiiEnum< xiiGALFenceType >", "de/dfd/structxii_enum.htm", null ]
     ] ],
@@ -2537,6 +2554,16 @@ var hierarchy =
       [ "xiiEnum< xiiGALGraphicsDeviceType >", "de/dfd/structxii_enum.htm", null ]
     ] ],
     [ "xiiGALGraphicsDeviceValidationLevel", "d8/dff/structxii_g_a_l_graphics_device_validation_level.htm", null ],
+    [ "xiiGALHitGroupBindingMode", "d6/dee/structxii_g_a_l_hit_group_binding_mode.htm", [
+      [ "xiiEnum< xiiGALHitGroupBindingMode >", "de/dfd/structxii_enum.htm", null ]
+    ] ],
+    [ "xiiGALInputElementFrequency", "d4/d13/structxii_g_a_l_input_element_frequency.htm", [
+      [ "xiiEnum< xiiGALInputElementFrequency >", "de/dfd/structxii_enum.htm", null ]
+    ] ],
+    [ "xiiGALInputLayoutHandle", "d4/da5/classxii_g_a_l_input_layout_handle.htm", null ],
+    [ "xiiGALInputLayoutSemantic", "dd/d3c/structxii_g_a_l_input_layout_semantic.htm", [
+      [ "xiiEnum< xiiGALInputLayoutSemantic >", "de/dfd/structxii_enum.htm", null ]
+    ] ],
     [ "xiiGALMapFlag", "d9/dad/structxii_g_a_l_map_flag.htm", null ],
     [ "xiiGALMapType", "da/d43/structxii_g_a_l_map_type.htm", null ],
     [ "xiiGALMemoryProperties", "d9/d57/structxii_g_a_l_memory_properties.htm", null ],
@@ -2548,9 +2575,40 @@ var hierarchy =
       [ "xiiEnum< xiiGALQueryType >", "de/dfd/structxii_enum.htm", null ]
     ] ],
     [ "xiiGALRasterizerStateHandle", "de/d86/classxii_g_a_l_rasterizer_state_handle.htm", null ],
+    [ "xiiGALRayTracingBuildASFlags", "d5/d76/structxii_g_a_l_ray_tracing_build_a_s_flags.htm", null ],
     [ "xiiGALRayTracingCapabilityFlags", "da/d3d/structxii_g_a_l_ray_tracing_capability_flags.htm", null ],
-    [ "xiiGALRaytTracingBuildASFlags", "d2/db4/structxii_g_a_l_rayt_tracing_build_a_s_flags.htm", null ],
     [ "xiiGALRenderTargetViewHandle", "d2/d3f/classxii_g_a_l_render_target_view_handle.htm", null ],
+    [ "xiiGALResource< CreationDescription >", "d4/d2d/classxii_g_a_l_resource.htm", null ],
+    [ "xiiGALResource< xiiGALBottomLevelASCreationDescription >", "d4/d2d/classxii_g_a_l_resource.htm", [
+      [ "xiiGALBottomLevelAS", "dc/d29/classxii_g_a_l_bottom_level_a_s.htm", null ]
+    ] ],
+    [ "xiiGALResource< xiiGALBufferCreationDescription >", "d4/d2d/classxii_g_a_l_resource.htm", [
+      [ "xiiGALBuffer", "da/d03/classxii_g_a_l_buffer.htm", null ]
+    ] ],
+    [ "xiiGALResource< xiiGALBufferViewCreationDescription >", "d4/d2d/classxii_g_a_l_resource.htm", [
+      [ "xiiGALBufferView", "d8/dcf/classxii_g_a_l_buffer_view.htm", null ]
+    ] ],
+    [ "xiiGALResource< xiiGALFenceCreationDescription >", "d4/d2d/classxii_g_a_l_resource.htm", [
+      [ "xiiGALFence", "d6/d79/classxii_g_a_l_fence.htm", null ]
+    ] ],
+    [ "xiiGALResource< xiiGALInputLayoutCreationDescription >", "d4/d2d/classxii_g_a_l_resource.htm", [
+      [ "xiiGALInputLayout", "dd/d38/classxii_g_a_l_input_layout.htm", null ]
+    ] ],
+    [ "xiiGALResource< xiiGALQueryCreationDescription >", "d4/d2d/classxii_g_a_l_resource.htm", [
+      [ "xiiGALQuery", "d8/db3/classxii_g_a_l_query.htm", null ]
+    ] ],
+    [ "xiiGALResource< xiiGALSamplerCreationDescription >", "d4/d2d/classxii_g_a_l_resource.htm", [
+      [ "xiiGALSampler", "d3/d97/classxii_g_a_l_sampler.htm", null ]
+    ] ],
+    [ "xiiGALResource< xiiGALTextureCreationDescription >", "d4/d2d/classxii_g_a_l_resource.htm", [
+      [ "xiiGALTexture", "d3/d9a/classxii_g_a_l_texture.htm", null ]
+    ] ],
+    [ "xiiGALResource< xiiGALTextureViewCreationDescription >", "d4/d2d/classxii_g_a_l_resource.htm", [
+      [ "xiiGALTextureView", "da/d75/classxii_g_a_l_texture_view.htm", null ]
+    ] ],
+    [ "xiiGALResource< xiiGALTopLevelASCreationDescription >", "d4/d2d/classxii_g_a_l_resource.htm", [
+      [ "xiiGALTopLevelAS", "de/de7/classxii_g_a_l_top_level_a_s.htm", null ]
+    ] ],
     [ "xiiGALResourceDimension", "da/d4c/structxii_g_a_l_resource_dimension.htm", [
       [ "xiiEnum< xiiGALResourceDimension >", "de/dfd/structxii_enum.htm", null ]
     ] ],
@@ -2608,12 +2666,12 @@ var hierarchy =
     [ "xiiGALTextureViewType", "db/d60/structxii_g_a_l_texture_view_type.htm", [
       [ "xiiEnum< xiiGALTextureViewType >", "de/dfd/structxii_enum.htm", null ]
     ] ],
+    [ "xiiGALTopLevelASHandle", "d5/dde/classxii_g_a_l_top_level_a_s_handle.htm", null ],
     [ "xiiGALUnorderedAccessViewFlags", "d8/d7e/structxii_g_a_l_unordered_access_view_flags.htm", null ],
     [ "xiiGALUnorderedAccessViewHandle", "d0/d76/classxii_g_a_l_unordered_access_view_handle.htm", null ],
     [ "xiiGALValueType", "da/d8b/structxii_g_a_l_value_type.htm", [
       [ "xiiEnum< xiiGALValueType >", "de/dfd/structxii_enum.htm", null ]
     ] ],
-    [ "xiiGALVertexDeclarationHandle", "d1/df5/classxii_g_a_l_vertex_declaration_handle.htm", null ],
     [ "xiiGALWaveFeature", "de/d87/structxii_g_a_l_wave_feature.htm", null ],
     [ "xiiGameApplicationExecutionEvent", "d7/de3/structxii_game_application_execution_event.htm", null ],
     [ "xiiGameApplicationStaticEvent", "da/d03/structxii_game_application_static_event.htm", null ],
@@ -2700,6 +2758,12 @@ var hierarchy =
     [ "xiiHashableStruct< xiiGALImmediateContextCreationDescription >", "d7/d9f/classxii_hashable_struct.htm", [
       [ "xiiGALImmediateContextCreationDescription", "d8/d99/structxii_g_a_l_immediate_context_creation_description.htm", null ]
     ] ],
+    [ "xiiHashableStruct< xiiGALInputLayoutCreationDescription >", "d7/d9f/classxii_hashable_struct.htm", [
+      [ "xiiGALInputLayoutCreationDescription", "d2/dee/structxii_g_a_l_input_layout_creation_description.htm", null ]
+    ] ],
+    [ "xiiHashableStruct< xiiGALLayoutElement >", "d7/d9f/classxii_hashable_struct.htm", [
+      [ "xiiGALLayoutElement", "d7/df5/structxii_g_a_l_layout_element.htm", null ]
+    ] ],
     [ "xiiHashableStruct< xiiGALMappedTextureSubresource >", "d7/d9f/classxii_hashable_struct.htm", [
       [ "xiiGALMappedTextureSubresource", "d7/dd1/structxii_g_a_l_mapped_texture_subresource.htm", null ]
     ] ],
@@ -2766,8 +2830,8 @@ var hierarchy =
     [ "xiiHashableStruct< xiiGALStencilOperationDescription >", "d7/d9f/classxii_hashable_struct.htm", [
       [ "xiiGALStencilOperationDescription", "d3/ddf/structxii_g_a_l_stencil_operation_description.htm", null ]
     ] ],
-    [ "xiiHashableStruct< xiiGALSwapchainCreationDescription >", "d7/d9f/classxii_hashable_struct.htm", [
-      [ "xiiGALSwapchainCreationDescription", "d2/da4/structxii_g_a_l_swapchain_creation_description.htm", null ]
+    [ "xiiHashableStruct< xiiGALSwapChainCreationDescription >", "d7/d9f/classxii_hashable_struct.htm", [
+      [ "xiiGALSwapChainCreationDescription", "d7/dc7/structxii_g_a_l_swap_chain_creation_description.htm", null ]
     ] ],
     [ "xiiHashableStruct< xiiGALTextureComponentMapping >", "d7/d9f/classxii_hashable_struct.htm", [
       [ "xiiGALTextureComponentMapping", "d1/d7f/structxii_g_a_l_texture_component_mapping.htm", null ]
@@ -2789,6 +2853,15 @@ var hierarchy =
     ] ],
     [ "xiiHashableStruct< xiiGALTextureViewCreationDescription >", "d7/d9f/classxii_hashable_struct.htm", [
       [ "xiiGALTextureViewCreationDescription", "d8/de2/structxii_g_a_l_texture_view_creation_description.htm", null ]
+    ] ],
+    [ "xiiHashableStruct< xiiGALTopLevelASBuildDescription >", "d7/d9f/classxii_hashable_struct.htm", [
+      [ "xiiGALTopLevelASBuildDescription", "d1/d60/structxii_g_a_l_top_level_a_s_build_description.htm", null ]
+    ] ],
+    [ "xiiHashableStruct< xiiGALTopLevelASCreationDescription >", "d7/d9f/classxii_hashable_struct.htm", [
+      [ "xiiGALTopLevelASCreationDescription", "df/d85/structxii_g_a_l_top_level_a_s_creation_description.htm", null ]
+    ] ],
+    [ "xiiHashableStruct< xiiGALTopLevelASInstanceDescription >", "d7/d9f/classxii_hashable_struct.htm", [
+      [ "xiiGALTopLevelASInstanceDescription", "d9/d45/structxii_g_a_l_top_level_a_s_instance_description.htm", null ]
     ] ],
     [ "xiiHashableStruct< xiiGALWaveOperationProperties >", "d7/d9f/classxii_hashable_struct.htm", [
       [ "xiiGALWaveOperationProperties", "df/d99/structxii_g_a_l_wave_operation_properties.htm", null ]
@@ -3815,33 +3888,8 @@ var hierarchy =
         ] ],
         [ "xiiDocumentObjectManager::Storage", "d5/d98/classxii_document_object_manager_1_1_storage.htm", null ],
         [ "xiiGALObject< CreationDescription >", "d3/dda/classxii_g_a_l_object.htm", null ],
-        [ "xiiGALResourceBase", "d4/d76/classxii_g_a_l_resource_base.htm", [
-          [ "xiiGALResource< CreationDescription >", "d4/d2d/classxii_g_a_l_resource.htm", null ],
-          [ "xiiGALResource< xiiGALBottomLevelASCreationDescription >", "d4/d2d/classxii_g_a_l_resource.htm", [
-            [ "xiiGALBottomLevelAS", "dc/d29/classxii_g_a_l_bottom_level_a_s.htm", null ]
-          ] ],
-          [ "xiiGALResource< xiiGALBufferCreationDescription >", "d4/d2d/classxii_g_a_l_resource.htm", [
-            [ "xiiGALBuffer", "da/d03/classxii_g_a_l_buffer.htm", null ]
-          ] ],
-          [ "xiiGALResource< xiiGALBufferViewCreationDescription >", "d4/d2d/classxii_g_a_l_resource.htm", [
-            [ "xiiGALBufferView", "d8/dcf/classxii_g_a_l_buffer_view.htm", null ]
-          ] ],
-          [ "xiiGALResource< xiiGALFenceCreationDescription >", "d4/d2d/classxii_g_a_l_resource.htm", [
-            [ "xiiGALFence", "d6/d79/classxii_g_a_l_fence.htm", null ]
-          ] ],
-          [ "xiiGALResource< xiiGALQueryCreationDescription >", "d4/d2d/classxii_g_a_l_resource.htm", [
-            [ "xiiGALQuery", "d8/db3/classxii_g_a_l_query.htm", null ]
-          ] ],
-          [ "xiiGALResource< xiiGALSamplerCreationDescription >", "d4/d2d/classxii_g_a_l_resource.htm", [
-            [ "xiiGALSampler", "d3/d97/classxii_g_a_l_sampler.htm", null ]
-          ] ],
-          [ "xiiGALResource< xiiGALTextureCreationDescription >", "d4/d2d/classxii_g_a_l_resource.htm", [
-            [ "xiiGALTexture", "d3/d9a/classxii_g_a_l_texture.htm", null ]
-          ] ],
-          [ "xiiGALResource< xiiGALTextureViewCreationDescription >", "d4/d2d/classxii_g_a_l_resource.htm", [
-            [ "xiiGALTextureView", "da/d75/classxii_g_a_l_texture_view.htm", null ]
-          ] ]
-        ] ],
+        [ "xiiGALResourceBase", "d4/d76/classxii_g_a_l_resource_base.htm", null ],
+        [ "xiiGALShaderByteCode", "db/d92/classxii_g_a_l_shader_byte_code.htm", null ],
         [ "xiiObjectMetaData< KEY, VALUE >::Storage", "dd/d42/classxii_object_meta_data_1_1_storage.htm", null ],
         [ "xiiRefCountedContainer< TYPE >", "d2/d89/classxii_ref_counted_container.htm", null ],
         [ "xiiSelectionManager::Storage", "d7/da6/classxii_selection_manager_1_1_storage.htm", null ],
@@ -3992,6 +4040,7 @@ var hierarchy =
       [ "xiiEnum< xiiSetColorMode >", "de/dfd/structxii_enum.htm", null ]
     ] ],
     [ "xiiSetPropertyAccessor< Class, Container, Member >", "d4/d3f/structxii_set_property_accessor.htm", null ],
+    [ "xiiShaderUtilities", "d9/dac/classxii_shader_utilities.htm", null ],
     [ "xiiSharedPtr< T >", "d8/d9b/classxii_shared_ptr.htm", null ],
     [ "xiiSharedPtr< UpdateTask >", "d8/d9b/classxii_shared_ptr.htm", null ],
     [ "xiiSharedPtr< xiiCommandHistory::Storage >", "d8/d9b/classxii_shared_ptr.htm", null ],
