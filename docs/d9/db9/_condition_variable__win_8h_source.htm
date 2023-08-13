@@ -116,30 +116,29 @@ $(document).ready(function(){initNavTree('d9/db9/_condition_variable__win_8h_sou
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword"></span>{</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  XII_ASSERT_DEV(m_iLockCount &gt; 0, <span class="stringliteral">&quot;xiiConditionVariable must be locked when calling UnlockWaitForSignalAndLock.&quot;</span>);</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  SleepConditionVariableCS(</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keyword">reinterpret_cast&lt;</span>CONDITION_VARIABLE*<span class="keyword">&gt;</span>(&amp;m_Data.m_ConditionVariable), (CRITICAL_SECTION*)&amp;m_Mutex.GetMutexHandle(), INFINITE);</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;}</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;xiiConditionVariable::WaitResult <a class="code" href="../../d4/d28/classxii_condition_variable.htm#af4edb8ab30702d3d5bb69e4e80ab00d7">xiiConditionVariable::UnlockWaitForSignalAndLock</a>(<a class="code" href="../../d7/dc1/structxii_time.htm">xiiTime</a> timeout)<span class="keyword"> const</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword"></span>{</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  XII_ASSERT_DEV(m_iLockCount &gt; 0, <span class="stringliteral">&quot;xiiConditionVariable must be locked when calling UnlockWaitForSignalAndLock.&quot;</span>);</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <span class="comment">// inside the lock</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  --m_iLockCount;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  DWORD result = SleepConditionVariableCS(<span class="keyword">reinterpret_cast&lt;</span>CONDITION_VARIABLE*<span class="keyword">&gt;</span>(&amp;m_Data.m_ConditionVariable),</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;                                          (CRITICAL_SECTION*)&amp;m_Mutex.GetMutexHandle(), <span class="keyword">static_cast&lt;</span>DWORD<span class="keyword">&gt;</span>(timeout.<a class="code" href="../../d7/dc1/structxii_time.htm#ab039f77744cbad442220b8b6d2f9c0e5">GetMilliseconds</a>()));</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <span class="keywordflow">if</span> (result == WAIT_TIMEOUT)</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  {</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="comment">// inside the lock at this point</span></div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    ++m_iLockCount;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordflow">return</span> WaitResult::Timeout;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  }</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <span class="comment">// inside the lock</span></div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  ++m_iLockCount;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <span class="keywordflow">return</span> WaitResult::Signaled;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;}</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  SleepConditionVariableCS(<span class="keyword">reinterpret_cast&lt;</span>CONDITION_VARIABLE*<span class="keyword">&gt;</span>(&amp;m_Data.m_ConditionVariable), (CRITICAL_SECTION*)&amp;m_Mutex.GetMutexHandle(), INFINITE);</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;}</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;xiiConditionVariable::WaitResult <a class="code" href="../../d4/d28/classxii_condition_variable.htm#af4edb8ab30702d3d5bb69e4e80ab00d7">xiiConditionVariable::UnlockWaitForSignalAndLock</a>(<a class="code" href="../../d7/dc1/structxii_time.htm">xiiTime</a> timeout)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  XII_ASSERT_DEV(m_iLockCount &gt; 0, <span class="stringliteral">&quot;xiiConditionVariable must be locked when calling UnlockWaitForSignalAndLock.&quot;</span>);</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <span class="comment">// inside the lock</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  --m_iLockCount;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  DWORD result = SleepConditionVariableCS(<span class="keyword">reinterpret_cast&lt;</span>CONDITION_VARIABLE*<span class="keyword">&gt;</span>(&amp;m_Data.m_ConditionVariable),</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;                                          (CRITICAL_SECTION*)&amp;m_Mutex.GetMutexHandle(), <span class="keyword">static_cast&lt;</span>DWORD<span class="keyword">&gt;</span>(timeout.<a class="code" href="../../d7/dc1/structxii_time.htm#ab039f77744cbad442220b8b6d2f9c0e5">GetMilliseconds</a>()));</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <span class="keywordflow">if</span> (result == WAIT_TIMEOUT)</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  {</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="comment">// inside the lock at this point</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    ++m_iLockCount;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordflow">return</span> WaitResult::Timeout;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  }</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <span class="comment">// inside the lock</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  ++m_iLockCount;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <span class="keywordflow">return</span> WaitResult::Signaled;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclassxii_condition_variable_htm_af4edb8ab30702d3d5bb69e4e80ab00d7"><div class="ttname"><a href="../../d4/d28/classxii_condition_variable.htm#af4edb8ab30702d3d5bb69e4e80ab00d7">xiiConditionVariable::UnlockWaitForSignalAndLock</a></div><div class="ttdeci">void UnlockWaitForSignalAndLock() const</div><div class="ttdoc">Puts the calling thread to sleep and waits for the variable to get signaled.</div><div class="ttdef"><b>Definition:</b> ConditionVariable_posix.h:29</div></div>
@@ -151,7 +150,7 @@ $(document).ready(function(){initNavTree('d9/db9/_condition_variable__win_8h_sou
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.htm">home</a></li><li class="navelem"><a class="el" href="../../dir_1036706e55c22cab35bc1c58ee689f1d.htm">runner</a></li><li class="navelem"><a class="el" href="../../dir_629f8151d55d307162ff2d619fb1783d.htm">work</a></li><li class="navelem"><a class="el" href="../../dir_1ddc44fe1263a8c7935fa6130b7d9499.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_2c1b6808f12952f4c36e05ba7068379a.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_b5a1c4ecfca018ad24b729e213296d41.htm">Source</a></li><li class="navelem"><a class="el" href="../../dir_e321052006a51284e67389ab20037e7c.htm">Engine</a></li><li class="navelem"><a class="el" href="../../dir_be0c42c58b36f42c54ec54024ed4f6af.htm">Foundation</a></li><li class="navelem"><a class="el" href="../../dir_c8751045d2b8443d4309f8d6fe6804f4.htm">Threading</a></li><li class="navelem"><a class="el" href="../../dir_e80ef092f2b4be82827a9ef66877a380.htm">Implementation</a></li><li class="navelem"><a class="el" href="../../dir_bb36e0e9bfed5cf26df053ca9a6c6170.htm">Win</a></li><li class="navelem"><b>ConditionVariable_win.h</b></li>
-    <li class="footer">Generated on Sat Aug 12 2023 21:47:52 for XIIEngine by
+    <li class="footer">Generated on Sun Aug 13 2023 13:25:16 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

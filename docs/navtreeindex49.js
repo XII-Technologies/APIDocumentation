@@ -1,5 +1,8 @@
 var NAVTREEINDEX49 =
 {
+"db/d9e/structxii_swizzle.htm#af85243d77ee966c0d27bee79d65039deaee780d43feccc4e27d4bfb5bbefe20b1":[4,0,1149,0,61],
+"db/d9e/structxii_swizzle.htm#af85243d77ee966c0d27bee79d65039deaee950ca2d1ab92adb436ccfaf4eec59c":[4,0,1149,0,39],
+"db/d9e/structxii_swizzle.htm#af85243d77ee966c0d27bee79d65039deaeec306b787171b3c3d4451250284c0f2":[4,0,1149,0,35],
 "db/d9e/structxii_swizzle.htm#af85243d77ee966c0d27bee79d65039deaf03644a8a7ecf4c7a5536c1e98076656":[4,0,1149,0,107],
 "db/d9e/structxii_swizzle.htm#af85243d77ee966c0d27bee79d65039deaf2dac20052c88fae547f935bd01c926f":[4,0,1149,0,135],
 "db/d9e/structxii_swizzle.htm#af85243d77ee966c0d27bee79d65039deaf382d1c929bea82e09b1016848f63538":[4,0,1149,0,128],
@@ -246,8 +249,5 @@ var NAVTREEINDEX49 =
 "db/dfc/classxii_curve_group_data.htm#a557a1eb31b62a23f089f0c6fcc4e6448":[4,0,237,0],
 "db/dfc/classxii_curve_group_data.htm#a59e614b4712b198134178c6b28f3149c":[4,0,237,10],
 "db/dfc/classxii_curve_group_data.htm#a5d5cb333352c315de71999b2250588ca":[4,0,237,4],
-"db/dfc/classxii_curve_group_data.htm#a827c71bd9aec40d650255c3c3cedaa6e":[4,0,237,1],
-"db/dfc/classxii_curve_group_data.htm#a91d38d3ea52787dbd027591517649228":[4,0,237,6],
-"db/dfc/classxii_curve_group_data.htm#acc75e6675f4d8a7870b14a06ea57fe20":[4,0,237,7],
-"db/dfc/classxii_curve_group_data.htm#ace5c5b5cb3a84259cc7729eb09d43231":[4,0,237,9]
+"db/dfc/classxii_curve_group_data.htm#a827c71bd9aec40d650255c3c3cedaa6e":[4,0,237,1]
 };

@@ -1,5 +1,6 @@
 var NAVTREEINDEX7 =
 {
+"d1/d8e/classxii_d_g_m_l_graph.htm#a0a64025984fb7ab980ada75394037ea5":[4,0,277,15],
 "d1/d8e/classxii_d_g_m_l_graph.htm#a0c049c27a64789f96e41a28cf5bd9ebc":[4,0,277,20],
 "d1/d8e/classxii_d_g_m_l_graph.htm#a21b34e90f2169a0021e452036817fd22":[4,0,277,8],
 "d1/d8e/classxii_d_g_m_l_graph.htm#a21b34e90f2169a0021e452036817fd22a63dc349be51108dcfd197c7ab02b486a":[4,0,277,8,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX7 =
 "d1/de4/classxii_static_ring_buffer.htm#af9e1cab0ae331cbe231667e7e7466694":[4,0,1121,5],
 "d1/de4/structxii_g_a_l_depth_stencil_clear_value.htm":[4,0,417],
 "d1/de4/structxii_g_a_l_depth_stencil_clear_value.htm#a087e6fd4843f50eef370fd1c574c5139":[4,0,417,0],
-"d1/de4/structxii_g_a_l_depth_stencil_clear_value.htm#a13859c8ea77d93a799dbb9d8ae663196":[4,0,417,1],
-"d1/de4/structxii_g_a_l_depth_stencil_clear_value.htm#a374aa025e2c5ef7224f000d379fcd78f":[4,0,417,2]
+"d1/de4/structxii_g_a_l_depth_stencil_clear_value.htm#a13859c8ea77d93a799dbb9d8ae663196":[4,0,417,1]
 };

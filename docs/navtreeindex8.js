@@ -1,5 +1,6 @@
 var NAVTREEINDEX8 =
 {
+"d1/de4/structxii_g_a_l_depth_stencil_clear_value.htm#a374aa025e2c5ef7224f000d379fcd78f":[4,0,417,2],
 "d1/de5/structxii_msg_only_apply_to_object.htm":[4,0,742],
 "d1/de5/structxii_msg_only_apply_to_object.htm#a08adb1879ebbe88ec085616f94abc349":[4,0,742,1],
 "d1/de5/structxii_msg_only_apply_to_object.htm#a8a8ce6237b7af8571ebeecdfba491f00":[4,0,742,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX8 =
 "d2/d26/structxii_document_object_event.htm#ab2dcb9689e0418378afb1dcf73aeae15":[4,0,296,2],
 "d2/d29/structxii_string_base.htm":[4,0,1130],
 "d2/d29/structxii_string_base.htm#a080a07482e950dd521c144ad5e5df772":[4,0,1130,33],
-"d2/d29/structxii_string_base.htm#a101e9caaeb85898455be66067f6cbf24":[4,0,1130,27],
-"d2/d29/structxii_string_base.htm#a12c98cff745962d433c06a47b9855455":[4,0,1130,41]
+"d2/d29/structxii_string_base.htm#a101e9caaeb85898455be66067f6cbf24":[4,0,1130,27]
 };

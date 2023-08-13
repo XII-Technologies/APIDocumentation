@@ -1,5 +1,8 @@
 var NAVTREEINDEX40 =
 {
+"d9/dbc/classxii_geometry.htm#a5d79c5d70b9ff4dce08fc3334d6b5656":[4,0,552,37],
+"d9/dbc/classxii_geometry.htm#a628c2195824da6902cf62a32f8b38ec8":[4,0,552,7],
+"d9/dbc/classxii_geometry.htm#a6db9d857c48654fb9018f910b3529ddf":[4,0,552,38],
 "d9/dbc/classxii_geometry.htm#a7162aadd8f8db864bd24d2da6f3935ee":[4,0,552,10],
 "d9/dbc/classxii_geometry.htm#a8c27472742de4df35fd8ee4cc998add1":[4,0,552,4],
 "d9/dbc/classxii_geometry.htm#a8e10c941c7f396a5935fe4b17ebbf9ae":[4,0,552,14],
@@ -246,8 +249,5 @@ var NAVTREEINDEX40 =
 "d9/dfd/structxii_g_a_l_mesh_shader_properties.htm#afe74c619837bc23e022c48112052cbdf":[4,0,453,3],
 "d9/dfe/classxii_world_module.htm":[4,0,1305],
 "d9/dfe/classxii_world_module.htm#a01634779f8effe43f379fc573b19aef8":[4,0,1305,14],
-"d9/dfe/classxii_world_module.htm#a09a0378a5e96ffa6b69fb55d4e59f8a4":[4,0,1305,11],
-"d9/dfe/classxii_world_module.htm#a1279f469fa1386bdf62213f76fc3426e":[4,0,1305,4],
-"d9/dfe/classxii_world_module.htm#a1536af5f9f223828a3afdf41894d91b6":[4,0,1305,5],
-"d9/dfe/classxii_world_module.htm#a16d173b58d687b947798145fcaf8d165":[4,0,1305,8]
+"d9/dfe/classxii_world_module.htm#a09a0378a5e96ffa6b69fb55d4e59f8a4":[4,0,1305,11]
 };

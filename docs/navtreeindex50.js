@@ -1,5 +1,8 @@
 var NAVTREEINDEX50 =
 {
+"db/dfc/classxii_curve_group_data.htm#a91d38d3ea52787dbd027591517649228":[4,0,237,6],
+"db/dfc/classxii_curve_group_data.htm#acc75e6675f4d8a7870b14a06ea57fe20":[4,0,237,7],
+"db/dfc/classxii_curve_group_data.htm#ace5c5b5cb3a84259cc7729eb09d43231":[4,0,237,9],
 "db/dfc/classxii_curve_group_data.htm#ad100b2628bf52007e9528f31740f7655":[4,0,237,5],
 "db/dfc/structxii_selected_curve_c_p.htm":[4,0,1051],
 "db/dfc/structxii_selected_curve_c_p.htm#a1b73bc15f78cd99af51acf42001ac1f1":[4,0,1051,1],
@@ -246,8 +249,5 @@ var NAVTREEINDEX50 =
 "dc/d68/classxii_camera.htm#a568b90bbfe62cfe348731e83376d2639":[4,0,124,31],
 "dc/d68/classxii_camera.htm#a5da53c4bfbf1841659a6ca3d38e69b95":[4,0,124,11],
 "dc/d68/classxii_camera.htm#a6e8d3566537392409886a627378dfd4f":[4,0,124,17],
-"dc/d68/classxii_camera.htm#a77eea6b44aeb0348fe042d46bff60b20":[4,0,124,29],
-"dc/d68/classxii_camera.htm#a7bd5b333ba3bb76d4c99653d7c110d85":[4,0,124,5],
-"dc/d68/classxii_camera.htm#a7f4ce2168e13cbdfc07a3e742f42cb68":[4,0,124,12],
-"dc/d68/classxii_camera.htm#a7f9ec38722675b9a9778b8d55827d103":[4,0,124,9]
+"dc/d68/classxii_camera.htm#a77eea6b44aeb0348fe042d46bff60b20":[4,0,124,29]
 };

@@ -1,5 +1,8 @@
 var NAVTREEINDEX22 =
 {
+"d5/d71/structxii_g_a_l_draw_command_properties.htm#adc5ec4ad74485feb1ae4e307fdba7580":[4,0,429,1],
+"d5/d72/classxii_qt_graphics_view.htm":[4,0,899],
+"d5/d72/classxii_qt_graphics_view.htm#a0e689905309ccfc06d130b54a788654f":[4,0,899,15],
 "d5/d72/classxii_qt_graphics_view.htm#a0ebe0302b92fefbb35f6a9adc32044bf":[4,0,899,4],
 "d5/d72/classxii_qt_graphics_view.htm#a1019c80bce7997c682bf98e9b081a508":[4,0,899,11],
 "d5/d72/classxii_qt_graphics_view.htm#a1b99978541d729856b9811d77c3d3b07":[4,0,899,0],
@@ -234,10 +237,10 @@ var NAVTREEINDEX22 =
 "d5/dba/classxii_simd_vec4d.htm#a17d74df0c9ca9b1beb56ca37562882c1":[4,0,1084,119],
 "d5/dba/classxii_simd_vec4d.htm#a19662abec90af933dcc76a0b1df4e990":[4,0,1084,104],
 "d5/dba/classxii_simd_vec4d.htm#a1a8201ca230745b64feab8df603b22ed":[4,0,1084,22],
-"d5/dba/classxii_simd_vec4d.htm#a1b6ecd609e107c0a62e5ea1df218bede":[4,0,1084,83],
 "d5/dba/classxii_simd_vec4d.htm#a1b6ecd609e107c0a62e5ea1df218bede":[4,0,1084,80],
 "d5/dba/classxii_simd_vec4d.htm#a1b6ecd609e107c0a62e5ea1df218bede":[4,0,1084,81],
 "d5/dba/classxii_simd_vec4d.htm#a1b6ecd609e107c0a62e5ea1df218bede":[4,0,1084,82],
+"d5/dba/classxii_simd_vec4d.htm#a1b6ecd609e107c0a62e5ea1df218bede":[4,0,1084,83],
 "d5/dba/classxii_simd_vec4d.htm#a1cbef5a4b87a87a34859ffb29051a847":[4,0,1084,98],
 "d5/dba/classxii_simd_vec4d.htm#a1f4a061f9fe353fb1419971b1e34c8e0":[4,0,1084,106],
 "d5/dba/classxii_simd_vec4d.htm#a1fbf94d87a102351ee9aa7c81a898e86":[4,0,1084,10],
@@ -246,8 +249,5 @@ var NAVTREEINDEX22 =
 "d5/dba/classxii_simd_vec4d.htm#a33d09763db0470b93f67c969ba68a267":[4,0,1084,11],
 "d5/dba/classxii_simd_vec4d.htm#a3923770393deae457eb80f10f6d49c74":[4,0,1084,76],
 "d5/dba/classxii_simd_vec4d.htm#a39f0062578ef0ae0df9f1a02ead831e0":[4,0,1084,29],
-"d5/dba/classxii_simd_vec4d.htm#a3bafde8a53df5687f420f6dcb531b6d7":[4,0,1084,89],
-"d5/dba/classxii_simd_vec4d.htm#a3c275831e48300f69fd8b6b1ad8d2967":[4,0,1084,93],
-"d5/dba/classxii_simd_vec4d.htm#a3d8f1eae14490f7be2bf81cf43b3cc12":[4,0,1084,94],
-"d5/dba/classxii_simd_vec4d.htm#a4048b423a476c36ae876f94785926bfb":[4,0,1084,9]
+"d5/dba/classxii_simd_vec4d.htm#a3bafde8a53df5687f420f6dcb531b6d7":[4,0,1084,89]
 };

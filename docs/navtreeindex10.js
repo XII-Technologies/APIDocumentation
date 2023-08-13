@@ -1,5 +1,6 @@
 var NAVTREEINDEX10 =
 {
+"d2/d6d/structxii_g_a_l_comparison_function.htm#a639404422ff8a69955fc32b29aab795b":[4,0,413,0],
 "d2/d6e/classxii_archive_lookup_string.htm":[4,0,74],
 "d2/d6e/classxii_archive_lookup_string.htm#a3b443cbd5ba222563900e5ebcc7bcb5e":[4,0,74,1],
 "d2/d6e/classxii_archive_lookup_string.htm#a3f8b630a618595f1fa7c7f3a80d452d2":[4,0,74,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX10 =
 "d2/dbb/classxii_data_transfer_object.htm":[4,0,252],
 "d2/dbb/classxii_data_transfer_object.htm#a08712a357d797528c8cc03861f6cbd3f":[4,0,252,2],
 "d2/dbb/classxii_data_transfer_object.htm#a23aae8193cb7689eb70a134da93e10b5":[4,0,252,0],
-"d2/dbb/classxii_data_transfer_object.htm#a7eeabebd4ad14d666da74267f7b984b9":[4,0,252,3],
-"d2/dbb/classxii_data_transfer_object.htm#aade0cc6b353e8cd5c8d5298619a21809":[4,0,252,1]
+"d2/dbb/classxii_data_transfer_object.htm#a7eeabebd4ad14d666da74267f7b984b9":[4,0,252,3]
 };

@@ -1,5 +1,8 @@
 var NAVTREEINDEX45 =
 {
+"db/d05/structxii_document_object_structure_event.htm#a6660fdad81f5363d0b3f67acc2226eb5adf2c121efedffb3b6073620bc96b243c":[4,0,301,0,0],
+"db/d05/structxii_document_object_structure_event.htm#a6660fdad81f5363d0b3f67acc2226eb5adfd3f66845c6b5a792f009eab062ff57":[4,0,301,0,6],
+"db/d05/structxii_document_object_structure_event.htm#a6a142aab9a4d4d03dad0bac23ea06d0e":[4,0,301,7],
 "db/d05/structxii_document_object_structure_event.htm#aa39cb9ac1800b707cf5017ec36280d0e":[4,0,301,10],
 "db/d05/structxii_document_object_structure_event.htm#ab30358ed9bbc736c1decf77baf3a8c5f":[4,0,301,1],
 "db/d05/structxii_document_object_structure_event.htm#ad11fb18d0b9ac3bbd5e73381fe0315d5":[4,0,301,2],
@@ -175,10 +178,10 @@ var NAVTREEINDEX45 =
 "db/d1a/classxii_variant.htm#aa05b5de4f5ad50cd6398f8ab9f2a2043":[4,0,1255,74],
 "db/d1a/classxii_variant.htm#aa06681dbe2f7d2c77e9950fe751db1c8":[4,0,1255,114],
 "db/d1a/classxii_variant.htm#aa1d83252c0dfba2593f883b27b72bbfa":[4,0,1255,14],
-"db/d1a/classxii_variant.htm#aa28a169f3d484e9d656060b372ce2563":[4,0,1255,96],
-"db/d1a/classxii_variant.htm#aa28a169f3d484e9d656060b372ce2563":[4,0,1255,94],
 "db/d1a/classxii_variant.htm#aa28a169f3d484e9d656060b372ce2563":[4,0,1255,93],
 "db/d1a/classxii_variant.htm#aa28a169f3d484e9d656060b372ce2563":[4,0,1255,95],
+"db/d1a/classxii_variant.htm#aa28a169f3d484e9d656060b372ce2563":[4,0,1255,94],
+"db/d1a/classxii_variant.htm#aa28a169f3d484e9d656060b372ce2563":[4,0,1255,96],
 "db/d1a/classxii_variant.htm#aa2aa01491e5c8430accfa88c9c830e47":[4,0,1255,39],
 "db/d1a/classxii_variant.htm#aa2f53e61b74652dc20df053e64314ece":[4,0,1255,7],
 "db/d1a/classxii_variant.htm#aa3fb9dde7601af1db3639dc733818fff":[4,0,1255,117],
@@ -246,8 +249,5 @@ var NAVTREEINDEX45 =
 "db/d33/classxii_resize_and_set_object_property_command.htm#a0f86c06a34759f90f7063e7768906a7c":[4,0,1001,6],
 "db/d33/classxii_resize_and_set_object_property_command.htm#a15afec7c9a682bc163ef40867aafecf5":[4,0,1001,3],
 "db/d33/classxii_resize_and_set_object_property_command.htm#a1dab2e7e1e4efcf27e7c02b0da5df6b8":[4,0,1001,5],
-"db/d33/classxii_resize_and_set_object_property_command.htm#a322fbee755e72e760acdf29bcb527af2":[4,0,1001,1],
-"db/d33/classxii_resize_and_set_object_property_command.htm#a416959a501223bca5139afe8d00323b0":[4,0,1001,0],
-"db/d33/classxii_resize_and_set_object_property_command.htm#a4722b81fd33e9c26a6028657b889d875":[4,0,1001,4],
-"db/d33/classxii_resize_and_set_object_property_command.htm#ad0c7b17bd0a350986eda3a012389a97a":[4,0,1001,7]
+"db/d33/classxii_resize_and_set_object_property_command.htm#a322fbee755e72e760acdf29bcb527af2":[4,0,1001,1]
 };

@@ -1,5 +1,8 @@
 var NAVTREEINDEX37 =
 {
+"d9/d1b/classxii_quat_template.htm#a4c5018aaf26a32127f17884de644e485":[4,0,971,19],
+"d9/d1b/classxii_quat_template.htm#a4e6d4c187d368bbf3ef46d7914393b1c":[4,0,971,13],
+"d9/d1b/classxii_quat_template.htm#a5075d7c7aec251654c357df8d41f04ba":[4,0,971,25],
 "d9/d1b/classxii_quat_template.htm#a57c283998a8fe1e5bc7c8725386f19d1":[4,0,971,18],
 "d9/d1b/classxii_quat_template.htm#a626e119e067b041d16a8fd8bfb006c92":[4,0,971,14],
 "d9/d1b/classxii_quat_template.htm#a6b970debf0253d65fa6b2dfd24cec186":[4,0,971,0],
@@ -246,8 +249,5 @@ var NAVTREEINDEX37 =
 "d9/d4b/structxii_geometry_1_1_vertex.htm#a50d62060cc755cb6919bce1e86db71cd":[4,0,552,3,8],
 "d9/d4b/structxii_geometry_1_1_vertex.htm#a56bcc1aa7301b1aaa075ebcd2ff59f52":[4,0,552,3,6],
 "d9/d4b/structxii_geometry_1_1_vertex.htm#a5ea93fed77a8c810fc021470deeaa690":[4,0,552,3,2],
-"d9/d4b/structxii_geometry_1_1_vertex.htm#a730939ecebea39960da8a946f6738e48":[4,0,552,3,9],
-"d9/d4b/structxii_geometry_1_1_vertex.htm#a7f69dd4b3c555661b7eb6a92c9b52ad3":[4,0,552,3,3],
-"d9/d4b/structxii_geometry_1_1_vertex.htm#a8071b6c4f33d088bb72dcd755b62afb9":[4,0,552,3,1],
-"d9/d4b/structxii_geometry_1_1_vertex.htm#aa00344ed0569003f1676c7f8d83e2d10":[4,0,552,3,0]
+"d9/d4b/structxii_geometry_1_1_vertex.htm#a730939ecebea39960da8a946f6738e48":[4,0,552,3,9]
 };

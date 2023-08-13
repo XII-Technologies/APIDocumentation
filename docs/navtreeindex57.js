@@ -1,5 +1,8 @@
 var NAVTREEINDEX57 =
 {
+"dd/deb/structxii_arg_sensitive.htm#a6b6f0b9bf9a77be00de84d3e5c4b4ef7":[4,0,85,2],
+"dd/deb/structxii_arg_sensitive.htm#aaf8484486db86c1d17cfd048f2011f1e":[4,0,85,0],
+"dd/deb/structxii_container_sub_type_resolver_3_01xii_set_3_01_t_01_4_01_4.htm":[4,0,216],
 "dd/deb/structxii_container_sub_type_resolver_3_01xii_set_3_01_t_01_4_01_4.htm#aa5b3a7b7a9f477ae2661a87124f76f73":[4,0,216,0],
 "dd/df1/structxii_hash_helper_3_01_t_01_5_01_4.htm":[4,0,569],
 "dd/df2/structxii_d_g_m_l_graph_1_1_property_type.htm":[4,0,277,3],
@@ -246,8 +249,5 @@ var NAVTREEINDEX57 =
 "de/d33/classxii_data_directory_type.htm#acd11182eed4408e3c068a94ea8c14aca":[4,0,249,7],
 "de/d33/classxii_data_directory_type.htm#ad33cf57aa85c8e8274d2fac2ca7f9cf6":[4,0,249,4],
 "de/d33/classxii_data_directory_type.htm#adb3d2dba5a4418a512c07cde52ae28e6":[4,0,249,0],
-"de/d33/classxii_data_directory_type.htm#ae00b69a7586651b18fe3a975f539c3a3":[4,0,249,13],
-"de/d33/classxii_data_directory_type.htm#af0802a5a5122081e08fa93a8b22a7987":[4,0,249,1],
-"de/d33/classxii_data_directory_type.htm#af37d2e15bf597bd73cbbfa9564e9e996":[4,0,249,10],
-"de/d33/classxii_memory_policies_1_1xii_heap_allocation.htm":[4,0,6,4]
+"de/d33/classxii_data_directory_type.htm#ae00b69a7586651b18fe3a975f539c3a3":[4,0,249,13]
 };

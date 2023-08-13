@@ -1,5 +1,8 @@
 var NAVTREEINDEX36 =
 {
+"d8/dc3/classxii_qt_application_panel.htm#a0f96680edcee33430e0691eb7ce0e83f":[4,0,865,0],
+"d8/dc3/classxii_qt_application_panel.htm#a4cfd34c3e48da25024734e1d788ddce8":[4,0,865,3],
+"d8/dc3/classxii_qt_application_panel.htm#ac1ce14ca6da12c148a4b732bc291b602":[4,0,865,4],
 "d8/dc3/classxii_qt_application_panel.htm#acd29737febe8a60fe57f2479b429e6c8":[4,0,865,2],
 "d8/dc3/classxii_qt_application_panel.htm#af68b497013daa2a3fb1bb0f608b8d9d9":[4,0,865,5],
 "d8/dc8/classxii_qt_property_editor_tag_set_widget.htm":[4,0,938],
@@ -246,8 +249,5 @@ var NAVTREEINDEX36 =
 "d9/d1b/classxii_quat_template.htm#a1ccee339c17216c8ed01970c2c4bfea2":[4,0,971,8],
 "d9/d1b/classxii_quat_template.htm#a26c26f991f27ebcb8d6bd3aa7e2edd08":[4,0,971,23],
 "d9/d1b/classxii_quat_template.htm#a4439e3b9882a6a061622a29f9c42cd5f":[4,0,971,7],
-"d9/d1b/classxii_quat_template.htm#a49829f80f46861fa33a195732adaee32":[4,0,971,16],
-"d9/d1b/classxii_quat_template.htm#a4c5018aaf26a32127f17884de644e485":[4,0,971,19],
-"d9/d1b/classxii_quat_template.htm#a4e6d4c187d368bbf3ef46d7914393b1c":[4,0,971,13],
-"d9/d1b/classxii_quat_template.htm#a5075d7c7aec251654c357df8d41f04ba":[4,0,971,25]
+"d9/d1b/classxii_quat_template.htm#a49829f80f46861fa33a195732adaee32":[4,0,971,16]
 };

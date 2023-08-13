@@ -1,5 +1,8 @@
 var NAVTREEINDEX17 =
 {
+"d4/d5b/classxii_expression_a_s_t.htm#a4417f4e9056f1992d336bb5f6384e628":[4,0,347,26],
+"d4/d5b/classxii_expression_a_s_t.htm#a453f1488f1a14b68357a3fb1b5a4f59d":[4,0,347,25],
+"d4/d5b/classxii_expression_a_s_t.htm#a46659475f94dde09fef0e5977a396132":[4,0,347,32],
 "d4/d5b/classxii_expression_a_s_t.htm#a4f8445d8d00db8de26d145179bf25d34":[4,0,347,34],
 "d4/d5b/classxii_expression_a_s_t.htm#a5b70fe4d1f152c92278ac786507984e8":[4,0,347,35],
 "d4/d5b/classxii_expression_a_s_t.htm#a5f1890d5581eb47fc9d9b085a2b5e37c":[4,0,347,37],
@@ -246,8 +249,5 @@ var NAVTREEINDEX17 =
 "d4/d8c/classxii_scoped_ref_pointer.htm#ae327cb31b8838f0b28ba0370ef468396":[4,0,1029,3],
 "d4/d8d/classxii_simd_mat4f.htm":[4,0,1075],
 "d4/d8d/classxii_simd_mat4f.htm#a0bb26cee7c275a11080640e52a1ac4a1":[4,0,1075,22],
-"d4/d8d/classxii_simd_mat4f.htm#a1359cf7c10b5f827cca2b03eb2b46066":[4,0,1075,8],
-"d4/d8d/classxii_simd_mat4f.htm#a154af6d1f5bbb100d73f39eb07b3f7e4":[4,0,1075,12],
-"d4/d8d/classxii_simd_mat4f.htm#a15795b5e854f6633e4cd6f8511278c34":[4,0,1075,19],
-"d4/d8d/classxii_simd_mat4f.htm#a2058e19550239b65882b1a498082d7a8":[4,0,1075,3]
+"d4/d8d/classxii_simd_mat4f.htm#a1359cf7c10b5f827cca2b03eb2b46066":[4,0,1075,8]
 };

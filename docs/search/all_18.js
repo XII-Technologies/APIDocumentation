@@ -87,7 +87,7 @@ var searchData=
   ['xiiarchivetoc_4268',['xiiArchiveTOC',['../d8/d66/classxii_archive_t_o_c.htm',1,'']]],
   ['xiiarchiveutils_4269',['xiiArchiveUtils',['../d2/d5c/namespacexii_archive_utils.htm',1,'']]],
   ['xiiargc_4270',['xiiArgC',['../d5/d82/structxii_arg_c.htm',1,'']]],
-  ['xiiargdatetime_4271',['xiiArgDateTime',['../d1/d65/structxii_arg_date_time.htm',1,'xiiArgDateTime'],['../d1/d65/structxii_arg_date_time.htm#aa48feeb89d528847d8ea3e94389ae0e0',1,'xiiArgDateTime::xiiArgDateTime()']]],
+  ['xiiargdatetime_4271',['xiiArgDateTime',['../d1/d65/structxii_arg_date_time.htm',1,'xiiArgDateTime'],['../d1/d65/structxii_arg_date_time.htm#aa48feeb89d528847d8ea3e94389ae0e0',1,'xiiArgDateTime::xiiArgDateTime(const xiiDateTime &amp;dateTime, xiiUInt32 uiFormattingFlags=Default)'],['../d1/d65/structxii_arg_date_time.htm#a05d1a898007906079bec84b47a13e0b1',1,'xiiArgDateTime::xiiArgDateTime(const xiiTimestamp &amp;timestamp, xiiUInt32 uiFormattingFlags=Default)']]],
   ['xiiargf_4272',['xiiArgF',['../d5/d0e/structxii_arg_f.htm',1,'']]],
   ['xiiargfilesize_4273',['xiiArgFileSize',['../d4/d4c/structxii_arg_file_size.htm',1,'']]],
   ['xiiarghumanreadable_4274',['xiiArgHumanReadable',['../d0/d4a/structxii_arg_human_readable.htm',1,'']]],

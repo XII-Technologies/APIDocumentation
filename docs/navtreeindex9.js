@@ -1,5 +1,6 @@
 var NAVTREEINDEX9 =
 {
+"d2/d29/structxii_string_base.htm#a12c98cff745962d433c06a47b9855455":[4,0,1130,41],
 "d2/d29/structxii_string_base.htm#a1bc02e9477b8b4db57f52cb9fe5ed2cb":[4,0,1130,14],
 "d2/d29/structxii_string_base.htm#a1ef1a78330f1b3a875e5979dc640f3e2":[4,0,1130,18],
 "d2/d29/structxii_string_base.htm#a1f8a779fac3cc4bfbc1b13e9b0b0b3f0":[4,0,1130,44],
@@ -248,6 +249,5 @@ var NAVTREEINDEX9 =
 "d2/d6d/structxii_g_a_l_comparison_function.htm#a379b1dc5f2a81ba2b9a7f934fe9b9df3aa44f27dce78c7112e397f3152ec7fe79":[4,0,413,1,3],
 "d2/d6d/structxii_g_a_l_comparison_function.htm#a379b1dc5f2a81ba2b9a7f934fe9b9df3aaa18589e297bc18d1da217a74f7aa11c":[4,0,413,1,0],
 "d2/d6d/structxii_g_a_l_comparison_function.htm#a379b1dc5f2a81ba2b9a7f934fe9b9df3ac5d63c648c5bbf816ef757e85c8d875d":[4,0,413,1,8],
-"d2/d6d/structxii_g_a_l_comparison_function.htm#a379b1dc5f2a81ba2b9a7f934fe9b9df3af61d6035710f01306a7acaf632c65fca":[4,0,413,1,9],
-"d2/d6d/structxii_g_a_l_comparison_function.htm#a639404422ff8a69955fc32b29aab795b":[4,0,413,0]
+"d2/d6d/structxii_g_a_l_comparison_function.htm#a379b1dc5f2a81ba2b9a7f934fe9b9df3af61d6035710f01306a7acaf632c65fca":[4,0,413,1,9]
 };

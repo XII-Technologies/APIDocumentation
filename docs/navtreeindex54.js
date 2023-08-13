@@ -1,5 +1,8 @@
 var NAVTREEINDEX54 =
 {
+"dd/d38/classxii_g_a_l_input_layout.htm#acaae75fe9f3db089e6af2204e7207d8c":[4,0,444,3],
+"dd/d39/structxii_visualizer_anchor_1_1_bits.htm":[4,0,1290,0],
+"dd/d39/structxii_visualizer_anchor_1_1_bits.htm#a10eb64dfd234e4fc47c31e374b17f429":[4,0,1290,0,4],
 "dd/d39/structxii_visualizer_anchor_1_1_bits.htm#a1cec725c8fa4fdbd83827ffcd04dd341":[4,0,1290,0,2],
 "dd/d39/structxii_visualizer_anchor_1_1_bits.htm#a4790c5227586f093d5a2428080ccbfdb":[4,0,1290,0,5],
 "dd/d39/structxii_visualizer_anchor_1_1_bits.htm#a59c41c5c0cdc82ca55322eece3ecee15":[4,0,1290,0,3],
@@ -246,8 +249,5 @@ var NAVTREEINDEX54 =
 "dd/d5a/classxii_typed_c_var.htm":[4,0,1223],
 "dd/d5a/classxii_typed_c_var.htm#a011c069c73279429c7936517ff14f920":[4,0,1223,4],
 "dd/d5a/classxii_typed_c_var.htm#a06439415cb472f0401d0e6568921c023":[4,0,1223,0],
-"dd/d5a/classxii_typed_c_var.htm#a2a6f7422fc3e4a6579dea1edf0275e1f":[4,0,1223,3],
-"dd/d5a/classxii_typed_c_var.htm#a5787eae4b8e707f22c78850ab28c703f":[4,0,1223,5],
-"dd/d5a/classxii_typed_c_var.htm#a7434953402e34b08387c01d9fb6bcd38":[4,0,1223,2],
-"dd/d5a/classxii_typed_c_var.htm#a90adbbe893b91a971c83cc31de98ef92":[4,0,1223,1]
+"dd/d5a/classxii_typed_c_var.htm#a2a6f7422fc3e4a6579dea1edf0275e1f":[4,0,1223,3]
 };

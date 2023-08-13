@@ -1,5 +1,8 @@
 var NAVTREEINDEX27 =
 {
+"d6/d89/classxii_world.htm#a2a28037bf6e0847c42b7941e4861ea4b":[4,0,1303,3],
+"d6/d89/classxii_world.htm#a2b007afa6b6e99aa0359e900cd610da3":[4,0,1303,75],
+"d6/d89/classxii_world.htm#a2c07b46101e775295fb6ba2d9f547fd9":[4,0,1303,70],
 "d6/d89/classxii_world.htm#a2dad58f61a87c8814312cd7fb5bae8d4":[4,0,1303,27],
 "d6/d89/classxii_world.htm#a2e02c9225e05f5a21352fa669fedd280":[4,0,1303,62],
 "d6/d89/classxii_world.htm#a2e8651d870e82c108456907fee51f5d6":[4,0,1303,60],
@@ -246,8 +249,5 @@ var NAVTREEINDEX27 =
 "d6/daa/classxii_hash_set_base.htm#a1baa135019f97a028acf5dd122377708":[4,0,589,5],
 "d6/daa/classxii_hash_set_base.htm#a2557a122ad70f90ffb39313fbd03ef37":[4,0,589,20],
 "d6/daa/classxii_hash_set_base.htm#a29f69a6fe97e2ffa2b53b3da63f708b7":[4,0,589,16],
-"d6/daa/classxii_hash_set_base.htm#a3037d907dd327f0c5e77dc44f5859f40":[4,0,589,1],
-"d6/daa/classxii_hash_set_base.htm#a489a672fc9831dc83caefc560b7dc176":[4,0,589,7],
-"d6/daa/classxii_hash_set_base.htm#a5927012a3cfcbfdfb2efe24f1be9c785":[4,0,589,11],
-"d6/daa/classxii_hash_set_base.htm#a5a8260e30f97741ad01290d044d639aa":[4,0,589,19]
+"d6/daa/classxii_hash_set_base.htm#a3037d907dd327f0c5e77dc44f5859f40":[4,0,589,1]
 };

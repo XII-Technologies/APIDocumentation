@@ -1,5 +1,8 @@
 var NAVTREEINDEX59 =
 {
+"de/d63/structxii_image_sizeof_helper_3_01const_01void_01_4.htm":[4,0,624],
+"de/d70/structxii_default_allocator_wrapper.htm":[4,0,257],
+"de/d71/classxii_bmp_file_format.htm":[4,0,115],
 "de/d71/classxii_bmp_file_format.htm#a224afc887c34ace8527d4675e33477b8":[4,0,115,3],
 "de/d71/classxii_bmp_file_format.htm#a36578292b41d1b0ea0221ac743414968":[4,0,115,4],
 "de/d71/classxii_bmp_file_format.htm#a6dfc4f66d0de211483ef4287431a9c17":[4,0,115,1],
@@ -246,8 +249,5 @@ var NAVTREEINDEX59 =
 "de/da5/structxii_variant_1_1_string_wrapper.htm#a9f00cdd154dcd6326ce0fe2e7c3152f6":[4,0,1255,0,1],
 "de/da6/classxii_dynamic_menu_action.htm":[4,0,317],
 "de/da6/classxii_dynamic_menu_action.htm#a7ed243c14f34f2698a59d2afff039864":[4,0,317,2],
-"de/da6/classxii_dynamic_menu_action.htm#af3ea7cca110b5053943706f04231f6b4":[4,0,317,1],
-"de/da6/classxii_image_conversion.htm":[4,0,603],
-"de/da9/classxii_command_line_option_doc.htm":[4,0,165],
-"de/da9/classxii_command_line_option_doc.htm#a0b481a39d898b36f46469973167cf5db":[4,0,165,10]
+"de/da6/classxii_dynamic_menu_action.htm#af3ea7cca110b5053943706f04231f6b4":[4,0,317,1]
 };

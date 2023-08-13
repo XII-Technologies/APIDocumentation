@@ -12,6 +12,7 @@ var structxii_arg_date_time =
       [ "DefaultTextual", "d1/d65/structxii_arg_date_time.htm#ad787554481a589299ec7a5e54918bef8a71db5d317a2506b0418632d9cc54927e", null ]
     ] ],
     [ "xiiArgDateTime", "d1/d65/structxii_arg_date_time.htm#aa48feeb89d528847d8ea3e94389ae0e0", null ],
+    [ "xiiArgDateTime", "d1/d65/structxii_arg_date_time.htm#a05d1a898007906079bec84b47a13e0b1", null ],
     [ "m_uiFormattingFlags", "d1/d65/structxii_arg_date_time.htm#a1cab13a73f71af38798597531677d8ad", null ],
     [ "m_Value", "d1/d65/structxii_arg_date_time.htm#a9ac48a5f16767ae3072ef81062a712e6", null ]
 ];

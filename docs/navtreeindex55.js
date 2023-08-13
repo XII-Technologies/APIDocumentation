@@ -1,5 +1,8 @@
 var NAVTREEINDEX55 =
 {
+"dd/d5a/classxii_typed_c_var.htm#a5787eae4b8e707f22c78850ab28c703f":[4,0,1223,5],
+"dd/d5a/classxii_typed_c_var.htm#a7434953402e34b08387c01d9fb6bcd38":[4,0,1223,2],
+"dd/d5a/classxii_typed_c_var.htm#a90adbbe893b91a971c83cc31de98ef92":[4,0,1223,1],
 "dd/d5a/classxii_typed_c_var.htm#a9b17031f11ca9b000565567905c00eb1":[4,0,1223,6],
 "dd/d5d/classxii_profiling_system.htm":[4,0,846],
 "dd/d5d/classxii_profiling_system.htm#a6541f7f4cd64588b53bbf837cd61a2f6":[4,0,846,6],
@@ -148,16 +151,16 @@ var NAVTREEINDEX55 =
 "dd/d84/classxii_typed_map_property.htm#afda03b5a045da2895fd35af3f0a55096":[4,0,1226,0],
 "dd/d8a/structxii_wind_strength.htm":[4,0,1300],
 "dd/d8a/structxii_wind_strength.htm#a0378f99250688f97ded9257aaed19e87":[4,0,1300,1],
-"dd/d8a/structxii_wind_strength.htm#a0378f99250688f97ded9257aaed19e87a025b80b2842ab9c2c9c553e75e2db90d":[4,0,1300,1,4],
+"dd/d8a/structxii_wind_strength.htm#a0378f99250688f97ded9257aaed19e87a02620e244fd01b209f12cba7b582f052":[4,0,1300,1,2],
 "dd/d8a/structxii_wind_strength.htm#a0378f99250688f97ded9257aaed19e87a0721eca70399f5f3e2872f0459a070eb":[4,0,1300,1,9],
-"dd/d8a/structxii_wind_strength.htm#a0378f99250688f97ded9257aaed19e87a280524793764fa7958e36e31bb61f6c2":[4,0,1300,1,1],
-"dd/d8a/structxii_wind_strength.htm#a0378f99250688f97ded9257aaed19e87a49c5c2a2837445f334d2c3a53ce992fa":[4,0,1300,1,3],
+"dd/d8a/structxii_wind_strength.htm#a0378f99250688f97ded9257aaed19e87a3e8382838e437d02474eb2a28061090d":[4,0,1300,1,4],
 "dd/d8a/structxii_wind_strength.htm#a0378f99250688f97ded9257aaed19e87a5800b827af07d497b3619870f5cf1ef5":[4,0,1300,1,6],
 "dd/d8a/structxii_wind_strength.htm#a0378f99250688f97ded9257aaed19e87a5c80006ebaf6fe2d4aed3236c7156d18":[4,0,1300,1,7],
 "dd/d8a/structxii_wind_strength.htm#a0378f99250688f97ded9257aaed19e87a71c75c90608730a3a18922e5091c2260":[4,0,1300,1,0],
 "dd/d8a/structxii_wind_strength.htm#a0378f99250688f97ded9257aaed19e87a7363f92cb30129cd9ecc1462c17ec165":[4,0,1300,1,5],
+"dd/d8a/structxii_wind_strength.htm#a0378f99250688f97ded9257aaed19e87a77a3e8c9773f08b09d994a7b6b25ce44":[4,0,1300,1,3],
+"dd/d8a/structxii_wind_strength.htm#a0378f99250688f97ded9257aaed19e87a7fc35131be282bc1868b64e27f6c04a8":[4,0,1300,1,1],
 "dd/d8a/structxii_wind_strength.htm#a0378f99250688f97ded9257aaed19e87af5c1dcde23500e15804dcf6b10cb64d3":[4,0,1300,1,8],
-"dd/d8a/structxii_wind_strength.htm#a0378f99250688f97ded9257aaed19e87afc7def3990e8d72980714ba518375220":[4,0,1300,1,2],
 "dd/d8a/structxii_wind_strength.htm#a0378f99250688f97ded9257aaed19e87afe4d6541fd4c0bea11770ee6109cc008":[4,0,1300,1,10],
 "dd/d8a/structxii_wind_strength.htm#ae2d01deb5b7335fff9a1eb7985723a27":[4,0,1300,0],
 "dd/d8b/structxii_g_a_l_device_memory_properties.htm":[4,0,426],
@@ -246,8 +249,5 @@ var NAVTREEINDEX55 =
 "dd/dad/structxii_result.htm":[4,0,1017],
 "dd/dad/structxii_result.htm#a0e2e7a66dd1876db3912fc0f2dff69a6":[4,0,1017,3],
 "dd/dad/structxii_result.htm#a4b4159608ae8d5cab2a08b65ea3f87ae":[4,0,1017,4],
-"dd/dad/structxii_result.htm#a4d2298578e92701ded834b6a177f0379":[4,0,1017,1],
-"dd/dad/structxii_result.htm#a62e86ac1f8bd65166fc1b1bfdd651243":[4,0,1017,6],
-"dd/dad/structxii_result.htm#a8682014877909dd95316c4f916634c01":[4,0,1017,5],
-"dd/dad/structxii_result.htm#a8f1fe5590a2ad68e73d49621056c4e17":[4,0,1017,7]
+"dd/dad/structxii_result.htm#a4d2298578e92701ded834b6a177f0379":[4,0,1017,1]
 };

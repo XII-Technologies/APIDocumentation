@@ -253,15 +253,15 @@ $(document).ready(function(){initNavTree('d2/d2d/_deque__inl_8h_source.htm','../
 <div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;{</div>
 <div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;  <span class="comment">// This is the function where all the complicated stuff happens.</span></div>
 <div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;  <span class="comment">// The basic idea is as follows:</span></div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;  <span class="comment">// * do not do anything unless necessary</span></div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;  <span class="comment">// * if the index array (for the redirection) is already large enough to handle the &#39;address space&#39;, try to reuse it</span></div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;  <span class="comment">// * Do not do anything unless necessary</span></div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;  <span class="comment">// * If the index array (for the redirection) is already large enough to handle the &#39;address space&#39;, try to reuse it</span></div>
 <div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;  <span class="comment">//   by moving data around (shift it left or right), if necessary</span></div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;  <span class="comment">// * if the chunk index array is not large enough to handle the required amount of redirections, allocate a new</span></div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;  <span class="comment">// * If the chunk index array is not large enough to handle the required amount of redirections, allocate a new</span></div>
 <div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;  <span class="comment">//   index array and move the old data over</span></div>
 <div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;  <span class="comment">// This function does not allocate any of the chunks itself (that&#39;s what &#39;ElementAt&#39; does), it only takes care</span></div>
 <div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;  <span class="comment">// that the amount of reserved elements can be redirected once the deque is enlarged accordingly.</span></div>
 <div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160; </div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;  <span class="comment">// no need to change anything in this case</span></div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;  <span class="comment">// There is no need to change anything in this case.</span></div>
 <div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;  <span class="keywordflow">if</span> (uiCount &lt;= m_uiCount)</div>
 <div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;    <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160; </div>
@@ -1190,7 +1190,7 @@ $(document).ready(function(){initNavTree('d2/d2d/_deque__inl_8h_source.htm','../
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.htm">home</a></li><li class="navelem"><a class="el" href="../../dir_1036706e55c22cab35bc1c58ee689f1d.htm">runner</a></li><li class="navelem"><a class="el" href="../../dir_629f8151d55d307162ff2d619fb1783d.htm">work</a></li><li class="navelem"><a class="el" href="../../dir_1ddc44fe1263a8c7935fa6130b7d9499.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_2c1b6808f12952f4c36e05ba7068379a.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_b5a1c4ecfca018ad24b729e213296d41.htm">Source</a></li><li class="navelem"><a class="el" href="../../dir_e321052006a51284e67389ab20037e7c.htm">Engine</a></li><li class="navelem"><a class="el" href="../../dir_be0c42c58b36f42c54ec54024ed4f6af.htm">Foundation</a></li><li class="navelem"><a class="el" href="../../dir_7f59ab18dbc50035dfc0ee7070867286.htm">Containers</a></li><li class="navelem"><a class="el" href="../../dir_acc055bf9d45372e5f916366fab93514.htm">Implementation</a></li><li class="navelem"><b>Deque_inl.h</b></li>
-    <li class="footer">Generated on Sat Aug 12 2023 21:47:50 for XIIEngine by
+    <li class="footer">Generated on Sun Aug 13 2023 13:25:14 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

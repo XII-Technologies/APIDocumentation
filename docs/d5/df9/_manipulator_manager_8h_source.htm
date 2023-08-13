@@ -117,48 +117,41 @@ $(document).ready(function(){initNavTree('d5/df9/_manipulator_manager_8h_source.
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  <span class="keyword">const</span> <a class="code" href="../../d0/dfe/classxii_manipulator_attribute.htm">xiiManipulatorAttribute</a>* GetActiveManipulator(<span class="keyword">const</span> <a class="code" href="../../d8/da9/classxii_document.htm">xiiDocument</a>* pDoc, <span class="keyword">const</span> <a class="code" href="../../dc/da9/classxii_hybrid_array.htm">xiiHybridArray&lt;xiiPropertySelection, 8&gt;</a>*&amp; out_pSelection) <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  <span class="keywordtype">void</span> SetActiveManipulator(</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keyword">const</span> <a class="code" href="../../d8/da9/classxii_document.htm">xiiDocument</a>*                             pDoc,</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keyword">const</span> <a class="code" href="../../d0/dfe/classxii_manipulator_attribute.htm">xiiManipulatorAttribute</a>*                 pManipulator,</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keyword">const</span> <a class="code" href="../../dc/da9/classxii_hybrid_array.htm">xiiHybridArray&lt;xiiPropertySelection, 8&gt;</a>&amp; selection);</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  <span class="keywordtype">void</span> ClearActiveManipulator(<span class="keyword">const</span> <a class="code" href="../../d8/da9/classxii_document.htm">xiiDocument</a>* pDoc);</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <a class="code" href="../../dc/d22/classxii_event.htm">xiiCopyOnBroadcastEvent&lt;const xiiManipulatorManagerEvent&amp;&gt;</a> m_Events;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  <span class="keywordtype">void</span> SetActiveManipulator(<span class="keyword">const</span> <a class="code" href="../../d8/da9/classxii_document.htm">xiiDocument</a>* pDoc, <span class="keyword">const</span> <a class="code" href="../../d0/dfe/classxii_manipulator_attribute.htm">xiiManipulatorAttribute</a>* pManipulator, <span class="keyword">const</span> <a class="code" href="../../dc/da9/classxii_hybrid_array.htm">xiiHybridArray&lt;xiiPropertySelection, 8&gt;</a>&amp; selection);</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  <span class="keywordtype">void</span> ClearActiveManipulator(<span class="keyword">const</span> <a class="code" href="../../d8/da9/classxii_document.htm">xiiDocument</a>* pDoc);</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  <a class="code" href="../../dc/d22/classxii_event.htm">xiiCopyOnBroadcastEvent&lt;const xiiManipulatorManagerEvent&amp;&gt;</a> m_Events;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <span class="keywordtype">void</span> HideActiveManipulator(<span class="keyword">const</span> <a class="code" href="../../d8/da9/classxii_document.htm">xiiDocument</a>* pDoc, <span class="keywordtype">bool</span> bHide);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <span class="keywordtype">void</span> ToggleHideActiveManipulator(<span class="keyword">const</span> <a class="code" href="../../d8/da9/classxii_document.htm">xiiDocument</a>* pDoc);</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <span class="keywordtype">void</span> HideActiveManipulator(<span class="keyword">const</span> <a class="code" href="../../d8/da9/classxii_document.htm">xiiDocument</a>* pDoc, <span class="keywordtype">bool</span> bHide);</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <span class="keywordtype">void</span> ToggleHideActiveManipulator(<span class="keyword">const</span> <a class="code" href="../../d8/da9/classxii_document.htm">xiiDocument</a>* pDoc);</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <span class="keyword">struct </span>Data</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  {</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    Data()</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    {</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;      m_pAttribute        = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;      m_bHideManipulators = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    }</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keyword">const</span> <a class="code" href="../../d0/dfe/classxii_manipulator_attribute.htm">xiiManipulatorAttribute</a>*          m_pAttribute;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <a class="code" href="../../dc/da9/classxii_hybrid_array.htm">xiiHybridArray&lt;xiiPropertySelection, 8&gt;</a> m_Selection;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordtype">bool</span>                                    m_bHideManipulators;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  };</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  <span class="keywordtype">void</span> InternalSetActiveManipulator(</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keyword">const</span> <a class="code" href="../../d8/da9/classxii_document.htm">xiiDocument</a>*                             pDoc,</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keyword">const</span> <a class="code" href="../../d0/dfe/classxii_manipulator_attribute.htm">xiiManipulatorAttribute</a>*                 pManipulator,</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keyword">const</span> <a class="code" href="../../dc/da9/classxii_hybrid_array.htm">xiiHybridArray&lt;xiiPropertySelection, 8&gt;</a>&amp; selection,</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordtype">bool</span>                                           bUnhide);</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  <span class="keywordtype">void</span> StructureEventHandler(<span class="keyword">const</span> <a class="code" href="../../db/d05/structxii_document_object_structure_event.htm">xiiDocumentObjectStructureEvent</a>&amp; e);</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  <span class="keywordtype">void</span> SelectionEventHandler(<span class="keyword">const</span> <a class="code" href="../../d2/dd6/structxii_selection_manager_event.htm">xiiSelectionManagerEvent</a>&amp; e);</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <span class="keywordtype">void</span> TransferToCurrentSelection(<span class="keyword">const</span> <a class="code" href="../../d8/da9/classxii_document.htm">xiiDocument</a>* pDoc);</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <span class="keywordtype">void</span> PhantomTypeManagerEventHandler(<span class="keyword">const</span> <a class="code" href="../../de/d92/structxii_phantom_rtti_manager_event.htm">xiiPhantomRttiManagerEvent</a>&amp; e);</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  <span class="keywordtype">void</span> DocumentManagerEventHandler(<span class="keyword">const</span> <a class="code" href="../../da/d7b/structxii_document_manager_1_1_event.htm">xiiDocumentManager::Event</a>&amp; e);</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  <a class="code" href="../../d6/df7/classxii_map.htm">xiiMap&lt;const xiiDocument*, Data&gt;</a> m_ActiveManipulator;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;};</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <span class="keyword">struct </span>Data</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  {</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    Data()</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    {</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;      m_pAttribute        = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;      m_bHideManipulators = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    }</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keyword">const</span> <a class="code" href="../../d0/dfe/classxii_manipulator_attribute.htm">xiiManipulatorAttribute</a>*          m_pAttribute;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <a class="code" href="../../dc/da9/classxii_hybrid_array.htm">xiiHybridArray&lt;xiiPropertySelection, 8&gt;</a> m_Selection;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordtype">bool</span>                                    m_bHideManipulators;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  };</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <span class="keywordtype">void</span> InternalSetActiveManipulator(<span class="keyword">const</span> <a class="code" href="../../d8/da9/classxii_document.htm">xiiDocument</a>* pDoc, <span class="keyword">const</span> <a class="code" href="../../d0/dfe/classxii_manipulator_attribute.htm">xiiManipulatorAttribute</a>* pManipulator, <span class="keyword">const</span> <a class="code" href="../../dc/da9/classxii_hybrid_array.htm">xiiHybridArray&lt;xiiPropertySelection, 8&gt;</a>&amp; selection, <span class="keywordtype">bool</span> bUnhide);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <span class="keywordtype">void</span> StructureEventHandler(<span class="keyword">const</span> <a class="code" href="../../db/d05/structxii_document_object_structure_event.htm">xiiDocumentObjectStructureEvent</a>&amp; e);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  <span class="keywordtype">void</span> SelectionEventHandler(<span class="keyword">const</span> <a class="code" href="../../d2/dd6/structxii_selection_manager_event.htm">xiiSelectionManagerEvent</a>&amp; e);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <span class="keywordtype">void</span> TransferToCurrentSelection(<span class="keyword">const</span> <a class="code" href="../../d8/da9/classxii_document.htm">xiiDocument</a>* pDoc);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  <span class="keywordtype">void</span> PhantomTypeManagerEventHandler(<span class="keyword">const</span> <a class="code" href="../../de/d92/structxii_phantom_rtti_manager_event.htm">xiiPhantomRttiManagerEvent</a>&amp; e);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  <span class="keywordtype">void</span> DocumentManagerEventHandler(<span class="keyword">const</span> <a class="code" href="../../da/d7b/structxii_document_manager_1_1_event.htm">xiiDocumentManager::Event</a>&amp; e);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  <a class="code" href="../../d6/df7/classxii_map.htm">xiiMap&lt;const xiiDocument*, Data&gt;</a> m_ActiveManipulator;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;};</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="astructxii_phantom_rtti_manager_event_htm"><div class="ttname"><a href="../../de/d92/structxii_phantom_rtti_manager_event.htm">xiiPhantomRttiManagerEvent</a></div><div class="ttdef"><b>Definition:</b> PhantomRttiManager.h:9</div></div>
@@ -176,7 +169,7 @@ $(document).ready(function(){initNavTree('d5/df9/_manipulator_manager_8h_source.
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.htm">home</a></li><li class="navelem"><a class="el" href="../../dir_1036706e55c22cab35bc1c58ee689f1d.htm">runner</a></li><li class="navelem"><a class="el" href="../../dir_629f8151d55d307162ff2d619fb1783d.htm">work</a></li><li class="navelem"><a class="el" href="../../dir_1ddc44fe1263a8c7935fa6130b7d9499.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_2c1b6808f12952f4c36e05ba7068379a.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_b5a1c4ecfca018ad24b729e213296d41.htm">Source</a></li><li class="navelem"><a class="el" href="../../dir_64f53f8da7bf780a58c32bb848e7873b.htm">Tools</a></li><li class="navelem"><a class="el" href="../../dir_4b5bc41f7c4cbfc8ca80bdea56300f1d.htm">Libs</a></li><li class="navelem"><a class="el" href="../../dir_8694d7149aa3c4cbc4b219c953b250c5.htm">GuiFoundation</a></li><li class="navelem"><a class="el" href="../../dir_0560f1072699227cfe8bccfeee282984.htm">PropertyGrid</a></li><li class="navelem"><b>ManipulatorManager.h</b></li>
-    <li class="footer">Generated on Sat Aug 12 2023 21:47:54 for XIIEngine by
+    <li class="footer">Generated on Sun Aug 13 2023 13:25:17 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

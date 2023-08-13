@@ -1,5 +1,6 @@
 var NAVTREEINDEX11 =
 {
+"d2/dbb/classxii_data_transfer_object.htm#aade0cc6b353e8cd5c8d5298619a21809":[4,0,252,1],
 "d2/dbb/classxii_data_transfer_object.htm#ad653a68a330b2021dedc948bcf0fdc70":[4,0,252,4],
 "d2/dc1/structxii_variant_adapter_3_01const_01char_01_5_00_01const_01char_01_5_00_011_00_010_01_4.htm":[4,0,1257],
 "d2/dc1/structxii_variant_adapter_3_01const_01char_01_5_00_01const_01char_01_5_00_011_00_010_01_4.htm#a1d0143f8ec10bea6207ba45fdc8f60e3":[4,0,1257,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX11 =
 "d2/dea/classxii_progress_range.htm#ab63e14980bb8a0f5ef3efdd597d45fac":[4,0,849,7],
 "d2/dea/classxii_progress_range.htm#ad2c190f91aa273beb53ba5993f5b36b4":[4,0,849,0],
 "d2/dee/structxii_g_a_l_input_layout_creation_description.htm":[4,0,445],
-"d2/dee/structxii_g_a_l_input_layout_creation_description.htm#a0402026094e4d5b056bb30275a1ad184":[4,0,445,0],
-"d2/dee/structxii_g_a_l_input_layout_creation_description.htm#a7348c293b33af4c3a2e8f72424924bfd":[4,0,445,2]
+"d2/dee/structxii_g_a_l_input_layout_creation_description.htm#a0402026094e4d5b056bb30275a1ad184":[4,0,445,0]
 };

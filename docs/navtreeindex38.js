@@ -1,5 +1,8 @@
 var NAVTREEINDEX38 =
 {
+"d9/d4b/structxii_geometry_1_1_vertex.htm#a7f69dd4b3c555661b7eb6a92c9b52ad3":[4,0,552,3,3],
+"d9/d4b/structxii_geometry_1_1_vertex.htm#a8071b6c4f33d088bb72dcd755b62afb9":[4,0,552,3,1],
+"d9/d4b/structxii_geometry_1_1_vertex.htm#aa00344ed0569003f1676c7f8d83e2d10":[4,0,552,3,0],
 "d9/d4b/structxii_geometry_1_1_vertex.htm#aa8fa2cad7d3b55fe0f92c00603d21a7e":[4,0,552,3,5],
 "d9/d4b/structxii_geometry_1_1_vertex.htm#aed35c304f71d398d07f4a13ddcb74dd9":[4,0,552,3,10],
 "d9/d4f/classxii_qt_action_proxy.htm":[4,0,863],
@@ -246,8 +249,5 @@ var NAVTREEINDEX38 =
 "d9/d8c/structxii_g_a_l_draw_command_capability_flags_1_1_bits.htm#a45d4a1d182fff50c85a93e7a98027a05":[4,0,428,0,4],
 "d9/d8c/structxii_g_a_l_draw_command_capability_flags_1_1_bits.htm#a55d6c22b200a64e0b8c60f612e4f839b":[4,0,428,0,2],
 "d9/d8c/structxii_g_a_l_draw_command_capability_flags_1_1_bits.htm#a98af7280d86e04346e8127cde56a53af":[4,0,428,0,0],
-"d9/d8c/structxii_g_a_l_draw_command_capability_flags_1_1_bits.htm#acf33932ab04d88360d9ccc21c6d82eec":[4,0,428,0,1],
-"d9/d8d/classxii_bitfield.htm":[4,0,103],
-"d9/d8d/classxii_bitfield.htm#a0baa4b7ad887af67b8347346f874d4ac":[4,0,103,3],
-"d9/d8d/classxii_bitfield.htm#a14d058b16b33c9bd32e5194ec06a5c45":[4,0,103,2]
+"d9/d8c/structxii_g_a_l_draw_command_capability_flags_1_1_bits.htm#acf33932ab04d88360d9ccc21c6d82eec":[4,0,428,0,1]
 };

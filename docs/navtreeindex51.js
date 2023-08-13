@@ -1,5 +1,8 @@
 var NAVTREEINDEX51 =
 {
+"dc/d68/classxii_camera.htm#a7bd5b333ba3bb76d4c99653d7c110d85":[4,0,124,5],
+"dc/d68/classxii_camera.htm#a7f4ce2168e13cbdfc07a3e742f42cb68":[4,0,124,12],
+"dc/d68/classxii_camera.htm#a7f9ec38722675b9a9778b8d55827d103":[4,0,124,9],
 "dc/d68/classxii_camera.htm#a86c6ab5026044ed58df53defe67d0c3d":[4,0,124,28],
 "dc/d68/classxii_camera.htm#a883883de80d6d3986400f680b390f660":[4,0,124,21],
 "dc/d68/classxii_camera.htm#a95ff95b74b861fbbfc233f46a277c61d":[4,0,124,14],
@@ -246,8 +249,5 @@ var NAVTREEINDEX51 =
 "dc/da9/structxii_abstract_object_node_1_1_property.htm#ae97abf2948a1c5b3c9f5bd789f93f4fc":[4,0,30,0,1],
 "dc/dad/structxii_variance_type_angled.htm":[4,0,1249],
 "dc/dad/structxii_variance_type_angled.htm#a6ac84d08ae341687d6ce7e7019014efc":[4,0,1249,2],
-"dc/dad/structxii_variance_type_angled.htm#aa35d8fc9adecfb47f5b34aa0708437f8":[4,0,1249,1],
-"dc/dad/structxii_variance_type_angled.htm#acf11ef4ab47ea4bf8e7e366940ba170f":[4,0,1249,3],
-"dc/dad/structxii_variance_type_angled.htm#ad7f6ae2343ce2e5f2f43d3bb9bae2554":[4,0,1249,0],
-"dc/dae/classxii_simd_mat4d.htm":[4,0,1074]
+"dc/dad/structxii_variance_type_angled.htm#aa35d8fc9adecfb47f5b34aa0708437f8":[4,0,1249,1]
 };

@@ -1,5 +1,8 @@
 var NAVTREEINDEX58 =
 {
+"de/d33/classxii_data_directory_type.htm#af0802a5a5122081e08fa93a8b22a7987":[4,0,249,1],
+"de/d33/classxii_data_directory_type.htm#af37d2e15bf597bd73cbbfa9564e9e996":[4,0,249,10],
+"de/d33/classxii_memory_policies_1_1xii_heap_allocation.htm":[4,0,6,4],
 "de/d33/classxii_memory_policies_1_1xii_heap_allocation.htm#a1104d6cb63bd2d558b130195b34e083f":[4,0,6,4,0],
 "de/d33/classxii_memory_policies_1_1xii_heap_allocation.htm#a3a88d685d14034c88d79884099d9edce":[4,0,6,4,4],
 "de/d33/classxii_memory_policies_1_1xii_heap_allocation.htm#a846529ed8b8b327eb0100d982e938a9d":[4,0,6,4,2],
@@ -246,8 +249,5 @@ var NAVTREEINDEX58 =
 "de/d63/classxii_processing_stream.htm#acd4cdbef910a1fea33ad89ebc73374ea":[4,0,836,15],
 "de/d63/classxii_processing_stream.htm#ae21572b853600c3db42fe49f1f7695b3":[4,0,836,19],
 "de/d63/classxii_processing_stream.htm#ae5c9377721c069a4d5fc95c75316af72":[4,0,836,20],
-"de/d63/classxii_processing_stream.htm#aedce7d270066468a56a0c46753092ca8":[4,0,836,24],
-"de/d63/structxii_image_sizeof_helper_3_01const_01void_01_4.htm":[4,0,624],
-"de/d70/structxii_default_allocator_wrapper.htm":[4,0,257],
-"de/d71/classxii_bmp_file_format.htm":[4,0,115]
+"de/d63/classxii_processing_stream.htm#aedce7d270066468a56a0c46753092ca8":[4,0,836,24]
 };

@@ -20,8 +20,9 @@ var NAVTREEINDEX6 =
 "d1/d64/structxii_object_accessor_change_event.htm#a755da672ae1caada95c7a95d5f97385f":[4,0,769,1],
 "d1/d64/structxii_object_accessor_change_event.htm#a8ff67c7376aaab01bb3ed7af6e84b93e":[4,0,769,2],
 "d1/d65/structxii_arg_date_time.htm":[4,0,79],
-"d1/d65/structxii_arg_date_time.htm#a1cab13a73f71af38798597531677d8ad":[4,0,79,2],
-"d1/d65/structxii_arg_date_time.htm#a9ac48a5f16767ae3072ef81062a712e6":[4,0,79,3],
+"d1/d65/structxii_arg_date_time.htm#a05d1a898007906079bec84b47a13e0b1":[4,0,79,2],
+"d1/d65/structxii_arg_date_time.htm#a1cab13a73f71af38798597531677d8ad":[4,0,79,3],
+"d1/d65/structxii_arg_date_time.htm#a9ac48a5f16767ae3072ef81062a712e6":[4,0,79,4],
 "d1/d65/structxii_arg_date_time.htm#aa48feeb89d528847d8ea3e94389ae0e0":[4,0,79,1],
 "d1/d65/structxii_arg_date_time.htm#ad787554481a589299ec7a5e54918bef8":[4,0,79,0],
 "d1/d65/structxii_arg_date_time.htm#ad787554481a589299ec7a5e54918bef8a71db5d317a2506b0418632d9cc54927e":[4,0,79,0,8],
@@ -248,6 +249,5 @@ var NAVTREEINDEX6 =
 "d1/d88/classxii_script_world_module.htm#aeb3fa9d1173ec21ae3ee8a0b4af9c8a8":[4,0,1050,7],
 "d1/d88/classxii_script_world_module.htm#af420f5176e7117e664dfbe24e3e61be7":[4,0,1050,4],
 "d1/d88/classxii_script_world_module.htm#af9e1dddc392333c99789be79cd96ddd4":[4,0,1050,13],
-"d1/d8e/classxii_d_g_m_l_graph.htm":[4,0,277],
-"d1/d8e/classxii_d_g_m_l_graph.htm#a0a64025984fb7ab980ada75394037ea5":[4,0,277,15]
+"d1/d8e/classxii_d_g_m_l_graph.htm":[4,0,277]
 };
