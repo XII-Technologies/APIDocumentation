@@ -8,6 +8,5 @@ var structxii_g_a_l_shading_rate_properties =
     [ "m_MinTileSize", "d4/d74/structxii_g_a_l_shading_rate_properties.htm#a7164cce3036ddfa398240143962c462c", null ],
     [ "m_Mode", "d4/d74/structxii_g_a_l_shading_rate_properties.htm#a3214972190785ca6559f8bbe9d139af6", null ],
     [ "m_TextureAccess", "d4/d74/structxii_g_a_l_shading_rate_properties.htm#ae7e97fc5936cdc5b6cb3cc6c704ec928", null ],
-    [ "m_uiCount", "d4/d74/structxii_g_a_l_shading_rate_properties.htm#a644286c7bbc02f9d58450170382e34ae", null ],
     [ "m_uiMaxSubSampledArraySlices", "d4/d74/structxii_g_a_l_shading_rate_properties.htm#a9940ba8111c7bc511c94033a6494e1fe", null ]
 ];
