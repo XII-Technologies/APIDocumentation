@@ -91,14 +91,54 @@ $(document).ready(function(){initNavTree('d9/df8/_pipeline_state_8h_source.htm',
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;GraphicsFoundation/GraphicsFoundationDLL.h&gt;</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;GraphicsFoundation/States/Implementation/PipelineState_inl.h&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;GraphicsFoundation/Declarations/GraphicsTypes.h&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;GraphicsFoundation/Shader/Shader.h&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="../../d3/d05/structxii_g_a_l_shader_variable_flags.htm">    9</a></span>&#160;<span class="keyword">struct </span>XII_GRAPHICSFOUNDATION_DLL <a class="code" href="../../d3/d05/structxii_g_a_l_shader_variable_flags.htm">xiiGALShaderVariableFlags</a></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;{</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;  <span class="keyword">using</span> StorageType = xiiUInt8;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="../../d3/d05/structxii_g_a_l_shader_variable_flags.htm#a84edff70d97ff62192c9196d2c7855b7">   13</a></span>&#160;  <span class="keyword">enum</span> <a class="code" href="../../d3/d05/structxii_g_a_l_shader_variable_flags.htm#a84edff70d97ff62192c9196d2c7855b7">Enum</a> : StorageType</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;  {</div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="../../d3/d05/structxii_g_a_l_shader_variable_flags.htm#a84edff70d97ff62192c9196d2c7855b7a0c1bbc104f39a9ce8a56e1cde498ddb1">   15</a></span>&#160;    None             = 0U,         </div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="../../d3/d05/structxii_g_a_l_shader_variable_flags.htm#a84edff70d97ff62192c9196d2c7855b7a6e3c9f1ecaad006e5c34276a1b03a227">   16</a></span>&#160;    NoDynamicBuffers = XII_BIT(0), </div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    ENUM_COUNT = 2U,</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    Default = None</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  };</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="../../da/dde/structxii_g_a_l_shader_variable_flags_1_1_bits.htm">   25</a></span>&#160;  <span class="keyword">struct </span><a class="code" href="../../da/dde/structxii_g_a_l_shader_variable_flags_1_1_bits.htm">Bits</a></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  {</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    StorageType NoDynamicBuffers : 1;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  };</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;};</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;XII_DECLARE_FLAGS_OPERATORS(<a class="code" href="../../d3/d05/structxii_g_a_l_shader_variable_flags.htm">xiiGALShaderVariableFlags</a>);</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;XII_DECLARE_REFLECTABLE_TYPE(XII_GRAPHICSFOUNDATION_DLL, <a class="code" href="../../d3/d05/structxii_g_a_l_shader_variable_flags.htm">xiiGALShaderVariableFlags</a>);</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="../../da/de6/structxii_g_a_l_sample_description.htm">   36</a></span>&#160;<span class="keyword">struct </span>XII_GRAPHICSFOUNDATION_DLL <a class="code" href="../../da/de6/structxii_g_a_l_sample_description.htm">xiiGALSampleDescription</a> : <span class="keyword">public</span> <a class="code" href="../../d7/d9f/classxii_hashable_struct.htm">xiiHashableStruct</a>&lt;xiiGALSampleDescription&gt;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;{</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  XII_DECLARE_POD_TYPE();</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="../../da/de6/structxii_g_a_l_sample_description.htm#a7a939cabf72eb28e4392e6d42ab07367">   40</a></span>&#160;  xiiUInt8 m_uiCount   = 1U; </div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="../../da/de6/structxii_g_a_l_sample_description.htm#a47da49898cd0a82541d6c6e96eef0480">   41</a></span>&#160;  xiiUInt8 m_uiQuality = 0U; </div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;};</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">#include &lt;GraphicsFoundation/States/Implementation/PipelineState_inl.h&gt;</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
+<div class="ttc" id="astructxii_g_a_l_shader_variable_flags_htm_a84edff70d97ff62192c9196d2c7855b7"><div class="ttname"><a href="../../d3/d05/structxii_g_a_l_shader_variable_flags.htm#a84edff70d97ff62192c9196d2c7855b7">xiiGALShaderVariableFlags::Enum</a></div><div class="ttdeci">Enum</div><div class="ttdef"><b>Definition:</b> PipelineState.h:13</div></div>
+<div class="ttc" id="astructxii_g_a_l_shader_variable_flags_1_1_bits_htm"><div class="ttname"><a href="../../da/dde/structxii_g_a_l_shader_variable_flags_1_1_bits.htm">xiiGALShaderVariableFlags::Bits</a></div><div class="ttdef"><b>Definition:</b> PipelineState.h:25</div></div>
+<div class="ttc" id="astructxii_g_a_l_shader_variable_flags_htm"><div class="ttname"><a href="../../d3/d05/structxii_g_a_l_shader_variable_flags.htm">xiiGALShaderVariableFlags</a></div><div class="ttdoc">This describes the shader variable property flags.</div><div class="ttdef"><b>Definition:</b> PipelineState.h:9</div></div>
+<div class="ttc" id="astructxii_g_a_l_sample_description_htm"><div class="ttname"><a href="../../da/de6/structxii_g_a_l_sample_description.htm">xiiGALSampleDescription</a></div><div class="ttdoc">This describes the sample information.</div><div class="ttdef"><b>Definition:</b> PipelineState.h:36</div></div>
+<div class="ttc" id="aclassxii_hashable_struct_htm"><div class="ttname"><a href="../../d7/d9f/classxii_hashable_struct.htm">xiiHashableStruct</a></div><div class="ttdoc">This class provides a base class for hashable structs (e.g. descriptor objects).</div><div class="ttdef"><b>Definition:</b> HashableStruct.h:16</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.htm">home</a></li><li class="navelem"><a class="el" href="../../dir_1036706e55c22cab35bc1c58ee689f1d.htm">runner</a></li><li class="navelem"><a class="el" href="../../dir_629f8151d55d307162ff2d619fb1783d.htm">work</a></li><li class="navelem"><a class="el" href="../../dir_1ddc44fe1263a8c7935fa6130b7d9499.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_2c1b6808f12952f4c36e05ba7068379a.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_b5a1c4ecfca018ad24b729e213296d41.htm">Source</a></li><li class="navelem"><a class="el" href="../../dir_e321052006a51284e67389ab20037e7c.htm">Engine</a></li><li class="navelem"><a class="el" href="../../dir_60f548c54f5a79fe3a3b3b88ff8146f5.htm">GraphicsFoundation</a></li><li class="navelem"><a class="el" href="../../dir_9b5be2eed412731859a671b6e3097078.htm">States</a></li><li class="navelem"><b>PipelineState.h</b></li>
-    <li class="footer">Generated on Mon Aug 14 2023 15:54:50 for XIIEngine by
+    <li class="footer">Generated on Tue Aug 15 2023 01:42:05 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

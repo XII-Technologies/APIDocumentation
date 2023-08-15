@@ -87,13 +87,43 @@ $(document).ready(function(){initNavTree('db/d3e/_shader__inl_8h_source.htm','..
 <div class="title">Shader_inl.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"></div><!-- fragment --></div><!-- contents -->
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;XII_FORCE_INLINE xiiGALShaderCreationDescription::xiiGALShaderCreationDescription() :</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;  <a class="code" href="../../d7/d9f/classxii_hashable_struct.htm">xiiHashableStruct</a>()</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;{</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;}</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;XII_FORCE_INLINE xiiGALShaderCreationDescription::~xiiGALShaderCreationDescription()</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;{</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;  <span class="keywordflow">for</span> (xiiUInt32 i = 0; i &lt; <a class="code" href="../../d3/d51/structxii_g_a_l_shader_creation_description.htm#a554b936a66701fdb80a65ebf10456c04">m_ByteCodes</a>.<a class="code" href="../../da/d4c/classxii_array_base.htm#a43100f93e19bb795ea0980dae2b28e0b">GetCount</a>(); ++i)</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;  {</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <a class="code" href="../../db/d92/classxii_g_a_l_shader_byte_code.htm">xiiGALShaderByteCode</a>* pByteCode = <a class="code" href="../../d3/d51/structxii_g_a_l_shader_creation_description.htm#a554b936a66701fdb80a65ebf10456c04">m_ByteCodes</a>[i];</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <a class="code" href="../../d3/d51/structxii_g_a_l_shader_creation_description.htm#a554b936a66701fdb80a65ebf10456c04">m_ByteCodes</a>[i]                  = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keywordflow">if</span> (pByteCode != <span class="keyword">nullptr</span> &amp;&amp; pByteCode-&gt;<a class="code" href="../../d7/df4/classxii_ref_counting_impl.htm#a9f7119c376cfcd3e1d4a0264a1b3f218">GetRefCount</a>() == 0)</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    {</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;      XII_DEFAULT_DELETE(pByteCode);</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    }</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;  }</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;}</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;XII_FORCE_INLINE <span class="keywordtype">bool</span> xiiGALShaderCreationDescription::HasByteCodeForStage(<a class="code" href="../../d7/d93/structxii_g_a_l_shader_stage.htm#a574ae05a61f47569461dc1fd2ea12092">xiiGALShaderStage::Enum</a> stage)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="../../d3/d51/structxii_g_a_l_shader_creation_description.htm#a554b936a66701fdb80a65ebf10456c04">m_ByteCodes</a>[stage] != <span class="keyword">nullptr</span> &amp;&amp; <a class="code" href="../../d3/d51/structxii_g_a_l_shader_creation_description.htm#a554b936a66701fdb80a65ebf10456c04">m_ByteCodes</a>[stage]-&gt;IsValid();</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;}</div>
+</div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
+<div class="ttc" id="aclassxii_ref_counting_impl_htm_a9f7119c376cfcd3e1d4a0264a1b3f218"><div class="ttname"><a href="../../d7/df4/classxii_ref_counting_impl.htm#a9f7119c376cfcd3e1d4a0264a1b3f218">xiiRefCountingImpl::GetRefCount</a></div><div class="ttdeci">xiiInt32 GetRefCount() const</div><div class="ttdoc">Returns the current reference count.</div><div class="ttdef"><b>Definition:</b> RefCounted.h:41</div></div>
+<div class="ttc" id="astructxii_g_a_l_shader_creation_description_htm_a554b936a66701fdb80a65ebf10456c04"><div class="ttname"><a href="../../d3/d51/structxii_g_a_l_shader_creation_description.htm#a554b936a66701fdb80a65ebf10456c04">xiiGALShaderCreationDescription::m_ByteCodes</a></div><div class="ttdeci">xiiStaticArray&lt; xiiScopedRefPointer&lt; xiiGALShaderByteCode &gt;, xiiGALShaderStage::ENUM_COUNT &gt; m_ByteCodes</div><div class="ttdoc">The shader byte code per stage.</div><div class="ttdef"><b>Definition:</b> Shader.h:147</div></div>
+<div class="ttc" id="astructxii_g_a_l_shader_stage_htm_a574ae05a61f47569461dc1fd2ea12092"><div class="ttname"><a href="../../d7/d93/structxii_g_a_l_shader_stage.htm#a574ae05a61f47569461dc1fd2ea12092">xiiGALShaderStage::Enum</a></div><div class="ttdeci">Enum</div><div class="ttdef"><b>Definition:</b> GraphicsTypes.h:148</div></div>
+<div class="ttc" id="aclassxii_array_base_htm_a43100f93e19bb795ea0980dae2b28e0b"><div class="ttname"><a href="../../da/d4c/classxii_array_base.htm#a43100f93e19bb795ea0980dae2b28e0b">xiiArrayBase::GetCount</a></div><div class="ttdeci">xiiUInt32 GetCount() const</div><div class="ttdoc">Returns the number of active elements in the array.</div><div class="ttdef"><b>Definition:</b> ArrayBase_inl.h:164</div></div>
+<div class="ttc" id="aclassxii_g_a_l_shader_byte_code_htm"><div class="ttname"><a href="../../db/d92/classxii_g_a_l_shader_byte_code.htm">xiiGALShaderByteCode</a></div><div class="ttdoc">This class wraps shader byte code storage.</div><div class="ttdef"><b>Definition:</b> ShaderByteCode.h:10</div></div>
+<div class="ttc" id="aclassxii_hashable_struct_htm"><div class="ttname"><a href="../../d7/d9f/classxii_hashable_struct.htm">xiiHashableStruct</a></div><div class="ttdoc">This class provides a base class for hashable structs (e.g. descriptor objects).</div><div class="ttdef"><b>Definition:</b> HashableStruct.h:16</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.htm">home</a></li><li class="navelem"><a class="el" href="../../dir_1036706e55c22cab35bc1c58ee689f1d.htm">runner</a></li><li class="navelem"><a class="el" href="../../dir_629f8151d55d307162ff2d619fb1783d.htm">work</a></li><li class="navelem"><a class="el" href="../../dir_1ddc44fe1263a8c7935fa6130b7d9499.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_2c1b6808f12952f4c36e05ba7068379a.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_b5a1c4ecfca018ad24b729e213296d41.htm">Source</a></li><li class="navelem"><a class="el" href="../../dir_e321052006a51284e67389ab20037e7c.htm">Engine</a></li><li class="navelem"><a class="el" href="../../dir_60f548c54f5a79fe3a3b3b88ff8146f5.htm">GraphicsFoundation</a></li><li class="navelem"><a class="el" href="../../dir_3db574144eba5047e9f941f7d3540303.htm">Shader</a></li><li class="navelem"><a class="el" href="../../dir_d985af5a4ee5ff31d0ca19ea213b63b5.htm">Implementation</a></li><li class="navelem"><b>Shader_inl.h</b></li>
-    <li class="footer">Generated on Mon Aug 14 2023 15:54:50 for XIIEngine by
+    <li class="footer">Generated on Tue Aug 15 2023 01:42:05 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

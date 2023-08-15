@@ -37,17 +37,18 @@ var hierarchy =
     [ "xiiGALMiscTextureFlags::Bits", "d2/d47/structxii_g_a_l_misc_texture_flags_1_1_bits.htm", null ],
     [ "xiiGALUnorderedAccessViewFlags::Bits", "de/d57/structxii_g_a_l_unordered_access_view_flags_1_1_bits.htm", null ],
     [ "xiiGALTextureViewFlags::Bits", "d6/d18/structxii_g_a_l_texture_view_flags_1_1_bits.htm", null ],
-    [ "xiiGALColorMask::Bits", "d0/d47/structxii_g_a_l_color_mask_1_1_bits.htm", null ],
     [ "xiiBlackboardEntryFlags::Bits", "d1/d09/structxii_blackboard_entry_flags_1_1_bits.htm", null ],
+    [ "xiiGALColorMask::Bits", "d0/d47/structxii_g_a_l_color_mask_1_1_bits.htm", null ],
+    [ "xiiGALShaderVariableFlags::Bits", "da/dde/structxii_g_a_l_shader_variable_flags_1_1_bits.htm", null ],
     [ "xiiPropertyFlags::Bits", "d1/dcd/structxii_property_flags_1_1_bits.htm", null ],
     [ "xiiResourceFlags::Bits", "df/d78/structxii_resource_flags_1_1_bits.htm", null ],
     [ "xiiDependencyFlags::Bits", "d3/db0/structxii_dependency_flags_1_1_bits.htm", null ],
     [ "xiiDynamicMenuAction::Item::ItemFlags::Bits", "d9/dbf/structxii_dynamic_menu_action_1_1_item_1_1_item_flags_1_1_bits.htm", null ],
-    [ "xiiStandardMenuTypes::Bits", "dd/d51/structxii_standard_menu_types_1_1_bits.htm", null ],
     [ "xiiVisualizerAnchor::Bits", "dd/d39/structxii_visualizer_anchor_1_1_bits.htm", null ],
+    [ "xiiStandardMenuTypes::Bits", "dd/d51/structxii_standard_menu_types_1_1_bits.htm", null ],
+    [ "xiiInputSlotFlags::Bits", "de/def/structxii_input_slot_flags_1_1_bits.htm", null ],
     [ "xiiNodeFlags::Bits", "d9/d5a/structxii_node_flags_1_1_bits.htm", null ],
     [ "xiiQtNodeScene::ConnectionDecorationFlags::Bits", "d8/d80/structxii_qt_node_scene_1_1_connection_decoration_flags_1_1_bits.htm", null ],
-    [ "xiiInputSlotFlags::Bits", "de/def/structxii_input_slot_flags_1_1_bits.htm", null ],
     [ "xiiCVarFlags::Bits", "d3/df8/structxii_c_var_flags_1_1_bits.htm", null ],
     [ "xiiObjectFlags::Bits", "de/d49/structxii_object_flags_1_1_bits.htm", null ],
     [ "xiiPluginLoadFlags::Bits", "df/d92/structxii_plugin_load_flags_1_1_bits.htm", null ],
@@ -1325,6 +1326,11 @@ var hierarchy =
     [ "xiiArrayBase< xiiGALRenderTargetBlendDescription, xiiStaticArray< xiiGALRenderTargetBlendDescription, Capacity > >", "da/d4c/classxii_array_base.htm", [
       [ "xiiStaticArray< xiiGALRenderTargetBlendDescription, XII_GAL_MAX_RENDERTARGET_COUNT >", "d9/d25/classxii_static_array.htm", null ]
     ] ],
+    [ "xiiArrayBase< xiiGALShaderVariableDescription, xiiDynamicArrayBase< xiiGALShaderVariableDescription > >", "da/d4c/classxii_array_base.htm", [
+      [ "xiiDynamicArrayBase< xiiGALShaderVariableDescription >", "d2/dea/classxii_dynamic_array_base.htm", [
+        [ "xiiDynamicArray< xiiGALShaderVariableDescription >", "dc/da4/classxii_dynamic_array.htm", null ]
+      ] ]
+    ] ],
     [ "xiiArrayBase< xiiGALShadingRateAttachmentDescription, xiiStaticArray< xiiGALShadingRateAttachmentDescription, Capacity > >", "da/d4c/classxii_array_base.htm", [
       [ "xiiStaticArray< xiiGALShadingRateAttachmentDescription, 1U >", "d9/d25/classxii_static_array.htm", null ]
     ] ],
@@ -1634,6 +1640,9 @@ var hierarchy =
       [ "xiiDynamicArrayBase< xiiRTTI * >", "d2/dea/classxii_dynamic_array_base.htm", [
         [ "xiiDynamicArray< xiiRTTI * >", "dc/da4/classxii_dynamic_array.htm", null ]
       ] ]
+    ] ],
+    [ "xiiArrayBase< xiiScopedRefPointer< xiiGALShaderByteCode >, xiiStaticArray< xiiScopedRefPointer< xiiGALShaderByteCode >, Capacity > >", "da/d4c/classxii_array_base.htm", [
+      [ "xiiStaticArray< xiiScopedRefPointer< xiiGALShaderByteCode >, xiiGALShaderStage::ENUM_COUNT >", "d9/d25/classxii_static_array.htm", null ]
     ] ],
     [ "xiiArrayBase< xiiSelectedCurveCP, xiiDynamicArrayBase< xiiSelectedCurveCP > >", "da/d4c/classxii_array_base.htm", [
       [ "xiiDynamicArrayBase< xiiSelectedCurveCP >", "d2/dea/classxii_dynamic_array_base.htm", [
@@ -2661,6 +2670,12 @@ var hierarchy =
     [ "xiiGALResource< xiiGALBufferViewCreationDescription >", "d4/d2d/classxii_g_a_l_resource.htm", [
       [ "xiiGALBufferView", "d8/dcf/classxii_g_a_l_buffer_view.htm", null ]
     ] ],
+    [ "xiiGALResource< xiiGALCommandListCreationDescription >", "d4/d2d/classxii_g_a_l_resource.htm", [
+      [ "xiiGALCommandList", "dc/d80/classxii_g_a_l_command_list.htm", null ]
+    ] ],
+    [ "xiiGALResource< xiiGALCommandQueueCreationDescription >", "d4/d2d/classxii_g_a_l_resource.htm", [
+      [ "xiiGALCommandQueue", "d1/dd2/classxii_g_a_l_command_queue.htm", null ]
+    ] ],
     [ "xiiGALResource< xiiGALFenceCreationDescription >", "d4/d2d/classxii_g_a_l_resource.htm", [
       [ "xiiGALFence", "d6/d79/classxii_g_a_l_fence.htm", null ]
     ] ],
@@ -2678,6 +2693,9 @@ var hierarchy =
     ] ],
     [ "xiiGALResource< xiiGALSamplerCreationDescription >", "d4/d2d/classxii_g_a_l_resource.htm", [
       [ "xiiGALSampler", "d3/d97/classxii_g_a_l_sampler.htm", null ]
+    ] ],
+    [ "xiiGALResource< xiiGALShaderCreationDescription >", "d4/d2d/classxii_g_a_l_resource.htm", [
+      [ "xiiGALShader", "d3/db8/classxii_g_a_l_shader.htm", null ]
     ] ],
     [ "xiiGALResource< xiiGALSwapChainCreationDescription >", "d4/d2d/classxii_g_a_l_resource.htm", [
       [ "xiiGALSwapChain", "d5/d07/classxii_g_a_l_swap_chain.htm", null ]
@@ -2710,7 +2728,17 @@ var hierarchy =
       [ "xiiEnum< xiiGALScanLineOrder >", "de/dfd/structxii_enum.htm", null ]
     ] ],
     [ "xiiGALShaderHandle", "d9/d71/classxii_g_a_l_shader_handle.htm", null ],
+    [ "xiiGALShaderPrimitiveType", "de/d04/structxii_g_a_l_shader_primitive_type.htm", [
+      [ "xiiEnum< xiiGALShaderPrimitiveType >", "de/dfd/structxii_enum.htm", null ]
+    ] ],
+    [ "xiiGALShaderResourceType", "d7/d8f/structxii_g_a_l_shader_resource_type.htm", [
+      [ "xiiEnum< xiiGALShaderResourceType >", "de/dfd/structxii_enum.htm", null ]
+    ] ],
     [ "xiiGALShaderStage", "d7/d93/structxii_g_a_l_shader_stage.htm", null ],
+    [ "xiiGALShaderVariableClassType", "d1/dec/structxii_g_a_l_shader_variable_class_type.htm", [
+      [ "xiiEnum< xiiGALShaderVariableClassType >", "de/dfd/structxii_enum.htm", null ]
+    ] ],
+    [ "xiiGALShaderVariableFlags", "d3/d05/structxii_g_a_l_shader_variable_flags.htm", null ],
     [ "xiiGALShadingRate", "d0/da7/structxii_g_a_l_shading_rate.htm", null ],
     [ "xiiGALShadingRateAxis", "d9/da4/structxii_g_a_l_shading_rate_axis.htm", null ],
     [ "xiiGALShadingRateCapabilityFlags", "dc/d5c/structxii_g_a_l_shading_rate_capability_flags.htm", null ],
@@ -2805,6 +2833,12 @@ var hierarchy =
     [ "xiiHashableStruct< xiiGALBufferViewCreationDescription >", "d7/d9f/classxii_hashable_struct.htm", [
       [ "xiiGALBufferViewCreationDescription", "d3/d47/structxii_g_a_l_buffer_view_creation_description.htm", null ]
     ] ],
+    [ "xiiHashableStruct< xiiGALCommandListCreationDescription >", "d7/d9f/classxii_hashable_struct.htm", [
+      [ "xiiGALCommandListCreationDescription", "db/db0/structxii_g_a_l_command_list_creation_description.htm", null ]
+    ] ],
+    [ "xiiHashableStruct< xiiGALCommandQueueCreationDescription >", "d7/d9f/classxii_hashable_struct.htm", [
+      [ "xiiGALCommandQueueCreationDescription", "d3/dc4/structxii_g_a_l_command_queue_creation_description.htm", null ]
+    ] ],
     [ "xiiHashableStruct< xiiGALCommandQueueProperties >", "d7/d9f/classxii_hashable_struct.htm", [
       [ "xiiGALCommandQueueProperties", "d6/dae/structxii_g_a_l_command_queue_properties.htm", null ]
     ] ],
@@ -2898,6 +2932,9 @@ var hierarchy =
     [ "xiiHashableStruct< xiiGALRenderTargetBlendDescription >", "d7/d9f/classxii_hashable_struct.htm", [
       [ "xiiGALRenderTargetBlendDescription", "d1/d81/structxii_g_a_l_render_target_blend_description.htm", null ]
     ] ],
+    [ "xiiHashableStruct< xiiGALSampleDescription >", "d7/d9f/classxii_hashable_struct.htm", [
+      [ "xiiGALSampleDescription", "da/de6/structxii_g_a_l_sample_description.htm", null ]
+    ] ],
     [ "xiiHashableStruct< xiiGALSamplerCreationDescription >", "d7/d9f/classxii_hashable_struct.htm", [
       [ "xiiGALSamplerCreationDescription", "d6/dbe/structxii_g_a_l_sampler_creation_description.htm", null ]
     ] ],
@@ -2906,6 +2943,18 @@ var hierarchy =
     ] ],
     [ "xiiHashableStruct< xiiGALScratchBufferSizeDescription >", "d7/d9f/classxii_hashable_struct.htm", [
       [ "xiiGALScratchBufferSizeDescription", "d5/d4c/structxii_g_a_l_scratch_buffer_size_description.htm", null ]
+    ] ],
+    [ "xiiHashableStruct< xiiGALShaderBufferDescription >", "d7/d9f/classxii_hashable_struct.htm", [
+      [ "xiiGALShaderBufferDescription", "d7/d0b/structxii_g_a_l_shader_buffer_description.htm", null ]
+    ] ],
+    [ "xiiHashableStruct< xiiGALShaderCreationDescription >", "d7/d9f/classxii_hashable_struct.htm", [
+      [ "xiiGALShaderCreationDescription", "d3/d51/structxii_g_a_l_shader_creation_description.htm", null ]
+    ] ],
+    [ "xiiHashableStruct< xiiGALShaderResourceDescription >", "d7/d9f/classxii_hashable_struct.htm", [
+      [ "xiiGALShaderResourceDescription", "d4/dce/structxii_g_a_l_shader_resource_description.htm", null ]
+    ] ],
+    [ "xiiHashableStruct< xiiGALShaderVariableDescription >", "d7/d9f/classxii_hashable_struct.htm", [
+      [ "xiiGALShaderVariableDescription", "d7/d1f/structxii_g_a_l_shader_variable_description.htm", null ]
     ] ],
     [ "xiiHashableStruct< xiiGALShadingRateAttachmentDescription >", "d7/d9f/classxii_hashable_struct.htm", [
       [ "xiiGALShadingRateAttachmentDescription", "d8/dbe/structxii_g_a_l_shading_rate_attachment_description.htm", null ]
@@ -4055,6 +4104,7 @@ var hierarchy =
     [ "xiiRttiMappedObjectFactory< xiiQtProxy >", "d5/da2/classxii_rtti_mapped_object_factory.htm", null ],
     [ "xiiScopedCFRef< T >", "d0/df2/classxii_scoped_c_f_ref.htm", null ],
     [ "xiiScopedRefPointer< T >", "d4/d8c/classxii_scoped_ref_pointer.htm", null ],
+    [ "xiiScopedRefPointer< xiiGALShaderByteCode >", "d4/d8c/classxii_scoped_ref_pointer.htm", null ],
     [ "xiiScopeExit< T >", "dc/d50/structxii_scope_exit.htm", null ],
     [ "xiiScreen", "d9/d29/classxii_screen.htm", null ],
     [ "xiiScreenInfo", "d3/dc7/structxii_screen_info.htm", null ],
