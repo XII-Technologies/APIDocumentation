@@ -104,10 +104,14 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a84edff70d97ff62192c9196d2c7855b7"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d05/structxii_g_a_l_shader_variable_flags.htm#a84edff70d97ff62192c9196d2c7855b7">Enum</a> : StorageType { <a class="el" href="../../d3/d05/structxii_g_a_l_shader_variable_flags.htm#a84edff70d97ff62192c9196d2c7855b7a0c1bbc104f39a9ce8a56e1cde498ddb1">None</a> = 0U, 
+<tr class="memitem:a84edff70d97ff62192c9196d2c7855b7"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d05/structxii_g_a_l_shader_variable_flags.htm#a84edff70d97ff62192c9196d2c7855b7">Enum</a> : StorageType { <br />
+&#160;&#160;<a class="el" href="../../d3/d05/structxii_g_a_l_shader_variable_flags.htm#a84edff70d97ff62192c9196d2c7855b7a0c1bbc104f39a9ce8a56e1cde498ddb1">None</a> = 0U, 
 <a class="el" href="../../d3/d05/structxii_g_a_l_shader_variable_flags.htm#a84edff70d97ff62192c9196d2c7855b7a6e3c9f1ecaad006e5c34276a1b03a227">NoDynamicBuffers</a> = XII_BIT(0), 
-<b>ENUM_COUNT</b> = 2U, 
-<b>Default</b> = None
+<a class="el" href="../../d3/d05/structxii_g_a_l_shader_variable_flags.htm#a84edff70d97ff62192c9196d2c7855b7a1b452c57ef6ab7866aedd3bdcaaf3373">InputAttachment</a> = XII_BIT(1), 
+<b>ENUM_COUNT</b> = 3U, 
+<br />
+&#160;&#160;<b>Default</b> = None
+<br />
  }</td></tr>
 <tr class="separator:a84edff70d97ff62192c9196d2c7855b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abb219da4ec1ecd2befbba0472d4e4031"><td class="memItemLeft" align="right" valign="top"><a id="abb219da4ec1ecd2befbba0472d4e4031"></a>
@@ -133,6 +137,8 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>StorageType</b> = xi
 </td></tr>
 <tr><td class="fieldname"><a id="a84edff70d97ff62192c9196d2c7855b7a6e3c9f1ecaad006e5c34276a1b03a227"></a>NoDynamicBuffers&#160;</td><td class="fielddoc"><p>This indicates that dynamic buffers will never be bound to the resource variable. This applies to uniform (constant) buffers, unordered access views, and shader resource views. </p><pre class="fragment">                             \remarks This flag directly translates to the xiiGALPipelineResourceFlag::NoDynamicBuffers in the internal pipeline resource signature. 
 </pre> </td></tr>
+<tr><td class="fieldname"><a id="a84edff70d97ff62192c9196d2c7855b7a1b452c57ef6ab7866aedd3bdcaaf3373"></a>InputAttachment&#160;</td><td class="fielddoc"><p>This indicates that the resource is an input attachment in general layout, which allows simultaneously reading from the resource through the input attachment and writing to it via color or depth-stencil attachment. </p><pre class="fragment">                            \note This flag is only valid in Vulkan. 
+</pre> </td></tr>
 </table>
 
 </div>
@@ -146,7 +152,7 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>StorageType</b> = xi
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d3/d05/structxii_g_a_l_shader_variable_flags.htm">xiiGALShaderVariableFlags</a></li>
-    <li class="footer">Generated on Tue Aug 15 2023 01:42:07 for XIIEngine by
+    <li class="footer">Generated on Wed Aug 16 2023 02:47:10 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>
