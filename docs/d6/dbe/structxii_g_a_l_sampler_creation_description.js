@@ -5,6 +5,7 @@ var structxii_g_a_l_sampler_creation_description =
     [ "m_AddressV", "d6/dbe/structxii_g_a_l_sampler_creation_description.htm#af9fbd69b25ccca4ae27f561abed010ae", null ],
     [ "m_AddressW", "d6/dbe/structxii_g_a_l_sampler_creation_description.htm#a52186d7a25e91e4652638aa8195db62d", null ],
     [ "m_BorderColor", "d6/dbe/structxii_g_a_l_sampler_creation_description.htm#a8912d225f1a80db11ed161bd823cd4a7", null ],
+    [ "m_bUnormalizedCoords", "d6/dbe/structxii_g_a_l_sampler_creation_description.htm#a1327e2efe5281f5eef03410d5cabaa71", null ],
     [ "m_ComparisonFunction", "d6/dbe/structxii_g_a_l_sampler_creation_description.htm#aff5f3f96b6b1fc7844ff96bc15142696", null ],
     [ "m_Flags", "d6/dbe/structxii_g_a_l_sampler_creation_description.htm#aa12e049b519fc2a91c7d0b9a2e67f9c5", null ],
     [ "m_fMaxLOD", "d6/dbe/structxii_g_a_l_sampler_creation_description.htm#aec5325294527c9ed9a6f73037672bf35", null ],

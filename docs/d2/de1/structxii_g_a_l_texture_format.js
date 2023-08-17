@@ -71,7 +71,7 @@ var structxii_g_a_l_texture_format =
       [ "R1UNormalized", "d2/de1/structxii_g_a_l_texture_format.htm#a4ebed18ce152a1ef73a0afa6ae6e767ba0dc207e0882d5e77599c0057006a7539", null ],
       [ "RGB9E5SharedExponent", "d2/de1/structxii_g_a_l_texture_format.htm#a4ebed18ce152a1ef73a0afa6ae6e767bafe080bbd223dd95c227d79915cdd8a74", null ],
       [ "RG8BG8UNormalized", "d2/de1/structxii_g_a_l_texture_format.htm#a4ebed18ce152a1ef73a0afa6ae6e767ba114a147362a7fc14c0ced2f2c866bb94", null ],
-      [ "RGR8GB8UNormalized", "d2/de1/structxii_g_a_l_texture_format.htm#a4ebed18ce152a1ef73a0afa6ae6e767ba052c9d552dfbab926871357b48eb422f", null ],
+      [ "GR8GB8UNormalized", "d2/de1/structxii_g_a_l_texture_format.htm#a4ebed18ce152a1ef73a0afa6ae6e767baea94aa34fd4b583ee9520495a2d306df", null ],
       [ "BC1Typeless", "d2/de1/structxii_g_a_l_texture_format.htm#a4ebed18ce152a1ef73a0afa6ae6e767ba9a9840e8b184ad8f93584b541181965d", null ],
       [ "BC1UNormalized", "d2/de1/structxii_g_a_l_texture_format.htm#a4ebed18ce152a1ef73a0afa6ae6e767bae417c58ee2b8e28c335950260c552050", null ],
       [ "BC1UNormalizedSRGB", "d2/de1/structxii_g_a_l_texture_format.htm#a4ebed18ce152a1ef73a0afa6ae6e767bada6c314aaea71f4dbf93e8bbecf34d59", null ],

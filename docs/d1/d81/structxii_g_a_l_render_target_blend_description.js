@@ -7,6 +7,7 @@ var structxii_g_a_l_render_target_blend_description =
     [ "m_ColorMask", "d1/d81/structxii_g_a_l_render_target_blend_description.htm#ab97a1ca505aeece719612f70f6f28b8f", null ],
     [ "m_DestinationBlend", "d1/d81/structxii_g_a_l_render_target_blend_description.htm#a5563d31ee4b2ca5ea80638bc01d56e6e", null ],
     [ "m_DestinationBlendAlpha", "d1/d81/structxii_g_a_l_render_target_blend_description.htm#a20a773534446cd2512ed9310e16cad04", null ],
+    [ "m_LogicOperation", "d1/d81/structxii_g_a_l_render_target_blend_description.htm#ac0fc9677704c74a3950973fbaf3d298a", null ],
     [ "m_SourceBlend", "d1/d81/structxii_g_a_l_render_target_blend_description.htm#a701d606da4ab754ff0e932b29c9764b1", null ],
     [ "m_SourceBlendAlpha", "d1/d81/structxii_g_a_l_render_target_blend_description.htm#aa276e98337a474bf820695665fa6a03c", null ]
 ];
