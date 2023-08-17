@@ -272,8 +272,8 @@ Additional Inherited Members</h2></td></tr>
 <p>This binds a resource to the variable. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">pResource</td><td>A pointer to the resource to bind. </td></tr>
-    <tr><td class="paramname">flags</td><td>Flags. See <a class="el" href="../../dc/d47/structxii_g_a_l_set_shader_resource_flags.htm" title="brief This describes the shader setting flags.">xiiGALSetShaderResourceFlags</a>.</td></tr>
+    <tr><td class="paramname">pResource</td><td>- A pointer to the resource to bind. </td></tr>
+    <tr><td class="paramname">flags</td><td>- Flags. See <a class="el" href="../../dc/d47/structxii_g_a_l_set_shader_resource_flags.htm" title="brief This describes the shader setting flags.">xiiGALSetShaderResourceFlags</a>.</td></tr>
   </table>
   </dd>
 </dl>
@@ -330,10 +330,10 @@ Additional Inherited Members</h2></td></tr>
 <p>This binds a resource array to the variable. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">ppResources</td><td>A pointer to the array of resources. </td></tr>
-    <tr><td class="paramname">uiFirstElement</td><td>The first array element to set. </td></tr>
-    <tr><td class="paramname">uiElementCount</td><td>The number of resources in the ppResources array. </td></tr>
-    <tr><td class="paramname">flags</td><td>Flags. See <a class="el" href="../../dc/d47/structxii_g_a_l_set_shader_resource_flags.htm" title="brief This describes the shader setting flags.">xiiGALSetShaderResourceFlags</a>.</td></tr>
+    <tr><td class="paramname">ppResources</td><td>- A pointer to the array of resources. </td></tr>
+    <tr><td class="paramname">uiFirstElement</td><td>- The first array element to set. </td></tr>
+    <tr><td class="paramname">uiElementCount</td><td>- The number of resources in the ppResources array. </td></tr>
+    <tr><td class="paramname">flags</td><td>- Flags. See <a class="el" href="../../dc/d47/structxii_g_a_l_set_shader_resource_flags.htm" title="brief This describes the shader setting flags.">xiiGALSetShaderResourceFlags</a>.</td></tr>
   </table>
   </dd>
 </dl>
@@ -378,8 +378,8 @@ Additional Inherited Members</h2></td></tr>
 <p>This sets the constant or structured buffer dynamic offset. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">uiOffset</td><td>The additional offset in bytes, that is added to the base offset (see remarks). Only 32-bit offsets are supported. </td></tr>
-    <tr><td class="paramname">uiArrayIndex</td><td>For array variables, the index of the array element.</td></tr>
+    <tr><td class="paramname">uiOffset</td><td>- The additional offset in bytes, that is added to the base offset (see remarks). Only 32-bit offsets are supported. </td></tr>
+    <tr><td class="paramname">uiArrayIndex</td><td>- For array variables, the index of the array element.</td></tr>
   </table>
   </dd>
 </dl>
@@ -445,16 +445,15 @@ Additional Inherited Members</h2></td></tr>
 <p>This binds a specified constant buffer range to the variable. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">pResource</td><td>The pointer to the resource. </td></tr>
-    <tr><td class="paramname">uiOffset</td><td>The offset in bytes to the start of the buffer range to bind. </td></tr>
-    <tr><td class="paramname">uiSize</td><td>The size in bytes of the buffer range to bind. </td></tr>
-    <tr><td class="paramname">uiArrayIndex</td><td>For array variables, the index of the array element. </td></tr>
-    <tr><td class="paramname">flags</td><td>Flags. See <a class="el" href="../../dc/d47/structxii_g_a_l_set_shader_resource_flags.htm" title="brief This describes the shader setting flags.">xiiGALSetShaderResourceFlags</a>.</td></tr>
+    <tr><td class="paramname">pResource</td><td>- The pointer to the resource. </td></tr>
+    <tr><td class="paramname">uiOffset</td><td>- The offset in bytes to the start of the buffer range to bind. </td></tr>
+    <tr><td class="paramname">uiSize</td><td>- The size in bytes of the buffer range to bind. </td></tr>
+    <tr><td class="paramname">uiArrayIndex</td><td>- For array variables, the index of the array element. </td></tr>
+    <tr><td class="paramname">-</td><td>flags Flags. See <a class="el" href="../../dc/d47/structxii_g_a_l_set_shader_resource_flags.htm" title="brief This describes the shader setting flags.">xiiGALSetShaderResourceFlags</a>.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section remark"><dt>Remarks</dt><dd>This method is only allowed for constant buffers. If dynamic offset is further set by <a class="el" href="../../de/df6/classxii_g_a_l_shader_resource_variable.htm#ac074bada1230ed1e3815c525ac346036" title="This sets the constant or structured buffer dynamic offset.">SetBufferOffset()</a> method, it is added to the base offset set by this method. <pre class="fragment">     The method resets dynamic offset previously set for this variable to zero.
-</pre></dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>This method is only allowed for constant buffers. If dynamic offset is further set by <a class="el" href="../../de/df6/classxii_g_a_l_shader_resource_variable.htm#ac074bada1230ed1e3815c525ac346036" title="This sets the constant or structured buffer dynamic offset.">SetBufferOffset()</a> method, it is added to the base offset set by this method. The method resets dynamic offset previously set for this variable to zero.</dd></dl>
 <dl class="section warning"><dt>Warning</dt><dd>The Offset must be an integer multiple of m_uiConstantBufferOffsetAlignment member specified by the device limits xiiGALDeviceLimits. </dd></dl>
 
 </div>
@@ -469,7 +468,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../de/df6/classxii_g_a_l_shader_resource_variable.htm">xiiGALShaderResourceVariable</a></li>
-    <li class="footer">Generated on Thu Aug 17 2023 02:03:14 for XIIEngine by
+    <li class="footer">Generated on Thu Aug 17 2023 14:05:59 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

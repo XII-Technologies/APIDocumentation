@@ -520,6 +520,7 @@ var annotated_dup =
     [ "xiiGALFormatLookupTable", "d3/daa/classxii_g_a_l_format_lookup_table.htm", "d3/daa/classxii_g_a_l_format_lookup_table" ],
     [ "xiiGALFramebuffer", "db/d39/classxii_g_a_l_framebuffer.htm", "db/d39/classxii_g_a_l_framebuffer" ],
     [ "xiiGALFramebufferCreationDescription", "db/dd3/structxii_g_a_l_framebuffer_creation_description.htm", "db/dd3/structxii_g_a_l_framebuffer_creation_description" ],
+    [ "xiiGALFramebufferHandle", "dd/d03/classxii_g_a_l_framebuffer_handle.htm", "dd/d03/classxii_g_a_l_framebuffer_handle" ],
     [ "xiiGALFullScreenModeDescription", "d0/db4/structxii_g_a_l_full_screen_mode_description.htm", "d0/db4/structxii_g_a_l_full_screen_mode_description" ],
     [ "xiiGALGraphicsAdapterVendor", "d4/d31/structxii_g_a_l_graphics_adapter_vendor.htm", "d4/d31/structxii_g_a_l_graphics_adapter_vendor" ],
     [ "xiiGALGraphicsDeviceCreationDescription", "d9/d52/structxii_g_a_l_graphics_device_creation_description.htm", "d9/d52/structxii_g_a_l_graphics_device_creation_description" ],

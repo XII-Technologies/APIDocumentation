@@ -2659,6 +2659,7 @@ var hierarchy =
     ] ],
     [ "xiiGALFormatLookupEntry< NativeFormatType, InvalidFormat >", "d5/de0/classxii_g_a_l_format_lookup_entry.htm", null ],
     [ "xiiGALFormatLookupTable< FormatClass >", "d3/daa/classxii_g_a_l_format_lookup_table.htm", null ],
+    [ "xiiGALFramebufferHandle", "dd/d03/classxii_g_a_l_framebuffer_handle.htm", null ],
     [ "xiiGALGraphicsAdapterVendor", "d4/d31/structxii_g_a_l_graphics_adapter_vendor.htm", [
       [ "xiiEnum< xiiGALGraphicsAdapterVendor >", "de/dfd/structxii_enum.htm", null ]
     ] ],
@@ -3226,12 +3227,6 @@ var hierarchy =
     ] ],
     [ "xiiHashTableBase< xiiUInt32, float, xiiHashHelper< xiiUInt32 > >", "d0/da6/classxii_hash_table_base.htm", [
       [ "xiiHashTable< xiiUInt32, float >", "d8/dc2/classxii_hash_table.htm", null ]
-    ] ],
-    [ "xiiHashTableBase< xiiUInt32, xiiGALBufferViewHandle, xiiHashHelper< xiiUInt32 > >", "d0/da6/classxii_hash_table_base.htm", [
-      [ "xiiHashTable< xiiUInt32, xiiGALBufferViewHandle >", "d8/dc2/classxii_hash_table.htm", null ]
-    ] ],
-    [ "xiiHashTableBase< xiiUInt32, xiiGALTextureViewHandle, xiiHashHelper< xiiUInt32 > >", "d0/da6/classxii_hash_table_base.htm", [
-      [ "xiiHashTable< xiiUInt32, xiiGALTextureViewHandle >", "d8/dc2/classxii_hash_table.htm", null ]
     ] ],
     [ "xiiHashTableBase< xiiUInt32, xiiRemoteMessageQueue, xiiHashHelper< xiiUInt32 > >", "d0/da6/classxii_hash_table_base.htm", [
       [ "xiiHashTable< xiiUInt32, xiiRemoteMessageQueue >", "d8/dc2/classxii_hash_table.htm", null ]
