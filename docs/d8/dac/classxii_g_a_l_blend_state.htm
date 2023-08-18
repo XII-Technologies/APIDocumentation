@@ -95,13 +95,14 @@ $(document).ready(function(){initNavTree('d8/dac/classxii_g_a_l_blend_state.htm'
 <p>Interface that defines methods to manipulate a blend state object.  
  <a href="../../d8/dac/classxii_g_a_l_blend_state.htm#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="../../d8/de2/_blend_state_8h_source.htm">BlendState.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="../../df/d58/_blend_state_d3_d12_8h_source.htm">BlendStateD3D12.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for xiiGALBlendState:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../dd/de3/classxii_g_a_l_blend_state__inherit__graph.png" border="0" usemap="#xii_g_a_l_blend_state_inherit__map" alt="Inheritance graph"/></div>
 <map name="xii_g_a_l_blend_state_inherit__map" id="xii_g_a_l_blend_state_inherit__map">
 <area shape="rect" title="Interface that defines methods to manipulate a blend state object." alt="" coords="38,244,173,271"/>
+<area shape="rect" href="../../d2/d2f/classxii_g_a_l_blend_state_vulkan.htm" title=" " alt="" coords="16,319,195,345"/>
 <area shape="rect" href="../../d3/dda/classxii_g_a_l_object.htm" title=" " alt="" coords="5,155,205,196"/>
 <area shape="rect" href="../../d3/dd0/classxii_ref_counted.htm" title="Base class for reference counted objects." alt="" coords="48,80,163,107"/>
 <area shape="rect" href="../../d7/df4/classxii_ref_counting_impl.htm" title=" " alt="" coords="32,5,179,32"/>
@@ -119,12 +120,21 @@ virtual <a class="el" href="../../dd/dad/structxii_result.htm">xiiResult</a>&#16
 <tr class="memitem:ac5ad0dc1f11f5a568c4225625d5d99d4"><td class="memItemLeft" align="right" valign="top"><a id="ac5ad0dc1f11f5a568c4225625d5d99d4"></a>
 virtual <a class="el" href="../../dd/dad/structxii_result.htm">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><b>DeInitPlatform</b> (<a class="el" href="../../d5/d19/classxii_g_a_l_device.htm">xiiGALDevice</a> *pDevice)=0</td></tr>
 <tr class="separator:ac5ad0dc1f11f5a568c4225625d5d99d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54884c9cdca708ba851fdd6d7668df0c"><td class="memItemLeft" align="right" valign="top"><a id="a54884c9cdca708ba851fdd6d7668df0c"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>xiiGALBlendState</b> (const <a class="el" href="../../d6/dd7/structxii_g_a_l_blend_state_creation_description.htm">xiiGALBlendStateCreationDescription</a> &amp;creationDescription)</td></tr>
+<tr class="separator:a54884c9cdca708ba851fdd6d7668df0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5cec4b319a731f97835b446b2c6dfb1f"><td class="memItemLeft" align="right" valign="top"><a id="a5cec4b319a731f97835b446b2c6dfb1f"></a>
+virtual <a class="el" href="../../dd/dad/structxii_result.htm">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><b>InitPlatform</b> (<a class="el" href="../../d5/d19/classxii_g_a_l_device.htm">xiiGALDevice</a> *pDevice)=0</td></tr>
+<tr class="separator:a5cec4b319a731f97835b446b2c6dfb1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5ad0dc1f11f5a568c4225625d5d99d4"><td class="memItemLeft" align="right" valign="top"><a id="ac5ad0dc1f11f5a568c4225625d5d99d4"></a>
+virtual <a class="el" href="../../dd/dad/structxii_result.htm">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><b>DeInitPlatform</b> (<a class="el" href="../../d5/d19/classxii_g_a_l_device.htm">xiiGALDevice</a> *pDevice)=0</td></tr>
+<tr class="separator:ac5ad0dc1f11f5a568c4225625d5d99d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
-<tr class="memitem:a8a9dd0ea17d38c3d68c9db0002e5dab0"><td class="memItemLeft" align="right" valign="top"><a id="a8a9dd0ea17d38c3d68c9db0002e5dab0"></a>
+<tr class="memitem:a557157c6c9e7c7d8dc210dcd45d9fe17"><td class="memItemLeft" align="right" valign="top"><a id="a557157c6c9e7c7d8dc210dcd45d9fe17"></a>
 class&#160;</td><td class="memItemRight" valign="bottom"><b>xiiGALDevice</b></td></tr>
-<tr class="separator:a8a9dd0ea17d38c3d68c9db0002e5dab0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a557157c6c9e7c7d8dc210dcd45d9fe17"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -175,7 +185,9 @@ xiiInt32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Interface that defines methods to manipulate a blend state object. </p>
 </div><hr/>The documentation for this class was generated from the following files:<ul>
+<li>/home/runner/work/XII/XII/Source/Engine/GraphicsD3D12/States/<a class="el" href="../../df/d58/_blend_state_d3_d12_8h_source.htm">BlendStateD3D12.h</a></li>
 <li>/home/runner/work/XII/XII/Source/Engine/GraphicsFoundation/States/<a class="el" href="../../d8/de2/_blend_state_8h_source.htm">BlendState.h</a></li>
+<li>/home/runner/work/XII/XII/Source/Engine/GraphicsD3D12/States/Implementation/BlendStateD3D12.cpp</li>
 <li>/home/runner/work/XII/XII/Source/Engine/GraphicsFoundation/States/Implementation/BlendState.cpp</li>
 </ul>
 </div><!-- contents -->
@@ -184,7 +196,7 @@ xiiInt32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d8/dac/classxii_g_a_l_blend_state.htm">xiiGALBlendState</a></li>
-    <li class="footer">Generated on Thu Aug 17 2023 14:05:58 for XIIEngine by
+    <li class="footer">Generated on Fri Aug 18 2023 22:27:02 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

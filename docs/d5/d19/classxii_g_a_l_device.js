@@ -1,5 +1,6 @@
 var classxii_g_a_l_device =
 [
+    [ "BeginFrame", "d5/d19/classxii_g_a_l_device.htm#af9185650581a251148e864d02cf5bd99", null ],
     [ "BeginPass", "d5/d19/classxii_g_a_l_device.htm#aad047f9f8072c6f5b75bb836d4670e0e", null ],
     [ "BeginPipeline", "d5/d19/classxii_g_a_l_device.htm#acc7eab665af8fc6c508a32f77c6d08f7", null ],
     [ "CreateBlendState", "d5/d19/classxii_g_a_l_device.htm#a91802801bbde1b3c5789aebc174d81ed", null ],
@@ -30,6 +31,7 @@ var classxii_g_a_l_device =
     [ "DestroyTexture", "d5/d19/classxii_g_a_l_device.htm#acb5d8e014a6dedefc705c4dbb060477c", null ],
     [ "DestroyTopLevelAS", "d5/d19/classxii_g_a_l_device.htm#a8a8ff076e983a2509f6a2cb5b2ef9e1b", null ],
     [ "DestroyVertexDeclaration", "d5/d19/classxii_g_a_l_device.htm#ab52142f9364e8f104908fc77d9b2dffa", null ],
+    [ "EndFrame", "d5/d19/classxii_g_a_l_device.htm#a0cf5758c2b1ef8fb65823a53238f1a7a", null ],
     [ "EndPass", "d5/d19/classxii_g_a_l_device.htm#a1976fdaa37a58892fe830e308170e19f", null ],
     [ "EndPipeline", "d5/d19/classxii_g_a_l_device.htm#ac58c75e3dcc1f29a6990f2370a4aea03", null ],
     [ "Initialize", "d5/d19/classxii_g_a_l_device.htm#a64fd727410fb0d83a90f5b7999feaf7b", null ],

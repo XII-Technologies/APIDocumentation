@@ -95,7 +95,7 @@ $(document).ready(function(){initNavTree('d7/dd1/structxii_g_a_l_color_mask.htm'
 <p>This describes the color component write flags.  
  <a href="../../d7/dd1/structxii_g_a_l_color_mask.htm#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="../../d8/de2/_blend_state_8h_source.htm">BlendState.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="../../df/d58/_blend_state_d3_d12_8h_source.htm">BlendStateD3D12.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
@@ -105,21 +105,64 @@ Classes</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:a8c7d9d97828b9d4deb3e3c6a1456f223"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dd1/structxii_g_a_l_color_mask.htm#a8c7d9d97828b9d4deb3e3c6a1456f223">Enum</a> : StorageType { <br />
-&#160;&#160;<a class="el" href="../../d7/dd1/structxii_g_a_l_color_mask.htm#a8c7d9d97828b9d4deb3e3c6a1456f223aa683abe689aa1863f4eca973293acf14">None</a> = 0U, 
-<a class="el" href="../../d7/dd1/structxii_g_a_l_color_mask.htm#a8c7d9d97828b9d4deb3e3c6a1456f223a77c0e00bd470b7959ca437b301159d1d">Red</a> = XII_BIT(0), 
-<a class="el" href="../../d7/dd1/structxii_g_a_l_color_mask.htm#a8c7d9d97828b9d4deb3e3c6a1456f223ab807d067d907b97599177bb12dadda88">Green</a> = XII_BIT(1), 
-<a class="el" href="../../d7/dd1/structxii_g_a_l_color_mask.htm#a8c7d9d97828b9d4deb3e3c6a1456f223a421172d9f49eba3d9fc29dfd9ff3eb42">Blue</a> = XII_BIT(2), 
+&#160;&#160;<a class="el" href="../../d7/dd1/structxii_g_a_l_color_mask.htm#a8c7d9d97828b9d4deb3e3c6a1456f223a0751888a7745c3ec54064f903e470ca1">None</a> = 0U, 
+<a class="el" href="../../d7/dd1/structxii_g_a_l_color_mask.htm#a8c7d9d97828b9d4deb3e3c6a1456f223adf5e8ce28093e2ca69e3e65d3088d8b6">Red</a> = XII_BIT(0), 
+<a class="el" href="../../d7/dd1/structxii_g_a_l_color_mask.htm#a8c7d9d97828b9d4deb3e3c6a1456f223aac07432319dcd3f4aa86974a324660af">Green</a> = XII_BIT(1), 
+<a class="el" href="../../d7/dd1/structxii_g_a_l_color_mask.htm#a8c7d9d97828b9d4deb3e3c6a1456f223ac5979e91ed0a3204180aed1ba69f3c8d">Blue</a> = XII_BIT(2), 
 <br />
-&#160;&#160;<a class="el" href="../../d7/dd1/structxii_g_a_l_color_mask.htm#a8c7d9d97828b9d4deb3e3c6a1456f223a4d5ab28150e2702f0e0f594143c817c0">Alpha</a> = XII_BIT(3), 
+&#160;&#160;<a class="el" href="../../d7/dd1/structxii_g_a_l_color_mask.htm#a8c7d9d97828b9d4deb3e3c6a1456f223a21fc60b591ae4d2c1466f6dd03f6237a">Alpha</a> = XII_BIT(3), 
 <b>ENUM_COUNT</b> = 5U, 
-<a class="el" href="../../d7/dd1/structxii_g_a_l_color_mask.htm#a8c7d9d97828b9d4deb3e3c6a1456f223a7861ceb5a3d9fc69db22aa09b184ae8d">RG</a> = Red | Green, 
-<a class="el" href="../../d7/dd1/structxii_g_a_l_color_mask.htm#a8c7d9d97828b9d4deb3e3c6a1456f223ac0bf6fc8c7e586cf4fdf8fb105f27b4a">RGB</a> = Red | Green | Blue, 
+<a class="el" href="../../d7/dd1/structxii_g_a_l_color_mask.htm#a8c7d9d97828b9d4deb3e3c6a1456f223ad1ede29ac3e4599f95362e67f46a2b05">RG</a> = Red | Green, 
+<a class="el" href="../../d7/dd1/structxii_g_a_l_color_mask.htm#a8c7d9d97828b9d4deb3e3c6a1456f223a5934cc8da3a59621ba816bdad478f5b1">RGB</a> = Red | Green | Blue, 
 <br />
-&#160;&#160;<a class="el" href="../../d7/dd1/structxii_g_a_l_color_mask.htm#a8c7d9d97828b9d4deb3e3c6a1456f223a79b31450dc1de1ae35000b511da523c6">RGBA</a> = Red | Green | Blue | Alpha, 
-<a class="el" href="../../d7/dd1/structxii_g_a_l_color_mask.htm#a8c7d9d97828b9d4deb3e3c6a1456f223ad90ff35319cc4af9a77bdbe3e568d833">Default</a> = (((Red | Green) | Blue) | Alpha)
+&#160;&#160;<a class="el" href="../../d7/dd1/structxii_g_a_l_color_mask.htm#a8c7d9d97828b9d4deb3e3c6a1456f223a2f528f8e6d10377b4a8e3a5e06c94655">RGBA</a> = Red | Green | Blue | Alpha, 
+<a class="el" href="../../d7/dd1/structxii_g_a_l_color_mask.htm#a8c7d9d97828b9d4deb3e3c6a1456f223ac61184a8f8bece785f87db49d3844964">Default</a> = (((Red | Green) | Blue) | Alpha), 
+<a class="el" href="../../d7/dd1/structxii_g_a_l_color_mask.htm#a8c7d9d97828b9d4deb3e3c6a1456f223a0751888a7745c3ec54064f903e470ca1">None</a> = 0U, 
+<a class="el" href="../../d7/dd1/structxii_g_a_l_color_mask.htm#a8c7d9d97828b9d4deb3e3c6a1456f223adf5e8ce28093e2ca69e3e65d3088d8b6">Red</a> = XII_BIT(0), 
+<br />
+&#160;&#160;<a class="el" href="../../d7/dd1/structxii_g_a_l_color_mask.htm#a8c7d9d97828b9d4deb3e3c6a1456f223aac07432319dcd3f4aa86974a324660af">Green</a> = XII_BIT(1), 
+<a class="el" href="../../d7/dd1/structxii_g_a_l_color_mask.htm#a8c7d9d97828b9d4deb3e3c6a1456f223ac5979e91ed0a3204180aed1ba69f3c8d">Blue</a> = XII_BIT(2), 
+<a class="el" href="../../d7/dd1/structxii_g_a_l_color_mask.htm#a8c7d9d97828b9d4deb3e3c6a1456f223a21fc60b591ae4d2c1466f6dd03f6237a">Alpha</a> = XII_BIT(3), 
+<b>ENUM_COUNT</b> = 5U, 
+<br />
+&#160;&#160;<a class="el" href="../../d7/dd1/structxii_g_a_l_color_mask.htm#a8c7d9d97828b9d4deb3e3c6a1456f223ad1ede29ac3e4599f95362e67f46a2b05">RG</a> = Red | Green, 
+<a class="el" href="../../d7/dd1/structxii_g_a_l_color_mask.htm#a8c7d9d97828b9d4deb3e3c6a1456f223a5934cc8da3a59621ba816bdad478f5b1">RGB</a> = Red | Green | Blue, 
+<a class="el" href="../../d7/dd1/structxii_g_a_l_color_mask.htm#a8c7d9d97828b9d4deb3e3c6a1456f223a2f528f8e6d10377b4a8e3a5e06c94655">RGBA</a> = Red | Green | Blue | Alpha, 
+<a class="el" href="../../d7/dd1/structxii_g_a_l_color_mask.htm#a8c7d9d97828b9d4deb3e3c6a1456f223ac61184a8f8bece785f87db49d3844964">Default</a> = (((Red | Green) | Blue) | Alpha)
 <br />
  }</td></tr>
 <tr class="separator:a8c7d9d97828b9d4deb3e3c6a1456f223"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c7d9d97828b9d4deb3e3c6a1456f223"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dd1/structxii_g_a_l_color_mask.htm#a8c7d9d97828b9d4deb3e3c6a1456f223">Enum</a> : StorageType { <br />
+&#160;&#160;<a class="el" href="../../d7/dd1/structxii_g_a_l_color_mask.htm#a8c7d9d97828b9d4deb3e3c6a1456f223a0751888a7745c3ec54064f903e470ca1">None</a> = 0U, 
+<a class="el" href="../../d7/dd1/structxii_g_a_l_color_mask.htm#a8c7d9d97828b9d4deb3e3c6a1456f223adf5e8ce28093e2ca69e3e65d3088d8b6">Red</a> = XII_BIT(0), 
+<a class="el" href="../../d7/dd1/structxii_g_a_l_color_mask.htm#a8c7d9d97828b9d4deb3e3c6a1456f223aac07432319dcd3f4aa86974a324660af">Green</a> = XII_BIT(1), 
+<a class="el" href="../../d7/dd1/structxii_g_a_l_color_mask.htm#a8c7d9d97828b9d4deb3e3c6a1456f223ac5979e91ed0a3204180aed1ba69f3c8d">Blue</a> = XII_BIT(2), 
+<br />
+&#160;&#160;<a class="el" href="../../d7/dd1/structxii_g_a_l_color_mask.htm#a8c7d9d97828b9d4deb3e3c6a1456f223a21fc60b591ae4d2c1466f6dd03f6237a">Alpha</a> = XII_BIT(3), 
+<b>ENUM_COUNT</b> = 5U, 
+<a class="el" href="../../d7/dd1/structxii_g_a_l_color_mask.htm#a8c7d9d97828b9d4deb3e3c6a1456f223ad1ede29ac3e4599f95362e67f46a2b05">RG</a> = Red | Green, 
+<a class="el" href="../../d7/dd1/structxii_g_a_l_color_mask.htm#a8c7d9d97828b9d4deb3e3c6a1456f223a5934cc8da3a59621ba816bdad478f5b1">RGB</a> = Red | Green | Blue, 
+<br />
+&#160;&#160;<a class="el" href="../../d7/dd1/structxii_g_a_l_color_mask.htm#a8c7d9d97828b9d4deb3e3c6a1456f223a2f528f8e6d10377b4a8e3a5e06c94655">RGBA</a> = Red | Green | Blue | Alpha, 
+<a class="el" href="../../d7/dd1/structxii_g_a_l_color_mask.htm#a8c7d9d97828b9d4deb3e3c6a1456f223ac61184a8f8bece785f87db49d3844964">Default</a> = (((Red | Green) | Blue) | Alpha), 
+<a class="el" href="../../d7/dd1/structxii_g_a_l_color_mask.htm#a8c7d9d97828b9d4deb3e3c6a1456f223a0751888a7745c3ec54064f903e470ca1">None</a> = 0U, 
+<a class="el" href="../../d7/dd1/structxii_g_a_l_color_mask.htm#a8c7d9d97828b9d4deb3e3c6a1456f223adf5e8ce28093e2ca69e3e65d3088d8b6">Red</a> = XII_BIT(0), 
+<br />
+&#160;&#160;<a class="el" href="../../d7/dd1/structxii_g_a_l_color_mask.htm#a8c7d9d97828b9d4deb3e3c6a1456f223aac07432319dcd3f4aa86974a324660af">Green</a> = XII_BIT(1), 
+<a class="el" href="../../d7/dd1/structxii_g_a_l_color_mask.htm#a8c7d9d97828b9d4deb3e3c6a1456f223ac5979e91ed0a3204180aed1ba69f3c8d">Blue</a> = XII_BIT(2), 
+<a class="el" href="../../d7/dd1/structxii_g_a_l_color_mask.htm#a8c7d9d97828b9d4deb3e3c6a1456f223a21fc60b591ae4d2c1466f6dd03f6237a">Alpha</a> = XII_BIT(3), 
+<b>ENUM_COUNT</b> = 5U, 
+<br />
+&#160;&#160;<a class="el" href="../../d7/dd1/structxii_g_a_l_color_mask.htm#a8c7d9d97828b9d4deb3e3c6a1456f223ad1ede29ac3e4599f95362e67f46a2b05">RG</a> = Red | Green, 
+<a class="el" href="../../d7/dd1/structxii_g_a_l_color_mask.htm#a8c7d9d97828b9d4deb3e3c6a1456f223a5934cc8da3a59621ba816bdad478f5b1">RGB</a> = Red | Green | Blue, 
+<a class="el" href="../../d7/dd1/structxii_g_a_l_color_mask.htm#a8c7d9d97828b9d4deb3e3c6a1456f223a2f528f8e6d10377b4a8e3a5e06c94655">RGBA</a> = Red | Green | Blue | Alpha, 
+<a class="el" href="../../d7/dd1/structxii_g_a_l_color_mask.htm#a8c7d9d97828b9d4deb3e3c6a1456f223ac61184a8f8bece785f87db49d3844964">Default</a> = (((Red | Green) | Blue) | Alpha)
+<br />
+ }</td></tr>
+<tr class="separator:a8c7d9d97828b9d4deb3e3c6a1456f223"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38662257e299abe51c995961fe06b1b5"><td class="memItemLeft" align="right" valign="top"><a id="a38662257e299abe51c995961fe06b1b5"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>StorageType</b> = xiiUInt8</td></tr>
+<tr class="separator:a38662257e299abe51c995961fe06b1b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a38662257e299abe51c995961fe06b1b5"><td class="memItemLeft" align="right" valign="top"><a id="a38662257e299abe51c995961fe06b1b5"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>StorageType</b> = xiiUInt8</td></tr>
 <tr class="separator:a38662257e299abe51c995961fe06b1b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -128,7 +171,7 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>StorageType</b> = xi
 <div class="textblock"><p>This describes the color component write flags. </p>
 </div><h2 class="groupheader">Member Enumeration Documentation</h2>
 <a id="a8c7d9d97828b9d4deb3e3c6a1456f223"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8c7d9d97828b9d4deb3e3c6a1456f223">&#9670;&nbsp;</a></span>Enum</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c7d9d97828b9d4deb3e3c6a1456f223">&#9670;&nbsp;</a></span>Enum <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -139,29 +182,100 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>StorageType</b> = xi
       </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a8c7d9d97828b9d4deb3e3c6a1456f223aa683abe689aa1863f4eca973293acf14"></a>None&#160;</td><td class="fielddoc"><p>Do not write to any components. </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a8c7d9d97828b9d4deb3e3c6a1456f223a0751888a7745c3ec54064f903e470ca1"></a>None&#160;</td><td class="fielddoc"><p>Do not write to any components. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a8c7d9d97828b9d4deb3e3c6a1456f223a77c0e00bd470b7959ca437b301159d1d"></a>Red&#160;</td><td class="fielddoc"><p>Write to the red component. </p>
+<tr><td class="fieldname"><a id="a8c7d9d97828b9d4deb3e3c6a1456f223adf5e8ce28093e2ca69e3e65d3088d8b6"></a>Red&#160;</td><td class="fielddoc"><p>Write to the red component. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a8c7d9d97828b9d4deb3e3c6a1456f223ab807d067d907b97599177bb12dadda88"></a>Green&#160;</td><td class="fielddoc"><p>Write to the green component. </p>
+<tr><td class="fieldname"><a id="a8c7d9d97828b9d4deb3e3c6a1456f223aac07432319dcd3f4aa86974a324660af"></a>Green&#160;</td><td class="fielddoc"><p>Write to the green component. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a8c7d9d97828b9d4deb3e3c6a1456f223a421172d9f49eba3d9fc29dfd9ff3eb42"></a>Blue&#160;</td><td class="fielddoc"><p>Write to the blue component. </p>
+<tr><td class="fieldname"><a id="a8c7d9d97828b9d4deb3e3c6a1456f223ac5979e91ed0a3204180aed1ba69f3c8d"></a>Blue&#160;</td><td class="fielddoc"><p>Write to the blue component. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a8c7d9d97828b9d4deb3e3c6a1456f223a4d5ab28150e2702f0e0f594143c817c0"></a>Alpha&#160;</td><td class="fielddoc"><p>Write to the alpha component. </p>
+<tr><td class="fieldname"><a id="a8c7d9d97828b9d4deb3e3c6a1456f223a21fc60b591ae4d2c1466f6dd03f6237a"></a>Alpha&#160;</td><td class="fielddoc"><p>Write to the alpha component. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a8c7d9d97828b9d4deb3e3c6a1456f223a7861ceb5a3d9fc69db22aa09b184ae8d"></a>RG&#160;</td><td class="fielddoc"><p>Write to the red and green components. </p>
+<tr><td class="fieldname"><a id="a8c7d9d97828b9d4deb3e3c6a1456f223ad1ede29ac3e4599f95362e67f46a2b05"></a>RG&#160;</td><td class="fielddoc"><p>Write to the red and green components. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a8c7d9d97828b9d4deb3e3c6a1456f223ac0bf6fc8c7e586cf4fdf8fb105f27b4a"></a>RGB&#160;</td><td class="fielddoc"><p>Write to the red, green and blue components. </p>
+<tr><td class="fieldname"><a id="a8c7d9d97828b9d4deb3e3c6a1456f223a5934cc8da3a59621ba816bdad478f5b1"></a>RGB&#160;</td><td class="fielddoc"><p>Write to the red, green and blue components. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a8c7d9d97828b9d4deb3e3c6a1456f223a79b31450dc1de1ae35000b511da523c6"></a>RGBA&#160;</td><td class="fielddoc"><p>Write to the red, green, blue, and alpha components. </p>
+<tr><td class="fieldname"><a id="a8c7d9d97828b9d4deb3e3c6a1456f223a2f528f8e6d10377b4a8e3a5e06c94655"></a>RGBA&#160;</td><td class="fielddoc"><p>Write to the red, green, blue, and alpha components. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a8c7d9d97828b9d4deb3e3c6a1456f223ad90ff35319cc4af9a77bdbe3e568d833"></a>Default&#160;</td><td class="fielddoc"><p>Write to all components. </p>
+<tr><td class="fieldname"><a id="a8c7d9d97828b9d4deb3e3c6a1456f223ac61184a8f8bece785f87db49d3844964"></a>Default&#160;</td><td class="fielddoc"><p>Write to all components. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8c7d9d97828b9d4deb3e3c6a1456f223a0751888a7745c3ec54064f903e470ca1"></a>None&#160;</td><td class="fielddoc"><p>Do not write to any components. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8c7d9d97828b9d4deb3e3c6a1456f223adf5e8ce28093e2ca69e3e65d3088d8b6"></a>Red&#160;</td><td class="fielddoc"><p>Write to the red component. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8c7d9d97828b9d4deb3e3c6a1456f223aac07432319dcd3f4aa86974a324660af"></a>Green&#160;</td><td class="fielddoc"><p>Write to the green component. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8c7d9d97828b9d4deb3e3c6a1456f223ac5979e91ed0a3204180aed1ba69f3c8d"></a>Blue&#160;</td><td class="fielddoc"><p>Write to the blue component. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8c7d9d97828b9d4deb3e3c6a1456f223a21fc60b591ae4d2c1466f6dd03f6237a"></a>Alpha&#160;</td><td class="fielddoc"><p>Write to the alpha component. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8c7d9d97828b9d4deb3e3c6a1456f223ad1ede29ac3e4599f95362e67f46a2b05"></a>RG&#160;</td><td class="fielddoc"><p>Write to the red and green components. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8c7d9d97828b9d4deb3e3c6a1456f223a5934cc8da3a59621ba816bdad478f5b1"></a>RGB&#160;</td><td class="fielddoc"><p>Write to the red, green and blue components. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8c7d9d97828b9d4deb3e3c6a1456f223a2f528f8e6d10377b4a8e3a5e06c94655"></a>RGBA&#160;</td><td class="fielddoc"><p>Write to the red, green, blue, and alpha components. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8c7d9d97828b9d4deb3e3c6a1456f223ac61184a8f8bece785f87db49d3844964"></a>Default&#160;</td><td class="fielddoc"><p>Write to all components. </p>
 </td></tr>
 </table>
 
 </div>
 </div>
-<hr/>The documentation for this struct was generated from the following file:<ul>
+<a id="a8c7d9d97828b9d4deb3e3c6a1456f223"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c7d9d97828b9d4deb3e3c6a1456f223">&#9670;&nbsp;</a></span>Enum <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="../../d7/dd1/structxii_g_a_l_color_mask.htm#a8c7d9d97828b9d4deb3e3c6a1456f223">xiiGALColorMask::Enum</a> : StorageType</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a8c7d9d97828b9d4deb3e3c6a1456f223a0751888a7745c3ec54064f903e470ca1"></a>None&#160;</td><td class="fielddoc"><p>Do not write to any components. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8c7d9d97828b9d4deb3e3c6a1456f223adf5e8ce28093e2ca69e3e65d3088d8b6"></a>Red&#160;</td><td class="fielddoc"><p>Write to the red component. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8c7d9d97828b9d4deb3e3c6a1456f223aac07432319dcd3f4aa86974a324660af"></a>Green&#160;</td><td class="fielddoc"><p>Write to the green component. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8c7d9d97828b9d4deb3e3c6a1456f223ac5979e91ed0a3204180aed1ba69f3c8d"></a>Blue&#160;</td><td class="fielddoc"><p>Write to the blue component. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8c7d9d97828b9d4deb3e3c6a1456f223a21fc60b591ae4d2c1466f6dd03f6237a"></a>Alpha&#160;</td><td class="fielddoc"><p>Write to the alpha component. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8c7d9d97828b9d4deb3e3c6a1456f223ad1ede29ac3e4599f95362e67f46a2b05"></a>RG&#160;</td><td class="fielddoc"><p>Write to the red and green components. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8c7d9d97828b9d4deb3e3c6a1456f223a5934cc8da3a59621ba816bdad478f5b1"></a>RGB&#160;</td><td class="fielddoc"><p>Write to the red, green and blue components. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8c7d9d97828b9d4deb3e3c6a1456f223a2f528f8e6d10377b4a8e3a5e06c94655"></a>RGBA&#160;</td><td class="fielddoc"><p>Write to the red, green, blue, and alpha components. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8c7d9d97828b9d4deb3e3c6a1456f223ac61184a8f8bece785f87db49d3844964"></a>Default&#160;</td><td class="fielddoc"><p>Write to all components. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8c7d9d97828b9d4deb3e3c6a1456f223a0751888a7745c3ec54064f903e470ca1"></a>None&#160;</td><td class="fielddoc"><p>Do not write to any components. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8c7d9d97828b9d4deb3e3c6a1456f223adf5e8ce28093e2ca69e3e65d3088d8b6"></a>Red&#160;</td><td class="fielddoc"><p>Write to the red component. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8c7d9d97828b9d4deb3e3c6a1456f223aac07432319dcd3f4aa86974a324660af"></a>Green&#160;</td><td class="fielddoc"><p>Write to the green component. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8c7d9d97828b9d4deb3e3c6a1456f223ac5979e91ed0a3204180aed1ba69f3c8d"></a>Blue&#160;</td><td class="fielddoc"><p>Write to the blue component. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8c7d9d97828b9d4deb3e3c6a1456f223a21fc60b591ae4d2c1466f6dd03f6237a"></a>Alpha&#160;</td><td class="fielddoc"><p>Write to the alpha component. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8c7d9d97828b9d4deb3e3c6a1456f223ad1ede29ac3e4599f95362e67f46a2b05"></a>RG&#160;</td><td class="fielddoc"><p>Write to the red and green components. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8c7d9d97828b9d4deb3e3c6a1456f223a5934cc8da3a59621ba816bdad478f5b1"></a>RGB&#160;</td><td class="fielddoc"><p>Write to the red, green and blue components. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8c7d9d97828b9d4deb3e3c6a1456f223a2f528f8e6d10377b4a8e3a5e06c94655"></a>RGBA&#160;</td><td class="fielddoc"><p>Write to the red, green, blue, and alpha components. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8c7d9d97828b9d4deb3e3c6a1456f223ac61184a8f8bece785f87db49d3844964"></a>Default&#160;</td><td class="fielddoc"><p>Write to all components. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<hr/>The documentation for this struct was generated from the following files:<ul>
+<li>/home/runner/work/XII/XII/Source/Engine/GraphicsD3D12/States/<a class="el" href="../../df/d58/_blend_state_d3_d12_8h_source.htm">BlendStateD3D12.h</a></li>
 <li>/home/runner/work/XII/XII/Source/Engine/GraphicsFoundation/States/<a class="el" href="../../d8/de2/_blend_state_8h_source.htm">BlendState.h</a></li>
 </ul>
 </div><!-- contents -->
@@ -170,7 +284,7 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>StorageType</b> = xi
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d7/dd1/structxii_g_a_l_color_mask.htm">xiiGALColorMask</a></li>
-    <li class="footer">Generated on Thu Aug 17 2023 14:05:58 for XIIEngine by
+    <li class="footer">Generated on Fri Aug 18 2023 22:27:02 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

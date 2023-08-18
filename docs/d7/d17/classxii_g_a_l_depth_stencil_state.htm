@@ -95,13 +95,14 @@ $(document).ready(function(){initNavTree('d7/d17/classxii_g_a_l_depth_stencil_st
 <p>Interface that defines methods to manipulate a depth stencil state object.  
  <a href="../../d7/d17/classxii_g_a_l_depth_stencil_state.htm#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="../../d5/d54/_depth_stencil_state_8h_source.htm">DepthStencilState.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="../../db/dfa/_depth_stencil_state_d3_d12_8h_source.htm">DepthStencilStateD3D12.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for xiiGALDepthStencilState:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../de/d4a/classxii_g_a_l_depth_stencil_state__inherit__graph.png" border="0" usemap="#xii_g_a_l_depth_stencil_state_inherit__map" alt="Inheritance graph"/></div>
 <map name="xii_g_a_l_depth_stencil_state_inherit__map" id="xii_g_a_l_depth_stencil_state_inherit__map">
 <area shape="rect" title="Interface that defines methods to manipulate a depth stencil state object." alt="" coords="37,244,218,271"/>
+<area shape="rect" href="../../d2/dbf/classxii_g_a_l_depth_stencil_state_vulkan.htm" title=" " alt="" coords="15,319,239,345"/>
 <area shape="rect" href="../../d3/dda/classxii_g_a_l_object.htm" title=" " alt="" coords="5,155,249,196"/>
 <area shape="rect" href="../../d3/dd0/classxii_ref_counted.htm" title="Base class for reference counted objects." alt="" coords="70,80,185,107"/>
 <area shape="rect" href="../../d7/df4/classxii_ref_counting_impl.htm" title=" " alt="" coords="54,5,201,32"/>
@@ -119,12 +120,21 @@ virtual <a class="el" href="../../dd/dad/structxii_result.htm">xiiResult</a>&#16
 <tr class="memitem:a3eec876ad2e7a4a92e6524ee5c0a4ce0"><td class="memItemLeft" align="right" valign="top"><a id="a3eec876ad2e7a4a92e6524ee5c0a4ce0"></a>
 virtual <a class="el" href="../../dd/dad/structxii_result.htm">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><b>DeInitPlatform</b> (<a class="el" href="../../d5/d19/classxii_g_a_l_device.htm">xiiGALDevice</a> *pDevice)=0</td></tr>
 <tr class="separator:a3eec876ad2e7a4a92e6524ee5c0a4ce0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa611c78908f6f193d4e23609d29d81a9"><td class="memItemLeft" align="right" valign="top"><a id="aa611c78908f6f193d4e23609d29d81a9"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>xiiGALDepthStencilState</b> (const <a class="el" href="../../d8/d3c/structxii_g_a_l_depth_stencil_state_creation_description.htm">xiiGALDepthStencilStateCreationDescription</a> &amp;creationDescription)</td></tr>
+<tr class="separator:aa611c78908f6f193d4e23609d29d81a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f8d1c26f12fc1072dede31f117aeeda"><td class="memItemLeft" align="right" valign="top"><a id="a0f8d1c26f12fc1072dede31f117aeeda"></a>
+virtual <a class="el" href="../../dd/dad/structxii_result.htm">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><b>InitPlatform</b> (<a class="el" href="../../d5/d19/classxii_g_a_l_device.htm">xiiGALDevice</a> *pDevice)=0</td></tr>
+<tr class="separator:a0f8d1c26f12fc1072dede31f117aeeda"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3eec876ad2e7a4a92e6524ee5c0a4ce0"><td class="memItemLeft" align="right" valign="top"><a id="a3eec876ad2e7a4a92e6524ee5c0a4ce0"></a>
+virtual <a class="el" href="../../dd/dad/structxii_result.htm">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><b>DeInitPlatform</b> (<a class="el" href="../../d5/d19/classxii_g_a_l_device.htm">xiiGALDevice</a> *pDevice)=0</td></tr>
+<tr class="separator:a3eec876ad2e7a4a92e6524ee5c0a4ce0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
-<tr class="memitem:a8a9dd0ea17d38c3d68c9db0002e5dab0"><td class="memItemLeft" align="right" valign="top"><a id="a8a9dd0ea17d38c3d68c9db0002e5dab0"></a>
+<tr class="memitem:a557157c6c9e7c7d8dc210dcd45d9fe17"><td class="memItemLeft" align="right" valign="top"><a id="a557157c6c9e7c7d8dc210dcd45d9fe17"></a>
 class&#160;</td><td class="memItemRight" valign="bottom"><b>xiiGALDevice</b></td></tr>
-<tr class="separator:a8a9dd0ea17d38c3d68c9db0002e5dab0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a557157c6c9e7c7d8dc210dcd45d9fe17"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -175,7 +185,9 @@ xiiInt32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Interface that defines methods to manipulate a depth stencil state object. </p>
 </div><hr/>The documentation for this class was generated from the following files:<ul>
+<li>/home/runner/work/XII/XII/Source/Engine/GraphicsD3D12/States/<a class="el" href="../../db/dfa/_depth_stencil_state_d3_d12_8h_source.htm">DepthStencilStateD3D12.h</a></li>
 <li>/home/runner/work/XII/XII/Source/Engine/GraphicsFoundation/States/<a class="el" href="../../d5/d54/_depth_stencil_state_8h_source.htm">DepthStencilState.h</a></li>
+<li>/home/runner/work/XII/XII/Source/Engine/GraphicsD3D12/States/Implementation/DepthStencilStateD3D12.cpp</li>
 <li>/home/runner/work/XII/XII/Source/Engine/GraphicsFoundation/States/Implementation/DepthStencilState.cpp</li>
 </ul>
 </div><!-- contents -->
@@ -184,7 +196,7 @@ xiiInt32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d7/d17/classxii_g_a_l_depth_stencil_state.htm">xiiGALDepthStencilState</a></li>
-    <li class="footer">Generated on Thu Aug 17 2023 14:05:58 for XIIEngine by
+    <li class="footer">Generated on Fri Aug 18 2023 22:27:02 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

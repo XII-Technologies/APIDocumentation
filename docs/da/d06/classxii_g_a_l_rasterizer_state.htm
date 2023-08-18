@@ -95,13 +95,14 @@ $(document).ready(function(){initNavTree('da/d06/classxii_g_a_l_rasterizer_state
 <p>Interface that defines methods to manipulate a rasterizer state object.  
  <a href="../../da/d06/classxii_g_a_l_rasterizer_state.htm#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="../../d6/d78/_rasterizer_state_8h_source.htm">RasterizerState.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="../../de/d33/_rasterizer_state_d3_d12_8h_source.htm">RasterizerStateD3D12.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for xiiGALRasterizerState:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../d7/d5a/classxii_g_a_l_rasterizer_state__inherit__graph.png" border="0" usemap="#xii_g_a_l_rasterizer_state_inherit__map" alt="Inheritance graph"/></div>
 <map name="xii_g_a_l_rasterizer_state_inherit__map" id="xii_g_a_l_rasterizer_state_inherit__map">
 <area shape="rect" title="Interface that defines methods to manipulate a rasterizer state object." alt="" coords="38,244,202,271"/>
+<area shape="rect" href="../../d2/d7a/classxii_g_a_l_rasterizer_state_vulkan.htm" title=" " alt="" coords="17,319,223,345"/>
 <area shape="rect" href="../../d3/dda/classxii_g_a_l_object.htm" title=" " alt="" coords="5,155,235,196"/>
 <area shape="rect" href="../../d3/dd0/classxii_ref_counted.htm" title="Base class for reference counted objects." alt="" coords="63,80,177,107"/>
 <area shape="rect" href="../../d7/df4/classxii_ref_counting_impl.htm" title=" " alt="" coords="47,5,193,32"/>
@@ -119,12 +120,21 @@ virtual <a class="el" href="../../dd/dad/structxii_result.htm">xiiResult</a>&#16
 <tr class="memitem:a100b2655b7fd4a45c82dc569a75f34bf"><td class="memItemLeft" align="right" valign="top"><a id="a100b2655b7fd4a45c82dc569a75f34bf"></a>
 virtual <a class="el" href="../../dd/dad/structxii_result.htm">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><b>DeInitPlatform</b> (<a class="el" href="../../d5/d19/classxii_g_a_l_device.htm">xiiGALDevice</a> *pDevice)=0</td></tr>
 <tr class="separator:a100b2655b7fd4a45c82dc569a75f34bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89ee71b5eb10098a20457c21f079990c"><td class="memItemLeft" align="right" valign="top"><a id="a89ee71b5eb10098a20457c21f079990c"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>xiiGALRasterizerState</b> (const <a class="el" href="../../d2/d58/structxii_g_a_l_rasterizer_state_creation_description.htm">xiiGALRasterizerStateCreationDescription</a> &amp;creationDescription)</td></tr>
+<tr class="separator:a89ee71b5eb10098a20457c21f079990c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88377a44c09bae7165190dcc711366c9"><td class="memItemLeft" align="right" valign="top"><a id="a88377a44c09bae7165190dcc711366c9"></a>
+virtual <a class="el" href="../../dd/dad/structxii_result.htm">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><b>InitPlatform</b> (<a class="el" href="../../d5/d19/classxii_g_a_l_device.htm">xiiGALDevice</a> *pDevice)=0</td></tr>
+<tr class="separator:a88377a44c09bae7165190dcc711366c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a100b2655b7fd4a45c82dc569a75f34bf"><td class="memItemLeft" align="right" valign="top"><a id="a100b2655b7fd4a45c82dc569a75f34bf"></a>
+virtual <a class="el" href="../../dd/dad/structxii_result.htm">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><b>DeInitPlatform</b> (<a class="el" href="../../d5/d19/classxii_g_a_l_device.htm">xiiGALDevice</a> *pDevice)=0</td></tr>
+<tr class="separator:a100b2655b7fd4a45c82dc569a75f34bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
-<tr class="memitem:a8a9dd0ea17d38c3d68c9db0002e5dab0"><td class="memItemLeft" align="right" valign="top"><a id="a8a9dd0ea17d38c3d68c9db0002e5dab0"></a>
+<tr class="memitem:a557157c6c9e7c7d8dc210dcd45d9fe17"><td class="memItemLeft" align="right" valign="top"><a id="a557157c6c9e7c7d8dc210dcd45d9fe17"></a>
 class&#160;</td><td class="memItemRight" valign="bottom"><b>xiiGALDevice</b></td></tr>
-<tr class="separator:a8a9dd0ea17d38c3d68c9db0002e5dab0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a557157c6c9e7c7d8dc210dcd45d9fe17"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -175,7 +185,9 @@ xiiInt32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Interface that defines methods to manipulate a rasterizer state object. </p>
 </div><hr/>The documentation for this class was generated from the following files:<ul>
+<li>/home/runner/work/XII/XII/Source/Engine/GraphicsD3D12/States/<a class="el" href="../../de/d33/_rasterizer_state_d3_d12_8h_source.htm">RasterizerStateD3D12.h</a></li>
 <li>/home/runner/work/XII/XII/Source/Engine/GraphicsFoundation/States/<a class="el" href="../../d6/d78/_rasterizer_state_8h_source.htm">RasterizerState.h</a></li>
+<li>/home/runner/work/XII/XII/Source/Engine/GraphicsD3D12/States/Implementation/RasterizerStateD3D12.cpp</li>
 <li>/home/runner/work/XII/XII/Source/Engine/GraphicsFoundation/States/Implementation/RasterizerState.cpp</li>
 </ul>
 </div><!-- contents -->
@@ -184,7 +196,7 @@ xiiInt32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../da/d06/classxii_g_a_l_rasterizer_state.htm">xiiGALRasterizerState</a></li>
-    <li class="footer">Generated on Thu Aug 17 2023 14:05:59 for XIIEngine by
+    <li class="footer">Generated on Fri Aug 18 2023 22:27:02 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

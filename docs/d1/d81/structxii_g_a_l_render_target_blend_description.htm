@@ -95,7 +95,7 @@ $(document).ready(function(){initNavTree('d1/d81/structxii_g_a_l_render_target_b
 <p>This describes the blend state for a single render target.  
  <a href="../../d1/d81/structxii_g_a_l_render_target_blend_description.htm#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="../../d8/de2/_blend_state_8h_source.htm">BlendState.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="../../df/d58/_blend_state_d3_d12_8h_source.htm">BlendStateD3D12.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for xiiGALRenderTargetBlendDescription:</div>
 <div class="dyncontent">
@@ -108,6 +108,9 @@ Inheritance diagram for xiiGALRenderTargetBlendDescription:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a4d412d67e67dcec4d68d5d6afd21bd7b"><td class="memItemLeft" align="right" valign="top"><a id="a4d412d67e67dcec4d68d5d6afd21bd7b"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>XII_DECLARE_POD_TYPE</b> ()</td></tr>
+<tr class="separator:a4d412d67e67dcec4d68d5d6afd21bd7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4d412d67e67dcec4d68d5d6afd21bd7b"><td class="memItemLeft" align="right" valign="top"><a id="a4d412d67e67dcec4d68d5d6afd21bd7b"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>XII_DECLARE_POD_TYPE</b> ()</td></tr>
 <tr class="separator:a4d412d67e67dcec4d68d5d6afd21bd7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -129,42 +132,47 @@ Public Attributes</h2></td></tr>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d81/structxii_g_a_l_render_target_blend_description.htm#aed9541b3936ecde8e08fbdcb6d56db8e">m_bBlendEnable</a> = false</td></tr>
 <tr class="memdesc:aed9541b3936ecde8e08fbdcb6d56db8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable or disable blending for this render target. The default is false. <br /></td></tr>
 <tr class="separator:aed9541b3936ecde8e08fbdcb6d56db8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a701d606da4ab754ff0e932b29c9764b1"><td class="memItemLeft" align="right" valign="top"><a id="a701d606da4ab754ff0e932b29c9764b1"></a>
-<a class="el" href="../../de/dfd/structxii_enum.htm">xiiEnum</a>&lt; <a class="el" href="../../d0/d09/structxii_g_a_l_blend_factor.htm">xiiGALBlendFactor</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d81/structxii_g_a_l_render_target_blend_description.htm#a701d606da4ab754ff0e932b29c9764b1">m_SourceBlend</a> = <a class="el" href="../../d0/d09/structxii_g_a_l_blend_factor.htm#ab2a636fd90c3d9b80f46fb24074d25f8a42597ff62dd8959ceb81ae9036649540">xiiGALBlendFactor::One</a></td></tr>
-<tr class="memdesc:a701d606da4ab754ff0e932b29c9764b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specifies the blend factor to apply to the RGB value output from the pixel shader. The default is One. <br /></td></tr>
-<tr class="separator:a701d606da4ab754ff0e932b29c9764b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5563d31ee4b2ca5ea80638bc01d56e6e"><td class="memItemLeft" align="right" valign="top"><a id="a5563d31ee4b2ca5ea80638bc01d56e6e"></a>
-<a class="el" href="../../de/dfd/structxii_enum.htm">xiiEnum</a>&lt; <a class="el" href="../../d0/d09/structxii_g_a_l_blend_factor.htm">xiiGALBlendFactor</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d81/structxii_g_a_l_render_target_blend_description.htm#a5563d31ee4b2ca5ea80638bc01d56e6e">m_DestinationBlend</a> = <a class="el" href="../../d0/d09/structxii_g_a_l_blend_factor.htm#ab2a636fd90c3d9b80f46fb24074d25f8a8803c6e9d2c750d779852257369fb708">xiiGALBlendFactor::Zero</a></td></tr>
-<tr class="memdesc:a5563d31ee4b2ca5ea80638bc01d56e6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specifies the blend factor to apply to the RGB value in the render target. The default is Zero. <br /></td></tr>
-<tr class="separator:a5563d31ee4b2ca5ea80638bc01d56e6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7561946858080f691fd819d4d3fa31a3"><td class="memItemLeft" align="right" valign="top"><a id="a7561946858080f691fd819d4d3fa31a3"></a>
-<a class="el" href="../../de/dfd/structxii_enum.htm">xiiEnum</a>&lt; <a class="el" href="../../d0/d2e/structxii_g_a_l_blend_operation.htm">xiiGALBlendOperation</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d81/structxii_g_a_l_render_target_blend_description.htm#a7561946858080f691fd819d4d3fa31a3">m_BlendOperation</a> = <a class="el" href="../../d0/d2e/structxii_g_a_l_blend_operation.htm#a729909de9fee6bb0080ab73dc7cb173ba6fc949140a789c2403c16a1e5e61ef9d">xiiGALBlendOperation::Add</a></td></tr>
-<tr class="memdesc:a7561946858080f691fd819d4d3fa31a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines how to combine the source and destination RGB values after applying the source and destination blend factors. The default is Add. <br /></td></tr>
-<tr class="separator:a7561946858080f691fd819d4d3fa31a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa276e98337a474bf820695665fa6a03c"><td class="memItemLeft" align="right" valign="top"><a id="aa276e98337a474bf820695665fa6a03c"></a>
-<a class="el" href="../../de/dfd/structxii_enum.htm">xiiEnum</a>&lt; <a class="el" href="../../d0/d09/structxii_g_a_l_blend_factor.htm">xiiGALBlendFactor</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d81/structxii_g_a_l_render_target_blend_description.htm#aa276e98337a474bf820695665fa6a03c">m_SourceBlendAlpha</a> = <a class="el" href="../../d0/d09/structxii_g_a_l_blend_factor.htm#ab2a636fd90c3d9b80f46fb24074d25f8a42597ff62dd8959ceb81ae9036649540">xiiGALBlendFactor::One</a></td></tr>
-<tr class="memdesc:aa276e98337a474bf820695665fa6a03c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specifies the blend factor to apply to the alpha value output from the pixel shader. The default is One. <br /></td></tr>
-<tr class="separator:aa276e98337a474bf820695665fa6a03c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a20a773534446cd2512ed9310e16cad04"><td class="memItemLeft" align="right" valign="top"><a id="a20a773534446cd2512ed9310e16cad04"></a>
-<a class="el" href="../../de/dfd/structxii_enum.htm">xiiEnum</a>&lt; <a class="el" href="../../d0/d09/structxii_g_a_l_blend_factor.htm">xiiGALBlendFactor</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d81/structxii_g_a_l_render_target_blend_description.htm#a20a773534446cd2512ed9310e16cad04">m_DestinationBlendAlpha</a> = <a class="el" href="../../d0/d09/structxii_g_a_l_blend_factor.htm#ab2a636fd90c3d9b80f46fb24074d25f8a8803c6e9d2c750d779852257369fb708">xiiGALBlendFactor::Zero</a></td></tr>
-<tr class="memdesc:a20a773534446cd2512ed9310e16cad04"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specifies the blend factor to apply to the alpha value in the render target. The default is Zero. <br /></td></tr>
-<tr class="separator:a20a773534446cd2512ed9310e16cad04"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae7f05a36caea6dc422fd6495d906e761"><td class="memItemLeft" align="right" valign="top"><a id="ae7f05a36caea6dc422fd6495d906e761"></a>
-<a class="el" href="../../de/dfd/structxii_enum.htm">xiiEnum</a>&lt; <a class="el" href="../../d0/d2e/structxii_g_a_l_blend_operation.htm">xiiGALBlendOperation</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d81/structxii_g_a_l_render_target_blend_description.htm#ae7f05a36caea6dc422fd6495d906e761">m_BlendOperationAlpha</a> = <a class="el" href="../../d0/d2e/structxii_g_a_l_blend_operation.htm#a729909de9fee6bb0080ab73dc7cb173ba6fc949140a789c2403c16a1e5e61ef9d">xiiGALBlendOperation::Add</a></td></tr>
-<tr class="memdesc:ae7f05a36caea6dc422fd6495d906e761"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines how to combine the source and destination alpha values after applying the source and destination blend alpha factors. The default is Add. <br /></td></tr>
-<tr class="separator:ae7f05a36caea6dc422fd6495d906e761"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac0fc9677704c74a3950973fbaf3d298a"><td class="memItemLeft" align="right" valign="top"><a id="ac0fc9677704c74a3950973fbaf3d298a"></a>
-<a class="el" href="../../de/dfd/structxii_enum.htm">xiiEnum</a>&lt; <a class="el" href="../../d9/d7d/structxii_g_a_l_logic_operation.htm">xiiGALLogicOperation</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d81/structxii_g_a_l_render_target_blend_description.htm#ac0fc9677704c74a3950973fbaf3d298a">m_LogicOperation</a> = <a class="el" href="../../d9/d7d/structxii_g_a_l_logic_operation.htm#af8e2a0da0b43dfcff3ca28a2a3fca263ad362271e371ae94f4d33ef8dbd263127">xiiGALLogicOperation::NoOperation</a></td></tr>
-<tr class="memdesc:ac0fc9677704c74a3950973fbaf3d298a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines logical operation for the render target. The default is NoOperation. <br /></td></tr>
-<tr class="separator:ac0fc9677704c74a3950973fbaf3d298a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab97a1ca505aeece719612f70f6f28b8f"><td class="memItemLeft" align="right" valign="top"><a id="ab97a1ca505aeece719612f70f6f28b8f"></a>
-<a class="el" href="../../d7/d55/structxii_bitflags.htm">xiiBitflags</a>&lt; <a class="el" href="../../d7/dd1/structxii_g_a_l_color_mask.htm">xiiGALColorMask</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d81/structxii_g_a_l_render_target_blend_description.htm#ab97a1ca505aeece719612f70f6f28b8f">m_ColorMask</a> = <a class="el" href="../../d7/dd1/structxii_g_a_l_color_mask.htm#a8c7d9d97828b9d4deb3e3c6a1456f223a79b31450dc1de1ae35000b511da523c6">xiiGALColorMask::RGBA</a></td></tr>
-<tr class="memdesc:ab97a1ca505aeece719612f70f6f28b8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Render target color write mask. The default is default is RGBA. <br /></td></tr>
-<tr class="separator:ab97a1ca505aeece719612f70f6f28b8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1bf4b5e6fb296d0b986ec252f8b780bd"><td class="memItemLeft" align="right" valign="top"><a id="a1bf4b5e6fb296d0b986ec252f8b780bd"></a>
+<a class="el" href="../../de/dfd/structxii_enum.htm">xiiEnum</a>&lt; <a class="el" href="../../d0/d09/structxii_g_a_l_blend_factor.htm">xiiGALBlendFactor</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d81/structxii_g_a_l_render_target_blend_description.htm#a1bf4b5e6fb296d0b986ec252f8b780bd">m_SourceBlend</a> = <a class="el" href="../../d0/d09/structxii_g_a_l_blend_factor.htm#ab2a636fd90c3d9b80f46fb24074d25f8af3a6d73218796cafa6719c2992282fa6">xiiGALBlendFactor::One</a></td></tr>
+<tr class="memdesc:a1bf4b5e6fb296d0b986ec252f8b780bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specifies the blend factor to apply to the RGB value output from the pixel shader. The default is One. <br /></td></tr>
+<tr class="separator:a1bf4b5e6fb296d0b986ec252f8b780bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2fceff3c1d5438c9fa7956137e7420e3"><td class="memItemLeft" align="right" valign="top"><a id="a2fceff3c1d5438c9fa7956137e7420e3"></a>
+<a class="el" href="../../de/dfd/structxii_enum.htm">xiiEnum</a>&lt; <a class="el" href="../../d0/d09/structxii_g_a_l_blend_factor.htm">xiiGALBlendFactor</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d81/structxii_g_a_l_render_target_blend_description.htm#a2fceff3c1d5438c9fa7956137e7420e3">m_DestinationBlend</a> = <a class="el" href="../../d0/d09/structxii_g_a_l_blend_factor.htm#ab2a636fd90c3d9b80f46fb24074d25f8a43ecd7f68ec898502b90248263d3d6c9">xiiGALBlendFactor::Zero</a></td></tr>
+<tr class="memdesc:a2fceff3c1d5438c9fa7956137e7420e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specifies the blend factor to apply to the RGB value in the render target. The default is Zero. <br /></td></tr>
+<tr class="separator:a2fceff3c1d5438c9fa7956137e7420e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90854d0a5f7d377f9367393977afc23f"><td class="memItemLeft" align="right" valign="top"><a id="a90854d0a5f7d377f9367393977afc23f"></a>
+<a class="el" href="../../de/dfd/structxii_enum.htm">xiiEnum</a>&lt; <a class="el" href="../../d0/d2e/structxii_g_a_l_blend_operation.htm">xiiGALBlendOperation</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d81/structxii_g_a_l_render_target_blend_description.htm#a90854d0a5f7d377f9367393977afc23f">m_BlendOperation</a> = <a class="el" href="../../d0/d2e/structxii_g_a_l_blend_operation.htm#a729909de9fee6bb0080ab73dc7cb173bab35793b6f12c8778e8dd40a6101b9149">xiiGALBlendOperation::Add</a></td></tr>
+<tr class="memdesc:a90854d0a5f7d377f9367393977afc23f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines how to combine the source and destination RGB values after applying the source and destination blend factors. The default is Add. <br /></td></tr>
+<tr class="separator:a90854d0a5f7d377f9367393977afc23f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5fde9b39e4093d8783eadf8e1ab5ea3b"><td class="memItemLeft" align="right" valign="top"><a id="a5fde9b39e4093d8783eadf8e1ab5ea3b"></a>
+<a class="el" href="../../de/dfd/structxii_enum.htm">xiiEnum</a>&lt; <a class="el" href="../../d0/d09/structxii_g_a_l_blend_factor.htm">xiiGALBlendFactor</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d81/structxii_g_a_l_render_target_blend_description.htm#a5fde9b39e4093d8783eadf8e1ab5ea3b">m_SourceBlendAlpha</a> = <a class="el" href="../../d0/d09/structxii_g_a_l_blend_factor.htm#ab2a636fd90c3d9b80f46fb24074d25f8af3a6d73218796cafa6719c2992282fa6">xiiGALBlendFactor::One</a></td></tr>
+<tr class="memdesc:a5fde9b39e4093d8783eadf8e1ab5ea3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specifies the blend factor to apply to the alpha value output from the pixel shader. The default is One. <br /></td></tr>
+<tr class="separator:a5fde9b39e4093d8783eadf8e1ab5ea3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e997584db778bfb8c8851711ae975b8"><td class="memItemLeft" align="right" valign="top"><a id="a1e997584db778bfb8c8851711ae975b8"></a>
+<a class="el" href="../../de/dfd/structxii_enum.htm">xiiEnum</a>&lt; <a class="el" href="../../d0/d09/structxii_g_a_l_blend_factor.htm">xiiGALBlendFactor</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d81/structxii_g_a_l_render_target_blend_description.htm#a1e997584db778bfb8c8851711ae975b8">m_DestinationBlendAlpha</a> = <a class="el" href="../../d0/d09/structxii_g_a_l_blend_factor.htm#ab2a636fd90c3d9b80f46fb24074d25f8a43ecd7f68ec898502b90248263d3d6c9">xiiGALBlendFactor::Zero</a></td></tr>
+<tr class="memdesc:a1e997584db778bfb8c8851711ae975b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specifies the blend factor to apply to the alpha value in the render target. The default is Zero. <br /></td></tr>
+<tr class="separator:a1e997584db778bfb8c8851711ae975b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afac09533b1de76d0c719ecaa926fc528"><td class="memItemLeft" align="right" valign="top"><a id="afac09533b1de76d0c719ecaa926fc528"></a>
+<a class="el" href="../../de/dfd/structxii_enum.htm">xiiEnum</a>&lt; <a class="el" href="../../d0/d2e/structxii_g_a_l_blend_operation.htm">xiiGALBlendOperation</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d81/structxii_g_a_l_render_target_blend_description.htm#afac09533b1de76d0c719ecaa926fc528">m_BlendOperationAlpha</a> = <a class="el" href="../../d0/d2e/structxii_g_a_l_blend_operation.htm#a729909de9fee6bb0080ab73dc7cb173bab35793b6f12c8778e8dd40a6101b9149">xiiGALBlendOperation::Add</a></td></tr>
+<tr class="memdesc:afac09533b1de76d0c719ecaa926fc528"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines how to combine the source and destination alpha values after applying the source and destination blend alpha factors. The default is Add. <br /></td></tr>
+<tr class="separator:afac09533b1de76d0c719ecaa926fc528"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a628156c2b8bc8862345890403519877e"><td class="memItemLeft" align="right" valign="top"><a id="a628156c2b8bc8862345890403519877e"></a>
+<a class="el" href="../../de/dfd/structxii_enum.htm">xiiEnum</a>&lt; <a class="el" href="../../d9/d7d/structxii_g_a_l_logic_operation.htm">xiiGALLogicOperation</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d81/structxii_g_a_l_render_target_blend_description.htm#a628156c2b8bc8862345890403519877e">m_LogicOperation</a> = <a class="el" href="../../d9/d7d/structxii_g_a_l_logic_operation.htm#af8e2a0da0b43dfcff3ca28a2a3fca263a4acd43fc53907ced2e076a948abc3049">xiiGALLogicOperation::NoOperation</a></td></tr>
+<tr class="memdesc:a628156c2b8bc8862345890403519877e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines logical operation for the render target. The default is NoOperation. <br /></td></tr>
+<tr class="separator:a628156c2b8bc8862345890403519877e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86f8c95fa93c922b053448e3e527f910"><td class="memItemLeft" align="right" valign="top"><a id="a86f8c95fa93c922b053448e3e527f910"></a>
+<a class="el" href="../../d7/d55/structxii_bitflags.htm">xiiBitflags</a>&lt; <a class="el" href="../../d7/dd1/structxii_g_a_l_color_mask.htm">xiiGALColorMask</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d81/structxii_g_a_l_render_target_blend_description.htm#a86f8c95fa93c922b053448e3e527f910">m_ColorMask</a> = <a class="el" href="../../d7/dd1/structxii_g_a_l_color_mask.htm#a8c7d9d97828b9d4deb3e3c6a1456f223a2f528f8e6d10377b4a8e3a5e06c94655">xiiGALColorMask::RGBA</a></td></tr>
+<tr class="memdesc:a86f8c95fa93c922b053448e3e527f910"><td class="mdescLeft">&#160;</td><td class="mdescRight">Render target color write mask. The default is default is RGBA. <br /></td></tr>
+<tr class="separator:a86f8c95fa93c922b053448e3e527f910"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a259b264981fb8d1b557e53d1b8ac690d"><td class="memItemLeft" align="right" valign="top"><a id="a259b264981fb8d1b557e53d1b8ac690d"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d81/structxii_g_a_l_render_target_blend_description.htm#a259b264981fb8d1b557e53d1b8ac690d">m_LogicOperationEnable</a> = false</td></tr>
+<tr class="memdesc:a259b264981fb8d1b557e53d1b8ac690d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable or disable a logical operation for this render target. The default is false. <br /></td></tr>
+<tr class="separator:a259b264981fb8d1b557e53d1b8ac690d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This describes the blend state for a single render target. </p>
-</div><hr/>The documentation for this struct was generated from the following file:<ul>
+</div><hr/>The documentation for this struct was generated from the following files:<ul>
+<li>/home/runner/work/XII/XII/Source/Engine/GraphicsD3D12/States/<a class="el" href="../../df/d58/_blend_state_d3_d12_8h_source.htm">BlendStateD3D12.h</a></li>
 <li>/home/runner/work/XII/XII/Source/Engine/GraphicsFoundation/States/<a class="el" href="../../d8/de2/_blend_state_8h_source.htm">BlendState.h</a></li>
 </ul>
 </div><!-- contents -->
@@ -173,7 +181,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../.
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d1/d81/structxii_g_a_l_render_target_blend_description.htm">xiiGALRenderTargetBlendDescription</a></li>
-    <li class="footer">Generated on Thu Aug 17 2023 14:05:59 for XIIEngine by
+    <li class="footer">Generated on Fri Aug 18 2023 22:27:02 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>
