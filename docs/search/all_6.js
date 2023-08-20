@@ -124,7 +124,7 @@ var searchData=
   ['fromnativeimpl_1085',['FromNativeImpl',['../d1/d80/structxii_min_windows_1_1_from_native_impl.htm',1,'xiiMinWindows::FromNativeImpl&lt; T &gt;'],['../d1/d69/structxii_min_x11_1_1_from_native_impl.htm',1,'xiiMinX11::FromNativeImpl&lt; T &gt;']]],
   ['frompixelmask_1086',['FromPixelMask',['../d5/dd3/structxii_image_format.htm#ae710aadd41ae18e2cc44b034f5fbb754',1,'xiiImageFormat']]],
   ['fromstart_1087',['FromStart',['../da/dc9/structxii_file_seek_mode.htm#aa238d26443e31d26362e3c7d14b701b5ab08bfb3368186f1a5d0bff03558b5d0e',1,'xiiFileSeekMode']]],
-  ['front_1088',['Front',['../d0/da1/structxii_position_on_plane.htm#a36bc7bfaf6ef233d77623806b61626d4a571569765bc0ad8d27bbe8c78271a182',1,'xiiPositionOnPlane::Front()'],['../de/ddb/structxii_g_a_l_cull_mode.htm#a7b3c13fc477dc735a5d0700f27f46b24ac7d5c27514cd222830223e04eb2893f0',1,'xiiGALCullMode::Front()']]],
+  ['front_1088',['Front',['../d0/da1/structxii_position_on_plane.htm#a36bc7bfaf6ef233d77623806b61626d4a571569765bc0ad8d27bbe8c78271a182',1,'xiiPositionOnPlane::Front()'],['../de/ddb/structxii_g_a_l_cull_mode.htm#a7b3c13fc477dc735a5d0700f27f46b24aad8112c3eeb1615141fcebade3e8e7cc',1,'xiiGALCullMode::Front()']]],
   ['fuchsia_1089',['Fuchsia',['../d3/de6/classxii_color.htm#ae257669aef13a942fa8dc9fbcb3038b4',1,'xiiColor']]],
   ['fullaxis_1090',['FullAxis',['../db/db7/structxii_input_slot_flags.htm#a3e9e6761413c16a3ca9109bb9d421bb0ab553d7d27386f1bb9df3a720e150e510',1,'xiiInputSlotFlags']]],
   ['fullscreenborderlessnativeresolution_1091',['FullscreenBorderlessNativeResolution',['../d4/d40/structxii_window_mode.htm#a572581340725890ccb4f8b0c2c40ef73ad5e32e9ff34c3be52e6ab48ce5cdcdc6',1,'xiiWindowMode']]],

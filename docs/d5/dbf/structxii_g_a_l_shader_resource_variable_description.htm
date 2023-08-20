@@ -95,7 +95,7 @@ $(document).ready(function(){initNavTree('d5/dbf/structxii_g_a_l_shader_resource
 <p>This describes the shader variable information.  
  <a href="../../d5/dbf/structxii_g_a_l_shader_resource_variable_description.htm#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="../../d7/deb/_pipeline_state_d3_d12_8h_source.htm">PipelineStateD3D12.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="../../d9/df8/_pipeline_state_8h_source.htm">PipelineState.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for xiiGALShaderResourceVariableDescription:</div>
 <div class="dyncontent">
@@ -108,9 +108,6 @@ Inheritance diagram for xiiGALShaderResourceVariableDescription:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a9dc7afebee1ac13cab79ec9da46bd1e2"><td class="memItemLeft" align="right" valign="top"><a id="a9dc7afebee1ac13cab79ec9da46bd1e2"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>XII_DECLARE_POD_TYPE</b> ()</td></tr>
-<tr class="separator:a9dc7afebee1ac13cab79ec9da46bd1e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9dc7afebee1ac13cab79ec9da46bd1e2"><td class="memItemLeft" align="right" valign="top"><a id="a9dc7afebee1ac13cab79ec9da46bd1e2"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>XII_DECLARE_POD_TYPE</b> ()</td></tr>
 <tr class="separator:a9dc7afebee1ac13cab79ec9da46bd1e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -132,23 +129,22 @@ Public Attributes</h2></td></tr>
 <a class="el" href="../../df/dfb/structxii_hybrid_string.htm">xiiString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dbf/structxii_g_a_l_shader_resource_variable_description.htm#a100d0a22df726ab1697689b503abc86a">m_sName</a></td></tr>
 <tr class="memdesc:a100d0a22df726ab1697689b503abc86a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The shader variable name. <br /></td></tr>
 <tr class="separator:a100d0a22df726ab1697689b503abc86a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a12f9313305e1016740c972fc407c2748"><td class="memItemLeft" align="right" valign="top"><a id="a12f9313305e1016740c972fc407c2748"></a>
-<a class="el" href="../../d7/d55/structxii_bitflags.htm">xiiBitflags</a>&lt; <a class="el" href="../../d7/d93/structxii_g_a_l_shader_stage.htm">xiiGALShaderStage</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dbf/structxii_g_a_l_shader_resource_variable_description.htm#a12f9313305e1016740c972fc407c2748">m_ShaderStages</a> = <a class="el" href="../../d7/d93/structxii_g_a_l_shader_stage.htm#a574ae05a61f47569461dc1fd2ea12092ac827df5646bbfda238b17bd0c8e62eef">xiiGALShaderStage::Unknown</a></td></tr>
-<tr class="memdesc:a12f9313305e1016740c972fc407c2748"><td class="mdescLeft">&#160;</td><td class="mdescRight">The shader stages this resources variable applies to. If more than one shader stage is specified, the variable will be shared between these stages. Shader stages used by different variables with the same name must not overlap. <br /></td></tr>
-<tr class="separator:a12f9313305e1016740c972fc407c2748"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab0a573106f468ca72a73c8498b1b3551"><td class="memItemLeft" align="right" valign="top"><a id="ab0a573106f468ca72a73c8498b1b3551"></a>
-<a class="el" href="../../de/dfd/structxii_enum.htm">xiiEnum</a>&lt; <a class="el" href="../../d2/d5e/structxii_g_a_l_shader_resource_variable_type.htm">xiiGALShaderResourceVariableType</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dbf/structxii_g_a_l_shader_resource_variable_description.htm#ab0a573106f468ca72a73c8498b1b3551">m_Type</a> = <a class="el" href="../../d2/d5e/structxii_g_a_l_shader_resource_variable_type.htm#a1817f4eb8187b7afea2786a3a0a0fb38ac6b3fada1021c1ca6fed20dd7e2d49cb">xiiGALShaderResourceVariableType::Static</a></td></tr>
-<tr class="memdesc:ab0a573106f468ca72a73c8498b1b3551"><td class="mdescLeft">&#160;</td><td class="mdescRight">The shader variable type. <br /></td></tr>
-<tr class="separator:ab0a573106f468ca72a73c8498b1b3551"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeefb3df806e4691adf35b86a26fbce14"><td class="memItemLeft" align="right" valign="top"><a id="aeefb3df806e4691adf35b86a26fbce14"></a>
-<a class="el" href="../../d7/d55/structxii_bitflags.htm">xiiBitflags</a>&lt; <a class="el" href="../../d3/d05/structxii_g_a_l_shader_variable_flags.htm">xiiGALShaderVariableFlags</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dbf/structxii_g_a_l_shader_resource_variable_description.htm#aeefb3df806e4691adf35b86a26fbce14">m_Flags</a> = <a class="el" href="../../d3/d05/structxii_g_a_l_shader_variable_flags.htm#a84edff70d97ff62192c9196d2c7855b7a9b25f0c3c78c99120b504441c68f26c9">xiiGALShaderVariableFlags::None</a></td></tr>
-<tr class="memdesc:aeefb3df806e4691adf35b86a26fbce14"><td class="mdescLeft">&#160;</td><td class="mdescRight">The shader variable flags. <br /></td></tr>
-<tr class="separator:aeefb3df806e4691adf35b86a26fbce14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf02e9243da0cbd7e577cb95927cdfdf"><td class="memItemLeft" align="right" valign="top"><a id="adf02e9243da0cbd7e577cb95927cdfdf"></a>
+<a class="el" href="../../d7/d55/structxii_bitflags.htm">xiiBitflags</a>&lt; <a class="el" href="../../d7/d93/structxii_g_a_l_shader_stage.htm">xiiGALShaderStage</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dbf/structxii_g_a_l_shader_resource_variable_description.htm#adf02e9243da0cbd7e577cb95927cdfdf">m_ShaderStages</a> = <a class="el" href="../../d7/d93/structxii_g_a_l_shader_stage.htm#a574ae05a61f47569461dc1fd2ea12092ac827df5646bbfda238b17bd0c8e62eef">xiiGALShaderStage::Unknown</a></td></tr>
+<tr class="memdesc:adf02e9243da0cbd7e577cb95927cdfdf"><td class="mdescLeft">&#160;</td><td class="mdescRight">The shader stages this resources variable applies to. If more than one shader stage is specified, the variable will be shared between these stages. Shader stages used by different variables with the same name must not overlap. <br /></td></tr>
+<tr class="separator:adf02e9243da0cbd7e577cb95927cdfdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade731e231a31340332079e45067810de"><td class="memItemLeft" align="right" valign="top"><a id="ade731e231a31340332079e45067810de"></a>
+<a class="el" href="../../de/dfd/structxii_enum.htm">xiiEnum</a>&lt; <a class="el" href="../../d2/d5e/structxii_g_a_l_shader_resource_variable_type.htm">xiiGALShaderResourceVariableType</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dbf/structxii_g_a_l_shader_resource_variable_description.htm#ade731e231a31340332079e45067810de">m_Type</a> = <a class="el" href="../../d2/d5e/structxii_g_a_l_shader_resource_variable_type.htm#a1817f4eb8187b7afea2786a3a0a0fb38ac6b3fada1021c1ca6fed20dd7e2d49cb">xiiGALShaderResourceVariableType::Static</a></td></tr>
+<tr class="memdesc:ade731e231a31340332079e45067810de"><td class="mdescLeft">&#160;</td><td class="mdescRight">The shader variable type. <br /></td></tr>
+<tr class="separator:ade731e231a31340332079e45067810de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e93bdd295998852014941921b327326"><td class="memItemLeft" align="right" valign="top"><a id="a7e93bdd295998852014941921b327326"></a>
+<a class="el" href="../../d7/d55/structxii_bitflags.htm">xiiBitflags</a>&lt; <a class="el" href="../../d3/d05/structxii_g_a_l_shader_variable_flags.htm">xiiGALShaderVariableFlags</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dbf/structxii_g_a_l_shader_resource_variable_description.htm#a7e93bdd295998852014941921b327326">m_Flags</a> = <a class="el" href="../../d3/d05/structxii_g_a_l_shader_variable_flags.htm#a84edff70d97ff62192c9196d2c7855b7a0c1bbc104f39a9ce8a56e1cde498ddb1">xiiGALShaderVariableFlags::None</a></td></tr>
+<tr class="memdesc:a7e93bdd295998852014941921b327326"><td class="mdescLeft">&#160;</td><td class="mdescRight">The shader variable flags. <br /></td></tr>
+<tr class="separator:a7e93bdd295998852014941921b327326"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This describes the shader variable information. </p>
-</div><hr/>The documentation for this struct was generated from the following files:<ul>
-<li>/home/runner/work/XII/XII/Source/Engine/GraphicsD3D12/States/<a class="el" href="../../d7/deb/_pipeline_state_d3_d12_8h_source.htm">PipelineStateD3D12.h</a></li>
+</div><hr/>The documentation for this struct was generated from the following file:<ul>
 <li>/home/runner/work/XII/XII/Source/Engine/GraphicsFoundation/States/<a class="el" href="../../d9/df8/_pipeline_state_8h_source.htm">PipelineState.h</a></li>
 </ul>
 </div><!-- contents -->
@@ -157,7 +153,7 @@ Public Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d5/dbf/structxii_g_a_l_shader_resource_variable_description.htm">xiiGALShaderResourceVariableDescription</a></li>
-    <li class="footer">Generated on Fri Aug 18 2023 22:27:02 for XIIEngine by
+    <li class="footer">Generated on Sun Aug 20 2023 01:12:03 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

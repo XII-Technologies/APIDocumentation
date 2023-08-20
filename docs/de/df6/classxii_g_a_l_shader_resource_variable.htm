@@ -383,7 +383,7 @@ Additional Inherited Members</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section remark"><dt>Remarks</dt><dd>This method is only allowed for constant or structured buffer variables that were not created with <a class="el" href="../../d3/d05/structxii_g_a_l_shader_variable_flags.htm#a84edff70d97ff62192c9196d2c7855b7a05f2a0953d840d6be98a90ad3c450fe5">xiiGALShaderVariableFlags::NoDynamicBuffers</a> or xiiGALPipelineResourceFlags::NoDynamicBuffers. The method is also not allowed for static resource variables.</dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>This method is only allowed for constant or structured buffer variables that were not created with <a class="el" href="../../d3/d05/structxii_g_a_l_shader_variable_flags.htm#a84edff70d97ff62192c9196d2c7855b7a6e3c9f1ecaad006e5c34276a1b03a227">xiiGALShaderVariableFlags::NoDynamicBuffers</a> or xiiGALPipelineResourceFlags::NoDynamicBuffers. The method is also not allowed for static resource variables.</dd></dl>
 <dl class="section warning"><dt>Warning</dt><dd>The Offset must be an integer multiple of m_uiConstantBufferOffsetAlignment member when setting the offset for a constant buffer, or m_uiStructuredBufferOffsetAlignment when setting the offset for a structured buffer, as specified by the device limits. (See xiiGALDeviceLimits)</dd></dl>
 <p>For constant buffers, the offset is added to the offset that was previously set by <a class="el" href="../../de/df6/classxii_g_a_l_shader_resource_variable.htm#aaaf75e7fa52f31c48f9a42b504eeeed5" title="This binds a specified constant buffer range to the variable.">SetBufferRange()</a> method (if any). For structured buffers, the offset is added to the base offset specified by the buffer view.</p>
 <p>Changing the buffer offset does not require committing the SRB. From the engine point of view, buffers with dynamic offsets are treated similar to dynamic buffers, and thus affected by xiiGALDrawFlagDynamicResourceBuffersIntact flag. </p>
@@ -468,7 +468,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../de/df6/classxii_g_a_l_shader_resource_variable.htm">xiiGALShaderResourceVariable</a></li>
-    <li class="footer">Generated on Fri Aug 18 2023 22:27:02 for XIIEngine by
+    <li class="footer">Generated on Sun Aug 20 2023 01:12:03 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>
