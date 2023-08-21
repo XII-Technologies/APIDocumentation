@@ -1,5 +1,6 @@
 var NAVTREEINDEX47 =
 {
+"db/d03/classxii_qt_item_delegate.htm#a9812f3e00b7fbc8e4d2019fd7fe2f29e":[4,0,968,0],
 "db/d03/classxii_qt_item_delegate.htm#aec21e81ff1fe80aa48752773013e9d11":[4,0,968,3],
 "db/d03/classxii_qt_item_delegate.htm#af606b82ef965604e2a0e93f993596328":[4,0,968,5],
 "db/d05/structxii_document_object_structure_event.htm":[4,0,302],
@@ -194,16 +195,16 @@ var NAVTREEINDEX47 =
 "db/d1a/classxii_variant.htm#aa05b5de4f5ad50cd6398f8ab9f2a2043":[4,0,1318,74],
 "db/d1a/classxii_variant.htm#aa06681dbe2f7d2c77e9950fe751db1c8":[4,0,1318,114],
 "db/d1a/classxii_variant.htm#aa1d83252c0dfba2593f883b27b72bbfa":[4,0,1318,14],
+"db/d1a/classxii_variant.htm#aa28a169f3d484e9d656060b372ce2563":[4,0,1318,96],
+"db/d1a/classxii_variant.htm#aa28a169f3d484e9d656060b372ce2563":[4,0,1318,93],
 "db/d1a/classxii_variant.htm#aa28a169f3d484e9d656060b372ce2563":[4,0,1318,94],
 "db/d1a/classxii_variant.htm#aa28a169f3d484e9d656060b372ce2563":[4,0,1318,95],
-"db/d1a/classxii_variant.htm#aa28a169f3d484e9d656060b372ce2563":[4,0,1318,93],
-"db/d1a/classxii_variant.htm#aa28a169f3d484e9d656060b372ce2563":[4,0,1318,96],
 "db/d1a/classxii_variant.htm#aa2aa01491e5c8430accfa88c9c830e47":[4,0,1318,39],
 "db/d1a/classxii_variant.htm#aa2f53e61b74652dc20df053e64314ece":[4,0,1318,7],
 "db/d1a/classxii_variant.htm#aa3fb9dde7601af1db3639dc733818fff":[4,0,1318,117],
 "db/d1a/classxii_variant.htm#aa43d690bdb9f2fe6a4be90edf1808c0c":[4,0,1318,46],
-"db/d1a/classxii_variant.htm#aa5cb901c18fbbec99285eb0dbb2d8de2":[4,0,1318,85],
 "db/d1a/classxii_variant.htm#aa5cb901c18fbbec99285eb0dbb2d8de2":[4,0,1318,83],
+"db/d1a/classxii_variant.htm#aa5cb901c18fbbec99285eb0dbb2d8de2":[4,0,1318,85],
 "db/d1a/classxii_variant.htm#aa86aebb654734585cbdae2bab9b07ee6":[4,0,1318,10],
 "db/d1a/classxii_variant.htm#aac853f5c5892d15873583b7fb198b796":[4,0,1318,112],
 "db/d1a/classxii_variant.htm#aaf65464592d30a83a6d5830f3670a58b":[4,0,1318,42],
@@ -248,6 +249,5 @@ var NAVTREEINDEX47 =
 "db/d2b/classxii_memory_stream_writer.htm#af8edfa2ea447e08ebd9d67ca8a21dcde":[4,0,778,6],
 "db/d2d/structxii_startup_stage.htm":[4,0,1178],
 "db/d2d/structxii_startup_stage.htm#a1e60b8919b635c0bfac0566699f0cb34":[4,0,1178,0],
-"db/d2d/structxii_startup_stage.htm#a1e60b8919b635c0bfac0566699f0cb34a1e3c2aed7518ded511b3cdf4031be70f":[4,0,1178,0,3],
-"db/d2d/structxii_startup_stage.htm#a1e60b8919b635c0bfac0566699f0cb34a84d5bc9d2f1e040bf8a0e99912d3a771":[4,0,1178,0,4]
+"db/d2d/structxii_startup_stage.htm#a1e60b8919b635c0bfac0566699f0cb34a1e3c2aed7518ded511b3cdf4031be70f":[4,0,1178,0,3]
 };

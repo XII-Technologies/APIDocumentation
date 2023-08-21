@@ -1,5 +1,6 @@
 var NAVTREEINDEX53 =
 {
+"dc/d5c/structxii_g_a_l_shading_rate_capability_flags.htm#ae18051ba3e2592a63b1df04552e3f560addfd5d79649c678c9cba293e7027470f":[4,0,555,2,12],
 "dc/d5c/structxii_g_a_l_shading_rate_capability_flags.htm#ae18051ba3e2592a63b1df04552e3f560ae52a2ed89a94b018e28e27042f9c3ccf":[4,0,555,2,7],
 "dc/d5c/structxii_g_a_l_shading_rate_capability_flags.htm#ae18051ba3e2592a63b1df04552e3f560ae5b7feeec04b4cf8cbf3460d0e2b9b95":[4,0,555,2,3],
 "dc/d5c/structxii_g_a_l_shading_rate_capability_flags.htm#ae18051ba3e2592a63b1df04552e3f560af4a68c91c6f72d411d8e1e85e1a360ff":[4,0,555,2,10],
@@ -248,6 +249,5 @@ var NAVTREEINDEX53 =
 "dc/d97/structxii_g_a_l_map_flags_1_1_bits.htm#a65913a80f383430c3e70ccf112d2967b":[4,0,479,0,0],
 "dc/d97/structxii_g_a_l_map_flags_1_1_bits.htm#aa86cd0d263f42ebc06f9dbbce2392332":[4,0,479,0,1],
 "dc/d98/structxii_variant_adapter_3_01_t_00_01_c_00_011_00_010_01_4.htm":[4,0,1321],
-"dc/d98/structxii_variant_adapter_3_01_t_00_01_c_00_011_00_010_01_4.htm#a0c87228770896cabeb9c4a06515703f6":[4,0,1321,2],
-"dc/d98/structxii_variant_adapter_3_01_t_00_01_c_00_011_00_010_01_4.htm#a7520ea56f2f9ac6731b50c78e6234305":[4,0,1321,0]
+"dc/d98/structxii_variant_adapter_3_01_t_00_01_c_00_011_00_010_01_4.htm#a0c87228770896cabeb9c4a06515703f6":[4,0,1321,2]
 };

@@ -1,5 +1,6 @@
 var NAVTREEINDEX62 =
 {
+"de/d87/structxii_g_a_l_wave_feature.htm#a5aabcf7235eeb410db2e4299fe829680a3bfcdc756481b2368a6d9a9bbf8cc502":[4,0,600,2,5],
 "de/d87/structxii_g_a_l_wave_feature.htm#a5aabcf7235eeb410db2e4299fe829680a6184389dcb40cf384b4a50c844de12e3":[4,0,600,2,8],
 "de/d87/structxii_g_a_l_wave_feature.htm#a5aabcf7235eeb410db2e4299fe829680a6b9503238d62a8496d31a68b20047ed9":[4,0,600,2,3],
 "de/d87/structxii_g_a_l_wave_feature.htm#a5aabcf7235eeb410db2e4299fe829680a7985804e67dd09ac040a4cfb975c33d8":[4,0,600,2,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX62 =
 "de/dad/structxii_g_a_l_buffer_mode.htm":[4,0,411],
 "de/dad/structxii_g_a_l_buffer_mode.htm#a332f615e5147fd05fcfa76a2b39434ea":[4,0,411,0],
 "de/dad/structxii_g_a_l_buffer_mode.htm#af83ed81cfe23fce52430344d972a5103":[4,0,411,1],
-"de/dad/structxii_g_a_l_buffer_mode.htm#af83ed81cfe23fce52430344d972a5103a733d66c757018c69d782e7d7b98a6a7d":[4,0,411,1,2],
-"de/dad/structxii_g_a_l_buffer_mode.htm#af83ed81cfe23fce52430344d972a5103a73ba86e9daed1260f41c1608c9934137":[4,0,411,1,1]
+"de/dad/structxii_g_a_l_buffer_mode.htm#af83ed81cfe23fce52430344d972a5103a733d66c757018c69d782e7d7b98a6a7d":[4,0,411,1,2]
 };

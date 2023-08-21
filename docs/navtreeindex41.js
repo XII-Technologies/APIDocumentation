@@ -1,5 +1,6 @@
 var NAVTREEINDEX41 =
 {
+"d9/d8d/classxii_bitfield.htm#a14d058b16b33c9bd32e5194ec06a5c45":[4,0,103,2],
 "d9/d8d/classxii_bitfield.htm#a16626b5ef28cd30717e4708d17f4f30c":[4,0,103,13],
 "d9/d8d/classxii_bitfield.htm#a1a4a344392e8592dc494b49afd2907fd":[4,0,103,10],
 "d9/d8d/classxii_bitfield.htm#a1ca04bb6b3023ec53ba2add1c639245f":[4,0,103,7],
@@ -193,9 +194,9 @@ var NAVTREEINDEX41 =
 "d9/da6/structxii_memory_mapped_file_impl.htm#aa7f83db4250b6b6f85a949816edcd8e7":[4,0,773,4],
 "d9/da6/structxii_memory_mapped_file_impl.htm#abd0f01de1f8f9698bf06e0f349e4e506":[4,0,773,8],
 "d9/da6/structxii_memory_mapped_file_impl.htm#aca91dc13532648d843f00c7363b83e1e":[4,0,773,3],
-"d9/da6/structxii_memory_mapped_file_impl.htm#ae59f3562a4691173aef86973d45a8a10":[4,0,773,0],
 "d9/da6/structxii_memory_mapped_file_impl.htm#ae59f3562a4691173aef86973d45a8a10":[4,0,773,2],
 "d9/da6/structxii_memory_mapped_file_impl.htm#ae59f3562a4691173aef86973d45a8a10":[4,0,773,1],
+"d9/da6/structxii_memory_mapped_file_impl.htm#ae59f3562a4691173aef86973d45a8a10":[4,0,773,0],
 "d9/da6/structxii_memory_mapped_file_impl.htm#aff6c8b8424956195538c2cdc84280f27":[4,0,773,5],
 "d9/daa/classxii_qt_item_view.htm":[4,0,969],
 "d9/daa/classxii_qt_item_view.htm#a27e44f2adf0865c7bf84fb08fdf6ff2b":[4,0,969,5],
@@ -248,6 +249,5 @@ var NAVTREEINDEX41 =
 "d9/dbc/classxii_geometry.htm#aa2c614fe7acde2d0f87951923df3964d":[4,0,614,13],
 "d9/dbc/classxii_geometry.htm#aa988862dd550c1d2405e9081fda28477":[4,0,614,40],
 "d9/dbc/classxii_geometry.htm#aadfc563612e80b0ea3f54a7badc6ae75":[4,0,614,28],
-"d9/dbc/classxii_geometry.htm#ab49de05227ada8dd4c608f0aaa117387":[4,0,614,12],
-"d9/dbc/classxii_geometry.htm#ac2e756e55ce65ab76e408bcccb9fd204":[4,0,614,20]
+"d9/dbc/classxii_geometry.htm#ab49de05227ada8dd4c608f0aaa117387":[4,0,614,12]
 };

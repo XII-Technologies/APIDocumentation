@@ -1,5 +1,6 @@
 var NAVTREEINDEX49 =
 {
+"db/d60/classxii_component.htm#aaa9c69a9e5eb355a3fa74b8ce197df9f":[4,0,177,25],
 "db/d60/classxii_component.htm#ab1bbb9dd59cbb51462694a94f1108fce":[4,0,177,21],
 "db/d60/classxii_component.htm#abcb4cc3fe89cc6de26deea8fc6d5aba6":[4,0,177,12],
 "db/d60/classxii_component.htm#acdce463c81aba2b091af5785f1176fdb":[4,0,177,41],
@@ -248,6 +249,5 @@ var NAVTREEINDEX49 =
 "db/d96/classxii_surface_resource.htm#ac3c7d46fa48ded547b4d5c60885d14e5":[4,0,1209,10],
 "db/d96/classxii_surface_resource.htm#ad0154bd86ed65cbf0af7293b1d22b3dd":[4,0,1209,8],
 "db/d96/classxii_surface_resource.htm#ad4bfd1ab58266616237cb86753eb502f":[4,0,1209,1],
-"db/d98/structxii_g_a_l_shader_stage_1_1_bits.htm":[4,0,548,0],
-"db/d98/structxii_g_a_l_shader_stage_1_1_bits.htm#a0abfeb7f63cef07c0d700bb49f3a0cf8":[4,0,548,0,7]
+"db/d98/structxii_g_a_l_shader_stage_1_1_bits.htm":[4,0,548,0]
 };

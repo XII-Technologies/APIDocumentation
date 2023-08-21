@@ -1,5 +1,6 @@
 var NAVTREEINDEX30 =
 {
+"d6/dbd/classxii_open_ddl_reader.htm#a87c3c7841c8d3a52da2bac109c78cbe3":[4,0,847,1],
 "d6/dbd/classxii_open_ddl_reader.htm#a89aabb3098cdc29ae266ed2d1130aa66":[4,0,847,30],
 "d6/dbd/classxii_open_ddl_reader.htm#a90134d714ff559ba3a4c0b778e474e90":[4,0,847,3],
 "d6/dbd/classxii_open_ddl_reader.htm#a9aa9716cca965f8d25c17dacc60632a0":[4,0,847,18],
@@ -248,6 +249,5 @@ var NAVTREEINDEX30 =
 "d6/dec/structxii_g_a_l_resource_state_flags.htm#a4863cdfd85d00744a4db3689c58b5e84af732039981825a369a7f2058c96d57bd":[4,0,518,2,22],
 "d6/dec/structxii_g_a_l_resource_state_flags.htm#a4863cdfd85d00744a4db3689c58b5e84afb9900f18dbaf0947b4f541797d8efa0":[4,0,518,2,4],
 "d6/dec/structxii_g_a_l_resource_state_flags.htm#acd932ba5f8bb1fbf6affe11ef80d4829":[4,0,518,1],
-"d6/dee/structxii_g_a_l_hit_group_binding_mode.htm":[4,0,470],
-"d6/dee/structxii_g_a_l_hit_group_binding_mode.htm#a4affb3f18e9e1d878d25fff69dbabed9":[4,0,470,1]
+"d6/dee/structxii_g_a_l_hit_group_binding_mode.htm":[4,0,470]
 };

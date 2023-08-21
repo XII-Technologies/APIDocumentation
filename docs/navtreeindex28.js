@@ -1,5 +1,6 @@
 var NAVTREEINDEX28 =
 {
+"d6/d7c/structxii_property_flags.htm#a54fed1f9480831324a7b3840218228fba24e1a3386eb74f4105dde681e6d832fb":[4,0,917,2,9],
 "d6/d7c/structxii_property_flags.htm#a54fed1f9480831324a7b3840218228fba3774fb510451da29635073eaff4ed394":[4,0,917,2,13],
 "d6/d7c/structxii_property_flags.htm#a54fed1f9480831324a7b3840218228fba4c981285e239b50ac2f896ce9af03c5c":[4,0,917,2,7],
 "d6/d7c/structxii_property_flags.htm#a54fed1f9480831324a7b3840218228fba5a11a9a9b114d51c9d555065eaf467aa":[4,0,917,2,12],
@@ -248,6 +249,5 @@ var NAVTREEINDEX28 =
 "d6/d8f/structxii_g_a_l_device_features.htm#aef0f7728228371b4eef45eb49e3df588":[4,0,448,30],
 "d6/d8f/structxii_g_a_l_device_features.htm#af7b2a9f7095169c0d1e97c8f815c1167":[4,0,448,10],
 "d6/d8f/structxii_g_a_l_device_features.htm#afac87c6926b186fcf52c3856f3928e00":[4,0,448,41],
-"d6/d8f/structxii_g_a_l_sparse_texture_flags_1_1_bits.htm":[4,0,564,0],
-"d6/d8f/structxii_g_a_l_sparse_texture_flags_1_1_bits.htm#a88eb327b0c2042daf244b0ecc37d712f":[4,0,564,0,2]
+"d6/d8f/structxii_g_a_l_sparse_texture_flags_1_1_bits.htm":[4,0,564,0]
 };

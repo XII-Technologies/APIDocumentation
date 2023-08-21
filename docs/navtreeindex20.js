@@ -1,5 +1,6 @@
 var NAVTREEINDEX20 =
 {
+"d4/dc3/structxii_task_group_dependency.htm#ac03da703f0170f93ce3eebc397de4c8d":[4,0,1220,2],
 "d4/dc5/classxii_qt_property_pointer_widget.htm":[4,0,1003],
 "d4/dc5/classxii_qt_property_pointer_widget.htm#a00a2a271161378d2d0250588fb959c6c":[4,0,1003,2],
 "d4/dc5/classxii_qt_property_pointer_widget.htm#a1de0f4baa8deddb9f60f099c78b43774":[4,0,1003,13],
@@ -248,6 +249,5 @@ var NAVTREEINDEX20 =
 "d5/d07/classxii_g_a_l_swap_chain.htm#a3f133f9f58ad499cb9e339a9ad83eeca":[4,0,571,9],
 "d5/d07/classxii_g_a_l_swap_chain.htm#a4cce99df594c404e3ec1b92a0c37cde8":[4,0,571,7],
 "d5/d07/classxii_g_a_l_swap_chain.htm#a707af76edf9d1e8fbba566bd7c6ab387":[4,0,571,2],
-"d5/d07/classxii_g_a_l_swap_chain.htm#a85c258bd7c14071ebca6e8243c8ff65a":[4,0,571,1],
-"d5/d07/classxii_g_a_l_swap_chain.htm#a8a9dd0ea17d38c3d68c9db0002e5dab0":[4,0,571,11]
+"d5/d07/classxii_g_a_l_swap_chain.htm#a85c258bd7c14071ebca6e8243c8ff65a":[4,0,571,1]
 };

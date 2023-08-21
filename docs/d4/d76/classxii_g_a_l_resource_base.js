@@ -5,6 +5,7 @@ var classxii_g_a_l_resource_base =
     [ "xiiGALDevice", "d4/d76/classxii_g_a_l_resource_base.htm#a8a9dd0ea17d38c3d68c9db0002e5dab0", null ],
     [ "m_BufferViews", "d4/d76/classxii_g_a_l_resource_base.htm#ae35371306ecbc84a62fbeaeef5868bec", null ],
     [ "m_hDefaultBufferView", "d4/d76/classxii_g_a_l_resource_base.htm#a7db4a6897502ef6c4abc64370874630f", null ],
+    [ "m_hDefaultRenderTargetView", "d4/d76/classxii_g_a_l_resource_base.htm#a5235927d571e951b688ae801f5755640", null ],
     [ "m_hDefaultTextureView", "d4/d76/classxii_g_a_l_resource_base.htm#a8992cfd18ef1b7c139170860d8b313bd", null ],
     [ "m_TextureViews", "d4/d76/classxii_g_a_l_resource_base.htm#ae66937a981a566db5cd963acc7460d0f", null ]
 ];

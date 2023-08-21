@@ -1,5 +1,6 @@
 var NAVTREEINDEX29 =
 {
+"d6/d8f/structxii_g_a_l_sparse_texture_flags_1_1_bits.htm#a88eb327b0c2042daf244b0ecc37d712f":[4,0,564,0,2],
 "d6/d8f/structxii_g_a_l_sparse_texture_flags_1_1_bits.htm#a95e066bfa6bd47980817a2d44ec7294d":[4,0,564,0,1],
 "d6/d8f/structxii_g_a_l_sparse_texture_flags_1_1_bits.htm#ab4e91e17bb296057a501c7dfec16fb9c":[4,0,564,0,0],
 "d6/d96/structxii_manipulator_manager_event.htm":[4,0,753],
@@ -248,6 +249,5 @@ var NAVTREEINDEX29 =
 "d6/dbd/classxii_open_ddl_reader.htm#a6b8793a5b07778d08675446c16eb907d":[4,0,847,10],
 "d6/dbd/classxii_open_ddl_reader.htm#a6ddcffcd96e4e056579e4ec50549b1b4":[4,0,847,28],
 "d6/dbd/classxii_open_ddl_reader.htm#a7bde3f57d38e94c869df2a0fdf15b699":[4,0,847,12],
-"d6/dbd/classxii_open_ddl_reader.htm#a860f5745bec5d8639caf62ea1ceaacd3":[4,0,847,14],
-"d6/dbd/classxii_open_ddl_reader.htm#a87c3c7841c8d3a52da2bac109c78cbe3":[4,0,847,1]
+"d6/dbd/classxii_open_ddl_reader.htm#a860f5745bec5d8639caf62ea1ceaacd3":[4,0,847,14]
 };

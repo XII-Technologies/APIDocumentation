@@ -1,5 +1,6 @@
 var NAVTREEINDEX31 =
 {
+"d6/dee/structxii_g_a_l_hit_group_binding_mode.htm#a4affb3f18e9e1d878d25fff69dbabed9":[4,0,470,1],
 "d6/dee/structxii_g_a_l_hit_group_binding_mode.htm#a4affb3f18e9e1d878d25fff69dbabed9a4ff19f4daf2be52c4ba59c881675319b":[4,0,470,1,1],
 "d6/dee/structxii_g_a_l_hit_group_binding_mode.htm#a4affb3f18e9e1d878d25fff69dbabed9a75258308b254639738af3fd4a38b8f28":[4,0,470,1,0],
 "d6/dee/structxii_g_a_l_hit_group_binding_mode.htm#a4affb3f18e9e1d878d25fff69dbabed9a8a6181be37f30fac56c2f7c2f5d39426":[4,0,470,1,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX31 =
 "d7/d44/structxii_geometry_1_1_geo_options.htm":[4,0,614,0],
 "d7/d44/structxii_geometry_1_1_geo_options.htm#a124d1408d9ee3d130257eb20fc300aa2":[4,0,614,0,2],
 "d7/d44/structxii_geometry_1_1_geo_options.htm#a4dfc74790333d5a414510c609c93819e":[4,0,614,0,0],
-"d7/d44/structxii_geometry_1_1_geo_options.htm#a71d0be4c0a5f214fe72f8cd78065285b":[4,0,614,0,3],
-"d7/d44/structxii_geometry_1_1_geo_options.htm#a730ca1cf75c8547b59a05bcf34b839df":[4,0,614,0,1]
+"d7/d44/structxii_geometry_1_1_geo_options.htm#a71d0be4c0a5f214fe72f8cd78065285b":[4,0,614,0,3]
 };

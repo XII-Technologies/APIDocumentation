@@ -1,5 +1,6 @@
 var NAVTREEINDEX54 =
 {
+"dc/d98/structxii_variant_adapter_3_01_t_00_01_c_00_011_00_010_01_4.htm#a7520ea56f2f9ac6731b50c78e6234305":[4,0,1321,0],
 "dc/d98/structxii_variant_adapter_3_01_t_00_01_c_00_011_00_010_01_4.htm#aa58f1e3bde06b9704a695df8bba2c653":[4,0,1321,1],
 "dc/d98/structxii_variant_adapter_3_01_t_00_01_c_00_011_00_010_01_4.htm#ad9c59f43ceedfb81968a5687755b0acb":[4,0,1321,4],
 "dc/d98/structxii_variant_adapter_3_01_t_00_01_c_00_011_00_010_01_4.htm#ada2d3a3c61af294c558b4d44cf7e2b7f":[4,0,1321,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX54 =
 "dc/de3/classxii_prefab_default_state_provider.htm#a577048f470ead2f69071aabfef5d6473":[4,0,887,3],
 "dc/de3/classxii_prefab_default_state_provider.htm#a6260b1fa8cf95b68877fb493f74a8bca":[4,0,887,1],
 "dc/de3/classxii_prefab_default_state_provider.htm#a9a8747f8c98d14c247853ce445c938da":[4,0,887,4],
-"dc/de3/classxii_prefab_default_state_provider.htm#ab18c20b507fc883b6bfbcba5d27317a1":[4,0,887,5],
-"dc/de3/classxii_prefab_default_state_provider.htm#ae3bf58ec055cf6cb35a14be8db8d0055":[4,0,887,0]
+"dc/de3/classxii_prefab_default_state_provider.htm#ab18c20b507fc883b6bfbcba5d27317a1":[4,0,887,5]
 };

@@ -1,5 +1,6 @@
 var NAVTREEINDEX32 =
 {
+"d7/d44/structxii_geometry_1_1_geo_options.htm#a730ca1cf75c8547b59a05bcf34b839df":[4,0,614,0,1],
 "d7/d44/structxii_geometry_1_1_geo_options.htm#ae4995445a00f4464e5cf9f29510d2a60":[4,0,614,0,4],
 "d7/d44/structxii_geometry_1_1_geo_options.htm#af7b463c69faedf52ac0544411c13971a":[4,0,614,0,5],
 "d7/d45/classxii_string_utf8.htm":[4,0,1201],
@@ -248,6 +249,5 @@ var NAVTREEINDEX32 =
 "d7/d93/structxii_g_a_l_shader_stage.htm#a574ae05a61f47569461dc1fd2ea12092aacc550299b47cd78ffac967008b5b1a9":[4,0,548,2,10],
 "d7/d93/structxii_g_a_l_shader_stage.htm#a574ae05a61f47569461dc1fd2ea12092aade10779c6156ea24d708f2736541381":[4,0,548,2,3],
 "d7/d93/structxii_g_a_l_shader_stage.htm#a574ae05a61f47569461dc1fd2ea12092ac827df5646bbfda238b17bd0c8e62eef":[4,0,548,2,0],
-"d7/d93/structxii_g_a_l_shader_stage.htm#a574ae05a61f47569461dc1fd2ea12092acb5da811a5b82ce932177fc6ce2e15f1":[4,0,548,2,14],
-"d7/d93/structxii_g_a_l_shader_stage.htm#a574ae05a61f47569461dc1fd2ea12092ae904d9be4b7fed72dca31e75f7ca0458":[4,0,548,2,16]
+"d7/d93/structxii_g_a_l_shader_stage.htm#a574ae05a61f47569461dc1fd2ea12092acb5da811a5b82ce932177fc6ce2e15f1":[4,0,548,2,14]
 };

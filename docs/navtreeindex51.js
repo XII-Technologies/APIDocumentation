@@ -1,5 +1,6 @@
 var NAVTREEINDEX51 =
 {
+"db/d9e/structxii_swizzle.htm#af85243d77ee966c0d27bee79d65039deacaa33cd42c7c933e674c846844941b18":[4,0,1212,0,17],
 "db/d9e/structxii_swizzle.htm#af85243d77ee966c0d27bee79d65039deacba6f46fd1b3390e0c448720dd060d9b":[4,0,1212,0,45],
 "db/d9e/structxii_swizzle.htm#af85243d77ee966c0d27bee79d65039deacc1abf372381b87b73ac27f41923c766":[4,0,1212,0,29],
 "db/d9e/structxii_swizzle.htm#af85243d77ee966c0d27bee79d65039deaccde4dd8b156647bd77815bdbf040b3b":[4,0,1212,0,167],
@@ -248,6 +249,5 @@ var NAVTREEINDEX51 =
 "db/de6/structconst__iterator__base.htm#a447f2885fc5a8b692dec8b87dfb0db52":[4,0,12,20],
 "db/de6/structconst__iterator__base.htm#a4ee669ea2d0bc6693d4c7c50d1e96f9a":[4,0,12,7],
 "db/de6/structconst__iterator__base.htm#a55e6de45abecdb20b0a83f7d538a9fd5":[4,0,12,14],
-"db/de6/structconst__iterator__base.htm#a58ffbfabfa1beb329cec08018143f25f":[4,0,12,11],
-"db/de6/structconst__iterator__base.htm#a6ba06de15ced8aee8ee34da8b8e746f3":[4,0,12,16]
+"db/de6/structconst__iterator__base.htm#a58ffbfabfa1beb329cec08018143f25f":[4,0,12,11]
 };

@@ -1,5 +1,6 @@
 var NAVTREEINDEX52 =
 {
+"db/de6/structconst__iterator__base.htm#a6ba06de15ced8aee8ee34da8b8e746f3":[4,0,12,16],
 "db/de6/structconst__iterator__base.htm#a84fda8fc12f0ba17a384503b1d0fea27":[4,0,12,15],
 "db/de6/structconst__iterator__base.htm#a85b0d18d081752a3dbe9d66b827c9892":[4,0,12,3],
 "db/de6/structconst__iterator__base.htm#a89ca61e5d48ee28cbde3338399bf65d9":[4,0,12,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX52 =
 "dc/d5c/structxii_g_a_l_shading_rate_capability_flags.htm#ae18051ba3e2592a63b1df04552e3f560aafeab8337981d7714bf8b3d47a052dd3":[4,0,555,2,9],
 "dc/d5c/structxii_g_a_l_shading_rate_capability_flags.htm#ae18051ba3e2592a63b1df04552e3f560ab14cf458366dd1287fa12ea4131a583e":[4,0,555,2,0],
 "dc/d5c/structxii_g_a_l_shading_rate_capability_flags.htm#ae18051ba3e2592a63b1df04552e3f560ac4b7e5709b3bfe21725e7864b633ae1a":[4,0,555,2,14],
-"dc/d5c/structxii_g_a_l_shading_rate_capability_flags.htm#ae18051ba3e2592a63b1df04552e3f560ac608a070c2297d8318ee5c4cd3b7f5f2":[4,0,555,2,5],
-"dc/d5c/structxii_g_a_l_shading_rate_capability_flags.htm#ae18051ba3e2592a63b1df04552e3f560addfd5d79649c678c9cba293e7027470f":[4,0,555,2,12]
+"dc/d5c/structxii_g_a_l_shading_rate_capability_flags.htm#ae18051ba3e2592a63b1df04552e3f560ac608a070c2297d8318ee5c4cd3b7f5f2":[4,0,555,2,5]
 };

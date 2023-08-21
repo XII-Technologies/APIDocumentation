@@ -1,5 +1,6 @@
 var NAVTREEINDEX58 =
 {
+"dd/d8a/structxii_wind_strength.htm#a0378f99250688f97ded9257aaed19e87a77a3e8c9773f08b09d994a7b6b25ce44":[4,0,1364,1,3],
 "dd/d8a/structxii_wind_strength.htm#a0378f99250688f97ded9257aaed19e87a7fc35131be282bc1868b64e27f6c04a8":[4,0,1364,1,1],
 "dd/d8a/structxii_wind_strength.htm#a0378f99250688f97ded9257aaed19e87af5c1dcde23500e15804dcf6b10cb64d3":[4,0,1364,1,8],
 "dd/d8a/structxii_wind_strength.htm#a0378f99250688f97ded9257aaed19e87afe4d6541fd4c0bea11770ee6109cc008":[4,0,1364,1,10],
@@ -248,6 +249,5 @@ var NAVTREEINDEX58 =
 "dd/dc8/classxii_qt_event_track_widget.htm#a174318d9dd81f274bf891704248366fa":[4,0,958,8],
 "dd/dc8/classxii_qt_event_track_widget.htm#a1e7d56dd7d35b6ef6f11e92204057f88":[4,0,958,15],
 "dd/dc8/classxii_qt_event_track_widget.htm#a2cc18ef176a7d6bd4c4f829f0e4543e1":[4,0,958,3],
-"dd/dc8/classxii_qt_event_track_widget.htm#a38b3dd1c638f9505f683fabf72fffb65":[4,0,958,10],
-"dd/dc8/classxii_qt_event_track_widget.htm#a399daf55ea45bdb1f030607b5bfabee9":[4,0,958,22]
+"dd/dc8/classxii_qt_event_track_widget.htm#a38b3dd1c638f9505f683fabf72fffb65":[4,0,958,10]
 };

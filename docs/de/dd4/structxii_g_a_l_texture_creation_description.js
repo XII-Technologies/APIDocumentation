@@ -1,5 +1,10 @@
 var structxii_g_a_l_texture_creation_description =
 [
+    [ "Is1D", "de/dd4/structxii_g_a_l_texture_creation_description.htm#a6f798125cd88056c533d8d82c61d7d16", null ],
+    [ "Is2D", "de/dd4/structxii_g_a_l_texture_creation_description.htm#a2d5585ab1dc89763d7181f48812dfabf", null ],
+    [ "Is3D", "de/dd4/structxii_g_a_l_texture_creation_description.htm#a6fca4e0f3d435ba77cf3d32272c8f10f", null ],
+    [ "IsArray", "de/dd4/structxii_g_a_l_texture_creation_description.htm#aca4dad534b1866bcd15611fda1451f6d", null ],
+    [ "IsCube", "de/dd4/structxii_g_a_l_texture_creation_description.htm#a8a5a0b1115b9337f56e59691e7f0c715", null ],
     [ "XII_DECLARE_POD_TYPE", "de/dd4/structxii_g_a_l_texture_creation_description.htm#a419c3daca6c00ade6854b184f8f5b753", null ],
     [ "m_BindFlags", "de/dd4/structxii_g_a_l_texture_creation_description.htm#a44d74d8f8567e5406f6cbb0b0bf28555", null ],
     [ "m_ClearValue", "de/dd4/structxii_g_a_l_texture_creation_description.htm#add6a7cedf9f8c3b3ab625d34b29b7989", null ],

@@ -1,5 +1,6 @@
 var NAVTREEINDEX21 =
 {
+"d5/d07/classxii_g_a_l_swap_chain.htm#a8a9dd0ea17d38c3d68c9db0002e5dab0":[4,0,571,11],
 "d5/d07/classxii_g_a_l_swap_chain.htm#a9a6e66caa2d67be111a942c324abb5a1":[4,0,571,4],
 "d5/d07/classxii_g_a_l_swap_chain.htm#aae023fa5a7721d97c2986031da6e5c92":[4,0,571,3],
 "d5/d07/classxii_g_a_l_swap_chain.htm#abc099ef37e3532f60422580b328effef":[4,0,571,6],
@@ -248,6 +249,5 @@ var NAVTREEINDEX21 =
 "d5/d19/classxii_g_a_l_device.htm#ab51c5afc2cd3a46d594faa1b4bbd7dfe":[4,0,443,96],
 "d5/d19/classxii_g_a_l_device.htm#abbe614d9d18dd3cff6e5f5f07d5bb5ca":[4,0,443,81],
 "d5/d19/classxii_g_a_l_device.htm#abf270a3836899ed0bf7d101b7ccb4f4f":[4,0,443,68],
-"d5/d19/classxii_g_a_l_device.htm#ac58c75e3dcc1f29a6990f2370a4aea03":[4,0,443,57],
-"d5/d19/classxii_g_a_l_device.htm#ac98a53a51523c6bd5fdf4eea318cabc9":[4,0,443,47]
+"d5/d19/classxii_g_a_l_device.htm#ac58c75e3dcc1f29a6990f2370a4aea03":[4,0,443,57]
 };

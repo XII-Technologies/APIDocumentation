@@ -1,5 +1,6 @@
 var NAVTREEINDEX33 =
 {
+"d7/d93/structxii_g_a_l_shader_stage.htm#a574ae05a61f47569461dc1fd2ea12092ae904d9be4b7fed72dca31e75f7ca0458":[4,0,548,2,16],
 "d7/d93/structxii_g_a_l_shader_stage.htm#a574ae05a61f47569461dc1fd2ea12092aed46e834e887748c8ccad96f6d4a1557":[4,0,548,2,15],
 "d7/d93/structxii_g_a_l_shader_stage.htm#a5fc8af59fe8a0ac150d5961689ebed35":[4,0,548,1],
 "d7/d94/structxii_surface_interaction.htm":[4,0,1207],
@@ -248,6 +249,5 @@ var NAVTREEINDEX33 =
 "d7/dd9/structxii_g_a_l_query_type.htm#a40e558bd24a5e0d3f8025299ed1ca87da8f492b03234e39c1e664a247c2b19672":[4,0,500,1,7],
 "d7/dd9/structxii_g_a_l_query_type.htm#a40e558bd24a5e0d3f8025299ed1ca87dabd3bb6bbb594ca562ea2a74343df60dc":[4,0,500,1,1],
 "d7/dd9/structxii_g_a_l_query_type.htm#a40e558bd24a5e0d3f8025299ed1ca87dabfef03ca7b106d459e2d6d76faf80bf2":[4,0,500,1,6],
-"d7/ddb/classxii_hash_stream_writer64.htm":[4,0,653],
-"d7/ddb/classxii_hash_stream_writer64.htm#a3f9b4706ff93a3dc7613c2b2f58c939d":[4,0,653,1]
+"d7/ddb/classxii_hash_stream_writer64.htm":[4,0,653]
 };

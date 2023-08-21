@@ -144,11 +144,12 @@ var NAVTREEINDEX18 =
 "d4/d76/classxii_g_a_l_resource_base.htm":[4,0,515],
 "d4/d76/classxii_g_a_l_resource_base.htm#a2471c8ef0cef7513ddeb89fb4d134a33":[4,0,515,0],
 "d4/d76/classxii_g_a_l_resource_base.htm#a3a85600f078838f515c37b5d5340ad0d":[4,0,515,1],
+"d4/d76/classxii_g_a_l_resource_base.htm#a5235927d571e951b688ae801f5755640":[4,0,515,5],
 "d4/d76/classxii_g_a_l_resource_base.htm#a7db4a6897502ef6c4abc64370874630f":[4,0,515,4],
-"d4/d76/classxii_g_a_l_resource_base.htm#a8992cfd18ef1b7c139170860d8b313bd":[4,0,515,5],
+"d4/d76/classxii_g_a_l_resource_base.htm#a8992cfd18ef1b7c139170860d8b313bd":[4,0,515,6],
 "d4/d76/classxii_g_a_l_resource_base.htm#a8a9dd0ea17d38c3d68c9db0002e5dab0":[4,0,515,2],
 "d4/d76/classxii_g_a_l_resource_base.htm#ae35371306ecbc84a62fbeaeef5868bec":[4,0,515,3],
-"d4/d76/classxii_g_a_l_resource_base.htm#ae66937a981a566db5cd963acc7460d0f":[4,0,515,6],
+"d4/d76/classxii_g_a_l_resource_base.htm#ae66937a981a566db5cd963acc7460d0f":[4,0,515,7],
 "d4/d78/classxii_console_function_3_01_r_07_x_i_i___l_i_s_t_07_p_00_01_a_r_g___c_o_u_n_t_08_08_4.htm":[4,0,201],
 "d4/d78/classxii_console_function_3_01_r_07_x_i_i___l_i_s_t_07_p_00_01_a_r_g___c_o_u_n_t_08_08_4.htm#a0ed4bbf11c18973ceaad436852eafc23":[4,0,201,0],
 "d4/d78/classxii_console_function_3_01_r_07_x_i_i___l_i_s_t_07_p_00_01_a_r_g___c_o_u_n_t_08_08_4.htm#a959ec5d71eee5ae6252af955507af72c":[4,0,201,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX18 =
 "d4/d9b/classxii_remote_message.htm#a622d170a085819b20fd3cd1f0b6d2b58":[4,0,1057,5],
 "d4/d9b/classxii_remote_message.htm#a7ed1728b047e0ef818054d4a0c52827a":[4,0,1057,0],
 "d4/d9b/classxii_remote_message.htm#a8085166e7861a8b6e0667e52d50e7cf0":[4,0,1057,1],
-"d4/d9b/classxii_remote_message.htm#a8eff1949c347b8a79b29ba1783422fec":[4,0,1057,6],
-"d4/d9b/classxii_remote_message.htm#a99712a750ca8a49f9364afe5c08c0c2f":[4,0,1057,9]
+"d4/d9b/classxii_remote_message.htm#a8eff1949c347b8a79b29ba1783422fec":[4,0,1057,6]
 };

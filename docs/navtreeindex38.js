@@ -1,5 +1,6 @@
 var NAVTREEINDEX38 =
 {
+"d8/dcf/classxii_g_a_l_buffer_view.htm":[4,0,413],
 "d8/dcf/classxii_g_a_l_buffer_view.htm#a032504db199c447a1f502395751687e8":[4,0,413,2],
 "d8/dcf/classxii_g_a_l_buffer_view.htm#a09277cf01f59ea644efda86c9a10f521":[4,0,413,0],
 "d8/dcf/classxii_g_a_l_buffer_view.htm#a6ca21bbc4d3e749f6caf8ca350d53a2d":[4,0,413,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX38 =
 "d9/d1e/classxii_translator_pass_through.htm":[4,0,1279],
 "d9/d1e/classxii_translator_pass_through.htm#a15be2abdb3dafb9872707b4029ea67bd":[4,0,1279,0],
 "d9/d1f/structxii_script_coroutine_1_1_result_1_1_state.htm":[4,0,1100,0,0],
-"d9/d1f/structxii_script_coroutine_1_1_result_1_1_state.htm#a6f8bf25eecbd06120d7c5080d988a66c":[4,0,1100,0,0,1],
-"d9/d1f/structxii_script_coroutine_1_1_result_1_1_state.htm#a6f8bf25eecbd06120d7c5080d988a66ca10ea6a1b0fcab83a01312bdc411195da":[4,0,1100,0,0,1,0]
+"d9/d1f/structxii_script_coroutine_1_1_result_1_1_state.htm#a6f8bf25eecbd06120d7c5080d988a66c":[4,0,1100,0,0,1]
 };

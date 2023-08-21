@@ -1,5 +1,6 @@
 var NAVTREEINDEX56 =
 {
+"dd/d1d/structxii_expression_a_s_t_1_1_unary_operator.htm#a15c3aa0288f90da49f55e6ef13b2757c":[4,0,348,11,0],
 "dd/d25/structxii_spatial_system_1_1_query_params.htm":[4,0,1167,0],
 "dd/d25/structxii_spatial_system_1_1_query_params.htm#a1b306ebe3afaf17adb8fbac2f88874db":[4,0,1167,0,0],
 "dd/d25/structxii_spatial_system_1_1_query_params.htm#a1dc82c24e01fde2744d191e7a28009eb":[4,0,1167,0,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX56 =
 "dd/d45/classxii_abstract_set_property.htm#a629c6f45d65601c0751ede17d811544c":[4,0,32,6],
 "dd/d45/classxii_abstract_set_property.htm#a835571eaa723cdcf240eab22a95c0a77":[4,0,32,5],
 "dd/d45/classxii_abstract_set_property.htm#ab6f017623ef4897ac396cc705bd91209":[4,0,32,2],
-"dd/d45/classxii_abstract_set_property.htm#abf9524e69fd7f984c1626ea5f1e43bdb":[4,0,32,7],
-"dd/d45/classxii_abstract_set_property.htm#ae30cb4e3783994721fa47d01c839c679":[4,0,32,4]
+"dd/d45/classxii_abstract_set_property.htm#abf9524e69fd7f984c1626ea5f1e43bdb":[4,0,32,7]
 };

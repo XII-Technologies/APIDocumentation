@@ -1,5 +1,6 @@
 var NAVTREEINDEX42 =
 {
+"d9/dbc/classxii_geometry.htm#ac2e756e55ce65ab76e408bcccb9fd204":[4,0,614,20],
 "d9/dbc/classxii_geometry.htm#ac409609f9683b8b8f4cdc7592f549224":[4,0,614,25],
 "d9/dbc/classxii_geometry.htm#ac96e6b722ad7b8014d9ac1d4f157bf71":[4,0,614,16],
 "d9/dbc/classxii_geometry.htm#acc544fe662830123730e8dae261b8d0c":[4,0,614,33],
@@ -248,6 +249,5 @@ var NAVTREEINDEX42 =
 "d9/dfe/classxii_world_module.htm#a37328ef7216b181772ed63453973897c":[4,0,1369,2],
 "d9/dfe/classxii_world_module.htm#a50dab4b361f5624a439508da01d1d936":[4,0,1369,13],
 "d9/dfe/classxii_world_module.htm#a58ce095e71920cb5bc341b96357d95ab":[4,0,1369,9],
-"d9/dfe/classxii_world_module.htm#a68614d0324143020f723cf3843534ebe":[4,0,1369,16],
-"d9/dfe/classxii_world_module.htm#a8e131108bae5dec9977f4b84a329b8c3":[4,0,1369,7]
+"d9/dfe/classxii_world_module.htm#a68614d0324143020f723cf3843534ebe":[4,0,1369,16]
 };
