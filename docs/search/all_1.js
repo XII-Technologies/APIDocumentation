@@ -145,7 +145,7 @@ var searchData=
   ['afterdocumentwindowrequested_151',['AfterDocumentWindowRequested',['../da/d7b/structxii_document_manager_1_1_event.htm#ab917341ad90de74049cc79314a6c34bbaa7fe566ed121ea3566c4b507ab5fb37c',1,'xiiDocumentManager::Event']]],
   ['afterendframe_152',['AfterEndFrame',['../df/d86/structxii_g_a_l_device_event_type.htm#aa09a6b636733448016160754f3eee4a3af23270c7e543141a1c0ce21e4fd1233d',1,'xiiGALDeviceEventType']]],
   ['afterhighlevelsystemsshutdown_153',['AfterHighLevelSystemsShutdown',['../dd/d2b/classxii_application.htm#aaf087123effab08169b5c0f76fa8c3f6',1,'xiiApplication']]],
-  ['afterinit_154',['AfterInit',['../df/d86/structxii_g_a_l_device_event_type.htm#aa09a6b636733448016160754f3eee4a3a2ec337b0a4a8a3d0e85f7fe3234b0d89',1,'xiiGALDeviceEventType']]],
+  ['afterinitialization_154',['AfterInitialization',['../df/d86/structxii_g_a_l_device_event_type.htm#aa09a6b636733448016160754f3eee4a3a910617a216d0f60480b53c62f3b203f5',1,'xiiGALDeviceEventType']]],
   ['afterinitialized_155',['AfterInitialized',['../dc/de3/structxii_object_msg_queue_type.htm#a3d66b91c215db559dd0c20b592406600a23a21867c85dae3c31bbe772512807f9',1,'xiiObjectMsgQueueType']]],
   ['afterloading_156',['AfterLoading',['../d9/dc8/structxii_plugin_event.htm#a7486ddd9e1f8a817f4e23d864d808d1da0ae2ab67c4c47b09623d163143344fad',1,'xiiPluginEvent']]],
   ['afterloadingbeforeinit_157',['AfterLoadingBeforeInit',['../d9/dc8/structxii_plugin_event.htm#a7486ddd9e1f8a817f4e23d864d808d1dae8fe52910cfb68e98425626579481d67',1,'xiiPluginEvent']]],

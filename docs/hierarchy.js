@@ -31,8 +31,8 @@ var hierarchy =
     [ "xiiGALResourceDimensionCapabilityFlags::Bits", "da/d56/structxii_g_a_l_resource_dimension_capability_flags_1_1_bits.htm", null ],
     [ "xiiGALSparseTextureFlags::Bits", "d6/d8f/structxii_g_a_l_sparse_texture_flags_1_1_bits.htm", null ],
     [ "xiiGALResourceStateFlags::Bits", "d4/d36/structxii_g_a_l_resource_state_flags_1_1_bits.htm", null ],
-    [ "xiiGALRayTracingBuildASFlags::Bits", "dd/d58/structxii_g_a_l_ray_tracing_build_a_s_flags_1_1_bits.htm", null ],
     [ "xiiMemoryTrackingFlags::Bits", "de/d72/structxii_memory_tracking_flags_1_1_bits.htm", null ],
+    [ "xiiGALRayTracingBuildASFlags::Bits", "dd/d58/structxii_g_a_l_ray_tracing_build_a_s_flags_1_1_bits.htm", null ],
     [ "xiiGALMiscBufferFlags::Bits", "dc/d7b/structxii_g_a_l_misc_buffer_flags_1_1_bits.htm", null ],
     [ "xiiGALSamplerFlags::Bits", "d1/d06/structxii_g_a_l_sampler_flags_1_1_bits.htm", null ],
     [ "xiiGALMiscTextureFlags::Bits", "d2/d47/structxii_g_a_l_misc_texture_flags_1_1_bits.htm", null ],
@@ -44,13 +44,13 @@ var hierarchy =
     [ "xiiGALSetShaderResourceFlags::Bits", "d9/dc0/structxii_g_a_l_set_shader_resource_flags_1_1_bits.htm", null ],
     [ "xiiGALColorMask::Bits", "d0/d47/structxii_g_a_l_color_mask_1_1_bits.htm", null ],
     [ "xiiGALPipelineShadingRateFlags::Bits", "d6/d59/structxii_g_a_l_pipeline_shading_rate_flags_1_1_bits.htm", null ],
-    [ "xiiGALShaderVariableFlags::Bits", "da/dde/structxii_g_a_l_shader_variable_flags_1_1_bits.htm", null ],
     [ "xiiPropertyFlags::Bits", "d1/dcd/structxii_property_flags_1_1_bits.htm", null ],
+    [ "xiiGALShaderVariableFlags::Bits", "da/dde/structxii_g_a_l_shader_variable_flags_1_1_bits.htm", null ],
     [ "xiiResourceFlags::Bits", "df/d78/structxii_resource_flags_1_1_bits.htm", null ],
     [ "xiiDependencyFlags::Bits", "d3/db0/structxii_dependency_flags_1_1_bits.htm", null ],
     [ "xiiVisualizerAnchor::Bits", "dd/d39/structxii_visualizer_anchor_1_1_bits.htm", null ],
-    [ "xiiDynamicMenuAction::Item::ItemFlags::Bits", "d9/dbf/structxii_dynamic_menu_action_1_1_item_1_1_item_flags_1_1_bits.htm", null ],
     [ "xiiInputSlotFlags::Bits", "de/def/structxii_input_slot_flags_1_1_bits.htm", null ],
+    [ "xiiDynamicMenuAction::Item::ItemFlags::Bits", "d9/dbf/structxii_dynamic_menu_action_1_1_item_1_1_item_flags_1_1_bits.htm", null ],
     [ "xiiStandardMenuTypes::Bits", "dd/d51/structxii_standard_menu_types_1_1_bits.htm", null ],
     [ "xiiCVarFlags::Bits", "d3/df8/structxii_c_var_flags_1_1_bits.htm", null ],
     [ "xiiNodeFlags::Bits", "d9/d5a/structxii_node_flags_1_1_bits.htm", null ],
@@ -135,6 +135,7 @@ var hierarchy =
       [ "xiiEnum< xiiExpressionAST::DataType >", "de/dfd/structxii_enum.htm", null ]
     ] ],
     [ "xiiOpenDdlWriter::DdlState", "dc/d00/structxii_open_ddl_writer_1_1_ddl_state.htm", null ],
+    [ "xiiGALDevice::DeadObject", "db/d37/structxii_g_a_l_device_1_1_dead_object.htm", null ],
     [ "Derived", null, [
       [ "xiiEnum< Derived >", "de/dfd/structxii_enum.htm", null ]
     ] ],
@@ -190,8 +191,8 @@ var hierarchy =
     [ "xiiWorldReader::InstantiationContextBase", "d0/dd5/classxii_world_reader_1_1_instantiation_context_base.htm", null ],
     [ "xiiColorGradient::IntensityCP", "db/d3a/structxii_color_gradient_1_1_intensity_c_p.htm", null ],
     [ "xiiWorldModuleConfig::InterfaceImpl", "d6/d48/structxii_world_module_config_1_1_interface_impl.htm", null ],
-    [ "xiiTextureAtlasRuntimeDesc::Item", "d2/da3/structxii_texture_atlas_runtime_desc_1_1_item.htm", null ],
     [ "xiiTextureAtlasCreationDesc::Item", "df/dbb/structxii_texture_atlas_creation_desc_1_1_item.htm", null ],
+    [ "xiiTextureAtlasRuntimeDesc::Item", "d2/da3/structxii_texture_atlas_runtime_desc_1_1_item.htm", null ],
     [ "xiiDynamicMenuAction::Item", "d5/d06/structxii_dynamic_menu_action_1_1_item.htm", null ],
     [ "xiiDynamicMenuAction::Item::ItemFlags", "d8/d49/structxii_dynamic_menu_action_1_1_item_1_1_item_flags.htm", null ],
     [ "xiiTagSetTemplate< BlockStorageAllocator >::Iterator", "dd/d54/classxii_tag_set_template_1_1_iterator.htm", null ],
@@ -1337,6 +1338,11 @@ var hierarchy =
     ] ],
     [ "xiiArrayBase< xiiGALCommandQueueProperties, xiiStaticArray< xiiGALCommandQueueProperties, Capacity > >", "da/d4c/classxii_array_base.htm", [
       [ "xiiStaticArray< xiiGALCommandQueueProperties, XII_GAL_MAX_ADAPTER_QUEUES >", "d9/d25/classxii_static_array.htm", null ]
+    ] ],
+    [ "xiiArrayBase< xiiGALDevice::DeadObject, xiiDynamicArrayBase< xiiGALDevice::DeadObject > >", "da/d4c/classxii_array_base.htm", [
+      [ "xiiDynamicArrayBase< xiiGALDevice::DeadObject >", "d2/dea/classxii_dynamic_array_base.htm", [
+        [ "xiiDynamicArray< xiiGALDevice::DeadObject, xiiLocalAllocatorWrapper >", "dc/da4/classxii_dynamic_array.htm", null ]
+      ] ]
     ] ],
     [ "xiiArrayBase< xiiGALLayoutElement, xiiStaticArray< xiiGALLayoutElement, Capacity > >", "da/d4c/classxii_array_base.htm", [
       [ "xiiStaticArray< xiiGALLayoutElement, XII_GAL_MAX_LAYOUT_ELEMENTS >", "d9/d25/classxii_static_array.htm", null ]
@@ -2893,6 +2899,9 @@ var hierarchy =
     [ "xiiHashableStruct< xiiGALDepthStencilStateCreationDescription >", "d7/d9f/classxii_hashable_struct.htm", [
       [ "xiiGALDepthStencilStateCreationDescription", "d8/d3c/structxii_g_a_l_depth_stencil_state_creation_description.htm", null ]
     ] ],
+    [ "xiiHashableStruct< xiiGALDeviceCreationDescription >", "d7/d9f/classxii_hashable_struct.htm", [
+      [ "xiiGALDeviceCreationDescription", "d6/dd5/structxii_g_a_l_device_creation_description.htm", null ]
+    ] ],
     [ "xiiHashableStruct< xiiGALDeviceEvent >", "d7/d9f/classxii_hashable_struct.htm", [
       [ "xiiGALDeviceEvent", "df/d20/structxii_g_a_l_device_event.htm", null ]
     ] ],
@@ -2916,9 +2925,6 @@ var hierarchy =
     ] ],
     [ "xiiHashableStruct< xiiGALFullScreenModeDescription >", "d7/d9f/classxii_hashable_struct.htm", [
       [ "xiiGALFullScreenModeDescription", "d0/db4/structxii_g_a_l_full_screen_mode_description.htm", null ]
-    ] ],
-    [ "xiiHashableStruct< xiiGALGraphicsDeviceCreationDescription >", "d7/d9f/classxii_hashable_struct.htm", [
-      [ "xiiGALGraphicsDeviceCreationDescription", "d9/d52/structxii_g_a_l_graphics_device_creation_description.htm", null ]
     ] ],
     [ "xiiHashableStruct< xiiGALImmediateContextCreationDescription >", "d7/d9f/classxii_hashable_struct.htm", [
       [ "xiiGALImmediateContextCreationDescription", "d8/d99/structxii_g_a_l_immediate_context_creation_description.htm", null ]
@@ -3256,6 +3262,27 @@ var hierarchy =
     [ "xiiHashTableBase< xiiUInt32, float, xiiHashHelper< xiiUInt32 > >", "d0/da6/classxii_hash_table_base.htm", [
       [ "xiiHashTable< xiiUInt32, float >", "d8/dc2/classxii_hash_table.htm", null ]
     ] ],
+    [ "xiiHashTableBase< xiiUInt32, xiiGALBlendStateHandle, xiiHashHelper< xiiUInt32 > >", "d0/da6/classxii_hash_table_base.htm", [
+      [ "xiiHashTable< xiiUInt32, xiiGALBlendStateHandle, xiiHashHelper< xiiUInt32 >, xiiLocalAllocatorWrapper >", "d8/dc2/classxii_hash_table.htm", null ]
+    ] ],
+    [ "xiiHashTableBase< xiiUInt32, xiiGALBufferViewHandle, xiiHashHelper< xiiUInt32 > >", "d0/da6/classxii_hash_table_base.htm", [
+      [ "xiiHashTable< xiiUInt32, xiiGALBufferViewHandle >", "d8/dc2/classxii_hash_table.htm", null ]
+    ] ],
+    [ "xiiHashTableBase< xiiUInt32, xiiGALDepthStencilStateHandle, xiiHashHelper< xiiUInt32 > >", "d0/da6/classxii_hash_table_base.htm", [
+      [ "xiiHashTable< xiiUInt32, xiiGALDepthStencilStateHandle, xiiHashHelper< xiiUInt32 >, xiiLocalAllocatorWrapper >", "d8/dc2/classxii_hash_table.htm", null ]
+    ] ],
+    [ "xiiHashTableBase< xiiUInt32, xiiGALInputLayoutHandle, xiiHashHelper< xiiUInt32 > >", "d0/da6/classxii_hash_table_base.htm", [
+      [ "xiiHashTable< xiiUInt32, xiiGALInputLayoutHandle, xiiHashHelper< xiiUInt32 >, xiiLocalAllocatorWrapper >", "d8/dc2/classxii_hash_table.htm", null ]
+    ] ],
+    [ "xiiHashTableBase< xiiUInt32, xiiGALRasterizerStateHandle, xiiHashHelper< xiiUInt32 > >", "d0/da6/classxii_hash_table_base.htm", [
+      [ "xiiHashTable< xiiUInt32, xiiGALRasterizerStateHandle, xiiHashHelper< xiiUInt32 >, xiiLocalAllocatorWrapper >", "d8/dc2/classxii_hash_table.htm", null ]
+    ] ],
+    [ "xiiHashTableBase< xiiUInt32, xiiGALSamplerHandle, xiiHashHelper< xiiUInt32 > >", "d0/da6/classxii_hash_table_base.htm", [
+      [ "xiiHashTable< xiiUInt32, xiiGALSamplerHandle, xiiHashHelper< xiiUInt32 >, xiiLocalAllocatorWrapper >", "d8/dc2/classxii_hash_table.htm", null ]
+    ] ],
+    [ "xiiHashTableBase< xiiUInt32, xiiGALTextureViewHandle, xiiHashHelper< xiiUInt32 > >", "d0/da6/classxii_hash_table_base.htm", [
+      [ "xiiHashTable< xiiUInt32, xiiGALTextureViewHandle >", "d8/dc2/classxii_hash_table.htm", null ]
+    ] ],
     [ "xiiHashTableBase< xiiUInt32, xiiRemoteMessageQueue, xiiHashHelper< xiiUInt32 > >", "d0/da6/classxii_hash_table_base.htm", [
       [ "xiiHashTable< xiiUInt32, xiiRemoteMessageQueue >", "d8/dc2/classxii_hash_table.htm", null ]
     ] ],
@@ -3310,6 +3337,57 @@ var hierarchy =
     ] ],
     [ "xiiIdTableBase< xiiComponentId, xiiComponent * >", "d3/df7/classxii_id_table_base.htm", [
       [ "xiiIdTable< xiiComponentId, xiiComponent * >", "d1/d8e/classxii_id_table.htm", null ]
+    ] ],
+    [ "xiiIdTableBase< xiiGALBlendStateHandle::IdType, xiiGALBlendState * >", "d3/df7/classxii_id_table_base.htm", [
+      [ "xiiIdTable< xiiGALBlendStateHandle::IdType, xiiGALBlendState *, xiiLocalAllocatorWrapper >", "d1/d8e/classxii_id_table.htm", null ]
+    ] ],
+    [ "xiiIdTableBase< xiiGALBottomLevelASHandle::IdType, xiiGALBottomLevelAS * >", "d3/df7/classxii_id_table_base.htm", [
+      [ "xiiIdTable< xiiGALBottomLevelASHandle::IdType, xiiGALBottomLevelAS *, xiiLocalAllocatorWrapper >", "d1/d8e/classxii_id_table.htm", null ]
+    ] ],
+    [ "xiiIdTableBase< xiiGALBufferHandle::IdType, xiiGALBuffer * >", "d3/df7/classxii_id_table_base.htm", [
+      [ "xiiIdTable< xiiGALBufferHandle::IdType, xiiGALBuffer *, xiiLocalAllocatorWrapper >", "d1/d8e/classxii_id_table.htm", null ]
+    ] ],
+    [ "xiiIdTableBase< xiiGALBufferViewHandle::IdType, xiiGALBufferView * >", "d3/df7/classxii_id_table_base.htm", [
+      [ "xiiIdTable< xiiGALBufferViewHandle::IdType, xiiGALBufferView *, xiiLocalAllocatorWrapper >", "d1/d8e/classxii_id_table.htm", null ]
+    ] ],
+    [ "xiiIdTableBase< xiiGALDepthStencilStateHandle::IdType, xiiGALDepthStencilState * >", "d3/df7/classxii_id_table_base.htm", [
+      [ "xiiIdTable< xiiGALDepthStencilStateHandle::IdType, xiiGALDepthStencilState *, xiiLocalAllocatorWrapper >", "d1/d8e/classxii_id_table.htm", null ]
+    ] ],
+    [ "xiiIdTableBase< xiiGALFenceHandle::IdType, xiiGALFence * >", "d3/df7/classxii_id_table_base.htm", [
+      [ "xiiIdTable< xiiGALFenceHandle::IdType, xiiGALFence *, xiiLocalAllocatorWrapper >", "d1/d8e/classxii_id_table.htm", null ]
+    ] ],
+    [ "xiiIdTableBase< xiiGALFramebufferHandle::IdType, xiiGALFramebuffer * >", "d3/df7/classxii_id_table_base.htm", [
+      [ "xiiIdTable< xiiGALFramebufferHandle::IdType, xiiGALFramebuffer *, xiiLocalAllocatorWrapper >", "d1/d8e/classxii_id_table.htm", null ]
+    ] ],
+    [ "xiiIdTableBase< xiiGALInputLayoutHandle::IdType, xiiGALInputLayout * >", "d3/df7/classxii_id_table_base.htm", [
+      [ "xiiIdTable< xiiGALInputLayoutHandle::IdType, xiiGALInputLayout *, xiiLocalAllocatorWrapper >", "d1/d8e/classxii_id_table.htm", null ]
+    ] ],
+    [ "xiiIdTableBase< xiiGALQueryHandle::IdType, xiiGALQuery * >", "d3/df7/classxii_id_table_base.htm", [
+      [ "xiiIdTable< xiiGALQueryHandle::IdType, xiiGALQuery *, xiiLocalAllocatorWrapper >", "d1/d8e/classxii_id_table.htm", null ]
+    ] ],
+    [ "xiiIdTableBase< xiiGALRasterizerStateHandle::IdType, xiiGALRasterizerState * >", "d3/df7/classxii_id_table_base.htm", [
+      [ "xiiIdTable< xiiGALRasterizerStateHandle::IdType, xiiGALRasterizerState *, xiiLocalAllocatorWrapper >", "d1/d8e/classxii_id_table.htm", null ]
+    ] ],
+    [ "xiiIdTableBase< xiiGALRenderPassHandle::IdType, xiiGALRenderPass * >", "d3/df7/classxii_id_table_base.htm", [
+      [ "xiiIdTable< xiiGALRenderPassHandle::IdType, xiiGALRenderPass *, xiiLocalAllocatorWrapper >", "d1/d8e/classxii_id_table.htm", null ]
+    ] ],
+    [ "xiiIdTableBase< xiiGALSamplerHandle::IdType, xiiGALSampler * >", "d3/df7/classxii_id_table_base.htm", [
+      [ "xiiIdTable< xiiGALSamplerHandle::IdType, xiiGALSampler *, xiiLocalAllocatorWrapper >", "d1/d8e/classxii_id_table.htm", null ]
+    ] ],
+    [ "xiiIdTableBase< xiiGALShaderHandle::IdType, xiiGALShader * >", "d3/df7/classxii_id_table_base.htm", [
+      [ "xiiIdTable< xiiGALShaderHandle::IdType, xiiGALShader *, xiiLocalAllocatorWrapper >", "d1/d8e/classxii_id_table.htm", null ]
+    ] ],
+    [ "xiiIdTableBase< xiiGALSwapChainHandle::IdType, xiiGALSwapChain * >", "d3/df7/classxii_id_table_base.htm", [
+      [ "xiiIdTable< xiiGALSwapChainHandle::IdType, xiiGALSwapChain *, xiiLocalAllocatorWrapper >", "d1/d8e/classxii_id_table.htm", null ]
+    ] ],
+    [ "xiiIdTableBase< xiiGALTextureHandle::IdType, xiiGALTexture * >", "d3/df7/classxii_id_table_base.htm", [
+      [ "xiiIdTable< xiiGALTextureHandle::IdType, xiiGALTexture *, xiiLocalAllocatorWrapper >", "d1/d8e/classxii_id_table.htm", null ]
+    ] ],
+    [ "xiiIdTableBase< xiiGALTextureViewHandle::IdType, xiiGALTextureView * >", "d3/df7/classxii_id_table_base.htm", [
+      [ "xiiIdTable< xiiGALTextureViewHandle::IdType, xiiGALTextureView *, xiiLocalAllocatorWrapper >", "d1/d8e/classxii_id_table.htm", null ]
+    ] ],
+    [ "xiiIdTableBase< xiiGALTopLevelASHandle::IdType, xiiGALTopLevelAS * >", "d3/df7/classxii_id_table_base.htm", [
+      [ "xiiIdTable< xiiGALTopLevelASHandle::IdType, xiiGALTopLevelAS *, xiiLocalAllocatorWrapper >", "d1/d8e/classxii_id_table.htm", null ]
     ] ],
     [ "xiiIdTableBase< xiiGameObjectId, xiiGameObject * >", "d3/df7/classxii_id_table_base.htm", [
       [ "xiiIdTable< xiiGameObjectId, xiiGameObject *, xiiLocalAllocatorWrapper >", "d1/d8e/classxii_id_table.htm", null ]
@@ -4108,7 +4186,7 @@ var hierarchy =
             [ "xiiGALDepthStencilStateVulkan", "d2/dbf/classxii_g_a_l_depth_stencil_state_vulkan.htm", null ]
           ] ]
         ] ],
-        [ "xiiGALObject< xiiGALGraphicsDeviceCreationDescription >", "d3/dda/classxii_g_a_l_object.htm", [
+        [ "xiiGALObject< xiiGALDeviceCreationDescription >", "d3/dda/classxii_g_a_l_object.htm", [
           [ "xiiGALDevice", "d5/d19/classxii_g_a_l_device.htm", null ]
         ] ],
         [ "xiiGALObject< xiiGALInputLayoutCreationDescription >", "d3/dda/classxii_g_a_l_object.htm", [

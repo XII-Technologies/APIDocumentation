@@ -1,5 +1,8 @@
 var NAVTREEINDEX9 =
 {
+"d2/d1d/classxii_rect_template.htm#a14758493da363cf83310f31b1c08aaca":[4,0,1043,15],
+"d2/d1d/classxii_rect_template.htm#a155a95280c63d917b740f9739d65e774":[4,0,1043,19],
+"d2/d1d/classxii_rect_template.htm#a1920bbf409e461eb00fb58e0aed0fd3e":[4,0,1043,4],
 "d2/d1d/classxii_rect_template.htm#a1d21a40703e16a8a078831a0ac0d29a0":[4,0,1043,6],
 "d2/d1d/classxii_rect_template.htm#a34ed761eda61993f1a0a8963e0e4bde0":[4,0,1043,0],
 "d2/d1d/classxii_rect_template.htm#a39527adf3158c823eb9ac484ae107449":[4,0,1043,11],
@@ -203,6 +206,7 @@ var NAVTREEINDEX9 =
 "d2/d4f/structxii_variant_adapter_3_01_t_00_01xii_variant_array_00_010_00_011_01_4.htm#a8c97d72f3cb9ae54c0ff1d53fe550055":[4,0,1330,0],
 "d2/d4f/structxii_variant_adapter_3_01_t_00_01xii_variant_array_00_010_00_011_01_4.htm#ae769539c157004940d65820a459d148c":[4,0,1330,3],
 "d2/d51/classxii_g_a_l_blend_state_handle.htm":[4,0,401],
+"d2/d51/classxii_g_a_l_blend_state_handle.htm#a8a9dd0ea17d38c3d68c9db0002e5dab0":[4,0,401,0],
 "d2/d58/structxii_g_a_l_rasterizer_state_creation_description.htm":[4,0,502],
 "d2/d58/structxii_g_a_l_rasterizer_state_creation_description.htm#a110e4d6cf1ebae65354139087371d1b9":[4,0,502,8],
 "d2/d58/structxii_g_a_l_rasterizer_state_creation_description.htm#a2137411c80424f1209f0d3f17c21361d":[4,0,502,6],
@@ -245,9 +249,5 @@ var NAVTREEINDEX9 =
 "d2/d63/classxii_cone_angle_manipulator_attribute.htm#a5e3e814b1d624bb8293f8a50498bcfa5":[4,0,191,2],
 "d2/d63/classxii_cone_angle_manipulator_attribute.htm#aeb35795d59e03febf15a19c901deea1c":[4,0,191,4],
 "d2/d63/structxii_memory_policies_1_1_alloction_meta_data.htm":[4,0,6,0],
-"d2/d63/structxii_memory_policies_1_1_alloction_meta_data.htm#a24bbd6d1cc6d36d01cae7b99bea92534":[4,0,6,0,2],
-"d2/d63/structxii_memory_policies_1_1_alloction_meta_data.htm#a4242bad3b465c86b17b80194c177f0d3":[4,0,6,0,0],
-"d2/d63/structxii_memory_policies_1_1_alloction_meta_data.htm#abc908d68b8339194aa18ff8f0850f3ac":[4,0,6,0,1],
-"d2/d63/structxii_memory_policies_1_1_alloction_meta_data.htm#ae054fb59b22ffeadeffb968ab367f945":[4,0,6,0,3],
-"d2/d66/classxii_qt_curve_edit_widget.htm":[4,0,943]
+"d2/d63/structxii_memory_policies_1_1_alloction_meta_data.htm#a24bbd6d1cc6d36d01cae7b99bea92534":[4,0,6,0,2]
 };

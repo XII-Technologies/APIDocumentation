@@ -3,7 +3,7 @@ var structxii_g_a_l_device_event_type =
     [ "StorageType", "df/d86/structxii_g_a_l_device_event_type.htm#a2b95398db8152137e85bd5178336a78d", null ],
     [ "Enum", "df/d86/structxii_g_a_l_device_event_type.htm#aa09a6b636733448016160754f3eee4a3", [
       [ "Unknown", "df/d86/structxii_g_a_l_device_event_type.htm#aa09a6b636733448016160754f3eee4a3aafbb3ffc947954ac0e3a0f8ff2f41150", null ],
-      [ "AfterInit", "df/d86/structxii_g_a_l_device_event_type.htm#aa09a6b636733448016160754f3eee4a3a2ec337b0a4a8a3d0e85f7fe3234b0d89", null ],
+      [ "AfterInitialization", "df/d86/structxii_g_a_l_device_event_type.htm#aa09a6b636733448016160754f3eee4a3a910617a216d0f60480b53c62f3b203f5", null ],
       [ "BeforeShutdown", "df/d86/structxii_g_a_l_device_event_type.htm#aa09a6b636733448016160754f3eee4a3adeb1b3144a43c1812b747dc50a5e7a3d", null ],
       [ "BeforeBeginFrame", "df/d86/structxii_g_a_l_device_event_type.htm#aa09a6b636733448016160754f3eee4a3aeb0f5cd288447db9179b0571e7c62ac5", null ],
       [ "AfterBeginFrame", "df/d86/structxii_g_a_l_device_event_type.htm#aa09a6b636733448016160754f3eee4a3a258414c2b453415f21667d4239bb06b4", null ],

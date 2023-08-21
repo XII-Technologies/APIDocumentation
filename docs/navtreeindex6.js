@@ -3,6 +3,7 @@ var NAVTREEINDEX6 =
 "d1/d53/classxii_memory_policies_1_1xii_stack_allocation.htm#ac99d20d585a64b8f6f84d4838d369b96":[4,0,6,6,6],
 "d1/d53/classxii_memory_policies_1_1xii_stack_allocation.htm#ad97e2c7bdf563768291e9747bdce8780":[4,0,6,6,4],
 "d1/d58/classxii_g_a_l_command_list_handle.htm":[4,0,426],
+"d1/d58/classxii_g_a_l_command_list_handle.htm#a8a9dd0ea17d38c3d68c9db0002e5dab0":[4,0,426,0],
 "d1/d59/classxii_default_state.htm":[4,0,264],
 "d1/d59/classxii_default_state.htm#a3550fd51ecb2385d071c8e174a4ca7b7":[4,0,264,0],
 "d1/d59/classxii_default_state.htm#a9598a7b7fa1621d8dac1c02adb6c0e12":[4,0,264,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX6 =
 "d1/d88/classxii_script_world_module.htm#a3da4e1f6bf1795b81ae953b173dd0273":[4,0,1113,3],
 "d1/d88/classxii_script_world_module.htm#a40dcd15d0c6c93752df886616a1d0817":[4,0,1113,12],
 "d1/d88/classxii_script_world_module.htm#a62a228efcd94efd528b9f7beb5190933":[4,0,1113,11],
-"d1/d88/classxii_script_world_module.htm#a792be4e2585ea24df20e0c28dedbdc05":[4,0,1113,9],
-"d1/d88/classxii_script_world_module.htm#a7d1a2c80b3e08b465361ae8e41fd13da":[4,0,1113,1]
+"d1/d88/classxii_script_world_module.htm#a792be4e2585ea24df20e0c28dedbdc05":[4,0,1113,9]
 };

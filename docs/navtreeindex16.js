@@ -1,5 +1,10 @@
 var NAVTREEINDEX16 =
 {
+"d3/ddb/classxii_angle_template.htm#a0981cd78050c0ee3b82197d6572d56be":[4,0,65,1],
+"d3/ddb/classxii_angle_template.htm#a0fd708abe75351b4bb184fbfa0ff5ce8":[4,0,65,16],
+"d3/ddb/classxii_angle_template.htm#a2313b33bd14978a15f3d2740ff29b17d":[4,0,65,10],
+"d3/ddb/classxii_angle_template.htm#a24e2b35d6d02d7cd2a50a6af54fb456d":[4,0,65,12],
+"d3/ddb/classxii_angle_template.htm#a2b5342a182d1fdedc3db8a49cd4a2e21":[4,0,65,5],
 "d3/ddb/classxii_angle_template.htm#a2eb6a2f631f4836e7a378fb5d06882b3":[4,0,65,8],
 "d3/ddb/classxii_angle_template.htm#a426b85c6541fb19f7cacfa07296de059":[4,0,65,18],
 "d3/ddb/classxii_angle_template.htm#a61b9cffe96c9937c13122e97f23417f9":[4,0,65,2],
@@ -244,10 +249,5 @@ var NAVTREEINDEX16 =
 "d4/d17/structxii_g_a_l_attachment_store_operation.htm#a0975ace7286da660ed0f6e0baa6d5661a7eb9525903127d605df5004b5e07e0a8":[4,0,392,1,2],
 "d4/d17/structxii_g_a_l_attachment_store_operation.htm#a0975ace7286da660ed0f6e0baa6d5661acbe098b053b238e88b6e60527086e682":[4,0,392,1,0],
 "d4/d17/structxii_g_a_l_attachment_store_operation.htm#ae8cb44158e5d2800e9e9da189b918308":[4,0,392,0],
-"d4/d1c/classxii_reflection_serializer.htm":[4,0,1053],
-"d4/d1d/classxii_edit_actions.htm":[4,0,327],
-"d4/d1d/structxii_is_enum_3_01xii_enum_3_01_t_01_4_01_4.htm":[4,0,713],
-"d4/d1e/classxii_memory_stream_container_storage.htm":[4,0,774],
-"d4/d1e/classxii_memory_stream_container_storage.htm#a0e8083db6e400b394c0db13ae34edabd":[4,0,774,10],
-"d4/d1e/classxii_memory_stream_container_storage.htm#a3306c9d9a47ac12f3bde098ac05c5929":[4,0,774,4]
+"d4/d1c/classxii_reflection_serializer.htm":[4,0,1053]
 };

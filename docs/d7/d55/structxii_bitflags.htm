@@ -145,6 +145,9 @@ XII_ALWAYS_INLINE bool&#160;</td><td class="memItemRight" valign="bottom"><a cla
 XII_ALWAYS_INLINE bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d55/structxii_bitflags.htm#a3e39644d3e435cd46310aa638994fd60">IsAnySet</a> (const <a class="el" href="../../d7/d55/structxii_bitflags.htm">xiiBitflags</a>&lt; T &gt; &amp;rhs) const</td></tr>
 <tr class="memdesc:a3e39644d3e435cd46310aa638994fd60"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether any of the given flags is set. <br /></td></tr>
 <tr class="separator:a3e39644d3e435cd46310aa638994fd60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1fc07745b1877a7125a163ce1ff4e3c2"><td class="memItemLeft" align="right" valign="top">XII_ALWAYS_INLINE bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d55/structxii_bitflags.htm#a1fc07745b1877a7125a163ce1ff4e3c2">IsStrictlyAnySet</a> (const <a class="el" href="../../d7/d55/structxii_bitflags.htm">xiiBitflags</a>&lt; T &gt; &amp;rhs) const</td></tr>
+<tr class="memdesc:a1fc07745b1877a7125a163ce1ff4e3c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether there are strictly any of the given flags set.  <a href="../../d7/d55/structxii_bitflags.htm#a1fc07745b1877a7125a163ce1ff4e3c2">More...</a><br /></td></tr>
+<tr class="separator:a1fc07745b1877a7125a163ce1ff4e3c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a89cb715ce2414f2e16675f5d8503cb1c"><td class="memItemLeft" align="right" valign="top"><a id="a89cb715ce2414f2e16675f5d8503cb1c"></a>
 XII_ALWAYS_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d55/structxii_bitflags.htm#a89cb715ce2414f2e16675f5d8503cb1c">Add</a> (const <a class="el" href="../../d7/d55/structxii_bitflags.htm">xiiBitflags</a>&lt; T &gt; &amp;rhs)</td></tr>
 <tr class="memdesc:a89cb715ce2414f2e16675f5d8503cb1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the given flag. <br /></td></tr>
@@ -237,7 +240,39 @@ The 'Bits' struct enables debuggers to show exactly which flags are enabled (wit
 The alias 'StorageType' is also mandatory, such that <a class="el" href="../../d7/d55/structxii_bitflags.htm" title="The xiiBitflags class allows you to work with type-safe bitflags.">xiiBitflags</a> can access it.<br  />
 Finally the macro XII_DECLARE_FLAGS_OPERATORS will define the required operator to be able to combine bitflags of your type. I.e. it enables to write xiiBitflags&lt;SimpleRenderFlags&gt; f = EnableEffects | EnableLighting;<br  />
  For a real world usage example, see <a class="el" href="../../dc/db8/structxii_c_var_flags.htm" title="The flags that can be used on a xiiCVar.">xiiCVarFlags</a>. </p>
-</div><hr/>The documentation for this struct was generated from the following file:<ul>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a1fc07745b1877a7125a163ce1ff4e3c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1fc07745b1877a7125a163ce1ff4e3c2">&#9670;&nbsp;</a></span>IsStrictlyAnySet()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">XII_ALWAYS_INLINE bool <a class="el" href="../../d7/d55/structxii_bitflags.htm">xiiBitflags</a>&lt; T &gt;::IsStrictlyAnySet </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d7/d55/structxii_bitflags.htm">xiiBitflags</a>&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>rhs</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns whether there are strictly any of the given flags set. </p>
+<dl class="test"><dt><b><a class="el" href="../../d4/df6/test.htm#_test000034">Test:</a></b></dt><dd>Not yet tested. </dd></dl>
+
+</div>
+</div>
+<hr/>The documentation for this struct was generated from the following file:<ul>
 <li>/home/runner/work/XII/XII/Source/Engine/Foundation/Types/<a class="el" href="../../db/dec/_bitflags_8h_source.htm">Bitflags.h</a></li>
 </ul>
 </div><!-- contents -->
@@ -247,7 +282,7 @@ Finally the macro XII_DECLARE_FLAGS_OPERATORS will define the required operator 
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d7/d55/structxii_bitflags.htm">xiiBitflags</a></li>
-    <li class="footer">Generated on Sun Aug 20 2023 01:12:01 for XIIEngine by
+    <li class="footer">Generated on Mon Aug 21 2023 06:12:31 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>
