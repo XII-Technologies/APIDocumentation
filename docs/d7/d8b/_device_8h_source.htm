@@ -387,25 +387,21 @@ $(document).ready(function(){initNavTree('d7/d8b/_device_8h_source.htm','../../'
 <div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160; </div>
 <div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> FillCapabilitiesPlatform() = 0;</div>
 <div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160; </div>
-<div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;  <span class="keyword">virtual</span> <span class="keyword">const</span> <a class="code" href="../../d6/d3a/structxii_g_a_l_texture_format_description.htm">xiiGALTextureFormatDescription</a>&amp; GetTextureFormatPropertiesPlatform(<a class="code" href="../../de/dfd/structxii_enum.htm">xiiEnum&lt;xiiGALTextureFormat&gt;</a> format) <span class="keyword">const</span> = 0;</div>
 <div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160; </div>
-<div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;  <span class="keyword">virtual</span> <span class="keyword">const</span> <a class="code" href="../../d8/d52/structxii_g_a_l_sparse_texture_properties.htm">xiiGALSparseTextureProperties</a> GetSparseTexturePropertiesPlatform(<a class="code" href="../../de/dfd/structxii_enum.htm">xiiEnum&lt;xiiGALTextureFormat&gt;</a> format, <a class="code" href="../../de/dfd/structxii_enum.htm">xiiEnum&lt;xiiGALResourceDimension&gt;</a> dimension, xiiUInt32 uiSampleCount) <span class="keyword">const</span> = 0;</div>
-<div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160; </div>
+<div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;  <a class="code" href="../../df/de3/classxii_g_a_l_texture_handle.htm">xiiGALTextureHandle</a> FinalizeTextureInternal(<span class="keyword">const</span> <a class="code" href="../../de/dd4/structxii_g_a_l_texture_creation_description.htm">xiiGALTextureCreationDescription</a>&amp; description, <a class="code" href="../../d3/d9a/classxii_g_a_l_texture.htm">xiiGALTexture</a>* pTexture);</div>
+<div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160;  <a class="code" href="../../d1/dba/classxii_g_a_l_buffer_handle.htm">xiiGALBufferHandle</a>  FinalizeBufferInternal(<span class="keyword">const</span> <a class="code" href="../../d7/d69/structxii_g_a_l_buffer_creation_description.htm">xiiGALBufferCreationDescription</a>&amp; description, <a class="code" href="../../da/d03/classxii_g_a_l_buffer.htm">xiiGALBuffer</a>* pBuffer);</div>
 <div class="line"><a name="l00458"></a><span class="lineno">  458</span>&#160; </div>
-<div class="line"><a name="l00459"></a><span class="lineno">  459</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00460"></a><span class="lineno">  460</span>&#160;  <a class="code" href="../../df/de3/classxii_g_a_l_texture_handle.htm">xiiGALTextureHandle</a> FinalizeTextureInternal(<span class="keyword">const</span> <a class="code" href="../../de/dd4/structxii_g_a_l_texture_creation_description.htm">xiiGALTextureCreationDescription</a>&amp; description, <a class="code" href="../../d3/d9a/classxii_g_a_l_texture.htm">xiiGALTexture</a>* pTexture);</div>
-<div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160;  <a class="code" href="../../d1/dba/classxii_g_a_l_buffer_handle.htm">xiiGALBufferHandle</a>  FinalizeBufferInternal(<span class="keyword">const</span> <a class="code" href="../../d7/d69/structxii_g_a_l_buffer_creation_description.htm">xiiGALBufferCreationDescription</a>&amp; description, <a class="code" href="../../da/d03/classxii_g_a_l_buffer.htm">xiiGALBuffer</a>* pBuffer);</div>
-<div class="line"><a name="l00462"></a><span class="lineno">  462</span>&#160; </div>
-<div class="line"><a name="l00463"></a><span class="lineno">  463</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00464"></a><span class="lineno">  464</span>&#160;  <span class="keyword">static</span> <a class="code" href="../../d5/d19/classxii_g_a_l_device.htm">xiiGALDevice</a>* s_pDefaultDevice;</div>
-<div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160; </div>
-<div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00467"></a><span class="lineno">  467</span>&#160;  <span class="keywordtype">bool</span> m_bBeginFrameCalled    = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00468"></a><span class="lineno">  468</span>&#160;  <span class="keywordtype">bool</span> m_bBeginPipelineCalled = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00469"></a><span class="lineno">  469</span>&#160;  <span class="keywordtype">bool</span> m_bBeginPassCalled     = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00470"></a><span class="lineno">  470</span>&#160;};</div>
-<div class="line"><a name="l00471"></a><span class="lineno">  471</span>&#160; </div>
-<div class="line"><a name="l00472"></a><span class="lineno">  472</span>&#160;<span class="preprocessor">#include &lt;GraphicsFoundation/Device/Implementation/Device_inl.h&gt;</span></div>
+<div class="line"><a name="l00459"></a><span class="lineno">  459</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00460"></a><span class="lineno">  460</span>&#160;  <span class="keyword">static</span> <a class="code" href="../../d5/d19/classxii_g_a_l_device.htm">xiiGALDevice</a>* s_pDefaultDevice;</div>
+<div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160; </div>
+<div class="line"><a name="l00462"></a><span class="lineno">  462</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00463"></a><span class="lineno">  463</span>&#160;  <span class="keywordtype">bool</span> m_bBeginFrameCalled    = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00464"></a><span class="lineno">  464</span>&#160;  <span class="keywordtype">bool</span> m_bBeginPipelineCalled = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160;  <span class="keywordtype">bool</span> m_bBeginPassCalled     = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160;};</div>
+<div class="line"><a name="l00467"></a><span class="lineno">  467</span>&#160; </div>
+<div class="line"><a name="l00468"></a><span class="lineno">  468</span>&#160;<span class="preprocessor">#include &lt;GraphicsFoundation/Device/Implementation/Device_inl.h&gt;</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclassxii_id_table_htm"><div class="ttname"><a href="../../d1/d8e/classxii_id_table.htm">xiiIdTable&lt; xiiGALSwapChainHandle::IdType, xiiGALSwapChain *, xiiLocalAllocatorWrapper &gt;</a></div></div>
@@ -482,7 +478,7 @@ $(document).ready(function(){initNavTree('d7/d8b/_device_8h_source.htm','../../'
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.htm">home</a></li><li class="navelem"><a class="el" href="../../dir_1036706e55c22cab35bc1c58ee689f1d.htm">runner</a></li><li class="navelem"><a class="el" href="../../dir_629f8151d55d307162ff2d619fb1783d.htm">work</a></li><li class="navelem"><a class="el" href="../../dir_1ddc44fe1263a8c7935fa6130b7d9499.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_2c1b6808f12952f4c36e05ba7068379a.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_b5a1c4ecfca018ad24b729e213296d41.htm">Source</a></li><li class="navelem"><a class="el" href="../../dir_e321052006a51284e67389ab20037e7c.htm">Engine</a></li><li class="navelem"><a class="el" href="../../dir_60f548c54f5a79fe3a3b3b88ff8146f5.htm">GraphicsFoundation</a></li><li class="navelem"><a class="el" href="../../dir_194a9c51937431f3146781c0f1ef5938.htm">Device</a></li><li class="navelem"><b>Device.h</b></li>
-    <li class="footer">Generated on Wed Aug 23 2023 03:35:12 for XIIEngine by
+    <li class="footer">Generated on Fri Aug 25 2023 16:08:01 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>
