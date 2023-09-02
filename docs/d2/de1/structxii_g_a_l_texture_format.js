@@ -65,7 +65,7 @@ var structxii_g_a_l_texture_format =
       [ "R8Typeless", "d2/de1/structxii_g_a_l_texture_format.htm#a4ebed18ce152a1ef73a0afa6ae6e767ba86b3d18e52af933293b5f276a78a8d50", null ],
       [ "R8UNormalized", "d2/de1/structxii_g_a_l_texture_format.htm#a4ebed18ce152a1ef73a0afa6ae6e767ba467ef9dc3855b076a874f94730f56433", null ],
       [ "R8UInt", "d2/de1/structxii_g_a_l_texture_format.htm#a4ebed18ce152a1ef73a0afa6ae6e767ba7e8ad2816e272ddcf365131d94d5d418", null ],
-      [ "R8SNorm", "d2/de1/structxii_g_a_l_texture_format.htm#a4ebed18ce152a1ef73a0afa6ae6e767bad96d1ff5dce6af437a1d23103b2cf512", null ],
+      [ "R8SNormalized", "d2/de1/structxii_g_a_l_texture_format.htm#a4ebed18ce152a1ef73a0afa6ae6e767bac228056eaa0986b063a958eecfff790d", null ],
       [ "R8SInt", "d2/de1/structxii_g_a_l_texture_format.htm#a4ebed18ce152a1ef73a0afa6ae6e767ba722dfc990e1731c33ab157931b25fd47", null ],
       [ "A8UNormalized", "d2/de1/structxii_g_a_l_texture_format.htm#a4ebed18ce152a1ef73a0afa6ae6e767ba43de51629bb2b8c61fc49c7bf50d26ab", null ],
       [ "R1UNormalized", "d2/de1/structxii_g_a_l_texture_format.htm#a4ebed18ce152a1ef73a0afa6ae6e767ba0dc207e0882d5e77599c0057006a7539", null ],

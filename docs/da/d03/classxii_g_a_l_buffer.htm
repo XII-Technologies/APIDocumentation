@@ -109,9 +109,6 @@ Inheritance diagram for xiiGALBuffer:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:acb499e62a6e7825a9e6518190b9ae09d"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../df/ddf/classxii_g_a_l_buffer_view_handle.htm">xiiGALBufferViewHandle</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d03/classxii_g_a_l_buffer.htm#acb499e62a6e7825a9e6518190b9ae09d">CreateView</a> (const <a class="el" href="../../d3/d47/structxii_g_a_l_buffer_view_creation_description.htm">xiiGALBufferViewCreationDescription</a> &amp;viewDescription)=0</td></tr>
-<tr class="memdesc:acb499e62a6e7825a9e6518190b9ae09d"><td class="mdescLeft">&#160;</td><td class="mdescRight">This creates a new buffer view.  <a href="../../da/d03/classxii_g_a_l_buffer.htm#acb499e62a6e7825a9e6518190b9ae09d">More...</a><br /></td></tr>
-<tr class="separator:acb499e62a6e7825a9e6518190b9ae09d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a92bcb7894de5e64c3df81db39e6464e3"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../df/ddf/classxii_g_a_l_buffer_view_handle.htm">xiiGALBufferViewHandle</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d03/classxii_g_a_l_buffer.htm#a92bcb7894de5e64c3df81db39e6464e3">GetDefaultView</a> (<a class="el" href="../../de/dfd/structxii_enum.htm">xiiEnum</a>&lt; <a class="el" href="../../d1/d7d/structxii_g_a_l_buffer_view_type.htm">xiiGALBufferViewType</a> &gt; viewType)=0</td></tr>
 <tr class="memdesc:a92bcb7894de5e64c3df81db39e6464e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">This returns the handle of the default view.  <a href="../../da/d03/classxii_g_a_l_buffer.htm#a92bcb7894de5e64c3df81db39e6464e3">More...</a><br /></td></tr>
 <tr class="separator:a92bcb7894de5e64c3df81db39e6464e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -171,42 +168,6 @@ Additional Inherited Members</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Interface that defines methods to manipulate a buffer object. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="acb499e62a6e7825a9e6518190b9ae09d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acb499e62a6e7825a9e6518190b9ae09d">&#9670;&nbsp;</a></span>CreateView()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual <a class="el" href="../../df/ddf/classxii_g_a_l_buffer_view_handle.htm">xiiGALBufferViewHandle</a> xiiGALBuffer::CreateView </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="../../d3/d47/structxii_g_a_l_buffer_view_creation_description.htm">xiiGALBufferViewCreationDescription</a> &amp;&#160;</td>
-          <td class="paramname"><em>viewDescription</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>This creates a new buffer view. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">viewDescription</td><td>- The view description. see <a class="el" href="../../d3/d47/structxii_g_a_l_buffer_view_creation_description.htm" title="This describes the buffer view creation description.">xiiGALBufferViewCreationDescription</a> for details.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The handle to the buffer view</dd></dl>
-<dl class="section remark"><dt>Remarks</dt><dd>To create a view addressing the entire buffer, set only <a class="el" href="../../d3/d47/structxii_g_a_l_buffer_view_creation_description.htm#ad46715a1c06becd0f0f3b95eaa7abd3a" title="The view type. The default is Undefined.">xiiGALBufferViewCreationDescription::m_ViewType</a> member of the ViewDesc structure and leave all other members in their default values. The buffer view will contain strong reference to the buffer, so the buffer will not be destroyed until all views are released. The function calls AddRef() for the created interface, so it must be released by a call to ReleaseRef() when it is no longer needed. </dd></dl>
-
-</div>
-</div>
 <a id="a3f80adde59a6beb4ea0d26b914034d7e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3f80adde59a6beb4ea0d26b914034d7e">&#9670;&nbsp;</a></span>FlushMappedRange()</h2>
 
@@ -405,7 +366,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../da/d03/classxii_g_a_l_buffer.htm">xiiGALBuffer</a></li>
-    <li class="footer">Generated on Fri Aug 25 2023 16:08:03 for XIIEngine by
+    <li class="footer">Generated on Sat Sep 2 2023 17:37:21 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

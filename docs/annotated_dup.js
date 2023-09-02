@@ -537,6 +537,7 @@ var annotated_dup =
     [ "xiiGALGraphicsAdapterVendor", "d4/d31/structxii_g_a_l_graphics_adapter_vendor.htm", "d4/d31/structxii_g_a_l_graphics_adapter_vendor" ],
     [ "xiiGALGraphicsDeviceType", "d1/dde/structxii_g_a_l_graphics_device_type.htm", "d1/dde/structxii_g_a_l_graphics_device_type" ],
     [ "xiiGALGraphicsDeviceValidationLevel", "d8/dff/structxii_g_a_l_graphics_device_validation_level.htm", "d8/dff/structxii_g_a_l_graphics_device_validation_level" ],
+    [ "xiiGALGraphicsUtilities", "d4/d57/classxii_g_a_l_graphics_utilities.htm", null ],
     [ "xiiGALHitGroupBindingMode", "d6/dee/structxii_g_a_l_hit_group_binding_mode.htm", "d6/dee/structxii_g_a_l_hit_group_binding_mode" ],
     [ "xiiGALImmediateContextCreationDescription", "d8/d99/structxii_g_a_l_immediate_context_creation_description.htm", "d8/d99/structxii_g_a_l_immediate_context_creation_description" ],
     [ "xiiGALInputElementFrequency", "d4/d13/structxii_g_a_l_input_element_frequency.htm", "d4/d13/structxii_g_a_l_input_element_frequency" ],

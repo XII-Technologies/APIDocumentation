@@ -2681,6 +2681,7 @@ var hierarchy =
       [ "xiiEnum< xiiGALGraphicsDeviceType >", "de/dfd/structxii_enum.htm", null ]
     ] ],
     [ "xiiGALGraphicsDeviceValidationLevel", "d8/dff/structxii_g_a_l_graphics_device_validation_level.htm", null ],
+    [ "xiiGALGraphicsUtilities", "d4/d57/classxii_g_a_l_graphics_utilities.htm", null ],
     [ "xiiGALHitGroupBindingMode", "d6/dee/structxii_g_a_l_hit_group_binding_mode.htm", [
       [ "xiiEnum< xiiGALHitGroupBindingMode >", "de/dfd/structxii_enum.htm", null ]
     ] ],

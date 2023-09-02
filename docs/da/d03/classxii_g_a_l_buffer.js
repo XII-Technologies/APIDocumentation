@@ -2,7 +2,6 @@ var classxii_g_a_l_buffer =
 [
     [ "xiiGALBuffer", "da/d03/classxii_g_a_l_buffer.htm#a15695963f491da3f29986f2e8559c9ac", null ],
     [ "~xiiGALBuffer", "da/d03/classxii_g_a_l_buffer.htm#aeedb5c9abc3d7a8b5c5a8384a34c5040", null ],
-    [ "CreateView", "da/d03/classxii_g_a_l_buffer.htm#acb499e62a6e7825a9e6518190b9ae09d", null ],
     [ "DeInitPlatform", "da/d03/classxii_g_a_l_buffer.htm#a54c251d1402bb3505f9b391c77b4e2fd", null ],
     [ "FlushMappedRange", "da/d03/classxii_g_a_l_buffer.htm#a3f80adde59a6beb4ea0d26b914034d7e", null ],
     [ "GetDefaultView", "da/d03/classxii_g_a_l_buffer.htm#a92bcb7894de5e64c3df81db39e6464e3", null ],

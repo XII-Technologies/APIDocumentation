@@ -109,9 +109,6 @@ Inheritance diagram for xiiGALTexture:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:adc84ef167af1dea38bd2d20be1fa24d0"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../dd/d52/classxii_g_a_l_texture_view_handle.htm">xiiGALTextureViewHandle</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d9a/classxii_g_a_l_texture.htm#adc84ef167af1dea38bd2d20be1fa24d0">CreateView</a> (const <a class="el" href="../../d8/de2/structxii_g_a_l_texture_view_creation_description.htm">xiiGALTextureViewCreationDescription</a> &amp;viewDescription)=0</td></tr>
-<tr class="memdesc:adc84ef167af1dea38bd2d20be1fa24d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">This creates a new texture view.  <a href="../../d3/d9a/classxii_g_a_l_texture.htm#adc84ef167af1dea38bd2d20be1fa24d0">More...</a><br /></td></tr>
-<tr class="separator:adc84ef167af1dea38bd2d20be1fa24d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa206da3037bddc67018d658f52bbde82"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../dd/d52/classxii_g_a_l_texture_view_handle.htm">xiiGALTextureViewHandle</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d9a/classxii_g_a_l_texture.htm#aa206da3037bddc67018d658f52bbde82">GetDefaultView</a> (<a class="el" href="../../de/dfd/structxii_enum.htm">xiiEnum</a>&lt; <a class="el" href="../../db/d60/structxii_g_a_l_texture_view_type.htm">xiiGALTextureViewType</a> &gt; viewType)=0</td></tr>
 <tr class="memdesc:aa206da3037bddc67018d658f52bbde82"><td class="mdescLeft">&#160;</td><td class="mdescRight">This returns the handle of the default view.  <a href="../../d3/d9a/classxii_g_a_l_texture.htm#aa206da3037bddc67018d658f52bbde82">More...</a><br /></td></tr>
 <tr class="separator:aa206da3037bddc67018d658f52bbde82"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -162,48 +159,6 @@ Additional Inherited Members</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Interface that defines methods to manipulate a texture object. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="adc84ef167af1dea38bd2d20be1fa24d0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adc84ef167af1dea38bd2d20be1fa24d0">&#9670;&nbsp;</a></span>CreateView()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual <a class="el" href="../../dd/d52/classxii_g_a_l_texture_view_handle.htm">xiiGALTextureViewHandle</a> xiiGALTexture::CreateView </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="../../d8/de2/structxii_g_a_l_texture_view_creation_description.htm">xiiGALTextureViewCreationDescription</a> &amp;&#160;</td>
-          <td class="paramname"><em>viewDescription</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>This creates a new texture view. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">viewDescription</td><td>- The view description. see <a class="el" href="../../d8/de2/structxii_g_a_l_texture_view_creation_description.htm" title="This describes the texture view creation description.">xiiGALTextureViewCreationDescription</a> for details.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The handle to the texture view</dd></dl>
-<dl class="section remark"><dt>Remarks</dt><dd>To create a shader resource view addressing the entire texture, set only <a class="el" href="../../d8/de2/structxii_g_a_l_texture_view_creation_description.htm#adf4bcb76d4747c13e8c375daacc5303a" title="Describes the texture view type. The default is Undefined.">xiiGALTextureViewCreationDescription::m_ViewType</a> member of the viewDescription parameter to <a class="el" href="../../db/d60/structxii_g_a_l_texture_view_type.htm#ad4f8ca273dab45d482b39716b7c25272a930c07a32f6221f5b3853f8e8e4e4a2e" title="A texture view will define the shader resource view that will be used as the source for the shader re...">xiiGALTextureViewType::ShaderResource</a> and leave all other members in their default values. Using the same method, you can create render target or depth stencil view addressing the largest mip level.<br  />
- If texture view format is <a class="el" href="../../d2/de1/structxii_g_a_l_texture_format.htm#a4ebed18ce152a1ef73a0afa6ae6e767ba25b3432c621fc52e91badebf82ccabe5" title="Unknown format.">xiiGALTextureFormat::Unknown</a>, the view format will match the texture format.<br  />
- If texture view type is <a class="el" href="../../db/d60/structxii_g_a_l_texture_view_type.htm#ad4f8ca273dab45d482b39716b7c25272aecf9e0770bbee1976e9b2a71eb660c59" title="Undefined texture view type.">xiiGALTextureViewType::Undefined</a>, the type will match the texture type.<br  />
- If the number of mip levels is 0, and the view type is shader resource, the view will address all mip levels. For other view types it will address one mip level.<br  />
- If the number of slices is 0, all slices from m_uiFirstArraySlice or m_uiFirstDepthSlice will be referenced by the view. For non-array textures, the only allowed values for the number of slices are 0 and 1.<br  />
- Texture view will contain strong reference to the texture, so the texture will not be destroyed until all views are released.<br  />
- The function calls AddRef() for the created interface, so it must be released by a call to ReleaseRef() when it is no longer needed. </dd></dl>
-
-</div>
-</div>
 <a id="aa206da3037bddc67018d658f52bbde82"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa206da3037bddc67018d658f52bbde82">&#9670;&nbsp;</a></span>GetDefaultView()</h2>
 
@@ -280,7 +235,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d3/d9a/classxii_g_a_l_texture.htm">xiiGALTexture</a></li>
-    <li class="footer">Generated on Fri Aug 25 2023 16:08:04 for XIIEngine by
+    <li class="footer">Generated on Sat Sep 2 2023 17:37:21 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>
