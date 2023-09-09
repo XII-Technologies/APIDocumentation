@@ -1,5 +1,12 @@
 var NAVTREEINDEX38 =
 {
+"d8/dcb/classxii_variant_type_info.htm#a5ecd8d1d554e6d219b657b8feb9ad0bd":[4,0,1344,1],
+"d8/dcb/classxii_variant_type_info.htm#aa597486238f6b624038d934efe4f1bc8":[4,0,1344,0],
+"d8/dcb/classxii_variant_type_info.htm#ad3f44230e4ec507926bc0c5dd618e9f8":[4,0,1344,6],
+"d8/dcb/classxii_variant_type_info.htm#aecc02d05c7536621724cb55ce858e980":[4,0,1344,4],
+"d8/dcd/structxii_g_a_l_validation_flags.htm":[4,0,599],
+"d8/dcd/structxii_g_a_l_validation_flags.htm#a672265ebb6729d2435fe9cbde862f0d5":[4,0,599,2],
+"d8/dcd/structxii_g_a_l_validation_flags.htm#a672265ebb6729d2435fe9cbde862f0d5a6c086561a442c1c1ccad27b2b874ec9b":[4,0,599,2,3],
 "d8/dcd/structxii_g_a_l_validation_flags.htm#a672265ebb6729d2435fe9cbde862f0d5a8d4dcd75d3e65a09af2bb485bf1aa3f3":[4,0,599,2,1],
 "d8/dcd/structxii_g_a_l_validation_flags.htm#a672265ebb6729d2435fe9cbde862f0d5aa0672d86dab2670ea9b4e2e1181f7c73":[4,0,599,2,0],
 "d8/dcd/structxii_g_a_l_validation_flags.htm#a672265ebb6729d2435fe9cbde862f0d5ac4f77ad50aea52d383356271f82c3ac4":[4,0,599,2,2],
@@ -242,12 +249,5 @@ var NAVTREEINDEX38 =
 "d9/d1b/classxii_quat_template.htm#a8d26c87261cce8521c28c4b3a1b12f99":[4,0,1034,4],
 "d9/d1b/classxii_quat_template.htm#a9eedbd0664e93fed324f940d37cc6791":[4,0,1034,21],
 "d9/d1b/classxii_quat_template.htm#a9f374db5aad9f6b3cd0cdb252228d1f6":[4,0,1034,1],
-"d9/d1b/classxii_quat_template.htm#aa6d32f6602a305f9bb2b80d578db647f":[4,0,1034,5],
-"d9/d1b/classxii_quat_template.htm#aab1ecbbf3bfc5f7d00b32df1ce89e342":[4,0,1034,12],
-"d9/d1b/classxii_quat_template.htm#aaef4b95931d63340b6bb3bb22734f734":[4,0,1034,17],
-"d9/d1b/classxii_quat_template.htm#aca6ff595f2b25d5950fbfe256dc56af9":[4,0,1034,22],
-"d9/d1b/classxii_quat_template.htm#acac88d8e4caf8ddb378b3c8afcc1efce":[4,0,1034,10],
-"d9/d1b/classxii_quat_template.htm#ae4acab9c811fa6a9f02c2312599526fc":[4,0,1034,6],
-"d9/d1b/classxii_quat_template.htm#ae88f50c75d2e37f3b4f4d2b735d20915":[4,0,1034,20],
-"d9/d1b/classxii_quat_template.htm#ae8d1ef81f529aa01674735ee3095d2a0":[4,0,1034,11]
+"d9/d1b/classxii_quat_template.htm#aa6d32f6602a305f9bb2b80d578db647f":[4,0,1034,5]
 };

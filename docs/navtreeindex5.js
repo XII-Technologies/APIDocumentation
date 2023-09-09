@@ -128,8 +128,9 @@ var NAVTREEINDEX5 =
 "d1/d27/classxii_bitflags_member_property.htm#ad4c1d4afe00ce1178c5523782ec9efe9":[4,0,107,5],
 "d1/d29/structxii_document_event.htm":[4,0,288],
 "d1/d29/structxii_document_event.htm#a309f5a3d04fd703a5fe8770adaf0ea9a":[4,0,288,0],
-"d1/d29/structxii_document_event.htm#a309f5a3d04fd703a5fe8770adaf0ea9aa197dd6cd20b7b764a1360f417a1d50ca":[4,0,288,0,4],
+"d1/d29/structxii_document_event.htm#a309f5a3d04fd703a5fe8770adaf0ea9aa197dd6cd20b7b764a1360f417a1d50ca":[4,0,288,0,5],
 "d1/d29/structxii_document_event.htm#a309f5a3d04fd703a5fe8770adaf0ea9aa47ec5fd00436263c0d6b91bf575ea690":[4,0,288,0,2],
+"d1/d29/structxii_document_event.htm#a309f5a3d04fd703a5fe8770adaf0ea9aa713c609ee96d49a43a8369b572eb8103":[4,0,288,0,4],
 "d1/d29/structxii_document_event.htm#a309f5a3d04fd703a5fe8770adaf0ea9aa8fdf05634f83ebe95a6fd7ccbf2e98ca":[4,0,288,0,3],
 "d1/d29/structxii_document_event.htm#a309f5a3d04fd703a5fe8770adaf0ea9aa900c96962320c4a7c7f80b0021f7d43e":[4,0,288,0,0],
 "d1/d29/structxii_document_event.htm#a309f5a3d04fd703a5fe8770adaf0ea9aaeac2c9c1c45b2a13bf4fbdf9f7f717e4":[4,0,288,0,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX5 =
 "d1/d53/classxii_memory_policies_1_1xii_stack_allocation.htm#a2974cc3008b57013227a05d0abde509b":[4,0,6,6,7],
 "d1/d53/classxii_memory_policies_1_1xii_stack_allocation.htm#a4c1b94166a0fdd4c83f485f8d473822e":[4,0,6,6,2],
 "d1/d53/classxii_memory_policies_1_1xii_stack_allocation.htm#a6222106e1c161b1e403eb521a159d0e6ac222350a2c98ce2b01385b33c015f712":[4,0,6,6,0],
-"d1/d53/classxii_memory_policies_1_1xii_stack_allocation.htm#a8f0d308ad0d9e18a76782facef194933":[4,0,6,6,5],
-"d1/d53/classxii_memory_policies_1_1xii_stack_allocation.htm#ab965c89ecf64a3404151212b6b520e07":[4,0,6,6,3]
+"d1/d53/classxii_memory_policies_1_1xii_stack_allocation.htm#a8f0d308ad0d9e18a76782facef194933":[4,0,6,6,5]
 };

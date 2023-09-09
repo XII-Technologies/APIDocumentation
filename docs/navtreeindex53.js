@@ -1,5 +1,12 @@
 var NAVTREEINDEX53 =
 {
+"dc/d5c/structxii_g_a_l_shading_rate_capability_flags.htm#ae18051ba3e2592a63b1df04552e3f560a3e2a593c622675defc1560baa39eead9":[4,0,556,2,8],
+"dc/d5c/structxii_g_a_l_shading_rate_capability_flags.htm#ae18051ba3e2592a63b1df04552e3f560a54efab59a2b602c109c6670c5d468b88":[4,0,556,2,11],
+"dc/d5c/structxii_g_a_l_shading_rate_capability_flags.htm#ae18051ba3e2592a63b1df04552e3f560a832848640c753837f162f1657e4c8452":[4,0,556,2,2],
+"dc/d5c/structxii_g_a_l_shading_rate_capability_flags.htm#ae18051ba3e2592a63b1df04552e3f560a90db1a8cfd065f352e3d0ae3d8d2c939":[4,0,556,2,13],
+"dc/d5c/structxii_g_a_l_shading_rate_capability_flags.htm#ae18051ba3e2592a63b1df04552e3f560a949723e773d8f7da8a247f4991686c80":[4,0,556,2,1],
+"dc/d5c/structxii_g_a_l_shading_rate_capability_flags.htm#ae18051ba3e2592a63b1df04552e3f560aa243fd868222bfc6b684b787401ecd66":[4,0,556,2,15],
+"dc/d5c/structxii_g_a_l_shading_rate_capability_flags.htm#ae18051ba3e2592a63b1df04552e3f560aafeab8337981d7714bf8b3d47a052dd3":[4,0,556,2,9],
 "dc/d5c/structxii_g_a_l_shading_rate_capability_flags.htm#ae18051ba3e2592a63b1df04552e3f560ab14cf458366dd1287fa12ea4131a583e":[4,0,556,2,0],
 "dc/d5c/structxii_g_a_l_shading_rate_capability_flags.htm#ae18051ba3e2592a63b1df04552e3f560ac4b7e5709b3bfe21725e7864b633ae1a":[4,0,556,2,14],
 "dc/d5c/structxii_g_a_l_shading_rate_capability_flags.htm#ae18051ba3e2592a63b1df04552e3f560ac608a070c2297d8318ee5c4cd3b7f5f2":[4,0,556,2,5],
@@ -242,12 +249,5 @@ var NAVTREEINDEX53 =
 "dc/d8d/structxii_set_color_mode.htm#adb9b5b2f4a32898138bfb2a024854507":[4,0,1123,0],
 "dc/d96/structxii_function_type.htm":[4,0,389],
 "dc/d96/structxii_function_type.htm#aa098d81290ffacb6669fbb8cde2450ec":[4,0,389,0],
-"dc/d96/structxii_function_type.htm#aa1f281549634c67b2db3e16e4a220520":[4,0,389,1],
-"dc/d96/structxii_function_type.htm#aa1f281549634c67b2db3e16e4a220520a40d66527b2a1736eaaac0e1233b23afc":[4,0,389,1,3],
-"dc/d96/structxii_function_type.htm#aa1f281549634c67b2db3e16e4a220520a928de39758e8778c7234499476a0c497":[4,0,389,1,2],
-"dc/d96/structxii_function_type.htm#aa1f281549634c67b2db3e16e4a220520ac150232610215ceafcb9740638a8ce14":[4,0,389,1,1],
-"dc/d96/structxii_function_type.htm#aa1f281549634c67b2db3e16e4a220520ae85639ec5b786cb040da3e982b7ea2b3":[4,0,389,1,0],
-"dc/d97/structxii_g_a_l_map_flags_1_1_bits.htm":[4,0,480,0],
-"dc/d97/structxii_g_a_l_map_flags_1_1_bits.htm#a26abe787bfa1f38f8e52b6cf90e09c21":[4,0,480,0,2],
-"dc/d97/structxii_g_a_l_map_flags_1_1_bits.htm#a65913a80f383430c3e70ccf112d2967b":[4,0,480,0,0]
+"dc/d96/structxii_function_type.htm#aa1f281549634c67b2db3e16e4a220520":[4,0,389,1]
 };

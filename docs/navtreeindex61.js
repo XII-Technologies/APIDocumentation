@@ -1,5 +1,12 @@
 var NAVTREEINDEX61 =
 {
+"de/d49/structxii_object_flags_1_1_bits.htm#a962d3e7f8db4e3bb27608a44212216ec":[4,0,837,0,5],
+"de/d49/structxii_object_flags_1_1_bits.htm#a9c2641b85a2d628e0819e18cfad680ef":[4,0,837,0,22],
+"de/d49/structxii_object_flags_1_1_bits.htm#a9e74ab610cb396600d4257c3999d092b":[4,0,837,0,14],
+"de/d49/structxii_object_flags_1_1_bits.htm#aba6c36845cac2606ec6070054eeb6fda":[4,0,837,0,18],
+"de/d49/structxii_object_flags_1_1_bits.htm#abc1ec1476da451f659ce5c4201c40ac2":[4,0,837,0,6],
+"de/d49/structxii_object_flags_1_1_bits.htm#acf173563eaa20b2045907d8321473f41":[4,0,837,0,2],
+"de/d49/structxii_object_flags_1_1_bits.htm#ad3e1aea77be1100a950d9f36ceb4944f":[4,0,837,0,21],
 "de/d49/structxii_object_flags_1_1_bits.htm#ae39dc9ce4516c12db739dc48f43421af":[4,0,837,0,3],
 "de/d49/structxii_object_flags_1_1_bits.htm#aea9c9009dcf0b969393cc52d07cda3e4":[4,0,837,0,17],
 "de/d4a/classxii_command_line_option_path.htm":[4,0,169],
@@ -242,12 +249,5 @@ var NAVTREEINDEX61 =
 "de/d86/classxii_g_a_l_rasterizer_state_handle.htm#a8a9dd0ea17d38c3d68c9db0002e5dab0":[4,0,505,0],
 "de/d86/classxii_insert_object_property_command.htm":[4,0,699],
 "de/d86/classxii_insert_object_property_command.htm#a224fbd2f26dd346faf5f4b8008024a8a":[4,0,699,1],
-"de/d86/classxii_insert_object_property_command.htm#a64cf1ad6ccb5528ebfc1b7aa3a2b1aea":[4,0,699,4],
-"de/d86/classxii_insert_object_property_command.htm#ab1ae223039b33366cce80011ef712364":[4,0,699,5],
-"de/d86/classxii_insert_object_property_command.htm#ad081ea5ca9ca6aa331650211de506871":[4,0,699,3],
-"de/d86/classxii_insert_object_property_command.htm#ae77d2c3d829fc241ac09efddac07f665":[4,0,699,6],
-"de/d86/classxii_insert_object_property_command.htm#af4d08f56aaa387a848364944c6f45986":[4,0,699,7],
-"de/d86/classxii_insert_object_property_command.htm#af5ca38b75ed5bc6050d610a43ce76838":[4,0,699,2],
-"de/d86/classxii_insert_object_property_command.htm#afbbac7d8592756ffd68eb56b00e194ab":[4,0,699,0],
-"de/d87/structxii_g_a_l_wave_feature.htm":[4,0,601]
+"de/d86/classxii_insert_object_property_command.htm#a64cf1ad6ccb5528ebfc1b7aa3a2b1aea":[4,0,699,4]
 };

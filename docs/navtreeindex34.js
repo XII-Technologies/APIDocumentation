@@ -1,5 +1,11 @@
 var NAVTREEINDEX34 =
 {
+"d7/dd9/structxii_g_a_l_query_type.htm#a40e558bd24a5e0d3f8025299ed1ca87d":[4,0,501,1],
+"d7/dd9/structxii_g_a_l_query_type.htm#a40e558bd24a5e0d3f8025299ed1ca87da1a338c8523464de14b06f7d94cc8f418":[4,0,501,1,4],
+"d7/dd9/structxii_g_a_l_query_type.htm#a40e558bd24a5e0d3f8025299ed1ca87da366c58b6763c7dd263ebaee8ae1cc8cb":[4,0,501,1,5],
+"d7/dd9/structxii_g_a_l_query_type.htm#a40e558bd24a5e0d3f8025299ed1ca87da4529df13397f03fb211774f13381ff53":[4,0,501,1,2],
+"d7/dd9/structxii_g_a_l_query_type.htm#a40e558bd24a5e0d3f8025299ed1ca87da56b7486a23456b13d91627a2f0d9e94d":[4,0,501,1,3],
+"d7/dd9/structxii_g_a_l_query_type.htm#a40e558bd24a5e0d3f8025299ed1ca87da69d0d9564f4e8d3dffe4e201e8504a66":[4,0,501,1,0],
 "d7/dd9/structxii_g_a_l_query_type.htm#a40e558bd24a5e0d3f8025299ed1ca87da8f492b03234e39c1e664a247c2b19672":[4,0,501,1,7],
 "d7/dd9/structxii_g_a_l_query_type.htm#a40e558bd24a5e0d3f8025299ed1ca87dabd3bb6bbb594ca562ea2a74343df60dc":[4,0,501,1,1],
 "d7/dd9/structxii_g_a_l_query_type.htm#a40e558bd24a5e0d3f8025299ed1ca87dabfef03ca7b106d459e2d6d76faf80bf2":[4,0,501,1,6],
@@ -243,11 +249,5 @@ var NAVTREEINDEX34 =
 "d8/d13/classxii_help_actions.htm":[4,0,657],
 "d8/d13/classxii_help_actions.htm#a3059e4323308f9dc86ad038a95c3883a":[4,0,657,1],
 "d8/d13/classxii_help_actions.htm#a588c6394f72ab0d6244bc826549b8916":[4,0,657,3],
-"d8/d13/classxii_help_actions.htm#ab83bfbbc94582beccdc149aa4079046b":[4,0,657,2],
-"d8/d13/classxii_help_actions.htm#acc22cea3f76311462ae21a2919f632f1":[4,0,657,0],
-"d8/d13/classxii_help_actions.htm#acc22cea3f76311462ae21a2919f632f1a513b8178ba63bcf53b0947fc5465b8c9":[4,0,657,0,0],
-"d8/d13/classxii_help_actions.htm#acc22cea3f76311462ae21a2919f632f1acfa09c9f59a7408201b26f10e3890b2c":[4,0,657,0,1],
-"d8/d15/structxii_geometry_1_1_line.htm":[4,0,615,1],
-"d8/d15/structxii_geometry_1_1_line.htm#a5c677ceda6c699c081779fce46ed6a23":[4,0,615,1,0],
-"d8/d15/structxii_geometry_1_1_line.htm#aa8b610654bf56b1408b16381c0cb66d5":[4,0,615,1,2]
+"d8/d13/classxii_help_actions.htm#ab83bfbbc94582beccdc149aa4079046b":[4,0,657,2]
 };

@@ -1,5 +1,12 @@
 var NAVTREEINDEX58 =
 {
+"dd/d84/classxii_typed_map_property.htm#afda03b5a045da2895fd35af3f0a55096":[4,0,1290,0],
+"dd/d8a/structxii_wind_strength.htm":[4,0,1365],
+"dd/d8a/structxii_wind_strength.htm#a0378f99250688f97ded9257aaed19e87":[4,0,1365,1],
+"dd/d8a/structxii_wind_strength.htm#a0378f99250688f97ded9257aaed19e87a02620e244fd01b209f12cba7b582f052":[4,0,1365,1,2],
+"dd/d8a/structxii_wind_strength.htm#a0378f99250688f97ded9257aaed19e87a0721eca70399f5f3e2872f0459a070eb":[4,0,1365,1,9],
+"dd/d8a/structxii_wind_strength.htm#a0378f99250688f97ded9257aaed19e87a3e8382838e437d02474eb2a28061090d":[4,0,1365,1,4],
+"dd/d8a/structxii_wind_strength.htm#a0378f99250688f97ded9257aaed19e87a5800b827af07d497b3619870f5cf1ef5":[4,0,1365,1,6],
 "dd/d8a/structxii_wind_strength.htm#a0378f99250688f97ded9257aaed19e87a5c80006ebaf6fe2d4aed3236c7156d18":[4,0,1365,1,7],
 "dd/d8a/structxii_wind_strength.htm#a0378f99250688f97ded9257aaed19e87a71c75c90608730a3a18922e5091c2260":[4,0,1365,1,0],
 "dd/d8a/structxii_wind_strength.htm#a0378f99250688f97ded9257aaed19e87a7363f92cb30129cd9ecc1462c17ec165":[4,0,1365,1,5],
@@ -242,12 +249,5 @@ var NAVTREEINDEX58 =
 "dd/dc8/classxii_processing_stream_iterator.htm#a41c35f41f87d7542233f4a9d1f8995f8":[4,0,901,0],
 "dd/dc8/classxii_processing_stream_iterator.htm#a6517c26af9f60d69533a240c4058c16c":[4,0,901,1],
 "dd/dc8/classxii_processing_stream_iterator.htm#a7d138009abcf789e00a9d30d049bd7f8":[4,0,901,4],
-"dd/dc8/classxii_processing_stream_iterator.htm#aa968d5d33809322b5919379edb9eb39f":[4,0,901,6],
-"dd/dc8/classxii_processing_stream_iterator.htm#aacf662ab10443a25c40f0afa78a9620d":[4,0,901,2],
-"dd/dc8/classxii_processing_stream_iterator.htm#acc268d30d5f7c8193dfbbb74e338905b":[4,0,901,5],
-"dd/dc8/classxii_processing_stream_iterator.htm#adcdc5a6839f1386887831d5ddf902847":[4,0,901,7],
-"dd/dc8/classxii_qt_event_track_widget.htm":[4,0,959],
-"dd/dc8/classxii_qt_event_track_widget.htm#a0491cd81644e367981384c9a5e6fed88":[4,0,959,2],
-"dd/dc8/classxii_qt_event_track_widget.htm#a0d263ea08f554c3bbcad0d1961b01d61":[4,0,959,11],
-"dd/dc8/classxii_qt_event_track_widget.htm#a174318d9dd81f274bf891704248366fa":[4,0,959,8]
+"dd/dc8/classxii_processing_stream_iterator.htm#aa968d5d33809322b5919379edb9eb39f":[4,0,901,6]
 };

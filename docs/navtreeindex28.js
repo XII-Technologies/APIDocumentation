@@ -1,5 +1,11 @@
 var NAVTREEINDEX28 =
 {
+"d6/d79/classxii_g_a_l_fence.htm#a4130afed7040bf88ddeb7a22a0872eab":[4,0,455,0],
+"d6/d79/classxii_g_a_l_fence.htm#a4eaf4f634511f54ffa675f1a3ef85c6a":[4,0,455,6],
+"d6/d79/classxii_g_a_l_fence.htm#a8a9dd0ea17d38c3d68c9db0002e5dab0":[4,0,455,7],
+"d6/d79/classxii_g_a_l_fence.htm#ad8678bfd477e7cb583f20aac304b9bc6":[4,0,455,5],
+"d6/d79/classxii_g_a_l_fence.htm#ad868e41e3edb14b759b65d2d00e1a60e":[4,0,455,2],
+"d6/d79/classxii_g_a_l_fence.htm#af8092e21a432b74d5d11af6814106ca4":[4,0,455,4],
 "d6/d7c/structxii_property_flags.htm":[4,0,918],
 "d6/d7c/structxii_property_flags.htm#a54fed1f9480831324a7b3840218228fb":[4,0,918,2],
 "d6/d7c/structxii_property_flags.htm#a54fed1f9480831324a7b3840218228fba0128c5e474301585a0d64248e1823033":[4,0,918,2,6],
@@ -243,11 +249,5 @@ var NAVTREEINDEX28 =
 "d6/d8f/structxii_g_a_l_device_features.htm#acabcfd2b061248818fedd16c4e071be4":[4,0,448,8],
 "d6/d8f/structxii_g_a_l_device_features.htm#ad51d203b0d4a32bc74de121db06beb89":[4,0,448,19],
 "d6/d8f/structxii_g_a_l_device_features.htm#ad645d96d7cc71dbe792188ab59c0c845":[4,0,448,31],
-"d6/d8f/structxii_g_a_l_device_features.htm#ad664e549fe84502fc0ed806370eb6354":[4,0,448,23],
-"d6/d8f/structxii_g_a_l_device_features.htm#ad7eac6c9f941d0a684407bb51fe47c8b":[4,0,448,1],
-"d6/d8f/structxii_g_a_l_device_features.htm#addd4c2e2d99a5b42b34d9491941e067e":[4,0,448,28],
-"d6/d8f/structxii_g_a_l_device_features.htm#ae16061094a70288986a97b1281bd8ba6":[4,0,448,27],
-"d6/d8f/structxii_g_a_l_device_features.htm#ae2503438bc303a1085d5c22e0d563550":[4,0,448,22],
-"d6/d8f/structxii_g_a_l_device_features.htm#ae6f15326ced2629f9730b2006184285b":[4,0,448,14],
-"d6/d8f/structxii_g_a_l_device_features.htm#ae9d6310fd0e3bdf187f767b6248ed0fb":[4,0,448,25]
+"d6/d8f/structxii_g_a_l_device_features.htm#ad664e549fe84502fc0ed806370eb6354":[4,0,448,23]
 };

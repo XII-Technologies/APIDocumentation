@@ -15,6 +15,7 @@ var classxii_document =
     [ "CreatePrefabDocument", "d8/da9/classxii_document.htm#a2983b30788bcab87e46a88f0b98108df", null ],
     [ "CreatePrefabDocumentFromSelection", "d8/da9/classxii_document.htm#a2fb9cf15699e30063174a0a10e68a28b", null ],
     [ "DeleteSelectedObjects", "d8/da9/classxii_document.htm#abede70bfdada0756139bd4696cd256a9", null ],
+    [ "DocumentRenamed", "d8/da9/classxii_document.htm#a1d79cd412ecf5f658b0d1bdf5ae883b6", null ],
     [ "EnsureVisible", "d8/da9/classxii_document.htm#aeae908dd2f8fc7bc66b3517d934f66d0", null ],
     [ "GetActiveSubDocument", "d8/da9/classxii_document.htm#a4b677ff00fa0cc5dbb2e38a902d4d6f7", null ],
     [ "GetActiveSubDocument", "d8/da9/classxii_document.htm#acb2af5da4e0de4d7d62e589a79027980", null ],

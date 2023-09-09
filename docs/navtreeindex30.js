@@ -1,5 +1,11 @@
 var NAVTREEINDEX30 =
 {
+"d6/dbd/classxii_open_ddl_reader.htm#a2656509e765485d506925dc580644298":[4,0,848,24],
+"d6/dbd/classxii_open_ddl_reader.htm#a395ef8eb5fb7b63d86babe14cb659e52":[4,0,848,15],
+"d6/dbd/classxii_open_ddl_reader.htm#a41ae320ea28c7c666d9c5448ebb90f1c":[4,0,848,34],
+"d6/dbd/classxii_open_ddl_reader.htm#a4852309b798f7a102264a9683ad26fff":[4,0,848,25],
+"d6/dbd/classxii_open_ddl_reader.htm#a5f517cfcd1f068e173bd96d1d1a94a45":[4,0,848,0],
+"d6/dbd/classxii_open_ddl_reader.htm#a6894e388e108789cf74044aea72c4aa6":[4,0,848,7],
 "d6/dbd/classxii_open_ddl_reader.htm#a6b8793a5b07778d08675446c16eb907d":[4,0,848,10],
 "d6/dbd/classxii_open_ddl_reader.htm#a6ddcffcd96e4e056579e4ec50549b1b4":[4,0,848,28],
 "d6/dbd/classxii_open_ddl_reader.htm#a7bde3f57d38e94c869df2a0fdf15b699":[4,0,848,12],
@@ -243,11 +249,5 @@ var NAVTREEINDEX30 =
 "d6/dec/structxii_g_a_l_resource_state_flags.htm#a4863cdfd85d00744a4db3689c58b5e84a94b59ccc76a405034e86a450a8482716":[4,0,519,2,2],
 "d6/dec/structxii_g_a_l_resource_state_flags.htm#a4863cdfd85d00744a4db3689c58b5e84a95ea80f448fa4fc7d13960606e02b8f2":[4,0,519,2,14],
 "d6/dec/structxii_g_a_l_resource_state_flags.htm#a4863cdfd85d00744a4db3689c58b5e84ab263e2091bff4ae63c79712506d89f36":[4,0,519,2,12],
-"d6/dec/structxii_g_a_l_resource_state_flags.htm#a4863cdfd85d00744a4db3689c58b5e84ab7d17eae0a03245abc1d5b7089f1f6f4":[4,0,519,2,20],
-"d6/dec/structxii_g_a_l_resource_state_flags.htm#a4863cdfd85d00744a4db3689c58b5e84ab8bc452cf81513e611f4e678ee4b6d94":[4,0,519,2,25],
-"d6/dec/structxii_g_a_l_resource_state_flags.htm#a4863cdfd85d00744a4db3689c58b5e84ad9e18bfaecd6645ee5c1c12d92edcf37":[4,0,519,2,11],
-"d6/dec/structxii_g_a_l_resource_state_flags.htm#a4863cdfd85d00744a4db3689c58b5e84ae0d43dc2f0a716fc85acc0617990c788":[4,0,519,2,19],
-"d6/dec/structxii_g_a_l_resource_state_flags.htm#a4863cdfd85d00744a4db3689c58b5e84ae412821a8208efe144bf9bb501c542ab":[4,0,519,2,16],
-"d6/dec/structxii_g_a_l_resource_state_flags.htm#a4863cdfd85d00744a4db3689c58b5e84af2dd82f2b0c051540fd1b8a7ac14a209":[4,0,519,2,15],
-"d6/dec/structxii_g_a_l_resource_state_flags.htm#a4863cdfd85d00744a4db3689c58b5e84af31972a5cfb1e5d0e983bef90ba3c3e9":[4,0,519,2,24]
+"d6/dec/structxii_g_a_l_resource_state_flags.htm#a4863cdfd85d00744a4db3689c58b5e84ab7d17eae0a03245abc1d5b7089f1f6f4":[4,0,519,2,20]
 };

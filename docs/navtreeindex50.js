@@ -1,5 +1,12 @@
 var NAVTREEINDEX50 =
 {
+"db/d96/classxii_surface_resource.htm#a2999dac288795afe05e05882726d97a4":[4,0,1210,2],
+"db/d96/classxii_surface_resource.htm#a382b23db5506ed51ac82337dcaaa639d":[4,0,1210,5],
+"db/d96/classxii_surface_resource.htm#a40fae1c0146cc13ae5a917a6e3df4113":[4,0,1210,9],
+"db/d96/classxii_surface_resource.htm#a67aed0707838cf1925072a678f1dd732":[4,0,1210,4],
+"db/d96/classxii_surface_resource.htm#a9f8776b9ca83cc029d32fb80fb7ddb2f":[4,0,1210,7],
+"db/d96/classxii_surface_resource.htm#ab13bcbcc0b23a76a5a3b8840716f4397":[4,0,1210,0],
+"db/d96/classxii_surface_resource.htm#ac3c7d46fa48ded547b4d5c60885d14e5":[4,0,1210,10],
 "db/d96/classxii_surface_resource.htm#ad0154bd86ed65cbf0af7293b1d22b3dd":[4,0,1210,8],
 "db/d96/classxii_surface_resource.htm#ad4bfd1ab58266616237cb86753eb502f":[4,0,1210,1],
 "db/d98/structxii_g_a_l_shader_stage_1_1_bits.htm":[4,0,549,0],
@@ -242,12 +249,5 @@ var NAVTREEINDEX50 =
 "db/d9e/structxii_swizzle.htm#af85243d77ee966c0d27bee79d65039deabcd2b99efd37ebef641b14dae00ff982":[4,0,1213,0,254],
 "db/d9e/structxii_swizzle.htm#af85243d77ee966c0d27bee79d65039deabe0d23030d0e9f7634ceccf04e1a70f0":[4,0,1213,0,170],
 "db/d9e/structxii_swizzle.htm#af85243d77ee966c0d27bee79d65039deabe4886f37611406e57f8cfaa1f692f23":[4,0,1213,0,180],
-"db/d9e/structxii_swizzle.htm#af85243d77ee966c0d27bee79d65039deabf0d0fbd6be02b81d6739a5a82cf7be5":[4,0,1213,0,151],
-"db/d9e/structxii_swizzle.htm#af85243d77ee966c0d27bee79d65039deabf352e27f665205c5df5c5c497fbc3a6":[4,0,1213,0,247],
-"db/d9e/structxii_swizzle.htm#af85243d77ee966c0d27bee79d65039deabfe095c1292198c492cbb2b5ba6aa1e2":[4,0,1213,0,206],
-"db/d9e/structxii_swizzle.htm#af85243d77ee966c0d27bee79d65039deac1748612e56018349cc56ced3d344277":[4,0,1213,0,1],
-"db/d9e/structxii_swizzle.htm#af85243d77ee966c0d27bee79d65039deac38139b62a9e3a8d7fdfe130969a7188":[4,0,1213,0,52],
-"db/d9e/structxii_swizzle.htm#af85243d77ee966c0d27bee79d65039deac3e39de5534467152393871611e252b5":[4,0,1213,0,242],
-"db/d9e/structxii_swizzle.htm#af85243d77ee966c0d27bee79d65039deac647873d10856cf1370c2c27fc41e418":[4,0,1213,0,198],
-"db/d9e/structxii_swizzle.htm#af85243d77ee966c0d27bee79d65039deac8a5c2ab6958c5d876dc46d2e1a8df60":[4,0,1213,0,197]
+"db/d9e/structxii_swizzle.htm#af85243d77ee966c0d27bee79d65039deabf0d0fbd6be02b81d6739a5a82cf7be5":[4,0,1213,0,151]
 };

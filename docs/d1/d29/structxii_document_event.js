@@ -5,6 +5,7 @@ var structxii_document_event =
       [ "ReadOnlyChanged", "d1/d29/structxii_document_event.htm#a309f5a3d04fd703a5fe8770adaf0ea9aaeac2c9c1c45b2a13bf4fbdf9f7f717e4", null ],
       [ "EnsureVisible", "d1/d29/structxii_document_event.htm#a309f5a3d04fd703a5fe8770adaf0ea9aa47ec5fd00436263c0d6b91bf575ea690", null ],
       [ "DocumentSaved", "d1/d29/structxii_document_event.htm#a309f5a3d04fd703a5fe8770adaf0ea9aa8fdf05634f83ebe95a6fd7ccbf2e98ca", null ],
+      [ "DocumentRenamed", "d1/d29/structxii_document_event.htm#a309f5a3d04fd703a5fe8770adaf0ea9aa713c609ee96d49a43a8369b572eb8103", null ],
       [ "DocumentStatusMsg", "d1/d29/structxii_document_event.htm#a309f5a3d04fd703a5fe8770adaf0ea9aa197dd6cd20b7b764a1360f417a1d50ca", null ]
     ] ],
     [ "m_pDocument", "d1/d29/structxii_document_event.htm#a7d3268b60d553740a86e3debe2148808", null ],

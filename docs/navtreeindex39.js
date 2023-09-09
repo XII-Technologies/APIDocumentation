@@ -1,5 +1,12 @@
 var NAVTREEINDEX39 =
 {
+"d9/d1b/classxii_quat_template.htm#aab1ecbbf3bfc5f7d00b32df1ce89e342":[4,0,1034,12],
+"d9/d1b/classxii_quat_template.htm#aaef4b95931d63340b6bb3bb22734f734":[4,0,1034,17],
+"d9/d1b/classxii_quat_template.htm#aca6ff595f2b25d5950fbfe256dc56af9":[4,0,1034,22],
+"d9/d1b/classxii_quat_template.htm#acac88d8e4caf8ddb378b3c8afcc1efce":[4,0,1034,10],
+"d9/d1b/classxii_quat_template.htm#ae4acab9c811fa6a9f02c2312599526fc":[4,0,1034,6],
+"d9/d1b/classxii_quat_template.htm#ae88f50c75d2e37f3b4f4d2b735d20915":[4,0,1034,20],
+"d9/d1b/classxii_quat_template.htm#ae8d1ef81f529aa01674735ee3095d2a0":[4,0,1034,11],
 "d9/d1e/classxii_translator_pass_through.htm":[4,0,1280],
 "d9/d1e/classxii_translator_pass_through.htm#a15be2abdb3dafb9872707b4029ea67bd":[4,0,1280,0],
 "d9/d1f/structxii_script_coroutine_1_1_result_1_1_state.htm":[4,0,1101,0,0],
@@ -242,12 +249,5 @@ var NAVTREEINDEX39 =
 "d9/d4b/structxii_geometry_1_1_vertex.htm#a7f69dd4b3c555661b7eb6a92c9b52ad3":[4,0,615,3,3],
 "d9/d4b/structxii_geometry_1_1_vertex.htm#a8071b6c4f33d088bb72dcd755b62afb9":[4,0,615,3,1],
 "d9/d4b/structxii_geometry_1_1_vertex.htm#aa00344ed0569003f1676c7f8d83e2d10":[4,0,615,3,0],
-"d9/d4b/structxii_geometry_1_1_vertex.htm#aa8fa2cad7d3b55fe0f92c00603d21a7e":[4,0,615,3,5],
-"d9/d4b/structxii_geometry_1_1_vertex.htm#aed35c304f71d398d07f4a13ddcb74dd9":[4,0,615,3,10],
-"d9/d4f/classxii_qt_action_proxy.htm":[4,0,926],
-"d9/d4f/classxii_qt_action_proxy.htm#aa9cb581d154110d5c5b0f751c25b1e08":[4,0,926,0],
-"d9/d54/classxii_processing_stream_processor.htm":[4,0,902],
-"d9/d54/classxii_processing_stream_processor.htm#a119596e20b8ef7d80deccfde03e6a5a8":[4,0,902,6],
-"d9/d54/classxii_processing_stream_processor.htm#a2199248984c0ad6af0fd62e43285bc19":[4,0,902,0],
-"d9/d54/classxii_processing_stream_processor.htm#a6a8015749dbe3bebb0d4671fd62c0a76":[4,0,902,4]
+"d9/d4b/structxii_geometry_1_1_vertex.htm#aa8fa2cad7d3b55fe0f92c00603d21a7e":[4,0,615,3,5]
 };

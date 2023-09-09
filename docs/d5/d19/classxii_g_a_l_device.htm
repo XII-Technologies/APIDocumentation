@@ -85,6 +85,7 @@ $(document).ready(function(){initNavTree('d5/d19/classxii_g_a_l_device.htm','../
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
@@ -117,6 +118,12 @@ Inheritance diagram for xiiGALDevice:</div>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d37/structxii_g_a_l_device_1_1_dead_object.htm">DeadObject</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:afa9475d79c92e0c212546e0feff45c1e"><td class="memItemLeft" align="right" valign="top"><a id="afa9475d79c92e0c212546e0feff45c1e"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>SwapChainFactoryFunction</b> = <a class="el" href="../../dc/d84/structxii_delegate.htm">xiiDelegate</a>&lt; <a class="el" href="../../d5/d07/classxii_g_a_l_swap_chain.htm">xiiGALSwapChain</a> *(<a class="el" href="../../d5/d66/classxii_allocator_base.htm">xiiAllocatorBase</a> *)&gt;</td></tr>
+<tr class="separator:afa9475d79c92e0c212546e0feff45c1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -152,6 +159,13 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../.
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d19/classxii_g_a_l_device.htm#a0cf5758c2b1ef8fb65823a53238f1a7a">EndFrame</a> ()</td></tr>
 <tr class="memdesc:a0cf5758c2b1ef8fb65823a53238f1a7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ends a render frame. <br /></td></tr>
 <tr class="separator:a0cf5758c2b1ef8fb65823a53238f1a7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae92ad081c0c757e962e91f5972fd811d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../de/dc7/classxii_g_a_l_swap_chain_handle.htm">xiiGALSwapChainHandle</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d19/classxii_g_a_l_device.htm#ae92ad081c0c757e962e91f5972fd811d">CreateSwapChain</a> (const <a class="el" href="../../dc/d84/structxii_delegate.htm">SwapChainFactoryFunction</a> &amp;factoryFunction)</td></tr>
+<tr class="memdesc:ae92ad081c0c757e962e91f5972fd811d"><td class="mdescLeft">&#160;</td><td class="mdescRight">This creates a swap chain object.  <a href="../../d5/d19/classxii_g_a_l_device.htm#ae92ad081c0c757e962e91f5972fd811d">More...</a><br /></td></tr>
+<tr class="separator:ae92ad081c0c757e962e91f5972fd811d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17d69babe30036259ce51d04f3dca6e3"><td class="memItemLeft" align="right" valign="top"><a id="a17d69babe30036259ce51d04f3dca6e3"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d19/classxii_g_a_l_device.htm#a17d69babe30036259ce51d04f3dca6e3">DestroySwapChain</a> (<a class="el" href="../../de/dc7/classxii_g_a_l_swap_chain_handle.htm">xiiGALSwapChainHandle</a> hSwapChain)</td></tr>
+<tr class="memdesc:a17d69babe30036259ce51d04f3dca6e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">This destroys the swap chain with the given handle. <br /></td></tr>
+<tr class="separator:a17d69babe30036259ce51d04f3dca6e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a91802801bbde1b3c5789aebc174d81ed"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/d51/classxii_g_a_l_blend_state_handle.htm">xiiGALBlendStateHandle</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d19/classxii_g_a_l_device.htm#a91802801bbde1b3c5789aebc174d81ed">CreateBlendState</a> (const <a class="el" href="../../d6/dd7/structxii_g_a_l_blend_state_creation_description.htm">xiiGALBlendStateCreationDescription</a> &amp;description)</td></tr>
 <tr class="memdesc:a91802801bbde1b3c5789aebc174d81ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">This creates a new blend state object.  <a href="../../d5/d19/classxii_g_a_l_device.htm#a91802801bbde1b3c5789aebc174d81ed">More...</a><br /></td></tr>
 <tr class="separator:a91802801bbde1b3c5789aebc174d81ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -966,6 +980,33 @@ Stride of a formatted buffer will be computed automatically from the format if t
 
 </div>
 </div>
+<a id="ae92ad081c0c757e962e91f5972fd811d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae92ad081c0c757e962e91f5972fd811d">&#9670;&nbsp;</a></span>CreateSwapChain()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../de/dc7/classxii_g_a_l_swap_chain_handle.htm">xiiGALSwapChainHandle</a> xiiGALDevice::CreateSwapChain </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../dc/d84/structxii_delegate.htm">SwapChainFactoryFunction</a> &amp;&#160;</td>
+          <td class="paramname"><em>factoryFunction</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This creates a swap chain object. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">factoryFunction</td><td>- The swap chain factory function.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The handle to the created swap chain object. The function calls <a class="el" href="../../d7/df4/classxii_ref_counting_impl.htm#af89a37294bfebe74f2f43c492d2c14c3" title="Increments the reference counter. Returns the new reference count.">AddRef()</a>, so that the new object will have one reference. </dd></dl>
+
+</div>
+</div>
 <a id="ad5288a25743624dbbdbe2678fefe81ba"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad5288a25743624dbbdbe2678fefe81ba">&#9670;&nbsp;</a></span>CreateTexture()</h2>
 
@@ -1200,7 +1241,7 @@ For a 15 x 6 x 4 3D texture, the following array of sub-resources should be prov
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d5/d19/classxii_g_a_l_device.htm">xiiGALDevice</a></li>
-    <li class="footer">Generated on Sat Sep 2 2023 17:37:21 for XIIEngine by
+    <li class="footer">Generated on Sat Sep 9 2023 15:17:11 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

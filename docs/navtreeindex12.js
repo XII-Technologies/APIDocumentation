@@ -1,5 +1,6 @@
 var NAVTREEINDEX12 =
 {
+"d2/de1/structxii_g_a_l_texture_format.htm#a4ebed18ce152a1ef73a0afa6ae6e767ba7e8ad2816e272ddcf365131d94d5d418":[4,0,582,1,62],
 "d2/de1/structxii_g_a_l_texture_format.htm#a4ebed18ce152a1ef73a0afa6ae6e767ba81b95857a9b0c1089810057edf16b321":[4,0,582,1,75],
 "d2/de1/structxii_g_a_l_texture_format.htm#a4ebed18ce152a1ef73a0afa6ae6e767ba82fd1593f3cff7acb284d5e99d4ffc69":[4,0,582,1,46],
 "d2/de1/structxii_g_a_l_texture_format.htm#a4ebed18ce152a1ef73a0afa6ae6e767ba86b3d18e52af933293b5f276a78a8d50":[4,0,582,1,60],
@@ -248,6 +249,5 @@ var NAVTREEINDEX12 =
 "d3/d22/structxii_g_a_l_texture_sub_resource_data.htm#a2c043759c7bbd6eb72eee6134ff5dd90":[4,0,587,2],
 "d3/d22/structxii_g_a_l_texture_sub_resource_data.htm#a3bae22d8abba32a2fdc205828f21738e":[4,0,587,1],
 "d3/d22/structxii_g_a_l_texture_sub_resource_data.htm#a4a7598aa43b32f9aefd56446099cc592":[4,0,587,4],
-"d3/d22/structxii_g_a_l_texture_sub_resource_data.htm#ab2951d4746c3e33a57ef41d609b3f8b4":[4,0,587,3],
-"d3/d22/structxii_g_a_l_texture_sub_resource_data.htm#ac5b9d1a127644453856463dab1f3ae1d":[4,0,587,0]
+"d3/d22/structxii_g_a_l_texture_sub_resource_data.htm#ab2951d4746c3e33a57ef41d609b3f8b4":[4,0,587,3]
 };

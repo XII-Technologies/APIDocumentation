@@ -11,5 +11,6 @@ var classxii_g_a_l_swap_chain =
     [ "SetFullScreenMode", "d5/d07/classxii_g_a_l_swap_chain.htm#a2dccc5b5177e78b940dd0f89add2a038", null ],
     [ "SetMaximumFrameLatency", "d5/d07/classxii_g_a_l_swap_chain.htm#a3f133f9f58ad499cb9e339a9ad83eeca", null ],
     [ "SetWindowedMode", "d5/d07/classxii_g_a_l_swap_chain.htm#a0952b04bed6eb55b32df12d0cdc96fd3", null ],
-    [ "xiiGALDevice", "d5/d07/classxii_g_a_l_swap_chain.htm#a8a9dd0ea17d38c3d68c9db0002e5dab0", null ]
+    [ "xiiGALDevice", "d5/d07/classxii_g_a_l_swap_chain.htm#a8a9dd0ea17d38c3d68c9db0002e5dab0", null ],
+    [ "xiiMemoryUtils", "d5/d07/classxii_g_a_l_swap_chain.htm#aefc9ff75d6833fd2f05be48e16436db6", null ]
 ];

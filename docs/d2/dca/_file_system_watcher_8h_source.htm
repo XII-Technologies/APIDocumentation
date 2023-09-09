@@ -130,49 +130,52 @@ $(document).ready(function(){initNavTree('d2/dca/_file_system_watcher_8h_source.
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <a class="code" href="../../dc/d22/classxii_event.htm">xiiEvent&lt;const xiiFileSystemWatcherEvent&amp;, xiiMutex&gt;</a> m_Events;</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <span class="keyword">static</span> constexpr xiiUInt32 s_AddedFrameDelay   = 5;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <span class="keyword">static</span> constexpr xiiUInt32 s_RemovedFrameDelay = 10;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <span class="keyword">struct </span>WatcherResult</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  {</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <a class="code" href="../../df/dfb/structxii_hybrid_string.htm">xiiString</a>                 m_sFile;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    xiiDirectoryWatcherAction m_Action;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    xiiDirectoryWatcherType   m_Type;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  };</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <span class="keyword">struct </span>PendingUpdate</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  {</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <a class="code" href="../../df/dfb/structxii_hybrid_string.htm">xiiString</a> m_sAbsPath;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    xiiUInt32 m_uiFrameDelay = 0;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  };</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <span class="keywordtype">void</span> HandleWatcherChange(<span class="keyword">const</span> WatcherResult&amp; res);</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <span class="keywordtype">void</span> NotifyChanges();</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  <span class="keywordtype">void</span> AddEntry(<a class="code" href="../../dc/da4/classxii_dynamic_array.htm">xiiDynamicArray&lt;PendingUpdate&gt;</a>&amp; container, <span class="keyword">const</span> <a class="code" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sAbsPath, xiiUInt32 uiFrameDelay);</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  <span class="keywordtype">void</span> ConsumeEntry(<a class="code" href="../../dc/da4/classxii_dynamic_array.htm">xiiDynamicArray&lt;PendingUpdate&gt;</a>&amp; container, xiiFileSystemWatcherEvent::Type type, <span class="keyword">const</span> <a class="code" href="../../dc/d84/structxii_delegate.htm">xiiDelegate</a>&lt;<span class="keywordtype">void</span>(<span class="keyword">const</span> <a class="code" href="../../df/dfb/structxii_hybrid_string.htm">xiiString</a>&amp; sAbsPath, xiiFileSystemWatcherEvent::Type type)&gt;&amp; consume);</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  <span class="comment">// Immutable data after StartInitialize</span></div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  <a class="code" href="../../d0/d32/classxii_application_file_system_config.htm">xiiApplicationFileSystemConfig</a> m_FileSystemConfig;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  <span class="comment">// Watchers</span></div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  <span class="keyword">mutable</span> <a class="code" href="../../dd/d52/classxii_mutex.htm">xiiMutex</a>                        m_WatcherMutex;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  <a class="code" href="../../dc/da9/classxii_hybrid_array.htm">xiiHybridArray&lt;xiiDirectoryWatcher*, 6&gt;</a> m_Watchers;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  <a class="code" href="../../d8/d9b/classxii_shared_ptr.htm">xiiSharedPtr&lt;xiiTask&gt;</a>                   m_pWatcherTask;</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  <a class="code" href="../../d8/d9b/classxii_shared_ptr.htm">xiiSharedPtr&lt;xiiTask&gt;</a>                   m_pNotifyTask;</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  <a class="code" href="../../d5/d4f/classxii_task_group_i_d.htm">xiiTaskGroupID</a>                          m_WatcherGroup;</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  <a class="code" href="../../d5/d4f/classxii_task_group_i_d.htm">xiiTaskGroupID</a>                          m_NotifyGroup;</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  <a class="code" href="../../da/d93/classxii_atomic_bool.htm">xiiAtomicBool</a>                           m_bShutdown = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  <span class="comment">// Pending operations</span></div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  <a class="code" href="../../dc/da9/classxii_hybrid_array.htm">xiiHybridArray&lt;PendingUpdate, 4&gt;</a> m_FileAdded;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  <a class="code" href="../../dc/da9/classxii_hybrid_array.htm">xiiHybridArray&lt;PendingUpdate, 4&gt;</a> m_FileRemoved;</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  <a class="code" href="../../dc/da9/classxii_hybrid_array.htm">xiiHybridArray&lt;PendingUpdate, 4&gt;</a> m_FileChanged;</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  <a class="code" href="../../dc/da9/classxii_hybrid_array.htm">xiiHybridArray&lt;PendingUpdate, 4&gt;</a> m_DirectoryAdded;</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  <a class="code" href="../../dc/da9/classxii_hybrid_array.htm">xiiHybridArray&lt;PendingUpdate, 4&gt;</a> m_DirectoryRemoved;</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;};</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <span class="comment">// On file move / rename operations we want the new file to be seen first before the old file delete event so that we can correctly detect this as a move instead of a delete operation. We achieve this by delaying each event by a fixed number of frames.</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <span class="keyword">static</span> constexpr xiiUInt32 s_AddedFrameDelay   = 5;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <span class="keyword">static</span> constexpr xiiUInt32 s_RemovedFrameDelay = 10;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <span class="comment">// Sometimes moving a file triggers a modified event on the old file. To prevent this from triggering the removal to be seen before the addition, we also delay modified events by the same amount as remove events.</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <span class="keyword">static</span> constexpr xiiUInt32 s_ModifiedFrameDelay = 10;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <span class="keyword">struct </span>WatcherResult</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  {</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <a class="code" href="../../df/dfb/structxii_hybrid_string.htm">xiiString</a>                 m_sFile;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    xiiDirectoryWatcherAction m_Action;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    xiiDirectoryWatcherType   m_Type;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  };</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  <span class="keyword">struct </span>PendingUpdate</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  {</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <a class="code" href="../../df/dfb/structxii_hybrid_string.htm">xiiString</a> m_sAbsPath;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    xiiUInt32 m_uiFrameDelay = 0;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  };</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  <span class="keywordtype">void</span> HandleWatcherChange(<span class="keyword">const</span> WatcherResult&amp; res);</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  <span class="keywordtype">void</span> NotifyChanges();</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  <span class="keywordtype">void</span> AddEntry(<a class="code" href="../../dc/da4/classxii_dynamic_array.htm">xiiDynamicArray&lt;PendingUpdate&gt;</a>&amp; container, <span class="keyword">const</span> <a class="code" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sAbsPath, xiiUInt32 uiFrameDelay);</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  <span class="keywordtype">void</span> ConsumeEntry(<a class="code" href="../../dc/da4/classxii_dynamic_array.htm">xiiDynamicArray&lt;PendingUpdate&gt;</a>&amp; container, xiiFileSystemWatcherEvent::Type type, <span class="keyword">const</span> <a class="code" href="../../dc/d84/structxii_delegate.htm">xiiDelegate</a>&lt;<span class="keywordtype">void</span>(<span class="keyword">const</span> <a class="code" href="../../df/dfb/structxii_hybrid_string.htm">xiiString</a>&amp; sAbsPath, xiiFileSystemWatcherEvent::Type type)&gt;&amp; consume);</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  <span class="comment">// Immutable data after StartInitialize</span></div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  <a class="code" href="../../d0/d32/classxii_application_file_system_config.htm">xiiApplicationFileSystemConfig</a> m_FileSystemConfig;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  <span class="comment">// Watchers</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  <span class="keyword">mutable</span> <a class="code" href="../../dd/d52/classxii_mutex.htm">xiiMutex</a>                        m_WatcherMutex;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  <a class="code" href="../../dc/da9/classxii_hybrid_array.htm">xiiHybridArray&lt;xiiDirectoryWatcher*, 6&gt;</a> m_Watchers;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  <a class="code" href="../../d8/d9b/classxii_shared_ptr.htm">xiiSharedPtr&lt;xiiTask&gt;</a>                   m_pWatcherTask;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  <a class="code" href="../../d8/d9b/classxii_shared_ptr.htm">xiiSharedPtr&lt;xiiTask&gt;</a>                   m_pNotifyTask;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  <a class="code" href="../../d5/d4f/classxii_task_group_i_d.htm">xiiTaskGroupID</a>                          m_WatcherGroup;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  <a class="code" href="../../d5/d4f/classxii_task_group_i_d.htm">xiiTaskGroupID</a>                          m_NotifyGroup;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  <a class="code" href="../../da/d93/classxii_atomic_bool.htm">xiiAtomicBool</a>                           m_bShutdown = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  <span class="comment">// Pending operations</span></div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  <a class="code" href="../../dc/da9/classxii_hybrid_array.htm">xiiHybridArray&lt;PendingUpdate, 4&gt;</a> m_FileAdded;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  <a class="code" href="../../dc/da9/classxii_hybrid_array.htm">xiiHybridArray&lt;PendingUpdate, 4&gt;</a> m_FileRemoved;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  <a class="code" href="../../dc/da9/classxii_hybrid_array.htm">xiiHybridArray&lt;PendingUpdate, 4&gt;</a> m_FileChanged;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  <a class="code" href="../../dc/da9/classxii_hybrid_array.htm">xiiHybridArray&lt;PendingUpdate, 4&gt;</a> m_DirectoryAdded;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  <a class="code" href="../../dc/da9/classxii_hybrid_array.htm">xiiHybridArray&lt;PendingUpdate, 4&gt;</a> m_DirectoryRemoved;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;};</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclassxii_application_file_system_config_htm"><div class="ttname"><a href="../../d0/d32/classxii_application_file_system_config.htm">xiiApplicationFileSystemConfig</a></div><div class="ttdef"><b>Definition:</b> FileSystemConfig.h:7</div></div>
@@ -191,7 +194,7 @@ $(document).ready(function(){initNavTree('d2/dca/_file_system_watcher_8h_source.
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.htm">home</a></li><li class="navelem"><a class="el" href="../../dir_1036706e55c22cab35bc1c58ee689f1d.htm">runner</a></li><li class="navelem"><a class="el" href="../../dir_629f8151d55d307162ff2d619fb1783d.htm">work</a></li><li class="navelem"><a class="el" href="../../dir_1ddc44fe1263a8c7935fa6130b7d9499.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_2c1b6808f12952f4c36e05ba7068379a.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_b5a1c4ecfca018ad24b729e213296d41.htm">Source</a></li><li class="navelem"><a class="el" href="../../dir_64f53f8da7bf780a58c32bb848e7873b.htm">Tools</a></li><li class="navelem"><a class="el" href="../../dir_4b5bc41f7c4cbfc8ca80bdea56300f1d.htm">Libs</a></li><li class="navelem"><a class="el" href="../../dir_ba58a103e79106e89914cc52b64849d5.htm">ToolsFoundation</a></li><li class="navelem"><a class="el" href="../../dir_477def286c2d2152f3157edad2157379.htm">FileSystem</a></li><li class="navelem"><b>FileSystemWatcher.h</b></li>
-    <li class="footer">Generated on Sat Sep 2 2023 17:37:19 for XIIEngine by
+    <li class="footer">Generated on Sat Sep 9 2023 15:17:10 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

@@ -1,5 +1,12 @@
 var NAVTREEINDEX47 =
 {
+"db/d02/structxii_reflected_property_descriptor.htm#a907c75dd861edd52bf4f30f262fec35c":[4,0,1050,7],
+"db/d02/structxii_reflected_property_descriptor.htm#aa7c13cc42f0e1041a101e1c271498c88":[4,0,1050,9],
+"db/d02/structxii_reflected_property_descriptor.htm#ab0d5e101c82321d1f7ced778273d5931":[4,0,1050,1],
+"db/d02/structxii_reflected_property_descriptor.htm#acdfb407c806e0b0dd2b80d806dd527f7":[4,0,1050,0],
+"db/d02/structxii_reflected_property_descriptor.htm#ae404d953438e0b393c4fde5f9e1cfcd7":[4,0,1050,2],
+"db/d02/structxii_reflected_property_descriptor.htm#af52e50638ead44017f435f9e3fc0e864":[4,0,1050,11],
+"db/d03/classxii_qt_item_delegate.htm":[4,0,969],
 "db/d03/classxii_qt_item_delegate.htm#a002013b459982559c812657f642a2767":[4,0,969,2],
 "db/d03/classxii_qt_item_delegate.htm#a4c0d30068ce6f48c870f03b8b9413980":[4,0,969,1],
 "db/d03/classxii_qt_item_delegate.htm#a94a41d7f1c7908ef77ce79b9a304d5b0":[4,0,969,4],
@@ -198,10 +205,10 @@ var NAVTREEINDEX47 =
 "db/d1a/classxii_variant.htm#aa05b5de4f5ad50cd6398f8ab9f2a2043":[4,0,1319,74],
 "db/d1a/classxii_variant.htm#aa06681dbe2f7d2c77e9950fe751db1c8":[4,0,1319,114],
 "db/d1a/classxii_variant.htm#aa1d83252c0dfba2593f883b27b72bbfa":[4,0,1319,14],
-"db/d1a/classxii_variant.htm#aa28a169f3d484e9d656060b372ce2563":[4,0,1319,94],
-"db/d1a/classxii_variant.htm#aa28a169f3d484e9d656060b372ce2563":[4,0,1319,93],
-"db/d1a/classxii_variant.htm#aa28a169f3d484e9d656060b372ce2563":[4,0,1319,96],
 "db/d1a/classxii_variant.htm#aa28a169f3d484e9d656060b372ce2563":[4,0,1319,95],
+"db/d1a/classxii_variant.htm#aa28a169f3d484e9d656060b372ce2563":[4,0,1319,93],
+"db/d1a/classxii_variant.htm#aa28a169f3d484e9d656060b372ce2563":[4,0,1319,94],
+"db/d1a/classxii_variant.htm#aa28a169f3d484e9d656060b372ce2563":[4,0,1319,96],
 "db/d1a/classxii_variant.htm#aa2aa01491e5c8430accfa88c9c830e47":[4,0,1319,39],
 "db/d1a/classxii_variant.htm#aa2f53e61b74652dc20df053e64314ece":[4,0,1319,7],
 "db/d1a/classxii_variant.htm#aa3fb9dde7601af1db3639dc733818fff":[4,0,1319,117],
@@ -242,12 +249,5 @@ var NAVTREEINDEX47 =
 "db/d29/structxii_expression_a_s_t_1_1_function_call.htm#a42ef29e02f0cb6502a1da7b11f818fa2":[4,0,348,4,1],
 "db/d29/structxii_expression_a_s_t_1_1_function_call.htm#aaf36b125c973db6ed637252ceefad261":[4,0,348,4,0],
 "db/d2b/classxii_memory_stream_writer.htm":[4,0,779],
-"db/d2b/classxii_memory_stream_writer.htm#a0483100fd4b5242317010a7fa749f635":[4,0,779,1],
-"db/d2b/classxii_memory_stream_writer.htm#a42d18dea7cfedf189d5baa176b83927c":[4,0,779,4],
-"db/d2b/classxii_memory_stream_writer.htm#a49e9f98a763f3107cb91548f5e2866a5":[4,0,779,0],
-"db/d2b/classxii_memory_stream_writer.htm#a5c048685e354dd426c0cc181f6b758cd":[4,0,779,2],
-"db/d2b/classxii_memory_stream_writer.htm#a63b92d1e370a7bcbd552f7f49a1efe14":[4,0,779,7],
-"db/d2b/classxii_memory_stream_writer.htm#acdf8f5054a12981e098497ba90f31903":[4,0,779,3],
-"db/d2b/classxii_memory_stream_writer.htm#add1dd41bfbd2a298938f1cbc338527f3":[4,0,779,5],
-"db/d2b/classxii_memory_stream_writer.htm#af8edfa2ea447e08ebd9d67ca8a21dcde":[4,0,779,6]
+"db/d2b/classxii_memory_stream_writer.htm#a0483100fd4b5242317010a7fa749f635":[4,0,779,1]
 };

@@ -1,5 +1,12 @@
 var NAVTREEINDEX44 =
 {
+"da/d40/classxii_frame_capture_interface.htm#aef93992372e810d71fcd5a25d68e32c0":[4,0,378,4],
+"da/d40/classxii_frame_capture_interface.htm#af9e2985675616f6c0dfbb902ec0e7241":[4,0,378,2],
+"da/d43/structxii_g_a_l_map_type.htm":[4,0,482],
+"da/d43/structxii_g_a_l_map_type.htm#a65164e2efa0e8d2c4959973f94ed54cf":[4,0,482,1],
+"da/d43/structxii_g_a_l_map_type.htm#a65164e2efa0e8d2c4959973f94ed54cfa22538196a3982ef004e75cf1f6661131":[4,0,482,1,3],
+"da/d43/structxii_g_a_l_map_type.htm#a65164e2efa0e8d2c4959973f94ed54cfa288d2fc3ac947d9ac057b52301405887":[4,0,482,1,0],
+"da/d43/structxii_g_a_l_map_type.htm#a65164e2efa0e8d2c4959973f94ed54cfa613d35c7a95809c63259dbb812e6c5bb":[4,0,482,1,1],
 "da/d43/structxii_g_a_l_map_type.htm#a65164e2efa0e8d2c4959973f94ed54cfa7285c038835772283c1b6d593e72fd77":[4,0,482,1,4],
 "da/d43/structxii_g_a_l_map_type.htm#a65164e2efa0e8d2c4959973f94ed54cfa935b45db776cfcca6bdf7983c7fa8855":[4,0,482,1,2],
 "da/d43/structxii_g_a_l_map_type.htm#af81f47c921591c6ce04a8e11f20d71ab":[4,0,482,0],
@@ -242,12 +249,5 @@ var NAVTREEINDEX44 =
 "da/d78/structxii_application_plugin_config_1_1_plugin_config.htm":[4,0,69,0],
 "da/d78/structxii_application_plugin_config_1_1_plugin_config.htm#a76647ba22f619ee2a0df03a5380e157b":[4,0,69,0,2],
 "da/d78/structxii_application_plugin_config_1_1_plugin_config.htm#abaddf8b167e7fcf6af4b1dc8bb2c640d":[4,0,69,0,1],
-"da/d78/structxii_application_plugin_config_1_1_plugin_config.htm#abdbd5e7b9b22b738fc2c03a60e19bafd":[4,0,69,0,0],
-"da/d7b/structxii_document_manager_1_1_event.htm":[4,0,291,0],
-"da/d7b/structxii_document_manager_1_1_event.htm#a460de63305a7c43b4261800aab240d99":[4,0,291,0,1],
-"da/d7b/structxii_document_manager_1_1_event.htm#a4eaef01bc69c0446030c72ccb78977ea":[4,0,291,0,3],
-"da/d7b/structxii_document_manager_1_1_event.htm#ab917341ad90de74049cc79314a6c34bb":[4,0,291,0,0],
-"da/d7b/structxii_document_manager_1_1_event.htm#ab917341ad90de74049cc79314a6c34bba656b019dbc46d4a1fe3080bc7a6431fa":[4,0,291,0,0,1],
-"da/d7b/structxii_document_manager_1_1_event.htm#ab917341ad90de74049cc79314a6c34bba7a9385b724d31d19c755a954292c2ced":[4,0,291,0,0,6],
-"da/d7b/structxii_document_manager_1_1_event.htm#ab917341ad90de74049cc79314a6c34bbaa3359826cae8835a6917c75549c123df":[4,0,291,0,0,0]
+"da/d78/structxii_application_plugin_config_1_1_plugin_config.htm#abdbd5e7b9b22b738fc2c03a60e19bafd":[4,0,69,0,0]
 };

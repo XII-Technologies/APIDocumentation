@@ -1,5 +1,12 @@
 var NAVTREEINDEX60 =
 {
+"de/d12/classxii_object_accessor_base.htm#a1ff243fe744f37a13f98a04587261a8d":[4,0,831,28],
+"de/d12/classxii_object_accessor_base.htm#a25b2de12c88eb750e3e8e571f43a7b0d":[4,0,831,20],
+"de/d12/classxii_object_accessor_base.htm#a25cc13de5de02ccc01b3ad3fbadd7fe6":[4,0,831,29],
+"de/d12/classxii_object_accessor_base.htm#a3d9d0e2afadff3b7038f29e6c791ea0e":[4,0,831,23],
+"de/d12/classxii_object_accessor_base.htm#a42c732ae58c1aaa8f7a6400e9990d122":[4,0,831,6],
+"de/d12/classxii_object_accessor_base.htm#a42d8c1ee5f5d0e9a714aa43337aa68d5":[4,0,831,18],
+"de/d12/classxii_object_accessor_base.htm#a430dc7b43b228d168f0956918a6a5a06":[4,0,831,16],
 "de/d12/classxii_object_accessor_base.htm#a490735b796aa54f355db37dad9cb8d4d":[4,0,831,2],
 "de/d12/classxii_object_accessor_base.htm#a4d6ef63c6a015560c3fae342387b70a9":[4,0,831,17],
 "de/d12/classxii_object_accessor_base.htm#a5050a869ad6676c973c2737f452affe6":[4,0,831,34],
@@ -242,12 +249,5 @@ var NAVTREEINDEX60 =
 "de/d49/structxii_object_flags_1_1_bits.htm#a6e341a69db986f0e1be0a308fda01494":[4,0,837,0,8],
 "de/d49/structxii_object_flags_1_1_bits.htm#a7769866198dba7365f7e317e7e2a30ce":[4,0,837,0,4],
 "de/d49/structxii_object_flags_1_1_bits.htm#a85bd3f2f5b9d013a409b6fd668ac2611":[4,0,837,0,19],
-"de/d49/structxii_object_flags_1_1_bits.htm#a8ef2020f12479e8ccd60cc612e12b777":[4,0,837,0,7],
-"de/d49/structxii_object_flags_1_1_bits.htm#a962d3e7f8db4e3bb27608a44212216ec":[4,0,837,0,5],
-"de/d49/structxii_object_flags_1_1_bits.htm#a9c2641b85a2d628e0819e18cfad680ef":[4,0,837,0,22],
-"de/d49/structxii_object_flags_1_1_bits.htm#a9e74ab610cb396600d4257c3999d092b":[4,0,837,0,14],
-"de/d49/structxii_object_flags_1_1_bits.htm#aba6c36845cac2606ec6070054eeb6fda":[4,0,837,0,18],
-"de/d49/structxii_object_flags_1_1_bits.htm#abc1ec1476da451f659ce5c4201c40ac2":[4,0,837,0,6],
-"de/d49/structxii_object_flags_1_1_bits.htm#acf173563eaa20b2045907d8321473f41":[4,0,837,0,2],
-"de/d49/structxii_object_flags_1_1_bits.htm#ad3e1aea77be1100a950d9f36ceb4944f":[4,0,837,0,21]
+"de/d49/structxii_object_flags_1_1_bits.htm#a8ef2020f12479e8ccd60cc612e12b777":[4,0,837,0,7]
 };

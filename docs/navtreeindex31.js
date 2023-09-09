@@ -1,5 +1,11 @@
 var NAVTREEINDEX31 =
 {
+"d6/dec/structxii_g_a_l_resource_state_flags.htm#a4863cdfd85d00744a4db3689c58b5e84ab8bc452cf81513e611f4e678ee4b6d94":[4,0,519,2,25],
+"d6/dec/structxii_g_a_l_resource_state_flags.htm#a4863cdfd85d00744a4db3689c58b5e84ad9e18bfaecd6645ee5c1c12d92edcf37":[4,0,519,2,11],
+"d6/dec/structxii_g_a_l_resource_state_flags.htm#a4863cdfd85d00744a4db3689c58b5e84ae0d43dc2f0a716fc85acc0617990c788":[4,0,519,2,19],
+"d6/dec/structxii_g_a_l_resource_state_flags.htm#a4863cdfd85d00744a4db3689c58b5e84ae412821a8208efe144bf9bb501c542ab":[4,0,519,2,16],
+"d6/dec/structxii_g_a_l_resource_state_flags.htm#a4863cdfd85d00744a4db3689c58b5e84af2dd82f2b0c051540fd1b8a7ac14a209":[4,0,519,2,15],
+"d6/dec/structxii_g_a_l_resource_state_flags.htm#a4863cdfd85d00744a4db3689c58b5e84af31972a5cfb1e5d0e983bef90ba3c3e9":[4,0,519,2,24],
 "d6/dec/structxii_g_a_l_resource_state_flags.htm#a4863cdfd85d00744a4db3689c58b5e84af732039981825a369a7f2058c96d57bd":[4,0,519,2,22],
 "d6/dec/structxii_g_a_l_resource_state_flags.htm#a4863cdfd85d00744a4db3689c58b5e84afb9900f18dbaf0947b4f541797d8efa0":[4,0,519,2,4],
 "d6/dec/structxii_g_a_l_resource_state_flags.htm#acd932ba5f8bb1fbf6affe11ef80d4829":[4,0,519,1],
@@ -243,11 +249,5 @@ var NAVTREEINDEX31 =
 "d7/d35/structxii_internal_1_1_compile_time_murmur_hash_3_01_n_00_012_01_4.htm":[4,0,4,3],
 "d7/d35/structxii_internal_1_1_compile_time_murmur_hash_3_01_n_00_012_01_4.htm#a4a409758eff37f028243b28b1a71d879":[4,0,4,3,0],
 "d7/d42/structxii_game_object_id.htm":[4,0,610],
-"d7/d42/structxii_game_object_id.htm#a3be49c9d8b1d58361d3bcf5626ea90b9":[4,0,610,2],
-"d7/d42/structxii_game_object_id.htm#a6433a552dec998031c06c39ff95eb6a0":[4,0,610,6],
-"d7/d42/structxii_game_object_id.htm#a7a1b595ed04d9f8aaf05963b496f790d":[4,0,610,5],
-"d7/d42/structxii_game_object_id.htm#aaed44a1ba7fba9836941e7742c1d9d75":[4,0,610,3],
-"d7/d42/structxii_game_object_id.htm#ae56bfb10c49c0320b8b9985c10f9b140":[4,0,610,1],
-"d7/d42/structxii_game_object_id.htm#af18a4975707a285e8427df1621a79fb0":[4,0,610,0],
-"d7/d42/structxii_game_object_id.htm#afcba16f2dbce1f3879e1cf07798ef75f":[4,0,610,4]
+"d7/d42/structxii_game_object_id.htm#a3be49c9d8b1d58361d3bcf5626ea90b9":[4,0,610,2]
 };

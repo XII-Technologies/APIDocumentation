@@ -5,6 +5,7 @@ var classxii_qt_container_window =
     [ "AddApplicationPanel", "d4/dfd/classxii_qt_container_window.htm#a2daafab13214f58fee5e792860696bc6", null ],
     [ "AddDocumentWindow", "d4/dfd/classxii_qt_container_window.htm#acb376f7fbc2d5dcd48a3db5465c8c40a", null ],
     [ "closeEvent", "d4/dfd/classxii_qt_container_window.htm#ac0fa2d711491d4b01c9545964ec3f637", null ],
+    [ "DocumentWindowRenamed", "d4/dfd/classxii_qt_container_window.htm#ab52406b937ad75c19f75927e5d1ad917", null ],
     [ "eventFilter", "d4/dfd/classxii_qt_container_window.htm#ac7e092ad4594ec68f4d0ea7795eb78df", null ],
     [ "GetDockManager", "d4/dfd/classxii_qt_container_window.htm#a14e4086c87cbbe5275abfee468a1976d", null ],
     [ "GetDocumentWindows", "d4/dfd/classxii_qt_container_window.htm#a93f43b607ef2045cb4a0ebf5904fac72", null ],

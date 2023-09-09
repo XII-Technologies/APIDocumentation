@@ -1,5 +1,11 @@
 var NAVTREEINDEX32 =
 {
+"d7/d42/structxii_game_object_id.htm#a6433a552dec998031c06c39ff95eb6a0":[4,0,610,6],
+"d7/d42/structxii_game_object_id.htm#a7a1b595ed04d9f8aaf05963b496f790d":[4,0,610,5],
+"d7/d42/structxii_game_object_id.htm#aaed44a1ba7fba9836941e7742c1d9d75":[4,0,610,3],
+"d7/d42/structxii_game_object_id.htm#ae56bfb10c49c0320b8b9985c10f9b140":[4,0,610,1],
+"d7/d42/structxii_game_object_id.htm#af18a4975707a285e8427df1621a79fb0":[4,0,610,0],
+"d7/d42/structxii_game_object_id.htm#afcba16f2dbce1f3879e1cf07798ef75f":[4,0,610,4],
 "d7/d44/structxii_geometry_1_1_geo_options.htm":[4,0,615,0],
 "d7/d44/structxii_geometry_1_1_geo_options.htm#a124d1408d9ee3d130257eb20fc300aa2":[4,0,615,0,2],
 "d7/d44/structxii_geometry_1_1_geo_options.htm#a4dfc74790333d5a414510c609c93819e":[4,0,615,0,0],
@@ -243,11 +249,5 @@ var NAVTREEINDEX32 =
 "d7/d93/structxii_g_a_l_shader_stage.htm#a574ae05a61f47569461dc1fd2ea12092a5aa96c5609458bad35932b272bb06347":[4,0,549,2,4],
 "d7/d93/structxii_g_a_l_shader_stage.htm#a574ae05a61f47569461dc1fd2ea12092a70dc6f18000d899511feef6001879d18":[4,0,549,2,1],
 "d7/d93/structxii_g_a_l_shader_stage.htm#a574ae05a61f47569461dc1fd2ea12092a7d9f6a6fa043659d2d0cac274fda5455":[4,0,549,2,12],
-"d7/d93/structxii_g_a_l_shader_stage.htm#a574ae05a61f47569461dc1fd2ea12092a812be85bd8dc5749f738bf26738e02ad":[4,0,549,2,7],
-"d7/d93/structxii_g_a_l_shader_stage.htm#a574ae05a61f47569461dc1fd2ea12092a89f97b209c3f611dea932756ac78c168":[4,0,549,2,18],
-"d7/d93/structxii_g_a_l_shader_stage.htm#a574ae05a61f47569461dc1fd2ea12092a90740119a0ae7b5d7058a4e77674e61b":[4,0,549,2,13],
-"d7/d93/structxii_g_a_l_shader_stage.htm#a574ae05a61f47569461dc1fd2ea12092a90ae4c886ecb913ab497c60cab556e60":[4,0,549,2,9],
-"d7/d93/structxii_g_a_l_shader_stage.htm#a574ae05a61f47569461dc1fd2ea12092a91e1372f515c47f4b85329df14588847":[4,0,549,2,8],
-"d7/d93/structxii_g_a_l_shader_stage.htm#a574ae05a61f47569461dc1fd2ea12092a9ecaf4b618c6f934187f57b8548ec0ac":[4,0,549,2,6],
-"d7/d93/structxii_g_a_l_shader_stage.htm#a574ae05a61f47569461dc1fd2ea12092aa19d8eea3155f29b85916faa49efb89d":[4,0,549,2,2]
+"d7/d93/structxii_g_a_l_shader_stage.htm#a574ae05a61f47569461dc1fd2ea12092a812be85bd8dc5749f738bf26738e02ad":[4,0,549,2,7]
 };

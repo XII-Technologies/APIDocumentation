@@ -1,5 +1,6 @@
 var NAVTREEINDEX13 =
 {
+"d3/d22/structxii_g_a_l_texture_sub_resource_data.htm#ac5b9d1a127644453856463dab1f3ae1d":[4,0,587,0],
 "d3/d23/classxii_command_interpreter.htm":[4,0,161],
 "d3/d23/classxii_command_interpreter.htm#a4e43131163ad2ced0e216451b46f22af":[4,0,161,0],
 "d3/d23/classxii_command_interpreter.htm#aec80618782b11688e716be06cedefcff":[4,0,161,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX13 =
 "d3/d74/classxii_mat3_template.htm#abf765c44db81db98e65aa42b9cb856e7":[4,0,758,28],
 "d3/d74/classxii_mat3_template.htm#ac53e6d776e21adb5e567e8a7f92a1fa7":[4,0,758,25],
 "d3/d74/classxii_mat3_template.htm#ae0ae61baee9629f7bc8d90b134437070":[4,0,758,39],
-"d3/d74/classxii_mat3_template.htm#ae319eb9c5a1e6317e7630fd91fde8bf2":[4,0,758,19],
-"d3/d74/classxii_mat3_template.htm#aed61cf1559a2f0ce7a5447319ce28960":[4,0,758,29]
+"d3/d74/classxii_mat3_template.htm#ae319eb9c5a1e6317e7630fd91fde8bf2":[4,0,758,19]
 };

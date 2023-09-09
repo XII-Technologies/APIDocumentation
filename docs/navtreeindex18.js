@@ -1,5 +1,6 @@
 var NAVTREEINDEX18 =
 {
+"d4/d61/classxii_component_manager_base.htm#ae2f54e4617572e6800bc067b454e2abd":[4,0,183,3],
 "d4/d68/classxii_remote_interface.htm":[4,0,1057],
 "d4/d68/classxii_remote_interface.htm#a075ffc0852d5a41f1298e0b974d9c415":[4,0,1057,14],
 "d4/d68/classxii_remote_interface.htm#a08022869c6c09b7f8034e4f09df1f5d8":[4,0,1057,36],
@@ -248,6 +249,5 @@ var NAVTREEINDEX18 =
 "d4/d9b/classxii_remote_message.htm#a3eeee9c38687bde09ef2e88d3b6b4517":[4,0,1058,3],
 "d4/d9b/classxii_remote_message.htm#a622d170a085819b20fd3cd1f0b6d2b58":[4,0,1058,5],
 "d4/d9b/classxii_remote_message.htm#a7ed1728b047e0ef818054d4a0c52827a":[4,0,1058,0],
-"d4/d9b/classxii_remote_message.htm#a8085166e7861a8b6e0667e52d50e7cf0":[4,0,1058,1],
-"d4/d9b/classxii_remote_message.htm#a8eff1949c347b8a79b29ba1783422fec":[4,0,1058,6]
+"d4/d9b/classxii_remote_message.htm#a8085166e7861a8b6e0667e52d50e7cf0":[4,0,1058,1]
 };

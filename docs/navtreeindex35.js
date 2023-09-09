@@ -1,5 +1,11 @@
 var NAVTREEINDEX35 =
 {
+"d8/d13/classxii_help_actions.htm#acc22cea3f76311462ae21a2919f632f1":[4,0,657,0],
+"d8/d13/classxii_help_actions.htm#acc22cea3f76311462ae21a2919f632f1a513b8178ba63bcf53b0947fc5465b8c9":[4,0,657,0,0],
+"d8/d13/classxii_help_actions.htm#acc22cea3f76311462ae21a2919f632f1acfa09c9f59a7408201b26f10e3890b2c":[4,0,657,0,1],
+"d8/d15/structxii_geometry_1_1_line.htm":[4,0,615,1],
+"d8/d15/structxii_geometry_1_1_line.htm#a5c677ceda6c699c081779fce46ed6a23":[4,0,615,1,0],
+"d8/d15/structxii_geometry_1_1_line.htm#aa8b610654bf56b1408b16381c0cb66d5":[4,0,615,1,2],
 "d8/d15/structxii_geometry_1_1_line.htm#af1b7f7a1a262b5e21d79b8d595e2d36f":[4,0,615,1,1],
 "d8/d15/structxii_tex_conv_1_1_key_enum_value_pair.htm":[4,0,1233,0],
 "d8/d15/structxii_tex_conv_1_1_key_enum_value_pair.htm#a39232c648f673c9205d8bbbd8c9895ca":[4,0,1233,0,1],
@@ -243,11 +249,5 @@ var NAVTREEINDEX35 =
 "d8/d73/structxii_collection_resource_descriptor.htm#a68a99dcb90e1796114a76afc1a557099":[4,0,145,1],
 "d8/d73/structxii_collection_resource_descriptor.htm#abed15a2b3d61080940fbbf9e82e9302d":[4,0,145,0],
 "d8/d73/structxii_collection_resource_descriptor.htm#affe756bc28b02b842fa989bc41b6de05":[4,0,145,2],
-"d8/d78/structxii_string_reverse_iterator.htm":[4,0,1199],
-"d8/d78/structxii_string_reverse_iterator.htm#a0ca42aa2663ee2234ddb207a08116e8a":[4,0,1199,12],
-"d8/d78/structxii_string_reverse_iterator.htm#a0f05be8c93fa73ac2fa55b4a28e908f2":[4,0,1199,1],
-"d8/d78/structxii_string_reverse_iterator.htm#a173c64931e1f810f20766755742166cb":[4,0,1199,21],
-"d8/d78/structxii_string_reverse_iterator.htm#a1a22d5900004ce7015d1c5f5ba5e8fc5":[4,0,1199,7],
-"d8/d78/structxii_string_reverse_iterator.htm#a23c6d0dc0e355fd058bbfcee511f3626":[4,0,1199,8],
-"d8/d78/structxii_string_reverse_iterator.htm#a2916322be50c3db88053b59865b817ec":[4,0,1199,15]
+"d8/d78/structxii_string_reverse_iterator.htm":[4,0,1199]
 };

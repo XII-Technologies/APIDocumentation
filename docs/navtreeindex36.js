@@ -1,5 +1,11 @@
 var NAVTREEINDEX36 =
 {
+"d8/d78/structxii_string_reverse_iterator.htm#a0ca42aa2663ee2234ddb207a08116e8a":[4,0,1199,12],
+"d8/d78/structxii_string_reverse_iterator.htm#a0f05be8c93fa73ac2fa55b4a28e908f2":[4,0,1199,1],
+"d8/d78/structxii_string_reverse_iterator.htm#a173c64931e1f810f20766755742166cb":[4,0,1199,21],
+"d8/d78/structxii_string_reverse_iterator.htm#a1a22d5900004ce7015d1c5f5ba5e8fc5":[4,0,1199,7],
+"d8/d78/structxii_string_reverse_iterator.htm#a23c6d0dc0e355fd058bbfcee511f3626":[4,0,1199,8],
+"d8/d78/structxii_string_reverse_iterator.htm#a2916322be50c3db88053b59865b817ec":[4,0,1199,15],
 "d8/d78/structxii_string_reverse_iterator.htm#a44932fd4f7d20dc254d0b07a85e277b5":[4,0,1199,20],
 "d8/d78/structxii_string_reverse_iterator.htm#a486c6d9d5238bcea60a49b0725a8e32b":[4,0,1199,17],
 "d8/d78/structxii_string_reverse_iterator.htm#a4c7ba573d3b00cfc3c5538f84c9e6281":[4,0,1199,3],
@@ -243,11 +249,5 @@ var NAVTREEINDEX36 =
 "d8/d9d/classxii_memory_utils.htm#a2516458396e2b4b9920e8a4cd5fbbeac":[4,0,782,27],
 "d8/d9d/classxii_memory_utils.htm#a282d33b6eae5b27e41ff6af606a19dd6":[4,0,782,11],
 "d8/d9d/classxii_memory_utils.htm#a296eedd2da3e91fb9d83166a3f657463":[4,0,782,8],
-"d8/d9d/classxii_memory_utils.htm#a2bec7d08aee49507e8afdad8ed431e92":[4,0,782,15],
-"d8/d9d/classxii_memory_utils.htm#a2c414f06b1af8f665e0dfeb193c28b89":[4,0,782,12],
-"d8/d9d/classxii_memory_utils.htm#a3b8b64b5f6262d5427ee683cf6de8c58":[4,0,782,58],
-"d8/d9d/classxii_memory_utils.htm#a3cbb9256fee9eb8ce22ed38d26056a46":[4,0,782,18],
-"d8/d9d/classxii_memory_utils.htm#a3dc304f5c13bf004717d121b62b9b329":[4,0,782,66],
-"d8/d9d/classxii_memory_utils.htm#a43bfed0a52199667ea0dd1d910f0aa99":[4,0,782,51],
-"d8/d9d/classxii_memory_utils.htm#a446205c1ac680585e6d36698b90db2d9":[4,0,782,59]
+"d8/d9d/classxii_memory_utils.htm#a2bec7d08aee49507e8afdad8ed431e92":[4,0,782,15]
 };

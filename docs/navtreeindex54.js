@@ -1,5 +1,12 @@
 var NAVTREEINDEX54 =
 {
+"dc/d96/structxii_function_type.htm#aa1f281549634c67b2db3e16e4a220520a40d66527b2a1736eaaac0e1233b23afc":[4,0,389,1,3],
+"dc/d96/structxii_function_type.htm#aa1f281549634c67b2db3e16e4a220520a928de39758e8778c7234499476a0c497":[4,0,389,1,2],
+"dc/d96/structxii_function_type.htm#aa1f281549634c67b2db3e16e4a220520ac150232610215ceafcb9740638a8ce14":[4,0,389,1,1],
+"dc/d96/structxii_function_type.htm#aa1f281549634c67b2db3e16e4a220520ae85639ec5b786cb040da3e982b7ea2b3":[4,0,389,1,0],
+"dc/d97/structxii_g_a_l_map_flags_1_1_bits.htm":[4,0,480,0],
+"dc/d97/structxii_g_a_l_map_flags_1_1_bits.htm#a26abe787bfa1f38f8e52b6cf90e09c21":[4,0,480,0,2],
+"dc/d97/structxii_g_a_l_map_flags_1_1_bits.htm#a65913a80f383430c3e70ccf112d2967b":[4,0,480,0,0],
 "dc/d97/structxii_g_a_l_map_flags_1_1_bits.htm#aa86cd0d263f42ebc06f9dbbce2392332":[4,0,480,0,1],
 "dc/d98/structxii_variant_adapter_3_01_t_00_01_c_00_011_00_010_01_4.htm":[4,0,1322],
 "dc/d98/structxii_variant_adapter_3_01_t_00_01_c_00_011_00_010_01_4.htm#a0c87228770896cabeb9c4a06515703f6":[4,0,1322,2],
@@ -242,12 +249,5 @@ var NAVTREEINDEX54 =
 "dc/de0/classxii_tex_conv_desc.htm#ad867deccb018bd36f1a8f5862163397b":[4,0,1238,28],
 "dc/de0/classxii_tex_conv_desc.htm#ae023c68006da7ec792ceecc604f9bd43":[4,0,1238,14],
 "dc/de0/classxii_tex_conv_desc.htm#ae17a038ba69e3af2f9a6ae064a1c0c80":[4,0,1238,25],
-"dc/de0/classxii_tex_conv_desc.htm#af08065e1fc6536f9f646bbbfe33716bf":[4,0,1238,27],
-"dc/de0/classxii_tex_conv_desc.htm#af15205bad7358a7636499a5b302cdebf":[4,0,1238,21],
-"dc/de0/classxii_tex_conv_desc.htm#afa8d1662f35e41c61fc812f6d61d8405":[4,0,1238,18],
-"dc/de1/structxii_g_a_l_texture_data.htm":[4,0,581],
-"dc/de1/structxii_g_a_l_texture_data.htm#a8952ff783802f4d13e7e4ccc3ed88d5c":[4,0,581,0],
-"dc/de3/classxii_prefab_default_state_provider.htm":[4,0,888],
-"dc/de3/classxii_prefab_default_state_provider.htm#a2e39c011ccbca98e81ff621a0840ac2a":[4,0,888,2],
-"dc/de3/classxii_prefab_default_state_provider.htm#a577048f470ead2f69071aabfef5d6473":[4,0,888,3]
+"dc/de0/classxii_tex_conv_desc.htm#af08065e1fc6536f9f646bbbfe33716bf":[4,0,1238,27]
 };

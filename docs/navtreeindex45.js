@@ -1,5 +1,12 @@
 var NAVTREEINDEX45 =
 {
+"da/d7b/structxii_document_manager_1_1_event.htm":[4,0,291,0],
+"da/d7b/structxii_document_manager_1_1_event.htm#a460de63305a7c43b4261800aab240d99":[4,0,291,0,1],
+"da/d7b/structxii_document_manager_1_1_event.htm#a4eaef01bc69c0446030c72ccb78977ea":[4,0,291,0,3],
+"da/d7b/structxii_document_manager_1_1_event.htm#ab917341ad90de74049cc79314a6c34bb":[4,0,291,0,0],
+"da/d7b/structxii_document_manager_1_1_event.htm#ab917341ad90de74049cc79314a6c34bba656b019dbc46d4a1fe3080bc7a6431fa":[4,0,291,0,0,1],
+"da/d7b/structxii_document_manager_1_1_event.htm#ab917341ad90de74049cc79314a6c34bba7a9385b724d31d19c755a954292c2ced":[4,0,291,0,0,6],
+"da/d7b/structxii_document_manager_1_1_event.htm#ab917341ad90de74049cc79314a6c34bbaa3359826cae8835a6917c75549c123df":[4,0,291,0,0,0],
 "da/d7b/structxii_document_manager_1_1_event.htm#ab917341ad90de74049cc79314a6c34bbaa7fe566ed121ea3566c4b507ab5fb37c":[4,0,291,0,0,4],
 "da/d7b/structxii_document_manager_1_1_event.htm#ab917341ad90de74049cc79314a6c34bbab2796f8792536c1c00762c5e9751d5f3":[4,0,291,0,0,2],
 "da/d7b/structxii_document_manager_1_1_event.htm#ab917341ad90de74049cc79314a6c34bbad6b72a89fb56b1dcf34f45b0539b1248":[4,0,291,0,0,3],
@@ -242,12 +249,5 @@ var NAVTREEINDEX45 =
 "da/da5/structxii_resource_1_1_memory_usage.htm#aab5fb2ab4620359e1b5a3fbda196e96b":[4,0,1066,0,1],
 "da/da9/classxii_block_storage.htm":[4,0,113],
 "da/da9/classxii_block_storage.htm#a0a089d6692d8336820061dec415dd785":[4,0,113,7],
-"da/da9/classxii_block_storage.htm#a17775f2f2501f52f55c1f903f46d3af4":[4,0,113,6],
-"da/da9/classxii_block_storage.htm#a3382886b3f1d0a1d8a2a2d27bcca2244":[4,0,113,8],
-"da/da9/classxii_block_storage.htm#a50a927e345c865269e437c061232c7d4":[4,0,113,4],
-"da/da9/classxii_block_storage.htm#a5c966f6cf181121e791ea8ff6b267533":[4,0,113,9],
-"da/da9/classxii_block_storage.htm#a973b312d38834fb0c150d42c5e5dcf00":[4,0,113,5],
-"da/da9/classxii_block_storage.htm#aa1d77efce581187ffc89934c29f53a73":[4,0,113,3],
-"da/da9/classxii_block_storage.htm#ad30ca6d65324747a5f7d0a77d211b164":[4,0,113,2],
-"da/da9/classxii_block_storage.htm#af71546924dc80547bc5202ac24ba0034":[4,0,113,10]
+"da/da9/classxii_block_storage.htm#a17775f2f2501f52f55c1f903f46d3af4":[4,0,113,6]
 };

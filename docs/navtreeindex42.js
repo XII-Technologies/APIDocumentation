@@ -1,5 +1,12 @@
 var NAVTREEINDEX42 =
 {
+"d9/dbc/classxii_geometry.htm#a5d79c5d70b9ff4dce08fc3334d6b5656":[4,0,615,37],
+"d9/dbc/classxii_geometry.htm#a628c2195824da6902cf62a32f8b38ec8":[4,0,615,7],
+"d9/dbc/classxii_geometry.htm#a6db9d857c48654fb9018f910b3529ddf":[4,0,615,38],
+"d9/dbc/classxii_geometry.htm#a7162aadd8f8db864bd24d2da6f3935ee":[4,0,615,10],
+"d9/dbc/classxii_geometry.htm#a8c27472742de4df35fd8ee4cc998add1":[4,0,615,4],
+"d9/dbc/classxii_geometry.htm#a8e10c941c7f396a5935fe4b17ebbf9ae":[4,0,615,14],
+"d9/dbc/classxii_geometry.htm#a9bc296d525dd6f38a9f3b627929eba91":[4,0,615,11],
 "d9/dbc/classxii_geometry.htm#aa2c614fe7acde2d0f87951923df3964d":[4,0,615,13],
 "d9/dbc/classxii_geometry.htm#aa988862dd550c1d2405e9081fda28477":[4,0,615,40],
 "d9/dbc/classxii_geometry.htm#aadfc563612e80b0ea3f54a7badc6ae75":[4,0,615,28],
@@ -242,12 +249,5 @@ var NAVTREEINDEX42 =
 "d9/dfd/structxii_g_a_l_mesh_shader_properties.htm#a1fe0526e82d991ce332485ffab0c076a":[4,0,484,2],
 "d9/dfd/structxii_g_a_l_mesh_shader_properties.htm#abf56c514f05d7c25b66651031d6b2a6b":[4,0,484,1],
 "d9/dfd/structxii_g_a_l_mesh_shader_properties.htm#afe74c619837bc23e022c48112052cbdf":[4,0,484,3],
-"d9/dfe/classxii_world_module.htm":[4,0,1370],
-"d9/dfe/classxii_world_module.htm#a01634779f8effe43f379fc573b19aef8":[4,0,1370,14],
-"d9/dfe/classxii_world_module.htm#a09a0378a5e96ffa6b69fb55d4e59f8a4":[4,0,1370,11],
-"d9/dfe/classxii_world_module.htm#a1279f469fa1386bdf62213f76fc3426e":[4,0,1370,4],
-"d9/dfe/classxii_world_module.htm#a1536af5f9f223828a3afdf41894d91b6":[4,0,1370,5],
-"d9/dfe/classxii_world_module.htm#a16d173b58d687b947798145fcaf8d165":[4,0,1370,8],
-"d9/dfe/classxii_world_module.htm#a1e59fe270f35bbb2d98bb8d783033a80":[4,0,1370,15],
-"d9/dfe/classxii_world_module.htm#a29662236f3eaea05938c1c8e0fd9a608":[4,0,1370,12]
+"d9/dfe/classxii_world_module.htm":[4,0,1370]
 };

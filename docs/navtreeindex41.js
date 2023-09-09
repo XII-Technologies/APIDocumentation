@@ -1,5 +1,12 @@
 var NAVTREEINDEX41 =
 {
+"d9/d89/structxii_r_t_t_i_allocator.htm#acedf3db737756c95c9d0e8ab892ce80b":[4,0,1083,4],
+"d9/d89/structxii_r_t_t_i_allocator.htm#ae7e2a5d067857736839cfb961527d728":[4,0,1083,1],
+"d9/d8a/structxii_no_event_data.htm":[4,0,826],
+"d9/d8c/structxii_g_a_l_draw_command_capability_flags_1_1_bits.htm":[4,0,453,0],
+"d9/d8c/structxii_g_a_l_draw_command_capability_flags_1_1_bits.htm#a055743d4374eda6713a5f1f14a0b1d71":[4,0,453,0,3],
+"d9/d8c/structxii_g_a_l_draw_command_capability_flags_1_1_bits.htm#a45d4a1d182fff50c85a93e7a98027a05":[4,0,453,0,4],
+"d9/d8c/structxii_g_a_l_draw_command_capability_flags_1_1_bits.htm#a55d6c22b200a64e0b8c60f612e4f839b":[4,0,453,0,2],
 "d9/d8c/structxii_g_a_l_draw_command_capability_flags_1_1_bits.htm#a98af7280d86e04346e8127cde56a53af":[4,0,453,0,0],
 "d9/d8c/structxii_g_a_l_draw_command_capability_flags_1_1_bits.htm#acf33932ab04d88360d9ccc21c6d82eec":[4,0,453,0,1],
 "d9/d8d/classxii_bitfield.htm":[4,0,103],
@@ -199,8 +206,8 @@ var NAVTREEINDEX41 =
 "d9/da6/structxii_memory_mapped_file_impl.htm#abd0f01de1f8f9698bf06e0f349e4e506":[4,0,774,8],
 "d9/da6/structxii_memory_mapped_file_impl.htm#aca91dc13532648d843f00c7363b83e1e":[4,0,774,3],
 "d9/da6/structxii_memory_mapped_file_impl.htm#ae59f3562a4691173aef86973d45a8a10":[4,0,774,0],
-"d9/da6/structxii_memory_mapped_file_impl.htm#ae59f3562a4691173aef86973d45a8a10":[4,0,774,2],
 "d9/da6/structxii_memory_mapped_file_impl.htm#ae59f3562a4691173aef86973d45a8a10":[4,0,774,1],
+"d9/da6/structxii_memory_mapped_file_impl.htm#ae59f3562a4691173aef86973d45a8a10":[4,0,774,2],
 "d9/da6/structxii_memory_mapped_file_impl.htm#aff6c8b8424956195538c2cdc84280f27":[4,0,774,5],
 "d9/daa/classxii_qt_item_view.htm":[4,0,970],
 "d9/daa/classxii_qt_item_view.htm#a27e44f2adf0865c7bf84fb08fdf6ff2b":[4,0,970,5],
@@ -242,12 +249,5 @@ var NAVTREEINDEX41 =
 "d9/dbc/classxii_geometry.htm#a2dedba3cb3e977bd6856c706cfaf0052":[4,0,615,18],
 "d9/dbc/classxii_geometry.htm#a34854f6a9c59d7c3a794694c3410eea1":[4,0,615,31],
 "d9/dbc/classxii_geometry.htm#a475939ffe0d297f4e2ab651b25b68124":[4,0,615,23],
-"d9/dbc/classxii_geometry.htm#a56bbc4683f54745552db6c48fbd05524":[4,0,615,43],
-"d9/dbc/classxii_geometry.htm#a5d79c5d70b9ff4dce08fc3334d6b5656":[4,0,615,37],
-"d9/dbc/classxii_geometry.htm#a628c2195824da6902cf62a32f8b38ec8":[4,0,615,7],
-"d9/dbc/classxii_geometry.htm#a6db9d857c48654fb9018f910b3529ddf":[4,0,615,38],
-"d9/dbc/classxii_geometry.htm#a7162aadd8f8db864bd24d2da6f3935ee":[4,0,615,10],
-"d9/dbc/classxii_geometry.htm#a8c27472742de4df35fd8ee4cc998add1":[4,0,615,4],
-"d9/dbc/classxii_geometry.htm#a8e10c941c7f396a5935fe4b17ebbf9ae":[4,0,615,14],
-"d9/dbc/classxii_geometry.htm#a9bc296d525dd6f38a9f3b627929eba91":[4,0,615,11]
+"d9/dbc/classxii_geometry.htm#a56bbc4683f54745552db6c48fbd05524":[4,0,615,43]
 };
