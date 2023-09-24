@@ -9,6 +9,7 @@ var structxii_update_rate =
       [ "Max5fps", "dd/d0e/structxii_update_rate.htm#a000915187e2c5ef4a65d46bfc4e3a2b2a085ba61eba58e18e1ed5041e85b9bdda", null ],
       [ "Max2fps", "dd/d0e/structxii_update_rate.htm#a000915187e2c5ef4a65d46bfc4e3a2b2ae7669cc61660060baf64ca313b62aa85", null ],
       [ "Max1fps", "dd/d0e/structxii_update_rate.htm#a000915187e2c5ef4a65d46bfc4e3a2b2afe31c462ee936fe2d9b1c27d0506c0e1", null ],
+      [ "Never", "dd/d0e/structxii_update_rate.htm#a000915187e2c5ef4a65d46bfc4e3a2b2a264a3d42af0ecce85c7c6da8a46120b0", null ],
       [ "Default", "dd/d0e/structxii_update_rate.htm#a000915187e2c5ef4a65d46bfc4e3a2b2a238ee2881ed84ffe2b04f421278bbafa", null ]
     ] ]
 ];

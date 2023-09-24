@@ -162,8 +162,8 @@ var hierarchy =
     [ "xiiObjectMetaData< KEY, VALUE >::EventData", "d9/d9e/structxii_object_meta_data_1_1_event_data.htm", null ],
     [ "xiiInternal::EventMessageSenderHelper", "d9/dc2/structxii_internal_1_1_event_message_sender_helper.htm", null ],
     [ "xiiOSFile::EventType", "df/d5a/structxii_o_s_file_1_1_event_type.htm", null ],
-    [ "xiiOBJLoader::Face", "df/df3/structxii_o_b_j_loader_1_1_face.htm", null ],
     [ "xiiConvexHullGenerator::Face", "d0/dec/structxii_convex_hull_generator_1_1_face.htm", null ],
+    [ "xiiOBJLoader::Face", "df/df3/structxii_o_b_j_loader_1_1_face.htm", null ],
     [ "xiiOBJLoader::FaceVertex", "db/d30/structxii_o_b_j_loader_1_1_face_vertex.htm", null ],
     [ "xiiTokenizedFileCache::FileData", "df/ddb/structxii_tokenized_file_cache_1_1_file_data.htm", null ],
     [ "xiiFileSystem::FileEvent", "db/da4/structxii_file_system_1_1_file_event.htm", null ],
@@ -769,6 +769,13 @@ var hierarchy =
         ] ]
       ] ]
     ] ],
+    [ "xiiArrayBase< const xiiPropertyAttribute *, xiiDynamicArrayBase< const xiiPropertyAttribute * > >", "da/d4c/classxii_array_base.htm", [
+      [ "xiiDynamicArrayBase< const xiiPropertyAttribute * >", "d2/dea/classxii_dynamic_array_base.htm", [
+        [ "xiiDynamicArray< const xiiPropertyAttribute *, xiiDefaultAllocatorWrapper >", "dc/da4/classxii_dynamic_array.htm", [
+          [ "xiiHybridArray< const xiiPropertyAttribute *, 4 >", "dc/da9/classxii_hybrid_array.htm", null ]
+        ] ]
+      ] ]
+    ] ],
     [ "xiiArrayBase< const xiiQtPin *, xiiDynamicArrayBase< const xiiQtPin * > >", "da/d4c/classxii_array_base.htm", [
       [ "xiiDynamicArrayBase< const xiiQtPin * >", "d2/dea/classxii_dynamic_array_base.htm", [
         [ "xiiDynamicArray< const xiiQtPin * >", "dc/da4/classxii_dynamic_array.htm", null ]
@@ -867,6 +874,13 @@ var hierarchy =
     [ "xiiArrayBase< Module, xiiDynamicArrayBase< Module > >", "da/d4c/classxii_array_base.htm", [
       [ "xiiDynamicArrayBase< Module >", "d2/dea/classxii_dynamic_array_base.htm", [
         [ "xiiDynamicArray< Module >", "dc/da4/classxii_dynamic_array.htm", null ]
+      ] ]
+    ] ],
+    [ "xiiArrayBase< Part, xiiDynamicArrayBase< Part > >", "da/d4c/classxii_array_base.htm", [
+      [ "xiiDynamicArrayBase< Part >", "d2/dea/classxii_dynamic_array_base.htm", [
+        [ "xiiDynamicArray< Part, xiiDefaultAllocatorWrapper >", "dc/da4/classxii_dynamic_array.htm", [
+          [ "xiiHybridArray< Part, 4 >", "dc/da9/classxii_hybrid_array.htm", null ]
+        ] ]
       ] ]
     ] ],
     [ "xiiArrayBase< PastedObject, xiiDynamicArrayBase< PastedObject > >", "da/d4c/classxii_array_base.htm", [
@@ -3964,6 +3978,7 @@ var hierarchy =
           [ "xiiDefaultValueAttribute", "d3/dc3/classxii_default_value_attribute.htm", null ],
           [ "xiiDynamicPinAttribute", "d5/d94/classxii_dynamic_pin_attribute.htm", null ],
           [ "xiiExposeColorAlphaAttribute", "da/db3/classxii_expose_color_alpha_attribute.htm", null ],
+          [ "xiiFunctionArgumentAttributes", "da/d23/classxii_function_argument_attributes.htm", null ],
           [ "xiiGroupAttribute", "da/d19/classxii_group_attribute.htm", null ],
           [ "xiiHiddenAttribute", "db/df5/classxii_hidden_attribute.htm", null ],
           [ "xiiInDevelopmentAttribute", "d1/d62/classxii_in_development_attribute.htm", null ],
@@ -4097,6 +4112,7 @@ var hierarchy =
     [ "xiiPhysicsOverlapResult", "d0/d7f/structxii_physics_overlap_result.htm", null ],
     [ "xiiPhysicsOverlapResultArray", "d8/db4/structxii_physics_overlap_result_array.htm", null ],
     [ "xiiPhysicsQueryParameters", "d2/d9c/structxii_physics_query_parameters.htm", null ],
+    [ "xiiPhysicsTriangle", "d0/dc1/structxii_physics_triangle.htm", null ],
     [ "xiiPipeWin", "df/d45/structxii_pipe_win.htm", null ],
     [ "xiiPlaneTemplate< Type >", "d5/dd4/structxii_plane_template.htm", null ],
     [ "xiiPlaneTemplate< float >", "d5/dd4/structxii_plane_template.htm", null ],
@@ -4290,6 +4306,7 @@ var hierarchy =
     [ "xiiScriptCoroutineHandle", "df/d4e/structxii_script_coroutine_handle.htm", null ],
     [ "xiiScriptExtensionClass_Log", "d7/dae/classxii_script_extension_class___log.htm", null ],
     [ "xiiScriptInstance", "d4/d45/classxii_script_instance.htm", null ],
+    [ "xiiSearchPatternFilter", "dd/d81/classxii_search_pattern_filter.htm", null ],
     [ "xiiSelectedCurveCP", "db/dfc/structxii_selected_curve_c_p.htm", null ],
     [ "xiiSelectionManager", "d6/df0/classxii_selection_manager.htm", null ],
     [ "xiiSelectionManagerEvent", "d2/dd6/structxii_selection_manager_event.htm", null ],

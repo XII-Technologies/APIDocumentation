@@ -113,6 +113,9 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:acc5e0151f945abaeee891530ed49a9e2"><td class="memItemLeft" align="right" valign="top">virtual xiiUInt32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/da9/classxii_physics_world_module_interface.htm#acc5e0151f945abaeee891530ed49a9e2">GetCollisionLayerByName</a> (<a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sName) const =0</td></tr>
+<tr class="memdesc:acc5e0151f945abaeee891530ed49a9e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Searches for a collision layer with the given name and returns its index.  <a href="../../d0/da9/classxii_physics_world_module_interface.htm#acc5e0151f945abaeee891530ed49a9e2">More...</a><br /></td></tr>
+<tr class="separator:acc5e0151f945abaeee891530ed49a9e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a711031e9f2a45277101e919409e0e2a8"><td class="memItemLeft" align="right" valign="top"><a id="a711031e9f2a45277101e919409e0e2a8"></a>
 virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>Raycast</b> (<a class="el" href="../../d8/d2c/structxii_physics_cast_result.htm">xiiPhysicsCastResult</a> &amp;out_result, const <a class="el" href="../../d9/d9a/classxii_vec3_template.htm">xiiVec3</a> &amp;vStart, const <a class="el" href="../../d9/d9a/classxii_vec3_template.htm">xiiVec3</a> &amp;vDir, float fDistance, const <a class="el" href="../../d2/d9c/structxii_physics_query_parameters.htm">xiiPhysicsQueryParameters</a> &amp;params, xiiPhysicsHitCollection collection=xiiPhysicsHitCollection::Closest) const =0</td></tr>
 <tr class="separator:a711031e9f2a45277101e919409e0e2a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -140,6 +143,9 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>QueryShapesIn
 <tr class="memitem:ad5f85d71b7ccc267d671b6c2bcd4eb8a"><td class="memItemLeft" align="right" valign="top"><a id="ad5f85d71b7ccc267d671b6c2bcd4eb8a"></a>
 virtual <a class="el" href="../../d9/d9a/classxii_vec3_template.htm">xiiVec3</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetGravity</b> () const =0</td></tr>
 <tr class="separator:ad5f85d71b7ccc267d671b6c2bcd4eb8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8bf48b460dbade74ea031fb99431d3a"><td class="memItemLeft" align="right" valign="top"><a id="ae8bf48b460dbade74ea031fb99431d3a"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>QueryGeometryInBox</b> (const <a class="el" href="../../d2/d9c/structxii_physics_query_parameters.htm">xiiPhysicsQueryParameters</a> &amp;params, <a class="el" href="../../d2/dd6/classxii_bounding_box_template.htm">xiiBoundingBox</a> box, <a class="el" href="../../dc/da4/classxii_dynamic_array.htm">xiiDynamicArray</a>&lt; <a class="el" href="../../d0/dc1/structxii_physics_triangle.htm">xiiPhysicsTriangle</a> &gt; &amp;out_triangles) const =0</td></tr>
+<tr class="separator:ae8bf48b460dbade74ea031fb99431d3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9431e65cfaf8d779e1a021d31490b4df"><td class="memItemLeft" align="right" valign="top"><a id="a9431e65cfaf8d779e1a021d31490b4df"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/da9/classxii_physics_world_module_interface.htm#a9431e65cfaf8d779e1a021d31490b4df">AddStaticCollisionBox</a> (<a class="el" href="../../d0/d91/classxii_game_object.htm">xiiGameObject</a> *pOwner, <a class="el" href="../../d9/d9a/classxii_vec3_template.htm">xiiVec3</a> vBoxSize)</td></tr>
 <tr class="memdesc:a9431e65cfaf8d779e1a021d31490b4df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a static actor with a box shape to pOwner. <br /></td></tr>
@@ -237,6 +243,36 @@ using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../
 <a class="el" href="../../d6/d89/classxii_world.htm">xiiWorld</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_pWorld</b></td></tr>
 <tr class="separator:ad5ff01d82d6adebe16c27dc651480de1 inherit pro_attribs_classxii_world_module"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="acc5e0151f945abaeee891530ed49a9e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc5e0151f945abaeee891530ed49a9e2">&#9670;&nbsp;</a></span>GetCollisionLayerByName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual xiiUInt32 xiiPhysicsWorldModuleInterface::GetCollisionLayerByName </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a>&#160;</td>
+          <td class="paramname"><em>sName</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Searches for a collision layer with the given name and returns its index. </p>
+<p>Returns xiiInvalidIndex if no such collision layer exists. </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>/home/runner/work/XII/XII/Source/Engine/Core/Interfaces/<a class="el" href="../../de/d7f/_physics_world_module_8h_source.htm">PhysicsWorldModule.h</a></li>
 </ul>
@@ -246,7 +282,7 @@ using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d0/da9/classxii_physics_world_module_interface.htm">xiiPhysicsWorldModuleInterface</a></li>
-    <li class="footer">Generated on Sat Sep 9 2023 15:17:12 for XIIEngine by
+    <li class="footer">Generated on Sun Sep 24 2023 13:22:28 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

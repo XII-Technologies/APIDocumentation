@@ -3,6 +3,7 @@ var classxii_qt_search_widget =
     [ "xiiQtSearchWidget", "df/d50/classxii_qt_search_widget.htm#a2fc41b559ece3496701de660ca906641", null ],
     [ "enterPressed", "df/d50/classxii_qt_search_widget.htm#a0e9ba5a6755b2cc9545868fa0ac83165", null ],
     [ "eventFilter", "df/d50/classxii_qt_search_widget.htm#a966037cd1bc078dc531e4850463d5ab6", null ],
+    [ "selectAll", "df/d50/classxii_qt_search_widget.htm#a077e423074c80195e045815f159f227e", null ],
     [ "setPlaceholderText", "df/d50/classxii_qt_search_widget.htm#a7427b2a48b301678d78a18ef5b532b0a", null ],
     [ "setText", "df/d50/classxii_qt_search_widget.htm#a22f11645cfd1769a90743d2ac00b26f1", null ],
     [ "showEvent", "df/d50/classxii_qt_search_widget.htm#afd3412b346095b4e599f5321e7e02037", null ],

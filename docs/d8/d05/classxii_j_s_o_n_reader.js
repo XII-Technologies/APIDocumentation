@@ -1,11 +1,14 @@
 var classxii_j_s_o_n_reader =
 [
     [ "Element", "d7/d24/structxii_j_s_o_n_reader_1_1_element.htm", "d7/d24/structxii_j_s_o_n_reader_1_1_element" ],
-    [ "ElementMode", "d8/d05/classxii_j_s_o_n_reader.htm#a856d0615137db712c7e87e664f62ea7d", [
-      [ "Array", "d8/d05/classxii_j_s_o_n_reader.htm#a856d0615137db712c7e87e664f62ea7da4410ec34d9e6c1a68100ca0ce033fb17", null ],
-      [ "Dictionary", "d8/d05/classxii_j_s_o_n_reader.htm#a856d0615137db712c7e87e664f62ea7da3beb75d1563ebc22253341be4ce57f44", null ]
+    [ "ElementType", "d8/d05/classxii_j_s_o_n_reader.htm#aa769526b019a1de5ebd04ac9104abd48", [
+      [ "None", "d8/d05/classxii_j_s_o_n_reader.htm#aa769526b019a1de5ebd04ac9104abd48a6adf97f83acf6453d4a6a4b1070f3754", null ],
+      [ "Dictionary", "d8/d05/classxii_j_s_o_n_reader.htm#aa769526b019a1de5ebd04ac9104abd48a3beb75d1563ebc22253341be4ce57f44", null ],
+      [ "Array", "d8/d05/classxii_j_s_o_n_reader.htm#aa769526b019a1de5ebd04ac9104abd48a4410ec34d9e6c1a68100ca0ce033fb17", null ]
     ] ],
     [ "xiiJSONReader", "d8/d05/classxii_j_s_o_n_reader.htm#a1110d560721d23c749fcb7d79a73858f", null ],
+    [ "GetTopLevelArray", "d8/d05/classxii_j_s_o_n_reader.htm#a90739543a7ef04afb1581e034e1b3c02", null ],
+    [ "GetTopLevelElementType", "d8/d05/classxii_j_s_o_n_reader.htm#a032d93b94caf2ac2e85cb7f383572be3", null ],
     [ "GetTopLevelObject", "d8/d05/classxii_j_s_o_n_reader.htm#a589a8d86c795db31ddc41df2a4473904", null ],
     [ "OnBeginArray", "d8/d05/classxii_j_s_o_n_reader.htm#aa2b867e0526704e4c8da6b34eb2019bf", null ],
     [ "OnBeginObject", "d8/d05/classxii_j_s_o_n_reader.htm#a80bc4100c41f5388d2fe01eac54f9744", null ],

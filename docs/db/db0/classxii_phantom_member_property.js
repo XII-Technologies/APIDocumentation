@@ -5,5 +5,5 @@ var classxii_phantom_member_property =
     [ "GetPropertyPointer", "db/db0/classxii_phantom_member_property.htm#a153544c1f16d7ca7ab0711a35575e7f6", null ],
     [ "GetSpecificType", "db/db0/classxii_phantom_member_property.htm#a17e3e3a7b166df6cabe70ddaa976d900", null ],
     [ "GetValuePtr", "db/db0/classxii_phantom_member_property.htm#a68266bab8766f70c001a38a8b75492d7", null ],
-    [ "SetValuePtr", "db/db0/classxii_phantom_member_property.htm#a3dfa1b23d0bb50d6824e93deddca2e52", null ]
+    [ "SetValuePtr", "db/db0/classxii_phantom_member_property.htm#a0bf024638f22a133e5251d44d222158f", null ]
 ];

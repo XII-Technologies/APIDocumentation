@@ -102,9 +102,9 @@ Inheritance diagram for xiiInternal::MessageHandler&lt; bIsConst &gt;::Impl&lt; 
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a378cd3a8618df6500f33bd43edcb20e7"><td class="memItemLeft" align="right" valign="top"><a id="a378cd3a8618df6500f33bd43edcb20e7"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>Dispatch</b> (void *pInstance, <a class="el" href="../../d9/d55/classxii_message.htm">xiiMessage</a> &amp;ref_msg)</td></tr>
-<tr class="separator:a378cd3a8618df6500f33bd43edcb20e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6fa4ef104ee5489d44bb3e1d1846f2c7"><td class="memItemLeft" align="right" valign="top"><a id="a6fa4ef104ee5489d44bb3e1d1846f2c7"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>Dispatch</b> (<a class="el" href="../../d8/d84/classxii_abstract_message_handler.htm">xiiAbstractMessageHandler</a> *pSelf, void *pInstance, <a class="el" href="../../d9/d55/classxii_message.htm">xiiMessage</a> &amp;ref_msg)</td></tr>
+<tr class="separator:a6fa4ef104ee5489d44bb3e1d1846f2c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -122,17 +122,17 @@ XII_ALWAYS_INLINE xiiMessageId&#160;</td><td class="memItemRight" valign="bottom
 XII_ALWAYS_INLINE bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsConst</b> () const</td></tr>
 <tr class="separator:a353c35759197ca5ab73167bca16fa824 inherit pub_methods_classxii_abstract_message_handler"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_types_classxii_abstract_message_handler"><td colspan="2" onclick="javascript:toggleInherit('pro_types_classxii_abstract_message_handler')"><img src="../../closed.png" alt="-"/>&#160;Protected Types inherited from <a class="el" href="../../d8/d84/classxii_abstract_message_handler.htm">xiiAbstractMessageHandler</a></td></tr>
-<tr class="memitem:ad870523d3963ecc404e565b221c57463 inherit pro_types_classxii_abstract_message_handler"><td class="memItemLeft" align="right" valign="top"><a id="ad870523d3963ecc404e565b221c57463"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>DispatchFunc</b> = void(*)(void *, <a class="el" href="../../d9/d55/classxii_message.htm">xiiMessage</a> &amp;)</td></tr>
-<tr class="separator:ad870523d3963ecc404e565b221c57463 inherit pro_types_classxii_abstract_message_handler"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a26bc62e7ee635aae993c52f8b256ad52 inherit pro_types_classxii_abstract_message_handler"><td class="memItemLeft" align="right" valign="top"><a id="a26bc62e7ee635aae993c52f8b256ad52"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>ConstDispatchFunc</b> = void(*)(const void *, <a class="el" href="../../d9/d55/classxii_message.htm">xiiMessage</a> &amp;)</td></tr>
-<tr class="separator:a26bc62e7ee635aae993c52f8b256ad52 inherit pro_types_classxii_abstract_message_handler"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a507e29bf9d162b72b025817e90c97eea inherit pro_types_classxii_abstract_message_handler"><td class="memItemLeft" align="right" valign="top"><a id="a507e29bf9d162b72b025817e90c97eea"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>DispatchFunc</b> = void(*)(<a class="el" href="../../d8/d84/classxii_abstract_message_handler.htm">xiiAbstractMessageHandler</a> *pSelf, void *pInstance, <a class="el" href="../../d9/d55/classxii_message.htm">xiiMessage</a> &amp;)</td></tr>
+<tr class="separator:a507e29bf9d162b72b025817e90c97eea inherit pro_types_classxii_abstract_message_handler"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2282d014df3af7596d1e70bde1fd2183 inherit pro_types_classxii_abstract_message_handler"><td class="memItemLeft" align="right" valign="top"><a id="a2282d014df3af7596d1e70bde1fd2183"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>ConstDispatchFunc</b> = void(*)(<a class="el" href="../../d8/d84/classxii_abstract_message_handler.htm">xiiAbstractMessageHandler</a> *pSelf, const void *pInstance, <a class="el" href="../../d9/d55/classxii_message.htm">xiiMessage</a> &amp;)</td></tr>
+<tr class="separator:a2282d014df3af7596d1e70bde1fd2183 inherit pro_types_classxii_abstract_message_handler"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_classxii_abstract_message_handler"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classxii_abstract_message_handler')"><img src="../../closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="../../d8/d84/classxii_abstract_message_handler.htm">xiiAbstractMessageHandler</a></td></tr>
 <tr class="memitem:a48843000a18d502467050f673fb49ec3 inherit pro_attribs_classxii_abstract_message_handler"><td class="memItemLeft" ><a id="a48843000a18d502467050f673fb49ec3"></a>
 union {</td></tr>
 <tr class="memitem:a42b539fb955c0ddc6e01ad3d591df6a6 inherit pro_attribs_classxii_abstract_message_handler"><td class="memItemLeft" >
-&#160;&#160;&#160;DispatchFunc&#160;&#160;&#160;<b>m_DispatchFunc</b></td></tr>
+&#160;&#160;&#160;DispatchFunc&#160;&#160;&#160;<b>m_DispatchFunc</b> = nullptr</td></tr>
 <tr class="separator:a42b539fb955c0ddc6e01ad3d591df6a6 inherit pro_attribs_classxii_abstract_message_handler"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acb1c6d4a4c483badc3dc2f9383a7e594 inherit pro_attribs_classxii_abstract_message_handler"><td class="memItemLeft" >
 &#160;&#160;&#160;ConstDispatchFunc&#160;&#160;&#160;<b>m_ConstDispatchFunc</b></td></tr>
@@ -140,10 +140,10 @@ union {</td></tr>
 <tr class="memitem:a48843000a18d502467050f673fb49ec3 inherit pro_attribs_classxii_abstract_message_handler"><td class="memItemLeft" valign="top">};&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
 <tr class="separator:a48843000a18d502467050f673fb49ec3 inherit pro_attribs_classxii_abstract_message_handler"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af313c392a3fce6bba26f9dcb18df0db5 inherit pro_attribs_classxii_abstract_message_handler"><td class="memItemLeft" align="right" valign="top"><a id="af313c392a3fce6bba26f9dcb18df0db5"></a>
-xiiMessageId&#160;</td><td class="memItemRight" valign="bottom"><b>m_Id</b></td></tr>
+xiiMessageId&#160;</td><td class="memItemRight" valign="bottom"><b>m_Id</b> = xiiSmallInvalidIndex</td></tr>
 <tr class="separator:af313c392a3fce6bba26f9dcb18df0db5 inherit pro_attribs_classxii_abstract_message_handler"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a32bb2cf3d8f3537161a5ea3133b8be26 inherit pro_attribs_classxii_abstract_message_handler"><td class="memItemLeft" align="right" valign="top"><a id="a32bb2cf3d8f3537161a5ea3133b8be26"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_bIsConst</b></td></tr>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_bIsConst</b> = false</td></tr>
 <tr class="separator:a32bb2cf3d8f3537161a5ea3133b8be26 inherit pro_attribs_classxii_abstract_message_handler"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following file:<ul>
@@ -155,7 +155,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_bIsConst</b></td></
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>xiiInternal</b></li><li class="navelem"><a class="el" href="../../da/d27/structxii_internal_1_1_message_handler.htm">MessageHandler</a></li><li class="navelem"><a class="el" href="../../dd/db2/classxii_internal_1_1_message_handler_1_1_impl.htm">Impl</a></li>
-    <li class="footer">Generated on Sat Sep 9 2023 15:17:14 for XIIEngine by
+    <li class="footer">Generated on Sun Sep 24 2023 13:22:29 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

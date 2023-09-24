@@ -105,95 +105,96 @@ $(document).ready(function(){initNavTree('d0/df6/_interval_scheduler_8h_source.h
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    Max5fps,</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    Max2fps,</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    Max1fps,</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    Default = Max30fps</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  };</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  <span class="keyword">static</span> <a class="code" href="../../d7/dc1/structxii_time.htm">xiiTime</a> GetInterval(Enum updateRate);</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;};</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;XII_DECLARE_REFLECTABLE_TYPE(XII_CORE_DLL, <a class="code" href="../../dd/d0e/structxii_update_rate.htm">xiiUpdateRate</a>);</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
-<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="../../d8/d2c/classxii_interval_scheduler_base.htm">   34</a></span>&#160;<span class="keyword">class </span>XII_CORE_DLL <a class="code" href="../../d8/d2c/classxii_interval_scheduler_base.htm">xiiIntervalSchedulerBase</a></div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;{</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <a class="code" href="../../d8/d2c/classxii_interval_scheduler_base.htm">xiiIntervalSchedulerBase</a>(<a class="code" href="../../d7/dc1/structxii_time.htm">xiiTime</a> minInterval, <a class="code" href="../../d7/dc1/structxii_time.htm">xiiTime</a> maxInterval);</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  ~<a class="code" href="../../d8/d2c/classxii_interval_scheduler_base.htm">xiiIntervalSchedulerBase</a>();</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  xiiUInt32 GetHistogramIndex(<a class="code" href="../../d7/dc1/structxii_time.htm">xiiTime</a> value);</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <a class="code" href="../../d7/dc1/structxii_time.htm">xiiTime</a>   GetHistogramSlotValue(xiiUInt32 uiIndex);</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">float</span>   GetRandomZeroToOne(<span class="keywordtype">int</span> pos, xiiUInt32&amp; seed);</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <span class="keyword">static</span> <a class="code" href="../../d7/dc1/structxii_time.htm">xiiTime</a> GetRandomTimeJitter(<span class="keywordtype">int</span> pos, xiiUInt32&amp; seed);</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <a class="code" href="../../d7/dc1/structxii_time.htm">xiiTime</a> m_MinInterval;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <a class="code" href="../../d7/dc1/structxii_time.htm">xiiTime</a> m_MaxInterval;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <span class="keywordtype">double</span>  m_fInvIntervalRange;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <a class="code" href="../../d7/dc1/structxii_time.htm">xiiTime</a> m_CurrentTime;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <span class="keywordtype">double</span>  m_fNumWorkToSchedule = 0.0;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  xiiUInt32 m_uiSeed = 0;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <span class="keyword">static</span> constexpr xiiUInt32 HistogramSize                        = 32;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  xiiUInt32                  m_Histogram[HistogramSize]           = {};</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  <a class="code" href="../../d7/dc1/structxii_time.htm">xiiTime</a>                    m_HistogramSlotValues[HistogramSize] = {};</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;};</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="../../db/d37/classxii_interval_scheduler.htm">   64</a></span>&#160;<span class="keyword">class </span><a class="code" href="../../db/d37/classxii_interval_scheduler.htm">xiiIntervalScheduler</a> : <span class="keyword">public</span> <a class="code" href="../../d8/d2c/classxii_interval_scheduler_base.htm">xiiIntervalSchedulerBase</a></div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;{</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <span class="keyword">using</span> <a class="code" href="../../d8/d2c/classxii_interval_scheduler_base.htm">SUPER</a> = <a class="code" href="../../d8/d2c/classxii_interval_scheduler_base.htm">xiiIntervalSchedulerBase</a>;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  XII_ALWAYS_INLINE <a class="code" href="../../db/d37/classxii_interval_scheduler.htm">xiiIntervalScheduler</a>(<a class="code" href="../../d7/dc1/structxii_time.htm">xiiTime</a> minInterval = <a class="code" href="../../d7/dc1/structxii_time.htm#a350c072ea062ba8ed19357dac5047955">xiiTime::Milliseconds</a>(1), <a class="code" href="../../d7/dc1/structxii_time.htm">xiiTime</a> maxInterval = <a class="code" href="../../d7/dc1/structxii_time.htm#a0d30e51875577941d5f0e312d7041c76">xiiTime::Seconds</a>(1)) :</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <a class="code" href="../../d8/d2c/classxii_interval_scheduler_base.htm">SUPER</a>(minInterval, maxInterval)</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  {</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  }</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  <span class="keywordtype">void</span> AddOrUpdateWork(<span class="keyword">const</span> T&amp; work, <a class="code" href="../../d7/dc1/structxii_time.htm">xiiTime</a> interval);</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  <span class="keywordtype">void</span> RemoveWork(<span class="keyword">const</span> T&amp; work);</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  <a class="code" href="../../d7/dc1/structxii_time.htm">xiiTime</a> GetInterval(<span class="keyword">const</span> T&amp; work) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  <span class="comment">// reference to the work that should be run and time passed since this work has been last run.</span></div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  <span class="keyword">using</span> <a class="code" href="../../dc/d84/structxii_delegate.htm">RunWorkCallback</a> = <a class="code" href="../../dc/d84/structxii_delegate.htm">xiiDelegate</a>&lt;void(<span class="keyword">const</span> T&amp;, <a class="code" href="../../d7/dc1/structxii_time.htm">xiiTime</a>)&gt;;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="../../db/d37/classxii_interval_scheduler.htm#a2aa961b42d07fb4d9db366afea9d783d">Update</a>(<a class="code" href="../../d7/dc1/structxii_time.htm">xiiTime</a> deltaTime, <a class="code" href="../../dc/d84/structxii_delegate.htm">RunWorkCallback</a> runWorkCallback);</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  <span class="keyword">struct </span>Data</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  {</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    T       m_Work;</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <a class="code" href="../../d7/dc1/structxii_time.htm">xiiTime</a> m_Interval;</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <a class="code" href="../../d7/dc1/structxii_time.htm">xiiTime</a> m_DueTime;</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <a class="code" href="../../d7/dc1/structxii_time.htm">xiiTime</a> m_LastScheduledTime;</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="keywordtype">bool</span> IsValid() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keywordtype">void</span> MarkAsInvalid();</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  };</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  <span class="keyword">using</span> <a class="code" href="../../d6/df7/classxii_map.htm">DataMap</a> = <a class="code" href="../../d6/df7/classxii_map.htm">xiiMap&lt;xiiTime, Data&gt;</a>;</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  <a class="code" href="../../d6/df7/classxii_map.htm">DataMap</a>                                     m_Data;</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  <a class="code" href="../../d8/dc2/classxii_hash_table.htm">xiiHashTable&lt;T, typename DataMap::Iterator&gt;</a> m_WorkIdToData;</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; </div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  <span class="keyword">typename</span> DataMap::Iterator                  InsertData(Data&amp; data);</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;  <a class="code" href="../../dc/da4/classxii_dynamic_array.htm">xiiDynamicArray&lt;typename DataMap::Iterator&gt;</a> m_ScheduledWork;</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;};</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160; </div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="preprocessor">#include &lt;Core/Utils/Implementation/IntervalScheduler_inl.h&gt;</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    Never,</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    Default = Max30fps</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  };</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  <span class="keyword">static</span> <a class="code" href="../../d7/dc1/structxii_time.htm">xiiTime</a> GetInterval(Enum updateRate);</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;};</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;XII_DECLARE_REFLECTABLE_TYPE(XII_CORE_DLL, <a class="code" href="../../dd/d0e/structxii_update_rate.htm">xiiUpdateRate</a>);</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="../../d8/d2c/classxii_interval_scheduler_base.htm">   35</a></span>&#160;<span class="keyword">class </span>XII_CORE_DLL <a class="code" href="../../d8/d2c/classxii_interval_scheduler_base.htm">xiiIntervalSchedulerBase</a></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;{</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <a class="code" href="../../d8/d2c/classxii_interval_scheduler_base.htm">xiiIntervalSchedulerBase</a>(<a class="code" href="../../d7/dc1/structxii_time.htm">xiiTime</a> minInterval, <a class="code" href="../../d7/dc1/structxii_time.htm">xiiTime</a> maxInterval);</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  ~<a class="code" href="../../d8/d2c/classxii_interval_scheduler_base.htm">xiiIntervalSchedulerBase</a>();</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  xiiUInt32 GetHistogramIndex(<a class="code" href="../../d7/dc1/structxii_time.htm">xiiTime</a> value);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <a class="code" href="../../d7/dc1/structxii_time.htm">xiiTime</a>   GetHistogramSlotValue(xiiUInt32 uiIndex);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">float</span>   GetRandomZeroToOne(<span class="keywordtype">int</span> pos, xiiUInt32&amp; seed);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <span class="keyword">static</span> <a class="code" href="../../d7/dc1/structxii_time.htm">xiiTime</a> GetRandomTimeJitter(<span class="keywordtype">int</span> pos, xiiUInt32&amp; seed);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <a class="code" href="../../d7/dc1/structxii_time.htm">xiiTime</a> m_MinInterval;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <a class="code" href="../../d7/dc1/structxii_time.htm">xiiTime</a> m_MaxInterval;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <span class="keywordtype">double</span>  m_fInvIntervalRange;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <a class="code" href="../../d7/dc1/structxii_time.htm">xiiTime</a> m_CurrentTime;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <span class="keywordtype">double</span>  m_fNumWorkToSchedule = 0.0;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  xiiUInt32 m_uiSeed = 0;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <span class="keyword">static</span> constexpr xiiUInt32 HistogramSize                        = 32;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  xiiUInt32                  m_Histogram[HistogramSize]           = {};</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <a class="code" href="../../d7/dc1/structxii_time.htm">xiiTime</a>                    m_HistogramSlotValues[HistogramSize] = {};</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;};</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="../../db/d37/classxii_interval_scheduler.htm">   65</a></span>&#160;<span class="keyword">class </span><a class="code" href="../../db/d37/classxii_interval_scheduler.htm">xiiIntervalScheduler</a> : <span class="keyword">public</span> <a class="code" href="../../d8/d2c/classxii_interval_scheduler_base.htm">xiiIntervalSchedulerBase</a></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;{</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <span class="keyword">using</span> <a class="code" href="../../d8/d2c/classxii_interval_scheduler_base.htm">SUPER</a> = <a class="code" href="../../d8/d2c/classxii_interval_scheduler_base.htm">xiiIntervalSchedulerBase</a>;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  XII_ALWAYS_INLINE <a class="code" href="../../db/d37/classxii_interval_scheduler.htm">xiiIntervalScheduler</a>(<a class="code" href="../../d7/dc1/structxii_time.htm">xiiTime</a> minInterval = <a class="code" href="../../d7/dc1/structxii_time.htm#a350c072ea062ba8ed19357dac5047955">xiiTime::Milliseconds</a>(1), <a class="code" href="../../d7/dc1/structxii_time.htm">xiiTime</a> maxInterval = <a class="code" href="../../d7/dc1/structxii_time.htm#a0d30e51875577941d5f0e312d7041c76">xiiTime::Seconds</a>(1)) :</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <a class="code" href="../../d8/d2c/classxii_interval_scheduler_base.htm">SUPER</a>(minInterval, maxInterval)</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  {</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  }</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  <span class="keywordtype">void</span> AddOrUpdateWork(<span class="keyword">const</span> T&amp; work, <a class="code" href="../../d7/dc1/structxii_time.htm">xiiTime</a> interval);</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  <span class="keywordtype">void</span> RemoveWork(<span class="keyword">const</span> T&amp; work);</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  <a class="code" href="../../d7/dc1/structxii_time.htm">xiiTime</a> GetInterval(<span class="keyword">const</span> T&amp; work) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  <span class="comment">// reference to the work that should be run and time passed since this work has been last run.</span></div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  <span class="keyword">using</span> <a class="code" href="../../dc/d84/structxii_delegate.htm">RunWorkCallback</a> = <a class="code" href="../../dc/d84/structxii_delegate.htm">xiiDelegate</a>&lt;void(<span class="keyword">const</span> T&amp;, <a class="code" href="../../d7/dc1/structxii_time.htm">xiiTime</a>)&gt;;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="../../db/d37/classxii_interval_scheduler.htm#a2aa961b42d07fb4d9db366afea9d783d">Update</a>(<a class="code" href="../../d7/dc1/structxii_time.htm">xiiTime</a> deltaTime, <a class="code" href="../../dc/d84/structxii_delegate.htm">RunWorkCallback</a> runWorkCallback);</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  <span class="keyword">struct </span>Data</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  {</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    T       m_Work;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <a class="code" href="../../d7/dc1/structxii_time.htm">xiiTime</a> m_Interval;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <a class="code" href="../../d7/dc1/structxii_time.htm">xiiTime</a> m_DueTime;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <a class="code" href="../../d7/dc1/structxii_time.htm">xiiTime</a> m_LastScheduledTime;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keywordtype">bool</span> IsValid() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="keywordtype">void</span> MarkAsInvalid();</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  };</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  <span class="keyword">using</span> <a class="code" href="../../d6/df7/classxii_map.htm">DataMap</a> = <a class="code" href="../../d6/df7/classxii_map.htm">xiiMap&lt;xiiTime, Data&gt;</a>;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  <a class="code" href="../../d6/df7/classxii_map.htm">DataMap</a>                                     m_Data;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;  <a class="code" href="../../d8/dc2/classxii_hash_table.htm">xiiHashTable&lt;T, typename DataMap::Iterator&gt;</a> m_WorkIdToData;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160; </div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;  <span class="keyword">typename</span> DataMap::Iterator                  InsertData(Data&amp; data);</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;  <a class="code" href="../../dc/da4/classxii_dynamic_array.htm">xiiDynamicArray&lt;typename DataMap::Iterator&gt;</a> m_ScheduledWork;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;};</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160; </div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="preprocessor">#include &lt;Core/Utils/Implementation/IntervalScheduler_inl.h&gt;</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclassxii_interval_scheduler_base_htm"><div class="ttname"><a href="../../d8/d2c/classxii_interval_scheduler_base.htm">xiiIntervalSchedulerBase</a></div><div class="ttdoc">Helper class to schedule work in intervals typically larger than the duration of one frame.</div><div class="ttdef"><b>Definition:</b> IntervalScheduler.h:34</div></div>
-<div class="ttc" id="aclassxii_interval_scheduler_htm"><div class="ttname"><a href="../../db/d37/classxii_interval_scheduler.htm">xiiIntervalScheduler</a></div><div class="ttdef"><b>Definition:</b> IntervalScheduler.h:64</div></div>
+<div class="ttc" id="aclassxii_interval_scheduler_base_htm"><div class="ttname"><a href="../../d8/d2c/classxii_interval_scheduler_base.htm">xiiIntervalSchedulerBase</a></div><div class="ttdoc">Helper class to schedule work in intervals typically larger than the duration of one frame.</div><div class="ttdef"><b>Definition:</b> IntervalScheduler.h:35</div></div>
+<div class="ttc" id="aclassxii_interval_scheduler_htm"><div class="ttname"><a href="../../db/d37/classxii_interval_scheduler.htm">xiiIntervalScheduler</a></div><div class="ttdef"><b>Definition:</b> IntervalScheduler.h:65</div></div>
 <div class="ttc" id="astructxii_delegate_htm"><div class="ttname"><a href="../../dc/d84/structxii_delegate.htm">xiiDelegate</a></div><div class="ttdoc">A generic delegate class which supports static functions and member functions.</div><div class="ttdef"><b>Definition:</b> Delegate.h:75</div></div>
 <div class="ttc" id="astructxii_time_htm"><div class="ttname"><a href="../../d7/dc1/structxii_time.htm">xiiTime</a></div><div class="ttdoc">The time class encapsulates a double value storing the time in seconds.</div><div class="ttdef"><b>Definition:</b> Time.h:11</div></div>
 <div class="ttc" id="aclassxii_map_htm"><div class="ttname"><a href="../../d6/df7/classxii_map.htm">xiiMap&lt; xiiTime, Data &gt;</a></div></div>
 <div class="ttc" id="astructxii_update_rate_htm"><div class="ttname"><a href="../../dd/d0e/structxii_update_rate.htm">xiiUpdateRate</a></div><div class="ttdef"><b>Definition:</b> IntervalScheduler.h:6</div></div>
 <div class="ttc" id="astructxii_time_htm_a350c072ea062ba8ed19357dac5047955"><div class="ttname"><a href="../../d7/dc1/structxii_time.htm#a350c072ea062ba8ed19357dac5047955">xiiTime::Milliseconds</a></div><div class="ttdeci">constexpr static XII_ALWAYS_INLINE xiiTime Milliseconds(double fMilliseconds)</div><div class="ttdoc">Creates an instance of xiiTime that was initialized from milliseconds.</div><div class="ttdef"><b>Definition:</b> Time.h:24</div></div>
-<div class="ttc" id="aclassxii_interval_scheduler_htm_a2aa961b42d07fb4d9db366afea9d783d"><div class="ttname"><a href="../../db/d37/classxii_interval_scheduler.htm#a2aa961b42d07fb4d9db366afea9d783d">xiiIntervalScheduler::Update</a></div><div class="ttdeci">void Update(xiiTime deltaTime, RunWorkCallback runWorkCallback)</div><div class="ttdoc">Advances the scheduler by deltaTime and triggers runWorkCallback for each work that should be run dur...</div><div class="ttdef"><b>Definition:</b> IntervalScheduler_inl.h:103</div></div>
+<div class="ttc" id="aclassxii_interval_scheduler_htm_a2aa961b42d07fb4d9db366afea9d783d"><div class="ttname"><a href="../../db/d37/classxii_interval_scheduler.htm#a2aa961b42d07fb4d9db366afea9d783d">xiiIntervalScheduler::Update</a></div><div class="ttdeci">void Update(xiiTime deltaTime, RunWorkCallback runWorkCallback)</div><div class="ttdoc">Advances the scheduler by deltaTime and triggers runWorkCallback for each work that should be run dur...</div><div class="ttdef"><b>Definition:</b> IntervalScheduler_inl.h:109</div></div>
 <div class="ttc" id="aclassxii_dynamic_array_htm"><div class="ttname"><a href="../../dc/da4/classxii_dynamic_array.htm">xiiDynamicArray&lt; typename DataMap::Iterator &gt;</a></div></div>
 <div class="ttc" id="astructxii_time_htm_a0d30e51875577941d5f0e312d7041c76"><div class="ttname"><a href="../../d7/dc1/structxii_time.htm#a0d30e51875577941d5f0e312d7041c76">xiiTime::Seconds</a></div><div class="ttdeci">constexpr static XII_ALWAYS_INLINE xiiTime Seconds(double fSeconds)</div><div class="ttdoc">Creates an instance of xiiTime that was initialized from seconds.</div><div class="ttdef"><b>Definition:</b> Time.h:27</div></div>
 <div class="ttc" id="aclassxii_hash_table_htm"><div class="ttname"><a href="../../d8/dc2/classxii_hash_table.htm">xiiHashTable&lt; T, typename DataMap::Iterator &gt;</a></div></div>
@@ -201,7 +202,7 @@ $(document).ready(function(){initNavTree('d0/df6/_interval_scheduler_8h_source.h
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.htm">home</a></li><li class="navelem"><a class="el" href="../../dir_1036706e55c22cab35bc1c58ee689f1d.htm">runner</a></li><li class="navelem"><a class="el" href="../../dir_629f8151d55d307162ff2d619fb1783d.htm">work</a></li><li class="navelem"><a class="el" href="../../dir_1ddc44fe1263a8c7935fa6130b7d9499.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_2c1b6808f12952f4c36e05ba7068379a.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_b5a1c4ecfca018ad24b729e213296d41.htm">Source</a></li><li class="navelem"><a class="el" href="../../dir_e321052006a51284e67389ab20037e7c.htm">Engine</a></li><li class="navelem"><a class="el" href="../../dir_6934db396743bb3844d563c7fa1f32a7.htm">Core</a></li><li class="navelem"><a class="el" href="../../dir_adebcc6adcff8ac19ff9e173a546d91f.htm">Utils</a></li><li class="navelem"><b>IntervalScheduler.h</b></li>
-    <li class="footer">Generated on Sat Sep 9 2023 15:17:05 for XIIEngine by
+    <li class="footer">Generated on Sun Sep 24 2023 13:22:21 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

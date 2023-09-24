@@ -807,8 +807,11 @@ $(document).ready(function(){initNavTree('d5/d0a/_variant__inl_8h_source.htm','.
 <div class="line"><a name="l00719"></a><span class="lineno">  719</span>&#160;    <span class="keywordflow">return</span> (xiiUInt32)uiHash;</div>
 <div class="line"><a name="l00720"></a><span class="lineno">  720</span>&#160;  }</div>
 <div class="line"><a name="l00721"></a><span class="lineno">  721</span>&#160; </div>
-<div class="line"><a name="l00722"></a><span class="lineno">  722</span>&#160;  XII_ALWAYS_INLINE <span class="keyword">static</span> <span class="keywordtype">bool</span> Equal(<span class="keyword">const</span> <a class="code" href="../../db/d1a/classxii_variant.htm">xiiVariant</a>&amp; a, <span class="keyword">const</span> <a class="code" href="../../db/d1a/classxii_variant.htm">xiiVariant</a>&amp; b) { <span class="keywordflow">return</span> a == b; }</div>
-<div class="line"><a name="l00723"></a><span class="lineno">  723</span>&#160;};</div>
+<div class="line"><a name="l00722"></a><span class="lineno">  722</span>&#160;  XII_ALWAYS_INLINE <span class="keyword">static</span> <span class="keywordtype">bool</span> Equal(<span class="keyword">const</span> <a class="code" href="../../db/d1a/classxii_variant.htm">xiiVariant</a>&amp; a, <span class="keyword">const</span> <a class="code" href="../../db/d1a/classxii_variant.htm">xiiVariant</a>&amp; b)</div>
+<div class="line"><a name="l00723"></a><span class="lineno">  723</span>&#160;  {</div>
+<div class="line"><a name="l00724"></a><span class="lineno">  724</span>&#160;    <span class="keywordflow">return</span> a.<a class="code" href="../../db/d1a/classxii_variant.htm#a8143bdbbbeb646f8db6e154f5092957f">GetType</a>() == b.<a class="code" href="../../db/d1a/classxii_variant.htm#a8143bdbbbeb646f8db6e154f5092957f">GetType</a>() &amp;&amp; a == b;</div>
+<div class="line"><a name="l00725"></a><span class="lineno">  725</span>&#160;  }</div>
+<div class="line"><a name="l00726"></a><span class="lineno">  726</span>&#160;};</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="astructxii_variant_type_htm_a38d867476ba7137c38a09976ece9ee6ba0fbd097229a58c90f8ed48a28cb04d36"><div class="ttname"><a href="../../dd/dba/structxii_variant_type.htm#a38d867476ba7137c38a09976ece9ee6ba0fbd097229a58c90f8ed48a28cb04d36">xiiVariantType::Vector3U64</a></div><div class="ttdeci">@ Vector3U64</div><div class="ttdoc">The variant stores a xiiVec3U64. A heap allocation is required to store this data type.</div><div class="ttdef"><b>Definition:</b> VariantType.h:53</div></div>
@@ -909,7 +912,7 @@ $(document).ready(function(){initNavTree('d5/d0a/_variant__inl_8h_source.htm','.
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.htm">home</a></li><li class="navelem"><a class="el" href="../../dir_1036706e55c22cab35bc1c58ee689f1d.htm">runner</a></li><li class="navelem"><a class="el" href="../../dir_629f8151d55d307162ff2d619fb1783d.htm">work</a></li><li class="navelem"><a class="el" href="../../dir_1ddc44fe1263a8c7935fa6130b7d9499.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_2c1b6808f12952f4c36e05ba7068379a.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_b5a1c4ecfca018ad24b729e213296d41.htm">Source</a></li><li class="navelem"><a class="el" href="../../dir_e321052006a51284e67389ab20037e7c.htm">Engine</a></li><li class="navelem"><a class="el" href="../../dir_be0c42c58b36f42c54ec54024ed4f6af.htm">Foundation</a></li><li class="navelem"><a class="el" href="../../dir_fd654f0525c8869fa0409c81d19e3265.htm">Types</a></li><li class="navelem"><a class="el" href="../../dir_013c87a4ce253332bc225fb61b1de856.htm">Implementation</a></li><li class="navelem"><b>Variant_inl.h</b></li>
-    <li class="footer">Generated on Sat Sep 9 2023 15:17:09 for XIIEngine by
+    <li class="footer">Generated on Sun Sep 24 2023 13:22:25 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

@@ -6,5 +6,5 @@ var classxii_bitflags_member_property =
     [ "xiiBitflagsMemberProperty", "d1/d27/classxii_bitflags_member_property.htm#a345c45b2fe0713792ac5eccbd0762b3f", null ],
     [ "GetPropertyPointer", "d1/d27/classxii_bitflags_member_property.htm#a431c47f7454be0f6325a6376658b0f0f", null ],
     [ "GetValue", "d1/d27/classxii_bitflags_member_property.htm#ad4c1d4afe00ce1178c5523782ec9efe9", null ],
-    [ "SetValue", "d1/d27/classxii_bitflags_member_property.htm#a0258c047cad4726fcacbb426b232b092", null ]
+    [ "SetValue", "d1/d27/classxii_bitflags_member_property.htm#abebcea2941cfc0d8a0f8df616f061676", null ]
 ];

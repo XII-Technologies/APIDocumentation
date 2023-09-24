@@ -6,5 +6,5 @@ var classxii_accessor_property =
     [ "xiiAccessorProperty", "d4/dfb/classxii_accessor_property.htm#ab39b4959e0cd67007bad9108b8a21b87", null ],
     [ "GetPropertyPointer", "d4/dfb/classxii_accessor_property.htm#adcd79f7a18d4019c71e21e5b14a85988", null ],
     [ "GetValue", "d4/dfb/classxii_accessor_property.htm#a5e794b7c056add04c4b9fb03558f23fb", null ],
-    [ "SetValue", "d4/dfb/classxii_accessor_property.htm#ace1354fe29975832f0f39bdb9943d15e", null ]
+    [ "SetValue", "d4/dfb/classxii_accessor_property.htm#a9c6ea6a85c90d1ab907770ec35cf1a71", null ]
 ];

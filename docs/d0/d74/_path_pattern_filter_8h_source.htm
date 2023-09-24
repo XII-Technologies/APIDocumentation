@@ -89,53 +89,52 @@ $(document).ready(function(){initNavTree('d0/d74/_path_pattern_filter_8h_source.
 <div class="contents">
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;Foundation/Containers/DynamicArray.h&gt;</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;Foundation/Strings/String.h&gt;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;Foundation/Strings/StringView.h&gt;</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;ToolsFoundation/ToolsFoundationDLL.h&gt;</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
-<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="../../d4/d8e/structxii_path_pattern.htm">   13</a></span>&#160;<span class="keyword">struct </span>XII_TOOLSFOUNDATION_DLL <a class="code" href="../../d4/d8e/structxii_path_pattern.htm">xiiPathPattern</a></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;{</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;  <span class="keyword">enum</span> MatchType : xiiUInt8</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;  {</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    Exact,</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    StartsWith,</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    EndsWith,</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    Contains</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  };</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  MatchType m_MatchType = MatchType::Exact;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  <a class="code" href="../../df/dfb/structxii_hybrid_string.htm">xiiString</a> m_sString;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  <span class="keywordtype">void</span> Configure(<span class="keyword">const</span> <a class="code" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sText);</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  <span class="keywordtype">bool</span> Matches(<span class="keyword">const</span> <a class="code" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sText) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;};</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
-<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="../../d9/d62/structxii_path_pattern_filter.htm">   35</a></span>&#160;<span class="keyword">struct </span>XII_TOOLSFOUNDATION_DLL <a class="code" href="../../d9/d62/structxii_path_pattern_filter.htm">xiiPathPatternFilter</a></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;{</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <a class="code" href="../../dc/da4/classxii_dynamic_array.htm">xiiDynamicArray&lt;xiiPathPattern&gt;</a> m_ExcludePatterns;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <a class="code" href="../../dc/da4/classxii_dynamic_array.htm">xiiDynamicArray&lt;xiiPathPattern&gt;</a> m_IncludePatterns;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <a class="code" href="../../dd/dad/structxii_result.htm">xiiResult</a> ReadConfigFile(<a class="code" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sFile, <span class="keyword">const</span> <a class="code" href="../../dc/da4/classxii_dynamic_array.htm">xiiDynamicArray&lt;xiiString&gt;</a>&amp; preprocessorDefines);</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <span class="keywordtype">void</span> AddFilter(<a class="code" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sText, <span class="keywordtype">bool</span> bIncludeFilter);</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <span class="keywordtype">bool</span> PassesFilters(<a class="code" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sText) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;};</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;ToolsFoundation/ToolsFoundationDLL.h&gt;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;Foundation/Strings/String.h&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="../../d4/d8e/structxii_path_pattern.htm">   12</a></span>&#160;<span class="keyword">struct </span>XII_TOOLSFOUNDATION_DLL <a class="code" href="../../d4/d8e/structxii_path_pattern.htm">xiiPathPattern</a></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;{</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;  <span class="keyword">enum</span> MatchType : xiiUInt8</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;  {</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    Exact,</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    StartsWith,</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    EndsWith,</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    Contains</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  };</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  MatchType m_MatchType = MatchType::Exact;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  <a class="code" href="../../df/dfb/structxii_hybrid_string.htm">xiiString</a> m_sString;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  <span class="keywordtype">void</span> Configure(<span class="keyword">const</span> <a class="code" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sText);</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  <span class="keywordtype">bool</span> Matches(<span class="keyword">const</span> <a class="code" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sText) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;};</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="../../d9/d62/structxii_path_pattern_filter.htm">   34</a></span>&#160;<span class="keyword">struct </span>XII_TOOLSFOUNDATION_DLL <a class="code" href="../../d9/d62/structxii_path_pattern_filter.htm">xiiPathPatternFilter</a></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;{</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  <a class="code" href="../../dc/da4/classxii_dynamic_array.htm">xiiDynamicArray&lt;xiiPathPattern&gt;</a> m_ExcludePatterns;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <a class="code" href="../../dc/da4/classxii_dynamic_array.htm">xiiDynamicArray&lt;xiiPathPattern&gt;</a> m_IncludePatterns;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <a class="code" href="../../dd/dad/structxii_result.htm">xiiResult</a> ReadConfigFile(<a class="code" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sFile, <span class="keyword">const</span> <a class="code" href="../../dc/da4/classxii_dynamic_array.htm">xiiDynamicArray&lt;xiiString&gt;</a>&amp; preprocessorDefines);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <span class="keywordtype">void</span> AddFilter(<a class="code" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sText, <span class="keywordtype">bool</span> bIncludeFilter);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <span class="keywordtype">bool</span> PassesFilters(<a class="code" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sText) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;};</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="astructxii_hybrid_string_htm"><div class="ttname"><a href="../../df/dfb/structxii_hybrid_string.htm">xiiHybridString&lt; 32, xiiDefaultAllocatorWrapper &gt;</a></div></div>
-<div class="ttc" id="astructxii_path_pattern_filter_htm"><div class="ttname"><a href="../../d9/d62/structxii_path_pattern_filter.htm">xiiPathPatternFilter</a></div><div class="ttdoc">A collection of xiiPathPatterns.</div><div class="ttdef"><b>Definition:</b> PathPatternFilter.h:35</div></div>
+<div class="ttc" id="astructxii_path_pattern_filter_htm"><div class="ttname"><a href="../../d9/d62/structxii_path_pattern_filter.htm">xiiPathPatternFilter</a></div><div class="ttdoc">A collection of xiiPathPatterns.</div><div class="ttdef"><b>Definition:</b> PathPatternFilter.h:34</div></div>
 <div class="ttc" id="astructxii_string_view_htm"><div class="ttname"><a href="../../da/d9d/structxii_string_view.htm">xiiStringView</a></div><div class="ttdoc">xiiStringView represent a read-only sub-string of a larger string, as it can store a dedicated string...</div><div class="ttdef"><b>Definition:</b> StringView.h:23</div></div>
 <div class="ttc" id="aclassxii_dynamic_array_htm"><div class="ttname"><a href="../../dc/da4/classxii_dynamic_array.htm">xiiDynamicArray&lt; xiiPathPattern &gt;</a></div></div>
 <div class="ttc" id="astructxii_result_htm"><div class="ttname"><a href="../../dd/dad/structxii_result.htm">xiiResult</a></div><div class="ttdoc">Default enum for returning failure or success, instead of using a bool.</div><div class="ttdef"><b>Definition:</b> Types.h:54</div></div>
-<div class="ttc" id="astructxii_path_pattern_htm"><div class="ttname"><a href="../../d4/d8e/structxii_path_pattern.htm">xiiPathPattern</a></div><div class="ttdoc">Describes a single path pattern.</div><div class="ttdef"><b>Definition:</b> PathPatternFilter.h:13</div></div>
+<div class="ttc" id="astructxii_path_pattern_htm"><div class="ttname"><a href="../../d4/d8e/structxii_path_pattern.htm">xiiPathPattern</a></div><div class="ttdoc">Describes a single path pattern.</div><div class="ttdef"><b>Definition:</b> PathPatternFilter.h:12</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.htm">home</a></li><li class="navelem"><a class="el" href="../../dir_1036706e55c22cab35bc1c58ee689f1d.htm">runner</a></li><li class="navelem"><a class="el" href="../../dir_629f8151d55d307162ff2d619fb1783d.htm">work</a></li><li class="navelem"><a class="el" href="../../dir_1ddc44fe1263a8c7935fa6130b7d9499.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_2c1b6808f12952f4c36e05ba7068379a.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_b5a1c4ecfca018ad24b729e213296d41.htm">Source</a></li><li class="navelem"><a class="el" href="../../dir_64f53f8da7bf780a58c32bb848e7873b.htm">Tools</a></li><li class="navelem"><a class="el" href="../../dir_4b5bc41f7c4cbfc8ca80bdea56300f1d.htm">Libs</a></li><li class="navelem"><a class="el" href="../../dir_ba58a103e79106e89914cc52b64849d5.htm">ToolsFoundation</a></li><li class="navelem"><a class="el" href="../../dir_ac0adbc37a4992c356298d1140ad63dd.htm">Utilities</a></li><li class="navelem"><b>PathPatternFilter.h</b></li>
-    <li class="footer">Generated on Sat Sep 9 2023 15:17:10 for XIIEngine by
+    <li class="footer">Generated on Sun Sep 24 2023 13:22:26 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>
