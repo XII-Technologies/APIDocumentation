@@ -55,7 +55,7 @@ var classxii_g_a_l_device =
     [ "DestroyQuery", "d5/d19/classxii_g_a_l_device.htm#ac98a53a51523c6bd5fdf4eea318cabc9", null ],
     [ "DestroyRasterizerState", "d5/d19/classxii_g_a_l_device.htm#aad8d90f24286dfae7d44d5cc3e2f6777", null ],
     [ "DestroyRenderPass", "d5/d19/classxii_g_a_l_device.htm#a26e1311a7a4edd959e05e81d0b51d426", null ],
-    [ "DestroySampler", "d5/d19/classxii_g_a_l_device.htm#a2b2ad4769f0188d4c3c44d8c585b39ab", null ],
+    [ "DestroySampler", "d5/d19/classxii_g_a_l_device.htm#abceabd4c3f69cc202ab40c027c09492e", null ],
     [ "DestroyShader", "d5/d19/classxii_g_a_l_device.htm#ad85481f3cf1bfad8b1617650c29d4aa1", null ],
     [ "DestroySwapChain", "d5/d19/classxii_g_a_l_device.htm#a17d69babe30036259ce51d04f3dca6e3", null ],
     [ "DestroyTexture", "d5/d19/classxii_g_a_l_device.htm#acb5d8e014a6dedefc705c4dbb060477c", null ],

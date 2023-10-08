@@ -2,6 +2,7 @@ var classxii_g_a_l_swap_chain =
 [
     [ "xiiGALSwapChain", "d5/d07/classxii_g_a_l_swap_chain.htm#a2bafc6c37617e467f9008565fa8e9eaa", null ],
     [ "~xiiGALSwapChain", "d5/d07/classxii_g_a_l_swap_chain.htm#a85c258bd7c14071ebca6e8243c8ff65a", null ],
+    [ "AcquireNextRenderTarget", "d5/d07/classxii_g_a_l_swap_chain.htm#ac49523c9018ad668de32827dd5e212f4", null ],
     [ "DeInitPlatform", "d5/d07/classxii_g_a_l_swap_chain.htm#a707af76edf9d1e8fbba566bd7c6ab387", null ],
     [ "GetCurrentBackBufferRTV", "d5/d07/classxii_g_a_l_swap_chain.htm#aae023fa5a7721d97c2986031da6e5c92", null ],
     [ "GetDepthBufferDSV", "d5/d07/classxii_g_a_l_swap_chain.htm#a9a6e66caa2d67be111a942c324abb5a1", null ],
