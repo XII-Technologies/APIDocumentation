@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['wait_4244',['Wait',['../d6/d79/classxii_g_a_l_fence.htm#a4eaf4f634511f54ffa675f1a3ef85c6a',1,'xiiGALFence']]],
+  ['wait_4244',['Wait',['../d1/d8c/classxii_g_a_l_fence_d3_d12.htm#ab502272f171cba4df24fd52fccc4ff11',1,'xiiGALFenceD3D12::Wait()'],['../d6/d79/classxii_g_a_l_fence.htm#a4eaf4f634511f54ffa675f1a3ef85c6a',1,'xiiGALFence::Wait()']]],
   ['waitforcondition_4245',['WaitForCondition',['../d1/dc7/classxii_task_system.htm#a938348c90a96d83bf4c00164a38a44c5',1,'xiiTaskSystem']]],
   ['waitforconnectiontoserver_4246',['WaitForConnectionToServer',['../d4/d68/classxii_remote_interface.htm#a08022869c6c09b7f8034e4f09df1f5d8',1,'xiiRemoteInterface']]],
   ['waitforgroup_4247',['WaitForGroup',['../d1/dc7/classxii_task_system.htm#a963a8991058db60db283652275958c94',1,'xiiTaskSystem']]],

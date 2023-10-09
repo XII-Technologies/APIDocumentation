@@ -336,7 +336,7 @@ var searchData=
   ['shutdownhighlevelsystems_3847',['ShutdownHighLevelSystems',['../dd/d8e/classxii_startup.htm#a785be7a33e589ff3da1d1d7e7e2b7c12',1,'xiiStartup']]],
   ['sienna_3848',['Sienna',['../d3/de6/classxii_color.htm#ab75eca22e83c3c2712ad2153e11bc2a3',1,'xiiColor']]],
   ['sign_3849',['Sign',['../d1/d37/namespacexii_math.htm#a367e0a2f31f1691c165d0871f3b709ff',1,'xiiMath::Sign(T f)'],['../d1/d37/namespacexii_math.htm#a48a82e9e2ea5c2a49caf87967d4f2012',1,'xiiMath::Sign(T f)']]],
-  ['signal_3850',['Signal',['../d6/d79/classxii_g_a_l_fence.htm#ad8678bfd477e7cb583f20aac304b9bc6',1,'xiiGALFence']]],
+  ['signal_3850',['Signal',['../d1/d8c/classxii_g_a_l_fence_d3_d12.htm#a2bd5973f1e9392609b7cd7f1e306f445',1,'xiiGALFenceD3D12::Signal()'],['../d6/d79/classxii_g_a_l_fence.htm#ad8678bfd477e7cb583f20aac304b9bc6',1,'xiiGALFence::Signal()']]],
   ['signalall_3851',['SignalAll',['../d4/d28/classxii_condition_variable.htm#a05c8449d15088c69f526b910788c05e9',1,'xiiConditionVariable']]],
   ['signalone_3852',['SignalOne',['../d4/d28/classxii_condition_variable.htm#abdd0b48c92e5dba0aee52250613d8c89',1,'xiiConditionVariable']]],
   ['signedinteger_3853',['SignedInteger',['../de/d7d/structxii_g_a_l_texture_format_component_type.htm#a6442fba8dc46b3b6efd2193ad2964cbfaa5f4fc9457f00994027e90d0bc31dcb6',1,'xiiGALTextureFormatComponentType']]],
