@@ -2754,7 +2754,9 @@ var hierarchy =
       ] ]
     ] ],
     [ "xiiGALResource< xiiGALBufferViewCreationDescription >", "d4/d2d/classxii_g_a_l_resource.htm", [
-      [ "xiiGALBufferView", "d8/dcf/classxii_g_a_l_buffer_view.htm", null ]
+      [ "xiiGALBufferView", "d8/dcf/classxii_g_a_l_buffer_view.htm", [
+        [ "xiiGALBufferViewD3D12", "d9/d44/classxii_g_a_l_buffer_view_d3_d12.htm", null ]
+      ] ]
     ] ],
     [ "xiiGALResource< xiiGALFenceCreationDescription >", "d4/d2d/classxii_g_a_l_resource.htm", [
       [ "xiiGALFence", "d6/d79/classxii_g_a_l_fence.htm", [
@@ -2762,7 +2764,9 @@ var hierarchy =
       ] ]
     ] ],
     [ "xiiGALResource< xiiGALFramebufferCreationDescription >", "d4/d2d/classxii_g_a_l_resource.htm", [
-      [ "xiiGALFramebuffer", "db/d39/classxii_g_a_l_framebuffer.htm", null ]
+      [ "xiiGALFramebuffer", "db/d39/classxii_g_a_l_framebuffer.htm", [
+        [ "xiiGALFramebufferD3D12", "d6/dcb/classxii_g_a_l_framebuffer_d3_d12.htm", null ]
+      ] ]
     ] ],
     [ "xiiGALResource< xiiGALQueryCreationDescription >", "d4/d2d/classxii_g_a_l_resource.htm", [
       [ "xiiGALQuery", "d8/db3/classxii_g_a_l_query.htm", [
@@ -2770,7 +2774,9 @@ var hierarchy =
       ] ]
     ] ],
     [ "xiiGALResource< xiiGALRenderPassCreationDescription >", "d4/d2d/classxii_g_a_l_resource.htm", [
-      [ "xiiGALRenderPass", "d1/dbe/classxii_g_a_l_render_pass.htm", null ]
+      [ "xiiGALRenderPass", "d1/dbe/classxii_g_a_l_render_pass.htm", [
+        [ "xiiGALRenderPassD3D12", "d8/dc6/classxii_g_a_l_render_pass_d3_d12.htm", null ]
+      ] ]
     ] ],
     [ "xiiGALResource< xiiGALSamplerCreationDescription >", "d4/d2d/classxii_g_a_l_resource.htm", [
       [ "xiiGALSampler", "d3/d97/classxii_g_a_l_sampler.htm", [
@@ -2786,7 +2792,9 @@ var hierarchy =
       ] ]
     ] ],
     [ "xiiGALResource< xiiGALTextureViewCreationDescription >", "d4/d2d/classxii_g_a_l_resource.htm", [
-      [ "xiiGALTextureView", "da/d75/classxii_g_a_l_texture_view.htm", null ]
+      [ "xiiGALTextureView", "da/d75/classxii_g_a_l_texture_view.htm", [
+        [ "xiiGALTextureViewD3D12", "df/dbc/classxii_g_a_l_texture_view_d3_d12.htm", null ]
+      ] ]
     ] ],
     [ "xiiGALResource< xiiGALTopLevelASCreationDescription >", "d4/d2d/classxii_g_a_l_resource.htm", [
       [ "xiiGALTopLevelAS", "de/de7/classxii_g_a_l_top_level_a_s.htm", null ]
