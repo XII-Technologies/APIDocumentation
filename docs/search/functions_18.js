@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['yieldhardwarethread_13839',['YieldHardwareThread',['../d4/d5c/classxii_thread_utils.htm#a64bc4ccc0b0f27b8bea0abb655f20ec3',1,'xiiThreadUtils']]],
-  ['yieldtimeslice_13840',['YieldTimeSlice',['../d4/d5c/classxii_thread_utils.htm#a5c2611b2861de635d4d99c3a7e61afda',1,'xiiThreadUtils']]]
+  ['yieldhardwarethread_13841',['YieldHardwareThread',['../d4/d5c/classxii_thread_utils.htm#a64bc4ccc0b0f27b8bea0abb655f20ec3',1,'xiiThreadUtils']]],
+  ['yieldtimeslice_13842',['YieldTimeSlice',['../d4/d5c/classxii_thread_utils.htm#a5c2611b2861de635d4d99c3a7e61afda',1,'xiiThreadUtils']]]
 ];

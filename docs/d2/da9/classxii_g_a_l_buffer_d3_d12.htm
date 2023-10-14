@@ -125,9 +125,8 @@ virtual <a class="el" href="../../d7/d55/structxii_bitflags.htm">xiiBitflags</a>
 <tr class="memitem:abf29e775761a16e5e6bb6272fb1523c4"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/da9/classxii_g_a_l_buffer_d3_d12.htm#abf29e775761a16e5e6bb6272fb1523c4">InvalidateMappedRange</a> (xiiUInt64 uiStartOffset, xiiUInt64 uiSize) override</td></tr>
 <tr class="memdesc:abf29e775761a16e5e6bb6272fb1523c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">This invalidates the specified range of non-coherent memory modified by the GPU to make it visible to the CPU.  <a href="../../d2/da9/classxii_g_a_l_buffer_d3_d12.htm#abf29e775761a16e5e6bb6272fb1523c4">More...</a><br /></td></tr>
 <tr class="separator:abf29e775761a16e5e6bb6272fb1523c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a956994142d9865b4ec1d240f7e2fce8c"><td class="memItemLeft" align="right" valign="top"><a id="a956994142d9865b4ec1d240f7e2fce8c"></a>
-virtual <a class="el" href="../../df/dfa/structxii_g_a_l_sparse_buffer_properties.htm">xiiGALSparseBufferProperties</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/da9/classxii_g_a_l_buffer_d3_d12.htm#a956994142d9865b4ec1d240f7e2fce8c">GetSparseProperties</a> () const override</td></tr>
-<tr class="memdesc:a956994142d9865b4ec1d240f7e2fce8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">This returns the sparse buffer memory properties. <br /></td></tr>
+<tr class="memitem:a956994142d9865b4ec1d240f7e2fce8c"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../df/dfa/structxii_g_a_l_sparse_buffer_properties.htm">xiiGALSparseBufferProperties</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/da9/classxii_g_a_l_buffer_d3_d12.htm#a956994142d9865b4ec1d240f7e2fce8c">GetSparseProperties</a> () const override</td></tr>
+<tr class="memdesc:a956994142d9865b4ec1d240f7e2fce8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">This returns the sparse buffer memory properties.  <a href="../../d2/da9/classxii_g_a_l_buffer_d3_d12.htm#a956994142d9865b4ec1d240f7e2fce8c">More...</a><br /></td></tr>
 <tr class="separator:a956994142d9865b4ec1d240f7e2fce8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a84d9cdadc0262067714eca9638e18555"><td class="memItemLeft" align="right" valign="top"><a id="a84d9cdadc0262067714eca9638e18555"></a>
 const XII_ALWAYS_INLINE Diligent::IBuffer *&#160;</td><td class="memItemRight" valign="bottom"><b>GetBuffer</b> () const</td></tr>
@@ -259,6 +258,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>xiiMemoryUtils</b></
 <dl class="section return"><dt>Returns</dt><dd>The handle to the buffer view.</dd></dl>
 <dl class="section remark"><dt>Remarks</dt><dd>Default views are only created for structured and raw buffers. As for formatted buffers the view format is unknown at buffer initialization time, no default views are created.</dd></dl>
 <dl class="section note"><dt>Note</dt><dd>The function does not increase the reference counter for the returned interface, so ReleaseRef() must <em>NOT</em> be called. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.htm#_todo000050">Todo:</a></b></dt><dd>GraphicsD3D12: Not yet implemented. </dd></dl>
 
 <p>Implements <a class="el" href="../../da/d03/classxii_g_a_l_buffer.htm#a92bcb7894de5e64c3df81db39e6464e3">xiiGALBuffer</a>.</p>
 
@@ -289,8 +289,39 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>xiiMemoryUtils</b></
 
 <p>This returns the buffer memory properties. </p>
 <p>The memory properties are only relevant for persistently mapped buffers. In particular, if the memory is not coherent, an application must call <a class="el" href="../../da/d03/classxii_g_a_l_buffer.htm#a3f80adde59a6beb4ea0d26b914034d7e" title="This flushes the specified range of non-coherent memory from the host cache to make it available to t...">xiiGALBuffer::FlushMappedRange()</a> to make writes by the CPU available to the GPU, and call <a class="el" href="../../da/d03/classxii_g_a_l_buffer.htm#aeb2d4d7481820f03be61f05ce1333832" title="This invalidates the specified range of non-coherent memory modified by the GPU to make it visible to...">xiiGALBuffer::InvalidateMappedRange()</a> to make writes by the GPU visible to the CPU. </p>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.htm#_todo000051">Todo:</a></b></dt><dd>GraphicsD3D12: Not yet implemented. </dd></dl>
 
 <p>Implements <a class="el" href="../../da/d03/classxii_g_a_l_buffer.htm#a1e4ebe46466708c2045863a89776b2c9">xiiGALBuffer</a>.</p>
+
+</div>
+</div>
+<a id="a956994142d9865b4ec1d240f7e2fce8c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a956994142d9865b4ec1d240f7e2fce8c">&#9670;&nbsp;</a></span>GetSparseProperties()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">XII_ALWAYS_INLINE <a class="el" href="../../df/dfa/structxii_g_a_l_sparse_buffer_properties.htm">xiiGALSparseBufferProperties</a> xiiGALBufferD3D12::GetSparseProperties </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This returns the sparse buffer memory properties. </p>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.htm#_todo000052">Todo:</a></b></dt><dd>GraphicsD3D12: Not yet implemented. </dd></dl>
+
+<p>Implements <a class="el" href="../../da/d03/classxii_g_a_l_buffer.htm#ac4ab27795b6de355a7d0e9fe73c4f19c">xiiGALBuffer</a>.</p>
 
 </div>
 </div>
@@ -385,7 +416,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>xiiMemoryUtils</b></
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d2/da9/classxii_g_a_l_buffer_d3_d12.htm">xiiGALBufferD3D12</a></li>
-    <li class="footer">Generated on Mon Oct 9 2023 19:12:16 for XIIEngine by
+    <li class="footer">Generated on Sat Oct 14 2023 14:38:06 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>
