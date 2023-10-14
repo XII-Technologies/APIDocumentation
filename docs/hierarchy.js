@@ -51,11 +51,11 @@ var hierarchy =
     [ "xiiVisualizerAnchor::Bits", "dd/d39/structxii_visualizer_anchor_1_1_bits.htm", null ],
     [ "xiiInputSlotFlags::Bits", "de/def/structxii_input_slot_flags_1_1_bits.htm", null ],
     [ "xiiDynamicMenuAction::Item::ItemFlags::Bits", "d9/dbf/structxii_dynamic_menu_action_1_1_item_1_1_item_flags_1_1_bits.htm", null ],
-    [ "xiiStandardMenuTypes::Bits", "dd/d51/structxii_standard_menu_types_1_1_bits.htm", null ],
     [ "xiiCVarFlags::Bits", "d3/df8/structxii_c_var_flags_1_1_bits.htm", null ],
-    [ "xiiNodeFlags::Bits", "d9/d5a/structxii_node_flags_1_1_bits.htm", null ],
+    [ "xiiStandardMenuTypes::Bits", "dd/d51/structxii_standard_menu_types_1_1_bits.htm", null ],
     [ "xiiObjectFlags::Bits", "de/d49/structxii_object_flags_1_1_bits.htm", null ],
     [ "xiiPluginLoadFlags::Bits", "df/d92/structxii_plugin_load_flags_1_1_bits.htm", null ],
+    [ "xiiNodeFlags::Bits", "d9/d5a/structxii_node_flags_1_1_bits.htm", null ],
     [ "xiiQtNodeScene::ConnectionDecorationFlags::Bits", "d8/d80/structxii_qt_node_scene_1_1_connection_decoration_flags_1_1_bits.htm", null ],
     [ "xiiRTTI::ForEachOptions::Bits", "d3/d64/structxii_r_t_t_i_1_1_for_each_options_1_1_bits.htm", null ],
     [ "xiiTypeFlags::Bits", "da/dce/structxii_type_flags_1_1_bits.htm", null ],
@@ -2746,7 +2746,9 @@ var hierarchy =
     [ "xiiGALRenderPassHandle", "dd/dce/classxii_g_a_l_render_pass_handle.htm", null ],
     [ "xiiGALResource< CreationDescription >", "d4/d2d/classxii_g_a_l_resource.htm", null ],
     [ "xiiGALResource< xiiGALBottomLevelASCreationDescription >", "d4/d2d/classxii_g_a_l_resource.htm", [
-      [ "xiiGALBottomLevelAS", "dc/d29/classxii_g_a_l_bottom_level_a_s.htm", null ]
+      [ "xiiGALBottomLevelAS", "dc/d29/classxii_g_a_l_bottom_level_a_s.htm", [
+        [ "xiiGALBottomLevelASD3D12", "de/d3f/classxii_g_a_l_bottom_level_a_s_d3_d12.htm", null ]
+      ] ]
     ] ],
     [ "xiiGALResource< xiiGALBufferCreationDescription >", "d4/d2d/classxii_g_a_l_resource.htm", [
       [ "xiiGALBuffer", "da/d03/classxii_g_a_l_buffer.htm", [
@@ -2797,7 +2799,9 @@ var hierarchy =
       ] ]
     ] ],
     [ "xiiGALResource< xiiGALTopLevelASCreationDescription >", "d4/d2d/classxii_g_a_l_resource.htm", [
-      [ "xiiGALTopLevelAS", "de/de7/classxii_g_a_l_top_level_a_s.htm", null ]
+      [ "xiiGALTopLevelAS", "de/de7/classxii_g_a_l_top_level_a_s.htm", [
+        [ "xiiGALTopLevelASD3D12", "d9/dd8/classxii_g_a_l_top_level_a_s_d3_d12.htm", null ]
+      ] ]
     ] ],
     [ "xiiGALResourceDimension", "da/d4c/structxii_g_a_l_resource_dimension.htm", [
       [ "xiiEnum< xiiGALResourceDimension >", "de/dfd/structxii_enum.htm", null ]
