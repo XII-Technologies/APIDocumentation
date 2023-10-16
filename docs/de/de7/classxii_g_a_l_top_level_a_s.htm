@@ -102,9 +102,10 @@ Inheritance diagram for xiiGALTopLevelAS:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../dd/d21/classxii_g_a_l_top_level_a_s__inherit__graph.png" border="0" usemap="#xii_g_a_l_top_level_a_s_inherit__map" alt="Inheritance graph"/></div>
 <map name="xii_g_a_l_top_level_a_s_inherit__map" id="xii_g_a_l_top_level_a_s_inherit__map">
-<area shape="rect" title="Interface that defines methods to manipulate a top level acceleration structure (TLAS) object." alt="" coords="46,95,183,121"/>
-<area shape="rect" href="../../d9/dd8/classxii_g_a_l_top_level_a_s_d3_d12.htm" title=" " alt="" coords="24,169,205,196"/>
-<area shape="rect" href="../../d4/d2d/classxii_g_a_l_resource.htm" title=" " alt="" coords="5,5,224,47"/>
+<area shape="rect" title="Interface that defines methods to manipulate a top level acceleration structure (TLAS) object." alt="" coords="130,95,267,121"/>
+<area shape="rect" href="../../d9/dd8/classxii_g_a_l_top_level_a_s_d3_d12.htm" title=" " alt="" coords="5,169,187,196"/>
+<area shape="rect" href="../../da/daa/classxii_g_a_l_top_level_a_s_vulkan.htm" title=" " alt="" coords="211,169,391,196"/>
+<area shape="rect" href="../../d4/d2d/classxii_g_a_l_resource.htm" title=" " alt="" coords="89,5,308,47"/>
 </map>
 <center><span class="legend">[<a target="top" href="../../graph_legend.htm">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -189,7 +190,7 @@ Additional Inherited Members</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>The top level acceleration structure build description, see <a class="el" href="../../d1/d60/structxii_g_a_l_top_level_a_s_build_description.htm" title="This describes the top level acceleration state that was used in the last build.">xiiGALTopLevelASBuildDescription</a>.</dd></dl>
 <dl class="section note"><dt>Note</dt><dd>Access to the top level acceleration structure must be externally synchronized. </dd></dl>
 
-<p>Implemented in <a class="el" href="../../d9/dd8/classxii_g_a_l_top_level_a_s_d3_d12.htm#a7d954c463caa54ffe243ee5f6a4ee491">xiiGALTopLevelASD3D12</a>.</p>
+<p>Implemented in <a class="el" href="../../d9/dd8/classxii_g_a_l_top_level_a_s_d3_d12.htm#a7d954c463caa54ffe243ee5f6a4ee491">xiiGALTopLevelASD3D12</a>, and <a class="el" href="../../da/daa/classxii_g_a_l_top_level_a_s_vulkan.htm#ad1f9f490b6b2a3334345d87fc2908cca">xiiGALTopLevelASVulkan</a>.</p>
 
 </div>
 </div>
@@ -227,7 +228,7 @@ Additional Inherited Members</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>The top level acceleration structure instance description, see <a class="el" href="../../d9/d45/structxii_g_a_l_top_level_a_s_instance_description.htm" title="This describes the top level acceleration structure instance.">xiiGALTopLevelASInstanceDescription</a>. If the instance does not exist, then the contribution to hit group index and instance index are set to xiiInvalidIndex.</dd></dl>
 <dl class="section note"><dt>Note</dt><dd>Access to the top level acceleration structure must be externally synchronized. </dd></dl>
 
-<p>Implemented in <a class="el" href="../../d9/dd8/classxii_g_a_l_top_level_a_s_d3_d12.htm#a8596aa9188ccf747c12e17f73d2a10ec">xiiGALTopLevelASD3D12</a>.</p>
+<p>Implemented in <a class="el" href="../../d9/dd8/classxii_g_a_l_top_level_a_s_d3_d12.htm#a8596aa9188ccf747c12e17f73d2a10ec">xiiGALTopLevelASD3D12</a>, and <a class="el" href="../../da/daa/classxii_g_a_l_top_level_a_s_vulkan.htm#a412535e29c4d5a978a60a3bd5488c7f2">xiiGALTopLevelASVulkan</a>.</p>
 
 </div>
 </div>
@@ -257,7 +258,7 @@ Additional Inherited Members</h2></td></tr>
 <p>This returns the scratch buffer information for the current acceleration structure. </p>
 <dl class="section return"><dt>Returns</dt><dd>The scratch buffer size description, see <a class="el" href="../../d5/d4c/structxii_g_a_l_scratch_buffer_size_description.htm" title="This describes the scratch buffer information for the acceleration structure.">xiiGALScratchBufferSizeDescription</a>. </dd></dl>
 
-<p>Implemented in <a class="el" href="../../d9/dd8/classxii_g_a_l_top_level_a_s_d3_d12.htm#a8badf12129f294a562b260829d90253c">xiiGALTopLevelASD3D12</a>.</p>
+<p>Implemented in <a class="el" href="../../d9/dd8/classxii_g_a_l_top_level_a_s_d3_d12.htm#a8badf12129f294a562b260829d90253c">xiiGALTopLevelASD3D12</a>, and <a class="el" href="../../da/daa/classxii_g_a_l_top_level_a_s_vulkan.htm#a9cf3791121376c07199cf4c78b078b64">xiiGALTopLevelASVulkan</a>.</p>
 
 </div>
 </div>
@@ -288,7 +289,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Sets the acceleration structure usage state. </p>
 <dl class="section note"><dt>Note</dt><dd>This method does not perform state transition, but resets the internal acceleration structure state to the given value. This method should be used after the application finished manually managing the acceleration structure state and wants to hand over state management back to the engine. </dd></dl>
 
-<p>Implemented in <a class="el" href="../../d9/dd8/classxii_g_a_l_top_level_a_s_d3_d12.htm#ad90f83dfa6cb54231aa6b20d7932e02d">xiiGALTopLevelASD3D12</a>.</p>
+<p>Implemented in <a class="el" href="../../d9/dd8/classxii_g_a_l_top_level_a_s_d3_d12.htm#ad90f83dfa6cb54231aa6b20d7932e02d">xiiGALTopLevelASD3D12</a>, and <a class="el" href="../../da/daa/classxii_g_a_l_top_level_a_s_vulkan.htm#aad6c5f82b2ebe2ebecbcc82ffa2769f1">xiiGALTopLevelASVulkan</a>.</p>
 
 </div>
 </div>
@@ -302,7 +303,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../de/de7/classxii_g_a_l_top_level_a_s.htm">xiiGALTopLevelAS</a></li>
-    <li class="footer">Generated on Sat Oct 14 2023 18:05:08 for XIIEngine by
+    <li class="footer">Generated on Mon Oct 16 2023 03:11:06 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

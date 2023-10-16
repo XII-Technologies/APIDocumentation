@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['wait_4245',['Wait',['../d1/d8c/classxii_g_a_l_fence_d3_d12.htm#ab502272f171cba4df24fd52fccc4ff11',1,'xiiGALFenceD3D12::Wait()'],['../d6/d79/classxii_g_a_l_fence.htm#a4eaf4f634511f54ffa675f1a3ef85c6a',1,'xiiGALFence::Wait()']]],
+  ['wait_4245',['Wait',['../d1/d8c/classxii_g_a_l_fence_d3_d12.htm#ab502272f171cba4df24fd52fccc4ff11',1,'xiiGALFenceD3D12::Wait()'],['../d6/d79/classxii_g_a_l_fence.htm#a4eaf4f634511f54ffa675f1a3ef85c6a',1,'xiiGALFence::Wait()'],['../dc/df3/classxii_g_a_l_fence_vulkan.htm#af8fde9d1b72155c0bf7c27ca34b9727b',1,'xiiGALFenceVulkan::Wait()']]],
   ['waitforcondition_4246',['WaitForCondition',['../d1/dc7/classxii_task_system.htm#a938348c90a96d83bf4c00164a38a44c5',1,'xiiTaskSystem']]],
   ['waitforconnectiontoserver_4247',['WaitForConnectionToServer',['../d4/d68/classxii_remote_interface.htm#a08022869c6c09b7f8034e4f09df1f5d8',1,'xiiRemoteInterface']]],
   ['waitforgroup_4248',['WaitForGroup',['../d1/dc7/classxii_task_system.htm#a963a8991058db60db283652275958c94',1,'xiiTaskSystem']]],

@@ -45,7 +45,6 @@ var classxii_g_a_l_device_d3_d12 =
     [ "GetFactory", "d8/d77/classxii_g_a_l_device_d3_d12.htm#af3bdb7cd64d073aa5e9a28ab7154c471", null ],
     [ "GetFormatLookupTable", "d8/d77/classxii_g_a_l_device_d3_d12.htm#a35246f16e4cf1c62ab1943e42695b3f8", null ],
     [ "GetImmediateContext", "d8/d77/classxii_g_a_l_device_d3_d12.htm#a908e98962542d2dc45ee4eb906218b9c", null ],
-    [ "GetValidationLevel", "d8/d77/classxii_g_a_l_device_d3_d12.htm#a8b0d912436f9c7b88340fd0a3516504d", null ],
     [ "InitializePlatform", "d8/d77/classxii_g_a_l_device_d3_d12.htm#ae603e6ed1faca78d10b8fdf64e1ac0ef", null ],
     [ "ReportLiveGPUObjects", "d8/d77/classxii_g_a_l_device_d3_d12.htm#aadf38985455d231f3428a70340a927c3", null ],
     [ "ShutdownPlatform", "d8/d77/classxii_g_a_l_device_d3_d12.htm#a1fc2d7e5e10c6d7a4adbbbebd30ce873", null ],

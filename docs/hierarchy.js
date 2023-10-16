@@ -50,8 +50,8 @@ var hierarchy =
     [ "xiiDependencyFlags::Bits", "d3/db0/structxii_dependency_flags_1_1_bits.htm", null ],
     [ "xiiVisualizerAnchor::Bits", "dd/d39/structxii_visualizer_anchor_1_1_bits.htm", null ],
     [ "xiiInputSlotFlags::Bits", "de/def/structxii_input_slot_flags_1_1_bits.htm", null ],
-    [ "xiiDynamicMenuAction::Item::ItemFlags::Bits", "d9/dbf/structxii_dynamic_menu_action_1_1_item_1_1_item_flags_1_1_bits.htm", null ],
     [ "xiiCVarFlags::Bits", "d3/df8/structxii_c_var_flags_1_1_bits.htm", null ],
+    [ "xiiDynamicMenuAction::Item::ItemFlags::Bits", "d9/dbf/structxii_dynamic_menu_action_1_1_item_1_1_item_flags_1_1_bits.htm", null ],
     [ "xiiStandardMenuTypes::Bits", "dd/d51/structxii_standard_menu_types_1_1_bits.htm", null ],
     [ "xiiObjectFlags::Bits", "de/d49/structxii_object_flags_1_1_bits.htm", null ],
     [ "xiiPluginLoadFlags::Bits", "df/d92/structxii_plugin_load_flags_1_1_bits.htm", null ],
@@ -183,6 +183,9 @@ var hierarchy =
     [ "xiiInternal::HashHelperImpl< T, isString >", "d0/dd6/structxii_internal_1_1_hash_helper_impl.htm", null ],
     [ "xiiInternal::HashHelperImpl< T, true >", "d2/d62/structxii_internal_1_1_hash_helper_impl_3_01_t_00_01true_01_4.htm", null ],
     [ "xiiLogWriter::HTML", "d3/d7f/classxii_log_writer_1_1_h_t_m_l.htm", null ],
+    [ "IMemoryAllocator", null, [
+      [ "xiiAllocatorDiligent", "df/d1b/structxii_allocator_diligent.htm", null ]
+    ] ],
     [ "xiiPlugin::Init", "de/d5a/structxii_plugin_1_1_init.htm", null ],
     [ "xiiVirtualThumbStick::Input", "df/de8/structxii_virtual_thumb_stick_1_1_input.htm", null ],
     [ "xiiMathExpression::Input", "d6/df2/structxii_math_expression_1_1_input.htm", null ],
@@ -1012,9 +1015,6 @@ var hierarchy =
         [ "xiiDynamicArray< typename DataMap::Iterator >", "dc/da4/classxii_dynamic_array.htm", null ]
       ] ]
     ] ],
-    [ "xiiArrayBase< vk::PipelineColorBlendAttachmentState, xiiStaticArray< vk::PipelineColorBlendAttachmentState, Capacity > >", "da/d4c/classxii_array_base.htm", [
-      [ "xiiStaticArray< vk::PipelineColorBlendAttachmentState, XII_GAL_MAX_RENDERTARGET_COUNT >", "d9/d25/classxii_static_array.htm", null ]
-    ] ],
     [ "xiiArrayBase< void *, xiiDynamicArrayBase< void * > >", "da/d4c/classxii_array_base.htm", [
       [ "xiiDynamicArrayBase< void * >", "d2/dea/classxii_dynamic_array_base.htm", [
         [ "xiiDynamicArray< void * >", "dc/da4/classxii_dynamic_array.htm", null ]
@@ -1370,6 +1370,9 @@ var hierarchy =
     ] ],
     [ "xiiArrayBase< xiiGALFormatLookupEntryD3D12, xiiStaticArray< xiiGALFormatLookupEntryD3D12, Capacity > >", "da/d4c/classxii_array_base.htm", [
       [ "xiiStaticArray< xiiGALFormatLookupEntryD3D12, xiiGALTextureFormat::ENUM_COUNT >", "d9/d25/classxii_static_array.htm", null ]
+    ] ],
+    [ "xiiArrayBase< xiiGALFormatLookupEntryVulkan, xiiStaticArray< xiiGALFormatLookupEntryVulkan, Capacity > >", "da/d4c/classxii_array_base.htm", [
+      [ "xiiStaticArray< xiiGALFormatLookupEntryVulkan, xiiGALTextureFormat::ENUM_COUNT >", "d9/d25/classxii_static_array.htm", null ]
     ] ],
     [ "xiiArrayBase< xiiGALLayoutElement, xiiStaticArray< xiiGALLayoutElement, Capacity > >", "da/d4c/classxii_array_base.htm", [
       [ "xiiStaticArray< xiiGALLayoutElement, XII_GAL_MAX_LAYOUT_ELEMENTS >", "d9/d25/classxii_static_array.htm", null ]
@@ -2690,6 +2693,9 @@ var hierarchy =
       [ "xiiEnum< xiiGALDeviceFeatureState >", "de/dfd/structxii_enum.htm", null ]
     ] ],
     [ "xiiGALDeviceHandle", "dc/d8b/classxii_g_a_l_device_handle.htm", null ],
+    [ "xiiGALDeviceValidationLevel", "d2/df5/structxii_g_a_l_device_validation_level.htm", [
+      [ "xiiEnum< xiiGALDeviceValidationLevel >", "de/dfd/structxii_enum.htm", null ]
+    ] ],
     [ "xiiGALDrawCommandCapabilityFlags", "dc/dd9/structxii_g_a_l_draw_command_capability_flags.htm", null ],
     [ "xiiGALFenceHandle", "dd/dc8/classxii_g_a_l_fence_handle.htm", null ],
     [ "xiiGALFenceType", "d9/d08/structxii_g_a_l_fence_type.htm", [
@@ -2704,6 +2710,7 @@ var hierarchy =
     [ "xiiGALFormatLookupEntry< NativeFormatType, InvalidFormat >", "d5/de0/classxii_g_a_l_format_lookup_entry.htm", null ],
     [ "xiiGALFormatLookupTable< FormatClass >", "d3/daa/classxii_g_a_l_format_lookup_table.htm", null ],
     [ "xiiGALFormatLookupTable< xiiGALFormatLookupEntryD3D12 >", "d3/daa/classxii_g_a_l_format_lookup_table.htm", null ],
+    [ "xiiGALFormatLookupTable< xiiGALFormatLookupEntryVulkan >", "d3/daa/classxii_g_a_l_format_lookup_table.htm", null ],
     [ "xiiGALFramebufferHandle", "dd/d03/classxii_g_a_l_framebuffer_handle.htm", null ],
     [ "xiiGALGraphicsAdapterVendor", "d4/d31/structxii_g_a_l_graphics_adapter_vendor.htm", [
       [ "xiiEnum< xiiGALGraphicsAdapterVendor >", "de/dfd/structxii_enum.htm", null ]
@@ -2711,7 +2718,6 @@ var hierarchy =
     [ "xiiGALGraphicsDeviceType", "d1/dde/structxii_g_a_l_graphics_device_type.htm", [
       [ "xiiEnum< xiiGALGraphicsDeviceType >", "de/dfd/structxii_enum.htm", null ]
     ] ],
-    [ "xiiGALGraphicsDeviceValidationLevel", "d8/dff/structxii_g_a_l_graphics_device_validation_level.htm", null ],
     [ "xiiGALGraphicsUtilities", "d4/d57/classxii_g_a_l_graphics_utilities.htm", null ],
     [ "xiiGALHitGroupBindingMode", "d6/dee/structxii_g_a_l_hit_group_binding_mode.htm", [
       [ "xiiEnum< xiiGALHitGroupBindingMode >", "de/dfd/structxii_enum.htm", null ]
@@ -2747,42 +2753,50 @@ var hierarchy =
     [ "xiiGALResource< CreationDescription >", "d4/d2d/classxii_g_a_l_resource.htm", null ],
     [ "xiiGALResource< xiiGALBottomLevelASCreationDescription >", "d4/d2d/classxii_g_a_l_resource.htm", [
       [ "xiiGALBottomLevelAS", "dc/d29/classxii_g_a_l_bottom_level_a_s.htm", [
-        [ "xiiGALBottomLevelASD3D12", "de/d3f/classxii_g_a_l_bottom_level_a_s_d3_d12.htm", null ]
+        [ "xiiGALBottomLevelASD3D12", "de/d3f/classxii_g_a_l_bottom_level_a_s_d3_d12.htm", null ],
+        [ "xiiGALBottomLevelASVulkan", "db/dce/classxii_g_a_l_bottom_level_a_s_vulkan.htm", null ]
       ] ]
     ] ],
     [ "xiiGALResource< xiiGALBufferCreationDescription >", "d4/d2d/classxii_g_a_l_resource.htm", [
       [ "xiiGALBuffer", "da/d03/classxii_g_a_l_buffer.htm", [
-        [ "xiiGALBufferD3D12", "d2/da9/classxii_g_a_l_buffer_d3_d12.htm", null ]
+        [ "xiiGALBufferD3D12", "d2/da9/classxii_g_a_l_buffer_d3_d12.htm", null ],
+        [ "xiiGALBufferVulkan", "d4/d0b/classxii_g_a_l_buffer_vulkan.htm", null ]
       ] ]
     ] ],
     [ "xiiGALResource< xiiGALBufferViewCreationDescription >", "d4/d2d/classxii_g_a_l_resource.htm", [
       [ "xiiGALBufferView", "d8/dcf/classxii_g_a_l_buffer_view.htm", [
-        [ "xiiGALBufferViewD3D12", "d9/d44/classxii_g_a_l_buffer_view_d3_d12.htm", null ]
+        [ "xiiGALBufferViewD3D12", "d9/d44/classxii_g_a_l_buffer_view_d3_d12.htm", null ],
+        [ "xiiGALBufferViewVulkan", "db/da2/classxii_g_a_l_buffer_view_vulkan.htm", null ]
       ] ]
     ] ],
     [ "xiiGALResource< xiiGALFenceCreationDescription >", "d4/d2d/classxii_g_a_l_resource.htm", [
       [ "xiiGALFence", "d6/d79/classxii_g_a_l_fence.htm", [
-        [ "xiiGALFenceD3D12", "d1/d8c/classxii_g_a_l_fence_d3_d12.htm", null ]
+        [ "xiiGALFenceD3D12", "d1/d8c/classxii_g_a_l_fence_d3_d12.htm", null ],
+        [ "xiiGALFenceVulkan", "dc/df3/classxii_g_a_l_fence_vulkan.htm", null ]
       ] ]
     ] ],
     [ "xiiGALResource< xiiGALFramebufferCreationDescription >", "d4/d2d/classxii_g_a_l_resource.htm", [
       [ "xiiGALFramebuffer", "db/d39/classxii_g_a_l_framebuffer.htm", [
-        [ "xiiGALFramebufferD3D12", "d6/dcb/classxii_g_a_l_framebuffer_d3_d12.htm", null ]
+        [ "xiiGALFramebufferD3D12", "d6/dcb/classxii_g_a_l_framebuffer_d3_d12.htm", null ],
+        [ "xiiGALFramebufferVulkan", "d5/d6d/classxii_g_a_l_framebuffer_vulkan.htm", null ]
       ] ]
     ] ],
     [ "xiiGALResource< xiiGALQueryCreationDescription >", "d4/d2d/classxii_g_a_l_resource.htm", [
       [ "xiiGALQuery", "d8/db3/classxii_g_a_l_query.htm", [
-        [ "xiiGALQueryD3D12", "d7/dc2/classxii_g_a_l_query_d3_d12.htm", null ]
+        [ "xiiGALQueryD3D12", "d7/dc2/classxii_g_a_l_query_d3_d12.htm", null ],
+        [ "xiiGALQueryVulkan", "d4/dee/classxii_g_a_l_query_vulkan.htm", null ]
       ] ]
     ] ],
     [ "xiiGALResource< xiiGALRenderPassCreationDescription >", "d4/d2d/classxii_g_a_l_resource.htm", [
       [ "xiiGALRenderPass", "d1/dbe/classxii_g_a_l_render_pass.htm", [
-        [ "xiiGALRenderPassD3D12", "d8/dc6/classxii_g_a_l_render_pass_d3_d12.htm", null ]
+        [ "xiiGALRenderPassD3D12", "d8/dc6/classxii_g_a_l_render_pass_d3_d12.htm", null ],
+        [ "xiiGALRenderPassVulkan", "dd/db0/classxii_g_a_l_render_pass_vulkan.htm", null ]
       ] ]
     ] ],
     [ "xiiGALResource< xiiGALSamplerCreationDescription >", "d4/d2d/classxii_g_a_l_resource.htm", [
       [ "xiiGALSampler", "d3/d97/classxii_g_a_l_sampler.htm", [
-        [ "xiiGALSamplerD3D12", "d5/dbb/classxii_g_a_l_sampler_d3_d12.htm", null ]
+        [ "xiiGALSamplerD3D12", "d5/dbb/classxii_g_a_l_sampler_d3_d12.htm", null ],
+        [ "xiiGALSamplerVulkan", "d3/d07/classxii_g_a_l_sampler_vulkan.htm", null ]
       ] ]
     ] ],
     [ "xiiGALResource< xiiGALShaderCreationDescription >", "d4/d2d/classxii_g_a_l_resource.htm", [
@@ -2790,17 +2804,20 @@ var hierarchy =
     ] ],
     [ "xiiGALResource< xiiGALTextureCreationDescription >", "d4/d2d/classxii_g_a_l_resource.htm", [
       [ "xiiGALTexture", "d3/d9a/classxii_g_a_l_texture.htm", [
-        [ "xiiGALTextureD3D12", "d7/db5/classxii_g_a_l_texture_d3_d12.htm", null ]
+        [ "xiiGALTextureD3D12", "d7/db5/classxii_g_a_l_texture_d3_d12.htm", null ],
+        [ "xiiGALTextureVulkan", "d7/d2e/classxii_g_a_l_texture_vulkan.htm", null ]
       ] ]
     ] ],
     [ "xiiGALResource< xiiGALTextureViewCreationDescription >", "d4/d2d/classxii_g_a_l_resource.htm", [
       [ "xiiGALTextureView", "da/d75/classxii_g_a_l_texture_view.htm", [
-        [ "xiiGALTextureViewD3D12", "df/dbc/classxii_g_a_l_texture_view_d3_d12.htm", null ]
+        [ "xiiGALTextureViewD3D12", "df/dbc/classxii_g_a_l_texture_view_d3_d12.htm", null ],
+        [ "xiiGALTextureViewVulkan", "d5/d6e/classxii_g_a_l_texture_view_vulkan.htm", null ]
       ] ]
     ] ],
     [ "xiiGALResource< xiiGALTopLevelASCreationDescription >", "d4/d2d/classxii_g_a_l_resource.htm", [
       [ "xiiGALTopLevelAS", "de/de7/classxii_g_a_l_top_level_a_s.htm", [
-        [ "xiiGALTopLevelASD3D12", "d9/dd8/classxii_g_a_l_top_level_a_s_d3_d12.htm", null ]
+        [ "xiiGALTopLevelASD3D12", "d9/dd8/classxii_g_a_l_top_level_a_s_d3_d12.htm", null ],
+        [ "xiiGALTopLevelASVulkan", "da/daa/classxii_g_a_l_top_level_a_s_vulkan.htm", null ]
       ] ]
     ] ],
     [ "xiiGALResourceDimension", "da/d4c/structxii_g_a_l_resource_dimension.htm", [
@@ -4244,7 +4261,8 @@ var hierarchy =
         ] ],
         [ "xiiGALObject< xiiGALDeviceCreationDescription >", "d3/dda/classxii_g_a_l_object.htm", [
           [ "xiiGALDevice", "d5/d19/classxii_g_a_l_device.htm", [
-            [ "xiiGALDeviceD3D12", "d8/d77/classxii_g_a_l_device_d3_d12.htm", null ]
+            [ "xiiGALDeviceD3D12", "d8/d77/classxii_g_a_l_device_d3_d12.htm", null ],
+            [ "xiiGALDeviceVulkan", "d3/d6b/classxii_g_a_l_device_vulkan.htm", null ]
           ] ]
         ] ],
         [ "xiiGALObject< xiiGALInputLayoutCreationDescription >", "d3/dda/classxii_g_a_l_object.htm", [
