@@ -1,6 +1,6 @@
 var structxii_g_a_l_input_layout_semantic =
 [
-    [ "StorageType", "dd/d3c/structxii_g_a_l_input_layout_semantic.htm#a779176779a9fcd1b64bee331413dd7d1", null ],
+    [ "StorageType", "dd/d3c/structxii_g_a_l_input_layout_semantic.htm#ae99620f2f898838d578024a2f422a715", null ],
     [ "Enum", "dd/d3c/structxii_g_a_l_input_layout_semantic.htm#a3f402a675ceae8fc0bdbc407832e850d", [
       [ "Undefined", "dd/d3c/structxii_g_a_l_input_layout_semantic.htm#a3f402a675ceae8fc0bdbc407832e850da76df8af8c5095711e6f9daf745945def", null ],
       [ "Position", "dd/d3c/structxii_g_a_l_input_layout_semantic.htm#a3f402a675ceae8fc0bdbc407832e850dac17bec9b6014f2cca2bef134931303e5", null ],

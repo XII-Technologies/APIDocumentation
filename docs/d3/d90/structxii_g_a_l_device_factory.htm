@@ -100,22 +100,24 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>CreatorFunc</b> = <a
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a0caf80b72b7ea2fe593c57c47e2c3a4c"><td class="memItemLeft" align="right" valign="top"><a id="a0caf80b72b7ea2fe593c57c47e2c3a4c"></a>
-static <a class="el" href="../../de/d3c/structxii_internal_1_1_new_instance.htm">xiiInternal::NewInstance</a>&lt; <a class="el" href="../../d5/d19/classxii_g_a_l_device.htm">xiiGALDevice</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>CreateDevice</b> (<a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sRendererName, <a class="el" href="../../d5/d66/classxii_allocator_base.htm">xiiAllocatorBase</a> *pAllocator, const <a class="el" href="../../d6/dd5/structxii_g_a_l_device_creation_description.htm">xiiGALDeviceCreationDescription</a> &amp;description)</td></tr>
-<tr class="separator:a0caf80b72b7ea2fe593c57c47e2c3a4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5ddd1037c7fa19a678203a4d63509661"><td class="memItemLeft" align="right" valign="top"><a id="a5ddd1037c7fa19a678203a4d63509661"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>GetShaderModelAndCompiler</b> (<a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sRendererName, const char *&amp;ref_szShaderModel, const char *&amp;ref_szShaderCompiler)</td></tr>
-<tr class="separator:a5ddd1037c7fa19a678203a4d63509661"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aff4918a6a7fc660147d9ac57d748f16e"><td class="memItemLeft" align="right" valign="top"><a id="aff4918a6a7fc660147d9ac57d748f16e"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>RegisterCreatorFunc</b> (const char *szRendererName, const <a class="el" href="../../dc/d84/structxii_delegate.htm">CreatorFunc</a> &amp;func, const char *szShaderModel, const char *szShaderCompiler)</td></tr>
-<tr class="separator:aff4918a6a7fc660147d9ac57d748f16e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af1bc845a08492104faa4745e840ff4cb"><td class="memItemLeft" align="right" valign="top"><a id="af1bc845a08492104faa4745e840ff4cb"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>UnregisterCreatorFunc</b> (const char *szRendererName)</td></tr>
-<tr class="separator:af1bc845a08492104faa4745e840ff4cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af619717deaf80cdeea19764d1949fd65"><td class="memItemLeft" align="right" valign="top"><a id="af619717deaf80cdeea19764d1949fd65"></a>
+static <a class="el" href="../../de/d3c/structxii_internal_1_1_new_instance.htm">xiiInternal::NewInstance</a>&lt; <a class="el" href="../../d5/d19/classxii_g_a_l_device.htm">xiiGALDevice</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>CreateDevice</b> (<a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sImplementationName, <a class="el" href="../../d5/d66/classxii_allocator_base.htm">xiiAllocatorBase</a> *pAllocator, const <a class="el" href="../../d6/dd5/structxii_g_a_l_device_creation_description.htm">xiiGALDeviceCreationDescription</a> &amp;description)</td></tr>
+<tr class="separator:af619717deaf80cdeea19764d1949fd65"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27f872175d3e8294de3af3528a2aacbf"><td class="memItemLeft" align="right" valign="top"><a id="a27f872175d3e8294de3af3528a2aacbf"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>RegisterImplementation</b> (<a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sImplementationName, const <a class="el" href="../../dc/d84/structxii_delegate.htm">CreatorFunc</a> &amp;func, const <a class="el" href="../../d3/d73/structxii_g_a_l_device_implementation_description.htm">xiiGALDeviceImplementationDescription</a> &amp;description)</td></tr>
+<tr class="separator:a27f872175d3e8294de3af3528a2aacbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee920b37d15aff98f5f586878031db31"><td class="memItemLeft" align="right" valign="top"><a id="aee920b37d15aff98f5f586878031db31"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>UnregisterImplementation</b> (<a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sImplementationName)</td></tr>
+<tr class="separator:aee920b37d15aff98f5f586878031db31"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8e4f2c66964d446c7488eb0a987a736"><td class="memItemLeft" align="right" valign="top"><a id="ae8e4f2c66964d446c7488eb0a987a736"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>GetShaderModelAndCompiler</b> (<a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sRendererName, <a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> &amp;ref_sShaderModel, <a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> &amp;ref_sShaderCompiler)</td></tr>
+<tr class="separator:ae8e4f2c66964d446c7488eb0a987a736"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this struct was generated from the following files:<ul>
 <li>/home/runner/work/XII/XII/Source/Engine/GraphicsFoundation/Device/<a class="el" href="../../dd/d26/_device_factory_8h_source.htm">DeviceFactory.h</a></li>
+<li>/home/runner/work/XII/XII/Source/Engine/GraphicsD3D12/Device/Implementation/DeviceD3D12.cpp</li>
 <li>/home/runner/work/XII/XII/Source/Engine/GraphicsFoundation/Device/Implementation/DeviceFactory.cpp</li>
+<li>/home/runner/work/XII/XII/Source/Engine/GraphicsVulkan/Device/Implementation/DeviceVulkan.cpp</li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -123,7 +125,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>UnregisterCrea
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d3/d90/structxii_g_a_l_device_factory.htm">xiiGALDeviceFactory</a></li>
-    <li class="footer">Generated on Mon Oct 16 2023 03:11:06 for XIIEngine by
+    <li class="footer">Generated on Tue Nov 14 2023 07:45:56 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

@@ -4,7 +4,7 @@ var classxii_g_a_l_bottom_level_a_s_d3_d12 =
     [ "~xiiGALBottomLevelASD3D12", "de/d3f/classxii_g_a_l_bottom_level_a_s_d3_d12.htm#a2ea9f5cbca5d235947b6c35ef760dc5b", null ],
     [ "DeInitPlatform", "de/d3f/classxii_g_a_l_bottom_level_a_s_d3_d12.htm#a781f52617eb1f170d8895d98f3d26e16", null ],
     [ "GetActualGeometryCount", "de/d3f/classxii_g_a_l_bottom_level_a_s_d3_d12.htm#a55b659efaf91fad8d6cd234616707c03", null ],
-    [ "GetBottomLevelAS", "de/d3f/classxii_g_a_l_bottom_level_a_s_d3_d12.htm#afee257f773ace8b1576a3bf338f83987", null ],
+    [ "GetBottomLevelAS", "de/d3f/classxii_g_a_l_bottom_level_a_s_d3_d12.htm#a8986b27e772e573de424f91c6ed84658", null ],
     [ "GetGeometryDescriptionIndex", "de/d3f/classxii_g_a_l_bottom_level_a_s_d3_d12.htm#a8615a614a4e1e08b93766896a1d6b90f", null ],
     [ "GetGeometryIndex", "de/d3f/classxii_g_a_l_bottom_level_a_s_d3_d12.htm#a5f9d8d2ccbca44e7030412b67fd030e1", null ],
     [ "GetScratchBufferSizeDescription", "de/d3f/classxii_g_a_l_bottom_level_a_s_d3_d12.htm#a3785961af1b2baa8e4be9c56a1026f14", null ],

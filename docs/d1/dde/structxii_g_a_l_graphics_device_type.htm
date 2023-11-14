@@ -108,19 +108,23 @@ Inheritance diagram for xiiGALGraphicsDeviceType:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:a4d3301594c1735e73ba0bbfe64122c68"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dde/structxii_g_a_l_graphics_device_type.htm#a4d3301594c1735e73ba0bbfe64122c68">Enum</a> : StorageType { <br />
-&#160;&#160;<a class="el" href="../../d1/dde/structxii_g_a_l_graphics_device_type.htm#a4d3301594c1735e73ba0bbfe64122c68a6e0120453c94519028fa4ba972926e43">Undefined</a> = 0U, 
-<a class="el" href="../../d1/dde/structxii_g_a_l_graphics_device_type.htm#a4d3301594c1735e73ba0bbfe64122c68a6ca7ec6d062c1d1bf69fefcdd45fb288">Direct3D12</a>, 
+&#160;&#160;<a class="el" href="../../d1/dde/structxii_g_a_l_graphics_device_type.htm#a4d3301594c1735e73ba0bbfe64122c68a6e0120453c94519028fa4ba972926e43">Undefined</a> = -1, 
+<a class="el" href="../../d1/dde/structxii_g_a_l_graphics_device_type.htm#a4d3301594c1735e73ba0bbfe64122c68a238efe2292a95bbaa3c42b8f577adf6a">OpenGLES</a>, 
+<a class="el" href="../../d1/dde/structxii_g_a_l_graphics_device_type.htm#a4d3301594c1735e73ba0bbfe64122c68ab2a41e08d327b2a90ecdb568da779ead">OpenGL</a>, 
+<a class="el" href="../../d1/dde/structxii_g_a_l_graphics_device_type.htm#a4d3301594c1735e73ba0bbfe64122c68a66e4643507a87ed9c8a2ac860c851bca">Direct3D11</a>, 
+<br />
+&#160;&#160;<a class="el" href="../../d1/dde/structxii_g_a_l_graphics_device_type.htm#a4d3301594c1735e73ba0bbfe64122c68a6ca7ec6d062c1d1bf69fefcdd45fb288">Direct3D12</a>, 
 <a class="el" href="../../d1/dde/structxii_g_a_l_graphics_device_type.htm#a4d3301594c1735e73ba0bbfe64122c68a98b84e8b37f9e3492d7a85fda9a46bfc">Vulkan</a>, 
 <a class="el" href="../../d1/dde/structxii_g_a_l_graphics_device_type.htm#a4d3301594c1735e73ba0bbfe64122c68afb59e06bb9cbb872ad77d1fc3481548a">Metal</a>, 
+<b>ENUM_COUNT</b>, 
 <br />
-&#160;&#160;<b>ENUM_COUNT</b>, 
-<b>Default</b> = Undefined
+&#160;&#160;<b>Default</b> = Undefined
 <br />
  }</td></tr>
 <tr class="separator:a4d3301594c1735e73ba0bbfe64122c68"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0d44997d434ff3e69fa3701b9050ad47"><td class="memItemLeft" align="right" valign="top"><a id="a0d44997d434ff3e69fa3701b9050ad47"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>StorageType</b> = xiiUInt8</td></tr>
-<tr class="separator:a0d44997d434ff3e69fa3701b9050ad47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3cbe69d5a03575a7ff721ab94025d10f"><td class="memItemLeft" align="right" valign="top"><a id="a3cbe69d5a03575a7ff721ab94025d10f"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>StorageType</b> = xiiInt8</td></tr>
+<tr class="separator:a3cbe69d5a03575a7ff721ab94025d10f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Defines the graphics device. </p>
@@ -138,6 +142,12 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>StorageType</b> = xi
 </div><div class="memdoc">
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a4d3301594c1735e73ba0bbfe64122c68a6e0120453c94519028fa4ba972926e43"></a>Undefined&#160;</td><td class="fielddoc"><p>Undefined graphics device type. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a4d3301594c1735e73ba0bbfe64122c68a238efe2292a95bbaa3c42b8f577adf6a"></a>OpenGLES&#160;</td><td class="fielddoc"><p>OpenGL ES graphics device. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a4d3301594c1735e73ba0bbfe64122c68ab2a41e08d327b2a90ecdb568da779ead"></a>OpenGL&#160;</td><td class="fielddoc"><p>OpenGL graphics device. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a4d3301594c1735e73ba0bbfe64122c68a66e4643507a87ed9c8a2ac860c851bca"></a>Direct3D11&#160;</td><td class="fielddoc"><p>Direct3D 11 graphics device. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a4d3301594c1735e73ba0bbfe64122c68a6ca7ec6d062c1d1bf69fefcdd45fb288"></a>Direct3D12&#160;</td><td class="fielddoc"><p>Direct3D 12 graphics device. </p>
 </td></tr>
@@ -158,7 +168,7 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>StorageType</b> = xi
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d1/dde/structxii_g_a_l_graphics_device_type.htm">xiiGALGraphicsDeviceType</a></li>
-    <li class="footer">Generated on Mon Oct 16 2023 03:11:06 for XIIEngine by
+    <li class="footer">Generated on Tue Nov 14 2023 07:45:56 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

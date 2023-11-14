@@ -1,6 +1,6 @@
 var structxii_g_a_l_resource_dimension =
 [
-    [ "StorageType", "da/d4c/structxii_g_a_l_resource_dimension.htm#a3282c458a25b51445c95bc1637d6f828", null ],
+    [ "StorageType", "da/d4c/structxii_g_a_l_resource_dimension.htm#aca7c36dd513fc0201dfac107b8ab48c7", null ],
     [ "Enum", "da/d4c/structxii_g_a_l_resource_dimension.htm#acd80592b28aafb8becd9a7b79238830d", [
       [ "Undefined", "da/d4c/structxii_g_a_l_resource_dimension.htm#acd80592b28aafb8becd9a7b79238830daa73596bd1a19b69776b50a8b8d5bceed", null ],
       [ "Buffer", "da/d4c/structxii_g_a_l_resource_dimension.htm#acd80592b28aafb8becd9a7b79238830dabc71b081f0df1141a2adee40387db529", null ],

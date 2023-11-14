@@ -16,7 +16,7 @@ var structxii_g_a_l_device_features =
     [ "m_MultiViewport", "d6/d8f/structxii_g_a_l_device_features.htm#a2b644254bf327974783141c5e9b090ee", null ],
     [ "m_NativeFence", "d6/d8f/structxii_g_a_l_device_features.htm#ae6f15326ced2629f9730b2006184285b", null ],
     [ "m_OcclusionQueries", "d6/d8f/structxii_g_a_l_device_features.htm#a989723a76e1d1d78ad4b113c9c45c615", null ],
-    [ "m_PipelineStateQueries", "d6/d8f/structxii_g_a_l_device_features.htm#a19607790f2059539ec6d74e72e9dff35", null ],
+    [ "m_PipelineStatisticsQueries", "d6/d8f/structxii_g_a_l_device_features.htm#a48feea694df847ab4418343d90c933db", null ],
     [ "m_PixelUAVWritesAndAtomics", "d6/d8f/structxii_g_a_l_device_features.htm#a50423da71acd42f3a3baf62aed0a5a0e", null ],
     [ "m_RayTracing", "d6/d8f/structxii_g_a_l_device_features.htm#a7c1e3ff253df1dcc3cf65c3d4e508302", null ],
     [ "m_ResourceBuffer16BitAccess", "d6/d8f/structxii_g_a_l_device_features.htm#ad51d203b0d4a32bc74de121db06beb89", null ],

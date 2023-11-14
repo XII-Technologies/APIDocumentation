@@ -1,6 +1,6 @@
 var structxii_g_a_l_device_adapter_type =
 [
-    [ "StorageType", "d3/d09/structxii_g_a_l_device_adapter_type.htm#a37fbd70148367f75640ac185aa6dfc7e", null ],
+    [ "StorageType", "d3/d09/structxii_g_a_l_device_adapter_type.htm#ab4fe6a443139b572dd1db7d953957da4", null ],
     [ "Enum", "d3/d09/structxii_g_a_l_device_adapter_type.htm#a62de308b11b96e1229f23b40e661dc83", [
       [ "Unknown", "d3/d09/structxii_g_a_l_device_adapter_type.htm#a62de308b11b96e1229f23b40e661dc83ab508ed8e32ede8dcb04f2b3fd935e3c9", null ],
       [ "Software", "d3/d09/structxii_g_a_l_device_adapter_type.htm#a62de308b11b96e1229f23b40e661dc83a66814c9cd03b9cfbc4f3350bd925d9c3", null ],

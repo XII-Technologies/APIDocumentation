@@ -1,0 +1,28 @@
+var structxii_mesh_buffer_resource_descriptor =
+[
+    [ "xiiMeshBufferResourceDescriptor", "dd/deb/structxii_mesh_buffer_resource_descriptor.htm#aabf7d5e36c2efef68368a9ca915a7a10", null ],
+    [ "~xiiMeshBufferResourceDescriptor", "dd/deb/structxii_mesh_buffer_resource_descriptor.htm#aeaf0d03917b423d7fb11b5b383eb2f65", null ],
+    [ "AddCommonStreams", "dd/deb/structxii_mesh_buffer_resource_descriptor.htm#a72596199f225b14507f9dec15bd3aec7", null ],
+    [ "AddStream", "dd/deb/structxii_mesh_buffer_resource_descriptor.htm#a2671e64397cb427dd6daefa350d2222a", null ],
+    [ "AllocateStreams", "dd/deb/structxii_mesh_buffer_resource_descriptor.htm#a89400227a385219bef04441cbfc7bd1a", null ],
+    [ "AllocateStreamsFromGeometry", "dd/deb/structxii_mesh_buffer_resource_descriptor.htm#a10de1161f6470550f0c66c0e517fef95", null ],
+    [ "Clear", "dd/deb/structxii_mesh_buffer_resource_descriptor.htm#a4036f8a210edb67f36fc6857d8971059", null ],
+    [ "ComputeBounds", "dd/deb/structxii_mesh_buffer_resource_descriptor.htm#ac8118d45d6372ca04b43a34a5044271f", null ],
+    [ "GetIndexBufferData", "dd/deb/structxii_mesh_buffer_resource_descriptor.htm#a7d47d0a7d35c7275705c17e179dcf9f8", null ],
+    [ "GetIndexBufferData", "dd/deb/structxii_mesh_buffer_resource_descriptor.htm#a0cc0ead4f43d5cdb1f5f646e3116bdb2", null ],
+    [ "GetPrimitiveCount", "dd/deb/structxii_mesh_buffer_resource_descriptor.htm#a8708a3ac1fe9434626ad88bfdfd982b4", null ],
+    [ "GetTopology", "dd/deb/structxii_mesh_buffer_resource_descriptor.htm#a12516125a480421e5e284a36d4d89245", null ],
+    [ "GetVertexBufferData", "dd/deb/structxii_mesh_buffer_resource_descriptor.htm#a4dceeb76bca05d2b8c24e978affc35fe", null ],
+    [ "GetVertexBufferData", "dd/deb/structxii_mesh_buffer_resource_descriptor.htm#aeee0412ad9e4d5f5044e8210527c7b80", null ],
+    [ "GetVertexCount", "dd/deb/structxii_mesh_buffer_resource_descriptor.htm#a506381f33985b25e44d9ba3d4eaa1bdb", null ],
+    [ "GetVertexData", "dd/deb/structxii_mesh_buffer_resource_descriptor.htm#a5656d701fa7d6d8919da8f8bd7542b25", null ],
+    [ "GetVertexDataSize", "dd/deb/structxii_mesh_buffer_resource_descriptor.htm#aac8caa65741a0523887d19a3fa333768", null ],
+    [ "GetVertexDeclaration", "dd/deb/structxii_mesh_buffer_resource_descriptor.htm#a5b3732a49d18f0a6707edc4dbba44a7f", null ],
+    [ "HasIndexBuffer", "dd/deb/structxii_mesh_buffer_resource_descriptor.htm#a0eed29fedc5c58bc967c7e9ec7e2fcb3", null ],
+    [ "RecomputeNormals", "dd/deb/structxii_mesh_buffer_resource_descriptor.htm#a5298b0da9d77b1545ea8b4ebe8d6c8b6", null ],
+    [ "SetLineIndices", "dd/deb/structxii_mesh_buffer_resource_descriptor.htm#ab1f367b9e8a7fbbc3b1bf75998429a81", null ],
+    [ "SetPointIndices", "dd/deb/structxii_mesh_buffer_resource_descriptor.htm#ae2a11c26dace4e376117608cc5ba4294", null ],
+    [ "SetTriangleIndices", "dd/deb/structxii_mesh_buffer_resource_descriptor.htm#a4a3f1854cf4588560eb2a2f1875b9f60", null ],
+    [ "SetVertexData", "dd/deb/structxii_mesh_buffer_resource_descriptor.htm#aaa513aecebb90718d7f3a117853de555", null ],
+    [ "Uses32BitIndices", "dd/deb/structxii_mesh_buffer_resource_descriptor.htm#a72d6a277c456ea8831c3285b719ec40c", null ]
+];

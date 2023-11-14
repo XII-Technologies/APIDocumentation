@@ -6,5 +6,7 @@ var classxii_g_a_l_query =
     [ "GetData", "d8/db3/classxii_g_a_l_query.htm#a7c746a78e68869662228c8566af7bf6b", null ],
     [ "InitPlatform", "d8/db3/classxii_g_a_l_query.htm#a6bcb53f6ddaa71d37ce20dd89fcce82c", null ],
     [ "Invalidate", "d8/db3/classxii_g_a_l_query.htm#a7252b20e068b5f8f551e606859554107", null ],
-    [ "xiiGALDevice", "d8/db3/classxii_g_a_l_query.htm#a8a9dd0ea17d38c3d68c9db0002e5dab0", null ]
+    [ "xiiGALCommandEncoder", "d8/db3/classxii_g_a_l_query.htm#aafe2086421b7b83ca1e8387d7d99cb75", null ],
+    [ "xiiGALDevice", "d8/db3/classxii_g_a_l_query.htm#a8a9dd0ea17d38c3d68c9db0002e5dab0", null ],
+    [ "m_bStarted", "d8/db3/classxii_g_a_l_query.htm#a9028c3d8aa4bd1d657189ea26cfb4dcd", null ]
 ];

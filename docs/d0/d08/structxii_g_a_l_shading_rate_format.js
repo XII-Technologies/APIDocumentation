@@ -1,6 +1,6 @@
 var structxii_g_a_l_shading_rate_format =
 [
-    [ "StorageType", "d0/d08/structxii_g_a_l_shading_rate_format.htm#ad115c453c1fbcc18265700c47d544b9f", null ],
+    [ "StorageType", "d0/d08/structxii_g_a_l_shading_rate_format.htm#ac430bdff283a56504b8d59491b24c980", null ],
     [ "Enum", "d0/d08/structxii_g_a_l_shading_rate_format.htm#adb689e5e36dbbc3dc5e528b43c12badd", [
       [ "Unknown", "d0/d08/structxii_g_a_l_shading_rate_format.htm#adb689e5e36dbbc3dc5e528b43c12baddaa529b57122ad2fa232998974f924460b", null ],
       [ "Palette", "d0/d08/structxii_g_a_l_shading_rate_format.htm#adb689e5e36dbbc3dc5e528b43c12badda142714c79b97143e87835ac883be66aa", null ],

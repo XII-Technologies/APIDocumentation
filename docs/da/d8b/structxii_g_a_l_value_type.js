@@ -1,6 +1,6 @@
 var structxii_g_a_l_value_type =
 [
-    [ "StorageType", "da/d8b/structxii_g_a_l_value_type.htm#ac017bacda7767cdd4b706e18d365ccbf", null ],
+    [ "StorageType", "da/d8b/structxii_g_a_l_value_type.htm#a601a79f40f3e33166f8a3d1e0c80fdcc", null ],
     [ "Enum", "da/d8b/structxii_g_a_l_value_type.htm#ad3bab4214e06888cc9c6cdb1f95c4355", [
       [ "Undefined", "da/d8b/structxii_g_a_l_value_type.htm#ad3bab4214e06888cc9c6cdb1f95c4355a36ab478571d6989ee3f482ff651fc885", null ],
       [ "Int8", "da/d8b/structxii_g_a_l_value_type.htm#ad3bab4214e06888cc9c6cdb1f95c4355a6e0fef72daceb5bbd24d81d6e4e50b82", null ],

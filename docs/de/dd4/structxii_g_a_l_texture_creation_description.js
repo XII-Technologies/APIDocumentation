@@ -11,6 +11,7 @@ var structxii_g_a_l_texture_creation_description =
     [ "m_CPUAccessFlags", "de/dd4/structxii_g_a_l_texture_creation_description.htm#a40e488c943da7938257dfdfa4a212ceb", null ],
     [ "m_Format", "de/dd4/structxii_g_a_l_texture_creation_description.htm#a6d5a98ecb7a9ca7350e6b5c51d718597", null ],
     [ "m_MiscFlags", "de/dd4/structxii_g_a_l_texture_creation_description.htm#a6292a9d569ddb4ae5433fea34b2fb9bb", null ],
+    [ "m_pExisitingNativeObject", "de/dd4/structxii_g_a_l_texture_creation_description.htm#a6ff6a27c2e782a4569eb3589c7f57706", null ],
     [ "m_Size", "de/dd4/structxii_g_a_l_texture_creation_description.htm#a323a9dd93d0b4a3539aae2e9a6149953", null ],
     [ "m_sName", "de/dd4/structxii_g_a_l_texture_creation_description.htm#a00fa73bc2aeeb9b93c32c4b1ee12774b", null ],
     [ "m_Type", "de/dd4/structxii_g_a_l_texture_creation_description.htm#ace2b9b048b3e26a57ca825f1268946d4", null ],

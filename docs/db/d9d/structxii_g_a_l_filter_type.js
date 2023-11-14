@@ -1,6 +1,6 @@
 var structxii_g_a_l_filter_type =
 [
-    [ "StorageType", "db/d9d/structxii_g_a_l_filter_type.htm#a419ebb11dc9638e580682317d9788da2", null ],
+    [ "StorageType", "db/d9d/structxii_g_a_l_filter_type.htm#a87394b1d5b448cac22cd2aa273aa44d2", null ],
     [ "Enum", "db/d9d/structxii_g_a_l_filter_type.htm#a078045721000a292a9dcacfb4bc966e6", [
       [ "Unknown", "db/d9d/structxii_g_a_l_filter_type.htm#a078045721000a292a9dcacfb4bc966e6aa93edb4ad21d92bbe93dc22608575365", null ],
       [ "Point", "db/d9d/structxii_g_a_l_filter_type.htm#a078045721000a292a9dcacfb4bc966e6a5281ee3a597778f7355f31f882d22447", null ],

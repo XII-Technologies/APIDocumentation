@@ -1,7 +1,7 @@
 var structxii_g_a_l_command_encoder_graphics_state =
 [
     [ "~xiiGALCommandEncoderGraphicsState", "df/dcf/structxii_g_a_l_command_encoder_graphics_state.htm#ad50aa5a8a6067f386d942d25d6d315ff", null ],
-    [ "InvalidateState", "df/dcf/structxii_g_a_l_command_encoder_graphics_state.htm#a25568906c721a7950b9f42c14807846b", null ],
+    [ "InvalidateState", "df/dcf/structxii_g_a_l_command_encoder_graphics_state.htm#ae2f85ff068b1f79786bb6303c4f82898", null ],
     [ "m_BlendFactor", "df/dcf/structxii_g_a_l_command_encoder_graphics_state.htm#acf05ab73d85817af127fbb00d7ec40ef", null ],
     [ "m_fViewPortMaxDepth", "df/dcf/structxii_g_a_l_command_encoder_graphics_state.htm#a1ebea2ae8fe06de707816bd9711320f0", null ],
     [ "m_fViewPortMinDepth", "df/dcf/structxii_g_a_l_command_encoder_graphics_state.htm#aadf3ecd94896a21b42f7b20e8d6902ae", null ],

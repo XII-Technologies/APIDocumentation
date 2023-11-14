@@ -1,6 +1,6 @@
 var structxii_g_a_l_comparison_function =
 [
-    [ "StorageType", "d2/d6d/structxii_g_a_l_comparison_function.htm#a639404422ff8a69955fc32b29aab795b", null ],
+    [ "StorageType", "d2/d6d/structxii_g_a_l_comparison_function.htm#aefbe1d31f791262020080e585be6ca03", null ],
     [ "Enum", "d2/d6d/structxii_g_a_l_comparison_function.htm#a379b1dc5f2a81ba2b9a7f934fe9b9df3", [
       [ "Unknown", "d2/d6d/structxii_g_a_l_comparison_function.htm#a379b1dc5f2a81ba2b9a7f934fe9b9df3aaa18589e297bc18d1da217a74f7aa11c", null ],
       [ "Never", "d2/d6d/structxii_g_a_l_comparison_function.htm#a379b1dc5f2a81ba2b9a7f934fe9b9df3a43c96000137cbbbd8973aca8339f2d67", null ],

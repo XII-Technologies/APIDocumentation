@@ -1,6 +1,6 @@
 var structxii_g_a_l_texture_view_type =
 [
-    [ "StorageType", "db/d60/structxii_g_a_l_texture_view_type.htm#acf05f795af77bf45247e04f07240d950", null ],
+    [ "StorageType", "db/d60/structxii_g_a_l_texture_view_type.htm#a7b0af65bc53fc5d000aa34b1fc81e20e", null ],
     [ "Enum", "db/d60/structxii_g_a_l_texture_view_type.htm#ad4f8ca273dab45d482b39716b7c25272", [
       [ "Undefined", "db/d60/structxii_g_a_l_texture_view_type.htm#ad4f8ca273dab45d482b39716b7c25272aecf9e0770bbee1976e9b2a71eb660c59", null ],
       [ "ShaderResource", "db/d60/structxii_g_a_l_texture_view_type.htm#ad4f8ca273dab45d482b39716b7c25272a930c07a32f6221f5b3853f8e8e4e4a2e", null ],

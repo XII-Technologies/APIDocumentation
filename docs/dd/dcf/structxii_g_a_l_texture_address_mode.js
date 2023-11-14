@@ -1,6 +1,6 @@
 var structxii_g_a_l_texture_address_mode =
 [
-    [ "StorageType", "dd/dcf/structxii_g_a_l_texture_address_mode.htm#a3aca26c0356a33f8e11fc764e98d4c09", null ],
+    [ "StorageType", "dd/dcf/structxii_g_a_l_texture_address_mode.htm#a33539ae8d84c20de32a738714fdf564f", null ],
     [ "Enum", "dd/dcf/structxii_g_a_l_texture_address_mode.htm#abcf94f93eb06b8bebcee7b6474cc148f", [
       [ "Unknown", "dd/dcf/structxii_g_a_l_texture_address_mode.htm#abcf94f93eb06b8bebcee7b6474cc148fafb2fa2cb2ba4fd20efebd9710530db36", null ],
       [ "Wrap", "dd/dcf/structxii_g_a_l_texture_address_mode.htm#abcf94f93eb06b8bebcee7b6474cc148fa45184a23cf0da3360d6ecbfb6469218f", null ],
