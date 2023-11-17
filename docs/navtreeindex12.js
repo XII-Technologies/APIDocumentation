@@ -1,5 +1,12 @@
 var NAVTREEINDEX12 =
 {
+"d2/d46/structxii_attribute_holder.htm#a6103c6a6c806566578830db5c054ddbe":[5,0,147,7],
+"d2/d46/structxii_attribute_holder.htm#a6b3cb6a6eb4197ad6f59f116861d0c06":[5,0,147,2],
+"d2/d46/structxii_attribute_holder.htm#a6e854ce9f5f546ac9f1953b3c71d47bd":[5,0,147,8],
+"d2/d46/structxii_attribute_holder.htm#a73413f37803e000b8d6fd393c1ef1118":[5,0,147,4],
+"d2/d46/structxii_attribute_holder.htm#a8b54682d73d34ab90db2e79a45c374e1":[5,0,147,10],
+"d2/d46/structxii_attribute_holder.htm#a93204169e08391b45953a865a6f535bc":[5,0,147,0],
+"d2/d46/structxii_attribute_holder.htm#aa4b35a0aa2276cca5e3006497cb16ba3":[5,0,147,9],
 "d2/d46/structxii_attribute_holder.htm#ad3a15acd4d657ce21fad84500fb88f23":[5,0,147,3],
 "d2/d46/structxii_attribute_holder.htm#adf24974c99337170f280dd54df11776a":[5,0,147,1],
 "d2/d47/structxii_g_a_l_misc_texture_flags_1_1_bits.htm":[5,0,628,0],
@@ -242,12 +249,5 @@ var NAVTREEINDEX12 =
 "d2/d74/structxii_range_view_1_1_const_iterator.htm#a662b61b48ddc201e25c5e8c71d9c9417":[5,0,1282,0,2],
 "d2/d74/structxii_range_view_1_1_const_iterator.htm#a66865d8dedcbd518e512094befad1aac":[5,0,1282,0,12],
 "d2/d74/structxii_range_view_1_1_const_iterator.htm#a66badfa40b1b2d9a923abfe0135b7777":[5,0,1282,0,11],
-"d2/d74/structxii_range_view_1_1_const_iterator.htm#a7300cd7c9ea856ce16396f3ac57b8563":[5,0,1282,0,1],
-"d2/d74/structxii_range_view_1_1_const_iterator.htm#a742f39eb67c91b5cb80bf19f3f361f76":[5,0,1282,0,14],
-"d2/d74/structxii_range_view_1_1_const_iterator.htm#a9a03bb0afb38e30db88cf78214819b03":[5,0,1282,0,6],
-"d2/d74/structxii_range_view_1_1_const_iterator.htm#ab56b17778feb2f3d229ec3f271e27f4a":[5,0,1282,0,7],
-"d2/d74/structxii_range_view_1_1_const_iterator.htm#ac033fbc3e917e4bddd61cbf772316268":[5,0,1282,0,9],
-"d2/d74/structxii_range_view_1_1_const_iterator.htm#ac1f78d4c266f27e8c2d56f1226e8218a":[5,0,1282,0,13],
-"d2/d74/structxii_range_view_1_1_const_iterator.htm#ad3f0709c11835135e0e609a8757e2d49":[5,0,1282,0,10],
-"d2/d74/structxii_range_view_1_1_const_iterator.htm#ad61fff6bc4d36fdca29d12516d196abc":[5,0,1282,0,4]
+"d2/d74/structxii_range_view_1_1_const_iterator.htm#a7300cd7c9ea856ce16396f3ac57b8563":[5,0,1282,0,1]
 };

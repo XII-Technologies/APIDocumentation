@@ -1,5 +1,17 @@
 var NAVTREEINDEX32 =
 {
+"d5/ddb/classxii_tex_conv.htm#ad3ae31f3b69c6f18924d680a1614e700":[5,0,1596,22],
+"d5/ddb/classxii_tex_conv.htm#ad882bfe761049de3cf30057566003087":[5,0,1596,2],
+"d5/ddb/classxii_tex_conv.htm#adbffc0b9e650c8960e18ab7694cce797":[5,0,1596,26],
+"d5/ddb/classxii_tex_conv.htm#ade50f39b1071e376f0f6113c39ef62dc":[5,0,1596,16],
+"d5/ddb/classxii_tex_conv.htm#aedaed5e1fc46bed4ae46a5e8420d1ac1":[5,0,1596,32],
+"d5/ddb/classxii_tex_conv.htm#af470a33db916b04f08e2fba4b370c856":[5,0,1596,25],
+"d5/dde/classxii_g_a_l_top_level_a_s_handle.htm":[5,0,764],
+"d5/dde/classxii_g_a_l_top_level_a_s_handle.htm#a8a9dd0ea17d38c3d68c9db0002e5dab0":[5,0,764,0],
+"d5/de0/classxii_g_a_l_format_lookup_entry.htm":[5,0,598],
+"d5/de0/classxii_g_a_l_format_lookup_entry.htm#a12643a32b74026a4e6123cd84bb80162":[5,0,598,0],
+"d5/de0/classxii_g_a_l_format_lookup_entry.htm#a1a0a3830da6f14bfa8ad8eca4f17e27b":[5,0,598,3],
+"d5/de0/classxii_g_a_l_format_lookup_entry.htm#a1acc8c590f72eb0355e1d5001b06f5cb":[5,0,598,2],
 "d5/de0/classxii_g_a_l_format_lookup_entry.htm#a1da36fa3bca61045c9b94c9992608f5e":[5,0,598,5],
 "d5/de0/classxii_g_a_l_format_lookup_entry.htm#a2aa629007c926636f1c6c0ba888cdae2":[5,0,598,8],
 "d5/de0/classxii_g_a_l_format_lookup_entry.htm#a50f27f4d2cb3c765b2df2d8abb85c5bb":[5,0,598,6],
@@ -237,17 +249,5 @@ var NAVTREEINDEX32 =
 "d6/d0f/structxii_clean_type.htm#a8d8fa9a0a30b2be7069731c79d05c030":[5,0,200,1],
 "d6/d16/classxii_typed_resource_handle.htm":[5,0,1668],
 "d6/d16/classxii_typed_resource_handle.htm#a0085567bd3ad2f1b4d616e10992122c0":[5,0,1668,9],
-"d6/d16/classxii_typed_resource_handle.htm#a0d639d3dd12aaedc932bd8ee436826ae":[5,0,1668,20],
-"d6/d16/classxii_typed_resource_handle.htm#a14e42353b5599856d74ad30fa578ed94":[5,0,1668,22],
-"d6/d16/classxii_typed_resource_handle.htm#a189c1baa3f559f637cdf159bf41d1d40":[5,0,1668,4],
-"d6/d16/classxii_typed_resource_handle.htm#a18e367d12f112f1b1b7e603c6bb50796":[5,0,1668,6],
-"d6/d16/classxii_typed_resource_handle.htm#a1fbff7f7e449affcd2b57c3d109fde90":[5,0,1668,16],
-"d6/d16/classxii_typed_resource_handle.htm#a296eb6daed2082f3001c9a5392d17472":[5,0,1668,11],
-"d6/d16/classxii_typed_resource_handle.htm#a29c3bfe611faf4eede8c4053d70728a6":[5,0,1668,23],
-"d6/d16/classxii_typed_resource_handle.htm#a2d2df848c78b1728e31bd99ae51a0c89":[5,0,1668,15],
-"d6/d16/classxii_typed_resource_handle.htm#a33b817a4cd0045085144202b2ee4719e":[5,0,1668,13],
-"d6/d16/classxii_typed_resource_handle.htm#a3cf63005729dc7582ae79044c7f57b6d":[5,0,1668,2],
-"d6/d16/classxii_typed_resource_handle.htm#a4cdc910f4883f01392a3fd6d74302460":[5,0,1668,8],
-"d6/d16/classxii_typed_resource_handle.htm#a5c105183001e46ca9c93f8d55c5ce4ea":[5,0,1668,17],
-"d6/d16/classxii_typed_resource_handle.htm#a784685f45586ab1aaa390dcdd3a99ee0":[5,0,1668,21]
+"d6/d16/classxii_typed_resource_handle.htm#a0d639d3dd12aaedc932bd8ee436826ae":[5,0,1668,20]
 };

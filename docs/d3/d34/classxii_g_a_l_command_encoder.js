@@ -20,7 +20,7 @@ var classxii_g_a_l_command_encoder =
     [ "Flush", "d3/d34/classxii_g_a_l_command_encoder.htm#acc64ddaec5ab292a60313300cbfbb064", null ],
     [ "GenerateMipMaps", "d3/d34/classxii_g_a_l_command_encoder.htm#ac65e4093d78fdc0d00cb15fb92813774", null ],
     [ "GetDevice", "d3/d34/classxii_g_a_l_command_encoder.htm#ac8c64f164f0874eca407da300cb71cd5", null ],
-    [ "InsertEventMarker", "d3/d34/classxii_g_a_l_command_encoder.htm#a9432357025450dce1f7a023a723f007a", null ],
+    [ "InsertEventMarker", "d3/d34/classxii_g_a_l_command_encoder.htm#a7d2b40518b1a7646699f9f86d3944a9e", null ],
     [ "InvalidateState", "d3/d34/classxii_g_a_l_command_encoder.htm#a4950983825dd7abafd8bb07bbf7e1342", null ],
     [ "PopMarker", "d3/d34/classxii_g_a_l_command_encoder.htm#af4949c5fbffcb8da655aa2728df8c131", null ],
     [ "PushMarker", "d3/d34/classxii_g_a_l_command_encoder.htm#a47c22dba31e5f10121fa21af4ba45938", null ],

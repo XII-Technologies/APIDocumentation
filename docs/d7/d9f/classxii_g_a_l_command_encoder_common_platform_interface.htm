@@ -119,9 +119,9 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SetSamplerPla
 <tr class="memitem:a6a16487087323eefecbce3b5c0e50678"><td class="memItemLeft" align="right" valign="top"><a id="a6a16487087323eefecbce3b5c0e50678"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SetBufferViewPlatform</b> (<a class="el" href="../../d7/d55/structxii_bitflags.htm">xiiBitflags</a>&lt; <a class="el" href="../../d7/d93/structxii_g_a_l_shader_stage.htm">xiiGALShaderStage</a> &gt; stage, xiiUInt32 uiSlot, <a class="el" href="../../d8/dcf/classxii_g_a_l_buffer_view.htm">xiiGALBufferView</a> *pBufferView)=0</td></tr>
 <tr class="separator:a6a16487087323eefecbce3b5c0e50678"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6d8cb724a506bb15059680b92cff0379"><td class="memItemLeft" align="right" valign="top"><a id="a6d8cb724a506bb15059680b92cff0379"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SetTextureViewPlatform</b> (<a class="el" href="../../d7/d55/structxii_bitflags.htm">xiiBitflags</a>&lt; <a class="el" href="../../d7/d93/structxii_g_a_l_shader_stage.htm">xiiGALShaderStage</a> &gt; stage, xiiUInt32 uiSlot, <a class="el" href="../../da/d75/classxii_g_a_l_texture_view.htm">xiiGALTextureView</a> *pRTextureView)=0</td></tr>
-<tr class="separator:a6d8cb724a506bb15059680b92cff0379"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60744d15008369a446edc5ad0bc0cd38"><td class="memItemLeft" align="right" valign="top"><a id="a60744d15008369a446edc5ad0bc0cd38"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SetTextureViewPlatform</b> (<a class="el" href="../../d7/d55/structxii_bitflags.htm">xiiBitflags</a>&lt; <a class="el" href="../../d7/d93/structxii_g_a_l_shader_stage.htm">xiiGALShaderStage</a> &gt; stage, xiiUInt32 uiSlot, <a class="el" href="../../da/d75/classxii_g_a_l_texture_view.htm">xiiGALTextureView</a> *pTextureView)=0</td></tr>
+<tr class="separator:a60744d15008369a446edc5ad0bc0cd38"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9e7798d51347ea38048733dd8734c3bd"><td class="memItemLeft" align="right" valign="top"><a id="a9e7798d51347ea38048733dd8734c3bd"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SetUnorderedAccessBufferViewPlatform</b> (xiiUInt32 uiSlot, <a class="el" href="../../d8/dcf/classxii_g_a_l_buffer_view.htm">xiiGALBufferView</a> *pUnorderedAccessBufferView)=0</td></tr>
 <tr class="separator:a9e7798d51347ea38048733dd8734c3bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -185,9 +185,9 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>PushMarkerPla
 <tr class="memitem:a037682e0fbcc88f4b7a61826ce2a3c0b"><td class="memItemLeft" align="right" valign="top"><a id="a037682e0fbcc88f4b7a61826ce2a3c0b"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>PopMarkerPlatform</b> ()=0</td></tr>
 <tr class="separator:a037682e0fbcc88f4b7a61826ce2a3c0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a51e684f356fb5a0a59c0baa8db2facf5"><td class="memItemLeft" align="right" valign="top"><a id="a51e684f356fb5a0a59c0baa8db2facf5"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>InsertEventMarkerPlatform</b> (<a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sMarker)=0</td></tr>
-<tr class="separator:a51e684f356fb5a0a59c0baa8db2facf5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66e7239faf1f68c081244c61cb8e0df0"><td class="memItemLeft" align="right" valign="top"><a id="a66e7239faf1f68c081244c61cb8e0df0"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>InsertEventMarkerPlatform</b> (<a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sMarker, const <a class="el" href="../../d3/de6/classxii_color.htm">xiiColor</a> &amp;color)=0</td></tr>
+<tr class="separator:a66e7239faf1f68c081244c61cb8e0df0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The command encoder common platform interface. </p>
@@ -200,7 +200,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>InsertEventMa
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d7/d9f/classxii_g_a_l_command_encoder_common_platform_interface.htm">xiiGALCommandEncoderCommonPlatformInterface</a></li>
-    <li class="footer">Generated on Tue Nov 14 2023 07:45:56 for XIIEngine by
+    <li class="footer">Generated on Fri Nov 17 2023 00:57:58 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

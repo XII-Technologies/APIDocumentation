@@ -1,5 +1,12 @@
 var NAVTREEINDEX27 =
 {
+"d5/d1d/classxii_camera_component_manager.htm#ae90773c08dc9a1bae0ed4b46ae9e2b85":[5,0,188,7],
+"d5/d1d/classxii_camera_component_manager.htm#afc3bc2a0dbe5bc6ebe352f71be55eb7e":[5,0,188,1],
+"d5/d22/structxii_is_value_type.htm":[5,0,907],
+"d5/d26/structxii_input_device_controller_1_1_motor.htm":[5,0,871,0],
+"d5/d26/structxii_input_device_controller_1_1_motor.htm#a664171991b15234de0e893fddf5e7e0d":[5,0,871,0,0],
+"d5/d26/structxii_input_device_controller_1_1_motor.htm#a664171991b15234de0e893fddf5e7e0da946beef0ecec62e5db67dbd399c598b2":[5,0,871,0,0,0],
+"d5/d26/structxii_input_device_controller_1_1_motor.htm#a664171991b15234de0e893fddf5e7e0dabffe22e35238967a04d1b67a929cd28c":[5,0,871,0,0,2],
 "d5/d26/structxii_input_device_controller_1_1_motor.htm#a664171991b15234de0e893fddf5e7e0dacc8ec8fd330dbd2fa7f2db6a942aea5a":[5,0,871,0,0,1],
 "d5/d28/structxii_physics_world_module_interface_1_1_fixed_joint_config.htm":[5,0,1114,0],
 "d5/d29/structxii_console_event.htm":[5,0,272],
@@ -236,18 +243,11 @@ var NAVTREEINDEX27 =
 "d5/d4f/classxii_simd_vec4i.htm#af5180b8cf251742e3515c7b971c6ebf8":[5,0,1475,56],
 "d5/d4f/classxii_simd_vec4i.htm#af5180b8cf251742e3515c7b971c6ebf8":[5,0,1475,57],
 "d5/d4f/classxii_simd_vec4i.htm#af5180b8cf251742e3515c7b971c6ebf8":[5,0,1475,60],
-"d5/d4f/classxii_simd_vec4i.htm#af5180b8cf251742e3515c7b971c6ebf8":[5,0,1475,58],
 "d5/d4f/classxii_simd_vec4i.htm#af5180b8cf251742e3515c7b971c6ebf8":[5,0,1475,59],
 "d5/d4f/classxii_simd_vec4i.htm#af5180b8cf251742e3515c7b971c6ebf8":[5,0,1475,54],
+"d5/d4f/classxii_simd_vec4i.htm#af5180b8cf251742e3515c7b971c6ebf8":[5,0,1475,58],
 "d5/d4f/classxii_simd_vec4i.htm#af6df3cf3cb779e47b93b721f957c7aeb":[5,0,1475,0],
 "d5/d4f/classxii_simd_vec4i.htm#afa7c8fe407540cd9398d0ca082fe3204":[5,0,1475,27],
 "d5/d4f/classxii_simd_vec4i.htm#afe1564aa4908cee9d8a312d7eb96fd30":[5,0,1475,37],
-"d5/d4f/classxii_simd_vec4i.htm#afeff270cc411839bc662fe180cd81c0d":[5,0,1475,40],
-"d5/d4f/classxii_simd_vec4i.htm#aff7d46b506805d284e5cca43c1662e9b":[5,0,1475,11],
-"d5/d4f/classxii_string_utf16.htm":[5,0,1560],
-"d5/d4f/classxii_string_utf16.htm#a01363739a04840881ac523c6a86db0b6":[5,0,1560,1],
-"d5/d4f/classxii_string_utf16.htm#a09fa5f03030425e471fcaf917b9a4a09":[5,0,1560,6],
-"d5/d4f/classxii_string_utf16.htm#a0ba231c3231824484fadcfef1994ae7f":[5,0,1560,0],
-"d5/d4f/classxii_string_utf16.htm#a245c33b1f577a524c0d71cdbe2abc7db":[5,0,1560,8],
-"d5/d4f/classxii_string_utf16.htm#a93637f3956ea5306ec1ccc7373c68db5":[5,0,1560,3]
+"d5/d4f/classxii_simd_vec4i.htm#afeff270cc411839bc662fe180cd81c0d":[5,0,1475,40]
 };

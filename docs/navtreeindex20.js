@@ -1,5 +1,12 @@
 var NAVTREEINDEX20 =
 {
+"d3/de4/structxii_skeleton_joint_type.htm":[5,0,1493],
+"d3/de4/structxii_skeleton_joint_type.htm#ad22d303ce372711c684d1e76c56b6245":[5,0,1493,1],
+"d3/de4/structxii_skeleton_joint_type.htm#ad22d303ce372711c684d1e76c56b6245a6a517976a45e2b61989b941e68e15eb3":[5,0,1493,1,2],
+"d3/de4/structxii_skeleton_joint_type.htm#ad22d303ce372711c684d1e76c56b6245a9e07109e64ee2746c9e1371f9d67b43d":[5,0,1493,1,0],
+"d3/de4/structxii_skeleton_joint_type.htm#ad22d303ce372711c684d1e76c56b6245abe3d65094528e7ee740a0d5a3ab1603c":[5,0,1493,1,3],
+"d3/de4/structxii_skeleton_joint_type.htm#ad22d303ce372711c684d1e76c56b6245afd86e235eef8e8de123b3777397c4fa3":[5,0,1493,1,1],
+"d3/de4/structxii_skeleton_joint_type.htm#ae2f7c180da55947c07b52e093bd222f5":[5,0,1493,0],
 "d3/de5/classxii_archive_stored_string.htm":[5,0,124],
 "d3/de5/classxii_archive_stored_string.htm#a235e77daa13c123bdbd33130dbd05ea7":[5,0,124,1],
 "d3/de5/classxii_archive_stored_string.htm#a635938b433e9d2e9feab202f77fb2f80":[5,0,124,2],
@@ -242,12 +249,5 @@ var NAVTREEINDEX20 =
 "d4/d14/classxii_pointer_with_flags.htm#ab855e9dc5929e405a99156ca6b078f06":[5,0,1122,18],
 "d4/d14/classxii_pointer_with_flags.htm#ad4fadd35cc95604ba4c4082b77dd795d":[5,0,1122,20],
 "d4/d14/classxii_pointer_with_flags.htm#af3461eae876a0f0282578a2563aadddd":[5,0,1122,16],
-"d4/d15/structxii_g_a_l_shading_rate_combiner_1_1_bits.htm":[5,0,718,0],
-"d4/d15/structxii_g_a_l_shading_rate_combiner_1_1_bits.htm#a39685889435d45cbb8b2017251a9ebb6":[5,0,718,0,1],
-"d4/d15/structxii_g_a_l_shading_rate_combiner_1_1_bits.htm#a66d0b252fa8149cd47d2e6a9a0a465be":[5,0,718,0,2],
-"d4/d15/structxii_g_a_l_shading_rate_combiner_1_1_bits.htm#a807faf67b33684a6d848a6661ad6fb2b":[5,0,718,0,4],
-"d4/d15/structxii_g_a_l_shading_rate_combiner_1_1_bits.htm#a9be773a6afbbaf1c27eed5560465fc2c":[5,0,718,0,5],
-"d4/d15/structxii_g_a_l_shading_rate_combiner_1_1_bits.htm#aba5c95306c73869d26194c1d5afa4894":[5,0,718,0,3],
-"d4/d15/structxii_g_a_l_shading_rate_combiner_1_1_bits.htm#acef448a207cb99500cab56a14fe36702":[5,0,718,0,0],
-"d4/d17/structxii_g_a_l_attachment_store_operation.htm":[5,0,511]
+"d4/d15/structxii_g_a_l_shading_rate_combiner_1_1_bits.htm":[5,0,718,0]
 };

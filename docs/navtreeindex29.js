@@ -1,5 +1,17 @@
 var NAVTREEINDEX29 =
 {
+"d5/d6f/classxii_simd_b_sphered.htm#a6280e159245ddc0ab6656da854763163":[5,0,1460,18],
+"d5/d6f/classxii_simd_b_sphered.htm#a7955f67b5bc3906aed7631d7b54c42c6":[5,0,1460,21],
+"d5/d6f/classxii_simd_b_sphered.htm#a7fb54ef7b6be746ab7305cdb2fef9895":[5,0,1460,5],
+"d5/d6f/classxii_simd_b_sphered.htm#a7fc6241e9abe4370025721d22b7258ba":[5,0,1460,22],
+"d5/d6f/classxii_simd_b_sphered.htm#aa60d2da18fccbf202f252460ea3bc3d5":[5,0,1460,15],
+"d5/d6f/classxii_simd_b_sphered.htm#ab1dbbbac1a6cc651cb2a797041280f22":[5,0,1460,20],
+"d5/d6f/classxii_simd_b_sphered.htm#ab21d045f4e7835a46f90e59e1ec22161":[5,0,1460,8],
+"d5/d6f/classxii_simd_b_sphered.htm#ab9076f3cd0bdd32c6fedc6d5798faea2":[5,0,1460,9],
+"d5/d6f/classxii_simd_b_sphered.htm#ac21abaa45b4ca0360d1d31e817947986":[5,0,1460,11],
+"d5/d6f/classxii_simd_b_sphered.htm#ac322ca0b30db5136a6c1cccb63455893":[5,0,1460,12],
+"d5/d6f/classxii_simd_b_sphered.htm#af90a91740d368ba89d25efa8229fa5e6":[5,0,1460,10],
+"d5/d6f/classxii_simd_b_sphered.htm#afe56a05e44dd1b6df9ca448a67af174e":[5,0,1460,19],
 "d5/d6f/classxii_simd_b_sphered.htm#aff5a1625fcf885fce6d48bb633632263":[5,0,1460,14],
 "d5/d6f/struct_occluder.htm":[5,0,19],
 "d5/d71/structxii_g_a_l_draw_command_properties.htm":[5,0,589],
@@ -237,17 +249,5 @@ var NAVTREEINDEX29 =
 "d5/da3/classxii_clock.htm#a54f9e636c63c971a608a3f1b5dae512d":[5,0,207,21],
 "d5/da3/classxii_clock.htm#a5e9f99111eb377ab36bd8c458af5e724":[5,0,207,23],
 "d5/da3/classxii_clock.htm#a5fa26c60bb80b6cdc508c7e7fe38524f":[5,0,207,20],
-"d5/da3/classxii_clock.htm#a66f00dfc9c5f065d3dffd9b14577ebc8":[5,0,207,9],
-"d5/da3/classxii_clock.htm#a6cf3d956064c710b2ecd7d152f580b4b":[5,0,207,7],
-"d5/da3/classxii_clock.htm#a722a42d93ac8d6524ebb434e68c8e5f5":[5,0,207,10],
-"d5/da3/classxii_clock.htm#a73791b34ae1ff245f2de34cc85850406":[5,0,207,17],
-"d5/da3/classxii_clock.htm#a7a855e217f4b97348d45bce21e7ed200":[5,0,207,4],
-"d5/da3/classxii_clock.htm#aa90e9a85f95a123fc030b6a8c67c4774":[5,0,207,22],
-"d5/da3/classxii_clock.htm#ab74b2704ebd3525370b569b938c7415d":[5,0,207,19],
-"d5/da3/classxii_clock.htm#aba173cedc58ee042b64a1e180441cd10":[5,0,207,6],
-"d5/da3/classxii_clock.htm#abb440373732a814fca7a350a6de692f0":[5,0,207,2],
-"d5/da3/classxii_clock.htm#ac95c0089f9e01457ef0edaa1db2f0ccf":[5,0,207,3],
-"d5/da3/classxii_clock.htm#acc798b64ae35b7f0bcae8900b85330d6":[5,0,207,11],
-"d5/da3/classxii_clock.htm#ad3c86c6c0c45ee8826b51cb2e338a340":[5,0,207,15],
-"d5/da3/classxii_clock.htm#ae18c9e1447c2d843227fd3fe57a44c8a":[5,0,207,16]
+"d5/da3/classxii_clock.htm#a66f00dfc9c5f065d3dffd9b14577ebc8":[5,0,207,9]
 };

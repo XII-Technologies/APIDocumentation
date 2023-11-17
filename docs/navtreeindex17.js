@@ -1,5 +1,12 @@
 var NAVTREEINDEX17 =
 {
+"d3/d6b/classxii_g_a_l_device_vulkan.htm#ae23ae720a9f0fc5450810782400ebe27":[5,0,586,39],
+"d3/d6b/classxii_g_a_l_device_vulkan.htm#aef4f48c74261e651195c1f7d0a64c330":[5,0,586,9],
+"d3/d6b/classxii_g_a_l_device_vulkan.htm#af2614328f7b4a3f0e6078d6979214f60":[5,0,586,38],
+"d3/d6b/classxii_g_a_l_device_vulkan.htm#af2841b45c90f378f38912524961e91ab":[5,0,586,40],
+"d3/d6b/classxii_g_a_l_device_vulkan.htm#af45ee62ef6151ee8c133c115750baf01":[5,0,586,23],
+"d3/d6b/structxii_type_version_info.htm":[5,0,1676],
+"d3/d6b/structxii_type_version_info.htm#a1fb8cf6c5298682806c4903505738a76":[5,0,1676,5],
 "d3/d6b/structxii_type_version_info.htm#a2afeba503184002af7431c312cd1df33":[5,0,1676,3],
 "d3/d6b/structxii_type_version_info.htm#a3589b30ec780d02b6b7b146954d3e694":[5,0,1676,6],
 "d3/d6b/structxii_type_version_info.htm#a622d6ca8a5fca106416b86c0a35bbc0f":[5,0,1676,4],
@@ -242,12 +249,5 @@ var NAVTREEINDEX17 =
 "d3/d9a/classxii_g_a_l_texture.htm#a077a1d532d373b09a55ad82b344b1cfd":[5,0,738,5],
 "d3/d9a/classxii_g_a_l_texture.htm#a36b6c23e7d92f215cfed536f2092c0d4":[5,0,738,7],
 "d3/d9a/classxii_g_a_l_texture.htm#a38909c542c592f4f4ac13c56ea90cf1c":[5,0,738,1],
-"d3/d9a/classxii_g_a_l_texture.htm#a44677d9675828f25db048bd3e40f9252":[5,0,738,2],
-"d3/d9a/classxii_g_a_l_texture.htm#a6e412b2366441eb796602c0953729264":[5,0,738,4],
-"d3/d9a/classxii_g_a_l_texture.htm#a8a9dd0ea17d38c3d68c9db0002e5dab0":[5,0,738,8],
-"d3/d9a/classxii_g_a_l_texture.htm#aa206da3037bddc67018d658f52bbde82":[5,0,738,3],
-"d3/d9a/classxii_g_a_l_texture.htm#ae8f779a3dba98776ccec4e8f1e747c52":[5,0,738,0],
-"d3/d9a/classxii_g_a_l_texture.htm#afb36a7597ab00fa707c02f4373c349c2":[5,0,738,6],
-"d3/d9a/classxii_sphere_reflection_probe_component_manager.htm":[5,0,1522],
-"d3/d9a/classxii_sphere_reflection_probe_component_manager.htm#a99a7d01e07793d61b2624d2e0a60db5e":[5,0,1522,0]
+"d3/d9a/classxii_g_a_l_texture.htm#a44677d9675828f25db048bd3e40f9252":[5,0,738,2]
 };

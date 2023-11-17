@@ -1,5 +1,9 @@
 var NAVTREEINDEX6 =
 {
+"d1/d20/classxii_vec4_template.htm#a12d35bafe5a6b289d914a42b005ea49d":[5,0,1722,24],
+"d1/d20/classxii_vec4_template.htm#a13f044190648770d6f34dbeebda054f2":[5,0,1722,8],
+"d1/d20/classxii_vec4_template.htm#a146e4bd97a36b997c59fb1f67ad9b504":[5,0,1722,39],
+"d1/d20/classxii_vec4_template.htm#a19fe0eb0b8d775d2cabf4006675fd964":[5,0,1722,19],
 "d1/d20/classxii_vec4_template.htm#a280a58b2ac97192072c5d01855702635":[5,0,1722,22],
 "d1/d20/classxii_vec4_template.htm#a28d05db94604994d73ae8d0be84262bc":[5,0,1722,3],
 "d1/d20/classxii_vec4_template.htm#a2a86e4775d786205a99f05c16fdd22c0":[5,0,1722,30],
@@ -162,10 +166,10 @@ var NAVTREEINDEX6 =
 "d1/d24/classxii_g_a_l_input_layout_d3_d12.htm":[5,0,617],
 "d1/d24/classxii_g_a_l_input_layout_d3_d12.htm#a00b546eb9116cf4f4f41b2a8e7414b9d":[5,0,617,8],
 "d1/d24/classxii_g_a_l_input_layout_d3_d12.htm#a849fd79b894cb464943f458903e1ae01":[5,0,617,5],
-"d1/d24/classxii_g_a_l_input_layout_d3_d12.htm#a8a6a808bbfe28fcba2b0e30560a9d04a":[5,0,617,3],
 "d1/d24/classxii_g_a_l_input_layout_d3_d12.htm#a9b3da82b84b68e0128d059e18e11b67d":[5,0,617,6],
 "d1/d24/classxii_g_a_l_input_layout_d3_d12.htm#aac978a1047c196c82cf94ac5cd6b1749":[5,0,617,1],
 "d1/d24/classxii_g_a_l_input_layout_d3_d12.htm#ab1083be57e2c5aab87440c4d18919f43":[5,0,617,0],
+"d1/d24/classxii_g_a_l_input_layout_d3_d12.htm#ace4297a36e2024c8461ef1d920c8d8b0":[5,0,617,3],
 "d1/d24/classxii_g_a_l_input_layout_d3_d12.htm#ae44593a93a7829379cb661b1268a47c0":[5,0,617,9],
 "d1/d24/classxii_g_a_l_input_layout_d3_d12.htm#aefc9ff75d6833fd2f05be48e16436db6":[5,0,617,7],
 "d1/d24/classxii_g_a_l_input_layout_d3_d12.htm#afb344a0788fa0efb4c4f449b58328141":[5,0,617,2],
@@ -245,9 +249,5 @@ var NAVTREEINDEX6 =
 "d1/d33/classxii_open_ddl_reader_element.htm#a6da01b397d5643b81a8c60f0243765e3":[5,0,1080,25],
 "d1/d33/classxii_open_ddl_reader_element.htm#a73cb7370c5ee5d8ef8d67bd4dcd278c1":[5,0,1080,23],
 "d1/d33/classxii_open_ddl_reader_element.htm#a804d349b876a462f365ffad930e22cf9":[5,0,1080,0],
-"d1/d33/classxii_open_ddl_reader_element.htm#a87b5b123cbb8d79e7a0c3f20fb4a6db5":[5,0,1080,14],
-"d1/d33/classxii_open_ddl_reader_element.htm#a93b285585cb30939880fa387d762fea6":[5,0,1080,21],
-"d1/d33/classxii_open_ddl_reader_element.htm#a9755f8a457c9f02e0592a0e781b81264":[5,0,1080,11],
-"d1/d33/classxii_open_ddl_reader_element.htm#a9a10a1d69acf525582b56ea20dd19e25":[5,0,1080,7],
-"d1/d33/classxii_open_ddl_reader_element.htm#a9f980d0ef4332038cec97ef9328848a1":[5,0,1080,9]
+"d1/d33/classxii_open_ddl_reader_element.htm#a87b5b123cbb8d79e7a0c3f20fb4a6db5":[5,0,1080,14]
 };

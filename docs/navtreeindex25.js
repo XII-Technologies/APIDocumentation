@@ -1,5 +1,12 @@
 var NAVTREEINDEX25 =
 {
+"d4/de3/structxii_g_a_l_shading_rate_1_1_bits.htm#a49e6ece8d9ee32a74bd548ccd39d57b3":[5,0,714,0,1],
+"d4/de3/structxii_g_a_l_shading_rate_1_1_bits.htm#a553f84506f09b73fb982809128c102f8":[5,0,714,0,5],
+"d4/de3/structxii_g_a_l_shading_rate_1_1_bits.htm#a6ef80557cb3042122279080ef5abb61e":[5,0,714,0,3],
+"d4/de3/structxii_g_a_l_shading_rate_1_1_bits.htm#ac28ab15a09b406e587bd4bc85651718b":[5,0,714,0,7],
+"d4/de3/structxii_g_a_l_shading_rate_1_1_bits.htm#ad65cabc920d3c57048a8870b604266ad":[5,0,714,0,6],
+"d4/de3/structxii_g_a_l_shading_rate_1_1_bits.htm#af87f6ee09287569518bfa34bc7bdb96d":[5,0,714,0,4],
+"d4/de3/structxii_g_a_l_shading_rate_1_1_bits.htm#aff0695f7f757b99064e21c1fe503ea2e":[5,0,714,0,0],
 "d4/de3/structxii_mesh_resource_descriptor_1_1_sub_mesh.htm":[5,0,996,2],
 "d4/de3/structxii_mesh_resource_descriptor_1_1_sub_mesh.htm#a7410b0f6dd48addca94fd17683faafa4":[5,0,996,2,3],
 "d4/de3/structxii_mesh_resource_descriptor_1_1_sub_mesh.htm#a8a924b340a5ab06f492b73f90119536f":[5,0,996,2,1],
@@ -242,12 +249,5 @@ var NAVTREEINDEX25 =
 "d5/d13/classxii_transform_template.htm#aebafcbcf8590f912d2e6d419383c780c":[5,0,1646,13],
 "d5/d13/classxii_transform_template.htm#afc9c45f3aaecc379266bd0e9491911c3":[5,0,1646,2],
 "d5/d15/classxii_open_ddl_writer.htm":[5,0,1081],
-"d5/d15/classxii_open_ddl_writer.htm#a0afc2aeb0d0cc77cd1f2dff0a9f38e79":[5,0,1081,1],
-"d5/d15/classxii_open_ddl_writer.htm#a0afc2aeb0d0cc77cd1f2dff0a9f38e79a1649aed298f99d587e2eb30c1db5946b":[5,0,1081,1,1],
-"d5/d15/classxii_open_ddl_writer.htm#a0afc2aeb0d0cc77cd1f2dff0a9f38e79a4b8123df4e2b3456270c11394adf7607":[5,0,1081,1,0],
-"d5/d15/classxii_open_ddl_writer.htm#a1208a8e66a2a9ed8e9af1b05a7331a34":[5,0,1081,41],
-"d5/d15/classxii_open_ddl_writer.htm#a18caa77a7871e1db7c51e2498218d71e":[5,0,1081,6],
-"d5/d15/classxii_open_ddl_writer.htm#a197c8b3dcdf5b4a5e75629aadb5e854c":[5,0,1081,26],
-"d5/d15/classxii_open_ddl_writer.htm#a252eddea0c21076a3b3d50dbf5259dac":[5,0,1081,16],
-"d5/d15/classxii_open_ddl_writer.htm#a265f79c4c13ae619c087bd5ab11769d5":[5,0,1081,22]
+"d5/d15/classxii_open_ddl_writer.htm#a0afc2aeb0d0cc77cd1f2dff0a9f38e79":[5,0,1081,1]
 };

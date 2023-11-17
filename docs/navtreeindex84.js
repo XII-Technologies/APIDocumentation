@@ -1,5 +1,17 @@
 var NAVTREEINDEX84 =
 {
+"functions_q.htm":[5,3,0,17],
+"functions_r.htm":[5,3,0,18],
+"functions_rela.htm":[5,3,6],
+"functions_s.htm":[5,3,0,19],
+"functions_t.htm":[5,3,0,20],
+"functions_type.htm":[5,3,3],
+"functions_u.htm":[5,3,0,21],
+"functions_v.htm":[5,3,0,22],
+"functions_vars.htm":[5,3,2,0],
+"functions_vars.htm":[5,3,2],
+"functions_vars_b.htm":[5,3,2,1],
+"functions_vars_c.htm":[5,3,2,2],
 "functions_vars_d.htm":[5,3,2,3],
 "functions_vars_f.htm":[5,3,2,4],
 "functions_vars_g.htm":[5,3,2,5],

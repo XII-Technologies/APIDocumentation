@@ -697,7 +697,7 @@ Protected Attributes</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>The handle to the created buffer object. The function calls <a class="el" href="../../d7/df4/classxii_ref_counting_impl.htm#af89a37294bfebe74f2f43c492d2c14c3" title="Increments the reference counter. Returns the new reference count.">AddRef()</a>, so that the new object will have one reference.</dd></dl>
 <dl class="section remark"><dt>Remarks</dt><dd>Size of a uniform buffer (<a class="el" href="../../d6/d24/structxii_g_a_l_bind_flags.htm" title="This describes which parts of the pipeline a resource can be bound to. It generally mirrors D3D11_BIN...">xiiGALBindFlags</a>) must be multiple of 16.<br  />
 Stride of a formatted buffer will be computed automatically from the format if the m_uiElementByteStride member of buffer description is set to default value (0). </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.htm#_todo000095">Todo:</a></b></dt><dd>GraphicsFoundation: Assert that the command encoder used to initialize the resource is not a deferred context, as those cannot be used to initialize resources. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.htm#_todo000097">Todo:</a></b></dt><dd>GraphicsFoundation: Assert that the command encoder used to initialize the resource is not a deferred context, as those cannot be used to initialize resources. </dd></dl>
 
 </div>
 </div>
@@ -915,8 +915,8 @@ Stride of a formatted buffer will be computed automatically from the format if t
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The handle to the created render pass object. The function calls <a class="el" href="../../d7/df4/classxii_ref_counting_impl.htm#af89a37294bfebe74f2f43c492d2c14c3" title="Increments the reference counter. Returns the new reference count.">AddRef()</a>, so that the new object will have one reference. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.htm#_todo000098">Todo:</a></b></dt><dd>GraphicsFoundation: Use VkPhysicalDeviceFragmentShadingRatePropertiesKHR::maxFragmentShadingRateAttachmentTexelSizeAspectRatio. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.htm#_todo000099">Todo:</a></b></dt><dd>GraphicsFoundation: Check render pass dependency source and destination stage mask is set to the undefined pipeline stage. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.htm#_todo000100">Todo:</a></b></dt><dd>GraphicsFoundation: Use VkPhysicalDeviceFragmentShadingRatePropertiesKHR::maxFragmentShadingRateAttachmentTexelSizeAspectRatio. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.htm#_todo000101">Todo:</a></b></dt><dd>GraphicsFoundation: Check render pass dependency source and destination stage mask is set to the undefined pipeline stage. </dd></dl>
 
 </div>
 </div>
@@ -999,7 +999,7 @@ Stride of a formatted buffer will be computed automatically from the format if t
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The handle to the created swap chain object. The function calls <a class="el" href="../../d7/df4/classxii_ref_counting_impl.htm#af89a37294bfebe74f2f43c492d2c14c3" title="Increments the reference counter. Returns the new reference count.">AddRef()</a>, so that the new object will have one reference. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.htm#_todo000094">Todo:</a></b></dt><dd>GraphicsFoundation: Add swap chain description validation. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.htm#_todo000096">Todo:</a></b></dt><dd>GraphicsFoundation: Add swap chain description validation. </dd></dl>
 
 </div>
 </div>
@@ -1045,8 +1045,8 @@ If initial data is provided, number of sub-resources must exactly match the numb
  15x6, 7x3, 3x1, 1x1, 15x6, 7x3, 3x1, 1x1.<br  />
 For a 15 x 6 x 4 3D texture, the following array of sub-resources should be provided:<br  />
  15x6x4, 7x3x2, 3x1x1, 1x1x1 </p>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.htm#_todo000096">Todo:</a></b></dt><dd>GraphicsFoundation: Vulkan allows the creation of 2D texture arrays, and using a single slice for view even if <a class="el" href="../../dc/d5c/structxii_g_a_l_shading_rate_capability_flags.htm#ae18051ba3e2592a63b1df04552e3f560aafeab8337981d7714bf8b3d47a052dd3" title="Allows to use texture 2D array for shading rate.">xiiGALShadingRateCapabilityFlags::TextureArray</a> is not supported by the device. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.htm#_todo000097">Todo:</a></b></dt><dd>GraphicsFoundation: Validate texture mip size to the tile size property. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.htm#_todo000098">Todo:</a></b></dt><dd>GraphicsFoundation: Vulkan allows the creation of 2D texture arrays, and using a single slice for view even if <a class="el" href="../../dc/d5c/structxii_g_a_l_shading_rate_capability_flags.htm#ae18051ba3e2592a63b1df04552e3f560aafeab8337981d7714bf8b3d47a052dd3" title="Allows to use texture 2D array for shading rate.">xiiGALShadingRateCapabilityFlags::TextureArray</a> is not supported by the device. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.htm#_todo000099">Todo:</a></b></dt><dd>GraphicsFoundation: Validate texture mip size to the tile size property. </dd></dl>
 
 </div>
 </div>
@@ -1144,7 +1144,7 @@ For a 15 x 6 x 4 3D texture, the following array of sub-resources should be prov
 </div><div class="memdoc">
 
 <p>This returns the sparse texture format information for the given texture format, resource dimension and sample count. </p>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.htm#_todo000100">Todo:</a></b></dt><dd>GraphicsFoundation: To be implemented. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.htm#_todo000102">Todo:</a></b></dt><dd>GraphicsFoundation: To be implemented. </dd></dl>
 
 </div>
 </div>
@@ -1237,7 +1237,7 @@ For a 15 x 6 x 4 3D texture, the following array of sub-resources should be prov
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d5/d19/classxii_g_a_l_device.htm">xiiGALDevice</a></li>
-    <li class="footer">Generated on Tue Nov 14 2023 07:45:56 for XIIEngine by
+    <li class="footer">Generated on Fri Nov 17 2023 00:57:58 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

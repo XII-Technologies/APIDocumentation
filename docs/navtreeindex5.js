@@ -1,5 +1,9 @@
 var NAVTREEINDEX5 =
 {
+"d0/de3/classxii_bone_weights_anim_node.htm#aeef938c5c0d5a237b3f7c7dfeda13945":[5,0,174,10],
+"d0/de3/structxii_telemetry_1_1_telemetry_event_data.htm":[5,0,1592,0],
+"d0/de3/structxii_telemetry_1_1_telemetry_event_data.htm#aaaf8396bd5c403facf44ec0ffd0a52ef":[5,0,1592,0,1],
+"d0/de3/structxii_telemetry_1_1_telemetry_event_data.htm#aeb22ecab4461f0df00e957bfb72bcfcf":[5,0,1592,0,0],
 "d0/de3/structxii_telemetry_1_1_telemetry_event_data.htm#aeb22ecab4461f0df00e957bfb72bcfcfa06379411240bb083633a309c9f003dea":[5,0,1592,0,0,0],
 "d0/de3/structxii_telemetry_1_1_telemetry_event_data.htm#aeb22ecab4461f0df00e957bfb72bcfcfa28dac1a16fc464d4600a6eede09524a9":[5,0,1592,0,0,3],
 "d0/de3/structxii_telemetry_1_1_telemetry_event_data.htm#aeb22ecab4461f0df00e957bfb72bcfcfa9eda14d8381c0a34333377e3b543d2f6":[5,0,1592,0,0,1],
@@ -245,9 +249,5 @@ var NAVTREEINDEX5 =
 "d1/d20/classxii_image_conversion_step_compress_blocks.htm":[5,0,846],
 "d1/d20/classxii_image_conversion_step_compress_blocks.htm#a242fb686f71b298ff9d7e1e5698b39fb":[5,0,846,0],
 "d1/d20/classxii_vec4_template.htm":[5,0,1722],
-"d1/d20/classxii_vec4_template.htm#a0a7185e03fd2a1b35f58f8116e7c7f9a":[5,0,1722,6],
-"d1/d20/classxii_vec4_template.htm#a12d35bafe5a6b289d914a42b005ea49d":[5,0,1722,24],
-"d1/d20/classxii_vec4_template.htm#a13f044190648770d6f34dbeebda054f2":[5,0,1722,8],
-"d1/d20/classxii_vec4_template.htm#a146e4bd97a36b997c59fb1f67ad9b504":[5,0,1722,39],
-"d1/d20/classxii_vec4_template.htm#a19fe0eb0b8d775d2cabf4006675fd964":[5,0,1722,19]
+"d1/d20/classxii_vec4_template.htm#a0a7185e03fd2a1b35f58f8116e7c7f9a":[5,0,1722,6]
 };

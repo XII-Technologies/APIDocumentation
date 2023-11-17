@@ -107,9 +107,12 @@ Inheritance diagram for xiiGALCommandEncoderGraphicsPlatformInterface:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:af6b3e9a04650cd297fc2b7239f9c772b"><td class="memItemLeft" align="right" valign="top"><a id="af6b3e9a04650cd297fc2b7239f9c772b"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>ClearPlatform</b> (const <a class="el" href="../../d3/de6/classxii_color.htm">xiiColor</a> &amp;clearColor, xiiUInt32 uiRenderTargetClearMask, bool bClearDepth, bool bClearStencil, float fDepthClear, xiiUInt8 uiStencilClear)=0</td></tr>
-<tr class="separator:af6b3e9a04650cd297fc2b7239f9c772b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9bc24aed6ede4fa60db4c32526e9cdb6"><td class="memItemLeft" align="right" valign="top"><a id="a9bc24aed6ede4fa60db4c32526e9cdb6"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>ClearRenderTargetPlatform</b> (<a class="el" href="../../da/d75/classxii_g_a_l_texture_view.htm">xiiGALTextureView</a> *pTextureView, const <a class="el" href="../../d3/de6/classxii_color.htm">xiiColor</a> &amp;clearColor)=0</td></tr>
+<tr class="separator:a9bc24aed6ede4fa60db4c32526e9cdb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad84c1be03c8b340426fde88bb7f97234"><td class="memItemLeft" align="right" valign="top"><a id="ad84c1be03c8b340426fde88bb7f97234"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>ClearDepthStencilPlatform</b> (<a class="el" href="../../da/d75/classxii_g_a_l_texture_view.htm">xiiGALTextureView</a> *pTextureView, bool bClearDepth, bool bClearStencil, float fDepthClear, xiiUInt8 uiStencilClear)=0</td></tr>
+<tr class="separator:ad84c1be03c8b340426fde88bb7f97234"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a572e403dd1d60ba68854007770e28796"><td class="memItemLeft" align="right" valign="top"><a id="a572e403dd1d60ba68854007770e28796"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>DrawPlatform</b> (xiiUInt32 uiVertexCount, xiiUInt32 uiStartVertex)=0</td></tr>
 <tr class="separator:a572e403dd1d60ba68854007770e28796"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -128,9 +131,9 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>DrawInstanced
 <tr class="memitem:a668a0596e7efca68cbbfa11d0c3087e0"><td class="memItemLeft" align="right" valign="top"><a id="a668a0596e7efca68cbbfa11d0c3087e0"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>DrawInstancedIndirectPlatform</b> (<a class="el" href="../../da/d03/classxii_g_a_l_buffer.htm">xiiGALBuffer</a> *pIndirectArgumentBuffer, xiiUInt32 uiArgumentOffsetInBytes)=0</td></tr>
 <tr class="separator:a668a0596e7efca68cbbfa11d0c3087e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae95abbde53bd3b67d21c09f6cc2d8885"><td class="memItemLeft" align="right" valign="top"><a id="ae95abbde53bd3b67d21c09f6cc2d8885"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SetIndexBufferPlatform</b> (<a class="el" href="../../da/d03/classxii_g_a_l_buffer.htm">xiiGALBuffer</a> *pIndexBuffer)=0</td></tr>
-<tr class="separator:ae95abbde53bd3b67d21c09f6cc2d8885"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49dd3f4496bdf647546c8d32f383e55a"><td class="memItemLeft" align="right" valign="top"><a id="a49dd3f4496bdf647546c8d32f383e55a"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SetIndexBufferPlatform</b> (<a class="el" href="../../da/d03/classxii_g_a_l_buffer.htm">xiiGALBuffer</a> *pIndexBuffer, xiiUInt64 uiByteOffset)=0</td></tr>
+<tr class="separator:a49dd3f4496bdf647546c8d32f383e55a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4871d0108cbcc2943a264b6aa713d308"><td class="memItemLeft" align="right" valign="top"><a id="a4871d0108cbcc2943a264b6aa713d308"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SetVertexBufferPlatform</b> (xiiUInt32 uiSlot, <a class="el" href="../../da/d03/classxii_g_a_l_buffer.htm">xiiGALBuffer</a> *pVertexBuffer)=0</td></tr>
 <tr class="separator:a4871d0108cbcc2943a264b6aa713d308"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -167,7 +170,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SetScissorRec
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d6/daa/classxii_g_a_l_command_encoder_graphics_platform_interface.htm">xiiGALCommandEncoderGraphicsPlatformInterface</a></li>
-    <li class="footer">Generated on Tue Nov 14 2023 07:45:56 for XIIEngine by
+    <li class="footer">Generated on Fri Nov 17 2023 00:57:58 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>
