@@ -91,69 +91,135 @@ $(document).ready(function(){initNavTree('d5/d72/_gui_foundation_d_l_l_8h_source
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;Foundation/Basics.h&gt;</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;Foundation/Math/Color8UNorm.h&gt;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;Foundation/Types/Uuid.h&gt;</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;QColor&gt;</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;QMetaType&gt;</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;ToolsFoundation/ToolsFoundationDLL.h&gt;</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">// Configure the DLL Import/Export Define</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#if XII_ENABLED(XII_COMPILE_ENGINE_AS_DLL)</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#  ifdef BUILDSYSTEM_BUILDING_GUIFOUNDATION_LIB</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#    define XII_GUIFOUNDATION_DLL XII_DECL_EXPORT</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#  else</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#    define XII_GUIFOUNDATION_DLL XII_DECL_IMPORT</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#  endif</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#  define XII_GUIFOUNDATION_DLL</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">class </span>QWidget;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">class </span>QObject;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;Q_DECLARE_METATYPE(<a class="code" href="../../dc/d1d/classxii_uuid.htm">xiiUuid</a>);</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;Foundation/Strings/String.h&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;Foundation/Types/Uuid.h&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;QColor&gt;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;QDataStream&gt;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;QMetaType&gt;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;ToolsFoundation/ToolsFoundationDLL.h&gt;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">// Configure the DLL Import/Export Define</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#if XII_ENABLED(XII_COMPILE_ENGINE_AS_DLL)</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#  ifdef BUILDSYSTEM_BUILDING_GUIFOUNDATION_LIB</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#    define XII_GUIFOUNDATION_DLL XII_DECL_EXPORT</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#  else</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#    define XII_GUIFOUNDATION_DLL XII_DECL_IMPORT</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#  endif</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#  define XII_GUIFOUNDATION_DLL</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">class </span>QWidget;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">class </span>QObject;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
-<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="../../d8/d33/classxii_qt_scoped_updates_disabled.htm">   28</a></span>&#160;<span class="keyword">class </span>XII_GUIFOUNDATION_DLL <a class="code" href="../../d8/d33/classxii_qt_scoped_updates_disabled.htm">xiiQtScopedUpdatesDisabled</a></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;{</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  <a class="code" href="../../d8/d33/classxii_qt_scoped_updates_disabled.htm">xiiQtScopedUpdatesDisabled</a>(QWidget* pWidget1, QWidget* pWidget2 = <span class="keyword">nullptr</span>, QWidget* pWidget3 = <span class="keyword">nullptr</span>, QWidget* pWidget4 = <span class="keyword">nullptr</span>, QWidget* pWidget5 = <span class="keyword">nullptr</span>, QWidget* pWidget6 = <span class="keyword">nullptr</span>);</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  ~<a class="code" href="../../d8/d33/classxii_qt_scoped_updates_disabled.htm">xiiQtScopedUpdatesDisabled</a>();</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  QWidget* m_pWidgets[6];</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;};</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
-<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="../../d5/d81/classxii_qt_scoped_block_signals.htm">   40</a></span>&#160;<span class="keyword">class </span>XII_GUIFOUNDATION_DLL <a class="code" href="../../d5/d81/classxii_qt_scoped_block_signals.htm">xiiQtScopedBlockSignals</a></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;{</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <a class="code" href="../../d5/d81/classxii_qt_scoped_block_signals.htm">xiiQtScopedBlockSignals</a>(QObject* pObject1, QObject* pObject2 = <span class="keyword">nullptr</span>, QObject* pObject3 = <span class="keyword">nullptr</span>, QObject* pObject4 = <span class="keyword">nullptr</span>, QObject* pObject5 = <span class="keyword">nullptr</span>, QObject* pObject6 = <span class="keyword">nullptr</span>);</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  ~<a class="code" href="../../d5/d81/classxii_qt_scoped_block_signals.htm">xiiQtScopedBlockSignals</a>();</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  QObject* m_pObjects[6];</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;};</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;XII_ALWAYS_INLINE QColor xiiToQtColor(<span class="keyword">const</span> <a class="code" href="../../df/d71/classxii_color_gamma_u_b.htm">xiiColorGammaUB</a>&amp; c)</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;{</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <span class="keywordflow">return</span> QColor(c.r, c.g, c.b, c.a);</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;}</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;XII_ALWAYS_INLINE <a class="code" href="../../df/d71/classxii_color_gamma_u_b.htm">xiiColorGammaUB</a> qtToXIIColor(<span class="keyword">const</span> QColor&amp; c)</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;{</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="../../df/d71/classxii_color_gamma_u_b.htm">xiiColorGammaUB</a>(c.red(), c.green(), c.blue(), c.alpha());</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;}</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;Q_DECLARE_METATYPE(<a class="code" href="../../dc/d1d/classxii_uuid.htm">xiiUuid</a>);</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="../../d8/d33/classxii_qt_scoped_updates_disabled.htm">   30</a></span>&#160;<span class="keyword">class </span>XII_GUIFOUNDATION_DLL <a class="code" href="../../d8/d33/classxii_qt_scoped_updates_disabled.htm">xiiQtScopedUpdatesDisabled</a></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;{</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  <a class="code" href="../../d8/d33/classxii_qt_scoped_updates_disabled.htm">xiiQtScopedUpdatesDisabled</a>(QWidget* pWidget1, QWidget* pWidget2 = <span class="keyword">nullptr</span>, QWidget* pWidget3 = <span class="keyword">nullptr</span>, QWidget* pWidget4 = <span class="keyword">nullptr</span>, QWidget* pWidget5 = <span class="keyword">nullptr</span>, QWidget* pWidget6 = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  ~<a class="code" href="../../d8/d33/classxii_qt_scoped_updates_disabled.htm">xiiQtScopedUpdatesDisabled</a>();</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  QWidget* m_pWidgets[6];</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;};</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="../../d5/d81/classxii_qt_scoped_block_signals.htm">   42</a></span>&#160;<span class="keyword">class </span>XII_GUIFOUNDATION_DLL <a class="code" href="../../d5/d81/classxii_qt_scoped_block_signals.htm">xiiQtScopedBlockSignals</a></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;{</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <a class="code" href="../../d5/d81/classxii_qt_scoped_block_signals.htm">xiiQtScopedBlockSignals</a>(QObject* pObject1, QObject* pObject2 = <span class="keyword">nullptr</span>, QObject* pObject3 = <span class="keyword">nullptr</span>, QObject* pObject4 = <span class="keyword">nullptr</span>, QObject* pObject5 = <span class="keyword">nullptr</span>, QObject* pObject6 = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  ~<a class="code" href="../../d5/d81/classxii_qt_scoped_block_signals.htm">xiiQtScopedBlockSignals</a>();</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  QObject* m_pObjects[6];</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;};</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;XII_ALWAYS_INLINE QColor xiiToQtColor(<span class="keyword">const</span> <a class="code" href="../../df/d71/classxii_color_gamma_u_b.htm">xiiColorGammaUB</a>&amp; c)</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;{</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <span class="keywordflow">return</span> QColor(c.r, c.g, c.b, c.a);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;}</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;XII_ALWAYS_INLINE <a class="code" href="../../df/d71/classxii_color_gamma_u_b.htm">xiiColorGammaUB</a> qtToXIIColor(<span class="keyword">const</span> QColor&amp; c)</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;{</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="../../df/d71/classxii_color_gamma_u_b.htm">xiiColorGammaUB</a>(c.red(), c.green(), c.blue(), c.alpha());</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;}</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;XII_ALWAYS_INLINE <a class="code" href="../../df/dfb/structxii_hybrid_string.htm">xiiString</a> qtToXIIString(<span class="keyword">const</span> QString&amp; sString)</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;{</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  QByteArray data = sString.toUtf8();</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="../../df/dfb/structxii_hybrid_string.htm">xiiString</a>(<a class="code" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a>(data.data(), data.size()));</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;}</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;XII_ALWAYS_INLINE QString xiiMakeQString(<a class="code" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sString)</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;{</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  <span class="keywordflow">return</span> QString::fromUtf8(sString.<a class="code" href="../../da/d9d/structxii_string_view.htm#a65d3c651c35878985c1a637a45ce9bd1">GetStartPointer</a>(), sString.<a class="code" href="../../da/d9d/structxii_string_view.htm#ad238901b4ca0413dd5d8e28728c38144">GetElementCount</a>());</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;}</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="keywordtype">void</span> operator&gt;&gt;(QDataStream&amp; inout_stream, T*&amp; rhs)</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;{</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  <span class="keywordtype">void</span>* p   = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  uint  len = <span class="keyword">sizeof</span>(<span class="keywordtype">void</span>*);</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  inout_stream.readRawData((<span class="keywordtype">char</span>*)&amp;p, len);</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  rhs = (T*)p;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;}</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="keywordtype">void</span> operator&lt;&lt;(QDataStream&amp; inout_stream, T* rhs)</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;{</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  inout_stream.writeRawData((<span class="keyword">const</span> <span class="keywordtype">char</span>*)&amp;rhs, <span class="keyword">sizeof</span>(<span class="keywordtype">void</span>*));</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;}</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="keywordtype">void</span> operator&gt;&gt;(QDataStream&amp; inout_stream, <a class="code" href="../../dc/da4/classxii_dynamic_array.htm">xiiDynamicArray&lt;T&gt;</a>&amp; rhs)</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;{</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  xiiUInt32 uiIndices = 0;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  inout_stream &gt;&gt; uiIndices;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  rhs.<a class="code" href="../../da/d4c/classxii_array_base.htm#ab517ef07fbed3ecc766ac24394ae1fc8">Clear</a>();</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  rhs.<a class="code" href="../../d2/dea/classxii_dynamic_array_base.htm#a9d30fef4224f0f636084a8ed1bf3c7b1">Reserve</a>(uiIndices);</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; uiIndices; ++i)</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  {</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    T obj = {};</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    inout_stream &gt;&gt; obj;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    rhs.<a class="code" href="../../da/d4c/classxii_array_base.htm#a8b86f58a2097871da0e0b91eecc823e4">PushBack</a>(obj);</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  }</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;}</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160; </div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="keywordtype">void</span> operator&lt;&lt;(QDataStream&amp; inout_stream, <a class="code" href="../../dc/da4/classxii_dynamic_array.htm">xiiDynamicArray&lt;T&gt;</a>&amp; rhs)</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;{</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;  xiiUInt32 iIndices = rhs.<a class="code" href="../../da/d4c/classxii_array_base.htm#a43100f93e19bb795ea0980dae2b28e0b">GetCount</a>();</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;  inout_stream &lt;&lt; iIndices;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160; </div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;  <span class="keywordflow">for</span> (xiiUInt32 i = 0; i &lt; iIndices; ++i)</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;  {</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    inout_stream &lt;&lt; rhs[i];</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;  }</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
+<div class="ttc" id="aclassxii_array_base_htm_a8b86f58a2097871da0e0b91eecc823e4"><div class="ttname"><a href="../../da/d4c/classxii_array_base.htm#a8b86f58a2097871da0e0b91eecc823e4">xiiArrayBase&lt; T, xiiDynamicArrayBase&lt; T &gt; &gt;::PushBack</a></div><div class="ttdeci">void PushBack(const T &amp;value)</div><div class="ttdoc">Pushes value at the end of the array.</div><div class="ttdef"><b>Definition:</b> ArrayBase_inl.h:325</div></div>
+<div class="ttc" id="aclassxii_dynamic_array_base_htm_a9d30fef4224f0f636084a8ed1bf3c7b1"><div class="ttname"><a href="../../d2/dea/classxii_dynamic_array_base.htm#a9d30fef4224f0f636084a8ed1bf3c7b1">xiiDynamicArrayBase::Reserve</a></div><div class="ttdeci">void Reserve(xiiUInt32 uiCapacity)</div><div class="ttdoc">Expands the array so it can at least store the given capacity.</div><div class="ttdef"><b>Definition:</b> DynamicArray_inl.h:179</div></div>
+<div class="ttc" id="astructxii_string_view_htm_ad238901b4ca0413dd5d8e28728c38144"><div class="ttname"><a href="../../da/d9d/structxii_string_view.htm#ad238901b4ca0413dd5d8e28728c38144">xiiStringView::GetElementCount</a></div><div class="ttdeci">xiiUInt32 GetElementCount() const</div><div class="ttdoc">Returns the number of bytes from the start position up to its end.</div><div class="ttdef"><b>Definition:</b> StringView.h:83</div></div>
+<div class="ttc" id="astructxii_hybrid_string_htm"><div class="ttname"><a href="../../df/dfb/structxii_hybrid_string.htm">xiiHybridString&lt; 32, xiiDefaultAllocatorWrapper &gt;</a></div></div>
+<div class="ttc" id="aclassxii_array_base_htm_ab517ef07fbed3ecc766ac24394ae1fc8"><div class="ttname"><a href="../../da/d4c/classxii_array_base.htm#ab517ef07fbed3ecc766ac24394ae1fc8">xiiArrayBase&lt; T, xiiDynamicArrayBase&lt; T &gt; &gt;::Clear</a></div><div class="ttdeci">void Clear()</div><div class="ttdoc">Clears the array.</div><div class="ttdef"><b>Definition:</b> ArrayBase_inl.h:176</div></div>
+<div class="ttc" id="astructxii_string_view_htm"><div class="ttname"><a href="../../da/d9d/structxii_string_view.htm">xiiStringView</a></div><div class="ttdoc">xiiStringView represent a read-only sub-string of a larger string, as it can store a dedicated string...</div><div class="ttdef"><b>Definition:</b> StringView.h:23</div></div>
 <div class="ttc" id="aclassxii_color_gamma_u_b_htm"><div class="ttname"><a href="../../df/d71/classxii_color_gamma_u_b.htm">xiiColorGammaUB</a></div><div class="ttdoc">A 8bit per channel unsigned normalized (values interpreted as 0-1) color storage format that represen...</div><div class="ttdef"><b>Definition:</b> Color8UNorm.h:69</div></div>
-<div class="ttc" id="aclassxii_qt_scoped_block_signals_htm"><div class="ttname"><a href="../../d5/d81/classxii_qt_scoped_block_signals.htm">xiiQtScopedBlockSignals</a></div><div class="ttdoc">Calls blockSignals(true) on all given QObjects, and the reverse in the destructor....</div><div class="ttdef"><b>Definition:</b> GuiFoundationDLL.h:40</div></div>
-<div class="ttc" id="aclassxii_qt_scoped_updates_disabled_htm"><div class="ttname"><a href="../../d8/d33/classxii_qt_scoped_updates_disabled.htm">xiiQtScopedUpdatesDisabled</a></div><div class="ttdoc">Calls setUpdatesEnabled(false) on all given QObjects, and the reverse in the destructor....</div><div class="ttdef"><b>Definition:</b> GuiFoundationDLL.h:28</div></div>
+<div class="ttc" id="aclassxii_array_base_htm_a43100f93e19bb795ea0980dae2b28e0b"><div class="ttname"><a href="../../da/d4c/classxii_array_base.htm#a43100f93e19bb795ea0980dae2b28e0b">xiiArrayBase&lt; T, xiiDynamicArrayBase&lt; T &gt; &gt;::GetCount</a></div><div class="ttdeci">xiiUInt32 GetCount() const</div><div class="ttdoc">Returns the number of active elements in the array.</div><div class="ttdef"><b>Definition:</b> ArrayBase_inl.h:164</div></div>
+<div class="ttc" id="aclassxii_qt_scoped_block_signals_htm"><div class="ttname"><a href="../../d5/d81/classxii_qt_scoped_block_signals.htm">xiiQtScopedBlockSignals</a></div><div class="ttdoc">Calls blockSignals(true) on all given QObjects, and the reverse in the destructor....</div><div class="ttdef"><b>Definition:</b> GuiFoundationDLL.h:42</div></div>
+<div class="ttc" id="aclassxii_dynamic_array_htm"><div class="ttname"><a href="../../dc/da4/classxii_dynamic_array.htm">xiiDynamicArray</a></div><div class="ttdef"><b>Definition:</b> DynamicArray.h:80</div></div>
+<div class="ttc" id="aclassxii_qt_scoped_updates_disabled_htm"><div class="ttname"><a href="../../d8/d33/classxii_qt_scoped_updates_disabled.htm">xiiQtScopedUpdatesDisabled</a></div><div class="ttdoc">Calls setUpdatesEnabled(false) on all given QObjects, and the reverse in the destructor....</div><div class="ttdef"><b>Definition:</b> GuiFoundationDLL.h:30</div></div>
+<div class="ttc" id="astructxii_string_view_htm_a65d3c651c35878985c1a637a45ce9bd1"><div class="ttname"><a href="../../da/d9d/structxii_string_view.htm#a65d3c651c35878985c1a637a45ce9bd1">xiiStringView::GetStartPointer</a></div><div class="ttdeci">const char * GetStartPointer() const</div><div class="ttdoc">Returns the start of the view range.</div><div class="ttdef"><b>Definition:</b> StringView.h:92</div></div>
 <div class="ttc" id="aclassxii_uuid_htm"><div class="ttname"><a href="../../dc/d1d/classxii_uuid.htm">xiiUuid</a></div><div class="ttdoc">This data type is the abstraction for 128-bit Uuid (also known as GUID) instances.</div><div class="ttdef"><b>Definition:</b> Uuid.h:10</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.htm">home</a></li><li class="navelem"><a class="el" href="../../dir_1036706e55c22cab35bc1c58ee689f1d.htm">runner</a></li><li class="navelem"><a class="el" href="../../dir_629f8151d55d307162ff2d619fb1783d.htm">work</a></li><li class="navelem"><a class="el" href="../../dir_1ddc44fe1263a8c7935fa6130b7d9499.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_2c1b6808f12952f4c36e05ba7068379a.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_b5a1c4ecfca018ad24b729e213296d41.htm">Source</a></li><li class="navelem"><a class="el" href="../../dir_64f53f8da7bf780a58c32bb848e7873b.htm">Tools</a></li><li class="navelem"><a class="el" href="../../dir_4b5bc41f7c4cbfc8ca80bdea56300f1d.htm">Libs</a></li><li class="navelem"><a class="el" href="../../dir_8694d7149aa3c4cbc4b219c953b250c5.htm">GuiFoundation</a></li><li class="navelem"><b>GuiFoundationDLL.h</b></li>
-    <li class="footer">Generated on Fri Nov 17 2023 03:01:28 for XIIEngine by
+    <li class="footer">Generated on Sun Nov 19 2023 19:17:26 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

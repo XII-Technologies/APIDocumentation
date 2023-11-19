@@ -10,6 +10,7 @@ var classxii_color =
     [ "ComputeHdrMultiplier", "d3/de6/classxii_color.htm#ae3101f39507baf447da3e478a957901d", null ],
     [ "GetAsVec4", "d3/de6/classxii_color.htm#a0cb03d5a2982c7bcaf4c30093a6f983a", null ],
     [ "GetComplementaryColor", "d3/de6/classxii_color.htm#a5a95556593ef9671a50bf9443ad689a0", null ],
+    [ "GetDarker", "d3/de6/classxii_color.htm#a48bb6b714dfa683571bbcbdab1a83f66", null ],
     [ "GetData", "d3/de6/classxii_color.htm#a58eb2abf274000af0c27e5745ee8fd55", null ],
     [ "GetData", "d3/de6/classxii_color.htm#a2e94a06902bb22eecfadf16dff473ebf", null ],
     [ "GetHSV", "d3/de6/classxii_color.htm#a549a0421ab9a463f20efb531dfa86aac", null ],

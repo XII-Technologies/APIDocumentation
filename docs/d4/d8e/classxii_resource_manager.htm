@@ -288,9 +288,9 @@ template&lt;typename ResourceType &gt; </td></tr>
 <tr class="memdesc:a6fd5960f01fb9e69099f15c634c813da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a resource handle for the given resource ID. This method can only be used if export mode is enabled. Internally it will create a resource but does not load the content. This way it can be ensured that the resource handle is always only the size of a pointer. <br /></td></tr>
 <tr class="separator:a6fd5960f01fb9e69099f15c634c813da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Resource Type Overrides</div></td></tr>
-<tr class="memitem:a4f2b9e684329fba7dd3f4268858c5889"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d8e/classxii_resource_manager.htm#a4f2b9e684329fba7dd3f4268858c5889">RegisterResourceOverrideType</a> (const <a class="el" href="../../db/d89/classxii_r_t_t_i.htm">xiiRTTI</a> *pDerivedTypeToUse, <a class="el" href="../../dc/d84/structxii_delegate.htm">xiiDelegate</a>&lt; bool(const <a class="el" href="../../d4/dbb/classxii_string_builder.htm">xiiStringBuilder</a> &amp;)&gt; overrideDecider)</td></tr>
-<tr class="memdesc:a4f2b9e684329fba7dd3f4268858c5889"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers a resource type to be used instead of any of it's base classes, when loading specific data.  <a href="../../d4/d8e/classxii_resource_manager.htm#a4f2b9e684329fba7dd3f4268858c5889">More...</a><br /></td></tr>
-<tr class="separator:a4f2b9e684329fba7dd3f4268858c5889"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae928c6d4377de42a0999ccb8c494b9a6"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d8e/classxii_resource_manager.htm#ae928c6d4377de42a0999ccb8c494b9a6">RegisterResourceOverrideType</a> (const <a class="el" href="../../db/d89/classxii_r_t_t_i.htm">xiiRTTI</a> *pDerivedTypeToUse, <a class="el" href="../../dc/d84/structxii_delegate.htm">xiiDelegate</a>&lt; bool(const <a class="el" href="../../d4/dbb/classxii_string_builder.htm">xiiStringBuilder</a> &amp;)&gt; overrideDecider)</td></tr>
+<tr class="memdesc:ae928c6d4377de42a0999ccb8c494b9a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers a resource type to be used instead of any of it's base classes, when loading specific data.  <a href="../../d4/d8e/classxii_resource_manager.htm#ae928c6d4377de42a0999ccb8c494b9a6">More...</a><br /></td></tr>
+<tr class="separator:ae928c6d4377de42a0999ccb8c494b9a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a66f37809af2c671e3593aee36eebc04d"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d8e/classxii_resource_manager.htm#a66f37809af2c671e3593aee36eebc04d">UnregisterResourceOverrideType</a> (const <a class="el" href="../../db/d89/classxii_r_t_t_i.htm">xiiRTTI</a> *pDerivedTypeToUse)</td></tr>
 <tr class="memdesc:a66f37809af2c671e3593aee36eebc04d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unregisters <em>pDerivedTypeToUse</em> as an override resource.  <a href="../../d4/d8e/classxii_resource_manager.htm#a66f37809af2c671e3593aee36eebc04d">More...</a><br /></td></tr>
 <tr class="separator:a66f37809af2c671e3593aee36eebc04d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -864,8 +864,8 @@ E50DCC85-D375-4999-9CFE-42F1377FAC85 }". If the lookup name already exists, it w
 
 </div>
 </div>
-<a id="a4f2b9e684329fba7dd3f4268858c5889"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4f2b9e684329fba7dd3f4268858c5889">&#9670;&nbsp;</a></span>RegisterResourceOverrideType()</h2>
+<a id="ae928c6d4377de42a0999ccb8c494b9a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae928c6d4377de42a0999ccb8c494b9a6">&#9670;&nbsp;</a></span>RegisterResourceOverrideType()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -874,7 +874,7 @@ E50DCC85-D375-4999-9CFE-42F1377FAC85 }". If the lookup name already exists, it w
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void xiiResourceManager::RegisterResourceOverrideType </td>
+          <td class="memname">xiiResourceManager::RegisterResourceOverrideType </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="../../db/d89/classxii_r_t_t_i.htm">xiiRTTI</a> *&#160;</td>
           <td class="paramname"><em>pDerivedTypeToUse</em>, </td>
@@ -1089,7 +1089,7 @@ template&lt;typename RESOURCE_TYPE &gt; </div>
 </div><div class="memdoc">
 
 <p>Unregisters <em>pDerivedTypeToUse</em> as an override resource. </p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d4/d8e/classxii_resource_manager.htm#a4f2b9e684329fba7dd3f4268858c5889" title="Registers a resource type to be used instead of any of it&#39;s base classes, when loading specific data.">RegisterResourceOverrideType()</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d4/d8e/classxii_resource_manager.htm#ae928c6d4377de42a0999ccb8c494b9a6" title="Registers a resource type to be used instead of any of it&#39;s base classes, when loading specific data.">RegisterResourceOverrideType()</a> </dd></dl>
 
 </div>
 </div>
@@ -1142,6 +1142,7 @@ template&lt;typename RESOURCE_TYPE &gt; </div>
 <li>/home/runner/work/XII/XII/Source/Engine/GraphicsCore/Decals/Implementation/DecalResource.cpp</li>
 <li>/home/runner/work/XII/XII/Source/Engine/GraphicsCore/Textures/TextureLoader.cpp</li>
 <li>/home/runner/work/XII/XII/Source/Engine/Utilities/Resources/ConfigFileResource.cpp</li>
+<li>/home/runner/work/XII/XII/Source/EnginePlugins/VisualScriptPlugin/Resources/VisualScriptClassResource.cpp</li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -1149,7 +1150,7 @@ template&lt;typename RESOURCE_TYPE &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d4/d8e/classxii_resource_manager.htm">xiiResourceManager</a></li>
-    <li class="footer">Generated on Fri Nov 17 2023 03:01:33 for XIIEngine by
+    <li class="footer">Generated on Sun Nov 19 2023 19:17:30 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

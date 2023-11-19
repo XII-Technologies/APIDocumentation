@@ -10,5 +10,6 @@ var classxii_collection_component =
     [ "SerializeComponent", "d1/d2a/classxii_collection_component.htm#a9793b4535af29d17bf201039b1336e19", null ],
     [ "SetCollection", "d1/d2a/classxii_collection_component.htm#a908ecc44819940964366fb78f59e5a6f", null ],
     [ "SetCollectionFile", "d1/d2a/classxii_collection_component.htm#ad35328925406a9446394401b3c7c8620", null ],
+    [ "m_bRegisterNames", "d1/d2a/classxii_collection_component.htm#ad6c59dd5388c57c857a798e596355378", null ],
     [ "m_hCollection", "d1/d2a/classxii_collection_component.htm#a01faff5d4e96a0172efd06b7aaf74114", null ]
 ];

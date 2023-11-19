@@ -424,14 +424,20 @@ $(document).ready(function(){initNavTree('d2/d19/_variant_8h_source.htm','../../
 <div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;  <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;}</div>
 <div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160; </div>
-<div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;<span class="keyword">namespace </span><a class="code" href="../../d1/d37/namespacexii_math.htm">xiiMath</a></div>
-<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;{</div>
-<div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;  XII_FOUNDATION_DLL <a class="code" href="../../db/d1a/classxii_variant.htm">xiiVariant</a> <a class="code" href="../../d1/d37/namespacexii_math.htm#af91f22a14862accf565f49eecc57cc3c">Lerp</a>(<span class="keyword">const</span> <a class="code" href="../../db/d1a/classxii_variant.htm">xiiVariant</a>&amp; a, <span class="keyword">const</span> <a class="code" href="../../db/d1a/classxii_variant.htm">xiiVariant</a>&amp; b, <span class="keywordtype">double</span> fFactor);</div>
-<div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;} <span class="comment">// namespace xiiMath</span></div>
-<div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160; </div>
-<div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;<span class="preprocessor">#include &lt;Foundation/Types/Implementation/VariantHelper_inl.h&gt;</span></div>
-<div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160; </div>
-<div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160;<span class="preprocessor">#include &lt;Foundation/Types/Implementation/Variant_inl.h&gt;</span></div>
+<div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;<span class="comment">// Simple math operator overloads. An invalid variant is returned if the given variants have incompatible types.</span></div>
+<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;XII_FOUNDATION_DLL <a class="code" href="../../db/d1a/classxii_variant.htm">xiiVariant</a> operator+(<span class="keyword">const</span> <a class="code" href="../../db/d1a/classxii_variant.htm">xiiVariant</a>&amp; a, <span class="keyword">const</span> <a class="code" href="../../db/d1a/classxii_variant.htm">xiiVariant</a>&amp; b);</div>
+<div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;XII_FOUNDATION_DLL <a class="code" href="../../db/d1a/classxii_variant.htm">xiiVariant</a> operator-(<span class="keyword">const</span> <a class="code" href="../../db/d1a/classxii_variant.htm">xiiVariant</a>&amp; a, <span class="keyword">const</span> <a class="code" href="../../db/d1a/classxii_variant.htm">xiiVariant</a>&amp; b);</div>
+<div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;XII_FOUNDATION_DLL <a class="code" href="../../db/d1a/classxii_variant.htm">xiiVariant</a> operator*(<span class="keyword">const</span> <a class="code" href="../../db/d1a/classxii_variant.htm">xiiVariant</a>&amp; a, <span class="keyword">const</span> <a class="code" href="../../db/d1a/classxii_variant.htm">xiiVariant</a>&amp; b);</div>
+<div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;XII_FOUNDATION_DLL <a class="code" href="../../db/d1a/classxii_variant.htm">xiiVariant</a> operator/(<span class="keyword">const</span> <a class="code" href="../../db/d1a/classxii_variant.htm">xiiVariant</a>&amp; a, <span class="keyword">const</span> <a class="code" href="../../db/d1a/classxii_variant.htm">xiiVariant</a>&amp; b);</div>
+<div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160; </div>
+<div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;<span class="keyword">namespace </span><a class="code" href="../../d1/d37/namespacexii_math.htm">xiiMath</a></div>
+<div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;{</div>
+<div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160;  XII_FOUNDATION_DLL <a class="code" href="../../db/d1a/classxii_variant.htm">xiiVariant</a> <a class="code" href="../../d1/d37/namespacexii_math.htm#af91f22a14862accf565f49eecc57cc3c">Lerp</a>(<span class="keyword">const</span> <a class="code" href="../../db/d1a/classxii_variant.htm">xiiVariant</a>&amp; a, <span class="keyword">const</span> <a class="code" href="../../db/d1a/classxii_variant.htm">xiiVariant</a>&amp; b, <span class="keywordtype">double</span> fFactor);</div>
+<div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160;} <span class="comment">// namespace xiiMath</span></div>
+<div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160; </div>
+<div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;<span class="preprocessor">#include &lt;Foundation/Types/Implementation/VariantHelper_inl.h&gt;</span></div>
+<div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160; </div>
+<div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;<span class="preprocessor">#include &lt;Foundation/Types/Implementation/Variant_inl.h&gt;</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="astructxii_variant_class_htm_a101c41349e711a95dbe46025c86f3ae7a607e6f0fa5be9ed7cc1ab13413121abf"><div class="ttname"><a href="../../d9/d79/structxii_variant_class.htm#a101c41349e711a95dbe46025c86f3ae7a607e6f0fa5be9ed7cc1ab13413121abf">xiiVariantClass::DirectCast</a></div><div class="ttdeci">@ DirectCast</div><div class="ttdoc">A standard type.</div><div class="ttdef"><b>Definition:</b> VariantType.h:101</div></div>
@@ -476,7 +482,7 @@ $(document).ready(function(){initNavTree('d2/d19/_variant_8h_source.htm','../../
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.htm">home</a></li><li class="navelem"><a class="el" href="../../dir_1036706e55c22cab35bc1c58ee689f1d.htm">runner</a></li><li class="navelem"><a class="el" href="../../dir_629f8151d55d307162ff2d619fb1783d.htm">work</a></li><li class="navelem"><a class="el" href="../../dir_1ddc44fe1263a8c7935fa6130b7d9499.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_2c1b6808f12952f4c36e05ba7068379a.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_b5a1c4ecfca018ad24b729e213296d41.htm">Source</a></li><li class="navelem"><a class="el" href="../../dir_e321052006a51284e67389ab20037e7c.htm">Engine</a></li><li class="navelem"><a class="el" href="../../dir_be0c42c58b36f42c54ec54024ed4f6af.htm">Foundation</a></li><li class="navelem"><a class="el" href="../../dir_fd654f0525c8869fa0409c81d19e3265.htm">Types</a></li><li class="navelem"><b>Variant.h</b></li>
-    <li class="footer">Generated on Fri Nov 17 2023 03:01:27 for XIIEngine by
+    <li class="footer">Generated on Sun Nov 19 2023 19:17:25 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

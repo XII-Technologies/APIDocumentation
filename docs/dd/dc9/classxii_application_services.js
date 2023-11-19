@@ -7,5 +7,6 @@ var classxii_application_services =
     [ "GetDocumentPreferencesFolder", "dd/dc9/classxii_application_services.htm#af29025fd279aca5f17d87cd30e309ae4", null ],
     [ "GetPrecompiledToolsFolder", "dd/dc9/classxii_application_services.htm#a1dfc083ace609e0e1fb7b042331da425", null ],
     [ "GetProjectPreferencesFolder", "dd/dc9/classxii_application_services.htm#acafe5e5ee613cf4b5fa07f8e6a02b46b", null ],
+    [ "GetProjectPreferencesFolder", "dd/dc9/classxii_application_services.htm#a5525f12f33cb39c30ad18c8f9ed85488", null ],
     [ "GetSampleProjectsFolder", "dd/dc9/classxii_application_services.htm#a7d7cbdc1ef7a451aeef626eb1b7d9182", null ]
 ];

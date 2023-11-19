@@ -98,40 +98,41 @@ $(document).ready(function(){initNavTree('d5/d1f/_tools_2_libs_2_tools_foundatio
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#if 0 // Define to enable extensive file system profile scopes</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#  define FILESYSTEM_PROFILE(szName) XII_PROFILE_SCOPE(szName)</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#  define FILESYSTEM_PROFILE(Name)</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#  define FILESYSTEM_PROFILE(Name)</span></div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
-<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="../../da/d4e/structxii_file_status.htm">   17</a></span>&#160;<span class="keyword">struct </span>XII_TOOLSFOUNDATION_DLL <a class="code" href="../../da/d4e/structxii_file_status.htm">xiiFileStatus</a></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;{</div>
-<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="../../da/d4e/structxii_file_status.htm#a439f91d5f2fe0332c73a06ae5397ef43">   19</a></span>&#160;  <span class="keyword">enum class</span> <a class="code" href="../../da/d4e/structxii_file_status.htm#a439f91d5f2fe0332c73a06ae5397ef43">Status</a> : xiiUInt8</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  {</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    Unknown,    </div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    FileLocked, </div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    Valid       </div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  };</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  <a class="code" href="../../da/d4e/structxii_file_status.htm">xiiFileStatus</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="../../da/d4e/structxii_file_status.htm">   19</a></span>&#160;<span class="keyword">struct </span>XII_TOOLSFOUNDATION_DLL <a class="code" href="../../da/d4e/structxii_file_status.htm">xiiFileStatus</a></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;{</div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="../../da/d4e/structxii_file_status.htm#a439f91d5f2fe0332c73a06ae5397ef43">   21</a></span>&#160;  <span class="keyword">enum class</span> <a class="code" href="../../da/d4e/structxii_file_status.htm#a439f91d5f2fe0332c73a06ae5397ef43">Status</a> : xiiUInt8</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  {</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    Unknown,    </div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    FileLocked, </div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    Valid       </div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  };</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  <a class="code" href="../../d5/da2/classxii_timestamp.htm">xiiTimestamp</a> m_LastModified;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  xiiUInt64    m_uiHash = 0;</div>
-<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="../../da/d4e/structxii_file_status.htm#a5e18fa314925e97d595a12f7e1f85e7f">   30</a></span>&#160;  <a class="code" href="../../dc/d1d/classxii_uuid.htm">xiiUuid</a>      <a class="code" href="../../da/d4e/structxii_file_status.htm#a5e18fa314925e97d595a12f7e1f85e7f">m_DocumentID</a>; </div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  <a class="code" href="../../da/d4e/structxii_file_status.htm#a439f91d5f2fe0332c73a06ae5397ef43">Status</a>       m_Status = Status::Unknown;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;};</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;XII_DECLARE_REFLECTABLE_TYPE(XII_TOOLSFOUNDATION_DLL, <a class="code" href="../../da/d4e/structxii_file_status.htm">xiiFileStatus</a>);</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">inline</span> <a class="code" href="../../d0/d18/classxii_stream_writer.htm">xiiStreamWriter</a>&amp; operator&lt;&lt;(<a class="code" href="../../d0/d18/classxii_stream_writer.htm">xiiStreamWriter</a>&amp; inout_stream, <span class="keyword">const</span> <a class="code" href="../../da/d4e/structxii_file_status.htm">xiiFileStatus</a>&amp; value)</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;{</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  inout_stream.<a class="code" href="../../d0/d18/classxii_stream_writer.htm#a9dbcef3f8b63f325907a8c3d95abbdcb">WriteBytes</a>(&amp;value, <span class="keyword">sizeof</span>(<a class="code" href="../../da/d4e/structxii_file_status.htm">xiiFileStatus</a>)).<a class="code" href="../../dd/dad/structxii_result.htm#a0e2e7a66dd1876db3912fc0f2dff69a6">IgnoreResult</a>();</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <span class="keywordflow">return</span> inout_stream;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;}</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keyword">inline</span> <a class="code" href="../../d4/d5e/classxii_stream_reader.htm">xiiStreamReader</a>&amp; operator&gt;&gt;(<a class="code" href="../../d4/d5e/classxii_stream_reader.htm">xiiStreamReader</a>&amp; inout_stream, <a class="code" href="../../da/d4e/structxii_file_status.htm">xiiFileStatus</a>&amp; ref_value)</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;{</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  inout_stream.<a class="code" href="../../d4/d5e/classxii_stream_reader.htm#adaf383aa54a7b140435ea4df72771f52">ReadBytes</a>(&amp;ref_value, <span class="keyword">sizeof</span>(<a class="code" href="../../da/d4e/structxii_file_status.htm">xiiFileStatus</a>));</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <span class="keywordflow">return</span> inout_stream;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;}</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  <a class="code" href="../../da/d4e/structxii_file_status.htm">xiiFileStatus</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  <a class="code" href="../../d5/da2/classxii_timestamp.htm">xiiTimestamp</a> m_LastModified;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  xiiUInt64    m_uiHash = 0;</div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="../../da/d4e/structxii_file_status.htm#a5e18fa314925e97d595a12f7e1f85e7f">   32</a></span>&#160;  <a class="code" href="../../dc/d1d/classxii_uuid.htm">xiiUuid</a>      <a class="code" href="../../da/d4e/structxii_file_status.htm#a5e18fa314925e97d595a12f7e1f85e7f">m_DocumentID</a>; </div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  <a class="code" href="../../da/d4e/structxii_file_status.htm#a439f91d5f2fe0332c73a06ae5397ef43">Status</a>       m_Status = Status::Unknown;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;};</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;XII_DECLARE_REFLECTABLE_TYPE(XII_TOOLSFOUNDATION_DLL, <a class="code" href="../../da/d4e/structxii_file_status.htm">xiiFileStatus</a>);</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;XII_ALWAYS_INLINE <a class="code" href="../../d0/d18/classxii_stream_writer.htm">xiiStreamWriter</a>&amp; operator&lt;&lt;(<a class="code" href="../../d0/d18/classxii_stream_writer.htm">xiiStreamWriter</a>&amp; ref_stream, <span class="keyword">const</span> <a class="code" href="../../da/d4e/structxii_file_status.htm">xiiFileStatus</a>&amp; value)</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;{</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  ref_stream.<a class="code" href="../../d0/d18/classxii_stream_writer.htm#a9dbcef3f8b63f325907a8c3d95abbdcb">WriteBytes</a>(&amp;value, <span class="keyword">sizeof</span>(<a class="code" href="../../da/d4e/structxii_file_status.htm">xiiFileStatus</a>)).<a class="code" href="../../dd/dad/structxii_result.htm#a0e2e7a66dd1876db3912fc0f2dff69a6">IgnoreResult</a>();</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <span class="keywordflow">return</span> ref_stream;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;}</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;XII_ALWAYS_INLINE <a class="code" href="../../d4/d5e/classxii_stream_reader.htm">xiiStreamReader</a>&amp; operator&gt;&gt;(<a class="code" href="../../d4/d5e/classxii_stream_reader.htm">xiiStreamReader</a>&amp; ref_stream, <a class="code" href="../../da/d4e/structxii_file_status.htm">xiiFileStatus</a>&amp; ref_value)</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;{</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  ref_stream.<a class="code" href="../../d4/d5e/classxii_stream_reader.htm#adaf383aa54a7b140435ea4df72771f52">ReadBytes</a>(&amp;ref_value, <span class="keyword">sizeof</span>(<a class="code" href="../../da/d4e/structxii_file_status.htm">xiiFileStatus</a>));</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <span class="keywordflow">return</span> ref_stream;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclassxii_timestamp_htm"><div class="ttname"><a href="../../d5/da2/classxii_timestamp.htm">xiiTimestamp</a></div><div class="ttdoc">The timestamp class encapsulates a date in time as microseconds since Unix epoch.</div><div class="ttdef"><b>Definition:</b> Timestamp.h:22</div></div>
@@ -140,15 +141,15 @@ $(document).ready(function(){initNavTree('d5/d1f/_tools_2_libs_2_tools_foundatio
 <div class="ttc" id="astructxii_result_htm_a0e2e7a66dd1876db3912fc0f2dff69a6"><div class="ttname"><a href="../../dd/dad/structxii_result.htm#a0e2e7a66dd1876db3912fc0f2dff69a6">xiiResult::IgnoreResult</a></div><div class="ttdeci">XII_ALWAYS_INLINE void IgnoreResult()</div><div class="ttdoc">Used to silence compiler warnings, when success or failure doesn't matter.</div><div class="ttdef"><b>Definition:</b> Types.h:70</div></div>
 <div class="ttc" id="aclassxii_stream_reader_htm_adaf383aa54a7b140435ea4df72771f52"><div class="ttname"><a href="../../d4/d5e/classxii_stream_reader.htm#adaf383aa54a7b140435ea4df72771f52">xiiStreamReader::ReadBytes</a></div><div class="ttdeci">virtual xiiUInt64 ReadBytes(void *pReadBuffer, xiiUInt64 uiBytesToRead)=0</div><div class="ttdoc">Reads a raw number of bytes into the read buffer, this is the only method which has to be implemented...</div></div>
 <div class="ttc" id="aclassxii_stream_reader_htm"><div class="ttname"><a href="../../d4/d5e/classxii_stream_reader.htm">xiiStreamReader</a></div><div class="ttdoc">Interface for binary in (read) streams.</div><div class="ttdef"><b>Definition:</b> Stream.h:21</div></div>
-<div class="ttc" id="astructxii_file_status_htm_a439f91d5f2fe0332c73a06ae5397ef43"><div class="ttname"><a href="../../da/d4e/structxii_file_status.htm#a439f91d5f2fe0332c73a06ae5397ef43">xiiFileStatus::Status</a></div><div class="ttdeci">Status</div><div class="ttdef"><b>Definition:</b> Declarations.h:19</div></div>
-<div class="ttc" id="astructxii_file_status_htm_a5e18fa314925e97d595a12f7e1f85e7f"><div class="ttname"><a href="../../da/d4e/structxii_file_status.htm#a5e18fa314925e97d595a12f7e1f85e7f">xiiFileStatus::m_DocumentID</a></div><div class="ttdeci">xiiUuid m_DocumentID</div><div class="ttdoc">If the file is linked to a document, the GUID is valid, otherwise not.</div><div class="ttdef"><b>Definition:</b> Declarations.h:30</div></div>
-<div class="ttc" id="astructxii_file_status_htm"><div class="ttname"><a href="../../da/d4e/structxii_file_status.htm">xiiFileStatus</a></div><div class="ttdoc">Information about a single file on disk. The file might be a document or any other file found in the ...</div><div class="ttdef"><b>Definition:</b> Declarations.h:17</div></div>
+<div class="ttc" id="astructxii_file_status_htm_a439f91d5f2fe0332c73a06ae5397ef43"><div class="ttname"><a href="../../da/d4e/structxii_file_status.htm#a439f91d5f2fe0332c73a06ae5397ef43">xiiFileStatus::Status</a></div><div class="ttdeci">Status</div><div class="ttdef"><b>Definition:</b> Declarations.h:21</div></div>
+<div class="ttc" id="astructxii_file_status_htm_a5e18fa314925e97d595a12f7e1f85e7f"><div class="ttname"><a href="../../da/d4e/structxii_file_status.htm#a5e18fa314925e97d595a12f7e1f85e7f">xiiFileStatus::m_DocumentID</a></div><div class="ttdeci">xiiUuid m_DocumentID</div><div class="ttdoc">If the file is linked to a document, the GUID is valid, otherwise not.</div><div class="ttdef"><b>Definition:</b> Declarations.h:32</div></div>
+<div class="ttc" id="astructxii_file_status_htm"><div class="ttname"><a href="../../da/d4e/structxii_file_status.htm">xiiFileStatus</a></div><div class="ttdoc">Information about a single file on disk. The file might be a document or any other file found in the ...</div><div class="ttdef"><b>Definition:</b> Declarations.h:19</div></div>
 <div class="ttc" id="aclassxii_uuid_htm"><div class="ttname"><a href="../../dc/d1d/classxii_uuid.htm">xiiUuid</a></div><div class="ttdoc">This data type is the abstraction for 128-bit Uuid (also known as GUID) instances.</div><div class="ttdef"><b>Definition:</b> Uuid.h:10</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.htm">home</a></li><li class="navelem"><a class="el" href="../../dir_1036706e55c22cab35bc1c58ee689f1d.htm">runner</a></li><li class="navelem"><a class="el" href="../../dir_629f8151d55d307162ff2d619fb1783d.htm">work</a></li><li class="navelem"><a class="el" href="../../dir_1ddc44fe1263a8c7935fa6130b7d9499.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_2c1b6808f12952f4c36e05ba7068379a.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_b5a1c4ecfca018ad24b729e213296d41.htm">Source</a></li><li class="navelem"><a class="el" href="../../dir_64f53f8da7bf780a58c32bb848e7873b.htm">Tools</a></li><li class="navelem"><a class="el" href="../../dir_4b5bc41f7c4cbfc8ca80bdea56300f1d.htm">Libs</a></li><li class="navelem"><a class="el" href="../../dir_ba58a103e79106e89914cc52b64849d5.htm">ToolsFoundation</a></li><li class="navelem"><a class="el" href="../../dir_477def286c2d2152f3157edad2157379.htm">FileSystem</a></li><li class="navelem"><b>Declarations.h</b></li>
-    <li class="footer">Generated on Fri Nov 17 2023 03:01:20 for XIIEngine by
+    <li class="footer">Generated on Sun Nov 19 2023 19:17:20 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

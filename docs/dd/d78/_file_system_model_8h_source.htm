@@ -97,161 +97,170 @@ $(document).ready(function(){initNavTree('dd/d78/_file_system_model_8h_source.ht
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#  include &lt;Foundation/Configuration/Singleton.h&gt;</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#  include &lt;Foundation/Threading/LockedObject.h&gt;</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#  include &lt;Foundation/Types/UniquePtr.h&gt;</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#  include &lt;ToolsFoundation/FileSystem/Declarations.h&gt;</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">class </span>xiiFileSystemWatcher;</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">struct </span>xiiFileSystemWatcherEvent;</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">struct </span><a class="code" href="../../d6/dd0/structxii_file_stats.htm">xiiFileStats</a>;</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">struct </span>XII_TOOLSFOUNDATION_DLL xiiFolderChangedEvent</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;{</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  <span class="keyword">enum class</span> Type</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  {</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    FolderAdded,</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    FolderRemoved,</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    ModelReset, </div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  };</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  xiiFolderChangedEvent() = <span class="keywordflow">default</span>;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  xiiFolderChangedEvent(<a class="code" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sFile, Type type);</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  <a class="code" href="../../df/dfb/structxii_hybrid_string.htm">xiiString</a> m_sPath;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  Type      m_Type;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;};</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">struct </span>XII_TOOLSFOUNDATION_DLL xiiFileChangedEvent</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;{</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <span class="keyword">enum class</span> Type</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  {</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    FileAdded,</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    FileChanged,</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    DocumentLinked,</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    DocumentUnlinked,</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    FileRemoved,</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    ModelReset </div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  };</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  xiiFileChangedEvent() = <span class="keywordflow">default</span>;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  xiiFileChangedEvent(<a class="code" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sFile, <a class="code" href="../../da/d4e/structxii_file_status.htm">xiiFileStatus</a> status, Type type);</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#  include &lt;ToolsFoundation/FileSystem/DataDirPath.h&gt;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#  include &lt;ToolsFoundation/FileSystem/Declarations.h&gt;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">class </span>xiiFileSystemWatcher;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">struct </span>xiiFileSystemWatcherEvent;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">struct </span><a class="code" href="../../d6/dd0/structxii_file_stats.htm">xiiFileStats</a>;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">struct </span>XII_TOOLSFOUNDATION_DLL xiiFolderChangedEvent</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;{</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  <span class="keyword">enum class</span> Type</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  {</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    None,</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    FolderAdded,</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    FolderRemoved,</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    ModelReset, </div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  };</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  xiiFolderChangedEvent() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  xiiFolderChangedEvent(<span class="keyword">const</span> <a class="code" href="../../d4/d8d/classxii_data_dir_path.htm">xiiDataDirPath</a>&amp; file, Type type);</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  <a class="code" href="../../d4/d8d/classxii_data_dir_path.htm">xiiDataDirPath</a> m_Path;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  Type           m_Type = Type::None;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;};</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">struct </span>XII_TOOLSFOUNDATION_DLL xiiFileChangedEvent</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;{</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <span class="keyword">enum class</span> Type</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  {</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    None,</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    FileAdded,</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    FileChanged,</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    DocumentLinked,</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    DocumentUnlinked,</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    FileRemoved,</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    ModelReset </div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  };</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <a class="code" href="../../df/dfb/structxii_hybrid_string.htm">xiiString</a>     m_sPath;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <a class="code" href="../../da/d4e/structxii_file_status.htm">xiiFileStatus</a> m_Status;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  Type          m_Type = Type::ModelReset;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;};</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="keyword">class </span>XII_TOOLSFOUNDATION_DLL xiiFileSystemModel</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;{</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  XII_DECLARE_SINGLETON(xiiFileSystemModel);</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  <span class="keyword">using</span> LockedFiles   = <a class="code" href="../../da/d7f/classxii_locked_object.htm">xiiLockedObject&lt;xiiMutex, const xiiMap&lt;xiiString, xiiFileStatus&gt;</a>&gt;;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <span class="keyword">using</span> LockedFolders = <a class="code" href="../../da/d7f/classxii_locked_object.htm">xiiLockedObject&lt;xiiMutex, const xiiMap&lt;xiiString, xiiFileStatus::Status&gt;</a>&gt;;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">bool</span> IsSameFile(<span class="keyword">const</span> <a class="code" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sAbsolutePathA, <span class="keyword">const</span> <a class="code" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sAbsolutePathB);</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  <span class="keyword">static</span> xiiUInt64 HashFile(<a class="code" href="../../d4/d5e/classxii_stream_reader.htm">xiiStreamReader</a>&amp; ref_inputStream, <a class="code" href="../../d0/d18/classxii_stream_writer.htm">xiiStreamWriter</a>* pPassThroughStream);</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  xiiFileSystemModel();</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  ~xiiFileSystemModel();</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  <span class="keywordtype">void</span> Initialize(<span class="keyword">const</span> <a class="code" href="../../d0/d32/classxii_application_file_system_config.htm">xiiApplicationFileSystemConfig</a>&amp; fileSystemConfig, <a class="code" href="../../d6/df7/classxii_map.htm">xiiMap&lt;xiiString, xiiFileStatus&gt;</a>&amp;&amp; referencedFiles, <a class="code" href="../../d6/df7/classxii_map.htm">xiiMap&lt;xiiString, xiiFileStatus::Status&gt;</a>&amp;&amp; referencedFolders);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  xiiFileChangedEvent() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  xiiFileChangedEvent(<span class="keyword">const</span> <a class="code" href="../../d4/d8d/classxii_data_dir_path.htm">xiiDataDirPath</a>&amp; file, <a class="code" href="../../da/d4e/structxii_file_status.htm">xiiFileStatus</a> status, Type type);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <a class="code" href="../../d4/d8d/classxii_data_dir_path.htm">xiiDataDirPath</a> m_Path;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <a class="code" href="../../da/d4e/structxii_file_status.htm">xiiFileStatus</a>  m_Status;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  Type           m_Type = Type::None;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;};</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="keyword">class </span>XII_TOOLSFOUNDATION_DLL xiiFileSystemModel</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;{</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  XII_DECLARE_SINGLETON(xiiFileSystemModel);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <span class="keyword">using</span> FilesMap   = <a class="code" href="../../d6/df7/classxii_map.htm">xiiMap&lt;xiiDataDirPath, xiiFileStatus, xiiCompareDataDirPath&gt;</a>;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  <span class="keyword">using</span> FoldersMap = <a class="code" href="../../d6/df7/classxii_map.htm">xiiMap&lt;xiiDataDirPath, xiiFileStatus::Status, xiiCompareDataDirPath&gt;</a>;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  <span class="keyword">using</span> LockedFiles   = <a class="code" href="../../da/d7f/classxii_locked_object.htm">xiiLockedObject&lt;xiiMutex, const FilesMap&gt;</a>;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  <span class="keyword">using</span> LockedFolders = <a class="code" href="../../da/d7f/classxii_locked_object.htm">xiiLockedObject&lt;xiiMutex, const FoldersMap&gt;</a>;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">bool</span> IsSameFile(<span class="keyword">const</span> <a class="code" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sAbsolutePathA, <span class="keyword">const</span> <a class="code" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sAbsolutePathB);</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  <span class="keyword">static</span> xiiUInt64 HashFile(<a class="code" href="../../d4/d5e/classxii_stream_reader.htm">xiiStreamReader</a>&amp; ref_inputStream, <a class="code" href="../../d0/d18/classxii_stream_writer.htm">xiiStreamWriter</a>* pPassThroughStream);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  xiiFileSystemModel();</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  ~xiiFileSystemModel();</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  <span class="keywordtype">void</span> Deinitialize(<a class="code" href="../../d6/df7/classxii_map.htm">xiiMap&lt;xiiString, xiiFileStatus&gt;</a>* out_pReferencedFiles = <span class="keyword">nullptr</span>, <a class="code" href="../../d6/df7/classxii_map.htm">xiiMap&lt;xiiString, xiiFileStatus::Status&gt;</a>* out_pReferencedFolders = <span class="keyword">nullptr</span>);</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  <span class="keywordtype">void</span> MainThreadTick();</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160; </div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  <span class="keyword">const</span> LockedFiles GetFiles() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; </div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;  <span class="keyword">const</span> LockedFolders GetFolders() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160; </div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;  <a class="code" href="../../dd/dad/structxii_result.htm">xiiResult</a> FindFile(<a class="code" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sPath, <a class="code" href="../../da/d4e/structxii_file_status.htm">xiiFileStatus</a>&amp; out_stat) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160; </div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;  <a class="code" href="../../dd/dad/structxii_result.htm">xiiResult</a> FindFile(<a class="code" href="../../dc/d84/structxii_delegate.htm">xiiDelegate</a>&lt;<span class="keywordtype">bool</span>(<span class="keyword">const</span> <a class="code" href="../../df/dfb/structxii_hybrid_string.htm">xiiString</a>&amp;, <span class="keyword">const</span> <a class="code" href="../../da/d4e/structxii_file_status.htm">xiiFileStatus</a>&amp;)&gt; visitor) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160; </div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  <span class="keywordtype">void</span> Initialize(<span class="keyword">const</span> <a class="code" href="../../d0/d32/classxii_application_file_system_config.htm">xiiApplicationFileSystemConfig</a>&amp; fileSystemConfig, FilesMap&amp;&amp; referencedFiles, FoldersMap&amp;&amp; referencedFolders);</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  <span class="keywordtype">void</span> Deinitialize(FilesMap* out_pReferencedFiles = <span class="keyword">nullptr</span>, FoldersMap* out_pReferencedFolders = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  <span class="keywordtype">void</span> MainThreadTick();</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; </div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  <span class="keyword">const</span> <a class="code" href="../../d0/d32/classxii_application_file_system_config.htm">xiiApplicationFileSystemConfig</a>&amp; GetFileSystemConfig()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_FileSystemConfig; }</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;  <a class="code" href="../../d0/d60/classxii_array_ptr.htm">xiiArrayPtr&lt;const xiiString&gt;</a>          GetDataDirectoryRoots()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_DataDirRoots.GetArrayPtr(); }</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160; </div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160; </div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;  <span class="keyword">const</span> LockedFiles GetFiles() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160; </div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;  <span class="keyword">const</span> LockedFolders GetFolders() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160; </div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;  <a class="code" href="../../dd/dad/structxii_result.htm">xiiResult</a> FindFile(<a class="code" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sPath, <a class="code" href="../../da/d4e/structxii_file_status.htm">xiiFileStatus</a>&amp; out_stat) <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160; </div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;  <span class="keywordtype">void</span> NotifyOfChange(<a class="code" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sAbsolutePath);</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;  <a class="code" href="../../dd/dad/structxii_result.htm">xiiResult</a> FindFile(<a class="code" href="../../dc/d84/structxii_delegate.htm">xiiDelegate</a>&lt;<span class="keywordtype">bool</span>(<span class="keyword">const</span> <a class="code" href="../../d4/d8d/classxii_data_dir_path.htm">xiiDataDirPath</a>&amp;, <span class="keyword">const</span> <a class="code" href="../../da/d4e/structxii_file_status.htm">xiiFileStatus</a>&amp;)&gt; visitor) <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160; </div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;  <span class="keywordtype">void</span> CheckFolder(<a class="code" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sAbsolutePath);</div>
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160; </div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;  <span class="keywordtype">void</span> CheckFileSystem();</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160; </div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160; </div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;  <a class="code" href="../../dd/dad/structxii_result.htm">xiiResult</a> LinkDocument(<a class="code" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sAbsolutePath, <span class="keyword">const</span> <a class="code" href="../../dc/d1d/classxii_uuid.htm">xiiUuid</a>&amp; documentId);</div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160; </div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;  <a class="code" href="../../dd/dad/structxii_result.htm">xiiResult</a> UnlinkDocument(<a class="code" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sAbsolutePath);</div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160; </div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;  <a class="code" href="../../dd/dad/structxii_result.htm">xiiResult</a> ReadDocument(<a class="code" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sAbsolutePath, <span class="keyword">const</span> <a class="code" href="../../dc/d84/structxii_delegate.htm">xiiDelegate</a>&lt;<span class="keywordtype">void</span>(<span class="keyword">const</span> <a class="code" href="../../da/d4e/structxii_file_status.htm">xiiFileStatus</a>&amp;, <a class="code" href="../../d4/d5e/classxii_stream_reader.htm">xiiStreamReader</a>&amp;)&gt;&amp; callback);</div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160; </div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;  <a class="code" href="../../dd/dad/structxii_result.htm">xiiResult</a> HashFile(<a class="code" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sAbsolutePath, <a class="code" href="../../da/d4e/structxii_file_status.htm">xiiFileStatus</a>&amp; out_stat);</div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160; </div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160; </div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;  <a class="code" href="../../dc/d22/classxii_event.htm">xiiCopyOnBroadcastEvent&lt;const xiiFolderChangedEvent&amp;, xiiMutex&gt;</a> m_FolderChangedEvents;</div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;  <a class="code" href="../../dc/d22/classxii_event.htm">xiiCopyOnBroadcastEvent&lt;const xiiFileChangedEvent&amp;, xiiMutex&gt;</a>   m_FileChangedEvents;</div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160; </div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;  <span class="keywordtype">void</span> SetAllStatusUnknown();</div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;  <span class="keywordtype">void</span> RemoveStaleFileInfos();</div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160; </div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;  <span class="keywordtype">void</span>          OnAssetWatcherEvent(<span class="keyword">const</span> xiiFileSystemWatcherEvent&amp; e);</div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;  <a class="code" href="../../da/d4e/structxii_file_status.htm">xiiFileStatus</a> HandleSingleFile(<span class="keyword">const</span> <a class="code" href="../../df/dfb/structxii_hybrid_string.htm">xiiString</a>&amp; sAbsolutePath, <span class="keywordtype">bool</span> bRecurseIntoFolders);</div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;  <a class="code" href="../../da/d4e/structxii_file_status.htm">xiiFileStatus</a> HandleSingleFile(<span class="keyword">const</span> <a class="code" href="../../df/dfb/structxii_hybrid_string.htm">xiiString</a>&amp; sAbsolutePath, <span class="keyword">const</span> <a class="code" href="../../d6/dd0/structxii_file_stats.htm">xiiFileStats</a>&amp; FileStat, <span class="keywordtype">bool</span> bRecurseIntoFolders);</div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;  <span class="keywordtype">void</span>          MarkFileLocked(<a class="code" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sAbsolutePath);</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;  <span class="keywordtype">void</span> NotifyOfChange(<a class="code" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sAbsolutePath);</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160; </div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;  <span class="keywordtype">void</span> CheckFolder(<a class="code" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sAbsolutePath);</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160; </div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;  <span class="keywordtype">void</span> CheckFileSystem();</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160; </div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160; </div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;  <a class="code" href="../../dd/dad/structxii_result.htm">xiiResult</a> LinkDocument(<a class="code" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sAbsolutePath, <span class="keyword">const</span> <a class="code" href="../../dc/d1d/classxii_uuid.htm">xiiUuid</a>&amp; documentId);</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160; </div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;  <a class="code" href="../../dd/dad/structxii_result.htm">xiiResult</a> UnlinkDocument(<a class="code" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sAbsolutePath);</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160; </div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;  <a class="code" href="../../dd/dad/structxii_result.htm">xiiResult</a> ReadDocument(<a class="code" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sAbsolutePath, <span class="keyword">const</span> <a class="code" href="../../dc/d84/structxii_delegate.htm">xiiDelegate</a>&lt;<span class="keywordtype">void</span>(<span class="keyword">const</span> <a class="code" href="../../da/d4e/structxii_file_status.htm">xiiFileStatus</a>&amp;, <a class="code" href="../../d4/d5e/classxii_stream_reader.htm">xiiStreamReader</a>&amp;)&gt;&amp; callback);</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160; </div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;  <a class="code" href="../../dd/dad/structxii_result.htm">xiiResult</a> HashFile(<a class="code" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sAbsolutePath, <a class="code" href="../../da/d4e/structxii_file_status.htm">xiiFileStatus</a>&amp; out_stat);</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160; </div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160; </div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;  <a class="code" href="../../dc/d22/classxii_event.htm">xiiCopyOnBroadcastEvent&lt;const xiiFolderChangedEvent&amp;, xiiMutex&gt;</a> m_FolderChangedEvents;</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;  <a class="code" href="../../dc/d22/classxii_event.htm">xiiCopyOnBroadcastEvent&lt;const xiiFileChangedEvent&amp;, xiiMutex&gt;</a>   m_FileChangedEvents;</div>
 <div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160; </div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;  <span class="keywordtype">void</span> RemoveFileOrFolder(<span class="keyword">const</span> <a class="code" href="../../df/dfb/structxii_hybrid_string.htm">xiiString</a>&amp; sAbsolutePath, <span class="keywordtype">bool</span> bRecurseIntoFolders);</div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160; </div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;  <span class="keywordtype">void</span> FireFileChangedEvent(<a class="code" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sFile, <a class="code" href="../../da/d4e/structxii_file_status.htm">xiiFileStatus</a> fileStatus, xiiFileChangedEvent::Type type);</div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;  <span class="keywordtype">void</span> FireFolderChangedEvent(<a class="code" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sFile, xiiFolderChangedEvent::Type type);</div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160; </div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;  <span class="keywordtype">int</span> FindDataDir(<span class="keyword">const</span> <a class="code" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> path);</div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160; </div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;  <span class="comment">// Immutable data after Initialize</span></div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;  <a class="code" href="../../d0/d32/classxii_application_file_system_config.htm">xiiApplicationFileSystemConfig</a>     m_FileSystemConfig;</div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;  <a class="code" href="../../dc/da4/classxii_dynamic_array.htm">xiiDynamicArray&lt;xiiString&gt;</a>         m_DataDirRoots;</div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;  <a class="code" href="../../d9/d4a/classxii_unique_ptr.htm">xiiUniquePtr&lt;xiiFileSystemWatcher&gt;</a> m_pWatcher;</div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;  xiiEventSubscriptionID             m_WatcherSubscription = {};</div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160; </div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;  <span class="comment">// Actual file system data</span></div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;  <span class="keyword">mutable</span> <a class="code" href="../../dd/d52/classxii_mutex.htm">xiiMutex</a> m_FilesMutex;</div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;  <a class="code" href="../../da/d93/classxii_atomic_bool.htm">xiiAtomicBool</a>    m_bInitialized = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160; </div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;  <a class="code" href="../../d6/df7/classxii_map.htm">xiiMap&lt;xiiString, xiiFileStatus&gt;</a>         m_ReferencedFiles;   <span class="comment">// Absolute path to stat map</span></div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;  <a class="code" href="../../d6/df7/classxii_map.htm">xiiMap&lt;xiiString, xiiFileStatus::Status&gt;</a> m_ReferencedFolders; <span class="comment">// Absolute path to status map</span></div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;  <a class="code" href="../../d6/d31/classxii_set.htm">xiiSet&lt;xiiString&gt;</a>                        m_LockedFiles;</div>
-<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;  <a class="code" href="../../d6/df7/classxii_map.htm">xiiMap&lt;xiiString, xiiFileStatus&gt;</a>         m_TransiendFiles; <span class="comment">// Absolute path to stat for files outside the data directories.</span></div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;};</div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160; </div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;  <span class="keywordtype">void</span> SetAllStatusUnknown();</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;  <span class="keywordtype">void</span> RemoveStaleFileInfos();</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160; </div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;  <span class="keywordtype">void</span>          OnAssetWatcherEvent(<span class="keyword">const</span> xiiFileSystemWatcherEvent&amp; e);</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;  <a class="code" href="../../da/d4e/structxii_file_status.htm">xiiFileStatus</a> HandleSingleFile(<a class="code" href="../../d4/d8d/classxii_data_dir_path.htm">xiiDataDirPath</a> absolutePath, <span class="keywordtype">bool</span> bRecurseIntoFolders);</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;  <a class="code" href="../../da/d4e/structxii_file_status.htm">xiiFileStatus</a> HandleSingleFile(<a class="code" href="../../d4/d8d/classxii_data_dir_path.htm">xiiDataDirPath</a> absolutePath, <span class="keyword">const</span> <a class="code" href="../../d6/dd0/structxii_file_stats.htm">xiiFileStats</a>&amp; FileStat, <span class="keywordtype">bool</span> bRecurseIntoFolders);</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160; </div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;  <span class="keywordtype">void</span> RemoveFileOrFolder(<span class="keyword">const</span> <a class="code" href="../../d4/d8d/classxii_data_dir_path.htm">xiiDataDirPath</a>&amp; absolutePath, <span class="keywordtype">bool</span> bRecurseIntoFolders);</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160; </div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;  <span class="keywordtype">void</span> MarkFileLocked(<a class="code" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sAbsolutePath);</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160; </div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;  <span class="keywordtype">void</span> FireFileChangedEvent(<span class="keyword">const</span> <a class="code" href="../../d4/d8d/classxii_data_dir_path.htm">xiiDataDirPath</a>&amp; file, <a class="code" href="../../da/d4e/structxii_file_status.htm">xiiFileStatus</a> fileStatus, xiiFileChangedEvent::Type type);</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;  <span class="keywordtype">void</span> FireFolderChangedEvent(<span class="keyword">const</span> <a class="code" href="../../d4/d8d/classxii_data_dir_path.htm">xiiDataDirPath</a>&amp; file, xiiFolderChangedEvent::Type type);</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160; </div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;  <span class="comment">// Immutable data after Initialize</span></div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;  <a class="code" href="../../d0/d32/classxii_application_file_system_config.htm">xiiApplicationFileSystemConfig</a>     m_FileSystemConfig;</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;  <a class="code" href="../../dc/da4/classxii_dynamic_array.htm">xiiDynamicArray&lt;xiiString&gt;</a>         m_DataDirRoots;</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;  <a class="code" href="../../d9/d4a/classxii_unique_ptr.htm">xiiUniquePtr&lt;xiiFileSystemWatcher&gt;</a> m_pWatcher;</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;  xiiEventSubscriptionID             m_WatcherSubscription = {};</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160; </div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;  <span class="comment">// Actual file system data</span></div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;  <span class="keyword">mutable</span> <a class="code" href="../../dd/d52/classxii_mutex.htm">xiiMutex</a> m_FilesMutex;</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;  <a class="code" href="../../da/d93/classxii_atomic_bool.htm">xiiAtomicBool</a>    m_bInitialized = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160; </div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;  FilesMap                         m_ReferencedFiles;   <span class="comment">// Absolute path to stat map</span></div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;  FoldersMap                       m_ReferencedFolders; <span class="comment">// Absolute path to status map</span></div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;  <a class="code" href="../../d6/d31/classxii_set.htm">xiiSet&lt;xiiString&gt;</a>                m_LockedFiles;</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;  <a class="code" href="../../d6/df7/classxii_map.htm">xiiMap&lt;xiiString, xiiFileStatus&gt;</a> m_TransiendFiles; <span class="comment">// Absolute path to stat for files outside the data directories.</span></div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;};</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160; </div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclassxii_application_file_system_config_htm"><div class="ttname"><a href="../../d0/d32/classxii_application_file_system_config.htm">xiiApplicationFileSystemConfig</a></div><div class="ttdef"><b>Definition:</b> FileSystemConfig.h:7</div></div>
 <div class="ttc" id="astructxii_file_stats_htm"><div class="ttname"><a href="../../d6/dd0/structxii_file_stats.htm">xiiFileStats</a></div><div class="ttdoc">Holds the stats for a file.</div><div class="ttdef"><b>Definition:</b> OSFile.h:33</div></div>
+<div class="ttc" id="aclassxii_array_ptr_htm"><div class="ttname"><a href="../../d0/d60/classxii_array_ptr.htm">xiiArrayPtr</a></div><div class="ttdoc">This class encapsulates an array and it's size. It is recommended to use this class instead of plain ...</div><div class="ttdef"><b>Definition:</b> ArrayPtr.h:36</div></div>
 <div class="ttc" id="astructxii_delegate_htm"><div class="ttname"><a href="../../dc/d84/structxii_delegate.htm">xiiDelegate</a></div><div class="ttdoc">A generic delegate class which supports static functions and member functions.</div><div class="ttdef"><b>Definition:</b> Delegate.h:75</div></div>
 <div class="ttc" id="aclassxii_set_htm"><div class="ttname"><a href="../../d6/d31/classxii_set.htm">xiiSet</a></div><div class="ttdef"><b>Definition:</b> Set.h:235</div></div>
 <div class="ttc" id="aclassxii_map_htm"><div class="ttname"><a href="../../d6/df7/classxii_map.htm">xiiMap</a></div><div class="ttdef"><b>Definition:</b> Map.h:328</div></div>
 <div class="ttc" id="aclassxii_locked_object_htm"><div class="ttname"><a href="../../da/d7f/classxii_locked_object.htm">xiiLockedObject</a></div><div class="ttdoc">Provides access to an object while managing a lock (e.g. a mutex) that ensures that during its lifeti...</div><div class="ttdef"><b>Definition:</b> LockedObject.h:6</div></div>
-<div class="ttc" id="astructxii_hybrid_string_htm"><div class="ttname"><a href="../../df/dfb/structxii_hybrid_string.htm">xiiHybridString&lt; 32, xiiDefaultAllocatorWrapper &gt;</a></div></div>
 <div class="ttc" id="astructxii_string_view_htm"><div class="ttname"><a href="../../da/d9d/structxii_string_view.htm">xiiStringView</a></div><div class="ttdoc">xiiStringView represent a read-only sub-string of a larger string, as it can store a dedicated string...</div><div class="ttdef"><b>Definition:</b> StringView.h:23</div></div>
 <div class="ttc" id="aclassxii_stream_writer_htm"><div class="ttname"><a href="../../d0/d18/classxii_stream_writer.htm">xiiStreamWriter</a></div><div class="ttdoc">Interface for binary out (write) streams.</div><div class="ttdef"><b>Definition:</b> Stream.h:106</div></div>
 <div class="ttc" id="aclassxii_stream_reader_htm"><div class="ttname"><a href="../../d4/d5e/classxii_stream_reader.htm">xiiStreamReader</a></div><div class="ttdoc">Interface for binary in (read) streams.</div><div class="ttdef"><b>Definition:</b> Stream.h:21</div></div>
-<div class="ttc" id="aclassxii_atomic_bool_htm"><div class="ttname"><a href="../../da/d93/classxii_atomic_bool.htm">xiiAtomicBool</a></div><div class="ttdoc">An atomic boolean variable. This is just a wrapper around an atomic int32 for convenience.</div><div class="ttdef"><b>Definition:</b> AtomicInteger.h:68</div></div>
+<div class="ttc" id="aclassxii_atomic_bool_htm"><div class="ttname"><a href="../../da/d93/classxii_atomic_bool.htm">xiiAtomicBool</a></div><div class="ttdoc">An atomic boolean variable. This is just a wrapper around an atomic int32 for convenience.</div><div class="ttdef"><b>Definition:</b> AtomicInteger.h:87</div></div>
 <div class="ttc" id="aclassxii_dynamic_array_htm"><div class="ttname"><a href="../../dc/da4/classxii_dynamic_array.htm">xiiDynamicArray</a></div><div class="ttdef"><b>Definition:</b> DynamicArray.h:80</div></div>
 <div class="ttc" id="aclassxii_unique_ptr_htm"><div class="ttname"><a href="../../d9/d4a/classxii_unique_ptr.htm">xiiUniquePtr</a></div><div class="ttdoc">A Unique ptr manages an object and destroys that object when it goes out of scope....</div><div class="ttdef"><b>Definition:</b> UniquePtr.h:8</div></div>
 <div class="ttc" id="astructxii_result_htm"><div class="ttname"><a href="../../dd/dad/structxii_result.htm">xiiResult</a></div><div class="ttdoc">Default enum for returning failure or success, instead of using a bool.</div><div class="ttdef"><b>Definition:</b> Types.h:54</div></div>
 <div class="ttc" id="aclassxii_mutex_htm"><div class="ttname"><a href="../../dd/d52/classxii_mutex.htm">xiiMutex</a></div><div class="ttdoc">Provides a simple mechanism for mutual exclusion to prevent multiple threads from accessing a shared ...</div><div class="ttdef"><b>Definition:</b> Mutex.h:12</div></div>
-<div class="ttc" id="astructxii_file_status_htm"><div class="ttname"><a href="../../da/d4e/structxii_file_status.htm">xiiFileStatus</a></div><div class="ttdoc">Information about a single file on disk. The file might be a document or any other file found in the ...</div><div class="ttdef"><b>Definition:</b> Declarations.h:17</div></div>
-<div class="ttc" id="aclassxii_event_htm"><div class="ttname"><a href="../../dc/d22/classxii_event.htm">xiiEvent</a></div><div class="ttdef"><b>Definition:</b> Event.h:177</div></div>
+<div class="ttc" id="astructxii_file_status_htm"><div class="ttname"><a href="../../da/d4e/structxii_file_status.htm">xiiFileStatus</a></div><div class="ttdoc">Information about a single file on disk. The file might be a document or any other file found in the ...</div><div class="ttdef"><b>Definition:</b> Declarations.h:19</div></div>
+<div class="ttc" id="aclassxii_event_htm"><div class="ttname"><a href="../../dc/d22/classxii_event.htm">xiiEvent</a></div><div class="ttdef"><b>Definition:</b> Event.h:176</div></div>
+<div class="ttc" id="aclassxii_data_dir_path_htm"><div class="ttname"><a href="../../d4/d8d/classxii_data_dir_path.htm">xiiDataDirPath</a></div><div class="ttdoc">A reference to a file or folder inside a data directory.</div><div class="ttdef"><b>Definition:</b> DataDirPath.h:17</div></div>
 <div class="ttc" id="aclassxii_uuid_htm"><div class="ttname"><a href="../../dc/d1d/classxii_uuid.htm">xiiUuid</a></div><div class="ttdoc">This data type is the abstraction for 128-bit Uuid (also known as GUID) instances.</div><div class="ttdef"><b>Definition:</b> Uuid.h:10</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.htm">home</a></li><li class="navelem"><a class="el" href="../../dir_1036706e55c22cab35bc1c58ee689f1d.htm">runner</a></li><li class="navelem"><a class="el" href="../../dir_629f8151d55d307162ff2d619fb1783d.htm">work</a></li><li class="navelem"><a class="el" href="../../dir_1ddc44fe1263a8c7935fa6130b7d9499.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_2c1b6808f12952f4c36e05ba7068379a.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_b5a1c4ecfca018ad24b729e213296d41.htm">Source</a></li><li class="navelem"><a class="el" href="../../dir_64f53f8da7bf780a58c32bb848e7873b.htm">Tools</a></li><li class="navelem"><a class="el" href="../../dir_4b5bc41f7c4cbfc8ca80bdea56300f1d.htm">Libs</a></li><li class="navelem"><a class="el" href="../../dir_ba58a103e79106e89914cc52b64849d5.htm">ToolsFoundation</a></li><li class="navelem"><a class="el" href="../../dir_477def286c2d2152f3157edad2157379.htm">FileSystem</a></li><li class="navelem"><b>FileSystemModel.h</b></li>
-    <li class="footer">Generated on Fri Nov 17 2023 03:01:29 for XIIEngine by
+    <li class="footer">Generated on Sun Nov 19 2023 19:17:27 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

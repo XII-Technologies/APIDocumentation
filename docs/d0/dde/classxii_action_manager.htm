@@ -114,16 +114,16 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>UnregisterActi
 <tr class="memitem:ad5a7a3b0949a1342a34589ea0469a367"><td class="memItemLeft" align="right" valign="top"><a id="ad5a7a3b0949a1342a34589ea0469a367"></a>
 static const <a class="el" href="../../db/d43/structxii_action_descriptor.htm">xiiActionDescriptor</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetActionDescriptor</b> (<a class="el" href="../../df/dcf/classxii_action_descriptor_handle.htm">xiiActionDescriptorHandle</a> hAction)</td></tr>
 <tr class="separator:ad5a7a3b0949a1342a34589ea0469a367"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afd7c51d1933ac31b029b00265bcab2ce"><td class="memItemLeft" align="right" valign="top"><a id="afd7c51d1933ac31b029b00265bcab2ce"></a>
-static <a class="el" href="../../df/dcf/classxii_action_descriptor_handle.htm">xiiActionDescriptorHandle</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetActionHandle</b> (<a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sCategory, <a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sActionName)</td></tr>
-<tr class="separator:afd7c51d1933ac31b029b00265bcab2ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a27c0bfecb23e2cb2f20c5e1dcb796444"><td class="memItemLeft" align="right" valign="top"><a id="a27c0bfecb23e2cb2f20c5e1dcb796444"></a>
-static <a class="el" href="../../df/dfb/structxii_hybrid_string.htm">xiiString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dde/classxii_action_manager.htm#a27c0bfecb23e2cb2f20c5e1dcb796444">FindActionCategory</a> (<a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sActionName)</td></tr>
-<tr class="memdesc:a27c0bfecb23e2cb2f20c5e1dcb796444"><td class="mdescLeft">&#160;</td><td class="mdescRight">Searches all action categories for the given action name. Returns the category name in which the action name was found, or an empty string. <br /></td></tr>
-<tr class="separator:a27c0bfecb23e2cb2f20c5e1dcb796444"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a456eca5d68dc63d37d785f4f571f2afb"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../dd/dad/structxii_result.htm">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dde/classxii_action_manager.htm#a456eca5d68dc63d37d785f4f571f2afb">ExecuteAction</a> (<a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sCategory, <a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sActionName, const <a class="el" href="../../d9/d45/structxii_action_context.htm">xiiActionContext</a> &amp;context, const <a class="el" href="../../db/d1a/classxii_variant.htm">xiiVariant</a> &amp;value=<a class="el" href="../../db/d1a/classxii_variant.htm">xiiVariant</a>())</td></tr>
-<tr class="memdesc:a456eca5d68dc63d37d785f4f571f2afb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Quick way to execute an action from code.  <a href="../../d0/dde/classxii_action_manager.htm#a456eca5d68dc63d37d785f4f571f2afb">More...</a><br /></td></tr>
-<tr class="separator:a456eca5d68dc63d37d785f4f571f2afb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6349bc97c279e5783ac1335b3760e92"><td class="memItemLeft" align="right" valign="top"><a id="ae6349bc97c279e5783ac1335b3760e92"></a>
+static <a class="el" href="../../df/dcf/classxii_action_descriptor_handle.htm">xiiActionDescriptorHandle</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetActionHandle</b> (const char *szCategory, const char *szActionName)</td></tr>
+<tr class="separator:ae6349bc97c279e5783ac1335b3760e92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a899439549123d580f77d577d2204cde5"><td class="memItemLeft" align="right" valign="top"><a id="a899439549123d580f77d577d2204cde5"></a>
+static <a class="el" href="../../df/dfb/structxii_hybrid_string.htm">xiiString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dde/classxii_action_manager.htm#a899439549123d580f77d577d2204cde5">FindActionCategory</a> (const char *szActionName)</td></tr>
+<tr class="memdesc:a899439549123d580f77d577d2204cde5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Searches all action categories for the given action name. Returns the category name in which the action name was found, or an empty string. <br /></td></tr>
+<tr class="separator:a899439549123d580f77d577d2204cde5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a120284128501c5ada5700aba7f47c253"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../dd/dad/structxii_result.htm">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dde/classxii_action_manager.htm#a120284128501c5ada5700aba7f47c253">ExecuteAction</a> (const char *szCategory, const char *szActionName, const <a class="el" href="../../d9/d45/structxii_action_context.htm">xiiActionContext</a> &amp;context, const <a class="el" href="../../db/d1a/classxii_variant.htm">xiiVariant</a> &amp;value=<a class="el" href="../../db/d1a/classxii_variant.htm">xiiVariant</a>())</td></tr>
+<tr class="memdesc:a120284128501c5ada5700aba7f47c253"><td class="mdescLeft">&#160;</td><td class="mdescRight">Quick way to execute an action from code.  <a href="../../d0/dde/classxii_action_manager.htm#a120284128501c5ada5700aba7f47c253">More...</a><br /></td></tr>
+<tr class="separator:a120284128501c5ada5700aba7f47c253"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8b64a36545beccba1915a921beef7699"><td class="memItemLeft" align="right" valign="top"><a id="a8b64a36545beccba1915a921beef7699"></a>
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>SaveShortcutAssignment</b> ()</td></tr>
 <tr class="separator:a8b64a36545beccba1915a921beef7699"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -144,10 +144,10 @@ static <a class="el" href="../../dc/d22/classxii_event.htm">xiiEvent</a>&lt; con
 <div class="textblock"><p>Stores 'actions' (things that can be triggered from UI). </p>
 <p>Actions are usually represented by a button in a toolbar, or a menu entry. Actions are unique across the entire application. Each action is registered exactly once, but it may be referenced by many different <a class="el" href="../../db/db2/classxii_action_map.htm" title="Defines the structure of how actions are organized in a particular context.">xiiActionMap</a> instances, which defines how an action shows up in a window.</p>
 <p>Through RegisterAction() / UnregisterAction() an action is added or removed. These functions are usually not called directly, but rather the macros at the top of this file are used (see XII_REGISTER_CATEGORY, XII_REGISTER_MENU, XII_REGISTER_ACTION_X, ...).</p>
-<p>Unit tests can call <a class="el" href="../../d0/dde/classxii_action_manager.htm#a456eca5d68dc63d37d785f4f571f2afb" title="Quick way to execute an action from code.">ExecuteAction()</a> to directly invoke an action. Widgets use the <a class="el" href="../../db/db2/classxii_action_map.htm" title="Defines the structure of how actions are organized in a particular context.">xiiActionMap</a> to organize which actions are available in a window, and how they are structured. For instance, the same action can appear in a menu, in a toolbar and a context menu. In each case their location may be different (top-level, in a sub-menu, etc). See <a class="el" href="../../db/db2/classxii_action_map.htm" title="Defines the structure of how actions are organized in a particular context.">xiiActionMap</a> for details. </p>
+<p>Unit tests can call <a class="el" href="../../d0/dde/classxii_action_manager.htm#a120284128501c5ada5700aba7f47c253" title="Quick way to execute an action from code.">ExecuteAction()</a> to directly invoke an action. Widgets use <a class="el" href="../../db/db2/classxii_action_map.htm" title="Defines the structure of how actions are organized in a particular context.">xiiActionMap</a> to organize which actions are available in a window, and how they are structured. For instance, the same action can appear in a menu, in a toolbar and a context menu. In each case their location may be different (top-level, in a sub-menu, etc). See <a class="el" href="../../db/db2/classxii_action_map.htm" title="Defines the structure of how actions are organized in a particular context.">xiiActionMap</a> for details. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a456eca5d68dc63d37d785f4f571f2afb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a456eca5d68dc63d37d785f4f571f2afb">&#9670;&nbsp;</a></span>ExecuteAction()</h2>
+<a id="a120284128501c5ada5700aba7f47c253"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a120284128501c5ada5700aba7f47c253">&#9670;&nbsp;</a></span>ExecuteAction()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -158,14 +158,14 @@ static <a class="el" href="../../dc/d22/classxii_event.htm">xiiEvent</a>&lt; con
         <tr>
           <td class="memname"><a class="el" href="../../dd/dad/structxii_result.htm">xiiResult</a> xiiActionManager::ExecuteAction </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a>&#160;</td>
-          <td class="paramname"><em>sCategory</em>, </td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>szCategory</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a>&#160;</td>
-          <td class="paramname"><em>sActionName</em>, </td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>szActionName</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -196,8 +196,8 @@ static <a class="el" href="../../dc/d22/classxii_event.htm">xiiEvent</a>&lt; con
 <p>The use case is mostly for unit tests, which need to execute actions directly and without a link dependency on the code that registered the action.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">sCategory</td><td>The category of the action, ie. under which name the action appears in the Shortcut binding dialog. For example "Scene", "Scene - Cameras", "Scene - Selection", "Assets" etc. This parameter may be nullptr in which case FindActionCategory(sActionName) is used to try to detect the category automatically. </td></tr>
-    <tr><td class="paramname">sActionName</td><td>The name (not mapped path) under which the action was registered. For example "Selection.Copy", "Prefabs.ConvertToEngine", "Scene.Camera.SnapObjectToCamera" </td></tr>
+    <tr><td class="paramname">szCategory</td><td>The category of the action, ie. under which name the action appears in the Shortcut binding dialog. For example "Scene", "Scene - Cameras", "Scene - Selection", "Assets" etc. This parameter may be nullptr in which case FindActionCategory(szActionName) is used to try to detect the category automatically. </td></tr>
+    <tr><td class="paramname">szActionName</td><td>The name (not mapped path) under which the action was registered. For example "Selection.Copy", "Prefabs.ConvertToEngine", "Scene.Camera.SnapObjectToCamera" </td></tr>
     <tr><td class="paramname">context</td><td>The context in which to execute the action. Depending on the <a class="el" href="../../d7/da7/structxii_action_scope.htm">xiiActionScope</a> of the target action, some members are optional. E.g. for document actions, only the m_pDocument member must be specified. </td></tr>
     <tr><td class="paramname">value</td><td>Optional value passed through to the xiiAction::Execute() call. Some actions use it, most don't. </td></tr>
   </table>
@@ -217,7 +217,7 @@ static <a class="el" href="../../dc/d22/classxii_event.htm">xiiEvent</a>&lt; con
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d0/dde/classxii_action_manager.htm">xiiActionManager</a></li>
-    <li class="footer">Generated on Fri Nov 17 2023 03:01:29 for XIIEngine by
+    <li class="footer">Generated on Sun Nov 19 2023 19:17:27 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

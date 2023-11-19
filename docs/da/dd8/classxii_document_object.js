@@ -12,7 +12,7 @@ var classxii_document_object =
     [ "GetGuid", "da/dd8/classxii_document_object.htm#ac9572946a07408041a2c1cc8c2c1d37d", null ],
     [ "GetParent", "da/dd8/classxii_document_object.htm#adddf9cd4a2879981fc5da6079c6c915d", null ],
     [ "GetParentProperty", "da/dd8/classxii_document_object.htm#a63daacd3c91432a7cec28d8ef45041b2", null ],
-    [ "GetParentPropertyType", "da/dd8/classxii_document_object.htm#a31162194aa1b2ef1db0896c9efe9dab6", null ],
+    [ "GetParentPropertyType", "da/dd8/classxii_document_object.htm#ab1bc47b9eda1c6c4b5af45decbd73936", null ],
     [ "GetPropertyIndex", "da/dd8/classxii_document_object.htm#add8b025ce1dcf59ff659645583f00f45", null ],
     [ "GetType", "da/dd8/classxii_document_object.htm#a61d9efa7eebc3b53346adabc608f65f0", null ],
     [ "GetTypeAccessor", "da/dd8/classxii_document_object.htm#a27c9227cdccf04cb5f2e5713e999a220", null ],

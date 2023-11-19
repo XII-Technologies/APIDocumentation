@@ -38,5 +38,5 @@ var classxii_standard_input_device =
     [ "UpdateInputSlotValues", "dc/de5/classxii_standard_input_device.htm#a55efe645bd9cf2a57673f066bca09bdb", null ],
     [ "UpdateInputSlotValues", "dc/de5/classxii_standard_input_device.htm#a18c8ebe2ee79494d490c8b727595f5fb", null ],
     [ "WindowMessage", "dc/de5/classxii_standard_input_device.htm#ad6e039e1c43cf6a99916f8d90f0ea945", null ],
-    [ "WindowMessage", "dc/de5/classxii_standard_input_device.htm#a70e100ece049d2d16373b0079a00e45f", null ]
+    [ "WindowMessage", "dc/de5/classxii_standard_input_device.htm#a7af1a7fab0cf3ea18fdfc061b691a8e8", null ]
 ];

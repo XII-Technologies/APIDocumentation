@@ -8,6 +8,6 @@ var structxii_resource_event =
       [ "ResourceContentUnloading", "df/de3/structxii_resource_event.htm#a2b5ad3854f4f75171ab0cb2b9ae321c3ac1a938ce8e0dc1299d8fe9a52faf2904", null ],
       [ "ResourcePriorityChanged", "df/de3/structxii_resource_event.htm#a2b5ad3854f4f75171ab0cb2b9ae321c3a41014b6c891727f45cff2ddbbe764078", null ]
     ] ],
-    [ "m_pResource", "df/de3/structxii_resource_event.htm#af4e91ec6eba1c87963d689d3e36566f3", null ],
+    [ "m_pResource", "df/de3/structxii_resource_event.htm#ac2daa6117911098fdbd908d846b6cd4d", null ],
     [ "m_Type", "df/de3/structxii_resource_event.htm#ab5d5762b12a52ba3379f74052bb61bb5", null ]
 ];

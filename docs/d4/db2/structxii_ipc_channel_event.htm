@@ -100,14 +100,10 @@ $(document).ready(function(){initNavTree('d4/db2/structxii_ipc_channel_event.htm
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a0845639587daf7f344e19525b1218cab"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/db2/structxii_ipc_channel_event.htm#a0845639587daf7f344e19525b1218cab">Type</a> { <br />
-&#160;&#160;<a class="el" href="../../d4/db2/structxii_ipc_channel_event.htm#a0845639587daf7f344e19525b1218caba14f70954f1d452126d9e20a8b3f6e0d0">ConnectedToClient</a>, 
-<a class="el" href="../../d4/db2/structxii_ipc_channel_event.htm#a0845639587daf7f344e19525b1218cabaa0c86e9195ebebeed1e2e4e2dbf23a22">ConnectedToServer</a>, 
-<a class="el" href="../../d4/db2/structxii_ipc_channel_event.htm#a0845639587daf7f344e19525b1218caba23202da1469ed15a7604de1574439e36">DisconnectedFromClient</a>, 
-<a class="el" href="../../d4/db2/structxii_ipc_channel_event.htm#a0845639587daf7f344e19525b1218caba9e2652a042335c2f368fb002d2fbfef2">DisconnectedFromServer</a>, 
-<br />
-&#160;&#160;<a class="el" href="../../d4/db2/structxii_ipc_channel_event.htm#a0845639587daf7f344e19525b1218cabafd73e138a2f47908d81f35569238eb03">NewMessages</a>
-<br />
+<tr class="memitem:a0845639587daf7f344e19525b1218cab"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/db2/structxii_ipc_channel_event.htm#a0845639587daf7f344e19525b1218cab">Type</a> { <a class="el" href="../../d4/db2/structxii_ipc_channel_event.htm#a0845639587daf7f344e19525b1218cabada22e504285f37b0085cea5870e19376">Disconnected</a>, 
+<a class="el" href="../../d4/db2/structxii_ipc_channel_event.htm#a0845639587daf7f344e19525b1218caba7dc5bab11d254f01ec7ae042a11682b0">Connecting</a>, 
+<a class="el" href="../../d4/db2/structxii_ipc_channel_event.htm#a0845639587daf7f344e19525b1218cabacbdc3ecb0b5919127cc9893439c67e15">Connected</a>, 
+<a class="el" href="../../d4/db2/structxii_ipc_channel_event.htm#a0845639587daf7f344e19525b1218cabafd73e138a2f47908d81f35569238eb03">NewMessages</a>
  }</td></tr>
 <tr class="separator:a0845639587daf7f344e19525b1218cab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -120,10 +116,10 @@ Public Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a80bb862bda027c49c268abe12f9ab976"><td class="memItemLeft" align="right" valign="top"><a id="a80bb862bda027c49c268abe12f9ab976"></a>
-<a class="el" href="../../d4/db2/structxii_ipc_channel_event.htm#a0845639587daf7f344e19525b1218cab">Type</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_Type</b></td></tr>
+<a class="el" href="../../d4/db2/structxii_ipc_channel_event.htm#a0845639587daf7f344e19525b1218cab">Type</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_Type</b> = <a class="el" href="../../d4/db2/structxii_ipc_channel_event.htm#a0845639587daf7f344e19525b1218cabafd73e138a2f47908d81f35569238eb03">NewMessages</a></td></tr>
 <tr class="separator:a80bb862bda027c49c268abe12f9ab976"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6c417dcb23d9c79e5603aa817bdbaf54"><td class="memItemLeft" align="right" valign="top"><a id="a6c417dcb23d9c79e5603aa817bdbaf54"></a>
-<a class="el" href="../../df/d60/classxii_ipc_channel.htm">xiiIpcChannel</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_pChannel</b></td></tr>
+<a class="el" href="../../df/d60/classxii_ipc_channel.htm">xiiIpcChannel</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_pChannel</b> = nullptr</td></tr>
 <tr class="separator:a6c417dcb23d9c79e5603aa817bdbaf54"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -141,15 +137,13 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a0845639587daf7f344e19525b1218caba14f70954f1d452126d9e20a8b3f6e0d0"></a>ConnectedToClient&#160;</td><td class="fielddoc"><p>brief Sent whenever a new connection to a client has been established. </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a0845639587daf7f344e19525b1218cabada22e504285f37b0085cea5870e19376"></a>Disconnected&#160;</td><td class="fielddoc"><p>Server or client are in a dorment state. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a0845639587daf7f344e19525b1218cabaa0c86e9195ebebeed1e2e4e2dbf23a22"></a>ConnectedToServer&#160;</td><td class="fielddoc"><p>brief Sent whenever a connection to the server has been established. </p>
+<tr><td class="fieldname"><a id="a0845639587daf7f344e19525b1218caba7dc5bab11d254f01ec7ae042a11682b0"></a>Connecting&#160;</td><td class="fielddoc"><p>The server is listening for clients or the client is trying to find the server. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a0845639587daf7f344e19525b1218caba23202da1469ed15a7604de1574439e36"></a>DisconnectedFromClient&#160;</td><td class="fielddoc"><p>Sent every time the connection to a client is dropped. </p>
+<tr><td class="fieldname"><a id="a0845639587daf7f344e19525b1218cabacbdc3ecb0b5919127cc9893439c67e15"></a>Connected&#160;</td><td class="fielddoc"><p>Client and server are connected to each other. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a0845639587daf7f344e19525b1218caba9e2652a042335c2f368fb002d2fbfef2"></a>DisconnectedFromServer&#160;</td><td class="fielddoc"><p>Sent when the connection to the server has been lost. </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a0845639587daf7f344e19525b1218cabafd73e138a2f47908d81f35569238eb03"></a>NewMessages&#160;</td><td class="fielddoc"><p>Sent when a new message has been received. </p>
+<tr><td class="fieldname"><a id="a0845639587daf7f344e19525b1218cabafd73e138a2f47908d81f35569238eb03"></a>NewMessages&#160;</td><td class="fielddoc"><p>Sent when a new messages have been received or when disconnected to wake up any thread waiting for messages. </p>
 </td></tr>
 </table>
 
@@ -164,7 +158,7 @@ Public Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d4/db2/structxii_ipc_channel_event.htm">xiiIpcChannelEvent</a></li>
-    <li class="footer">Generated on Fri Nov 17 2023 03:01:32 for XIIEngine by
+    <li class="footer">Generated on Sun Nov 19 2023 19:17:29 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

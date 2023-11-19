@@ -195,115 +195,115 @@ $(document).ready(function(){initNavTree('d7/d4d/_interval_scheduler__inl_8h_sou
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
 <div class="line"><a name="l00109"></a><span class="lineno"><a class="line" href="../../db/d37/classxii_interval_scheduler.htm#a2aa961b42d07fb4d9db366afea9d783d">  109</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../db/d37/classxii_interval_scheduler.htm#a2aa961b42d07fb4d9db366afea9d783d">xiiIntervalScheduler&lt;T&gt;::Update</a>(<a class="code" href="../../d7/dc1/structxii_time.htm">xiiTime</a> deltaTime, <a class="code" href="../../dc/d84/structxii_delegate.htm">RunWorkCallback</a> runWorkCallback)</div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;{</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;  <span class="keywordflow">if</span> (deltaTime &lt;= <a class="code" href="../../d7/dc1/structxii_time.htm#a98ce26844e549b2f590dc01bbe6b742d">xiiTime::Zero</a>())</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;  <span class="keywordflow">if</span> (deltaTime.<a class="code" href="../../d7/dc1/structxii_time.htm#abd000eaf352336630e4668fbabac7d12">IsZeroOrNegative</a>())</div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160; </div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;  m_CurrentTime += deltaTime;</div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160; </div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;  <span class="keywordflow">if</span> (m_Data.IsEmpty())</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;  {</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    m_fNumWorkToSchedule = 0.0;</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;  }</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;  <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;  {</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    <span class="keywordtype">double</span> fNumWork = 0;</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    <span class="keywordflow">for</span> (xiiUInt32 i = 1; i &lt; HistogramSize; ++i)</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    {</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;      fNumWork += (1.0 / <a class="code" href="../../d1/d37/namespacexii_math.htm#a4d6f8bf4858245e40a706a3aabd0a59e">xiiMath::Max</a>(m_HistogramSlotValues[i], deltaTime).GetSeconds()) * m_Histogram[i];</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    }</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    fNumWork *= deltaTime.<a class="code" href="../../d7/dc1/structxii_time.htm#a3263cf5a3955dbca58bd7ab78acd2599">GetSeconds</a>();</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160; </div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    <span class="keywordflow">if</span> (m_fNumWorkToSchedule == 0.0)</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    {</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;      m_fNumWorkToSchedule = fNumWork;</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    }</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    {</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;      <span class="comment">// running average of num work per update to prevent huge spikes</span></div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;      m_fNumWorkToSchedule = xiiMath::Lerp&lt;double&gt;(m_fNumWorkToSchedule, fNumWork, 0.05);</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    }</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160; </div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">float</span>     fRemainder      = <span class="keyword">static_cast&lt;</span><span class="keywordtype">float</span><span class="keyword">&gt;</span>(<a class="code" href="../../d1/d37/namespacexii_math.htm#aa61976adbc40a0c6c6c08a5471bfaa27">xiiMath::Fraction</a>(m_fNumWorkToSchedule));</div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">int</span>       pos             = <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(m_CurrentTime.GetNanoseconds());</div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;    <span class="keyword">const</span> xiiUInt32 extra           = GetRandomZeroToOne(pos, m_uiSeed) &lt; fRemainder ? 1 : 0;</div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;    <span class="keyword">const</span> xiiUInt32 uiScheduleCount = <a class="code" href="../../d1/d37/namespacexii_math.htm#a2c660f80f0df5bb91a751d12a93cb9cb">xiiMath::Min</a>(<span class="keyword">static_cast&lt;</span>xiiUInt32<span class="keyword">&gt;</span>(m_fNumWorkToSchedule) + extra + m_Histogram[0], m_Data.GetCount());</div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160; </div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    <span class="comment">// schedule work</span></div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    {</div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;      <span class="keyword">auto</span> RunWork = [&amp;](<span class="keyword">typename</span> DataMap::Iterator it, xiiUInt32 uiIndex) {</div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;        <span class="keyword">auto</span>&amp; data = it.Value();</div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;        <span class="keywordflow">if</span> (data.IsValid())</div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;        {</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;          <span class="keywordflow">if</span> (runWorkCallback.IsValid())</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;          {</div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;            runWorkCallback(data.m_Work, m_CurrentTime - data.m_LastScheduledTime);</div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;          }</div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160; </div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;          <span class="comment">// add a little bit of random jitter so we don&#39;t end up with perfect timings that might collide with other work</span></div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;          data.m_DueTime           = m_CurrentTime + data.m_Interval + GetRandomTimeJitter(uiIndex, m_uiSeed);</div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;          data.m_LastScheduledTime = m_CurrentTime;</div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;        }</div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160; </div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;        m_ScheduledWork.PushBack(it);</div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;      };</div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160; </div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;      <span class="keyword">auto</span> it = m_Data.GetIterator();</div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;      <span class="keywordflow">for</span> (xiiUInt32 i = 0; i &lt; uiScheduleCount; ++i, ++it)</div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;      {</div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;        RunWork(it, i);</div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;      }</div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160; </div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;      <span class="comment">// check if the next works have a zero interval if so execute them as well to fulfill the every frame guarantee</span></div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;      xiiUInt32 uiNumExtras = 0;</div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;      <span class="keywordflow">while</span> (it.IsValid())</div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;      {</div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;        <span class="keyword">auto</span>&amp; data = it.Value();</div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;        <span class="keywordflow">if</span> (data.m_Interval.IsPositive())</div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;          <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160; </div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;        RunWork(it, uiNumExtras);</div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160; </div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;        ++uiNumExtras;</div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;        ++it;</div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;      }</div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;    }</div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160; </div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;    <span class="comment">// re-sort</span></div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">auto</span>&amp; it : m_ScheduledWork)</div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;    {</div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;      <span class="keywordflow">if</span> (it.Value().IsValid())</div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;      {</div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;        <span class="comment">// make a copy of data and re-insert at new due time</span></div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;        Data data                   = it.Value();</div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;        m_WorkIdToData[data.m_Work] = InsertData(data);</div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;      }</div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160; </div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;      m_Data.Remove(it);</div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;    }</div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;    m_ScheduledWork.Clear();</div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;  }</div>
-<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;}</div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160; </div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;XII_FORCE_INLINE <span class="keyword">typename</span> <a class="code" href="../../db/d37/classxii_interval_scheduler.htm">xiiIntervalScheduler&lt;T&gt;::DataMap::Iterator</a> <a class="code" href="../../db/d37/classxii_interval_scheduler.htm">xiiIntervalScheduler&lt;T&gt;::InsertData</a>(Data&amp; data)</div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;{</div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;  <span class="comment">// make sure that we have a unique due time since the map can&#39;t store multiple keys with the same value</span></div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;  <span class="keywordtype">int</span> pos = 0;</div>
-<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;  <span class="keywordflow">while</span> (m_Data.Contains(data.m_DueTime))</div>
-<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;  {</div>
-<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;    data.m_DueTime += GetRandomTimeJitter(pos++, m_uiSeed);</div>
-<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;  }</div>
-<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160; </div>
-<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;  <span class="keywordflow">return</span> m_Data.Insert(data.m_DueTime, data);</div>
-<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;}</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160; </div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;  {</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    <span class="keywordtype">double</span> fNumWork = 0;</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    <span class="keywordflow">for</span> (xiiUInt32 i = 1; i &lt; HistogramSize; ++i)</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    {</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;      fNumWork += (1.0 / <a class="code" href="../../d1/d37/namespacexii_math.htm#a4d6f8bf4858245e40a706a3aabd0a59e">xiiMath::Max</a>(m_HistogramSlotValues[i], deltaTime).GetSeconds()) * m_Histogram[i];</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    }</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    fNumWork *= deltaTime.<a class="code" href="../../d7/dc1/structxii_time.htm#a3263cf5a3955dbca58bd7ab78acd2599">GetSeconds</a>();</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160; </div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">float</span>     fRemainder      = <span class="keyword">static_cast&lt;</span><span class="keywordtype">float</span><span class="keyword">&gt;</span>(<a class="code" href="../../d1/d37/namespacexii_math.htm#aa61976adbc40a0c6c6c08a5471bfaa27">xiiMath::Fraction</a>(fNumWork));</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">int</span>       pos             = <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(m_CurrentTime.GetNanoseconds());</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    <span class="keyword">const</span> xiiUInt32 extra           = GetRandomZeroToOne(pos, m_uiSeed) &lt; fRemainder ? 1 : 0;</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    <span class="keyword">const</span> xiiUInt32 uiScheduleCount = <a class="code" href="../../d1/d37/namespacexii_math.htm#a2c660f80f0df5bb91a751d12a93cb9cb">xiiMath::Min</a>(<span class="keyword">static_cast&lt;</span>xiiUInt32<span class="keyword">&gt;</span>(fNumWork) + extra + m_Histogram[0], m_Data.GetCount());</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160; </div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    <span class="comment">// schedule work</span></div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    {</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;      <span class="keyword">auto</span> RunWork = [&amp;](<span class="keyword">typename</span> DataMap::Iterator it, xiiUInt32 uiIndex) {</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;        <span class="keyword">auto</span>&amp; data = it.Value();</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;        <span class="keywordflow">if</span> (data.IsValid())</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;        {</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;          <span class="keywordflow">if</span> (runWorkCallback.IsValid())</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;          {</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;            runWorkCallback(data.m_Work, m_CurrentTime - data.m_LastScheduledTime);</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;          }</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160; </div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;          <span class="comment">// add a little bit of random jitter so we don&#39;t end up with perfect timings that might collide with other work</span></div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;          data.m_DueTime           = m_CurrentTime + data.m_Interval + GetRandomTimeJitter(uiIndex, m_uiSeed);</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;          data.m_LastScheduledTime = m_CurrentTime;</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;        }</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160; </div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;        m_ScheduledWork.PushBack(it);</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;      };</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160; </div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;      <span class="keyword">auto</span> it = m_Data.GetIterator();</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;      <span class="keywordflow">for</span> (xiiUInt32 i = 0; i &lt; uiScheduleCount; ++i, ++it)</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;      {</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;        RunWork(it, i);</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;      }</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160; </div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;      <span class="comment">// check if the next works have a zero interval if so execute them as well to fulfill the every frame guarantee</span></div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;      xiiUInt32 uiNumExtras = 0;</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;      <span class="keywordflow">while</span> (it.IsValid())</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;      {</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;        <span class="keyword">auto</span>&amp; data = it.Value();</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;        <span class="keywordflow">if</span> (data.m_Interval.IsPositive())</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;          <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160; </div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;        RunWork(it, uiNumExtras);</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160; </div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;        ++uiNumExtras;</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;        ++it;</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;      }</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;    }</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160; </div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;    <span class="comment">// re-sort</span></div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">auto</span>&amp; it : m_ScheduledWork)</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;    {</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;      <span class="keywordflow">if</span> (it.Value().IsValid())</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;      {</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;        <span class="comment">// make a copy of data and re-insert at new due time</span></div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;        Data data                   = it.Value();</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;        m_WorkIdToData[data.m_Work] = InsertData(data);</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;      }</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160; </div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;      m_Data.Remove(it);</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;    }</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;    m_ScheduledWork.Clear();</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;  }</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;}</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160; </div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../db/d37/classxii_interval_scheduler.htm">xiiIntervalScheduler&lt;T&gt;::Clear</a>()</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;{</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;  m_CurrentTime = <a class="code" href="../../d7/dc1/structxii_time.htm#a98ce26844e549b2f590dc01bbe6b742d">xiiTime::Zero</a>();</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;  m_uiSeed      = 0;</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;  <a class="code" href="../../d8/d9d/classxii_memory_utils.htm#aa46340f1eaae0121ec1bcb712ea2755f">xiiMemoryUtils::ZeroFill</a>(m_Histogram, HistogramSize);</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160; </div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;  m_Data.Clear();</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;  m_WorkIdToData.Clear();</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;}</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160; </div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;XII_FORCE_INLINE <span class="keyword">typename</span> <a class="code" href="../../db/d37/classxii_interval_scheduler.htm">xiiIntervalScheduler&lt;T&gt;::DataMap::Iterator</a> <a class="code" href="../../db/d37/classxii_interval_scheduler.htm">xiiIntervalScheduler&lt;T&gt;::InsertData</a>(Data&amp; data)</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;{</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;  <span class="comment">// make sure that we have a unique due time since the map can&#39;t store multiple keys with the same value</span></div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;  <span class="keywordtype">int</span> pos = 0;</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;  <span class="keywordflow">while</span> (m_Data.Contains(data.m_DueTime))</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;  {</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;    data.m_DueTime += GetRandomTimeJitter(pos++, m_uiSeed);</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;  }</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160; </div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;  <span class="keywordflow">return</span> m_Data.Insert(data.m_DueTime, data);</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclassxii_interval_scheduler_htm"><div class="ttname"><a href="../../db/d37/classxii_interval_scheduler.htm">xiiIntervalScheduler</a></div><div class="ttdef"><b>Definition:</b> IntervalScheduler.h:65</div></div>
+<div class="ttc" id="aclassxii_interval_scheduler_htm"><div class="ttname"><a href="../../db/d37/classxii_interval_scheduler.htm">xiiIntervalScheduler</a></div><div class="ttdef"><b>Definition:</b> IntervalScheduler.h:64</div></div>
 <div class="ttc" id="astructxii_time_htm_a7a7ced674e94db9b2edd150b10715b35"><div class="ttname"><a href="../../d7/dc1/structxii_time.htm#a7a7ced674e94db9b2edd150b10715b35">xiiTime::Microseconds</a></div><div class="ttdeci">constexpr static XII_ALWAYS_INLINE xiiTime Microseconds(double fMicroseconds)</div><div class="ttdoc">Creates an instance of xiiTime that was initialized from microseconds.</div><div class="ttdef"><b>Definition:</b> Time.h:21</div></div>
 <div class="ttc" id="astructxii_delegate_htm"><div class="ttname"><a href="../../dc/d84/structxii_delegate.htm">xiiDelegate</a></div><div class="ttdoc">A generic delegate class which supports static functions and member functions.</div><div class="ttdef"><b>Definition:</b> Delegate.h:75</div></div>
 <div class="ttc" id="anamespacexii_math_htm_a4d6f8bf4858245e40a706a3aabd0a59e"><div class="ttname"><a href="../../d1/d37/namespacexii_math.htm#a4d6f8bf4858245e40a706a3aabd0a59e">xiiMath::Max</a></div><div class="ttdeci">constexpr XII_ALWAYS_INLINE T Max(T f1, T f2)</div><div class="ttdoc">Returns the greater value, f1 or f2.</div><div class="ttdef"><b>Definition:</b> Math_inl.h:59</div></div>
 <div class="ttc" id="astructxii_time_htm"><div class="ttname"><a href="../../d7/dc1/structxii_time.htm">xiiTime</a></div><div class="ttdoc">The time class encapsulates a double value storing the time in seconds.</div><div class="ttdef"><b>Definition:</b> Time.h:11</div></div>
 <div class="ttc" id="astructxii_simd_random_htm_adf0e8e140ab644bb7b99f9c0b8dffa26"><div class="ttname"><a href="../../db/d5d/structxii_simd_random.htm#adf0e8e140ab644bb7b99f9c0b8dffa26">xiiSimdRandom::FloatZeroToOne</a></div><div class="ttdeci">static xiiSimdVec4f FloatZeroToOne(const xiiSimdVec4i &amp;vPosition, const xiiSimdVec4u &amp;vSeed=xiiSimdVec4u::ZeroVector())</div><div class="ttdoc">Returns 4 random float values in range [0.0 ; 1.0], ie. including zero and one.</div><div class="ttdef"><b>Definition:</b> SimdRandom_inl.h:24</div></div>
+<div class="ttc" id="aclassxii_memory_utils_htm_aa46340f1eaae0121ec1bcb712ea2755f"><div class="ttname"><a href="../../d8/d9d/classxii_memory_utils.htm#aa46340f1eaae0121ec1bcb712ea2755f">xiiMemoryUtils::ZeroFill</a></div><div class="ttdeci">static void ZeroFill(T *pDestination, size_t uiCount=1)</div><div class="ttdoc">Zeros every byte in the provided memory buffer.</div></div>
 <div class="ttc" id="anamespacexii_math_htm_aa61976adbc40a0c6c6c08a5471bfaa27"><div class="ttname"><a href="../../d1/d37/namespacexii_math.htm#aa61976adbc40a0c6c6c08a5471bfaa27">xiiMath::Fraction</a></div><div class="ttdeci">XII_ALWAYS_INLINE Type Fraction(Type f)</div><div class="ttdoc">Returns the fraction-part of f.</div><div class="ttdef"><b>Definition:</b> Math_inl.h:311</div></div>
 <div class="ttc" id="aclassxii_simd_vec4u_htm"><div class="ttname"><a href="../../d9/d21/classxii_simd_vec4u.htm">xiiSimdVec4u</a></div><div class="ttdoc">A SIMD 4-component vector class of unsigned 32b integers.</div><div class="ttdef"><b>Definition:</b> SimdVec4u.h:6</div></div>
 <div class="ttc" id="aclassxii_simd_vec4i_htm"><div class="ttname"><a href="../../d5/d4f/classxii_simd_vec4i.htm">xiiSimdVec4i</a></div><div class="ttdoc">A SIMD 4-component vector class of signed 32b integers.</div><div class="ttdef"><b>Definition:</b> SimdVec4i.h:8</div></div>
@@ -312,13 +312,14 @@ $(document).ready(function(){initNavTree('d7/d4d/_interval_scheduler__inl_8h_sou
 <div class="ttc" id="anamespacexii_math_htm_ae7fbda648b6f9bcc4dc23962d06c93f4"><div class="ttname"><a href="../../d1/d37/namespacexii_math.htm#ae7fbda648b6f9bcc4dc23962d06c93f4">xiiMath::Sqrt</a></div><div class="ttdeci">XII_ALWAYS_INLINE double Sqrt(double f)</div><div class="ttdoc">Returns the square root of f.</div><div class="ttdef"><b>Definition:</b> MathDouble_inl.h:84</div></div>
 <div class="ttc" id="astructxii_time_htm_a0d30e51875577941d5f0e312d7041c76"><div class="ttname"><a href="../../d7/dc1/structxii_time.htm#a0d30e51875577941d5f0e312d7041c76">xiiTime::Seconds</a></div><div class="ttdeci">constexpr static XII_ALWAYS_INLINE xiiTime Seconds(double fSeconds)</div><div class="ttdoc">Creates an instance of xiiTime that was initialized from seconds.</div><div class="ttdef"><b>Definition:</b> Time.h:27</div></div>
 <div class="ttc" id="astructxii_time_htm_a98ce26844e549b2f590dc01bbe6b742d"><div class="ttname"><a href="../../d7/dc1/structxii_time.htm#a98ce26844e549b2f590dc01bbe6b742d">xiiTime::Zero</a></div><div class="ttdeci">constexpr static XII_ALWAYS_INLINE xiiTime Zero()</div><div class="ttdoc">Creates an instance of xiiTime that was initialized with zero.</div><div class="ttdef"><b>Definition:</b> Time.h:36</div></div>
+<div class="ttc" id="astructxii_time_htm_abd000eaf352336630e4668fbabac7d12"><div class="ttname"><a href="../../d7/dc1/structxii_time.htm#abd000eaf352336630e4668fbabac7d12">xiiTime::IsZeroOrNegative</a></div><div class="ttdeci">constexpr XII_ALWAYS_INLINE bool IsZeroOrNegative() const</div><div class="ttdoc">Returns true if the stored time is zero or negative.</div><div class="ttdef"><b>Definition:</b> Time.h:56</div></div>
 <div class="ttc" id="anamespacexii_math_htm_a2c660f80f0df5bb91a751d12a93cb9cb"><div class="ttname"><a href="../../d1/d37/namespacexii_math.htm#a2c660f80f0df5bb91a751d12a93cb9cb">xiiMath::Min</a></div><div class="ttdeci">constexpr XII_ALWAYS_INLINE T Min(T f1, T f2)</div><div class="ttdoc">Returns the smaller value, f1 or f2.</div><div class="ttdef"><b>Definition:</b> Math_inl.h:47</div></div>
 <div class="ttc" id="astructxii_time_htm_a0c6420bf3eee91dbe57bfd09ed62e62e"><div class="ttname"><a href="../../d7/dc1/structxii_time.htm#a0c6420bf3eee91dbe57bfd09ed62e62e">xiiTime::IsZero</a></div><div class="ttdeci">constexpr XII_ALWAYS_INLINE bool IsZero() const</div><div class="ttdoc">Returns true if the stored time is exactly zero. That typically means the value was not changed from ...</div><div class="ttdef"><b>Definition:</b> Time.h:47</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.htm">home</a></li><li class="navelem"><a class="el" href="../../dir_1036706e55c22cab35bc1c58ee689f1d.htm">runner</a></li><li class="navelem"><a class="el" href="../../dir_629f8151d55d307162ff2d619fb1783d.htm">work</a></li><li class="navelem"><a class="el" href="../../dir_1ddc44fe1263a8c7935fa6130b7d9499.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_2c1b6808f12952f4c36e05ba7068379a.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_b5a1c4ecfca018ad24b729e213296d41.htm">Source</a></li><li class="navelem"><a class="el" href="../../dir_e321052006a51284e67389ab20037e7c.htm">Engine</a></li><li class="navelem"><a class="el" href="../../dir_6934db396743bb3844d563c7fa1f32a7.htm">Core</a></li><li class="navelem"><a class="el" href="../../dir_adebcc6adcff8ac19ff9e173a546d91f.htm">Utils</a></li><li class="navelem"><a class="el" href="../../dir_2ba6aee8da357115503a25145cffa2fc.htm">Implementation</a></li><li class="navelem"><b>IntervalScheduler_inl.h</b></li>
-    <li class="footer">Generated on Fri Nov 17 2023 03:01:20 for XIIEngine by
+    <li class="footer">Generated on Sun Nov 19 2023 19:17:20 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

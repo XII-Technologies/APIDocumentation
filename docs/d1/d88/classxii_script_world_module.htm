@@ -117,6 +117,10 @@ Public Member Functions</h2></td></tr>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d88/classxii_script_world_module.htm#aeb3fa9d1173ec21ae3ee8a0b4af9c8a8">Initialize</a> () override</td></tr>
 <tr class="memdesc:aeb3fa9d1173ec21ae3ee8a0b4af9c8a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method is called after the constructor. A derived type can override this method to do initialization work. Typically this is the method where updates function are registered. <br /></td></tr>
 <tr class="separator:aeb3fa9d1173ec21ae3ee8a0b4af9c8a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:affc507ee7265427227530ad459892e5b"><td class="memItemLeft" align="right" valign="top"><a id="affc507ee7265427227530ad459892e5b"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d88/classxii_script_world_module.htm#affc507ee7265427227530ad459892e5b">WorldClear</a> () override</td></tr>
+<tr class="memdesc:affc507ee7265427227530ad459892e5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called by <a class="el" href="../../d6/d89/classxii_world.htm#a3b7b2ff09bf7bed357a09a75ec486f8b" title="Deletes all game objects in a world.">xiiWorld::Clear()</a>. Can be used to clear cached data when a world is completely cleared of objects (but not deleted). <br /></td></tr>
+<tr class="separator:affc507ee7265427227530ad459892e5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a08eaef29b931361d01aac8dc5a6fb0e4"><td class="memItemLeft" align="right" valign="top"><a id="a08eaef29b931361d01aac8dc5a6fb0e4"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>AddUpdateFunctionToSchedule</b> (const <a class="el" href="../../de/d27/classxii_abstract_function_property.htm">xiiAbstractFunctionProperty</a> *pFunction, void *pInstance, <a class="el" href="../../d7/dc1/structxii_time.htm">xiiTime</a> updateInterval, bool bOnlyWhenSimulating)</td></tr>
 <tr class="separator:a08eaef29b931361d01aac8dc5a6fb0e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -175,18 +179,6 @@ template&lt;typename T &gt; </td></tr>
 <tr class="memdesc:ac0a423d0f813feb28b200d9a9756eab8 inherit pub_methods_classxii_reflected_class"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether the type of this instance is of the given type or derived from it. <br /></td></tr>
 <tr class="separator:ac0a423d0f813feb28b200d9a9756eab8 inherit pub_methods_classxii_reflected_class"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="member-group"></a>
-Script Reload Functions</h2></td></tr>
-<tr class="memitem:a7d1a2c80b3e08b465361ae8e41fd13da"><td class="memItemLeft" align="right" valign="top"><a id="a7d1a2c80b3e08b465361ae8e41fd13da"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>ReloadFunction</b> = <a class="el" href="../../dc/d84/structxii_delegate.htm">xiiDelegate</a>&lt; void()&gt;</td></tr>
-<tr class="separator:a7d1a2c80b3e08b465361ae8e41fd13da"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af420f5176e7117e664dfbe24e3e61be7"><td class="memItemLeft" align="right" valign="top"><a id="af420f5176e7117e664dfbe24e3e61be7"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>AddScriptReloadFunction</b> (<a class="el" href="../../d6/d16/classxii_typed_resource_handle.htm">xiiScriptClassResourceHandle</a> hScript, <a class="el" href="../../dc/d84/structxii_delegate.htm">ReloadFunction</a> function)</td></tr>
-<tr class="separator:af420f5176e7117e664dfbe24e3e61be7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a792be4e2585ea24df20e0c28dedbdc05"><td class="memItemLeft" align="right" valign="top"><a id="a792be4e2585ea24df20e0c28dedbdc05"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>RemoveScriptReloadFunction</b> (<a class="el" href="../../d6/d16/classxii_typed_resource_handle.htm">xiiScriptClassResourceHandle</a> hScript, <a class="el" href="../../dc/d84/structxii_delegate.htm">ReloadFunction</a> function)</td></tr>
-<tr class="separator:a792be4e2585ea24df20e0c28dedbdc05"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pub_static_methods_classxii_no_base"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_classxii_no_base')"><img src="../../closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="../../d2/d38/classxii_no_base.htm">xiiNoBase</a></td></tr>
@@ -230,10 +222,6 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dfe/classxii_world_module.htm#a01634779f8effe43f379fc573b19aef8">OnSimulationStarted</a> ()</td></tr>
 <tr class="memdesc:a01634779f8effe43f379fc573b19aef8 inherit pro_methods_classxii_world_module"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method is called at the start of the next world update when the world is simulated. This method will be called after the initialization method. <br /></td></tr>
 <tr class="separator:a01634779f8effe43f379fc573b19aef8 inherit pro_methods_classxii_world_module"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a68614d0324143020f723cf3843534ebe inherit pro_methods_classxii_world_module"><td class="memItemLeft" align="right" valign="top"><a id="a68614d0324143020f723cf3843534ebe"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dfe/classxii_world_module.htm#a68614d0324143020f723cf3843534ebe">WorldClear</a> ()</td></tr>
-<tr class="memdesc:a68614d0324143020f723cf3843534ebe inherit pro_methods_classxii_world_module"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called by <a class="el" href="../../d6/d89/classxii_world.htm#a3b7b2ff09bf7bed357a09a75ec486f8b" title="Deletes all game objects in a world.">xiiWorld::Clear()</a>. Can be used to clear cached data when a world is completely cleared of objects (but not deleted). <br /></td></tr>
-<tr class="separator:a68614d0324143020f723cf3843534ebe inherit pro_methods_classxii_world_module"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_classxii_world_module"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classxii_world_module')"><img src="../../closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="../../d9/dfe/classxii_world_module.htm">xiiWorldModule</a></td></tr>
 <tr class="memitem:ad5ff01d82d6adebe16c27dc651480de1 inherit pro_attribs_classxii_world_module"><td class="memItemLeft" align="right" valign="top"><a id="ad5ff01d82d6adebe16c27dc651480de1"></a>
 <a class="el" href="../../d6/d89/classxii_world.htm">xiiWorld</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_pWorld</b></td></tr>
@@ -249,7 +237,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d1/d88/classxii_script_world_module.htm">xiiScriptWorldModule</a></li>
-    <li class="footer">Generated on Fri Nov 17 2023 03:01:33 for XIIEngine by
+    <li class="footer">Generated on Sun Nov 19 2023 19:17:30 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

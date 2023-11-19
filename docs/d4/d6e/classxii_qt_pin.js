@@ -20,6 +20,7 @@ var classxii_qt_pin =
     [ "type", "d4/d6e/classxii_qt_pin.htm#a0b82fb9f3147b12caaa3cb04aae721f4", null ],
     [ "UpdateConnections", "d4/d6e/classxii_qt_pin.htm#af6010353a7d9736f28da7597f972bfc7", null ],
     [ "UpdatePinColors", "d4/d6e/classxii_qt_pin.htm#a609642b2314d5b57efa2139a5d01e500", null ],
+    [ "m_bTranslatePinName", "d4/d6e/classxii_qt_pin.htm#a2f7cfb1cbdd6ef4402a09b51c76f044e", null ],
     [ "m_HighlightState", "d4/d6e/classxii_qt_pin.htm#a852363445678aebd017b08c141583494", null ],
     [ "m_PinCenter", "d4/d6e/classxii_qt_pin.htm#a63d224676a58f496000d4d9b235fbc37", null ],
     [ "m_pLabel", "d4/d6e/classxii_qt_pin.htm#ab5c82f0bc3a9c0ad7deb072eecc0140e", null ]

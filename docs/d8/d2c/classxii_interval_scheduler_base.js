@@ -6,7 +6,6 @@ var classxii_interval_scheduler_base =
     [ "GetHistogramSlotValue", "d8/d2c/classxii_interval_scheduler_base.htm#a88e21a710b8a5330c7cefb2cccc35a39", null ],
     [ "m_CurrentTime", "d8/d2c/classxii_interval_scheduler_base.htm#ae2f9f479093ccfabc26d9c79bb67b443", null ],
     [ "m_fInvIntervalRange", "d8/d2c/classxii_interval_scheduler_base.htm#a6d353b8297e08698de2baac321dd3da2", null ],
-    [ "m_fNumWorkToSchedule", "d8/d2c/classxii_interval_scheduler_base.htm#af87705a0247f54702722aada4b5155b8", null ],
     [ "m_Histogram", "d8/d2c/classxii_interval_scheduler_base.htm#a872e16d59dd22adcd5abced174339d96", null ],
     [ "m_HistogramSlotValues", "d8/d2c/classxii_interval_scheduler_base.htm#a85f84972471253c873e08763190ab190", null ],
     [ "m_MaxInterval", "d8/d2c/classxii_interval_scheduler_base.htm#a6240123c9e67b361e814d6c673d62b6a", null ],

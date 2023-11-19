@@ -12,6 +12,9 @@ var structxii_token_type =
       [ "String2", "d7/de7/structxii_token_type.htm#afab41d2a9ab700f2bde9fafefdfaf846abc2765dc8daf7ed2272ecd99a3689dd3", null ],
       [ "Integer", "d7/de7/structxii_token_type.htm#afab41d2a9ab700f2bde9fafefdfaf846a037da4001c282f063329de079397daa2", null ],
       [ "Float", "d7/de7/structxii_token_type.htm#afab41d2a9ab700f2bde9fafefdfaf846a07e76daced5ad70a6c47f0461adea55e", null ],
+      [ "RawString1", "d7/de7/structxii_token_type.htm#afab41d2a9ab700f2bde9fafefdfaf846a82390b50fa414c1cf391f7bc389ad8d8", null ],
+      [ "RawString1Prefix", "d7/de7/structxii_token_type.htm#afab41d2a9ab700f2bde9fafefdfaf846a081f292695d6750ec4f29e7ec7a7524f", null ],
+      [ "RawString1Postfix", "d7/de7/structxii_token_type.htm#afab41d2a9ab700f2bde9fafefdfaf846ab0d4d6556f4c3c620d0cd229ad925318", null ],
       [ "EndOfFile", "d7/de7/structxii_token_type.htm#afab41d2a9ab700f2bde9fafefdfaf846a965f6512123500ffaeb677b4f1a4a5e7", null ],
       [ "ENUM_COUNT", "d7/de7/structxii_token_type.htm#afab41d2a9ab700f2bde9fafefdfaf846a5cb61084a960e84ed98c3ff060383fae", null ]
     ] ]

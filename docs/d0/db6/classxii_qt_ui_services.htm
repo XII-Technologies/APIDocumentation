@@ -177,10 +177,9 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 static <a class="el" href="../../d0/d54/structxii_status.htm">xiiStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/db6/classxii_qt_ui_services.htm#a095704916ad3dd6db5641da24467beef">OpenInVsCode</a> (const QStringList &amp;arguments)</td></tr>
 <tr class="memdesc:a095704916ad3dd6db5641da24467beef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attempts to launch Visual Studio Code with the given command line. <br /></td></tr>
 <tr class="separator:a095704916ad3dd6db5641da24467beef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a92d4a73ea6c8f5d9b252daec50f8f432"><td class="memItemLeft" align="right" valign="top"><a id="a92d4a73ea6c8f5d9b252daec50f8f432"></a>
-static const QIcon &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/db6/classxii_qt_ui_services.htm#a92d4a73ea6c8f5d9b252daec50f8f432">GetCachedIconResource</a> (<a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sIdentifier)</td></tr>
-<tr class="memdesc:a92d4a73ea6c8f5d9b252daec50f8f432"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a cached QIcon that was created from an internal Qt resource (e.g. 'QIcon(":QtNamespace/MyIcon.png")' ). Prevents creating the object over and over. <br /></td></tr>
-<tr class="separator:a92d4a73ea6c8f5d9b252daec50f8f432"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a5949ff77fa564f636ce000a95fa5a1"><td class="memItemLeft" align="right" valign="top">static const QIcon &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/db6/classxii_qt_ui_services.htm#a4a5949ff77fa564f636ce000a95fa5a1">GetCachedIconResource</a> (<a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sIdentifier, <a class="el" href="../../d3/de6/classxii_color.htm">xiiColor</a> svgTintColor=<a class="el" href="../../d3/de6/classxii_color.htm#aa41c07071a3b733a25bf79eb434c6f1d">xiiColor::ZeroColor</a>())</td></tr>
+<tr class="memdesc:a4a5949ff77fa564f636ce000a95fa5a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a cached QIcon that was created from an internal Qt resource (e.g. 'QIcon(":QtNamespace/MyIcon.png")' ). Prevents creating the object over and over.  <a href="../../d0/db6/classxii_qt_ui_services.htm#a4a5949ff77fa564f636ce000a95fa5a1">More...</a><br /></td></tr>
+<tr class="separator:a4a5949ff77fa564f636ce000a95fa5a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a56495db8f8fdc8720e8362778becdadd"><td class="memItemLeft" align="right" valign="top"><a id="a56495db8f8fdc8720e8362778becdadd"></a>
 static const QImage &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/db6/classxii_qt_ui_services.htm#a56495db8f8fdc8720e8362778becdadd">GetCachedImageResource</a> (<a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sIdentifier)</td></tr>
 <tr class="memdesc:a56495db8f8fdc8720e8362778becdadd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a cached QImage that was created from an internal Qt resource (e.g. 'QImage(":QtNamespace/MyIcon.png")' ). Prevents creating the object over and over. <br /></td></tr>
@@ -246,6 +245,45 @@ static <a class="el" href="../../dc/d22/classxii_event.htm">xiiEvent</a>&lt; con
 
 </div>
 </div>
+<a id="a4a5949ff77fa564f636ce000a95fa5a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a5949ff77fa564f636ce000a95fa5a1">&#9670;&nbsp;</a></span>GetCachedIconResource()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const QIcon &amp; xiiQtUiServices::GetCachedIconResource </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a>&#160;</td>
+          <td class="paramname"><em>sIdentifier</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d3/de6/classxii_color.htm">xiiColor</a>&#160;</td>
+          <td class="paramname"><em>svgTintColor</em> = <code><a class="el" href="../../d3/de6/classxii_color.htm#aa41c07071a3b733a25bf79eb434c6f1d">xiiColor::ZeroColor</a>()</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns a cached QIcon that was created from an internal Qt resource (e.g. 'QIcon(":QtNamespace/MyIcon.png")' ). Prevents creating the object over and over. </p>
+<p>If svgTintColor is a non-zero color, and sIdentifier points to an .SVG file, then the first time the icon is requested with that color, a copy is made, and the SVG content is modified such that white ("#FFFFFF") gets replaced by the requested color. Thus multiple tints of the same icon can be created for different use cases. Usually this is used to get different shades of the same icon, such that it looks good on the target background. </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>/home/runner/work/XII/XII/Source/Tools/Libs/GuiFoundation/UIServices/<a class="el" href="../../d8/df0/_u_i_services_8moc_8h_source.htm">UIServices.moc.h</a></li>
 <li>/home/runner/work/XII/XII/Source/Tools/Libs/GuiFoundation/UIServices/Implementation/ColorDialog.cpp</li>
@@ -258,7 +296,7 @@ static <a class="el" href="../../dc/d22/classxii_event.htm">xiiEvent</a>&lt; con
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d0/db6/classxii_qt_ui_services.htm">xiiQtUiServices</a></li>
-    <li class="footer">Generated on Fri Nov 17 2023 03:01:33 for XIIEngine by
+    <li class="footer">Generated on Sun Nov 19 2023 19:17:30 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

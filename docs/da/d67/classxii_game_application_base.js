@@ -53,6 +53,7 @@ var classxii_game_application_base =
     [ "Run_ProcessApplicationInput", "da/d67/classxii_game_application_base.htm#a790084f097c41b6ff150d0d6392778e6", null ],
     [ "Run_UpdatePlugins", "da/d67/classxii_game_application_base.htm#ad80631b6db857f26a82f6882d6e92066", null ],
     [ "Run_WorldUpdateAndRender", "da/d67/classxii_game_application_base.htm#a52712789b119f550b0db1041b921746d", null ],
+    [ "RunOneFrame", "da/d67/classxii_game_application_base.htm#a8215941aa419700c09501196aeb72f15", null ],
     [ "SetContinuousFrameCapture", "da/d67/classxii_game_application_base.htm#a93504cd63157c2b0852ece8c35172dd1", null ],
     [ "StoreScreenshot", "da/d67/classxii_game_application_base.htm#a15b88b773f0e4fd48905278dab22f76a", null ],
     [ "TakeProfilingCapture", "da/d67/classxii_game_application_base.htm#af5be99caab4ed39b6a9d7bc3060e3706", null ],

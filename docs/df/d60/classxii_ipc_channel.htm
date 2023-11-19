@@ -85,6 +85,7 @@ $(document).ready(function(){initNavTree('df/d60/classxii_ipc_channel.htm','../.
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
@@ -105,8 +106,16 @@ $(document).ready(function(){initNavTree('df/d60/classxii_ipc_channel.htm','../.
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d48/structxii_ipc_channel_1_1_connection_state.htm">ConnectionState</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d57/structxii_ipc_channel_1_1_mode.htm">Mode</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a5f2b8afdec24bb2c6a76cfdf9b71a3ce"><td class="memItemLeft" align="right" valign="top"><a id="a5f2b8afdec24bb2c6a76cfdf9b71a3ce"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>ReceiveCallback</b> = <a class="el" href="../../dc/d84/structxii_delegate.htm">xiiDelegate</a>&lt; void(<a class="el" href="../../d0/d60/classxii_array_ptr.htm">xiiArrayPtr</a>&lt; const xiiUInt8 &gt; message)&gt;</td></tr>
+<tr class="separator:a5f2b8afdec24bb2c6a76cfdf9b71a3ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -122,18 +131,17 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../.
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d60/classxii_ipc_channel.htm#adf156a7b0a843e0c8e9d1fff97a61d22">IsConnected</a> () const</td></tr>
 <tr class="memdesc:adf156a7b0a843e0c8e9d1fff97a61d22"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether we have a connection. <br /></td></tr>
 <tr class="separator:adf156a7b0a843e0c8e9d1fff97a61d22"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abb799c1365af67d312bc2fd25690004b"><td class="memItemLeft" align="right" valign="top"><a id="abb799c1365af67d312bc2fd25690004b"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d60/classxii_ipc_channel.htm#abb799c1365af67d312bc2fd25690004b">Send</a> (<a class="el" href="../../d4/d06/classxii_process_message.htm">xiiProcessMessage</a> *pMsg)</td></tr>
-<tr class="memdesc:abb799c1365af67d312bc2fd25690004b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends a message. pMsg can be destroyed after the call. <br /></td></tr>
-<tr class="separator:abb799c1365af67d312bc2fd25690004b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3078bc3fc444edeaee393a68588ec55c"><td class="memItemLeft" align="right" valign="top"><a id="a3078bc3fc444edeaee393a68588ec55c"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d60/classxii_ipc_channel.htm#a3078bc3fc444edeaee393a68588ec55c">ProcessMessages</a> ()</td></tr>
-<tr class="memdesc:a3078bc3fc444edeaee393a68588ec55c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Processes all pending messages by broadcasting m_MessageEvent. Not re-entrant. <br /></td></tr>
-<tr class="separator:a3078bc3fc444edeaee393a68588ec55c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa66a1dd1b55423bb6d6bfa33b1b4a9c5"><td class="memItemLeft" align="right" valign="top"><a id="aa66a1dd1b55423bb6d6bfa33b1b4a9c5"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d60/classxii_ipc_channel.htm#aa66a1dd1b55423bb6d6bfa33b1b4a9c5">WaitForMessages</a> ()</td></tr>
-<tr class="memdesc:aa66a1dd1b55423bb6d6bfa33b1b4a9c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Block and wait for new messages and call ProcessMessages. <br /></td></tr>
-<tr class="separator:aa66a1dd1b55423bb6d6bfa33b1b4a9c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7561151a0108f2c71883ce1af496d12"><td class="memItemLeft" align="right" valign="top"><a id="aa7561151a0108f2c71883ce1af496d12"></a>
+<a class="el" href="../../de/dfd/structxii_enum.htm">xiiEnum</a>&lt; <a class="el" href="../../d6/d48/structxii_ipc_channel_1_1_connection_state.htm">ConnectionState</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d60/classxii_ipc_channel.htm#aa7561151a0108f2c71883ce1af496d12">GetConnectionState</a> () const</td></tr>
+<tr class="memdesc:aa7561151a0108f2c71883ce1af496d12"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current state of the connection. <br /></td></tr>
+<tr class="separator:aa7561151a0108f2c71883ce1af496d12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5870df18aab875da68f82a22f6505ecf"><td class="memItemLeft" align="right" valign="top"><a id="a5870df18aab875da68f82a22f6505ecf"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d60/classxii_ipc_channel.htm#a5870df18aab875da68f82a22f6505ecf">Send</a> (<a class="el" href="../../d0/d60/classxii_array_ptr.htm">xiiArrayPtr</a>&lt; const xiiUInt8 &gt; data)</td></tr>
+<tr class="memdesc:a5870df18aab875da68f82a22f6505ecf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends a message. pMsg can be destroyed after the call. <br /></td></tr>
+<tr class="separator:a5870df18aab875da68f82a22f6505ecf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e49ac406894de61a1ab119a711fe44e"><td class="memItemLeft" align="right" valign="top"><a id="a7e49ac406894de61a1ab119a711fe44e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetReceiveCallback</b> (<a class="el" href="../../dc/d84/structxii_delegate.htm">ReceiveCallback</a> callback)</td></tr>
+<tr class="separator:a7e49ac406894de61a1ab119a711fe44e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a502ad93e3ef73897c7f59825ccd66890"><td class="memItemLeft" align="right" valign="top"><a id="a502ad93e3ef73897c7f59825ccd66890"></a>
 <a class="el" href="../../dd/dad/structxii_result.htm">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d60/classxii_ipc_channel.htm#a502ad93e3ef73897c7f59825ccd66890">WaitForMessages</a> (<a class="el" href="../../d7/dc1/structxii_time.htm">xiiTime</a> timeout)</td></tr>
 <tr class="memdesc:a502ad93e3ef73897c7f59825ccd66890"><td class="mdescLeft">&#160;</td><td class="mdescRight">Block and wait for new messages and call ProcessMessages. <br /></td></tr>
@@ -141,12 +149,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../.
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:ab346eed88da2b3dfd496c674f36dd987"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../df/d60/classxii_ipc_channel.htm">xiiIpcChannel</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d60/classxii_ipc_channel.htm#ab346eed88da2b3dfd496c674f36dd987">CreatePipeChannel</a> (<a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sAddress, Mode::Enum mode)</td></tr>
-<tr class="memdesc:ab346eed88da2b3dfd496c674f36dd987"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an IPC communication channel using pipes.  <a href="../../df/d60/classxii_ipc_channel.htm#ab346eed88da2b3dfd496c674f36dd987">More...</a><br /></td></tr>
-<tr class="separator:ab346eed88da2b3dfd496c674f36dd987"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7f939bdc0064c1ad716ef967ba7fd64c"><td class="memItemLeft" align="right" valign="top"><a id="a7f939bdc0064c1ad716ef967ba7fd64c"></a>
-static <a class="el" href="../../df/d60/classxii_ipc_channel.htm">xiiIpcChannel</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>CreateNetworkChannel</b> (<a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sAddress, Mode::Enum mode)</td></tr>
-<tr class="separator:a7f939bdc0064c1ad716ef967ba7fd64c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1eee678f9e53fc272728df7a93d140d"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../de/d3c/structxii_internal_1_1_new_instance.htm">xiiInternal::NewInstance</a>&lt; <a class="el" href="../../df/d60/classxii_ipc_channel.htm">xiiIpcChannel</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d60/classxii_ipc_channel.htm#ab1eee678f9e53fc272728df7a93d140d">CreatePipeChannel</a> (<a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sAddress, Mode::Enum mode)</td></tr>
+<tr class="memdesc:ab1eee678f9e53fc272728df7a93d140d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an IPC communication channel using pipes.  <a href="../../df/d60/classxii_ipc_channel.htm#ab1eee678f9e53fc272728df7a93d140d">More...</a><br /></td></tr>
+<tr class="separator:ab1eee678f9e53fc272728df7a93d140d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5fa3b87d0827992bb017b4710e07daa7"><td class="memItemLeft" align="right" valign="top"><a id="a5fa3b87d0827992bb017b4710e07daa7"></a>
+static <a class="el" href="../../de/d3c/structxii_internal_1_1_new_instance.htm">xiiInternal::NewInstance</a>&lt; <a class="el" href="../../df/d60/classxii_ipc_channel.htm">xiiIpcChannel</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>CreateNetworkChannel</b> (<a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sAddress, Mode::Enum mode)</td></tr>
+<tr class="separator:a5fa3b87d0827992bb017b4710e07daa7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -154,10 +162,6 @@ Public Attributes</h2></td></tr>
 <a class="el" href="../../dc/d22/classxii_event.htm">xiiEvent</a>&lt; const <a class="el" href="../../d4/db2/structxii_ipc_channel_event.htm">xiiIpcChannelEvent</a> &amp;, <a class="el" href="../../dd/d52/classxii_mutex.htm">xiiMutex</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d60/classxii_ipc_channel.htm#a8f6f2e3a9adaa6da4447fafc15b1e705">m_Events</a></td></tr>
 <tr class="memdesc:a8f6f2e3a9adaa6da4447fafc15b1e705"><td class="mdescLeft">&#160;</td><td class="mdescRight">Will be sent from any thread. <br /></td></tr>
 <tr class="separator:a8f6f2e3a9adaa6da4447fafc15b1e705"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6c3ff6895d68e0415f683866a21d3dad"><td class="memItemLeft" align="right" valign="top"><a id="a6c3ff6895d68e0415f683866a21d3dad"></a>
-<a class="el" href="../../dc/d22/classxii_event.htm">xiiEvent</a>&lt; const <a class="el" href="../../d4/d06/classxii_process_message.htm">xiiProcessMessage</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d60/classxii_ipc_channel.htm#a6c3ff6895d68e0415f683866a21d3dad">m_MessageEvent</a></td></tr>
-<tr class="memdesc:a6c3ff6895d68e0415f683866a21d3dad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Will be sent from thread calling ProcessMessages or WaitForMessages. <br /></td></tr>
-<tr class="separator:a6c3ff6895d68e0415f683866a21d3dad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-types"></a>
 Protected Types</h2></td></tr>
@@ -172,10 +176,6 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:abe59b4c682f0ced6828b4e39db19b9cc"><td class="memItemLeft" align="right" valign="top"><a id="abe59b4c682f0ced6828b4e39db19b9cc"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>xiiIpcChannel</b> (<a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sAddress, Mode::Enum mode)</td></tr>
 <tr class="separator:abe59b4c682f0ced6828b4e39db19b9cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a77affc4612e9375b54e37a72574ebc49"><td class="memItemLeft" align="right" valign="top"><a id="a77affc4612e9375b54e37a72574ebc49"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d60/classxii_ipc_channel.htm#a77affc4612e9375b54e37a72574ebc49">AddToMessageLoop</a> (<a class="el" href="../../d7/db4/classxii_message_loop.htm">xiiMessageLoop</a> *pMsgLoop)</td></tr>
-<tr class="memdesc:a77affc4612e9375b54e37a72574ebc49"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called by AddChannel to do platform specific registration. <br /></td></tr>
-<tr class="separator:a77affc4612e9375b54e37a72574ebc49"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3535b290599eca0601afd9e95ca449df"><td class="memItemLeft" align="right" valign="top"><a id="a3535b290599eca0601afd9e95ca449df"></a>
 virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d60/classxii_ipc_channel.htm#a3535b290599eca0601afd9e95ca449df">RequiresRegularTick</a> ()</td></tr>
 <tr class="memdesc:a3535b290599eca0601afd9e95ca449df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Override this and return true, if the surrounding infrastructure should call the '<a class="el" href="../../df/d60/classxii_ipc_channel.htm#a1b81da4c5a9fd5bb794fc7227f7d6d96" title="Can implement regular updates, e.g. for polling network state.">Tick()</a>' function. <br /></td></tr>
@@ -200,10 +200,13 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d60/classxii_ipc_channel.htm#a4da1173b6b095f43cb6795c8f51cbeb3">NeedWakeup</a> () const =0</td></tr>
 <tr class="memdesc:a4da1173b6b095f43cb6795c8f51cbeb3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called by Send to determine whether the message loop need to be woken up. <br /></td></tr>
 <tr class="separator:a4da1173b6b095f43cb6795c8f51cbeb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7f4accf1f01e8fb64cd15ad3dcffbf8e"><td class="memItemLeft" align="right" valign="top"><a id="a7f4accf1f01e8fb64cd15ad3dcffbf8e"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d60/classxii_ipc_channel.htm#a7f4accf1f01e8fb64cd15ad3dcffbf8e">ReceiveMessageData</a> (<a class="el" href="../../d0/d60/classxii_array_ptr.htm">xiiArrayPtr</a>&lt; const xiiUInt8 &gt; data)</td></tr>
-<tr class="memdesc:a7f4accf1f01e8fb64cd15ad3dcffbf8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implementation needs to call this when new data has been received. data can be invalidated after the function. <br /></td></tr>
-<tr class="separator:a7f4accf1f01e8fb64cd15ad3dcffbf8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16660b3a4dd48c15a3d3fa7a9f8abcc0"><td class="memItemLeft" align="right" valign="top"><a id="a16660b3a4dd48c15a3d3fa7a9f8abcc0"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetConnectionState</b> (<a class="el" href="../../de/dfd/structxii_enum.htm">xiiEnum</a>&lt; <a class="el" href="../../d6/d48/structxii_ipc_channel_1_1_connection_state.htm">ConnectionState</a> &gt; state)</td></tr>
+<tr class="separator:a16660b3a4dd48c15a3d3fa7a9f8abcc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e58d40283a1df1bd72612421139d52c"><td class="memItemLeft" align="right" valign="top"><a id="a9e58d40283a1df1bd72612421139d52c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d60/classxii_ipc_channel.htm#a9e58d40283a1df1bd72612421139d52c">ReceiveData</a> (<a class="el" href="../../d0/d60/classxii_array_ptr.htm">xiiArrayPtr</a>&lt; const xiiUInt8 &gt; data)</td></tr>
+<tr class="memdesc:a9e58d40283a1df1bd72612421139d52c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implementation needs to call this when new data has been received. data can be invalidated after the function. <br /></td></tr>
+<tr class="separator:a9e58d40283a1df1bd72612421139d52c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5e9c4e9d472fc988eb41b137253bae11"><td class="memItemLeft" align="right" valign="top"><a id="a5e9c4e9d472fc988eb41b137253bae11"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>FlushPendingOperations</b> ()</td></tr>
 <tr class="separator:a5e9c4e9d472fc988eb41b137253bae11"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -213,12 +216,15 @@ Protected Attributes</h2></td></tr>
 <tr class="memitem:a2380820c51259c2eb11e1bf056033089"><td class="memItemLeft" align="right" valign="top"><a id="a2380820c51259c2eb11e1bf056033089"></a>
 xiiThreadID&#160;</td><td class="memItemRight" valign="bottom"><b>m_ThreadId</b> = 0</td></tr>
 <tr class="separator:a2380820c51259c2eb11e1bf056033089"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a282a99461c2e9a80445487366a26e757"><td class="memItemLeft" align="right" valign="top"><a id="a282a99461c2e9a80445487366a26e757"></a>
-<a class="el" href="../../da/d93/classxii_atomic_bool.htm">xiiAtomicBool</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_bConnected</b> = false</td></tr>
-<tr class="separator:a282a99461c2e9a80445487366a26e757"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a29086844613f177e45f5144fea7a645a"><td class="memItemLeft" align="right" valign="top"><a id="a29086844613f177e45f5144fea7a645a"></a>
-const Mode::Enum&#160;</td><td class="memItemRight" valign="bottom"><b>m_Mode</b></td></tr>
-<tr class="separator:a29086844613f177e45f5144fea7a645a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a895079ad2be99d2bc6878933f5ca97f3"><td class="memItemLeft" align="right" valign="top"><a id="a895079ad2be99d2bc6878933f5ca97f3"></a>
+<a class="el" href="../../db/d8e/classxii_atomic_integer.htm">xiiAtomicInteger</a>&lt; <a class="el" href="../../d6/d48/structxii_ipc_channel_1_1_connection_state.htm#ace252b8120294b695b8d5fb0bb1d6181">ConnectionState::Enum</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_iConnectionState</b> = ConnectionState::Disconnected</td></tr>
+<tr class="separator:a895079ad2be99d2bc6878933f5ca97f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f53317b0b62d41b97d9b7c2e2a1d831"><td class="memItemLeft" align="right" valign="top"><a id="a3f53317b0b62d41b97d9b7c2e2a1d831"></a>
+<a class="el" href="../../df/dfb/structxii_hybrid_string.htm">xiiString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_sAddress</b></td></tr>
+<tr class="separator:a3f53317b0b62d41b97d9b7c2e2a1d831"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1632393e8fb38ae2e2c225e3e125b90d"><td class="memItemLeft" align="right" valign="top"><a id="a1632393e8fb38ae2e2c225e3e125b90d"></a>
+const <a class="el" href="../../de/dfd/structxii_enum.htm">xiiEnum</a>&lt; <a class="el" href="../../d0/d57/structxii_ipc_channel_1_1_mode.htm">Mode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_Mode</b></td></tr>
+<tr class="separator:a1632393e8fb38ae2e2c225e3e125b90d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab8c1e9896362f26500cfa1fd962bec0f"><td class="memItemLeft" align="right" valign="top"><a id="ab8c1e9896362f26500cfa1fd962bec0f"></a>
 <a class="el" href="../../d7/db4/classxii_message_loop.htm">xiiMessageLoop</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_pOwner</b> = nullptr</td></tr>
 <tr class="separator:ab8c1e9896362f26500cfa1fd962bec0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -232,12 +238,12 @@ const Mode::Enum&#160;</td><td class="memItemRight" valign="bottom"><b>m_Mode</b
 <a class="el" href="../../dc/da4/classxii_dynamic_array.htm">xiiDynamicArray</a>&lt; xiiUInt8 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d60/classxii_ipc_channel.htm#a1e4395c4b0d8ee13b01671326992d3bf">m_MessageAccumulator</a></td></tr>
 <tr class="memdesc:a1e4395c4b0d8ee13b01671326992d3bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Message is assembled in here. <br /></td></tr>
 <tr class="separator:a1e4395c4b0d8ee13b01671326992d3bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa47b984baa478c8d67d88003bd02daf6"><td class="memItemLeft" align="right" valign="top"><a id="aa47b984baa478c8d67d88003bd02daf6"></a>
-<a class="el" href="../../dd/d52/classxii_mutex.htm">xiiMutex</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_IncomingQueueMutex</b></td></tr>
-<tr class="separator:aa47b984baa478c8d67d88003bd02daf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adb1ec4b704dd76976e957a8cf8c48ca6"><td class="memItemLeft" align="right" valign="top"><a id="adb1ec4b704dd76976e957a8cf8c48ca6"></a>
-<a class="el" href="../../d8/df8/classxii_deque.htm">xiiDeque</a>&lt; <a class="el" href="../../d9/d4a/classxii_unique_ptr.htm">xiiUniquePtr</a>&lt; <a class="el" href="../../d4/d06/classxii_process_message.htm">xiiProcessMessage</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_IncomingQueue</b></td></tr>
-<tr class="separator:adb1ec4b704dd76976e957a8cf8c48ca6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68f7c1420240f02903ac9d2c0c98c37d"><td class="memItemLeft" align="right" valign="top"><a id="a68f7c1420240f02903ac9d2c0c98c37d"></a>
+<a class="el" href="../../dd/d52/classxii_mutex.htm">xiiMutex</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_ReceiveCallbackMutex</b></td></tr>
+<tr class="separator:a68f7c1420240f02903ac9d2c0c98c37d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68199024b52b8edd3b1537d36e72c177"><td class="memItemLeft" align="right" valign="top"><a id="a68199024b52b8edd3b1537d36e72c177"></a>
+<a class="el" href="../../dc/d84/structxii_delegate.htm">ReceiveCallback</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_ReceiveCallback</b></td></tr>
+<tr class="separator:a68199024b52b8edd3b1537d36e72c177"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a401d636ed0adce16b6dc18116ad20baa"><td class="memItemLeft" align="right" valign="top"><a id="a401d636ed0adce16b6dc18116ad20baa"></a>
 <a class="el" href="../../d7/d4b/classxii_thread_signal.htm">xiiThreadSignal</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_IncomingMessages</b></td></tr>
 <tr class="separator:a401d636ed0adce16b6dc18116ad20baa"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -250,7 +256,8 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>xiiMessageLoop</b></
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Base class for a communication channel between processes. </p>
-<p>Use <a class="el" href="../../df/d60/classxii_ipc_channel.htm" title="Base class for a communication channel between processes.">xiiIpcChannel</a>:::CreatePipeChannel to create an IPC pipe instance. </p>
+<p>The channel allows for byte blobs to be send back and forth between two processes. A client should only try to connect to a server once the server has changed to <a class="el" href="../../d6/d48/structxii_ipc_channel_1_1_connection_state.htm#ace252b8120294b695b8d5fb0bb1d6181a7441d8340735492c6097ce9666599671" title="In case of the server, this state indicates that the server is ready to be connected to.">ConnectionState::Connecting</a> as this indicates the server is ready to be conneccted to.</p>
+<p>Use <a class="el" href="../../df/d60/classxii_ipc_channel.htm" title="Base class for a communication channel between processes.">xiiIpcChannel</a>:::CreatePipeChannel to create an IPC pipe instance. To send more complex messages accross, you can create a <a class="el" href="../../dd/da6/classxii_ipc_process_message_protocol.htm" title="A protocol around xiiIpcChannel to send reflected messages instead of byte array messages between cli...">xiiIpcProcessMessageProtocol</a> on top of the channel. </p>
 </div><h2 class="groupheader">Member Enumeration Documentation</h2>
 <a id="ab3a7aca48b5c6086824e23326f7e0227"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab3a7aca48b5c6086824e23326f7e0227">&#9670;&nbsp;</a></span>Constants</h2>
@@ -283,8 +290,8 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>xiiMessageLoop</b></
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="ab346eed88da2b3dfd496c674f36dd987"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab346eed88da2b3dfd496c674f36dd987">&#9670;&nbsp;</a></span>CreatePipeChannel()</h2>
+<a id="ab1eee678f9e53fc272728df7a93d140d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab1eee678f9e53fc272728df7a93d140d">&#9670;&nbsp;</a></span>CreatePipeChannel()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -293,7 +300,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>xiiMessageLoop</b></
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../df/d60/classxii_ipc_channel.htm">xiiIpcChannel</a> * xiiIpcChannel::CreatePipeChannel </td>
+          <td class="memname"><a class="el" href="../../de/d3c/structxii_internal_1_1_new_instance.htm">xiiInternal::NewInstance</a>&lt; <a class="el" href="../../df/d60/classxii_ipc_channel.htm">xiiIpcChannel</a> &gt; xiiIpcChannel::CreatePipeChannel </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a>&#160;</td>
           <td class="paramname"><em>sAddress</em>, </td>
@@ -320,7 +327,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>xiiMessageLoop</b></
 <p>Creates an IPC communication channel using pipes. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">szAddress</td><td>Name of the pipe, must be unique on a system and less than 200 characters. </td></tr>
+    <tr><td class="paramname">sAddress</td><td>Name of the pipe, must be unique on a system and less than 200 characters. </td></tr>
     <tr><td class="paramname">mode</td><td>Whether to run in client or server mode. </td></tr>
   </table>
   </dd>
@@ -338,7 +345,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>xiiMessageLoop</b></
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../df/d60/classxii_ipc_channel.htm">xiiIpcChannel</a></li>
-    <li class="footer">Generated on Fri Nov 17 2023 03:01:32 for XIIEngine by
+    <li class="footer">Generated on Sun Nov 19 2023 19:17:29 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

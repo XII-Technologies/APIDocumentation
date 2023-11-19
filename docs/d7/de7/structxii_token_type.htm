@@ -113,9 +113,12 @@ Public Types</h2></td></tr>
 &#160;&#160;<a class="el" href="../../d7/de7/structxii_token_type.htm#afab41d2a9ab700f2bde9fafefdfaf846abc2765dc8daf7ed2272ecd99a3689dd3">String2</a>, 
 <a class="el" href="../../d7/de7/structxii_token_type.htm#afab41d2a9ab700f2bde9fafefdfaf846a037da4001c282f063329de079397daa2">Integer</a>, 
 <a class="el" href="../../d7/de7/structxii_token_type.htm#afab41d2a9ab700f2bde9fafefdfaf846a07e76daced5ad70a6c47f0461adea55e">Float</a>, 
-<a class="el" href="../../d7/de7/structxii_token_type.htm#afab41d2a9ab700f2bde9fafefdfaf846a965f6512123500ffaeb677b4f1a4a5e7">EndOfFile</a>, 
+<a class="el" href="../../d7/de7/structxii_token_type.htm#afab41d2a9ab700f2bde9fafefdfaf846a82390b50fa414c1cf391f7bc389ad8d8">RawString1</a>, 
 <br />
-&#160;&#160;<b>ENUM_COUNT</b>
+&#160;&#160;<a class="el" href="../../d7/de7/structxii_token_type.htm#afab41d2a9ab700f2bde9fafefdfaf846a081f292695d6750ec4f29e7ec7a7524f">RawString1Prefix</a>, 
+<a class="el" href="../../d7/de7/structxii_token_type.htm#afab41d2a9ab700f2bde9fafefdfaf846ab0d4d6556f4c3c620d0cd229ad925318">RawString1Postfix</a>, 
+<a class="el" href="../../d7/de7/structxii_token_type.htm#afab41d2a9ab700f2bde9fafefdfaf846a965f6512123500ffaeb677b4f1a4a5e7">EndOfFile</a>, 
+<b>ENUM_COUNT</b>
 <br />
  }</td></tr>
 <tr class="separator:afab41d2a9ab700f2bde9fafefdfaf846"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -164,6 +167,12 @@ Static Public Attributes</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="afab41d2a9ab700f2bde9fafefdfaf846a07e76daced5ad70a6c47f0461adea55e"></a>Float&#160;</td><td class="fielddoc"><p>A floating point number. </p>
 </td></tr>
+<tr><td class="fieldname"><a id="afab41d2a9ab700f2bde9fafefdfaf846a82390b50fa414c1cf391f7bc389ad8d8"></a>RawString1&#160;</td><td class="fielddoc"><p>A raw c++11 string enclosed in ". Contents do not contain the enclosing " or the start / end marker. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="afab41d2a9ab700f2bde9fafefdfaf846a081f292695d6750ec4f29e7ec7a7524f"></a>RawString1Prefix&#160;</td><td class="fielddoc"><p>The prefix part of a C++11 string. E.g: R"foo(. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="afab41d2a9ab700f2bde9fafefdfaf846ab0d4d6556f4c3c620d0cd229ad925318"></a>RawString1Postfix&#160;</td><td class="fielddoc"><p>The postfix part of a C++11 string. E.g: )foo". </p>
+</td></tr>
 <tr><td class="fieldname"><a id="afab41d2a9ab700f2bde9fafefdfaf846a965f6512123500ffaeb677b4f1a4a5e7"></a>EndOfFile&#160;</td><td class="fielddoc"><p>End-of-file marker. </p>
 </td></tr>
 </table>
@@ -202,6 +211,10 @@ Static Public Attributes</h2></td></tr>
 <div class="line">  <span class="stringliteral">&quot;String2&quot;</span>,</div>
 <div class="line">  <span class="stringliteral">&quot;Integer&quot;</span>,</div>
 <div class="line">  <span class="stringliteral">&quot;Float&quot;</span>,</div>
+<div class="line">  <span class="stringliteral">&quot;RawString1&quot;</span>,</div>
+<div class="line">  <span class="stringliteral">&quot;RawString1Prefix&quot;</span>,</div>
+<div class="line">  <span class="stringliteral">&quot;RawString1Postfix&quot;</span>,</div>
+<div class="line">  <span class="stringliteral">&quot;EndOfFile&quot;</span>,</div>
 <div class="line">}</div>
 </div><!-- fragment -->
 </div>
@@ -216,7 +229,7 @@ Static Public Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d7/de7/structxii_token_type.htm">xiiTokenType</a></li>
-    <li class="footer">Generated on Fri Nov 17 2023 03:01:34 for XIIEngine by
+    <li class="footer">Generated on Sun Nov 19 2023 19:17:31 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

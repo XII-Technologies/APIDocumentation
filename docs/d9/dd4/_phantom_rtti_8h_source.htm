@@ -104,7 +104,7 @@ $(document).ready(function(){initNavTree('d9/dd4/_phantom_rtti_8h_source.htm','.
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;  <span class="keywordtype">void</span> SetProperties(<a class="code" href="../../dc/da4/classxii_dynamic_array.htm">xiiDynamicArray&lt;xiiReflectedPropertyDescriptor&gt;</a>&amp; properties);</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;  <span class="keywordtype">void</span> SetFunctions(<a class="code" href="../../dc/da4/classxii_dynamic_array.htm">xiiDynamicArray&lt;xiiReflectedFunctionDescriptor&gt;</a>&amp; functions);</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;  <span class="keywordtype">void</span> SetAttributes(<a class="code" href="../../dc/da9/classxii_hybrid_array.htm">xiiHybridArray&lt;xiiPropertyAttribute*, 2&gt;</a>&amp; attributes);</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;  <span class="keywordtype">void</span> SetAttributes(<a class="code" href="../../dc/da4/classxii_dynamic_array.htm">xiiDynamicArray&lt;const xiiPropertyAttribute*&gt;</a>&amp; attributes);</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;  <span class="keywordtype">bool</span> IsEqualToDescriptor(<span class="keyword">const</span> <a class="code" href="../../d2/d17/structxii_reflected_type_descriptor.htm">xiiReflectedTypeDescriptor</a>&amp; desc);</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  <span class="keywordtype">void</span> UpdateType(<a class="code" href="../../d2/d17/structxii_reflected_type_descriptor.htm">xiiReflectedTypeDescriptor</a>&amp; desc);</div>
@@ -114,13 +114,12 @@ $(document).ready(function(){initNavTree('d9/dd4/_phantom_rtti_8h_source.htm','.
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  <a class="code" href="../../df/dfb/structxii_hybrid_string.htm">xiiString</a>                                     m_sPluginNameStorage;</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  <a class="code" href="../../dc/da4/classxii_dynamic_array.htm">xiiDynamicArray&lt;xiiAbstractProperty*&gt;</a>         m_PropertiesStorage;</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  <a class="code" href="../../dc/da4/classxii_dynamic_array.htm">xiiDynamicArray&lt;xiiAbstractFunctionProperty*&gt;</a> m_FunctionsStorage;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  <a class="code" href="../../dc/da4/classxii_dynamic_array.htm">xiiDynamicArray&lt;xiiPropertyAttribute*&gt;</a>        m_AttributesStorage;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  <a class="code" href="../../dc/da4/classxii_dynamic_array.htm">xiiDynamicArray&lt;const xiiPropertyAttribute*&gt;</a>  m_AttributesStorage;</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;};</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="astructxii_reflected_type_descriptor_htm"><div class="ttname"><a href="../../d2/d17/structxii_reflected_type_descriptor.htm">xiiReflectedTypeDescriptor</a></div><div class="ttdoc">Stores the description of a reflected type in a serializable form. Used by xiiPhantomRttiManager to a...</div><div class="ttdef"><b>Definition:</b> ReflectedType.h:95</div></div>
 <div class="ttc" id="astructxii_hybrid_string_htm"><div class="ttname"><a href="../../df/dfb/structxii_hybrid_string.htm">xiiHybridString&lt; 32, xiiDefaultAllocatorWrapper &gt;</a></div></div>
-<div class="ttc" id="aclassxii_hybrid_array_htm"><div class="ttname"><a href="../../dc/da9/classxii_hybrid_array.htm">xiiHybridArray&lt; xiiPropertyAttribute *, 2 &gt;</a></div></div>
 <div class="ttc" id="aclassxii_r_t_t_i_htm"><div class="ttname"><a href="../../db/d89/classxii_r_t_t_i.htm">xiiRTTI</a></div><div class="ttdoc">This class holds information about reflected types. Each instance represents one type that is known t...</div><div class="ttdef"><b>Definition:</b> RTTI.h:29</div></div>
 <div class="ttc" id="astructxii_string_view_htm"><div class="ttname"><a href="../../da/d9d/structxii_string_view.htm">xiiStringView</a></div><div class="ttdoc">xiiStringView represent a read-only sub-string of a larger string, as it can store a dedicated string...</div><div class="ttdef"><b>Definition:</b> StringView.h:23</div></div>
 <div class="ttc" id="aclassxii_phantom_r_t_t_i_htm"><div class="ttname"><a href="../../db/d2f/classxii_phantom_r_t_t_i.htm">xiiPhantomRTTI</a></div><div class="ttdef"><b>Definition:</b> PhantomRtti.h:6</div></div>
@@ -131,7 +130,7 @@ $(document).ready(function(){initNavTree('d9/dd4/_phantom_rtti_8h_source.htm','.
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.htm">home</a></li><li class="navelem"><a class="el" href="../../dir_1036706e55c22cab35bc1c58ee689f1d.htm">runner</a></li><li class="navelem"><a class="el" href="../../dir_629f8151d55d307162ff2d619fb1783d.htm">work</a></li><li class="navelem"><a class="el" href="../../dir_1ddc44fe1263a8c7935fa6130b7d9499.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_2c1b6808f12952f4c36e05ba7068379a.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_b5a1c4ecfca018ad24b729e213296d41.htm">Source</a></li><li class="navelem"><a class="el" href="../../dir_64f53f8da7bf780a58c32bb848e7873b.htm">Tools</a></li><li class="navelem"><a class="el" href="../../dir_4b5bc41f7c4cbfc8ca80bdea56300f1d.htm">Libs</a></li><li class="navelem"><a class="el" href="../../dir_ba58a103e79106e89914cc52b64849d5.htm">ToolsFoundation</a></li><li class="navelem"><a class="el" href="../../dir_e849cc103eb492684fddc1616a37401b.htm">Reflection</a></li><li class="navelem"><b>PhantomRtti.h</b></li>
-    <li class="footer">Generated on Fri Nov 17 2023 03:01:29 for XIIEngine by
+    <li class="footer">Generated on Sun Nov 19 2023 19:17:27 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

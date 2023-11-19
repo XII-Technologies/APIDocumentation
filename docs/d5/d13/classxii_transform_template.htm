@@ -203,7 +203,7 @@ Public Attributes</h2></td></tr>
 class xiiTransformTemplate&lt; Type &gt;</h3>
 
 <p>A class that represents position, rotation and scaling via a position vector, a quaternion and a scale vector. </p>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.htm#_todo000032">Todo:</a></b></dt><dd>Fix docs and unit tests </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.htm#_todo000030">Todo:</a></b></dt><dd>Fix docs and unit tests </dd></dl>
 <p>Scale is applied first, then rotation and finally translation is added. Thus scale and rotation are always in 'local space', i.e. applying a rotation to the <a class="el" href="../../d5/d13/classxii_transform_template.htm" title="A class that represents position, rotation and scaling via a position vector, a quaternion and a scal...">xiiTransformTemplate</a> will rotate objects in place around their local center. Since the translation is added afterwards, the translation component is always the global center position, around which objects rotate.</p>
 <p>The functions <a class="el" href="../../d5/d13/classxii_transform_template.htm#a69615c191cfadcb8869f114b51ed81ea" title="Sets this transform to be the local transformation needed to get from the parent&#39;s transform to the c...">SetLocalTransform()</a> and <a class="el" href="../../d5/d13/classxii_transform_template.htm#a922779422cb31f6bf0ec05ef3bd5a298" title="Sets this transform to the global transform, that is reached by applying the child&#39;s local transform ...">SetGlobalTransform()</a> allow to create transforms that either represent the full global transformation of an object, factoring its parent's transform in, or the local transformation that will get you from the parent's global transformation to the current global transformation of a child (i.e. only the difference). This is particularly useful when editing entities in a hierarchical structure.</p>
 <p>This representation cannot handle shearing, which means rotations and scalings cannot be combined correctly. Many parts of game engine cannot handle shearing or non-uniform scaling across hierarchies anyway. Therefore this class implements a simplified way of combining scalings when multiplying two xiiTransform's. Instead of rotating scale into the proper space, the two values are simply multiplied component-wise.</p>
@@ -219,7 +219,7 @@ class xiiTransformTemplate&lt; Type &gt;</h3>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d5/d13/classxii_transform_template.htm">xiiTransformTemplate</a></li>
-    <li class="footer">Generated on Fri Nov 17 2023 03:01:34 for XIIEngine by
+    <li class="footer">Generated on Sun Nov 19 2023 19:17:31 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

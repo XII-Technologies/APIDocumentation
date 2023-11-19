@@ -221,6 +221,9 @@ static <a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView
 <tr class="memitem:a4d878860c251454e27488c165a7e39c0"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../df/dfb/structxii_hybrid_string.htm">xiiString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d95/classxii_o_s_file.htm#a4d878860c251454e27488c165a7e39c0">GetTempDataFolder</a> (<a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sSubFolder={})</td></tr>
 <tr class="memdesc:a4d878860c251454e27488c165a7e39c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the folder into which temp data may be written.  <a href="../../da/d95/classxii_o_s_file.htm#a4d878860c251454e27488c165a7e39c0">More...</a><br /></td></tr>
 <tr class="separator:a4d878860c251454e27488c165a7e39c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab36596cc5e694e6f53f6d52d5475565f"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../df/dfb/structxii_hybrid_string.htm">xiiString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d95/classxii_o_s_file.htm#ab36596cc5e694e6f53f6d52d5475565f">GetUserDocumentsFolder</a> (<a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sSubFolder={})</td></tr>
+<tr class="memdesc:ab36596cc5e694e6f53f6d52d5475565f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the folder into which the user may want to store documents. Append a sub-folder for your application.  <a href="../../da/d95/classxii_o_s_file.htm#ab36596cc5e694e6f53f6d52d5475565f">More...</a><br /></td></tr>
+<tr class="separator:ab36596cc5e694e6f53f6d52d5475565f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a61bbdf483cb288f5be3f85bdd2068791"><td class="memItemLeft" align="right" valign="top"><a id="a61bbdf483cb288f5be3f85bdd2068791"></a>
 static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d95/classxii_o_s_file.htm#a61bbdf483cb288f5be3f85bdd2068791">AddEventHandler</a> (<a class="el" href="../../d0/d7f/classxii_event_base.htm#ada90d4faae8102fb84947a77720e2f70">Event::Handler</a> handler)</td></tr>
 <tr class="memdesc:a61bbdf483cb288f5be3f85bdd2068791"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allows to register a function as an event receiver. All receivers will be notified in the order that they registered. <br /></td></tr>
@@ -397,6 +400,36 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 
 </div>
 </div>
+<a id="ab36596cc5e694e6f53f6d52d5475565f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab36596cc5e694e6f53f6d52d5475565f">&#9670;&nbsp;</a></span>GetUserDocumentsFolder()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/dfb/structxii_hybrid_string.htm">xiiString</a> xiiOSFile::GetUserDocumentsFolder </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a>&#160;</td>
+          <td class="paramname"><em>sSubFolder</em> = <code>{}</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the folder into which the user may want to store documents. Append a sub-folder for your application. </p>
+<p>On Windows this is the 'Documents' directory. On Posix systems this is the '~' (home) directory.</p>
+<p>If sSubFolder is specified, it will be appended to the result. </p>
+
+</div>
+</div>
 <a id="af4abe20683c824d29780bbede888a9ef"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af4abe20683c824d29780bbede888a9ef">&#9670;&nbsp;</a></span>MakePathAbsoluteWithCWD()</h2>
 
@@ -438,7 +471,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../da/d95/classxii_o_s_file.htm">xiiOSFile</a></li>
-    <li class="footer">Generated on Fri Nov 17 2023 03:01:32 for XIIEngine by
+    <li class="footer">Generated on Sun Nov 19 2023 19:17:29 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

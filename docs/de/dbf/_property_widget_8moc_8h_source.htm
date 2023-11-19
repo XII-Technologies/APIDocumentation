@@ -363,59 +363,62 @@ $(document).ready(function(){initNavTree('de/dbf/_property_widget_8moc_8h_source
 <div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;<span class="keyword">protected</span>:</div>
 <div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> OnInit() <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> InternalSetValue(<span class="keyword">const</span> <a class="code" href="../../db/d1a/classxii_variant.htm">xiiVariant</a>&amp; value) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160; </div>
-<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;  <a class="code" href="../../d6/df7/classxii_map.htm">xiiMap&lt;xiiInt64, QCheckBox*&gt;</a> m_Constants;</div>
-<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;  QHBoxLayout*                 m_pLayout;</div>
-<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;  QPushButton*                 m_pWidget;</div>
-<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;  QMenu*                       m_pMenu;</div>
-<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;  xiiInt64                     m_iCurrentBitflags;</div>
-<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;};</div>
-<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160; </div>
-<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160; </div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;  <span class="keywordtype">void</span>         SetAllChecked(<span class="keywordtype">bool</span> bChecked);</div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160; </div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;  <a class="code" href="../../d6/df7/classxii_map.htm">xiiMap&lt;xiiInt64, QCheckBox*&gt;</a> m_Constants;</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;  QHBoxLayout*                 m_pLayout          = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;  QPushButton*                 m_pWidget          = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;  QPushButton*                 m_pAllButton       = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;  QPushButton*                 m_pClearButton     = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;  QMenu*                       m_pMenu            = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;  xiiInt64                     m_iCurrentBitflags = 0;</div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;};</div>
 <div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160; </div>
-<div class="line"><a name="l00299"></a><span class="lineno"><a class="line" href="../../d1/d30/classxii_qt_curve1_d_button_widget.htm">  299</a></span>&#160;<span class="keyword">class </span>XII_GUIFOUNDATION_DLL <a class="code" href="../../d1/d30/classxii_qt_curve1_d_button_widget.htm">xiiQtCurve1DButtonWidget</a> : <span class="keyword">public</span> QLabel</div>
-<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;{</div>
-<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;  Q_OBJECT</div>
-<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160; </div>
-<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="../../d1/d30/classxii_qt_curve1_d_button_widget.htm">xiiQtCurve1DButtonWidget</a>(QWidget* pParent);</div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160; </div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160; </div>
+<div class="line"><a name="l00302"></a><span class="lineno"><a class="line" href="../../d1/d30/classxii_qt_curve1_d_button_widget.htm">  302</a></span>&#160;<span class="keyword">class </span>XII_GUIFOUNDATION_DLL <a class="code" href="../../d1/d30/classxii_qt_curve1_d_button_widget.htm">xiiQtCurve1DButtonWidget</a> : <span class="keyword">public</span> QLabel</div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;{</div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;  Q_OBJECT</div>
 <div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160; </div>
-<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;  <span class="keywordtype">void</span> UpdatePreview(<a class="code" href="../../de/d12/classxii_object_accessor_base.htm">xiiObjectAccessorBase</a>* pObjectAccessor, <span class="keyword">const</span> <a class="code" href="../../da/dd8/classxii_document_object.htm">xiiDocumentObject</a>* pCurveObject, QColor color, <span class="keywordtype">double</span> fLowerExtents, <span class="keywordtype">bool</span> bLowerFixed, <span class="keywordtype">double</span> fUpperExtents, <span class="keywordtype">bool</span> bUpperFixed, <span class="keywordtype">double</span> fDefaultValue, <span class="keywordtype">double</span> fLowerRange, <span class="keywordtype">double</span> fUpperRange);</div>
-<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160; </div>
-<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;Q_SIGNALS:</div>
-<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;  <span class="keywordtype">void</span> clicked();</div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="../../d1/d30/classxii_qt_curve1_d_button_widget.htm">xiiQtCurve1DButtonWidget</a>(QWidget* pParent);</div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160; </div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;  <span class="keywordtype">void</span> UpdatePreview(<a class="code" href="../../de/d12/classxii_object_accessor_base.htm">xiiObjectAccessorBase</a>* pObjectAccessor, <span class="keyword">const</span> <a class="code" href="../../da/dd8/classxii_document_object.htm">xiiDocumentObject</a>* pCurveObject, QColor color, <span class="keywordtype">double</span> fLowerExtents, <span class="keywordtype">bool</span> bLowerFixed, <span class="keywordtype">double</span> fUpperExtents, <span class="keywordtype">bool</span> bUpperFixed, <span class="keywordtype">double</span> fDefaultValue, <span class="keywordtype">double</span> fLowerRange, <span class="keywordtype">double</span> fUpperRange);</div>
 <div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160; </div>
-<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> mouseReleaseEvent(QMouseEvent* event) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;};</div>
-<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160; </div>
-<div class="line"><a name="l00315"></a><span class="lineno"><a class="line" href="../../dc/d27/classxii_qt_property_editor_curve1_d_widget.htm">  315</a></span>&#160;<span class="keyword">class </span>XII_GUIFOUNDATION_DLL <a class="code" href="../../dc/d27/classxii_qt_property_editor_curve1_d_widget.htm">xiiQtPropertyEditorCurve1DWidget</a> : <span class="keyword">public</span> <a class="code" href="../../d9/d80/classxii_qt_property_widget.htm">xiiQtPropertyWidget</a></div>
-<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;{</div>
-<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;  Q_OBJECT</div>
-<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160; </div>
-<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;  <a class="code" href="../../dc/d27/classxii_qt_property_editor_curve1_d_widget.htm">xiiQtPropertyEditorCurve1DWidget</a>();</div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;Q_SIGNALS:</div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;  <span class="keywordtype">void</span> clicked();</div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160; </div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> mouseReleaseEvent(QMouseEvent* event) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;};</div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160; </div>
+<div class="line"><a name="l00318"></a><span class="lineno"><a class="line" href="../../dc/d27/classxii_qt_property_editor_curve1_d_widget.htm">  318</a></span>&#160;<span class="keyword">class </span>XII_GUIFOUNDATION_DLL <a class="code" href="../../dc/d27/classxii_qt_property_editor_curve1_d_widget.htm">xiiQtPropertyEditorCurve1DWidget</a> : <span class="keyword">public</span> <a class="code" href="../../d9/d80/classxii_qt_property_widget.htm">xiiQtPropertyWidget</a></div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;{</div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;  Q_OBJECT</div>
 <div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160; </div>
-<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;<span class="keyword">private</span> Q_SLOTS:</div>
-<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;  <span class="keywordtype">void</span> on_Button_triggered();</div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;  <a class="code" href="../../dc/d27/classxii_qt_property_editor_curve1_d_widget.htm">xiiQtPropertyEditorCurve1DWidget</a>();</div>
 <div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160; </div>
-<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="../../d9/d80/classxii_qt_property_widget.htm#a8cc5c68c374f1c198e0e69700494943c">SetSelection</a>(<span class="keyword">const</span> <a class="code" href="../../dc/da9/classxii_hybrid_array.htm">xiiHybridArray&lt;xiiPropertySelection, 8&gt;</a>&amp; items) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> OnInit() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> DoPrepareToDie() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;  <span class="keywordtype">void</span>         UpdatePreview();</div>
-<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160; </div>
-<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;  QHBoxLayout*              m_pLayout = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;  <a class="code" href="../../d1/d30/classxii_qt_curve1_d_button_widget.htm">xiiQtCurve1DButtonWidget</a>* m_pButton = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;};</div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;<span class="keyword">private</span> Q_SLOTS:</div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;  <span class="keywordtype">void</span> on_Button_triggered();</div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160; </div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="../../d9/d80/classxii_qt_property_widget.htm#a8cc5c68c374f1c198e0e69700494943c">SetSelection</a>(<span class="keyword">const</span> <a class="code" href="../../dc/da9/classxii_hybrid_array.htm">xiiHybridArray&lt;xiiPropertySelection, 8&gt;</a>&amp; items) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> OnInit() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> DoPrepareToDie() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;  <span class="keywordtype">void</span>         UpdatePreview();</div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160; </div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;  QHBoxLayout*              m_pLayout = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;  <a class="code" href="../../d1/d30/classxii_qt_curve1_d_button_widget.htm">xiiQtCurve1DButtonWidget</a>* m_pButton = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;};</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclassxii_qt_curve1_d_button_widget_htm"><div class="ttname"><a href="../../d1/d30/classxii_qt_curve1_d_button_widget.htm">xiiQtCurve1DButtonWidget</a></div><div class="ttdoc">*** CURVE1D ***</div><div class="ttdef"><b>Definition:</b> PropertyWidget.moc.h:299</div></div>
+<div class="ttc" id="aclassxii_qt_curve1_d_button_widget_htm"><div class="ttname"><a href="../../d1/d30/classxii_qt_curve1_d_button_widget.htm">xiiQtCurve1DButtonWidget</a></div><div class="ttdoc">*** CURVE1D ***</div><div class="ttdef"><b>Definition:</b> PropertyWidget.moc.h:302</div></div>
 <div class="ttc" id="astructxii_enum_htm"><div class="ttname"><a href="../../de/dfd/structxii_enum.htm">xiiEnum&lt; xiiVariantType &gt;</a></div></div>
 <div class="ttc" id="aclassxii_qt_double_spin_box_htm"><div class="ttname"><a href="../../dc/ded/classxii_qt_double_spin_box.htm">xiiQtDoubleSpinBox</a></div><div class="ttdef"><b>Definition:</b> DoubleSpinBox.moc.h:7</div></div>
-<div class="ttc" id="aclassxii_qt_property_editor_curve1_d_widget_htm"><div class="ttname"><a href="../../dc/d27/classxii_qt_property_editor_curve1_d_widget.htm">xiiQtPropertyEditorCurve1DWidget</a></div><div class="ttdef"><b>Definition:</b> PropertyWidget.moc.h:315</div></div>
+<div class="ttc" id="aclassxii_qt_property_editor_curve1_d_widget_htm"><div class="ttname"><a href="../../dc/d27/classxii_qt_property_editor_curve1_d_widget.htm">xiiQtPropertyEditorCurve1DWidget</a></div><div class="ttdef"><b>Definition:</b> PropertyWidget.moc.h:318</div></div>
 <div class="ttc" id="aclassxii_variant_htm"><div class="ttname"><a href="../../db/d1a/classxii_variant.htm">xiiVariant</a></div><div class="ttdoc">xiiVariant is a class that can store different types of variables, which is useful in situations wher...</div><div class="ttdef"><b>Definition:</b> Variant.h:47</div></div>
 <div class="ttc" id="aclassxii_map_htm"><div class="ttname"><a href="../../d6/df7/classxii_map.htm">xiiMap&lt; xiiInt64, QCheckBox * &gt;</a></div></div>
 <div class="ttc" id="aclassxii_qt_color_button_widget_htm"><div class="ttname"><a href="../../d5/d18/classxii_qt_color_button_widget.htm">xiiQtColorButtonWidget</a></div><div class="ttdoc">*** COLOR ***</div><div class="ttdef"><b>Definition:</b> PropertyWidget.moc.h:200</div></div>
@@ -440,7 +443,7 @@ $(document).ready(function(){initNavTree('de/dbf/_property_widget_8moc_8h_source
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.htm">home</a></li><li class="navelem"><a class="el" href="../../dir_1036706e55c22cab35bc1c58ee689f1d.htm">runner</a></li><li class="navelem"><a class="el" href="../../dir_629f8151d55d307162ff2d619fb1783d.htm">work</a></li><li class="navelem"><a class="el" href="../../dir_1ddc44fe1263a8c7935fa6130b7d9499.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_2c1b6808f12952f4c36e05ba7068379a.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_b5a1c4ecfca018ad24b729e213296d41.htm">Source</a></li><li class="navelem"><a class="el" href="../../dir_64f53f8da7bf780a58c32bb848e7873b.htm">Tools</a></li><li class="navelem"><a class="el" href="../../dir_4b5bc41f7c4cbfc8ca80bdea56300f1d.htm">Libs</a></li><li class="navelem"><a class="el" href="../../dir_8694d7149aa3c4cbc4b219c953b250c5.htm">GuiFoundation</a></li><li class="navelem"><a class="el" href="../../dir_0560f1072699227cfe8bccfeee282984.htm">PropertyGrid</a></li><li class="navelem"><a class="el" href="../../dir_f4ff9370c37cca894482a444dcba2643.htm">Implementation</a></li><li class="navelem"><b>PropertyWidget.moc.h</b></li>
-    <li class="footer">Generated on Fri Nov 17 2023 03:01:28 for XIIEngine by
+    <li class="footer">Generated on Sun Nov 19 2023 19:17:26 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>
