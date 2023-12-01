@@ -125,36 +125,34 @@ $(document).ready(function(){initNavTree('da/d03/_extracted_render_data_8h_sourc
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <span class="keywordtype">void</span> Clear();</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <a class="code" href="../../d7/d09/classxii_render_data_batch_list.htm">xiiRenderDataBatchList</a> GetRenderDataBatchesWithCategory(</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <a class="code" href="../../d0/d8b/structxii_render_data_1_1_category.htm">xiiRenderData::Category</a>    category,</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <a class="code" href="../../dc/d84/structxii_delegate.htm">xiiRenderDataBatch::Filter</a> filter = <a class="code" href="../../dc/d84/structxii_delegate.htm">xiiRenderDataBatch::Filter</a>()) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  XII_ALWAYS_INLINE <span class="keyword">const</span> T* GetFrameData()<span class="keyword"> const</span></div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keyword">  </span>{</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span><span class="keyword">const </span>T*<span class="keyword">&gt;</span>(GetFrameData(xiiGetStaticRTTI&lt;T&gt;()));</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  }</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <span class="keyword">const</span> <a class="code" href="../../d8/da5/classxii_render_data.htm">xiiRenderData</a>* GetFrameData(<span class="keyword">const</span> <a class="code" href="../../db/d89/classxii_r_t_t_i.htm">xiiRTTI</a>* pRtti) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <span class="keyword">struct </span>DataPerCategory</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  {</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <a class="code" href="../../dc/da4/classxii_dynamic_array.htm">xiiDynamicArray&lt;xiiRenderDataBatch&gt;</a>                     m_Batches;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <a class="code" href="../../dc/da4/classxii_dynamic_array.htm">xiiDynamicArray&lt;xiiRenderDataBatch::SortableRenderData&gt;</a> m_SortableRenderData;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  };</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <a class="code" href="../../dc/d68/classxii_camera.htm">xiiCamera</a>   m_Camera;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <a class="code" href="../../dc/d68/classxii_camera.htm">xiiCamera</a>   m_LodCamera; <span class="comment">// Temporary until we have a real LOD system</span></div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  <a class="code" href="../../da/d3c/structxii_view_data.htm">xiiViewData</a> m_ViewData;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  <a class="code" href="../../d7/dc1/structxii_time.htm">xiiTime</a>     m_WorldTime;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  <a class="code" href="../../df/dfc/classxii_debug_renderer_context.htm">xiiDebugRendererContext</a> m_WorldDebugContext;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  <a class="code" href="../../df/dfc/classxii_debug_renderer_context.htm">xiiDebugRendererContext</a> m_ViewDebugContext;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <a class="code" href="../../dc/da9/classxii_hybrid_array.htm">xiiHybridArray&lt;DataPerCategory, 16&gt;</a>      m_DataPerCategory;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <a class="code" href="../../dc/da9/classxii_hybrid_array.htm">xiiHybridArray&lt;const xiiRenderData*, 16&gt;</a> m_FrameData;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;};</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <a class="code" href="../../d7/d09/classxii_render_data_batch_list.htm">xiiRenderDataBatchList</a> GetRenderDataBatchesWithCategory(<a class="code" href="../../d0/d8b/structxii_render_data_1_1_category.htm">xiiRenderData::Category</a> category, <a class="code" href="../../dc/d84/structxii_delegate.htm">xiiRenderDataBatch::Filter</a> filter = <a class="code" href="../../dc/d84/structxii_delegate.htm">xiiRenderDataBatch::Filter</a>()) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  XII_ALWAYS_INLINE <span class="keyword">const</span> T* GetFrameData()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keyword">  </span>{</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span><span class="keyword">const </span>T*<span class="keyword">&gt;</span>(GetFrameData(xiiGetStaticRTTI&lt;T&gt;()));</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  }</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <span class="keyword">const</span> <a class="code" href="../../d8/da5/classxii_render_data.htm">xiiRenderData</a>* GetFrameData(<span class="keyword">const</span> <a class="code" href="../../db/d89/classxii_r_t_t_i.htm">xiiRTTI</a>* pRtti) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <span class="keyword">struct </span>DataPerCategory</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  {</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <a class="code" href="../../dc/da4/classxii_dynamic_array.htm">xiiDynamicArray&lt;xiiRenderDataBatch&gt;</a>                     m_Batches;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <a class="code" href="../../dc/da4/classxii_dynamic_array.htm">xiiDynamicArray&lt;xiiRenderDataBatch::SortableRenderData&gt;</a> m_SortableRenderData;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  };</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <a class="code" href="../../dc/d68/classxii_camera.htm">xiiCamera</a>   m_Camera;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  <a class="code" href="../../dc/d68/classxii_camera.htm">xiiCamera</a>   m_LodCamera; <span class="comment">// Temporary until we have a real LOD system</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <a class="code" href="../../da/d3c/structxii_view_data.htm">xiiViewData</a> m_ViewData;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <a class="code" href="../../d7/dc1/structxii_time.htm">xiiTime</a>     m_WorldTime;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  <a class="code" href="../../df/dfc/classxii_debug_renderer_context.htm">xiiDebugRendererContext</a> m_WorldDebugContext;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  <a class="code" href="../../df/dfc/classxii_debug_renderer_context.htm">xiiDebugRendererContext</a> m_ViewDebugContext;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  <a class="code" href="../../dc/da9/classxii_hybrid_array.htm">xiiHybridArray&lt;DataPerCategory, 16&gt;</a>      m_DataPerCategory;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  <a class="code" href="../../dc/da9/classxii_hybrid_array.htm">xiiHybridArray&lt;const xiiRenderData*, 16&gt;</a> m_FrameData;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;};</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclassxii_render_data_batch_list_htm"><div class="ttname"><a href="../../d7/d09/classxii_render_data_batch_list.htm">xiiRenderDataBatchList</a></div><div class="ttdef"><b>Definition:</b> RenderDataBatch.h:63</div></div>
@@ -173,7 +171,7 @@ $(document).ready(function(){initNavTree('da/d03/_extracted_render_data_8h_sourc
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.htm">home</a></li><li class="navelem"><a class="el" href="../../dir_1036706e55c22cab35bc1c58ee689f1d.htm">runner</a></li><li class="navelem"><a class="el" href="../../dir_629f8151d55d307162ff2d619fb1783d.htm">work</a></li><li class="navelem"><a class="el" href="../../dir_1ddc44fe1263a8c7935fa6130b7d9499.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_2c1b6808f12952f4c36e05ba7068379a.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_b5a1c4ecfca018ad24b729e213296d41.htm">Source</a></li><li class="navelem"><a class="el" href="../../dir_e321052006a51284e67389ab20037e7c.htm">Engine</a></li><li class="navelem"><a class="el" href="../../dir_d1b456933e20132afd1d01c7da962f40.htm">GraphicsCore</a></li><li class="navelem"><a class="el" href="../../dir_dbd5e7b3b3ed2fc0d3f11d6b12eac684.htm">Pipeline</a></li><li class="navelem"><b>ExtractedRenderData.h</b></li>
-    <li class="footer">Generated on Sun Nov 19 2023 19:17:25 for XIIEngine by
+    <li class="footer">Generated on Fri Dec 1 2023 23:48:51 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

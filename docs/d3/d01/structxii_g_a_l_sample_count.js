@@ -1,6 +1,5 @@
 var structxii_g_a_l_sample_count =
 [
-    [ "Bits", "d2/dc4/structxii_g_a_l_sample_count_1_1_bits.htm", "d2/dc4/structxii_g_a_l_sample_count_1_1_bits" ],
     [ "StorageType", "d3/d01/structxii_g_a_l_sample_count.htm#aa847e74789f8258a793786ad93f2179a", null ],
     [ "Enum", "d3/d01/structxii_g_a_l_sample_count.htm#a9882b9a04c908ada09066d29eee92e7c", [
       [ "None", "d3/d01/structxii_g_a_l_sample_count.htm#a9882b9a04c908ada09066d29eee92e7ca655dc8606102434cae9b06e1cd5be653", null ],

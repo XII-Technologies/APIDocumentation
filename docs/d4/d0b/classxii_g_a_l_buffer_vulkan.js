@@ -4,8 +4,9 @@ var classxii_g_a_l_buffer_vulkan =
     [ "~xiiGALBufferVulkan", "d4/d0b/classxii_g_a_l_buffer_vulkan.htm#a5baf97b1edf3403b1362875c1db5cede", null ],
     [ "DeInitPlatform", "d4/d0b/classxii_g_a_l_buffer_vulkan.htm#abc1fcf1ef2c89d2c74f712ccad81b790", null ],
     [ "FlushMappedRange", "d4/d0b/classxii_g_a_l_buffer_vulkan.htm#add2b295e8b6f006725958324c1f420a3", null ],
-    [ "GetBuffer", "d4/d0b/classxii_g_a_l_buffer_vulkan.htm#a9f28387450496a35f6db67f307cd5a99", null ],
+    [ "GetBuffer", "d4/d0b/classxii_g_a_l_buffer_vulkan.htm#ad8ee226e0b83dade188d9114dbea8599", null ],
     [ "GetDefaultView", "d4/d0b/classxii_g_a_l_buffer_vulkan.htm#a6dfebaffa3e75e07ca3e381f7f6d7fb4", null ],
+    [ "GetIndexFormat", "d4/d0b/classxii_g_a_l_buffer_vulkan.htm#a8e637b6dc15ab887cc4e628ffbcc2ce7", null ],
     [ "GetMemoryProperties", "d4/d0b/classxii_g_a_l_buffer_vulkan.htm#afce5881c9af5b7e4e6db28644e640593", null ],
     [ "GetSparseProperties", "d4/d0b/classxii_g_a_l_buffer_vulkan.htm#ae9f2eef65f14af58f8b2f8c5a4823939", null ],
     [ "GetState", "d4/d0b/classxii_g_a_l_buffer_vulkan.htm#a4b49c7ff9562c12ca00e0ca38ecf6c18", null ],
@@ -14,5 +15,6 @@ var classxii_g_a_l_buffer_vulkan =
     [ "SetState", "d4/d0b/classxii_g_a_l_buffer_vulkan.htm#ad729380a9e1906657139047909b97d88", null ],
     [ "xiiGALDeviceVulkan", "d4/d0b/classxii_g_a_l_buffer_vulkan.htm#a1a43afae6292d541d621e2131d39aa22", null ],
     [ "xiiMemoryUtils", "d4/d0b/classxii_g_a_l_buffer_vulkan.htm#aefc9ff75d6833fd2f05be48e16436db6", null ],
-    [ "m_pBuffer", "d4/d0b/classxii_g_a_l_buffer_vulkan.htm#ad5b7cb7a3ebbdccadf46ffd72eea66ca", null ]
+    [ "m_IndexFormat", "d4/d0b/classxii_g_a_l_buffer_vulkan.htm#aab93db0d616b0364eb773df893e368b7", null ],
+    [ "m_pBuffer", "d4/d0b/classxii_g_a_l_buffer_vulkan.htm#ad62541a4b92f51f91a6e453ee6801fe7", null ]
 ];

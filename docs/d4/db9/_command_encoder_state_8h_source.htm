@@ -96,75 +96,92 @@ $(document).ready(function(){initNavTree('d4/db9/_command_encoder_state_8h_sourc
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
 <div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="../../df/d3b/structxii_g_a_l_command_encoder_state.htm">    9</a></span>&#160;<span class="keyword">struct </span>XII_GRAPHICSFOUNDATION_DLL <a class="code" href="../../df/d3b/structxii_g_a_l_command_encoder_state.htm">xiiGALCommandEncoderState</a></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;{</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> InvalidateState();</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;  <a class="code" href="../../d9/d71/classxii_g_a_l_shader_handle.htm">xiiGALShaderHandle</a> m_hShader;</div>
+<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="../../d8/d92/structxii_g_a_l_command_encoder_state_1_1_resource_binding.htm">   11</a></span>&#160;  <span class="keyword">struct </span><a class="code" href="../../d8/d92/structxii_g_a_l_command_encoder_state_1_1_resource_binding.htm">ResourceBinding</a></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;  {</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    XII_DECLARE_POD_TYPE();</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;  <a class="code" href="../../d1/dba/classxii_g_a_l_buffer_handle.htm">xiiGALBufferHandle</a> m_hConstantBuffers[XII_GAL_MAX_CONSTANT_BUFFER_COUNT];</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;  <a class="code" href="../../dc/da9/classxii_hybrid_array.htm">xiiHybridArray&lt;xiiGALBufferViewHandle, 16U&gt;</a>  m_hBufferViews[xiiGALShaderStage::ENUM_COUNT];</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;  <a class="code" href="../../dc/da9/classxii_hybrid_array.htm">xiiHybridArray&lt;xiiGALTextureViewHandle, 16U&gt;</a> m_hTextureViews[xiiGALShaderStage::ENUM_COUNT];</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  <a class="code" href="../../dc/da9/classxii_hybrid_array.htm">xiiHybridArray&lt;const xiiGALBuffer*, 16U&gt;</a>  m_pResourcesForBufferViews[xiiGALShaderStage::ENUM_COUNT];</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  <a class="code" href="../../dc/da9/classxii_hybrid_array.htm">xiiHybridArray&lt;const xiiGALTexture*, 16U&gt;</a> m_pResourcesForTextureViews[xiiGALShaderStage::ENUM_COUNT];</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  <a class="code" href="../../dc/da9/classxii_hybrid_array.htm">xiiHybridArray&lt;xiiGALBufferViewHandle, 16U&gt;</a>  m_hUnorderedAccessBufferViews;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  <a class="code" href="../../dc/da9/classxii_hybrid_array.htm">xiiHybridArray&lt;xiiGALTextureViewHandle, 16U&gt;</a> m_hUnorderedAccessTextureViews;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  <a class="code" href="../../dc/da9/classxii_hybrid_array.htm">xiiHybridArray&lt;const xiiGALBuffer*, 16U&gt;</a>  m_pResourcesForUnorderedAccessBufferViews;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  <a class="code" href="../../dc/da9/classxii_hybrid_array.htm">xiiHybridArray&lt;const xiiGALTexture*, 16U&gt;</a> m_pResourcesForUnorderedAccessTextureViews;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  <a class="code" href="../../da/dfe/classxii_g_a_l_sampler_handle.htm">xiiGALSamplerHandle</a> m_hSamplers[xiiGALShaderStage::ENUM_COUNT][XII_GAL_MAX_SAMPLER_COUNT];</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;};</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
-<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="../../df/dcf/structxii_g_a_l_command_encoder_graphics_state.htm">   32</a></span>&#160;<span class="keyword">struct </span>XII_GRAPHICSFOUNDATION_DLL <a class="code" href="../../df/dcf/structxii_g_a_l_command_encoder_graphics_state.htm">xiiGALCommandEncoderGraphicsState</a> : <span class="keyword">public</span> <a class="code" href="../../df/d3b/structxii_g_a_l_command_encoder_state.htm">xiiGALCommandEncoderState</a></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;{</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  <span class="keyword">virtual</span> ~<a class="code" href="../../df/dcf/structxii_g_a_l_command_encoder_graphics_state.htm">xiiGALCommandEncoderGraphicsState</a>() = <span class="keywordflow">default</span>;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> InvalidateState() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <a class="code" href="../../d1/dba/classxii_g_a_l_buffer_handle.htm">xiiGALBufferHandle</a> m_hVertexBuffers[XII_GAL_MAX_VERTEX_BUFFER_COUNT];</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <a class="code" href="../../d1/dba/classxii_g_a_l_buffer_handle.htm">xiiGALBufferHandle</a> m_hIndexBuffer;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keyword">enum</span> Enum : xiiUInt8</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    {</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;      Invalid,</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;      Buffer,</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;      Texture</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    };</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    Enum m_Type = Invalid;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <a class="code" href="../../df/ddf/classxii_g_a_l_buffer_view_handle.htm">xiiGALBufferViewHandle</a>  m_hBufferView;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <a class="code" href="../../dd/d52/classxii_g_a_l_texture_view_handle.htm">xiiGALTextureViewHandle</a> m_hTextureView;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <a class="code" href="../../da/d03/classxii_g_a_l_buffer.htm">xiiGALBuffer</a>*  m_pBuffer  = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <a class="code" href="../../d3/d9a/classxii_g_a_l_texture.htm">xiiGALTexture</a>* m_pTexture = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  };</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> InvalidateState();</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  <a class="code" href="../../d9/d71/classxii_g_a_l_shader_handle.htm">xiiGALShaderHandle</a> m_hShader;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  <a class="code" href="../../d1/dba/classxii_g_a_l_buffer_handle.htm">xiiGALBufferHandle</a> m_hConstantBuffers[XII_GAL_MAX_CONSTANT_BUFFER_COUNT];</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <a class="code" href="../../dc/da9/classxii_hybrid_array.htm">xiiHybridArray&lt;ResourceBinding, 16U&gt;</a> m_hResourceViews[xiiGALShaderStage::ENUM_COUNT];</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <a class="code" href="../../dc/da9/classxii_hybrid_array.htm">xiiHybridArray&lt;ResourceBinding, 16U&gt;</a> m_hUnorderedAccessViews;</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <a class="code" href="../../d4/da5/classxii_g_a_l_input_layout_handle.htm">xiiGALInputLayoutHandle</a>          m_hInputLayout;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <a class="code" href="../../de/dfd/structxii_enum.htm">xiiEnum&lt;xiiGALPrimitiveTopology&gt;</a> m_Topology = <a class="code" href="../../db/d19/structxii_g_a_l_primitive_topology.htm#a7b7c5b79846d73ceaf06670334c7388ea2b4aa05f86acfea3c85411b0a8076ceb">xiiGALPrimitiveTopology::Undefined</a>;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <a class="code" href="../../da/dfe/classxii_g_a_l_sampler_handle.htm">xiiGALSamplerHandle</a> m_hSamplers[xiiGALShaderStage::ENUM_COUNT][XII_GAL_MAX_SAMPLER_COUNT];</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;};</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <a class="code" href="../../d2/d51/classxii_g_a_l_blend_state_handle.htm">xiiGALBlendStateHandle</a> m_hBlendState;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <a class="code" href="../../d3/de6/classxii_color.htm">xiiColor</a>               m_BlendFactor  = <a class="code" href="../../d3/de6/classxii_color.htm#a9bab62c2a390a5c5149c4e738384ac96">xiiColor::Black</a>;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  xiiUInt32              m_uiSampleMask = 0U;</div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="../../df/dcf/structxii_g_a_l_command_encoder_graphics_state.htm">   44</a></span>&#160;<span class="keyword">struct </span>XII_GRAPHICSFOUNDATION_DLL <a class="code" href="../../df/dcf/structxii_g_a_l_command_encoder_graphics_state.htm">xiiGALCommandEncoderGraphicsState</a> : <span class="keyword">public</span> <a class="code" href="../../df/d3b/structxii_g_a_l_command_encoder_state.htm">xiiGALCommandEncoderState</a></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;{</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <span class="keyword">virtual</span> ~<a class="code" href="../../df/dcf/structxii_g_a_l_command_encoder_graphics_state.htm">xiiGALCommandEncoderGraphicsState</a>() = <span class="keywordflow">default</span>;</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <a class="code" href="../../de/dce/classxii_g_a_l_depth_stencil_state_handle.htm">xiiGALDepthStencilStateHandle</a> m_hDepthStencilState;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  xiiUInt8                      m_uiStencilRefValue = 0U;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <a class="code" href="../../de/d86/classxii_g_a_l_rasterizer_state_handle.htm">xiiGALRasterizerStateHandle</a> m_hRasterizerState;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> InvalidateState() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <a class="code" href="../../d1/dba/classxii_g_a_l_buffer_handle.htm">xiiGALBufferHandle</a> m_hVertexBuffers[XII_GAL_MAX_VERTEX_BUFFER_COUNT];</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <a class="code" href="../../d1/dba/classxii_g_a_l_buffer_handle.htm">xiiGALBufferHandle</a> m_hIndexBuffer;</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <a class="code" href="../../d2/d1d/classxii_rect_template.htm">xiiRectU32</a>   m_ScissorRect       = <a class="code" href="../../d2/d1d/classxii_rect_template.htm">xiiRectU32</a>(0xFFFFFFFFU, 0xFFFFFFFFU, 0U, 0U);</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <a class="code" href="../../d2/d1d/classxii_rect_template.htm">xiiRectFloat</a> m_ViewPortRect      = <a class="code" href="../../d2/d1d/classxii_rect_template.htm">xiiRectFloat</a>(xiiMath::MaxValue&lt;float&gt;(), xiiMath::MaxValue&lt;float&gt;(), 0.0f, 0.0f);</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <span class="keywordtype">float</span>        m_fViewPortMinDepth = xiiMath::MaxValue&lt;float&gt;();</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <span class="keywordtype">float</span>        m_fViewPortMaxDepth = -xiiMath::MaxValue&lt;float&gt;();</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;};</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <a class="code" href="../../d4/da5/classxii_g_a_l_input_layout_handle.htm">xiiGALInputLayoutHandle</a>          m_hInputLayout;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <a class="code" href="../../de/dfd/structxii_enum.htm">xiiEnum&lt;xiiGALPrimitiveTopology&gt;</a> m_Topology = <a class="code" href="../../db/d19/structxii_g_a_l_primitive_topology.htm#a7b7c5b79846d73ceaf06670334c7388ea2b4aa05f86acfea3c85411b0a8076ceb">xiiGALPrimitiveTopology::Undefined</a>;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <a class="code" href="../../d2/d51/classxii_g_a_l_blend_state_handle.htm">xiiGALBlendStateHandle</a> m_hBlendState;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  <a class="code" href="../../d3/de6/classxii_color.htm">xiiColor</a>               m_BlendFactor  = <a class="code" href="../../d3/de6/classxii_color.htm#a9bab62c2a390a5c5149c4e738384ac96">xiiColor::Black</a>;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  xiiUInt32              m_uiSampleMask = 0U;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  <a class="code" href="../../de/dce/classxii_g_a_l_depth_stencil_state_handle.htm">xiiGALDepthStencilStateHandle</a> m_hDepthStencilState;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  xiiUInt8                      m_uiStencilRefValue = 0U;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  <a class="code" href="../../de/d86/classxii_g_a_l_rasterizer_state_handle.htm">xiiGALRasterizerStateHandle</a> m_hRasterizerState;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  <a class="code" href="../../d2/d1d/classxii_rect_template.htm">xiiRectU32</a>   m_ScissorRect       = <a class="code" href="../../d2/d1d/classxii_rect_template.htm">xiiRectU32</a>(0xFFFFFFFFU, 0xFFFFFFFFU, 0U, 0U);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <a class="code" href="../../d2/d1d/classxii_rect_template.htm">xiiRectFloat</a> m_ViewPortRect      = <a class="code" href="../../d2/d1d/classxii_rect_template.htm">xiiRectFloat</a>(xiiMath::MaxValue&lt;float&gt;(), xiiMath::MaxValue&lt;float&gt;(), 0.0f, 0.0f);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <span class="keywordtype">float</span>        m_fViewPortMinDepth = xiiMath::MaxValue&lt;float&gt;();</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <span class="keywordtype">float</span>        m_fViewPortMaxDepth = -xiiMath::MaxValue&lt;float&gt;();</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;};</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="astructxii_g_a_l_command_encoder_graphics_state_htm"><div class="ttname"><a href="../../df/dcf/structxii_g_a_l_command_encoder_graphics_state.htm">xiiGALCommandEncoderGraphicsState</a></div><div class="ttdef"><b>Definition:</b> CommandEncoderState.h:32</div></div>
+<div class="ttc" id="astructxii_g_a_l_command_encoder_graphics_state_htm"><div class="ttname"><a href="../../df/dcf/structxii_g_a_l_command_encoder_graphics_state.htm">xiiGALCommandEncoderGraphicsState</a></div><div class="ttdef"><b>Definition:</b> CommandEncoderState.h:44</div></div>
 <div class="ttc" id="astructxii_enum_htm"><div class="ttname"><a href="../../de/dfd/structxii_enum.htm">xiiEnum&lt; xiiGALPrimitiveTopology &gt;</a></div></div>
-<div class="ttc" id="aclassxii_g_a_l_sampler_handle_htm"><div class="ttname"><a href="../../da/dfe/classxii_g_a_l_sampler_handle.htm">xiiGALSamplerHandle</a></div><div class="ttdef"><b>Definition:</b> GraphicsTypes.h:1665</div></div>
-<div class="ttc" id="astructxii_g_a_l_primitive_topology_htm_a7b7c5b79846d73ceaf06670334c7388ea2b4aa05f86acfea3c85411b0a8076ceb"><div class="ttname"><a href="../../db/d19/structxii_g_a_l_primitive_topology.htm#a7b7c5b79846d73ceaf06670334c7388ea2b4aa05f86acfea3c85411b0a8076ceb">xiiGALPrimitiveTopology::Undefined</a></div><div class="ttdeci">@ Undefined</div><div class="ttdoc">Undefined topology.</div><div class="ttdef"><b>Definition:</b> GraphicsTypes.h:685</div></div>
-<div class="ttc" id="aclassxii_g_a_l_rasterizer_state_handle_htm"><div class="ttname"><a href="../../de/d86/classxii_g_a_l_rasterizer_state_handle.htm">xiiGALRasterizerStateHandle</a></div><div class="ttdef"><b>Definition:</b> GraphicsTypes.h:1753</div></div>
-<div class="ttc" id="aclassxii_hybrid_array_htm"><div class="ttname"><a href="../../dc/da9/classxii_hybrid_array.htm">xiiHybridArray&lt; xiiGALBufferViewHandle, 16U &gt;</a></div></div>
+<div class="ttc" id="aclassxii_g_a_l_sampler_handle_htm"><div class="ttname"><a href="../../da/dfe/classxii_g_a_l_sampler_handle.htm">xiiGALSamplerHandle</a></div><div class="ttdef"><b>Definition:</b> GraphicsTypes.h:1656</div></div>
+<div class="ttc" id="astructxii_g_a_l_primitive_topology_htm_a7b7c5b79846d73ceaf06670334c7388ea2b4aa05f86acfea3c85411b0a8076ceb"><div class="ttname"><a href="../../db/d19/structxii_g_a_l_primitive_topology.htm#a7b7c5b79846d73ceaf06670334c7388ea2b4aa05f86acfea3c85411b0a8076ceb">xiiGALPrimitiveTopology::Undefined</a></div><div class="ttdeci">@ Undefined</div><div class="ttdoc">Undefined topology.</div><div class="ttdef"><b>Definition:</b> GraphicsTypes.h:687</div></div>
+<div class="ttc" id="aclassxii_g_a_l_rasterizer_state_handle_htm"><div class="ttname"><a href="../../de/d86/classxii_g_a_l_rasterizer_state_handle.htm">xiiGALRasterizerStateHandle</a></div><div class="ttdef"><b>Definition:</b> GraphicsTypes.h:1744</div></div>
+<div class="ttc" id="aclassxii_hybrid_array_htm"><div class="ttname"><a href="../../dc/da9/classxii_hybrid_array.htm">xiiHybridArray</a></div><div class="ttdoc">A hybrid array uses in-place storage to handle the first few elements without any allocation....</div><div class="ttdef"><b>Definition:</b> HybridArray.h:11</div></div>
 <div class="ttc" id="astructxii_g_a_l_command_encoder_state_htm"><div class="ttname"><a href="../../df/d3b/structxii_g_a_l_command_encoder_state.htm">xiiGALCommandEncoderState</a></div><div class="ttdoc">This describes the command encoder state.</div><div class="ttdef"><b>Definition:</b> CommandEncoderState.h:9</div></div>
+<div class="ttc" id="aclassxii_g_a_l_texture_view_handle_htm"><div class="ttname"><a href="../../dd/d52/classxii_g_a_l_texture_view_handle.htm">xiiGALTextureViewHandle</a></div><div class="ttdef"><b>Definition:</b> GraphicsTypes.h:1670</div></div>
 <div class="ttc" id="aclassxii_color_htm_a9bab62c2a390a5c5149c4e738384ac96"><div class="ttname"><a href="../../d3/de6/classxii_color.htm#a9bab62c2a390a5c5149c4e738384ac96">xiiColor::Black</a></div><div class="ttdeci">static const xiiColor Black</div><div class="ttdoc">#000000</div><div class="ttdef"><b>Definition:</b> Color.h:57</div></div>
+<div class="ttc" id="aclassxii_g_a_l_texture_htm"><div class="ttname"><a href="../../d3/d9a/classxii_g_a_l_texture.htm">xiiGALTexture</a></div><div class="ttdoc">Interface that defines methods to manipulate a texture object.</div><div class="ttdef"><b>Definition:</b> Texture.h:137</div></div>
 <div class="ttc" id="aclassxii_color_htm"><div class="ttname"><a href="../../d3/de6/classxii_color.htm">xiiColor</a></div><div class="ttdoc">xiiColor represents and RGBA color in linear color space. Values are stored as float,...</div><div class="ttdef"><b>Definition:</b> Color.h:43</div></div>
-<div class="ttc" id="aclassxii_g_a_l_depth_stencil_state_handle_htm"><div class="ttname"><a href="../../de/dce/classxii_g_a_l_depth_stencil_state_handle.htm">xiiGALDepthStencilStateHandle</a></div><div class="ttdef"><b>Definition:</b> GraphicsTypes.h:1739</div></div>
-<div class="ttc" id="aclassxii_g_a_l_input_layout_handle_htm"><div class="ttname"><a href="../../d4/da5/classxii_g_a_l_input_layout_handle.htm">xiiGALInputLayoutHandle</a></div><div class="ttdef"><b>Definition:</b> GraphicsTypes.h:1695</div></div>
-<div class="ttc" id="aclassxii_g_a_l_buffer_handle_htm"><div class="ttname"><a href="../../d1/dba/classxii_g_a_l_buffer_handle.htm">xiiGALBufferHandle</a></div><div class="ttdef"><b>Definition:</b> GraphicsTypes.h:1623</div></div>
-<div class="ttc" id="aclassxii_g_a_l_blend_state_handle_htm"><div class="ttname"><a href="../../d2/d51/classxii_g_a_l_blend_state_handle.htm">xiiGALBlendStateHandle</a></div><div class="ttdef"><b>Definition:</b> GraphicsTypes.h:1732</div></div>
+<div class="ttc" id="aclassxii_g_a_l_buffer_htm"><div class="ttname"><a href="../../da/d03/classxii_g_a_l_buffer.htm">xiiGALBuffer</a></div><div class="ttdoc">Interface that defines methods to manipulate a buffer object.</div><div class="ttdef"><b>Definition:</b> Buffer.h:92</div></div>
+<div class="ttc" id="aclassxii_g_a_l_depth_stencil_state_handle_htm"><div class="ttname"><a href="../../de/dce/classxii_g_a_l_depth_stencil_state_handle.htm">xiiGALDepthStencilStateHandle</a></div><div class="ttdef"><b>Definition:</b> GraphicsTypes.h:1730</div></div>
+<div class="ttc" id="astructxii_g_a_l_command_encoder_state_1_1_resource_binding_htm"><div class="ttname"><a href="../../d8/d92/structxii_g_a_l_command_encoder_state_1_1_resource_binding.htm">xiiGALCommandEncoderState::ResourceBinding</a></div><div class="ttdef"><b>Definition:</b> CommandEncoderState.h:11</div></div>
+<div class="ttc" id="aclassxii_g_a_l_input_layout_handle_htm"><div class="ttname"><a href="../../d4/da5/classxii_g_a_l_input_layout_handle.htm">xiiGALInputLayoutHandle</a></div><div class="ttdef"><b>Definition:</b> GraphicsTypes.h:1686</div></div>
+<div class="ttc" id="aclassxii_g_a_l_buffer_handle_htm"><div class="ttname"><a href="../../d1/dba/classxii_g_a_l_buffer_handle.htm">xiiGALBufferHandle</a></div><div class="ttdef"><b>Definition:</b> GraphicsTypes.h:1614</div></div>
+<div class="ttc" id="aclassxii_g_a_l_blend_state_handle_htm"><div class="ttname"><a href="../../d2/d51/classxii_g_a_l_blend_state_handle.htm">xiiGALBlendStateHandle</a></div><div class="ttdef"><b>Definition:</b> GraphicsTypes.h:1723</div></div>
 <div class="ttc" id="aclassxii_rect_template_htm"><div class="ttname"><a href="../../d2/d1d/classxii_rect_template.htm">xiiRectTemplate&lt; xiiUInt32 &gt;</a></div></div>
-<div class="ttc" id="aclassxii_g_a_l_shader_handle_htm"><div class="ttname"><a href="../../d9/d71/classxii_g_a_l_shader_handle.htm">xiiGALShaderHandle</a></div><div class="ttdef"><b>Definition:</b> GraphicsTypes.h:1702</div></div>
+<div class="ttc" id="aclassxii_g_a_l_buffer_view_handle_htm"><div class="ttname"><a href="../../df/ddf/classxii_g_a_l_buffer_view_handle.htm">xiiGALBufferViewHandle</a></div><div class="ttdef"><b>Definition:</b> GraphicsTypes.h:1621</div></div>
+<div class="ttc" id="aclassxii_g_a_l_shader_handle_htm"><div class="ttname"><a href="../../d9/d71/classxii_g_a_l_shader_handle.htm">xiiGALShaderHandle</a></div><div class="ttdef"><b>Definition:</b> GraphicsTypes.h:1693</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.htm">home</a></li><li class="navelem"><a class="el" href="../../dir_1036706e55c22cab35bc1c58ee689f1d.htm">runner</a></li><li class="navelem"><a class="el" href="../../dir_629f8151d55d307162ff2d619fb1783d.htm">work</a></li><li class="navelem"><a class="el" href="../../dir_1ddc44fe1263a8c7935fa6130b7d9499.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_2c1b6808f12952f4c36e05ba7068379a.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_b5a1c4ecfca018ad24b729e213296d41.htm">Source</a></li><li class="navelem"><a class="el" href="../../dir_e321052006a51284e67389ab20037e7c.htm">Engine</a></li><li class="navelem"><a class="el" href="../../dir_60f548c54f5a79fe3a3b3b88ff8146f5.htm">GraphicsFoundation</a></li><li class="navelem"><a class="el" href="../../dir_20ff59cc8369b093d8f4f2ab622efbda.htm">CommandEncoder</a></li><li class="navelem"><b>CommandEncoderState.h</b></li>
-    <li class="footer">Generated on Sun Nov 19 2023 19:17:26 for XIIEngine by
+    <li class="footer">Generated on Fri Dec 1 2023 23:48:52 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

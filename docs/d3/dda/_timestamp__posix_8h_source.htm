@@ -89,76 +89,78 @@ $(document).ready(function(){initNavTree('d3/dda/_timestamp__posix_8h_source.htm
 <div class="contents">
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &lt;Foundation/FoundationInternal.h&gt;</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;XII_FOUNDATION_INTERNAL_HEADER</div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;time.h&gt;</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">const</span> <a class="code" href="../../d5/da2/classxii_timestamp.htm">xiiTimestamp</a> <a class="code" href="../../d5/da2/classxii_timestamp.htm#a1e293985002107172ab682a803516cb0">xiiTimestamp::CurrentTimestamp</a>()</div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;{</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;  timeval currentTime;</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;  gettimeofday(&amp;currentTime, <span class="keyword">nullptr</span>);</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="../../d5/da2/classxii_timestamp.htm#ac588358a0caac14b7a7ba425945b111f">xiiTimestamp</a>(currentTime.tv_sec * 1000000LL + currentTime.tv_usec, <a class="code" href="../../d7/dfa/structxii_s_i_unit_of_time.htm#ad66d5db2186c27d08bd4666c2f523c26ad1ae04769da7d0d7d78b3bd2bbd78541">xiiSIUnitOfTime::Microsecond</a>);</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;}</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keywordtype">bool</span> operator!=(<span class="keyword">const</span> tm&amp; lhs, <span class="keyword">const</span> tm&amp; rhs)</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;{</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;  <span class="keywordflow">if</span> (lhs.tm_isdst == rhs.tm_isdst)</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;  {</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keywordflow">return</span> !((lhs.tm_sec == rhs.tm_sec) &amp;&amp; (lhs.tm_min == rhs.tm_min) &amp;&amp; (lhs.tm_hour == rhs.tm_hour) &amp;&amp; (lhs.tm_mday == rhs.tm_mday) &amp;&amp;</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;             (lhs.tm_mon == rhs.tm_mon) &amp;&amp; (lhs.tm_year == rhs.tm_year) &amp;&amp; (lhs.tm_isdst == rhs.tm_isdst));</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;  }</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  {</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  }</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;}</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">const</span> <a class="code" href="../../d5/da2/classxii_timestamp.htm">xiiTimestamp</a> <a class="code" href="../../de/dc3/classxii_date_time.htm#ab0778286d1053f2eafa94e7525622582">xiiDateTime::GetTimestamp</a>()<span class="keyword"> const</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword"></span>{</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  tm timeinfo = {0};</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  timeinfo.tm_sec   = m_uiSecond;     <span class="comment">/* seconds after the minute - [0,59] */</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  timeinfo.tm_min   = m_uiMinute;     <span class="comment">/* minutes after the hour - [0,59] */</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  timeinfo.tm_hour  = m_uiHour;       <span class="comment">/* hours since midnight - [0,23] */</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  timeinfo.tm_mday  = m_uiDay;        <span class="comment">/* day of the month - [1,31] */</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  timeinfo.tm_wday  = m_uiDayOfWeek;  <span class="comment">/* day of the week - [0,6] */</span></div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  timeinfo.tm_mon   = m_uiMonth - 1;  <span class="comment">/* months since January - [0,11] */</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  timeinfo.tm_year  = m_iYear - 1900; <span class="comment">/* years since 1900 */</span></div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  timeinfo.tm_isdst = 0;              <span class="comment">/* daylight savings time flag */</span></div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  timeinfo.tm_zone  = <span class="stringliteral">&quot;GMT&quot;</span>;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  tm timeinfoCopy = timeinfo;</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;sys/time.h&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;time.h&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">const</span> <a class="code" href="../../d5/da2/classxii_timestamp.htm">xiiTimestamp</a> <a class="code" href="../../d5/da2/classxii_timestamp.htm#a1e293985002107172ab682a803516cb0">xiiTimestamp::CurrentTimestamp</a>()</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;{</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;  timeval currentTime;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;  gettimeofday(&amp;currentTime, <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="../../d5/da2/classxii_timestamp.htm#ac588358a0caac14b7a7ba425945b111f">xiiTimestamp</a>(currentTime.tv_sec * 1000000LL + currentTime.tv_usec, <a class="code" href="../../d7/dfa/structxii_s_i_unit_of_time.htm#ad66d5db2186c27d08bd4666c2f523c26ad1ae04769da7d0d7d78b3bd2bbd78541">xiiSIUnitOfTime::Microsecond</a>);</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;}</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keywordtype">bool</span> operator!=(<span class="keyword">const</span> tm&amp; lhs, <span class="keyword">const</span> tm&amp; rhs)</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;{</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;  <span class="keywordflow">if</span> (lhs.tm_isdst == rhs.tm_isdst)</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;  {</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keywordflow">return</span> !((lhs.tm_sec == rhs.tm_sec) &amp;&amp; (lhs.tm_min == rhs.tm_min) &amp;&amp; (lhs.tm_hour == rhs.tm_hour) &amp;&amp; (lhs.tm_mday == rhs.tm_mday) &amp;&amp;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;             (lhs.tm_mon == rhs.tm_mon) &amp;&amp; (lhs.tm_year == rhs.tm_year) &amp;&amp; (lhs.tm_isdst == rhs.tm_isdst));</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  }</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  {</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  }</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;}</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">const</span> <a class="code" href="../../d5/da2/classxii_timestamp.htm">xiiTimestamp</a> <a class="code" href="../../de/dc3/classxii_date_time.htm#ab0778286d1053f2eafa94e7525622582">xiiDateTime::GetTimestamp</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  tm timeinfo = {0};</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  timeinfo.tm_sec   = m_uiSecond;     <span class="comment">/* seconds after the minute - [0,59] */</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  timeinfo.tm_min   = m_uiMinute;     <span class="comment">/* minutes after the hour - [0,59] */</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  timeinfo.tm_hour  = m_uiHour;       <span class="comment">/* hours since midnight - [0,23] */</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  timeinfo.tm_mday  = m_uiDay;        <span class="comment">/* day of the month - [1,31] */</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  timeinfo.tm_wday  = m_uiDayOfWeek;  <span class="comment">/* day of the week - [0,6] */</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  timeinfo.tm_mon   = m_uiMonth - 1;  <span class="comment">/* months since January - [0,11] */</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  timeinfo.tm_year  = m_iYear - 1900; <span class="comment">/* years since 1900 */</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  timeinfo.tm_isdst = 0;              <span class="comment">/* daylight savings time flag */</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  timeinfo.tm_zone  = <span class="stringliteral">&quot;GMT&quot;</span>;</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  time_t iTimeStamp = mktime(&amp;timeinfo);</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <span class="comment">// mktime may have &#39;patched&#39; our time to be valid, we don&#39;t want that to count as a valid date.</span></div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <span class="keywordflow">if</span> (iTimeStamp == (time_t)-1 || timeinfoCopy != timeinfo)</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="../../d5/da2/classxii_timestamp.htm">xiiTimestamp</a>();</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  iTimeStamp += timeinfo.tm_gmtoff;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <span class="comment">// Subtract one hour if daylight saving time was activated by mktime.</span></div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <span class="keywordflow">if</span> (timeinfo.tm_isdst == 1)</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    iTimeStamp -= 3600;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="../../d5/da2/classxii_timestamp.htm">xiiTimestamp</a>(iTimeStamp, <a class="code" href="../../d7/dfa/structxii_s_i_unit_of_time.htm#ad66d5db2186c27d08bd4666c2f523c26a41f12740ed024b4545167f77adca08ec">xiiSIUnitOfTime::Second</a>);</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;}</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="../../de/dc3/classxii_date_time.htm#a42368c7d079fcc7bdb955720eb6a56af">xiiDateTime::SetTimestamp</a>(<a class="code" href="../../d5/da2/classxii_timestamp.htm">xiiTimestamp</a> timestamp)</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;{</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  tm     timeinfo = {0};</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  time_t iTime    = (time_t)timestamp.<a class="code" href="../../d5/da2/classxii_timestamp.htm#a04c792237b870922b914f48c5564aa40">GetInt64</a>(<a class="code" href="../../d7/dfa/structxii_s_i_unit_of_time.htm#ad66d5db2186c27d08bd4666c2f523c26a41f12740ed024b4545167f77adca08ec">xiiSIUnitOfTime::Second</a>);</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  <span class="keywordflow">if</span> (gmtime_r(&amp;iTime, &amp;timeinfo) == <span class="keyword">nullptr</span>)</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  m_iYear          = timeinfo.tm_year + 1900;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  m_uiMonth        = timeinfo.tm_mon + 1;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  m_uiDay          = timeinfo.tm_mday;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  m_uiDayOfWeek    = timeinfo.tm_wday;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  m_uiHour         = timeinfo.tm_hour;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  m_uiMinute       = timeinfo.tm_min;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  m_uiSecond       = timeinfo.tm_sec;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  m_uiMicroseconds = 0;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;}</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  tm timeinfoCopy = timeinfo;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  time_t iTimeStamp = mktime(&amp;timeinfo);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <span class="comment">// mktime may have &#39;patched&#39; our time to be valid, we don&#39;t want that to count as a valid date.</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <span class="keywordflow">if</span> (iTimeStamp == (time_t)-1 || timeinfoCopy != timeinfo)</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="../../d5/da2/classxii_timestamp.htm">xiiTimestamp</a>();</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  iTimeStamp += timeinfo.tm_gmtoff;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <span class="comment">// Subtract one hour if daylight saving time was activated by mktime.</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <span class="keywordflow">if</span> (timeinfo.tm_isdst == 1)</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    iTimeStamp -= 3600;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="../../d5/da2/classxii_timestamp.htm">xiiTimestamp</a>(iTimeStamp, <a class="code" href="../../d7/dfa/structxii_s_i_unit_of_time.htm#ad66d5db2186c27d08bd4666c2f523c26a41f12740ed024b4545167f77adca08ec">xiiSIUnitOfTime::Second</a>);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;}</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="../../de/dc3/classxii_date_time.htm#a42368c7d079fcc7bdb955720eb6a56af">xiiDateTime::SetTimestamp</a>(<a class="code" href="../../d5/da2/classxii_timestamp.htm">xiiTimestamp</a> timestamp)</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;{</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  tm     timeinfo = {0};</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  time_t iTime    = (time_t)timestamp.<a class="code" href="../../d5/da2/classxii_timestamp.htm#a04c792237b870922b914f48c5564aa40">GetInt64</a>(<a class="code" href="../../d7/dfa/structxii_s_i_unit_of_time.htm#ad66d5db2186c27d08bd4666c2f523c26a41f12740ed024b4545167f77adca08ec">xiiSIUnitOfTime::Second</a>);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  <span class="keywordflow">if</span> (gmtime_r(&amp;iTime, &amp;timeinfo) == <span class="keyword">nullptr</span>)</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  m_iYear          = timeinfo.tm_year + 1900;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  m_uiMonth        = timeinfo.tm_mon + 1;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  m_uiDay          = timeinfo.tm_mday;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  m_uiDayOfWeek    = timeinfo.tm_wday;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  m_uiHour         = timeinfo.tm_hour;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  m_uiMinute       = timeinfo.tm_min;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  m_uiSecond       = timeinfo.tm_sec;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  m_uiMicroseconds = 0;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclassxii_timestamp_htm_a04c792237b870922b914f48c5564aa40"><div class="ttname"><a href="../../d5/da2/classxii_timestamp.htm#a04c792237b870922b914f48c5564aa40">xiiTimestamp::GetInt64</a></div><div class="ttdeci">xiiInt64 GetInt64(xiiSIUnitOfTime::Enum unitOfTime) const</div><div class="ttdoc">Returns the number of 'unitOfTime' since Unix epoch.</div><div class="ttdef"><b>Definition:</b> Timestamp.cpp:17</div></div>
@@ -173,7 +175,7 @@ $(document).ready(function(){initNavTree('d3/dda/_timestamp__posix_8h_source.htm
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.htm">home</a></li><li class="navelem"><a class="el" href="../../dir_1036706e55c22cab35bc1c58ee689f1d.htm">runner</a></li><li class="navelem"><a class="el" href="../../dir_629f8151d55d307162ff2d619fb1783d.htm">work</a></li><li class="navelem"><a class="el" href="../../dir_1ddc44fe1263a8c7935fa6130b7d9499.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_2c1b6808f12952f4c36e05ba7068379a.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_b5a1c4ecfca018ad24b729e213296d41.htm">Source</a></li><li class="navelem"><a class="el" href="../../dir_e321052006a51284e67389ab20037e7c.htm">Engine</a></li><li class="navelem"><a class="el" href="../../dir_be0c42c58b36f42c54ec54024ed4f6af.htm">Foundation</a></li><li class="navelem"><a class="el" href="../../dir_315aae7431edb29f522dc373a7962135.htm">Time</a></li><li class="navelem"><a class="el" href="../../dir_190f9f215ff5e02d7dc541b6cc83797c.htm">Implementation</a></li><li class="navelem"><a class="el" href="../../dir_4262b4f0301516bafab39c02b6058942.htm">Posix</a></li><li class="navelem"><b>Timestamp_posix.h</b></li>
-    <li class="footer">Generated on Sun Nov 19 2023 19:17:24 for XIIEngine by
+    <li class="footer">Generated on Fri Dec 1 2023 23:48:50 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

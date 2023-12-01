@@ -99,17 +99,17 @@ $(document).ready(function(){initNavTree('de/d35/_helper_8h_source.htm','../../'
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;  <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <span class="keywordtype">void</span> Clear();</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="keywordtype">void</span> AddSection(<span class="keyword">const</span> <span class="keywordtype">char</span>* szName);</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="keywordtype">void</span> AddSection(<a class="code" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sName);</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keywordtype">void</span> Process(<span class="keyword">const</span> <span class="keywordtype">char</span>* szText);</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keywordtype">void</span> Process(<a class="code" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sText);</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <a class="code" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> GetSectionContent(xiiUInt32 uiSection, xiiUInt32&amp; out_uiFirstLine) <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;  <span class="keyword">private</span>:</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keyword">struct </span>xiiTextSection</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    {</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;      xiiTextSection(<span class="keyword">const</span> <span class="keywordtype">char</span>* szName) :</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        m_sName(szName)</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;      xiiTextSection(<a class="code" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sName) :</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        m_sName(sName)</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;      {</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;      }</div>
@@ -142,19 +142,28 @@ $(document).ready(function(){initNavTree('de/d35/_helper_8h_source.htm','../../'
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;      RENDERSTATE,</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;      SHADER,</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;      VERTEXSHADER,</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;      HULLSHADER,</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;      DOMAINSHADER,</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;      GEOMETRYSHADER,</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;      PIXELSHADER,</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;      PIXELSHADER,</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;      GEOMETRYSHADER,</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;      HULLSHADER,</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;      DOMAINSHADER,</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;      COMPUTESHADER,</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;      TEMPLATE_VARS</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    };</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  };</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  XII_GRAPHICSCORE_DLL <span class="keywordtype">void</span> GetShaderSections(<span class="keyword">const</span> <span class="keywordtype">char</span>* szContent, <a class="code" href="../../d7/ddb/classxii_shader_helper_1_1xii_text_sectionizer.htm">xiiTextSectionizer</a>&amp; out_sections);</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  xiiUInt32 CalculateHash(<span class="keyword">const</span> <a class="code" href="../../d0/d60/classxii_array_ptr.htm">xiiArrayPtr&lt;xiiPermutationVar&gt;</a>&amp; vars);</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;} <span class="comment">// namespace xiiShaderHelper</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;      AMPLIFICATIONSHADER,</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;      MESHSHADER,</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;      RAYGENERATIONSHADER,</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;      RAYMISSSHADER,</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;      RAYCLOSESTHITSHADER,</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;      RAYANYHITSHADER,</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;      RAYINTERSECTIONSHADER,</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;      CALLABLESHADER,</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;      TILESHADER,</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;      TEMPLATE_VARS</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    };</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  };</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  XII_GRAPHICSCORE_DLL <span class="keywordtype">void</span> GetShaderSections(<a class="code" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sContent, <a class="code" href="../../d7/ddb/classxii_shader_helper_1_1xii_text_sectionizer.htm">xiiTextSectionizer</a>&amp; out_sections);</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  xiiUInt32 CalculateHash(<span class="keyword">const</span> <a class="code" href="../../d0/d60/classxii_array_ptr.htm">xiiArrayPtr&lt;xiiPermutationVar&gt;</a>&amp; vars);</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;} <span class="comment">// namespace xiiShaderHelper</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclassxii_array_ptr_htm"><div class="ttname"><a href="../../d0/d60/classxii_array_ptr.htm">xiiArrayPtr</a></div><div class="ttdoc">This class encapsulates an array and it's size. It is recommended to use this class instead of plain ...</div><div class="ttdef"><b>Definition:</b> ArrayPtr.h:36</div></div>
@@ -168,7 +177,7 @@ $(document).ready(function(){initNavTree('de/d35/_helper_8h_source.htm','../../'
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.htm">home</a></li><li class="navelem"><a class="el" href="../../dir_1036706e55c22cab35bc1c58ee689f1d.htm">runner</a></li><li class="navelem"><a class="el" href="../../dir_629f8151d55d307162ff2d619fb1783d.htm">work</a></li><li class="navelem"><a class="el" href="../../dir_1ddc44fe1263a8c7935fa6130b7d9499.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_2c1b6808f12952f4c36e05ba7068379a.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_b5a1c4ecfca018ad24b729e213296d41.htm">Source</a></li><li class="navelem"><a class="el" href="../../dir_e321052006a51284e67389ab20037e7c.htm">Engine</a></li><li class="navelem"><a class="el" href="../../dir_d1b456933e20132afd1d01c7da962f40.htm">GraphicsCore</a></li><li class="navelem"><a class="el" href="../../dir_f216dd74c0d784fd92a8799e495c1447.htm">Shader</a></li><li class="navelem"><a class="el" href="../../dir_bab6915e4a8148bf02120de123c718ad.htm">Implementation</a></li><li class="navelem"><b>Helper.h</b></li>
-    <li class="footer">Generated on Sun Nov 19 2023 19:17:25 for XIIEngine by
+    <li class="footer">Generated on Fri Dec 1 2023 23:48:51 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

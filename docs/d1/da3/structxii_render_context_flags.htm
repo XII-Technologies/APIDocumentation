@@ -99,7 +99,7 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a11b9210393a8b5bf54a3a970838750ba"><td class="memItemLeft" align="right" valign="top"><a id="a11b9210393a8b5bf54a3a970838750ba"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>Enum</b> { <br />
+<tr class="memitem:ade5cc1e3723daa79968af10071b5073d"><td class="memItemLeft" align="right" valign="top"><a id="ade5cc1e3723daa79968af10071b5073d"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>Enum</b> : StorageType { <br />
 &#160;&#160;<b>None</b> = 0, 
 <b>ShaderStateChanged</b> = XII_BIT(0), 
 <b>TextureBindingChanged</b> = XII_BIT(1), 
@@ -111,11 +111,11 @@ Public Types</h2></td></tr>
 <b>MeshBufferBindingChanged</b> = XII_BIT(6), 
 <br />
 &#160;&#160;<b>MaterialBindingChanged</b> = XII_BIT(7), 
-<b>AllStatesInvalid</b>, 
+<b>AllStatesInvalid</b> = ShaderStateChanged | TextureBindingChanged | UAVBindingChanged | SamplerBindingChanged | BufferBindingChanged | ConstantBufferBindingChanged | MeshBufferBindingChanged, 
 <b>Default</b> = None
 <br />
  }</td></tr>
-<tr class="separator:a11b9210393a8b5bf54a3a970838750ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:ade5cc1e3723daa79968af10071b5073d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9765a24b3758cd4ba990192f172e9d62"><td class="memItemLeft" align="right" valign="top"><a id="a9765a24b3758cd4ba990192f172e9d62"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>StorageType</b> = xiiUInt32</td></tr>
 <tr class="separator:a9765a24b3758cd4ba990192f172e9d62"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -129,7 +129,7 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>StorageType</b> = xi
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d1/da3/structxii_render_context_flags.htm">xiiRenderContextFlags</a></li>
-    <li class="footer">Generated on Sun Nov 19 2023 19:17:30 for XIIEngine by
+    <li class="footer">Generated on Fri Dec 1 2023 23:48:56 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

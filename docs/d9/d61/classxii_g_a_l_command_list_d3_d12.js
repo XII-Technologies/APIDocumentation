@@ -7,5 +7,5 @@ var classxii_g_a_l_command_list_d3_d12 =
     [ "InitPlatform", "d9/d61/classxii_g_a_l_command_list_d3_d12.htm#a5dd1c0e9dedf649c6f7bc8fb3ca6a6ba", null ],
     [ "xiiGALDeviceD3D12", "d9/d61/classxii_g_a_l_command_list_d3_d12.htm#a9b3da82b84b68e0128d059e18e11b67d", null ],
     [ "xiiMemoryUtils", "d9/d61/classxii_g_a_l_command_list_d3_d12.htm#aefc9ff75d6833fd2f05be48e16436db6", null ],
-    [ "m_pCommandList", "d9/d61/classxii_g_a_l_command_list_d3_d12.htm#ae559ed4245503d1dbd2fb1e4c6bf4b3a", null ]
+    [ "m_pCommandList", "d9/d61/classxii_g_a_l_command_list_d3_d12.htm#a896ceb656290739fb9bbad13d17578fd", null ]
 ];

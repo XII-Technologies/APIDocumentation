@@ -10,5 +10,5 @@ var classxii_g_a_l_fence_d3_d12 =
     [ "Wait", "d1/d8c/classxii_g_a_l_fence_d3_d12.htm#ab502272f171cba4df24fd52fccc4ff11", null ],
     [ "xiiGALDeviceD3D12", "d1/d8c/classxii_g_a_l_fence_d3_d12.htm#a9b3da82b84b68e0128d059e18e11b67d", null ],
     [ "xiiMemoryUtils", "d1/d8c/classxii_g_a_l_fence_d3_d12.htm#aefc9ff75d6833fd2f05be48e16436db6", null ],
-    [ "m_pFence", "d1/d8c/classxii_g_a_l_fence_d3_d12.htm#ae31ddd2da0916515bfc32dcbb26f8395", null ]
+    [ "m_pFence", "d1/d8c/classxii_g_a_l_fence_d3_d12.htm#a21bb94c7e34079413951c69d712b423c", null ]
 ];

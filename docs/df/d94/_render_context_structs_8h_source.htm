@@ -100,105 +100,102 @@ $(document).ready(function(){initNavTree('df/d94/_render_context_structs_8h_sour
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
 <div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="../../d5/d4f/structxii_shader_bind_flags.htm#af47761c138fc627e3ab65bf906b28df1">   14</a></span>&#160;  <span class="keyword">enum</span> <a class="code" href="../../d5/d4f/structxii_shader_bind_flags.htm#af47761c138fc627e3ab65bf906b28df1">Enum</a></div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;  {</div>
-<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="../../d5/d4f/structxii_shader_bind_flags.htm#af47761c138fc627e3ab65bf906b28df1a44067a6b77ae7fdf58ec1be374848a25">   16</a></span>&#160;    None        = 0,          </div>
-<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="../../d5/d4f/structxii_shader_bind_flags.htm#af47761c138fc627e3ab65bf906b28df1a0a7cefbccd7ebad4a50e56fe44fe2a23">   17</a></span>&#160;    ForceRebind = XII_BIT(0), </div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    NoRasterizerState =</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;      XII_BIT(1), </div>
-<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="../../d5/d4f/structxii_shader_bind_flags.htm#af47761c138fc627e3ab65bf906b28df1ad27078902fea5df88bbf72de192cd020">   21</a></span>&#160;    NoDepthStencilState = XII_BIT(</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;      2), </div>
-<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="../../d5/d4f/structxii_shader_bind_flags.htm#af47761c138fc627e3ab65bf906b28df1abf35b64826dd6539fab0b225a93c257d">   23</a></span>&#160;    NoBlendState =</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;      XII_BIT(3), </div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    NoStateBinding = NoRasterizerState | NoDepthStencilState | NoBlendState,</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    Default = None</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  };</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
-<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="../../d4/d56/structxii_shader_bind_flags_1_1_bits.htm">   30</a></span>&#160;  <span class="keyword">struct </span><a class="code" href="../../d4/d56/structxii_shader_bind_flags_1_1_bits.htm">Bits</a></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  {</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    StorageType ForceRebind : 1;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    StorageType NoRasterizerState : 1;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    StorageType NoDepthStencilState : 1;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    StorageType NoBlendState : 1;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  };</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;};</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;XII_DECLARE_FLAGS_OPERATORS(<a class="code" href="../../d5/d4f/structxii_shader_bind_flags.htm">xiiShaderBindFlags</a>);</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="comment">// xiiRenderContextFlags</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="../../d1/da3/structxii_render_context_flags.htm">   45</a></span>&#160;<span class="keyword">struct </span>XII_GRAPHICSCORE_DLL <a class="code" href="../../d1/da3/structxii_render_context_flags.htm">xiiRenderContextFlags</a></div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;{</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <span class="keyword">using</span> StorageType = xiiUInt32;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <span class="keyword">enum</span> Enum</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  {</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    None                         = 0,</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    ShaderStateChanged           = XII_BIT(0),</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    TextureBindingChanged        = XII_BIT(1),</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    UAVBindingChanged            = XII_BIT(2),</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    SamplerBindingChanged        = XII_BIT(3),</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    BufferBindingChanged         = XII_BIT(4),</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    ConstantBufferBindingChanged = XII_BIT(5),</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    MeshBufferBindingChanged     = XII_BIT(6),</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    MaterialBindingChanged       = XII_BIT(7),</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    AllStatesInvalid = ShaderStateChanged | TextureBindingChanged | UAVBindingChanged | SamplerBindingChanged | BufferBindingChanged |</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;      ConstantBufferBindingChanged | MeshBufferBindingChanged,</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    Default = None</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  };</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
-<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="../../d8/d01/structxii_render_context_flags_1_1_bits.htm">   66</a></span>&#160;  <span class="keyword">struct </span><a class="code" href="../../d8/d01/structxii_render_context_flags_1_1_bits.htm">Bits</a></div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  {</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    StorageType ShaderStateChanged : 1;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    StorageType TextureBindingChanged : 1;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    StorageType UAVBindingChanged : 1;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    StorageType SamplerBindingChanged : 1;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    StorageType BufferBindingChanged : 1;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    StorageType ConstantBufferBindingChanged : 1;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    StorageType MeshBufferBindingChanged : 1;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    StorageType MaterialBindingChanged : 1;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  };</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;};</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;XII_DECLARE_FLAGS_OPERATORS(<a class="code" href="../../d1/da3/structxii_render_context_flags.htm">xiiRenderContextFlags</a>);</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="comment">// xiiDefaultSamplerFlags</span></div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00085"></a><span class="lineno"><a class="line" href="../../d1/d9e/structxii_default_sampler_flags.htm">   85</a></span>&#160;<span class="keyword">struct </span>XII_GRAPHICSCORE_DLL <a class="code" href="../../d1/d9e/structxii_default_sampler_flags.htm">xiiDefaultSamplerFlags</a></div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;{</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  <span class="keyword">using</span> StorageType = xiiUInt32;</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  <span class="keyword">enum</span> Enum</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  {</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    PointFiltering  = 0,</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    LinearFiltering = XII_BIT(0),</div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="../../d5/d4f/structxii_shader_bind_flags.htm#af47761c138fc627e3ab65bf906b28df1a44067a6b77ae7fdf58ec1be374848a25">   16</a></span>&#160;    None                = 0,          </div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="../../d5/d4f/structxii_shader_bind_flags.htm#af47761c138fc627e3ab65bf906b28df1a0a7cefbccd7ebad4a50e56fe44fe2a23">   17</a></span>&#160;    ForceRebind         = XII_BIT(0), </div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="../../d5/d4f/structxii_shader_bind_flags.htm#af47761c138fc627e3ab65bf906b28df1aa97eff038b2085d834c593d04c6502d8">   18</a></span>&#160;    NoRasterizerState   = XII_BIT(1), </div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="../../d5/d4f/structxii_shader_bind_flags.htm#af47761c138fc627e3ab65bf906b28df1ad27078902fea5df88bbf72de192cd020">   19</a></span>&#160;    NoDepthStencilState = XII_BIT(2), </div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="../../d5/d4f/structxii_shader_bind_flags.htm#af47761c138fc627e3ab65bf906b28df1abf35b64826dd6539fab0b225a93c257d">   20</a></span>&#160;    NoBlendState        = XII_BIT(3), </div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    NoStateBinding      = NoRasterizerState | NoDepthStencilState | NoBlendState,</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    Default = None</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  };</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="../../d4/d56/structxii_shader_bind_flags_1_1_bits.htm">   26</a></span>&#160;  <span class="keyword">struct </span><a class="code" href="../../d4/d56/structxii_shader_bind_flags_1_1_bits.htm">Bits</a></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  {</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    StorageType ForceRebind : 1;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    StorageType NoRasterizerState : 1;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    StorageType NoDepthStencilState : 1;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    StorageType NoBlendState : 1;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  };</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;};</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;XII_DECLARE_FLAGS_OPERATORS(<a class="code" href="../../d5/d4f/structxii_shader_bind_flags.htm">xiiShaderBindFlags</a>);</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="comment">// xiiRenderContextFlags</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="../../d1/da3/structxii_render_context_flags.htm">   41</a></span>&#160;<span class="keyword">struct </span>XII_GRAPHICSCORE_DLL <a class="code" href="../../d1/da3/structxii_render_context_flags.htm">xiiRenderContextFlags</a></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;{</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <span class="keyword">using</span> StorageType = xiiUInt32;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <span class="keyword">enum</span> Enum : StorageType</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  {</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    None                         = 0,</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    ShaderStateChanged           = XII_BIT(0),</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    TextureBindingChanged        = XII_BIT(1),</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    UAVBindingChanged            = XII_BIT(2),</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    SamplerBindingChanged        = XII_BIT(3),</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    BufferBindingChanged         = XII_BIT(4),</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    ConstantBufferBindingChanged = XII_BIT(5),</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    MeshBufferBindingChanged     = XII_BIT(6),</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    MaterialBindingChanged       = XII_BIT(7),</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    AllStatesInvalid = ShaderStateChanged | TextureBindingChanged | UAVBindingChanged | SamplerBindingChanged | BufferBindingChanged | ConstantBufferBindingChanged | MeshBufferBindingChanged,</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    Default = None</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  };</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="../../d8/d01/structxii_render_context_flags_1_1_bits.htm">   62</a></span>&#160;  <span class="keyword">struct </span><a class="code" href="../../d8/d01/structxii_render_context_flags_1_1_bits.htm">Bits</a></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  {</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    StorageType ShaderStateChanged : 1;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    StorageType TextureBindingChanged : 1;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    StorageType UAVBindingChanged : 1;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    StorageType SamplerBindingChanged : 1;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    StorageType BufferBindingChanged : 1;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    StorageType ConstantBufferBindingChanged : 1;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    StorageType MeshBufferBindingChanged : 1;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    StorageType MaterialBindingChanged : 1;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  };</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;};</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;XII_DECLARE_FLAGS_OPERATORS(<a class="code" href="../../d1/da3/structxii_render_context_flags.htm">xiiRenderContextFlags</a>);</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="comment">// xiiDefaultSamplerFlags</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00081"></a><span class="lineno"><a class="line" href="../../d1/d9e/structxii_default_sampler_flags.htm">   81</a></span>&#160;<span class="keyword">struct </span>XII_GRAPHICSCORE_DLL <a class="code" href="../../d1/d9e/structxii_default_sampler_flags.htm">xiiDefaultSamplerFlags</a></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;{</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  <span class="keyword">using</span> StorageType = xiiUInt32;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  <span class="keyword">enum</span> Enum</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  {</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    PointFiltering  = 0,</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    LinearFiltering = XII_BIT(0),</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    Wrap  = 0,</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    Clamp = XII_BIT(1)</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  };</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    Wrap  = 0,</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    Clamp = XII_BIT(1)</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  };</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
-<div class="line"><a name="l00098"></a><span class="lineno"><a class="line" href="../../df/d45/structxii_default_sampler_flags_1_1_bits.htm">   98</a></span>&#160;  <span class="keyword">struct </span><a class="code" href="../../df/d45/structxii_default_sampler_flags_1_1_bits.htm">Bits</a></div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  {</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    StorageType LinearFiltering : 1;</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    StorageType Clamp : 1;</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  };</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;};</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160; </div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;XII_DECLARE_FLAGS_OPERATORS(<a class="code" href="../../d1/d9e/structxii_default_sampler_flags.htm">xiiDefaultSamplerFlags</a>);</div>
+<div class="line"><a name="l00094"></a><span class="lineno"><a class="line" href="../../df/d45/structxii_default_sampler_flags_1_1_bits.htm">   94</a></span>&#160;  <span class="keyword">struct </span><a class="code" href="../../df/d45/structxii_default_sampler_flags_1_1_bits.htm">Bits</a></div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  {</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    StorageType LinearFiltering : 1;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    StorageType Clamp : 1;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  };</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;};</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160; </div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;XII_DECLARE_FLAGS_OPERATORS(<a class="code" href="../../d1/d9e/structxii_default_sampler_flags.htm">xiiDefaultSamplerFlags</a>);</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="astructxii_shader_bind_flags_htm"><div class="ttname"><a href="../../d5/d4f/structxii_shader_bind_flags.htm">xiiShaderBindFlags</a></div><div class="ttdef"><b>Definition:</b> RenderContextStructs.h:10</div></div>
-<div class="ttc" id="astructxii_default_sampler_flags_1_1_bits_htm"><div class="ttname"><a href="../../df/d45/structxii_default_sampler_flags_1_1_bits.htm">xiiDefaultSamplerFlags::Bits</a></div><div class="ttdef"><b>Definition:</b> RenderContextStructs.h:98</div></div>
-<div class="ttc" id="astructxii_shader_bind_flags_1_1_bits_htm"><div class="ttname"><a href="../../d4/d56/structxii_shader_bind_flags_1_1_bits.htm">xiiShaderBindFlags::Bits</a></div><div class="ttdef"><b>Definition:</b> RenderContextStructs.h:30</div></div>
-<div class="ttc" id="astructxii_render_context_flags_1_1_bits_htm"><div class="ttname"><a href="../../d8/d01/structxii_render_context_flags_1_1_bits.htm">xiiRenderContextFlags::Bits</a></div><div class="ttdef"><b>Definition:</b> RenderContextStructs.h:66</div></div>
-<div class="ttc" id="astructxii_render_context_flags_htm"><div class="ttname"><a href="../../d1/da3/structxii_render_context_flags.htm">xiiRenderContextFlags</a></div><div class="ttdef"><b>Definition:</b> RenderContextStructs.h:45</div></div>
+<div class="ttc" id="astructxii_default_sampler_flags_1_1_bits_htm"><div class="ttname"><a href="../../df/d45/structxii_default_sampler_flags_1_1_bits.htm">xiiDefaultSamplerFlags::Bits</a></div><div class="ttdef"><b>Definition:</b> RenderContextStructs.h:94</div></div>
+<div class="ttc" id="astructxii_shader_bind_flags_1_1_bits_htm"><div class="ttname"><a href="../../d4/d56/structxii_shader_bind_flags_1_1_bits.htm">xiiShaderBindFlags::Bits</a></div><div class="ttdef"><b>Definition:</b> RenderContextStructs.h:26</div></div>
+<div class="ttc" id="astructxii_render_context_flags_1_1_bits_htm"><div class="ttname"><a href="../../d8/d01/structxii_render_context_flags_1_1_bits.htm">xiiRenderContextFlags::Bits</a></div><div class="ttdef"><b>Definition:</b> RenderContextStructs.h:62</div></div>
+<div class="ttc" id="astructxii_render_context_flags_htm"><div class="ttname"><a href="../../d1/da3/structxii_render_context_flags.htm">xiiRenderContextFlags</a></div><div class="ttdef"><b>Definition:</b> RenderContextStructs.h:41</div></div>
 <div class="ttc" id="astructxii_shader_bind_flags_htm_af47761c138fc627e3ab65bf906b28df1"><div class="ttname"><a href="../../d5/d4f/structxii_shader_bind_flags.htm#af47761c138fc627e3ab65bf906b28df1">xiiShaderBindFlags::Enum</a></div><div class="ttdeci">Enum</div><div class="ttdef"><b>Definition:</b> RenderContextStructs.h:14</div></div>
-<div class="ttc" id="astructxii_default_sampler_flags_htm"><div class="ttname"><a href="../../d1/d9e/structxii_default_sampler_flags.htm">xiiDefaultSamplerFlags</a></div><div class="ttdef"><b>Definition:</b> RenderContextStructs.h:85</div></div>
+<div class="ttc" id="astructxii_default_sampler_flags_htm"><div class="ttname"><a href="../../d1/d9e/structxii_default_sampler_flags.htm">xiiDefaultSamplerFlags</a></div><div class="ttdef"><b>Definition:</b> RenderContextStructs.h:81</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.htm">home</a></li><li class="navelem"><a class="el" href="../../dir_1036706e55c22cab35bc1c58ee689f1d.htm">runner</a></li><li class="navelem"><a class="el" href="../../dir_629f8151d55d307162ff2d619fb1783d.htm">work</a></li><li class="navelem"><a class="el" href="../../dir_1ddc44fe1263a8c7935fa6130b7d9499.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_2c1b6808f12952f4c36e05ba7068379a.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_b5a1c4ecfca018ad24b729e213296d41.htm">Source</a></li><li class="navelem"><a class="el" href="../../dir_e321052006a51284e67389ab20037e7c.htm">Engine</a></li><li class="navelem"><a class="el" href="../../dir_d1b456933e20132afd1d01c7da962f40.htm">GraphicsCore</a></li><li class="navelem"><a class="el" href="../../dir_0edc0dd1bbc304b64e2e00a467d8b5c5.htm">RenderContext</a></li><li class="navelem"><a class="el" href="../../dir_4d5c57b5648a6ecf2a5f99740a69a3bc.htm">Implementation</a></li><li class="navelem"><b>RenderContextStructs.h</b></li>
-    <li class="footer">Generated on Sun Nov 19 2023 19:17:25 for XIIEngine by
+    <li class="footer">Generated on Fri Dec 1 2023 23:48:51 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

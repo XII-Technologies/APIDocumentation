@@ -115,6 +115,7 @@ $(document).ready(function(){initNavTree('functions_g.htm',''); initResizable();
 </li>
 <li>GenerateMipMapsPlatform()
 : <a class="el" href="d5/d5a/classxii_g_a_l_command_encoder_d3_d12.htm#a71704822700f01e3be69525d30cdf161">xiiGALCommandEncoderD3D12</a>
+, <a class="el" href="d0/da2/classxii_g_a_l_command_encoder_vulkan.htm#a5d74691180cb8017442cbbb1e33c9f0a">xiiGALCommandEncoderVulkan</a>
 </li>
 <li>GenerateMips
 : <a class="el" href="d6/dd3/structxii_g_a_l_misc_texture_flags.htm#a196e11b3b7e52d4fab6d6f47801e8556afc8042b959890e820564a897da0ac65b">xiiGALMiscTextureFlags</a>
@@ -125,9 +126,6 @@ $(document).ready(function(){initNavTree('functions_g.htm',''); initResizable();
 </li>
 <li>GenerateUniqueResourceID()
 : <a class="el" href="d4/d8e/classxii_resource_manager.htm#a3a5e923cdc3ab32bb6b9ca0d28eeb446">xiiResourceManager</a>
-</li>
-<li>GenerateUpdateSteps()
-: <a class="el" href="d1/d6a/classxii_reflection_probe_updater.htm#aa4adfc27c330878f88c4e6fb73b6a09d">xiiReflectionProbeUpdater</a>
 </li>
 <li>Geometry
 : <a class="el" href="d7/d93/structxii_g_a_l_shader_stage.htm#a574ae05a61f47569461dc1fd2ea12092aade10779c6156ea24d708f2736541381">xiiGALShaderStage</a>
@@ -663,6 +661,7 @@ $(document).ready(function(){initNavTree('functions_g.htm',''); initResizable();
 <li>GetCompletedFenceValue()
 : <a class="el" href="d1/dd2/classxii_g_a_l_command_queue.htm#a3d7325c5fd7bbbf0c0f03d66cfb8e0d3">xiiGALCommandQueue</a>
 , <a class="el" href="d2/d37/classxii_g_a_l_command_queue_d3_d12.htm#a3310cd8c7e1005de1d42f323b05822fb">xiiGALCommandQueueD3D12</a>
+, <a class="el" href="d1/d83/classxii_g_a_l_command_queue_vulkan.htm#a6a99120a796df2c1062d6a339b569195">xiiGALCommandQueueVulkan</a>
 </li>
 <li>GetCompletedValue()
 : <a class="el" href="d6/d79/classxii_g_a_l_fence.htm#a140f1ee882871470ccef6a290658c5ed">xiiGALFence</a>
@@ -881,12 +880,18 @@ $(document).ready(function(){initNavTree('functions_g.htm',''); initResizable();
 <li>GetDefaultMaterialFileName()
 : <a class="el" href="d5/df2/classxii_material_resource.htm#a940e7a6565caa4fe3303a967a9966cb1">xiiMaterialResource</a>
 </li>
+<li>GetDefaultRenderTargetView()
+: <a class="el" href="d5/d19/classxii_g_a_l_device.htm#af6fc50094b22bdba8399ebfaed7710ef">xiiGALDevice</a>
+</li>
 <li>GetDefaultResourceLoader()
 : <a class="el" href="d4/d8e/classxii_resource_manager.htm#a9a9044db3ee623e9e6bd6ad559d95454">xiiResourceManager</a>
 </li>
 <li>GetDefaultResourceTypeLoader()
 : <a class="el" href="d9/de1/classxii_resource.htm#aae1757ae7a6381e221dea0bbcffe883d">xiiResource</a>
 , <a class="el" href="d3/d91/classxii_shader_permutation_resource.htm#a2ffee4e63d25ab161da52ff937d6e282">xiiShaderPermutationResource</a>
+</li>
+<li>GetDefaultResourceView()
+: <a class="el" href="d5/d19/classxii_g_a_l_device.htm#ae22ccc84850798ac6f24a88983ced820">xiiGALDevice</a>
 </li>
 <li>GetDefaultTextureFilter()
 : <a class="el" href="da/d27/classxii_render_context.htm#aa92da7ea1dde47947178f1663f5ec533">xiiRenderContext</a>
@@ -1009,7 +1014,8 @@ $(document).ready(function(){initNavTree('functions_g.htm',''); initResizable();
 , <a class="el" href="da/d9d/structxii_string_view.htm#ad238901b4ca0413dd5d8e28728c38144">xiiStringView</a>
 </li>
 <li>GetElementSize()
-: <a class="el" href="de/d63/classxii_processing_stream.htm#a79ea0824bf50d19cc91969bdcc736492">xiiProcessingStream</a>
+: <a class="el" href="d6/d3a/structxii_g_a_l_texture_format_description.htm#aa4a9a6e8c6e47fa40e02dd12188f6f45">xiiGALTextureFormatDescription</a>
+, <a class="el" href="de/d63/classxii_processing_stream.htm#a79ea0824bf50d19cc91969bdcc736492">xiiProcessingStream</a>
 </li>
 <li>GetElementStride()
 : <a class="el" href="de/d63/classxii_processing_stream.htm#a812b3d3a4f446f20ee2f35ff4fff6aaf">xiiProcessingStream</a>
@@ -1055,7 +1061,7 @@ $(document).ready(function(){initNavTree('functions_g.htm',''); initResizable();
 : <a class="el" href="d4/d8e/classxii_resource_manager.htm#ad913187ad4028d7c4e49251be74b29c0">xiiResourceManager</a>
 </li>
 <li>GetExpressionString()
-: <a class="el" href="d5/da5/classxii_math_expression.htm#a577e6765dee255f4216c523772ef41cd">xiiMathExpression</a>
+: <a class="el" href="d5/da5/classxii_math_expression.htm#aeeed4f6a65d268dd7c4cbf2e04eadc21">xiiMathExpression</a>
 </li>
 <li>GetExtents()
 : <a class="el" href="d2/dd6/classxii_bounding_box_template.htm#a517e4b42bfbc02fd69a028a841391042">xiiBoundingBoxTemplate&lt; Type &gt;</a>
@@ -1189,9 +1195,6 @@ $(document).ready(function(){initNavTree('functions_g.htm',''); initResizable();
 </li>
 <li>GetFrameCount()
 : <a class="el" href="dd/d5d/classxii_profiling_system.htm#a134d5dce822fde4062ce40257ded9b7e">xiiProfilingSystem</a>
-</li>
-<li>GetFreeUpdateSlots()
-: <a class="el" href="d1/d6a/classxii_reflection_probe_updater.htm#aae69cf9c28d4249263bcfd80b1670a72">xiiReflectionProbeUpdater</a>
 </li>
 <li>GetFullInfoAsString()
 : <a class="el" href="d9/d90/classxii_quake_console.htm#a641cd021716df2a7211dcc07a3392468">xiiQuakeConsole</a>
@@ -1354,6 +1357,8 @@ $(document).ready(function(){initNavTree('functions_g.htm',''); initResizable();
 </li>
 <li>GetInputLayout()
 : <a class="el" href="d5/d19/classxii_g_a_l_device.htm#addd143a915c1ea14b36ccd33211ccfd8">xiiGALDevice</a>
+, <a class="el" href="da/d98/classxii_mesh_buffer_resource.htm#ac595786970ed55d5dd1dc95e60cc4f65">xiiMeshBufferResource</a>
+, <a class="el" href="dd/deb/structxii_mesh_buffer_resource_descriptor.htm#ab4f8f71ec8653f6a96334425126041bb">xiiMeshBufferResourceDescriptor</a>
 </li>
 <li>GetInputLine()
 : <a class="el" href="d9/d90/classxii_quake_console.htm#a7909c1a5e0c10b68921a09ca682e6f83">xiiQuakeConsole</a>
@@ -1519,20 +1524,14 @@ $(document).ready(function(){initNavTree('functions_g.htm',''); initResizable();
 </li>
 <li>GetLocalBounds()
 : <a class="el" href="de/d92/classxii_always_visible_component.htm#a20acced27202e70cd82d8bfdba78dfe0">xiiAlwaysVisibleComponent</a>
-, <a class="el" href="d2/d4c/classxii_beam_component.htm#a47369d4d69bc383cabd5ee357f166b6f">xiiBeamComponent</a>
 , <a class="el" href="d6/dad/classxii_custom_mesh_component.htm#ae04244708b17f94e0644def866ab7c5c">xiiCustomMeshComponent</a>
 , <a class="el" href="d0/d1e/classxii_decal_component.htm#ad611596600a2b8e33ec3def7b9eb9451">xiiDecalComponent</a>
-, <a class="el" href="d6/d88/classxii_directional_light_component.htm#af21e54b7a6982d50d8466fd590e2b4f7">xiiDirectionalLightComponent</a>
 , <a class="el" href="d7/d73/classxii_instanced_mesh_component.htm#aeb1e677e59f29919688c7cd957e61e72">xiiInstancedMeshComponent</a>
-, <a class="el" href="d6/dc8/classxii_lens_flare_component.htm#a155ea9bcd27be4e64c83eb3528faf004">xiiLensFlareComponent</a>
 , <a class="el" href="da/dc0/classxii_mesh_component_base.htm#a49b906cd257e76337cc41f6091bc2150">xiiMeshComponentBase</a>
-, <a class="el" href="da/db8/classxii_point_light_component.htm#aac64534a3377a15945ebf28c4e9e30a1">xiiPointLightComponent</a>
 , <a class="el" href="d2/d2b/classxii_render_component.htm#a126e45ea2fb14aa42bcb7f5bb386ccf5">xiiRenderComponent</a>
 , <a class="el" href="db/d22/classxii_render_target_activator_component.htm#a50ab36c3dccf98fb380be04fca08f572">xiiRenderTargetActivatorComponent</a>
-, <a class="el" href="d8/df5/classxii_rope_render_component.htm#a7e82fa02cfe1d74e7aca25148586c448">xiiRopeRenderComponent</a>
 , <a class="el" href="d5/d81/classxii_skeleton_component.htm#af97e894022c4262f1efbfdc722ea09a9">xiiSkeletonComponent</a>
-, <a class="el" href="da/d36/classxii_sky_box_component.htm#a479b2db469ab1c0a7a225e846449eb5a">xiiSkyBoxComponent</a>
-, <a class="el" href="d5/d5e/classxii_spot_light_component.htm#af5f6925de659c084eccc343ade810c44">xiiSpotLightComponent</a>
+, <a class="el" href="da/d36/classxii_sky_box_component.htm#aee72e0f171e9e49c007da2832cf62492">xiiSkyBoxComponent</a>
 , <a class="el" href="dd/d63/classxii_sprite_component.htm#aa5d3166f461450fad3efeadf1e17b90c">xiiSpriteComponent</a>
 </li>
 <li>GetLogLevel()
@@ -1589,6 +1588,12 @@ $(document).ready(function(){initNavTree('functions_g.htm',''); initResizable();
 <li>GetMaxValue()
 : <a class="el" href="db/d47/classxii_command_line_option_float.htm#a696dcda76dcef733a06bbcb91e714463">xiiCommandLineOptionFloat</a>
 , <a class="el" href="de/d58/classxii_command_line_option_int.htm#aee22e84fd3e3602c7508f72a88135df8">xiiCommandLineOptionInt</a>
+</li>
+<li>GetMemoryConsumptionForBuffer()
+: <a class="el" href="d5/d19/classxii_g_a_l_device.htm#a1387dba7992e726335009d4389e8112b">xiiGALDevice</a>
+</li>
+<li>GetMemoryConsumptionForTexture()
+: <a class="el" href="d5/d19/classxii_g_a_l_device.htm#ad5f10659692122ad0757960422650b9c">xiiGALDevice</a>
 </li>
 <li>GetMemoryPageSize()
 : <a class="el" href="d7/d86/classxii_system_information.htm#a72f7636660667ebfb9558b35b16cfd2a">xiiSystemInformation</a>
@@ -1690,6 +1695,7 @@ $(document).ready(function(){initNavTree('functions_g.htm',''); initResizable();
 <li>GetNextFenceValue()
 : <a class="el" href="d1/dd2/classxii_g_a_l_command_queue.htm#af2c972fd5a3127eeaf2744e2049dec43">xiiGALCommandQueue</a>
 , <a class="el" href="d2/d37/classxii_g_a_l_command_queue_d3_d12.htm#aea0cd2f99b901aa4b901af0f6e5c9861">xiiGALCommandQueueD3D12</a>
+, <a class="el" href="d1/d83/classxii_g_a_l_command_queue_vulkan.htm#ab61c4e122210085c8a67edec5f1f8964">xiiGALCommandQueueVulkan</a>
 </li>
 <li>GetNextLine()
 : <a class="el" href="d6/d88/classxii_tokenizer.htm#ad488482e31b82943034c7accbc597d83">xiiTokenizer</a>
@@ -1799,8 +1805,8 @@ $(document).ready(function(){initNavTree('functions_g.htm',''); initResizable();
 : <a class="el" href="d6/d89/classxii_world.htm#a19c0391a95d47123cb3305ac6d92c959">xiiWorld</a>
 </li>
 <li>GetObjectPosition()
-: <a class="el" href="d8/d89/classxii_frustum.htm#a179eab4feddd7e19969bb9604475413a">xiiFrustum</a>
-, <a class="el" href="d5/dd4/structxii_plane_template.htm#aa7d307ac8add12d299dad7f34237fb47">xiiPlaneTemplate&lt; Type &gt;</a>
+: <a class="el" href="d8/d89/classxii_frustum.htm#a875e4ffbfcd7268c730ea5f680baad1d">xiiFrustum</a>
+, <a class="el" href="d5/dd4/structxii_plane_template.htm#abcf8b265193d72109c5869e0f81b88b8">xiiPlaneTemplate&lt; Type &gt;</a>
 </li>
 <li>GetObjects()
 : <a class="el" href="d6/d89/classxii_world.htm#a802fd101a25b204d9d5ce3dc1184130d">xiiWorld</a>
@@ -1861,7 +1867,7 @@ $(document).ready(function(){initNavTree('functions_g.htm',''); initResizable();
 : <a class="el" href="db/d60/classxii_component.htm#ad9ad3375d7130b79582b551639800a70">xiiComponent</a>
 </li>
 <li>GetOwningManager()
-: <a class="el" href="db/d60/classxii_component.htm#a5763bc24f184bde9c95d079c4c3be17e">xiiComponent</a>
+: <a class="el" href="db/d60/classxii_component.htm#abcb4cc3fe89cc6de26deea8fc6d5aba6">xiiComponent</a>
 </li>
 <li>GetPair()
 : <a class="el" href="dd/d41/classxii_array_map_base.htm#aa5e96595b5ed58fe9e053ade0f29c909">xiiArrayMapBase&lt; KEY, VALUE &gt;</a>
@@ -1891,7 +1897,7 @@ $(document).ready(function(){initNavTree('functions_g.htm',''); initResizable();
 , <a class="el" href="de/d58/classxii_command_line_option_int.htm#a916fc99a44188fc2112927dd18bd9fb3">xiiCommandLineOptionInt</a>
 </li>
 <li>GetParent()
-: <a class="el" href="d0/d91/classxii_game_object.htm#a5731bad18037d3a2c5c160cfa883d80d">xiiGameObject</a>
+: <a class="el" href="d0/d91/classxii_game_object.htm#aa72325c69f5d6f13abcb08e3a25d9906">xiiGameObject</a>
 </li>
 <li>GetParentIndex()
 : <a class="el" href="d6/dc7/classxii_skeleton_joint.htm#a920e18f4874bc6b719723a38362d7046">xiiSkeletonJoint</a>
@@ -1957,7 +1963,7 @@ $(document).ready(function(){initNavTree('functions_g.htm',''); initResizable();
 : <a class="el" href="d5/dd4/structxii_plane_template.htm#af9134b30f179fb81ca65a7714d9db323">xiiPlaneTemplate&lt; Type &gt;</a>
 </li>
 <li>GetPolygons()
-: <a class="el" href="d9/dbc/classxii_geometry.htm#acc544fe662830123730e8dae261b8d0c">xiiGeometry</a>
+: <a class="el" href="d9/dbc/classxii_geometry.htm#a245ca6a0eee495879cfd766f1db21794">xiiGeometry</a>
 </li>
 <li>GetPort()
 : <a class="el" href="df/d38/classxii_fileserver.htm#a5b858d7182a3f2b1266413cb193201a9">xiiFileserver</a>
@@ -1966,7 +1972,7 @@ $(document).ready(function(){initNavTree('functions_g.htm',''); initResizable();
 : <a class="el" href="dc/d68/classxii_camera.htm#af51a844916a0abcd1df6c80d76d99cdc">xiiCamera</a>
 </li>
 <li>GetPositionAndNormalStream()
-: <a class="el" href="db/df5/structxii_mesh_buffer_utils.htm#a4f22c32721a9b5ab0e1dbd1abc92780a">xiiMeshBufferUtils</a>
+: <a class="el" href="db/df5/structxii_mesh_buffer_utils.htm#a2470756db222023b537a6a7ea436efe4">xiiMeshBufferUtils</a>
 </li>
 <li>GetPositionStream()
 : <a class="el" href="db/df5/structxii_mesh_buffer_utils.htm#ad1b5cae99df0a51fec9f1a107eae978d">xiiMeshBufferUtils</a>
@@ -2070,9 +2076,9 @@ $(document).ready(function(){initNavTree('functions_g.htm',''); initResizable();
 , <a class="el" href="db/db0/classxii_phantom_member_property.htm#a153544c1f16d7ca7ab0711a35575e7f6">xiiPhantomMemberProperty</a>
 </li>
 <li>GetPtr()
-: <a class="el" href="d0/d60/classxii_array_ptr.htm#a469e49de32c37ddf896f52ce8011a12d">xiiArrayPtr&lt; T &gt;</a>
+: <a class="el" href="d0/d60/classxii_array_ptr.htm#acfb4db6e3a381669be860ce1a5500c6b">xiiArrayPtr&lt; T &gt;</a>
 , <a class="el" href="d3/d93/classxii_blob_ptr.htm#aa1ea468639d437e2a169ac09bbaf4b97">xiiBlobPtr&lt; T &gt;</a>
-, <a class="el" href="d4/d14/classxii_pointer_with_flags.htm#a7eff00a32dbe74adaaaa840c46146100">xiiPointerWithFlags&lt; PtrType, NumFlagBits &gt;</a>
+, <a class="el" href="d4/d14/classxii_pointer_with_flags.htm#a257273f6c7b882422482115adff95bd5">xiiPointerWithFlags&lt; PtrType, NumFlagBits &gt;</a>
 </li>
 <li>GetQuery()
 : <a class="el" href="d5/d19/classxii_g_a_l_device.htm#a17b28986579d47e6ba78491f01a7db70">xiiGALDevice</a>
@@ -2148,9 +2154,6 @@ $(document).ready(function(){initNavTree('functions_g.htm',''); initResizable();
 : <a class="el" href="d1/d0d/classxii_vec2_template.htm#a871fe8666b6a23fe3cc84048d143f6e6">xiiVec2Template&lt; Type &gt;</a>
 , <a class="el" href="d9/d9a/classxii_vec3_template.htm#a80d60cbb09196fbbe4dfebe04d417345">xiiVec3Template&lt; Type &gt;</a>
 </li>
-<li>GetReflectionIndex()
-: <a class="el" href="de/d49/classxii_reflection_probe_mapping.htm#a8a0b3f0015a9adab153fb8c3e400264b">xiiReflectionProbeMapping</a>
-</li>
 <li>GetRefractedVector()
 : <a class="el" href="d9/d9a/classxii_vec3_template.htm#a8665b04a02b6a6e0e4d489ce6654c240">xiiVec3Template&lt; Type &gt;</a>
 </li>
@@ -2161,7 +2164,7 @@ $(document).ready(function(){initNavTree('functions_g.htm',''); initResizable();
 : <a class="el" href="d5/d19/classxii_g_a_l_device.htm#a851ad527c4a44629cb207e569e914239">xiiGALDevice</a>
 </li>
 <li>GetRenderTarget()
-: <a class="el" href="da/d8d/classxii_g_p_u_resource_pool.htm#a776e03a591871a44a7de9c1ddf886d84">xiiGPUResourcePool</a>
+: <a class="el" href="da/d8d/classxii_g_p_u_resource_pool.htm#a2168955367536ebc4d228b9060ad97d2">xiiGPUResourcePool</a>
 </li>
 <li>GetRenderTargetDescriptions()
 : <a class="el" href="da/de9/classxii_antialiasing_pass.htm#aac8bc71379d2ad66a589d0329579141c">xiiAntialiasingPass</a>
@@ -2175,7 +2178,6 @@ $(document).ready(function(){initNavTree('functions_g.htm',''); initResizable();
 , <a class="el" href="de/d72/classxii_msaa_resolve_pass.htm#abfe0040e71017d79c35355b85b76239c">xiiMsaaResolvePass</a>
 , <a class="el" href="dc/dc3/classxii_msaa_upscale_pass.htm#a958519d22cb17687a6ca9b49fe67f67b">xiiMsaaUpscalePass</a>
 , <a class="el" href="dd/dab/classxii_opaque_forward_render_pass.htm#a06dc8447098c53c8207f158fd764c9af">xiiOpaqueForwardRenderPass</a>
-, <a class="el" href="d7/df2/classxii_reflection_filter_pass.htm#a24925e4437928a62376c7b713cbdd5fe">xiiReflectionFilterPass</a>
 , <a class="el" href="d5/d44/classxii_render_pipeline_pass.htm#a36bc9d71d7061f9ea4e723fda6d41e7a">xiiRenderPipelinePass</a>
 , <a class="el" href="d9/d58/classxii_selection_highlight_pass.htm#ae22ae2aaf8f6fa48eb587b371be0cb23">xiiSelectionHighlightPass</a>
 , <a class="el" href="d1/db4/classxii_separated_bilateral_blur_pass.htm#a56cc19d87bbe7e7d3e259107bd343690">xiiSeparatedBilateralBlurPass</a>
@@ -2191,11 +2193,13 @@ $(document).ready(function(){initNavTree('functions_g.htm',''); initResizable();
 <li>GetResourceCount()
 : <a class="el" href="d3/db8/classxii_g_a_l_shader.htm#ae51cd8657cee941d68b81c043a7f330a">xiiGALShader</a>
 , <a class="el" href="d4/da7/classxii_g_a_l_shader_d3_d12.htm#a13619cb4029e064b876b6b0122cfff5d">xiiGALShaderD3D12</a>
+, <a class="el" href="dd/d3b/classxii_g_a_l_shader_vulkan.htm#af8252492bd31bf735d1677a64d27c817">xiiGALShaderVulkan</a>
 </li>
 <li>GetResourceDescription()
 : <a class="el" href="d3/db8/classxii_g_a_l_shader.htm#a9dfd9f9c98f82e3b74b80828f452f337">xiiGALShader</a>
 , <a class="el" href="d4/da7/classxii_g_a_l_shader_d3_d12.htm#a4311d7be6eb8d7ee71cb2f4d977ba753">xiiGALShaderD3D12</a>
 , <a class="el" href="de/df6/classxii_g_a_l_shader_resource_variable.htm#a8af7611b375e977842c025793fa3e2e5">xiiGALShaderResourceVariable</a>
+, <a class="el" href="dd/d3b/classxii_g_a_l_shader_vulkan.htm#a475f54aa2c193eaeddd7c3296d02d194">xiiGALShaderVulkan</a>
 , <a class="el" href="d9/de1/classxii_resource.htm#a0a48cd6758ebba16e7f04c8f3d60f9c6">xiiResource</a>
 </li>
 <li>GetResourceEvents()
@@ -2354,7 +2358,7 @@ $(document).ready(function(){initNavTree('functions_g.htm',''); initResizable();
 </li>
 <li>GetShowMouseCursor()
 : <a class="el" href="dd/d1a/classxii_input_device_mouse_keyboard.htm#adddab997ee02bff61af48c4028990052">xiiInputDeviceMouseKeyboard</a>
-, <a class="el" href="dc/de5/classxii_standard_input_device.htm#adc9b0001df86dbf518fa7e6d799b2594">xiiStandardInputDevice</a>
+, <a class="el" href="dc/de5/classxii_standard_input_device.htm#a9a99bfe508e67741cfc9b0d8a1f828d9">xiiStandardInputDevice</a>
 </li>
 <li>GetShrunk()
 : <a class="el" href="da/d9d/structxii_string_view.htm#a13022b4950ea182e3d50ecdf2d3d953b">xiiStringView</a>
@@ -2527,7 +2531,7 @@ $(document).ready(function(){initNavTree('functions_g.htm',''); initResizable();
 </li>
 <li>GetSubArray()
 : <a class="el" href="d0/d60/classxii_array_ptr.htm#adfae6225d64d4a97ab4c9dbfa40c0e74">xiiArrayPtr&lt; T &gt;</a>
-, <a class="el" href="d3/d93/classxii_blob_ptr.htm#ad51dd300f3c7282db2ea6c5937544782">xiiBlobPtr&lt; T &gt;</a>
+, <a class="el" href="d3/d93/classxii_blob_ptr.htm#af83454044faa22eaaa6977096aa6e726">xiiBlobPtr&lt; T &gt;</a>
 </li>
 <li>GetSubImageView()
 : <a class="el" href="d4/d6a/classxii_image.htm#ab7f97edd54fa0457c76fcb1f91e5369c">xiiImage</a>
@@ -2583,7 +2587,6 @@ $(document).ready(function(){initNavTree('functions_g.htm',''); initResizable();
 <li>GetTexture()
 : <a class="el" href="d5/d19/classxii_g_a_l_device.htm#a7c8a26e5ac63217fdbb56d2ded825714">xiiGALDevice</a>
 , <a class="el" href="da/d75/classxii_g_a_l_texture_view.htm#ad99532e9bb36ffe24f607c397fc8f3a2">xiiGALTextureView</a>
-, <a class="el" href="de/d49/classxii_reflection_probe_mapping.htm#a5a3757238d330cf85b14d6b54d62716b">xiiReflectionProbeMapping</a>
 </li>
 <li>GetTextureFormatProperties()
 : <a class="el" href="d5/d19/classxii_g_a_l_device.htm#a7a0b4e8e76d636cc5e5036fe62c75ff7">xiiGALDevice</a>
@@ -2638,10 +2641,10 @@ $(document).ready(function(){initNavTree('functions_g.htm',''); initResizable();
 : <a class="el" href="d8/d05/classxii_j_s_o_n_reader.htm#a589a8d86c795db31ddc41df2a4473904">xiiJSONReader</a>
 </li>
 <li>GetTopLevelSelection()
-: <a class="el" href="d6/df0/classxii_selection_manager.htm#a8bd7e2a8633842d507c9fd35bf6b7122">xiiSelectionManager</a>
+: <a class="el" href="d6/df0/classxii_selection_manager.htm#ab437f18e02bc683709f40bc72f8a6f19">xiiSelectionManager</a>
 </li>
 <li>GetTopology()
-: <a class="el" href="dd/deb/structxii_mesh_buffer_resource_descriptor.htm#a12516125a480421e5e284a36d4d89245">xiiMeshBufferResourceDescriptor</a>
+: <a class="el" href="dd/deb/structxii_mesh_buffer_resource_descriptor.htm#a15b602a42300d9e85cd98297d29eef52">xiiMeshBufferResourceDescriptor</a>
 </li>
 <li>GetTotalDataSize()
 : <a class="el" href="d5/d2e/classxii_instance_data_allocator.htm#ab846844d178ee584dd27d08fa5e8d076">xiiInstanceDataAllocator</a>
@@ -2754,7 +2757,7 @@ $(document).ready(function(){initNavTree('functions_g.htm',''); initResizable();
 , <a class="el" href="de/dfd/structxii_enum.htm#a2643cb33f38a4feba80a79879895bfac">xiiEnum&lt; Derived &gt;</a>
 , <a class="el" href="dd/d56/classxii_enum_accessor_property.htm#a33f0b825ce4f551de7bd88da83bd9066">xiiEnumAccessorProperty&lt; Class, EnumType, Type &gt;</a>
 , <a class="el" href="d7/d14/classxii_enum_member_property.htm#ad10cc645b13333f224d5750eb07d0963">xiiEnumMemberProperty&lt; Class, EnumType, Type &gt;</a>
-, <a class="el" href="d0/da6/classxii_hash_table_base.htm#aedfe628466463c1ad75059a1902ddde1">xiiHashTableBase&lt; KeyType, ValueType, Hasher &gt;</a>
+, <a class="el" href="d0/da6/classxii_hash_table_base.htm#a70f0421d5453c8a15f4ccbaf899feb89">xiiHashTableBase&lt; KeyType, ValueType, Hasher &gt;</a>
 , <a class="el" href="d6/d4c/classxii_i_reflected_type_accessor.htm#a7fdf779ec5d8a54f08eb01b3eeedea29">xiiIReflectedTypeAccessor</a>
 , <a class="el" href="d6/d86/classxii_map_base.htm#a9ff02fce8f1acfd28cb41ef6351ddcee">xiiMapBase&lt; KeyType, ValueType, Comparer &gt;</a>
 , <a class="el" href="d5/d5d/classxii_member_array_property.htm#a127cf9a63dfd0e795666c089c894976d">xiiMemberArrayProperty&lt; Class, Container, Type &gt;</a>
@@ -2810,7 +2813,7 @@ $(document).ready(function(){initNavTree('functions_g.htm',''); initResizable();
 : <a class="el" href="db/d89/classxii_r_t_t_i.htm#ab04580f3ca5f9e4a86b7a523d6806a20">xiiRTTI</a>
 </li>
 <li>GetVertexBufferData()
-: <a class="el" href="dd/deb/structxii_mesh_buffer_resource_descriptor.htm#a4dceeb76bca05d2b8c24e978affc35fe">xiiMeshBufferResourceDescriptor</a>
+: <a class="el" href="dd/deb/structxii_mesh_buffer_resource_descriptor.htm#aeee0412ad9e4d5f5044e8210527c7b80">xiiMeshBufferResourceDescriptor</a>
 </li>
 <li>GetVertexCount()
 : <a class="el" href="dd/deb/structxii_mesh_buffer_resource_descriptor.htm#a506381f33985b25e44d9ba3d4eaa1bdb">xiiMeshBufferResourceDescriptor</a>
@@ -2821,12 +2824,8 @@ $(document).ready(function(){initNavTree('functions_g.htm',''); initResizable();
 <li>GetVertexDataSize()
 : <a class="el" href="dd/deb/structxii_mesh_buffer_resource_descriptor.htm#aac8caa65741a0523887d19a3fa333768">xiiMeshBufferResourceDescriptor</a>
 </li>
-<li>GetVertexDeclaration()
-: <a class="el" href="da/d98/classxii_mesh_buffer_resource.htm#afe82b487ea5c3dbc452255f012cd8a26">xiiMeshBufferResource</a>
-, <a class="el" href="dd/deb/structxii_mesh_buffer_resource_descriptor.htm#a5b3732a49d18f0a6707edc4dbba44a7f">xiiMeshBufferResourceDescriptor</a>
-</li>
 <li>GetVertices()
-: <a class="el" href="d9/dbc/classxii_geometry.htm#a01b3c54f5acfcf9a1f9a3bd8d1af3ada">xiiGeometry</a>
+: <a class="el" href="d9/dbc/classxii_geometry.htm#acf3ccb62a6000b01cd2b624ab7b267f6">xiiGeometry</a>
 </li>
 <li>GetVibrationStrength()
 : <a class="el" href="d4/dc9/classxii_input_device_controller.htm#a6c1c5b503729ef242f8f6ae84232bf7d">xiiInputDeviceController</a>
@@ -2863,10 +2862,10 @@ $(document).ready(function(){initNavTree('functions_g.htm',''); initResizable();
 : <a class="el" href="d1/dc7/classxii_task_system.htm#ae4bad60a02aca5b1538e9082569028ea">xiiTaskSystem</a>
 </li>
 <li>GetWorld()
-: <a class="el" href="db/d60/classxii_component.htm#a7fd0bc12583d9bee8da02b38a17240b3">xiiComponent</a>
+: <a class="el" href="db/d60/classxii_component.htm#afcebc955d6b28b14abc174f33f541285">xiiComponent</a>
 , <a class="el" href="d5/d5b/classxii_object_selection.htm#ae2799a80b64a81d918b8b500e13b94f8">xiiObjectSelection</a>
-, <a class="el" href="d6/d89/classxii_world.htm#ad9c233d2d82f092227603b10fc9bd96c">xiiWorld</a>
-, <a class="el" href="d9/dfe/classxii_world_module.htm#a58ce095e71920cb5bc341b96357d95ab">xiiWorldModule</a>
+, <a class="el" href="d6/d89/classxii_world.htm#af3a800f153772561e92eea8d43097cf4">xiiWorld</a>
+, <a class="el" href="d9/dfe/classxii_world_module.htm#aa8a2268305b5ca3822ff19540e135dff">xiiWorldModule</a>
 </li>
 <li>GetWorldBoundingBox()
 : <a class="el" href="dc/d30/classxii_game_grid.htm#a31a35fa2ef139ebc9edaa57f226e403c">xiiGameGrid&lt; CellData &gt;</a>
@@ -2885,7 +2884,7 @@ $(document).ready(function(){initNavTree('functions_g.htm',''); initResizable();
 : <a class="el" href="dc/d30/classxii_game_grid.htm#abcf9d81c1373c43f117e2c63af8f1ec9">xiiGameGrid&lt; CellData &gt;</a>
 </li>
 <li>GetWritableData()
-: <a class="el" href="de/d63/classxii_processing_stream.htm#acd4cdbef910a1fea33ad89ebc73374ea">xiiProcessingStream</a>
+: <a class="el" href="de/d63/classxii_processing_stream.htm#aa92f08df2ee41f40969ccbacbdfdec9c">xiiProcessingStream</a>
 </li>
 <li>GetWriteAccess()
 : <a class="el" href="db/d1a/classxii_variant.htm#a2455c82432e710d8436547f60ba96060">xiiVariant</a>
@@ -2984,7 +2983,7 @@ $(document).ready(function(){initNavTree('functions_g.htm',''); initResizable();
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sun Nov 19 2023 19:17:32 for XIIEngine by
+    <li class="footer">Generated on Fri Dec 1 2023 23:48:58 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

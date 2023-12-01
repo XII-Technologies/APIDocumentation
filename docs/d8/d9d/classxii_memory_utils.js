@@ -3,7 +3,7 @@ var classxii_memory_utils =
     [ "ConstructorFunction", "d8/d9d/classxii_memory_utils.htm#aa56d5db99ef502c492ecaf151466ae02", null ],
     [ "CopyConstructorFunction", "d8/d9d/classxii_memory_utils.htm#a59485f76a227c83159f23d1b386a5acd", null ],
     [ "DestructorFunction", "d8/d9d/classxii_memory_utils.htm#a9232a9ce21d6aca6298a2aa5b04b3945", null ],
-    [ "AddByteOffset", "d8/d9d/classxii_memory_utils.htm#aeb63058116e040f5261aedcb24214f1b", null ],
+    [ "AddByteOffset", "d8/d9d/classxii_memory_utils.htm#a2d75e1cf59d5e2838cda245c9d00aecb", null ],
     [ "AlignBackwards", "d8/d9d/classxii_memory_utils.htm#a0213a57bff07f41a694478e2904fd3e9", null ],
     [ "AlignForwards", "d8/d9d/classxii_memory_utils.htm#ae2077cd9ce3a1d141a72aff8daf1f22e", null ],
     [ "AlignSize", "d8/d9d/classxii_memory_utils.htm#a9b96965a085f18ce79a2162ad334dd48", null ],

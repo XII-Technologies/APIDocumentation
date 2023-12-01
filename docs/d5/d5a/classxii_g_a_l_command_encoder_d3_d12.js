@@ -4,7 +4,7 @@ var classxii_g_a_l_command_encoder_d3_d12 =
     [ "~xiiGALCommandEncoderD3D12", "d5/d5a/classxii_g_a_l_command_encoder_d3_d12.htm#ad05ecaa30f2b94dd1c55b26fd7122b39", null ],
     [ "BeginCompute", "d5/d5a/classxii_g_a_l_command_encoder_d3_d12.htm#aa27dcbbd43c1d1218886097a759e47e4", null ],
     [ "BeginQueryPlatform", "d5/d5a/classxii_g_a_l_command_encoder_d3_d12.htm#a3051806e8e33e3474a9fd220a0adc2fa", null ],
-    [ "BeginRendering", "d5/d5a/classxii_g_a_l_command_encoder_d3_d12.htm#ab882cf085daf75058c3798d50efc2691", null ],
+    [ "BeginRendering", "d5/d5a/classxii_g_a_l_command_encoder_d3_d12.htm#a743b8d31004e4f1d056ff0c0ffdb66dc", null ],
     [ "ClearDepthStencilPlatform", "d5/d5a/classxii_g_a_l_command_encoder_d3_d12.htm#ad0b07521947b18c186de38de3cbd82b2", null ],
     [ "ClearRenderTargetPlatform", "d5/d5a/classxii_g_a_l_command_encoder_d3_d12.htm#aa78359bbcf3e4db9d6a008762dabb5f6", null ],
     [ "ClearUnorderedAccessViewPlatform", "d5/d5a/classxii_g_a_l_command_encoder_d3_d12.htm#a695bcd3ae20b026cc05bd08167ee64da", null ],
@@ -14,7 +14,7 @@ var classxii_g_a_l_command_encoder_d3_d12 =
     [ "CopyBufferPlatform", "d5/d5a/classxii_g_a_l_command_encoder_d3_d12.htm#a2365640d9c501eb618bdce14ce5fd17c", null ],
     [ "CopyBufferRegionPlatform", "d5/d5a/classxii_g_a_l_command_encoder_d3_d12.htm#aab9649d63ee85d95fc6d9ac0f29f808e", null ],
     [ "CopyTexturePlatform", "d5/d5a/classxii_g_a_l_command_encoder_d3_d12.htm#ab1ba9304728a88d1741dd644e1896e32", null ],
-    [ "CopyTextureReadbackResultPlatform", "d5/d5a/classxii_g_a_l_command_encoder_d3_d12.htm#a139d913251468facdf7f830d9b156ae9", null ],
+    [ "CopyTextureReadbackResultPlatform", "d5/d5a/classxii_g_a_l_command_encoder_d3_d12.htm#a60ef0b44f0de1acb0fd8a767bd5e5839", null ],
     [ "CopyTextureRegionPlatform", "d5/d5a/classxii_g_a_l_command_encoder_d3_d12.htm#ac29836d48e0a50f61fd554e07895c02b", null ],
     [ "DispatchIndirectPlatform", "d5/d5a/classxii_g_a_l_command_encoder_d3_d12.htm#a82525364f8746f4dd1e034f4020ec31a", null ],
     [ "DispatchPlatform", "d5/d5a/classxii_g_a_l_command_encoder_d3_d12.htm#a0293cb42b10ea39e42a9060f2dd9de8c", null ],
@@ -51,6 +51,6 @@ var classxii_g_a_l_command_encoder_d3_d12 =
     [ "SetVertexBufferPlatform", "d5/d5a/classxii_g_a_l_command_encoder_d3_d12.htm#a3e3b20bab5314860f51dc5f97cd22a4f", null ],
     [ "SetViewportPlatform", "d5/d5a/classxii_g_a_l_command_encoder_d3_d12.htm#ab1a64f491c9fc19d7f2add63c07892f7", null ],
     [ "UpdateBufferPlatform", "d5/d5a/classxii_g_a_l_command_encoder_d3_d12.htm#aed0cc9926c96a87451861b536baa7f84", null ],
-    [ "UpdateTexturePlatform", "d5/d5a/classxii_g_a_l_command_encoder_d3_d12.htm#aa9cc1845dcd7406dc2496fc08bc1b6a0", null ],
+    [ "UpdateTexturePlatform", "d5/d5a/classxii_g_a_l_command_encoder_d3_d12.htm#a27bcecc63556131385afd1227ed26607", null ],
     [ "xiiGALPassD3D12", "d5/d5a/classxii_g_a_l_command_encoder_d3_d12.htm#aa8d7c62c80f5dbbc51c88ed40051f821", null ]
 ];

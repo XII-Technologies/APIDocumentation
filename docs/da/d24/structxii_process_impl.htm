@@ -107,9 +107,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a1d4d146976672e7eb1a83756e1e4cd98"><td class="memItemLeft" align="right" valign="top"><a id="a1d4d146976672e7eb1a83756e1e4cd98"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>StopStreamWatcher</b> ()</td></tr>
 <tr class="separator:a1d4d146976672e7eb1a83756e1e4cd98"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0061fde8784afd902e5caf3f7fe98547"><td class="memItemLeft" align="right" valign="top"><a id="a0061fde8784afd902e5caf3f7fe98547"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>AddStream</b> (xiiInt32 fd, const <a class="el" href="../../dc/d84/structxii_delegate.htm">xiiDelegate</a>&lt; void(<a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a>)&gt; &amp;callback)</td></tr>
-<tr class="separator:a0061fde8784afd902e5caf3f7fe98547"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1af8f0c206cefaad5bd5a780c12bab80"><td class="memItemLeft" align="right" valign="top"><a id="a1af8f0c206cefaad5bd5a780c12bab80"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>AddStream</b> (<a class="el" href="../../df/d40/classxii_fd.htm">xiiFd</a> fd, const <a class="el" href="../../dc/d84/structxii_delegate.htm">xiiDelegate</a>&lt; void(<a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a>)&gt; &amp;callback)</td></tr>
+<tr class="separator:a1af8f0c206cefaad5bd5a780c12bab80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d4550fb565c3607ecf8276c4dbea91e"><td class="memItemLeft" align="right" valign="top"><a id="a9d4550fb565c3607ecf8276c4dbea91e"></a>
+xiiUInt32&#160;</td><td class="memItemRight" valign="bottom"><b>GetNumStreams</b> () const</td></tr>
+<tr class="separator:a9d4550fb565c3607ecf8276c4dbea91e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae52ae85379be463c839dd5fc6bacdb8f"><td class="memItemLeft" align="right" valign="top"><a id="ae52ae85379be463c839dd5fc6bacdb8f"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>Close</b> ()</td></tr>
 <tr class="separator:ae52ae85379be463c839dd5fc6bacdb8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -119,9 +122,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a6b57670967ecdd794280bd8ead48d558"><td class="memItemLeft" align="right" valign="top"><a id="a6b57670967ecdd794280bd8ead48d558"></a>
 static void *&#160;</td><td class="memItemRight" valign="bottom"><b>StreamWatcherThread</b> (void *context)</td></tr>
 <tr class="separator:a6b57670967ecdd794280bd8ead48d558"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1e388054d7b5034e12703a62a57a3478"><td class="memItemLeft" align="right" valign="top"><a id="a1e388054d7b5034e12703a62a57a3478"></a>
-static <a class="el" href="../../dd/dad/structxii_result.htm">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><b>StartChildProcess</b> (const xiiProcessOptions &amp;opt, pid_t &amp;outPid, bool suspended, xiiInt32 &amp;outStdOutFd, xiiInt32 &amp;outStdErrFd)</td></tr>
-<tr class="separator:a1e388054d7b5034e12703a62a57a3478"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4908a5e7897c56287d1eee29397edd60"><td class="memItemLeft" align="right" valign="top"><a id="a4908a5e7897c56287d1eee29397edd60"></a>
+static <a class="el" href="../../dd/dad/structxii_result.htm">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><b>StartChildProcess</b> (const xiiProcessOptions &amp;opt, pid_t &amp;outPid, bool suspended, <a class="el" href="../../df/d40/classxii_fd.htm">xiiFd</a> &amp;outStdOutFd, <a class="el" href="../../df/d40/classxii_fd.htm">xiiFd</a> &amp;outStdErrFd)</td></tr>
+<tr class="separator:a4908a5e7897c56287d1eee29397edd60"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -143,12 +146,12 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_processSuspended</b
 <tr class="memitem:abc2e71a98bffc0b4f9468717a657db56"><td class="memItemLeft" align="right" valign="top"><a id="abc2e71a98bffc0b4f9468717a657db56"></a>
 <a class="el" href="../../d9/d4a/classxii_unique_ptr.htm">xiiUniquePtr</a>&lt; <a class="el" href="../../d6/db1/classxii_o_s_thread.htm">xiiOSThread</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_streamWatcherThread</b></td></tr>
 <tr class="separator:abc2e71a98bffc0b4f9468717a657db56"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8a6e18afcbb87a066d6606579073fa55"><td class="memItemLeft" align="right" valign="top"><a id="a8a6e18afcbb87a066d6606579073fa55"></a>
-xiiInt32&#160;</td><td class="memItemRight" valign="bottom"><b>m_wakeupPipeReadEnd</b> = -1</td></tr>
-<tr class="separator:a8a6e18afcbb87a066d6606579073fa55"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aad1e00b0a2ff5d10c91b2307663c0a6e"><td class="memItemLeft" align="right" valign="top"><a id="aad1e00b0a2ff5d10c91b2307663c0a6e"></a>
-xiiInt32&#160;</td><td class="memItemRight" valign="bottom"><b>m_wakeupPipeWriteEnd</b> = -1</td></tr>
-<tr class="separator:aad1e00b0a2ff5d10c91b2307663c0a6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc1154cbf05ec14799d98397fc24d9be"><td class="memItemLeft" align="right" valign="top"><a id="adc1154cbf05ec14799d98397fc24d9be"></a>
+<a class="el" href="../../df/d40/classxii_fd.htm">xiiFd</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_wakeupPipeReadEnd</b></td></tr>
+<tr class="separator:adc1154cbf05ec14799d98397fc24d9be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3d036e29a6b9bd303d89a56b48f5d4f"><td class="memItemLeft" align="right" valign="top"><a id="af3d036e29a6b9bd303d89a56b48f5d4f"></a>
+<a class="el" href="../../df/d40/classxii_fd.htm">xiiFd</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_wakeupPipeWriteEnd</b></td></tr>
+<tr class="separator:af3d036e29a6b9bd303d89a56b48f5d4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9edabe69c225786bd0dce1c39f3775be"><td class="memItemLeft" align="right" valign="top"><a id="a9edabe69c225786bd0dce1c39f3775be"></a>
 xiiOsProcessHandle&#160;</td><td class="memItemRight" valign="bottom"><b>m_ProcessHandle</b> = nullptr</td></tr>
 <tr class="separator:a9edabe69c225786bd0dce1c39f3775be"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -175,7 +178,7 @@ xiiOsProcessID&#160;</td><td class="memItemRight" valign="bottom"><b>m_ProcessID
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../da/d24/structxii_process_impl.htm">xiiProcessImpl</a></li>
-    <li class="footer">Generated on Sun Nov 19 2023 19:17:30 for XIIEngine by
+    <li class="footer">Generated on Fri Dec 1 2023 23:48:56 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

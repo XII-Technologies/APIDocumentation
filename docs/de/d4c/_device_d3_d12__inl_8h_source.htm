@@ -98,23 +98,30 @@ $(document).ready(function(){initNavTree('de/d4c/_device_d3_d12__inl_8h_source.h
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;  <span class="keywordflow">return</span> m_pEngineFactory;</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;}</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;XII_ALWAYS_INLINE Diligent::IDeviceContext* xiiGALDeviceD3D12::GetImmediateContext()</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;XII_ALWAYS_INLINE <a class="code" href="../../da/d62/classxii_g_a_l_pass_d3_d12.htm">xiiGALPassD3D12</a>* xiiGALDeviceD3D12::GetDefaultPass()</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;{</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;  <span class="keywordflow">return</span> m_pDeviceContexts[0];</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;  <span class="keywordflow">return</span> m_pDefaultPass.<a class="code" href="../../d9/d4a/classxii_unique_ptr.htm#aff6bd0f915964769fe2ec7a2a81fd2d5">Borrow</a>();</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;}</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;XII_ALWAYS_INLINE <span class="keyword">const</span> <a class="code" href="../../d3/daa/classxii_g_a_l_format_lookup_table.htm">xiiGALFormatLookupTableD3D12</a>&amp; xiiGALDeviceD3D12::GetFormatLookupTable()<span class="keyword"> const</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword"></span>{</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;  <span class="keywordflow">return</span> m_FormatLookupTable;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;XII_ALWAYS_INLINE Diligent::IDeviceContext* xiiGALDeviceD3D12::GetImmediateContext()</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;{</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;  <span class="keywordflow">return</span> m_pDeviceContexts[0];</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;}</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;XII_ALWAYS_INLINE <span class="keyword">const</span> <a class="code" href="../../d3/daa/classxii_g_a_l_format_lookup_table.htm">xiiGALFormatLookupTableD3D12</a>&amp; xiiGALDeviceD3D12::GetFormatLookupTable()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  <span class="keywordflow">return</span> m_FormatLookupTable;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclassxii_g_a_l_format_lookup_table_htm"><div class="ttname"><a href="../../d3/daa/classxii_g_a_l_format_lookup_table.htm">xiiGALFormatLookupTable&lt; xiiGALFormatLookupEntryD3D12 &gt;</a></div></div>
+<div class="ttc" id="aclassxii_unique_ptr_htm_aff6bd0f915964769fe2ec7a2a81fd2d5"><div class="ttname"><a href="../../d9/d4a/classxii_unique_ptr.htm#aff6bd0f915964769fe2ec7a2a81fd2d5">xiiUniquePtr::Borrow</a></div><div class="ttdeci">T * Borrow() const</div><div class="ttdoc">Borrows the managed object. The unique ptr stays unmodified.</div><div class="ttdef"><b>Definition:</b> UniquePtr_inl.h:102</div></div>
+<div class="ttc" id="aclassxii_g_a_l_pass_d3_d12_htm"><div class="ttname"><a href="../../da/d62/classxii_g_a_l_pass_d3_d12.htm">xiiGALPassD3D12</a></div><div class="ttdef"><b>Definition:</b> PassD3D12.h:9</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.htm">home</a></li><li class="navelem"><a class="el" href="../../dir_1036706e55c22cab35bc1c58ee689f1d.htm">runner</a></li><li class="navelem"><a class="el" href="../../dir_629f8151d55d307162ff2d619fb1783d.htm">work</a></li><li class="navelem"><a class="el" href="../../dir_1ddc44fe1263a8c7935fa6130b7d9499.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_2c1b6808f12952f4c36e05ba7068379a.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_b5a1c4ecfca018ad24b729e213296d41.htm">Source</a></li><li class="navelem"><a class="el" href="../../dir_e321052006a51284e67389ab20037e7c.htm">Engine</a></li><li class="navelem"><a class="el" href="../../dir_68524623ec22db3a46657ed65685622a.htm">GraphicsD3D12</a></li><li class="navelem"><a class="el" href="../../dir_c7a0076af16affe66a8847184ae64806.htm">Device</a></li><li class="navelem"><a class="el" href="../../dir_bd704df0f981787b88756e5c19a784ec.htm">Implementation</a></li><li class="navelem"><b>DeviceD3D12_inl.h</b></li>
-    <li class="footer">Generated on Sun Nov 19 2023 19:17:26 for XIIEngine by
+    <li class="footer">Generated on Fri Dec 1 2023 23:48:51 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

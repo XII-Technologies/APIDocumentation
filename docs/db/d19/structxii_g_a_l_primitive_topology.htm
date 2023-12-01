@@ -85,6 +85,7 @@ $(document).ready(function(){initNavTree('db/d19/structxii_g_a_l_primitive_topol
 <div class="header">
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="../../d6/d7c/structxii_g_a_l_primitive_topology-members.htm">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">xiiGALPrimitiveTopology Struct Reference</div>  </div>
@@ -109,11 +110,11 @@ Inheritance diagram for xiiGALPrimitiveTopology:</div>
 Public Types</h2></td></tr>
 <tr class="memitem:a7b7c5b79846d73ceaf06670334c7388e"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d19/structxii_g_a_l_primitive_topology.htm#a7b7c5b79846d73ceaf06670334c7388e">Enum</a> : StorageType { <br />
 &#160;&#160;<a class="el" href="../../db/d19/structxii_g_a_l_primitive_topology.htm#a7b7c5b79846d73ceaf06670334c7388ea2b4aa05f86acfea3c85411b0a8076ceb">Undefined</a> = -1, 
-<a class="el" href="../../db/d19/structxii_g_a_l_primitive_topology.htm#a7b7c5b79846d73ceaf06670334c7388ea435d1cf5fe20fb86622c3ae4f2ecdf99">TriangleList</a>, 
-<a class="el" href="../../db/d19/structxii_g_a_l_primitive_topology.htm#a7b7c5b79846d73ceaf06670334c7388ea45be82c753cf1a88bd58e3e8b94f0ec2">TriangleStrip</a>, 
 <a class="el" href="../../db/d19/structxii_g_a_l_primitive_topology.htm#a7b7c5b79846d73ceaf06670334c7388ea45a476286a94764a32097a8f75de9304">PointList</a>, 
+<a class="el" href="../../db/d19/structxii_g_a_l_primitive_topology.htm#a7b7c5b79846d73ceaf06670334c7388ea98b1b540a39eb1488292066280f0188d">LineList</a>, 
+<a class="el" href="../../db/d19/structxii_g_a_l_primitive_topology.htm#a7b7c5b79846d73ceaf06670334c7388ea435d1cf5fe20fb86622c3ae4f2ecdf99">TriangleList</a>, 
 <br />
-&#160;&#160;<a class="el" href="../../db/d19/structxii_g_a_l_primitive_topology.htm#a7b7c5b79846d73ceaf06670334c7388ea98b1b540a39eb1488292066280f0188d">LineList</a>, 
+&#160;&#160;<a class="el" href="../../db/d19/structxii_g_a_l_primitive_topology.htm#a7b7c5b79846d73ceaf06670334c7388ea45be82c753cf1a88bd58e3e8b94f0ec2">TriangleStrip</a>, 
 <a class="el" href="../../db/d19/structxii_g_a_l_primitive_topology.htm#a7b7c5b79846d73ceaf06670334c7388ead5a5f5981ca58944a2a9bc2881fe4771">LineStrip</a>, 
 <a class="el" href="../../db/d19/structxii_g_a_l_primitive_topology.htm#a7b7c5b79846d73ceaf06670334c7388ea43a9ef36c0e5a94b3c2e158ee5fa6b81">TriangleListAdjacent</a>, 
 <a class="el" href="../../db/d19/structxii_g_a_l_primitive_topology.htm#a7b7c5b79846d73ceaf06670334c7388eadae6afaa088deff8deddbbfc0f5c59d7">TrangleStripAdjacent</a>, 
@@ -168,6 +169,12 @@ Public Types</h2></td></tr>
 <tr class="memitem:acf964e931782d24f9ee02b7bda6af1c2"><td class="memItemLeft" align="right" valign="top"><a id="acf964e931782d24f9ee02b7bda6af1c2"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>StorageType</b> = xiiInt8</td></tr>
 <tr class="separator:acf964e931782d24f9ee02b7bda6af1c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a432ac4b961e04db087530c3c195ec981"><td class="memItemLeft" align="right" valign="top"><a id="a432ac4b961e04db087530c3c195ec981"></a>
+static xiiUInt32&#160;</td><td class="memItemRight" valign="bottom"><b>VerticesPerPrimitive</b> (<a class="el" href="../../de/dfd/structxii_enum.htm">xiiEnum</a>&lt; <a class="el" href="../../db/d19/structxii_g_a_l_primitive_topology.htm">xiiGALPrimitiveTopology</a> &gt; e)</td></tr>
+<tr class="separator:a432ac4b961e04db087530c3c195ec981"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This describes the topology of how vertices are interpreted by the pipeline. </p>
@@ -186,13 +193,13 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>StorageType</b> = xi
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a7b7c5b79846d73ceaf06670334c7388ea2b4aa05f86acfea3c85411b0a8076ceb"></a>Undefined&#160;</td><td class="fielddoc"><p>Undefined topology. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a7b7c5b79846d73ceaf06670334c7388ea435d1cf5fe20fb86622c3ae4f2ecdf99"></a>TriangleList&#160;</td><td class="fielddoc"><p>Interpret the vertex data as a list of triangles. </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a7b7c5b79846d73ceaf06670334c7388ea45be82c753cf1a88bd58e3e8b94f0ec2"></a>TriangleStrip&#160;</td><td class="fielddoc"><p>Interpret the vertex data as a triangle strip. </p>
-</td></tr>
 <tr><td class="fieldname"><a id="a7b7c5b79846d73ceaf06670334c7388ea45a476286a94764a32097a8f75de9304"></a>PointList&#160;</td><td class="fielddoc"><p>Interpret the vertex data as a list of points. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a7b7c5b79846d73ceaf06670334c7388ea98b1b540a39eb1488292066280f0188d"></a>LineList&#160;</td><td class="fielddoc"><p>Interpret the vertex data as a list of lines. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a7b7c5b79846d73ceaf06670334c7388ea435d1cf5fe20fb86622c3ae4f2ecdf99"></a>TriangleList&#160;</td><td class="fielddoc"><p>Interpret the vertex data as a list of triangles. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a7b7c5b79846d73ceaf06670334c7388ea45be82c753cf1a88bd58e3e8b94f0ec2"></a>TriangleStrip&#160;</td><td class="fielddoc"><p>Interpret the vertex data as a triangle strip. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a7b7c5b79846d73ceaf06670334c7388ead5a5f5981ca58944a2a9bc2881fe4771"></a>LineStrip&#160;</td><td class="fielddoc"><p>Interpret the vertex data as a line strip. </p>
 </td></tr>
@@ -272,8 +279,9 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>StorageType</b> = xi
 
 </div>
 </div>
-<hr/>The documentation for this struct was generated from the following file:<ul>
+<hr/>The documentation for this struct was generated from the following files:<ul>
 <li>/home/runner/work/XII/XII/Source/Engine/GraphicsFoundation/Declarations/<a class="el" href="../../d0/d29/_graphics_types_8h_source.htm">GraphicsTypes.h</a></li>
+<li>/home/runner/work/XII/XII/Source/Engine/GraphicsFoundation/Declarations/Implementation/<a class="el" href="../../d7/d4f/_graphics_types__inl_8h_source.htm">GraphicsTypes_inl.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -281,7 +289,7 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>StorageType</b> = xi
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../db/d19/structxii_g_a_l_primitive_topology.htm">xiiGALPrimitiveTopology</a></li>
-    <li class="footer">Generated on Sun Nov 19 2023 19:17:28 for XIIEngine by
+    <li class="footer">Generated on Fri Dec 1 2023 23:48:54 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

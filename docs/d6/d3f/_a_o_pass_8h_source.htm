@@ -116,7 +116,7 @@ $(document).ready(function(){initNavTree('d6/d3f/_a_o_pass_8h_source.htm','../..
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  <span class="keywordtype">float</span> GetFadeOutEnd() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  <span class="keywordtype">void</span> CreateSamplerState();</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  <span class="keywordtype">void</span> CreateSampler();</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  <a class="code" href="../../d4/d12/structxii_render_pipeline_node_input_pin.htm">xiiRenderPipelineNodeInputPin</a>  m_PinDepthInput;</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  <a class="code" href="../../d7/d3c/structxii_render_pipeline_node_output_pin.htm">xiiRenderPipelineNodeOutputPin</a> m_PinOutput;</div>
@@ -138,7 +138,7 @@ $(document).ready(function(){initNavTree('d6/d3f/_a_o_pass_8h_source.htm','../..
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <a class="code" href="../../d6/d16/classxii_typed_resource_handle.htm">xiiTexture2DResourceHandle</a> m_hNoiseTexture;</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  xiiGALSamplerStateHandle m_hSSAOSamplerState;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <a class="code" href="../../da/dfe/classxii_g_a_l_sampler_handle.htm">xiiGALSamplerHandle</a> m_hSSAOSampler;</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <a class="code" href="../../d6/d16/classxii_typed_resource_handle.htm">xiiShaderResourceHandle</a> m_hDownscaleShader;</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <a class="code" href="../../d6/d16/classxii_typed_resource_handle.htm">xiiShaderResourceHandle</a> m_hSSAOShader;</div>
@@ -148,12 +148,13 @@ $(document).ready(function(){initNavTree('d6/d3f/_a_o_pass_8h_source.htm','../..
 </div><!-- doc-content -->
 <div class="ttc" id="aclassxii_array_ptr_htm"><div class="ttname"><a href="../../d0/d60/classxii_array_ptr.htm">xiiArrayPtr</a></div><div class="ttdoc">This class encapsulates an array and it's size. It is recommended to use this class instead of plain ...</div><div class="ttdef"><b>Definition:</b> ArrayPtr.h:36</div></div>
 <div class="ttc" id="astructxii_render_pipeline_node_output_pin_htm"><div class="ttname"><a href="../../d7/d3c/structxii_render_pipeline_node_output_pin.htm">xiiRenderPipelineNodeOutputPin</a></div><div class="ttdef"><b>Definition:</b> RenderPipelineNode.h:41</div></div>
+<div class="ttc" id="aclassxii_g_a_l_sampler_handle_htm"><div class="ttname"><a href="../../da/dfe/classxii_g_a_l_sampler_handle.htm">xiiGALSamplerHandle</a></div><div class="ttdef"><b>Definition:</b> GraphicsTypes.h:1656</div></div>
 <div class="ttc" id="astructxii_render_pipeline_node_input_pin_htm"><div class="ttname"><a href="../../d4/d12/structxii_render_pipeline_node_input_pin.htm">xiiRenderPipelineNodeInputPin</a></div><div class="ttdef"><b>Definition:</b> RenderPipelineNode.h:34</div></div>
-<div class="ttc" id="aclassxii_render_pipeline_pass_htm"><div class="ttname"><a href="../../d5/d44/classxii_render_pipeline_pass.htm">xiiRenderPipelinePass</a></div><div class="ttdef"><b>Definition:</b> RenderPipelinePass.h:25</div></div>
+<div class="ttc" id="aclassxii_render_pipeline_pass_htm"><div class="ttname"><a href="../../d5/d44/classxii_render_pipeline_pass.htm">xiiRenderPipelinePass</a></div><div class="ttdef"><b>Definition:</b> RenderPipelinePass.h:26</div></div>
 <div class="ttc" id="aclassxii_view_htm"><div class="ttname"><a href="../../dd/df1/classxii_view.htm">xiiView</a></div><div class="ttdoc">Encapsulates a view on the given world through the given camera and rendered with the specified Rende...</div><div class="ttdef"><b>Definition:</b> View.h:20</div></div>
 <div class="ttc" id="aclassxii_constant_buffer_storage_handle_htm"><div class="ttname"><a href="../../d7/d1a/classxii_constant_buffer_storage_handle.htm">xiiConstantBufferStorageHandle</a></div><div class="ttdef"><b>Definition:</b> ConstantBufferStorage.h:53</div></div>
 <div class="ttc" id="aclassxii_stream_writer_htm"><div class="ttname"><a href="../../d0/d18/classxii_stream_writer.htm">xiiStreamWriter</a></div><div class="ttdoc">Interface for binary out (write) streams.</div><div class="ttdef"><b>Definition:</b> Stream.h:106</div></div>
-<div class="ttc" id="astructxii_render_view_context_htm"><div class="ttname"><a href="../../d9/d0f/structxii_render_view_context.htm">xiiRenderViewContext</a></div><div class="ttdef"><b>Definition:</b> Declarations.h:50</div></div>
+<div class="ttc" id="astructxii_render_view_context_htm"><div class="ttname"><a href="../../d9/d0f/structxii_render_view_context.htm">xiiRenderViewContext</a></div><div class="ttdef"><b>Definition:</b> Declarations.h:51</div></div>
 <div class="ttc" id="aclassxii_stream_reader_htm"><div class="ttname"><a href="../../d4/d5e/classxii_stream_reader.htm">xiiStreamReader</a></div><div class="ttdoc">Interface for binary in (read) streams.</div><div class="ttdef"><b>Definition:</b> Stream.h:21</div></div>
 <div class="ttc" id="aclassxii_a_o_pass_htm"><div class="ttname"><a href="../../d7/d81/classxii_a_o_pass.htm">xiiAOPass</a></div><div class="ttdef"><b>Definition:</b> AOPass.h:8</div></div>
 <div class="ttc" id="aclassxii_render_pipeline_pass_htm_a36bc9d71d7061f9ea4e723fda6d41e7a"><div class="ttname"><a href="../../d5/d44/classxii_render_pipeline_pass.htm#a36bc9d71d7061f9ea4e723fda6d41e7a">xiiRenderPipelinePass::GetRenderTargetDescriptions</a></div><div class="ttdeci">virtual bool GetRenderTargetDescriptions(const xiiView &amp;view, const xiiArrayPtr&lt; xiiGALTextureCreationDescription *const &gt; inputs, xiiArrayPtr&lt; xiiGALTextureCreationDescription &gt; outputs)=0</div><div class="ttdoc">For a given input pin configuration, provide the output configuration of this node....</div></div>
@@ -164,7 +165,7 @@ $(document).ready(function(){initNavTree('d6/d3f/_a_o_pass_8h_source.htm','../..
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.htm">home</a></li><li class="navelem"><a class="el" href="../../dir_1036706e55c22cab35bc1c58ee689f1d.htm">runner</a></li><li class="navelem"><a class="el" href="../../dir_629f8151d55d307162ff2d619fb1783d.htm">work</a></li><li class="navelem"><a class="el" href="../../dir_1ddc44fe1263a8c7935fa6130b7d9499.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_2c1b6808f12952f4c36e05ba7068379a.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_b5a1c4ecfca018ad24b729e213296d41.htm">Source</a></li><li class="navelem"><a class="el" href="../../dir_e321052006a51284e67389ab20037e7c.htm">Engine</a></li><li class="navelem"><a class="el" href="../../dir_d1b456933e20132afd1d01c7da962f40.htm">GraphicsCore</a></li><li class="navelem"><a class="el" href="../../dir_dbd5e7b3b3ed2fc0d3f11d6b12eac684.htm">Pipeline</a></li><li class="navelem"><a class="el" href="../../dir_035d2b8ae5a0ce65a7a7fe43711062bd.htm">Passes</a></li><li class="navelem"><b>AOPass.h</b></li>
-    <li class="footer">Generated on Sun Nov 19 2023 19:17:25 for XIIEngine by
+    <li class="footer">Generated on Fri Dec 1 2023 23:48:51 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

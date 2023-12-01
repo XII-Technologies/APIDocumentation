@@ -3,10 +3,10 @@ var structxii_g_a_l_primitive_topology =
     [ "StorageType", "db/d19/structxii_g_a_l_primitive_topology.htm#acf964e931782d24f9ee02b7bda6af1c2", null ],
     [ "Enum", "db/d19/structxii_g_a_l_primitive_topology.htm#a7b7c5b79846d73ceaf06670334c7388e", [
       [ "Undefined", "db/d19/structxii_g_a_l_primitive_topology.htm#a7b7c5b79846d73ceaf06670334c7388ea2b4aa05f86acfea3c85411b0a8076ceb", null ],
-      [ "TriangleList", "db/d19/structxii_g_a_l_primitive_topology.htm#a7b7c5b79846d73ceaf06670334c7388ea435d1cf5fe20fb86622c3ae4f2ecdf99", null ],
-      [ "TriangleStrip", "db/d19/structxii_g_a_l_primitive_topology.htm#a7b7c5b79846d73ceaf06670334c7388ea45be82c753cf1a88bd58e3e8b94f0ec2", null ],
       [ "PointList", "db/d19/structxii_g_a_l_primitive_topology.htm#a7b7c5b79846d73ceaf06670334c7388ea45a476286a94764a32097a8f75de9304", null ],
       [ "LineList", "db/d19/structxii_g_a_l_primitive_topology.htm#a7b7c5b79846d73ceaf06670334c7388ea98b1b540a39eb1488292066280f0188d", null ],
+      [ "TriangleList", "db/d19/structxii_g_a_l_primitive_topology.htm#a7b7c5b79846d73ceaf06670334c7388ea435d1cf5fe20fb86622c3ae4f2ecdf99", null ],
+      [ "TriangleStrip", "db/d19/structxii_g_a_l_primitive_topology.htm#a7b7c5b79846d73ceaf06670334c7388ea45be82c753cf1a88bd58e3e8b94f0ec2", null ],
       [ "LineStrip", "db/d19/structxii_g_a_l_primitive_topology.htm#a7b7c5b79846d73ceaf06670334c7388ead5a5f5981ca58944a2a9bc2881fe4771", null ],
       [ "TriangleListAdjacent", "db/d19/structxii_g_a_l_primitive_topology.htm#a7b7c5b79846d73ceaf06670334c7388ea43a9ef36c0e5a94b3c2e158ee5fa6b81", null ],
       [ "TrangleStripAdjacent", "db/d19/structxii_g_a_l_primitive_topology.htm#a7b7c5b79846d73ceaf06670334c7388eadae6afaa088deff8deddbbfc0f5c59d7", null ],

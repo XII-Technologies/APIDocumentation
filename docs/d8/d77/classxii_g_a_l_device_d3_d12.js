@@ -44,6 +44,7 @@ var classxii_g_a_l_device_d3_d12 =
     [ "FillCapabilitiesPlatform", "d8/d77/classxii_g_a_l_device_d3_d12.htm#a23a3a9a89ea2d9c933d20b920a552ae6", null ],
     [ "FillFormatLookupTable", "d8/d77/classxii_g_a_l_device_d3_d12.htm#ac8e587b06dfdf7ff21df0790b572efe7", null ],
     [ "FlushPendingObjects", "d8/d77/classxii_g_a_l_device_d3_d12.htm#ab69f5561cffe2b3a45bd8bfd9585d330", null ],
+    [ "GetDefaultPass", "d8/d77/classxii_g_a_l_device_d3_d12.htm#a6b2d54bb074ab00f5b70c6bf1db9abea", null ],
     [ "GetDevice", "d8/d77/classxii_g_a_l_device_d3_d12.htm#af8afb57ab61a56328c8557ec601cf7c5", null ],
     [ "GetFactory", "d8/d77/classxii_g_a_l_device_d3_d12.htm#af3bdb7cd64d073aa5e9a28ab7154c471", null ],
     [ "GetFormatLookupTable", "d8/d77/classxii_g_a_l_device_d3_d12.htm#a35246f16e4cf1c62ab1943e42695b3f8", null ],

@@ -13,5 +13,5 @@ var classxii_g_a_l_bottom_level_a_s_d3_d12 =
     [ "SetState", "de/d3f/classxii_g_a_l_bottom_level_a_s_d3_d12.htm#a51a4091c7ea1fce4bca788813828bbe3", null ],
     [ "xiiGALDeviceD3D12", "de/d3f/classxii_g_a_l_bottom_level_a_s_d3_d12.htm#a9b3da82b84b68e0128d059e18e11b67d", null ],
     [ "xiiMemoryUtils", "de/d3f/classxii_g_a_l_bottom_level_a_s_d3_d12.htm#aefc9ff75d6833fd2f05be48e16436db6", null ],
-    [ "m_pBottomLevelAS", "de/d3f/classxii_g_a_l_bottom_level_a_s_d3_d12.htm#adc301870a654c858f2d5b6eb7cca4d44", null ]
+    [ "m_pBottomLevelAS", "de/d3f/classxii_g_a_l_bottom_level_a_s_d3_d12.htm#a74e987853d7f1b2a889508c96206c651", null ]
 ];

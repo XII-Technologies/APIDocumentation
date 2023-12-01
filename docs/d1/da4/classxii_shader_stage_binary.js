@@ -2,11 +2,6 @@ var classxii_shader_stage_binary =
 [
     [ "Version", "d1/da4/classxii_shader_stage_binary.htm#a0a8ff028e60ee35464534d2883fd54e5", [
       [ "Version0", "d1/da4/classxii_shader_stage_binary.htm#a0a8ff028e60ee35464534d2883fd54e5aa220592d2682fea6fea0adc9c038b9a5", null ],
-      [ "Version1", "d1/da4/classxii_shader_stage_binary.htm#a0a8ff028e60ee35464534d2883fd54e5a9e50f7cae3662f16aaeb416545ae00cd", null ],
-      [ "Version2", "d1/da4/classxii_shader_stage_binary.htm#a0a8ff028e60ee35464534d2883fd54e5af0767f437285a305616bb6ef001e77e9", null ],
-      [ "Version3", "d1/da4/classxii_shader_stage_binary.htm#a0a8ff028e60ee35464534d2883fd54e5a84d99069b4dca2c04594f170a21f02af", null ],
-      [ "Version4", "d1/da4/classxii_shader_stage_binary.htm#a0a8ff028e60ee35464534d2883fd54e5a3229ae37a99d4d4a7c9d9cf6410d1625", null ],
-      [ "Version5", "d1/da4/classxii_shader_stage_binary.htm#a0a8ff028e60ee35464534d2883fd54e5aca0f88962116c42a19c95923a776990a", null ],
       [ "ENUM_COUNT", "d1/da4/classxii_shader_stage_binary.htm#a0a8ff028e60ee35464534d2883fd54e5a4071aa86de78f5b574021d984ecf9780", null ],
       [ "VersionCurrent", "d1/da4/classxii_shader_stage_binary.htm#a0a8ff028e60ee35464534d2883fd54e5a71ebc098f279e76b50d9f8071c813a22", null ]
     ] ],

@@ -7,5 +7,5 @@ var classxii_g_a_l_framebuffer_d3_d12 =
     [ "InitPlatform", "d6/dcb/classxii_g_a_l_framebuffer_d3_d12.htm#acc3f2538ccb660a7ccd6165e9afbb9e7", null ],
     [ "xiiGALDeviceD3D12", "d6/dcb/classxii_g_a_l_framebuffer_d3_d12.htm#a9b3da82b84b68e0128d059e18e11b67d", null ],
     [ "xiiMemoryUtils", "d6/dcb/classxii_g_a_l_framebuffer_d3_d12.htm#aefc9ff75d6833fd2f05be48e16436db6", null ],
-    [ "m_pFramebuffer", "d6/dcb/classxii_g_a_l_framebuffer_d3_d12.htm#a60bf1986711f1f9fba8438d3e1779316", null ]
+    [ "m_pFramebuffer", "d6/dcb/classxii_g_a_l_framebuffer_d3_d12.htm#acf30b58b785df7fb60210aa4b8b82103", null ]
 ];

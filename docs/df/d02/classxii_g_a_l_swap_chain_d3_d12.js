@@ -18,5 +18,5 @@ var classxii_g_a_l_swap_chain_d3_d12 =
     [ "xiiGALTexture", "df/d02/classxii_g_a_l_swap_chain_d3_d12.htm#ae9c1ffbbfbdbd10ec746299b78518848", null ],
     [ "xiiMemoryUtils", "df/d02/classxii_g_a_l_swap_chain_d3_d12.htm#aefc9ff75d6833fd2f05be48e16436db6", null ],
     [ "m_BackbufferTextures", "df/d02/classxii_g_a_l_swap_chain_d3_d12.htm#a6bc97e44a2758a32c22b360e3092f6c9", null ],
-    [ "m_pSwapChain", "df/d02/classxii_g_a_l_swap_chain_d3_d12.htm#affa62c8249a9add969c60141f3677668", null ]
+    [ "m_pSwapChain", "df/d02/classxii_g_a_l_swap_chain_d3_d12.htm#af2f4efac2303d60403b8a1a207c16e6a", null ]
 ];

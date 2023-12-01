@@ -9,10 +9,10 @@ var classxii_dynamic_mesh_buffer_resource =
     [ "GetColorBuffer", "dd/d17/classxii_dynamic_mesh_buffer_resource.htm#af97c682ed5d7a98be992e9c82937a022", null ],
     [ "GetDescriptor", "dd/d17/classxii_dynamic_mesh_buffer_resource.htm#ab720928656d1fd5abcd72c11962857e9", null ],
     [ "GetIndexBuffer", "dd/d17/classxii_dynamic_mesh_buffer_resource.htm#a5a3ee0635cde2add358dcc0b6864e3e3", null ],
+    [ "GetInputLayout", "dd/d17/classxii_dynamic_mesh_buffer_resource.htm#a797bd34922830eacccddcb2beac87df0", null ],
     [ "GetVertexBuffer", "dd/d17/classxii_dynamic_mesh_buffer_resource.htm#abf9a2c4c8b16728d3787bc63b5f6c246", null ],
-    [ "GetVertexDeclaration", "dd/d17/classxii_dynamic_mesh_buffer_resource.htm#a7bd2bae9b4d020c31494c7456acbc9eb", null ],
     [ "UnloadData", "dd/d17/classxii_dynamic_mesh_buffer_resource.htm#abd8f2338f1687998aeea2dc55b61b605", null ],
     [ "UpdateContent", "dd/d17/classxii_dynamic_mesh_buffer_resource.htm#a69ee234cf3c391c13622c341ff5ec2a1", null ],
-    [ "UpdateGpuBuffer", "dd/d17/classxii_dynamic_mesh_buffer_resource.htm#a66e53411827f5ec8863495491e950039", null ],
+    [ "UpdateGpuBuffer", "dd/d17/classxii_dynamic_mesh_buffer_resource.htm#a677956de9f9bf7cf04c6a6fc8589ac71", null ],
     [ "UpdateMemoryUsage", "dd/d17/classxii_dynamic_mesh_buffer_resource.htm#aeebe595ad9f80c9743e345ca0ab47fd9", null ]
 ];

@@ -9,5 +9,5 @@ var classxii_g_a_l_query_d3_d12 =
     [ "Invalidate", "d7/dc2/classxii_g_a_l_query_d3_d12.htm#a8cbff20eb88df5ab924bee36298308de", null ],
     [ "xiiGALDeviceD3D12", "d7/dc2/classxii_g_a_l_query_d3_d12.htm#a9b3da82b84b68e0128d059e18e11b67d", null ],
     [ "xiiMemoryUtils", "d7/dc2/classxii_g_a_l_query_d3_d12.htm#aefc9ff75d6833fd2f05be48e16436db6", null ],
-    [ "m_pQuery", "d7/dc2/classxii_g_a_l_query_d3_d12.htm#ac13674e2f462c6d2a301f6238f292ea9", null ]
+    [ "m_pQuery", "d7/dc2/classxii_g_a_l_query_d3_d12.htm#ac4ec0a0d92879898cfccb6d8b1cb32ef", null ]
 ];

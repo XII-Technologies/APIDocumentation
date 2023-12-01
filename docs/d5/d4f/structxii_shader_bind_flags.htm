@@ -102,10 +102,10 @@ Public Types</h2></td></tr>
 <tr class="memitem:af47761c138fc627e3ab65bf906b28df1"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d4f/structxii_shader_bind_flags.htm#af47761c138fc627e3ab65bf906b28df1">Enum</a> { <br />
 &#160;&#160;<a class="el" href="../../d5/d4f/structxii_shader_bind_flags.htm#af47761c138fc627e3ab65bf906b28df1a44067a6b77ae7fdf58ec1be374848a25">None</a> = 0, 
 <a class="el" href="../../d5/d4f/structxii_shader_bind_flags.htm#af47761c138fc627e3ab65bf906b28df1a0a7cefbccd7ebad4a50e56fe44fe2a23">ForceRebind</a> = XII_BIT(0), 
-<a class="el" href="../../d5/d4f/structxii_shader_bind_flags.htm#af47761c138fc627e3ab65bf906b28df1aa97eff038b2085d834c593d04c6502d8">NoRasterizerState</a>, 
-<a class="el" href="../../d5/d4f/structxii_shader_bind_flags.htm#af47761c138fc627e3ab65bf906b28df1ad27078902fea5df88bbf72de192cd020">NoDepthStencilState</a>, 
+<a class="el" href="../../d5/d4f/structxii_shader_bind_flags.htm#af47761c138fc627e3ab65bf906b28df1aa97eff038b2085d834c593d04c6502d8">NoRasterizerState</a> = XII_BIT(1), 
+<a class="el" href="../../d5/d4f/structxii_shader_bind_flags.htm#af47761c138fc627e3ab65bf906b28df1ad27078902fea5df88bbf72de192cd020">NoDepthStencilState</a> = XII_BIT(2), 
 <br />
-&#160;&#160;<a class="el" href="../../d5/d4f/structxii_shader_bind_flags.htm#af47761c138fc627e3ab65bf906b28df1abf35b64826dd6539fab0b225a93c257d">NoBlendState</a>, 
+&#160;&#160;<a class="el" href="../../d5/d4f/structxii_shader_bind_flags.htm#af47761c138fc627e3ab65bf906b28df1abf35b64826dd6539fab0b225a93c257d">NoBlendState</a> = XII_BIT(3), 
 <b>NoStateBinding</b> = NoRasterizerState | NoDepthStencilState | NoBlendState, 
 <b>Default</b> = None
 <br />
@@ -130,7 +130,7 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>StorageType</b> = xi
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="af47761c138fc627e3ab65bf906b28df1a44067a6b77ae7fdf58ec1be374848a25"></a>None&#160;</td><td class="fielddoc"><p>No flags causes the default shader binding behavior (all render states are applied) </p>
 </td></tr>
-<tr><td class="fieldname"><a id="af47761c138fc627e3ab65bf906b28df1a0a7cefbccd7ebad4a50e56fe44fe2a23"></a>ForceRebind&#160;</td><td class="fielddoc"><p>Executes shader binding (and state setting), even if the shader hasn't changed. Use this, when the same shader was previously used with custom bound states </p>
+<tr><td class="fieldname"><a id="af47761c138fc627e3ab65bf906b28df1a0a7cefbccd7ebad4a50e56fe44fe2a23"></a>ForceRebind&#160;</td><td class="fielddoc"><p>Executes shader binding (and state setting), even if the shader hasn't changed. Use this, when the same shader was previously used with custom bound states. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="af47761c138fc627e3ab65bf906b28df1aa97eff038b2085d834c593d04c6502d8"></a>NoRasterizerState&#160;</td><td class="fielddoc"><p>The rasterizer state that is associated with the shader will not be bound. Use this when you intend to bind a custom rasterizer. </p>
 </td></tr>
@@ -151,7 +151,7 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>StorageType</b> = xi
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d5/d4f/structxii_shader_bind_flags.htm">xiiShaderBindFlags</a></li>
-    <li class="footer">Generated on Sun Nov 19 2023 19:17:30 for XIIEngine by
+    <li class="footer">Generated on Fri Dec 1 2023 23:48:56 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

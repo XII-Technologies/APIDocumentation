@@ -7,5 +7,5 @@ var classxii_g_a_l_sampler_d3_d12 =
     [ "InitPlatform", "d5/dbb/classxii_g_a_l_sampler_d3_d12.htm#a91a08b90c01c765edcb594e863efad27", null ],
     [ "xiiGALDeviceD3D12", "d5/dbb/classxii_g_a_l_sampler_d3_d12.htm#a9b3da82b84b68e0128d059e18e11b67d", null ],
     [ "xiiMemoryUtils", "d5/dbb/classxii_g_a_l_sampler_d3_d12.htm#aefc9ff75d6833fd2f05be48e16436db6", null ],
-    [ "m_pSampler", "d5/dbb/classxii_g_a_l_sampler_d3_d12.htm#a8d827a0f39986f4b86b4ca3ebcc015c3", null ]
+    [ "m_pSampler", "d5/dbb/classxii_g_a_l_sampler_d3_d12.htm#a3f875a7d9e3885acb59d811f00dac9fc", null ]
 ];

@@ -1,6 +1,6 @@
 var structxii_g_a_l_resource_usage =
 [
-    [ "StorageType", "d9/d9e/structxii_g_a_l_resource_usage.htm#ab042c694ca2d5246d13d5caef391b80b", null ],
+    [ "StorageType", "d9/d9e/structxii_g_a_l_resource_usage.htm#a60265b15e98ce721c6dba00bf482cbcf", null ],
     [ "Enum", "d9/d9e/structxii_g_a_l_resource_usage.htm#aa3f7d7b5b5d7b94f2e8f6b55eb5fa7dc", [
       [ "Immutable", "d9/d9e/structxii_g_a_l_resource_usage.htm#aa3f7d7b5b5d7b94f2e8f6b55eb5fa7dca6e4b1377bb0bd053c657f1c1b62fe4e2", null ],
       [ "Default", "d9/d9e/structxii_g_a_l_resource_usage.htm#aa3f7d7b5b5d7b94f2e8f6b55eb5fa7dca352de8cee0e3712ba1730b0e76b744fa", null ],

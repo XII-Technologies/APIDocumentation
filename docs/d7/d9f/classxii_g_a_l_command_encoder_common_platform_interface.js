@@ -8,7 +8,7 @@ var classxii_g_a_l_command_encoder_common_platform_interface =
     [ "CopyBufferPlatform", "d7/d9f/classxii_g_a_l_command_encoder_common_platform_interface.htm#ab2acaa1c42f95fee8b12b8fe3a8035f1", null ],
     [ "CopyBufferRegionPlatform", "d7/d9f/classxii_g_a_l_command_encoder_common_platform_interface.htm#ab07079da7b334243212e1bad403fc084", null ],
     [ "CopyTexturePlatform", "d7/d9f/classxii_g_a_l_command_encoder_common_platform_interface.htm#a2e87a1294bab83de0c9deaaa21a26370", null ],
-    [ "CopyTextureReadbackResultPlatform", "d7/d9f/classxii_g_a_l_command_encoder_common_platform_interface.htm#a4f2db7132c03287c8cd4e6abd7b86722", null ],
+    [ "CopyTextureReadbackResultPlatform", "d7/d9f/classxii_g_a_l_command_encoder_common_platform_interface.htm#a3c49949207b8c4c917d19e32dae41e21", null ],
     [ "CopyTextureRegionPlatform", "d7/d9f/classxii_g_a_l_command_encoder_common_platform_interface.htm#a09963451b2189cd4bd1f58fb7d348b04", null ],
     [ "EndQueryPlatform", "d7/d9f/classxii_g_a_l_command_encoder_common_platform_interface.htm#ac209769bbed51abb696500aff0aba1c0", null ],
     [ "FlushPlatform", "d7/d9f/classxii_g_a_l_command_encoder_common_platform_interface.htm#a417e060c97652e7598a148ac37a8b414", null ],
@@ -26,5 +26,5 @@ var classxii_g_a_l_command_encoder_common_platform_interface =
     [ "SetUnorderedAccessBufferViewPlatform", "d7/d9f/classxii_g_a_l_command_encoder_common_platform_interface.htm#a9e7798d51347ea38048733dd8734c3bd", null ],
     [ "SetUnorderedAccessTextureViewPlatform", "d7/d9f/classxii_g_a_l_command_encoder_common_platform_interface.htm#a33004b490bdd3d35ec5630172dab1e64", null ],
     [ "UpdateBufferPlatform", "d7/d9f/classxii_g_a_l_command_encoder_common_platform_interface.htm#a83ab7d12a79c80f3b30661d2ca35d4c4", null ],
-    [ "UpdateTexturePlatform", "d7/d9f/classxii_g_a_l_command_encoder_common_platform_interface.htm#a1f7e2bc3cc7f359ec53f41f98811c8c2", null ]
+    [ "UpdateTexturePlatform", "d7/d9f/classxii_g_a_l_command_encoder_common_platform_interface.htm#ac981c18cd1da851e478a7a39ca6ffa8b", null ]
 ];

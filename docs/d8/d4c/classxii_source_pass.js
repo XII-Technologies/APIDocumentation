@@ -9,6 +9,6 @@ var classxii_source_pass =
     [ "m_bClear", "d8/d4c/classxii_source_pass.htm#ae328ea1cbc4e84709581a6119c5f8999", null ],
     [ "m_ClearColor", "d8/d4c/classxii_source_pass.htm#a8cc85d94df7455f9f97d234fa2005ff4", null ],
     [ "m_Format", "d8/d4c/classxii_source_pass.htm#a83281ec6bbd80fb260a80ee40d8ef5bd", null ],
-    [ "m_MsaaMode", "d8/d4c/classxii_source_pass.htm#a62dc25fa678baab4dac5d8d82394472a", null ],
+    [ "m_MsaaMode", "d8/d4c/classxii_source_pass.htm#a978fea6a7921702db48552ae08b842c5", null ],
     [ "m_PinOutput", "d8/d4c/classxii_source_pass.htm#a16018513dfcf3444dd02582849e8be84", null ]
 ];

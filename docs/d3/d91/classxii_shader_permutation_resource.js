@@ -7,7 +7,7 @@ var classxii_shader_permutation_resource =
     [ "GetGALShader", "d3/d91/classxii_shader_permutation_resource.htm#a83b2425edf93c73f8067832bc13974fa", null ],
     [ "GetPermutationVars", "d3/d91/classxii_shader_permutation_resource.htm#a8e96183ee5280668b7477a625c56074a", null ],
     [ "GetRasterizerState", "d3/d91/classxii_shader_permutation_resource.htm#a3f41a8fdc8b9cd09f61d7f053a7fed9f", null ],
-    [ "GetShaderStageBinary", "d3/d91/classxii_shader_permutation_resource.htm#a3efe0e8babf543b2fdb5e8576ca07f75", null ],
+    [ "GetShaderStageBinary", "d3/d91/classxii_shader_permutation_resource.htm#ae5a20e8fbc22b67be6547401bd8781d1", null ],
     [ "IsShaderValid", "d3/d91/classxii_shader_permutation_resource.htm#a5b53ce4a288a2b5d5a33f8c7000e7e82", null ],
     [ "UnloadData", "d3/d91/classxii_shader_permutation_resource.htm#ac72175ed47dca7f777c21cd033944420", null ],
     [ "UpdateContent", "d3/d91/classxii_shader_permutation_resource.htm#aefe9864aa22a637b9de71c8fb95d38f9", null ],

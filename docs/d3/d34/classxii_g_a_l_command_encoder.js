@@ -12,7 +12,7 @@ var classxii_g_a_l_command_encoder =
     [ "CopyBuffer", "d3/d34/classxii_g_a_l_command_encoder.htm#a890496377c161f457420fb97ba4f14bb", null ],
     [ "CopyBufferRegion", "d3/d34/classxii_g_a_l_command_encoder.htm#a5cf035a444d032b0aa3dc1ffc8db0c06", null ],
     [ "CopyTexture", "d3/d34/classxii_g_a_l_command_encoder.htm#aa0f8cee304a2f6aa0f31b0c4be8c6f8d", null ],
-    [ "CopyTextureReadbackResult", "d3/d34/classxii_g_a_l_command_encoder.htm#ae975d4cc1e20409ab5203299bc81bf28", null ],
+    [ "CopyTextureReadbackResult", "d3/d34/classxii_g_a_l_command_encoder.htm#abaa519fe499bd4cdf64a1d3080b360dc", null ],
     [ "CopyTextureRegion", "d3/d34/classxii_g_a_l_command_encoder.htm#a6aca5965c91b8056d3148febf4af11cd", null ],
     [ "CountRedundantStateChange", "d3/d34/classxii_g_a_l_command_encoder.htm#ac8b597e155db2c512eb58521eeae092a", null ],
     [ "CountStateChange", "d3/d34/classxii_g_a_l_command_encoder.htm#ae9bc10948b03bcf7babc8b9662f0ca17", null ],
@@ -38,7 +38,7 @@ var classxii_g_a_l_command_encoder =
     [ "UnsetUnorderedAccessBufferView", "d3/d34/classxii_g_a_l_command_encoder.htm#a45dd0917e2af27bf87efc19168d06d9d", null ],
     [ "UnsetUnorderedAccessTextureView", "d3/d34/classxii_g_a_l_command_encoder.htm#ac2641d511ec395257c383ab5137d84c6", null ],
     [ "UpdateBuffer", "d3/d34/classxii_g_a_l_command_encoder.htm#a46953120a7b17055e636a12e66d2f96b", null ],
-    [ "UpdateTexture", "d3/d34/classxii_g_a_l_command_encoder.htm#a6a661e8c3b8b906428dc3bed5cadb015", null ],
+    [ "UpdateTexture", "d3/d34/classxii_g_a_l_command_encoder.htm#a476f394946bfe7e1b4e235fd476e6708", null ],
     [ "xiiGALDevice", "d3/d34/classxii_g_a_l_command_encoder.htm#a8a9dd0ea17d38c3d68c9db0002e5dab0", null ],
     [ "xiiMemoryUtils", "d3/d34/classxii_g_a_l_command_encoder.htm#aefc9ff75d6833fd2f05be48e16436db6", null ]
 ];

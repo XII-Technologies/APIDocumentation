@@ -16,5 +16,5 @@ var classxii_g_a_l_buffer_d3_d12 =
     [ "xiiGALDeviceD3D12", "d2/da9/classxii_g_a_l_buffer_d3_d12.htm#a9b3da82b84b68e0128d059e18e11b67d", null ],
     [ "xiiMemoryUtils", "d2/da9/classxii_g_a_l_buffer_d3_d12.htm#aefc9ff75d6833fd2f05be48e16436db6", null ],
     [ "m_IndexFormat", "d2/da9/classxii_g_a_l_buffer_d3_d12.htm#a080e9dcf3e329f1004278d571d35731d", null ],
-    [ "m_pBuffer", "d2/da9/classxii_g_a_l_buffer_d3_d12.htm#a8ebca57efa5265b1703e35266a7d260a", null ]
+    [ "m_pBuffer", "d2/da9/classxii_g_a_l_buffer_d3_d12.htm#a675482721662db28b96212f5e6312e6f", null ]
 ];

@@ -3,8 +3,9 @@ var structxii_process_impl =
     [ "StdStreamInfo", "d0/d7a/structxii_process_impl_1_1_std_stream_info.htm", "d0/d7a/structxii_process_impl_1_1_std_stream_info" ],
     [ "~xiiProcessImpl", "da/d24/structxii_process_impl.htm#a14695f222110ba72ab635b38eee45379", null ],
     [ "~xiiProcessImpl", "da/d24/structxii_process_impl.htm#a14695f222110ba72ab635b38eee45379", null ],
-    [ "AddStream", "da/d24/structxii_process_impl.htm#a0061fde8784afd902e5caf3f7fe98547", null ],
+    [ "AddStream", "da/d24/structxii_process_impl.htm#a1af8f0c206cefaad5bd5a780c12bab80", null ],
     [ "Close", "da/d24/structxii_process_impl.htm#ae52ae85379be463c839dd5fc6bacdb8f", null ],
+    [ "GetNumStreams", "da/d24/structxii_process_impl.htm#a9d4550fb565c3607ecf8276c4dbea91e", null ],
     [ "StartStreamWatcher", "da/d24/structxii_process_impl.htm#aba9109124861ee605e572b9880a0a704", null ],
     [ "StopStreamWatcher", "da/d24/structxii_process_impl.htm#a1d4d146976672e7eb1a83756e1e4cd98", null ],
     [ "m_childPid", "da/d24/structxii_process_impl.htm#aefac6836cdd8f2a2f9129ca9a244c9e5", null ],
@@ -18,6 +19,6 @@ var structxii_process_impl =
     [ "m_processSuspended", "da/d24/structxii_process_impl.htm#a7842d505e9cb13e9cb523e9eef1ff927", null ],
     [ "m_streams", "da/d24/structxii_process_impl.htm#ac62eb8383c62e8b68f1c44689505b4fd", null ],
     [ "m_streamWatcherThread", "da/d24/structxii_process_impl.htm#abc2e71a98bffc0b4f9468717a657db56", null ],
-    [ "m_wakeupPipeReadEnd", "da/d24/structxii_process_impl.htm#a8a6e18afcbb87a066d6606579073fa55", null ],
-    [ "m_wakeupPipeWriteEnd", "da/d24/structxii_process_impl.htm#aad1e00b0a2ff5d10c91b2307663c0a6e", null ]
+    [ "m_wakeupPipeReadEnd", "da/d24/structxii_process_impl.htm#adc1154cbf05ec14799d98397fc24d9be", null ],
+    [ "m_wakeupPipeWriteEnd", "da/d24/structxii_process_impl.htm#af3d036e29a6b9bd303d89a56b48f5d4f", null ]
 ];

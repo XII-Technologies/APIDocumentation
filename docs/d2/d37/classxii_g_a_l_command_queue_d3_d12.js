@@ -10,5 +10,5 @@ var classxii_g_a_l_command_queue_d3_d12 =
     [ "WaitForIdle", "d2/d37/classxii_g_a_l_command_queue_d3_d12.htm#accaaed71d4054107690ca841b4d361a2", null ],
     [ "xiiGALDeviceD3D12", "d2/d37/classxii_g_a_l_command_queue_d3_d12.htm#a9b3da82b84b68e0128d059e18e11b67d", null ],
     [ "xiiMemoryUtils", "d2/d37/classxii_g_a_l_command_queue_d3_d12.htm#aefc9ff75d6833fd2f05be48e16436db6", null ],
-    [ "m_pCommandQueue", "d2/d37/classxii_g_a_l_command_queue_d3_d12.htm#adbfdcead648d9eabac45462c670e03e6", null ]
+    [ "m_pCommandQueue", "d2/d37/classxii_g_a_l_command_queue_d3_d12.htm#a0a95b223475173d7baaa8b3dafcb49b8", null ]
 ];

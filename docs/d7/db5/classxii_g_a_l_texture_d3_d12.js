@@ -11,5 +11,5 @@ var classxii_g_a_l_texture_d3_d12 =
     [ "SetState", "d7/db5/classxii_g_a_l_texture_d3_d12.htm#a552002dc0b9d9d54bc67668b36927085", null ],
     [ "xiiGALDeviceD3D12", "d7/db5/classxii_g_a_l_texture_d3_d12.htm#a9b3da82b84b68e0128d059e18e11b67d", null ],
     [ "xiiMemoryUtils", "d7/db5/classxii_g_a_l_texture_d3_d12.htm#aefc9ff75d6833fd2f05be48e16436db6", null ],
-    [ "m_pTexture", "d7/db5/classxii_g_a_l_texture_d3_d12.htm#a97d223d9df73c97077691e96a0aeb394", null ]
+    [ "m_pTexture", "d7/db5/classxii_g_a_l_texture_d3_d12.htm#ac21526bfea444673d4081c7c2cdfb3cd", null ]
 ];

@@ -2,7 +2,7 @@ var classxii_custom_mesh_component =
 [
     [ "xiiCustomMeshComponent", "d6/dad/classxii_custom_mesh_component.htm#a0f00a8c6eae4002000d44b7c69070cac", null ],
     [ "~xiiCustomMeshComponent", "d6/dad/classxii_custom_mesh_component.htm#ab1ef42007988ec06b72cc084191378c4", null ],
-    [ "CreateMeshResource", "d6/dad/classxii_custom_mesh_component.htm#af12ead8c0042d570b7078af3ca715b11", null ],
+    [ "CreateMeshResource", "d6/dad/classxii_custom_mesh_component.htm#abc351429ba7b05ca9f9bf70eaa70b22f", null ],
     [ "DeserializeComponent", "d6/dad/classxii_custom_mesh_component.htm#a2c6a3636aae893a8f63d7407fbb6eb49", null ],
     [ "GetColor", "d6/dad/classxii_custom_mesh_component.htm#a21aca74f4cc826e82c8445c43bd1e441", null ],
     [ "GetLocalBounds", "d6/dad/classxii_custom_mesh_component.htm#ae04244708b17f94e0644def866ab7c5c", null ],

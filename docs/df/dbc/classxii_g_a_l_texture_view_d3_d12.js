@@ -7,5 +7,5 @@ var classxii_g_a_l_texture_view_d3_d12 =
     [ "InitPlatform", "df/dbc/classxii_g_a_l_texture_view_d3_d12.htm#a1d6b963ead748aaf74c5369517002066", null ],
     [ "xiiGALDeviceD3D12", "df/dbc/classxii_g_a_l_texture_view_d3_d12.htm#a9b3da82b84b68e0128d059e18e11b67d", null ],
     [ "xiiMemoryUtils", "df/dbc/classxii_g_a_l_texture_view_d3_d12.htm#aefc9ff75d6833fd2f05be48e16436db6", null ],
-    [ "m_pTextureView", "df/dbc/classxii_g_a_l_texture_view_d3_d12.htm#a3ce46c75b1e782cab58e9a6e9cc9223a", null ]
+    [ "m_pTextureView", "df/dbc/classxii_g_a_l_texture_view_d3_d12.htm#aa6403ec30c35feb3bda80e18fd06b2f3", null ]
 ];

@@ -2,7 +2,7 @@ var classxii_a_o_pass =
 [
     [ "xiiAOPass", "d7/d81/classxii_a_o_pass.htm#a9334ab6f072ae2327027ca4fa4f6fc74", null ],
     [ "~xiiAOPass", "d7/d81/classxii_a_o_pass.htm#af90b53246beeca47d98a85ac682d2a9c", null ],
-    [ "CreateSamplerState", "d7/d81/classxii_a_o_pass.htm#ad658f87433a1b66b1031513128458cca", null ],
+    [ "CreateSampler", "d7/d81/classxii_a_o_pass.htm#a4f0b17e90037510686dab99514b25ac1", null ],
     [ "Deserialize", "d7/d81/classxii_a_o_pass.htm#ad3860b4d717d81bbe2c17d4db61fc3c7", null ],
     [ "Execute", "d7/d81/classxii_a_o_pass.htm#a850a7bbe6588ce9bd6906b696772ca09", null ],
     [ "ExecuteInactive", "d7/d81/classxii_a_o_pass.htm#a84fdfa74a4c2fef8ead129a0b9c512bf", null ],
@@ -26,7 +26,7 @@ var classxii_a_o_pass =
     [ "m_hDownscaleShader", "d7/d81/classxii_a_o_pass.htm#ae36a3bf4cf96b123f924ea17d0793bb9", null ],
     [ "m_hNoiseTexture", "d7/d81/classxii_a_o_pass.htm#aaf32e0ca887fc32fd44f45ea18b69908", null ],
     [ "m_hSSAOConstantBuffer", "d7/d81/classxii_a_o_pass.htm#a3c10394a42c37285f23049b490d13277", null ],
-    [ "m_hSSAOSamplerState", "d7/d81/classxii_a_o_pass.htm#a017bad38608a9f5225f1492a731f9ab0", null ],
+    [ "m_hSSAOSampler", "d7/d81/classxii_a_o_pass.htm#ae89908c6b09f1756aef652d3636649fa", null ],
     [ "m_hSSAOShader", "d7/d81/classxii_a_o_pass.htm#afdc8dad2703d5703e96fb41b6f77e5d7", null ],
     [ "m_PinDepthInput", "d7/d81/classxii_a_o_pass.htm#af7478a422dd25ffbe7767426ea94342e", null ],
     [ "m_PinOutput", "d7/d81/classxii_a_o_pass.htm#a628293331703120a7d44a078ff78c334", null ]

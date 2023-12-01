@@ -1,6 +1,6 @@
 var structxii_string_iterator =
 [
-    [ "difference_type", "de/d81/structxii_string_iterator.htm#aeb8b22f2a9508564d375211513cba84f", null ],
+    [ "difference_type", "de/d81/structxii_string_iterator.htm#a400db04e30a2111b303dc544e27f881f", null ],
     [ "iterator_category", "de/d81/structxii_string_iterator.htm#a34f79fdd010b08d01995be30fbe90e18", null ],
     [ "pointer", "de/d81/structxii_string_iterator.htm#a34b0b09a04ce3389d689001d05cc0907", null ],
     [ "reference", "de/d81/structxii_string_iterator.htm#aa25c173015632b50e0e6882eae6c1f1c", null ],
