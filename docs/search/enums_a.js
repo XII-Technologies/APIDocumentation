@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['randomseedmode_16988',['RandomSeedMode',['../d8/ddd/structxii_prefab_instantiation_options.htm#a5cd1ff127e47a915103c05de7f88eb63',1,'xiiPrefabInstantiationOptions']]]
+  ['patchtype_17910',['PatchType',['../d9/d48/classxii_graph_patch.htm#af9f2b99e4390863069278fcffd4cf2c9',1,'xiiGraphPatch']]]
 ];

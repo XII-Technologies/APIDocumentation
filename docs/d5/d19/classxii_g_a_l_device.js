@@ -78,7 +78,8 @@ var classxii_g_a_l_device =
     [ "GetDepthStencilState", "d5/d19/classxii_g_a_l_device.htm#a0f9d16454655c5a8684eac77b7730b5e", null ],
     [ "GetFence", "d5/d19/classxii_g_a_l_device.htm#aa5cdf3ad1651658ddcb8c568ef3392eb", null ],
     [ "GetFramebuffer", "d5/d19/classxii_g_a_l_device.htm#a63d4cb72c99d404e375fb58cbcb9ed06", null ],
-    [ "GetGraphicsDeviceAdapterProperties", "d5/d19/classxii_g_a_l_device.htm#ade46e7f129a369a3f9ca031f4977a34c", null ],
+    [ "GetGraphicsDeviceAdapterProperties", "d5/d19/classxii_g_a_l_device.htm#aac2ae98fc1e53a1dd455751379adeb29", null ],
+    [ "GetGraphicsDeviceType", "d5/d19/classxii_g_a_l_device.htm#a31b5126af59befd982a5eb0e45fcfa92", null ],
     [ "GetInputLayout", "d5/d19/classxii_g_a_l_device.htm#addd143a915c1ea14b36ccd33211ccfd8", null ],
     [ "GetMemoryConsumptionForBuffer", "d5/d19/classxii_g_a_l_device.htm#a1387dba7992e726335009d4389e8112b", null ],
     [ "GetMemoryConsumptionForTexture", "d5/d19/classxii_g_a_l_device.htm#ad5f10659692122ad0757960422650b9c", null ],
@@ -126,5 +127,6 @@ var classxii_g_a_l_device =
     [ "m_SwapChains", "d5/d19/classxii_g_a_l_device.htm#a5adb9669fc7e2a1ed4cc01137b474786", null ],
     [ "m_Textures", "d5/d19/classxii_g_a_l_device.htm#a60f5f540f887206207221de01fea3cd3", null ],
     [ "m_TextureViews", "d5/d19/classxii_g_a_l_device.htm#ae4f5d22c35e4a0a883882988ec7f2839", null ],
-    [ "m_TopLevelAccelerationStructures", "d5/d19/classxii_g_a_l_device.htm#a121b9044720c084888b9cb61f2b90ea2", null ]
+    [ "m_TopLevelAccelerationStructures", "d5/d19/classxii_g_a_l_device.htm#a121b9044720c084888b9cb61f2b90ea2", null ],
+    [ "m_Type", "d5/d19/classxii_g_a_l_device.htm#a1598ff6aaff97c501a598df042f73f99", null ]
 ];

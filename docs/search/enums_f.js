@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['whitespacemode_16998',['WhitespaceMode',['../d1/d23/classxii_j_s_o_n_writer.htm#a97a0a6862b1641a63c4683aeb52488e1',1,'xiiJSONWriter']]]
+  ['visibility_17920',['Visibility',['../de/d0e/structxii_property_ui_state.htm#a887e1d807f50c059bac4e07ff19c047d',1,'xiiPropertyUiState']]]
 ];

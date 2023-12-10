@@ -101,9 +101,9 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:ae47cefb95eeffe4e9a812ee67e500b09"><td class="memItemLeft" align="right" valign="top"><a id="ae47cefb95eeffe4e9a812ee67e500b09"></a>
-static <a class="el" href="../../d5/db8/classxii_view_handle.htm">xiiViewHandle</a>&#160;</td><td class="memItemRight" valign="bottom"><b>CreateView</b> (const char *szName, <a class="el" href="../../dd/df1/classxii_view.htm">xiiView</a> *&amp;out_pView)</td></tr>
-<tr class="separator:ae47cefb95eeffe4e9a812ee67e500b09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed604e3206b2d57e4f73ab6bc49f0122"><td class="memItemLeft" align="right" valign="top"><a id="aed604e3206b2d57e4f73ab6bc49f0122"></a>
+static <a class="el" href="../../d5/db8/classxii_view_handle.htm">xiiViewHandle</a>&#160;</td><td class="memItemRight" valign="bottom"><b>CreateView</b> (<a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sName, <a class="el" href="../../dd/df1/classxii_view.htm">xiiView</a> *&amp;out_pView)</td></tr>
+<tr class="separator:aed604e3206b2d57e4f73ab6bc49f0122"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab98dd49b99145207e26e99ac34edf7d1"><td class="memItemLeft" align="right" valign="top"><a id="ab98dd49b99145207e26e99ac34edf7d1"></a>
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>DeleteView</b> (const <a class="el" href="../../d5/db8/classxii_view_handle.htm">xiiViewHandle</a> &amp;hView)</td></tr>
 <tr class="separator:ab98dd49b99145207e26e99ac34edf7d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -219,12 +219,12 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>EndModifyCamer
 <tr class="memitem:a59aef404652ac2fec1a825240f4e52dc"><td class="memItemLeft" align="right" valign="top"><a id="a59aef404652ac2fec1a825240f4e52dc"></a>
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>ClearCameraConfigs</b> ()</td></tr>
 <tr class="separator:a59aef404652ac2fec1a825240f4e52dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a715625e883bc73f3a86663b5bbdf6e27"><td class="memItemLeft" align="right" valign="top"><a id="a715625e883bc73f3a86663b5bbdf6e27"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>SetCameraConfig</b> (const char *szName, const <a class="el" href="../../db/d4a/structxii_render_world_1_1_camera_config.htm">CameraConfig</a> &amp;config)</td></tr>
-<tr class="separator:a715625e883bc73f3a86663b5bbdf6e27"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a06a3e0169b624f2e38ab44a440f03f64"><td class="memItemLeft" align="right" valign="top"><a id="a06a3e0169b624f2e38ab44a440f03f64"></a>
-static const <a class="el" href="../../db/d4a/structxii_render_world_1_1_camera_config.htm">CameraConfig</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>FindCameraConfig</b> (const char *szName)</td></tr>
-<tr class="separator:a06a3e0169b624f2e38ab44a440f03f64"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a942c88bf22eb4722f7e5dcfccd135898"><td class="memItemLeft" align="right" valign="top"><a id="a942c88bf22eb4722f7e5dcfccd135898"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>SetCameraConfig</b> (<a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sName, const <a class="el" href="../../db/d4a/structxii_render_world_1_1_camera_config.htm">CameraConfig</a> &amp;config)</td></tr>
+<tr class="separator:a942c88bf22eb4722f7e5dcfccd135898"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a893509041ef25ccea851d634132afdea"><td class="memItemLeft" align="right" valign="top"><a id="a893509041ef25ccea851d634132afdea"></a>
+static const <a class="el" href="../../db/d4a/structxii_render_world_1_1_camera_config.htm">CameraConfig</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>FindCameraConfig</b> (<a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sName)</td></tr>
+<tr class="separator:a893509041ef25ccea851d634132afdea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>/home/runner/work/XII/XII/Source/Engine/GraphicsCore/RenderWorld/<a class="el" href="../../dd/d7f/_render_world_8h_source.htm">RenderWorld.h</a></li>
@@ -236,7 +236,7 @@ static const <a class="el" href="../../db/d4a/structxii_render_world_1_1_camera_
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d0/daf/classxii_render_world.htm">xiiRenderWorld</a></li>
-    <li class="footer">Generated on Fri Dec 1 2023 23:48:56 for XIIEngine by
+    <li class="footer">Generated on Sun Dec 10 2023 03:58:38 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

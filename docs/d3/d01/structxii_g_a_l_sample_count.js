@@ -10,7 +10,6 @@ var structxii_g_a_l_sample_count =
       [ "SixteenSamples", "d3/d01/structxii_g_a_l_sample_count.htm#a9882b9a04c908ada09066d29eee92e7caae6d9b5279ccf7c43fc8c8f9d690e06c", null ],
       [ "ThirtyTwoSamples", "d3/d01/structxii_g_a_l_sample_count.htm#a9882b9a04c908ada09066d29eee92e7ca40ba540d5171f603d29c659a1dd746d3", null ],
       [ "SixtyFourSamples", "d3/d01/structxii_g_a_l_sample_count.htm#a9882b9a04c908ada09066d29eee92e7ca2700500098cb7e6240eb673aa7cde393", null ],
-      [ "ENUM_COUNT", "d3/d01/structxii_g_a_l_sample_count.htm#a9882b9a04c908ada09066d29eee92e7cab7a55e773925e30ce055ff47e6c227b3", null ],
       [ "Default", "d3/d01/structxii_g_a_l_sample_count.htm#a9882b9a04c908ada09066d29eee92e7ca44ecb5266f59db3d5dcae8f923550094", null ]
     ] ]
 ];

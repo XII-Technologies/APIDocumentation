@@ -92,7 +92,7 @@ $(document).ready(function(){initNavTree('d6/d63/classxii_game_state_base.htm','
 </div><!--header-->
 <div class="contents">
 
-<p>xiiGameState is the base class to build custom game logic upon. It works closely together with xiiGameApplication.  
+<p><a class="el" href="../../d1/d19/classxii_game_state.htm" title="xiiGameState is the base class to build custom game logic upon. It works closely together with xiiGam...">xiiGameState</a> is the base class to build custom game logic upon. It works closely together with <a class="el" href="../../d1/ded/classxii_game_application.htm" title="The base class for all typical game applications made with xiiEngine.">xiiGameApplication</a>.  
  <a href="../../d6/d63/classxii_game_state_base.htm#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="../../d6/d39/_game_state_base_8h_source.htm">GameStateBase.h</a>&gt;</code></p>
@@ -101,9 +101,11 @@ Inheritance diagram for xiiGameStateBase:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../d5/d8f/classxii_game_state_base__inherit__graph.png" border="0" usemap="#xii_game_state_base_inherit__map" alt="Inheritance graph"/></div>
 <map name="xii_game_state_base_inherit__map" id="xii_game_state_base_inherit__map">
-<area shape="rect" title="xiiGameState is the base class to build custom game logic upon. It works closely together with xiiGam..." alt="" coords="5,155,148,181"/>
-<area shape="rect" href="../../dc/d71/classxii_reflected_class.htm" title="All classes that should be dynamically reflectable, need to be derived from this base class." alt="" coords="9,80,144,107"/>
-<area shape="rect" href="../../d2/d38/classxii_no_base.htm" title="Dummy type to pass to templates and macros that expect a base type for a class that has no base." alt="" coords="33,5,121,32"/>
+<area shape="rect" title="xiiGameState is the base class to build custom game logic upon. It works closely together with xiiGam..." alt="" coords="16,155,159,181"/>
+<area shape="rect" href="../../d1/d19/classxii_game_state.htm" title="xiiGameState is the base class to build custom game logic upon. It works closely together with xiiGam..." alt="" coords="32,229,143,256"/>
+<area shape="rect" href="../../dc/d71/classxii_reflected_class.htm" title="All classes that should be dynamically reflectable, need to be derived from this base class." alt="" coords="20,80,155,107"/>
+<area shape="rect" href="../../d2/d38/classxii_no_base.htm" title="Dummy type to pass to templates and macros that expect a base type for a class that has no base." alt="" coords="43,5,131,32"/>
+<area shape="rect" href="../../d0/dc7/classxii_fallback_game_state.htm" title="xiiFallbackGameState is an xiiGameState that can handle existing worlds when no other game state is a..." alt="" coords="5,304,169,331"/>
 </map>
 <center><span class="legend">[<a target="top" href="../../graph_legend.htm">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -129,7 +131,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <tr class="memdesc:a6b4bb3b769bfc9ddc3440419413c162f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called once each frame after the worlds have been updated. <br /></td></tr>
 <tr class="separator:a6b4bb3b769bfc9ddc3440419413c162f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5818fbb85acf55990b8b8fb3a140a01f"><td class="memItemLeft" align="right" valign="top">virtual xiiGameStatePriority&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d63/classxii_game_state_base.htm#a5818fbb85acf55990b8b8fb3a140a01f">DeterminePriority</a> (<a class="el" href="../../d6/d89/classxii_world.htm">xiiWorld</a> *pWorld) const =0</td></tr>
-<tr class="memdesc:a5818fbb85acf55990b8b8fb3a140a01f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called by xiiGameApplication to determine which game state is best suited to handle a situation.  <a href="../../d6/d63/classxii_game_state_base.htm#a5818fbb85acf55990b8b8fb3a140a01f">More...</a><br /></td></tr>
+<tr class="memdesc:a5818fbb85acf55990b8b8fb3a140a01f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called by <a class="el" href="../../d1/ded/classxii_game_application.htm" title="The base class for all typical game applications made with xiiEngine.">xiiGameApplication</a> to determine which game state is best suited to handle a situation.  <a href="../../d6/d63/classxii_game_state_base.htm#a5818fbb85acf55990b8b8fb3a140a01f">More...</a><br /></td></tr>
 <tr class="separator:a5818fbb85acf55990b8b8fb3a140a01f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5080d0a1b978f673ed10e15d002def5b"><td class="memItemLeft" align="right" valign="top"><a id="a5080d0a1b978f673ed10e15d002def5b"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d63/classxii_game_state_base.htm#a5080d0a1b978f673ed10e15d002def5b">ScheduleRendering</a> ()=0</td></tr>
@@ -170,12 +172,12 @@ static const <a class="el" href="../../db/d89/classxii_r_t_t_i.htm">xiiRTTI</a> 
 <tr class="separator:ac03a1d9fba3babf7db68227be61737e6 inherit pub_static_methods_classxii_no_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>xiiGameState is the base class to build custom game logic upon. It works closely together with xiiGameApplication. </p>
-<p>In a typical game there is always exactly one instance of a xiiGameState derived class active. The game state handles custom game logic, which must be handled outside <a class="el" href="../../d6/d89/classxii_world.htm" title="A world encapsulates a scene graph of game objects and various component managers and their component...">xiiWorld</a>, custom components and scripts.</p>
-<p>For example a custom implementation of xiiGameState may handle how to show a menu, when to switch to another level, how multi-player works, or which player information is transitioned from one level to the next. It's main purpose is to implement high-level game logic.</p>
-<p>xiiGameApplication will loop through all available xiiGameState implementations and ask each available one whether it can handle a certain level. Each game state returns a 'priority' how well it can handle the game.</p>
+<div class="textblock"><p><a class="el" href="../../d1/d19/classxii_game_state.htm" title="xiiGameState is the base class to build custom game logic upon. It works closely together with xiiGam...">xiiGameState</a> is the base class to build custom game logic upon. It works closely together with <a class="el" href="../../d1/ded/classxii_game_application.htm" title="The base class for all typical game applications made with xiiEngine.">xiiGameApplication</a>. </p>
+<p>In a typical game there is always exactly one instance of a <a class="el" href="../../d1/d19/classxii_game_state.htm" title="xiiGameState is the base class to build custom game logic upon. It works closely together with xiiGam...">xiiGameState</a> derived class active. The game state handles custom game logic, which must be handled outside <a class="el" href="../../d6/d89/classxii_world.htm" title="A world encapsulates a scene graph of game objects and various component managers and their component...">xiiWorld</a>, custom components and scripts.</p>
+<p>For example a custom implementation of <a class="el" href="../../d1/d19/classxii_game_state.htm" title="xiiGameState is the base class to build custom game logic upon. It works closely together with xiiGam...">xiiGameState</a> may handle how to show a menu, when to switch to another level, how multi-player works, or which player information is transitioned from one level to the next. It's main purpose is to implement high-level game logic.</p>
+<p><a class="el" href="../../d1/ded/classxii_game_application.htm" title="The base class for all typical game applications made with xiiEngine.">xiiGameApplication</a> will loop through all available <a class="el" href="../../d1/d19/classxii_game_state.htm" title="xiiGameState is the base class to build custom game logic upon. It works closely together with xiiGam...">xiiGameState</a> implementations and ask each available one whether it can handle a certain level. Each game state returns a 'priority' how well it can handle the game.</p>
 <p>In a typical game you only have one game state linked into the binary, so in that case there is no reason for such a system. However, in an editor you might have multiple game states available through plugins, but only one can take control. In such a case, each game state may inspect the given world and check whether it is e.g. a single-player or multi-player level, or whether it uses it's own game specific components, and then decide whether it is the best fit for that level.</p>
-<dl class="section note"><dt>Note</dt><dd>Do not forget to reflect your derived class, otherwise xiiGameApplication may not find it. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>Do not forget to reflect your derived class, otherwise <a class="el" href="../../d1/ded/classxii_game_application.htm" title="The base class for all typical game applications made with xiiEngine.">xiiGameApplication</a> may not find it. </dd></dl>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a5818fbb85acf55990b8b8fb3a140a01f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5818fbb85acf55990b8b8fb3a140a01f">&#9670;&nbsp;</a></span>DeterminePriority()</h2>
@@ -201,8 +203,10 @@ static const <a class="el" href="../../db/d89/classxii_r_t_t_i.htm">xiiRTTI</a> 
 </table>
 </div><div class="memdoc">
 
-<p>Called by xiiGameApplication to determine which game state is best suited to handle a situation. </p>
+<p>Called by <a class="el" href="../../d1/ded/classxii_game_application.htm" title="The base class for all typical game applications made with xiiEngine.">xiiGameApplication</a> to determine which game state is best suited to handle a situation. </p>
 <p>If the application already has a world that should be shown, the game state can inspect it. If the game state is expected to create a new world, pWorld will be nullptr. </p>
+
+<p>Implemented in <a class="el" href="../../d0/dc7/classxii_fallback_game_state.htm#a2b22ec6e7f8970b0ca06a231196dccec">xiiFallbackGameState</a>.</p>
 
 </div>
 </div>
@@ -249,6 +253,8 @@ static const <a class="el" href="../../db/d89/classxii_r_t_t_i.htm">xiiRTTI</a> 
   </dd>
 </dl>
 
+<p>Implemented in <a class="el" href="../../d1/d19/classxii_game_state.htm#ae30ed5d987592a260de917485f638ab0">xiiGameState</a>, and <a class="el" href="../../d0/dc7/classxii_fallback_game_state.htm#a7e1e5b43c234cc1cab6f72ebaed1da9f">xiiFallbackGameState</a>.</p>
+
 </div>
 </div>
 <a id="a2b380e8f2be3139a5bba9aea65f4265d"></a>
@@ -275,7 +281,7 @@ static const <a class="el" href="../../db/d89/classxii_r_t_t_i.htm">xiiRTTI</a> 
 </div><div class="memdoc">
 
 <p>Call this to signal that a game state requested the application to quit. </p>
-<p>xiiGameApplication will shut down when this happens. xiiEditor will stop play-the-game mode when it is running. </p>
+<p><a class="el" href="../../d1/ded/classxii_game_application.htm" title="The base class for all typical game applications made with xiiEngine.">xiiGameApplication</a> will shut down when this happens. xiiEditor will stop play-the-game mode when it is running. </p>
 
 </div>
 </div>
@@ -289,7 +295,7 @@ static const <a class="el" href="../../db/d89/classxii_r_t_t_i.htm">xiiRTTI</a> 
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d6/d63/classxii_game_state_base.htm">xiiGameStateBase</a></li>
-    <li class="footer">Generated on Fri Dec 1 2023 23:48:55 for XIIEngine by
+    <li class="footer">Generated on Sun Dec 10 2023 03:58:36 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

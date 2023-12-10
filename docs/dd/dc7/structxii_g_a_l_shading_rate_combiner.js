@@ -9,7 +9,6 @@ var structxii_g_a_l_shading_rate_combiner =
       [ "CombinerMax", "dd/dc7/structxii_g_a_l_shading_rate_combiner.htm#aa412e4235d7cbff8956bafe8d2275ae6a9cd8fb1bf48ed36fa9eb8ff6e9d5b536", null ],
       [ "CombinerSum", "dd/dc7/structxii_g_a_l_shading_rate_combiner.htm#aa412e4235d7cbff8956bafe8d2275ae6a328da10d4e115030c2442294ad6549a8", null ],
       [ "CombinerMul", "dd/dc7/structxii_g_a_l_shading_rate_combiner.htm#aa412e4235d7cbff8956bafe8d2275ae6a9b1d5bd749f4f634b49936d962d635b1", null ],
-      [ "ENUM_COUNT", "dd/dc7/structxii_g_a_l_shading_rate_combiner.htm#aa412e4235d7cbff8956bafe8d2275ae6a5f8a8048de3819c7c3b146d0f1784d2d", null ],
       [ "Default", "dd/dc7/structxii_g_a_l_shading_rate_combiner.htm#aa412e4235d7cbff8956bafe8d2275ae6ac7f49550c8986f2cf1e95ac7033aa12d", null ]
     ] ]
 ];

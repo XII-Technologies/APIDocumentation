@@ -116,6 +116,9 @@ Inheritance diagram for xiiApplication:</div>
 <area shape="rect" title=" " alt="" coords="198,411,329,437"/>
 <area shape="rect" title=" " alt="" coords="194,461,333,488"/>
 <area shape="rect" href="../../d5/ddb/classxii_tex_conv.htm" title=" " alt="" coords="217,512,310,539"/>
+<area shape="rect" href="../../d1/ded/classxii_game_application.htm" title="The base class for all typical game applications made with xiiEngine." alt="" coords="411,157,561,184"/>
+<area shape="rect" href="../../d7/d9e/classxii_player_application.htm" title=" " alt="" coords="641,132,793,159"/>
+<area shape="rect" href="../../d1/df8/classxii_shader_compiler_application.htm" title=" " alt="" coords="609,183,824,209"/>
 </map>
 <center><span class="legend">[<a target="top" href="../../graph_legend.htm">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -360,7 +363,7 @@ XII_FOUNDATION_DLL_FRIEND void&#160;</td><td class="memItemRight" valign="bottom
 <p>This function is called after basic engine initialization has been done. </p>
 <p><a class="el" href="../../dd/d2b/classxii_application.htm" title="Base class to be used by applications based on XII.">xiiApplication</a> will automatically call <a class="el" href="../../dd/d8e/classxii_startup.htm#a33afa05eb4f7a8eefb1dcce11146f9d6" title="Runs the &#39;core&#39; startup sequence of all subsystems in the proper order.">xiiStartup::StartupCoreSystems()</a> to initialize the application. This function can be overridden to do additional application specific initialization. To startup entire subsystems, you should however use the features provided by <a class="el" href="../../dd/d8e/classxii_startup.htm" title="The startup system makes sure to initialize and shut down all known subsystems in the proper order.">xiiStartup</a> and <a class="el" href="../../de/d08/classxii_sub_system.htm" title="Base class for all subsystems.">xiiSubSystem</a>. </p>
 
-<p>Reimplemented in <a class="el" href="../../da/d67/classxii_game_application_base.htm#a0bde97526b84645c19df8a646484d6c3">xiiGameApplicationBase</a>, <a class="el" href="../../d5/da9/classxii_fileserver_app.htm#a8a6065be46d060245ec4aed75208ce54">xiiFileserverApp</a>, and <a class="el" href="../../d5/ddb/classxii_tex_conv.htm#a7a2eff265739d7a41e43c75d7ce41c7d">xiiTexConv</a>.</p>
+<p>Reimplemented in <a class="el" href="../../da/d67/classxii_game_application_base.htm#a0bde97526b84645c19df8a646484d6c3">xiiGameApplicationBase</a>, <a class="el" href="../../d5/da9/classxii_fileserver_app.htm#a8a6065be46d060245ec4aed75208ce54">xiiFileserverApp</a>, <a class="el" href="../../d5/ddb/classxii_tex_conv.htm#a7a2eff265739d7a41e43c75d7ce41c7d">xiiTexConv</a>, <a class="el" href="../../d1/df8/classxii_shader_compiler_application.htm#a3d2ece92d2460063bcfc7570cace585c">xiiShaderCompilerApplication</a>, and <a class="el" href="../../d7/d9e/classxii_player_application.htm#a6d1e1bf4745189e6aad7160783b3f02a">xiiPlayerApplication</a>.</p>
 
 </div>
 </div>
@@ -420,7 +423,7 @@ XII_FOUNDATION_DLL_FRIEND void&#160;</td><td class="memItemRight" valign="bottom
 <p>This function is called before any kind of engine initialization is done. </p>
 <p>Override this function to be able to configure subsystems, before they are initialized. After this function returns, <a class="el" href="../../dd/d8e/classxii_startup.htm#a33afa05eb4f7a8eefb1dcce11146f9d6" title="Runs the &#39;core&#39; startup sequence of all subsystems in the proper order.">xiiStartup::StartupCoreSystems()</a> is automatically called. If you need to set up custom allocators, this is the place to do this. </p>
 
-<p>Reimplemented in <a class="el" href="../../da/d67/classxii_game_application_base.htm#aa116aac9999ce19dcdbd01b816203d6f">xiiGameApplicationBase</a>, <a class="el" href="../../d5/da9/classxii_fileserver_app.htm#a455d4724a378a1c53bf122d5ee2a921b">xiiFileserverApp</a>, and <a class="el" href="../../d5/ddb/classxii_tex_conv.htm#a881aa4e96b0c3157a608f486ef265ce8">xiiTexConv</a>.</p>
+<p>Reimplemented in <a class="el" href="../../da/d67/classxii_game_application_base.htm#aa116aac9999ce19dcdbd01b816203d6f">xiiGameApplicationBase</a>, <a class="el" href="../../d5/da9/classxii_fileserver_app.htm#a455d4724a378a1c53bf122d5ee2a921b">xiiFileserverApp</a>, <a class="el" href="../../d5/ddb/classxii_tex_conv.htm#a881aa4e96b0c3157a608f486ef265ce8">xiiTexConv</a>, <a class="el" href="../../d1/df8/classxii_shader_compiler_application.htm#a6977bbc9dc019425bcd5e689c3e6ee25">xiiShaderCompilerApplication</a>, and <a class="el" href="../../d7/d9e/classxii_player_application.htm#ab8852b043c8bcf61b4823d234c04426a">xiiPlayerApplication</a>.</p>
 
 </div>
 </div>
@@ -593,7 +596,7 @@ XII_FOUNDATION_DLL_FRIEND void&#160;</td><td class="memItemRight" valign="bottom
 <p>Main run function which is called periodically. This function must be overridden. </p>
 <p>Return <a class="el" href="../../dd/d2b/classxii_application.htm#a15434b0054b5c87809df19e488693370a0d82790b0612935992bd564a17ce37d6" title="The &#39;Run&#39; function should return this to quit the application.">Execution::Quit</a> when the application should quit. You may set a return code via <a class="el" href="../../dd/d2b/classxii_application.htm#a1df98d9182653abafa3eac1d938d3764" title="Sets the value that the application will return to the OS. You can call this function at any point du...">SetReturnCode()</a> beforehand. </p>
 
-<p>Implemented in <a class="el" href="../../da/d67/classxii_game_application_base.htm#ae380efb2d22f6c0faf520024e6f8356a">xiiGameApplicationBase</a>, <a class="el" href="../../d5/da9/classxii_fileserver_app.htm#af3edc8739bb3cccb1a9196809b54dccd">xiiFileserverApp</a>, and <a class="el" href="../../d5/ddb/classxii_tex_conv.htm#aa1fdff9c0b7910c50d32664df164ba6b">xiiTexConv</a>.</p>
+<p>Implemented in <a class="el" href="../../da/d67/classxii_game_application_base.htm#ae380efb2d22f6c0faf520024e6f8356a">xiiGameApplicationBase</a>, <a class="el" href="../../d5/da9/classxii_fileserver_app.htm#af3edc8739bb3cccb1a9196809b54dccd">xiiFileserverApp</a>, <a class="el" href="../../d5/ddb/classxii_tex_conv.htm#aa1fdff9c0b7910c50d32664df164ba6b">xiiTexConv</a>, and <a class="el" href="../../d1/df8/classxii_shader_compiler_application.htm#aa7c639599102ce6b9a42ef50fb537696">xiiShaderCompilerApplication</a>.</p>
 
 </div>
 </div>
@@ -643,7 +646,7 @@ XII_FOUNDATION_DLL_FRIEND void&#160;</td><td class="memItemRight" valign="bottom
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dd/d2b/classxii_application.htm">xiiApplication</a></li>
-    <li class="footer">Generated on Fri Dec 1 2023 23:48:53 for XIIEngine by
+    <li class="footer">Generated on Sun Dec 10 2023 03:58:33 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

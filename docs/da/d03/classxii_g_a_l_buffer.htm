@@ -102,10 +102,11 @@ Inheritance diagram for xiiGALBuffer:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../d9/d47/classxii_g_a_l_buffer__inherit__graph.png" border="0" usemap="#xii_g_a_l_buffer_inherit__map" alt="Inheritance graph"/></div>
 <map name="xii_g_a_l_buffer_inherit__map" id="xii_g_a_l_buffer_inherit__map">
-<area shape="rect" title="Interface that defines methods to manipulate a buffer object." alt="" coords="113,95,215,121"/>
+<area shape="rect" title="Interface that defines methods to manipulate a buffer object." alt="" coords="190,95,293,121"/>
 <area shape="rect" href="../../d2/da9/classxii_g_a_l_buffer_d3_d12.htm" title=" " alt="" coords="5,169,152,196"/>
-<area shape="rect" href="../../d4/d0b/classxii_g_a_l_buffer_vulkan.htm" title=" " alt="" coords="176,169,323,196"/>
-<area shape="rect" href="../../d4/d2d/classxii_g_a_l_resource.htm" title=" " alt="" coords="54,5,274,47"/>
+<area shape="rect" href="../../dc/db5/classxii_g_a_l_buffer_null.htm" title=" " alt="" coords="177,169,306,196"/>
+<area shape="rect" href="../../d4/d0b/classxii_g_a_l_buffer_vulkan.htm" title=" " alt="" coords="331,169,477,196"/>
+<area shape="rect" href="../../d4/d2d/classxii_g_a_l_resource.htm" title=" " alt="" coords="131,5,351,47"/>
 </map>
 <center><span class="legend">[<a target="top" href="../../graph_legend.htm">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -215,7 +216,7 @@ Additional Inherited Members</h2></td></tr>
 <p>This method should only be used for persistently-mapped buffers that do not report the <a class="el" href="../../d9/d57/structxii_g_a_l_memory_properties.htm#a2d89adcf1d3020c1ffd5da16f0bfa394a07ddca9044a994676dcc92b033061784">xiiGALMemoryProperties::HostCoherent</a> property. After an application modifies a mapped memory range on the CPU, it must flush the range to make it available to the GPU.</p>
 <dl class="section note"><dt>Note</dt><dd>This method must not be called for Dynamic buffers. When a mapped buffer is unmapped, it is automatically flushed by the engine if necessary. </dd></dl>
 
-<p>Implemented in <a class="el" href="../../d2/da9/classxii_g_a_l_buffer_d3_d12.htm#a8b22e0c158778172ffc1d0c7a6499c59">xiiGALBufferD3D12</a>, and <a class="el" href="../../d4/d0b/classxii_g_a_l_buffer_vulkan.htm#add2b295e8b6f006725958324c1f420a3">xiiGALBufferVulkan</a>.</p>
+<p>Implemented in <a class="el" href="../../dc/db5/classxii_g_a_l_buffer_null.htm#ac602de13fb033940c412dce38c39baef">xiiGALBufferNull</a>, <a class="el" href="../../d2/da9/classxii_g_a_l_buffer_d3_d12.htm#a8b22e0c158778172ffc1d0c7a6499c59">xiiGALBufferD3D12</a>, and <a class="el" href="../../d4/d0b/classxii_g_a_l_buffer_vulkan.htm#add2b295e8b6f006725958324c1f420a3">xiiGALBufferVulkan</a>.</p>
 
 </div>
 </div>
@@ -254,7 +255,7 @@ Additional Inherited Members</h2></td></tr>
 <dl class="section remark"><dt>Remarks</dt><dd>Default views are only created for structured and raw buffers. As for formatted buffers the view format is unknown at buffer initialization time, no default views are created.</dd></dl>
 <dl class="section note"><dt>Note</dt><dd>The function does not increase the reference counter for the returned interface, so ReleaseRef() must <em>NOT</em> be called. </dd></dl>
 
-<p>Implemented in <a class="el" href="../../d2/da9/classxii_g_a_l_buffer_d3_d12.htm#ad47807c167aa434997fc66da26d37996">xiiGALBufferD3D12</a>, and <a class="el" href="../../d4/d0b/classxii_g_a_l_buffer_vulkan.htm#a6dfebaffa3e75e07ca3e381f7f6d7fb4">xiiGALBufferVulkan</a>.</p>
+<p>Implemented in <a class="el" href="../../dc/db5/classxii_g_a_l_buffer_null.htm#a05d9f1900681250aa666cc715387599a">xiiGALBufferNull</a>, <a class="el" href="../../d2/da9/classxii_g_a_l_buffer_d3_d12.htm#ad47807c167aa434997fc66da26d37996">xiiGALBufferD3D12</a>, and <a class="el" href="../../d4/d0b/classxii_g_a_l_buffer_vulkan.htm#a6dfebaffa3e75e07ca3e381f7f6d7fb4">xiiGALBufferVulkan</a>.</p>
 
 </div>
 </div>
@@ -284,7 +285,7 @@ Additional Inherited Members</h2></td></tr>
 <p>This returns the buffer memory properties. </p>
 <p>The memory properties are only relevant for persistently mapped buffers. In particular, if the memory is not coherent, an application must call <a class="el" href="../../da/d03/classxii_g_a_l_buffer.htm#a3f80adde59a6beb4ea0d26b914034d7e" title="This flushes the specified range of non-coherent memory from the host cache to make it available to t...">xiiGALBuffer::FlushMappedRange()</a> to make writes by the CPU available to the GPU, and call <a class="el" href="../../da/d03/classxii_g_a_l_buffer.htm#aeb2d4d7481820f03be61f05ce1333832" title="This invalidates the specified range of non-coherent memory modified by the GPU to make it visible to...">xiiGALBuffer::InvalidateMappedRange()</a> to make writes by the GPU visible to the CPU. </p>
 
-<p>Implemented in <a class="el" href="../../d2/da9/classxii_g_a_l_buffer_d3_d12.htm#aaeea33dc5c378b7cb00c241371e29b16">xiiGALBufferD3D12</a>, and <a class="el" href="../../d4/d0b/classxii_g_a_l_buffer_vulkan.htm#afce5881c9af5b7e4e6db28644e640593">xiiGALBufferVulkan</a>.</p>
+<p>Implemented in <a class="el" href="../../dc/db5/classxii_g_a_l_buffer_null.htm#aefe69999c19833e6a49f37bf47230181">xiiGALBufferNull</a>, <a class="el" href="../../d2/da9/classxii_g_a_l_buffer_d3_d12.htm#aaeea33dc5c378b7cb00c241371e29b16">xiiGALBufferD3D12</a>, and <a class="el" href="../../d4/d0b/classxii_g_a_l_buffer_vulkan.htm#afce5881c9af5b7e4e6db28644e640593">xiiGALBufferVulkan</a>.</p>
 
 </div>
 </div>
@@ -333,7 +334,7 @@ Additional Inherited Members</h2></td></tr>
 <p>This method should only be used for persistently-mapped buffers that do not report the <a class="el" href="../../d9/d57/structxii_g_a_l_memory_properties.htm#a2d89adcf1d3020c1ffd5da16f0bfa394a07ddca9044a994676dcc92b033061784">xiiGALMemoryProperties::HostCoherent</a> property. After an application modifies a mapped memory range on the CPU, it must invalidate the range to make it visible to the CPU.</p>
 <dl class="section note"><dt>Note</dt><dd>This method must not be called for Dynamic buffers. When a mapped buffer is unmapped, it is automatically flushed by the engine if necessary. </dd></dl>
 
-<p>Implemented in <a class="el" href="../../d2/da9/classxii_g_a_l_buffer_d3_d12.htm#abf29e775761a16e5e6bb6272fb1523c4">xiiGALBufferD3D12</a>, and <a class="el" href="../../d4/d0b/classxii_g_a_l_buffer_vulkan.htm#abeff9f10a94936cebde4ef44771f1506">xiiGALBufferVulkan</a>.</p>
+<p>Implemented in <a class="el" href="../../dc/db5/classxii_g_a_l_buffer_null.htm#af2b98e30fe137385a75a28502e9f61e1">xiiGALBufferNull</a>, <a class="el" href="../../d2/da9/classxii_g_a_l_buffer_d3_d12.htm#abf29e775761a16e5e6bb6272fb1523c4">xiiGALBufferD3D12</a>, and <a class="el" href="../../d4/d0b/classxii_g_a_l_buffer_vulkan.htm#abeff9f10a94936cebde4ef44771f1506">xiiGALBufferVulkan</a>.</p>
 
 </div>
 </div>
@@ -364,7 +365,7 @@ Additional Inherited Members</h2></td></tr>
 <p>This sets the buffer usage state. </p>
 <dl class="section note"><dt>Note</dt><dd>This method does not perform state transition, but resets the internal buffer state to the given value. This method should be used after the application finished manually managing the buffer state and wants to hand over state management back to the engine. </dd></dl>
 
-<p>Implemented in <a class="el" href="../../d2/da9/classxii_g_a_l_buffer_d3_d12.htm#ac37fa6599156bd7e60be43cfc45f52b0">xiiGALBufferD3D12</a>, and <a class="el" href="../../d4/d0b/classxii_g_a_l_buffer_vulkan.htm#ad729380a9e1906657139047909b97d88">xiiGALBufferVulkan</a>.</p>
+<p>Implemented in <a class="el" href="../../dc/db5/classxii_g_a_l_buffer_null.htm#abf3be3793fb463f859d31b3a939d3c11">xiiGALBufferNull</a>, <a class="el" href="../../d2/da9/classxii_g_a_l_buffer_d3_d12.htm#ac37fa6599156bd7e60be43cfc45f52b0">xiiGALBufferD3D12</a>, and <a class="el" href="../../d4/d0b/classxii_g_a_l_buffer_vulkan.htm#ad729380a9e1906657139047909b97d88">xiiGALBufferVulkan</a>.</p>
 
 </div>
 </div>
@@ -378,7 +379,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../da/d03/classxii_g_a_l_buffer.htm">xiiGALBuffer</a></li>
-    <li class="footer">Generated on Fri Dec 1 2023 23:48:54 for XIIEngine by
+    <li class="footer">Generated on Sun Dec 10 2023 03:58:35 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

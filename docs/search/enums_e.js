@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['visibility_16997',['Visibility',['../de/d0e/structxii_property_ui_state.htm#a887e1d807f50c059bac4e07ff19c047d',1,'xiiPropertyUiState']]]
+  ['updatebehaviorifstatic_17919',['UpdateBehaviorIfStatic',['../d0/d91/classxii_game_object.htm#a05ca9a629994b6e8be20ba6c74f46f45',1,'xiiGameObject']]]
 ];

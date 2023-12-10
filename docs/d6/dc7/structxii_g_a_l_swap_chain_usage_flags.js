@@ -8,7 +8,6 @@ var structxii_g_a_l_swap_chain_usage_flags =
       [ "ShaderResource", "d6/dc7/structxii_g_a_l_swap_chain_usage_flags.htm#a0a6400b36fb7969abaa95ffb71d04588a184979c8ab81e1a0288e0a2399d43a71", null ],
       [ "InputAttachment", "d6/dc7/structxii_g_a_l_swap_chain_usage_flags.htm#a0a6400b36fb7969abaa95ffb71d04588a97d5f42c634f2353fe5e55627d6511ee", null ],
       [ "CopySource", "d6/dc7/structxii_g_a_l_swap_chain_usage_flags.htm#a0a6400b36fb7969abaa95ffb71d04588a8573a98a09fc36715a03832185f6d640", null ],
-      [ "ENUM_COUNT", "d6/dc7/structxii_g_a_l_swap_chain_usage_flags.htm#a0a6400b36fb7969abaa95ffb71d04588a21d1e9c787116e5742180575167577fc", null ],
       [ "Default", "d6/dc7/structxii_g_a_l_swap_chain_usage_flags.htm#a0a6400b36fb7969abaa95ffb71d04588af8a8b09a579a360d882b5722f793070a", null ]
     ] ]
 ];

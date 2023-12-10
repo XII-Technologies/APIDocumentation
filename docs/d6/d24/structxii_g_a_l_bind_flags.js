@@ -16,7 +16,6 @@ var structxii_g_a_l_bind_flags =
       [ "InputAttachment", "d6/d24/structxii_g_a_l_bind_flags.htm#a25f393130b89d8ef16082ac3ade3c33fa93a3cf7e3bb6f7b3919dc00d3dfb37a8", null ],
       [ "RayTracing", "d6/d24/structxii_g_a_l_bind_flags.htm#a25f393130b89d8ef16082ac3ade3c33fad6d7d4f8549ff8a02c2521b17bf269dc", null ],
       [ "ShadingRate", "d6/d24/structxii_g_a_l_bind_flags.htm#a25f393130b89d8ef16082ac3ade3c33fad5d4da9e3209eca889274ec5d40a1108", null ],
-      [ "ENUM_COUNT", "d6/d24/structxii_g_a_l_bind_flags.htm#a25f393130b89d8ef16082ac3ade3c33fa75227d3a92f78701c92fccc6b28ed56f", null ],
       [ "Default", "d6/d24/structxii_g_a_l_bind_flags.htm#a25f393130b89d8ef16082ac3ade3c33fa8d606ce1512b3ee02795fe454301a521", null ]
     ] ]
 ];

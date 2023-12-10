@@ -17,7 +17,6 @@ var structxii_g_a_l_shading_rate_capability_flags =
       [ "AdditionalInvocations", "dc/d5c/structxii_g_a_l_shading_rate_capability_flags.htm#ae18051ba3e2592a63b1df04552e3f560a54efab59a2b602c109c6670c5d468b88", null ],
       [ "NonSubSampledRenderTarget", "dc/d5c/structxii_g_a_l_shading_rate_capability_flags.htm#ae18051ba3e2592a63b1df04552e3f560addfd5d79649c678c9cba293e7027470f", null ],
       [ "SubSampledRenderTarget", "dc/d5c/structxii_g_a_l_shading_rate_capability_flags.htm#ae18051ba3e2592a63b1df04552e3f560a90db1a8cfd065f352e3d0ae3d8d2c939", null ],
-      [ "ENUM_COUNT", "dc/d5c/structxii_g_a_l_shading_rate_capability_flags.htm#ae18051ba3e2592a63b1df04552e3f560ac4b7e5709b3bfe21725e7864b633ae1a", null ],
       [ "Default", "dc/d5c/structxii_g_a_l_shading_rate_capability_flags.htm#ae18051ba3e2592a63b1df04552e3f560aa243fd868222bfc6b684b787401ecd66", null ]
     ] ]
 ];

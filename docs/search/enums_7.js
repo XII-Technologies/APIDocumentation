@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['mode_16982',['Mode',['../de/d1d/classxii_memory_mapped_file.htm#a5aac0e2d8c477db9d0a1ffeb43675714',1,'xiiMemoryMappedFile::Mode()'],['../d7/d4b/classxii_thread_signal.htm#a3371ecdc4f421d3f4c135f46b05ce0a3',1,'xiiThreadSignal::Mode()']]]
+  ['logavailablemodes_17903',['LogAvailableModes',['../dd/da4/classxii_command_line_option.htm#a6db96aceade745ee4e75369b1926b11a',1,'xiiCommandLineOption']]],
+  ['logmode_17904',['LogMode',['../dd/da4/classxii_command_line_option.htm#aeecfc1ea4f7297497d9e99f9274c8ac4',1,'xiiCommandLineOption']]]
 ];

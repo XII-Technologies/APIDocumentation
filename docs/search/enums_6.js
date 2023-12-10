@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['logavailablemodes_16980',['LogAvailableModes',['../dd/da4/classxii_command_line_option.htm#a6db96aceade745ee4e75369b1926b11a',1,'xiiCommandLineOption']]],
-  ['logmode_16981',['LogMode',['../dd/da4/classxii_command_line_option.htm#aeecfc1ea4f7297497d9e99f9274c8ac4',1,'xiiCommandLineOption']]]
+  ['includetype_17901',['IncludeType',['../db/d38/classxii_preprocessor.htm#a5466b323aa93219d02120f1dc285c440',1,'xiiPreprocessor']]],
+  ['inclusionmode_17902',['InclusionMode',['../d0/dc2/classxii_archive_builder.htm#a79ed6bf54149bed426fcdc8ede30739c',1,'xiiArchiveBuilder']]]
 ];

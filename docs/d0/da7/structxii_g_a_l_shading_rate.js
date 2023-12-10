@@ -12,7 +12,6 @@ var structxii_g_a_l_shading_rate =
       [ "_4X1", "d0/da7/structxii_g_a_l_shading_rate.htm#a4031e7ff0886e340c8dacce8493f870aa4792a1d28ef2b8c35b0a30c44b9d6090", null ],
       [ "_4X2", "d0/da7/structxii_g_a_l_shading_rate.htm#a4031e7ff0886e340c8dacce8493f870aa5d4d0df59ca064e3fc3fce9dbda80d3b", null ],
       [ "_4X4", "d0/da7/structxii_g_a_l_shading_rate.htm#a4031e7ff0886e340c8dacce8493f870aa3b216776864f39efef2ba1f4aef15f4d", null ],
-      [ "ENUM_COUNT", "d0/da7/structxii_g_a_l_shading_rate.htm#a4031e7ff0886e340c8dacce8493f870aa454ec3d6362a1f60be4ab3eb0b9bf3ca", null ],
       [ "Default", "d0/da7/structxii_g_a_l_shading_rate.htm#a4031e7ff0886e340c8dacce8493f870aaa43b0c40341769af5f382bb081ad93c8", null ]
     ] ]
 ];

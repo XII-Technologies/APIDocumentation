@@ -177,11 +177,11 @@ $(document).ready(function(){initNavTree('de/d9b/_quat__inl_8h_source.htm','../.
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;{</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  XII_NAN_ASSERT(<span class="keyword">this</span>);</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  *<span class="keyword">this</span> = -(*this);</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  *<span class="keyword">this</span> = GetInverse();</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;}</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Type&gt;</div>
-<div class="line"><a name="l00095"></a><span class="lineno"><a class="line" href="../../d9/d1b/classxii_quat_template.htm#a4e6d4c187d368bbf3ef46d7914393b1c">   95</a></span>&#160;XII_FORCE_INLINE <span class="keyword">const</span> <a class="code" href="../../d9/d1b/classxii_quat_template.htm">xiiQuatTemplate&lt;Type&gt;</a> <a class="code" href="../../d9/d1b/classxii_quat_template.htm#a4e6d4c187d368bbf3ef46d7914393b1c">xiiQuatTemplate&lt;Type&gt;::operator-</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00095"></a><span class="lineno"><a class="line" href="../../d9/d1b/classxii_quat_template.htm#a281cb5ac2d17e62f8b6fb89fa1ab1a72">   95</a></span>&#160;XII_FORCE_INLINE <span class="keyword">const</span> <a class="code" href="../../d9/d1b/classxii_quat_template.htm">xiiQuatTemplate&lt;Type&gt;</a> <a class="code" href="../../d9/d1b/classxii_quat_template.htm#a281cb5ac2d17e62f8b6fb89fa1ab1a72">xiiQuatTemplate&lt;Type&gt;::GetInverse</a>()<span class="keyword"> const</span></div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="keyword"></span>{</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  XII_NAN_ASSERT(<span class="keyword">this</span>);</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
@@ -189,420 +189,428 @@ $(document).ready(function(){initNavTree('de/d9b/_quat__inl_8h_source.htm','../.
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;}</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; </div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Type&gt;</div>
-<div class="line"><a name="l00103"></a><span class="lineno"><a class="line" href="../../d9/d1b/classxii_quat_template.htm#a6e0a54212fcfe9b1926789427db98aac">  103</a></span>&#160;XII_FORCE_INLINE Type <a class="code" href="../../d9/d1b/classxii_quat_template.htm#a6e0a54212fcfe9b1926789427db98aac">xiiQuatTemplate&lt;Type&gt;::Dot</a>(<span class="keyword">const</span> <a class="code" href="../../d9/d1b/classxii_quat_template.htm">xiiQuatTemplate</a>&amp; rhs)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00103"></a><span class="lineno"><a class="line" href="../../d9/d1b/classxii_quat_template.htm#a99d65514b0a8231d9ec80ceae8a2e65b">  103</a></span>&#160;XII_FORCE_INLINE <span class="keyword">const</span> <a class="code" href="../../d9/d1b/classxii_quat_template.htm">xiiQuatTemplate&lt;Type&gt;</a> <a class="code" href="../../d9/d1b/classxii_quat_template.htm#a99d65514b0a8231d9ec80ceae8a2e65b">xiiQuatTemplate&lt;Type&gt;::GetNegated</a>()<span class="keyword"> const</span></div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="keyword"></span>{</div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;  XII_NAN_ASSERT(<span class="keyword">this</span>);</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;  XII_NAN_ASSERT(&amp;rhs);</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160; </div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;  <span class="keywordflow">return</span> v.Dot(rhs.v) + w * rhs.w;</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;}</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160; </div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Type&gt;</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;XII_ALWAYS_INLINE <span class="keyword">const</span> <a class="code" href="../../d9/d9a/classxii_vec3_template.htm">xiiVec3Template&lt;Type&gt;</a> operator*(<span class="keyword">const</span> <a class="code" href="../../d9/d1b/classxii_quat_template.htm">xiiQuatTemplate&lt;Type&gt;</a>&amp; q, <span class="keyword">const</span> <a class="code" href="../../d9/d9a/classxii_vec3_template.htm">xiiVec3Template&lt;Type&gt;</a>&amp; v)</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;{</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;  <a class="code" href="../../d9/d9a/classxii_vec3_template.htm">xiiVec3Template&lt;Type&gt;</a> t = q.v.CrossRH(v) * (Type)2;</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;  <span class="keywordflow">return</span> v + q.w * t + q.v.CrossRH(t);</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;}</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160; </div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Type&gt;</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;XII_ALWAYS_INLINE <span class="keyword">const</span> <a class="code" href="../../d9/d1b/classxii_quat_template.htm">xiiQuatTemplate&lt;Type&gt;</a> operator*(<span class="keyword">const</span> <a class="code" href="../../d9/d1b/classxii_quat_template.htm">xiiQuatTemplate&lt;Type&gt;</a>&amp; q1, <span class="keyword">const</span> <a class="code" href="../../d9/d1b/classxii_quat_template.htm">xiiQuatTemplate&lt;Type&gt;</a>&amp; q2)</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;{</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;  <a class="code" href="../../d9/d1b/classxii_quat_template.htm">xiiQuatTemplate&lt;Type&gt;</a> q;</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160; </div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;  q.w = q1.w * q2.w - q1.v.Dot(q2.v);</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;  q.v = q1.w * q2.v + q2.w * q1.v + q1.v.CrossRH(q2.v);</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160; </div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;  <span class="keywordflow">return</span> (<a class="code" href="../../d9/d1b/classxii_quat_template.htm">xiiQuatTemplate</a>(-v.x, -v.y, -v.z, -w));</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;}</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160; </div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Type&gt;</div>
+<div class="line"><a name="l00111"></a><span class="lineno"><a class="line" href="../../d9/d1b/classxii_quat_template.htm#a6e0a54212fcfe9b1926789427db98aac">  111</a></span>&#160;XII_FORCE_INLINE Type <a class="code" href="../../d9/d1b/classxii_quat_template.htm#a6e0a54212fcfe9b1926789427db98aac">xiiQuatTemplate&lt;Type&gt;::Dot</a>(<span class="keyword">const</span> <a class="code" href="../../d9/d1b/classxii_quat_template.htm">xiiQuatTemplate</a>&amp; rhs)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;  XII_NAN_ASSERT(<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;  XII_NAN_ASSERT(&amp;rhs);</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160; </div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;  <span class="keywordflow">return</span> v.Dot(rhs.v) + w * rhs.w;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;}</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160; </div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Type&gt;</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;XII_ALWAYS_INLINE <span class="keyword">const</span> <a class="code" href="../../d9/d9a/classxii_vec3_template.htm">xiiVec3Template&lt;Type&gt;</a> operator*(<span class="keyword">const</span> <a class="code" href="../../d9/d1b/classxii_quat_template.htm">xiiQuatTemplate&lt;Type&gt;</a>&amp; q, <span class="keyword">const</span> <a class="code" href="../../d9/d9a/classxii_vec3_template.htm">xiiVec3Template&lt;Type&gt;</a>&amp; v)</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;{</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;  <a class="code" href="../../d9/d9a/classxii_vec3_template.htm">xiiVec3Template&lt;Type&gt;</a> t = q.v.CrossRH(v) * (Type)2;</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;  <span class="keywordflow">return</span> v + q.w * t + q.v.CrossRH(t);</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;}</div>
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160; </div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;  <span class="keywordflow">return</span> (q);</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;}</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160; </div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Type&gt;</div>
-<div class="line"><a name="l00130"></a><span class="lineno"><a class="line" href="../../d9/d1b/classxii_quat_template.htm#ae8d1ef81f529aa01674735ee3095d2a0">  130</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="../../d9/d1b/classxii_quat_template.htm#ae8d1ef81f529aa01674735ee3095d2a0">xiiQuatTemplate&lt;Type&gt;::IsValid</a>(Type fEpsilon)<span class="keyword"> const</span></div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;<span class="keyword"></span>{</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;  <span class="keywordflow">if</span> (!v.<a class="code" href="../../d9/d9a/classxii_vec3_template.htm#ada4983624dd9914c854b8e7fafa38b2b">IsValid</a>())</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;  <span class="keywordflow">if</span> (!xiiMath::IsFinite(w))</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Type&gt;</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;XII_ALWAYS_INLINE <span class="keyword">const</span> <a class="code" href="../../d9/d1b/classxii_quat_template.htm">xiiQuatTemplate&lt;Type&gt;</a> operator*(<span class="keyword">const</span> <a class="code" href="../../d9/d1b/classxii_quat_template.htm">xiiQuatTemplate&lt;Type&gt;</a>&amp; q1, <span class="keyword">const</span> <a class="code" href="../../d9/d1b/classxii_quat_template.htm">xiiQuatTemplate&lt;Type&gt;</a>&amp; q2)</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;{</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;  <a class="code" href="../../d9/d1b/classxii_quat_template.htm">xiiQuatTemplate&lt;Type&gt;</a> q;</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160; </div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;  q.w = q1.w * q2.w - q1.v.Dot(q2.v);</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;  q.v = q1.w * q2.v + q2.w * q1.v + q1.v.CrossRH(q2.v);</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160; </div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;  <span class="keywordflow">return</span> (q);</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;}</div>
 <div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160; </div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;  Type n = v.x * v.x + v.y * v.y + v.z * v.z + w * w;</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160; </div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;  <span class="keywordflow">return</span> (<a class="code" href="../../d1/d37/namespacexii_math.htm#a20047812a62c07b9ac2144a5520c18f0">xiiMath::IsEqual</a>(n, (Type)1, fEpsilon));</div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;}</div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160; </div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Type&gt;</div>
-<div class="line"><a name="l00143"></a><span class="lineno"><a class="line" href="../../d9/d1b/classxii_quat_template.htm#acac88d8e4caf8ddb378b3c8afcc1efce">  143</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="../../d9/d1b/classxii_quat_template.htm#acac88d8e4caf8ddb378b3c8afcc1efce">xiiQuatTemplate&lt;Type&gt;::IsNaN</a>()<span class="keyword"> const</span></div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;<span class="keyword"></span>{</div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;  <span class="keywordflow">return</span> v.<a class="code" href="../../d9/d9a/classxii_vec3_template.htm#a232995c2778f2228e488ef26e420a3ea">IsNaN</a>() || xiiMath::IsNaN(w);</div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;}</div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160; </div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Type&gt;</div>
-<div class="line"><a name="l00149"></a><span class="lineno"><a class="line" href="../../d9/d1b/classxii_quat_template.htm#a09a33fa5dcfe6cfaab85362445b27898">  149</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="../../d9/d1b/classxii_quat_template.htm#a09a33fa5dcfe6cfaab85362445b27898">xiiQuatTemplate&lt;Type&gt;::IsEqualRotation</a>(<span class="keyword">const</span> <a class="code" href="../../d9/d1b/classxii_quat_template.htm">xiiQuatTemplate&lt;Type&gt;</a>&amp; qOther, Type fEpsilon)<span class="keyword"> const</span></div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;<span class="keyword"></span>{</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;  <span class="keywordflow">if</span> (v.<a class="code" href="../../d9/d9a/classxii_vec3_template.htm#aa298cc63bf4b22e7c9548096d774317f">IsEqual</a>(qOther.v, xiiMath::DefaultEpsilon&lt;Type&gt;()) &amp;&amp; <a class="code" href="../../d1/d37/namespacexii_math.htm#a20047812a62c07b9ac2144a5520c18f0">xiiMath::IsEqual</a>(w, qOther.w, xiiMath::DefaultEpsilon&lt;Type&gt;()))</div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;  {</div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;  }</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Type&gt;</div>
+<div class="line"><a name="l00138"></a><span class="lineno"><a class="line" href="../../d9/d1b/classxii_quat_template.htm#ae8d1ef81f529aa01674735ee3095d2a0">  138</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="../../d9/d1b/classxii_quat_template.htm#ae8d1ef81f529aa01674735ee3095d2a0">xiiQuatTemplate&lt;Type&gt;::IsValid</a>(Type fEpsilon)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;  <span class="keywordflow">if</span> (!v.<a class="code" href="../../d9/d9a/classxii_vec3_template.htm#ada4983624dd9914c854b8e7fafa38b2b">IsValid</a>())</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;  <span class="keywordflow">if</span> (!xiiMath::IsFinite(w))</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160; </div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;  Type n = v.x * v.x + v.y * v.y + v.z * v.z + w * w;</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160; </div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;  <span class="keywordflow">return</span> (<a class="code" href="../../d1/d37/namespacexii_math.htm#a20047812a62c07b9ac2144a5520c18f0">xiiMath::IsEqual</a>(n, (Type)1, fEpsilon));</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;}</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160; </div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Type&gt;</div>
+<div class="line"><a name="l00151"></a><span class="lineno"><a class="line" href="../../d9/d1b/classxii_quat_template.htm#acac88d8e4caf8ddb378b3c8afcc1efce">  151</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="../../d9/d1b/classxii_quat_template.htm#acac88d8e4caf8ddb378b3c8afcc1efce">xiiQuatTemplate&lt;Type&gt;::IsNaN</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;  <span class="keywordflow">return</span> v.<a class="code" href="../../d9/d9a/classxii_vec3_template.htm#a232995c2778f2228e488ef26e420a3ea">IsNaN</a>() || xiiMath::IsNaN(w);</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;}</div>
 <div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160; </div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;  <a class="code" href="../../d9/d9a/classxii_vec3_template.htm">xiiVec3Template&lt;Type&gt;</a> vA1, vA2;</div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;  <a class="code" href="../../d3/ddb/classxii_angle_template.htm">xiiAngle</a>              A1, A2;</div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160; </div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;  GetRotationAxisAndAngle(vA1, A1);</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;  qOther.<a class="code" href="../../d9/d1b/classxii_quat_template.htm#a4439e3b9882a6a061622a29f9c42cd5f">GetRotationAxisAndAngle</a>(vA2, A2);</div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160; </div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;  <span class="keywordflow">if</span> ((A1.<a class="code" href="../../d3/ddb/classxii_angle_template.htm#a2b5342a182d1fdedc3db8a49cd4a2e21">IsEqualSimple</a>(A2, <a class="code" href="../../d3/ddb/classxii_angle_template.htm#a186b3138db53d77de01facd1026240c0">xiiAngle::Degree</a>(<span class="keyword">static_cast&lt;</span><span class="keywordtype">float</span><span class="keyword">&gt;</span>(fEpsilon)))) &amp;&amp; (vA1.<a class="code" href="../../d9/d9a/classxii_vec3_template.htm#aa298cc63bf4b22e7c9548096d774317f">IsEqual</a>(vA2, fEpsilon)))</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160; </div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;  <span class="keywordflow">if</span> ((A1.<a class="code" href="../../d3/ddb/classxii_angle_template.htm#a2b5342a182d1fdedc3db8a49cd4a2e21">IsEqualSimple</a>(-A2, <a class="code" href="../../d3/ddb/classxii_angle_template.htm#a186b3138db53d77de01facd1026240c0">xiiAngle::Degree</a>(<span class="keyword">static_cast&lt;</span><span class="keywordtype">float</span><span class="keyword">&gt;</span>(fEpsilon)))) &amp;&amp; (vA1.<a class="code" href="../../d9/d9a/classxii_vec3_template.htm#aa298cc63bf4b22e7c9548096d774317f">IsEqual</a>(-vA2, fEpsilon)))</div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160; </div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;  <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;}</div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160; </div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Type&gt;</div>
-<div class="line"><a name="l00172"></a><span class="lineno"><a class="line" href="../../d9/d1b/classxii_quat_template.htm#aa6d32f6602a305f9bb2b80d578db647f">  172</a></span>&#160;<span class="keyword">const</span> <a class="code" href="../../d3/d74/classxii_mat3_template.htm">xiiMat3Template&lt;Type&gt;</a> <a class="code" href="../../d9/d1b/classxii_quat_template.htm#aa6d32f6602a305f9bb2b80d578db647f">xiiQuatTemplate&lt;Type&gt;::GetAsMat3</a>()<span class="keyword"> const</span></div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;<span class="keyword"></span>{</div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;  XII_NAN_ASSERT(<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Type&gt;</div>
+<div class="line"><a name="l00157"></a><span class="lineno"><a class="line" href="../../d9/d1b/classxii_quat_template.htm#a09a33fa5dcfe6cfaab85362445b27898">  157</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="../../d9/d1b/classxii_quat_template.htm#a09a33fa5dcfe6cfaab85362445b27898">xiiQuatTemplate&lt;Type&gt;::IsEqualRotation</a>(<span class="keyword">const</span> <a class="code" href="../../d9/d1b/classxii_quat_template.htm">xiiQuatTemplate&lt;Type&gt;</a>&amp; qOther, Type fEpsilon)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;  <span class="keywordflow">if</span> (v.<a class="code" href="../../d9/d9a/classxii_vec3_template.htm#aa298cc63bf4b22e7c9548096d774317f">IsEqual</a>(qOther.v, xiiMath::DefaultEpsilon&lt;Type&gt;()) &amp;&amp; <a class="code" href="../../d1/d37/namespacexii_math.htm#a20047812a62c07b9ac2144a5520c18f0">xiiMath::IsEqual</a>(w, qOther.w, xiiMath::DefaultEpsilon&lt;Type&gt;()))</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;  {</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;  }</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160; </div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;  <a class="code" href="../../d9/d9a/classxii_vec3_template.htm">xiiVec3Template&lt;Type&gt;</a> vA1, vA2;</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;  <a class="code" href="../../d3/ddb/classxii_angle_template.htm">xiiAngle</a>              A1, A2;</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160; </div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;  GetRotationAxisAndAngle(vA1, A1);</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;  qOther.<a class="code" href="../../d9/d1b/classxii_quat_template.htm#a4439e3b9882a6a061622a29f9c42cd5f">GetRotationAxisAndAngle</a>(vA2, A2);</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160; </div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;  <span class="keywordflow">if</span> ((A1.<a class="code" href="../../d3/ddb/classxii_angle_template.htm#a2b5342a182d1fdedc3db8a49cd4a2e21">IsEqualSimple</a>(A2, <a class="code" href="../../d3/ddb/classxii_angle_template.htm#a186b3138db53d77de01facd1026240c0">xiiAngle::Degree</a>(<span class="keyword">static_cast&lt;</span><span class="keywordtype">float</span><span class="keyword">&gt;</span>(fEpsilon)))) &amp;&amp; (vA1.<a class="code" href="../../d9/d9a/classxii_vec3_template.htm#aa298cc63bf4b22e7c9548096d774317f">IsEqual</a>(vA2, fEpsilon)))</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160; </div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;  <span class="keywordflow">if</span> ((A1.<a class="code" href="../../d3/ddb/classxii_angle_template.htm#a2b5342a182d1fdedc3db8a49cd4a2e21">IsEqualSimple</a>(-A2, <a class="code" href="../../d3/ddb/classxii_angle_template.htm#a186b3138db53d77de01facd1026240c0">xiiAngle::Degree</a>(<span class="keyword">static_cast&lt;</span><span class="keywordtype">float</span><span class="keyword">&gt;</span>(fEpsilon)))) &amp;&amp; (vA1.<a class="code" href="../../d9/d9a/classxii_vec3_template.htm#aa298cc63bf4b22e7c9548096d774317f">IsEqual</a>(-vA2, fEpsilon)))</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160; </div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;  <a class="code" href="../../d3/d74/classxii_mat3_template.htm">xiiMat3Template&lt;Type&gt;</a> m;</div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160; </div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;  <span class="keyword">const</span> Type fTx  = v.x + v.x;</div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;  <span class="keyword">const</span> Type fTy  = v.y + v.y;</div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;  <span class="keyword">const</span> Type fTz  = v.z + v.z;</div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;  <span class="keyword">const</span> Type fTwx = fTx * w;</div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;  <span class="keyword">const</span> Type fTwy = fTy * w;</div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;  <span class="keyword">const</span> Type fTwz = fTz * w;</div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;  <span class="keyword">const</span> Type fTxx = fTx * v.x;</div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;  <span class="keyword">const</span> Type fTxy = fTy * v.x;</div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;  <span class="keyword">const</span> Type fTxz = fTz * v.x;</div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;  <span class="keyword">const</span> Type fTyy = fTy * v.y;</div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;  <span class="keyword">const</span> Type fTyz = fTz * v.y;</div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;  <span class="keyword">const</span> Type fTzz = fTz * v.z;</div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160; </div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;  m.Element(0, 0) = (Type)1 - (fTyy + fTzz);</div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;  m.Element(1, 0) = fTxy - fTwz;</div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;  m.Element(2, 0) = fTxz + fTwy;</div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;  m.Element(0, 1) = fTxy + fTwz;</div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;  m.Element(1, 1) = (Type)1 - (fTxx + fTzz);</div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;  m.Element(2, 1) = fTyz - fTwx;</div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;  m.Element(0, 2) = fTxz - fTwy;</div>
-<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;  m.Element(1, 2) = fTyz + fTwx;</div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;  m.Element(2, 2) = (Type)1 - (fTxx + fTyy);</div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;  <span class="keywordflow">return</span> m;</div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;}</div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160; </div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Type&gt;</div>
-<div class="line"><a name="l00204"></a><span class="lineno"><a class="line" href="../../d9/d1b/classxii_quat_template.htm#ae4acab9c811fa6a9f02c2312599526fc">  204</a></span>&#160;<span class="keyword">const</span> <a class="code" href="../../d1/dec/classxii_mat4_template.htm">xiiMat4Template&lt;Type&gt;</a> <a class="code" href="../../d9/d1b/classxii_quat_template.htm#ae4acab9c811fa6a9f02c2312599526fc">xiiQuatTemplate&lt;Type&gt;::GetAsMat4</a>()<span class="keyword"> const</span></div>
-<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;<span class="keyword"></span>{</div>
-<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;  XII_NAN_ASSERT(<span class="keyword">this</span>);</div>
-<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160; </div>
-<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;  <a class="code" href="../../d1/dec/classxii_mat4_template.htm">xiiMat4Template&lt;Type&gt;</a> m;</div>
-<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160; </div>
-<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;  <span class="keyword">const</span> Type fTx  = v.x + v.x;</div>
-<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;  <span class="keyword">const</span> Type fTy  = v.y + v.y;</div>
-<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;  <span class="keyword">const</span> Type fTz  = v.z + v.z;</div>
-<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;  <span class="keyword">const</span> Type fTwx = fTx * w;</div>
-<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;  <span class="keyword">const</span> Type fTwy = fTy * w;</div>
-<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;  <span class="keyword">const</span> Type fTwz = fTz * w;</div>
-<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;  <span class="keyword">const</span> Type fTxx = fTx * v.x;</div>
-<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;  <span class="keyword">const</span> Type fTxy = fTy * v.x;</div>
-<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;  <span class="keyword">const</span> Type fTxz = fTz * v.x;</div>
-<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;  <span class="keyword">const</span> Type fTyy = fTy * v.y;</div>
-<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;  <span class="keyword">const</span> Type fTyz = fTz * v.y;</div>
-<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;  <span class="keyword">const</span> Type fTzz = fTz * v.z;</div>
-<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160; </div>
-<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;  m.Element(0, 0) = (Type)1 - (fTyy + fTzz);</div>
-<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;  m.Element(1, 0) = fTxy - fTwz;</div>
-<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;  m.Element(2, 0) = fTxz + fTwy;</div>
-<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;  m.Element(3, 0) = (Type)0;</div>
-<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;  m.Element(0, 1) = fTxy + fTwz;</div>
-<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;  m.Element(1, 1) = (Type)1 - (fTxx + fTzz);</div>
-<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;  m.Element(2, 1) = fTyz - fTwx;</div>
-<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;  m.Element(3, 1) = (Type)0;</div>
-<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;  m.Element(0, 2) = fTxz - fTwy;</div>
-<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;  m.Element(1, 2) = fTyz + fTwx;</div>
-<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;  m.Element(2, 2) = (Type)1 - (fTxx + fTyy);</div>
-<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;  m.Element(3, 2) = (Type)0;</div>
-<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;  m.Element(0, 3) = (Type)0;</div>
-<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;  m.Element(1, 3) = (Type)0;</div>
-<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;  m.Element(2, 3) = (Type)0;</div>
-<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;  m.Element(3, 3) = (Type)1;</div>
-<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;  <span class="keywordflow">return</span> m;</div>
-<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;}</div>
-<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160; </div>
-<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Type&gt;</div>
-<div class="line"><a name="l00243"></a><span class="lineno"><a class="line" href="../../d9/d1b/classxii_quat_template.htm#a4c5018aaf26a32127f17884de644e485">  243</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d9/d1b/classxii_quat_template.htm#a4c5018aaf26a32127f17884de644e485">xiiQuatTemplate&lt;Type&gt;::SetFromMat3</a>(<span class="keyword">const</span> <a class="code" href="../../d3/d74/classxii_mat3_template.htm">xiiMat3Template&lt;Type&gt;</a>&amp; m)</div>
-<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;{</div>
-<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;  XII_NAN_ASSERT(&amp;m);</div>
-<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160; </div>
-<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;  <span class="keyword">const</span> Type trace = m.Element(0, 0) + m.Element(1, 1) + m.Element(2, 2);</div>
-<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;  <span class="keyword">const</span> Type half  = (Type)0.5;</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;  <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;}</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160; </div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Type&gt;</div>
+<div class="line"><a name="l00180"></a><span class="lineno"><a class="line" href="../../d9/d1b/classxii_quat_template.htm#aa6d32f6602a305f9bb2b80d578db647f">  180</a></span>&#160;<span class="keyword">const</span> <a class="code" href="../../d3/d74/classxii_mat3_template.htm">xiiMat3Template&lt;Type&gt;</a> <a class="code" href="../../d9/d1b/classxii_quat_template.htm#aa6d32f6602a305f9bb2b80d578db647f">xiiQuatTemplate&lt;Type&gt;::GetAsMat3</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;  XII_NAN_ASSERT(<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160; </div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;  <a class="code" href="../../d3/d74/classxii_mat3_template.htm">xiiMat3Template&lt;Type&gt;</a> m;</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160; </div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;  <span class="keyword">const</span> Type fTx  = v.x + v.x;</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;  <span class="keyword">const</span> Type fTy  = v.y + v.y;</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;  <span class="keyword">const</span> Type fTz  = v.z + v.z;</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;  <span class="keyword">const</span> Type fTwx = fTx * w;</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;  <span class="keyword">const</span> Type fTwy = fTy * w;</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;  <span class="keyword">const</span> Type fTwz = fTz * w;</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;  <span class="keyword">const</span> Type fTxx = fTx * v.x;</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;  <span class="keyword">const</span> Type fTxy = fTy * v.x;</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;  <span class="keyword">const</span> Type fTxz = fTz * v.x;</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;  <span class="keyword">const</span> Type fTyy = fTy * v.y;</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;  <span class="keyword">const</span> Type fTyz = fTz * v.y;</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;  <span class="keyword">const</span> Type fTzz = fTz * v.z;</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160; </div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;  m.Element(0, 0) = (Type)1 - (fTyy + fTzz);</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;  m.Element(1, 0) = fTxy - fTwz;</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;  m.Element(2, 0) = fTxz + fTwy;</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;  m.Element(0, 1) = fTxy + fTwz;</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;  m.Element(1, 1) = (Type)1 - (fTxx + fTzz);</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;  m.Element(2, 1) = fTyz - fTwx;</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;  m.Element(0, 2) = fTxz - fTwy;</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;  m.Element(1, 2) = fTyz + fTwx;</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;  m.Element(2, 2) = (Type)1 - (fTxx + fTyy);</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;  <span class="keywordflow">return</span> m;</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;}</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160; </div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Type&gt;</div>
+<div class="line"><a name="l00212"></a><span class="lineno"><a class="line" href="../../d9/d1b/classxii_quat_template.htm#ae4acab9c811fa6a9f02c2312599526fc">  212</a></span>&#160;<span class="keyword">const</span> <a class="code" href="../../d1/dec/classxii_mat4_template.htm">xiiMat4Template&lt;Type&gt;</a> <a class="code" href="../../d9/d1b/classxii_quat_template.htm#ae4acab9c811fa6a9f02c2312599526fc">xiiQuatTemplate&lt;Type&gt;::GetAsMat4</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;  XII_NAN_ASSERT(<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160; </div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;  <a class="code" href="../../d1/dec/classxii_mat4_template.htm">xiiMat4Template&lt;Type&gt;</a> m;</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160; </div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;  <span class="keyword">const</span> Type fTx  = v.x + v.x;</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;  <span class="keyword">const</span> Type fTy  = v.y + v.y;</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;  <span class="keyword">const</span> Type fTz  = v.z + v.z;</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;  <span class="keyword">const</span> Type fTwx = fTx * w;</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;  <span class="keyword">const</span> Type fTwy = fTy * w;</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;  <span class="keyword">const</span> Type fTwz = fTz * w;</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;  <span class="keyword">const</span> Type fTxx = fTx * v.x;</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;  <span class="keyword">const</span> Type fTxy = fTy * v.x;</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;  <span class="keyword">const</span> Type fTxz = fTz * v.x;</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;  <span class="keyword">const</span> Type fTyy = fTy * v.y;</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;  <span class="keyword">const</span> Type fTyz = fTz * v.y;</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;  <span class="keyword">const</span> Type fTzz = fTz * v.z;</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160; </div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;  m.Element(0, 0) = (Type)1 - (fTyy + fTzz);</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;  m.Element(1, 0) = fTxy - fTwz;</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;  m.Element(2, 0) = fTxz + fTwy;</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;  m.Element(3, 0) = (Type)0;</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;  m.Element(0, 1) = fTxy + fTwz;</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;  m.Element(1, 1) = (Type)1 - (fTxx + fTzz);</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;  m.Element(2, 1) = fTyz - fTwx;</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;  m.Element(3, 1) = (Type)0;</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;  m.Element(0, 2) = fTxz - fTwy;</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;  m.Element(1, 2) = fTyz + fTwx;</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;  m.Element(2, 2) = (Type)1 - (fTxx + fTyy);</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;  m.Element(3, 2) = (Type)0;</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;  m.Element(0, 3) = (Type)0;</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;  m.Element(1, 3) = (Type)0;</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;  m.Element(2, 3) = (Type)0;</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;  m.Element(3, 3) = (Type)1;</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;  <span class="keywordflow">return</span> m;</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;}</div>
 <div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160; </div>
-<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;  Type val[4];</div>
-<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160; </div>
-<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;  <span class="keywordflow">if</span> (trace &gt; (Type)0)</div>
-<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;  {</div>
-<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;    Type s = <a class="code" href="../../d1/d37/namespacexii_math.htm#ae7fbda648b6f9bcc4dc23962d06c93f4">xiiMath::Sqrt</a>(trace + (Type)1);</div>
-<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;    Type t = half / s;</div>
-<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160; </div>
-<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;    val[0] = (m.Element(1, 2) - m.Element(2, 1)) * t;</div>
-<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;    val[1] = (m.Element(2, 0) - m.Element(0, 2)) * t;</div>
-<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;    val[2] = (m.Element(0, 1) - m.Element(1, 0)) * t;</div>
-<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160; </div>
-<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;    val[3] = half * s;</div>
-<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;  }</div>
-<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;  <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;  {</div>
-<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;    <span class="keyword">const</span> xiiInt32 next[] = {1, 2, 0};</div>
-<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;    xiiInt32       i      = 0;</div>
-<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160; </div>
-<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;    <span class="keywordflow">if</span> (m.Element(1, 1) &gt; m.Element(0, 0))</div>
-<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;      i = 1;</div>
-<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160; </div>
-<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;    <span class="keywordflow">if</span> (m.Element(2, 2) &gt; m.Element(i, i))</div>
-<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;      i = 2;</div>
-<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160; </div>
-<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;    xiiInt32 j = next[i];</div>
-<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;    xiiInt32 k = next[j];</div>
-<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160; </div>
-<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;    Type s = <a class="code" href="../../d1/d37/namespacexii_math.htm#ae7fbda648b6f9bcc4dc23962d06c93f4">xiiMath::Sqrt</a>(m.Element(i, i) - (m.Element(j, j) + m.Element(k, k)) + (Type)1);</div>
-<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;    Type t = half / s;</div>
-<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160; </div>
-<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;    val[i] = half * s;</div>
-<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;    val[3] = (m.Element(j, k) - m.Element(k, j)) * t;</div>
-<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;    val[j] = (m.Element(i, j) + m.Element(j, i)) * t;</div>
-<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;    val[k] = (m.Element(i, k) + m.Element(k, i)) * t;</div>
-<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;  }</div>
-<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160; </div>
-<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;  v.x = val[0];</div>
-<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;  v.y = val[1];</div>
-<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;  v.z = val[2];</div>
-<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;  w   = val[3];</div>
-<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;}</div>
-<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160; </div>
-<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Type&gt;</div>
-<div class="line"><a name="l00293"></a><span class="lineno"><a class="line" href="../../d9/d1b/classxii_quat_template.htm#a626e119e067b041d16a8fd8bfb006c92">  293</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d9/d1b/classxii_quat_template.htm#a626e119e067b041d16a8fd8bfb006c92">xiiQuatTemplate&lt;Type&gt;::ReconstructFromMat3</a>(<span class="keyword">const</span> <a class="code" href="../../d3/d74/classxii_mat3_template.htm">xiiMat3Template&lt;Type&gt;</a>&amp; mMat)</div>
-<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;{</div>
-<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;  <span class="keyword">const</span> <a class="code" href="../../d9/d9a/classxii_vec3_template.htm">xiiVec3</a> x = (mMat * <a class="code" href="../../d9/d9a/classxii_vec3_template.htm">xiiVec3</a>(1, 0, 0)).GetNormalized();</div>
-<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;  <span class="keyword">const</span> <a class="code" href="../../d9/d9a/classxii_vec3_template.htm">xiiVec3</a> y = (mMat * <a class="code" href="../../d9/d9a/classxii_vec3_template.htm">xiiVec3</a>(0, 1, 0)).GetNormalized();</div>
-<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;  <span class="keyword">const</span> <a class="code" href="../../d9/d9a/classxii_vec3_template.htm">xiiVec3</a> z = x.<a class="code" href="../../d9/d9a/classxii_vec3_template.htm#a658acf243e57aea0c7252d6918eca809">CrossRH</a>(y);</div>
-<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160; </div>
-<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;  <a class="code" href="../../d3/d74/classxii_mat3_template.htm">xiiMat3</a> m;</div>
-<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;  m.<a class="code" href="../../d3/d74/classxii_mat3_template.htm#a305fa340274e241f3f0e8aaed8419c25">SetColumn</a>(0, x);</div>
-<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;  m.<a class="code" href="../../d3/d74/classxii_mat3_template.htm#a305fa340274e241f3f0e8aaed8419c25">SetColumn</a>(1, y);</div>
-<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;  m.<a class="code" href="../../d3/d74/classxii_mat3_template.htm#a305fa340274e241f3f0e8aaed8419c25">SetColumn</a>(2, z);</div>
-<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160; </div>
-<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;  SetFromMat3(m);</div>
-<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;}</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Type&gt;</div>
+<div class="line"><a name="l00251"></a><span class="lineno"><a class="line" href="../../d9/d1b/classxii_quat_template.htm#a4c5018aaf26a32127f17884de644e485">  251</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d9/d1b/classxii_quat_template.htm#a4c5018aaf26a32127f17884de644e485">xiiQuatTemplate&lt;Type&gt;::SetFromMat3</a>(<span class="keyword">const</span> <a class="code" href="../../d3/d74/classxii_mat3_template.htm">xiiMat3Template&lt;Type&gt;</a>&amp; m)</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;{</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;  XII_NAN_ASSERT(&amp;m);</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160; </div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;  <span class="keyword">const</span> Type trace = m.Element(0, 0) + m.Element(1, 1) + m.Element(2, 2);</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;  <span class="keyword">const</span> Type half  = (Type)0.5;</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160; </div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;  Type val[4];</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160; </div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;  <span class="keywordflow">if</span> (trace &gt; (Type)0)</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;  {</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;    Type s = <a class="code" href="../../d1/d37/namespacexii_math.htm#ae7fbda648b6f9bcc4dc23962d06c93f4">xiiMath::Sqrt</a>(trace + (Type)1);</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;    Type t = half / s;</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160; </div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;    val[0] = (m.Element(1, 2) - m.Element(2, 1)) * t;</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;    val[1] = (m.Element(2, 0) - m.Element(0, 2)) * t;</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;    val[2] = (m.Element(0, 1) - m.Element(1, 0)) * t;</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160; </div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;    val[3] = half * s;</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;  }</div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;  <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;  {</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;    <span class="keyword">const</span> xiiInt32 next[] = {1, 2, 0};</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;    xiiInt32       i      = 0;</div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160; </div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;    <span class="keywordflow">if</span> (m.Element(1, 1) &gt; m.Element(0, 0))</div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;      i = 1;</div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160; </div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;    <span class="keywordflow">if</span> (m.Element(2, 2) &gt; m.Element(i, i))</div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;      i = 2;</div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160; </div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;    xiiInt32 j = next[i];</div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;    xiiInt32 k = next[j];</div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160; </div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;    Type s = <a class="code" href="../../d1/d37/namespacexii_math.htm#ae7fbda648b6f9bcc4dc23962d06c93f4">xiiMath::Sqrt</a>(m.Element(i, i) - (m.Element(j, j) + m.Element(k, k)) + (Type)1);</div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;    Type t = half / s;</div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160; </div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;    val[i] = half * s;</div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;    val[3] = (m.Element(j, k) - m.Element(k, j)) * t;</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;    val[j] = (m.Element(i, j) + m.Element(j, i)) * t;</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;    val[k] = (m.Element(i, k) + m.Element(k, i)) * t;</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;  }</div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160; </div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;  v.x = val[0];</div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;  v.y = val[1];</div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;  v.z = val[2];</div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;  w   = val[3];</div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;}</div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160; </div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Type&gt;</div>
+<div class="line"><a name="l00301"></a><span class="lineno"><a class="line" href="../../d9/d1b/classxii_quat_template.htm#a626e119e067b041d16a8fd8bfb006c92">  301</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d9/d1b/classxii_quat_template.htm#a626e119e067b041d16a8fd8bfb006c92">xiiQuatTemplate&lt;Type&gt;::ReconstructFromMat3</a>(<span class="keyword">const</span> <a class="code" href="../../d3/d74/classxii_mat3_template.htm">xiiMat3Template&lt;Type&gt;</a>&amp; mMat)</div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;{</div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;  <span class="keyword">const</span> <a class="code" href="../../d9/d9a/classxii_vec3_template.htm">xiiVec3</a> x = (mMat * <a class="code" href="../../d9/d9a/classxii_vec3_template.htm">xiiVec3</a>(1, 0, 0)).GetNormalized();</div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;  <span class="keyword">const</span> <a class="code" href="../../d9/d9a/classxii_vec3_template.htm">xiiVec3</a> y = (mMat * <a class="code" href="../../d9/d9a/classxii_vec3_template.htm">xiiVec3</a>(0, 1, 0)).GetNormalized();</div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;  <span class="keyword">const</span> <a class="code" href="../../d9/d9a/classxii_vec3_template.htm">xiiVec3</a> z = x.<a class="code" href="../../d9/d9a/classxii_vec3_template.htm#a658acf243e57aea0c7252d6918eca809">CrossRH</a>(y);</div>
 <div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160; </div>
-<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Type&gt;</div>
-<div class="line"><a name="l00308"></a><span class="lineno"><a class="line" href="../../d9/d1b/classxii_quat_template.htm#a7e0b7355144093951d34ec4cd7c08e81">  308</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d9/d1b/classxii_quat_template.htm#a7e0b7355144093951d34ec4cd7c08e81">xiiQuatTemplate&lt;Type&gt;::ReconstructFromMat4</a>(<span class="keyword">const</span> <a class="code" href="../../d1/dec/classxii_mat4_template.htm">xiiMat4Template&lt;Type&gt;</a>&amp; mMat)</div>
-<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;{</div>
-<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;  <span class="keyword">const</span> <a class="code" href="../../d9/d9a/classxii_vec3_template.htm">xiiVec3</a> x = mMat.<a class="code" href="../../d1/dec/classxii_mat4_template.htm#aa58bb0b4b2ef79adbc45148a8ee09c4f">TransformDirection</a>(<a class="code" href="../../d9/d9a/classxii_vec3_template.htm">xiiVec3</a>(1, 0, 0)).GetNormalized();</div>
-<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;  <span class="keyword">const</span> <a class="code" href="../../d9/d9a/classxii_vec3_template.htm">xiiVec3</a> y = mMat.<a class="code" href="../../d1/dec/classxii_mat4_template.htm#aa58bb0b4b2ef79adbc45148a8ee09c4f">TransformDirection</a>(<a class="code" href="../../d9/d9a/classxii_vec3_template.htm">xiiVec3</a>(0, 1, 0)).GetNormalized();</div>
-<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;  <span class="keyword">const</span> <a class="code" href="../../d9/d9a/classxii_vec3_template.htm">xiiVec3</a> z = x.<a class="code" href="../../d9/d9a/classxii_vec3_template.htm#a658acf243e57aea0c7252d6918eca809">CrossRH</a>(y);</div>
-<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160; </div>
-<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;  <a class="code" href="../../d3/d74/classxii_mat3_template.htm">xiiMat3</a> m;</div>
-<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;  m.<a class="code" href="../../d3/d74/classxii_mat3_template.htm#a305fa340274e241f3f0e8aaed8419c25">SetColumn</a>(0, x);</div>
-<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;  m.<a class="code" href="../../d3/d74/classxii_mat3_template.htm#a305fa340274e241f3f0e8aaed8419c25">SetColumn</a>(1, y);</div>
-<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;  m.<a class="code" href="../../d3/d74/classxii_mat3_template.htm#a305fa340274e241f3f0e8aaed8419c25">SetColumn</a>(2, z);</div>
-<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160; </div>
-<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;  SetFromMat3(m);</div>
-<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;}</div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;  <a class="code" href="../../d3/d74/classxii_mat3_template.htm">xiiMat3</a> m;</div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;  m.<a class="code" href="../../d3/d74/classxii_mat3_template.htm#a305fa340274e241f3f0e8aaed8419c25">SetColumn</a>(0, x);</div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;  m.<a class="code" href="../../d3/d74/classxii_mat3_template.htm#a305fa340274e241f3f0e8aaed8419c25">SetColumn</a>(1, y);</div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;  m.<a class="code" href="../../d3/d74/classxii_mat3_template.htm#a305fa340274e241f3f0e8aaed8419c25">SetColumn</a>(2, z);</div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160; </div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;  SetFromMat3(m);</div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;}</div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160; </div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Type&gt;</div>
+<div class="line"><a name="l00316"></a><span class="lineno"><a class="line" href="../../d9/d1b/classxii_quat_template.htm#a7e0b7355144093951d34ec4cd7c08e81">  316</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d9/d1b/classxii_quat_template.htm#a7e0b7355144093951d34ec4cd7c08e81">xiiQuatTemplate&lt;Type&gt;::ReconstructFromMat4</a>(<span class="keyword">const</span> <a class="code" href="../../d1/dec/classxii_mat4_template.htm">xiiMat4Template&lt;Type&gt;</a>&amp; mMat)</div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;{</div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;  <span class="keyword">const</span> <a class="code" href="../../d9/d9a/classxii_vec3_template.htm">xiiVec3</a> x = mMat.<a class="code" href="../../d1/dec/classxii_mat4_template.htm#aa58bb0b4b2ef79adbc45148a8ee09c4f">TransformDirection</a>(<a class="code" href="../../d9/d9a/classxii_vec3_template.htm">xiiVec3</a>(1, 0, 0)).GetNormalized();</div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;  <span class="keyword">const</span> <a class="code" href="../../d9/d9a/classxii_vec3_template.htm">xiiVec3</a> y = mMat.<a class="code" href="../../d1/dec/classxii_mat4_template.htm#aa58bb0b4b2ef79adbc45148a8ee09c4f">TransformDirection</a>(<a class="code" href="../../d9/d9a/classxii_vec3_template.htm">xiiVec3</a>(0, 1, 0)).GetNormalized();</div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;  <span class="keyword">const</span> <a class="code" href="../../d9/d9a/classxii_vec3_template.htm">xiiVec3</a> z = x.<a class="code" href="../../d9/d9a/classxii_vec3_template.htm#a658acf243e57aea0c7252d6918eca809">CrossRH</a>(y);</div>
 <div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160; </div>
-<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Type&gt;</div>
-<div class="line"><a name="l00329"></a><span class="lineno"><a class="line" href="../../d9/d1b/classxii_quat_template.htm#a9eedbd0664e93fed324f940d37cc6791">  329</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d9/d1b/classxii_quat_template.htm#a9eedbd0664e93fed324f940d37cc6791">xiiQuatTemplate&lt;Type&gt;::SetShortestRotation</a>(<span class="keyword">const</span> <a class="code" href="../../d9/d9a/classxii_vec3_template.htm">xiiVec3Template&lt;Type&gt;</a>&amp; vDirFrom, <span class="keyword">const</span> <a class="code" href="../../d9/d9a/classxii_vec3_template.htm">xiiVec3Template&lt;Type&gt;</a>&amp; vDirTo)</div>
-<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;{</div>
-<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;  <span class="keyword">const</span> <a class="code" href="../../d9/d9a/classxii_vec3_template.htm">xiiVec3Template&lt;Type&gt;</a> v0 = vDirFrom.<a class="code" href="../../d9/d9a/classxii_vec3_template.htm#a048401ec3520d90da1333889b30c7513">GetNormalized</a>();</div>
-<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;  <span class="keyword">const</span> <a class="code" href="../../d9/d9a/classxii_vec3_template.htm">xiiVec3Template&lt;Type&gt;</a> v1 = vDirTo.<a class="code" href="../../d9/d9a/classxii_vec3_template.htm#a048401ec3520d90da1333889b30c7513">GetNormalized</a>();</div>
-<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160; </div>
-<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;  <span class="keyword">const</span> Type fDot = v0.<a class="code" href="../../d9/d9a/classxii_vec3_template.htm#a29f0f6353abb8f23538f847533b56b4a">Dot</a>(v1);</div>
-<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160; </div>
-<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;  <span class="comment">// if both vectors are identical -&gt; no rotation needed</span></div>
-<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="../../d1/d37/namespacexii_math.htm#a20047812a62c07b9ac2144a5520c18f0">xiiMath::IsEqual</a>(fDot, (Type)1, xiiMath::SmallEpsilon&lt;Type&gt;()))</div>
-<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;  {</div>
-<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;    SetIdentity();</div>
-<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;    <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;  }</div>
-<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;  <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code" href="../../d1/d37/namespacexii_math.htm#a20047812a62c07b9ac2144a5520c18f0">xiiMath::IsEqual</a>(fDot, (Type)-1, xiiMath::SmallEpsilon&lt;Type&gt;())) <span class="comment">// If both vectors are opposing</span></div>
-<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;  {</div>
-<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;    <span class="comment">// find an axis, that is not identical and not opposing, xiiVec3Template::Cross-product to find perpendicular vector, rotate around that</span></div>
-<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="../../d1/d37/namespacexii_math.htm#a821b432e7a9c8ac292eb255ee11e9e10">xiiMath::Abs</a>(v0.<a class="code" href="../../d9/d9a/classxii_vec3_template.htm#a29f0f6353abb8f23538f847533b56b4a">Dot</a>(<a class="code" href="../../d9/d9a/classxii_vec3_template.htm">xiiVec3Template&lt;Type&gt;</a>(1, 0, 0))) &lt; (Type)0.8)</div>
-<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;      SetFromAxisAndAngle(v0.<a class="code" href="../../d9/d9a/classxii_vec3_template.htm#a658acf243e57aea0c7252d6918eca809">CrossRH</a>(<a class="code" href="../../d9/d9a/classxii_vec3_template.htm">xiiVec3Template&lt;Type&gt;</a>(1, 0, 0)).GetNormalized(), <a class="code" href="../../d3/ddb/classxii_angle_template.htm">xiiAngleTemplate&lt;Type&gt;::Radian</a>(xiiMath::Pi&lt;Type&gt;()));</div>
-<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;    <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;      SetFromAxisAndAngle(v0.<a class="code" href="../../d9/d9a/classxii_vec3_template.htm#a658acf243e57aea0c7252d6918eca809">CrossRH</a>(<a class="code" href="../../d9/d9a/classxii_vec3_template.htm">xiiVec3Template&lt;Type&gt;</a>(0, 1, 0)).GetNormalized(), <a class="code" href="../../d3/ddb/classxii_angle_template.htm">xiiAngleTemplate&lt;Type&gt;::Radian</a>(xiiMath::Pi&lt;Type&gt;()));</div>
-<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160; </div>
-<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;    <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;  }</div>
-<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160; </div>
-<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;  <span class="keyword">const</span> <a class="code" href="../../d9/d9a/classxii_vec3_template.htm">xiiVec3Template&lt;Type&gt;</a> c = v0.<a class="code" href="../../d9/d9a/classxii_vec3_template.htm#a658acf243e57aea0c7252d6918eca809">CrossRH</a>(v1);</div>
-<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;  <span class="keyword">const</span> Type                  d = v0.<a class="code" href="../../d9/d9a/classxii_vec3_template.htm#a29f0f6353abb8f23538f847533b56b4a">Dot</a>(v1);</div>
-<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;  <span class="keyword">const</span> Type                  s = <a class="code" href="../../d1/d37/namespacexii_math.htm#ae7fbda648b6f9bcc4dc23962d06c93f4">xiiMath::Sqrt</a>(((Type)1 + d) * (Type)2);</div>
-<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160; </div>
-<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;  XII_ASSERT_DEBUG(c.<a class="code" href="../../d9/d9a/classxii_vec3_template.htm#ada4983624dd9914c854b8e7fafa38b2b">IsValid</a>(), <span class="stringliteral">&quot;SetShortestRotation failed.&quot;</span>);</div>
-<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160; </div>
-<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;  v = c / s;</div>
-<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;  w = s / (Type)2;</div>
-<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160; </div>
-<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;  Normalize();</div>
-<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;}</div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;  <a class="code" href="../../d3/d74/classxii_mat3_template.htm">xiiMat3</a> m;</div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;  m.<a class="code" href="../../d3/d74/classxii_mat3_template.htm#a305fa340274e241f3f0e8aaed8419c25">SetColumn</a>(0, x);</div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;  m.<a class="code" href="../../d3/d74/classxii_mat3_template.htm#a305fa340274e241f3f0e8aaed8419c25">SetColumn</a>(1, y);</div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;  m.<a class="code" href="../../d3/d74/classxii_mat3_template.htm#a305fa340274e241f3f0e8aaed8419c25">SetColumn</a>(2, z);</div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160; </div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;  SetFromMat3(m);</div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;}</div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160; </div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Type&gt;</div>
+<div class="line"><a name="l00337"></a><span class="lineno"><a class="line" href="../../d9/d1b/classxii_quat_template.htm#a9eedbd0664e93fed324f940d37cc6791">  337</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d9/d1b/classxii_quat_template.htm#a9eedbd0664e93fed324f940d37cc6791">xiiQuatTemplate&lt;Type&gt;::SetShortestRotation</a>(<span class="keyword">const</span> <a class="code" href="../../d9/d9a/classxii_vec3_template.htm">xiiVec3Template&lt;Type&gt;</a>&amp; vDirFrom, <span class="keyword">const</span> <a class="code" href="../../d9/d9a/classxii_vec3_template.htm">xiiVec3Template&lt;Type&gt;</a>&amp; vDirTo)</div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;{</div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;  <span class="keyword">const</span> <a class="code" href="../../d9/d9a/classxii_vec3_template.htm">xiiVec3Template&lt;Type&gt;</a> v0 = vDirFrom.<a class="code" href="../../d9/d9a/classxii_vec3_template.htm#a048401ec3520d90da1333889b30c7513">GetNormalized</a>();</div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;  <span class="keyword">const</span> <a class="code" href="../../d9/d9a/classxii_vec3_template.htm">xiiVec3Template&lt;Type&gt;</a> v1 = vDirTo.<a class="code" href="../../d9/d9a/classxii_vec3_template.htm#a048401ec3520d90da1333889b30c7513">GetNormalized</a>();</div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160; </div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;  <span class="keyword">const</span> Type fDot = v0.<a class="code" href="../../d9/d9a/classxii_vec3_template.htm#a29f0f6353abb8f23538f847533b56b4a">Dot</a>(v1);</div>
+<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160; </div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;  <span class="comment">// if both vectors are identical -&gt; no rotation needed</span></div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="../../d1/d37/namespacexii_math.htm#a20047812a62c07b9ac2144a5520c18f0">xiiMath::IsEqual</a>(fDot, (Type)1, xiiMath::SmallEpsilon&lt;Type&gt;()))</div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;  {</div>
+<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;    SetIdentity();</div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;    <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;  }</div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;  <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code" href="../../d1/d37/namespacexii_math.htm#a20047812a62c07b9ac2144a5520c18f0">xiiMath::IsEqual</a>(fDot, (Type)-1, xiiMath::SmallEpsilon&lt;Type&gt;())) <span class="comment">// If both vectors are opposing</span></div>
+<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;  {</div>
+<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;    <span class="comment">// find an axis, that is not identical and not opposing, xiiVec3Template::Cross-product to find perpendicular vector, rotate around that</span></div>
+<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="../../d1/d37/namespacexii_math.htm#a821b432e7a9c8ac292eb255ee11e9e10">xiiMath::Abs</a>(v0.<a class="code" href="../../d9/d9a/classxii_vec3_template.htm#a29f0f6353abb8f23538f847533b56b4a">Dot</a>(<a class="code" href="../../d9/d9a/classxii_vec3_template.htm">xiiVec3Template&lt;Type&gt;</a>(1, 0, 0))) &lt; (Type)0.8)</div>
+<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;      SetFromAxisAndAngle(v0.<a class="code" href="../../d9/d9a/classxii_vec3_template.htm#a658acf243e57aea0c7252d6918eca809">CrossRH</a>(<a class="code" href="../../d9/d9a/classxii_vec3_template.htm">xiiVec3Template&lt;Type&gt;</a>(1, 0, 0)).GetNormalized(), <a class="code" href="../../d3/ddb/classxii_angle_template.htm">xiiAngleTemplate&lt;Type&gt;::Radian</a>(xiiMath::Pi&lt;Type&gt;()));</div>
+<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;    <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;      SetFromAxisAndAngle(v0.<a class="code" href="../../d9/d9a/classxii_vec3_template.htm#a658acf243e57aea0c7252d6918eca809">CrossRH</a>(<a class="code" href="../../d9/d9a/classxii_vec3_template.htm">xiiVec3Template&lt;Type&gt;</a>(0, 1, 0)).GetNormalized(), <a class="code" href="../../d3/ddb/classxii_angle_template.htm">xiiAngleTemplate&lt;Type&gt;::Radian</a>(xiiMath::Pi&lt;Type&gt;()));</div>
+<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160; </div>
+<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;    <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;  }</div>
+<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160; </div>
+<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;  <span class="keyword">const</span> <a class="code" href="../../d9/d9a/classxii_vec3_template.htm">xiiVec3Template&lt;Type&gt;</a> c = v0.<a class="code" href="../../d9/d9a/classxii_vec3_template.htm#a658acf243e57aea0c7252d6918eca809">CrossRH</a>(v1);</div>
+<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;  <span class="keyword">const</span> Type                  d = v0.<a class="code" href="../../d9/d9a/classxii_vec3_template.htm#a29f0f6353abb8f23538f847533b56b4a">Dot</a>(v1);</div>
+<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;  <span class="keyword">const</span> Type                  s = <a class="code" href="../../d1/d37/namespacexii_math.htm#ae7fbda648b6f9bcc4dc23962d06c93f4">xiiMath::Sqrt</a>(((Type)1 + d) * (Type)2);</div>
 <div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160; </div>
-<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Type&gt;</div>
-<div class="line"><a name="l00366"></a><span class="lineno"><a class="line" href="../../d9/d1b/classxii_quat_template.htm#aca6ff595f2b25d5950fbfe256dc56af9">  366</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d9/d1b/classxii_quat_template.htm#aca6ff595f2b25d5950fbfe256dc56af9">xiiQuatTemplate&lt;Type&gt;::SetSlerp</a>(<span class="keyword">const</span> <a class="code" href="../../d9/d1b/classxii_quat_template.htm">xiiQuatTemplate&lt;Type&gt;</a>&amp; qFrom, <span class="keyword">const</span> <a class="code" href="../../d9/d1b/classxii_quat_template.htm">xiiQuatTemplate&lt;Type&gt;</a>&amp; qTo, Type t)</div>
-<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;{</div>
-<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;  XII_ASSERT_DEBUG((t &gt;= (Type)0) &amp;&amp; (t &lt;= (Type)1), <span class="stringliteral">&quot;Invalid lerp factor.&quot;</span>);</div>
+<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;  XII_ASSERT_DEBUG(c.<a class="code" href="../../d9/d9a/classxii_vec3_template.htm#ada4983624dd9914c854b8e7fafa38b2b">IsValid</a>(), <span class="stringliteral">&quot;SetShortestRotation failed.&quot;</span>);</div>
+<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160; </div>
+<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;  v = c / s;</div>
+<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;  w = s / (Type)2;</div>
 <div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160; </div>
-<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;  <span class="keyword">const</span> Type one    = 1;</div>
-<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;  <span class="keyword">const</span> Type qdelta = (Type)1 - (Type)0.001;</div>
+<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;  Normalize();</div>
+<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;}</div>
 <div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160; </div>
-<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;  <span class="keyword">const</span> Type fDot = (qFrom.v.x * qTo.v.x + qFrom.v.y * qTo.v.y + qFrom.v.z * qTo.v.z + qFrom.w * qTo.w);</div>
-<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160; </div>
-<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;  Type cosTheta = fDot;</div>
-<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160; </div>
-<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;  <span class="keywordtype">bool</span> bFlipSign = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;  <span class="keywordflow">if</span> (cosTheta &lt; (Type)0)</div>
-<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;  {</div>
-<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;    bFlipSign = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;    cosTheta  = -cosTheta;</div>
-<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;  }</div>
-<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160; </div>
-<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;  Type t0, t1;</div>
-<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160; </div>
-<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;  <span class="keywordflow">if</span> (cosTheta &lt; qdelta)</div>
+<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Type&gt;</div>
+<div class="line"><a name="l00374"></a><span class="lineno"><a class="line" href="../../d9/d1b/classxii_quat_template.htm#aca6ff595f2b25d5950fbfe256dc56af9">  374</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d9/d1b/classxii_quat_template.htm#aca6ff595f2b25d5950fbfe256dc56af9">xiiQuatTemplate&lt;Type&gt;::SetSlerp</a>(<span class="keyword">const</span> <a class="code" href="../../d9/d1b/classxii_quat_template.htm">xiiQuatTemplate&lt;Type&gt;</a>&amp; qFrom, <span class="keyword">const</span> <a class="code" href="../../d9/d1b/classxii_quat_template.htm">xiiQuatTemplate&lt;Type&gt;</a>&amp; qTo, Type t)</div>
+<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;{</div>
+<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;  XII_ASSERT_DEBUG((t &gt;= (Type)0) &amp;&amp; (t &lt;= (Type)1), <span class="stringliteral">&quot;Invalid lerp factor.&quot;</span>);</div>
+<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160; </div>
+<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;  <span class="keyword">const</span> Type one    = 1;</div>
+<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;  <span class="keyword">const</span> Type qdelta = (Type)1 - (Type)0.001;</div>
+<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160; </div>
+<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;  <span class="keyword">const</span> Type fDot = (qFrom.v.x * qTo.v.x + qFrom.v.y * qTo.v.y + qFrom.v.z * qTo.v.z + qFrom.w * qTo.w);</div>
+<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160; </div>
+<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;  Type cosTheta = fDot;</div>
+<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160; </div>
+<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;  <span class="keywordtype">bool</span> bFlipSign = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;  <span class="keywordflow">if</span> (cosTheta &lt; (Type)0)</div>
 <div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;  {</div>
-<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;    <a class="code" href="../../d3/ddb/classxii_angle_template.htm">xiiAngleTemplate&lt;Type&gt;</a> theta = <a class="code" href="../../d1/d37/namespacexii_math.htm#a788a4e90cf6d0f3285b15fac90017188">xiiMath::ACos</a>(cosTheta);</div>
-<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160; </div>
-<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;    <span class="comment">// Use sqrtInv(1+c^2) instead of 1.0/sin(theta)</span></div>
-<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;    <span class="keyword">const</span> Type                   iSinTheta = (Type)1 / <a class="code" href="../../d1/d37/namespacexii_math.htm#ae7fbda648b6f9bcc4dc23962d06c93f4">xiiMath::Sqrt</a>(one - (cosTheta * cosTheta));</div>
-<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;    <span class="keyword">const</span> <a class="code" href="../../d3/ddb/classxii_angle_template.htm">xiiAngleTemplate&lt;Type&gt;</a> tTheta    = t * theta;</div>
+<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;    bFlipSign = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;    cosTheta  = -cosTheta;</div>
+<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;  }</div>
+<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160; </div>
+<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;  Type t0, t1;</div>
 <div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160; </div>
-<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;    Type s0 = <a class="code" href="../../d1/d37/namespacexii_math.htm#afbbbae240e0cea673cd16646b5142e06">xiiMath::Sin</a>(theta - tTheta);</div>
-<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;    Type s1 = <a class="code" href="../../d1/d37/namespacexii_math.htm#afbbbae240e0cea673cd16646b5142e06">xiiMath::Sin</a>(tTheta);</div>
-<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160; </div>
-<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;    t0 = s0 * iSinTheta;</div>
-<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;    t1 = s1 * iSinTheta;</div>
-<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;  }</div>
-<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;  <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;  {</div>
-<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;    <span class="comment">// If q0 is nearly the same as q1 we just linearly interpolate</span></div>
-<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;    t0 = one - t;</div>
-<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;    t1 = t;</div>
-<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;  }</div>
-<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160; </div>
-<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;  <span class="keywordflow">if</span> (bFlipSign)</div>
-<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;    t1 = -t1;</div>
-<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160; </div>
-<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;  v.x = t0 * qFrom.v.x;</div>
-<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;  v.y = t0 * qFrom.v.y;</div>
-<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;  v.z = t0 * qFrom.v.z;</div>
-<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;  w   = t0 * qFrom.w;</div>
+<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;  <span class="keywordflow">if</span> (cosTheta &lt; qdelta)</div>
+<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;  {</div>
+<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;    <a class="code" href="../../d3/ddb/classxii_angle_template.htm">xiiAngleTemplate&lt;Type&gt;</a> theta = <a class="code" href="../../d1/d37/namespacexii_math.htm#a788a4e90cf6d0f3285b15fac90017188">xiiMath::ACos</a>(cosTheta);</div>
+<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160; </div>
+<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;    <span class="comment">// Use sqrtInv(1+c^2) instead of 1.0/sin(theta)</span></div>
+<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;    <span class="keyword">const</span> Type                   iSinTheta = (Type)1 / <a class="code" href="../../d1/d37/namespacexii_math.htm#ae7fbda648b6f9bcc4dc23962d06c93f4">xiiMath::Sqrt</a>(one - (cosTheta * cosTheta));</div>
+<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;    <span class="keyword">const</span> <a class="code" href="../../d3/ddb/classxii_angle_template.htm">xiiAngleTemplate&lt;Type&gt;</a> tTheta    = t * theta;</div>
+<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160; </div>
+<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;    Type s0 = <a class="code" href="../../d1/d37/namespacexii_math.htm#afbbbae240e0cea673cd16646b5142e06">xiiMath::Sin</a>(theta - tTheta);</div>
+<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;    Type s1 = <a class="code" href="../../d1/d37/namespacexii_math.htm#afbbbae240e0cea673cd16646b5142e06">xiiMath::Sin</a>(tTheta);</div>
+<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160; </div>
+<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;    t0 = s0 * iSinTheta;</div>
+<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;    t1 = s1 * iSinTheta;</div>
+<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;  }</div>
+<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;  <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;  {</div>
+<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;    <span class="comment">// If q0 is nearly the same as q1 we just linearly interpolate</span></div>
+<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;    t0 = one - t;</div>
+<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;    t1 = t;</div>
+<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;  }</div>
 <div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160; </div>
-<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;  v.x += t1 * qTo.v.x;</div>
-<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;  v.y += t1 * qTo.v.y;</div>
-<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;  v.z += t1 * qTo.v.z;</div>
-<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;  w += t1 * qTo.w;</div>
-<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160; </div>
-<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;  Normalize();</div>
-<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;}</div>
+<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;  <span class="keywordflow">if</span> (bFlipSign)</div>
+<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;    t1 = -t1;</div>
+<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160; </div>
+<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;  v.x = t0 * qFrom.v.x;</div>
+<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;  v.y = t0 * qFrom.v.y;</div>
+<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;  v.z = t0 * qFrom.v.z;</div>
+<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;  w   = t0 * qFrom.w;</div>
 <div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160; </div>
-<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Type&gt;</div>
-<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;XII_ALWAYS_INLINE <span class="keywordtype">bool</span> operator==(<span class="keyword">const</span> <a class="code" href="../../d9/d1b/classxii_quat_template.htm">xiiQuatTemplate&lt;Type&gt;</a>&amp; q1, <span class="keyword">const</span> <a class="code" href="../../d9/d1b/classxii_quat_template.htm">xiiQuatTemplate&lt;Type&gt;</a>&amp; q2)</div>
-<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;{</div>
-<div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;  <span class="keywordflow">return</span> q1.v.IsIdentical(q2.v) &amp;&amp; q1.w == q2.w;</div>
-<div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;}</div>
-<div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160; </div>
-<div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Type&gt;</div>
-<div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;XII_ALWAYS_INLINE <span class="keywordtype">bool</span> operator!=(<span class="keyword">const</span> <a class="code" href="../../d9/d1b/classxii_quat_template.htm">xiiQuatTemplate&lt;Type&gt;</a>&amp; q1, <span class="keyword">const</span> <a class="code" href="../../d9/d1b/classxii_quat_template.htm">xiiQuatTemplate&lt;Type&gt;</a>&amp; q2)</div>
-<div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;{</div>
-<div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;  <span class="keywordflow">return</span> !(q1 == q2);</div>
-<div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;}</div>
-<div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160; </div>
-<div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Type&gt;</div>
-<div class="line"><a name="l00436"></a><span class="lineno"><a class="line" href="../../d9/d1b/classxii_quat_template.htm#a8d26c87261cce8521c28c4b3a1b12f99">  436</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d9/d1b/classxii_quat_template.htm#a8d26c87261cce8521c28c4b3a1b12f99">xiiQuatTemplate&lt;Type&gt;::GetAsEulerAngles</a>(<a class="code" href="../../d3/ddb/classxii_angle_template.htm">xiiAngleTemplate&lt;Type&gt;</a>&amp; out_x, <a class="code" href="../../d3/ddb/classxii_angle_template.htm">xiiAngleTemplate&lt;Type&gt;</a>&amp; out_y, <a class="code" href="../../d3/ddb/classxii_angle_template.htm">xiiAngleTemplate&lt;Type&gt;</a>&amp; out_z)<span class="keyword"> const</span></div>
-<div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;<span class="keyword"></span>{</div>
-<div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;  <span class="comment">// Taken from https://en.wikipedia.org/wiki/Conversion_between_quaternions_and_Euler_angles</span></div>
-<div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;  <span class="comment">// and http://www.euclideanspace.com/maths/geometry/rotations/conversions/quaternionToEuler/</span></div>
-<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;  <span class="comment">// adapted to our convention (yaw-&gt;pitch-&gt;roll, ZYX order or 3-2-1 order)</span></div>
-<div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160; </div>
-<div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;  <span class="keyword">auto</span>&amp; yaw   = out_z;</div>
-<div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;  <span class="keyword">auto</span>&amp; pitch = out_y;</div>
-<div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;  <span class="keyword">auto</span>&amp; roll  = out_x;</div>
-<div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160; </div>
-<div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">double</span> fSingularityTest      = w * v.y - v.z * v.x;</div>
-<div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">double</span> fSingularityThreshold = 0.4999995;</div>
-<div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160; </div>
-<div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160;  <span class="keywordflow">if</span> (fSingularityTest &gt; fSingularityThreshold) <span class="comment">// singularity at north pole</span></div>
-<div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160;  {</div>
-<div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160;    yaw   = -(Type)2.0f * <a class="code" href="../../d1/d37/namespacexii_math.htm#a41e2a06b9f2d78c5773c856fb84dc467">xiiMath::ATan2</a>(v.x, w);</div>
-<div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;    pitch = <a class="code" href="../../d3/ddb/classxii_angle_template.htm#a186b3138db53d77de01facd1026240c0">xiiAngleTemplate&lt;Type&gt;::Degree</a>(90.0f);</div>
-<div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;    roll  = <a class="code" href="../../d3/ddb/classxii_angle_template.htm#a186b3138db53d77de01facd1026240c0">xiiAngleTemplate&lt;Type&gt;::Degree</a>(0.0f);</div>
-<div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160;  }</div>
-<div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;  <span class="keywordflow">else</span> <span class="keywordflow">if</span> (fSingularityTest &lt; -fSingularityThreshold) <span class="comment">// singularity at south pole</span></div>
-<div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;  {</div>
-<div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160;    yaw   = (Type)2.0f * <a class="code" href="../../d1/d37/namespacexii_math.htm#a41e2a06b9f2d78c5773c856fb84dc467">xiiMath::ATan2</a>(v.x, w);</div>
-<div class="line"><a name="l00458"></a><span class="lineno">  458</span>&#160;    pitch = <a class="code" href="../../d3/ddb/classxii_angle_template.htm#a186b3138db53d77de01facd1026240c0">xiiAngleTemplate&lt;Type&gt;::Degree</a>(-90.0f);</div>
-<div class="line"><a name="l00459"></a><span class="lineno">  459</span>&#160;    roll  = <a class="code" href="../../d3/ddb/classxii_angle_template.htm#a186b3138db53d77de01facd1026240c0">xiiAngleTemplate&lt;Type&gt;::Degree</a>(0.0f);</div>
-<div class="line"><a name="l00460"></a><span class="lineno">  460</span>&#160;  }</div>
-<div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160;  <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00462"></a><span class="lineno">  462</span>&#160;  {</div>
-<div class="line"><a name="l00463"></a><span class="lineno">  463</span>&#160;    <span class="comment">// yaw (z-axis rotation)</span></div>
-<div class="line"><a name="l00464"></a><span class="lineno">  464</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">double</span> siny = 2.0 * (w * v.z + v.x * v.y);</div>
-<div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">double</span> cosy = 1.0 - 2.0 * (v.y * v.y + v.z * v.z);</div>
-<div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160;    yaw               = <a class="code" href="../../d1/d37/namespacexii_math.htm#a41e2a06b9f2d78c5773c856fb84dc467">xiiMath::ATan2</a>((Type)siny, (Type)cosy);</div>
-<div class="line"><a name="l00467"></a><span class="lineno">  467</span>&#160; </div>
-<div class="line"><a name="l00468"></a><span class="lineno">  468</span>&#160;    <span class="comment">// pitch (y-axis rotation)</span></div>
-<div class="line"><a name="l00469"></a><span class="lineno">  469</span>&#160;    pitch = <a class="code" href="../../d1/d37/namespacexii_math.htm#a8171dc1ee6c3bd3dfc3a54a33f3a9568">xiiMath::ASin</a>((Type)2.0f * (Type)fSingularityTest);</div>
-<div class="line"><a name="l00470"></a><span class="lineno">  470</span>&#160; </div>
-<div class="line"><a name="l00471"></a><span class="lineno">  471</span>&#160;    <span class="comment">// roll (x-axis rotation)</span></div>
-<div class="line"><a name="l00472"></a><span class="lineno">  472</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">double</span> sinr = 2.0 * (w * v.x + v.y * v.z);</div>
-<div class="line"><a name="l00473"></a><span class="lineno">  473</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">double</span> cosr = 1.0 - 2.0 * (v.x * v.x + v.y * v.y);</div>
-<div class="line"><a name="l00474"></a><span class="lineno">  474</span>&#160;    roll              = <a class="code" href="../../d1/d37/namespacexii_math.htm#a41e2a06b9f2d78c5773c856fb84dc467">xiiMath::ATan2</a>((Type)sinr, (Type)cosr);</div>
-<div class="line"><a name="l00475"></a><span class="lineno">  475</span>&#160;  }</div>
-<div class="line"><a name="l00476"></a><span class="lineno">  476</span>&#160;}</div>
-<div class="line"><a name="l00477"></a><span class="lineno">  477</span>&#160; </div>
-<div class="line"><a name="l00478"></a><span class="lineno">  478</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Type&gt;</div>
-<div class="line"><a name="l00479"></a><span class="lineno"><a class="line" href="../../d9/d1b/classxii_quat_template.htm#a57c283998a8fe1e5bc7c8725386f19d1">  479</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d9/d1b/classxii_quat_template.htm#a57c283998a8fe1e5bc7c8725386f19d1">xiiQuatTemplate&lt;Type&gt;::SetFromEulerAngles</a>(<span class="keyword">const</span> <a class="code" href="../../d3/ddb/classxii_angle_template.htm">xiiAngleTemplate&lt;Type&gt;</a>&amp; x, <span class="keyword">const</span> <a class="code" href="../../d3/ddb/classxii_angle_template.htm">xiiAngleTemplate&lt;Type&gt;</a>&amp; y, <span class="keyword">const</span> <a class="code" href="../../d3/ddb/classxii_angle_template.htm">xiiAngleTemplate&lt;Type&gt;</a>&amp; z)</div>
-<div class="line"><a name="l00480"></a><span class="lineno">  480</span>&#160;{</div>
-<div class="line"><a name="l00483"></a><span class="lineno">  483</span>&#160;  <span class="keyword">const</span> <span class="keyword">auto</span>&amp;  yaw   = z;</div>
-<div class="line"><a name="l00484"></a><span class="lineno">  484</span>&#160;  <span class="keyword">const</span> <span class="keyword">auto</span>&amp;  pitch = y;</div>
-<div class="line"><a name="l00485"></a><span class="lineno">  485</span>&#160;  <span class="keyword">const</span> <span class="keyword">auto</span>&amp;  roll  = x;</div>
-<div class="line"><a name="l00486"></a><span class="lineno">  486</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">double</span> cy    = <a class="code" href="../../d1/d37/namespacexii_math.htm#a194fc513007059c6e129cdeb321c3797">xiiMath::Cos</a>(yaw * (Type)0.5f);</div>
-<div class="line"><a name="l00487"></a><span class="lineno">  487</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">double</span> sy    = <a class="code" href="../../d1/d37/namespacexii_math.htm#afbbbae240e0cea673cd16646b5142e06">xiiMath::Sin</a>(yaw * (Type)0.5f);</div>
-<div class="line"><a name="l00488"></a><span class="lineno">  488</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">double</span> cp    = <a class="code" href="../../d1/d37/namespacexii_math.htm#a194fc513007059c6e129cdeb321c3797">xiiMath::Cos</a>(pitch * (Type)0.5f);</div>
-<div class="line"><a name="l00489"></a><span class="lineno">  489</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">double</span> sp    = <a class="code" href="../../d1/d37/namespacexii_math.htm#afbbbae240e0cea673cd16646b5142e06">xiiMath::Sin</a>(pitch * (Type)0.5f);</div>
-<div class="line"><a name="l00490"></a><span class="lineno">  490</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">double</span> cr    = <a class="code" href="../../d1/d37/namespacexii_math.htm#a194fc513007059c6e129cdeb321c3797">xiiMath::Cos</a>(roll * (Type)0.5f);</div>
-<div class="line"><a name="l00491"></a><span class="lineno">  491</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">double</span> sr    = <a class="code" href="../../d1/d37/namespacexii_math.htm#afbbbae240e0cea673cd16646b5142e06">xiiMath::Sin</a>(roll * (Type)0.5f);</div>
-<div class="line"><a name="l00492"></a><span class="lineno">  492</span>&#160; </div>
-<div class="line"><a name="l00493"></a><span class="lineno">  493</span>&#160;  w   = (Type)(cy * cp * cr + sy * sp * sr);</div>
-<div class="line"><a name="l00494"></a><span class="lineno">  494</span>&#160;  v.x = (Type)(cy * cp * sr - sy * sp * cr);</div>
-<div class="line"><a name="l00495"></a><span class="lineno">  495</span>&#160;  v.y = (Type)(cy * sp * cr + sy * cp * sr);</div>
-<div class="line"><a name="l00496"></a><span class="lineno">  496</span>&#160;  v.z = (Type)(sy * cp * cr - cy * sp * sr);</div>
-<div class="line"><a name="l00497"></a><span class="lineno">  497</span>&#160;}</div>
+<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;  v.x += t1 * qTo.v.x;</div>
+<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;  v.y += t1 * qTo.v.y;</div>
+<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;  v.z += t1 * qTo.v.z;</div>
+<div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;  w += t1 * qTo.w;</div>
+<div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160; </div>
+<div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;  Normalize();</div>
+<div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;}</div>
+<div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160; </div>
+<div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Type&gt;</div>
+<div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;XII_ALWAYS_INLINE <span class="keywordtype">bool</span> operator==(<span class="keyword">const</span> <a class="code" href="../../d9/d1b/classxii_quat_template.htm">xiiQuatTemplate&lt;Type&gt;</a>&amp; q1, <span class="keyword">const</span> <a class="code" href="../../d9/d1b/classxii_quat_template.htm">xiiQuatTemplate&lt;Type&gt;</a>&amp; q2)</div>
+<div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;{</div>
+<div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;  <span class="keywordflow">return</span> q1.v.IsIdentical(q2.v) &amp;&amp; q1.w == q2.w;</div>
+<div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;}</div>
+<div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160; </div>
+<div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Type&gt;</div>
+<div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;XII_ALWAYS_INLINE <span class="keywordtype">bool</span> operator!=(<span class="keyword">const</span> <a class="code" href="../../d9/d1b/classxii_quat_template.htm">xiiQuatTemplate&lt;Type&gt;</a>&amp; q1, <span class="keyword">const</span> <a class="code" href="../../d9/d1b/classxii_quat_template.htm">xiiQuatTemplate&lt;Type&gt;</a>&amp; q2)</div>
+<div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;{</div>
+<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;  <span class="keywordflow">return</span> !(q1 == q2);</div>
+<div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;}</div>
+<div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160; </div>
+<div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Type&gt;</div>
+<div class="line"><a name="l00444"></a><span class="lineno"><a class="line" href="../../d9/d1b/classxii_quat_template.htm#a8d26c87261cce8521c28c4b3a1b12f99">  444</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d9/d1b/classxii_quat_template.htm#a8d26c87261cce8521c28c4b3a1b12f99">xiiQuatTemplate&lt;Type&gt;::GetAsEulerAngles</a>(<a class="code" href="../../d3/ddb/classxii_angle_template.htm">xiiAngleTemplate&lt;Type&gt;</a>&amp; out_x, <a class="code" href="../../d3/ddb/classxii_angle_template.htm">xiiAngleTemplate&lt;Type&gt;</a>&amp; out_y, <a class="code" href="../../d3/ddb/classxii_angle_template.htm">xiiAngleTemplate&lt;Type&gt;</a>&amp; out_z)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;  <span class="comment">// Taken from https://en.wikipedia.org/wiki/Conversion_between_quaternions_and_Euler_angles</span></div>
+<div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;  <span class="comment">// and http://www.euclideanspace.com/maths/geometry/rotations/conversions/quaternionToEuler/</span></div>
+<div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160;  <span class="comment">// adapted to our convention (yaw-&gt;pitch-&gt;roll, ZYX order or 3-2-1 order)</span></div>
+<div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160; </div>
+<div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160;  <span class="keyword">auto</span>&amp; yaw   = out_z;</div>
+<div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160;  <span class="keyword">auto</span>&amp; pitch = out_y;</div>
+<div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;  <span class="keyword">auto</span>&amp; roll  = out_x;</div>
+<div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160; </div>
+<div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">double</span> fSingularityTest      = w * v.y - v.z * v.x;</div>
+<div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">double</span> fSingularityThreshold = 0.4999995;</div>
+<div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160; </div>
+<div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160;  <span class="keywordflow">if</span> (fSingularityTest &gt; fSingularityThreshold) <span class="comment">// singularity at north pole</span></div>
+<div class="line"><a name="l00458"></a><span class="lineno">  458</span>&#160;  {</div>
+<div class="line"><a name="l00459"></a><span class="lineno">  459</span>&#160;    yaw   = -(Type)2.0f * <a class="code" href="../../d1/d37/namespacexii_math.htm#a41e2a06b9f2d78c5773c856fb84dc467">xiiMath::ATan2</a>(v.x, w);</div>
+<div class="line"><a name="l00460"></a><span class="lineno">  460</span>&#160;    pitch = <a class="code" href="../../d3/ddb/classxii_angle_template.htm#a186b3138db53d77de01facd1026240c0">xiiAngleTemplate&lt;Type&gt;::Degree</a>(90.0f);</div>
+<div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160;    roll  = <a class="code" href="../../d3/ddb/classxii_angle_template.htm#a186b3138db53d77de01facd1026240c0">xiiAngleTemplate&lt;Type&gt;::Degree</a>(0.0f);</div>
+<div class="line"><a name="l00462"></a><span class="lineno">  462</span>&#160;  }</div>
+<div class="line"><a name="l00463"></a><span class="lineno">  463</span>&#160;  <span class="keywordflow">else</span> <span class="keywordflow">if</span> (fSingularityTest &lt; -fSingularityThreshold) <span class="comment">// singularity at south pole</span></div>
+<div class="line"><a name="l00464"></a><span class="lineno">  464</span>&#160;  {</div>
+<div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160;    yaw   = (Type)2.0f * <a class="code" href="../../d1/d37/namespacexii_math.htm#a41e2a06b9f2d78c5773c856fb84dc467">xiiMath::ATan2</a>(v.x, w);</div>
+<div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160;    pitch = <a class="code" href="../../d3/ddb/classxii_angle_template.htm#a186b3138db53d77de01facd1026240c0">xiiAngleTemplate&lt;Type&gt;::Degree</a>(-90.0f);</div>
+<div class="line"><a name="l00467"></a><span class="lineno">  467</span>&#160;    roll  = <a class="code" href="../../d3/ddb/classxii_angle_template.htm#a186b3138db53d77de01facd1026240c0">xiiAngleTemplate&lt;Type&gt;::Degree</a>(0.0f);</div>
+<div class="line"><a name="l00468"></a><span class="lineno">  468</span>&#160;  }</div>
+<div class="line"><a name="l00469"></a><span class="lineno">  469</span>&#160;  <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00470"></a><span class="lineno">  470</span>&#160;  {</div>
+<div class="line"><a name="l00471"></a><span class="lineno">  471</span>&#160;    <span class="comment">// yaw (z-axis rotation)</span></div>
+<div class="line"><a name="l00472"></a><span class="lineno">  472</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">double</span> siny = 2.0 * (w * v.z + v.x * v.y);</div>
+<div class="line"><a name="l00473"></a><span class="lineno">  473</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">double</span> cosy = 1.0 - 2.0 * (v.y * v.y + v.z * v.z);</div>
+<div class="line"><a name="l00474"></a><span class="lineno">  474</span>&#160;    yaw               = <a class="code" href="../../d1/d37/namespacexii_math.htm#a41e2a06b9f2d78c5773c856fb84dc467">xiiMath::ATan2</a>((Type)siny, (Type)cosy);</div>
+<div class="line"><a name="l00475"></a><span class="lineno">  475</span>&#160; </div>
+<div class="line"><a name="l00476"></a><span class="lineno">  476</span>&#160;    <span class="comment">// pitch (y-axis rotation)</span></div>
+<div class="line"><a name="l00477"></a><span class="lineno">  477</span>&#160;    pitch = <a class="code" href="../../d1/d37/namespacexii_math.htm#a8171dc1ee6c3bd3dfc3a54a33f3a9568">xiiMath::ASin</a>((Type)2.0f * (Type)fSingularityTest);</div>
+<div class="line"><a name="l00478"></a><span class="lineno">  478</span>&#160; </div>
+<div class="line"><a name="l00479"></a><span class="lineno">  479</span>&#160;    <span class="comment">// roll (x-axis rotation)</span></div>
+<div class="line"><a name="l00480"></a><span class="lineno">  480</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">double</span> sinr = 2.0 * (w * v.x + v.y * v.z);</div>
+<div class="line"><a name="l00481"></a><span class="lineno">  481</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">double</span> cosr = 1.0 - 2.0 * (v.x * v.x + v.y * v.y);</div>
+<div class="line"><a name="l00482"></a><span class="lineno">  482</span>&#160;    roll              = <a class="code" href="../../d1/d37/namespacexii_math.htm#a41e2a06b9f2d78c5773c856fb84dc467">xiiMath::ATan2</a>((Type)sinr, (Type)cosr);</div>
+<div class="line"><a name="l00483"></a><span class="lineno">  483</span>&#160;  }</div>
+<div class="line"><a name="l00484"></a><span class="lineno">  484</span>&#160;}</div>
+<div class="line"><a name="l00485"></a><span class="lineno">  485</span>&#160; </div>
+<div class="line"><a name="l00486"></a><span class="lineno">  486</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Type&gt;</div>
+<div class="line"><a name="l00487"></a><span class="lineno"><a class="line" href="../../d9/d1b/classxii_quat_template.htm#a57c283998a8fe1e5bc7c8725386f19d1">  487</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d9/d1b/classxii_quat_template.htm#a57c283998a8fe1e5bc7c8725386f19d1">xiiQuatTemplate&lt;Type&gt;::SetFromEulerAngles</a>(<span class="keyword">const</span> <a class="code" href="../../d3/ddb/classxii_angle_template.htm">xiiAngleTemplate&lt;Type&gt;</a>&amp; x, <span class="keyword">const</span> <a class="code" href="../../d3/ddb/classxii_angle_template.htm">xiiAngleTemplate&lt;Type&gt;</a>&amp; y, <span class="keyword">const</span> <a class="code" href="../../d3/ddb/classxii_angle_template.htm">xiiAngleTemplate&lt;Type&gt;</a>&amp; z)</div>
+<div class="line"><a name="l00488"></a><span class="lineno">  488</span>&#160;{</div>
+<div class="line"><a name="l00491"></a><span class="lineno">  491</span>&#160;  <span class="keyword">const</span> <span class="keyword">auto</span>&amp;  yaw   = z;</div>
+<div class="line"><a name="l00492"></a><span class="lineno">  492</span>&#160;  <span class="keyword">const</span> <span class="keyword">auto</span>&amp;  pitch = y;</div>
+<div class="line"><a name="l00493"></a><span class="lineno">  493</span>&#160;  <span class="keyword">const</span> <span class="keyword">auto</span>&amp;  roll  = x;</div>
+<div class="line"><a name="l00494"></a><span class="lineno">  494</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">double</span> cy    = <a class="code" href="../../d1/d37/namespacexii_math.htm#a194fc513007059c6e129cdeb321c3797">xiiMath::Cos</a>(yaw * (Type)0.5f);</div>
+<div class="line"><a name="l00495"></a><span class="lineno">  495</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">double</span> sy    = <a class="code" href="../../d1/d37/namespacexii_math.htm#afbbbae240e0cea673cd16646b5142e06">xiiMath::Sin</a>(yaw * (Type)0.5f);</div>
+<div class="line"><a name="l00496"></a><span class="lineno">  496</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">double</span> cp    = <a class="code" href="../../d1/d37/namespacexii_math.htm#a194fc513007059c6e129cdeb321c3797">xiiMath::Cos</a>(pitch * (Type)0.5f);</div>
+<div class="line"><a name="l00497"></a><span class="lineno">  497</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">double</span> sp    = <a class="code" href="../../d1/d37/namespacexii_math.htm#afbbbae240e0cea673cd16646b5142e06">xiiMath::Sin</a>(pitch * (Type)0.5f);</div>
+<div class="line"><a name="l00498"></a><span class="lineno">  498</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">double</span> cr    = <a class="code" href="../../d1/d37/namespacexii_math.htm#a194fc513007059c6e129cdeb321c3797">xiiMath::Cos</a>(roll * (Type)0.5f);</div>
+<div class="line"><a name="l00499"></a><span class="lineno">  499</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">double</span> sr    = <a class="code" href="../../d1/d37/namespacexii_math.htm#afbbbae240e0cea673cd16646b5142e06">xiiMath::Sin</a>(roll * (Type)0.5f);</div>
+<div class="line"><a name="l00500"></a><span class="lineno">  500</span>&#160; </div>
+<div class="line"><a name="l00501"></a><span class="lineno">  501</span>&#160;  w   = (Type)(cy * cp * cr + sy * sp * sr);</div>
+<div class="line"><a name="l00502"></a><span class="lineno">  502</span>&#160;  v.x = (Type)(cy * cp * sr - sy * sp * cr);</div>
+<div class="line"><a name="l00503"></a><span class="lineno">  503</span>&#160;  v.y = (Type)(cy * sp * cr + sy * cp * sr);</div>
+<div class="line"><a name="l00504"></a><span class="lineno">  504</span>&#160;  v.z = (Type)(sy * cp * cr - cy * sp * sr);</div>
+<div class="line"><a name="l00505"></a><span class="lineno">  505</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclassxii_mat3_template_htm_a305fa340274e241f3f0e8aaed8419c25"><div class="ttname"><a href="../../d3/d74/classxii_mat3_template.htm#a305fa340274e241f3f0e8aaed8419c25">xiiMat3Template::SetColumn</a></div><div class="ttdeci">void SetColumn(xiiUInt32 uiColumn, const xiiVec3Template&lt; Type &gt; &amp;vColumn)</div><div class="ttdoc">Sets all 3 components of the i-th column.</div><div class="ttdef"><b>Definition:</b> Mat3_inl.h:198</div></div>
-<div class="ttc" id="aclassxii_quat_template_htm_a4e6d4c187d368bbf3ef46d7914393b1c"><div class="ttname"><a href="../../d9/d1b/classxii_quat_template.htm#a4e6d4c187d368bbf3ef46d7914393b1c">xiiQuatTemplate::operator-</a></div><div class="ttdeci">const xiiQuatTemplate operator-() const</div><div class="ttdoc">Returns a Quaternion that represents the negative / inverted rotation.</div><div class="ttdef"><b>Definition:</b> Quat_inl.h:95</div></div>
 <div class="ttc" id="aclassxii_quat_template_htm_a49829f80f46861fa33a195732adaee32"><div class="ttname"><a href="../../d9/d1b/classxii_quat_template.htm#a49829f80f46861fa33a195732adaee32">xiiQuatTemplate::SetElements</a></div><div class="ttdeci">void SetElements(Type inX, Type inY, Type inZ, Type inW)</div><div class="ttdoc">Sets the individual elements of the quaternion directly. Note that x,y,z do NOT represent a rotation ...</div><div class="ttdef"><b>Definition:</b> Quat_inl.h:29</div></div>
+<div class="ttc" id="aclassxii_quat_template_htm_a281cb5ac2d17e62f8b6fb89fa1ab1a72"><div class="ttname"><a href="../../d9/d1b/classxii_quat_template.htm#a281cb5ac2d17e62f8b6fb89fa1ab1a72">xiiQuatTemplate::GetInverse</a></div><div class="ttdeci">const xiiQuatTemplate&lt; Type &gt; GetInverse() const</div><div class="ttdoc">Returns a quaternion that represents the negative / inverted rotation. E.g. the one that would rotate...</div><div class="ttdef"><b>Definition:</b> Quat_inl.h:95</div></div>
 <div class="ttc" id="anamespacexii_math_htm_ac1067d4c24d9b02662c60a528c870580"><div class="ttname"><a href="../../d1/d37/namespacexii_math.htm#ac1067d4c24d9b02662c60a528c870580">xiiMath::Invert</a></div><div class="ttdeci">constexpr Type Invert(Type f)</div><div class="ttdoc">Returns 1 / f.</div><div class="ttdef"><b>Definition:</b> Math_inl.h:83</div></div>
 <div class="ttc" id="aclassxii_quat_template_htm_a4439e3b9882a6a061622a29f9c42cd5f"><div class="ttname"><a href="../../d9/d1b/classxii_quat_template.htm#a4439e3b9882a6a061622a29f9c42cd5f">xiiQuatTemplate::GetRotationAxisAndAngle</a></div><div class="ttdeci">void GetRotationAxisAndAngle(xiiVec3Template&lt; Type &gt; &amp;ref_vAxis, xiiAngleTemplate&lt; Type &gt; &amp;ref_angle, Type fEpsilon=xiiMath::DefaultEpsilon&lt; Type &gt;()) const</div><div class="ttdoc">Returns the rotation-axis and angle, that this quaternion rotates around.</div><div class="ttdef"><b>Definition:</b> Quat_inl.h:65</div></div>
 <div class="ttc" id="aclassxii_quat_template_htm_ae88f50c75d2e37f3b4f4d2b735d20915"><div class="ttname"><a href="../../d9/d1b/classxii_quat_template.htm#ae88f50c75d2e37f3b4f4d2b735d20915">xiiQuatTemplate::SetIdentity</a></div><div class="ttdeci">void SetIdentity()</div><div class="ttdoc">Sets the Quaternion to the identity.</div><div class="ttdef"><b>Definition:</b> Quat_inl.h:36</div></div>
-<div class="ttc" id="aclassxii_quat_template_htm_a9eedbd0664e93fed324f940d37cc6791"><div class="ttname"><a href="../../d9/d1b/classxii_quat_template.htm#a9eedbd0664e93fed324f940d37cc6791">xiiQuatTemplate::SetShortestRotation</a></div><div class="ttdeci">void SetShortestRotation(const xiiVec3Template&lt; Type &gt; &amp;vDirFrom, const xiiVec3Template&lt; Type &gt; &amp;vDirTo)</div><div class="ttdoc">Creates a quaternion, that rotates through the shortest arc from &quot;vDirFrom&quot; to &quot;vDirTo&quot;.</div><div class="ttdef"><b>Definition:</b> Quat_inl.h:329</div></div>
+<div class="ttc" id="aclassxii_quat_template_htm_a9eedbd0664e93fed324f940d37cc6791"><div class="ttname"><a href="../../d9/d1b/classxii_quat_template.htm#a9eedbd0664e93fed324f940d37cc6791">xiiQuatTemplate::SetShortestRotation</a></div><div class="ttdeci">void SetShortestRotation(const xiiVec3Template&lt; Type &gt; &amp;vDirFrom, const xiiVec3Template&lt; Type &gt; &amp;vDirTo)</div><div class="ttdoc">Creates a quaternion, that rotates through the shortest arc from &quot;vDirFrom&quot; to &quot;vDirTo&quot;.</div><div class="ttdef"><b>Definition:</b> Quat_inl.h:337</div></div>
 <div class="ttc" id="aclassxii_quat_template_htm_aab1ecbbf3bfc5f7d00b32df1ce89e342"><div class="ttname"><a href="../../d9/d1b/classxii_quat_template.htm#aab1ecbbf3bfc5f7d00b32df1ce89e342">xiiQuatTemplate::Normalize</a></div><div class="ttdeci">void Normalize()</div><div class="ttdoc">Normalizes the quaternion to unit length. ALL rotation-quaternions should be normalized at all times ...</div><div class="ttdef"><b>Definition:</b> Quat_inl.h:52</div></div>
-<div class="ttc" id="aclassxii_quat_template_htm_acac88d8e4caf8ddb378b3c8afcc1efce"><div class="ttname"><a href="../../d9/d1b/classxii_quat_template.htm#acac88d8e4caf8ddb378b3c8afcc1efce">xiiQuatTemplate::IsNaN</a></div><div class="ttdeci">bool IsNaN() const</div><div class="ttdoc">Checks whether any component is NaN.</div><div class="ttdef"><b>Definition:</b> Quat_inl.h:143</div></div>
+<div class="ttc" id="aclassxii_quat_template_htm_acac88d8e4caf8ddb378b3c8afcc1efce"><div class="ttname"><a href="../../d9/d1b/classxii_quat_template.htm#acac88d8e4caf8ddb378b3c8afcc1efce">xiiQuatTemplate::IsNaN</a></div><div class="ttdeci">bool IsNaN() const</div><div class="ttdoc">Checks whether any component is NaN.</div><div class="ttdef"><b>Definition:</b> Quat_inl.h:151</div></div>
 <div class="ttc" id="aclassxii_mat4_template_htm"><div class="ttname"><a href="../../d1/dec/classxii_mat4_template.htm">xiiMat4Template</a></div><div class="ttdoc">A 4x4 component matrix class.</div><div class="ttdef"><b>Definition:</b> Declarations.h:171</div></div>
 <div class="ttc" id="aclassxii_mat3_template_htm"><div class="ttname"><a href="../../d3/d74/classxii_mat3_template.htm">xiiMat3Template</a></div><div class="ttdoc">A 3x3 component matrix class.</div><div class="ttdef"><b>Definition:</b> Declarations.h:164</div></div>
-<div class="ttc" id="aclassxii_quat_template_htm_a09a33fa5dcfe6cfaab85362445b27898"><div class="ttname"><a href="../../d9/d1b/classxii_quat_template.htm#a09a33fa5dcfe6cfaab85362445b27898">xiiQuatTemplate::IsEqualRotation</a></div><div class="ttdeci">bool IsEqualRotation(const xiiQuatTemplate &amp;qOther, Type fEpsilon) const</div><div class="ttdoc">Determines whether this and qOther represent the same rotation. This is a rather slow operation.</div><div class="ttdef"><b>Definition:</b> Quat_inl.h:149</div></div>
+<div class="ttc" id="aclassxii_quat_template_htm_a09a33fa5dcfe6cfaab85362445b27898"><div class="ttname"><a href="../../d9/d1b/classxii_quat_template.htm#a09a33fa5dcfe6cfaab85362445b27898">xiiQuatTemplate::IsEqualRotation</a></div><div class="ttdeci">bool IsEqualRotation(const xiiQuatTemplate &amp;qOther, Type fEpsilon) const</div><div class="ttdoc">Determines whether this and qOther represent the same rotation. This is a rather slow operation.</div><div class="ttdef"><b>Definition:</b> Quat_inl.h:157</div></div>
 <div class="ttc" id="aclassxii_quat_template_htm_a1ccee339c17216c8ed01970c2c4bfea2"><div class="ttname"><a href="../../d9/d1b/classxii_quat_template.htm#a1ccee339c17216c8ed01970c2c4bfea2">xiiQuatTemplate::Invert</a></div><div class="ttdeci">void Invert()</div><div class="ttdoc">Inverts the rotation, so instead of rotating N degrees around an axis, the quaternion will rotate -N ...</div><div class="ttdef"><b>Definition:</b> Quat_inl.h:87</div></div>
-<div class="ttc" id="aclassxii_quat_template_htm_aa6d32f6602a305f9bb2b80d578db647f"><div class="ttname"><a href="../../d9/d1b/classxii_quat_template.htm#aa6d32f6602a305f9bb2b80d578db647f">xiiQuatTemplate::GetAsMat3</a></div><div class="ttdeci">const xiiMat3Template&lt; Type &gt; GetAsMat3() const</div><div class="ttdoc">Returns the Quaternion as a matrix.</div><div class="ttdef"><b>Definition:</b> Quat_inl.h:172</div></div>
-<div class="ttc" id="aclassxii_quat_template_htm_a8d26c87261cce8521c28c4b3a1b12f99"><div class="ttname"><a href="../../d9/d1b/classxii_quat_template.htm#a8d26c87261cce8521c28c4b3a1b12f99">xiiQuatTemplate::GetAsEulerAngles</a></div><div class="ttdeci">void GetAsEulerAngles(xiiAngleTemplate&lt; Type &gt; &amp;out_x, xiiAngleTemplate&lt; Type &gt; &amp;out_y, xiiAngleTemplate&lt; Type &gt; &amp;out_z) const</div><div class="ttdoc">Converts the quaternion to Euler angles.</div><div class="ttdef"><b>Definition:</b> Quat_inl.h:436</div></div>
+<div class="ttc" id="aclassxii_quat_template_htm_aa6d32f6602a305f9bb2b80d578db647f"><div class="ttname"><a href="../../d9/d1b/classxii_quat_template.htm#aa6d32f6602a305f9bb2b80d578db647f">xiiQuatTemplate::GetAsMat3</a></div><div class="ttdeci">const xiiMat3Template&lt; Type &gt; GetAsMat3() const</div><div class="ttdoc">Returns the Quaternion as a matrix.</div><div class="ttdef"><b>Definition:</b> Quat_inl.h:180</div></div>
+<div class="ttc" id="aclassxii_quat_template_htm_a8d26c87261cce8521c28c4b3a1b12f99"><div class="ttname"><a href="../../d9/d1b/classxii_quat_template.htm#a8d26c87261cce8521c28c4b3a1b12f99">xiiQuatTemplate::GetAsEulerAngles</a></div><div class="ttdeci">void GetAsEulerAngles(xiiAngleTemplate&lt; Type &gt; &amp;out_x, xiiAngleTemplate&lt; Type &gt; &amp;out_y, xiiAngleTemplate&lt; Type &gt; &amp;out_z) const</div><div class="ttdoc">Converts the quaternion to Euler angles.</div><div class="ttdef"><b>Definition:</b> Quat_inl.h:444</div></div>
 <div class="ttc" id="anamespacexii_math_htm_a20047812a62c07b9ac2144a5520c18f0"><div class="ttname"><a href="../../d1/d37/namespacexii_math.htm#a20047812a62c07b9ac2144a5520c18f0">xiiMath::IsEqual</a></div><div class="ttdeci">constexpr bool IsEqual(Type lhs, Type rhs, Type fEpsilon)</div><div class="ttdoc">Checks, whether fValue is in the range [fDesired - fMaxImprecision; fDesired + fMaxImprecision].</div><div class="ttdef"><b>Definition:</b> Math_inl.h:282</div></div>
-<div class="ttc" id="aclassxii_quat_template_htm_a7e0b7355144093951d34ec4cd7c08e81"><div class="ttname"><a href="../../d9/d1b/classxii_quat_template.htm#a7e0b7355144093951d34ec4cd7c08e81">xiiQuatTemplate::ReconstructFromMat4</a></div><div class="ttdeci">void ReconstructFromMat4(const xiiMat4Template&lt; Type &gt; &amp;m)</div><div class="ttdoc">Reconstructs a rotation quaternion from a matrix that may contain scaling and mirroring.</div><div class="ttdef"><b>Definition:</b> Quat_inl.h:308</div></div>
+<div class="ttc" id="aclassxii_quat_template_htm_a7e0b7355144093951d34ec4cd7c08e81"><div class="ttname"><a href="../../d9/d1b/classxii_quat_template.htm#a7e0b7355144093951d34ec4cd7c08e81">xiiQuatTemplate::ReconstructFromMat4</a></div><div class="ttdeci">void ReconstructFromMat4(const xiiMat4Template&lt; Type &gt; &amp;m)</div><div class="ttdoc">Reconstructs a rotation quaternion from a matrix that may contain scaling and mirroring.</div><div class="ttdef"><b>Definition:</b> Quat_inl.h:316</div></div>
 <div class="ttc" id="anamespacexii_math_htm_a821b432e7a9c8ac292eb255ee11e9e10"><div class="ttname"><a href="../../d1/d37/namespacexii_math.htm#a821b432e7a9c8ac292eb255ee11e9e10">xiiMath::Abs</a></div><div class="ttdeci">constexpr XII_ALWAYS_INLINE T Abs(T f)</div><div class="ttdoc">Returns the absolute value of f.</div><div class="ttdef"><b>Definition:</b> Math_inl.h:41</div></div>
-<div class="ttc" id="aclassxii_quat_template_htm_a6e0a54212fcfe9b1926789427db98aac"><div class="ttname"><a href="../../d9/d1b/classxii_quat_template.htm#a6e0a54212fcfe9b1926789427db98aac">xiiQuatTemplate::Dot</a></div><div class="ttdeci">Type Dot(const xiiQuatTemplate &amp;rhs) const</div><div class="ttdoc">Returns the dot-product of the two quaternions (commutative, order does not matter).</div><div class="ttdef"><b>Definition:</b> Quat_inl.h:103</div></div>
+<div class="ttc" id="aclassxii_quat_template_htm_a6e0a54212fcfe9b1926789427db98aac"><div class="ttname"><a href="../../d9/d1b/classxii_quat_template.htm#a6e0a54212fcfe9b1926789427db98aac">xiiQuatTemplate::Dot</a></div><div class="ttdeci">Type Dot(const xiiQuatTemplate &amp;rhs) const</div><div class="ttdoc">Returns the dot-product of the two quaternions (commutative, order does not matter).</div><div class="ttdef"><b>Definition:</b> Quat_inl.h:111</div></div>
 <div class="ttc" id="aclassxii_vec3_template_htm_a232995c2778f2228e488ef26e420a3ea"><div class="ttname"><a href="../../d9/d9a/classxii_vec3_template.htm#a232995c2778f2228e488ef26e420a3ea">xiiVec3Template::IsNaN</a></div><div class="ttdeci">bool IsNaN() const</div><div class="ttdoc">Returns true, if any of x, y or z is NaN.</div><div class="ttdef"><b>Definition:</b> Vec3_inl.h:148</div></div>
-<div class="ttc" id="aclassxii_quat_template_htm_a57c283998a8fe1e5bc7c8725386f19d1"><div class="ttname"><a href="../../d9/d1b/classxii_quat_template.htm#a57c283998a8fe1e5bc7c8725386f19d1">xiiQuatTemplate::SetFromEulerAngles</a></div><div class="ttdeci">void SetFromEulerAngles(const xiiAngleTemplate&lt; Type &gt; &amp;x, const xiiAngleTemplate&lt; Type &gt; &amp;y, const xiiAngleTemplate&lt; Type &gt; &amp;z)</div><div class="ttdoc">Sets the quaternion from Euler angles.</div><div class="ttdef"><b>Definition:</b> Quat_inl.h:479</div></div>
-<div class="ttc" id="aclassxii_quat_template_htm_ae8d1ef81f529aa01674735ee3095d2a0"><div class="ttname"><a href="../../d9/d1b/classxii_quat_template.htm#ae8d1ef81f529aa01674735ee3095d2a0">xiiQuatTemplate::IsValid</a></div><div class="ttdeci">bool IsValid(Type fEpsilon=xiiMath::DefaultEpsilon&lt; Type &gt;()) const</div><div class="ttdoc">Checks whether all components are neither NaN nor infinite and that the quaternion is normalized.</div><div class="ttdef"><b>Definition:</b> Quat_inl.h:130</div></div>
+<div class="ttc" id="aclassxii_quat_template_htm_a57c283998a8fe1e5bc7c8725386f19d1"><div class="ttname"><a href="../../d9/d1b/classxii_quat_template.htm#a57c283998a8fe1e5bc7c8725386f19d1">xiiQuatTemplate::SetFromEulerAngles</a></div><div class="ttdeci">void SetFromEulerAngles(const xiiAngleTemplate&lt; Type &gt; &amp;x, const xiiAngleTemplate&lt; Type &gt; &amp;y, const xiiAngleTemplate&lt; Type &gt; &amp;z)</div><div class="ttdoc">Sets the quaternion from Euler angles.</div><div class="ttdef"><b>Definition:</b> Quat_inl.h:487</div></div>
+<div class="ttc" id="aclassxii_quat_template_htm_ae8d1ef81f529aa01674735ee3095d2a0"><div class="ttname"><a href="../../d9/d1b/classxii_quat_template.htm#ae8d1ef81f529aa01674735ee3095d2a0">xiiQuatTemplate::IsValid</a></div><div class="ttdeci">bool IsValid(Type fEpsilon=xiiMath::DefaultEpsilon&lt; Type &gt;()) const</div><div class="ttdoc">Checks whether all components are neither NaN nor infinite and that the quaternion is normalized.</div><div class="ttdef"><b>Definition:</b> Quat_inl.h:138</div></div>
 <div class="ttc" id="aclassxii_quat_template_htm_abc8e13490d6d8b6d763461342c371e30"><div class="ttname"><a href="../../d9/d1b/classxii_quat_template.htm#abc8e13490d6d8b6d763461342c371e30">xiiQuatTemplate::IdentityQuaternion</a></div><div class="ttdeci">static const xiiQuatTemplate&lt; Type &gt; IdentityQuaternion()</div><div class="ttdoc">Static function that returns a quaternion that represents the identity rotation (none).</div><div class="ttdef"><b>Definition:</b> Quat_inl.h:23</div></div>
 <div class="ttc" id="aclassxii_vec3_template_htm_a048401ec3520d90da1333889b30c7513"><div class="ttname"><a href="../../d9/d9a/classxii_vec3_template.htm#a048401ec3520d90da1333889b30c7513">xiiVec3Template::GetNormalized</a></div><div class="ttdeci">const xiiVec3Template&lt; Type &gt; GetNormalized() const</div><div class="ttdoc">Returns a normalized version of this vector, leaves the vector itself unchanged.</div><div class="ttdef"><b>Definition:</b> Vec3_inl.h:90</div></div>
-<div class="ttc" id="aclassxii_quat_template_htm_ae4acab9c811fa6a9f02c2312599526fc"><div class="ttname"><a href="../../d9/d1b/classxii_quat_template.htm#ae4acab9c811fa6a9f02c2312599526fc">xiiQuatTemplate::GetAsMat4</a></div><div class="ttdeci">const xiiMat4Template&lt; Type &gt; GetAsMat4() const</div><div class="ttdoc">Returns the Quaternion as a matrix.</div><div class="ttdef"><b>Definition:</b> Quat_inl.h:204</div></div>
+<div class="ttc" id="aclassxii_quat_template_htm_ae4acab9c811fa6a9f02c2312599526fc"><div class="ttname"><a href="../../d9/d1b/classxii_quat_template.htm#ae4acab9c811fa6a9f02c2312599526fc">xiiQuatTemplate::GetAsMat4</a></div><div class="ttdeci">const xiiMat4Template&lt; Type &gt; GetAsMat4() const</div><div class="ttdoc">Returns the Quaternion as a matrix.</div><div class="ttdef"><b>Definition:</b> Quat_inl.h:212</div></div>
 <div class="ttc" id="anamespacexii_math_htm_ae7fbda648b6f9bcc4dc23962d06c93f4"><div class="ttname"><a href="../../d1/d37/namespacexii_math.htm#ae7fbda648b6f9bcc4dc23962d06c93f4">xiiMath::Sqrt</a></div><div class="ttdeci">XII_ALWAYS_INLINE double Sqrt(double f)</div><div class="ttdoc">Returns the square root of f.</div><div class="ttdef"><b>Definition:</b> MathDouble_inl.h:84</div></div>
 <div class="ttc" id="aclassxii_vec3_template_htm_a658acf243e57aea0c7252d6918eca809"><div class="ttname"><a href="../../d9/d9a/classxii_vec3_template.htm#a658acf243e57aea0c7252d6918eca809">xiiVec3Template::CrossRH</a></div><div class="ttdeci">const xiiVec3Template&lt; Type &gt; CrossRH(const xiiVec3Template&lt; Type &gt; &amp;rhs) const</div><div class="ttdoc">Returns the Cross-product of the two vectors (NOT commutative, order DOES matter)</div><div class="ttdef"><b>Definition:</b> Vec3_inl.h:309</div></div>
 <div class="ttc" id="aclassxii_vec3_template_htm_a29f0f6353abb8f23538f847533b56b4a"><div class="ttname"><a href="../../d9/d9a/classxii_vec3_template.htm#a29f0f6353abb8f23538f847533b56b4a">xiiVec3Template::Dot</a></div><div class="ttdeci">Type Dot(const xiiVec3Template&lt; Type &gt; &amp;rhs) const</div><div class="ttdoc">Returns the Dot-product of the two vectors (commutative, order does not matter)</div><div class="ttdef"><b>Definition:</b> Vec3_inl.h:300</div></div>
@@ -616,19 +624,20 @@ $(document).ready(function(){initNavTree('de/d9b/_quat__inl_8h_source.htm','../.
 <div class="ttc" id="aclassxii_angle_template_htm"><div class="ttname"><a href="../../d3/ddb/classxii_angle_template.htm">xiiAngleTemplate</a></div><div class="ttdoc">Wrapper class for a safe usage and conversions of angles.</div><div class="ttdef"><b>Definition:</b> Angle.h:10</div></div>
 <div class="ttc" id="aclassxii_vec3_template_htm_a31110d5b5e1de3cad4fe3546aec520f1"><div class="ttname"><a href="../../d9/d9a/classxii_vec3_template.htm#a31110d5b5e1de3cad4fe3546aec520f1">xiiVec3Template::Set</a></div><div class="ttdeci">void Set(Type xyz)</div><div class="ttdoc">Sets all 3 components to this value.</div><div class="ttdef"><b>Definition:</b> Vec3_inl.h:28</div></div>
 <div class="ttc" id="aclassxii_angle_template_htm_a186b3138db53d77de01facd1026240c0"><div class="ttname"><a href="../../d3/ddb/classxii_angle_template.htm#a186b3138db53d77de01facd1026240c0">xiiAngleTemplate::Degree</a></div><div class="ttdeci">constexpr static xiiAngleTemplate&lt; Type &gt; Degree(Type fDegree)</div><div class="ttdoc">Creates an instance of xiiAngleTemplate that was initialized from degree. (Performs a conversion)</div><div class="ttdef"><b>Definition:</b> Angle_inl.h:34</div></div>
-<div class="ttc" id="aclassxii_quat_template_htm_a626e119e067b041d16a8fd8bfb006c92"><div class="ttname"><a href="../../d9/d1b/classxii_quat_template.htm#a626e119e067b041d16a8fd8bfb006c92">xiiQuatTemplate::ReconstructFromMat3</a></div><div class="ttdeci">void ReconstructFromMat3(const xiiMat3Template&lt; Type &gt; &amp;m)</div><div class="ttdoc">Reconstructs a rotation quaternion from a matrix that may contain scaling and mirroring.</div><div class="ttdef"><b>Definition:</b> Quat_inl.h:293</div></div>
+<div class="ttc" id="aclassxii_quat_template_htm_a626e119e067b041d16a8fd8bfb006c92"><div class="ttname"><a href="../../d9/d1b/classxii_quat_template.htm#a626e119e067b041d16a8fd8bfb006c92">xiiQuatTemplate::ReconstructFromMat3</a></div><div class="ttdeci">void ReconstructFromMat3(const xiiMat3Template&lt; Type &gt; &amp;m)</div><div class="ttdoc">Reconstructs a rotation quaternion from a matrix that may contain scaling and mirroring.</div><div class="ttdef"><b>Definition:</b> Quat_inl.h:301</div></div>
 <div class="ttc" id="anamespacexii_math_htm_afbbbae240e0cea673cd16646b5142e06"><div class="ttname"><a href="../../d1/d37/namespacexii_math.htm#afbbbae240e0cea673cd16646b5142e06">xiiMath::Sin</a></div><div class="ttdeci">XII_ALWAYS_INLINE Type Sin(xiiAngleTemplate&lt; Type &gt; a)</div><div class="ttdoc">***** Trigonometric Functions *****</div><div class="ttdef"><b>Definition:</b> Math_inl.h:8</div></div>
 <div class="ttc" id="anamespacexii_math_htm_a41e2a06b9f2d78c5773c856fb84dc467"><div class="ttname"><a href="../../d1/d37/namespacexii_math.htm#a41e2a06b9f2d78c5773c856fb84dc467">xiiMath::ATan2</a></div><div class="ttdeci">XII_ALWAYS_INLINE xiiAngleTemplate&lt; Type &gt; ATan2(Type y, Type x)</div><div class="ttdoc">Returns the atan2 of x and y.</div><div class="ttdef"><b>Definition:</b> Math_inl.h:26</div></div>
-<div class="ttc" id="aclassxii_quat_template_htm_aca6ff595f2b25d5950fbfe256dc56af9"><div class="ttname"><a href="../../d9/d1b/classxii_quat_template.htm#aca6ff595f2b25d5950fbfe256dc56af9">xiiQuatTemplate::SetSlerp</a></div><div class="ttdeci">void SetSlerp(const xiiQuatTemplate &amp;qFrom, const xiiQuatTemplate &amp;qTo, Type t)</div><div class="ttdoc">Sets this quaternion to be the spherical linear interpolation of the other two.</div><div class="ttdef"><b>Definition:</b> Quat_inl.h:366</div></div>
+<div class="ttc" id="aclassxii_quat_template_htm_aca6ff595f2b25d5950fbfe256dc56af9"><div class="ttname"><a href="../../d9/d1b/classxii_quat_template.htm#aca6ff595f2b25d5950fbfe256dc56af9">xiiQuatTemplate::SetSlerp</a></div><div class="ttdeci">void SetSlerp(const xiiQuatTemplate &amp;qFrom, const xiiQuatTemplate &amp;qTo, Type t)</div><div class="ttdoc">Sets this quaternion to be the spherical linear interpolation of the other two.</div><div class="ttdef"><b>Definition:</b> Quat_inl.h:374</div></div>
 <div class="ttc" id="aclassxii_vec3_template_htm"><div class="ttname"><a href="../../d9/d9a/classxii_vec3_template.htm">xiiVec3Template</a></div><div class="ttdoc">A 3-component vector class.</div><div class="ttdef"><b>Definition:</b> Declarations.h:138</div></div>
-<div class="ttc" id="aclassxii_quat_template_htm_a4c5018aaf26a32127f17884de644e485"><div class="ttname"><a href="../../d9/d1b/classxii_quat_template.htm#a4c5018aaf26a32127f17884de644e485">xiiQuatTemplate::SetFromMat3</a></div><div class="ttdeci">void SetFromMat3(const xiiMat3Template&lt; Type &gt; &amp;m)</div><div class="ttdoc">Creates a quaternion from the given matrix.</div><div class="ttdef"><b>Definition:</b> Quat_inl.h:243</div></div>
+<div class="ttc" id="aclassxii_quat_template_htm_a99d65514b0a8231d9ec80ceae8a2e65b"><div class="ttname"><a href="../../d9/d1b/classxii_quat_template.htm#a99d65514b0a8231d9ec80ceae8a2e65b">xiiQuatTemplate::GetNegated</a></div><div class="ttdeci">const xiiQuatTemplate&lt; Type &gt; GetNegated() const</div><div class="ttdoc">Returns the Quaternion with all 4 components negated. This is not the same as the inverted rotation!</div><div class="ttdef"><b>Definition:</b> Quat_inl.h:103</div></div>
+<div class="ttc" id="aclassxii_quat_template_htm_a4c5018aaf26a32127f17884de644e485"><div class="ttname"><a href="../../d9/d1b/classxii_quat_template.htm#a4c5018aaf26a32127f17884de644e485">xiiQuatTemplate::SetFromMat3</a></div><div class="ttdeci">void SetFromMat3(const xiiMat3Template&lt; Type &gt; &amp;m)</div><div class="ttdoc">Creates a quaternion from the given matrix.</div><div class="ttdef"><b>Definition:</b> Quat_inl.h:251</div></div>
 <div class="ttc" id="anamespacexii_math_htm_a194fc513007059c6e129cdeb321c3797"><div class="ttname"><a href="../../d1/d37/namespacexii_math.htm#a194fc513007059c6e129cdeb321c3797">xiiMath::Cos</a></div><div class="ttdeci">XII_ALWAYS_INLINE Type Cos(xiiAngleTemplate&lt; Type &gt; a)</div><div class="ttdoc">Takes an angle, returns its cosine.</div><div class="ttdef"><b>Definition:</b> Math_inl.h:11</div></div>
 <div class="ttc" id="anamespacexii_math_htm_a788a4e90cf6d0f3285b15fac90017188"><div class="ttname"><a href="../../d1/d37/namespacexii_math.htm#a788a4e90cf6d0f3285b15fac90017188">xiiMath::ACos</a></div><div class="ttdeci">XII_ALWAYS_INLINE xiiAngleTemplate&lt; Type &gt; ACos(Type f)</div><div class="ttdoc">Returns the arcus cosinus of f.</div><div class="ttdef"><b>Definition:</b> Math_inl.h:20</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.htm">home</a></li><li class="navelem"><a class="el" href="../../dir_1036706e55c22cab35bc1c58ee689f1d.htm">runner</a></li><li class="navelem"><a class="el" href="../../dir_629f8151d55d307162ff2d619fb1783d.htm">work</a></li><li class="navelem"><a class="el" href="../../dir_1ddc44fe1263a8c7935fa6130b7d9499.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_2c1b6808f12952f4c36e05ba7068379a.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_b5a1c4ecfca018ad24b729e213296d41.htm">Source</a></li><li class="navelem"><a class="el" href="../../dir_e321052006a51284e67389ab20037e7c.htm">Engine</a></li><li class="navelem"><a class="el" href="../../dir_be0c42c58b36f42c54ec54024ed4f6af.htm">Foundation</a></li><li class="navelem"><a class="el" href="../../dir_c1b0860bb61ff24e678d996d14e4bcdd.htm">Math</a></li><li class="navelem"><a class="el" href="../../dir_fb7e93d80251333452775ccd3b7c417a.htm">Implementation</a></li><li class="navelem"><b>Quat_inl.h</b></li>
-    <li class="footer">Generated on Fri Dec 1 2023 23:48:48 for XIIEngine by
+    <li class="footer">Generated on Sun Dec 10 2023 03:58:28 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

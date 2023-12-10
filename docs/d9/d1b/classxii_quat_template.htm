@@ -172,10 +172,14 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../.
 <tr class="memitem:a1ccee339c17216c8ed01970c2c4bfea2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d1b/classxii_quat_template.htm#a1ccee339c17216c8ed01970c2c4bfea2">Invert</a> ()</td></tr>
 <tr class="memdesc:a1ccee339c17216c8ed01970c2c4bfea2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inverts the rotation, so instead of rotating N degrees around an axis, the quaternion will rotate -N degrees around its axis.  <a href="../../d9/d1b/classxii_quat_template.htm#a1ccee339c17216c8ed01970c2c4bfea2">More...</a><br /></td></tr>
 <tr class="separator:a1ccee339c17216c8ed01970c2c4bfea2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4e6d4c187d368bbf3ef46d7914393b1c"><td class="memItemLeft" align="right" valign="top"><a id="a4e6d4c187d368bbf3ef46d7914393b1c"></a>
-const <a class="el" href="../../d9/d1b/classxii_quat_template.htm">xiiQuatTemplate</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d1b/classxii_quat_template.htm#a4e6d4c187d368bbf3ef46d7914393b1c">operator-</a> () const</td></tr>
-<tr class="memdesc:a4e6d4c187d368bbf3ef46d7914393b1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a Quaternion that represents the negative / inverted rotation. <br /></td></tr>
-<tr class="separator:a4e6d4c187d368bbf3ef46d7914393b1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a281cb5ac2d17e62f8b6fb89fa1ab1a72"><td class="memItemLeft" align="right" valign="top"><a id="a281cb5ac2d17e62f8b6fb89fa1ab1a72"></a>
+const <a class="el" href="../../d9/d1b/classxii_quat_template.htm">xiiQuatTemplate</a>&lt; Type &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d1b/classxii_quat_template.htm#a281cb5ac2d17e62f8b6fb89fa1ab1a72">GetInverse</a> () const</td></tr>
+<tr class="memdesc:a281cb5ac2d17e62f8b6fb89fa1ab1a72"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a quaternion that represents the negative / inverted rotation. E.g. the one that would rotate back to identity. <br /></td></tr>
+<tr class="separator:a281cb5ac2d17e62f8b6fb89fa1ab1a72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99d65514b0a8231d9ec80ceae8a2e65b"><td class="memItemLeft" align="right" valign="top"><a id="a99d65514b0a8231d9ec80ceae8a2e65b"></a>
+const <a class="el" href="../../d9/d1b/classxii_quat_template.htm">xiiQuatTemplate</a>&lt; Type &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d1b/classxii_quat_template.htm#a99d65514b0a8231d9ec80ceae8a2e65b">GetNegated</a> () const</td></tr>
+<tr class="memdesc:a99d65514b0a8231d9ec80ceae8a2e65b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the Quaternion with all 4 components negated. This is not the same as the inverted rotation! <br /></td></tr>
+<tr class="separator:a99d65514b0a8231d9ec80ceae8a2e65b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6e0a54212fcfe9b1926789427db98aac"><td class="memItemLeft" align="right" valign="top"><a id="a6e0a54212fcfe9b1926789427db98aac"></a>
 Type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d1b/classxii_quat_template.htm#a6e0a54212fcfe9b1926789427db98aac">Dot</a> (const <a class="el" href="../../d9/d1b/classxii_quat_template.htm">xiiQuatTemplate</a> &amp;rhs) const</td></tr>
 <tr class="memdesc:a6e0a54212fcfe9b1926789427db98aac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the dot-product of the two quaternions (commutative, order does not matter). <br /></td></tr>
@@ -227,7 +231,7 @@ template&lt;typename Type &gt; </div>
 </div><div class="memdoc">
 
 <p>Inverts the rotation, so instead of rotating N degrees around an axis, the quaternion will rotate -N degrees around its axis. </p>
-<p>This modifies the quaternion in place. If you want to get the inverse as a copy, use the negation operator (-). </p>
+<p>This modifies the quaternion in place. If you want to get the inverse as a copy, use <a class="el" href="../../d9/d1b/classxii_quat_template.htm#a281cb5ac2d17e62f8b6fb89fa1ab1a72" title="Returns a quaternion that represents the negative / inverted rotation. E.g. the one that would rotate...">GetInverse()</a>. </p>
 
 </div>
 </div>
@@ -438,7 +442,7 @@ template&lt;typename Type &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d9/d1b/classxii_quat_template.htm">xiiQuatTemplate</a></li>
-    <li class="footer">Generated on Fri Dec 1 2023 23:48:56 for XIIEngine by
+    <li class="footer">Generated on Sun Dec 10 2023 03:58:38 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

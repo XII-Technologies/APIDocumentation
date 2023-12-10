@@ -3,6 +3,7 @@ var classxii_vec4_template =
     [ "ComponentType", "d1/d20/classxii_vec4_template.htm#ae35b96b6505791e4c182acca457156a1", null ],
     [ "xiiVec4Template", "d1/d20/classxii_vec4_template.htm#a9b235b061d34b1d9dd51dfaf3f8484fe", null ],
     [ "xiiVec4Template", "d1/d20/classxii_vec4_template.htm#af7f56cac647061fa08c4feeff4184f19", null ],
+    [ "xiiVec4Template", "d1/d20/classxii_vec4_template.htm#a4c051d993bab0d79cc61c6507f3bf436", null ],
     [ "xiiVec4Template", "d1/d20/classxii_vec4_template.htm#a28d05db94604994d73ae8d0be84262bc", null ],
     [ "Abs", "d1/d20/classxii_vec4_template.htm#ac7cf5c995aa246d8b928b73f829c76a0", null ],
     [ "CompClamp", "d1/d20/classxii_vec4_template.htm#aa28213893fbcb128d7695412cc9c1510", null ],

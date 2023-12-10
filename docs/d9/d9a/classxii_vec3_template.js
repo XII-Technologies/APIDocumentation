@@ -39,7 +39,7 @@ var classxii_vec3_template =
     [ "IsZero", "d9/d9a/classxii_vec3_template.htm#a5d0f21b3bdaab6d049cf0e2746d4c80f", null ],
     [ "MakeOrthogonalTo", "d9/d9a/classxii_vec3_template.htm#ad01449cbcf124cf79ccecd2552731f9d", null ],
     [ "Normalize", "d9/d9a/classxii_vec3_template.htm#aa3b3c4d4d9981e220759a56dba1c38d5", null ],
-    [ "NormalizeIfNotZero", "d9/d9a/classxii_vec3_template.htm#aadde51f8d8275e1030e080e7044490c0", null ],
+    [ "NormalizeIfNotZero", "d9/d9a/classxii_vec3_template.htm#a0970cd7b07bec33f362e64b1d87deac1", null ],
     [ "operator*=", "d9/d9a/classxii_vec3_template.htm#ae123e96eaa13e2880166aa7203f701b9", null ],
     [ "operator*=", "d9/d9a/classxii_vec3_template.htm#a0a0cafc5141ca0b6e6284ec4f3eee39c", null ],
     [ "operator+=", "d9/d9a/classxii_vec3_template.htm#a43497c7554912a12b0046a8ab93d19eb", null ],

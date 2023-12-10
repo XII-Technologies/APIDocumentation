@@ -96,8 +96,11 @@ Inheritance diagram for xiiGameApplicationBase:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../dc/d6d/classxii_game_application_base__inherit__graph.png" border="0" usemap="#xii_game_application_base_inherit__map" alt="Inheritance graph"/></div>
 <map name="xii_game_application_base_inherit__map" id="xii_game_application_base_inherit__map">
-<area shape="rect" title=" " alt="" coords="5,80,188,107"/>
-<area shape="rect" href="../../dd/d2b/classxii_application.htm" title="Base class to be used by applications based on XII." alt="" coords="41,5,152,32"/>
+<area shape="rect" title=" " alt="" coords="94,80,277,107"/>
+<area shape="rect" href="../../d1/ded/classxii_game_application.htm" title="The base class for all typical game applications made with xiiEngine." alt="" coords="110,155,261,181"/>
+<area shape="rect" href="../../dd/d2b/classxii_application.htm" title="Base class to be used by applications based on XII." alt="" coords="130,5,241,32"/>
+<area shape="rect" href="../../d7/d9e/classxii_player_application.htm" title=" " alt="" coords="5,229,157,256"/>
+<area shape="rect" href="../../d1/df8/classxii_shader_compiler_application.htm" title=" " alt="" coords="182,229,397,256"/>
 </map>
 <center><span class="legend">[<a target="top" href="../../graph_legend.htm">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -539,6 +542,8 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_bWasQuitRequested</
 
 <p>Reimplemented from <a class="el" href="../../dd/d2b/classxii_application.htm#a5d424fee5b31f4a58bb0cf255317b0a1">xiiApplication</a>.</p>
 
+<p>Reimplemented in <a class="el" href="../../d1/df8/classxii_shader_compiler_application.htm#a3d2ece92d2460063bcfc7570cace585c">xiiShaderCompilerApplication</a>, and <a class="el" href="../../d7/d9e/classxii_player_application.htm#a6d1e1bf4745189e6aad7160783b3f02a">xiiPlayerApplication</a>.</p>
+
 </div>
 </div>
 <a id="a590f1fc733980724dfe2c9573a23b027"></a>
@@ -598,6 +603,8 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_bWasQuitRequested</
 <p>Override this function to be able to configure subsystems, before they are initialized. After this function returns, <a class="el" href="../../dd/d8e/classxii_startup.htm#a33afa05eb4f7a8eefb1dcce11146f9d6" title="Runs the &#39;core&#39; startup sequence of all subsystems in the proper order.">xiiStartup::StartupCoreSystems()</a> is automatically called. If you need to set up custom allocators, this is the place to do this. </p>
 
 <p>Reimplemented from <a class="el" href="../../dd/d2b/classxii_application.htm#a129d221fbc4cee48a415cd2c77437e17">xiiApplication</a>.</p>
+
+<p>Reimplemented in <a class="el" href="../../d1/df8/classxii_shader_compiler_application.htm#a6977bbc9dc019425bcd5e689c3e6ee25">xiiShaderCompilerApplication</a>, and <a class="el" href="../../d7/d9e/classxii_player_application.htm#ab8852b043c8bcf61b4823d234c04426a">xiiPlayerApplication</a>.</p>
 
 </div>
 </div>
@@ -728,6 +735,8 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_bWasQuitRequested</
 <p>Returns the target of the 'project' special data directory. </p>
 <p>The return value of this function will be passed into <a class="el" href="../../d7/d0a/classxii_file_system.htm#a8e6b9c492ba466750205dd9500e1ee35" title="Special directories are used when mounting data directories as basic references.">xiiFileSystem::SetSpecialDirectory</a>. Afterwards, any path starting with the special directory marker ("&gt;project/") will point into this directory. </p>
 
+<p>Implemented in <a class="el" href="../../d1/ded/classxii_game_application.htm#a6fb468add7c67454696a1506484f6666">xiiGameApplication</a>.</p>
+
 </div>
 </div>
 <a id="a50336ebf20016950892db2ffa37dd781"></a>
@@ -835,6 +844,8 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_bWasQuitRequested</
 
 <p>Implements <a class="el" href="../../dd/d2b/classxii_application.htm#add6d74803256b335b6765297248775f6">xiiApplication</a>.</p>
 
+<p>Reimplemented in <a class="el" href="../../d1/df8/classxii_shader_compiler_application.htm#aa7c639599102ce6b9a42ef50fb537696">xiiShaderCompilerApplication</a>.</p>
+
 </div>
 </div>
 <a id="a93504cd63157c2b0852ece8c35172dd1"></a>
@@ -889,7 +900,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_bWasQuitRequested</
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../da/d67/classxii_game_application_base.htm">xiiGameApplicationBase</a></li>
-    <li class="footer">Generated on Fri Dec 1 2023 23:48:55 for XIIEngine by
+    <li class="footer">Generated on Sun Dec 10 2023 03:58:36 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

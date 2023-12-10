@@ -9,7 +9,6 @@ var structxii_g_a_l_draw_command_capability_flags =
       [ "DrawIndirectFirstInstance", "dc/dd9/structxii_g_a_l_draw_command_capability_flags.htm#a35068ecd544943e03ab18638ae846040a815945f85f047c8b7f71a93451a6f704", null ],
       [ "NativeMultiDrawIndirect", "dc/dd9/structxii_g_a_l_draw_command_capability_flags.htm#a35068ecd544943e03ab18638ae846040a6340327de57b33381d11803ac077382f", null ],
       [ "DrawIndirectCounterBuffer", "dc/dd9/structxii_g_a_l_draw_command_capability_flags.htm#a35068ecd544943e03ab18638ae846040ada4561a9b10991a2716d9ab5551fcc54", null ],
-      [ "ENUM_COUNT", "dc/dd9/structxii_g_a_l_draw_command_capability_flags.htm#a35068ecd544943e03ab18638ae846040ae3c386b74ace019b7731368a9de78c2f", null ],
       [ "Default", "dc/dd9/structxii_g_a_l_draw_command_capability_flags.htm#a35068ecd544943e03ab18638ae846040af26c9ba42cf22c09c068e53aaef1fcb7", null ]
     ] ]
 ];

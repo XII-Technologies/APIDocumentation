@@ -1,7 +1,4 @@
 var searchData=
 [
-  ['offsetbase_16983',['OffsetBase',['../de/d1d/classxii_memory_mapped_file.htm#a87467459914609e33ca1514fd0351388',1,'xiiMemoryMappedFile']]],
-  ['onenterarea_16984',['OnEnterArea',['../d0/db4/structxii_input_action_config.htm#a8850d43986047decd114352fc791c829',1,'xiiInputActionConfig']]],
-  ['onleavearea_16985',['OnLeaveArea',['../d0/db4/structxii_input_action_config.htm#a98ec8d63a11a646389b276dc78980ce4',1,'xiiInputActionConfig']]],
-  ['orientation_16986',['Orientation',['../dc/d30/classxii_game_grid.htm#a0259a8eed6ec1405402e187f15ed9984',1,'xiiGameGrid']]]
+  ['mode_17905',['Mode',['../de/d1d/classxii_memory_mapped_file.htm#a5aac0e2d8c477db9d0a1ffeb43675714',1,'xiiMemoryMappedFile::Mode()'],['../d7/d4b/classxii_thread_signal.htm#a3371ecdc4f421d3f4c135f46b05ce0a3',1,'xiiThreadSignal::Mode()']]]
 ];

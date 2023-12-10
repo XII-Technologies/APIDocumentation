@@ -7,7 +7,6 @@ var structxii_g_a_l_ray_tracing_capability_flags =
       [ "StandaloneShaders", "da/d3d/structxii_g_a_l_ray_tracing_capability_flags.htm#af8519d16a825771c80cba3477f08edf6a3efbdc8ef3da14a98fab0f994c9304ad", null ],
       [ "InlineRayTracing", "da/d3d/structxii_g_a_l_ray_tracing_capability_flags.htm#af8519d16a825771c80cba3477f08edf6a5b326f77f61040dc6fc2399ef2700adb", null ],
       [ "IndirectRayTracing", "da/d3d/structxii_g_a_l_ray_tracing_capability_flags.htm#af8519d16a825771c80cba3477f08edf6a308407a507137360ec9c57eb47ea51cb", null ],
-      [ "ENUM_COUNT", "da/d3d/structxii_g_a_l_ray_tracing_capability_flags.htm#af8519d16a825771c80cba3477f08edf6a58e7ff95453318c84572952bad48b7c9", null ],
       [ "Default", "da/d3d/structxii_g_a_l_ray_tracing_capability_flags.htm#af8519d16a825771c80cba3477f08edf6abc8eb881fb07e6327b14967bce66fcfe", null ]
     ] ]
 ];

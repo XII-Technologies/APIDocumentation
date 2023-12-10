@@ -12,7 +12,6 @@ var structxii_g_a_l_wave_feature =
       [ "ShuffleRelative", "de/d87/structxii_g_a_l_wave_feature.htm#a5aabcf7235eeb410db2e4299fe829680a16abd9f9124f4a5c167f2ce13852e728", null ],
       [ "Clustered", "de/d87/structxii_g_a_l_wave_feature.htm#a5aabcf7235eeb410db2e4299fe829680a9f714e80ba3acdcc77dca280ce911d0d", null ],
       [ "Quad", "de/d87/structxii_g_a_l_wave_feature.htm#a5aabcf7235eeb410db2e4299fe829680a6184389dcb40cf384b4a50c844de12e3", null ],
-      [ "ENUM_COUNT", "de/d87/structxii_g_a_l_wave_feature.htm#a5aabcf7235eeb410db2e4299fe829680ae741c1bb021733b865e181d454d46844", null ],
       [ "Default", "de/d87/structxii_g_a_l_wave_feature.htm#a5aabcf7235eeb410db2e4299fe829680aaa688f0ce908bd7843b4731be6a9d927", null ]
     ] ]
 ];
