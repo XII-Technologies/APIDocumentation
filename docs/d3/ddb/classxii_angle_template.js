@@ -7,7 +7,6 @@ var classxii_angle_template =
     [ "IsEqualNormalized", "d3/ddb/classxii_angle_template.htm#ad395aa30c07355b4af56067d542d6514", null ],
     [ "IsEqualSimple", "d3/ddb/classxii_angle_template.htm#a2b5342a182d1fdedc3db8a49cd4a2e21", null ],
     [ "NormalizeRange", "d3/ddb/classxii_angle_template.htm#a7e9e308308a55e19b03dbf5a3fed8c66", null ],
-    [ "operator!=", "d3/ddb/classxii_angle_template.htm#a91624e8c21a1ff2a9c8b093eae586c2d", null ],
     [ "operator+", "d3/ddb/classxii_angle_template.htm#a2eb6a2f631f4836e7a378fb5d06882b3", null ],
     [ "operator+=", "d3/ddb/classxii_angle_template.htm#a00b2710d242ebe0ea32381dad716f05a", null ],
     [ "operator-", "d3/ddb/classxii_angle_template.htm#a2313b33bd14978a15f3d2740ff29b17d", null ],

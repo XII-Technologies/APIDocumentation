@@ -27,7 +27,6 @@ var classxii_memory_utils =
     [ "CopyOverlapped", "d8/d9d/classxii_memory_utils.htm#a21130e38aacc859fbac43f669a8bc505", null ],
     [ "DefaultConstruct", "d8/d9d/classxii_memory_utils.htm#a8d82dafbd5d12305d05c35b651dc0b8e", null ],
     [ "Destruct", "d8/d9d/classxii_memory_utils.htm#a87011aa787504b99b7186a05055d37e5", null ],
-    [ "Destruct", "d8/d9d/classxii_memory_utils.htm#a2516458396e2b4b9920e8a4cd5fbbeac", null ],
     [ "Destruct", "d8/d9d/classxii_memory_utils.htm#a1a281d29dc850d4ef03eab4fe7d38f95", null ],
     [ "IsAligned", "d8/d9d/classxii_memory_utils.htm#aea253d9b6a84db69061c7b344fc77215", null ],
     [ "IsEqual", "d8/d9d/classxii_memory_utils.htm#a9b7ebec3b2d3bd91426ab96f9352f490", null ],

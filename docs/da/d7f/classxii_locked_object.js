@@ -10,7 +10,6 @@ var classxii_locked_object =
     [ "isValid", "da/d7f/classxii_locked_object.htm#a6942be5e3dbd91e9f731ca79224ee75c", null ],
     [ "operator bool", "da/d7f/classxii_locked_object.htm#a30eb6dc0702b798877477cad74805554", null ],
     [ "operator!", "da/d7f/classxii_locked_object.htm#a37b3d8ad0b798f803b104643372276eb", null ],
-    [ "operator!=", "da/d7f/classxii_locked_object.htm#a49962da03196374175ac406033dfb7a2", null ],
     [ "operator*", "da/d7f/classxii_locked_object.htm#af4f3a875273773a6e019855020b2b661", null ],
     [ "operator*", "da/d7f/classxii_locked_object.htm#a4a182cd8d960d03800dc86e1cdbee401", null ],
     [ "operator->", "da/d7f/classxii_locked_object.htm#abda6fec59056473f1ac7a34f06e0b81e", null ],

@@ -5,7 +5,6 @@ var classxii_fixed_point =
     [ "xiiFixedPoint", "d1/dee/classxii_fixed_point.htm#a580e81ba0dc057a67b1be68912a0a914", null ],
     [ "xiiFixedPoint", "d1/dee/classxii_fixed_point.htm#a8ffc2c9ef150be11a518b36c8329aaa7", null ],
     [ "GetRawValue", "d1/dee/classxii_fixed_point.htm#a166359fefd6fb6fce9a7c910634b8c22", null ],
-    [ "operator!=", "d1/dee/classxii_fixed_point.htm#a87848adfa7080ca769d11f2790f5d5c5", null ],
     [ "operator*=", "d1/dee/classxii_fixed_point.htm#adb25da16a201a79314fd68c7d6384edc", null ],
     [ "operator*=", "d1/dee/classxii_fixed_point.htm#aa4f144ef3ee580036eb342fa28fd624e", null ],
     [ "operator+=", "d1/dee/classxii_fixed_point.htm#a1a7322f02466e53c0c775b78fc15d6df", null ],

@@ -7,7 +7,6 @@ var classxii_static_ring_buffer =
     [ "Clear", "d1/de4/classxii_static_ring_buffer.htm#af651b6b93d666052e151c670e2988063", null ],
     [ "GetCount", "d1/de4/classxii_static_ring_buffer.htm#af9e1cab0ae331cbe231667e7e7466694", null ],
     [ "IsEmpty", "d1/de4/classxii_static_ring_buffer.htm#a155e7bbf6bc302d1314fe9172043827d", null ],
-    [ "operator!=", "d1/de4/classxii_static_ring_buffer.htm#ac531b6d5134b4f522bed795b2d55e08b", null ],
     [ "operator=", "d1/de4/classxii_static_ring_buffer.htm#aa46bafd3e58e4b341f30eb65effdb049", null ],
     [ "operator==", "d1/de4/classxii_static_ring_buffer.htm#a11118da165defd070acba12d0b62a136", null ],
     [ "operator[]", "d1/de4/classxii_static_ring_buffer.htm#a8da8da06ab39a477f5e4265628640032", null ],

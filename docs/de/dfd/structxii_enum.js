@@ -7,8 +7,6 @@ var structxii_enum =
     [ "xiiEnum", "de/dfd/structxii_enum.htm#a4a5ef288a599d72828d1ca65854601b9", null ],
     [ "GetValue", "de/dfd/structxii_enum.htm#a2643cb33f38a4feba80a79879895bfac", null ],
     [ "operator typename Derived::Enum", "de/dfd/structxii_enum.htm#a3ef4474b1f3cd7100cb05af96fd93014", null ],
-    [ "operator!=", "de/dfd/structxii_enum.htm#a70c45ea1487f3708b3298d6dded93628", null ],
-    [ "operator!=", "de/dfd/structxii_enum.htm#acaf9631c384ee86b0e82283e9eb91a62", null ],
     [ "operator&", "de/dfd/structxii_enum.htm#a3cf36f150264b1cb0cc9713bde0d9e01", null ],
     [ "operator<", "de/dfd/structxii_enum.htm#aa1d181a12a2e971ff23205b2f0d8ed48", null ],
     [ "operator<", "de/dfd/structxii_enum.htm#aac35f217df7da05c1b275d9c576aa906", null ],

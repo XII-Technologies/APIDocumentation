@@ -84,6 +84,9 @@ var annotated_dup =
     [ "xiiStateMachineInternal", null, [
       [ "Compound", "df/d59/structxii_state_machine_internal_1_1_compound.htm", "df/d59/structxii_state_machine_internal_1_1_compound" ]
     ] ],
+    [ "xiiTokenParseUtils", null, [
+      [ "TokenMatch", "d7/dab/structxii_token_parse_utils_1_1_token_match.htm", "d7/dab/structxii_token_parse_utils_1_1_token_match" ]
+    ] ],
     [ "ArrayPtrTask", "dd/dc9/class_array_ptr_task.htm", "dd/dc9/class_array_ptr_task" ],
     [ "Backtrace", "dd/d1d/struct_backtrace.htm", "dd/d1d/struct_backtrace" ],
     [ "CompareConstChar", "dc/d66/struct_compare_const_char.htm", null ],
@@ -743,6 +746,8 @@ var annotated_dup =
     [ "xiiGALPassNull", "d3/d27/classxii_g_a_l_pass_null.htm", "d3/d27/classxii_g_a_l_pass_null" ],
     [ "xiiGALPassVulkan", "d9/ddc/classxii_g_a_l_pass_vulkan.htm", "d9/ddc/classxii_g_a_l_pass_vulkan" ],
     [ "xiiGALPipelineShadingRateFlags", "de/d3d/structxii_g_a_l_pipeline_shading_rate_flags.htm", "de/d3d/structxii_g_a_l_pipeline_shading_rate_flags" ],
+    [ "xiiGALPipelineState", "d0/d7b/classxii_g_a_l_pipeline_state.htm", "d0/d7b/classxii_g_a_l_pipeline_state" ],
+    [ "xiiGALPipelineStateCreationDescription", "d5/d87/structxii_g_a_l_pipeline_state_creation_description.htm", "d5/d87/structxii_g_a_l_pipeline_state_creation_description" ],
     [ "xiiGALPipelineStateHandle", "df/dea/classxii_g_a_l_pipeline_state_handle.htm", "df/dea/classxii_g_a_l_pipeline_state_handle" ],
     [ "xiiGALPipelineType", "db/db2/structxii_g_a_l_pipeline_type.htm", "db/db2/structxii_g_a_l_pipeline_type" ],
     [ "xiiGALPresentMode", "d9/d19/structxii_g_a_l_present_mode.htm", "d9/d19/structxii_g_a_l_present_mode" ],
@@ -767,11 +772,8 @@ var annotated_dup =
     [ "xiiGALRasterizerStateVulkan", "d2/d7a/classxii_g_a_l_rasterizer_state_vulkan.htm", "d2/d7a/classxii_g_a_l_rasterizer_state_vulkan" ],
     [ "xiiGALRayTracingBuildASFlags", "d5/d76/structxii_g_a_l_ray_tracing_build_a_s_flags.htm", "d5/d76/structxii_g_a_l_ray_tracing_build_a_s_flags" ],
     [ "xiiGALRayTracingCapabilityFlags", "da/d3d/structxii_g_a_l_ray_tracing_capability_flags.htm", "da/d3d/structxii_g_a_l_ray_tracing_capability_flags" ],
-    [ "xiiGALRayTracingGeneralShaderGroupDescription", "d0/d16/structxii_g_a_l_ray_tracing_general_shader_group_description.htm", "d0/d16/structxii_g_a_l_ray_tracing_general_shader_group_description" ],
     [ "xiiGALRayTracingPipelineDescription", "dc/d9e/structxii_g_a_l_ray_tracing_pipeline_description.htm", "dc/d9e/structxii_g_a_l_ray_tracing_pipeline_description" ],
-    [ "xiiGALRayTracingProceduralHitShaderGroupDescription", "d7/deb/structxii_g_a_l_ray_tracing_procedural_hit_shader_group_description.htm", "d7/deb/structxii_g_a_l_ray_tracing_procedural_hit_shader_group_description" ],
     [ "xiiGALRayTracingProperties", "dc/dbd/structxii_g_a_l_ray_tracing_properties.htm", "dc/dbd/structxii_g_a_l_ray_tracing_properties" ],
-    [ "xiiGALRayTracingTriangleHitShaderGroupDescription", "db/d66/structxii_g_a_l_ray_tracing_triangle_hit_shader_group_description.htm", "db/d66/structxii_g_a_l_ray_tracing_triangle_hit_shader_group_description" ],
     [ "xiiGALRenderingSetup", "df/da6/structxii_g_a_l_rendering_setup.htm", "df/da6/structxii_g_a_l_rendering_setup" ],
     [ "xiiGALRenderPass", "d1/dbe/classxii_g_a_l_render_pass.htm", "d1/dbe/classxii_g_a_l_render_pass" ],
     [ "xiiGALRenderPassAttachmentDescription", "de/d88/structxii_g_a_l_render_pass_attachment_description.htm", "de/d88/structxii_g_a_l_render_pass_attachment_description" ],
@@ -878,6 +880,7 @@ var annotated_dup =
     [ "xiiGALTextureViewType", "db/d60/structxii_g_a_l_texture_view_type.htm", "db/d60/structxii_g_a_l_texture_view_type" ],
     [ "xiiGALTextureViewVulkan", "d5/d6e/classxii_g_a_l_texture_view_vulkan.htm", "d5/d6e/classxii_g_a_l_texture_view_vulkan" ],
     [ "xiiGALTextureVulkan", "d7/d2e/classxii_g_a_l_texture_vulkan.htm", "d7/d2e/classxii_g_a_l_texture_vulkan" ],
+    [ "xiiGALTilePipelineDescription", "da/df8/structxii_g_a_l_tile_pipeline_description.htm", "da/df8/structxii_g_a_l_tile_pipeline_description" ],
     [ "xiiGALTopLevelAS", "de/de7/classxii_g_a_l_top_level_a_s.htm", "de/de7/classxii_g_a_l_top_level_a_s" ],
     [ "xiiGALTopLevelASBuildDescription", "d1/d60/structxii_g_a_l_top_level_a_s_build_description.htm", "d1/d60/structxii_g_a_l_top_level_a_s_build_description" ],
     [ "xiiGALTopLevelASCreationDescription", "df/d85/structxii_g_a_l_top_level_a_s_creation_description.htm", "df/d85/structxii_g_a_l_top_level_a_s_creation_description" ],

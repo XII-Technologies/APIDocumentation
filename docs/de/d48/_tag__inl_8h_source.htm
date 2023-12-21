@@ -96,35 +96,30 @@ $(document).ready(function(){initNavTree('de/d48/_tag__inl_8h_source.htm','../..
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;  <span class="keywordflow">return</span> m_sTagString == rhs.m_sTagString;</div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;}</div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keywordtype">bool</span> xiiTag::operator!=(<span class="keyword">const</span> <a class="code" href="../../db/d3b/classxii_tag.htm">xiiTag</a>&amp; rhs)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keywordtype">bool</span> xiiTag::operator&lt;(<span class="keyword">const</span> <a class="code" href="../../db/d3b/classxii_tag.htm">xiiTag</a>&amp; rhs)<span class="keyword"> const</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword"></span>{</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;  <span class="keywordflow">return</span> m_sTagString != rhs.m_sTagString;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;  <span class="keywordflow">return</span> m_sTagString &lt; rhs.m_sTagString;</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;}</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keywordtype">bool</span> xiiTag::operator&lt;(<span class="keyword">const</span> <a class="code" href="../../db/d3b/classxii_tag.htm">xiiTag</a>&amp; rhs)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">const</span> <a class="code" href="../../df/dfb/structxii_hybrid_string.htm">xiiString</a>&amp; xiiTag::GetTagString()<span class="keyword"> const</span></div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword"></span>{</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;  <span class="keywordflow">return</span> m_sTagString &lt; rhs.m_sTagString;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;  <span class="keywordflow">return</span> m_sTagString.<a class="code" href="../../d6/d0c/classxii_hashed_string.htm#a50f68022fa81098fd90fd1649267a5d2">GetString</a>();</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;}</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">const</span> <a class="code" href="../../df/dfb/structxii_hybrid_string.htm">xiiString</a>&amp; xiiTag::GetTagString()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keywordtype">bool</span> xiiTag::IsValid()<span class="keyword"> const</span></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword"></span>{</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  <span class="keywordflow">return</span> m_sTagString.<a class="code" href="../../d6/d0c/classxii_hashed_string.htm#a50f68022fa81098fd90fd1649267a5d2">GetString</a>();</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  <span class="keywordflow">return</span> m_uiBlockIndex != 0xFFFFFFFEu;</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;}</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keywordtype">bool</span> xiiTag::IsValid()<span class="keyword"> const</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword"></span>{</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  <span class="keywordflow">return</span> m_uiBlockIndex != 0xFFFFFFFEu;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="astructxii_hybrid_string_htm"><div class="ttname"><a href="../../df/dfb/structxii_hybrid_string.htm">xiiHybridString&lt; 32, xiiDefaultAllocatorWrapper &gt;</a></div></div>
-<div class="ttc" id="aclassxii_hashed_string_htm_a50f68022fa81098fd90fd1649267a5d2"><div class="ttname"><a href="../../d6/d0c/classxii_hashed_string.htm#a50f68022fa81098fd90fd1649267a5d2">xiiHashedString::GetString</a></div><div class="ttdeci">const xiiString &amp; GetString() const</div><div class="ttdoc">Gives access to the actual string data, so you can do all the typical (read-only) string operations o...</div><div class="ttdef"><b>Definition:</b> HashedString_inl.h:115</div></div>
-<div class="ttc" id="aclassxii_tag_htm"><div class="ttname"><a href="../../db/d3b/classxii_tag.htm">xiiTag</a></div><div class="ttdoc">The tag class stores the necessary lookup information for a single tag which can be used in conjuncti...</div><div class="ttdef"><b>Definition:</b> Tag.h:15</div></div>
+<div class="ttc" id="aclassxii_hashed_string_htm_a50f68022fa81098fd90fd1649267a5d2"><div class="ttname"><a href="../../d6/d0c/classxii_hashed_string.htm#a50f68022fa81098fd90fd1649267a5d2">xiiHashedString::GetString</a></div><div class="ttdeci">const xiiString &amp; GetString() const</div><div class="ttdoc">Gives access to the actual string data, so you can do all the typical (read-only) string operations o...</div><div class="ttdef"><b>Definition:</b> HashedString_inl.h:105</div></div>
+<div class="ttc" id="aclassxii_tag_htm"><div class="ttname"><a href="../../db/d3b/classxii_tag.htm">xiiTag</a></div><div class="ttdoc">The tag class stores the necessary lookup information for a single tag which can be used in conjuncti...</div><div class="ttdef"><b>Definition:</b> Tag.h:14</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.htm">home</a></li><li class="navelem"><a class="el" href="../../dir_1036706e55c22cab35bc1c58ee689f1d.htm">runner</a></li><li class="navelem"><a class="el" href="../../dir_629f8151d55d307162ff2d619fb1783d.htm">work</a></li><li class="navelem"><a class="el" href="../../dir_1ddc44fe1263a8c7935fa6130b7d9499.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_2c1b6808f12952f4c36e05ba7068379a.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_b5a1c4ecfca018ad24b729e213296d41.htm">Source</a></li><li class="navelem"><a class="el" href="../../dir_e321052006a51284e67389ab20037e7c.htm">Engine</a></li><li class="navelem"><a class="el" href="../../dir_be0c42c58b36f42c54ec54024ed4f6af.htm">Foundation</a></li><li class="navelem"><a class="el" href="../../dir_fd654f0525c8869fa0409c81d19e3265.htm">Types</a></li><li class="navelem"><a class="el" href="../../dir_013c87a4ce253332bc225fb61b1de856.htm">Implementation</a></li><li class="navelem"><b>Tag_inl.h</b></li>
-    <li class="footer">Generated on Sun Dec 10 2023 03:58:30 for XIIEngine by
+    <li class="footer">Generated on Thu Dec 21 2023 16:40:34 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

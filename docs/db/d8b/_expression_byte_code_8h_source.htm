@@ -273,44 +273,43 @@ $(document).ready(function(){initNavTree('db/d8b/_expression_byte_code_8h_source
 <div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;  ~<a class="code" href="../../d9/d56/classxii_expression_byte_code.htm">xiiExpressionByteCode</a>();</div>
 <div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160; </div>
 <div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;  <span class="keywordtype">bool</span> operator==(<span class="keyword">const</span> <a class="code" href="../../d9/d56/classxii_expression_byte_code.htm">xiiExpressionByteCode</a>&amp; other) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;  <span class="keywordtype">bool</span> operator!=(<span class="keyword">const</span> <a class="code" href="../../d9/d56/classxii_expression_byte_code.htm">xiiExpressionByteCode</a>&amp; other)<span class="keyword"> const </span>{ <span class="keywordflow">return</span> !(*<span class="keyword">this</span> == other); }</div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160; </div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;  <span class="keywordtype">void</span> Clear();</div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;  <span class="keywordtype">bool</span> IsEmpty()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_ByteCode.IsEmpty(); }</div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160; </div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;  <span class="keyword">const</span> StorageType* GetByteCode() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;  <span class="keyword">const</span> StorageType* GetByteCodeEnd() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160; </div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;  xiiUInt32                                      GetNumInstructions() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;  xiiUInt32                                      GetNumTempRegisters() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;  <a class="code" href="../../d0/d60/classxii_array_ptr.htm">xiiArrayPtr&lt;const xiiExpression::StreamDesc&gt;</a>   GetInputs() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;  <a class="code" href="../../d0/d60/classxii_array_ptr.htm">xiiArrayPtr&lt;const xiiExpression::StreamDesc&gt;</a>   GetOutputs() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;  <a class="code" href="../../d0/d60/classxii_array_ptr.htm">xiiArrayPtr&lt;const xiiExpression::FunctionDesc&gt;</a> GetFunctions() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160; </div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;  <span class="keyword">static</span> OpCode::Enum            GetOpCode(<span class="keyword">const</span> StorageType*&amp; ref_pByteCode);</div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;  <span class="keyword">static</span> xiiUInt32               GetRegisterIndex(<span class="keyword">const</span> StorageType*&amp; ref_pByteCode);</div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;  <span class="keyword">static</span> <a class="code" href="../../d5/d08/structxii_expression_1_1_register.htm">xiiExpression::Register</a> GetConstant(<span class="keyword">const</span> StorageType*&amp; ref_pByteCode);</div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;  <span class="keyword">static</span> xiiUInt32               GetFunctionIndex(<span class="keyword">const</span> StorageType*&amp; ref_pByteCode);</div>
-<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;  <span class="keyword">static</span> xiiUInt32               GetFunctionArgCount(<span class="keyword">const</span> StorageType*&amp; ref_pByteCode);</div>
-<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160; </div>
-<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;  <span class="keywordtype">void</span> Disassemble(<a class="code" href="../../d4/dbb/classxii_string_builder.htm">xiiStringBuilder</a>&amp; out_sDisassembly) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160; </div>
-<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;  <span class="keywordtype">void</span>      Save(<a class="code" href="../../d0/d18/classxii_stream_writer.htm">xiiStreamWriter</a>&amp; ref_stream) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;  <a class="code" href="../../dd/dad/structxii_result.htm">xiiResult</a> Load(<a class="code" href="../../d4/d5e/classxii_stream_reader.htm">xiiStreamReader</a>&amp; ref_stream);</div>
-<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160; </div>
-<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;  <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="../../da/d60/classxii_expression_compiler.htm">xiiExpressionCompiler</a>;</div>
-<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160; </div>
-<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;  <a class="code" href="../../dc/da4/classxii_dynamic_array.htm">xiiDynamicArray&lt;StorageType&gt;</a>                 m_ByteCode;</div>
-<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;  <a class="code" href="../../dc/da4/classxii_dynamic_array.htm">xiiDynamicArray&lt;xiiExpression::StreamDesc&gt;</a>   m_Inputs;</div>
-<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;  <a class="code" href="../../dc/da4/classxii_dynamic_array.htm">xiiDynamicArray&lt;xiiExpression::StreamDesc&gt;</a>   m_Outputs;</div>
-<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;  <a class="code" href="../../dc/da4/classxii_dynamic_array.htm">xiiDynamicArray&lt;xiiExpression::FunctionDesc&gt;</a> m_Functions;</div>
-<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160; </div>
-<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;  xiiUInt32 m_uiNumInstructions  = 0;</div>
-<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;  xiiUInt32 m_uiNumTempRegisters = 0;</div>
-<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;};</div>
-<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160; </div>
-<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;<span class="preprocessor">#include &lt;Foundation/CodeUtils/Expression/Implementation/ExpressionByteCode_inl.h&gt;</span></div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160; </div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;  <span class="keywordtype">void</span> Clear();</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;  <span class="keywordtype">bool</span> IsEmpty()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_ByteCode.IsEmpty(); }</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160; </div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;  <span class="keyword">const</span> StorageType* GetByteCode() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;  <span class="keyword">const</span> StorageType* GetByteCodeEnd() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160; </div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;  xiiUInt32                                      GetNumInstructions() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;  xiiUInt32                                      GetNumTempRegisters() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;  <a class="code" href="../../d0/d60/classxii_array_ptr.htm">xiiArrayPtr&lt;const xiiExpression::StreamDesc&gt;</a>   GetInputs() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;  <a class="code" href="../../d0/d60/classxii_array_ptr.htm">xiiArrayPtr&lt;const xiiExpression::StreamDesc&gt;</a>   GetOutputs() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;  <a class="code" href="../../d0/d60/classxii_array_ptr.htm">xiiArrayPtr&lt;const xiiExpression::FunctionDesc&gt;</a> GetFunctions() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160; </div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;  <span class="keyword">static</span> OpCode::Enum            GetOpCode(<span class="keyword">const</span> StorageType*&amp; ref_pByteCode);</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;  <span class="keyword">static</span> xiiUInt32               GetRegisterIndex(<span class="keyword">const</span> StorageType*&amp; ref_pByteCode);</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;  <span class="keyword">static</span> <a class="code" href="../../d5/d08/structxii_expression_1_1_register.htm">xiiExpression::Register</a> GetConstant(<span class="keyword">const</span> StorageType*&amp; ref_pByteCode);</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;  <span class="keyword">static</span> xiiUInt32               GetFunctionIndex(<span class="keyword">const</span> StorageType*&amp; ref_pByteCode);</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;  <span class="keyword">static</span> xiiUInt32               GetFunctionArgCount(<span class="keyword">const</span> StorageType*&amp; ref_pByteCode);</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160; </div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;  <span class="keywordtype">void</span> Disassemble(<a class="code" href="../../d4/dbb/classxii_string_builder.htm">xiiStringBuilder</a>&amp; out_sDisassembly) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160; </div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;  <span class="keywordtype">void</span>      Save(<a class="code" href="../../d0/d18/classxii_stream_writer.htm">xiiStreamWriter</a>&amp; ref_stream) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;  <a class="code" href="../../dd/dad/structxii_result.htm">xiiResult</a> Load(<a class="code" href="../../d4/d5e/classxii_stream_reader.htm">xiiStreamReader</a>&amp; ref_stream);</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160; </div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;  <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="../../da/d60/classxii_expression_compiler.htm">xiiExpressionCompiler</a>;</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160; </div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;  <a class="code" href="../../dc/da4/classxii_dynamic_array.htm">xiiDynamicArray&lt;StorageType&gt;</a>                 m_ByteCode;</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;  <a class="code" href="../../dc/da4/classxii_dynamic_array.htm">xiiDynamicArray&lt;xiiExpression::StreamDesc&gt;</a>   m_Inputs;</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;  <a class="code" href="../../dc/da4/classxii_dynamic_array.htm">xiiDynamicArray&lt;xiiExpression::StreamDesc&gt;</a>   m_Outputs;</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;  <a class="code" href="../../dc/da4/classxii_dynamic_array.htm">xiiDynamicArray&lt;xiiExpression::FunctionDesc&gt;</a> m_Functions;</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160; </div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;  xiiUInt32 m_uiNumInstructions  = 0;</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;  xiiUInt32 m_uiNumTempRegisters = 0;</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;};</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160; </div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;<span class="preprocessor">#include &lt;Foundation/CodeUtils/Expression/Implementation/ExpressionByteCode_inl.h&gt;</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclassxii_expression_byte_code_htm"><div class="ttname"><a href="../../d9/d56/classxii_expression_byte_code.htm">xiiExpressionByteCode</a></div><div class="ttdef"><b>Definition:</b> ExpressionByteCode.h:9</div></div>
@@ -327,7 +326,7 @@ $(document).ready(function(){initNavTree('db/d8b/_expression_byte_code_8h_source
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.htm">home</a></li><li class="navelem"><a class="el" href="../../dir_1036706e55c22cab35bc1c58ee689f1d.htm">runner</a></li><li class="navelem"><a class="el" href="../../dir_629f8151d55d307162ff2d619fb1783d.htm">work</a></li><li class="navelem"><a class="el" href="../../dir_1ddc44fe1263a8c7935fa6130b7d9499.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_2c1b6808f12952f4c36e05ba7068379a.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_b5a1c4ecfca018ad24b729e213296d41.htm">Source</a></li><li class="navelem"><a class="el" href="../../dir_e321052006a51284e67389ab20037e7c.htm">Engine</a></li><li class="navelem"><a class="el" href="../../dir_be0c42c58b36f42c54ec54024ed4f6af.htm">Foundation</a></li><li class="navelem"><a class="el" href="../../dir_a310e74f255299a0e9ba52ecb9387fcd.htm">CodeUtils</a></li><li class="navelem"><a class="el" href="../../dir_51e0e3172f0ee149d61456fae3821a25.htm">Expression</a></li><li class="navelem"><b>ExpressionByteCode.h</b></li>
-    <li class="footer">Generated on Sun Dec 10 2023 03:58:24 for XIIEngine by
+    <li class="footer">Generated on Thu Dec 21 2023 16:40:28 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

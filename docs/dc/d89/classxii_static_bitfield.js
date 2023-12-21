@@ -22,7 +22,6 @@ var classxii_static_bitfield =
     [ "SetBitRange", "dc/d89/classxii_static_bitfield.htm#a311ca558d446e73e892f3c2ea5fa66c1", null ],
     [ "SetBitValue", "dc/d89/classxii_static_bitfield.htm#ae7850ac181d7b0f0f831c6492422b633", null ],
     [ "SetValue", "dc/d89/classxii_static_bitfield.htm#a5d9a492a876bafd334821dd913514583", null ],
-    [ "operator!=", "dc/d89/classxii_static_bitfield.htm#acfc8958e696c8c2d2ed6c24be01b4a98", null ],
     [ "operator&", "dc/d89/classxii_static_bitfield.htm#a991579324e8e6f08f58ecf5f19a93fb4", null ],
     [ "operator==", "dc/d89/classxii_static_bitfield.htm#aab13bb6aac3bf930c03272676c5f40ef", null ],
     [ "operator^", "dc/d89/classxii_static_bitfield.htm#ac40881df4ad8c86f5b89c32fdda247fa", null ],

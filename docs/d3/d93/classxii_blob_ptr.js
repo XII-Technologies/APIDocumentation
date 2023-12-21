@@ -24,7 +24,6 @@ var classxii_blob_ptr =
     [ "GetSubArray", "d3/d93/classxii_blob_ptr.htm#af83454044faa22eaaa6977096aa6e726", null ],
     [ "IsEmpty", "d3/d93/classxii_blob_ptr.htm#a6bc168e82555fea14ac3852e994ab948", null ],
     [ "operator xiiBlobPtr< const T >", "d3/d93/classxii_blob_ptr.htm#ad5793db83d656af6a251f1e26aec19c9", null ],
-    [ "operator!=", "d3/d93/classxii_blob_ptr.htm#ad7880f67c4bc9dc37fd425192c7d6f78", null ],
     [ "operator=", "d3/d93/classxii_blob_ptr.htm#acc1aa3f21a92f5836c02149ad93a50c9", null ],
     [ "operator=", "d3/d93/classxii_blob_ptr.htm#a05b95e1c29d6cc29169a555402d1eb62", null ],
     [ "operator==", "d3/d93/classxii_blob_ptr.htm#ab3fc093be9edc88b641bdf2874853e57", null ],

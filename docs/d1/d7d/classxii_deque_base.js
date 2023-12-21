@@ -21,7 +21,6 @@ var classxii_deque_base =
     [ "Insert", "d1/d7d/classxii_deque_base.htm#a3ee30db6c34ee13f9a8ff5591fc790b9", null ],
     [ "IsEmpty", "d1/d7d/classxii_deque_base.htm#abb1a0ff4777547ffb34b0752f32d416d", null ],
     [ "LastIndexOf", "d1/d7d/classxii_deque_base.htm#a2420fecfa1148966e1f68194438a0bdd", null ],
-    [ "operator!=", "d1/d7d/classxii_deque_base.htm#a80c3428f1eeebb77c4aef8dfb8374184", null ],
     [ "operator=", "d1/d7d/classxii_deque_base.htm#ade2c9195ef003e1289f9a73883edbc01", null ],
     [ "operator=", "d1/d7d/classxii_deque_base.htm#ae8a3dcbb3ed255bcc3283d8a1d5e3e34", null ],
     [ "operator==", "d1/d7d/classxii_deque_base.htm#a293a0a14e5b3eca228d71c75562d40bb", null ],

@@ -12,8 +12,6 @@ var classxii_unique_ptr =
     [ "Borrow", "d9/d4a/classxii_unique_ptr.htm#aff6bd0f915964769fe2ec7a2a81fd2d5", null ],
     [ "Clear", "d9/d4a/classxii_unique_ptr.htm#ae6ab86a1b7163781f20f1edef10f108c", null ],
     [ "operator bool", "d9/d4a/classxii_unique_ptr.htm#a95d685772ae01d47d18419995292e170", null ],
-    [ "operator!=", "d9/d4a/classxii_unique_ptr.htm#a9452ff43090956adca6a99894c605b74", null ],
-    [ "operator!=", "d9/d4a/classxii_unique_ptr.htm#a8f4bd413b8e944bfa1970eb0050ac21e", null ],
     [ "operator*", "d9/d4a/classxii_unique_ptr.htm#a9d41879e0b29cc8097ae651b251ea20a", null ],
     [ "operator->", "d9/d4a/classxii_unique_ptr.htm#a730c723b6fd3688e3419deed65d74914", null ],
     [ "operator<", "d9/d4a/classxii_unique_ptr.htm#ac79b47fc3b67140f72c3cc4b2b1f2ec8", null ],

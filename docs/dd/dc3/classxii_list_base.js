@@ -18,7 +18,6 @@ var classxii_list_base =
     [ "Insert", "dd/dc3/classxii_list_base.htm#aa5897b325921d9f6e6ff97358d6986d3", null ],
     [ "Insert", "dd/dc3/classxii_list_base.htm#a054c74044b45f435ae01458c2bd3b666", null ],
     [ "IsEmpty", "dd/dc3/classxii_list_base.htm#a73a5ed04f67ab71c25567b978a1321cc", null ],
-    [ "operator!=", "dd/dc3/classxii_list_base.htm#aea33ef785fe32b8a31ae0d10e67df674", null ],
     [ "operator=", "dd/dc3/classxii_list_base.htm#ab87b1e463cdbf49799c73e58173bd4de", null ],
     [ "operator==", "dd/dc3/classxii_list_base.htm#ae9df9e731cc3fb924a2af580c74a82e2", null ],
     [ "PeekBack", "dd/dc3/classxii_list_base.htm#a61ca6641ff3119a1681b7e1908072802", null ],

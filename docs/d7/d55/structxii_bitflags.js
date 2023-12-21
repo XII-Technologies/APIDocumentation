@@ -13,8 +13,6 @@ var structxii_bitflags =
     [ "IsNoFlagSet", "d7/d55/structxii_bitflags.htm#acbea4545a3af1e378e1cbda899b677b7", null ],
     [ "IsSet", "d7/d55/structxii_bitflags.htm#af2c990725fd731e800eeb6a22945003f", null ],
     [ "IsStrictlyAnySet", "d7/d55/structxii_bitflags.htm#a1fc07745b1877a7125a163ce1ff4e3c2", null ],
-    [ "operator!=", "d7/d55/structxii_bitflags.htm#ade2eb29f6613dce74a2677f9667086b9", null ],
-    [ "operator!=", "d7/d55/structxii_bitflags.htm#aa0dacb40eb08a5d5eb5c429043db121b", null ],
     [ "operator&", "d7/d55/structxii_bitflags.htm#a533117388a6b4dd8726e9ec783abc055", null ],
     [ "operator&=", "d7/d55/structxii_bitflags.htm#a7f78220f31e05c3d49ff428dfd8c58df", null ],
     [ "operator=", "d7/d55/structxii_bitflags.htm#a41d865f7313a30be5b4102b1e3bb9b20", null ],

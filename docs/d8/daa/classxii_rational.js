@@ -8,7 +8,6 @@ var classxii_rational =
     [ "GetNumerator", "d8/daa/classxii_rational.htm#a8b03cbbb56ac8a6017452451787ea84a", null ],
     [ "IsIntegral", "d8/daa/classxii_rational.htm#ac9f59815eea93c0ae4211f95f3974683", null ],
     [ "IsValid", "d8/daa/classxii_rational.htm#a6aa13370ed9df9e078634dc2fc6aeb95", null ],
-    [ "operator!=", "d8/daa/classxii_rational.htm#ae7616189dd8930f587beb0c6a83c615f", null ],
     [ "operator==", "d8/daa/classxii_rational.htm#acc954e18022c4f0606f95f574675cb4d", null ],
     [ "ReduceIntegralFraction", "d8/daa/classxii_rational.htm#ae548aac037389052ab23ba117f146c54", null ],
     [ "XII_DECLARE_POD_TYPE", "d8/daa/classxii_rational.htm#a635dbffbf7646df6a0b090b9d150ea6e", null ],

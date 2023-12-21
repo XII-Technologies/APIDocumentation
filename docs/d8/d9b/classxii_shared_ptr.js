@@ -20,8 +20,6 @@ var classxii_shared_ptr =
     [ "operator bool", "d8/d9b/classxii_shared_ptr.htm#a408cff55733d4e1d431c8c1cb7bb7b8c", null ],
     [ "operator const T *", "d8/d9b/classxii_shared_ptr.htm#a502bd225820f5f5cec029cc63648e839", null ],
     [ "operator T*", "d8/d9b/classxii_shared_ptr.htm#a574ae2e5249ef8e9f35b32229cb72413", null ],
-    [ "operator!=", "d8/d9b/classxii_shared_ptr.htm#a7f57611249bf92f6de3bbb7031d658a2", null ],
-    [ "operator!=", "d8/d9b/classxii_shared_ptr.htm#a1d62b8cc11367d789cd8c478eff7d07d", null ],
     [ "operator*", "d8/d9b/classxii_shared_ptr.htm#a10fb5dbbdca3877ade323060bc5610d7", null ],
     [ "operator->", "d8/d9b/classxii_shared_ptr.htm#aecc0f49333d267fd0ece6e8a80d35b18", null ],
     [ "operator<", "d8/d9b/classxii_shared_ptr.htm#a6c8e8b39342525a885a351ac9c8292c8", null ],
