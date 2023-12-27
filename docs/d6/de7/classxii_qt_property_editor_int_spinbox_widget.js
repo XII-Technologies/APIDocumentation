@@ -1,6 +1,7 @@
 var classxii_qt_property_editor_int_spinbox_widget =
 [
     [ "xiiQtPropertyEditorIntSpinboxWidget", "d6/de7/classxii_qt_property_editor_int_spinbox_widget.htm#a08bc2b187d3593d0b636d20572b205fc", null ],
+    [ "xiiQtPropertyEditorIntSpinboxWidget", "d6/de7/classxii_qt_property_editor_int_spinbox_widget.htm#ada90219a84bda34803c94800304fa753", null ],
     [ "~xiiQtPropertyEditorIntSpinboxWidget", "d6/de7/classxii_qt_property_editor_int_spinbox_widget.htm#aca78c0ae38b2ecfaeebebdbb3b86e082", null ],
     [ "InternalSetValue", "d6/de7/classxii_qt_property_editor_int_spinbox_widget.htm#a04c37590ac65345ddaa1d52d76dd8f69", null ],
     [ "OnInit", "d6/de7/classxii_qt_property_editor_int_spinbox_widget.htm#a195592f2008a6b11d998875aa606acdb", null ],

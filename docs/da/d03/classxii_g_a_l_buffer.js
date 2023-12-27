@@ -4,7 +4,7 @@ var classxii_g_a_l_buffer =
     [ "~xiiGALBuffer", "da/d03/classxii_g_a_l_buffer.htm#aeedb5c9abc3d7a8b5c5a8384a34c5040", null ],
     [ "DeInitPlatform", "da/d03/classxii_g_a_l_buffer.htm#a54c251d1402bb3505f9b391c77b4e2fd", null ],
     [ "FlushMappedRange", "da/d03/classxii_g_a_l_buffer.htm#a3f80adde59a6beb4ea0d26b914034d7e", null ],
-    [ "GetDefaultView", "da/d03/classxii_g_a_l_buffer.htm#a92bcb7894de5e64c3df81db39e6464e3", null ],
+    [ "GetDefaultView", "da/d03/classxii_g_a_l_buffer.htm#a24997f33d8061fe9d618c8d809783586", null ],
     [ "GetMemoryProperties", "da/d03/classxii_g_a_l_buffer.htm#a1e4ebe46466708c2045863a89776b2c9", null ],
     [ "GetSparseProperties", "da/d03/classxii_g_a_l_buffer.htm#ac4ab27795b6de355a7d0e9fe73c4f19c", null ],
     [ "GetState", "da/d03/classxii_g_a_l_buffer.htm#a8f859297a1e7c55a69231bfb0687c01d", null ],

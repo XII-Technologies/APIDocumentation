@@ -89,47 +89,49 @@ $(document).ready(function(){initNavTree('de/dd5/_render_target_activator_compon
 <div class="contents">
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;Core/World/World.h&gt;</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;GraphicsCore/Components/RenderComponent.h&gt;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;GraphicsCore/Textures/RenderToTexture2DResource.h&gt;</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">struct </span><a class="code" href="../../d3/d47/structxii_msg_extract_render_data.htm">xiiMsgExtractRenderData</a>;</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;GraphicsCore/GraphicsCoreDLL.h&gt;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;Core/World/World.h&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;GraphicsCore/Components/RenderComponent.h&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;GraphicsCore/Textures/RenderToTexture2DResource.h&gt;</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">using</span> <a class="code" href="../../d4/d5d/classxii_component_manager.htm">xiiRenderTargetComponentManager</a> = <a class="code" href="../../d4/d5d/classxii_component_manager.htm">xiiComponentManager&lt;class xiiRenderTargetActivatorComponent, xiiBlockStorageType::Compact&gt;</a>;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">struct </span><a class="code" href="../../d3/d47/structxii_msg_extract_render_data.htm">xiiMsgExtractRenderData</a>;</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
-<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="../../db/d22/classxii_render_target_activator_component.htm">   11</a></span>&#160;<span class="keyword">class </span>XII_GRAPHICSCORE_DLL <a class="code" href="../../db/d22/classxii_render_target_activator_component.htm">xiiRenderTargetActivatorComponent</a> : <span class="keyword">public</span> <a class="code" href="../../d2/d2b/classxii_render_component.htm">xiiRenderComponent</a></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;{</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;  XII_DECLARE_COMPONENT_TYPE(<a class="code" href="../../db/d22/classxii_render_target_activator_component.htm">xiiRenderTargetActivatorComponent</a>, <a class="code" href="../../d2/d2b/classxii_render_component.htm">xiiRenderComponent</a>, <a class="code" href="../../d4/d5d/classxii_component_manager.htm">xiiRenderTargetComponentManager</a>);</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;  <span class="comment">// xiiComponent</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="../../db/d60/classxii_component.htm#ad1b0e95e5c5c2c9ee784f54ce60b665d">SerializeComponent</a>(<a class="code" href="../../de/d8c/classxii_world_writer.htm">xiiWorldWriter</a>&amp; inout_stream) <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="../../db/d60/classxii_component.htm#acef0fa311a3f65a7f0f815923e80f8e2">DeserializeComponent</a>(<a class="code" href="../../df/df8/classxii_world_reader.htm">xiiWorldReader</a>&amp; inout_stream) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  <span class="comment">// xiiRenderComponent</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  <span class="keyword">virtual</span> <a class="code" href="../../dd/dad/structxii_result.htm">xiiResult</a> <a class="code" href="../../d2/d2b/classxii_render_component.htm#a126e45ea2fb14aa42bcb7f5bb386ccf5">GetLocalBounds</a>(<a class="code" href="../../d3/d90/classxii_bounding_box_sphere_template.htm">xiiBoundingBoxSphere</a>&amp; ref_bounds, <span class="keywordtype">bool</span>&amp; ref_bAlwaysVisible, <a class="code" href="../../dc/dc8/structxii_msg_update_local_bounds.htm">xiiMsgUpdateLocalBounds</a>&amp; ref_msg) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  <span class="comment">// xiiRenderTargetActivatorComponent</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  <a class="code" href="../../db/d22/classxii_render_target_activator_component.htm">xiiRenderTargetActivatorComponent</a>();</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  ~<a class="code" href="../../db/d22/classxii_render_target_activator_component.htm">xiiRenderTargetActivatorComponent</a>();</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  <span class="keywordtype">void</span>        SetRenderTargetFile(<span class="keyword">const</span> <span class="keywordtype">char</span>* szFile); <span class="comment">// [ property ]</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">char</span>* GetRenderTargetFile() <span class="keyword">const</span>;             <span class="comment">// [ property ]</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <span class="keywordtype">void</span>                               SetRenderTarget(<span class="keyword">const</span> <a class="code" href="../../d6/d16/classxii_typed_resource_handle.htm">xiiRenderToTexture2DResourceHandle</a>&amp; hResource);</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <a class="code" href="../../d6/d16/classxii_typed_resource_handle.htm">xiiRenderToTexture2DResourceHandle</a> GetRenderTarget()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_hRenderTarget; }</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <span class="keywordtype">void</span> OnMsgExtractRenderData(<a class="code" href="../../d3/d47/structxii_msg_extract_render_data.htm">xiiMsgExtractRenderData</a>&amp; msg) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <a class="code" href="../../d6/d16/classxii_typed_resource_handle.htm">xiiRenderToTexture2DResourceHandle</a> m_hRenderTarget;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;};</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">using</span> <a class="code" href="../../d4/d5d/classxii_component_manager.htm">xiiRenderTargetComponentManager</a> = <a class="code" href="../../d4/d5d/classxii_component_manager.htm">xiiComponentManager&lt;class xiiRenderTargetActivatorComponent, xiiBlockStorageType::Compact&gt;</a>;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="../../db/d22/classxii_render_target_activator_component.htm">   13</a></span>&#160;<span class="keyword">class </span>XII_GRAPHICSCORE_DLL <a class="code" href="../../db/d22/classxii_render_target_activator_component.htm">xiiRenderTargetActivatorComponent</a> : <span class="keyword">public</span> <a class="code" href="../../d2/d2b/classxii_render_component.htm">xiiRenderComponent</a></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;{</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;  XII_DECLARE_COMPONENT_TYPE(<a class="code" href="../../db/d22/classxii_render_target_activator_component.htm">xiiRenderTargetActivatorComponent</a>, <a class="code" href="../../d2/d2b/classxii_render_component.htm">xiiRenderComponent</a>, <a class="code" href="../../d4/d5d/classxii_component_manager.htm">xiiRenderTargetComponentManager</a>);</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;  <span class="comment">// xiiComponent</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="../../db/d60/classxii_component.htm#ad1b0e95e5c5c2c9ee784f54ce60b665d">SerializeComponent</a>(<a class="code" href="../../de/d8c/classxii_world_writer.htm">xiiWorldWriter</a>&amp; inout_stream) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="../../db/d60/classxii_component.htm#acef0fa311a3f65a7f0f815923e80f8e2">DeserializeComponent</a>(<a class="code" href="../../df/df8/classxii_world_reader.htm">xiiWorldReader</a>&amp; inout_stream) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  <span class="comment">// xiiRenderComponent</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  <span class="keyword">virtual</span> <a class="code" href="../../dd/dad/structxii_result.htm">xiiResult</a> <a class="code" href="../../d2/d2b/classxii_render_component.htm#a126e45ea2fb14aa42bcb7f5bb386ccf5">GetLocalBounds</a>(<a class="code" href="../../d3/d90/classxii_bounding_box_sphere_template.htm">xiiBoundingBoxSphere</a>&amp; ref_bounds, <span class="keywordtype">bool</span>&amp; ref_bAlwaysVisible, <a class="code" href="../../dc/dc8/structxii_msg_update_local_bounds.htm">xiiMsgUpdateLocalBounds</a>&amp; ref_msg) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  <span class="comment">// xiiRenderTargetActivatorComponent</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  <a class="code" href="../../db/d22/classxii_render_target_activator_component.htm">xiiRenderTargetActivatorComponent</a>();</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  ~<a class="code" href="../../db/d22/classxii_render_target_activator_component.htm">xiiRenderTargetActivatorComponent</a>();</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <span class="keywordtype">void</span>        SetRenderTargetFile(<span class="keyword">const</span> <span class="keywordtype">char</span>* szFile); <span class="comment">// [ property ]</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">char</span>* GetRenderTargetFile() <span class="keyword">const</span>;             <span class="comment">// [ property ]</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <span class="keywordtype">void</span>                               SetRenderTarget(<span class="keyword">const</span> <a class="code" href="../../d6/d16/classxii_typed_resource_handle.htm">xiiRenderToTexture2DResourceHandle</a>&amp; hResource);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <a class="code" href="../../d6/d16/classxii_typed_resource_handle.htm">xiiRenderToTexture2DResourceHandle</a> GetRenderTarget()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_hRenderTarget; }</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <span class="keywordtype">void</span> OnMsgExtractRenderData(<a class="code" href="../../d3/d47/structxii_msg_extract_render_data.htm">xiiMsgExtractRenderData</a>&amp; msg) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <a class="code" href="../../d6/d16/classxii_typed_resource_handle.htm">xiiRenderToTexture2DResourceHandle</a> m_hRenderTarget;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;};</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclassxii_component_htm_acef0fa311a3f65a7f0f815923e80f8e2"><div class="ttname"><a href="../../db/d60/classxii_component.htm#acef0fa311a3f65a7f0f815923e80f8e2">xiiComponent::DeserializeComponent</a></div><div class="ttdeci">virtual void DeserializeComponent(xiiWorldReader &amp;ref_stream)</div><div class="ttdoc">Override this to load the current state of the component from the given stream.</div><div class="ttdef"><b>Definition:</b> Component.cpp:58</div></div>
@@ -142,14 +144,14 @@ $(document).ready(function(){initNavTree('de/dd5/_render_target_activator_compon
 <div class="ttc" id="aclassxii_typed_resource_handle_htm"><div class="ttname"><a href="../../d6/d16/classxii_typed_resource_handle.htm">xiiTypedResourceHandle&lt; class xiiRenderToTexture2DResource &gt;</a></div></div>
 <div class="ttc" id="astructxii_result_htm"><div class="ttname"><a href="../../dd/dad/structxii_result.htm">xiiResult</a></div><div class="ttdoc">Default enum for returning failure or success, instead of using a bool.</div><div class="ttdef"><b>Definition:</b> Types.h:54</div></div>
 <div class="ttc" id="aclassxii_component_manager_htm"><div class="ttname"><a href="../../d4/d5d/classxii_component_manager.htm">xiiComponentManager</a></div><div class="ttdef"><b>Definition:</b> ComponentManager.h:87</div></div>
-<div class="ttc" id="aclassxii_render_component_htm"><div class="ttname"><a href="../../d2/d2b/classxii_render_component.htm">xiiRenderComponent</a></div><div class="ttdef"><b>Definition:</b> RenderComponent.h:7</div></div>
-<div class="ttc" id="aclassxii_render_target_activator_component_htm"><div class="ttname"><a href="../../db/d22/classxii_render_target_activator_component.htm">xiiRenderTargetActivatorComponent</a></div><div class="ttdef"><b>Definition:</b> RenderTargetActivatorComponent.h:11</div></div>
+<div class="ttc" id="aclassxii_render_component_htm"><div class="ttname"><a href="../../d2/d2b/classxii_render_component.htm">xiiRenderComponent</a></div><div class="ttdef"><b>Definition:</b> RenderComponent.h:8</div></div>
+<div class="ttc" id="aclassxii_render_target_activator_component_htm"><div class="ttname"><a href="../../db/d22/classxii_render_target_activator_component.htm">xiiRenderTargetActivatorComponent</a></div><div class="ttdef"><b>Definition:</b> RenderTargetActivatorComponent.h:13</div></div>
 <div class="ttc" id="aclassxii_component_htm_ad1b0e95e5c5c2c9ee784f54ce60b665d"><div class="ttname"><a href="../../db/d60/classxii_component.htm#ad1b0e95e5c5c2c9ee784f54ce60b665d">xiiComponent::SerializeComponent</a></div><div class="ttdeci">virtual void SerializeComponent(xiiWorldWriter &amp;ref_stream) const</div><div class="ttdoc">Override this to save the current state of the component to the given stream.</div><div class="ttdef"><b>Definition:</b> Component.cpp:54</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.htm">home</a></li><li class="navelem"><a class="el" href="../../dir_1036706e55c22cab35bc1c58ee689f1d.htm">runner</a></li><li class="navelem"><a class="el" href="../../dir_629f8151d55d307162ff2d619fb1783d.htm">work</a></li><li class="navelem"><a class="el" href="../../dir_1ddc44fe1263a8c7935fa6130b7d9499.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_2c1b6808f12952f4c36e05ba7068379a.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_b5a1c4ecfca018ad24b729e213296d41.htm">Source</a></li><li class="navelem"><a class="el" href="../../dir_e321052006a51284e67389ab20037e7c.htm">Engine</a></li><li class="navelem"><a class="el" href="../../dir_d1b456933e20132afd1d01c7da962f40.htm">GraphicsCore</a></li><li class="navelem"><a class="el" href="../../dir_7a185704c7ec80516af438d594c68393.htm">Components</a></li><li class="navelem"><b>RenderTargetActivatorComponent.h</b></li>
-    <li class="footer">Generated on Thu Dec 21 2023 16:40:34 for XIIEngine by
+    <li class="footer">Generated on Wed Dec 27 2023 06:00:47 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

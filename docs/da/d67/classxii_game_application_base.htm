@@ -96,11 +96,12 @@ Inheritance diagram for xiiGameApplicationBase:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../dc/d6d/classxii_game_application_base__inherit__graph.png" border="0" usemap="#xii_game_application_base_inherit__map" alt="Inheritance graph"/></div>
 <map name="xii_game_application_base_inherit__map" id="xii_game_application_base_inherit__map">
-<area shape="rect" title=" " alt="" coords="94,80,277,107"/>
-<area shape="rect" href="../../d1/ded/classxii_game_application.htm" title="The base class for all typical game applications made with xiiEngine." alt="" coords="110,155,261,181"/>
-<area shape="rect" href="../../dd/d2b/classxii_application.htm" title="Base class to be used by applications based on XII." alt="" coords="130,5,241,32"/>
-<area shape="rect" href="../../d7/d9e/classxii_player_application.htm" title=" " alt="" coords="5,229,157,256"/>
-<area shape="rect" href="../../d1/df8/classxii_shader_compiler_application.htm" title=" " alt="" coords="182,229,397,256"/>
+<area shape="rect" title=" " alt="" coords="259,80,441,107"/>
+<area shape="rect" href="../../d1/ded/classxii_game_application.htm" title="The base class for all typical game applications made with xiiEngine." alt="" coords="275,155,425,181"/>
+<area shape="rect" href="../../dd/d2b/classxii_application.htm" title="Base class to be used by applications based on XII." alt="" coords="295,5,405,32"/>
+<area shape="rect" href="../../d6/d7b/classxii_engine_process_game_application.htm" title=" " alt="" coords="5,229,249,256"/>
+<area shape="rect" href="../../d7/d9e/classxii_player_application.htm" title=" " alt="" coords="274,229,426,256"/>
+<area shape="rect" href="../../d1/df8/classxii_shader_compiler_application.htm" title=" " alt="" coords="451,229,665,256"/>
 </map>
 <center><span class="legend">[<a target="top" href="../../graph_legend.htm">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -512,6 +513,8 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_bWasQuitRequested</
 <p>Allows to override whether a game state is created and activated at application startup. </p>
 <p>The default implementation just calls <a class="el" href="../../da/d67/classxii_game_application_base.htm#a3c4dfbd5608c87db224e8349c16611c3" title="Creates and activates the game state for this application.">ActivateGameState()</a>, but applications that run inside the editor override this to do nothing, as they only want the game state to become active during simulation, not during editing. </p>
 
+<p>Reimplemented in <a class="el" href="../../d6/d7b/classxii_engine_process_game_application.htm#a0631cfa883e728a0880ca7d0ecd7bb8d">xiiEngineProcessGameApplication</a>.</p>
+
 </div>
 </div>
 <a id="a0bde97526b84645c19df8a646484d6c3"></a>
@@ -542,7 +545,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_bWasQuitRequested</
 
 <p>Reimplemented from <a class="el" href="../../dd/d2b/classxii_application.htm#a5d424fee5b31f4a58bb0cf255317b0a1">xiiApplication</a>.</p>
 
-<p>Reimplemented in <a class="el" href="../../d1/df8/classxii_shader_compiler_application.htm#a3d2ece92d2460063bcfc7570cace585c">xiiShaderCompilerApplication</a>, and <a class="el" href="../../d7/d9e/classxii_player_application.htm#a6d1e1bf4745189e6aad7160783b3f02a">xiiPlayerApplication</a>.</p>
+<p>Reimplemented in <a class="el" href="../../d6/d7b/classxii_engine_process_game_application.htm#a8c3697d9e55f46cc8959054500fed196">xiiEngineProcessGameApplication</a>, <a class="el" href="../../d1/df8/classxii_shader_compiler_application.htm#a3d2ece92d2460063bcfc7570cace585c">xiiShaderCompilerApplication</a>, and <a class="el" href="../../d7/d9e/classxii_player_application.htm#a6d1e1bf4745189e6aad7160783b3f02a">xiiPlayerApplication</a>.</p>
 
 </div>
 </div>
@@ -574,6 +577,8 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_bWasQuitRequested</
 
 <p>Reimplemented from <a class="el" href="../../dd/d2b/classxii_application.htm#a5de078f92df4d64f9c2b106f670351e0">xiiApplication</a>.</p>
 
+<p>Reimplemented in <a class="el" href="../../d6/d7b/classxii_engine_process_game_application.htm#a4303d84a5403b5e4fa4b1831819cc692">xiiEngineProcessGameApplication</a>.</p>
+
 </div>
 </div>
 <a id="aa116aac9999ce19dcdbd01b816203d6f"></a>
@@ -604,7 +609,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_bWasQuitRequested</
 
 <p>Reimplemented from <a class="el" href="../../dd/d2b/classxii_application.htm#a129d221fbc4cee48a415cd2c77437e17">xiiApplication</a>.</p>
 
-<p>Reimplemented in <a class="el" href="../../d1/df8/classxii_shader_compiler_application.htm#a6977bbc9dc019425bcd5e689c3e6ee25">xiiShaderCompilerApplication</a>, and <a class="el" href="../../d7/d9e/classxii_player_application.htm#ab8852b043c8bcf61b4823d234c04426a">xiiPlayerApplication</a>.</p>
+<p>Reimplemented in <a class="el" href="../../d6/d7b/classxii_engine_process_game_application.htm#a3d1ca6f4037d69ec19872e580b96337b">xiiEngineProcessGameApplication</a>, <a class="el" href="../../d1/df8/classxii_shader_compiler_application.htm#a6977bbc9dc019425bcd5e689c3e6ee25">xiiShaderCompilerApplication</a>, and <a class="el" href="../../d7/d9e/classxii_player_application.htm#ab8852b043c8bcf61b4823d234c04426a">xiiPlayerApplication</a>.</p>
 
 </div>
 </div>
@@ -735,7 +740,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_bWasQuitRequested</
 <p>Returns the target of the 'project' special data directory. </p>
 <p>The return value of this function will be passed into <a class="el" href="../../d7/d0a/classxii_file_system.htm#a8e6b9c492ba466750205dd9500e1ee35" title="Special directories are used when mounting data directories as basic references.">xiiFileSystem::SetSpecialDirectory</a>. Afterwards, any path starting with the special directory marker ("&gt;project/") will point into this directory. </p>
 
-<p>Implemented in <a class="el" href="../../d1/ded/classxii_game_application.htm#a6fb468add7c67454696a1506484f6666">xiiGameApplication</a>.</p>
+<p>Implemented in <a class="el" href="../../d6/d7b/classxii_engine_process_game_application.htm#a02f666381ff6e8142f43c408bbaaf4bf">xiiEngineProcessGameApplication</a>, and <a class="el" href="../../d1/ded/classxii_game_application.htm#a6fb468add7c67454696a1506484f6666">xiiGameApplication</a>.</p>
 
 </div>
 </div>
@@ -844,7 +849,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_bWasQuitRequested</
 
 <p>Implements <a class="el" href="../../dd/d2b/classxii_application.htm#add6d74803256b335b6765297248775f6">xiiApplication</a>.</p>
 
-<p>Reimplemented in <a class="el" href="../../d1/df8/classxii_shader_compiler_application.htm#aa7c639599102ce6b9a42ef50fb537696">xiiShaderCompilerApplication</a>.</p>
+<p>Reimplemented in <a class="el" href="../../d6/d7b/classxii_engine_process_game_application.htm#ae265cb05e909230621890520f8a9e7f3">xiiEngineProcessGameApplication</a>, and <a class="el" href="../../d1/df8/classxii_shader_compiler_application.htm#aa7c639599102ce6b9a42ef50fb537696">xiiShaderCompilerApplication</a>.</p>
 
 </div>
 </div>
@@ -900,7 +905,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_bWasQuitRequested</
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../da/d67/classxii_game_application_base.htm">xiiGameApplicationBase</a></li>
-    <li class="footer">Generated on Thu Dec 21 2023 16:40:39 for XIIEngine by
+    <li class="footer">Generated on Wed Dec 27 2023 06:00:53 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

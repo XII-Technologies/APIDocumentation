@@ -112,9 +112,9 @@ Inheritance diagram for xiiGALBuffer:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a92bcb7894de5e64c3df81db39e6464e3"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../df/ddf/classxii_g_a_l_buffer_view_handle.htm">xiiGALBufferViewHandle</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d03/classxii_g_a_l_buffer.htm#a92bcb7894de5e64c3df81db39e6464e3">GetDefaultView</a> (<a class="el" href="../../de/dfd/structxii_enum.htm">xiiEnum</a>&lt; <a class="el" href="../../d1/d7d/structxii_g_a_l_buffer_view_type.htm">xiiGALBufferViewType</a> &gt; viewType)=0</td></tr>
-<tr class="memdesc:a92bcb7894de5e64c3df81db39e6464e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">This returns the handle of the default view.  <a href="../../da/d03/classxii_g_a_l_buffer.htm#a92bcb7894de5e64c3df81db39e6464e3">More...</a><br /></td></tr>
-<tr class="separator:a92bcb7894de5e64c3df81db39e6464e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24997f33d8061fe9d618c8d809783586"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/ddf/classxii_g_a_l_buffer_view_handle.htm">xiiGALBufferViewHandle</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d03/classxii_g_a_l_buffer.htm#a24997f33d8061fe9d618c8d809783586">GetDefaultView</a> (<a class="el" href="../../de/dfd/structxii_enum.htm">xiiEnum</a>&lt; <a class="el" href="../../d1/d7d/structxii_g_a_l_buffer_view_type.htm">xiiGALBufferViewType</a> &gt; viewType)</td></tr>
+<tr class="memdesc:a24997f33d8061fe9d618c8d809783586"><td class="mdescLeft">&#160;</td><td class="mdescRight">This returns the handle of the default view.  <a href="../../da/d03/classxii_g_a_l_buffer.htm#a24997f33d8061fe9d618c8d809783586">More...</a><br /></td></tr>
+<tr class="separator:a24997f33d8061fe9d618c8d809783586"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae482b6cdeaa34795c0d1e9e9eecabf78"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d03/classxii_g_a_l_buffer.htm#ae482b6cdeaa34795c0d1e9e9eecabf78">SetState</a> (<a class="el" href="../../d7/d55/structxii_bitflags.htm">xiiBitflags</a>&lt; <a class="el" href="../../d6/dec/structxii_g_a_l_resource_state_flags.htm">xiiGALResourceStateFlags</a> &gt; stateFlags)=0</td></tr>
 <tr class="memdesc:ae482b6cdeaa34795c0d1e9e9eecabf78"><td class="mdescLeft">&#160;</td><td class="mdescRight">This sets the buffer usage state.  <a href="../../da/d03/classxii_g_a_l_buffer.htm#ae482b6cdeaa34795c0d1e9e9eecabf78">More...</a><br /></td></tr>
 <tr class="separator:ae482b6cdeaa34795c0d1e9e9eecabf78"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -220,28 +220,20 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="a92bcb7894de5e64c3df81db39e6464e3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a92bcb7894de5e64c3df81db39e6464e3">&#9670;&nbsp;</a></span>GetDefaultView()</h2>
+<a id="a24997f33d8061fe9d618c8d809783586"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24997f33d8061fe9d618c8d809783586">&#9670;&nbsp;</a></span>GetDefaultView()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="../../df/ddf/classxii_g_a_l_buffer_view_handle.htm">xiiGALBufferViewHandle</a> xiiGALBuffer::GetDefaultView </td>
+          <td class="memname">XII_ALWAYS_INLINE <a class="el" href="../../df/ddf/classxii_g_a_l_buffer_view_handle.htm">xiiGALBufferViewHandle</a> xiiGALBuffer::GetDefaultView </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="../../de/dfd/structxii_enum.htm">xiiEnum</a>&lt; <a class="el" href="../../d1/d7d/structxii_g_a_l_buffer_view_type.htm">xiiGALBufferViewType</a> &gt;&#160;</td>
           <td class="paramname"><em>viewType</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>This returns the handle of the default view. </p>
@@ -254,8 +246,6 @@ Additional Inherited Members</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>The handle to the buffer view.</dd></dl>
 <dl class="section remark"><dt>Remarks</dt><dd>Default views are only created for structured and raw buffers. As for formatted buffers the view format is unknown at buffer initialization time, no default views are created.</dd></dl>
 <dl class="section note"><dt>Note</dt><dd>The function does not increase the reference counter for the returned interface, so ReleaseRef() must <em>NOT</em> be called. </dd></dl>
-
-<p>Implemented in <a class="el" href="../../d2/da9/classxii_g_a_l_buffer_d3_d12.htm#acd6978ee055146290f48cadd34ad50ed">xiiGALBufferD3D12</a>, <a class="el" href="../../dc/db5/classxii_g_a_l_buffer_null.htm#a05d9f1900681250aa666cc715387599a">xiiGALBufferNull</a>, and <a class="el" href="../../d4/d0b/classxii_g_a_l_buffer_vulkan.htm#ac17d55dc4a107adcbe88be1172b2975e">xiiGALBufferVulkan</a>.</p>
 
 </div>
 </div>
@@ -372,6 +362,7 @@ Additional Inherited Members</h2></td></tr>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>/home/runner/work/XII/XII/Source/Engine/GraphicsFoundation/Resources/<a class="el" href="../../d7/d1b/_buffer_8h_source.htm">Buffer.h</a></li>
 <li>/home/runner/work/XII/XII/Source/Engine/GraphicsFoundation/Resources/Implementation/Buffer.cpp</li>
+<li>/home/runner/work/XII/XII/Source/Engine/GraphicsFoundation/Resources/Implementation/<a class="el" href="../../d0/d83/_buffer__inl_8h_source.htm">Buffer_inl.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -379,7 +370,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../da/d03/classxii_g_a_l_buffer.htm">xiiGALBuffer</a></li>
-    <li class="footer">Generated on Thu Dec 21 2023 16:40:38 for XIIEngine by
+    <li class="footer">Generated on Wed Dec 27 2023 06:00:52 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

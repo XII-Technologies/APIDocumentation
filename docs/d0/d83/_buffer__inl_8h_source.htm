@@ -87,13 +87,29 @@ $(document).ready(function(){initNavTree('d0/d83/_buffer__inl_8h_source.htm','..
 <div class="title">Buffer_inl.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"></div><!-- fragment --></div><!-- contents -->
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00002"></a><span class="lineno"><a class="line" href="../../da/d03/classxii_g_a_l_buffer.htm#a24997f33d8061fe9d618c8d809783586">    2</a></span>&#160;XII_ALWAYS_INLINE <a class="code" href="../../df/ddf/classxii_g_a_l_buffer_view_handle.htm">xiiGALBufferViewHandle</a> <a class="code" href="../../da/d03/classxii_g_a_l_buffer.htm#a24997f33d8061fe9d618c8d809783586">xiiGALBuffer::GetDefaultView</a>(<a class="code" href="../../de/dfd/structxii_enum.htm">xiiEnum&lt;xiiGALBufferViewType&gt;</a> viewType)</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;{</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;  <span class="keywordflow">switch</span> (viewType)</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;  {</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="../../d1/d7d/structxii_g_a_l_buffer_view_type.htm#a7a446994bcbd972e282b16b300306dd6ae743aa896bf3443547d630c80ab01b0f">xiiGALBufferViewType::ShaderResource</a>:</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;      <span class="keywordflow">return</span> m_hDefaultBufferView;</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    <span class="keywordflow">default</span>:</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="../../df/ddf/classxii_g_a_l_buffer_view_handle.htm">xiiGALBufferViewHandle</a>();</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;  }</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;}</div>
+</div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
+<div class="ttc" id="astructxii_enum_htm"><div class="ttname"><a href="../../de/dfd/structxii_enum.htm">xiiEnum&lt; xiiGALBufferViewType &gt;</a></div></div>
+<div class="ttc" id="astructxii_g_a_l_buffer_view_type_htm_a7a446994bcbd972e282b16b300306dd6ae743aa896bf3443547d630c80ab01b0f"><div class="ttname"><a href="../../d1/d7d/structxii_g_a_l_buffer_view_type.htm#a7a446994bcbd972e282b16b300306dd6ae743aa896bf3443547d630c80ab01b0f">xiiGALBufferViewType::ShaderResource</a></div><div class="ttdeci">@ ShaderResource</div><div class="ttdoc">A buffer view will define a shader resource view that will be used as the source for the shader read ...</div><div class="ttdef"><b>Definition:</b> GraphicsTypes.h:434</div></div>
+<div class="ttc" id="aclassxii_g_a_l_buffer_htm_a24997f33d8061fe9d618c8d809783586"><div class="ttname"><a href="../../da/d03/classxii_g_a_l_buffer.htm#a24997f33d8061fe9d618c8d809783586">xiiGALBuffer::GetDefaultView</a></div><div class="ttdeci">xiiGALBufferViewHandle GetDefaultView(xiiEnum&lt; xiiGALBufferViewType &gt; viewType)</div><div class="ttdoc">This returns the handle of the default view.</div><div class="ttdef"><b>Definition:</b> Buffer_inl.h:2</div></div>
+<div class="ttc" id="aclassxii_g_a_l_buffer_view_handle_htm"><div class="ttname"><a href="../../df/ddf/classxii_g_a_l_buffer_view_handle.htm">xiiGALBufferViewHandle</a></div><div class="ttdef"><b>Definition:</b> GraphicsTypes.h:1588</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.htm">home</a></li><li class="navelem"><a class="el" href="../../dir_1036706e55c22cab35bc1c58ee689f1d.htm">runner</a></li><li class="navelem"><a class="el" href="../../dir_629f8151d55d307162ff2d619fb1783d.htm">work</a></li><li class="navelem"><a class="el" href="../../dir_1ddc44fe1263a8c7935fa6130b7d9499.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_2c1b6808f12952f4c36e05ba7068379a.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_b5a1c4ecfca018ad24b729e213296d41.htm">Source</a></li><li class="navelem"><a class="el" href="../../dir_e321052006a51284e67389ab20037e7c.htm">Engine</a></li><li class="navelem"><a class="el" href="../../dir_60f548c54f5a79fe3a3b3b88ff8146f5.htm">GraphicsFoundation</a></li><li class="navelem"><a class="el" href="../../dir_f974d899601811362b57092dd8d00a65.htm">Resources</a></li><li class="navelem"><a class="el" href="../../dir_fa3e08f0110f2c18e098316112a60f71.htm">Implementation</a></li><li class="navelem"><b>Buffer_inl.h</b></li>
-    <li class="footer">Generated on Thu Dec 21 2023 16:40:35 for XIIEngine by
+    <li class="footer">Generated on Wed Dec 27 2023 06:00:48 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

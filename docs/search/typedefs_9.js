@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['xii_5fcharacter_5ffilter_17901',['XII_CHARACTER_FILTER',['../df/d65/classxii_string_utils.htm#af474cd805cbd076c00d508adacd057bd',1,'xiiStringUtils']]],
-  ['xii_5fglobal_5fevent_5fhandler_17902',['XII_GLOBAL_EVENT_HANDLER',['../de/d83/classxii_global_event.htm#a2e8afc545028d968c34d6c291932616c',1,'xiiGlobalEvent']]],
-  ['xiidatadirfactory_17903',['xiiDataDirFactory',['../d7/d0a/classxii_file_system.htm#aa84886028191f72bfab9522a330776d0',1,'xiiFileSystem']]]
+  ['waitformessagecallback_21110',['WaitForMessageCallback',['../d3/d6f/classxii_process_communication_channel.htm#a056a4185b6f696e55686efc59daa2897',1,'xiiProcessCommunicationChannel']]]
 ];

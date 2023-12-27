@@ -1,6 +1,6 @@
 var structxii_input_action_config =
 [
-    [ "MaxInputSlotAlternatives", "d0/db4/structxii_input_action_config.htm#aae15b427be186506c6e891a30055af70a8f03d3c6f89c1b1231a02c42b0a22e47", null ],
+    [ "MaxInputSlotAlternatives", "d0/db4/structxii_input_action_config.htm#a2a96f1817f8ff43094a71cae814f47b2a8f03d3c6f89c1b1231a02c42b0a22e47", null ],
     [ "OnEnterArea", "d0/db4/structxii_input_action_config.htm#a8850d43986047decd114352fc791c829", [
       [ "ActivateImmediately", "d0/db4/structxii_input_action_config.htm#a8850d43986047decd114352fc791c829a7a51d25bb57a682a0080671aea28a0e1", null ],
       [ "RequireKeyUp", "d0/db4/structxii_input_action_config.htm#a8850d43986047decd114352fc791c829a2f4bd845f8d1a236ae2aafef473de89d", null ]

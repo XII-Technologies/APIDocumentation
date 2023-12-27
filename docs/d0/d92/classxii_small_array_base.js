@@ -4,7 +4,7 @@ var classxii_small_array_base =
     [ "const_reverse_iterator", "d0/d92/classxii_small_array_base.htm#a8340aa840012a7022cb553f1cba5d447", null ],
     [ "iterator", "d0/d92/classxii_small_array_base.htm#a2249166fc0f7e7d06e085e81e6b943c9", null ],
     [ "reverse_iterator", "d0/d92/classxii_small_array_base.htm#a378f8c37787e58238bab5fef81a8a73b", null ],
-    [ "CAPACITY_ALIGNMENT", "d0/d92/classxii_small_array_base.htm#ab5acca0992f713a9ca3b10f7b465de65ac56836be21857551b15e4cd14cc1578a", null ],
+    [ "CAPACITY_ALIGNMENT", "d0/d92/classxii_small_array_base.htm#a50d615ceb07fa909ed16f379483a48ffac56836be21857551b15e4cd14cc1578a", null ],
     [ "xiiSmallArrayBase", "d0/d92/classxii_small_array_base.htm#abab03a1e0c627f92e3c6d5d1cdff7e92", null ],
     [ "xiiSmallArrayBase", "d0/d92/classxii_small_array_base.htm#af3aea2716c22bc26597a80c97a452827", null ],
     [ "xiiSmallArrayBase", "d0/d92/classxii_small_array_base.htm#a93bc2296fb5c752cf09eec4ecde873b6", null ],

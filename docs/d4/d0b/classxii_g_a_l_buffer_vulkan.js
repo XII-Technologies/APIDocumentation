@@ -5,7 +5,6 @@ var classxii_g_a_l_buffer_vulkan =
     [ "DeInitPlatform", "d4/d0b/classxii_g_a_l_buffer_vulkan.htm#a75e3e11cce09b9ed6ea9e4ee120cfa63", null ],
     [ "FlushMappedRange", "d4/d0b/classxii_g_a_l_buffer_vulkan.htm#aab1d5a707fc984e07b5915f8396cfdbe", null ],
     [ "GetBuffer", "d4/d0b/classxii_g_a_l_buffer_vulkan.htm#ad8ee226e0b83dade188d9114dbea8599", null ],
-    [ "GetDefaultView", "d4/d0b/classxii_g_a_l_buffer_vulkan.htm#ac17d55dc4a107adcbe88be1172b2975e", null ],
     [ "GetIndexFormat", "d4/d0b/classxii_g_a_l_buffer_vulkan.htm#a8e637b6dc15ab887cc4e628ffbcc2ce7", null ],
     [ "GetMemoryProperties", "d4/d0b/classxii_g_a_l_buffer_vulkan.htm#ae8ee11c761998902156000db8800d5aa", null ],
     [ "GetSparseProperties", "d4/d0b/classxii_g_a_l_buffer_vulkan.htm#a071d96b263519d4d2d52d0d170a2dc3b", null ],
