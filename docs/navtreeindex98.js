@@ -1,5 +1,7 @@
 var NAVTREEINDEX98 =
 {
+"dd/d54/classxii_tag_set_template_1_1_iterator.htm":[5,0,2246,0],
+"dd/d54/classxii_tag_set_template_1_1_iterator.htm#a1903bf54bc0a86f8eda4abe4c0279c99":[5,0,2246,0,5],
 "dd/d54/classxii_tag_set_template_1_1_iterator.htm#a3dc72a66fbbd128043074de6297c2868":[5,0,2246,0,3],
 "dd/d54/classxii_tag_set_template_1_1_iterator.htm#a4a6c9a349deea6ae0940132527eb08ba":[5,0,2246,0,0],
 "dd/d54/classxii_tag_set_template_1_1_iterator.htm#a7091834ffdf7baf2014d6f48770a9fc2":[5,0,2246,0,4],
@@ -247,7 +249,5 @@ var NAVTREEINDEX98 =
 "dd/d79/classxii_bounding_sphere_template.htm#ae0e5e3692952a90c02094170ef0c9af9":[5,0,254,12],
 "dd/d79/classxii_bounding_sphere_template.htm#ae306aa33ed2e7328d3ec737e24a8e3d4":[5,0,254,18],
 "dd/d79/classxii_bounding_sphere_template.htm#ae773cba15bdae9d0952c3e11bb43d0c5":[5,0,254,29],
-"dd/d79/classxii_bounding_sphere_template.htm#ae7979964408018ed38e43c448914730a":[5,0,254,36],
-"dd/d79/classxii_bounding_sphere_template.htm#ae8bc580df1b64ad4dac86266b70afd15":[5,0,254,24],
-"dd/d79/classxii_bounding_sphere_template.htm#aec97f1e17f2252554e530afeb7357567":[5,0,254,23]
+"dd/d79/classxii_bounding_sphere_template.htm#ae7979964408018ed38e43c448914730a":[5,0,254,36]
 };

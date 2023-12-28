@@ -1,6 +1,8 @@
 var NAVTREEINDEX39 =
 {
+"d5/d4f/classxii_simd_vec4i.htm#a0e5d7e4b535cdd8b0c9f103c1e518967":[5,0,2078,20],
 "d5/d4f/classxii_simd_vec4i.htm#a0e5d7e4b535cdd8b0c9f103c1e518967":[5,0,2078,22],
+"d5/d4f/classxii_simd_vec4i.htm#a0e5d7e4b535cdd8b0c9f103c1e518967":[5,0,2078,23],
 "d5/d4f/classxii_simd_vec4i.htm#a13b0c8e05f823ec472e4fa41a454ba7b":[5,0,2078,1],
 "d5/d4f/classxii_simd_vec4i.htm#a21466f5b98ffaab5192bc43152a4732b":[5,0,2078,65],
 "d5/d4f/classxii_simd_vec4i.htm#a2533e07f8e78ae09d2257acf8f68d500":[5,0,2078,41],
@@ -47,14 +49,14 @@ var NAVTREEINDEX39 =
 "d5/d4f/classxii_simd_vec4i.htm#ae9d4f307416b36403aba163608045499":[5,0,2078,30],
 "d5/d4f/classxii_simd_vec4i.htm#aecfb3172a9fcb0eca3af0c0be11c0ff9":[5,0,2078,64],
 "d5/d4f/classxii_simd_vec4i.htm#af4941cab5d887c845345dbf05800453c":[5,0,2078,34],
-"d5/d4f/classxii_simd_vec4i.htm#af5180b8cf251742e3515c7b971c6ebf8":[5,0,2078,59],
+"d5/d4f/classxii_simd_vec4i.htm#af5180b8cf251742e3515c7b971c6ebf8":[5,0,2078,57],
+"d5/d4f/classxii_simd_vec4i.htm#af5180b8cf251742e3515c7b971c6ebf8":[5,0,2078,60],
 "d5/d4f/classxii_simd_vec4i.htm#af5180b8cf251742e3515c7b971c6ebf8":[5,0,2078,53],
 "d5/d4f/classxii_simd_vec4i.htm#af5180b8cf251742e3515c7b971c6ebf8":[5,0,2078,54],
-"d5/d4f/classxii_simd_vec4i.htm#af5180b8cf251742e3515c7b971c6ebf8":[5,0,2078,56],
-"d5/d4f/classxii_simd_vec4i.htm#af5180b8cf251742e3515c7b971c6ebf8":[5,0,2078,57],
-"d5/d4f/classxii_simd_vec4i.htm#af5180b8cf251742e3515c7b971c6ebf8":[5,0,2078,58],
-"d5/d4f/classxii_simd_vec4i.htm#af5180b8cf251742e3515c7b971c6ebf8":[5,0,2078,60],
 "d5/d4f/classxii_simd_vec4i.htm#af5180b8cf251742e3515c7b971c6ebf8":[5,0,2078,55],
+"d5/d4f/classxii_simd_vec4i.htm#af5180b8cf251742e3515c7b971c6ebf8":[5,0,2078,56],
+"d5/d4f/classxii_simd_vec4i.htm#af5180b8cf251742e3515c7b971c6ebf8":[5,0,2078,59],
+"d5/d4f/classxii_simd_vec4i.htm#af5180b8cf251742e3515c7b971c6ebf8":[5,0,2078,58],
 "d5/d4f/classxii_simd_vec4i.htm#af6df3cf3cb779e47b93b721f957c7aeb":[5,0,2078,0],
 "d5/d4f/classxii_simd_vec4i.htm#afa7c8fe407540cd9398d0ca082fe3204":[5,0,2078,27],
 "d5/d4f/classxii_simd_vec4i.htm#afe1564aa4908cee9d8a312d7eb96fd30":[5,0,2078,37],
@@ -247,7 +249,5 @@ var NAVTREEINDEX39 =
 "d5/d63/classxii_render_to_texture2_d_resource.htm#a868b8f9bc2d61b5b6374f5ab91224a64":[5,0,1894,3],
 "d5/d64/structxii_size_to_type.htm":[5,0,2099],
 "d5/d65/classxii_forward_events_to_game_state_component.htm":[5,0,698],
-"d5/d65/classxii_forward_events_to_game_state_component.htm#a594ddbf5e80de5511050d5dbcc8d5c6e":[5,0,698,0],
-"d5/d65/classxii_forward_events_to_game_state_component.htm#a6757210a796c52132330b92a7d0da84e":[5,0,698,4],
-"d5/d65/classxii_forward_events_to_game_state_component.htm#a6e9f96b9a15b258db62c2f40900d320d":[5,0,698,1]
+"d5/d65/classxii_forward_events_to_game_state_component.htm#a594ddbf5e80de5511050d5dbcc8d5c6e":[5,0,698,0]
 };

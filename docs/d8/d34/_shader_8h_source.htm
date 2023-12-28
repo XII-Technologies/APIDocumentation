@@ -240,23 +240,27 @@ $(document).ready(function(){initNavTree('d8/d34/_shader_8h_source.htm','../../'
 <div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;  XII_NODISCARD <span class="keyword">const</span> <a class="code" href="../../d3/d51/structxii_g_a_l_shader_creation_description.htm">xiiGALShaderCreationDescription</a>&amp; GetDescription() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160; </div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;  <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="../../d5/d19/classxii_g_a_l_device.htm">xiiGALDevice</a>;</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;  <span class="keyword">virtual</span> xiiUInt32 GetResourceCount() <span class="keyword">const</span> = 0;</div>
 <div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160; </div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;  <a class="code" href="../../d3/db8/classxii_g_a_l_shader.htm">xiiGALShader</a>(<span class="keyword">const</span> <a class="code" href="../../d3/d51/structxii_g_a_l_shader_creation_description.htm">xiiGALShaderCreationDescription</a>&amp; creationDescription);</div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160; </div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;  <span class="keyword">virtual</span> ~<a class="code" href="../../d3/db8/classxii_g_a_l_shader.htm">xiiGALShader</a>();</div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160; </div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;  <span class="keyword">virtual</span> <a class="code" href="../../dd/dad/structxii_result.htm">xiiResult</a> InitPlatform(<a class="code" href="../../d5/d19/classxii_g_a_l_device.htm">xiiGALDevice</a>* pDevice) = 0;</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> GetResourceDescription(xiiUInt32 uiIndex, <a class="code" href="../../d4/dce/structxii_g_a_l_shader_resource_description.htm">xiiGALShaderResourceDescription</a>&amp; out_ResourceDescription) <span class="keyword">const</span> = 0;</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160; </div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;  <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="../../d5/d19/classxii_g_a_l_device.htm">xiiGALDevice</a>;</div>
 <div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160; </div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;  <span class="keyword">virtual</span> <a class="code" href="../../dd/dad/structxii_result.htm">xiiResult</a> DeInitPlatform(<a class="code" href="../../d5/d19/classxii_g_a_l_device.htm">xiiGALDevice</a>* pDevice) = 0;</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;  <a class="code" href="../../d3/db8/classxii_g_a_l_shader.htm">xiiGALShader</a>(<span class="keyword">const</span> <a class="code" href="../../d3/d51/structxii_g_a_l_shader_creation_description.htm">xiiGALShaderCreationDescription</a>&amp; creationDescription);</div>
 <div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160; </div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;  <a class="code" href="../../d3/d51/structxii_g_a_l_shader_creation_description.htm">xiiGALShaderCreationDescription</a> m_Description;</div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;};</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;  <span class="keyword">virtual</span> ~<a class="code" href="../../d3/db8/classxii_g_a_l_shader.htm">xiiGALShader</a>();</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160; </div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;  <span class="keyword">virtual</span> <a class="code" href="../../dd/dad/structxii_result.htm">xiiResult</a> InitPlatform(<a class="code" href="../../d5/d19/classxii_g_a_l_device.htm">xiiGALDevice</a>* pDevice) = 0;</div>
 <div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160; </div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160; </div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;<span class="preprocessor">#include &lt;GraphicsFoundation/Shader/Implementation/Shader_inl.h&gt;</span></div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;  <span class="keyword">virtual</span> <a class="code" href="../../dd/dad/structxii_result.htm">xiiResult</a> DeInitPlatform(<a class="code" href="../../d5/d19/classxii_g_a_l_device.htm">xiiGALDevice</a>* pDevice) = 0;</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160; </div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;  <a class="code" href="../../d3/d51/structxii_g_a_l_shader_creation_description.htm">xiiGALShaderCreationDescription</a> m_Description;</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;};</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160; </div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160; </div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;<span class="preprocessor">#include &lt;GraphicsFoundation/Shader/Implementation/Shader_inl.h&gt;</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="astructxii_g_a_l_shader_buffer_description_htm_a698bb1697632872e91949953452f63b1"><div class="ttname"><a href="../../d7/d0b/structxii_g_a_l_shader_buffer_description.htm#a698bb1697632872e91949953452f63b1">xiiGALShaderBufferDescription::m_sName</a></div><div class="ttdeci">xiiString m_sName</div><div class="ttdoc">The variable name.</div><div class="ttdef"><b>Definition:</b> Shader.h:121</div></div>
@@ -332,7 +336,7 @@ $(document).ready(function(){initNavTree('d8/d34/_shader_8h_source.htm','../../'
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.htm">home</a></li><li class="navelem"><a class="el" href="../../dir_1036706e55c22cab35bc1c58ee689f1d.htm">runner</a></li><li class="navelem"><a class="el" href="../../dir_629f8151d55d307162ff2d619fb1783d.htm">work</a></li><li class="navelem"><a class="el" href="../../dir_1ddc44fe1263a8c7935fa6130b7d9499.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_2c1b6808f12952f4c36e05ba7068379a.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_b5a1c4ecfca018ad24b729e213296d41.htm">Source</a></li><li class="navelem"><a class="el" href="../../dir_e321052006a51284e67389ab20037e7c.htm">Engine</a></li><li class="navelem"><a class="el" href="../../dir_60f548c54f5a79fe3a3b3b88ff8146f5.htm">GraphicsFoundation</a></li><li class="navelem"><a class="el" href="../../dir_3db574144eba5047e9f941f7d3540303.htm">Shader</a></li><li class="navelem"><b>Shader.h</b></li>
-    <li class="footer">Generated on Thu Dec 28 2023 07:57:15 for XIIEngine by
+    <li class="footer">Generated on Thu Dec 28 2023 08:05:27 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

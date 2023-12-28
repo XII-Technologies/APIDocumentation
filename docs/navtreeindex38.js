@@ -1,5 +1,7 @@
 var NAVTREEINDEX38 =
 {
+"d5/d2e/classxii_collision_filter_config.htm#abaabbd18f89a6e8633074dab56e86ecf":[5,0,310,6],
+"d5/d2e/classxii_collision_filter_config.htm#ac3070ad6addbea6597f430d7f2876065":[5,0,310,3],
 "d5/d2e/classxii_collision_filter_config.htm#ac3201ca1112ef8686ff32da528533f0b":[5,0,310,2],
 "d5/d2e/classxii_collision_filter_config.htm#ad008e372d2926b033c78ea5c1be424a5":[5,0,310,5],
 "d5/d2e/classxii_collision_filter_config.htm#ad69ed3a638b0c13961dcf9b0833aacf1":[5,0,310,11],
@@ -243,11 +245,9 @@ var NAVTREEINDEX38 =
 "d5/d4c/structxii_gizmo_flags_1_1_bits.htm#adb24808b7f6c9d0e923a4631141acdd2":[5,0,1055,0,4],
 "d5/d4f/classxii_simd_vec4i.htm":[5,0,2078],
 "d5/d4f/classxii_simd_vec4i.htm#a05c323868b785cc30d8db7f471102275":[5,0,2078,46],
-"d5/d4f/classxii_simd_vec4i.htm#a0e5d7e4b535cdd8b0c9f103c1e518967":[5,0,2078,23],
+"d5/d4f/classxii_simd_vec4i.htm#a0e5d7e4b535cdd8b0c9f103c1e518967":[5,0,2078,21],
 "d5/d4f/classxii_simd_vec4i.htm#a0e5d7e4b535cdd8b0c9f103c1e518967":[5,0,2078,16],
 "d5/d4f/classxii_simd_vec4i.htm#a0e5d7e4b535cdd8b0c9f103c1e518967":[5,0,2078,17],
 "d5/d4f/classxii_simd_vec4i.htm#a0e5d7e4b535cdd8b0c9f103c1e518967":[5,0,2078,18],
-"d5/d4f/classxii_simd_vec4i.htm#a0e5d7e4b535cdd8b0c9f103c1e518967":[5,0,2078,19],
-"d5/d4f/classxii_simd_vec4i.htm#a0e5d7e4b535cdd8b0c9f103c1e518967":[5,0,2078,20],
-"d5/d4f/classxii_simd_vec4i.htm#a0e5d7e4b535cdd8b0c9f103c1e518967":[5,0,2078,21]
+"d5/d4f/classxii_simd_vec4i.htm#a0e5d7e4b535cdd8b0c9f103c1e518967":[5,0,2078,19]
 };

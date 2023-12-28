@@ -1,5 +1,7 @@
 var NAVTREEINDEX66 =
 {
+"d8/ddd/structxii_prefab_instantiation_options.htm#a5cd1ff127e47a915103c05de7f88eb63af929328ef3d8c6e25c52b549fc61fccd":[5,0,1511,0,0],
+"d8/ddd/structxii_prefab_instantiation_options.htm#a7b3cad5570ca8eb0fb0520fbd6e9e512":[5,0,1511,1],
 "d8/ddd/structxii_prefab_instantiation_options.htm#a7d429eaada870765abb7f8d948ec3c94":[5,0,1511,7],
 "d8/ddd/structxii_prefab_instantiation_options.htm#a883dd3330f2938885fc71abfd834b145":[5,0,1511,3],
 "d8/ddd/structxii_prefab_instantiation_options.htm#a897b7dab68844cdd8dc718e11d4720e7":[5,0,1511,9],
@@ -247,7 +249,5 @@ var NAVTREEINDEX66 =
 "d9/d06/classxii_camera_component.htm#abfce23a6bd904e90d22b1e60623feb4b":[5,0,267,31],
 "d9/d06/classxii_camera_component.htm#ac5ec604273dda01bfff3628015c119e6":[5,0,267,40],
 "d9/d06/classxii_camera_component.htm#acd726c3625360e737315b3a814db961d":[5,0,267,27],
-"d9/d06/classxii_camera_component.htm#ad2502f94e614e4cd25d54c9bff443602":[5,0,267,12],
-"d9/d06/classxii_camera_component.htm#ad773ed77e178663783e7004dfde574ec":[5,0,267,10],
-"d9/d06/classxii_camera_component.htm#ad8f13c28b45d27cf0f08786396d1dcae":[5,0,267,39]
+"d9/d06/classxii_camera_component.htm#ad2502f94e614e4cd25d54c9bff443602":[5,0,267,12]
 };

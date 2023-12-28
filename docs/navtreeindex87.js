@@ -1,5 +1,7 @@
 var NAVTREEINDEX87 =
 {
+"db/d9e/structxii_swizzle.htm#af85243d77ee966c0d27bee79d65039dea7caa5131b55075401162267ee6351dfc":[5,0,2240,0,125],
+"db/d9e/structxii_swizzle.htm#af85243d77ee966c0d27bee79d65039dea7cc478c5552c97221f5ca1b8b91762cb":[5,0,2240,0,208],
 "db/d9e/structxii_swizzle.htm#af85243d77ee966c0d27bee79d65039dea7d07ee0280326d86980e398cdd7eb286":[5,0,2240,0,196],
 "db/d9e/structxii_swizzle.htm#af85243d77ee966c0d27bee79d65039dea7e378115b72a830ebf77acc1006b444a":[5,0,2240,0,108],
 "db/d9e/structxii_swizzle.htm#af85243d77ee966c0d27bee79d65039dea7e533d2ce2b22ac3db742d5407c15e5d":[5,0,2240,0,37],
@@ -247,7 +249,5 @@ var NAVTREEINDEX87 =
 "db/db7/classxii_type_version_write_context.htm#ad229e3cbd0815a5afaaba0c448e00e74":[5,0,2380,9],
 "db/db7/classxii_type_version_write_context.htm#ae0d03c15c6102c778cce98a45d09186a":[5,0,2380,6],
 "db/db7/classxii_type_version_write_context.htm#ae2aca8ed44ffa1f4fbec9159623b5b97":[5,0,2380,5],
-"db/db7/classxii_type_version_write_context.htm#ae323a440196cef2f800ccbb3e526feab":[5,0,2380,3],
-"db/db7/classxii_type_version_write_context.htm#aefb79af5570a1aa3f84c902956426739":[5,0,2380,10],
-"db/db7/structxii_input_slot_flags.htm":[5,0,1165]
+"db/db7/classxii_type_version_write_context.htm#ae323a440196cef2f800ccbb3e526feab":[5,0,2380,3]
 };

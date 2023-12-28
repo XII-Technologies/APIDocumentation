@@ -1,5 +1,7 @@
 var NAVTREEINDEX37 =
 {
+"d5/d19/classxii_g_a_l_device.htm#a528fce8b79374de3cede3f7a854134b2":[5,0,791,104],
+"d5/d19/classxii_g_a_l_device.htm#a592fc69e03f22c25f6beb7718754179f":[5,0,791,14],
 "d5/d19/classxii_g_a_l_device.htm#a5adb9669fc7e2a1ed4cc01137b474786":[5,0,791,125],
 "d5/d19/classxii_g_a_l_device.htm#a60f5f540f887206207221de01fea3cd3":[5,0,791,126],
 "d5/d19/classxii_g_a_l_device.htm#a6305580c88ae398128606586c8668a44":[5,0,791,9],
@@ -247,7 +249,5 @@ var NAVTREEINDEX37 =
 "d5/d2e/classxii_collision_filter_config.htm#a5b4df3998b4085e7d07ee4e319ce3426":[5,0,310,9],
 "d5/d2e/classxii_collision_filter_config.htm#a68fe4a238327628e6c75204783f95b91":[5,0,310,7],
 "d5/d2e/classxii_collision_filter_config.htm#a9bef137312bd5eca1905e01e7e6573f9":[5,0,310,12],
-"d5/d2e/classxii_collision_filter_config.htm#ab52da8070e7b2eb5ae48b3ac28b9f253":[5,0,310,0],
-"d5/d2e/classxii_collision_filter_config.htm#abaabbd18f89a6e8633074dab56e86ecf":[5,0,310,6],
-"d5/d2e/classxii_collision_filter_config.htm#ac3070ad6addbea6597f430d7f2876065":[5,0,310,3]
+"d5/d2e/classxii_collision_filter_config.htm#ab52da8070e7b2eb5ae48b3ac28b9f253":[5,0,310,0]
 };

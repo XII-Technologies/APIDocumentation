@@ -1,5 +1,7 @@
 var NAVTREEINDEX52 =
 {
+"d6/dcb/structxii_visual_script_variable.htm":[5,0,2482],
+"d6/dcb/structxii_visual_script_variable.htm#ab14437cb81d768b181403d8074bc09bf":[5,0,2482,1],
 "d6/dcb/structxii_visual_script_variable.htm#ab5cdca81c9f7ca3cec83245fd4145128":[5,0,2482,0],
 "d6/dcb/structxii_visual_script_variable.htm#aca2da19e965a1ffbc8759f9f96aa23ef":[5,0,2482,2],
 "d6/dcc/classxii_qt_decal_asset_document_window.htm":[5,0,1632],
@@ -247,7 +249,5 @@ var NAVTREEINDEX52 =
 "d6/df0/classxii_selection_manager.htm#ae684288a55c99571a157ad66fcf20d25":[5,0,2008,12],
 "d6/df0/classxii_selection_manager.htm#af069290bccf143c3ce68ba6bd48516ad":[5,0,2008,7],
 "d6/df0/classxii_selection_manager.htm#af84251ed6105e2c4887c8fc26e8fdfb4":[5,0,2008,18],
-"d6/df1/classxii_profile_config_data.htm":[5,0,1536],
-"d6/df1/classxii_profile_config_data.htm#a47a8e4528d1d2c9e5050ea47681b091d":[5,0,1536,3],
-"d6/df1/classxii_profile_config_data.htm#a8d53db9b6044c5b1270ae983d7eeeb45":[5,0,1536,0]
+"d6/df1/classxii_profile_config_data.htm":[5,0,1536]
 };

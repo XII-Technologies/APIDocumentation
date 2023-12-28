@@ -1,5 +1,7 @@
 var NAVTREEINDEX88 =
 {
+"db/db7/classxii_type_version_write_context.htm#aefb79af5570a1aa3f84c902956426739":[5,0,2380,10],
+"db/db7/structxii_input_slot_flags.htm":[5,0,1165],
 "db/db7/structxii_input_slot_flags.htm#a3e9e6761413c16a3ca9109bb9d421bb0":[5,0,1165,2],
 "db/db7/structxii_input_slot_flags.htm#a3e9e6761413c16a3ca9109bb9d421bb0a0113a50245f64e9544920b3c62af8032":[5,0,1165,2,12],
 "db/db7/structxii_input_slot_flags.htm#a3e9e6761413c16a3ca9109bb9d421bb0a0f97c7cb6eb2dada1a6a25118b7b0747":[5,0,1165,2,2],
@@ -247,7 +249,5 @@ var NAVTREEINDEX88 =
 "db/de6/structconst__iterator__base.htm#a1f52a71d2a35768f2841bffe1995bff2":[5,0,16,5],
 "db/de6/structconst__iterator__base.htm#a2af50cca6694618f727ce0f4c0b57c5d":[5,0,16,7],
 "db/de6/structconst__iterator__base.htm#a2cf8c5729d585071c9dccd22e4f92061":[5,0,16,8],
-"db/de6/structconst__iterator__base.htm#a31267ada9a93fdc04455575d1970ac59":[5,0,16,6],
-"db/de6/structconst__iterator__base.htm#a350b64e23d3ac40cee6953284d686462":[5,0,16,17],
-"db/de6/structconst__iterator__base.htm#a3e3cffd2887947dabb6cdf94f5f9c423":[5,0,16,22]
+"db/de6/structconst__iterator__base.htm#a31267ada9a93fdc04455575d1970ac59":[5,0,16,6]
 };

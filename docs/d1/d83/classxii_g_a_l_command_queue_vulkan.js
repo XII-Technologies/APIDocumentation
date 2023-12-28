@@ -1,6 +1,6 @@
 var classxii_g_a_l_command_queue_vulkan =
 [
-    [ "xiiGALCommandQueueVulkan", "d1/d83/classxii_g_a_l_command_queue_vulkan.htm#a09ac466ccae60cb75988b4a3ee6d7640", null ],
+    [ "xiiGALCommandQueueVulkan", "d1/d83/classxii_g_a_l_command_queue_vulkan.htm#a3ef35c758d11a739f2a9c52a0710e05a", null ],
     [ "~xiiGALCommandQueueVulkan", "d1/d83/classxii_g_a_l_command_queue_vulkan.htm#ac886c2a5da46aac64f67a4da006458e2", null ],
     [ "DeInitPlatform", "d1/d83/classxii_g_a_l_command_queue_vulkan.htm#a096aa85a4d14d8a1f568b9f356f95d7e", null ],
     [ "GetCommandQueue", "d1/d83/classxii_g_a_l_command_queue_vulkan.htm#a5b6f346ae55b10416588cd13148c5d09", null ],

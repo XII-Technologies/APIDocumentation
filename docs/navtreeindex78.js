@@ -1,5 +1,7 @@
 var NAVTREEINDEX78 =
 {
+"da/d6a/classxii_preferences.htm#ad0fa28ac68246d5a3e14ed7f69734506":[5,0,1517,5],
+"da/d6d/classxii_gizmo_component_manager.htm":[5,0,1053],
 "da/d6d/classxii_gizmo_component_manager.htm#a5af075288c52c6255e82131ae80bb27e":[5,0,1053,0],
 "da/d6d/classxii_gizmo_component_manager.htm#a7d9b1d67fb25e59cc7dff7251674fb4b":[5,0,1053,1],
 "da/d6d/classxii_visual_script_node_registry.htm":[5,0,2478],
@@ -247,7 +249,5 @@ var NAVTREEINDEX78 =
 "da/d8d/classxii_g_p_u_resource_pool.htm#af4f1543724635126c3c6fa79ea380196":[5,0,1064,18],
 "da/d8d/classxii_g_p_u_resource_pool.htm#af4f77a6275383f6061d6f67bbbac9f1c":[5,0,1064,15],
 "da/d8d/classxii_g_p_u_resource_pool.htm#afb2b3b346f7b9640724e112ca5effe28":[5,0,1064,16],
-"da/d8d/structxii_component_handle.htm":[5,0,358],
-"da/d8d/structxii_component_handle.htm#a3d8aaf3539839fbf60ceb3a048e274d5":[5,0,358,0],
-"da/d8d/structxii_component_handle.htm#a52d612b3dd3750a6c10b9550274b60f3":[5,0,358,1]
+"da/d8d/structxii_component_handle.htm":[5,0,358]
 };

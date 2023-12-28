@@ -1,6 +1,6 @@
 var classxii_g_a_l_command_list_d3_d12 =
 [
-    [ "xiiGALCommandListD3D12", "d9/d61/classxii_g_a_l_command_list_d3_d12.htm#abad535582e7b3d2a68f7db62d6dd2ba0", null ],
+    [ "xiiGALCommandListD3D12", "d9/d61/classxii_g_a_l_command_list_d3_d12.htm#ab311acbf3694d52ea3682ed0005de5bf", null ],
     [ "~xiiGALCommandListD3D12", "d9/d61/classxii_g_a_l_command_list_d3_d12.htm#ae908e594ad47072ade96bb96bf22bb9c", null ],
     [ "DeInitPlatform", "d9/d61/classxii_g_a_l_command_list_d3_d12.htm#aff4eee08391c6fb34262106afd012218", null ],
     [ "GetCommandList", "d9/d61/classxii_g_a_l_command_list_d3_d12.htm#a7c8d83e70e7309a20ec5a18cb62a2681", null ],

@@ -1,5 +1,7 @@
 var NAVTREEINDEX54 =
 {
+"d7/d24/structxii_j_s_o_n_reader_1_1_element.htm#aa1161a1f7ca77225774b89c862de6a7d":[5,0,1206,0,3],
+"d7/d24/structxii_j_s_o_n_reader_1_1_element.htm#aa9681ea8d1cfc791c54768846992a8d2":[5,0,1206,0,2],
 "d7/d24/structxii_j_s_o_n_reader_1_1_element.htm#abba355f2c5bee78bfc06b180691fde4f":[5,0,1206,0,1],
 "d7/d24/structxii_min_windows_1_1_to_native_impl.htm":[5,0,7,1],
 "d7/d25/classxii_l_u_t_asset_actions.htm":[5,0,1265],
@@ -247,7 +249,5 @@ var NAVTREEINDEX54 =
 "d7/d55/structxii_bitflags.htm#a6914e5bc6af6cb913a8a5f4264a6b836":[5,0,227,7],
 "d7/d55/structxii_bitflags.htm#a7f78220f31e05c3d49ff428dfd8c58df":[5,0,227,14],
 "d7/d55/structxii_bitflags.htm#a89cb715ce2414f2e16675f5d8503cb1c":[5,0,227,2],
-"d7/d55/structxii_bitflags.htm#a8b8c4d615ec4a857f1772939ef1cfbc6":[5,0,227,0],
-"d7/d55/structxii_bitflags.htm#a8e74a594d74f59d68ab198b9d0da519b":[5,0,227,19],
-"d7/d55/structxii_bitflags.htm#a95bb64059c3566df3c788303d16ea47e":[5,0,227,4]
+"d7/d55/structxii_bitflags.htm#a8b8c4d615ec4a857f1772939ef1cfbc6":[5,0,227,0]
 };

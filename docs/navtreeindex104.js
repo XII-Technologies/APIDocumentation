@@ -1,5 +1,7 @@
 var NAVTREEINDEX104 =
 {
+"de/d39/structxii_c_var_widget_data.htm#aca83d48fe5e3b548367a4d2a1eafd5e6":[5,0,448,0],
+"de/d39/structxii_c_var_widget_data.htm#ad0b3db591c0e13856209c83bbe821051":[5,0,448,2],
 "de/d3b/classxii_tools_serialization_utils.htm":[5,0,2331],
 "de/d3b/classxii_tools_serialization_utils.htm#a7d8bc07563ce6a7f91f71e3a6ee845c9":[5,0,2331,0],
 "de/d3b/structxii_color_gradient_1_1_alpha_c_p.htm":[5,0,317,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX104 =
 "de/d63/classxii_processing_stream.htm#a61a5f8d7dfbc0d30a08a35f369334b7da4c6bc90f2bbdf35523e29c414a57bad3":[5,0,1528,0,21],
 "de/d63/classxii_processing_stream.htm#a61a5f8d7dfbc0d30a08a35f369334b7da4d3fea35245c93be4e87246fbd32ea36":[5,0,1528,0,10],
 "de/d63/classxii_processing_stream.htm#a61a5f8d7dfbc0d30a08a35f369334b7da56bf1b0e694b442bf4145a04b82ea943":[5,0,1528,0,22],
-"de/d63/classxii_processing_stream.htm#a61a5f8d7dfbc0d30a08a35f369334b7da6694430a2b471b5d2de071f2ef1fdc57":[5,0,1528,0,5],
-"de/d63/classxii_processing_stream.htm#a61a5f8d7dfbc0d30a08a35f369334b7da77b400b3814fd22e026c666610e47f44":[5,0,1528,0,3],
-"de/d63/classxii_processing_stream.htm#a61a5f8d7dfbc0d30a08a35f369334b7da8a8a1d211464d4bdee46db3c75bfa121":[5,0,1528,0,6]
+"de/d63/classxii_processing_stream.htm#a61a5f8d7dfbc0d30a08a35f369334b7da6694430a2b471b5d2de071f2ef1fdc57":[5,0,1528,0,5]
 };

@@ -1,5 +1,7 @@
 var NAVTREEINDEX89 =
 {
+"db/de6/structconst__iterator__base.htm#a350b64e23d3ac40cee6953284d686462":[5,0,16,17],
+"db/de6/structconst__iterator__base.htm#a3e3cffd2887947dabb6cdf94f5f9c423":[5,0,16,22],
 "db/de6/structconst__iterator__base.htm#a447f2885fc5a8b692dec8b87dfb0db52":[5,0,16,19],
 "db/de6/structconst__iterator__base.htm#a58ffbfabfa1beb329cec08018143f25f":[5,0,16,10],
 "db/de6/structconst__iterator__base.htm#a6ba06de15ced8aee8ee34da8b8e746f3":[5,0,16,15],
@@ -247,7 +249,5 @@ var NAVTREEINDEX89 =
 "dc/d1f/classxii_qt_duplicate_dlg.htm#a23acef1d6321ad6eb3be4953f660af62":[5,0,1642,5],
 "dc/d1f/classxii_qt_duplicate_dlg.htm#a28a3a3cfdeb89f3c0abd75e4d49bc8fe":[5,0,1642,6],
 "dc/d1f/classxii_qt_duplicate_dlg.htm#a4075f24675460a7fa1f2c3126d11ecbb":[5,0,1642,4],
-"dc/d1f/classxii_qt_duplicate_dlg.htm#a55c1bd1f53917abc8246d17f4bfc33c0":[5,0,1642,0],
-"dc/d1f/classxii_qt_duplicate_dlg.htm#a6aa6e4ff612b0e3d44e279831d4ccb07":[5,0,1642,8],
-"dc/d1f/classxii_qt_duplicate_dlg.htm#a9788becbd631af28c4f18994fec06a7c":[5,0,1642,2]
+"dc/d1f/classxii_qt_duplicate_dlg.htm#a55c1bd1f53917abc8246d17f4bfc33c0":[5,0,1642,0]
 };

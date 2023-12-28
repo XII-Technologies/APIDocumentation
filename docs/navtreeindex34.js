@@ -1,5 +1,7 @@
 var NAVTREEINDEX34 =
 {
+"d4/dbf/structxii_variant_assignment_adapter_3_01_t_00_01xii_bitflags_3_01_s_01_4_00_010_01_4.htm":[5,0,2413],
+"d4/dbf/structxii_variant_assignment_adapter_3_01_t_00_01xii_bitflags_3_01_s_01_4_00_010_01_4.htm#a7196bc3a358352e845ca4a37ebc798c1":[5,0,2413,1],
 "d4/dbf/structxii_variant_assignment_adapter_3_01_t_00_01xii_bitflags_3_01_s_01_4_00_010_01_4.htm#a832aef4d3fc533dfc93dc90d8edf0d74":[5,0,2413,2],
 "d4/dbf/structxii_variant_assignment_adapter_3_01_t_00_01xii_bitflags_3_01_s_01_4_00_010_01_4.htm#a85f34ac8338c46ca39f54575152f3ab9":[5,0,2413,0],
 "d4/dbf/structxii_variant_assignment_adapter_3_01_t_00_01xii_bitflags_3_01_s_01_4_00_010_01_4.htm#a934f0886e4166db9a4a93fbbe965ec0f":[5,0,2413,3],
@@ -247,7 +249,5 @@ var NAVTREEINDEX34 =
 "d4/ddf/classxii_state_map.htm#a66cd3687af5478561aea6d61158c1012":[5,0,2200,4],
 "d4/ddf/classxii_state_map.htm#a6ee1d571a4ed70f36e8db6734c970d85":[5,0,2200,10],
 "d4/ddf/classxii_state_map.htm#a797b2f7847dde07558b45daf0c6d958c":[5,0,2200,16],
-"d4/ddf/classxii_state_map.htm#a83d93262bd8bbdabca6bbdbf16fd860e":[5,0,2200,5],
-"d4/ddf/classxii_state_map.htm#a84601b4f5a3fd23d5bb8d133d3eac8b9":[5,0,2200,14],
-"d4/ddf/classxii_state_map.htm#a90eaeb1f5852ccb2556715947f264a3e":[5,0,2200,1]
+"d4/ddf/classxii_state_map.htm#a83d93262bd8bbdabca6bbdbf16fd860e":[5,0,2200,5]
 };

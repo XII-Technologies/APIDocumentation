@@ -1,5 +1,7 @@
 var NAVTREEINDEX72 =
 {
+"d9/db6/classxii_game_object_on_layer_drag_drop_handler.htm#a4dee5af126b63aa70451950adcb1eecc":[5,0,1035,1],
+"d9/db6/classxii_object_selection_msg_to_engine.htm":[5,0,1430],
 "d9/db6/classxii_object_selection_msg_to_engine.htm#a53544334eb9c4917d33df127454dd217":[5,0,1430,0],
 "d9/db7/classxii_script_coroutine___tween_property.htm":[5,0,1982],
 "d9/db7/classxii_script_coroutine___tween_property.htm#a61d232017c3ffed45d9802951ccd7350":[5,0,1982,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX72 =
 "d9/de0/classxii_long_op_proxy.htm#ae9a0c4a478bf05cb11f51b10ff3e74c7":[5,0,1255,2],
 "d9/de0/structxii_g_a_l_query_data_pipeline_statistics.htm":[5,0,873],
 "d9/de0/structxii_g_a_l_query_data_pipeline_statistics.htm#a00c8388f7c82a6ec3daaf6ff983fb7e4":[5,0,873,3],
-"d9/de0/structxii_g_a_l_query_data_pipeline_statistics.htm#a0246fd665725c0c6e955df79f4f19874":[5,0,873,12],
-"d9/de0/structxii_g_a_l_query_data_pipeline_statistics.htm#a0a5c3d3de6b00cf576b3b2478cf801df":[5,0,873,2],
-"d9/de0/structxii_g_a_l_query_data_pipeline_statistics.htm#a0bd7ca6d7c66118250dc0a6a8964688a":[5,0,873,6]
+"d9/de0/structxii_g_a_l_query_data_pipeline_statistics.htm#a0246fd665725c0c6e955df79f4f19874":[5,0,873,12]
 };

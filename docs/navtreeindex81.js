@@ -1,5 +1,7 @@
 var NAVTREEINDEX81 =
 {
+"da/dde/classxii_texture_asset_properties.htm#aca83d05da88cf2ac331b9c9b2ea6bd70":[5,0,2287,25],
+"da/dde/classxii_texture_asset_properties.htm#ad13e827f9e93d66d4219036e6712fd94":[5,0,2287,20],
 "da/dde/classxii_texture_asset_properties.htm#ada716b56984ecae6d8a13a254e568b25":[5,0,2287,28],
 "da/dde/classxii_texture_asset_properties.htm#adef38b362c7992034a55729e6833cc9e":[5,0,2287,10],
 "da/dde/classxii_texture_asset_properties.htm#adf7a2443d074c7cb6ccff81e4c5818e6":[5,0,2287,19],
@@ -247,7 +249,5 @@ var NAVTREEINDEX81 =
 "db/d09/classxii_prefab_reference_component_manager.htm#a8010efe54ccadedcbd0c602156e541b8":[5,0,1513,3],
 "db/d09/classxii_prefab_reference_component_manager.htm#a86677654669e6ca5d508ff66253bbdbf":[5,0,1513,2],
 "db/d09/classxii_prefab_reference_component_manager.htm#abf5252abd29ccdc4be07ce83e8e5cb24":[5,0,1513,0],
-"db/d09/structxii_key_state.htm":[5,0,1208],
-"db/d09/structxii_key_state.htm#a089112c653dc7e641b840a3d8315edd3":[5,0,1208,0],
-"db/d09/structxii_key_state.htm#a089112c653dc7e641b840a3d8315edd3a2e1cc15ec2e7f5322ab51a91cc3d1479":[5,0,1208,0,0]
+"db/d09/structxii_key_state.htm":[5,0,1208]
 };

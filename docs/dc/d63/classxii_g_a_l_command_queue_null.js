@@ -1,6 +1,6 @@
 var classxii_g_a_l_command_queue_null =
 [
-    [ "xiiGALCommandQueueNull", "dc/d63/classxii_g_a_l_command_queue_null.htm#a18d32a68b1fa23c859fa0fa5029eecbf", null ],
+    [ "xiiGALCommandQueueNull", "dc/d63/classxii_g_a_l_command_queue_null.htm#a2ad6d907ee075c1f5084e583d23b1c46", null ],
     [ "~xiiGALCommandQueueNull", "dc/d63/classxii_g_a_l_command_queue_null.htm#ae10cfb303bd1e649c450a39b82b55640", null ],
     [ "DeInitPlatform", "dc/d63/classxii_g_a_l_command_queue_null.htm#a63bc83c74c6a3a63007618ccaac6eeb0", null ],
     [ "GetCompletedFenceValue", "dc/d63/classxii_g_a_l_command_queue_null.htm#a515b3380555afe3200298418a579d5df", null ],

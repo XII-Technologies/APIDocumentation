@@ -1,5 +1,7 @@
 var NAVTREEINDEX67 =
 {
+"d9/d06/classxii_camera_component.htm#ad773ed77e178663783e7004dfde574ec":[5,0,267,10],
+"d9/d06/classxii_camera_component.htm#ad8f13c28b45d27cf0f08786396d1dcae":[5,0,267,39],
 "d9/d06/classxii_camera_component.htm#adf4dc7ffad1b6a3468a2ef6d2099119a":[5,0,267,26],
 "d9/d06/classxii_camera_component.htm#ae2fc3078cf73608aa6c945ed3b381738":[5,0,267,6],
 "d9/d06/classxii_camera_component.htm#ae904ebe128ae5dd6c1d4e2986d4ea8d7":[5,0,267,37],
@@ -247,7 +249,5 @@ var NAVTREEINDEX67 =
 "d9/d25/classxii_texture_cube_asset_document.htm":[5,0,2293],
 "d9/d25/classxii_texture_cube_asset_document.htm#a0689e6bbfa78a74f98f01b1736371e54":[5,0,2293,6],
 "d9/d25/classxii_texture_cube_asset_document.htm#a14d144bda2e73a50866382bd1a082d02":[5,0,2293,5],
-"d9/d25/classxii_texture_cube_asset_document.htm#a382acf3c63c2e0f346c7cc61b5fad08d":[5,0,2293,2],
-"d9/d25/classxii_texture_cube_asset_document.htm#a8616789d9349134c499d4d3d41d6e66c":[5,0,2293,4],
-"d9/d25/classxii_texture_cube_asset_document.htm#accedad3ad5454c8215e659e9e6457d62":[5,0,2293,3]
+"d9/d25/classxii_texture_cube_asset_document.htm#a382acf3c63c2e0f346c7cc61b5fad08d":[5,0,2293,2]
 };
