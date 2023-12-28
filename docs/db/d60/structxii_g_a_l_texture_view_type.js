@@ -9,7 +9,7 @@ var structxii_g_a_l_texture_view_type =
       [ "ReadOnlyDepthStencil", "db/d60/structxii_g_a_l_texture_view_type.htm#ad4f8ca273dab45d482b39716b7c25272a92b05ac48b7db22ad9153f2b5afb9f06", null ],
       [ "UnorderedAccess", "db/d60/structxii_g_a_l_texture_view_type.htm#ad4f8ca273dab45d482b39716b7c25272a2a2f9e7844a6be23592818e55d64686b", null ],
       [ "ShadingRate", "db/d60/structxii_g_a_l_texture_view_type.htm#ad4f8ca273dab45d482b39716b7c25272aa36318e2fe168726dc7ae076c6c2fa79", null ],
-      [ "ENUN_COUNT", "db/d60/structxii_g_a_l_texture_view_type.htm#ad4f8ca273dab45d482b39716b7c25272a2cd74f404dfcca75c77e0c5acc3ee08b", null ],
+      [ "ENUM_COUNT", "db/d60/structxii_g_a_l_texture_view_type.htm#ad4f8ca273dab45d482b39716b7c25272af4b947c5b13a4c3e30c84a2ac577cf59", null ],
       [ "Default", "db/d60/structxii_g_a_l_texture_view_type.htm#ad4f8ca273dab45d482b39716b7c25272a56711e5d21b9e400ceb98ce111927692", null ]
     ] ]
 ];

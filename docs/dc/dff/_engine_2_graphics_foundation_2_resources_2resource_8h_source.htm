@@ -91,69 +91,48 @@ $(document).ready(function(){initNavTree('dc/dff/_engine_2_graphics_foundation_2
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;GraphicsFoundation/GraphicsFoundationDLL.h&gt;</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;GraphicsFoundation/Declarations/GraphicsTypes.h&gt;</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
-<div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="../../d4/d76/classxii_g_a_l_resource_base.htm">    8</a></span>&#160;<span class="keyword">class </span>XII_GRAPHICSFOUNDATION_DLL <a class="code" href="../../d4/d76/classxii_g_a_l_resource_base.htm">xiiGALResourceBase</a> : <span class="keyword">public</span> <a class="code" href="../../d3/dd0/classxii_ref_counted.htm">xiiRefCounted</a></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;{</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;  <span class="keyword">virtual</span> <span class="keyword">const</span> <a class="code" href="../../d4/d76/classxii_g_a_l_resource_base.htm">xiiGALResourceBase</a>* GetParentResource()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <span class="keyword">this</span>; }</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;GraphicsFoundation/Declarations/DeviceObject.h&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;GraphicsFoundation/Declarations/GraphicsTypes.h&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="../../d4/d2d/classxii_g_a_l_resource.htm">    9</a></span>&#160;<span class="keyword">class </span>XII_GRAPHICSFOUNDATION_DLL <a class="code" href="../../d4/d2d/classxii_g_a_l_resource.htm">xiiGALResource</a> : <span class="keyword">public</span> <a class="code" href="../../d5/d12/classxii_g_a_l_device_object.htm">xiiGALDeviceObject</a></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;{</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;  XII_ADD_DYNAMIC_REFLECTION(<a class="code" href="../../d4/d2d/classxii_g_a_l_resource.htm">xiiGALResource</a>, <a class="code" href="../../d5/d12/classxii_g_a_l_device_object.htm">xiiGALDeviceObject</a>);</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;  <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="../../d5/d19/classxii_g_a_l_device.htm">xiiGALDevice</a>;</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;  <span class="keyword">inline</span> ~<a class="code" href="../../d4/d76/classxii_g_a_l_resource_base.htm">xiiGALResourceBase</a>()</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;  {</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    XII_ASSERT_DEV(m_hDefaultBufferView.IsInvalidated(), <span class="stringliteral">&quot;&quot;</span>);</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    XII_ASSERT_DEV(m_hDefaultTextureView.IsInvalidated(), <span class="stringliteral">&quot;&quot;</span>);</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    XII_ASSERT_DEV(m_hDefaultRenderTargetView.IsInvalidated(), <span class="stringliteral">&quot;&quot;</span>);</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    XII_ASSERT_DEV(m_BufferViews.IsEmpty(), <span class="stringliteral">&quot;There are resident buffer views remaining.&quot;</span>);</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    XII_ASSERT_DEV(m_TextureViews.IsEmpty(), <span class="stringliteral">&quot;There are resident texture views remaining.&quot;</span>);</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  }</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  <a class="code" href="../../d8/dc2/classxii_hash_table.htm">xiiHashTable&lt;xiiUInt32, xiiGALBufferViewHandle&gt;</a>  m_BufferViews;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  <a class="code" href="../../d8/dc2/classxii_hash_table.htm">xiiHashTable&lt;xiiUInt32, xiiGALTextureViewHandle&gt;</a> m_TextureViews;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;  <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="../../d5/d19/classxii_g_a_l_device.htm">xiiGALDevice</a>;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;  <a class="code" href="../../d8/dc2/classxii_hash_table.htm">xiiHashTable&lt;xiiUInt32, xiiGALBufferViewHandle&gt;</a>  m_BufferViews;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;  <a class="code" href="../../d8/dc2/classxii_hash_table.htm">xiiHashTable&lt;xiiUInt32, xiiGALTextureViewHandle&gt;</a> m_TextureViews;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  <a class="code" href="../../df/ddf/classxii_g_a_l_buffer_view_handle.htm">xiiGALBufferViewHandle</a>  m_DefaultBufferViews[xiiGALBufferViewType::ENUM_COUNT];</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  <a class="code" href="../../dd/d52/classxii_g_a_l_texture_view_handle.htm">xiiGALTextureViewHandle</a> m_DefaultTextureViews[xiiGALTextureViewType::ENUM_COUNT];</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;};</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="../../dc/d10/classxii_g_a_l_resource_view.htm">   25</a></span>&#160;<span class="keyword">class </span>XII_GRAPHICSFOUNDATION_DLL <a class="code" href="../../dc/d10/classxii_g_a_l_resource_view.htm">xiiGALResourceView</a> : <span class="keyword">public</span> <a class="code" href="../../d5/d12/classxii_g_a_l_device_object.htm">xiiGALDeviceObject</a></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;{</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  XII_ADD_DYNAMIC_REFLECTION(<a class="code" href="../../dc/d10/classxii_g_a_l_resource_view.htm">xiiGALResourceView</a>, <a class="code" href="../../d5/d12/classxii_g_a_l_device_object.htm">xiiGALDeviceObject</a>);</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  <a class="code" href="../../df/ddf/classxii_g_a_l_buffer_view_handle.htm">xiiGALBufferViewHandle</a>  m_hDefaultBufferView;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  <a class="code" href="../../dd/d52/classxii_g_a_l_texture_view_handle.htm">xiiGALTextureViewHandle</a> m_hDefaultTextureView;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  <a class="code" href="../../dd/d52/classxii_g_a_l_texture_view_handle.htm">xiiGALTextureViewHandle</a> m_hDefaultRenderTargetView;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#if XII_ENABLED(XII_COMPILE_FOR_DEVELOPMENT)</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  <span class="keyword">mutable</span> <a class="code" href="../../d6/d0c/classxii_hashed_string.htm">xiiHashedString</a> m_sDebugName;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;};</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> CreationDescription&gt;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">class </span><a class="code" href="../../d4/d2d/classxii_g_a_l_resource.htm">xiiGALResource</a> : <span class="keyword">public</span> <a class="code" href="../../d4/d76/classxii_g_a_l_resource_base.htm">xiiGALResourceBase</a></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;{</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  XII_ALWAYS_INLINE <a class="code" href="../../d4/d2d/classxii_g_a_l_resource.htm">xiiGALResource</a>(<span class="keyword">const</span> CreationDescription&amp; description) :</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    m_Description(description)</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  {</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  }</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  XII_ALWAYS_INLINE <span class="keyword">const</span> CreationDescription&amp; GetDescription()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_Description; }</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  CreationDescription m_Description;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;};</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="preprocessor">#include &lt;GraphicsFoundation/Resources/Implementation/Resource_inl.h&gt;</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="../../d5/d19/classxii_g_a_l_device.htm">xiiGALDevice</a>;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;};</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#include &lt;GraphicsFoundation/Resources/Implementation/Resource_inl.h&gt;</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclassxii_hashed_string_htm"><div class="ttname"><a href="../../d6/d0c/classxii_hashed_string.htm">xiiHashedString</a></div><div class="ttdoc">This class is optimized to take nearly no memory (sizeof(void*)) and to allow very fast checks whethe...</div><div class="ttdef"><b>Definition:</b> HashedString.h:24</div></div>
-<div class="ttc" id="aclassxii_ref_counted_htm"><div class="ttname"><a href="../../d3/dd0/classxii_ref_counted.htm">xiiRefCounted</a></div><div class="ttdoc">Base class for reference counted objects.</div><div class="ttdef"><b>Definition:</b> RefCounted.h:51</div></div>
-<div class="ttc" id="aclassxii_g_a_l_resource_base_htm"><div class="ttname"><a href="../../d4/d76/classxii_g_a_l_resource_base.htm">xiiGALResourceBase</a></div><div class="ttdoc">Base GAL object interface.</div><div class="ttdef"><b>Definition:</b> Resource.h:8</div></div>
-<div class="ttc" id="aclassxii_g_a_l_texture_view_handle_htm"><div class="ttname"><a href="../../dd/d52/classxii_g_a_l_texture_view_handle.htm">xiiGALTextureViewHandle</a></div><div class="ttdef"><b>Definition:</b> GraphicsTypes.h:1637</div></div>
+<div class="ttc" id="aclassxii_g_a_l_texture_view_handle_htm"><div class="ttname"><a href="../../dd/d52/classxii_g_a_l_texture_view_handle.htm">xiiGALTextureViewHandle</a></div><div class="ttdef"><b>Definition:</b> GraphicsTypes.h:1621</div></div>
+<div class="ttc" id="aclassxii_g_a_l_device_object_htm"><div class="ttname"><a href="../../d5/d12/classxii_g_a_l_device_object.htm">xiiGALDeviceObject</a></div><div class="ttdoc">Base Graphics Abstraction Layer Object.</div><div class="ttdef"><b>Definition:</b> DeviceObject.h:8</div></div>
+<div class="ttc" id="aclassxii_g_a_l_resource_view_htm"><div class="ttname"><a href="../../dc/d10/classxii_g_a_l_resource_view.htm">xiiGALResourceView</a></div><div class="ttdoc">Base class for all GAL resource views (texture and buffer views).</div><div class="ttdef"><b>Definition:</b> Resource.h:25</div></div>
 <div class="ttc" id="aclassxii_hash_table_htm"><div class="ttname"><a href="../../d8/dc2/classxii_hash_table.htm">xiiHashTable&lt; xiiUInt32, xiiGALBufferViewHandle &gt;</a></div></div>
-<div class="ttc" id="aclassxii_g_a_l_resource_htm"><div class="ttname"><a href="../../d4/d2d/classxii_g_a_l_resource.htm">xiiGALResource</a></div><div class="ttdoc">Base class for GAL resources, stores a creation description of the object and also allows for referen...</div><div class="ttdef"><b>Definition:</b> GraphicsFoundationDLL.h:86</div></div>
-<div class="ttc" id="aclassxii_g_a_l_buffer_view_handle_htm"><div class="ttname"><a href="../../df/ddf/classxii_g_a_l_buffer_view_handle.htm">xiiGALBufferViewHandle</a></div><div class="ttdef"><b>Definition:</b> GraphicsTypes.h:1588</div></div>
-<div class="ttc" id="aclassxii_g_a_l_device_htm"><div class="ttname"><a href="../../d5/d19/classxii_g_a_l_device.htm">xiiGALDevice</a></div><div class="ttdoc">The xiiRenderDevice class is the primary interface for interactions with rendering APIs....</div><div class="ttdef"><b>Definition:</b> Device.h:14</div></div>
+<div class="ttc" id="aclassxii_g_a_l_resource_htm"><div class="ttname"><a href="../../d4/d2d/classxii_g_a_l_resource.htm">xiiGALResource</a></div><div class="ttdoc">Base class for all GAL resources (textures, buffers, etc).</div><div class="ttdef"><b>Definition:</b> Resource.h:9</div></div>
+<div class="ttc" id="aclassxii_g_a_l_buffer_view_handle_htm"><div class="ttname"><a href="../../df/ddf/classxii_g_a_l_buffer_view_handle.htm">xiiGALBufferViewHandle</a></div><div class="ttdef"><b>Definition:</b> GraphicsTypes.h:1572</div></div>
+<div class="ttc" id="aclassxii_g_a_l_device_htm"><div class="ttname"><a href="../../d5/d19/classxii_g_a_l_device.htm">xiiGALDevice</a></div><div class="ttdoc">The xiiRenderDevice class is the primary interface for interactions with rendering APIs....</div><div class="ttdef"><b>Definition:</b> Device.h:15</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.htm">home</a></li><li class="navelem"><a class="el" href="../../dir_1036706e55c22cab35bc1c58ee689f1d.htm">runner</a></li><li class="navelem"><a class="el" href="../../dir_629f8151d55d307162ff2d619fb1783d.htm">work</a></li><li class="navelem"><a class="el" href="../../dir_1ddc44fe1263a8c7935fa6130b7d9499.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_2c1b6808f12952f4c36e05ba7068379a.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_b5a1c4ecfca018ad24b729e213296d41.htm">Source</a></li><li class="navelem"><a class="el" href="../../dir_e321052006a51284e67389ab20037e7c.htm">Engine</a></li><li class="navelem"><a class="el" href="../../dir_60f548c54f5a79fe3a3b3b88ff8146f5.htm">GraphicsFoundation</a></li><li class="navelem"><a class="el" href="../../dir_f974d899601811362b57092dd8d00a65.htm">Resources</a></li><li class="navelem"><b>Resource.h</b></li>
-    <li class="footer">Generated on Wed Dec 27 2023 06:00:35 for XIIEngine by
+    <li class="footer">Generated on Thu Dec 28 2023 07:57:03 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

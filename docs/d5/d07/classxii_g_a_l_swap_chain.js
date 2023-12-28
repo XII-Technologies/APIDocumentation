@@ -6,6 +6,7 @@ var classxii_g_a_l_swap_chain =
     [ "DeInitPlatform", "d5/d07/classxii_g_a_l_swap_chain.htm#a707af76edf9d1e8fbba566bd7c6ab387", null ],
     [ "GetBackBufferTexture", "d5/d07/classxii_g_a_l_swap_chain.htm#a79e02fea314c01af515f01b56057a4ba", null ],
     [ "GetCurrentSize", "d5/d07/classxii_g_a_l_swap_chain.htm#ab2462e578a24df82ad84acebfa9593b1", null ],
+    [ "GetDescription", "d5/d07/classxii_g_a_l_swap_chain.htm#af3b6f02937387264b3da416873f97ec9", null ],
     [ "GetPresentMode", "d5/d07/classxii_g_a_l_swap_chain.htm#a1046141038648958ac8f21b8b1abdee3", null ],
     [ "GetRenderTargets", "d5/d07/classxii_g_a_l_swap_chain.htm#af7969b1b133a770b7176bd175ece3d64", null ],
     [ "InitPlatform", "d5/d07/classxii_g_a_l_swap_chain.htm#a1f102aa950aa0b96a3e1442825521b6a", null ],
@@ -18,6 +19,7 @@ var classxii_g_a_l_swap_chain =
     [ "xiiGALDevice", "d5/d07/classxii_g_a_l_swap_chain.htm#a8a9dd0ea17d38c3d68c9db0002e5dab0", null ],
     [ "xiiMemoryUtils", "d5/d07/classxii_g_a_l_swap_chain.htm#aefc9ff75d6833fd2f05be48e16436db6", null ],
     [ "m_CurrentSize", "d5/d07/classxii_g_a_l_swap_chain.htm#af4b83a46f1b9636d9565bc6ffad0c3f4", null ],
+    [ "m_Description", "d5/d07/classxii_g_a_l_swap_chain.htm#ab1854eaee6e3d109c40b4630bc356e8e", null ],
     [ "m_PresentMode", "d5/d07/classxii_g_a_l_swap_chain.htm#a34bdfc14f4d4689aeb616c4c126d513b", null ],
     [ "m_RenderTargets", "d5/d07/classxii_g_a_l_swap_chain.htm#aea47b9717fbbebde8ffbabbedd03da97", null ]
 ];

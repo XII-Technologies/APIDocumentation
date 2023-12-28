@@ -1,6 +1,8 @@
 var classxii_g_a_l_resource =
 [
-    [ "xiiGALResource", "d4/d2d/classxii_g_a_l_resource.htm#aedad280576e5d971fe678ddd1a5414c1", null ],
-    [ "GetDescription", "d4/d2d/classxii_g_a_l_resource.htm#a23ee9e8b89291479df85fb237e5cd005", null ],
-    [ "m_Description", "d4/d2d/classxii_g_a_l_resource.htm#a3ccbe6ef5a7f0de4cfad688ee6ba1360", null ]
+    [ "xiiGALDevice", "d4/d2d/classxii_g_a_l_resource.htm#a8a9dd0ea17d38c3d68c9db0002e5dab0", null ],
+    [ "m_BufferViews", "d4/d2d/classxii_g_a_l_resource.htm#a7918773a456e5b9b5b42783a6a90b0cf", null ],
+    [ "m_DefaultBufferViews", "d4/d2d/classxii_g_a_l_resource.htm#a334a1e9039a29f7bfad75a752d795dc3", null ],
+    [ "m_DefaultTextureViews", "d4/d2d/classxii_g_a_l_resource.htm#a7161e57fc08bcfa11fbee95d46be046d", null ],
+    [ "m_TextureViews", "d4/d2d/classxii_g_a_l_resource.htm#a41985e40dd8eafda40ff75b6936a12ca", null ]
 ];

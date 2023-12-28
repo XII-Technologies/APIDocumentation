@@ -1,6 +1,8 @@
 var classxii_g_a_l_object =
 [
-    [ "xiiGALObject", "d3/dda/classxii_g_a_l_object.htm#a39f171f7adfea84e1d8b382e83d98913", null ],
-    [ "GetDescription", "d3/dda/classxii_g_a_l_object.htm#aec82f4a7b784cc3f85c116d6c434e712", null ],
-    [ "m_Description", "d3/dda/classxii_g_a_l_object.htm#acc9ad6d4d15f9953e39ee3059e60e599", null ]
+    [ "GetDebugName", "d3/dda/classxii_g_a_l_object.htm#a4c176960c33c4a3b6140b80e3949e4cd", null ],
+    [ "SetDebugName", "d3/dda/classxii_g_a_l_object.htm#ac463db8bbce62bcf989377e3b0812bb3", null ],
+    [ "SetDebugNamePlatform", "d3/dda/classxii_g_a_l_object.htm#a5177f34d3ae94c30fbecd0d3cc36f06d", null ],
+    [ "xiiGALDevice", "d3/dda/classxii_g_a_l_object.htm#a8a9dd0ea17d38c3d68c9db0002e5dab0", null ],
+    [ "m_sDebugName", "d3/dda/classxii_g_a_l_object.htm#ab142653071e67b7a51f8d4349014679c", null ]
 ];

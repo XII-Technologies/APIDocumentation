@@ -8,7 +8,6 @@ var structxii_g_a_l_misc_texture_flags =
       [ "Memoryless", "d6/dd3/structxii_g_a_l_misc_texture_flags.htm#a196e11b3b7e52d4fab6d6f47801e8556ad64cd0ab19952a2e462843d053eb43bf", null ],
       [ "SparseAlias", "d6/dd3/structxii_g_a_l_misc_texture_flags.htm#a196e11b3b7e52d4fab6d6f47801e8556a859eae7a2794355b50672ad48261e934", null ],
       [ "Subsampled", "d6/dd3/structxii_g_a_l_misc_texture_flags.htm#a196e11b3b7e52d4fab6d6f47801e8556a3f947f24110dd24bf569d642aa8fcb97", null ],
-      [ "Proxy", "d6/dd3/structxii_g_a_l_misc_texture_flags.htm#a196e11b3b7e52d4fab6d6f47801e8556a12294a6a67a87b50828317105713bcf9", null ],
       [ "Default", "d6/dd3/structxii_g_a_l_misc_texture_flags.htm#a196e11b3b7e52d4fab6d6f47801e8556a7aa59996e16ac9f4025ef0623f29e52a", null ]
     ] ]
 ];
