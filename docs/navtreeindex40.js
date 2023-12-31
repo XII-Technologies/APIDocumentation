@@ -1,7 +1,5 @@
 var NAVTREEINDEX40 =
 {
-"d5/d65/classxii_forward_events_to_game_state_component.htm#a6757210a796c52132330b92a7d0da84e":[5,0,698,4],
-"d5/d65/classxii_forward_events_to_game_state_component.htm#a6e9f96b9a15b258db62c2f40900d320d":[5,0,698,1],
 "d5/d65/classxii_forward_events_to_game_state_component.htm#a7f2f48f33fe4043ff22d35d6ae6db6a9":[5,0,698,3],
 "d5/d65/classxii_forward_events_to_game_state_component.htm#a97de051f65db15904d7310a769ffdebf":[5,0,698,5],
 "d5/d65/classxii_forward_events_to_game_state_component.htm#afcfe4e1520175f3700a5f9744d51e085":[5,0,698,2],
@@ -249,5 +247,7 @@ var NAVTREEINDEX40 =
 "d5/d8f/structxii_debug_text_placement.htm#a768e11c5b0568ffb07abfba28548129faa0024807ae17f52f7024f17523ce661a":[5,0,466,1,4],
 "d5/d8f/structxii_debug_text_placement.htm#a768e11c5b0568ffb07abfba28548129fac33226482c46137cd4ed106a37e64478":[5,0,466,1,3],
 "d5/d8f/structxii_debug_text_placement.htm#a768e11c5b0568ffb07abfba28548129fac4627278ee522874a1aa5e7778071d49":[5,0,466,1,5],
-"d5/d8f/structxii_debug_text_placement.htm#a768e11c5b0568ffb07abfba28548129fad43da3febda61041a5aaa60f2794fa10":[5,0,466,1,1]
+"d5/d8f/structxii_debug_text_placement.htm#a768e11c5b0568ffb07abfba28548129fad43da3febda61041a5aaa60f2794fa10":[5,0,466,1,1],
+"d5/d8f/structxii_debug_text_placement.htm#a768e11c5b0568ffb07abfba28548129fae1fdda80f28ba7f20e242e438b2c947c":[5,0,466,1,6],
+"d5/d8f/structxii_debug_text_placement.htm#a85fe1fc1e65a6f5a66b0a2ea01467600":[5,0,466,0]
 };

@@ -1,6 +1,5 @@
 var NAVTREEINDEX91 =
 {
-"dc/d54/classxii_enumerable.htm#afe563009387fc95276982bb4b87094e0":[5,0,627,2],
 "dc/d55/structxii_fileserver_event.htm":[5,0,675],
 "dc/d55/structxii_fileserver_event.htm#a1af823924cf6890bb58cc1bd748faa39":[5,0,675,3],
 "dc/d55/structxii_fileserver_event.htm#a2340e3bc3ff7ab0cf474f942333e5de4":[5,0,675,0],
@@ -249,5 +248,6 @@ var NAVTREEINDEX91 =
 "dc/d74/classxii_follow_path_component.htm#a260d70b2f67c13f4254cb634cd63d64d":[5,0,694,21],
 "dc/d74/classxii_follow_path_component.htm#a28a128b85e312f8e15f890053e6b9059":[5,0,694,23],
 "dc/d74/classxii_follow_path_component.htm#a2bbbefe4d4ff169a35362ef4bf97e0c7":[5,0,694,22],
-"dc/d74/classxii_follow_path_component.htm#a3334e37d70f53d675bf1e49dde606742":[5,0,694,5]
+"dc/d74/classxii_follow_path_component.htm#a3334e37d70f53d675bf1e49dde606742":[5,0,694,5],
+"dc/d74/classxii_follow_path_component.htm#a4d8b09fb9bb64e94d63a7b2aaf004345":[5,0,694,6]
 };

@@ -20,6 +20,7 @@ var classxii_document_node_manager =
     [ "CopySelectedObjects", "db/d55/classxii_document_node_manager.htm#a5290d9aeda492c97852d4fc5bfcc41fe", null ],
     [ "Disconnect", "db/d55/classxii_document_node_manager.htm#a2636293a1b798b55fcbeec8b8501122e", null ],
     [ "GetConnection", "db/d55/classxii_document_node_manager.htm#ac5ceab2722179c9e1b49937e240ae377", null ],
+    [ "GetConnectionIfExists", "db/d55/classxii_document_node_manager.htm#aa08356ee4f95cd3eefbcce70ab0de9fd", null ],
     [ "GetConnections", "db/d55/classxii_document_node_manager.htm#a10f8e917874849a8d52435b03ee2977c", null ],
     [ "GetConnectionType", "db/d55/classxii_document_node_manager.htm#a5f4f454d64a7e0f97b168b732a07eb03", null ],
     [ "GetDynamicPinNames", "db/d55/classxii_document_node_manager.htm#a883fd17abe63b2d591b874bf9117d654", null ],

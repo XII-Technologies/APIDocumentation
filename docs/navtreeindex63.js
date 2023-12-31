@@ -1,7 +1,5 @@
 var NAVTREEINDEX63 =
 {
-"d8/d91/classxii_qt_file_widget.htm#a419d6277e3757d1ab036d37827945062":[5,0,1668,1],
-"d8/d91/classxii_qt_file_widget.htm#a784c82f7a5a34d1903ea2b634a0a258d":[5,0,1668,4],
 "d8/d91/classxii_qt_file_widget.htm#a78909d05616a65ac1c78fce56c4dd778":[5,0,1668,0],
 "d8/d91/classxii_qt_file_widget.htm#af48b21e2db9a9e09337e88b4a81b8025":[5,0,1668,2],
 "d8/d91/classxii_rope_simulator.htm":[5,0,1925],
@@ -249,5 +247,7 @@ var NAVTREEINDEX63 =
 "d8/da9/classxii_document.htm#a226ae03c078139a6bf5892f975866877":[5,0,522,55],
 "d8/da9/classxii_document.htm#a28f3e049f7e507a374643dc892fadc21":[5,0,522,27],
 "d8/da9/classxii_document.htm#a2983b30788bcab87e46a88f0b98108df":[5,0,522,12],
-"d8/da9/classxii_document.htm#a2b7deb517dc59d659454f5a36f046f60":[5,0,522,67]
+"d8/da9/classxii_document.htm#a2b7deb517dc59d659454f5a36f046f60":[5,0,522,67],
+"d8/da9/classxii_document.htm#a2d90a86724ce8b8070349730715bc91c":[5,0,522,80],
+"d8/da9/classxii_document.htm#a2de9026451c4f084acc1b4c094de6150":[5,0,522,40]
 };

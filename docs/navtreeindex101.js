@@ -1,6 +1,5 @@
 var NAVTREEINDEX101 =
 {
-"dd/dc3/classxii_list_base.htm#aae32a90cf564ae855b8bef7b6e351de8":[5,0,1228,31],
 "dd/dc3/classxii_list_base.htm#ab87b1e463cdbf49799c73e58173bd4de":[5,0,1228,18],
 "dd/dc3/classxii_list_base.htm#ac0d6cbe66715efb91306b7aed30a6ebc":[5,0,1228,1],
 "dd/dc3/classxii_list_base.htm#acec792fd54b2e78fd10b6b1cc89f94b5":[5,0,1228,14],
@@ -249,5 +248,6 @@ var NAVTREEINDEX101 =
 "dd/deb/structxii_mesh_buffer_resource_descriptor.htm#a5298b0da9d77b1545ea8b4ebe8d6c8b6":[5,0,1331,19],
 "dd/deb/structxii_mesh_buffer_resource_descriptor.htm#a5656d701fa7d6d8919da8f8bd7542b25":[5,0,1331,16],
 "dd/deb/structxii_mesh_buffer_resource_descriptor.htm#a72596199f225b14507f9dec15bd3aec7":[5,0,1331,2],
-"dd/deb/structxii_mesh_buffer_resource_descriptor.htm#a72d6a277c456ea8831c3285b719ec40c":[5,0,1331,24]
+"dd/deb/structxii_mesh_buffer_resource_descriptor.htm#a72d6a277c456ea8831c3285b719ec40c":[5,0,1331,24],
+"dd/deb/structxii_mesh_buffer_resource_descriptor.htm#a7d47d0a7d35c7275705c17e179dcf9f8":[5,0,1331,8]
 };

@@ -1,7 +1,5 @@
 var NAVTREEINDEX51 =
 {
-"d6/dad/classxii_custom_mesh_component.htm#a57ea26c5e839b1873ad7c9f6536e2589":[5,0,439,20],
-"d6/dad/classxii_custom_mesh_component.htm#a58573bce389aedb2944e23d449f7ea80":[5,0,439,7],
 "d6/dad/classxii_custom_mesh_component.htm#a5c3cba9e161c55ed667ff611d7cdb592":[5,0,439,23],
 "d6/dad/classxii_custom_mesh_component.htm#a87dbe4b6b5d34995cec8fd7b77f17a6b":[5,0,439,9],
 "d6/dad/classxii_custom_mesh_component.htm#a9019efbb5f25dc0310634cbc246e35da":[5,0,439,14],
@@ -249,5 +247,7 @@ var NAVTREEINDEX51 =
 "d6/dcb/classxii_resource_manager_state.htm#a4b1818a3d968e8122dbcacae9884c44f":[5,0,1913,4],
 "d6/dcb/classxii_resource_manager_state.htm#a66691b7e1b5c90fd7a6604f1abea5850":[5,0,1913,3],
 "d6/dcb/classxii_resource_manager_state.htm#a95fdb687890985eac58a959bcaac9ffb":[5,0,1913,0],
-"d6/dcb/classxii_resource_manager_state.htm#aad5c1fd97c86fe727580bb720bb8c5ff":[5,0,1913,2]
+"d6/dcb/classxii_resource_manager_state.htm#aad5c1fd97c86fe727580bb720bb8c5ff":[5,0,1913,2],
+"d6/dcb/structxii_visual_script_variable.htm":[5,0,2482],
+"d6/dcb/structxii_visual_script_variable.htm#ab14437cb81d768b181403d8074bc09bf":[5,0,2482,1]
 };

@@ -1,6 +1,5 @@
 var NAVTREEINDEX95 =
 {
-"dc/def/classxii_range_view.htm#a7d6636be47e4b6a08b9f6a7f56a055bf":[5,0,1817,8],
 "dc/def/classxii_range_view.htm#a832f5c0bc259cb5c3939f1ec55d58a18":[5,0,1817,5],
 "dc/def/classxii_range_view.htm#a8378215c88c684d360158d869e3f0c49":[5,0,1817,14],
 "dc/def/classxii_range_view.htm#acca3ba77e1d19b6dad8411044a39fa94":[5,0,1817,10],
@@ -249,5 +248,6 @@ var NAVTREEINDEX95 =
 "dd/d1a/classxii_input_device_mouse_keyboard.htm#a62fe8488bbdcddc21628786101f069f2":[5,0,1160,6],
 "dd/d1a/classxii_input_device_mouse_keyboard.htm#ad581683c61806c4ab293d14ed795d63d":[5,0,1160,5],
 "dd/d1a/classxii_input_device_mouse_keyboard.htm#adddab997ee02bff61af48c4028990052":[5,0,1160,3],
-"dd/d1a/classxii_input_device_mouse_keyboard.htm#af10365827bba9ca2caade68e7db9c0f5":[5,0,1160,4]
+"dd/d1a/classxii_input_device_mouse_keyboard.htm#af10365827bba9ca2caade68e7db9c0f5":[5,0,1160,4],
+"dd/d1a/classxii_memory_stream_container_wrapper_storage.htm":[5,0,1317]
 };

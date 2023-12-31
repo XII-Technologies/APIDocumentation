@@ -1,6 +1,5 @@
 var NAVTREEINDEX112 =
 {
-"df/d7b/classxii_float16_vec3.htm#aef015be57d5ad11f56e607da9fe6c950":[5,0,688,5],
 "df/d7c/classxii_qt_scene_document_window.htm":[5,0,1756],
 "df/d7c/classxii_qt_scene_document_window.htm#ab12a62f0ff0aee271322e017865eae69":[5,0,1756,2],
 "df/d7c/classxii_qt_scene_document_window.htm#abd1510d8991f6726f04b694df37e9af4":[5,0,1756,1],
@@ -249,5 +248,6 @@ var NAVTREEINDEX112 =
 "df/dae/structxii_gizmo_flags.htm#a95d0c5ba05ead4711dcaeb7730b55dd1a3376d737279146cc24cb202c19b7beed":[5,0,1055,2,2],
 "df/dae/structxii_gizmo_flags.htm#a95d0c5ba05ead4711dcaeb7730b55dd1a5f334835dc93210e73c56c21df5b7c54":[5,0,1055,2,6],
 "df/dae/structxii_gizmo_flags.htm#a95d0c5ba05ead4711dcaeb7730b55dd1a6dc35a9e75900fe32940fce3aa40b45c":[5,0,1055,2,4],
-"df/dae/structxii_gizmo_flags.htm#a95d0c5ba05ead4711dcaeb7730b55dd1a74afcb82ec9bdbeb5f40ec9021a5c2d9":[5,0,1055,2,5]
+"df/dae/structxii_gizmo_flags.htm#a95d0c5ba05ead4711dcaeb7730b55dd1a74afcb82ec9bdbeb5f40ec9021a5c2d9":[5,0,1055,2,5],
+"df/dae/structxii_gizmo_flags.htm#a95d0c5ba05ead4711dcaeb7730b55dd1a819289d7c2ce74d5f1056d9f592ba832":[5,0,1055,2,3]
 };

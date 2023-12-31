@@ -1,6 +1,5 @@
 var NAVTREEINDEX96 =
 {
-"dd/d1a/classxii_memory_stream_container_wrapper_storage.htm":[5,0,1317],
 "dd/d1a/classxii_memory_stream_container_wrapper_storage.htm#a185f3caa31aa9970151f17be939c288a":[5,0,1317,9],
 "dd/d1a/classxii_memory_stream_container_wrapper_storage.htm#a4fcfbc60a1424231f2839a05638b70c5":[5,0,1317,4],
 "dd/d1a/classxii_memory_stream_container_wrapper_storage.htm#a7c1b68427e9cfad7693fbcbebada71b5":[5,0,1317,2],
@@ -249,5 +248,6 @@ var NAVTREEINDEX96 =
 "dd/d3b/classxii_g_a_l_shader_vulkan.htm#a7abd4d34402a00018855f69d463fdad7":[5,0,943,27],
 "dd/d3b/classxii_g_a_l_shader_vulkan.htm#a7ad4284ab5952b2fbf776aa10957f60b":[5,0,943,19],
 "dd/d3b/classxii_g_a_l_shader_vulkan.htm#a8197ffa2b5b97136484ee8025a90316e":[5,0,943,18],
-"dd/d3b/classxii_g_a_l_shader_vulkan.htm#a83d12ea3c0d078cfaece1c645027568e":[5,0,943,29]
+"dd/d3b/classxii_g_a_l_shader_vulkan.htm#a83d12ea3c0d078cfaece1c645027568e":[5,0,943,29],
+"dd/d3b/classxii_g_a_l_shader_vulkan.htm#a87b63a6988f429035e7e9abf364296d9":[5,0,943,14]
 };

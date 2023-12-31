@@ -1,7 +1,5 @@
 var NAVTREEINDEX57 =
 {
-"d7/dab/structxii_token_parse_utils_1_1_token_match.htm#a97ba81aed1dae35ed83b250911da098c":[5,0,12,0,3],
-"d7/dab/structxii_token_parse_utils_1_1_token_match.htm#addcafe25fe0ce6d846d17427c95d1dab":[5,0,12,0,1],
 "d7/dab/structxii_token_parse_utils_1_1_token_match.htm#af499e2b419f91238e17aebc47eb0fe97":[5,0,12,0,2],
 "d7/dac/classxii_debug_renderer.htm":[5,0,462],
 "d7/dac/classxii_debug_renderer.htm#abfe8b78aee630f06e4fcf515efdb57e3":[5,0,462,3],
@@ -249,5 +247,7 @@ var NAVTREEINDEX57 =
 "d7/dd0/classxii_anim_graph.htm#aa518e1fbbc3f64d2f204c4f99844275e":[5,0,127,0],
 "d7/dd0/classxii_anim_graph.htm#abeb35d1204ef96523237547df29fdba9":[5,0,127,6],
 "d7/dd0/classxii_anim_graph.htm#acd668e51584fc27667e1db626e3f35e8":[5,0,127,3],
-"d7/dd0/classxii_anim_graph.htm#ace5c1131e0204bafdf2f2cc75dbdb156":[5,0,127,12]
+"d7/dd0/classxii_anim_graph.htm#ace5c1131e0204bafdf2f2cc75dbdb156":[5,0,127,12],
+"d7/dd0/classxii_anim_graph.htm#ad6dbd48c4ded987d70c167cb6d9105e2":[5,0,127,7],
+"d7/dd0/classxii_anim_graph.htm#aedbb604d5a879b98cb7ca316270231e3":[5,0,127,10]
 };

@@ -1,6 +1,5 @@
 var NAVTREEINDEX110 =
 {
-"df/d42/structxii_x_r_device_event_data.htm#a78eb50b03f50772f83e69d888a361bb5":[5,0,2527,1],
 "df/d42/structxii_x_r_device_event_data.htm#aeae7532a43926ba1ea4f1eb03068dcff":[5,0,2527,0],
 "df/d42/structxii_x_r_device_event_data.htm#aeae7532a43926ba1ea4f1eb03068dcffa0f98d176e3c1724c9a23539cb7bec73e":[5,0,2527,0,1],
 "df/d42/structxii_x_r_device_event_data.htm#aeae7532a43926ba1ea4f1eb03068dcffa77b4f494c4226ecfe3bbc708a3064091":[5,0,2527,0,0],
@@ -249,5 +248,6 @@ var NAVTREEINDEX110 =
 "df/d60/classxii_ipc_channel.htm#aa14be1cd0a271504239cc40975307da4":[5,0,1181,6],
 "df/d60/classxii_ipc_channel.htm#aa48f7ccb090abd7b742fbe61de63646b":[5,0,1181,7],
 "df/d60/classxii_ipc_channel.htm#aa7561151a0108f2c71883ce1af496d12":[5,0,1181,9],
-"df/d60/classxii_ipc_channel.htm#ab3a7aca48b5c6086824e23326f7e0227":[5,0,1181,3]
+"df/d60/classxii_ipc_channel.htm#ab3a7aca48b5c6086824e23326f7e0227":[5,0,1181,3],
+"df/d60/classxii_ipc_channel.htm#ab3a7aca48b5c6086824e23326f7e0227a87cef66a0d16371a191191e984cab381":[5,0,1181,3,1]
 };

@@ -279,13 +279,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../.
 <tr class="memitem:a828245f48cdb5625f11a2d04993621a3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d19/classxii_g_a_l_device.htm#a828245f48cdb5625f11a2d04993621a3">WaitIdle</a> ()</td></tr>
 <tr class="memdesc:a828245f48cdb5625f11a2d04993621a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Waits until all outstanding operations on the GPU are complete and destroys any pending resources and GPU objects.  <a href="../../d5/d19/classxii_g_a_l_device.htm#a828245f48cdb5625f11a2d04993621a3">More...</a><br /></td></tr>
 <tr class="separator:a828245f48cdb5625f11a2d04993621a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af862230df1dd631b8d176feb5713f7bd"><td class="memItemLeft" align="right" valign="top">XII_NODISCARD <a class="el" href="../../df/de3/classxii_g_a_l_texture_handle.htm">xiiGALTextureHandle</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d19/classxii_g_a_l_device.htm#af862230df1dd631b8d176feb5713f7bd">CreateProxyTexture</a> (<a class="el" href="../../df/de3/classxii_g_a_l_texture_handle.htm">xiiGALTextureHandle</a> hParentTexture, xiiUInt32 uiSlice)</td></tr>
-<tr class="memdesc:af862230df1dd631b8d176feb5713f7bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">This creates a texture to a given array slice in a texture array.  <a href="../../d5/d19/classxii_g_a_l_device.htm#af862230df1dd631b8d176feb5713f7bd">More...</a><br /></td></tr>
-<tr class="separator:af862230df1dd631b8d176feb5713f7bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a49f6fb5eba020c1924c3e14db7cd5df7"><td class="memItemLeft" align="right" valign="top"><a id="a49f6fb5eba020c1924c3e14db7cd5df7"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d19/classxii_g_a_l_device.htm#a49f6fb5eba020c1924c3e14db7cd5df7">DestroyProxyTexture</a> (<a class="el" href="../../df/de3/classxii_g_a_l_texture_handle.htm">xiiGALTextureHandle</a> hProxyTexture)</td></tr>
-<tr class="memdesc:a49f6fb5eba020c1924c3e14db7cd5df7"><td class="mdescLeft">&#160;</td><td class="mdescRight">This destroys the proxy texture object with the given handle. <br /></td></tr>
-<tr class="separator:a49f6fb5eba020c1924c3e14db7cd5df7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adf9a9118133c528059ed19444bb8cd68"><td class="memItemLeft" align="right" valign="top"><a id="adf9a9118133c528059ed19444bb8cd68"></a>
 const XII_NODISCARD <a class="el" href="../../d6/dd5/structxii_g_a_l_device_creation_description.htm">xiiGALDeviceCreationDescription</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d19/classxii_g_a_l_device.htm#adf9a9118133c528059ed19444bb8cd68">GetDescription</a> () const</td></tr>
 <tr class="memdesc:adf9a9118133c528059ed19444bb8cd68"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the creation description for this device. <br /></td></tr>
@@ -752,7 +745,7 @@ Protected Attributes</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>The handle to the created buffer object. The function calls <a class="el" href="../../d7/df4/classxii_ref_counting_impl.htm#af89a37294bfebe74f2f43c492d2c14c3" title="Increments the reference counter. Returns the new reference count.">AddRef()</a>, so that the new object will have one reference.</dd></dl>
 <dl class="section remark"><dt>Remarks</dt><dd>Size of a uniform buffer (<a class="el" href="../../d6/d24/structxii_g_a_l_bind_flags.htm" title="This describes which parts of the pipeline a resource can be bound to. It generally mirrors D3D11_BIN...">xiiGALBindFlags</a>) must be multiple of 16.<br  />
 Stride of a formatted buffer will be computed automatically from the format if the m_uiElementByteStride member of buffer description is set to default value (0). </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.htm#_todo000114">Todo:</a></b></dt><dd>GraphicsFoundation: Assert that the command encoder used to initialize the resource is not a deferred context, as those cannot be used to initialize resources. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.htm#_todo000115">Todo:</a></b></dt><dd>GraphicsFoundation: Assert that the command encoder used to initialize the resource is not a deferred context, as those cannot be used to initialize resources. </dd></dl>
 
 </div>
 </div>
@@ -892,38 +885,6 @@ Stride of a formatted buffer will be computed automatically from the format if t
 
 </div>
 </div>
-<a id="af862230df1dd631b8d176feb5713f7bd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af862230df1dd631b8d176feb5713f7bd">&#9670;&nbsp;</a></span>CreateProxyTexture()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">XII_NODISCARD <a class="el" href="../../df/de3/classxii_g_a_l_texture_handle.htm">xiiGALTextureHandle</a> xiiGALDevice::CreateProxyTexture </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="../../df/de3/classxii_g_a_l_texture_handle.htm">xiiGALTextureHandle</a>&#160;</td>
-          <td class="paramname"><em>hParentTexture</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">xiiUInt32&#160;</td>
-          <td class="paramname"><em>uiSlice</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>This creates a texture to a given array slice in a texture array. </p>
-<dl class="section note"><dt>Note</dt><dd>The parent texture must be an array type.</dd></dl>
-<dl class="section return"><dt>Returns</dt><dd>The handle to the created proxy texture object. This function calls <a class="el" href="../../d7/df4/classxii_ref_counting_impl.htm#af89a37294bfebe74f2f43c492d2c14c3" title="Increments the reference counter. Returns the new reference count.">AddRef()</a> on both the parent and proxy object, so that the new object will have one reference, and the parent texture reference incremented. </dd></dl>
-
-</div>
-</div>
 <a id="a5086fb1c12901cdb191623b0495257ed"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5086fb1c12901cdb191623b0495257ed">&#9670;&nbsp;</a></span>CreateQuery()</h2>
 
@@ -1002,8 +963,8 @@ Stride of a formatted buffer will be computed automatically from the format if t
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The handle to the created render pass object. The function calls <a class="el" href="../../d7/df4/classxii_ref_counting_impl.htm#af89a37294bfebe74f2f43c492d2c14c3" title="Increments the reference counter. Returns the new reference count.">AddRef()</a>, so that the new object will have one reference. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.htm#_todo000117">Todo:</a></b></dt><dd>GraphicsFoundation: Use VkPhysicalDeviceFragmentShadingRatePropertiesKHR::maxFragmentShadingRateAttachmentTexelSizeAspectRatio. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.htm#_todo000118">Todo:</a></b></dt><dd>GraphicsFoundation: Check render pass dependency source and destination stage mask is set to the undefined pipeline stage. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.htm#_todo000119">Todo:</a></b></dt><dd>GraphicsFoundation: Use VkPhysicalDeviceFragmentShadingRatePropertiesKHR::maxFragmentShadingRateAttachmentTexelSizeAspectRatio. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.htm#_todo000120">Todo:</a></b></dt><dd>GraphicsFoundation: Check render pass dependency source and destination stage mask is set to the undefined pipeline stage. </dd></dl>
 
 </div>
 </div>
@@ -1086,7 +1047,7 @@ Stride of a formatted buffer will be computed automatically from the format if t
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The handle to the created swap chain object. The function calls <a class="el" href="../../d7/df4/classxii_ref_counting_impl.htm#af89a37294bfebe74f2f43c492d2c14c3" title="Increments the reference counter. Returns the new reference count.">AddRef()</a>, so that the new object will have one reference. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.htm#_todo000113">Todo:</a></b></dt><dd>GraphicsFoundation: Add swap chain description validation. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.htm#_todo000114">Todo:</a></b></dt><dd>GraphicsFoundation: Add swap chain description validation. </dd></dl>
 
 </div>
 </div>
@@ -1132,8 +1093,8 @@ If initial data is provided, number of sub-resources must exactly match the numb
  15x6, 7x3, 3x1, 1x1, 15x6, 7x3, 3x1, 1x1.<br  />
 For a 15 x 6 x 4 3D texture, the following array of sub-resources should be provided:<br  />
  15x6x4, 7x3x2, 3x1x1, 1x1x1 </p>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.htm#_todo000115">Todo:</a></b></dt><dd>GraphicsFoundation: Vulkan allows the creation of 2D texture arrays, and using a single slice for view even if <a class="el" href="../../dc/d5c/structxii_g_a_l_shading_rate_capability_flags.htm#ae18051ba3e2592a63b1df04552e3f560aafeab8337981d7714bf8b3d47a052dd3" title="Allows to use texture 2D array for shading rate.">xiiGALShadingRateCapabilityFlags::TextureArray</a> is not supported by the device. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.htm#_todo000116">Todo:</a></b></dt><dd>GraphicsFoundation: Validate texture mip size to the tile size property. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.htm#_todo000116">Todo:</a></b></dt><dd>GraphicsFoundation: Vulkan allows the creation of 2D texture arrays, and using a single slice for view even if <a class="el" href="../../dc/d5c/structxii_g_a_l_shading_rate_capability_flags.htm#ae18051ba3e2592a63b1df04552e3f560aafeab8337981d7714bf8b3d47a052dd3" title="Allows to use texture 2D array for shading rate.">xiiGALShadingRateCapabilityFlags::TextureArray</a> is not supported by the device. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.htm#_todo000117">Todo:</a></b></dt><dd>GraphicsFoundation: Validate texture mip size to the tile size property. </dd></dl>
 
 </div>
 </div>
@@ -1168,6 +1129,7 @@ For a 15 x 6 x 4 3D texture, the following array of sub-resources should be prov
  If the number of slices is 0, all slices from m_uiFirstArraySlice or m_uiFirstDepthSlice will be referenced by the view. For non-array textures, the only allowed values for the number of slices are 0 and 1.<br  />
  Texture view will contain strong reference to the texture, so the texture will not be destroyed until all views are released.<br  />
  The function calls <a class="el" href="../../d7/df4/classxii_ref_counting_impl.htm#af89a37294bfebe74f2f43c492d2c14c3" title="Increments the reference counter. Returns the new reference count.">AddRef()</a> for the created interface, so it must be released by a call to <a class="el" href="../../d7/df4/classxii_ref_counting_impl.htm#a2cef7cdc6931aad7337348db21f38c64" title="Decrements the reference counter. Returns the new reference count.">ReleaseRef()</a> when it is no longer needed. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.htm#_todo000118">Todo:</a></b></dt><dd>GraphicsFoundation: Implement default texture view format deduction. </dd></dl>
 
 </div>
 </div>
@@ -1231,7 +1193,7 @@ For a 15 x 6 x 4 3D texture, the following array of sub-resources should be prov
 </div><div class="memdoc">
 
 <p>This returns the sparse texture format information for the given texture format, resource dimension and sample count. </p>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.htm#_todo000119">Todo:</a></b></dt><dd>GraphicsFoundation: To be implemented. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.htm#_todo000121">Todo:</a></b></dt><dd>GraphicsFoundation: To be implemented. </dd></dl>
 
 </div>
 </div>
@@ -1324,7 +1286,7 @@ For a 15 x 6 x 4 3D texture, the following array of sub-resources should be prov
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d5/d19/classxii_g_a_l_device.htm">xiiGALDevice</a></li>
-    <li class="footer">Generated on Thu Dec 28 2023 08:05:31 for XIIEngine by
+    <li class="footer">Generated on Sun Dec 31 2023 07:13:54 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

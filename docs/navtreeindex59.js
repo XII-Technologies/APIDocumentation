@@ -1,7 +1,5 @@
 var NAVTREEINDEX59 =
 {
-"d7/df1/classxii_simd_double.htm#a3526fabe06a6782c065823599069efd6":[5,0,2064,12],
-"d7/df1/classxii_simd_double.htm#a3646a48d4a2babf52c03c15b4b1efaf1":[5,0,2064,14],
 "d7/df1/classxii_simd_double.htm#a370eb0fda6dadd31c7830019f18c0fe0":[5,0,2064,13],
 "d7/df1/classxii_simd_double.htm#a3900e073d65e0cbcfdb1677753d7bc52":[5,0,2064,8],
 "d7/df1/classxii_simd_double.htm#a3cbb5903ae6216d4aae79d294dd75783":[5,0,2064,17],
@@ -249,5 +247,7 @@ var NAVTREEINDEX59 =
 "d8/d15/structxii_geometry_1_1_line.htm#a5c677ceda6c699c081779fce46ed6a23":[5,0,1045,1,0],
 "d8/d15/structxii_geometry_1_1_line.htm#aa8b610654bf56b1408b16381c0cb66d5":[5,0,1045,1,2],
 "d8/d15/structxii_geometry_1_1_line.htm#af1b7f7a1a262b5e21d79b8d595e2d36f":[5,0,1045,1,1],
-"d8/d15/structxii_tex_conv_1_1_key_enum_value_pair.htm":[5,0,2263,0]
+"d8/d15/structxii_tex_conv_1_1_key_enum_value_pair.htm":[5,0,2263,0],
+"d8/d15/structxii_tex_conv_1_1_key_enum_value_pair.htm#a39232c648f673c9205d8bbbd8c9895ca":[5,0,2263,0,1],
+"d8/d15/structxii_tex_conv_1_1_key_enum_value_pair.htm#a45d2267302ee208ff4bb95064f5f1a9c":[5,0,2263,0,2]
 };

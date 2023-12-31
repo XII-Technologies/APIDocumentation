@@ -1,7 +1,5 @@
 var NAVTREEINDEX65 =
 {
-"d8/dbd/classxii_asset_curator.htm#a8a4ac71d036ba9e97fd4f2cebd3094af":[5,0,192,6],
-"d8/dbd/classxii_asset_curator.htm#a8fe670e56225683254fc02752cb881d5":[5,0,192,1],
 "d8/dbd/classxii_asset_curator.htm#a912b4b5df955b8f8c216286f5cc0e051":[5,0,192,29],
 "d8/dbd/classxii_asset_curator.htm#a9425d93b8a9b961f540dbfc2e84051cb":[5,0,192,3],
 "d8/dbd/classxii_asset_curator.htm#a96b1d3ddb31d7c74dc2a90d6c90a28d7":[5,0,192,22],
@@ -249,5 +247,7 @@ var NAVTREEINDEX65 =
 "d8/ddd/structxii_prefab_instantiation_options.htm#a5cd1ff127e47a915103c05de7f88eb63":[5,0,1511,0],
 "d8/ddd/structxii_prefab_instantiation_options.htm#a5cd1ff127e47a915103c05de7f88eb63a0c57a1275241066e9a81818d40f14195":[5,0,1511,0,1],
 "d8/ddd/structxii_prefab_instantiation_options.htm#a5cd1ff127e47a915103c05de7f88eb63a57a1fef61773a50df3142c703b88e45e":[5,0,1511,0,2],
-"d8/ddd/structxii_prefab_instantiation_options.htm#a5cd1ff127e47a915103c05de7f88eb63a9ecf165ffcc7f00249f4a127534818ee":[5,0,1511,0,3]
+"d8/ddd/structxii_prefab_instantiation_options.htm#a5cd1ff127e47a915103c05de7f88eb63a9ecf165ffcc7f00249f4a127534818ee":[5,0,1511,0,3],
+"d8/ddd/structxii_prefab_instantiation_options.htm#a5cd1ff127e47a915103c05de7f88eb63af929328ef3d8c6e25c52b549fc61fccd":[5,0,1511,0,0],
+"d8/ddd/structxii_prefab_instantiation_options.htm#a7b3cad5570ca8eb0fb0520fbd6e9e512":[5,0,1511,1]
 };

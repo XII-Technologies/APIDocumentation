@@ -1,6 +1,5 @@
 var NAVTREEINDEX97 =
 {
-"dd/d3b/classxii_g_a_l_shader_vulkan.htm#a87b63a6988f429035e7e9abf364296d9":[5,0,943,14],
 "dd/d3b/classxii_g_a_l_shader_vulkan.htm#a8be81361faf7e31cd96dfbaadf7cd2e0":[5,0,943,11],
 "dd/d3b/classxii_g_a_l_shader_vulkan.htm#a8f588860a4be56a134cb996cee447dac":[5,0,943,13],
 "dd/d3b/classxii_g_a_l_shader_vulkan.htm#a930e6058f09a3bcb25ab51e9464a7d65":[5,0,943,12],
@@ -249,5 +248,6 @@ var NAVTREEINDEX97 =
 "dd/d53/structxii_type_traits.htm#a2abe485244473e24cede8d76e5c1087e":[5,0,2377,5],
 "dd/d53/structxii_type_traits.htm#a35ea12912392837d91ed5e0a18795343":[5,0,2377,0],
 "dd/d53/structxii_type_traits.htm#a50d6dbecfc77df8e1f960acbc5b1ea83":[5,0,2377,3],
-"dd/d53/structxii_type_traits.htm#aa739bf0c7eb83404ec30c3a0b9c99043":[5,0,2377,4]
+"dd/d53/structxii_type_traits.htm#aa739bf0c7eb83404ec30c3a0b9c99043":[5,0,2377,4],
+"dd/d54/classxii_tag_set_template_1_1_iterator.htm":[5,0,2246,0]
 };

@@ -1,6 +1,5 @@
 var NAVTREEINDEX109 =
 {
-"df/d05/structxii_profiling_system_1_1_profiling_data.htm#aca49fe1ab268ddb2442ecd2127f5864c":[5,0,1541,3,4],
 "df/d05/structxii_profiling_system_1_1_profiling_data.htm#ad1678b56c59ec904768f497af045ed43":[5,0,1541,3,1],
 "df/d05/structxii_profiling_system_1_1_profiling_data.htm#adbd07a3ad910acaad8bb217ee2205bb2":[5,0,1541,3,2],
 "df/d09/classxii_exclude_from_script.htm":[5,0,640],
@@ -249,5 +248,6 @@ var NAVTREEINDEX109 =
 "df/d41/classxii_ambient_light_component.htm#ae6e70ed00aafe3d8fd43e0f100bc68d8":[5,0,96,7],
 "df/d41/classxii_ambient_light_component.htm#aee3aa36dda06a2cb20d829266008300f":[5,0,96,0],
 "df/d41/classxii_diligent_core.htm":[5,0,514],
-"df/d42/structxii_x_r_device_event_data.htm":[5,0,2527]
+"df/d42/structxii_x_r_device_event_data.htm":[5,0,2527],
+"df/d42/structxii_x_r_device_event_data.htm#a78eb50b03f50772f83e69d888a361bb5":[5,0,2527,1]
 };

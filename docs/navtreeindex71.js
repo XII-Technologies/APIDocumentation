@@ -1,7 +1,5 @@
 var NAVTREEINDEX71 =
 {
-"d9/d91/classxii_qt_property_anim_model.htm#a714569a6810a480a12e5a5f85ddf431b":[5,0,1727,0],
-"d9/d91/classxii_qt_property_anim_model.htm#a714569a6810a480a12e5a5f85ddf431ba36cc91beeb1db34a9ca6f1bbed7ea713":[5,0,1727,0,3],
 "d9/d91/classxii_qt_property_anim_model.htm#a714569a6810a480a12e5a5f85ddf431baa1bb41bd33e8ccbdd612eaa18160207b":[5,0,1727,0,2],
 "d9/d91/classxii_qt_property_anim_model.htm#a714569a6810a480a12e5a5f85ddf431baad0c8214db2932feb76601e6c539a51e":[5,0,1727,0,0],
 "d9/d91/classxii_qt_property_anim_model.htm#a714569a6810a480a12e5a5f85ddf431bac6e9a49ff47535d7a843e195c350448f":[5,0,1727,0,1],
@@ -188,9 +186,9 @@ var NAVTREEINDEX71 =
 "d9/da6/structxii_memory_mapped_file_impl.htm#aa7f83db4250b6b6f85a949816edcd8e7":[5,0,1315,4],
 "d9/da6/structxii_memory_mapped_file_impl.htm#abd0f01de1f8f9698bf06e0f349e4e506":[5,0,1315,8],
 "d9/da6/structxii_memory_mapped_file_impl.htm#aca91dc13532648d843f00c7363b83e1e":[5,0,1315,3],
-"d9/da6/structxii_memory_mapped_file_impl.htm#ae59f3562a4691173aef86973d45a8a10":[5,0,1315,2],
 "d9/da6/structxii_memory_mapped_file_impl.htm#ae59f3562a4691173aef86973d45a8a10":[5,0,1315,0],
 "d9/da6/structxii_memory_mapped_file_impl.htm#ae59f3562a4691173aef86973d45a8a10":[5,0,1315,1],
+"d9/da6/structxii_memory_mapped_file_impl.htm#ae59f3562a4691173aef86973d45a8a10":[5,0,1315,2],
 "d9/da6/structxii_memory_mapped_file_impl.htm#aff6c8b8424956195538c2cdc84280f27":[5,0,1315,5],
 "d9/da7/classxii_anim_graph_input_pin.htm":[5,0,132],
 "d9/da7/classxii_texture_asset_actions.htm":[5,0,2282],
@@ -249,5 +247,7 @@ var NAVTREEINDEX71 =
 "d9/db2/classxii_profiling_scope.htm#ae3a0205409c8042ede10a007b2219451":[5,0,1539,2],
 "d9/db2/classxii_profiling_scope.htm#ae3ce50fdea6ae0c6c8bf8ef2e429f75d":[5,0,1539,4],
 "d9/db6/classxii_game_object_on_layer_drag_drop_handler.htm":[5,0,1035],
-"d9/db6/classxii_game_object_on_layer_drag_drop_handler.htm#a4a4493a2269fa15490be51bcfc0dd052":[5,0,1035,0]
+"d9/db6/classxii_game_object_on_layer_drag_drop_handler.htm#a4a4493a2269fa15490be51bcfc0dd052":[5,0,1035,0],
+"d9/db6/classxii_game_object_on_layer_drag_drop_handler.htm#a4dee5af126b63aa70451950adcb1eecc":[5,0,1035,1],
+"d9/db6/classxii_object_selection_msg_to_engine.htm":[5,0,1430]
 };

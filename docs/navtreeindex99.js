@@ -1,6 +1,5 @@
 var NAVTREEINDEX99 =
 {
-"dd/d79/classxii_bounding_sphere_template.htm#ae8bc580df1b64ad4dac86266b70afd15":[5,0,254,24],
 "dd/d79/classxii_bounding_sphere_template.htm#aec97f1e17f2252554e530afeb7357567":[5,0,254,23],
 "dd/d79/classxii_bounding_sphere_template.htm#aec9db03e07e352bc9e86f04f4b1cbd0e":[5,0,254,8],
 "dd/d79/classxii_bounding_sphere_template.htm#aefef38c6ad5ce13dfc1a304d7a5ae739":[5,0,254,27],
@@ -249,5 +248,6 @@ var NAVTREEINDEX99 =
 "dd/d9f/classxii_drag_to_position_gizmo.htm#af3c577b55e689986734837a07a830766":[5,0,556,2],
 "dd/da0/todo.htm":[3],
 "dd/da1/classxii_engine_process_communication_channel.htm":[5,0,613],
-"dd/da1/classxii_engine_process_communication_channel.htm#a3b458b0e5db3cf053295b95a0a8c6d70":[5,0,613,1]
+"dd/da1/classxii_engine_process_communication_channel.htm#a3b458b0e5db3cf053295b95a0a8c6d70":[5,0,613,1],
+"dd/da1/classxii_engine_process_communication_channel.htm#ada328c479a09e6c7e0f189abd47fa8b6":[5,0,613,0]
 };

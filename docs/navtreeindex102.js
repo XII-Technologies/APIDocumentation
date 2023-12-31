@@ -1,6 +1,5 @@
 var NAVTREEINDEX102 =
 {
-"dd/deb/structxii_mesh_buffer_resource_descriptor.htm#a7d47d0a7d35c7275705c17e179dcf9f8":[5,0,1331,8],
 "dd/deb/structxii_mesh_buffer_resource_descriptor.htm#a7ee03fb1ab888c28939b77cd97434721":[5,0,1331,4],
 "dd/deb/structxii_mesh_buffer_resource_descriptor.htm#a8708a3ac1fe9434626ad88bfdfd982b4":[5,0,1331,11],
 "dd/deb/structxii_mesh_buffer_resource_descriptor.htm#aaa513aecebb90718d7f3a117853de555":[5,0,1331,23],
@@ -249,5 +248,6 @@ var NAVTREEINDEX102 =
 "de/d0b/classxii_baking_interface.htm#a622bc4bb53dc81725dd887d4dedca4c5":[5,0,222,0],
 "de/d0e/classxii_stack_allocator.htm":[5,0,2163],
 "de/d0e/classxii_stack_allocator.htm#a1e437ffb4d05680b39e35deb08f1d3c0":[5,0,2163,1],
-"de/d0e/classxii_stack_allocator.htm#a342267c62990bf04d1e2be4394d34d13":[5,0,2163,0]
+"de/d0e/classxii_stack_allocator.htm#a342267c62990bf04d1e2be4394d34d13":[5,0,2163,0],
+"de/d0e/classxii_stack_allocator.htm#a3ff0f6a8206372ca2a992dc13073359b":[5,0,2163,2]
 };

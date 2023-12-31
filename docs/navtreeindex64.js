@@ -1,7 +1,5 @@
 var NAVTREEINDEX64 =
 {
-"d8/da9/classxii_document.htm#a2d90a86724ce8b8070349730715bc91c":[5,0,522,80],
-"d8/da9/classxii_document.htm#a2de9026451c4f084acc1b4c094de6150":[5,0,522,40],
 "d8/da9/classxii_document.htm#a2e4968ada71ce59cdc95747da8890c45":[5,0,522,39],
 "d8/da9/classxii_document.htm#a2fb9cf15699e30063174a0a10e68a28b":[5,0,522,13],
 "d8/da9/classxii_document.htm#a3b43c6bfc3dd3f4626f57229654ac0ac":[5,0,522,54],
@@ -249,5 +247,7 @@ var NAVTREEINDEX64 =
 "d8/dbd/classxii_asset_curator.htm#a6ae1761aa5d3ea441d16577fcb79ae7e":[5,0,192,9],
 "d8/dbd/classxii_asset_curator.htm#a78bf7935d3aab8bb41768b2500c48a8d":[5,0,192,32],
 "d8/dbd/classxii_asset_curator.htm#a84f055e6a7017d27c61db6f969ef485c":[5,0,192,28],
-"d8/dbd/classxii_asset_curator.htm#a894cdd7a5057698b7aad6851d0c8ea06":[5,0,192,47]
+"d8/dbd/classxii_asset_curator.htm#a894cdd7a5057698b7aad6851d0c8ea06":[5,0,192,47],
+"d8/dbd/classxii_asset_curator.htm#a8a4ac71d036ba9e97fd4f2cebd3094af":[5,0,192,6],
+"d8/dbd/classxii_asset_curator.htm#a8fe670e56225683254fc02752cb881d5":[5,0,192,1]
 };

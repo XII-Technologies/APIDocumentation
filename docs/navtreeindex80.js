@@ -1,7 +1,5 @@
 var NAVTREEINDEX80 =
 {
-"da/db3/classxii_simd_b_boxd.htm#a5102f877afbc68436db3e5346bd02714":[5,0,2059,3],
-"da/db3/classxii_simd_b_boxd.htm#a596cf4bc0f9b16f2698fdc5e6e5b7944":[5,0,2059,15],
 "da/db3/classxii_simd_b_boxd.htm#a5b308a5fb9a19e3c2477251c7d25268e":[5,0,2059,22],
 "da/db3/classxii_simd_b_boxd.htm#a5c7fe5a9030a0a8dca9750ed3eff3f37":[5,0,2059,11],
 "da/db3/classxii_simd_b_boxd.htm#a5dfe0680d8cba7b88abcfa25493cfe90":[5,0,2059,10],
@@ -249,5 +247,7 @@ var NAVTREEINDEX80 =
 "da/dde/classxii_texture_asset_properties.htm#aba76ec9cb5891f67f88c3704fc9f783d":[5,0,2287,22],
 "da/dde/classxii_texture_asset_properties.htm#abea19e27cf6bd54c51ca03d31e93e095":[5,0,2287,11],
 "da/dde/classxii_texture_asset_properties.htm#ac1250f969124c95e9cc9b71bd67e4bf6":[5,0,2287,26],
-"da/dde/classxii_texture_asset_properties.htm#ac91dc20e48832574d43169db6cc8bb28":[5,0,2287,14]
+"da/dde/classxii_texture_asset_properties.htm#ac91dc20e48832574d43169db6cc8bb28":[5,0,2287,14],
+"da/dde/classxii_texture_asset_properties.htm#aca83d05da88cf2ac331b9c9b2ea6bd70":[5,0,2287,25],
+"da/dde/classxii_texture_asset_properties.htm#ad13e827f9e93d66d4219036e6712fd94":[5,0,2287,20]
 };

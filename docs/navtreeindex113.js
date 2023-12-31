@@ -1,6 +1,5 @@
 var NAVTREEINDEX113 =
 {
-"df/dae/structxii_gizmo_flags.htm#a95d0c5ba05ead4711dcaeb7730b55dd1a819289d7c2ce74d5f1056d9f592ba832":[5,0,1055,2,3],
 "df/dae/structxii_gizmo_flags.htm#a95d0c5ba05ead4711dcaeb7730b55dd1ad6fb46a31d9861659f82a2f92ca3d51b":[5,0,1055,2,0],
 "df/dae/structxii_gizmo_flags.htm#a95d0c5ba05ead4711dcaeb7730b55dd1af7ddea3f57e1a09a81f2b05682ca57d7":[5,0,1055,2,1],
 "df/dae/structxii_gizmo_flags.htm#adabf4d20d998a8075880ce314c20f35d":[5,0,1055,1],
@@ -249,5 +248,6 @@ var NAVTREEINDEX113 =
 "df/de8/structxii_virtual_thumb_stick_1_1_input.htm#a7189056b914d17469adedc28b2eb82ecab50cfce94ae7c0e56bcb2086a2ea6548":[5,0,2447,1,0,0],
 "df/de8/structxii_virtual_thumb_stick_1_1_input.htm#a7189056b914d17469adedc28b2eb82ecada587e28510b31b18971d184e80681f9":[5,0,2447,1,0,2],
 "df/de9/classxii_frame_data_provider.htm":[5,0,704],
-"df/de9/classxii_frame_data_provider.htm#a6399d7c8aa974bdbf5b4f532c95580a8":[5,0,704,0]
+"df/de9/classxii_frame_data_provider.htm#a6399d7c8aa974bdbf5b4f532c95580a8":[5,0,704,0],
+"df/dea/classxii_g_a_l_pipeline_state_handle.htm":[5,0,863]
 };

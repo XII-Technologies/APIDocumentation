@@ -1,6 +1,5 @@
 var NAVTREEINDEX86 =
 {
-"db/d8e/classxii_add_object_command.htm#aa75117d89a1d481c06184dcb5cbc5c95":[5,0,86,1],
 "db/d8e/classxii_add_object_command.htm#af46030f1b31edd5b62bd957da9d525be":[5,0,86,7],
 "db/d8e/classxii_add_object_command.htm#af4646605a8ff82cacb363ad661208e6e":[5,0,86,3],
 "db/d8e/classxii_add_object_command.htm#aff8e5e3e1ab45bdb21a1b5bbd89e884e":[5,0,86,4],
@@ -249,5 +248,6 @@ var NAVTREEINDEX86 =
 "db/d9e/structxii_swizzle.htm#af85243d77ee966c0d27bee79d65039dea795ff04ad1858e9a13379a427881958d":[5,0,2240,0,172],
 "db/d9e/structxii_swizzle.htm#af85243d77ee966c0d27bee79d65039dea79d5b0b251dd3d97d7a06fea59f31089":[5,0,2240,0,42],
 "db/d9e/structxii_swizzle.htm#af85243d77ee966c0d27bee79d65039dea7a08e1ff9b99bfb63237856941eb69df":[5,0,2240,0,23],
-"db/d9e/structxii_swizzle.htm#af85243d77ee966c0d27bee79d65039dea7ab35ac93d270f7307d8a841fe18f996":[5,0,2240,0,177]
+"db/d9e/structxii_swizzle.htm#af85243d77ee966c0d27bee79d65039dea7ab35ac93d270f7307d8a841fe18f996":[5,0,2240,0,177],
+"db/d9e/structxii_swizzle.htm#af85243d77ee966c0d27bee79d65039dea7caa5131b55075401162267ee6351dfc":[5,0,2240,0,125]
 };
