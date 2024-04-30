@@ -177,20 +177,20 @@ $(document).ready(function(){initNavTree('da/d76/_allocator_base__inl_8h_source.
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  <span class="keyword">inline</span> <a class="code" href="../../d0/d60/classxii_array_ptr.htm">xiiArrayPtr&lt;T&gt;</a> CreateArray(<a class="code" href="../../d5/d66/classxii_allocator_base.htm">xiiAllocatorBase</a>* pAllocator, xiiUInt32 uiCount)</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  {</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    T* buffer = CreateRawBuffer&lt;T&gt;(pAllocator, uiCount);</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <a class="code" href="../../d8/d9d/classxii_memory_utils.htm#af3da14f91515aad7930bd6524a70f40b">xiiMemoryUtils::Construct</a>(buffer, uiCount);</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    T* pBuffer = CreateRawBuffer&lt;T&gt;(pAllocator, uiCount);</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    xiiMemoryUtils::Construct&lt;SkipTrivialTypes&gt;(pBuffer, uiCount);</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="../../d0/d60/classxii_array_ptr.htm">xiiArrayPtr&lt;T&gt;</a>(buffer, uiCount);</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="../../d0/d60/classxii_array_ptr.htm">xiiArrayPtr&lt;T&gt;</a>(pBuffer, uiCount);</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  }</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  <span class="keyword">inline</span> <span class="keywordtype">void</span> DeleteArray(<a class="code" href="../../d5/d66/classxii_allocator_base.htm">xiiAllocatorBase</a>* pAllocator, <a class="code" href="../../d0/d60/classxii_array_ptr.htm">xiiArrayPtr&lt;T&gt;</a> arrayPtr)</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  <span class="keyword">inline</span> <span class="keywordtype">void</span> DeleteArray(<a class="code" href="../../d5/d66/classxii_allocator_base.htm">xiiAllocatorBase</a>* pAllocator, <a class="code" href="../../d0/d60/classxii_array_ptr.htm">xiiArrayPtr&lt;T&gt;</a> pArrayPtr)</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  {</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    T* buffer = arrayPtr.<a class="code" href="../../d0/d60/classxii_array_ptr.htm#acfb4db6e3a381669be860ce1a5500c6b">GetPtr</a>();</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="keywordflow">if</span> (buffer != <span class="keyword">nullptr</span>)</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    T* pBuffer = pArrayPtr.<a class="code" href="../../d0/d60/classxii_array_ptr.htm#acfb4db6e3a381669be860ce1a5500c6b">GetPtr</a>();</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="keywordflow">if</span> (pBuffer != <span class="keyword">nullptr</span>)</div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    {</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;      <a class="code" href="../../d8/d9d/classxii_memory_utils.htm#a6c8728654ad1b5c0c9dcbb597a93594d">xiiMemoryUtils::Destruct</a>(buffer, arrayPtr.<a class="code" href="../../d0/d60/classxii_array_ptr.htm#af1e072a93ee1a583d0db00e821c2d999">GetCount</a>());</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;      pAllocator-&gt;Deallocate(buffer);</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;      <a class="code" href="../../d8/d9d/classxii_memory_utils.htm#a6c8728654ad1b5c0c9dcbb597a93594d">xiiMemoryUtils::Destruct</a>(pBuffer, pArrayPtr.<a class="code" href="../../d0/d60/classxii_array_ptr.htm#af1e072a93ee1a583d0db00e821c2d999">GetCount</a>());</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;      pAllocator-&gt;Deallocate(pBuffer);</div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    }</div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;  }</div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160; </div>
@@ -209,33 +209,31 @@ $(document).ready(function(){initNavTree('da/d76/_allocator_base__inl_8h_source.
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;  XII_FORCE_INLINE T* ExtendRawBuffer(T* pPtr, <a class="code" href="../../d5/d66/classxii_allocator_base.htm">xiiAllocatorBase</a>* pAllocator, <span class="keywordtype">size_t</span> uiCurrentCount, <span class="keywordtype">size_t</span> uiNewCount, <a class="code" href="../../da/d04/structxii_trait_int.htm">xiiTypeIsClass</a>)</div>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;  {</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    XII_CHECK_AT_COMPILETIME_MSG(!std::is_trivial&lt;T&gt;::value,</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;                                 <span class="stringliteral">&quot;POD type is treated as class. Use XII_DECLARE_POD_TYPE(YourClass) or XII_DEFINE_AS_POD_TYPE(ExternalClass) to mark it as POD.&quot;</span>);</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160; </div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    T* pNewMem = CreateRawBuffer&lt;T&gt;(pAllocator, uiNewCount);</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    <a class="code" href="../../d8/d9d/classxii_memory_utils.htm#acddb7a04ed071f62321060eb8c59ab87">xiiMemoryUtils::RelocateConstruct</a>(pNewMem, pPtr, uiCurrentCount);</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    DeleteRawBuffer(pAllocator, pPtr);</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    <span class="keywordflow">return</span> pNewMem;</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;  }</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160; </div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;  XII_FORCE_INLINE T* ExtendRawBuffer(T* pPtr, <a class="code" href="../../d5/d66/classxii_allocator_base.htm">xiiAllocatorBase</a>* pAllocator, <span class="keywordtype">size_t</span> uiCurrentCount, <span class="keywordtype">size_t</span> uiNewCount)</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;  {</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    XII_ASSERT_DEV(uiCurrentCount &lt; uiNewCount, <span class="stringliteral">&quot;Shrinking of a buffer is not implemented yet&quot;</span>);</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    XII_ASSERT_DEV(!(uiCurrentCount == uiNewCount), <span class="stringliteral">&quot;Same size passed in twice.&quot;</span>);</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    <span class="keywordflow">if</span> (pPtr == <span class="keyword">nullptr</span>)</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    {</div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;      XII_ASSERT_DEV(uiCurrentCount == 0, <span class="stringliteral">&quot;current count must be 0 if ptr is nullptr&quot;</span>);</div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160; </div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;      <span class="keywordflow">return</span> CreateRawBuffer&lt;T&gt;(pAllocator, uiNewCount);</div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;    }</div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    <span class="keywordflow">return</span> ExtendRawBuffer(pPtr, pAllocator, uiCurrentCount, uiNewCount, <a class="code" href="../../d0/dc6/structxii_get_type_class.htm">xiiGetTypeClass&lt;T&gt;</a>());</div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;  }</div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;} <span class="comment">// namespace xiiInternal</span></div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    XII_CHECK_AT_COMPILETIME_MSG(!std::is_trivial&lt;T&gt;::value, <span class="stringliteral">&quot;POD type is treated as class. Use XII_DECLARE_POD_TYPE(YourClass) or XII_DEFINE_AS_POD_TYPE(ExternalClass) to mark it as POD.&quot;</span>);</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160; </div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    T* pNewMem = CreateRawBuffer&lt;T&gt;(pAllocator, uiNewCount);</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    <a class="code" href="../../d8/d9d/classxii_memory_utils.htm#acddb7a04ed071f62321060eb8c59ab87">xiiMemoryUtils::RelocateConstruct</a>(pNewMem, pPtr, uiCurrentCount);</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    DeleteRawBuffer(pAllocator, pPtr);</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    <span class="keywordflow">return</span> pNewMem;</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;  }</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160; </div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;  XII_FORCE_INLINE T* ExtendRawBuffer(T* pPtr, <a class="code" href="../../d5/d66/classxii_allocator_base.htm">xiiAllocatorBase</a>* pAllocator, <span class="keywordtype">size_t</span> uiCurrentCount, <span class="keywordtype">size_t</span> uiNewCount)</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;  {</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    XII_ASSERT_DEV(uiCurrentCount &lt; uiNewCount, <span class="stringliteral">&quot;Shrinking of a buffer is not implemented yet&quot;</span>);</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    XII_ASSERT_DEV(!(uiCurrentCount == uiNewCount), <span class="stringliteral">&quot;Same size passed in twice.&quot;</span>);</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    <span class="keywordflow">if</span> (pPtr == <span class="keyword">nullptr</span>)</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    {</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;      XII_ASSERT_DEV(uiCurrentCount == 0, <span class="stringliteral">&quot;current count must be 0 if ptr is nullptr&quot;</span>);</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160; </div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;      <span class="keywordflow">return</span> CreateRawBuffer&lt;T&gt;(pAllocator, uiNewCount);</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;    }</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;    <span class="keywordflow">return</span> ExtendRawBuffer(pPtr, pAllocator, uiCurrentCount, uiNewCount, <a class="code" href="../../d0/dc6/structxii_get_type_class.htm">xiiGetTypeClass&lt;T&gt;</a>());</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;  }</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;} <span class="comment">// namespace xiiInternal</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="astructxii_internal_1_1_new_instance_htm"><div class="ttname"><a href="../../de/d3c/structxii_internal_1_1_new_instance.htm">xiiInternal::NewInstance</a></div><div class="ttdef"><b>Definition:</b> AllocatorBase_inl.h:17</div></div>
-<div class="ttc" id="aclassxii_memory_utils_htm_af3da14f91515aad7930bd6524a70f40b"><div class="ttname"><a href="../../d8/d9d/classxii_memory_utils.htm#af3da14f91515aad7930bd6524a70f40b">xiiMemoryUtils::Construct</a></div><div class="ttdeci">static void Construct(T *pDestination, size_t uiCount=1)</div><div class="ttdoc">Constructs uiCount objects of type T in a raw buffer at pDestination.s.</div></div>
 <div class="ttc" id="aclassxii_array_ptr_htm"><div class="ttname"><a href="../../d0/d60/classxii_array_ptr.htm">xiiArrayPtr</a></div><div class="ttdoc">This class encapsulates an array and it's size. It is recommended to use this class instead of plain ...</div><div class="ttdef"><b>Definition:</b> ArrayPtr.h:36</div></div>
 <div class="ttc" id="aclassxii_array_ptr_htm_acfb4db6e3a381669be860ce1a5500c6b"><div class="ttname"><a href="../../d0/d60/classxii_array_ptr.htm#acfb4db6e3a381669be860ce1a5500c6b">xiiArrayPtr::GetPtr</a></div><div class="ttdeci">XII_ALWAYS_INLINE PointerType GetPtr() const</div><div class="ttdoc">Returns the pointer to the array.</div><div class="ttdef"><b>Definition:</b> ArrayPtr.h:122</div></div>
 <div class="ttc" id="anamespacexii_math_htm"><div class="ttname"><a href="../../d1/d37/namespacexii_math.htm">xiiMath</a></div><div class="ttdoc">This namespace provides common math-functionality as functions.</div><div class="ttdef"><b>Definition:</b> Constants.h:5</div></div>
@@ -251,7 +249,7 @@ $(document).ready(function(){initNavTree('da/d76/_allocator_base__inl_8h_source.
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.htm">home</a></li><li class="navelem"><a class="el" href="../../dir_1036706e55c22cab35bc1c58ee689f1d.htm">runner</a></li><li class="navelem"><a class="el" href="../../dir_629f8151d55d307162ff2d619fb1783d.htm">work</a></li><li class="navelem"><a class="el" href="../../dir_1ddc44fe1263a8c7935fa6130b7d9499.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_2c1b6808f12952f4c36e05ba7068379a.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_b5a1c4ecfca018ad24b729e213296d41.htm">Source</a></li><li class="navelem"><a class="el" href="../../dir_e321052006a51284e67389ab20037e7c.htm">Engine</a></li><li class="navelem"><a class="el" href="../../dir_be0c42c58b36f42c54ec54024ed4f6af.htm">Foundation</a></li><li class="navelem"><a class="el" href="../../dir_f4c376a517d02920cdbc41b4ea2fc5f5.htm">Memory</a></li><li class="navelem"><a class="el" href="../../dir_80b530217e59fca41e1e50ca0e5fd172.htm">Implementation</a></li><li class="navelem"><b>AllocatorBase_inl.h</b></li>
-    <li class="footer">Generated on Sun Dec 31 2023 07:13:46 for XIIEngine by
+    <li class="footer">Generated on Tue Apr 30 2024 17:34:31 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

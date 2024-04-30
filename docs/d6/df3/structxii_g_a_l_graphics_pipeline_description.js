@@ -1,7 +1,6 @@
 var structxii_g_a_l_graphics_pipeline_description =
 [
     [ "XII_DECLARE_POD_TYPE", "d6/df3/structxii_g_a_l_graphics_pipeline_description.htm#a09f02013f15ae6189a8faa882d2480c7", null ],
-    [ "m_bReadOnlyDepthStencil", "d6/df3/structxii_g_a_l_graphics_pipeline_description.htm#a8064265d0b7a871d52c01554e0769c13", null ],
     [ "m_hBlendState", "d6/df3/structxii_g_a_l_graphics_pipeline_description.htm#a08fab265fed44fda3fe61d827eebee45", null ],
     [ "m_hDepthStencilState", "d6/df3/structxii_g_a_l_graphics_pipeline_description.htm#a37e750405e1cebb33601d595524c1487", null ],
     [ "m_hInputLayout", "d6/df3/structxii_g_a_l_graphics_pipeline_description.htm#afbad7eacb2d1a79f07d6e4b49dcc44c0", null ],
@@ -12,5 +11,5 @@ var structxii_g_a_l_graphics_pipeline_description =
     [ "m_ShadingRateFlags", "d6/df3/structxii_g_a_l_graphics_pipeline_description.htm#a312c5c604b00b3149ebba9e0981a98fc", null ],
     [ "m_uiSampleMask", "d6/df3/structxii_g_a_l_graphics_pipeline_description.htm#ae030156018e872786ef73ac572ad53a5", null ],
     [ "m_uiSubpassIndex", "d6/df3/structxii_g_a_l_graphics_pipeline_description.htm#ae66f9f2e68ea309e28c8ea4386e31a25", null ],
-    [ "m_ViewportCount", "d6/df3/structxii_g_a_l_graphics_pipeline_description.htm#a37984c96416e0cdb7f0bf4769533d0c2", null ]
+    [ "m_uiViewportCount", "d6/df3/structxii_g_a_l_graphics_pipeline_description.htm#aba455d3ef2e11df635fa73196057b68f", null ]
 ];

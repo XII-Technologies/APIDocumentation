@@ -90,23 +90,27 @@ $(document).ready(function(){initNavTree('db/d29/_command_queue_vulkan__inl_8h_s
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
 <div class="line"><a name="l00002"></a><span class="lineno"><a class="line" href="../../d1/d83/classxii_g_a_l_command_queue_vulkan.htm#a3b8e6afdb2c3ad0a4ea54c1c5c46ea4f">    2</a></span>&#160;XII_ALWAYS_INLINE xiiUInt64 <a class="code" href="../../d1/d83/classxii_g_a_l_command_queue_vulkan.htm#a3b8e6afdb2c3ad0a4ea54c1c5c46ea4f">xiiGALCommandQueueVulkan::GetNextFenceValue</a>()<span class="keyword"> const</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="keyword"></span>{</div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;  <span class="keywordflow">return</span> m_pCommandQueue-&gt;GetNextFenceValue();</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;  <span class="keywordflow">return</span> m_uiCompletedFenceValue + 1;</div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;}</div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
 <div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="../../d1/d83/classxii_g_a_l_command_queue_vulkan.htm#a7cdda79de290d91b51580ee7b40bda65">    7</a></span>&#160;XII_ALWAYS_INLINE xiiUInt64 <a class="code" href="../../d1/d83/classxii_g_a_l_command_queue_vulkan.htm#a7cdda79de290d91b51580ee7b40bda65">xiiGALCommandQueueVulkan::GetCompletedFenceValue</a>()<span class="keyword"> const</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword"></span>{</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;  <span class="keywordflow">return</span> m_pCommandQueue-&gt;GetCompletedFenceValue();</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;  <span class="keywordflow">return</span> m_uiCompletedFenceValue;</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;}</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
 <div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="../../d1/d83/classxii_g_a_l_command_queue_vulkan.htm#a4da286910300177e0550244542ba0c9d">   12</a></span>&#160;XII_ALWAYS_INLINE xiiUInt64 <a class="code" href="../../d1/d83/classxii_g_a_l_command_queue_vulkan.htm#a4da286910300177e0550244542ba0c9d">xiiGALCommandQueueVulkan::WaitForIdle</a>()</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;{</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;  <span class="keywordflow">return</span> m_pCommandQueue-&gt;WaitForIdle();</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;}</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;XII_ALWAYS_INLINE <span class="keyword">const</span> Diligent::ICommandQueue* xiiGALCommandQueueVulkan::GetCommandQueue()<span class="keyword"> const</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword"></span>{</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;  <span class="keywordflow">return</span> m_pCommandQueue;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;}</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;  m_pContext-&gt;EnqueueSignal(m_pFence, ++m_uiCompletedFenceValue);</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;  m_pContext-&gt;Flush();</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;  m_pContext-&gt;DeviceWaitForFence(m_pFence, m_uiCompletedFenceValue);</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;  <span class="keywordflow">return</span> m_uiCompletedFenceValue;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;}</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;XII_ALWAYS_INLINE Diligent::IDeviceContext* xiiGALCommandQueueVulkan::GetContext()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  <span class="keywordflow">return</span> m_pContext;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclassxii_g_a_l_command_queue_vulkan_htm_a7cdda79de290d91b51580ee7b40bda65"><div class="ttname"><a href="../../d1/d83/classxii_g_a_l_command_queue_vulkan.htm#a7cdda79de290d91b51580ee7b40bda65">xiiGALCommandQueueVulkan::GetCompletedFenceValue</a></div><div class="ttdeci">virtual xiiUInt64 GetCompletedFenceValue() const override final</div><div class="ttdoc">This returns the last completed value of the internal fence.</div><div class="ttdef"><b>Definition:</b> CommandQueueVulkan_inl.h:7</div></div>
@@ -116,7 +120,7 @@ $(document).ready(function(){initNavTree('db/d29/_command_queue_vulkan__inl_8h_s
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.htm">home</a></li><li class="navelem"><a class="el" href="../../dir_1036706e55c22cab35bc1c58ee689f1d.htm">runner</a></li><li class="navelem"><a class="el" href="../../dir_629f8151d55d307162ff2d619fb1783d.htm">work</a></li><li class="navelem"><a class="el" href="../../dir_1ddc44fe1263a8c7935fa6130b7d9499.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_2c1b6808f12952f4c36e05ba7068379a.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_b5a1c4ecfca018ad24b729e213296d41.htm">Source</a></li><li class="navelem"><a class="el" href="../../dir_e321052006a51284e67389ab20037e7c.htm">Engine</a></li><li class="navelem"><a class="el" href="../../dir_32f911672529289aa73bbec1c1630508.htm">GraphicsVulkan</a></li><li class="navelem"><a class="el" href="../../dir_de4bc7040d388118bd551b63725a1c19.htm">CommandEncoder</a></li><li class="navelem"><a class="el" href="../../dir_307a933ec63a962d9c9587f2b31d0376.htm">Implementation</a></li><li class="navelem"><b>CommandQueueVulkan_inl.h</b></li>
-    <li class="footer">Generated on Sun Dec 31 2023 07:13:50 for XIIEngine by
+    <li class="footer">Generated on Tue Apr 30 2024 17:34:34 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

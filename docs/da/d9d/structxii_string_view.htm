@@ -264,6 +264,9 @@ const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d9d/structxii_string_view.htm#a13022b4950ea182e3d50ecdf2d3d953b">GetShrunk</a> (xiiUInt32 uiShrinkCharsFront, xiiUInt32 uiShrinkCharsBack=0) const</td></tr>
 <tr class="memdesc:a13022b4950ea182e3d50ecdf2d3d953b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a sub-string that is shrunk at the start and front by the given amount of characters (not bytes!). <br /></td></tr>
 <tr class="separator:a13022b4950ea182e3d50ecdf2d3d953b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d16f476cda6022e9f75deba35b152c9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d9d/structxii_string_view.htm#a1d16f476cda6022e9f75deba35b152c9">GetSubString</a> (xiiUInt32 uiFirstCharacter, xiiUInt32 uiNumCharacters) const</td></tr>
+<tr class="memdesc:a1d16f476cda6022e9f75deba35b152c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a sub-string starting at a given character (not byte offset!) and including a number of characters (not bytes).  <a href="../../da/d9d/structxii_string_view.htm#a1d16f476cda6022e9f75deba35b152c9">More...</a><br /></td></tr>
+<tr class="separator:a1d16f476cda6022e9f75deba35b152c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a21212f66212bf8d7c5786193208d2c0d"><td class="memItemLeft" align="right" valign="top"><a id="a21212f66212bf8d7c5786193208d2c0d"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d9d/structxii_string_view.htm#a21212f66212bf8d7c5786193208d2c0d">ChopAwayFirstCharacterUtf8</a> ()</td></tr>
 <tr class="memdesc:a21212f66212bf8d7c5786193208d2c0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Identical to 'Shrink(1, 0)' in functionality, but slightly more efficient. <br /></td></tr>
@@ -821,6 +824,37 @@ template&lt;size_t N&gt; </td></tr>
 
 </div>
 </div>
+<a id="a1d16f476cda6022e9f75deba35b152c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d16f476cda6022e9f75deba35b152c9">&#9670;&nbsp;</a></span>GetSubString()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> xiiStringView::GetSubString </td>
+          <td>(</td>
+          <td class="paramtype">xiiUInt32&#160;</td>
+          <td class="paramname"><em>uiFirstCharacter</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">xiiUInt32&#160;</td>
+          <td class="paramname"><em>uiNumCharacters</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns a sub-string starting at a given character (not byte offset!) and including a number of characters (not bytes). </p>
+<p>If this is a Utf-8 string, the correct number of bytes are skipped to reach the given character. If you instead want to construct a sub-string from byte offsets, use the <a class="el" href="../../da/d9d/structxii_string_view.htm" title="xiiStringView represent a read-only sub-string of a larger string, as it can store a dedicated string...">xiiStringView</a> constructor that takes a start pointer like so: <a class="el" href="../../da/d9d/structxii_string_view.htm" title="xiiStringView represent a read-only sub-string of a larger string, as it can store a dedicated string...">xiiStringView</a> subString(this-&gt;<a class="el" href="../../da/d9d/structxii_string_view.htm#a65d3c651c35878985c1a637a45ce9bd1" title="Returns the start of the view range.">GetStartPointer()</a> + byteOffset, byteCount); </p>
+
+</div>
+</div>
 <a id="ae78b5a1542b1486c767d3f95c0bfd774"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae78b5a1542b1486c767d3f95c0bfd774">&#9670;&nbsp;</a></span>SetStartPosition()</h2>
 
@@ -884,7 +918,7 @@ template&lt;size_t N&gt; </td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a></li>
-    <li class="footer">Generated on Sun Dec 31 2023 07:13:59 for XIIEngine by
+    <li class="footer">Generated on Tue Apr 30 2024 17:34:40 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

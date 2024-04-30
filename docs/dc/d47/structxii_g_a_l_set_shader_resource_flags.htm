@@ -106,7 +106,6 @@ Classes</h2></td></tr>
 Public Types</h2></td></tr>
 <tr class="memitem:a4ef0f07345e429f8d7f0f805b467068e"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d47/structxii_g_a_l_set_shader_resource_flags.htm#a4ef0f07345e429f8d7f0f805b467068e">Enum</a> : StorageType { <a class="el" href="../../dc/d47/structxii_g_a_l_set_shader_resource_flags.htm#a4ef0f07345e429f8d7f0f805b467068eaa08d4423404240c4c817dd0702381ea7">None</a> = 0U, 
 <a class="el" href="../../dc/d47/structxii_g_a_l_set_shader_resource_flags.htm#a4ef0f07345e429f8d7f0f805b467068eab9253987f25acec7623bb61e92efc367">AllowOverwrite</a> = XII_BIT(0), 
-<b>ENUM_COUNT</b> = 2U, 
 <b>Default</b> = None
  }</td></tr>
 <tr class="separator:a4ef0f07345e429f8d7f0f805b467068e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -133,7 +132,7 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>StorageType</b> = xi
 </td></tr>
 <tr><td class="fieldname"><a id="a4ef0f07345e429f8d7f0f805b467068eab9253987f25acec7623bb61e92efc367"></a>AllowOverwrite&#160;</td><td class="fielddoc"><p>Allow overwriting static and mutable variable bindings. </p><dl class="section remark"><dt>Remarks</dt><dd>By default, static and mutable variables can't be changed once initialized to a non-null resource. This flag is required to explicitly allow overwriting the binding.</dd></dl>
 <p>Overwriting static variables does not require synchronization with GPU and does not have effect on shader resource binding objects already created from the pipeline state or resource signature.</p>
-<p>When overwriting a mutable variable binding in Direct3D12 and Vulkan, an application must ensure that the GPU is not accessing the SRB. This can be achieved using syncrhonization tools such as fences. Synchronization with GPU is not required in Direct3D11, and Metal backends. </p>
+<p>When overwriting a mutable variable binding in Direct3D12 and Vulkan, an application must ensure that the GPU is not accessing the shader resource binding. This can be achieved using syncrhonization tools such as fences. Synchronization with GPU is not required in Direct3D11, and Metal backends. </p>
 </td></tr>
 </table>
 
@@ -148,7 +147,7 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>StorageType</b> = xi
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dc/d47/structxii_g_a_l_set_shader_resource_flags.htm">xiiGALSetShaderResourceFlags</a></li>
-    <li class="footer">Generated on Sun Dec 31 2023 07:13:54 for XIIEngine by
+    <li class="footer">Generated on Tue Apr 30 2024 17:34:37 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

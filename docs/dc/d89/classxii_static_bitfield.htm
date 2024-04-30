@@ -99,6 +99,9 @@ Public Types</h2></td></tr>
 <tr class="memitem:ac185f19576f4f71eaa180dcb50965e01"><td class="memItemLeft" align="right" valign="top"><a id="ac185f19576f4f71eaa180dcb50965e01"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>StorageType</b> = T</td></tr>
 <tr class="separator:ac185f19576f4f71eaa180dcb50965e01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc57f1aeed70fa7d13137514f5538c18"><td class="memItemLeft" align="right" valign="top"><a id="abc57f1aeed70fa7d13137514f5538c18"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>ConstIterator</b> = <a class="el" href="../../d8/dd8/structxii_bit_iterator.htm">xiiBitIterator</a>&lt; StorageType, true, xiiUInt32 &gt;</td></tr>
+<tr class="separator:abc57f1aeed70fa7d13137514f5538c18"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -184,6 +187,14 @@ XII_ALWAYS_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a cla
 <tr class="memitem:a10b7ae13d1a2c3b2135a38b8c9c4276c"><td class="memItemLeft" align="right" valign="top"><a id="a10b7ae13d1a2c3b2135a38b8c9c4276c"></a>
 <a class="el" href="../../dd/dad/structxii_result.htm">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Deserialize</b> (<a class="el" href="../../d4/d5e/classxii_stream_reader.htm">xiiStreamReader</a> &amp;ref_reader)</td></tr>
 <tr class="separator:a10b7ae13d1a2c3b2135a38b8c9c4276c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e9e09698ddfcf1b6d0090c7685f1d19"><td class="memItemLeft" align="right" valign="top"><a id="a0e9e09698ddfcf1b6d0090c7685f1d19"></a>
+<a class="el" href="../../d8/dd8/structxii_bit_iterator.htm">ConstIterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d89/classxii_static_bitfield.htm#a0e9e09698ddfcf1b6d0090c7685f1d19">GetIterator</a> () const</td></tr>
+<tr class="memdesc:a0e9e09698ddfcf1b6d0090c7685f1d19"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a constant iterator to the very first set bit. Note that due to the way iterating through bits is accelerated, changes to the bitfield while iterating through the bits has undefined behaviour. <br /></td></tr>
+<tr class="separator:a0e9e09698ddfcf1b6d0090c7685f1d19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8163c8c7d6ff6784fad3a881f34bf3a1"><td class="memItemLeft" align="right" valign="top"><a id="a8163c8c7d6ff6784fad3a881f34bf3a1"></a>
+<a class="el" href="../../d8/dd8/structxii_bit_iterator.htm">ConstIterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d89/classxii_static_bitfield.htm#a8163c8c7d6ff6784fad3a881f34bf3a1">GetEndIterator</a> () const</td></tr>
+<tr class="memdesc:a8163c8c7d6ff6784fad3a881f34bf3a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an invalid iterator. Needed to support range based for loops. <br /></td></tr>
+<tr class="separator:a8163c8c7d6ff6784fad3a881f34bf3a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -212,6 +223,10 @@ template&lt;typename U &gt; </td></tr>
 template&lt;typename U &gt; </td></tr>
 <tr class="memitem:aab13bb6aac3bf930c03272676c5f40ef"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator==</b> (<a class="el" href="../../dc/d89/classxii_static_bitfield.htm">xiiStaticBitfield</a>&lt; U &gt; lhs, <a class="el" href="../../dc/d89/classxii_static_bitfield.htm">xiiStaticBitfield</a>&lt; U &gt; rhs)</td></tr>
 <tr class="separator:aab13bb6aac3bf930c03272676c5f40ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acfc8958e696c8c2d2ed6c24be01b4a98"><td class="memTemplParams" colspan="2"><a id="acfc8958e696c8c2d2ed6c24be01b4a98"></a>
+template&lt;typename U &gt; </td></tr>
+<tr class="memitem:acfc8958e696c8c2d2ed6c24be01b4a98"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator!=</b> (<a class="el" href="../../dc/d89/classxii_static_bitfield.htm">xiiStaticBitfield</a>&lt; U &gt; lhs, <a class="el" href="../../dc/d89/classxii_static_bitfield.htm">xiiStaticBitfield</a>&lt; U &gt; rhs)</td></tr>
+<tr class="separator:acfc8958e696c8c2d2ed6c24be01b4a98"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>/home/runner/work/XII/XII/Source/Engine/Foundation/Containers/<a class="el" href="../../df/d21/_bitfield_8h_source.htm">Bitfield.h</a></li>
@@ -223,7 +238,7 @@ template&lt;typename U &gt; </td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dc/d89/classxii_static_bitfield.htm">xiiStaticBitfield</a></li>
-    <li class="footer">Generated on Sun Dec 31 2023 07:13:58 for XIIEngine by
+    <li class="footer">Generated on Tue Apr 30 2024 17:34:40 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

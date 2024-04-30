@@ -1,0 +1,4 @@
+var structxii_bit_iterator_storage_3_01_t_00_01std_1_1enable__if__t_3_01sizeof_07_t_08_3_0a4_01_4_0123d2c91f0372ad13599c80306cdd1b55 =
+[
+    [ "Type", "de/d93/structxii_bit_iterator_storage_3_01_t_00_01std_1_1enable__if__t_3_01sizeof_07_t_08_3_0a4_01_4_0123d2c91f0372ad13599c80306cdd1b55.htm#a11be6e73408fd0d34606fed12d8f6784", null ]
+];

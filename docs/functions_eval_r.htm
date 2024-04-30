@@ -184,6 +184,9 @@ $(document).ready(function(){initNavTree('functions_eval_r.htm',''); initResizab
 , <a class="el" href="db/db2/structxii_g_a_l_pipeline_type.htm#ad5477c40754df4d33e387c8affd6784ba789dd653f5a037ac5a1caced851a8efe">xiiGALPipelineType</a>
 , <a class="el" href="d6/dec/structxii_g_a_l_resource_state_flags.htm#a4863cdfd85d00744a4db3689c58b5e84ab7d17eae0a03245abc1d5b7089f1f6f4">xiiGALResourceStateFlags</a>
 </li>
+<li>RayTracingShader
+: <a class="el" href="dc/d29/structxii_g_a_l_pipeline_stage_flags.htm#ab114e9a33a63968b73bdf79069b73282ab4a514a999a8c90fb10898fd9c858731">xiiGALPipelineStageFlags</a>
+</li>
 <li>Read
 : <a class="el" href="d0/dec/structxii_file_open_mode.htm#aad81097e9a792e7a5fd53df5ccd00a6faf447273dc5d5d3ad2fa58a5c499510d3">xiiFileOpenMode</a>
 , <a class="el" href="db/dca/structxii_g_a_l_c_p_u_access_flag.htm#a2d7b392faf2b73fe981386307093fe7ba0b5e04a17a13491ea9b0d2210835f4c0">xiiGALCPUAccessFlag</a>
@@ -219,9 +222,6 @@ $(document).ready(function(){initNavTree('functions_eval_r.htm',''); initResizab
 <li>Reference
 : <a class="el" href="d6/d7c/structxii_property_flags.htm#a54fed1f9480831324a7b3840218228fba6ef448aee23a1ab010f3c948a954039d">xiiPropertyFlags</a>
 </li>
-<li>RegisterAllocator
-: <a class="el" href="d9/d14/structxii_memory_tracking_flags.htm#a040960956de726e6b11c50dd1519d59fa2210d4f43f6b71fcb6a2b66b766e0984">xiiMemoryTrackingFlags</a>
-</li>
 <li>Regular
 : <a class="el" href="da/d7c/structxii_clip_space_y_mode.htm#a9156e519b2e4056da392017369de3676a38cac612d7262fef0b74e9e5cf23efcb">xiiClipSpaceYMode</a>
 </li>
@@ -242,9 +242,16 @@ $(document).ready(function(){initNavTree('functions_eval_r.htm',''); initResizab
 </li>
 <li>RenderTarget
 : <a class="el" href="d6/d24/structxii_g_a_l_bind_flags.htm#a25f393130b89d8ef16082ac3ade3c33fa73e1c77aa0bcbbb404197408a3892795">xiiGALBindFlags</a>
+, <a class="el" href="dc/d29/structxii_g_a_l_pipeline_stage_flags.htm#ab114e9a33a63968b73bdf79069b73282abb8bcde3605a2b37c3fe6e704b985f00">xiiGALPipelineStageFlags</a>
 , <a class="el" href="d6/dec/structxii_g_a_l_resource_state_flags.htm#a4863cdfd85d00744a4db3689c58b5e84a2baec65fa0070446f789e12666b10950">xiiGALResourceStateFlags</a>
 , <a class="el" href="d6/dc7/structxii_g_a_l_swap_chain_usage_flags.htm#a0a6400b36fb7969abaa95ffb71d04588a384e16a4458d6021907062783c4f7f9f">xiiGALSwapChainUsageFlags</a>
 , <a class="el" href="db/d60/structxii_g_a_l_texture_view_type.htm#ad4f8ca273dab45d482b39716b7c25272ab6c3bfa1704520642c126b534daf13e6">xiiGALTextureViewType</a>
+</li>
+<li>RenderTargetRead
+: <a class="el" href="d7/d8d/structxii_g_a_l_access_flags.htm#a4c4d72bc05e2a6cd4819337ffa7f6b9aa2d641d3251438c453e5d8ddc0183cc4c">xiiGALAccessFlags</a>
+</li>
+<li>RenderTargetWrite
+: <a class="el" href="d7/d8d/structxii_g_a_l_access_flags.htm#a4c4d72bc05e2a6cd4819337ffa7f6b9aa970cef9575b9fe628f0b9b7bb9011c20">xiiGALAccessFlags</a>
 </li>
 <li>Repeat
 : <a class="el" href="df/d57/structxii_image_address_mode.htm#a2f860fd0e87f14125a981706cc5d8966a9ec6d9c7fbe0db602b3f290507ba4143">xiiImageAddressMode</a>
@@ -266,6 +273,9 @@ $(document).ready(function(){initNavTree('functions_eval_r.htm',''); initResizab
 </li>
 <li>RequiresRestart
 : <a class="el" href="dc/db8/structxii_c_var_flags.htm#a1543a8b5d2fb57308ecfb6d5f85d3bdea2d06273a37f3b4955000552e58091edf">xiiCVarFlags</a>
+</li>
+<li>Reset
+: <a class="el" href="d1/dd2/structxii_g_a_l_set_vertex_buffer_flags.htm#aee16c235ab911bd713b70128cbf45917a13aa5246010815fead95f14be9498d68">xiiGALSetVertexBufferFlags</a>
 </li>
 <li>ResetEntryValues
 : <a class="el" href="db/d6c/structxii_global_blackboard_init_mode.htm#ad56e8849c05e9e63e5b7522050228835ac050026702e988e0b75eb194bc59f984">xiiGlobalBlackboardInitMode</a>
@@ -436,13 +446,16 @@ $(document).ready(function(){initNavTree('functions_eval_r.htm',''); initResizab
 <li>RowMajor
 : <a class="el" href="d0/d4f/structxii_matrix_layout.htm#ac36c91b001c7cd816897b73c0bff5e6da5ad82519c9175b12d17d03b62d0b18e1">xiiMatrixLayout</a>
 </li>
+<li>RuntimeArray
+: <a class="el" href="da/d8c/structxii_g_a_l_pipeline_resource_flags.htm#a149c0308106286ee271be0c308b08828a28d65e50a702e4fd02212da9eb57331e">xiiGALPipelineResourceFlags</a>
+</li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sun Dec 31 2023 07:14:01 for XIIEngine by
+    <li class="footer">Generated on Tue Apr 30 2024 17:34:42 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

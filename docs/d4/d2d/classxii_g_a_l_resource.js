@@ -1,5 +1,6 @@
 var classxii_g_a_l_resource =
 [
+    [ "xiiGALResource", "d4/d2d/classxii_g_a_l_resource.htm#ae8040fd94083a9549d59b105c6d9281e", null ],
     [ "xiiGALDevice", "d4/d2d/classxii_g_a_l_resource.htm#a8a9dd0ea17d38c3d68c9db0002e5dab0", null ],
     [ "m_BufferViews", "d4/d2d/classxii_g_a_l_resource.htm#a7918773a456e5b9b5b42783a6a90b0cf", null ],
     [ "m_DefaultBufferViews", "d4/d2d/classxii_g_a_l_resource.htm#a334a1e9039a29f7bfad75a752d795dc3", null ],

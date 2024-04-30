@@ -91,51 +91,69 @@ $(document).ready(function(){initNavTree('dc/d29/_d3_d12_type_conversions_8h_sou
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;GraphicsD3D12/GraphicsD3D12DLL.h&gt;</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;GraphicsFoundation/States/BlendState.h&gt;</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;GraphicsFoundation/States/DepthStencilState.h&gt;</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;GraphicsFoundation/States/RasterizerState.h&gt;</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;d3d12.h&gt;</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;Foundation/Basics/Platform/Win/IncludeWindows.h&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;GraphicsFoundation/Declarations/GraphicsTypes.h&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;GraphicsFoundation/States/BlendState.h&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;GraphicsFoundation/States/DepthStencilState.h&gt;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;GraphicsFoundation/States/RasterizerState.h&gt;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;d3d12.h&gt;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;dxgitype.h&gt;</span></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
-<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="../../d8/d5b/classxii_d3_d12_type_conversions.htm">   13</a></span>&#160;<span class="keyword">class </span>XII_GRAPHICSD3D12_DLL <a class="code" href="../../d8/d5b/classxii_d3_d12_type_conversions.htm">xiiD3D12TypeConversions</a></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;{</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;  template &lt;typename T, typename R = typename std::underlying_type&lt;T&gt;::type&gt;</div>
-<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="../../d8/d5b/classxii_d3_d12_type_conversions.htm#ad3be7ed097ead2642f7acb8c41edc7fb">   18</a></span>&#160;  <span class="keyword">static</span> R <a class="code" href="../../d8/d5b/classxii_d3_d12_type_conversions.htm#ad3be7ed097ead2642f7acb8c41edc7fb">GetUnderlyingValue</a>(T value)</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;  {</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>typename std::underlying_type&lt;T&gt;::type<span class="keyword">&gt;</span>(value);</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  }</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="../../d8/d5b/classxii_d3_d12_type_conversions.htm#a83bcbbbbae89f3547dd24a279beee715">   25</a></span>&#160;  <span class="keyword">static</span> <span class="keyword">auto</span> <a class="code" href="../../d8/d5b/classxii_d3_d12_type_conversions.htm#a83bcbbbbae89f3547dd24a279beee715">GetUnderlyingFlagsValue</a>(T value)</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  {</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>typename T::MaskType<span class="keyword">&gt;</span>(value);</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  }</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  <span class="keyword">static</span> D3D12_BLEND    GetD3D12BlendFactor(<a class="code" href="../../de/dfd/structxii_enum.htm">xiiEnum&lt;xiiGALBlendFactor&gt;</a> e);</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  <span class="keyword">static</span> D3D12_BLEND_OP GetD3D12BlendOp(<a class="code" href="../../de/dfd/structxii_enum.htm">xiiEnum&lt;xiiGALBlendOperation&gt;</a> e);</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  <span class="keyword">static</span> D3D12_COMPARISON_FUNC GetD3D12ComparisonFunc(<a class="code" href="../../de/dfd/structxii_enum.htm">xiiEnum&lt;xiiGALComparisonFunction&gt;</a> e);</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  <span class="keyword">static</span> D3D12_STENCIL_OP      GetD3D12StencilOp(<a class="code" href="../../de/dfd/structxii_enum.htm">xiiEnum&lt;xiiGALStencilOperation&gt;</a> e);</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  <span class="keyword">static</span> D3D12_FILL_MODE GetD3D12FillMode(<a class="code" href="../../de/dfd/structxii_enum.htm">xiiEnum&lt;xiiGALFillMode&gt;</a> e);</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <span class="keyword">static</span> D3D12_CULL_MODE GetD3D12CullMode(<a class="code" href="../../de/dfd/structxii_enum.htm">xiiEnum&lt;xiiGALCullMode&gt;</a> e);</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;};</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#include &lt;GraphicsD3D12/Utilities/Implementation/D3D12TypeConversions_inl.h&gt;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;Foundation/Basics/Platform/Win/IncludeWindows.h&gt;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="../../d8/d5b/classxii_d3_d12_type_conversions.htm">   15</a></span>&#160;<span class="keyword">class </span>XII_GRAPHICSD3D12_DLL <a class="code" href="../../d8/d5b/classxii_d3_d12_type_conversions.htm">xiiD3D12TypeConversions</a></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;{</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;  template &lt;typename T, typename R = typename std::underlying_type&lt;T&gt;::type&gt;</div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="../../d8/d5b/classxii_d3_d12_type_conversions.htm#ad3be7ed097ead2642f7acb8c41edc7fb">   20</a></span>&#160;  <span class="keyword">static</span> R <a class="code" href="../../d8/d5b/classxii_d3_d12_type_conversions.htm#ad3be7ed097ead2642f7acb8c41edc7fb">GetUnderlyingValue</a>(T value)</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  {</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>typename std::underlying_type&lt;T&gt;::type<span class="keyword">&gt;</span>(value);</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  }</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="../../d8/d5b/classxii_d3_d12_type_conversions.htm#a83bcbbbbae89f3547dd24a279beee715">   27</a></span>&#160;  <span class="keyword">static</span> <span class="keyword">auto</span> <a class="code" href="../../d8/d5b/classxii_d3_d12_type_conversions.htm#a83bcbbbbae89f3547dd24a279beee715">GetUnderlyingFlagsValue</a>(T value)</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  {</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>typename T::MaskType<span class="keyword">&gt;</span>(value);</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  }</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  <span class="keyword">static</span> D3D12_BLEND    GetBlendFactor(<a class="code" href="../../de/dfd/structxii_enum.htm">xiiEnum&lt;xiiGALBlendFactor&gt;</a> e);</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  <span class="keyword">static</span> D3D12_BLEND_OP GetBlendOp(<a class="code" href="../../de/dfd/structxii_enum.htm">xiiEnum&lt;xiiGALBlendOperation&gt;</a> e);</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  <span class="keyword">static</span> D3D12_COMPARISON_FUNC GetComparisonFunc(<a class="code" href="../../de/dfd/structxii_enum.htm">xiiEnum&lt;xiiGALComparisonFunction&gt;</a> e);</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  <span class="keyword">static</span> D3D12_STENCIL_OP      GetStencilOp(<a class="code" href="../../de/dfd/structxii_enum.htm">xiiEnum&lt;xiiGALStencilOperation&gt;</a> e);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <span class="keyword">static</span> D3D12_FILL_MODE GetFillMode(<a class="code" href="../../de/dfd/structxii_enum.htm">xiiEnum&lt;xiiGALFillMode&gt;</a> e);</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <span class="keyword">static</span> D3D12_CULL_MODE GetCullMode(<a class="code" href="../../de/dfd/structxii_enum.htm">xiiEnum&lt;xiiGALCullMode&gt;</a> e);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <span class="keyword">static</span> xiiUInt8 GetColorWriteMask(<a class="code" href="../../d7/d55/structxii_bitflags.htm">xiiBitflags&lt;xiiGALColorMask&gt;</a> e);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <span class="keyword">static</span> DXGI_FORMAT                  GetFormat(<a class="code" href="../../de/dfd/structxii_enum.htm">xiiEnum&lt;xiiGALTextureFormat&gt;</a> e);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <span class="keyword">static</span> <a class="code" href="../../de/dfd/structxii_enum.htm">xiiEnum&lt;xiiGALTextureFormat&gt;</a> GetGALFormat(DXGI_FORMAT e);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <span class="keyword">static</span> DXGI_MODE_SCALING            GetScalingMode(<a class="code" href="../../de/dfd/structxii_enum.htm">xiiEnum&lt;xiiGALScalingMode&gt;</a> e);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <span class="keyword">static</span> <a class="code" href="../../de/dfd/structxii_enum.htm">xiiEnum&lt;xiiGALScalingMode&gt;</a>   GetGALScalingMode(DXGI_MODE_SCALING e);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <span class="keyword">static</span> DXGI_MODE_SCANLINE_ORDER     GetScanLineOrder(<a class="code" href="../../de/dfd/structxii_enum.htm">xiiEnum&lt;xiiGALScanLineOrder&gt;</a> e);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <span class="keyword">static</span> <a class="code" href="../../de/dfd/structxii_enum.htm">xiiEnum&lt;xiiGALScanLineOrder&gt;</a> GetGALScanLineOrder(DXGI_MODE_SCANLINE_ORDER e);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <span class="keyword">static</span> D3D12_FILTER               GetFilter(<a class="code" href="../../de/dfd/structxii_enum.htm">xiiEnum&lt;xiiGALFilterType&gt;</a> minFilter, <a class="code" href="../../de/dfd/structxii_enum.htm">xiiEnum&lt;xiiGALFilterType&gt;</a> magFilter, <a class="code" href="../../de/dfd/structxii_enum.htm">xiiEnum&lt;xiiGALFilterType&gt;</a> mipFilter);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <span class="keyword">static</span> D3D12_TEXTURE_ADDRESS_MODE GetTextureAddressMode(<a class="code" href="../../de/dfd/structxii_enum.htm">xiiEnum&lt;xiiGALTextureAddressMode&gt;</a> e);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <span class="keyword">static</span> D3D12_QUERY_HEAP_TYPE GetQueryType(<a class="code" href="../../de/dfd/structxii_enum.htm">xiiEnum&lt;xiiGALQueryType&gt;</a> e);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;};</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="preprocessor">#include &lt;GraphicsD3D12/Utilities/Implementation/D3D12TypeConversions_inl.h&gt;</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="astructxii_enum_htm"><div class="ttname"><a href="../../de/dfd/structxii_enum.htm">xiiEnum&lt; xiiGALBlendFactor &gt;</a></div></div>
-<div class="ttc" id="aclassxii_d3_d12_type_conversions_htm_a83bcbbbbae89f3547dd24a279beee715"><div class="ttname"><a href="../../d8/d5b/classxii_d3_d12_type_conversions.htm#a83bcbbbbae89f3547dd24a279beee715">xiiD3D12TypeConversions::GetUnderlyingFlagsValue</a></div><div class="ttdeci">static auto GetUnderlyingFlagsValue(T value)</div><div class="ttdoc">Helper function to hash D3D12 flags.</div><div class="ttdef"><b>Definition:</b> D3D12TypeConversions.h:25</div></div>
-<div class="ttc" id="aclassxii_d3_d12_type_conversions_htm"><div class="ttname"><a href="../../d8/d5b/classxii_d3_d12_type_conversions.htm">xiiD3D12TypeConversions</a></div><div class="ttdef"><b>Definition:</b> D3D12TypeConversions.h:13</div></div>
-<div class="ttc" id="aclassxii_d3_d12_type_conversions_htm_ad3be7ed097ead2642f7acb8c41edc7fb"><div class="ttname"><a href="../../d8/d5b/classxii_d3_d12_type_conversions.htm#ad3be7ed097ead2642f7acb8c41edc7fb">xiiD3D12TypeConversions::GetUnderlyingValue</a></div><div class="ttdeci">static R GetUnderlyingValue(T value)</div><div class="ttdoc">Helper function to hash D3D12 enumerations.</div><div class="ttdef"><b>Definition:</b> D3D12TypeConversions.h:18</div></div>
+<div class="ttc" id="aclassxii_d3_d12_type_conversions_htm_a83bcbbbbae89f3547dd24a279beee715"><div class="ttname"><a href="../../d8/d5b/classxii_d3_d12_type_conversions.htm#a83bcbbbbae89f3547dd24a279beee715">xiiD3D12TypeConversions::GetUnderlyingFlagsValue</a></div><div class="ttdeci">static auto GetUnderlyingFlagsValue(T value)</div><div class="ttdoc">Helper function to hash D3D12 flags.</div><div class="ttdef"><b>Definition:</b> D3D12TypeConversions.h:27</div></div>
+<div class="ttc" id="astructxii_bitflags_htm"><div class="ttname"><a href="../../d7/d55/structxii_bitflags.htm">xiiBitflags&lt; xiiGALColorMask &gt;</a></div></div>
+<div class="ttc" id="aclassxii_d3_d12_type_conversions_htm"><div class="ttname"><a href="../../d8/d5b/classxii_d3_d12_type_conversions.htm">xiiD3D12TypeConversions</a></div><div class="ttdef"><b>Definition:</b> D3D12TypeConversions.h:15</div></div>
+<div class="ttc" id="aclassxii_d3_d12_type_conversions_htm_ad3be7ed097ead2642f7acb8c41edc7fb"><div class="ttname"><a href="../../d8/d5b/classxii_d3_d12_type_conversions.htm#ad3be7ed097ead2642f7acb8c41edc7fb">xiiD3D12TypeConversions::GetUnderlyingValue</a></div><div class="ttdeci">static R GetUnderlyingValue(T value)</div><div class="ttdoc">Helper function to hash D3D12 enumerations.</div><div class="ttdef"><b>Definition:</b> D3D12TypeConversions.h:20</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.htm">home</a></li><li class="navelem"><a class="el" href="../../dir_1036706e55c22cab35bc1c58ee689f1d.htm">runner</a></li><li class="navelem"><a class="el" href="../../dir_629f8151d55d307162ff2d619fb1783d.htm">work</a></li><li class="navelem"><a class="el" href="../../dir_1ddc44fe1263a8c7935fa6130b7d9499.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_2c1b6808f12952f4c36e05ba7068379a.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_b5a1c4ecfca018ad24b729e213296d41.htm">Source</a></li><li class="navelem"><a class="el" href="../../dir_e321052006a51284e67389ab20037e7c.htm">Engine</a></li><li class="navelem"><a class="el" href="../../dir_68524623ec22db3a46657ed65685622a.htm">GraphicsD3D12</a></li><li class="navelem"><a class="el" href="../../dir_6f39e032c44bb31d5cf108502d7ddc7d.htm">Utilities</a></li><li class="navelem"><b>D3D12TypeConversions.h</b></li>
-    <li class="footer">Generated on Sun Dec 31 2023 07:13:50 for XIIEngine by
+    <li class="footer">Generated on Tue Apr 30 2024 17:34:34 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

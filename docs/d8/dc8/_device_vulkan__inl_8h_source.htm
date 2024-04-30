@@ -98,30 +98,60 @@ $(document).ready(function(){initNavTree('d8/dc8/_device_vulkan__inl_8h_source.h
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;  <span class="keywordflow">return</span> m_pEngineFactory;</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;}</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;XII_ALWAYS_INLINE <a class="code" href="../../d9/ddc/classxii_g_a_l_pass_vulkan.htm">xiiGALPassVulkan</a>* xiiGALDeviceVulkan::GetDefaultPass()</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;XII_ALWAYS_INLINE Diligent::IDeviceContext* xiiGALDeviceVulkan::GetImmediateContext()</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;{</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;  <span class="keywordflow">return</span> m_pDefaultPass.<a class="code" href="../../d9/d4a/classxii_unique_ptr.htm#aff6bd0f915964769fe2ec7a2a81fd2d5">Borrow</a>();</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;  <span class="keywordflow">return</span> m_pDeviceContexts[0];</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;}</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;XII_ALWAYS_INLINE Diligent::IDeviceContext* xiiGALDeviceVulkan::GetImmediateContext()</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;XII_ALWAYS_INLINE Diligent::IDeviceContext* xiiGALDeviceVulkan::GetComputeContext()</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;{</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;  <span class="keywordflow">return</span> m_pDeviceContexts[0];</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;}</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;XII_ALWAYS_INLINE <span class="keyword">const</span> <a class="code" href="../../d3/daa/classxii_g_a_l_format_lookup_table.htm">xiiGALFormatLookupTableVulkan</a>&amp; xiiGALDeviceVulkan::GetFormatLookupTable()<span class="keyword"> const</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword"></span>{</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  <span class="keywordflow">return</span> m_FormatLookupTable;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;}</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;  <span class="keywordflow">for</span> (xiiUInt32 i = 1; i &lt; m_pDeviceContexts.<a class="code" href="../../da/d4c/classxii_array_base.htm#a43100f93e19bb795ea0980dae2b28e0b">GetCount</a>(); ++i)</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  {</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keyword">auto</span> pContext = m_pDeviceContexts[i];</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keywordflow">if</span> (pContext-&gt;GetDesc().QueueType == Diligent::COMMAND_QUEUE_TYPE_COMPUTE)</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;      <span class="keywordflow">return</span> pContext;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  }</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;}</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;XII_ALWAYS_INLINE Diligent::IDeviceContext* xiiGALDeviceVulkan::GetTransferContext()</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;{</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  <span class="keywordflow">for</span> (xiiUInt32 i = 1; i &lt; m_pDeviceContexts.<a class="code" href="../../da/d4c/classxii_array_base.htm#a43100f93e19bb795ea0980dae2b28e0b">GetCount</a>(); ++i)</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  {</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keyword">auto</span> pContext = m_pDeviceContexts[i];</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordflow">if</span> (pContext-&gt;GetDesc().QueueType == Diligent::COMMAND_QUEUE_TYPE_TRANSFER)</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;      <span class="keywordflow">return</span> pContext;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  }</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;}</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;XII_ALWAYS_INLINE Diligent::IDeviceContext* xiiGALDeviceVulkan::GetSparseBindingContext()</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;{</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <span class="keywordflow">for</span> (xiiUInt32 i = 1; i &lt; m_pDeviceContexts.<a class="code" href="../../da/d4c/classxii_array_base.htm#a43100f93e19bb795ea0980dae2b28e0b">GetCount</a>(); ++i)</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  {</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keyword">auto</span> pContext = m_pDeviceContexts[i];</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordflow">if</span> (pContext-&gt;GetDesc().QueueType == Diligent::COMMAND_QUEUE_TYPE_SPARSE_BINDING)</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;      <span class="keywordflow">return</span> pContext;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  }</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;}</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;XII_ALWAYS_INLINE <span class="keyword">const</span> <a class="code" href="../../d3/daa/classxii_g_a_l_format_lookup_table.htm">xiiGALFormatLookupTableVulkan</a>&amp; xiiGALDeviceVulkan::GetFormatLookupTable()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <span class="keywordflow">return</span> m_FormatLookupTable;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclassxii_g_a_l_pass_vulkan_htm"><div class="ttname"><a href="../../d9/ddc/classxii_g_a_l_pass_vulkan.htm">xiiGALPassVulkan</a></div><div class="ttdef"><b>Definition:</b> PassVulkan.h:9</div></div>
 <div class="ttc" id="aclassxii_g_a_l_format_lookup_table_htm"><div class="ttname"><a href="../../d3/daa/classxii_g_a_l_format_lookup_table.htm">xiiGALFormatLookupTable&lt; xiiGALFormatLookupEntryVulkan &gt;</a></div></div>
-<div class="ttc" id="aclassxii_unique_ptr_htm_aff6bd0f915964769fe2ec7a2a81fd2d5"><div class="ttname"><a href="../../d9/d4a/classxii_unique_ptr.htm#aff6bd0f915964769fe2ec7a2a81fd2d5">xiiUniquePtr::Borrow</a></div><div class="ttdeci">T * Borrow() const</div><div class="ttdoc">Borrows the managed object. The unique ptr stays unmodified.</div><div class="ttdef"><b>Definition:</b> UniquePtr_inl.h:102</div></div>
+<div class="ttc" id="aclassxii_array_base_htm_a43100f93e19bb795ea0980dae2b28e0b"><div class="ttname"><a href="../../da/d4c/classxii_array_base.htm#a43100f93e19bb795ea0980dae2b28e0b">xiiArrayBase::GetCount</a></div><div class="ttdeci">xiiUInt32 GetCount() const</div><div class="ttdoc">Returns the number of active elements in the array.</div><div class="ttdef"><b>Definition:</b> ArrayBase_inl.h:164</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.htm">home</a></li><li class="navelem"><a class="el" href="../../dir_1036706e55c22cab35bc1c58ee689f1d.htm">runner</a></li><li class="navelem"><a class="el" href="../../dir_629f8151d55d307162ff2d619fb1783d.htm">work</a></li><li class="navelem"><a class="el" href="../../dir_1ddc44fe1263a8c7935fa6130b7d9499.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_2c1b6808f12952f4c36e05ba7068379a.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_b5a1c4ecfca018ad24b729e213296d41.htm">Source</a></li><li class="navelem"><a class="el" href="../../dir_e321052006a51284e67389ab20037e7c.htm">Engine</a></li><li class="navelem"><a class="el" href="../../dir_32f911672529289aa73bbec1c1630508.htm">GraphicsVulkan</a></li><li class="navelem"><a class="el" href="../../dir_3992c5ac56b319c9938c7eba80048db5.htm">Device</a></li><li class="navelem"><a class="el" href="../../dir_d9def26d86e4cd81fd480e37eb6a4674.htm">Implementation</a></li><li class="navelem"><b>DeviceVulkan_inl.h</b></li>
-    <li class="footer">Generated on Sun Dec 31 2023 07:13:50 for XIIEngine by
+    <li class="footer">Generated on Tue Apr 30 2024 17:34:34 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

@@ -1,0 +1,25 @@
+var classxii_g_a_l_swap_chain_d3_d11 =
+[
+    [ "xiiGALSwapChainD3D11", "da/d7f/classxii_g_a_l_swap_chain_d3_d11.htm#a56d080b9403d3ab1cef6ef40fd95e27f", null ],
+    [ "~xiiGALSwapChainD3D11", "da/d7f/classxii_g_a_l_swap_chain_d3_d11.htm#a77e610412c07bb33bde672c7ea171783", null ],
+    [ "AcquireNextRenderTarget", "da/d7f/classxii_g_a_l_swap_chain_d3_d11.htm#a591032efdd8a6fe0c2337f6e8f93cae7", null ],
+    [ "CreateBackBufferInternal", "da/d7f/classxii_g_a_l_swap_chain_d3_d11.htm#a5cd036642fa765561e2c48c6d0ceaa74", null ],
+    [ "CreateDXGISwapChain", "da/d7f/classxii_g_a_l_swap_chain_d3_d11.htm#af22cfaa06765ebffb8a41c49f10c6496", null ],
+    [ "DeInitPlatform", "da/d7f/classxii_g_a_l_swap_chain_d3_d11.htm#a2b2d1c4e9321a2db00ca11648299c6d6", null ],
+    [ "DestroyBackBufferInternal", "da/d7f/classxii_g_a_l_swap_chain_d3_d11.htm#a08c994d5cc0804a0db04e4cb74de4290", null ],
+    [ "GetSwapChain", "da/d7f/classxii_g_a_l_swap_chain_d3_d11.htm#a899fe2f8721b2b764a511e24bbf5ef09", null ],
+    [ "InitPlatform", "da/d7f/classxii_g_a_l_swap_chain_d3_d11.htm#a61e4f559a4a0fb7697781bf72bcf663c", null ],
+    [ "Present", "da/d7f/classxii_g_a_l_swap_chain_d3_d11.htm#afb336f211b411b6e09374fba33c6c3b2", null ],
+    [ "Resize", "da/d7f/classxii_g_a_l_swap_chain_d3_d11.htm#a7e92e70e5ebfee24a368de4c131b3b8d", null ],
+    [ "SetDebugNamePlatform", "da/d7f/classxii_g_a_l_swap_chain_d3_d11.htm#adb50d58ecbe74f2ffb26cd2b3368236d", null ],
+    [ "SetFullScreenMode", "da/d7f/classxii_g_a_l_swap_chain_d3_d11.htm#a5c9bd310070cf8f3f1cc1d18c149ba3c", null ],
+    [ "SetMaximumFrameLatency", "da/d7f/classxii_g_a_l_swap_chain_d3_d11.htm#a112c633d5e81661f985239d126ede863", null ],
+    [ "SetWindowedMode", "da/d7f/classxii_g_a_l_swap_chain_d3_d11.htm#ac32f339fd71985bf88e2c3001fc4b3b4", null ],
+    [ "UpdateSwapChain", "da/d7f/classxii_g_a_l_swap_chain_d3_d11.htm#ab84dbaa536f5d2c73eba43f2afcd66c7", null ],
+    [ "xiiGALDeviceD3D11", "da/d7f/classxii_g_a_l_swap_chain_d3_d11.htm#a119be3f0b625176fe189bbb49f04f55b", null ],
+    [ "xiiMemoryUtils", "da/d7f/classxii_g_a_l_swap_chain_d3_d11.htm#aefc9ff75d6833fd2f05be48e16436db6", null ],
+    [ "m_FullScreenMode", "da/d7f/classxii_g_a_l_swap_chain_d3_d11.htm#aca65a7d784e2239e38cb916112a06783", null ],
+    [ "m_hActualBackBufferTexture", "da/d7f/classxii_g_a_l_swap_chain_d3_d11.htm#a6c6ea9c78a3c9a43de23dddbd4522804", null ],
+    [ "m_pSwapChain", "da/d7f/classxii_g_a_l_swap_chain_d3_d11.htm#a2229e22d5d440c13b5c147852ee87c3a", null ],
+    [ "m_uiMaximumFrameLatency", "da/d7f/classxii_g_a_l_swap_chain_d3_d11.htm#a0eb253456778e1467f8ee528a9122528", null ]
+];

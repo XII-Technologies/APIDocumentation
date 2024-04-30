@@ -43,6 +43,7 @@ var structxii_string_view =
     [ "GetRootedPathRootName", "da/d9d/structxii_string_view.htm#a4bec6094e495c1e25b46d9c7f38a7db6", null ],
     [ "GetShrunk", "da/d9d/structxii_string_view.htm#a13022b4950ea182e3d50ecdf2d3d953b", null ],
     [ "GetStartPointer", "da/d9d/structxii_string_view.htm#a65d3c651c35878985c1a637a45ce9bd1", null ],
+    [ "GetSubString", "da/d9d/structxii_string_view.htm#a1d16f476cda6022e9f75deba35b152c9", null ],
     [ "HasAnyExtension", "da/d9d/structxii_string_view.htm#ad25f355d81eea946ad8eeb9d5a4a1efb", null ],
     [ "HasExtension", "da/d9d/structxii_string_view.htm#a1be23d8e4dfa4ba3dfadbbd2418f816d", null ],
     [ "IsAbsolutePath", "da/d9d/structxii_string_view.htm#aabda4ffb3e6a4f79ef28350f3c4b2e60", null ],

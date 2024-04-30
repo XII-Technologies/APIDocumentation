@@ -111,9 +111,9 @@ Inheritance diagram for xiiGALBlendStateVulkan:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a0b43b39120a055069e031b72c2b4e890"><td class="memItemLeft" align="right" valign="top"><a id="a0b43b39120a055069e031b72c2b4e890"></a>
-const Diligent::BlendStateDesc *&#160;</td><td class="memItemRight" valign="bottom"><b>GetBlendState</b> () const</td></tr>
-<tr class="separator:a0b43b39120a055069e031b72c2b4e890"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ac7187828b0a17167ae72831507a6dc"><td class="memItemLeft" align="right" valign="top"><a id="a4ac7187828b0a17167ae72831507a6dc"></a>
+const vk::PipelineColorBlendStateCreateInfo *&#160;</td><td class="memItemRight" valign="bottom"><b>GetBlendState</b> () const</td></tr>
+<tr class="separator:a4ac7187828b0a17167ae72831507a6dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classxii_g_a_l_blend_state"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classxii_g_a_l_blend_state')"><img src="../../closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="../../d8/dac/classxii_g_a_l_blend_state.htm">xiiGALBlendState</a></td></tr>
 <tr class="memitem:a9516c51f0ff02af74427ac1184b16c85 inherit pub_methods_classxii_g_a_l_blend_state"><td class="memItemLeft" align="right" valign="top"><a id="a9516c51f0ff02af74427ac1184b16c85"></a>
 const XII_NODISCARD <a class="el" href="../../d6/dd7/structxii_g_a_l_blend_state_creation_description.htm">xiiGALBlendStateCreationDescription</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dac/classxii_g_a_l_blend_state.htm#a9516c51f0ff02af74427ac1184b16c85">GetDescription</a> () const</td></tr>
@@ -183,26 +183,39 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:a15e42c413f7cdc27b98594ab6f289713"><td class="memItemLeft" align="right" valign="top"><a id="a15e42c413f7cdc27b98594ab6f289713"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>xiiGALBlendStateVulkan</b> (const <a class="el" href="../../d6/dd7/structxii_g_a_l_blend_state_creation_description.htm">xiiGALBlendStateCreationDescription</a> &amp;creationDescription)</td></tr>
 <tr class="separator:a15e42c413f7cdc27b98594ab6f289713"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4d52910dd4157d167a1307f498fac47a"><td class="memItemLeft" align="right" valign="top"><a id="a4d52910dd4157d167a1307f498fac47a"></a>
-virtual <a class="el" href="../../dd/dad/structxii_result.htm">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><b>InitPlatform</b> (<a class="el" href="../../d5/d19/classxii_g_a_l_device.htm">xiiGALDevice</a> *pDevice)</td></tr>
-<tr class="separator:a4d52910dd4157d167a1307f498fac47a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1876910f21c6459e625a720da53cdaea"><td class="memItemLeft" align="right" valign="top"><a id="a1876910f21c6459e625a720da53cdaea"></a>
-virtual <a class="el" href="../../dd/dad/structxii_result.htm">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><b>DeInitPlatform</b> (<a class="el" href="../../d5/d19/classxii_g_a_l_device.htm">xiiGALDevice</a> *pDevice)</td></tr>
-<tr class="separator:a1876910f21c6459e625a720da53cdaea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf3e8ae872448b6bd423cf41bd9215f0"><td class="memItemLeft" align="right" valign="top"><a id="abf3e8ae872448b6bd423cf41bd9215f0"></a>
+virtual <a class="el" href="../../dd/dad/structxii_result.htm">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><b>InitPlatform</b> (<a class="el" href="../../d5/d19/classxii_g_a_l_device.htm">xiiGALDevice</a> *pDevice) override final</td></tr>
+<tr class="separator:abf3e8ae872448b6bd423cf41bd9215f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aabaa46ea95c4b21674cee7c658a1a988"><td class="memItemLeft" align="right" valign="top"><a id="aabaa46ea95c4b21674cee7c658a1a988"></a>
+virtual <a class="el" href="../../dd/dad/structxii_result.htm">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><b>DeInitPlatform</b> (<a class="el" href="../../d5/d19/classxii_g_a_l_device.htm">xiiGALDevice</a> *pDevice) override final</td></tr>
+<tr class="separator:aabaa46ea95c4b21674cee7c658a1a988"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_classxii_g_a_l_blend_state"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classxii_g_a_l_blend_state')"><img src="../../closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="../../d8/dac/classxii_g_a_l_blend_state.htm">xiiGALBlendState</a></td></tr>
-<tr class="memitem:a54884c9cdca708ba851fdd6d7668df0c inherit pro_methods_classxii_g_a_l_blend_state"><td class="memItemLeft" align="right" valign="top"><a id="a54884c9cdca708ba851fdd6d7668df0c"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>xiiGALBlendState</b> (const <a class="el" href="../../d6/dd7/structxii_g_a_l_blend_state_creation_description.htm">xiiGALBlendStateCreationDescription</a> &amp;creationDescription)</td></tr>
-<tr class="separator:a54884c9cdca708ba851fdd6d7668df0c inherit pro_methods_classxii_g_a_l_blend_state"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9720707dea188762f75a7d9ad85ba36 inherit pro_methods_classxii_g_a_l_blend_state"><td class="memItemLeft" align="right" valign="top"><a id="ab9720707dea188762f75a7d9ad85ba36"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>xiiGALBlendState</b> (<a class="el" href="../../d5/d19/classxii_g_a_l_device.htm">xiiGALDevice</a> *pDevice, const <a class="el" href="../../d6/dd7/structxii_g_a_l_blend_state_creation_description.htm">xiiGALBlendStateCreationDescription</a> &amp;creationDescription)</td></tr>
+<tr class="separator:ab9720707dea188762f75a7d9ad85ba36 inherit pro_methods_classxii_g_a_l_blend_state"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51d303a230b9520f69c265ec4edea185 inherit pro_methods_classxii_g_a_l_blend_state"><td class="memItemLeft" align="right" valign="top"><a id="a51d303a230b9520f69c265ec4edea185"></a>
+virtual <a class="el" href="../../dd/dad/structxii_result.htm">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><b>InitPlatform</b> ()=0</td></tr>
+<tr class="separator:a51d303a230b9520f69c265ec4edea185 inherit pro_methods_classxii_g_a_l_blend_state"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a322b826730bafcb5ab67b0422cf9562a inherit pro_methods_classxii_g_a_l_blend_state"><td class="memItemLeft" align="right" valign="top"><a id="a322b826730bafcb5ab67b0422cf9562a"></a>
+virtual <a class="el" href="../../dd/dad/structxii_result.htm">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><b>DeInitPlatform</b> ()=0</td></tr>
+<tr class="separator:a322b826730bafcb5ab67b0422cf9562a inherit pro_methods_classxii_g_a_l_blend_state"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_classxii_g_a_l_device_object"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classxii_g_a_l_device_object')"><img src="../../closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="../../d5/d12/classxii_g_a_l_device_object.htm">xiiGALDeviceObject</a></td></tr>
+<tr class="memitem:a7ba98273bd740d9f4e9ed729de53b723 inherit pro_methods_classxii_g_a_l_device_object"><td class="memItemLeft" align="right" valign="top"><a id="a7ba98273bd740d9f4e9ed729de53b723"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>xiiGALDeviceObject</b> (<a class="el" href="../../d5/d19/classxii_g_a_l_device.htm">xiiGALDevice</a> *pDevice)</td></tr>
+<tr class="separator:a7ba98273bd740d9f4e9ed729de53b723 inherit pro_methods_classxii_g_a_l_device_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_classxii_g_a_l_object"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classxii_g_a_l_object')"><img src="../../closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="../../d3/dda/classxii_g_a_l_object.htm">xiiGALObject</a></td></tr>
-<tr class="memitem:aaffc1ae3ea20d4992e3de54ed6cd62ba inherit pro_methods_classxii_g_a_l_object"><td class="memItemLeft" align="right" valign="top"><a id="aaffc1ae3ea20d4992e3de54ed6cd62ba"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SetDebugNamePlatform</b> (<a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sNam)</td></tr>
-<tr class="separator:aaffc1ae3ea20d4992e3de54ed6cd62ba inherit pro_methods_classxii_g_a_l_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad91f3bebb53357b1c693e922a8da1262 inherit pro_methods_classxii_g_a_l_object"><td class="memItemLeft" align="right" valign="top"><a id="ad91f3bebb53357b1c693e922a8da1262"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SetDebugNamePlatform</b> (<a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sName)</td></tr>
+<tr class="separator:ad91f3bebb53357b1c693e922a8da1262 inherit pro_methods_classxii_g_a_l_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr class="memitem:a9909436a4102e0a9f84314fb7f92bbda"><td class="memItemLeft" align="right" valign="top"><a id="a9909436a4102e0a9f84314fb7f92bbda"></a>
-Diligent::BlendStateDesc&#160;</td><td class="memItemRight" valign="bottom"><b>m_BlendState</b> = {}</td></tr>
-<tr class="separator:a9909436a4102e0a9f84314fb7f92bbda"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15c943a59578fb45c4ebcd50af6262b2"><td class="memItemLeft" align="right" valign="top"><a id="a15c943a59578fb45c4ebcd50af6262b2"></a>
+vk::PipelineColorBlendStateCreateInfo&#160;</td><td class="memItemRight" valign="bottom"><b>m_BlendState</b> = {}</td></tr>
+<tr class="separator:a15c943a59578fb45c4ebcd50af6262b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54d7fa4b0f28a81f2b38bbf1ba011946"><td class="memItemLeft" align="right" valign="top"><a id="a54d7fa4b0f28a81f2b38bbf1ba011946"></a>
+<a class="el" href="../../d9/d25/classxii_static_array.htm">xiiStaticArray</a>&lt; vk::PipelineColorBlendAttachmentState, XII_GAL_MAX_RENDERTARGET_COUNT &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_BlendAttachmentState</b></td></tr>
+<tr class="separator:a54d7fa4b0f28a81f2b38bbf1ba011946"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_classxii_g_a_l_blend_state"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classxii_g_a_l_blend_state')"><img src="../../closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="../../d8/dac/classxii_g_a_l_blend_state.htm">xiiGALBlendState</a></td></tr>
 <tr class="memitem:aa494f2faf98a961b967c7ceea795b1bc inherit pro_attribs_classxii_g_a_l_blend_state"><td class="memItemLeft" align="right" valign="top"><a id="aa494f2faf98a961b967c7ceea795b1bc"></a>
 <a class="el" href="../../d6/dd7/structxii_g_a_l_blend_state_creation_description.htm">xiiGALBlendStateCreationDescription</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_Description</b></td></tr>
@@ -211,10 +224,6 @@ Diligent::BlendStateDesc&#160;</td><td class="memItemRight" valign="bottom"><b>m
 <tr class="memitem:acdca6fd41d888d8ff4a3cf9bc4dfea29 inherit pro_attribs_classxii_g_a_l_device_object"><td class="memItemLeft" align="right" valign="top"><a id="acdca6fd41d888d8ff4a3cf9bc4dfea29"></a>
 <a class="el" href="../../d5/d19/classxii_g_a_l_device.htm">xiiGALDevice</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_pDevice</b> = nullptr</td></tr>
 <tr class="separator:acdca6fd41d888d8ff4a3cf9bc4dfea29 inherit pro_attribs_classxii_g_a_l_device_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pro_attribs_classxii_g_a_l_object"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classxii_g_a_l_object')"><img src="../../closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="../../d3/dda/classxii_g_a_l_object.htm">xiiGALObject</a></td></tr>
-<tr class="memitem:ab142653071e67b7a51f8d4349014679c inherit pro_attribs_classxii_g_a_l_object"><td class="memItemLeft" align="right" valign="top"><a id="ab142653071e67b7a51f8d4349014679c"></a>
-<a class="el" href="../../d6/d0c/classxii_hashed_string.htm">xiiHashedString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_sDebugName</b></td></tr>
-<tr class="separator:ab142653071e67b7a51f8d4349014679c inherit pro_attribs_classxii_g_a_l_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
@@ -243,7 +252,7 @@ static const <a class="el" href="../../db/d89/classxii_r_t_t_i.htm">xiiRTTI</a> 
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d2/d2f/classxii_g_a_l_blend_state_vulkan.htm">xiiGALBlendStateVulkan</a></li>
-    <li class="footer">Generated on Sun Dec 31 2023 07:13:54 for XIIEngine by
+    <li class="footer">Generated on Tue Apr 30 2024 17:34:37 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

@@ -7,7 +7,7 @@ var classxii_msaa_upscale_pass =
     [ "GetRenderTargetDescriptions", "dc/dc3/classxii_msaa_upscale_pass.htm#a958519d22cb17687a6ca9b49fe67f67b", null ],
     [ "Serialize", "dc/dc3/classxii_msaa_upscale_pass.htm#ad30d36e8ce0c89d39b180e1bba235f1e", null ],
     [ "m_hShader", "dc/dc3/classxii_msaa_upscale_pass.htm#af8c3e24de0d7b4150ed91cc3b9121a45", null ],
-    [ "m_MsaaMode", "dc/dc3/classxii_msaa_upscale_pass.htm#ab2d0c76b3b265f6d0941437eaabf6c85", null ],
+    [ "m_MsaaMode", "dc/dc3/classxii_msaa_upscale_pass.htm#a6dbc299c353d335d611c068a6137c55e", null ],
     [ "m_PinInput", "dc/dc3/classxii_msaa_upscale_pass.htm#a00ff7814183075bd32831b37d9492586", null ],
     [ "m_PinOutput", "dc/dc3/classxii_msaa_upscale_pass.htm#a49af598d8dfa2c30ccdf6d3bca75972f", null ]
 ];

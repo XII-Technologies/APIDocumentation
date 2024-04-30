@@ -1,6 +1,6 @@
 var classxii_large_block_allocator =
 [
-    [ "xiiLargeBlockAllocator", "d9/dc9/classxii_large_block_allocator.htm#a09797854ed52708b28b98af03769936d", null ],
+    [ "xiiLargeBlockAllocator", "d9/dc9/classxii_large_block_allocator.htm#aca23f5eafa3dd06996bb886cd27e17ac", null ],
     [ "~xiiLargeBlockAllocator", "d9/dc9/classxii_large_block_allocator.htm#a5ed4809c7e221a0d11294c9eca805e08", null ],
     [ "AllocateBlock", "d9/dc9/classxii_large_block_allocator.htm#a5c74a060dc160cdd416adb6a0d124abb", null ],
     [ "AllocateBlock", "d9/dc9/classxii_large_block_allocator.htm#aacd283feec52f1905347314c5f15d799", null ],

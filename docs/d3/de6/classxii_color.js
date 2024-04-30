@@ -38,6 +38,8 @@ var classxii_color =
     [ "SetRGB", "d3/de6/classxii_color.htm#a3a2cc3754abefe41fd10c14700436fe1", null ],
     [ "SetRGBA", "d3/de6/classxii_color.htm#aa33dc4c12f06784e2e38bdc557344199", null ],
     [ "SetZero", "d3/de6/classxii_color.htm#a202a3919d4432d91e362151ff5726fca", null ],
+    [ "ToABGR8", "d3/de6/classxii_color.htm#a3b717a24d32a4e8268dc9177135130f5", null ],
+    [ "ToRGBA8", "d3/de6/classxii_color.htm#a40c5272fb7afdd8223023280efdce636", null ],
     [ "WithAlpha", "d3/de6/classxii_color.htm#ad7e8ee92b1d45362fae5657610df8e39", null ],
     [ "XII_DECLARE_POD_TYPE", "d3/de6/classxii_color.htm#a0ed9bd18da7266cc67aed60bf22fa34c", null ],
     [ "a", "d3/de6/classxii_color.htm#a49b677eb14bd33007656e375de8ecb3a", null ],

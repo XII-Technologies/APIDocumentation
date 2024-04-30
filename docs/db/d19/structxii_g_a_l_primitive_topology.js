@@ -9,7 +9,7 @@ var structxii_g_a_l_primitive_topology =
       [ "TriangleStrip", "db/d19/structxii_g_a_l_primitive_topology.htm#a7b7c5b79846d73ceaf06670334c7388ea45be82c753cf1a88bd58e3e8b94f0ec2", null ],
       [ "LineStrip", "db/d19/structxii_g_a_l_primitive_topology.htm#a7b7c5b79846d73ceaf06670334c7388ead5a5f5981ca58944a2a9bc2881fe4771", null ],
       [ "TriangleListAdjacent", "db/d19/structxii_g_a_l_primitive_topology.htm#a7b7c5b79846d73ceaf06670334c7388ea43a9ef36c0e5a94b3c2e158ee5fa6b81", null ],
-      [ "TrangleStripAdjacent", "db/d19/structxii_g_a_l_primitive_topology.htm#a7b7c5b79846d73ceaf06670334c7388eadae6afaa088deff8deddbbfc0f5c59d7", null ],
+      [ "TriangleStripAdjacent", "db/d19/structxii_g_a_l_primitive_topology.htm#a7b7c5b79846d73ceaf06670334c7388eac103c867d71137d28812f9fcdb948bbb", null ],
       [ "LineListAdjacent", "db/d19/structxii_g_a_l_primitive_topology.htm#a7b7c5b79846d73ceaf06670334c7388ead343c397e81ea9d307cca37a276446b7", null ],
       [ "LineStripAdjacent", "db/d19/structxii_g_a_l_primitive_topology.htm#a7b7c5b79846d73ceaf06670334c7388ea9afa5673560393a9b0a72c320a2814d1", null ],
       [ "ControlPointPatchList1", "db/d19/structxii_g_a_l_primitive_topology.htm#a7b7c5b79846d73ceaf06670334c7388eaf8ec18cbf589739a8e5313a367081b94", null ],

@@ -87,13 +87,48 @@ $(document).ready(function(){initNavTree('dc/d5a/_command_list__inl_8h_source.ht
 <div class="title">CommandList_inl.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"></div><!-- fragment --></div><!-- contents -->
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00002"></a><span class="lineno"><a class="line" href="../../dc/d80/classxii_g_a_l_command_list.htm#a6fadaa676135badcb24e2995a415f349">    2</a></span>&#160;XII_ALWAYS_INLINE <span class="keyword">const</span> <a class="code" href="../../db/db0/structxii_g_a_l_command_list_creation_description.htm">xiiGALCommandListCreationDescription</a>&amp; <a class="code" href="../../dc/d80/classxii_g_a_l_command_list.htm#a6fadaa676135badcb24e2995a415f349">xiiGALCommandList::GetDescription</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;  <span class="keywordflow">return</span> m_Description;</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;}</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;XII_ALWAYS_INLINE <span class="keywordtype">void</span> xiiGALCommandList::AssertRenderingThread()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;  XII_ASSERT_DEV(<a class="code" href="../../d4/d5c/classxii_thread_utils.htm#ab4ba2b4691ee3a9c9e5d8ec2751a6f72">xiiThreadUtils::IsMainThread</a>(), <span class="stringliteral">&quot;This function may only be executed on the main thread.&quot;</span>);</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;}</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;XII_ALWAYS_INLINE <a class="code" href="../../dc/d80/classxii_g_a_l_command_list.htm#a144bbbf6d64c7ff201bda0b60ab10121">xiiGALCommandList::RecordingState</a> xiiGALCommandList::GetRecordingState()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;  <span class="keywordflow">return</span> m_RecordingState;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;}</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;XII_ALWAYS_INLINE <span class="keywordtype">void</span> xiiGALCommandList::CountDispatchCall()</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;{</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;  ++m_uiDispatchCalls;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;}</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;XII_ALWAYS_INLINE <span class="keywordtype">void</span> xiiGALCommandList::CountDrawCall()</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;{</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  ++m_uiDrawCalls;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;}</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;XII_ALWAYS_INLINE <span class="keywordtype">void</span> xiiGALCommandList::ClearStatisticCounters()</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;{</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  m_uiDrawCalls     = 0U;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  m_uiDispatchCalls = 0U;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;}</div>
+</div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
+<div class="ttc" id="aclassxii_g_a_l_command_list_htm_a6fadaa676135badcb24e2995a415f349"><div class="ttname"><a href="../../dc/d80/classxii_g_a_l_command_list.htm#a6fadaa676135badcb24e2995a415f349">xiiGALCommandList::GetDescription</a></div><div class="ttdeci">const XII_NODISCARD xiiGALCommandListCreationDescription &amp; GetDescription() const</div><div class="ttdoc">This returns the creation description for this object.</div><div class="ttdef"><b>Definition:</b> CommandList_inl.h:2</div></div>
+<div class="ttc" id="astructxii_g_a_l_command_list_creation_description_htm"><div class="ttname"><a href="../../db/db0/structxii_g_a_l_command_list_creation_description.htm">xiiGALCommandListCreationDescription</a></div><div class="ttdoc">This describes the command list creation description.</div><div class="ttdef"><b>Definition:</b> CommandList.h:57</div></div>
+<div class="ttc" id="aclassxii_g_a_l_command_list_htm_a144bbbf6d64c7ff201bda0b60ab10121"><div class="ttname"><a href="../../dc/d80/classxii_g_a_l_command_list.htm#a144bbbf6d64c7ff201bda0b60ab10121">xiiGALCommandList::RecordingState</a></div><div class="ttdeci">RecordingState</div><div class="ttdoc">Enum class representing the state of a command list recording.</div><div class="ttdef"><b>Definition:</b> CommandList.h:361</div></div>
+<div class="ttc" id="aclassxii_thread_utils_htm_ab4ba2b4691ee3a9c9e5d8ec2751a6f72"><div class="ttname"><a href="../../d4/d5c/classxii_thread_utils.htm#ab4ba2b4691ee3a9c9e5d8ec2751a6f72">xiiThreadUtils::IsMainThread</a></div><div class="ttdeci">static bool IsMainThread()</div><div class="ttdoc">Helper function to check if the current thread is the main thread (e.g. the thread which initialized ...</div><div class="ttdef"><b>Definition:</b> ThreadUtils_posix.h:43</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.htm">home</a></li><li class="navelem"><a class="el" href="../../dir_1036706e55c22cab35bc1c58ee689f1d.htm">runner</a></li><li class="navelem"><a class="el" href="../../dir_629f8151d55d307162ff2d619fb1783d.htm">work</a></li><li class="navelem"><a class="el" href="../../dir_1ddc44fe1263a8c7935fa6130b7d9499.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_2c1b6808f12952f4c36e05ba7068379a.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_b5a1c4ecfca018ad24b729e213296d41.htm">Source</a></li><li class="navelem"><a class="el" href="../../dir_e321052006a51284e67389ab20037e7c.htm">Engine</a></li><li class="navelem"><a class="el" href="../../dir_60f548c54f5a79fe3a3b3b88ff8146f5.htm">GraphicsFoundation</a></li><li class="navelem"><a class="el" href="../../dir_20ff59cc8369b093d8f4f2ab622efbda.htm">CommandEncoder</a></li><li class="navelem"><a class="el" href="../../dir_371e8ff39cb8a0b9dd2e6aa80feafe0b.htm">Implementation</a></li><li class="navelem"><b>CommandList_inl.h</b></li>
-    <li class="footer">Generated on Sun Dec 31 2023 07:13:50 for XIIEngine by
+    <li class="footer">Generated on Tue Apr 30 2024 17:34:34 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

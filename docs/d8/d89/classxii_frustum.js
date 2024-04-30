@@ -23,7 +23,7 @@ var classxii_frustum =
     [ "xiiFrustum", "d8/d89/classxii_frustum.htm#ab142dff992473c36fa368de231177b1b", null ],
     [ "~xiiFrustum", "d8/d89/classxii_frustum.htm#adc530e6168bd5adf68723b0f8133ba0e", null ],
     [ "AccessPlane", "d8/d89/classxii_frustum.htm#ae2c2e8483f7dd8e4a0681a73c42bffb4", null ],
-    [ "ComputeCornerPoints", "d8/d89/classxii_frustum.htm#a0ebd8f17f503a16b589682729dd7ae99", null ],
+    [ "ComputeCornerPoints", "d8/d89/classxii_frustum.htm#a07127d651d6738d06233cb528deaa679", null ],
     [ "GetObjectPosition", "d8/d89/classxii_frustum.htm#a875e4ffbfcd7268c730ea5f680baad1d", null ],
     [ "GetObjectPosition", "d8/d89/classxii_frustum.htm#a179eab4feddd7e19969bb9604475413a", null ],
     [ "GetObjectPosition", "d8/d89/classxii_frustum.htm#aab3f1a9b80df081da71f12f58abf15ff", null ],

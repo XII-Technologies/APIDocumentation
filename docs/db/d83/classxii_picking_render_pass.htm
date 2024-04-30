@@ -120,9 +120,8 @@ virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d83/classxii_picking_render_pass.htm#a9694ab87bf56058693777e14e4726bf4">InitRenderPipelinePass</a> (const <a class="el" href="../../d0/d60/classxii_array_ptr.htm">xiiArrayPtr</a>&lt; <a class="el" href="../../d3/deb/structxii_render_pipeline_pass_connection.htm">xiiRenderPipelinePassConnection</a> *const &gt; inputs, const <a class="el" href="../../d0/d60/classxii_array_ptr.htm">xiiArrayPtr</a>&lt; <a class="el" href="../../d3/deb/structxii_render_pipeline_pass_connection.htm">xiiRenderPipelinePassConnection</a> *const &gt; outputs) override</td></tr>
 <tr class="memdesc:a9694ab87bf56058693777e14e4726bf4"><td class="mdescLeft">&#160;</td><td class="mdescRight">After GetRenderTargetDescriptions was called successfully for each pass, this function is called with the inputs and outputs for review. Disconnected pins have a nullptr value in the passed in arrays. This is the time to create additional resources that are not covered by the pins automatically, e.g. a picking texture or eye adaptation buffer. <br /></td></tr>
 <tr class="separator:a9694ab87bf56058693777e14e4726bf4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5253c33931ef6c6181c853f256909888"><td class="memItemLeft" align="right" valign="top"><a id="a5253c33931ef6c6181c853f256909888"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d83/classxii_picking_render_pass.htm#a5253c33931ef6c6181c853f256909888">Execute</a> (const <a class="el" href="../../d9/d0f/structxii_render_view_context.htm">xiiRenderViewContext</a> &amp;renderViewContext, const <a class="el" href="../../d0/d60/classxii_array_ptr.htm">xiiArrayPtr</a>&lt; <a class="el" href="../../d3/deb/structxii_render_pipeline_pass_connection.htm">xiiRenderPipelinePassConnection</a> *const &gt; inputs, const <a class="el" href="../../d0/d60/classxii_array_ptr.htm">xiiArrayPtr</a>&lt; <a class="el" href="../../d3/deb/structxii_render_pipeline_pass_connection.htm">xiiRenderPipelinePassConnection</a> *const &gt; outputs) override</td></tr>
-<tr class="memdesc:a5253c33931ef6c6181c853f256909888"><td class="mdescLeft">&#160;</td><td class="mdescRight">Render into outputs. Both inputs and outputs are passed in with actual texture handles. Disconnected pins have a nullptr value in the passed in arrays. You can now create views and render target setups on the fly and fill the output targets with data. <br /></td></tr>
+<tr class="memitem:a5253c33931ef6c6181c853f256909888"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d83/classxii_picking_render_pass.htm#a5253c33931ef6c6181c853f256909888">Execute</a> (const <a class="el" href="../../d9/d0f/structxii_render_view_context.htm">xiiRenderViewContext</a> &amp;renderViewContext, const <a class="el" href="../../d0/d60/classxii_array_ptr.htm">xiiArrayPtr</a>&lt; <a class="el" href="../../d3/deb/structxii_render_pipeline_pass_connection.htm">xiiRenderPipelinePassConnection</a> *const &gt; inputs, const <a class="el" href="../../d0/d60/classxii_array_ptr.htm">xiiArrayPtr</a>&lt; <a class="el" href="../../d3/deb/structxii_render_pipeline_pass_connection.htm">xiiRenderPipelinePassConnection</a> *const &gt; outputs) override</td></tr>
+<tr class="memdesc:a5253c33931ef6c6181c853f256909888"><td class="mdescLeft">&#160;</td><td class="mdescRight">Render into outputs. Both inputs and outputs are passed in with actual texture handles. Disconnected pins have a nullptr value in the passed in arrays. You can now create views and render target setups on the fly and fill the output targets with data.  <a href="../../db/d83/classxii_picking_render_pass.htm#a5253c33931ef6c6181c853f256909888">More...</a><br /></td></tr>
 <tr class="separator:a5253c33931ef6c6181c853f256909888"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adf68b1a1e45f7dab53bd040384f616da"><td class="memItemLeft" align="right" valign="top"><a id="adf68b1a1e45f7dab53bd040384f616da"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d83/classxii_picking_render_pass.htm#adf68b1a1e45f7dab53bd040384f616da">ReadBackProperties</a> (<a class="el" href="../../dd/df1/classxii_view.htm">xiiView</a> *pView) override</td></tr>
@@ -235,6 +234,55 @@ Additional Inherited Members</h2></td></tr>
 static const <a class="el" href="../../db/d89/classxii_r_t_t_i.htm">xiiRTTI</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetStaticRTTI</b> ()</td></tr>
 <tr class="separator:ac03a1d9fba3babf7db68227be61737e6 inherit pub_static_methods_classxii_no_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a5253c33931ef6c6181c853f256909888"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5253c33931ef6c6181c853f256909888">&#9670;&nbsp;</a></span>Execute()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void xiiPickingRenderPass::Execute </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d9/d0f/structxii_render_view_context.htm">xiiRenderViewContext</a> &amp;&#160;</td>
+          <td class="paramname"><em>renderViewContext</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d0/d60/classxii_array_ptr.htm">xiiArrayPtr</a>&lt; <a class="el" href="../../d3/deb/structxii_render_pipeline_pass_connection.htm">xiiRenderPipelinePassConnection</a> *const &gt;&#160;</td>
+          <td class="paramname"><em>inputs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d0/d60/classxii_array_ptr.htm">xiiArrayPtr</a>&lt; <a class="el" href="../../d3/deb/structxii_render_pipeline_pass_connection.htm">xiiRenderPipelinePassConnection</a> *const &gt;&#160;</td>
+          <td class="paramname"><em>outputs</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Render into outputs. Both inputs and outputs are passed in with actual texture handles. Disconnected pins have a nullptr value in the passed in arrays. You can now create views and render target setups on the fly and fill the output targets with data. </p>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.htm#_todo000002">Todo:</a></b></dt><dd>Support depth pitch. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.htm#_todo000003">Todo:</a></b></dt><dd>Support depth pitch. </dd></dl>
+
+<p>Implements <a class="el" href="../../d5/d44/classxii_render_pipeline_pass.htm#a9fc6cb1f56342b99fa2cd950e1dc9952">xiiRenderPipelinePass</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>/home/runner/work/XII/XII/Source/Editor/EditorEngineProcessFramework/PickingRenderPass/<a class="el" href="../../d7/da9/_picking_render_pass_8h_source.htm">PickingRenderPass.h</a></li>
 <li>/home/runner/work/XII/XII/Source/Editor/EditorEngineProcessFramework/PickingRenderPass/PickingRenderPass.cpp</li>
@@ -245,7 +293,7 @@ static const <a class="el" href="../../db/d89/classxii_r_t_t_i.htm">xiiRTTI</a> 
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../db/d83/classxii_picking_render_pass.htm">xiiPickingRenderPass</a></li>
-    <li class="footer">Generated on Sun Dec 31 2023 07:13:56 for XIIEngine by
+    <li class="footer">Generated on Tue Apr 30 2024 17:34:39 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

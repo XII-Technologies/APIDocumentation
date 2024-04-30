@@ -196,23 +196,24 @@ $(document).ready(function(){initNavTree('dd/d7f/_render_world_8h_source.htm','.
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160; </div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="keyword">private</span>:</div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;  XII_MAKE_SUBSYSTEM_STARTUP_FRIEND(GraphicsCore, RenderWorld);</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;  <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="../../dd/df1/classxii_view.htm">xiiView</a>;</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;  <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="../../df/d0e/classxii_render_pipeline.htm">xiiRenderPipeline</a>;</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160; </div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> DeleteCachedRenderDataInternal(<span class="keyword">const</span> <a class="code" href="../../da/d2c/structxii_game_object_handle.htm">xiiGameObjectHandle</a>&amp; hOwnerObject);</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> ClearRenderDataCache();</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> UpdateRenderDataCache();</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160; </div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> AddRenderPipelineToRebuild(<a class="code" href="../../df/d0e/classxii_render_pipeline.htm">xiiRenderPipeline</a>* pRenderPipeline, <span class="keyword">const</span> <a class="code" href="../../d5/db8/classxii_view_handle.htm">xiiViewHandle</a>&amp; hView);</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> RebuildPipelines();</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160; </div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> OnEngineStartup();</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> OnEngineShutdown();</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160; </div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;  <span class="keyword">static</span> <a class="code" href="../../dc/d22/classxii_event.htm">xiiEvent&lt;const xiiRenderWorldExtractionEvent&amp;, xiiMutex&gt;</a> s_ExtractionEvent;</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;  <span class="keyword">static</span> <a class="code" href="../../dc/d22/classxii_event.htm">xiiEvent&lt;const xiiRenderWorldRenderEvent&amp;, xiiMutex&gt;</a>     s_RenderEvent;</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;  <span class="keyword">static</span> xiiUInt64                                                s_uiFrameCounter;</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;};</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160; </div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;  <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="../../dd/df1/classxii_view.htm">xiiView</a>;</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;  <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="../../df/d0e/classxii_render_pipeline.htm">xiiRenderPipeline</a>;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160; </div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> DeleteCachedRenderDataInternal(<span class="keyword">const</span> <a class="code" href="../../da/d2c/structxii_game_object_handle.htm">xiiGameObjectHandle</a>&amp; hOwnerObject);</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> ClearRenderDataCache();</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> UpdateRenderDataCache();</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160; </div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> AddRenderPipelineToRebuild(<a class="code" href="../../df/d0e/classxii_render_pipeline.htm">xiiRenderPipeline</a>* pRenderPipeline, <span class="keyword">const</span> <a class="code" href="../../d5/db8/classxii_view_handle.htm">xiiViewHandle</a>&amp; hView);</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> RebuildPipelines();</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160; </div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> OnEngineStartup();</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> OnEngineShutdown();</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160; </div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;  <span class="keyword">static</span> <a class="code" href="../../dc/d22/classxii_event.htm">xiiEvent&lt;const xiiRenderWorldExtractionEvent&amp;, xiiMutex&gt;</a> s_ExtractionEvent;</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;  <span class="keyword">static</span> <a class="code" href="../../dc/d22/classxii_event.htm">xiiEvent&lt;const xiiRenderWorldRenderEvent&amp;, xiiMutex&gt;</a>     s_RenderEvent;</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;  <span class="keyword">static</span> xiiUInt64                                                s_uiFrameCounter;</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;};</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclassxii_world_htm"><div class="ttname"><a href="../../d6/d89/classxii_world.htm">xiiWorld</a></div><div class="ttdoc">A world encapsulates a scene graph of game objects and various component managers and their component...</div><div class="ttdef"><b>Definition:</b> World.h:21</div></div>
@@ -222,7 +223,7 @@ $(document).ready(function(){initNavTree('dd/d7f/_render_world_8h_source.htm','.
 <div class="ttc" id="astructxii_render_world_extraction_event_htm"><div class="ttname"><a href="../../de/d34/structxii_render_world_extraction_event.htm">xiiRenderWorldExtractionEvent</a></div><div class="ttdef"><b>Definition:</b> RenderWorld.h:8</div></div>
 <div class="ttc" id="aclassxii_view_handle_htm"><div class="ttname"><a href="../../d5/db8/classxii_view_handle.htm">xiiViewHandle</a></div><div class="ttdef"><b>Definition:</b> Declarations.h:64</div></div>
 <div class="ttc" id="astructxii_game_object_handle_htm"><div class="ttname"><a href="../../da/d2c/structxii_game_object_handle.htm">xiiGameObjectHandle</a></div><div class="ttdoc">A handle to a game object.</div><div class="ttdef"><b>Definition:</b> Declarations.h:75</div></div>
-<div class="ttc" id="aclassxii_view_htm"><div class="ttname"><a href="../../dd/df1/classxii_view.htm">xiiView</a></div><div class="ttdoc">Encapsulates a view on the given world through the given camera and rendered with the specified Rende...</div><div class="ttdef"><b>Definition:</b> View.h:20</div></div>
+<div class="ttc" id="aclassxii_view_htm"><div class="ttname"><a href="../../dd/df1/classxii_view.htm">xiiView</a></div><div class="ttdoc">Encapsulates a view on the given world through the given camera and rendered with the specified Rende...</div><div class="ttdef"><b>Definition:</b> View.h:22</div></div>
 <div class="ttc" id="astructxii_component_handle_htm"><div class="ttname"><a href="../../da/d8d/structxii_component_handle.htm">xiiComponentHandle</a></div><div class="ttdoc">A handle to a component.</div><div class="ttdef"><b>Definition:</b> Declarations.h:137</div></div>
 <div class="ttc" id="astructxii_string_view_htm"><div class="ttname"><a href="../../da/d9d/structxii_string_view.htm">xiiStringView</a></div><div class="ttdoc">xiiStringView represent a read-only sub-string of a larger string, as it can store a dedicated string...</div><div class="ttdef"><b>Definition:</b> StringView.h:23</div></div>
 <div class="ttc" id="aclassxii_render_world_htm"><div class="ttname"><a href="../../d0/daf/classxii_render_world.htm">xiiRenderWorld</a></div><div class="ttdef"><b>Definition:</b> RenderWorld.h:39</div></div>
@@ -238,7 +239,7 @@ $(document).ready(function(){initNavTree('dd/d7f/_render_world_8h_source.htm','.
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.htm">home</a></li><li class="navelem"><a class="el" href="../../dir_1036706e55c22cab35bc1c58ee689f1d.htm">runner</a></li><li class="navelem"><a class="el" href="../../dir_629f8151d55d307162ff2d619fb1783d.htm">work</a></li><li class="navelem"><a class="el" href="../../dir_1ddc44fe1263a8c7935fa6130b7d9499.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_2c1b6808f12952f4c36e05ba7068379a.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_b5a1c4ecfca018ad24b729e213296d41.htm">Source</a></li><li class="navelem"><a class="el" href="../../dir_e321052006a51284e67389ab20037e7c.htm">Engine</a></li><li class="navelem"><a class="el" href="../../dir_d1b456933e20132afd1d01c7da962f40.htm">GraphicsCore</a></li><li class="navelem"><a class="el" href="../../dir_461e1d23dce64d8e12cc156a337007dd.htm">RenderWorld</a></li><li class="navelem"><b>RenderWorld.h</b></li>
-    <li class="footer">Generated on Sun Dec 31 2023 07:13:50 for XIIEngine by
+    <li class="footer">Generated on Tue Apr 30 2024 17:34:33 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

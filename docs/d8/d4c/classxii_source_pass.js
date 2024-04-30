@@ -9,6 +9,8 @@ var classxii_source_pass =
     [ "m_bClear", "d8/d4c/classxii_source_pass.htm#ae328ea1cbc4e84709581a6119c5f8999", null ],
     [ "m_ClearColor", "d8/d4c/classxii_source_pass.htm#a8cc85d94df7455f9f97d234fa2005ff4", null ],
     [ "m_Format", "d8/d4c/classxii_source_pass.htm#a21853fe8f1857e45c307f2652b8a4146", null ],
+    [ "m_hFramebuffer", "d8/d4c/classxii_source_pass.htm#a51f09b6e77c71314feaf415b1ddd871b", null ],
+    [ "m_hRenderPass", "d8/d4c/classxii_source_pass.htm#ac5eb00ddb16c10eeb75dc512301986dc", null ],
     [ "m_PinOutput", "d8/d4c/classxii_source_pass.htm#a16018513dfcf3444dd02582849e8be84", null ],
-    [ "m_SampleCount", "d8/d4c/classxii_source_pass.htm#a9015d22521eae2555f060399838ec189", null ]
+    [ "m_SampleCount", "d8/d4c/classxii_source_pass.htm#adc17c7b5b20f60183355caa02c6c0d74", null ]
 ];

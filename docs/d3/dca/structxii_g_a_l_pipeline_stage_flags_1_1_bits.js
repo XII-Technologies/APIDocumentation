@@ -1,0 +1,26 @@
+var structxii_g_a_l_pipeline_stage_flags_1_1_bits =
+[
+    [ "AccelerationStructureBuild", "d3/dca/structxii_g_a_l_pipeline_stage_flags_1_1_bits.htm#ac05ca1a18c3239e525b17d6ec98179a9", null ],
+    [ "BottomOfPipeline", "d3/dca/structxii_g_a_l_pipeline_stage_flags_1_1_bits.htm#ac17351bfefc11155d1a9321a305a1d53", null ],
+    [ "ComputeShader", "d3/dca/structxii_g_a_l_pipeline_stage_flags_1_1_bits.htm#af746ce369c28546b00db3f12f9b9467a", null ],
+    [ "ConditionalRendering", "d3/dca/structxii_g_a_l_pipeline_stage_flags_1_1_bits.htm#a2b4f2d89fa27ffc17adfe89c4aa36410", null ],
+    [ "Default", "d3/dca/structxii_g_a_l_pipeline_stage_flags_1_1_bits.htm#aefc6b04c40231190ac2eb3c5995cef0e", null ],
+    [ "DomainShader", "d3/dca/structxii_g_a_l_pipeline_stage_flags_1_1_bits.htm#a90d599bc25b80fe6442e3aac674a8a77", null ],
+    [ "DrawIndirect", "d3/dca/structxii_g_a_l_pipeline_stage_flags_1_1_bits.htm#a2df0b19d6757ce042ced6b7b5e307b68", null ],
+    [ "EarlyFragmentTests", "d3/dca/structxii_g_a_l_pipeline_stage_flags_1_1_bits.htm#a19daeb10742f3df20a7a93bcda3dedf6", null ],
+    [ "FragmentDensityProcess", "d3/dca/structxii_g_a_l_pipeline_stage_flags_1_1_bits.htm#a91ba98b03119776ff9b5b83b22ca1a32", null ],
+    [ "GeometryShader", "d3/dca/structxii_g_a_l_pipeline_stage_flags_1_1_bits.htm#aba1bd7936c2ea9cba93def2fe5f2218e", null ],
+    [ "Host", "d3/dca/structxii_g_a_l_pipeline_stage_flags_1_1_bits.htm#aa7ad2075eaabe4dca820304ed0e3681c", null ],
+    [ "HullShader", "d3/dca/structxii_g_a_l_pipeline_stage_flags_1_1_bits.htm#adafc29cb2834c932f2021ec8251f9748", null ],
+    [ "LateFragmentTests", "d3/dca/structxii_g_a_l_pipeline_stage_flags_1_1_bits.htm#aaf4b4b3e1483db71c0677bf9efd99508", null ],
+    [ "MeshShader", "d3/dca/structxii_g_a_l_pipeline_stage_flags_1_1_bits.htm#a3f89374f62c9de79162f88eba81eb308", null ],
+    [ "PixelShader", "d3/dca/structxii_g_a_l_pipeline_stage_flags_1_1_bits.htm#aab549ac97a6f970da9c7f1ef44ba116c", null ],
+    [ "RayTracingShader", "d3/dca/structxii_g_a_l_pipeline_stage_flags_1_1_bits.htm#af37c9119cf4e48170d0ca2ddb681af53", null ],
+    [ "RenderTarget", "d3/dca/structxii_g_a_l_pipeline_stage_flags_1_1_bits.htm#a597d5d132dd095a1363692bf42d9d981", null ],
+    [ "ShadingRateTexture", "d3/dca/structxii_g_a_l_pipeline_stage_flags_1_1_bits.htm#aba3f432320c74ead253fc85cc7592907", null ],
+    [ "TaskShader", "d3/dca/structxii_g_a_l_pipeline_stage_flags_1_1_bits.htm#a8a677377e1bb14ac0bbe939afea1d8c7", null ],
+    [ "TopOfPipeline", "d3/dca/structxii_g_a_l_pipeline_stage_flags_1_1_bits.htm#afc9fefc2ea68e33c976920ef0d885c16", null ],
+    [ "Transfer", "d3/dca/structxii_g_a_l_pipeline_stage_flags_1_1_bits.htm#abd843dd45ebf1afca3ee9ffc1495211f", null ],
+    [ "VertexInput", "d3/dca/structxii_g_a_l_pipeline_stage_flags_1_1_bits.htm#a7ae7a689bd5c17061fcaf63712671a32", null ],
+    [ "VertexShader", "d3/dca/structxii_g_a_l_pipeline_stage_flags_1_1_bits.htm#ad8860eaae0a6f06e6133b6ac48f78517", null ]
+];

@@ -106,7 +106,7 @@ $(document).ready(function(){initNavTree('d2/d1a/_constant_buffer_storage_8h_sou
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;  <a class="code" href="../../d0/d60/classxii_array_ptr.htm">xiiArrayPtr&lt;xiiUInt8&gt;</a>       GetRawDataForWriting();</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;  <a class="code" href="../../d0/d60/classxii_array_ptr.htm">xiiArrayPtr&lt;const xiiUInt8&gt;</a> GetRawDataForReading() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  <span class="keywordtype">void</span> UploadData(<a class="code" href="../../d3/d34/classxii_g_a_l_command_encoder.htm">xiiGALCommandEncoder</a>* pCommandEncoder);</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  <span class="keywordtype">void</span> UploadData(<a class="code" href="../../dc/d80/classxii_g_a_l_command_list.htm">xiiGALCommandList</a>* pCommandList);</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  XII_ALWAYS_INLINE <a class="code" href="../../d1/dba/classxii_g_a_l_buffer_handle.htm">xiiGALBufferHandle</a> GetGALBufferHandle()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_hGALConstantBuffer; }</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
@@ -147,22 +147,22 @@ $(document).ready(function(){initNavTree('d2/d1a/_constant_buffer_storage_8h_sou
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;};</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
+<div class="ttc" id="aclassxii_g_a_l_command_list_htm"><div class="ttname"><a href="../../dc/d80/classxii_g_a_l_command_list.htm">xiiGALCommandList</a></div><div class="ttdoc">Interface that defines methods to manipulate a command list object.</div><div class="ttdef"><b>Definition:</b> CommandList.h:66</div></div>
 <div class="ttc" id="aclassxii_array_ptr_htm"><div class="ttname"><a href="../../d0/d60/classxii_array_ptr.htm">xiiArrayPtr&lt; xiiUInt8 &gt;</a></div></div>
 <div class="ttc" id="aclassxii_array_ptr_htm_acfb4db6e3a381669be860ce1a5500c6b"><div class="ttname"><a href="../../d0/d60/classxii_array_ptr.htm#acfb4db6e3a381669be860ce1a5500c6b">xiiArrayPtr::GetPtr</a></div><div class="ttdeci">XII_ALWAYS_INLINE PointerType GetPtr() const</div><div class="ttdoc">Returns the pointer to the array.</div><div class="ttdef"><b>Definition:</b> ArrayPtr.h:122</div></div>
 <div class="ttc" id="aclassxii_render_context_htm"><div class="ttname"><a href="../../da/d27/classxii_render_context.htm">xiiRenderContext</a></div><div class="ttdef"><b>Definition:</b> RenderContext.h:33</div></div>
 <div class="ttc" id="aclassxii_array_ptr_htm_af1e072a93ee1a583d0db00e821c2d999"><div class="ttname"><a href="../../d0/d60/classxii_array_ptr.htm#af1e072a93ee1a583d0db00e821c2d999">xiiArrayPtr::GetCount</a></div><div class="ttdeci">XII_ALWAYS_INLINE xiiUInt32 GetCount() const</div><div class="ttdoc">Returns the number of elements in the array.</div><div class="ttdef"><b>Definition:</b> ArrayPtr.h:146</div></div>
 <div class="ttc" id="aclassxii_constant_buffer_storage_htm"><div class="ttname"><a href="../../d9/de8/classxii_constant_buffer_storage.htm">xiiConstantBufferStorage</a></div><div class="ttdef"><b>Definition:</b> ConstantBufferStorage.h:33</div></div>
 <div class="ttc" id="aclassxii_constant_buffer_storage_handle_htm"><div class="ttname"><a href="../../d7/d1a/classxii_constant_buffer_storage_handle.htm">xiiConstantBufferStorageHandle</a></div><div class="ttdef"><b>Definition:</b> ConstantBufferStorage.h:53</div></div>
-<div class="ttc" id="aclassxii_memory_utils_htm"><div class="ttname"><a href="../../d8/d9d/classxii_memory_utils.htm">xiiMemoryUtils</a></div><div class="ttdoc">This class provides functions to work on raw memory.</div><div class="ttdef"><b>Definition:</b> MemoryUtils.h:19</div></div>
-<div class="ttc" id="aclassxii_g_a_l_command_encoder_htm"><div class="ttname"><a href="../../d3/d34/classxii_g_a_l_command_encoder.htm">xiiGALCommandEncoder</a></div><div class="ttdef"><b>Definition:</b> CommandEncoder.h:9</div></div>
-<div class="ttc" id="aclassxii_g_a_l_buffer_handle_htm"><div class="ttname"><a href="../../d1/dba/classxii_g_a_l_buffer_handle.htm">xiiGALBufferHandle</a></div><div class="ttdef"><b>Definition:</b> GraphicsTypes.h:1565</div></div>
+<div class="ttc" id="aclassxii_memory_utils_htm"><div class="ttname"><a href="../../d8/d9d/classxii_memory_utils.htm">xiiMemoryUtils</a></div><div class="ttdoc">This class provides functions to work on raw memory.</div><div class="ttdef"><b>Definition:</b> MemoryUtils.h:25</div></div>
+<div class="ttc" id="aclassxii_g_a_l_buffer_handle_htm"><div class="ttname"><a href="../../d1/dba/classxii_g_a_l_buffer_handle.htm">xiiGALBufferHandle</a></div><div class="ttdef"><b>Definition:</b> GraphicsTypes.h:1708</div></div>
 <div class="ttc" id="astructxii_generic_id_htm"><div class="ttname"><a href="../../d0/dcc/structxii_generic_id.htm">xiiGenericId&lt; 24, 8 &gt;</a></div></div>
 <div class="ttc" id="aclassxii_constant_buffer_storage_base_htm"><div class="ttname"><a href="../../dd/d61/classxii_constant_buffer_storage_base.htm">xiiConstantBufferStorageBase</a></div><div class="ttdef"><b>Definition:</b> ConstantBufferStorage.h:7</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.htm">home</a></li><li class="navelem"><a class="el" href="../../dir_1036706e55c22cab35bc1c58ee689f1d.htm">runner</a></li><li class="navelem"><a class="el" href="../../dir_629f8151d55d307162ff2d619fb1783d.htm">work</a></li><li class="navelem"><a class="el" href="../../dir_1ddc44fe1263a8c7935fa6130b7d9499.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_2c1b6808f12952f4c36e05ba7068379a.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_b5a1c4ecfca018ad24b729e213296d41.htm">Source</a></li><li class="navelem"><a class="el" href="../../dir_e321052006a51284e67389ab20037e7c.htm">Engine</a></li><li class="navelem"><a class="el" href="../../dir_d1b456933e20132afd1d01c7da962f40.htm">GraphicsCore</a></li><li class="navelem"><a class="el" href="../../dir_f216dd74c0d784fd92a8799e495c1447.htm">Shader</a></li><li class="navelem"><b>ConstantBufferStorage.h</b></li>
-    <li class="footer">Generated on Sun Dec 31 2023 07:13:50 for XIIEngine by
+    <li class="footer">Generated on Tue Apr 30 2024 17:34:33 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

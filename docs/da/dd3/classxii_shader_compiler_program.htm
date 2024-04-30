@@ -96,7 +96,7 @@ Inheritance diagram for xiiShaderCompilerProgram:</div>
 <div class="center"><img src="../../d0/db2/classxii_shader_compiler_program__inherit__graph.png" border="0" usemap="#xii_shader_compiler_program_inherit__map" alt="Inheritance graph"/></div>
 <map name="xii_shader_compiler_program_inherit__map" id="xii_shader_compiler_program_inherit__map">
 <area shape="rect" title=" " alt="" coords="5,229,203,256"/>
-<area shape="rect" href="../../d0/d07/classxii_shader_program_compiler.htm" title=" " alt="" coords="5,155,203,181"/>
+<area shape="rect" href="../../d0/d07/classxii_shader_program_compiler.htm" title="Shader compiler interface. Custom shader compiles need to derive from this class and implement the pu..." alt="" coords="5,155,203,181"/>
 <area shape="rect" href="../../dc/d71/classxii_reflected_class.htm" title="All classes that should be dynamically reflectable, need to be derived from this base class." alt="" coords="37,80,171,107"/>
 <area shape="rect" href="../../d2/d38/classxii_no_base.htm" title="Dummy type to pass to templates and macros that expect a base type for a class that has no base." alt="" coords="60,5,148,32"/>
 </map>
@@ -105,9 +105,11 @@ Inheritance diagram for xiiShaderCompilerProgram:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a379b7adaef33e6aabc380bc7c36087d7"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dd3/classxii_shader_compiler_program.htm#a379b7adaef33e6aabc380bc7c36087d7">GetSupportedPlatforms</a> (<a class="el" href="../../dc/da9/classxii_hybrid_array.htm">xiiHybridArray</a>&lt; <a class="el" href="../../df/dfb/structxii_hybrid_string.htm">xiiString</a>, 4 &gt; &amp;Platforms) override</td></tr>
+<tr class="memdesc:a379b7adaef33e6aabc380bc7c36087d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the platforms that this shader compiler supports.  <a href="../../da/dd3/classxii_shader_compiler_program.htm#a379b7adaef33e6aabc380bc7c36087d7">More...</a><br /></td></tr>
 <tr class="separator:a379b7adaef33e6aabc380bc7c36087d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0010cfb59913352b99a8767f66da1e54"><td class="memItemLeft" align="right" valign="top"><a id="a0010cfb59913352b99a8767f66da1e54"></a>
-virtual <a class="el" href="../../dd/dad/structxii_result.htm">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Compile</b> (<a class="el" href="../../db/dc4/structxii_shader_program_compiler_1_1xii_shader_program_data.htm">xiiShaderProgramData</a> &amp;inout_Data, <a class="el" href="../../d6/d6b/classxii_log_interface.htm">xiiLogInterface</a> *pLog) override</td></tr>
+<tr class="memitem:a8eae55b4106f2164e494ac326534af06"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../dd/dad/structxii_result.htm">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dd3/classxii_shader_compiler_program.htm#a8eae55b4106f2164e494ac326534af06">ModifyShaderSource</a> (<a class="el" href="../../d5/da3/structxii_shader_program_data.htm">xiiShaderProgramData</a> &amp;inout_data, <a class="el" href="../../d6/d6b/classxii_log_interface.htm">xiiLogInterface</a> *pLog) override</td></tr>
+<tr class="separator:a8eae55b4106f2164e494ac326534af06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0010cfb59913352b99a8767f66da1e54"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../dd/dad/structxii_result.htm">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dd3/classxii_shader_compiler_program.htm#a0010cfb59913352b99a8767f66da1e54">Compile</a> (<a class="el" href="../../d5/da3/structxii_shader_program_data.htm">xiiShaderProgramData</a> &amp;inout_Data, <a class="el" href="../../d6/d6b/classxii_log_interface.htm">xiiLogInterface</a> *pLog) override</td></tr>
 <tr class="separator:a0010cfb59913352b99a8767f66da1e54"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a45d70ea022dd050fbe83abb06f0f99d4"><td class="memItemLeft" align="right" valign="top"><a id="a45d70ea022dd050fbe83abb06f0f99d4"></a>
 <a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetProfileName</b> (<a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sPlatform, <a class="el" href="../../d7/d55/structxii_bitflags.htm">xiiBitflags</a>&lt; <a class="el" href="../../d7/d93/structxii_g_a_l_shader_stage.htm">xiiGALShaderStage</a> &gt; Stage)</td></tr>
@@ -137,6 +139,52 @@ static const <a class="el" href="../../db/d89/classxii_r_t_t_i.htm">xiiRTTI</a> 
 <tr class="separator:ac03a1d9fba3babf7db68227be61737e6 inherit pub_static_methods_classxii_no_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a0010cfb59913352b99a8767f66da1e54"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0010cfb59913352b99a8767f66da1e54">&#9670;&nbsp;</a></span>Compile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dd/dad/structxii_result.htm">xiiResult</a> xiiShaderCompilerProgram::Compile </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d5/da3/structxii_shader_program_data.htm">xiiShaderProgramData</a> &amp;&#160;</td>
+          <td class="paramname"><em>inout_data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d6/d6b/classxii_log_interface.htm">xiiLogInterface</a> *&#160;</td>
+          <td class="paramname"><em>pLog</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Compiles the shader comprised of multiple stages defined in inout_data. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">inout_data</td><td>The state of the shader compiler. m_Resources and m_ByteCode should be written to on successful return code. </td></tr>
+    <tr><td class="paramname">pLog</td><td>Logging interface to be used when outputting any errors. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Returns whether the shader was compiled successfully. On failure, errors should be written to pLog. </dd></dl>
+
+<p>Implements <a class="el" href="../../d0/d07/classxii_shader_program_compiler.htm#a707f18c394350709021ab2bbc69d916c">xiiShaderProgramCompiler</a>.</p>
+
+</div>
+</div>
 <a id="a379b7adaef33e6aabc380bc7c36087d7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a379b7adaef33e6aabc380bc7c36087d7">&#9670;&nbsp;</a></span>GetSupportedPlatforms()</h2>
 
@@ -150,7 +198,7 @@ static const <a class="el" href="../../db/d89/classxii_r_t_t_i.htm">xiiRTTI</a> 
           <td class="memname">virtual void xiiShaderCompilerProgram::GetSupportedPlatforms </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="../../dc/da9/classxii_hybrid_array.htm">xiiHybridArray</a>&lt; <a class="el" href="../../df/dfb/structxii_hybrid_string.htm">xiiString</a>, 4 &gt; &amp;&#160;</td>
-          <td class="paramname"><em>Platforms</em></td><td>)</td>
+          <td class="paramname"><em>out_platforms</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -160,15 +208,62 @@ static const <a class="el" href="../../db/d89/classxii_r_t_t_i.htm">xiiRTTI</a> 
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Wave intrinsics, 64-bit integers</p>
-<p>SV_ViewID, SV_Barycentrics</p>
-<p>16-bit types, Denorm mode</p>
-<p>Hardware accelerated ray tracing</p>
-<p>Shader integer dot product, SV_ShadingRate</p>
-<p>DXR1.1 (KHR ray tracing), Mesh and Amplification shaders, additional Wave intrinsics (Partial Support is available)</p>
-<p>VK_NV_compute_shader_derivatives, VK_KHR_shader_atomic_int64 (Partial Support is available)</p>
 
-<p>Implements <a class="el" href="../../d0/d07/classxii_shader_program_compiler.htm">xiiShaderProgramCompiler</a>.</p>
+<p>Returns the platforms that this shader compiler supports. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">out_platforms</td><td>Filled with the platforms this compiler supports. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implements <a class="el" href="../../d0/d07/classxii_shader_program_compiler.htm#a604252d4a5bd05b8d5dcc6af81059da8">xiiShaderProgramCompiler</a>.</p>
+
+</div>
+</div>
+<a id="a8eae55b4106f2164e494ac326534af06"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8eae55b4106f2164e494ac326534af06">&#9670;&nbsp;</a></span>ModifyShaderSource()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dd/dad/structxii_result.htm">xiiResult</a> xiiShaderCompilerProgram::ModifyShaderSource </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d5/da3/structxii_shader_program_data.htm">xiiShaderProgramData</a> &amp;&#160;</td>
+          <td class="paramname"><em>inout_data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d6/d6b/classxii_log_interface.htm">xiiLogInterface</a> *&#160;</td>
+          <td class="paramname"><em>pLog</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Allows the shader compiler to modify the shader source before hashing and compiling. This allows it to implement custom features by injecting code before the compile process. Mostly used to define resource bindings that do not cause conflicts across shader stages. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">inout_data</td><td>The state of the shader compiler. Only m_sShaderSource should be modified by the implementation. </td></tr>
+    <tr><td class="paramname">pLog</td><td>Logging interface to be used when outputting any errors. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Returns whether the shader could be modified. On failure, the shader won't be compiled. </dd></dl>
+
+<p>Implements <a class="el" href="../../d0/d07/classxii_shader_program_compiler.htm#a5e8994839cac77eda23bff3e8c01ca0c">xiiShaderProgramCompiler</a>.</p>
 
 </div>
 </div>
@@ -182,7 +277,7 @@ static const <a class="el" href="../../db/d89/classxii_r_t_t_i.htm">xiiRTTI</a> 
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../da/dd3/classxii_shader_compiler_program.htm">xiiShaderCompilerProgram</a></li>
-    <li class="footer">Generated on Sun Dec 31 2023 07:13:58 for XIIEngine by
+    <li class="footer">Generated on Tue Apr 30 2024 17:34:40 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

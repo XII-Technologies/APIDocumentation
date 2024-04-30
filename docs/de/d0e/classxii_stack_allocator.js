@@ -1,8 +1,8 @@
 var classxii_stack_allocator =
 [
-    [ "xiiStackAllocator", "de/d0e/classxii_stack_allocator.htm#a342267c62990bf04d1e2be4394d34d13", null ],
-    [ "~xiiStackAllocator", "de/d0e/classxii_stack_allocator.htm#a1e437ffb4d05680b39e35deb08f1d3c0", null ],
-    [ "Allocate", "de/d0e/classxii_stack_allocator.htm#a3ff0f6a8206372ca2a992dc13073359b", null ],
-    [ "Deallocate", "de/d0e/classxii_stack_allocator.htm#ac0d3a161417f446e5fff6c19ec8c12e4", null ],
-    [ "Reset", "de/d0e/classxii_stack_allocator.htm#a98ab029b1f58b3ae99d019ec7229031e", null ]
+    [ "xiiStackAllocator", "de/d0e/classxii_stack_allocator.htm#aba880b19157172b7cc5822fe5b1cbd6c", null ],
+    [ "~xiiStackAllocator", "de/d0e/classxii_stack_allocator.htm#aa1a498e4b4ade1fb773a618d1ce4490d", null ],
+    [ "Allocate", "de/d0e/classxii_stack_allocator.htm#aa911f9ee7afdd1d04481ea53b9974c5d", null ],
+    [ "Deallocate", "de/d0e/classxii_stack_allocator.htm#aa04685bc3527aa7c40fab9b47b2a6147", null ],
+    [ "Reset", "de/d0e/classxii_stack_allocator.htm#a9c5e6e41b01388ee6a91b06f18bbb7c8", null ]
 ];

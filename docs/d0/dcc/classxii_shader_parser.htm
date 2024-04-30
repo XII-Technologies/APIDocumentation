@@ -85,6 +85,7 @@ $(document).ready(function(){initNavTree('d0/dcc/classxii_shader_parser.htm','..
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="../../df/d05/classxii_shader_parser-members.htm">List of all members</a>  </div>
   <div class="headertitle">
@@ -103,6 +104,12 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d2c/structxii_shader_parser_1_1_parameter_definition.htm">ParameterDefinition</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a9abd7f0898b76408c4669c2b2d51b2e8"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dcc/classxii_shader_parser.htm#a9abd7f0898b76408c4669c2b2d51b2e8">CreateResourceDeclaration</a> = <a class="el" href="../../dc/d84/structxii_delegate.htm">xiiDelegate</a>&lt; void(<a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a>, <a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a>, const <a class="el" href="../../d4/dce/structxii_g_a_l_shader_resource_description.htm">xiiGALShaderResourceDescription</a> &amp;, <a class="el" href="../../d4/dbb/classxii_string_builder.htm">xiiStringBuilder</a> &amp;)&gt;</td></tr>
+<tr class="memdesc:a9abd7f0898b76408c4669c2b2d51b2e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delegate to creates a new declaration and register binding for a specific shader <a class="el" href="../../d8/daf/structxii_shader_resource_definition.htm" title="Output of ParseShaderResources. A shader resource definition found inside the shader source code.">xiiShaderResourceDefinition</a>.  <a href="../../d0/dcc/classxii_shader_parser.htm#a9abd7f0898b76408c4669c2b2d51b2e8">More...</a><br /></td></tr>
+<tr class="separator:a9abd7f0898b76408c4669c2b2d51b2e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a4574fdca5173597f2209a1e38d200f8b"><td class="memItemLeft" align="right" valign="top"><a id="a4574fdca5173597f2209a1e38d200f8b"></a>
@@ -117,7 +124,218 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>ParsePermutati
 <tr class="memitem:aa6afe3af59498da013601d3df7ca9d20"><td class="memItemLeft" align="right" valign="top"><a id="aa6afe3af59498da013601d3df7ca9d20"></a>
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>ParsePermutationVarConfig</b> (<a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sPermutationVarConfig, <a class="el" href="../../db/d1a/classxii_variant.htm">xiiVariant</a> &amp;out_defaultValue, <a class="el" href="../../d8/db0/structxii_shader_parser_1_1_enum_definition.htm">EnumDefinition</a> &amp;out_enumDefinition)</td></tr>
 <tr class="separator:aa6afe3af59498da013601d3df7ca9d20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abfd8a8d39d4fb0c8911243f3a7a61f10"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dcc/classxii_shader_parser.htm#abfd8a8d39d4fb0c8911243f3a7a61f10">ParseShaderResources</a> (<a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sShaderStageSource, <a class="el" href="../../dc/da4/classxii_dynamic_array.htm">xiiDynamicArray</a>&lt; <a class="el" href="../../d8/daf/structxii_shader_resource_definition.htm">xiiShaderResourceDefinition</a> &gt; &amp;out_resources)</td></tr>
+<tr class="memdesc:abfd8a8d39d4fb0c8911243f3a7a61f10"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tries to find shader resource declarations inside the shader source.  <a href="../../d0/dcc/classxii_shader_parser.htm#abfd8a8d39d4fb0c8911243f3a7a61f10">More...</a><br /></td></tr>
+<tr class="separator:abfd8a8d39d4fb0c8911243f3a7a61f10"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52aa58fd6b3c109faf6fb659ec8da976"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../dd/dad/structxii_result.htm">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dcc/classxii_shader_parser.htm#a52aa58fd6b3c109faf6fb659ec8da976">MergeShaderResourceBindings</a> (const <a class="el" href="../../d5/da3/structxii_shader_program_data.htm">xiiShaderProgramData</a> &amp;spd, <a class="el" href="../../d8/dc2/classxii_hash_table.htm">xiiHashTable</a>&lt; <a class="el" href="../../d6/d0c/classxii_hashed_string.htm">xiiHashedString</a>, <a class="el" href="../../d4/dce/structxii_g_a_l_shader_resource_description.htm">xiiGALShaderResourceDescription</a> &gt; &amp;out_bindings, <a class="el" href="../../d6/d6b/classxii_log_interface.htm">xiiLogInterface</a> *pLog)</td></tr>
+<tr class="memdesc:a52aa58fd6b3c109faf6fb659ec8da976"><td class="mdescLeft">&#160;</td><td class="mdescRight">Merges the shader resource bindings of all used shader stages.  <a href="../../d0/dcc/classxii_shader_parser.htm#a52aa58fd6b3c109faf6fb659ec8da976">More...</a><br /></td></tr>
+<tr class="separator:a52aa58fd6b3c109faf6fb659ec8da976"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac316c98a683c7fdda729794fa898f582"><td class="memItemLeft" align="right" valign="top"><a id="ac316c98a683c7fdda729794fa898f582"></a>
+static <a class="el" href="../../dd/dad/structxii_result.htm">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dcc/classxii_shader_parser.htm#ac316c98a683c7fdda729794fa898f582">SanityCheckShaderResourceBindings</a> (const <a class="el" href="../../d8/dc2/classxii_hash_table.htm">xiiHashTable</a>&lt; <a class="el" href="../../d6/d0c/classxii_hashed_string.htm">xiiHashedString</a>, <a class="el" href="../../d4/dce/structxii_g_a_l_shader_resource_description.htm">xiiGALShaderResourceDescription</a> &gt; &amp;bindings, <a class="el" href="../../d6/d6b/classxii_log_interface.htm">xiiLogInterface</a> *pLog)</td></tr>
+<tr class="memdesc:ac316c98a683c7fdda729794fa898f582"><td class="mdescLeft">&#160;</td><td class="mdescRight">Makes sure that bindings fulfills the basic requirements that xiiEngine has for resource bindings in a shader, e.g. that each binding has a set / slot set. <br /></td></tr>
+<tr class="separator:ac316c98a683c7fdda729794fa898f582"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a899f28cb9d50aa3dc94498c9df22b1fe"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dcc/classxii_shader_parser.htm#a899f28cb9d50aa3dc94498c9df22b1fe">ApplyShaderResourceBindings</a> (<a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sPlatform, <a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sShaderStageSource, const <a class="el" href="../../dc/da4/classxii_dynamic_array.htm">xiiDynamicArray</a>&lt; <a class="el" href="../../d8/daf/structxii_shader_resource_definition.htm">xiiShaderResourceDefinition</a> &gt; &amp;resources, const <a class="el" href="../../d8/dc2/classxii_hash_table.htm">xiiHashTable</a>&lt; <a class="el" href="../../d6/d0c/classxii_hashed_string.htm">xiiHashedString</a>, <a class="el" href="../../d4/dce/structxii_g_a_l_shader_resource_description.htm">xiiGALShaderResourceDescription</a> &gt; &amp;bindings, const <a class="el" href="../../d0/dcc/classxii_shader_parser.htm#a9abd7f0898b76408c4669c2b2d51b2e8">CreateResourceDeclaration</a> &amp;createDeclaration, <a class="el" href="../../d4/dbb/classxii_string_builder.htm">xiiStringBuilder</a> &amp;out_sShaderStageSource)</td></tr>
+<tr class="memdesc:a899f28cb9d50aa3dc94498c9df22b1fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new shader source code that patches all shader resources to contain fixed set / slot bindings.  <a href="../../d0/dcc/classxii_shader_parser.htm#a899f28cb9d50aa3dc94498c9df22b1fe">More...</a><br /></td></tr>
+<tr class="separator:a899f28cb9d50aa3dc94498c9df22b1fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="a9abd7f0898b76408c4669c2b2d51b2e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9abd7f0898b76408c4669c2b2d51b2e8">&#9670;&nbsp;</a></span>CreateResourceDeclaration</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="../../d0/dcc/classxii_shader_parser.htm#a9abd7f0898b76408c4669c2b2d51b2e8">xiiShaderParser::CreateResourceDeclaration</a> =  <a class="el" href="../../dc/d84/structxii_delegate.htm">xiiDelegate</a>&lt;void(<a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a>, <a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a>, const <a class="el" href="../../d4/dce/structxii_g_a_l_shader_resource_description.htm">xiiGALShaderResourceDescription</a>&amp;, <a class="el" href="../../d4/dbb/classxii_string_builder.htm">xiiStringBuilder</a>&amp;)&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Delegate to creates a new declaration and register binding for a specific shader <a class="el" href="../../d8/daf/structxii_shader_resource_definition.htm" title="Output of ParseShaderResources. A shader resource definition found inside the shader source code.">xiiShaderResourceDefinition</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sPlatform</td><td>The platform for which the shader is being compiled. Will be one of the values returned by GetSupportedPlatforms. </td></tr>
+    <tr><td class="paramname">sDeclaration</td><td>The shader resource declaration without any attributes, e.g. "Texture2D DiffuseTexture" </td></tr>
+    <tr><td class="paramname">binding</td><td>The binding that needs to be set on the output out_sDeclaration. </td></tr>
+    <tr><td class="paramname">out_sDeclaration</td><td>The new declaration that changes sDeclaration according to the provided 'binding', e.g. "Texture2D DiffuseTexture : register(t0, space5)" </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a899f28cb9d50aa3dc94498c9df22b1fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a899f28cb9d50aa3dc94498c9df22b1fe">&#9670;&nbsp;</a></span>ApplyShaderResourceBindings()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void xiiShaderParser::ApplyShaderResourceBindings </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a>&#160;</td>
+          <td class="paramname"><em>sPlatform</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a>&#160;</td>
+          <td class="paramname"><em>sShaderStageSource</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../dc/da4/classxii_dynamic_array.htm">xiiDynamicArray</a>&lt; <a class="el" href="../../d8/daf/structxii_shader_resource_definition.htm">xiiShaderResourceDefinition</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>resources</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d8/dc2/classxii_hash_table.htm">xiiHashTable</a>&lt; <a class="el" href="../../d6/d0c/classxii_hashed_string.htm">xiiHashedString</a>, <a class="el" href="../../d4/dce/structxii_g_a_l_shader_resource_description.htm">xiiGALShaderResourceDescription</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>bindings</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d0/dcc/classxii_shader_parser.htm#a9abd7f0898b76408c4669c2b2d51b2e8">CreateResourceDeclaration</a> &amp;&#160;</td>
+          <td class="paramname"><em>createDeclaration</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d4/dbb/classxii_string_builder.htm">xiiStringBuilder</a> &amp;&#160;</td>
+          <td class="paramname"><em>out_sShaderStageSource</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Creates a new shader source code that patches all shader resources to contain fixed set / slot bindings. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sPlatform</td><td>The platform for which the shader should be patched. </td></tr>
+    <tr><td class="paramname">sShaderStageSource</td><td>The original shader source code that should be patched. </td></tr>
+    <tr><td class="paramname">resources</td><td>A list of all shader resources that need to be patched within sShaderStageSource. </td></tr>
+    <tr><td class="paramname">bindings</td><td>The binding information that each shader resource should have after patching. These bindings must have unique set / slots combinations for each resource. </td></tr>
+    <tr><td class="paramname">createDeclaration</td><td>The callback to be called to generate the new shader resource declaration. </td></tr>
+    <tr><td class="paramname">out_shaderStageSource</td><td>The new shader source code after patching. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a52aa58fd6b3c109faf6fb659ec8da976"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a52aa58fd6b3c109faf6fb659ec8da976">&#9670;&nbsp;</a></span>MergeShaderResourceBindings()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dd/dad/structxii_result.htm">xiiResult</a> xiiShaderParser::MergeShaderResourceBindings </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d5/da3/structxii_shader_program_data.htm">xiiShaderProgramData</a> &amp;&#160;</td>
+          <td class="paramname"><em>spd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d8/dc2/classxii_hash_table.htm">xiiHashTable</a>&lt; <a class="el" href="../../d6/d0c/classxii_hashed_string.htm">xiiHashedString</a>, <a class="el" href="../../d4/dce/structxii_g_a_l_shader_resource_description.htm">xiiGALShaderResourceDescription</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>out_bindings</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d6/d6b/classxii_log_interface.htm">xiiLogInterface</a> *&#160;</td>
+          <td class="paramname"><em>pLog</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Merges the shader resource bindings of all used shader stages. </p>
+<p>The function can fail if a shader resource of the same name has different signatures in two stages. E.g. the type, slot or set is different. Shader resources must be uniquely identified via name. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">spd</td><td>The shader currently being processed. </td></tr>
+    <tr><td class="paramname">out_bindings</td><td>A hashmap from shader resource name to shader resource binding. If a binding is used in multiple stages, xiiGALShaderResourceDescription::m_Stages will be the combination of all used stages. </td></tr>
+    <tr><td class="paramname">pLog</td><td>Log interface to write errors to. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Returns failure if the shader stages could not be merged. </dd></dl>
+
+</div>
+</div>
+<a id="abfd8a8d39d4fb0c8911243f3a7a61f10"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abfd8a8d39d4fb0c8911243f3a7a61f10">&#9670;&nbsp;</a></span>ParseShaderResources()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void xiiShaderParser::ParseShaderResources </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a>&#160;</td>
+          <td class="paramname"><em>sShaderStageSource</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../dc/da4/classxii_dynamic_array.htm">xiiDynamicArray</a>&lt; <a class="el" href="../../d8/daf/structxii_shader_resource_definition.htm">xiiShaderResourceDefinition</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>out_resources</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Tries to find shader resource declarations inside the shader source. </p>
+<p>Used by the shader compiler implementations to generate resource mappings to sets/slots without creating conflicts across shader stages. For a list of supported resource declarations and possible pitfalls, please refer to <a href="https://docs.xiitechnologies.com/graphics/shaders/shader-resources.html">https://docs.xiitechnologies.com/graphics/shaders/shader-resources.html</a>. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sShaderStageSource</td><td>The shader source to parse. </td></tr>
+    <tr><td class="paramname">out_Resources</td><td>The shader resources found inside the source. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>/home/runner/work/XII/XII/Source/Engine/GraphicsCore/ShaderCompiler/<a class="el" href="../../de/d77/_shader_parser_8h_source.htm">ShaderParser.h</a></li>
 <li>/home/runner/work/XII/XII/Source/Engine/GraphicsCore/ShaderCompiler/Implementation/ShaderParser.cpp</li>
@@ -128,7 +346,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>ParsePermutati
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d0/dcc/classxii_shader_parser.htm">xiiShaderParser</a></li>
-    <li class="footer">Generated on Sun Dec 31 2023 07:13:58 for XIIEngine by
+    <li class="footer">Generated on Tue Apr 30 2024 17:34:40 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

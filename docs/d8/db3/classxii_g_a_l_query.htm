@@ -85,6 +85,7 @@ $(document).ready(function(){initNavTree('d8/db3/classxii_g_a_l_query.htm','../.
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-types">Protected Types</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="#friends">Friends</a> &#124;
@@ -103,16 +104,17 @@ Inheritance diagram for xiiGALQuery:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../db/d93/classxii_g_a_l_query__inherit__graph.png" border="0" usemap="#xii_g_a_l_query_inherit__map" alt="Inheritance graph"/></div>
 <map name="xii_g_a_l_query_inherit__map" id="xii_g_a_l_query_inherit__map">
-<area shape="rect" title="Interface that defines methods to manipulate a query object." alt="" coords="190,304,293,331"/>
-<area shape="rect" href="../../d7/dc2/classxii_g_a_l_query_d3_d12.htm" title=" " alt="" coords="5,379,152,405"/>
-<area shape="rect" href="../../d5/d7d/classxii_g_a_l_query_null.htm" title=" " alt="" coords="177,379,306,405"/>
-<area shape="rect" href="../../d4/dee/classxii_g_a_l_query_vulkan.htm" title=" " alt="" coords="331,379,477,405"/>
-<area shape="rect" href="../../d5/d12/classxii_g_a_l_device_object.htm" title="Base Graphics Abstraction Layer Object." alt="" coords="166,229,317,256"/>
-<area shape="rect" href="../../d3/dda/classxii_g_a_l_object.htm" title="Base Graphics Abstraction Layer Object." alt="" coords="188,155,295,181"/>
-<area shape="rect" href="../../dc/d71/classxii_reflected_class.htm" title="All classes that should be dynamically reflectable, need to be derived from this base class." alt="" coords="99,80,234,107"/>
-<area shape="rect" href="../../d2/d38/classxii_no_base.htm" title="Dummy type to pass to templates and macros that expect a base type for a class that has no base." alt="" coords="123,5,211,32"/>
-<area shape="rect" href="../../d3/dd0/classxii_ref_counted.htm" title="Base class for reference counted objects." alt="" coords="259,80,373,107"/>
-<area shape="rect" href="../../d7/df4/classxii_ref_counting_impl.htm" title=" " alt="" coords="243,5,389,32"/>
+<area shape="rect" title="Interface that defines methods to manipulate a query object." alt="" coords="279,304,382,331"/>
+<area shape="rect" href="../../d6/d94/classxii_g_a_l_query_d3_d11.htm" title=" " alt="" coords="5,379,152,405"/>
+<area shape="rect" href="../../d7/dc2/classxii_g_a_l_query_d3_d12.htm" title=" " alt="" coords="176,379,323,405"/>
+<area shape="rect" href="../../d5/d7d/classxii_g_a_l_query_null.htm" title=" " alt="" coords="347,379,477,405"/>
+<area shape="rect" href="../../d4/dee/classxii_g_a_l_query_vulkan.htm" title=" " alt="" coords="501,379,648,405"/>
+<area shape="rect" href="../../d5/d12/classxii_g_a_l_device_object.htm" title="Base Graphics Abstraction Layer Object." alt="" coords="255,229,406,256"/>
+<area shape="rect" href="../../d3/dda/classxii_g_a_l_object.htm" title="Base Graphics Abstraction Layer Object." alt="" coords="277,155,384,181"/>
+<area shape="rect" href="../../dc/d71/classxii_reflected_class.htm" title="All classes that should be dynamically reflectable, need to be derived from this base class." alt="" coords="189,80,323,107"/>
+<area shape="rect" href="../../d2/d38/classxii_no_base.htm" title="Dummy type to pass to templates and macros that expect a base type for a class that has no base." alt="" coords="212,5,300,32"/>
+<area shape="rect" href="../../d3/dd0/classxii_ref_counted.htm" title="Base class for reference counted objects." alt="" coords="348,80,463,107"/>
+<area shape="rect" href="../../d7/df4/classxii_ref_counting_impl.htm" title=" " alt="" coords="332,5,479,32"/>
 </map>
 <center><span class="legend">[<a target="top" href="../../graph_legend.htm">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -188,44 +190,58 @@ xiiInt32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 <tr class="memdesc:a9f7119c376cfcd3e1d4a0264a1b3f218 inherit pub_methods_classxii_ref_counting_impl"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current reference count. <br /></td></tr>
 <tr class="separator:a9f7119c376cfcd3e1d4a0264a1b3f218 inherit pub_methods_classxii_ref_counting_impl"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-types"></a>
+Protected Types</h2></td></tr>
+<tr class="memitem:a13b9c295483ae4a42123735b261b1cd5"><td class="memItemLeft" align="right" valign="top"><a id="a13b9c295483ae4a42123735b261b1cd5"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>QueryState</b> { <b>Inactive</b>, 
+<b>Querying</b>, 
+<b>Ended</b>
+ }</td></tr>
+<tr class="separator:a13b9c295483ae4a42123735b261b1cd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:a36f7b97a022bd13a0b0ddc38507b7716"><td class="memItemLeft" align="right" valign="top"><a id="a36f7b97a022bd13a0b0ddc38507b7716"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>xiiGALQuery</b> (const <a class="el" href="../../d3/d4e/structxii_g_a_l_query_creation_description.htm">xiiGALQueryCreationDescription</a> &amp;creationDescription)</td></tr>
-<tr class="separator:a36f7b97a022bd13a0b0ddc38507b7716"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6bcb53f6ddaa71d37ce20dd89fcce82c"><td class="memItemLeft" align="right" valign="top"><a id="a6bcb53f6ddaa71d37ce20dd89fcce82c"></a>
-virtual <a class="el" href="../../dd/dad/structxii_result.htm">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><b>InitPlatform</b> (<a class="el" href="../../d5/d19/classxii_g_a_l_device.htm">xiiGALDevice</a> *pDevice)=0</td></tr>
-<tr class="separator:a6bcb53f6ddaa71d37ce20dd89fcce82c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acff9f20683ea395c1778807240710675"><td class="memItemLeft" align="right" valign="top"><a id="acff9f20683ea395c1778807240710675"></a>
-virtual <a class="el" href="../../dd/dad/structxii_result.htm">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><b>DeInitPlatform</b> (<a class="el" href="../../d5/d19/classxii_g_a_l_device.htm">xiiGALDevice</a> *pDevice)=0</td></tr>
-<tr class="separator:acff9f20683ea395c1778807240710675"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f94144d8243ddc348a9734c22dae9f5"><td class="memItemLeft" align="right" valign="top"><a id="a2f94144d8243ddc348a9734c22dae9f5"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>xiiGALQuery</b> (<a class="el" href="../../d5/d19/classxii_g_a_l_device.htm">xiiGALDevice</a> *pDevice, const <a class="el" href="../../d3/d4e/structxii_g_a_l_query_creation_description.htm">xiiGALQueryCreationDescription</a> &amp;creationDescription)</td></tr>
+<tr class="separator:a2f94144d8243ddc348a9734c22dae9f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad34841d81d0d097c873d4062f8d7a9f6"><td class="memItemLeft" align="right" valign="top"><a id="ad34841d81d0d097c873d4062f8d7a9f6"></a>
+virtual <a class="el" href="../../dd/dad/structxii_result.htm">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><b>InitPlatform</b> ()=0</td></tr>
+<tr class="separator:ad34841d81d0d097c873d4062f8d7a9f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16668b20914e550be06f3ab3deb84905"><td class="memItemLeft" align="right" valign="top"><a id="a16668b20914e550be06f3ab3deb84905"></a>
+virtual <a class="el" href="../../dd/dad/structxii_result.htm">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><b>DeInitPlatform</b> ()=0</td></tr>
+<tr class="separator:a16668b20914e550be06f3ab3deb84905"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2277d95f41be9ad986e3b0a7e0723288"><td class="memItemLeft" align="right" valign="top"><a id="a2277d95f41be9ad986e3b0a7e0723288"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>CheckQueryDataPtr</b> (void *pData, xiiUInt32 uiDataSize)</td></tr>
+<tr class="separator:a2277d95f41be9ad986e3b0a7e0723288"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_classxii_g_a_l_device_object"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classxii_g_a_l_device_object')"><img src="../../closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="../../d5/d12/classxii_g_a_l_device_object.htm">xiiGALDeviceObject</a></td></tr>
+<tr class="memitem:a7ba98273bd740d9f4e9ed729de53b723 inherit pro_methods_classxii_g_a_l_device_object"><td class="memItemLeft" align="right" valign="top"><a id="a7ba98273bd740d9f4e9ed729de53b723"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>xiiGALDeviceObject</b> (<a class="el" href="../../d5/d19/classxii_g_a_l_device.htm">xiiGALDevice</a> *pDevice)</td></tr>
+<tr class="separator:a7ba98273bd740d9f4e9ed729de53b723 inherit pro_methods_classxii_g_a_l_device_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_classxii_g_a_l_object"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classxii_g_a_l_object')"><img src="../../closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="../../d3/dda/classxii_g_a_l_object.htm">xiiGALObject</a></td></tr>
-<tr class="memitem:aaffc1ae3ea20d4992e3de54ed6cd62ba inherit pro_methods_classxii_g_a_l_object"><td class="memItemLeft" align="right" valign="top"><a id="aaffc1ae3ea20d4992e3de54ed6cd62ba"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SetDebugNamePlatform</b> (<a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sNam)</td></tr>
-<tr class="separator:aaffc1ae3ea20d4992e3de54ed6cd62ba inherit pro_methods_classxii_g_a_l_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad91f3bebb53357b1c693e922a8da1262 inherit pro_methods_classxii_g_a_l_object"><td class="memItemLeft" align="right" valign="top"><a id="ad91f3bebb53357b1c693e922a8da1262"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SetDebugNamePlatform</b> (<a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sName)</td></tr>
+<tr class="separator:ad91f3bebb53357b1c693e922a8da1262 inherit pro_methods_classxii_g_a_l_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
 <tr class="memitem:ac7b16dc6efd3594439fe1d87d7334388"><td class="memItemLeft" align="right" valign="top"><a id="ac7b16dc6efd3594439fe1d87d7334388"></a>
 <a class="el" href="../../d3/d4e/structxii_g_a_l_query_creation_description.htm">xiiGALQueryCreationDescription</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_Description</b></td></tr>
 <tr class="separator:ac7b16dc6efd3594439fe1d87d7334388"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ae1e2146ae4c034bc818f3018377021"><td class="memItemLeft" align="right" valign="top"><a id="a3ae1e2146ae4c034bc818f3018377021"></a>
+QueryState&#160;</td><td class="memItemRight" valign="bottom"><b>m_QueryState</b> = QueryState::Inactive</td></tr>
+<tr class="separator:a3ae1e2146ae4c034bc818f3018377021"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_classxii_g_a_l_device_object"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classxii_g_a_l_device_object')"><img src="../../closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="../../d5/d12/classxii_g_a_l_device_object.htm">xiiGALDeviceObject</a></td></tr>
 <tr class="memitem:acdca6fd41d888d8ff4a3cf9bc4dfea29 inherit pro_attribs_classxii_g_a_l_device_object"><td class="memItemLeft" align="right" valign="top"><a id="acdca6fd41d888d8ff4a3cf9bc4dfea29"></a>
 <a class="el" href="../../d5/d19/classxii_g_a_l_device.htm">xiiGALDevice</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_pDevice</b> = nullptr</td></tr>
 <tr class="separator:acdca6fd41d888d8ff4a3cf9bc4dfea29 inherit pro_attribs_classxii_g_a_l_device_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pro_attribs_classxii_g_a_l_object"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classxii_g_a_l_object')"><img src="../../closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="../../d3/dda/classxii_g_a_l_object.htm">xiiGALObject</a></td></tr>
-<tr class="memitem:ab142653071e67b7a51f8d4349014679c inherit pro_attribs_classxii_g_a_l_object"><td class="memItemLeft" align="right" valign="top"><a id="ab142653071e67b7a51f8d4349014679c"></a>
-<a class="el" href="../../d6/d0c/classxii_hashed_string.htm">xiiHashedString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_sDebugName</b></td></tr>
-<tr class="separator:ab142653071e67b7a51f8d4349014679c inherit pro_attribs_classxii_g_a_l_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
 <tr class="memitem:a8a9dd0ea17d38c3d68c9db0002e5dab0"><td class="memItemLeft" align="right" valign="top"><a id="a8a9dd0ea17d38c3d68c9db0002e5dab0"></a>
 class&#160;</td><td class="memItemRight" valign="bottom"><b>xiiGALDevice</b></td></tr>
 <tr class="separator:a8a9dd0ea17d38c3d68c9db0002e5dab0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aafe2086421b7b83ca1e8387d7d99cb75"><td class="memItemLeft" align="right" valign="top"><a id="aafe2086421b7b83ca1e8387d7d99cb75"></a>
-class&#160;</td><td class="memItemRight" valign="bottom"><b>xiiGALCommandEncoder</b></td></tr>
-<tr class="separator:aafe2086421b7b83ca1e8387d7d99cb75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb565b09702bdf9aa9bf8dc71124e341"><td class="memItemLeft" align="right" valign="top"><a id="afb565b09702bdf9aa9bf8dc71124e341"></a>
+class&#160;</td><td class="memItemRight" valign="bottom"><b>xiiGALCommandList</b></td></tr>
+<tr class="separator:afb565b09702bdf9aa9bf8dc71124e341"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -289,7 +305,7 @@ static const <a class="el" href="../../db/d89/classxii_r_t_t_i.htm">xiiRTTI</a> 
 <dl class="section return"><dt>Returns</dt><dd>True if the query data is available, false otherwise.</dd></dl>
 <dl class="section note"><dt>Note</dt><dd>In Direct3D11 backend timestamp queries will only be available after FinishFrame is called for the frame in which they were collected. If AutoInvalidate is set to true, and the data have been retrieved, an application must not call <a class="el" href="../../d8/db3/classxii_g_a_l_query.htm#a891349546e2c54dfb62eb657eef43c88" title="This retrieves the query data.">GetData()</a> until it begins and ends the query again. </dd></dl>
 
-<p>Implemented in <a class="el" href="../../d7/dc2/classxii_g_a_l_query_d3_d12.htm#a73afa387be24c2fd5cb1c6064ee72d23">xiiGALQueryD3D12</a>, <a class="el" href="../../d5/d7d/classxii_g_a_l_query_null.htm#a51420080c02fe4b9bb7752cafb614983">xiiGALQueryNull</a>, and <a class="el" href="../../d4/dee/classxii_g_a_l_query_vulkan.htm#a9c635b2f70eac91d16904f795a7dc1b1">xiiGALQueryVulkan</a>.</p>
+<p>Implemented in <a class="el" href="../../d7/dc2/classxii_g_a_l_query_d3_d12.htm#a73afa387be24c2fd5cb1c6064ee72d23">xiiGALQueryD3D12</a>, <a class="el" href="../../d5/d7d/classxii_g_a_l_query_null.htm#a51420080c02fe4b9bb7752cafb614983">xiiGALQueryNull</a>, <a class="el" href="../../d4/dee/classxii_g_a_l_query_vulkan.htm#a9c635b2f70eac91d16904f795a7dc1b1">xiiGALQueryVulkan</a>, and <a class="el" href="../../d6/d94/classxii_g_a_l_query_d3_d11.htm#a0a4aed736a040f67dc158a7f464d650a">xiiGALQueryD3D11</a>.</p>
 
 </div>
 </div>
@@ -304,7 +320,7 @@ static const <a class="el" href="../../db/d89/classxii_r_t_t_i.htm">xiiRTTI</a> 
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d8/db3/classxii_g_a_l_query.htm">xiiGALQuery</a></li>
-    <li class="footer">Generated on Sun Dec 31 2023 07:13:54 for XIIEngine by
+    <li class="footer">Generated on Tue Apr 30 2024 17:34:37 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

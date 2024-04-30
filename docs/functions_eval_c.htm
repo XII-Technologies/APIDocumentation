@@ -152,6 +152,9 @@ $(document).ready(function(){initNavTree('functions_eval_c.htm',''); initResizab
 <li>ColumnRowFloat32
 : <a class="el" href="d0/d08/structxii_g_a_l_shading_rate_format.htm#adb689e5e36dbbc3dc5e528b43c12baddaf7a9744f6e965e773ac59047d26b51fb">xiiGALShadingRateFormat</a>
 </li>
+<li>CombinedSampler
+: <a class="el" href="da/d8c/structxii_g_a_l_pipeline_resource_flags.htm#a149c0308106286ee271be0c308b08828a61ff875f47959bae8b367e124b31d838">xiiGALPipelineResourceFlags</a>
+</li>
 <li>CombinerMax
 : <a class="el" href="dd/dc7/structxii_g_a_l_shading_rate_combiner.htm#aa412e4235d7cbff8956bafe8d2275ae6a9cd8fb1bf48ed36fa9eb8ff6e9d5b536">xiiGALShadingRateCombiner</a>
 </li>
@@ -192,6 +195,15 @@ $(document).ready(function(){initNavTree('functions_eval_c.htm',''); initResizab
 : <a class="el" href="d7/db4/structxii_g_a_l_command_queue_type.htm#a47dd1577b4fcd1112a73e9a4798421cbac637b590a8a2e4075b099765350fb543">xiiGALCommandQueueType</a>
 , <a class="el" href="db/db2/structxii_g_a_l_pipeline_type.htm#ad5477c40754df4d33e387c8affd6784bab14254056cfd23c2ec2d138d18e3068b">xiiGALPipelineType</a>
 , <a class="el" href="d7/d93/structxii_g_a_l_shader_stage.htm#a574ae05a61f47569461dc1fd2ea12092a9ecaf4b618c6f934187f57b8548ec0ac">xiiGALShaderStage</a>
+</li>
+<li>ComputeShader
+: <a class="el" href="dc/d29/structxii_g_a_l_pipeline_stage_flags.htm#ab114e9a33a63968b73bdf79069b73282a1a649306f79c3ec6d7fbe51a4ec8db1d">xiiGALPipelineStageFlags</a>
+</li>
+<li>ConditionalRendering
+: <a class="el" href="dc/d29/structxii_g_a_l_pipeline_stage_flags.htm#ab114e9a33a63968b73bdf79069b73282aa99ad1d7849976e95603d67c4089447a">xiiGALPipelineStageFlags</a>
+</li>
+<li>ConditionalRenderingRead
+: <a class="el" href="d7/d8d/structxii_g_a_l_access_flags.htm#a4c4d72bc05e2a6cd4819337ffa7f6b9aa16153c78240c22208b0cbbdb41f656eb">xiiGALAccessFlags</a>
 </li>
 <li>Connected
 : <a class="el" href="d4/db2/structxii_ipc_channel_event.htm#a0845639587daf7f344e19525b1218cabacbdc3ecb0b5919127cc9893439c67e15">xiiIpcChannelEvent</a>
@@ -352,13 +364,15 @@ $(document).ready(function(){initNavTree('functions_eval_c.htm',''); initResizab
 : <a class="el" href="d9/d7d/structxii_g_a_l_logic_operation.htm#af8e2a0da0b43dfcff3ca28a2a3fca263acb095c2a94298ed007f3f8d6053b1d08">xiiGALLogicOperation</a>
 </li>
 <li>CopyDestination
-: <a class="el" href="d6/dec/structxii_g_a_l_resource_state_flags.htm#a4863cdfd85d00744a4db3689c58b5e84ab263e2091bff4ae63c79712506d89f36">xiiGALResourceStateFlags</a>
+: <a class="el" href="d7/d8d/structxii_g_a_l_access_flags.htm#a4c4d72bc05e2a6cd4819337ffa7f6b9aa7c945fe9b1c37c5023cf2ada2e878bad">xiiGALAccessFlags</a>
+, <a class="el" href="d6/dec/structxii_g_a_l_resource_state_flags.htm#a4863cdfd85d00744a4db3689c58b5e84ab263e2091bff4ae63c79712506d89f36">xiiGALResourceStateFlags</a>
 </li>
 <li>CopyInverted
 : <a class="el" href="d9/d7d/structxii_g_a_l_logic_operation.htm#af8e2a0da0b43dfcff3ca28a2a3fca263a5c5cc61f9ea74eb8112c8b4786f9df75">xiiGALLogicOperation</a>
 </li>
 <li>CopySource
-: <a class="el" href="d6/dec/structxii_g_a_l_resource_state_flags.htm#a4863cdfd85d00744a4db3689c58b5e84a68e01e4b7453edfc6a69aa76c4d5d3cc">xiiGALResourceStateFlags</a>
+: <a class="el" href="d7/d8d/structxii_g_a_l_access_flags.htm#a4c4d72bc05e2a6cd4819337ffa7f6b9aa97de431c65cbc8fd7e61fcedaa3ad14b">xiiGALAccessFlags</a>
+, <a class="el" href="d6/dec/structxii_g_a_l_resource_state_flags.htm#a4863cdfd85d00744a4db3689c58b5e84a68e01e4b7453edfc6a69aa76c4d5d3cc">xiiGALResourceStateFlags</a>
 , <a class="el" href="d6/dc7/structxii_g_a_l_swap_chain_usage_flags.htm#a0a6400b36fb7969abaa95ffb71d04588a8573a98a09fc36715a03832185f6d640">xiiGALSwapChainUsageFlags</a>
 </li>
 <li>CoreSystems
@@ -398,7 +412,7 @@ $(document).ready(function(){initNavTree('functions_eval_c.htm',''); initResizab
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sun Dec 31 2023 07:14:01 for XIIEngine by
+    <li class="footer">Generated on Tue Apr 30 2024 17:34:42 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

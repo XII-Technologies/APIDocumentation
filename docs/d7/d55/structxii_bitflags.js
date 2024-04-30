@@ -1,5 +1,6 @@
 var structxii_bitflags =
 [
+    [ "ConstIterator", "d7/d55/structxii_bitflags.htm#a325c453a5cbdae3a9d1ed6abd519925e", null ],
     [ "xiiBitflags", "d7/d55/structxii_bitflags.htm#a8b8c4d615ec4a857f1772939ef1cfbc6", null ],
     [ "xiiBitflags", "d7/d55/structxii_bitflags.htm#a35ffaa9d696a591e3c05c708009747cb", null ],
     [ "Add", "d7/d55/structxii_bitflags.htm#a89cb715ce2414f2e16675f5d8503cb1c", null ],
@@ -7,6 +8,8 @@ var structxii_bitflags =
     [ "AreAllSet", "d7/d55/structxii_bitflags.htm#a95bb64059c3566df3c788303d16ea47e", null ],
     [ "AreNoneSet", "d7/d55/structxii_bitflags.htm#a67f95a1e8065f47004566d8489e03613", null ],
     [ "Clear", "d7/d55/structxii_bitflags.htm#ab3cad4be1ef82010224f867192fd36fb", null ],
+    [ "GetEndIterator", "d7/d55/structxii_bitflags.htm#a739b0c1163cb91f90312fc854cd5406a", null ],
+    [ "GetIterator", "d7/d55/structxii_bitflags.htm#a5824fe68e0fa0b5cc0e3f4b9ac74bb3b", null ],
     [ "GetValue", "d7/d55/structxii_bitflags.htm#a6914e5bc6af6cb913a8a5f4264a6b836", null ],
     [ "IsAnyFlagSet", "d7/d55/structxii_bitflags.htm#a6685c3c4dde8925d4811998281afc8d8", null ],
     [ "IsAnySet", "d7/d55/structxii_bitflags.htm#a3e39644d3e435cd46310aa638994fd60", null ],

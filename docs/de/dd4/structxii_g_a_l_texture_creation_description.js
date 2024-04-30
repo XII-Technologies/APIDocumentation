@@ -1,5 +1,6 @@
 var structxii_g_a_l_texture_creation_description =
 [
+    [ "GetArraySize", "de/dd4/structxii_g_a_l_texture_creation_description.htm#acdad61d3127208cb212e40d6765e16ea", null ],
     [ "Is1D", "de/dd4/structxii_g_a_l_texture_creation_description.htm#a6f798125cd88056c533d8d82c61d7d16", null ],
     [ "Is2D", "de/dd4/structxii_g_a_l_texture_creation_description.htm#a2d5585ab1dc89763d7181f48812dfabf", null ],
     [ "Is3D", "de/dd4/structxii_g_a_l_texture_creation_description.htm#a6fca4e0f3d435ba77cf3d32272c8f10f", null ],
