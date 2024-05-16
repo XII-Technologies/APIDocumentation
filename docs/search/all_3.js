@@ -360,7 +360,7 @@ var searchData=
   ['createbox_772',['CreateBox',['../d3/d83/classxii_rasterizer_object.htm#a198fbb45d17c9e5747d46efbca2f83cb',1,'xiiRasterizerObject']]],
   ['createbuffer_773',['CreateBuffer',['../d5/d19/classxii_g_a_l_device.htm#acc86e9b79d8502a48365d64df5896e19',1,'xiiGALDevice']]],
   ['createbufferview_774',['CreateBufferView',['../d5/d19/classxii_g_a_l_device.htm#a0f95038123f4a62227da346c0fba2ff6',1,'xiiGALDevice']]],
-  ['createcommandqueues_775',['CreateCommandQueues',['../d8/d77/classxii_g_a_l_device_d3_d12.htm#a8d00abb1ed0a8b7e17dcb6f09c13f398',1,'xiiGALDeviceD3D12']]],
+  ['createcommandqueue_775',['CreateCommandQueue',['../d5/d19/classxii_g_a_l_device.htm#af1859c7047ededfda6ab05bafcfcab2b',1,'xiiGALDevice']]],
   ['createcomponent_776',['CreateComponent',['../d4/d61/classxii_component_manager_base.htm#a5e74f543a03117b6cb50d830db229f3d',1,'xiiComponentManagerBase::CreateComponent(xiiGameObject *pOwnerObject)'],['../d4/d61/classxii_component_manager_base.htm#a42063cce97b348ca2822d6a127129a04',1,'xiiComponentManagerBase::CreateComponent(xiiGameObject *pOwnerObject, ComponentType *&amp;out_pComponent)']]],
   ['createcomponentinitbatch_777',['CreateComponentInitBatch',['../d6/d89/classxii_world.htm#a638d51a01d207c99389598df27845bf0',1,'xiiWorld']]],
   ['createconstantbuffer_778',['CreateConstantBuffer',['../d0/d60/classxii_g_a_l_device_utilities.htm#aafbdabb721a14fd730659d5c4b91de7a',1,'xiiGALDeviceUtilities']]],

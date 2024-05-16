@@ -87,43 +87,49 @@ $(document).ready(function(){initNavTree('d5/d19/_memory_allocator_d3_d12_8h_sou
 <div class="title">MemoryAllocatorD3D12.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &lt;GraphicsD3D12/GraphicsD3D12DLL.h&gt;</span></div>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;Foundation/Memory/CommonAllocators.h&gt;</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;Foundation/Types/UniquePtr.h&gt;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">namespace </span>D3D12MA</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;{</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;  <span class="keyword">class </span>Allocator;</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;}</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
-<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="../../d2/dfb/classxii_memory_allocator_d3_d12.htm">   11</a></span>&#160;<span class="keyword">class </span>XII_GRAPHICSD3D12_DLL <a class="code" href="../../d2/dfb/classxii_memory_allocator_d3_d12.htm">xiiMemoryAllocatorD3D12</a></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;{</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;  <a class="code" href="../../df/dbd/classxii_allocator.htm">xiiProxyAllocator</a>*  GetProxyAllocator() { <span class="keywordflow">return</span> m_pAllocator.Borrow(); }</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;  D3D12MA::Allocator* GetD3D12Allocator() { <span class="keywordflow">return</span> m_pD3D12MAAllocator; }</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;  <span class="keyword">friend</span> <span class="keyword">class </span>xiiMemoryAllocator;</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;  <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="../../d8/d77/classxii_g_a_l_device_d3_d12.htm">xiiGALDeviceD3D12</a>;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  <a class="code" href="../../d2/dfb/classxii_memory_allocator_d3_d12.htm">xiiMemoryAllocatorD3D12</a>(IDXGIAdapter1* pDXGIAdapter, ID3D12Device* pDeviceD3D12);</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  ~<a class="code" href="../../d2/dfb/classxii_memory_allocator_d3_d12.htm">xiiMemoryAllocatorD3D12</a>();</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  <a class="code" href="../../d9/d4a/classxii_unique_ptr.htm">xiiUniquePtr&lt;xiiProxyAllocator&gt;</a> m_pAllocator;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  D3D12MA::Allocator*             m_pD3D12MAAllocator = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;};</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;GraphicsD3D12/GraphicsD3D12DLL.h&gt;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;Foundation/Memory/CommonAllocators.h&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;Foundation/Types/UniquePtr.h&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">namespace </span>D3D12MA</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;{</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;  <span class="keyword">class </span>Allocator;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;}</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">struct </span>ID3D12Device;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">struct </span>IDXGIAdapter1;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="../../d2/dfb/classxii_memory_allocator_d3_d12.htm">   16</a></span>&#160;<span class="keyword">class </span>XII_GRAPHICSD3D12_DLL <a class="code" href="../../d2/dfb/classxii_memory_allocator_d3_d12.htm">xiiMemoryAllocatorD3D12</a></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;{</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;  <a class="code" href="../../df/dbd/classxii_allocator.htm">xiiProxyAllocator</a>*  GetProxyAllocator() { <span class="keywordflow">return</span> m_pAllocator.Borrow(); }</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  D3D12MA::Allocator* GetD3D12Allocator() { <span class="keywordflow">return</span> m_pD3D12MAAllocator; }</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="../../d8/d9d/classxii_memory_utils.htm">xiiMemoryUtils</a>;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="../../d8/d77/classxii_g_a_l_device_d3_d12.htm">xiiGALDeviceD3D12</a>;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  <a class="code" href="../../d2/dfb/classxii_memory_allocator_d3_d12.htm">xiiMemoryAllocatorD3D12</a>(IDXGIAdapter1* pDXGIAdapter, ID3D12Device* pDeviceD3D12);</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  ~<a class="code" href="../../d2/dfb/classxii_memory_allocator_d3_d12.htm">xiiMemoryAllocatorD3D12</a>();</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  <a class="code" href="../../d9/d4a/classxii_unique_ptr.htm">xiiUniquePtr&lt;xiiProxyAllocator&gt;</a> m_pAllocator;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  D3D12MA::Allocator*             m_pD3D12MAAllocator = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;};</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
+<div class="ttc" id="aclassxii_memory_utils_htm"><div class="ttname"><a href="../../d8/d9d/classxii_memory_utils.htm">xiiMemoryUtils</a></div><div class="ttdoc">This class provides functions to work on raw memory.</div><div class="ttdef"><b>Definition:</b> MemoryUtils.h:25</div></div>
 <div class="ttc" id="aclassxii_allocator_htm"><div class="ttname"><a href="../../df/dbd/classxii_allocator.htm">xiiAllocator&lt; xiiMemoryPolicies::xiiProxyAllocation &gt;</a></div></div>
 <div class="ttc" id="aclassxii_unique_ptr_htm"><div class="ttname"><a href="../../d9/d4a/classxii_unique_ptr.htm">xiiUniquePtr</a></div><div class="ttdoc">A Unique ptr manages an object and destroys that object when it goes out of scope....</div><div class="ttdef"><b>Definition:</b> UniquePtr.h:8</div></div>
-<div class="ttc" id="aclassxii_g_a_l_device_d3_d12_htm"><div class="ttname"><a href="../../d8/d77/classxii_g_a_l_device_d3_d12.htm">xiiGALDeviceD3D12</a></div><div class="ttdef"><b>Definition:</b> DeviceD3D12.h:21</div></div>
-<div class="ttc" id="aclassxii_memory_allocator_d3_d12_htm"><div class="ttname"><a href="../../d2/dfb/classxii_memory_allocator_d3_d12.htm">xiiMemoryAllocatorD3D12</a></div><div class="ttdef"><b>Definition:</b> MemoryAllocatorD3D12.h:11</div></div>
+<div class="ttc" id="aclassxii_g_a_l_device_d3_d12_htm"><div class="ttname"><a href="../../d8/d77/classxii_g_a_l_device_d3_d12.htm">xiiGALDeviceD3D12</a></div><div class="ttdef"><b>Definition:</b> DeviceD3D12.h:20</div></div>
+<div class="ttc" id="aclassxii_memory_allocator_d3_d12_htm"><div class="ttname"><a href="../../d2/dfb/classxii_memory_allocator_d3_d12.htm">xiiMemoryAllocatorD3D12</a></div><div class="ttdef"><b>Definition:</b> MemoryAllocatorD3D12.h:16</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.htm">home</a></li><li class="navelem"><a class="el" href="../../dir_1036706e55c22cab35bc1c58ee689f1d.htm">runner</a></li><li class="navelem"><a class="el" href="../../dir_629f8151d55d307162ff2d619fb1783d.htm">work</a></li><li class="navelem"><a class="el" href="../../dir_1ddc44fe1263a8c7935fa6130b7d9499.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_2c1b6808f12952f4c36e05ba7068379a.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_b5a1c4ecfca018ad24b729e213296d41.htm">Source</a></li><li class="navelem"><a class="el" href="../../dir_e321052006a51284e67389ab20037e7c.htm">Engine</a></li><li class="navelem"><a class="el" href="../../dir_68524623ec22db3a46657ed65685622a.htm">GraphicsD3D12</a></li><li class="navelem"><a class="el" href="../../dir_7677ada7fb734c0b2b6df2d16f3fadb9.htm">MemoryAllocator</a></li><li class="navelem"><b>MemoryAllocatorD3D12.h</b></li>
-    <li class="footer">Generated on Tue Apr 30 2024 17:34:34 for XIIEngine by
+    <li class="footer">Generated on Thu May 16 2024 17:17:29 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

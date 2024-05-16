@@ -1,25 +1,9 @@
 var classxii_g_a_l_shader_d3_d12 =
 [
-    [ "xiiGALShaderD3D12", "d4/da7/classxii_g_a_l_shader_d3_d12.htm#ac7ead7a0593fb5d70b04fcbe9ee0b040", null ],
+    [ "xiiGALShaderD3D12", "d4/da7/classxii_g_a_l_shader_d3_d12.htm#afe0a414ba1c367d9ea8dd3ed83bfd954", null ],
     [ "~xiiGALShaderD3D12", "d4/da7/classxii_g_a_l_shader_d3_d12.htm#a3fa7a19c5e728ef430b6b5d9c8ecfdc7", null ],
-    [ "DeInitPlatform", "d4/da7/classxii_g_a_l_shader_d3_d12.htm#a73957153c96d8e924ce0617b70d1cd1c", null ],
-    [ "GetAmplificationShader", "d4/da7/classxii_g_a_l_shader_d3_d12.htm#ad74fdc64c2eccec3fbcb3a16974d93d2", null ],
-    [ "GetCallableShader", "d4/da7/classxii_g_a_l_shader_d3_d12.htm#acc851623b84c3056ea2628bcaf0283ad", null ],
-    [ "GetComputeShader", "d4/da7/classxii_g_a_l_shader_d3_d12.htm#ad9e0aa283d93b3506dff3fcb2ac0c019", null ],
-    [ "GetDomainShader", "d4/da7/classxii_g_a_l_shader_d3_d12.htm#af54452d0ed9b53899e5e366e41b00ba8", null ],
-    [ "GetGeometryShader", "d4/da7/classxii_g_a_l_shader_d3_d12.htm#a9abd31e422191fb5d6ccc04a769659a4", null ],
-    [ "GetHullShader", "d4/da7/classxii_g_a_l_shader_d3_d12.htm#a20851c087a09e26509995cdacb988590", null ],
-    [ "GetMeshShader", "d4/da7/classxii_g_a_l_shader_d3_d12.htm#ad58e8578c50babb3fde9d1d8730c38c0", null ],
-    [ "GetPixelShader", "d4/da7/classxii_g_a_l_shader_d3_d12.htm#aaf1ad4249ccbc6a1c465fa05fa00ecb6", null ],
-    [ "GetRayAnyHitShader", "d4/da7/classxii_g_a_l_shader_d3_d12.htm#a289d3396f2368d1b14d01e663552c8cf", null ],
-    [ "GetRayClosestHitShader", "d4/da7/classxii_g_a_l_shader_d3_d12.htm#aca7a6a2590f00d4d749bd6eb6c96eba0", null ],
-    [ "GetRayGenerationShader", "d4/da7/classxii_g_a_l_shader_d3_d12.htm#a4d0af37d6cbe068f34f60cebe4f2eb83", null ],
-    [ "GetRayIntersectionShader", "d4/da7/classxii_g_a_l_shader_d3_d12.htm#a5464369dc0a2528d394be68a6e65e612", null ],
-    [ "GetRayMissShader", "d4/da7/classxii_g_a_l_shader_d3_d12.htm#a4457a5962ceb6bb61807048e3f2f6f3f", null ],
-    [ "GetTileShader", "d4/da7/classxii_g_a_l_shader_d3_d12.htm#a0a64d9d4eb98de94eb896b2bd4e5196f", null ],
-    [ "GetVertexShader", "d4/da7/classxii_g_a_l_shader_d3_d12.htm#a42e21ff7617a813b5c379ece2ea9f859", null ],
-    [ "InitPlatform", "d4/da7/classxii_g_a_l_shader_d3_d12.htm#a4fa3cc1172f90c4a5cc4a450fd3aa7ca", null ],
+    [ "DeInitPlatform", "d4/da7/classxii_g_a_l_shader_d3_d12.htm#a70104e949bcb9f85ad7ad9b4e6048234", null ],
+    [ "InitPlatform", "d4/da7/classxii_g_a_l_shader_d3_d12.htm#a968a5c184efc46d973a0c8eb1df89ed7", null ],
     [ "xiiGALDeviceD3D12", "d4/da7/classxii_g_a_l_shader_d3_d12.htm#a9b3da82b84b68e0128d059e18e11b67d", null ],
-    [ "xiiMemoryUtils", "d4/da7/classxii_g_a_l_shader_d3_d12.htm#aefc9ff75d6833fd2f05be48e16436db6", null ],
-    [ "m_pShaderStages", "d4/da7/classxii_g_a_l_shader_d3_d12.htm#a1779e6de59fb5a13a1d5e75674572400", null ]
+    [ "xiiMemoryUtils", "d4/da7/classxii_g_a_l_shader_d3_d12.htm#aefc9ff75d6833fd2f05be48e16436db6", null ]
 ];

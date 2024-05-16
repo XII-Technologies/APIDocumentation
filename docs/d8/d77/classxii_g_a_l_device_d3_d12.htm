@@ -109,9 +109,12 @@ Inheritance diagram for xiiGALDeviceD3D12:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ade9f4a751c71f9d4598d1b47d290aaba"><td class="memItemLeft" align="right" valign="top"><a id="ade9f4a751c71f9d4598d1b47d290aaba"></a>
-ID3D12Device *&#160;</td><td class="memItemRight" valign="bottom"><b>GetDeviceD3D12</b> () const</td></tr>
-<tr class="separator:ade9f4a751c71f9d4598d1b47d290aaba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6a0ed3edf8cdb1bc112fc9ad6eee552"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d1/dd2/classxii_g_a_l_command_queue.htm">xiiGALCommandQueue</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d77/classxii_g_a_l_device_d3_d12.htm#ae6a0ed3edf8cdb1bc112fc9ad6eee552">GetDefaultCommandQueue</a> (<a class="el" href="../../d7/d55/structxii_bitflags.htm">xiiBitflags</a>&lt; <a class="el" href="../../d7/db4/structxii_g_a_l_command_queue_type.htm">xiiGALCommandQueueType</a> &gt; queueType) const override final</td></tr>
+<tr class="memdesc:ae6a0ed3edf8cdb1bc112fc9ad6eee552"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves a pointer to the compute queue if available, null otherwise.  <a href="../../d8/d77/classxii_g_a_l_device_d3_d12.htm#ae6a0ed3edf8cdb1bc112fc9ad6eee552">More...</a><br /></td></tr>
+<tr class="separator:ae6a0ed3edf8cdb1bc112fc9ad6eee552"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d5f9c7f37d0808a7a0dcd70ee151b7f"><td class="memItemLeft" align="right" valign="top"><a id="a8d5f9c7f37d0808a7a0dcd70ee151b7f"></a>
+ID3D12Device1 *&#160;</td><td class="memItemRight" valign="bottom"><b>GetD3D12Device</b> () const</td></tr>
+<tr class="separator:a8d5f9c7f37d0808a7a0dcd70ee151b7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac561b242f67c9b0d5d17a02109c4b7b9"><td class="memItemLeft" align="right" valign="top"><a id="ac561b242f67c9b0d5d17a02109c4b7b9"></a>
 IDXGIAdapter1 *&#160;</td><td class="memItemRight" valign="bottom"><b>GetDXGIAdapter</b> () const</td></tr>
 <tr class="separator:ac561b242f67c9b0d5d17a02109c4b7b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -121,9 +124,9 @@ IDXGIFactory4 *&#160;</td><td class="memItemRight" valign="bottom"><b>GetDXGIFac
 <tr class="memitem:a4e57d2aa0dcc4ff835cb721bb43352b6"><td class="memItemLeft" align="right" valign="top"><a id="a4e57d2aa0dcc4ff835cb721bb43352b6"></a>
 <a class="el" href="../../d2/dfb/classxii_memory_allocator_d3_d12.htm">xiiMemoryAllocatorD3D12</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetD3D12Allocator</b> () const</td></tr>
 <tr class="separator:a4e57d2aa0dcc4ff835cb721bb43352b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a35246f16e4cf1c62ab1943e42695b3f8"><td class="memItemLeft" align="right" valign="top"><a id="a35246f16e4cf1c62ab1943e42695b3f8"></a>
-const <a class="el" href="../../d3/daa/classxii_g_a_l_format_lookup_table.htm">xiiGALFormatLookupTableD3D12</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetFormatLookupTable</b> () const</td></tr>
-<tr class="separator:a35246f16e4cf1c62ab1943e42695b3f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83f0db71fadf6a009d0775d1820e85b6"><td class="memItemLeft" align="right" valign="top"><a id="a83f0db71fadf6a009d0775d1820e85b6"></a>
+xiiUInt32&#160;</td><td class="memItemRight" valign="bottom"><b>GetCommandQueueIndex</b> (<a class="el" href="../../d7/d55/structxii_bitflags.htm">xiiBitflags</a>&lt; <a class="el" href="../../d7/db4/structxii_g_a_l_command_queue_type.htm">xiiGALCommandQueueType</a> &gt; queueType) const</td></tr>
+<tr class="separator:a83f0db71fadf6a009d0775d1820e85b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aadf38985455d231f3428a70340a927c3"><td class="memItemLeft" align="right" valign="top"><a id="aadf38985455d231f3428a70340a927c3"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>ReportLiveGPUObjects</b> ()</td></tr>
 <tr class="separator:aadf38985455d231f3428a70340a927c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -162,6 +165,13 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../.
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d19/classxii_g_a_l_device.htm#a17d69babe30036259ce51d04f3dca6e3">DestroySwapChain</a> (<a class="el" href="../../de/dc7/classxii_g_a_l_swap_chain_handle.htm">xiiGALSwapChainHandle</a> hSwapChain)</td></tr>
 <tr class="memdesc:a17d69babe30036259ce51d04f3dca6e3 inherit pub_methods_classxii_g_a_l_device"><td class="mdescLeft">&#160;</td><td class="mdescRight">This destroys the swap chain with the given handle. <br /></td></tr>
 <tr class="separator:a17d69babe30036259ce51d04f3dca6e3 inherit pub_methods_classxii_g_a_l_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1859c7047ededfda6ab05bafcfcab2b inherit pub_methods_classxii_g_a_l_device"><td class="memItemLeft" align="right" valign="top">XII_NODISCARD <a class="el" href="../../d3/d96/classxii_g_a_l_command_queue_handle.htm">xiiGALCommandQueueHandle</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d19/classxii_g_a_l_device.htm#af1859c7047ededfda6ab05bafcfcab2b">CreateCommandQueue</a> (const <a class="el" href="../../d3/dc4/structxii_g_a_l_command_queue_creation_description.htm">xiiGALCommandQueueCreationDescription</a> &amp;description)</td></tr>
+<tr class="memdesc:af1859c7047ededfda6ab05bafcfcab2b inherit pub_methods_classxii_g_a_l_device"><td class="mdescLeft">&#160;</td><td class="mdescRight">This creates a new command queue object.  <a href="../../d5/d19/classxii_g_a_l_device.htm#af1859c7047ededfda6ab05bafcfcab2b">More...</a><br /></td></tr>
+<tr class="separator:af1859c7047ededfda6ab05bafcfcab2b inherit pub_methods_classxii_g_a_l_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a337e46bece72ba1284dc047240291c09 inherit pub_methods_classxii_g_a_l_device"><td class="memItemLeft" align="right" valign="top"><a id="a337e46bece72ba1284dc047240291c09"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d19/classxii_g_a_l_device.htm#a337e46bece72ba1284dc047240291c09">DestroyCommandQueue</a> (<a class="el" href="../../d3/d96/classxii_g_a_l_command_queue_handle.htm">xiiGALCommandQueueHandle</a> hCommandQueue)</td></tr>
+<tr class="memdesc:a337e46bece72ba1284dc047240291c09 inherit pub_methods_classxii_g_a_l_device"><td class="mdescLeft">&#160;</td><td class="mdescRight">This destroys the command queue with the given handle. <br /></td></tr>
+<tr class="separator:a337e46bece72ba1284dc047240291c09 inherit pub_methods_classxii_g_a_l_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a91802801bbde1b3c5789aebc174d81ed inherit pub_methods_classxii_g_a_l_device"><td class="memItemLeft" align="right" valign="top">XII_NODISCARD <a class="el" href="../../d2/d51/classxii_g_a_l_blend_state_handle.htm">xiiGALBlendStateHandle</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d19/classxii_g_a_l_device.htm#a91802801bbde1b3c5789aebc174d81ed">CreateBlendState</a> (const <a class="el" href="../../d6/dd7/structxii_g_a_l_blend_state_creation_description.htm">xiiGALBlendStateCreationDescription</a> &amp;description)</td></tr>
 <tr class="memdesc:a91802801bbde1b3c5789aebc174d81ed inherit pub_methods_classxii_g_a_l_device"><td class="mdescLeft">&#160;</td><td class="mdescRight">This creates a new blend state object.  <a href="../../d5/d19/classxii_g_a_l_device.htm#a91802801bbde1b3c5789aebc174d81ed">More...</a><br /></td></tr>
 <tr class="separator:a91802801bbde1b3c5789aebc174d81ed inherit pub_methods_classxii_g_a_l_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -295,26 +305,14 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../.
 const XII_NODISCARD <a class="el" href="../../d6/dd5/structxii_g_a_l_device_creation_description.htm">xiiGALDeviceCreationDescription</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d19/classxii_g_a_l_device.htm#adf9a9118133c528059ed19444bb8cd68">GetDescription</a> () const</td></tr>
 <tr class="memdesc:adf9a9118133c528059ed19444bb8cd68 inherit pub_methods_classxii_g_a_l_device"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the creation description for this device. <br /></td></tr>
 <tr class="separator:adf9a9118133c528059ed19444bb8cd68 inherit pub_methods_classxii_g_a_l_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab05feb0c66e99af4113d1b31b3f40c3d inherit pub_methods_classxii_g_a_l_device"><td class="memItemLeft" align="right" valign="top"><a id="ab05feb0c66e99af4113d1b31b3f40c3d"></a>
-virtual XII_NODISCARD <a class="el" href="../../d1/dd2/classxii_g_a_l_command_queue.htm">xiiGALCommandQueue</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d19/classxii_g_a_l_device.htm#ab05feb0c66e99af4113d1b31b3f40c3d">GetGraphicsQueue</a> () const =0</td></tr>
-<tr class="memdesc:ab05feb0c66e99af4113d1b31b3f40c3d inherit pub_methods_classxii_g_a_l_device"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves a pointer to the graphics queue, this is guaranteed to exist, for a successful device initialization. <br /></td></tr>
-<tr class="separator:ab05feb0c66e99af4113d1b31b3f40c3d inherit pub_methods_classxii_g_a_l_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a57e7ee02273176d8e2d506201ea88bfc inherit pub_methods_classxii_g_a_l_device"><td class="memItemLeft" align="right" valign="top"><a id="a57e7ee02273176d8e2d506201ea88bfc"></a>
-virtual XII_NODISCARD <a class="el" href="../../d1/dd2/classxii_g_a_l_command_queue.htm">xiiGALCommandQueue</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d19/classxii_g_a_l_device.htm#a57e7ee02273176d8e2d506201ea88bfc">GetComputeQueue</a> () const =0</td></tr>
-<tr class="memdesc:a57e7ee02273176d8e2d506201ea88bfc inherit pub_methods_classxii_g_a_l_device"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves a pointer to the compute queue if available, null otherwise. <br /></td></tr>
-<tr class="separator:a57e7ee02273176d8e2d506201ea88bfc inherit pub_methods_classxii_g_a_l_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0ded3116cf57b5d9f04eedec289e8c32 inherit pub_methods_classxii_g_a_l_device"><td class="memItemLeft" align="right" valign="top"><a id="a0ded3116cf57b5d9f04eedec289e8c32"></a>
-virtual XII_NODISCARD <a class="el" href="../../d1/dd2/classxii_g_a_l_command_queue.htm">xiiGALCommandQueue</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d19/classxii_g_a_l_device.htm#a0ded3116cf57b5d9f04eedec289e8c32">GetTransferQueue</a> () const =0</td></tr>
-<tr class="memdesc:a0ded3116cf57b5d9f04eedec289e8c32 inherit pub_methods_classxii_g_a_l_device"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves a pointer to the transfer (copy) queue if available, null otherwise. <br /></td></tr>
-<tr class="separator:a0ded3116cf57b5d9f04eedec289e8c32 inherit pub_methods_classxii_g_a_l_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa8e0dd70cb39ac740959e43c0952c7d5 inherit pub_methods_classxii_g_a_l_device"><td class="memItemLeft" align="right" valign="top"><a id="aa8e0dd70cb39ac740959e43c0952c7d5"></a>
-virtual XII_NODISCARD <a class="el" href="../../d1/dd2/classxii_g_a_l_command_queue.htm">xiiGALCommandQueue</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d19/classxii_g_a_l_device.htm#aa8e0dd70cb39ac740959e43c0952c7d5">GetSparseBindingQueue</a> () const =0</td></tr>
-<tr class="memdesc:aa8e0dd70cb39ac740959e43c0952c7d5 inherit pub_methods_classxii_g_a_l_device"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves a pointer to the sparse binding queue if available, null otherwise. <br /></td></tr>
-<tr class="separator:aa8e0dd70cb39ac740959e43c0952c7d5 inherit pub_methods_classxii_g_a_l_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a363183392c18eab03c6e968f48eac1c2 inherit pub_methods_classxii_g_a_l_device"><td class="memItemLeft" align="right" valign="top"><a id="a363183392c18eab03c6e968f48eac1c2"></a>
 XII_NODISCARD <a class="el" href="../../d5/d07/classxii_g_a_l_swap_chain.htm">xiiGALSwapChain</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d19/classxii_g_a_l_device.htm#a363183392c18eab03c6e968f48eac1c2">GetSwapChain</a> (<a class="el" href="../../de/dc7/classxii_g_a_l_swap_chain_handle.htm">xiiGALSwapChainHandle</a> hSwapChain) const</td></tr>
 <tr class="memdesc:a363183392c18eab03c6e968f48eac1c2 inherit pub_methods_classxii_g_a_l_device"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves a pointer to the swap chain object with the given handle. <br /></td></tr>
 <tr class="separator:a363183392c18eab03c6e968f48eac1c2 inherit pub_methods_classxii_g_a_l_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a515c52ec7e5c5f7c8d3ec6c7f482aac0 inherit pub_methods_classxii_g_a_l_device"><td class="memItemLeft" align="right" valign="top"><a id="a515c52ec7e5c5f7c8d3ec6c7f482aac0"></a>
+XII_NODISCARD <a class="el" href="../../d1/dd2/classxii_g_a_l_command_queue.htm">xiiGALCommandQueue</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d19/classxii_g_a_l_device.htm#a515c52ec7e5c5f7c8d3ec6c7f482aac0">GetCommandQueue</a> (<a class="el" href="../../d3/d96/classxii_g_a_l_command_queue_handle.htm">xiiGALCommandQueueHandle</a> hCommandQueue) const</td></tr>
+<tr class="memdesc:a515c52ec7e5c5f7c8d3ec6c7f482aac0 inherit pub_methods_classxii_g_a_l_device"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves a pointer to the command queue object with the given handle. <br /></td></tr>
+<tr class="separator:a515c52ec7e5c5f7c8d3ec6c7f482aac0 inherit pub_methods_classxii_g_a_l_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abcb017ddfc8d7b1279751d306a86fabf inherit pub_methods_classxii_g_a_l_device"><td class="memItemLeft" align="right" valign="top"><a id="abcb017ddfc8d7b1279751d306a86fabf"></a>
 XII_NODISCARD <a class="el" href="../../d8/dac/classxii_g_a_l_blend_state.htm">xiiGALBlendState</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d19/classxii_g_a_l_device.htm#abcb017ddfc8d7b1279751d306a86fabf">GetBlendState</a> (<a class="el" href="../../d2/d51/classxii_g_a_l_blend_state_handle.htm">xiiGALBlendStateHandle</a> hBlendState) const</td></tr>
 <tr class="memdesc:abcb017ddfc8d7b1279751d306a86fabf inherit pub_methods_classxii_g_a_l_device"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves a pointer to the blend state object with the given handle. <br /></td></tr>
@@ -481,6 +479,9 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:a9564797f52191f1e2a442fa0695e6273"><td class="memItemLeft" align="right" valign="top"><a id="a9564797f52191f1e2a442fa0695e6273"></a>
 virtual <a class="el" href="../../dd/dad/structxii_result.htm">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><b>ShutdownPlatform</b> () override final</td></tr>
 <tr class="separator:a9564797f52191f1e2a442fa0695e6273"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1fef5e1cc9e6df3d6d6658db39c7ee8"><td class="memItemLeft" align="right" valign="top"><a id="ae1fef5e1cc9e6df3d6d6658db39c7ee8"></a>
+virtual <a class="el" href="../../dd/dad/structxii_result.htm">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><b>CreateCommandQueuesPlatform</b> () override final</td></tr>
+<tr class="separator:ae1fef5e1cc9e6df3d6d6658db39c7ee8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4a9af7d33ad12b0410e6269111f70a19"><td class="memItemLeft" align="right" valign="top"><a id="a4a9af7d33ad12b0410e6269111f70a19"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>BeginPipelinePlatform</b> (<a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sName, <a class="el" href="../../d5/d07/classxii_g_a_l_swap_chain.htm">xiiGALSwapChain</a> *pSwapChain) override final</td></tr>
 <tr class="separator:a4a9af7d33ad12b0410e6269111f70a19"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -499,12 +500,12 @@ virtual <a class="el" href="../../d5/d07/classxii_g_a_l_swap_chain.htm">xiiGALSw
 <tr class="memitem:a90d2a3b628b33673ba442ee47b7cc81f"><td class="memItemLeft" align="right" valign="top"><a id="a90d2a3b628b33673ba442ee47b7cc81f"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>DestroySwapChainPlatform</b> (<a class="el" href="../../d5/d07/classxii_g_a_l_swap_chain.htm">xiiGALSwapChain</a> *pSwapChain) override final</td></tr>
 <tr class="separator:a90d2a3b628b33673ba442ee47b7cc81f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa92346a39817c346469dfca808aaeeae"><td class="memItemLeft" align="right" valign="top"><a id="aa92346a39817c346469dfca808aaeeae"></a>
-virtual <a class="el" href="../../dc/d80/classxii_g_a_l_command_list.htm">xiiGALCommandList</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>CreateCommandListPlatform</b> (const <a class="el" href="../../db/db0/structxii_g_a_l_command_list_creation_description.htm">xiiGALCommandListCreationDescription</a> &amp;description) override final</td></tr>
-<tr class="separator:aa92346a39817c346469dfca808aaeeae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a23724b4f1d6cab27a8702cc22605c204"><td class="memItemLeft" align="right" valign="top"><a id="a23724b4f1d6cab27a8702cc22605c204"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>DestroyCommandListPlatform</b> (<a class="el" href="../../dc/d80/classxii_g_a_l_command_list.htm">xiiGALCommandList</a> *pCommandList) override final</td></tr>
-<tr class="separator:a23724b4f1d6cab27a8702cc22605c204"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1671575de42a1f09147d52faf485f482"><td class="memItemLeft" align="right" valign="top"><a id="a1671575de42a1f09147d52faf485f482"></a>
+virtual <a class="el" href="../../d1/dd2/classxii_g_a_l_command_queue.htm">xiiGALCommandQueue</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>CreateCommandQueuePlatform</b> (const <a class="el" href="../../d3/dc4/structxii_g_a_l_command_queue_creation_description.htm">xiiGALCommandQueueCreationDescription</a> &amp;description) override final</td></tr>
+<tr class="separator:a1671575de42a1f09147d52faf485f482"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a6f984f923d2d8653c92287a068ae94"><td class="memItemLeft" align="right" valign="top"><a id="a9a6f984f923d2d8653c92287a068ae94"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>DestroyCommandQueuePlatform</b> (<a class="el" href="../../d1/dd2/classxii_g_a_l_command_queue.htm">xiiGALCommandQueue</a> *pCommandQueue) override final</td></tr>
+<tr class="separator:a9a6f984f923d2d8653c92287a068ae94"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1acdbb92e44e944d1d1c9501972e3a91"><td class="memItemLeft" align="right" valign="top"><a id="a1acdbb92e44e944d1d1c9501972e3a91"></a>
 virtual <a class="el" href="../../d8/dac/classxii_g_a_l_blend_state.htm">xiiGALBlendState</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>CreateBlendStatePlatform</b> (const <a class="el" href="../../d6/dd7/structxii_g_a_l_blend_state_creation_description.htm">xiiGALBlendStateCreationDescription</a> &amp;description) override final</td></tr>
 <tr class="separator:a1acdbb92e44e944d1d1c9501972e3a91"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -617,11 +618,6 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>DestroyPipeli
 <tr class="separator:abf8da5d65528ef6829c8ffdb397c7b5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa8f086885da6b83ee0b27b99830b6017"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d77/classxii_g_a_l_device_d3_d12.htm#aa8f086885da6b83ee0b27b99830b6017">FillCapabilitiesPlatform</a> () override final</td></tr>
 <tr class="separator:aa8f086885da6b83ee0b27b99830b6017"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8d00abb1ed0a8b7e17dcb6f09c13f398"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d77/classxii_g_a_l_device_d3_d12.htm#a8d00abb1ed0a8b7e17dcb6f09c13f398">CreateCommandQueues</a> ()</td></tr>
-<tr class="separator:a8d00abb1ed0a8b7e17dcb6f09c13f398"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac8e587b06dfdf7ff21df0790b572efe7"><td class="memItemLeft" align="right" valign="top"><a id="ac8e587b06dfdf7ff21df0790b572efe7"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>FillFormatLookupTable</b> ()</td></tr>
-<tr class="separator:ac8e587b06dfdf7ff21df0790b572efe7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_classxii_g_a_l_device"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classxii_g_a_l_device')"><img src="../../closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="../../d5/d19/classxii_g_a_l_device.htm">xiiGALDevice</a></td></tr>
 <tr class="memitem:a244bcc92bd7524107d112c658e0beb15 inherit pro_methods_classxii_g_a_l_device"><td class="memItemLeft" align="right" valign="top"><a id="a244bcc92bd7524107d112c658e0beb15"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>xiiGALDevice</b> (const <a class="el" href="../../d6/dd5/structxii_g_a_l_device_creation_description.htm">xiiGALDeviceCreationDescription</a> &amp;creationDescription)</td></tr>
@@ -683,15 +679,18 @@ static XII_NODISCARD bool&#160;</td><td class="memItemRight" valign="bottom"><a 
 <tr class="memitem:ac03a1d9fba3babf7db68227be61737e6 inherit pub_static_methods_classxii_no_base"><td class="memItemLeft" align="right" valign="top"><a id="ac03a1d9fba3babf7db68227be61737e6"></a>
 static const <a class="el" href="../../db/d89/classxii_r_t_t_i.htm">xiiRTTI</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetStaticRTTI</b> ()</td></tr>
 <tr class="separator:ac03a1d9fba3babf7db68227be61737e6 inherit pub_static_methods_classxii_no_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_attribs_classxii_g_a_l_device"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_classxii_g_a_l_device')"><img src="../../closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="../../d5/d19/classxii_g_a_l_device.htm">xiiGALDevice</a></td></tr>
-<tr class="memitem:acd044fd51830264d0283493008d98440 inherit pub_attribs_classxii_g_a_l_device"><td class="memItemLeft" align="right" valign="top"><a id="acd044fd51830264d0283493008d98440"></a>
-<a class="el" href="../../dc/d22/classxii_event.htm">xiiEvent</a>&lt; const <a class="el" href="../../df/d20/structxii_g_a_l_device_event.htm">xiiGALDeviceEvent</a> &amp; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d19/classxii_g_a_l_device.htm#acd044fd51830264d0283493008d98440">m_Events</a></td></tr>
-<tr class="memdesc:acd044fd51830264d0283493008d98440 inherit pub_attribs_classxii_g_a_l_device"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers event handlers. <br /></td></tr>
-<tr class="separator:acd044fd51830264d0283493008d98440 inherit pub_attribs_classxii_g_a_l_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_static_attribs_classxii_g_a_l_device"><td colspan="2" onclick="javascript:toggleInherit('pub_static_attribs_classxii_g_a_l_device')"><img src="../../closed.png" alt="-"/>&#160;Static Public Attributes inherited from <a class="el" href="../../d5/d19/classxii_g_a_l_device.htm">xiiGALDevice</a></td></tr>
+<tr class="memitem:ae0c133ea8dccfbd3c4c0d71d5bb8a454 inherit pub_static_attribs_classxii_g_a_l_device"><td class="memItemLeft" align="right" valign="top"><a id="ae0c133ea8dccfbd3c4c0d71d5bb8a454"></a>
+static <a class="el" href="../../dc/d22/classxii_event.htm">xiiEvent</a>&lt; const <a class="el" href="../../df/d20/structxii_g_a_l_device_event.htm">xiiGALDeviceEvent</a> &amp; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d19/classxii_g_a_l_device.htm#ae0c133ea8dccfbd3c4c0d71d5bb8a454">s_Events</a></td></tr>
+<tr class="memdesc:ae0c133ea8dccfbd3c4c0d71d5bb8a454 inherit pub_static_attribs_classxii_g_a_l_device"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers event handlers. <br /></td></tr>
+<tr class="separator:ae0c133ea8dccfbd3c4c0d71d5bb8a454 inherit pub_static_attribs_classxii_g_a_l_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_types_classxii_g_a_l_device"><td colspan="2" onclick="javascript:toggleInherit('pro_types_classxii_g_a_l_device')"><img src="../../closed.png" alt="-"/>&#160;Protected Types inherited from <a class="el" href="../../d5/d19/classxii_g_a_l_device.htm">xiiGALDevice</a></td></tr>
 <tr class="memitem:a592fc69e03f22c25f6beb7718754179f inherit pro_types_classxii_g_a_l_device"><td class="memItemLeft" align="right" valign="top"><a id="a592fc69e03f22c25f6beb7718754179f"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>SwapChainTable</b> = <a class="el" href="../../d1/d8e/classxii_id_table.htm">xiiIdTable</a>&lt; xiiGALSwapChainHandle::IdType, <a class="el" href="../../d5/d07/classxii_g_a_l_swap_chain.htm">xiiGALSwapChain</a> *, <a class="el" href="../../d9/d0d/structxii_local_allocator_wrapper.htm">xiiLocalAllocatorWrapper</a> &gt;</td></tr>
 <tr class="separator:a592fc69e03f22c25f6beb7718754179f inherit pro_types_classxii_g_a_l_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59125c8226fe40c285c7a7becfc8c254 inherit pro_types_classxii_g_a_l_device"><td class="memItemLeft" align="right" valign="top"><a id="a59125c8226fe40c285c7a7becfc8c254"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>CommandQueueTable</b> = <a class="el" href="../../d1/d8e/classxii_id_table.htm">xiiIdTable</a>&lt; xiiGALCommandQueueHandle::IdType, <a class="el" href="../../d1/dd2/classxii_g_a_l_command_queue.htm">xiiGALCommandQueue</a> *, <a class="el" href="../../d9/d0d/structxii_local_allocator_wrapper.htm">xiiLocalAllocatorWrapper</a> &gt;</td></tr>
+<tr class="separator:a59125c8226fe40c285c7a7becfc8c254 inherit pro_types_classxii_g_a_l_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a679c59d5c1038117f8c221b4da77f8a7 inherit pro_types_classxii_g_a_l_device"><td class="memItemLeft" align="right" valign="top"><a id="a679c59d5c1038117f8c221b4da77f8a7"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>BlendStateTable</b> = <a class="el" href="../../d1/d8e/classxii_id_table.htm">xiiIdTable</a>&lt; xiiGALBlendStateHandle::IdType, <a class="el" href="../../d8/dac/classxii_g_a_l_blend_state.htm">xiiGALBlendState</a> *, <a class="el" href="../../d9/d0d/structxii_local_allocator_wrapper.htm">xiiLocalAllocatorWrapper</a> &gt;</td></tr>
 <tr class="separator:a679c59d5c1038117f8c221b4da77f8a7 inherit pro_types_classxii_g_a_l_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -762,6 +761,9 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>PipelineResourceSign
 <tr class="memitem:a5adb9669fc7e2a1ed4cc01137b474786 inherit pro_attribs_classxii_g_a_l_device"><td class="memItemLeft" align="right" valign="top"><a id="a5adb9669fc7e2a1ed4cc01137b474786"></a>
 <a class="el" href="../../d1/d8e/classxii_id_table.htm">SwapChainTable</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_SwapChains</b></td></tr>
 <tr class="separator:a5adb9669fc7e2a1ed4cc01137b474786 inherit pro_attribs_classxii_g_a_l_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f4df88f71e7fc2aad40711a27660464 inherit pro_attribs_classxii_g_a_l_device"><td class="memItemLeft" align="right" valign="top"><a id="a9f4df88f71e7fc2aad40711a27660464"></a>
+<a class="el" href="../../d1/d8e/classxii_id_table.htm">CommandQueueTable</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_CommandQueues</b></td></tr>
+<tr class="separator:a9f4df88f71e7fc2aad40711a27660464 inherit pro_attribs_classxii_g_a_l_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae3113e32debd811c812ed54ebce7d9cf inherit pro_attribs_classxii_g_a_l_device"><td class="memItemLeft" align="right" valign="top"><a id="ae3113e32debd811c812ed54ebce7d9cf"></a>
 <a class="el" href="../../d1/d8e/classxii_id_table.htm">BlendStateTable</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_BlendStates</b></td></tr>
 <tr class="separator:ae3113e32debd811c812ed54ebce7d9cf inherit pro_attribs_classxii_g_a_l_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -845,32 +847,6 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>PipelineResourceSign
 <tr class="separator:a3167cc9d01d6202f5a031b31c94ba3f5 inherit pro_attribs_classxii_g_a_l_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a8d00abb1ed0a8b7e17dcb6f09c13f398"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8d00abb1ed0a8b7e17dcb6f09c13f398">&#9670;&nbsp;</a></span>CreateCommandQueues()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void xiiGALDeviceD3D12::CreateCommandQueues </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.htm#_todo000099">Todo:</a></b></dt><dd>Create command queues. </dd></dl>
-
-</div>
-</div>
 <a id="aa8f086885da6b83ee0b27b99830b6017"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa8f086885da6b83ee0b27b99830b6017">&#9670;&nbsp;</a></span>FillCapabilitiesPlatform()</h2>
 
@@ -893,7 +869,44 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>PipelineResourceSign
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.htm#_todo000098">Todo:</a></b></dt><dd>GraphicsD3D12: Assert that structure sizes has not been modified. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.htm#_todo000099">Todo:</a></b></dt><dd>GraphicsD3D12: Assert that structure sizes has not been modified. </dd></dl>
+
+</div>
+</div>
+<a id="ae6a0ed3edf8cdb1bc112fc9ad6eee552"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6a0ed3edf8cdb1bc112fc9ad6eee552">&#9670;&nbsp;</a></span>GetDefaultCommandQueue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/dd2/classxii_g_a_l_command_queue.htm">xiiGALCommandQueue</a> * xiiGALDeviceD3D12::GetDefaultCommandQueue </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d7/d55/structxii_bitflags.htm">xiiBitflags</a>&lt; <a class="el" href="../../d7/db4/structxii_g_a_l_command_queue_type.htm">xiiGALCommandQueueType</a> &gt;&#160;</td>
+          <td class="paramname"><em>queueType</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">final</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Retrieves a pointer to the compute queue if available, null otherwise. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">queueType</td><td>- The queue type that has the required feature.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>The default graphics queue is guaranteed to exist, for a successful device initialization. </dd></dl>
+
+<p>Implements <a class="el" href="../../d5/d19/classxii_g_a_l_device.htm#a85b6fb82eb16234c55b57943f8ab6d13">xiiGALDevice</a>.</p>
 
 </div>
 </div>
@@ -919,7 +932,7 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>PipelineResourceSign
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.htm#_todo000095">Todo:</a></b></dt><dd>GraphicsD3D12: Select best adapter ID by default, based on memory size, number of command queues, and prefer Discrete over Integrated over Software adapters. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.htm#_todo000096">Todo:</a></b></dt><dd>GraphicsD3D12: Select best adapter ID by default, based on memory size, number of command queues, and prefer Discrete over Integrated over Software adapters. </dd></dl>
 
 </div>
 </div>
@@ -945,8 +958,8 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>PipelineResourceSign
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.htm#_todo000096">Todo:</a></b></dt><dd>Idle all command queues. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.htm#_todo000097">Todo:</a></b></dt><dd>Release stale resources. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.htm#_todo000097">Todo:</a></b></dt><dd>Idle all command queues. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.htm#_todo000098">Todo:</a></b></dt><dd>Release stale resources. </dd></dl>
 
 </div>
 </div>
@@ -961,7 +974,7 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>PipelineResourceSign
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d8/d77/classxii_g_a_l_device_d3_d12.htm">xiiGALDeviceD3D12</a></li>
-    <li class="footer">Generated on Tue Apr 30 2024 17:34:37 for XIIEngine by
+    <li class="footer">Generated on Thu May 16 2024 17:17:32 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

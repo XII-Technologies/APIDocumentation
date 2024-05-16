@@ -11,6 +11,5 @@ var classxii_g_a_l_shader_resource_variable_d3_d12 =
     [ "SetBufferOffset", "d6/d4b/classxii_g_a_l_shader_resource_variable_d3_d12.htm#a51a9d60ecaf65339357d7125d9ba69fc", null ],
     [ "SetBufferRange", "d6/d4b/classxii_g_a_l_shader_resource_variable_d3_d12.htm#ae9feb292ca33702c9524467c5b9fcaa4", null ],
     [ "xiiGALDeviceD3D12", "d6/d4b/classxii_g_a_l_shader_resource_variable_d3_d12.htm#a9b3da82b84b68e0128d059e18e11b67d", null ],
-    [ "xiiMemoryUtils", "d6/d4b/classxii_g_a_l_shader_resource_variable_d3_d12.htm#aefc9ff75d6833fd2f05be48e16436db6", null ],
-    [ "m_pShaderResourceVariable", "d6/d4b/classxii_g_a_l_shader_resource_variable_d3_d12.htm#a25e12eb74d79a575e8d0e947aa4bf35f", null ]
+    [ "xiiMemoryUtils", "d6/d4b/classxii_g_a_l_shader_resource_variable_d3_d12.htm#aefc9ff75d6833fd2f05be48e16436db6", null ]
 ];

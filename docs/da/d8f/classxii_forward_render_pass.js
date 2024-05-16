@@ -9,7 +9,7 @@ var classxii_forward_render_pass =
     [ "Serialize", "da/d8f/classxii_forward_render_pass.htm#a1a4fc5154b8d7eb93ecc743040268143", null ],
     [ "SetupLighting", "da/d8f/classxii_forward_render_pass.htm#ac6c5faed84207ea4cc67269890cc0282", null ],
     [ "SetupPermutationVars", "da/d8f/classxii_forward_render_pass.htm#a274c0f9e9b330e9de77ff6e15c2a4ed1", null ],
-    [ "SetupResources", "da/d8f/classxii_forward_render_pass.htm#a9388cf7116d73235cd108d134daa72a5", null ],
+    [ "SetupResources", "da/d8f/classxii_forward_render_pass.htm#ac37d2c00452e161dfe3b0a98fdcbb6ef", null ],
     [ "m_PinColor", "da/d8f/classxii_forward_render_pass.htm#ac969050762066f51f2a02dbf74c45ac5", null ],
     [ "m_PinDepthStencil", "da/d8f/classxii_forward_render_pass.htm#a592b6caf0fb5bd54a7cbb488ededec5e", null ],
     [ "m_ShadingQuality", "da/d8f/classxii_forward_render_pass.htm#a45ce7b14bedd18b79e2d2d393a925a10", null ]

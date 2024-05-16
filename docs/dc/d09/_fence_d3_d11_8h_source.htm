@@ -106,62 +106,46 @@ $(document).ready(function(){initNavTree('dc/d09/_fence_d3_d11_8h_source.htm','.
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="../../d6/d79/classxii_g_a_l_fence.htm#a4eaf4f634511f54ffa675f1a3ef85c6a">Wait</a>(xiiUInt64 uiValue) <span class="keyword">override</span> <span class="keyword">final</span>;</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  <span class="keywordtype">void</span> AddPendingQuery(ID3D11DeviceContext* pContext, ID3D11Query* pQuery, xiiUInt64 uiValue);</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  ID3D11Fence* GetD3D11Fence() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="../../d6/d79/classxii_g_a_l_fence.htm#a4eaf4f634511f54ffa675f1a3ef85c6a">Wait</a>(xiiUInt64 uiValue, <span class="keywordtype">bool</span> bFlushCommands);</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="../../d2/d11/classxii_g_a_l_device_d3_d11.htm">xiiGALDeviceD3D11</a>;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="../../d8/d9d/classxii_memory_utils.htm">xiiMemoryUtils</a>;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="../../d2/d11/classxii_g_a_l_device_d3_d11.htm">xiiGALDeviceD3D11</a>;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="../../d8/d9d/classxii_memory_utils.htm">xiiMemoryUtils</a>;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  <a class="code" href="../../d5/d78/classxii_g_a_l_fence_d3_d11.htm">xiiGALFenceD3D11</a>(<a class="code" href="../../d2/d11/classxii_g_a_l_device_d3_d11.htm">xiiGALDeviceD3D11</a>* pDeviceD3D11, <span class="keyword">const</span> <a class="code" href="../../dd/d6c/structxii_g_a_l_fence_creation_description.htm">xiiGALFenceCreationDescription</a>&amp; creationDescription);</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  <a class="code" href="../../d5/d78/classxii_g_a_l_fence_d3_d11.htm">xiiGALFenceD3D11</a>(<a class="code" href="../../d2/d11/classxii_g_a_l_device_d3_d11.htm">xiiGALDeviceD3D11</a>* pDeviceD3D11, <span class="keyword">const</span> <a class="code" href="../../dd/d6c/structxii_g_a_l_fence_creation_description.htm">xiiGALFenceCreationDescription</a>&amp; creationDescription);</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  <span class="keyword">virtual</span> ~<a class="code" href="../../d5/d78/classxii_g_a_l_fence_d3_d11.htm">xiiGALFenceD3D11</a>();</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  <span class="keyword">virtual</span> ~<a class="code" href="../../d5/d78/classxii_g_a_l_fence_d3_d11.htm">xiiGALFenceD3D11</a>();</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  <span class="keyword">virtual</span> <a class="code" href="../../dd/dad/structxii_result.htm">xiiResult</a> InitPlatform() <span class="keyword">override</span> <span class="keyword">final</span>;</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  <span class="keyword">virtual</span> <a class="code" href="../../dd/dad/structxii_result.htm">xiiResult</a> InitPlatform() <span class="keyword">override</span> <span class="keyword">final</span>;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  <span class="keyword">virtual</span> <a class="code" href="../../dd/dad/structxii_result.htm">xiiResult</a> DeInitPlatform() <span class="keyword">override</span> <span class="keyword">final</span>;</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  <span class="keyword">virtual</span> <a class="code" href="../../dd/dad/structxii_result.htm">xiiResult</a> DeInitPlatform() <span class="keyword">override</span> <span class="keyword">final</span>;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> SetDebugNamePlatform(<a class="code" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sName) <span class="keyword">override</span> <span class="keyword">final</span>;</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> SetDebugNamePlatform(<a class="code" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sName) <span class="keyword">override</span> <span class="keyword">final</span>;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="../../d0/def/structxii_g_a_l_fence_d3_d11_1_1_pending_fence_data.htm">   39</a></span>&#160;  <span class="keyword">struct </span><a class="code" href="../../d0/def/structxii_g_a_l_fence_d3_d11_1_1_pending_fence_data.htm">PendingFenceData</a></div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  {</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <a class="code" href="../../d0/def/structxii_g_a_l_fence_d3_d11_1_1_pending_fence_data.htm">PendingFenceData</a>(ID3D11DeviceContext* pContext, ID3D11Query* pQuery, xiiUInt64 uiValue) :</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;      m_pContextD3D11(pContext), m_pQueryD3D11(pQuery), m_uiValue(uiValue)</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    {</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    }</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    ID3D11DeviceContext* m_pContextD3D11 = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    ID3D11Query*         m_pQueryD3D11   = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keyword">const</span> xiiUInt64      m_uiValue;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  };</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <a class="code" href="../../d8/df8/classxii_deque.htm">xiiDeque&lt;PendingFenceData&gt;</a> m_PendingQueries;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  xiiUInt32 m_uiMaxPendingQueries = 0;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;};</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="preprocessor">#include &lt;GraphicsD3D11/Resources/Implementation/FenceD3D11_inl.h&gt;</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  ID3D11Fence* m_pD3D11Fence = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <span class="keyword">const</span> HANDLE m_pFenceCompleteEvent;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;};</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">#include &lt;GraphicsD3D11/Resources/Implementation/FenceD3D11_inl.h&gt;</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="astructxii_g_a_l_fence_creation_description_htm"><div class="ttname"><a href="../../dd/d6c/structxii_g_a_l_fence_creation_description.htm">xiiGALFenceCreationDescription</a></div><div class="ttdoc">This describes the fence creation description.</div><div class="ttdef"><b>Definition:</b> Fence.h:26</div></div>
 <div class="ttc" id="aclassxii_g_a_l_fence_d3_d11_htm"><div class="ttname"><a href="../../d5/d78/classxii_g_a_l_fence_d3_d11.htm">xiiGALFenceD3D11</a></div><div class="ttdef"><b>Definition:</b> FenceD3D11.h:9</div></div>
-<div class="ttc" id="aclassxii_g_a_l_device_d3_d11_htm"><div class="ttname"><a href="../../d2/d11/classxii_g_a_l_device_d3_d11.htm">xiiGALDeviceD3D11</a></div><div class="ttdef"><b>Definition:</b> DeviceD3D11.h:29</div></div>
+<div class="ttc" id="aclassxii_g_a_l_device_d3_d11_htm"><div class="ttname"><a href="../../d2/d11/classxii_g_a_l_device_d3_d11.htm">xiiGALDeviceD3D11</a></div><div class="ttdef"><b>Definition:</b> DeviceD3D11.h:24</div></div>
 <div class="ttc" id="aclassxii_g_a_l_fence_htm"><div class="ttname"><a href="../../d6/d79/classxii_g_a_l_fence.htm">xiiGALFence</a></div><div class="ttdoc">Interface that defines methods to manipulate a fence object.</div><div class="ttdef"><b>Definition:</b> Fence.h:39</div></div>
-<div class="ttc" id="astructxii_g_a_l_fence_d3_d11_1_1_pending_fence_data_htm"><div class="ttname"><a href="../../d0/def/structxii_g_a_l_fence_d3_d11_1_1_pending_fence_data.htm">xiiGALFenceD3D11::PendingFenceData</a></div><div class="ttdef"><b>Definition:</b> FenceD3D11.h:39</div></div>
 <div class="ttc" id="astructxii_string_view_htm"><div class="ttname"><a href="../../da/d9d/structxii_string_view.htm">xiiStringView</a></div><div class="ttdoc">xiiStringView represent a read-only sub-string of a larger string, as it can store a dedicated string...</div><div class="ttdef"><b>Definition:</b> StringView.h:23</div></div>
 <div class="ttc" id="aclassxii_g_a_l_fence_htm_ad8678bfd477e7cb583f20aac304b9bc6"><div class="ttname"><a href="../../d6/d79/classxii_g_a_l_fence.htm#ad8678bfd477e7cb583f20aac304b9bc6">xiiGALFence::Signal</a></div><div class="ttdeci">virtual void Signal(xiiUInt64 uiValue)=0</div><div class="ttdoc">This sets the fence to the specified value.</div></div>
 <div class="ttc" id="aclassxii_memory_utils_htm"><div class="ttname"><a href="../../d8/d9d/classxii_memory_utils.htm">xiiMemoryUtils</a></div><div class="ttdoc">This class provides functions to work on raw memory.</div><div class="ttdef"><b>Definition:</b> MemoryUtils.h:25</div></div>
 <div class="ttc" id="aclassxii_g_a_l_fence_htm_a4eaf4f634511f54ffa675f1a3ef85c6a"><div class="ttname"><a href="../../d6/d79/classxii_g_a_l_fence.htm#a4eaf4f634511f54ffa675f1a3ef85c6a">xiiGALFence::Wait</a></div><div class="ttdeci">virtual void Wait(xiiUInt64 uiValue)=0</div><div class="ttdoc">This waits until the fence reaches or exceeds the specified value on the host.</div></div>
-<div class="ttc" id="aclassxii_deque_htm"><div class="ttname"><a href="../../d8/df8/classxii_deque.htm">xiiDeque</a></div><div class="ttdef"><b>Definition:</b> Deque.h:266</div></div>
 <div class="ttc" id="astructxii_result_htm"><div class="ttname"><a href="../../dd/dad/structxii_result.htm">xiiResult</a></div><div class="ttdoc">Default enum for returning failure or success, instead of using a bool.</div><div class="ttdef"><b>Definition:</b> Types.h:55</div></div>
 <div class="ttc" id="aclassxii_g_a_l_fence_htm_a9ce96133818a9431bf23000fc6e67199"><div class="ttname"><a href="../../d6/d79/classxii_g_a_l_fence.htm#a9ce96133818a9431bf23000fc6e67199">xiiGALFence::GetCompletedValue</a></div><div class="ttdeci">virtual XII_NODISCARD xiiUInt64 GetCompletedValue()=0</div><div class="ttdoc">This returns the last completed value signaled by the GPU.</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.htm">home</a></li><li class="navelem"><a class="el" href="../../dir_1036706e55c22cab35bc1c58ee689f1d.htm">runner</a></li><li class="navelem"><a class="el" href="../../dir_629f8151d55d307162ff2d619fb1783d.htm">work</a></li><li class="navelem"><a class="el" href="../../dir_1ddc44fe1263a8c7935fa6130b7d9499.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_2c1b6808f12952f4c36e05ba7068379a.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_b5a1c4ecfca018ad24b729e213296d41.htm">Source</a></li><li class="navelem"><a class="el" href="../../dir_e321052006a51284e67389ab20037e7c.htm">Engine</a></li><li class="navelem"><a class="el" href="../../dir_1fecef1a621638f058ccc7afa2af7cec.htm">GraphicsD3D11</a></li><li class="navelem"><a class="el" href="../../dir_abc1a4c06db8083c03cac69976ce47bb.htm">Resources</a></li><li class="navelem"><b>FenceD3D11.h</b></li>
-    <li class="footer">Generated on Tue Apr 30 2024 17:34:34 for XIIEngine by
+    <li class="footer">Generated on Thu May 16 2024 17:17:29 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

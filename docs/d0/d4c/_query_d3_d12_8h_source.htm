@@ -95,30 +95,29 @@ $(document).ready(function(){initNavTree('d0/d4c/_query_d3_d12_8h_source.htm','.
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
 <div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="../../d7/dc2/classxii_g_a_l_query_d3_d12.htm">    7</a></span>&#160;<span class="keyword">class </span>XII_GRAPHICSD3D12_DLL <a class="code" href="../../d7/dc2/classxii_g_a_l_query_d3_d12.htm">xiiGALQueryD3D12</a> final : <span class="keyword">public</span> <a class="code" href="../../d8/db3/classxii_g_a_l_query.htm">xiiGALQuery</a></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;{</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="../../d8/db3/classxii_g_a_l_query.htm#a891349546e2c54dfb62eb657eef43c88">GetData</a>(<span class="keywordtype">void</span>* pData, xiiUInt32 uiDataSize, <span class="keywordtype">bool</span> bAutoInvalidate = <span class="keyword">true</span>) <span class="keyword">override</span> <span class="keyword">final</span>;</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="../../d8/db3/classxii_g_a_l_query.htm#a847f225d9a2358d570dae2b9b6262faf">Invalidate</a>() <span class="keyword">override</span> <span class="keyword">final</span>;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;  XII_ADD_DYNAMIC_REFLECTION(<a class="code" href="../../d7/dc2/classxii_g_a_l_query_d3_d12.htm">xiiGALQueryD3D12</a>, <a class="code" href="../../d8/db3/classxii_g_a_l_query.htm">xiiGALQuery</a>);</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="../../d8/db3/classxii_g_a_l_query.htm#a891349546e2c54dfb62eb657eef43c88">GetData</a>(<span class="keywordtype">void</span>* pData, xiiUInt32 uiDataSize, <span class="keywordtype">bool</span> bAutoInvalidate = <span class="keyword">true</span>) <span class="keyword">override</span> <span class="keyword">final</span>;</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;  Diligent::IQuery* GetQuery() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="../../d8/db3/classxii_g_a_l_query.htm#a847f225d9a2358d570dae2b9b6262faf">Invalidate</a>() <span class="keyword">override</span> <span class="keyword">final</span>;</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">protected</span>:</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;  <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="../../d8/d77/classxii_g_a_l_device_d3_d12.htm">xiiGALDeviceD3D12</a>;</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;  <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="../../d8/d9d/classxii_memory_utils.htm">xiiMemoryUtils</a>;</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  <a class="code" href="../../d7/dc2/classxii_g_a_l_query_d3_d12.htm">xiiGALQueryD3D12</a>(<span class="keyword">const</span> <a class="code" href="../../d3/d4e/structxii_g_a_l_query_creation_description.htm">xiiGALQueryCreationDescription</a>&amp; creationDescription);</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  <a class="code" href="../../d7/dc2/classxii_g_a_l_query_d3_d12.htm">xiiGALQueryD3D12</a>(<a class="code" href="../../d8/d77/classxii_g_a_l_device_d3_d12.htm">xiiGALDeviceD3D12</a>* pDeviceD3D12, <span class="keyword">const</span> <a class="code" href="../../d3/d4e/structxii_g_a_l_query_creation_description.htm">xiiGALQueryCreationDescription</a>&amp; creationDescription);</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  <span class="keyword">virtual</span> ~<a class="code" href="../../d7/dc2/classxii_g_a_l_query_d3_d12.htm">xiiGALQueryD3D12</a>();</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  <span class="keyword">virtual</span> <a class="code" href="../../dd/dad/structxii_result.htm">xiiResult</a> InitPlatform(<a class="code" href="../../d5/d19/classxii_g_a_l_device.htm">xiiGALDevice</a>* pDevice) <span class="keyword">override</span> <span class="keyword">final</span>;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  <span class="keyword">virtual</span> <a class="code" href="../../dd/dad/structxii_result.htm">xiiResult</a> InitPlatform() <span class="keyword">override</span> <span class="keyword">final</span>;</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  <span class="keyword">virtual</span> <a class="code" href="../../dd/dad/structxii_result.htm">xiiResult</a> DeInitPlatform(<a class="code" href="../../d5/d19/classxii_g_a_l_device.htm">xiiGALDevice</a>* pDevice) <span class="keyword">override</span> <span class="keyword">final</span>;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  <span class="keyword">virtual</span> <a class="code" href="../../dd/dad/structxii_result.htm">xiiResult</a> DeInitPlatform() <span class="keyword">override</span> <span class="keyword">final</span>;</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  Diligent::IQuery* m_pQuery = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;};</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &lt;GraphicsD3D12/Resources/Implementation/QueryD3D12_inl.h&gt;</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;};</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &lt;GraphicsD3D12/Resources/Implementation/QueryD3D12_inl.h&gt;</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclassxii_g_a_l_query_d3_d12_htm"><div class="ttname"><a href="../../d7/dc2/classxii_g_a_l_query_d3_d12.htm">xiiGALQueryD3D12</a></div><div class="ttdef"><b>Definition:</b> QueryD3D12.h:7</div></div>
@@ -128,13 +127,12 @@ $(document).ready(function(){initNavTree('d0/d4c/_query_d3_d12_8h_source.htm','.
 <div class="ttc" id="astructxii_g_a_l_query_creation_description_htm"><div class="ttname"><a href="../../d3/d4e/structxii_g_a_l_query_creation_description.htm">xiiGALQueryCreationDescription</a></div><div class="ttdoc">This describes the query creation description.</div><div class="ttdef"><b>Definition:</b> Query.h:66</div></div>
 <div class="ttc" id="astructxii_result_htm"><div class="ttname"><a href="../../dd/dad/structxii_result.htm">xiiResult</a></div><div class="ttdoc">Default enum for returning failure or success, instead of using a bool.</div><div class="ttdef"><b>Definition:</b> Types.h:55</div></div>
 <div class="ttc" id="aclassxii_g_a_l_query_htm"><div class="ttname"><a href="../../d8/db3/classxii_g_a_l_query.htm">xiiGALQuery</a></div><div class="ttdoc">Interface that defines methods to manipulate a query object.</div><div class="ttdef"><b>Definition:</b> Query.h:75</div></div>
-<div class="ttc" id="aclassxii_g_a_l_device_d3_d12_htm"><div class="ttname"><a href="../../d8/d77/classxii_g_a_l_device_d3_d12.htm">xiiGALDeviceD3D12</a></div><div class="ttdef"><b>Definition:</b> DeviceD3D12.h:21</div></div>
-<div class="ttc" id="aclassxii_g_a_l_device_htm"><div class="ttname"><a href="../../d5/d19/classxii_g_a_l_device.htm">xiiGALDevice</a></div><div class="ttdoc">The xiiRenderDevice class is the primary interface for interactions with rendering APIs....</div><div class="ttdef"><b>Definition:</b> Device.h:24</div></div>
+<div class="ttc" id="aclassxii_g_a_l_device_d3_d12_htm"><div class="ttname"><a href="../../d8/d77/classxii_g_a_l_device_d3_d12.htm">xiiGALDeviceD3D12</a></div><div class="ttdef"><b>Definition:</b> DeviceD3D12.h:20</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.htm">home</a></li><li class="navelem"><a class="el" href="../../dir_1036706e55c22cab35bc1c58ee689f1d.htm">runner</a></li><li class="navelem"><a class="el" href="../../dir_629f8151d55d307162ff2d619fb1783d.htm">work</a></li><li class="navelem"><a class="el" href="../../dir_1ddc44fe1263a8c7935fa6130b7d9499.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_2c1b6808f12952f4c36e05ba7068379a.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_b5a1c4ecfca018ad24b729e213296d41.htm">Source</a></li><li class="navelem"><a class="el" href="../../dir_e321052006a51284e67389ab20037e7c.htm">Engine</a></li><li class="navelem"><a class="el" href="../../dir_68524623ec22db3a46657ed65685622a.htm">GraphicsD3D12</a></li><li class="navelem"><a class="el" href="../../dir_4de30b6a0a9d8f0cf5d56d79f7bbc058.htm">Resources</a></li><li class="navelem"><b>QueryD3D12.h</b></li>
-    <li class="footer">Generated on Tue Apr 30 2024 17:34:34 for XIIEngine by
+    <li class="footer">Generated on Thu May 16 2024 17:17:29 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

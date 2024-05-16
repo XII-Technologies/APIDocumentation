@@ -33,9 +33,11 @@ var classxii_expression_a_s_t =
     [ "PrintGraph", "d4/d5b/classxii_expression_a_s_t.htm#ad4608e69007b57925290356951e10943", null ],
     [ "ReplaceUnsupportedInstructions", "d4/d5b/classxii_expression_a_s_t.htm#aedc661b86f835059bceea9bd69b31b9d", null ],
     [ "ReplaceVectorInstructions", "d4/d5b/classxii_expression_a_s_t.htm#a46659475f94dde09fef0e5977a396132", null ],
+    [ "ScalarizeInputs", "d4/d5b/classxii_expression_a_s_t.htm#a2aed6ba5b084bbc96ca5dd1af889434f", null ],
     [ "ScalarizeOutputs", "d4/d5b/classxii_expression_a_s_t.htm#a61cd0c3322ce50c7c48602383061ff2b", null ],
     [ "ScalarizeVectorInstructions", "d4/d5b/classxii_expression_a_s_t.htm#a4f8445d8d00db8de26d145179bf25d34", null ],
     [ "TypeDeductionAndConversion", "d4/d5b/classxii_expression_a_s_t.htm#a5b70fe4d1f152c92278ac786507984e8", null ],
     [ "Validate", "d4/d5b/classxii_expression_a_s_t.htm#a9a3a370362837bedc4ae2ff27cb3d5f9", null ],
-    [ "m_OutputNodes", "d4/d5b/classxii_expression_a_s_t.htm#a5f1890d5581eb47fc9d9b085a2b5e37c", null ]
+    [ "m_InputNodes", "d4/d5b/classxii_expression_a_s_t.htm#ac6ac883ccebbffdaaffeb8d3ca1455ce", null ],
+    [ "m_OutputNodes", "d4/d5b/classxii_expression_a_s_t.htm#ab9f19777c89a83a5e10d23edb6d355bb", null ]
 ];

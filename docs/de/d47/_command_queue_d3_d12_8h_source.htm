@@ -91,51 +91,70 @@ $(document).ready(function(){initNavTree('de/d47/_command_queue_d3_d12_8h_source
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;GraphicsD3D12/GraphicsD3D12DLL.h&gt;</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;GraphicsFoundation/CommandEncoder/CommandQueue.h&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;Foundation/Types/UniquePtr.h&gt;</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
-<div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="../../d2/d37/classxii_g_a_l_command_queue_d3_d12.htm">    7</a></span>&#160;<span class="keyword">class </span>XII_GRAPHICSD3D12_DLL <a class="code" href="../../d2/d37/classxii_g_a_l_command_queue_d3_d12.htm">xiiGALCommandQueueD3D12</a> final : <span class="keyword">public</span> <a class="code" href="../../d1/dd2/classxii_g_a_l_command_queue.htm">xiiGALCommandQueue</a></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;{</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;  <span class="keyword">virtual</span> xiiUInt64 <a class="code" href="../../d1/dd2/classxii_g_a_l_command_queue.htm#af2c972fd5a3127eeaf2744e2049dec43">GetNextFenceValue</a>() <span class="keyword">const</span> <span class="keyword">override</span> <span class="keyword">final</span>;</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;  <span class="keyword">virtual</span> xiiUInt64 <a class="code" href="../../d1/dd2/classxii_g_a_l_command_queue.htm#a3d7325c5fd7bbbf0c0f03d66cfb8e0d3">GetCompletedFenceValue</a>() <span class="keyword">const</span> <span class="keyword">override</span> <span class="keyword">final</span>;</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;  <span class="keyword">virtual</span> xiiUInt64 <a class="code" href="../../d1/dd2/classxii_g_a_l_command_queue.htm#a97866a364978a8d92272350bfdee3cc4">WaitForIdle</a>() <span class="keyword">override</span> <span class="keyword">final</span>;</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;  Diligent::IDeviceContext* GetContext() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;  <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="../../d8/d77/classxii_g_a_l_device_d3_d12.htm">xiiGALDeviceD3D12</a>;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="../../d8/d9d/classxii_memory_utils.htm">xiiMemoryUtils</a>;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  <a class="code" href="../../d2/d37/classxii_g_a_l_command_queue_d3_d12.htm">xiiGALCommandQueueD3D12</a>(<a class="code" href="../../d8/d77/classxii_g_a_l_device_d3_d12.htm">xiiGALDeviceD3D12</a>&amp; deviceD3D12, Diligent::IDeviceContext* pDeviceContext);</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  <span class="keyword">virtual</span> ~<a class="code" href="../../d2/d37/classxii_g_a_l_command_queue_d3_d12.htm">xiiGALCommandQueueD3D12</a>();</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  <a class="code" href="../../d8/d77/classxii_g_a_l_device_d3_d12.htm">xiiGALDeviceD3D12</a>&amp; m_DeviceD3D12;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;GraphicsFoundation/CommandEncoder/CommandQueue.h&gt;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">struct </span>ID3D12CommandQueue;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="../../d2/d37/classxii_g_a_l_command_queue_d3_d12.htm">   11</a></span>&#160;<span class="keyword">class </span>XII_GRAPHICSD3D12_DLL <a class="code" href="../../d2/d37/classxii_g_a_l_command_queue_d3_d12.htm">xiiGALCommandQueueD3D12</a> final : <span class="keyword">public</span> <a class="code" href="../../d1/dd2/classxii_g_a_l_command_queue.htm">xiiGALCommandQueue</a></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;{</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;  <span class="keyword">virtual</span> xiiUInt64 <a class="code" href="../../d1/dd2/classxii_g_a_l_command_queue.htm#af2c972fd5a3127eeaf2744e2049dec43">GetNextFenceValue</a>() <span class="keyword">const</span> <span class="keyword">override</span> <span class="keyword">final</span>;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;  <span class="keyword">virtual</span> xiiUInt64 <a class="code" href="../../d1/dd2/classxii_g_a_l_command_queue.htm#aa07a6a38d8758e4602affdb92ea6e571">GetCompletedFenceValue</a>() <span class="keyword">const</span> <span class="keyword">override</span> <span class="keyword">final</span>;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  <span class="keyword">virtual</span> xiiUInt64 <a class="code" href="../../d1/dd2/classxii_g_a_l_command_queue.htm#a97866a364978a8d92272350bfdee3cc4">WaitForIdle</a>() <span class="keyword">override</span> <span class="keyword">final</span>;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  <span class="keyword">virtual</span> <a class="code" href="../../dc/d80/classxii_g_a_l_command_list.htm">xiiGALCommandList</a>* <a class="code" href="../../d1/dd2/classxii_g_a_l_command_queue.htm#adbf9bf64146fa502441270f15ecf93cf">BeginCommandList</a>(<a class="code" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sScopeName) <span class="keyword">override</span> <span class="keyword">final</span>;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  <span class="keywordtype">void</span> UnbindTextureFromFramebuffer(<a class="code" href="../../d7/db5/classxii_g_a_l_texture_d3_d12.htm">xiiGALTextureD3D12</a>* pTextureD3D12);</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  ID3D12CommandQueue* GetD3D12CommandQueue() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  Diligent::IDeviceContext* m_pContext = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  Diligent::IFence* m_pFence                = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  xiiUInt64         m_uiCompletedFenceValue = 0U;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;};</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#include &lt;GraphicsD3D12/CommandEncoder/Implementation/CommandQueueD3D12_inl.h&gt;</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> SubmitPlatform(<a class="code" href="../../dc/d80/classxii_g_a_l_command_list.htm">xiiGALCommandList</a>* pCommandList, <span class="keywordtype">bool</span> bReset) <span class="keyword">override</span> <span class="keyword">final</span>;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="../../d8/d77/classxii_g_a_l_device_d3_d12.htm">xiiGALDeviceD3D12</a>;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="../../d8/d9d/classxii_memory_utils.htm">xiiMemoryUtils</a>;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  <a class="code" href="../../d2/d37/classxii_g_a_l_command_queue_d3_d12.htm">xiiGALCommandQueueD3D12</a>(<a class="code" href="../../d8/d77/classxii_g_a_l_device_d3_d12.htm">xiiGALDeviceD3D12</a>* pDeviceD3D12, <span class="keyword">const</span> <a class="code" href="../../d3/dc4/structxii_g_a_l_command_queue_creation_description.htm">xiiGALCommandQueueCreationDescription</a>&amp; creationDescription);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <span class="keyword">virtual</span> ~<a class="code" href="../../d2/d37/classxii_g_a_l_command_queue_d3_d12.htm">xiiGALCommandQueueD3D12</a>();</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <span class="keyword">virtual</span> <a class="code" href="../../dd/dad/structxii_result.htm">xiiResult</a> InitPlatform() <span class="keyword">override</span> <span class="keyword">final</span>;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <span class="keyword">virtual</span> <a class="code" href="../../dd/dad/structxii_result.htm">xiiResult</a> DeInitPlatform() <span class="keyword">override</span> <span class="keyword">final</span>;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> SetDebugNamePlatform(<a class="code" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sName) <span class="keyword">override</span> <span class="keyword">final</span>;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <a class="code" href="../../d9/d4a/classxii_unique_ptr.htm">xiiUniquePtr&lt;xiiGALCommandListD3D12&gt;</a> m_pDefaultCommandList;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;};</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="preprocessor">#include &lt;GraphicsD3D12/CommandEncoder/Implementation/CommandQueueD3D12_inl.h&gt;</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclassxii_g_a_l_command_queue_d3_d12_htm"><div class="ttname"><a href="../../d2/d37/classxii_g_a_l_command_queue_d3_d12.htm">xiiGALCommandQueueD3D12</a></div><div class="ttdef"><b>Definition:</b> CommandQueueD3D12.h:7</div></div>
+<div class="ttc" id="aclassxii_g_a_l_command_queue_htm_adbf9bf64146fa502441270f15ecf93cf"><div class="ttname"><a href="../../d1/dd2/classxii_g_a_l_command_queue.htm#adbf9bf64146fa502441270f15ecf93cf">xiiGALCommandQueue::BeginCommandList</a></div><div class="ttdeci">virtual XII_NODISCARD xiiGALCommandList * BeginCommandList(xiiStringView sScopeName={})=0</div><div class="ttdoc">This begins a command list for recording commmands.</div></div>
+<div class="ttc" id="aclassxii_g_a_l_command_list_htm"><div class="ttname"><a href="../../dc/d80/classxii_g_a_l_command_list.htm">xiiGALCommandList</a></div><div class="ttdoc">Interface that defines methods to manipulate a command list object.</div><div class="ttdef"><b>Definition:</b> CommandList.h:66</div></div>
+<div class="ttc" id="astructxii_g_a_l_command_queue_creation_description_htm"><div class="ttname"><a href="../../d3/dc4/structxii_g_a_l_command_queue_creation_description.htm">xiiGALCommandQueueCreationDescription</a></div><div class="ttdoc">This describes the fence creation description.</div><div class="ttdef"><b>Definition:</b> CommandQueue.h:9</div></div>
+<div class="ttc" id="aclassxii_g_a_l_command_queue_d3_d12_htm"><div class="ttname"><a href="../../d2/d37/classxii_g_a_l_command_queue_d3_d12.htm">xiiGALCommandQueueD3D12</a></div><div class="ttdef"><b>Definition:</b> CommandQueueD3D12.h:11</div></div>
+<div class="ttc" id="aclassxii_g_a_l_command_queue_htm_aa07a6a38d8758e4602affdb92ea6e571"><div class="ttname"><a href="../../d1/dd2/classxii_g_a_l_command_queue.htm#aa07a6a38d8758e4602affdb92ea6e571">xiiGALCommandQueue::GetCompletedFenceValue</a></div><div class="ttdeci">virtual xiiUInt64 GetCompletedFenceValue()=0</div><div class="ttdoc">This returns the last completed value of the internal fence.</div></div>
 <div class="ttc" id="aclassxii_g_a_l_command_queue_htm"><div class="ttname"><a href="../../d1/dd2/classxii_g_a_l_command_queue.htm">xiiGALCommandQueue</a></div><div class="ttdoc">Interface that defines methods to manipulate a command queue object.</div><div class="ttdef"><b>Definition:</b> CommandQueue.h:17</div></div>
-<div class="ttc" id="aclassxii_g_a_l_command_queue_htm_a3d7325c5fd7bbbf0c0f03d66cfb8e0d3"><div class="ttname"><a href="../../d1/dd2/classxii_g_a_l_command_queue.htm#a3d7325c5fd7bbbf0c0f03d66cfb8e0d3">xiiGALCommandQueue::GetCompletedFenceValue</a></div><div class="ttdeci">virtual xiiUInt64 GetCompletedFenceValue() const =0</div><div class="ttdoc">This returns the last completed value of the internal fence.</div></div>
+<div class="ttc" id="astructxii_string_view_htm"><div class="ttname"><a href="../../da/d9d/structxii_string_view.htm">xiiStringView</a></div><div class="ttdoc">xiiStringView represent a read-only sub-string of a larger string, as it can store a dedicated string...</div><div class="ttdef"><b>Definition:</b> StringView.h:23</div></div>
 <div class="ttc" id="aclassxii_memory_utils_htm"><div class="ttname"><a href="../../d8/d9d/classxii_memory_utils.htm">xiiMemoryUtils</a></div><div class="ttdoc">This class provides functions to work on raw memory.</div><div class="ttdef"><b>Definition:</b> MemoryUtils.h:25</div></div>
 <div class="ttc" id="aclassxii_g_a_l_command_queue_htm_af2c972fd5a3127eeaf2744e2049dec43"><div class="ttname"><a href="../../d1/dd2/classxii_g_a_l_command_queue.htm#af2c972fd5a3127eeaf2744e2049dec43">xiiGALCommandQueue::GetNextFenceValue</a></div><div class="ttdeci">virtual xiiUInt64 GetNextFenceValue() const =0</div><div class="ttdoc">This returns the value of the internal fence that will be signaled the next time.</div></div>
+<div class="ttc" id="aclassxii_unique_ptr_htm"><div class="ttname"><a href="../../d9/d4a/classxii_unique_ptr.htm">xiiUniquePtr&lt; xiiGALCommandListD3D12 &gt;</a></div></div>
+<div class="ttc" id="astructxii_result_htm"><div class="ttname"><a href="../../dd/dad/structxii_result.htm">xiiResult</a></div><div class="ttdoc">Default enum for returning failure or success, instead of using a bool.</div><div class="ttdef"><b>Definition:</b> Types.h:55</div></div>
 <div class="ttc" id="aclassxii_g_a_l_command_queue_htm_a97866a364978a8d92272350bfdee3cc4"><div class="ttname"><a href="../../d1/dd2/classxii_g_a_l_command_queue.htm#a97866a364978a8d92272350bfdee3cc4">xiiGALCommandQueue::WaitForIdle</a></div><div class="ttdeci">virtual xiiUInt64 WaitForIdle()=0</div><div class="ttdoc">This blocks execution until all pending GPU commands are complete.</div></div>
-<div class="ttc" id="aclassxii_g_a_l_device_d3_d12_htm"><div class="ttname"><a href="../../d8/d77/classxii_g_a_l_device_d3_d12.htm">xiiGALDeviceD3D12</a></div><div class="ttdef"><b>Definition:</b> DeviceD3D12.h:21</div></div>
+<div class="ttc" id="aclassxii_g_a_l_device_d3_d12_htm"><div class="ttname"><a href="../../d8/d77/classxii_g_a_l_device_d3_d12.htm">xiiGALDeviceD3D12</a></div><div class="ttdef"><b>Definition:</b> DeviceD3D12.h:20</div></div>
+<div class="ttc" id="aclassxii_g_a_l_texture_d3_d12_htm"><div class="ttname"><a href="../../d7/db5/classxii_g_a_l_texture_d3_d12.htm">xiiGALTextureD3D12</a></div><div class="ttdef"><b>Definition:</b> TextureD3D12.h:7</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.htm">home</a></li><li class="navelem"><a class="el" href="../../dir_1036706e55c22cab35bc1c58ee689f1d.htm">runner</a></li><li class="navelem"><a class="el" href="../../dir_629f8151d55d307162ff2d619fb1783d.htm">work</a></li><li class="navelem"><a class="el" href="../../dir_1ddc44fe1263a8c7935fa6130b7d9499.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_2c1b6808f12952f4c36e05ba7068379a.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_b5a1c4ecfca018ad24b729e213296d41.htm">Source</a></li><li class="navelem"><a class="el" href="../../dir_e321052006a51284e67389ab20037e7c.htm">Engine</a></li><li class="navelem"><a class="el" href="../../dir_68524623ec22db3a46657ed65685622a.htm">GraphicsD3D12</a></li><li class="navelem"><a class="el" href="../../dir_28e3a5df11ae292bfe17a82865651689.htm">CommandEncoder</a></li><li class="navelem"><b>CommandQueueD3D12.h</b></li>
-    <li class="footer">Generated on Tue Apr 30 2024 17:34:34 for XIIEngine by
+    <li class="footer">Generated on Thu May 16 2024 17:17:29 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

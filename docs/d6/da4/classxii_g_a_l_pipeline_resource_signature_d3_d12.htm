@@ -86,7 +86,6 @@ $(document).ready(function(){initNavTree('d6/da4/classxii_g_a_l_pipeline_resourc
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
-<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="#friends">Friends</a> &#124;
 <a href="../../d0/da5/classxii_g_a_l_pipeline_resource_signature_d3_d12-members.htm">List of all members</a>  </div>
   <div class="headertitle">
@@ -115,9 +114,6 @@ Public Member Functions</h2></td></tr>
 virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/da4/classxii_g_a_l_pipeline_resource_signature_d3_d12.htm#af49b918f5aace8e86b8b8191b6c923dd">IsCompatibleWith</a> (const <a class="el" href="../../df/da3/classxii_g_a_l_pipeline_resource_signature.htm">xiiGALPipelineResourceSignature</a> *pPipelineResourceSignature) const override final</td></tr>
 <tr class="memdesc:af49b918f5aace8e86b8b8191b6c923dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if this pipeline resource signature is compatible with the given pipeline resource signature. <br /></td></tr>
 <tr class="separator:af49b918f5aace8e86b8b8191b6c923dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae9fa43319e31880654396c5dd7d4e9d8"><td class="memItemLeft" align="right" valign="top"><a id="ae9fa43319e31880654396c5dd7d4e9d8"></a>
-Diligent::IPipelineResourceSignature *&#160;</td><td class="memItemRight" valign="bottom"><b>GetPipelineResourceSignature</b> () const</td></tr>
-<tr class="separator:ae9fa43319e31880654396c5dd7d4e9d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classxii_g_a_l_pipeline_resource_signature"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classxii_g_a_l_pipeline_resource_signature')"><img src="../../closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="../../df/da3/classxii_g_a_l_pipeline_resource_signature.htm">xiiGALPipelineResourceSignature</a></td></tr>
 <tr class="memitem:af444aebb3c1c088f3a8234b6db6c1c40 inherit pub_methods_classxii_g_a_l_pipeline_resource_signature"><td class="memItemLeft" align="right" valign="top"><a id="af444aebb3c1c088f3a8234b6db6c1c40"></a>
 const XII_NODISCARD <a class="el" href="../../de/d50/structxii_g_a_l_pipeline_resource_signature_creation_description.htm">xiiGALPipelineResourceSignatureCreationDescription</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da3/classxii_g_a_l_pipeline_resource_signature.htm#af444aebb3c1c088f3a8234b6db6c1c40">GetDescription</a> () const</td></tr>
@@ -184,25 +180,19 @@ xiiInt32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:acad562d9f9b138e820bce5990f91ccbb"><td class="memItemLeft" align="right" valign="top"><a id="acad562d9f9b138e820bce5990f91ccbb"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>xiiGALPipelineResourceSignatureD3D12</b> (const <a class="el" href="../../de/d50/structxii_g_a_l_pipeline_resource_signature_creation_description.htm">xiiGALPipelineResourceSignatureCreationDescription</a> &amp;creationDescription)</td></tr>
-<tr class="separator:acad562d9f9b138e820bce5990f91ccbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abe93274827e4c5aecbe416c27347af10"><td class="memItemLeft" align="right" valign="top"><a id="abe93274827e4c5aecbe416c27347af10"></a>
-virtual <a class="el" href="../../dd/dad/structxii_result.htm">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><b>InitPlatform</b> (<a class="el" href="../../d5/d19/classxii_g_a_l_device.htm">xiiGALDevice</a> *pDevice) override final</td></tr>
-<tr class="separator:abe93274827e4c5aecbe416c27347af10"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1b0824a2c33616c78038641ef831615e"><td class="memItemLeft" align="right" valign="top"><a id="a1b0824a2c33616c78038641ef831615e"></a>
-virtual <a class="el" href="../../dd/dad/structxii_result.htm">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><b>DeInitPlatform</b> (<a class="el" href="../../d5/d19/classxii_g_a_l_device.htm">xiiGALDevice</a> *pDevice) override final</td></tr>
-<tr class="separator:a1b0824a2c33616c78038641ef831615e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a31a46e6b16abdb80e49f073b96382b"><td class="memItemLeft" align="right" valign="top"><a id="a4a31a46e6b16abdb80e49f073b96382b"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>xiiGALPipelineResourceSignatureD3D12</b> (<a class="el" href="../../d8/d77/classxii_g_a_l_device_d3_d12.htm">xiiGALDeviceD3D12</a> *pDeviceD3D12, const <a class="el" href="../../de/d50/structxii_g_a_l_pipeline_resource_signature_creation_description.htm">xiiGALPipelineResourceSignatureCreationDescription</a> &amp;creationDescription)</td></tr>
+<tr class="separator:a4a31a46e6b16abdb80e49f073b96382b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5fb4a19e1f7184183dd3054dd66c86c3"><td class="memItemLeft" align="right" valign="top"><a id="a5fb4a19e1f7184183dd3054dd66c86c3"></a>
+virtual <a class="el" href="../../dd/dad/structxii_result.htm">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><b>InitPlatform</b> () override final</td></tr>
+<tr class="separator:a5fb4a19e1f7184183dd3054dd66c86c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8107bb774dc5fd072df70c7a0d80ddcd"><td class="memItemLeft" align="right" valign="top"><a id="a8107bb774dc5fd072df70c7a0d80ddcd"></a>
+virtual <a class="el" href="../../dd/dad/structxii_result.htm">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><b>DeInitPlatform</b> () override final</td></tr>
+<tr class="separator:a8107bb774dc5fd072df70c7a0d80ddcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_classxii_g_a_l_pipeline_resource_signature"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classxii_g_a_l_pipeline_resource_signature')"><img src="../../closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="../../df/da3/classxii_g_a_l_pipeline_resource_signature.htm">xiiGALPipelineResourceSignature</a></td></tr>
 <tr class="memitem:a3cfb1260d67bbcc253b4402edba30bd3 inherit pro_methods_classxii_g_a_l_pipeline_resource_signature"><td class="memItemLeft" align="right" valign="top"><a id="a3cfb1260d67bbcc253b4402edba30bd3"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>xiiGALPipelineResourceSignature</b> (<a class="el" href="../../d5/d19/classxii_g_a_l_device.htm">xiiGALDevice</a> *pDevice, const <a class="el" href="../../de/d50/structxii_g_a_l_pipeline_resource_signature_creation_description.htm">xiiGALPipelineResourceSignatureCreationDescription</a> &amp;creationDescription)</td></tr>
 <tr class="separator:a3cfb1260d67bbcc253b4402edba30bd3 inherit pro_methods_classxii_g_a_l_pipeline_resource_signature"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afd79d40d16d73e7134c22f51440bfd1b inherit pro_methods_classxii_g_a_l_pipeline_resource_signature"><td class="memItemLeft" align="right" valign="top"><a id="afd79d40d16d73e7134c22f51440bfd1b"></a>
-virtual <a class="el" href="../../dd/dad/structxii_result.htm">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><b>InitPlatform</b> ()=0</td></tr>
-<tr class="separator:afd79d40d16d73e7134c22f51440bfd1b inherit pro_methods_classxii_g_a_l_pipeline_resource_signature"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a91e3fab5e78c5747e0471cd45765c8cb inherit pro_methods_classxii_g_a_l_pipeline_resource_signature"><td class="memItemLeft" align="right" valign="top"><a id="a91e3fab5e78c5747e0471cd45765c8cb"></a>
-virtual <a class="el" href="../../dd/dad/structxii_result.htm">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><b>DeInitPlatform</b> ()=0</td></tr>
-<tr class="separator:a91e3fab5e78c5747e0471cd45765c8cb inherit pro_methods_classxii_g_a_l_pipeline_resource_signature"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_classxii_g_a_l_device_object"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classxii_g_a_l_device_object')"><img src="../../closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="../../d5/d12/classxii_g_a_l_device_object.htm">xiiGALDeviceObject</a></td></tr>
 <tr class="memitem:a7ba98273bd740d9f4e9ed729de53b723 inherit pro_methods_classxii_g_a_l_device_object"><td class="memItemLeft" align="right" valign="top"><a id="a7ba98273bd740d9f4e9ed729de53b723"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>xiiGALDeviceObject</b> (<a class="el" href="../../d5/d19/classxii_g_a_l_device.htm">xiiGALDevice</a> *pDevice)</td></tr>
@@ -211,26 +201,6 @@ virtual <a class="el" href="../../dd/dad/structxii_result.htm">xiiResult</a>&#16
 <tr class="memitem:ad91f3bebb53357b1c693e922a8da1262 inherit pro_methods_classxii_g_a_l_object"><td class="memItemLeft" align="right" valign="top"><a id="ad91f3bebb53357b1c693e922a8da1262"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SetDebugNamePlatform</b> (<a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sName)</td></tr>
 <tr class="separator:ad91f3bebb53357b1c693e922a8da1262 inherit pro_methods_classxii_g_a_l_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
-Protected Attributes</h2></td></tr>
-<tr class="memitem:a593633152a1d185dc2040cc3e3ebb195"><td class="memItemLeft" align="right" valign="top"><a id="a593633152a1d185dc2040cc3e3ebb195"></a>
-<a class="el" href="../../dc/da9/classxii_hybrid_array.htm">xiiHybridArray</a>&lt; Diligent::ImmutableSamplerDesc, 2U &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_ImmutableSamplers</b></td></tr>
-<tr class="separator:a593633152a1d185dc2040cc3e3ebb195"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a18e42293d71c3d5a3437a70571ee01af"><td class="memItemLeft" align="right" valign="top"><a id="a18e42293d71c3d5a3437a70571ee01af"></a>
-<a class="el" href="../../dc/da9/classxii_hybrid_array.htm">xiiHybridArray</a>&lt; Diligent::PipelineResourceDesc, 2U &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_PipelineResourceDescriptions</b></td></tr>
-<tr class="separator:a18e42293d71c3d5a3437a70571ee01af"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af4ab8139fd4e48b3c667f6a2667c384f"><td class="memItemLeft" align="right" valign="top"><a id="af4ab8139fd4e48b3c667f6a2667c384f"></a>
-Diligent::IPipelineResourceSignature *&#160;</td><td class="memItemRight" valign="bottom"><b>m_pPipelineResourceSignature</b> = nullptr</td></tr>
-<tr class="separator:af4ab8139fd4e48b3c667f6a2667c384f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pro_attribs_classxii_g_a_l_pipeline_resource_signature"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classxii_g_a_l_pipeline_resource_signature')"><img src="../../closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="../../df/da3/classxii_g_a_l_pipeline_resource_signature.htm">xiiGALPipelineResourceSignature</a></td></tr>
-<tr class="memitem:a182a90e0b9e6dcc7b0b2a9dc5e95017c inherit pro_attribs_classxii_g_a_l_pipeline_resource_signature"><td class="memItemLeft" align="right" valign="top"><a id="a182a90e0b9e6dcc7b0b2a9dc5e95017c"></a>
-<a class="el" href="../../de/d50/structxii_g_a_l_pipeline_resource_signature_creation_description.htm">xiiGALPipelineResourceSignatureCreationDescription</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_Description</b></td></tr>
-<tr class="separator:a182a90e0b9e6dcc7b0b2a9dc5e95017c inherit pro_attribs_classxii_g_a_l_pipeline_resource_signature"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pro_attribs_classxii_g_a_l_device_object"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classxii_g_a_l_device_object')"><img src="../../closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="../../d5/d12/classxii_g_a_l_device_object.htm">xiiGALDeviceObject</a></td></tr>
-<tr class="memitem:acdca6fd41d888d8ff4a3cf9bc4dfea29 inherit pro_attribs_classxii_g_a_l_device_object"><td class="memItemLeft" align="right" valign="top"><a id="acdca6fd41d888d8ff4a3cf9bc4dfea29"></a>
-<a class="el" href="../../d5/d19/classxii_g_a_l_device.htm">xiiGALDevice</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_pDevice</b> = nullptr</td></tr>
-<tr class="separator:acdca6fd41d888d8ff4a3cf9bc4dfea29 inherit pro_attribs_classxii_g_a_l_device_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
@@ -247,6 +217,14 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:ac03a1d9fba3babf7db68227be61737e6 inherit pub_static_methods_classxii_no_base"><td class="memItemLeft" align="right" valign="top"><a id="ac03a1d9fba3babf7db68227be61737e6"></a>
 static const <a class="el" href="../../db/d89/classxii_r_t_t_i.htm">xiiRTTI</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetStaticRTTI</b> ()</td></tr>
 <tr class="separator:ac03a1d9fba3babf7db68227be61737e6 inherit pub_static_methods_classxii_no_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_classxii_g_a_l_pipeline_resource_signature"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classxii_g_a_l_pipeline_resource_signature')"><img src="../../closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="../../df/da3/classxii_g_a_l_pipeline_resource_signature.htm">xiiGALPipelineResourceSignature</a></td></tr>
+<tr class="memitem:a182a90e0b9e6dcc7b0b2a9dc5e95017c inherit pro_attribs_classxii_g_a_l_pipeline_resource_signature"><td class="memItemLeft" align="right" valign="top"><a id="a182a90e0b9e6dcc7b0b2a9dc5e95017c"></a>
+<a class="el" href="../../de/d50/structxii_g_a_l_pipeline_resource_signature_creation_description.htm">xiiGALPipelineResourceSignatureCreationDescription</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_Description</b></td></tr>
+<tr class="separator:a182a90e0b9e6dcc7b0b2a9dc5e95017c inherit pro_attribs_classxii_g_a_l_pipeline_resource_signature"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_classxii_g_a_l_device_object"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classxii_g_a_l_device_object')"><img src="../../closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="../../d5/d12/classxii_g_a_l_device_object.htm">xiiGALDeviceObject</a></td></tr>
+<tr class="memitem:acdca6fd41d888d8ff4a3cf9bc4dfea29 inherit pro_attribs_classxii_g_a_l_device_object"><td class="memItemLeft" align="right" valign="top"><a id="acdca6fd41d888d8ff4a3cf9bc4dfea29"></a>
+<a class="el" href="../../d5/d19/classxii_g_a_l_device.htm">xiiGALDevice</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_pDevice</b> = nullptr</td></tr>
+<tr class="separator:acdca6fd41d888d8ff4a3cf9bc4dfea29 inherit pro_attribs_classxii_g_a_l_device_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>/home/runner/work/XII/XII/Source/Engine/GraphicsD3D12/States/<a class="el" href="../../d9/d20/_pipeline_resource_signature_d3_d12_8h_source.htm">PipelineResourceSignatureD3D12.h</a></li>
@@ -259,7 +237,7 @@ static const <a class="el" href="../../db/d89/classxii_r_t_t_i.htm">xiiRTTI</a> 
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d6/da4/classxii_g_a_l_pipeline_resource_signature_d3_d12.htm">xiiGALPipelineResourceSignatureD3D12</a></li>
-    <li class="footer">Generated on Tue Apr 30 2024 17:34:37 for XIIEngine by
+    <li class="footer">Generated on Thu May 16 2024 17:17:33 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>
