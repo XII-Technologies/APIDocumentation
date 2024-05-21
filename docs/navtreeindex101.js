@@ -1,17 +1,5 @@
 var NAVTREEINDEX101 =
 {
-"dd/d75/classxii_command.htm#a589bc786f94cb34a6efe6b1a9a03e0de":[5,0,330,6],
-"dd/d75/classxii_command.htm#a633dbfc423bf5de3e0f987b5d2aa9ebb":[5,0,330,19],
-"dd/d75/classxii_command.htm#a638a1e7841330329acdeb5e72f9c38bf":[5,0,330,8],
-"dd/d75/classxii_command.htm#a7b1ae364495f7d5fac1b4c050a5ef815":[5,0,330,1],
-"dd/d75/classxii_command.htm#a8da9a727e6b5debae85036d4a14bc1f9":[5,0,330,7],
-"dd/d75/classxii_command.htm#a8e9e5d7562e6a2289aa0d818a93da54a":[5,0,330,9],
-"dd/d75/classxii_command.htm#a9220c2b6c657fe387927b330b74dfb6b":[5,0,330,5],
-"dd/d75/classxii_command.htm#a9f0a7a27d283e16db3eb8d7ca506e1fe":[5,0,330,10],
-"dd/d75/classxii_command.htm#aa49640d95f13d79a5b4425c6895ef0be":[5,0,330,13],
-"dd/d75/classxii_command.htm#aafbb29be002263c710e766abd995fc5d":[5,0,330,11],
-"dd/d75/classxii_command.htm#ab494de696c81d5ad2ebc00a0e00aa4f5":[5,0,330,14],
-"dd/d75/classxii_command.htm#ab7a5dd82cc2ce775ebdd731c5d6d8cf0":[5,0,330,21],
 "dd/d75/classxii_command.htm#ac2fc477e47f98d4fe46183e7d8a2275a":[5,0,330,3],
 "dd/d75/classxii_command.htm#ac6743d79206567fa2ba02cbbe966b323":[5,0,330,12],
 "dd/d75/classxii_command.htm#ac9a52752027237a6ceec697bcfd6d150":[5,0,330,18],
@@ -249,5 +237,17 @@ var NAVTREEINDEX101 =
 "dd/d9a/classxii_render_sorting_functions.htm":[5,0,1922],
 "dd/d9b/classxii_game_app_input_config.htm":[5,0,1040],
 "dd/d9b/classxii_game_app_input_config.htm#a19f31d9992aca0a817f744084d3b125f":[5,0,1040,8],
-"dd/d9b/classxii_game_app_input_config.htm#a42456e950e8f08c2b674471f58c7d263":[5,0,1040,1]
+"dd/d9b/classxii_game_app_input_config.htm#a42456e950e8f08c2b674471f58c7d263":[5,0,1040,1],
+"dd/d9b/classxii_game_app_input_config.htm#a4c1193d27c67ddaf4509c3b97adb3867":[5,0,1040,3],
+"dd/d9b/classxii_game_app_input_config.htm#a684fdb7974ce84ce8bc28e4c59e58329":[5,0,1040,4],
+"dd/d9b/classxii_game_app_input_config.htm#a71a954d6db4d5c27fd028d5250cee5ad":[5,0,1040,6],
+"dd/d9b/classxii_game_app_input_config.htm#a9641589bfd8e621c6b51a0d37f05908f":[5,0,1040,0],
+"dd/d9b/classxii_game_app_input_config.htm#ac102c9f61b24b44102019e583ef1da36":[5,0,1040,5],
+"dd/d9b/classxii_game_app_input_config.htm#afb09850a6e826ac1b018e40e5a70ad44":[5,0,1040,7],
+"dd/d9b/classxii_game_app_input_config.htm#afb7254ba62979c31891bc966ecccbf53":[5,0,1040,2],
+"dd/d9c/structxii_asset_document_generator_1_1_import_mode.htm":[5,0,196,0],
+"dd/d9c/structxii_asset_document_generator_1_1_import_mode.htm#a65d6391982b6c631e1085fd13284db34":[5,0,196,0,3],
+"dd/d9c/structxii_asset_document_generator_1_1_import_mode.htm#aa95b6b4344db781c25d1fe6021d69c50":[5,0,196,0,2],
+"dd/d9c/structxii_asset_document_generator_1_1_import_mode.htm#ad73c0dc58befe4c4a8b829fc6d3e85a1":[5,0,196,0,1],
+"dd/d9c/structxii_asset_document_generator_1_1_import_mode.htm#afdd71c4d6d8d9d6d2b0a74be78d5aae2":[5,0,196,0,0]
 };

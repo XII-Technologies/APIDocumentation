@@ -1,9 +1,5 @@
 var NAVTREEINDEX56 =
 {
-"d7/d4e/classxii_sensor_component.htm#af02ace73d13faebc0fdb9590c0360705":[5,0,2043,24],
-"d7/d4e/structxii_container_sub_type_resolver_3_01xii_tag_set_template_3_01_t_01_4_01_4.htm":[5,0,412],
-"d7/d4e/structxii_container_sub_type_resolver_3_01xii_tag_set_template_3_01_t_01_4_01_4.htm#aa4eef816cb08a03a894e2a7415d28e8d":[5,0,412,0],
-"d7/d53/structxii_phantom_type_change.htm":[5,0,1509],
 "d7/d53/structxii_phantom_type_change.htm#ae22311a8b424226c000fa4e6a8f898ee":[5,0,1509,0],
 "d7/d55/classxii_animation_clip_asset_document.htm":[5,0,110],
 "d7/d55/classxii_animation_clip_asset_document.htm#a0926b3cbbf2c6f3ebb15860c8722243d":[5,0,110,3],
@@ -122,15 +118,14 @@ var NAVTREEINDEX56 =
 "d7/d67/classxii_game_object_document_actions.htm":[5,0,1057],
 "d7/d69/structxii_g_a_l_buffer_creation_description.htm":[5,0,747],
 "d7/d69/structxii_g_a_l_buffer_creation_description.htm#a09d0beb2516a8121ffeeb60c2e9b6c08":[5,0,747,3],
-"d7/d69/structxii_g_a_l_buffer_creation_description.htm#a20e45af0313e2fa3b09e8a0c2c1e6832":[5,0,747,8],
+"d7/d69/structxii_g_a_l_buffer_creation_description.htm#a20e45af0313e2fa3b09e8a0c2c1e6832":[5,0,747,7],
 "d7/d69/structxii_g_a_l_buffer_creation_description.htm#a3f4c62eebadfd7a531dc22ed9a00ab5f":[5,0,747,0],
-"d7/d69/structxii_g_a_l_buffer_creation_description.htm#a4c7c96e3483dd1939097aaf213a1a3fc":[5,0,747,6],
 "d7/d69/structxii_g_a_l_buffer_creation_description.htm#a79537c20211307844136274fa42884d6":[5,0,747,2],
 "d7/d69/structxii_g_a_l_buffer_creation_description.htm#a93d75ed411c193099e2a5335f99bf3ad":[5,0,747,5],
 "d7/d69/structxii_g_a_l_buffer_creation_description.htm#aad7600b3d7a6f860bc20eae31002b450":[5,0,747,4],
-"d7/d69/structxii_g_a_l_buffer_creation_description.htm#abe458f026629ae44ee6aaa07a2ac3a34":[5,0,747,9],
+"d7/d69/structxii_g_a_l_buffer_creation_description.htm#abe458f026629ae44ee6aaa07a2ac3a34":[5,0,747,8],
 "d7/d69/structxii_g_a_l_buffer_creation_description.htm#ad80c8c474d88aea1ebf1f9bfdcadd6d3":[5,0,747,1],
-"d7/d69/structxii_g_a_l_buffer_creation_description.htm#af7135a9bd0b5de5d5dd60c848002d9c2":[5,0,747,7],
+"d7/d69/structxii_g_a_l_buffer_creation_description.htm#af7135a9bd0b5de5d5dd60c848002d9c2":[5,0,747,6],
 "d7/d73/classxii_instanced_mesh_component.htm":[5,0,1202],
 "d7/d73/classxii_instanced_mesh_component.htm#a00387b739244e7e8af1ad175bea748b5":[5,0,1202,3],
 "d7/d73/classxii_instanced_mesh_component.htm#a0ccc99550614fd6b9a9601b103867f5f":[5,0,1202,16],
@@ -249,5 +244,10 @@ var NAVTREEINDEX56 =
 "d7/d81/classxii_a_o_pass.htm#a9337ff9d3b64c6861c58b3761b84a3d8":[5,0,161,14],
 "d7/d81/classxii_a_o_pass.htm#a9f101cd683b9dcc226be2c06639fa703":[5,0,161,7],
 "d7/d81/classxii_a_o_pass.htm#aa4e49aebf36a3172e0df226b7622744f":[5,0,161,13],
-"d7/d81/classxii_a_o_pass.htm#aa95d60c2bd2d7091297912e8d0c5de2b":[5,0,161,9]
+"d7/d81/classxii_a_o_pass.htm#aa95d60c2bd2d7091297912e8d0c5de2b":[5,0,161,9],
+"d7/d81/classxii_a_o_pass.htm#aaf32e0ca887fc32fd44f45ea18b69908":[5,0,161,24],
+"d7/d81/classxii_a_o_pass.htm#ac8ede9f53e95afc054cfe1af302ae069":[5,0,161,19],
+"d7/d81/classxii_a_o_pass.htm#ad3860b4d717d81bbe2c17d4db61fc3c7":[5,0,161,3],
+"d7/d81/classxii_a_o_pass.htm#ad3ecfa8878308694836756bef0958008":[5,0,161,6],
+"d7/d81/classxii_a_o_pass.htm#ad613b34a56923a7123e372ca16f1caeb":[5,0,161,10]
 };

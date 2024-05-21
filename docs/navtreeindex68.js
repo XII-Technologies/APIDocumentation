@@ -1,11 +1,5 @@
 var NAVTREEINDEX68 =
 {
-"d9/d00/structxii_x_r_device_type.htm#ae027c94fa9b5ee0bbaee90c53002d36fadac1632aacfc7e57f936fc3d149e5e5c":[5,0,2561,1,9],
-"d9/d00/structxii_x_r_device_type.htm#ae027c94fa9b5ee0bbaee90c53002d36fade8427366688ca1a47c291b3e50ef9b7":[5,0,2561,1,13],
-"d9/d00/structxii_x_r_device_type.htm#ae027c94fa9b5ee0bbaee90c53002d36fae6cd659b32a3c46d46dbc9cd0bd0924a":[5,0,2561,1,2],
-"d9/d00/structxii_x_r_device_type.htm#ae027c94fa9b5ee0bbaee90c53002d36fae7f1d137fa10bf30d06e166b4c2b3035":[5,0,2561,1,3],
-"d9/d00/structxii_x_r_device_type.htm#ae027c94fa9b5ee0bbaee90c53002d36fafc79d32d19f337763d390075aec0f0a4":[5,0,2561,1,17],
-"d9/d06/classxii_camera_component.htm":[5,0,270],
 "d9/d06/classxii_camera_component.htm#a035114029e303db960d864ae726d6dc9":[5,0,270,4],
 "d9/d06/classxii_camera_component.htm#a1375f1386bc943a0e1bc14af28e6eab4":[5,0,270,3],
 "d9/d06/classxii_camera_component.htm#a18c37ef0e8f362fdd0b67e069354e271":[5,0,270,8],
@@ -249,5 +243,11 @@ var NAVTREEINDEX68 =
 "d9/d21/classxii_simd_vec4u.htm#ad5349b0c09f6ba717e231976ff0fd8c8":[5,0,2109,7],
 "d9/d21/classxii_simd_vec4u.htm#ad92e88d1c4af4d580e3eb4c347245daa":[5,0,2109,18],
 "d9/d21/classxii_simd_vec4u.htm#ad9a65c44293058bdb03dc120d4d04c56":[5,0,2109,20],
-"d9/d21/classxii_simd_vec4u.htm#adbacf1d74e8547e2292af60217f3ee3a":[5,0,2109,8]
+"d9/d21/classxii_simd_vec4u.htm#adbacf1d74e8547e2292af60217f3ee3a":[5,0,2109,8],
+"d9/d21/classxii_simd_vec4u.htm#af1f338765959fff21c545412a627297d":[5,0,2109,16],
+"d9/d21/classxii_simd_vec4u.htm#af8fd8a19175c008243c52a7024c70b2f":[5,0,2109,31],
+"d9/d21/classxii_simd_vec4u.htm#af9178ac1fd9423fc90b106371e252744":[5,0,2109,35],
+"d9/d21/classxii_simd_vec4u.htm#af928152af03bd3e1ead6091d3b7e2a09":[5,0,2109,10],
+"d9/d23/structxii_spatial_data_1_1_flags_1_1_bits.htm":[5,0,2171,1,0],
+"d9/d23/structxii_spatial_data_1_1_flags_1_1_bits.htm#ab6b836ca22305c4e5efeaf5081c6bf3b":[5,0,2171,1,0,0]
 };

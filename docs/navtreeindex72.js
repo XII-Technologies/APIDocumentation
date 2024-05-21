@@ -1,12 +1,5 @@
 var NAVTREEINDEX72 =
 {
-"d9/d8d/classxii_bitfield.htm#a16626b5ef28cd30717e4708d17f4f30c":[5,0,226,16],
-"d9/d8d/classxii_bitfield.htm#a1a4a344392e8592dc494b49afd2907fd":[5,0,226,13],
-"d9/d8d/classxii_bitfield.htm#a1ca04bb6b3023ec53ba2add1c639245f":[5,0,226,10],
-"d9/d8d/classxii_bitfield.htm#a1ea217f311634aae4bbca3da63e920f5":[5,0,226,1],
-"d9/d8d/classxii_bitfield.htm#a20bc8e770be3e20b7489109de3122e71":[5,0,226,17],
-"d9/d8d/classxii_bitfield.htm#a2fb987d8026ff8c8044599e411eeaf59":[5,0,226,9],
-"d9/d8d/classxii_bitfield.htm#a48826facb0abb3ed53e095ca0b6ef281":[5,0,226,15],
 "d9/d8d/classxii_bitfield.htm#a5a00c7b5ba184dc51afbcca71517a10e":[5,0,226,11],
 "d9/d8d/classxii_bitfield.htm#a5b5bc21358817b1b2550fe501c29ba24":[5,0,226,2],
 "d9/d8d/classxii_bitfield.htm#a68a80b4a141a4d1aa78aa49195537259":[5,0,226,6],
@@ -249,5 +242,12 @@ var NAVTREEINDEX72 =
 "d9/da1/structxii_file_system_iterator_flags.htm#adcfc830ae99bf4ed04369a897da26c11a060554af30db83f267efc41ab66ea8ac":[5,0,685,2,5],
 "d9/da1/structxii_file_system_iterator_flags.htm#adcfc830ae99bf4ed04369a897da26c11a354e16ee9164fb746edd8691b1f3aecb":[5,0,685,2,4],
 "d9/da1/structxii_file_system_iterator_flags.htm#adcfc830ae99bf4ed04369a897da26c11a5024e8786b0abb7fb198108542ea1e77":[5,0,685,2,6],
-"d9/da1/structxii_file_system_iterator_flags.htm#adcfc830ae99bf4ed04369a897da26c11a7f6963bfb010d37a9fd765019ff0ca86":[5,0,685,2,3]
+"d9/da1/structxii_file_system_iterator_flags.htm#adcfc830ae99bf4ed04369a897da26c11a7f6963bfb010d37a9fd765019ff0ca86":[5,0,685,2,3],
+"d9/da1/structxii_file_system_iterator_flags.htm#adcfc830ae99bf4ed04369a897da26c11ab239a02b872f5d335d298a96a0fedca2":[5,0,685,2,1],
+"d9/da1/structxii_file_system_iterator_flags.htm#adcfc830ae99bf4ed04369a897da26c11af29a6b54831ea37d5262143d5bdd5d91":[5,0,685,2,2],
+"d9/da1/structxii_file_system_iterator_flags.htm#adcfc830ae99bf4ed04369a897da26c11af4dfc95da8ebb59ba3fc48b785f309d2":[5,0,685,2,0],
+"d9/da1/unionxii_delegate_base_1_1_instance_ptr.htm":[5,0,505,0],
+"d9/da1/unionxii_delegate_base_1_1_instance_ptr.htm#ac57d73c8292381d8c215895981b34c9d":[5,0,505,0,0],
+"d9/da1/unionxii_delegate_base_1_1_instance_ptr.htm#adf4a5f746f4cc899de90ccb66afca550":[5,0,505,0,1],
+"d9/da4/structxii_g_a_l_shading_rate_axis.htm":[5,0,972]
 };

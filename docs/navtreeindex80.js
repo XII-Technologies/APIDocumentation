@@ -1,13 +1,5 @@
 var NAVTREEINDEX80 =
 {
-"da/d82/structxii_image_conversion_entry.htm#a8926e8a1890e5df2702527d6cf4cd33b":[5,0,1156,4],
-"da/d82/structxii_image_conversion_entry.htm#aae2968eeb0eb44857e3e40c9b484ab4a":[5,0,1156,3],
-"da/d82/structxii_image_conversion_entry.htm#adcdd3fa80e3d0d5233c34c1ecb89d608":[5,0,1156,2],
-"da/d82/structxii_image_conversion_entry.htm#af3d3f6e80de46922ae4bf8295edd2129":[5,0,1156,1],
-"da/d83/classxii_x_r_config.htm":[5,0,2557],
-"da/d83/classxii_x_r_config.htm#a3ff8633fff135ea21887e31938334aea":[5,0,2557,1],
-"da/d83/classxii_x_r_config.htm#a418a0e0b5b61ce6f980953f75a1038b8":[5,0,2557,0],
-"da/d83/classxii_x_r_config.htm#a846eb9ba27c5b6505d09caf17e3da670":[5,0,2557,2],
 "da/d83/classxii_x_r_config.htm#a9fd89889562aa44d40f58c26a1476931":[5,0,2557,3],
 "da/d84/structxii_on_component_finished_action2.htm":[5,0,1470],
 "da/d84/structxii_on_component_finished_action2.htm#a7a132d9cf522e8b76ecb5a201f7dad28":[5,0,1470,0],
@@ -249,5 +241,13 @@ var NAVTREEINDEX80 =
 "da/d9d/structxii_string_view.htm#ae58aff3b50fc508fe0b31c26b0a3027b":[5,0,2256,1],
 "da/d9d/structxii_string_view.htm#ae7164e5b303b2c2a553b30a9a8826225":[5,0,2256,31],
 "da/d9d/structxii_string_view.htm#ae727f5c345e7420c72dfcc7fc032bcd2":[5,0,2256,49],
-"da/d9d/structxii_string_view.htm#ae78b5a1542b1486c767d3f95c0bfd774":[5,0,2256,57]
+"da/d9d/structxii_string_view.htm#ae78b5a1542b1486c767d3f95c0bfd774":[5,0,2256,57],
+"da/d9d/structxii_string_view.htm#aecc3e4dfa07b682a2366f476bd091564":[5,0,2256,63],
+"da/d9d/structxii_string_view.htm#af3875ca0d5a318c8234cdcaf9d8e1cff":[5,0,2256,8],
+"da/d9d/structxii_string_view.htm#afab8553c059317de4e68b853baeeaf69":[5,0,2256,34],
+"da/d9d/structxii_string_view.htm#afd522c6e9fbbf1e84b093a1144234f30":[5,0,2256,24],
+"da/d9d/structxii_tools_tag.htm":[5,0,2363],
+"da/d9d/structxii_tools_tag.htm#a0c0e6279a3ddeecfacf95a4b87daead2":[5,0,2363,1],
+"da/d9d/structxii_tools_tag.htm#a14abe1d2361faba9a04647196dbe086f":[5,0,2363,4],
+"da/d9d/structxii_tools_tag.htm#aa8646d8c0450ed06380557bd9eefa619":[5,0,2363,0]
 };

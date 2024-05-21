@@ -1,17 +1,5 @@
 var NAVTREEINDEX103 =
 {
-"dd/dbc/classxii_material_asset_properties.htm#a3e6a8980bf42e5311f9c6c1a2c309e0d":[5,0,1321,18],
-"dd/dbc/classxii_material_asset_properties.htm#a49645e2dc12f9ac1958ff21fa74a55ed":[5,0,1321,0],
-"dd/dbc/classxii_material_asset_properties.htm#a4bea8a68a5d79927db4491aaed18ae11":[5,0,1321,19],
-"dd/dbc/classxii_material_asset_properties.htm#a4f70b606948eef3729f7ba4abce02bb7":[5,0,1321,2],
-"dd/dbc/classxii_material_asset_properties.htm#a51975e09e5c175e3074f6e31b8765549":[5,0,1321,22],
-"dd/dbc/classxii_material_asset_properties.htm#a580f67f87c488fd378b07b3e8d289aa4":[5,0,1321,14],
-"dd/dbc/classxii_material_asset_properties.htm#a6540b2c3068344f0427f7bd9bef4c075":[5,0,1321,13],
-"dd/dbc/classxii_material_asset_properties.htm#a6c583756b4e6ba5d7a304ab1ebe95142":[5,0,1321,8],
-"dd/dbc/classxii_material_asset_properties.htm#a7c5fc4a96d7c34c291eb8d55338ea890":[5,0,1321,15],
-"dd/dbc/classxii_material_asset_properties.htm#a9288cef24dbcaeaa0e2b1398ff3c8bcd":[5,0,1321,7],
-"dd/dbc/classxii_material_asset_properties.htm#a9ee69d3dbfb8346cb0034e949c7da3e7":[5,0,1321,17],
-"dd/dbc/classxii_material_asset_properties.htm#accca4f892a3499acc8ff69c34e680cd0":[5,0,1321,24],
 "dd/dbc/classxii_material_asset_properties.htm#aceda7fecedd3714217e5270d2bc4e3b1":[5,0,1321,23],
 "dd/dbc/classxii_material_asset_properties.htm#add7cf209df67f2ee51c4b5e3c1876f4c":[5,0,1321,12],
 "dd/dbc/classxii_material_asset_properties.htm#ae47071f879e1ae1d7b3f8ff279eecc15":[5,0,1321,4],
@@ -249,5 +237,17 @@ var NAVTREEINDEX103 =
 "dd/de6/structxii_g_a_l_sparse_resource_capability_flags.htm#afc7e83e9dd1f9d15babb136af5e90689ae11b60d798fbe9fd6effa9c29768949d":[5,0,980,2,6],
 "dd/de6/structxii_g_a_l_sparse_resource_capability_flags.htm#afc7e83e9dd1f9d15babb136af5e90689aeeb23e8844c12db6578bc9d2afb280f7":[5,0,980,2,18],
 "dd/de6/structxii_g_a_l_sparse_resource_capability_flags.htm#afc7e83e9dd1f9d15babb136af5e90689af01ea109816cfbad4afeecaee3ce3563":[5,0,980,2,2],
-"dd/de7/classxii_light_component.htm":[5,0,1257]
+"dd/de7/classxii_light_component.htm":[5,0,1257],
+"dd/de7/classxii_light_component.htm#a0090150427fcdb231a7d1369ac3a4e45":[5,0,1257,19],
+"dd/de7/classxii_light_component.htm#a00b50fec618954d7a5f8c2c4e7944abf":[5,0,1257,18],
+"dd/de7/classxii_light_component.htm#a08f67ac125b9822581cdd5c559003f71":[5,0,1257,15],
+"dd/de7/classxii_light_component.htm#a2921b2729d97a4eaa194a0cec34c1a2e":[5,0,1257,10],
+"dd/de7/classxii_light_component.htm#a2d8fac0e85cd2902771ea879042b7a79":[5,0,1257,4],
+"dd/de7/classxii_light_component.htm#a30a3e8f3bb48e6a2bed5cdeca919cb2f":[5,0,1257,6],
+"dd/de7/classxii_light_component.htm#a3768f8f9d9b8ac6f05731c0d54d2ae40":[5,0,1257,9],
+"dd/de7/classxii_light_component.htm#a3b090a87b3cf79617396e737a4643a06":[5,0,1257,21],
+"dd/de7/classxii_light_component.htm#a3f05b47e7f81bc7812ddf061c1e9efee":[5,0,1257,12],
+"dd/de7/classxii_light_component.htm#a433d461a4164080feabd1dc3b5661d63":[5,0,1257,22],
+"dd/de7/classxii_light_component.htm#a5426db195f7e3bdc35618733d79a8f10":[5,0,1257,20],
+"dd/de7/classxii_light_component.htm#a78f1d4aa8cd14f298efc17350c79b290":[5,0,1257,8]
 };

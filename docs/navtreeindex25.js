@@ -1,8 +1,5 @@
 var NAVTREEINDEX25 =
 {
-"d3/d81/classxii_skeleton_builder.htm#a43c800713a4ced757e976726b0b5711d":[5,0,2137,4],
-"d3/d81/classxii_skeleton_builder.htm#a58d62acd38e009d555af1c8cf6260764":[5,0,2137,2],
-"d3/d81/classxii_skeleton_builder.htm#a5c2f918e44d24bdfdca274a807477c90":[5,0,2137,6],
 "d3/d81/classxii_skeleton_builder.htm#a7d2fc63d8c41925dd3a26b2129814dbf":[5,0,2137,5],
 "d3/d81/classxii_skeleton_builder.htm#ab484d2ba5713460a389d1bb2230c6830":[5,0,2137,8],
 "d3/d81/classxii_skeleton_builder.htm#ad94c6bacc77018b642b58828d5a25020":[5,0,2137,7],
@@ -249,5 +246,8 @@ var NAVTREEINDEX25 =
 "d3/d97/classxii_g_a_l_sampler.htm#af40452d91e379a0af85348eabde19077":[5,0,928,0],
 "d3/d98/structxii_default_render_data_categories.htm":[5,0,495],
 "d3/d99/classxii_settings_component.htm":[5,0,2058],
-"d3/d99/classxii_settings_component.htm#a665a2497ed33ecd401b658a316b43a48":[5,0,2058,1]
+"d3/d99/classxii_settings_component.htm#a665a2497ed33ecd401b658a316b43a48":[5,0,2058,1],
+"d3/d99/classxii_settings_component.htm#a6942a6be1d963e856df8523d3c25d792":[5,0,2058,4],
+"d3/d99/classxii_settings_component.htm#ac04550eb48d51946a905c0df47454767":[5,0,2058,3],
+"d3/d99/classxii_settings_component.htm#ac99448467d0cb5ebfe4c7b5c68f71490":[5,0,2058,0]
 };

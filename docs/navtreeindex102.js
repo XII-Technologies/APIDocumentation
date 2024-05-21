@@ -1,17 +1,5 @@
 var NAVTREEINDEX102 =
 {
-"dd/d9b/classxii_game_app_input_config.htm#a4c1193d27c67ddaf4509c3b97adb3867":[5,0,1040,3],
-"dd/d9b/classxii_game_app_input_config.htm#a684fdb7974ce84ce8bc28e4c59e58329":[5,0,1040,4],
-"dd/d9b/classxii_game_app_input_config.htm#a71a954d6db4d5c27fd028d5250cee5ad":[5,0,1040,6],
-"dd/d9b/classxii_game_app_input_config.htm#a9641589bfd8e621c6b51a0d37f05908f":[5,0,1040,0],
-"dd/d9b/classxii_game_app_input_config.htm#ac102c9f61b24b44102019e583ef1da36":[5,0,1040,5],
-"dd/d9b/classxii_game_app_input_config.htm#afb09850a6e826ac1b018e40e5a70ad44":[5,0,1040,7],
-"dd/d9b/classxii_game_app_input_config.htm#afb7254ba62979c31891bc966ecccbf53":[5,0,1040,2],
-"dd/d9c/structxii_asset_document_generator_1_1_import_mode.htm":[5,0,196,0],
-"dd/d9c/structxii_asset_document_generator_1_1_import_mode.htm#a65d6391982b6c631e1085fd13284db34":[5,0,196,0,3],
-"dd/d9c/structxii_asset_document_generator_1_1_import_mode.htm#aa95b6b4344db781c25d1fe6021d69c50":[5,0,196,0,2],
-"dd/d9c/structxii_asset_document_generator_1_1_import_mode.htm#ad73c0dc58befe4c4a8b829fc6d3e85a1":[5,0,196,0,1],
-"dd/d9c/structxii_asset_document_generator_1_1_import_mode.htm#afdd71c4d6d8d9d6d2b0a74be78d5aae2":[5,0,196,0,0],
 "dd/d9e/classxii_progress.htm":[5,0,1574],
 "dd/d9e/classxii_progress.htm#a15b66608ff54bf7057770b82187cd6da":[5,0,1574,2],
 "dd/d9e/classxii_progress.htm#a16b50c40215cf572fc3e71b5d1db9c60":[5,0,1574,0],
@@ -249,5 +237,17 @@ var NAVTREEINDEX102 =
 "dd/dbc/classxii_material_asset_properties.htm#a27276abd6fda857116b6378df3562909":[5,0,1321,9],
 "dd/dbc/classxii_material_asset_properties.htm#a344fbd014b118952e7e4721898a76ed9":[5,0,1321,6],
 "dd/dbc/classxii_material_asset_properties.htm#a3aafc9a03e0d3892469fe61ce145f8c9":[5,0,1321,20],
-"dd/dbc/classxii_material_asset_properties.htm#a3b3dc8724a4ec48a29c56e6163392b96":[5,0,1321,3]
+"dd/dbc/classxii_material_asset_properties.htm#a3b3dc8724a4ec48a29c56e6163392b96":[5,0,1321,3],
+"dd/dbc/classxii_material_asset_properties.htm#a3e6a8980bf42e5311f9c6c1a2c309e0d":[5,0,1321,18],
+"dd/dbc/classxii_material_asset_properties.htm#a49645e2dc12f9ac1958ff21fa74a55ed":[5,0,1321,0],
+"dd/dbc/classxii_material_asset_properties.htm#a4bea8a68a5d79927db4491aaed18ae11":[5,0,1321,19],
+"dd/dbc/classxii_material_asset_properties.htm#a4f70b606948eef3729f7ba4abce02bb7":[5,0,1321,2],
+"dd/dbc/classxii_material_asset_properties.htm#a51975e09e5c175e3074f6e31b8765549":[5,0,1321,22],
+"dd/dbc/classxii_material_asset_properties.htm#a580f67f87c488fd378b07b3e8d289aa4":[5,0,1321,14],
+"dd/dbc/classxii_material_asset_properties.htm#a6540b2c3068344f0427f7bd9bef4c075":[5,0,1321,13],
+"dd/dbc/classxii_material_asset_properties.htm#a6c583756b4e6ba5d7a304ab1ebe95142":[5,0,1321,8],
+"dd/dbc/classxii_material_asset_properties.htm#a7c5fc4a96d7c34c291eb8d55338ea890":[5,0,1321,15],
+"dd/dbc/classxii_material_asset_properties.htm#a9288cef24dbcaeaa0e2b1398ff3c8bcd":[5,0,1321,7],
+"dd/dbc/classxii_material_asset_properties.htm#a9ee69d3dbfb8346cb0034e949c7da3e7":[5,0,1321,17],
+"dd/dbc/classxii_material_asset_properties.htm#accca4f892a3499acc8ff69c34e680cd0":[5,0,1321,24]
 };

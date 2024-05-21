@@ -1,13 +1,5 @@
 var NAVTREEINDEX82 =
 {
-"da/dcc/classxii_color_gradient_asset_data.htm#ad655feef56fb0d4ac4ac090d0738416d":[5,0,321,1],
-"da/dcc/classxii_color_gradient_asset_data.htm#ad94de4cee570427efc37255699330598":[5,0,321,0],
-"da/dcc/classxii_color_gradient_asset_data.htm#ada9bc35f7712c84762617962c072c311":[5,0,321,3],
-"da/dcc/structxii_expression_a_s_t_1_1_constant.htm":[5,0,658,1],
-"da/dcc/structxii_expression_a_s_t_1_1_constant.htm#a97f1fcba6cd2c27ed2647bc40d522138":[5,0,658,1,0],
-"da/dcd/classxii_container_attribute.htm":[5,0,399],
-"da/dcd/classxii_container_attribute.htm#a268e0cf034cc9722c323e27ae1341c50":[5,0,399,1],
-"da/dcd/classxii_container_attribute.htm#a4e9262a78dc47f6347911498a882c6e9":[5,0,399,2],
 "da/dcd/classxii_container_attribute.htm#a7aceed4d9e7651e9b0cf5ecec768a40a":[5,0,399,4],
 "da/dcd/classxii_container_attribute.htm#ad4644b1fc375ebb95cef5a4f997a39c3":[5,0,399,0],
 "da/dcd/classxii_container_attribute.htm#afd78393316d09e139366bafb000718c7":[5,0,399,3],
@@ -249,5 +241,13 @@ var NAVTREEINDEX82 =
 "da/df9/structxii_typeless_bitflags.htm#ac02960fe2a426e3985806ebf738fc2e6":[5,0,2406,10],
 "da/df9/structxii_typeless_bitflags.htm#ac61235b3781fc75d3f914658cf1b3895":[5,0,2406,1],
 "da/df9/structxii_typeless_bitflags.htm#ac9a731ded4fd0b29c98a74fafe436851":[5,0,2406,22],
-"da/df9/structxii_typeless_bitflags.htm#ae2b437f03e53fdc96841b7a4c7cb5e88":[5,0,2406,21]
+"da/df9/structxii_typeless_bitflags.htm#ae2b437f03e53fdc96841b7a4c7cb5e88":[5,0,2406,21],
+"da/df9/structxii_typeless_bitflags.htm#ae38d3d9dd7fd11bc3b945e6d0924add7":[5,0,2406,5],
+"da/df9/structxii_typeless_bitflags.htm#ae3c77eb1aeaea1e4e76a8e3090281d91":[5,0,2406,16],
+"da/df9/structxii_typeless_bitflags.htm#ae4ac2502b0c5daa27f801e8058e35289":[5,0,2406,4],
+"da/df9/structxii_typeless_bitflags.htm#ae64c28f51606d6b60cbb0297276dbca8":[5,0,2406,13],
+"da/df9/structxii_typeless_bitflags.htm#aee640d29869e67c254d5fd623a61df6b":[5,0,2406,6],
+"da/df9/structxii_typeless_bitflags.htm#af5ae8af473ebe69e1de102e195c606f4":[5,0,2406,0],
+"da/df9/structxii_typeless_bitflags.htm#afe810a0042f23e46efd2b33d5e1ede3c":[5,0,2406,15],
+"da/dfe/classxii_g_a_l_sampler_handle.htm":[5,0,933]
 };

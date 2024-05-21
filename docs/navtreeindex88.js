@@ -1,13 +1,5 @@
 var NAVTREEINDEX88 =
 {
-"db/d9e/structxii_swizzle.htm#af85243d77ee966c0d27bee79d65039dea258d0b29e6320e94d29cf2442c09c6b0":[5,0,2271,0,80],
-"db/d9e/structxii_swizzle.htm#af85243d77ee966c0d27bee79d65039dea258d72be3f3eafe2886e4e17335498e2":[5,0,2271,0,89],
-"db/d9e/structxii_swizzle.htm#af85243d77ee966c0d27bee79d65039dea273dbfcfcb8439f9a15b7d7e3ad1802c":[5,0,2271,0,101],
-"db/d9e/structxii_swizzle.htm#af85243d77ee966c0d27bee79d65039dea27feea177ddb894b6354f848873b526f":[5,0,2271,0,13],
-"db/d9e/structxii_swizzle.htm#af85243d77ee966c0d27bee79d65039dea2824c65a93fe9aae987850ecb9834540":[5,0,2271,0,146],
-"db/d9e/structxii_swizzle.htm#af85243d77ee966c0d27bee79d65039dea291c99322574139db50caa45cc47c1d4":[5,0,2271,0,133],
-"db/d9e/structxii_swizzle.htm#af85243d77ee966c0d27bee79d65039dea2ae9d542360c6e7b8e0252df1f42652b":[5,0,2271,0,190],
-"db/d9e/structxii_swizzle.htm#af85243d77ee966c0d27bee79d65039dea2d38028d7d533320d526945d0ef3647c":[5,0,2271,0,223],
 "db/d9e/structxii_swizzle.htm#af85243d77ee966c0d27bee79d65039dea2e4356ce05e7db684fafc8c7fd53b852":[5,0,2271,0,70],
 "db/d9e/structxii_swizzle.htm#af85243d77ee966c0d27bee79d65039dea2e82231748cbca97cbe6c5d8fad6b369":[5,0,2271,0,100],
 "db/d9e/structxii_swizzle.htm#af85243d77ee966c0d27bee79d65039dea2eeed43e85b39ca66ba0a4fa943d19e3":[5,0,2271,0,51],
@@ -249,5 +241,13 @@ var NAVTREEINDEX88 =
 "db/da4/classxii_long_op_result_msg.htm#a9902acb2fc9150f19753f85c811e11cd":[5,0,1290,0],
 "db/da4/structxii_file_system_1_1_file_event.htm":[5,0,683,0],
 "db/da4/structxii_file_system_1_1_file_event.htm#a2ec70edffb1880dbaf969d4a53056d75":[5,0,683,0,0],
-"db/da4/structxii_file_system_1_1_file_event.htm#a4201027e777928c2aed87a7dd45b0812":[5,0,683,0,2]
+"db/da4/structxii_file_system_1_1_file_event.htm#a4201027e777928c2aed87a7dd45b0812":[5,0,683,0,2],
+"db/da4/structxii_file_system_1_1_file_event.htm#a5241b13ef86bc0fc26cbce093d01e4fe":[5,0,683,0,3],
+"db/da4/structxii_file_system_1_1_file_event.htm#aebe1266d43f37ef9f13d91d25bd78798":[5,0,683,0,1],
+"db/da6/classxii_decal_atlas_resource.htm":[5,0,476],
+"db/da6/classxii_decal_atlas_resource.htm#a0c1e89f25a8416f96c5f9d2c5b5f6a8a":[5,0,476,10],
+"db/da6/classxii_decal_atlas_resource.htm#a10a7ebd400aaf61019fc02b74ce69500":[5,0,476,6],
+"db/da6/classxii_decal_atlas_resource.htm#a36072a2524eed6deadd34095c0c6b46c":[5,0,476,3],
+"db/da6/classxii_decal_atlas_resource.htm#a4aea9ce14957a9fd339acbf28333954e":[5,0,476,0],
+"db/da6/classxii_decal_atlas_resource.htm#a574b98bad0e772cc505a78ddd6f762c0":[5,0,476,8]
 };

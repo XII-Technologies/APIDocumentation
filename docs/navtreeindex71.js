@@ -1,12 +1,5 @@
 var NAVTREEINDEX71 =
 {
-"d9/d69/structxii_task_priority.htm#a2aa9f9ee2f9b337039c13a946945d93daa8b4c35b5ab0cf3076f03f8a213a40fd":[5,0,2284,1,0],
-"d9/d69/structxii_task_priority.htm#a2aa9f9ee2f9b337039c13a946945d93dab315332bdae1b592702829b8f1be6c5f":[5,0,2284,1,10],
-"d9/d69/structxii_task_priority.htm#a2aa9f9ee2f9b337039c13a946945d93dacb41f9035e02aecfaa1fd6bc0d58593c":[5,0,2284,1,12],
-"d9/d69/structxii_task_priority.htm#a2aa9f9ee2f9b337039c13a946945d93dae2f7bd116a9a63d4369575a52fc54546":[5,0,2284,1,15],
-"d9/d69/structxii_task_priority.htm#a2aa9f9ee2f9b337039c13a946945d93dae3c9982b41525ec4e899b340ae5e2f54":[5,0,2284,1,11],
-"d9/d69/structxii_task_priority.htm#a2aa9f9ee2f9b337039c13a946945d93dae6b065545bb61375653013907201666a":[5,0,2284,1,5],
-"d9/d69/structxii_task_priority.htm#a2aa9f9ee2f9b337039c13a946945d93daf5e6961ca817f966a01211c523f93897":[5,0,2284,1,8],
 "d9/d69/structxii_task_priority.htm#a589b670e647f702ed5e040699245eac1":[5,0,2284,0],
 "d9/d6a/classxii_qt_dynamic_string_enum_property_widget.htm":[5,0,1678],
 "d9/d6a/classxii_qt_dynamic_string_enum_property_widget.htm#a15b015720d592f87256af4dd43d97869":[5,0,1678,6],
@@ -249,5 +242,12 @@ var NAVTREEINDEX71 =
 "d9/d8d/classxii_bitfield.htm":[5,0,226],
 "d9/d8d/classxii_bitfield.htm#a0baa4b7ad887af67b8347346f874d4ac":[5,0,226,4],
 "d9/d8d/classxii_bitfield.htm#a0ecd99731cc8f4ff57d9b0c57291cadb":[5,0,226,8],
-"d9/d8d/classxii_bitfield.htm#a14d058b16b33c9bd32e5194ec06a5c45":[5,0,226,3]
+"d9/d8d/classxii_bitfield.htm#a14d058b16b33c9bd32e5194ec06a5c45":[5,0,226,3],
+"d9/d8d/classxii_bitfield.htm#a16626b5ef28cd30717e4708d17f4f30c":[5,0,226,16],
+"d9/d8d/classxii_bitfield.htm#a1a4a344392e8592dc494b49afd2907fd":[5,0,226,13],
+"d9/d8d/classxii_bitfield.htm#a1ca04bb6b3023ec53ba2add1c639245f":[5,0,226,10],
+"d9/d8d/classxii_bitfield.htm#a1ea217f311634aae4bbca3da63e920f5":[5,0,226,1],
+"d9/d8d/classxii_bitfield.htm#a20bc8e770be3e20b7489109de3122e71":[5,0,226,17],
+"d9/d8d/classxii_bitfield.htm#a2fb987d8026ff8c8044599e411eeaf59":[5,0,226,9],
+"d9/d8d/classxii_bitfield.htm#a48826facb0abb3ed53e095ca0b6ef281":[5,0,226,15]
 };

@@ -1,6 +1,6 @@
 var classxii_x_r_interface =
 [
-    [ "CreateActor", "d9/d58/classxii_x_r_interface.htm#a8919da16c3f39d7ed6661ce4a91a2142", null ],
+    [ "CreateActor", "d9/d58/classxii_x_r_interface.htm#adc03ee0176fc2cd555085ade5c7a47b3", null ],
     [ "Deinitialize", "d9/d58/classxii_x_r_interface.htm#a38c9c8431b931e88e4bc2cc704549053", null ],
     [ "GetCurrentTexture", "d9/d58/classxii_x_r_interface.htm#ad88268bb680ccaf348dfefb5cdc442fa", null ],
     [ "GetHmdInfo", "d9/d58/classxii_x_r_interface.htm#ac3dd7b3f95dd86dcf7d8c951bacb2df8", null ],

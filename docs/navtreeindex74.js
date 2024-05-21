@@ -1,12 +1,5 @@
 var NAVTREEINDEX74 =
 {
-"d9/dcd/classxii_internal_1_1xii_allocator_mixin_reallocate.htm":[5,0,4,19],
-"d9/dcd/classxii_internal_1_1xii_allocator_mixin_reallocate.htm#a0683886e9fb0c833e0577242ac6998f7":[5,0,4,19,0],
-"d9/dce/structxii_hash_helper_3_01xii_script_world_module_1_1_function_context_01_4.htm":[5,0,1127],
-"d9/dcf/classxii_extractor.htm":[5,0,666],
-"d9/dcf/classxii_extractor.htm#a1847d009c1b5e012fe4c8b9856ead8c5":[5,0,666,11],
-"d9/dcf/classxii_extractor.htm#a24a2c297a6f33fc9498796440c2ece6f":[5,0,666,3],
-"d9/dcf/classxii_extractor.htm#a2dc923e1a10e38a2a2996c7bedd699e9":[5,0,666,2],
 "d9/dcf/classxii_extractor.htm#a61ebee5af1d28d6bd27fc4417eb291a3":[5,0,666,6],
 "d9/dcf/classxii_extractor.htm#a6ad13754e5dff124bf2b389509ebfd31":[5,0,666,4],
 "d9/dcf/classxii_extractor.htm#a7d48666c8ff4145e2e2153751d827e37":[5,0,666,1],
@@ -249,5 +242,12 @@ var NAVTREEINDEX74 =
 "d9/dfa/structxii_spatial_data_1_1_flags.htm#af5862f12e465dfd0c2a8341763eb45b2a21c5b0bd73f2082ff541a8ebe63d410a":[5,0,2171,1,2,0],
 "d9/dfa/structxii_spatial_data_1_1_flags.htm#af5862f12e465dfd0c2a8341763eb45b2a220df200d08a8f59d3ae44f18420cb42":[5,0,2171,1,2,2],
 "d9/dfa/structxii_spatial_data_1_1_flags.htm#af5862f12e465dfd0c2a8341763eb45b2a3f7e6e565d34314f4b1ea9d293068dd3":[5,0,2171,1,2,1],
-"d9/dfb/classxii_set_blackboard_number_anim_node.htm":[5,0,2054]
+"d9/dfb/classxii_set_blackboard_number_anim_node.htm":[5,0,2054],
+"d9/dfb/classxii_set_blackboard_number_anim_node.htm#a36839ef4f8d0b408b4b1e163b7c7488c":[5,0,2054,3],
+"d9/dfb/classxii_set_blackboard_number_anim_node.htm#a4550a0bff15fcd9c5bcfc1ee439cabda":[5,0,2054,2],
+"d9/dfb/classxii_set_blackboard_number_anim_node.htm#a55d47315e95a47002e0c2b9f918fe2f6":[5,0,2054,0],
+"d9/dfb/classxii_set_blackboard_number_anim_node.htm#a59046259946709834b35843edc344cd7":[5,0,2054,4],
+"d9/dfb/classxii_set_blackboard_number_anim_node.htm#a6dfa580cbda4104a5a92c8bb052a9147":[5,0,2054,5],
+"d9/dfb/classxii_set_blackboard_number_anim_node.htm#af55d413480379af72d96247569c5d0f8":[5,0,2054,1],
+"d9/dfd/classxii_texture_asset_document_generator.htm":[5,0,2315]
 };

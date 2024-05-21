@@ -138,9 +138,9 @@ virtual <a class="el" href="../../d9/d54/classxii_x_r_input_device.htm">xiiXRInp
 virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d58/classxii_x_r_interface.htm#a04db5fe79706e2302bff0b64d8844947">SupportsCompanionView</a> ()=0</td></tr>
 <tr class="memdesc:a04db5fe79706e2302bff0b64d8844947"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if a companion window can be passed into CreateActor. <br /></td></tr>
 <tr class="separator:a04db5fe79706e2302bff0b64d8844947"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8919da16c3f39d7ed6661ce4a91a2142"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d9/d4a/classxii_unique_ptr.htm">xiiUniquePtr</a>&lt; <a class="el" href="../../d0/d7c/classxii_actor.htm">xiiActor</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d58/classxii_x_r_interface.htm#a8919da16c3f39d7ed6661ce4a91a2142">CreateActor</a> (<a class="el" href="../../dd/df1/classxii_view.htm">xiiView</a> *pView, <a class="el" href="../../de/dfd/structxii_enum.htm">xiiEnum</a>&lt; <a class="el" href="../../d3/d01/structxii_g_a_l_sample_count.htm">xiiGALSampleCount</a> &gt; msaaCount=<a class="el" href="../../d3/d01/structxii_g_a_l_sample_count.htm#a9882b9a04c908ada09066d29eee92e7ca68cf0d727ddfe93e8ff646b391b3be88">xiiGALSampleCount::OneSample</a>, <a class="el" href="../../d9/d4a/classxii_unique_ptr.htm">xiiUniquePtr</a>&lt; <a class="el" href="../../de/dd5/classxii_window_base.htm">xiiWindowBase</a> &gt; pCompanionWindow=nullptr, <a class="el" href="../../d9/d4a/classxii_unique_ptr.htm">xiiUniquePtr</a>&lt; <a class="el" href="../../d9/d8d/classxii_window_output_target_g_a_l.htm">xiiWindowOutputTargetGAL</a> &gt; pCompanionWindowOutput=nullptr)=0</td></tr>
-<tr class="memdesc:a8919da16c3f39d7ed6661ce4a91a2142"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a XR actor by trying to startup an XR session.  <a href="../../d9/d58/classxii_x_r_interface.htm#a8919da16c3f39d7ed6661ce4a91a2142">More...</a><br /></td></tr>
-<tr class="separator:a8919da16c3f39d7ed6661ce4a91a2142"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc03ee0176fc2cd555085ade5c7a47b3"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d9/d4a/classxii_unique_ptr.htm">xiiUniquePtr</a>&lt; <a class="el" href="../../d0/d7c/classxii_actor.htm">xiiActor</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d58/classxii_x_r_interface.htm#adc03ee0176fc2cd555085ade5c7a47b3">CreateActor</a> (<a class="el" href="../../dd/df1/classxii_view.htm">xiiView</a> *pView, <a class="el" href="../../de/dfd/structxii_enum.htm">xiiEnum</a>&lt; <a class="el" href="../../d3/d28/structxii_g_a_l_m_s_a_a_sample_count.htm">xiiGALMSAASampleCount</a> &gt; msaaCount=<a class="el" href="../../d3/d28/structxii_g_a_l_m_s_a_a_sample_count.htm#a4d174563bcfff207aa4b781b51a206b5a9b851c99c8fbc4326f36a78a115f4864">xiiGALMSAASampleCount::OneSample</a>, <a class="el" href="../../d9/d4a/classxii_unique_ptr.htm">xiiUniquePtr</a>&lt; <a class="el" href="../../de/dd5/classxii_window_base.htm">xiiWindowBase</a> &gt; pCompanionWindow=nullptr, <a class="el" href="../../d9/d4a/classxii_unique_ptr.htm">xiiUniquePtr</a>&lt; <a class="el" href="../../d9/d8d/classxii_window_output_target_g_a_l.htm">xiiWindowOutputTargetGAL</a> &gt; pCompanionWindowOutput=nullptr)=0</td></tr>
+<tr class="memdesc:adc03ee0176fc2cd555085ade5c7a47b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a XR actor by trying to startup an XR session.  <a href="../../d9/d58/classxii_x_r_interface.htm#adc03ee0176fc2cd555085ade5c7a47b3">More...</a><br /></td></tr>
+<tr class="separator:adc03ee0176fc2cd555085ade5c7a47b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Internal</div></td></tr>
 <tr class="memitem:ad88268bb680ccaf348dfefb5cdc442fa"><td class="memItemLeft" align="right" valign="top"><a id="ad88268bb680ccaf348dfefb5cdc442fa"></a>
 virtual <a class="el" href="../../df/de3/classxii_g_a_l_texture_handle.htm">xiiGALTextureHandle</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d58/classxii_x_r_interface.htm#ad88268bb680ccaf348dfefb5cdc442fa">GetCurrentTexture</a> ()=0</td></tr>
@@ -155,8 +155,8 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <div class="textblock"><p>XR singleton interface. Needs to be initialized to be used for VR or AR purposes. </p>
 <p>To be used in a project the project needs to have an enabled <a class="el" href="../../da/d83/classxii_x_r_config.htm">xiiXRConfig</a> with a set render pipeline in the platform profile. To then use the interface, Initialize must be called first and on success CreateActor. Everything else is optional. Aquire interface via <a class="el" href="../../d2/d1c/classxii_singleton_registry.htm#a20e713fe8f06ba24320b390e67daa40f" title="Retrieves a singleton instance by type name. Returns nullptr if no singleton instance is available.">xiiSingletonRegistry::GetSingletonInstance&lt;xiiXRInterface&gt;()</a>. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a8919da16c3f39d7ed6661ce4a91a2142"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8919da16c3f39d7ed6661ce4a91a2142">&#9670;&nbsp;</a></span>CreateActor()</h2>
+<a id="adc03ee0176fc2cd555085ade5c7a47b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc03ee0176fc2cd555085ade5c7a47b3">&#9670;&nbsp;</a></span>CreateActor()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -173,8 +173,8 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../de/dfd/structxii_enum.htm">xiiEnum</a>&lt; <a class="el" href="../../d3/d01/structxii_g_a_l_sample_count.htm">xiiGALSampleCount</a> &gt;&#160;</td>
-          <td class="paramname"><em>msaaCount</em> = <code><a class="el" href="../../d3/d01/structxii_g_a_l_sample_count.htm#a9882b9a04c908ada09066d29eee92e7ca68cf0d727ddfe93e8ff646b391b3be88">xiiGALSampleCount::OneSample</a></code>, </td>
+          <td class="paramtype"><a class="el" href="../../de/dfd/structxii_enum.htm">xiiEnum</a>&lt; <a class="el" href="../../d3/d28/structxii_g_a_l_m_s_a_a_sample_count.htm">xiiGALMSAASampleCount</a> &gt;&#160;</td>
+          <td class="paramname"><em>msaaCount</em> = <code><a class="el" href="../../d3/d28/structxii_g_a_l_m_s_a_a_sample_count.htm#a4d174563bcfff207aa4b781b51a206b5a9b851c99c8fbc4326f36a78a115f4864">xiiGALMSAASampleCount::OneSample</a></code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -204,7 +204,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <p>Creates a XR actor by trying to startup an XR session. </p>
 <p>If SupportsCompanionView is true (VR only), a normal window and window output can be passed in. The window will be used to blit the VR output into the window. </p>
 
-<p>Implemented in <a class="el" href="../../d4/d73/classxii_dummy_x_r.htm#a96388e141375594f1e49f4027a3bd276">xiiDummyXR</a>.</p>
+<p>Implemented in <a class="el" href="../../d4/d73/classxii_dummy_x_r.htm#a220fa5b96e55f07789b2ecb95b17e4de">xiiDummyXR</a>.</p>
 
 </div>
 </div>
@@ -217,7 +217,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d9/d58/classxii_x_r_interface.htm">xiiXRInterface</a></li>
-    <li class="footer">Generated on Thu May 16 2024 17:17:37 for XIIEngine by
+    <li class="footer">Generated on Tue May 21 2024 15:38:48 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

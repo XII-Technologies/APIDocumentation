@@ -1,9 +1,5 @@
 var NAVTREEINDEX47 =
 {
-"d6/d16/classxii_typed_resource_handle.htm#ae4f3edf367352f79f75a699e7a0bd1ac":[5,0,2401,3],
-"d6/d16/classxii_typed_resource_handle.htm#af5dcb5ff16e5bdf9eb9d78ac5891d157":[5,0,2401,0],
-"d6/d16/structxii_texture_filter_setting.htm":[5,0,2334],
-"d6/d16/structxii_texture_filter_setting.htm#a16854add21ba4224b068d9c2353f89ec":[5,0,2334,0],
 "d6/d16/structxii_texture_filter_setting.htm#adeffb86a45553b3e55e0d9efeac98e8f":[5,0,2334,1],
 "d6/d16/structxii_texture_filter_setting.htm#adeffb86a45553b3e55e0d9efeac98e8fa02efd69fd6a62ea42946f0b5e512f4ea":[5,0,2334,1,3],
 "d6/d16/structxii_texture_filter_setting.htm#adeffb86a45553b3e55e0d9efeac98e8fa053b493d85ef5f63e893a75b8d5fc25f":[5,0,2334,1,8],
@@ -249,5 +245,9 @@ var NAVTREEINDEX47 =
 "d6/d41/classxii_mesh_view_context.htm#a0209bc30772a5481fc3ac9c613f1d73f":[5,0,1377,3],
 "d6/d41/classxii_mesh_view_context.htm#a0d741cade2264af62305b8b96009f31c":[5,0,1377,2],
 "d6/d41/classxii_mesh_view_context.htm#a1aeaa28fe7a6ff3f88224bbf134ff7f3":[5,0,1377,1],
-"d6/d41/classxii_mesh_view_context.htm#a2feec0115be133a495ebd86d6207c983":[5,0,1377,4]
+"d6/d41/classxii_mesh_view_context.htm#a2feec0115be133a495ebd86d6207c983":[5,0,1377,4],
+"d6/d41/classxii_mesh_view_context.htm#a53a4b9944cdde3cadf611b8aea9df5a4":[5,0,1377,5],
+"d6/d41/classxii_mesh_view_context.htm#af76826c8326622ca1ba03be57b1514c1":[5,0,1377,0],
+"d6/d42/classxii_deferred_file_writer.htm":[5,0,502],
+"d6/d42/classxii_deferred_file_writer.htm#a04af97e0d61c1f754aac4740456aaeb8":[5,0,502,0]
 };

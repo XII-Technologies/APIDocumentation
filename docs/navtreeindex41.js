@@ -1,8 +1,5 @@
 var NAVTREEINDEX41 =
 {
-"d5/d65/classxii_forward_events_to_game_state_component.htm":[5,0,702],
-"d5/d65/classxii_forward_events_to_game_state_component.htm#a594ddbf5e80de5511050d5dbcc8d5c6e":[5,0,702,0],
-"d5/d65/classxii_forward_events_to_game_state_component.htm#a6757210a796c52132330b92a7d0da84e":[5,0,702,4],
 "d5/d65/classxii_forward_events_to_game_state_component.htm#a6e9f96b9a15b258db62c2f40900d320d":[5,0,702,1],
 "d5/d65/classxii_forward_events_to_game_state_component.htm#a7f2f48f33fe4043ff22d35d6ae6db6a9":[5,0,702,3],
 "d5/d65/classxii_forward_events_to_game_state_component.htm#a97de051f65db15904d7310a769ffdebf":[5,0,702,5],
@@ -248,6 +245,9 @@ var NAVTREEINDEX41 =
 "d5/d85/classxii_direction_visualizer_adapter.htm#ad8317eb19d5142cf2d9a5e4b0d179a7c":[5,0,520,3],
 "d5/d85/classxii_direction_visualizer_adapter.htm#adf93b153387032f4acd015cd45263ac1":[5,0,520,1],
 "d5/d87/structxii_g_a_l_pipeline_state_creation_description.htm":[5,0,875],
-"d5/d87/structxii_g_a_l_pipeline_state_creation_description.htm#a0800f072e3c0583637a0c77a93c89890":[5,0,875,10],
-"d5/d87/structxii_g_a_l_pipeline_state_creation_description.htm#a354bb159aba0a2ccca94fb7a4070ae05":[5,0,875,9]
+"d5/d87/structxii_g_a_l_pipeline_state_creation_description.htm#a354bb159aba0a2ccca94fb7a4070ae05":[5,0,875,9],
+"d5/d87/structxii_g_a_l_pipeline_state_creation_description.htm#a5bfba94f652d68b0df5adafe005e0744":[5,0,875,11],
+"d5/d87/structxii_g_a_l_pipeline_state_creation_description.htm#a83c9fe2a0d406472671c65d93a1fe7b8":[5,0,875,7],
+"d5/d87/structxii_g_a_l_pipeline_state_creation_description.htm#a9f320c981a2e36634b6a0ac2cb11b28a":[5,0,875,12],
+"d5/d87/structxii_g_a_l_pipeline_state_creation_description.htm#a9f3cd8f209b5b507fc472ad04a21f39c":[5,0,875,2]
 };

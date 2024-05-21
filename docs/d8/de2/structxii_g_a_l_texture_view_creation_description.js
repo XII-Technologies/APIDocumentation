@@ -7,7 +7,6 @@ var structxii_g_a_l_texture_view_creation_description =
     [ "m_Format", "d8/de2/structxii_g_a_l_texture_view_creation_description.htm#a04eedb41a4626e6247a8d2b12288f056", null ],
     [ "m_hTexture", "d8/de2/structxii_g_a_l_texture_view_creation_description.htm#a1c4f5b7f07c4159d2ae78f16129e44c2", null ],
     [ "m_ResourceDimension", "d8/de2/structxii_g_a_l_texture_view_creation_description.htm#a8e9288f796ddcbc2c8dff1335b3bc6d7", null ],
-    [ "m_sName", "d8/de2/structxii_g_a_l_texture_view_creation_description.htm#a8b8ea945e4b939bd7fb838d6e8d70790", null ],
     [ "m_uiArrayOrDepthSlicesCount", "d8/de2/structxii_g_a_l_texture_view_creation_description.htm#ae3c05a7f5d8273103339a2f95dde6ae4", null ],
     [ "m_uiFirstArrayOrDepthSlice", "d8/de2/structxii_g_a_l_texture_view_creation_description.htm#aa7ecc229c99b2c5ec0157c187a678750", null ],
     [ "m_uiMipLevelCount", "d8/de2/structxii_g_a_l_texture_view_creation_description.htm#a175d12ea0418e5d07eab394594618ff1", null ],

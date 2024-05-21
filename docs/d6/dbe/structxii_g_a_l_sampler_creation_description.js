@@ -14,6 +14,5 @@ var structxii_g_a_l_sampler_creation_description =
     [ "m_MagFilter", "d6/dbe/structxii_g_a_l_sampler_creation_description.htm#a20cbbe223ac81d2a213ec1c094f2d9b3", null ],
     [ "m_MinFilter", "d6/dbe/structxii_g_a_l_sampler_creation_description.htm#ad8030afc3037bdcba1f1d582a240040d", null ],
     [ "m_MipFilter", "d6/dbe/structxii_g_a_l_sampler_creation_description.htm#ae9713c2507021c2ae1787a29fc2d7ad4", null ],
-    [ "m_sName", "d6/dbe/structxii_g_a_l_sampler_creation_description.htm#aa566931059f0ba7a7928324d16edbe36", null ],
     [ "m_uiMaxAnisotropy", "d6/dbe/structxii_g_a_l_sampler_creation_description.htm#a65da0c3d8fac33e0ccf23c34a2d049fc", null ]
 ];

@@ -1,16 +1,5 @@
 var NAVTREEINDEX94 =
 {
-"dc/d80/classxii_g_a_l_command_list.htm#abb5d9a29bcda2e5c57349023168cfc0f":[5,0,767,11],
-"dc/d80/classxii_g_a_l_command_list.htm#abd6e31a366a624a29983f6c07d82770b":[5,0,767,39],
-"dc/d80/classxii_g_a_l_command_list.htm#abeef8cb917892ac071b1b08506bd1115":[5,0,767,13],
-"dc/d80/classxii_g_a_l_command_list.htm#ac0a1c45e5920abc65a119240043852b4":[5,0,767,16],
-"dc/d80/classxii_g_a_l_command_list.htm#ac1a6dc6554fab475565ea967a9223363":[5,0,767,8],
-"dc/d80/classxii_g_a_l_command_list.htm#ac57082378c10cd11435074b6bd80b038":[5,0,767,55],
-"dc/d80/classxii_g_a_l_command_list.htm#ac7b8cce2392638436136829725a634e2":[5,0,767,40],
-"dc/d80/classxii_g_a_l_command_list.htm#ac898f7668150aee4cabb3254df8ece64":[5,0,767,15],
-"dc/d80/classxii_g_a_l_command_list.htm#ad357d58e2c9bc078fcdedf28cab7b289":[5,0,767,59],
-"dc/d80/classxii_g_a_l_command_list.htm#ad381f75e3c3f6f8548bb5385429c4647":[5,0,767,45],
-"dc/d80/classxii_g_a_l_command_list.htm#ad4a38866c43d949b99d920d906c1c604":[5,0,767,44],
 "dc/d80/classxii_g_a_l_command_list.htm#adb87aa1e4995cbdc638f684bdec42b49":[5,0,767,50],
 "dc/d80/classxii_g_a_l_command_list.htm#ae4790cc43eb961740e267e18e1a7bf69":[5,0,767,9],
 "dc/d80/classxii_g_a_l_command_list.htm#ae550b06b7f0cf83a7b5ea64ba4425c76":[5,0,767,35],
@@ -249,5 +238,16 @@ var NAVTREEINDEX94 =
 "dc/d98/structxii_variant_adapter_3_01_t_00_01_c_00_011_00_010_01_4.htm#a7520ea56f2f9ac6731b50c78e6234305":[5,0,2430,0],
 "dc/d98/structxii_variant_adapter_3_01_t_00_01_c_00_011_00_010_01_4.htm#aa58f1e3bde06b9704a695df8bba2c653":[5,0,2430,1],
 "dc/d98/structxii_variant_adapter_3_01_t_00_01_c_00_011_00_010_01_4.htm#ad9c59f43ceedfb81968a5687755b0acb":[5,0,2430,4],
-"dc/d98/structxii_variant_adapter_3_01_t_00_01_c_00_011_00_010_01_4.htm#ada2d3a3c61af294c558b4d44cf7e2b7f":[5,0,2430,3]
+"dc/d98/structxii_variant_adapter_3_01_t_00_01_c_00_011_00_010_01_4.htm#ada2d3a3c61af294c558b4d44cf7e2b7f":[5,0,2430,3],
+"dc/d9a/structxii_blackboard_condition.htm":[5,0,236],
+"dc/d9a/structxii_blackboard_condition.htm#a4ff6231c791b73387da7855b11ad5b34":[5,0,236,4],
+"dc/d9a/structxii_blackboard_condition.htm#a6a52ae75cc34873c86bba8d6d85f3126":[5,0,236,3],
+"dc/d9a/structxii_blackboard_condition.htm#a7332f36af548eff56a2433f05657d7a9":[5,0,236,1],
+"dc/d9a/structxii_blackboard_condition.htm#a9bbb326f528a9e82be330bc82d0f4a3a":[5,0,236,5],
+"dc/d9a/structxii_blackboard_condition.htm#ab98f1949690b7ac4558328dec43fd850":[5,0,236,0],
+"dc/d9a/structxii_blackboard_condition.htm#adc668004fbc12ad9b1230773bc02f959":[5,0,236,2],
+"dc/d9b/classxii_typed_enum_property.htm":[5,0,2394],
+"dc/d9b/classxii_typed_enum_property.htm#a9e9c86cc981d4024cdfd48e6c9d547e5":[5,0,2394,1],
+"dc/d9b/classxii_typed_enum_property.htm#ac499e4c8ab01b53ae613d5d1b05356b0":[5,0,2394,0],
+"dc/d9e/structxii_g_a_l_ray_tracing_pipeline_description.htm":[5,0,906]
 };

@@ -1,11 +1,5 @@
 var NAVTREEINDEX69 =
 {
-"d9/d21/classxii_simd_vec4u.htm#af1f338765959fff21c545412a627297d":[5,0,2109,16],
-"d9/d21/classxii_simd_vec4u.htm#af8fd8a19175c008243c52a7024c70b2f":[5,0,2109,31],
-"d9/d21/classxii_simd_vec4u.htm#af9178ac1fd9423fc90b106371e252744":[5,0,2109,35],
-"d9/d21/classxii_simd_vec4u.htm#af928152af03bd3e1ead6091d3b7e2a09":[5,0,2109,10],
-"d9/d23/structxii_spatial_data_1_1_flags_1_1_bits.htm":[5,0,2171,1,0],
-"d9/d23/structxii_spatial_data_1_1_flags_1_1_bits.htm#ab6b836ca22305c4e5efeaf5081c6bf3b":[5,0,2171,1,0,0],
 "d9/d24/structxii_hash_helper_3_01xii_string_view_01_4.htm":[5,0,1128],
 "d9/d25/classxii_static_array.htm":[5,0,2233],
 "d9/d25/classxii_static_array.htm#a21b9be3313d3203c8eebb103d46acaa7":[5,0,2233,6],
@@ -249,5 +243,11 @@ var NAVTREEINDEX69 =
 "d9/d54/classxii_processing_stream_processor.htm#a6a8015749dbe3bebb0d4671fd62c0a76":[5,0,1563,4],
 "d9/d54/classxii_processing_stream_processor.htm#a7ab9f98bc575fd5752058cb66d21e1d4":[5,0,1563,5],
 "d9/d54/classxii_processing_stream_processor.htm#a98064c8a8e4c312701da27c29204cfb5":[5,0,1563,2],
-"d9/d54/classxii_processing_stream_processor.htm#ac05143522424f0e70671b93f4ca68940":[5,0,1563,3]
+"d9/d54/classxii_processing_stream_processor.htm#ac05143522424f0e70671b93f4ca68940":[5,0,1563,3],
+"d9/d54/classxii_processing_stream_processor.htm#af90bee21a3c085aa50a16411c2b7c26f":[5,0,1563,1],
+"d9/d54/classxii_processing_stream_processor.htm#afab242dc3fbaa188e2eae7ca08b7de8a":[5,0,1563,7],
+"d9/d54/classxii_x_r_input_device.htm":[5,0,2566],
+"d9/d54/classxii_x_r_input_device.htm#a0467b95b12d98bb9d33c7ae8152256a0":[5,0,2566,6],
+"d9/d54/classxii_x_r_input_device.htm#a328533a2c6d0b2c68c95c4cab6642e9f":[5,0,2566,3],
+"d9/d54/classxii_x_r_input_device.htm#a4024ccd7edb3ecc163b885fa8445bc5e":[5,0,2566,4]
 };
