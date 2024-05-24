@@ -1,6 +1,5 @@
 var NAVTREEINDEX52 =
 {
-"d6/daa/classxii_set_base.htm#a945ed5e59fddd5c68117a7f741533498":[5,0,2052,23],
 "d6/daa/classxii_set_base.htm#a949710a7061f08ce30ec98e73c62002d":[5,0,2052,21],
 "d6/daa/classxii_set_base.htm#aa22e1e00a492c0735196cdb2a4e36c39":[5,0,2052,27],
 "d6/daa/classxii_set_base.htm#ab3d6ef2b492e4b048201e9897a956533":[5,0,2052,18],
@@ -249,5 +248,6 @@ var NAVTREEINDEX52 =
 "d6/dc8/classxii_tag_set_template.htm#a9830fc407400559db7e7783cc10a9394":[5,0,2277,16],
 "d6/dc8/classxii_tag_set_template.htm#abb3dea31b5e671cfd5fc740980506f26":[5,0,2277,14],
 "d6/dc8/classxii_tag_set_template.htm#abe13c27c78b8c4ba0d473d1866094826":[5,0,2277,8],
-"d6/dc8/classxii_tag_set_template.htm#abe850bb458adaf6ec2b2e8cc32b0aee0":[5,0,2277,7]
+"d6/dc8/classxii_tag_set_template.htm#abe850bb458adaf6ec2b2e8cc32b0aee0":[5,0,2277,7],
+"d6/dc8/classxii_tag_set_template.htm#ac1bf8cb7d63adecaab8eca15b6ee5812":[5,0,2277,10]
 };

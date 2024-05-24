@@ -1,10 +1,5 @@
 var NAVTREEINDEX107 =
 {
-"de/d5e/classxii_qt_node_scene.htm#aa15db6ecbffd67297f007dd231dcdf3b":[5,0,1746,12],
-"de/d5e/classxii_qt_node_scene.htm#ac473896cdbb76871a29d72c71f25f0dd":[5,0,1746,17],
-"de/d5e/classxii_qt_node_scene.htm#ac481c2cb22918b1603711c1f36f01a35":[5,0,1746,9],
-"de/d5e/classxii_qt_node_scene.htm#ac6833d996054485d6826ac43141ed44c":[5,0,1746,14],
-"de/d5e/classxii_qt_node_scene.htm#acfb71ed932947263d7803640657fcadd":[5,0,1746,18],
 "de/d5e/classxii_qt_node_scene.htm#ae32f088587559f7a8392e9f8df84facf":[5,0,1746,20],
 "de/d5e/classxii_qt_node_scene.htm#aeb5824378af91b7d3e5fd7012270b6e4":[5,0,1746,13],
 "de/d5e/classxii_qt_node_scene.htm#af0ece7737fd25262823e01cdcb9c4311":[5,0,1746,3],
@@ -249,5 +244,10 @@ var NAVTREEINDEX107 =
 "de/d85/structxii_property_anim_resource_descriptor.htm#abb282ceb2b2d028a62935f79998e8d7c":[5,0,1594,1],
 "de/d85/structxii_property_anim_resource_descriptor.htm#ae24ad19268cbe0b8c25237b52cdcf73d":[5,0,1594,4],
 "de/d86/classxii_color_gradient.htm":[5,0,320],
-"de/d86/classxii_color_gradient.htm#a0df3b00a79fa67edf088ef201837b339":[5,0,320,22]
+"de/d86/classxii_color_gradient.htm#a0df3b00a79fa67edf088ef201837b339":[5,0,320,22],
+"de/d86/classxii_color_gradient.htm#a1f27ef5088bbad54ae026c714d011438":[5,0,320,10],
+"de/d86/classxii_color_gradient.htm#a2977b17e53570dacaa4556433328983a":[5,0,320,8],
+"de/d86/classxii_color_gradient.htm#a3e9f39607da611adc18403a83e4cfc99":[5,0,320,3],
+"de/d86/classxii_color_gradient.htm#a4804f229b8e79061ab46940e5845453f":[5,0,320,14],
+"de/d86/classxii_color_gradient.htm#a49af9daf9d6b3362c52cead4cebc1f45":[5,0,320,4]
 };

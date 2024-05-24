@@ -1,9 +1,5 @@
 var NAVTREEINDEX71 =
 {
-"d9/d69/structxii_task_priority.htm#a589b670e647f702ed5e040699245eac1":[5,0,2284,0],
-"d9/d6a/classxii_qt_dynamic_string_enum_property_widget.htm":[5,0,1678],
-"d9/d6a/classxii_qt_dynamic_string_enum_property_widget.htm#a15b015720d592f87256af4dd43d97869":[5,0,1678,6],
-"d9/d6a/classxii_qt_dynamic_string_enum_property_widget.htm#a2a80083c47aa78438202d6779a43dce3":[5,0,1678,5],
 "d9/d6a/classxii_qt_dynamic_string_enum_property_widget.htm#a5df0c6bae96687392023ab7c670ac96d":[5,0,1678,3],
 "d9/d6a/classxii_qt_dynamic_string_enum_property_widget.htm#a6593180c372bb4a7ff28907b28ca2793":[5,0,1678,1],
 "d9/d6a/classxii_qt_dynamic_string_enum_property_widget.htm#aa952a91829219f3cbe13447fa56f3d97":[5,0,1678,0],
@@ -249,5 +245,9 @@ var NAVTREEINDEX71 =
 "d9/d8d/classxii_bitfield.htm#a1ea217f311634aae4bbca3da63e920f5":[5,0,226,1],
 "d9/d8d/classxii_bitfield.htm#a20bc8e770be3e20b7489109de3122e71":[5,0,226,17],
 "d9/d8d/classxii_bitfield.htm#a2fb987d8026ff8c8044599e411eeaf59":[5,0,226,9],
-"d9/d8d/classxii_bitfield.htm#a48826facb0abb3ed53e095ca0b6ef281":[5,0,226,15]
+"d9/d8d/classxii_bitfield.htm#a48826facb0abb3ed53e095ca0b6ef281":[5,0,226,15],
+"d9/d8d/classxii_bitfield.htm#a5a00c7b5ba184dc51afbcca71517a10e":[5,0,226,11],
+"d9/d8d/classxii_bitfield.htm#a5b5bc21358817b1b2550fe501c29ba24":[5,0,226,2],
+"d9/d8d/classxii_bitfield.htm#a68a80b4a141a4d1aa78aa49195537259":[5,0,226,6],
+"d9/d8d/classxii_bitfield.htm#a95603758703fdbe17becb1bbb58ad064":[5,0,226,5]
 };

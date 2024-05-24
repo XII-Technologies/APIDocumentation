@@ -1,9 +1,5 @@
 var NAVTREEINDEX69 =
 {
-"d9/d24/structxii_hash_helper_3_01xii_string_view_01_4.htm":[5,0,1128],
-"d9/d25/classxii_static_array.htm":[5,0,2233],
-"d9/d25/classxii_static_array.htm#a21b9be3313d3203c8eebb103d46acaa7":[5,0,2233,6],
-"d9/d25/classxii_static_array.htm#a2762dfbf84778f41a4182c9b691592cd":[5,0,2233,7],
 "d9/d25/classxii_static_array.htm#a41117b60dcdbec17f4cbb9077fb3a11b":[5,0,2233,4],
 "d9/d25/classxii_static_array.htm#a4bd1765b0ae74efcd76cee1f75cdd50b":[5,0,2233,2],
 "d9/d25/classxii_static_array.htm#a754ffe1e90dcb18e5f6e7a75061c0376":[5,0,2233,13],
@@ -249,5 +245,9 @@ var NAVTREEINDEX69 =
 "d9/d54/classxii_x_r_input_device.htm":[5,0,2566],
 "d9/d54/classxii_x_r_input_device.htm#a0467b95b12d98bb9d33c7ae8152256a0":[5,0,2566,6],
 "d9/d54/classxii_x_r_input_device.htm#a328533a2c6d0b2c68c95c4cab6642e9f":[5,0,2566,3],
-"d9/d54/classxii_x_r_input_device.htm#a4024ccd7edb3ecc163b885fa8445bc5e":[5,0,2566,4]
+"d9/d54/classxii_x_r_input_device.htm#a4024ccd7edb3ecc163b885fa8445bc5e":[5,0,2566,4],
+"d9/d54/classxii_x_r_input_device.htm#a505fd850c5b0a477f271c8f424cfa1d6":[5,0,2566,1],
+"d9/d54/classxii_x_r_input_device.htm#a57155a438c7b86d16b1abee9b996de90":[5,0,2566,2],
+"d9/d54/classxii_x_r_input_device.htm#a6d486c0ed22c6bec29094a94401f9197":[5,0,2566,5],
+"d9/d54/classxii_x_r_input_device.htm#a86746cb38173404a938dec886dcb04c6":[5,0,2566,0]
 };

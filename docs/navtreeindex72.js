@@ -1,9 +1,5 @@
 var NAVTREEINDEX72 =
 {
-"d9/d8d/classxii_bitfield.htm#a5a00c7b5ba184dc51afbcca71517a10e":[5,0,226,11],
-"d9/d8d/classxii_bitfield.htm#a5b5bc21358817b1b2550fe501c29ba24":[5,0,226,2],
-"d9/d8d/classxii_bitfield.htm#a68a80b4a141a4d1aa78aa49195537259":[5,0,226,6],
-"d9/d8d/classxii_bitfield.htm#a95603758703fdbe17becb1bbb58ad064":[5,0,226,5],
 "d9/d8d/classxii_bitfield.htm#a9ad2778e76beb59fbbb3e9d5f2b51f3a":[5,0,226,18],
 "d9/d8d/classxii_bitfield.htm#a9b41ce94d73f61a55f267a39d4b023bf":[5,0,226,12],
 "d9/d8d/classxii_bitfield.htm#adcdf30c8f58cdbbf3e77d8d209857e2e":[5,0,226,7],
@@ -249,5 +245,9 @@ var NAVTREEINDEX72 =
 "d9/da1/unionxii_delegate_base_1_1_instance_ptr.htm":[5,0,505,0],
 "d9/da1/unionxii_delegate_base_1_1_instance_ptr.htm#ac57d73c8292381d8c215895981b34c9d":[5,0,505,0,0],
 "d9/da1/unionxii_delegate_base_1_1_instance_ptr.htm#adf4a5f746f4cc899de90ccb66afca550":[5,0,505,0,1],
-"d9/da4/structxii_g_a_l_shading_rate_axis.htm":[5,0,972]
+"d9/da4/structxii_g_a_l_shading_rate_axis.htm":[5,0,972],
+"d9/da4/structxii_g_a_l_shading_rate_axis.htm#a5f7f82a3f75ecca67ff7a96db7db90e8":[5,0,972,0],
+"d9/da4/structxii_g_a_l_shading_rate_axis.htm#accf1fa3cf171c749378e92293601ec08":[5,0,972,1],
+"d9/da4/structxii_g_a_l_shading_rate_axis.htm#accf1fa3cf171c749378e92293601ec08a01d6b0e82c6e7c5f05eb0b16256bfa33":[5,0,972,1,4],
+"d9/da4/structxii_g_a_l_shading_rate_axis.htm#accf1fa3cf171c749378e92293601ec08a30dbf00c405b0dc3086d95f0892ccf93":[5,0,972,1,1]
 };

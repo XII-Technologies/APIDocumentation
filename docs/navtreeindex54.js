@@ -1,6 +1,5 @@
 var NAVTREEINDEX54 =
 {
-"d6/def/classxii_remove_object_command.htm":[5,0,1891],
 "d6/def/classxii_remove_object_command.htm#a0a46af295e88365c6938f336ff264be7":[5,0,1891,3],
 "d6/def/classxii_remove_object_command.htm#a77bc202c58d1fe28be6943d527c2d90d":[5,0,1891,4],
 "d6/def/classxii_remove_object_command.htm#a93d7c9ba5acc1567f6fa669a196c6ef6":[5,0,1891,1],
@@ -249,5 +248,6 @@ var NAVTREEINDEX54 =
 "d7/d1b/classxii_cone_visualizer_attribute.htm#ac8248d891789a2579858891fb0df9cc1":[5,0,381,3],
 "d7/d1b/classxii_cone_visualizer_attribute.htm#af55feb6de91012c3816536838647307e":[5,0,381,2],
 "d7/d1b/classxii_cone_visualizer_attribute.htm#aff2aa09b583b04413ace9dc0d2797d7a":[5,0,381,5],
-"d7/d1f/structxii_g_a_l_shader_variable_description.htm":[5,0,967]
+"d7/d1f/structxii_g_a_l_shader_variable_description.htm":[5,0,967],
+"d7/d1f/structxii_g_a_l_shader_variable_description.htm#a104a214525a1a8f5eeedd1c66279d419":[5,0,967,0]
 };

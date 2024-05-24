@@ -1,6 +1,5 @@
 var NAVTREEINDEX35 =
 {
-"d4/dbf/structxii_variant_assignment_adapter_3_01_t_00_01xii_bitflags_3_01_s_01_4_00_010_01_4.htm":[5,0,2444],
 "d4/dbf/structxii_variant_assignment_adapter_3_01_t_00_01xii_bitflags_3_01_s_01_4_00_010_01_4.htm#a7196bc3a358352e845ca4a37ebc798c1":[5,0,2444,1],
 "d4/dbf/structxii_variant_assignment_adapter_3_01_t_00_01xii_bitflags_3_01_s_01_4_00_010_01_4.htm#a832aef4d3fc533dfc93dc90d8edf0d74":[5,0,2444,2],
 "d4/dbf/structxii_variant_assignment_adapter_3_01_t_00_01xii_bitflags_3_01_s_01_4_00_010_01_4.htm#a85f34ac8338c46ca39f54575152f3ab9":[5,0,2444,0],
@@ -249,5 +248,6 @@ var NAVTREEINDEX35 =
 "d4/ddf/classxii_state_map.htm#a17f27b16a854457299b14333072e8695":[5,0,2231,2],
 "d4/ddf/classxii_state_map.htm#a2afda5edfe98878c3c54f013a45598a3":[5,0,2231,12],
 "d4/ddf/classxii_state_map.htm#a2c7e2140b00b9ddd6a2da0fdfbc7e0c4":[5,0,2231,9],
-"d4/ddf/classxii_state_map.htm#a390935b40614b64c93c9f2fa30decde7":[5,0,2231,13]
+"d4/ddf/classxii_state_map.htm#a390935b40614b64c93c9f2fa30decde7":[5,0,2231,13],
+"d4/ddf/classxii_state_map.htm#a41f8240035065fd7328fbd59132b3626":[5,0,2231,11]
 };

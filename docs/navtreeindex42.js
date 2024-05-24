@@ -1,6 +1,5 @@
 var NAVTREEINDEX42 =
 {
-"d5/d87/structxii_g_a_l_pipeline_state_creation_description.htm#aac27d6e726470ce3af72f9264be4061c":[5,0,875,1],
 "d5/d87/structxii_g_a_l_pipeline_state_creation_description.htm#ac284729be2663f6436a3714de39357c7":[5,0,875,8],
 "d5/d87/structxii_g_a_l_pipeline_state_creation_description.htm#ac96cd9e106b41dbc586451df1e742069":[5,0,875,0],
 "d5/d87/structxii_g_a_l_pipeline_state_creation_description.htm#ac98f56920a40ee76c289970005e21c43":[5,0,875,10],
@@ -249,5 +248,6 @@ var NAVTREEINDEX42 =
 "d5/db1/classxii_ozz_archive_data.htm#aaa3446f86da1085725d7b6ec7988dfb1":[5,0,1481,1],
 "d5/db1/classxii_ozz_archive_data.htm#ab5d0670fcf1797428acbb320b2a1b973":[5,0,1481,0],
 "d5/db1/classxii_ozz_archive_data.htm#ae3b3769cc403ed6cb6ef60e688b39185":[5,0,1481,2],
-"d5/db1/classxii_ozz_archive_data.htm#afb733d122233f8f206a7edd340c8d67f":[5,0,1481,4]
+"d5/db1/classxii_ozz_archive_data.htm#afb733d122233f8f206a7edd340c8d67f":[5,0,1481,4],
+"d5/db1/structxii_resource_manager_event.htm":[5,0,1943]
 };

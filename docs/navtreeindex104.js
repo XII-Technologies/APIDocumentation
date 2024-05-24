@@ -1,10 +1,5 @@
 var NAVTREEINDEX104 =
 {
-"dd/de7/classxii_light_component.htm#a7dd1f3b8a39188fcd11488d6b3980225":[5,0,1257,3],
-"dd/de7/classxii_light_component.htm#a8f70844f65e246ffc335c355bae28a77":[5,0,1257,5],
-"dd/de7/classxii_light_component.htm#aafe7d862f37bb1885cf2744ceee37733":[5,0,1257,7],
-"dd/de7/classxii_light_component.htm#ab50a2c7ea1433ffe7ebbcadff93be611":[5,0,1257,2],
-"dd/de7/classxii_light_component.htm#ab66d427f44ada69da3a5f4bd9c85bd36":[5,0,1257,11],
 "dd/de7/classxii_light_component.htm#acfc507e34f2efde2ee0b91d216f83bcb":[5,0,1257,17],
 "dd/de7/classxii_light_component.htm#ad14e0191e42f4cd05ddbe1f72e532fc9":[5,0,1257,16],
 "dd/de7/classxii_light_component.htm#adc5cb9b20ddd188794d4144dbb8b4390":[5,0,1257,1],
@@ -249,5 +244,10 @@ var NAVTREEINDEX104 =
 "de/d04/structxii_g_a_l_shader_primitive_type.htm#a1610874798251f36546edc21e7db770ca004a42d1e7ce5920ae8d5d9ea215ad90":[5,0,951,1,22],
 "de/d04/structxii_g_a_l_shader_primitive_type.htm#a1610874798251f36546edc21e7db770ca07474614168de881170985dc53d33905":[5,0,951,1,8],
 "de/d04/structxii_g_a_l_shader_primitive_type.htm#a1610874798251f36546edc21e7db770ca0c94c4da413c42221a484e55489d07ac":[5,0,951,1,13],
-"de/d04/structxii_g_a_l_shader_primitive_type.htm#a1610874798251f36546edc21e7db770ca18b31d345d599be45d89422c38814852":[5,0,951,1,3]
+"de/d04/structxii_g_a_l_shader_primitive_type.htm#a1610874798251f36546edc21e7db770ca18b31d345d599be45d89422c38814852":[5,0,951,1,3],
+"de/d04/structxii_g_a_l_shader_primitive_type.htm#a1610874798251f36546edc21e7db770ca38c3a458481af17fe5df4d717ab65627":[5,0,951,1,18],
+"de/d04/structxii_g_a_l_shader_primitive_type.htm#a1610874798251f36546edc21e7db770ca3fdc0d9b01722d9838419dab7802ee87":[5,0,951,1,11],
+"de/d04/structxii_g_a_l_shader_primitive_type.htm#a1610874798251f36546edc21e7db770ca5b13a2d1110f6b5d3c593b7b587d9173":[5,0,951,1,21],
+"de/d04/structxii_g_a_l_shader_primitive_type.htm#a1610874798251f36546edc21e7db770ca5c59ba164c9881f407780b7051685e59":[5,0,951,1,14],
+"de/d04/structxii_g_a_l_shader_primitive_type.htm#a1610874798251f36546edc21e7db770ca6cbfa88499ad7b825a930cc20de4f84f":[5,0,951,1,10]
 };

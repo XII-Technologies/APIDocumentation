@@ -1,6 +1,5 @@
 var NAVTREEINDEX41 =
 {
-"d5/d65/classxii_forward_events_to_game_state_component.htm#a6e9f96b9a15b258db62c2f40900d320d":[5,0,702,1],
 "d5/d65/classxii_forward_events_to_game_state_component.htm#a7f2f48f33fe4043ff22d35d6ae6db6a9":[5,0,702,3],
 "d5/d65/classxii_forward_events_to_game_state_component.htm#a97de051f65db15904d7310a769ffdebf":[5,0,702,5],
 "d5/d65/classxii_forward_events_to_game_state_component.htm#afcfe4e1520175f3700a5f9744d51e085":[5,0,702,2],
@@ -249,5 +248,6 @@ var NAVTREEINDEX41 =
 "d5/d87/structxii_g_a_l_pipeline_state_creation_description.htm#a5bfba94f652d68b0df5adafe005e0744":[5,0,875,11],
 "d5/d87/structxii_g_a_l_pipeline_state_creation_description.htm#a83c9fe2a0d406472671c65d93a1fe7b8":[5,0,875,7],
 "d5/d87/structxii_g_a_l_pipeline_state_creation_description.htm#a9f320c981a2e36634b6a0ac2cb11b28a":[5,0,875,12],
-"d5/d87/structxii_g_a_l_pipeline_state_creation_description.htm#a9f3cd8f209b5b507fc472ad04a21f39c":[5,0,875,2]
+"d5/d87/structxii_g_a_l_pipeline_state_creation_description.htm#a9f3cd8f209b5b507fc472ad04a21f39c":[5,0,875,2],
+"d5/d87/structxii_g_a_l_pipeline_state_creation_description.htm#aac27d6e726470ce3af72f9264be4061c":[5,0,875,1]
 };

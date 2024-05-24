@@ -1,10 +1,5 @@
 var NAVTREEINDEX91 =
 {
-"db/df8/classxii_engine_process_document_context.htm#aa05f65e6ae97fa3021d5af95397c24cc":[5,0,617,10],
-"db/df8/classxii_engine_process_document_context.htm#aad45b61d87f30fdd57127559e04ca95a":[5,0,617,23],
-"db/df8/classxii_engine_process_document_context.htm#aad7b61724e6b2678772786fb8c7eca4e":[5,0,617,32],
-"db/df8/classxii_engine_process_document_context.htm#ab51a0bd9319faa3f3386521df0d047a1":[5,0,617,17],
-"db/df8/classxii_engine_process_document_context.htm#abc47189a6ae39808f2a3917dcfd6bc53":[5,0,617,1],
 "db/df8/classxii_engine_process_document_context.htm#ac2556d479811612d5e395b78bd9b4dae":[5,0,617,3],
 "db/df8/classxii_engine_process_document_context.htm#ac71430d6b5b1d9a42e3812bfbab6a01e":[5,0,617,9],
 "db/df8/classxii_engine_process_document_context.htm#ac762d14fe2406eb0d0bc8c06ab5b221e":[5,0,617,29],
@@ -249,5 +244,10 @@ var NAVTREEINDEX91 =
 "dc/d30/classxii_game_grid.htm#a4a8b835837825ea1f3baf5f91f59629e":[5,0,1045,15],
 "dc/d30/classxii_game_grid.htm#a616cc427a4bf81aaed8eded4870c026f":[5,0,1045,2],
 "dc/d30/classxii_game_grid.htm#a6cea8755dc38e5b872a6cdacba4b9a10":[5,0,1045,17],
-"dc/d30/classxii_game_grid.htm#a72dfc0ea2a4adc8e5d1848ab178de18f":[5,0,1045,6]
+"dc/d30/classxii_game_grid.htm#a72dfc0ea2a4adc8e5d1848ab178de18f":[5,0,1045,6],
+"dc/d30/classxii_game_grid.htm#a79a50e94392e8f6c8640aef7af59e0de":[5,0,1045,7],
+"dc/d30/classxii_game_grid.htm#a827b980156262b7830c7b14d5c5794f0":[5,0,1045,5],
+"dc/d30/classxii_game_grid.htm#a952232a5c19548042525a110089214bf":[5,0,1045,11],
+"dc/d30/classxii_game_grid.htm#a96675b46e658d61d45b59933c5b420bb":[5,0,1045,27],
+"dc/d30/classxii_game_grid.htm#aa20c5275555db7cd8d4d084d583b4a00":[5,0,1045,16]
 };

@@ -1,6 +1,5 @@
 var NAVTREEINDEX20 =
 {
-"d2/d9c/structxii_physics_query_parameters.htm#aad344f96f3e35be151aa44dbc5f93940":[5,0,1514,2],
 "d2/d9c/structxii_physics_query_parameters.htm#abb09a98f5ca7ad9da95357c61a3a19a9":[5,0,1514,3],
 "d2/d9c/structxii_physics_query_parameters.htm#af4d5ef362a5210df95018383b64e668b":[5,0,1514,0],
 "d2/d9c/structxii_physics_query_parameters.htm#af6b235f8b1cf2286aa2bc30feb1bed7d":[5,0,1514,4],
@@ -249,5 +248,6 @@ var NAVTREEINDEX20 =
 "d2/dde/classxii_alpha_control_point.htm#a9d95590c34262db946e20c4899c79a65":[5,0,92,0],
 "d2/dde/classxii_alpha_control_point.htm#ad9d78ad662bdaed5124d5b4cfdb7fcf7":[5,0,92,2],
 "d2/dde/classxii_animated_mesh_asset_properties.htm":[5,0,102],
-"d2/dde/classxii_animated_mesh_asset_properties.htm#a08f169e6bd5676158fb66aacbee20488":[5,0,102,9]
+"d2/dde/classxii_animated_mesh_asset_properties.htm#a08f169e6bd5676158fb66aacbee20488":[5,0,102,9],
+"d2/dde/classxii_animated_mesh_asset_properties.htm#a13e29a618a70580b2aa4b99af825d387":[5,0,102,1]
 };

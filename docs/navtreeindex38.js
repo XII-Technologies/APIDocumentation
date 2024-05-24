@@ -1,6 +1,5 @@
 var NAVTREEINDEX38 =
 {
-"d5/d19/classxii_g_a_l_device.htm#a2bd649a77e672fccd8c69c4a52d950d1":[5,0,796,109],
 "d5/d19/classxii_g_a_l_device.htm#a3038eaa87ee9a0541bd64df6942bc62a":[5,0,796,119],
 "d5/d19/classxii_g_a_l_device.htm#a3167cc9d01d6202f5a031b31c94ba3f5":[5,0,796,108],
 "d5/d19/classxii_g_a_l_device.htm#a31b5126af59befd982a5eb0e45fcfa92":[5,0,796,87],
@@ -249,5 +248,6 @@ var NAVTREEINDEX38 =
 "d5/d2a/classxii_box_manipulator_adapter.htm#ae522cd7d32c759f882240f0438856409":[5,0,259,2],
 "d5/d2a/classxii_lens_flare_render_data.htm":[5,0,1254],
 "d5/d2a/classxii_lens_flare_render_data.htm#a00ebe116e22304b7ed2ce0f36e0ee84e":[5,0,1254,12],
-"d5/d2a/classxii_lens_flare_render_data.htm#a28b8f9fa062d168ee0fd2ee2e30f7851":[5,0,1254,3]
+"d5/d2a/classxii_lens_flare_render_data.htm#a28b8f9fa062d168ee0fd2ee2e30f7851":[5,0,1254,3],
+"d5/d2a/classxii_lens_flare_render_data.htm#a359507f57ba738a4f153e1e203c670b2":[5,0,1254,1]
 };

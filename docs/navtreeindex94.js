@@ -1,10 +1,5 @@
 var NAVTREEINDEX94 =
 {
-"dc/d80/classxii_g_a_l_command_list.htm#adb87aa1e4995cbdc638f684bdec42b49":[5,0,767,50],
-"dc/d80/classxii_g_a_l_command_list.htm#ae4790cc43eb961740e267e18e1a7bf69":[5,0,767,9],
-"dc/d80/classxii_g_a_l_command_list.htm#ae550b06b7f0cf83a7b5ea64ba4425c76":[5,0,767,35],
-"dc/d80/classxii_g_a_l_command_list.htm#ae5db92fec2b4395e7997b064c1eecd23":[5,0,767,37],
-"dc/d80/classxii_g_a_l_command_list.htm#ae63fa1ac124dcd169f0af1888dd2d350":[5,0,767,33],
 "dc/d80/classxii_g_a_l_command_list.htm#ae6df3301a016b3fb7cd676a17cff36fa":[5,0,767,48],
 "dc/d80/classxii_g_a_l_command_list.htm#ae84df76043098ac4d0ca2868bf7d4fb9":[5,0,767,58],
 "dc/d80/classxii_g_a_l_command_list.htm#aeab7b31eeaf17a4360a3f51aae9d4563":[5,0,767,28],
@@ -249,5 +244,10 @@ var NAVTREEINDEX94 =
 "dc/d9b/classxii_typed_enum_property.htm":[5,0,2394],
 "dc/d9b/classxii_typed_enum_property.htm#a9e9c86cc981d4024cdfd48e6c9d547e5":[5,0,2394,1],
 "dc/d9b/classxii_typed_enum_property.htm#ac499e4c8ab01b53ae613d5d1b05356b0":[5,0,2394,0],
-"dc/d9e/structxii_g_a_l_ray_tracing_pipeline_description.htm":[5,0,906]
+"dc/d9e/structxii_g_a_l_ray_tracing_pipeline_description.htm":[5,0,906],
+"dc/d9e/structxii_g_a_l_ray_tracing_pipeline_description.htm#a6d4fe53aea86c49a1b096f81c6518e47":[5,0,906,0],
+"dc/d9e/structxii_g_a_l_ray_tracing_pipeline_description.htm#a8379fc6241f98d9579b7ec33196219fe":[5,0,906,1],
+"dc/d9e/structxii_g_a_l_ray_tracing_pipeline_description.htm#a83cce566258b0e03070d56b9282cc4d6":[5,0,906,2],
+"dc/da0/classxii_collection_asset_document_manager.htm":[5,0,307],
+"dc/da0/classxii_collection_asset_document_manager.htm#a06e71b251ebd220d5b1d501a639c5049":[5,0,307,4]
 };

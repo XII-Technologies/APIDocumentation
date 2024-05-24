@@ -1,6 +1,5 @@
 var NAVTREEINDEX22 =
 {
-"d3/d01/structxii_g_a_l_sample_count.htm#a9882b9a04c908ada09066d29eee92e7ca44ecb5266f59db3d5dcae8f923550094":[5,0,926,2,9],
 "d3/d01/structxii_g_a_l_sample_count.htm#a9882b9a04c908ada09066d29eee92e7ca655dc8606102434cae9b06e1cd5be653":[5,0,926,2,0],
 "d3/d01/structxii_g_a_l_sample_count.htm#a9882b9a04c908ada09066d29eee92e7ca68cf0d727ddfe93e8ff646b391b3be88":[5,0,926,2,1],
 "d3/d01/structxii_g_a_l_sample_count.htm#a9882b9a04c908ada09066d29eee92e7ca734bf98e6540e3eff470c5204c58dd59":[5,0,926,2,3],
@@ -249,5 +248,6 @@ var NAVTREEINDEX22 =
 "d3/d27/structxii_rasterization_result.htm":[5,0,1849],
 "d3/d27/structxii_rasterization_result.htm#abbba280f0d6eb6edf98ef93231933d75":[5,0,1849,0],
 "d3/d27/structxii_rasterization_result.htm#abbba280f0d6eb6edf98ef93231933d75adff565060e5d851ee87fcbdb44e85120":[5,0,1849,0,1],
-"d3/d27/structxii_rasterization_result.htm#abbba280f0d6eb6edf98ef93231933d75afebbde49c8f51fb222670cd8bba27387":[5,0,1849,0,0]
+"d3/d27/structxii_rasterization_result.htm#abbba280f0d6eb6edf98ef93231933d75afebbde49c8f51fb222670cd8bba27387":[5,0,1849,0,0],
+"d3/d28/structxii_g_a_l_m_s_a_a_sample_count.htm":[5,0,859]
 };

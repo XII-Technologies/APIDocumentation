@@ -1,10 +1,5 @@
 var NAVTREEINDEX113 =
 {
-"df/d5a/classxii_qt_orbit_cam_view_widget.htm#a9fae8f5b0324a10caa8f3e09f296a031":[5,0,1748,5],
-"df/d5a/classxii_qt_orbit_cam_view_widget.htm#aa88c6aef373bbf9c64664cfe86f9bbfc":[5,0,1748,6],
-"df/d5a/classxii_qt_orbit_cam_view_widget.htm#ac0fe29385324d1764b9afd6888969d60":[5,0,1748,3],
-"df/d5a/classxii_qt_orbit_cam_view_widget.htm#ae24656844d241eb6998940f9595f1d68":[5,0,1748,0],
-"df/d5a/classxii_qt_orbit_cam_view_widget.htm#af05c460dd8101e7c31167acddd0ef5f3":[5,0,1748,1],
 "df/d5a/structxii_o_s_file_1_1_event_type.htm":[5,0,1479,1],
 "df/d5a/structxii_o_s_file_1_1_event_type.htm#a52172654446c2626c5ba78e1d7685d38":[5,0,1479,1,0],
 "df/d5a/structxii_o_s_file_1_1_event_type.htm#a52172654446c2626c5ba78e1d7685d38a14607a537c9eac128863a96d3235c310":[5,0,1479,1,0,6],
@@ -249,5 +244,10 @@ var NAVTREEINDEX113 =
 "df/d72/classxii_simple_wind_component.htm#a1c452ff2d607ef2f23250f764a78c11f":[5,0,2117,16],
 "df/d72/classxii_simple_wind_component.htm#a28a05d9d1a5e43f7da9853901603b049":[5,0,2117,17],
 "df/d72/classxii_simple_wind_component.htm#a36bfb64994876ed1e03d1cd55330c8fd":[5,0,2117,14],
-"df/d72/classxii_simple_wind_component.htm#a408c5403fb252c4caac900bd83e9c468":[5,0,2117,7]
+"df/d72/classxii_simple_wind_component.htm#a408c5403fb252c4caac900bd83e9c468":[5,0,2117,7],
+"df/d72/classxii_simple_wind_component.htm#a4b800fdf59cf0206c959eb1a204825af":[5,0,2117,12],
+"df/d72/classxii_simple_wind_component.htm#a4f2798db051341a3053d2ed5891c19d6":[5,0,2117,11],
+"df/d72/classxii_simple_wind_component.htm#a543c0ec7b1c9ac2d881e633f126f56c2":[5,0,2117,6],
+"df/d72/classxii_simple_wind_component.htm#a57eeceb78a5606be3252da74fe9b23cc":[5,0,2117,15],
+"df/d72/classxii_simple_wind_component.htm#a614481ad4e87e39daa0496b92595850c":[5,0,2117,5]
 };

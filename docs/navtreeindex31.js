@@ -1,6 +1,5 @@
 var NAVTREEINDEX31 =
 {
-"d4/d49/classxii_adobe_c_u_b_e_reader.htm#ab86a3d8e406846a9064cddcd91c78624":[5,0,87,11],
 "d4/d49/classxii_adobe_c_u_b_e_reader.htm#abbf8132e06920069ad1d910c7b9ef2de":[5,0,87,8],
 "d4/d49/classxii_adobe_c_u_b_e_reader.htm#aef54c8dc96f69054829dc6792c609ec0":[5,0,87,0],
 "d4/d49/classxii_adobe_c_u_b_e_reader.htm#af5527718697bbfa133ed0f5f9d10d993":[5,0,87,6],
@@ -249,5 +248,6 @@ var NAVTREEINDEX31 =
 "d4/d68/classxii_remote_interface.htm#a6a66a12b495f1c233464dff2a64b5da3":[5,0,1885,26],
 "d4/d68/classxii_remote_interface.htm#a791646141c73a260e6f61beb171a494f":[5,0,1885,13],
 "d4/d68/classxii_remote_interface.htm#a7b7bffe429f197a5e07c8c5084b78461":[5,0,1885,31],
-"d4/d68/classxii_remote_interface.htm#a7d34b071626c9f1ec5242e23ab2fff0b":[5,0,1885,37]
+"d4/d68/classxii_remote_interface.htm#a7d34b071626c9f1ec5242e23ab2fff0b":[5,0,1885,37],
+"d4/d68/classxii_remote_interface.htm#a8e740bb490b8fcad2b1c4cb4b9ecaccf":[5,0,1885,9]
 };

@@ -1,10 +1,5 @@
 var NAVTREEINDEX95 =
 {
-"dc/d9e/structxii_g_a_l_ray_tracing_pipeline_description.htm#a6d4fe53aea86c49a1b096f81c6518e47":[5,0,906,0],
-"dc/d9e/structxii_g_a_l_ray_tracing_pipeline_description.htm#a8379fc6241f98d9579b7ec33196219fe":[5,0,906,1],
-"dc/d9e/structxii_g_a_l_ray_tracing_pipeline_description.htm#a83cce566258b0e03070d56b9282cc4d6":[5,0,906,2],
-"dc/da0/classxii_collection_asset_document_manager.htm":[5,0,307],
-"dc/da0/classxii_collection_asset_document_manager.htm#a06e71b251ebd220d5b1d501a639c5049":[5,0,307,4],
 "dc/da0/classxii_collection_asset_document_manager.htm#a280f83a7f856e7051ef04423e2a1ce06":[5,0,307,3],
 "dc/da0/classxii_collection_asset_document_manager.htm#a2c4c5b90855e76af385acb83c506a4f9":[5,0,307,5],
 "dc/da0/classxii_collection_asset_document_manager.htm#a58e0af249c2aea7ddfa4f880646dee30":[5,0,307,1],
@@ -249,5 +244,10 @@ var NAVTREEINDEX95 =
 "dc/dc4/structxii_fileserve_client_context_1_1_data_dir.htm#a93013d27cfe97fd27a2c77d10e969b91":[5,0,676,0,1],
 "dc/dc4/structxii_fileserve_client_context_1_1_data_dir.htm#acb6c552e3c30eb683892dbccf4b996ce":[5,0,676,0,4],
 "dc/dc4/structxii_fileserve_client_context_1_1_data_dir.htm#ad74421bcd4191731d21e6aec76ef0a07":[5,0,676,0,2],
-"dc/dc4/structxii_qt_c_var_model_1_1_entry.htm":[5,0,1656,0]
+"dc/dc4/structxii_qt_c_var_model_1_1_entry.htm":[5,0,1656,0],
+"dc/dc4/structxii_qt_c_var_model_1_1_entry.htm#a16e241d5f732914c9839016645fa70bc":[5,0,1656,0,2],
+"dc/dc4/structxii_qt_c_var_model_1_1_entry.htm#a503ccbb6568bdee46bd85610839dd8fb":[5,0,1656,0,0],
+"dc/dc4/structxii_qt_c_var_model_1_1_entry.htm#a7228e271fa45ab5e878f4fecec1e8e86":[5,0,1656,0,1],
+"dc/dc4/structxii_qt_c_var_model_1_1_entry.htm#a7589e0115c16afc965d646ad40c20568":[5,0,1656,0,3],
+"dc/dc4/structxii_qt_c_var_model_1_1_entry.htm#ab1f7afc84748a1e7dc8102f53708344a":[5,0,1656,0,6]
 };

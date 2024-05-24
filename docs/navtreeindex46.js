@@ -1,6 +1,5 @@
 var NAVTREEINDEX46 =
 {
-"d5/df7/classxii_open_ddl_parser.htm#a4b2f612d12524a2e2c7c52720578d01e":[5,0,1473,19],
 "d5/df7/classxii_open_ddl_parser.htm#a50dbc8afb5d7113c5b2eb34c415afc3e":[5,0,1473,24],
 "d5/df7/classxii_open_ddl_parser.htm#a5998c5b4817a163f94fa12721a71bf1b":[5,0,1473,8],
 "d5/df7/classxii_open_ddl_parser.htm#a59f5e0856589e6c32ea114e6ac32ed1f":[5,0,1473,0],
@@ -249,5 +248,6 @@ var NAVTREEINDEX46 =
 "d6/d16/classxii_typed_resource_handle.htm#ae4f3edf367352f79f75a699e7a0bd1ac":[5,0,2401,3],
 "d6/d16/classxii_typed_resource_handle.htm#af5dcb5ff16e5bdf9eb9d78ac5891d157":[5,0,2401,0],
 "d6/d16/structxii_texture_filter_setting.htm":[5,0,2334],
-"d6/d16/structxii_texture_filter_setting.htm#a16854add21ba4224b068d9c2353f89ec":[5,0,2334,0]
+"d6/d16/structxii_texture_filter_setting.htm#a16854add21ba4224b068d9c2353f89ec":[5,0,2334,0],
+"d6/d16/structxii_texture_filter_setting.htm#adeffb86a45553b3e55e0d9efeac98e8f":[5,0,2334,1]
 };

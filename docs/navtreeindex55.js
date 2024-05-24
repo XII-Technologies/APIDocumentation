@@ -1,6 +1,5 @@
 var NAVTREEINDEX55 =
 {
-"d7/d1f/structxii_g_a_l_shader_variable_description.htm#a104a214525a1a8f5eeedd1c66279d419":[5,0,967,0],
 "d7/d1f/structxii_g_a_l_shader_variable_description.htm#a256f350a48ba6741209ec8393c8ae677":[5,0,967,5],
 "d7/d1f/structxii_g_a_l_shader_variable_description.htm#a33a4fa591b5bfe33b90c67d9ca75196e":[5,0,967,1],
 "d7/d1f/structxii_g_a_l_shader_variable_description.htm#a4f97ca4fc270aca4b81e575db052d3e5":[5,0,967,3],
@@ -249,5 +248,6 @@ var NAVTREEINDEX55 =
 "d7/d4e/classxii_sensor_component.htm#af02ace73d13faebc0fdb9590c0360705":[5,0,2043,24],
 "d7/d4e/structxii_container_sub_type_resolver_3_01xii_tag_set_template_3_01_t_01_4_01_4.htm":[5,0,412],
 "d7/d4e/structxii_container_sub_type_resolver_3_01xii_tag_set_template_3_01_t_01_4_01_4.htm#aa4eef816cb08a03a894e2a7415d28e8d":[5,0,412,0],
-"d7/d53/structxii_phantom_type_change.htm":[5,0,1509]
+"d7/d53/structxii_phantom_type_change.htm":[5,0,1509],
+"d7/d53/structxii_phantom_type_change.htm#ae22311a8b424226c000fa4e6a8f898ee":[5,0,1509,0]
 };

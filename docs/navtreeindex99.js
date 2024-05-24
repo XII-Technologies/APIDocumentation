@@ -1,10 +1,5 @@
 var NAVTREEINDEX99 =
 {
-"dd/d35/classxii_simd_b_box.htm#aeb38b9f8a1cb52e389f40203315fed01":[5,0,2088,7],
-"dd/d35/classxii_simd_b_box.htm#aeeb76b4503380f3014ded6a2c1bc3310":[5,0,2088,20],
-"dd/d35/classxii_simd_b_box.htm#afbe9bc8827f7f85c98e2a585ee652c24":[5,0,2088,25],
-"dd/d35/classxii_simd_b_box.htm#afe7d87bc2419e8e07e5ee0070fe01542":[5,0,2088,30],
-"dd/d35/structxii_image_data_resource_descriptor.htm":[5,0,1168],
 "dd/d35/structxii_image_data_resource_descriptor.htm#a40a149b0eacf76f80afa550a282d1e3a":[5,0,1168,0],
 "dd/d36/classxii_debug_text_component.htm":[5,0,468],
 "dd/d36/classxii_debug_text_component.htm#a1aaee208e79622b36fc433cd534cd3e8":[5,0,468,5],
@@ -249,5 +244,10 @@ var NAVTREEINDEX99 =
 "dd/d4a/classxii_sensor_sphere_component.htm":[5,0,2046],
 "dd/d4a/classxii_sensor_sphere_component.htm#a07fb66c3a8d36f53c8dffcfd7f374972":[5,0,2046,3],
 "dd/d4a/classxii_sensor_sphere_component.htm#a20ee5051743b979e19f5602ffe55a446":[5,0,2046,5],
-"dd/d4a/classxii_sensor_sphere_component.htm#a29417736d4e4941b187e284272075ba4":[5,0,2046,4]
+"dd/d4a/classxii_sensor_sphere_component.htm#a29417736d4e4941b187e284272075ba4":[5,0,2046,4],
+"dd/d4a/classxii_sensor_sphere_component.htm#a665c2790fcff7f317ce685b7324da7d9":[5,0,2046,1],
+"dd/d4a/classxii_sensor_sphere_component.htm#a7c384bf5d1e0cdf0a8d811c48b6b5b46":[5,0,2046,2],
+"dd/d4a/classxii_sensor_sphere_component.htm#abff610fea50dea27ab5d63d743951386":[5,0,2046,6],
+"dd/d4a/classxii_sensor_sphere_component.htm#add584b12ede3146c6b0b795b3cba33b7":[5,0,2046,0],
+"dd/d4c/structxii_sub_asset_data.htm":[5,0,2259]
 };

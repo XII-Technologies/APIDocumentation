@@ -119,38 +119,31 @@ $(document).ready(function(){initNavTree('db/dd8/_ambient_cube_basis__inl_8h_sou
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;}</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;XII_ALWAYS_INLINE <span class="keywordtype">bool</span> <a class="code" href="../../d1/d80/structxii_ambient_cube.htm">xiiAmbientCube&lt;T&gt;::operator!=</a>(<span class="keyword">const</span> <a class="code" href="../../d1/d80/structxii_ambient_cube.htm">xiiAmbientCube</a>&amp; other)<span class="keyword"> const</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword"></span>{</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  <span class="keywordflow">return</span> !(*<span class="keyword">this</span> == other);</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;}</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d1/d80/structxii_ambient_cube.htm">xiiAmbientCube&lt;T&gt;::AddSample</a>(<span class="keyword">const</span> <a class="code" href="../../d9/d9a/classxii_vec3_template.htm">xiiVec3</a>&amp; vDir, <span class="keyword">const</span> T&amp; value)</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;{</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  m_Values[vDir.x &gt; 0.0f ? 0 : 1] += <a class="code" href="../../d1/d37/namespacexii_math.htm#a821b432e7a9c8ac292eb255ee11e9e10">xiiMath::Abs</a>(vDir.x) * value;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  m_Values[vDir.y &gt; 0.0f ? 2 : 3] += <a class="code" href="../../d1/d37/namespacexii_math.htm#a821b432e7a9c8ac292eb255ee11e9e10">xiiMath::Abs</a>(vDir.y) * value;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  m_Values[vDir.z &gt; 0.0f ? 4 : 5] += <a class="code" href="../../d1/d37/namespacexii_math.htm#a821b432e7a9c8ac292eb255ee11e9e10">xiiMath::Abs</a>(vDir.z) * value;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;}</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;T <a class="code" href="../../d1/d80/structxii_ambient_cube.htm">xiiAmbientCube&lt;T&gt;::Evaluate</a>(<span class="keyword">const</span> <a class="code" href="../../d9/d9a/classxii_vec3_template.htm">xiiVec3</a>&amp; vNormal)<span class="keyword"> const</span></div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keyword"></span>{</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <a class="code" href="../../d9/d9a/classxii_vec3_template.htm">xiiVec3</a> vNormalSquared = vNormal.<a class="code" href="../../d9/d9a/classxii_vec3_template.htm#a0de1a7609f8dbaaa7c1c29081fa582f4">CompMul</a>(vNormal);</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <span class="keywordflow">return</span> vNormalSquared.x * m_Values[vNormal.x &gt; 0.0f ? 0 : 1] + vNormalSquared.y * m_Values[vNormal.y &gt; 0.0f ? 2 : 3] +</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    vNormalSquared.z * m_Values[vNormal.z &gt; 0.0f ? 4 : 5];</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;}</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<a class="code" href="../../dd/dad/structxii_result.htm">xiiResult</a> <a class="code" href="../../d1/d80/structxii_ambient_cube.htm">xiiAmbientCube&lt;T&gt;::Serialize</a>(<a class="code" href="../../d0/d18/classxii_stream_writer.htm">xiiStreamWriter</a>&amp; ref_stream)<span class="keyword"> const</span></div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="keyword"></span>{</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  <span class="keywordflow">return</span> ref_stream.<a class="code" href="../../d0/d18/classxii_stream_writer.htm#acc2157924ab7de517d660d5a240d5458">WriteArray</a>(m_Values);</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;}</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<a class="code" href="../../dd/dad/structxii_result.htm">xiiResult</a> <a class="code" href="../../d1/d80/structxii_ambient_cube.htm">xiiAmbientCube&lt;T&gt;::Deserialize</a>(<a class="code" href="../../d4/d5e/classxii_stream_reader.htm">xiiStreamReader</a>&amp; ref_stream)</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;{</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  <span class="keywordflow">return</span> ref_stream.<a class="code" href="../../d4/d5e/classxii_stream_reader.htm#afdea2791aefd953d9a209a0cfd95d9a8">ReadArray</a>(m_Values);</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;}</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d1/d80/structxii_ambient_cube.htm">xiiAmbientCube&lt;T&gt;::AddSample</a>(<span class="keyword">const</span> <a class="code" href="../../d9/d9a/classxii_vec3_template.htm">xiiVec3</a>&amp; vDir, <span class="keyword">const</span> T&amp; value)</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;{</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  m_Values[vDir.x &gt; 0.0f ? 0 : 1] += <a class="code" href="../../d1/d37/namespacexii_math.htm#a821b432e7a9c8ac292eb255ee11e9e10">xiiMath::Abs</a>(vDir.x) * value;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  m_Values[vDir.y &gt; 0.0f ? 2 : 3] += <a class="code" href="../../d1/d37/namespacexii_math.htm#a821b432e7a9c8ac292eb255ee11e9e10">xiiMath::Abs</a>(vDir.y) * value;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  m_Values[vDir.z &gt; 0.0f ? 4 : 5] += <a class="code" href="../../d1/d37/namespacexii_math.htm#a821b432e7a9c8ac292eb255ee11e9e10">xiiMath::Abs</a>(vDir.z) * value;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;}</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;T <a class="code" href="../../d1/d80/structxii_ambient_cube.htm">xiiAmbientCube&lt;T&gt;::Evaluate</a>(<span class="keyword">const</span> <a class="code" href="../../d9/d9a/classxii_vec3_template.htm">xiiVec3</a>&amp; vNormal)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <a class="code" href="../../d9/d9a/classxii_vec3_template.htm">xiiVec3</a> vNormalSquared = vNormal.<a class="code" href="../../d9/d9a/classxii_vec3_template.htm#a0de1a7609f8dbaaa7c1c29081fa582f4">CompMul</a>(vNormal);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <span class="keywordflow">return</span> vNormalSquared.x * m_Values[vNormal.x &gt; 0.0f ? 0 : 1] + vNormalSquared.y * m_Values[vNormal.y &gt; 0.0f ? 2 : 3] + vNormalSquared.z * m_Values[vNormal.z &gt; 0.0f ? 4 : 5];</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;}</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<a class="code" href="../../dd/dad/structxii_result.htm">xiiResult</a> <a class="code" href="../../d1/d80/structxii_ambient_cube.htm">xiiAmbientCube&lt;T&gt;::Serialize</a>(<a class="code" href="../../d0/d18/classxii_stream_writer.htm">xiiStreamWriter</a>&amp; ref_stream)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <span class="keywordflow">return</span> ref_stream.<a class="code" href="../../d0/d18/classxii_stream_writer.htm#acc2157924ab7de517d660d5a240d5458">WriteArray</a>(m_Values);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;}</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<a class="code" href="../../dd/dad/structxii_result.htm">xiiResult</a> <a class="code" href="../../d1/d80/structxii_ambient_cube.htm">xiiAmbientCube&lt;T&gt;::Deserialize</a>(<a class="code" href="../../d4/d5e/classxii_stream_reader.htm">xiiStreamReader</a>&amp; ref_stream)</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;{</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <span class="keywordflow">return</span> ref_stream.<a class="code" href="../../d4/d5e/classxii_stream_reader.htm#afdea2791aefd953d9a209a0cfd95d9a8">ReadArray</a>(m_Values);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="astructxii_ambient_cube_htm"><div class="ttname"><a href="../../d1/d80/structxii_ambient_cube.htm">xiiAmbientCube</a></div><div class="ttdef"><b>Definition:</b> AmbientCubeBasis.h:26</div></div>
@@ -168,7 +161,7 @@ $(document).ready(function(){initNavTree('db/dd8/_ambient_cube_basis__inl_8h_sou
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.htm">home</a></li><li class="navelem"><a class="el" href="../../dir_1036706e55c22cab35bc1c58ee689f1d.htm">runner</a></li><li class="navelem"><a class="el" href="../../dir_629f8151d55d307162ff2d619fb1783d.htm">work</a></li><li class="navelem"><a class="el" href="../../dir_1ddc44fe1263a8c7935fa6130b7d9499.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_2c1b6808f12952f4c36e05ba7068379a.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_b5a1c4ecfca018ad24b729e213296d41.htm">Source</a></li><li class="navelem"><a class="el" href="../../dir_e321052006a51284e67389ab20037e7c.htm">Engine</a></li><li class="navelem"><a class="el" href="../../dir_6934db396743bb3844d563c7fa1f32a7.htm">Core</a></li><li class="navelem"><a class="el" href="../../dir_a2d4ff41669675fa7cc22453d86e2f07.htm">Graphics</a></li><li class="navelem"><a class="el" href="../../dir_cf22e115e22784b94c5a6515210d83ce.htm">Implementation</a></li><li class="navelem"><b>AmbientCubeBasis_inl.h</b></li>
-    <li class="footer">Generated on Tue May 21 2024 15:38:33 for XIIEngine by
+    <li class="footer">Generated on Fri May 24 2024 23:29:04 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>
