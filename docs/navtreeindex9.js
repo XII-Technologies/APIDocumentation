@@ -1,5 +1,6 @@
 var NAVTREEINDEX9 =
 {
+"d1/d23/classxii_j_s_o_n_writer.htm#a1c3af388f280b1da8b6a8fe93b23b262":[5,0,1239,66],
 "d1/d23/classxii_j_s_o_n_writer.htm#a1f351404ed8b67f160912431f3c2f100":[5,0,1239,25],
 "d1/d23/classxii_j_s_o_n_writer.htm#a22b3f9c408dcbecd6bd053ddf4c8eec2":[5,0,1239,76],
 "d1/d23/classxii_j_s_o_n_writer.htm#a2a177df39fc7aa9b140981699a770898":[5,0,1239,68],
@@ -248,6 +249,5 @@ var NAVTREEINDEX9 =
 "d1/d3d/classxii_qt_dynamic_action_and_menu_proxy.htm#a5f1e74ceb2bca70d148e601443b1eaac":[5,0,1674,2],
 "d1/d3d/classxii_qt_dynamic_action_and_menu_proxy.htm#aabd8c8a99321c44a1861c9ba215baf63":[5,0,1674,1],
 "d1/d3f/structxii_texture_atlas_runtime_desc.htm":[5,0,2320],
-"d1/d3f/structxii_texture_atlas_runtime_desc.htm#a07175b06bff7be91f368b4424162c07b":[5,0,2320,4],
-"d1/d3f/structxii_texture_atlas_runtime_desc.htm#a30ad63a1d107cd884e71339156994d99":[5,0,2320,5]
+"d1/d3f/structxii_texture_atlas_runtime_desc.htm#a07175b06bff7be91f368b4424162c07b":[5,0,2320,4]
 };

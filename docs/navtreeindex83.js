@@ -1,5 +1,15 @@
 var NAVTREEINDEX83 =
 {
+"da/df9/structxii_typeless_bitflags.htm#ae4ac2502b0c5daa27f801e8058e35289":[5,0,2406,4],
+"da/df9/structxii_typeless_bitflags.htm#ae64c28f51606d6b60cbb0297276dbca8":[5,0,2406,13],
+"da/df9/structxii_typeless_bitflags.htm#aee640d29869e67c254d5fd623a61df6b":[5,0,2406,6],
+"da/df9/structxii_typeless_bitflags.htm#af5ae8af473ebe69e1de102e195c606f4":[5,0,2406,0],
+"da/df9/structxii_typeless_bitflags.htm#afe810a0042f23e46efd2b33d5e1ede3c":[5,0,2406,15],
+"da/dfe/classxii_g_a_l_sampler_handle.htm":[5,0,933],
+"da/dfe/classxii_g_a_l_sampler_handle.htm#a8a9dd0ea17d38c3d68c9db0002e5dab0":[5,0,933,0],
+"da/dfe/classxii_qt_slider_proxy.htm":[5,0,1801],
+"da/dfe/classxii_qt_slider_proxy.htm#a018abe1057340db19fc80707af666e71":[5,0,1801,0],
+"da/dfe/classxii_qt_slider_proxy.htm#a057a8cdcfde8fe5cdc2b56205e8650ec":[5,0,1801,4],
 "da/dfe/classxii_qt_slider_proxy.htm#a40bf27e40eafbe595983cfbab26df3b3":[5,0,1801,3],
 "da/dfe/classxii_qt_slider_proxy.htm#a952826a213a0fcddd60e68811b629760":[5,0,1801,1],
 "da/dfe/classxii_qt_slider_proxy.htm#ad24fba008fdeffad0c44ac8741ef56c0":[5,0,1801,2],
@@ -239,15 +249,5 @@ var NAVTREEINDEX83 =
 "db/d1a/classxii_variant.htm#a3ecae00851142a9090314b4b22f5141f":[5,0,2427,75],
 "db/d1a/classxii_variant.htm#a409cae1b34e59074b372c58022f0fa41":[5,0,2427,86],
 "db/d1a/classxii_variant.htm#a40cff2f1c7ab1f3ec643fbebe06366ac":[5,0,2427,53],
-"db/d1a/classxii_variant.htm#a45cbc8252c11cc16d8caf9854acb5f35":[5,0,2427,106],
-"db/d1a/classxii_variant.htm#a4c268849ce0029fde4962331c726e904":[5,0,2427,71],
-"db/d1a/classxii_variant.htm#a4c30e09ce4827ae59948f694bbc95495":[5,0,2427,113],
-"db/d1a/classxii_variant.htm#a4ce59579de176acbb973a5f62f6a7be7":[5,0,2427,64],
-"db/d1a/classxii_variant.htm#a5b4037a563a37627ba30a40ba3e39335":[5,0,2427,22],
-"db/d1a/classxii_variant.htm#a5c53d6655d3e932117e95a3f8b21ed6a":[5,0,2427,11],
-"db/d1a/classxii_variant.htm#a5e2564f36d44014dd6830e8492691f90":[5,0,2427,63],
-"db/d1a/classxii_variant.htm#a5e9025bf754cbe33ed683f448a795adc":[5,0,2427,28],
-"db/d1a/classxii_variant.htm#a617d04558bc8eeda5d153a303441e951":[5,0,2427,110],
-"db/d1a/classxii_variant.htm#a64a7bc691044e8740602bcb66051d67a":[5,0,2427,9],
-"db/d1a/classxii_variant.htm#a6811bed2f547b232277b112a8a900678":[5,0,2427,52]
+"db/d1a/classxii_variant.htm#a45cbc8252c11cc16d8caf9854acb5f35":[5,0,2427,106]
 };

@@ -1,5 +1,9 @@
 var NAVTREEINDEX34 =
 {
+"d4/da7/classxii_g_a_l_shader_d3_d12.htm#a70104e949bcb9f85ad7ad9b4e6048234":[5,0,948,2],
+"d4/da7/classxii_g_a_l_shader_d3_d12.htm#a968a5c184efc46d973a0c8eb1df89ed7":[5,0,948,3],
+"d4/da7/classxii_g_a_l_shader_d3_d12.htm#a9b3da82b84b68e0128d059e18e11b67d":[5,0,948,4],
+"d4/da7/classxii_g_a_l_shader_d3_d12.htm#aefc9ff75d6833fd2f05be48e16436db6":[5,0,948,5],
 "d4/da7/classxii_g_a_l_shader_d3_d12.htm#afe0a414ba1c367d9ea8dd3ed83bfd954":[5,0,948,0],
 "d4/da8/classxii_skinned_mesh_renderer.htm":[5,0,2152],
 "d4/da8/classxii_skinned_mesh_renderer.htm#a2891755863e7c05515259e6a8f71862a":[5,0,2152,1],
@@ -245,9 +249,5 @@ var NAVTREEINDEX34 =
 "d4/dbc/classxii_state_machine_asset_manager.htm":[5,0,2205],
 "d4/dbc/classxii_state_machine_asset_manager.htm#a00b3a0ed652990cc85c9523d4931573a":[5,0,2205,3],
 "d4/dbc/classxii_state_machine_asset_manager.htm#a94021429db1a94a60b08cc9c343193b1":[5,0,2205,4],
-"d4/dbc/classxii_state_machine_asset_manager.htm#a9502e2ee7591675d4bdfa779ad3ce9e3":[5,0,2205,0],
-"d4/dbc/classxii_state_machine_asset_manager.htm#ade150a18b60dea085d26e3c718f5a45c":[5,0,2205,2],
-"d4/dbc/classxii_state_machine_asset_manager.htm#af2b0d0773fd2ddd58f81b779c672f352":[5,0,2205,5],
-"d4/dbc/classxii_state_machine_asset_manager.htm#afdb2aaac2bae8a8c43f818cfef419ebb":[5,0,2205,1],
-"d4/dbf/structxii_variant_assignment_adapter_3_01_t_00_01xii_bitflags_3_01_s_01_4_00_010_01_4.htm":[5,0,2444]
+"d4/dbc/classxii_state_machine_asset_manager.htm#a9502e2ee7591675d4bdfa779ad3ce9e3":[5,0,2205,0]
 };

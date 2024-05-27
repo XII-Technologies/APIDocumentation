@@ -1,5 +1,15 @@
 var NAVTREEINDEX89 =
 {
+"db/da6/classxii_decal_atlas_resource.htm#a0c1e89f25a8416f96c5f9d2c5b5f6a8a":[5,0,476,10],
+"db/da6/classxii_decal_atlas_resource.htm#a10a7ebd400aaf61019fc02b74ce69500":[5,0,476,6],
+"db/da6/classxii_decal_atlas_resource.htm#a36072a2524eed6deadd34095c0c6b46c":[5,0,476,3],
+"db/da6/classxii_decal_atlas_resource.htm#a4aea9ce14957a9fd339acbf28333954e":[5,0,476,0],
+"db/da6/classxii_decal_atlas_resource.htm#a574b98bad0e772cc505a78ddd6f762c0":[5,0,476,8],
+"db/da6/classxii_decal_atlas_resource.htm#a680e445f97a9c43dfb3f03b045376eb0":[5,0,476,5],
+"db/da6/classxii_decal_atlas_resource.htm#aa0f832889e54519481296239861d1a14":[5,0,476,1],
+"db/da6/classxii_decal_atlas_resource.htm#aa3dca7e63a7d786f03fbba96235bdc07":[5,0,476,2],
+"db/da6/classxii_decal_atlas_resource.htm#aa61fd0194d96e29e178bc51cff4d2c78":[5,0,476,7],
+"db/da6/classxii_decal_atlas_resource.htm#ab088c931ede1706910eca0c5842c3324":[5,0,476,9],
 "db/da6/classxii_decal_atlas_resource.htm#ac07705b20cbc1952be20a4dbbdff854a":[5,0,476,4],
 "db/da6/classxii_decal_atlas_resource.htm#ae30b881101ea9dbf8b93789e75a9c96f":[5,0,476,11],
 "db/da9/structxii_expression_v_m_1_1_flags_1_1_bits.htm":[5,0,663,0,0],
@@ -239,15 +249,5 @@ var NAVTREEINDEX89 =
 "db/dce/structxii_g_a_l_shader_resource_variable_type_flags.htm#a0f00c4a14a3054365fa27fa61fda383ca010c44f6c64e0ebf3926998b5d633764":[5,0,962,2,4],
 "db/dce/structxii_g_a_l_shader_resource_variable_type_flags.htm#a0f00c4a14a3054365fa27fa61fda383ca0834211da3de8458c7ffda08e718025b":[5,0,962,2,1],
 "db/dce/structxii_g_a_l_shader_resource_variable_type_flags.htm#a0f00c4a14a3054365fa27fa61fda383ca68e16b0f62edce3d290ba7b20991ba2a":[5,0,962,2,0],
-"db/dce/structxii_g_a_l_shader_resource_variable_type_flags.htm#a0f00c4a14a3054365fa27fa61fda383caa5cb74e1c7903c32e72f24a479ea1262":[5,0,962,2,3],
-"db/dce/structxii_g_a_l_shader_resource_variable_type_flags.htm#a0f00c4a14a3054365fa27fa61fda383cac1e4c043b9c819cade2797408252deaf":[5,0,962,2,5],
-"db/dce/structxii_g_a_l_shader_resource_variable_type_flags.htm#a0f00c4a14a3054365fa27fa61fda383cacbd04bff28553939941e981fd7952728":[5,0,962,2,6],
-"db/dce/structxii_g_a_l_shader_resource_variable_type_flags.htm#a0f00c4a14a3054365fa27fa61fda383cad20adc915cff53bdaf6474b9668e07f5":[5,0,962,2,2],
-"db/dce/structxii_g_a_l_shader_resource_variable_type_flags.htm#ab795541d3ca180d1502fa84d8481f9a7":[5,0,962,1],
-"db/dd0/classxii_anim_graph_output_pin.htm":[5,0,142],
-"db/dd0/structxii_variance_type_base_double.htm":[5,0,2422],
-"db/dd0/structxii_variance_type_base_double.htm#a6fc0f806c7133c511aaea2977a2a2eed":[5,0,2422,1],
-"db/dd0/structxii_variance_type_base_double.htm#a782a645524da031c8232fc6a996c4404":[5,0,2422,0],
-"db/dd3/structxii_g_a_l_framebuffer_creation_description.htm":[5,0,827],
-"db/dd3/structxii_g_a_l_framebuffer_creation_description.htm#a1cb1c90bee6f52e3c6b332549870196b":[5,0,827,0]
+"db/dce/structxii_g_a_l_shader_resource_variable_type_flags.htm#a0f00c4a14a3054365fa27fa61fda383caa5cb74e1c7903c32e72f24a479ea1262":[5,0,962,2,3]
 };

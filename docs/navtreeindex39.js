@@ -1,5 +1,10 @@
 var NAVTREEINDEX39 =
 {
+"d5/d2a/classxii_box_manipulator_adapter.htm#ae522cd7d32c759f882240f0438856409":[5,0,259,2],
+"d5/d2a/classxii_lens_flare_render_data.htm":[5,0,1254],
+"d5/d2a/classxii_lens_flare_render_data.htm#a00ebe116e22304b7ed2ce0f36e0ee84e":[5,0,1254,12],
+"d5/d2a/classxii_lens_flare_render_data.htm#a28b8f9fa062d168ee0fd2ee2e30f7851":[5,0,1254,3],
+"d5/d2a/classxii_lens_flare_render_data.htm#a359507f57ba738a4f153e1e203c670b2":[5,0,1254,1],
 "d5/d2a/classxii_lens_flare_render_data.htm#a445477782455c28b2ad68056a6761a96":[5,0,1254,2],
 "d5/d2a/classxii_lens_flare_render_data.htm#a596f046dd3f65a76477f4a4d40b1a5ed":[5,0,1254,9],
 "d5/d2a/classxii_lens_flare_render_data.htm#a82b28c1beccae68ca0ce8d8998fea768":[5,0,1254,7],
@@ -244,10 +249,5 @@ var NAVTREEINDEX39 =
 "d5/d49/structxii_x_r_remoting_disconnect_reason.htm#a5bb0ac5e1354b8b580f9f078d8e1ae43a1ea9600b9e7d2ba1aaa53e275c7b019c":[5,0,2571,1,14],
 "d5/d49/structxii_x_r_remoting_disconnect_reason.htm#a5bb0ac5e1354b8b580f9f078d8e1ae43a22644dc4e584e796578e6c8cd88644b2":[5,0,2571,1,25],
 "d5/d49/structxii_x_r_remoting_disconnect_reason.htm#a5bb0ac5e1354b8b580f9f078d8e1ae43a27e35e0157b54da50fbedff8f2c0e8f1":[5,0,2571,1,18],
-"d5/d49/structxii_x_r_remoting_disconnect_reason.htm#a5bb0ac5e1354b8b580f9f078d8e1ae43a2c65e05b59413240d54ef53d12b01a4e":[5,0,2571,1,26],
-"d5/d49/structxii_x_r_remoting_disconnect_reason.htm#a5bb0ac5e1354b8b580f9f078d8e1ae43a2ce3c8662d7d8511f511828e42d88cc2":[5,0,2571,1,28],
-"d5/d49/structxii_x_r_remoting_disconnect_reason.htm#a5bb0ac5e1354b8b580f9f078d8e1ae43a2df0f6ccfa798cdfc6625ff0f4efa12d":[5,0,2571,1,16],
-"d5/d49/structxii_x_r_remoting_disconnect_reason.htm#a5bb0ac5e1354b8b580f9f078d8e1ae43a36ea8142db38d13d1a0ccd0fb2994530":[5,0,2571,1,5],
-"d5/d49/structxii_x_r_remoting_disconnect_reason.htm#a5bb0ac5e1354b8b580f9f078d8e1ae43a4690c5f81530d7ae4743997d6d60d4a9":[5,0,2571,1,15],
-"d5/d49/structxii_x_r_remoting_disconnect_reason.htm#a5bb0ac5e1354b8b580f9f078d8e1ae43a50554d8746f338011de36cc79bb4491f":[5,0,2571,1,12]
+"d5/d49/structxii_x_r_remoting_disconnect_reason.htm#a5bb0ac5e1354b8b580f9f078d8e1ae43a2c65e05b59413240d54ef53d12b01a4e":[5,0,2571,1,26]
 };

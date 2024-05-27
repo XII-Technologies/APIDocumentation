@@ -1,5 +1,7 @@
 var NAVTREEINDEX20 =
 {
+"d2/d9c/structxii_physics_query_parameters.htm#a7bd7b210b76c75a84c871c70c19d86c7":[5,0,1514,5],
+"d2/d9c/structxii_physics_query_parameters.htm#aad344f96f3e35be151aa44dbc5f93940":[5,0,1514,2],
 "d2/d9c/structxii_physics_query_parameters.htm#abb09a98f5ca7ad9da95357c61a3a19a9":[5,0,1514,3],
 "d2/d9c/structxii_physics_query_parameters.htm#af4d5ef362a5210df95018383b64e668b":[5,0,1514,0],
 "d2/d9c/structxii_physics_query_parameters.htm#af6b235f8b1cf2286aa2bc30feb1bed7d":[5,0,1514,4],
@@ -162,11 +164,12 @@ var NAVTREEINDEX20 =
 "d2/dc8/classxii_on_blackboard_value_changed_anim_node.htm#ab586b4bae127e0c4cf8cbe4c9f5ea546":[5,0,1468,0],
 "d2/dc8/classxii_on_blackboard_value_changed_anim_node.htm#ab7da21921c44fa1dfee9f9d20a277a27":[5,0,1468,4],
 "d2/dca/structxii_g_a_l_normalized_device_coordinates.htm":[5,0,860],
-"d2/dca/structxii_g_a_l_normalized_device_coordinates.htm#a082a2e9757f663f35acbed3f5aebb98f":[5,0,860,4],
-"d2/dca/structxii_g_a_l_normalized_device_coordinates.htm#a2a9fb4f28ee57ce35553b9adb714fa7f":[5,0,860,2],
-"d2/dca/structxii_g_a_l_normalized_device_coordinates.htm#a51f44c461f7b6884a269d9f1ffe93b57":[5,0,860,0],
-"d2/dca/structxii_g_a_l_normalized_device_coordinates.htm#a60b1444afb2b8695e3892ec35e1e49cd":[5,0,860,1],
-"d2/dca/structxii_g_a_l_normalized_device_coordinates.htm#a76f168881927524696b7257add3f4a02":[5,0,860,3],
+"d2/dca/structxii_g_a_l_normalized_device_coordinates.htm#a082a2e9757f663f35acbed3f5aebb98f":[5,0,860,5],
+"d2/dca/structxii_g_a_l_normalized_device_coordinates.htm#a2a9fb4f28ee57ce35553b9adb714fa7f":[5,0,860,3],
+"d2/dca/structxii_g_a_l_normalized_device_coordinates.htm#a60b1444afb2b8695e3892ec35e1e49cd":[5,0,860,2],
+"d2/dca/structxii_g_a_l_normalized_device_coordinates.htm#a61fdeff3190160d3fe837e4cd0c73077":[5,0,860,0],
+"d2/dca/structxii_g_a_l_normalized_device_coordinates.htm#a76f168881927524696b7257add3f4a02":[5,0,860,4],
+"d2/dca/structxii_g_a_l_normalized_device_coordinates.htm#af07935053e6a38e5103ec49cacc25dc6":[5,0,860,1],
 "d2/dd0/structxii_visual_script_component_handle.htm":[5,0,2494],
 "d2/dd0/structxii_visual_script_component_handle.htm#a0f86d0d0b2e593c22ddbd2bfea1a73d1":[5,0,2494,3],
 "d2/dd0/structxii_visual_script_component_handle.htm#a2a642b22bd9ebe856ad270a05088890a":[5,0,2494,1],
@@ -246,8 +249,5 @@ var NAVTREEINDEX20 =
 "d2/dde/classxii_alpha_control_point.htm#a3339aa34b7a7ed4db77c9db9d0a0a95a":[5,0,92,3],
 "d2/dde/classxii_alpha_control_point.htm#a60670cd5002ee4699551186551f49a7d":[5,0,92,1],
 "d2/dde/classxii_alpha_control_point.htm#a9d95590c34262db946e20c4899c79a65":[5,0,92,0],
-"d2/dde/classxii_alpha_control_point.htm#ad9d78ad662bdaed5124d5b4cfdb7fcf7":[5,0,92,2],
-"d2/dde/classxii_animated_mesh_asset_properties.htm":[5,0,102],
-"d2/dde/classxii_animated_mesh_asset_properties.htm#a08f169e6bd5676158fb66aacbee20488":[5,0,102,9],
-"d2/dde/classxii_animated_mesh_asset_properties.htm#a13e29a618a70580b2aa4b99af825d387":[5,0,102,1]
+"d2/dde/classxii_alpha_control_point.htm#ad9d78ad662bdaed5124d5b4cfdb7fcf7":[5,0,92,2]
 };

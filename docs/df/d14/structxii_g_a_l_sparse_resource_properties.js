@@ -1,5 +1,6 @@
 var structxii_g_a_l_sparse_resource_properties =
 [
+    [ "operator==", "df/d14/structxii_g_a_l_sparse_resource_properties.htm#ae6e1c6c4f56f7056b4a0e5c5957a39ae", null ],
     [ "XII_DECLARE_POD_TYPE", "df/d14/structxii_g_a_l_sparse_resource_properties.htm#aa00839214b530a29cc73e0321d0e9181", null ],
     [ "m_BindFlags", "df/d14/structxii_g_a_l_sparse_resource_properties.htm#adcbef955266ac4ae935c0dd25745fe9d", null ],
     [ "m_CapabilityFlags", "df/d14/structxii_g_a_l_sparse_resource_properties.htm#aeb04b615e8ae6939e7c6c383c30e9fa0", null ],

@@ -1,5 +1,17 @@
 var NAVTREEINDEX54 =
 {
+"d6/dee/structxii_g_a_l_hit_group_binding_mode.htm#a4affb3f18e9e1d878d25fff69dbabed9ad661da2ca89d2a322c2262a45fd70beb":[5,0,839,1,2],
+"d6/dee/structxii_g_a_l_hit_group_binding_mode.htm#a4affb3f18e9e1d878d25fff69dbabed9aedb6911ef12680ea586092257f1e0f4a":[5,0,839,1,4],
+"d6/dee/structxii_g_a_l_hit_group_binding_mode.htm#a8fc458ee322ccf1f6a0a06ff4700e595":[5,0,839,0],
+"d6/def/classxii_archive_entry.htm":[5,0,169],
+"d6/def/classxii_archive_entry.htm#a55c7878c8e98be02417ab1cd9cd899af":[5,0,169,3],
+"d6/def/classxii_archive_entry.htm#a5d998b59632c769ec5a19b4ee53346eb":[5,0,169,1],
+"d6/def/classxii_archive_entry.htm#a89a36e5d1d45da45e086266496b56634":[5,0,169,0],
+"d6/def/classxii_archive_entry.htm#ab7aaf50e78b6b15a863dd3a2d358eb09":[5,0,169,6],
+"d6/def/classxii_archive_entry.htm#adb3aacec915c188397cd71a2861d74ec":[5,0,169,5],
+"d6/def/classxii_archive_entry.htm#ae422852d637ef87b05eaad9d06e0a414":[5,0,169,4],
+"d6/def/classxii_archive_entry.htm#af864562bd9a1ee0c4ae40728cb06b41b":[5,0,169,2],
+"d6/def/classxii_remove_object_command.htm":[5,0,1891],
 "d6/def/classxii_remove_object_command.htm#a0a46af295e88365c6938f336ff264be7":[5,0,1891,3],
 "d6/def/classxii_remove_object_command.htm#a77bc202c58d1fe28be6943d527c2d90d":[5,0,1891,4],
 "d6/def/classxii_remove_object_command.htm#a93d7c9ba5acc1567f6fa669a196c6ef6":[5,0,1891,1],
@@ -237,17 +249,5 @@ var NAVTREEINDEX54 =
 "d7/d18/structxii_shader_parser_1_1_enum_value.htm":[5,0,2069,2],
 "d7/d18/structxii_shader_parser_1_1_enum_value.htm#a60aa14e617db0751df92ab9840f677fb":[5,0,2069,2,1],
 "d7/d18/structxii_shader_parser_1_1_enum_value.htm#ac105baba144a76c9a5b794022e8a2684":[5,0,2069,2,0],
-"d7/d1a/classxii_constant_buffer_storage_handle.htm":[5,0,396],
-"d7/d1a/classxii_constant_buffer_storage_handle.htm#a21019779bc8ccf63e7dcf7488ac12e59":[5,0,396,0],
-"d7/d1b/classxii_cone_visualizer_attribute.htm":[5,0,381],
-"d7/d1b/classxii_cone_visualizer_attribute.htm#a0ace1762563f8f7c25bf59d31386f820":[5,0,381,7],
-"d7/d1b/classxii_cone_visualizer_attribute.htm#a184c031b688c30f94718f8389987a203":[5,0,381,0],
-"d7/d1b/classxii_cone_visualizer_attribute.htm#a27659a8db9c683d262584ece0052c851":[5,0,381,4],
-"d7/d1b/classxii_cone_visualizer_attribute.htm#aad82d99348d081fce6436d5d90d8ee42":[5,0,381,1],
-"d7/d1b/classxii_cone_visualizer_attribute.htm#ab0699e26317496f16bdab90b70698a07":[5,0,381,6],
-"d7/d1b/classxii_cone_visualizer_attribute.htm#ac8248d891789a2579858891fb0df9cc1":[5,0,381,3],
-"d7/d1b/classxii_cone_visualizer_attribute.htm#af55feb6de91012c3816536838647307e":[5,0,381,2],
-"d7/d1b/classxii_cone_visualizer_attribute.htm#aff2aa09b583b04413ace9dc0d2797d7a":[5,0,381,5],
-"d7/d1f/structxii_g_a_l_shader_variable_description.htm":[5,0,967],
-"d7/d1f/structxii_g_a_l_shader_variable_description.htm#a104a214525a1a8f5eeedd1c66279d419":[5,0,967,0]
+"d7/d1a/classxii_constant_buffer_storage_handle.htm":[5,0,396]
 };

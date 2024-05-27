@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['honeydew_20646',['HoneyDew',['../d3/de6/classxii_color.htm#aea115a5dc052e017f5fa9add6b9dc8d6',1,'xiiColor']]],
-  ['hotpink_20647',['HotPink',['../d3/de6/classxii_color.htm#adece3e18d9acb2938dffeedbced9e611',1,'xiiColor']]]
+  ['honeydew_20651',['HoneyDew',['../d3/de6/classxii_color.htm#aea115a5dc052e017f5fa9add6b9dc8d6',1,'xiiColor']]],
+  ['hotpink_20652',['HotPink',['../d3/de6/classxii_color.htm#adece3e18d9acb2938dffeedbced9e611',1,'xiiColor']]]
 ];

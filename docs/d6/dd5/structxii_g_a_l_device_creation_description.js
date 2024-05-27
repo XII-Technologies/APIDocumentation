@@ -1,5 +1,6 @@
 var structxii_g_a_l_device_creation_description =
 [
+    [ "operator==", "d6/dd5/structxii_g_a_l_device_creation_description.htm#a9b3ffe5e0cc20ab6cd17fae4ff64ab50", null ],
     [ "XII_DECLARE_POD_TYPE", "d6/dd5/structxii_g_a_l_device_creation_description.htm#a20a3083b8efa1b986e8fd0adb71c45e7", null ],
     [ "m_AdapterType", "d6/dd5/structxii_g_a_l_device_creation_description.htm#a605c6ece71e7d44aed9806e198ab9b94", null ],
     [ "m_DeviceFeatures", "d6/dd5/structxii_g_a_l_device_creation_description.htm#ad744806013eb46a25c0619d5451b7138", null ],

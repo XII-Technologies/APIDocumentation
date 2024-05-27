@@ -84,8 +84,8 @@ $(document).ready(function(){initNavTree('d9/df8/classxii_clustered_data_c_p_u.h
 
 <div class="header">
   <div class="summary">
-<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="../../da/d57/classxii_clustered_data_c_p_u-members.htm">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">xiiClusteredDataCPU Class Reference</div>  </div>
@@ -103,20 +103,6 @@ Inheritance diagram for xiiClusteredDataCPU:</div>
 </map>
 <center><span class="legend">[<a target="top" href="../../graph_legend.htm">legend</a>]</span></center></div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
-Public Types</h2></td></tr>
-<tr class="memitem:a7d1b18693bd419b5990f6e6fb4d90b64"><td class="memItemLeft" align="right" valign="top"><a id="a7d1b18693bd419b5990f6e6fb4d90b64"></a>enum &#160;</td><td class="memItemRight" valign="bottom">{ <b>MAX_LIGHT_DATA</b> = 1024, 
-<b>MAX_DECAL_DATA</b> = 1024, 
-<b>MAX_REFLECTION_PROBE_DATA</b> = 1024, 
-<b>MAX_ITEMS_PER_CLUSTER</b> = 256
- }</td></tr>
-<tr class="separator:a7d1b18693bd419b5990f6e6fb4d90b64"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_types_classxii_render_data"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classxii_render_data')"><img src="../../closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="../../d8/da5/classxii_render_data.htm">xiiRenderData</a></td></tr>
-<tr class="memitem:aa7b3828acb943e031f920eaa428bf00e inherit pub_types_classxii_render_data"><td class="memItemLeft" align="right" valign="top"><a id="aa7b3828acb943e031f920eaa428bf00e"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/da5/classxii_render_data.htm#aa7b3828acb943e031f920eaa428bf00e">SortingKeyFunc</a> = xiiUInt64(*)(const <a class="el" href="../../d8/da5/classxii_render_data.htm">xiiRenderData</a> *, const <a class="el" href="../../dc/d68/classxii_camera.htm">xiiCamera</a> &amp;)</td></tr>
-<tr class="memdesc:aa7b3828acb943e031f920eaa428bf00e inherit pub_types_classxii_render_data"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function generates a 64bit sorting key for the given render data. Data with lower sorting key is rendered first. <br /></td></tr>
-<tr class="separator:aa7b3828acb943e031f920eaa428bf00e inherit pub_types_classxii_render_data"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:acbe140a6e030d2a2c24e26d8f24c95fd"><td class="memItemLeft" align="right" valign="top"><a id="acbe140a6e030d2a2c24e26d8f24c95fd"></a>
@@ -179,8 +165,28 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>m_fSortingDepthOffse
 <a class="el" href="../../da/d2c/structxii_game_object_handle.htm">xiiGameObjectHandle</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_hOwner</b></td></tr>
 <tr class="separator:aef6a0c3b40a10c7dad8f76ab37dc3600 inherit pub_attribs_classxii_render_data"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
+Static Public Attributes</h2></td></tr>
+<tr class="memitem:a511a6d1e1a6348e5b762669072d1020d"><td class="memItemLeft" align="right" valign="top"><a id="a511a6d1e1a6348e5b762669072d1020d"></a>
+static constexpr xiiUInt32&#160;</td><td class="memItemRight" valign="bottom"><b>MAX_LIGHT_DATA</b> = 1024U</td></tr>
+<tr class="separator:a511a6d1e1a6348e5b762669072d1020d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a177f85f6252fabadfcef4b1a47b343d1"><td class="memItemLeft" align="right" valign="top"><a id="a177f85f6252fabadfcef4b1a47b343d1"></a>
+static constexpr xiiUInt32&#160;</td><td class="memItemRight" valign="bottom"><b>MAX_DECAL_DATA</b> = 1024U</td></tr>
+<tr class="separator:a177f85f6252fabadfcef4b1a47b343d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94d73e1a8c011b57e7b64bf96c3389c3"><td class="memItemLeft" align="right" valign="top"><a id="a94d73e1a8c011b57e7b64bf96c3389c3"></a>
+static constexpr xiiUInt32&#160;</td><td class="memItemRight" valign="bottom"><b>MAX_REFLECTION_PROBE_DATA</b> = 1024U</td></tr>
+<tr class="separator:a94d73e1a8c011b57e7b64bf96c3389c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3d28c02a359265456c8fa1fcb7fc6dc"><td class="memItemLeft" align="right" valign="top"><a id="aa3d28c02a359265456c8fa1fcb7fc6dc"></a>
+static constexpr xiiUInt32&#160;</td><td class="memItemRight" valign="bottom"><b>MAX_ITEMS_PER_CLUSTER</b> = 256U</td></tr>
+<tr class="separator:aa3d28c02a359265456c8fa1fcb7fc6dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pub_types_classxii_render_data"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classxii_render_data')"><img src="../../closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="../../d8/da5/classxii_render_data.htm">xiiRenderData</a></td></tr>
+<tr class="memitem:aa7b3828acb943e031f920eaa428bf00e inherit pub_types_classxii_render_data"><td class="memItemLeft" align="right" valign="top"><a id="aa7b3828acb943e031f920eaa428bf00e"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/da5/classxii_render_data.htm#aa7b3828acb943e031f920eaa428bf00e">SortingKeyFunc</a> = xiiUInt64(*)(const <a class="el" href="../../d8/da5/classxii_render_data.htm">xiiRenderData</a> *, const <a class="el" href="../../dc/d68/classxii_camera.htm">xiiCamera</a> &amp;)</td></tr>
+<tr class="memdesc:aa7b3828acb943e031f920eaa428bf00e inherit pub_types_classxii_render_data"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function generates a 64bit sorting key for the given render data. Data with lower sorting key is rendered first. <br /></td></tr>
+<tr class="separator:aa7b3828acb943e031f920eaa428bf00e inherit pub_types_classxii_render_data"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classxii_render_data"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classxii_render_data')"><img src="../../closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="../../d8/da5/classxii_render_data.htm">xiiRenderData</a></td></tr>
 <tr class="memitem:a1f91676952717bb6398f759b6d869799 inherit pub_methods_classxii_render_data"><td class="memItemLeft" align="right" valign="top"><a id="a1f91676952717bb6398f759b6d869799"></a>
 xiiUInt64&#160;</td><td class="memItemRight" valign="bottom"><b>GetCategorySortingKey</b> (<a class="el" href="../../d0/d8b/structxii_render_data_1_1_category.htm">Category</a> category, const <a class="el" href="../../dc/d68/classxii_camera.htm">xiiCamera</a> &amp;camera) const</td></tr>
@@ -229,7 +235,7 @@ static const <a class="el" href="../../db/d89/classxii_r_t_t_i.htm">xiiRTTI</a> 
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d9/df8/classxii_clustered_data_c_p_u.htm">xiiClusteredDataCPU</a></li>
-    <li class="footer">Generated on Fri May 24 2024 23:29:12 for XIIEngine by
+    <li class="footer">Generated on Mon May 27 2024 16:41:29 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

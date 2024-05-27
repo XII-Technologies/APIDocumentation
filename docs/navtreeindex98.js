@@ -1,5 +1,17 @@
 var NAVTREEINDEX98 =
 {
+"dd/d19/structxii_msg_damage.htm":[5,0,1403],
+"dd/d19/structxii_msg_damage.htm#a5ff9bd8d6e6fc13b37b66a31a15fa963":[5,0,1403,4],
+"dd/d19/structxii_msg_damage.htm#a7b6e19012eaa1eb888680a7cfb8206b9":[5,0,1403,2],
+"dd/d19/structxii_msg_damage.htm#a9a11c3f1a38b8d7d873480899c4b3957":[5,0,1403,1],
+"dd/d19/structxii_msg_damage.htm#a9fed0203c802e153bde34e8651ed9a82":[5,0,1403,0],
+"dd/d19/structxii_msg_damage.htm#aeca3ec8e57e5feb25d09fa26e99f2c95":[5,0,1403,3],
+"dd/d1a/classxii_input_device_mouse_keyboard.htm":[5,0,1191],
+"dd/d1a/classxii_input_device_mouse_keyboard.htm#a0b7d28c4962056cfa18e7965e38a8b30":[5,0,1191,1],
+"dd/d1a/classxii_input_device_mouse_keyboard.htm#a0c01af86243bd21752fc68b3658a5166":[5,0,1191,2],
+"dd/d1a/classxii_input_device_mouse_keyboard.htm#a1792e55fcd468b3f2bccf31d56ef3543":[5,0,1191,8],
+"dd/d1a/classxii_input_device_mouse_keyboard.htm#a22f5fe7de41384c624a293cd6d665da5":[5,0,1191,9],
+"dd/d1a/classxii_input_device_mouse_keyboard.htm#a322d394f3c74468acdb3f0c56491112d":[5,0,1191,7],
 "dd/d1a/classxii_input_device_mouse_keyboard.htm#a4f9755c7766e360f6748c71c0d4c012a":[5,0,1191,0],
 "dd/d1a/classxii_input_device_mouse_keyboard.htm#a62fe8488bbdcddc21628786101f069f2":[5,0,1191,6],
 "dd/d1a/classxii_input_device_mouse_keyboard.htm#ad581683c61806c4ab293d14ed795d63d":[5,0,1191,5],
@@ -237,17 +249,5 @@ var NAVTREEINDEX98 =
 "dd/d35/classxii_simd_b_box.htm#a9f95af968c047e2353c226084f1946aa":[5,0,2088,15],
 "dd/d35/classxii_simd_b_box.htm#aa0750401f8af052742144bee6b277d97":[5,0,2088,26],
 "dd/d35/classxii_simd_b_box.htm#ab423caed51fcfd8df5003d43b9ad14d9":[5,0,2088,5],
-"dd/d35/classxii_simd_b_box.htm#acc2bd6fee47e6382ad3c16181ba26b7b":[5,0,2088,16],
-"dd/d35/classxii_simd_b_box.htm#acc89dd46088389a2316d71e59156131c":[5,0,2088,4],
-"dd/d35/classxii_simd_b_box.htm#acd7ab605978edd80523b3b48edc05451":[5,0,2088,23],
-"dd/d35/classxii_simd_b_box.htm#ad4d2d930f522048b0abb06634b4aaed1":[5,0,2088,27],
-"dd/d35/classxii_simd_b_box.htm#ad5d2877f2d7e4d6c7686c71c8ccd9fa5":[5,0,2088,0],
-"dd/d35/classxii_simd_b_box.htm#ad642c62812673230a908ba8badd94d7b":[5,0,2088,9],
-"dd/d35/classxii_simd_b_box.htm#ae422c7f3da74a91580636a8b0ea1be6d":[5,0,2088,22],
-"dd/d35/classxii_simd_b_box.htm#aeb06bb1e6e8ca70173ca4316d47f0e02":[5,0,2088,21],
-"dd/d35/classxii_simd_b_box.htm#aeb38b9f8a1cb52e389f40203315fed01":[5,0,2088,7],
-"dd/d35/classxii_simd_b_box.htm#aeeb76b4503380f3014ded6a2c1bc3310":[5,0,2088,20],
-"dd/d35/classxii_simd_b_box.htm#afbe9bc8827f7f85c98e2a585ee652c24":[5,0,2088,25],
-"dd/d35/classxii_simd_b_box.htm#afe7d87bc2419e8e07e5ee0070fe01542":[5,0,2088,30],
-"dd/d35/structxii_image_data_resource_descriptor.htm":[5,0,1168]
+"dd/d35/classxii_simd_b_box.htm#acc2bd6fee47e6382ad3c16181ba26b7b":[5,0,2088,16]
 };

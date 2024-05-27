@@ -1,5 +1,6 @@
 var NAVTREEINDEX3 =
 {
+"d0/d56/structxii_clustered_data_g_p_u.htm#a4b3667af9d6ffa87137170f240f211b3":[5,0,303,9],
 "d0/d56/structxii_clustered_data_g_p_u.htm#a5445631befc828d3a829561b9b72d888":[5,0,303,11],
 "d0/d56/structxii_clustered_data_g_p_u.htm#a651c476025b6396b74c6e740baddf1be":[5,0,303,5],
 "d0/d56/structxii_clustered_data_g_p_u.htm#a83f128594a05ff1b956551969159b3bd":[5,0,303,4],
@@ -248,6 +249,5 @@ var NAVTREEINDEX3 =
 "d0/d7f/classxii_event_base.htm#aeba7db2bfa882561fa4c23f3a01320f4":[5,0,635,7],
 "d0/d7f/classxii_event_base.htm#aeec508e0a7fd0232284d9f84c4711e7e":[5,0,635,12],
 "d0/d7f/classxii_event_base.htm#af10a18a3db1fc0e3afc428f680988c6a":[5,0,635,10],
-"d0/d7f/classxii_exposed_scene_property.htm":[5,0,657],
-"d0/d7f/classxii_exposed_scene_property.htm#a21e04f8e61e11417ac767215654d5644":[5,0,657,1]
+"d0/d7f/classxii_exposed_scene_property.htm":[5,0,657]
 };

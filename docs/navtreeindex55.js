@@ -1,5 +1,17 @@
 var NAVTREEINDEX55 =
 {
+"d7/d1a/classxii_constant_buffer_storage_handle.htm#a21019779bc8ccf63e7dcf7488ac12e59":[5,0,396,0],
+"d7/d1b/classxii_cone_visualizer_attribute.htm":[5,0,381],
+"d7/d1b/classxii_cone_visualizer_attribute.htm#a0ace1762563f8f7c25bf59d31386f820":[5,0,381,7],
+"d7/d1b/classxii_cone_visualizer_attribute.htm#a184c031b688c30f94718f8389987a203":[5,0,381,0],
+"d7/d1b/classxii_cone_visualizer_attribute.htm#a27659a8db9c683d262584ece0052c851":[5,0,381,4],
+"d7/d1b/classxii_cone_visualizer_attribute.htm#aad82d99348d081fce6436d5d90d8ee42":[5,0,381,1],
+"d7/d1b/classxii_cone_visualizer_attribute.htm#ab0699e26317496f16bdab90b70698a07":[5,0,381,6],
+"d7/d1b/classxii_cone_visualizer_attribute.htm#ac8248d891789a2579858891fb0df9cc1":[5,0,381,3],
+"d7/d1b/classxii_cone_visualizer_attribute.htm#af55feb6de91012c3816536838647307e":[5,0,381,2],
+"d7/d1b/classxii_cone_visualizer_attribute.htm#aff2aa09b583b04413ace9dc0d2797d7a":[5,0,381,5],
+"d7/d1f/structxii_g_a_l_shader_variable_description.htm":[5,0,967],
+"d7/d1f/structxii_g_a_l_shader_variable_description.htm#a104a214525a1a8f5eeedd1c66279d419":[5,0,967,0],
 "d7/d1f/structxii_g_a_l_shader_variable_description.htm#a256f350a48ba6741209ec8393c8ae677":[5,0,967,5],
 "d7/d1f/structxii_g_a_l_shader_variable_description.htm#a33a4fa591b5bfe33b90c67d9ca75196e":[5,0,967,1],
 "d7/d1f/structxii_g_a_l_shader_variable_description.htm#a4f97ca4fc270aca4b81e575db052d3e5":[5,0,967,3],
@@ -237,17 +249,5 @@ var NAVTREEINDEX55 =
 "d7/d4e/classxii_sensor_component.htm#a7e1ca19f158049921e9870ef8918c232":[5,0,2043,18],
 "d7/d4e/classxii_sensor_component.htm#a8ea699b3ad88b77e776bb1ce7b6a130a":[5,0,2043,2],
 "d7/d4e/classxii_sensor_component.htm#a9829f109b272554339d898b1eacedf23":[5,0,2043,11],
-"d7/d4e/classxii_sensor_component.htm#aaf59ce560834279d533396cc0f5c73eb":[5,0,2043,27],
-"d7/d4e/classxii_sensor_component.htm#ab58dd1e17e4e5a26e419c3e18d9cffc2":[5,0,2043,9],
-"d7/d4e/classxii_sensor_component.htm#ab82474e00a6d02e72bd357a42bc62187":[5,0,2043,13],
-"d7/d4e/classxii_sensor_component.htm#acada65054b3c8198238fb2c087409bf4":[5,0,2043,17],
-"d7/d4e/classxii_sensor_component.htm#ad32402b0d262a9a172ef0d7f5f4fec6e":[5,0,2043,3],
-"d7/d4e/classxii_sensor_component.htm#ad43d5bfa632bcd44b071c1c3bda5b744":[5,0,2043,8],
-"d7/d4e/classxii_sensor_component.htm#ae65e0e60e7c2591830275369a1df2814":[5,0,2043,15],
-"d7/d4e/classxii_sensor_component.htm#aeb8429d0d73c3a683069e6406f4b71a4":[5,0,2043,1],
-"d7/d4e/classxii_sensor_component.htm#af02ace73d13faebc0fdb9590c0360705":[5,0,2043,24],
-"d7/d4e/structxii_container_sub_type_resolver_3_01xii_tag_set_template_3_01_t_01_4_01_4.htm":[5,0,412],
-"d7/d4e/structxii_container_sub_type_resolver_3_01xii_tag_set_template_3_01_t_01_4_01_4.htm#aa4eef816cb08a03a894e2a7415d28e8d":[5,0,412,0],
-"d7/d53/structxii_phantom_type_change.htm":[5,0,1509],
-"d7/d53/structxii_phantom_type_change.htm#ae22311a8b424226c000fa4e6a8f898ee":[5,0,1509,0]
+"d7/d4e/classxii_sensor_component.htm#aaf59ce560834279d533396cc0f5c73eb":[5,0,2043,27]
 };

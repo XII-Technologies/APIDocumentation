@@ -1,5 +1,15 @@
 var NAVTREEINDEX77 =
 {
+"da/d2c/structxii_profile_target_platform.htm#ab9e50113e99ce64374fbf3517da9a5db":[5,0,1569,1],
+"da/d2c/structxii_profile_target_platform.htm#ab9e50113e99ce64374fbf3517da9a5dba260b5481eed6fa906069da9ab0d31627":[5,0,1569,1,0],
+"da/d2c/structxii_profile_target_platform.htm#ab9e50113e99ce64374fbf3517da9a5dba3d94aa9d71a57639865d4e2d00b9c46d":[5,0,1569,1,3],
+"da/d2c/structxii_profile_target_platform.htm#ab9e50113e99ce64374fbf3517da9a5dbaa7d4591747dbc7ef75aee81182d2c068":[5,0,1569,1,2],
+"da/d2c/structxii_profile_target_platform.htm#ab9e50113e99ce64374fbf3517da9a5dbaad212fc2ccd860fce331c290c92767c5":[5,0,1569,1,1],
+"da/d2d/classxii_grey_box_component.htm":[5,0,1102],
+"da/d2d/classxii_grey_box_component.htm#a054a8b27fb20b93985678b03b28c8343":[5,0,1102,2],
+"da/d2d/classxii_grey_box_component.htm#a0600fe3c93d9ac5d6e672d9891836bca":[5,0,1102,44],
+"da/d2d/classxii_grey_box_component.htm#a09156653bfdb8d75ac46ae912804f725":[5,0,1102,17],
+"da/d2d/classxii_grey_box_component.htm#a0de82a412db7597f82063c3ee94a13fc":[5,0,1102,7],
 "da/d2d/classxii_grey_box_component.htm#a1414e43d10fe12899307c19337004be5":[5,0,1102,40],
 "da/d2d/classxii_grey_box_component.htm#a14a2a96a28f88aa971f32f6f9e7979e3":[5,0,1102,43],
 "da/d2d/classxii_grey_box_component.htm#a163cc5ae52d3c9a7aa9f70b9d002f6d3":[5,0,1102,37],
@@ -239,15 +249,5 @@ var NAVTREEINDEX77 =
 "da/d43/classxii_long_op_replication_msg.htm#ac49296e55e11227465dbf6bb8927590a":[5,0,1289,2],
 "da/d43/classxii_long_op_replication_msg.htm#af1d8e995e98e4fdde55ff1923e19f33a":[5,0,1289,0],
 "da/d43/classxii_material_drag_drop_handler.htm":[5,0,1323],
-"da/d43/classxii_material_drag_drop_handler.htm#a25e0c9e0ef4b2a7647852d765edcdec1":[5,0,1323,1],
-"da/d43/classxii_material_drag_drop_handler.htm#a42b23d893ad4864eca8d9912a91626b5":[5,0,1323,5],
-"da/d43/classxii_material_drag_drop_handler.htm#a522b8cf06c47b01b5797851a0c8e2a9c":[5,0,1323,2],
-"da/d43/classxii_material_drag_drop_handler.htm#a52e9978cac08f528f3db8c245779d734":[5,0,1323,0],
-"da/d43/classxii_material_drag_drop_handler.htm#a57351c7fb1ee63aaaec05c4c6a8a6887":[5,0,1323,3],
-"da/d43/classxii_material_drag_drop_handler.htm#a78baf16ef114ec13b5b7bf783b12cd39":[5,0,1323,4],
-"da/d43/classxii_material_drag_drop_handler.htm#ad62598621da6ebaa19f3b205baebe8d7":[5,0,1323,7],
-"da/d43/classxii_material_drag_drop_handler.htm#ae466eeb21111b473db87bf2bd3b94674":[5,0,1323,6],
-"da/d43/structxii_g_a_l_map_type.htm":[5,0,854],
-"da/d43/structxii_g_a_l_map_type.htm#a65164e2efa0e8d2c4959973f94ed54cf":[5,0,854,1],
-"da/d43/structxii_g_a_l_map_type.htm#a65164e2efa0e8d2c4959973f94ed54cfa22538196a3982ef004e75cf1f6661131":[5,0,854,1,3]
+"da/d43/classxii_material_drag_drop_handler.htm#a25e0c9e0ef4b2a7647852d765edcdec1":[5,0,1323,1]
 };

@@ -1,5 +1,10 @@
 var NAVTREEINDEX41 =
 {
+"d5/d64/structxii_size_to_type.htm":[5,0,2129],
+"d5/d65/classxii_forward_events_to_game_state_component.htm":[5,0,702],
+"d5/d65/classxii_forward_events_to_game_state_component.htm#a594ddbf5e80de5511050d5dbcc8d5c6e":[5,0,702,0],
+"d5/d65/classxii_forward_events_to_game_state_component.htm#a6757210a796c52132330b92a7d0da84e":[5,0,702,4],
+"d5/d65/classxii_forward_events_to_game_state_component.htm#a6e9f96b9a15b258db62c2f40900d320d":[5,0,702,1],
 "d5/d65/classxii_forward_events_to_game_state_component.htm#a7f2f48f33fe4043ff22d35d6ae6db6a9":[5,0,702,3],
 "d5/d65/classxii_forward_events_to_game_state_component.htm#a97de051f65db15904d7310a769ffdebf":[5,0,702,5],
 "d5/d65/classxii_forward_events_to_game_state_component.htm#afcfe4e1520175f3700a5f9744d51e085":[5,0,702,2],
@@ -84,10 +89,11 @@ var NAVTREEINDEX41 =
 "d5/d6f/classxii_visual_script_instance.htm#af331f4a5cbc11742ad95ba1ca59e2f60":[5,0,2504,1],
 "d5/d6f/struct_occluder.htm":[5,0,26],
 "d5/d71/structxii_g_a_l_draw_command_properties.htm":[5,0,815],
-"d5/d71/structxii_g_a_l_draw_command_properties.htm#a1bb837553b73d2001791e4d4113331fa":[5,0,815,2],
-"d5/d71/structxii_g_a_l_draw_command_properties.htm#a2a930b55799d568fec89f069eadc40de":[5,0,815,3],
-"d5/d71/structxii_g_a_l_draw_command_properties.htm#a2ab293b7353564d364beef86fe9b0b62":[5,0,815,0],
-"d5/d71/structxii_g_a_l_draw_command_properties.htm#adc5ec4ad74485feb1ae4e307fdba7580":[5,0,815,1],
+"d5/d71/structxii_g_a_l_draw_command_properties.htm#a1bb837553b73d2001791e4d4113331fa":[5,0,815,3],
+"d5/d71/structxii_g_a_l_draw_command_properties.htm#a2a930b55799d568fec89f069eadc40de":[5,0,815,4],
+"d5/d71/structxii_g_a_l_draw_command_properties.htm#a2ab293b7353564d364beef86fe9b0b62":[5,0,815,1],
+"d5/d71/structxii_g_a_l_draw_command_properties.htm#a8c2b027ebaae2a11723182da6d2a8ee8":[5,0,815,0],
+"d5/d71/structxii_g_a_l_draw_command_properties.htm#adc5ec4ad74485feb1ae4e307fdba7580":[5,0,815,2],
 "d5/d72/classxii_qt_graphics_view.htm":[5,0,1708],
 "d5/d72/classxii_qt_graphics_view.htm#a0e689905309ccfc06d130b54a788654f":[5,0,1708,15],
 "d5/d72/classxii_qt_graphics_view.htm#a0ebe0302b92fefbb35f6a9adc32044bf":[5,0,1708,4],
@@ -243,11 +249,5 @@ var NAVTREEINDEX41 =
 "d5/d85/classxii_direction_visualizer_adapter.htm#aaf7ba2cfe86a24cf6d10b3e9263c51de":[5,0,520,0],
 "d5/d85/classxii_direction_visualizer_adapter.htm#ad8317eb19d5142cf2d9a5e4b0d179a7c":[5,0,520,3],
 "d5/d85/classxii_direction_visualizer_adapter.htm#adf93b153387032f4acd015cd45263ac1":[5,0,520,1],
-"d5/d87/structxii_g_a_l_pipeline_state_creation_description.htm":[5,0,875],
-"d5/d87/structxii_g_a_l_pipeline_state_creation_description.htm#a354bb159aba0a2ccca94fb7a4070ae05":[5,0,875,9],
-"d5/d87/structxii_g_a_l_pipeline_state_creation_description.htm#a5bfba94f652d68b0df5adafe005e0744":[5,0,875,11],
-"d5/d87/structxii_g_a_l_pipeline_state_creation_description.htm#a83c9fe2a0d406472671c65d93a1fe7b8":[5,0,875,7],
-"d5/d87/structxii_g_a_l_pipeline_state_creation_description.htm#a9f320c981a2e36634b6a0ac2cb11b28a":[5,0,875,12],
-"d5/d87/structxii_g_a_l_pipeline_state_creation_description.htm#a9f3cd8f209b5b507fc472ad04a21f39c":[5,0,875,2],
-"d5/d87/structxii_g_a_l_pipeline_state_creation_description.htm#aac27d6e726470ce3af72f9264be4061c":[5,0,875,1]
+"d5/d87/structxii_g_a_l_pipeline_state_creation_description.htm":[5,0,875]
 };

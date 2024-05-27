@@ -1,5 +1,6 @@
 var structxii_g_a_l_shading_rate_properties =
 [
+    [ "operator==", "d4/d74/structxii_g_a_l_shading_rate_properties.htm#a493dc7a7c2704da9610f2ccd6b4fa49b", null ],
     [ "m_BindFlags", "d4/d74/structxii_g_a_l_shading_rate_properties.htm#ae6521b49c37e8458047757170d9d7ac0", null ],
     [ "m_CapabilityFlags", "d4/d74/structxii_g_a_l_shading_rate_properties.htm#a39f6962b526aaf66bb6be7f13e36b800", null ],
     [ "m_CombinerFlags", "d4/d74/structxii_g_a_l_shading_rate_properties.htm#a93e1d0297e5dd6bc4933ee846d066665", null ],

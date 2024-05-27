@@ -1,5 +1,9 @@
 var NAVTREEINDEX36 =
 {
+"d4/ddf/classxii_state_map.htm#a2afda5edfe98878c3c54f013a45598a3":[5,0,2231,12],
+"d4/ddf/classxii_state_map.htm#a2c7e2140b00b9ddd6a2da0fdfbc7e0c4":[5,0,2231,9],
+"d4/ddf/classxii_state_map.htm#a390935b40614b64c93c9f2fa30decde7":[5,0,2231,13],
+"d4/ddf/classxii_state_map.htm#a41f8240035065fd7328fbd59132b3626":[5,0,2231,11],
 "d4/ddf/classxii_state_map.htm#a54b909846034fc282aaae995dab9efdc":[5,0,2231,3],
 "d4/ddf/classxii_state_map.htm#a66cd3687af5478561aea6d61158c1012":[5,0,2231,4],
 "d4/ddf/classxii_state_map.htm#a6ee1d571a4ed70f36e8db6734c970d85":[5,0,2231,10],
@@ -188,9 +192,10 @@ var NAVTREEINDEX36 =
 "d4/dfd/structxii_engine_view_light_settings_event.htm#a378de594c32def50ece712f5eaf20882ace8b124e61a3e7bba57eed6321fd8f86":[5,0,623,0,5],
 "d4/dfd/structxii_engine_view_light_settings_event.htm#a378de594c32def50ece712f5eaf20882ae08b4bac01f35fb021341bfd70058526":[5,0,623,0,9],
 "d4/dfd/structxii_g_a_l_shading_rate_mode.htm":[5,0,976],
-"d4/dfd/structxii_g_a_l_shading_rate_mode.htm#a1901b3dcb9b0b2b4ecbee1304062342e":[5,0,976,0],
-"d4/dfd/structxii_g_a_l_shading_rate_mode.htm#a219d9088a1bf0b99868a309fe508cc5b":[5,0,976,2],
-"d4/dfd/structxii_g_a_l_shading_rate_mode.htm#a38167f22e586e5be807497f933f6d0cf":[5,0,976,1],
+"d4/dfd/structxii_g_a_l_shading_rate_mode.htm#a1901b3dcb9b0b2b4ecbee1304062342e":[5,0,976,1],
+"d4/dfd/structxii_g_a_l_shading_rate_mode.htm#a219d9088a1bf0b99868a309fe508cc5b":[5,0,976,3],
+"d4/dfd/structxii_g_a_l_shading_rate_mode.htm#a38167f22e586e5be807497f933f6d0cf":[5,0,976,2],
+"d4/dfd/structxii_g_a_l_shading_rate_mode.htm#ab1722076967ea34bba9aee4781761d40":[5,0,976,0],
 "d4/dfe/classxii_qt_document_tree_model.htm":[5,0,1666],
 "d4/dfe/classxii_qt_document_tree_model.htm#a135385ca6aaa124a6bbc6c2261f25d53":[5,0,1666,9],
 "d4/dfe/classxii_qt_document_tree_model.htm#a160fc4157709e3f396e5871c9bea1d9c":[5,0,1666,20],
@@ -244,10 +249,5 @@ var NAVTREEINDEX36 =
 "d5/d06/structxii_dynamic_menu_action_1_1_item.htm#a4f878dfd29a54b7e2915038f9398a23c":[5,0,574,0,3],
 "d5/d06/structxii_dynamic_menu_action_1_1_item.htm#a5ea0c65fb42f09b6b4c0a7701f799fa7":[5,0,574,0,7],
 "d5/d06/structxii_dynamic_menu_action_1_1_item.htm#ae543d715cd1bc9bed51be10c1262254b":[5,0,574,0,2],
-"d5/d06/structxii_dynamic_menu_action_1_1_item.htm#af64f43f004fde808c55d69cc59cc33ea":[5,0,574,0,4],
-"d5/d07/classxii_g_a_l_swap_chain.htm":[5,0,989],
-"d5/d07/classxii_g_a_l_swap_chain.htm#a0952b04bed6eb55b32df12d0cdc96fd3":[5,0,989,14],
-"d5/d07/classxii_g_a_l_swap_chain.htm#a1046141038648958ac8f21b8b1abdee3":[5,0,989,7],
-"d5/d07/classxii_g_a_l_swap_chain.htm#a11f483e43d58395675e8bc4fecafe791":[5,0,989,9],
-"d5/d07/classxii_g_a_l_swap_chain.htm#a2dccc5b5177e78b940dd0f89add2a038":[5,0,989,11]
+"d5/d06/structxii_dynamic_menu_action_1_1_item.htm#af64f43f004fde808c55d69cc59cc33ea":[5,0,574,0,4]
 };

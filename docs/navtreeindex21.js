@@ -1,5 +1,8 @@
 var NAVTREEINDEX21 =
 {
+"d2/dde/classxii_animated_mesh_asset_properties.htm":[5,0,102],
+"d2/dde/classxii_animated_mesh_asset_properties.htm#a08f169e6bd5676158fb66aacbee20488":[5,0,102,9],
+"d2/dde/classxii_animated_mesh_asset_properties.htm#a13e29a618a70580b2aa4b99af825d387":[5,0,102,1],
 "d2/dde/classxii_animated_mesh_asset_properties.htm#a202e01537dfdbb9bf40836512fef9da1":[5,0,102,2],
 "d2/dde/classxii_animated_mesh_asset_properties.htm#a509e0208ffab20281bc84068b4303612":[5,0,102,0],
 "d2/dde/classxii_animated_mesh_asset_properties.htm#a76021a441a8be9e557ec97801aeb9ce4":[5,0,102,8],
@@ -246,8 +249,5 @@ var NAVTREEINDEX21 =
 "d3/d01/classxii_state_machine_state___switch_object.htm#af789d76a8c91cb1f2999cc87ae8cad54":[5,0,2225,4],
 "d3/d01/classxii_state_machine_state___switch_object.htm#afb3766e9bcd0a104a1a60e100b87c47c":[5,0,2225,5],
 "d3/d01/structxii_g_a_l_sample_count.htm":[5,0,926],
-"d3/d01/structxii_g_a_l_sample_count.htm#a9882b9a04c908ada09066d29eee92e7c":[5,0,926,2],
-"d3/d01/structxii_g_a_l_sample_count.htm#a9882b9a04c908ada09066d29eee92e7ca2700500098cb7e6240eb673aa7cde393":[5,0,926,2,7],
-"d3/d01/structxii_g_a_l_sample_count.htm#a9882b9a04c908ada09066d29eee92e7ca40ba540d5171f603d29c659a1dd746d3":[5,0,926,2,6],
-"d3/d01/structxii_g_a_l_sample_count.htm#a9882b9a04c908ada09066d29eee92e7ca44ecb5266f59db3d5dcae8f923550094":[5,0,926,2,9]
+"d3/d01/structxii_g_a_l_sample_count.htm#a9882b9a04c908ada09066d29eee92e7c":[5,0,926,2]
 };

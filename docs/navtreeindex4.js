@@ -1,5 +1,6 @@
 var NAVTREEINDEX4 =
 {
+"d0/d7f/classxii_exposed_scene_property.htm#a21e04f8e61e11417ac767215654d5644":[5,0,657,1],
 "d0/d7f/classxii_exposed_scene_property.htm#a93809496cfaef6b72832f73ecad4368d":[5,0,657,0],
 "d0/d7f/classxii_exposed_scene_property.htm#ad170d6ef495451874a64e794278533d5":[5,0,657,2],
 "d0/d7f/structxii_physics_overlap_result.htm":[5,0,1512],
@@ -47,11 +48,10 @@ var NAVTREEINDEX4 =
 "d0/d8b/classxii_min_value_text_attribute.htm#abd4e6250a12e9d133f1e6fd73f6a18da":[5,0,1385,1],
 "d0/d8b/classxii_min_value_text_attribute.htm#af90f829ed84ad1f9e2eba51fd80f31dd":[5,0,1385,2],
 "d0/d8b/structxii_render_data_1_1_category.htm":[5,0,1896,1],
-"d0/d8b/structxii_render_data_1_1_category.htm#a3fe462b2532cda9513cac1ff8b05d216":[5,0,1896,1,3],
+"d0/d8b/structxii_render_data_1_1_category.htm#a3fe462b2532cda9513cac1ff8b05d216":[5,0,1896,1,2],
 "d0/d8b/structxii_render_data_1_1_category.htm#a5725e136637a0c935491c655c578b81e":[5,0,1896,1,1],
-"d0/d8b/structxii_render_data_1_1_category.htm#aae9dcefe94d6f324e9efcfe535321325":[5,0,1896,1,2],
 "d0/d8b/structxii_render_data_1_1_category.htm#ab1b3faba246a8326279737c6115761bd":[5,0,1896,1,0],
-"d0/d8b/structxii_render_data_1_1_category.htm#aefaf9cd0bba69f8e7e3446eb1c26e782":[5,0,1896,1,4],
+"d0/d8b/structxii_render_data_1_1_category.htm#aefaf9cd0bba69f8e7e3446eb1c26e782":[5,0,1896,1,3],
 "d0/d8d/classxii_qt_property_anim_asset_document_window.htm":[5,0,1756],
 "d0/d8d/classxii_qt_property_anim_asset_document_window.htm#a0bfd215de854940d055d15603cfe42ff":[5,0,1756,3],
 "d0/d8d/classxii_qt_property_anim_asset_document_window.htm#a1b095fcecee8a1fc836e809e933dbab3":[5,0,1756,1],

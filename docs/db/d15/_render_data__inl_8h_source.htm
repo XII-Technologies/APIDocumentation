@@ -101,66 +101,61 @@ $(document).ready(function(){initNavTree('db/d15/_render_data__inl_8h_source.htm
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;  <span class="keywordflow">return</span> m_uiValue == other.m_uiValue;</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;}</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;XII_ALWAYS_INLINE <span class="keywordtype">bool</span> xiiRenderData::Category::operator!=(<span class="keyword">const</span> Category&amp; other)<span class="keyword"> const</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword"></span>{</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;  <span class="keywordflow">return</span> m_uiValue != other.m_uiValue;</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;}</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment">// static</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;XII_FORCE_INLINE <span class="keyword">const</span> <a class="code" href="../../da/d95/classxii_renderer.htm">xiiRenderer</a>* xiiRenderData::GetCategoryRenderer(Category category, <span class="keyword">const</span> <a class="code" href="../../db/d89/classxii_r_t_t_i.htm">xiiRTTI</a>* pRenderDataType)</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;{</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  <span class="keywordflow">if</span> (s_bRendererInstancesDirty)</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  {</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    CreateRendererInstances();</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  }</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  <span class="keyword">auto</span>&amp; categoryData = s_CategoryData[category.m_uiValue];</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  xiiUInt32 uiIndex = 0;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  <span class="keywordflow">if</span> (categoryData.m_TypeToRendererIndex.TryGetValue(pRenderDataType, uiIndex))</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  {</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordflow">return</span> s_RendererInstances[uiIndex].Borrow();</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  }</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;}</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="comment">// static</span></div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;XII_FORCE_INLINE <a class="code" href="../../d6/d0c/classxii_hashed_string.htm">xiiHashedString</a> xiiRenderData::GetCategoryName(Category category)</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;{</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <span class="keywordflow">if</span> (category.m_uiValue &lt; s_CategoryData.<a class="code" href="../../da/d4c/classxii_array_base.htm#a43100f93e19bb795ea0980dae2b28e0b">GetCount</a>())</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  {</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordflow">return</span> s_CategoryData[category.m_uiValue].m_sName;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  }</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="../../d6/d0c/classxii_hashed_string.htm">xiiHashedString</a>();</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">// static</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;XII_FORCE_INLINE <span class="keyword">const</span> <a class="code" href="../../da/d95/classxii_renderer.htm">xiiRenderer</a>* xiiRenderData::GetCategoryRenderer(Category category, <span class="keyword">const</span> <a class="code" href="../../db/d89/classxii_r_t_t_i.htm">xiiRTTI</a>* pRenderDataType)</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;{</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  <span class="keywordflow">if</span> (s_bRendererInstancesDirty)</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  {</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    CreateRendererInstances();</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  }</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  <span class="keyword">auto</span>&amp; categoryData = s_CategoryData[category.m_uiValue];</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  xiiUInt32 uiIndex = 0;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  <span class="keywordflow">if</span> (categoryData.m_TypeToRendererIndex.TryGetValue(pRenderDataType, uiIndex))</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  {</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keywordflow">return</span> s_RendererInstances[uiIndex].Borrow();</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  }</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;}</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="comment">// static</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;XII_FORCE_INLINE <a class="code" href="../../d6/d0c/classxii_hashed_string.htm">xiiHashedString</a> xiiRenderData::GetCategoryName(Category category)</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;{</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <span class="keywordflow">if</span> (category.m_uiValue &lt; s_CategoryData.<a class="code" href="../../da/d4c/classxii_array_base.htm#a43100f93e19bb795ea0980dae2b28e0b">GetCount</a>())</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  {</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordflow">return</span> s_CategoryData[category.m_uiValue].m_sName;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  }</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="../../d6/d0c/classxii_hashed_string.htm">xiiHashedString</a>();</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;}</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;XII_FORCE_INLINE xiiUInt64 xiiRenderData::GetCategorySortingKey(Category category, <span class="keyword">const</span> <a class="code" href="../../dc/d68/classxii_camera.htm">xiiCamera</a>&amp; camera)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <span class="keywordflow">return</span> s_CategoryData[category.m_uiValue].m_sortingKeyFunc(<span class="keyword">this</span>, camera);</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;}</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;XII_FORCE_INLINE xiiUInt64 xiiRenderData::GetCategorySortingKey(Category category, <span class="keyword">const</span> <a class="code" href="../../dc/d68/classxii_camera.htm">xiiCamera</a>&amp; camera)<span class="keyword"> const</span></div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="keyword"></span>{</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <span class="keywordflow">return</span> s_CategoryData[category.m_uiValue].m_sortingKeyFunc(<span class="keyword">this</span>, camera);</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;}</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="keyword">static</span> T* xiiCreateRenderDataForThisFrame(<span class="keyword">const</span> <a class="code" href="../../d0/d91/classxii_game_object.htm">xiiGameObject</a>* pOwner)</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;{</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  XII_CHECK_AT_COMPILETIME(XII_IS_DERIVED_FROM_STATIC(<a class="code" href="../../d8/da5/classxii_render_data.htm">xiiRenderData</a>, T));</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="keyword">static</span> T* xiiCreateRenderDataForThisFrame(<span class="keyword">const</span> <a class="code" href="../../d0/d91/classxii_game_object.htm">xiiGameObject</a>* pOwner)</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;{</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  XII_CHECK_AT_COMPILETIME(XII_IS_DERIVED_FROM_STATIC(<a class="code" href="../../d8/da5/classxii_render_data.htm">xiiRenderData</a>, T));</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  T* pRenderData = XII_NEW(xiiFrameAllocator::GetCurrentAllocator(), T);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  T* pRenderData = XII_NEW(xiiFrameAllocator::GetCurrentAllocator(), T);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  <span class="keywordflow">if</span> (pOwner != <span class="keyword">nullptr</span>)</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  {</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    pRenderData-&gt;m_hOwner = pOwner-&gt;<a class="code" href="../../d0/d91/classxii_game_object.htm#a5ba3eef4642e9967b1ce0af17ed2549b">GetHandle</a>();</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  }</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <span class="keywordflow">if</span> (pOwner != <span class="keyword">nullptr</span>)</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  {</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    pRenderData-&gt;m_hOwner = pOwner-&gt;<a class="code" href="../../d0/d91/classxii_game_object.htm#a5ba3eef4642e9967b1ce0af17ed2549b">GetHandle</a>();</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  }</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="preprocessor">#if XII_ENABLED(XII_COMPILE_FOR_DEVELOPMENT)</span></div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  pRenderData-&gt;m_pOwner = pOwner;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  <span class="keywordflow">return</span> pRenderData;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;}</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="preprocessor">#if XII_ENABLED(XII_COMPILE_FOR_DEVELOPMENT)</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  pRenderData-&gt;m_pOwner = pOwner;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  <span class="keywordflow">return</span> pRenderData;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclassxii_hashed_string_htm"><div class="ttname"><a href="../../d6/d0c/classxii_hashed_string.htm">xiiHashedString</a></div><div class="ttdoc">This class is optimized to take nearly no memory (sizeof(void*)) and to allow very fast checks whethe...</div><div class="ttdef"><b>Definition:</b> HashedString.h:24</div></div>
@@ -175,7 +170,7 @@ $(document).ready(function(){initNavTree('db/d15/_render_data__inl_8h_source.htm
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.htm">home</a></li><li class="navelem"><a class="el" href="../../dir_1036706e55c22cab35bc1c58ee689f1d.htm">runner</a></li><li class="navelem"><a class="el" href="../../dir_629f8151d55d307162ff2d619fb1783d.htm">work</a></li><li class="navelem"><a class="el" href="../../dir_1ddc44fe1263a8c7935fa6130b7d9499.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_2c1b6808f12952f4c36e05ba7068379a.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_b5a1c4ecfca018ad24b729e213296d41.htm">Source</a></li><li class="navelem"><a class="el" href="../../dir_e321052006a51284e67389ab20037e7c.htm">Engine</a></li><li class="navelem"><a class="el" href="../../dir_d1b456933e20132afd1d01c7da962f40.htm">GraphicsCore</a></li><li class="navelem"><a class="el" href="../../dir_dbd5e7b3b3ed2fc0d3f11d6b12eac684.htm">Pipeline</a></li><li class="navelem"><a class="el" href="../../dir_eb8f95dbf6bd71c3ee11a80bf7c4f2ad.htm">Implementation</a></li><li class="navelem"><b>RenderData_inl.h</b></li>
-    <li class="footer">Generated on Fri May 24 2024 23:29:10 for XIIEngine by
+    <li class="footer">Generated on Mon May 27 2024 16:41:27 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

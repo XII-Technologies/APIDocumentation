@@ -892,7 +892,7 @@ var searchData=
   ['gety1_2276',['GetY1',['../d2/d1d/classxii_rect_template.htm#a5f6e3452cb1fa3198a1a963b91be5ee4',1,'xiiRectTemplate']]],
   ['gety2_2277',['GetY2',['../d2/d1d/classxii_rect_template.htm#a39527adf3158c823eb9ac484ae107449',1,'xiiRectTemplate']]],
   ['getyear_2278',['GetYear',['../de/dc3/classxii_date_time.htm#a94a70457d41568cd8e8c8af8d9a97b04',1,'xiiDateTime']]],
-  ['getztodepthbias_2279',['GetZtoDepthBias',['../d2/dca/structxii_g_a_l_normalized_device_coordinates.htm#a51f44c461f7b6884a269d9f1ffe93b57',1,'xiiGALNormalizedDeviceCoordinates']]],
+  ['getztodepthbias_2279',['GetZtoDepthBias',['../d2/dca/structxii_g_a_l_normalized_device_coordinates.htm#a61fdeff3190160d3fe837e4cd0c73077',1,'xiiGALNormalizedDeviceCoordinates']]],
   ['ghostwhite_2280',['GhostWhite',['../d3/de6/classxii_color.htm#aab85d7833d8c4eb57b52c382e7f942a3',1,'xiiColor']]],
   ['gizmotransformmaybeinvalid_2281',['GizmoTransformMayBeInvalid',['../d3/d14/structxii_game_object_event.htm#a4f061b8a6e7408537f3f0858b17da590a58296d4f55981897343d7824dd1cfaca',1,'xiiGameObjectEvent']]],
   ['global_2282',['Global',['../db/d54/structxii_x_r_transform_space.htm#a448e6f31de261f5e1a2ea40165bd7a59a3a0df13410916ddb0c21e3ecd64f2eda',1,'xiiXRTransformSpace']]],
