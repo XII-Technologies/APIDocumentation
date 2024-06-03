@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['indianred_20653',['IndianRed',['../d3/de6/classxii_color.htm#a4f6740d02fb522d0e84b029431af1afd',1,'xiiColor']]],
-  ['indigo_20654',['Indigo',['../d3/de6/classxii_color.htm#aa1e8872223b8e95118b1f2785d8ca25c',1,'xiiColor']]],
-  ['ivory_20655',['Ivory',['../d3/de6/classxii_color.htm#a2d00ad91f8bb2b294f54424d21058cc6',1,'xiiColor']]]
+  ['indianred_20656',['IndianRed',['../d3/de6/classxii_color.htm#a4f6740d02fb522d0e84b029431af1afd',1,'xiiColor']]],
+  ['indigo_20657',['Indigo',['../d3/de6/classxii_color.htm#aa1e8872223b8e95118b1f2785d8ca25c',1,'xiiColor']]],
+  ['ivory_20658',['Ivory',['../d3/de6/classxii_color.htm#a2d00ad91f8bb2b294f54424d21058cc6',1,'xiiColor']]]
 ];

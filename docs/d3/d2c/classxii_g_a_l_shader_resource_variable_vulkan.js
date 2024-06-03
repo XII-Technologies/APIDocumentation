@@ -11,6 +11,5 @@ var classxii_g_a_l_shader_resource_variable_vulkan =
     [ "SetBufferOffset", "d3/d2c/classxii_g_a_l_shader_resource_variable_vulkan.htm#a61374a2195100a13c0e6cc8c72b76013", null ],
     [ "SetBufferRange", "d3/d2c/classxii_g_a_l_shader_resource_variable_vulkan.htm#abe48ffde9fbcbce7fc6a648624de1377", null ],
     [ "xiiGALDeviceVulkan", "d3/d2c/classxii_g_a_l_shader_resource_variable_vulkan.htm#a1a43afae6292d541d621e2131d39aa22", null ],
-    [ "xiiMemoryUtils", "d3/d2c/classxii_g_a_l_shader_resource_variable_vulkan.htm#aefc9ff75d6833fd2f05be48e16436db6", null ],
-    [ "m_pShaderResourceVariable", "d3/d2c/classxii_g_a_l_shader_resource_variable_vulkan.htm#a21f663cbf61fe413917ca7a4d6ecab11", null ]
+    [ "xiiMemoryUtils", "d3/d2c/classxii_g_a_l_shader_resource_variable_vulkan.htm#aefc9ff75d6833fd2f05be48e16436db6", null ]
 ];

@@ -166,7 +166,7 @@ var searchData=
   ['dodgerblue_1028',['DodgerBlue',['../d3/de6/classxii_color.htm#a4a62b55e7719f5939782066d5a411bf2',1,'xiiColor']]],
   ['doesvariantmatchproperty_1029',['DoesVariantMatchProperty',['../d8/d61/classxii_default_state_provider.htm#a18d3bad2cffd248f15c781f6ea0f2138',1,'xiiDefaultStateProvider']]],
   ['dokeypressevent_1030',['DoKeyPressEvent',['../d0/dc6/classxii_selection_context.htm#a47cbe01e6254b85413ae57cfaa2a691d',1,'xiiSelectionContext']]],
-  ['domain_1031',['Domain',['../d7/d93/structxii_g_a_l_shader_stage.htm#a574ae05a61f47569461dc1fd2ea12092a182195f5a445177b4d18b5a0799c8a00',1,'xiiGALShaderStage']]],
+  ['domain_1031',['Domain',['../d1/dcf/structxii_g_a_l_shader_type.htm#aa40e7f7b336f75b920cf5ab9d7f14763a9c5dc517f132ddb1109bf0ff513f3a96',1,'xiiGALShaderType']]],
   ['domainshader_1032',['DomainShader',['../dc/d29/structxii_g_a_l_pipeline_stage_flags.htm#ab114e9a33a63968b73bdf79069b73282a8b2a0fa0f744df2a94fcaff3006ab14d',1,'xiiGALPipelineStageFlags']]],
   ['donotwait_1033',['DoNotWait',['../d3/dc9/structxii_g_a_l_map_flags.htm#a460dc4db6ae78167db15de29366559eaae33fda06b5834012934ac96d6ddce450',1,'xiiGALMapFlags']]],
   ['dontcreatenew_1034',['DontCreateNew',['../de/da1/structxii_script_coroutine_creation_mode.htm#a72c2dbb927d181f9a6bb2f1600f5b8dda4f413d4e2ffe0d297d515ef404b22bc3',1,'xiiScriptCoroutineCreationMode']]],

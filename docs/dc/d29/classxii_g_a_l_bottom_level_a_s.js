@@ -8,9 +8,7 @@ var classxii_g_a_l_bottom_level_a_s =
     [ "GetGeometryDescriptionIndex", "dc/d29/classxii_g_a_l_bottom_level_a_s.htm#a1ea5fe6f8338bb2caa94527e5474b242", null ],
     [ "GetGeometryIndex", "dc/d29/classxii_g_a_l_bottom_level_a_s.htm#a463e3ad3735c4d2bd97f428f63064a79", null ],
     [ "GetScratchBufferSizeDescription", "dc/d29/classxii_g_a_l_bottom_level_a_s.htm#a8b0c6c930620935de9544c6d43258c79", null ],
-    [ "GetState", "dc/d29/classxii_g_a_l_bottom_level_a_s.htm#ad25d2b4a2b835eca078bf0ead0e4d2a3", null ],
     [ "InitPlatform", "dc/d29/classxii_g_a_l_bottom_level_a_s.htm#a3b96d906409abf4eebcf6cc5b2dfd923", null ],
-    [ "SetState", "dc/d29/classxii_g_a_l_bottom_level_a_s.htm#ab13fc331aafc2686f9aeb3dc39b2e094", null ],
     [ "xiiGALDevice", "dc/d29/classxii_g_a_l_bottom_level_a_s.htm#a8a9dd0ea17d38c3d68c9db0002e5dab0", null ],
     [ "m_Description", "dc/d29/classxii_g_a_l_bottom_level_a_s.htm#a67c93b55f2a7c2d105a1d4e6bc5d2521", null ]
 ];

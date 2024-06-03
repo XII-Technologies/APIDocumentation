@@ -1,7 +1,7 @@
 var structxii_g_a_l_shader_resource_description =
 [
     [ "XII_DECLARE_MEM_RELOCATABLE_TYPE", "d4/dce/structxii_g_a_l_shader_resource_description.htm#af058f3682a65832ce95588e4307f8ac9", null ],
-    [ "m_ShaderStages", "d4/dce/structxii_g_a_l_shader_resource_description.htm#a0bda23870f81cdfbfd868dbe9e25232b", null ],
+    [ "m_ShaderStages", "d4/dce/structxii_g_a_l_shader_resource_description.htm#a70512d56d197fd6d0e9a948e1eefe725", null ],
     [ "m_sName", "d4/dce/structxii_g_a_l_shader_resource_description.htm#a85e9e8e2c7b012c1ff90e9e3939498e3", null ],
     [ "m_TextureType", "d4/dce/structxii_g_a_l_shader_resource_description.htm#a48e871d459f5d05848fd0d33f8160249", null ],
     [ "m_Type", "d4/dce/structxii_g_a_l_shader_resource_description.htm#aa636914a07e6b9567c77f059fb4bcae3", null ],

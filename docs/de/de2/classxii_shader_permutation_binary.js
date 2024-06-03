@@ -6,5 +6,5 @@ var classxii_shader_permutation_binary =
     [ "m_DependencyFile", "de/de2/classxii_shader_permutation_binary.htm#a9344fb5fe986780199e79cfdcf656f55", null ],
     [ "m_PermutationVars", "de/de2/classxii_shader_permutation_binary.htm#a4784f27ce859c02c0b11336989ca1061", null ],
     [ "m_StateDescriptor", "de/de2/classxii_shader_permutation_binary.htm#a0474f809d259ead4efe1eb4d990e11dc", null ],
-    [ "m_uiShaderStageHashes", "de/de2/classxii_shader_permutation_binary.htm#a71355be4bae1eb6daa1fb11fec40e446", null ]
+    [ "m_uiShaderStageHashes", "de/de2/classxii_shader_permutation_binary.htm#a6c26a982b61b129ac12a33336db4c96b", null ]
 ];

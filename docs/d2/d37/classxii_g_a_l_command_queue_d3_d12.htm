@@ -115,10 +115,10 @@ Public Member Functions</h2></td></tr>
 virtual xiiUInt64&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d37/classxii_g_a_l_command_queue_d3_d12.htm#a88a88fe0539ffb86b6a1d2c53a5daf16">GetNextFenceValue</a> () const override final</td></tr>
 <tr class="memdesc:a88a88fe0539ffb86b6a1d2c53a5daf16"><td class="mdescLeft">&#160;</td><td class="mdescRight">This returns the value of the internal fence that will be signaled the next time. <br /></td></tr>
 <tr class="separator:a88a88fe0539ffb86b6a1d2c53a5daf16"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:accd08adefecccc67fcebc47297a4889b"><td class="memItemLeft" align="right" valign="top"><a id="accd08adefecccc67fcebc47297a4889b"></a>
-virtual xiiUInt64&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d37/classxii_g_a_l_command_queue_d3_d12.htm#accd08adefecccc67fcebc47297a4889b">GetCompletedFenceValue</a> () const override final</td></tr>
-<tr class="memdesc:accd08adefecccc67fcebc47297a4889b"><td class="mdescLeft">&#160;</td><td class="mdescRight">This returns the last completed value of the internal fence. <br /></td></tr>
-<tr class="separator:accd08adefecccc67fcebc47297a4889b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a250ff4f16b7bddf56850d21030f174f3"><td class="memItemLeft" align="right" valign="top"><a id="a250ff4f16b7bddf56850d21030f174f3"></a>
+virtual xiiUInt64&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d37/classxii_g_a_l_command_queue_d3_d12.htm#a250ff4f16b7bddf56850d21030f174f3">GetCompletedFenceValue</a> () override final</td></tr>
+<tr class="memdesc:a250ff4f16b7bddf56850d21030f174f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">This returns the last completed value of the internal fence. <br /></td></tr>
+<tr class="separator:a250ff4f16b7bddf56850d21030f174f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a39a0d04d883e5e3739cc4c1129ca2ff1"><td class="memItemLeft" align="right" valign="top"><a id="a39a0d04d883e5e3739cc4c1129ca2ff1"></a>
 virtual xiiUInt64&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d37/classxii_g_a_l_command_queue_d3_d12.htm#a39a0d04d883e5e3739cc4c1129ca2ff1">WaitForIdle</a> () override final</td></tr>
 <tr class="memdesc:a39a0d04d883e5e3739cc4c1129ca2ff1"><td class="mdescLeft">&#160;</td><td class="mdescRight">This blocks execution until all pending GPU commands are complete. <br /></td></tr>
@@ -134,10 +134,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>UnbindTextureFromFram
 ID3D12CommandQueue *&#160;</td><td class="memItemRight" valign="bottom"><b>GetD3D12CommandQueue</b> () const</td></tr>
 <tr class="separator:a8dd96771741f00d2c7a5a7176c6fd6dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classxii_g_a_l_command_queue"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classxii_g_a_l_command_queue')"><img src="../../closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="../../d1/dd2/classxii_g_a_l_command_queue.htm">xiiGALCommandQueue</a></td></tr>
-<tr class="memitem:aa07a6a38d8758e4602affdb92ea6e571 inherit pub_methods_classxii_g_a_l_command_queue"><td class="memItemLeft" align="right" valign="top"><a id="aa07a6a38d8758e4602affdb92ea6e571"></a>
-virtual xiiUInt64&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dd2/classxii_g_a_l_command_queue.htm#aa07a6a38d8758e4602affdb92ea6e571">GetCompletedFenceValue</a> ()=0</td></tr>
-<tr class="memdesc:aa07a6a38d8758e4602affdb92ea6e571 inherit pub_methods_classxii_g_a_l_command_queue"><td class="mdescLeft">&#160;</td><td class="mdescRight">This returns the last completed value of the internal fence. <br /></td></tr>
-<tr class="separator:aa07a6a38d8758e4602affdb92ea6e571 inherit pub_methods_classxii_g_a_l_command_queue"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae8ad072f9dc0e3852b687e23073ff0b9 inherit pub_methods_classxii_g_a_l_command_queue"><td class="memItemLeft" align="right" valign="top"><a id="ae8ad072f9dc0e3852b687e23073ff0b9"></a>
 virtual xiiUInt64&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dd2/classxii_g_a_l_command_queue.htm#ae8ad072f9dc0e3852b687e23073ff0b9">Submit</a> (<a class="el" href="../../dc/d80/classxii_g_a_l_command_list.htm">xiiGALCommandList</a> *pCommandList, bool bReset=true)</td></tr>
 <tr class="memdesc:ae8ad072f9dc0e3852b687e23073ff0b9 inherit pub_methods_classxii_g_a_l_command_queue"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submits a command list for execution. If bReset is true, the command list is reset after submission. <br /></td></tr>
@@ -203,9 +199,9 @@ xiiInt32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:a2b95b7a15f7a0401f4739dee0e60d265"><td class="memItemLeft" align="right" valign="top"><a id="a2b95b7a15f7a0401f4739dee0e60d265"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SubmitPlatform</b> (<a class="el" href="../../dc/d80/classxii_g_a_l_command_list.htm">xiiGALCommandList</a> *pCommandList, bool bReset) override final</td></tr>
-<tr class="separator:a2b95b7a15f7a0401f4739dee0e60d265"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6d2a9b40bbe35e24656856f48f18092"><td class="memItemLeft" align="right" valign="top"><a id="ab6d2a9b40bbe35e24656856f48f18092"></a>
+virtual xiiUInt64&#160;</td><td class="memItemRight" valign="bottom"><b>SubmitPlatform</b> (<a class="el" href="../../dc/d80/classxii_g_a_l_command_list.htm">xiiGALCommandList</a> *pCommandList, bool bReset) override final</td></tr>
+<tr class="separator:ab6d2a9b40bbe35e24656856f48f18092"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a561fb360aaa8ed4289d2e89b55775991"><td class="memItemLeft" align="right" valign="top"><a id="a561fb360aaa8ed4289d2e89b55775991"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>xiiGALCommandQueueD3D12</b> (<a class="el" href="../../d8/d77/classxii_g_a_l_device_d3_d12.htm">xiiGALDeviceD3D12</a> *pDeviceD3D12, const <a class="el" href="../../d3/dc4/structxii_g_a_l_command_queue_creation_description.htm">xiiGALCommandQueueCreationDescription</a> &amp;creationDescription)</td></tr>
 <tr class="separator:a561fb360aaa8ed4289d2e89b55775991"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -268,7 +264,7 @@ static const <a class="el" href="../../db/d89/classxii_r_t_t_i.htm">xiiRTTI</a> 
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d2/d37/classxii_g_a_l_command_queue_d3_d12.htm">xiiGALCommandQueueD3D12</a></li>
-    <li class="footer">Generated on Mon May 27 2024 16:41:30 for XIIEngine by
+    <li class="footer">Generated on Mon Jun 3 2024 16:28:50 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

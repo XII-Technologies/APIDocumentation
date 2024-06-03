@@ -8,10 +8,10 @@ var classxii_g_a_l_buffer =
     [ "GetDescription", "da/d03/classxii_g_a_l_buffer.htm#a0dc489ebe702b23c53c7a8d5d131dcf4", null ],
     [ "GetMemoryProperties", "da/d03/classxii_g_a_l_buffer.htm#a8a9d7de422d34989d679d5a895b6100f", null ],
     [ "GetSparseProperties", "da/d03/classxii_g_a_l_buffer.htm#ad59ea8783e2faf24ddb9fe9dd05cab54", null ],
-    [ "GetState", "da/d03/classxii_g_a_l_buffer.htm#aedec59a830627be68de72ebfb8a118e4", null ],
     [ "InitPlatform", "da/d03/classxii_g_a_l_buffer.htm#a23288ef81fd287d15a07366b82c2d8d1", null ],
     [ "InvalidateMappedRange", "da/d03/classxii_g_a_l_buffer.htm#aeb2d4d7481820f03be61f05ce1333832", null ],
-    [ "SetState", "da/d03/classxii_g_a_l_buffer.htm#ae482b6cdeaa34795c0d1e9e9eecabf78", null ],
     [ "xiiGALDevice", "da/d03/classxii_g_a_l_buffer.htm#a8a9dd0ea17d38c3d68c9db0002e5dab0", null ],
+    [ "m_BufferViews", "da/d03/classxii_g_a_l_buffer.htm#a4f9115a226c2c11f473c35719acd75c7", null ],
+    [ "m_DefaultBufferViews", "da/d03/classxii_g_a_l_buffer.htm#a5c94b495b54d992f169a83d267596344", null ],
     [ "m_Description", "da/d03/classxii_g_a_l_buffer.htm#ab18f48b53cba14cf9dc4ce0585d36d18", null ]
 ];

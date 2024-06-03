@@ -110,32 +110,32 @@ $(document).ready(function(){initNavTree('d1/dcc/_pipeline_state_d3_d11__inl_8h_
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;XII_ALWAYS_INLINE ID3D11VertexShader* xiiGALPipelineStateD3D11::GetD3D11VertexShader()<span class="keyword"> const</span></div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword"></span>{</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  <span class="keywordflow">return</span> m_pShaderD3D11-&gt;GetVertexShader();</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  <span class="keywordflow">return</span> m_pVertexShaderD3D11 != <span class="keyword">nullptr</span> ? <span class="keyword">static_cast&lt;</span>ID3D11VertexShader*<span class="keyword">&gt;</span>(m_pVertexShaderD3D11-&gt;GetD3D11Shader()) : <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;}</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;XII_ALWAYS_INLINE ID3D11PixelShader* xiiGALPipelineStateD3D11::GetD3D11PixelShader()<span class="keyword"> const</span></div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword"></span>{</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  <span class="keywordflow">return</span> m_pShaderD3D11-&gt;GetPixelShader();</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  <span class="keywordflow">return</span> m_pPixelShaderD3D11 != <span class="keyword">nullptr</span> ? <span class="keyword">static_cast&lt;</span>ID3D11PixelShader*<span class="keyword">&gt;</span>(m_pPixelShaderD3D11-&gt;GetD3D11Shader()) : <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;}</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;XII_ALWAYS_INLINE ID3D11GeometryShader* xiiGALPipelineStateD3D11::GetD3D11GeometryShader()<span class="keyword"> const</span></div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword"></span>{</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  <span class="keywordflow">return</span> m_pShaderD3D11-&gt;GetGeometryShader();</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  <span class="keywordflow">return</span> m_pGeometryShaderD3D11 != <span class="keyword">nullptr</span> ? <span class="keyword">static_cast&lt;</span>ID3D11GeometryShader*<span class="keyword">&gt;</span>(m_pGeometryShaderD3D11-&gt;GetD3D11Shader()) : <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;}</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;XII_ALWAYS_INLINE ID3D11DomainShader* xiiGALPipelineStateD3D11::GetD3D11DomainShader()<span class="keyword"> const</span></div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword"></span>{</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <span class="keywordflow">return</span> m_pShaderD3D11-&gt;GetDomainShader();</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <span class="keywordflow">return</span> m_pDomainShaderD3D11 != <span class="keyword">nullptr</span> ? <span class="keyword">static_cast&lt;</span>ID3D11DomainShader*<span class="keyword">&gt;</span>(m_pDomainShaderD3D11-&gt;GetD3D11Shader()) : <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;}</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;XII_ALWAYS_INLINE ID3D11HullShader* xiiGALPipelineStateD3D11::GetD3D11HullShader()<span class="keyword"> const</span></div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keyword"></span>{</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <span class="keywordflow">return</span> m_pShaderD3D11-&gt;GetHullShader();</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <span class="keywordflow">return</span> m_pHullShaderD3D11 != <span class="keyword">nullptr</span> ? <span class="keyword">static_cast&lt;</span>ID3D11HullShader*<span class="keyword">&gt;</span>(m_pHullShaderD3D11-&gt;GetD3D11Shader()) : <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;}</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;XII_ALWAYS_INLINE ID3D11ComputeShader* xiiGALPipelineStateD3D11::GetD3D11ComputeShader()<span class="keyword"> const</span></div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keyword"></span>{</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <span class="keywordflow">return</span> m_pShaderD3D11-&gt;GetComputeShader();</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <span class="keywordflow">return</span> m_pComputeShaderD3D11 != <span class="keyword">nullptr</span> ? <span class="keyword">static_cast&lt;</span>ID3D11ComputeShader*<span class="keyword">&gt;</span>(m_pComputeShaderD3D11-&gt;GetD3D11Shader()) : <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -143,7 +143,7 @@ $(document).ready(function(){initNavTree('d1/dcc/_pipeline_state_d3_d11__inl_8h_
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.htm">home</a></li><li class="navelem"><a class="el" href="../../dir_1036706e55c22cab35bc1c58ee689f1d.htm">runner</a></li><li class="navelem"><a class="el" href="../../dir_629f8151d55d307162ff2d619fb1783d.htm">work</a></li><li class="navelem"><a class="el" href="../../dir_1ddc44fe1263a8c7935fa6130b7d9499.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_2c1b6808f12952f4c36e05ba7068379a.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_b5a1c4ecfca018ad24b729e213296d41.htm">Source</a></li><li class="navelem"><a class="el" href="../../dir_e321052006a51284e67389ab20037e7c.htm">Engine</a></li><li class="navelem"><a class="el" href="../../dir_1fecef1a621638f058ccc7afa2af7cec.htm">GraphicsD3D11</a></li><li class="navelem"><a class="el" href="../../dir_65de0881ebdd724b624bad9f70b1481a.htm">States</a></li><li class="navelem"><a class="el" href="../../dir_dd3ffa3c6284d51092db1b56be181446.htm">Implementation</a></li><li class="navelem"><b>PipelineStateD3D11_inl.h</b></li>
-    <li class="footer">Generated on Mon May 27 2024 16:41:27 for XIIEngine by
+    <li class="footer">Generated on Mon Jun 3 2024 16:28:47 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

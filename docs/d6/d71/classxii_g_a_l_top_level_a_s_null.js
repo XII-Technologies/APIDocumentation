@@ -6,9 +6,7 @@ var classxii_g_a_l_top_level_a_s_null =
     [ "GetBuildDescription", "d6/d71/classxii_g_a_l_top_level_a_s_null.htm#a7b279744058144bbbdc03801b675dc8d", null ],
     [ "GetInstanceDescription", "d6/d71/classxii_g_a_l_top_level_a_s_null.htm#a362deea75c7fc3fa7f34be58eb03cfdf", null ],
     [ "GetScratchBufferSizeDescription", "d6/d71/classxii_g_a_l_top_level_a_s_null.htm#a8bbf25bef9974f46cb03474c349a7cde", null ],
-    [ "GetState", "d6/d71/classxii_g_a_l_top_level_a_s_null.htm#a3680feb57e3416afb148736aa33ef523", null ],
     [ "InitPlatform", "d6/d71/classxii_g_a_l_top_level_a_s_null.htm#ac60cd978654ae2fa9c3497e2ead46789", null ],
-    [ "SetState", "d6/d71/classxii_g_a_l_top_level_a_s_null.htm#a88695b81b833227fcad2f6150a6c9d28", null ],
     [ "xiiGALDeviceNull", "d6/d71/classxii_g_a_l_top_level_a_s_null.htm#a4ad3908cc43c6b368fcaf65ad0cc5467", null ],
     [ "xiiMemoryUtils", "d6/d71/classxii_g_a_l_top_level_a_s_null.htm#aefc9ff75d6833fd2f05be48e16436db6", null ]
 ];

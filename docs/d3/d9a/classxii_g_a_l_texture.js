@@ -6,9 +6,9 @@ var classxii_g_a_l_texture =
     [ "GetDefaultView", "d3/d9a/classxii_g_a_l_texture.htm#ae799b5a5dae7002b3f93d47881a418fd", null ],
     [ "GetDescription", "d3/d9a/classxii_g_a_l_texture.htm#a1dc06a321a6b8cf10a72c61516e05cf7", null ],
     [ "GetSparseProperties", "d3/d9a/classxii_g_a_l_texture.htm#a3cd32091e1f56cc90ac0460e87145d4f", null ],
-    [ "GetState", "d3/d9a/classxii_g_a_l_texture.htm#aad67f122a5988b411e5dee49da78f3a5", null ],
     [ "InitPlatform", "d3/d9a/classxii_g_a_l_texture.htm#a4e772d4baefe14387fbbaff831a13ca7", null ],
-    [ "SetState", "d3/d9a/classxii_g_a_l_texture.htm#a36b6c23e7d92f215cfed536f2092c0d4", null ],
     [ "xiiGALDevice", "d3/d9a/classxii_g_a_l_texture.htm#a8a9dd0ea17d38c3d68c9db0002e5dab0", null ],
-    [ "m_Description", "d3/d9a/classxii_g_a_l_texture.htm#af99650871c45cdbbededf378938d7ea9", null ]
+    [ "m_DefaultTextureViews", "d3/d9a/classxii_g_a_l_texture.htm#aa177863cc104f9cb5fb91981a992d5da", null ],
+    [ "m_Description", "d3/d9a/classxii_g_a_l_texture.htm#af99650871c45cdbbededf378938d7ea9", null ],
+    [ "m_TextureViews", "d3/d9a/classxii_g_a_l_texture.htm#aa50610f8d86f78c8324f3e780711b3bd", null ]
 ];

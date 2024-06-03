@@ -153,24 +153,24 @@ xiiUInt64&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href=
 xiiUInt32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d69/structxii_g_a_l_buffer_creation_description.htm#af7135a9bd0b5de5d5dd60c848002d9c2">m_uiElementByteStride</a> = 0U</td></tr>
 <tr class="memdesc:af7135a9bd0b5de5d5dd60c848002d9c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">The buffer element stride in bytes. For a structured buffer, this member defines the size of each buffer element. For a formatted buffer and optionally a raw buffer, this member defines the size of the format that will be used for views created for this buffer. For an index buffer, a stride of 2 will set the index buffer format to 16-bits. The default is 0. <br /></td></tr>
 <tr class="separator:af7135a9bd0b5de5d5dd60c848002d9c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a20e45af0313e2fa3b09e8a0c2c1e6832"><td class="memItemLeft" align="right" valign="top">xiiUInt64&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d69/structxii_g_a_l_buffer_creation_description.htm#a20e45af0313e2fa3b09e8a0c2c1e6832">m_uiImmediateContextMask</a> = XII_BIT(0)</td></tr>
-<tr class="separator:a20e45af0313e2fa3b09e8a0c2c1e6832"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88c63904a453ff9798aa9dfa0f935fce"><td class="memItemLeft" align="right" valign="top">xiiUInt64&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d69/structxii_g_a_l_buffer_creation_description.htm#a88c63904a453ff9798aa9dfa0f935fce">m_uiCommandQueueMask</a> = XII_BIT(0)</td></tr>
+<tr class="separator:a88c63904a453ff9798aa9dfa0f935fce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This describes the buffer creation description. </p>
 </div><h2 class="groupheader">Member Data Documentation</h2>
-<a id="a20e45af0313e2fa3b09e8a0c2c1e6832"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a20e45af0313e2fa3b09e8a0c2c1e6832">&#9670;&nbsp;</a></span>m_uiImmediateContextMask</h2>
+<a id="a88c63904a453ff9798aa9dfa0f935fce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a88c63904a453ff9798aa9dfa0f935fce">&#9670;&nbsp;</a></span>m_uiCommandQueueMask</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">xiiUInt64 xiiGALBufferCreationDescription::m_uiImmediateContextMask = XII_BIT(0)</td>
+          <td class="memname">xiiUInt64 xiiGALBufferCreationDescription::m_uiCommandQueueMask = XII_BIT(0)</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Defines which immediate contexts are allowed to execute commands that use this buffer. The default is the main immediate context. Only specify the bits that indicate those immediate contexts where the resource will be used, setting unnecessary bits will result in extra overhead. </p>
+<p>Defines which command queues are allowed to execute commands that use this buffer. The default is the main command queue. Only specify the bits that indicate those command queues where the resource will be used, setting unnecessary bits will result in extra overhead. </p>
 
 </div>
 </div>
@@ -183,7 +183,7 @@ xiiUInt32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href=
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d7/d69/structxii_g_a_l_buffer_creation_description.htm">xiiGALBufferCreationDescription</a></li>
-    <li class="footer">Generated on Mon May 27 2024 16:41:30 for XIIEngine by
+    <li class="footer">Generated on Mon Jun 3 2024 16:28:50 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

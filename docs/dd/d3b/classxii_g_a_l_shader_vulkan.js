@@ -1,25 +1,9 @@
 var classxii_g_a_l_shader_vulkan =
 [
-    [ "xiiGALShaderVulkan", "dd/d3b/classxii_g_a_l_shader_vulkan.htm#ac6d5e8f38fc3894457ff1e1b7b4e6e8f", null ],
+    [ "xiiGALShaderVulkan", "dd/d3b/classxii_g_a_l_shader_vulkan.htm#a318edfdda4d06c91e7fd3b28327749ee", null ],
     [ "~xiiGALShaderVulkan", "dd/d3b/classxii_g_a_l_shader_vulkan.htm#ae36a4a3d207e6dabb6d8f16eb5d88e3c", null ],
-    [ "DeInitPlatform", "dd/d3b/classxii_g_a_l_shader_vulkan.htm#aa1b4dfa356f3619786dbf3c373c1a967", null ],
-    [ "GetAmplificationShader", "dd/d3b/classxii_g_a_l_shader_vulkan.htm#adb1a3599a92bb3b03aabdac26c6e7589", null ],
-    [ "GetCallableShader", "dd/d3b/classxii_g_a_l_shader_vulkan.htm#a22e6c109f48323106067e6b84c684a3b", null ],
-    [ "GetComputeShader", "dd/d3b/classxii_g_a_l_shader_vulkan.htm#a71ffcf9aa8f5b6dabd2f90c3111ac520", null ],
-    [ "GetDomainShader", "dd/d3b/classxii_g_a_l_shader_vulkan.htm#aad04c5d300623349dad47f75579822c6", null ],
-    [ "GetGeometryShader", "dd/d3b/classxii_g_a_l_shader_vulkan.htm#a0f4cdd8338282ee90504852fc4867650", null ],
-    [ "GetHullShader", "dd/d3b/classxii_g_a_l_shader_vulkan.htm#a50fccb4ab23966027aee4550d3ff70b8", null ],
-    [ "GetMeshShader", "dd/d3b/classxii_g_a_l_shader_vulkan.htm#a8be81361faf7e31cd96dfbaadf7cd2e0", null ],
-    [ "GetPixelShader", "dd/d3b/classxii_g_a_l_shader_vulkan.htm#a930e6058f09a3bcb25ab51e9464a7d65", null ],
-    [ "GetRayAnyHitShader", "dd/d3b/classxii_g_a_l_shader_vulkan.htm#a8f588860a4be56a134cb996cee447dac", null ],
-    [ "GetRayClosestHitShader", "dd/d3b/classxii_g_a_l_shader_vulkan.htm#a87b63a6988f429035e7e9abf364296d9", null ],
-    [ "GetRayGenerationShader", "dd/d3b/classxii_g_a_l_shader_vulkan.htm#a6a14ec6f91a771a31d4dccab0cef0c65", null ],
-    [ "GetRayIntersectionShader", "dd/d3b/classxii_g_a_l_shader_vulkan.htm#a4e64e715ae9cb2468777f4294f4fd0f6", null ],
-    [ "GetRayMissShader", "dd/d3b/classxii_g_a_l_shader_vulkan.htm#a67a1ec6067b775f5d23440faf2e88261", null ],
-    [ "GetTileShader", "dd/d3b/classxii_g_a_l_shader_vulkan.htm#a5817aba211b40de728f781cfdf7f7fd0", null ],
-    [ "GetVertexShader", "dd/d3b/classxii_g_a_l_shader_vulkan.htm#a05128e865b364a93ec14e7102972caf3", null ],
-    [ "InitPlatform", "dd/d3b/classxii_g_a_l_shader_vulkan.htm#a42050dc790aa022dbd09cb7e940d9c5e", null ],
+    [ "DeInitPlatform", "dd/d3b/classxii_g_a_l_shader_vulkan.htm#ab563b06d3f5d95979cab7c863cb0fe8f", null ],
+    [ "InitPlatform", "dd/d3b/classxii_g_a_l_shader_vulkan.htm#a74f372681f8cde47a1175986d47f74af", null ],
     [ "xiiGALDeviceVulkan", "dd/d3b/classxii_g_a_l_shader_vulkan.htm#a1a43afae6292d541d621e2131d39aa22", null ],
-    [ "xiiMemoryUtils", "dd/d3b/classxii_g_a_l_shader_vulkan.htm#aefc9ff75d6833fd2f05be48e16436db6", null ],
-    [ "m_pShaderStages", "dd/d3b/classxii_g_a_l_shader_vulkan.htm#a74ee1acd13ffddc215e171e4243431b0", null ]
+    [ "xiiMemoryUtils", "dd/d3b/classxii_g_a_l_shader_vulkan.htm#aefc9ff75d6833fd2f05be48e16436db6", null ]
 ];

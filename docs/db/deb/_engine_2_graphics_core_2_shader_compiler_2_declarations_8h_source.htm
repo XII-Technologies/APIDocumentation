@@ -133,7 +133,7 @@ $(document).ready(function(){initNavTree('db/deb/_engine_2_graphics_core_2_shade
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    m_sPlatform   = {};</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    m_sSourceFile = {};</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordflow">for</span> (xiiUInt32 stage = 0; stage &lt; xiiGALShaderStage::ENUM_COUNT; ++stage)</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordflow">for</span> (xiiUInt32 stage = 0; stage &lt; xiiGALShaderType::ENUM_COUNT; ++stage)</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    {</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;      m_bWriteToDisk[stage] = <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;      m_sShaderSource[stage].Clear();</div>
@@ -146,11 +146,11 @@ $(document).ready(function(){initNavTree('db/deb/_engine_2_graphics_core_2_shade
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  <a class="code" href="../../d7/d55/structxii_bitflags.htm">xiiBitflags&lt;xiiShaderCompilerFlags&gt;</a>             m_Flags;</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  <a class="code" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a>                                   m_sPlatform;</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  <a class="code" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a>                                   m_sSourceFile;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <a class="code" href="../../df/dfb/structxii_hybrid_string.htm">xiiString</a>                                       m_sShaderSource[xiiGALShaderStage::ENUM_COUNT];</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <a class="code" href="../../dc/da9/classxii_hybrid_array.htm">xiiHybridArray&lt;xiiShaderResourceDefinition, 8U&gt;</a> m_Resources[xiiGALShaderStage::ENUM_COUNT];</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  xiiUInt32                                       m_uiSourceHash[xiiGALShaderStage::ENUM_COUNT];</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  <a class="code" href="../../d8/d9b/classxii_shared_ptr.htm">xiiSharedPtr&lt;xiiGALShaderByteCode&gt;</a>              m_ByteCode[xiiGALShaderStage::ENUM_COUNT];</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  <span class="keywordtype">bool</span>                                            m_bWriteToDisk[xiiGALShaderStage::ENUM_COUNT];</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <a class="code" href="../../df/dfb/structxii_hybrid_string.htm">xiiString</a>                                       m_sShaderSource[xiiGALShaderType::ENUM_COUNT];</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <a class="code" href="../../dc/da9/classxii_hybrid_array.htm">xiiHybridArray&lt;xiiShaderResourceDefinition, 8U&gt;</a> m_Resources[xiiGALShaderType::ENUM_COUNT];</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  xiiUInt32                                       m_uiSourceHash[xiiGALShaderType::ENUM_COUNT];</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  <a class="code" href="../../d8/d9b/classxii_shared_ptr.htm">xiiSharedPtr&lt;xiiGALShaderByteCode&gt;</a>              m_ByteCode[xiiGALShaderType::ENUM_COUNT];</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  <span class="keywordtype">bool</span>                                            m_bWriteToDisk[xiiGALShaderType::ENUM_COUNT];</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;};</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -171,7 +171,7 @@ $(document).ready(function(){initNavTree('db/deb/_engine_2_graphics_core_2_shade
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.htm">home</a></li><li class="navelem"><a class="el" href="../../dir_1036706e55c22cab35bc1c58ee689f1d.htm">runner</a></li><li class="navelem"><a class="el" href="../../dir_629f8151d55d307162ff2d619fb1783d.htm">work</a></li><li class="navelem"><a class="el" href="../../dir_1ddc44fe1263a8c7935fa6130b7d9499.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_2c1b6808f12952f4c36e05ba7068379a.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_b5a1c4ecfca018ad24b729e213296d41.htm">Source</a></li><li class="navelem"><a class="el" href="../../dir_e321052006a51284e67389ab20037e7c.htm">Engine</a></li><li class="navelem"><a class="el" href="../../dir_d1b456933e20132afd1d01c7da962f40.htm">GraphicsCore</a></li><li class="navelem"><a class="el" href="../../dir_ad0345a3ca878364549660bdbbf9abc4.htm">ShaderCompiler</a></li><li class="navelem"><b>Declarations.h</b></li>
-    <li class="footer">Generated on Mon May 27 2024 16:41:20 for XIIEngine by
+    <li class="footer">Generated on Mon Jun 3 2024 16:28:39 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>
