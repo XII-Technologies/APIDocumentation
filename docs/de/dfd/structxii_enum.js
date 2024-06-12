@@ -12,6 +12,8 @@ var structxii_enum =
     [ "operator&", "de/dfd/structxii_enum.htm#a3cf36f150264b1cb0cc9713bde0d9e01", null ],
     [ "operator=", "de/dfd/structxii_enum.htm#ad5d5cc970a11dff182cb9c2c512e9845", null ],
     [ "operator=", "de/dfd/structxii_enum.htm#a1c6ccac0135bee6253d888fec72d9791", null ],
+    [ "operator==", "de/dfd/structxii_enum.htm#a67426535bd32c83dcc0984c9be297b97", null ],
+    [ "operator==", "de/dfd/structxii_enum.htm#ac5f1fe80e3fb74a8f5e2f4b20c10b1a8", null ],
     [ "operator|", "de/dfd/structxii_enum.htm#ab6a8288f3a378f03d4aef597551ed4d4", null ],
     [ "SetValue", "de/dfd/structxii_enum.htm#aadc9c71e941f60494bd1737cac4950ba", null ]
 ];

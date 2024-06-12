@@ -93,7 +93,7 @@ $(document).ready(function(){initNavTree('da/dc5/_n_e_o_n_vec4u__inl_8h_source.h
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;{</div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;  XII_CHECK_SIMD_FLOAT_ALIGNMENT(<span class="keyword">this</span>);</div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#if XII_ENABLED(XII_COMPILE_FOR_DEBUG)</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#if XII_ENABLED(XII_MATH_CHECK_FOR_NAN)</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;  m_v = vmovq_n_u32(0xCDCDCDCD);</div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;}</div>
@@ -316,7 +316,7 @@ $(document).ready(function(){initNavTree('da/dc5/_n_e_o_n_vec4u__inl_8h_source.h
 <div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;}</div>
 <div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160; </div>
 <div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;<span class="comment">// static</span></div>
-<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;XII_ALWAYS_INLINE <a class="code" href="../../d9/d21/classxii_simd_vec4u.htm">xiiSimdVec4u</a> xiiSimdVec4u::ZeroVector()</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;XII_ALWAYS_INLINE <a class="code" href="../../d9/d21/classxii_simd_vec4u.htm">xiiSimdVec4u</a> <a class="code" href="../../d9/d21/classxii_simd_vec4u.htm#aa15efba4ba8d3ffdc21d04fcc58e9d01">xiiSimdVec4u::MakeZero</a>()</div>
 <div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;{</div>
 <div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;  <span class="keywordflow">return</span> vmovq_n_u32(0);</div>
 <div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;}</div>
@@ -343,11 +343,12 @@ $(document).ready(function(){initNavTree('da/dc5/_n_e_o_n_vec4u__inl_8h_source.h
 <div class="ttc" id="aclassxii_simd_vec4b_htm"><div class="ttname"><a href="../../de/d88/classxii_simd_vec4b.htm">xiiSimdVec4b</a></div><div class="ttdef"><b>Definition:</b> SimdVec4b.h:6</div></div>
 <div class="ttc" id="aclassxii_simd_vec4u_htm"><div class="ttname"><a href="../../d9/d21/classxii_simd_vec4u.htm">xiiSimdVec4u</a></div><div class="ttdoc">A SIMD 4-component vector class of unsigned 32b integers.</div><div class="ttdef"><b>Definition:</b> SimdVec4u.h:6</div></div>
 <div class="ttc" id="aclassxii_simd_vec4i_htm"><div class="ttname"><a href="../../d5/d4f/classxii_simd_vec4i.htm">xiiSimdVec4i</a></div><div class="ttdoc">A SIMD 4-component vector class of signed 32b integers.</div><div class="ttdef"><b>Definition:</b> SimdVec4i.h:8</div></div>
+<div class="ttc" id="aclassxii_simd_vec4u_htm_aa15efba4ba8d3ffdc21d04fcc58e9d01"><div class="ttname"><a href="../../d9/d21/classxii_simd_vec4u.htm#aa15efba4ba8d3ffdc21d04fcc58e9d01">xiiSimdVec4u::MakeZero</a></div><div class="ttdeci">static xiiSimdVec4u MakeZero()</div><div class="ttdoc">Creates a xiiSimdVec4u that is initialized to zero.</div><div class="ttdef"><b>Definition:</b> FPUVec4u_inl.h:313</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.htm">home</a></li><li class="navelem"><a class="el" href="../../dir_1036706e55c22cab35bc1c58ee689f1d.htm">runner</a></li><li class="navelem"><a class="el" href="../../dir_629f8151d55d307162ff2d619fb1783d.htm">work</a></li><li class="navelem"><a class="el" href="../../dir_1ddc44fe1263a8c7935fa6130b7d9499.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_2c1b6808f12952f4c36e05ba7068379a.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_b5a1c4ecfca018ad24b729e213296d41.htm">Source</a></li><li class="navelem"><a class="el" href="../../dir_e321052006a51284e67389ab20037e7c.htm">Engine</a></li><li class="navelem"><a class="el" href="../../dir_be0c42c58b36f42c54ec54024ed4f6af.htm">Foundation</a></li><li class="navelem"><a class="el" href="../../dir_6571b00f9c254a01b1735d75b2065daf.htm">SimdMath</a></li><li class="navelem"><a class="el" href="../../dir_421677d30b51fc7bb4bb6333857496b6.htm">Implementation</a></li><li class="navelem"><a class="el" href="../../dir_c9134eb9e5670f07e263b5c7fa011d15.htm">NEON</a></li><li class="navelem"><b>NEONVec4u_inl.h</b></li>
-    <li class="footer">Generated on Mon Jun 3 2024 16:28:44 for XIIEngine by
+    <li class="footer">Generated on Wed Jun 12 2024 18:05:50 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

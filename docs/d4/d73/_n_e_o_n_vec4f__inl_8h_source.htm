@@ -93,7 +93,7 @@ $(document).ready(function(){initNavTree('d4/d73/_n_e_o_n_vec4f__inl_8h_source.h
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;{</div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;  XII_CHECK_SIMD_FLOAT_ALIGNMENT(<span class="keyword">this</span>);</div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#if XII_ENABLED(XII_COMPILE_FOR_DEBUG)</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#if XII_ENABLED(XII_MATH_CHECK_FOR_NAN)</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;  <span class="comment">// Initialize all data to NaN in debug mode to find problems with uninitialized data easier.</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;  m_v = vmovq_n_f32(xiiMath::NaN&lt;float&gt;());</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#endif</span></div>
@@ -597,40 +597,34 @@ $(document).ready(function(){initNavTree('d4/d73/_n_e_o_n_vec4f__inl_8h_source.h
 <div class="line"><a name="l00508"></a><span class="lineno">  508</span>&#160;}</div>
 <div class="line"><a name="l00509"></a><span class="lineno">  509</span>&#160; </div>
 <div class="line"><a name="l00510"></a><span class="lineno">  510</span>&#160;<span class="comment">// static</span></div>
-<div class="line"><a name="l00511"></a><span class="lineno">  511</span>&#160;XII_ALWAYS_INLINE <a class="code" href="../../d3/da5/classxii_simd_vec4f.htm">xiiSimdVec4f</a> xiiSimdVec4f::ZeroVector()</div>
+<div class="line"><a name="l00511"></a><span class="lineno">  511</span>&#160;XII_ALWAYS_INLINE <a class="code" href="../../d3/da5/classxii_simd_vec4f.htm">xiiSimdVec4f</a> xiiSimdVec4f::MulAdd(<span class="keyword">const</span> <a class="code" href="../../d3/da5/classxii_simd_vec4f.htm">xiiSimdVec4f</a>&amp; a, <span class="keyword">const</span> <a class="code" href="../../d3/da5/classxii_simd_vec4f.htm">xiiSimdVec4f</a>&amp; b, <span class="keyword">const</span> <a class="code" href="../../d3/da5/classxii_simd_vec4f.htm">xiiSimdVec4f</a>&amp; c)</div>
 <div class="line"><a name="l00512"></a><span class="lineno">  512</span>&#160;{</div>
-<div class="line"><a name="l00513"></a><span class="lineno">  513</span>&#160;  <span class="keywordflow">return</span> vmovq_n_f32(0.0f);</div>
+<div class="line"><a name="l00513"></a><span class="lineno">  513</span>&#160;  <span class="keywordflow">return</span> vfmaq_f32(c.m_v, a.m_v, b.m_v);</div>
 <div class="line"><a name="l00514"></a><span class="lineno">  514</span>&#160;}</div>
 <div class="line"><a name="l00515"></a><span class="lineno">  515</span>&#160; </div>
 <div class="line"><a name="l00516"></a><span class="lineno">  516</span>&#160;<span class="comment">// static</span></div>
-<div class="line"><a name="l00517"></a><span class="lineno">  517</span>&#160;XII_ALWAYS_INLINE <a class="code" href="../../d3/da5/classxii_simd_vec4f.htm">xiiSimdVec4f</a> xiiSimdVec4f::MulAdd(<span class="keyword">const</span> <a class="code" href="../../d3/da5/classxii_simd_vec4f.htm">xiiSimdVec4f</a>&amp; a, <span class="keyword">const</span> <a class="code" href="../../d3/da5/classxii_simd_vec4f.htm">xiiSimdVec4f</a>&amp; b, <span class="keyword">const</span> <a class="code" href="../../d3/da5/classxii_simd_vec4f.htm">xiiSimdVec4f</a>&amp; c)</div>
+<div class="line"><a name="l00517"></a><span class="lineno">  517</span>&#160;XII_ALWAYS_INLINE <a class="code" href="../../d3/da5/classxii_simd_vec4f.htm">xiiSimdVec4f</a> xiiSimdVec4f::MulAdd(<span class="keyword">const</span> <a class="code" href="../../d3/da5/classxii_simd_vec4f.htm">xiiSimdVec4f</a>&amp; a, <span class="keyword">const</span> <a class="code" href="../../d2/d73/classxii_simd_float.htm">xiiSimdFloat</a>&amp; b, <span class="keyword">const</span> <a class="code" href="../../d3/da5/classxii_simd_vec4f.htm">xiiSimdVec4f</a>&amp; c)</div>
 <div class="line"><a name="l00518"></a><span class="lineno">  518</span>&#160;{</div>
 <div class="line"><a name="l00519"></a><span class="lineno">  519</span>&#160;  <span class="keywordflow">return</span> vfmaq_f32(c.m_v, a.m_v, b.m_v);</div>
 <div class="line"><a name="l00520"></a><span class="lineno">  520</span>&#160;}</div>
 <div class="line"><a name="l00521"></a><span class="lineno">  521</span>&#160; </div>
 <div class="line"><a name="l00522"></a><span class="lineno">  522</span>&#160;<span class="comment">// static</span></div>
-<div class="line"><a name="l00523"></a><span class="lineno">  523</span>&#160;XII_ALWAYS_INLINE <a class="code" href="../../d3/da5/classxii_simd_vec4f.htm">xiiSimdVec4f</a> xiiSimdVec4f::MulAdd(<span class="keyword">const</span> <a class="code" href="../../d3/da5/classxii_simd_vec4f.htm">xiiSimdVec4f</a>&amp; a, <span class="keyword">const</span> <a class="code" href="../../d2/d73/classxii_simd_float.htm">xiiSimdFloat</a>&amp; b, <span class="keyword">const</span> <a class="code" href="../../d3/da5/classxii_simd_vec4f.htm">xiiSimdVec4f</a>&amp; c)</div>
+<div class="line"><a name="l00523"></a><span class="lineno">  523</span>&#160;XII_ALWAYS_INLINE <a class="code" href="../../d3/da5/classxii_simd_vec4f.htm">xiiSimdVec4f</a> xiiSimdVec4f::MulSub(<span class="keyword">const</span> <a class="code" href="../../d3/da5/classxii_simd_vec4f.htm">xiiSimdVec4f</a>&amp; a, <span class="keyword">const</span> <a class="code" href="../../d3/da5/classxii_simd_vec4f.htm">xiiSimdVec4f</a>&amp; b, <span class="keyword">const</span> <a class="code" href="../../d3/da5/classxii_simd_vec4f.htm">xiiSimdVec4f</a>&amp; c)</div>
 <div class="line"><a name="l00524"></a><span class="lineno">  524</span>&#160;{</div>
-<div class="line"><a name="l00525"></a><span class="lineno">  525</span>&#160;  <span class="keywordflow">return</span> vfmaq_f32(c.m_v, a.m_v, b.m_v);</div>
+<div class="line"><a name="l00525"></a><span class="lineno">  525</span>&#160;  <span class="keywordflow">return</span> vnegq_f32(vfmsq_f32(c.m_v, a.m_v, b.m_v));</div>
 <div class="line"><a name="l00526"></a><span class="lineno">  526</span>&#160;}</div>
 <div class="line"><a name="l00527"></a><span class="lineno">  527</span>&#160; </div>
 <div class="line"><a name="l00528"></a><span class="lineno">  528</span>&#160;<span class="comment">// static</span></div>
-<div class="line"><a name="l00529"></a><span class="lineno">  529</span>&#160;XII_ALWAYS_INLINE <a class="code" href="../../d3/da5/classxii_simd_vec4f.htm">xiiSimdVec4f</a> xiiSimdVec4f::MulSub(<span class="keyword">const</span> <a class="code" href="../../d3/da5/classxii_simd_vec4f.htm">xiiSimdVec4f</a>&amp; a, <span class="keyword">const</span> <a class="code" href="../../d3/da5/classxii_simd_vec4f.htm">xiiSimdVec4f</a>&amp; b, <span class="keyword">const</span> <a class="code" href="../../d3/da5/classxii_simd_vec4f.htm">xiiSimdVec4f</a>&amp; c)</div>
+<div class="line"><a name="l00529"></a><span class="lineno">  529</span>&#160;XII_ALWAYS_INLINE <a class="code" href="../../d3/da5/classxii_simd_vec4f.htm">xiiSimdVec4f</a> xiiSimdVec4f::MulSub(<span class="keyword">const</span> <a class="code" href="../../d3/da5/classxii_simd_vec4f.htm">xiiSimdVec4f</a>&amp; a, <span class="keyword">const</span> <a class="code" href="../../d2/d73/classxii_simd_float.htm">xiiSimdFloat</a>&amp; b, <span class="keyword">const</span> <a class="code" href="../../d3/da5/classxii_simd_vec4f.htm">xiiSimdVec4f</a>&amp; c)</div>
 <div class="line"><a name="l00530"></a><span class="lineno">  530</span>&#160;{</div>
 <div class="line"><a name="l00531"></a><span class="lineno">  531</span>&#160;  <span class="keywordflow">return</span> vnegq_f32(vfmsq_f32(c.m_v, a.m_v, b.m_v));</div>
 <div class="line"><a name="l00532"></a><span class="lineno">  532</span>&#160;}</div>
 <div class="line"><a name="l00533"></a><span class="lineno">  533</span>&#160; </div>
 <div class="line"><a name="l00534"></a><span class="lineno">  534</span>&#160;<span class="comment">// static</span></div>
-<div class="line"><a name="l00535"></a><span class="lineno">  535</span>&#160;XII_ALWAYS_INLINE <a class="code" href="../../d3/da5/classxii_simd_vec4f.htm">xiiSimdVec4f</a> xiiSimdVec4f::MulSub(<span class="keyword">const</span> <a class="code" href="../../d3/da5/classxii_simd_vec4f.htm">xiiSimdVec4f</a>&amp; a, <span class="keyword">const</span> <a class="code" href="../../d2/d73/classxii_simd_float.htm">xiiSimdFloat</a>&amp; b, <span class="keyword">const</span> <a class="code" href="../../d3/da5/classxii_simd_vec4f.htm">xiiSimdVec4f</a>&amp; c)</div>
+<div class="line"><a name="l00535"></a><span class="lineno">  535</span>&#160;XII_ALWAYS_INLINE <a class="code" href="../../d3/da5/classxii_simd_vec4f.htm">xiiSimdVec4f</a> xiiSimdVec4f::CopySign(<span class="keyword">const</span> <a class="code" href="../../d3/da5/classxii_simd_vec4f.htm">xiiSimdVec4f</a>&amp; magnitude, <span class="keyword">const</span> <a class="code" href="../../d3/da5/classxii_simd_vec4f.htm">xiiSimdVec4f</a>&amp; sign)</div>
 <div class="line"><a name="l00536"></a><span class="lineno">  536</span>&#160;{</div>
-<div class="line"><a name="l00537"></a><span class="lineno">  537</span>&#160;  <span class="keywordflow">return</span> vnegq_f32(vfmsq_f32(c.m_v, a.m_v, b.m_v));</div>
+<div class="line"><a name="l00537"></a><span class="lineno">  537</span>&#160;  <span class="keywordflow">return</span> vbslq_f32(vmovq_n_u32(0x80000000), sign.m_v, magnitude.m_v);</div>
 <div class="line"><a name="l00538"></a><span class="lineno">  538</span>&#160;}</div>
-<div class="line"><a name="l00539"></a><span class="lineno">  539</span>&#160; </div>
-<div class="line"><a name="l00540"></a><span class="lineno">  540</span>&#160;<span class="comment">// static</span></div>
-<div class="line"><a name="l00541"></a><span class="lineno">  541</span>&#160;XII_ALWAYS_INLINE <a class="code" href="../../d3/da5/classxii_simd_vec4f.htm">xiiSimdVec4f</a> xiiSimdVec4f::CopySign(<span class="keyword">const</span> <a class="code" href="../../d3/da5/classxii_simd_vec4f.htm">xiiSimdVec4f</a>&amp; magnitude, <span class="keyword">const</span> <a class="code" href="../../d3/da5/classxii_simd_vec4f.htm">xiiSimdVec4f</a>&amp; sign)</div>
-<div class="line"><a name="l00542"></a><span class="lineno">  542</span>&#160;{</div>
-<div class="line"><a name="l00543"></a><span class="lineno">  543</span>&#160;  <span class="keywordflow">return</span> vbslq_f32(vmovq_n_u32(0x80000000), sign.m_v, magnitude.m_v);</div>
-<div class="line"><a name="l00544"></a><span class="lineno">  544</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclassxii_simd_vec4f_htm"><div class="ttname"><a href="../../d3/da5/classxii_simd_vec4f.htm">xiiSimdVec4f</a></div><div class="ttdoc">A 4-component SIMD vector class.</div><div class="ttdef"><b>Definition:</b> SimdVec4f.h:7</div></div>
@@ -643,7 +637,7 @@ $(document).ready(function(){initNavTree('d4/d73/_n_e_o_n_vec4f__inl_8h_source.h
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.htm">home</a></li><li class="navelem"><a class="el" href="../../dir_1036706e55c22cab35bc1c58ee689f1d.htm">runner</a></li><li class="navelem"><a class="el" href="../../dir_629f8151d55d307162ff2d619fb1783d.htm">work</a></li><li class="navelem"><a class="el" href="../../dir_1ddc44fe1263a8c7935fa6130b7d9499.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_2c1b6808f12952f4c36e05ba7068379a.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_b5a1c4ecfca018ad24b729e213296d41.htm">Source</a></li><li class="navelem"><a class="el" href="../../dir_e321052006a51284e67389ab20037e7c.htm">Engine</a></li><li class="navelem"><a class="el" href="../../dir_be0c42c58b36f42c54ec54024ed4f6af.htm">Foundation</a></li><li class="navelem"><a class="el" href="../../dir_6571b00f9c254a01b1735d75b2065daf.htm">SimdMath</a></li><li class="navelem"><a class="el" href="../../dir_421677d30b51fc7bb4bb6333857496b6.htm">Implementation</a></li><li class="navelem"><a class="el" href="../../dir_c9134eb9e5670f07e263b5c7fa011d15.htm">NEON</a></li><li class="navelem"><b>NEONVec4f_inl.h</b></li>
-    <li class="footer">Generated on Mon Jun 3 2024 16:28:44 for XIIEngine by
+    <li class="footer">Generated on Wed Jun 12 2024 18:05:50 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

@@ -127,17 +127,10 @@ XII_ALWAYS_INLINE Type&#160;</td><td class="memItemRight" valign="bottom"><b>Ele
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d74/classxii_mat3_template.htm#a424a78e134dd17629bec4ec88b77c428">xiiMat3Template</a> (Type c1r1, Type c2r1, Type c3r1, Type c1r2, Type c2r2, Type c3r2, Type c1r3, Type c2r3, Type c3r3)</td></tr>
 <tr class="memdesc:a424a78e134dd17629bec4ec88b77c428"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets each element manually: Naming is "column-n row-m". <br /></td></tr>
 <tr class="separator:a424a78e134dd17629bec4ec88b77c428"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab93f87c48a607890ea7214ae1406b2dd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d74/classxii_mat3_template.htm#ab93f87c48a607890ea7214ae1406b2dd">SetFromArray</a> (const Type *const pData, <a class="el" href="../../d0/d4f/structxii_matrix_layout.htm#ac36c91b001c7cd816897b73c0bff5e6d">xiiMatrixLayout::Enum</a> layout)</td></tr>
-<tr class="memdesc:ab93f87c48a607890ea7214ae1406b2dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies 9 values from pData into the matrix. Can handle the data in row-major or column-major order.  <a href="../../d3/d74/classxii_mat3_template.htm#ab93f87c48a607890ea7214ae1406b2dd">More...</a><br /></td></tr>
-<tr class="separator:ab93f87c48a607890ea7214ae1406b2dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af9222afcf5dbfde0aae56f0876bc2b79"><td class="memItemLeft" align="right" valign="top"><a id="af9222afcf5dbfde0aae56f0876bc2b79"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d74/classxii_mat3_template.htm#af9222afcf5dbfde0aae56f0876bc2b79">GetAsArray</a> (Type *out_pData, <a class="el" href="../../d0/d4f/structxii_matrix_layout.htm#ac36c91b001c7cd816897b73c0bff5e6d">xiiMatrixLayout::Enum</a> layout) const</td></tr>
 <tr class="memdesc:af9222afcf5dbfde0aae56f0876bc2b79"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies the 9 values of this matrix into the given array. 'layout' defines whether the data should end up in column-major or row-major format. <br /></td></tr>
 <tr class="separator:af9222afcf5dbfde0aae56f0876bc2b79"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac53e6d776e21adb5e567e8a7f92a1fa7"><td class="memItemLeft" align="right" valign="top"><a id="ac53e6d776e21adb5e567e8a7f92a1fa7"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d74/classxii_mat3_template.htm#ac53e6d776e21adb5e567e8a7f92a1fa7">SetElements</a> (Type c1r1, Type c2r1, Type c3r1, Type c1r2, Type c2r2, Type c3r2, Type c1r3, Type c2r3, Type c3r3)</td></tr>
-<tr class="memdesc:ac53e6d776e21adb5e567e8a7f92a1fa7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets each element manually: Naming is "column-n row-m". <br /></td></tr>
-<tr class="separator:ac53e6d776e21adb5e567e8a7f92a1fa7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9ab491f721aa3f2be6e453782c147bff"><td class="memItemLeft" align="right" valign="top"><a id="a9ab491f721aa3f2be6e453782c147bff"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d74/classxii_mat3_template.htm#a9ab491f721aa3f2be6e453782c147bff">SetZero</a> ()</td></tr>
 <tr class="memdesc:a9ab491f721aa3f2be6e453782c147bff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets all elements to zero. <br /></td></tr>
@@ -146,26 +139,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../.
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d74/classxii_mat3_template.htm#a44eab21b44154a3110c0cf8831f4be76">SetIdentity</a> ()</td></tr>
 <tr class="memdesc:a44eab21b44154a3110c0cf8831f4be76"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets all elements to zero, except the diagonal, which is set to one. <br /></td></tr>
 <tr class="separator:a44eab21b44154a3110c0cf8831f4be76"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a404ef5e2931102de8710c391896e6863"><td class="memItemLeft" align="right" valign="top"><a id="a404ef5e2931102de8710c391896e6863"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d74/classxii_mat3_template.htm#a404ef5e2931102de8710c391896e6863">SetScalingMatrix</a> (const <a class="el" href="../../d9/d9a/classxii_vec3_template.htm">xiiVec3Template</a>&lt; Type &gt; &amp;vScale)</td></tr>
-<tr class="memdesc:a404ef5e2931102de8710c391896e6863"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the matrix to all zero, except the diagonal, which is set to x,y,z,1. <br /></td></tr>
-<tr class="separator:a404ef5e2931102de8710c391896e6863"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aed61cf1559a2f0ce7a5447319ce28960"><td class="memItemLeft" align="right" valign="top"><a id="aed61cf1559a2f0ce7a5447319ce28960"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d74/classxii_mat3_template.htm#aed61cf1559a2f0ce7a5447319ce28960">SetRotationMatrixX</a> (<a class="el" href="../../d3/ddb/classxii_angle_template.htm">xiiAngleTemplate</a>&lt; Type &gt; angle)</td></tr>
-<tr class="memdesc:aed61cf1559a2f0ce7a5447319ce28960"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets this matrix to be a rotation matrix around the X-axis. <br /></td></tr>
-<tr class="separator:aed61cf1559a2f0ce7a5447319ce28960"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0bc5a034fc4e3961c5519f55f9fd67db"><td class="memItemLeft" align="right" valign="top"><a id="a0bc5a034fc4e3961c5519f55f9fd67db"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d74/classxii_mat3_template.htm#a0bc5a034fc4e3961c5519f55f9fd67db">SetRotationMatrixY</a> (<a class="el" href="../../d3/ddb/classxii_angle_template.htm">xiiAngleTemplate</a>&lt; Type &gt; angle)</td></tr>
-<tr class="memdesc:a0bc5a034fc4e3961c5519f55f9fd67db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets this matrix to be a rotation matrix around the Y-axis. <br /></td></tr>
-<tr class="separator:a0bc5a034fc4e3961c5519f55f9fd67db"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8c64751ca848cc54e6a64ef26c88c08c"><td class="memItemLeft" align="right" valign="top"><a id="a8c64751ca848cc54e6a64ef26c88c08c"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d74/classxii_mat3_template.htm#a8c64751ca848cc54e6a64ef26c88c08c">SetRotationMatrixZ</a> (<a class="el" href="../../d3/ddb/classxii_angle_template.htm">xiiAngleTemplate</a>&lt; Type &gt; angle)</td></tr>
-<tr class="memdesc:a8c64751ca848cc54e6a64ef26c88c08c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets this matrix to be a rotation matrix around the Z-axis. <br /></td></tr>
-<tr class="separator:a8c64751ca848cc54e6a64ef26c88c08c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abf765c44db81db98e65aa42b9cb856e7"><td class="memItemLeft" align="right" valign="top"><a id="abf765c44db81db98e65aa42b9cb856e7"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d74/classxii_mat3_template.htm#abf765c44db81db98e65aa42b9cb856e7">SetRotationMatrix</a> (const <a class="el" href="../../d9/d9a/classxii_vec3_template.htm">xiiVec3Template</a>&lt; Type &gt; &amp;vAxis, <a class="el" href="../../d3/ddb/classxii_angle_template.htm">xiiAngleTemplate</a>&lt; Type &gt; angle)</td></tr>
-<tr class="memdesc:abf765c44db81db98e65aa42b9cb856e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets this matrix to be a rotation matrix around the given axis. <br /></td></tr>
-<tr class="separator:abf765c44db81db98e65aa42b9cb856e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5f510634863c1ab428d1454e00eaa4b6"><td class="memItemLeft" align="right" valign="top"><a id="a5f510634863c1ab428d1454e00eaa4b6"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d74/classxii_mat3_template.htm#a5f510634863c1ab428d1454e00eaa4b6">Transpose</a> ()</td></tr>
 <tr class="memdesc:a5f510634863c1ab428d1454e00eaa4b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transposes this matrix. <br /></td></tr>
@@ -232,7 +205,7 @@ const <a class="el" href="../../d9/d9a/classxii_vec3_template.htm">xiiVec3Templa
 <tr class="separator:a9aab0677882d361e8eb188d9f30707db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a01c2ab7226eb443ee4cbab0e92a86d0d"><td class="memItemLeft" align="right" valign="top"><a id="a01c2ab7226eb443ee4cbab0e92a86d0d"></a>
 Type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d74/classxii_mat3_template.htm#a01c2ab7226eb443ee4cbab0e92a86d0d">GetDeterminant</a> () const</td></tr>
-<tr class="memdesc:a01c2ab7226eb443ee4cbab0e92a86d0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the determinant of the matix. <br /></td></tr>
+<tr class="memdesc:a01c2ab7226eb443ee4cbab0e92a86d0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the determinant of the matrix. <br /></td></tr>
 <tr class="separator:a01c2ab7226eb443ee4cbab0e92a86d0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a82951f19f6a4cc13b0dfe5568d273f46"><td class="memItemLeft" align="right" valign="top"><a id="a82951f19f6a4cc13b0dfe5568d273f46"></a>
 const <a class="el" href="../../d9/d9a/classxii_vec3_template.htm">xiiVec3Template</a>&lt; Type &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d74/classxii_mat3_template.htm#a82951f19f6a4cc13b0dfe5568d273f46">TransformDirection</a> (const <a class="el" href="../../d9/d9a/classxii_vec3_template.htm">xiiVec3Template</a>&lt; Type &gt; &amp;v) const</td></tr>
@@ -257,14 +230,46 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../.
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:af23de274af6f5734b31307f179a28653"><td class="memItemLeft" align="right" valign="top"><a id="af23de274af6f5734b31307f179a28653"></a>
-static const <a class="el" href="../../d3/d74/classxii_mat3_template.htm">xiiMat3Template</a>&lt; Type &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d74/classxii_mat3_template.htm#af23de274af6f5734b31307f179a28653">IdentityMatrix</a> ()</td></tr>
-<tr class="memdesc:af23de274af6f5734b31307f179a28653"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an Identity Matrix. <br /></td></tr>
-<tr class="separator:af23de274af6f5734b31307f179a28653"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a31f50ba2a2350bae007d67562e43afef"><td class="memItemLeft" align="right" valign="top"><a id="a31f50ba2a2350bae007d67562e43afef"></a>
-static const <a class="el" href="../../d3/d74/classxii_mat3_template.htm">xiiMat3Template</a>&lt; Type &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d74/classxii_mat3_template.htm#a31f50ba2a2350bae007d67562e43afef">ZeroMatrix</a> ()</td></tr>
-<tr class="memdesc:a31f50ba2a2350bae007d67562e43afef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a Zero Matrix. <br /></td></tr>
-<tr class="separator:a31f50ba2a2350bae007d67562e43afef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d8d295e88e42388898b8676dab2ce4a"><td class="memItemLeft" align="right" valign="top"><a id="a0d8d295e88e42388898b8676dab2ce4a"></a>
+static <a class="el" href="../../d3/d74/classxii_mat3_template.htm">xiiMat3Template</a>&lt; Type &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d74/classxii_mat3_template.htm#a0d8d295e88e42388898b8676dab2ce4a">MakeZero</a> ()</td></tr>
+<tr class="memdesc:a0d8d295e88e42388898b8676dab2ce4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a zero matrix. <br /></td></tr>
+<tr class="separator:a0d8d295e88e42388898b8676dab2ce4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a367981ecf5e690c5afe4b3bc7ab3f768"><td class="memItemLeft" align="right" valign="top"><a id="a367981ecf5e690c5afe4b3bc7ab3f768"></a>
+static <a class="el" href="../../d3/d74/classxii_mat3_template.htm">xiiMat3Template</a>&lt; Type &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d74/classxii_mat3_template.htm#a367981ecf5e690c5afe4b3bc7ab3f768">MakeIdentity</a> ()</td></tr>
+<tr class="memdesc:a367981ecf5e690c5afe4b3bc7ab3f768"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an identity matrix. <br /></td></tr>
+<tr class="separator:a367981ecf5e690c5afe4b3bc7ab3f768"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf907182fdecf335f211e9c5ebe46b2c"><td class="memItemLeft" align="right" valign="top"><a id="adf907182fdecf335f211e9c5ebe46b2c"></a>
+static <a class="el" href="../../d3/d74/classxii_mat3_template.htm">xiiMat3Template</a>&lt; Type &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d74/classxii_mat3_template.htm#adf907182fdecf335f211e9c5ebe46b2c">MakeFromRowMajorArray</a> (const Type *const pData)</td></tr>
+<tr class="memdesc:adf907182fdecf335f211e9c5ebe46b2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a matrix from 9 values that are in row-major layout. <br /></td></tr>
+<tr class="separator:adf907182fdecf335f211e9c5ebe46b2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ac019e513879fcb4af36867e73a55ab"><td class="memItemLeft" align="right" valign="top"><a id="a7ac019e513879fcb4af36867e73a55ab"></a>
+static <a class="el" href="../../d3/d74/classxii_mat3_template.htm">xiiMat3Template</a>&lt; Type &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d74/classxii_mat3_template.htm#a7ac019e513879fcb4af36867e73a55ab">MakeFromColumnMajorArray</a> (const Type *const pData)</td></tr>
+<tr class="memdesc:a7ac019e513879fcb4af36867e73a55ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a matrix from 9 values that are in column-major layout. <br /></td></tr>
+<tr class="separator:a7ac019e513879fcb4af36867e73a55ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa082c8aabec50dd2c9ef565083ad0bfa"><td class="memItemLeft" align="right" valign="top"><a id="aa082c8aabec50dd2c9ef565083ad0bfa"></a>
+static <a class="el" href="../../d3/d74/classxii_mat3_template.htm">xiiMat3Template</a>&lt; Type &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d74/classxii_mat3_template.htm#aa082c8aabec50dd2c9ef565083ad0bfa">MakeFromValues</a> (Type c1r1, Type c2r1, Type c3r1, Type c1r2, Type c2r2, Type c3r2, Type c1r3, Type c2r3, Type c3r3)</td></tr>
+<tr class="memdesc:aa082c8aabec50dd2c9ef565083ad0bfa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a matrix from 9 values. Naming is "column-n row-m". <br /></td></tr>
+<tr class="separator:aa082c8aabec50dd2c9ef565083ad0bfa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93001a328ad66cc719a19b710e918e0b"><td class="memItemLeft" align="right" valign="top"><a id="a93001a328ad66cc719a19b710e918e0b"></a>
+static <a class="el" href="../../d3/d74/classxii_mat3_template.htm">xiiMat3Template</a>&lt; Type &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d74/classxii_mat3_template.htm#a93001a328ad66cc719a19b710e918e0b">MakeScaling</a> (const <a class="el" href="../../d9/d9a/classxii_vec3_template.htm">xiiVec3Template</a>&lt; Type &gt; &amp;vScale)</td></tr>
+<tr class="memdesc:a93001a328ad66cc719a19b710e918e0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a matrix with all zero values, except along the diagonal, which is set to x,y,z. <br /></td></tr>
+<tr class="separator:a93001a328ad66cc719a19b710e918e0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a4dd3be0aa66a95db1d6c09bd77e493"><td class="memItemLeft" align="right" valign="top"><a id="a6a4dd3be0aa66a95db1d6c09bd77e493"></a>
+static <a class="el" href="../../d3/d74/classxii_mat3_template.htm">xiiMat3Template</a>&lt; Type &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d74/classxii_mat3_template.htm#a6a4dd3be0aa66a95db1d6c09bd77e493">MakeRotationX</a> (<a class="el" href="../../d3/ddb/classxii_angle_template.htm">xiiAngleTemplate</a>&lt; Type &gt; angle)</td></tr>
+<tr class="memdesc:a6a4dd3be0aa66a95db1d6c09bd77e493"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a matrix that is a rotation matrix around the X-axis. <br /></td></tr>
+<tr class="separator:a6a4dd3be0aa66a95db1d6c09bd77e493"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5496224ed35c1413db94963fe0b3f17c"><td class="memItemLeft" align="right" valign="top"><a id="a5496224ed35c1413db94963fe0b3f17c"></a>
+static <a class="el" href="../../d3/d74/classxii_mat3_template.htm">xiiMat3Template</a>&lt; Type &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d74/classxii_mat3_template.htm#a5496224ed35c1413db94963fe0b3f17c">MakeRotationY</a> (<a class="el" href="../../d3/ddb/classxii_angle_template.htm">xiiAngleTemplate</a>&lt; Type &gt; angle)</td></tr>
+<tr class="memdesc:a5496224ed35c1413db94963fe0b3f17c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a matrix that is a rotation matrix around the Y-axis. <br /></td></tr>
+<tr class="separator:a5496224ed35c1413db94963fe0b3f17c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1f9be0f1b2576673086919bce0839c9"><td class="memItemLeft" align="right" valign="top"><a id="ab1f9be0f1b2576673086919bce0839c9"></a>
+static <a class="el" href="../../d3/d74/classxii_mat3_template.htm">xiiMat3Template</a>&lt; Type &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d74/classxii_mat3_template.htm#ab1f9be0f1b2576673086919bce0839c9">MakeRotationZ</a> (<a class="el" href="../../d3/ddb/classxii_angle_template.htm">xiiAngleTemplate</a>&lt; Type &gt; angle)</td></tr>
+<tr class="memdesc:ab1f9be0f1b2576673086919bce0839c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a matrix that is a rotation matrix around the Z-axis. <br /></td></tr>
+<tr class="separator:ab1f9be0f1b2576673086919bce0839c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50dd424529b7eb12579d658a9e6ea903"><td class="memItemLeft" align="right" valign="top"><a id="a50dd424529b7eb12579d658a9e6ea903"></a>
+static <a class="el" href="../../d3/d74/classxii_mat3_template.htm">xiiMat3Template</a>&lt; Type &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d74/classxii_mat3_template.htm#a50dd424529b7eb12579d658a9e6ea903">MakeAxisRotation</a> (const <a class="el" href="../../d9/d9a/classxii_vec3_template.htm">xiiVec3Template</a>&lt; Type &gt; &amp;vAxis, <a class="el" href="../../d3/ddb/classxii_angle_template.htm">xiiAngleTemplate</a>&lt; Type &gt; angle)</td></tr>
+<tr class="memdesc:a50dd424529b7eb12579d658a9e6ea903"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a matrix that is a rotation matrix around the given axis. <br /></td></tr>
+<tr class="separator:a50dd424529b7eb12579d658a9e6ea903"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -318,46 +323,6 @@ template&lt;typename Type &gt; </div>
 
 </div>
 </div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a id="ab93f87c48a607890ea7214ae1406b2dd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab93f87c48a607890ea7214ae1406b2dd">&#9670;&nbsp;</a></span>SetFromArray()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename Type &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="../../d3/d74/classxii_mat3_template.htm">xiiMat3Template</a>&lt; Type &gt;::SetFromArray </td>
-          <td>(</td>
-          <td class="paramtype">const Type *const&#160;</td>
-          <td class="paramname"><em>pData</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="../../d0/d4f/structxii_matrix_layout.htm#ac36c91b001c7cd816897b73c0bff5e6d">xiiMatrixLayout::Enum</a>&#160;</td>
-          <td class="paramname"><em>layout</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Copies 9 values from pData into the matrix. Can handle the data in row-major or column-major order. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">pData</td><td>The array of Type values from which to set the matrix data. </td></tr>
-    <tr><td class="paramname">layout</td><td>The layout in which pData stores the matrix. The data will get transposed, if necessary. The data should be in column-major format, if you want to prevent unnecessary transposes. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>/home/runner/work/XII/XII/Source/Engine/Foundation/Math/<a class="el" href="../../d4/dbc/_engine_2_foundation_2_math_2_declarations_8h_source.htm">Declarations.h</a></li>
 <li>/home/runner/work/XII/XII/Source/Engine/Foundation/Math/<a class="el" href="../../db/d29/_mat3_8h_source.htm">Mat3.h</a></li>
@@ -370,7 +335,7 @@ template&lt;typename Type &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d3/d74/classxii_mat3_template.htm">xiiMat3Template</a></li>
-    <li class="footer">Generated on Mon Jun 3 2024 16:28:51 for XIIEngine by
+    <li class="footer">Generated on Wed Jun 12 2024 18:05:57 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

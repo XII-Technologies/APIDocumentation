@@ -113,9 +113,9 @@ Inheritance diagram for xiiCVar:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aac9805464477dd6a2e92fd5eaad984aa"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d07/classxii_c_var.htm#aac9805464477dd6a2e92fd5eaad984aa">SetToRestartValue</a> ()=0</td></tr>
-<tr class="memdesc:aac9805464477dd6a2e92fd5eaad984aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies the 'Restart' value into the 'Current' value.  <a href="../../d9/d07/classxii_c_var.htm#aac9805464477dd6a2e92fd5eaad984aa">More...</a><br /></td></tr>
-<tr class="separator:aac9805464477dd6a2e92fd5eaad984aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27c9594c78a304a3c0dfb0edbfeb3369"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d07/classxii_c_var.htm#a27c9594c78a304a3c0dfb0edbfeb3369">SetToDelayedSyncValue</a> ()=0</td></tr>
+<tr class="memdesc:a27c9594c78a304a3c0dfb0edbfeb3369"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies the 'DelayedSync' value into the 'Current' value.  <a href="../../d9/d07/classxii_c_var.htm#a27c9594c78a304a3c0dfb0edbfeb3369">More...</a><br /></td></tr>
+<tr class="separator:a27c9594c78a304a3c0dfb0edbfeb3369"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a693fae3620ba401917d9e6b11414af8e"><td class="memItemLeft" align="right" valign="top"><a id="a693fae3620ba401917d9e6b11414af8e"></a>
 <a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d07/classxii_c_var.htm#a693fae3620ba401917d9e6b11414af8e">GetName</a> () const</td></tr>
 <tr class="memdesc:a693fae3620ba401917d9e6b11414af8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the (display) name of the CVar. <br /></td></tr>
@@ -322,7 +322,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Loads the CVars from the settings files in the storage folder. </p>
 <p>The CVars are loaded into the global system and thus automatically available everywhere after this call. Optionally they are returned via pOutCVars, so the caller knows which CVars have actually been loaded in this very step.</p>
 <p>This function has no effect, if the storage folder has not been set via 'SetStorageFolder' yet or it has been set to be empty.</p>
-<p>If <em>bOnlyNewOnes</em> is set, only CVars that have never been loaded from file before are loaded. All other CVars will stay unchanged. If <em>bSetAsCurrentValue</em> is true, variables that are flagged as 'RequiresRestart', will be set to the restart value immediately ('SetToRestartValue' is called on them). Otherwise their 'Current' value will always stay unchanged and the value from disk will only be stored in the 'Restart' value. Independent on the parameter settings, all CVar changes during loading will always trigger change events.</p>
+<p>If <em>bOnlyNewOnes</em> is set, only CVars that have never been loaded from file before are loaded. All other CVars will stay unchanged. If <em>bSetAsCurrentValue</em> is true, variables that are flagged as 'RequiresRestart', will be set to the restart value immediately ('SetToDelayedSyncValue' is called on them). Otherwise their 'Current' value will always stay unchanged and the value from disk will only be stored in the 'DelayedSync' value. Independent on the parameter settings, all CVar changes during loading will always trigger change events.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d9/d07/classxii_c_var.htm#a551d4a5c1567c9cb628d3eae2a20100b" title="Similar to LoadCVarsFromFile() but tries to get the CVar values from the command line.">LoadCVarsFromCommandLine()</a> </dd></dl>
 
 </div>
@@ -382,7 +382,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Loads all CVars from the given file. Does not account for any plug-in specific files. </p>
 <p>The CVars are loaded into the global system and thus automatically available everywhere after this call. Optionally they are returned via pOutCVars, so the caller knows which CVars have actually been loaded in this very step.</p>
 <p>This function works without setting a storage folder.</p>
-<p>If <em>bOnlyNewOnes</em> is set, only CVars that have never been loaded from file before are loaded. All other CVars will stay unchanged. If <em>bSetAsCurrentValue</em> is true, variables that are flagged as 'RequiresRestart', will be set to the restart value immediately ('SetToRestartValue' is called on them). Otherwise their 'Current' value will always stay unchanged and the value from disk will only be stored in the 'Restart' value. Independent on the parameter settings, all CVar changes during loading will always trigger change events. If bIgnoreSaveFlag is set all CVars are loaded whether they have the <a class="el" href="../../dc/db8/structxii_c_var_flags.htm#a1543a8b5d2fb57308ecfb6d5f85d3bdea6799f9c1a08ea2c86d67aa2c50f53d6b" title="If this flag is set, the CVar will be stored on disk and loaded again. Otherwise all changes to it wi...">xiiCVarFlags::Save</a> set or not.</p>
+<p>If <em>bOnlyNewOnes</em> is set, only CVars that have never been loaded from file before are loaded. All other CVars will stay unchanged. If <em>bSetAsCurrentValue</em> is true, variables that are flagged as 'RequiresRestart', will be set to the restart value immediately ('SetToDelayedSyncValue' is called on them). Otherwise their 'Current' value will always stay unchanged and the value from disk will only be stored in the 'DelayedSync' value. Independent on the parameter settings, all CVar changes during loading will always trigger change events. If bIgnoreSaveFlag is set all CVars are loaded whether they have the <a class="el" href="../../dc/db8/structxii_c_var_flags.htm#a1543a8b5d2fb57308ecfb6d5f85d3bdea6799f9c1a08ea2c86d67aa2c50f53d6b" title="If this flag is set, the CVar will be stored on disk and loaded again. Otherwise all changes to it wi...">xiiCVarFlags::Save</a> set or not.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d9/d07/classxii_c_var.htm#a551d4a5c1567c9cb628d3eae2a20100b" title="Similar to LoadCVarsFromFile() but tries to get the CVar values from the command line.">LoadCVarsFromCommandLine()</a> </dd>
 <dd>
 <a class="el" href="../../d9/d07/classxii_c_var.htm#a24e7d9a3bc4891383c2679cbc2508a5b" title="Loads the CVars from the settings files in the storage folder.">LoadCVarsFromFile()</a> </dd></dl>
@@ -487,8 +487,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="aac9805464477dd6a2e92fd5eaad984aa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aac9805464477dd6a2e92fd5eaad984aa">&#9670;&nbsp;</a></span>SetToRestartValue()</h2>
+<a id="a27c9594c78a304a3c0dfb0edbfeb3369"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a27c9594c78a304a3c0dfb0edbfeb3369">&#9670;&nbsp;</a></span>SetToDelayedSyncValue()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -497,7 +497,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void xiiCVar::SetToRestartValue </td>
+          <td class="memname">virtual void xiiCVar::SetToDelayedSyncValue </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -510,10 +510,10 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Copies the 'Restart' value into the 'Current' value. </p>
-<p>This change will not trigger a 'restart value changed' event, but it might trigger a 'current value changed' event. Code that uses a CVar that is flagged as 'RequiresRestart' for its initialization (and which is the reason, that that CVar is flagged as such) should always call this BEFORE it uses the CVar value. </p>
+<p>Copies the 'DelayedSync' value into the 'Current' value. </p>
+<p>This change will not trigger a 'delayed sync value changed' event, but it might trigger a 'current value changed' event. Code that uses a CVar that is flagged as 'RequiresDelayedSync' for its initialization (and which is the reason, that that CVar is flagged as such) should always call this BEFORE it uses the CVar value. </p>
 
-<p>Implemented in <a class="el" href="../../dd/d5a/classxii_typed_c_var.htm#a5787eae4b8e707f22c78850ab28c703f">xiiTypedCVar&lt; Type, CVarType &gt;</a>.</p>
+<p>Implemented in <a class="el" href="../../dd/d5a/classxii_typed_c_var.htm#a2f9da0315b39f976c5c6ae2f8389f2f3">xiiTypedCVar&lt; Type, CVarType &gt;</a>.</p>
 
 </div>
 </div>
@@ -527,7 +527,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d9/d07/classxii_c_var.htm">xiiCVar</a></li>
-    <li class="footer">Generated on Mon Jun 3 2024 16:28:49 for XIIEngine by
+    <li class="footer">Generated on Wed Jun 12 2024 18:05:55 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

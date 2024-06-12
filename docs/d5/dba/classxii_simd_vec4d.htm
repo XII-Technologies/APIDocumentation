@@ -136,14 +136,14 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>SetW</b> (const <a cl
 <tr class="memitem:a97442fc3c8ad5c8a9e69e48a75cd6b77"><td class="memItemLeft" align="right" valign="top"><a id="a97442fc3c8ad5c8a9e69e48a75cd6b77"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetZero</b> ()</td></tr>
 <tr class="separator:a97442fc3c8ad5c8a9e69e48a75cd6b77"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab83e546f5d647460c9b4bd97fa5ecccb"><td class="memTemplParams" colspan="2"><a id="ab83e546f5d647460c9b4bd97fa5ecccb"></a>
+<tr class="memitem:adad9e4303348c9c23fa79ae633a5eb1e"><td class="memTemplParams" colspan="2"><a id="adad9e4303348c9c23fa79ae633a5eb1e"></a>
 template&lt;xiiInt32 N&gt; </td></tr>
-<tr class="memitem:ab83e546f5d647460c9b4bd97fa5ecccb"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>Load</b> (const double *pValues)</td></tr>
-<tr class="separator:ab83e546f5d647460c9b4bd97fa5ecccb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a20ddbeb0a43cbdbcd091b6bbe6c67814"><td class="memTemplParams" colspan="2"><a id="a20ddbeb0a43cbdbcd091b6bbe6c67814"></a>
+<tr class="memitem:adad9e4303348c9c23fa79ae633a5eb1e"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>Load</b> (const double *pDoubles)</td></tr>
+<tr class="separator:adad9e4303348c9c23fa79ae633a5eb1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13d747b1f2a960a33684128c8a6756b2"><td class="memTemplParams" colspan="2"><a id="a13d747b1f2a960a33684128c8a6756b2"></a>
 template&lt;xiiInt32 N&gt; </td></tr>
-<tr class="memitem:a20ddbeb0a43cbdbcd091b6bbe6c67814"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>Store</b> (double *pValues) const</td></tr>
-<tr class="separator:a20ddbeb0a43cbdbcd091b6bbe6c67814"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13d747b1f2a960a33684128c8a6756b2"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>Store</b> (double *pDoubles) const</td></tr>
+<tr class="separator:a13d747b1f2a960a33684128c8a6756b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac47aff13a194e6a3d7897e14983bf537"><td class="memTemplParams" colspan="2"><a id="ac47aff13a194e6a3d7897e14983bf537"></a>
 template&lt;xiiMathDoubleBits::Enum acc = xiiMathDoubleBits::FULL&gt; </td></tr>
 <tr class="memitem:ac47aff13a194e6a3d7897e14983bf537"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="../../d5/dba/classxii_simd_vec4d.htm">xiiSimdVec4d</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><b>GetReciprocal</b> () const</td></tr>
@@ -541,15 +541,20 @@ template&lt;&gt; </td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:af04ff2b9eb6b18ab39f6eadf180ea7c0"><td class="memItemLeft" align="right" valign="top"><a id="af04ff2b9eb6b18ab39f6eadf180ea7c0"></a>
-static <a class="el" href="../../d5/dba/classxii_simd_vec4d.htm">xiiSimdVec4d</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Select</b> (const <a class="el" href="../../de/d88/classxii_simd_vec4b.htm">xiiSimdVec4b</a> &amp;vCmp, const <a class="el" href="../../d5/dba/classxii_simd_vec4d.htm">xiiSimdVec4d</a> &amp;vIfTrue, const <a class="el" href="../../d5/dba/classxii_simd_vec4d.htm">xiiSimdVec4d</a> &amp;vIfFalse)</td></tr>
-<tr class="separator:af04ff2b9eb6b18ab39f6eadf180ea7c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6b0079a59403bda604a06f5b5b91e30"><td class="memItemLeft" align="right" valign="top"><a id="ab6b0079a59403bda604a06f5b5b91e30"></a>
+static <a class="el" href="../../d5/dba/classxii_simd_vec4d.htm">xiiSimdVec4d</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dba/classxii_simd_vec4d.htm#ab6b0079a59403bda604a06f5b5b91e30">MakeZero</a> ()</td></tr>
+<tr class="memdesc:ab6b0079a59403bda604a06f5b5b91e30"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a <a class="el" href="../../d5/dba/classxii_simd_vec4d.htm" title="A 4-component SIMD vector class.">xiiSimdVec4d</a> that is initialized to zero. <br /></td></tr>
+<tr class="separator:ab6b0079a59403bda604a06f5b5b91e30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff867ad466fd72123e5fad5c35ef85f5"><td class="memItemLeft" align="right" valign="top"><a id="aff867ad466fd72123e5fad5c35ef85f5"></a>
+static <a class="el" href="../../d5/dba/classxii_simd_vec4d.htm">xiiSimdVec4d</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dba/classxii_simd_vec4d.htm#aff867ad466fd72123e5fad5c35ef85f5">MakeNaN</a> ()</td></tr>
+<tr class="memdesc:aff867ad466fd72123e5fad5c35ef85f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a <a class="el" href="../../d5/dba/classxii_simd_vec4d.htm" title="A 4-component SIMD vector class.">xiiSimdVec4d</a> that is initialized to Not-A-Number (NaN). <br /></td></tr>
+<tr class="separator:aff867ad466fd72123e5fad5c35ef85f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7cd77d897ec0d5c7dee5cdd72b0d44eb"><td class="memItemLeft" align="right" valign="top"><a id="a7cd77d897ec0d5c7dee5cdd72b0d44eb"></a>
+static <a class="el" href="../../d5/dba/classxii_simd_vec4d.htm">xiiSimdVec4d</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Select</b> (const <a class="el" href="../../de/d88/classxii_simd_vec4b.htm">xiiSimdVec4b</a> &amp;vCmp, const <a class="el" href="../../d5/dba/classxii_simd_vec4d.htm">xiiSimdVec4d</a> &amp;vTrue, const <a class="el" href="../../d5/dba/classxii_simd_vec4d.htm">xiiSimdVec4d</a> &amp;vFalse)</td></tr>
+<tr class="separator:a7cd77d897ec0d5c7dee5cdd72b0d44eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9700b201fb4314522ffc2614d04d0bf5"><td class="memItemLeft" align="right" valign="top"><a id="a9700b201fb4314522ffc2614d04d0bf5"></a>
 static <a class="el" href="../../d5/dba/classxii_simd_vec4d.htm">xiiSimdVec4d</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Lerp</b> (const <a class="el" href="../../d5/dba/classxii_simd_vec4d.htm">xiiSimdVec4d</a> &amp;a, const <a class="el" href="../../d5/dba/classxii_simd_vec4d.htm">xiiSimdVec4d</a> &amp;b, const <a class="el" href="../../d5/dba/classxii_simd_vec4d.htm">xiiSimdVec4d</a> &amp;t)</td></tr>
 <tr class="separator:a9700b201fb4314522ffc2614d04d0bf5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab4a4df91da5d8209cda953b7eecc8ffc"><td class="memItemLeft" align="right" valign="top"><a id="ab4a4df91da5d8209cda953b7eecc8ffc"></a>
-static <a class="el" href="../../d5/dba/classxii_simd_vec4d.htm">xiiSimdVec4d</a>&#160;</td><td class="memItemRight" valign="bottom"><b>ZeroVector</b> ()</td></tr>
-<tr class="separator:ab4a4df91da5d8209cda953b7eecc8ffc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7c336ad7b1e478bdd63bfa9cf293f7f2"><td class="memItemLeft" align="right" valign="top"><a id="a7c336ad7b1e478bdd63bfa9cf293f7f2"></a>
 static <a class="el" href="../../d5/dba/classxii_simd_vec4d.htm">xiiSimdVec4d</a>&#160;</td><td class="memItemRight" valign="bottom"><b>MulAdd</b> (const <a class="el" href="../../d5/dba/classxii_simd_vec4d.htm">xiiSimdVec4d</a> &amp;a, const <a class="el" href="../../d5/dba/classxii_simd_vec4d.htm">xiiSimdVec4d</a> &amp;b, const <a class="el" href="../../d5/dba/classxii_simd_vec4d.htm">xiiSimdVec4d</a> &amp;c)</td></tr>
 <tr class="separator:a7c336ad7b1e478bdd63bfa9cf293f7f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -586,7 +591,7 @@ xiiInternal::QuadDouble&#160;</td><td class="memItemRight" valign="bottom"><b>m_
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d5/dba/classxii_simd_vec4d.htm">xiiSimdVec4d</a></li>
-    <li class="footer">Generated on Mon Jun 3 2024 16:28:53 for XIIEngine by
+    <li class="footer">Generated on Wed Jun 12 2024 18:05:59 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

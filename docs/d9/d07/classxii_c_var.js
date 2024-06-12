@@ -6,6 +6,6 @@ var classxii_c_var =
     [ "GetName", "d9/d07/classxii_c_var.htm#a693fae3620ba401917d9e6b11414af8e", null ],
     [ "GetPluginName", "d9/d07/classxii_c_var.htm#a35630d48563a0c91131a3463f4b878cc", null ],
     [ "GetType", "d9/d07/classxii_c_var.htm#a0c7c71cb4f61ad589a9937379e9205e7", null ],
-    [ "SetToRestartValue", "d9/d07/classxii_c_var.htm#aac9805464477dd6a2e92fd5eaad984aa", null ],
+    [ "SetToDelayedSyncValue", "d9/d07/classxii_c_var.htm#a27c9594c78a304a3c0dfb0edbfeb3369", null ],
     [ "m_CVarEvents", "d9/d07/classxii_c_var.htm#a1aa8918505e4380eed39768e28969ffa", null ]
 ];

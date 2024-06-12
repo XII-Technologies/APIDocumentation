@@ -157,25 +157,18 @@ $(document).ready(function(){initNavTree('d9/db9/_image__inl_8h_source.htm','../
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;}</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="../../d4/d6a/classxii_image.htm#a94b84acf6fd50e2122c369763c3ff143">   71</a></span>&#160;T* <a class="code" href="../../d4/d6a/classxii_image.htm#a94b84acf6fd50e2122c369763c3ff143">xiiImage::GetPixelPointer</a>(</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  xiiUInt32 uiMipLevel <span class="comment">/*= 0*/</span>,</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  xiiUInt32 uiFace <span class="comment">/*= 0*/</span>,</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  xiiUInt32 uiArrayIndex <span class="comment">/*= 0*/</span>,</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  xiiUInt32 x <span class="comment">/*= 0*/</span>,</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  xiiUInt32 y <span class="comment">/*= 0*/</span>,</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  xiiUInt32 z <span class="comment">/*= 0*/</span>,</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  xiiUInt32 uiPlaneIndex <span class="comment">/*= 0*/</span>)</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;{</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  <span class="keywordflow">return</span> <span class="keyword">const_cast&lt;</span>T*<span class="keyword">&gt;</span>(xiiImageView::GetPixelPointer&lt;T&gt;(uiMipLevel, uiFace, uiArrayIndex, x, y, z, uiPlaneIndex));</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;}</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="keywordtype">void</span> xiiImageView::ValidateDataTypeAccessor(xiiUInt32 uiPlaneIndex)<span class="keyword"> const</span></div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="keyword"></span>{</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  xiiUInt32 bytesPerBlock = <a class="code" href="../../d5/dd3/structxii_image_format.htm#af2097b10e42837bce466f17e0ae6478d">xiiImageFormat::GetBitsPerBlock</a>(<a class="code" href="../../d0/d25/classxii_image_header.htm#abdc2a4fe62136495e4c6c84af1057a22">GetImageFormat</a>(), uiPlaneIndex) / 8;</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  XII_ASSERT_DEV(bytesPerBlock % <a class="code" href="../../d1/dcf/structxii_image_sizeof_helper.htm">xiiImageSizeofHelper&lt;T&gt;::Size</a> == 0, <span class="stringliteral">&quot;Accessor type is not suitable for interpreting contained data&quot;</span>);</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;}</div>
+<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="../../d4/d6a/classxii_image.htm#a94b84acf6fd50e2122c369763c3ff143">   71</a></span>&#160;T* <a class="code" href="../../d4/d6a/classxii_image.htm#a94b84acf6fd50e2122c369763c3ff143">xiiImage::GetPixelPointer</a>(xiiUInt32 uiMipLevel <span class="comment">/*= 0*/</span>, xiiUInt32 uiFace <span class="comment">/*= 0*/</span>, xiiUInt32 uiArrayIndex <span class="comment">/*= 0*/</span>, xiiUInt32 x <span class="comment">/*= 0*/</span>, xiiUInt32 y <span class="comment">/*= 0*/</span>, xiiUInt32 z <span class="comment">/*= 0*/</span>, xiiUInt32 uiPlaneIndex <span class="comment">/*= 0*/</span>)</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;{</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  <span class="keywordflow">return</span> <span class="keyword">const_cast&lt;</span>T*<span class="keyword">&gt;</span>(xiiImageView::GetPixelPointer&lt;T&gt;(uiMipLevel, uiFace, uiArrayIndex, x, y, z, uiPlaneIndex));</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;}</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="keywordtype">void</span> xiiImageView::ValidateDataTypeAccessor(xiiUInt32 uiPlaneIndex)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  xiiUInt32 bytesPerBlock = <a class="code" href="../../d5/dd3/structxii_image_format.htm#af2097b10e42837bce466f17e0ae6478d">xiiImageFormat::GetBitsPerBlock</a>(<a class="code" href="../../d0/d25/classxii_image_header.htm#abdc2a4fe62136495e4c6c84af1057a22">GetImageFormat</a>(), uiPlaneIndex) / 8;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  XII_ASSERT_DEV(bytesPerBlock % <a class="code" href="../../d1/dcf/structxii_image_sizeof_helper.htm">xiiImageSizeofHelper&lt;T&gt;::Size</a> == 0, <span class="stringliteral">&quot;Accessor type is not suitable for interpreting contained data&quot;</span>);</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclassxii_image_header_htm_a3e29a1f5b2f10b6545b6bd183360b378"><div class="ttname"><a href="../../d0/d25/classxii_image_header.htm#a3e29a1f5b2f10b6545b6bd183360b378">xiiImageHeader::GetNumBlocksX</a></div><div class="ttdeci">xiiUInt32 GetNumBlocksX(xiiUInt32 uiMipLevel=0, xiiUInt32 uiPlaneIndex=0) const</div><div class="ttdoc">Returns the number of blocks contained in a given mip level in the horizontal direction.</div><div class="ttdef"><b>Definition:</b> ImageHeader.h:99</div></div>
@@ -198,7 +191,7 @@ $(document).ready(function(){initNavTree('d9/db9/_image__inl_8h_source.htm','../
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.htm">home</a></li><li class="navelem"><a class="el" href="../../dir_1036706e55c22cab35bc1c58ee689f1d.htm">runner</a></li><li class="navelem"><a class="el" href="../../dir_629f8151d55d307162ff2d619fb1783d.htm">work</a></li><li class="navelem"><a class="el" href="../../dir_1ddc44fe1263a8c7935fa6130b7d9499.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_2c1b6808f12952f4c36e05ba7068379a.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_b5a1c4ecfca018ad24b729e213296d41.htm">Source</a></li><li class="navelem"><a class="el" href="../../dir_e321052006a51284e67389ab20037e7c.htm">Engine</a></li><li class="navelem"><a class="el" href="../../dir_cc89b32cff39e90d2b3f43ce6ea486e9.htm">Texture</a></li><li class="navelem"><a class="el" href="../../dir_c18578164f9a366b0291b2b41d67ae87.htm">Image</a></li><li class="navelem"><a class="el" href="../../dir_e3939fdf9a25c7c32bab608d5409818e.htm">Implementation</a></li><li class="navelem"><b>Image_inl.h</b></li>
-    <li class="footer">Generated on Mon Jun 3 2024 16:28:47 for XIIEngine by
+    <li class="footer">Generated on Wed Jun 12 2024 18:05:53 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

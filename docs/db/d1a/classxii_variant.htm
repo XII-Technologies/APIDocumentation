@@ -353,7 +353,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../.
 <tr class="separator:ae0d4056dfae5dd904f41a75cc688e914"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a93c093ba139081519439d50fecb42be2"><td class="memItemLeft" align="right" valign="top"><a id="a93c093ba139081519439d50fecb42be2"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d1a/classxii_variant.htm#a93c093ba139081519439d50fecb42be2">IsHashedString</a> () const</td></tr>
-<tr class="memdesc:a93c093ba139081519439d50fecb42be2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether the stored type is a string (<a class="el" href="../../d6/d0c/classxii_hashed_string.htm" title="This class is optimized to take nearly no memory (sizeof(void*)) and to allow very fast checks whethe...">xiiHashedString</a> or <a class="el" href="../../d5/dd2/classxii_temp_hashed_string.htm" title="A class to use together with xiiHashedString for quick comparisons with temporary strings that need n...">xiiTempHashedString</a>). <br /></td></tr>
+<tr class="memdesc:a93c093ba139081519439d50fecb42be2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether the stored type is a hashed string (<a class="el" href="../../d6/d0c/classxii_hashed_string.htm" title="This class is optimized to take nearly no memory (sizeof(void*)) and to allow very fast checks whethe...">xiiHashedString</a> or <a class="el" href="../../d5/dd2/classxii_temp_hashed_string.htm" title="A class to use together with xiiHashedString for quick comparisons with temporary strings that need n...">xiiTempHashedString</a>). <br /></td></tr>
 <tr class="separator:a93c093ba139081519439d50fecb42be2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa28a169f3d484e9d656060b372ce2563"><td class="memTemplParams" colspan="2">template&lt;typename T , typename std::enable_if_t&lt; xiiVariantTypeDeduction&lt; T &gt;::classification==xiiVariantClass::DirectCast, xiiInt32 &gt;  = 0&gt; </td></tr>
 <tr class="memitem:aa28a169f3d484e9d656060b372ce2563"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../db/d1a/classxii_variant.htm#aa28a169f3d484e9d656060b372ce2563">IsA</a> () const</td></tr>
@@ -566,7 +566,7 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 
 <p>Returns whether the stored type can generally be converted to the desired type. </p>
-<p>This function will return true for all number conversions, as float / double / xiiInt32 / etc. can generally be converted into each other. It will also return true for all conversion from string to number types, and from all 'simple' types (not array or dictionary) to string.</p>
+<p>This function will return true for all number conversions, as float / double / int / etc. can generally be converted into each other. It will also return true for all conversion from string to number types, and from all 'simple' types (not array or dictionary) to string.</p>
 <dl class="section note"><dt>Note</dt><dd>This function only returns whether a conversion between the stored TYPE and the desired TYPE is generally possible. It does NOT return whether the stored VALUE is indeed convertible to the desired type. For example, a string is generally convertible to float, if it stores a string representation of a float value. If, however, it stores anything else, the conversion can still fail.</dd></dl>
 <p>The only way to figure out whether the stored data can be converted to some type, is to actually convert it, using <a class="el" href="../../db/d1a/classxii_variant.htm#a4c268849ce0029fde4962331c726e904" title="Tries to convert the stored value to the given type. The optional status parameter can be used to che...">ConvertTo()</a>, and then to check the conversion status. </p>
 
@@ -808,7 +808,7 @@ template&lt;typename T &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../db/d1a/classxii_variant.htm">xiiVariant</a></li>
-    <li class="footer">Generated on Mon Jun 3 2024 16:28:54 for XIIEngine by
+    <li class="footer">Generated on Wed Jun 12 2024 18:06:00 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

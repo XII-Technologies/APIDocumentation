@@ -104,10 +104,15 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a1543a8b5d2fb57308ecfb6d5f85d3bde"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/db8/structxii_c_var_flags.htm#a1543a8b5d2fb57308ecfb6d5f85d3bde">Enum</a> { <b>None</b> = 0, 
+<tr class="memitem:a1543a8b5d2fb57308ecfb6d5f85d3bde"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/db8/structxii_c_var_flags.htm#a1543a8b5d2fb57308ecfb6d5f85d3bde">Enum</a> { <br />
+&#160;&#160;<b>None</b> = 0, 
 <a class="el" href="../../dc/db8/structxii_c_var_flags.htm#a1543a8b5d2fb57308ecfb6d5f85d3bdea6799f9c1a08ea2c86d67aa2c50f53d6b">Save</a> = XII_BIT(0), 
-<a class="el" href="../../dc/db8/structxii_c_var_flags.htm#a1543a8b5d2fb57308ecfb6d5f85d3bdea2d06273a37f3b4955000552e58091edf">RequiresRestart</a> = XII_BIT(1), 
+<a class="el" href="../../dc/db8/structxii_c_var_flags.htm#a1543a8b5d2fb57308ecfb6d5f85d3bdeaac04a71877ce7d699de3e421f13a9d76">RequiresDelayedSync</a> = XII_BIT(1), 
+<b>ShowRequiresRestartMsg</b> = XII_BIT(2), 
+<br />
+&#160;&#160;<a class="el" href="../../dc/db8/structxii_c_var_flags.htm#a1543a8b5d2fb57308ecfb6d5f85d3bdea2d06273a37f3b4955000552e58091edf">RequiresRestart</a> = Save | RequiresDelayedSync | ShowRequiresRestartMsg, 
 <a class="el" href="../../dc/db8/structxii_c_var_flags.htm#a1543a8b5d2fb57308ecfb6d5f85d3bdeae9035a3db4e11479b7241d4ae31c36d0">Default</a> = None
+<br />
  }</td></tr>
 <tr class="separator:a1543a8b5d2fb57308ecfb6d5f85d3bde"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5acd7c15546834926cbd96996f4072e0"><td class="memItemLeft" align="right" valign="top"><a id="a5acd7c15546834926cbd96996f4072e0"></a>
@@ -131,7 +136,9 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>StorageType</b> = xi
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a1543a8b5d2fb57308ecfb6d5f85d3bdea6799f9c1a08ea2c86d67aa2c50f53d6b"></a>Save&#160;</td><td class="fielddoc"><p>If this flag is set, the CVar will be stored on disk and loaded again. Otherwise all changes to it will be lost on shutdown. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a1543a8b5d2fb57308ecfb6d5f85d3bdea2d06273a37f3b4955000552e58091edf"></a>RequiresRestart&#160;</td><td class="fielddoc"><p>Indicates that changing this cvar will only take effect after the proper subsystem has been reinitialized. This will always enforce the 'Save' flag as well. With this flag set, the 'Current' value never changes, unless 'SetToRestartValue' is called. </p>
+<tr><td class="fieldname"><a id="a1543a8b5d2fb57308ecfb6d5f85d3bdeaac04a71877ce7d699de3e421f13a9d76"></a>RequiresDelayedSync&#160;</td><td class="fielddoc"><p>If the CVar value is changed, the new value will not be visible by default, until SetToDelayedSyncValue() is called on it. This allows to finalize the value change at a specific sync point in code. When this flag is set the <a class="el" href="../../d0/df0/structxii_c_var_event.htm#a223c8e7d335ad67fc5e52818726d6bc0a2433b8fee9b381b8f805e633b198748d" title="Sent whenever the &#39;DelayedSync&#39; value of the CVar changes. It might actually change back to the &#39;Curr...">xiiCVarEvent::DelayedSyncValueChanged</a> will be broadcast. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a1543a8b5d2fb57308ecfb6d5f85d3bdea2d06273a37f3b4955000552e58091edf"></a>RequiresRestart&#160;</td><td class="fielddoc"><p>Indicates that changing this CVar will only take effect after the proper subsystem has been reinitialized. This will always enforce the 'Save' flag as well. With this flag set, the 'Current' value never changes, unless 'SetToDelayedSyncValue' is called. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a1543a8b5d2fb57308ecfb6d5f85d3bdeae9035a3db4e11479b7241d4ae31c36d0"></a>Default&#160;</td><td class="fielddoc"><p>By default CVars are not saved. </p>
 </td></tr>
@@ -148,7 +155,7 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>StorageType</b> = xi
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dc/db8/structxii_c_var_flags.htm">xiiCVarFlags</a></li>
-    <li class="footer">Generated on Mon Jun 3 2024 16:28:49 for XIIEngine by
+    <li class="footer">Generated on Wed Jun 12 2024 18:05:55 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

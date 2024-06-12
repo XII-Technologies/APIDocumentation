@@ -33,7 +33,7 @@ var classxii_component =
     [ "OnSimulationStarted", "db/d60/classxii_component.htm#a2b0e0564cb2cdf071357136c990a7b37", null ],
     [ "OnUnhandledMessage", "db/d60/classxii_component.htm#afb3f2116efcbbbd7667c15694509ace0", null ],
     [ "OnUnhandledMessage", "db/d60/classxii_component.htm#a20bdc689c389acbeb23574a77b9528bf", null ],
-    [ "PostMessage", "db/d60/classxii_component.htm#ae6c6e95e1ffc0f204a8ee1c321052e5f", null ],
+    [ "PostMessage", "db/d60/classxii_component.htm#ab0320bd65a29475bd975cd710b4a7a7c", null ],
     [ "SendMessage", "db/d60/classxii_component.htm#aea04f38daccdc6df45d4db6a47829d39", null ],
     [ "SendMessage", "db/d60/classxii_component.htm#a27563c08e9865bdb0e544f6535e437e9", null ],
     [ "SerializeComponent", "db/d60/classxii_component.htm#ad1b0e95e5c5c2c9ee784f54ce60b665d", null ],

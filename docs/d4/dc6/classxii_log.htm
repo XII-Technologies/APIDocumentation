@@ -223,9 +223,9 @@ template&lt;typename... ARGS&gt; </td></tr>
 <tr class="memitem:abb829ff8e95037f5df195c771cc8ec74"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d4/dc6/classxii_log.htm#abb829ff8e95037f5df195c771cc8ec74">Debug</a> (<a class="el" href="../../d6/d6b/classxii_log_interface.htm">xiiLogInterface</a> *pInterface, <a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sFormat, ARGS &amp;&amp;... args)</td></tr>
 <tr class="memdesc:abb829ff8e95037f5df195c771cc8ec74"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overload of <a class="el" href="../../d4/dc6/classxii_log.htm#a92bf78e6fbcbb8cddb2813dd63aab9c0" title="Status information during debugging. Very verbose. Usually only temporarily added to the code.">Debug()</a> to output messages to a specific log. <br /></td></tr>
 <tr class="separator:abb829ff8e95037f5df195c771cc8ec74"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a103f4c0d35523281f0d49ebdb66b4abe"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dc6/classxii_log.htm#a103f4c0d35523281f0d49ebdb66b4abe">Flush</a> (xiiUInt32 uiNumNewMsgThreshold=0, <a class="el" href="../../d7/dc1/structxii_time.htm">xiiTime</a> timeIntervalThreshold=<a class="el" href="../../d7/dc1/structxii_time.htm#a0d30e51875577941d5f0e312d7041c76">xiiTime::Seconds</a>(10), <a class="el" href="../../d6/d6b/classxii_log_interface.htm">xiiLogInterface</a> *pInterface=<a class="el" href="../../d4/dc6/classxii_log.htm#a5ddae12a2a4c3a6446f9754e90cee4f9">GetThreadLocalLogSystem</a>())</td></tr>
-<tr class="memdesc:a103f4c0d35523281f0d49ebdb66b4abe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Instructs log writers to flush their caches, to ensure all log output (even non-critical information) is written.  <a href="../../d4/dc6/classxii_log.htm#a103f4c0d35523281f0d49ebdb66b4abe">More...</a><br /></td></tr>
-<tr class="separator:a103f4c0d35523281f0d49ebdb66b4abe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afaa8b57e3c5f483c458d45f911382076"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dc6/classxii_log.htm#afaa8b57e3c5f483c458d45f911382076">Flush</a> (xiiUInt32 uiNumNewMsgThreshold=0, <a class="el" href="../../d7/dc1/structxii_time.htm">xiiTime</a> timeIntervalThreshold=<a class="el" href="../../d7/dc1/structxii_time.htm#a85435aaf454cc68b0fe850e4d617ccd9">xiiTime::MakeFromSeconds</a>(10), <a class="el" href="../../d6/d6b/classxii_log_interface.htm">xiiLogInterface</a> *pInterface=<a class="el" href="../../d4/dc6/classxii_log.htm#a5ddae12a2a4c3a6446f9754e90cee4f9">GetThreadLocalLogSystem</a>())</td></tr>
+<tr class="memdesc:afaa8b57e3c5f483c458d45f911382076"><td class="mdescLeft">&#160;</td><td class="mdescRight">Instructs log writers to flush their caches, to ensure all log output (even non-critical information) is written.  <a href="../../d4/dc6/classxii_log.htm#afaa8b57e3c5f483c458d45f911382076">More...</a><br /></td></tr>
+<tr class="separator:afaa8b57e3c5f483c458d45f911382076"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a889b4a9ee828f56e72b774e0d5bb5e81"><td class="memItemLeft" align="right" valign="top"><a id="a889b4a9ee828f56e72b774e0d5bb5e81"></a>
 static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dc6/classxii_log.htm#a889b4a9ee828f56e72b774e0d5bb5e81">BroadcastLoggingEvent</a> (<a class="el" href="../../d6/d6b/classxii_log_interface.htm">xiiLogInterface</a> *pInterface, <a class="el" href="../../d4/de6/structxii_log_msg_type.htm#a7b991cbae5d585576d8269d959abbc49">xiiLogMsgType::Enum</a> type, <a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sString)</td></tr>
 <tr class="memdesc:a889b4a9ee828f56e72b774e0d5bb5e81"><td class="mdescLeft">&#160;</td><td class="mdescRight">Usually called internally by the other log functions, but can be called directly, if the message type is already known. pInterface must be != nullptr. <br /></td></tr>
@@ -452,8 +452,8 @@ template&lt;typename... ARGS&gt; </div>
 
 </div>
 </div>
-<a id="a103f4c0d35523281f0d49ebdb66b4abe"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a103f4c0d35523281f0d49ebdb66b4abe">&#9670;&nbsp;</a></span>Flush()</h2>
+<a id="afaa8b57e3c5f483c458d45f911382076"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afaa8b57e3c5f483c458d45f911382076">&#9670;&nbsp;</a></span>Flush()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -471,7 +471,7 @@ template&lt;typename... ARGS&gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="../../d7/dc1/structxii_time.htm">xiiTime</a>&#160;</td>
-          <td class="paramname"><em>timeIntervalThreshold</em> = <code><a class="el" href="../../d7/dc1/structxii_time.htm#a0d30e51875577941d5f0e312d7041c76">xiiTime::Seconds</a>(10)</code>, </td>
+          <td class="paramname"><em>timeIntervalThreshold</em> = <code><a class="el" href="../../d7/dc1/structxii_time.htm#a85435aaf454cc68b0fe850e4d617ccd9">xiiTime::MakeFromSeconds</a>(10)</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -643,7 +643,7 @@ template&lt;typename... ARGS&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d4/dc6/classxii_log.htm">xiiLog</a></li>
-    <li class="footer">Generated on Mon Jun 3 2024 16:28:51 for XIIEngine by
+    <li class="footer">Generated on Wed Jun 12 2024 18:05:57 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

@@ -13,10 +13,6 @@ var classxii_simd_quatd =
     [ "operator*", "d4/d20/classxii_simd_quatd.htm#abf0c635e5120c86504b4e2af9e5749e0", null ],
     [ "operator-", "d4/d20/classxii_simd_quatd.htm#a72c192a05f51ac03f21587d353d0cd7e", null ],
     [ "operator==", "d4/d20/classxii_simd_quatd.htm#a70933d57499b32decd0e4086b06ede1e", null ],
-    [ "SetFromAxisAndAngle", "d4/d20/classxii_simd_quatd.htm#a6739f8a386a824f78f9fdaefe02f487c", null ],
-    [ "SetIdentity", "d4/d20/classxii_simd_quatd.htm#ae2d1d3bd4128c19da2f1087d7e4372e7", null ],
-    [ "SetShortestRotation", "d4/d20/classxii_simd_quatd.htm#aaecfcd22bdb0d4a74c2d151aed29ca1a", null ],
-    [ "SetSlerp", "d4/d20/classxii_simd_quatd.htm#a2428d017b9606fcafdd6934182dde4ae", null ],
     [ "XII_DECLARE_POD_TYPE", "d4/d20/classxii_simd_quatd.htm#af0981a90457d4b597ea3f0a4f16c747d", null ],
     [ "m_v", "d4/d20/classxii_simd_quatd.htm#aeb28a481aecb7f979411e68ac17f5c25", null ]
 ];

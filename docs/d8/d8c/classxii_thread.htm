@@ -86,6 +86,7 @@ $(document).ready(function(){initNavTree('d8/d8c/classxii_thread.htm','../../');
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#friends">Friends</a> &#124;
@@ -165,6 +166,18 @@ const xiiThreadID &amp;&#160;</td><td class="memItemRight" valign="bottom"><a cl
 <tr class="memdesc:a548685b4d52874a16140b5fcc75c50a4 inherit pub_methods_classxii_o_s_thread"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the thread ID of the thread object, may be used in comparison operations with <a class="el" href="../../d4/d5c/classxii_thread_utils.htm#a6c89bbd858287614a82c17251d87eb5f" title="Returns an identifier for the currently running thread.">xiiThreadUtils::GetCurrentThreadID()</a> for example. <br /></td></tr>
 <tr class="separator:a548685b4d52874a16140b5fcc75c50a4 inherit pub_methods_classxii_o_s_thread"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a8cccc7ea3cdfc940d56b9cd88c3de0e1"><td class="memItemLeft" align="right" valign="top"><a id="a8cccc7ea3cdfc940d56b9cd88c3de0e1"></a>
+static const <a class="el" href="../../d8/d8c/classxii_thread.htm">xiiThread</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d8c/classxii_thread.htm#a8cccc7ea3cdfc940d56b9cd88c3de0e1">GetCurrentThread</a> ()</td></tr>
+<tr class="memdesc:a8cccc7ea3cdfc940d56b9cd88c3de0e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current <a class="el" href="../../d8/d8c/classxii_thread.htm" title="This class is the base class for platform independent long running threads.">xiiThread</a> if the current platform thread is a <a class="el" href="../../d8/d8c/classxii_thread.htm" title="This class is the base class for platform independent long running threads.">xiiThread</a>. Returns nullptr otherwise. <br /></td></tr>
+<tr class="separator:a8cccc7ea3cdfc940d56b9cd88c3de0e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_static_methods_classxii_o_s_thread"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_classxii_o_s_thread')"><img src="../../closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="../../d6/db1/classxii_o_s_thread.htm">xiiOSThread</a></td></tr>
+<tr class="memitem:acf2d36851a859635ea2bf7ddfd953487 inherit pub_static_methods_classxii_o_s_thread"><td class="memItemLeft" align="right" valign="top"><a id="acf2d36851a859635ea2bf7ddfd953487"></a>
+static xiiInt32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/db1/classxii_o_s_thread.htm#acf2d36851a859635ea2bf7ddfd953487">GetThreadCount</a> ()</td></tr>
+<tr class="memdesc:acf2d36851a859635ea2bf7ddfd953487 inherit pub_static_methods_classxii_o_s_thread"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns how many xiiOSThreads are currently active. <br /></td></tr>
+<tr class="separator:acf2d36851a859635ea2bf7ddfd953487 inherit pub_static_methods_classxii_o_s_thread"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
 <tr class="memitem:ad6a5d6bb81f5955399468fabec01f77c"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../dc/d22/classxii_event.htm">xiiEvent</a>&lt; const <a class="el" href="../../d7/df1/structxii_thread_event.htm">xiiThreadEvent</a> &amp;, <a class="el" href="../../dd/d52/classxii_mutex.htm">xiiMutex</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d8c/classxii_thread.htm#ad6a5d6bb81f5955399468fabec01f77c">s_ThreadEvents</a></td></tr>
@@ -186,11 +199,6 @@ xiiUInt32&#160;</td><td class="memItemRight" valign="bottom"><b>RunThread</b> (<
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
-<tr class="inherit_header pub_static_methods_classxii_o_s_thread"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_classxii_o_s_thread')"><img src="../../closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="../../d6/db1/classxii_o_s_thread.htm">xiiOSThread</a></td></tr>
-<tr class="memitem:acf2d36851a859635ea2bf7ddfd953487 inherit pub_static_methods_classxii_o_s_thread"><td class="memItemLeft" align="right" valign="top"><a id="acf2d36851a859635ea2bf7ddfd953487"></a>
-static xiiInt32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/db1/classxii_o_s_thread.htm#acf2d36851a859635ea2bf7ddfd953487">GetThreadCount</a> ()</td></tr>
-<tr class="memdesc:acf2d36851a859635ea2bf7ddfd953487 inherit pub_static_methods_classxii_o_s_thread"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns how many xiiOSThreads are currently active. <br /></td></tr>
-<tr class="separator:acf2d36851a859635ea2bf7ddfd953487 inherit pub_static_methods_classxii_o_s_thread"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_classxii_o_s_thread"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classxii_o_s_thread')"><img src="../../closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="../../d6/db1/classxii_o_s_thread.htm">xiiOSThread</a></td></tr>
 <tr class="memitem:abc1395b9c38a5ceb51992cd4e40b346a inherit pro_attribs_classxii_o_s_thread"><td class="memItemLeft" align="right" valign="top"><a id="abc1395b9c38a5ceb51992cd4e40b346a"></a>
 xiiThreadHandle&#160;</td><td class="memItemRight" valign="bottom"><b>m_hHandle</b></td></tr>
@@ -204,9 +212,9 @@ xiiOSThreadEntryPoint&#160;</td><td class="memItemRight" valign="bottom"><b>m_En
 <tr class="memitem:a5a640e5e22e42d7e64218564dfe66bba inherit pro_attribs_classxii_o_s_thread"><td class="memItemLeft" align="right" valign="top"><a id="a5a640e5e22e42d7e64218564dfe66bba"></a>
 void *&#160;</td><td class="memItemRight" valign="bottom"><b>m_pUserData</b></td></tr>
 <tr class="separator:a5a640e5e22e42d7e64218564dfe66bba inherit pro_attribs_classxii_o_s_thread"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a291c2677ccb1ae5c7af30cf563bae563 inherit pro_attribs_classxii_o_s_thread"><td class="memItemLeft" align="right" valign="top"><a id="a291c2677ccb1ae5c7af30cf563bae563"></a>
-<a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_sName</b></td></tr>
-<tr class="separator:a291c2677ccb1ae5c7af30cf563bae563 inherit pro_attribs_classxii_o_s_thread"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f986177f23e013d4533011fa9817fdb inherit pro_attribs_classxii_o_s_thread"><td class="memItemLeft" align="right" valign="top"><a id="a5f986177f23e013d4533011fa9817fdb"></a>
+<a class="el" href="../../df/dfb/structxii_hybrid_string.htm">xiiString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_sName</b></td></tr>
+<tr class="separator:a5f986177f23e013d4533011fa9817fdb inherit pro_attribs_classxii_o_s_thread"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a52f203611fdf40bc5df347f68ca58bc2 inherit pro_attribs_classxii_o_s_thread"><td class="memItemLeft" align="right" valign="top"><a id="a52f203611fdf40bc5df347f68ca58bc2"></a>
 xiiUInt32&#160;</td><td class="memItemRight" valign="bottom"><b>m_uiStackSize</b></td></tr>
 <tr class="separator:a52f203611fdf40bc5df347f68ca58bc2 inherit pro_attribs_classxii_o_s_thread"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -250,7 +258,7 @@ xiiUInt32&#160;</td><td class="memItemRight" valign="bottom"><b>m_uiStackSize</b
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d8/d8c/classxii_thread.htm">xiiThread</a></li>
-    <li class="footer">Generated on Mon Jun 3 2024 16:28:54 for XIIEngine by
+    <li class="footer">Generated on Wed Jun 12 2024 18:05:59 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

@@ -2,7 +2,7 @@ var classxii_remote_interface =
 [
     [ "~xiiRemoteInterface", "d4/d68/classxii_remote_interface.htm#abe7dc6606001591d5ab7b5a5c9213eb5", null ],
     [ "ConnectToServer", "d4/d68/classxii_remote_interface.htm#acb9d0b30ff55097679a3303b9d7e3e82", null ],
-    [ "DetermineTargetAddress", "d4/d68/classxii_remote_interface.htm#a1cc1248ac196c400d7ead5b8f847b16e", null ],
+    [ "DetermineTargetAddress", "d4/d68/classxii_remote_interface.htm#a4a880892aec38c83528536b33b5e06c7", null ],
     [ "ExecuteAllMessageHandlers", "d4/d68/classxii_remote_interface.htm#ad88768817bac348d9d1cc4b56e016225", null ],
     [ "ExecuteMessageHandlers", "d4/d68/classxii_remote_interface.htm#a5f2cd4ecff644a4a66f09450d4ed00ec", null ],
     [ "GetApplicationID", "d4/d68/classxii_remote_interface.htm#a90f5e0b469cd466558bbbb8639924313", null ],
@@ -32,11 +32,12 @@ var classxii_remote_interface =
     [ "Send", "d4/d68/classxii_remote_interface.htm#a6953e547be1b17907d09f2b576991f92", null ],
     [ "Send", "d4/d68/classxii_remote_interface.htm#ab2b3353904e422eb93f234ee120a2e43", null ],
     [ "SetMessageHandler", "d4/d68/classxii_remote_interface.htm#a7b7bffe429f197a5e07c8c5084b78461", null ],
+    [ "SetUnhandledMessageHandler", "d4/d68/classxii_remote_interface.htm#aed73a0125f17aa230d9b939e54fe8259", null ],
     [ "ShutdownConnection", "d4/d68/classxii_remote_interface.htm#af820df5a0e4c1b18deb949f6523c59f8", null ],
     [ "StartServer", "d4/d68/classxii_remote_interface.htm#aba38bb5be79084ec66a16d180f6b81af", null ],
     [ "UpdatePingToServer", "d4/d68/classxii_remote_interface.htm#a4b75c746a3cfc958b77997646c1a7d49", null ],
     [ "UpdateRemoteInterface", "d4/d68/classxii_remote_interface.htm#afff14c1a7368f76b1922f51621109c6d", null ],
-    [ "WaitForConnectionToServer", "d4/d68/classxii_remote_interface.htm#a08022869c6c09b7f8034e4f09df1f5d8", null ],
+    [ "WaitForConnectionToServer", "d4/d68/classxii_remote_interface.htm#a26effd14ec98d5e7070cdbfc044e7ad3", null ],
     [ "m_RemoteEvents", "d4/d68/classxii_remote_interface.htm#a7d34b071626c9f1ec5242e23ab2fff0b", null ],
     [ "m_sServerInfoIP", "d4/d68/classxii_remote_interface.htm#af0013bab8eb60bd65734a7092699c598", null ]
 ];

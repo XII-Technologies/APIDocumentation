@@ -110,10 +110,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a0e1c9a591dc3926e8d8ca201ea29d1da"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d62/classxii_semaphore.htm#a0e1c9a591dc3926e8d8ca201ea29d1da">ReturnToken</a> ()</td></tr>
 <tr class="memdesc:a0e1c9a591dc3926e8d8ca201ea29d1da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a single token. If another thread is currently waiting for a token, this will wake it up.  <a href="../../dd/d62/classxii_semaphore.htm#a0e1c9a591dc3926e8d8ca201ea29d1da">More...</a><br /></td></tr>
 <tr class="separator:a0e1c9a591dc3926e8d8ca201ea29d1da"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa592e4fa36247ca4b7682028ac2fe7df"><td class="memItemLeft" align="right" valign="top"><a id="aa592e4fa36247ca4b7682028ac2fe7df"></a>
-<a class="el" href="../../dd/dad/structxii_result.htm">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d62/classxii_semaphore.htm#aa592e4fa36247ca4b7682028ac2fe7df">TryAcquireToken</a> (<a class="el" href="../../d7/dc1/structxii_time.htm">xiiTime</a> timeout=<a class="el" href="../../d7/dc1/structxii_time.htm#a98ce26844e549b2f590dc01bbe6b742d">xiiTime::Zero</a>())</td></tr>
-<tr class="memdesc:aa592e4fa36247ca4b7682028ac2fe7df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Same as <a class="el" href="../../dd/d62/classxii_semaphore.htm#a2c277587405dfedbd735a9a5070b6cc4" title="Waits until a token is available and acquires it.">AcquireToken()</a> but returns immediately with XII_FAILURE, if currently not tokens are available. <br /></td></tr>
-<tr class="separator:aa592e4fa36247ca4b7682028ac2fe7df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac75c6a204534de7199e8ce6d90b36f62"><td class="memItemLeft" align="right" valign="top"><a id="ac75c6a204534de7199e8ce6d90b36f62"></a>
+<a class="el" href="../../dd/dad/structxii_result.htm">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d62/classxii_semaphore.htm#ac75c6a204534de7199e8ce6d90b36f62">TryAcquireToken</a> (<a class="el" href="../../d7/dc1/structxii_time.htm">xiiTime</a> timeout=<a class="el" href="../../d7/dc1/structxii_time.htm#ad12eaeaa6ac396e7d06b32d690a107ad">xiiTime::MakeZero</a>())</td></tr>
+<tr class="memdesc:ac75c6a204534de7199e8ce6d90b36f62"><td class="mdescLeft">&#160;</td><td class="mdescRight">Same as <a class="el" href="../../dd/d62/classxii_semaphore.htm#a2c277587405dfedbd735a9a5070b6cc4" title="Waits until a token is available and acquires it.">AcquireToken()</a> but returns immediately with XII_FAILURE, if currently not tokens are available. <br /></td></tr>
+<tr class="separator:ac75c6a204534de7199e8ce6d90b36f62"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A semaphore is used to synchronize threads, similar to a mutex (see <a class="el" href="../../dd/d52/classxii_mutex.htm" title="Provides a simple mechanism for mutual exclusion to prevent multiple threads from accessing a shared ...">xiiMutex</a>). </p>
@@ -141,7 +141,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Waits until a token is available and acquires it. </p>
-<p>Use <a class="el" href="../../dd/d62/classxii_semaphore.htm#aa592e4fa36247ca4b7682028ac2fe7df" title="Same as AcquireToken() but returns immediately with XII_FAILURE, if currently not tokens are availabl...">TryAcquireToken()</a> to prevent blocking if desired. <a class="el" href="../../dd/d62/classxii_semaphore.htm#a2c277587405dfedbd735a9a5070b6cc4" title="Waits until a token is available and acquires it.">AcquireToken()</a> and <a class="el" href="../../dd/d62/classxii_semaphore.htm#a0e1c9a591dc3926e8d8ca201ea29d1da" title="Returns a single token. If another thread is currently waiting for a token, this will wake it up.">ReturnToken()</a> may be called from different threads. </p>
+<p>Use <a class="el" href="../../dd/d62/classxii_semaphore.htm#ac75c6a204534de7199e8ce6d90b36f62" title="Same as AcquireToken() but returns immediately with XII_FAILURE, if currently not tokens are availabl...">TryAcquireToken()</a> to prevent blocking if desired. <a class="el" href="../../dd/d62/classxii_semaphore.htm#a2c277587405dfedbd735a9a5070b6cc4" title="Waits until a token is available and acquires it.">AcquireToken()</a> and <a class="el" href="../../dd/d62/classxii_semaphore.htm#a0e1c9a591dc3926e8d8ca201ea29d1da" title="Returns a single token. If another thread is currently waiting for a token, this will wake it up.">ReturnToken()</a> may be called from different threads. </p>
 
 </div>
 </div>
@@ -229,7 +229,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dd/d62/classxii_semaphore.htm">xiiSemaphore</a></li>
-    <li class="footer">Generated on Mon Jun 3 2024 16:28:53 for XIIEngine by
+    <li class="footer">Generated on Wed Jun 12 2024 18:05:59 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

@@ -19,5 +19,6 @@ var classxii_command_line_utils =
     [ "HasOption", "d0/d67/classxii_command_line_utils.htm#a408c02c798cb6fffc19c4672936c99b9", null ],
     [ "InjectCustomArgument", "d0/d67/classxii_command_line_utils.htm#a65d539dbd06106a8b556ab1f03de167e", null ],
     [ "SetCommandLine", "d0/d67/classxii_command_line_utils.htm#a8adade3f2e92228abd5764c3e91b18bb", null ],
+    [ "SetCommandLine", "d0/d67/classxii_command_line_utils.htm#a8021ac7a727f825f748633bb17c39256", null ],
     [ "SetCommandLine", "d0/d67/classxii_command_line_utils.htm#a8f5162d214ffc4c25bc2a4e1814616ba", null ]
 ];

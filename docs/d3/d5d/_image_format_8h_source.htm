@@ -355,21 +355,16 @@ $(document).ready(function(){initNavTree('d3/d5d/_image_format_8h_source.htm','.
 <div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160; </div>
 <div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;  <span class="keyword">static</span> <a class="code" href="../../df/df2/structxii_image_format_type.htm#a173196b4cbe84dfac133c6ceeecfcea1">xiiImageFormatType::Enum</a> GetType(Enum format);</div>
 <div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160; </div>
-<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;  <span class="keyword">static</span> <a class="code" href="../../d5/dd3/structxii_image_format.htm#a005ef22274255637febbc13f075b9e38">xiiImageFormat::Enum</a> FromPixelMask(</div>
-<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;    xiiUInt32 uiRedMask,</div>
-<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;    xiiUInt32 uiGreenMask,</div>
-<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;    xiiUInt32 uiBlueMask,</div>
-<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;    xiiUInt32 uiAlphaMask,</div>
-<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;    xiiUInt32 uiBitsPerPixel);</div>
-<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160; </div>
-<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;  <span class="keyword">static</span> <a class="code" href="../../d5/dd3/structxii_image_format.htm#a005ef22274255637febbc13f075b9e38">xiiImageFormat::Enum</a> GetPlaneSubFormat(<a class="code" href="../../d5/dd3/structxii_image_format.htm#a005ef22274255637febbc13f075b9e38">xiiImageFormat::Enum</a> format, xiiUInt32 uiPlaneIndex);</div>
-<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160; </div>
-<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">bool</span> IsCompatible(Enum left, Enum right);</div>
-<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160; </div>
-<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">bool</span> RequiresFirstLevelBlockAlignment(Enum format);</div>
-<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;};</div>
-<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160; </div>
-<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;XII_DEFINE_AS_POD_TYPE(<a class="code" href="../../d5/dd3/structxii_image_format.htm#a005ef22274255637febbc13f075b9e38">xiiImageFormat::Enum</a>);</div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;  <span class="keyword">static</span> <a class="code" href="../../d5/dd3/structxii_image_format.htm#a005ef22274255637febbc13f075b9e38">xiiImageFormat::Enum</a> FromPixelMask(xiiUInt32 uiRedMask, xiiUInt32 uiGreenMask, xiiUInt32 uiBlueMask, xiiUInt32 uiAlphaMask, xiiUInt32 uiBitsPerPixel);</div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160; </div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;  <span class="keyword">static</span> <a class="code" href="../../d5/dd3/structxii_image_format.htm#a005ef22274255637febbc13f075b9e38">xiiImageFormat::Enum</a> GetPlaneSubFormat(<a class="code" href="../../d5/dd3/structxii_image_format.htm#a005ef22274255637febbc13f075b9e38">xiiImageFormat::Enum</a> format, xiiUInt32 uiPlaneIndex);</div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160; </div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">bool</span> IsCompatible(Enum left, Enum right);</div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160; </div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">bool</span> RequiresFirstLevelBlockAlignment(Enum format);</div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;};</div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160; </div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;XII_DEFINE_AS_POD_TYPE(<a class="code" href="../../d5/dd3/structxii_image_format.htm#a005ef22274255637febbc13f075b9e38">xiiImageFormat::Enum</a>);</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="astructxii_image_format_channel_htm_a135e628aac907514ccb490ccf690155a"><div class="ttname"><a href="../../d7/d59/structxii_image_format_channel.htm#a135e628aac907514ccb490ccf690155a">xiiImageFormatChannel::Enum</a></div><div class="ttdeci">Enum</div><div class="ttdoc">Enum describing the channel of an image format.</div><div class="ttdef"><b>Definition:</b> ImageFormat.h:41</div></div>
@@ -384,7 +379,7 @@ $(document).ready(function(){initNavTree('d3/d5d/_image_format_8h_source.htm','.
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.htm">home</a></li><li class="navelem"><a class="el" href="../../dir_1036706e55c22cab35bc1c58ee689f1d.htm">runner</a></li><li class="navelem"><a class="el" href="../../dir_629f8151d55d307162ff2d619fb1783d.htm">work</a></li><li class="navelem"><a class="el" href="../../dir_1ddc44fe1263a8c7935fa6130b7d9499.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_2c1b6808f12952f4c36e05ba7068379a.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_b5a1c4ecfca018ad24b729e213296d41.htm">Source</a></li><li class="navelem"><a class="el" href="../../dir_e321052006a51284e67389ab20037e7c.htm">Engine</a></li><li class="navelem"><a class="el" href="../../dir_cc89b32cff39e90d2b3f43ce6ea486e9.htm">Texture</a></li><li class="navelem"><a class="el" href="../../dir_c18578164f9a366b0291b2b41d67ae87.htm">Image</a></li><li class="navelem"><b>ImageFormat.h</b></li>
-    <li class="footer">Generated on Mon Jun 3 2024 16:28:47 for XIIEngine by
+    <li class="footer">Generated on Wed Jun 12 2024 18:05:53 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

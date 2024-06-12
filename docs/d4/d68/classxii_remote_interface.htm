@@ -104,9 +104,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:acb9d0b30ff55097679a3303b9d7e3e82"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dd/dad/structxii_result.htm">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d68/classxii_remote_interface.htm#acb9d0b30ff55097679a3303b9d7e3e82">ConnectToServer</a> (xiiUInt32 uiConnectionToken, <a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sAddress, bool bStartUpdateThread=true)</td></tr>
 <tr class="memdesc:acb9d0b30ff55097679a3303b9d7e3e82"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts the network interface as a client. Tries to connect to the given address.  <a href="../../d4/d68/classxii_remote_interface.htm#acb9d0b30ff55097679a3303b9d7e3e82">More...</a><br /></td></tr>
 <tr class="separator:acb9d0b30ff55097679a3303b9d7e3e82"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a08022869c6c09b7f8034e4f09df1f5d8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dd/dad/structxii_result.htm">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d68/classxii_remote_interface.htm#a08022869c6c09b7f8034e4f09df1f5d8">WaitForConnectionToServer</a> (<a class="el" href="../../d7/dc1/structxii_time.htm">xiiTime</a> timeout=<a class="el" href="../../d7/dc1/structxii_time.htm#a0d30e51875577941d5f0e312d7041c76">xiiTime::Seconds</a>(10))</td></tr>
-<tr class="memdesc:a08022869c6c09b7f8034e4f09df1f5d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Can only be called after <a class="el" href="../../d4/d68/classxii_remote_interface.htm#acb9d0b30ff55097679a3303b9d7e3e82" title="Starts the network interface as a client. Tries to connect to the given address.">ConnectToServer()</a>. Updates the network in a loop until a connection is established, or the time has run out.  <a href="../../d4/d68/classxii_remote_interface.htm#a08022869c6c09b7f8034e4f09df1f5d8">More...</a><br /></td></tr>
-<tr class="separator:a08022869c6c09b7f8034e4f09df1f5d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26effd14ec98d5e7070cdbfc044e7ad3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dd/dad/structxii_result.htm">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d68/classxii_remote_interface.htm#a26effd14ec98d5e7070cdbfc044e7ad3">WaitForConnectionToServer</a> (<a class="el" href="../../d7/dc1/structxii_time.htm">xiiTime</a> timeout=<a class="el" href="../../d7/dc1/structxii_time.htm#a85435aaf454cc68b0fe850e4d617ccd9">xiiTime::MakeFromSeconds</a>(10))</td></tr>
+<tr class="memdesc:a26effd14ec98d5e7070cdbfc044e7ad3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Can only be called after <a class="el" href="../../d4/d68/classxii_remote_interface.htm#acb9d0b30ff55097679a3303b9d7e3e82" title="Starts the network interface as a client. Tries to connect to the given address.">ConnectToServer()</a>. Updates the network in a loop until a connection is established, or the time has run out.  <a href="../../d4/d68/classxii_remote_interface.htm#a26effd14ec98d5e7070cdbfc044e7ad3">More...</a><br /></td></tr>
+<tr class="separator:a26effd14ec98d5e7070cdbfc044e7ad3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af820df5a0e4c1b18deb949f6523c59f8"><td class="memItemLeft" align="right" valign="top"><a id="af820df5a0e4c1b18deb949f6523c59f8"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d68/classxii_remote_interface.htm#af820df5a0e4c1b18deb949f6523c59f8">ShutdownConnection</a> ()</td></tr>
 <tr class="memdesc:af820df5a0e4c1b18deb949f6523c59f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Closes the connection in an orderly fashion. <br /></td></tr>
@@ -185,6 +185,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../.
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d68/classxii_remote_interface.htm#a7b7bffe429f197a5e07c8c5084b78461">SetMessageHandler</a> (xiiUInt32 uiSystemID, <a class="el" href="../../dc/d84/structxii_delegate.htm">xiiRemoteMessageHandler</a> messageHandler)</td></tr>
 <tr class="memdesc:a7b7bffe429f197a5e07c8c5084b78461"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers a message handler that is executed for all incoming messages for the given system. <br /></td></tr>
 <tr class="separator:a7b7bffe429f197a5e07c8c5084b78461"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed73a0125f17aa230d9b939e54fe8259"><td class="memItemLeft" align="right" valign="top"><a id="aed73a0125f17aa230d9b939e54fe8259"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d68/classxii_remote_interface.htm#aed73a0125f17aa230d9b939e54fe8259">SetUnhandledMessageHandler</a> (<a class="el" href="../../dc/d84/structxii_delegate.htm">xiiRemoteMessageHandler</a> messageHandler)</td></tr>
+<tr class="memdesc:aed73a0125f17aa230d9b939e54fe8259"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers a message handler that is executed for all incoming messages for systems for which there are no dedicated message handlers. <br /></td></tr>
+<tr class="separator:aed73a0125f17aa230d9b939e54fe8259"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5f2cd4ecff644a4a66f09450d4ed00ec"><td class="memItemLeft" align="right" valign="top"><a id="a5f2cd4ecff644a4a66f09450d4ed00ec"></a>
 xiiUInt32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d68/classxii_remote_interface.htm#a5f2cd4ecff644a4a66f09450d4ed00ec">ExecuteMessageHandlers</a> (xiiUInt32 uiSystem)</td></tr>
 <tr class="memdesc:a5f2cd4ecff644a4a66f09450d4ed00ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Executes the message handler for all messages that have arrived for the given system. <br /></td></tr>
@@ -227,10 +231,10 @@ virtual <a class="el" href="../../d7/dc1/structxii_time.htm">xiiTime</a>&#160;</
 virtual <a class="el" href="../../dd/dad/structxii_result.htm">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d68/classxii_remote_interface.htm#ab3f061cc921ecdfae47f195ad2203b84">InternalTransmit</a> (xiiRemoteTransmitMode tm, const <a class="el" href="../../d0/d60/classxii_array_ptr.htm">xiiArrayPtr</a>&lt; const xiiUInt8 &gt; &amp;data)=0</td></tr>
 <tr class="memdesc:ab3f061cc921ecdfae47f195ad2203b84"><td class="mdescLeft">&#160;</td><td class="mdescRight">Derived classes have to implement this to deliver messages to the server or client. <br /></td></tr>
 <tr class="separator:ab3f061cc921ecdfae47f195ad2203b84"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1cc1248ac196c400d7ead5b8f847b16e"><td class="memItemLeft" align="right" valign="top"><a id="a1cc1248ac196c400d7ead5b8f847b16e"></a>
-virtual <a class="el" href="../../dd/dad/structxii_result.htm">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d68/classxii_remote_interface.htm#a1cc1248ac196c400d7ead5b8f847b16e">DetermineTargetAddress</a> (<a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sConnectTo0, xiiUInt32 &amp;out_IP, xiiUInt16 &amp;out_Port)</td></tr>
-<tr class="memdesc:a1cc1248ac196c400d7ead5b8f847b16e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Derived classes can override this to interpret an address differently. <br /></td></tr>
-<tr class="separator:a1cc1248ac196c400d7ead5b8f847b16e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a880892aec38c83528536b33b5e06c7"><td class="memItemLeft" align="right" valign="top"><a id="a4a880892aec38c83528536b33b5e06c7"></a>
+virtual <a class="el" href="../../dd/dad/structxii_result.htm">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d68/classxii_remote_interface.htm#a4a880892aec38c83528536b33b5e06c7">DetermineTargetAddress</a> (<a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sConnectTo, xiiUInt32 &amp;out_IP, xiiUInt16 &amp;out_Port)</td></tr>
+<tr class="memdesc:a4a880892aec38c83528536b33b5e06c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Derived classes can override this to interpret an address differently. <br /></td></tr>
+<tr class="separator:a4a880892aec38c83528536b33b5e06c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0a45e26b79efb6a042f29f50b122ad9e"><td class="memItemLeft" align="right" valign="top"><a id="a0a45e26b79efb6a042f29f50b122ad9e"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d68/classxii_remote_interface.htm#a0a45e26b79efb6a042f29f50b122ad9e">ReportConnectionToServer</a> (xiiUInt32 uiServerID)</td></tr>
 <tr class="memdesc:a0a45e26b79efb6a042f29f50b122ad9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Should be called by the implementation, when a server connection has been established. <br /></td></tr>
@@ -294,7 +298,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../.
   </table>
   </dd>
 </dl>
-<p>If this function succeeds, it still might not be connected to a server. Use <a class="el" href="../../d4/d68/classxii_remote_interface.htm#a08022869c6c09b7f8034e4f09df1f5d8" title="Can only be called after ConnectToServer(). Updates the network in a loop until a connection is estab...">WaitForConnectionToServer()</a> to enforce a connection. </p>
+<p>If this function succeeds, it still might not be connected to a server. Use <a class="el" href="../../d4/d68/classxii_remote_interface.htm#a26effd14ec98d5e7070cdbfc044e7ad3" title="Can only be called after ConnectToServer(). Updates the network in a loop until a connection is estab...">WaitForConnectionToServer()</a> to enforce a connection. </p>
 
 </div>
 </div>
@@ -370,8 +374,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../.
 
 </div>
 </div>
-<a id="a08022869c6c09b7f8034e4f09df1f5d8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a08022869c6c09b7f8034e4f09df1f5d8">&#9670;&nbsp;</a></span>WaitForConnectionToServer()</h2>
+<a id="a26effd14ec98d5e7070cdbfc044e7ad3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a26effd14ec98d5e7070cdbfc044e7ad3">&#9670;&nbsp;</a></span>WaitForConnectionToServer()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -380,7 +384,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../.
           <td class="memname"><a class="el" href="../../dd/dad/structxii_result.htm">xiiResult</a> xiiRemoteInterface::WaitForConnectionToServer </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="../../d7/dc1/structxii_time.htm">xiiTime</a>&#160;</td>
-          <td class="paramname"><em>timeout</em> = <code><a class="el" href="../../d7/dc1/structxii_time.htm#a0d30e51875577941d5f0e312d7041c76">xiiTime::Seconds</a>(10)</code></td><td>)</td>
+          <td class="paramname"><em>timeout</em> = <code><a class="el" href="../../d7/dc1/structxii_time.htm#a85435aaf454cc68b0fe850e4d617ccd9">xiiTime::MakeFromSeconds</a>(10)</code></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -427,7 +431,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../.
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d4/d68/classxii_remote_interface.htm">xiiRemoteInterface</a></li>
-    <li class="footer">Generated on Mon Jun 3 2024 16:28:52 for XIIEngine by
+    <li class="footer">Generated on Wed Jun 12 2024 18:05:58 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

@@ -175,7 +175,7 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 <tr class="separator:a57e1ed06c65f9b02826a1679e38cb410"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a80f928e86d0583927af7d12ffcb01cb8"><td class="memItemLeft" align="right" valign="top"><a id="a80f928e86d0583927af7d12ffcb01cb8"></a>
 static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d95/classxii_o_s_file.htm#a80f928e86d0583927af7d12ffcb01cb8">ExistsDirectory</a> (<a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sDirectory)</td></tr>
-<tr class="memdesc:a80f928e86d0583927af7d12ffcb01cb8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether the given file exists. <br /></td></tr>
+<tr class="memdesc:a80f928e86d0583927af7d12ffcb01cb8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether the given directory exists. <br /></td></tr>
 <tr class="separator:a80f928e86d0583927af7d12ffcb01cb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2ea7f6137265a91dbe23a0cd8e94d59c"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d95/classxii_o_s_file.htm#a2ea7f6137265a91dbe23a0cd8e94d59c">FindFreeFilename</a> (<a class="el" href="../../d4/dbb/classxii_string_builder.htm">xiiStringBuilder</a> &amp;inout_sPath, <a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sSuffix=&quot;-&quot;)</td></tr>
 <tr class="memdesc:a2ea7f6137265a91dbe23a0cd8e94d59c"><td class="mdescLeft">&#160;</td><td class="mdescRight">If the given file already exists, determines a file path that doesn't exist yet.  <a href="../../da/d95/classxii_o_s_file.htm#a2ea7f6137265a91dbe23a0cd8e94d59c">More...</a><br /></td></tr>
@@ -211,12 +211,17 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 <tr class="memitem:a16f6144f152431979aa8a29a41ec3f7a"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../dd/dad/structxii_result.htm">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d95/classxii_o_s_file.htm#a16f6144f152431979aa8a29a41ec3f7a">CopyFolder</a> (<a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sSourceFolder, <a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sDestinationFolder, <a class="el" href="../../dc/da4/classxii_dynamic_array.htm">xiiDynamicArray</a>&lt; <a class="el" href="../../df/dfb/structxii_hybrid_string.htm">xiiString</a> &gt; *out_pFilesCopied=nullptr)</td></tr>
 <tr class="memdesc:a16f6144f152431979aa8a29a41ec3f7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies <em>sSourceFolder</em> to <em>sDestinationFolder</em>. Overwrites existing files.  <a href="../../da/d95/classxii_o_s_file.htm#a16f6144f152431979aa8a29a41ec3f7a">More...</a><br /></td></tr>
 <tr class="separator:a16f6144f152431979aa8a29a41ec3f7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac2bb12fe1e4d9af6b8f3aafba6c97d03"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../dd/dad/structxii_result.htm">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d95/classxii_o_s_file.htm#ac2bb12fe1e4d9af6b8f3aafba6c97d03">DeleteFolder</a> (<a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sFolder)</td></tr>
-<tr class="memdesc:ac2bb12fe1e4d9af6b8f3aafba6c97d03"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deletes all files recursively in <em>sFolder</em>.  <a href="../../da/d95/classxii_o_s_file.htm#ac2bb12fe1e4d9af6b8f3aafba6c97d03">More...</a><br /></td></tr>
+<tr class="memitem:ac2bb12fe1e4d9af6b8f3aafba6c97d03"><td class="memItemLeft" align="right" valign="top"><a id="ac2bb12fe1e4d9af6b8f3aafba6c97d03"></a>
+static <a class="el" href="../../dd/dad/structxii_result.htm">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d95/classxii_o_s_file.htm#ac2bb12fe1e4d9af6b8f3aafba6c97d03">DeleteFolder</a> (<a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sFolder)</td></tr>
+<tr class="memdesc:ac2bb12fe1e4d9af6b8f3aafba6c97d03"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deletes all files recursively in <em>sFolder</em>. <br /></td></tr>
 <tr class="separator:ac2bb12fe1e4d9af6b8f3aafba6c97d03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89208e6c4950710c9713ad9c9913d93a"><td class="memItemLeft" align="right" valign="top"><a id="a89208e6c4950710c9713ad9c9913d93a"></a>
+static <a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d95/classxii_o_s_file.htm#a89208e6c4950710c9713ad9c9913d93a">GetApplicationPath</a> ()</td></tr>
+<tr class="memdesc:a89208e6c4950710c9713ad9c9913d93a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the full path to the application binary. <br /></td></tr>
+<tr class="separator:a89208e6c4950710c9713ad9c9913d93a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a711646d84584fa4275cd01367f928803"><td class="memItemLeft" align="right" valign="top"><a id="a711646d84584fa4275cd01367f928803"></a>
 static <a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d95/classxii_o_s_file.htm#a711646d84584fa4275cd01367f928803">GetApplicationDirectory</a> ()</td></tr>
-<tr class="memdesc:a711646d84584fa4275cd01367f928803"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the path in which the applications binary file is located. <br /></td></tr>
+<tr class="memdesc:a711646d84584fa4275cd01367f928803"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the path to the directory in which the application binary is located. <br /></td></tr>
 <tr class="separator:a711646d84584fa4275cd01367f928803"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adfde473e9550f3e0a4192d1b96d4c42a"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../df/dfb/structxii_hybrid_string.htm">xiiString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d95/classxii_o_s_file.htm#adfde473e9550f3e0a4192d1b96d4c42a">GetUserDataFolder</a> (<a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sSubFolder={})</td></tr>
 <tr class="memdesc:adfde473e9550f3e0a4192d1b96d4c42a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the folder into which user data may be safely written. Append a sub-folder for your application.  <a href="../../da/d95/classxii_o_s_file.htm#adfde473e9550f3e0a4192d1b96d4c42a">More...</a><br /></td></tr>
@@ -282,35 +287,6 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 
 <p>Copies <em>sSourceFolder</em> to <em>sDestinationFolder</em>. Overwrites existing files. </p>
 <p>If <em>out_FilesCopied</em> is provided, the destination path of every successfully copied file is appended to it. </p>
-
-</div>
-</div>
-<a id="ac2bb12fe1e4d9af6b8f3aafba6c97d03"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac2bb12fe1e4d9af6b8f3aafba6c97d03">&#9670;&nbsp;</a></span>DeleteFolder()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static <a class="el" href="../../dd/dad/structxii_result.htm">xiiResult</a> xiiOSFile::DeleteFolder </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a>&#160;</td>
-          <td class="paramname"><em>sFolder</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Deletes all files recursively in <em>sFolder</em>. </p>
-<dl class="section note"><dt>Note</dt><dd>The current implementation does not remove the (empty) folders themselves. </dd></dl>
 
 </div>
 </div>
@@ -513,7 +489,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../da/d95/classxii_o_s_file.htm">xiiOSFile</a></li>
-    <li class="footer">Generated on Mon Jun 3 2024 16:28:52 for XIIEngine by
+    <li class="footer">Generated on Wed Jun 12 2024 18:05:57 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

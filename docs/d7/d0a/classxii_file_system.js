@@ -1,5 +1,6 @@
 var classxii_file_system =
 [
+    [ "DataDirectoryInfo", "d1/dd8/structxii_file_system_1_1_data_directory_info.htm", "d1/dd8/structxii_file_system_1_1_data_directory_info" ],
     [ "FileEvent", "db/da4/structxii_file_system_1_1_file_event.htm", "db/da4/structxii_file_system_1_1_file_event" ],
     [ "FileEventType", "d5/d74/structxii_file_system_1_1_file_event_type.htm", "d5/d74/structxii_file_system_1_1_file_event_type" ],
     [ "xiiDataDirFactory", "d7/d0a/classxii_file_system.htm#aa84886028191f72bfab9522a330776d0", null ],

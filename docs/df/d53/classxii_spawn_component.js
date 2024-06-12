@@ -25,7 +25,7 @@ var classxii_spawn_component =
     [ "SetSpawnAtStart", "df/d53/classxii_spawn_component.htm#a9325b3500f7423ff7d422671bcf65f21", null ],
     [ "SetSpawnContinuously", "df/d53/classxii_spawn_component.htm#a9a2db19bf3e7f39cf6d37fc2f302dbe6", null ],
     [ "SpawnOnce", "df/d53/classxii_spawn_component.htm#a00c3131df0572c5a7118f8a128bda83a", null ],
-    [ "TriggerManualSpawn", "df/d53/classxii_spawn_component.htm#aa5e73e4ffddcf3224fd046197efadfff", null ],
+    [ "TriggerManualSpawn", "df/d53/classxii_spawn_component.htm#a265fcae96010b05ef8f49f2ea7db3b3b", null ],
     [ "m_DelayRange", "df/d53/classxii_spawn_component.htm#a3859d7b87b8da9db4c1dce2263ab16ce", null ],
     [ "m_hPrefab", "df/d53/classxii_spawn_component.htm#a2ba79f9ade97a3e82bc6106dc3ecae49", null ],
     [ "m_LastManualSpawn", "df/d53/classxii_spawn_component.htm#a4844626416da6e6f52310f96a8445d92", null ],

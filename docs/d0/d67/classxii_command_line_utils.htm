@@ -111,6 +111,10 @@ Public Member Functions</h2></td></tr>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d67/classxii_command_line_utils.htm#a8f5162d214ffc4c25bc2a4e1814616ba">SetCommandLine</a> (xiiUInt32 uiArgc, const char **pArgv, <a class="el" href="../../d0/d67/classxii_command_line_utils.htm#a7efa5ae6984ae371a8304e720be0c1ea">ArgMode</a> mode=<a class="el" href="../../d0/d67/classxii_command_line_utils.htm#a7efa5ae6984ae371a8304e720be0c1eaa83e0dbb218813700b9aa2d558304bd17">UseArgcArgv</a>)</td></tr>
 <tr class="memdesc:a8f5162d214ffc4c25bc2a4e1814616ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes <a class="el" href="../../d0/d67/classxii_command_line_utils.htm" title="This is a helper class to parse command lines.">xiiCommandLineUtils</a> from the parameter arguments that were passed to the application. <br /></td></tr>
 <tr class="separator:a8f5162d214ffc4c25bc2a4e1814616ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8021ac7a727f825f748633bb17c39256"><td class="memItemLeft" align="right" valign="top"><a id="a8021ac7a727f825f748633bb17c39256"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d67/classxii_command_line_utils.htm#a8021ac7a727f825f748633bb17c39256">SetCommandLine</a> (xiiUInt32 uiArgc, char **pArgv, <a class="el" href="../../d0/d67/classxii_command_line_utils.htm#a7efa5ae6984ae371a8304e720be0c1ea">ArgMode</a> mode=<a class="el" href="../../d0/d67/classxii_command_line_utils.htm#a7efa5ae6984ae371a8304e720be0c1eaa83e0dbb218813700b9aa2d558304bd17">UseArgcArgv</a>)</td></tr>
+<tr class="memdesc:a8021ac7a727f825f748633bb17c39256"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overload for non-const argv versions. <br /></td></tr>
+<tr class="separator:a8021ac7a727f825f748633bb17c39256"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8adade3f2e92228abd5764c3e91b18bb"><td class="memItemLeft" align="right" valign="top"><a id="a8adade3f2e92228abd5764c3e91b18bb"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d67/classxii_command_line_utils.htm#a8adade3f2e92228abd5764c3e91b18bb">SetCommandLine</a> (<a class="el" href="../../d0/d60/classxii_array_ptr.htm">xiiArrayPtr</a>&lt; <a class="el" href="../../df/dfb/structxii_hybrid_string.htm">xiiString</a> &gt; commands)</td></tr>
 <tr class="memdesc:a8adade3f2e92228abd5764c3e91b18bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes <a class="el" href="../../d0/d67/classxii_command_line_utils.htm" title="This is a helper class to parse command lines.">xiiCommandLineUtils</a> from a list of already split up commands. <br /></td></tr>
@@ -170,9 +174,9 @@ Static Public Member Functions</h2></td></tr>
 static <a class="el" href="../../d0/d67/classxii_command_line_utils.htm">xiiCommandLineUtils</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d67/classxii_command_line_utils.htm#a0719a00a3dd3d43ac5b4c39092fe0dc4">GetGlobalInstance</a> ()</td></tr>
 <tr class="memdesc:a0719a00a3dd3d43ac5b4c39092fe0dc4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns one global instance of <a class="el" href="../../d0/d67/classxii_command_line_utils.htm" title="This is a helper class to parse command lines.">xiiCommandLineUtils</a>. <br /></td></tr>
 <tr class="separator:a0719a00a3dd3d43ac5b4c39092fe0dc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af3f8e8d7380fcdbb336b4c2c6062de98"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d67/classxii_command_line_utils.htm#af3f8e8d7380fcdbb336b4c2c6062de98">SplitCommandLineString</a> (<a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sCommandString, bool bAddExecutableDir, <a class="el" href="../../dc/da4/classxii_dynamic_array.htm">xiiDynamicArray</a>&lt; <a class="el" href="../../df/dfb/structxii_hybrid_string.htm">xiiString</a> &gt; &amp;out_args, <a class="el" href="../../dc/da4/classxii_dynamic_array.htm">xiiDynamicArray</a>&lt; const char * &gt; &amp;out_argsV)</td></tr>
-<tr class="memdesc:af3f8e8d7380fcdbb336b4c2c6062de98"><td class="mdescLeft">&#160;</td><td class="mdescRight">Splits a string into the classic argc/argv string.  <a href="../../d0/d67/classxii_command_line_utils.htm#af3f8e8d7380fcdbb336b4c2c6062de98">More...</a><br /></td></tr>
-<tr class="separator:af3f8e8d7380fcdbb336b4c2c6062de98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1519ba28b4618e821cbba4513658248b"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d67/classxii_command_line_utils.htm#a1519ba28b4618e821cbba4513658248b">SplitCommandLineString</a> (const char *szCommandString, bool bAddExecutableDir, <a class="el" href="../../dc/da4/classxii_dynamic_array.htm">xiiDynamicArray</a>&lt; <a class="el" href="../../df/dfb/structxii_hybrid_string.htm">xiiString</a> &gt; &amp;out_args, <a class="el" href="../../dc/da4/classxii_dynamic_array.htm">xiiDynamicArray</a>&lt; const char * &gt; &amp;out_argsV)</td></tr>
+<tr class="memdesc:a1519ba28b4618e821cbba4513658248b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Splits a string into the classic argc/argv string.  <a href="../../d0/d67/classxii_command_line_utils.htm#a1519ba28b4618e821cbba4513658248b">More...</a><br /></td></tr>
+<tr class="separator:a1519ba28b4618e821cbba4513658248b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This is a helper class to parse command lines. </p>
@@ -512,8 +516,8 @@ static <a class="el" href="../../d0/d67/classxii_command_line_utils.htm">xiiComm
 
 </div>
 </div>
-<a id="af3f8e8d7380fcdbb336b4c2c6062de98"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af3f8e8d7380fcdbb336b4c2c6062de98">&#9670;&nbsp;</a></span>SplitCommandLineString()</h2>
+<a id="a1519ba28b4618e821cbba4513658248b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1519ba28b4618e821cbba4513658248b">&#9670;&nbsp;</a></span>SplitCommandLineString()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -524,8 +528,8 @@ static <a class="el" href="../../d0/d67/classxii_command_line_utils.htm">xiiComm
         <tr>
           <td class="memname">void xiiCommandLineUtils::SplitCommandLineString </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a>&#160;</td>
-          <td class="paramname"><em>sCommandString</em>, </td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>szCommandString</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -578,7 +582,7 @@ static <a class="el" href="../../d0/d67/classxii_command_line_utils.htm">xiiComm
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d0/d67/classxii_command_line_utils.htm">xiiCommandLineUtils</a></li>
-    <li class="footer">Generated on Mon Jun 3 2024 16:28:49 for XIIEngine by
+    <li class="footer">Generated on Wed Jun 12 2024 18:05:55 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

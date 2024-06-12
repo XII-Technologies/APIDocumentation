@@ -8,6 +8,7 @@ var classxii_blob =
     [ "GetBlobPtr", "d0/dec/classxii_blob.htm#ad89fee2e6f1690e0884e97558535e65d", null ],
     [ "GetByteBlobPtr", "d0/dec/classxii_blob.htm#a271b225ec3be12c27704148c85a50688", null ],
     [ "GetByteBlobPtr", "d0/dec/classxii_blob.htm#a4ecaa3be87aeff0bf32a9850d75de79c", null ],
+    [ "IsEmpty", "d0/dec/classxii_blob.htm#a7551bbdfec301ad89339d70f823d38a5", null ],
     [ "operator=", "d0/dec/classxii_blob.htm#a501998e407a43dcd940ee1d3839deffb", null ],
     [ "SetCountUninitialized", "d0/dec/classxii_blob.htm#addea7a1e3206fc2f05897ebc8f60a406", null ],
     [ "SetFrom", "d0/dec/classxii_blob.htm#a5c39ec6462ad58931d31e24d49ecef44", null ],

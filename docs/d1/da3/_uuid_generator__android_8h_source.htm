@@ -94,7 +94,7 @@ $(document).ready(function(){initNavTree('d1/da3/_uuid_generator__android_8h_sou
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;Foundation/Basics/Platform/Android/AndroidUtils.h&gt;</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;android_native_app_glue.h&gt;</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
-<div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="../../dc/d1d/classxii_uuid.htm#abf142a0d03f4693a53975ee353611674">    8</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../dc/d1d/classxii_uuid.htm#abf142a0d03f4693a53975ee353611674">xiiUuid::CreateNewUuid</a>()</div>
+<div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="../../dc/d1d/classxii_uuid.htm#a96bfbfa3b36a0152e13a4cde2280b491">    8</a></span>&#160;<a class="code" href="../../dc/d1d/classxii_uuid.htm">xiiUuid</a> <a class="code" href="../../dc/d1d/classxii_uuid.htm#a96bfbfa3b36a0152e13a4cde2280b491">xiiUuid::MakeUuid</a>()</div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;{</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;  xiiJniAttachment attachment;</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
@@ -104,20 +104,21 @@ $(document).ready(function(){initNavTree('d1/da3/_uuid_generator__android_8h_sou
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;  jlong        mostSignificant  = javaUuid.Call&lt;jlong&gt;(<span class="stringliteral">&quot;getMostSignificantBits&quot;</span>);</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;  jlong        leastSignificant = javaUuid.Call&lt;jlong&gt;(<span class="stringliteral">&quot;getLeastSignificantBits&quot;</span>);</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;  m_uiHigh = mostSignificant;</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;  m_uiLow  = leastSignificant;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  <span class="comment">//#TODO maybe faster to read /proc/sys/kernel/random/uuid, but that can&#39;t be done via xiiOSFile</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  <span class="comment">// see https://stackoverflow.com/questions/11888055/include-uuid-h-into-android-ndk-project</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;}</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="../../dc/d1d/classxii_uuid.htm#a6cf11eb02b668f7661892506768c1845">xiiUuid</a>(leastSignificant, mostSignificant);</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  <span class="comment">// #TODO maybe faster to read /proc/sys/kernel/random/uuid, but that can&#39;t be done via xiiOSFile</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  <span class="comment">// see https://stackoverflow.com/questions/11888055/include-uuid-h-into-android-ndk-project</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclassxii_uuid_htm_abf142a0d03f4693a53975ee353611674"><div class="ttname"><a href="../../dc/d1d/classxii_uuid.htm#abf142a0d03f4693a53975ee353611674">xiiUuid::CreateNewUuid</a></div><div class="ttdeci">void CreateNewUuid()</div><div class="ttdoc">Creates a new Uuid and stores is it in this object.</div><div class="ttdef"><b>Definition:</b> UuidGenerator_android.h:8</div></div>
+<div class="ttc" id="aclassxii_uuid_htm_a6cf11eb02b668f7661892506768c1845"><div class="ttname"><a href="../../dc/d1d/classxii_uuid.htm#a6cf11eb02b668f7661892506768c1845">xiiUuid::xiiUuid</a></div><div class="ttdeci">XII_ALWAYS_INLINE xiiUuid()</div><div class="ttdoc">Default constructor. Constructed Uuid will be invalid.</div><div class="ttdef"><b>Definition:</b> Uuid_inl.h:2</div></div>
+<div class="ttc" id="aclassxii_uuid_htm_a96bfbfa3b36a0152e13a4cde2280b491"><div class="ttname"><a href="../../dc/d1d/classxii_uuid.htm#a96bfbfa3b36a0152e13a4cde2280b491">xiiUuid::MakeUuid</a></div><div class="ttdeci">static xiiUuid MakeUuid()</div><div class="ttdoc">Returns a new Uuid.</div><div class="ttdef"><b>Definition:</b> UuidGenerator_android.h:8</div></div>
+<div class="ttc" id="aclassxii_uuid_htm"><div class="ttname"><a href="../../dc/d1d/classxii_uuid.htm">xiiUuid</a></div><div class="ttdoc">This data type is the abstraction for 128-bit Uuid (also known as GUID) instances.</div><div class="ttdef"><b>Definition:</b> Uuid.h:10</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.htm">home</a></li><li class="navelem"><a class="el" href="../../dir_1036706e55c22cab35bc1c58ee689f1d.htm">runner</a></li><li class="navelem"><a class="el" href="../../dir_629f8151d55d307162ff2d619fb1783d.htm">work</a></li><li class="navelem"><a class="el" href="../../dir_1ddc44fe1263a8c7935fa6130b7d9499.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_2c1b6808f12952f4c36e05ba7068379a.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_b5a1c4ecfca018ad24b729e213296d41.htm">Source</a></li><li class="navelem"><a class="el" href="../../dir_e321052006a51284e67389ab20037e7c.htm">Engine</a></li><li class="navelem"><a class="el" href="../../dir_be0c42c58b36f42c54ec54024ed4f6af.htm">Foundation</a></li><li class="navelem"><a class="el" href="../../dir_93ea1dc105d79df7757252ae41d4400e.htm">System</a></li><li class="navelem"><a class="el" href="../../dir_f794a5464cdd7c796ca802b0cf288ca7.htm">Implementation</a></li><li class="navelem"><a class="el" href="../../dir_aedccbd4ea348e06dae9ad5b9364a13a.htm">Android</a></li><li class="navelem"><b>UuidGenerator_android.h</b></li>
-    <li class="footer">Generated on Mon Jun 3 2024 16:28:45 for XIIEngine by
+    <li class="footer">Generated on Wed Jun 12 2024 18:05:51 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

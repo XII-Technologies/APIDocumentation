@@ -85,6 +85,7 @@ $(document).ready(function(){initNavTree('dd/d35/classxii_simd_b_box.htm','../..
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="../../de/d60/classxii_simd_b_box-members.htm">List of all members</a>  </div>
   <div class="headertitle">
@@ -105,18 +106,6 @@ Public Member Functions</h2></td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d35/classxii_simd_b_box.htm#a61b701c0c2069de82b2f682a1d2290ec">xiiSimdBBox</a> (const <a class="el" href="../../d3/da5/classxii_simd_vec4f.htm">xiiSimdVec4f</a> &amp;vMin, const <a class="el" href="../../d3/da5/classxii_simd_vec4f.htm">xiiSimdVec4f</a> &amp;vMax)</td></tr>
 <tr class="memdesc:a61b701c0c2069de82b2f682a1d2290ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs the box with the given minimum and maximum values. <br /></td></tr>
 <tr class="separator:a61b701c0c2069de82b2f682a1d2290ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8ac7235821e8bdc01d9e54d7caeed053"><td class="memItemLeft" align="right" valign="top"><a id="a8ac7235821e8bdc01d9e54d7caeed053"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d35/classxii_simd_b_box.htm#a8ac7235821e8bdc01d9e54d7caeed053">SetInvalid</a> ()</td></tr>
-<tr class="memdesc:a8ac7235821e8bdc01d9e54d7caeed053"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resets the box to an invalid state. ExpandToInclude can then be used to make it into a bounding box for objects. <br /></td></tr>
-<tr class="separator:a8ac7235821e8bdc01d9e54d7caeed053"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae422c7f3da74a91580636a8b0ea1be6d"><td class="memItemLeft" align="right" valign="top"><a id="ae422c7f3da74a91580636a8b0ea1be6d"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d35/classxii_simd_b_box.htm#ae422c7f3da74a91580636a8b0ea1be6d">SetCenterAndHalfExtents</a> (const <a class="el" href="../../d3/da5/classxii_simd_vec4f.htm">xiiSimdVec4f</a> &amp;vCenter, const <a class="el" href="../../d3/da5/classxii_simd_vec4f.htm">xiiSimdVec4f</a> &amp;vHalfExtents)</td></tr>
-<tr class="memdesc:ae422c7f3da74a91580636a8b0ea1be6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the box from a center point and half-extents for each axis. <br /></td></tr>
-<tr class="separator:ae422c7f3da74a91580636a8b0ea1be6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acd7ab605978edd80523b3b48edc05451"><td class="memItemLeft" align="right" valign="top"><a id="acd7ab605978edd80523b3b48edc05451"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d35/classxii_simd_b_box.htm#acd7ab605978edd80523b3b48edc05451">SetFromPoints</a> (const <a class="el" href="../../d3/da5/classxii_simd_vec4f.htm">xiiSimdVec4f</a> *pPoints, xiiUInt32 uiNumPoints, xiiUInt32 uiStride=sizeof(<a class="el" href="../../d3/da5/classxii_simd_vec4f.htm">xiiSimdVec4f</a>))</td></tr>
-<tr class="memdesc:acd7ab605978edd80523b3b48edc05451"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new bounding-box around the given set of points. <br /></td></tr>
-<tr class="separator:acd7ab605978edd80523b3b48edc05451"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a45dbc7b15d53efa68f1d947ef981bb06"><td class="memItemLeft" align="right" valign="top"><a id="a45dbc7b15d53efa68f1d947ef981bb06"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d35/classxii_simd_b_box.htm#a45dbc7b15d53efa68f1d947ef981bb06">IsValid</a> () const</td></tr>
 <tr class="memdesc:a45dbc7b15d53efa68f1d947ef981bb06"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether the box is in an invalid state. <br /></td></tr>
@@ -208,6 +197,29 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator==</b> (const
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator!=</b> (const <a class="el" href="../../dd/d35/classxii_simd_b_box.htm">xiiSimdBBox</a> &amp;rhs) const</td></tr>
 <tr class="separator:a4c99ab7f8e04a6fa54da4d551fc312bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:af53bcf21ccafdcbd0eeb9a0a7f7055e2"><td class="memItemLeft" align="right" valign="top"><a id="af53bcf21ccafdcbd0eeb9a0a7f7055e2"></a>
+static <a class="el" href="../../dd/d35/classxii_simd_b_box.htm">xiiSimdBBox</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d35/classxii_simd_b_box.htm#af53bcf21ccafdcbd0eeb9a0a7f7055e2">MakeZero</a> ()</td></tr>
+<tr class="memdesc:af53bcf21ccafdcbd0eeb9a0a7f7055e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a box that is located at the origin and has zero size. This is a 'valid' box. <br /></td></tr>
+<tr class="separator:af53bcf21ccafdcbd0eeb9a0a7f7055e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8ef91b2fd07860f76954ccbb10e2db0"><td class="memItemLeft" align="right" valign="top"><a id="ae8ef91b2fd07860f76954ccbb10e2db0"></a>
+static <a class="el" href="../../dd/d35/classxii_simd_b_box.htm">xiiSimdBBox</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d35/classxii_simd_b_box.htm#ae8ef91b2fd07860f76954ccbb10e2db0">MakeInvalid</a> ()</td></tr>
+<tr class="memdesc:ae8ef91b2fd07860f76954ccbb10e2db0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a box that is in an invalid state. ExpandToInclude can then be used to make it into a bounding box for objects. <br /></td></tr>
+<tr class="separator:ae8ef91b2fd07860f76954ccbb10e2db0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82f91ef09e1e75941e39266fb2ec6bea"><td class="memItemLeft" align="right" valign="top"><a id="a82f91ef09e1e75941e39266fb2ec6bea"></a>
+static <a class="el" href="../../dd/d35/classxii_simd_b_box.htm">xiiSimdBBox</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d35/classxii_simd_b_box.htm#a82f91ef09e1e75941e39266fb2ec6bea">MakeFromCenterAndHalfExtents</a> (const <a class="el" href="../../d3/da5/classxii_simd_vec4f.htm">xiiSimdVec4f</a> &amp;vCenter, const <a class="el" href="../../d3/da5/classxii_simd_vec4f.htm">xiiSimdVec4f</a> &amp;vHalfExtents)</td></tr>
+<tr class="memdesc:a82f91ef09e1e75941e39266fb2ec6bea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a box from a center point and half-extents for each axis. <br /></td></tr>
+<tr class="separator:a82f91ef09e1e75941e39266fb2ec6bea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a311d0d41e604cbf49fe71b58caf412e6"><td class="memItemLeft" align="right" valign="top"><a id="a311d0d41e604cbf49fe71b58caf412e6"></a>
+static <a class="el" href="../../dd/d35/classxii_simd_b_box.htm">xiiSimdBBox</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d35/classxii_simd_b_box.htm#a311d0d41e604cbf49fe71b58caf412e6">MakeFromMinMax</a> (const <a class="el" href="../../d3/da5/classxii_simd_vec4f.htm">xiiSimdVec4f</a> &amp;vMin, const <a class="el" href="../../d3/da5/classxii_simd_vec4f.htm">xiiSimdVec4f</a> &amp;vMax)</td></tr>
+<tr class="memdesc:a311d0d41e604cbf49fe71b58caf412e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a box with the given minimum and maximum values. <br /></td></tr>
+<tr class="separator:a311d0d41e604cbf49fe71b58caf412e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa17bf2af5c350cff29d19b80bdae6aae"><td class="memItemLeft" align="right" valign="top"><a id="aa17bf2af5c350cff29d19b80bdae6aae"></a>
+static <a class="el" href="../../dd/d35/classxii_simd_b_box.htm">xiiSimdBBox</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d35/classxii_simd_b_box.htm#aa17bf2af5c350cff29d19b80bdae6aae">MakeFromPoints</a> (const <a class="el" href="../../d3/da5/classxii_simd_vec4f.htm">xiiSimdVec4f</a> *pPoints, xiiUInt32 uiNumPoints, xiiUInt32 uiStride=sizeof(<a class="el" href="../../d3/da5/classxii_simd_vec4f.htm">xiiSimdVec4f</a>))</td></tr>
+<tr class="memdesc:aa17bf2af5c350cff29d19b80bdae6aae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a box around the given set of points. If uiNumPoints is zero, the returned box is invalid (same as <a class="el" href="../../dd/d35/classxii_simd_b_box.htm#ae8ef91b2fd07860f76954ccbb10e2db0" title="Creates a box that is in an invalid state. ExpandToInclude can then be used to make it into a boundin...">MakeInvalid()</a> returns). <br /></td></tr>
+<tr class="separator:aa17bf2af5c350cff29d19b80bdae6aae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:afe7d87bc2419e8e07e5ee0070fe01542"><td class="memItemLeft" align="right" valign="top"><a id="afe7d87bc2419e8e07e5ee0070fe01542"></a>
@@ -227,7 +239,7 @@ Public Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dd/d35/classxii_simd_b_box.htm">xiiSimdBBox</a></li>
-    <li class="footer">Generated on Mon Jun 3 2024 16:28:53 for XIIEngine by
+    <li class="footer">Generated on Wed Jun 12 2024 18:05:59 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

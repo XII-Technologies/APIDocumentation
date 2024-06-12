@@ -106,10 +106,6 @@ Public Member Functions</h2></td></tr>
 constexpr XII_ALWAYS_INLINE&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dc1/structxii_time.htm#ae9b7b5ffd4588e0d482b1b7c4aefaee0">xiiTime</a> ()=default</td></tr>
 <tr class="memdesc:ae9b7b5ffd4588e0d482b1b7c4aefaee0"><td class="mdescLeft">&#160;</td><td class="mdescRight">The default constructor sets the time to zero. <br /></td></tr>
 <tr class="separator:ae9b7b5ffd4588e0d482b1b7c4aefaee0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af95f9a81c00428c6ccf6ed6ae30f8afd"><td class="memItemLeft" align="right" valign="top"><a id="af95f9a81c00428c6ccf6ed6ae30f8afd"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dc1/structxii_time.htm#af95f9a81c00428c6ccf6ed6ae30f8afd">SetZero</a> ()</td></tr>
-<tr class="memdesc:af95f9a81c00428c6ccf6ed6ae30f8afd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the time value to zero. <br /></td></tr>
-<tr class="separator:af95f9a81c00428c6ccf6ed6ae30f8afd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0c6420bf3eee91dbe57bfd09ed62e62e"><td class="memItemLeft" align="right" valign="top"><a id="a0c6420bf3eee91dbe57bfd09ed62e62e"></a>
 constexpr XII_ALWAYS_INLINE bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dc1/structxii_time.htm#a0c6420bf3eee91dbe57bfd09ed62e62e">IsZero</a> () const</td></tr>
 <tr class="memdesc:a0c6420bf3eee91dbe57bfd09ed62e62e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the stored time is exactly zero. That typically means the value was not changed from the default. <br /></td></tr>
@@ -184,21 +180,12 @@ constexpr <a class="el" href="../../d7/dc1/structxii_time.htm">xiiTime</a>&#160;
 <tr class="memitem:acf81281310d7d3c031f573f9945da181"><td class="memItemLeft" align="right" valign="top"><a id="acf81281310d7d3c031f573f9945da181"></a>
 constexpr <a class="el" href="../../d7/dc1/structxii_time.htm">xiiTime</a>&#160;</td><td class="memItemRight" valign="bottom"><b>operator-</b> () const</td></tr>
 <tr class="separator:acf81281310d7d3c031f573f9945da181"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a96a8189188842ea7569db2bbdf246f8a"><td class="memItemLeft" align="right" valign="top"><a id="a96a8189188842ea7569db2bbdf246f8a"></a>
-constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator&lt;</b> (const <a class="el" href="../../d7/dc1/structxii_time.htm">xiiTime</a> &amp;rhs) const</td></tr>
-<tr class="separator:a96a8189188842ea7569db2bbdf246f8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a553a4f0bc0646195bf98ccf6e8108ad0"><td class="memItemLeft" align="right" valign="top"><a id="a553a4f0bc0646195bf98ccf6e8108ad0"></a>
-constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator&lt;=</b> (const <a class="el" href="../../d7/dc1/structxii_time.htm">xiiTime</a> &amp;rhs) const</td></tr>
-<tr class="separator:a553a4f0bc0646195bf98ccf6e8108ad0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af87a7a92e44c76262d93141c897b458f"><td class="memItemLeft" align="right" valign="top"><a id="af87a7a92e44c76262d93141c897b458f"></a>
-constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator&gt;</b> (const <a class="el" href="../../d7/dc1/structxii_time.htm">xiiTime</a> &amp;rhs) const</td></tr>
-<tr class="separator:af87a7a92e44c76262d93141c897b458f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa390d2d6c37f77415f656ad1ed96d74e"><td class="memItemLeft" align="right" valign="top"><a id="aa390d2d6c37f77415f656ad1ed96d74e"></a>
-constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator&gt;=</b> (const <a class="el" href="../../d7/dc1/structxii_time.htm">xiiTime</a> &amp;rhs) const</td></tr>
-<tr class="separator:aa390d2d6c37f77415f656ad1ed96d74e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad31e28467075926f65200c36bc427a5f"><td class="memItemLeft" align="right" valign="top"><a id="ad31e28467075926f65200c36bc427a5f"></a>
 constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator==</b> (const <a class="el" href="../../d7/dc1/structxii_time.htm">xiiTime</a> &amp;rhs) const</td></tr>
 <tr class="separator:ad31e28467075926f65200c36bc427a5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a925bac587c8d481d65d65a48a46a4c7f"><td class="memItemLeft" align="right" valign="top"><a id="a925bac587c8d481d65d65a48a46a4c7f"></a>
+constexpr std::partial_ordering&#160;</td><td class="memItemRight" valign="bottom"><b>operator</b> (const <a class="el" href="../../d7/dc1/structxii_time.htm">xiiTime</a> &amp;rhs) const</td></tr>
+<tr class="separator:a925bac587c8d481d65d65a48a46a4c7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -206,34 +193,34 @@ Static Public Member Functions</h2></td></tr>
 static <a class="el" href="../../d7/dc1/structxii_time.htm">xiiTime</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dc1/structxii_time.htm#a62c41574df46e952d657c3b678f3705b">Now</a> ()</td></tr>
 <tr class="memdesc:a62c41574df46e952d657c3b678f3705b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the current time. <br /></td></tr>
 <tr class="separator:a62c41574df46e952d657c3b678f3705b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5dbbd76286afef283f6d3093a135f4bf"><td class="memItemLeft" align="right" valign="top"><a id="a5dbbd76286afef283f6d3093a135f4bf"></a>
-constexpr static XII_ALWAYS_INLINE <a class="el" href="../../d7/dc1/structxii_time.htm">xiiTime</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dc1/structxii_time.htm#a5dbbd76286afef283f6d3093a135f4bf">Nanoseconds</a> (double fNanoseconds)</td></tr>
-<tr class="memdesc:a5dbbd76286afef283f6d3093a135f4bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an instance of <a class="el" href="../../d7/dc1/structxii_time.htm" title="The time class encapsulates a double value storing the time in seconds.">xiiTime</a> that was initialized from nanoseconds. <br /></td></tr>
-<tr class="separator:a5dbbd76286afef283f6d3093a135f4bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7a7ced674e94db9b2edd150b10715b35"><td class="memItemLeft" align="right" valign="top"><a id="a7a7ced674e94db9b2edd150b10715b35"></a>
-constexpr static XII_ALWAYS_INLINE <a class="el" href="../../d7/dc1/structxii_time.htm">xiiTime</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dc1/structxii_time.htm#a7a7ced674e94db9b2edd150b10715b35">Microseconds</a> (double fMicroseconds)</td></tr>
-<tr class="memdesc:a7a7ced674e94db9b2edd150b10715b35"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an instance of <a class="el" href="../../d7/dc1/structxii_time.htm" title="The time class encapsulates a double value storing the time in seconds.">xiiTime</a> that was initialized from microseconds. <br /></td></tr>
-<tr class="separator:a7a7ced674e94db9b2edd150b10715b35"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a350c072ea062ba8ed19357dac5047955"><td class="memItemLeft" align="right" valign="top"><a id="a350c072ea062ba8ed19357dac5047955"></a>
-constexpr static XII_ALWAYS_INLINE <a class="el" href="../../d7/dc1/structxii_time.htm">xiiTime</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dc1/structxii_time.htm#a350c072ea062ba8ed19357dac5047955">Milliseconds</a> (double fMilliseconds)</td></tr>
-<tr class="memdesc:a350c072ea062ba8ed19357dac5047955"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an instance of <a class="el" href="../../d7/dc1/structxii_time.htm" title="The time class encapsulates a double value storing the time in seconds.">xiiTime</a> that was initialized from milliseconds. <br /></td></tr>
-<tr class="separator:a350c072ea062ba8ed19357dac5047955"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0d30e51875577941d5f0e312d7041c76"><td class="memItemLeft" align="right" valign="top"><a id="a0d30e51875577941d5f0e312d7041c76"></a>
-constexpr static XII_ALWAYS_INLINE <a class="el" href="../../d7/dc1/structxii_time.htm">xiiTime</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dc1/structxii_time.htm#a0d30e51875577941d5f0e312d7041c76">Seconds</a> (double fSeconds)</td></tr>
-<tr class="memdesc:a0d30e51875577941d5f0e312d7041c76"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an instance of <a class="el" href="../../d7/dc1/structxii_time.htm" title="The time class encapsulates a double value storing the time in seconds.">xiiTime</a> that was initialized from seconds. <br /></td></tr>
-<tr class="separator:a0d30e51875577941d5f0e312d7041c76"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaa9f00cdd9bd57990e8aa56ff50f2ee5"><td class="memItemLeft" align="right" valign="top"><a id="aaa9f00cdd9bd57990e8aa56ff50f2ee5"></a>
-constexpr static XII_ALWAYS_INLINE <a class="el" href="../../d7/dc1/structxii_time.htm">xiiTime</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dc1/structxii_time.htm#aaa9f00cdd9bd57990e8aa56ff50f2ee5">Minutes</a> (double fMinutes)</td></tr>
-<tr class="memdesc:aaa9f00cdd9bd57990e8aa56ff50f2ee5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an instance of <a class="el" href="../../d7/dc1/structxii_time.htm" title="The time class encapsulates a double value storing the time in seconds.">xiiTime</a> that was initialized from minutes. <br /></td></tr>
-<tr class="separator:aaa9f00cdd9bd57990e8aa56ff50f2ee5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a72ae48e9b8acf0a79057d0013f2cbd3c"><td class="memItemLeft" align="right" valign="top"><a id="a72ae48e9b8acf0a79057d0013f2cbd3c"></a>
-constexpr static XII_ALWAYS_INLINE <a class="el" href="../../d7/dc1/structxii_time.htm">xiiTime</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dc1/structxii_time.htm#a72ae48e9b8acf0a79057d0013f2cbd3c">Hours</a> (double fHours)</td></tr>
-<tr class="memdesc:a72ae48e9b8acf0a79057d0013f2cbd3c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an instance of <a class="el" href="../../d7/dc1/structxii_time.htm" title="The time class encapsulates a double value storing the time in seconds.">xiiTime</a> that was initialized from hours. <br /></td></tr>
-<tr class="separator:a72ae48e9b8acf0a79057d0013f2cbd3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a98ce26844e549b2f590dc01bbe6b742d"><td class="memItemLeft" align="right" valign="top"><a id="a98ce26844e549b2f590dc01bbe6b742d"></a>
-constexpr static XII_ALWAYS_INLINE <a class="el" href="../../d7/dc1/structxii_time.htm">xiiTime</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dc1/structxii_time.htm#a98ce26844e549b2f590dc01bbe6b742d">Zero</a> ()</td></tr>
-<tr class="memdesc:a98ce26844e549b2f590dc01bbe6b742d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an instance of <a class="el" href="../../d7/dc1/structxii_time.htm" title="The time class encapsulates a double value storing the time in seconds.">xiiTime</a> that was initialized with zero. <br /></td></tr>
-<tr class="separator:a98ce26844e549b2f590dc01bbe6b742d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8fd2df586f7c03c25cb1c155ad5b5cce"><td class="memItemLeft" align="right" valign="top"><a id="a8fd2df586f7c03c25cb1c155ad5b5cce"></a>
+constexpr static XII_ALWAYS_INLINE <a class="el" href="../../d7/dc1/structxii_time.htm">xiiTime</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dc1/structxii_time.htm#a8fd2df586f7c03c25cb1c155ad5b5cce">MakeFromNanoseconds</a> (double fNanoseconds)</td></tr>
+<tr class="memdesc:a8fd2df586f7c03c25cb1c155ad5b5cce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an instance of <a class="el" href="../../d7/dc1/structxii_time.htm" title="The time class encapsulates a double value storing the time in seconds.">xiiTime</a> that was initialized from nanoseconds. <br /></td></tr>
+<tr class="separator:a8fd2df586f7c03c25cb1c155ad5b5cce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29b40189a1b4e818c0fa375ab54666b1"><td class="memItemLeft" align="right" valign="top"><a id="a29b40189a1b4e818c0fa375ab54666b1"></a>
+constexpr static XII_ALWAYS_INLINE <a class="el" href="../../d7/dc1/structxii_time.htm">xiiTime</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dc1/structxii_time.htm#a29b40189a1b4e818c0fa375ab54666b1">MakeFromMicroseconds</a> (double fMicroseconds)</td></tr>
+<tr class="memdesc:a29b40189a1b4e818c0fa375ab54666b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an instance of <a class="el" href="../../d7/dc1/structxii_time.htm" title="The time class encapsulates a double value storing the time in seconds.">xiiTime</a> that was initialized from microseconds. <br /></td></tr>
+<tr class="separator:a29b40189a1b4e818c0fa375ab54666b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb71fcc50d8ca4bfd7f338609183fc37"><td class="memItemLeft" align="right" valign="top"><a id="afb71fcc50d8ca4bfd7f338609183fc37"></a>
+constexpr static XII_ALWAYS_INLINE <a class="el" href="../../d7/dc1/structxii_time.htm">xiiTime</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dc1/structxii_time.htm#afb71fcc50d8ca4bfd7f338609183fc37">MakeFromMilliseconds</a> (double fMilliseconds)</td></tr>
+<tr class="memdesc:afb71fcc50d8ca4bfd7f338609183fc37"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an instance of <a class="el" href="../../d7/dc1/structxii_time.htm" title="The time class encapsulates a double value storing the time in seconds.">xiiTime</a> that was initialized from milliseconds. <br /></td></tr>
+<tr class="separator:afb71fcc50d8ca4bfd7f338609183fc37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85435aaf454cc68b0fe850e4d617ccd9"><td class="memItemLeft" align="right" valign="top"><a id="a85435aaf454cc68b0fe850e4d617ccd9"></a>
+constexpr static XII_ALWAYS_INLINE <a class="el" href="../../d7/dc1/structxii_time.htm">xiiTime</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dc1/structxii_time.htm#a85435aaf454cc68b0fe850e4d617ccd9">MakeFromSeconds</a> (double fSeconds)</td></tr>
+<tr class="memdesc:a85435aaf454cc68b0fe850e4d617ccd9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an instance of <a class="el" href="../../d7/dc1/structxii_time.htm" title="The time class encapsulates a double value storing the time in seconds.">xiiTime</a> that was initialized from seconds. <br /></td></tr>
+<tr class="separator:a85435aaf454cc68b0fe850e4d617ccd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a743154e5f1e7a2a298fe697ea216387c"><td class="memItemLeft" align="right" valign="top"><a id="a743154e5f1e7a2a298fe697ea216387c"></a>
+constexpr static XII_ALWAYS_INLINE <a class="el" href="../../d7/dc1/structxii_time.htm">xiiTime</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dc1/structxii_time.htm#a743154e5f1e7a2a298fe697ea216387c">MakeFromMinutes</a> (double fMinutes)</td></tr>
+<tr class="memdesc:a743154e5f1e7a2a298fe697ea216387c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an instance of <a class="el" href="../../d7/dc1/structxii_time.htm" title="The time class encapsulates a double value storing the time in seconds.">xiiTime</a> that was initialized from minutes. <br /></td></tr>
+<tr class="separator:a743154e5f1e7a2a298fe697ea216387c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1543e7ac6ba7acc06b2eed4de507ddb2"><td class="memItemLeft" align="right" valign="top"><a id="a1543e7ac6ba7acc06b2eed4de507ddb2"></a>
+constexpr static XII_ALWAYS_INLINE <a class="el" href="../../d7/dc1/structxii_time.htm">xiiTime</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dc1/structxii_time.htm#a1543e7ac6ba7acc06b2eed4de507ddb2">MakeFromHours</a> (double fHours)</td></tr>
+<tr class="memdesc:a1543e7ac6ba7acc06b2eed4de507ddb2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an instance of <a class="el" href="../../d7/dc1/structxii_time.htm" title="The time class encapsulates a double value storing the time in seconds.">xiiTime</a> that was initialized from hours. <br /></td></tr>
+<tr class="separator:a1543e7ac6ba7acc06b2eed4de507ddb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad12eaeaa6ac396e7d06b32d690a107ad"><td class="memItemLeft" align="right" valign="top"><a id="ad12eaeaa6ac396e7d06b32d690a107ad"></a>
+constexpr static XII_ALWAYS_INLINE <a class="el" href="../../d7/dc1/structxii_time.htm">xiiTime</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dc1/structxii_time.htm#ad12eaeaa6ac396e7d06b32d690a107ad">MakeZero</a> ()</td></tr>
+<tr class="memdesc:ad12eaeaa6ac396e7d06b32d690a107ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an instance of <a class="el" href="../../d7/dc1/structxii_time.htm" title="The time class encapsulates a double value storing the time in seconds.">xiiTime</a> that was initialized with zero. <br /></td></tr>
+<tr class="separator:ad12eaeaa6ac396e7d06b32d690a107ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The time class encapsulates a double value storing the time in seconds. </p>
@@ -280,7 +267,7 @@ constexpr static XII_ALWAYS_INLINE <a class="el" href="../../d7/dc1/structxii_ti
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d7/dc1/structxii_time.htm">xiiTime</a></li>
-    <li class="footer">Generated on Mon Jun 3 2024 16:28:54 for XIIEngine by
+    <li class="footer">Generated on Wed Jun 12 2024 18:05:59 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

@@ -18,7 +18,7 @@ var classxii_deque_base =
     [ "GetCount", "d1/d7d/classxii_deque_base.htm#a816c70b7c82c13e82a7276d43105a53c", null ],
     [ "GetHeapMemoryUsage", "d1/d7d/classxii_deque_base.htm#abe5332bb093bdfed4202c5fdd3739a12", null ],
     [ "IndexOf", "d1/d7d/classxii_deque_base.htm#a118d956f2118ab6025430d9d6d1299f7", null ],
-    [ "Insert", "d1/d7d/classxii_deque_base.htm#a3ee30db6c34ee13f9a8ff5591fc790b9", null ],
+    [ "InsertAt", "d1/d7d/classxii_deque_base.htm#a5700885bbbba08b8d6bb0b6fc9346a5e", null ],
     [ "IsEmpty", "d1/d7d/classxii_deque_base.htm#abb1a0ff4777547ffb34b0752f32d416d", null ],
     [ "LastIndexOf", "d1/d7d/classxii_deque_base.htm#a2420fecfa1148966e1f68194438a0bdd", null ],
     [ "operator=", "d1/d7d/classxii_deque_base.htm#ade2c9195ef003e1289f9a73883edbc01", null ],

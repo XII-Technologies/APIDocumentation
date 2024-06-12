@@ -101,20 +101,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ac6ae71ec1c176b24314a5337a9d3e8b2"><td class="memItemLeft" align="right" valign="top"><a id="ac6ae71ec1c176b24314a5337a9d3e8b2"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>xiiSimdQuat</b> (const <a class="el" href="../../d3/da5/classxii_simd_vec4f.htm">xiiSimdVec4f</a> &amp;v)</td></tr>
 <tr class="separator:ac6ae71ec1c176b24314a5337a9d3e8b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7d404f2facdc453321c87e2efba10869"><td class="memItemLeft" align="right" valign="top"><a id="a7d404f2facdc453321c87e2efba10869"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dda/classxii_simd_quat.htm#a7d404f2facdc453321c87e2efba10869">SetIdentity</a> ()</td></tr>
-<tr class="memdesc:a7d404f2facdc453321c87e2efba10869"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the Quaternion to the identity. <br /></td></tr>
-<tr class="separator:a7d404f2facdc453321c87e2efba10869"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa5964ce54b8060c47ad59811bafa460b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dda/classxii_simd_quat.htm#aa5964ce54b8060c47ad59811bafa460b">SetFromAxisAndAngle</a> (const <a class="el" href="../../d3/da5/classxii_simd_vec4f.htm">xiiSimdVec4f</a> &amp;vRotationAxis, const <a class="el" href="../../d2/d73/classxii_simd_float.htm">xiiSimdFloat</a> &amp;fAngle)</td></tr>
-<tr class="memdesc:aa5964ce54b8060c47ad59811bafa460b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a quaternion from a rotation-axis and an angle (angle is given in Radians or as a xiiAngle)  <a href="../../db/dda/classxii_simd_quat.htm#aa5964ce54b8060c47ad59811bafa460b">More...</a><br /></td></tr>
-<tr class="separator:aa5964ce54b8060c47ad59811bafa460b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a56e2c8227e8fce2c4d5669add072fcd4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dda/classxii_simd_quat.htm#a56e2c8227e8fce2c4d5669add072fcd4">SetShortestRotation</a> (const <a class="el" href="../../d3/da5/classxii_simd_vec4f.htm">xiiSimdVec4f</a> &amp;vDirFrom, const <a class="el" href="../../d3/da5/classxii_simd_vec4f.htm">xiiSimdVec4f</a> &amp;vDirTo)</td></tr>
-<tr class="memdesc:a56e2c8227e8fce2c4d5669add072fcd4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a quaternion, that rotates through the shortest arc from "vDirFrom" to "vDirTo".  <a href="../../db/dda/classxii_simd_quat.htm#a56e2c8227e8fce2c4d5669add072fcd4">More...</a><br /></td></tr>
-<tr class="separator:a56e2c8227e8fce2c4d5669add072fcd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeddb58cf915f84945b3081c7a7b01123"><td class="memItemLeft" align="right" valign="top"><a id="aeddb58cf915f84945b3081c7a7b01123"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dda/classxii_simd_quat.htm#aeddb58cf915f84945b3081c7a7b01123">SetSlerp</a> (const <a class="el" href="../../db/dda/classxii_simd_quat.htm">xiiSimdQuat</a> &amp;qFrom, const <a class="el" href="../../db/dda/classxii_simd_quat.htm">xiiSimdQuat</a> &amp;qTo, const <a class="el" href="../../d2/d73/classxii_simd_float.htm">xiiSimdFloat</a> &amp;t)</td></tr>
-<tr class="memdesc:aeddb58cf915f84945b3081c7a7b01123"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets this quaternion to be the spherical linear interpolation of the other two. <br /></td></tr>
-<tr class="separator:aeddb58cf915f84945b3081c7a7b01123"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a541efb5807f3d79c8c7ff5ec756a5314"><td class="memItemLeft" align="right" valign="top"><a id="a541efb5807f3d79c8c7ff5ec756a5314"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dda/classxii_simd_quat.htm#a541efb5807f3d79c8c7ff5ec756a5314">Normalize</a> ()</td></tr>
 <tr class="memdesc:a541efb5807f3d79c8c7ff5ec756a5314"><td class="mdescLeft">&#160;</td><td class="mdescRight">Normalizes the quaternion to unit length. ALL rotation-quaternions should be normalized at all times (automatically). <br /></td></tr>
@@ -158,10 +144,24 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator!=</b> (const
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a310ac43d3304864b08a9b81fdd805cae"><td class="memItemLeft" align="right" valign="top"><a id="a310ac43d3304864b08a9b81fdd805cae"></a>
-static <a class="el" href="../../db/dda/classxii_simd_quat.htm">xiiSimdQuat</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dda/classxii_simd_quat.htm#a310ac43d3304864b08a9b81fdd805cae">IdentityQuaternion</a> ()</td></tr>
-<tr class="memdesc:a310ac43d3304864b08a9b81fdd805cae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Static function that returns a quaternion that represents the identity rotation (none). <br /></td></tr>
-<tr class="separator:a310ac43d3304864b08a9b81fdd805cae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a574f2330bc036023a518948abf0e20f9"><td class="memItemLeft" align="right" valign="top"><a id="a574f2330bc036023a518948abf0e20f9"></a>
+static const <a class="el" href="../../db/dda/classxii_simd_quat.htm">xiiSimdQuat</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dda/classxii_simd_quat.htm#a574f2330bc036023a518948abf0e20f9">MakeIdentity</a> ()</td></tr>
+<tr class="memdesc:a574f2330bc036023a518948abf0e20f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Static function that returns a quaternion that represents the identity rotation (none). <br /></td></tr>
+<tr class="separator:a574f2330bc036023a518948abf0e20f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa262446507842df666ed6204c6703b3f"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../db/dda/classxii_simd_quat.htm">xiiSimdQuat</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dda/classxii_simd_quat.htm#aa262446507842df666ed6204c6703b3f">MakeFromElements</a> (<a class="el" href="../../d2/d73/classxii_simd_float.htm">xiiSimdFloat</a> x, <a class="el" href="../../d2/d73/classxii_simd_float.htm">xiiSimdFloat</a> y, <a class="el" href="../../d2/d73/classxii_simd_float.htm">xiiSimdFloat</a> z, <a class="el" href="../../d2/d73/classxii_simd_float.htm">xiiSimdFloat</a> w)</td></tr>
+<tr class="memdesc:aa262446507842df666ed6204c6703b3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the individual elements of the quaternion directly. Note that x,y,z do NOT represent a rotation axis, and w does NOT represent an angle.  <a href="../../db/dda/classxii_simd_quat.htm#aa262446507842df666ed6204c6703b3f">More...</a><br /></td></tr>
+<tr class="separator:aa262446507842df666ed6204c6703b3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7757f5e1b7533b297229fffce899d277"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../db/dda/classxii_simd_quat.htm">xiiSimdQuat</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dda/classxii_simd_quat.htm#a7757f5e1b7533b297229fffce899d277">MakeFromAxisAndAngle</a> (const <a class="el" href="../../d3/da5/classxii_simd_vec4f.htm">xiiSimdVec4f</a> &amp;vRotationAxis, const <a class="el" href="../../d2/d73/classxii_simd_float.htm">xiiSimdFloat</a> &amp;fAngle)</td></tr>
+<tr class="memdesc:a7757f5e1b7533b297229fffce899d277"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a quaternion from a rotation-axis and an angle (angle is given in Radians or as a xiiAngle)  <a href="../../db/dda/classxii_simd_quat.htm#a7757f5e1b7533b297229fffce899d277">More...</a><br /></td></tr>
+<tr class="separator:a7757f5e1b7533b297229fffce899d277"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af22e2aeb9b34143e696b6915e0fa7070"><td class="memItemLeft" align="right" valign="top"><a id="af22e2aeb9b34143e696b6915e0fa7070"></a>
+static <a class="el" href="../../db/dda/classxii_simd_quat.htm">xiiSimdQuat</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dda/classxii_simd_quat.htm#af22e2aeb9b34143e696b6915e0fa7070">MakeShortestRotation</a> (const <a class="el" href="../../d3/da5/classxii_simd_vec4f.htm">xiiSimdVec4f</a> &amp;vDirFrom, const <a class="el" href="../../d3/da5/classxii_simd_vec4f.htm">xiiSimdVec4f</a> &amp;vDirTo)</td></tr>
+<tr class="memdesc:af22e2aeb9b34143e696b6915e0fa7070"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a quaternion, that rotates through the shortest arc from "vDirFrom" to "vDirTo". <br /></td></tr>
+<tr class="separator:af22e2aeb9b34143e696b6915e0fa7070"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae23f4cf05482178801beb433a0f90e97"><td class="memItemLeft" align="right" valign="top"><a id="ae23f4cf05482178801beb433a0f90e97"></a>
+static <a class="el" href="../../db/dda/classxii_simd_quat.htm">xiiSimdQuat</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dda/classxii_simd_quat.htm#ae23f4cf05482178801beb433a0f90e97">MakeSlerp</a> (const <a class="el" href="../../db/dda/classxii_simd_quat.htm">xiiSimdQuat</a> &amp;qFrom, const <a class="el" href="../../db/dda/classxii_simd_quat.htm">xiiSimdQuat</a> &amp;qTo, const <a class="el" href="../../d2/d73/classxii_simd_float.htm">xiiSimdFloat</a> &amp;t)</td></tr>
+<tr class="memdesc:ae23f4cf05482178801beb433a0f90e97"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a quaternion that is the spherical linear interpolation of the other two. <br /></td></tr>
+<tr class="separator:ae23f4cf05482178801beb433a0f90e97"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -211,7 +211,7 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Returns the rotation-axis and angle (in Radians), that this quaternion rotates around. </p>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.htm#_todo000055">Todo:</a></b></dt><dd>optimize </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.htm#_todo000054">Todo:</a></b></dt><dd>optimize </dd></dl>
 
 </div>
 </div>
@@ -246,14 +246,17 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="aa5964ce54b8060c47ad59811bafa460b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa5964ce54b8060c47ad59811bafa460b">&#9670;&nbsp;</a></span>SetFromAxisAndAngle()</h2>
+<a id="a7757f5e1b7533b297229fffce899d277"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7757f5e1b7533b297229fffce899d277">&#9670;&nbsp;</a></span>MakeFromAxisAndAngle()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">XII_ALWAYS_INLINE void xiiSimdQuat::SetFromAxisAndAngle </td>
+          <td class="memname"><a class="el" href="../../db/dda/classxii_simd_quat.htm">xiiSimdQuat</a> xiiSimdQuat::MakeFromAxisAndAngle </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="../../d3/da5/classxii_simd_vec4f.htm">xiiSimdVec4f</a> &amp;&#160;</td>
           <td class="paramname"><em>vRotationAxis</em>, </td>
@@ -270,30 +273,50 @@ Public Attributes</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Creates a quaternion from a rotation-axis and an angle (angle is given in Radians or as a xiiAngle) </p>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.htm#_todo000054">Todo:</a></b></dt><dd>optimize </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.htm#_todo000053">Todo:</a></b></dt><dd>optimize </dd></dl>
 
 </div>
 </div>
-<a id="a56e2c8227e8fce2c4d5669add072fcd4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a56e2c8227e8fce2c4d5669add072fcd4">&#9670;&nbsp;</a></span>SetShortestRotation()</h2>
+<a id="aa262446507842df666ed6204c6703b3f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa262446507842df666ed6204c6703b3f">&#9670;&nbsp;</a></span>MakeFromElements()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void xiiSimdQuat::SetShortestRotation </td>
+          <td class="memname">XII_ALWAYS_INLINE <a class="el" href="../../db/dda/classxii_simd_quat.htm">xiiSimdQuat</a> xiiSimdQuat::MakeFromElements </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="../../d3/da5/classxii_simd_vec4f.htm">xiiSimdVec4f</a> &amp;&#160;</td>
-          <td class="paramname"><em>vDirFrom</em>, </td>
+          <td class="paramtype"><a class="el" href="../../d2/d73/classxii_simd_float.htm">xiiSimdFloat</a>&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="../../d3/da5/classxii_simd_vec4f.htm">xiiSimdVec4f</a> &amp;&#160;</td>
-          <td class="paramname"><em>vDirTo</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../d2/d73/classxii_simd_float.htm">xiiSimdFloat</a>&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d2/d73/classxii_simd_float.htm">xiiSimdFloat</a>&#160;</td>
+          <td class="paramname"><em>z</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d2/d73/classxii_simd_float.htm">xiiSimdFloat</a>&#160;</td>
+          <td class="paramname"><em>w</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -301,10 +324,15 @@ Public Attributes</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Creates a quaternion, that rotates through the shortest arc from "vDirFrom" to "vDirTo". </p>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.htm#_todo000053">Todo:</a></b></dt><dd>optimize these methods if needed </dd></dl>
+<p>Sets the individual elements of the quaternion directly. Note that x,y,z do NOT represent a rotation axis, and w does NOT represent an angle. </p>
+<p>Use this function only if you have good understanding of quaternion math and know exactly what you are doing. </p>
 
 </div>
 </div>
@@ -319,7 +347,7 @@ Public Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../db/dda/classxii_simd_quat.htm">xiiSimdQuat</a></li>
-    <li class="footer">Generated on Mon Jun 3 2024 16:28:53 for XIIEngine by
+    <li class="footer">Generated on Wed Jun 12 2024 18:05:59 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

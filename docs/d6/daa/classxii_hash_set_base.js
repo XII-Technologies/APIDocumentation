@@ -11,6 +11,8 @@ var classxii_hash_set_base =
     [ "Contains", "d6/daa/classxii_hash_set_base.htm#a8ccd944f3e95e5affda1d377986ffd22", null ],
     [ "ContainsSet", "d6/daa/classxii_hash_set_base.htm#a9b32d6374d6fac58f14abd9ef7ab4f2e", null ],
     [ "Difference", "d6/daa/classxii_hash_set_base.htm#a884df912d6b8b6b9e523c7289c17c867", null ],
+    [ "Find", "d6/daa/classxii_hash_set_base.htm#a6d96d21ec86de3f2eb3ef4e663f61110", null ],
+    [ "Find", "d6/daa/classxii_hash_set_base.htm#a816984f4b0557b74917aa45aefa10424", null ],
     [ "FindEntry", "d6/daa/classxii_hash_set_base.htm#a5927012a3cfcbfdfb2efe24f1be9c785", null ],
     [ "GetAllocator", "d6/daa/classxii_hash_set_base.htm#a71c9869a77ce7108e9bcd1323f03d908", null ],
     [ "GetCount", "d6/daa/classxii_hash_set_base.htm#ae690c3d8577eb8ddc1218396e0514200", null ],

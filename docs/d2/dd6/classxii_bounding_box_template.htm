@@ -86,6 +86,7 @@ $(document).ready(function(){initNavTree('d2/dd6/classxii_bounding_box_template.
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="../../d7/dff/classxii_bounding_box_template-members.htm">List of all members</a>  </div>
   <div class="headertitle">
@@ -117,14 +118,6 @@ Public Member Functions</h2></td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dd6/classxii_bounding_box_template.htm#af5bfe5d94dfb75949440f08afdcf65ff">xiiBoundingBoxTemplate</a> (const <a class="el" href="../../d9/d9a/classxii_vec3_template.htm">xiiVec3Template</a>&lt; Type &gt; &amp;vMin, const <a class="el" href="../../d9/d9a/classxii_vec3_template.htm">xiiVec3Template</a>&lt; Type &gt; &amp;vMax)</td></tr>
 <tr class="memdesc:af5bfe5d94dfb75949440f08afdcf65ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs the box with the given minimum and maximum values. <br /></td></tr>
 <tr class="separator:af5bfe5d94dfb75949440f08afdcf65ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a635f26c07f2063f7741bbacbd14c7f39"><td class="memItemLeft" align="right" valign="top"><a id="a635f26c07f2063f7741bbacbd14c7f39"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dd6/classxii_bounding_box_template.htm#a635f26c07f2063f7741bbacbd14c7f39">SetInvalid</a> ()</td></tr>
-<tr class="memdesc:a635f26c07f2063f7741bbacbd14c7f39"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resets the box to an invalid state. ExpandToInclude can then be used to make it into a bounding box for objects. <br /></td></tr>
-<tr class="separator:a635f26c07f2063f7741bbacbd14c7f39"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a771085c873d7393d98637ec739133fb5"><td class="memItemLeft" align="right" valign="top"><a id="a771085c873d7393d98637ec739133fb5"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dd6/classxii_bounding_box_template.htm#a771085c873d7393d98637ec739133fb5">SetCenterAndHalfExtents</a> (const <a class="el" href="../../d9/d9a/classxii_vec3_template.htm">xiiVec3Template</a>&lt; Type &gt; &amp;vCenter, const <a class="el" href="../../d9/d9a/classxii_vec3_template.htm">xiiVec3Template</a>&lt; Type &gt; &amp;vHalfExtents)</td></tr>
-<tr class="memdesc:a771085c873d7393d98637ec739133fb5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the box from a center point and half-extents for each axis. <br /></td></tr>
-<tr class="separator:a771085c873d7393d98637ec739133fb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aca5eee291c6ee2cd7964d64274913013"><td class="memItemLeft" align="right" valign="top"><a id="aca5eee291c6ee2cd7964d64274913013"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dd6/classxii_bounding_box_template.htm#aca5eee291c6ee2cd7964d64274913013">IsValid</a> () const</td></tr>
 <tr class="memdesc:aca5eee291c6ee2cd7964d64274913013"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether the box is in an invalid state. <br /></td></tr>
@@ -133,14 +126,6 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../.
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dd6/classxii_bounding_box_template.htm#a6d747793a6ff10dba07de82f7981a78d">IsNaN</a> () const</td></tr>
 <tr class="memdesc:a6d747793a6ff10dba07de82f7981a78d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether any component is NaN. <br /></td></tr>
 <tr class="separator:a6d747793a6ff10dba07de82f7981a78d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5b0afbc8a0180b750c8aa70a917ce527"><td class="memItemLeft" align="right" valign="top"><a id="a5b0afbc8a0180b750c8aa70a917ce527"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dd6/classxii_bounding_box_template.htm#a5b0afbc8a0180b750c8aa70a917ce527">SetElements</a> (const <a class="el" href="../../d9/d9a/classxii_vec3_template.htm">xiiVec3Template</a>&lt; Type &gt; &amp;vMin, const <a class="el" href="../../d9/d9a/classxii_vec3_template.htm">xiiVec3Template</a>&lt; Type &gt; &amp;vMax)</td></tr>
-<tr class="memdesc:a5b0afbc8a0180b750c8aa70a917ce527"><td class="mdescLeft">&#160;</td><td class="mdescRight">Directly sets the minimum and maximum values. <br /></td></tr>
-<tr class="separator:a5b0afbc8a0180b750c8aa70a917ce527"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af690a5fe7a8052ec39c9712fc366bfa1"><td class="memItemLeft" align="right" valign="top"><a id="af690a5fe7a8052ec39c9712fc366bfa1"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dd6/classxii_bounding_box_template.htm#af690a5fe7a8052ec39c9712fc366bfa1">SetFromPoints</a> (const <a class="el" href="../../d9/d9a/classxii_vec3_template.htm">xiiVec3Template</a>&lt; Type &gt; *pPoints, xiiUInt32 uiNumPoints, xiiUInt32 uiStride=sizeof(<a class="el" href="../../d9/d9a/classxii_vec3_template.htm">xiiVec3Template</a>&lt; Type &gt;))</td></tr>
-<tr class="memdesc:af690a5fe7a8052ec39c9712fc366bfa1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new bounding-box around the given set of points. <br /></td></tr>
-<tr class="separator:af690a5fe7a8052ec39c9712fc366bfa1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad3c6279c81b0769503c2d1e05fc38fb6"><td class="memItemLeft" align="right" valign="top"><a id="ad3c6279c81b0769503c2d1e05fc38fb6"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dd6/classxii_bounding_box_template.htm#ad3c6279c81b0769503c2d1e05fc38fb6">GetCorners</a> (<a class="el" href="../../d9/d9a/classxii_vec3_template.htm">xiiVec3Template</a>&lt; Type &gt; *out_pCorners) const</td></tr>
 <tr class="memdesc:ad3c6279c81b0769503c2d1e05fc38fb6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes the 8 different corners of the box to the given array. <br /></td></tr>
@@ -153,10 +138,10 @@ const <a class="el" href="../../d9/d9a/classxii_vec3_template.htm">xiiVec3Templa
 const <a class="el" href="../../d9/d9a/classxii_vec3_template.htm">xiiVec3Template</a>&lt; Type &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dd6/classxii_bounding_box_template.htm#a517e4b42bfbc02fd69a028a841391042">GetExtents</a> () const</td></tr>
 <tr class="memdesc:a517e4b42bfbc02fd69a028a841391042"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the extents of the box along each axis. <br /></td></tr>
 <tr class="separator:a517e4b42bfbc02fd69a028a841391042"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aabb63fb49e887e923983cd67f59b5ae7"><td class="memItemLeft" align="right" valign="top"><a id="aabb63fb49e887e923983cd67f59b5ae7"></a>
-const <a class="el" href="../../d9/d9a/classxii_vec3_template.htm">xiiVec3Template</a>&lt; Type &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dd6/classxii_bounding_box_template.htm#aabb63fb49e887e923983cd67f59b5ae7">GetHalfExtents</a> () const</td></tr>
-<tr class="memdesc:aabb63fb49e887e923983cd67f59b5ae7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the half extents of the box along each axis. <br /></td></tr>
-<tr class="separator:aabb63fb49e887e923983cd67f59b5ae7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77b60b9d73282e3ed62171dfa2c05074"><td class="memItemLeft" align="right" valign="top"><a id="a77b60b9d73282e3ed62171dfa2c05074"></a>
+const <a class="el" href="../../d9/d9a/classxii_vec3_template.htm">xiiVec3Template</a>&lt; Type &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dd6/classxii_bounding_box_template.htm#a77b60b9d73282e3ed62171dfa2c05074">GetHalfExtents</a> () const</td></tr>
+<tr class="memdesc:a77b60b9d73282e3ed62171dfa2c05074"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the half extents of the box along each axis. <br /></td></tr>
+<tr class="separator:a77b60b9d73282e3ed62171dfa2c05074"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad814b0f7cc43991ceb6aa41c328dfb11"><td class="memItemLeft" align="right" valign="top"><a id="ad814b0f7cc43991ceb6aa41c328dfb11"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dd6/classxii_bounding_box_template.htm#ad814b0f7cc43991ceb6aa41c328dfb11">ExpandToInclude</a> (const <a class="el" href="../../d9/d9a/classxii_vec3_template.htm">xiiVec3Template</a>&lt; Type &gt; &amp;vPoint)</td></tr>
 <tr class="memdesc:ad814b0f7cc43991ceb6aa41c328dfb11"><td class="mdescLeft">&#160;</td><td class="mdescRight">Expands the box such that the given point is inside it. <br /></td></tr>
@@ -270,6 +255,29 @@ const <a class="el" href="../../dd/d79/classxii_bounding_sphere_template.htm">xi
 <tr class="memdesc:a06747cf715c31d0dbc552020b9d74247"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a bounding sphere that encloses this box. <br /></td></tr>
 <tr class="separator:a06747cf715c31d0dbc552020b9d74247"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a8363c35714da98b92a4baf15b8b8efe6"><td class="memItemLeft" align="right" valign="top"><a id="a8363c35714da98b92a4baf15b8b8efe6"></a>
+static <a class="el" href="../../d2/dd6/classxii_bounding_box_template.htm">xiiBoundingBoxTemplate</a>&lt; Type &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dd6/classxii_bounding_box_template.htm#a8363c35714da98b92a4baf15b8b8efe6">MakeZero</a> ()</td></tr>
+<tr class="memdesc:a8363c35714da98b92a4baf15b8b8efe6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a box that is located at the origin and has zero size. This is a 'valid' box. <br /></td></tr>
+<tr class="separator:a8363c35714da98b92a4baf15b8b8efe6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6500356e08862715cb257555248abaf5"><td class="memItemLeft" align="right" valign="top"><a id="a6500356e08862715cb257555248abaf5"></a>
+static <a class="el" href="../../d2/dd6/classxii_bounding_box_template.htm">xiiBoundingBoxTemplate</a>&lt; Type &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dd6/classxii_bounding_box_template.htm#a6500356e08862715cb257555248abaf5">MakeInvalid</a> ()</td></tr>
+<tr class="memdesc:a6500356e08862715cb257555248abaf5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a box that is in an invalid state. ExpandToInclude can then be used to make it into a bounding box for objects. <br /></td></tr>
+<tr class="separator:a6500356e08862715cb257555248abaf5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a488036d94dd6947c2c73cb509a959127"><td class="memItemLeft" align="right" valign="top"><a id="a488036d94dd6947c2c73cb509a959127"></a>
+static <a class="el" href="../../d2/dd6/classxii_bounding_box_template.htm">xiiBoundingBoxTemplate</a>&lt; Type &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dd6/classxii_bounding_box_template.htm#a488036d94dd6947c2c73cb509a959127">MakeFromCenterAndHalfExtents</a> (const <a class="el" href="../../d9/d9a/classxii_vec3_template.htm">xiiVec3Template</a>&lt; Type &gt; &amp;vCenter, const <a class="el" href="../../d9/d9a/classxii_vec3_template.htm">xiiVec3Template</a>&lt; Type &gt; &amp;vHalfExtents)</td></tr>
+<tr class="memdesc:a488036d94dd6947c2c73cb509a959127"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a box from a center point and half-extents for each axis. <br /></td></tr>
+<tr class="separator:a488036d94dd6947c2c73cb509a959127"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a601600ddb23a373306154e130c075d56"><td class="memItemLeft" align="right" valign="top"><a id="a601600ddb23a373306154e130c075d56"></a>
+static <a class="el" href="../../d2/dd6/classxii_bounding_box_template.htm">xiiBoundingBoxTemplate</a>&lt; Type &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dd6/classxii_bounding_box_template.htm#a601600ddb23a373306154e130c075d56">MakeFromMinMax</a> (const <a class="el" href="../../d9/d9a/classxii_vec3_template.htm">xiiVec3Template</a>&lt; Type &gt; &amp;vMin, const <a class="el" href="../../d9/d9a/classxii_vec3_template.htm">xiiVec3Template</a>&lt; Type &gt; &amp;vMax)</td></tr>
+<tr class="memdesc:a601600ddb23a373306154e130c075d56"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a box with the given minimum and maximum values. <br /></td></tr>
+<tr class="separator:a601600ddb23a373306154e130c075d56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6eb7d1d07994e44cd62c93f11e6a2b28"><td class="memItemLeft" align="right" valign="top"><a id="a6eb7d1d07994e44cd62c93f11e6a2b28"></a>
+static <a class="el" href="../../d2/dd6/classxii_bounding_box_template.htm">xiiBoundingBoxTemplate</a>&lt; Type &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dd6/classxii_bounding_box_template.htm#a6eb7d1d07994e44cd62c93f11e6a2b28">MakeFromPoints</a> (const <a class="el" href="../../d9/d9a/classxii_vec3_template.htm">xiiVec3Template</a>&lt; Type &gt; *pPoints, xiiUInt32 uiNumPoints, xiiUInt32 uiStride=sizeof(<a class="el" href="../../d9/d9a/classxii_vec3_template.htm">xiiVec3Template</a>&lt; Type &gt;))</td></tr>
+<tr class="memdesc:a6eb7d1d07994e44cd62c93f11e6a2b28"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a box around the given set of points. If uiNumPoints is zero, the returned box is invalid (same as <a class="el" href="../../d2/dd6/classxii_bounding_box_template.htm#a6500356e08862715cb257555248abaf5" title="Creates a box that is in an invalid state. ExpandToInclude can then be used to make it into a boundin...">MakeInvalid()</a> returns). <br /></td></tr>
+<tr class="separator:a6eb7d1d07994e44cd62c93f11e6a2b28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:ac2eff75aed0d9ba0d4046b622935f7dd"><td class="memItemLeft" align="right" valign="top"><a id="ac2eff75aed0d9ba0d4046b622935f7dd"></a>
@@ -296,7 +304,7 @@ class xiiBoundingBoxTemplate&lt; Type &gt;</h3>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d2/dd6/classxii_bounding_box_template.htm">xiiBoundingBoxTemplate</a></li>
-    <li class="footer">Generated on Mon Jun 3 2024 16:28:48 for XIIEngine by
+    <li class="footer">Generated on Wed Jun 12 2024 18:05:54 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

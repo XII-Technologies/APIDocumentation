@@ -1,6 +1,8 @@
 var classxii_set_base =
 [
-    [ "Iterator", "dd/d12/structxii_set_base_1_1_iterator.htm", "dd/d12/structxii_set_base_1_1_iterator" ],
+    [ "IteratorBase", "d2/d7f/structxii_set_base_1_1_iterator_base.htm", "d2/d7f/structxii_set_base_1_1_iterator_base" ],
+    [ "Iterator", "d6/daa/classxii_set_base.htm#a682e33c479479ffb85b8302243afb4de", null ],
+    [ "ReverseIterator", "d6/daa/classxii_set_base.htm#a8dadd4c079d5deb3af0ae28b1b3e3c4b", null ],
     [ "xiiSetBase", "d6/daa/classxii_set_base.htm#af3c54e2d35affe8f0e9582bccbda0350", null ],
     [ "xiiSetBase", "d6/daa/classxii_set_base.htm#a74fbc816194690bd16c93597b271c80f", null ],
     [ "~xiiSetBase", "d6/daa/classxii_set_base.htm#abcb763cd04848b5d61818421b60de4e8", null ],
@@ -15,7 +17,7 @@ var classxii_set_base =
     [ "GetCount", "d6/daa/classxii_set_base.htm#a612883c7cb7fab407d11aa6f2889b130", null ],
     [ "GetHeapMemoryUsage", "d6/daa/classxii_set_base.htm#ad442d03eea8de7d9c91c3e0c1f6cdc35", null ],
     [ "GetIterator", "d6/daa/classxii_set_base.htm#ae94d47ef967975a5a4b2f2a0fb953dd7", null ],
-    [ "GetLastIterator", "d6/daa/classxii_set_base.htm#ab5dd55c4e09e2e15e987db19cb64eaf1", null ],
+    [ "GetReverseIterator", "d6/daa/classxii_set_base.htm#a24e212497cd1e3e8d2321220e311554b", null ],
     [ "Insert", "d6/daa/classxii_set_base.htm#a0c684120db5132a2037d0defbe2d70c1", null ],
     [ "Intersection", "d6/daa/classxii_set_base.htm#a7f9b3ee58fb5f2d0f35c7a7177e64afb", null ],
     [ "IsEmpty", "d6/daa/classxii_set_base.htm#ab3d6ef2b492e4b048201e9897a956533", null ],

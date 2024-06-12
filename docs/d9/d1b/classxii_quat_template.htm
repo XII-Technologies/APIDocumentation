@@ -110,46 +110,40 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a26c26f991f27ebcb8d6bd3aa7e2edd08"><td class="memItemLeft" align="right" valign="top"><a id="a26c26f991f27ebcb8d6bd3aa7e2edd08"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>XII_DECLARE_POD_TYPE</b> ()</td></tr>
 <tr class="separator:a26c26f991f27ebcb8d6bd3aa7e2edd08"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7c968049bc6a6ef7471039947b49f7fa"><td class="memItemLeft" align="right" valign="top"><a id="a7c968049bc6a6ef7471039947b49f7fa"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d1b/classxii_quat_template.htm#a7c968049bc6a6ef7471039947b49f7fa">xiiQuatTemplate</a> (Type inX, Type inY, Type inZ, Type inW)</td></tr>
-<tr class="memdesc:a7c968049bc6a6ef7471039947b49f7fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">For internal use. You should never construct quaternions this way. <br /></td></tr>
-<tr class="separator:a7c968049bc6a6ef7471039947b49f7fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a220ecd9cecaa3d6942fecbbae7d2500e"><td class="memItemLeft" align="right" valign="top"><a id="a220ecd9cecaa3d6942fecbbae7d2500e"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d1b/classxii_quat_template.htm#a220ecd9cecaa3d6942fecbbae7d2500e">xiiQuatTemplate</a> (Type x, Type y, Type z, Type w)</td></tr>
+<tr class="memdesc:a220ecd9cecaa3d6942fecbbae7d2500e"><td class="mdescLeft">&#160;</td><td class="mdescRight">For internal use. You should never construct quaternions this way. <br /></td></tr>
+<tr class="separator:a220ecd9cecaa3d6942fecbbae7d2500e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae88f50c75d2e37f3b4f4d2b735d20915"><td class="memItemLeft" align="right" valign="top"><a id="ae88f50c75d2e37f3b4f4d2b735d20915"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d1b/classxii_quat_template.htm#ae88f50c75d2e37f3b4f4d2b735d20915">SetIdentity</a> ()</td></tr>
 <tr class="memdesc:ae88f50c75d2e37f3b4f4d2b735d20915"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the Quaternion to the identity. <br /></td></tr>
 <tr class="separator:ae88f50c75d2e37f3b4f4d2b735d20915"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a49829f80f46861fa33a195732adaee32"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d1b/classxii_quat_template.htm#a49829f80f46861fa33a195732adaee32">SetElements</a> (Type inX, Type inY, Type inZ, Type inW)</td></tr>
-<tr class="memdesc:a49829f80f46861fa33a195732adaee32"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the individual elements of the quaternion directly. Note that x,y,z do NOT represent a rotation axis, and w does NOT represent an angle.  <a href="../../d9/d1b/classxii_quat_template.htm#a49829f80f46861fa33a195732adaee32">More...</a><br /></td></tr>
-<tr class="separator:a49829f80f46861fa33a195732adaee32"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaef4b95931d63340b6bb3bb22734f734"><td class="memItemLeft" align="right" valign="top"><a id="aaef4b95931d63340b6bb3bb22734f734"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d1b/classxii_quat_template.htm#aaef4b95931d63340b6bb3bb22734f734">SetFromAxisAndAngle</a> (const <a class="el" href="../../d9/d9a/classxii_vec3_template.htm">xiiVec3Template</a>&lt; Type &gt; &amp;vRotationAxis, <a class="el" href="../../d3/ddb/classxii_angle_template.htm">xiiAngleTemplate</a>&lt; Type &gt; angle)</td></tr>
-<tr class="memdesc:aaef4b95931d63340b6bb3bb22734f734"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a quaternion from a rotation-axis and an angle. <br /></td></tr>
-<tr class="separator:aaef4b95931d63340b6bb3bb22734f734"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9eedbd0664e93fed324f940d37cc6791"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d1b/classxii_quat_template.htm#a9eedbd0664e93fed324f940d37cc6791">SetShortestRotation</a> (const <a class="el" href="../../d9/d9a/classxii_vec3_template.htm">xiiVec3Template</a>&lt; Type &gt; &amp;vDirFrom, const <a class="el" href="../../d9/d9a/classxii_vec3_template.htm">xiiVec3Template</a>&lt; Type &gt; &amp;vDirTo)</td></tr>
-<tr class="memdesc:a9eedbd0664e93fed324f940d37cc6791"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a quaternion, that rotates through the shortest arc from "vDirFrom" to "vDirTo".  <a href="../../d9/d1b/classxii_quat_template.htm#a9eedbd0664e93fed324f940d37cc6791">More...</a><br /></td></tr>
-<tr class="separator:a9eedbd0664e93fed324f940d37cc6791"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4c5018aaf26a32127f17884de644e485"><td class="memItemLeft" align="right" valign="top"><a id="a4c5018aaf26a32127f17884de644e485"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d1b/classxii_quat_template.htm#a4c5018aaf26a32127f17884de644e485">SetFromMat3</a> (const <a class="el" href="../../d3/d74/classxii_mat3_template.htm">xiiMat3Template</a>&lt; Type &gt; &amp;m)</td></tr>
-<tr class="memdesc:a4c5018aaf26a32127f17884de644e485"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a quaternion from the given matrix. <br /></td></tr>
-<tr class="separator:a4c5018aaf26a32127f17884de644e485"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a626e119e067b041d16a8fd8bfb006c92"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d1b/classxii_quat_template.htm#a626e119e067b041d16a8fd8bfb006c92">ReconstructFromMat3</a> (const <a class="el" href="../../d3/d74/classxii_mat3_template.htm">xiiMat3Template</a>&lt; Type &gt; &amp;m)</td></tr>
 <tr class="memdesc:a626e119e067b041d16a8fd8bfb006c92"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reconstructs a rotation quaternion from a matrix that may contain scaling and mirroring.  <a href="../../d9/d1b/classxii_quat_template.htm#a626e119e067b041d16a8fd8bfb006c92">More...</a><br /></td></tr>
 <tr class="separator:a626e119e067b041d16a8fd8bfb006c92"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7e0b7355144093951d34ec4cd7c08e81"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d1b/classxii_quat_template.htm#a7e0b7355144093951d34ec4cd7c08e81">ReconstructFromMat4</a> (const <a class="el" href="../../d1/dec/classxii_mat4_template.htm">xiiMat4Template</a>&lt; Type &gt; &amp;m)</td></tr>
 <tr class="memdesc:a7e0b7355144093951d34ec4cd7c08e81"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reconstructs a rotation quaternion from a matrix that may contain scaling and mirroring.  <a href="../../d9/d1b/classxii_quat_template.htm#a7e0b7355144093951d34ec4cd7c08e81">More...</a><br /></td></tr>
 <tr class="separator:a7e0b7355144093951d34ec4cd7c08e81"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aca6ff595f2b25d5950fbfe256dc56af9"><td class="memItemLeft" align="right" valign="top"><a id="aca6ff595f2b25d5950fbfe256dc56af9"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d1b/classxii_quat_template.htm#aca6ff595f2b25d5950fbfe256dc56af9">SetSlerp</a> (const <a class="el" href="../../d9/d1b/classxii_quat_template.htm">xiiQuatTemplate</a> &amp;qFrom, const <a class="el" href="../../d9/d1b/classxii_quat_template.htm">xiiQuatTemplate</a> &amp;qTo, Type t)</td></tr>
-<tr class="memdesc:aca6ff595f2b25d5950fbfe256dc56af9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets this quaternion to be the spherical linear interpolation of the other two. <br /></td></tr>
-<tr class="separator:aca6ff595f2b25d5950fbfe256dc56af9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6017ba95daf63150ce076f8fc478314"><td class="memItemLeft" align="right" valign="top"><a id="ae6017ba95daf63150ce076f8fc478314"></a>
+const Type *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d1b/classxii_quat_template.htm#ae6017ba95daf63150ce076f8fc478314">GetData</a> () const</td></tr>
+<tr class="memdesc:ae6017ba95daf63150ce076f8fc478314"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the data as an array. <br /></td></tr>
+<tr class="separator:ae6017ba95daf63150ce076f8fc478314"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ec78eb7bae18fae4193cc9d704e233f"><td class="memItemLeft" align="right" valign="top"><a id="a1ec78eb7bae18fae4193cc9d704e233f"></a>
+Type *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d1b/classxii_quat_template.htm#a1ec78eb7bae18fae4193cc9d704e233f">GetData</a> ()</td></tr>
+<tr class="memdesc:a1ec78eb7bae18fae4193cc9d704e233f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the data as an array. <br /></td></tr>
+<tr class="separator:a1ec78eb7bae18fae4193cc9d704e233f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aab1ecbbf3bfc5f7d00b32df1ce89e342"><td class="memItemLeft" align="right" valign="top"><a id="aab1ecbbf3bfc5f7d00b32df1ce89e342"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d1b/classxii_quat_template.htm#aab1ecbbf3bfc5f7d00b32df1ce89e342">Normalize</a> ()</td></tr>
 <tr class="memdesc:aab1ecbbf3bfc5f7d00b32df1ce89e342"><td class="mdescLeft">&#160;</td><td class="mdescRight">Normalizes the quaternion to unit length. ALL rotation-quaternions should be normalized at all times (automatically). <br /></td></tr>
 <tr class="separator:aab1ecbbf3bfc5f7d00b32df1ce89e342"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4439e3b9882a6a061622a29f9c42cd5f"><td class="memItemLeft" align="right" valign="top"><a id="a4439e3b9882a6a061622a29f9c42cd5f"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d1b/classxii_quat_template.htm#a4439e3b9882a6a061622a29f9c42cd5f">GetRotationAxisAndAngle</a> (<a class="el" href="../../d9/d9a/classxii_vec3_template.htm">xiiVec3Template</a>&lt; Type &gt; &amp;ref_vAxis, <a class="el" href="../../d3/ddb/classxii_angle_template.htm">xiiAngleTemplate</a>&lt; Type &gt; &amp;ref_angle, Type fEpsilon=xiiMath::DefaultEpsilon&lt; Type &gt;()) const</td></tr>
-<tr class="memdesc:a4439e3b9882a6a061622a29f9c42cd5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the rotation-axis and angle, that this quaternion rotates around. <br /></td></tr>
-<tr class="separator:a4439e3b9882a6a061622a29f9c42cd5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77e82ce5677442e006c325a65d9731fe"><td class="memItemLeft" align="right" valign="top"><a id="a77e82ce5677442e006c325a65d9731fe"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d1b/classxii_quat_template.htm#a77e82ce5677442e006c325a65d9731fe">GetRotationAxisAndAngle</a> (<a class="el" href="../../d9/d9a/classxii_vec3_template.htm">xiiVec3Template</a>&lt; Type &gt; &amp;out_vAxis, <a class="el" href="../../d3/ddb/classxii_angle_template.htm">xiiAngleTemplate</a>&lt; Type &gt; &amp;out_angle, Type fEpsilon=xiiMath::DefaultEpsilon&lt; Type &gt;()) const</td></tr>
+<tr class="memdesc:a77e82ce5677442e006c325a65d9731fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the rotation-axis and angle, that this quaternion rotates around. <br /></td></tr>
+<tr class="separator:a77e82ce5677442e006c325a65d9731fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c82f03b610bf53c9d172ec02a6e9ee6"><td class="memItemLeft" align="right" valign="top"><a id="a3c82f03b610bf53c9d172ec02a6e9ee6"></a>
+<a class="el" href="../../d9/d9a/classxii_vec3_template.htm">xiiVec3Template</a>&lt; Type &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d1b/classxii_quat_template.htm#a3c82f03b610bf53c9d172ec02a6e9ee6">GetVectorPart</a> () const</td></tr>
+<tr class="memdesc:a3c82f03b610bf53c9d172ec02a6e9ee6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the x,y,z components as a vector. <br /></td></tr>
+<tr class="separator:a3c82f03b610bf53c9d172ec02a6e9ee6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa6d32f6602a305f9bb2b80d578db647f"><td class="memItemLeft" align="right" valign="top"><a id="aa6d32f6602a305f9bb2b80d578db647f"></a>
 const <a class="el" href="../../d3/d74/classxii_mat3_template.htm">xiiMat3Template</a>&lt; Type &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d1b/classxii_quat_template.htm#aa6d32f6602a305f9bb2b80d578db647f">GetAsMat3</a> () const</td></tr>
 <tr class="memdesc:aa6d32f6602a305f9bb2b80d578db647f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the Quaternion as a matrix. <br /></td></tr>
@@ -184,26 +178,54 @@ const <a class="el" href="../../d9/d1b/classxii_quat_template.htm">xiiQuatTempla
 Type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d1b/classxii_quat_template.htm#a6e0a54212fcfe9b1926789427db98aac">Dot</a> (const <a class="el" href="../../d9/d1b/classxii_quat_template.htm">xiiQuatTemplate</a> &amp;rhs) const</td></tr>
 <tr class="memdesc:a6e0a54212fcfe9b1926789427db98aac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the dot-product of the two quaternions (commutative, order does not matter). <br /></td></tr>
 <tr class="separator:a6e0a54212fcfe9b1926789427db98aac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8e8505692df6d368692c6e3ea6c1de8"><td class="memItemLeft" align="right" valign="top"><a id="ab8e8505692df6d368692c6e3ea6c1de8"></a>
+<a class="el" href="../../d9/d9a/classxii_vec3_template.htm">xiiVec3Template</a>&lt; Type &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d1b/classxii_quat_template.htm#ab8e8505692df6d368692c6e3ea6c1de8">Rotate</a> (const <a class="el" href="../../d9/d9a/classxii_vec3_template.htm">xiiVec3Template</a>&lt; Type &gt; &amp;v) const</td></tr>
+<tr class="memdesc:ab8e8505692df6d368692c6e3ea6c1de8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns v rotated by the quaternion. Same as operator*. <br /></td></tr>
+<tr class="separator:ab8e8505692df6d368692c6e3ea6c1de8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8d26c87261cce8521c28c4b3a1b12f99"><td class="memItemLeft" align="right" valign="top"><a id="a8d26c87261cce8521c28c4b3a1b12f99"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d1b/classxii_quat_template.htm#a8d26c87261cce8521c28c4b3a1b12f99">GetAsEulerAngles</a> (<a class="el" href="../../d3/ddb/classxii_angle_template.htm">xiiAngleTemplate</a>&lt; Type &gt; &amp;out_x, <a class="el" href="../../d3/ddb/classxii_angle_template.htm">xiiAngleTemplate</a>&lt; Type &gt; &amp;out_y, <a class="el" href="../../d3/ddb/classxii_angle_template.htm">xiiAngleTemplate</a>&lt; Type &gt; &amp;out_z) const</td></tr>
 <tr class="memdesc:a8d26c87261cce8521c28c4b3a1b12f99"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts the quaternion to Euler angles. <br /></td></tr>
 <tr class="separator:a8d26c87261cce8521c28c4b3a1b12f99"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a57c283998a8fe1e5bc7c8725386f19d1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d1b/classxii_quat_template.htm#a57c283998a8fe1e5bc7c8725386f19d1">SetFromEulerAngles</a> (const <a class="el" href="../../d3/ddb/classxii_angle_template.htm">xiiAngleTemplate</a>&lt; Type &gt; &amp;x, const <a class="el" href="../../d3/ddb/classxii_angle_template.htm">xiiAngleTemplate</a>&lt; Type &gt; &amp;y, const <a class="el" href="../../d3/ddb/classxii_angle_template.htm">xiiAngleTemplate</a>&lt; Type &gt; &amp;z)</td></tr>
-<tr class="memdesc:a57c283998a8fe1e5bc7c8725386f19d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the quaternion from Euler angles.  <a href="../../d9/d1b/classxii_quat_template.htm#a57c283998a8fe1e5bc7c8725386f19d1">More...</a><br /></td></tr>
-<tr class="separator:a57c283998a8fe1e5bc7c8725386f19d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:abc8e13490d6d8b6d763461342c371e30"><td class="memItemLeft" align="right" valign="top"><a id="abc8e13490d6d8b6d763461342c371e30"></a>
-static const <a class="el" href="../../d9/d1b/classxii_quat_template.htm">xiiQuatTemplate</a>&lt; Type &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d1b/classxii_quat_template.htm#abc8e13490d6d8b6d763461342c371e30">IdentityQuaternion</a> ()</td></tr>
-<tr class="memdesc:abc8e13490d6d8b6d763461342c371e30"><td class="mdescLeft">&#160;</td><td class="mdescRight">Static function that returns a quaternion that represents the identity rotation (none). <br /></td></tr>
-<tr class="separator:abc8e13490d6d8b6d763461342c371e30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a727243df318d221c3d446e6444ab6893"><td class="memItemLeft" align="right" valign="top"><a id="a727243df318d221c3d446e6444ab6893"></a>
+static const <a class="el" href="../../d9/d1b/classxii_quat_template.htm">xiiQuatTemplate</a>&lt; Type &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d1b/classxii_quat_template.htm#a727243df318d221c3d446e6444ab6893">MakeIdentity</a> ()</td></tr>
+<tr class="memdesc:a727243df318d221c3d446e6444ab6893"><td class="mdescLeft">&#160;</td><td class="mdescRight">Static function that returns a quaternion that represents the identity rotation (none). <br /></td></tr>
+<tr class="separator:a727243df318d221c3d446e6444ab6893"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59f583ce7eec689c9f150652b68c20e6"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d9/d1b/classxii_quat_template.htm">xiiQuatTemplate</a>&lt; Type &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d1b/classxii_quat_template.htm#a59f583ce7eec689c9f150652b68c20e6">MakeFromElements</a> (Type x, Type y, Type z, Type w)</td></tr>
+<tr class="memdesc:a59f583ce7eec689c9f150652b68c20e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the individual elements of the quaternion directly. Note that x,y,z do NOT represent a rotation axis, and w does NOT represent an angle.  <a href="../../d9/d1b/classxii_quat_template.htm#a59f583ce7eec689c9f150652b68c20e6">More...</a><br /></td></tr>
+<tr class="separator:a59f583ce7eec689c9f150652b68c20e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2db7d2cb373f9ff5c91629ac0d88795"><td class="memItemLeft" align="right" valign="top"><a id="ae2db7d2cb373f9ff5c91629ac0d88795"></a>
+static <a class="el" href="../../d9/d1b/classxii_quat_template.htm">xiiQuatTemplate</a>&lt; Type &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d1b/classxii_quat_template.htm#ae2db7d2cb373f9ff5c91629ac0d88795">MakeFromAxisAndAngle</a> (const <a class="el" href="../../d9/d9a/classxii_vec3_template.htm">xiiVec3Template</a>&lt; Type &gt; &amp;vRotationAxis, <a class="el" href="../../d3/ddb/classxii_angle_template.htm">xiiAngleTemplate</a>&lt; Type &gt; angle)</td></tr>
+<tr class="memdesc:ae2db7d2cb373f9ff5c91629ac0d88795"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a quaternion from a rotation-axis and an angle. <br /></td></tr>
+<tr class="separator:ae2db7d2cb373f9ff5c91629ac0d88795"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7e511b8549e531592a619e00187180a"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d9/d1b/classxii_quat_template.htm">xiiQuatTemplate</a>&lt; Type &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d1b/classxii_quat_template.htm#ae7e511b8549e531592a619e00187180a">MakeShortestRotation</a> (const <a class="el" href="../../d9/d9a/classxii_vec3_template.htm">xiiVec3Template</a>&lt; Type &gt; &amp;vDirFrom, const <a class="el" href="../../d9/d9a/classxii_vec3_template.htm">xiiVec3Template</a>&lt; Type &gt; &amp;vDirTo)</td></tr>
+<tr class="memdesc:ae7e511b8549e531592a619e00187180a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a quaternion, that rotates through the shortest arc from "vDirFrom" to "vDirTo".  <a href="../../d9/d1b/classxii_quat_template.htm#ae7e511b8549e531592a619e00187180a">More...</a><br /></td></tr>
+<tr class="separator:ae7e511b8549e531592a619e00187180a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a664b4032d4eecb0a43870aac8dcd2277"><td class="memItemLeft" align="right" valign="top"><a id="a664b4032d4eecb0a43870aac8dcd2277"></a>
+static <a class="el" href="../../d9/d1b/classxii_quat_template.htm">xiiQuatTemplate</a>&lt; Type &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d1b/classxii_quat_template.htm#a664b4032d4eecb0a43870aac8dcd2277">MakeFromMat3</a> (const <a class="el" href="../../d3/d74/classxii_mat3_template.htm">xiiMat3Template</a>&lt; Type &gt; &amp;m)</td></tr>
+<tr class="memdesc:a664b4032d4eecb0a43870aac8dcd2277"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a quaternion from the given matrix. <br /></td></tr>
+<tr class="separator:a664b4032d4eecb0a43870aac8dcd2277"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f56a071f4b43773680c2bff985610cb"><td class="memItemLeft" align="right" valign="top"><a id="a3f56a071f4b43773680c2bff985610cb"></a>
+static <a class="el" href="../../d9/d1b/classxii_quat_template.htm">xiiQuatTemplate</a>&lt; Type &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d1b/classxii_quat_template.htm#a3f56a071f4b43773680c2bff985610cb">MakeSlerp</a> (const <a class="el" href="../../d9/d1b/classxii_quat_template.htm">xiiQuatTemplate</a> &amp;qFrom, const <a class="el" href="../../d9/d1b/classxii_quat_template.htm">xiiQuatTemplate</a> &amp;qTo, Type t)</td></tr>
+<tr class="memdesc:a3f56a071f4b43773680c2bff985610cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a quaternion that is the spherical linear interpolation of the other two. <br /></td></tr>
+<tr class="separator:a3f56a071f4b43773680c2bff985610cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e68f57844cd49c546fbfef854b37200"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d9/d1b/classxii_quat_template.htm">xiiQuatTemplate</a>&lt; Type &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d1b/classxii_quat_template.htm#a8e68f57844cd49c546fbfef854b37200">MakeFromEulerAngles</a> (const <a class="el" href="../../d3/ddb/classxii_angle_template.htm">xiiAngleTemplate</a>&lt; Type &gt; &amp;x, const <a class="el" href="../../d3/ddb/classxii_angle_template.htm">xiiAngleTemplate</a>&lt; Type &gt; &amp;y, const <a class="el" href="../../d3/ddb/classxii_angle_template.htm">xiiAngleTemplate</a>&lt; Type &gt; &amp;z)</td></tr>
+<tr class="memdesc:a8e68f57844cd49c546fbfef854b37200"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the quaternion from Euler angles.  <a href="../../d9/d1b/classxii_quat_template.htm#a8e68f57844cd49c546fbfef854b37200">More...</a><br /></td></tr>
+<tr class="separator:a8e68f57844cd49c546fbfef854b37200"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a042f537a9f1f7c4dfa5e0cf356afd65b"><td class="memItemLeft" align="right" valign="top"><a id="a042f537a9f1f7c4dfa5e0cf356afd65b"></a>
-<a class="el" href="../../d9/d9a/classxii_vec3_template.htm">xiiVec3Template</a>&lt; Type &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>v</b></td></tr>
-<tr class="separator:a042f537a9f1f7c4dfa5e0cf356afd65b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f325187806e1ad5b09891345abcba48"><td class="memItemLeft" align="right" valign="top"><a id="a3f325187806e1ad5b09891345abcba48"></a>
+Type&#160;</td><td class="memItemRight" valign="bottom"><b>x</b></td></tr>
+<tr class="separator:a3f325187806e1ad5b09891345abcba48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08bdd74002df5070d9cd63b31051e664"><td class="memItemLeft" align="right" valign="top"><a id="a08bdd74002df5070d9cd63b31051e664"></a>
+Type&#160;</td><td class="memItemRight" valign="bottom"><b>y</b></td></tr>
+<tr class="separator:a08bdd74002df5070d9cd63b31051e664"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd97f0d770485a057399d676020cc012"><td class="memItemLeft" align="right" valign="top"><a id="afd97f0d770485a057399d676020cc012"></a>
+Type&#160;</td><td class="memItemRight" valign="bottom"><b>z</b></td></tr>
+<tr class="separator:afd97f0d770485a057399d676020cc012"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5075d7c7aec251654c357df8d41f04ba"><td class="memItemLeft" align="right" valign="top"><a id="a5075d7c7aec251654c357df8d41f04ba"></a>
 Type&#160;</td><td class="memItemRight" valign="bottom"><b>w</b></td></tr>
 <tr class="separator:a5075d7c7aec251654c357df8d41f04ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -268,6 +290,147 @@ template&lt;typename Type &gt; </div>
 
 </div>
 </div>
+<a id="a59f583ce7eec689c9f150652b68c20e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a59f583ce7eec689c9f150652b68c20e6">&#9670;&nbsp;</a></span>MakeFromElements()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Type &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">XII_ALWAYS_INLINE <a class="el" href="../../d9/d1b/classxii_quat_template.htm">xiiQuatTemplate</a>&lt; Type &gt; <a class="el" href="../../d9/d1b/classxii_quat_template.htm">xiiQuatTemplate</a>&lt; Type &gt;::MakeFromElements </td>
+          <td>(</td>
+          <td class="paramtype">Type&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Type&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Type&#160;</td>
+          <td class="paramname"><em>z</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Type&#160;</td>
+          <td class="paramname"><em>w</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets the individual elements of the quaternion directly. Note that x,y,z do NOT represent a rotation axis, and w does NOT represent an angle. </p>
+<p>Use this function only if you have good understanding of quaternion math and know exactly what you are doing. </p>
+
+</div>
+</div>
+<a id="a8e68f57844cd49c546fbfef854b37200"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e68f57844cd49c546fbfef854b37200">&#9670;&nbsp;</a></span>MakeFromEulerAngles()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Type &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/d1b/classxii_quat_template.htm">xiiQuatTemplate</a>&lt; Type &gt; <a class="el" href="../../d9/d1b/classxii_quat_template.htm">xiiQuatTemplate</a>&lt; Type &gt;::MakeFromEulerAngles </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d3/ddb/classxii_angle_template.htm">xiiAngleTemplate</a>&lt; Type &gt; &amp;&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d3/ddb/classxii_angle_template.htm">xiiAngleTemplate</a>&lt; Type &gt; &amp;&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d3/ddb/classxii_angle_template.htm">xiiAngleTemplate</a>&lt; Type &gt; &amp;&#160;</td>
+          <td class="paramname"><em>z</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets the quaternion from Euler angles. </p>
+<p>Taken from here (yaw-&gt;pitch-&gt;roll, ZYX order or 3-2-1 order): <a href="https://en.wikipedia.org/wiki/Conversion_between_quaternions_and_Euler_angles">https://en.wikipedia.org/wiki/Conversion_between_quaternions_and_Euler_angles</a></p>
+
+</div>
+</div>
+<a id="ae7e511b8549e531592a619e00187180a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae7e511b8549e531592a619e00187180a">&#9670;&nbsp;</a></span>MakeShortestRotation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Type &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/d1b/classxii_quat_template.htm">xiiQuatTemplate</a>&lt; Type &gt; <a class="el" href="../../d9/d1b/classxii_quat_template.htm">xiiQuatTemplate</a>&lt; Type &gt;::MakeShortestRotation </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d9/d9a/classxii_vec3_template.htm">xiiVec3Template</a>&lt; Type &gt; &amp;&#160;</td>
+          <td class="paramname"><em>vDirFrom</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d9/d9a/classxii_vec3_template.htm">xiiVec3Template</a>&lt; Type &gt; &amp;&#160;</td>
+          <td class="paramname"><em>vDirTo</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Creates a quaternion, that rotates through the shortest arc from "vDirFrom" to "vDirTo". </p>
+<dl class="section note"><dt>Note</dt><dd>This function will ALWAYS return a quaternion that rotates from one direction to another. If both directions are identical, it is the unit rotation (none). If they are exactly opposing, this will be ANY 180.0 degree rotation. That means the vectors will align perfectly, but there is no determine rotation for other points that might be rotated with this quaternion. If a main / fallback axis is needed to rotate points, you need to calculate such a rotation with other means. </dd></dl>
+
+</div>
+</div>
 <a id="a626e119e067b041d16a8fd8bfb006c92"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a626e119e067b041d16a8fd8bfb006c92">&#9670;&nbsp;</a></span>ReconstructFromMat3()</h2>
 
@@ -314,123 +477,6 @@ template&lt;typename Type &gt; </div>
 
 </div>
 </div>
-<a id="a49829f80f46861fa33a195732adaee32"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a49829f80f46861fa33a195732adaee32">&#9670;&nbsp;</a></span>SetElements()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename Type &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">XII_ALWAYS_INLINE void <a class="el" href="../../d9/d1b/classxii_quat_template.htm">xiiQuatTemplate</a>&lt; Type &gt;::SetElements </td>
-          <td>(</td>
-          <td class="paramtype">Type&#160;</td>
-          <td class="paramname"><em>inX</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Type&#160;</td>
-          <td class="paramname"><em>inY</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Type&#160;</td>
-          <td class="paramname"><em>inZ</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Type&#160;</td>
-          <td class="paramname"><em>inW</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Sets the individual elements of the quaternion directly. Note that x,y,z do NOT represent a rotation axis, and w does NOT represent an angle. </p>
-<p>Use this function only if you have good understanding of quaternion math and know exactly what you are doing. </p>
-
-</div>
-</div>
-<a id="a57c283998a8fe1e5bc7c8725386f19d1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a57c283998a8fe1e5bc7c8725386f19d1">&#9670;&nbsp;</a></span>SetFromEulerAngles()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename Type &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="../../d9/d1b/classxii_quat_template.htm">xiiQuatTemplate</a>&lt; Type &gt;::SetFromEulerAngles </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="../../d3/ddb/classxii_angle_template.htm">xiiAngleTemplate</a>&lt; Type &gt; &amp;&#160;</td>
-          <td class="paramname"><em>x</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="../../d3/ddb/classxii_angle_template.htm">xiiAngleTemplate</a>&lt; Type &gt; &amp;&#160;</td>
-          <td class="paramname"><em>y</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="../../d3/ddb/classxii_angle_template.htm">xiiAngleTemplate</a>&lt; Type &gt; &amp;&#160;</td>
-          <td class="paramname"><em>z</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Sets the quaternion from Euler angles. </p>
-<p>Taken from here (yaw-&gt;pitch-&gt;roll, ZYX order or 3-2-1 order): <a href="https://en.wikipedia.org/wiki/Conversion_between_quaternions_and_Euler_angles">https://en.wikipedia.org/wiki/Conversion_between_quaternions_and_Euler_angles</a></p>
-
-</div>
-</div>
-<a id="a9eedbd0664e93fed324f940d37cc6791"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9eedbd0664e93fed324f940d37cc6791">&#9670;&nbsp;</a></span>SetShortestRotation()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename Type &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="../../d9/d1b/classxii_quat_template.htm">xiiQuatTemplate</a>&lt; Type &gt;::SetShortestRotation </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="../../d9/d9a/classxii_vec3_template.htm">xiiVec3Template</a>&lt; Type &gt; &amp;&#160;</td>
-          <td class="paramname"><em>vDirFrom</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="../../d9/d9a/classxii_vec3_template.htm">xiiVec3Template</a>&lt; Type &gt; &amp;&#160;</td>
-          <td class="paramname"><em>vDirTo</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Creates a quaternion, that rotates through the shortest arc from "vDirFrom" to "vDirTo". </p>
-<dl class="section note"><dt>Note</dt><dd>This function will ALWAYS return a quaternion that rotates from one direction to another. If both directions are identical, it is the unit rotation (none). If they are exactly opposing, this will be ANY 180.0 degree rotation. That means the vectors will align perfectly, but there is no determine rotation for other points that might be rotated with this quaternion. If a main / fallback axis is needed to rotate points, you need to calculate such a rotation with other means. </dd></dl>
-
-</div>
-</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>/home/runner/work/XII/XII/Source/Engine/Foundation/Math/<a class="el" href="../../d4/dbc/_engine_2_foundation_2_math_2_declarations_8h_source.htm">Declarations.h</a></li>
 <li>/home/runner/work/XII/XII/Source/Engine/Foundation/Math/<a class="el" href="../../dd/dbf/_quat_8h_source.htm">Quat.h</a></li>
@@ -442,7 +488,7 @@ template&lt;typename Type &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d9/d1b/classxii_quat_template.htm">xiiQuatTemplate</a></li>
-    <li class="footer">Generated on Mon Jun 3 2024 16:28:52 for XIIEngine by
+    <li class="footer">Generated on Wed Jun 12 2024 18:05:58 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

@@ -13,10 +13,6 @@ var classxii_simd_quat =
     [ "operator*", "db/dda/classxii_simd_quat.htm#acc2fdaa456eb71a25dd71e1743aa5363", null ],
     [ "operator-", "db/dda/classxii_simd_quat.htm#a814a871cd81c59817b578212f20492f5", null ],
     [ "operator==", "db/dda/classxii_simd_quat.htm#a98e328655ea5d32cfa364dd3438b1b04", null ],
-    [ "SetFromAxisAndAngle", "db/dda/classxii_simd_quat.htm#aa5964ce54b8060c47ad59811bafa460b", null ],
-    [ "SetIdentity", "db/dda/classxii_simd_quat.htm#a7d404f2facdc453321c87e2efba10869", null ],
-    [ "SetShortestRotation", "db/dda/classxii_simd_quat.htm#a56e2c8227e8fce2c4d5669add072fcd4", null ],
-    [ "SetSlerp", "db/dda/classxii_simd_quat.htm#aeddb58cf915f84945b3081c7a7b01123", null ],
     [ "XII_DECLARE_POD_TYPE", "db/dda/classxii_simd_quat.htm#aedb542db7e39813994a0a5cd0fa136da", null ],
     [ "m_v", "db/dda/classxii_simd_quat.htm#aadec02e1f747089a6928ac338ca5675c", null ]
 ];

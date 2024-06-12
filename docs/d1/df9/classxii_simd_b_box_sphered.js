@@ -1,8 +1,6 @@
 var classxii_simd_b_box_sphered =
 [
     [ "xiiSimdBBoxSphered", "d1/df9/classxii_simd_b_box_sphered.htm#a4ed1cea8398fa7b1313f6981258763f6", null ],
-    [ "xiiSimdBBoxSphered", "d1/df9/classxii_simd_b_box_sphered.htm#a9e88b58cd99ba7cadbee775dbb810880", null ],
-    [ "xiiSimdBBoxSphered", "d1/df9/classxii_simd_b_box_sphered.htm#adabd90e1ad53a346558ea76562f718ab", null ],
     [ "xiiSimdBBoxSphered", "d1/df9/classxii_simd_b_box_sphered.htm#a80257631157ff52a3a216e96b81e2968", null ],
     [ "xiiSimdBBoxSphered", "d1/df9/classxii_simd_b_box_sphered.htm#ad6ea290e48ebee2634f919520ac58d7e", null ],
     [ "ExpandToInclude", "d1/df9/classxii_simd_b_box_sphered.htm#a830d181e1305d9aa81f02095b1ee14c5", null ],
@@ -12,8 +10,6 @@ var classxii_simd_b_box_sphered =
     [ "IsValid", "d1/df9/classxii_simd_b_box_sphered.htm#a08fe4408fe11dbe75fd59ba37731ec35", null ],
     [ "operator!=", "d1/df9/classxii_simd_b_box_sphered.htm#a9678ef63d67731f9db69ed041c30d79a", null ],
     [ "operator==", "d1/df9/classxii_simd_b_box_sphered.htm#a10e1705ae183409e15c0f9e9937e1c34", null ],
-    [ "SetFromPoints", "d1/df9/classxii_simd_b_box_sphered.htm#a0be6494394471ad7dbf6ccaa31fa29ea", null ],
-    [ "SetInvalid", "d1/df9/classxii_simd_b_box_sphered.htm#aa29e158ea78f692a44d2e823e4860ba7", null ],
     [ "Transform", "d1/df9/classxii_simd_b_box_sphered.htm#ac41b9f64a7d33313754efdaf66a1ab0f", null ],
     [ "Transform", "d1/df9/classxii_simd_b_box_sphered.htm#a988450cc36f05cd68f44843fed18bcfa", null ],
     [ "XII_DECLARE_POD_TYPE", "d1/df9/classxii_simd_b_box_sphered.htm#aaecd86f64967ae455360308fbbcc0a99", null ],

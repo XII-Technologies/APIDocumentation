@@ -12,6 +12,6 @@ var classxii_script_coroutine =
     [ "Start", "de/d39/classxii_script_coroutine.htm#a4ce50e2cb100f34477a8f26ec6e85056", null ],
     [ "Stop", "de/d39/classxii_script_coroutine.htm#a60982cdf266ea8d52ec41c486fbaf816", null ],
     [ "Update", "de/d39/classxii_script_coroutine.htm#a4c365819dcf839e186ce197601276df1", null ],
-    [ "UpdateAndSchedule", "de/d39/classxii_script_coroutine.htm#abec9e4a75951f3703029d109a0e193aa", null ],
+    [ "UpdateAndSchedule", "de/d39/classxii_script_coroutine.htm#a58ca2b0d18e611475f55f5c145878c3b", null ],
     [ "xiiScriptWorldModule", "de/d39/classxii_script_coroutine.htm#ab974a0c043834000829c0e81fc7de8cd", null ]
 ];

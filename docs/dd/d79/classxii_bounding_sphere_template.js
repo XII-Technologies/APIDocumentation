@@ -2,7 +2,6 @@ var classxii_bounding_sphere_template =
 [
     [ "ComponentType", "dd/d79/classxii_bounding_sphere_template.htm#a5a45a86fbb55d2ea3e4e03654fc17364", null ],
     [ "xiiBoundingSphereTemplate", "dd/d79/classxii_bounding_sphere_template.htm#ab29bdcaf8caaaabbfc3cde668450992a", null ],
-    [ "xiiBoundingSphereTemplate", "dd/d79/classxii_bounding_sphere_template.htm#af7b6e5334173d3f8903dd21102f50459", null ],
     [ "Contains", "dd/d79/classxii_bounding_sphere_template.htm#a71508b015ef85d00d9d828aab4d6b07d", null ],
     [ "Contains", "dd/d79/classxii_bounding_sphere_template.htm#a1f9656c1bf1c2baabc26bd1a43c060c2", null ],
     [ "Contains", "dd/d79/classxii_bounding_sphere_template.htm#aa3582b68594ea926746e7c87f1965c27", null ],
@@ -30,10 +29,6 @@ var classxii_bounding_sphere_template =
     [ "Overlaps", "dd/d79/classxii_bounding_sphere_template.htm#aefef38c6ad5ce13dfc1a304d7a5ae739", null ],
     [ "ScaleFromCenter", "dd/d79/classxii_bounding_sphere_template.htm#aa7b595722f621ecff2fd21fe1ce37800", null ],
     [ "ScaleFromOrigin", "dd/d79/classxii_bounding_sphere_template.htm#ae773cba15bdae9d0952c3e11bb43d0c5", null ],
-    [ "SetElements", "dd/d79/classxii_bounding_sphere_template.htm#acaa11fe09e9bd6030e7e30977f983894", null ],
-    [ "SetFromPoints", "dd/d79/classxii_bounding_sphere_template.htm#a4557475810efa0432f86d10be6f65cff", null ],
-    [ "SetInvalid", "dd/d79/classxii_bounding_sphere_template.htm#a6d3ef02d63319009bff3083b16459cfc", null ],
-    [ "SetZero", "dd/d79/classxii_bounding_sphere_template.htm#a693d1bc86eb09c371a5ea478f009c208", null ],
     [ "TransformFromCenter", "dd/d79/classxii_bounding_sphere_template.htm#a38bf494dafd4350db92297c289297118", null ],
     [ "TransformFromOrigin", "dd/d79/classxii_bounding_sphere_template.htm#ad320a1dbfc60fe192dc29d744ca50752", null ],
     [ "Translate", "dd/d79/classxii_bounding_sphere_template.htm#ae7979964408018ed38e43c448914730a", null ],

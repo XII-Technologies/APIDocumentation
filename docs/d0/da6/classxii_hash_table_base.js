@@ -1,7 +1,7 @@
 var classxii_hash_table_base =
 [
-    [ "ConstIterator", "d2/d41/structxii_hash_table_base_1_1_const_iterator.htm", "d2/d41/structxii_hash_table_base_1_1_const_iterator" ],
-    [ "Iterator", "d7/dcf/structxii_hash_table_base_1_1_iterator.htm", "d7/dcf/structxii_hash_table_base_1_1_iterator" ],
+    [ "ConstIterator", "d0/da6/classxii_hash_table_base.htm#a71b5dd4fb15be1a2d91a083ad9380158", null ],
+    [ "Iterator", "d0/da6/classxii_hash_table_base.htm#ad9970f1bd58bea26bf89f3731fce3247", null ],
     [ "xiiHashTableBase", "d0/da6/classxii_hash_table_base.htm#ac324b2ff91ba07417d6b3b0536cd0de7", null ],
     [ "xiiHashTableBase", "d0/da6/classxii_hash_table_base.htm#ac1265ab7192761ee3fac5f559b6082a8", null ],
     [ "xiiHashTableBase", "d0/da6/classxii_hash_table_base.htm#a859d7b67c643274772ca850fc286af7b", null ],
@@ -13,7 +13,7 @@ var classxii_hash_table_base =
     [ "Find", "d0/da6/classxii_hash_table_base.htm#ab506c027ed750515afdb6d846e2b2011", null ],
     [ "Find", "d0/da6/classxii_hash_table_base.htm#a4a67d421ca6cbaec53333e177277d471", null ],
     [ "FindEntry", "d0/da6/classxii_hash_table_base.htm#a69a32e552fabbf7301549006ddeecafc", null ],
-    [ "FindOrAdd", "d0/da6/classxii_hash_table_base.htm#a7c350c97854c595ecd25fcd0302f5e00", null ],
+    [ "FindOrAdd", "d0/da6/classxii_hash_table_base.htm#af1c3f0f81b3f0d9d466a1abb4059d6b7", null ],
     [ "GetAllocator", "d0/da6/classxii_hash_table_base.htm#a62a80a071f6afeeaab5ebbfeab7a27cf", null ],
     [ "GetCount", "d0/da6/classxii_hash_table_base.htm#a49b9f741e5574293c600f9ec72afea9f", null ],
     [ "GetEndIterator", "d0/da6/classxii_hash_table_base.htm#acd182ab4090c58ebbfaead6505c5a2df", null ],
@@ -43,5 +43,7 @@ var classxii_hash_table_base =
     [ "TryGetValue", "d0/da6/classxii_hash_table_base.htm#a51c667222c333ada51fac7cd90da734b", null ],
     [ "TryGetValue", "d0/da6/classxii_hash_table_base.htm#a1e6e1c1bc9869dbc4951cfa97fe1d4ac", null ],
     [ "TryGetValue", "d0/da6/classxii_hash_table_base.htm#a1bb2c25791102db37be680622f5402af", null ],
-    [ "TryGetValue", "d0/da6/classxii_hash_table_base.htm#a1f0d3c967a0322a4e6fe90ae83368d00", null ]
+    [ "TryGetValue", "d0/da6/classxii_hash_table_base.htm#a1f0d3c967a0322a4e6fe90ae83368d00", null ],
+    [ "xiiHashTableBaseConstIterator< KeyType, ValueType, Hasher >", "d0/da6/classxii_hash_table_base.htm#a9a5e394918c084fd78a363326c3acfff", null ],
+    [ "xiiHashTableBaseIterator< KeyType, ValueType, Hasher >", "d0/da6/classxii_hash_table_base.htm#a665b050ce3edc70cc508750ab8b2b546", null ]
 ];

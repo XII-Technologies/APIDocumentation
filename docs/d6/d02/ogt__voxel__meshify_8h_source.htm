@@ -91,7 +91,7 @@ $(document).ready(function(){initNavTree('d6/d02/ogt__voxel__meshify_8h_source.h
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">    opengametools voxel meshifier - v0.9 - MIT license - Justin Paver, April 2020</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"></span> </div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">    This is a single-header-file library that provides easy-to-use</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">    support for converting paletted voxel grid data into an indexed triangle mesh. </span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">    support for converting paletted voxel grid data into an indexed triangle mesh.</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"></span> </div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">    Please see the MIT license information at the end of this file.</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment"></span> </div>
@@ -108,11 +108,11 @@ $(document).ready(function(){initNavTree('d6/d02/ogt__voxel__meshify_8h_source.h
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment">    2. convert into a mesh</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment"></span> </div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment">        ogt_mesh* mesh = ogt_mesh_from_paletted_voxels_simple( voxel_data, size_x, size_y, size_z, voxel_palette );</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment">    </span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment"></span> </div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment">    3. use the indexed triangle list in the mesh to construct renderable geometry, collision geometry.</span></div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment"></span> </div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment">        // This is old sceen OpenGL immediate mode rendering for demonstration purposes only.</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment">        // Ideally you&#39;d use more modern practices for rendering, including converting ogt_mesh data to </span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment">        // Ideally you&#39;d use more modern practices for rendering, including converting ogt_mesh data to</span></div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment">        // your own engine&#39;s layout.</span></div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment"></span> </div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment">        glBegin(GL_TRIANGLES);</span></div>
@@ -147,7 +147,7 @@ $(document).ready(function(){initNavTree('d6/d02/ogt__voxel__meshify_8h_source.h
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="comment">        For this reason, palette[0] will never be used.</span></div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="comment"></span> </div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="comment">        Voxel data is laid out in x, then y, then z order. In other words, given</span></div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="comment">        a coordinate (x,y,z) within your grid, you can compute where it is in your voxel </span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="comment">        a coordinate (x,y,z) within your grid, you can compute where it is in your voxel</span></div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="comment">        array using the following logic:</span></div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="comment"></span> </div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="comment">            voxel_index = x + (y * size_x) + (z * size_x * size_y);</span></div>
@@ -1486,7 +1486,7 @@ $(document).ready(function(){initNavTree('d6/d02/ogt__voxel__meshify_8h_source.h
 <div class="line"><a name="l01397"></a><span class="lineno"> 1397</span>&#160;<span class="comment">//</span></div>
 <div class="line"><a name="l01398"></a><span class="lineno"> 1398</span>&#160;<span class="comment">//        (e1)</span></div>
 <div class="line"><a name="l01399"></a><span class="lineno"> 1399</span>&#160;<span class="comment">//   v1 +-------+ v2</span></div>
-<div class="line"><a name="l01400"></a><span class="lineno"> 1400</span>&#160;<span class="comment">//(e0)  | X | X |  (e2)   X is the color inside the polygon</span></div>
+<div class="line"><a name="l01400"></a><span class="lineno"> 1400</span>&#160;<span class="comment">//(e0)  | X | X |   (e2)    X is the color inside the polygon</span></div>
 <div class="line"><a name="l01401"></a><span class="lineno"> 1401</span>&#160;<span class="comment">//   v0 +       + v3</span></div>
 <div class="line"><a name="l01402"></a><span class="lineno"> 1402</span>&#160;<span class="comment">//</span></div>
 <div class="line"><a name="l01403"></a><span class="lineno"> 1403</span>&#160;<span class="comment">// edge1 corresponds to the next_edge_index edge within the current polygon ring.</span></div>
@@ -1516,9 +1516,9 @@ $(document).ready(function(){initNavTree('d6/d02/ogt__voxel__meshify_8h_source.h
 <div class="line"><a name="l01427"></a><span class="lineno"> 1427</span>&#160;<span class="comment">//</span></div>
 <div class="line"><a name="l01428"></a><span class="lineno"> 1428</span>&#160;<span class="comment">//        X   C</span></div>
 <div class="line"><a name="l01429"></a><span class="lineno"> 1429</span>&#160;<span class="comment">//      +---*---+</span></div>
-<div class="line"><a name="l01430"></a><span class="lineno"> 1430</span>&#160;<span class="comment">//    B | X | X | D     A,B,C,D are colors along the outside of the edges.</span></div>
+<div class="line"><a name="l01430"></a><span class="lineno"> 1430</span>&#160;<span class="comment">//    B | X | X | D      A,B,C,D are colors along the outside of the edges.</span></div>
 <div class="line"><a name="l01431"></a><span class="lineno"> 1431</span>&#160;<span class="comment">//      *   |   |           Here * are new points of the edges because of an</span></div>
-<div class="line"><a name="l01432"></a><span class="lineno"> 1432</span>&#160;<span class="comment">//    A | X | X | D     exterior change of color along the edge.</span></div>
+<div class="line"><a name="l01432"></a><span class="lineno"> 1432</span>&#160;<span class="comment">//    A | X | X | D      exterior change of color along the edge.</span></div>
 <div class="line"><a name="l01433"></a><span class="lineno"> 1433</span>&#160;<span class="comment">//      |   |   |</span></div>
 <div class="line"><a name="l01434"></a><span class="lineno"> 1434</span>&#160;<span class="comment">//    A | X | X | D</span></div>
 <div class="line"><a name="l01435"></a><span class="lineno"> 1435</span>&#160;<span class="comment">//      +       +</span></div>
@@ -2075,7 +2075,7 @@ $(document).ready(function(){initNavTree('d6/d02/ogt__voxel__meshify_8h_source.h
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.htm">home</a></li><li class="navelem"><a class="el" href="../../dir_1036706e55c22cab35bc1c58ee689f1d.htm">runner</a></li><li class="navelem"><a class="el" href="../../dir_629f8151d55d307162ff2d619fb1783d.htm">work</a></li><li class="navelem"><a class="el" href="../../dir_1ddc44fe1263a8c7935fa6130b7d9499.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_2c1b6808f12952f4c36e05ba7068379a.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_b5a1c4ecfca018ad24b729e213296d41.htm">Source</a></li><li class="navelem"><a class="el" href="../../dir_64f53f8da7bf780a58c32bb848e7873b.htm">Tools</a></li><li class="navelem"><a class="el" href="../../dir_4b5bc41f7c4cbfc8ca80bdea56300f1d.htm">Libs</a></li><li class="navelem"><a class="el" href="../../dir_a36b12e086794fd839094270793bf27a.htm">ModelImporter2</a></li><li class="navelem"><a class="el" href="../../dir_b9b3c97ede53e89757abe5d6480bc1a6.htm">ImporterMagicaVoxel</a></li><li class="navelem"><b>ogt_voxel_meshify.h</b></li>
-    <li class="footer">Generated on Mon Jun 3 2024 16:28:48 for XIIEngine by
+    <li class="footer">Generated on Wed Jun 12 2024 18:05:54 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

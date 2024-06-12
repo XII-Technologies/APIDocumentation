@@ -8,7 +8,7 @@ var classxii_o_s_thread =
     [ "m_EntryPoint", "d6/db1/classxii_o_s_thread.htm#af7158f8f520483192834b9f2040b3102", null ],
     [ "m_hHandle", "d6/db1/classxii_o_s_thread.htm#abc1395b9c38a5ceb51992cd4e40b346a", null ],
     [ "m_pUserData", "d6/db1/classxii_o_s_thread.htm#a5a640e5e22e42d7e64218564dfe66bba", null ],
-    [ "m_sName", "d6/db1/classxii_o_s_thread.htm#a291c2677ccb1ae5c7af30cf563bae563", null ],
+    [ "m_sName", "d6/db1/classxii_o_s_thread.htm#a5f986177f23e013d4533011fa9817fdb", null ],
     [ "m_ThreadID", "d6/db1/classxii_o_s_thread.htm#a958f802b9ca7232eca7e7a29a99b2525", null ],
     [ "m_uiStackSize", "d6/db1/classxii_o_s_thread.htm#a52f203611fdf40bc5df347f68ca58bc2", null ]
 ];

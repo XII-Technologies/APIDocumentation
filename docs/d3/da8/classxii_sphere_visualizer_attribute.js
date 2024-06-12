@@ -1,7 +1,7 @@
 var classxii_sphere_visualizer_attribute =
 [
     [ "xiiSphereVisualizerAttribute", "d3/da8/classxii_sphere_visualizer_attribute.htm#ab375dcbcc29973ddf721b9129d8238aa", null ],
-    [ "xiiSphereVisualizerAttribute", "d3/da8/classxii_sphere_visualizer_attribute.htm#a165988a4c853a15ecc4effc8503cc9c4", null ],
+    [ "xiiSphereVisualizerAttribute", "d3/da8/classxii_sphere_visualizer_attribute.htm#a30822ce0dcbad9b2a0398eeccda3adc0", null ],
     [ "GetColorProperty", "d3/da8/classxii_sphere_visualizer_attribute.htm#a57d603f9621858a966946bb0e6d5c339", null ],
     [ "GetOffsetProperty", "d3/da8/classxii_sphere_visualizer_attribute.htm#a34a303103123c1840ecc6b6095186009", null ],
     [ "GetRadiusProperty", "d3/da8/classxii_sphere_visualizer_attribute.htm#a534218c9abb05694d010c9822d867ca5", null ],

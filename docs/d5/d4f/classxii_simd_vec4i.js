@@ -12,6 +12,8 @@ var classxii_simd_vec4i =
     [ "CompMul", "d5/d4f/classxii_simd_vec4i.htm#a3e969750240dfbd7c7e60aa36c88b838", null ],
     [ "Get", "d5/d4f/classxii_simd_vec4i.htm#ab23a827e0695e6ffc78141b8d2626e97", null ],
     [ "Get", "d5/d4f/classxii_simd_vec4i.htm#aff7d46b506805d284e5cca43c1662e9b", null ],
+    [ "GetCombined", "d5/d4f/classxii_simd_vec4i.htm#a1cd526dc7078c4ce749412534ea4bbb4", null ],
+    [ "GetCombined", "d5/d4f/classxii_simd_vec4i.htm#a3cbee77b6fc4639a9b02070bd000e986", null ],
     [ "GetComponent", "d5/d4f/classxii_simd_vec4i.htm#ab836387d04270221f40a1bcce58fd7c5", null ],
     [ "GetComponent", "d5/d4f/classxii_simd_vec4i.htm#a9c37f95c8db9190e44734f85ca239b5f", null ],
     [ "Load", "d5/d4f/classxii_simd_vec4i.htm#aba86cce922efdd2a76b15bfd4616e319", null ],

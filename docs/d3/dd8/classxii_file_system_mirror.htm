@@ -101,9 +101,20 @@ Classes</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:aabcd76efbd7ead468ce04ca19dfe389a"><td class="memItemLeft" align="right" valign="top"><a id="aabcd76efbd7ead468ce04ca19dfe389a"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>Type</b> { <b>File</b>, 
+<b>Directory</b>, 
+<b>File</b>, 
 <b>Directory</b>
  }</td></tr>
 <tr class="separator:aabcd76efbd7ead468ce04ca19dfe389a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aabcd76efbd7ead468ce04ca19dfe389a"><td class="memItemLeft" align="right" valign="top"><a id="aabcd76efbd7ead468ce04ca19dfe389a"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>Type</b> { <b>File</b>, 
+<b>Directory</b>, 
+<b>File</b>, 
+<b>Directory</b>
+ }</td></tr>
+<tr class="separator:aabcd76efbd7ead468ce04ca19dfe389a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab803555d25f134052b87fbce852dc353"><td class="memItemLeft" align="right" valign="top"><a id="ab803555d25f134052b87fbce852dc353"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>EnumerateFunc</b> = <a class="el" href="../../dc/d84/structxii_delegate.htm">xiiDelegate</a>&lt; void(const <a class="el" href="../../d4/dbb/classxii_string_builder.htm">xiiStringBuilder</a> &amp;path, Type type)&gt;</td></tr>
+<tr class="separator:ab803555d25f134052b87fbce852dc353"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab803555d25f134052b87fbce852dc353"><td class="memItemLeft" align="right" valign="top"><a id="ab803555d25f134052b87fbce852dc353"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>EnumerateFunc</b> = <a class="el" href="../../dc/d84/structxii_delegate.htm">xiiDelegate</a>&lt; void(const <a class="el" href="../../d4/dbb/classxii_string_builder.htm">xiiStringBuilder</a> &amp;path, Type type)&gt;</td></tr>
 <tr class="separator:ab803555d25f134052b87fbce852dc353"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -128,9 +139,27 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a575f2e3050a5ef56877bec6fd9b176ca"><td class="memItemLeft" align="right" valign="top"><a id="a575f2e3050a5ef56877bec6fd9b176ca"></a>
 <a class="el" href="../../dd/dad/structxii_result.htm">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Enumerate</b> (<a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sPath, <a class="el" href="../../dc/d84/structxii_delegate.htm">EnumerateFunc</a> callbackFunc)</td></tr>
 <tr class="separator:a575f2e3050a5ef56877bec6fd9b176ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92c10e64d5d07e5fe2444e1c2a737a94"><td class="memItemLeft" align="right" valign="top"><a id="a92c10e64d5d07e5fe2444e1c2a737a94"></a>
+<a class="el" href="../../dd/dad/structxii_result.htm">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><b>AddDirectory</b> (<a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sPath, bool *out_pDirectoryExistsAlready=nullptr)</td></tr>
+<tr class="separator:a92c10e64d5d07e5fe2444e1c2a737a94"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c235af483d11d88bc823adb2ed7d16e"><td class="memItemLeft" align="right" valign="top"><a id="a7c235af483d11d88bc823adb2ed7d16e"></a>
+<a class="el" href="../../dd/dad/structxii_result.htm">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><b>AddFile</b> (<a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sPath, const T &amp;value, bool *out_pFileExistsAlready, T *out_pOldValue)</td></tr>
+<tr class="separator:a7c235af483d11d88bc823adb2ed7d16e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a706baffbfea46f36ca8ba8c8b0c99179"><td class="memItemLeft" align="right" valign="top"><a id="a706baffbfea46f36ca8ba8c8b0c99179"></a>
+<a class="el" href="../../dd/dad/structxii_result.htm">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><b>RemoveFile</b> (<a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sPath)</td></tr>
+<tr class="separator:a706baffbfea46f36ca8ba8c8b0c99179"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aefc932aaa0074f4893548b9ddf09c19e"><td class="memItemLeft" align="right" valign="top"><a id="aefc932aaa0074f4893548b9ddf09c19e"></a>
+<a class="el" href="../../dd/dad/structxii_result.htm">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><b>RemoveDirectory</b> (<a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sPath)</td></tr>
+<tr class="separator:aefc932aaa0074f4893548b9ddf09c19e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad777dfdf69ab8e1a40d4231e4f91999"><td class="memItemLeft" align="right" valign="top"><a id="aad777dfdf69ab8e1a40d4231e4f91999"></a>
+<a class="el" href="../../dd/dad/structxii_result.htm">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><b>MoveDirectory</b> (<a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sFromPath, <a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sToPath)</td></tr>
+<tr class="separator:aad777dfdf69ab8e1a40d4231e4f91999"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a575f2e3050a5ef56877bec6fd9b176ca"><td class="memItemLeft" align="right" valign="top"><a id="a575f2e3050a5ef56877bec6fd9b176ca"></a>
+<a class="el" href="../../dd/dad/structxii_result.htm">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Enumerate</b> (<a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sPath, <a class="el" href="../../dc/d84/structxii_delegate.htm">EnumerateFunc</a> callbackFunc)</td></tr>
+<tr class="separator:a575f2e3050a5ef56877bec6fd9b176ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>/home/runner/work/XII/XII/Source/Engine/Foundation/IO/Implementation/Shared/<a class="el" href="../../d8/d46/_file_system_mirror_8h_source.htm">FileSystemMirror.h</a></li>
+<li>/home/runner/work/XII/XII/Source/Engine/Foundation/IO/Implementation/<a class="el" href="../../d8/d46/_file_system_mirror_8h_source.htm">FileSystemMirror.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -138,7 +167,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d3/dd8/classxii_file_system_mirror.htm">xiiFileSystemMirror</a></li>
-    <li class="footer">Generated on Mon Jun 3 2024 16:28:50 for XIIEngine by
+    <li class="footer">Generated on Wed Jun 12 2024 18:05:55 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

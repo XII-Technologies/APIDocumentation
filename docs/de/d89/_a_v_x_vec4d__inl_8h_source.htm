@@ -657,57 +657,51 @@ $(document).ready(function(){initNavTree('de/d89/_a_v_x_vec4d__inl_8h_source.htm
 <div class="line"><a name="l00568"></a><span class="lineno">  568</span>&#160;}</div>
 <div class="line"><a name="l00569"></a><span class="lineno">  569</span>&#160; </div>
 <div class="line"><a name="l00570"></a><span class="lineno">  570</span>&#160;<span class="comment">// static</span></div>
-<div class="line"><a name="l00571"></a><span class="lineno">  571</span>&#160;XII_ALWAYS_INLINE <a class="code" href="../../d5/dba/classxii_simd_vec4d.htm">xiiSimdVec4d</a> xiiSimdVec4d::ZeroVector()</div>
+<div class="line"><a name="l00571"></a><span class="lineno">  571</span>&#160;XII_ALWAYS_INLINE <a class="code" href="../../d5/dba/classxii_simd_vec4d.htm">xiiSimdVec4d</a> xiiSimdVec4d::MulAdd(<span class="keyword">const</span> <a class="code" href="../../d5/dba/classxii_simd_vec4d.htm">xiiSimdVec4d</a>&amp; a, <span class="keyword">const</span> <a class="code" href="../../d5/dba/classxii_simd_vec4d.htm">xiiSimdVec4d</a>&amp; b, <span class="keyword">const</span> <a class="code" href="../../d5/dba/classxii_simd_vec4d.htm">xiiSimdVec4d</a>&amp; c)</div>
 <div class="line"><a name="l00572"></a><span class="lineno">  572</span>&#160;{</div>
-<div class="line"><a name="l00573"></a><span class="lineno">  573</span>&#160;  <span class="keywordflow">return</span> _mm256_setzero_pd();</div>
-<div class="line"><a name="l00574"></a><span class="lineno">  574</span>&#160;}</div>
-<div class="line"><a name="l00575"></a><span class="lineno">  575</span>&#160; </div>
-<div class="line"><a name="l00576"></a><span class="lineno">  576</span>&#160;<span class="comment">// static</span></div>
-<div class="line"><a name="l00577"></a><span class="lineno">  577</span>&#160;XII_ALWAYS_INLINE <a class="code" href="../../d5/dba/classxii_simd_vec4d.htm">xiiSimdVec4d</a> xiiSimdVec4d::MulAdd(<span class="keyword">const</span> <a class="code" href="../../d5/dba/classxii_simd_vec4d.htm">xiiSimdVec4d</a>&amp; a, <span class="keyword">const</span> <a class="code" href="../../d5/dba/classxii_simd_vec4d.htm">xiiSimdVec4d</a>&amp; b, <span class="keyword">const</span> <a class="code" href="../../d5/dba/classxii_simd_vec4d.htm">xiiSimdVec4d</a>&amp; c)</div>
-<div class="line"><a name="l00578"></a><span class="lineno">  578</span>&#160;{</div>
-<div class="line"><a name="l00579"></a><span class="lineno">  579</span>&#160;<span class="preprocessor">#if XII_SSE_LEVEL &gt;= XII_AVX_2</span></div>
-<div class="line"><a name="l00580"></a><span class="lineno">  580</span>&#160;  <span class="keywordflow">return</span> _mm256_fmadd_pd(a.m_v, b.m_v, c.m_v);</div>
-<div class="line"><a name="l00581"></a><span class="lineno">  581</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00582"></a><span class="lineno">  582</span>&#160;  <span class="keywordflow">return</span> a.CompMul(b) + c;</div>
-<div class="line"><a name="l00583"></a><span class="lineno">  583</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00584"></a><span class="lineno">  584</span>&#160;}</div>
-<div class="line"><a name="l00585"></a><span class="lineno">  585</span>&#160; </div>
-<div class="line"><a name="l00586"></a><span class="lineno">  586</span>&#160;<span class="comment">// static</span></div>
-<div class="line"><a name="l00587"></a><span class="lineno">  587</span>&#160;XII_ALWAYS_INLINE <a class="code" href="../../d5/dba/classxii_simd_vec4d.htm">xiiSimdVec4d</a> xiiSimdVec4d::MulAdd(<span class="keyword">const</span> <a class="code" href="../../d5/dba/classxii_simd_vec4d.htm">xiiSimdVec4d</a>&amp; a, <span class="keyword">const</span> <a class="code" href="../../d7/df1/classxii_simd_double.htm">xiiSimdDouble</a>&amp; b, <span class="keyword">const</span> <a class="code" href="../../d5/dba/classxii_simd_vec4d.htm">xiiSimdVec4d</a>&amp; c)</div>
-<div class="line"><a name="l00588"></a><span class="lineno">  588</span>&#160;{</div>
-<div class="line"><a name="l00589"></a><span class="lineno">  589</span>&#160;<span class="preprocessor">#if XII_SSE_LEVEL &gt;= XII_AVX_2</span></div>
-<div class="line"><a name="l00590"></a><span class="lineno">  590</span>&#160;  <span class="keywordflow">return</span> _mm256_fmadd_pd(a.m_v, b.m_v, c.m_v);</div>
-<div class="line"><a name="l00591"></a><span class="lineno">  591</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00592"></a><span class="lineno">  592</span>&#160;  <span class="keywordflow">return</span> a * b + c;</div>
-<div class="line"><a name="l00593"></a><span class="lineno">  593</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00594"></a><span class="lineno">  594</span>&#160;}</div>
-<div class="line"><a name="l00595"></a><span class="lineno">  595</span>&#160; </div>
-<div class="line"><a name="l00596"></a><span class="lineno">  596</span>&#160;<span class="comment">// static</span></div>
-<div class="line"><a name="l00597"></a><span class="lineno">  597</span>&#160;XII_ALWAYS_INLINE <a class="code" href="../../d5/dba/classxii_simd_vec4d.htm">xiiSimdVec4d</a> xiiSimdVec4d::MulSub(<span class="keyword">const</span> <a class="code" href="../../d5/dba/classxii_simd_vec4d.htm">xiiSimdVec4d</a>&amp; a, <span class="keyword">const</span> <a class="code" href="../../d5/dba/classxii_simd_vec4d.htm">xiiSimdVec4d</a>&amp; b, <span class="keyword">const</span> <a class="code" href="../../d5/dba/classxii_simd_vec4d.htm">xiiSimdVec4d</a>&amp; c)</div>
-<div class="line"><a name="l00598"></a><span class="lineno">  598</span>&#160;{</div>
-<div class="line"><a name="l00599"></a><span class="lineno">  599</span>&#160;<span class="preprocessor">#if XII_SSE_LEVEL &gt;= XII_AVX_2</span></div>
-<div class="line"><a name="l00600"></a><span class="lineno">  600</span>&#160;  <span class="keywordflow">return</span> _mm256_fmsub_pd(a.m_v, b.m_v, c.m_v);</div>
-<div class="line"><a name="l00601"></a><span class="lineno">  601</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00602"></a><span class="lineno">  602</span>&#160;  <span class="keywordflow">return</span> a.CompMul(b) - c;</div>
-<div class="line"><a name="l00603"></a><span class="lineno">  603</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00604"></a><span class="lineno">  604</span>&#160;}</div>
-<div class="line"><a name="l00605"></a><span class="lineno">  605</span>&#160; </div>
-<div class="line"><a name="l00606"></a><span class="lineno">  606</span>&#160;<span class="comment">// static</span></div>
-<div class="line"><a name="l00607"></a><span class="lineno">  607</span>&#160;XII_ALWAYS_INLINE <a class="code" href="../../d5/dba/classxii_simd_vec4d.htm">xiiSimdVec4d</a> xiiSimdVec4d::MulSub(<span class="keyword">const</span> <a class="code" href="../../d5/dba/classxii_simd_vec4d.htm">xiiSimdVec4d</a>&amp; a, <span class="keyword">const</span> <a class="code" href="../../d7/df1/classxii_simd_double.htm">xiiSimdDouble</a>&amp; b, <span class="keyword">const</span> <a class="code" href="../../d5/dba/classxii_simd_vec4d.htm">xiiSimdVec4d</a>&amp; c)</div>
-<div class="line"><a name="l00608"></a><span class="lineno">  608</span>&#160;{</div>
-<div class="line"><a name="l00609"></a><span class="lineno">  609</span>&#160;<span class="preprocessor">#if XII_SSE_LEVEL &gt;= XII_AVX_2</span></div>
-<div class="line"><a name="l00610"></a><span class="lineno">  610</span>&#160;  <span class="keywordflow">return</span> _mm256_fmsub_pd(a.m_v, b.m_v, c.m_v);</div>
-<div class="line"><a name="l00611"></a><span class="lineno">  611</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00612"></a><span class="lineno">  612</span>&#160;  <span class="keywordflow">return</span> a * b - c;</div>
-<div class="line"><a name="l00613"></a><span class="lineno">  613</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00614"></a><span class="lineno">  614</span>&#160;}</div>
-<div class="line"><a name="l00615"></a><span class="lineno">  615</span>&#160; </div>
-<div class="line"><a name="l00616"></a><span class="lineno">  616</span>&#160;<span class="comment">// static</span></div>
-<div class="line"><a name="l00617"></a><span class="lineno">  617</span>&#160;XII_ALWAYS_INLINE <a class="code" href="../../d5/dba/classxii_simd_vec4d.htm">xiiSimdVec4d</a> xiiSimdVec4d::CopySign(<span class="keyword">const</span> <a class="code" href="../../d5/dba/classxii_simd_vec4d.htm">xiiSimdVec4d</a>&amp; vMagnitude, <span class="keyword">const</span> <a class="code" href="../../d5/dba/classxii_simd_vec4d.htm">xiiSimdVec4d</a>&amp; vSign)</div>
-<div class="line"><a name="l00618"></a><span class="lineno">  618</span>&#160;{</div>
-<div class="line"><a name="l00619"></a><span class="lineno">  619</span>&#160;  __m256d minusZero = _mm256_set1_pd(-0.0);</div>
-<div class="line"><a name="l00620"></a><span class="lineno">  620</span>&#160;  <span class="keywordflow">return</span> _mm256_or_pd(_mm256_andnot_pd(minusZero, vMagnitude.m_v), _mm256_and_pd(minusZero, vSign.m_v));</div>
-<div class="line"><a name="l00621"></a><span class="lineno">  621</span>&#160;}</div>
+<div class="line"><a name="l00573"></a><span class="lineno">  573</span>&#160;<span class="preprocessor">#if XII_SSE_LEVEL &gt;= XII_AVX_2</span></div>
+<div class="line"><a name="l00574"></a><span class="lineno">  574</span>&#160;  <span class="keywordflow">return</span> _mm256_fmadd_pd(a.m_v, b.m_v, c.m_v);</div>
+<div class="line"><a name="l00575"></a><span class="lineno">  575</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00576"></a><span class="lineno">  576</span>&#160;  <span class="keywordflow">return</span> a.CompMul(b) + c;</div>
+<div class="line"><a name="l00577"></a><span class="lineno">  577</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00578"></a><span class="lineno">  578</span>&#160;}</div>
+<div class="line"><a name="l00579"></a><span class="lineno">  579</span>&#160; </div>
+<div class="line"><a name="l00580"></a><span class="lineno">  580</span>&#160;<span class="comment">// static</span></div>
+<div class="line"><a name="l00581"></a><span class="lineno">  581</span>&#160;XII_ALWAYS_INLINE <a class="code" href="../../d5/dba/classxii_simd_vec4d.htm">xiiSimdVec4d</a> xiiSimdVec4d::MulAdd(<span class="keyword">const</span> <a class="code" href="../../d5/dba/classxii_simd_vec4d.htm">xiiSimdVec4d</a>&amp; a, <span class="keyword">const</span> <a class="code" href="../../d7/df1/classxii_simd_double.htm">xiiSimdDouble</a>&amp; b, <span class="keyword">const</span> <a class="code" href="../../d5/dba/classxii_simd_vec4d.htm">xiiSimdVec4d</a>&amp; c)</div>
+<div class="line"><a name="l00582"></a><span class="lineno">  582</span>&#160;{</div>
+<div class="line"><a name="l00583"></a><span class="lineno">  583</span>&#160;<span class="preprocessor">#if XII_SSE_LEVEL &gt;= XII_AVX_2</span></div>
+<div class="line"><a name="l00584"></a><span class="lineno">  584</span>&#160;  <span class="keywordflow">return</span> _mm256_fmadd_pd(a.m_v, b.m_v, c.m_v);</div>
+<div class="line"><a name="l00585"></a><span class="lineno">  585</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00586"></a><span class="lineno">  586</span>&#160;  <span class="keywordflow">return</span> a * b + c;</div>
+<div class="line"><a name="l00587"></a><span class="lineno">  587</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00588"></a><span class="lineno">  588</span>&#160;}</div>
+<div class="line"><a name="l00589"></a><span class="lineno">  589</span>&#160; </div>
+<div class="line"><a name="l00590"></a><span class="lineno">  590</span>&#160;<span class="comment">// static</span></div>
+<div class="line"><a name="l00591"></a><span class="lineno">  591</span>&#160;XII_ALWAYS_INLINE <a class="code" href="../../d5/dba/classxii_simd_vec4d.htm">xiiSimdVec4d</a> xiiSimdVec4d::MulSub(<span class="keyword">const</span> <a class="code" href="../../d5/dba/classxii_simd_vec4d.htm">xiiSimdVec4d</a>&amp; a, <span class="keyword">const</span> <a class="code" href="../../d5/dba/classxii_simd_vec4d.htm">xiiSimdVec4d</a>&amp; b, <span class="keyword">const</span> <a class="code" href="../../d5/dba/classxii_simd_vec4d.htm">xiiSimdVec4d</a>&amp; c)</div>
+<div class="line"><a name="l00592"></a><span class="lineno">  592</span>&#160;{</div>
+<div class="line"><a name="l00593"></a><span class="lineno">  593</span>&#160;<span class="preprocessor">#if XII_SSE_LEVEL &gt;= XII_AVX_2</span></div>
+<div class="line"><a name="l00594"></a><span class="lineno">  594</span>&#160;  <span class="keywordflow">return</span> _mm256_fmsub_pd(a.m_v, b.m_v, c.m_v);</div>
+<div class="line"><a name="l00595"></a><span class="lineno">  595</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00596"></a><span class="lineno">  596</span>&#160;  <span class="keywordflow">return</span> a.CompMul(b) - c;</div>
+<div class="line"><a name="l00597"></a><span class="lineno">  597</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00598"></a><span class="lineno">  598</span>&#160;}</div>
+<div class="line"><a name="l00599"></a><span class="lineno">  599</span>&#160; </div>
+<div class="line"><a name="l00600"></a><span class="lineno">  600</span>&#160;<span class="comment">// static</span></div>
+<div class="line"><a name="l00601"></a><span class="lineno">  601</span>&#160;XII_ALWAYS_INLINE <a class="code" href="../../d5/dba/classxii_simd_vec4d.htm">xiiSimdVec4d</a> xiiSimdVec4d::MulSub(<span class="keyword">const</span> <a class="code" href="../../d5/dba/classxii_simd_vec4d.htm">xiiSimdVec4d</a>&amp; a, <span class="keyword">const</span> <a class="code" href="../../d7/df1/classxii_simd_double.htm">xiiSimdDouble</a>&amp; b, <span class="keyword">const</span> <a class="code" href="../../d5/dba/classxii_simd_vec4d.htm">xiiSimdVec4d</a>&amp; c)</div>
+<div class="line"><a name="l00602"></a><span class="lineno">  602</span>&#160;{</div>
+<div class="line"><a name="l00603"></a><span class="lineno">  603</span>&#160;<span class="preprocessor">#if XII_SSE_LEVEL &gt;= XII_AVX_2</span></div>
+<div class="line"><a name="l00604"></a><span class="lineno">  604</span>&#160;  <span class="keywordflow">return</span> _mm256_fmsub_pd(a.m_v, b.m_v, c.m_v);</div>
+<div class="line"><a name="l00605"></a><span class="lineno">  605</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00606"></a><span class="lineno">  606</span>&#160;  <span class="keywordflow">return</span> a * b - c;</div>
+<div class="line"><a name="l00607"></a><span class="lineno">  607</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00608"></a><span class="lineno">  608</span>&#160;}</div>
+<div class="line"><a name="l00609"></a><span class="lineno">  609</span>&#160; </div>
+<div class="line"><a name="l00610"></a><span class="lineno">  610</span>&#160;<span class="comment">// static</span></div>
+<div class="line"><a name="l00611"></a><span class="lineno">  611</span>&#160;XII_ALWAYS_INLINE <a class="code" href="../../d5/dba/classxii_simd_vec4d.htm">xiiSimdVec4d</a> xiiSimdVec4d::CopySign(<span class="keyword">const</span> <a class="code" href="../../d5/dba/classxii_simd_vec4d.htm">xiiSimdVec4d</a>&amp; vMagnitude, <span class="keyword">const</span> <a class="code" href="../../d5/dba/classxii_simd_vec4d.htm">xiiSimdVec4d</a>&amp; vSign)</div>
+<div class="line"><a name="l00612"></a><span class="lineno">  612</span>&#160;{</div>
+<div class="line"><a name="l00613"></a><span class="lineno">  613</span>&#160;  __m256d minusZero = _mm256_set1_pd(-0.0);</div>
+<div class="line"><a name="l00614"></a><span class="lineno">  614</span>&#160;  <span class="keywordflow">return</span> _mm256_or_pd(_mm256_andnot_pd(minusZero, vMagnitude.m_v), _mm256_and_pd(minusZero, vSign.m_v));</div>
+<div class="line"><a name="l00615"></a><span class="lineno">  615</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclassxii_simd_vec4d_htm_af7408ea9e8fe30f0266927fe7fb9a70e"><div class="ttname"><a href="../../d5/dba/classxii_simd_vec4d.htm#af7408ea9e8fe30f0266927fe7fb9a70e">xiiSimdVec4d::GetCombined</a></div><div class="ttdeci">xiiSimdVec4d GetCombined(const xiiSimdVec4d &amp;other) const</div><div class="ttdoc">x = this[s0], y = this[s1], z = other[s2], w = other[s3]</div></div>
@@ -720,7 +714,7 @@ $(document).ready(function(){initNavTree('de/d89/_a_v_x_vec4d__inl_8h_source.htm
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.htm">home</a></li><li class="navelem"><a class="el" href="../../dir_1036706e55c22cab35bc1c58ee689f1d.htm">runner</a></li><li class="navelem"><a class="el" href="../../dir_629f8151d55d307162ff2d619fb1783d.htm">work</a></li><li class="navelem"><a class="el" href="../../dir_1ddc44fe1263a8c7935fa6130b7d9499.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_2c1b6808f12952f4c36e05ba7068379a.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_b5a1c4ecfca018ad24b729e213296d41.htm">Source</a></li><li class="navelem"><a class="el" href="../../dir_e321052006a51284e67389ab20037e7c.htm">Engine</a></li><li class="navelem"><a class="el" href="../../dir_be0c42c58b36f42c54ec54024ed4f6af.htm">Foundation</a></li><li class="navelem"><a class="el" href="../../dir_6571b00f9c254a01b1735d75b2065daf.htm">SimdMath</a></li><li class="navelem"><a class="el" href="../../dir_421677d30b51fc7bb4bb6333857496b6.htm">Implementation</a></li><li class="navelem"><a class="el" href="../../dir_21d5994ae7079aa5a83dfc037dc7732a.htm">AVX</a></li><li class="navelem"><b>AVXVec4d_inl.h</b></li>
-    <li class="footer">Generated on Mon Jun 3 2024 16:28:44 for XIIEngine by
+    <li class="footer">Generated on Wed Jun 12 2024 18:05:50 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

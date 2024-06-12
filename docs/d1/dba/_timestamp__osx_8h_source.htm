@@ -100,7 +100,7 @@ $(document).ready(function(){initNavTree('d1/dba/_timestamp__osx_8h_source.htm',
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;  timeval currentTime;</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;  gettimeofday(&amp;currentTime, <span class="keyword">nullptr</span>);</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="../../d5/da2/classxii_timestamp.htm#ac588358a0caac14b7a7ba425945b111f">xiiTimestamp</a>(currentTime.tv_sec * 1000000LL + currentTime.tv_usec, <a class="code" href="../../d7/dfa/structxii_s_i_unit_of_time.htm#ad66d5db2186c27d08bd4666c2f523c26ad1ae04769da7d0d7d78b3bd2bbd78541">xiiSIUnitOfTime::Microsecond</a>);</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="../../d5/da2/classxii_timestamp.htm#a279ca3f01e3c613b34132988f8524cdf">xiiTimestamp::MakeFromInt</a>(currentTime.tv_sec * 1000000LL + currentTime.tv_usec, <a class="code" href="../../d7/dfa/structxii_s_i_unit_of_time.htm#ad66d5db2186c27d08bd4666c2f523c26ad1ae04769da7d0d7d78b3bd2bbd78541">xiiSIUnitOfTime::Microsecond</a>);</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;}</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">const</span> <a class="code" href="../../d5/da2/classxii_timestamp.htm">xiiTimestamp</a> <a class="code" href="../../de/dc3/classxii_date_time.htm#ab0778286d1053f2eafa94e7525622582">xiiDateTime::GetTimestamp</a>()<span class="keyword"> const</span></div>
@@ -117,7 +117,7 @@ $(document).ready(function(){initNavTree('d1/dba/_timestamp__osx_8h_source.htm',
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keywordflow">if</span> (year &lt; yearMin.location || year &gt; yearMax.length)</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    {</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="../../d5/da2/classxii_timestamp.htm">xiiTimestamp</a>();</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="../../d5/da2/classxii_timestamp.htm#ac0edc07961df643239a5fbe3fa36d72d">xiiTimestamp::MakeInvalid</a>();</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    }</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  }</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
@@ -127,7 +127,7 @@ $(document).ready(function(){initNavTree('d1/dba/_timestamp__osx_8h_source.htm',
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordflow">if</span> (month &lt; monthMin.location || month &gt; monthMax.length)</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    {</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="../../d5/da2/classxii_timestamp.htm">xiiTimestamp</a>();</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="../../d5/da2/classxii_timestamp.htm#ac0edc07961df643239a5fbe3fa36d72d">xiiTimestamp::MakeInvalid</a>();</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    }</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  }</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
@@ -137,20 +137,20 @@ $(document).ready(function(){initNavTree('d1/dba/_timestamp__osx_8h_source.htm',
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordflow">if</span> (day &lt; dayMin.location || day &gt; dayMax.length)</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    {</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="../../d5/da2/classxii_timestamp.htm">xiiTimestamp</a>();</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="../../d5/da2/classxii_timestamp.htm#ac0edc07961df643239a5fbe3fa36d72d">xiiTimestamp::MakeInvalid</a>();</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    }</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  }</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  CFAbsoluteTime absTime;</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <span class="keywordflow">if</span> (CFCalendarComposeAbsoluteTime(calendar, &amp;absTime, <span class="stringliteral">&quot;yMdHms&quot;</span>, year, month, day, hour, minute, second) == FALSE)</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  {</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="../../d5/da2/classxii_timestamp.htm">xiiTimestamp</a>();</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="../../d5/da2/classxii_timestamp.htm#ac0edc07961df643239a5fbe3fa36d72d">xiiTimestamp::MakeInvalid</a>();</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  }</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="../../d5/da2/classxii_timestamp.htm">xiiTimestamp</a>(<span class="keyword">static_cast&lt;</span>xiiInt64<span class="keyword">&gt;</span>((absTime + kCFAbsoluteTimeIntervalSince1970) * 1000000.0), <a class="code" href="../../d7/dfa/structxii_s_i_unit_of_time.htm#ad66d5db2186c27d08bd4666c2f523c26ad1ae04769da7d0d7d78b3bd2bbd78541">xiiSIUnitOfTime::Microsecond</a>);</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="../../d5/da2/classxii_timestamp.htm#a279ca3f01e3c613b34132988f8524cdf">xiiTimestamp::MakeFromInt</a>(<span class="keyword">static_cast&lt;</span>xiiInt64<span class="keyword">&gt;</span>((absTime + kCFAbsoluteTimeIntervalSince1970) * 1000000.0), <a class="code" href="../../d7/dfa/structxii_s_i_unit_of_time.htm#ad66d5db2186c27d08bd4666c2f523c26ad1ae04769da7d0d7d78b3bd2bbd78541">xiiSIUnitOfTime::Microsecond</a>);</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;}</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="../../de/dc3/classxii_date_time.htm#a42368c7d079fcc7bdb955720eb6a56af">xiiDateTime::SetTimestamp</a>(<a class="code" href="../../d5/da2/classxii_timestamp.htm">xiiTimestamp</a> timestamp)</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<a class="code" href="../../dd/dad/structxii_result.htm">xiiResult</a> <a class="code" href="../../de/dc3/classxii_date_time.htm#ac94b7a68a49ca9bae62627297ecdfcd4">xiiDateTime::SetFromTimestamp</a>(<a class="code" href="../../d5/da2/classxii_timestamp.htm">xiiTimestamp</a> timestamp)</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;{</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <span class="comment">// Round the microseconds to the full second so that we can reconstruct the right date / time afterwards</span></div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  xiiInt64 us           = timestamp.<a class="code" href="../../d5/da2/classxii_timestamp.htm#a04c792237b870922b914f48c5564aa40">GetInt64</a>(<a class="code" href="../../d7/dfa/structxii_s_i_unit_of_time.htm#ad66d5db2186c27d08bd4666c2f523c26ad1ae04769da7d0d7d78b3bd2bbd78541">xiiSIUnitOfTime::Microsecond</a>);</div>
@@ -166,7 +166,7 @@ $(document).ready(function(){initNavTree('d1/dba/_timestamp__osx_8h_source.htm',
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  <span class="keywordflow">if</span> (CFCalendarDecomposeAbsoluteTime(calendar, at, <span class="stringliteral">&quot;yMdHmsE&quot;</span>, &amp;year, &amp;month, &amp;day, &amp;hour, &amp;minute, &amp;second, &amp;dayOfWeek) == FALSE)</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  {</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keywordflow">return</span> XII_FAILURE;</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  }</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  m_iYear          = (xiiInt16)year;</div>
@@ -177,23 +177,25 @@ $(document).ready(function(){initNavTree('d1/dba/_timestamp__osx_8h_source.htm',
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  m_uiMinute       = (xiiUInt8)minute;</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  m_uiSecond       = (xiiUInt8)second;</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  m_uiMicroseconds = (xiiUInt32)microseconds;</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  <span class="keywordflow">return</span> XII_SUCCESS;</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
+<div class="ttc" id="aclassxii_date_time_htm_ac94b7a68a49ca9bae62627297ecdfcd4"><div class="ttname"><a href="../../de/dc3/classxii_date_time.htm#ac94b7a68a49ca9bae62627297ecdfcd4">xiiDateTime::SetFromTimestamp</a></div><div class="ttdeci">xiiResult SetFromTimestamp(xiiTimestamp timestamp)</div><div class="ttdoc">Sets this instance to the given timestamp.</div><div class="ttdef"><b>Definition:</b> Timestamp_android.h:66</div></div>
+<div class="ttc" id="aclassxii_timestamp_htm_a279ca3f01e3c613b34132988f8524cdf"><div class="ttname"><a href="../../d5/da2/classxii_timestamp.htm#a279ca3f01e3c613b34132988f8524cdf">xiiTimestamp::MakeFromInt</a></div><div class="ttdeci">static xiiTimestamp MakeFromInt(xiiInt64 iTimeValue, xiiSIUnitOfTime::Enum unitOfTime)</div><div class="ttdoc">Returns a timestamp initialized from 'iTimeValue' in 'unitOfTime' since Unix epoch.</div><div class="ttdef"><b>Definition:</b> Timestamp.cpp:36</div></div>
 <div class="ttc" id="aclassxii_timestamp_htm_a04c792237b870922b914f48c5564aa40"><div class="ttname"><a href="../../d5/da2/classxii_timestamp.htm#a04c792237b870922b914f48c5564aa40">xiiTimestamp::GetInt64</a></div><div class="ttdeci">xiiInt64 GetInt64(xiiSIUnitOfTime::Enum unitOfTime) const</div><div class="ttdoc">Returns the number of 'unitOfTime' since Unix epoch.</div><div class="ttdef"><b>Definition:</b> Timestamp.cpp:17</div></div>
-<div class="ttc" id="aclassxii_timestamp_htm_ac588358a0caac14b7a7ba425945b111f"><div class="ttname"><a href="../../d5/da2/classxii_timestamp.htm#ac588358a0caac14b7a7ba425945b111f">xiiTimestamp::xiiTimestamp</a></div><div class="ttdeci">xiiTimestamp()</div><div class="ttdoc">Creates an invalidated timestamp.</div><div class="ttdef"><b>Definition:</b> Timestamp_inl.h:8</div></div>
-<div class="ttc" id="aclassxii_date_time_htm_a42368c7d079fcc7bdb955720eb6a56af"><div class="ttname"><a href="../../de/dc3/classxii_date_time.htm#a42368c7d079fcc7bdb955720eb6a56af">xiiDateTime::SetTimestamp</a></div><div class="ttdeci">bool SetTimestamp(xiiTimestamp timestamp)</div><div class="ttdoc">Sets this instance to the given timestamp.</div><div class="ttdef"><b>Definition:</b> Timestamp_android.h:66</div></div>
 <div class="ttc" id="aclassxii_scoped_c_f_ref_htm"><div class="ttname"><a href="../../d0/df2/classxii_scoped_c_f_ref.htm">xiiScopedCFRef</a></div><div class="ttdoc">Helper class to release references of core foundation objects correctly.</div><div class="ttdef"><b>Definition:</b> ScopedCFRef.h:10</div></div>
 <div class="ttc" id="aclassxii_timestamp_htm_a1e293985002107172ab682a803516cb0"><div class="ttname"><a href="../../d5/da2/classxii_timestamp.htm#a1e293985002107172ab682a803516cb0">xiiTimestamp::CurrentTimestamp</a></div><div class="ttdeci">static const xiiTimestamp CurrentTimestamp()</div><div class="ttdoc">Returns the current timestamp. Returned value will always be valid.</div><div class="ttdef"><b>Definition:</b> Timestamp_android.h:11</div></div>
 <div class="ttc" id="aclassxii_timestamp_htm"><div class="ttname"><a href="../../d5/da2/classxii_timestamp.htm">xiiTimestamp</a></div><div class="ttdoc">The timestamp class encapsulates a date in time as microseconds since Unix epoch.</div><div class="ttdef"><b>Definition:</b> Timestamp.h:22</div></div>
 <div class="ttc" id="aclassxii_date_time_htm_ab0778286d1053f2eafa94e7525622582"><div class="ttname"><a href="../../de/dc3/classxii_date_time.htm#ab0778286d1053f2eafa94e7525622582">xiiDateTime::GetTimestamp</a></div><div class="ttdeci">const xiiTimestamp GetTimestamp() const</div><div class="ttdoc">Converts this instance' values into a xiiTimestamp.</div><div class="ttdef"><b>Definition:</b> Timestamp_android.h:36</div></div>
 <div class="ttc" id="astructxii_s_i_unit_of_time_htm_ad66d5db2186c27d08bd4666c2f523c26ad1ae04769da7d0d7d78b3bd2bbd78541"><div class="ttname"><a href="../../d7/dfa/structxii_s_i_unit_of_time.htm#ad66d5db2186c27d08bd4666c2f523c26ad1ae04769da7d0d7d78b3bd2bbd78541">xiiSIUnitOfTime::Microsecond</a></div><div class="ttdeci">@ Microsecond</div><div class="ttdoc">SI-unit of time (10^-6 second)</div><div class="ttdef"><b>Definition:</b> Timestamp.h:11</div></div>
+<div class="ttc" id="aclassxii_timestamp_htm_ac0edc07961df643239a5fbe3fa36d72d"><div class="ttname"><a href="../../d5/da2/classxii_timestamp.htm#ac0edc07961df643239a5fbe3fa36d72d">xiiTimestamp::MakeInvalid</a></div><div class="ttdeci">static xiiTimestamp MakeInvalid()</div><div class="ttdoc">Returns an invalid timestamp.</div><div class="ttdef"><b>Definition:</b> Timestamp.h:48</div></div>
+<div class="ttc" id="astructxii_result_htm"><div class="ttname"><a href="../../dd/dad/structxii_result.htm">xiiResult</a></div><div class="ttdoc">Default enum for returning failure or success, instead of using a bool.</div><div class="ttdef"><b>Definition:</b> Types.h:55</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.htm">home</a></li><li class="navelem"><a class="el" href="../../dir_1036706e55c22cab35bc1c58ee689f1d.htm">runner</a></li><li class="navelem"><a class="el" href="../../dir_629f8151d55d307162ff2d619fb1783d.htm">work</a></li><li class="navelem"><a class="el" href="../../dir_1ddc44fe1263a8c7935fa6130b7d9499.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_2c1b6808f12952f4c36e05ba7068379a.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_b5a1c4ecfca018ad24b729e213296d41.htm">Source</a></li><li class="navelem"><a class="el" href="../../dir_e321052006a51284e67389ab20037e7c.htm">Engine</a></li><li class="navelem"><a class="el" href="../../dir_be0c42c58b36f42c54ec54024ed4f6af.htm">Foundation</a></li><li class="navelem"><a class="el" href="../../dir_315aae7431edb29f522dc373a7962135.htm">Time</a></li><li class="navelem"><a class="el" href="../../dir_190f9f215ff5e02d7dc541b6cc83797c.htm">Implementation</a></li><li class="navelem"><a class="el" href="../../dir_687f712f6de60a4954e73dfb1b461edb.htm">OSX</a></li><li class="navelem"><b>Timestamp_osx.h</b></li>
-    <li class="footer">Generated on Mon Jun 3 2024 16:28:45 for XIIEngine by
+    <li class="footer">Generated on Wed Jun 12 2024 18:05:51 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

@@ -13,7 +13,7 @@ var classxii_array_map_base =
     [ "Contains", "dd/d41/classxii_array_map_base.htm#a1157330a447d01ef53b592017defe452", null ],
     [ "Contains", "dd/d41/classxii_array_map_base.htm#a47efeaebff153fcc1aa9bbbe1ff76742", null ],
     [ "Find", "dd/d41/classxii_array_map_base.htm#a29b0ebf890246afa710c2e4f01bd42e1", null ],
-    [ "FindOrAdd", "dd/d41/classxii_array_map_base.htm#a3a47cc800fc169b0cb1e1c425e613f31", null ],
+    [ "FindOrAdd", "dd/d41/classxii_array_map_base.htm#a9961a87b8bda24148758d3c68b19063f", null ],
     [ "GetCount", "dd/d41/classxii_array_map_base.htm#afd650ddab26ed2831b7ee40a2841af4b", null ],
     [ "GetData", "dd/d41/classxii_array_map_base.htm#a55c6868b66ad44bbe5c87a5b1f6b20e2", null ],
     [ "GetData", "dd/d41/classxii_array_map_base.htm#a587ce223bf470b1f8d906f1fc4af7226", null ],

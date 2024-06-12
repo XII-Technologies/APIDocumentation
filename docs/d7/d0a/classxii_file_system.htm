@@ -101,6 +101,8 @@ $(document).ready(function(){initNavTree('d7/d0a/classxii_file_system.htm','../.
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dd8/structxii_file_system_1_1_data_directory_info.htm">DataDirectoryInfo</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/da4/structxii_file_system_1_1_file_event.htm">FileEvent</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The event data that is broadcast by the <a class="el" href="../../d7/d0a/classxii_file_system.htm" title="The xiiFileSystem provides high-level functionality to manage files in a virtual file system.">xiiFileSystem</a> upon certain file operations.  <a href="../../db/da4/structxii_file_system_1_1_file_event.htm#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -218,10 +220,10 @@ static xiiUInt32&#160;</td><td class="memItemRight" valign="bottom"><a class="el
 static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d0a/classxii_file_system.htm#aea49012af38566809cb987a00b7b360e">ClearAllDataDirectories</a> ()</td></tr>
 <tr class="memdesc:aea49012af38566809cb987a00b7b360e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes all data directories. <br /></td></tr>
 <tr class="separator:aea49012af38566809cb987a00b7b360e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9a29a6de2c0f35a69a0382b8373876db"><td class="memItemLeft" align="right" valign="top"><a id="a9a29a6de2c0f35a69a0382b8373876db"></a>
-static <a class="el" href="../../de/d33/classxii_data_directory_type.htm">xiiDataDirectoryType</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d0a/classxii_file_system.htm#a9a29a6de2c0f35a69a0382b8373876db">FindDataDirectoryWithRoot</a> (<a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sRootName)</td></tr>
-<tr class="memdesc:a9a29a6de2c0f35a69a0382b8373876db"><td class="mdescLeft">&#160;</td><td class="mdescRight">If a data directory with the given root name already exists, it will be returned, nullptr otherwise. <br /></td></tr>
-<tr class="separator:a9a29a6de2c0f35a69a0382b8373876db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1146431cecdd7401cd4e23296089807f"><td class="memItemLeft" align="right" valign="top"><a id="a1146431cecdd7401cd4e23296089807f"></a>
+static const <a class="el" href="../../d1/dd8/structxii_file_system_1_1_data_directory_info.htm">DataDirectoryInfo</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d0a/classxii_file_system.htm#a1146431cecdd7401cd4e23296089807f">FindDataDirectoryWithRoot</a> (<a class="el" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sRootName)</td></tr>
+<tr class="memdesc:a1146431cecdd7401cd4e23296089807f"><td class="mdescLeft">&#160;</td><td class="mdescRight">If a data directory with the given root name already exists, it will be returned, nullptr otherwise. <br /></td></tr>
+<tr class="separator:a1146431cecdd7401cd4e23296089807f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae1c6f5db9d80ae1fd783c19de9f64748"><td class="memItemLeft" align="right" valign="top"><a id="ae1c6f5db9d80ae1fd783c19de9f64748"></a>
 static xiiUInt32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d0a/classxii_file_system.htm#ae1c6f5db9d80ae1fd783c19de9f64748">GetNumDataDirectories</a> ()</td></tr>
 <tr class="memdesc:ae1c6f5db9d80ae1fd783c19de9f64748"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of currently active data directories. <br /></td></tr>
@@ -230,6 +232,10 @@ static xiiUInt32&#160;</td><td class="memItemRight" valign="bottom"><a class="el
 static <a class="el" href="../../de/d33/classxii_data_directory_type.htm">xiiDataDirectoryType</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d0a/classxii_file_system.htm#a94f70a0cd8c3a554c6dffee1980b316b">GetDataDirectory</a> (xiiUInt32 uiDataDirIndex)</td></tr>
 <tr class="memdesc:a94f70a0cd8c3a554c6dffee1980b316b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the n-th currently active data directory. <br /></td></tr>
 <tr class="separator:a94f70a0cd8c3a554c6dffee1980b316b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4aedc3c9f961ce8c8a2fa695383446d8"><td class="memItemLeft" align="right" valign="top"><a id="a4aedc3c9f961ce8c8a2fa695383446d8"></a>
+static const <a class="el" href="../../d1/dd8/structxii_file_system_1_1_data_directory_info.htm">DataDirectoryInfo</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d0a/classxii_file_system.htm#a4aedc3c9f961ce8c8a2fa695383446d8">GetDataDirectoryInfo</a> (xiiUInt32 uiDataDirIndex)</td></tr>
+<tr class="memdesc:a4aedc3c9f961ce8c8a2fa695383446d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the info about the n-th currently active data directory. <br /></td></tr>
+<tr class="separator:a4aedc3c9f961ce8c8a2fa695383446d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2be35af219b9fb30cf82f24d9404d995"><td class="memItemLeft" align="right" valign="top"><a id="a2be35af219b9fb30cf82f24d9404d995"></a>
 static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d0a/classxii_file_system.htm#a2be35af219b9fb30cf82f24d9404d995">ReloadAllExternalDataDirectoryConfigs</a> ()</td></tr>
 <tr class="memdesc:a2be35af219b9fb30cf82f24d9404d995"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calls <a class="el" href="../../de/d33/classxii_data_directory_type.htm#a188b02feb34f82ee3fda2d685f640f6b" title="Some data directory types may use external configuration files (e.g. asset lookup tables) that may ge...">xiiDataDirectoryType::ReloadExternalConfigs()</a> on all active data directories. <br /></td></tr>
@@ -612,9 +618,9 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 <p>If the path is relative, it is attempted to open the specified file, which means it is searched in all available data directories. The path to the file that is found will be returned.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
+    <tr><td class="paramname">sPath</td><td>can be a relative, an absolute or a rooted path. This can also be used to find the relative location to the data directory that would handle it. </td></tr>
     <tr><td class="paramname">out_sAbsolutePath</td><td>will contain the absolute path to the file. Can be nullptr. </td></tr>
     <tr><td class="paramname">out_sDataDirRelativePath</td><td>will contain the relative path to the file (from the data directory in which it might end up in). Can be nullptr. </td></tr>
-    <tr><td class="paramname">szPath</td><td>can be a relative, an absolute or a rooted path. This can also be used to find the relative location to the data directory that would handle it. </td></tr>
     <tr><td class="paramname">out_ppDataDir</td><td>If not null, it will be set to the data directory that would handle this path.</td></tr>
   </table>
   </dd>
@@ -662,7 +668,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 <p>Returns the absolute path to <em>szDirectory</em>. </p>
 <p>If the path starts with a known special directory marker ("&gt;marker/") it is replaced accordingly. See <a class="el" href="../../d7/d0a/classxii_file_system.htm#a8e6b9c492ba466750205dd9500e1ee35" title="Special directories are used when mounting data directories as basic references.">SetSpecialDirectory()</a> for setting custom special directories.</p>
 <p>Built-in special directories (always available) are:</p>
-<p>"&gt;sdk/" - Resolves to what <a class="el" href="../../d7/d0a/classxii_file_system.htm#abd9567ebcf7ea5a6be1f1ee72a5ed37c" title="Returns the previously set Sdk root directory.">GetSdkRootDirectory()</a> returns. "&gt;user/" - Resolves to what <a class="el" href="../../da/d95/classxii_o_s_file.htm#adfde473e9550f3e0a4192d1b96d4c42a" title="Returns the folder into which user data may be safely written. Append a sub-folder for your applicati...">xiiOSFile::GetUserDataFolder()</a> returns. "&gt;temp/" - Resolves to what <a class="el" href="../../da/d95/classxii_o_s_file.htm#a4d878860c251454e27488c165a7e39c0" title="Returns the folder into which temp data may be written.">xiiOSFile::GetTempDataFolder()</a> returns. "&gt;appdir/" - Resolves to what <a class="el" href="../../da/d95/classxii_o_s_file.htm#a711646d84584fa4275cd01367f928803" title="Returns the path in which the applications binary file is located.">xiiOSFile::GetApplicationDirectory()</a> returns.</p>
+<p>"&gt;sdk/" - Resolves to what <a class="el" href="../../d7/d0a/classxii_file_system.htm#abd9567ebcf7ea5a6be1f1ee72a5ed37c" title="Returns the previously set Sdk root directory.">GetSdkRootDirectory()</a> returns. "&gt;user/" - Resolves to what <a class="el" href="../../da/d95/classxii_o_s_file.htm#adfde473e9550f3e0a4192d1b96d4c42a" title="Returns the folder into which user data may be safely written. Append a sub-folder for your applicati...">xiiOSFile::GetUserDataFolder()</a> returns. "&gt;temp/" - Resolves to what <a class="el" href="../../da/d95/classxii_o_s_file.htm#a4d878860c251454e27488c165a7e39c0" title="Returns the folder into which temp data may be written.">xiiOSFile::GetTempDataFolder()</a> returns. "&gt;appdir/" - Resolves to what <a class="el" href="../../da/d95/classxii_o_s_file.htm#a711646d84584fa4275cd01367f928803" title="Returns the path to the directory in which the application binary is located.">xiiOSFile::GetApplicationDirectory()</a> returns.</p>
 <p>Returns XII_FAILURE if <em>szDirectory</em> starts with an unknown special directory. </p>
 
 </div>
@@ -745,7 +751,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d7/d0a/classxii_file_system.htm">xiiFileSystem</a></li>
-    <li class="footer">Generated on Mon Jun 3 2024 16:28:50 for XIIEngine by
+    <li class="footer">Generated on Wed Jun 12 2024 18:05:55 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

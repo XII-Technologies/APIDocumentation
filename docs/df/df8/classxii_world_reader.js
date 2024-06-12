@@ -11,7 +11,7 @@ var classxii_world_reader =
     [ "GetRootObjectCount", "df/df8/classxii_world_reader.htm#af3efdcd65d9ba7c35dd311c482ac6e0b", null ],
     [ "GetStream", "df/df8/classxii_world_reader.htm#ad1295f4889e01050fd5bd00bbf418240", null ],
     [ "InstantiatePrefab", "df/df8/classxii_world_reader.htm#a3a39b2f837a942905fcbe65514211095", null ],
-    [ "InstantiateWorld", "df/df8/classxii_world_reader.htm#aa1099b15bf6bebc718a6839fda57c214", null ],
+    [ "InstantiateWorld", "df/df8/classxii_world_reader.htm#a4efe656b51aa75eeb1f83296ffd6ee72", null ],
     [ "ReadComponentHandle", "df/df8/classxii_world_reader.htm#a6fc5b21a361bcdb9ceaa3ba9b7fe748c", null ],
     [ "ReadGameObjectHandle", "df/df8/classxii_world_reader.htm#ad853278811d50bc38605fff4e990c648", null ],
     [ "ReadWorldDescription", "df/df8/classxii_world_reader.htm#aafb3934503159a4281850b23351e8d31", null ]

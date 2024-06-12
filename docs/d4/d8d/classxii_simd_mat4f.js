@@ -1,9 +1,6 @@
 var classxii_simd_mat4f =
 [
     [ "xiiSimdMat4f", "d4/d8d/classxii_simd_mat4f.htm#a3173286363140f56f38e73b2f69a8832", null ],
-    [ "xiiSimdMat4f", "d4/d8d/classxii_simd_mat4f.htm#af4af2a7324c9f944d0dc645973781aed", null ],
-    [ "xiiSimdMat4f", "d4/d8d/classxii_simd_mat4f.htm#a3f4e5e7481aade4b46efd00f472ff2e1", null ],
-    [ "xiiSimdMat4f", "d4/d8d/classxii_simd_mat4f.htm#a2058e19550239b65882b1a498082d7a8", null ],
     [ "GetAsArray", "d4/d8d/classxii_simd_mat4f.htm#abc17cc78f1a8d872fbeac55dd8f2d4b8", null ],
     [ "GetInverse", "d4/d8d/classxii_simd_mat4f.htm#a9516b16c20bebad041276678fc145eb1", null ],
     [ "GetRows", "d4/d8d/classxii_simd_mat4f.htm#a5f40b7638919b52ca27aba49cf970f30", null ],
@@ -17,10 +14,7 @@ var classxii_simd_mat4f =
     [ "operator*", "d4/d8d/classxii_simd_mat4f.htm#a5104a3ec5938a6bc2372980942b23c54", null ],
     [ "operator*=", "d4/d8d/classxii_simd_mat4f.htm#a67580343afc737b845a87e02ac7b32f6", null ],
     [ "operator==", "d4/d8d/classxii_simd_mat4f.htm#a50ee7cc60ee2ec82c2ff8c8a56691c68", null ],
-    [ "SetFromArray", "d4/d8d/classxii_simd_mat4f.htm#ad8175816c8ba6ecbcbcc615704ca52ce", null ],
-    [ "SetIdentity", "d4/d8d/classxii_simd_mat4f.htm#af8832084d41166105e4fcdd4fb495ab7", null ],
     [ "SetRows", "d4/d8d/classxii_simd_mat4f.htm#a15795b5e854f6633e4cd6f8511278c34", null ],
-    [ "SetZero", "d4/d8d/classxii_simd_mat4f.htm#aa3ef5c311ae2bff8e5ce2b5d8f050da5", null ],
     [ "TransformDirection", "d4/d8d/classxii_simd_mat4f.htm#a78f9441b50f69d7652688066fdfea1e6", null ],
     [ "TransformPosition", "d4/d8d/classxii_simd_mat4f.htm#a0bb26cee7c275a11080640e52a1ac4a1", null ],
     [ "Transpose", "d4/d8d/classxii_simd_mat4f.htm#a65483fef7918955d5c1d8f62df38c0a9", null ],

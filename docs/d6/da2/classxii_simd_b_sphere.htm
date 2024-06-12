@@ -85,6 +85,7 @@ $(document).ready(function(){initNavTree('d6/da2/classxii_simd_b_sphere.htm','..
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="../../d4/d37/classxii_simd_b_sphere-members.htm">List of all members</a>  </div>
   <div class="headertitle">
@@ -105,10 +106,6 @@ Public Member Functions</h2></td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/da2/classxii_simd_b_sphere.htm#abe5ab34b64e68a6f81a74ff0d94ee9f7">xiiSimdBSphere</a> (const <a class="el" href="../../d3/da5/classxii_simd_vec4f.htm">xiiSimdVec4f</a> &amp;vCenter, const <a class="el" href="../../d2/d73/classxii_simd_float.htm">xiiSimdFloat</a> &amp;fRadius)</td></tr>
 <tr class="memdesc:abe5ab34b64e68a6f81a74ff0d94ee9f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a sphere with the given radius around the given center. <br /></td></tr>
 <tr class="separator:abe5ab34b64e68a6f81a74ff0d94ee9f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abb71b78a69ac1e7161df51d02eda926e"><td class="memItemLeft" align="right" valign="top"><a id="abb71b78a69ac1e7161df51d02eda926e"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/da2/classxii_simd_b_sphere.htm#abb71b78a69ac1e7161df51d02eda926e">SetInvalid</a> ()</td></tr>
-<tr class="memdesc:abb71b78a69ac1e7161df51d02eda926e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the bounding sphere to invalid values. <br /></td></tr>
-<tr class="separator:abb71b78a69ac1e7161df51d02eda926e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad9d4961303cc12efb8517f18f647d595"><td class="memItemLeft" align="right" valign="top"><a id="ad9d4961303cc12efb8517f18f647d595"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/da2/classxii_simd_b_sphere.htm#ad9d4961303cc12efb8517f18f647d595">IsValid</a> () const</td></tr>
 <tr class="memdesc:ad9d4961303cc12efb8517f18f647d595"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether the sphere has valid values. <br /></td></tr>
@@ -125,22 +122,18 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../.
 <a class="el" href="../../d2/d73/classxii_simd_float.htm">xiiSimdFloat</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/da2/classxii_simd_b_sphere.htm#aed47edfe9bf3055334b8a0a681083351">GetRadius</a> () const</td></tr>
 <tr class="memdesc:aed47edfe9bf3055334b8a0a681083351"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the radius. <br /></td></tr>
 <tr class="separator:aed47edfe9bf3055334b8a0a681083351"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3c7067a2915d8209c9188db7809c68ca"><td class="memItemLeft" align="right" valign="top"><a id="a3c7067a2915d8209c9188db7809c68ca"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/da2/classxii_simd_b_sphere.htm#a3c7067a2915d8209c9188db7809c68ca">SetFromPoints</a> (const <a class="el" href="../../d3/da5/classxii_simd_vec4f.htm">xiiSimdVec4f</a> *pPoints, xiiUInt32 uiNumPoints, xiiUInt32 uiStride=sizeof(<a class="el" href="../../d3/da5/classxii_simd_vec4f.htm">xiiSimdVec4f</a>))</td></tr>
-<tr class="memdesc:a3c7067a2915d8209c9188db7809c68ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the sphere to be the bounding sphere of all the given points. <br /></td></tr>
-<tr class="separator:a3c7067a2915d8209c9188db7809c68ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af23a9b2a98f4c46bdcaa74402c84bb18"><td class="memItemLeft" align="right" valign="top"><a id="af23a9b2a98f4c46bdcaa74402c84bb18"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/da2/classxii_simd_b_sphere.htm#af23a9b2a98f4c46bdcaa74402c84bb18">ExpandToInclude</a> (const <a class="el" href="../../d3/da5/classxii_simd_vec4f.htm">xiiSimdVec4f</a> &amp;vPoint)</td></tr>
-<tr class="memdesc:af23a9b2a98f4c46bdcaa74402c84bb18"><td class="mdescLeft">&#160;</td><td class="mdescRight">Increases the sphere's radius to include this point. <br /></td></tr>
-<tr class="separator:af23a9b2a98f4c46bdcaa74402c84bb18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a655cc1dd1228e4b7333e8b60d1008ce0"><td class="memItemLeft" align="right" valign="top"><a id="a655cc1dd1228e4b7333e8b60d1008ce0"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/da2/classxii_simd_b_sphere.htm#a655cc1dd1228e4b7333e8b60d1008ce0">ExpandToInclude</a> (const <a class="el" href="../../d3/da5/classxii_simd_vec4f.htm">xiiSimdVec4f</a> &amp;vPoint)</td></tr>
+<tr class="memdesc:a655cc1dd1228e4b7333e8b60d1008ce0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Increases the sphere's radius to include this point. <br /></td></tr>
+<tr class="separator:a655cc1dd1228e4b7333e8b60d1008ce0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a56b707385c4f795222e5a1431d3eb2e2"><td class="memItemLeft" align="right" valign="top"><a id="a56b707385c4f795222e5a1431d3eb2e2"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/da2/classxii_simd_b_sphere.htm#a56b707385c4f795222e5a1431d3eb2e2">ExpandToInclude</a> (const <a class="el" href="../../d3/da5/classxii_simd_vec4f.htm">xiiSimdVec4f</a> *pPoints, xiiUInt32 uiNumPoints, xiiUInt32 uiStride=sizeof(<a class="el" href="../../d3/da5/classxii_simd_vec4f.htm">xiiSimdVec4f</a>))</td></tr>
 <tr class="memdesc:a56b707385c4f795222e5a1431d3eb2e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Increases the sphere's radius to include all given points. Does NOT change its position, thus the resulting sphere might be not a very tight fit. More efficient than calling this for every point individually. <br /></td></tr>
 <tr class="separator:a56b707385c4f795222e5a1431d3eb2e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6519057b8e751d2a923034a4af3c9e17"><td class="memItemLeft" align="right" valign="top"><a id="a6519057b8e751d2a923034a4af3c9e17"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/da2/classxii_simd_b_sphere.htm#a6519057b8e751d2a923034a4af3c9e17">ExpandToInclude</a> (const <a class="el" href="../../d6/da2/classxii_simd_b_sphere.htm">xiiSimdBSphere</a> &amp;rhs)</td></tr>
-<tr class="memdesc:a6519057b8e751d2a923034a4af3c9e17"><td class="mdescLeft">&#160;</td><td class="mdescRight">Increases this sphere's radius, such that it encloses the other sphere. <br /></td></tr>
-<tr class="separator:a6519057b8e751d2a923034a4af3c9e17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adcb477ef047572cc78f2f9a13aac7c49"><td class="memItemLeft" align="right" valign="top"><a id="adcb477ef047572cc78f2f9a13aac7c49"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/da2/classxii_simd_b_sphere.htm#adcb477ef047572cc78f2f9a13aac7c49">ExpandToInclude</a> (const <a class="el" href="../../d6/da2/classxii_simd_b_sphere.htm">xiiSimdBSphere</a> &amp;rhs)</td></tr>
+<tr class="memdesc:adcb477ef047572cc78f2f9a13aac7c49"><td class="mdescLeft">&#160;</td><td class="mdescRight">Increases this sphere's radius, such that it encloses the other sphere. <br /></td></tr>
+<tr class="separator:adcb477ef047572cc78f2f9a13aac7c49"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a467f7388ec7b3a34143cae1e66d9f860"><td class="memItemLeft" align="right" valign="top"><a id="a467f7388ec7b3a34143cae1e66d9f860"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/da2/classxii_simd_b_sphere.htm#a467f7388ec7b3a34143cae1e66d9f860">Transform</a> (const <a class="el" href="../../d8/d43/classxii_simd_transform.htm">xiiSimdTransform</a> &amp;t)</td></tr>
 <tr class="memdesc:a467f7388ec7b3a34143cae1e66d9f860"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transforms the sphere in its local space. <br /></td></tr>
@@ -180,12 +173,104 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator==</b> (const
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator!=</b> (const <a class="el" href="../../d6/da2/classxii_simd_b_sphere.htm">xiiSimdBSphere</a> &amp;rhs) const</td></tr>
 <tr class="separator:add6fa22f43beb3d703f8060cfa19e37f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a348159a09d4338627bc39c0a38dd3ec3"><td class="memItemLeft" align="right" valign="top"><a id="a348159a09d4338627bc39c0a38dd3ec3"></a>
+static <a class="el" href="../../d6/da2/classxii_simd_b_sphere.htm">xiiSimdBSphere</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/da2/classxii_simd_b_sphere.htm#a348159a09d4338627bc39c0a38dd3ec3">MakeZero</a> ()</td></tr>
+<tr class="memdesc:a348159a09d4338627bc39c0a38dd3ec3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a sphere at the origin with radius zero. <br /></td></tr>
+<tr class="separator:a348159a09d4338627bc39c0a38dd3ec3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae52e11519d3be873b55349e1df37ad3c"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d6/da2/classxii_simd_b_sphere.htm">xiiSimdBSphere</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/da2/classxii_simd_b_sphere.htm#ae52e11519d3be873b55349e1df37ad3c">MakeInvalid</a> (const <a class="el" href="../../d3/da5/classxii_simd_vec4f.htm">xiiSimdVec4f</a> &amp;vCenter=<a class="el" href="../../d3/da5/classxii_simd_vec4f.htm#abc6dcd08d6d541a342a64a4214982723">xiiSimdVec4f::MakeZero</a>())</td></tr>
+<tr class="memdesc:ae52e11519d3be873b55349e1df37ad3c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an 'invalid' sphere, with its center at the given position and a negative radius.  <a href="../../d6/da2/classxii_simd_b_sphere.htm#ae52e11519d3be873b55349e1df37ad3c">More...</a><br /></td></tr>
+<tr class="separator:ae52e11519d3be873b55349e1df37ad3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a955a3a65d6960269ca595855f08d9b44"><td class="memItemLeft" align="right" valign="top"><a id="a955a3a65d6960269ca595855f08d9b44"></a>
+static <a class="el" href="../../d6/da2/classxii_simd_b_sphere.htm">xiiSimdBSphere</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/da2/classxii_simd_b_sphere.htm#a955a3a65d6960269ca595855f08d9b44">MakeFromCenterAndRadius</a> (const <a class="el" href="../../d3/da5/classxii_simd_vec4f.htm">xiiSimdVec4f</a> &amp;vCenter, const <a class="el" href="../../d2/d73/classxii_simd_float.htm">xiiSimdFloat</a> &amp;fRadius)</td></tr>
+<tr class="memdesc:a955a3a65d6960269ca595855f08d9b44"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a sphere with the provided center and radius. <br /></td></tr>
+<tr class="separator:a955a3a65d6960269ca595855f08d9b44"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af36df230be7befea2c5f52b018d7aeb8"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d6/da2/classxii_simd_b_sphere.htm">xiiSimdBSphere</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/da2/classxii_simd_b_sphere.htm#af36df230be7befea2c5f52b018d7aeb8">MakeFromPoints</a> (const <a class="el" href="../../d3/da5/classxii_simd_vec4f.htm">xiiSimdVec4f</a> *pPoints, xiiUInt32 uiNumPoints, xiiUInt32 uiStride=sizeof(<a class="el" href="../../d3/da5/classxii_simd_vec4f.htm">xiiSimdVec4f</a>))</td></tr>
+<tr class="memdesc:af36df230be7befea2c5f52b018d7aeb8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a bounding sphere around the provided points.  <a href="../../d6/da2/classxii_simd_b_sphere.htm#af36df230be7befea2c5f52b018d7aeb8">More...</a><br /></td></tr>
+<tr class="separator:af36df230be7befea2c5f52b018d7aeb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a59df5af2e89e30a72e4a10ca0f57a0c5"><td class="memItemLeft" align="right" valign="top"><a id="a59df5af2e89e30a72e4a10ca0f57a0c5"></a>
 <a class="el" href="../../d3/da5/classxii_simd_vec4f.htm">xiiSimdVec4f</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_CenterAndRadius</b></td></tr>
 <tr class="separator:a59df5af2e89e30a72e4a10ca0f57a0c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="af36df230be7befea2c5f52b018d7aeb8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af36df230be7befea2c5f52b018d7aeb8">&#9670;&nbsp;</a></span>MakeFromPoints()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d6/da2/classxii_simd_b_sphere.htm">xiiSimdBSphere</a> xiiSimdBSphere::MakeFromPoints </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d3/da5/classxii_simd_vec4f.htm">xiiSimdVec4f</a> *&#160;</td>
+          <td class="paramname"><em>pPoints</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">xiiUInt32&#160;</td>
+          <td class="paramname"><em>uiNumPoints</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">xiiUInt32&#160;</td>
+          <td class="paramname"><em>uiStride</em> = <code>sizeof(<a class="el" href="../../d3/da5/classxii_simd_vec4f.htm">xiiSimdVec4f</a>)</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Creates a bounding sphere around the provided points. </p>
+<p>The center of the sphere will be at the 'center of mass' of all the points, and the radius will be the distance to the farthest point from there. </p>
+
+</div>
+</div>
+<a id="ae52e11519d3be873b55349e1df37ad3c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae52e11519d3be873b55349e1df37ad3c">&#9670;&nbsp;</a></span>MakeInvalid()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">XII_ALWAYS_INLINE <a class="el" href="../../d6/da2/classxii_simd_b_sphere.htm">xiiSimdBSphere</a> xiiSimdBSphere::MakeInvalid </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d3/da5/classxii_simd_vec4f.htm">xiiSimdVec4f</a> &amp;&#160;</td>
+          <td class="paramname"><em>vCenter</em> = <code><a class="el" href="../../d3/da5/classxii_simd_vec4f.htm#abc6dcd08d6d541a342a64a4214982723">xiiSimdVec4f::MakeZero</a>()</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Creates an 'invalid' sphere, with its center at the given position and a negative radius. </p>
+<p>Such a sphere can be made 'valid' through <a class="el" href="../../d6/da2/classxii_simd_b_sphere.htm#a655cc1dd1228e4b7333e8b60d1008ce0" title="Increases the sphere&#39;s radius to include this point.">ExpandToInclude()</a>, but be aware that the originally provided center position will always be part of the sphere. </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>/home/runner/work/XII/XII/Source/Engine/Foundation/SimdMath/<a class="el" href="../../d5/dd7/_simd_b_sphere_8h_source.htm">SimdBSphere.h</a></li>
 <li>/home/runner/work/XII/XII/Source/Engine/Foundation/SimdMath/Implementation/<a class="el" href="../../da/d93/_simd_b_sphere__inl_8h_source.htm">SimdBSphere_inl.h</a></li>
@@ -196,7 +281,7 @@ Public Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d6/da2/classxii_simd_b_sphere.htm">xiiSimdBSphere</a></li>
-    <li class="footer">Generated on Mon Jun 3 2024 16:28:53 for XIIEngine by
+    <li class="footer">Generated on Wed Jun 12 2024 18:05:59 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>
