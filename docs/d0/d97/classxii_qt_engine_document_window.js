@@ -13,6 +13,7 @@ var classxii_qt_engine_document_window =
     [ "GetViewWidgets", "d0/d97/classxii_qt_engine_document_window.htm#a08f4dd439714cc59a84332cda74727d3", null ],
     [ "InternalRedraw", "d0/d97/classxii_qt_engine_document_window.htm#a34d56fafef9280a90d703fa313c3082f", null ],
     [ "PickObject", "d0/d97/classxii_qt_engine_document_window.htm#af141ec97571396e2d95bfc68585fa53b", null ],
+    [ "PreferenceChangedEventHandler", "d0/d97/classxii_qt_engine_document_window.htm#ab66a5d95a31049c27ad59c3a9935b180", null ],
     [ "ProcessMessageEventHandler", "d0/d97/classxii_qt_engine_document_window.htm#a4d5146d0f2ba9f7437f9977765fc4747", null ],
     [ "RemoveViewWidget", "d0/d97/classxii_qt_engine_document_window.htm#a1fc490420ff912df7c129df5a750c40f", null ],
     [ "xiiQtEngineViewWidget", "d0/d97/classxii_qt_engine_document_window.htm#a6d30eb86ec2ae07e20a2dce3ef3196ca", null ],

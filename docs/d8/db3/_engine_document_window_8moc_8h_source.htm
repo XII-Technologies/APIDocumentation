@@ -99,82 +99,86 @@ $(document).ready(function(){initNavTree('d8/db3/_engine_document_window_8moc_8h
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">class </span>QWidget;</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">class </span>QHBoxLayout;</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">class </span>QPushButton;</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">class </span><a class="code" href="../../d3/d93/classxii_qt_engine_view_widget.htm">xiiQtEngineViewWidget</a>;</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">class </span><a class="code" href="../../d7/dd5/classxii_asset_document.htm">xiiAssetDocument</a>;</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">class </span><a class="code" href="../../d9/d5f/classxii_editor_engine_document_msg.htm">xiiEditorEngineDocumentMsg</a>;</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">struct </span><a class="code" href="../../d8/da8/structxii_object_picking_result.htm">xiiObjectPickingResult</a>;</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">struct </span><a class="code" href="../../d1/d44/structxii_engine_view_config.htm">xiiEngineViewConfig</a>;</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">struct </span><a class="code" href="../../dd/d5b/structxii_common_asset_ui_state.htm">xiiCommonAssetUiState</a>;</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
-<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="../../d0/d31/structxii_engine_window_event.htm">   20</a></span>&#160;<span class="keyword">struct </span>XII_EDITORFRAMEWORK_DLL <a class="code" href="../../d0/d31/structxii_engine_window_event.htm">xiiEngineWindowEvent</a></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;{</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  <span class="keyword">enum class</span> Type</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  {</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    ViewCreated,</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    ViewDestroyed,</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  };</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  Type                   m_Type;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  <a class="code" href="../../d3/d93/classxii_qt_engine_view_widget.htm">xiiQtEngineViewWidget</a>* m_pView = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;};</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
-<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="../../d0/d97/classxii_qt_engine_document_window.htm">   36</a></span>&#160;<span class="keyword">class </span>XII_EDITORFRAMEWORK_DLL <a class="code" href="../../d0/d97/classxii_qt_engine_document_window.htm">xiiQtEngineDocumentWindow</a> : <span class="keyword">public</span> <a class="code" href="../../d8/dd2/classxii_qt_document_window.htm">xiiQtDocumentWindow</a></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;{</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  Q_OBJECT</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <a class="code" href="../../d0/d97/classxii_qt_engine_document_window.htm">xiiQtEngineDocumentWindow</a>(<a class="code" href="../../d7/dd5/classxii_asset_document.htm">xiiAssetDocument</a>* pDocument);</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <span class="keyword">virtual</span> ~<a class="code" href="../../d0/d97/classxii_qt_engine_document_window.htm">xiiQtEngineDocumentWindow</a>();</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <a class="code" href="../../d3/df5/classxii_editor_engine_connection.htm">xiiEditorEngineConnection</a>*    GetEditorEngineConnection() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <span class="keyword">const</span> <a class="code" href="../../d8/da8/structxii_object_picking_result.htm">xiiObjectPickingResult</a>&amp; PickObject(xiiUInt16 uiScreenPosX, xiiUInt16 uiScreenPosY, <a class="code" href="../../d3/d93/classxii_qt_engine_view_widget.htm">xiiQtEngineViewWidget</a>* pView) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <a class="code" href="../../d7/dd5/classxii_asset_document.htm">xiiAssetDocument</a>* GetDocument() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <a class="code" href="../../d3/d93/classxii_qt_engine_view_widget.htm">xiiQtEngineViewWidget</a>* GetHoveredViewWidget() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <a class="code" href="../../d3/d93/classxii_qt_engine_view_widget.htm">xiiQtEngineViewWidget</a>* GetFocusedViewWidget() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <a class="code" href="../../d3/d93/classxii_qt_engine_view_widget.htm">xiiQtEngineViewWidget</a>* GetViewWidgetByID(xiiUInt32 uiViewID) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  <a class="code" href="../../d0/d60/classxii_array_ptr.htm">xiiArrayPtr&lt;xiiQtEngineViewWidget* const&gt;</a> GetViewWidgets() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <span class="keywordtype">void</span> AddViewWidget(<a class="code" href="../../d3/d93/classxii_qt_engine_view_widget.htm">xiiQtEngineViewWidget</a>* pView);</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  <span class="keyword">mutable</span> <a class="code" href="../../dc/d22/classxii_event.htm">xiiEvent&lt;const xiiEngineWindowEvent&amp;&gt;</a> m_EngineWindowEvent;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="../../d3/d93/classxii_qt_engine_view_widget.htm">xiiQtEngineViewWidget</a>;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <a class="code" href="../../dc/da9/classxii_hybrid_array.htm">xiiHybridArray&lt;xiiQtEngineViewWidget*, 4&gt;</a> m_ViewWidgets;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">class </span><a class="code" href="../../da/d6a/classxii_preferences.htm">xiiPreferences</a>;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">class </span><a class="code" href="../../d3/d93/classxii_qt_engine_view_widget.htm">xiiQtEngineViewWidget</a>;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">class </span><a class="code" href="../../d7/dd5/classxii_asset_document.htm">xiiAssetDocument</a>;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">class </span><a class="code" href="../../d9/d5f/classxii_editor_engine_document_msg.htm">xiiEditorEngineDocumentMsg</a>;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">struct </span><a class="code" href="../../d8/da8/structxii_object_picking_result.htm">xiiObjectPickingResult</a>;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">struct </span><a class="code" href="../../d1/d44/structxii_engine_view_config.htm">xiiEngineViewConfig</a>;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">struct </span><a class="code" href="../../dd/d5b/structxii_common_asset_ui_state.htm">xiiCommonAssetUiState</a>;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="../../d0/d31/structxii_engine_window_event.htm">   21</a></span>&#160;<span class="keyword">struct </span>XII_EDITORFRAMEWORK_DLL <a class="code" href="../../d0/d31/structxii_engine_window_event.htm">xiiEngineWindowEvent</a></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;{</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  <span class="keyword">enum class</span> Type</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  {</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    ViewCreated,</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    ViewDestroyed,</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  };</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  Type                   m_Type;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  <a class="code" href="../../d3/d93/classxii_qt_engine_view_widget.htm">xiiQtEngineViewWidget</a>* m_pView = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;};</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="../../d0/d97/classxii_qt_engine_document_window.htm">   37</a></span>&#160;<span class="keyword">class </span>XII_EDITORFRAMEWORK_DLL <a class="code" href="../../d0/d97/classxii_qt_engine_document_window.htm">xiiQtEngineDocumentWindow</a> : <span class="keyword">public</span> <a class="code" href="../../d8/dd2/classxii_qt_document_window.htm">xiiQtDocumentWindow</a></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;{</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  Q_OBJECT</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <a class="code" href="../../d0/d97/classxii_qt_engine_document_window.htm">xiiQtEngineDocumentWindow</a>(<a class="code" href="../../d7/dd5/classxii_asset_document.htm">xiiAssetDocument</a>* pDocument);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <span class="keyword">virtual</span> ~<a class="code" href="../../d0/d97/classxii_qt_engine_document_window.htm">xiiQtEngineDocumentWindow</a>();</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <a class="code" href="../../d3/df5/classxii_editor_engine_connection.htm">xiiEditorEngineConnection</a>*    GetEditorEngineConnection() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <span class="keyword">const</span> <a class="code" href="../../d8/da8/structxii_object_picking_result.htm">xiiObjectPickingResult</a>&amp; PickObject(xiiUInt16 uiScreenPosX, xiiUInt16 uiScreenPosY, <a class="code" href="../../d3/d93/classxii_qt_engine_view_widget.htm">xiiQtEngineViewWidget</a>* pView) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <a class="code" href="../../d7/dd5/classxii_asset_document.htm">xiiAssetDocument</a>* GetDocument() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <a class="code" href="../../d3/d93/classxii_qt_engine_view_widget.htm">xiiQtEngineViewWidget</a>* GetHoveredViewWidget() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <a class="code" href="../../d3/d93/classxii_qt_engine_view_widget.htm">xiiQtEngineViewWidget</a>* GetFocusedViewWidget() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <a class="code" href="../../d3/d93/classxii_qt_engine_view_widget.htm">xiiQtEngineViewWidget</a>* GetViewWidgetByID(xiiUInt32 uiViewID) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <a class="code" href="../../d0/d60/classxii_array_ptr.htm">xiiArrayPtr&lt;xiiQtEngineViewWidget* const&gt;</a> GetViewWidgets() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  <span class="keywordtype">void</span> AddViewWidget(<a class="code" href="../../d3/d93/classxii_qt_engine_view_widget.htm">xiiQtEngineViewWidget</a>* pView);</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  <span class="keyword">mutable</span> <a class="code" href="../../dc/d22/classxii_event.htm">xiiEvent&lt;const xiiEngineWindowEvent&amp;&gt;</a> m_EngineWindowEvent;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="../../d3/d93/classxii_qt_engine_view_widget.htm">xiiQtEngineViewWidget</a>;</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> CommonAssetUiEventHandler(<span class="keyword">const</span> <a class="code" href="../../dd/d5b/structxii_common_asset_ui_state.htm">xiiCommonAssetUiState</a>&amp; e);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <a class="code" href="../../dc/da9/classxii_hybrid_array.htm">xiiHybridArray&lt;xiiQtEngineViewWidget*, 4&gt;</a> m_ViewWidgets;</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> ProcessMessageEventHandler(<span class="keyword">const</span> <a class="code" href="../../d9/d5f/classxii_editor_engine_document_msg.htm">xiiEditorEngineDocumentMsg</a>* pMsg);</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  <span class="keywordtype">void</span>         RemoveViewWidget(<a class="code" href="../../d3/d93/classxii_qt_engine_view_widget.htm">xiiQtEngineViewWidget</a>* pView);</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  <span class="keywordtype">void</span>         DestroyAllViews();</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> InternalRedraw() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;};</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> CommonAssetUiEventHandler(<span class="keyword">const</span> <a class="code" href="../../dd/d5b/structxii_common_asset_ui_state.htm">xiiCommonAssetUiState</a>&amp; e);</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> PreferenceChangedEventHandler(<a class="code" href="../../da/d6a/classxii_preferences.htm">xiiPreferences</a>* pPreferenceBase);</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> ProcessMessageEventHandler(<span class="keyword">const</span> <a class="code" href="../../d9/d5f/classxii_editor_engine_document_msg.htm">xiiEditorEngineDocumentMsg</a>* pMsg);</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  <span class="keywordtype">void</span>         RemoveViewWidget(<a class="code" href="../../d3/d93/classxii_qt_engine_view_widget.htm">xiiQtEngineViewWidget</a>* pView);</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  <span class="keywordtype">void</span>         DestroyAllViews();</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> InternalRedraw() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;};</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="astructxii_engine_view_config_htm"><div class="ttname"><a href="../../d1/d44/structxii_engine_view_config.htm">xiiEngineViewConfig</a></div><div class="ttdef"><b>Definition:</b> ViewRenderSettings.h:25</div></div>
 <div class="ttc" id="aclassxii_qt_engine_view_widget_htm"><div class="ttname"><a href="../../d3/d93/classxii_qt_engine_view_widget.htm">xiiQtEngineViewWidget</a></div><div class="ttdoc">Base class for views that show engine output.</div><div class="ttdef"><b>Definition:</b> EngineViewWidget.moc.h:35</div></div>
-<div class="ttc" id="astructxii_engine_window_event_htm"><div class="ttname"><a href="../../d0/d31/structxii_engine_window_event.htm">xiiEngineWindowEvent</a></div><div class="ttdef"><b>Definition:</b> EngineDocumentWindow.moc.h:20</div></div>
+<div class="ttc" id="astructxii_engine_window_event_htm"><div class="ttname"><a href="../../d0/d31/structxii_engine_window_event.htm">xiiEngineWindowEvent</a></div><div class="ttdef"><b>Definition:</b> EngineDocumentWindow.moc.h:21</div></div>
 <div class="ttc" id="aclassxii_asset_document_htm"><div class="ttname"><a href="../../d7/dd5/classxii_asset_document.htm">xiiAssetDocument</a></div><div class="ttdef"><b>Definition:</b> AssetDocument.h:42</div></div>
 <div class="ttc" id="aclassxii_array_ptr_htm"><div class="ttname"><a href="../../d0/d60/classxii_array_ptr.htm">xiiArrayPtr</a></div><div class="ttdoc">This class encapsulates an array and it's size. It is recommended to use this class instead of plain ...</div><div class="ttdef"><b>Definition:</b> ArrayPtr.h:36</div></div>
 <div class="ttc" id="aclassxii_qt_document_window_htm"><div class="ttname"><a href="../../d8/dd2/classxii_qt_document_window.htm">xiiQtDocumentWindow</a></div><div class="ttdoc">Base class for all document windows. Handles the most basic document window management.</div><div class="ttdef"><b>Definition:</b> DocumentWindow.moc.h:33</div></div>
 <div class="ttc" id="aclassxii_hybrid_array_htm"><div class="ttname"><a href="../../dc/da9/classxii_hybrid_array.htm">xiiHybridArray&lt; xiiQtEngineViewWidget *, 4 &gt;</a></div></div>
 <div class="ttc" id="astructxii_common_asset_ui_state_htm"><div class="ttname"><a href="../../dd/d5b/structxii_common_asset_ui_state.htm">xiiCommonAssetUiState</a></div><div class="ttdoc">Frequently needed asset document states, to prevent code duplication.</div><div class="ttdef"><b>Definition:</b> AssetDocument.h:26</div></div>
 <div class="ttc" id="astructxii_object_picking_result_htm"><div class="ttname"><a href="../../d8/da8/structxii_object_picking_result.htm">xiiObjectPickingResult</a></div><div class="ttdef"><b>Definition:</b> EngineViewWidget.moc.h:20</div></div>
-<div class="ttc" id="aclassxii_qt_engine_document_window_htm"><div class="ttname"><a href="../../d0/d97/classxii_qt_engine_document_window.htm">xiiQtEngineDocumentWindow</a></div><div class="ttdoc">Base class for all document windows that need a connection to the engine process, and might want to r...</div><div class="ttdef"><b>Definition:</b> EngineDocumentWindow.moc.h:36</div></div>
+<div class="ttc" id="aclassxii_qt_engine_document_window_htm"><div class="ttname"><a href="../../d0/d97/classxii_qt_engine_document_window.htm">xiiQtEngineDocumentWindow</a></div><div class="ttdoc">Base class for all document windows that need a connection to the engine process, and might want to r...</div><div class="ttdef"><b>Definition:</b> EngineDocumentWindow.moc.h:37</div></div>
 <div class="ttc" id="aclassxii_editor_engine_document_msg_htm"><div class="ttname"><a href="../../d9/d5f/classxii_editor_engine_document_msg.htm">xiiEditorEngineDocumentMsg</a></div><div class="ttdoc">Base class for all messages that are tied to some document.</div><div class="ttdef"><b>Definition:</b> EngineProcessMessages.h:149</div></div>
 <div class="ttc" id="aclassxii_editor_engine_connection_htm"><div class="ttname"><a href="../../d3/df5/classxii_editor_engine_connection.htm">xiiEditorEngineConnection</a></div><div class="ttdef"><b>Definition:</b> EngineProcessConnection.h:101</div></div>
+<div class="ttc" id="aclassxii_preferences_htm"><div class="ttname"><a href="../../da/d6a/classxii_preferences.htm">xiiPreferences</a></div><div class="ttdoc">Base class for all preferences.</div><div class="ttdef"><b>Definition:</b> Preferences.h:17</div></div>
 <div class="ttc" id="aclassxii_event_htm"><div class="ttname"><a href="../../dc/d22/classxii_event.htm">xiiEvent&lt; const xiiEngineWindowEvent &amp; &gt;</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.htm">home</a></li><li class="navelem"><a class="el" href="../../dir_1036706e55c22cab35bc1c58ee689f1d.htm">runner</a></li><li class="navelem"><a class="el" href="../../dir_629f8151d55d307162ff2d619fb1783d.htm">work</a></li><li class="navelem"><a class="el" href="../../dir_1ddc44fe1263a8c7935fa6130b7d9499.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_2c1b6808f12952f4c36e05ba7068379a.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_b5a1c4ecfca018ad24b729e213296d41.htm">Source</a></li><li class="navelem"><a class="el" href="../../dir_6b4bf1df3614588897d8c8b2dbbde39b.htm">Editor</a></li><li class="navelem"><a class="el" href="../../dir_85cc0ddb74daab9d3d596e3c0704d4e4.htm">EditorFramework</a></li><li class="navelem"><a class="el" href="../../dir_1a3f79ff9b0922ccc4386c037b3ce532.htm">DocumentWindow</a></li><li class="navelem"><b>EngineDocumentWindow.moc.h</b></li>
-    <li class="footer">Generated on Wed Jun 12 2024 18:05:45 for XIIEngine by
+    <li class="footer">Generated on Tue Jun 18 2024 13:05:05 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>
