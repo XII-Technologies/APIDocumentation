@@ -1,5 +1,9 @@
 var NAVTREEINDEX95 =
 {
+"dc/d83/structxii_material_visual_shader_event.htm#ad319c17869febf57ac2822ccc3ea9639":[5,0,1364,2],
+"dc/d83/structxii_skeleton_component_1_1_cone_limit_shape.htm":[5,0,2180,3],
+"dc/d83/structxii_skeleton_component_1_1_cone_limit_shape.htm#aadd26f1ab4a7e38f00a5c4db2b54933c":[5,0,2180,3,1],
+"dc/d83/structxii_skeleton_component_1_1_cone_limit_shape.htm#ab33cad1390284ebd6e8dad31af9324cd":[5,0,2180,3,3],
 "dc/d83/structxii_skeleton_component_1_1_cone_limit_shape.htm#ad38a847e7ee67b9fcdd29bbfb3de3fbe":[5,0,2180,3,2],
 "dc/d83/structxii_skeleton_component_1_1_cone_limit_shape.htm#ae4aa1d3c5f4c38cd6405ccca4f1eaf5e":[5,0,2180,3,0],
 "dc/d84/structxii_delegate.htm":[5,0,519],
@@ -245,9 +249,5 @@ var NAVTREEINDEX95 =
 "dc/d9e/structxii_g_a_l_ray_tracing_pipeline_description.htm#ac2443c67666ef0c15ce10105f321025d":[5,0,928,5],
 "dc/d9e/structxii_g_a_l_ray_tracing_pipeline_description.htm#aef52c8a0589cf6edf76722c3fb892cc3":[5,0,928,1],
 "dc/da0/classxii_collection_asset_document_manager.htm":[5,0,321],
-"dc/da0/classxii_collection_asset_document_manager.htm#a06e71b251ebd220d5b1d501a639c5049":[5,0,321,4],
-"dc/da0/classxii_collection_asset_document_manager.htm#a280f83a7f856e7051ef04423e2a1ce06":[5,0,321,3],
-"dc/da0/classxii_collection_asset_document_manager.htm#a2c4c5b90855e76af385acb83c506a4f9":[5,0,321,5],
-"dc/da0/classxii_collection_asset_document_manager.htm#a58e0af249c2aea7ddfa4f880646dee30":[5,0,321,1],
-"dc/da0/classxii_collection_asset_document_manager.htm#ab04836541a48c63b66a9e3a41d5df2cc":[5,0,321,0]
+"dc/da0/classxii_collection_asset_document_manager.htm#a06e71b251ebd220d5b1d501a639c5049":[5,0,321,4]
 };

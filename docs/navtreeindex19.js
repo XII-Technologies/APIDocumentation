@@ -1,5 +1,7 @@
 var NAVTREEINDEX19 =
 {
+"d2/d66/classxii_qt_curve_edit_widget.htm#a7829d2ef55b925267ed51290cd167abb":[5,0,1694,41],
+"d2/d66/classxii_qt_curve_edit_widget.htm#a7b16ea318380fbc9d9b00d70f971558a":[5,0,1694,43],
 "d2/d66/classxii_qt_curve_edit_widget.htm#a882da939406571a4d0746b6ad5397d0e":[5,0,1694,6],
 "d2/d66/classxii_qt_curve_edit_widget.htm#a882e5aafc3b2e4de773bdad0b129a39c":[5,0,1694,20],
 "d2/d66/classxii_qt_curve_edit_widget.htm#a92c22a10e5af366d6307827106f417db":[5,0,1694,15],
@@ -247,7 +249,5 @@ var NAVTREEINDEX19 =
 "d2/d8c/classxii_document_object_manager.htm#a2055addb0b7155d02be32789d1ba05af":[5,0,556,1],
 "d2/d8c/classxii_document_object_manager.htm#a2eb3b752d8672cb9c8ed06d4e0951bfc":[5,0,556,14],
 "d2/d8c/classxii_document_object_manager.htm#a3024f9a315bf74ccc0829f370ea2eac2":[5,0,556,17],
-"d2/d8c/classxii_document_object_manager.htm#a36a37a75e15fb4fd8e7988ff4436f133":[5,0,556,2],
-"d2/d8c/classxii_document_object_manager.htm#a3c67f9c985ec5fb48168a91186c7b9d6":[5,0,556,40],
-"d2/d8c/classxii_document_object_manager.htm#a3eaa8326a72969c66da6f22b33478306":[5,0,556,30]
+"d2/d8c/classxii_document_object_manager.htm#a36a37a75e15fb4fd8e7988ff4436f133":[5,0,556,2]
 };

@@ -1,5 +1,7 @@
 var NAVTREEINDEX50 =
 {
+"d6/d6b/classxii_log_interface.htm#ac4b845aa94f890beb7956c6b6aabbe4b":[5,0,1308,4],
+"d6/d6b/classxii_log_interface.htm#ad175e0c68a87b8ec5dd966ef8e5f80f1":[5,0,1308,2],
 "d6/d6b/structxii_long_op_controller_event.htm":[5,0,1314],
 "d6/d6b/structxii_long_op_controller_event.htm#a0da6f0a6ee09fa9a4671e22e3551e2ef":[5,0,1314,1],
 "d6/d6b/structxii_long_op_controller_event.htm#ab1c333a49f8f3e986789865e1a2cb007":[5,0,1314,2],
@@ -247,7 +249,5 @@ var NAVTREEINDEX50 =
 "d6/d89/classxii_world.htm#a79d3618e314c071579cb5132af68f2c6":[5,0,2588,92],
 "d6/d89/classxii_world.htm#a7e613ec64a65bf0b90cb0302570d042c":[5,0,2588,34],
 "d6/d89/classxii_world.htm#a7fa6b37e35cfff3adc6f67a7dd4bccce":[5,0,2588,65],
-"d6/d89/classxii_world.htm#a802fd101a25b204d9d5ce3dc1184130d":[5,0,2588,50],
-"d6/d89/classxii_world.htm#a83596a85baa91b9f8e621739344c55fb":[5,0,2588,46],
-"d6/d89/classxii_world.htm#a840da472b456e971656510e1b5acccac":[5,0,2588,59]
+"d6/d89/classxii_world.htm#a802fd101a25b204d9d5ce3dc1184130d":[5,0,2588,50]
 };

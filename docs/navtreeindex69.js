@@ -1,5 +1,7 @@
 var NAVTREEINDEX69 =
 {
+"d9/d0b/classxii_memory_policies_1_1xii_proxy_allocation.htm#a6740d0bb10cbf6ed5eaf6a90ea5b2340":[5,0,8,5,4],
+"d9/d0b/classxii_memory_policies_1_1xii_proxy_allocation.htm#a682fbbb798b253c6cb65cb7d3daa37bd":[5,0,8,5,5],
 "d9/d0b/classxii_memory_policies_1_1xii_proxy_allocation.htm#a6984de6e2de0b67a853530db691bffed":[5,0,8,5,0],
 "d9/d0b/classxii_memory_policies_1_1xii_proxy_allocation.htm#a84912b8a74f6ba40582c5c7a0c1cf551":[5,0,8,5,3],
 "d9/d0b/classxii_memory_policies_1_1xii_proxy_allocation.htm#acac739eb894c79e522dcbd605399b4e0":[5,0,8,5,2],
@@ -247,7 +249,5 @@ var NAVTREEINDEX69 =
 "d9/d2c/structxii_g_a_l_surface_transform.htm":[5,0,1012],
 "d9/d2c/structxii_g_a_l_surface_transform.htm#a79c57cb47773dc230f242eb53adc9148":[5,0,1012,1],
 "d9/d2c/structxii_g_a_l_surface_transform.htm#a79c57cb47773dc230f242eb53adc9148a53ce02b49b80b3d27f17d6fa7fc129fc":[5,0,1012,1,2],
-"d9/d2c/structxii_g_a_l_surface_transform.htm#a79c57cb47773dc230f242eb53adc9148a5c9f9a2b2f16702a1d644b0b75ead67d":[5,0,1012,1,1],
-"d9/d2c/structxii_g_a_l_surface_transform.htm#a79c57cb47773dc230f242eb53adc9148a6a816722385b777ede81a9f0a0564f2f":[5,0,1012,1,3],
-"d9/d2c/structxii_g_a_l_surface_transform.htm#a79c57cb47773dc230f242eb53adc9148a706034e9e650634a1c8b7e61ed232f30":[5,0,1012,1,5]
+"d9/d2c/structxii_g_a_l_surface_transform.htm#a79c57cb47773dc230f242eb53adc9148a5c9f9a2b2f16702a1d644b0b75ead67d":[5,0,1012,1,1]
 };

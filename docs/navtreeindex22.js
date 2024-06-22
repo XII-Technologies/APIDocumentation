@@ -1,5 +1,7 @@
 var NAVTREEINDEX22 =
 {
+"d2/de3/classxii_single_curve_data.htm":[5,0,2166],
+"d2/de3/classxii_single_curve_data.htm#a5154fa50863a72c9cf00008577e6a23f":[5,0,2166,1],
 "d2/de3/classxii_single_curve_data.htm#aa14feae1c222db67cc5e25e7bfefb22f":[5,0,2166,0],
 "d2/de3/classxii_single_curve_data.htm#ac3c0b2a6a98577cee84ad574bfdcfca8":[5,0,2166,3],
 "d2/de3/classxii_single_curve_data.htm#ad7c514cd59868c3254583c7fead00beb":[5,0,2166,2],
@@ -247,7 +249,5 @@ var NAVTREEINDEX22 =
 "d3/d14/structxii_game_object_event.htm#a4f061b8a6e7408537f3f0858b17da590":[5,0,1084,0],
 "d3/d14/structxii_game_object_event.htm#a4f061b8a6e7408537f3f0858b17da590a1f77f79837cd126fe183ebea6db14798":[5,0,1084,0,5],
 "d3/d14/structxii_game_object_event.htm#a4f061b8a6e7408537f3f0858b17da590a48422246630d50fe08e71dc115e65677":[5,0,1084,0,7],
-"d3/d14/structxii_game_object_event.htm#a4f061b8a6e7408537f3f0858b17da590a4891293c924d2073221961a4017e4ea1":[5,0,1084,0,12],
-"d3/d14/structxii_game_object_event.htm#a4f061b8a6e7408537f3f0858b17da590a58296d4f55981897343d7824dd1cfaca":[5,0,1084,0,13],
-"d3/d14/structxii_game_object_event.htm#a4f061b8a6e7408537f3f0858b17da590a5ebbecd606c1203175f609e43a145988":[5,0,1084,0,6]
+"d3/d14/structxii_game_object_event.htm#a4f061b8a6e7408537f3f0858b17da590a4891293c924d2073221961a4017e4ea1":[5,0,1084,0,12]
 };

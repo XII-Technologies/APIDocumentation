@@ -1,6 +1,6 @@
 var classxii_g_a_l_command_list_null =
 [
-    [ "xiiGALCommandListNull", "d0/d0f/classxii_g_a_l_command_list_null.htm#aade8c7e48641bfc002aa55bb957e6455", null ],
+    [ "xiiGALCommandListNull", "d0/d0f/classxii_g_a_l_command_list_null.htm#ac40526d7f10e8c0426978cc4c0ab517c", null ],
     [ "~xiiGALCommandListNull", "d0/d0f/classxii_g_a_l_command_list_null.htm#a955d04facf23c12054dd89a6b038de95", null ],
     [ "BeginDebugGroupPlatform", "d0/d0f/classxii_g_a_l_command_list_null.htm#ae9de6e879d14213dfc01a862e92f4330", null ],
     [ "BeginPlatform", "d0/d0f/classxii_g_a_l_command_list_null.htm#a0dfcc5c935d3e83235fadba422185d8c", null ],
@@ -41,6 +41,7 @@ var classxii_g_a_l_command_list_null =
     [ "SetStencilRefPlatform", "d0/d0f/classxii_g_a_l_command_list_null.htm#a59b903d18246054cce94102fdea7727c", null ],
     [ "SetVertexBuffersPlatform", "d0/d0f/classxii_g_a_l_command_list_null.htm#a6997c9c041524859db44a24f416c8c38", null ],
     [ "SetViewportsPlatform", "d0/d0f/classxii_g_a_l_command_list_null.htm#af01153ad93e494db7cc9edf01bde28b9", null ],
+    [ "SubmitPlatform", "d0/d0f/classxii_g_a_l_command_list_null.htm#adad475a1b65629664c8612a205c12856", null ],
     [ "UnmapBufferPlatform", "d0/d0f/classxii_g_a_l_command_list_null.htm#a8cb643172e938ae69aa0641a13f5f8e9", null ],
     [ "UnmapTextureSubresourcePlatform", "d0/d0f/classxii_g_a_l_command_list_null.htm#a6ca7920a03105deba68883793e870b27", null ],
     [ "UpdateBufferExtendedPlatform", "d0/d0f/classxii_g_a_l_command_list_null.htm#a4fdd6a5b2a3b664ae45cfdabfac1a563", null ],

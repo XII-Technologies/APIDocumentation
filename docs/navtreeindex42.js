@@ -1,5 +1,7 @@
 var NAVTREEINDEX42 =
 {
+"d5/d6f/classxii_visual_script_instance.htm#af331f4a5cbc11742ad95ba1ca59e2f60":[5,0,2546,1],
+"d5/d6f/struct_occluder.htm":[5,0,28],
 "d5/d71/structxii_g_a_l_draw_command_properties.htm":[5,0,836],
 "d5/d71/structxii_g_a_l_draw_command_properties.htm#a1bb837553b73d2001791e4d4113331fa":[5,0,836,3],
 "d5/d71/structxii_g_a_l_draw_command_properties.htm#a2a930b55799d568fec89f069eadc40de":[5,0,836,4],
@@ -247,7 +249,5 @@ var NAVTREEINDEX42 =
 "d5/d98/classxii_document_object_manager_1_1_storage.htm#a96c037e19d05ff0702c3156529200a8c":[5,0,556,0,6],
 "d5/d98/classxii_document_object_manager_1_1_storage.htm#aa27bf72b2e5b1dd254eda40a0b1eebbd":[5,0,556,0,1],
 "d5/d98/classxii_document_object_manager_1_1_storage.htm#af9a7bfd7386e1e96fb94480c566fcdc9":[5,0,556,0,4],
-"d5/d99/classxii_translator.htm":[5,0,2422],
-"d5/d99/classxii_translator.htm#a099513f779935041df1a56718c098585":[5,0,2422,1],
-"d5/d99/classxii_translator.htm#a29e8ce02886c90ed17f8026492dbc342":[5,0,2422,2]
+"d5/d99/classxii_translator.htm":[5,0,2422]
 };

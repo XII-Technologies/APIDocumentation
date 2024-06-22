@@ -1,5 +1,7 @@
 var NAVTREEINDEX51 =
 {
+"d6/d89/classxii_world.htm#a83596a85baa91b9f8e621739344c55fb":[5,0,2588,46],
+"d6/d89/classxii_world.htm#a840da472b456e971656510e1b5acccac":[5,0,2588,59],
 "d6/d89/classxii_world.htm#a866ec031f1d82f11716e3f55db08ba2d":[5,0,2588,47],
 "d6/d89/classxii_world.htm#a88baad8fdcad7e1632fd81984b59f1be":[5,0,2588,15],
 "d6/d89/classxii_world.htm#a88c2c92f8ebf33e9c347ece57bbf88c8":[5,0,2588,2],
@@ -247,7 +249,5 @@ var NAVTREEINDEX51 =
 "d6/d9b/classxii_editor_preferences_user.htm#abf4dd608999bcaa682f600e15ada0adc":[5,0,625,8],
 "d6/d9b/classxii_editor_preferences_user.htm#ac8990b5806f413115fc69f7f6df48151":[5,0,625,21],
 "d6/d9b/classxii_editor_preferences_user.htm#aca3f7dc9751b5bbe1dd3f0d7502c318f":[5,0,625,9],
-"d6/d9b/classxii_editor_preferences_user.htm#acfd7fc40d770387414962d329154a5b7":[5,0,625,14],
-"d6/d9b/classxii_editor_preferences_user.htm#ad5380cfcd8e3235458d54f44fc2a6f0b":[5,0,625,23],
-"d6/d9b/classxii_editor_preferences_user.htm#ad96bde330fd447144f261e9ec7a43b14":[5,0,625,5]
+"d6/d9b/classxii_editor_preferences_user.htm#acfd7fc40d770387414962d329154a5b7":[5,0,625,14]
 };

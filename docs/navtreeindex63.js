@@ -1,5 +1,7 @@
 var NAVTREEINDEX63 =
 {
+"d8/d54/structxii_asset_table.htm#aead68fa978c1585c4313c894d713afd1":[5,0,212,5],
+"d8/d54/structxii_root_motion_mode.htm":[5,0,1994],
 "d8/d54/structxii_root_motion_mode.htm#a9cadb18dba5cded1e1aa471631ae2b94":[5,0,1994,0],
 "d8/d54/structxii_root_motion_mode.htm#a9fc9bcbfe0d6092df9a4342b5b4389cf":[5,0,1994,1],
 "d8/d54/structxii_root_motion_mode.htm#a9fc9bcbfe0d6092df9a4342b5b4389cfa042fb8591697cf892776a3bb9fc1f16b":[5,0,1994,1,2],
@@ -247,7 +249,5 @@ var NAVTREEINDEX63 =
 "d8/d77/classxii_g_a_l_device_d3_d12.htm#afb4a63e1479aed5e2ae2b8218d3ff3f5":[5,0,821,30],
 "d8/d77/classxii_g_a_l_device_d3_d12.htm#afc628abc3ace43f94b9fc88dc7405891":[5,0,821,54],
 "d8/d77/classxii_g_a_l_device_d3_d12.htm#affde88fc03190d80146e227cdcee745f":[5,0,821,39],
-"d8/d78/structxii_string_reverse_iterator.htm":[5,0,2293],
-"d8/d78/structxii_string_reverse_iterator.htm#a0ca42aa2663ee2234ddb207a08116e8a":[5,0,2293,11],
-"d8/d78/structxii_string_reverse_iterator.htm#a0f05be8c93fa73ac2fa55b4a28e908f2":[5,0,2293,1]
+"d8/d78/structxii_string_reverse_iterator.htm":[5,0,2293]
 };

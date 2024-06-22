@@ -1,5 +1,7 @@
 var NAVTREEINDEX49 =
 {
+"d6/d49/classxii_g_a_l_pipeline_state_vulkan.htm#acea7a7e8924def729daa9ab314f0582f":[5,0,901,5],
+"d6/d49/classxii_g_a_l_pipeline_state_vulkan.htm#ada9d790f7a2f9cc4f11172f9fb822e25":[5,0,901,3],
 "d6/d49/classxii_g_a_l_pipeline_state_vulkan.htm#adb4094f384daf8fd97f0bc8b2ad5b65c":[5,0,901,10],
 "d6/d49/classxii_g_a_l_pipeline_state_vulkan.htm#adef6b12cf70fe924b60598af65bfeb4c":[5,0,901,8],
 "d6/d49/classxii_g_a_l_pipeline_state_vulkan.htm#aefc9ff75d6833fd2f05be48e16436db6":[5,0,901,12],
@@ -247,7 +249,5 @@ var NAVTREEINDEX49 =
 "d6/d6b/classxii_log_interface.htm":[5,0,1308],
 "d6/d6b/classxii_log_interface.htm#aac471b3fdf3825b6aea1f15544f25090":[5,0,1308,0],
 "d6/d6b/classxii_log_interface.htm#ab81126a235a087cac3778f5ae8ce58c9":[5,0,1308,3],
-"d6/d6b/classxii_log_interface.htm#ac34fe434d8673bf26c3f0defbb88889a":[5,0,1308,1],
-"d6/d6b/classxii_log_interface.htm#ac4b845aa94f890beb7956c6b6aabbe4b":[5,0,1308,4],
-"d6/d6b/classxii_log_interface.htm#ad175e0c68a87b8ec5dd966ef8e5f80f1":[5,0,1308,2]
+"d6/d6b/classxii_log_interface.htm#ac34fe434d8673bf26c3f0defbb88889a":[5,0,1308,1]
 };

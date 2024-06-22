@@ -1,5 +1,7 @@
 var NAVTREEINDEX39 =
 {
+"d5/d19/classxii_g_a_l_device.htm#abfc23322cc03a1d9237f09aa51b88357":[5,0,817,57],
+"d5/d19/classxii_g_a_l_device.htm#ac13386f6df65758c390b23c9fd6de152":[5,0,817,67],
 "d5/d19/classxii_g_a_l_device.htm#ac58c75e3dcc1f29a6990f2370a4aea03":[5,0,817,70],
 "d5/d19/classxii_g_a_l_device.htm#ac98a53a51523c6bd5fdf4eea318cabc9":[5,0,817,58],
 "d5/d19/classxii_g_a_l_device.htm#acac690ce298b37fd8c6fe833d1dca6f0":[5,0,817,126],
@@ -247,7 +249,5 @@ var NAVTREEINDEX39 =
 "d5/d37/classxii_g_a_l_texture_d3_d11.htm#aefc9ff75d6833fd2f05be48e16436db6":[5,0,1026,13],
 "d5/d37/classxii_g_a_l_texture_d3_d11.htm#af7b1e223861a27633fa072bdb5604c27":[5,0,1026,1],
 "d5/d37/classxii_g_a_l_texture_d3_d11.htm#afbf4e4b6e47f06a8440ef2529f1c67b0":[5,0,1026,7],
-"d5/d39/classxii_data_directory_reader_writer_base.htm":[5,0,474],
-"d5/d39/classxii_data_directory_reader_writer_base.htm#a08d74710717b4e6cdaf4d938f42d8f5c":[5,0,474,10],
-"d5/d39/classxii_data_directory_reader_writer_base.htm#a180d9050c9b77df2ce43415f61d1f231":[5,0,474,0]
+"d5/d39/classxii_data_directory_reader_writer_base.htm":[5,0,474]
 };

@@ -1,5 +1,6 @@
 var NAVTREEINDEX8 =
 {
+"d0/df6/classxii_slider_action.htm#afeffd79409daaba9132fc1b40c9e63f7":[5,0,2199,1],
 "d0/df8/classxii_g_a_l_shader_resource_variable_null.htm":[5,0,984],
 "d0/df8/classxii_g_a_l_shader_resource_variable_null.htm#a2fd852aeb72ca65b271cbeac1ea5538d":[5,0,984,7],
 "d0/df8/classxii_g_a_l_shader_resource_variable_null.htm#a47c844596d2410cf635d8cae137d41fb":[5,0,984,9],
@@ -248,6 +249,5 @@ var NAVTREEINDEX8 =
 "d1/d20/classxii_vec4_template.htm#aaa19646e0e1d001c6547db64b6dd4d2b":[5,0,2499,35],
 "d1/d20/classxii_vec4_template.htm#ab1ca57c950409037056ab9c06e212690":[5,0,2499,3],
 "d1/d20/classxii_vec4_template.htm#ab5d88b1f5f8d9b65fd72dad4c7d81399":[5,0,2499,2],
-"d1/d20/classxii_vec4_template.htm#abcd870cce46276520fcb38712748af50":[5,0,2499,13],
-"d1/d20/classxii_vec4_template.htm#abe70096b77c7b35cbdd98fb7d09c1d70":[5,0,2499,33]
+"d1/d20/classxii_vec4_template.htm#abcd870cce46276520fcb38712748af50":[5,0,2499,13]
 };

@@ -1,5 +1,6 @@
 var NAVTREEINDEX15 =
 {
+"d1/ddd/classxii_capsule_gizmo.htm#a3b94769e43a589960ee0874ed9ef7e3c":[5,0,287,4],
 "d1/ddd/classxii_capsule_gizmo.htm#a40a31cd54b8d56833388c502f26bf6b6":[5,0,287,7],
 "d1/ddd/classxii_capsule_gizmo.htm#a43b4a4b88428013912bb2a13dfd75947":[5,0,287,5],
 "d1/ddd/classxii_capsule_gizmo.htm#a5972267e86d2ad81c253ac194317972d":[5,0,287,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX15 =
 "d1/ded/classxii_game_application.htm#acab1daae897db95548a950e7d380c89d":[5,0,1065,18],
 "d1/ded/classxii_game_application.htm#ae4a8f5ad7555c09c4faf2d9584b610f1":[5,0,1065,10],
 "d1/ded/classxii_game_application.htm#ae6a74c237e4a4cf00b5d805b14438d37":[5,0,1065,13],
-"d1/ded/classxii_game_application.htm#af42d21208b2bbbb3d106d670d29fb517":[5,0,1065,21],
-"d1/ded/classxii_game_application.htm#af459e9cfb469599662113d59a7dfa514":[5,0,1065,23]
+"d1/ded/classxii_game_application.htm#af42d21208b2bbbb3d106d670d29fb517":[5,0,1065,21]
 };

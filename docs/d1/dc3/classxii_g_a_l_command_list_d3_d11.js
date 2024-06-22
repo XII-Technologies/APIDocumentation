@@ -50,6 +50,7 @@ var classxii_g_a_l_command_list_d3_d11 =
     [ "SetStencilRefPlatform", "d1/dc3/classxii_g_a_l_command_list_d3_d11.htm#ae4223533f52449142cac2f5404471d21", null ],
     [ "SetVertexBuffersPlatform", "d1/dc3/classxii_g_a_l_command_list_d3_d11.htm#a0bc85ade70d8f66f31a7285c8d1df28f", null ],
     [ "SetViewportsPlatform", "d1/dc3/classxii_g_a_l_command_list_d3_d11.htm#a5b4a83c76d7cf57747a32d016ab46b4f", null ],
+    [ "SubmitPlatform", "d1/dc3/classxii_g_a_l_command_list_d3_d11.htm#a2398af570fb71fa4387a02c98814afc7", null ],
     [ "UnmapBufferPlatform", "d1/dc3/classxii_g_a_l_command_list_d3_d11.htm#a00fdcfcdac616d94db62b2eb88d73c33", null ],
     [ "UnmapTextureSubresourcePlatform", "d1/dc3/classxii_g_a_l_command_list_d3_d11.htm#a9a9aae6e9167ffd581add9a17e34046f", null ],
     [ "UpdateBufferExtendedPlatform", "d1/dc3/classxii_g_a_l_command_list_d3_d11.htm#a10ea949e47b1e05b63a6462ed3a881e6", null ],

@@ -1,5 +1,7 @@
 var NAVTREEINDEX65 =
 {
+"d8/d95/classxii_prefab_resource.htm#a50b2ff60d39a8e0477e22bea67b9b378":[5,0,1583,4],
+"d8/d95/classxii_prefab_resource.htm#a6c3ef0e6716345ff840f28fc79756a55":[5,0,1583,2],
 "d8/d95/classxii_prefab_resource.htm#a70ebf16a8686e36cbccde64a7e9a4f0b":[5,0,1583,5],
 "d8/d95/classxii_prefab_resource.htm#a8a4f51af41089052151957cca2dcd555":[5,0,1583,1],
 "d8/d95/classxii_prefab_resource.htm#aad7771019e601a41020d5d6dfcec88d0":[5,0,1583,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX65 =
 "d8/da9/classxii_x_r_hand_tracking_interface.htm":[5,0,2607],
 "d8/da9/classxii_x_r_hand_tracking_interface.htm#a33cc9e2909e26bb1a9d9af81d2091477":[5,0,2607,0],
 "d8/da9/classxii_x_r_hand_tracking_interface.htm#a33cc9e2909e26bb1a9d9af81d2091477a071b21852e50e1d41d30b39cc6d7f8c9":[5,0,2607,0,1],
-"d8/da9/classxii_x_r_hand_tracking_interface.htm#a33cc9e2909e26bb1a9d9af81d2091477a5e1b39ae9fac0eab832877bd5cd01690":[5,0,2607,0,2],
-"d8/da9/classxii_x_r_hand_tracking_interface.htm#a33cc9e2909e26bb1a9d9af81d2091477a9ed2d871602556951e39f3cebd08d6cb":[5,0,2607,0,0],
-"d8/da9/classxii_x_r_hand_tracking_interface.htm#a57acaec16d9bc2668927254a8c8f0a57":[5,0,2607,1]
+"d8/da9/classxii_x_r_hand_tracking_interface.htm#a33cc9e2909e26bb1a9d9af81d2091477a5e1b39ae9fac0eab832877bd5cd01690":[5,0,2607,0,2]
 };

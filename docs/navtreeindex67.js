@@ -1,5 +1,7 @@
 var NAVTREEINDEX67 =
 {
+"d8/dc3/classxii_qt_layer_adapter.htm#a288740d44bcc7ae8aa1932a1941ebdbe":[5,0,1763,0],
+"d8/dc3/classxii_qt_layer_adapter.htm#a288740d44bcc7ae8aa1932a1941ebdbea0ba3c9d9c47aea167cc2037f37d3e5b6":[5,0,1763,0,0],
 "d8/dc3/classxii_qt_layer_adapter.htm#a8ebfb9447c5b1efd3686a30d63b26804":[5,0,1763,1],
 "d8/dc3/classxii_qt_layer_adapter.htm#aa789eedeba2a32dd221ade97ea4d8f04":[5,0,1763,3],
 "d8/dc3/classxii_qt_layer_adapter.htm#ac40dc7f7e8ddebb8fd926eeb61400a11":[5,0,1763,2],
@@ -247,7 +249,5 @@ var NAVTREEINDEX67 =
 "d8/de2/structxii_g_a_l_texture_view_creation_description.htm#ade8a39461042895127f2e605d002fb9b":[5,0,1038,10],
 "d8/de2/structxii_g_a_l_texture_view_creation_description.htm#adf4bcb76d4747c13e8c375daacc5303a":[5,0,1038,11],
 "d8/de2/structxii_g_a_l_texture_view_creation_description.htm#ae3c05a7f5d8273103339a2f95dde6ae4":[5,0,1038,7],
-"d8/de2/structxii_g_a_l_texture_view_creation_description.htm#af179d62ed43d8a162c90698f444b2b86":[5,0,1038,3],
-"d8/de5/classxii_raw_memory_stream_reader.htm":[5,0,1894],
-"d8/de5/classxii_raw_memory_stream_reader.htm#a05e5b8072e915dad81531e5d3931ff4b":[5,0,1894,3]
+"d8/de2/structxii_g_a_l_texture_view_creation_description.htm#af179d62ed43d8a162c90698f444b2b86":[5,0,1038,3]
 };

@@ -1,5 +1,9 @@
 var NAVTREEINDEX101 =
 {
+"dd/d50/structxii_color_gradient_1_1_color_c_p.htm":[5,0,334,1],
+"dd/d50/structxii_color_gradient_1_1_color_c_p.htm#a012c2a2dbe932d8266a8baf3da378e93":[5,0,334,1,5],
+"dd/d50/structxii_color_gradient_1_1_color_c_p.htm#a2a4ba4c6fc3cd1b5e55466202a5ae140":[5,0,334,1,1],
+"dd/d50/structxii_color_gradient_1_1_color_c_p.htm#a40bfb5a7504834dfeb3f1d12f34dadd2":[5,0,334,1,6],
 "dd/d50/structxii_color_gradient_1_1_color_c_p.htm#a54396a21d6e1caa090b3114f6be3ffb1":[5,0,334,1,2],
 "dd/d50/structxii_color_gradient_1_1_color_c_p.htm#a7c99dbd0b1b903bf06bc09fe2606d6b3":[5,0,334,1,0],
 "dd/d50/structxii_color_gradient_1_1_color_c_p.htm#a8ad6e519b33aead9fbf50091cbd42de8":[5,0,334,1,4],
@@ -245,9 +249,5 @@ var NAVTREEINDEX101 =
 "dd/d75/classxii_command.htm#ad550263f72e98d0d04415cff3ba291a4":[5,0,344,20],
 "dd/d75/classxii_command.htm#af88a2d6bf99f1730f1fa2f6d699f00f5":[5,0,344,17],
 "dd/d79/classxii_bounding_sphere_template.htm":[5,0,263],
-"dd/d79/classxii_bounding_sphere_template.htm#a07eff45caa8016fd8d2a13f4b8c7be40":[5,0,263,14],
-"dd/d79/classxii_bounding_sphere_template.htm#a0a57e9a851a25a5553da3b2fe2ce481f":[5,0,263,32],
-"dd/d79/classxii_bounding_sphere_template.htm#a1f9656c1bf1c2baabc26bd1a43c060c2":[5,0,263,3],
-"dd/d79/classxii_bounding_sphere_template.htm#a38bf494dafd4350db92297c289297118":[5,0,263,29],
-"dd/d79/classxii_bounding_sphere_template.htm#a5a45a86fbb55d2ea3e4e03654fc17364":[5,0,263,0]
+"dd/d79/classxii_bounding_sphere_template.htm#a07eff45caa8016fd8d2a13f4b8c7be40":[5,0,263,14]
 };

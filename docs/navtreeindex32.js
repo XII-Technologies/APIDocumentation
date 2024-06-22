@@ -1,5 +1,7 @@
 var NAVTREEINDEX32 =
 {
+"d4/d57/structxii_clock_1_1_event_data.htm#a97b230cfce97a9aea5effd098d650fa5":[5,0,308,0,2],
+"d4/d57/structxii_clock_1_1_event_data.htm#afcab35dbbcb06c7e18712cd3d371bded":[5,0,308,0,1],
 "d4/d5a/classxii_qt_c_var_item_delegate.htm":[5,0,1695],
 "d4/d5a/classxii_qt_c_var_item_delegate.htm#a4e808f00c40d3a107aa8e43eabb779ed":[5,0,1695,3],
 "d4/d5a/classxii_qt_c_var_item_delegate.htm#a7e7747bad9975e6365caeb00ed0e6298":[5,0,1695,1],
@@ -247,7 +249,5 @@ var NAVTREEINDEX32 =
 "d4/d6c/classxii_project_action.htm#af1c22871395255aeab8ed94bb7f2890ea857a763d9bb7fb647b95fb93c532ba5d":[5,0,1614,0,13],
 "d4/d6c/classxii_project_action.htm#af1c22871395255aeab8ed94bb7f2890ea8c916ca6f6429ba25cf9236fa49aaa0e":[5,0,1614,0,10],
 "d4/d6c/classxii_project_action.htm#af1c22871395255aeab8ed94bb7f2890ea8e42f9c1afa5cf169d67a626e041fde1":[5,0,1614,0,7],
-"d4/d6c/classxii_project_action.htm#af1c22871395255aeab8ed94bb7f2890ea93e4e91cc2af782e6fa9ea31f529b3e7":[5,0,1614,0,16],
-"d4/d6c/classxii_project_action.htm#af1c22871395255aeab8ed94bb7f2890ea9b07d2c9a390cf91dc877c44844bb8ee":[5,0,1614,0,18],
-"d4/d6c/classxii_project_action.htm#af1c22871395255aeab8ed94bb7f2890eaa4aade7ba957ad84a5292ff1cd9c23c3":[5,0,1614,0,23]
+"d4/d6c/classxii_project_action.htm#af1c22871395255aeab8ed94bb7f2890ea93e4e91cc2af782e6fa9ea31f529b3e7":[5,0,1614,0,16]
 };

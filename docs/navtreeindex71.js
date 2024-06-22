@@ -1,5 +1,7 @@
 var NAVTREEINDEX71 =
 {
+"d9/d58/classxii_x_r_interface.htm#a5db0edcfd6e5c3700d24768a03ae19f6":[5,0,2609,5],
+"d9/d58/classxii_x_r_interface.htm#a9c865ef7fcf6f45ebcae7f67c5f4d911":[5,0,2609,4],
 "d9/d58/classxii_x_r_interface.htm#a9f852fad39afe730fadbb29f6e546d8c":[5,0,2609,6],
 "d9/d58/classxii_x_r_interface.htm#ab255b019c13dd9d5ec470b84aa836b76":[5,0,2609,7],
 "d9/d58/classxii_x_r_interface.htm#ac3dd7b3f95dd86dcf7d8c951bacb2df8":[5,0,2609,3],
@@ -247,7 +249,5 @@ var NAVTREEINDEX71 =
 "d9/d75/classxii_state_machine_component.htm#a483cae03a4c58fed7322bf0f0327780c":[5,0,2248,4],
 "d9/d75/classxii_state_machine_component.htm#a6349e50b48807d739119c4514d9fc3dd":[5,0,2248,11],
 "d9/d75/classxii_state_machine_component.htm#a64646b03a3d6bb6b1501c10f080349fe":[5,0,2248,20],
-"d9/d75/classxii_state_machine_component.htm#a689959c853dd52e19c2f86673e8e6208":[5,0,2248,16],
-"d9/d75/classxii_state_machine_component.htm#a6e71db29615fa281d6f42c1e4f636db3":[5,0,2248,14],
-"d9/d75/classxii_state_machine_component.htm#a72123c85ffe270ea1ee4fb8feb5ca1cf":[5,0,2248,12]
+"d9/d75/classxii_state_machine_component.htm#a689959c853dd52e19c2f86673e8e6208":[5,0,2248,16]
 };

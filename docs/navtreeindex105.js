@@ -1,5 +1,9 @@
 var NAVTREEINDEX105 =
 {
+"dd/de6/structxii_g_a_l_sparse_resource_capability_flags.htm#afc7e83e9dd1f9d15babb136af5e90689af01ea109816cfbad4afeecaee3ce3563":[5,0,1004,2,2],
+"dd/de7/classxii_light_component.htm":[5,0,1286],
+"dd/de7/classxii_light_component.htm#a0090150427fcdb231a7d1369ac3a4e45":[5,0,1286,19],
+"dd/de7/classxii_light_component.htm#a00b50fec618954d7a5f8c2c4e7944abf":[5,0,1286,18],
 "dd/de7/classxii_light_component.htm#a08f67ac125b9822581cdd5c559003f71":[5,0,1286,15],
 "dd/de7/classxii_light_component.htm#a2921b2729d97a4eaa194a0cec34c1a2e":[5,0,1286,10],
 "dd/de7/classxii_light_component.htm#a2d8fac0e85cd2902771ea879042b7a79":[5,0,1286,4],
@@ -245,9 +249,5 @@ var NAVTREEINDEX105 =
 "de/d02/structxii_engine_view_preferences.htm":[5,0,641],
 "de/d02/structxii_engine_view_preferences.htm#a121299199e0205245a7744faaf0f0862":[5,0,641,4],
 "de/d02/structxii_engine_view_preferences.htm#aad6c68aa2d67dc5b594e797f69b13d74":[5,0,641,3],
-"de/d02/structxii_engine_view_preferences.htm#ac76f550688d3faa46f6b5c44bc11c512":[5,0,641,0],
-"de/d02/structxii_engine_view_preferences.htm#ac7e72a45d280a8ec3e11e2052cd09997":[5,0,641,1],
-"de/d02/structxii_engine_view_preferences.htm#acdd33f62b335c80c8552f32116b17314":[5,0,641,5],
-"de/d02/structxii_engine_view_preferences.htm#aec8d601d4683efb6fddf323c52184038":[5,0,641,2],
-"de/d03/classxii_editor_engine_process_app_u_w_p.htm":[5,0,615]
+"de/d02/structxii_engine_view_preferences.htm#ac76f550688d3faa46f6b5c44bc11c512":[5,0,641,0]
 };

@@ -151,7 +151,7 @@ var searchData=
   ['optimal_3943',['Optimal',['../d9/d2c/structxii_g_a_l_surface_transform.htm#a79c57cb47773dc230f242eb53adc9148ade5162c0b23228a11932b56dcf4abcba',1,'xiiGALSurfaceTransform']]],
   ['optional_3944',['Optional',['../d0/d1e/structxii_g_a_l_device_feature_state.htm#a3353b07dddb3003f313f52f2e311d161a20d4d79119aa4dd18b91d0e027ddd36b',1,'xiiGALDeviceFeatureState']]],
   ['options_3945',['Options',['../d3/d17/structxii_expression_parser_1_1_options.htm',1,'xiiExpressionParser']]],
-  ['or_3946',['OR',['../d9/d7d/structxii_g_a_l_logic_operation.htm#af8e2a0da0b43dfcff3ca28a2a3fca263a3745a9f87866fe3385b94c6b45e06ae4',1,'xiiGALLogicOperation::OR()'],['../d9/d66/structxii_atomic_utils.htm#aabfc6ce5ee15217e7f6397546223d67e',1,'xiiAtomicUtils::Or(xiiInt32 &amp;ref_iDest, xiiInt32 value)'],['../d9/d66/structxii_atomic_utils.htm#a0d8850577dc1ad948e6cc9f4fe8fdc24',1,'xiiAtomicUtils::Or(xiiInt64 &amp;ref_iDest, xiiInt64 value)']]],
+  ['or_3946',['Or',['../d9/d66/structxii_atomic_utils.htm#aabfc6ce5ee15217e7f6397546223d67e',1,'xiiAtomicUtils::Or(xiiInt32 &amp;ref_iDest, xiiInt32 value)'],['../d9/d66/structxii_atomic_utils.htm#a0d8850577dc1ad948e6cc9f4fe8fdc24',1,'xiiAtomicUtils::Or(xiiInt64 &amp;ref_iDest, xiiInt64 value)'],['../d9/d7d/structxii_g_a_l_logic_operation.htm#af8e2a0da0b43dfcff3ca28a2a3fca263a3745a9f87866fe3385b94c6b45e06ae4',1,'xiiGALLogicOperation::OR()']]],
   ['orange_3947',['Orange',['../d3/de6/classxii_color.htm#af1eaa9a66b99db3ceae630838d899974',1,'xiiColor']]],
   ['orangered_3948',['OrangeRed',['../d3/de6/classxii_color.htm#ada5b57b7301a3178c0997f076494df6d',1,'xiiColor']]],
   ['orchid_3949',['Orchid',['../d3/de6/classxii_color.htm#a88fdcede8301253bda17d34da219df0e',1,'xiiColor']]],

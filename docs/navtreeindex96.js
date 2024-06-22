@@ -1,5 +1,9 @@
 var NAVTREEINDEX96 =
 {
+"dc/da0/classxii_collection_asset_document_manager.htm#a280f83a7f856e7051ef04423e2a1ce06":[5,0,321,3],
+"dc/da0/classxii_collection_asset_document_manager.htm#a2c4c5b90855e76af385acb83c506a4f9":[5,0,321,5],
+"dc/da0/classxii_collection_asset_document_manager.htm#a58e0af249c2aea7ddfa4f880646dee30":[5,0,321,1],
+"dc/da0/classxii_collection_asset_document_manager.htm#ab04836541a48c63b66a9e3a41d5df2cc":[5,0,321,0],
 "dc/da0/classxii_collection_asset_document_manager.htm#ae09df387fd18e9aeef881970b1b86d86":[5,0,321,2],
 "dc/da0/classxii_object_proxy_accessor.htm":[5,0,1495],
 "dc/da0/classxii_object_proxy_accessor.htm#a0fc0d33234c81dd301777a5177eafabd":[5,0,1495,0],
@@ -245,9 +249,5 @@ var NAVTREEINDEX96 =
 "dc/dc3/classxii_msaa_upscale_pass.htm#a00ff7814183075bd32831b37d9492586":[5,0,1426,8],
 "dc/dc3/classxii_msaa_upscale_pass.htm#a2a57cf6fb982912eb53d15359f67b060":[5,0,1426,3],
 "dc/dc3/classxii_msaa_upscale_pass.htm#a3b05f227a515221650239e60ab19eec8":[5,0,1426,1],
-"dc/dc3/classxii_msaa_upscale_pass.htm#a49af598d8dfa2c30ccdf6d3bca75972f":[5,0,1426,9],
-"dc/dc3/classxii_msaa_upscale_pass.htm#a6dbc299c353d335d611c068a6137c55e":[5,0,1426,7],
-"dc/dc3/classxii_msaa_upscale_pass.htm#a958519d22cb17687a6ca9b49fe67f67b":[5,0,1426,4],
-"dc/dc3/classxii_msaa_upscale_pass.htm#aa1cac22144d08592dcb6e4ffa1092be3":[5,0,1426,0],
-"dc/dc3/classxii_msaa_upscale_pass.htm#ad30d36e8ce0c89d39b180e1bba235f1e":[5,0,1426,5]
+"dc/dc3/classxii_msaa_upscale_pass.htm#a49af598d8dfa2c30ccdf6d3bca75972f":[5,0,1426,9]
 };

@@ -1,5 +1,7 @@
 var NAVTREEINDEX54 =
 {
+"d6/dd0/structxii_file_stats.htm#ae5903055bc81424c32f4e1f9563dc31e":[5,0,701,0],
+"d6/dd3/structxii_cloth_sheet_flags.htm":[5,0,311],
 "d6/dd3/structxii_cloth_sheet_flags.htm#a7c131e4e4f71e48d9fa73c13ad28c2b8":[5,0,311,1],
 "d6/dd3/structxii_cloth_sheet_flags.htm#a7d9a53d7f8a5e1e6808e2d49a533060c":[5,0,311,2],
 "d6/dd3/structxii_cloth_sheet_flags.htm#a7d9a53d7f8a5e1e6808e2d49a533060ca3b0d4962ab36bd825dbfc4e9e098acd6":[5,0,311,2,3],
@@ -247,7 +249,5 @@ var NAVTREEINDEX54 =
 "d6/df3/structxii_g_a_l_graphics_pipeline_description.htm#a312c5c604b00b3149ebba9e0981a98fc":[5,0,858,15],
 "d6/df3/structxii_g_a_l_graphics_pipeline_description.htm#a37e750405e1cebb33601d595524c1487":[5,0,858,3],
 "d6/df3/structxii_g_a_l_graphics_pipeline_description.htm#a3fd7d26fc65992bd785e638357ae6c4e":[5,0,858,11],
-"d6/df3/structxii_g_a_l_graphics_pipeline_description.htm#a5388e4c0dd5ecd15cb4464df7925d043":[5,0,858,14],
-"d6/df3/structxii_g_a_l_graphics_pipeline_description.htm#a549874465a0e347a63a8e82d150293c5":[5,0,858,4],
-"d6/df3/structxii_g_a_l_graphics_pipeline_description.htm#a5617a6e928db74d924e64a83e6da885f":[5,0,858,10]
+"d6/df3/structxii_g_a_l_graphics_pipeline_description.htm#a5388e4c0dd5ecd15cb4464df7925d043":[5,0,858,14]
 };

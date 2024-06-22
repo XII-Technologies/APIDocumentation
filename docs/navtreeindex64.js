@@ -1,5 +1,7 @@
 var NAVTREEINDEX64 =
 {
+"d8/d78/structxii_string_reverse_iterator.htm#a0ca42aa2663ee2234ddb207a08116e8a":[5,0,2293,11],
+"d8/d78/structxii_string_reverse_iterator.htm#a0f05be8c93fa73ac2fa55b4a28e908f2":[5,0,2293,1],
 "d8/d78/structxii_string_reverse_iterator.htm#a173c64931e1f810f20766755742166cb":[5,0,2293,20],
 "d8/d78/structxii_string_reverse_iterator.htm#a1a22d5900004ce7015d1c5f5ba5e8fc5":[5,0,2293,7],
 "d8/d78/structxii_string_reverse_iterator.htm#a23c6d0dc0e355fd058bbfcee511f3626":[5,0,2293,8],
@@ -247,7 +249,5 @@ var NAVTREEINDEX64 =
 "d8/d91/classxii_rope_simulator.htm#ae657f1d4894d43c42e4c54f005fe43ec":[5,0,1998,9],
 "d8/d91/classxii_rope_simulator.htm#afaa731a57f351aa554d5cb95ecbcebde":[5,0,1998,11],
 "d8/d95/classxii_prefab_resource.htm":[5,0,1583],
-"d8/d95/classxii_prefab_resource.htm#a2e70761cad018445071b1a7a8f29f50a":[5,0,1583,6],
-"d8/d95/classxii_prefab_resource.htm#a50b2ff60d39a8e0477e22bea67b9b378":[5,0,1583,4],
-"d8/d95/classxii_prefab_resource.htm#a6c3ef0e6716345ff840f28fc79756a55":[5,0,1583,2]
+"d8/d95/classxii_prefab_resource.htm#a2e70761cad018445071b1a7a8f29f50a":[5,0,1583,6]
 };

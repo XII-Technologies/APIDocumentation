@@ -1,5 +1,6 @@
 var NAVTREEINDEX16 =
 {
+"d1/ded/classxii_game_application.htm#af459e9cfb469599662113d59a7dfa514":[5,0,1065,23],
 "d1/ded/classxii_game_application.htm#af913119415c41e6406807668f1d127b5":[5,0,1065,7],
 "d1/ded/classxii_game_application.htm#afcbe515109ce34a90a611898a0883f0f":[5,0,1065,11],
 "d1/dee/classxii_fixed_point.htm":[5,0,709],
@@ -248,6 +249,5 @@ var NAVTREEINDEX16 =
 "d2/d13/classxii_window.htm#a9720a6a7c785f782ba9d7cd0c8bd61c5":[5,0,2572,3],
 "d2/d13/classxii_window.htm#aadda987a4153f41525bb655dcc6d7467":[5,0,2572,12],
 "d2/d13/classxii_window.htm#ab5c20ca3069fca37bda04ab08294edba":[5,0,2572,10],
-"d2/d13/classxii_window.htm#ab7628f8ff7dd616739ae632a6eef9609":[5,0,2572,14],
-"d2/d13/classxii_window.htm#ac5633354854fb9c6513b5f087c0370a8":[5,0,2572,0]
+"d2/d13/classxii_window.htm#ab7628f8ff7dd616739ae632a6eef9609":[5,0,2572,14]
 };

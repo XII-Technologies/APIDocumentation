@@ -1,5 +1,7 @@
 var NAVTREEINDEX24 =
 {
+"d3/d41/structxii_state_machine_logic_operator.htm#a325a958651271973d5c7a68b83362bfa":[5,0,2253,1],
+"d3/d41/structxii_state_machine_logic_operator.htm#a325a958651271973d5c7a68b83362bfaa09f289a19c7683892e6c7d711c842f06":[5,0,2253,1,0],
 "d3/d41/structxii_state_machine_logic_operator.htm#a325a958651271973d5c7a68b83362bfaa3fd896cf66f5ee355e43083ae90946ea":[5,0,2253,1,2],
 "d3/d41/structxii_state_machine_logic_operator.htm#a325a958651271973d5c7a68b83362bfaa760b0b1693b899745271717b1983e100":[5,0,2253,1,1],
 "d3/d41/structxii_state_machine_logic_operator.htm#ae1952bedd20f19145d5f0821f1d969c2":[5,0,2253,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX24 =
 "d3/d6b/classxii_g_a_l_device_vulkan.htm#afec54aecc82cf13a9b208cbbab5b0013":[5,0,833,6],
 "d3/d6b/classxii_g_a_l_device_vulkan.htm#afff424161792f96d1ee5c3d9bfd261f6":[5,0,833,11],
 "d3/d6b/structxii_type_version_info.htm":[5,0,2450],
-"d3/d6b/structxii_type_version_info.htm#a1fb8cf6c5298682806c4903505738a76":[5,0,2450,5],
-"d3/d6b/structxii_type_version_info.htm#a2afeba503184002af7431c312cd1df33":[5,0,2450,3],
-"d3/d6b/structxii_type_version_info.htm#a3589b30ec780d02b6b7b146954d3e694":[5,0,2450,6]
+"d3/d6b/structxii_type_version_info.htm#a1fb8cf6c5298682806c4903505738a76":[5,0,2450,5]
 };

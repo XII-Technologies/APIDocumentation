@@ -1,5 +1,7 @@
 var NAVTREEINDEX57 =
 {
+"d7/d58/classxii_game_object_edit_tool.htm#a0006c4d3c8152214c000de6f4723f23a":[5,0,1083,7],
+"d7/d58/classxii_game_object_edit_tool.htm#a2ad1a3140caa9ecfce04326216e931ea":[5,0,1083,10],
 "d7/d58/classxii_game_object_edit_tool.htm#a49d5cb9421bd9cbc99cb1ea82f2ff182":[5,0,1083,6],
 "d7/d58/classxii_game_object_edit_tool.htm#a4f52aa94a52cbc12b00a0587cdff02b7":[5,0,1083,4],
 "d7/d58/classxii_game_object_edit_tool.htm#a5321034543510508960fd35c19937462":[5,0,1083,3],
@@ -247,7 +249,5 @@ var NAVTREEINDEX57 =
 "d7/d86/classxii_system_information.htm#a382a50c8bf792d2ba38202ace2485e25":[5,0,2316,1],
 "d7/d86/classxii_system_information.htm#a3a6461ab608da678c95703533823a717":[5,0,2316,2],
 "d7/d86/classxii_system_information.htm#a3ae59936473b9156788568fa1cbce3cb":[5,0,2316,3],
-"d7/d86/classxii_system_information.htm#a42191d44c8aabfab12cae5175122612d":[5,0,2316,0],
-"d7/d86/classxii_system_information.htm#a6ea18f726fbfe7e20467e5a69ac4723a":[5,0,2316,6],
-"d7/d86/classxii_system_information.htm#a72f7636660667ebfb9558b35b16cfd2a":[5,0,2316,7]
+"d7/d86/classxii_system_information.htm#a42191d44c8aabfab12cae5175122612d":[5,0,2316,0]
 };

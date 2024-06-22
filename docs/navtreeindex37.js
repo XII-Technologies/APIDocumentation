@@ -1,5 +1,7 @@
 var NAVTREEINDEX37 =
 {
+"d4/deb/classxii_internal_1_1xii_allocator_impl.htm#ad746c34e02eb0f1f16399c74dfa2217e":[5,0,6,18,4],
+"d4/deb/classxii_internal_1_1xii_allocator_impl.htm#ae658b6c22b3bb1ba5ed4e425859ad602":[5,0,6,18,1],
 "d4/ded/classxii_game_object_gizmo_edit_tool.htm":[5,0,1085],
 "d4/ded/classxii_game_object_gizmo_edit_tool.htm#a07943fef6aa89bcb334a83cbeec902e4":[5,0,1085,1],
 "d4/ded/classxii_game_object_gizmo_edit_tool.htm#a0b380911b4cc66a658186f45f7c45acf":[5,0,1085,5],
@@ -247,7 +249,5 @@ var NAVTREEINDEX37 =
 "d5/d12/classxii_editable_skeleton.htm#a6e79f54c28a5168c9487aa1b5c710f31":[5,0,602,4],
 "d5/d12/classxii_editable_skeleton.htm#a762bd53680c02eddbf236712837ef1db":[5,0,602,5],
 "d5/d12/classxii_editable_skeleton.htm#a929ce9fdde8ce641f4f28fb8e9a733ba":[5,0,602,3],
-"d5/d12/classxii_editable_skeleton.htm#a97860b0f286ac1cf22a5014b78bce73b":[5,0,602,12],
-"d5/d12/classxii_editable_skeleton.htm#ab08d4603290d91da64204051aca6caab":[5,0,602,15],
-"d5/d12/classxii_editable_skeleton.htm#ab30aa3d07b8f1240c7449305c28e10d1":[5,0,602,1]
+"d5/d12/classxii_editable_skeleton.htm#a97860b0f286ac1cf22a5014b78bce73b":[5,0,602,12]
 };

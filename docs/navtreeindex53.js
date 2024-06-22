@@ -1,5 +1,7 @@
 var NAVTREEINDEX53 =
 {
+"d6/db1/classxii_o_s_thread.htm#a52f203611fdf40bc5df347f68ca58bc2":[5,0,1515,10],
+"d6/db1/classxii_o_s_thread.htm#a548685b4d52874a16140b5fcc75c50a4":[5,0,1515,2],
 "d6/db1/classxii_o_s_thread.htm#a5a640e5e22e42d7e64218564dfe66bba":[5,0,1515,7],
 "d6/db1/classxii_o_s_thread.htm#a5f986177f23e013d4533011fa9817fdb":[5,0,1515,8],
 "d6/db1/classxii_o_s_thread.htm#a958f802b9ca7232eca7e7a29a99b2525":[5,0,1515,9],
@@ -247,7 +249,5 @@ var NAVTREEINDEX53 =
 "d6/dd0/structxii_file_stats.htm#a65063b0a02bf1d0792b9928cb8c27dfa":[5,0,701,5],
 "d6/dd0/structxii_file_stats.htm#a732c67c68febe386ce0f1220a5938326":[5,0,701,6],
 "d6/dd0/structxii_file_stats.htm#aa5701403661f80cc7f8bd1a10571108e":[5,0,701,2],
-"d6/dd0/structxii_file_stats.htm#ac1fd8db1b2e2627a9416ca1b59852ae4":[5,0,701,1],
-"d6/dd0/structxii_file_stats.htm#ae5903055bc81424c32f4e1f9563dc31e":[5,0,701,0],
-"d6/dd3/structxii_cloth_sheet_flags.htm":[5,0,311]
+"d6/dd0/structxii_file_stats.htm#ac1fd8db1b2e2627a9416ca1b59852ae4":[5,0,701,1]
 };

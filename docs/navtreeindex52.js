@@ -1,5 +1,7 @@
 var NAVTREEINDEX52 =
 {
+"d6/d9b/classxii_editor_preferences_user.htm#ad5380cfcd8e3235458d54f44fc2a6f0b":[5,0,625,23],
+"d6/d9b/classxii_editor_preferences_user.htm#ad96bde330fd447144f261e9ec7a43b14":[5,0,625,5],
 "d6/d9b/classxii_editor_preferences_user.htm#ae2ba7359a2a74012fcbc1e5a9e011ab5":[5,0,625,13],
 "d6/d9b/classxii_editor_preferences_user.htm#ae32653dd40af414c6d54949f0df8dfa3":[5,0,625,12],
 "d6/d9b/classxii_editor_preferences_user.htm#ae56ea4c7ac26fa81f8de928c0c1af646":[5,0,625,17],
@@ -247,7 +249,5 @@ var NAVTREEINDEX52 =
 "d6/dae/structxii_g_a_l_command_queue_properties.htm#af67fb43764262a47b207d6a77cb7bffa":[5,0,800,2],
 "d6/db1/classxii_o_s_thread.htm":[5,0,1515],
 "d6/db1/classxii_o_s_thread.htm#a2ee60bbb38a34f6ed88b3842defe9b3f":[5,0,1515,3],
-"d6/db1/classxii_o_s_thread.htm#a390e0d0599e41ec508262c9027037057":[5,0,1515,0],
-"d6/db1/classxii_o_s_thread.htm#a52f203611fdf40bc5df347f68ca58bc2":[5,0,1515,10],
-"d6/db1/classxii_o_s_thread.htm#a548685b4d52874a16140b5fcc75c50a4":[5,0,1515,2]
+"d6/db1/classxii_o_s_thread.htm#a390e0d0599e41ec508262c9027037057":[5,0,1515,0]
 };

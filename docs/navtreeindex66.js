@@ -1,5 +1,7 @@
 var NAVTREEINDEX66 =
 {
+"d8/da9/classxii_x_r_hand_tracking_interface.htm#a33cc9e2909e26bb1a9d9af81d2091477a9ed2d871602556951e39f3cebd08d6cb":[5,0,2607,0,0],
+"d8/da9/classxii_x_r_hand_tracking_interface.htm#a57acaec16d9bc2668927254a8c8f0a57":[5,0,2607,1],
 "d8/da9/structxii_g_a_l_wave_feature_1_1_bits.htm":[5,0,1062,0],
 "d8/da9/structxii_g_a_l_wave_feature_1_1_bits.htm#a0862b7ed320b819e3b8142e93b54bcd4":[5,0,1062,0,3],
 "d8/da9/structxii_g_a_l_wave_feature_1_1_bits.htm#a1cffb97507b41f79aa27975480e12798":[5,0,1062,0,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX66 =
 "d8/dc3/classxii_qt_application_panel.htm#acd29737febe8a60fe57f2479b429e6c8":[5,0,1659,2],
 "d8/dc3/classxii_qt_application_panel.htm#af68b497013daa2a3fb1bb0f608b8d9d9":[5,0,1659,5],
 "d8/dc3/classxii_qt_layer_adapter.htm":[5,0,1763],
-"d8/dc3/classxii_qt_layer_adapter.htm#a2528b0d411c8759d3a62a21dd3640e7b":[5,0,1763,4],
-"d8/dc3/classxii_qt_layer_adapter.htm#a288740d44bcc7ae8aa1932a1941ebdbe":[5,0,1763,0],
-"d8/dc3/classxii_qt_layer_adapter.htm#a288740d44bcc7ae8aa1932a1941ebdbea0ba3c9d9c47aea167cc2037f37d3e5b6":[5,0,1763,0,0]
+"d8/dc3/classxii_qt_layer_adapter.htm#a2528b0d411c8759d3a62a21dd3640e7b":[5,0,1763,4]
 };

@@ -131,7 +131,7 @@ var hierarchy =
     [ "xiiVirtualThumbStick::CenterMode", "d0/d83/structxii_virtual_thumb_stick_1_1_center_mode.htm", null ],
     [ "xiiChunkStreamReader::ChunkInfo", "de/d2b/structxii_chunk_stream_reader_1_1_chunk_info.htm", null ],
     [ "xiiColorGradient::ColorCP", "dd/d50/structxii_color_gradient_1_1_color_c_p.htm", null ],
-    [ "xiiRenderContext::CommandListScope< T >", "d4/d06/classxii_render_context_1_1_command_list_scope.htm", null ],
+    [ "xiiRenderContext::CommandListScope< ScopeType >", "d4/d06/classxii_render_context_1_1_command_list_scope.htm", null ],
     [ "xiiStandardJSONWriter::CommaWriter", "dd/d42/structxii_standard_j_s_o_n_writer_1_1_comma_writer.htm", null ],
     [ "CompareConstChar", "dc/d66/struct_compare_const_char.htm", null ],
     [ "xiiTimestamp::CompareMode", "d0/d4b/structxii_timestamp_1_1_compare_mode.htm", null ],

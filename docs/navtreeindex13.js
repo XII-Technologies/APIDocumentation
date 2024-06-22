@@ -1,5 +1,6 @@
 var NAVTREEINDEX13 =
 {
+"d1/da6/classxii_coordinate_system_provider.htm#a132f796f36be1102d7ff9ab72cb3f462":[5,0,436,1],
 "d1/da6/classxii_coordinate_system_provider.htm#a45d267cf37b8595bdf4f30a645770928":[5,0,436,0],
 "d1/da6/classxii_coordinate_system_provider.htm#a72b5543779903d1edf624a9097168280":[5,0,436,2],
 "d1/da6/classxii_coordinate_system_provider.htm#aa90d12eac7a00cf8992edbf244d409e8":[5,0,436,4],
@@ -248,6 +249,5 @@ var NAVTREEINDEX13 =
 "d1/dbf/classxii_game_object_document.htm#a69b191792c09e7fa5fe3b21c857659ab":[5,0,1079,41],
 "d1/dbf/classxii_game_object_document.htm#a73b3e3aa6b1cc71f7ff917ca9265af0f":[5,0,1079,61],
 "d1/dbf/classxii_game_object_document.htm#a767577f4ea76914d35c4ad9b55fc0efc":[5,0,1079,4],
-"d1/dbf/classxii_game_object_document.htm#a782e4f219ab96a9af6f18895f328b51b":[5,0,1079,23],
-"d1/dbf/classxii_game_object_document.htm#a7a869eec4a7485a3c4d36400bd7a4228":[5,0,1079,32]
+"d1/dbf/classxii_game_object_document.htm#a782e4f219ab96a9af6f18895f328b51b":[5,0,1079,23]
 };

@@ -1,5 +1,7 @@
 var NAVTREEINDEX59 =
 {
+"d7/dac/classxii_debug_renderer.htm#abfe8b78aee630f06e4fcf515efdb57e3":[5,0,482,3],
+"d7/dae/classxii_script_extension_class___log.htm":[5,0,2064],
 "d7/db0/classxii_anim_graph_model_pose_input_pin.htm":[5,0,139],
 "d7/db0/classxii_anim_graph_model_pose_input_pin.htm#a531e072a68448f8362cec5043c895526":[5,0,139,0],
 "d7/db0/classxii_anim_graph_model_pose_input_pin.htm#abe932c90adb8691ce3272e9e31787421":[5,0,139,1],
@@ -247,7 +249,5 @@ var NAVTREEINDEX59 =
 "d7/dd4/classxii_scene_selection_context.htm#a4d7cddaa68077db339cf69a9a6dd483a":[5,0,2040,2],
 "d7/dd4/classxii_scene_selection_context.htm#a9742c20804f26b9a4405b70f3ab65fc9":[5,0,2040,3],
 "d7/dd4/classxii_scene_selection_context.htm#ac132f4c6974fe3aacaa8d84f03c7239a":[5,0,2040,0],
-"d7/dd5/classxii_asset_document.htm":[5,0,198],
-"d7/dd5/classxii_asset_document.htm#a053d1351969e09665b5d13060fa4a9e0":[5,0,198,52],
-"d7/dd5/classxii_asset_document.htm#a06465680396cbdde5c35c2462465c8f1":[5,0,198,42]
+"d7/dd5/classxii_asset_document.htm":[5,0,198]
 };

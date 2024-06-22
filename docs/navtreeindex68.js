@@ -1,5 +1,7 @@
 var NAVTREEINDEX68 =
 {
+"d8/de5/classxii_raw_memory_stream_reader.htm":[5,0,1894],
+"d8/de5/classxii_raw_memory_stream_reader.htm#a05e5b8072e915dad81531e5d3931ff4b":[5,0,1894,3],
 "d8/de5/classxii_raw_memory_stream_reader.htm#a18cc8cc4a85843beb0af945e5c80df46":[5,0,1894,7],
 "d8/de5/classxii_raw_memory_stream_reader.htm#a1ec40f639991eaf109ad5f693b9952e9":[5,0,1894,4],
 "d8/de5/classxii_raw_memory_stream_reader.htm#a392e9c0d8e1c2b5c74d622eec6e80db4":[5,0,1894,8],
@@ -247,7 +249,5 @@ var NAVTREEINDEX68 =
 "d9/d0b/classxii_config_file_resource_loader.htm#a46c23f36fe06a7aaedcf791c5bde8dc3":[5,0,397,1],
 "d9/d0b/classxii_config_file_resource_loader.htm#a99c9310a8db9fd80970a3d90d87e7f64":[5,0,397,3],
 "d9/d0b/classxii_config_file_resource_loader.htm#ae3a0faeb18ed614fc54e17439a4f9a17":[5,0,397,2],
-"d9/d0b/classxii_memory_policies_1_1xii_proxy_allocation.htm":[5,0,8,5],
-"d9/d0b/classxii_memory_policies_1_1xii_proxy_allocation.htm#a6740d0bb10cbf6ed5eaf6a90ea5b2340":[5,0,8,5,4],
-"d9/d0b/classxii_memory_policies_1_1xii_proxy_allocation.htm#a682fbbb798b253c6cb65cb7d3daa37bd":[5,0,8,5,5]
+"d9/d0b/classxii_memory_policies_1_1xii_proxy_allocation.htm":[5,0,8,5]
 };

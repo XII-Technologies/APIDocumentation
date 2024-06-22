@@ -1,5 +1,6 @@
 var NAVTREEINDEX2 =
 {
+"d0/d31/structxii_engine_window_event.htm#a5906887e730239e14c49f7a1c50fc2d4":[5,0,642,2],
 "d0/d31/structxii_engine_window_event.htm#a620cd531c67b1f05b2db5c9742cd2cd6":[5,0,642,1],
 "d0/d31/structxii_engine_window_event.htm#adbabfa28cc63851d3af0ab740f5a541e":[5,0,642,0],
 "d0/d31/structxii_engine_window_event.htm#adbabfa28cc63851d3af0ab740f5a541ea1e348eaf36e8e3e9c3771252100b9214":[5,0,642,0,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX2 =
 "d0/d56/classxii_member_property.htm#a3031e57f8b668ac5469cb03dcccd6fe9":[5,0,1376,4],
 "d0/d56/classxii_member_property.htm#a3a43c6ee0b2689209823b2ab65714a5e":[5,0,1376,5],
 "d0/d56/classxii_member_property.htm#a5a82f0c7c0360c5e9253ea23214ad7f4":[5,0,1376,2],
-"d0/d56/classxii_member_property.htm#a78cd6741c927d926eaae9b441f4398fc":[5,0,1376,6],
-"d0/d56/classxii_member_property.htm#a9577909b34e1db928d228b8603a4145e":[5,0,1376,1]
+"d0/d56/classxii_member_property.htm#a78cd6741c927d926eaae9b441f4398fc":[5,0,1376,6]
 };

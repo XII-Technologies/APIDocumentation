@@ -1,5 +1,7 @@
 var NAVTREEINDEX18 =
 {
+"d2/d32/classxii_qt_layer_delegate.htm":[5,0,1764],
+"d2/d32/classxii_qt_layer_delegate.htm#a0bd86f39d5f284069731c888105ba19a":[5,0,1764,1],
 "d2/d32/classxii_qt_layer_delegate.htm#a0fba426ffb40e11b2ff231643a07d52d":[5,0,1764,4],
 "d2/d32/classxii_qt_layer_delegate.htm#a2d5e5215a0baa2d0ba10aca2585ef188":[5,0,1764,2],
 "d2/d32/classxii_qt_layer_delegate.htm#a3d0e9788a055b5dbc19b4afd321e0436":[5,0,1764,3],
@@ -247,7 +249,5 @@ var NAVTREEINDEX18 =
 "d2/d66/classxii_qt_curve_edit_widget.htm#a6492bca6229b1d3ee4c1a3ac7d5b6a9e":[5,0,1694,10],
 "d2/d66/classxii_qt_curve_edit_widget.htm#a65eb2774fd3397f8278103b93ba73bfe":[5,0,1694,36],
 "d2/d66/classxii_qt_curve_edit_widget.htm#a6727eabcae3f4811cabbe54392197a6b":[5,0,1694,37],
-"d2/d66/classxii_qt_curve_edit_widget.htm#a71c0e4404ea233205aa47fff381ef429":[5,0,1694,31],
-"d2/d66/classxii_qt_curve_edit_widget.htm#a7829d2ef55b925267ed51290cd167abb":[5,0,1694,41],
-"d2/d66/classxii_qt_curve_edit_widget.htm#a7b16ea318380fbc9d9b00d70f971558a":[5,0,1694,43]
+"d2/d66/classxii_qt_curve_edit_widget.htm#a71c0e4404ea233205aa47fff381ef429":[5,0,1694,31]
 };

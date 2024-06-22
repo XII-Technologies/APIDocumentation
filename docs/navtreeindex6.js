@@ -1,5 +1,6 @@
 var NAVTREEINDEX6 =
 {
+"d0/daa/classxii_skeleton_asset_document.htm#adfa4941d183ca716d8143f4dc6260093":[5,0,2175,8],
 "d0/daa/classxii_skeleton_asset_document.htm#ae43fdb4e0056538045ecf1ace11147c2":[5,0,2175,10],
 "d0/daa/classxii_skeleton_asset_document.htm#af2a44017f6ae7f41c2213d255f23008f":[5,0,2175,4],
 "d0/daa/classxii_skeleton_asset_document.htm#af2fb635576fd0cd0b468d95ecb3bef8b":[5,0,2175,5],
@@ -248,6 +249,5 @@ var NAVTREEINDEX6 =
 "d0/dcc/structxii_generic_id.htm#a387213b10e8f6ae4365801d4d2f11f01":[5,0,1099,2],
 "d0/dcc/structxii_generic_id.htm#a3c1375382b1185e9724cc6ad887e883a":[5,0,1099,0],
 "d0/dcc/structxii_generic_id.htm#a54d40f617a379229b8cae5a65b451f93":[5,0,1099,3],
-"d0/dcc/structxii_generic_id.htm#a850dced79cf8fd989e01ab4c75b941ae":[5,0,1099,6],
-"d0/dcc/structxii_generic_id.htm#a8fc4dce333c76e6212aeb3fb6dc5f1d4":[5,0,1099,5]
+"d0/dcc/structxii_generic_id.htm#a850dced79cf8fd989e01ab4c75b941ae":[5,0,1099,6]
 };

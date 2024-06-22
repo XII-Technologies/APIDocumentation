@@ -1,5 +1,7 @@
 var NAVTREEINDEX20 =
 {
+"d2/d8c/classxii_document_object_manager.htm#a3c67f9c985ec5fb48168a91186c7b9d6":[5,0,556,40],
+"d2/d8c/classxii_document_object_manager.htm#a3eaa8326a72969c66da6f22b33478306":[5,0,556,30],
 "d2/d8c/classxii_document_object_manager.htm#a413bd81fdaa7bd648947ad84db62937e":[5,0,556,4],
 "d2/d8c/classxii_document_object_manager.htm#a44b04a69e133772012d573c2e3b009ad":[5,0,556,10],
 "d2/d8c/classxii_document_object_manager.htm#a492017da9f5fcbb81b23b864d57bd9aa":[5,0,556,11],
@@ -247,7 +249,5 @@ var NAVTREEINDEX20 =
 "d2/dc1/structxii_visual_script_compiler_1_1_ast_node.htm":[5,0,2534,0],
 "d2/dc1/structxii_visual_script_compiler_1_1_ast_node.htm#a07221f5743c37e01172a8b0d49a4f2a6":[5,0,2534,0,6],
 "d2/dc1/structxii_visual_script_compiler_1_1_ast_node.htm#a088def5c104b03e637a61e6d684f118e":[5,0,2534,0,4],
-"d2/dc1/structxii_visual_script_compiler_1_1_ast_node.htm#a425f172c80613a0ef4b133981bcee8f5":[5,0,2534,0,2],
-"d2/dc1/structxii_visual_script_compiler_1_1_ast_node.htm#a680df4b97d4ea769460be0d5e106c8fc":[5,0,2534,0,5],
-"d2/dc1/structxii_visual_script_compiler_1_1_ast_node.htm#a9b5a5eb99dd31775b0a5eb29d3557f3f":[5,0,2534,0,7]
+"d2/dc1/structxii_visual_script_compiler_1_1_ast_node.htm#a425f172c80613a0ef4b133981bcee8f5":[5,0,2534,0,2]
 };

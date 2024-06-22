@@ -112,41 +112,30 @@ $(document).ready(function(){initNavTree('dd/d34/_command_queue_8h_source.htm','
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  <span class="keyword">virtual</span> xiiUInt64 WaitForIdle() = 0;</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  XII_NODISCARD <span class="keyword">virtual</span> <a class="code" href="../../dc/d80/classxii_g_a_l_command_list.htm">xiiGALCommandList</a>* BeginCommandList(<a class="code" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sScopeName = {}) = 0;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  XII_NODISCARD <span class="keyword">virtual</span> <a class="code" href="../../dc/d80/classxii_g_a_l_command_list.htm">xiiGALCommandList</a>* BeginCommandList() = 0;</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  <span class="keyword">virtual</span> xiiUInt64 Submit(<a class="code" href="../../dc/d80/classxii_g_a_l_command_list.htm">xiiGALCommandList</a>* pCommandList, <span class="keywordtype">bool</span> bReset = <span class="keyword">true</span>);</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="../../d5/d19/classxii_g_a_l_device.htm">xiiGALDevice</a>;</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <span class="comment">// Deactivate Doxygen document generation for the following block. (API abstraction only)</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <span class="comment">// These functions need to be implemented by a graphics API abstraction.</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <span class="keyword">virtual</span> xiiUInt64 SubmitPlatform(<a class="code" href="../../dc/d80/classxii_g_a_l_command_list.htm">xiiGALCommandList</a>* pCommandList, <span class="keywordtype">bool</span> bReset) = 0;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <a class="code" href="../../d1/dd2/classxii_g_a_l_command_queue.htm">xiiGALCommandQueue</a>(<a class="code" href="../../d5/d19/classxii_g_a_l_device.htm">xiiGALDevice</a>* pDevice, <span class="keyword">const</span> <a class="code" href="../../d3/dc4/structxii_g_a_l_command_queue_creation_description.htm">xiiGALCommandQueueCreationDescription</a>&amp; creationDescription);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <span class="keyword">virtual</span> ~<a class="code" href="../../d1/dd2/classxii_g_a_l_command_queue.htm">xiiGALCommandQueue</a>();</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <span class="keyword">virtual</span> <a class="code" href="../../dd/dad/structxii_result.htm">xiiResult</a> InitPlatform() = 0;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <span class="keyword">virtual</span> <a class="code" href="../../dd/dad/structxii_result.htm">xiiResult</a> DeInitPlatform() = 0;</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="../../d5/d19/classxii_g_a_l_device.htm">xiiGALDevice</a>;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <a class="code" href="../../d1/dd2/classxii_g_a_l_command_queue.htm">xiiGALCommandQueue</a>(<a class="code" href="../../d5/d19/classxii_g_a_l_device.htm">xiiGALDevice</a>* pDevice, <span class="keyword">const</span> <a class="code" href="../../d3/dc4/structxii_g_a_l_command_queue_creation_description.htm">xiiGALCommandQueueCreationDescription</a>&amp; creationDescription);</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <span class="keyword">virtual</span> ~<a class="code" href="../../d1/dd2/classxii_g_a_l_command_queue.htm">xiiGALCommandQueue</a>();</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <span class="keyword">virtual</span> <a class="code" href="../../dd/dad/structxii_result.htm">xiiResult</a> InitPlatform() = 0;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <span class="keyword">virtual</span> <a class="code" href="../../dd/dad/structxii_result.htm">xiiResult</a> DeInitPlatform() = 0;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <a class="code" href="../../d3/dc4/structxii_g_a_l_command_queue_creation_description.htm">xiiGALCommandQueueCreationDescription</a> m_Description;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;};</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="preprocessor">#include &lt;GraphicsFoundation/CommandEncoder/Implementation/CommandQueue_inl.h&gt;</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <a class="code" href="../../d3/dc4/structxii_g_a_l_command_queue_creation_description.htm">xiiGALCommandQueueCreationDescription</a> m_Description;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;};</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor">#include &lt;GraphicsFoundation/CommandEncoder/Implementation/CommandQueue_inl.h&gt;</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclassxii_g_a_l_command_list_htm"><div class="ttname"><a href="../../dc/d80/classxii_g_a_l_command_list.htm">xiiGALCommandList</a></div><div class="ttdoc">Interface that defines methods to manipulate a command list object.</div><div class="ttdef"><b>Definition:</b> CommandList.h:65</div></div>
 <div class="ttc" id="astructxii_g_a_l_command_queue_creation_description_htm"><div class="ttname"><a href="../../d3/dc4/structxii_g_a_l_command_queue_creation_description.htm">xiiGALCommandQueueCreationDescription</a></div><div class="ttdoc">This describes the fence creation description.</div><div class="ttdef"><b>Definition:</b> CommandQueue.h:9</div></div>
 <div class="ttc" id="astructxii_g_a_l_command_queue_type_htm_a47dd1577b4fcd1112a73e9a4798421cba54e7b66302b3311cb9120db765bef28b"><div class="ttname"><a href="../../d7/db4/structxii_g_a_l_command_queue_type.htm#a47dd1577b4fcd1112a73e9a4798421cba54e7b66302b3311cb9120db765bef28b">xiiGALCommandQueueType::Unknown</a></div><div class="ttdeci">@ Unknown</div><div class="ttdoc">Queue type is unknown.</div><div class="ttdef"><b>Definition:</b> GraphicsTypes.h:996</div></div>
 <div class="ttc" id="aclassxii_g_a_l_command_queue_htm"><div class="ttname"><a href="../../d1/dd2/classxii_g_a_l_command_queue.htm">xiiGALCommandQueue</a></div><div class="ttdoc">Interface that defines methods to manipulate a command queue object.</div><div class="ttdef"><b>Definition:</b> CommandQueue.h:17</div></div>
-<div class="ttc" id="astructxii_string_view_htm"><div class="ttname"><a href="../../da/d9d/structxii_string_view.htm">xiiStringView</a></div><div class="ttdoc">xiiStringView represent a read-only sub-string of a larger string, as it can store a dedicated string...</div><div class="ttdef"><b>Definition:</b> StringView.h:27</div></div>
 <div class="ttc" id="aclassxii_g_a_l_device_object_htm"><div class="ttname"><a href="../../d5/d12/classxii_g_a_l_device_object.htm">xiiGALDeviceObject</a></div><div class="ttdoc">Base Graphics Abstraction Layer Object.</div><div class="ttdef"><b>Definition:</b> DeviceObject.h:8</div></div>
 <div class="ttc" id="astructxii_result_htm"><div class="ttname"><a href="../../dd/dad/structxii_result.htm">xiiResult</a></div><div class="ttdoc">Default enum for returning failure or success, instead of using a bool.</div><div class="ttdef"><b>Definition:</b> Types.h:55</div></div>
 <div class="ttc" id="astructxii_bitflags_htm"><div class="ttname"><a href="../../d7/d55/structxii_bitflags.htm">xiiBitflags&lt; xiiGALCommandQueueType &gt;</a></div></div>
@@ -156,7 +145,7 @@ $(document).ready(function(){initNavTree('dd/d34/_command_queue_8h_source.htm','
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.htm">home</a></li><li class="navelem"><a class="el" href="../../dir_1036706e55c22cab35bc1c58ee689f1d.htm">runner</a></li><li class="navelem"><a class="el" href="../../dir_629f8151d55d307162ff2d619fb1783d.htm">work</a></li><li class="navelem"><a class="el" href="../../dir_1ddc44fe1263a8c7935fa6130b7d9499.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_2c1b6808f12952f4c36e05ba7068379a.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_b5a1c4ecfca018ad24b729e213296d41.htm">Source</a></li><li class="navelem"><a class="el" href="../../dir_e321052006a51284e67389ab20037e7c.htm">Engine</a></li><li class="navelem"><a class="el" href="../../dir_60f548c54f5a79fe3a3b3b88ff8146f5.htm">GraphicsFoundation</a></li><li class="navelem"><a class="el" href="../../dir_20ff59cc8369b093d8f4f2ab622efbda.htm">CommandEncoder</a></li><li class="navelem"><b>CommandQueue.h</b></li>
-    <li class="footer">Generated on Tue Jun 18 2024 13:05:13 for XIIEngine by
+    <li class="footer">Generated on Sat Jun 22 2024 04:42:16 for XIIEngine by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

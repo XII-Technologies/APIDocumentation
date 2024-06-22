@@ -1,5 +1,6 @@
 var NAVTREEINDEX11 =
 {
+"d1/d79/classxii_scale_gizmo.htm#a05afba1ddeba15c3744c7493c0461edc":[5,0,2018,6],
 "d1/d79/classxii_scale_gizmo.htm#a0ead66712290e0d3e5fd31cc3e8f251b":[5,0,2018,4],
 "d1/d79/classxii_scale_gizmo.htm#a0f4eef9abdccac05153c10eb41212b17":[5,0,2018,7],
 "d1/d79/classxii_scale_gizmo.htm#a1d446724a79db0d8e28cc0beb2c941b4":[5,0,2018,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX11 =
 "d1/d83/classxii_qt_editor_app.htm#a88178e40bd7d8ba1611f05ca79db67f6":[5,0,1720,23],
 "d1/d83/classxii_qt_editor_app.htm#a89d7ba2bd15f4ea6d63cef10a455186f":[5,0,1720,55],
 "d1/d83/classxii_qt_editor_app.htm#a8b18c8b4fc212c0c9092711c7e730804":[5,0,1720,67],
-"d1/d83/classxii_qt_editor_app.htm#a905fac6d0439349afb16849699757cf6":[5,0,1720,5],
-"d1/d83/classxii_qt_editor_app.htm#a94a910e1c3147e2dd87000411f8b9d92":[5,0,1720,63]
+"d1/d83/classxii_qt_editor_app.htm#a905fac6d0439349afb16849699757cf6":[5,0,1720,5]
 };

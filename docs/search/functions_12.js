@@ -461,7 +461,7 @@ var searchData=
   ['stringtoint_20317',['StringToInt',['../d9/d80/namespacexii_conversion_utils.htm#aa292cb87e3b4b91ed3c90d7cd3729c3b',1,'xiiConversionUtils']]],
   ['stringtoint64_20318',['StringToInt64',['../d9/d80/namespacexii_conversion_utils.htm#ad84dbcba8a552de03d282e9ffd80aff3',1,'xiiConversionUtils']]],
   ['stringtouint_20319',['StringToUInt',['../d9/d80/namespacexii_conversion_utils.htm#a076b116ec209f3bd2141e6ce871fba5e',1,'xiiConversionUtils']]],
-  ['submit_20320',['Submit',['../d1/dd2/classxii_g_a_l_command_queue.htm#ae8ad072f9dc0e3852b687e23073ff0b9',1,'xiiGALCommandQueue']]],
+  ['submit_20320',['Submit',['../dc/d80/classxii_g_a_l_command_list.htm#aa7cf0c6afd54fc17191621846083ccb8',1,'xiiGALCommandList']]],
   ['submitcomponentinitbatch_20321',['SubmitComponentInitBatch',['../d6/d89/classxii_world.htm#ab135b7ab2407e3968b82141bc74b8367',1,'xiiWorld']]],
   ['success_20322',['Success',['../d4/dc6/classxii_log.htm#a7b69c95728c934afde6ab6f6b26810b2',1,'xiiLog::Success(xiiLogInterface *pInterface, const xiiFormatString &amp;string)'],['../d4/dc6/classxii_log.htm#a7b11a68e8f50385eb9861b09f2dc4242',1,'xiiLog::Success(xiiStringView sFormat, ARGS &amp;&amp;... args)'],['../d4/dc6/classxii_log.htm#a48f2978fccf1ea1a2dd2f33b00a1016e',1,'xiiLog::Success(xiiLogInterface *pInterface, xiiStringView sFormat, ARGS &amp;&amp;... args)']]],
   ['suggestcontainerwindow_20323',['SuggestContainerWindow',['../dd/d1c/classxii_tools_project.htm#ab91f6489bcc274d605b0091932bc46d4',1,'xiiToolsProject']]],

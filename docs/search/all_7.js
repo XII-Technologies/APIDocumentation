@@ -200,7 +200,7 @@ var searchData=
   ['getcommandinterpreter_1594',['GetCommandInterpreter',['../d7/ded/classxii_console.htm#a5a57e6e88e90a1534b3134fa2d3f4346',1,'xiiConsole']]],
   ['getcommandlinearray_1595',['GetCommandLineArray',['../d0/d67/classxii_command_line_utils.htm#afe721968bc7487688c4827d55f83ede1',1,'xiiCommandLineUtils']]],
   ['getcommandlinestring_1596',['GetCommandLineString',['../d0/d67/classxii_command_line_utils.htm#a8cc5e79f2df5e9312300ce2a767d4782',1,'xiiCommandLineUtils']]],
-  ['getcommandqueue_1597',['GetCommandQueue',['../d5/d19/classxii_g_a_l_device.htm#a515c52ec7e5c5f7c8d3ec6c7f482aac0',1,'xiiGALDevice']]],
+  ['getcommandqueue_1597',['GetCommandQueue',['../dc/d80/classxii_g_a_l_command_list.htm#a0868adea18175793e479ea6b97b360b1',1,'xiiGALCommandList::GetCommandQueue()'],['../d5/d19/classxii_g_a_l_device.htm#a515c52ec7e5c5f7c8d3ec6c7f482aac0',1,'xiiGALDevice::GetCommandQueue()']]],
   ['getcommonassetuistate_1598',['GetCommonAssetUiState',['../d7/dd5/classxii_asset_document.htm#ab2bfe1fbd328dd3ffc8de1e9da6988fa',1,'xiiAssetDocument::GetCommonAssetUiState()'],['../d7/d55/classxii_animation_clip_asset_document.htm#a8612e8b8b05e8e5d6edee827bee8df5f',1,'xiiAnimationClipAssetDocument::GetCommonAssetUiState()']]],
   ['getcommonvariantsubtype_1599',['GetCommonVariantSubType',['../d9/d80/classxii_qt_property_widget.htm#a03c62e26ef896de5f266f063b5d8572f',1,'xiiQtPropertyWidget']]],
   ['getcompanionwindow_1600',['GetCompanionWindow',['../d0/d31/classxii_window_x_r.htm#ae8d7385475a7e1294b5e65c725da2847',1,'xiiWindowXR']]],

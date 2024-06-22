@@ -594,7 +594,7 @@ var searchData=
   ['subassetsautothumbnailontransform_5067',['SubAssetsAutoThumbnailOnTransform',['../dd/d3b/structxii_asset_document_flags.htm#a8a9d3d28ff9f81b678c247c918074c17a6242aaa0951a06ac46026dc95f47680a',1,'xiiAssetDocumentFlags']]],
   ['subassetssupportthumbnail_5068',['SubAssetsSupportThumbnail',['../dd/d3b/structxii_asset_document_flags.htm#a8a9d3d28ff9f81b678c247c918074c17aa03796e11660398eba32d36bd0b56357',1,'xiiAssetDocumentFlags']]],
   ['submesh_5069',['SubMesh',['../d4/de3/structxii_mesh_resource_descriptor_1_1_sub_mesh.htm',1,'xiiMeshResourceDescriptor']]],
-  ['submit_5070',['Submit',['../d1/dd2/classxii_g_a_l_command_queue.htm#ae8ad072f9dc0e3852b687e23073ff0b9',1,'xiiGALCommandQueue']]],
+  ['submit_5070',['Submit',['../dc/d80/classxii_g_a_l_command_list.htm#aa7cf0c6afd54fc17191621846083ccb8',1,'xiiGALCommandList']]],
   ['submitcomponentinitbatch_5071',['SubmitComponentInitBatch',['../d6/d89/classxii_world.htm#ab135b7ab2407e3968b82141bc74b8367',1,'xiiWorld']]],
   ['subsampled_5072',['Subsampled',['../d4/d0e/structxii_g_a_l_sampler_flags.htm#ab20e97d2d9ab7b9bc0b772a54ce24f4dac3979eec980439e45b273d4cfa904805',1,'xiiGALSamplerFlags::Subsampled()'],['../d6/dd3/structxii_g_a_l_misc_texture_flags.htm#a196e11b3b7e52d4fab6d6f47801e8556a3f947f24110dd24bf569d642aa8fcb97',1,'xiiGALMiscTextureFlags::Subsampled()']]],
   ['subsampledcoarsereconstruction_5073',['SubsampledCoarseReconstruction',['../d4/d0e/structxii_g_a_l_sampler_flags.htm#ab20e97d2d9ab7b9bc0b772a54ce24f4da259f98566eb6d64a142228428161e56f',1,'xiiGALSamplerFlags']]],

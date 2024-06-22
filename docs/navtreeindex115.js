@@ -1,5 +1,9 @@
 var NAVTREEINDEX115 =
 {
+"df/d65/structxii_expression_byte_code_1_1_op_code.htm#ae0efeabae09f9eca9f02b1ba5f292980afe16ce19fdcd32a50a17843ec0fef94b":[5,0,677,0,0,32],
+"df/d66/structxii_resource_load_data.htm":[5,0,1979],
+"df/d66/structxii_resource_load_data.htm#a19ac6e3a95299f8ab4616106884b6188":[5,0,1979,0],
+"df/d66/structxii_resource_load_data.htm#a624007d09d6382ee2c4a1f9553de1e33":[5,0,1979,3],
 "df/d66/structxii_resource_load_data.htm#a7c7c6ca608c5c946a8b0c988e1e335b8":[5,0,1979,1],
 "df/d66/structxii_resource_load_data.htm#af78559358644dfa506f5e90ca7e5943b":[5,0,1979,2],
 "df/d67/structxii_reflection_utils_1_1_enum_key_value_pair.htm":[5,0,1923,1],
@@ -245,9 +249,5 @@ var NAVTREEINDEX115 =
 "df/d99/classxii_grid_navmesh.htm#a92fb5f09af0c23fc3f3d6b69ba68b686":[5,0,1129,2],
 "df/d99/classxii_grid_navmesh.htm#ade09307b7928de6c9609ef7d2d83dd7c":[5,0,1129,5],
 "df/d99/classxii_grid_navmesh.htm#ae195a5e22535be20f6db4fb082e4f529":[5,0,1129,8],
-"df/d99/classxii_grid_navmesh.htm#af26c5cb8f31e33fae5bc8844a107b968":[5,0,1129,3],
-"df/d99/structxii_g_a_l_wave_operation_properties.htm":[5,0,1063],
-"df/d99/structxii_g_a_l_wave_operation_properties.htm#a02ba12a1101274c90e879b6e1a710499":[5,0,1063,1],
-"df/d99/structxii_g_a_l_wave_operation_properties.htm#a452bc0569b9a15f996259bd01c10254b":[5,0,1063,3],
-"df/d99/structxii_g_a_l_wave_operation_properties.htm#a53c989c21ef323786138fef405d5e3e6":[5,0,1063,2]
+"df/d99/classxii_grid_navmesh.htm#af26c5cb8f31e33fae5bc8844a107b968":[5,0,1129,3]
 };

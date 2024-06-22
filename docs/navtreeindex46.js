@@ -1,5 +1,7 @@
 var NAVTREEINDEX46 =
 {
+"d5/ddb/classxii_tex_conv.htm#ade50f39b1071e376f0f6113c39ef62dc":[5,0,2336,16],
+"d5/ddb/classxii_tex_conv.htm#aedaed5e1fc46bed4ae46a5e8420d1ac1":[5,0,2336,32],
 "d5/ddb/classxii_tex_conv.htm#af470a33db916b04f08e2fba4b370c856":[5,0,2336,25],
 "d5/dde/classxii_decal_context.htm":[5,0,497],
 "d5/dde/classxii_decal_context.htm#a23f1ccbaaf3e41ebcb6cdb9f5d020ac6":[5,0,497,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX46 =
 "d6/d01/classxii_typeless_resource_handle.htm#a4fc4fd53279904a6efc8cf285f1d7fce":[5,0,2448,11],
 "d6/d01/classxii_typeless_resource_handle.htm#a5d5d7c2f1f91155ace3a731e00a1d945":[5,0,2448,16],
 "d6/d01/classxii_typeless_resource_handle.htm#a6e79668f7fa7739acf5f70e8c5bbfd70":[5,0,2448,21],
-"d6/d01/classxii_typeless_resource_handle.htm#a70ad395f31de25e2617d6c5f38b4986a":[5,0,2448,6],
-"d6/d01/classxii_typeless_resource_handle.htm#a920e9b261b31f39d632062d958b2068c":[5,0,2448,9],
-"d6/d01/classxii_typeless_resource_handle.htm#a94b5bd0dcdb940c134d2e6abc8989ebe":[5,0,2448,10]
+"d6/d01/classxii_typeless_resource_handle.htm#a70ad395f31de25e2617d6c5f38b4986a":[5,0,2448,6]
 };

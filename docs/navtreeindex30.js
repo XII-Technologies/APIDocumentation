@@ -1,5 +1,7 @@
 var NAVTREEINDEX30 =
 {
+"d3/df9/structxii_debug_renderer_1_1_line.htm#af77e7b80622cb7fdc1426f594f481a78":[5,0,482,0,6],
+"d3/dfb/classxii_animated_mesh_asset_document_manager.htm":[5,0,103],
 "d3/dfb/classxii_animated_mesh_asset_document_manager.htm#a2d38d46999dd0bd9d649096458e4a3e7":[5,0,103,0],
 "d3/dfb/classxii_animated_mesh_asset_document_manager.htm#a3e7a613e657459fb5d5d19dc5b1cffcd":[5,0,103,4],
 "d3/dfb/classxii_animated_mesh_asset_document_manager.htm#a8739c523fc310d48104efebc4eb9f3a9":[5,0,103,2],
@@ -55,9 +57,9 @@ var NAVTREEINDEX30 =
 "d4/d06/classxii_process_message.htm#afc8e05751b0b82e3cba57db26782dc4d":[5,0,1602,0],
 "d4/d06/classxii_render_context_1_1_command_list_scope.htm":[5,0,1936,0],
 "d4/d06/classxii_render_context_1_1_command_list_scope.htm#a21019779bc8ccf63e7dcf7488ac12e59":[5,0,1936,0,3],
-"d4/d06/classxii_render_context_1_1_command_list_scope.htm#a337555a8490f7fbb77a5146e1f8abebe":[5,0,1936,0,0],
-"d4/d06/classxii_render_context_1_1_command_list_scope.htm#a94b4a68fb59f917c79bda9247837c66f":[5,0,1936,0,1],
-"d4/d06/classxii_render_context_1_1_command_list_scope.htm#ac8418b92a34ad6c56daad771c518725a":[5,0,1936,0,2],
+"d4/d06/classxii_render_context_1_1_command_list_scope.htm#a3a0af0c2bbd82f74c4fc922f1d0096de":[5,0,1936,0,1],
+"d4/d06/classxii_render_context_1_1_command_list_scope.htm#ac664c5d443fcfab5b50e608bf5e7b309":[5,0,1936,0,0],
+"d4/d06/classxii_render_context_1_1_command_list_scope.htm#acbaf538034aefea4521b2efe67f65465":[5,0,1936,0,2],
 "d4/d06/classxii_script_class_resource.htm":[5,0,2051],
 "d4/d06/classxii_script_class_resource.htm#a01dcf72be888d9b8dbeba3fee405c3c0":[5,0,2051,1],
 "d4/d06/classxii_script_class_resource.htm#a039086543f6ee15f37f343ddedb47e13":[5,0,2051,2],
@@ -247,7 +249,5 @@ var NAVTREEINDEX30 =
 "d4/d28/classxii_condition_variable.htm#acbdb7d5da13fb2f39c3bf82a48288fa4":[5,0,387,1],
 "d4/d28/classxii_condition_variable.htm#aec4267c827acfee015fb2ea77ae7c4d8":[5,0,387,3],
 "d4/d28/classxii_condition_variable.htm#af4edb8ab30702d3d5bb69e4e80ab00d7":[5,0,387,8],
-"d4/d2d/classxii_g_a_l_resource.htm":[5,0,944],
-"d4/d2d/classxii_g_a_l_resource.htm#a0ca7ce334d2a388aad342bd87b7c5890":[5,0,944,2],
-"d4/d2d/classxii_g_a_l_resource.htm#a8a9dd0ea17d38c3d68c9db0002e5dab0":[5,0,944,3]
+"d4/d2d/classxii_g_a_l_resource.htm":[5,0,944]
 };

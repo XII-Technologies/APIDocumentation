@@ -1,5 +1,7 @@
 var NAVTREEINDEX56 =
 {
+"d7/d28/classxii_g_a_l_depth_stencil_state_d3_d12.htm#a7937838d1243ff96576a9ed7db26a870":[5,0,812,2],
+"d7/d28/classxii_g_a_l_depth_stencil_state_d3_d12.htm#a81685adc3cd939536dc8e005f06e9346":[5,0,812,7],
 "d7/d28/classxii_g_a_l_depth_stencil_state_d3_d12.htm#a91e875f9628fcc79e9bbf871980f9b11":[5,0,812,4],
 "d7/d28/classxii_g_a_l_depth_stencil_state_d3_d12.htm#a930d7f24240bc3df370687885df8f3b4":[5,0,812,3],
 "d7/d28/classxii_g_a_l_depth_stencil_state_d3_d12.htm#a9b3da82b84b68e0128d059e18e11b67d":[5,0,812,5],
@@ -247,7 +249,5 @@ var NAVTREEINDEX56 =
 "d7/d55/structxii_bitflags.htm#ad658467820facde2db8df6f63e56de98":[5,0,233,4],
 "d7/d55/structxii_bitflags.htm#af2c473ccc094c92e73c8964960b82b80":[5,0,233,24],
 "d7/d55/structxii_bitflags.htm#af2c990725fd731e800eeb6a22945003f":[5,0,233,14],
-"d7/d58/classxii_game_object_edit_tool.htm":[5,0,1083],
-"d7/d58/classxii_game_object_edit_tool.htm#a0006c4d3c8152214c000de6f4723f23a":[5,0,1083,7],
-"d7/d58/classxii_game_object_edit_tool.htm#a2ad1a3140caa9ecfce04326216e931ea":[5,0,1083,10]
+"d7/d58/classxii_game_object_edit_tool.htm":[5,0,1083]
 };
