@@ -1,0 +1,251 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.11.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<!-- BEGIN opengraph metadata -->
+<meta property="og:title" content="XII" />
+<meta property="og:image" content="../../XII-Logo.png" />
+<meta property="og:description" content="An advanced high-performance simulation engine." />
+<meta property="og:url" content="https://www.xiitechnologies.com" />
+<!-- END opengraph metadata -->
+<!-- BEGIN twitter metadata -->
+<meta name="twitter:image:src" content="../../XII-Logo.png" />
+<meta name="twitter:title" content="XII" />
+<meta name="twitter:description" content="An advanced high-performance simulation engine." />
+<!-- END twitter metadata -->
+<title>XII: /home/runner/work/XII/XII/Source/Engine/GraphicsFoundation/Resources/Sampler.h Source File</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link rel="icon" type="image/svg+xml" href="logo.drawio.svg"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="../../toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../custom.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<a href="https://github.com/jothepro/doxygen-awesome-css" class="github-corner" title="View source on GitHub" target="_blank" rel="noopener noreferrer">
+    <svg viewBox="0 0 250 250" width="40" height="40" style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+    <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="../../XII-Logo.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">XII
+   &#160;<span id="projectnumber">1.0.0</span>
+   </div>
+   <div id="projectbrief">A high-performance simulation engine.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(1); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.html','Search',true);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('d6/de2/_sampler_8h_source.html','../../'); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Sampler.h</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &lt;GraphicsFoundation/GraphicsFoundationDLL.h&gt;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;GraphicsFoundation/Declarations/DeviceObject.h&gt;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;GraphicsFoundation/Declarations/GraphicsTypes.h&gt;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="foldopen" id="foldopen00009" data-start="{" data-end="};">
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="../../d4/d0e/structxii_g_a_l_sampler_flags.html">    9</a></span><span class="keyword">struct </span>XII_GRAPHICSFOUNDATION_DLL <a class="code hl_struct" href="../../d4/d0e/structxii_g_a_l_sampler_flags.html">xiiGALSamplerFlags</a></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>{</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>  <span class="keyword">using </span>StorageType = xiiUInt8;</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="foldopen" id="foldopen00013" data-start="{" data-end="};">
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="../../d4/d0e/structxii_g_a_l_sampler_flags.html#ab20e97d2d9ab7b9bc0b772a54ce24f4d">   13</a></span>  <span class="keyword">enum</span> <a class="code hl_enumeration" href="../../d4/d0e/structxii_g_a_l_sampler_flags.html#ab20e97d2d9ab7b9bc0b772a54ce24f4d">Enum</a> : StorageType</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>  {</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="../../d4/d0e/structxii_g_a_l_sampler_flags.html#ab20e97d2d9ab7b9bc0b772a54ce24f4da1186c35712fe5eac4088319ccce7f173">   15</a></span>    None                           = 0U,         </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="../../d4/d0e/structxii_g_a_l_sampler_flags.html#ab20e97d2d9ab7b9bc0b772a54ce24f4dac3979eec980439e45b273d4cfa904805">   16</a></span>    Subsampled                     = XII_BIT(0), </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="../../d4/d0e/structxii_g_a_l_sampler_flags.html#ab20e97d2d9ab7b9bc0b772a54ce24f4da259f98566eb6d64a142228428161e56f">   17</a></span>    SubsampledCoarseReconstruction = XII_BIT(1), </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    ENUM_COUNT = 3U,</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    Default = None</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>  };</div>
+</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<div class="foldopen" id="foldopen00024" data-start="{" data-end="};">
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="../../d1/d06/structxii_g_a_l_sampler_flags_1_1_bits.html">   24</a></span>  <span class="keyword">struct </span><a class="code hl_struct" href="../../d1/d06/structxii_g_a_l_sampler_flags_1_1_bits.html">Bits</a></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>  {</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    StorageType Subsampled : 1;</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    StorageType SubsampledCoarseReconstruction : 1;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>  };</div>
+</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>};</div>
+</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>XII_DECLARE_FLAGS_OPERATORS(<a class="code hl_struct" href="../../d4/d0e/structxii_g_a_l_sampler_flags.html">xiiGALSamplerFlags</a>);</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>XII_DECLARE_REFLECTABLE_TYPE(XII_GRAPHICSFOUNDATION_DLL, <a class="code hl_struct" href="../../d4/d0e/structxii_g_a_l_sampler_flags.html">xiiGALSamplerFlags</a>);</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
+<div class="foldopen" id="foldopen00042" data-start="{" data-end="};">
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="../../d6/dbe/structxii_g_a_l_sampler_creation_description.html">   42</a></span><span class="keyword">struct </span>XII_GRAPHICSFOUNDATION_DLL <a class="code hl_struct" href="../../d6/dbe/structxii_g_a_l_sampler_creation_description.html">xiiGALSamplerCreationDescription</a> : <span class="keyword">public</span> <a class="code hl_class" href="../../d7/d9f/classxii_hashable_struct.html">xiiHashableStruct</a>&lt;xiiGALSamplerCreationDescription&gt;</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>{</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>  XII_DECLARE_POD_TYPE();</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="../../d6/dbe/structxii_g_a_l_sampler_creation_description.html#ad8030afc3037bdcba1f1d582a240040d">   46</a></span>  <a class="code hl_struct" href="../../de/dfd/structxii_enum.html">xiiEnum&lt;xiiGALFilterType&gt;</a>         m_MinFilter          = <a class="code hl_enumvalue" href="../../db/d9d/structxii_g_a_l_filter_type.html#a078045721000a292a9dcacfb4bc966e6a7070401017c8f31b132c4312083b8a1b">xiiGALFilterType::Linear</a>;        </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="../../d6/dbe/structxii_g_a_l_sampler_creation_description.html#a20cbbe223ac81d2a213ec1c094f2d9b3">   47</a></span>  <a class="code hl_struct" href="../../de/dfd/structxii_enum.html">xiiEnum&lt;xiiGALFilterType&gt;</a>         m_MagFilter          = <a class="code hl_enumvalue" href="../../db/d9d/structxii_g_a_l_filter_type.html#a078045721000a292a9dcacfb4bc966e6a7070401017c8f31b132c4312083b8a1b">xiiGALFilterType::Linear</a>;        </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="../../d6/dbe/structxii_g_a_l_sampler_creation_description.html#ae9713c2507021c2ae1787a29fc2d7ad4">   48</a></span>  <a class="code hl_struct" href="../../de/dfd/structxii_enum.html">xiiEnum&lt;xiiGALFilterType&gt;</a>         m_MipFilter          = <a class="code hl_enumvalue" href="../../db/d9d/structxii_g_a_l_filter_type.html#a078045721000a292a9dcacfb4bc966e6a7070401017c8f31b132c4312083b8a1b">xiiGALFilterType::Linear</a>;        </div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="../../d6/dbe/structxii_g_a_l_sampler_creation_description.html#aa8d752fdbcb85fa0c56f43466285d5f7">   49</a></span>  <a class="code hl_struct" href="../../de/dfd/structxii_enum.html">xiiEnum&lt;xiiGALTextureAddressMode&gt;</a> m_AddressU           = <a class="code hl_enumvalue" href="../../dd/dcf/structxii_g_a_l_texture_address_mode.html#abcf94f93eb06b8bebcee7b6474cc148fa3143aba86f79c5b73ac0456f41e0d0f9">xiiGALTextureAddressMode::Clamp</a>; </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="../../d6/dbe/structxii_g_a_l_sampler_creation_description.html#af9fbd69b25ccca4ae27f561abed010ae">   50</a></span>  <a class="code hl_struct" href="../../de/dfd/structxii_enum.html">xiiEnum&lt;xiiGALTextureAddressMode&gt;</a> m_AddressV           = <a class="code hl_enumvalue" href="../../dd/dcf/structxii_g_a_l_texture_address_mode.html#abcf94f93eb06b8bebcee7b6474cc148fa3143aba86f79c5b73ac0456f41e0d0f9">xiiGALTextureAddressMode::Clamp</a>; </div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="../../d6/dbe/structxii_g_a_l_sampler_creation_description.html#a52186d7a25e91e4652638aa8195db62d">   51</a></span>  <a class="code hl_struct" href="../../de/dfd/structxii_enum.html">xiiEnum&lt;xiiGALTextureAddressMode&gt;</a> m_AddressW           = <a class="code hl_enumvalue" href="../../dd/dcf/structxii_g_a_l_texture_address_mode.html#abcf94f93eb06b8bebcee7b6474cc148fa3143aba86f79c5b73ac0456f41e0d0f9">xiiGALTextureAddressMode::Clamp</a>; </div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="../../d6/dbe/structxii_g_a_l_sampler_creation_description.html#aa12e049b519fc2a91c7d0b9a2e67f9c5">   52</a></span>  <a class="code hl_struct" href="../../d7/d55/structxii_bitflags.html">xiiBitflags&lt;xiiGALSamplerFlags&gt;</a>   m_Flags              = <a class="code hl_enumvalue" href="../../d4/d0e/structxii_g_a_l_sampler_flags.html#ab20e97d2d9ab7b9bc0b772a54ce24f4da1186c35712fe5eac4088319ccce7f173">xiiGALSamplerFlags::None</a>;        </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="../../d6/dbe/structxii_g_a_l_sampler_creation_description.html#a1327e2efe5281f5eef03410d5cabaa71">   53</a></span>  <span class="keywordtype">bool</span>                              m_bUnormalizedCoords = <span class="keyword">false</span>;                           </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="../../d6/dbe/structxii_g_a_l_sampler_creation_description.html#ac00ce0ad44df88f1f3863c88d9be357e">   58</a></span>  <span class="keywordtype">float</span>                             m_fMipLODBias        = 0.0f;                            </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="../../d6/dbe/structxii_g_a_l_sampler_creation_description.html#a65da0c3d8fac33e0ccf23c34a2d049fc">   59</a></span>  xiiUInt32                         m_uiMaxAnisotropy    = 0U;                              </div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno"><a class="line" href="../../d6/dbe/structxii_g_a_l_sampler_creation_description.html#aff5f3f96b6b1fc7844ff96bc15142696">   60</a></span>  <a class="code hl_struct" href="../../de/dfd/structxii_enum.html">xiiEnum&lt;xiiGALComparisonFunction&gt;</a> m_ComparisonFunction = <a class="code hl_enumvalue" href="../../d2/d6d/structxii_g_a_l_comparison_function.html#a379b1dc5f2a81ba2b9a7f934fe9b9df3a43c96000137cbbbd8973aca8339f2d67">xiiGALComparisonFunction::Never</a>; </div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="../../d6/dbe/structxii_g_a_l_sampler_creation_description.html#a8912d225f1a80db11ed161bd823cd4a7">   61</a></span>  <a class="code hl_class" href="../../d3/de6/classxii_color.html">xiiColor</a>                          m_BorderColor        = <a class="code hl_variable" href="../../d3/de6/classxii_color.html#a9bab62c2a390a5c5149c4e738384ac96">xiiColor::Black</a>;                 </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="../../d6/dbe/structxii_g_a_l_sampler_creation_description.html#a61781502025334de5be7c4617826b585">   62</a></span>  <span class="keywordtype">float</span>                             m_fMinLOD            = 0.0f;                            </div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="../../d6/dbe/structxii_g_a_l_sampler_creation_description.html#aec5325294527c9ed9a6f73037672bf35">   63</a></span>  <span class="keywordtype">float</span>                             m_fMaxLOD            = <a class="code hl_function" href="../../d1/d37/namespacexii_math.html#a6bbce1588f70c91d6cad87e82a0238c1">xiiMath::MaxValue&lt;float&gt;</a>();      </div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>};</div>
+</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
+<div class="foldopen" id="foldopen00067" data-start="{" data-end="};">
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno"><a class="line" href="../../d3/d97/classxii_g_a_l_sampler.html">   67</a></span><span class="keyword">class </span>XII_GRAPHICSFOUNDATION_DLL <a class="code hl_class" href="../../d3/d97/classxii_g_a_l_sampler.html">xiiGALSampler</a> : <span class="keyword">public</span> <a class="code hl_class" href="../../d5/d12/classxii_g_a_l_device_object.html">xiiGALDeviceObject</a></div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>{</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>  XII_ADD_DYNAMIC_REFLECTION(<a class="code hl_class" href="../../d3/d97/classxii_g_a_l_sampler.html">xiiGALSampler</a>, <a class="code hl_class" href="../../d5/d12/classxii_g_a_l_device_object.html">xiiGALDeviceObject</a>);</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>  XII_NODISCARD <span class="keyword">const</span> <a class="code hl_struct" href="../../d6/dbe/structxii_g_a_l_sampler_creation_description.html">xiiGALSamplerCreationDescription</a>&amp; GetDescription() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span><span class="keyword">protected</span>:</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>  <span class="keyword">friend</span> <span class="keyword">class </span><a class="code hl_class" href="../../d5/d19/classxii_g_a_l_device.html">xiiGALDevice</a>;</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>  <a class="code hl_class" href="../../d3/d97/classxii_g_a_l_sampler.html">xiiGALSampler</a>(<a class="code hl_class" href="../../d5/d19/classxii_g_a_l_device.html">xiiGALDevice</a>* pDevice, <span class="keyword">const</span> <a class="code hl_struct" href="../../d6/dbe/structxii_g_a_l_sampler_creation_description.html">xiiGALSamplerCreationDescription</a>&amp; creationDescription);</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span> </div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>  <span class="keyword">virtual</span> <a class="code hl_class" href="../../d3/d97/classxii_g_a_l_sampler.html">~xiiGALSampler</a>();</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>  <span class="keyword">virtual</span> <a class="code hl_struct" href="../../dd/dad/structxii_result.html">xiiResult</a> InitPlatform() = 0;</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span> </div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>  <span class="keyword">virtual</span> <a class="code hl_struct" href="../../dd/dad/structxii_result.html">xiiResult</a> DeInitPlatform() = 0;</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span> </div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span><span class="keyword">protected</span>:</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>  <a class="code hl_struct" href="../../d6/dbe/structxii_g_a_l_sampler_creation_description.html">xiiGALSamplerCreationDescription</a> m_Description;</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>};</div>
+</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span> </div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span><span class="preprocessor">#include &lt;GraphicsFoundation/Resources/Implementation/Sampler_inl.h&gt;</span></div>
+<div class="ttc" id="aclassxii_color_html"><div class="ttname"><a href="../../d3/de6/classxii_color.html">xiiColor</a></div><div class="ttdoc">xiiColor represents an RGBA color in linear color space. Values are stored as float,...</div><div class="ttdef"><b>Definition</b> Color.h:44</div></div>
+<div class="ttc" id="aclassxii_color_html_a9bab62c2a390a5c5149c4e738384ac96"><div class="ttname"><a href="../../d3/de6/classxii_color.html#a9bab62c2a390a5c5149c4e738384ac96">xiiColor::Black</a></div><div class="ttdeci">static const xiiColor Black</div><div class="ttdoc">#000000</div><div class="ttdef"><b>Definition</b> Color.h:57</div></div>
+<div class="ttc" id="aclassxii_g_a_l_device_html"><div class="ttname"><a href="../../d5/d19/classxii_g_a_l_device.html">xiiGALDevice</a></div><div class="ttdoc">The xiiRenderDevice class is the primary interface for interactions with rendering APIs....</div><div class="ttdef"><b>Definition</b> Device.h:16</div></div>
+<div class="ttc" id="aclassxii_g_a_l_device_object_html"><div class="ttname"><a href="../../d5/d12/classxii_g_a_l_device_object.html">xiiGALDeviceObject</a></div><div class="ttdoc">Base Graphics Abstraction Layer Object.</div><div class="ttdef"><b>Definition</b> DeviceObject.h:9</div></div>
+<div class="ttc" id="aclassxii_g_a_l_sampler_html"><div class="ttname"><a href="../../d3/d97/classxii_g_a_l_sampler.html">xiiGALSampler</a></div><div class="ttdoc">Interface that defines methods to manipulate a texture sampler object used to perform texture filteri...</div><div class="ttdef"><b>Definition</b> Sampler.h:68</div></div>
+<div class="ttc" id="aclassxii_hashable_struct_html"><div class="ttname"><a href="../../d7/d9f/classxii_hashable_struct.html">xiiHashableStruct</a></div><div class="ttdoc">This class provides a base class for hashable structs (e.g. descriptor objects).</div><div class="ttdef"><b>Definition</b> HashableStruct.h:17</div></div>
+<div class="ttc" id="anamespacexii_math_html_a6bbce1588f70c91d6cad87e82a0238c1"><div class="ttname"><a href="../../d1/d37/namespacexii_math.html#a6bbce1588f70c91d6cad87e82a0238c1">xiiMath::MaxValue</a></div><div class="ttdeci">constexpr TYPE MaxValue()</div><div class="ttdoc">Returns the largest possible positive value (that is not infinity).</div></div>
+<div class="ttc" id="astructxii_bitflags_html"><div class="ttname"><a href="../../d7/d55/structxii_bitflags.html">xiiBitflags</a></div><div class="ttdoc">The xiiBitflags class allows you to work with type-safe bitflags.</div><div class="ttdef"><b>Definition</b> Bitflags.h:82</div></div>
+<div class="ttc" id="astructxii_enum_html"><div class="ttname"><a href="../../de/dfd/structxii_enum.html">xiiEnum</a></div><div class="ttdoc">A custom enum implementation that allows to define the underlying storage type to control its memory ...</div><div class="ttdef"><b>Definition</b> Enum.h:37</div></div>
+<div class="ttc" id="astructxii_g_a_l_comparison_function_html_a379b1dc5f2a81ba2b9a7f934fe9b9df3a43c96000137cbbbd8973aca8339f2d67"><div class="ttname"><a href="../../d2/d6d/structxii_g_a_l_comparison_function.html#a379b1dc5f2a81ba2b9a7f934fe9b9df3a43c96000137cbbbd8973aca8339f2d67">xiiGALComparisonFunction::Never</a></div><div class="ttdeci">@ Never</div><div class="ttdoc">Comparison never passes.</div><div class="ttdef"><b>Definition</b> GraphicsTypes.h:651</div></div>
+<div class="ttc" id="astructxii_g_a_l_filter_type_html_a078045721000a292a9dcacfb4bc966e6a7070401017c8f31b132c4312083b8a1b"><div class="ttname"><a href="../../db/d9d/structxii_g_a_l_filter_type.html#a078045721000a292a9dcacfb4bc966e6a7070401017c8f31b132c4312083b8a1b">xiiGALFilterType::Linear</a></div><div class="ttdeci">@ Linear</div><div class="ttdoc">Linear filtering.</div><div class="ttdef"><b>Definition</b> GraphicsTypes.h:590</div></div>
+<div class="ttc" id="astructxii_g_a_l_sampler_creation_description_html"><div class="ttname"><a href="../../d6/dbe/structxii_g_a_l_sampler_creation_description.html">xiiGALSamplerCreationDescription</a></div><div class="ttdoc">This describes the sampler creation description.</div><div class="ttdef"><b>Definition</b> Sampler.h:43</div></div>
+<div class="ttc" id="astructxii_g_a_l_sampler_flags_1_1_bits_html"><div class="ttname"><a href="../../d1/d06/structxii_g_a_l_sampler_flags_1_1_bits.html">xiiGALSamplerFlags::Bits</a></div><div class="ttdef"><b>Definition</b> Sampler.h:25</div></div>
+<div class="ttc" id="astructxii_g_a_l_sampler_flags_html"><div class="ttname"><a href="../../d4/d0e/structxii_g_a_l_sampler_flags.html">xiiGALSamplerFlags</a></div><div class="ttdoc">This describes the sampler flags.</div><div class="ttdef"><b>Definition</b> Sampler.h:10</div></div>
+<div class="ttc" id="astructxii_g_a_l_sampler_flags_html_ab20e97d2d9ab7b9bc0b772a54ce24f4d"><div class="ttname"><a href="../../d4/d0e/structxii_g_a_l_sampler_flags.html#ab20e97d2d9ab7b9bc0b772a54ce24f4d">xiiGALSamplerFlags::Enum</a></div><div class="ttdeci">Enum</div><div class="ttdef"><b>Definition</b> Sampler.h:14</div></div>
+<div class="ttc" id="astructxii_g_a_l_sampler_flags_html_ab20e97d2d9ab7b9bc0b772a54ce24f4da1186c35712fe5eac4088319ccce7f173"><div class="ttname"><a href="../../d4/d0e/structxii_g_a_l_sampler_flags.html#ab20e97d2d9ab7b9bc0b772a54ce24f4da1186c35712fe5eac4088319ccce7f173">xiiGALSamplerFlags::None</a></div><div class="ttdeci">@ None</div><div class="ttdoc">No sampler flags.</div><div class="ttdef"><b>Definition</b> Sampler.h:15</div></div>
+<div class="ttc" id="astructxii_g_a_l_texture_address_mode_html_abcf94f93eb06b8bebcee7b6474cc148fa3143aba86f79c5b73ac0456f41e0d0f9"><div class="ttname"><a href="../../dd/dcf/structxii_g_a_l_texture_address_mode.html#abcf94f93eb06b8bebcee7b6474cc148fa3143aba86f79c5b73ac0456f41e0d0f9">xiiGALTextureAddressMode::Clamp</a></div><div class="ttdeci">@ Clamp</div><div class="ttdoc">Texture coordinates outside the range [0.0, 1.0] are set to the texture color at 0....</div><div class="ttdef"><b>Definition</b> GraphicsTypes.h:627</div></div>
+<div class="ttc" id="astructxii_result_html"><div class="ttname"><a href="../../dd/dad/structxii_result.html">xiiResult</a></div><div class="ttdoc">Default enum for returning failure or success, instead of using a bool.</div><div class="ttdef"><b>Definition</b> Types.h:56</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.html">home</a></li><li class="navelem"><a class="el" href="../../dir_1036706e55c22cab35bc1c58ee689f1d.html">runner</a></li><li class="navelem"><a class="el" href="../../dir_629f8151d55d307162ff2d619fb1783d.html">work</a></li><li class="navelem"><a class="el" href="../../dir_1ddc44fe1263a8c7935fa6130b7d9499.html">XII</a></li><li class="navelem"><a class="el" href="../../dir_2c1b6808f12952f4c36e05ba7068379a.html">XII</a></li><li class="navelem"><a class="el" href="../../dir_b5a1c4ecfca018ad24b729e213296d41.html">Source</a></li><li class="navelem"><a class="el" href="../../dir_e321052006a51284e67389ab20037e7c.html">Engine</a></li><li class="navelem"><a class="el" href="../../dir_60f548c54f5a79fe3a3b3b88ff8146f5.html">GraphicsFoundation</a></li><li class="navelem"><a class="el" href="../../dir_f974d899601811362b57092dd8d00a65.html">Resources</a></li><li class="navelem"><b>Sampler.h</b></li>
+    <li class="footer">Generated on Mon Jul 1 2024 23:53:12 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+  </ul>
+</div>
+</body>
+</html>

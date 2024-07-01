@@ -1,0 +1,307 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.11.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<!-- BEGIN opengraph metadata -->
+<meta property="og:title" content="XII" />
+<meta property="og:image" content="../../XII-Logo.png" />
+<meta property="og:description" content="An advanced high-performance simulation engine." />
+<meta property="og:url" content="https://www.xiitechnologies.com" />
+<!-- END opengraph metadata -->
+<!-- BEGIN twitter metadata -->
+<meta name="twitter:image:src" content="../../XII-Logo.png" />
+<meta name="twitter:title" content="XII" />
+<meta name="twitter:description" content="An advanced high-performance simulation engine." />
+<!-- END twitter metadata -->
+<title>XII: xiiProgressRange Class Reference</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link rel="icon" type="image/svg+xml" href="logo.drawio.svg"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="../../toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../custom.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<a href="https://github.com/jothepro/doxygen-awesome-css" class="github-corner" title="View source on GitHub" target="_blank" rel="noopener noreferrer">
+    <svg viewBox="0 0 250 250" width="40" height="40" style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+    <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="../../XII-Logo.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">XII
+   &#160;<span id="projectnumber">1.0.0</span>
+   </div>
+   <div id="projectbrief">A high-performance simulation engine.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(1); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.html','Search',true);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('d2/dea/classxii_progress_range.html','../../'); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#friends">Friends</a> &#124;
+<a href="../../da/dd6/classxii_progress_range-members.html">List of all members</a>  </div>
+  <div class="headertitle"><div class="title">xiiProgressRange Class Reference</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p><a class="el" href="../../d2/dea/classxii_progress_range.html" title="xiiProgressRange is the preferred method to inform the system of progress.">xiiProgressRange</a> is the preferred method to inform the system of progress.  
+ <a href="#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="../../da/d74/_progress_8h_source.html">Progress.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:ad2c190f91aa273beb53ba5993f5b36b4" id="r_ad2c190f91aa273beb53ba5993f5b36b4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad2c190f91aa273beb53ba5993f5b36b4">xiiProgressRange</a> (<a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sDisplayText, xiiUInt32 uiSteps, bool bAllowCancel, <a class="el" href="../../dd/d9e/classxii_progress.html">xiiProgress</a> *pProgressbar=nullptr)</td></tr>
+<tr class="memdesc:ad2c190f91aa273beb53ba5993f5b36b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a progress range scope.  <br /></td></tr>
+<tr class="separator:ad2c190f91aa273beb53ba5993f5b36b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0cec217a9e04b073a80b2cd45045ccca" id="r_a0cec217a9e04b073a80b2cd45045ccca"><td class="memItemLeft" align="right" valign="top"><a id="a0cec217a9e04b073a80b2cd45045ccca" name="a0cec217a9e04b073a80b2cd45045ccca"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>xiiProgressRange</b> (<a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sDisplayText, bool bAllowCancel, <a class="el" href="../../dd/d9e/classxii_progress.html">xiiProgress</a> *pProgressbar=nullptr)</td></tr>
+<tr class="memdesc:a0cec217a9e04b073a80b2cd45045ccca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a progress range scope without steps. Use SetCompletion to manually set the completion value. <br /></td></tr>
+<tr class="separator:a0cec217a9e04b073a80b2cd45045ccca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5bbce49fd35b0ec4804fb931397a412e" id="r_a5bbce49fd35b0ec4804fb931397a412e"><td class="memItemLeft" align="right" valign="top"><a id="a5bbce49fd35b0ec4804fb931397a412e" name="a5bbce49fd35b0ec4804fb931397a412e"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>~xiiProgressRange</b> ()</td></tr>
+<tr class="memdesc:a5bbce49fd35b0ec4804fb931397a412e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The destructor closes the current range. All progress in this range is assumed to have completed, even if <a class="el" href="#a39a3c7baa331a284aa2ca9e14f8ecfd5" title="Should be called whenever a new sub-step is started to advance the progress.">BeginNextStep()</a> has not been called once for every subdivision step. <br /></td></tr>
+<tr class="separator:a5bbce49fd35b0ec4804fb931397a412e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06f6c1a66af62adee57458da00cfeae0" id="r_a06f6c1a66af62adee57458da00cfeae0"><td class="memItemLeft" align="right" valign="top"><a id="a06f6c1a66af62adee57458da00cfeae0" name="a06f6c1a66af62adee57458da00cfeae0"></a>
+<a class="el" href="../../dd/d9e/classxii_progress.html">xiiProgress</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetProgressbar</b> () const</td></tr>
+<tr class="memdesc:a06f6c1a66af62adee57458da00cfeae0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the <a class="el" href="../../dd/d9e/classxii_progress.html" title="Manages the way a progress bar is subdivided and advanced.">xiiProgress</a> instance that this range uses. <br /></td></tr>
+<tr class="separator:a06f6c1a66af62adee57458da00cfeae0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6cbc011b9ee5295cbfd9431a9da207dd" id="r_a6cbc011b9ee5295cbfd9431a9da207dd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6cbc011b9ee5295cbfd9431a9da207dd">SetStepWeighting</a> (xiiUInt32 uiStep, float fWeight)</td></tr>
+<tr class="memdesc:a6cbc011b9ee5295cbfd9431a9da207dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allows to weigh each step differently.  <br /></td></tr>
+<tr class="separator:a6cbc011b9ee5295cbfd9431a9da207dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39a3c7baa331a284aa2ca9e14f8ecfd5" id="r_a39a3c7baa331a284aa2ca9e14f8ecfd5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a39a3c7baa331a284aa2ca9e14f8ecfd5">BeginNextStep</a> (<a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sStepDisplayText, xiiUInt32 uiNumSteps=1)</td></tr>
+<tr class="memdesc:a39a3c7baa331a284aa2ca9e14f8ecfd5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Should be called whenever a new sub-step is started to advance the progress.  <br /></td></tr>
+<tr class="separator:a39a3c7baa331a284aa2ca9e14f8ecfd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78cb46eea4291e86b8f6c87ea2905cab" id="r_a78cb46eea4291e86b8f6c87ea2905cab"><td class="memItemLeft" align="right" valign="top"><a id="a78cb46eea4291e86b8f6c87ea2905cab" name="a78cb46eea4291e86b8f6c87ea2905cab"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>SetCompletion</b> (double fCompletionFactor)</td></tr>
+<tr class="memdesc:a78cb46eea4291e86b8f6c87ea2905cab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Manually set the completion value between 0..1. <br /></td></tr>
+<tr class="separator:a78cb46eea4291e86b8f6c87ea2905cab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab63e14980bb8a0f5ef3efdd597d45fac" id="r_ab63e14980bb8a0f5ef3efdd597d45fac"><td class="memItemLeft" align="right" valign="top"><a id="ab63e14980bb8a0f5ef3efdd597d45fac" name="ab63e14980bb8a0f5ef3efdd597d45fac"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>WasCanceled</b> () const</td></tr>
+<tr class="memdesc:ab63e14980bb8a0f5ef3efdd597d45fac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether the user requested to cancel the operation. <br /></td></tr>
+<tr class="separator:ab63e14980bb8a0f5ef3efdd597d45fac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
+Friends</h2></td></tr>
+<tr class="memitem:a359d122764391fabc88c4350936cc0fd" id="r_a359d122764391fabc88c4350936cc0fd"><td class="memItemLeft" align="right" valign="top"><a id="a359d122764391fabc88c4350936cc0fd" name="a359d122764391fabc88c4350936cc0fd"></a>
+class&#160;</td><td class="memItemRight" valign="bottom"><b>xiiProgress</b></td></tr>
+<tr class="separator:a359d122764391fabc88c4350936cc0fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p><a class="el" href="../../d2/dea/classxii_progress_range.html" title="xiiProgressRange is the preferred method to inform the system of progress.">xiiProgressRange</a> is the preferred method to inform the system of progress. </p>
+<p><a class="el" href="../../d2/dea/classxii_progress_range.html" title="xiiProgressRange is the preferred method to inform the system of progress.">xiiProgressRange</a> is a scoped class, ie. upon creation it adds a range to the current progress and upon destruction the entire range is considered to be completed. Ranges can be nested. For instance when a top level range consists of three 'steps', then opening a nested range will sub-divide that first step. When the nested range is closed, the first top-level step is finished and <a class="el" href="#a39a3c7baa331a284aa2ca9e14f8ecfd5" title="Should be called whenever a new sub-step is started to advance the progress.">BeginNextStep()</a> should be called on the top-level range. Subsequently the second step is active and can again be further subdivided with another nested <a class="el" href="../../d2/dea/classxii_progress_range.html" title="xiiProgressRange is the preferred method to inform the system of progress.">xiiProgressRange</a>. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="ad2c190f91aa273beb53ba5993f5b36b4" name="ad2c190f91aa273beb53ba5993f5b36b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad2c190f91aa273beb53ba5993f5b36b4">&#9670;&#160;</a></span>xiiProgressRange()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">xiiProgressRange::xiiProgressRange </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a></td>          <td class="paramname"><span class="paramname"><em>sDisplayText</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">xiiUInt32</td>          <td class="paramname"><span class="paramname"><em>uiSteps</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>bAllowCancel</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../dd/d9e/classxii_progress.html">xiiProgress</a> *</td>          <td class="paramname"><span class="paramname"><em>pProgressbar</em></span><span class="paramdefsep"> = </span><span class="paramdefval">nullptr</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Creates a progress range scope. </p>
+<p>If any other progress range is currently active, it will become the parent range and the currently active step will be subdivided. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">szDisplayText</td><td>is the main display text for this range. </td></tr>
+    <tr><td class="paramname">uiSteps</td><td>is the number of steps that this range will be subdivided into </td></tr>
+    <tr><td class="paramname">bAllowCancel</td><td>specifies whether the user can cancel this operation </td></tr>
+    <tr><td class="paramname">pProgressbar</td><td>can be specified, if available, otherwise the currently active <a class="el" href="../../dd/d9e/classxii_progress.html" title="Manages the way a progress bar is subdivided and advanced.">xiiProgress</a> instance is used. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a39a3c7baa331a284aa2ca9e14f8ecfd5" name="a39a3c7baa331a284aa2ca9e14f8ecfd5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a39a3c7baa331a284aa2ca9e14f8ecfd5">&#9670;&#160;</a></span>BeginNextStep()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool xiiProgressRange::BeginNextStep </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a></td>          <td class="paramname"><span class="paramname"><em>sStepDisplayText</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">xiiUInt32</td>          <td class="paramname"><span class="paramname"><em>uiNumSteps</em></span><span class="paramdefsep"> = </span><span class="paramdefval">1</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Should be called whenever a new sub-step is started to advance the progress. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">szStepDisplayText</td><td>The sub-text for the next step to be displayed. </td></tr>
+    <tr><td class="paramname">uiNumSteps</td><td>How many steps have been completed. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Returns false if the user clicked cancel. </dd></dl>
+
+</div>
+</div>
+<a id="a6cbc011b9ee5295cbfd9431a9da207dd" name="a6cbc011b9ee5295cbfd9431a9da207dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6cbc011b9ee5295cbfd9431a9da207dd">&#9670;&#160;</a></span>SetStepWeighting()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void xiiProgressRange::SetStepWeighting </td>
+          <td>(</td>
+          <td class="paramtype">xiiUInt32</td>          <td class="paramname"><span class="paramname"><em>uiStep</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>fWeight</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Allows to weigh each step differently. </p>
+<p>This makes it possible to divide an operation into two steps, but have one part take up 90% and the other 10%. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">uiStep</td><td>The index for the step to set the weight </td></tr>
+    <tr><td class="paramname">fWeight</td><td>The weighting in [0; 1] range </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li>/home/runner/work/XII/XII/Source/Engine/Foundation/Utilities/<a class="el" href="../../da/d74/_progress_8h_source.html">Progress.h</a></li>
+<li>/home/runner/work/XII/XII/Source/Engine/Foundation/Utilities/Implementation/<b>Progress.cpp</b></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../d2/dea/classxii_progress_range.html">xiiProgressRange</a></li>
+    <li class="footer">Generated on Mon Jul 1 2024 23:53:15 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+  </ul>
+</div>
+</body>
+</html>

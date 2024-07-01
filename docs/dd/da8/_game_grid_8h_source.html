@@ -1,0 +1,270 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.11.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<!-- BEGIN opengraph metadata -->
+<meta property="og:title" content="XII" />
+<meta property="og:image" content="../../XII-Logo.png" />
+<meta property="og:description" content="An advanced high-performance simulation engine." />
+<meta property="og:url" content="https://www.xiitechnologies.com" />
+<!-- END opengraph metadata -->
+<!-- BEGIN twitter metadata -->
+<meta name="twitter:image:src" content="../../XII-Logo.png" />
+<meta name="twitter:title" content="XII" />
+<meta name="twitter:description" content="An advanced high-performance simulation engine." />
+<!-- END twitter metadata -->
+<title>XII: /home/runner/work/XII/XII/Source/Engine/Utilities/DataStructures/GameGrid.h Source File</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link rel="icon" type="image/svg+xml" href="logo.drawio.svg"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="../../toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../custom.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<a href="https://github.com/jothepro/doxygen-awesome-css" class="github-corner" title="View source on GitHub" target="_blank" rel="noopener noreferrer">
+    <svg viewBox="0 0 250 250" width="40" height="40" style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+    <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="../../XII-Logo.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">XII
+   &#160;<span id="projectnumber">1.0.0</span>
+   </div>
+   <div id="projectbrief">A high-performance simulation engine.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(1); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.html','Search',true);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('dd/da8/_game_grid_8h_source.html','../../'); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">GameGrid.h</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &lt;Foundation/Containers/DynamicArray.h&gt;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;Foundation/Math/Mat3.h&gt;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;Foundation/Math/Vec2.h&gt;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;Foundation/Math/Vec3.h&gt;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;Utilities/UtilitiesDLL.h&gt;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="keyword">template</span> &lt;<span class="keyword">class</span> CellData&gt;</div>
+<div class="foldopen" id="foldopen00012" data-start="{" data-end="};">
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="../../dc/d30/classxii_game_grid.html">   12</a></span><span class="keyword">class </span><a class="code hl_class" href="../../dc/d30/classxii_game_grid.html">xiiGameGrid</a></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>{</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keyword">public</span>:</div>
+<div class="foldopen" id="foldopen00015" data-start="{" data-end="};">
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="../../dc/d30/classxii_game_grid.html#a0259a8eed6ec1405402e187f15ed9984">   15</a></span>  <span class="keyword">enum</span> <a class="code hl_enumeration" href="../../dc/d30/classxii_game_grid.html#a0259a8eed6ec1405402e187f15ed9984">Orientation</a></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>  {</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="../../dc/d30/classxii_game_grid.html#a0259a8eed6ec1405402e187f15ed9984a9d95222d1aef6288bb42b17369fc7c56">   17</a></span>    <a class="code hl_enumvalue" href="../../dc/d30/classxii_game_grid.html#a0259a8eed6ec1405402e187f15ed9984a9d95222d1aef6288bb42b17369fc7c56">InPlaneXY</a>,      </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="../../dc/d30/classxii_game_grid.html#a0259a8eed6ec1405402e187f15ed9984a94558a771e5c96d89bcd0afcb3491085">   18</a></span>    <a class="code hl_enumvalue" href="../../dc/d30/classxii_game_grid.html#a0259a8eed6ec1405402e187f15ed9984a94558a771e5c96d89bcd0afcb3491085">InPlaneXZ</a>,      </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="../../dc/d30/classxii_game_grid.html#a0259a8eed6ec1405402e187f15ed9984affd7a1aaeec7926e0acaab4918fa9148">   19</a></span>    <a class="code hl_enumvalue" href="../../dc/d30/classxii_game_grid.html#a0259a8eed6ec1405402e187f15ed9984affd7a1aaeec7926e0acaab4918fa9148">InPlaneXminusZ</a>, </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>  };</div>
+</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>  <a class="code hl_class" href="../../dc/d30/classxii_game_grid.html">xiiGameGrid</a>();</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>  <span class="keywordtype">void</span> <a class="code hl_function" href="../../dc/d30/classxii_game_grid.html#a27c03dc47e231198ef7e4d09676da697">CreateGrid</a>(xiiUInt16 uiSizeX, xiiUInt16 uiSizeY);</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>  <span class="keywordtype">void</span> <a class="code hl_function" href="../../dc/d30/classxii_game_grid.html#a96675b46e658d61d45b59933c5b420bb">SetWorldSpaceDimensions</a>(<span class="keyword">const</span> <a class="code hl_class" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3</a>&amp; vLowerLeftCorner, <span class="keyword">const</span> <a class="code hl_class" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3</a>&amp; vCellSize, <a class="code hl_enumeration" href="../../dc/d30/classxii_game_grid.html#a0259a8eed6ec1405402e187f15ed9984">Orientation</a> ori = <a class="code hl_enumvalue" href="../../dc/d30/classxii_game_grid.html#a0259a8eed6ec1405402e187f15ed9984a94558a771e5c96d89bcd0afcb3491085">InPlaneXZ</a>);</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>  <span class="keywordtype">void</span> <a class="code hl_function" href="../../dc/d30/classxii_game_grid.html#a96675b46e658d61d45b59933c5b420bb">SetWorldSpaceDimensions</a>(<span class="keyword">const</span> <a class="code hl_class" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3</a>&amp; vLowerLeftCorner, <span class="keyword">const</span> <a class="code hl_class" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3</a>&amp; vCellSize, <span class="keyword">const</span> <a class="code hl_class" href="../../d3/d74/classxii_mat3_template.html">xiiMat3</a>&amp; mRotation);</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="../../dc/d30/classxii_game_grid.html#af6bc408333aba798277494525df9a243">   44</a></span>  <a class="code hl_class" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3</a> <a class="code hl_function" href="../../dc/d30/classxii_game_grid.html#af6bc408333aba798277494525df9a243">GetCellSize</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_vLocalSpaceCellSize; }</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>  <a class="code hl_class" href="../../d1/d0d/classxii_vec2_template.html">xiiVec2I32</a> <a class="code hl_function" href="../../dc/d30/classxii_game_grid.html#ac9cb9c3e177c19476bc0ab837b84e42e">GetCellAtWorldPosition</a>(<span class="keyword">const</span> <a class="code hl_class" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3</a>&amp; vWorldSpacePos) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="../../dc/d30/classxii_game_grid.html#a4a8b835837825ea1f3baf5f91f59629e">   51</a></span>  xiiUInt16 <a class="code hl_function" href="../../dc/d30/classxii_game_grid.html#a4a8b835837825ea1f3baf5f91f59629e">GetGridSizeX</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_uiGridSizeX; }</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="../../dc/d30/classxii_game_grid.html#aa20c5275555db7cd8d4d084d583b4a00">   54</a></span>  xiiUInt16 <a class="code hl_function" href="../../dc/d30/classxii_game_grid.html#aa20c5275555db7cd8d4d084d583b4a00">GetGridSizeY</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_uiGridSizeY; }</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>  <a class="code hl_class" href="../../d2/dd6/classxii_bounding_box_template.html">xiiBoundingBox</a> <a class="code hl_function" href="../../dc/d30/classxii_game_grid.html#a31a35fa2ef139ebc9edaa57f226e403c">GetWorldBoundingBox</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno"><a class="line" href="../../dc/d30/classxii_game_grid.html#a6cea8755dc38e5b872a6cdacba4b9a10">   60</a></span>  xiiUInt32 <a class="code hl_function" href="../../dc/d30/classxii_game_grid.html#a6cea8755dc38e5b872a6cdacba4b9a10">GetNumCells</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_uiGridSizeX * m_uiGridSizeY; }</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="../../dc/d30/classxii_game_grid.html#a3c7d45a2633043eb58d969b879648893">   63</a></span>  CellData&amp; <a class="code hl_function" href="../../dc/d30/classxii_game_grid.html#a3c7d45a2633043eb58d969b879648893">GetCell</a>(xiiUInt32 uiIndex) { <span class="keywordflow">return</span> m_Cells[uiIndex]; }</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno"><a class="line" href="../../dc/d30/classxii_game_grid.html#a4c543cb53aea548170baecf12be953b8">   66</a></span>  <span class="keyword">const</span> CellData&amp; <a class="code hl_function" href="../../dc/d30/classxii_game_grid.html#a4c543cb53aea548170baecf12be953b8">GetCell</a>(xiiUInt32 uiIndex)<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_Cells[uiIndex]; }</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno"><a class="line" href="../../dc/d30/classxii_game_grid.html#a53c3e3f68e7e3500e5ebe1d34651223e">   69</a></span>  CellData&amp; <a class="code hl_function" href="../../dc/d30/classxii_game_grid.html#a53c3e3f68e7e3500e5ebe1d34651223e">GetCell</a>(<span class="keyword">const</span> <a class="code hl_class" href="../../d1/d0d/classxii_vec2_template.html">xiiVec2I32</a>&amp; vCoord) { <span class="keywordflow">return</span> m_Cells[<a class="code hl_function" href="../../dc/d30/classxii_game_grid.html#a616cc427a4bf81aaed8eded4870c026f">ConvertCellCoordinateToIndex</a>(vCoord)]; }</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno"><a class="line" href="../../dc/d30/classxii_game_grid.html#a42e44f57637498fc898d7ab24deec496">   72</a></span>  <span class="keyword">const</span> CellData&amp; <a class="code hl_function" href="../../dc/d30/classxii_game_grid.html#a42e44f57637498fc898d7ab24deec496">GetCell</a>(<span class="keyword">const</span> <a class="code hl_class" href="../../d1/d0d/classxii_vec2_template.html">xiiVec2I32</a>&amp; vCoord)<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_Cells[<a class="code hl_function" href="../../dc/d30/classxii_game_grid.html#a616cc427a4bf81aaed8eded4870c026f">ConvertCellCoordinateToIndex</a>(vCoord)]; }</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno"><a class="line" href="../../dc/d30/classxii_game_grid.html#abd3d60b9db2afd41f376ee5da260a8e8">   75</a></span>  <a class="code hl_class" href="../../d1/d0d/classxii_vec2_template.html">xiiVec2I32</a> <a class="code hl_function" href="../../dc/d30/classxii_game_grid.html#abd3d60b9db2afd41f376ee5da260a8e8">ConvertCellIndexToCoordinate</a>(xiiUInt32 uiIndex)<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code hl_class" href="../../d1/d0d/classxii_vec2_template.html">xiiVec2I32</a>(uiIndex % m_uiGridSizeX, uiIndex / m_uiGridSizeX); }</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno"><a class="line" href="../../dc/d30/classxii_game_grid.html#a616cc427a4bf81aaed8eded4870c026f">   78</a></span>  xiiUInt32 <a class="code hl_function" href="../../dc/d30/classxii_game_grid.html#a616cc427a4bf81aaed8eded4870c026f">ConvertCellCoordinateToIndex</a>(<span class="keyword">const</span> <a class="code hl_class" href="../../d1/d0d/classxii_vec2_template.html">xiiVec2I32</a>&amp; vCoord)<span class="keyword"> const </span>{ <span class="keywordflow">return</span> vCoord.y * m_uiGridSizeX + vCoord.x; }</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span> </div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>  <a class="code hl_class" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3</a> <a class="code hl_function" href="../../dc/d30/classxii_game_grid.html#a264ef87945c0a6d874ab5c86ebec51fe">GetCellWorldSpaceOrigin</a>(<span class="keyword">const</span> <a class="code hl_class" href="../../d1/d0d/classxii_vec2_template.html">xiiVec2I32</a>&amp; vCoord) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>  <a class="code hl_class" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3</a> GetCellLocalSpaceOrigin(<span class="keyword">const</span> <a class="code hl_class" href="../../d1/d0d/classxii_vec2_template.html">xiiVec2I32</a>&amp; vCoord) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span> </div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>  <a class="code hl_class" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3</a> <a class="code hl_function" href="../../dc/d30/classxii_game_grid.html#a0ff728bdea6932d474a2f66075828a5e">GetCellWorldSpaceCenter</a>(<span class="keyword">const</span> <a class="code hl_class" href="../../d1/d0d/classxii_vec2_template.html">xiiVec2I32</a>&amp; vCoord) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>  <a class="code hl_class" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3</a> GetCellLocalSpaceCenter(<span class="keyword">const</span> <a class="code hl_class" href="../../d1/d0d/classxii_vec2_template.html">xiiVec2I32</a>&amp; vCoord) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span> </div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="../../dc/d30/classxii_game_grid.html#ae018a1397ec7d8ef5ac8c3bc075a02c2">IsValidCellCoordinate</a>(<span class="keyword">const</span> <a class="code hl_class" href="../../d1/d0d/classxii_vec2_template.html">xiiVec2I32</a>&amp; vCoord) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="../../dc/d30/classxii_game_grid.html#a05de955f10dd942b3c0b82dae372909d">PickCell</a>(<span class="keyword">const</span> <a class="code hl_class" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3</a>&amp; vRayStartPos, <span class="keyword">const</span> <a class="code hl_class" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3</a>&amp; vRayDirNorm, <a class="code hl_class" href="../../d1/d0d/classxii_vec2_template.html">xiiVec2I32</a>* out_pCellCoord, <a class="code hl_class" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3</a>* out_pIntersection = <span class="keyword">nullptr</span>) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span> </div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno"><a class="line" href="../../dc/d30/classxii_game_grid.html#ab3084a8df7f2f4b42ea317c58c70f8cf">   97</a></span>  <span class="keyword">const</span> <a class="code hl_class" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3</a>&amp; <a class="code hl_function" href="../../dc/d30/classxii_game_grid.html#ab3084a8df7f2f4b42ea317c58c70f8cf">GetWorldSpaceOrigin</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_vWorldSpaceOrigin; }</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span> </div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno"><a class="line" href="../../dc/d30/classxii_game_grid.html#adaed0af58f7dbcafb63a5435459a6397">  100</a></span>  <span class="keyword">const</span> <a class="code hl_class" href="../../d3/d74/classxii_mat3_template.html">xiiMat3</a>&amp; <a class="code hl_function" href="../../dc/d30/classxii_game_grid.html#adaed0af58f7dbcafb63a5435459a6397">GetRotationToWorldSpace</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_mRotateToWorldspace; }</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span> </div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno"><a class="line" href="../../dc/d30/classxii_game_grid.html#ab5da543b30cfc9677cec7f59c955e6dc">  103</a></span>  <span class="keyword">const</span> <a class="code hl_class" href="../../d3/d74/classxii_mat3_template.html">xiiMat3</a>&amp; <a class="code hl_function" href="../../dc/d30/classxii_game_grid.html#ab5da543b30cfc9677cec7f59c955e6dc">GetRotationToGridSpace</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_mRotateToGridspace; }</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span> </div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="../../dc/d30/classxii_game_grid.html#a310c9a54c4d306cffffae8a1e69aa738">GetRayIntersection</a>(<span class="keyword">const</span> <a class="code hl_class" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3</a>&amp; vRayStartWorldSpace, <span class="keyword">const</span> <a class="code hl_class" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3</a>&amp; vRayDirNormalizedWorldSpace, <span class="keywordtype">float</span> fMaxLength, <span class="keywordtype">float</span>&amp; out_fIntersection, <a class="code hl_class" href="../../d1/d0d/classxii_vec2_template.html">xiiVec2I32</a>&amp; out_vCellCoord) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span> </div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="../../dc/d30/classxii_game_grid.html#a3c197e964fcd4c22f31ccdf2a99b53a9">GetRayIntersectionExpandedBBox</a>(<span class="keyword">const</span> <a class="code hl_class" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3</a>&amp; vRayStartWorldSpace, <span class="keyword">const</span> <a class="code hl_class" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3</a>&amp; vRayDirNormalizedWorldSpace, <span class="keywordtype">float</span> fMaxLength, <span class="keywordtype">float</span>&amp; out_fIntersection, <span class="keyword">const</span> <a class="code hl_class" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3</a>&amp; vExpandBBoxByThis) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span> </div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>  xiiUInt16 m_uiGridSizeX;</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>  xiiUInt16 m_uiGridSizeY;</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span> </div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>  <a class="code hl_class" href="../../d3/d74/classxii_mat3_template.html">xiiMat3</a> m_mRotateToWorldspace;</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>  <a class="code hl_class" href="../../d3/d74/classxii_mat3_template.html">xiiMat3</a> m_mRotateToGridspace;</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span> </div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>  <a class="code hl_class" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3</a> m_vWorldSpaceOrigin;</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>  <a class="code hl_class" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3</a> m_vLocalSpaceCellSize;</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>  <a class="code hl_class" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3</a> m_vInverseLocalSpaceCellSize;</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span> </div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>  <a class="code hl_class" href="../../dc/da4/classxii_dynamic_array.html">xiiDynamicArray&lt;CellData&gt;</a> m_Cells;</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>};</div>
+</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span> </div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span><span class="preprocessor">#include &lt;Utilities/DataStructures/Implementation/GameGrid_inl.h&gt;</span></div>
+<div class="ttc" id="aclassxii_bounding_box_template_html"><div class="ttname"><a href="../../d2/dd6/classxii_bounding_box_template.html">xiiBoundingBoxTemplate&lt; float &gt;</a></div></div>
+<div class="ttc" id="aclassxii_dynamic_array_html"><div class="ttname"><a href="../../dc/da4/classxii_dynamic_array.html">xiiDynamicArray</a></div><div class="ttdef"><b>Definition</b> DynamicArray.h:81</div></div>
+<div class="ttc" id="aclassxii_game_grid_html"><div class="ttname"><a href="../../dc/d30/classxii_game_grid.html">xiiGameGrid</a></div><div class="ttdoc">xiiGameGrid is a general purpose 2D grid structure that has several convenience functions which are o...</div><div class="ttdef"><b>Definition</b> GameGrid.h:13</div></div>
+<div class="ttc" id="aclassxii_game_grid_html_a0259a8eed6ec1405402e187f15ed9984"><div class="ttname"><a href="../../dc/d30/classxii_game_grid.html#a0259a8eed6ec1405402e187f15ed9984">xiiGameGrid::Orientation</a></div><div class="ttdeci">Orientation</div><div class="ttdef"><b>Definition</b> GameGrid.h:16</div></div>
+<div class="ttc" id="aclassxii_game_grid_html_a0259a8eed6ec1405402e187f15ed9984a94558a771e5c96d89bcd0afcb3491085"><div class="ttname"><a href="../../dc/d30/classxii_game_grid.html#a0259a8eed6ec1405402e187f15ed9984a94558a771e5c96d89bcd0afcb3491085">xiiGameGrid::InPlaneXZ</a></div><div class="ttdeci">@ InPlaneXZ</div><div class="ttdoc">The grid is expected to lie in the XZ plane in world-space (when Y is up, this is similar to a top do...</div><div class="ttdef"><b>Definition</b> GameGrid.h:18</div></div>
+<div class="ttc" id="aclassxii_game_grid_html_a0259a8eed6ec1405402e187f15ed9984a9d95222d1aef6288bb42b17369fc7c56"><div class="ttname"><a href="../../dc/d30/classxii_game_grid.html#a0259a8eed6ec1405402e187f15ed9984a9d95222d1aef6288bb42b17369fc7c56">xiiGameGrid::InPlaneXY</a></div><div class="ttdeci">@ InPlaneXY</div><div class="ttdoc">The grid is expected to lie in the XY plane in world-space (when Y is up, this is similar to a 2D sid...</div><div class="ttdef"><b>Definition</b> GameGrid.h:17</div></div>
+<div class="ttc" id="aclassxii_game_grid_html_a0259a8eed6ec1405402e187f15ed9984affd7a1aaeec7926e0acaab4918fa9148"><div class="ttname"><a href="../../dc/d30/classxii_game_grid.html#a0259a8eed6ec1405402e187f15ed9984affd7a1aaeec7926e0acaab4918fa9148">xiiGameGrid::InPlaneXminusZ</a></div><div class="ttdeci">@ InPlaneXminusZ</div><div class="ttdoc">The grid is expected to lie in the XZ plane in world-space (when Y is up, this is similar to a top do...</div><div class="ttdef"><b>Definition</b> GameGrid.h:19</div></div>
+<div class="ttc" id="aclassxii_game_grid_html_a05de955f10dd942b3c0b82dae372909d"><div class="ttname"><a href="../../dc/d30/classxii_game_grid.html#a05de955f10dd942b3c0b82dae372909d">xiiGameGrid::PickCell</a></div><div class="ttdeci">bool PickCell(const xiiVec3 &amp;vRayStartPos, const xiiVec3 &amp;vRayDirNorm, xiiVec2I32 *out_pCellCoord, xiiVec3 *out_pIntersection=nullptr) const</div><div class="ttdoc">Casts a world space ray through the grid and determines which cell is hit (if any).</div><div class="ttdef"><b>Definition</b> GameGrid_inl.h:100</div></div>
+<div class="ttc" id="aclassxii_game_grid_html_a0ff728bdea6932d474a2f66075828a5e"><div class="ttname"><a href="../../dc/d30/classxii_game_grid.html#a0ff728bdea6932d474a2f66075828a5e">xiiGameGrid::GetCellWorldSpaceCenter</a></div><div class="ttdeci">xiiVec3 GetCellWorldSpaceCenter(const xiiVec2I32 &amp;vCoord) const</div><div class="ttdoc">Returns the center world space position of the cell with the given coordinates.</div><div class="ttdef"><b>Definition</b> GameGrid_inl.h:82</div></div>
+<div class="ttc" id="aclassxii_game_grid_html_a264ef87945c0a6d874ab5c86ebec51fe"><div class="ttname"><a href="../../dc/d30/classxii_game_grid.html#a264ef87945c0a6d874ab5c86ebec51fe">xiiGameGrid::GetCellWorldSpaceOrigin</a></div><div class="ttdeci">xiiVec3 GetCellWorldSpaceOrigin(const xiiVec2I32 &amp;vCoord) const</div><div class="ttdoc">Returns the lower left world space position of the cell with the given coordinates.</div><div class="ttdef"><b>Definition</b> GameGrid_inl.h:70</div></div>
+<div class="ttc" id="aclassxii_game_grid_html_a27c03dc47e231198ef7e4d09676da697"><div class="ttname"><a href="../../dc/d30/classxii_game_grid.html#a27c03dc47e231198ef7e4d09676da697">xiiGameGrid::CreateGrid</a></div><div class="ttdeci">void CreateGrid(xiiUInt16 uiSizeX, xiiUInt16 uiSizeY)</div><div class="ttdoc">Clears all data and reallocates the grid with the given dimensions.</div><div class="ttdef"><b>Definition</b> GameGrid_inl.h:18</div></div>
+<div class="ttc" id="aclassxii_game_grid_html_a310c9a54c4d306cffffae8a1e69aa738"><div class="ttname"><a href="../../dc/d30/classxii_game_grid.html#a310c9a54c4d306cffffae8a1e69aa738">xiiGameGrid::GetRayIntersection</a></div><div class="ttdeci">bool GetRayIntersection(const xiiVec3 &amp;vRayStartWorldSpace, const xiiVec3 &amp;vRayDirNormalizedWorldSpace, float fMaxLength, float &amp;out_fIntersection, xiiVec2I32 &amp;out_vCellCoord) const</div><div class="ttdoc">Tests where and at which cell the given world space ray intersects the grids bounding box.</div><div class="ttdef"><b>Definition</b> GameGrid_inl.h:129</div></div>
+<div class="ttc" id="aclassxii_game_grid_html_a31a35fa2ef139ebc9edaa57f226e403c"><div class="ttname"><a href="../../dc/d30/classxii_game_grid.html#a31a35fa2ef139ebc9edaa57f226e403c">xiiGameGrid::GetWorldBoundingBox</a></div><div class="ttdeci">xiiBoundingBox GetWorldBoundingBox() const</div><div class="ttdoc">Returns the world-space bounding box of the grid, as specified via SetWorldDimensions.</div><div class="ttdef"><b>Definition</b> GameGrid_inl.h:119</div></div>
+<div class="ttc" id="aclassxii_game_grid_html_a3c197e964fcd4c22f31ccdf2a99b53a9"><div class="ttname"><a href="../../dc/d30/classxii_game_grid.html#a3c197e964fcd4c22f31ccdf2a99b53a9">xiiGameGrid::GetRayIntersectionExpandedBBox</a></div><div class="ttdeci">bool GetRayIntersectionExpandedBBox(const xiiVec3 &amp;vRayStartWorldSpace, const xiiVec3 &amp;vRayDirNormalizedWorldSpace, float fMaxLength, float &amp;out_fIntersection, const xiiVec3 &amp;vExpandBBoxByThis) const</div><div class="ttdoc">Tests whether a ray would hit the grid bounding box, if it were expanded by a constant.</div><div class="ttdef"><b>Definition</b> GameGrid_inl.h:165</div></div>
+<div class="ttc" id="aclassxii_game_grid_html_a3c7d45a2633043eb58d969b879648893"><div class="ttname"><a href="../../dc/d30/classxii_game_grid.html#a3c7d45a2633043eb58d969b879648893">xiiGameGrid::GetCell</a></div><div class="ttdeci">CellData &amp; GetCell(xiiUInt32 uiIndex)</div><div class="ttdoc">Gives access to a cell by cell index.</div><div class="ttdef"><b>Definition</b> GameGrid.h:63</div></div>
+<div class="ttc" id="aclassxii_game_grid_html_a42e44f57637498fc898d7ab24deec496"><div class="ttname"><a href="../../dc/d30/classxii_game_grid.html#a42e44f57637498fc898d7ab24deec496">xiiGameGrid::GetCell</a></div><div class="ttdeci">const CellData &amp; GetCell(const xiiVec2I32 &amp;vCoord) const</div><div class="ttdoc">Gives access to a cell by cell coordinates.</div><div class="ttdef"><b>Definition</b> GameGrid.h:72</div></div>
+<div class="ttc" id="aclassxii_game_grid_html_a4a8b835837825ea1f3baf5f91f59629e"><div class="ttname"><a href="../../dc/d30/classxii_game_grid.html#a4a8b835837825ea1f3baf5f91f59629e">xiiGameGrid::GetGridSizeX</a></div><div class="ttdeci">xiiUInt16 GetGridSizeX() const</div><div class="ttdoc">Returns the number of cells along the X axis.</div><div class="ttdef"><b>Definition</b> GameGrid.h:51</div></div>
+<div class="ttc" id="aclassxii_game_grid_html_a4c543cb53aea548170baecf12be953b8"><div class="ttname"><a href="../../dc/d30/classxii_game_grid.html#a4c543cb53aea548170baecf12be953b8">xiiGameGrid::GetCell</a></div><div class="ttdeci">const CellData &amp; GetCell(xiiUInt32 uiIndex) const</div><div class="ttdoc">Gives access to a cell by cell index.</div><div class="ttdef"><b>Definition</b> GameGrid.h:66</div></div>
+<div class="ttc" id="aclassxii_game_grid_html_a53c3e3f68e7e3500e5ebe1d34651223e"><div class="ttname"><a href="../../dc/d30/classxii_game_grid.html#a53c3e3f68e7e3500e5ebe1d34651223e">xiiGameGrid::GetCell</a></div><div class="ttdeci">CellData &amp; GetCell(const xiiVec2I32 &amp;vCoord)</div><div class="ttdoc">Gives access to a cell by cell coordinates.</div><div class="ttdef"><b>Definition</b> GameGrid.h:69</div></div>
+<div class="ttc" id="aclassxii_game_grid_html_a616cc427a4bf81aaed8eded4870c026f"><div class="ttname"><a href="../../dc/d30/classxii_game_grid.html#a616cc427a4bf81aaed8eded4870c026f">xiiGameGrid::ConvertCellCoordinateToIndex</a></div><div class="ttdeci">xiiUInt32 ConvertCellCoordinateToIndex(const xiiVec2I32 &amp;vCoord) const</div><div class="ttdoc">Converts a cell coordinate into a cell index.</div><div class="ttdef"><b>Definition</b> GameGrid.h:78</div></div>
+<div class="ttc" id="aclassxii_game_grid_html_a6cea8755dc38e5b872a6cdacba4b9a10"><div class="ttname"><a href="../../dc/d30/classxii_game_grid.html#a6cea8755dc38e5b872a6cdacba4b9a10">xiiGameGrid::GetNumCells</a></div><div class="ttdeci">xiiUInt32 GetNumCells() const</div><div class="ttdoc">Returns the total number of cells.</div><div class="ttdef"><b>Definition</b> GameGrid.h:60</div></div>
+<div class="ttc" id="aclassxii_game_grid_html_a96675b46e658d61d45b59933c5b420bb"><div class="ttname"><a href="../../dc/d30/classxii_game_grid.html#a96675b46e658d61d45b59933c5b420bb">xiiGameGrid::SetWorldSpaceDimensions</a></div><div class="ttdeci">void SetWorldSpaceDimensions(const xiiVec3 &amp;vLowerLeftCorner, const xiiVec3 &amp;vCellSize, Orientation ori=InPlaneXZ)</div><div class="ttdoc">Sets the lower left position of the grid in world space coordinates and the cell size.</div><div class="ttdef"><b>Definition</b> GameGrid_inl.h:29</div></div>
+<div class="ttc" id="aclassxii_game_grid_html_aa20c5275555db7cd8d4d084d583b4a00"><div class="ttname"><a href="../../dc/d30/classxii_game_grid.html#aa20c5275555db7cd8d4d084d583b4a00">xiiGameGrid::GetGridSizeY</a></div><div class="ttdeci">xiiUInt16 GetGridSizeY() const</div><div class="ttdoc">Returns the number of cells along the Y axis.</div><div class="ttdef"><b>Definition</b> GameGrid.h:54</div></div>
+<div class="ttc" id="aclassxii_game_grid_html_ab3084a8df7f2f4b42ea317c58c70f8cf"><div class="ttname"><a href="../../dc/d30/classxii_game_grid.html#ab3084a8df7f2f4b42ea317c58c70f8cf">xiiGameGrid::GetWorldSpaceOrigin</a></div><div class="ttdeci">const xiiVec3 &amp; GetWorldSpaceOrigin() const</div><div class="ttdoc">Returns the lower left corner position in world space of the grid.</div><div class="ttdef"><b>Definition</b> GameGrid.h:97</div></div>
+<div class="ttc" id="aclassxii_game_grid_html_ab5da543b30cfc9677cec7f59c955e6dc"><div class="ttname"><a href="../../dc/d30/classxii_game_grid.html#ab5da543b30cfc9677cec7f59c955e6dc">xiiGameGrid::GetRotationToGridSpace</a></div><div class="ttdeci">const xiiMat3 &amp; GetRotationToGridSpace() const</div><div class="ttdoc">Returns the matrix used to rotate coordinates from world space to grid space.</div><div class="ttdef"><b>Definition</b> GameGrid.h:103</div></div>
+<div class="ttc" id="aclassxii_game_grid_html_abd3d60b9db2afd41f376ee5da260a8e8"><div class="ttname"><a href="../../dc/d30/classxii_game_grid.html#abd3d60b9db2afd41f376ee5da260a8e8">xiiGameGrid::ConvertCellIndexToCoordinate</a></div><div class="ttdeci">xiiVec2I32 ConvertCellIndexToCoordinate(xiiUInt32 uiIndex) const</div><div class="ttdoc">Converts a cell index into a 2D cell coordinate.</div><div class="ttdef"><b>Definition</b> GameGrid.h:75</div></div>
+<div class="ttc" id="aclassxii_game_grid_html_ac9cb9c3e177c19476bc0ab837b84e42e"><div class="ttname"><a href="../../dc/d30/classxii_game_grid.html#ac9cb9c3e177c19476bc0ab837b84e42e">xiiGameGrid::GetCellAtWorldPosition</a></div><div class="ttdeci">xiiVec2I32 GetCellAtWorldPosition(const xiiVec3 &amp;vWorldSpacePos) const</div><div class="ttdoc">Returns the coordinate of the cell at the given world-space position. The world space dimension must ...</div><div class="ttdef"><b>Definition</b> GameGrid_inl.h:61</div></div>
+<div class="ttc" id="aclassxii_game_grid_html_adaed0af58f7dbcafb63a5435459a6397"><div class="ttname"><a href="../../dc/d30/classxii_game_grid.html#adaed0af58f7dbcafb63a5435459a6397">xiiGameGrid::GetRotationToWorldSpace</a></div><div class="ttdeci">const xiiMat3 &amp; GetRotationToWorldSpace() const</div><div class="ttdoc">Returns the matrix used to rotate coordinates from grid space to world space.</div><div class="ttdef"><b>Definition</b> GameGrid.h:100</div></div>
+<div class="ttc" id="aclassxii_game_grid_html_ae018a1397ec7d8ef5ac8c3bc075a02c2"><div class="ttname"><a href="../../dc/d30/classxii_game_grid.html#ae018a1397ec7d8ef5ac8c3bc075a02c2">xiiGameGrid::IsValidCellCoordinate</a></div><div class="ttdeci">bool IsValidCellCoordinate(const xiiVec2I32 &amp;vCoord) const</div><div class="ttdoc">Checks whether the given cell coordinate is inside valid ranges.</div><div class="ttdef"><b>Definition</b> GameGrid_inl.h:94</div></div>
+<div class="ttc" id="aclassxii_game_grid_html_af6bc408333aba798277494525df9a243"><div class="ttname"><a href="../../dc/d30/classxii_game_grid.html#af6bc408333aba798277494525df9a243">xiiGameGrid::GetCellSize</a></div><div class="ttdeci">xiiVec3 GetCellSize() const</div><div class="ttdoc">Returns the size of each cell.</div><div class="ttdef"><b>Definition</b> GameGrid.h:44</div></div>
+<div class="ttc" id="aclassxii_mat3_template_html"><div class="ttname"><a href="../../d3/d74/classxii_mat3_template.html">xiiMat3Template&lt; float &gt;</a></div></div>
+<div class="ttc" id="aclassxii_vec2_template_html"><div class="ttname"><a href="../../d1/d0d/classxii_vec2_template.html">xiiVec2Template&lt; xiiInt32 &gt;</a></div></div>
+<div class="ttc" id="aclassxii_vec3_template_html"><div class="ttname"><a href="../../d9/d9a/classxii_vec3_template.html">xiiVec3Template&lt; float &gt;</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.html">home</a></li><li class="navelem"><a class="el" href="../../dir_1036706e55c22cab35bc1c58ee689f1d.html">runner</a></li><li class="navelem"><a class="el" href="../../dir_629f8151d55d307162ff2d619fb1783d.html">work</a></li><li class="navelem"><a class="el" href="../../dir_1ddc44fe1263a8c7935fa6130b7d9499.html">XII</a></li><li class="navelem"><a class="el" href="../../dir_2c1b6808f12952f4c36e05ba7068379a.html">XII</a></li><li class="navelem"><a class="el" href="../../dir_b5a1c4ecfca018ad24b729e213296d41.html">Source</a></li><li class="navelem"><a class="el" href="../../dir_e321052006a51284e67389ab20037e7c.html">Engine</a></li><li class="navelem"><a class="el" href="../../dir_9ee72279ab281f6aaaae1c60885125b9.html">Utilities</a></li><li class="navelem"><a class="el" href="../../dir_d5cf2893ed31c2d648feac176a3c2f32.html">DataStructures</a></li><li class="navelem"><b>GameGrid.h</b></li>
+    <li class="footer">Generated on Mon Jul 1 2024 23:53:12 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+  </ul>
+</div>
+</body>
+</html>

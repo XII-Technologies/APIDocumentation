@@ -1,0 +1,598 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.11.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<!-- BEGIN opengraph metadata -->
+<meta property="og:title" content="XII" />
+<meta property="og:image" content="../../XII-Logo.png" />
+<meta property="og:description" content="An advanced high-performance simulation engine." />
+<meta property="og:url" content="https://www.xiitechnologies.com" />
+<!-- END opengraph metadata -->
+<!-- BEGIN twitter metadata -->
+<meta name="twitter:image:src" content="../../XII-Logo.png" />
+<meta name="twitter:title" content="XII" />
+<meta name="twitter:description" content="An advanced high-performance simulation engine." />
+<!-- END twitter metadata -->
+<title>XII: xiiGlobalBlackboardComponent Class Reference</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link rel="icon" type="image/svg+xml" href="logo.drawio.svg"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="../../toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../custom.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<a href="https://github.com/jothepro/doxygen-awesome-css" class="github-corner" title="View source on GitHub" target="_blank" rel="noopener noreferrer">
+    <svg viewBox="0 0 250 250" width="40" height="40" style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+    <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="../../XII-Logo.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">XII
+   &#160;<span id="projectnumber">1.0.0</span>
+   </div>
+   <div id="projectbrief">A high-performance simulation engine.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(1); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.html','Search',true);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('d1/d59/classxii_global_blackboard_component.html','../../'); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="../../d7/d0a/classxii_global_blackboard_component-members.html">List of all members</a>  </div>
+  <div class="headertitle"><div class="title">xiiGlobalBlackboardComponent Class Reference</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>This component references a global blackboard by name. If necessary, the blackboard will be created.  
+ <a href="#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="../../da/d71/_blackboard_component_8h_source.html">BlackboardComponent.h</a>&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for xiiGlobalBlackboardComponent:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d2/d2e/classxii_global_blackboard_component__inherit__graph.svg" width="239" height="330"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">legend</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a7fbf203bff16d764d6810aee07265198" id="r_a7fbf203bff16d764d6810aee07265198"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7fbf203bff16d764d6810aee07265198">SerializeComponent</a> (<a class="el" href="../../de/d8c/classxii_world_writer.html">xiiWorldWriter</a> &amp;inout_stream) const override</td></tr>
+<tr class="memdesc:a7fbf203bff16d764d6810aee07265198"><td class="mdescLeft">&#160;</td><td class="mdescRight">Override this to save the current state of the component to the given stream.  <br /></td></tr>
+<tr class="separator:a7fbf203bff16d764d6810aee07265198"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68be5a00970b112bb73a35859f4b6c24" id="r_a68be5a00970b112bb73a35859f4b6c24"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a68be5a00970b112bb73a35859f4b6c24">DeserializeComponent</a> (<a class="el" href="../../df/df8/classxii_world_reader.html">xiiWorldReader</a> &amp;inout_stream) override</td></tr>
+<tr class="memdesc:a68be5a00970b112bb73a35859f4b6c24"><td class="mdescLeft">&#160;</td><td class="mdescRight">Override this to load the current state of the component from the given stream.  <br /></td></tr>
+<tr class="separator:a68be5a00970b112bb73a35859f4b6c24"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc7ccb8ffa291fa250e0b18d9c9298d7" id="r_acc7ccb8ffa291fa250e0b18d9c9298d7"><td class="memItemLeft" align="right" valign="top"><a id="acc7ccb8ffa291fa250e0b18d9c9298d7" name="acc7ccb8ffa291fa250e0b18d9c9298d7"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>xiiGlobalBlackboardComponent</b> (<a class="el" href="../../d1/d59/classxii_global_blackboard_component.html">xiiGlobalBlackboardComponent</a> &amp;&amp;other)</td></tr>
+<tr class="separator:acc7ccb8ffa291fa250e0b18d9c9298d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a761d0b9c164520034a4cd2063f48454a" id="r_a761d0b9c164520034a4cd2063f48454a"><td class="memItemLeft" align="right" valign="top"><a id="a761d0b9c164520034a4cd2063f48454a" name="a761d0b9c164520034a4cd2063f48454a"></a>
+<a class="el" href="../../d1/d59/classxii_global_blackboard_component.html">xiiGlobalBlackboardComponent</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (<a class="el" href="../../d1/d59/classxii_global_blackboard_component.html">xiiGlobalBlackboardComponent</a> &amp;&amp;other)</td></tr>
+<tr class="separator:a761d0b9c164520034a4cd2063f48454a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f738cca8f06870aa8648390e1b213ea" id="r_a7f738cca8f06870aa8648390e1b213ea"><td class="memItemLeft" align="right" valign="top"><a id="a7f738cca8f06870aa8648390e1b213ea" name="a7f738cca8f06870aa8648390e1b213ea"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetBlackboardName</b> (const char *szName)</td></tr>
+<tr class="separator:a7f738cca8f06870aa8648390e1b213ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a711e29ae5f06a129fcb499e780e31d48" id="r_a711e29ae5f06a129fcb499e780e31d48"><td class="memItemLeft" align="right" valign="top"><a id="a711e29ae5f06a129fcb499e780e31d48" name="a711e29ae5f06a129fcb499e780e31d48"></a>
+const char *&#160;</td><td class="memItemRight" valign="bottom"><b>GetBlackboardName</b> () const</td></tr>
+<tr class="separator:a711e29ae5f06a129fcb499e780e31d48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classxii_blackboard_component"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_classxii_blackboard_component')"><img src="../../closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="../../d1/d4e/classxii_blackboard_component.html">xiiBlackboardComponent</a></td></tr>
+<tr class="memitem:a155da1a81db8b302656f81caab5424d7 inherit pub_methods_classxii_blackboard_component" id="r_a155da1a81db8b302656f81caab5424d7"><td class="memItemLeft" align="right" valign="top">
+const <a class="el" href="../../d8/d9b/classxii_shared_ptr.html">xiiSharedPtr</a>&lt; <a class="el" href="../../d7/d47/classxii_blackboard.html">xiiBlackboard</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetBoard</b> ()</td></tr>
+<tr class="memdesc:a155da1a81db8b302656f81caab5424d7 inherit pub_methods_classxii_blackboard_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the blackboard owned by this component. <br /></td></tr>
+<tr class="separator:a155da1a81db8b302656f81caab5424d7 inherit pub_methods_classxii_blackboard_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab03e6ad9b1ee7f91775ec4e3839aa274 inherit pub_methods_classxii_blackboard_component" id="r_ab03e6ad9b1ee7f91775ec4e3839aa274"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="../../d8/d9b/classxii_shared_ptr.html">xiiSharedPtr</a>&lt; const <a class="el" href="../../d7/d47/classxii_blackboard.html">xiiBlackboard</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetBoard</b> () const</td></tr>
+<tr class="separator:ab03e6ad9b1ee7f91775ec4e3839aa274 inherit pub_methods_classxii_blackboard_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05e9c396c1336a3c4d178ae3965b597c inherit pub_methods_classxii_blackboard_component" id="r_a05e9c396c1336a3c4d178ae3965b597c"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetShowDebugInfo</b> (bool bShow)</td></tr>
+<tr class="separator:a05e9c396c1336a3c4d178ae3965b597c inherit pub_methods_classxii_blackboard_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb6b017ba0c4717e669f5cf839e4c85f inherit pub_methods_classxii_blackboard_component" id="r_aeb6b017ba0c4717e669f5cf839e4c85f"><td class="memItemLeft" align="right" valign="top">
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>GetShowDebugInfo</b> () const</td></tr>
+<tr class="separator:aeb6b017ba0c4717e669f5cf839e4c85f inherit pub_methods_classxii_blackboard_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4ad1926d5d4522d65d5b5282dde9b1a inherit pub_methods_classxii_blackboard_component" id="r_ae4ad1926d5d4522d65d5b5282dde9b1a"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetTemplateFile</b> (const char *szName)</td></tr>
+<tr class="separator:ae4ad1926d5d4522d65d5b5282dde9b1a inherit pub_methods_classxii_blackboard_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac815eb79b856d33adf37c6abdec25984 inherit pub_methods_classxii_blackboard_component" id="r_ac815eb79b856d33adf37c6abdec25984"><td class="memItemLeft" align="right" valign="top">
+const char *&#160;</td><td class="memItemRight" valign="bottom"><b>GetTemplateFile</b> () const</td></tr>
+<tr class="separator:ac815eb79b856d33adf37c6abdec25984 inherit pub_methods_classxii_blackboard_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5bedf6c9842a74560f5dfdb2d384350 inherit pub_methods_classxii_blackboard_component" id="r_ac5bedf6c9842a74560f5dfdb2d384350"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetEntryValue</b> (const char *szName, const <a class="el" href="../../db/d1a/classxii_variant.html">xiiVariant</a> &amp;value)</td></tr>
+<tr class="separator:ac5bedf6c9842a74560f5dfdb2d384350 inherit pub_methods_classxii_blackboard_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26f42098dc6182cd8a74afd0d30441ad inherit pub_methods_classxii_blackboard_component" id="r_a26f42098dc6182cd8a74afd0d30441ad"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="../../db/d1a/classxii_variant.html">xiiVariant</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetEntryValue</b> (const char *szName) const</td></tr>
+<tr class="separator:a26f42098dc6182cd8a74afd0d30441ad inherit pub_methods_classxii_blackboard_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classxii_component"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_classxii_component')"><img src="../../closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="../../db/d60/classxii_component.html">xiiComponent</a></td></tr>
+<tr class="memitem:a650a7ec0f1f32f320e41d41274c59129 inherit pub_methods_classxii_component" id="r_a650a7ec0f1f32f320e41d41274c59129"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d60/classxii_component.html#a650a7ec0f1f32f320e41d41274c59129">SetActiveFlag</a> (bool bEnabled)</td></tr>
+<tr class="memdesc:a650a7ec0f1f32f320e41d41274c59129 inherit pub_methods_classxii_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the active flag of the component, which affects its active state.  <br /></td></tr>
+<tr class="separator:a650a7ec0f1f32f320e41d41274c59129 inherit pub_methods_classxii_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad58f243cebb8f50c84f793c93eab5645 inherit pub_methods_classxii_component" id="r_ad58f243cebb8f50c84f793c93eab5645"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d60/classxii_component.html#ad58f243cebb8f50c84f793c93eab5645">GetActiveFlag</a> () const</td></tr>
+<tr class="memdesc:ad58f243cebb8f50c84f793c93eab5645 inherit pub_methods_classxii_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether the 'active flag' is set on this component. Note that this does not mean that the component is also 'active'.  <br /></td></tr>
+<tr class="separator:ad58f243cebb8f50c84f793c93eab5645 inherit pub_methods_classxii_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1bbb9dd59cbb51462694a94f1108fce inherit pub_methods_classxii_component" id="r_ab1bbb9dd59cbb51462694a94f1108fce"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d60/classxii_component.html#ab1bbb9dd59cbb51462694a94f1108fce">IsActive</a> () const</td></tr>
+<tr class="memdesc:ab1bbb9dd59cbb51462694a94f1108fce inherit pub_methods_classxii_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether this component is in an active state.  <br /></td></tr>
+<tr class="separator:ab1bbb9dd59cbb51462694a94f1108fce inherit pub_methods_classxii_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1868eab3e096e1e46fddbce4d2f08918 inherit pub_methods_classxii_component" id="r_a1868eab3e096e1e46fddbce4d2f08918"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d60/classxii_component.html#a1868eab3e096e1e46fddbce4d2f08918">IsActiveAndInitialized</a> () const</td></tr>
+<tr class="memdesc:a1868eab3e096e1e46fddbce4d2f08918 inherit pub_methods_classxii_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether this component is active and initialized.  <br /></td></tr>
+<tr class="separator:a1868eab3e096e1e46fddbce4d2f08918 inherit pub_methods_classxii_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4903100bd56d97c4c9ae18829364c46a inherit pub_methods_classxii_component" id="r_a4903100bd56d97c4c9ae18829364c46a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d60/classxii_component.html#a4903100bd56d97c4c9ae18829364c46a">IsActiveAndSimulating</a> () const</td></tr>
+<tr class="memdesc:a4903100bd56d97c4c9ae18829364c46a inherit pub_methods_classxii_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether the component is currently active and simulation has been started as well.  <br /></td></tr>
+<tr class="separator:a4903100bd56d97c4c9ae18829364c46a inherit pub_methods_classxii_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3e5e35ab072d95be93417ffeaad9f82 inherit pub_methods_classxii_component" id="r_af3e5e35ab072d95be93417ffeaad9f82"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="../../d4/d61/classxii_component_manager_base.html">xiiComponentManagerBase</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetOwningManager</b> ()</td></tr>
+<tr class="memdesc:af3e5e35ab072d95be93417ffeaad9f82 inherit pub_methods_classxii_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the corresponding manager for this component. <br /></td></tr>
+<tr class="separator:af3e5e35ab072d95be93417ffeaad9f82 inherit pub_methods_classxii_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43cdfb7bfe2c00b9ec483a0d4387ab18 inherit pub_methods_classxii_component" id="r_a43cdfb7bfe2c00b9ec483a0d4387ab18"><td class="memItemLeft" align="right" valign="top">
+const <a class="el" href="../../d4/d61/classxii_component_manager_base.html">xiiComponentManagerBase</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetOwningManager</b> () const</td></tr>
+<tr class="memdesc:a43cdfb7bfe2c00b9ec483a0d4387ab18 inherit pub_methods_classxii_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the corresponding manager for this component. <br /></td></tr>
+<tr class="separator:a43cdfb7bfe2c00b9ec483a0d4387ab18 inherit pub_methods_classxii_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15424d5316d1c1fc153aa98572282b28 inherit pub_methods_classxii_component" id="r_a15424d5316d1c1fc153aa98572282b28"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="../../d0/d91/classxii_game_object.html">xiiGameObject</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetOwner</b> ()</td></tr>
+<tr class="memdesc:a15424d5316d1c1fc153aa98572282b28 inherit pub_methods_classxii_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the owner game object if the component is attached to one or nullptr. <br /></td></tr>
+<tr class="separator:a15424d5316d1c1fc153aa98572282b28 inherit pub_methods_classxii_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1e6beeb159a5461f713ce159a52de86 inherit pub_methods_classxii_component" id="r_ab1e6beeb159a5461f713ce159a52de86"><td class="memItemLeft" align="right" valign="top">
+const <a class="el" href="../../d0/d91/classxii_game_object.html">xiiGameObject</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetOwner</b> () const</td></tr>
+<tr class="memdesc:ab1e6beeb159a5461f713ce159a52de86 inherit pub_methods_classxii_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the owner game object if the component is attached to one or nullptr. <br /></td></tr>
+<tr class="separator:ab1e6beeb159a5461f713ce159a52de86 inherit pub_methods_classxii_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1790c0ad7dd84037eebf7917c5a37721 inherit pub_methods_classxii_component" id="r_a1790c0ad7dd84037eebf7917c5a37721"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="../../d6/d89/classxii_world.html">xiiWorld</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetWorld</b> ()</td></tr>
+<tr class="memdesc:a1790c0ad7dd84037eebf7917c5a37721 inherit pub_methods_classxii_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the corresponding world for this component. <br /></td></tr>
+<tr class="separator:a1790c0ad7dd84037eebf7917c5a37721 inherit pub_methods_classxii_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9c52958e459f23162a2608306d03a94 inherit pub_methods_classxii_component" id="r_ae9c52958e459f23162a2608306d03a94"><td class="memItemLeft" align="right" valign="top">
+const <a class="el" href="../../d6/d89/classxii_world.html">xiiWorld</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetWorld</b> () const</td></tr>
+<tr class="memdesc:ae9c52958e459f23162a2608306d03a94 inherit pub_methods_classxii_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the corresponding world for this component. <br /></td></tr>
+<tr class="separator:ae9c52958e459f23162a2608306d03a94 inherit pub_methods_classxii_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acfa80208ef9797c9b981d0e0810983d1 inherit pub_methods_classxii_component" id="r_acfa80208ef9797c9b981d0e0810983d1"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="../../da/d8d/structxii_component_handle.html">xiiComponentHandle</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetHandle</b> () const</td></tr>
+<tr class="memdesc:acfa80208ef9797c9b981d0e0810983d1 inherit pub_methods_classxii_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a handle to this component. <br /></td></tr>
+<tr class="separator:acfa80208ef9797c9b981d0e0810983d1 inherit pub_methods_classxii_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8646c14434b92c3f341a03dc38d92a92 inherit pub_methods_classxii_component" id="r_a8646c14434b92c3f341a03dc38d92a92"><td class="memItemLeft" align="right" valign="top">
+xiiUInt32&#160;</td><td class="memItemRight" valign="bottom"><b>GetUniqueID</b> () const</td></tr>
+<tr class="memdesc:a8646c14434b92c3f341a03dc38d92a92 inherit pub_methods_classxii_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the unique id for this component. <br /></td></tr>
+<tr class="separator:a8646c14434b92c3f341a03dc38d92a92 inherit pub_methods_classxii_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5109d0be441a3605c0a6433561cb389 inherit pub_methods_classxii_component" id="r_af5109d0be441a3605c0a6433561cb389"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetUniqueID</b> (xiiUInt32 uiUniqueID)</td></tr>
+<tr class="memdesc:af5109d0be441a3605c0a6433561cb389 inherit pub_methods_classxii_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the unique id for this component. <br /></td></tr>
+<tr class="separator:af5109d0be441a3605c0a6433561cb389 inherit pub_methods_classxii_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad447ceab55bc400ab373ca31e2684190 inherit pub_methods_classxii_component" id="r_ad447ceab55bc400ab373ca31e2684190"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><b>EnsureInitialized</b> ()</td></tr>
+<tr class="memdesc:ad447ceab55bc400ab373ca31e2684190 inherit pub_methods_classxii_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ensures that the component is initialized. Must only be called from another component's Initialize callback. <br /></td></tr>
+<tr class="separator:ad447ceab55bc400ab373ca31e2684190 inherit pub_methods_classxii_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64fe5d352205439e419dd66139f8bc7b inherit pub_methods_classxii_component" id="r_a64fe5d352205439e419dd66139f8bc7b"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><b>EnsureSimulationStarted</b> ()</td></tr>
+<tr class="memdesc:a64fe5d352205439e419dd66139f8bc7b inherit pub_methods_classxii_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ensures that the OnSimulationStarted method has been called. Must only be called from another component's OnSimulationStarted callback. <br /></td></tr>
+<tr class="separator:a64fe5d352205439e419dd66139f8bc7b inherit pub_methods_classxii_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea04f38daccdc6df45d4db6a47829d39 inherit pub_methods_classxii_component" id="r_aea04f38daccdc6df45d4db6a47829d39"><td class="memItemLeft" align="right" valign="top">
+XII_ALWAYS_INLINE bool&#160;</td><td class="memItemRight" valign="bottom"><b>SendMessage</b> (<a class="el" href="../../d9/d55/classxii_message.html">xiiMessage</a> &amp;ref_msg)</td></tr>
+<tr class="memdesc:aea04f38daccdc6df45d4db6a47829d39 inherit pub_methods_classxii_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends a message to this component. <br /></td></tr>
+<tr class="separator:aea04f38daccdc6df45d4db6a47829d39 inherit pub_methods_classxii_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27563c08e9865bdb0e544f6535e437e9 inherit pub_methods_classxii_component" id="r_a27563c08e9865bdb0e544f6535e437e9"><td class="memItemLeft" align="right" valign="top">
+XII_ALWAYS_INLINE bool&#160;</td><td class="memItemRight" valign="bottom"><b>SendMessage</b> (<a class="el" href="../../d9/d55/classxii_message.html">xiiMessage</a> &amp;ref_msg) const</td></tr>
+<tr class="separator:a27563c08e9865bdb0e544f6535e437e9 inherit pub_methods_classxii_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0320bd65a29475bd975cd710b4a7a7c inherit pub_methods_classxii_component" id="r_ab0320bd65a29475bd975cd710b4a7a7c"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><b>PostMessage</b> (const <a class="el" href="../../d9/d55/classxii_message.html">xiiMessage</a> &amp;msg, <a class="el" href="../../d7/dc1/structxii_time.html">xiiTime</a> delay=<a class="el" href="../../d7/dc1/structxii_time.html#af50981ed01769e51493ea3d573c007ae">xiiTime::MakeZero</a>(), <a class="el" href="../../dc/de3/structxii_object_msg_queue_type.html#a3d66b91c215db559dd0c20b592406600">xiiObjectMsgQueueType::Enum</a> queueType=<a class="el" href="../../dc/de3/structxii_object_msg_queue_type.html#a3d66b91c215db559dd0c20b592406600a6e15cf406df6d2e05d38fa50e235ffc0">xiiObjectMsgQueueType::NextFrame</a>) const</td></tr>
+<tr class="memdesc:ab0320bd65a29475bd975cd710b4a7a7c inherit pub_methods_classxii_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">Queues the message for the given phase. The message is processed after the given delay in the corresponding phase. <br /></td></tr>
+<tr class="separator:ab0320bd65a29475bd975cd710b4a7a7c inherit pub_methods_classxii_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38bdcf00886279d05b71bcd76dcf22c7 inherit pub_methods_classxii_component" id="r_a38bdcf00886279d05b71bcd76dcf22c7"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d60/classxii_component.html#a38bdcf00886279d05b71bcd76dcf22c7">HandlesMessage</a> (const <a class="el" href="../../d9/d55/classxii_message.html">xiiMessage</a> &amp;msg) const</td></tr>
+<tr class="memdesc:a38bdcf00886279d05b71bcd76dcf22c7 inherit pub_methods_classxii_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether the given Message is handled by this component.  <br /></td></tr>
+<tr class="separator:a38bdcf00886279d05b71bcd76dcf22c7 inherit pub_methods_classxii_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a558ce4bebcb14cde996f1130b966fb inherit pub_methods_classxii_component" id="r_a7a558ce4bebcb14cde996f1130b966fb"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetUserFlag</b> (xiiUInt8 uiFlagIndex, bool bSet)</td></tr>
+<tr class="memdesc:a7a558ce4bebcb14cde996f1130b966fb inherit pub_methods_classxii_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">Be careful to check which flags may already be in use by base classes. <br /></td></tr>
+<tr class="separator:a7a558ce4bebcb14cde996f1130b966fb inherit pub_methods_classxii_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af98d2a1f9a2ec91c97337b774045331c inherit pub_methods_classxii_component" id="r_af98d2a1f9a2ec91c97337b774045331c"><td class="memItemLeft" align="right" valign="top">
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>GetUserFlag</b> (xiiUInt8 uiFlagIndex) const</td></tr>
+<tr class="memdesc:af98d2a1f9a2ec91c97337b774045331c inherit pub_methods_classxii_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves a custom flag. Index must be between 0 and 7. <br /></td></tr>
+<tr class="separator:af98d2a1f9a2ec91c97337b774045331c inherit pub_methods_classxii_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7473bb44f8770af1dd9fc1ee1eb8b168 inherit pub_methods_classxii_component" id="r_a7473bb44f8770af1dd9fc1ee1eb8b168"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetCreatedByPrefab</b> ()</td></tr>
+<tr class="memdesc:a7473bb44f8770af1dd9fc1ee1eb8b168 inherit pub_methods_classxii_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds <a class="el" href="../../dd/d15/structxii_object_flags.html#ab84c26953c65707e422df64a7fb08c30acd065fa36ee7373201f20f81ef6d5277" title="Such flagged objects and components are ignored during scene export (see xiiWorldWriter) and will be ...">xiiObjectFlags::CreatedByPrefab</a> to the component. See the flag for details. <br /></td></tr>
+<tr class="separator:a7473bb44f8770af1dd9fc1ee1eb8b168 inherit pub_methods_classxii_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acdce463c81aba2b091af5785f1176fdb inherit pub_methods_classxii_component" id="r_acdce463c81aba2b091af5785f1176fdb"><td class="memItemLeft" align="right" valign="top">
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>WasCreatedByPrefab</b> () const</td></tr>
+<tr class="memdesc:acdce463c81aba2b091af5785f1176fdb inherit pub_methods_classxii_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether the <a class="el" href="../../dd/d15/structxii_object_flags.html#ab84c26953c65707e422df64a7fb08c30acd065fa36ee7373201f20f81ef6d5277" title="Such flagged objects and components are ignored during scene export (see xiiWorldWriter) and will be ...">xiiObjectFlags::CreatedByPrefab</a> flag is set on this component. <br /></td></tr>
+<tr class="separator:acdce463c81aba2b091af5785f1176fdb inherit pub_methods_classxii_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classxii_reflected_class"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_classxii_reflected_class')"><img src="../../closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="../../dc/d71/classxii_reflected_class.html">xiiReflectedClass</a></td></tr>
+<tr class="memitem:a00430d2230bc44ad262be3d0a4e62e10 inherit pub_methods_classxii_reflected_class" id="r_a00430d2230bc44ad262be3d0a4e62e10"><td class="memItemLeft" align="right" valign="top">
+virtual const <a class="el" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetDynamicRTTI</b> () const</td></tr>
+<tr class="separator:a00430d2230bc44ad262be3d0a4e62e10 inherit pub_methods_classxii_reflected_class"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e0f7cbc734bb4dd62b0d583bbbe2ade inherit pub_methods_classxii_reflected_class" id="r_a8e0f7cbc734bb4dd62b0d583bbbe2ade"><td class="memItemLeft" align="right" valign="top">
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsInstanceOf</b> (const <a class="el" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a> *pType) const</td></tr>
+<tr class="memdesc:a8e0f7cbc734bb4dd62b0d583bbbe2ade inherit pub_methods_classxii_reflected_class"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether the type of this instance is of the given type or derived from it. <br /></td></tr>
+<tr class="separator:a8e0f7cbc734bb4dd62b0d583bbbe2ade inherit pub_methods_classxii_reflected_class"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0a423d0f813feb28b200d9a9756eab8 inherit pub_methods_classxii_reflected_class" id="r_ac0a423d0f813feb28b200d9a9756eab8"><td class="memTemplParams" colspan="2">
+template&lt;typename T &gt; </td></tr>
+<tr class="memitem:ac0a423d0f813feb28b200d9a9756eab8 inherit pub_methods_classxii_reflected_class"><td class="memTemplItemLeft" align="right" valign="top">XII_ALWAYS_INLINE bool&#160;</td><td class="memTemplItemRight" valign="bottom"><b>IsInstanceOf</b> () const</td></tr>
+<tr class="memdesc:ac0a423d0f813feb28b200d9a9756eab8 inherit pub_methods_classxii_reflected_class"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether the type of this instance is of the given type or derived from it. <br /></td></tr>
+<tr class="separator:ac0a423d0f813feb28b200d9a9756eab8 inherit pub_methods_classxii_reflected_class"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:ae9a7f33a167fd32a6009dff1036cb96c" id="r_ae9a7f33a167fd32a6009dff1036cb96c"><td class="memItemLeft" align="right" valign="top"><a id="ae9a7f33a167fd32a6009dff1036cb96c" name="ae9a7f33a167fd32a6009dff1036cb96c"></a>
+<a class="el" href="../../de/dfd/structxii_enum.html">xiiEnum</a>&lt; <a class="el" href="../../db/d6c/structxii_global_blackboard_init_mode.html">xiiGlobalBlackboardInitMode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_InitMode</b></td></tr>
+<tr class="separator:ae9a7f33a167fd32a6009dff1036cb96c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a0392cdbbec1a4f01cd915ee85054db3e" id="r_a0392cdbbec1a4f01cd915ee85054db3e"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0392cdbbec1a4f01cd915ee85054db3e">Initialize</a> () override</td></tr>
+<tr class="memdesc:a0392cdbbec1a4f01cd915ee85054db3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Can be overridden for basic initialization that depends on a valid hierarchy and position.  <br /></td></tr>
+<tr class="separator:a0392cdbbec1a4f01cd915ee85054db3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7650eb8512543d587d1aaf24da1fd02e" id="r_a7650eb8512543d587d1aaf24da1fd02e"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7650eb8512543d587d1aaf24da1fd02e">OnActivated</a> () override</td></tr>
+<tr class="memdesc:a7650eb8512543d587d1aaf24da1fd02e"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method is called when the component gets activated.  <br /></td></tr>
+<tr class="separator:a7650eb8512543d587d1aaf24da1fd02e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa9756774451bd2d1f16a83aebeb4765" id="r_aaa9756774451bd2d1f16a83aebeb4765"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaa9756774451bd2d1f16a83aebeb4765">OnDeactivated</a> () override</td></tr>
+<tr class="memdesc:aaa9756774451bd2d1f16a83aebeb4765"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method is called when the component gets deactivated.  <br /></td></tr>
+<tr class="separator:aaa9756774451bd2d1f16a83aebeb4765"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24d7c66c0deabe661fa6016e324dae14" id="r_a24d7c66c0deabe661fa6016e324dae14"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a24d7c66c0deabe661fa6016e324dae14">OnSimulationStarted</a> () override</td></tr>
+<tr class="memdesc:a24d7c66c0deabe661fa6016e324dae14"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method is called once for active components, at the start of the next world update, but only when the world is simulated.  <br /></td></tr>
+<tr class="separator:a24d7c66c0deabe661fa6016e324dae14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_classxii_blackboard_component"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_methods_classxii_blackboard_component')"><img src="../../closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="../../d1/d4e/classxii_blackboard_component.html">xiiBlackboardComponent</a></td></tr>
+<tr class="memitem:a00a888be6b767b92b96d8ba39f01fc2e inherit pro_methods_classxii_blackboard_component" id="r_a00a888be6b767b92b96d8ba39f01fc2e"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnUpdateLocalBounds</b> (<a class="el" href="../../dc/dc8/structxii_msg_update_local_bounds.html">xiiMsgUpdateLocalBounds</a> &amp;msg) const</td></tr>
+<tr class="separator:a00a888be6b767b92b96d8ba39f01fc2e inherit pro_methods_classxii_blackboard_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6d742f42f84623d14e166689c4a9468 inherit pro_methods_classxii_blackboard_component" id="r_ad6d742f42f84623d14e166689c4a9468"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnExtractRenderData</b> (<a class="el" href="../../d3/d47/structxii_msg_extract_render_data.html">xiiMsgExtractRenderData</a> &amp;msg) const</td></tr>
+<tr class="separator:ad6d742f42f84623d14e166689c4a9468 inherit pro_methods_classxii_blackboard_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_classxii_component"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_methods_classxii_component')"><img src="../../closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="../../db/d60/classxii_component.html">xiiComponent</a></td></tr>
+<tr class="memitem:a60c7db90d11a90e58501a07d0f051a92 inherit pro_methods_classxii_component" id="r_a60c7db90d11a90e58501a07d0f051a92"><td class="memItemLeft" align="right" valign="top">
+&#160;</td><td class="memItemRight" valign="bottom"><b>xiiComponent</b> ()</td></tr>
+<tr class="memdesc:a60c7db90d11a90e58501a07d0f051a92 inherit pro_methods_classxii_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">Keep the constructor private or protected in derived classes, so it cannot be called manually. <br /></td></tr>
+<tr class="separator:a60c7db90d11a90e58501a07d0f051a92 inherit pro_methods_classxii_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af73ee9449f3989410ae932252abb2250 inherit pro_methods_classxii_component" id="r_af73ee9449f3989410ae932252abb2250"><td class="memItemLeft" align="right" valign="top">
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsDynamic</b> () const</td></tr>
+<tr class="memdesc:af73ee9449f3989410ae932252abb2250 inherit pro_methods_classxii_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether this component is dynamic and thus can only be attached to dynamic game objects. <br /></td></tr>
+<tr class="separator:af73ee9449f3989410ae932252abb2250 inherit pro_methods_classxii_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e72883717a1481f394187f7251f4842 inherit pro_methods_classxii_component" id="r_a5e72883717a1481f394187f7251f4842"><td class="memItemLeft" align="right" valign="top">
+virtual xiiWorldModuleTypeId&#160;</td><td class="memItemRight" valign="bottom"><b>GetTypeId</b> () const =0</td></tr>
+<tr class="separator:a5e72883717a1481f394187f7251f4842 inherit pro_methods_classxii_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7bae44c0d425d1bf80b8dc874db6586c inherit pro_methods_classxii_component" id="r_a7bae44c0d425d1bf80b8dc874db6586c"><td class="memItemLeft" align="right" valign="top">
+virtual xiiComponentMode::Enum&#160;</td><td class="memItemRight" valign="bottom"><b>GetMode</b> () const =0</td></tr>
+<tr class="separator:a7bae44c0d425d1bf80b8dc874db6586c inherit pro_methods_classxii_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86fcefe9cb84eec354b2dc8c64e61a4a inherit pro_methods_classxii_component" id="r_a86fcefe9cb84eec354b2dc8c64e61a4a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d60/classxii_component.html#a86fcefe9cb84eec354b2dc8c64e61a4a">Deinitialize</a> ()</td></tr>
+<tr class="memdesc:a86fcefe9cb84eec354b2dc8c64e61a4a inherit pro_methods_classxii_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method is called before the component is destroyed. <a class="el" href="../../d8/d4f/class_a.html">A</a> derived type can override this method to do common de-initialization work.  <br /></td></tr>
+<tr class="separator:a86fcefe9cb84eec354b2dc8c64e61a4a inherit pro_methods_classxii_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4967b57dd671d6b3c7b3de4984813af inherit pro_methods_classxii_component" id="r_ad4967b57dd671d6b3c7b3de4984813af"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><b>EnableUnhandledMessageHandler</b> (bool enable)</td></tr>
+<tr class="memdesc:ad4967b57dd671d6b3c7b3de4984813af inherit pro_methods_classxii_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">By default disabled. Enable to have <a class="el" href="../../db/d60/classxii_component.html#afb3f2116efcbbbd7667c15694509ace0" title="When EnableUnhandledMessageHandler() was activated, this is called for all messages for which there i...">OnUnhandledMessage()</a> called for every unhandled message. <br /></td></tr>
+<tr class="separator:ad4967b57dd671d6b3c7b3de4984813af inherit pro_methods_classxii_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb3f2116efcbbbd7667c15694509ace0 inherit pro_methods_classxii_component" id="r_afb3f2116efcbbbd7667c15694509ace0"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d60/classxii_component.html#afb3f2116efcbbbd7667c15694509ace0">OnUnhandledMessage</a> (<a class="el" href="../../d9/d55/classxii_message.html">xiiMessage</a> &amp;msg, bool bWasPostedMsg)</td></tr>
+<tr class="memdesc:afb3f2116efcbbbd7667c15694509ace0 inherit pro_methods_classxii_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">When <a class="el" href="../../db/d60/classxii_component.html#ad4967b57dd671d6b3c7b3de4984813af" title="By default disabled. Enable to have OnUnhandledMessage() called for every unhandled message.">EnableUnhandledMessageHandler()</a> was activated, this is called for all messages for which there is no dedicated message handler.  <br /></td></tr>
+<tr class="separator:afb3f2116efcbbbd7667c15694509ace0 inherit pro_methods_classxii_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20bdc689c389acbeb23574a77b9528bf inherit pro_methods_classxii_component" id="r_a20bdc689c389acbeb23574a77b9528bf"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d60/classxii_component.html#a20bdc689c389acbeb23574a77b9528bf">OnUnhandledMessage</a> (<a class="el" href="../../d9/d55/classxii_message.html">xiiMessage</a> &amp;msg, bool bWasPostedMsg) const</td></tr>
+<tr class="memdesc:a20bdc689c389acbeb23574a77b9528bf inherit pro_methods_classxii_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">When <a class="el" href="../../db/d60/classxii_component.html#ad4967b57dd671d6b3c7b3de4984813af" title="By default disabled. Enable to have OnUnhandledMessage() called for every unhandled message.">EnableUnhandledMessageHandler()</a> was activated, this is called for all messages for which there is no dedicated message handler.  <br /></td></tr>
+<tr class="separator:a20bdc689c389acbeb23574a77b9528bf inherit pro_methods_classxii_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa9c69a9e5eb355a3fa74b8ce197df9f inherit pro_methods_classxii_component" id="r_aaa9c69a9e5eb355a3fa74b8ce197df9f"><td class="memItemLeft" align="right" valign="top">
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsInitialized</b> () const</td></tr>
+<tr class="separator:aaa9c69a9e5eb355a3fa74b8ce197df9f inherit pro_methods_classxii_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6430445d396dcab35f876fa225f33da6 inherit pro_methods_classxii_component" id="r_a6430445d396dcab35f876fa225f33da6"><td class="memItemLeft" align="right" valign="top">
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsInitializing</b> () const</td></tr>
+<tr class="separator:a6430445d396dcab35f876fa225f33da6 inherit pro_methods_classxii_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4fd21f69dda1e31f2dba4d19b10584c5 inherit pro_methods_classxii_component" id="r_a4fd21f69dda1e31f2dba4d19b10584c5"><td class="memItemLeft" align="right" valign="top">
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsSimulationStarted</b> () const</td></tr>
+<tr class="separator:a4fd21f69dda1e31f2dba4d19b10584c5 inherit pro_methods_classxii_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pub_static_methods_classxii_blackboard_component"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_static_methods_classxii_blackboard_component')"><img src="../../closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="../../d1/d4e/classxii_blackboard_component.html">xiiBlackboardComponent</a></td></tr>
+<tr class="memitem:a84646052d3d607fd9fc94c7e33fdcf5d inherit pub_static_methods_classxii_blackboard_component" id="r_a84646052d3d607fd9fc94c7e33fdcf5d"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d8/d9b/classxii_shared_ptr.html">xiiSharedPtr</a>&lt; <a class="el" href="../../d7/d47/classxii_blackboard.html">xiiBlackboard</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d4e/classxii_blackboard_component.html#a84646052d3d607fd9fc94c7e33fdcf5d">FindBlackboard</a> (<a class="el" href="../../d0/d91/classxii_game_object.html">xiiGameObject</a> *pSearchObject, <a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sBlackboardName=<a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a>())</td></tr>
+<tr class="memdesc:a84646052d3d607fd9fc94c7e33fdcf5d inherit pub_static_methods_classxii_blackboard_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">Try to find a <a class="el" href="../../d1/d4e/classxii_blackboard_component.html" title="This base component represents an xiiBlackboard, which can be used to share state between multiple co...">xiiBlackboardComponent</a> on pSearchObject or its parents with the given name and returns its blackboard.  <br /></td></tr>
+<tr class="separator:a84646052d3d607fd9fc94c7e33fdcf5d inherit pub_static_methods_classxii_blackboard_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_static_methods_classxii_no_base"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_static_methods_classxii_no_base')"><img src="../../closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="../../d2/d38/classxii_no_base.html">xiiNoBase</a></td></tr>
+<tr class="memitem:a4bde433b55ebd55edf63c57239799bba inherit pub_static_methods_classxii_no_base" id="r_a4bde433b55ebd55edf63c57239799bba"><td class="memItemLeft" align="right" valign="top">
+static const <a class="el" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetStaticRTTI</b> ()</td></tr>
+<tr class="separator:a4bde433b55ebd55edf63c57239799bba inherit pub_static_methods_classxii_no_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_static_methods_classxii_blackboard_component"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_static_methods_classxii_blackboard_component')"><img src="../../closed.png" alt="-"/>&#160;Static Protected Member Functions inherited from <a class="el" href="../../d1/d4e/classxii_blackboard_component.html">xiiBlackboardComponent</a></td></tr>
+<tr class="memitem:a5c023310cb76f1e38cab250afaa6e87f inherit pro_static_methods_classxii_blackboard_component" id="r_a5c023310cb76f1e38cab250afaa6e87f"><td class="memItemLeft" align="right" valign="top">
+static <a class="el" href="../../d7/d47/classxii_blackboard.html">xiiBlackboard</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>Reflection_FindBlackboard</b> (<a class="el" href="../../d0/d91/classxii_game_object.html">xiiGameObject</a> *pSearchObject, <a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sBlackboardName)</td></tr>
+<tr class="separator:a5c023310cb76f1e38cab250afaa6e87f inherit pro_static_methods_classxii_blackboard_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_classxii_blackboard_component"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_attribs_classxii_blackboard_component')"><img src="../../closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="../../d1/d4e/classxii_blackboard_component.html">xiiBlackboardComponent</a></td></tr>
+<tr class="memitem:a309e6690fd5f2484849dc5f363dec76c inherit pro_attribs_classxii_blackboard_component" id="r_a309e6690fd5f2484849dc5f363dec76c"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="../../d8/d9b/classxii_shared_ptr.html">xiiSharedPtr</a>&lt; <a class="el" href="../../d7/d47/classxii_blackboard.html">xiiBlackboard</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_pBoard</b></td></tr>
+<tr class="separator:a309e6690fd5f2484849dc5f363dec76c inherit pro_attribs_classxii_blackboard_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae66e63bac829cd2a3649898a7e0ad72c inherit pro_attribs_classxii_blackboard_component" id="r_ae66e63bac829cd2a3649898a7e0ad72c"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="../../d6/d16/classxii_typed_resource_handle.html">xiiBlackboardTemplateResourceHandle</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_hTemplate</b></td></tr>
+<tr class="separator:ae66e63bac829cd2a3649898a7e0ad72c inherit pro_attribs_classxii_blackboard_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_classxii_component"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_attribs_classxii_component')"><img src="../../closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="../../db/d60/classxii_component.html">xiiComponent</a></td></tr>
+<tr class="memitem:ae8e397ade32eb7a5df4486207077e4ac inherit pro_attribs_classxii_component" id="r_ae8e397ade32eb7a5df4486207077e4ac"><td class="memItemLeft" align="right" valign="top">
+const <a class="el" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_pMessageDispatchType</b> = nullptr</td></tr>
+<tr class="memdesc:ae8e397ade32eb7a5df4486207077e4ac inherit pro_attribs_classxii_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">Messages will be dispatched to this type. Default is what GetDynamicRTTI() returns, can be redirected if necessary. <br /></td></tr>
+<tr class="separator:ae8e397ade32eb7a5df4486207077e4ac inherit pro_attribs_classxii_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>This component references a global blackboard by name. If necessary, the blackboard will be created. </p>
+<p>This allows to initialize a global blackboard with known values. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a68be5a00970b112bb73a35859f4b6c24" name="a68be5a00970b112bb73a35859f4b6c24"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a68be5a00970b112bb73a35859f4b6c24">&#9670;&#160;</a></span>DeserializeComponent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void xiiGlobalBlackboardComponent::DeserializeComponent </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/df8/classxii_world_reader.html">xiiWorldReader</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>ref_stream</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Override this to load the current state of the component from the given stream. </p>
+<p>The active state will be automatically serialized. The 'initialized' state is not serialized, all components will be initialized after creation, even if they were already in an initialized state when they were serialized. </p>
+
+<p>Reimplemented from <a class="el" href="../../d1/d4e/classxii_blackboard_component.html#add283645600530a1cb2c49bc0156b95c">xiiBlackboardComponent</a>.</p>
+
+</div>
+</div>
+<a id="a0392cdbbec1a4f01cd915ee85054db3e" name="a0392cdbbec1a4f01cd915ee85054db3e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0392cdbbec1a4f01cd915ee85054db3e">&#9670;&#160;</a></span>Initialize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void xiiGlobalBlackboardComponent::Initialize </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Can be overridden for basic initialization that depends on a valid hierarchy and position. </p>
+<p>All trivial initialization should be done in the constructor. For typical game code, you should prefer to use <a class="el" href="#a24d7c66c0deabe661fa6016e324dae14" title="This method is called once for active components, at the start of the next world update,...">OnSimulationStarted()</a>. This method is called once for every component, after creation but only at the start of the next world update. Therefore the global position has already been computed and the owner <a class="el" href="../../d0/d91/classxii_game_object.html" title="This class represents an object inside the world.">xiiGameObject</a> is set. Contrary to <a class="el" href="#a7650eb8512543d587d1aaf24da1fd02e" title="This method is called when the component gets activated.">OnActivated()</a> and <a class="el" href="#a24d7c66c0deabe661fa6016e324dae14" title="This method is called once for active components, at the start of the next world update,...">OnSimulationStarted()</a>, this function is always called for all components.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="#a7650eb8512543d587d1aaf24da1fd02e" title="This method is called when the component gets activated.">OnActivated()</a>, <a class="el" href="#aaa9756774451bd2d1f16a83aebeb4765" title="This method is called when the component gets deactivated.">OnDeactivated()</a>, <a class="el" href="#a0392cdbbec1a4f01cd915ee85054db3e" title="Can be overridden for basic initialization that depends on a valid hierarchy and position.">Initialize()</a>, <a class="el" href="../../db/d60/classxii_component.html#a86fcefe9cb84eec354b2dc8c64e61a4a" title="This method is called before the component is destroyed. A derived type can override this method to d...">Deinitialize()</a>, <a class="el" href="#a24d7c66c0deabe661fa6016e324dae14" title="This method is called once for active components, at the start of the next world update,...">OnSimulationStarted()</a> </dd></dl>
+
+<p>Reimplemented from <a class="el" href="../../db/d60/classxii_component.html#aa0875be82147de66ed85f9001dcb05b7">xiiComponent</a>.</p>
+
+</div>
+</div>
+<a id="a7650eb8512543d587d1aaf24da1fd02e" name="a7650eb8512543d587d1aaf24da1fd02e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7650eb8512543d587d1aaf24da1fd02e">&#9670;&#160;</a></span>OnActivated()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void xiiGlobalBlackboardComponent::OnActivated </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This method is called when the component gets activated. </p>
+<p>By default a component is active, but it can be created in an inactive state. In such a case <a class="el" href="#a7650eb8512543d587d1aaf24da1fd02e" title="This method is called when the component gets activated.">OnActivated()</a> is only called once a component is activated. If a component gets switched between active and inactive at runtime, <a class="el" href="#a7650eb8512543d587d1aaf24da1fd02e" title="This method is called when the component gets activated.">OnActivated()</a> and <a class="el" href="#aaa9756774451bd2d1f16a83aebeb4765" title="This method is called when the component gets deactivated.">OnDeactivated()</a> are called accordingly. In contrast <a class="el" href="#a0392cdbbec1a4f01cd915ee85054db3e" title="Can be overridden for basic initialization that depends on a valid hierarchy and position.">Initialize()</a> and <a class="el" href="../../db/d60/classxii_component.html#a86fcefe9cb84eec354b2dc8c64e61a4a" title="This method is called before the component is destroyed. A derived type can override this method to d...">Deinitialize()</a> are only ever called once.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="#a7650eb8512543d587d1aaf24da1fd02e" title="This method is called when the component gets activated.">OnActivated()</a>, <a class="el" href="#aaa9756774451bd2d1f16a83aebeb4765" title="This method is called when the component gets deactivated.">OnDeactivated()</a>, <a class="el" href="#a0392cdbbec1a4f01cd915ee85054db3e" title="Can be overridden for basic initialization that depends on a valid hierarchy and position.">Initialize()</a>, <a class="el" href="../../db/d60/classxii_component.html#a86fcefe9cb84eec354b2dc8c64e61a4a" title="This method is called before the component is destroyed. A derived type can override this method to d...">Deinitialize()</a>, <a class="el" href="#a24d7c66c0deabe661fa6016e324dae14" title="This method is called once for active components, at the start of the next world update,...">OnSimulationStarted()</a> </dd></dl>
+
+<p>Reimplemented from <a class="el" href="../../d1/d4e/classxii_blackboard_component.html#a043955dba6d06d28035a61ec07874d9b">xiiBlackboardComponent</a>.</p>
+
+</div>
+</div>
+<a id="aaa9756774451bd2d1f16a83aebeb4765" name="aaa9756774451bd2d1f16a83aebeb4765"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa9756774451bd2d1f16a83aebeb4765">&#9670;&#160;</a></span>OnDeactivated()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void xiiGlobalBlackboardComponent::OnDeactivated </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This method is called when the component gets deactivated. </p>
+<p>Upon destruction, a component that is active first gets deactivated. Therefore <a class="el" href="#aaa9756774451bd2d1f16a83aebeb4765" title="This method is called when the component gets deactivated.">OnDeactivated()</a> should be used for typical game code cleanup.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="#a7650eb8512543d587d1aaf24da1fd02e" title="This method is called when the component gets activated.">OnActivated()</a>, <a class="el" href="#aaa9756774451bd2d1f16a83aebeb4765" title="This method is called when the component gets deactivated.">OnDeactivated()</a>, <a class="el" href="#a0392cdbbec1a4f01cd915ee85054db3e" title="Can be overridden for basic initialization that depends on a valid hierarchy and position.">Initialize()</a>, <a class="el" href="../../db/d60/classxii_component.html#a86fcefe9cb84eec354b2dc8c64e61a4a" title="This method is called before the component is destroyed. A derived type can override this method to d...">Deinitialize()</a>, <a class="el" href="#a24d7c66c0deabe661fa6016e324dae14" title="This method is called once for active components, at the start of the next world update,...">OnSimulationStarted()</a> </dd></dl>
+
+<p>Reimplemented from <a class="el" href="../../d1/d4e/classxii_blackboard_component.html#aca58908e301a92b5412a878173a96248">xiiBlackboardComponent</a>.</p>
+
+</div>
+</div>
+<a id="a24d7c66c0deabe661fa6016e324dae14" name="a24d7c66c0deabe661fa6016e324dae14"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24d7c66c0deabe661fa6016e324dae14">&#9670;&#160;</a></span>OnSimulationStarted()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void xiiGlobalBlackboardComponent::OnSimulationStarted </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This method is called once for active components, at the start of the next world update, but only when the world is simulated. </p>
+<p>This is the one preferred method to setup typical game logic. In a pure game environment there is no practical difference between <a class="el" href="#a7650eb8512543d587d1aaf24da1fd02e" title="This method is called when the component gets activated.">OnActivated()</a> and <a class="el" href="#a24d7c66c0deabe661fa6016e324dae14" title="This method is called once for active components, at the start of the next world update,...">OnSimulationStarted()</a>, as <a class="el" href="#a24d7c66c0deabe661fa6016e324dae14" title="This method is called once for active components, at the start of the next world update,...">OnSimulationStarted()</a> will be called right after <a class="el" href="#a7650eb8512543d587d1aaf24da1fd02e" title="This method is called when the component gets activated.">OnActivated()</a>.</p>
+<p>However, when a scene is open inside the editor, there is an important difference: <a class="el" href="#a7650eb8512543d587d1aaf24da1fd02e" title="This method is called when the component gets activated.">OnActivated()</a> is called once the component was created. <a class="el" href="#a24d7c66c0deabe661fa6016e324dae14" title="This method is called once for active components, at the start of the next world update,...">OnSimulationStarted()</a> is only called once the game simulation is started inside the editor. As an example, if a component starts a sound in <a class="el" href="#a7650eb8512543d587d1aaf24da1fd02e" title="This method is called when the component gets activated.">OnActivated()</a>, that sound will play right after the scene has been loaded into the editor. If instead the sound gets started in <a class="el" href="#a24d7c66c0deabe661fa6016e324dae14" title="This method is called once for active components, at the start of the next world update,...">OnSimulationStarted()</a>, it will only play once the user starts the game mode inside the editor.</p>
+<p>Additionally, <a class="el" href="#a24d7c66c0deabe661fa6016e324dae14" title="This method is called once for active components, at the start of the next world update,...">OnSimulationStarted()</a> is only ever executed once on a component, even if the <a class="el" href="../../d6/d89/classxii_world.html" title="A world encapsulates a scene graph of game objects and various component managers and their component...">xiiWorld</a> pauses and resumes world simulation multiple times. Thus components that should only execute a thing exactly once, will work correctly. In contrast <a class="el" href="#a7650eb8512543d587d1aaf24da1fd02e" title="This method is called when the component gets activated.">OnActivated()</a> and <a class="el" href="#aaa9756774451bd2d1f16a83aebeb4765" title="This method is called when the component gets deactivated.">OnDeactivated()</a> will be executed every time the component's active state is toggled, which could re-execute the same behavior multiple times.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="#a7650eb8512543d587d1aaf24da1fd02e" title="This method is called when the component gets activated.">OnActivated()</a>, <a class="el" href="#aaa9756774451bd2d1f16a83aebeb4765" title="This method is called when the component gets deactivated.">OnDeactivated()</a>, <a class="el" href="#a0392cdbbec1a4f01cd915ee85054db3e" title="Can be overridden for basic initialization that depends on a valid hierarchy and position.">Initialize()</a>, <a class="el" href="../../db/d60/classxii_component.html#a86fcefe9cb84eec354b2dc8c64e61a4a" title="This method is called before the component is destroyed. A derived type can override this method to d...">Deinitialize()</a>, <a class="el" href="#a24d7c66c0deabe661fa6016e324dae14" title="This method is called once for active components, at the start of the next world update,...">OnSimulationStarted()</a> </dd></dl>
+
+<p>Reimplemented from <a class="el" href="../../db/d60/classxii_component.html#a2b0e0564cb2cdf071357136c990a7b37">xiiComponent</a>.</p>
+
+</div>
+</div>
+<a id="a7fbf203bff16d764d6810aee07265198" name="a7fbf203bff16d764d6810aee07265198"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7fbf203bff16d764d6810aee07265198">&#9670;&#160;</a></span>SerializeComponent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void xiiGlobalBlackboardComponent::SerializeComponent </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/d8c/classxii_world_writer.html">xiiWorldWriter</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>ref_stream</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Override this to save the current state of the component to the given stream. </p>
+
+<p>Reimplemented from <a class="el" href="../../d1/d4e/classxii_blackboard_component.html#ae8d7749300f404fe2f2c20e3fbd957fe">xiiBlackboardComponent</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li>/home/runner/work/XII/XII/Source/Engine/GameEngine/Gameplay/<a class="el" href="../../da/d71/_blackboard_component_8h_source.html">BlackboardComponent.h</a></li>
+<li>/home/runner/work/XII/XII/Source/Engine/GameEngine/Gameplay/Implementation/<b>BlackboardComponent.cpp</b></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../d1/d59/classxii_global_blackboard_component.html">xiiGlobalBlackboardComponent</a></li>
+    <li class="footer">Generated on Mon Jul 1 2024 23:53:15 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+  </ul>
+</div>
+</body>
+</html>

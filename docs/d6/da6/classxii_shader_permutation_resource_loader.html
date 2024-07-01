@@ -1,0 +1,267 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.11.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<!-- BEGIN opengraph metadata -->
+<meta property="og:title" content="XII" />
+<meta property="og:image" content="../../XII-Logo.png" />
+<meta property="og:description" content="An advanced high-performance simulation engine." />
+<meta property="og:url" content="https://www.xiitechnologies.com" />
+<!-- END opengraph metadata -->
+<!-- BEGIN twitter metadata -->
+<meta name="twitter:image:src" content="../../XII-Logo.png" />
+<meta name="twitter:title" content="XII" />
+<meta name="twitter:description" content="An advanced high-performance simulation engine." />
+<!-- END twitter metadata -->
+<title>XII: xiiShaderPermutationResourceLoader Class Reference</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link rel="icon" type="image/svg+xml" href="logo.drawio.svg"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="../../toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../custom.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<a href="https://github.com/jothepro/doxygen-awesome-css" class="github-corner" title="View source on GitHub" target="_blank" rel="noopener noreferrer">
+    <svg viewBox="0 0 250 250" width="40" height="40" style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+    <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="../../XII-Logo.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">XII
+   &#160;<span id="projectnumber">1.0.0</span>
+   </div>
+   <div id="projectbrief">A high-performance simulation engine.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(1); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.html','Search',true);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('d6/da6/classxii_shader_permutation_resource_loader.html','../../'); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="../../d3/d28/classxii_shader_permutation_resource_loader-members.html">List of all members</a>  </div>
+  <div class="headertitle"><div class="title">xiiShaderPermutationResourceLoader Class Reference</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+Inheritance diagram for xiiShaderPermutationResourceLoader:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d8/d87/classxii_shader_permutation_resource_loader__inherit__graph.svg" width="234" height="124"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">legend</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:ac72af81b333a031f33b1b81725fe17f6" id="r_ac72af81b333a031f33b1b81725fe17f6"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../df/d66/structxii_resource_load_data.html">xiiResourceLoadData</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac72af81b333a031f33b1b81725fe17f6">OpenDataStream</a> (const <a class="el" href="../../d9/de1/classxii_resource.html">xiiResource</a> *pResource) override</td></tr>
+<tr class="memdesc:ac72af81b333a031f33b1b81725fe17f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Override this function to implement the resource loading.  <br /></td></tr>
+<tr class="separator:ac72af81b333a031f33b1b81725fe17f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0eb5c6d0cf3a7289a0275acd545f2370" id="r_a0eb5c6d0cf3a7289a0275acd545f2370"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0eb5c6d0cf3a7289a0275acd545f2370">CloseDataStream</a> (const <a class="el" href="../../d9/de1/classxii_resource.html">xiiResource</a> *pResource, const <a class="el" href="../../df/d66/structxii_resource_load_data.html">xiiResourceLoadData</a> &amp;loaderData) override</td></tr>
+<tr class="memdesc:a0eb5c6d0cf3a7289a0275acd545f2370"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function is called when the resource has been updated with the data from the resource loader and the loader can deallocate any temporary memory.  <br /></td></tr>
+<tr class="separator:a0eb5c6d0cf3a7289a0275acd545f2370"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9db5400747682a3f9066e4ba534da24d" id="r_a9db5400747682a3f9066e4ba534da24d"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9db5400747682a3f9066e4ba534da24d">IsResourceOutdated</a> (const <a class="el" href="../../d9/de1/classxii_resource.html">xiiResource</a> *pResource) const override</td></tr>
+<tr class="memdesc:a9db5400747682a3f9066e4ba534da24d"><td class="mdescLeft">&#160;</td><td class="mdescRight">If this function returns true, a resource is unloaded and loaded again to update its content.  <br /></td></tr>
+<tr class="separator:a9db5400747682a3f9066e4ba534da24d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a0eb5c6d0cf3a7289a0275acd545f2370" name="a0eb5c6d0cf3a7289a0275acd545f2370"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0eb5c6d0cf3a7289a0275acd545f2370">&#9670;&#160;</a></span>CloseDataStream()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void xiiShaderPermutationResourceLoader::CloseDataStream </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d9/de1/classxii_resource.html">xiiResource</a> *</td>          <td class="paramname"><span class="paramname"><em>pResource</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../df/d66/structxii_resource_load_data.html">xiiResourceLoadData</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>loaderData</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This function is called when the resource has been updated with the data from the resource loader and the loader can deallocate any temporary memory. </p>
+
+<p>Implements <a class="el" href="../../da/d81/classxii_resource_type_loader.html#a8708b846290ee56e3cc66228bc6652b0">xiiResourceTypeLoader</a>.</p>
+
+</div>
+</div>
+<a id="a9db5400747682a3f9066e4ba534da24d" name="a9db5400747682a3f9066e4ba534da24d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9db5400747682a3f9066e4ba534da24d">&#9670;&#160;</a></span>IsResourceOutdated()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool xiiShaderPermutationResourceLoader::IsResourceOutdated </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d9/de1/classxii_resource.html">xiiResource</a> *</td>          <td class="paramname"><span class="paramname"><em>pResource</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>If this function returns true, a resource is unloaded and loaded again to update its content. </p>
+<p>Call <a class="el" href="../../d9/de1/classxii_resource.html#af8b58d9b07045d664fbcee6b601e2ca9" title="Returns the modification date of the file from which this resource was loaded.">xiiResource::GetLoadedFileModificationTime()</a> to query the file modification time that was returned through <a class="el" href="../../df/d66/structxii_resource_load_data.html#a19ac6e3a95299f8ab4616106884b6188" title="Used to keep track when the loaded file was modified last and thus when reloading of the resource mig...">xiiResourceLoadData::m_LoadedFileModificationDate</a>. </p>
+
+<p>Reimplemented from <a class="el" href="../../da/d81/classxii_resource_type_loader.html#a4d262e3efc3fe219836e18ceba170856">xiiResourceTypeLoader</a>.</p>
+
+</div>
+</div>
+<a id="ac72af81b333a031f33b1b81725fe17f6" name="ac72af81b333a031f33b1b81725fe17f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac72af81b333a031f33b1b81725fe17f6">&#9670;&#160;</a></span>OpenDataStream()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/d66/structxii_resource_load_data.html">xiiResourceLoadData</a> xiiShaderPermutationResourceLoader::OpenDataStream </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d9/de1/classxii_resource.html">xiiResource</a> *</td>          <td class="paramname"><span class="paramname"><em>pResource</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Override this function to implement the resource loading. </p>
+<p>This function should take the information from <em>pResource</em>, e.g. which file to load, and do the loading work. It should allocate temporary storage for the loaded data and encode it in a memory stream, such that the resource can read all necessary information from the stream.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../df/d66/structxii_resource_load_data.html" title="Data returned by xiiResourceTypeLoader implementations.">xiiResourceLoadData</a> </dd></dl>
+
+<p>Implements <a class="el" href="../../da/d81/classxii_resource_type_loader.html#a8f63c4198ab29747903593f64be3f130">xiiResourceTypeLoader</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li>/home/runner/work/XII/XII/Source/Engine/GraphicsCore/Shader/<a class="el" href="../../d1/d9d/_shader_permutation_resource_8h_source.html">ShaderPermutationResource.h</a></li>
+<li>/home/runner/work/XII/XII/Source/Engine/GraphicsCore/Shader/Implementation/<b>ShaderPermutationResource.cpp</b></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../d6/da6/classxii_shader_permutation_resource_loader.html">xiiShaderPermutationResourceLoader</a></li>
+    <li class="footer">Generated on Mon Jul 1 2024 23:53:16 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+  </ul>
+</div>
+</body>
+</html>

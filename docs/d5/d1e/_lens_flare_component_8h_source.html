@@ -1,0 +1,291 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.11.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<!-- BEGIN opengraph metadata -->
+<meta property="og:title" content="XII" />
+<meta property="og:image" content="../../XII-Logo.png" />
+<meta property="og:description" content="An advanced high-performance simulation engine." />
+<meta property="og:url" content="https://www.xiitechnologies.com" />
+<!-- END opengraph metadata -->
+<!-- BEGIN twitter metadata -->
+<meta name="twitter:image:src" content="../../XII-Logo.png" />
+<meta name="twitter:title" content="XII" />
+<meta name="twitter:description" content="An advanced high-performance simulation engine." />
+<!-- END twitter metadata -->
+<title>XII: /home/runner/work/XII/XII/Source/Engine/GraphicsCore/Components/LensFlareComponent.h Source File</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link rel="icon" type="image/svg+xml" href="logo.drawio.svg"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="../../toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../custom.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<a href="https://github.com/jothepro/doxygen-awesome-css" class="github-corner" title="View source on GitHub" target="_blank" rel="noopener noreferrer">
+    <svg viewBox="0 0 250 250" width="40" height="40" style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+    <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="../../XII-Logo.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">XII
+   &#160;<span id="projectnumber">1.0.0</span>
+   </div>
+   <div id="projectbrief">A high-performance simulation engine.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(1); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.html','Search',true);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('d5/d1e/_lens_flare_component_8h_source.html','../../'); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">LensFlareComponent.h</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &lt;GraphicsCore/GraphicsCoreDLL.h&gt;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;Core/ResourceManager/ResourceHandle.h&gt;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;Core/World/World.h&gt;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;Foundation/Math/Float16.h&gt;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &lt;GraphicsCore/Components/RenderComponent.h&gt;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &lt;GraphicsCore/Pipeline/RenderData.h&gt;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="keyword">struct </span><a class="code hl_struct" href="../../de/d10/structxii_msg_set_color.html">xiiMsgSetColor</a>;</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="keyword">using </span><a class="code hl_class" href="../../d6/d16/classxii_typed_resource_handle.html">xiiTexture2DResourceHandle</a> = <a class="code hl_class" href="../../d6/d16/classxii_typed_resource_handle.html">xiiTypedResourceHandle&lt;class xiiTexture2DResource&gt;</a>;</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="foldopen" id="foldopen00014" data-start="{" data-end="};">
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="../../d5/d2a/classxii_lens_flare_render_data.html">   14</a></span><span class="keyword">class </span>XII_GRAPHICSCORE_DLL <a class="code hl_class" href="../../d5/d2a/classxii_lens_flare_render_data.html">xiiLensFlareRenderData</a> : <span class="keyword">public</span> <a class="code hl_class" href="../../d8/da5/classxii_render_data.html">xiiRenderData</a></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>{</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>  XII_ADD_DYNAMIC_REFLECTION(<a class="code hl_class" href="../../d5/d2a/classxii_lens_flare_render_data.html">xiiLensFlareRenderData</a>, <a class="code hl_class" href="../../d8/da5/classxii_render_data.html">xiiRenderData</a>);</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>  <span class="keywordtype">void</span> FillBatchIdAndSortingKey();</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>  <a class="code hl_class" href="../../d6/d16/classxii_typed_resource_handle.html">xiiTexture2DResourceHandle</a> m_hTexture;</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>  <a class="code hl_class" href="../../d7/d84/classxii_float16_vec4.html">xiiFloat16Vec4</a>             m_Color;</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>  <span class="keywordtype">float</span> m_fSize;</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>  <span class="keywordtype">float</span> m_fMaxScreenSize;</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>  <span class="keywordtype">float</span> m_fAspectRatio;</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>  <span class="keywordtype">float</span> m_fShiftToCenter;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>  <span class="keywordtype">float</span> m_fOcclusionSampleRadius;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>  <span class="keywordtype">float</span> m_fOcclusionSampleSpread;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>  <span class="keywordtype">float</span> m_fOcclusionDepthOffset;</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>  <span class="keywordtype">bool</span> m_bInverseTonemap;</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>  <span class="keywordtype">bool</span> m_bGreyscaleTexture;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>  <span class="keywordtype">bool</span> m_bApplyFog;</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>};</div>
+</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
+<div class="foldopen" id="foldopen00038" data-start="{" data-end="};">
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="../../d9/d8a/structxii_lens_flare_element.html">   38</a></span><span class="keyword">struct </span><a class="code hl_struct" href="../../d9/d8a/structxii_lens_flare_element.html">xiiLensFlareElement</a></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>{</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>  <a class="code hl_class" href="../../d6/d16/classxii_typed_resource_handle.html">xiiTexture2DResourceHandle</a> m_hTexture;</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>  <a class="code hl_class" href="../../d3/de6/classxii_color.html">xiiColor</a>                   m_Color                 = <a class="code hl_variable" href="../../d3/de6/classxii_color.html#aa0b01806b94057aecb9945229acb7807">xiiColor::White</a>;</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="../../d9/d8a/structxii_lens_flare_element.html#a2d7d2d2368dc0421303f50e6cb1f8e38">   42</a></span>  <span class="keywordtype">float</span>                      <a class="code hl_variable" href="../../d9/d8a/structxii_lens_flare_element.html#a2d7d2d2368dc0421303f50e6cb1f8e38">m_fSize</a>                 = 10000.0f; </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="../../d9/d8a/structxii_lens_flare_element.html#af72882e3a34441f1fb9496f8a791cc93">   43</a></span>  <span class="keywordtype">float</span>                      <a class="code hl_variable" href="../../d9/d8a/structxii_lens_flare_element.html#af72882e3a34441f1fb9496f8a791cc93">m_fMaxScreenSize</a>        = 1.0f;     </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="../../d9/d8a/structxii_lens_flare_element.html#a924e4efd885ecc9c2bda16b2c035d873">   44</a></span>  <span class="keywordtype">float</span>                      <a class="code hl_variable" href="../../d9/d8a/structxii_lens_flare_element.html#a924e4efd885ecc9c2bda16b2c035d873">m_fAspectRatio</a>          = 1.0f;     </div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="../../d9/d8a/structxii_lens_flare_element.html#a23b7aa3d6e9aee1f2b4c8b975d747205">   45</a></span>  <span class="keywordtype">float</span>                      <a class="code hl_variable" href="../../d9/d8a/structxii_lens_flare_element.html#a23b7aa3d6e9aee1f2b4c8b975d747205">m_fShiftToCenter</a>        = 0.0f;     </div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="../../d9/d8a/structxii_lens_flare_element.html#a67c4aeb3a1cc4ccd1a9fb2a7e6e4e1be">   46</a></span>  <span class="keywordtype">bool</span>                       <a class="code hl_variable" href="../../d9/d8a/structxii_lens_flare_element.html#a67c4aeb3a1cc4ccd1a9fb2a7e6e4e1be">m_bGreyscaleTexture</a>     = <span class="keyword">false</span>;    </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="../../d9/d8a/structxii_lens_flare_element.html#ad213cdacef81b24b15a4f68e8d43d369">   47</a></span>  <span class="keywordtype">bool</span>                       <a class="code hl_variable" href="../../d9/d8a/structxii_lens_flare_element.html#ad213cdacef81b24b15a4f68e8d43d369">m_bModulateByLightColor</a> = <span class="keyword">true</span>;     </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="../../d9/d8a/structxii_lens_flare_element.html#a46778f812a040f0e94e4d0fffe73d933">   48</a></span>  <span class="keywordtype">bool</span>                       <a class="code hl_variable" href="../../d9/d8a/structxii_lens_flare_element.html#a46778f812a040f0e94e4d0fffe73d933">m_bInverseTonemap</a>       = <span class="keyword">false</span>;    </div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>  <span class="keywordtype">void</span>        SetTextureFile(<span class="keyword">const</span> <span class="keywordtype">char</span>* szFile); <span class="comment">// [ property ]</span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>  <span class="keyword">const</span> <span class="keywordtype">char</span>* GetTextureFile() <span class="keyword">const</span>;             <span class="comment">// [ property ]</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>  <a class="code hl_struct" href="../../dd/dad/structxii_result.html">xiiResult</a> Serialize(<a class="code hl_class" href="../../d0/d18/classxii_stream_writer.html">xiiStreamWriter</a>&amp; inout_stream) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>  <a class="code hl_struct" href="../../dd/dad/structxii_result.html">xiiResult</a> Deserialize(<a class="code hl_class" href="../../d4/d5e/classxii_stream_reader.html">xiiStreamReader</a>&amp; inout_stream);</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>};</div>
+</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>XII_DECLARE_REFLECTABLE_TYPE(XII_GRAPHICSCORE_DLL, <a class="code hl_struct" href="../../d9/d8a/structxii_lens_flare_element.html">xiiLensFlareElement</a>);</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="keyword">using </span><a class="code hl_class" href="../../d4/d5d/classxii_component_manager.html">xiiLensFlareComponentManager</a> = <a class="code hl_class" href="../../d4/d5d/classxii_component_manager.html">xiiComponentManager&lt;class xiiLensFlareComponent, xiiBlockStorageType::Compact&gt;</a>;</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
+<div class="foldopen" id="foldopen00061" data-start="{" data-end="};">
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="../../d6/dc8/classxii_lens_flare_component.html">   61</a></span><span class="keyword">class </span>XII_GRAPHICSCORE_DLL <a class="code hl_class" href="../../d6/dc8/classxii_lens_flare_component.html">xiiLensFlareComponent</a> : <span class="keyword">public</span> <a class="code hl_class" href="../../d2/d2b/classxii_render_component.html">xiiRenderComponent</a></div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>{</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>  XII_DECLARE_COMPONENT_TYPE(<a class="code hl_class" href="../../d6/dc8/classxii_lens_flare_component.html">xiiLensFlareComponent</a>, <a class="code hl_class" href="../../d2/d2b/classxii_render_component.html">xiiRenderComponent</a>, <a class="code hl_class" href="../../d4/d5d/classxii_component_manager.html">xiiLensFlareComponentManager</a>);</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>  <span class="comment">// xiiComponent</span></div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>  <span class="keyword">virtual</span> <span class="keywordtype">void</span> OnActivated() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>  <span class="keyword">virtual</span> <span class="keywordtype">void</span> OnDeactivated() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>  <span class="keyword">virtual</span> <span class="keywordtype">void</span> SerializeComponent(<a class="code hl_class" href="../../de/d8c/classxii_world_writer.html">xiiWorldWriter</a>&amp; inout_stream) <span class="keyword">const override</span>;</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>  <span class="keyword">virtual</span> <span class="keywordtype">void</span> DeserializeComponent(<a class="code hl_class" href="../../df/df8/classxii_world_reader.html">xiiWorldReader</a>&amp; inout_stream) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>  <span class="comment">// xiiRenderComponent</span></div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>  <span class="keyword">virtual</span> <a class="code hl_struct" href="../../dd/dad/structxii_result.html">xiiResult</a> GetLocalBounds(<a class="code hl_class" href="../../d3/d90/classxii_bounding_box_sphere_template.html">xiiBoundingBoxSphere</a>&amp; ref_bounds, <span class="keywordtype">bool</span>&amp; ref_bAlwaysVisible, <a class="code hl_struct" href="../../dc/dc8/structxii_msg_update_local_bounds.html">xiiMsgUpdateLocalBounds</a>&amp; ref_msg) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>  <span class="comment">// xiiLensFlareComponent</span></div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>  <a class="code hl_class" href="../../d6/dc8/classxii_lens_flare_component.html">xiiLensFlareComponent</a>();</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>  <a class="code hl_class" href="../../d6/dc8/classxii_lens_flare_component.html">~xiiLensFlareComponent</a>();</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span> </div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno"><a class="line" href="../../d6/dc8/classxii_lens_flare_component.html#a0adf933d116461fa1707309e84b8d0b0">   90</a></span>  <span class="keywordtype">float</span> m_fIntensity = 1.0f; <span class="comment">// [ property ]</span></div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span> </div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>  <span class="keywordtype">void</span> SetLinkToLightShape(<span class="keywordtype">bool</span> bLink);                            <span class="comment">// [ property ]</span></div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>  <span class="keywordtype">bool</span> GetLinkToLightShape()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_bLinkToLightShape; } <span class="comment">// [ property ]</span></div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span> </div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>  <span class="keywordtype">void</span>  SetOcclusionSampleRadius(<span class="keywordtype">float</span> fRadius);                              <span class="comment">// [ property ]</span></div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>  <span class="keywordtype">float</span> GetOcclusionSampleRadius()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_fOcclusionSampleRadius; } <span class="comment">// [ property ]</span></div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span> </div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno"><a class="line" href="../../d6/dc8/classxii_lens_flare_component.html#a86dc09b22424aab81ccd3e514621894b">  110</a></span>  <span class="keywordtype">float</span> m_fOcclusionSampleSpread = 0.5f; <span class="comment">// [ property ]</span></div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span> </div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno"><a class="line" href="../../d6/dc8/classxii_lens_flare_component.html#a06a6eb134c9f2ee0090468e516818e3c">  114</a></span>  <span class="keywordtype">float</span> m_fOcclusionDepthOffset = 0.0f; <span class="comment">// [ property ]</span></div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span> </div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>  <a class="code hl_class" href="../../d6/d1f/classxii_small_array.html">xiiSmallArray&lt;xiiLensFlareElement, 1&gt;</a> m_Elements; <span class="comment">// [ property ]</span></div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span> </div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>  <span class="keywordtype">void</span> FindLightComponent();</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span> </div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>  <span class="keywordtype">void</span> OnMsgExtractRenderData(<a class="code hl_struct" href="../../d3/d47/structxii_msg_extract_render_data.html">xiiMsgExtractRenderData</a>&amp; msg) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span> </div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>  <span class="keywordtype">float</span> m_fOcclusionSampleRadius = 0.1f;</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>  <span class="keywordtype">bool</span>  m_bLinkToLightShape      = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>  <span class="keywordtype">bool</span>  m_bApplyFog              = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span> </div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>  <span class="keywordtype">bool</span>               m_bDirectionalLight = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>  <a class="code hl_struct" href="../../da/d8d/structxii_component_handle.html">xiiComponentHandle</a> m_hLightComponent;</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>};</div>
+</div>
+<div class="ttc" id="aclassxii_bounding_box_sphere_template_html"><div class="ttname"><a href="../../d3/d90/classxii_bounding_box_sphere_template.html">xiiBoundingBoxSphereTemplate&lt; float &gt;</a></div></div>
+<div class="ttc" id="aclassxii_color_html"><div class="ttname"><a href="../../d3/de6/classxii_color.html">xiiColor</a></div><div class="ttdoc">xiiColor represents an RGBA color in linear color space. Values are stored as float,...</div><div class="ttdef"><b>Definition</b> Color.h:44</div></div>
+<div class="ttc" id="aclassxii_color_html_aa0b01806b94057aecb9945229acb7807"><div class="ttname"><a href="../../d3/de6/classxii_color.html#aa0b01806b94057aecb9945229acb7807">xiiColor::White</a></div><div class="ttdeci">static const xiiColor White</div><div class="ttdoc">#FFFFFF</div><div class="ttdef"><b>Definition</b> Color.h:194</div></div>
+<div class="ttc" id="aclassxii_component_manager_html"><div class="ttname"><a href="../../d4/d5d/classxii_component_manager.html">xiiComponentManager</a></div><div class="ttdef"><b>Definition</b> ComponentManager.h:88</div></div>
+<div class="ttc" id="aclassxii_float16_vec4_html"><div class="ttname"><a href="../../d7/d84/classxii_float16_vec4.html">xiiFloat16Vec4</a></div><div class="ttdoc">A simple helper class to use half-precision floats (xiiFloat16) as vectors.</div><div class="ttdef"><b>Definition</b> Float16.h:76</div></div>
+<div class="ttc" id="aclassxii_lens_flare_component_html"><div class="ttname"><a href="../../d6/dc8/classxii_lens_flare_component.html">xiiLensFlareComponent</a></div><div class="ttdef"><b>Definition</b> LensFlareComponent.h:62</div></div>
+<div class="ttc" id="aclassxii_lens_flare_render_data_html"><div class="ttname"><a href="../../d5/d2a/classxii_lens_flare_render_data.html">xiiLensFlareRenderData</a></div><div class="ttdef"><b>Definition</b> LensFlareComponent.h:15</div></div>
+<div class="ttc" id="aclassxii_render_component_html"><div class="ttname"><a href="../../d2/d2b/classxii_render_component.html">xiiRenderComponent</a></div><div class="ttdef"><b>Definition</b> RenderComponent.h:9</div></div>
+<div class="ttc" id="aclassxii_render_data_html"><div class="ttname"><a href="../../d8/da5/classxii_render_data.html">xiiRenderData</a></div><div class="ttdoc">Base class for all render data. Render data must contain all information that is needed to render the...</div><div class="ttdef"><b>Definition</b> RenderData.h:14</div></div>
+<div class="ttc" id="aclassxii_small_array_html"><div class="ttname"><a href="../../d6/d1f/classxii_small_array.html">xiiSmallArray</a></div><div class="ttdef"><b>Definition</b> SmallArray.h:212</div></div>
+<div class="ttc" id="aclassxii_stream_reader_html"><div class="ttname"><a href="../../d4/d5e/classxii_stream_reader.html">xiiStreamReader</a></div><div class="ttdoc">Interface for binary in (read) streams.</div><div class="ttdef"><b>Definition</b> Stream.h:22</div></div>
+<div class="ttc" id="aclassxii_stream_writer_html"><div class="ttname"><a href="../../d0/d18/classxii_stream_writer.html">xiiStreamWriter</a></div><div class="ttdoc">Interface for binary out (write) streams.</div><div class="ttdef"><b>Definition</b> Stream.h:107</div></div>
+<div class="ttc" id="aclassxii_typed_resource_handle_html"><div class="ttname"><a href="../../d6/d16/classxii_typed_resource_handle.html">xiiTypedResourceHandle&lt; class xiiTexture2DResource &gt;</a></div></div>
+<div class="ttc" id="aclassxii_world_reader_html"><div class="ttname"><a href="../../df/df8/classxii_world_reader.html">xiiWorldReader</a></div><div class="ttdoc">Reads a world description from a stream. Allows to instantiate that world multiple times in different...</div><div class="ttdef"><b>Definition</b> WorldReader.h:47</div></div>
+<div class="ttc" id="aclassxii_world_writer_html"><div class="ttname"><a href="../../de/d8c/classxii_world_writer.html">xiiWorldWriter</a></div><div class="ttdoc">Stores an entire xiiWorld in a stream.</div><div class="ttdef"><b>Definition</b> WorldWriter.h:13</div></div>
+<div class="ttc" id="astructxii_component_handle_html"><div class="ttname"><a href="../../da/d8d/structxii_component_handle.html">xiiComponentHandle</a></div><div class="ttdoc">A handle to a component.</div><div class="ttdef"><b>Definition</b> Declarations.h:138</div></div>
+<div class="ttc" id="astructxii_lens_flare_element_html"><div class="ttname"><a href="../../d9/d8a/structxii_lens_flare_element.html">xiiLensFlareElement</a></div><div class="ttdoc">Represents an individual element of a lens flare.</div><div class="ttdef"><b>Definition</b> LensFlareComponent.h:39</div></div>
+<div class="ttc" id="astructxii_lens_flare_element_html_a23b7aa3d6e9aee1f2b4c8b975d747205"><div class="ttname"><a href="../../d9/d8a/structxii_lens_flare_element.html#a23b7aa3d6e9aee1f2b4c8b975d747205">xiiLensFlareElement::m_fShiftToCenter</a></div><div class="ttdeci">float m_fShiftToCenter</div><div class="ttdoc">Move the element along the lens flare origin to screen center line. 0 is at the lens flare origin,...</div><div class="ttdef"><b>Definition</b> LensFlareComponent.h:45</div></div>
+<div class="ttc" id="astructxii_lens_flare_element_html_a2d7d2d2368dc0421303f50e6cb1f8e38"><div class="ttname"><a href="../../d9/d8a/structxii_lens_flare_element.html#a2d7d2d2368dc0421303f50e6cb1f8e38">xiiLensFlareElement::m_fSize</a></div><div class="ttdeci">float m_fSize</div><div class="ttdoc">World space size.</div><div class="ttdef"><b>Definition</b> LensFlareComponent.h:42</div></div>
+<div class="ttc" id="astructxii_lens_flare_element_html_a46778f812a040f0e94e4d0fffe73d933"><div class="ttname"><a href="../../d9/d8a/structxii_lens_flare_element.html#a46778f812a040f0e94e4d0fffe73d933">xiiLensFlareElement::m_bInverseTonemap</a></div><div class="ttdeci">bool m_bInverseTonemap</div><div class="ttdoc">Apply an inverse tonemapping operation on the final color. This can be useful if the lens flare is no...</div><div class="ttdef"><b>Definition</b> LensFlareComponent.h:48</div></div>
+<div class="ttc" id="astructxii_lens_flare_element_html_a67c4aeb3a1cc4ccd1a9fb2a7e6e4e1be"><div class="ttname"><a href="../../d9/d8a/structxii_lens_flare_element.html#a67c4aeb3a1cc4ccd1a9fb2a7e6e4e1be">xiiLensFlareElement::m_bGreyscaleTexture</a></div><div class="ttdeci">bool m_bGreyscaleTexture</div><div class="ttdoc">Whether the given texture is a greyscale or color texture.</div><div class="ttdef"><b>Definition</b> LensFlareComponent.h:46</div></div>
+<div class="ttc" id="astructxii_lens_flare_element_html_a924e4efd885ecc9c2bda16b2c035d873"><div class="ttname"><a href="../../d9/d8a/structxii_lens_flare_element.html#a924e4efd885ecc9c2bda16b2c035d873">xiiLensFlareElement::m_fAspectRatio</a></div><div class="ttdeci">float m_fAspectRatio</div><div class="ttdoc">Width:height ratio, only height is adjusted while width stays fixed.</div><div class="ttdef"><b>Definition</b> LensFlareComponent.h:44</div></div>
+<div class="ttc" id="astructxii_lens_flare_element_html_ad213cdacef81b24b15a4f68e8d43d369"><div class="ttname"><a href="../../d9/d8a/structxii_lens_flare_element.html#ad213cdacef81b24b15a4f68e8d43d369">xiiLensFlareElement::m_bModulateByLightColor</a></div><div class="ttdeci">bool m_bModulateByLightColor</div><div class="ttdoc">Modulate the element's color by the light color and intensity if the lens flare component is linked t...</div><div class="ttdef"><b>Definition</b> LensFlareComponent.h:47</div></div>
+<div class="ttc" id="astructxii_lens_flare_element_html_af72882e3a34441f1fb9496f8a791cc93"><div class="ttname"><a href="../../d9/d8a/structxii_lens_flare_element.html#af72882e3a34441f1fb9496f8a791cc93">xiiLensFlareElement::m_fMaxScreenSize</a></div><div class="ttdeci">float m_fMaxScreenSize</div><div class="ttdoc">Relative screen space size in 0..1 range.</div><div class="ttdef"><b>Definition</b> LensFlareComponent.h:43</div></div>
+<div class="ttc" id="astructxii_msg_extract_render_data_html"><div class="ttname"><a href="../../d3/d47/structxii_msg_extract_render_data.html">xiiMsgExtractRenderData</a></div><div class="ttdef"><b>Definition</b> RenderData.h:113</div></div>
+<div class="ttc" id="astructxii_msg_set_color_html"><div class="ttname"><a href="../../de/d10/structxii_msg_set_color.html">xiiMsgSetColor</a></div><div class="ttdef"><b>Definition</b> SetColorMessage.h:27</div></div>
+<div class="ttc" id="astructxii_msg_update_local_bounds_html"><div class="ttname"><a href="../../dc/dc8/structxii_msg_update_local_bounds.html">xiiMsgUpdateLocalBounds</a></div><div class="ttdef"><b>Definition</b> UpdateLocalBoundsMessage.h:9</div></div>
+<div class="ttc" id="astructxii_result_html"><div class="ttname"><a href="../../dd/dad/structxii_result.html">xiiResult</a></div><div class="ttdoc">Default enum for returning failure or success, instead of using a bool.</div><div class="ttdef"><b>Definition</b> Types.h:56</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.html">home</a></li><li class="navelem"><a class="el" href="../../dir_1036706e55c22cab35bc1c58ee689f1d.html">runner</a></li><li class="navelem"><a class="el" href="../../dir_629f8151d55d307162ff2d619fb1783d.html">work</a></li><li class="navelem"><a class="el" href="../../dir_1ddc44fe1263a8c7935fa6130b7d9499.html">XII</a></li><li class="navelem"><a class="el" href="../../dir_2c1b6808f12952f4c36e05ba7068379a.html">XII</a></li><li class="navelem"><a class="el" href="../../dir_b5a1c4ecfca018ad24b729e213296d41.html">Source</a></li><li class="navelem"><a class="el" href="../../dir_e321052006a51284e67389ab20037e7c.html">Engine</a></li><li class="navelem"><a class="el" href="../../dir_d1b456933e20132afd1d01c7da962f40.html">GraphicsCore</a></li><li class="navelem"><a class="el" href="../../dir_7a185704c7ec80516af438d594c68393.html">Components</a></li><li class="navelem"><b>LensFlareComponent.h</b></li>
+    <li class="footer">Generated on Mon Jul 1 2024 23:53:12 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+  </ul>
+</div>
+</body>
+</html>

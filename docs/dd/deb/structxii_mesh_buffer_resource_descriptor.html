@@ -1,0 +1,343 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.11.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<!-- BEGIN opengraph metadata -->
+<meta property="og:title" content="XII" />
+<meta property="og:image" content="../../XII-Logo.png" />
+<meta property="og:description" content="An advanced high-performance simulation engine." />
+<meta property="og:url" content="https://www.xiitechnologies.com" />
+<!-- END opengraph metadata -->
+<!-- BEGIN twitter metadata -->
+<meta name="twitter:image:src" content="../../XII-Logo.png" />
+<meta name="twitter:title" content="XII" />
+<meta name="twitter:description" content="An advanced high-performance simulation engine." />
+<!-- END twitter metadata -->
+<title>XII: xiiMeshBufferResourceDescriptor Struct Reference</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link rel="icon" type="image/svg+xml" href="logo.drawio.svg"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="../../toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../custom.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<a href="https://github.com/jothepro/doxygen-awesome-css" class="github-corner" title="View source on GitHub" target="_blank" rel="noopener noreferrer">
+    <svg viewBox="0 0 250 250" width="40" height="40" style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+    <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="../../XII-Logo.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">XII
+   &#160;<span id="projectnumber">1.0.0</span>
+   </div>
+   <div id="projectbrief">A high-performance simulation engine.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(1); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.html','Search',true);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('dd/deb/structxii_mesh_buffer_resource_descriptor.html','../../'); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="../../d9/d5d/structxii_mesh_buffer_resource_descriptor-members.html">List of all members</a>  </div>
+  <div class="headertitle"><div class="title">xiiMeshBufferResourceDescriptor Struct Reference</div></div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a4036f8a210edb67f36fc6857d8971059" id="r_a4036f8a210edb67f36fc6857d8971059"><td class="memItemLeft" align="right" valign="top"><a id="a4036f8a210edb67f36fc6857d8971059" name="a4036f8a210edb67f36fc6857d8971059"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Clear</b> ()</td></tr>
+<tr class="separator:a4036f8a210edb67f36fc6857d8971059"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a116165477b8d254d912b665cc837a445" id="r_a116165477b8d254d912b665cc837a445"><td class="memItemLeft" align="right" valign="top"><a id="a116165477b8d254d912b665cc837a445" name="a116165477b8d254d912b665cc837a445"></a>
+xiiUInt32&#160;</td><td class="memItemRight" valign="bottom"><b>AddStream</b> (<a class="el" href="../../de/dfd/structxii_enum.html">xiiEnum</a>&lt; <a class="el" href="../../dd/d3c/structxii_g_a_l_input_layout_semantic.html">xiiGALInputLayoutSemantic</a> &gt; semantic, <a class="el" href="../../de/dfd/structxii_enum.html">xiiEnum</a>&lt; <a class="el" href="../../d2/de1/structxii_g_a_l_texture_format.html">xiiGALTextureFormat</a> &gt; format)</td></tr>
+<tr class="memdesc:a116165477b8d254d912b665cc837a445"><td class="mdescLeft">&#160;</td><td class="mdescRight">Use this function to add vertex streams to the mesh buffer. The return value is the index of the just added stream. <br /></td></tr>
+<tr class="separator:a116165477b8d254d912b665cc837a445"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72596199f225b14507f9dec15bd3aec7" id="r_a72596199f225b14507f9dec15bd3aec7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a72596199f225b14507f9dec15bd3aec7">AddCommonStreams</a> ()</td></tr>
+<tr class="memdesc:a72596199f225b14507f9dec15bd3aec7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds common vertex streams to the mesh buffer.  <br /></td></tr>
+<tr class="separator:a72596199f225b14507f9dec15bd3aec7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ee03fb1ab888c28939b77cd97434721" id="r_a7ee03fb1ab888c28939b77cd97434721"><td class="memItemLeft" align="right" valign="top"><a id="a7ee03fb1ab888c28939b77cd97434721" name="a7ee03fb1ab888c28939b77cd97434721"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>AllocateStreams</b> (xiiUInt32 uiNumVertices, <a class="el" href="../../de/dfd/structxii_enum.html">xiiEnum</a>&lt; <a class="el" href="../../db/d19/structxii_g_a_l_primitive_topology.html">xiiGALPrimitiveTopology</a> &gt; topology=<a class="el" href="../../db/d19/structxii_g_a_l_primitive_topology.html#a7b7c5b79846d73ceaf06670334c7388ea435d1cf5fe20fb86622c3ae4f2ecdf99">xiiGALPrimitiveTopology::TriangleList</a>, xiiUInt32 uiNumPrimitives=0, bool bZeroFill=false)</td></tr>
+<tr class="memdesc:a7ee03fb1ab888c28939b77cd97434721"><td class="mdescLeft">&#160;</td><td class="mdescRight">After all streams are added, call this to allocate the data for the streams. If uiNumPrimitives is 0, the mesh buffer will not use indexed rendering. <br /></td></tr>
+<tr class="separator:a7ee03fb1ab888c28939b77cd97434721"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47538ea89d76027e7e0658b64ccb358a" id="r_a47538ea89d76027e7e0658b64ccb358a"><td class="memItemLeft" align="right" valign="top"><a id="a47538ea89d76027e7e0658b64ccb358a" name="a47538ea89d76027e7e0658b64ccb358a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>AllocateStreamsFromGeometry</b> (const <a class="el" href="../../d9/dbc/classxii_geometry.html">xiiGeometry</a> &amp;geom, <a class="el" href="../../de/dfd/structxii_enum.html">xiiEnum</a>&lt; <a class="el" href="../../db/d19/structxii_g_a_l_primitive_topology.html">xiiGALPrimitiveTopology</a> &gt; topology=<a class="el" href="../../db/d19/structxii_g_a_l_primitive_topology.html#a7b7c5b79846d73ceaf06670334c7388ea435d1cf5fe20fb86622c3ae4f2ecdf99">xiiGALPrimitiveTopology::TriangleList</a>)</td></tr>
+<tr class="memdesc:a47538ea89d76027e7e0658b64ccb358a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates streams and fills them with data from the <a class="el" href="../../d9/dbc/classxii_geometry.html" title="Provides functions to generate standard geometric shapes, such as boxes, spheres, cylinders,...">xiiGeometry</a>. Only the geometry matching the given topology is used. Streams that do not match any of the data inside the <a class="el" href="../../d9/dbc/classxii_geometry.html" title="Provides functions to generate standard geometric shapes, such as boxes, spheres, cylinders,...">xiiGeometry</a> directly are skipped. <br /></td></tr>
+<tr class="separator:a47538ea89d76027e7e0658b64ccb358a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc6c47956e0f7610273d23746533480f" id="r_abc6c47956e0f7610273d23746533480f"><td class="memItemLeft" align="right" valign="top"><a id="abc6c47956e0f7610273d23746533480f" name="abc6c47956e0f7610273d23746533480f"></a>
+<a class="el" href="../../d0/d60/classxii_array_ptr.html">xiiArrayPtr</a>&lt; const xiiUInt8 &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetVertexBufferData</b> () const</td></tr>
+<tr class="memdesc:abc6c47956e0f7610273d23746533480f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gives read access to the allocated vertex data. <br /></td></tr>
+<tr class="separator:abc6c47956e0f7610273d23746533480f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0303cac192655b806f4941e95bc75e14" id="r_a0303cac192655b806f4941e95bc75e14"><td class="memItemLeft" align="right" valign="top"><a id="a0303cac192655b806f4941e95bc75e14" name="a0303cac192655b806f4941e95bc75e14"></a>
+<a class="el" href="../../d0/d60/classxii_array_ptr.html">xiiArrayPtr</a>&lt; const xiiUInt8 &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetIndexBufferData</b> () const</td></tr>
+<tr class="memdesc:a0303cac192655b806f4941e95bc75e14"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gives read access to the allocated index data. <br /></td></tr>
+<tr class="separator:a0303cac192655b806f4941e95bc75e14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adced61a3e36db0f7955b7c6847be772a" id="r_adced61a3e36db0f7955b7c6847be772a"><td class="memItemLeft" align="right" valign="top"><a id="adced61a3e36db0f7955b7c6847be772a" name="adced61a3e36db0f7955b7c6847be772a"></a>
+<a class="el" href="../../dc/da4/classxii_dynamic_array.html">xiiDynamicArray</a>&lt; xiiUInt8, <a class="el" href="../../d8/d02/structxii_aligned_allocator_wrapper.html">xiiAlignedAllocatorWrapper</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetVertexBufferData</b> ()</td></tr>
+<tr class="memdesc:adced61a3e36db0f7955b7c6847be772a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allows write access to the allocated vertex data. This can be used for copying data fast into the array. <br /></td></tr>
+<tr class="separator:adced61a3e36db0f7955b7c6847be772a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad97a8649d1e64c4f1ab38573b7c803f4" id="r_ad97a8649d1e64c4f1ab38573b7c803f4"><td class="memItemLeft" align="right" valign="top"><a id="ad97a8649d1e64c4f1ab38573b7c803f4" name="ad97a8649d1e64c4f1ab38573b7c803f4"></a>
+<a class="el" href="../../dc/da4/classxii_dynamic_array.html">xiiDynamicArray</a>&lt; xiiUInt8, <a class="el" href="../../d8/d02/structxii_aligned_allocator_wrapper.html">xiiAlignedAllocatorWrapper</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetIndexBufferData</b> ()</td></tr>
+<tr class="memdesc:ad97a8649d1e64c4f1ab38573b7c803f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allows write access to the allocated index data. This can be used for copying data fast into the array. <br /></td></tr>
+<tr class="separator:ad97a8649d1e64c4f1ab38573b7c803f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa513aecebb90718d7f3a117853de555" id="r_aaa513aecebb90718d7f3a117853de555"><td class="memTemplParams" colspan="2">template&lt;typename TYPE &gt; </td></tr>
+<tr class="memitem:aaa513aecebb90718d7f3a117853de555"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#aaa513aecebb90718d7f3a117853de555">SetVertexData</a> (xiiUInt32 uiStream, xiiUInt32 uiVertexIndex, const TYPE &amp;data)</td></tr>
+<tr class="memdesc:aaa513aecebb90718d7f3a117853de555"><td class="mdescLeft">&#160;</td><td class="mdescRight">Slow, but convenient method to write one piece of vertex data at a time into the stream buffer.  <br /></td></tr>
+<tr class="separator:aaa513aecebb90718d7f3a117853de555"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51db00a7847e480ebf9e1a49668a7ee5" id="r_a51db00a7847e480ebf9e1a49668a7ee5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d60/classxii_array_ptr.html">xiiArrayPtr</a>&lt; xiiUInt8 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a51db00a7847e480ebf9e1a49668a7ee5">GetVertexData</a> (xiiUInt32 uiStream, xiiUInt32 uiVertexIndex)</td></tr>
+<tr class="memdesc:a51db00a7847e480ebf9e1a49668a7ee5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Slow, but convenient method to access one piece of vertex data at a time into the stream buffer.  <br /></td></tr>
+<tr class="separator:a51db00a7847e480ebf9e1a49668a7ee5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2a11c26dace4e376117608cc5ba4294" id="r_ae2a11c26dace4e376117608cc5ba4294"><td class="memItemLeft" align="right" valign="top"><a id="ae2a11c26dace4e376117608cc5ba4294" name="ae2a11c26dace4e376117608cc5ba4294"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetPointIndices</b> (xiiUInt32 uiPoint, xiiUInt32 uiVertex0)</td></tr>
+<tr class="memdesc:ae2a11c26dace4e376117608cc5ba4294"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes the vertex index for the given point into the index buffer. <br /></td></tr>
+<tr class="separator:ae2a11c26dace4e376117608cc5ba4294"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1f367b9e8a7fbbc3b1bf75998429a81" id="r_ab1f367b9e8a7fbbc3b1bf75998429a81"><td class="memItemLeft" align="right" valign="top"><a id="ab1f367b9e8a7fbbc3b1bf75998429a81" name="ab1f367b9e8a7fbbc3b1bf75998429a81"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetLineIndices</b> (xiiUInt32 uiLine, xiiUInt32 uiVertex0, xiiUInt32 uiVertex1)</td></tr>
+<tr class="memdesc:ab1f367b9e8a7fbbc3b1bf75998429a81"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes the two vertex indices for the given line into the index buffer. <br /></td></tr>
+<tr class="separator:ab1f367b9e8a7fbbc3b1bf75998429a81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a3f1854cf4588560eb2a2f1875b9f60" id="r_a4a3f1854cf4588560eb2a2f1875b9f60"><td class="memItemLeft" align="right" valign="top"><a id="a4a3f1854cf4588560eb2a2f1875b9f60" name="a4a3f1854cf4588560eb2a2f1875b9f60"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetTriangleIndices</b> (xiiUInt32 uiTriangle, xiiUInt32 uiVertex0, xiiUInt32 uiVertex1, xiiUInt32 uiVertex2)</td></tr>
+<tr class="memdesc:a4a3f1854cf4588560eb2a2f1875b9f60"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes the three vertex indices for the given triangle into the index buffer. <br /></td></tr>
+<tr class="separator:a4a3f1854cf4588560eb2a2f1875b9f60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f2a8b940cf3f682314a48aaddb375f6" id="r_a5f2a8b940cf3f682314a48aaddb375f6"><td class="memItemLeft" align="right" valign="top"><a id="a5f2a8b940cf3f682314a48aaddb375f6" name="a5f2a8b940cf3f682314a48aaddb375f6"></a>
+const <a class="el" href="../../d8/d43/structxii_input_layout_info.html">xiiInputLayoutInfo</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetInputLayout</b> () const</td></tr>
+<tr class="memdesc:a5f2a8b940cf3f682314a48aaddb375f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allows to read the stream info of the descriptor, which is filled out by <a class="el" href="#a116165477b8d254d912b665cc837a445" title="Use this function to add vertex streams to the mesh buffer. The return value is the index of the just...">AddStream()</a> <br /></td></tr>
+<tr class="separator:a5f2a8b940cf3f682314a48aaddb375f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac8caa65741a0523887d19a3fa333768" id="r_aac8caa65741a0523887d19a3fa333768"><td class="memItemLeft" align="right" valign="top"><a id="aac8caa65741a0523887d19a3fa333768" name="aac8caa65741a0523887d19a3fa333768"></a>
+xiiUInt32&#160;</td><td class="memItemRight" valign="bottom"><b>GetVertexDataSize</b> () const</td></tr>
+<tr class="memdesc:aac8caa65741a0523887d19a3fa333768"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the byte size of all the data for one vertex. <br /></td></tr>
+<tr class="separator:aac8caa65741a0523887d19a3fa333768"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a506381f33985b25e44d9ba3d4eaa1bdb" id="r_a506381f33985b25e44d9ba3d4eaa1bdb"><td class="memItemLeft" align="right" valign="top"><a id="a506381f33985b25e44d9ba3d4eaa1bdb" name="a506381f33985b25e44d9ba3d4eaa1bdb"></a>
+xiiUInt32&#160;</td><td class="memItemRight" valign="bottom"><b>GetVertexCount</b> () const</td></tr>
+<tr class="memdesc:a506381f33985b25e44d9ba3d4eaa1bdb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the number of vertices, with which <a class="el" href="#a7ee03fb1ab888c28939b77cd97434721" title="After all streams are added, call this to allocate the data for the streams. If uiNumPrimitives is 0,...">AllocateStreams()</a> was called. <br /></td></tr>
+<tr class="separator:a506381f33985b25e44d9ba3d4eaa1bdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8708a3ac1fe9434626ad88bfdfd982b4" id="r_a8708a3ac1fe9434626ad88bfdfd982b4"><td class="memItemLeft" align="right" valign="top"><a id="a8708a3ac1fe9434626ad88bfdfd982b4" name="a8708a3ac1fe9434626ad88bfdfd982b4"></a>
+xiiUInt32&#160;</td><td class="memItemRight" valign="bottom"><b>GetPrimitiveCount</b> () const</td></tr>
+<tr class="memdesc:a8708a3ac1fe9434626ad88bfdfd982b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of primitives that the array holds. <br /></td></tr>
+<tr class="separator:a8708a3ac1fe9434626ad88bfdfd982b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72d6a277c456ea8831c3285b719ec40c" id="r_a72d6a277c456ea8831c3285b719ec40c"><td class="memItemLeft" align="right" valign="top"><a id="a72d6a277c456ea8831c3285b719ec40c" name="a72d6a277c456ea8831c3285b719ec40c"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>Uses32BitIndices</b> () const</td></tr>
+<tr class="memdesc:a72d6a277c456ea8831c3285b719ec40c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether 16 or 32 Bit indices are to be used. <br /></td></tr>
+<tr class="separator:a72d6a277c456ea8831c3285b719ec40c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0eed29fedc5c58bc967c7e9ec7e2fcb3" id="r_a0eed29fedc5c58bc967c7e9ec7e2fcb3"><td class="memItemLeft" align="right" valign="top"><a id="a0eed29fedc5c58bc967c7e9ec7e2fcb3" name="a0eed29fedc5c58bc967c7e9ec7e2fcb3"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>HasIndexBuffer</b> () const</td></tr>
+<tr class="memdesc:a0eed29fedc5c58bc967c7e9ec7e2fcb3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether an index buffer is available. <br /></td></tr>
+<tr class="separator:a0eed29fedc5c58bc967c7e9ec7e2fcb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8118d45d6372ca04b43a34a5044271f" id="r_ac8118d45d6372ca04b43a34a5044271f"><td class="memItemLeft" align="right" valign="top"><a id="ac8118d45d6372ca04b43a34a5044271f" name="ac8118d45d6372ca04b43a34a5044271f"></a>
+<a class="el" href="../../d3/d90/classxii_bounding_box_sphere_template.html">xiiBoundingBoxSphere</a>&#160;</td><td class="memItemRight" valign="bottom"><b>ComputeBounds</b> () const</td></tr>
+<tr class="memdesc:ac8118d45d6372ca04b43a34a5044271f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the bounds using the data from the position stream. <br /></td></tr>
+<tr class="separator:ac8118d45d6372ca04b43a34a5044271f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82fd5505646ac38046095025de908c26" id="r_a82fd5505646ac38046095025de908c26"><td class="memItemLeft" align="right" valign="top"><a id="a82fd5505646ac38046095025de908c26" name="a82fd5505646ac38046095025de908c26"></a>
+<a class="el" href="../../de/dfd/structxii_enum.html">xiiEnum</a>&lt; <a class="el" href="../../db/d19/structxii_g_a_l_primitive_topology.html">xiiGALPrimitiveTopology</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetTopology</b> () const</td></tr>
+<tr class="memdesc:a82fd5505646ac38046095025de908c26"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the primitive topology. <br /></td></tr>
+<tr class="separator:a82fd5505646ac38046095025de908c26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5298b0da9d77b1545ea8b4ebe8d6c8b6" id="r_a5298b0da9d77b1545ea8b4ebe8d6c8b6"><td class="memItemLeft" align="right" valign="top"><a id="a5298b0da9d77b1545ea8b4ebe8d6c8b6" name="a5298b0da9d77b1545ea8b4ebe8d6c8b6"></a>
+<a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><b>RecomputeNormals</b> ()</td></tr>
+<tr class="separator:a5298b0da9d77b1545ea8b4ebe8d6c8b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a72596199f225b14507f9dec15bd3aec7" name="a72596199f225b14507f9dec15bd3aec7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a72596199f225b14507f9dec15bd3aec7">&#9670;&#160;</a></span>AddCommonStreams()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void xiiMeshBufferResourceDescriptor::AddCommonStreams </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Adds common vertex streams to the mesh buffer. </p>
+<p>The streams are added in this order (with the corresponding stream indices):</p><ul>
+<li>Position (index 0)</li>
+<li>TexCoord0 (index 1)</li>
+<li>Normal (index 2)</li>
+<li>Tangent (index 3) </li>
+</ul>
+
+</div>
+</div>
+<a id="a51db00a7847e480ebf9e1a49668a7ee5" name="a51db00a7847e480ebf9e1a49668a7ee5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a51db00a7847e480ebf9e1a49668a7ee5">&#9670;&#160;</a></span>GetVertexData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d0/d60/classxii_array_ptr.html">xiiArrayPtr</a>&lt; xiiUInt8 &gt; xiiMeshBufferResourceDescriptor::GetVertexData </td>
+          <td>(</td>
+          <td class="paramtype">xiiUInt32</td>          <td class="paramname"><span class="paramname"><em>uiStream</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">xiiUInt32</td>          <td class="paramname"><span class="paramname"><em>uiVertexIndex</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Slow, but convenient method to access one piece of vertex data at a time into the stream buffer. </p>
+<p>uiStream is the index of the data stream to write to. uiVertexIndex is the index of the vertex for which to write the data. </p>
+
+</div>
+</div>
+<a id="aaa513aecebb90718d7f3a117853de555" name="aaa513aecebb90718d7f3a117853de555"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa513aecebb90718d7f3a117853de555">&#9670;&#160;</a></span>SetVertexData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TYPE &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void xiiMeshBufferResourceDescriptor::SetVertexData </td>
+          <td>(</td>
+          <td class="paramtype">xiiUInt32</td>          <td class="paramname"><span class="paramname"><em>uiStream</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">xiiUInt32</td>          <td class="paramname"><span class="paramname"><em>uiVertexIndex</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const TYPE &amp;</td>          <td class="paramname"><span class="paramname"><em>data</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Slow, but convenient method to write one piece of vertex data at a time into the stream buffer. </p>
+<p>uiStream is the index of the data stream to write to. uiVertexIndex is the index of the vertex for which to write the data. data is the piece of data to write to the stream. </p>
+
+</div>
+</div>
+<hr/>The documentation for this struct was generated from the following files:<ul>
+<li>/home/runner/work/XII/XII/Source/Engine/GraphicsCore/Meshes/<a class="el" href="../../d3/d90/_mesh_buffer_resource_8h_source.html">MeshBufferResource.h</a></li>
+<li>/home/runner/work/XII/XII/Source/Engine/GraphicsCore/Meshes/Implementation/<b>MeshBufferResource.cpp</b></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../dd/deb/structxii_mesh_buffer_resource_descriptor.html">xiiMeshBufferResourceDescriptor</a></li>
+    <li class="footer">Generated on Mon Jul 1 2024 23:53:15 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+  </ul>
+</div>
+</body>
+</html>

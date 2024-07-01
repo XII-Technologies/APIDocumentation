@@ -1,0 +1,623 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.11.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<!-- BEGIN opengraph metadata -->
+<meta property="og:title" content="XII" />
+<meta property="og:image" content="../../XII-Logo.png" />
+<meta property="og:description" content="An advanced high-performance simulation engine." />
+<meta property="og:url" content="https://www.xiitechnologies.com" />
+<!-- END opengraph metadata -->
+<!-- BEGIN twitter metadata -->
+<meta name="twitter:image:src" content="../../XII-Logo.png" />
+<meta name="twitter:title" content="XII" />
+<meta name="twitter:description" content="An advanced high-performance simulation engine." />
+<!-- END twitter metadata -->
+<title>XII: xiiTelemetry Class Reference</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link rel="icon" type="image/svg+xml" href="logo.drawio.svg"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="../../toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../custom.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<a href="https://github.com/jothepro/doxygen-awesome-css" class="github-corner" title="View source on GitHub" target="_blank" rel="noopener noreferrer">
+    <svg viewBox="0 0 250 250" width="40" height="40" style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+    <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="../../XII-Logo.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">XII
+   &#160;<span id="projectnumber">1.0.0</span>
+   </div>
+   <div id="projectbrief">A high-performance simulation engine.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(1); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.html','Search',true);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('d9/d32/classxii_telemetry.html','../../'); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#pub-types">Public Types</a> &#124;
+<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
+<a href="#friends">Friends</a> &#124;
+<a href="../../d5/dd9/classxii_telemetry-members.html">List of all members</a>  </div>
+  <div class="headertitle"><div class="title">xiiTelemetry Class Reference</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="../../d4/d27/_telemetry_8h_source.html">Telemetry.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/de3/structxii_telemetry_1_1_telemetry_event_data.html">TelemetryEventData</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:abbf62b23f17def0037ab9d63cba81877" id="r_abbf62b23f17def0037ab9d63cba81877"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abbf62b23f17def0037ab9d63cba81877">ConnectionMode</a> { <a class="el" href="#abbf62b23f17def0037ab9d63cba81877abcc5d32dc4a8576f08ecfc08775aa31e">None</a>
+, <a class="el" href="#abbf62b23f17def0037ab9d63cba81877ac68215209e4a63dbcf5b7e57d899bfde">Server</a>
+, <a class="el" href="#abbf62b23f17def0037ab9d63cba81877a71b72dd606b55031c26311f01bac5cb8">Client</a>
+ }</td></tr>
+<tr class="memdesc:abbf62b23f17def0037ab9d63cba81877"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines how the <a class="el" href="../../d9/d32/classxii_telemetry.html">xiiTelemetry</a> system was configured.  <a href="#abbf62b23f17def0037ab9d63cba81877">More...</a><br /></td></tr>
+<tr class="separator:abbf62b23f17def0037ab9d63cba81877"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa82ec54db35e23b6530979f42ba3802d" id="r_aa82ec54db35e23b6530979f42ba3802d"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa82ec54db35e23b6530979f42ba3802d">TransmitMode</a> { <a class="el" href="#aa82ec54db35e23b6530979f42ba3802dac5dc3b9e6081ff78d37e9aeb3e70d7ae">Reliable</a>
+, <a class="el" href="#aa82ec54db35e23b6530979f42ba3802dae2ddd95faa23e3be27c9649a7dbb51ba">Unreliable</a>
+ }</td></tr>
+<tr class="memdesc:aa82ec54db35e23b6530979f42ba3802d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Describes how to send messages.  <a href="#aa82ec54db35e23b6530979f42ba3802d">More...</a><br /></td></tr>
+<tr class="separator:aa82ec54db35e23b6530979f42ba3802d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr><td colspan="2"><div class="groupHeader">Connection Configuration</div></td></tr>
+<tr class="memitem:af2613e104d95d6ccf6543b95071ac0af" id="r_af2613e104d95d6ccf6543b95071ac0af"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af2613e104d95d6ccf6543b95071ac0af">ConnectToServer</a> (<a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sConnectTo={})</td></tr>
+<tr class="memdesc:af2613e104d95d6ccf6543b95071ac0af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts a connection as a 'Client' to one server.  <br /></td></tr>
+<tr class="separator:af2613e104d95d6ccf6543b95071ac0af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acca0b0f3bd11df3997d9e0bd3b818669" id="r_acca0b0f3bd11df3997d9e0bd3b818669"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acca0b0f3bd11df3997d9e0bd3b818669">CreateServer</a> ()</td></tr>
+<tr class="memdesc:acca0b0f3bd11df3997d9e0bd3b818669"><td class="mdescLeft">&#160;</td><td class="mdescRight">Opens a connection as a server.  <br /></td></tr>
+<tr class="separator:acca0b0f3bd11df3997d9e0bd3b818669"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d219ceed8c0ea9a05d12e0ba0e3fbf5" id="r_a2d219ceed8c0ea9a05d12e0ba0e3fbf5"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2d219ceed8c0ea9a05d12e0ba0e3fbf5">CloseConnection</a> ()</td></tr>
+<tr class="memdesc:a2d219ceed8c0ea9a05d12e0ba0e3fbf5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Closes any connection previously opened using <a class="el" href="#af2613e104d95d6ccf6543b95071ac0af" title="Starts a connection as a &#39;Client&#39; to one server.">ConnectToServer()</a> or <a class="el" href="#acca0b0f3bd11df3997d9e0bd3b818669" title="Opens a connection as a server.">CreateServer()</a>.  <br /></td></tr>
+<tr class="separator:a2d219ceed8c0ea9a05d12e0ba0e3fbf5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">Sending Data</div></td></tr>
+<tr class="memitem:a19341ba4efecc3961219a7481331aaac" id="r_a19341ba4efecc3961219a7481331aaac"><td class="memItemLeft" align="right" valign="top"><a id="a19341ba4efecc3961219a7481331aaac" name="a19341ba4efecc3961219a7481331aaac"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>Broadcast</b> (<a class="el" href="#aa82ec54db35e23b6530979f42ba3802d">TransmitMode</a> tm, xiiUInt32 uiSystemID, xiiUInt32 uiMsgID, const void *pData, xiiUInt32 uiDataBytes)</td></tr>
+<tr class="separator:a19341ba4efecc3961219a7481331aaac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb9a953a4db04753d585560fc3296b6a" id="r_afb9a953a4db04753d585560fc3296b6a"><td class="memItemLeft" align="right" valign="top"><a id="afb9a953a4db04753d585560fc3296b6a" name="afb9a953a4db04753d585560fc3296b6a"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>Broadcast</b> (<a class="el" href="#aa82ec54db35e23b6530979f42ba3802d">TransmitMode</a> tm, xiiUInt32 uiSystemID, xiiUInt32 uiMsgID, <a class="el" href="../../d4/d5e/classxii_stream_reader.html">xiiStreamReader</a> &amp;ref_stream, xiiInt32 iDataBytes=-1)</td></tr>
+<tr class="separator:afb9a953a4db04753d585560fc3296b6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11d1f98831d149bf8bd83988a8c75d85" id="r_a11d1f98831d149bf8bd83988a8c75d85"><td class="memItemLeft" align="right" valign="top"><a id="a11d1f98831d149bf8bd83988a8c75d85" name="a11d1f98831d149bf8bd83988a8c75d85"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>Broadcast</b> (<a class="el" href="#aa82ec54db35e23b6530979f42ba3802d">TransmitMode</a> tm, <a class="el" href="../../db/d6c/classxii_telemetry_message.html">xiiTelemetryMessage</a> &amp;ref_msg)</td></tr>
+<tr class="separator:a11d1f98831d149bf8bd83988a8c75d85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0e4028c5e451540fc4d2e635c18edb0" id="r_ab0e4028c5e451540fc4d2e635c18edb0"><td class="memItemLeft" align="right" valign="top"><a id="ab0e4028c5e451540fc4d2e635c18edb0" name="ab0e4028c5e451540fc4d2e635c18edb0"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>SendToServer</b> (xiiUInt32 uiSystemID, xiiUInt32 uiMsgID, const void *pData=nullptr, xiiUInt32 uiDataBytes=0)</td></tr>
+<tr class="separator:ab0e4028c5e451540fc4d2e635c18edb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1ffdf0786efce80e1569ac077b5c065" id="r_ae1ffdf0786efce80e1569ac077b5c065"><td class="memItemLeft" align="right" valign="top"><a id="ae1ffdf0786efce80e1569ac077b5c065" name="ae1ffdf0786efce80e1569ac077b5c065"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>SendToServer</b> (xiiUInt32 uiSystemID, xiiUInt32 uiMsgID, <a class="el" href="../../d4/d5e/classxii_stream_reader.html">xiiStreamReader</a> &amp;ref_stream, xiiInt32 iDataBytes=-1)</td></tr>
+<tr class="separator:ae1ffdf0786efce80e1569ac077b5c065"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b03a2775e2c24e042bc7ba11ec597c4" id="r_a7b03a2775e2c24e042bc7ba11ec597c4"><td class="memItemLeft" align="right" valign="top"><a id="a7b03a2775e2c24e042bc7ba11ec597c4" name="a7b03a2775e2c24e042bc7ba11ec597c4"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>SendToServer</b> (<a class="el" href="../../db/d6c/classxii_telemetry_message.html">xiiTelemetryMessage</a> &amp;ref_msg)</td></tr>
+<tr class="separator:a7b03a2775e2c24e042bc7ba11ec597c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">Querying State</div></td></tr>
+<tr class="memitem:ae5b4cdea0b93b8f6e5284c3c95ad3d85" id="r_ae5b4cdea0b93b8f6e5284c3c95ad3d85"><td class="memItemLeft" align="right" valign="top"><a id="ae5b4cdea0b93b8f6e5284c3c95ad3d85" name="ae5b4cdea0b93b8f6e5284c3c95ad3d85"></a>
+static <a class="el" href="#abbf62b23f17def0037ab9d63cba81877">ConnectionMode</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetConnectionMode</b> ()</td></tr>
+<tr class="memdesc:ae5b4cdea0b93b8f6e5284c3c95ad3d85"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether the telemetry system is set up as Server, Client or not initialized at all. <br /></td></tr>
+<tr class="separator:ae5b4cdea0b93b8f6e5284c3c95ad3d85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a186255d2c28582a50d8a04043a178c22" id="r_a186255d2c28582a50d8a04043a178c22"><td class="memItemLeft" align="right" valign="top"><a id="a186255d2c28582a50d8a04043a178c22" name="a186255d2c28582a50d8a04043a178c22"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsConnectedToServer</b> ()</td></tr>
+<tr class="memdesc:a186255d2c28582a50d8a04043a178c22"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether a Client has an active connection to a Server. <br /></td></tr>
+<tr class="separator:a186255d2c28582a50d8a04043a178c22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0bbeaa292a7576056530c3a8addd7e5" id="r_ac0bbeaa292a7576056530c3a8addd7e5"><td class="memItemLeft" align="right" valign="top"><a id="ac0bbeaa292a7576056530c3a8addd7e5" name="ac0bbeaa292a7576056530c3a8addd7e5"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsConnectedToClient</b> ()</td></tr>
+<tr class="memdesc:ac0bbeaa292a7576056530c3a8addd7e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether a Server has an active connection to at least one Client. <br /></td></tr>
+<tr class="separator:ac0bbeaa292a7576056530c3a8addd7e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c4a5018b726c26e3a71c0b458012f65" id="r_a8c4a5018b726c26e3a71c0b458012f65"><td class="memItemLeft" align="right" valign="top"><a id="a8c4a5018b726c26e3a71c0b458012f65" name="a8c4a5018b726c26e3a71c0b458012f65"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsConnectedToOther</b> ()</td></tr>
+<tr class="memdesc:a8c4a5018b726c26e3a71c0b458012f65"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether a connection to another application has been made. Does not differentiate between Server and Client mode. <br /></td></tr>
+<tr class="separator:a8c4a5018b726c26e3a71c0b458012f65"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a064f229d492b82e6994b2ba998c4d5f4" id="r_a064f229d492b82e6994b2ba998c4d5f4"><td class="memItemLeft" align="right" valign="top"><a id="a064f229d492b82e6994b2ba998c4d5f4" name="a064f229d492b82e6994b2ba998c4d5f4"></a>
+static <a class="el" href="../../d7/dc1/structxii_time.html">xiiTime</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetPingToServer</b> ()</td></tr>
+<tr class="memdesc:a064f229d492b82e6994b2ba998c4d5f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the last round trip time ('Ping') to the Server. Only meaningful if there is an active connection (see <a class="el" href="#a186255d2c28582a50d8a04043a178c22" title="Returns whether a Client has an active connection to a Server.">IsConnectedToServer()</a> ). <br /></td></tr>
+<tr class="separator:a064f229d492b82e6994b2ba998c4d5f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88df99207c881efacf7f5531d86a027b" id="r_a88df99207c881efacf7f5531d86a027b"><td class="memItemLeft" align="right" valign="top"><a id="a88df99207c881efacf7f5531d86a027b" name="a88df99207c881efacf7f5531d86a027b"></a>
+static <a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetServerName</b> ()</td></tr>
+<tr class="memdesc:a88df99207c881efacf7f5531d86a027b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the name of the machine on which the Server is running. Only meaningful if there is an active connection (see <a class="el" href="#a186255d2c28582a50d8a04043a178c22" title="Returns whether a Client has an active connection to a Server.">IsConnectedToServer()</a> ). <br /></td></tr>
+<tr class="separator:a88df99207c881efacf7f5531d86a027b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2fb66bad54e16cf5dfdeeb8a7b7674df" id="r_a2fb66bad54e16cf5dfdeeb8a7b7674df"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2fb66bad54e16cf5dfdeeb8a7b7674df">SetServerName</a> (<a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sName)</td></tr>
+<tr class="memdesc:a2fb66bad54e16cf5dfdeeb8a7b7674df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the name of the telemetry server. This is broadcast to connected clients, which can display this string for usability.  <br /></td></tr>
+<tr class="separator:a2fb66bad54e16cf5dfdeeb8a7b7674df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ee5ba5c2d35e65451e09db205ca3c73" id="r_a7ee5ba5c2d35e65451e09db205ca3c73"><td class="memItemLeft" align="right" valign="top"><a id="a7ee5ba5c2d35e65451e09db205ca3c73" name="a7ee5ba5c2d35e65451e09db205ca3c73"></a>
+static <a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetServerIP</b> ()</td></tr>
+<tr class="memdesc:a7ee5ba5c2d35e65451e09db205ca3c73"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the IP address of the machine on which the Server is running. Only meaningful if there is an active connection (see <a class="el" href="#a186255d2c28582a50d8a04043a178c22" title="Returns whether a Client has an active connection to a Server.">IsConnectedToServer()</a> ). <br /></td></tr>
+<tr class="separator:a7ee5ba5c2d35e65451e09db205ca3c73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58bf5da78bbc082d8aa9387a314f38c6" id="r_a58bf5da78bbc082d8aa9387a314f38c6"><td class="memItemLeft" align="right" valign="top">static xiiUInt32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a58bf5da78bbc082d8aa9387a314f38c6">GetServerID</a> ()</td></tr>
+<tr class="memdesc:a58bf5da78bbc082d8aa9387a314f38c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a 'unique' ID for the application instance to which this Client is connected.  <br /></td></tr>
+<tr class="separator:a58bf5da78bbc082d8aa9387a314f38c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e7a3f94f00dd62d430cda582e569571" id="r_a6e7a3f94f00dd62d430cda582e569571"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../dd/d52/classxii_mutex.html">xiiMutex</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6e7a3f94f00dd62d430cda582e569571">GetTelemetryMutex</a> ()</td></tr>
+<tr class="memdesc:a6e7a3f94f00dd62d430cda582e569571"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the internal mutex used to synchronize all telemetry data access.  <br /></td></tr>
+<tr class="separator:a6e7a3f94f00dd62d430cda582e569571"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
+Static Public Attributes</h2></td></tr>
+<tr class="memitem:a8af203cdf367661b2501433b4b1b2571" id="r_a8af203cdf367661b2501433b4b1b2571"><td class="memItemLeft" align="right" valign="top"><a id="a8af203cdf367661b2501433b4b1b2571" name="a8af203cdf367661b2501433b4b1b2571"></a>
+static xiiUInt16&#160;</td><td class="memItemRight" valign="bottom"><b>s_uiPort</b> = 1040</td></tr>
+<tr class="memdesc:a8af203cdf367661b2501433b4b1b2571"><td class="mdescLeft">&#160;</td><td class="mdescRight">The port over which <a class="el" href="../../d9/d32/classxii_telemetry.html">xiiTelemetry</a> will connect. <br /></td></tr>
+<tr class="separator:a8af203cdf367661b2501433b4b1b2571"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
+Friends</h2></td></tr>
+<tr class="memitem:a16a90a745fdb22f85e1736e6293d32b2" id="r_a16a90a745fdb22f85e1736e6293d32b2"><td class="memItemLeft" align="right" valign="top"><a id="a16a90a745fdb22f85e1736e6293d32b2" name="a16a90a745fdb22f85e1736e6293d32b2"></a>
+class&#160;</td><td class="memItemRight" valign="bottom"><b>xiiTelemetryThread</b></td></tr>
+<tr class="separator:a16a90a745fdb22f85e1736e6293d32b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader">Processing Messages</h2></td></tr>
+<tr class="memitem:ab4dbf0d76dcd45a439530ef4919034dc" id="r_ab4dbf0d76dcd45a439530ef4919034dc"><td class="memItemLeft" align="right" valign="top"><a id="ab4dbf0d76dcd45a439530ef4919034dc" name="ab4dbf0d76dcd45a439530ef4919034dc"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>ProcessMessagesCallback</b> = void (*)(void*)</td></tr>
+<tr class="separator:ab4dbf0d76dcd45a439530ef4919034dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8420834212b9b467f4e99c1546d7a8cc" id="r_a8420834212b9b467f4e99c1546d7a8cc"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8420834212b9b467f4e99c1546d7a8cc">RetrieveMessage</a> (xiiUInt32 uiSystemID, <a class="el" href="../../db/d6c/classxii_telemetry_message.html">xiiTelemetryMessage</a> &amp;out_message)</td></tr>
+<tr class="memdesc:a8420834212b9b467f4e99c1546d7a8cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether any message for the system with the given ID exists and returns that.  <br /></td></tr>
+<tr class="separator:a8420834212b9b467f4e99c1546d7a8cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae752c3414d0f9aba7d1b268226422fc8" id="r_ae752c3414d0f9aba7d1b268226422fc8"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae752c3414d0f9aba7d1b268226422fc8">UpdateNetwork</a> ()</td></tr>
+<tr class="memdesc:ae752c3414d0f9aba7d1b268226422fc8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Polls the network for new incoming messages and ensures outgoing messages are sent.  <br /></td></tr>
+<tr class="separator:ae752c3414d0f9aba7d1b268226422fc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4de0fe62f833d73cbf715d3988c997e1" id="r_a4de0fe62f833d73cbf715d3988c997e1"><td class="memItemLeft" align="right" valign="top"><a id="a4de0fe62f833d73cbf715d3988c997e1" name="a4de0fe62f833d73cbf715d3988c997e1"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>AcceptMessagesForSystem</b> (xiiUInt32 uiSystemID, bool bAccept, ProcessMessagesCallback callback=nullptr, void *pPassThrough=nullptr)</td></tr>
+<tr class="separator:a4de0fe62f833d73cbf715d3988c997e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a490941212c0f44c3cdfc819abdfada43" id="r_a490941212c0f44c3cdfc819abdfada43"><td class="memItemLeft" align="right" valign="top"><a id="a490941212c0f44c3cdfc819abdfada43" name="a490941212c0f44c3cdfc819abdfada43"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>PerFrameUpdate</b> ()</td></tr>
+<tr class="memdesc:a490941212c0f44c3cdfc819abdfada43"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call this once per frame to process queued messages and to send the PerFrameUpdate event. <br /></td></tr>
+<tr class="separator:a490941212c0f44c3cdfc819abdfada43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab665f028a1f52c57e647902810bec017" id="r_ab665f028a1f52c57e647902810bec017"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab665f028a1f52c57e647902810bec017">SetOutgoingQueueSize</a> (xiiUInt32 uiSystemID, xiiUInt16 uiMaxQueued)</td></tr>
+<tr class="memdesc:ab665f028a1f52c57e647902810bec017"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specifies how many reliable messages from a system might get queued when no recipient is available yet.  <br /></td></tr>
+<tr class="separator:ab665f028a1f52c57e647902810bec017"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader">xiiTelemetry Events</h2></td></tr>
+<tr class="memitem:a812a6c8659bf7be7e8f824d6c1495fd9" id="r_a812a6c8659bf7be7e8f824d6c1495fd9"><td class="memItemLeft" align="right" valign="top"><a id="a812a6c8659bf7be7e8f824d6c1495fd9" name="a812a6c8659bf7be7e8f824d6c1495fd9"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>xiiEventTelemetry</b> = <a class="el" href="../../dc/d22/classxii_event.html">xiiEvent</a>&lt;const <a class="el" href="../../d0/de3/structxii_telemetry_1_1_telemetry_event_data.html">TelemetryEventData</a>&amp;, <a class="el" href="../../dd/d52/classxii_mutex.html">xiiMutex</a>&gt;</td></tr>
+<tr class="separator:a812a6c8659bf7be7e8f824d6c1495fd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09091b420dd21a464053ef5476579a30" id="r_a09091b420dd21a464053ef5476579a30"><td class="memItemLeft" align="right" valign="top"><a id="a09091b420dd21a464053ef5476579a30" name="a09091b420dd21a464053ef5476579a30"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>AddEventHandler</b> (<a class="el" href="../../d0/d7f/classxii_event_base.html#ada90d4faae8102fb84947a77720e2f70">xiiEventTelemetry::Handler</a> handler)</td></tr>
+<tr class="memdesc:a09091b420dd21a464053ef5476579a30"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds an event handler that is called for every <a class="el" href="../../d9/d32/classxii_telemetry.html">xiiTelemetry</a> event. <br /></td></tr>
+<tr class="separator:a09091b420dd21a464053ef5476579a30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb7c98f189481f6d370c1e2267b0905e" id="r_adb7c98f189481f6d370c1e2267b0905e"><td class="memItemLeft" align="right" valign="top"><a id="adb7c98f189481f6d370c1e2267b0905e" name="adb7c98f189481f6d370c1e2267b0905e"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>RemoveEventHandler</b> (<a class="el" href="../../d0/d7f/classxii_event_base.html#ada90d4faae8102fb84947a77720e2f70">xiiEventTelemetry::Handler</a> handler)</td></tr>
+<tr class="memdesc:adb7c98f189481f6d370c1e2267b0905e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes a previously added event handler. <br /></td></tr>
+<tr class="separator:adb7c98f189481f6d370c1e2267b0905e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000031">Todo</a></b></dt><dd>document and test (and finish) </dd></dl>
+</div><h2 class="groupheader">Member Enumeration Documentation</h2>
+<a id="abbf62b23f17def0037ab9d63cba81877" name="abbf62b23f17def0037ab9d63cba81877"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abbf62b23f17def0037ab9d63cba81877">&#9670;&#160;</a></span>ConnectionMode</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="#abbf62b23f17def0037ab9d63cba81877">xiiTelemetry::ConnectionMode</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Defines how the <a class="el" href="../../d9/d32/classxii_telemetry.html">xiiTelemetry</a> system was configured. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="abbf62b23f17def0037ab9d63cba81877abcc5d32dc4a8576f08ecfc08775aa31e" name="abbf62b23f17def0037ab9d63cba81877abcc5d32dc4a8576f08ecfc08775aa31e"></a>None&#160;</td><td class="fielddoc"><p>Not configured yet, at all. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="abbf62b23f17def0037ab9d63cba81877ac68215209e4a63dbcf5b7e57d899bfde" name="abbf62b23f17def0037ab9d63cba81877ac68215209e4a63dbcf5b7e57d899bfde"></a>Server&#160;</td><td class="fielddoc"><p>Set up as a Server, i.e. this is an application that broadcasts information about its current state to one or several Clients. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="abbf62b23f17def0037ab9d63cba81877a71b72dd606b55031c26311f01bac5cb8" name="abbf62b23f17def0037ab9d63cba81877a71b72dd606b55031c26311f01bac5cb8"></a>Client&#160;</td><td class="fielddoc"><p>Set up as a Client, i.e. this is a tool that gathers information from a Server, usually for debugging/inspection use cases. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="aa82ec54db35e23b6530979f42ba3802d" name="aa82ec54db35e23b6530979f42ba3802d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa82ec54db35e23b6530979f42ba3802d">&#9670;&#160;</a></span>TransmitMode</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="#aa82ec54db35e23b6530979f42ba3802d">xiiTelemetry::TransmitMode</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Describes how to send messages. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="aa82ec54db35e23b6530979f42ba3802dac5dc3b9e6081ff78d37e9aeb3e70d7ae" name="aa82ec54db35e23b6530979f42ba3802dac5dc3b9e6081ff78d37e9aeb3e70d7ae"></a>Reliable&#160;</td><td class="fielddoc"><p>Messages should definitely arrive at the target, if necessary they are send several times, until the target acknowledged it. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa82ec54db35e23b6530979f42ba3802dae2ddd95faa23e3be27c9649a7dbb51ba" name="aa82ec54db35e23b6530979f42ba3802dae2ddd95faa23e3be27c9649a7dbb51ba"></a>Unreliable&#160;</td><td class="fielddoc"><p>Messages are sent at most once, if they get lost, they are not resend. If it is known beforehand, that not receiver exists, they are dropped without sending them at all. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a2d219ceed8c0ea9a05d12e0ba0e3fbf5" name="a2d219ceed8c0ea9a05d12e0ba0e3fbf5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d219ceed8c0ea9a05d12e0ba0e3fbf5">&#9670;&#160;</a></span>CloseConnection()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void xiiTelemetry::CloseConnection </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Closes any connection previously opened using <a class="el" href="#af2613e104d95d6ccf6543b95071ac0af" title="Starts a connection as a &#39;Client&#39; to one server.">ConnectToServer()</a> or <a class="el" href="#acca0b0f3bd11df3997d9e0bd3b818669" title="Opens a connection as a server.">CreateServer()</a>. </p>
+<p>This will remove all queued incoming and outgoing messages (though it might send some of them still). It will not reset the state of which messages are filtered out or which callbacks to fire. </p>
+
+</div>
+</div>
+<a id="af2613e104d95d6ccf6543b95071ac0af" name="af2613e104d95d6ccf6543b95071ac0af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af2613e104d95d6ccf6543b95071ac0af">&#9670;&#160;</a></span>ConnectToServer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a> xiiTelemetry::ConnectToServer </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a></td>          <td class="paramname"><span class="paramname"><em>sConnectTo</em></span><span class="paramdefsep"> = </span><span class="paramdefval">{}</span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Starts a connection as a 'Client' to one server. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">szConnectTo</td><td>String that contains a host name or IP address to connect to. If empty, 'localhost' is used.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>Connections to invalid host names often succeed, because the underlying network API will fall back to 'localhost'. Connections to invalid IP addresses will however always fail.</dd></dl>
+<p>This function will set the <a class="el" href="../../d9/d32/classxii_telemetry.html">xiiTelemetry</a> connection mode to 'Client'. This is mutually exclusive with <a class="el" href="#acca0b0f3bd11df3997d9e0bd3b818669" title="Opens a connection as a server.">CreateServer()</a>. </p>
+
+</div>
+</div>
+<a id="acca0b0f3bd11df3997d9e0bd3b818669" name="acca0b0f3bd11df3997d9e0bd3b818669"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acca0b0f3bd11df3997d9e0bd3b818669">&#9670;&#160;</a></span>CreateServer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void xiiTelemetry::CreateServer </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Opens a connection as a server. </p>
+<p>Other applications can then connect to this application using <a class="el" href="#af2613e104d95d6ccf6543b95071ac0af" title="Starts a connection as a &#39;Client&#39; to one server.">ConnectToServer()</a> with the IP of this machine. </p>
+
+</div>
+</div>
+<a id="a58bf5da78bbc082d8aa9387a314f38c6" name="a58bf5da78bbc082d8aa9387a314f38c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a58bf5da78bbc082d8aa9387a314f38c6">&#9670;&#160;</a></span>GetServerID()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static xiiUInt32 xiiTelemetry::GetServerID </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns a 'unique' ID for the application instance to which this Client is connected. </p>
+<p>Only meaningful if there is an active connection (see <a class="el" href="#a186255d2c28582a50d8a04043a178c22" title="Returns whether a Client has an active connection to a Server.">IsConnectedToServer()</a> ). This can be used when a connection got lost and a Client had to reconnect to the Server, to check whether the instance that the Client connected to is still the same as before. If it did not change, the application can simply continue gathering data. Otherwise it should clear its state and start from scratch. </p>
+
+</div>
+</div>
+<a id="a6e7a3f94f00dd62d430cda582e569571" name="a6e7a3f94f00dd62d430cda582e569571"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e7a3f94f00dd62d430cda582e569571">&#9670;&#160;</a></span>GetTelemetryMutex()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dd/d52/classxii_mutex.html">xiiMutex</a> &amp; xiiTelemetry::GetTelemetryMutex </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the internal mutex used to synchronize all telemetry data access. </p>
+<p>This can be used to block all threads from accessing telemetry data, thus stopping the application. This can be useful when you want to implement some operation that is fully synchronous with some external tool and you want to wait for its response and prevent all other actions while you wait for that. </p>
+
+</div>
+</div>
+<a id="a8420834212b9b467f4e99c1546d7a8cc" name="a8420834212b9b467f4e99c1546d7a8cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8420834212b9b467f4e99c1546d7a8cc">&#9670;&#160;</a></span>RetrieveMessage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a> xiiTelemetry::RetrieveMessage </td>
+          <td>(</td>
+          <td class="paramtype">xiiUInt32</td>          <td class="paramname"><span class="paramname"><em>uiSystemID</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../db/d6c/classxii_telemetry_message.html">xiiTelemetryMessage</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>out_message</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Checks whether any message for the system with the given ID exists and returns that. </p>
+<p>If no message for the given system is available, XII_FAILURE is returned. This function will not poll the network to check whether new messages arrived. Use <a class="el" href="#ae752c3414d0f9aba7d1b268226422fc8" title="Polls the network for new incoming messages and ensures outgoing messages are sent.">UpdateNetwork()</a> and <a class="el" href="#a8420834212b9b467f4e99c1546d7a8cc" title="Checks whether any message for the system with the given ID exists and returns that.">RetrieveMessage()</a> in a loop, if you are waiting for a specific message, to continuously update the network state and check whether the desired message has arrived. However, if you do so, you will be able to deadlock your application, if such a message never arrives. Also it might fill up other message queues which might lead to messages getting discarded. </p>
+
+</div>
+</div>
+<a id="ab665f028a1f52c57e647902810bec017" name="ab665f028a1f52c57e647902810bec017"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab665f028a1f52c57e647902810bec017">&#9670;&#160;</a></span>SetOutgoingQueueSize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void xiiTelemetry::SetOutgoingQueueSize </td>
+          <td>(</td>
+          <td class="paramtype">xiiUInt32</td>          <td class="paramname"><span class="paramname"><em>uiSystemID</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">xiiUInt16</td>          <td class="paramname"><span class="paramname"><em>uiMaxQueued</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Specifies how many reliable messages from a system might get queued when no recipient is available yet. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">uiSystemID</td><td>The ID for the system that sends the messages. </td></tr>
+    <tr><td class="paramname">uiMaxQueued</td><td>The maximum number of reliable messages that get queued and delivered later, once a proper recipient is available. Set this to zero to discard all messages from a system, when no recipient is available.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>The default queue size is 1000. When a connection to a suitable recipient is made, all queued messages are delivered in one burst. </p>
+
+</div>
+</div>
+<a id="a2fb66bad54e16cf5dfdeeb8a7b7674df" name="a2fb66bad54e16cf5dfdeeb8a7b7674df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2fb66bad54e16cf5dfdeeb8a7b7674df">&#9670;&#160;</a></span>SetServerName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void xiiTelemetry::SetServerName </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a></td>          <td class="paramname"><span class="paramname"><em>sName</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets the name of the telemetry server. This is broadcast to connected clients, which can display this string for usability. </p>
+<p>Usually this would be used to send the application name, to make it easier to see to which app the tool is connected, but setting a custom name can be used to add important details, e.g. whether the app is running in single-player or multi-player mode etc. The server name can be changed at any time. </p>
+
+</div>
+</div>
+<a id="ae752c3414d0f9aba7d1b268226422fc8" name="ae752c3414d0f9aba7d1b268226422fc8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae752c3414d0f9aba7d1b268226422fc8">&#9670;&#160;</a></span>UpdateNetwork()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void xiiTelemetry::UpdateNetwork </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Polls the network for new incoming messages and ensures outgoing messages are sent. </p>
+<p>Usually it is not necessary to call this function manually, as a worker thread will do that periodically already. However, if you are waiting for a specific message (see <a class="el" href="#a8420834212b9b467f4e99c1546d7a8cc" title="Checks whether any message for the system with the given ID exists and returns that.">RetrieveMessage()</a> ), you can call this function in a loop together with <a class="el" href="#a8420834212b9b467f4e99c1546d7a8cc" title="Checks whether any message for the system with the given ID exists and returns that.">RetrieveMessage()</a> to wait for that message. In that case it might also make sense to use <a class="el" href="#a6e7a3f94f00dd62d430cda582e569571" title="Returns the internal mutex used to synchronize all telemetry data access.">GetTelemetryMutex()</a> to lock the entire section while waiting for the message. </p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li>/home/runner/work/XII/XII/Source/Engine/Foundation/Communication/<a class="el" href="../../d4/d27/_telemetry_8h_source.html">Telemetry.h</a></li>
+<li>/home/runner/work/XII/XII/Source/Engine/Foundation/Communication/Implementation/<b>Telemetry.cpp</b></li>
+<li>/home/runner/work/XII/XII/Source/Engine/Foundation/Communication/Implementation/<b>TelemetryHelpers.cpp</b></li>
+<li>/home/runner/work/XII/XII/Source/Engine/Foundation/Communication/Implementation/<b>TelemetryThread.cpp</b></li>
+<li>/home/runner/work/XII/XII/Source/EnginePlugins/InspectorPlugin/<b>InspectorPlugin.cpp</b></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../d9/d32/classxii_telemetry.html">xiiTelemetry</a></li>
+    <li class="footer">Generated on Mon Jul 1 2024 23:53:16 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+  </ul>
+</div>
+</body>
+</html>

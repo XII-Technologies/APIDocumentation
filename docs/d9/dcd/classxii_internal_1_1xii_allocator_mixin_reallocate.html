@@ -1,0 +1,201 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.11.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<!-- BEGIN opengraph metadata -->
+<meta property="og:title" content="XII" />
+<meta property="og:image" content="../../XII-Logo.png" />
+<meta property="og:description" content="An advanced high-performance simulation engine." />
+<meta property="og:url" content="https://www.xiitechnologies.com" />
+<!-- END opengraph metadata -->
+<!-- BEGIN twitter metadata -->
+<meta name="twitter:image:src" content="../../XII-Logo.png" />
+<meta name="twitter:title" content="XII" />
+<meta name="twitter:description" content="An advanced high-performance simulation engine." />
+<!-- END twitter metadata -->
+<title>XII: xiiInternal::xiiAllocatorMixinReallocate&lt; AllocationPolicy, TrackingMode, HasReallocate &gt; Class Template Reference</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link rel="icon" type="image/svg+xml" href="logo.drawio.svg"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="../../toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../custom.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<a href="https://github.com/jothepro/doxygen-awesome-css" class="github-corner" title="View source on GitHub" target="_blank" rel="noopener noreferrer">
+    <svg viewBox="0 0 250 250" width="40" height="40" style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+    <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="../../XII-Logo.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">XII
+   &#160;<span id="projectnumber">1.0.0</span>
+   </div>
+   <div id="projectbrief">A high-performance simulation engine.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(1); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.html','Search',true);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('d9/dcd/classxii_internal_1_1xii_allocator_mixin_reallocate.html','../../'); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="../../d3/d87/classxii_internal_1_1xii_allocator_mixin_reallocate-members.html">List of all members</a>  </div>
+  <div class="headertitle"><div class="title">xiiInternal::xiiAllocatorMixinReallocate&lt; AllocationPolicy, TrackingMode, HasReallocate &gt; Class Template Reference</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+Inheritance diagram for xiiInternal::xiiAllocatorMixinReallocate&lt; AllocationPolicy, TrackingMode, HasReallocate &gt;:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d4/d2b/classxii_internal_1_1xii_allocator_mixin_reallocate__inherit__graph.svg" width="262" height="242"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">legend</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a0683886e9fb0c833e0577242ac6998f7" id="r_a0683886e9fb0c833e0577242ac6998f7"><td class="memItemLeft" align="right" valign="top"><a id="a0683886e9fb0c833e0577242ac6998f7" name="a0683886e9fb0c833e0577242ac6998f7"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>xiiAllocatorMixinReallocate</b> (<a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sName, <a class="el" href="../../d5/d66/classxii_allocator_base.html">xiiAllocatorBase</a> *pParent)</td></tr>
+<tr class="separator:a0683886e9fb0c833e0577242ac6998f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classxii_internal_1_1xii_allocator_impl"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_classxii_internal_1_1xii_allocator_impl')"><img src="../../closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="../../d4/deb/classxii_internal_1_1xii_allocator_impl.html">xiiInternal::xiiAllocatorImpl&lt; AllocationPolicy, TrackingMode &gt;</a></td></tr>
+<tr class="memitem:ad14e43914c6d73b93b8ac2040029350e inherit pub_methods_classxii_internal_1_1xii_allocator_impl" id="r_ad14e43914c6d73b93b8ac2040029350e"><td class="memItemLeft" align="right" valign="top">
+&#160;</td><td class="memItemRight" valign="bottom"><b>xiiAllocatorImpl</b> (<a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sName, <a class="el" href="../../d5/d66/classxii_allocator_base.html">xiiAllocatorBase</a> *pParent)</td></tr>
+<tr class="separator:ad14e43914c6d73b93b8ac2040029350e inherit pub_methods_classxii_internal_1_1xii_allocator_impl"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7be5d2998457bab16d3b1a9d3c35322b inherit pub_methods_classxii_internal_1_1xii_allocator_impl" id="r_a7be5d2998457bab16d3b1a9d3c35322b"><td class="memItemLeft" align="right" valign="top">virtual void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/deb/classxii_internal_1_1xii_allocator_impl.html#a7be5d2998457bab16d3b1a9d3c35322b">Allocate</a> (size_t uiSize, size_t uiAlign, xiiMemoryUtils::DestructorFunction destructorFunc=nullptr) override</td></tr>
+<tr class="memdesc:a7be5d2998457bab16d3b1a9d3c35322b inherit pub_methods_classxii_internal_1_1xii_allocator_impl"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interface, do not use this directly, always use the new/delete macros below.  <br /></td></tr>
+<tr class="separator:a7be5d2998457bab16d3b1a9d3c35322b inherit pub_methods_classxii_internal_1_1xii_allocator_impl"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad746c34e02eb0f1f16399c74dfa2217e inherit pub_methods_classxii_internal_1_1xii_allocator_impl" id="r_ad746c34e02eb0f1f16399c74dfa2217e"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/deb/classxii_internal_1_1xii_allocator_impl.html#ad746c34e02eb0f1f16399c74dfa2217e">Deallocate</a> (void *pPtr) override</td></tr>
+<tr class="separator:ad746c34e02eb0f1f16399c74dfa2217e inherit pub_methods_classxii_internal_1_1xii_allocator_impl"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a656f2f6ccc8e9a5c690ee672e4501259 inherit pub_methods_classxii_internal_1_1xii_allocator_impl" id="r_a656f2f6ccc8e9a5c690ee672e4501259"><td class="memItemLeft" align="right" valign="top">virtual size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/deb/classxii_internal_1_1xii_allocator_impl.html#a656f2f6ccc8e9a5c690ee672e4501259">AllocatedSize</a> (const void *pPtr) override</td></tr>
+<tr class="memdesc:a656f2f6ccc8e9a5c690ee672e4501259 inherit pub_methods_classxii_internal_1_1xii_allocator_impl"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of bytes allocated at this address.  <br /></td></tr>
+<tr class="separator:a656f2f6ccc8e9a5c690ee672e4501259 inherit pub_methods_classxii_internal_1_1xii_allocator_impl"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e809cc96210c506fe20962d19c380ca inherit pub_methods_classxii_internal_1_1xii_allocator_impl" id="r_a4e809cc96210c506fe20962d19c380ca"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d0/dcc/structxii_generic_id.html">xiiAllocatorId</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/deb/classxii_internal_1_1xii_allocator_impl.html#a4e809cc96210c506fe20962d19c380ca">GetId</a> () const override</td></tr>
+<tr class="separator:a4e809cc96210c506fe20962d19c380ca inherit pub_methods_classxii_internal_1_1xii_allocator_impl"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a226c770bcf464bfe1cd0946621dbe23e inherit pub_methods_classxii_internal_1_1xii_allocator_impl" id="r_a226c770bcf464bfe1cd0946621dbe23e"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d1/d87/structxii_allocator_base_1_1_stats.html">Stats</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/deb/classxii_internal_1_1xii_allocator_impl.html#a226c770bcf464bfe1cd0946621dbe23e">GetStats</a> () const override</td></tr>
+<tr class="separator:a226c770bcf464bfe1cd0946621dbe23e inherit pub_methods_classxii_internal_1_1xii_allocator_impl"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43a85022661450c9ba7e97468e706527 inherit pub_methods_classxii_internal_1_1xii_allocator_impl" id="r_a43a85022661450c9ba7e97468e706527"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="../../d5/d66/classxii_allocator_base.html">xiiAllocatorBase</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetParent</b> () const</td></tr>
+<tr class="separator:a43a85022661450c9ba7e97468e706527 inherit pub_methods_classxii_internal_1_1xii_allocator_impl"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classxii_allocator_base"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_classxii_allocator_base')"><img src="../../closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="../../d5/d66/classxii_allocator_base.html">xiiAllocatorBase</a></td></tr>
+<tr class="memitem:a513d4d045fb7deae7dc2430c52fcdb48 inherit pub_methods_classxii_allocator_base" id="r_a513d4d045fb7deae7dc2430c52fcdb48"><td class="memItemLeft" align="right" valign="top">
+virtual void *&#160;</td><td class="memItemRight" valign="bottom"><b>Reallocate</b> (void *pPtr, size_t uiCurrentSize, size_t uiNewSize, size_t uiAlign)</td></tr>
+<tr class="separator:a513d4d045fb7deae7dc2430c52fcdb48 inherit pub_methods_classxii_allocator_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pro_attribs_classxii_internal_1_1xii_allocator_impl"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_attribs_classxii_internal_1_1xii_allocator_impl')"><img src="../../closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="../../d4/deb/classxii_internal_1_1xii_allocator_impl.html">xiiInternal::xiiAllocatorImpl&lt; AllocationPolicy, TrackingMode &gt;</a></td></tr>
+<tr class="memitem:abee8c6d758932a9685c17ac0f9108d6f inherit pro_attribs_classxii_internal_1_1xii_allocator_impl" id="r_abee8c6d758932a9685c17ac0f9108d6f"><td class="memItemLeft" align="right" valign="top">
+AllocationPolicy&#160;</td><td class="memItemRight" valign="bottom"><b>m_allocator</b></td></tr>
+<tr class="separator:abee8c6d758932a9685c17ac0f9108d6f inherit pro_attribs_classxii_internal_1_1xii_allocator_impl"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77a59f963d3bd97e2dbc25c47f334075 inherit pro_attribs_classxii_internal_1_1xii_allocator_impl" id="r_a77a59f963d3bd97e2dbc25c47f334075"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="../../d0/dcc/structxii_generic_id.html">xiiAllocatorId</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_Id</b></td></tr>
+<tr class="separator:a77a59f963d3bd97e2dbc25c47f334075 inherit pro_attribs_classxii_internal_1_1xii_allocator_impl"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7866b21b9870962ed9275a69197ec0e6 inherit pro_attribs_classxii_internal_1_1xii_allocator_impl" id="r_a7866b21b9870962ed9275a69197ec0e6"><td class="memItemLeft" align="right" valign="top">
+xiiThreadID&#160;</td><td class="memItemRight" valign="bottom"><b>m_ThreadID</b></td></tr>
+<tr class="separator:a7866b21b9870962ed9275a69197ec0e6 inherit pro_attribs_classxii_internal_1_1xii_allocator_impl"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li>/home/runner/work/XII/XII/Source/Engine/Foundation/Memory/Implementation/<a class="el" href="../../dc/df3/_allocator__inl_8h_source.html">Allocator_inl.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><b>xiiInternal</b></li><li class="navelem"><a class="el" href="../../d9/dcd/classxii_internal_1_1xii_allocator_mixin_reallocate.html">xiiAllocatorMixinReallocate</a></li>
+    <li class="footer">Generated on Mon Jul 1 2024 23:53:17 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+  </ul>
+</div>
+</body>
+</html>

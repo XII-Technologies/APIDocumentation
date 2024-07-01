@@ -1,0 +1,237 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.11.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<!-- BEGIN opengraph metadata -->
+<meta property="og:title" content="XII" />
+<meta property="og:image" content="../../XII-Logo.png" />
+<meta property="og:description" content="An advanced high-performance simulation engine." />
+<meta property="og:url" content="https://www.xiitechnologies.com" />
+<!-- END opengraph metadata -->
+<!-- BEGIN twitter metadata -->
+<meta name="twitter:image:src" content="../../XII-Logo.png" />
+<meta name="twitter:title" content="XII" />
+<meta name="twitter:description" content="An advanced high-performance simulation engine." />
+<!-- END twitter metadata -->
+<title>XII: xiiSelectionActions Class Reference</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link rel="icon" type="image/svg+xml" href="logo.drawio.svg"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="../../toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../custom.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<a href="https://github.com/jothepro/doxygen-awesome-css" class="github-corner" title="View source on GitHub" target="_blank" rel="noopener noreferrer">
+    <svg viewBox="0 0 250 250" width="40" height="40" style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+    <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="../../XII-Logo.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">XII
+   &#160;<span id="projectnumber">1.0.0</span>
+   </div>
+   <div id="projectbrief">A high-performance simulation engine.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(1); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.html','Search',true);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('d5/d00/classxii_selection_actions.html','../../'); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
+<a href="../../da/d70/classxii_selection_actions-members.html">List of all members</a>  </div>
+  <div class="headertitle"><div class="title">xiiSelectionActions Class Reference</div></div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a68edb53926855cc00555b5eda95f0c2f" id="r_a68edb53926855cc00555b5eda95f0c2f"><td class="memItemLeft" align="right" valign="top"><a id="a68edb53926855cc00555b5eda95f0c2f" name="a68edb53926855cc00555b5eda95f0c2f"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>RegisterActions</b> ()</td></tr>
+<tr class="separator:a68edb53926855cc00555b5eda95f0c2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64dc0055d545e43c54753a521abfc116" id="r_a64dc0055d545e43c54753a521abfc116"><td class="memItemLeft" align="right" valign="top"><a id="a64dc0055d545e43c54753a521abfc116" name="a64dc0055d545e43c54753a521abfc116"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>UnregisterActions</b> ()</td></tr>
+<tr class="separator:a64dc0055d545e43c54753a521abfc116"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05458dbc431a00f474c58057ad6dac49" id="r_a05458dbc431a00f474c58057ad6dac49"><td class="memItemLeft" align="right" valign="top"><a id="a05458dbc431a00f474c58057ad6dac49" name="a05458dbc431a00f474c58057ad6dac49"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>MapActions</b> (<a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sMapping)</td></tr>
+<tr class="separator:a05458dbc431a00f474c58057ad6dac49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a2d846c326c829b03e5a9f4b3875ec1" id="r_a0a2d846c326c829b03e5a9f4b3875ec1"><td class="memItemLeft" align="right" valign="top"><a id="a0a2d846c326c829b03e5a9f4b3875ec1" name="a0a2d846c326c829b03e5a9f4b3875ec1"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>MapPrefabActions</b> (<a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sMapping, float fPriority)</td></tr>
+<tr class="separator:a0a2d846c326c829b03e5a9f4b3875ec1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26f4f75bb646c67887e03332645d85a0" id="r_a26f4f75bb646c67887e03332645d85a0"><td class="memItemLeft" align="right" valign="top"><a id="a26f4f75bb646c67887e03332645d85a0" name="a26f4f75bb646c67887e03332645d85a0"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>MapContextMenuActions</b> (<a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sMapping)</td></tr>
+<tr class="separator:a26f4f75bb646c67887e03332645d85a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd8c88907e9583c639bbb7fe732fd662" id="r_acd8c88907e9583c639bbb7fe732fd662"><td class="memItemLeft" align="right" valign="top"><a id="acd8c88907e9583c639bbb7fe732fd662" name="acd8c88907e9583c639bbb7fe732fd662"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>MapViewContextMenuActions</b> (<a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sMapping)</td></tr>
+<tr class="separator:acd8c88907e9583c639bbb7fe732fd662"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
+Static Public Attributes</h2></td></tr>
+<tr class="memitem:a0bf26333ec6a0e8e51b9b0ca3eabde4d" id="r_a0bf26333ec6a0e8e51b9b0ca3eabde4d"><td class="memItemLeft" align="right" valign="top"><a id="a0bf26333ec6a0e8e51b9b0ca3eabde4d" name="a0bf26333ec6a0e8e51b9b0ca3eabde4d"></a>
+static <a class="el" href="../../df/dcf/classxii_action_descriptor_handle.html">xiiActionDescriptorHandle</a>&#160;</td><td class="memItemRight" valign="bottom"><b>s_hGroupSelectedItems</b></td></tr>
+<tr class="separator:a0bf26333ec6a0e8e51b9b0ca3eabde4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4cbad65e94e2ff95ec7a6f042d334dbd" id="r_a4cbad65e94e2ff95ec7a6f042d334dbd"><td class="memItemLeft" align="right" valign="top"><a id="a4cbad65e94e2ff95ec7a6f042d334dbd" name="a4cbad65e94e2ff95ec7a6f042d334dbd"></a>
+static <a class="el" href="../../df/dcf/classxii_action_descriptor_handle.html">xiiActionDescriptorHandle</a>&#160;</td><td class="memItemRight" valign="bottom"><b>s_hCreateEmptyChildObject</b></td></tr>
+<tr class="separator:a4cbad65e94e2ff95ec7a6f042d334dbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd983baefb26c3bdb29d5d1f23c1eed6" id="r_abd983baefb26c3bdb29d5d1f23c1eed6"><td class="memItemLeft" align="right" valign="top"><a id="abd983baefb26c3bdb29d5d1f23c1eed6" name="abd983baefb26c3bdb29d5d1f23c1eed6"></a>
+static <a class="el" href="../../df/dcf/classxii_action_descriptor_handle.html">xiiActionDescriptorHandle</a>&#160;</td><td class="memItemRight" valign="bottom"><b>s_hCreateEmptyObjectAtPosition</b></td></tr>
+<tr class="separator:abd983baefb26c3bdb29d5d1f23c1eed6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a38b71b6bc45776c9f44b575c7dc04c" id="r_a3a38b71b6bc45776c9f44b575c7dc04c"><td class="memItemLeft" align="right" valign="top"><a id="a3a38b71b6bc45776c9f44b575c7dc04c" name="a3a38b71b6bc45776c9f44b575c7dc04c"></a>
+static <a class="el" href="../../df/dcf/classxii_action_descriptor_handle.html">xiiActionDescriptorHandle</a>&#160;</td><td class="memItemRight" valign="bottom"><b>s_hHideSelectedObjects</b></td></tr>
+<tr class="separator:a3a38b71b6bc45776c9f44b575c7dc04c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a004b81889858876553d8f7a909363fd8" id="r_a004b81889858876553d8f7a909363fd8"><td class="memItemLeft" align="right" valign="top"><a id="a004b81889858876553d8f7a909363fd8" name="a004b81889858876553d8f7a909363fd8"></a>
+static <a class="el" href="../../df/dcf/classxii_action_descriptor_handle.html">xiiActionDescriptorHandle</a>&#160;</td><td class="memItemRight" valign="bottom"><b>s_hHideUnselectedObjects</b></td></tr>
+<tr class="separator:a004b81889858876553d8f7a909363fd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0a2cdc73249c01d45715d2002bc1894" id="r_af0a2cdc73249c01d45715d2002bc1894"><td class="memItemLeft" align="right" valign="top"><a id="af0a2cdc73249c01d45715d2002bc1894" name="af0a2cdc73249c01d45715d2002bc1894"></a>
+static <a class="el" href="../../df/dcf/classxii_action_descriptor_handle.html">xiiActionDescriptorHandle</a>&#160;</td><td class="memItemRight" valign="bottom"><b>s_hShowHiddenObjects</b></td></tr>
+<tr class="separator:af0a2cdc73249c01d45715d2002bc1894"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae12ed15735ce82933fa0f0402db8366a" id="r_ae12ed15735ce82933fa0f0402db8366a"><td class="memItemLeft" align="right" valign="top"><a id="ae12ed15735ce82933fa0f0402db8366a" name="ae12ed15735ce82933fa0f0402db8366a"></a>
+static <a class="el" href="../../df/dcf/classxii_action_descriptor_handle.html">xiiActionDescriptorHandle</a>&#160;</td><td class="memItemRight" valign="bottom"><b>s_hPrefabMenu</b></td></tr>
+<tr class="separator:ae12ed15735ce82933fa0f0402db8366a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b9ef7abf21b118cc08918d3e50c263b" id="r_a3b9ef7abf21b118cc08918d3e50c263b"><td class="memItemLeft" align="right" valign="top"><a id="a3b9ef7abf21b118cc08918d3e50c263b" name="a3b9ef7abf21b118cc08918d3e50c263b"></a>
+static <a class="el" href="../../df/dcf/classxii_action_descriptor_handle.html">xiiActionDescriptorHandle</a>&#160;</td><td class="memItemRight" valign="bottom"><b>s_hCreatePrefab</b></td></tr>
+<tr class="separator:a3b9ef7abf21b118cc08918d3e50c263b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a042fbee2ee0885f5b2be9d36aca67415" id="r_a042fbee2ee0885f5b2be9d36aca67415"><td class="memItemLeft" align="right" valign="top"><a id="a042fbee2ee0885f5b2be9d36aca67415" name="a042fbee2ee0885f5b2be9d36aca67415"></a>
+static <a class="el" href="../../df/dcf/classxii_action_descriptor_handle.html">xiiActionDescriptorHandle</a>&#160;</td><td class="memItemRight" valign="bottom"><b>s_hRevertPrefab</b></td></tr>
+<tr class="separator:a042fbee2ee0885f5b2be9d36aca67415"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43aff107086db48012859af9251b63d6" id="r_a43aff107086db48012859af9251b63d6"><td class="memItemLeft" align="right" valign="top"><a id="a43aff107086db48012859af9251b63d6" name="a43aff107086db48012859af9251b63d6"></a>
+static <a class="el" href="../../df/dcf/classxii_action_descriptor_handle.html">xiiActionDescriptorHandle</a>&#160;</td><td class="memItemRight" valign="bottom"><b>s_hUnlinkFromPrefab</b></td></tr>
+<tr class="separator:a43aff107086db48012859af9251b63d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd1ce8c17f3526fd072f712534fd38be" id="r_acd1ce8c17f3526fd072f712534fd38be"><td class="memItemLeft" align="right" valign="top"><a id="acd1ce8c17f3526fd072f712534fd38be" name="acd1ce8c17f3526fd072f712534fd38be"></a>
+static <a class="el" href="../../df/dcf/classxii_action_descriptor_handle.html">xiiActionDescriptorHandle</a>&#160;</td><td class="memItemRight" valign="bottom"><b>s_hOpenPrefabDocument</b></td></tr>
+<tr class="separator:acd1ce8c17f3526fd072f712534fd38be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8fd7b83a686a63c062319b4ebc2895b6" id="r_a8fd7b83a686a63c062319b4ebc2895b6"><td class="memItemLeft" align="right" valign="top"><a id="a8fd7b83a686a63c062319b4ebc2895b6" name="a8fd7b83a686a63c062319b4ebc2895b6"></a>
+static <a class="el" href="../../df/dcf/classxii_action_descriptor_handle.html">xiiActionDescriptorHandle</a>&#160;</td><td class="memItemRight" valign="bottom"><b>s_hDuplicateSpecial</b></td></tr>
+<tr class="separator:a8fd7b83a686a63c062319b4ebc2895b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e7287d3bef0c35390a222277b5bf967" id="r_a6e7287d3bef0c35390a222277b5bf967"><td class="memItemLeft" align="right" valign="top"><a id="a6e7287d3bef0c35390a222277b5bf967" name="a6e7287d3bef0c35390a222277b5bf967"></a>
+static <a class="el" href="../../df/dcf/classxii_action_descriptor_handle.html">xiiActionDescriptorHandle</a>&#160;</td><td class="memItemRight" valign="bottom"><b>s_hDeltaTransform</b></td></tr>
+<tr class="separator:a6e7287d3bef0c35390a222277b5bf967"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8cafa6c78462e50e51e60528a93d2a05" id="r_a8cafa6c78462e50e51e60528a93d2a05"><td class="memItemLeft" align="right" valign="top"><a id="a8cafa6c78462e50e51e60528a93d2a05" name="a8cafa6c78462e50e51e60528a93d2a05"></a>
+static <a class="el" href="../../df/dcf/classxii_action_descriptor_handle.html">xiiActionDescriptorHandle</a>&#160;</td><td class="memItemRight" valign="bottom"><b>s_hSnapObjectToCamera</b></td></tr>
+<tr class="separator:a8cafa6c78462e50e51e60528a93d2a05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a251953a691b070745b88aa8b9479ca04" id="r_a251953a691b070745b88aa8b9479ca04"><td class="memItemLeft" align="right" valign="top"><a id="a251953a691b070745b88aa8b9479ca04" name="a251953a691b070745b88aa8b9479ca04"></a>
+static <a class="el" href="../../df/dcf/classxii_action_descriptor_handle.html">xiiActionDescriptorHandle</a>&#160;</td><td class="memItemRight" valign="bottom"><b>s_hAttachToObject</b></td></tr>
+<tr class="separator:a251953a691b070745b88aa8b9479ca04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0bddad6554b9a11cecad0ee0eba7a8d1" id="r_a0bddad6554b9a11cecad0ee0eba7a8d1"><td class="memItemLeft" align="right" valign="top"><a id="a0bddad6554b9a11cecad0ee0eba7a8d1" name="a0bddad6554b9a11cecad0ee0eba7a8d1"></a>
+static <a class="el" href="../../df/dcf/classxii_action_descriptor_handle.html">xiiActionDescriptorHandle</a>&#160;</td><td class="memItemRight" valign="bottom"><b>s_hDetachFromParent</b></td></tr>
+<tr class="separator:a0bddad6554b9a11cecad0ee0eba7a8d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3daebed68e9c1516cc95e300f54bae8b" id="r_a3daebed68e9c1516cc95e300f54bae8b"><td class="memItemLeft" align="right" valign="top"><a id="a3daebed68e9c1516cc95e300f54bae8b" name="a3daebed68e9c1516cc95e300f54bae8b"></a>
+static <a class="el" href="../../df/dcf/classxii_action_descriptor_handle.html">xiiActionDescriptorHandle</a>&#160;</td><td class="memItemRight" valign="bottom"><b>s_hConvertToEnginePrefab</b></td></tr>
+<tr class="separator:a3daebed68e9c1516cc95e300f54bae8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83bc22118954a1291487fc3042ff1a50" id="r_a83bc22118954a1291487fc3042ff1a50"><td class="memItemLeft" align="right" valign="top"><a id="a83bc22118954a1291487fc3042ff1a50" name="a83bc22118954a1291487fc3042ff1a50"></a>
+static <a class="el" href="../../df/dcf/classxii_action_descriptor_handle.html">xiiActionDescriptorHandle</a>&#160;</td><td class="memItemRight" valign="bottom"><b>s_hConvertToEditorPrefab</b></td></tr>
+<tr class="separator:a83bc22118954a1291487fc3042ff1a50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8c516cdf4c8f020323c970c3283d1f4" id="r_aa8c516cdf4c8f020323c970c3283d1f4"><td class="memItemLeft" align="right" valign="top"><a id="aa8c516cdf4c8f020323c970c3283d1f4" name="aa8c516cdf4c8f020323c970c3283d1f4"></a>
+static <a class="el" href="../../df/dcf/classxii_action_descriptor_handle.html">xiiActionDescriptorHandle</a>&#160;</td><td class="memItemRight" valign="bottom"><b>s_hCopyReference</b></td></tr>
+<tr class="separator:aa8c516cdf4c8f020323c970c3283d1f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li>/home/runner/work/XII/XII/Source/EditorPlugins/Scene/EditorPluginScene/Actions/<a class="el" href="../../d1/d0c/_selection_actions_8h_source.html">SelectionActions.h</a></li>
+<li>/home/runner/work/XII/XII/Source/EditorPlugins/Scene/EditorPluginScene/Actions/<b>SelectionActions.cpp</b></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../d5/d00/classxii_selection_actions.html">xiiSelectionActions</a></li>
+    <li class="footer">Generated on Mon Jul 1 2024 23:53:16 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+  </ul>
+</div>
+</body>
+</html>

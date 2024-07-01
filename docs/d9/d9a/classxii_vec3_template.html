@@ -1,0 +1,617 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.11.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<!-- BEGIN opengraph metadata -->
+<meta property="og:title" content="XII" />
+<meta property="og:image" content="../../XII-Logo.png" />
+<meta property="og:description" content="An advanced high-performance simulation engine." />
+<meta property="og:url" content="https://www.xiitechnologies.com" />
+<!-- END opengraph metadata -->
+<!-- BEGIN twitter metadata -->
+<meta name="twitter:image:src" content="../../XII-Logo.png" />
+<meta name="twitter:title" content="XII" />
+<meta name="twitter:description" content="An advanced high-performance simulation engine." />
+<!-- END twitter metadata -->
+<title>XII: xiiVec3Template&lt; Type &gt; Class Template Reference</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link rel="icon" type="image/svg+xml" href="logo.drawio.svg"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="../../toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../custom.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<a href="https://github.com/jothepro/doxygen-awesome-css" class="github-corner" title="View source on GitHub" target="_blank" rel="noopener noreferrer">
+    <svg viewBox="0 0 250 250" width="40" height="40" style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+    <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="../../XII-Logo.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">XII
+   &#160;<span id="projectnumber">1.0.0</span>
+   </div>
+   <div id="projectbrief">A high-performance simulation engine.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(1); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.html','Search',true);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('d9/d9a/classxii_vec3_template.html','../../'); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="../../db/d51/classxii_vec3_template-members.html">List of all members</a>  </div>
+  <div class="headertitle"><div class="title">xiiVec3Template&lt; Type &gt; Class Template Reference</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p><a class="el" href="../../d8/d4f/class_a.html">A</a> 3-component vector class.  
+ <a href="#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="../../d3/d42/_vec3_8h_source.html">Vec3.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:ac227f6ab2a1d9843d10f37abdeec8dbd" id="r_ac227f6ab2a1d9843d10f37abdeec8dbd"><td class="memItemLeft" align="right" valign="top"><a id="ac227f6ab2a1d9843d10f37abdeec8dbd" name="ac227f6ab2a1d9843d10f37abdeec8dbd"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>ComponentType</b> = Type</td></tr>
+<tr class="separator:ac227f6ab2a1d9843d10f37abdeec8dbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:ab74de4a8062342d68d7be49dd9558dfe" id="r_ab74de4a8062342d68d7be49dd9558dfe"><td class="memItemLeft" align="right" valign="top"><a id="ab74de4a8062342d68d7be49dd9558dfe" name="ab74de4a8062342d68d7be49dd9558dfe"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>XII_DECLARE_POD_TYPE</b> ()</td></tr>
+<tr class="separator:ab74de4a8062342d68d7be49dd9558dfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53bfbab7f6139591acf9433eff4e728d" id="r_a53bfbab7f6139591acf9433eff4e728d"><td class="memItemLeft" align="right" valign="top"><a id="a53bfbab7f6139591acf9433eff4e728d" name="a53bfbab7f6139591acf9433eff4e728d"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>xiiVec3Template</b> ()</td></tr>
+<tr class="memdesc:a53bfbab7f6139591acf9433eff4e728d"><td class="mdescLeft">&#160;</td><td class="mdescRight">default-constructed vector is uninitialized (for speed) <br /></td></tr>
+<tr class="separator:a53bfbab7f6139591acf9433eff4e728d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af17bd3f307dd75513d9aaefb6cc9ec22" id="r_af17bd3f307dd75513d9aaefb6cc9ec22"><td class="memItemLeft" align="right" valign="top"><a id="af17bd3f307dd75513d9aaefb6cc9ec22" name="af17bd3f307dd75513d9aaefb6cc9ec22"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>xiiVec3Template</b> (Type x, Type y, Type z)</td></tr>
+<tr class="memdesc:af17bd3f307dd75513d9aaefb6cc9ec22"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the vector with x,y,z. <br /></td></tr>
+<tr class="separator:af17bd3f307dd75513d9aaefb6cc9ec22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e8604b3ca70e0215573a577731f00ad" id="r_a2e8604b3ca70e0215573a577731f00ad"><td class="memItemLeft" align="right" valign="top"><a id="a2e8604b3ca70e0215573a577731f00ad" name="a2e8604b3ca70e0215573a577731f00ad"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>xiiVec3Template</b> (Type v)</td></tr>
+<tr class="memdesc:a2e8604b3ca70e0215573a577731f00ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes all 3 components with xyz. <br /></td></tr>
+<tr class="separator:a2e8604b3ca70e0215573a577731f00ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa181ef7561d20baca71eaf8aa80b1c8" id="r_afa181ef7561d20baca71eaf8aa80b1c8"><td class="memItemLeft" align="right" valign="top"><a id="afa181ef7561d20baca71eaf8aa80b1c8" name="afa181ef7561d20baca71eaf8aa80b1c8"></a>
+const <a class="el" href="../../d1/d0d/classxii_vec2_template.html">xiiVec2Template</a>&lt; Type &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetAsVec2</b> () const</td></tr>
+<tr class="memdesc:afa181ef7561d20baca71eaf8aa80b1c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a <a class="el" href="../../d1/d0d/classxii_vec2_template.html" title="A 2-component vector class.">xiiVec2Template</a> with x and y from this vector. <br /></td></tr>
+<tr class="separator:afa181ef7561d20baca71eaf8aa80b1c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0c2ea06ef463e3916f3efdb36b4aa6b" id="r_ac0c2ea06ef463e3916f3efdb36b4aa6b"><td class="memItemLeft" align="right" valign="top"><a id="ac0c2ea06ef463e3916f3efdb36b4aa6b" name="ac0c2ea06ef463e3916f3efdb36b4aa6b"></a>
+const <a class="el" href="../../d1/d20/classxii_vec4_template.html">xiiVec4Template</a>&lt; Type &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetAsVec4</b> (Type w) const</td></tr>
+<tr class="memdesc:ac0c2ea06ef463e3916f3efdb36b4aa6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a <a class="el" href="../../d1/d20/classxii_vec4_template.html" title="A 4-component vector class.">xiiVec4Template</a> with x,y,z from this vector and w set to the parameter. <br /></td></tr>
+<tr class="separator:ac0c2ea06ef463e3916f3efdb36b4aa6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73d935a51d5ea3dd14ee9a4f171135fe" id="r_a73d935a51d5ea3dd14ee9a4f171135fe"><td class="memItemLeft" align="right" valign="top"><a id="a73d935a51d5ea3dd14ee9a4f171135fe" name="a73d935a51d5ea3dd14ee9a4f171135fe"></a>
+const <a class="el" href="../../d1/d20/classxii_vec4_template.html">xiiVec4Template</a>&lt; Type &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetAsPositionVec4</b> () const</td></tr>
+<tr class="memdesc:a73d935a51d5ea3dd14ee9a4f171135fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a <a class="el" href="../../d1/d20/classxii_vec4_template.html" title="A 4-component vector class.">xiiVec4Template</a> with x,y,z from this vector and w set 1. <br /></td></tr>
+<tr class="separator:a73d935a51d5ea3dd14ee9a4f171135fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c3ee73f8f8a988dd01de8c1f2d54200" id="r_a7c3ee73f8f8a988dd01de8c1f2d54200"><td class="memItemLeft" align="right" valign="top"><a id="a7c3ee73f8f8a988dd01de8c1f2d54200" name="a7c3ee73f8f8a988dd01de8c1f2d54200"></a>
+const <a class="el" href="../../d1/d20/classxii_vec4_template.html">xiiVec4Template</a>&lt; Type &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetAsDirectionVec4</b> () const</td></tr>
+<tr class="memdesc:a7c3ee73f8f8a988dd01de8c1f2d54200"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a <a class="el" href="../../d1/d20/classxii_vec4_template.html" title="A 4-component vector class.">xiiVec4Template</a> with x,y,z from this vector and w set 0. <br /></td></tr>
+<tr class="separator:a7c3ee73f8f8a988dd01de8c1f2d54200"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad881587f601fd666ca65c3a1f34fd1f8" id="r_ad881587f601fd666ca65c3a1f34fd1f8"><td class="memItemLeft" align="right" valign="top"><a id="ad881587f601fd666ca65c3a1f34fd1f8" name="ad881587f601fd666ca65c3a1f34fd1f8"></a>
+const Type *&#160;</td><td class="memItemRight" valign="bottom"><b>GetData</b> () const</td></tr>
+<tr class="memdesc:ad881587f601fd666ca65c3a1f34fd1f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the data as an array. <br /></td></tr>
+<tr class="separator:ad881587f601fd666ca65c3a1f34fd1f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48481b65638502ecafc82e9c8ca7ca3d" id="r_a48481b65638502ecafc82e9c8ca7ca3d"><td class="memItemLeft" align="right" valign="top"><a id="a48481b65638502ecafc82e9c8ca7ca3d" name="a48481b65638502ecafc82e9c8ca7ca3d"></a>
+Type *&#160;</td><td class="memItemRight" valign="bottom"><b>GetData</b> ()</td></tr>
+<tr class="memdesc:a48481b65638502ecafc82e9c8ca7ca3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the data as an array. <br /></td></tr>
+<tr class="separator:a48481b65638502ecafc82e9c8ca7ca3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31110d5b5e1de3cad4fe3546aec520f1" id="r_a31110d5b5e1de3cad4fe3546aec520f1"><td class="memItemLeft" align="right" valign="top"><a id="a31110d5b5e1de3cad4fe3546aec520f1" name="a31110d5b5e1de3cad4fe3546aec520f1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Set</b> (Type xyz)</td></tr>
+<tr class="memdesc:a31110d5b5e1de3cad4fe3546aec520f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets all 3 components to this value. <br /></td></tr>
+<tr class="separator:a31110d5b5e1de3cad4fe3546aec520f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e43059ab12cc33dc39155bde33c3cee" id="r_a5e43059ab12cc33dc39155bde33c3cee"><td class="memItemLeft" align="right" valign="top"><a id="a5e43059ab12cc33dc39155bde33c3cee" name="a5e43059ab12cc33dc39155bde33c3cee"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Set</b> (Type x, Type y, Type z)</td></tr>
+<tr class="memdesc:a5e43059ab12cc33dc39155bde33c3cee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the vector to these values. <br /></td></tr>
+<tr class="separator:a5e43059ab12cc33dc39155bde33c3cee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a988bf2dfd781e2f4565cb6bd74ea861d" id="r_a988bf2dfd781e2f4565cb6bd74ea861d"><td class="memItemLeft" align="right" valign="top"><a id="a988bf2dfd781e2f4565cb6bd74ea861d" name="a988bf2dfd781e2f4565cb6bd74ea861d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetZero</b> ()</td></tr>
+<tr class="memdesc:a988bf2dfd781e2f4565cb6bd74ea861d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the vector to all zero. <br /></td></tr>
+<tr class="separator:a988bf2dfd781e2f4565cb6bd74ea861d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afdbfe005da534ab16e275c8d18bd9f81" id="r_afdbfe005da534ab16e275c8d18bd9f81"><td class="memItemLeft" align="right" valign="top"><a id="afdbfe005da534ab16e275c8d18bd9f81" name="afdbfe005da534ab16e275c8d18bd9f81"></a>
+XII_DECLARE_IF_FLOAT_TYPE Type&#160;</td><td class="memItemRight" valign="bottom"><b>GetLength</b> () const</td></tr>
+<tr class="memdesc:afdbfe005da534ab16e275c8d18bd9f81"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the length of the vector. <br /></td></tr>
+<tr class="separator:afdbfe005da534ab16e275c8d18bd9f81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2cb527586b7ad99cf02329ee839f75c" id="r_ad2cb527586b7ad99cf02329ee839f75c"><td class="memItemLeft" align="right" valign="top"><a id="ad2cb527586b7ad99cf02329ee839f75c" name="ad2cb527586b7ad99cf02329ee839f75c"></a>
+XII_DECLARE_IF_FLOAT_TYPE <a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><b>SetLength</b> (Type fNewLength, Type fEpsilon=xiiMath::DefaultEpsilon&lt; Type &gt;())</td></tr>
+<tr class="memdesc:ad2cb527586b7ad99cf02329ee839f75c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tries to rescale the vector to the given length. If the vector is too close to zero, XII_FAILURE is returned and the vector is set to zero. <br /></td></tr>
+<tr class="separator:ad2cb527586b7ad99cf02329ee839f75c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20c6aefe09afd9ee32cee75ac3490b61" id="r_a20c6aefe09afd9ee32cee75ac3490b61"><td class="memItemLeft" align="right" valign="top"><a id="a20c6aefe09afd9ee32cee75ac3490b61" name="a20c6aefe09afd9ee32cee75ac3490b61"></a>
+Type&#160;</td><td class="memItemRight" valign="bottom"><b>GetLengthSquared</b> () const</td></tr>
+<tr class="memdesc:a20c6aefe09afd9ee32cee75ac3490b61"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the squared length. Faster, since no square-root is taken. Useful, if one only wants to compare the lengths of two vectors. <br /></td></tr>
+<tr class="separator:a20c6aefe09afd9ee32cee75ac3490b61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5633026a4c9b22b3bf29bbfffe8da7e3" id="r_a5633026a4c9b22b3bf29bbfffe8da7e3"><td class="memItemLeft" align="right" valign="top"><a id="a5633026a4c9b22b3bf29bbfffe8da7e3" name="a5633026a4c9b22b3bf29bbfffe8da7e3"></a>
+XII_DECLARE_IF_FLOAT_TYPE Type&#160;</td><td class="memItemRight" valign="bottom"><b>GetLengthAndNormalize</b> ()</td></tr>
+<tr class="memdesc:a5633026a4c9b22b3bf29bbfffe8da7e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Normalizes this vector and returns its previous length in one operation. More efficient than calling GetLength and then Normalize. <br /></td></tr>
+<tr class="separator:a5633026a4c9b22b3bf29bbfffe8da7e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8a8cb263d5d850828c0a01191a5a9d9" id="r_ad8a8cb263d5d850828c0a01191a5a9d9"><td class="memItemLeft" align="right" valign="top"><a id="ad8a8cb263d5d850828c0a01191a5a9d9" name="ad8a8cb263d5d850828c0a01191a5a9d9"></a>
+XII_DECLARE_IF_FLOAT_TYPE const <a class="el" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3Template</a>&lt; Type &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetNormalized</b> () const</td></tr>
+<tr class="memdesc:ad8a8cb263d5d850828c0a01191a5a9d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a normalized version of this vector, leaves the vector itself unchanged. <br /></td></tr>
+<tr class="separator:ad8a8cb263d5d850828c0a01191a5a9d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa9d20345cdc98553c67fe6833db2acf" id="r_afa9d20345cdc98553c67fe6833db2acf"><td class="memItemLeft" align="right" valign="top"><a id="afa9d20345cdc98553c67fe6833db2acf" name="afa9d20345cdc98553c67fe6833db2acf"></a>
+XII_DECLARE_IF_FLOAT_TYPE void&#160;</td><td class="memItemRight" valign="bottom"><b>Normalize</b> ()</td></tr>
+<tr class="memdesc:afa9d20345cdc98553c67fe6833db2acf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Normalizes this vector. <br /></td></tr>
+<tr class="separator:afa9d20345cdc98553c67fe6833db2acf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a632fb5bad0c4c380f5fac5b4f48cc9d7" id="r_a632fb5bad0c4c380f5fac5b4f48cc9d7"><td class="memItemLeft" align="right" valign="top"><a id="a632fb5bad0c4c380f5fac5b4f48cc9d7" name="a632fb5bad0c4c380f5fac5b4f48cc9d7"></a>
+XII_DECLARE_IF_FLOAT_TYPE <a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><b>NormalizeIfNotZero</b> (const <a class="el" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3Template</a>&lt; Type &gt; &amp;vFallback=<a class="el" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3Template</a>&lt; Type &gt;(1, 0, 0), Type fEpsilon=xiiMath::SmallEpsilon&lt; Type &gt;())</td></tr>
+<tr class="memdesc:a632fb5bad0c4c380f5fac5b4f48cc9d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tries to normalize this vector. If the vector is too close to zero, XII_FAILURE is returned and the vector is set to the given fallback value. <br /></td></tr>
+<tr class="separator:a632fb5bad0c4c380f5fac5b4f48cc9d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9f4e0928979082607eae058b8140daa" id="r_ab9f4e0928979082607eae058b8140daa"><td class="memItemLeft" align="right" valign="top"><a id="ab9f4e0928979082607eae058b8140daa" name="ab9f4e0928979082607eae058b8140daa"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsZero</b> () const</td></tr>
+<tr class="memdesc:ab9f4e0928979082607eae058b8140daa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns, whether this vector is (0, 0, 0). <br /></td></tr>
+<tr class="separator:ab9f4e0928979082607eae058b8140daa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d0f21b3bdaab6d049cf0e2746d4c80f" id="r_a5d0f21b3bdaab6d049cf0e2746d4c80f"><td class="memItemLeft" align="right" valign="top"><a id="a5d0f21b3bdaab6d049cf0e2746d4c80f" name="a5d0f21b3bdaab6d049cf0e2746d4c80f"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsZero</b> (Type fEpsilon) const</td></tr>
+<tr class="memdesc:a5d0f21b3bdaab6d049cf0e2746d4c80f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns, whether this vector is (0, 0, 0) within a given epsilon. <br /></td></tr>
+<tr class="separator:a5d0f21b3bdaab6d049cf0e2746d4c80f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adeb9860c5a5d47285a05bba8f06dd721" id="r_adeb9860c5a5d47285a05bba8f06dd721"><td class="memItemLeft" align="right" valign="top">XII_DECLARE_IF_FLOAT_TYPE bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adeb9860c5a5d47285a05bba8f06dd721">IsNormalized</a> (Type fEpsilon=xiiMath::HugeEpsilon&lt; Type &gt;()) const</td></tr>
+<tr class="memdesc:adeb9860c5a5d47285a05bba8f06dd721"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns, whether the squared length of this vector is between 0.999f and 1.001f.  <br /></td></tr>
+<tr class="separator:adeb9860c5a5d47285a05bba8f06dd721"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a232995c2778f2228e488ef26e420a3ea" id="r_a232995c2778f2228e488ef26e420a3ea"><td class="memItemLeft" align="right" valign="top"><a id="a232995c2778f2228e488ef26e420a3ea" name="a232995c2778f2228e488ef26e420a3ea"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsNaN</b> () const</td></tr>
+<tr class="memdesc:a232995c2778f2228e488ef26e420a3ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true, if any of x, y or z is NaN. <br /></td></tr>
+<tr class="separator:a232995c2778f2228e488ef26e420a3ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada4983624dd9914c854b8e7fafa38b2b" id="r_ada4983624dd9914c854b8e7fafa38b2b"><td class="memItemLeft" align="right" valign="top"><a id="ada4983624dd9914c854b8e7fafa38b2b" name="ada4983624dd9914c854b8e7fafa38b2b"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsValid</b> () const</td></tr>
+<tr class="memdesc:ada4983624dd9914c854b8e7fafa38b2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks that all components are finite numbers. <br /></td></tr>
+<tr class="separator:ada4983624dd9914c854b8e7fafa38b2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0e77606f47a98ec401351fcabda2a1a" id="r_ab0e77606f47a98ec401351fcabda2a1a"><td class="memItemLeft" align="right" valign="top"><a id="ab0e77606f47a98ec401351fcabda2a1a" name="ab0e77606f47a98ec401351fcabda2a1a"></a>
+XII_DECLARE_IF_FLOAT_TYPE Type&#160;</td><td class="memItemRight" valign="bottom"><b>Distance</b> (const <a class="el" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3Template</a>&lt; Type &gt; &amp;vPoint) const</td></tr>
+<tr class="memdesc:ab0e77606f47a98ec401351fcabda2a1a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the distance between two 3<a class="el" href="../../d0/dd0/class_d.html">D</a> Vectors. <br /></td></tr>
+<tr class="separator:ab0e77606f47a98ec401351fcabda2a1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4884b528402c7b319a0f0b9399f79000" id="r_a4884b528402c7b319a0f0b9399f79000"><td class="memItemLeft" align="right" valign="top"><a id="a4884b528402c7b319a0f0b9399f79000" name="a4884b528402c7b319a0f0b9399f79000"></a>
+Type&#160;</td><td class="memItemRight" valign="bottom"><b>DistanceSquared</b> (const <a class="el" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3Template</a>&lt; Type &gt; &amp;vPoint) const</td></tr>
+<tr class="memdesc:a4884b528402c7b319a0f0b9399f79000"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the squared distance between two 3<a class="el" href="../../d0/dd0/class_d.html">D</a> Vectors. Faster, since no square-root is taken. Useful, if one only wants to compare the distance of two vectors regardless of the magnitude. <br /></td></tr>
+<tr class="separator:a4884b528402c7b319a0f0b9399f79000"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1547bd9379b322d08eb5e74b1d6eae0" id="r_aa1547bd9379b322d08eb5e74b1d6eae0"><td class="memItemLeft" align="right" valign="top"><a id="aa1547bd9379b322d08eb5e74b1d6eae0" name="aa1547bd9379b322d08eb5e74b1d6eae0"></a>
+const <a class="el" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3Template</a>&lt; Type &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>operator-</b> () const</td></tr>
+<tr class="memdesc:aa1547bd9379b322d08eb5e74b1d6eae0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the negation of this vector. <br /></td></tr>
+<tr class="separator:aa1547bd9379b322d08eb5e74b1d6eae0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43497c7554912a12b0046a8ab93d19eb" id="r_a43497c7554912a12b0046a8ab93d19eb"><td class="memItemLeft" align="right" valign="top"><a id="a43497c7554912a12b0046a8ab93d19eb" name="a43497c7554912a12b0046a8ab93d19eb"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>operator+=</b> (const <a class="el" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3Template</a>&lt; Type &gt; &amp;rhs)</td></tr>
+<tr class="memdesc:a43497c7554912a12b0046a8ab93d19eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds rhs component-wise to this vector. <br /></td></tr>
+<tr class="separator:a43497c7554912a12b0046a8ab93d19eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62abcbb2c4cf31a17d61a6844ee1b90c" id="r_a62abcbb2c4cf31a17d61a6844ee1b90c"><td class="memItemLeft" align="right" valign="top"><a id="a62abcbb2c4cf31a17d61a6844ee1b90c" name="a62abcbb2c4cf31a17d61a6844ee1b90c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>operator-=</b> (const <a class="el" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3Template</a>&lt; Type &gt; &amp;rhs)</td></tr>
+<tr class="memdesc:a62abcbb2c4cf31a17d61a6844ee1b90c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Subtracts rhs component-wise from this vector. <br /></td></tr>
+<tr class="separator:a62abcbb2c4cf31a17d61a6844ee1b90c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae123e96eaa13e2880166aa7203f701b9" id="r_ae123e96eaa13e2880166aa7203f701b9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae123e96eaa13e2880166aa7203f701b9">operator*=</a> (const <a class="el" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3Template</a>&lt; Type &gt; &amp;rhs)</td></tr>
+<tr class="memdesc:ae123e96eaa13e2880166aa7203f701b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multiplies rhs component-wise to this vector.  <br /></td></tr>
+<tr class="separator:ae123e96eaa13e2880166aa7203f701b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64c100864c6f13e9feb3a26d69b489d6" id="r_a64c100864c6f13e9feb3a26d69b489d6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a64c100864c6f13e9feb3a26d69b489d6">operator/=</a> (const <a class="el" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3Template</a>&lt; Type &gt; &amp;rhs)</td></tr>
+<tr class="memdesc:a64c100864c6f13e9feb3a26d69b489d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Divides this vector component-wise by rhs.  <br /></td></tr>
+<tr class="separator:a64c100864c6f13e9feb3a26d69b489d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a0cafc5141ca0b6e6284ec4f3eee39c" id="r_a0a0cafc5141ca0b6e6284ec4f3eee39c"><td class="memItemLeft" align="right" valign="top"><a id="a0a0cafc5141ca0b6e6284ec4f3eee39c" name="a0a0cafc5141ca0b6e6284ec4f3eee39c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>operator*=</b> (Type f)</td></tr>
+<tr class="memdesc:a0a0cafc5141ca0b6e6284ec4f3eee39c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multiplies all components of this vector with f. <br /></td></tr>
+<tr class="separator:a0a0cafc5141ca0b6e6284ec4f3eee39c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f17564f3d3b74dd42687c3babd39727" id="r_a7f17564f3d3b74dd42687c3babd39727"><td class="memItemLeft" align="right" valign="top"><a id="a7f17564f3d3b74dd42687c3babd39727" name="a7f17564f3d3b74dd42687c3babd39727"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>operator/=</b> (Type f)</td></tr>
+<tr class="memdesc:a7f17564f3d3b74dd42687c3babd39727"><td class="mdescLeft">&#160;</td><td class="mdescRight">Divides all components of this vector by f. <br /></td></tr>
+<tr class="separator:a7f17564f3d3b74dd42687c3babd39727"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a627258e981f04e4031a3edbf13aef857" id="r_a627258e981f04e4031a3edbf13aef857"><td class="memItemLeft" align="right" valign="top"><a id="a627258e981f04e4031a3edbf13aef857" name="a627258e981f04e4031a3edbf13aef857"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsIdentical</b> (const <a class="el" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3Template</a>&lt; Type &gt; &amp;rhs) const</td></tr>
+<tr class="memdesc:a627258e981f04e4031a3edbf13aef857"><td class="mdescLeft">&#160;</td><td class="mdescRight">Equality Check (bitwise) <br /></td></tr>
+<tr class="separator:a627258e981f04e4031a3edbf13aef857"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa298cc63bf4b22e7c9548096d774317f" id="r_aa298cc63bf4b22e7c9548096d774317f"><td class="memItemLeft" align="right" valign="top"><a id="aa298cc63bf4b22e7c9548096d774317f" name="aa298cc63bf4b22e7c9548096d774317f"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsEqual</b> (const <a class="el" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3Template</a>&lt; Type &gt; &amp;rhs, Type fEpsilon) const</td></tr>
+<tr class="memdesc:aa298cc63bf4b22e7c9548096d774317f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Equality Check with epsilon. <br /></td></tr>
+<tr class="separator:aa298cc63bf4b22e7c9548096d774317f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1ea6f59052d3ea4298f07a25f8fe51e" id="r_ab1ea6f59052d3ea4298f07a25f8fe51e"><td class="memItemLeft" align="right" valign="top"><a id="ab1ea6f59052d3ea4298f07a25f8fe51e" name="ab1ea6f59052d3ea4298f07a25f8fe51e"></a>
+<a class="el" href="../../d3/ddb/classxii_angle_template.html">xiiAngle</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetAngleBetween</b> (const <a class="el" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3Template</a>&lt; Type &gt; &amp;rhs) const</td></tr>
+<tr class="memdesc:ab1ea6f59052d3ea4298f07a25f8fe51e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the positive angle between *this and rhs. Both this and rhs must be normalized. <br /></td></tr>
+<tr class="separator:ab1ea6f59052d3ea4298f07a25f8fe51e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29f0f6353abb8f23538f847533b56b4a" id="r_a29f0f6353abb8f23538f847533b56b4a"><td class="memItemLeft" align="right" valign="top"><a id="a29f0f6353abb8f23538f847533b56b4a" name="a29f0f6353abb8f23538f847533b56b4a"></a>
+Type&#160;</td><td class="memItemRight" valign="bottom"><b>Dot</b> (const <a class="el" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3Template</a>&lt; Type &gt; &amp;rhs) const</td></tr>
+<tr class="memdesc:a29f0f6353abb8f23538f847533b56b4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the Dot-product of the two vectors (commutative, order does not matter) <br /></td></tr>
+<tr class="separator:a29f0f6353abb8f23538f847533b56b4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a658acf243e57aea0c7252d6918eca809" id="r_a658acf243e57aea0c7252d6918eca809"><td class="memItemLeft" align="right" valign="top"><a id="a658acf243e57aea0c7252d6918eca809" name="a658acf243e57aea0c7252d6918eca809"></a>
+const <a class="el" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3Template</a>&lt; Type &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>CrossRH</b> (const <a class="el" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3Template</a>&lt; Type &gt; &amp;rhs) const</td></tr>
+<tr class="memdesc:a658acf243e57aea0c7252d6918eca809"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the Cross-product of the two vectors (NOT commutative, order DOES matter) <br /></td></tr>
+<tr class="separator:a658acf243e57aea0c7252d6918eca809"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1522ebb097a2a97fb0bf03c62fae848" id="r_ac1522ebb097a2a97fb0bf03c62fae848"><td class="memItemLeft" align="right" valign="top"><a id="ac1522ebb097a2a97fb0bf03c62fae848" name="ac1522ebb097a2a97fb0bf03c62fae848"></a>
+const <a class="el" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3Template</a>&lt; Type &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>CompMin</b> (const <a class="el" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3Template</a>&lt; Type &gt; &amp;rhs) const</td></tr>
+<tr class="memdesc:ac1522ebb097a2a97fb0bf03c62fae848"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the component-wise minimum of *this and rhs. <br /></td></tr>
+<tr class="separator:ac1522ebb097a2a97fb0bf03c62fae848"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b14a474a6d9f8e420ffb038387ce57b" id="r_a5b14a474a6d9f8e420ffb038387ce57b"><td class="memItemLeft" align="right" valign="top"><a id="a5b14a474a6d9f8e420ffb038387ce57b" name="a5b14a474a6d9f8e420ffb038387ce57b"></a>
+const <a class="el" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3Template</a>&lt; Type &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>CompMax</b> (const <a class="el" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3Template</a>&lt; Type &gt; &amp;rhs) const</td></tr>
+<tr class="memdesc:a5b14a474a6d9f8e420ffb038387ce57b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the component-wise maximum of *this and rhs. <br /></td></tr>
+<tr class="separator:a5b14a474a6d9f8e420ffb038387ce57b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ff89963f60ec9800fc06a8471fe647d" id="r_a1ff89963f60ec9800fc06a8471fe647d"><td class="memItemLeft" align="right" valign="top"><a id="a1ff89963f60ec9800fc06a8471fe647d" name="a1ff89963f60ec9800fc06a8471fe647d"></a>
+const <a class="el" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3Template</a>&lt; Type &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>CompClamp</b> (const <a class="el" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3Template</a>&lt; Type &gt; &amp;vLow, const <a class="el" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3Template</a>&lt; Type &gt; &amp;vHigh) const</td></tr>
+<tr class="memdesc:a1ff89963f60ec9800fc06a8471fe647d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the component-wise clamped value of *this between low and high. <br /></td></tr>
+<tr class="separator:a1ff89963f60ec9800fc06a8471fe647d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b71730344463b1face198a7e6dbecec" id="r_a5b71730344463b1face198a7e6dbecec"><td class="memItemLeft" align="right" valign="top"><a id="a5b71730344463b1face198a7e6dbecec" name="a5b71730344463b1face198a7e6dbecec"></a>
+const <a class="el" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3Template</a>&lt; Type &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>CompMul</b> (const <a class="el" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3Template</a>&lt; Type &gt; &amp;rhs) const</td></tr>
+<tr class="memdesc:a5b71730344463b1face198a7e6dbecec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the component-wise multiplication of *this and rhs. <br /></td></tr>
+<tr class="separator:a5b71730344463b1face198a7e6dbecec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d8df4f197167248cae93de23060f8f7" id="r_a3d8df4f197167248cae93de23060f8f7"><td class="memItemLeft" align="right" valign="top"><a id="a3d8df4f197167248cae93de23060f8f7" name="a3d8df4f197167248cae93de23060f8f7"></a>
+const <a class="el" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3Template</a>&lt; Type &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>CompDiv</b> (const <a class="el" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3Template</a>&lt; Type &gt; &amp;rhs) const</td></tr>
+<tr class="memdesc:a3d8df4f197167248cae93de23060f8f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the component-wise division of *this and rhs. <br /></td></tr>
+<tr class="separator:a3d8df4f197167248cae93de23060f8f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d00afc5de43fd995bf63081a695a5b9" id="r_a6d00afc5de43fd995bf63081a695a5b9"><td class="memItemLeft" align="right" valign="top"><a id="a6d00afc5de43fd995bf63081a695a5b9" name="a6d00afc5de43fd995bf63081a695a5b9"></a>
+const <a class="el" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3Template</a>&lt; Type &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>Abs</b> () const</td></tr>
+<tr class="memdesc:a6d00afc5de43fd995bf63081a695a5b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">brief Returns the component-wise absolute of *this. <br /></td></tr>
+<tr class="separator:a6d00afc5de43fd995bf63081a695a5b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2cbea8bf9bd011ac80658604579db97e" id="r_a2cbea8bf9bd011ac80658604579db97e"><td class="memItemLeft" align="right" valign="top"><a id="a2cbea8bf9bd011ac80658604579db97e" name="a2cbea8bf9bd011ac80658604579db97e"></a>
+XII_DECLARE_IF_FLOAT_TYPE <a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><b>CalculateNormal</b> (const <a class="el" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3Template</a>&lt; Type &gt; &amp;v1, const <a class="el" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3Template</a>&lt; Type &gt; &amp;v2, const <a class="el" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3Template</a>&lt; Type &gt; &amp;v3)</td></tr>
+<tr class="memdesc:a2cbea8bf9bd011ac80658604579db97e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the normal of the triangle defined by the three vertices. Vertices are assumed to be ordered counter-clockwise. <br /></td></tr>
+<tr class="separator:a2cbea8bf9bd011ac80658604579db97e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad2dd0f6e02a5a30a8c3974e448969ee" id="r_aad2dd0f6e02a5a30a8c3974e448969ee"><td class="memItemLeft" align="right" valign="top">XII_DECLARE_IF_FLOAT_TYPE void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aad2dd0f6e02a5a30a8c3974e448969ee">MakeOrthogonalTo</a> (const <a class="el" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3Template</a>&lt; Type &gt; &amp;vNormal)</td></tr>
+<tr class="memdesc:aad2dd0f6e02a5a30a8c3974e448969ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modifies this direction vector to be orthogonal to the given (normalized) direction vector. The result is NOT normalized.  <br /></td></tr>
+<tr class="separator:aad2dd0f6e02a5a30a8c3974e448969ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c75f164531c13f77b9d96b1c63d4512" id="r_a5c75f164531c13f77b9d96b1c63d4512"><td class="memItemLeft" align="right" valign="top"><a id="a5c75f164531c13f77b9d96b1c63d4512" name="a5c75f164531c13f77b9d96b1c63d4512"></a>
+XII_DECLARE_IF_FLOAT_TYPE const <a class="el" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3Template</a>&lt; Type &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetOrthogonalVector</b> () const</td></tr>
+<tr class="memdesc:a5c75f164531c13f77b9d96b1c63d4512"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns some arbitrary vector orthogonal to this one. The vector is NOT normalized. <br /></td></tr>
+<tr class="separator:a5c75f164531c13f77b9d96b1c63d4512"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:affef600ee81b6171a712fbd66b6d9141" id="r_affef600ee81b6171a712fbd66b6d9141"><td class="memItemLeft" align="right" valign="top"><a id="affef600ee81b6171a712fbd66b6d9141" name="affef600ee81b6171a712fbd66b6d9141"></a>
+XII_DECLARE_IF_FLOAT_TYPE const <a class="el" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3Template</a>&lt; Type &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetReflectedVector</b> (const <a class="el" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3Template</a>&lt; Type &gt; &amp;vNormal) const</td></tr>
+<tr class="memdesc:affef600ee81b6171a712fbd66b6d9141"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns this vector reflected at vNormal. <br /></td></tr>
+<tr class="separator:affef600ee81b6171a712fbd66b6d9141"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2f0d742d2b835cf5bc6ddb6b346a841" id="r_ab2f0d742d2b835cf5bc6ddb6b346a841"><td class="memItemLeft" align="right" valign="top"><a id="ab2f0d742d2b835cf5bc6ddb6b346a841" name="ab2f0d742d2b835cf5bc6ddb6b346a841"></a>
+XII_DECLARE_IF_FLOAT_TYPE const <a class="el" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3Template</a>&lt; Type &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetRefractedVector</b> (const <a class="el" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3Template</a>&lt; Type &gt; &amp;vNormal, Type fRefIndex1, Type fRefIndex2) const</td></tr>
+<tr class="memdesc:ab2f0d742d2b835cf5bc6ddb6b346a841"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns this vector, refracted at vNormal, using the refraction index of the current medium and the medium it enters. <br /></td></tr>
+<tr class="separator:ab2f0d742d2b835cf5bc6ddb6b346a841"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:ab00e5c586a7e21cfcbc564a6c621968b" id="r_ab00e5c586a7e21cfcbc564a6c621968b"><td class="memItemLeft" align="right" valign="top"><a id="ab00e5c586a7e21cfcbc564a6c621968b" name="ab00e5c586a7e21cfcbc564a6c621968b"></a>
+static XII_DECLARE_IF_FLOAT_TYPE <a class="el" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3Template</a>&lt; Type &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>MakeNaN</b> ()</td></tr>
+<tr class="memdesc:ab00e5c586a7e21cfcbc564a6c621968b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a vector with all components set to Not-a-Number (NaN). <br /></td></tr>
+<tr class="separator:ab00e5c586a7e21cfcbc564a6c621968b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37d09e3acbca40bd816cf99a6b8e1489" id="r_a37d09e3acbca40bd816cf99a6b8e1489"><td class="memItemLeft" align="right" valign="top"><a id="a37d09e3acbca40bd816cf99a6b8e1489" name="a37d09e3acbca40bd816cf99a6b8e1489"></a>
+static <a class="el" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3Template</a>&lt; Type &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>MakeZero</b> ()</td></tr>
+<tr class="memdesc:a37d09e3acbca40bd816cf99a6b8e1489"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a vector with all components set to zero. <br /></td></tr>
+<tr class="separator:a37d09e3acbca40bd816cf99a6b8e1489"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00347c110796e162d7a57b6faed857fd" id="r_a00347c110796e162d7a57b6faed857fd"><td class="memItemLeft" align="right" valign="top"><a id="a00347c110796e162d7a57b6faed857fd" name="a00347c110796e162d7a57b6faed857fd"></a>
+static <a class="el" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3Template</a>&lt; Type &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>MakeAxisX</b> ()</td></tr>
+<tr class="memdesc:a00347c110796e162d7a57b6faed857fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a vector initialized to the X unit vector (1, 0, 0). <br /></td></tr>
+<tr class="separator:a00347c110796e162d7a57b6faed857fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a97f5d899426894ebdd003ecdb2ef09" id="r_a9a97f5d899426894ebdd003ecdb2ef09"><td class="memItemLeft" align="right" valign="top"><a id="a9a97f5d899426894ebdd003ecdb2ef09" name="a9a97f5d899426894ebdd003ecdb2ef09"></a>
+static <a class="el" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3Template</a>&lt; Type &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>MakeAxisY</b> ()</td></tr>
+<tr class="memdesc:a9a97f5d899426894ebdd003ecdb2ef09"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a vector initialized to the Y unit vector (0, 1, 0). <br /></td></tr>
+<tr class="separator:a9a97f5d899426894ebdd003ecdb2ef09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8cc73e56da50bd469caf90f662fc82fe" id="r_a8cc73e56da50bd469caf90f662fc82fe"><td class="memItemLeft" align="right" valign="top"><a id="a8cc73e56da50bd469caf90f662fc82fe" name="a8cc73e56da50bd469caf90f662fc82fe"></a>
+static <a class="el" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3Template</a>&lt; Type &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>MakeAxisZ</b> ()</td></tr>
+<tr class="memdesc:a8cc73e56da50bd469caf90f662fc82fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a vector initialized to the Z unit vector (0, 0, 1). <br /></td></tr>
+<tr class="separator:a8cc73e56da50bd469caf90f662fc82fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a032f138a16a0540477114747b73266ff" id="r_a032f138a16a0540477114747b73266ff"><td class="memItemLeft" align="right" valign="top"><a id="a032f138a16a0540477114747b73266ff" name="a032f138a16a0540477114747b73266ff"></a>
+static <a class="el" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3Template</a>&lt; Type &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>Make</b> (Type x, Type y, Type z)</td></tr>
+<tr class="memdesc:a032f138a16a0540477114747b73266ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a vector initialized to x,y,z. <br /></td></tr>
+<tr class="separator:a032f138a16a0540477114747b73266ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7342bbc679568267a74a49f98582f471" id="r_a7342bbc679568267a74a49f98582f471"><td class="memItemLeft" align="right" valign="top"><a id="a7342bbc679568267a74a49f98582f471" name="a7342bbc679568267a74a49f98582f471"></a>
+static XII_DECLARE_IF_FLOAT_TYPE <a class="el" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3Template</a>&lt; Type &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>MakeRandomPointInSphere</b> (<a class="el" href="../../d5/de7/classxii_random.html">xiiRandom</a> &amp;inout_rng)</td></tr>
+<tr class="memdesc:a7342bbc679568267a74a49f98582f471"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a random point inside a unit sphere (radius 1). <br /></td></tr>
+<tr class="separator:a7342bbc679568267a74a49f98582f471"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ddac881c1f7ca92944868f9baf5cbe6" id="r_a4ddac881c1f7ca92944868f9baf5cbe6"><td class="memItemLeft" align="right" valign="top"><a id="a4ddac881c1f7ca92944868f9baf5cbe6" name="a4ddac881c1f7ca92944868f9baf5cbe6"></a>
+static XII_DECLARE_IF_FLOAT_TYPE <a class="el" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3Template</a>&lt; Type &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>MakeRandomDirection</b> (<a class="el" href="../../d5/de7/classxii_random.html">xiiRandom</a> &amp;inout_rng)</td></tr>
+<tr class="memdesc:a4ddac881c1f7ca92944868f9baf5cbe6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a random direction vector. The vector is normalized. <br /></td></tr>
+<tr class="separator:a4ddac881c1f7ca92944868f9baf5cbe6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a027c30705794809fb89c1d1d8cc07dc5" id="r_a027c30705794809fb89c1d1d8cc07dc5"><td class="memItemLeft" align="right" valign="top"><a id="a027c30705794809fb89c1d1d8cc07dc5" name="a027c30705794809fb89c1d1d8cc07dc5"></a>
+static XII_DECLARE_IF_FLOAT_TYPE <a class="el" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3Template</a>&lt; Type &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>MakeRandomDeviationX</b> (<a class="el" href="../../d5/de7/classxii_random.html">xiiRandom</a> &amp;inout_rng, const <a class="el" href="../../d3/ddb/classxii_angle_template.html">xiiAngle</a> &amp;maxDeviation)</td></tr>
+<tr class="memdesc:a027c30705794809fb89c1d1d8cc07dc5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a random vector around the x axis with a maximum deviation angle of <em>maxDeviation</em>. The vector is normalized. The deviation angle must be larger than zero. <br /></td></tr>
+<tr class="separator:a027c30705794809fb89c1d1d8cc07dc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d3da20cec81253e9a40c8212091bacc" id="r_a7d3da20cec81253e9a40c8212091bacc"><td class="memItemLeft" align="right" valign="top"><a id="a7d3da20cec81253e9a40c8212091bacc" name="a7d3da20cec81253e9a40c8212091bacc"></a>
+static XII_DECLARE_IF_FLOAT_TYPE <a class="el" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3Template</a>&lt; Type &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>MakeRandomDeviationX</b> (<a class="el" href="../../d5/de7/classxii_random.html">xiiRandom</a> &amp;inout_rng, const <a class="el" href="../../d3/ddb/classxii_angle_template.html">xiiAngled</a> &amp;maxDeviation)</td></tr>
+<tr class="memdesc:a7d3da20cec81253e9a40c8212091bacc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a random vector around the x axis with a maximum deviation angle of <em>maxDeviation</em>. The vector is normalized. The deviation angle must be larger than zero. <br /></td></tr>
+<tr class="separator:a7d3da20cec81253e9a40c8212091bacc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a593d3ab249ac82ffad6ec36eafa2fc7d" id="r_a593d3ab249ac82ffad6ec36eafa2fc7d"><td class="memItemLeft" align="right" valign="top"><a id="a593d3ab249ac82ffad6ec36eafa2fc7d" name="a593d3ab249ac82ffad6ec36eafa2fc7d"></a>
+static XII_DECLARE_IF_FLOAT_TYPE <a class="el" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3Template</a>&lt; Type &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>MakeRandomDeviationY</b> (<a class="el" href="../../d5/de7/classxii_random.html">xiiRandom</a> &amp;inout_rng, const <a class="el" href="../../d3/ddb/classxii_angle_template.html">xiiAngle</a> &amp;maxDeviation)</td></tr>
+<tr class="memdesc:a593d3ab249ac82ffad6ec36eafa2fc7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a random vector around the y axis with a maximum deviation angle of <em>maxDeviation</em>. The vector is normalized. The deviation angle must be larger than zero. <br /></td></tr>
+<tr class="separator:a593d3ab249ac82ffad6ec36eafa2fc7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4fdee013b5287b39102520e97eb035bd" id="r_a4fdee013b5287b39102520e97eb035bd"><td class="memItemLeft" align="right" valign="top"><a id="a4fdee013b5287b39102520e97eb035bd" name="a4fdee013b5287b39102520e97eb035bd"></a>
+static XII_DECLARE_IF_FLOAT_TYPE <a class="el" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3Template</a>&lt; Type &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>MakeRandomDeviationY</b> (<a class="el" href="../../d5/de7/classxii_random.html">xiiRandom</a> &amp;inout_rng, const <a class="el" href="../../d3/ddb/classxii_angle_template.html">xiiAngled</a> &amp;maxDeviation)</td></tr>
+<tr class="memdesc:a4fdee013b5287b39102520e97eb035bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a random vector around the y axis with a maximum deviation angle of <em>maxDeviation</em>. The vector is normalized. The deviation angle must be larger than zero. <br /></td></tr>
+<tr class="separator:a4fdee013b5287b39102520e97eb035bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39442c3078498715bb88544cd0118b83" id="r_a39442c3078498715bb88544cd0118b83"><td class="memItemLeft" align="right" valign="top"><a id="a39442c3078498715bb88544cd0118b83" name="a39442c3078498715bb88544cd0118b83"></a>
+static XII_DECLARE_IF_FLOAT_TYPE <a class="el" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3Template</a>&lt; Type &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>MakeRandomDeviationZ</b> (<a class="el" href="../../d5/de7/classxii_random.html">xiiRandom</a> &amp;inout_rng, const <a class="el" href="../../d3/ddb/classxii_angle_template.html">xiiAngle</a> &amp;maxDeviation)</td></tr>
+<tr class="memdesc:a39442c3078498715bb88544cd0118b83"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a random vector around the z axis with a maximum deviation angle of <em>maxDeviation</em>. The vector is normalized. The deviation angle must be larger than zero. <br /></td></tr>
+<tr class="separator:a39442c3078498715bb88544cd0118b83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4089f3a6a5f0a1d06ae9ade52b6d2a70" id="r_a4089f3a6a5f0a1d06ae9ade52b6d2a70"><td class="memItemLeft" align="right" valign="top"><a id="a4089f3a6a5f0a1d06ae9ade52b6d2a70" name="a4089f3a6a5f0a1d06ae9ade52b6d2a70"></a>
+static XII_DECLARE_IF_FLOAT_TYPE <a class="el" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3Template</a>&lt; Type &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>MakeRandomDeviationZ</b> (<a class="el" href="../../d5/de7/classxii_random.html">xiiRandom</a> &amp;inout_rng, const <a class="el" href="../../d3/ddb/classxii_angle_template.html">xiiAngled</a> &amp;maxDeviation)</td></tr>
+<tr class="memdesc:a4089f3a6a5f0a1d06ae9ade52b6d2a70"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a random vector around the z axis with a maximum deviation angle of <em>maxDeviation</em>. The vector is normalized. The deviation angle must be larger than zero. <br /></td></tr>
+<tr class="separator:a4089f3a6a5f0a1d06ae9ade52b6d2a70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa111e4271a434c47c05737cafa5176f1" id="r_aa111e4271a434c47c05737cafa5176f1"><td class="memItemLeft" align="right" valign="top">static XII_DECLARE_IF_FLOAT_TYPE <a class="el" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3Template</a>&lt; Type &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa111e4271a434c47c05737cafa5176f1">MakeRandomDeviation</a> (<a class="el" href="../../d5/de7/classxii_random.html">xiiRandom</a> &amp;inout_rng, const <a class="el" href="../../d3/ddb/classxii_angle_template.html">xiiAngle</a> &amp;maxDeviation, const <a class="el" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3Template</a>&lt; Type &gt; &amp;vNormal)</td></tr>
+<tr class="memdesc:aa111e4271a434c47c05737cafa5176f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a random vector around the given normal with a maximum deviation.  <br /></td></tr>
+<tr class="separator:aa111e4271a434c47c05737cafa5176f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9327c3118f753eb0c148c3e6a879bdd4" id="r_a9327c3118f753eb0c148c3e6a879bdd4"><td class="memItemLeft" align="right" valign="top">static XII_DECLARE_IF_FLOAT_TYPE <a class="el" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3Template</a>&lt; Type &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9327c3118f753eb0c148c3e6a879bdd4">MakeRandomDeviation</a> (<a class="el" href="../../d5/de7/classxii_random.html">xiiRandom</a> &amp;inout_rng, const <a class="el" href="../../d3/ddb/classxii_angle_template.html">xiiAngled</a> &amp;maxDeviation, const <a class="el" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3Template</a>&lt; Type &gt; &amp;vNormal)</td></tr>
+<tr class="memdesc:a9327c3118f753eb0c148c3e6a879bdd4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a random vector around the given normal with a maximum deviation.  <br /></td></tr>
+<tr class="separator:a9327c3118f753eb0c148c3e6a879bdd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:aba669b48199fe5e35ece95e388957940" id="r_aba669b48199fe5e35ece95e388957940"><td class="memItemLeft" align="right" valign="top"><a id="aba669b48199fe5e35ece95e388957940" name="aba669b48199fe5e35ece95e388957940"></a>
+Type&#160;</td><td class="memItemRight" valign="bottom"><b>x</b></td></tr>
+<tr class="separator:aba669b48199fe5e35ece95e388957940"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5616c21b3b03c329b343c6a883824e6" id="r_ac5616c21b3b03c329b343c6a883824e6"><td class="memItemLeft" align="right" valign="top"><a id="ac5616c21b3b03c329b343c6a883824e6" name="ac5616c21b3b03c329b343c6a883824e6"></a>
+Type&#160;</td><td class="memItemRight" valign="bottom"><b>y</b></td></tr>
+<tr class="separator:ac5616c21b3b03c329b343c6a883824e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a117d95d711109cf135fcf0e0bee23108" id="r_a117d95d711109cf135fcf0e0bee23108"><td class="memItemLeft" align="right" valign="top"><a id="a117d95d711109cf135fcf0e0bee23108" name="a117d95d711109cf135fcf0e0bee23108"></a>
+Type&#160;</td><td class="memItemRight" valign="bottom"><b>z</b></td></tr>
+<tr class="separator:a117d95d711109cf135fcf0e0bee23108"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><div class="compoundTemplParams">template&lt;typename Type&gt;<br />
+class xiiVec3Template&lt; Type &gt;</div><p><a class="el" href="../../d8/d4f/class_a.html">A</a> 3-component vector class. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="adeb9860c5a5d47285a05bba8f06dd721" name="adeb9860c5a5d47285a05bba8f06dd721"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adeb9860c5a5d47285a05bba8f06dd721">&#9670;&#160;</a></span>IsNormalized()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Type &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">XII_IMPLEMENT_IF_FLOAT_TYPE XII_FORCE_INLINE bool <a class="el" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3Template</a>&lt; Type &gt;::IsNormalized </td>
+          <td>(</td>
+          <td class="paramtype">Type</td>          <td class="paramname"><span class="paramname"><em>fEpsilon</em></span><span class="paramdefsep"> = </span><span class="paramdefval">xiiMath::HugeEpsilon&lt;Type&gt;()</span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns, whether the squared length of this vector is between 0.999f and 1.001f. </p>
+<dl class="section note"><dt>Note</dt><dd>Normalization, especially with SSE is not very precise. So this function checks whether the (squared) length is between a lower and upper limit. </dd></dl>
+
+</div>
+</div>
+<a id="aad2dd0f6e02a5a30a8c3974e448969ee" name="aad2dd0f6e02a5a30a8c3974e448969ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad2dd0f6e02a5a30a8c3974e448969ee">&#9670;&#160;</a></span>MakeOrthogonalTo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Type &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">XII_IMPLEMENT_IF_FLOAT_TYPE void <a class="el" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3Template</a>&lt; Type &gt;::MakeOrthogonalTo </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3Template</a>&lt; Type &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>vNormal</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Modifies this direction vector to be orthogonal to the given (normalized) direction vector. The result is NOT normalized. </p>
+<dl class="section note"><dt>Note</dt><dd>This function may fail, e.g. create a vector that is zero, if the given normal is parallel to the vector itself. If you need to handle such cases, you should manually check afterwards, whether the result is zero, or cannot be normalized. </dd></dl>
+
+</div>
+</div>
+<a id="aa111e4271a434c47c05737cafa5176f1" name="aa111e4271a434c47c05737cafa5176f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa111e4271a434c47c05737cafa5176f1">&#9670;&#160;</a></span>MakeRandomDeviation() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Type &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">XII_IMPLEMENT_IF_FLOAT_TYPE <a class="el" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3Template</a>&lt; Type &gt; <a class="el" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3Template</a>&lt; Type &gt;::MakeRandomDeviation </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d5/de7/classxii_random.html">xiiRandom</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>inout_rng</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d3/ddb/classxii_angle_template.html">xiiAngle</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>maxDeviation</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3Template</a>&lt; Type &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>vNormal</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">nodiscard</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Creates a random vector around the given normal with a maximum deviation. </p>
+<dl class="section note"><dt>Note</dt><dd>If you are going to do this many times with the same axis, rather than calling this function, instead manually do what this function does (see inline code) and only compute the quaternion once. </dd></dl>
+
+</div>
+</div>
+<a id="a9327c3118f753eb0c148c3e6a879bdd4" name="a9327c3118f753eb0c148c3e6a879bdd4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9327c3118f753eb0c148c3e6a879bdd4">&#9670;&#160;</a></span>MakeRandomDeviation() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Type &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">XII_IMPLEMENT_IF_FLOAT_TYPE <a class="el" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3Template</a>&lt; Type &gt; <a class="el" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3Template</a>&lt; Type &gt;::MakeRandomDeviation </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d5/de7/classxii_random.html">xiiRandom</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>inout_rng</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d3/ddb/classxii_angle_template.html">xiiAngled</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>maxDeviation</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3Template</a>&lt; Type &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>vNormal</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">nodiscard</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Creates a random vector around the given normal with a maximum deviation. </p>
+<dl class="section note"><dt>Note</dt><dd>If you are going to do this many times with the same axis, rather than calling this function, instead manually do what this function does (see inline code) and only compute the quaternion once. </dd></dl>
+
+</div>
+</div>
+<a id="ae123e96eaa13e2880166aa7203f701b9" name="ae123e96eaa13e2880166aa7203f701b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae123e96eaa13e2880166aa7203f701b9">&#9670;&#160;</a></span>operator*=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Type &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">XII_FORCE_INLINE void <a class="el" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3Template</a>&lt; Type &gt;::operator*= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3Template</a>&lt; Type &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>rhs</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Multiplies rhs component-wise to this vector. </p>
+<dl class="test"><dt><b><a class="el" href="../../d4/df6/test.html#_test000031">Test</a></b></dt><dd>this is new </dd></dl>
+
+</div>
+</div>
+<a id="a64c100864c6f13e9feb3a26d69b489d6" name="a64c100864c6f13e9feb3a26d69b489d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a64c100864c6f13e9feb3a26d69b489d6">&#9670;&#160;</a></span>operator/=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Type &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">XII_FORCE_INLINE void <a class="el" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3Template</a>&lt; Type &gt;::operator/= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3Template</a>&lt; Type &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>rhs</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Divides this vector component-wise by rhs. </p>
+<dl class="test"><dt><b><a class="el" href="../../d4/df6/test.html#_test000032">Test</a></b></dt><dd>this is new </dd></dl>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li>/home/runner/work/XII/XII/Source/Engine/Foundation/Math/<a class="el" href="../../d4/dbc/_engine_2_foundation_2_math_2_declarations_8h_source.html">Declarations.h</a></li>
+<li>/home/runner/work/XII/XII/Source/Engine/Foundation/Math/<a class="el" href="../../d3/d42/_vec3_8h_source.html">Vec3.h</a></li>
+<li>/home/runner/work/XII/XII/Source/Engine/Foundation/Math/Implementation/<a class="el" href="../../d0/d03/_all_classes_random__inl_8h_source.html">AllClassesRandom_inl.h</a></li>
+<li>/home/runner/work/XII/XII/Source/Engine/Foundation/Math/Implementation/<a class="el" href="../../d5/d68/_vec3__inl_8h_source.html">Vec3_inl.h</a></li>
+<li>/home/runner/work/XII/XII/Source/Engine/Foundation/Math/Implementation/<a class="el" href="../../db/dba/_vec4__inl_8h_source.html">Vec4_inl.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3Template</a></li>
+    <li class="footer">Generated on Mon Jul 1 2024 23:53:17 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+  </ul>
+</div>
+</body>
+</html>

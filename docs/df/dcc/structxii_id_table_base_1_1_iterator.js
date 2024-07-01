@@ -1,5 +1,5 @@
 var structxii_id_table_base_1_1_iterator =
 [
-    [ "Value", "df/dcc/structxii_id_table_base_1_1_iterator.htm#a18cae17cfc5edb8234df09b80cf75e58", null ],
-    [ "Value", "df/dcc/structxii_id_table_base_1_1_iterator.htm#a8f4a136e37cbd0f6819c101d4606c19c", null ]
+    [ "Value", "df/dcc/structxii_id_table_base_1_1_iterator.html#a18cae17cfc5edb8234df09b80cf75e58", null ],
+    [ "Value", "df/dcc/structxii_id_table_base_1_1_iterator.html#a8f4a136e37cbd0f6819c101d4606c19c", null ]
 ];

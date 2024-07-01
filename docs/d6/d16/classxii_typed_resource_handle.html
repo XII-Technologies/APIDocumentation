@@ -1,0 +1,302 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.11.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<!-- BEGIN opengraph metadata -->
+<meta property="og:title" content="XII" />
+<meta property="og:image" content="../../XII-Logo.png" />
+<meta property="og:description" content="An advanced high-performance simulation engine." />
+<meta property="og:url" content="https://www.xiitechnologies.com" />
+<!-- END opengraph metadata -->
+<!-- BEGIN twitter metadata -->
+<meta name="twitter:image:src" content="../../XII-Logo.png" />
+<meta name="twitter:title" content="XII" />
+<meta name="twitter:description" content="An advanced high-performance simulation engine." />
+<!-- END twitter metadata -->
+<title>XII: xiiTypedResourceHandle&lt; RESOURCE_TYPE &gt; Class Template Reference</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link rel="icon" type="image/svg+xml" href="logo.drawio.svg"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="../../toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../custom.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<a href="https://github.com/jothepro/doxygen-awesome-css" class="github-corner" title="View source on GitHub" target="_blank" rel="noopener noreferrer">
+    <svg viewBox="0 0 250 250" width="40" height="40" style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+    <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="../../XII-Logo.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">XII
+   &#160;<span id="projectnumber">1.0.0</span>
+   </div>
+   <div id="projectbrief">A high-performance simulation engine.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(1); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.html','Search',true);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('d6/d16/classxii_typed_resource_handle.html','../../'); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#friends">Friends</a> &#124;
+<a href="../../df/dcf/classxii_typed_resource_handle-members.html">List of all members</a>  </div>
+  <div class="headertitle"><div class="title">xiiTypedResourceHandle&lt; RESOURCE_TYPE &gt; Class Template Reference</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>The <a class="el" href="../../d6/d16/classxii_typed_resource_handle.html" title="The xiiTypedResourceHandle controls access to a xiiResource.">xiiTypedResourceHandle</a> controls access to a <a class="el" href="../../d9/de1/classxii_resource.html" title="The base class for all resources.">xiiResource</a>.  
+ <a href="#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="../../dc/d97/_resource_handle_8h_source.html">ResourceHandle.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:af5dcb5ff16e5bdf9eb9d78ac5891d157" id="r_af5dcb5ff16e5bdf9eb9d78ac5891d157"><td class="memItemLeft" align="right" valign="top"><a id="af5dcb5ff16e5bdf9eb9d78ac5891d157" name="af5dcb5ff16e5bdf9eb9d78ac5891d157"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>ResourceType</b> = RESOURCE_TYPE</td></tr>
+<tr class="separator:af5dcb5ff16e5bdf9eb9d78ac5891d157"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a84be06ad3a50f747fc243e43741b1e11" id="r_a84be06ad3a50f747fc243e43741b1e11"><td class="memItemLeft" align="right" valign="top"><a id="a84be06ad3a50f747fc243e43741b1e11" name="a84be06ad3a50f747fc243e43741b1e11"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>xiiTypedResourceHandle</b> ()=default</td></tr>
+<tr class="memdesc:a84be06ad3a50f747fc243e43741b1e11"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="../../d8/d4f/class_a.html">A</a> default constructed handle is invalid and does not reference any resource. <br /></td></tr>
+<tr class="separator:a84be06ad3a50f747fc243e43741b1e11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3cf63005729dc7582ae79044c7f57b6d" id="r_a3cf63005729dc7582ae79044c7f57b6d"><td class="memItemLeft" align="right" valign="top"><a id="a3cf63005729dc7582ae79044c7f57b6d" name="a3cf63005729dc7582ae79044c7f57b6d"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>xiiTypedResourceHandle</b> (ResourceType *pResource)</td></tr>
+<tr class="memdesc:a3cf63005729dc7582ae79044c7f57b6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Increases the refcount of the given resource. <br /></td></tr>
+<tr class="separator:a3cf63005729dc7582ae79044c7f57b6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4f3edf367352f79f75a699e7a0bd1ac" id="r_ae4f3edf367352f79f75a699e7a0bd1ac"><td class="memItemLeft" align="right" valign="top"><a id="ae4f3edf367352f79f75a699e7a0bd1ac" name="ae4f3edf367352f79f75a699e7a0bd1ac"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>xiiTypedResourceHandle</b> (const <a class="el" href="../../d6/d16/classxii_typed_resource_handle.html">xiiTypedResourceHandle</a>&lt; ResourceType &gt; &amp;rhs)</td></tr>
+<tr class="memdesc:ae4f3edf367352f79f75a699e7a0bd1ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Increases the refcount of the given resource. <br /></td></tr>
+<tr class="separator:ae4f3edf367352f79f75a699e7a0bd1ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a189c1baa3f559f637cdf159bf41d1d40" id="r_a189c1baa3f559f637cdf159bf41d1d40"><td class="memItemLeft" align="right" valign="top"><a id="a189c1baa3f559f637cdf159bf41d1d40" name="a189c1baa3f559f637cdf159bf41d1d40"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>xiiTypedResourceHandle</b> (<a class="el" href="../../d6/d16/classxii_typed_resource_handle.html">xiiTypedResourceHandle</a>&lt; ResourceType &gt; &amp;&amp;rhs)</td></tr>
+<tr class="memdesc:a189c1baa3f559f637cdf159bf41d1d40"><td class="mdescLeft">&#160;</td><td class="mdescRight">Move constructor, no refcount change is necessary. <br /></td></tr>
+<tr class="separator:a189c1baa3f559f637cdf159bf41d1d40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ae0f2eabfda064289d73c5f370b5376" id="r_a9ae0f2eabfda064289d73c5f370b5376"><td class="memTemplParams" colspan="2"><a id="a9ae0f2eabfda064289d73c5f370b5376" name="a9ae0f2eabfda064289d73c5f370b5376"></a>
+template&lt;typename BaseOrDerivedType &gt; </td></tr>
+<tr class="memitem:a9ae0f2eabfda064289d73c5f370b5376"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><b>xiiTypedResourceHandle</b> (const <a class="el" href="../../d6/d16/classxii_typed_resource_handle.html">xiiTypedResourceHandle</a>&lt; BaseOrDerivedType &gt; &amp;rhs)</td></tr>
+<tr class="separator:a9ae0f2eabfda064289d73c5f370b5376"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c105183001e46ca9c93f8d55c5ce4ea" id="r_a5c105183001e46ca9c93f8d55c5ce4ea"><td class="memItemLeft" align="right" valign="top"><a id="a5c105183001e46ca9c93f8d55c5ce4ea" name="a5c105183001e46ca9c93f8d55c5ce4ea"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="../../d6/d16/classxii_typed_resource_handle.html">xiiTypedResourceHandle</a>&lt; ResourceType &gt; &amp;rhs)</td></tr>
+<tr class="memdesc:a5c105183001e46ca9c93f8d55c5ce4ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Releases the current reference and increases the refcount of the given resource. <br /></td></tr>
+<tr class="separator:a5c105183001e46ca9c93f8d55c5ce4ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae39a67bd93a052b375c251d1fd9bed60" id="r_ae39a67bd93a052b375c251d1fd9bed60"><td class="memItemLeft" align="right" valign="top"><a id="ae39a67bd93a052b375c251d1fd9bed60" name="ae39a67bd93a052b375c251d1fd9bed60"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (<a class="el" href="../../d6/d16/classxii_typed_resource_handle.html">xiiTypedResourceHandle</a>&lt; ResourceType &gt; &amp;&amp;rhs)</td></tr>
+<tr class="memdesc:ae39a67bd93a052b375c251d1fd9bed60"><td class="mdescLeft">&#160;</td><td class="mdescRight">Move operator, no refcount change is necessary. <br /></td></tr>
+<tr class="separator:ae39a67bd93a052b375c251d1fd9bed60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d639d3dd12aaedc932bd8ee436826ae" id="r_a0d639d3dd12aaedc932bd8ee436826ae"><td class="memItemLeft" align="right" valign="top"><a id="a0d639d3dd12aaedc932bd8ee436826ae" name="a0d639d3dd12aaedc932bd8ee436826ae"></a>
+XII_ALWAYS_INLINE bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator==</b> (const <a class="el" href="../../d6/d16/classxii_typed_resource_handle.html">xiiTypedResourceHandle</a>&lt; ResourceType &gt; &amp;rhs) const</td></tr>
+<tr class="memdesc:a0d639d3dd12aaedc932bd8ee436826ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether the two handles point to the same resource. <br /></td></tr>
+<tr class="separator:a0d639d3dd12aaedc932bd8ee436826ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d2df848c78b1728e31bd99ae51a0c89" id="r_a2d2df848c78b1728e31bd99ae51a0c89"><td class="memItemLeft" align="right" valign="top"><a id="a2d2df848c78b1728e31bd99ae51a0c89" name="a2d2df848c78b1728e31bd99ae51a0c89"></a>
+XII_ALWAYS_INLINE bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator!=</b> (const <a class="el" href="../../d6/d16/classxii_typed_resource_handle.html">xiiTypedResourceHandle</a>&lt; ResourceType &gt; &amp;rhs) const</td></tr>
+<tr class="memdesc:a2d2df848c78b1728e31bd99ae51a0c89"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether the two handles point to the same resource. <br /></td></tr>
+<tr class="separator:a2d2df848c78b1728e31bd99ae51a0c89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1fbff7f7e449affcd2b57c3d109fde90" id="r_a1fbff7f7e449affcd2b57c3d109fde90"><td class="memItemLeft" align="right" valign="top"><a id="a1fbff7f7e449affcd2b57c3d109fde90" name="a1fbff7f7e449affcd2b57c3d109fde90"></a>
+XII_ALWAYS_INLINE bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator&lt;</b> (const <a class="el" href="../../d6/d16/classxii_typed_resource_handle.html">xiiTypedResourceHandle</a>&lt; ResourceType &gt; &amp;rhs) const</td></tr>
+<tr class="memdesc:a1fbff7f7e449affcd2b57c3d109fde90"><td class="mdescLeft">&#160;</td><td class="mdescRight">For storing handles as keys in maps. <br /></td></tr>
+<tr class="separator:a1fbff7f7e449affcd2b57c3d109fde90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f57fcf537526901ddf107b735a33bad" id="r_a9f57fcf537526901ddf107b735a33bad"><td class="memItemLeft" align="right" valign="top"><a id="a9f57fcf537526901ddf107b735a33bad" name="a9f57fcf537526901ddf107b735a33bad"></a>
+XII_ALWAYS_INLINE bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator==</b> (const <a class="el" href="../../d9/de1/classxii_resource.html">xiiResource</a> *rhs) const</td></tr>
+<tr class="memdesc:a9f57fcf537526901ddf107b735a33bad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether the handle points to the given resource. <br /></td></tr>
+<tr class="separator:a9f57fcf537526901ddf107b735a33bad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3444b6bb905ee7371b4334700c6a934" id="r_aa3444b6bb905ee7371b4334700c6a934"><td class="memItemLeft" align="right" valign="top"><a id="aa3444b6bb905ee7371b4334700c6a934" name="aa3444b6bb905ee7371b4334700c6a934"></a>
+XII_ALWAYS_INLINE bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator!=</b> (const <a class="el" href="../../d9/de1/classxii_resource.html">xiiResource</a> *rhs) const</td></tr>
+<tr class="memdesc:aa3444b6bb905ee7371b4334700c6a934"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether the handle points to the given resource. <br /></td></tr>
+<tr class="separator:aa3444b6bb905ee7371b4334700c6a934"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ec46fb3cd18d8569e7660e69d139366" id="r_a7ec46fb3cd18d8569e7660e69d139366"><td class="memItemLeft" align="right" valign="top"><a id="a7ec46fb3cd18d8569e7660e69d139366" name="a7ec46fb3cd18d8569e7660e69d139366"></a>
+XII_ALWAYS_INLINE&#160;</td><td class="memItemRight" valign="bottom"><b>operator const xiiTypelessResourceHandle</b> () const</td></tr>
+<tr class="memdesc:a7ec46fb3cd18d8569e7660e69d139366"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the corresponding typeless resource handle. <br /></td></tr>
+<tr class="separator:a7ec46fb3cd18d8569e7660e69d139366"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33b817a4cd0045085144202b2ee4719e" id="r_a33b817a4cd0045085144202b2ee4719e"><td class="memItemLeft" align="right" valign="top"><a id="a33b817a4cd0045085144202b2ee4719e" name="a33b817a4cd0045085144202b2ee4719e"></a>
+XII_ALWAYS_INLINE&#160;</td><td class="memItemRight" valign="bottom"><b>operator xiiTypelessResourceHandle</b> ()</td></tr>
+<tr class="memdesc:a33b817a4cd0045085144202b2ee4719e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the corresponding typeless resource handle. <br /></td></tr>
+<tr class="separator:a33b817a4cd0045085144202b2ee4719e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7993c6987f96e7a6bd6e0b1961219d0" id="r_ad7993c6987f96e7a6bd6e0b1961219d0"><td class="memItemLeft" align="right" valign="top"><a id="ad7993c6987f96e7a6bd6e0b1961219d0" name="ad7993c6987f96e7a6bd6e0b1961219d0"></a>
+XII_ALWAYS_INLINE bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsValid</b> () const</td></tr>
+<tr class="memdesc:ad7993c6987f96e7a6bd6e0b1961219d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether the handle stores a valid pointer to a resource. <br /></td></tr>
+<tr class="separator:ad7993c6987f96e7a6bd6e0b1961219d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a296eb6daed2082f3001c9a5392d17472" id="r_a296eb6daed2082f3001c9a5392d17472"><td class="memItemLeft" align="right" valign="top"><a id="a296eb6daed2082f3001c9a5392d17472" name="a296eb6daed2082f3001c9a5392d17472"></a>
+XII_ALWAYS_INLINE&#160;</td><td class="memItemRight" valign="bottom"><b>operator bool</b> () const</td></tr>
+<tr class="memdesc:a296eb6daed2082f3001c9a5392d17472"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether the handle stores a valid pointer to a resource. <br /></td></tr>
+<tr class="separator:a296eb6daed2082f3001c9a5392d17472"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0085567bd3ad2f1b4d616e10992122c0" id="r_a0085567bd3ad2f1b4d616e10992122c0"><td class="memItemLeft" align="right" valign="top"><a id="a0085567bd3ad2f1b4d616e10992122c0" name="a0085567bd3ad2f1b4d616e10992122c0"></a>
+XII_ALWAYS_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><b>Invalidate</b> ()</td></tr>
+<tr class="memdesc:a0085567bd3ad2f1b4d616e10992122c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clears any reference to a resource and reduces its refcount. <br /></td></tr>
+<tr class="separator:a0085567bd3ad2f1b4d616e10992122c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4cdc910f4883f01392a3fd6d74302460" id="r_a4cdc910f4883f01392a3fd6d74302460"><td class="memItemLeft" align="right" valign="top"><a id="a4cdc910f4883f01392a3fd6d74302460" name="a4cdc910f4883f01392a3fd6d74302460"></a>
+XII_ALWAYS_INLINE xiiUInt64&#160;</td><td class="memItemRight" valign="bottom"><b>GetResourceIDHash</b> () const</td></tr>
+<tr class="memdesc:a4cdc910f4883f01392a3fd6d74302460"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the Resource ID hash of the exact resource that this handle points to, without acquiring the resource. The handle must be valid. <br /></td></tr>
+<tr class="separator:a4cdc910f4883f01392a3fd6d74302460"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf031726c3f7e4cc92fc1790df84df11" id="r_abf031726c3f7e4cc92fc1790df84df11"><td class="memItemLeft" align="right" valign="top"><a id="abf031726c3f7e4cc92fc1790df84df11" name="abf031726c3f7e4cc92fc1790df84df11"></a>
+XII_ALWAYS_INLINE const <a class="el" href="../../df/dfb/structxii_hybrid_string.html">xiiString</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetResourceID</b> () const</td></tr>
+<tr class="memdesc:abf031726c3f7e4cc92fc1790df84df11"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the Resource ID of the exact resource that this handle points to, without acquiring the resource. The handle must be valid. <br /></td></tr>
+<tr class="separator:abf031726c3f7e4cc92fc1790df84df11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18e367d12f112f1b1b7e603c6bb50796" id="r_a18e367d12f112f1b1b7e603c6bb50796"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a18e367d12f112f1b1b7e603c6bb50796">AssignFromTypelessHandle</a> (const <a class="el" href="../../d6/d01/classxii_typeless_resource_handle.html">xiiTypelessResourceHandle</a> &amp;hHandle)</td></tr>
+<tr class="memdesc:a18e367d12f112f1b1b7e603c6bb50796"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attempts to copy the given typeless handle to this handle.  <br /></td></tr>
+<tr class="separator:a18e367d12f112f1b1b7e603c6bb50796"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
+Friends</h2></td></tr>
+<tr class="memitem:aad5c1fd97c86fe727580bb720bb8c5ff" id="r_aad5c1fd97c86fe727580bb720bb8c5ff"><td class="memItemLeft" align="right" valign="top"><a id="aad5c1fd97c86fe727580bb720bb8c5ff" name="aad5c1fd97c86fe727580bb720bb8c5ff"></a>
+class&#160;</td><td class="memItemRight" valign="bottom"><b>xiiResourceManager</b></td></tr>
+<tr class="separator:aad5c1fd97c86fe727580bb720bb8c5ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab644a45c825658ccf92eab8c99303f40" id="r_ab644a45c825658ccf92eab8c99303f40"><td class="memItemLeft" align="right" valign="top"><a id="ab644a45c825658ccf92eab8c99303f40" name="ab644a45c825658ccf92eab8c99303f40"></a>
+class&#160;</td><td class="memItemRight" valign="bottom"><b>xiiResourceHandleWriteContext</b></td></tr>
+<tr class="separator:ab644a45c825658ccf92eab8c99303f40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14e42353b5599856d74ad30fa578ed94" id="r_a14e42353b5599856d74ad30fa578ed94"><td class="memItemLeft" align="right" valign="top"><a id="a14e42353b5599856d74ad30fa578ed94" name="a14e42353b5599856d74ad30fa578ed94"></a>
+class&#160;</td><td class="memItemRight" valign="bottom"><b>xiiResourceHandleReadContext</b></td></tr>
+<tr class="separator:a14e42353b5599856d74ad30fa578ed94"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29c3bfe611faf4eede8c4053d70728a6" id="r_a29c3bfe611faf4eede8c4053d70728a6"><td class="memItemLeft" align="right" valign="top"><a id="a29c3bfe611faf4eede8c4053d70728a6" name="a29c3bfe611faf4eede8c4053d70728a6"></a>
+class&#160;</td><td class="memItemRight" valign="bottom"><b>xiiResourceHandleStreamOperations</b></td></tr>
+<tr class="separator:a29c3bfe611faf4eede8c4053d70728a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><div class="compoundTemplParams">template&lt;typename RESOURCE_TYPE&gt;<br />
+class xiiTypedResourceHandle&lt; RESOURCE_TYPE &gt;</div><p>The <a class="el" href="../../d6/d16/classxii_typed_resource_handle.html" title="The xiiTypedResourceHandle controls access to a xiiResource.">xiiTypedResourceHandle</a> controls access to a <a class="el" href="../../d9/de1/classxii_resource.html" title="The base class for all resources.">xiiResource</a>. </p>
+<p>All resources must be referenced using <a class="el" href="../../d6/d16/classxii_typed_resource_handle.html" title="The xiiTypedResourceHandle controls access to a xiiResource.">xiiTypedResourceHandle</a> instances (instantiated with the proper resource type as the template argument). You must not store a direct pointer to a resource anywhere. Instead always store resource handles. To actually access a resource, use <a class="el" href="../../d4/d8e/classxii_resource_manager.html#a5479934b8fc637ff4067fdd2d24bc2e0" title="Acquires a resource pointer from a handle. Prefer to use xiiResourceLock, which wraps BeginAcquireRes...">xiiResourceManager::BeginAcquireResource</a> and <a class="el" href="../../d4/d8e/classxii_resource_manager.html#a69d96e946aa3e79a3af69bfa249e78fa" title="Needs to be called in concert with BeginAcquireResource() after accessing a resource has been finishe...">xiiResourceManager::EndAcquireResource</a> after you have finished using it.</p>
+<p><a class="el" href="../../d6/d16/classxii_typed_resource_handle.html" title="The xiiTypedResourceHandle controls access to a xiiResource.">xiiTypedResourceHandle</a> implements reference counting on resources. It also allows to redirect resources to fallback resources when they are not yet loaded (if possible).</p>
+<p>As long as there is one resource handle that references a resource, it is considered 'in use' and thus might not get unloaded. So be careful where you store resource handles. If necessary you can call <a class="el" href="#a0085567bd3ad2f1b4d616e10992122c0" title="Clears any reference to a resource and reduces its refcount.">Invalidate()</a> to clear a resource handle and thus also remove the reference to the resource. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a18e367d12f112f1b1b7e603c6bb50796" name="a18e367d12f112f1b1b7e603c6bb50796"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a18e367d12f112f1b1b7e603c6bb50796">&#9670;&#160;</a></span>AssignFromTypelessHandle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename RESOURCE_TYPE &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="../../d6/d16/classxii_typed_resource_handle.html">xiiTypedResourceHandle</a>&lt; RESOURCE_TYPE &gt;::AssignFromTypelessHandle </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d6/d01/classxii_typeless_resource_handle.html">xiiTypelessResourceHandle</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>hHandle</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Attempts to copy the given typeless handle to this handle. </p>
+<p>It is an error to assign a typeless handle that references a resource with a mismatching type. </p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li>/home/runner/work/XII/XII/Source/Engine/Core/ResourceManager/Implementation/<a class="el" href="../../dc/db6/_engine_2_core_2_resource_manager_2_implementation_2_declarations_8h_source.html">Declarations.h</a></li>
+<li>/home/runner/work/XII/XII/Source/Engine/Core/ResourceManager/<a class="el" href="../../dc/d97/_resource_handle_8h_source.html">ResourceHandle.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../d6/d16/classxii_typed_resource_handle.html">xiiTypedResourceHandle</a></li>
+    <li class="footer">Generated on Mon Jul 1 2024 23:53:16 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+  </ul>
+</div>
+</body>
+</html>

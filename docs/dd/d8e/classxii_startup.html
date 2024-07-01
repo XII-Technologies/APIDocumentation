@@ -1,0 +1,404 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.11.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<!-- BEGIN opengraph metadata -->
+<meta property="og:title" content="XII" />
+<meta property="og:image" content="../../XII-Logo.png" />
+<meta property="og:description" content="An advanced high-performance simulation engine." />
+<meta property="og:url" content="https://www.xiitechnologies.com" />
+<!-- END opengraph metadata -->
+<!-- BEGIN twitter metadata -->
+<meta name="twitter:image:src" content="../../XII-Logo.png" />
+<meta name="twitter:title" content="XII" />
+<meta name="twitter:description" content="An advanced high-performance simulation engine." />
+<!-- END twitter metadata -->
+<title>XII: xiiStartup Class Reference</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link rel="icon" type="image/svg+xml" href="logo.drawio.svg"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="../../toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../custom.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<a href="https://github.com/jothepro/doxygen-awesome-css" class="github-corner" title="View source on GitHub" target="_blank" rel="noopener noreferrer">
+    <svg viewBox="0 0 250 250" width="40" height="40" style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+    <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="../../XII-Logo.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">XII
+   &#160;<span id="projectnumber">1.0.0</span>
+   </div>
+   <div id="projectbrief">A high-performance simulation engine.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(1); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.html','Search',true);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('dd/d8e/classxii_startup.html','../../'); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="../../db/da3/classxii_startup-members.html">List of all members</a>  </div>
+  <div class="headertitle"><div class="title">xiiStartup Class Reference</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>The startup system makes sure to initialize and shut down all known subsystems in the proper order.  
+ <a href="#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="../../d2/d13/_startup_8h_source.html">Startup.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a22630c72c2df48497070e2f2b66cf02c" id="r_a22630c72c2df48497070e2f2b66cf02c"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a22630c72c2df48497070e2f2b66cf02c">AddApplicationTag</a> (<a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sTag)</td></tr>
+<tr class="memdesc:a22630c72c2df48497070e2f2b66cf02c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stores the <a class="el" href="../../da/d9d/structxii_string_view.html" title="xiiStringView represent a read-only sub-string of a larger string, as it can store a dedicated string...">xiiStringView</a> as a tag. Does not copy the string, so this must be a string embedded in the application code.  <br /></td></tr>
+<tr class="separator:a22630c72c2df48497070e2f2b66cf02c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4033b373734e87f7fa7dcd6d063eaced" id="r_a4033b373734e87f7fa7dcd6d063eaced"><td class="memItemLeft" align="right" valign="top"><a id="a4033b373734e87f7fa7dcd6d063eaced" name="a4033b373734e87f7fa7dcd6d063eaced"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>HasApplicationTag</b> (<a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sTag)</td></tr>
+<tr class="memdesc:a4033b373734e87f7fa7dcd6d063eaced"><td class="mdescLeft">&#160;</td><td class="mdescRight">Query whether a tag was added with <a class="el" href="#a22630c72c2df48497070e2f2b66cf02c" title="Stores the xiiStringView as a tag. Does not copy the string, so this must be a string embedded in the...">AddApplicationTag()</a> <br /></td></tr>
+<tr class="separator:a4033b373734e87f7fa7dcd6d063eaced"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65c47d9fa70034b0c6d7677d2274263b" id="r_a65c47d9fa70034b0c6d7677d2274263b"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a65c47d9fa70034b0c6d7677d2274263b">StartupBaseSystems</a> ()</td></tr>
+<tr class="memdesc:a65c47d9fa70034b0c6d7677d2274263b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Runs the 'base' startup sequence of all subsystems in the proper order.  <br /></td></tr>
+<tr class="separator:a65c47d9fa70034b0c6d7677d2274263b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33afa05eb4f7a8eefb1dcce11146f9d6" id="r_a33afa05eb4f7a8eefb1dcce11146f9d6"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a33afa05eb4f7a8eefb1dcce11146f9d6">StartupCoreSystems</a> ()</td></tr>
+<tr class="memdesc:a33afa05eb4f7a8eefb1dcce11146f9d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Runs the 'core' startup sequence of all subsystems in the proper order.  <br /></td></tr>
+<tr class="separator:a33afa05eb4f7a8eefb1dcce11146f9d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23d4adb6b359b16fb6e4d0af7720e771" id="r_a23d4adb6b359b16fb6e4d0af7720e771"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a23d4adb6b359b16fb6e4d0af7720e771">ShutdownCoreSystems</a> ()</td></tr>
+<tr class="memdesc:a23d4adb6b359b16fb6e4d0af7720e771"><td class="mdescLeft">&#160;</td><td class="mdescRight">Runs the 'core' shutdown sequence of all subsystems in the proper order (reversed startup order).  <br /></td></tr>
+<tr class="separator:a23d4adb6b359b16fb6e4d0af7720e771"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae787ffd98b146191e90024222f79e23a" id="r_ae787ffd98b146191e90024222f79e23a"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae787ffd98b146191e90024222f79e23a">StartupHighLevelSystems</a> ()</td></tr>
+<tr class="memdesc:ae787ffd98b146191e90024222f79e23a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Runs the 'high level' startup sequence of all subsystems in the proper order.  <br /></td></tr>
+<tr class="separator:ae787ffd98b146191e90024222f79e23a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a785be7a33e589ff3da1d1d7e7e2b7c12" id="r_a785be7a33e589ff3da1d1d7e7e2b7c12"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a785be7a33e589ff3da1d1d7e7e2b7c12">ShutdownHighLevelSystems</a> ()</td></tr>
+<tr class="memdesc:a785be7a33e589ff3da1d1d7e7e2b7c12"><td class="mdescLeft">&#160;</td><td class="mdescRight">Runs the 'high level' shutdown sequence of all subsystems in the proper order (reversed startup order).  <br /></td></tr>
+<tr class="separator:a785be7a33e589ff3da1d1d7e7e2b7c12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa593721f41827b845077e3698a53f1ad" id="r_aa593721f41827b845077e3698a53f1ad"><td class="memItemLeft" align="right" valign="top"><a id="aa593721f41827b845077e3698a53f1ad" name="aa593721f41827b845077e3698a53f1ad"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>PrintAllSubsystems</b> ()</td></tr>
+<tr class="memdesc:aa593721f41827b845077e3698a53f1ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Output info about all known subsystems via the logging system (can change when DLLs are loaded dynamically). <br /></td></tr>
+<tr class="separator:aa593721f41827b845077e3698a53f1ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af46a343423edbbd8f2e8ea42f85366f1" id="r_af46a343423edbbd8f2e8ea42f85366f1"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af46a343423edbbd8f2e8ea42f85366f1">ReinitToCurrentState</a> ()</td></tr>
+<tr class="memdesc:af46a343423edbbd8f2e8ea42f85366f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calls <a class="el" href="#a65c47d9fa70034b0c6d7677d2274263b" title="Runs the &#39;base&#39; startup sequence of all subsystems in the proper order.">StartupBaseSystems()</a>, <a class="el" href="#a33afa05eb4f7a8eefb1dcce11146f9d6" title="Runs the &#39;core&#39; startup sequence of all subsystems in the proper order.">StartupCoreSystems()</a> or <a class="el" href="#ae787ffd98b146191e90024222f79e23a" title="Runs the &#39;high level&#39; startup sequence of all subsystems in the proper order.">StartupHighLevelSystems()</a> again, depending on what was done last.  <br /></td></tr>
+<tr class="separator:af46a343423edbbd8f2e8ea42f85366f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>The startup system makes sure to initialize and shut down all known subsystems in the proper order. </p>
+<p>Each subsystem can define on which other subsystems (or entire group) it is dependent (i.e. which other code it needs in an initialized state, before it can run itself). The startup system will sort all subsystems by their dependencies and then initialize them in the proper order. The startup and shutdown sequence consists of two steps. First the 'core' functionality is initialized. This is usually all the functionality that does not depend on a working rendering context. After all systems have had their 'core' functionality initialized, the 'high level' functionality can be initialized. In between these steps the rendering context should be created. Tools that might not create a window or do not want to actually load GPU resources, might get away with only doing the 'core' initialization. Thus a subsystem should do all the initialization that is independent from a window or rendering context in 'core' startup, and it should be able to work (with some features disabled), even when 'high level' startup is not done.</p>
+<p><a class="el" href="../../d8/d4f/class_a.html">A</a> subsystem startup configuration for a static subsystem needs to be put in some cpp file of the subsystem and looks like this:</p>
+<p>// clang-format off XII_BEGIN_SUBSYSTEM_DECLARATION(ExampleGroup, ExampleSubSystem)</p>
+<p>BEGIN_SUBSYSTEM_DEPENDENCIES "SomeOtherSubSystem", "SomeOtherSubSystem2", "SomeGroup" END_SUBSYSTEM_DEPENDENCIES</p>
+<p>ON_CORESYSTEMS_STARTUP { xiiExampleSubSystem::BasicStartup(); }</p>
+<p>ON_CORESYSTEMS_SHUTDOWN { xiiExampleSubSystem::BasicShutdown(); }</p>
+<p>ON_HIGHLEVELSYSTEMS_STARTUP { xiiExampleSubSystem::EngineStartup(); }</p>
+<p>ON_HIGHLEVELSYSTEMS_SHUTDOWN { xiiExampleSubSystem::EngineShutdown(); }</p>
+<p>XII_END_SUBSYSTEM_DECLARATION; // clang-format on</p>
+<p>This will automatically register the subsystem, once the code is being loaded (can be dynamically loaded from a DLL). The next time any of the <a class="el" href="../../dd/d8e/classxii_startup.html" title="The startup system makes sure to initialize and shut down all known subsystems in the proper order.">xiiStartup</a> functions are called (StartupCoreSystems, StartupHighLevelSystems) the subsystem will be initialized.</p>
+<p>If however your subsystem is implemented as a normal class, you need to derive from the base class '<a class="el" href="../../de/d08/classxii_sub_system.html" title="Base class for all subsystems.">xiiSubSystem</a>' and override the virtual functions. Then when you have an instance of that class and call xiiStartup::StartupCore etc., that instance will be properly initialized as well. However, you must ensure that the subsystem is properly shut down, before its instance is destroyed. Also you should never have two instances of the same subsystem.</p>
+<p>All startup / shutdown procedures broadcast global events before and after they execute. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a22630c72c2df48497070e2f2b66cf02c" name="a22630c72c2df48497070e2f2b66cf02c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a22630c72c2df48497070e2f2b66cf02c">&#9670;&#160;</a></span>AddApplicationTag()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void xiiStartup::AddApplicationTag </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a></td>          <td class="paramname"><span class="paramname"><em>sTag</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Stores the <a class="el" href="../../da/d9d/structxii_string_view.html" title="xiiStringView represent a read-only sub-string of a larger string, as it can store a dedicated string...">xiiStringView</a> as a tag. Does not copy the string, so this must be a string embedded in the application code. </p>
+<p>Before executing the startup routines an application should set tags that allow plugins to identify the context in which they are running. This makes it possible for the startup functions to conditionally configure things.</p>
+<p>Strings that should be used for common things: 'runtime' : For all applications that run the full engine, automatically added by <a class="el" href="../../d1/ded/classxii_game_application.html" title="The base class for all typical game applications made with xiiEngine.">xiiGameApplication</a>. Be aware that some tool applications have this set, even though they don't use graphical output. 'editor' : for all applications that run the editor framework, set on the Editor and the EditorProcessor 'testframework' : for applications that execute the xiiTestFramework 'tool' : for all stand-alone tool applications, set by the editor, editorprocessor, fileserve, etc. </p>
+
+</div>
+</div>
+<a id="af46a343423edbbd8f2e8ea42f85366f1" name="af46a343423edbbd8f2e8ea42f85366f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af46a343423edbbd8f2e8ea42f85366f1">&#9670;&#160;</a></span>ReinitToCurrentState()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void xiiStartup::ReinitToCurrentState </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Calls <a class="el" href="#a65c47d9fa70034b0c6d7677d2274263b" title="Runs the &#39;base&#39; startup sequence of all subsystems in the proper order.">StartupBaseSystems()</a>, <a class="el" href="#a33afa05eb4f7a8eefb1dcce11146f9d6" title="Runs the &#39;core&#39; startup sequence of all subsystems in the proper order.">StartupCoreSystems()</a> or <a class="el" href="#ae787ffd98b146191e90024222f79e23a" title="Runs the &#39;high level&#39; startup sequence of all subsystems in the proper order.">StartupHighLevelSystems()</a> again, depending on what was done last. </p>
+<p>This can be used to first unload plugins and reload them, and then reinit the engine to the state that it was in again. </p>
+
+</div>
+</div>
+<a id="a23d4adb6b359b16fb6e4d0af7720e771" name="a23d4adb6b359b16fb6e4d0af7720e771"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a23d4adb6b359b16fb6e4d0af7720e771">&#9670;&#160;</a></span>ShutdownCoreSystems()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void xiiStartup::ShutdownCoreSystems </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Runs the 'core' shutdown sequence of all subsystems in the proper order (reversed startup order). </p>
+<p>Call this AFTER window and graphics context have been destroyed already, shortly before application exit. Makes sure that the 'high level' shutdown has been run first. Broadcasts the global event XII_GLOBALEVENT_SHUTDOWN_CORESYSTEMS_BEGIN and XII_GLOBALEVENT_SHUTDOWN_CORESYSTEMS_END </p>
+
+</div>
+</div>
+<a id="a785be7a33e589ff3da1d1d7e7e2b7c12" name="a785be7a33e589ff3da1d1d7e7e2b7c12"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a785be7a33e589ff3da1d1d7e7e2b7c12">&#9670;&#160;</a></span>ShutdownHighLevelSystems()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void xiiStartup::ShutdownHighLevelSystems </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Runs the 'high level' shutdown sequence of all subsystems in the proper order (reversed startup order). </p>
+<p>Run this BEFORE the window and graphics context have been destroyed, such that code that requires those can do its deinitialization first. Broadcasts the global event XII_GLOBALEVENT_SHUTDOWN_HIGHLEVELSYSTEMS_BEGIN and XII_GLOBALEVENT_SHUTDOWN_HIGHLEVELSYSTEMS_END </p>
+
+</div>
+</div>
+<a id="a65c47d9fa70034b0c6d7677d2274263b" name="a65c47d9fa70034b0c6d7677d2274263b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a65c47d9fa70034b0c6d7677d2274263b">&#9670;&#160;</a></span>StartupBaseSystems()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void xiiStartup::StartupBaseSystems </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Runs the 'base' startup sequence of all subsystems in the proper order. </p>
+<p>Run this, if you only require very low level systems to be initialized. Otherwise prefer StartupCore. There is NO ShutdownBaseSystems, everything that gets initialized during the 'Base Startup' should not need any deinitialization. This function is automatically called by StartupCore, if it hasn't been called before already. </p>
+
+</div>
+</div>
+<a id="a33afa05eb4f7a8eefb1dcce11146f9d6" name="a33afa05eb4f7a8eefb1dcce11146f9d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a33afa05eb4f7a8eefb1dcce11146f9d6">&#9670;&#160;</a></span>StartupCoreSystems()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void xiiStartup::StartupCoreSystems </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Runs the 'core' startup sequence of all subsystems in the proper order. </p>
+<p>Run this BEFORE any window and graphics context have been created. Broadcasts the global event XII_GLOBALEVENT_STARTUP_CORESYSTEMS_BEGIN and XII_GLOBALEVENT_STARTUP_CORESYSTEMS_END </p>
+
+</div>
+</div>
+<a id="ae787ffd98b146191e90024222f79e23a" name="ae787ffd98b146191e90024222f79e23a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae787ffd98b146191e90024222f79e23a">&#9670;&#160;</a></span>StartupHighLevelSystems()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void xiiStartup::StartupHighLevelSystems </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Runs the 'high level' startup sequence of all subsystems in the proper order. </p>
+<p>Run this AFTER a window and graphics context have been created, such that anything that depends on that can now do its initialization. Makes sure that the 'core' initialization has been run first. Broadcasts the global event XII_GLOBALEVENT_STARTUP_HIGHLEVELSYSTEMS_BEGIN and XII_GLOBALEVENT_STARTUP_HIGHLEVELSYSTEMS_END </p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li>/home/runner/work/XII/XII/Source/Engine/Foundation/Configuration/<a class="el" href="../../d2/d13/_startup_8h_source.html">Startup.h</a></li>
+<li>/home/runner/work/XII/XII/Source/Engine/Foundation/Configuration/Implementation/<b>Startup.cpp</b></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../dd/d8e/classxii_startup.html">xiiStartup</a></li>
+    <li class="footer">Generated on Mon Jul 1 2024 23:53:16 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+  </ul>
+</div>
+</body>
+</html>

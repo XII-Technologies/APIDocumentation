@@ -1,0 +1,226 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.11.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<!-- BEGIN opengraph metadata -->
+<meta property="og:title" content="XII" />
+<meta property="og:image" content="../../XII-Logo.png" />
+<meta property="og:description" content="An advanced high-performance simulation engine." />
+<meta property="og:url" content="https://www.xiitechnologies.com" />
+<!-- END opengraph metadata -->
+<!-- BEGIN twitter metadata -->
+<meta name="twitter:image:src" content="../../XII-Logo.png" />
+<meta name="twitter:title" content="XII" />
+<meta name="twitter:description" content="An advanced high-performance simulation engine." />
+<!-- END twitter metadata -->
+<title>XII: /home/runner/work/XII/XII/Source/Engine/Foundation/Configuration/Startup.h Source File</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link rel="icon" type="image/svg+xml" href="logo.drawio.svg"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="../../toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../custom.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<a href="https://github.com/jothepro/doxygen-awesome-css" class="github-corner" title="View source on GitHub" target="_blank" rel="noopener noreferrer">
+    <svg viewBox="0 0 250 250" width="40" height="40" style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+    <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="../../XII-Logo.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">XII
+   &#160;<span id="projectnumber">1.0.0</span>
+   </div>
+   <div id="projectbrief">A high-performance simulation engine.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(1); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.html','Search',true);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('d2/d13/_startup_8h_source.html','../../'); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Startup.h</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &lt;Foundation/Configuration/Plugin.h&gt;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;Foundation/Configuration/SubSystem.h&gt;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;Foundation/Containers/Deque.h&gt;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#define XII_GLOBALEVENT_STARTUP_CORESYSTEMS_BEGIN  &quot;xiiStartup_StartupCoreSystems_Begin&quot;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#define XII_GLOBALEVENT_STARTUP_CORESYSTEMS_END    &quot;xiiStartup_StartupCoreSystems_End&quot;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#define XII_GLOBALEVENT_SHUTDOWN_CORESYSTEMS_BEGIN &quot;xiiStartup_ShutdownCoreSystems_Begin&quot;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#define XII_GLOBALEVENT_SHUTDOWN_CORESYSTEMS_END   &quot;xiiStartup_ShutdownCoreSystems_End&quot;</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#define XII_GLOBALEVENT_STARTUP_HIGHLEVELSYSTEMS_BEGIN  &quot;xiiStartup_StartupHighLevelSystems_Begin&quot;</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#define XII_GLOBALEVENT_STARTUP_HIGHLEVELSYSTEMS_END    &quot;xiiStartup_StartupHighLevelSystems_End&quot;</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#define XII_GLOBALEVENT_SHUTDOWN_HIGHLEVELSYSTEMS_BEGIN &quot;xiiStartup_ShutdownHighLevelSystems_Begin&quot;</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#define XII_GLOBALEVENT_SHUTDOWN_HIGHLEVELSYSTEMS_END   &quot;xiiStartup_ShutdownHighLevelSystems_End&quot;</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#define XII_GLOBALEVENT_UNLOAD_PLUGIN_BEGIN &quot;xiiStartup_UnloadPlugin_Begin&quot;</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#define XII_GLOBALEVENT_UNLOAD_PLUGIN_END   &quot;xiiStartup_UnloadPlugin_End&quot;</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="foldopen" id="foldopen00076" data-start="{" data-end="};">
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno"><a class="line" href="../../dd/d8e/classxii_startup.html">   76</a></span><span class="keyword">class </span>XII_FOUNDATION_DLL <a class="code hl_class" href="../../dd/d8e/classxii_startup.html">xiiStartup</a></div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>{</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>  <span class="comment">// &#39;Base Startup&#39; happens even before &#39;Core Startup&#39;, but only really low level stuff should  be done there</span></div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>  <span class="comment">// and those subsystems should not have any dependencies on each other.</span></div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>  <span class="comment">// &#39;Base Startup&#39; is automatically done right before &#39;Core Startup&#39;</span></div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>  <span class="comment">// There is actually no &#39;Base Shutdown&#39;, everything that is initialized in &#39;Base Startup&#39; should not require</span></div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>  <span class="comment">// any explicit shutdown.</span></div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>  <span class="keyword">static</span> <span class="keywordtype">void</span> AddApplicationTag(<a class="code hl_struct" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sTag);</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span> </div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>  <span class="keyword">static</span> <span class="keywordtype">bool</span> HasApplicationTag(<a class="code hl_struct" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sTag);</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span> </div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno"><a class="line" href="../../dd/d8e/classxii_startup.html#a65c47d9fa70034b0c6d7677d2274263b">  105</a></span>  <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="../../dd/d8e/classxii_startup.html#a65c47d9fa70034b0c6d7677d2274263b">StartupBaseSystems</a>() { Startup(<a class="code hl_enumvalue" href="../../db/d2d/structxii_startup_stage.html#a1e60b8919b635c0bfac0566699f0cb34acfcdb52dbcfddd763be5f38811f91c62">xiiStartupStage::BaseSystems</a>); }</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span> </div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno"><a class="line" href="../../dd/d8e/classxii_startup.html#a33afa05eb4f7a8eefb1dcce11146f9d6">  111</a></span>  <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="../../dd/d8e/classxii_startup.html#a33afa05eb4f7a8eefb1dcce11146f9d6">StartupCoreSystems</a>() { Startup(<a class="code hl_enumvalue" href="../../db/d2d/structxii_startup_stage.html#a1e60b8919b635c0bfac0566699f0cb34af55ea7c6373d91203c4da3f0d9c6d5c8">xiiStartupStage::CoreSystems</a>); }</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span> </div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno"><a class="line" href="../../dd/d8e/classxii_startup.html#a23d4adb6b359b16fb6e4d0af7720e771">  118</a></span>  <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="../../dd/d8e/classxii_startup.html#a23d4adb6b359b16fb6e4d0af7720e771">ShutdownCoreSystems</a>() { Shutdown(<a class="code hl_enumvalue" href="../../db/d2d/structxii_startup_stage.html#a1e60b8919b635c0bfac0566699f0cb34af55ea7c6373d91203c4da3f0d9c6d5c8">xiiStartupStage::CoreSystems</a>); }</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span> </div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno"><a class="line" href="../../dd/d8e/classxii_startup.html#ae787ffd98b146191e90024222f79e23a">  126</a></span>  <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="../../dd/d8e/classxii_startup.html#ae787ffd98b146191e90024222f79e23a">StartupHighLevelSystems</a>() { Startup(<a class="code hl_enumvalue" href="../../db/d2d/structxii_startup_stage.html#a1e60b8919b635c0bfac0566699f0cb34a1e3c2aed7518ded511b3cdf4031be70f">xiiStartupStage::HighLevelSystems</a>); }</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span> </div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno"><a class="line" href="../../dd/d8e/classxii_startup.html#a785be7a33e589ff3da1d1d7e7e2b7c12">  133</a></span>  <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="../../dd/d8e/classxii_startup.html#a785be7a33e589ff3da1d1d7e7e2b7c12">ShutdownHighLevelSystems</a>() { Shutdown(<a class="code hl_enumvalue" href="../../db/d2d/structxii_startup_stage.html#a1e60b8919b635c0bfac0566699f0cb34a1e3c2aed7518ded511b3cdf4031be70f">xiiStartupStage::HighLevelSystems</a>); }</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span> </div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>  <span class="keyword">static</span> <span class="keywordtype">void</span> PrintAllSubsystems();</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span> </div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>  <span class="keyword">static</span> <span class="keywordtype">void</span> ReinitToCurrentState();</div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span> </div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>  <span class="keyword">static</span> <span class="keywordtype">void</span> UnloadPluginSubSystems(<a class="code hl_struct" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> PluginName);</div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span> </div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>  <span class="keyword">static</span> <span class="keywordtype">void</span> PluginEventHandler(<span class="keyword">const</span> <a class="code hl_struct" href="../../d9/dc8/structxii_plugin_event.html">xiiPluginEvent</a>&amp; EventData);</div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>  <span class="keyword">static</span> <span class="keywordtype">void</span> AssignSubSystemPlugin(<a class="code hl_struct" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> PluginName);</div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span> </div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>  <span class="keyword">static</span> <span class="keywordtype">void</span> ComputeOrder(<a class="code hl_class" href="../../d8/df8/classxii_deque.html">xiiDeque&lt;xiiSubSystem*&gt;</a>&amp; Order);</div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>  <span class="keyword">static</span> <span class="keywordtype">bool</span> HasDependencyOnPlugin(<a class="code hl_class" href="../../de/d08/classxii_sub_system.html">xiiSubSystem</a>* pSubSystem, <a class="code hl_struct" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> Module);</div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span> </div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>  <span class="keyword">static</span> <span class="keywordtype">void</span> Startup(<a class="code hl_enumeration" href="../../db/d2d/structxii_startup_stage.html#a1e60b8919b635c0bfac0566699f0cb34">xiiStartupStage::Enum</a> stage);</div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>  <span class="keyword">static</span> <span class="keywordtype">void</span> Shutdown(<a class="code hl_enumeration" href="../../db/d2d/structxii_startup_stage.html#a1e60b8919b635c0bfac0566699f0cb34">xiiStartupStage::Enum</a> stage);</div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span> </div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>  <span class="keyword">static</span> <span class="keywordtype">bool</span>                           s_bPrintAllSubSystems;</div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>  <span class="keyword">static</span> <a class="code hl_enumeration" href="../../db/d2d/structxii_startup_stage.html#a1e60b8919b635c0bfac0566699f0cb34">xiiStartupStage::Enum</a>          s_CurrentState;</div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>  <span class="keyword">static</span> <a class="code hl_class" href="../../dc/da4/classxii_dynamic_array.html">xiiDynamicArray&lt;xiiStringView&gt;</a> s_ApplicationTags;</div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>};</div>
+</div>
+<div class="ttc" id="aclassxii_deque_html"><div class="ttname"><a href="../../d8/df8/classxii_deque.html">xiiDeque</a></div><div class="ttdef"><b>Definition</b> Deque.h:267</div></div>
+<div class="ttc" id="aclassxii_dynamic_array_html"><div class="ttname"><a href="../../dc/da4/classxii_dynamic_array.html">xiiDynamicArray</a></div><div class="ttdef"><b>Definition</b> DynamicArray.h:81</div></div>
+<div class="ttc" id="aclassxii_startup_html"><div class="ttname"><a href="../../dd/d8e/classxii_startup.html">xiiStartup</a></div><div class="ttdoc">The startup system makes sure to initialize and shut down all known subsystems in the proper order.</div><div class="ttdef"><b>Definition</b> Startup.h:77</div></div>
+<div class="ttc" id="aclassxii_startup_html_a23d4adb6b359b16fb6e4d0af7720e771"><div class="ttname"><a href="../../dd/d8e/classxii_startup.html#a23d4adb6b359b16fb6e4d0af7720e771">xiiStartup::ShutdownCoreSystems</a></div><div class="ttdeci">static void ShutdownCoreSystems()</div><div class="ttdoc">Runs the 'core' shutdown sequence of all subsystems in the proper order (reversed startup order).</div><div class="ttdef"><b>Definition</b> Startup.h:118</div></div>
+<div class="ttc" id="aclassxii_startup_html_a33afa05eb4f7a8eefb1dcce11146f9d6"><div class="ttname"><a href="../../dd/d8e/classxii_startup.html#a33afa05eb4f7a8eefb1dcce11146f9d6">xiiStartup::StartupCoreSystems</a></div><div class="ttdeci">static void StartupCoreSystems()</div><div class="ttdoc">Runs the 'core' startup sequence of all subsystems in the proper order.</div><div class="ttdef"><b>Definition</b> Startup.h:111</div></div>
+<div class="ttc" id="aclassxii_startup_html_a65c47d9fa70034b0c6d7677d2274263b"><div class="ttname"><a href="../../dd/d8e/classxii_startup.html#a65c47d9fa70034b0c6d7677d2274263b">xiiStartup::StartupBaseSystems</a></div><div class="ttdeci">static void StartupBaseSystems()</div><div class="ttdoc">Runs the 'base' startup sequence of all subsystems in the proper order.</div><div class="ttdef"><b>Definition</b> Startup.h:105</div></div>
+<div class="ttc" id="aclassxii_startup_html_a785be7a33e589ff3da1d1d7e7e2b7c12"><div class="ttname"><a href="../../dd/d8e/classxii_startup.html#a785be7a33e589ff3da1d1d7e7e2b7c12">xiiStartup::ShutdownHighLevelSystems</a></div><div class="ttdeci">static void ShutdownHighLevelSystems()</div><div class="ttdoc">Runs the 'high level' shutdown sequence of all subsystems in the proper order (reversed startup order...</div><div class="ttdef"><b>Definition</b> Startup.h:133</div></div>
+<div class="ttc" id="aclassxii_startup_html_ae787ffd98b146191e90024222f79e23a"><div class="ttname"><a href="../../dd/d8e/classxii_startup.html#ae787ffd98b146191e90024222f79e23a">xiiStartup::StartupHighLevelSystems</a></div><div class="ttdeci">static void StartupHighLevelSystems()</div><div class="ttdoc">Runs the 'high level' startup sequence of all subsystems in the proper order.</div><div class="ttdef"><b>Definition</b> Startup.h:126</div></div>
+<div class="ttc" id="aclassxii_sub_system_html"><div class="ttname"><a href="../../de/d08/classxii_sub_system.html">xiiSubSystem</a></div><div class="ttdoc">Base class for all subsystems.</div><div class="ttdef"><b>Definition</b> SubSystem.h:29</div></div>
+<div class="ttc" id="astructxii_plugin_event_html"><div class="ttname"><a href="../../d9/dc8/structxii_plugin_event.html">xiiPluginEvent</a></div><div class="ttdoc">The data that is broadcast whenever a plugin is (un-) loaded.</div><div class="ttdef"><b>Definition</b> Plugin.h:11</div></div>
+<div class="ttc" id="astructxii_startup_stage_html_a1e60b8919b635c0bfac0566699f0cb34"><div class="ttname"><a href="../../db/d2d/structxii_startup_stage.html#a1e60b8919b635c0bfac0566699f0cb34">xiiStartupStage::Enum</a></div><div class="ttdeci">Enum</div><div class="ttdef"><b>Definition</b> SubSystem.h:10</div></div>
+<div class="ttc" id="astructxii_startup_stage_html_a1e60b8919b635c0bfac0566699f0cb34a1e3c2aed7518ded511b3cdf4031be70f"><div class="ttname"><a href="../../db/d2d/structxii_startup_stage.html#a1e60b8919b635c0bfac0566699f0cb34a1e3c2aed7518ded511b3cdf4031be70f">xiiStartupStage::HighLevelSystems</a></div><div class="ttdeci">@ HighLevelSystems</div><div class="ttdoc">In this stage the higher level functionality, which depends on a rendering context,...</div><div class="ttdef"><b>Definition</b> SubSystem.h:14</div></div>
+<div class="ttc" id="astructxii_startup_stage_html_a1e60b8919b635c0bfac0566699f0cb34acfcdb52dbcfddd763be5f38811f91c62"><div class="ttname"><a href="../../db/d2d/structxii_startup_stage.html#a1e60b8919b635c0bfac0566699f0cb34acfcdb52dbcfddd763be5f38811f91c62">xiiStartupStage::BaseSystems</a></div><div class="ttdeci">@ BaseSystems</div><div class="ttdoc">In this stage the absolute base functionality is started. This should only be used by the Foundation ...</div><div class="ttdef"><b>Definition</b> SubSystem.h:12</div></div>
+<div class="ttc" id="astructxii_startup_stage_html_a1e60b8919b635c0bfac0566699f0cb34af55ea7c6373d91203c4da3f0d9c6d5c8"><div class="ttname"><a href="../../db/d2d/structxii_startup_stage.html#a1e60b8919b635c0bfac0566699f0cb34af55ea7c6373d91203c4da3f0d9c6d5c8">xiiStartupStage::CoreSystems</a></div><div class="ttdeci">@ CoreSystems</div><div class="ttdoc">In this stage the core functionality is being started / shut down.</div><div class="ttdef"><b>Definition</b> SubSystem.h:13</div></div>
+<div class="ttc" id="astructxii_string_view_html"><div class="ttname"><a href="../../da/d9d/structxii_string_view.html">xiiStringView</a></div><div class="ttdoc">xiiStringView represent a read-only sub-string of a larger string, as it can store a dedicated string...</div><div class="ttdef"><b>Definition</b> StringView.h:28</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.html">home</a></li><li class="navelem"><a class="el" href="../../dir_1036706e55c22cab35bc1c58ee689f1d.html">runner</a></li><li class="navelem"><a class="el" href="../../dir_629f8151d55d307162ff2d619fb1783d.html">work</a></li><li class="navelem"><a class="el" href="../../dir_1ddc44fe1263a8c7935fa6130b7d9499.html">XII</a></li><li class="navelem"><a class="el" href="../../dir_2c1b6808f12952f4c36e05ba7068379a.html">XII</a></li><li class="navelem"><a class="el" href="../../dir_b5a1c4ecfca018ad24b729e213296d41.html">Source</a></li><li class="navelem"><a class="el" href="../../dir_e321052006a51284e67389ab20037e7c.html">Engine</a></li><li class="navelem"><a class="el" href="../../dir_be0c42c58b36f42c54ec54024ed4f6af.html">Foundation</a></li><li class="navelem"><a class="el" href="../../dir_8dd0035a39e567e13cc3a6c891e93db2.html">Configuration</a></li><li class="navelem"><b>Startup.h</b></li>
+    <li class="footer">Generated on Mon Jul 1 2024 23:53:05 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+  </ul>
+</div>
+</body>
+</html>

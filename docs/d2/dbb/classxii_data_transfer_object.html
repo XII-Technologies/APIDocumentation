@@ -1,0 +1,258 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.11.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<!-- BEGIN opengraph metadata -->
+<meta property="og:title" content="XII" />
+<meta property="og:image" content="../../XII-Logo.png" />
+<meta property="og:description" content="An advanced high-performance simulation engine." />
+<meta property="og:url" content="https://www.xiitechnologies.com" />
+<!-- END opengraph metadata -->
+<!-- BEGIN twitter metadata -->
+<meta name="twitter:image:src" content="../../XII-Logo.png" />
+<meta name="twitter:title" content="XII" />
+<meta name="twitter:description" content="An advanced high-performance simulation engine." />
+<!-- END twitter metadata -->
+<title>XII: xiiDataTransferObject Class Reference</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link rel="icon" type="image/svg+xml" href="logo.drawio.svg"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="../../toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../custom.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<a href="https://github.com/jothepro/doxygen-awesome-css" class="github-corner" title="View source on GitHub" target="_blank" rel="noopener noreferrer">
+    <svg viewBox="0 0 250 250" width="40" height="40" style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+    <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="../../XII-Logo.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">XII
+   &#160;<span id="projectnumber">1.0.0</span>
+   </div>
+   <div id="projectbrief">A high-performance simulation engine.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(1); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.html','Search',true);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('d2/dbb/classxii_data_transfer_object.html','../../'); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#friends">Friends</a> &#124;
+<a href="../../d8/d0d/classxii_data_transfer_object-members.html">List of all members</a>  </div>
+  <div class="headertitle"><div class="title">xiiDataTransferObject Class Reference</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p><a class="el" href="../../d8/d4f/class_a.html">A</a> small wrapper class around a <a class="el" href="../../db/d6c/classxii_telemetry_message.html">xiiTelemetryMessage</a> for sending a 'data transfer'. See <a class="el" href="../../de/d7d/classxii_data_transfer.html" title="A &#39;data transfer&#39; is a blob of data that an application can send to connected tools such as xiiInspec...">xiiDataTransfer</a> for more details.  
+ <a href="#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="../../d8/d67/_data_transfer_8h_source.html">DataTransfer.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a23aae8193cb7689eb70a134da93e10b5" id="r_a23aae8193cb7689eb70a134da93e10b5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a23aae8193cb7689eb70a134da93e10b5">xiiDataTransferObject</a> (<a class="el" href="../../de/d7d/classxii_data_transfer.html">xiiDataTransfer</a> &amp;ref_belongsTo, <a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sObjectName, <a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sMimeType, <a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sFileExtension)</td></tr>
+<tr class="memdesc:a23aae8193cb7689eb70a134da93e10b5"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="../../d2/dbb/classxii_data_transfer_object.html" title="A small wrapper class around a xiiTelemetryMessage for sending a &#39;data transfer&#39;. See xiiDataTransfer...">xiiDataTransferObject</a> instances should always be created on the stack and should be very short lived.  <br /></td></tr>
+<tr class="separator:a23aae8193cb7689eb70a134da93e10b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aade0cc6b353e8cd5c8d5298619a21809" id="r_aade0cc6b353e8cd5c8d5298619a21809"><td class="memItemLeft" align="right" valign="top"><a id="aade0cc6b353e8cd5c8d5298619a21809" name="aade0cc6b353e8cd5c8d5298619a21809"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>~xiiDataTransferObject</b> ()</td></tr>
+<tr class="memdesc:aade0cc6b353e8cd5c8d5298619a21809"><td class="mdescLeft">&#160;</td><td class="mdescRight">The destructor will assert if the data has not been transmitted. <br /></td></tr>
+<tr class="separator:aade0cc6b353e8cd5c8d5298619a21809"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d07ddfb5893f6b3b11aa0634e863b64" id="r_a9d07ddfb5893f6b3b11aa0634e863b64"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d18/classxii_stream_writer.html">xiiStreamWriter</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9d07ddfb5893f6b3b11aa0634e863b64">GetWriter</a> ()</td></tr>
+<tr class="memdesc:a9d07ddfb5893f6b3b11aa0634e863b64"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the stream writer that you need to use to write the data into the object.  <br /></td></tr>
+<tr class="separator:a9d07ddfb5893f6b3b11aa0634e863b64"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7eeabebd4ad14d666da74267f7b984b9" id="r_a7eeabebd4ad14d666da74267f7b984b9"><td class="memItemLeft" align="right" valign="top"><a id="a7eeabebd4ad14d666da74267f7b984b9" name="a7eeabebd4ad14d666da74267f7b984b9"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Transmit</b> ()</td></tr>
+<tr class="memdesc:a7eeabebd4ad14d666da74267f7b984b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Will initiate the data transfer. <br /></td></tr>
+<tr class="separator:a7eeabebd4ad14d666da74267f7b984b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
+Friends</h2></td></tr>
+<tr class="memitem:ad653a68a330b2021dedc948bcf0fdc70" id="r_ad653a68a330b2021dedc948bcf0fdc70"><td class="memItemLeft" align="right" valign="top"><a id="ad653a68a330b2021dedc948bcf0fdc70" name="ad653a68a330b2021dedc948bcf0fdc70"></a>
+class&#160;</td><td class="memItemRight" valign="bottom"><b>xiiDataTransfer</b></td></tr>
+<tr class="separator:ad653a68a330b2021dedc948bcf0fdc70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p><a class="el" href="../../d8/d4f/class_a.html">A</a> small wrapper class around a <a class="el" href="../../db/d6c/classxii_telemetry_message.html">xiiTelemetryMessage</a> for sending a 'data transfer'. See <a class="el" href="../../de/d7d/classxii_data_transfer.html" title="A &#39;data transfer&#39; is a blob of data that an application can send to connected tools such as xiiInspec...">xiiDataTransfer</a> for more details. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a23aae8193cb7689eb70a134da93e10b5" name="a23aae8193cb7689eb70a134da93e10b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a23aae8193cb7689eb70a134da93e10b5">&#9670;&#160;</a></span>xiiDataTransferObject()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">xiiDataTransferObject::xiiDataTransferObject </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/d7d/classxii_data_transfer.html">xiiDataTransfer</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>ref_belongsTo</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a></td>          <td class="paramname"><span class="paramname"><em>sObjectName</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a></td>          <td class="paramname"><span class="paramname"><em>sMimeType</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a></td>          <td class="paramname"><span class="paramname"><em>sFileExtension</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="../../d2/dbb/classxii_data_transfer_object.html" title="A small wrapper class around a xiiTelemetryMessage for sending a &#39;data transfer&#39;. See xiiDataTransfer...">xiiDataTransferObject</a> instances should always be created on the stack and should be very short lived. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">BelongsTo</td><td>The <a class="el" href="../../de/d7d/classxii_data_transfer.html" title="A &#39;data transfer&#39; is a blob of data that an application can send to connected tools such as xiiInspec...">xiiDataTransfer</a> through which the data is going to be sent shortly. </td></tr>
+    <tr><td class="paramname">szObjectName</td><td>The name of the data blob. Since several data transfers can be made through the same <a class="el" href="../../de/d7d/classxii_data_transfer.html" title="A &#39;data transfer&#39; is a blob of data that an application can send to connected tools such as xiiInspec...">xiiDataTransfer</a>, this is used to identify the different pieces of information. For example when sending each texture of a G-Buffer, szObjectName could be 'diffuse' when sending the diffuse channel, 'depth' for the depth buffer content, etc. </td></tr>
+    <tr><td class="paramname">szMimeType</td><td>The mime type for the data blob. Tools such as xiiInspector can use this information to determine whether they can display it directly or in some other editor. </td></tr>
+    <tr><td class="paramname">szFileExtension</td><td>The file extension that should be used when the user wants to store the data on disk. This is separate from the mime type, as you might want to send data with mime type 'text/json' but store it on disk as '.savegame'. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a9d07ddfb5893f6b3b11aa0634e863b64" name="a9d07ddfb5893f6b3b11aa0634e863b64"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d07ddfb5893f6b3b11aa0634e863b64">&#9670;&#160;</a></span>GetWriter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d0/d18/classxii_stream_writer.html">xiiStreamWriter</a> &amp; xiiDataTransferObject::GetWriter </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the stream writer that you need to use to write the data into the object. </p>
+<p>When finished writing all data to the object, you should call <a class="el" href="#a7eeabebd4ad14d666da74267f7b984b9" title="Will initiate the data transfer.">Transmit()</a>. </p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li>/home/runner/work/XII/XII/Source/Engine/Foundation/Communication/<a class="el" href="../../d8/d67/_data_transfer_8h_source.html">DataTransfer.h</a></li>
+<li>/home/runner/work/XII/XII/Source/Engine/Foundation/Communication/Implementation/<b>DataTransfer.cpp</b></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../d2/dbb/classxii_data_transfer_object.html">xiiDataTransferObject</a></li>
+    <li class="footer">Generated on Mon Jul 1 2024 23:53:14 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+  </ul>
+</div>
+</body>
+</html>

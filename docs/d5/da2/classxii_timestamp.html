@@ -1,0 +1,283 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.11.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<!-- BEGIN opengraph metadata -->
+<meta property="og:title" content="XII" />
+<meta property="og:image" content="../../XII-Logo.png" />
+<meta property="og:description" content="An advanced high-performance simulation engine." />
+<meta property="og:url" content="https://www.xiitechnologies.com" />
+<!-- END opengraph metadata -->
+<!-- BEGIN twitter metadata -->
+<meta name="twitter:image:src" content="../../XII-Logo.png" />
+<meta name="twitter:title" content="XII" />
+<meta name="twitter:description" content="An advanced high-performance simulation engine." />
+<!-- END twitter metadata -->
+<title>XII: xiiTimestamp Class Reference</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link rel="icon" type="image/svg+xml" href="logo.drawio.svg"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="../../toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../custom.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<a href="https://github.com/jothepro/doxygen-awesome-css" class="github-corner" title="View source on GitHub" target="_blank" rel="noopener noreferrer">
+    <svg viewBox="0 0 250 250" width="40" height="40" style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+    <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="../../XII-Logo.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">XII
+   &#160;<span id="projectnumber">1.0.0</span>
+   </div>
+   <div id="projectbrief">A high-performance simulation engine.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(1); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.html','Search',true);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('d5/da2/classxii_timestamp.html','../../'); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="../../d6/dd4/classxii_timestamp-members.html">List of all members</a>  </div>
+  <div class="headertitle"><div class="title">xiiTimestamp Class Reference</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>The timestamp class encapsulates a date in time as microseconds since Unix epoch.  
+ <a href="#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="../../df/d96/_timestamp_8h_source.html">Timestamp.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d4b/structxii_timestamp_1_1_compare_mode.html">CompareMode</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:adc9504f3101616172634aa10b8b85070" id="r_adc9504f3101616172634aa10b8b85070"><td class="memItemLeft" align="right" valign="top"><a id="adc9504f3101616172634aa10b8b85070" name="adc9504f3101616172634aa10b8b85070"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>XII_DECLARE_POD_TYPE</b> ()</td></tr>
+<tr class="separator:adc9504f3101616172634aa10b8b85070"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac588358a0caac14b7a7ba425945b111f" id="r_ac588358a0caac14b7a7ba425945b111f"><td class="memItemLeft" align="right" valign="top"><a id="ac588358a0caac14b7a7ba425945b111f" name="ac588358a0caac14b7a7ba425945b111f"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>xiiTimestamp</b> ()</td></tr>
+<tr class="memdesc:ac588358a0caac14b7a7ba425945b111f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an invalidated timestamp. <br /></td></tr>
+<tr class="separator:ac588358a0caac14b7a7ba425945b111f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b88c4dd06618b206522c0066fb0faf0" id="r_a5b88c4dd06618b206522c0066fb0faf0"><td class="memItemLeft" align="right" valign="top"><a id="a5b88c4dd06618b206522c0066fb0faf0" name="a5b88c4dd06618b206522c0066fb0faf0"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsValid</b> () const</td></tr>
+<tr class="memdesc:a5b88c4dd06618b206522c0066fb0faf0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether the timestamp is valid. <br /></td></tr>
+<tr class="separator:a5b88c4dd06618b206522c0066fb0faf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04c792237b870922b914f48c5564aa40" id="r_a04c792237b870922b914f48c5564aa40"><td class="memItemLeft" align="right" valign="top"><a id="a04c792237b870922b914f48c5564aa40" name="a04c792237b870922b914f48c5564aa40"></a>
+xiiInt64&#160;</td><td class="memItemRight" valign="bottom"><b>GetInt64</b> (<a class="el" href="../../d7/dfa/structxii_s_i_unit_of_time.html#ad66d5db2186c27d08bd4666c2f523c26">xiiSIUnitOfTime::Enum</a> unitOfTime) const</td></tr>
+<tr class="memdesc:a04c792237b870922b914f48c5564aa40"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of 'unitOfTime' since Unix epoch. <br /></td></tr>
+<tr class="separator:a04c792237b870922b914f48c5564aa40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43982c0a8eb4b937d937d2ff8ba7b9d7" id="r_a43982c0a8eb4b937d937d2ff8ba7b9d7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a43982c0a8eb4b937d937d2ff8ba7b9d7">Compare</a> (const <a class="el" href="../../d5/da2/classxii_timestamp.html">xiiTimestamp</a> &amp;rhs, <a class="el" href="../../d0/d4b/structxii_timestamp_1_1_compare_mode.html#a1871aa7494152fd0b70b9f8c6ec38581">CompareMode::Enum</a> mode) const</td></tr>
+<tr class="memdesc:a43982c0a8eb4b937d937d2ff8ba7b9d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether this timestamp is considered equal to 'rhs' in the given mode.  <br /></td></tr>
+<tr class="separator:a43982c0a8eb4b937d937d2ff8ba7b9d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff70d2743144fab5f4069eda749ad497" id="r_aff70d2743144fab5f4069eda749ad497"><td class="memItemLeft" align="right" valign="top"><a id="aff70d2743144fab5f4069eda749ad497" name="aff70d2743144fab5f4069eda749ad497"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>operator+=</b> (const <a class="el" href="../../d7/dc1/structxii_time.html">xiiTime</a> &amp;timeSpan)</td></tr>
+<tr class="memdesc:aff70d2743144fab5f4069eda749ad497"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds the time value of "timeSpan" to this data value. <br /></td></tr>
+<tr class="separator:aff70d2743144fab5f4069eda749ad497"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf94488a5934a3e4160259fd703ce414" id="r_abf94488a5934a3e4160259fd703ce414"><td class="memItemLeft" align="right" valign="top"><a id="abf94488a5934a3e4160259fd703ce414" name="abf94488a5934a3e4160259fd703ce414"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>operator-=</b> (const <a class="el" href="../../d7/dc1/structxii_time.html">xiiTime</a> &amp;timeSpan)</td></tr>
+<tr class="memdesc:abf94488a5934a3e4160259fd703ce414"><td class="mdescLeft">&#160;</td><td class="mdescRight">Subtracts the time value of "timeSpan" from this date value. <br /></td></tr>
+<tr class="separator:abf94488a5934a3e4160259fd703ce414"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9fb1fd0bdffab55bc89177402cf96897" id="r_a9fb1fd0bdffab55bc89177402cf96897"><td class="memItemLeft" align="right" valign="top"><a id="a9fb1fd0bdffab55bc89177402cf96897" name="a9fb1fd0bdffab55bc89177402cf96897"></a>
+const <a class="el" href="../../d7/dc1/structxii_time.html">xiiTime</a>&#160;</td><td class="memItemRight" valign="bottom"><b>operator-</b> (const <a class="el" href="../../d5/da2/classxii_timestamp.html">xiiTimestamp</a> &amp;other) const</td></tr>
+<tr class="memdesc:a9fb1fd0bdffab55bc89177402cf96897"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the time span between this timestamp and "other". <br /></td></tr>
+<tr class="separator:a9fb1fd0bdffab55bc89177402cf96897"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a362806dfb66ba0bdd7d376639a09cc84" id="r_a362806dfb66ba0bdd7d376639a09cc84"><td class="memItemLeft" align="right" valign="top"><a id="a362806dfb66ba0bdd7d376639a09cc84" name="a362806dfb66ba0bdd7d376639a09cc84"></a>
+const <a class="el" href="../../d5/da2/classxii_timestamp.html">xiiTimestamp</a>&#160;</td><td class="memItemRight" valign="bottom"><b>operator+</b> (const <a class="el" href="../../d7/dc1/structxii_time.html">xiiTime</a> &amp;timeSpan) const</td></tr>
+<tr class="memdesc:a362806dfb66ba0bdd7d376639a09cc84"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a timestamp that is "timeSpan" further into the future from this timestamp. <br /></td></tr>
+<tr class="separator:a362806dfb66ba0bdd7d376639a09cc84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87066aa34daaf9ee58146e6ffdb13b86" id="r_a87066aa34daaf9ee58146e6ffdb13b86"><td class="memItemLeft" align="right" valign="top"><a id="a87066aa34daaf9ee58146e6ffdb13b86" name="a87066aa34daaf9ee58146e6ffdb13b86"></a>
+const <a class="el" href="../../d5/da2/classxii_timestamp.html">xiiTimestamp</a>&#160;</td><td class="memItemRight" valign="bottom"><b>operator-</b> (const <a class="el" href="../../d7/dc1/structxii_time.html">xiiTime</a> &amp;timeSpan) const</td></tr>
+<tr class="memdesc:a87066aa34daaf9ee58146e6ffdb13b86"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a timestamp that is "timeSpan" further into the past from this timestamp. <br /></td></tr>
+<tr class="separator:a87066aa34daaf9ee58146e6ffdb13b86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a1e293985002107172ab682a803516cb0" id="r_a1e293985002107172ab682a803516cb0"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="../../d5/da2/classxii_timestamp.html">xiiTimestamp</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1e293985002107172ab682a803516cb0">CurrentTimestamp</a> ()</td></tr>
+<tr class="memdesc:a1e293985002107172ab682a803516cb0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current timestamp. Returned value will always be valid.  <br /></td></tr>
+<tr class="separator:a1e293985002107172ab682a803516cb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0edc07961df643239a5fbe3fa36d72d" id="r_ac0edc07961df643239a5fbe3fa36d72d"><td class="memItemLeft" align="right" valign="top"><a id="ac0edc07961df643239a5fbe3fa36d72d" name="ac0edc07961df643239a5fbe3fa36d72d"></a>
+static <a class="el" href="../../d5/da2/classxii_timestamp.html">xiiTimestamp</a>&#160;</td><td class="memItemRight" valign="bottom"><b>MakeInvalid</b> ()</td></tr>
+<tr class="memdesc:ac0edc07961df643239a5fbe3fa36d72d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an invalid timestamp. <br /></td></tr>
+<tr class="separator:ac0edc07961df643239a5fbe3fa36d72d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a279ca3f01e3c613b34132988f8524cdf" id="r_a279ca3f01e3c613b34132988f8524cdf"><td class="memItemLeft" align="right" valign="top"><a id="a279ca3f01e3c613b34132988f8524cdf" name="a279ca3f01e3c613b34132988f8524cdf"></a>
+static <a class="el" href="../../d5/da2/classxii_timestamp.html">xiiTimestamp</a>&#160;</td><td class="memItemRight" valign="bottom"><b>MakeFromInt</b> (xiiInt64 iTimeValue, <a class="el" href="../../d7/dfa/structxii_s_i_unit_of_time.html#ad66d5db2186c27d08bd4666c2f523c26">xiiSIUnitOfTime::Enum</a> unitOfTime)</td></tr>
+<tr class="memdesc:a279ca3f01e3c613b34132988f8524cdf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a timestamp initialized from 'iTimeValue' in 'unitOfTime' since Unix epoch. <br /></td></tr>
+<tr class="separator:a279ca3f01e3c613b34132988f8524cdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>The timestamp class encapsulates a date in time as microseconds since Unix epoch. </p>
+<p>The value is represented by a xiiInt64 and allows storing time stamps from roughly -291030 BC to 293970 AC. Use this class to efficiently store a timestamp that is valid across platforms. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a43982c0a8eb4b937d937d2ff8ba7b9d7" name="a43982c0a8eb4b937d937d2ff8ba7b9d7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a43982c0a8eb4b937d937d2ff8ba7b9d7">&#9670;&#160;</a></span>Compare()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool xiiTimestamp::Compare </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d5/da2/classxii_timestamp.html">xiiTimestamp</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>rhs</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d0/d4b/structxii_timestamp_1_1_compare_mode.html#a1871aa7494152fd0b70b9f8c6ec38581">CompareMode::Enum</a></td>          <td class="paramname"><span class="paramname"><em>mode</em></span>&#160;) const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns whether this timestamp is considered equal to 'rhs' in the given mode. </p>
+<p>Use CompareMode::FileTime when working with file time stamps across platforms. It will use the lowest resolution supported by all platforms to make sure the timestamp of a file is considered equal regardless on which platform it was retrieved. </p>
+
+</div>
+</div>
+<a id="a1e293985002107172ab682a803516cb0" name="a1e293985002107172ab682a803516cb0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e293985002107172ab682a803516cb0">&#9670;&#160;</a></span>CurrentTimestamp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="../../d5/da2/classxii_timestamp.html">xiiTimestamp</a> xiiTimestamp::CurrentTimestamp </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the current timestamp. Returned value will always be valid. </p>
+<p>Depending on the platform the precision varies between seconds and nanoseconds. </p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li>/home/runner/work/XII/XII/Source/Engine/Foundation/Time/<a class="el" href="../../df/d96/_timestamp_8h_source.html">Timestamp.h</a></li>
+<li>/home/runner/work/XII/XII/Source/Engine/Foundation/Time/Implementation/Android/<a class="el" href="../../dd/d71/_timestamp__android_8h_source.html">Timestamp_android.h</a></li>
+<li>/home/runner/work/XII/XII/Source/Engine/Foundation/Time/Implementation/OSX/<a class="el" href="../../d1/dba/_timestamp__osx_8h_source.html">Timestamp_osx.h</a></li>
+<li>/home/runner/work/XII/XII/Source/Engine/Foundation/Time/Implementation/Posix/<a class="el" href="../../d3/dda/_timestamp__posix_8h_source.html">Timestamp_posix.h</a></li>
+<li>/home/runner/work/XII/XII/Source/Engine/Foundation/Time/Implementation/<b>Timestamp.cpp</b></li>
+<li>/home/runner/work/XII/XII/Source/Engine/Foundation/Time/Implementation/<a class="el" href="../../df/dc1/_timestamp__inl_8h_source.html">Timestamp_inl.h</a></li>
+<li>/home/runner/work/XII/XII/Source/Engine/Foundation/Time/Implementation/Win/<a class="el" href="../../df/d74/_timestamp__win_8h_source.html">Timestamp_win.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../d5/da2/classxii_timestamp.html">xiiTimestamp</a></li>
+    <li class="footer">Generated on Mon Jul 1 2024 23:53:16 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+  </ul>
+</div>
+</body>
+</html>

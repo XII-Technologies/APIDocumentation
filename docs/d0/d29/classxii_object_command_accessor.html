@@ -1,0 +1,728 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.11.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<!-- BEGIN opengraph metadata -->
+<meta property="og:title" content="XII" />
+<meta property="og:image" content="../../XII-Logo.png" />
+<meta property="og:description" content="An advanced high-performance simulation engine." />
+<meta property="og:url" content="https://www.xiitechnologies.com" />
+<!-- END opengraph metadata -->
+<!-- BEGIN twitter metadata -->
+<meta name="twitter:image:src" content="../../XII-Logo.png" />
+<meta name="twitter:title" content="XII" />
+<meta name="twitter:description" content="An advanced high-performance simulation engine." />
+<!-- END twitter metadata -->
+<title>XII: xiiObjectCommandAccessor Class Reference</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link rel="icon" type="image/svg+xml" href="logo.drawio.svg"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="../../toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../custom.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<a href="https://github.com/jothepro/doxygen-awesome-css" class="github-corner" title="View source on GitHub" target="_blank" rel="noopener noreferrer">
+    <svg viewBox="0 0 250 250" width="40" height="40" style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+    <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="../../XII-Logo.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">XII
+   &#160;<span id="projectnumber">1.0.0</span>
+   </div>
+   <div id="projectbrief">A high-performance simulation engine.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(1); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.html','Search',true);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('d0/d29/classxii_object_command_accessor.html','../../'); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
+<a href="../../d3/deb/classxii_object_command_accessor-members.html">List of all members</a>  </div>
+  <div class="headertitle"><div class="title">xiiObjectCommandAccessor Class Reference</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+Inheritance diagram for xiiObjectCommandAccessor:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d1/d9d/classxii_object_command_accessor__inherit__graph.svg" width="459" height="256"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">legend</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a4a054fdafed0c0e3fd9379250aaf6278" id="r_a4a054fdafed0c0e3fd9379250aaf6278"><td class="memItemLeft" align="right" valign="top"><a id="a4a054fdafed0c0e3fd9379250aaf6278" name="a4a054fdafed0c0e3fd9379250aaf6278"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>xiiObjectCommandAccessor</b> (<a class="el" href="../../d0/df0/classxii_command_history.html">xiiCommandHistory</a> *pHistory)</td></tr>
+<tr class="separator:a4a054fdafed0c0e3fd9379250aaf6278"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7c53f7afe9a02b3ae2463bea21e872b" id="r_ac7c53f7afe9a02b3ae2463bea21e872b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac7c53f7afe9a02b3ae2463bea21e872b">StartTransaction</a> (<a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sDisplayString) override</td></tr>
+<tr class="separator:ac7c53f7afe9a02b3ae2463bea21e872b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3959357fc07309fbfcd0f3d7e5f3110b" id="r_a3959357fc07309fbfcd0f3d7e5f3110b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3959357fc07309fbfcd0f3d7e5f3110b">CancelTransaction</a> () override</td></tr>
+<tr class="separator:a3959357fc07309fbfcd0f3d7e5f3110b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3f791275976fbdfed6d2e7aabcc598f" id="r_ae3f791275976fbdfed6d2e7aabcc598f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae3f791275976fbdfed6d2e7aabcc598f">FinishTransaction</a> () override</td></tr>
+<tr class="separator:ae3f791275976fbdfed6d2e7aabcc598f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e796809a983597958615e032c32b838" id="r_a6e796809a983597958615e032c32b838"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6e796809a983597958615e032c32b838">BeginTemporaryCommands</a> (<a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sDisplayString, bool bFireEventsWhenUndoingTempCommands=false) override</td></tr>
+<tr class="separator:a6e796809a983597958615e032c32b838"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13ecd2b61caf9dc8b75639682da204c8" id="r_a13ecd2b61caf9dc8b75639682da204c8"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a13ecd2b61caf9dc8b75639682da204c8">CancelTemporaryCommands</a> () override</td></tr>
+<tr class="separator:a13ecd2b61caf9dc8b75639682da204c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3a12ba85b94984bb4b472513c892795" id="r_ad3a12ba85b94984bb4b472513c892795"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad3a12ba85b94984bb4b472513c892795">FinishTemporaryCommands</a> () override</td></tr>
+<tr class="separator:ad3a12ba85b94984bb4b472513c892795"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14537be1e169c7079fa516175be9b1bf" id="r_a14537be1e169c7079fa516175be9b1bf"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d0/d54/structxii_status.html">xiiStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a14537be1e169c7079fa516175be9b1bf">SetValue</a> (const <a class="el" href="../../da/dd8/classxii_document_object.html">xiiDocumentObject</a> *pObject, const <a class="el" href="../../da/d25/classxii_abstract_property.html">xiiAbstractProperty</a> *pProp, const <a class="el" href="../../db/d1a/classxii_variant.html">xiiVariant</a> &amp;newValue, <a class="el" href="../../db/d1a/classxii_variant.html">xiiVariant</a> index=<a class="el" href="../../db/d1a/classxii_variant.html">xiiVariant</a>()) override</td></tr>
+<tr class="separator:a14537be1e169c7079fa516175be9b1bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a026462201b543046d195feb0d3cd3431" id="r_a026462201b543046d195feb0d3cd3431"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d0/d54/structxii_status.html">xiiStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a026462201b543046d195feb0d3cd3431">InsertValue</a> (const <a class="el" href="../../da/dd8/classxii_document_object.html">xiiDocumentObject</a> *pObject, const <a class="el" href="../../da/d25/classxii_abstract_property.html">xiiAbstractProperty</a> *pProp, const <a class="el" href="../../db/d1a/classxii_variant.html">xiiVariant</a> &amp;newValue, <a class="el" href="../../db/d1a/classxii_variant.html">xiiVariant</a> index=<a class="el" href="../../db/d1a/classxii_variant.html">xiiVariant</a>()) override</td></tr>
+<tr class="separator:a026462201b543046d195feb0d3cd3431"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d6014b7a50995b277447e7d7245acd1" id="r_a5d6014b7a50995b277447e7d7245acd1"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d0/d54/structxii_status.html">xiiStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5d6014b7a50995b277447e7d7245acd1">RemoveValue</a> (const <a class="el" href="../../da/dd8/classxii_document_object.html">xiiDocumentObject</a> *pObject, const <a class="el" href="../../da/d25/classxii_abstract_property.html">xiiAbstractProperty</a> *pProp, <a class="el" href="../../db/d1a/classxii_variant.html">xiiVariant</a> index=<a class="el" href="../../db/d1a/classxii_variant.html">xiiVariant</a>()) override</td></tr>
+<tr class="separator:a5d6014b7a50995b277447e7d7245acd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a9f0b99258d36b6d2ee54a18a792cd2" id="r_a4a9f0b99258d36b6d2ee54a18a792cd2"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d0/d54/structxii_status.html">xiiStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4a9f0b99258d36b6d2ee54a18a792cd2">MoveValue</a> (const <a class="el" href="../../da/dd8/classxii_document_object.html">xiiDocumentObject</a> *pObject, const <a class="el" href="../../da/d25/classxii_abstract_property.html">xiiAbstractProperty</a> *pProp, const <a class="el" href="../../db/d1a/classxii_variant.html">xiiVariant</a> &amp;oldIndex, const <a class="el" href="../../db/d1a/classxii_variant.html">xiiVariant</a> &amp;newIndex) override</td></tr>
+<tr class="separator:a4a9f0b99258d36b6d2ee54a18a792cd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5327ba6673c704cd404f3ed0c6a6450c" id="r_a5327ba6673c704cd404f3ed0c6a6450c"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d0/d54/structxii_status.html">xiiStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5327ba6673c704cd404f3ed0c6a6450c">AddObject</a> (const <a class="el" href="../../da/dd8/classxii_document_object.html">xiiDocumentObject</a> *pParent, const <a class="el" href="../../da/d25/classxii_abstract_property.html">xiiAbstractProperty</a> *pParentProp, const <a class="el" href="../../db/d1a/classxii_variant.html">xiiVariant</a> &amp;index, const <a class="el" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a> *pType, <a class="el" href="../../dc/d1d/classxii_uuid.html">xiiUuid</a> &amp;inout_objectGuid) override</td></tr>
+<tr class="separator:a5327ba6673c704cd404f3ed0c6a6450c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e5bbdb8d5e59f028a75a69afecfdd2b" id="r_a2e5bbdb8d5e59f028a75a69afecfdd2b"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d0/d54/structxii_status.html">xiiStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2e5bbdb8d5e59f028a75a69afecfdd2b">RemoveObject</a> (const <a class="el" href="../../da/dd8/classxii_document_object.html">xiiDocumentObject</a> *pObject) override</td></tr>
+<tr class="separator:a2e5bbdb8d5e59f028a75a69afecfdd2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0a879e085fc6280e3e2b1ed41242bc7" id="r_ae0a879e085fc6280e3e2b1ed41242bc7"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d0/d54/structxii_status.html">xiiStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae0a879e085fc6280e3e2b1ed41242bc7">MoveObject</a> (const <a class="el" href="../../da/dd8/classxii_document_object.html">xiiDocumentObject</a> *pObject, const <a class="el" href="../../da/dd8/classxii_document_object.html">xiiDocumentObject</a> *pNewParent, const <a class="el" href="../../da/d25/classxii_abstract_property.html">xiiAbstractProperty</a> *pParentProp, const <a class="el" href="../../db/d1a/classxii_variant.html">xiiVariant</a> &amp;index) override</td></tr>
+<tr class="separator:ae0a879e085fc6280e3e2b1ed41242bc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classxii_object_direct_accessor"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_classxii_object_direct_accessor')"><img src="../../closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="../../d8/d91/classxii_object_direct_accessor.html">xiiObjectDirectAccessor</a></td></tr>
+<tr class="memitem:a59d94e37884b403110fb8e06c004c081 inherit pub_methods_classxii_object_direct_accessor" id="r_a59d94e37884b403110fb8e06c004c081"><td class="memItemLeft" align="right" valign="top">
+&#160;</td><td class="memItemRight" valign="bottom"><b>xiiObjectDirectAccessor</b> (<a class="el" href="../../d2/d8c/classxii_document_object_manager.html">xiiDocumentObjectManager</a> *pManager)</td></tr>
+<tr class="separator:a59d94e37884b403110fb8e06c004c081 inherit pub_methods_classxii_object_direct_accessor"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1574177a60db67b479bc82ec1399602 inherit pub_methods_classxii_object_direct_accessor" id="r_ad1574177a60db67b479bc82ec1399602"><td class="memItemLeft" align="right" valign="top">virtual const <a class="el" href="../../da/dd8/classxii_document_object.html">xiiDocumentObject</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d91/classxii_object_direct_accessor.html#ad1574177a60db67b479bc82ec1399602">GetObject</a> (const <a class="el" href="../../dc/d1d/classxii_uuid.html">xiiUuid</a> &amp;object) override</td></tr>
+<tr class="separator:ad1574177a60db67b479bc82ec1399602 inherit pub_methods_classxii_object_direct_accessor"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad15027a473a5b4d3c256dcc852739cd0 inherit pub_methods_classxii_object_direct_accessor" id="r_ad15027a473a5b4d3c256dcc852739cd0"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d0/d54/structxii_status.html">xiiStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d91/classxii_object_direct_accessor.html#ad15027a473a5b4d3c256dcc852739cd0">GetValue</a> (const <a class="el" href="../../da/dd8/classxii_document_object.html">xiiDocumentObject</a> *pObject, const <a class="el" href="../../da/d25/classxii_abstract_property.html">xiiAbstractProperty</a> *pProp, <a class="el" href="../../db/d1a/classxii_variant.html">xiiVariant</a> &amp;out_value, <a class="el" href="../../db/d1a/classxii_variant.html">xiiVariant</a> index=<a class="el" href="../../db/d1a/classxii_variant.html">xiiVariant</a>()) override</td></tr>
+<tr class="separator:ad15027a473a5b4d3c256dcc852739cd0 inherit pub_methods_classxii_object_direct_accessor"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc692a448020586fac06c0300a724f67 inherit pub_methods_classxii_object_direct_accessor" id="r_abc692a448020586fac06c0300a724f67"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d0/d54/structxii_status.html">xiiStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d91/classxii_object_direct_accessor.html#abc692a448020586fac06c0300a724f67">GetCount</a> (const <a class="el" href="../../da/dd8/classxii_document_object.html">xiiDocumentObject</a> *pObject, const <a class="el" href="../../da/d25/classxii_abstract_property.html">xiiAbstractProperty</a> *pProp, xiiInt32 &amp;out_iCount) override</td></tr>
+<tr class="separator:abc692a448020586fac06c0300a724f67 inherit pub_methods_classxii_object_direct_accessor"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade270d991992f6655f232b2649860763 inherit pub_methods_classxii_object_direct_accessor" id="r_ade270d991992f6655f232b2649860763"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d0/d54/structxii_status.html">xiiStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d91/classxii_object_direct_accessor.html#ade270d991992f6655f232b2649860763">GetKeys</a> (const <a class="el" href="../../da/dd8/classxii_document_object.html">xiiDocumentObject</a> *pObject, const <a class="el" href="../../da/d25/classxii_abstract_property.html">xiiAbstractProperty</a> *pProp, <a class="el" href="../../dc/da4/classxii_dynamic_array.html">xiiDynamicArray</a>&lt; <a class="el" href="../../db/d1a/classxii_variant.html">xiiVariant</a> &gt; &amp;out_keys) override</td></tr>
+<tr class="separator:ade270d991992f6655f232b2649860763 inherit pub_methods_classxii_object_direct_accessor"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1f42cc6c4cc2ddcac584c61de179416 inherit pub_methods_classxii_object_direct_accessor" id="r_ab1f42cc6c4cc2ddcac584c61de179416"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d0/d54/structxii_status.html">xiiStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d91/classxii_object_direct_accessor.html#ab1f42cc6c4cc2ddcac584c61de179416">GetValues</a> (const <a class="el" href="../../da/dd8/classxii_document_object.html">xiiDocumentObject</a> *pObject, const <a class="el" href="../../da/d25/classxii_abstract_property.html">xiiAbstractProperty</a> *pProp, <a class="el" href="../../dc/da4/classxii_dynamic_array.html">xiiDynamicArray</a>&lt; <a class="el" href="../../db/d1a/classxii_variant.html">xiiVariant</a> &gt; &amp;out_values) override</td></tr>
+<tr class="separator:ab1f42cc6c4cc2ddcac584c61de179416 inherit pub_methods_classxii_object_direct_accessor"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classxii_object_accessor_base"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_classxii_object_accessor_base')"><img src="../../closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="../../de/d12/classxii_object_accessor_base.html">xiiObjectAccessorBase</a></td></tr>
+<tr class="memitem:a8d0dcbee9401fb3cb62b5f29df12f3d3 inherit pub_methods_classxii_object_accessor_base" id="r_a8d0dcbee9401fb3cb62b5f29df12f3d3"><td class="memItemLeft" align="right" valign="top">
+const <a class="el" href="../../d2/d8c/classxii_document_object_manager.html">xiiDocumentObjectManager</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetObjectManager</b> () const</td></tr>
+<tr class="separator:a8d0dcbee9401fb3cb62b5f29df12f3d3 inherit pub_methods_classxii_object_accessor_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abdf532c7c1636e20d5a018391ceff6a0 inherit pub_methods_classxii_object_accessor_base" id="r_abdf532c7c1636e20d5a018391ceff6a0"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="../../d0/d54/structxii_status.html">xiiStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetValue</b> (const <a class="el" href="../../da/dd8/classxii_document_object.html">xiiDocumentObject</a> *pObject, <a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sProp, <a class="el" href="../../db/d1a/classxii_variant.html">xiiVariant</a> &amp;out_value, <a class="el" href="../../db/d1a/classxii_variant.html">xiiVariant</a> index=<a class="el" href="../../db/d1a/classxii_variant.html">xiiVariant</a>())</td></tr>
+<tr class="separator:abdf532c7c1636e20d5a018391ceff6a0 inherit pub_methods_classxii_object_accessor_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1872ddbdf9f4a6b05e866cd5674e3406 inherit pub_methods_classxii_object_accessor_base" id="r_a1872ddbdf9f4a6b05e866cd5674e3406"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="../../d0/d54/structxii_status.html">xiiStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><b>SetValue</b> (const <a class="el" href="../../da/dd8/classxii_document_object.html">xiiDocumentObject</a> *pObject, <a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sProp, const <a class="el" href="../../db/d1a/classxii_variant.html">xiiVariant</a> &amp;newValue, <a class="el" href="../../db/d1a/classxii_variant.html">xiiVariant</a> index=<a class="el" href="../../db/d1a/classxii_variant.html">xiiVariant</a>())</td></tr>
+<tr class="separator:a1872ddbdf9f4a6b05e866cd5674e3406 inherit pub_methods_classxii_object_accessor_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ff243fe744f37a13f98a04587261a8d inherit pub_methods_classxii_object_accessor_base" id="r_a1ff243fe744f37a13f98a04587261a8d"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="../../d0/d54/structxii_status.html">xiiStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><b>InsertValue</b> (const <a class="el" href="../../da/dd8/classxii_document_object.html">xiiDocumentObject</a> *pObject, <a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sProp, const <a class="el" href="../../db/d1a/classxii_variant.html">xiiVariant</a> &amp;newValue, <a class="el" href="../../db/d1a/classxii_variant.html">xiiVariant</a> index=<a class="el" href="../../db/d1a/classxii_variant.html">xiiVariant</a>())</td></tr>
+<tr class="separator:a1ff243fe744f37a13f98a04587261a8d inherit pub_methods_classxii_object_accessor_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace6b5574e9568ce2d3b162a21ee5c6ca inherit pub_methods_classxii_object_accessor_base" id="r_ace6b5574e9568ce2d3b162a21ee5c6ca"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="../../d0/d54/structxii_status.html">xiiStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><b>RemoveValue</b> (const <a class="el" href="../../da/dd8/classxii_document_object.html">xiiDocumentObject</a> *pObject, <a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sProp, <a class="el" href="../../db/d1a/classxii_variant.html">xiiVariant</a> index=<a class="el" href="../../db/d1a/classxii_variant.html">xiiVariant</a>())</td></tr>
+<tr class="separator:ace6b5574e9568ce2d3b162a21ee5c6ca inherit pub_methods_classxii_object_accessor_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09c93d940690d4fb88c2b3d037193795 inherit pub_methods_classxii_object_accessor_base" id="r_a09c93d940690d4fb88c2b3d037193795"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="../../d0/d54/structxii_status.html">xiiStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><b>MoveValue</b> (const <a class="el" href="../../da/dd8/classxii_document_object.html">xiiDocumentObject</a> *pObject, <a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sProp, const <a class="el" href="../../db/d1a/classxii_variant.html">xiiVariant</a> &amp;oldIndex, const <a class="el" href="../../db/d1a/classxii_variant.html">xiiVariant</a> &amp;newIndex)</td></tr>
+<tr class="separator:a09c93d940690d4fb88c2b3d037193795 inherit pub_methods_classxii_object_accessor_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42d8c1ee5f5d0e9a714aa43337aa68d5 inherit pub_methods_classxii_object_accessor_base" id="r_a42d8c1ee5f5d0e9a714aa43337aa68d5"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="../../d0/d54/structxii_status.html">xiiStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetCount</b> (const <a class="el" href="../../da/dd8/classxii_document_object.html">xiiDocumentObject</a> *pObject, <a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sProp, xiiInt32 &amp;out_iCount)</td></tr>
+<tr class="separator:a42d8c1ee5f5d0e9a714aa43337aa68d5 inherit pub_methods_classxii_object_accessor_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8992d4081a80adbe187ca11fa050342e inherit pub_methods_classxii_object_accessor_base" id="r_a8992d4081a80adbe187ca11fa050342e"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="../../d0/d54/structxii_status.html">xiiStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><b>AddObject</b> (const <a class="el" href="../../da/dd8/classxii_document_object.html">xiiDocumentObject</a> *pParent, <a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sParentProp, const <a class="el" href="../../db/d1a/classxii_variant.html">xiiVariant</a> &amp;index, const <a class="el" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a> *pType, <a class="el" href="../../dc/d1d/classxii_uuid.html">xiiUuid</a> &amp;inout_objectGuid)</td></tr>
+<tr class="separator:a8992d4081a80adbe187ca11fa050342e inherit pub_methods_classxii_object_accessor_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acaffd7435e1cd215e936a26ba4e49f3d inherit pub_methods_classxii_object_accessor_base" id="r_acaffd7435e1cd215e936a26ba4e49f3d"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="../../d0/d54/structxii_status.html">xiiStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><b>MoveObject</b> (const <a class="el" href="../../da/dd8/classxii_document_object.html">xiiDocumentObject</a> *pObject, const <a class="el" href="../../da/dd8/classxii_document_object.html">xiiDocumentObject</a> *pNewParent, <a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sParentProp, const <a class="el" href="../../db/d1a/classxii_variant.html">xiiVariant</a> &amp;index)</td></tr>
+<tr class="separator:acaffd7435e1cd215e936a26ba4e49f3d inherit pub_methods_classxii_object_accessor_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25b2de12c88eb750e3e8e571f43a7b0d inherit pub_methods_classxii_object_accessor_base" id="r_a25b2de12c88eb750e3e8e571f43a7b0d"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="../../d0/d54/structxii_status.html">xiiStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetKeys</b> (const <a class="el" href="../../da/dd8/classxii_document_object.html">xiiDocumentObject</a> *pObject, <a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sProp, <a class="el" href="../../dc/da4/classxii_dynamic_array.html">xiiDynamicArray</a>&lt; <a class="el" href="../../db/d1a/classxii_variant.html">xiiVariant</a> &gt; &amp;out_keys)</td></tr>
+<tr class="separator:a25b2de12c88eb750e3e8e571f43a7b0d inherit pub_methods_classxii_object_accessor_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a113467d903a45ba1558e005f0b0ff0d3 inherit pub_methods_classxii_object_accessor_base" id="r_a113467d903a45ba1558e005f0b0ff0d3"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="../../d0/d54/structxii_status.html">xiiStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetValues</b> (const <a class="el" href="../../da/dd8/classxii_document_object.html">xiiDocumentObject</a> *pObject, <a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sProp, <a class="el" href="../../dc/da4/classxii_dynamic_array.html">xiiDynamicArray</a>&lt; <a class="el" href="../../db/d1a/classxii_variant.html">xiiVariant</a> &gt; &amp;out_values)</td></tr>
+<tr class="separator:a113467d903a45ba1558e005f0b0ff0d3 inherit pub_methods_classxii_object_accessor_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1fcea999aeceb88123e0d80d372b8b1 inherit pub_methods_classxii_object_accessor_base" id="r_aa1fcea999aeceb88123e0d80d372b8b1"><td class="memItemLeft" align="right" valign="top">
+const <a class="el" href="../../da/dd8/classxii_document_object.html">xiiDocumentObject</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetChildObject</b> (const <a class="el" href="../../da/dd8/classxii_document_object.html">xiiDocumentObject</a> *pObject, <a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sProp, <a class="el" href="../../db/d1a/classxii_variant.html">xiiVariant</a> index)</td></tr>
+<tr class="separator:aa1fcea999aeceb88123e0d80d372b8b1 inherit pub_methods_classxii_object_accessor_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06c07ea2badce6a255dc9b906d2e87ee inherit pub_methods_classxii_object_accessor_base" id="r_a06c07ea2badce6a255dc9b906d2e87ee"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="../../d0/d54/structxii_status.html">xiiStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Clear</b> (const <a class="el" href="../../da/dd8/classxii_document_object.html">xiiDocumentObject</a> *pObject, <a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sProp)</td></tr>
+<tr class="separator:a06c07ea2badce6a255dc9b906d2e87ee inherit pub_methods_classxii_object_accessor_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb5ca51c22af1229d0fcb257a166ba0a inherit pub_methods_classxii_object_accessor_base" id="r_adb5ca51c22af1229d0fcb257a166ba0a"><td class="memTemplParams" colspan="2">
+template&lt;typename T &gt; </td></tr>
+<tr class="memitem:adb5ca51c22af1229d0fcb257a166ba0a inherit pub_methods_classxii_object_accessor_base"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><b>Get</b> (const <a class="el" href="../../da/dd8/classxii_document_object.html">xiiDocumentObject</a> *pObject, const <a class="el" href="../../da/d25/classxii_abstract_property.html">xiiAbstractProperty</a> *pProp, <a class="el" href="../../db/d1a/classxii_variant.html">xiiVariant</a> index=<a class="el" href="../../db/d1a/classxii_variant.html">xiiVariant</a>())</td></tr>
+<tr class="separator:adb5ca51c22af1229d0fcb257a166ba0a inherit pub_methods_classxii_object_accessor_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77e9091a665ec5843d74dcb08d4946b8 inherit pub_methods_classxii_object_accessor_base" id="r_a77e9091a665ec5843d74dcb08d4946b8"><td class="memTemplParams" colspan="2">
+template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a77e9091a665ec5843d74dcb08d4946b8 inherit pub_methods_classxii_object_accessor_base"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><b>Get</b> (const <a class="el" href="../../da/dd8/classxii_document_object.html">xiiDocumentObject</a> *pObject, <a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sProp, <a class="el" href="../../db/d1a/classxii_variant.html">xiiVariant</a> index=<a class="el" href="../../db/d1a/classxii_variant.html">xiiVariant</a>())</td></tr>
+<tr class="separator:a77e9091a665ec5843d74dcb08d4946b8 inherit pub_methods_classxii_object_accessor_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:affb9f7cef2be72811171fbc05116d284 inherit pub_methods_classxii_object_accessor_base" id="r_affb9f7cef2be72811171fbc05116d284"><td class="memItemLeft" align="right" valign="top">
+xiiInt32&#160;</td><td class="memItemRight" valign="bottom"><b>GetCount</b> (const <a class="el" href="../../da/dd8/classxii_document_object.html">xiiDocumentObject</a> *pObject, const <a class="el" href="../../da/d25/classxii_abstract_property.html">xiiAbstractProperty</a> *pProp)</td></tr>
+<tr class="separator:affb9f7cef2be72811171fbc05116d284 inherit pub_methods_classxii_object_accessor_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67936f972e8efb91a73539bd6e2ff44e inherit pub_methods_classxii_object_accessor_base" id="r_a67936f972e8efb91a73539bd6e2ff44e"><td class="memItemLeft" align="right" valign="top">
+xiiInt32&#160;</td><td class="memItemRight" valign="bottom"><b>GetCount</b> (const <a class="el" href="../../da/dd8/classxii_document_object.html">xiiDocumentObject</a> *pObject, <a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sProp)</td></tr>
+<tr class="separator:a67936f972e8efb91a73539bd6e2ff44e inherit pub_methods_classxii_object_accessor_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:aa30bc7210d645ddd4e91dacb28e34414" id="r_aa30bc7210d645ddd4e91dacb28e34414"><td class="memItemLeft" align="right" valign="top"><a id="aa30bc7210d645ddd4e91dacb28e34414" name="aa30bc7210d645ddd4e91dacb28e34414"></a>
+<a class="el" href="../../d0/df0/classxii_command_history.html">xiiCommandHistory</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_pHistory</b></td></tr>
+<tr class="separator:aa30bc7210d645ddd4e91dacb28e34414"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_classxii_object_direct_accessor"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_attribs_classxii_object_direct_accessor')"><img src="../../closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="../../d8/d91/classxii_object_direct_accessor.html">xiiObjectDirectAccessor</a></td></tr>
+<tr class="memitem:a05315afc84a26a8d68919e71b890e80c inherit pro_attribs_classxii_object_direct_accessor" id="r_a05315afc84a26a8d68919e71b890e80c"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="../../d2/d8c/classxii_document_object_manager.html">xiiDocumentObjectManager</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_pManager</b></td></tr>
+<tr class="separator:a05315afc84a26a8d68919e71b890e80c inherit pro_attribs_classxii_object_direct_accessor"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_classxii_object_accessor_base"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_attribs_classxii_object_accessor_base')"><img src="../../closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="../../de/d12/classxii_object_accessor_base.html">xiiObjectAccessorBase</a></td></tr>
+<tr class="memitem:af6d5e81121efc5adbc3af8523de6cd45 inherit pro_attribs_classxii_object_accessor_base" id="r_af6d5e81121efc5adbc3af8523de6cd45"><td class="memItemLeft" align="right" valign="top">
+const <a class="el" href="../../d2/d8c/classxii_document_object_manager.html">xiiDocumentObjectManager</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_pConstManager</b></td></tr>
+<tr class="separator:af6d5e81121efc5adbc3af8523de6cd45 inherit pro_attribs_classxii_object_accessor_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pro_methods_classxii_object_accessor_base"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_methods_classxii_object_accessor_base')"><img src="../../closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="../../de/d12/classxii_object_accessor_base.html">xiiObjectAccessorBase</a></td></tr>
+<tr class="memitem:a6902cdd4d0bf64c71ce9c638c1eae08b inherit pro_methods_classxii_object_accessor_base" id="r_a6902cdd4d0bf64c71ce9c638c1eae08b"><td class="memItemLeft" align="right" valign="top">
+&#160;</td><td class="memItemRight" valign="bottom"><b>xiiObjectAccessorBase</b> (const <a class="el" href="../../d2/d8c/classxii_document_object_manager.html">xiiDocumentObjectManager</a> *pManager)</td></tr>
+<tr class="separator:a6902cdd4d0bf64c71ce9c638c1eae08b inherit pro_methods_classxii_object_accessor_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b6512692e7a0727bbbefd85159b9e08 inherit pro_methods_classxii_object_accessor_base" id="r_a6b6512692e7a0727bbbefd85159b9e08"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><b>FireDocumentObjectStructureEvent</b> (const <a class="el" href="../../db/d05/structxii_document_object_structure_event.html">xiiDocumentObjectStructureEvent</a> &amp;e)</td></tr>
+<tr class="separator:a6b6512692e7a0727bbbefd85159b9e08 inherit pro_methods_classxii_object_accessor_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7841ba458427867bdfb36529d8789b52 inherit pro_methods_classxii_object_accessor_base" id="r_a7841ba458427867bdfb36529d8789b52"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><b>FireDocumentObjectPropertyEvent</b> (const <a class="el" href="../../d9/d70/structxii_document_object_property_event.html">xiiDocumentObjectPropertyEvent</a> &amp;e)</td></tr>
+<tr class="separator:a7841ba458427867bdfb36529d8789b52 inherit pro_methods_classxii_object_accessor_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a5327ba6673c704cd404f3ed0c6a6450c" name="a5327ba6673c704cd404f3ed0c6a6450c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5327ba6673c704cd404f3ed0c6a6450c">&#9670;&#160;</a></span>AddObject()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d0/d54/structxii_status.html">xiiStatus</a> xiiObjectCommandAccessor::AddObject </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../da/dd8/classxii_document_object.html">xiiDocumentObject</a> *</td>          <td class="paramname"><span class="paramname"><em>pParent</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../da/d25/classxii_abstract_property.html">xiiAbstractProperty</a> *</td>          <td class="paramname"><span class="paramname"><em>pParentProp</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../db/d1a/classxii_variant.html">xiiVariant</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>index</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a> *</td>          <td class="paramname"><span class="paramname"><em>pType</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../dc/d1d/classxii_uuid.html">xiiUuid</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>inout_objectGuid</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented from <a class="el" href="../../d8/d91/classxii_object_direct_accessor.html">xiiObjectDirectAccessor</a>.</p>
+
+</div>
+</div>
+<a id="a6e796809a983597958615e032c32b838" name="a6e796809a983597958615e032c32b838"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e796809a983597958615e032c32b838">&#9670;&#160;</a></span>BeginTemporaryCommands()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void xiiObjectCommandAccessor::BeginTemporaryCommands </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a></td>          <td class="paramname"><span class="paramname"><em>sDisplayString</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>bFireEventsWhenUndoingTempCommands</em></span><span class="paramdefsep"> = </span><span class="paramdefval">false</span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented from <a class="el" href="../../de/d12/classxii_object_accessor_base.html">xiiObjectAccessorBase</a>.</p>
+
+</div>
+</div>
+<a id="a13ecd2b61caf9dc8b75639682da204c8" name="a13ecd2b61caf9dc8b75639682da204c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a13ecd2b61caf9dc8b75639682da204c8">&#9670;&#160;</a></span>CancelTemporaryCommands()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void xiiObjectCommandAccessor::CancelTemporaryCommands </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented from <a class="el" href="../../de/d12/classxii_object_accessor_base.html">xiiObjectAccessorBase</a>.</p>
+
+</div>
+</div>
+<a id="a3959357fc07309fbfcd0f3d7e5f3110b" name="a3959357fc07309fbfcd0f3d7e5f3110b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3959357fc07309fbfcd0f3d7e5f3110b">&#9670;&#160;</a></span>CancelTransaction()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void xiiObjectCommandAccessor::CancelTransaction </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented from <a class="el" href="../../de/d12/classxii_object_accessor_base.html">xiiObjectAccessorBase</a>.</p>
+
+</div>
+</div>
+<a id="ad3a12ba85b94984bb4b472513c892795" name="ad3a12ba85b94984bb4b472513c892795"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad3a12ba85b94984bb4b472513c892795">&#9670;&#160;</a></span>FinishTemporaryCommands()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void xiiObjectCommandAccessor::FinishTemporaryCommands </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented from <a class="el" href="../../de/d12/classxii_object_accessor_base.html">xiiObjectAccessorBase</a>.</p>
+
+</div>
+</div>
+<a id="ae3f791275976fbdfed6d2e7aabcc598f" name="ae3f791275976fbdfed6d2e7aabcc598f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae3f791275976fbdfed6d2e7aabcc598f">&#9670;&#160;</a></span>FinishTransaction()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void xiiObjectCommandAccessor::FinishTransaction </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented from <a class="el" href="../../de/d12/classxii_object_accessor_base.html">xiiObjectAccessorBase</a>.</p>
+
+</div>
+</div>
+<a id="a026462201b543046d195feb0d3cd3431" name="a026462201b543046d195feb0d3cd3431"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a026462201b543046d195feb0d3cd3431">&#9670;&#160;</a></span>InsertValue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d0/d54/structxii_status.html">xiiStatus</a> xiiObjectCommandAccessor::InsertValue </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../da/dd8/classxii_document_object.html">xiiDocumentObject</a> *</td>          <td class="paramname"><span class="paramname"><em>pObject</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../da/d25/classxii_abstract_property.html">xiiAbstractProperty</a> *</td>          <td class="paramname"><span class="paramname"><em>pProp</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../db/d1a/classxii_variant.html">xiiVariant</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>newValue</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../db/d1a/classxii_variant.html">xiiVariant</a></td>          <td class="paramname"><span class="paramname"><em>index</em></span><span class="paramdefsep"> = </span><span class="paramdefval"><a class="el" href="../../db/d1a/classxii_variant.html">xiiVariant</a>()</span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented from <a class="el" href="../../d8/d91/classxii_object_direct_accessor.html">xiiObjectDirectAccessor</a>.</p>
+
+</div>
+</div>
+<a id="ae0a879e085fc6280e3e2b1ed41242bc7" name="ae0a879e085fc6280e3e2b1ed41242bc7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae0a879e085fc6280e3e2b1ed41242bc7">&#9670;&#160;</a></span>MoveObject()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d0/d54/structxii_status.html">xiiStatus</a> xiiObjectCommandAccessor::MoveObject </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../da/dd8/classxii_document_object.html">xiiDocumentObject</a> *</td>          <td class="paramname"><span class="paramname"><em>pObject</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../da/dd8/classxii_document_object.html">xiiDocumentObject</a> *</td>          <td class="paramname"><span class="paramname"><em>pNewParent</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../da/d25/classxii_abstract_property.html">xiiAbstractProperty</a> *</td>          <td class="paramname"><span class="paramname"><em>pParentProp</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../db/d1a/classxii_variant.html">xiiVariant</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>index</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented from <a class="el" href="../../d8/d91/classxii_object_direct_accessor.html">xiiObjectDirectAccessor</a>.</p>
+
+</div>
+</div>
+<a id="a4a9f0b99258d36b6d2ee54a18a792cd2" name="a4a9f0b99258d36b6d2ee54a18a792cd2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a9f0b99258d36b6d2ee54a18a792cd2">&#9670;&#160;</a></span>MoveValue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d0/d54/structxii_status.html">xiiStatus</a> xiiObjectCommandAccessor::MoveValue </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../da/dd8/classxii_document_object.html">xiiDocumentObject</a> *</td>          <td class="paramname"><span class="paramname"><em>pObject</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../da/d25/classxii_abstract_property.html">xiiAbstractProperty</a> *</td>          <td class="paramname"><span class="paramname"><em>pProp</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../db/d1a/classxii_variant.html">xiiVariant</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>oldIndex</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../db/d1a/classxii_variant.html">xiiVariant</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>newIndex</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented from <a class="el" href="../../d8/d91/classxii_object_direct_accessor.html">xiiObjectDirectAccessor</a>.</p>
+
+</div>
+</div>
+<a id="a2e5bbdb8d5e59f028a75a69afecfdd2b" name="a2e5bbdb8d5e59f028a75a69afecfdd2b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2e5bbdb8d5e59f028a75a69afecfdd2b">&#9670;&#160;</a></span>RemoveObject()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d0/d54/structxii_status.html">xiiStatus</a> xiiObjectCommandAccessor::RemoveObject </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../da/dd8/classxii_document_object.html">xiiDocumentObject</a> *</td>          <td class="paramname"><span class="paramname"><em>pObject</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented from <a class="el" href="../../d8/d91/classxii_object_direct_accessor.html">xiiObjectDirectAccessor</a>.</p>
+
+</div>
+</div>
+<a id="a5d6014b7a50995b277447e7d7245acd1" name="a5d6014b7a50995b277447e7d7245acd1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d6014b7a50995b277447e7d7245acd1">&#9670;&#160;</a></span>RemoveValue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d0/d54/structxii_status.html">xiiStatus</a> xiiObjectCommandAccessor::RemoveValue </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../da/dd8/classxii_document_object.html">xiiDocumentObject</a> *</td>          <td class="paramname"><span class="paramname"><em>pObject</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../da/d25/classxii_abstract_property.html">xiiAbstractProperty</a> *</td>          <td class="paramname"><span class="paramname"><em>pProp</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../db/d1a/classxii_variant.html">xiiVariant</a></td>          <td class="paramname"><span class="paramname"><em>index</em></span><span class="paramdefsep"> = </span><span class="paramdefval"><a class="el" href="../../db/d1a/classxii_variant.html">xiiVariant</a>()</span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented from <a class="el" href="../../d8/d91/classxii_object_direct_accessor.html">xiiObjectDirectAccessor</a>.</p>
+
+</div>
+</div>
+<a id="a14537be1e169c7079fa516175be9b1bf" name="a14537be1e169c7079fa516175be9b1bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a14537be1e169c7079fa516175be9b1bf">&#9670;&#160;</a></span>SetValue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d0/d54/structxii_status.html">xiiStatus</a> xiiObjectCommandAccessor::SetValue </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../da/dd8/classxii_document_object.html">xiiDocumentObject</a> *</td>          <td class="paramname"><span class="paramname"><em>pObject</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../da/d25/classxii_abstract_property.html">xiiAbstractProperty</a> *</td>          <td class="paramname"><span class="paramname"><em>pProp</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../db/d1a/classxii_variant.html">xiiVariant</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>newValue</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../db/d1a/classxii_variant.html">xiiVariant</a></td>          <td class="paramname"><span class="paramname"><em>index</em></span><span class="paramdefsep"> = </span><span class="paramdefval"><a class="el" href="../../db/d1a/classxii_variant.html">xiiVariant</a>()</span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented from <a class="el" href="../../d8/d91/classxii_object_direct_accessor.html">xiiObjectDirectAccessor</a>.</p>
+
+</div>
+</div>
+<a id="ac7c53f7afe9a02b3ae2463bea21e872b" name="ac7c53f7afe9a02b3ae2463bea21e872b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac7c53f7afe9a02b3ae2463bea21e872b">&#9670;&#160;</a></span>StartTransaction()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void xiiObjectCommandAccessor::StartTransaction </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a></td>          <td class="paramname"><span class="paramname"><em>sDisplayString</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented from <a class="el" href="../../de/d12/classxii_object_accessor_base.html">xiiObjectAccessorBase</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li>/home/runner/work/XII/XII/Source/Tools/Libs/ToolsFoundation/Object/<a class="el" href="../../d9/d98/_object_command_accessor_8h_source.html">ObjectCommandAccessor.h</a></li>
+<li>/home/runner/work/XII/XII/Source/Tools/Libs/ToolsFoundation/Object/Implementation/<b>ObjectCommandAccessor.cpp</b></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../d0/d29/classxii_object_command_accessor.html">xiiObjectCommandAccessor</a></li>
+    <li class="footer">Generated on Mon Jul 1 2024 23:53:15 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+  </ul>
+</div>
+</body>
+</html>

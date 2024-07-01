@@ -1,0 +1,491 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.11.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<!-- BEGIN opengraph metadata -->
+<meta property="og:title" content="XII" />
+<meta property="og:image" content="../../XII-Logo.png" />
+<meta property="og:description" content="An advanced high-performance simulation engine." />
+<meta property="og:url" content="https://www.xiitechnologies.com" />
+<!-- END opengraph metadata -->
+<!-- BEGIN twitter metadata -->
+<meta name="twitter:image:src" content="../../XII-Logo.png" />
+<meta name="twitter:title" content="XII" />
+<meta name="twitter:description" content="An advanced high-performance simulation engine." />
+<!-- END twitter metadata -->
+<title>XII: xiiPreprocessor Class Reference</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link rel="icon" type="image/svg+xml" href="logo.drawio.svg"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="../../toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../custom.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<a href="https://github.com/jothepro/doxygen-awesome-css" class="github-corner" title="View source on GitHub" target="_blank" rel="noopener noreferrer">
+    <svg viewBox="0 0 250 250" width="40" height="40" style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+    <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="../../XII-Logo.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">XII
+   &#160;<span id="projectnumber">1.0.0</span>
+   </div>
+   <div id="projectbrief">A high-performance simulation engine.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(1); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.html','Search',true);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('db/d38/classxii_preprocessor.html','../../'); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#pub-types">Public Types</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="../../de/d8a/classxii_preprocessor-members.html">List of all members</a>  </div>
+  <div class="headertitle"><div class="title">xiiPreprocessor Class Reference</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p><a class="el" href="../../db/d38/classxii_preprocessor.html" title="xiiPreprocessor implements a standard C preprocessor. It can be used to pre-process files to get the ...">xiiPreprocessor</a> implements a standard <a class="el" href="../../dd/de0/class_c.html">C</a> preprocessor. It can be used to pre-process files to get the output after macro expansion and #ifdef handling.  
+ <a href="#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="../../d1/d57/_preprocessor_8h_source.html">Preprocessor.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/ddd/structxii_preprocessor_1_1_processing_event.html">ProcessingEvent</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The event data that the processor broadcasts.  <a href="../../da/ddd/structxii_preprocessor_1_1_processing_event.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a5466b323aa93219d02120f1dc285c440" id="r_a5466b323aa93219d02120f1dc285c440"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5466b323aa93219d02120f1dc285c440">IncludeType</a> { <a class="el" href="#a5466b323aa93219d02120f1dc285c440add2663beedd14caf64de08c3bbff67d2">MainFile</a>
+, <a class="el" href="#a5466b323aa93219d02120f1dc285c440acd5ef52c0d81c523794630162ba4c32a">RelativeInclude</a>
+, <a class="el" href="#a5466b323aa93219d02120f1dc285c440a4567afb135f83dee498bc0efb40ade9a">GlobalInclude</a>
+ }</td></tr>
+<tr class="memdesc:a5466b323aa93219d02120f1dc285c440"><td class="mdescLeft">&#160;</td><td class="mdescRight">Describes the type of #include that was encountered during preprocessing.  <a href="#a5466b323aa93219d02120f1dc285c440">More...</a><br /></td></tr>
+<tr class="separator:a5466b323aa93219d02120f1dc285c440"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c0ba26d5a348120e5f71fcd2ccc91f5" id="r_a2c0ba26d5a348120e5f71fcd2ccc91f5"><td class="memItemLeft" align="right" valign="top"><a id="a2c0ba26d5a348120e5f71fcd2ccc91f5" name="a2c0ba26d5a348120e5f71fcd2ccc91f5"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>FileOpenCB</b> = <a class="el" href="../../dc/d84/structxii_delegate.html">xiiDelegate</a>&lt;<a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a>(<a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sAbsoluteFile, <a class="el" href="../../dc/da4/classxii_dynamic_array.html">xiiDynamicArray</a>&lt;xiiUInt8&gt;&amp; FileContent, <a class="el" href="../../d5/da2/classxii_timestamp.html">xiiTimestamp</a>&amp; out_FileModification)&gt;</td></tr>
+<tr class="memdesc:a2c0ba26d5a348120e5f71fcd2ccc91f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">This type of callback is used to read an #include file. <em>szAbsoluteFile</em> is the path that the FileLocatorCB reported, the result needs to be stored in <em>FileContent</em>. <br /></td></tr>
+<tr class="separator:a2c0ba26d5a348120e5f71fcd2ccc91f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad21c37942e6b309ab2d921d3b288d4a0" id="r_ad21c37942e6b309ab2d921d3b288d4a0"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad21c37942e6b309ab2d921d3b288d4a0">FileLocatorCB</a> = <a class="el" href="../../dc/d84/structxii_delegate.html">xiiDelegate</a>&lt;<a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a>(<a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sCurAbsoluteFile, <a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sIncludeFile, <a class="el" href="#a5466b323aa93219d02120f1dc285c440">IncludeType</a> IncType, <a class="el" href="../../d4/dbb/classxii_string_builder.html">xiiStringBuilder</a>&amp; out_sAbsoluteFilePath)&gt;</td></tr>
+<tr class="memdesc:ad21c37942e6b309ab2d921d3b288d4a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">This type of callback is used to retrieve the absolute path of the <em>szIncludeFile</em> when #included inside <em>szCurAbsoluteFile</em>.  <br /></td></tr>
+<tr class="separator:ad21c37942e6b309ab2d921d3b288d4a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb2a15381b13fc74d13e23f091f8548b" id="r_acb2a15381b13fc74d13e23f091f8548b"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acb2a15381b13fc74d13e23f091f8548b">PassThroughUnknownCmdCB</a> = <a class="el" href="../../dc/d84/structxii_delegate.html">xiiDelegate</a>&lt;bool(<a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sUnknownCommand)&gt;</td></tr>
+<tr class="memdesc:acb2a15381b13fc74d13e23f091f8548b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Every time an unknown command (e.g. '#version') is encountered, this callback is used to determine whether the command shall be passed through.  <br /></td></tr>
+<tr class="separator:acb2a15381b13fc74d13e23f091f8548b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a127602602ad6436ad4ce53a6b0f1a2fa" id="r_a127602602ad6436ad4ce53a6b0f1a2fa"><td class="memItemLeft" align="right" valign="top"><a id="a127602602ad6436ad4ce53a6b0f1a2fa" name="a127602602ad6436ad4ce53a6b0f1a2fa"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>MacroParameters</b> = <a class="el" href="../../d8/df8/classxii_deque.html">xiiDeque</a>&lt;<a class="el" href="../../dc/da9/classxii_hybrid_array.html">xiiTokenParseUtils::TokenStream</a>&gt;</td></tr>
+<tr class="separator:a127602602ad6436ad4ce53a6b0f1a2fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a8969fb1f9a7dda6037b00bb62f3f51ff" id="r_a8969fb1f9a7dda6037b00bb62f3f51ff"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8969fb1f9a7dda6037b00bb62f3f51ff">SetLogInterface</a> (<a class="el" href="../../d6/d6b/classxii_log_interface.html">xiiLogInterface</a> *pLog)</td></tr>
+<tr class="memdesc:a8969fb1f9a7dda6037b00bb62f3f51ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">All error output is sent to the given <a class="el" href="../../d6/d6b/classxii_log_interface.html" title="Base class for all logging classes.">xiiLogInterface</a>.  <br /></td></tr>
+<tr class="separator:a8969fb1f9a7dda6037b00bb62f3f51ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72f4072a75f7a68b7ce95ee56cb3d93e" id="r_a72f4072a75f7a68b7ce95ee56cb3d93e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a72f4072a75f7a68b7ce95ee56cb3d93e">SetCustomFileCache</a> (<a class="el" href="../../de/d45/classxii_tokenized_file_cache.html">xiiTokenizedFileCache</a> *pFileCache=nullptr)</td></tr>
+<tr class="memdesc:a72f4072a75f7a68b7ce95ee56cb3d93e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allows to specify a custom cache object that should be used for storing the tokenized result of files.  <br /></td></tr>
+<tr class="separator:a72f4072a75f7a68b7ce95ee56cb3d93e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a214b805019d7626a0d62acf47aa0422d" id="r_a214b805019d7626a0d62acf47aa0422d"><td class="memItemLeft" align="right" valign="top"><a id="a214b805019d7626a0d62acf47aa0422d" name="a214b805019d7626a0d62acf47aa0422d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetPassThroughPragma</b> (bool bPassThrough)</td></tr>
+<tr class="memdesc:a214b805019d7626a0d62acf47aa0422d"><td class="mdescLeft">&#160;</td><td class="mdescRight">If set to true, all #pragma commands are passed through to the output, otherwise they are removed. <br /></td></tr>
+<tr class="separator:a214b805019d7626a0d62acf47aa0422d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f11007db6a60dec22c823765b6857bb" id="r_a9f11007db6a60dec22c823765b6857bb"><td class="memItemLeft" align="right" valign="top"><a id="a9f11007db6a60dec22c823765b6857bb" name="a9f11007db6a60dec22c823765b6857bb"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetPassThroughLine</b> (bool bPassThrough)</td></tr>
+<tr class="memdesc:a9f11007db6a60dec22c823765b6857bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">If set to true, all #line commands are passed through to the output, otherwise they are removed. <br /></td></tr>
+<tr class="separator:a9f11007db6a60dec22c823765b6857bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a912da7a9dbc38f2ca9bacaba718398bd" id="r_a912da7a9dbc38f2ca9bacaba718398bd"><td class="memItemLeft" align="right" valign="top"><a id="a912da7a9dbc38f2ca9bacaba718398bd" name="a912da7a9dbc38f2ca9bacaba718398bd"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetPassThroughUnknownCmdsCB</b> (<a class="el" href="#acb2a15381b13fc74d13e23f091f8548b">PassThroughUnknownCmdCB</a> callback)</td></tr>
+<tr class="memdesc:a912da7a9dbc38f2ca9bacaba718398bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the callback that is used to determine whether an unknown command is passed through or triggers an error. <br /></td></tr>
+<tr class="separator:a912da7a9dbc38f2ca9bacaba718398bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3608ef3fb7490e6b61b4a47b652a32a0" id="r_a3608ef3fb7490e6b61b4a47b652a32a0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3608ef3fb7490e6b61b4a47b652a32a0">SetFileOpenFunction</a> (<a class="el" href="#a2c0ba26d5a348120e5f71fcd2ccc91f5">FileOpenCB</a> openAbsFileCB)</td></tr>
+<tr class="memdesc:a3608ef3fb7490e6b61b4a47b652a32a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the callback that is needed to read input data.  <br /></td></tr>
+<tr class="separator:a3608ef3fb7490e6b61b4a47b652a32a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7abc99414b7d3aecf685bbf273c45a50" id="r_a7abc99414b7d3aecf685bbf273c45a50"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7abc99414b7d3aecf685bbf273c45a50">SetFileLocatorFunction</a> (<a class="el" href="#ad21c37942e6b309ab2d921d3b288d4a0">FileLocatorCB</a> locateAbsFileCB)</td></tr>
+<tr class="memdesc:a7abc99414b7d3aecf685bbf273c45a50"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the callback that is needed to locate an input file.  <br /></td></tr>
+<tr class="separator:a7abc99414b7d3aecf685bbf273c45a50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d2b0fe6b3cd5ed07ba982edb5a8b0e9" id="r_a8d2b0fe6b3cd5ed07ba982edb5a8b0e9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8d2b0fe6b3cd5ed07ba982edb5a8b0e9">AddCustomDefine</a> (<a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sDefinition)</td></tr>
+<tr class="memdesc:a8d2b0fe6b3cd5ed07ba982edb5a8b0e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a #define to the preprocessor, even before any file is processed.  <br /></td></tr>
+<tr class="separator:a8d2b0fe6b3cd5ed07ba982edb5a8b0e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0fb750c2d84a820e60a278cd6ccea0cf" id="r_a0fb750c2d84a820e60a278cd6ccea0cf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0fb750c2d84a820e60a278cd6ccea0cf">Process</a> (<a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sMainFile, <a class="el" href="../../dc/da9/classxii_hybrid_array.html">xiiTokenParseUtils::TokenStream</a> &amp;ref_tokenOutput)</td></tr>
+<tr class="memdesc:a0fb750c2d84a820e60a278cd6ccea0cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Processes the given file and returns the result as a stream of tokens.  <br /></td></tr>
+<tr class="separator:a0fb750c2d84a820e60a278cd6ccea0cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93b71f8448ef611d1675debbca8904a4" id="r_a93b71f8448ef611d1675debbca8904a4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a93b71f8448ef611d1675debbca8904a4">Process</a> (<a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sMainFile, <a class="el" href="../../d4/dbb/classxii_string_builder.html">xiiStringBuilder</a> &amp;ref_sOutput, bool bKeepComments=true, bool bRemoveRedundantWhitespace=false, bool bInsertLine=false)</td></tr>
+<tr class="memdesc:a93b71f8448ef611d1675debbca8904a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Processes the given file and returns the result as a string.  <br /></td></tr>
+<tr class="separator:a93b71f8448ef611d1675debbca8904a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a1d9fc3c9e1e34c25c6b3cc096ff2a597" id="r_a1d9fc3c9e1e34c25c6b3cc096ff2a597"><td class="memItemLeft" align="right" valign="top"><a id="a1d9fc3c9e1e34c25c6b3cc096ff2a597" name="a1d9fc3c9e1e34c25c6b3cc096ff2a597"></a>
+static <a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><b>DefaultFileLocator</b> (<a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sCurAbsoluteFile, <a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sIncludeFile, <a class="el" href="#a5466b323aa93219d02120f1dc285c440">xiiPreprocessor::IncludeType</a> incType, <a class="el" href="../../d4/dbb/classxii_string_builder.html">xiiStringBuilder</a> &amp;out_sAbsoluteFilePath)</td></tr>
+<tr class="separator:a1d9fc3c9e1e34c25c6b3cc096ff2a597"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40582ef0d213f2bc4ea1e3328de7c455" id="r_a40582ef0d213f2bc4ea1e3328de7c455"><td class="memItemLeft" align="right" valign="top"><a id="a40582ef0d213f2bc4ea1e3328de7c455" name="a40582ef0d213f2bc4ea1e3328de7c455"></a>
+static <a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><b>DefaultFileOpen</b> (<a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sAbsoluteFile, <a class="el" href="../../dc/da4/classxii_dynamic_array.html">xiiDynamicArray</a>&lt; xiiUInt8 &gt; &amp;ref_fileContent, <a class="el" href="../../d5/da2/classxii_timestamp.html">xiiTimestamp</a> &amp;out_fileModification)</td></tr>
+<tr class="separator:a40582ef0d213f2bc4ea1e3328de7c455"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:af7fbdb7502c0e6694352f23a1eb29735" id="r_af7fbdb7502c0e6694352f23a1eb29735"><td class="memItemLeft" align="right" valign="top"><a id="af7fbdb7502c0e6694352f23a1eb29735" name="af7fbdb7502c0e6694352f23a1eb29735"></a>
+<a class="el" href="../../dc/d22/classxii_event.html">xiiEvent</a>&lt; const <a class="el" href="../../da/ddd/structxii_preprocessor_1_1_processing_event.html">ProcessingEvent</a> &amp; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_ProcessingEvents</b></td></tr>
+<tr class="memdesc:af7fbdb7502c0e6694352f23a1eb29735"><td class="mdescLeft">&#160;</td><td class="mdescRight">Broadcasts events during the processing. This can be used to create detailed callstacks when an error is encountered. It also broadcasts errors and warnings with more detailed information than the log interface allows. <br /></td></tr>
+<tr class="separator:af7fbdb7502c0e6694352f23a1eb29735"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p><a class="el" href="../../db/d38/classxii_preprocessor.html" title="xiiPreprocessor implements a standard C preprocessor. It can be used to pre-process files to get the ...">xiiPreprocessor</a> implements a standard <a class="el" href="../../dd/de0/class_c.html">C</a> preprocessor. It can be used to pre-process files to get the output after macro expansion and #ifdef handling. </p>
+<p>For a detailed documentation about the <a class="el" href="../../dd/de0/class_c.html">C</a> preprocessor, see <a href="https://gcc.gnu.org/onlinedocs/cpp/">https://gcc.gnu.org/onlinedocs/cpp/</a></p>
+<p>This class implements all standard features:</p><ul>
+<li>object and function macros</li>
+<li>Full evaluation of if, #ifdef etc. including mathematical operations such as if <a class="el" href="../../d8/d4f/class_a.html">A</a> &gt; 42</li>
+<li>Parameter stringification</li>
+<li>Parameter concatenation</li>
+<li><b>LINE</b> and <b>FILE</b> macros</li>
+<li>Fully correct #line evaluation for error output</li>
+<li>Correct handling of <b>VA_ARGS</b></li>
+<li>#include handling</li>
+<li>#pragma once</li>
+<li>#warning and #error for custom failure messages </li>
+</ul>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="ad21c37942e6b309ab2d921d3b288d4a0" name="ad21c37942e6b309ab2d921d3b288d4a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad21c37942e6b309ab2d921d3b288d4a0">&#9670;&#160;</a></span>FileLocatorCB</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#ad21c37942e6b309ab2d921d3b288d4a0">xiiPreprocessor::FileLocatorCB</a> = <a class="el" href="../../dc/d84/structxii_delegate.html">xiiDelegate</a>&lt;<a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a>(<a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sCurAbsoluteFile, <a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sIncludeFile, <a class="el" href="#a5466b323aa93219d02120f1dc285c440">IncludeType</a> IncType, <a class="el" href="../../d4/dbb/classxii_string_builder.html">xiiStringBuilder</a>&amp; out_sAbsoluteFilePath)&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This type of callback is used to retrieve the absolute path of the <em>szIncludeFile</em> when #included inside <em>szCurAbsoluteFile</em>. </p>
+<p>Note that you should ensure that <em>out_sAbsoluteFilePath</em> is always identical (including casing and path slashes) when it is supposed to point to the same file, as this exact name is used for file lookup (and therefore also file caching). If it is not identical, file caching will not work, and on different OSes the file may be found or not. </p>
+
+</div>
+</div>
+<a id="acb2a15381b13fc74d13e23f091f8548b" name="acb2a15381b13fc74d13e23f091f8548b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb2a15381b13fc74d13e23f091f8548b">&#9670;&#160;</a></span>PassThroughUnknownCmdCB</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#acb2a15381b13fc74d13e23f091f8548b">xiiPreprocessor::PassThroughUnknownCmdCB</a> = <a class="el" href="../../dc/d84/structxii_delegate.html">xiiDelegate</a>&lt;bool(<a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sUnknownCommand)&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Every time an unknown command (e.g. '#version') is encountered, this callback is used to determine whether the command shall be passed through. </p>
+<p>If the callback returns false, an error is generated and parsing fails. The callback thus acts as a whitelist for all commands that shall be passed through. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Enumeration Documentation</h2>
+<a id="a5466b323aa93219d02120f1dc285c440" name="a5466b323aa93219d02120f1dc285c440"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5466b323aa93219d02120f1dc285c440">&#9670;&#160;</a></span>IncludeType</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="#a5466b323aa93219d02120f1dc285c440">xiiPreprocessor::IncludeType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Describes the type of #include that was encountered during preprocessing. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a5466b323aa93219d02120f1dc285c440add2663beedd14caf64de08c3bbff67d2" name="a5466b323aa93219d02120f1dc285c440add2663beedd14caf64de08c3bbff67d2"></a>MainFile&#160;</td><td class="fielddoc"><p>This is used for the very first access to the main source file. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a5466b323aa93219d02120f1dc285c440acd5ef52c0d81c523794630162ba4c32a" name="a5466b323aa93219d02120f1dc285c440acd5ef52c0d81c523794630162ba4c32a"></a>RelativeInclude&#160;</td><td class="fielddoc"><p>An #include "file" has been encountered. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a5466b323aa93219d02120f1dc285c440a4567afb135f83dee498bc0efb40ade9a" name="a5466b323aa93219d02120f1dc285c440a4567afb135f83dee498bc0efb40ade9a"></a>GlobalInclude&#160;</td><td class="fielddoc"><p>An #include &lt;file&gt; has been encountered. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a8d2b0fe6b3cd5ed07ba982edb5a8b0e9" name="a8d2b0fe6b3cd5ed07ba982edb5a8b0e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8d2b0fe6b3cd5ed07ba982edb5a8b0e9">&#9670;&#160;</a></span>AddCustomDefine()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a> xiiPreprocessor::AddCustomDefine </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a></td>          <td class="paramname"><span class="paramname"><em>sDefinition</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Adds a #define to the preprocessor, even before any file is processed. </p>
+<p>This allows to have global macros that are always defined for all processed files, such as the current platform etc. <em>szDefinition</em> must be in the form of the text that follows a #define statement. So to define the macro "WIN32", just pass that string. You can define any macro that could also be defined in the source files.</p>
+<p>If the definition is invalid, XII_FAILURE is returned. Also the preprocessor might end up in an invalid state, so using it any further might fail (including crashing). </p>
+
+</div>
+</div>
+<a id="a93b71f8448ef611d1675debbca8904a4" name="a93b71f8448ef611d1675debbca8904a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a93b71f8448ef611d1675debbca8904a4">&#9670;&#160;</a></span>Process() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a> xiiPreprocessor::Process </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a></td>          <td class="paramname"><span class="paramname"><em>sMainFile</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d4/dbb/classxii_string_builder.html">xiiStringBuilder</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>ref_sOutput</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>bKeepComments</em></span><span class="paramdefsep"> = </span><span class="paramdefval">true</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>bRemoveRedundantWhitespace</em></span><span class="paramdefsep"> = </span><span class="paramdefval">false</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>bInsertLine</em></span><span class="paramdefsep"> = </span><span class="paramdefval">false</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Processes the given file and returns the result as a string. </p>
+<p>This function creates a string from the tokenized result. If <em>bKeepComments</em> is true, all block and line comments are included in the output string, otherwise they are removed. </p>
+
+</div>
+</div>
+<a id="a0fb750c2d84a820e60a278cd6ccea0cf" name="a0fb750c2d84a820e60a278cd6ccea0cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0fb750c2d84a820e60a278cd6ccea0cf">&#9670;&#160;</a></span>Process() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a> xiiPreprocessor::Process </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a></td>          <td class="paramname"><span class="paramname"><em>sMainFile</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../dc/da9/classxii_hybrid_array.html">xiiTokenParseUtils::TokenStream</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>ref_tokenOutput</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Processes the given file and returns the result as a stream of tokens. </p>
+<p>This function is useful when you want to further process the output afterwards and thus need it in a tokenized form anyway. </p>
+
+</div>
+</div>
+<a id="a72f4072a75f7a68b7ce95ee56cb3d93e" name="a72f4072a75f7a68b7ce95ee56cb3d93e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a72f4072a75f7a68b7ce95ee56cb3d93e">&#9670;&#160;</a></span>SetCustomFileCache()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void xiiPreprocessor::SetCustomFileCache </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/d45/classxii_tokenized_file_cache.html">xiiTokenizedFileCache</a> *</td>          <td class="paramname"><span class="paramname"><em>pFileCache</em></span><span class="paramdefsep"> = </span><span class="paramdefval">nullptr</span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Allows to specify a custom cache object that should be used for storing the tokenized result of files. </p>
+<p>This allows to share one cache across multiple instances of <a class="el" href="../../db/d38/classxii_preprocessor.html" title="xiiPreprocessor implements a standard C preprocessor. It can be used to pre-process files to get the ...">xiiPreprocessor</a> and across time. E.g. it makes it possible to prevent having to read and tokenize include files that are referenced often. </p>
+
+</div>
+</div>
+<a id="a7abc99414b7d3aecf685bbf273c45a50" name="a7abc99414b7d3aecf685bbf273c45a50"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7abc99414b7d3aecf685bbf273c45a50">&#9670;&#160;</a></span>SetFileLocatorFunction()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void xiiPreprocessor::SetFileLocatorFunction </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#ad21c37942e6b309ab2d921d3b288d4a0">FileLocatorCB</a></td>          <td class="paramname"><span class="paramname"><em>locateAbsFileCB</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the callback that is needed to locate an input file. </p>
+<p>The default file locator will assume that the main source file and all files #included in angle brackets can be opened without modification. Files #included in "" will be appended as relative paths to the path of the file they appeared in. </p>
+
+</div>
+</div>
+<a id="a3608ef3fb7490e6b61b4a47b652a32a0" name="a3608ef3fb7490e6b61b4a47b652a32a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3608ef3fb7490e6b61b4a47b652a32a0">&#9670;&#160;</a></span>SetFileOpenFunction()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void xiiPreprocessor::SetFileOpenFunction </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#a2c0ba26d5a348120e5f71fcd2ccc91f5">FileOpenCB</a></td>          <td class="paramname"><span class="paramname"><em>openAbsFileCB</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the callback that is needed to read input data. </p>
+<p>The default file open function will just try to open files via <a class="el" href="../../d6/de4/classxii_file_reader.html" title="The default class to use to read data from a file, implements the xiiStreamReader interface.">xiiFileReader</a>. </p>
+
+</div>
+</div>
+<a id="a8969fb1f9a7dda6037b00bb62f3f51ff" name="a8969fb1f9a7dda6037b00bb62f3f51ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8969fb1f9a7dda6037b00bb62f3f51ff">&#9670;&#160;</a></span>SetLogInterface()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void xiiPreprocessor::SetLogInterface </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d6/d6b/classxii_log_interface.html">xiiLogInterface</a> *</td>          <td class="paramname"><span class="paramname"><em>pLog</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>All error output is sent to the given <a class="el" href="../../d6/d6b/classxii_log_interface.html" title="Base class for all logging classes.">xiiLogInterface</a>. </p>
+<p>Note that when the preprocessor encounters any error, it will stop immediately and usually no output is generated. However, there are also a few cases where only a warning is generated, in this case preprocessing will continue without problems.</p>
+<p>Additionally errors and warnings are also broadcast through m_ProcessingEvents. So if you want to output more detailed information, that method should be preferred, because the events carry more information about the current file and line number etc. </p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li>/home/runner/work/XII/XII/Source/Engine/Foundation/CodeUtils/<a class="el" href="../../d1/d57/_preprocessor_8h_source.html">Preprocessor.h</a></li>
+<li>/home/runner/work/XII/XII/Source/Engine/Foundation/CodeUtils/Implementation/<b>Conditions.cpp</b></li>
+<li>/home/runner/work/XII/XII/Source/Engine/Foundation/CodeUtils/Implementation/<b>Defines.cpp</b></li>
+<li>/home/runner/work/XII/XII/Source/Engine/Foundation/CodeUtils/Implementation/<b>Expand.cpp</b></li>
+<li>/home/runner/work/XII/XII/Source/Engine/Foundation/CodeUtils/Implementation/<b>FileHandling.cpp</b></li>
+<li>/home/runner/work/XII/XII/Source/Engine/Foundation/CodeUtils/Implementation/<b>Macros.cpp</b></li>
+<li>/home/runner/work/XII/XII/Source/Engine/Foundation/CodeUtils/Implementation/<b>Preprocessor.cpp</b></li>
+<li>/home/runner/work/XII/XII/Source/Engine/Foundation/CodeUtils/Implementation/<b>PreprocessorParseHelper.cpp</b></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../db/d38/classxii_preprocessor.html">xiiPreprocessor</a></li>
+    <li class="footer">Generated on Mon Jul 1 2024 23:53:15 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+  </ul>
+</div>
+</body>
+</html>

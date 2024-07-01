@@ -1,0 +1,524 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.11.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<!-- BEGIN opengraph metadata -->
+<meta property="og:title" content="XII" />
+<meta property="og:image" content="../../XII-Logo.png" />
+<meta property="og:description" content="An advanced high-performance simulation engine." />
+<meta property="og:url" content="https://www.xiitechnologies.com" />
+<!-- END opengraph metadata -->
+<!-- BEGIN twitter metadata -->
+<meta name="twitter:image:src" content="../../XII-Logo.png" />
+<meta name="twitter:title" content="XII" />
+<meta name="twitter:description" content="An advanced high-performance simulation engine." />
+<!-- END twitter metadata -->
+<title>XII: xiiOSFile Class Reference</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link rel="icon" type="image/svg+xml" href="logo.drawio.svg"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="../../toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../custom.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<a href="https://github.com/jothepro/doxygen-awesome-css" class="github-corner" title="View source on GitHub" target="_blank" rel="noopener noreferrer">
+    <svg viewBox="0 0 250 250" width="40" height="40" style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+    <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="../../XII-Logo.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">XII
+   &#160;<span id="projectnumber">1.0.0</span>
+   </div>
+   <div id="projectbrief">A high-performance simulation engine.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(1); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.html','Search',true);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('da/d95/classxii_o_s_file.html','../../'); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#pub-types">Public Types</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="../../d2/de1/classxii_o_s_file-members.html">List of all members</a>  </div>
+  <div class="headertitle"><div class="title">xiiOSFile Class Reference</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>This is an abstraction for the most important file operations.  
+ <a href="#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="../../dd/d98/_o_s_file_8h_source.html">OSFile.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/db7/structxii_o_s_file_1_1_event_data.html">EventData</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The data that is sent through the event interface.  <a href="../../db/db7/structxii_o_s_file_1_1_event_data.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d5a/structxii_o_s_file_1_1_event_type.html">EventType</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Describes the types of events that <a class="el" href="../../da/d95/classxii_o_s_file.html" title="This is an abstraction for the most important file operations.">xiiOSFile</a> sends.  <a href="../../df/d5a/structxii_o_s_file_1_1_event_type.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a62c66587b2f9672cecf7a4901d5c4600" id="r_a62c66587b2f9672cecf7a4901d5c4600"><td class="memItemLeft" align="right" valign="top"><a id="a62c66587b2f9672cecf7a4901d5c4600" name="a62c66587b2f9672cecf7a4901d5c4600"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>Event</b> = <a class="el" href="../../dc/d22/classxii_event.html">xiiEvent</a>&lt;const <a class="el" href="../../db/db7/structxii_o_s_file_1_1_event_data.html">EventData</a>&amp;, <a class="el" href="../../dd/d52/classxii_mutex.html">xiiMutex</a>&gt;</td></tr>
+<tr class="separator:a62c66587b2f9672cecf7a4901d5c4600"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:aeaf0f76784ea8dcf94dc58fc0ffdf05d" id="r_aeaf0f76784ea8dcf94dc58fc0ffdf05d"><td class="memItemLeft" align="right" valign="top"><a id="aeaf0f76784ea8dcf94dc58fc0ffdf05d" name="aeaf0f76784ea8dcf94dc58fc0ffdf05d"></a>
+<a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Open</b> (<a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sFile, <a class="el" href="../../d0/dec/structxii_file_open_mode.html#aad81097e9a792e7a5fd53df5ccd00a6f">xiiFileOpenMode::Enum</a> openMode, <a class="el" href="../../dc/df4/structxii_file_share_mode.html#a853af051a2b930d18b9d14f78c09e5e1">xiiFileShareMode::Enum</a> fileShareMode=<a class="el" href="../../dc/df4/structxii_file_share_mode.html#a853af051a2b930d18b9d14f78c09e5e1ad7c84f40ef4848331d4f6bb2a10738c9">xiiFileShareMode::Default</a>)</td></tr>
+<tr class="memdesc:aeaf0f76784ea8dcf94dc58fc0ffdf05d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Opens a file for reading or writing. Returns XII_SUCCESS if the file could be opened successfully. <br /></td></tr>
+<tr class="separator:aeaf0f76784ea8dcf94dc58fc0ffdf05d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba1688c4744562bdb24ccf1f1dd7902c" id="r_aba1688c4744562bdb24ccf1f1dd7902c"><td class="memItemLeft" align="right" valign="top"><a id="aba1688c4744562bdb24ccf1f1dd7902c" name="aba1688c4744562bdb24ccf1f1dd7902c"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsOpen</b> () const</td></tr>
+<tr class="memdesc:aba1688c4744562bdb24ccf1f1dd7902c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if a file is currently open. <br /></td></tr>
+<tr class="separator:aba1688c4744562bdb24ccf1f1dd7902c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa11016f3baf00ca21b4090a3f254bd1b" id="r_aa11016f3baf00ca21b4090a3f254bd1b"><td class="memItemLeft" align="right" valign="top"><a id="aa11016f3baf00ca21b4090a3f254bd1b" name="aa11016f3baf00ca21b4090a3f254bd1b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Close</b> ()</td></tr>
+<tr class="memdesc:aa11016f3baf00ca21b4090a3f254bd1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Closes the file, if it is currently opened. <br /></td></tr>
+<tr class="separator:aa11016f3baf00ca21b4090a3f254bd1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aefa4c0d37ce378d816ed08fdcb231da4" id="r_aefa4c0d37ce378d816ed08fdcb231da4"><td class="memItemLeft" align="right" valign="top"><a id="aefa4c0d37ce378d816ed08fdcb231da4" name="aefa4c0d37ce378d816ed08fdcb231da4"></a>
+<a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Write</b> (const void *pBuffer, xiiUInt64 uiBytes)</td></tr>
+<tr class="memdesc:aefa4c0d37ce378d816ed08fdcb231da4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes the given number of bytes from the buffer into the file. Returns true if all data was successfully written. <br /></td></tr>
+<tr class="separator:aefa4c0d37ce378d816ed08fdcb231da4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a931370575cd781afdc6a7f28a2d4c25d" id="r_a931370575cd781afdc6a7f28a2d4c25d"><td class="memItemLeft" align="right" valign="top"><a id="a931370575cd781afdc6a7f28a2d4c25d" name="a931370575cd781afdc6a7f28a2d4c25d"></a>
+xiiUInt64&#160;</td><td class="memItemRight" valign="bottom"><b>Read</b> (void *pBuffer, xiiUInt64 uiBytes)</td></tr>
+<tr class="memdesc:a931370575cd781afdc6a7f28a2d4c25d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads up to the given number of bytes from the file. Returns the actual number of bytes that was read. <br /></td></tr>
+<tr class="separator:a931370575cd781afdc6a7f28a2d4c25d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a881d1644aad44ce96caa186a623faf8e" id="r_a881d1644aad44ce96caa186a623faf8e"><td class="memItemLeft" align="right" valign="top"><a id="a881d1644aad44ce96caa186a623faf8e" name="a881d1644aad44ce96caa186a623faf8e"></a>
+xiiUInt64&#160;</td><td class="memItemRight" valign="bottom"><b>ReadAll</b> (<a class="el" href="../../dc/da4/classxii_dynamic_array.html">xiiDynamicArray</a>&lt; xiiUInt8 &gt; &amp;out_fileContent)</td></tr>
+<tr class="memdesc:a881d1644aad44ce96caa186a623faf8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads the entire file content into the given array. <br /></td></tr>
+<tr class="separator:a881d1644aad44ce96caa186a623faf8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b83b378d4553178dcfbc8045a056ddd" id="r_a7b83b378d4553178dcfbc8045a056ddd"><td class="memItemLeft" align="right" valign="top"><a id="a7b83b378d4553178dcfbc8045a056ddd" name="a7b83b378d4553178dcfbc8045a056ddd"></a>
+<a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetOpenFileName</b> () const</td></tr>
+<tr class="memdesc:a7b83b378d4553178dcfbc8045a056ddd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the name of the file that is currently opened. Returns an empty string, if no file is open. <br /></td></tr>
+<tr class="separator:a7b83b378d4553178dcfbc8045a056ddd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c2f4e5ef26b77d66a8dd184e44337b2" id="r_a9c2f4e5ef26b77d66a8dd184e44337b2"><td class="memItemLeft" align="right" valign="top"><a id="a9c2f4e5ef26b77d66a8dd184e44337b2" name="a9c2f4e5ef26b77d66a8dd184e44337b2"></a>
+xiiUInt64&#160;</td><td class="memItemRight" valign="bottom"><b>GetFilePosition</b> () const</td></tr>
+<tr class="memdesc:a9c2f4e5ef26b77d66a8dd184e44337b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the position in the file at which read/write operations will occur. <br /></td></tr>
+<tr class="separator:a9c2f4e5ef26b77d66a8dd184e44337b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a5b90401342c6d70d76340c94a91dc4" id="r_a0a5b90401342c6d70d76340c94a91dc4"><td class="memItemLeft" align="right" valign="top"><a id="a0a5b90401342c6d70d76340c94a91dc4" name="a0a5b90401342c6d70d76340c94a91dc4"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetFilePosition</b> (xiiInt64 iDistance, <a class="el" href="../../da/dc9/structxii_file_seek_mode.html#aa238d26443e31d26362e3c7d14b701b5">xiiFileSeekMode::Enum</a> pos) const</td></tr>
+<tr class="memdesc:a0a5b90401342c6d70d76340c94a91dc4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the position where in the file to read/write next. <br /></td></tr>
+<tr class="separator:a0a5b90401342c6d70d76340c94a91dc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3b58bf9d7b2711165fd22a8cc22b8c2" id="r_af3b58bf9d7b2711165fd22a8cc22b8c2"><td class="memItemLeft" align="right" valign="top"><a id="af3b58bf9d7b2711165fd22a8cc22b8c2" name="af3b58bf9d7b2711165fd22a8cc22b8c2"></a>
+xiiUInt64&#160;</td><td class="memItemRight" valign="bottom"><b>GetFileSize</b> () const</td></tr>
+<tr class="memdesc:af3b58bf9d7b2711165fd22a8cc22b8c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current total size of the file. <br /></td></tr>
+<tr class="separator:af3b58bf9d7b2711165fd22a8cc22b8c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abad1a5bd27428fc4576cf1960a44a4bb" id="r_abad1a5bd27428fc4576cf1960a44a4bb"><td class="memItemLeft" align="right" valign="top"><a id="abad1a5bd27428fc4576cf1960a44a4bb" name="abad1a5bd27428fc4576cf1960a44a4bb"></a>
+const xiiOSFileData &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetFileData</b> () const</td></tr>
+<tr class="memdesc:abad1a5bd27428fc4576cf1960a44a4bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">This will return the platform specific file data (handles etc.), if you really want to be able to wreak havoc. <br /></td></tr>
+<tr class="separator:abad1a5bd27428fc4576cf1960a44a4bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a119478d3ed9b06762cbcfc54be300ae3" id="r_a119478d3ed9b06762cbcfc54be300ae3"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="../../df/dfb/structxii_hybrid_string.html">xiiString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a119478d3ed9b06762cbcfc54be300ae3">GetCurrentWorkingDirectory</a> ()</td></tr>
+<tr class="memdesc:a119478d3ed9b06762cbcfc54be300ae3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the processes current working directory (CWD).  <br /></td></tr>
+<tr class="separator:a119478d3ed9b06762cbcfc54be300ae3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4abe20683c824d29780bbede888a9ef" id="r_af4abe20683c824d29780bbede888a9ef"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="../../df/dfb/structxii_hybrid_string.html">xiiString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af4abe20683c824d29780bbede888a9ef">MakePathAbsoluteWithCWD</a> (<a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sPath)</td></tr>
+<tr class="memdesc:af4abe20683c824d29780bbede888a9ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">If sPath is a relative path, this function prepends <a class="el" href="#a119478d3ed9b06762cbcfc54be300ae3" title="Returns the processes current working directory (CWD).">GetCurrentWorkingDirectory()</a>.  <br /></td></tr>
+<tr class="separator:af4abe20683c824d29780bbede888a9ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57e1ed06c65f9b02826a1679e38cb410" id="r_a57e1ed06c65f9b02826a1679e38cb410"><td class="memItemLeft" align="right" valign="top"><a id="a57e1ed06c65f9b02826a1679e38cb410" name="a57e1ed06c65f9b02826a1679e38cb410"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>ExistsFile</b> (<a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sFile)</td></tr>
+<tr class="memdesc:a57e1ed06c65f9b02826a1679e38cb410"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether the given file exists. <br /></td></tr>
+<tr class="separator:a57e1ed06c65f9b02826a1679e38cb410"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80f928e86d0583927af7d12ffcb01cb8" id="r_a80f928e86d0583927af7d12ffcb01cb8"><td class="memItemLeft" align="right" valign="top"><a id="a80f928e86d0583927af7d12ffcb01cb8" name="a80f928e86d0583927af7d12ffcb01cb8"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>ExistsDirectory</b> (<a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sDirectory)</td></tr>
+<tr class="memdesc:a80f928e86d0583927af7d12ffcb01cb8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether the given directory exists. <br /></td></tr>
+<tr class="separator:a80f928e86d0583927af7d12ffcb01cb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ea7f6137265a91dbe23a0cd8e94d59c" id="r_a2ea7f6137265a91dbe23a0cd8e94d59c"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2ea7f6137265a91dbe23a0cd8e94d59c">FindFreeFilename</a> (<a class="el" href="../../d4/dbb/classxii_string_builder.html">xiiStringBuilder</a> &amp;inout_sPath, <a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sSuffix=&quot;-&quot;)</td></tr>
+<tr class="memdesc:a2ea7f6137265a91dbe23a0cd8e94d59c"><td class="mdescLeft">&#160;</td><td class="mdescRight">If the given file already exists, determines a file path that doesn't exist yet.  <br /></td></tr>
+<tr class="separator:a2ea7f6137265a91dbe23a0cd8e94d59c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1291a933c302af8e0a7b22bf1c3dacb5" id="r_a1291a933c302af8e0a7b22bf1c3dacb5"><td class="memItemLeft" align="right" valign="top"><a id="a1291a933c302af8e0a7b22bf1c3dacb5" name="a1291a933c302af8e0a7b22bf1c3dacb5"></a>
+static <a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><b>DeleteFile</b> (<a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sFile)</td></tr>
+<tr class="memdesc:a1291a933c302af8e0a7b22bf1c3dacb5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deletes the given file. Returns XII_SUCCESS, if the file was deleted or did not exist in the first place. Returns XII_FAILURE. <br /></td></tr>
+<tr class="separator:a1291a933c302af8e0a7b22bf1c3dacb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a971e01eeeedaba4564f83b48352ab217" id="r_a971e01eeeedaba4564f83b48352ab217"><td class="memItemLeft" align="right" valign="top"><a id="a971e01eeeedaba4564f83b48352ab217" name="a971e01eeeedaba4564f83b48352ab217"></a>
+static <a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><b>CreateDirectoryStructure</b> (<a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sDirectory)</td></tr>
+<tr class="memdesc:a971e01eeeedaba4564f83b48352ab217"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates the given directory structure (meaning all directories in the path, that do not exist). Returns false, if any directory could not be created. <br /></td></tr>
+<tr class="separator:a971e01eeeedaba4564f83b48352ab217"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b314a136acf1adcadd1427ab1d3881f" id="r_a6b314a136acf1adcadd1427ab1d3881f"><td class="memItemLeft" align="right" valign="top"><a id="a6b314a136acf1adcadd1427ab1d3881f" name="a6b314a136acf1adcadd1427ab1d3881f"></a>
+static <a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><b>MoveFileOrDirectory</b> (<a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sFrom, <a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sTo)</td></tr>
+<tr class="memdesc:a6b314a136acf1adcadd1427ab1d3881f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Renames / Moves an existing directory. The file / directory at sFrom must exist. The parent directory of sTo must exist. Returns XII_FAILURE if the move failed. <br /></td></tr>
+<tr class="separator:a6b314a136acf1adcadd1427ab1d3881f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51ad16a700bba5ffa5fbc8a663056128" id="r_a51ad16a700bba5ffa5fbc8a663056128"><td class="memItemLeft" align="right" valign="top"><a id="a51ad16a700bba5ffa5fbc8a663056128" name="a51ad16a700bba5ffa5fbc8a663056128"></a>
+static <a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><b>CopyFile</b> (<a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sSource, <a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sDestination)</td></tr>
+<tr class="memdesc:a51ad16a700bba5ffa5fbc8a663056128"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies the source file into the destination file. <br /></td></tr>
+<tr class="separator:a51ad16a700bba5ffa5fbc8a663056128"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc699c70c70c4ed0ad6e9375ebff36d4" id="r_adc699c70c70c4ed0ad6e9375ebff36d4"><td class="memItemLeft" align="right" valign="top"><a id="adc699c70c70c4ed0ad6e9375ebff36d4" name="adc699c70c70c4ed0ad6e9375ebff36d4"></a>
+static <a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetFileStats</b> (<a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sFileOrFolder, <a class="el" href="../../d6/dd0/structxii_file_stats.html">xiiFileStats</a> &amp;out_stats)</td></tr>
+<tr class="memdesc:adc699c70c70c4ed0ad6e9375ebff36d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the stats about the given file or folder. Returns false, if the stats could not be determined. <br /></td></tr>
+<tr class="separator:adc699c70c70c4ed0ad6e9375ebff36d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62498a169b9abcc9e890ff06e4f674ba" id="r_a62498a169b9abcc9e890ff06e4f674ba"><td class="memItemLeft" align="right" valign="top"><a id="a62498a169b9abcc9e890ff06e4f674ba" name="a62498a169b9abcc9e890ff06e4f674ba"></a>
+static <a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetFileCasing</b> (<a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sFileOrFolder, <a class="el" href="../../d4/dbb/classxii_string_builder.html">xiiStringBuilder</a> &amp;out_sCorrectSpelling)</td></tr>
+<tr class="memdesc:a62498a169b9abcc9e890ff06e4f674ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Useful on systems that are not strict about the casing of file names. Determines the correct name of a file. <br /></td></tr>
+<tr class="separator:a62498a169b9abcc9e890ff06e4f674ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1c71483a61d47ccf45699f35de9b3aa" id="r_ab1c71483a61d47ccf45699f35de9b3aa"><td class="memItemLeft" align="right" valign="top"><a id="ab1c71483a61d47ccf45699f35de9b3aa" name="ab1c71483a61d47ccf45699f35de9b3aa"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>GatherAllItemsInFolder</b> (<a class="el" href="../../dc/da4/classxii_dynamic_array.html">xiiDynamicArray</a>&lt; <a class="el" href="../../d6/dd0/structxii_file_stats.html">xiiFileStats</a> &gt; &amp;out_itemList, <a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sFolder, <a class="el" href="../../d7/d55/structxii_bitflags.html">xiiBitflags</a>&lt; <a class="el" href="../../d9/da1/structxii_file_system_iterator_flags.html">xiiFileSystemIteratorFlags</a> &gt; flags=xiiFileSystemIteratorFlags::Default)</td></tr>
+<tr class="memdesc:ab1c71483a61d47ccf45699f35de9b3aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the <a class="el" href="../../d6/dd0/structxii_file_stats.html" title="Holds the stats for a file.">xiiFileStats</a> for all files and folders in the given folder. <br /></td></tr>
+<tr class="separator:ab1c71483a61d47ccf45699f35de9b3aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16f6144f152431979aa8a29a41ec3f7a" id="r_a16f6144f152431979aa8a29a41ec3f7a"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a16f6144f152431979aa8a29a41ec3f7a">CopyFolder</a> (<a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sSourceFolder, <a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sDestinationFolder, <a class="el" href="../../dc/da4/classxii_dynamic_array.html">xiiDynamicArray</a>&lt; <a class="el" href="../../df/dfb/structxii_hybrid_string.html">xiiString</a> &gt; *out_pFilesCopied=nullptr)</td></tr>
+<tr class="memdesc:a16f6144f152431979aa8a29a41ec3f7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies <em>sSourceFolder</em> to <em>sDestinationFolder</em>. Overwrites existing files.  <br /></td></tr>
+<tr class="separator:a16f6144f152431979aa8a29a41ec3f7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2bb12fe1e4d9af6b8f3aafba6c97d03" id="r_ac2bb12fe1e4d9af6b8f3aafba6c97d03"><td class="memItemLeft" align="right" valign="top"><a id="ac2bb12fe1e4d9af6b8f3aafba6c97d03" name="ac2bb12fe1e4d9af6b8f3aafba6c97d03"></a>
+static <a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><b>DeleteFolder</b> (<a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sFolder)</td></tr>
+<tr class="memdesc:ac2bb12fe1e4d9af6b8f3aafba6c97d03"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deletes all files recursively in <em>sFolder</em>. <br /></td></tr>
+<tr class="separator:ac2bb12fe1e4d9af6b8f3aafba6c97d03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89208e6c4950710c9713ad9c9913d93a" id="r_a89208e6c4950710c9713ad9c9913d93a"><td class="memItemLeft" align="right" valign="top"><a id="a89208e6c4950710c9713ad9c9913d93a" name="a89208e6c4950710c9713ad9c9913d93a"></a>
+static <a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetApplicationPath</b> ()</td></tr>
+<tr class="memdesc:a89208e6c4950710c9713ad9c9913d93a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the full path to the application binary. <br /></td></tr>
+<tr class="separator:a89208e6c4950710c9713ad9c9913d93a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a711646d84584fa4275cd01367f928803" id="r_a711646d84584fa4275cd01367f928803"><td class="memItemLeft" align="right" valign="top"><a id="a711646d84584fa4275cd01367f928803" name="a711646d84584fa4275cd01367f928803"></a>
+static <a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetApplicationDirectory</b> ()</td></tr>
+<tr class="memdesc:a711646d84584fa4275cd01367f928803"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the path to the directory in which the application binary is located. <br /></td></tr>
+<tr class="separator:a711646d84584fa4275cd01367f928803"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adfde473e9550f3e0a4192d1b96d4c42a" id="r_adfde473e9550f3e0a4192d1b96d4c42a"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../df/dfb/structxii_hybrid_string.html">xiiString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adfde473e9550f3e0a4192d1b96d4c42a">GetUserDataFolder</a> (<a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sSubFolder={})</td></tr>
+<tr class="memdesc:adfde473e9550f3e0a4192d1b96d4c42a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the folder into which user data may be safely written. Append a sub-folder for your application.  <br /></td></tr>
+<tr class="separator:adfde473e9550f3e0a4192d1b96d4c42a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d878860c251454e27488c165a7e39c0" id="r_a4d878860c251454e27488c165a7e39c0"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../df/dfb/structxii_hybrid_string.html">xiiString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4d878860c251454e27488c165a7e39c0">GetTempDataFolder</a> (<a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sSubFolder={})</td></tr>
+<tr class="memdesc:a4d878860c251454e27488c165a7e39c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the folder into which temp data may be written.  <br /></td></tr>
+<tr class="separator:a4d878860c251454e27488c165a7e39c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab36596cc5e694e6f53f6d52d5475565f" id="r_ab36596cc5e694e6f53f6d52d5475565f"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../df/dfb/structxii_hybrid_string.html">xiiString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab36596cc5e694e6f53f6d52d5475565f">GetUserDocumentsFolder</a> (<a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sSubFolder={})</td></tr>
+<tr class="memdesc:ab36596cc5e694e6f53f6d52d5475565f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the folder into which the user may want to store documents. Append a sub-folder for your application.  <br /></td></tr>
+<tr class="separator:ab36596cc5e694e6f53f6d52d5475565f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61bbdf483cb288f5be3f85bdd2068791" id="r_a61bbdf483cb288f5be3f85bdd2068791"><td class="memItemLeft" align="right" valign="top"><a id="a61bbdf483cb288f5be3f85bdd2068791" name="a61bbdf483cb288f5be3f85bdd2068791"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>AddEventHandler</b> (<a class="el" href="../../d0/d7f/classxii_event_base.html#ada90d4faae8102fb84947a77720e2f70">Event::Handler</a> handler)</td></tr>
+<tr class="memdesc:a61bbdf483cb288f5be3f85bdd2068791"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allows to register a function as an event receiver. All receivers will be notified in the order that they registered. <br /></td></tr>
+<tr class="separator:a61bbdf483cb288f5be3f85bdd2068791"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afcd493c87936716bfc9080d50376f255" id="r_afcd493c87936716bfc9080d50376f255"><td class="memItemLeft" align="right" valign="top"><a id="afcd493c87936716bfc9080d50376f255" name="afcd493c87936716bfc9080d50376f255"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>RemoveEventHandler</b> (<a class="el" href="../../d0/d7f/classxii_event_base.html#ada90d4faae8102fb84947a77720e2f70">Event::Handler</a> handler)</td></tr>
+<tr class="memdesc:afcd493c87936716bfc9080d50376f255"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unregisters a previously registered receiver. It is an error to unregister a receiver that was not registered. <br /></td></tr>
+<tr class="separator:afcd493c87936716bfc9080d50376f255"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>This is an abstraction for the most important file operations. </p>
+<p>Instances of <a class="el" href="../../da/d95/classxii_o_s_file.html" title="This is an abstraction for the most important file operations.">xiiOSFile</a> can be used for reading and writing files. All paths must be absolute paths, relative paths and current working directories are not supported, since that cannot be guaranteed to work equally on all platforms under all circumstances. <a class="el" href="../../d8/d4f/class_a.html">A</a> few static functions allow to query the most important data about files, to delete files and create directories. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a16f6144f152431979aa8a29a41ec3f7a" name="a16f6144f152431979aa8a29a41ec3f7a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a16f6144f152431979aa8a29a41ec3f7a">&#9670;&#160;</a></span>CopyFolder()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a> xiiOSFile::CopyFolder </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a></td>          <td class="paramname"><span class="paramname"><em>sSourceFolder</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a></td>          <td class="paramname"><span class="paramname"><em>sDestinationFolder</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../dc/da4/classxii_dynamic_array.html">xiiDynamicArray</a>&lt; <a class="el" href="../../df/dfb/structxii_hybrid_string.html">xiiString</a> &gt; *</td>          <td class="paramname"><span class="paramname"><em>out_pFilesCopied</em></span><span class="paramdefsep"> = </span><span class="paramdefval">nullptr</span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Copies <em>sSourceFolder</em> to <em>sDestinationFolder</em>. Overwrites existing files. </p>
+<p>If <em>out_FilesCopied</em> is provided, the destination path of every successfully copied file is appended to it. </p>
+
+</div>
+</div>
+<a id="a2ea7f6137265a91dbe23a0cd8e94d59c" name="a2ea7f6137265a91dbe23a0cd8e94d59c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ea7f6137265a91dbe23a0cd8e94d59c">&#9670;&#160;</a></span>FindFreeFilename()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void xiiOSFile::FindFreeFilename </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d4/dbb/classxii_string_builder.html">xiiStringBuilder</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>inout_sPath</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a></td>          <td class="paramname"><span class="paramname"><em>sSuffix</em></span><span class="paramdefsep"> = </span><span class="paramdefval">&quot;-&quot;</span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>If the given file already exists, determines a file path that doesn't exist yet. </p>
+<p>If the original file already exists, sSuffix is appended and then a number starting at 1. Loops until it finds a filename that is not yet taken. </p>
+
+</div>
+</div>
+<a id="a119478d3ed9b06762cbcfc54be300ae3" name="a119478d3ed9b06762cbcfc54be300ae3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a119478d3ed9b06762cbcfc54be300ae3">&#9670;&#160;</a></span>GetCurrentWorkingDirectory()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="../../df/dfb/structxii_hybrid_string.html">xiiString</a> xiiOSFile::GetCurrentWorkingDirectory </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the processes current working directory (CWD). </p>
+<p>The value typically depends on the directory from which the application was launched. Since this is a process wide global variable, other code can modify it at any time.</p>
+<dl class="section note"><dt>Note</dt><dd>XII does not use the CWD for any file resolution. This function is provided to enable tools to work with relative paths from the command-line, but every application has to implement such behavior individually. </dd></dl>
+
+</div>
+</div>
+<a id="a4d878860c251454e27488c165a7e39c0" name="a4d878860c251454e27488c165a7e39c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d878860c251454e27488c165a7e39c0">&#9670;&#160;</a></span>GetTempDataFolder()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/dfb/structxii_hybrid_string.html">xiiString</a> xiiOSFile::GetTempDataFolder </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a></td>          <td class="paramname"><span class="paramname"><em>sSubFolder</em></span><span class="paramdefsep"> = </span><span class="paramdefval">{}</span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the folder into which temp data may be written. </p>
+<p>On Windows this is the 'localappdata%/Temp' directory. On Posix systems this is the '~/.cache' directory.</p>
+<p>If sSubFolder is specified, it will be appended to the result. </p>
+
+</div>
+</div>
+<a id="adfde473e9550f3e0a4192d1b96d4c42a" name="adfde473e9550f3e0a4192d1b96d4c42a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adfde473e9550f3e0a4192d1b96d4c42a">&#9670;&#160;</a></span>GetUserDataFolder()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/dfb/structxii_hybrid_string.html">xiiString</a> xiiOSFile::GetUserDataFolder </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a></td>          <td class="paramname"><span class="paramname"><em>sSubFolder</em></span><span class="paramdefsep"> = </span><span class="paramdefval">{}</span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the folder into which user data may be safely written. Append a sub-folder for your application. </p>
+<p>On Windows this is the 'appdata' directory. On Posix systems this is the '~' (home) directory.</p>
+<p>If sSubFolder is specified, it will be appended to the result. </p>
+
+</div>
+</div>
+<a id="ab36596cc5e694e6f53f6d52d5475565f" name="ab36596cc5e694e6f53f6d52d5475565f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab36596cc5e694e6f53f6d52d5475565f">&#9670;&#160;</a></span>GetUserDocumentsFolder()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/dfb/structxii_hybrid_string.html">xiiString</a> xiiOSFile::GetUserDocumentsFolder </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a></td>          <td class="paramname"><span class="paramname"><em>sSubFolder</em></span><span class="paramdefsep"> = </span><span class="paramdefval">{}</span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the folder into which the user may want to store documents. Append a sub-folder for your application. </p>
+<p>On Windows this is the 'Documents' directory. On Posix systems this is the '~' (home) directory.</p>
+<p>If sSubFolder is specified, it will be appended to the result. </p>
+
+</div>
+</div>
+<a id="af4abe20683c824d29780bbede888a9ef" name="af4abe20683c824d29780bbede888a9ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af4abe20683c824d29780bbede888a9ef">&#9670;&#160;</a></span>MakePathAbsoluteWithCWD()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="../../df/dfb/structxii_hybrid_string.html">xiiString</a> xiiOSFile::MakePathAbsoluteWithCWD </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a></td>          <td class="paramname"><span class="paramname"><em>sPath</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>If sPath is a relative path, this function prepends <a class="el" href="#a119478d3ed9b06762cbcfc54be300ae3" title="Returns the processes current working directory (CWD).">GetCurrentWorkingDirectory()</a>. </p>
+<p>In either case, MakeCleanPath() is used before the string is returned. </p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li>/home/runner/work/XII/XII/Source/Engine/Foundation/IO/<a class="el" href="../../dd/d98/_o_s_file_8h_source.html">OSFile.h</a></li>
+<li>/home/runner/work/XII/XII/Source/Engine/Foundation/IO/Implementation/<b>OSFile.cpp</b></li>
+<li>/home/runner/work/XII/XII/Source/Engine/Foundation/IO/Implementation/Posix/<a class="el" href="../../de/d7b/_o_s_file__posix_8h_source.html">OSFile_posix.h</a></li>
+<li>/home/runner/work/XII/XII/Source/Engine/Foundation/IO/Implementation/Win/<a class="el" href="../../da/d1b/_o_s_file__win_8h_source.html">OSFile_win.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../da/d95/classxii_o_s_file.html">xiiOSFile</a></li>
+    <li class="footer">Generated on Mon Jul 1 2024 23:53:15 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+  </ul>
+</div>
+</body>
+</html>

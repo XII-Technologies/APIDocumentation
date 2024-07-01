@@ -1,0 +1,372 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.11.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<!-- BEGIN opengraph metadata -->
+<meta property="og:title" content="XII" />
+<meta property="og:image" content="../../XII-Logo.png" />
+<meta property="og:description" content="An advanced high-performance simulation engine." />
+<meta property="og:url" content="https://www.xiitechnologies.com" />
+<!-- END opengraph metadata -->
+<!-- BEGIN twitter metadata -->
+<meta name="twitter:image:src" content="../../XII-Logo.png" />
+<meta name="twitter:title" content="XII" />
+<meta name="twitter:description" content="An advanced high-performance simulation engine." />
+<!-- END twitter metadata -->
+<title>XII: xiiEventBase&lt; EventData, MutexType, EventType &gt; Class Template Reference</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link rel="icon" type="image/svg+xml" href="logo.drawio.svg"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="../../toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../custom.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<a href="https://github.com/jothepro/doxygen-awesome-css" class="github-corner" title="View source on GitHub" target="_blank" rel="noopener noreferrer">
+    <svg viewBox="0 0 250 250" width="40" height="40" style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+    <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="../../XII-Logo.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">XII
+   &#160;<span id="projectnumber">1.0.0</span>
+   </div>
+   <div id="projectbrief">A high-performance simulation engine.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(1); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.html','Search',true);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('d0/d7f/classxii_event_base.html','../../'); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#pub-types">Public Types</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="../../d9/de6/classxii_event_base-members.html">List of all members</a>  </div>
+  <div class="headertitle"><div class="title">xiiEventBase&lt; EventData, MutexType, EventType &gt; Class Template Reference</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>This class propagates event information to registered event handlers.  
+ <a href="#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="../../de/d6d/_event_8h_source.html">Event.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/de3/classxii_event_base_1_1_unsubscriber.html">Unsubscriber</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">An object that can be passed to <a class="el" href="#ae7539570090c1f7b00c7a91005b45f50">xiiEvent::AddEventHandler</a> to store the subscription information and automatically remove the event handler upon destruction.  <a href="../../db/de3/classxii_event_base_1_1_unsubscriber.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a14eaea6839303c35216387d13f555d2b" id="r_a14eaea6839303c35216387d13f555d2b"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="#a14eaea6839303c35216387d13f555d2babd0f5c5939dc65a7fc2af80ae3f87451">RecursionDepthSupported</a> = (EventType == xiiEventType::Default || xiiConversionTest&lt;MutexType, xiiNoMutex&gt;::sameType == 1) ? 1 : 0
+, <a class="el" href="#a14eaea6839303c35216387d13f555d2ba8abb769e7341b0ad6d6c82ad6a5b67e3">MaxRecursionDepthDefault</a> = RecursionDepthSupported ? 0 : 255
+ }</td></tr>
+<tr class="memdesc:a14eaea6839303c35216387d13f555d2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implementation specific constants.  <a href="#a14eaea6839303c35216387d13f555d2b">More...</a><br /></td></tr>
+<tr class="separator:a14eaea6839303c35216387d13f555d2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada90d4faae8102fb84947a77720e2f70" id="r_ada90d4faae8102fb84947a77720e2f70"><td class="memItemLeft" align="right" valign="top"><a id="ada90d4faae8102fb84947a77720e2f70" name="ada90d4faae8102fb84947a77720e2f70"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>Handler</b> = <a class="el" href="../../dc/d84/structxii_delegate.html">xiiDelegate</a>&lt;void(EventData)&gt;</td></tr>
+<tr class="memdesc:ada90d4faae8102fb84947a77720e2f70"><td class="mdescLeft">&#160;</td><td class="mdescRight">Notification callback type for events. <br /></td></tr>
+<tr class="separator:ada90d4faae8102fb84947a77720e2f70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:ae8ad85497f5d04bf7320cee2f74ab41f" id="r_ae8ad85497f5d04bf7320cee2f74ab41f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae8ad85497f5d04bf7320cee2f74ab41f">Broadcast</a> (EventData pEventData, xiiUInt8 uiMaxRecursionDepth=<a class="el" href="#a14eaea6839303c35216387d13f555d2ba8abb769e7341b0ad6d6c82ad6a5b67e3">MaxRecursionDepthDefault</a>)</td></tr>
+<tr class="memdesc:ae8ad85497f5d04bf7320cee2f74ab41f"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function will broadcast to all registered users, that this event has just happened. Setting uiMaxRecursionDepth will allow you to permit recursions. When broadcasting consider up to what depth you want recursions to be permitted. By default no recursion is allowed.  <br /></td></tr>
+<tr class="separator:ae8ad85497f5d04bf7320cee2f74ab41f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7539570090c1f7b00c7a91005b45f50" id="r_ae7539570090c1f7b00c7a91005b45f50"><td class="memItemLeft" align="right" valign="top">xiiEventSubscriptionID&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae7539570090c1f7b00c7a91005b45f50">AddEventHandler</a> (<a class="el" href="#ada90d4faae8102fb84947a77720e2f70">Handler</a> handler) const</td></tr>
+<tr class="memdesc:ae7539570090c1f7b00c7a91005b45f50"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a function as an event handler. All handlers will be notified in the order that they were registered.  <br /></td></tr>
+<tr class="separator:ae7539570090c1f7b00c7a91005b45f50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeba7db2bfa882561fa4c23f3a01320f4" id="r_aeba7db2bfa882561fa4c23f3a01320f4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aeba7db2bfa882561fa4c23f3a01320f4">AddEventHandler</a> (<a class="el" href="#ada90d4faae8102fb84947a77720e2f70">Handler</a> handler, <a class="el" href="../../db/de3/classxii_event_base_1_1_unsubscriber.html">Unsubscriber</a> &amp;ref_unsubscriber) const</td></tr>
+<tr class="memdesc:aeba7db2bfa882561fa4c23f3a01320f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">An overload that adds an event handler and initializes the given <em><a class="el" href="../../db/de3/classxii_event_base_1_1_unsubscriber.html" title="An object that can be passed to xiiEvent::AddEventHandler to store the subscription information and a...">Unsubscriber</a></em> object.  <br /></td></tr>
+<tr class="separator:aeba7db2bfa882561fa4c23f3a01320f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeec508e0a7fd0232284d9f84c4711e7e" id="r_aeec508e0a7fd0232284d9f84c4711e7e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aeec508e0a7fd0232284d9f84c4711e7e">RemoveEventHandler</a> (const <a class="el" href="#ada90d4faae8102fb84947a77720e2f70">Handler</a> &amp;handler) const</td></tr>
+<tr class="memdesc:aeec508e0a7fd0232284d9f84c4711e7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes a previously registered handler. It is an error to remove a handler that was not registered.  <br /></td></tr>
+<tr class="separator:aeec508e0a7fd0232284d9f84c4711e7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75137acbb8e90256e9026851f036032a" id="r_a75137acbb8e90256e9026851f036032a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a75137acbb8e90256e9026851f036032a">RemoveEventHandler</a> (xiiEventSubscriptionID &amp;ref_id) const</td></tr>
+<tr class="memdesc:a75137acbb8e90256e9026851f036032a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes a previously registered handler via the returned subscription ID.  <br /></td></tr>
+<tr class="separator:a75137acbb8e90256e9026851f036032a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af10a18a3db1fc0e3afc428f680988c6a" id="r_af10a18a3db1fc0e3afc428f680988c6a"><td class="memItemLeft" align="right" valign="top"><a id="af10a18a3db1fc0e3afc428f680988c6a" name="af10a18a3db1fc0e3afc428f680988c6a"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>HasEventHandler</b> (const <a class="el" href="#ada90d4faae8102fb84947a77720e2f70">Handler</a> &amp;handler) const</td></tr>
+<tr class="memdesc:af10a18a3db1fc0e3afc428f680988c6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether an event handler has already been registered. <br /></td></tr>
+<tr class="separator:af10a18a3db1fc0e3afc428f680988c6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4706d57e34a30668ccdae23968458b16" id="r_a4706d57e34a30668ccdae23968458b16"><td class="memItemLeft" align="right" valign="top"><a id="a4706d57e34a30668ccdae23968458b16" name="a4706d57e34a30668ccdae23968458b16"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Clear</b> ()</td></tr>
+<tr class="memdesc:a4706d57e34a30668ccdae23968458b16"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes all registered event handlers. <br /></td></tr>
+<tr class="separator:a4706d57e34a30668ccdae23968458b16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9611804109c7d2c35dacca1254bcf7e" id="r_ae9611804109c7d2c35dacca1254bcf7e"><td class="memItemLeft" align="right" valign="top"><a id="ae9611804109c7d2c35dacca1254bcf7e" name="ae9611804109c7d2c35dacca1254bcf7e"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsEmpty</b> () const</td></tr>
+<tr class="memdesc:ae9611804109c7d2c35dacca1254bcf7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true, if no event handlers are registered. <br /></td></tr>
+<tr class="separator:ae9611804109c7d2c35dacca1254bcf7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47d82bfafe3ef4b3a9ac129af1919849" id="r_a47d82bfafe3ef4b3a9ac129af1919849"><td class="memItemLeft" align="right" valign="top"><a id="a47d82bfafe3ef4b3a9ac129af1919849" name="a47d82bfafe3ef4b3a9ac129af1919849"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>XII_DISALLOW_COPY_AND_ASSIGN</b> (<a class="el" href="../../d0/d7f/classxii_event_base.html">xiiEventBase</a>)</td></tr>
+<tr class="separator:a47d82bfafe3ef4b3a9ac129af1919849"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a82c447f89fbe6bfe74b0ecfed7476762" id="r_a82c447f89fbe6bfe74b0ecfed7476762"><td class="memItemLeft" align="right" valign="top"><a id="a82c447f89fbe6bfe74b0ecfed7476762" name="a82c447f89fbe6bfe74b0ecfed7476762"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>xiiEventBase</b> (<a class="el" href="../../d5/d66/classxii_allocator_base.html">xiiAllocatorBase</a> *pAllocator)</td></tr>
+<tr class="memdesc:a82c447f89fbe6bfe74b0ecfed7476762"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor. <br /></td></tr>
+<tr class="separator:a82c447f89fbe6bfe74b0ecfed7476762"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><div class="compoundTemplParams">template&lt;typename EventData, typename MutexType, xiiEventType EventType&gt;<br />
+class xiiEventBase&lt; EventData, MutexType, EventType &gt;</div><p>This class propagates event information to registered event handlers. </p>
+<p>An event can be anything that "happens" that might be of interest to other code, such that it can react on it in some way. Just create an instance of <a class="el" href="../../dc/d22/classxii_event.html">xiiEvent</a> and call <a class="el" href="#ae8ad85497f5d04bf7320cee2f74ab41f" title="This function will broadcast to all registered users, that this event has just happened....">Broadcast()</a> on it. Other interested code needs const access to the event variable to be able to call <a class="el" href="#ae7539570090c1f7b00c7a91005b45f50" title="Adds a function as an event handler. All handlers will be notified in the order that they were regist...">AddEventHandler()</a> and <a class="el" href="#aeec508e0a7fd0232284d9f84c4711e7e" title="Removes a previously registered handler. It is an error to remove a handler that was not registered.">RemoveEventHandler()</a>. To pass information to the handlers, create a custom struct with event information and then pass a (const) reference to that data through <a class="el" href="#ae8ad85497f5d04bf7320cee2f74ab41f" title="This function will broadcast to all registered users, that this event has just happened....">Broadcast()</a>.</p>
+<p>If you need to modify the event while broadcasting, for example inside one of the registered event handlers, set EventType = xiiEventType::CopyOnBroadcast. Each broadcast will then copy the event handler array before signaling them, allowing modifications during broadcasting.</p>
+<dl class="section note"><dt>Note</dt><dd><a class="el" href="../../d8/d4f/class_a.html">A</a> class holding a <a class="el" href="../../dc/d22/classxii_event.html">xiiEvent</a> member needs to provide public access to the member for external code to be able to register as an event handler. To make it possible to prevent external code from also raising events, all functions that are needed for listening are const, and all others are non-const. Therefore, simply make event members private and provide const reference access through a public getter. </dd></dl>
+</div><h2 class="groupheader">Member Enumeration Documentation</h2>
+<a id="a14eaea6839303c35216387d13f555d2b" name="a14eaea6839303c35216387d13f555d2b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a14eaea6839303c35216387d13f555d2b">&#9670;&#160;</a></span>anonymous enum</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename EventData , typename MutexType , xiiEventType EventType&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">anonymous enum</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Implementation specific constants. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a14eaea6839303c35216387d13f555d2babd0f5c5939dc65a7fc2af80ae3f87451" name="a14eaea6839303c35216387d13f555d2babd0f5c5939dc65a7fc2af80ae3f87451"></a>RecursionDepthSupported&#160;</td><td class="fielddoc"><p>Whether the uiMaxRecursionDepth parameter to <a class="el" href="#ae8ad85497f5d04bf7320cee2f74ab41f" title="This function will broadcast to all registered users, that this event has just happened....">Broadcast()</a> is supported in this implementation or not. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a14eaea6839303c35216387d13f555d2ba8abb769e7341b0ad6d6c82ad6a5b67e3" name="a14eaea6839303c35216387d13f555d2ba8abb769e7341b0ad6d6c82ad6a5b67e3"></a>MaxRecursionDepthDefault&#160;</td><td class="fielddoc"><p>Default value for the maximum recursion depth of Broadcast. As limiting the recursion depth is not supported when EventType == xiiEventType::CopyAndBroadcast and MutexType != <a class="el" href="../../da/d89/classxii_no_mutex.html" title="A dummy mutex that does no locking.">xiiNoMutex</a> the default value for that case is the maximum. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="ae7539570090c1f7b00c7a91005b45f50" name="ae7539570090c1f7b00c7a91005b45f50"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae7539570090c1f7b00c7a91005b45f50">&#9670;&#160;</a></span>AddEventHandler() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename EventData , typename MutexType , xiiEventType EventType&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">xiiEventSubscriptionID <a class="el" href="../../d0/d7f/classxii_event_base.html">xiiEventBase</a>&lt; EventData, MutexType, EventType &gt;::AddEventHandler </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#ada90d4faae8102fb84947a77720e2f70">Handler</a></td>          <td class="paramname"><span class="paramname"><em>handler</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Adds a function as an event handler. All handlers will be notified in the order that they were registered. </p>
+<p>The return value can be stored and used to remove the event handler later again.</p>
+<p><a class="el" href="../../d8/d4f/class_a.html">A</a> callback can be registered multiple times with different pass-through data (or even with the same, though that is less useful). </p>
+
+</div>
+</div>
+<a id="aeba7db2bfa882561fa4c23f3a01320f4" name="aeba7db2bfa882561fa4c23f3a01320f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeba7db2bfa882561fa4c23f3a01320f4">&#9670;&#160;</a></span>AddEventHandler() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename EventData , typename MutexType , xiiEventType EventType&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="../../d0/d7f/classxii_event_base.html">xiiEventBase</a>&lt; EventData, MutexType, EventType &gt;::AddEventHandler </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#ada90d4faae8102fb84947a77720e2f70">Handler</a></td>          <td class="paramname"><span class="paramname"><em>handler</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../db/de3/classxii_event_base_1_1_unsubscriber.html">Unsubscriber</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>ref_unsubscriber</em></span>&#160;) const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An overload that adds an event handler and initializes the given <em><a class="el" href="../../db/de3/classxii_event_base_1_1_unsubscriber.html" title="An object that can be passed to xiiEvent::AddEventHandler to store the subscription information and a...">Unsubscriber</a></em> object. </p>
+<p>When the <a class="el" href="../../db/de3/classxii_event_base_1_1_unsubscriber.html" title="An object that can be passed to xiiEvent::AddEventHandler to store the subscription information and a...">Unsubscriber</a> is destroyed, it will automatically remove the event handler. </p>
+
+</div>
+</div>
+<a id="ae8ad85497f5d04bf7320cee2f74ab41f" name="ae8ad85497f5d04bf7320cee2f74ab41f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae8ad85497f5d04bf7320cee2f74ab41f">&#9670;&#160;</a></span>Broadcast()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename EventData , typename MutexType , xiiEventType EventType&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="../../d0/d7f/classxii_event_base.html">xiiEventBase</a>&lt; EventData, MutexType, EventType &gt;::Broadcast </td>
+          <td>(</td>
+          <td class="paramtype">EventData</td>          <td class="paramname"><span class="paramname"><em>pEventData</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">xiiUInt8</td>          <td class="paramname"><span class="paramname"><em>uiMaxRecursionDepth</em></span><span class="paramdefsep"> = </span><span class="paramdefval"><a class="el" href="#a14eaea6839303c35216387d13f555d2ba8abb769e7341b0ad6d6c82ad6a5b67e3">MaxRecursionDepthDefault</a></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This function will broadcast to all registered users, that this event has just happened. Setting uiMaxRecursionDepth will allow you to permit recursions. When broadcasting consider up to what depth you want recursions to be permitted. By default no recursion is allowed. </p>
+<p>The notification is sent to all event handlers in the order that they were registered. </p>
+
+</div>
+</div>
+<a id="aeec508e0a7fd0232284d9f84c4711e7e" name="aeec508e0a7fd0232284d9f84c4711e7e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeec508e0a7fd0232284d9f84c4711e7e">&#9670;&#160;</a></span>RemoveEventHandler() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename EventData , typename MutexType , xiiEventType EventType&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="../../d0/d7f/classxii_event_base.html">xiiEventBase</a>&lt; EventData, MutexType, EventType &gt;::RemoveEventHandler </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="#ada90d4faae8102fb84947a77720e2f70">Handler</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>handler</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Removes a previously registered handler. It is an error to remove a handler that was not registered. </p>
+<p>Use exactly the same combination of callback/pass-through-data to unregister an event handlers. Otherwise an error occurs. </p>
+
+</div>
+</div>
+<a id="a75137acbb8e90256e9026851f036032a" name="a75137acbb8e90256e9026851f036032a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a75137acbb8e90256e9026851f036032a">&#9670;&#160;</a></span>RemoveEventHandler() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename EventData , typename MutexType , xiiEventType EventType&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="../../d0/d7f/classxii_event_base.html">xiiEventBase</a>&lt; EventData, MutexType, EventType &gt;::RemoveEventHandler </td>
+          <td>(</td>
+          <td class="paramtype">xiiEventSubscriptionID &amp;</td>          <td class="paramname"><span class="paramname"><em>ref_id</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Removes a previously registered handler via the returned subscription ID. </p>
+<p>The ID will be reset to zero. If this is called with a zero ID, nothing happens. </p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li>/home/runner/work/XII/XII/Source/Engine/Foundation/Communication/<a class="el" href="../../de/d6d/_event_8h_source.html">Event.h</a></li>
+<li>/home/runner/work/XII/XII/Source/Engine/Foundation/Communication/Implementation/<a class="el" href="../../d6/d8e/_event__inl_8h_source.html">Event_inl.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../d0/d7f/classxii_event_base.html">xiiEventBase</a></li>
+    <li class="footer">Generated on Mon Jul 1 2024 23:53:14 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+  </ul>
+</div>
+</body>
+</html>

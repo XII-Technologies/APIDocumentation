@@ -1,0 +1,441 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.11.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<!-- BEGIN opengraph metadata -->
+<meta property="og:title" content="XII" />
+<meta property="og:image" content="../../XII-Logo.png" />
+<meta property="og:description" content="An advanced high-performance simulation engine." />
+<meta property="og:url" content="https://www.xiitechnologies.com" />
+<!-- END opengraph metadata -->
+<!-- BEGIN twitter metadata -->
+<meta name="twitter:image:src" content="../../XII-Logo.png" />
+<meta name="twitter:title" content="XII" />
+<meta name="twitter:description" content="An advanced high-performance simulation engine." />
+<!-- END twitter metadata -->
+<title>XII: xiiComponentDragDropHandler Class Reference</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link rel="icon" type="image/svg+xml" href="logo.drawio.svg"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="../../toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../custom.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<a href="https://github.com/jothepro/doxygen-awesome-css" class="github-corner" title="View source on GitHub" target="_blank" rel="noopener noreferrer">
+    <svg viewBox="0 0 250 250" width="40" height="40" style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+    <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="../../XII-Logo.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">XII
+   &#160;<span id="projectnumber">1.0.0</span>
+   </div>
+   <div id="projectbrief">A high-performance simulation engine.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(1); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.html','Search',true);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('dc/da3/classxii_component_drag_drop_handler.html','../../'); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
+<a href="../../db/d40/classxii_component_drag_drop_handler-members.html">List of all members</a>  </div>
+  <div class="headertitle"><div class="title">xiiComponentDragDropHandler Class Reference</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+Inheritance diagram for xiiComponentDragDropHandler:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d2/d0a/classxii_component_drag_drop_handler__inherit__graph.svg" width="100%" height="578"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">legend</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a90d4345a1850d12b5de46058038cb561" id="r_a90d4345a1850d12b5de46058038cb561"><td class="memItemLeft" align="right" valign="top"><a id="a90d4345a1850d12b5de46058038cb561" name="a90d4345a1850d12b5de46058038cb561"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>CreateDropObject</b> (const <a class="el" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3</a> &amp;vPosition, const char *szType, const char *szProperty, const <a class="el" href="../../db/d1a/classxii_variant.html">xiiVariant</a> &amp;value, <a class="el" href="../../dc/d1d/classxii_uuid.html">xiiUuid</a> parent, xiiInt32 iInsertChildIndex)</td></tr>
+<tr class="separator:a90d4345a1850d12b5de46058038cb561"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa415e97aca845c5ead78f161b2bf6328" id="r_aa415e97aca845c5ead78f161b2bf6328"><td class="memItemLeft" align="right" valign="top"><a id="aa415e97aca845c5ead78f161b2bf6328" name="aa415e97aca845c5ead78f161b2bf6328"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>AttachComponentToObject</b> (const char *szType, const char *szProperty, const <a class="el" href="../../db/d1a/classxii_variant.html">xiiVariant</a> &amp;value, <a class="el" href="../../dc/d1d/classxii_uuid.html">xiiUuid</a> ObjectGuid)</td></tr>
+<tr class="separator:aa415e97aca845c5ead78f161b2bf6328"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a259fd534fa0a28f07474691b1e99b813" id="r_a259fd534fa0a28f07474691b1e99b813"><td class="memItemLeft" align="right" valign="top"><a id="a259fd534fa0a28f07474691b1e99b813" name="a259fd534fa0a28f07474691b1e99b813"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>MoveObjectToPosition</b> (const <a class="el" href="../../dc/d1d/classxii_uuid.html">xiiUuid</a> &amp;guid, const <a class="el" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3</a> &amp;vPosition, const <a class="el" href="../../d9/d1b/classxii_quat_template.html">xiiQuat</a> &amp;qRotation)</td></tr>
+<tr class="separator:a259fd534fa0a28f07474691b1e99b813"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54cc1fb80ac942a7063920ec2c95f263" id="r_a54cc1fb80ac942a7063920ec2c95f263"><td class="memItemLeft" align="right" valign="top"><a id="a54cc1fb80ac942a7063920ec2c95f263" name="a54cc1fb80ac942a7063920ec2c95f263"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>MoveDraggedObjectsToPosition</b> (<a class="el" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3</a> vPosition, bool bAllowSnap, const <a class="el" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3</a> &amp;normal)</td></tr>
+<tr class="separator:a54cc1fb80ac942a7063920ec2c95f263"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a328cb99e11ceb554f1c239fdca44d5ef" id="r_a328cb99e11ceb554f1c239fdca44d5ef"><td class="memItemLeft" align="right" valign="top"><a id="a328cb99e11ceb554f1c239fdca44d5ef" name="a328cb99e11ceb554f1c239fdca44d5ef"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SelectCreatedObjects</b> ()</td></tr>
+<tr class="separator:a328cb99e11ceb554f1c239fdca44d5ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe11e10d67ecaf3576efb6dd08da43f9" id="r_afe11e10d67ecaf3576efb6dd08da43f9"><td class="memItemLeft" align="right" valign="top"><a id="afe11e10d67ecaf3576efb6dd08da43f9" name="afe11e10d67ecaf3576efb6dd08da43f9"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>BeginTemporaryCommands</b> ()</td></tr>
+<tr class="separator:afe11e10d67ecaf3576efb6dd08da43f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab588f2638e57f9fbfee0c37451e13e80" id="r_ab588f2638e57f9fbfee0c37451e13e80"><td class="memItemLeft" align="right" valign="top"><a id="ab588f2638e57f9fbfee0c37451e13e80" name="ab588f2638e57f9fbfee0c37451e13e80"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>EndTemporaryCommands</b> ()</td></tr>
+<tr class="separator:ab588f2638e57f9fbfee0c37451e13e80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33d958fc34c6137e8da7c62c0e70538d" id="r_a33d958fc34c6137e8da7c62c0e70538d"><td class="memItemLeft" align="right" valign="top"><a id="a33d958fc34c6137e8da7c62c0e70538d" name="a33d958fc34c6137e8da7c62c0e70538d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>CancelTemporaryCommands</b> ()</td></tr>
+<tr class="separator:a33d958fc34c6137e8da7c62c0e70538d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9823e7ee22aaa1d594e181dc46212a7f" id="r_a9823e7ee22aaa1d594e181dc46212a7f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9823e7ee22aaa1d594e181dc46212a7f">OnDragBegin</a> (const <a class="el" href="../../d7/d7c/classxii_drag_drop_info.html">xiiDragDropInfo</a> *pInfo) override</td></tr>
+<tr class="memdesc:a9823e7ee22aaa1d594e181dc46212a7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called shortly after CanHandle returned true to begin handling a drag operation.  <br /></td></tr>
+<tr class="separator:a9823e7ee22aaa1d594e181dc46212a7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9a2c50e10d38164c29c0f50c1234313" id="r_ae9a2c50e10d38164c29c0f50c1234313"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae9a2c50e10d38164c29c0f50c1234313">OnDragUpdate</a> (const <a class="el" href="../../d7/d7c/classxii_drag_drop_info.html">xiiDragDropInfo</a> *pInfo) override</td></tr>
+<tr class="memdesc:ae9a2c50e10d38164c29c0f50c1234313"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called to update the drag operation with the latest state.  <br /></td></tr>
+<tr class="separator:ae9a2c50e10d38164c29c0f50c1234313"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42915a7d6bd926f16108306c49dbdd39" id="r_a42915a7d6bd926f16108306c49dbdd39"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a42915a7d6bd926f16108306c49dbdd39">OnDragCancel</a> () override</td></tr>
+<tr class="memdesc:a42915a7d6bd926f16108306c49dbdd39"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when the drag operation leaves the designated area. The handler will be destroyed after this. It should clean up all temporary objects that it created before.  <br /></td></tr>
+<tr class="separator:a42915a7d6bd926f16108306c49dbdd39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb6bec730f7fdf849a6529b969caba67" id="r_aeb6bec730f7fdf849a6529b969caba67"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aeb6bec730f7fdf849a6529b969caba67">OnDrop</a> (const <a class="el" href="../../d7/d7c/classxii_drag_drop_info.html">xiiDragDropInfo</a> *pInfo) override</td></tr>
+<tr class="memdesc:aeb6bec730f7fdf849a6529b969caba67"><td class="mdescLeft">&#160;</td><td class="mdescRight">Final call to finish the drag &amp; drop operation. Handler is destroyed after this.  <br /></td></tr>
+<tr class="separator:aeb6bec730f7fdf849a6529b969caba67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e83ac78e5a0421de5523c3e73fe582b" id="r_a9e83ac78e5a0421de5523c3e73fe582b"><td class="memItemLeft" align="right" valign="top">virtual float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9e83ac78e5a0421de5523c3e73fe582b">CanHandle</a> (const <a class="el" href="../../d7/d7c/classxii_drag_drop_info.html">xiiDragDropInfo</a> *pInfo) const override</td></tr>
+<tr class="memdesc:a9e83ac78e5a0421de5523c3e73fe582b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used to ask a handler whether it knows how to handle a certain drag &amp; drop situation.  <br /></td></tr>
+<tr class="separator:a9e83ac78e5a0421de5523c3e73fe582b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_classxii_asset_drag_drop_handler"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_methods_classxii_asset_drag_drop_handler')"><img src="../../closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="../../d1/d9a/classxii_asset_drag_drop_handler.html">xiiAssetDragDropHandler</a></td></tr>
+<tr class="memitem:a620ea45a6a90e4b39ca4369ba5c27661 inherit pro_methods_classxii_asset_drag_drop_handler" id="r_a620ea45a6a90e4b39ca4369ba5c27661"><td class="memItemLeft" align="right" valign="top">
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsAssetType</b> (const <a class="el" href="../../d7/d7c/classxii_drag_drop_info.html">xiiDragDropInfo</a> *pInfo) const</td></tr>
+<tr class="separator:a620ea45a6a90e4b39ca4369ba5c27661 inherit pro_methods_classxii_asset_drag_drop_handler"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e6d6e0ff3bf5b8e2aea1f91d99a7a9f inherit pro_methods_classxii_asset_drag_drop_handler" id="r_a1e6d6e0ff3bf5b8e2aea1f91d99a7a9f"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="../../df/dfb/structxii_hybrid_string.html">xiiString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetAssetGuidString</b> (const <a class="el" href="../../d7/d7c/classxii_drag_drop_info.html">xiiDragDropInfo</a> *pInfo) const</td></tr>
+<tr class="separator:a1e6d6e0ff3bf5b8e2aea1f91d99a7a9f inherit pro_methods_classxii_asset_drag_drop_handler"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93f3261abc01725809b17a5a450a8dd5 inherit pro_methods_classxii_asset_drag_drop_handler" id="r_a93f3261abc01725809b17a5a450a8dd5"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="../../dc/d1d/classxii_uuid.html">xiiUuid</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetAssetGuid</b> (const <a class="el" href="../../d7/d7c/classxii_drag_drop_info.html">xiiDragDropInfo</a> *pInfo) const</td></tr>
+<tr class="separator:a93f3261abc01725809b17a5a450a8dd5 inherit pro_methods_classxii_asset_drag_drop_handler"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ebaf0ee4b8df1fd7d284021294f3fe8 inherit pro_methods_classxii_asset_drag_drop_handler" id="r_a9ebaf0ee4b8df1fd7d284021294f3fe8"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="../../df/dfb/structxii_hybrid_string.html">xiiString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetAssetsDocumentTypeName</b> (const <a class="el" href="../../dc/d1d/classxii_uuid.html">xiiUuid</a> &amp;assetTypeGuid) const</td></tr>
+<tr class="separator:a9ebaf0ee4b8df1fd7d284021294f3fe8 inherit pro_methods_classxii_asset_drag_drop_handler"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef2e91ab8747be39d59d137cdbe7366e inherit pro_methods_classxii_asset_drag_drop_handler" id="r_aef2e91ab8747be39d59d137cdbe7366e"><td class="memItemLeft" align="right" valign="top">
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsSpecificAssetType</b> (const <a class="el" href="../../d7/d7c/classxii_drag_drop_info.html">xiiDragDropInfo</a> *pInfo, const char *szType) const</td></tr>
+<tr class="separator:aef2e91ab8747be39d59d137cdbe7366e inherit pro_methods_classxii_asset_drag_drop_handler"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_classxii_drag_drop_handler"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_methods_classxii_drag_drop_handler')"><img src="../../closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="../../db/d24/classxii_drag_drop_handler.html">xiiDragDropHandler</a></td></tr>
+<tr class="memitem:a009c0cc61bde02aa3127aa1a7493d17d inherit pro_methods_classxii_drag_drop_handler" id="r_a009c0cc61bde02aa3127aa1a7493d17d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d24/classxii_drag_drop_handler.html#a009c0cc61bde02aa3127aa1a7493d17d">RequestConfiguration</a> (<a class="el" href="../../d6/dad/classxii_drag_drop_config.html">xiiDragDropConfig</a> *pConfigToFillOut)</td></tr>
+<tr class="memdesc:a009c0cc61bde02aa3127aa1a7493d17d inherit pro_methods_classxii_drag_drop_handler"><td class="mdescLeft">&#160;</td><td class="mdescRight">Potentially called by the drag drop target to request information about how to determine the <a class="el" href="../../d7/d7c/classxii_drag_drop_info.html" title="This type is used to provide xiiDragDropHandler instances with all the important information for a dr...">xiiDragDropInfo</a> data.  <br /></td></tr>
+<tr class="separator:a009c0cc61bde02aa3127aa1a7493d17d inherit pro_methods_classxii_drag_drop_handler"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:a239e14c9763346516caab39853d44fc3" id="r_a239e14c9763346516caab39853d44fc3"><td class="memItemLeft" align="right" valign="top"><a id="a239e14c9763346516caab39853d44fc3" name="a239e14c9763346516caab39853d44fc3"></a>
+<a class="el" href="../../d8/da9/classxii_document.html">xiiDocument</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_pDocument</b> = nullptr</td></tr>
+<tr class="separator:a239e14c9763346516caab39853d44fc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd66068ae3e5846bfcc5cd4f52067303" id="r_acd66068ae3e5846bfcc5cd4f52067303"><td class="memItemLeft" align="right" valign="top"><a id="acd66068ae3e5846bfcc5cd4f52067303" name="acd66068ae3e5846bfcc5cd4f52067303"></a>
+<a class="el" href="../../dc/da9/classxii_hybrid_array.html">xiiHybridArray</a>&lt; <a class="el" href="../../dc/d1d/classxii_uuid.html">xiiUuid</a>, 16 &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_DraggedObjects</b></td></tr>
+<tr class="separator:acd66068ae3e5846bfcc5cd4f52067303"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14f49de7a89d9068d89925c46fa31339" id="r_a14f49de7a89d9068d89925c46fa31339"><td class="memItemLeft" align="right" valign="top"><a id="a14f49de7a89d9068d89925c46fa31339" name="a14f49de7a89d9068d89925c46fa31339"></a>
+<a class="el" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_vAlignAxisWithNormal</b> = <a class="el" href="../../d9/d9a/classxii_vec3_template.html#a37d09e3acbca40bd816cf99a6b8e1489">xiiVec3::MakeZero</a>()</td></tr>
+<tr class="separator:a14f49de7a89d9068d89925c46fa31339"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_classxii_asset_drag_drop_handler"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_attribs_classxii_asset_drag_drop_handler')"><img src="../../closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="../../d1/d9a/classxii_asset_drag_drop_handler.html">xiiAssetDragDropHandler</a></td></tr>
+<tr class="memitem:a9d754a6982a8ec0d4187cb1c0bc52828 inherit pro_attribs_classxii_asset_drag_drop_handler" id="r_a9d754a6982a8ec0d4187cb1c0bc52828"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="../../d8/da9/classxii_document.html">xiiDocument</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_pDocument</b> = nullptr</td></tr>
+<tr class="separator:a9d754a6982a8ec0d4187cb1c0bc52828 inherit pro_attribs_classxii_asset_drag_drop_handler"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pub_methods_classxii_reflected_class"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_classxii_reflected_class')"><img src="../../closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="../../dc/d71/classxii_reflected_class.html">xiiReflectedClass</a></td></tr>
+<tr class="memitem:a00430d2230bc44ad262be3d0a4e62e10 inherit pub_methods_classxii_reflected_class" id="r_a00430d2230bc44ad262be3d0a4e62e10"><td class="memItemLeft" align="right" valign="top">
+virtual const <a class="el" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetDynamicRTTI</b> () const</td></tr>
+<tr class="separator:a00430d2230bc44ad262be3d0a4e62e10 inherit pub_methods_classxii_reflected_class"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e0f7cbc734bb4dd62b0d583bbbe2ade inherit pub_methods_classxii_reflected_class" id="r_a8e0f7cbc734bb4dd62b0d583bbbe2ade"><td class="memItemLeft" align="right" valign="top">
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsInstanceOf</b> (const <a class="el" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a> *pType) const</td></tr>
+<tr class="memdesc:a8e0f7cbc734bb4dd62b0d583bbbe2ade inherit pub_methods_classxii_reflected_class"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether the type of this instance is of the given type or derived from it. <br /></td></tr>
+<tr class="separator:a8e0f7cbc734bb4dd62b0d583bbbe2ade inherit pub_methods_classxii_reflected_class"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0a423d0f813feb28b200d9a9756eab8 inherit pub_methods_classxii_reflected_class" id="r_ac0a423d0f813feb28b200d9a9756eab8"><td class="memTemplParams" colspan="2">
+template&lt;typename T &gt; </td></tr>
+<tr class="memitem:ac0a423d0f813feb28b200d9a9756eab8 inherit pub_methods_classxii_reflected_class"><td class="memTemplItemLeft" align="right" valign="top">XII_ALWAYS_INLINE bool&#160;</td><td class="memTemplItemRight" valign="bottom"><b>IsInstanceOf</b> () const</td></tr>
+<tr class="memdesc:ac0a423d0f813feb28b200d9a9756eab8 inherit pub_methods_classxii_reflected_class"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether the type of this instance is of the given type or derived from it. <br /></td></tr>
+<tr class="separator:ac0a423d0f813feb28b200d9a9756eab8 inherit pub_methods_classxii_reflected_class"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_static_methods_classxii_drag_drop_handler"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_static_methods_classxii_drag_drop_handler')"><img src="../../closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="../../db/d24/classxii_drag_drop_handler.html">xiiDragDropHandler</a></td></tr>
+<tr class="memitem:acfc86b7d656f792aeef1c49ab98548c4 inherit pub_static_methods_classxii_drag_drop_handler" id="r_acfc86b7d656f792aeef1c49ab98548c4"><td class="memItemLeft" align="right" valign="top">
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsHandlerActive</b> ()</td></tr>
+<tr class="memdesc:acfc86b7d656f792aeef1c49ab98548c4 inherit pub_static_methods_classxii_drag_drop_handler"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether the last call to <a class="el" href="../../db/d24/classxii_drag_drop_handler.html#a970f672398c22b12af45abfbfd05df37" title="Call this when a drag enter event occurs. Return value indicates whether a xiiDragDropHandler was fou...">BeginDragDropOperation()</a> was successful and a handler is now in effect. <br /></td></tr>
+<tr class="separator:acfc86b7d656f792aeef1c49ab98548c4 inherit pub_static_methods_classxii_drag_drop_handler"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a970f672398c22b12af45abfbfd05df37 inherit pub_static_methods_classxii_drag_drop_handler" id="r_a970f672398c22b12af45abfbfd05df37"><td class="memItemLeft" align="right" valign="top">
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>BeginDragDropOperation</b> (const <a class="el" href="../../d7/d7c/classxii_drag_drop_info.html">xiiDragDropInfo</a> *pInfo, <a class="el" href="../../d6/dad/classxii_drag_drop_config.html">xiiDragDropConfig</a> *pConfigToFillOut=nullptr)</td></tr>
+<tr class="memdesc:a970f672398c22b12af45abfbfd05df37 inherit pub_static_methods_classxii_drag_drop_handler"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call this when a drag enter event occurs. Return value indicates whether a <a class="el" href="../../db/d24/classxii_drag_drop_handler.html">xiiDragDropHandler</a> was found to handle the operation. If not, subsequent drag &amp; drop updates are ignored. <br /></td></tr>
+<tr class="separator:a970f672398c22b12af45abfbfd05df37 inherit pub_static_methods_classxii_drag_drop_handler"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07f03b750b0ba380f10463214bcf98f1 inherit pub_static_methods_classxii_drag_drop_handler" id="r_a07f03b750b0ba380f10463214bcf98f1"><td class="memItemLeft" align="right" valign="top">
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>UpdateDragDropOperation</b> (const <a class="el" href="../../d7/d7c/classxii_drag_drop_info.html">xiiDragDropInfo</a> *pInfo)</td></tr>
+<tr class="memdesc:a07f03b750b0ba380f10463214bcf98f1 inherit pub_static_methods_classxii_drag_drop_handler"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call this when a drag event occurs. Ignored if <a class="el" href="../../db/d24/classxii_drag_drop_handler.html#a970f672398c22b12af45abfbfd05df37" title="Call this when a drag enter event occurs. Return value indicates whether a xiiDragDropHandler was fou...">BeginDragDropOperation()</a> was not successful. <br /></td></tr>
+<tr class="separator:a07f03b750b0ba380f10463214bcf98f1 inherit pub_static_methods_classxii_drag_drop_handler"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d37b13633cf9d1d829f406e225e650c inherit pub_static_methods_classxii_drag_drop_handler" id="r_a7d37b13633cf9d1d829f406e225e650c"><td class="memItemLeft" align="right" valign="top">
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>FinishDragDrop</b> (const <a class="el" href="../../d7/d7c/classxii_drag_drop_info.html">xiiDragDropInfo</a> *pInfo)</td></tr>
+<tr class="memdesc:a7d37b13633cf9d1d829f406e225e650c inherit pub_static_methods_classxii_drag_drop_handler"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call this when a drop event occurs. Ignored if <a class="el" href="../../db/d24/classxii_drag_drop_handler.html#a970f672398c22b12af45abfbfd05df37" title="Call this when a drag enter event occurs. Return value indicates whether a xiiDragDropHandler was fou...">BeginDragDropOperation()</a> was not successful. <br /></td></tr>
+<tr class="separator:a7d37b13633cf9d1d829f406e225e650c inherit pub_static_methods_classxii_drag_drop_handler"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71467c43cfc89e68d02fb227de05c0e0 inherit pub_static_methods_classxii_drag_drop_handler" id="r_a71467c43cfc89e68d02fb227de05c0e0"><td class="memItemLeft" align="right" valign="top">
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>CancelDragDrop</b> ()</td></tr>
+<tr class="memdesc:a71467c43cfc89e68d02fb227de05c0e0 inherit pub_static_methods_classxii_drag_drop_handler"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call this when a drag leave event occurs. Ignored if <a class="el" href="../../db/d24/classxii_drag_drop_handler.html#a970f672398c22b12af45abfbfd05df37" title="Call this when a drag enter event occurs. Return value indicates whether a xiiDragDropHandler was fou...">BeginDragDropOperation()</a> was not successful. <br /></td></tr>
+<tr class="separator:a71467c43cfc89e68d02fb227de05c0e0 inherit pub_static_methods_classxii_drag_drop_handler"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04e9dab0244129158facfce6ccfb0509 inherit pub_static_methods_classxii_drag_drop_handler" id="r_a04e9dab0244129158facfce6ccfb0509"><td class="memItemLeft" align="right" valign="top">
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>CanDropOnly</b> (const <a class="el" href="../../d7/d7c/classxii_drag_drop_info.html">xiiDragDropInfo</a> *pInfo)</td></tr>
+<tr class="memdesc:a04e9dab0244129158facfce6ccfb0509 inherit pub_static_methods_classxii_drag_drop_handler"><td class="mdescLeft">&#160;</td><td class="mdescRight">For targets that do not support full dragging, but only dropping on a single target, this allows to query whether there is a handler for the given target. See also <a class="el" href="../../db/d24/classxii_drag_drop_handler.html#ac5aef074116c1d66b9dc087e7341fec3" title="Executes a complete drop action on a target that does not support continuous dragging....">DropOnly()</a>. <br /></td></tr>
+<tr class="separator:a04e9dab0244129158facfce6ccfb0509 inherit pub_static_methods_classxii_drag_drop_handler"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5aef074116c1d66b9dc087e7341fec3 inherit pub_static_methods_classxii_drag_drop_handler" id="r_ac5aef074116c1d66b9dc087e7341fec3"><td class="memItemLeft" align="right" valign="top">
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>DropOnly</b> (const <a class="el" href="../../d7/d7c/classxii_drag_drop_info.html">xiiDragDropInfo</a> *pInfo)</td></tr>
+<tr class="memdesc:ac5aef074116c1d66b9dc087e7341fec3 inherit pub_static_methods_classxii_drag_drop_handler"><td class="mdescLeft">&#160;</td><td class="mdescRight">Executes a complete drop action on a target that does not support continuous dragging. See also <a class="el" href="../../db/d24/classxii_drag_drop_handler.html#a04e9dab0244129158facfce6ccfb0509" title="For targets that do not support full dragging, but only dropping on a single target,...">CanDropOnly()</a>. <br /></td></tr>
+<tr class="separator:ac5aef074116c1d66b9dc087e7341fec3 inherit pub_static_methods_classxii_drag_drop_handler"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_static_methods_classxii_no_base"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_static_methods_classxii_no_base')"><img src="../../closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="../../d2/d38/classxii_no_base.html">xiiNoBase</a></td></tr>
+<tr class="memitem:a4bde433b55ebd55edf63c57239799bba inherit pub_static_methods_classxii_no_base" id="r_a4bde433b55ebd55edf63c57239799bba"><td class="memItemLeft" align="right" valign="top">
+static const <a class="el" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetStaticRTTI</b> ()</td></tr>
+<tr class="separator:a4bde433b55ebd55edf63c57239799bba inherit pub_static_methods_classxii_no_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a9e83ac78e5a0421de5523c3e73fe582b" name="a9e83ac78e5a0421de5523c3e73fe582b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e83ac78e5a0421de5523c3e73fe582b">&#9670;&#160;</a></span>CanHandle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float xiiComponentDragDropHandler::CanHandle </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d7/d7c/classxii_drag_drop_info.html">xiiDragDropInfo</a> *</td>          <td class="paramname"><span class="paramname"><em>pInfo</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Used to ask a handler whether it knows how to handle a certain drag &amp; drop situation. </p>
+<p>The return value is a priority. By default CanHandle should return 0 or 1. To override an existing handler, values larger than 1 may be returned to take precedence. </p>
+
+<p>Implements <a class="el" href="../../db/d24/classxii_drag_drop_handler.html#aac8c3f52c4a9aec0b3ba8ba292502ff9">xiiDragDropHandler</a>.</p>
+
+<p>Reimplemented in <a class="el" href="../../de/d38/classxii_animated_mesh_component_drag_drop_handler.html#a7b3e02f6ea501e4d4e056ba2f08be21b">xiiAnimatedMeshComponentDragDropHandler</a>, <a class="el" href="../../d6/d3b/classxii_decal_component_drag_drop_handler.html#a7f6b4ccef99a4b39d541c5e5891b0a2d">xiiDecalComponentDragDropHandler</a>, <a class="el" href="../../df/da5/classxii_mesh_component_drag_drop_handler.html#a9737ca346ab7932dbac3d921250004db">xiiMeshComponentDragDropHandler</a>, <a class="el" href="../../d5/d4b/classxii_prefab_component_drag_drop_handler.html#a13272bb5e414c00665d39a15bade9f98">xiiPrefabComponentDragDropHandler</a>, <a class="el" href="../../d0/d1a/classxii_skeleton_component_drag_drop_handler.html#a96369946894d86acf5b2f70c44bd593f">xiiSkeletonComponentDragDropHandler</a>, and <a class="el" href="../../de/d9d/classxii_visual_script_component_drag_drop_handler.html#a48c67d5c96bf935b48fc1ff706bfe5c0">xiiVisualScriptComponentDragDropHandler</a>.</p>
+
+</div>
+</div>
+<a id="a9823e7ee22aaa1d594e181dc46212a7f" name="a9823e7ee22aaa1d594e181dc46212a7f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9823e7ee22aaa1d594e181dc46212a7f">&#9670;&#160;</a></span>OnDragBegin()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void xiiComponentDragDropHandler::OnDragBegin </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d7/d7c/classxii_drag_drop_info.html">xiiDragDropInfo</a> *</td>          <td class="paramname"><span class="paramname"><em>pInfo</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Called shortly after CanHandle returned true to begin handling a drag operation. </p>
+
+<p>Implements <a class="el" href="../../db/d24/classxii_drag_drop_handler.html#a84cbf0e147bf4a773df034dc708bf2ca">xiiDragDropHandler</a>.</p>
+
+<p>Reimplemented in <a class="el" href="../../de/d38/classxii_animated_mesh_component_drag_drop_handler.html#abf3da90d9a3e64cf88d689779971a8d8">xiiAnimatedMeshComponentDragDropHandler</a>, <a class="el" href="../../d6/d3b/classxii_decal_component_drag_drop_handler.html#a3800e79a70a8d04183f08b3836e5401c">xiiDecalComponentDragDropHandler</a>, <a class="el" href="../../df/da5/classxii_mesh_component_drag_drop_handler.html#a5fa5248caf6ac5f13cab74a6e5c84c5f">xiiMeshComponentDragDropHandler</a>, <a class="el" href="../../d5/d4b/classxii_prefab_component_drag_drop_handler.html#a29080e5e4d3ad2d231c703022e5df05f">xiiPrefabComponentDragDropHandler</a>, <a class="el" href="../../d0/d1a/classxii_skeleton_component_drag_drop_handler.html#a9b3abbee53e1209f14a4d14f3c51f0f7">xiiSkeletonComponentDragDropHandler</a>, and <a class="el" href="../../de/d9d/classxii_visual_script_component_drag_drop_handler.html#af01f99b6ef483aa1a799600598348e61">xiiVisualScriptComponentDragDropHandler</a>.</p>
+
+</div>
+</div>
+<a id="a42915a7d6bd926f16108306c49dbdd39" name="a42915a7d6bd926f16108306c49dbdd39"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a42915a7d6bd926f16108306c49dbdd39">&#9670;&#160;</a></span>OnDragCancel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void xiiComponentDragDropHandler::OnDragCancel </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Called when the drag operation leaves the designated area. The handler will be destroyed after this. It should clean up all temporary objects that it created before. </p>
+
+<p>Implements <a class="el" href="../../db/d24/classxii_drag_drop_handler.html#a6527998a70aab9f733b05e8393c4a861">xiiDragDropHandler</a>.</p>
+
+</div>
+</div>
+<a id="ae9a2c50e10d38164c29c0f50c1234313" name="ae9a2c50e10d38164c29c0f50c1234313"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae9a2c50e10d38164c29c0f50c1234313">&#9670;&#160;</a></span>OnDragUpdate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void xiiComponentDragDropHandler::OnDragUpdate </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d7/d7c/classxii_drag_drop_info.html">xiiDragDropInfo</a> *</td>          <td class="paramname"><span class="paramname"><em>pInfo</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Called to update the drag operation with the latest state. </p>
+
+<p>Implements <a class="el" href="../../db/d24/classxii_drag_drop_handler.html#adcbb1e87bb8df5f924bd94190b84bacf">xiiDragDropHandler</a>.</p>
+
+<p>Reimplemented in <a class="el" href="../../d5/d4b/classxii_prefab_component_drag_drop_handler.html#aa591a3e530f473b9bfd0872d09c1203b">xiiPrefabComponentDragDropHandler</a>.</p>
+
+</div>
+</div>
+<a id="aeb6bec730f7fdf849a6529b969caba67" name="aeb6bec730f7fdf849a6529b969caba67"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb6bec730f7fdf849a6529b969caba67">&#9670;&#160;</a></span>OnDrop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void xiiComponentDragDropHandler::OnDrop </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d7/d7c/classxii_drag_drop_info.html">xiiDragDropInfo</a> *</td>          <td class="paramname"><span class="paramname"><em>pInfo</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Final call to finish the drag &amp; drop operation. Handler is destroyed after this. </p>
+
+<p>Implements <a class="el" href="../../db/d24/classxii_drag_drop_handler.html#aae176bd5a5237c70c188b928564c4e20">xiiDragDropHandler</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li>/home/runner/work/XII/XII/Source/Editor/EditorFramework/DragDrop/<a class="el" href="../../d9/d17/_component_drag_drop_handler_8h_source.html">ComponentDragDropHandler.h</a></li>
+<li>/home/runner/work/XII/XII/Source/Editor/EditorFramework/DragDrop/Implementation/<b>ComponentDragDropHandler.cpp</b></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../dc/da3/classxii_component_drag_drop_handler.html">xiiComponentDragDropHandler</a></li>
+    <li class="footer">Generated on Mon Jul 1 2024 23:53:13 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+  </ul>
+</div>
+</body>
+</html>

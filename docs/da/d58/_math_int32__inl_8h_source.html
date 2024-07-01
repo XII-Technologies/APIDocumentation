@@ -1,0 +1,238 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.11.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<!-- BEGIN opengraph metadata -->
+<meta property="og:title" content="XII" />
+<meta property="og:image" content="../../XII-Logo.png" />
+<meta property="og:description" content="An advanced high-performance simulation engine." />
+<meta property="og:url" content="https://www.xiitechnologies.com" />
+<!-- END opengraph metadata -->
+<!-- BEGIN twitter metadata -->
+<meta name="twitter:image:src" content="../../XII-Logo.png" />
+<meta name="twitter:title" content="XII" />
+<meta name="twitter:description" content="An advanced high-performance simulation engine." />
+<!-- END twitter metadata -->
+<title>XII: /home/runner/work/XII/XII/Source/Engine/Foundation/Math/Implementation/MathInt32_inl.h Source File</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link rel="icon" type="image/svg+xml" href="logo.drawio.svg"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="../../toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../custom.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<a href="https://github.com/jothepro/doxygen-awesome-css" class="github-corner" title="View source on GitHub" target="_blank" rel="noopener noreferrer">
+    <svg viewBox="0 0 250 250" width="40" height="40" style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+    <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="../../XII-Logo.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">XII
+   &#160;<span id="projectnumber">1.0.0</span>
+   </div>
+   <div id="projectbrief">A high-performance simulation engine.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(1); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.html','Search',true);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('da/d58/_math_int32__inl_8h_source.html','../../'); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">MathInt32_inl.h</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="keyword">namespace </span><a class="code hl_namespace" href="../../d1/d37/namespacexii_math.html">xiiMath</a></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span>{</div>
+<div class="foldopen" id="foldopen00005" data-start="{" data-end="}">
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno"><a class="line" href="../../d1/d37/namespacexii_math.html#aed3e7976aa397630f394391f3a65c819">    5</a></span>  <span class="keyword">constexpr</span> XII_ALWAYS_INLINE xiiInt32 <a class="code hl_function" href="../../d1/d37/namespacexii_math.html#ac1f5594619b1d549e6994c8c2a75e339">RoundUp</a>(xiiInt32 value, xiiUInt16 uiMultiple)</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>  {</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>    <span class="comment">//</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>    <span class="keywordflow">return</span> (value &gt;= 0) ? ((value + uiMultiple - 1) / uiMultiple) * uiMultiple : (value / uiMultiple) * uiMultiple;</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>  }</div>
+</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="foldopen" id="foldopen00011" data-start="{" data-end="}">
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="../../d1/d37/namespacexii_math.html#a745776b77234f441aefb1f7a4d105fc7">   11</a></span>  <span class="keyword">constexpr</span> XII_ALWAYS_INLINE xiiInt32 <a class="code hl_function" href="../../d1/d37/namespacexii_math.html#aa9887884d637a3a00c63f02585a5e8f2">RoundDown</a>(xiiInt32 value, xiiUInt16 uiMultiple)</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>  {</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    <span class="comment">//</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    <span class="keywordflow">return</span> (value &lt;= 0) ? ((value - uiMultiple + 1) / uiMultiple) * uiMultiple : (value / uiMultiple) * uiMultiple;</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>  }</div>
+</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
+<div class="foldopen" id="foldopen00017" data-start="{" data-end="}">
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="../../d1/d37/namespacexii_math.html#aaf6a99b25c756191af9eeb50281d5c8d">   17</a></span>  <span class="keyword">constexpr</span> XII_ALWAYS_INLINE xiiUInt32 <a class="code hl_function" href="../../d1/d37/namespacexii_math.html#ac1f5594619b1d549e6994c8c2a75e339">RoundUp</a>(xiiUInt32 value, xiiUInt16 uiMultiple)</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>  {</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <span class="comment">//</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    <span class="keywordflow">return</span> ((value + uiMultiple - 1) / uiMultiple) * uiMultiple;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>  }</div>
+</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
+<div class="foldopen" id="foldopen00023" data-start="{" data-end="}">
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="../../d1/d37/namespacexii_math.html#a1b75751c2f1b47f5028bf1dbdb433e1a">   23</a></span>  <span class="keyword">constexpr</span> XII_ALWAYS_INLINE xiiUInt32 <a class="code hl_function" href="../../d1/d37/namespacexii_math.html#aa9887884d637a3a00c63f02585a5e8f2">RoundDown</a>(xiiUInt32 value, xiiUInt16 uiMultiple)</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>  {</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <span class="comment">//</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <span class="keywordflow">return</span> (value / uiMultiple) * uiMultiple;</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>  }</div>
+</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
+<div class="foldopen" id="foldopen00029" data-start="{" data-end="}">
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="../../d1/d37/namespacexii_math.html#a1e395e60cd580e5b5b0b70c0cd2aee29">   29</a></span>  <span class="keyword">constexpr</span> XII_ALWAYS_INLINE <span class="keywordtype">bool</span> <a class="code hl_function" href="../../d1/d37/namespacexii_math.html#a1e395e60cd580e5b5b0b70c0cd2aee29">IsOdd</a>(xiiInt32 i)</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>  {</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <span class="comment">//</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <span class="keywordflow">return</span> ((i &amp; 1) != 0);</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>  }</div>
+</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
+<div class="foldopen" id="foldopen00035" data-start="{" data-end="}">
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="../../d1/d37/namespacexii_math.html#ad047c18fb9a65f92db2bd48100cfc926">   35</a></span>  <span class="keyword">constexpr</span> XII_ALWAYS_INLINE <span class="keywordtype">bool</span> <a class="code hl_function" href="../../d1/d37/namespacexii_math.html#ad047c18fb9a65f92db2bd48100cfc926">IsEven</a>(xiiInt32 i)</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>  {</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <span class="comment">//</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <span class="keywordflow">return</span> ((i &amp; 1) == 0);</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>  }</div>
+</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="foldopen" id="foldopen00041" data-start="{" data-end="}">
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="../../d1/d37/namespacexii_math.html#aae654100da810abeac0d11e755a66d15">   41</a></span>  XII_ALWAYS_INLINE xiiUInt32 <a class="code hl_function" href="../../d1/d37/namespacexii_math.html#aae654100da810abeac0d11e755a66d15">Log2i</a>(xiiUInt32 uiVal)</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>  {</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <span class="keywordflow">return</span> (uiVal != 0) ? <a class="code hl_function" href="../../d1/d37/namespacexii_math.html#a7e3584835296e437fd4c4c0354576c5a">FirstBitHigh</a>(uiVal) : -1;</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>  }</div>
+</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
+<div class="foldopen" id="foldopen00046" data-start="{" data-end="}">
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="../../d1/d37/namespacexii_math.html#af230916c7860e92ed9076dd13f5c334a">   46</a></span>  <span class="keyword">constexpr</span> XII_ALWAYS_INLINE xiiInt32 <a class="code hl_function" href="../../d1/d37/namespacexii_math.html#a09df335eb258cf1ed2260e20b1e7f259">Pow2</a>(xiiInt32 i)</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>  {</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <span class="comment">//</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <span class="keywordflow">return</span> (1 &lt;&lt; i);</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>  }</div>
+</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
+<div class="foldopen" id="foldopen00052" data-start="{" data-end="}">
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="../../d1/d37/namespacexii_math.html#a5487ef469f7a95de54b82b19852a47ca">   52</a></span>  <span class="keyword">inline</span> xiiInt32 <a class="code hl_function" href="../../d1/d37/namespacexii_math.html#affaa843501c52942ae9074d478cd48cf">Pow</a>(xiiInt32 iBase, xiiInt32 iExp)</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>  {</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    xiiInt32 res = 1;</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    <span class="keywordflow">while</span> (iExp &gt; 0)</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    {</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>      res *= iBase;</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>      --iExp;</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    }</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    <span class="keywordflow">return</span> res;</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>  }</div>
+</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>} <span class="comment">// namespace xiiMath</span></div>
+<div class="ttc" id="anamespacexii_math_html"><div class="ttname"><a href="../../d1/d37/namespacexii_math.html">xiiMath</a></div><div class="ttdoc">This namespace provides common math-functionality as functions.</div><div class="ttdef"><b>Definition</b> Constants.h:6</div></div>
+<div class="ttc" id="anamespacexii_math_html_a09df335eb258cf1ed2260e20b1e7f259"><div class="ttname"><a href="../../d1/d37/namespacexii_math.html#a09df335eb258cf1ed2260e20b1e7f259">xiiMath::Pow2</a></div><div class="ttdeci">XII_ALWAYS_INLINE double Pow2(double f)</div><div class="ttdoc">Returns 2^f.</div><div class="ttdef"><b>Definition</b> MathDouble_inl.h:105</div></div>
+<div class="ttc" id="anamespacexii_math_html_a1e395e60cd580e5b5b0b70c0cd2aee29"><div class="ttname"><a href="../../d1/d37/namespacexii_math.html#a1e395e60cd580e5b5b0b70c0cd2aee29">xiiMath::IsOdd</a></div><div class="ttdeci">constexpr XII_ALWAYS_INLINE bool IsOdd(xiiInt32 i)</div><div class="ttdoc">Returns true, if i is an odd number.</div><div class="ttdef"><b>Definition</b> MathInt32_inl.h:29</div></div>
+<div class="ttc" id="anamespacexii_math_html_a7e3584835296e437fd4c4c0354576c5a"><div class="ttname"><a href="../../d1/d37/namespacexii_math.html#a7e3584835296e437fd4c4c0354576c5a">xiiMath::FirstBitHigh</a></div><div class="ttdeci">XII_ALWAYS_INLINE xiiUInt32 FirstBitHigh(xiiUInt32 value)</div><div class="ttdoc">Returns the index of the most significant bit set.</div><div class="ttdef"><b>Definition</b> Math_inl.h:118</div></div>
+<div class="ttc" id="anamespacexii_math_html_aa9887884d637a3a00c63f02585a5e8f2"><div class="ttname"><a href="../../d1/d37/namespacexii_math.html#aa9887884d637a3a00c63f02585a5e8f2">xiiMath::RoundDown</a></div><div class="ttdeci">double RoundDown(double f, double fMultiple)</div><div class="ttdoc">Returns a multiple of fMultiple that is smaller than f.</div><div class="ttdef"><b>Definition</b> MathDouble_inl.h:61</div></div>
+<div class="ttc" id="anamespacexii_math_html_aae654100da810abeac0d11e755a66d15"><div class="ttname"><a href="../../d1/d37/namespacexii_math.html#aae654100da810abeac0d11e755a66d15">xiiMath::Log2i</a></div><div class="ttdeci">XII_ALWAYS_INLINE xiiUInt32 Log2i(xiiUInt32 uiVal)</div><div class="ttdoc">Returns the integral logarithm to the base 2, that comes closest to the given integer.</div><div class="ttdef"><b>Definition</b> MathInt32_inl.h:41</div></div>
+<div class="ttc" id="anamespacexii_math_html_ac1f5594619b1d549e6994c8c2a75e339"><div class="ttname"><a href="../../d1/d37/namespacexii_math.html#ac1f5594619b1d549e6994c8c2a75e339">xiiMath::RoundUp</a></div><div class="ttdeci">double RoundUp(double f, double fMultiple)</div><div class="ttdoc">Returns a multiple of fMultiple that is larger than f.</div><div class="ttdef"><b>Definition</b> MathDouble_inl.h:68</div></div>
+<div class="ttc" id="anamespacexii_math_html_ad047c18fb9a65f92db2bd48100cfc926"><div class="ttname"><a href="../../d1/d37/namespacexii_math.html#ad047c18fb9a65f92db2bd48100cfc926">xiiMath::IsEven</a></div><div class="ttdeci">constexpr XII_ALWAYS_INLINE bool IsEven(xiiInt32 i)</div><div class="ttdoc">Returns true, if i is an even number.</div><div class="ttdef"><b>Definition</b> MathInt32_inl.h:35</div></div>
+<div class="ttc" id="anamespacexii_math_html_affaa843501c52942ae9074d478cd48cf"><div class="ttname"><a href="../../d1/d37/namespacexii_math.html#affaa843501c52942ae9074d478cd48cf">xiiMath::Pow</a></div><div class="ttdeci">XII_ALWAYS_INLINE double Pow(double fBase, double fExp)</div><div class="ttdoc">Returns base^exp.</div><div class="ttdef"><b>Definition</b> MathDouble_inl.h:110</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.html">home</a></li><li class="navelem"><a class="el" href="../../dir_1036706e55c22cab35bc1c58ee689f1d.html">runner</a></li><li class="navelem"><a class="el" href="../../dir_629f8151d55d307162ff2d619fb1783d.html">work</a></li><li class="navelem"><a class="el" href="../../dir_1ddc44fe1263a8c7935fa6130b7d9499.html">XII</a></li><li class="navelem"><a class="el" href="../../dir_2c1b6808f12952f4c36e05ba7068379a.html">XII</a></li><li class="navelem"><a class="el" href="../../dir_b5a1c4ecfca018ad24b729e213296d41.html">Source</a></li><li class="navelem"><a class="el" href="../../dir_e321052006a51284e67389ab20037e7c.html">Engine</a></li><li class="navelem"><a class="el" href="../../dir_be0c42c58b36f42c54ec54024ed4f6af.html">Foundation</a></li><li class="navelem"><a class="el" href="../../dir_c1b0860bb61ff24e678d996d14e4bcdd.html">Math</a></li><li class="navelem"><a class="el" href="../../dir_fb7e93d80251333452775ccd3b7c417a.html">Implementation</a></li><li class="navelem"><b>MathInt32_inl.h</b></li>
+    <li class="footer">Generated on Mon Jul 1 2024 23:53:09 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,243 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.11.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<!-- BEGIN opengraph metadata -->
+<meta property="og:title" content="XII" />
+<meta property="og:image" content="../../XII-Logo.png" />
+<meta property="og:description" content="An advanced high-performance simulation engine." />
+<meta property="og:url" content="https://www.xiitechnologies.com" />
+<!-- END opengraph metadata -->
+<!-- BEGIN twitter metadata -->
+<meta name="twitter:image:src" content="../../XII-Logo.png" />
+<meta name="twitter:title" content="XII" />
+<meta name="twitter:description" content="An advanced high-performance simulation engine." />
+<!-- END twitter metadata -->
+<title>XII: /home/runner/work/XII/XII/Source/Engine/Utilities/PathFinding/GridNavmesh.h Source File</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link rel="icon" type="image/svg+xml" href="logo.drawio.svg"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="../../toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../custom.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<a href="https://github.com/jothepro/doxygen-awesome-css" class="github-corner" title="View source on GitHub" target="_blank" rel="noopener noreferrer">
+    <svg viewBox="0 0 250 250" width="40" height="40" style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+    <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="../../XII-Logo.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">XII
+   &#160;<span id="projectnumber">1.0.0</span>
+   </div>
+   <div id="projectbrief">A high-performance simulation engine.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(1); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.html','Search',true);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('d8/db3/_grid_navmesh_8h_source.html','../../'); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">GridNavmesh.h</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &lt;Foundation/Containers/Deque.h&gt;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;Foundation/Math/Rect.h&gt;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;Utilities/DataStructures/GameGrid.h&gt;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
+<div class="foldopen" id="foldopen00008" data-start="{" data-end="};">
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno"><a class="line" href="../../df/d99/classxii_grid_navmesh.html">    8</a></span><span class="keyword">class </span>XII_UTILITIES_DLL <a class="code hl_class" href="../../df/d99/classxii_grid_navmesh.html">xiiGridNavmesh</a></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>{</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="keyword">public</span>:</div>
+<div class="foldopen" id="foldopen00011" data-start="{" data-end="};">
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="../../da/d1b/structxii_grid_navmesh_1_1_convex_area.html">   11</a></span>  <span class="keyword">struct </span><a class="code hl_struct" href="../../da/d1b/structxii_grid_navmesh_1_1_convex_area.html">ConvexArea</a></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>  {</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    XII_DECLARE_POD_TYPE();</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="../../da/d1b/structxii_grid_navmesh_1_1_convex_area.html#aecdaa1ad9a800e7d1db38389410df306">   16</a></span>    <a class="code hl_class" href="../../d2/d1d/classxii_rect_template.html">xiiRectU32</a> <a class="code hl_variable" href="../../da/d1b/structxii_grid_navmesh_1_1_convex_area.html#aecdaa1ad9a800e7d1db38389410df306">m_Rect</a>;</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="../../da/d1b/structxii_grid_navmesh_1_1_convex_area.html#ad6972997008b821511515bcece1b0e6f">   19</a></span>    xiiUInt32 <a class="code hl_variable" href="../../da/d1b/structxii_grid_navmesh_1_1_convex_area.html#ad6972997008b821511515bcece1b0e6f">m_uiFirstEdge</a>;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="../../da/d1b/structxii_grid_navmesh_1_1_convex_area.html#a73c2b974def4f3aec095b851f1a6c4cf">   22</a></span>    xiiUInt32 <a class="code hl_variable" href="../../da/d1b/structxii_grid_navmesh_1_1_convex_area.html#a73c2b974def4f3aec095b851f1a6c4cf">m_uiNumEdges</a>;</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>  };</div>
+</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="foldopen" id="foldopen00025" data-start="{" data-end="};">
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="../../d9/d5d/structxii_grid_navmesh_1_1_area_edge.html">   25</a></span>  <span class="keyword">struct </span><a class="code hl_struct" href="../../d9/d5d/structxii_grid_navmesh_1_1_area_edge.html">AreaEdge</a></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>  {</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    XII_DECLARE_POD_TYPE();</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="../../d9/d5d/structxii_grid_navmesh_1_1_area_edge.html#a64c15d088d143959072d5c3e95a676ca">   31</a></span>    <a class="code hl_class" href="../../d2/d1d/classxii_rect_template.html">xiiRectU16</a> <a class="code hl_variable" href="../../d9/d5d/structxii_grid_navmesh_1_1_area_edge.html#a64c15d088d143959072d5c3e95a676ca">m_EdgeRect</a>;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="../../d9/d5d/structxii_grid_navmesh_1_1_area_edge.html#a3f0ce1e50f2adfff042aada7c1f6c5db">   34</a></span>    xiiInt32 <a class="code hl_variable" href="../../d9/d5d/structxii_grid_navmesh_1_1_area_edge.html#a3f0ce1e50f2adfff042aada7c1f6c5db">m_iNeighborArea</a>;</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>  };</div>
+</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="../../df/d99/classxii_grid_navmesh.html#af26c5cb8f31e33fae5bc8844a107b968">   39</a></span>  <span class="keyword">using </span><a class="code hl_typedef" href="../../df/d99/classxii_grid_navmesh.html#af26c5cb8f31e33fae5bc8844a107b968">CellComparator</a> = bool (*)(xiiUInt32, xiiUInt32, <span class="keywordtype">void</span>*);</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="../../df/d99/classxii_grid_navmesh.html#a92fb5f09af0c23fc3f3d6b69ba68b686">   43</a></span>  <span class="keyword">using </span><a class="code hl_typedef" href="../../df/d99/classxii_grid_navmesh.html#a92fb5f09af0c23fc3f3d6b69ba68b686">CellBlocked</a> = bool (*)(xiiUInt32, <span class="keywordtype">void</span>*);</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>  <span class="keyword">template</span> &lt;<span class="keyword">class</span> CellData&gt;</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>  <span class="keywordtype">void</span> CreateFromGrid(<span class="keyword">const</span> <a class="code hl_class" href="../../dc/d30/classxii_game_grid.html">xiiGameGrid&lt;CellData&gt;</a>&amp; grid, <a class="code hl_typedef" href="../../df/d99/classxii_grid_navmesh.html#af26c5cb8f31e33fae5bc8844a107b968">CellComparator</a> isSameCellType, <span class="keywordtype">void</span>* pPassThroughSame, <a class="code hl_typedef" href="../../df/d99/classxii_grid_navmesh.html#a92fb5f09af0c23fc3f3d6b69ba68b686">CellBlocked</a> isCellBlocked, <span class="keywordtype">void</span>* pPassThroughBlocked);</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="../../df/d99/classxii_grid_navmesh.html#ade09307b7928de6c9609ef7d2d83dd7c">   50</a></span>  xiiInt32 <a class="code hl_function" href="../../df/d99/classxii_grid_navmesh.html#ade09307b7928de6c9609ef7d2d83dd7c">GetAreaAt</a>(<span class="keyword">const</span> <a class="code hl_class" href="../../d1/d0d/classxii_vec2_template.html">xiiVec2I32</a>&amp; vCoord)<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_NodesGrid.GetCell(vCoord); }</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="../../df/d99/classxii_grid_navmesh.html#a199ebbb8ab6a00ae3c29e52b9a1ddda4">   53</a></span>  xiiUInt32 <a class="code hl_function" href="../../df/d99/classxii_grid_navmesh.html#a199ebbb8ab6a00ae3c29e52b9a1ddda4">GetNumConvexAreas</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_ConvexAreas.GetCount(); }</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="../../df/d99/classxii_grid_navmesh.html#a343cf70d5fa5448ea88a974cf07d03a5">   56</a></span>  <span class="keyword">const</span> <a class="code hl_struct" href="../../da/d1b/structxii_grid_navmesh_1_1_convex_area.html">ConvexArea</a>&amp; <a class="code hl_function" href="../../df/d99/classxii_grid_navmesh.html#a343cf70d5fa5448ea88a974cf07d03a5">GetConvexArea</a>(xiiInt32 iArea)<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_ConvexAreas[iArea]; }</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="../../df/d99/classxii_grid_navmesh.html#ae195a5e22535be20f6db4fb082e4f529">   59</a></span>  xiiUInt32 <a class="code hl_function" href="../../df/d99/classxii_grid_navmesh.html#ae195a5e22535be20f6db4fb082e4f529">GetNumAreaEdges</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_GraphEdges.GetCount(); }</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="../../df/d99/classxii_grid_navmesh.html#a0f34f85dac3704f2cd2756e6eafffc35">   62</a></span>  <span class="keyword">const</span> <a class="code hl_struct" href="../../d9/d5d/structxii_grid_navmesh_1_1_area_edge.html">AreaEdge</a>&amp; <a class="code hl_function" href="../../df/d99/classxii_grid_navmesh.html#a0f34f85dac3704f2cd2756e6eafffc35">GetAreaEdge</a>(xiiInt32 iAreaEdge)<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_GraphEdges[iAreaEdge]; }</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>  <span class="keywordtype">void</span> UpdateRegion(<a class="code hl_class" href="../../d2/d1d/classxii_rect_template.html">xiiRectU32</a> region, CellComparator IsSameCellType, <span class="keywordtype">void</span>* pPassThrough1, CellBlocked IsCellBlocked, <span class="keywordtype">void</span>* pPassThrough2);</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>  <span class="keywordtype">void</span> Optimize(<a class="code hl_class" href="../../d2/d1d/classxii_rect_template.html">xiiRectU32</a> region, CellComparator IsSameCellType, <span class="keywordtype">void</span>* pPassThrough);</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>  <span class="keywordtype">bool</span> OptimizeBoxes(<a class="code hl_class" href="../../d2/d1d/classxii_rect_template.html">xiiRectU32</a> region, CellComparator IsSameCellType, <span class="keywordtype">void</span>* pPassThrough, xiiUInt32 uiIntervalX, xiiUInt32 uiIntervalY, xiiUInt32 uiWidth, xiiUInt32 uiHeight, xiiUInt32 uiOffsetX = 0, xiiUInt32 uiOffsetY = 0);</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>  <span class="keywordtype">bool</span> CanCreateArea(<a class="code hl_class" href="../../d2/d1d/classxii_rect_template.html">xiiRectU32</a> region, CellComparator IsSameCellType, <span class="keywordtype">void</span>* pPassThrough) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>  <span class="keywordtype">bool</span> CanMergeRight(xiiInt32 x, xiiInt32 y, CellComparator IsSameCellType, <span class="keywordtype">void</span>* pPassThrough, <a class="code hl_class" href="../../d2/d1d/classxii_rect_template.html">xiiRectU32</a>&amp; out_Result) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>  <span class="keywordtype">bool</span> CanMergeDown(xiiInt32 x, xiiInt32 y, CellComparator IsSameCellType, <span class="keywordtype">void</span>* pPassThrough, <a class="code hl_class" href="../../d2/d1d/classxii_rect_template.html">xiiRectU32</a>&amp; out_Result) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>  <span class="keywordtype">bool</span> MergeBestFit(<a class="code hl_class" href="../../d2/d1d/classxii_rect_template.html">xiiRectU32</a> region, CellComparator IsSameCellType, <span class="keywordtype">void</span>* pPassThrough);</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>  <span class="keywordtype">void</span> CreateGraphEdges();</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>  <span class="keywordtype">void</span> CreateGraphEdges(ConvexArea&amp; Area);</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>  <a class="code hl_class" href="../../d2/d1d/classxii_rect_template.html">xiiRectU32</a> GetCellBBox(xiiInt32 x, xiiInt32 y) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>  <span class="keywordtype">void</span>       Merge(<span class="keyword">const</span> <a class="code hl_class" href="../../d2/d1d/classxii_rect_template.html">xiiRectU32</a>&amp; rect);</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>  <span class="keywordtype">void</span>       CreateNodes(<a class="code hl_class" href="../../d2/d1d/classxii_rect_template.html">xiiRectU32</a> region, CellBlocked IsCellBlocked, <span class="keywordtype">void</span>* pPassThrough);</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>  <a class="code hl_class" href="../../dc/d30/classxii_game_grid.html">xiiGameGrid&lt;xiiInt32&gt;</a>       m_NodesGrid;</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>  <a class="code hl_class" href="../../dc/da4/classxii_dynamic_array.html">xiiDynamicArray&lt;ConvexArea&gt;</a> m_ConvexAreas;</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>  <a class="code hl_class" href="../../d8/df8/classxii_deque.html">xiiDeque&lt;AreaEdge&gt;</a>          m_GraphEdges;</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>};</div>
+</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span> </div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span><span class="preprocessor">#include &lt;Utilities/PathFinding/Implementation/GridNavmesh_inl.h&gt;</span></div>
+<div class="ttc" id="aclassxii_deque_html"><div class="ttname"><a href="../../d8/df8/classxii_deque.html">xiiDeque</a></div><div class="ttdef"><b>Definition</b> Deque.h:267</div></div>
+<div class="ttc" id="aclassxii_dynamic_array_html"><div class="ttname"><a href="../../dc/da4/classxii_dynamic_array.html">xiiDynamicArray</a></div><div class="ttdef"><b>Definition</b> DynamicArray.h:81</div></div>
+<div class="ttc" id="aclassxii_game_grid_html"><div class="ttname"><a href="../../dc/d30/classxii_game_grid.html">xiiGameGrid</a></div><div class="ttdoc">xiiGameGrid is a general purpose 2D grid structure that has several convenience functions which are o...</div><div class="ttdef"><b>Definition</b> GameGrid.h:13</div></div>
+<div class="ttc" id="aclassxii_grid_navmesh_html"><div class="ttname"><a href="../../df/d99/classxii_grid_navmesh.html">xiiGridNavmesh</a></div><div class="ttdoc">Takes a xiiGameGrid and creates an optimized navmesh structure from it, that is more efficient for pa...</div><div class="ttdef"><b>Definition</b> GridNavmesh.h:9</div></div>
+<div class="ttc" id="aclassxii_grid_navmesh_html_a0f34f85dac3704f2cd2756e6eafffc35"><div class="ttname"><a href="../../df/d99/classxii_grid_navmesh.html#a0f34f85dac3704f2cd2756e6eafffc35">xiiGridNavmesh::GetAreaEdge</a></div><div class="ttdeci">const AreaEdge &amp; GetAreaEdge(xiiInt32 iAreaEdge) const</div><div class="ttdoc">Returns the given area edge by index.</div><div class="ttdef"><b>Definition</b> GridNavmesh.h:62</div></div>
+<div class="ttc" id="aclassxii_grid_navmesh_html_a199ebbb8ab6a00ae3c29e52b9a1ddda4"><div class="ttname"><a href="../../df/d99/classxii_grid_navmesh.html#a199ebbb8ab6a00ae3c29e52b9a1ddda4">xiiGridNavmesh::GetNumConvexAreas</a></div><div class="ttdeci">xiiUInt32 GetNumConvexAreas() const</div><div class="ttdoc">Returns the number of convex areas that this navmesh consists of.</div><div class="ttdef"><b>Definition</b> GridNavmesh.h:53</div></div>
+<div class="ttc" id="aclassxii_grid_navmesh_html_a343cf70d5fa5448ea88a974cf07d03a5"><div class="ttname"><a href="../../df/d99/classxii_grid_navmesh.html#a343cf70d5fa5448ea88a974cf07d03a5">xiiGridNavmesh::GetConvexArea</a></div><div class="ttdeci">const ConvexArea &amp; GetConvexArea(xiiInt32 iArea) const</div><div class="ttdoc">Returns the given convex area by index.</div><div class="ttdef"><b>Definition</b> GridNavmesh.h:56</div></div>
+<div class="ttc" id="aclassxii_grid_navmesh_html_a92fb5f09af0c23fc3f3d6b69ba68b686"><div class="ttname"><a href="../../df/d99/classxii_grid_navmesh.html#a92fb5f09af0c23fc3f3d6b69ba68b686">xiiGridNavmesh::CellBlocked</a></div><div class="ttdeci">bool(*)(xiiUInt32, void *) CellBlocked</div><div class="ttdoc">Callback that determines whether the cell with index uiCell is blocked entirely (for every type of un...</div><div class="ttdef"><b>Definition</b> GridNavmesh.h:43</div></div>
+<div class="ttc" id="aclassxii_grid_navmesh_html_ade09307b7928de6c9609ef7d2d83dd7c"><div class="ttname"><a href="../../df/d99/classxii_grid_navmesh.html#ade09307b7928de6c9609ef7d2d83dd7c">xiiGridNavmesh::GetAreaAt</a></div><div class="ttdeci">xiiInt32 GetAreaAt(const xiiVec2I32 &amp;vCoord) const</div><div class="ttdoc">Returns the index of the ConvexArea at the given cell coordinates. Negative, if the cell is blocked.</div><div class="ttdef"><b>Definition</b> GridNavmesh.h:50</div></div>
+<div class="ttc" id="aclassxii_grid_navmesh_html_ae195a5e22535be20f6db4fb082e4f529"><div class="ttname"><a href="../../df/d99/classxii_grid_navmesh.html#ae195a5e22535be20f6db4fb082e4f529">xiiGridNavmesh::GetNumAreaEdges</a></div><div class="ttdeci">xiiUInt32 GetNumAreaEdges() const</div><div class="ttdoc">Returns the number of edges between convex areas.</div><div class="ttdef"><b>Definition</b> GridNavmesh.h:59</div></div>
+<div class="ttc" id="aclassxii_grid_navmesh_html_af26c5cb8f31e33fae5bc8844a107b968"><div class="ttname"><a href="../../df/d99/classxii_grid_navmesh.html#af26c5cb8f31e33fae5bc8844a107b968">xiiGridNavmesh::CellComparator</a></div><div class="ttdeci">bool(*)(xiiUInt32, xiiUInt32, void *) CellComparator</div><div class="ttdoc">Callback that determines whether the cell with index uiCell1 and the cell with index uiCell2 represen...</div><div class="ttdef"><b>Definition</b> GridNavmesh.h:39</div></div>
+<div class="ttc" id="aclassxii_rect_template_html"><div class="ttname"><a href="../../d2/d1d/classxii_rect_template.html">xiiRectTemplate&lt; xiiUInt32 &gt;</a></div></div>
+<div class="ttc" id="aclassxii_vec2_template_html"><div class="ttname"><a href="../../d1/d0d/classxii_vec2_template.html">xiiVec2Template&lt; xiiInt32 &gt;</a></div></div>
+<div class="ttc" id="astructxii_grid_navmesh_1_1_area_edge_html"><div class="ttname"><a href="../../d9/d5d/structxii_grid_navmesh_1_1_area_edge.html">xiiGridNavmesh::AreaEdge</a></div><div class="ttdef"><b>Definition</b> GridNavmesh.h:26</div></div>
+<div class="ttc" id="astructxii_grid_navmesh_1_1_area_edge_html_a3f0ce1e50f2adfff042aada7c1f6c5db"><div class="ttname"><a href="../../d9/d5d/structxii_grid_navmesh_1_1_area_edge.html#a3f0ce1e50f2adfff042aada7c1f6c5db">xiiGridNavmesh::AreaEdge::m_iNeighborArea</a></div><div class="ttdeci">xiiInt32 m_iNeighborArea</div><div class="ttdoc">The index of the area that can be reached over this edge. This is always a valid index.</div><div class="ttdef"><b>Definition</b> GridNavmesh.h:34</div></div>
+<div class="ttc" id="astructxii_grid_navmesh_1_1_area_edge_html_a64c15d088d143959072d5c3e95a676ca"><div class="ttname"><a href="../../d9/d5d/structxii_grid_navmesh_1_1_area_edge.html#a64c15d088d143959072d5c3e95a676ca">xiiGridNavmesh::AreaEdge::m_EdgeRect</a></div><div class="ttdeci">xiiRectU16 m_EdgeRect</div><div class="ttdef"><b>Definition</b> GridNavmesh.h:31</div></div>
+<div class="ttc" id="astructxii_grid_navmesh_1_1_convex_area_html"><div class="ttname"><a href="../../da/d1b/structxii_grid_navmesh_1_1_convex_area.html">xiiGridNavmesh::ConvexArea</a></div><div class="ttdef"><b>Definition</b> GridNavmesh.h:12</div></div>
+<div class="ttc" id="astructxii_grid_navmesh_1_1_convex_area_html_a73c2b974def4f3aec095b851f1a6c4cf"><div class="ttname"><a href="../../da/d1b/structxii_grid_navmesh_1_1_convex_area.html#a73c2b974def4f3aec095b851f1a6c4cf">xiiGridNavmesh::ConvexArea::m_uiNumEdges</a></div><div class="ttdeci">xiiUInt32 m_uiNumEdges</div><div class="ttdoc">The number of AreaEdge's that belong to this ConvexArea.</div><div class="ttdef"><b>Definition</b> GridNavmesh.h:22</div></div>
+<div class="ttc" id="astructxii_grid_navmesh_1_1_convex_area_html_ad6972997008b821511515bcece1b0e6f"><div class="ttname"><a href="../../da/d1b/structxii_grid_navmesh_1_1_convex_area.html#ad6972997008b821511515bcece1b0e6f">xiiGridNavmesh::ConvexArea::m_uiFirstEdge</a></div><div class="ttdeci">xiiUInt32 m_uiFirstEdge</div><div class="ttdoc">The first AreaEdge that belongs to this ConvexArea.</div><div class="ttdef"><b>Definition</b> GridNavmesh.h:19</div></div>
+<div class="ttc" id="astructxii_grid_navmesh_1_1_convex_area_html_aecdaa1ad9a800e7d1db38389410df306"><div class="ttname"><a href="../../da/d1b/structxii_grid_navmesh_1_1_convex_area.html#aecdaa1ad9a800e7d1db38389410df306">xiiGridNavmesh::ConvexArea::m_Rect</a></div><div class="ttdeci">xiiRectU32 m_Rect</div><div class="ttdoc">The space that is enclosed by this convex area.</div><div class="ttdef"><b>Definition</b> GridNavmesh.h:16</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.html">home</a></li><li class="navelem"><a class="el" href="../../dir_1036706e55c22cab35bc1c58ee689f1d.html">runner</a></li><li class="navelem"><a class="el" href="../../dir_629f8151d55d307162ff2d619fb1783d.html">work</a></li><li class="navelem"><a class="el" href="../../dir_1ddc44fe1263a8c7935fa6130b7d9499.html">XII</a></li><li class="navelem"><a class="el" href="../../dir_2c1b6808f12952f4c36e05ba7068379a.html">XII</a></li><li class="navelem"><a class="el" href="../../dir_b5a1c4ecfca018ad24b729e213296d41.html">Source</a></li><li class="navelem"><a class="el" href="../../dir_e321052006a51284e67389ab20037e7c.html">Engine</a></li><li class="navelem"><a class="el" href="../../dir_9ee72279ab281f6aaaae1c60885125b9.html">Utilities</a></li><li class="navelem"><a class="el" href="../../dir_baa1d5c6d25a0d028bfe897a2b449984.html">PathFinding</a></li><li class="navelem"><b>GridNavmesh.h</b></li>
+    <li class="footer">Generated on Mon Jul 1 2024 23:53:12 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+  </ul>
+</div>
+</body>
+</html>

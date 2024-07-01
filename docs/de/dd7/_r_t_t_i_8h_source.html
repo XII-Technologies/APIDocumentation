@@ -1,0 +1,510 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.11.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<!-- BEGIN opengraph metadata -->
+<meta property="og:title" content="XII" />
+<meta property="og:image" content="../../XII-Logo.png" />
+<meta property="og:description" content="An advanced high-performance simulation engine." />
+<meta property="og:url" content="https://www.xiitechnologies.com" />
+<!-- END opengraph metadata -->
+<!-- BEGIN twitter metadata -->
+<meta name="twitter:image:src" content="../../XII-Logo.png" />
+<meta name="twitter:title" content="XII" />
+<meta name="twitter:description" content="An advanced high-performance simulation engine." />
+<!-- END twitter metadata -->
+<title>XII: /home/runner/work/XII/XII/Source/Engine/Foundation/Reflection/Implementation/RTTI.h Source File</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link rel="icon" type="image/svg+xml" href="logo.drawio.svg"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="../../toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../custom.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<a href="https://github.com/jothepro/doxygen-awesome-css" class="github-corner" title="View source on GitHub" target="_blank" rel="noopener noreferrer">
+    <svg viewBox="0 0 250 250" width="40" height="40" style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+    <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="../../XII-Logo.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">XII
+   &#160;<span id="projectnumber">1.0.0</span>
+   </div>
+   <div id="projectbrief">A high-performance simulation engine.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(1); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.html','Search',true);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('de/dd7/_r_t_t_i_8h_source.html','../../'); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">RTTI.h</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;Foundation/Basics.h&gt;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;Foundation/Configuration/Plugin.h&gt;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;Foundation/Reflection/Implementation/StaticRTTI.h&gt;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment">// *****************************************</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="comment">// ***** Runtime Type Information Data *****</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="keyword">struct </span><a class="code hl_struct" href="../../d9/d89/structxii_r_t_t_i_allocator.html">xiiRTTIAllocator</a>;</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keyword">class </span><a class="code hl_class" href="../../da/d25/classxii_abstract_property.html">xiiAbstractProperty</a>;</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keyword">class </span><a class="code hl_class" href="../../de/d27/classxii_abstract_function_property.html">xiiAbstractFunctionProperty</a>;</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keyword">class </span><a class="code hl_class" href="../../d8/d84/classxii_abstract_message_handler.html">xiiAbstractMessageHandler</a>;</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="keyword">struct </span><a class="code hl_struct" href="../../df/dfe/structxii_message_sender_info.html">xiiMessageSenderInfo</a>;</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="keyword">class </span><a class="code hl_class" href="../../d5/df0/classxii_property_attribute.html">xiiPropertyAttribute</a>;</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="keyword">class </span><a class="code hl_class" href="../../d9/d55/classxii_message.html">xiiMessage</a>;</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="keyword">using </span>xiiMessageId = xiiUInt16;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="foldopen" id="foldopen00029" data-start="{" data-end="};">
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="../../db/d89/classxii_r_t_t_i.html">   29</a></span><span class="keyword">class </span>XII_FOUNDATION_DLL <a class="code hl_class" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>{</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>  <a class="code hl_class" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a>(<a class="code hl_struct" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sName, <span class="keyword">const</span> <a class="code hl_class" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a>* pParentType, xiiUInt32 uiTypeSize, xiiUInt32 uiTypeVersion, xiiUInt8 uiVariantType, <a class="code hl_struct" href="../../d7/d55/structxii_bitflags.html">xiiBitflags&lt;xiiTypeFlags&gt;</a> flags, <a class="code hl_struct" href="../../d9/d89/structxii_r_t_t_i_allocator.html">xiiRTTIAllocator</a>* pAllocator, <a class="code hl_class" href="../../d0/d60/classxii_array_ptr.html">xiiArrayPtr&lt;const xiiAbstractProperty*&gt;</a> properties, <a class="code hl_class" href="../../d0/d60/classxii_array_ptr.html">xiiArrayPtr&lt;const xiiAbstractFunctionProperty*&gt;</a> functions, <a class="code hl_class" href="../../d0/d60/classxii_array_ptr.html">xiiArrayPtr&lt;const xiiPropertyAttribute*&gt;</a> attributes, <a class="code hl_class" href="../../d0/d60/classxii_array_ptr.html">xiiArrayPtr&lt;xiiAbstractMessageHandler*&gt;</a> messageHandlers, <a class="code hl_class" href="../../d0/d60/classxii_array_ptr.html">xiiArrayPtr&lt;xiiMessageSenderInfo&gt;</a> messageSenders, <span class="keyword">const</span> <a class="code hl_class" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a>* (*fnVerifyParent)());</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>  <a class="code hl_class" href="../../db/d89/classxii_r_t_t_i.html">~xiiRTTI</a>();</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>  <span class="keywordtype">void</span> VerifyCorrectness() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>  <span class="keyword">static</span> <span class="keywordtype">void</span> VerifyCorrectnessForAllTypes();</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="../../db/d89/classxii_r_t_t_i.html#a84233f5c90c038c1bd97e8b9ec4aa211">   44</a></span>  XII_ALWAYS_INLINE <a class="code hl_struct" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> <a class="code hl_function" href="../../db/d89/classxii_r_t_t_i.html#a84233f5c90c038c1bd97e8b9ec4aa211">GetTypeName</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_sTypeName; } <span class="comment">// [tested]</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="../../db/d89/classxii_r_t_t_i.html#a71963127487a83932158f4a058cb1a0e">   47</a></span>  XII_ALWAYS_INLINE xiiUInt64 <a class="code hl_function" href="../../db/d89/classxii_r_t_t_i.html#a71963127487a83932158f4a058cb1a0e">GetTypeNameHash</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_uiTypeNameHash; } <span class="comment">// [tested]</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="../../db/d89/classxii_r_t_t_i.html#a79b56edb6c5f2cb0d06ef5763a7a5db5">   50</a></span>  XII_ALWAYS_INLINE <span class="keyword">const</span> <a class="code hl_class" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a>* <a class="code hl_function" href="../../db/d89/classxii_r_t_t_i.html#a79b56edb6c5f2cb0d06ef5763a7a5db5">GetParentType</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_pParentType; } <span class="comment">// [tested]</span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="../../db/d89/classxii_r_t_t_i.html#ab04580f3ca5f9e4a86b7a523d6806a20">   53</a></span>  XII_ALWAYS_INLINE <a class="code hl_enumeration" href="../../dd/dba/structxii_variant_type.html#a38d867476ba7137c38a09976ece9ee6b">xiiVariantType::Enum</a> <a class="code hl_function" href="../../db/d89/classxii_r_t_t_i.html#ab04580f3ca5f9e4a86b7a523d6806a20">GetVariantType</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span><a class="code hl_enumeration" href="../../dd/dba/structxii_variant_type.html#a38d867476ba7137c38a09976ece9ee6b">xiiVariantType::Enum</a><span class="keyword">&gt;</span>(m_uiVariantType); }</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
+<div class="foldopen" id="foldopen00056" data-start="{" data-end="}">
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="../../db/d89/classxii_r_t_t_i.html#ab01841286e6950143394487153c63c22">   56</a></span>  XII_ALWAYS_INLINE <span class="keywordtype">bool</span> <a class="code hl_function" href="../../db/d89/classxii_r_t_t_i.html#ab01841286e6950143394487153c63c22">IsDerivedFrom</a>(<span class="keyword">const</span> <a class="code hl_class" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a>* pBaseType) <span class="keyword">const</span> <span class="comment">// [tested]</span></div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>  {</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <span class="keyword">const</span> xiiUInt32 thisGeneration = m_ParentHierarchy.GetCount();</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    <span class="keyword">const</span> xiiUInt32 baseGeneration = pBaseType-&gt;m_ParentHierarchy.<a class="code hl_function" href="../../d0/d92/classxii_small_array_base.html#a04e886c6f3b509236c70581718f988ad">GetCount</a>();</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    XII_ASSERT_DEBUG(thisGeneration &gt; 0 &amp;&amp; baseGeneration &gt; 0, <span class="stringliteral">&quot;SetupParentHierarchy() has not been called&quot;</span>);</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    <span class="keywordflow">return</span> thisGeneration &gt;= baseGeneration &amp;&amp; m_ParentHierarchy.GetData()[thisGeneration - baseGeneration] == pBaseType;</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>  }</div>
+</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> BASE&gt;</div>
+<div class="foldopen" id="foldopen00066" data-start="{" data-end="}">
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno"><a class="line" href="../../db/d89/classxii_r_t_t_i.html#a4cd2c980696b661e6bf20f3fc9d343e3">   66</a></span>  XII_ALWAYS_INLINE <span class="keywordtype">bool</span> <a class="code hl_function" href="../../db/d89/classxii_r_t_t_i.html#a4cd2c980696b661e6bf20f3fc9d343e3">IsDerivedFrom</a>() const <span class="comment">// [tested]</span></div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>  {</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    <span class="keywordflow">return</span> IsDerivedFrom(xiiGetStaticRTTI&lt;BASE&gt;());</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>  }</div>
+</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno"><a class="line" href="../../db/d89/classxii_r_t_t_i.html#aa26c08569674d005e9944732c4cede7d">   72</a></span>  XII_ALWAYS_INLINE <a class="code hl_struct" href="../../d9/d89/structxii_r_t_t_i_allocator.html">xiiRTTIAllocator</a>* <a class="code hl_function" href="../../db/d89/classxii_r_t_t_i.html#aa26c08569674d005e9944732c4cede7d">GetAllocator</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_pAllocator; } <span class="comment">// [tested]</span></div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno"><a class="line" href="../../db/d89/classxii_r_t_t_i.html#a99c86c0dacf1fcd6270123452dc80a6f">   75</a></span>  XII_ALWAYS_INLINE <a class="code hl_class" href="../../d0/d60/classxii_array_ptr.html">xiiArrayPtr&lt;const xiiAbstractProperty* const&gt;</a> <a class="code hl_function" href="../../db/d89/classxii_r_t_t_i.html#a99c86c0dacf1fcd6270123452dc80a6f">GetProperties</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_Properties; } <span class="comment">// [tested]</span></div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>  XII_ALWAYS_INLINE <a class="code hl_class" href="../../d0/d60/classxii_array_ptr.html">xiiArrayPtr&lt;const xiiAbstractFunctionProperty* const&gt;</a> GetFunctions()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_Functions; }</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>  XII_ALWAYS_INLINE <a class="code hl_class" href="../../d0/d60/classxii_array_ptr.html">xiiArrayPtr&lt;const xiiPropertyAttribute* const&gt;</a> GetAttributes()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_Attributes; }</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> Type&gt;</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>  <span class="keyword">const</span> Type* GetAttributeByType() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>  <span class="keywordtype">void</span> GetAllProperties(<a class="code hl_class" href="../../dc/da4/classxii_dynamic_array.html">xiiDynamicArray&lt;const xiiAbstractProperty*&gt;</a>&amp; out_properties) <span class="keyword">const</span>; <span class="comment">// [tested]</span></div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span> </div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno"><a class="line" href="../../db/d89/classxii_r_t_t_i.html#aa7838365864432bf2f97698ac6c99c01">   89</a></span>  XII_ALWAYS_INLINE xiiUInt32 <a class="code hl_function" href="../../db/d89/classxii_r_t_t_i.html#aa7838365864432bf2f97698ac6c99c01">GetTypeSize</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_uiTypeSize; } <span class="comment">// [tested]</span></div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno"><a class="line" href="../../db/d89/classxii_r_t_t_i.html#a831874f77928738d8adfb3d38abf2aaa">   92</a></span>  XII_ALWAYS_INLINE xiiUInt32 <a class="code hl_function" href="../../db/d89/classxii_r_t_t_i.html#a831874f77928738d8adfb3d38abf2aaa">GetTypeVersion</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_uiTypeVersion; }</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span> </div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno"><a class="line" href="../../db/d89/classxii_r_t_t_i.html#ae57a864cdfc0618251e547769f3ec824">   95</a></span>  XII_ALWAYS_INLINE <span class="keyword">const</span> <a class="code hl_struct" href="../../d7/d55/structxii_bitflags.html">xiiBitflags&lt;xiiTypeFlags&gt;</a>&amp; <a class="code hl_function" href="../../db/d89/classxii_r_t_t_i.html#ae57a864cdfc0618251e547769f3ec824">GetTypeFlags</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_TypeFlags; } <span class="comment">// [tested]</span></div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span> </div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>  <span class="keyword">static</span> <span class="keyword">const</span> <a class="code hl_class" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a>* FindTypeByName(<a class="code hl_struct" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sName); <span class="comment">// [tested]</span></div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span> </div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>  <span class="keyword">static</span> <span class="keyword">const</span> <a class="code hl_class" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a>* FindTypeByNameHash(xiiUInt64 uiNameHash); <span class="comment">// [tested]</span></div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>  <span class="keyword">static</span> <span class="keyword">const</span> <a class="code hl_class" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a>* FindTypeByNameHash32(xiiUInt32 uiNameHash);</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span> </div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>  <span class="keyword">using </span>PredicateFunc = <a class="code hl_struct" href="../../dc/d84/structxii_delegate.html">xiiDelegate</a>&lt;bool(<span class="keyword">const</span> <a class="code hl_class" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a>*), 48&gt;;</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span> </div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>  <span class="keyword">static</span> <span class="keyword">const</span> <a class="code hl_class" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a>* FindTypeIf(PredicateFunc <a class="code hl_function" href="../../da/d1f/group__group1.html#ga24f647174760cac13d2624b5ad74b00c">func</a>);</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span> </div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>  <span class="keyword">const</span> <a class="code hl_class" href="../../da/d25/classxii_abstract_property.html">xiiAbstractProperty</a>* FindPropertyByName(<a class="code hl_struct" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sName, <span class="keywordtype">bool</span> bSearchBaseTypes = <span class="keyword">true</span>) <span class="keyword">const</span>; <span class="comment">// [tested]</span></div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span> </div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno"><a class="line" href="../../db/d89/classxii_r_t_t_i.html#a23edc7887cb94c3570f8a884560c09b2">  113</a></span>  XII_ALWAYS_INLINE <a class="code hl_struct" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> <a class="code hl_function" href="../../db/d89/classxii_r_t_t_i.html#a23edc7887cb94c3570f8a884560c09b2">GetPluginName</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_sPluginName; } <span class="comment">// [tested]</span></div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span> </div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno"><a class="line" href="../../db/d89/classxii_r_t_t_i.html#a5564d5e759bf9908bdfdd7a1d324af05">  116</a></span>  XII_ALWAYS_INLINE <span class="keyword">const</span> <a class="code hl_class" href="../../d0/d60/classxii_array_ptr.html">xiiArrayPtr&lt;xiiAbstractMessageHandler*&gt;</a>&amp; <a class="code hl_function" href="../../db/d89/classxii_r_t_t_i.html#a5564d5e759bf9908bdfdd7a1d324af05">GetMessageHandlers</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_MessageHandlers; }</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span> </div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>  <span class="keywordtype">bool</span> DispatchMessage(<span class="keywordtype">void</span>* pInstance, <a class="code hl_class" href="../../d9/d55/classxii_message.html">xiiMessage</a>&amp; ref_msg) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span> </div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>  <span class="keywordtype">bool</span> DispatchMessage(<span class="keyword">const</span> <span class="keywordtype">void</span>* pInstance, <a class="code hl_class" href="../../d9/d55/classxii_message.html">xiiMessage</a>&amp; ref_msg) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span> </div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> MessageType&gt;</div>
+<div class="foldopen" id="foldopen00128" data-start="{" data-end="}">
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno"><a class="line" href="../../db/d89/classxii_r_t_t_i.html#a0477fa81b5243134d6348f59ad2fa6d1">  128</a></span>  XII_ALWAYS_INLINE <span class="keywordtype">bool</span> <a class="code hl_function" href="../../db/d89/classxii_r_t_t_i.html#a0477fa81b5243134d6348f59ad2fa6d1">CanHandleMessage</a>()<span class="keyword"> const</span></div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span><span class="keyword">  </span>{</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>    <span class="keywordflow">return</span> CanHandleMessage(MessageType::GetTypeMsgId());</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>  }</div>
+</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span> </div>
+<div class="foldopen" id="foldopen00134" data-start="{" data-end="}">
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno"><a class="line" href="../../db/d89/classxii_r_t_t_i.html#addc7dacc0bde5aa4141a5049200076be">  134</a></span>  <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="../../db/d89/classxii_r_t_t_i.html#addc7dacc0bde5aa4141a5049200076be">CanHandleMessage</a>(xiiMessageId <span class="keywordtype">id</span>)<span class="keyword"> const</span></div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span><span class="keyword">  </span>{</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>    XII_ASSERT_DEBUG(m_uiMsgIdOffset != xiiSmallInvalidIndex, <span class="stringliteral">&quot;Message handler table should have been gathered at this point.\n&quot;</span></div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>                                                              <span class="stringliteral">&quot;If this assert is triggered for a type loaded from a dynamic plugin,\n&quot;</span></div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>                                                              <span class="stringliteral">&quot;you may have forgotten to instantiate a xiiPlugin object inside your plugin DLL.&quot;</span>);</div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span> </div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>    <span class="keyword">const</span> xiiUInt32 uiIndex = <span class="keywordtype">id</span> - m_uiMsgIdOffset;</div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>    <span class="keywordflow">return</span> uiIndex &lt; m_DynamicMessageHandlers.GetCount() &amp;&amp; m_DynamicMessageHandlers.GetData()[uiIndex] != <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>  }</div>
+</div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span> </div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>  XII_ALWAYS_INLINE <span class="keyword">const</span> <a class="code hl_class" href="../../d0/d60/classxii_array_ptr.html">xiiArrayPtr&lt;xiiMessageSenderInfo&gt;</a>&amp; GetMessageSender()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_MessageSenders; }</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span> </div>
+<div class="foldopen" id="foldopen00146" data-start="{" data-end="};">
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno"><a class="line" href="../../d3/d09/structxii_r_t_t_i_1_1_for_each_options.html">  146</a></span>  <span class="keyword">struct </span><a class="code hl_struct" href="../../d3/d09/structxii_r_t_t_i_1_1_for_each_options.html">ForEachOptions</a></div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>  {</div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>    <span class="keyword">using </span>StorageType = xiiUInt8;</div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span> </div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>    <span class="keyword">enum</span> Enum : StorageType</div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>    {</div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>      None                  = 0,</div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>      ExcludeNonAllocatable = XII_BIT(0),</div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>      ExcludeAbstract       = XII_BIT(1),</div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span> </div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>      Default = None</div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>    };</div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span> </div>
+<div class="foldopen" id="foldopen00159" data-start="{" data-end="};">
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno"><a class="line" href="../../d3/d64/structxii_r_t_t_i_1_1_for_each_options_1_1_bits.html">  159</a></span>    <span class="keyword">struct </span><a class="code hl_struct" href="../../d3/d64/structxii_r_t_t_i_1_1_for_each_options_1_1_bits.html">Bits</a></div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>    {</div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>      xiiUInt8 ExcludeNonAllocatable : 1;</div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>    };</div>
+</div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>  };</div>
+</div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span> </div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>  <span class="keyword">using </span><a class="code hl_struct" href="../../dc/d84/structxii_delegate.html">VisitorFunc</a> = <a class="code hl_struct" href="../../dc/d84/structxii_delegate.html">xiiDelegate</a>&lt;void(<span class="keyword">const</span> <a class="code hl_class" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a>*), 48&gt;;</div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span> </div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>  <span class="keyword">static</span> <span class="keywordtype">void</span> ForEachType(<a class="code hl_struct" href="../../dc/d84/structxii_delegate.html">VisitorFunc</a> <a class="code hl_function" href="../../da/d1f/group__group1.html#ga24f647174760cac13d2624b5ad74b00c">func</a>, <a class="code hl_struct" href="../../d7/d55/structxii_bitflags.html">xiiBitflags&lt;ForEachOptions&gt;</a> options = ForEachOptions::Default); <span class="comment">// [tested]</span></div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span> </div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>  <span class="keyword">static</span> <span class="keywordtype">void</span> ForEachDerivedType(<span class="keyword">const</span> <a class="code hl_class" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a>* pBaseType, <a class="code hl_struct" href="../../dc/d84/structxii_delegate.html">VisitorFunc</a> <a class="code hl_function" href="../../da/d1f/group__group1.html#ga24f647174760cac13d2624b5ad74b00c">func</a>, <a class="code hl_struct" href="../../d7/d55/structxii_bitflags.html">xiiBitflags&lt;ForEachOptions&gt;</a> options = ForEachOptions::Default);</div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span> </div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>  <span class="keyword">static</span> XII_ALWAYS_INLINE <span class="keywordtype">void</span> ForEachDerivedType(<a class="code hl_struct" href="../../dc/d84/structxii_delegate.html">VisitorFunc</a> <a class="code hl_function" href="../../da/d1f/group__group1.html#ga24f647174760cac13d2624b5ad74b00c">func</a>, <a class="code hl_struct" href="../../d7/d55/structxii_bitflags.html">xiiBitflags&lt;ForEachOptions&gt;</a> options = ForEachOptions::Default)</div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>  {</div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>    ForEachDerivedType(xiiGetStaticRTTI&lt;T&gt;(), <a class="code hl_function" href="../../da/d1f/group__group1.html#ga24f647174760cac13d2624b5ad74b00c">func</a>, options);</div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>  }</div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span> </div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span><span class="keyword">protected</span>:</div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>  <a class="code hl_struct" href="../../da/d9d/structxii_string_view.html">xiiStringView</a>                                         m_sPluginName;</div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>  <a class="code hl_struct" href="../../da/d9d/structxii_string_view.html">xiiStringView</a>                                         m_sTypeName;</div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>  <a class="code hl_class" href="../../d0/d60/classxii_array_ptr.html">xiiArrayPtr&lt;const xiiAbstractProperty* const&gt;</a>         m_Properties;</div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>  <a class="code hl_class" href="../../d0/d60/classxii_array_ptr.html">xiiArrayPtr&lt;const xiiAbstractFunctionProperty* const&gt;</a> m_Functions;</div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>  <a class="code hl_class" href="../../d0/d60/classxii_array_ptr.html">xiiArrayPtr&lt;const xiiPropertyAttribute* const&gt;</a>        m_Attributes;</div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>  <span class="keywordtype">void</span>                                                  UpdateType(<span class="keyword">const</span> <a class="code hl_class" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a>* pParentType, xiiUInt32 uiTypeSize, xiiUInt32 uiTypeVersion, xiiUInt8 uiVariantType, <a class="code hl_struct" href="../../d7/d55/structxii_bitflags.html">xiiBitflags&lt;xiiTypeFlags&gt;</a> flags);</div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>  <span class="keywordtype">void</span>                                                  RegisterType();</div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>  <span class="keywordtype">void</span>                                                  UnregisterType();</div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span> </div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>  <span class="keywordtype">void</span> GatherDynamicMessageHandlers();</div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>  <span class="keywordtype">void</span> SetupParentHierarchy();</div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span> </div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>  <span class="keyword">const</span> <a class="code hl_class" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a>*    m_pParentType = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>  <a class="code hl_struct" href="../../d9/d89/structxii_r_t_t_i_allocator.html">xiiRTTIAllocator</a>* m_pAllocator  = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span> </div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>  xiiUInt32                 m_uiTypeSize     = 0;</div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>  xiiUInt32                 m_uiTypeVersion  = 0;</div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>  xiiUInt64                 m_uiTypeNameHash = 0;</div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>  xiiUInt32                 m_uiTypeIndex    = 0;</div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>  <a class="code hl_struct" href="../../d7/d55/structxii_bitflags.html">xiiBitflags&lt;xiiTypeFlags&gt;</a> m_TypeFlags;</div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>  xiiUInt8                  m_uiVariantType = 0;</div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>  xiiUInt16                 m_uiMsgIdOffset = xiiSmallInvalidIndex;</div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span> </div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>  <span class="keyword">const</span> <a class="code hl_class" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a>* (*m_VerifyParent)();</div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span> </div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>  <a class="code hl_class" href="../../d0/d60/classxii_array_ptr.html">xiiArrayPtr&lt;xiiAbstractMessageHandler*&gt;</a>                                 m_MessageHandlers;</div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>  <a class="code hl_class" href="../../d6/d1f/classxii_small_array.html">xiiSmallArray&lt;xiiAbstractMessageHandler*, 1, xiiStaticAllocatorWrapper&gt;</a> m_DynamicMessageHandlers; <span class="comment">// Do not track this data, it won&#39;t be deallocated before shutdown.</span></div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span> </div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>  <a class="code hl_class" href="../../d0/d60/classxii_array_ptr.html">xiiArrayPtr&lt;xiiMessageSenderInfo&gt;</a>                           m_MessageSenders;</div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>  <a class="code hl_class" href="../../d6/d1f/classxii_small_array.html">xiiSmallArray&lt;const xiiRTTI*, 7, xiiStaticAllocatorWrapper&gt;</a> m_ParentHierarchy;</div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span> </div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>  XII_MAKE_SUBSYSTEM_STARTUP_FRIEND(Foundation, Reflection);</div>
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span> </div>
+<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span>  <span class="keyword">static</span> <span class="keywordtype">void</span> AssignPlugin(<a class="code hl_struct" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sPluginName);</div>
+<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span> </div>
+<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span>  <span class="keyword">static</span> <span class="keywordtype">void</span> SanityCheckType(<a class="code hl_class" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a>* pType);</div>
+<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span> </div>
+<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>  <span class="keyword">static</span> <span class="keywordtype">void</span> PluginEventHandler(<span class="keyword">const</span> <a class="code hl_struct" href="../../d9/dc8/structxii_plugin_event.html">xiiPluginEvent</a>&amp; EventData);</div>
+<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span>};</div>
+</div>
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span> </div>
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span>XII_DECLARE_FLAGS_OPERATORS(<a class="code hl_struct" href="../../d3/d09/structxii_r_t_t_i_1_1_for_each_options.html">xiiRTTI::ForEachOptions</a>);</div>
+<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span> </div>
+<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span><span class="comment">// ***********************************</span></div>
+<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span><span class="comment">// ***** Object Allocator Struct *****</span></div>
+<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span> </div>
+<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span> </div>
+<div class="foldopen" id="foldopen00228" data-start="{" data-end="};">
+<div class="line"><a id="l00228" name="l00228"></a><span class="lineno"><a class="line" href="../../d9/d89/structxii_r_t_t_i_allocator.html">  228</a></span><span class="keyword">struct </span>XII_FOUNDATION_DLL <a class="code hl_struct" href="../../d9/d89/structxii_r_t_t_i_allocator.html">xiiRTTIAllocator</a></div>
+<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>{</div>
+<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>  <span class="keyword">virtual</span> <a class="code hl_struct" href="../../d9/d89/structxii_r_t_t_i_allocator.html">~xiiRTTIAllocator</a>();</div>
+<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span> </div>
+<div class="line"><a id="l00233" name="l00233"></a><span class="lineno"><a class="line" href="../../d9/d89/structxii_r_t_t_i_allocator.html#a743c5e9e6cc050eba2a8d15918fb3d57">  233</a></span>  <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="../../d9/d89/structxii_r_t_t_i_allocator.html#a743c5e9e6cc050eba2a8d15918fb3d57">CanAllocate</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <span class="keyword">true</span>; } <span class="comment">// [tested]</span></div>
+<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span> </div>
+<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="foldopen" id="foldopen00237" data-start="{" data-end="}">
+<div class="line"><a id="l00237" name="l00237"></a><span class="lineno"><a class="line" href="../../d9/d89/structxii_r_t_t_i_allocator.html#a0e25bc629a32d963cbe750abe84f7fc4">  237</a></span>  <a class="code hl_struct" href="../../de/d3c/structxii_internal_1_1_new_instance.html">xiiInternal::NewInstance&lt;T&gt;</a> <a class="code hl_function" href="../../d9/d89/structxii_r_t_t_i_allocator.html#a0e25bc629a32d963cbe750abe84f7fc4">Allocate</a>(<a class="code hl_class" href="../../d5/d66/classxii_allocator_base.html">xiiAllocatorBase</a>* pAllocator = <span class="keyword">nullptr</span>)</div>
+<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>  {</div>
+<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>    <span class="keywordflow">return</span> AllocateInternal(pAllocator).Cast&lt;T&gt;();</div>
+<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>  }</div>
+</div>
+<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span> </div>
+<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="foldopen" id="foldopen00244" data-start="{" data-end="}">
+<div class="line"><a id="l00244" name="l00244"></a><span class="lineno"><a class="line" href="../../d9/d89/structxii_r_t_t_i_allocator.html#aa2263cde602aab6441cb935b521412d1">  244</a></span>  <a class="code hl_struct" href="../../de/d3c/structxii_internal_1_1_new_instance.html">xiiInternal::NewInstance&lt;T&gt;</a> <a class="code hl_function" href="../../d9/d89/structxii_r_t_t_i_allocator.html#aa2263cde602aab6441cb935b521412d1">Clone</a>(<span class="keyword">const</span> <span class="keywordtype">void</span>* pObject, <a class="code hl_class" href="../../d5/d66/classxii_allocator_base.html">xiiAllocatorBase</a>* pAllocator = <span class="keyword">nullptr</span>)</div>
+<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>  {</div>
+<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>    <span class="keywordflow">return</span> CloneInternal(pObject, pAllocator).Cast&lt;T&gt;();</div>
+<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span>  }</div>
+</div>
+<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span> </div>
+<div class="line"><a id="l00250" name="l00250"></a><span class="lineno"><a class="line" href="../../d9/d89/structxii_r_t_t_i_allocator.html#a0c52fd8ea0f304135678b6146cee370d">  250</a></span>  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="../../d9/d89/structxii_r_t_t_i_allocator.html#a0c52fd8ea0f304135678b6146cee370d">Deallocate</a>(<span class="keywordtype">void</span>* pObject, <a class="code hl_class" href="../../d5/d66/classxii_allocator_base.html">xiiAllocatorBase</a>* pAllocator = <span class="keyword">nullptr</span>) = 0; <span class="comment">// [tested]</span></div>
+<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span> </div>
+<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span>  <span class="keyword">virtual</span> <a class="code hl_struct" href="../../de/d3c/structxii_internal_1_1_new_instance.html">xiiInternal::NewInstance&lt;void&gt;</a> AllocateInternal(<a class="code hl_class" href="../../d5/d66/classxii_allocator_base.html">xiiAllocatorBase</a>* pAllocator) = 0;</div>
+<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span>  <span class="keyword">virtual</span> <a class="code hl_struct" href="../../de/d3c/structxii_internal_1_1_new_instance.html">xiiInternal::NewInstance&lt;void&gt;</a> CloneInternal(<span class="keyword">const</span> <span class="keywordtype">void</span>* pObject, <a class="code hl_class" href="../../d5/d66/classxii_allocator_base.html">xiiAllocatorBase</a>* pAllocator)</div>
+<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span>  {</div>
+<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span>    XII_REPORT_FAILURE(<span class="stringliteral">&quot;Cloning is not supported by this allocator.&quot;</span>);</div>
+<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span>    <span class="keywordflow">return</span> <a class="code hl_struct" href="../../de/d3c/structxii_internal_1_1_new_instance.html">xiiInternal::NewInstance&lt;void&gt;</a>(<span class="keyword">nullptr</span>, pAllocator);</div>
+<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span>  }</div>
+<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span>};</div>
+</div>
+<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span> </div>
+<div class="foldopen" id="foldopen00262" data-start="{" data-end="};">
+<div class="line"><a id="l00262" name="l00262"></a><span class="lineno"><a class="line" href="../../d0/dd9/structxii_r_t_t_i_no_allocator.html">  262</a></span><span class="keyword">struct </span>XII_FOUNDATION_DLL <a class="code hl_struct" href="../../d0/dd9/structxii_r_t_t_i_no_allocator.html">xiiRTTINoAllocator</a> : <span class="keyword">public</span> <a class="code hl_struct" href="../../d9/d89/structxii_r_t_t_i_allocator.html">xiiRTTIAllocator</a></div>
+<div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span>{</div>
+<div class="line"><a id="l00265" name="l00265"></a><span class="lineno"><a class="line" href="../../d0/dd9/structxii_r_t_t_i_no_allocator.html#a357ccf8a3c2bbd17f751aad0d152c049">  265</a></span>  <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="../../d0/dd9/structxii_r_t_t_i_no_allocator.html#a357ccf8a3c2bbd17f751aad0d152c049">CanAllocate</a>()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> <span class="keyword">false</span>; } <span class="comment">// [tested]</span></div>
+<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span> </div>
+<div class="foldopen" id="foldopen00268" data-start="{" data-end="}">
+<div class="line"><a id="l00268" name="l00268"></a><span class="lineno"><a class="line" href="../../d0/dd9/structxii_r_t_t_i_no_allocator.html#ac59cde5b7ba48bfb85b5126934dcb52b">  268</a></span>  <span class="keyword">virtual</span> <a class="code hl_struct" href="../../de/d3c/structxii_internal_1_1_new_instance.html">xiiInternal::NewInstance&lt;void&gt;</a> <a class="code hl_function" href="../../d0/dd9/structxii_r_t_t_i_no_allocator.html#ac59cde5b7ba48bfb85b5126934dcb52b">AllocateInternal</a>(<a class="code hl_class" href="../../d5/d66/classxii_allocator_base.html">xiiAllocatorBase</a>* pAllocator) <span class="keyword">override</span> <span class="comment">// [tested]</span></div>
+<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span>  {</div>
+<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span>    XII_REPORT_FAILURE(<span class="stringliteral">&quot;This function should never be called.&quot;</span>);</div>
+<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span>    <span class="keywordflow">return</span> <a class="code hl_struct" href="../../de/d3c/structxii_internal_1_1_new_instance.html">xiiInternal::NewInstance&lt;void&gt;</a>(<span class="keyword">nullptr</span>, pAllocator);</div>
+<div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span>  }</div>
+</div>
+<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span> </div>
+<div class="foldopen" id="foldopen00275" data-start="{" data-end="}">
+<div class="line"><a id="l00275" name="l00275"></a><span class="lineno"><a class="line" href="../../d0/dd9/structxii_r_t_t_i_no_allocator.html#a2a2130976aff83235ff14e6abad0745b">  275</a></span>  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="../../d0/dd9/structxii_r_t_t_i_no_allocator.html#a2a2130976aff83235ff14e6abad0745b">Deallocate</a>(<span class="keywordtype">void</span>* pObject, <a class="code hl_class" href="../../d5/d66/classxii_allocator_base.html">xiiAllocatorBase</a>* pAllocator) <span class="keyword">override</span> <span class="comment">// [tested]</span></div>
+<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span>  {</div>
+<div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span>    XII_REPORT_FAILURE(<span class="stringliteral">&quot;This function should never be called.&quot;</span>);</div>
+<div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span>  }</div>
+</div>
+<div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span>};</div>
+</div>
+<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span> </div>
+<div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> CLASS, <span class="keyword">typename</span> AllocatorWrapper = xiiDefaultAllocatorWrapper&gt;</div>
+<div class="foldopen" id="foldopen00283" data-start="{" data-end="};">
+<div class="line"><a id="l00283" name="l00283"></a><span class="lineno"><a class="line" href="../../d9/de2/structxii_r_t_t_i_default_allocator.html">  283</a></span><span class="keyword">struct </span><a class="code hl_struct" href="../../d9/de2/structxii_r_t_t_i_default_allocator.html">xiiRTTIDefaultAllocator</a> : <span class="keyword">public</span> <a class="code hl_struct" href="../../d9/d89/structxii_r_t_t_i_allocator.html">xiiRTTIAllocator</a></div>
+<div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span>{</div>
+<div class="foldopen" id="foldopen00286" data-start="{" data-end="}">
+<div class="line"><a id="l00286" name="l00286"></a><span class="lineno"><a class="line" href="../../d9/de2/structxii_r_t_t_i_default_allocator.html#a2d4cc76e3730cb4da3e18ab94cdcf4bb">  286</a></span>  <span class="keyword">virtual</span> <a class="code hl_struct" href="../../de/d3c/structxii_internal_1_1_new_instance.html">xiiInternal::NewInstance&lt;void&gt;</a> <a class="code hl_function" href="../../d9/de2/structxii_r_t_t_i_default_allocator.html#a2d4cc76e3730cb4da3e18ab94cdcf4bb">AllocateInternal</a>(<a class="code hl_class" href="../../d5/d66/classxii_allocator_base.html">xiiAllocatorBase</a>* pAllocator) <span class="keyword">override</span> <span class="comment">// [tested]</span></div>
+<div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span>  {</div>
+<div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span>    <span class="keywordflow">if</span> (pAllocator == <span class="keyword">nullptr</span>)</div>
+<div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span>    {</div>
+<div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span>      pAllocator = AllocatorWrapper::GetAllocator();</div>
+<div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span>    }</div>
+<div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span> </div>
+<div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span>    <span class="keywordflow">return</span> XII_NEW(pAllocator, CLASS);</div>
+<div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span>  }</div>
+</div>
+<div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span> </div>
+<div class="foldopen" id="foldopen00297" data-start="{" data-end="}">
+<div class="line"><a id="l00297" name="l00297"></a><span class="lineno"><a class="line" href="../../d9/de2/structxii_r_t_t_i_default_allocator.html#a4367b7e926702142767f3f4d03318d6d">  297</a></span>  <span class="keyword">virtual</span> <a class="code hl_struct" href="../../de/d3c/structxii_internal_1_1_new_instance.html">xiiInternal::NewInstance&lt;void&gt;</a> <a class="code hl_function" href="../../d9/de2/structxii_r_t_t_i_default_allocator.html#a4367b7e926702142767f3f4d03318d6d">CloneInternal</a>(<span class="keyword">const</span> <span class="keywordtype">void</span>* pObject, <a class="code hl_class" href="../../d5/d66/classxii_allocator_base.html">xiiAllocatorBase</a>* pAllocator) <span class="keyword">override</span> <span class="comment">// [tested]</span></div>
+<div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span>  {</div>
+<div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span>    <span class="keywordflow">if</span> (pAllocator == <span class="keyword">nullptr</span>)</div>
+<div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span>    {</div>
+<div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span>      pAllocator = AllocatorWrapper::GetAllocator();</div>
+<div class="line"><a id="l00302" name="l00302"></a><span class="lineno">  302</span>    }</div>
+<div class="line"><a id="l00303" name="l00303"></a><span class="lineno">  303</span> </div>
+<div class="line"><a id="l00304" name="l00304"></a><span class="lineno">  304</span>    <span class="keywordflow">return</span> CloneImpl(pObject, pAllocator, <a class="code hl_struct" href="../../da/d04/structxii_trait_int.html">xiiTraitInt</a>&lt;std::is_copy_constructible&lt;CLASS&gt;::value&gt;());</div>
+<div class="line"><a id="l00305" name="l00305"></a><span class="lineno">  305</span>  }</div>
+</div>
+<div class="line"><a id="l00306" name="l00306"></a><span class="lineno">  306</span> </div>
+<div class="foldopen" id="foldopen00308" data-start="{" data-end="}">
+<div class="line"><a id="l00308" name="l00308"></a><span class="lineno"><a class="line" href="../../d9/de2/structxii_r_t_t_i_default_allocator.html#a280c5adc9dc0d2be1029927c30ae81c7">  308</a></span>  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="../../d9/de2/structxii_r_t_t_i_default_allocator.html#a280c5adc9dc0d2be1029927c30ae81c7">Deallocate</a>(<span class="keywordtype">void</span>* pObject, <a class="code hl_class" href="../../d5/d66/classxii_allocator_base.html">xiiAllocatorBase</a>* pAllocator) <span class="keyword">override</span> <span class="comment">// [tested]</span></div>
+<div class="line"><a id="l00309" name="l00309"></a><span class="lineno">  309</span>  {</div>
+<div class="line"><a id="l00310" name="l00310"></a><span class="lineno">  310</span>    <span class="keywordflow">if</span> (pAllocator == <span class="keyword">nullptr</span>)</div>
+<div class="line"><a id="l00311" name="l00311"></a><span class="lineno">  311</span>    {</div>
+<div class="line"><a id="l00312" name="l00312"></a><span class="lineno">  312</span>      pAllocator = AllocatorWrapper::GetAllocator();</div>
+<div class="line"><a id="l00313" name="l00313"></a><span class="lineno">  313</span>    }</div>
+<div class="line"><a id="l00314" name="l00314"></a><span class="lineno">  314</span> </div>
+<div class="line"><a id="l00315" name="l00315"></a><span class="lineno">  315</span>    CLASS* pPointer = <span class="keyword">static_cast&lt;</span>CLASS*<span class="keyword">&gt;</span>(pObject);</div>
+<div class="line"><a id="l00316" name="l00316"></a><span class="lineno">  316</span>    XII_DELETE(pAllocator, pPointer);</div>
+<div class="line"><a id="l00317" name="l00317"></a><span class="lineno">  317</span>  }</div>
+</div>
+<div class="line"><a id="l00318" name="l00318"></a><span class="lineno">  318</span> </div>
+<div class="line"><a id="l00319" name="l00319"></a><span class="lineno">  319</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00320" name="l00320"></a><span class="lineno">  320</span>  <a class="code hl_struct" href="../../de/d3c/structxii_internal_1_1_new_instance.html">xiiInternal::NewInstance&lt;void&gt;</a> CloneImpl(<span class="keyword">const</span> <span class="keywordtype">void</span>* pObject, <a class="code hl_class" href="../../d5/d66/classxii_allocator_base.html">xiiAllocatorBase</a>* pAllocator, <a class="code hl_struct" href="../../da/d04/structxii_trait_int.html">xiiTraitInt&lt;0&gt;</a>)</div>
+<div class="line"><a id="l00321" name="l00321"></a><span class="lineno">  321</span>  {</div>
+<div class="line"><a id="l00322" name="l00322"></a><span class="lineno">  322</span>    XII_REPORT_FAILURE(<span class="stringliteral">&quot;Clone failed since the type is not copy constructible&quot;</span>);</div>
+<div class="line"><a id="l00323" name="l00323"></a><span class="lineno">  323</span>    <span class="keywordflow">return</span> <a class="code hl_struct" href="../../de/d3c/structxii_internal_1_1_new_instance.html">xiiInternal::NewInstance&lt;void&gt;</a>(<span class="keyword">nullptr</span>, pAllocator);</div>
+<div class="line"><a id="l00324" name="l00324"></a><span class="lineno">  324</span>  }</div>
+<div class="line"><a id="l00325" name="l00325"></a><span class="lineno">  325</span> </div>
+<div class="line"><a id="l00326" name="l00326"></a><span class="lineno">  326</span>  <a class="code hl_struct" href="../../de/d3c/structxii_internal_1_1_new_instance.html">xiiInternal::NewInstance&lt;void&gt;</a> CloneImpl(<span class="keyword">const</span> <span class="keywordtype">void</span>* pObject, <a class="code hl_class" href="../../d5/d66/classxii_allocator_base.html">xiiAllocatorBase</a>* pAllocator, <a class="code hl_struct" href="../../da/d04/structxii_trait_int.html">xiiTraitInt&lt;1&gt;</a>)</div>
+<div class="line"><a id="l00327" name="l00327"></a><span class="lineno">  327</span>  {</div>
+<div class="line"><a id="l00328" name="l00328"></a><span class="lineno">  328</span>    <span class="keywordflow">return</span> XII_NEW(pAllocator, CLASS, *<span class="keyword">static_cast&lt;</span><span class="keyword">const </span>CLASS*<span class="keyword">&gt;</span>(pObject));</div>
+<div class="line"><a id="l00329" name="l00329"></a><span class="lineno">  329</span>  }</div>
+<div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span>};</div>
+</div>
+<div class="ttc" id="aclassxii_abstract_function_property_html"><div class="ttname"><a href="../../de/d27/classxii_abstract_function_property.html">xiiAbstractFunctionProperty</a></div><div class="ttdoc">The base class for a property that represents a function.</div><div class="ttdef"><b>Definition</b> AbstractProperty.h:536</div></div>
+<div class="ttc" id="aclassxii_abstract_message_handler_html"><div class="ttname"><a href="../../d8/d84/classxii_abstract_message_handler.html">xiiAbstractMessageHandler</a></div><div class="ttdoc">The base class for all message handlers that a type provides.</div><div class="ttdef"><b>Definition</b> MessageHandler.h:12</div></div>
+<div class="ttc" id="aclassxii_abstract_property_html"><div class="ttname"><a href="../../da/d25/classxii_abstract_property.html">xiiAbstractProperty</a></div><div class="ttdoc">This is the base interface for all properties in the reflection system. It provides enough informatio...</div><div class="ttdef"><b>Definition</b> AbstractProperty.h:151</div></div>
+<div class="ttc" id="aclassxii_allocator_base_html"><div class="ttname"><a href="../../d5/d66/classxii_allocator_base.html">xiiAllocatorBase</a></div><div class="ttdoc">Base class for all memory allocators.</div><div class="ttdef"><b>Definition</b> AllocatorBase.h:22</div></div>
+<div class="ttc" id="aclassxii_array_ptr_html"><div class="ttname"><a href="../../d0/d60/classxii_array_ptr.html">xiiArrayPtr</a></div><div class="ttdoc">This class encapsulates an array and it's size. It is recommended to use this class instead of plain ...</div><div class="ttdef"><b>Definition</b> ArrayPtr.h:37</div></div>
+<div class="ttc" id="aclassxii_dynamic_array_html"><div class="ttname"><a href="../../dc/da4/classxii_dynamic_array.html">xiiDynamicArray</a></div><div class="ttdef"><b>Definition</b> DynamicArray.h:81</div></div>
+<div class="ttc" id="aclassxii_message_html"><div class="ttname"><a href="../../d9/d55/classxii_message.html">xiiMessage</a></div><div class="ttdoc">Base class for all message types. Each message type has it's own id which is used to dispatch message...</div><div class="ttdef"><b>Definition</b> Message.h:22</div></div>
+<div class="ttc" id="aclassxii_property_attribute_html"><div class="ttname"><a href="../../d5/df0/classxii_property_attribute.html">xiiPropertyAttribute</a></div><div class="ttdoc">Base class of all attributes can be used to decorate a RTTI property.</div><div class="ttdef"><b>Definition</b> PropertyAttributes.h:11</div></div>
+<div class="ttc" id="aclassxii_r_t_t_i_html"><div class="ttname"><a href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a></div><div class="ttdoc">This class holds information about reflected types. Each instance represents one type that is known t...</div><div class="ttdef"><b>Definition</b> RTTI.h:30</div></div>
+<div class="ttc" id="aclassxii_r_t_t_i_html_a0477fa81b5243134d6348f59ad2fa6d1"><div class="ttname"><a href="../../db/d89/classxii_r_t_t_i.html#a0477fa81b5243134d6348f59ad2fa6d1">xiiRTTI::CanHandleMessage</a></div><div class="ttdeci">XII_ALWAYS_INLINE bool CanHandleMessage() const</div><div class="ttdoc">Returns whether this type can handle the given message type.</div><div class="ttdef"><b>Definition</b> RTTI.h:128</div></div>
+<div class="ttc" id="aclassxii_r_t_t_i_html_a23edc7887cb94c3570f8a884560c09b2"><div class="ttname"><a href="../../db/d89/classxii_r_t_t_i.html#a23edc7887cb94c3570f8a884560c09b2">xiiRTTI::GetPluginName</a></div><div class="ttdeci">XII_ALWAYS_INLINE xiiStringView GetPluginName() const</div><div class="ttdoc">Returns the name of the plugin which this type is declared in.</div><div class="ttdef"><b>Definition</b> RTTI.h:113</div></div>
+<div class="ttc" id="aclassxii_r_t_t_i_html_a4cd2c980696b661e6bf20f3fc9d343e3"><div class="ttname"><a href="../../db/d89/classxii_r_t_t_i.html#a4cd2c980696b661e6bf20f3fc9d343e3">xiiRTTI::IsDerivedFrom</a></div><div class="ttdeci">XII_ALWAYS_INLINE bool IsDerivedFrom() const</div><div class="ttdoc">Returns true if this type is derived from or identical to the given type.</div><div class="ttdef"><b>Definition</b> RTTI.h:66</div></div>
+<div class="ttc" id="aclassxii_r_t_t_i_html_a5564d5e759bf9908bdfdd7a1d324af05"><div class="ttname"><a href="../../db/d89/classxii_r_t_t_i.html#a5564d5e759bf9908bdfdd7a1d324af05">xiiRTTI::GetMessageHandlers</a></div><div class="ttdeci">XII_ALWAYS_INLINE const xiiArrayPtr&lt; xiiAbstractMessageHandler * &gt; &amp; GetMessageHandlers() const</div><div class="ttdoc">Returns the array of message handlers that this type has.</div><div class="ttdef"><b>Definition</b> RTTI.h:116</div></div>
+<div class="ttc" id="aclassxii_r_t_t_i_html_a71963127487a83932158f4a058cb1a0e"><div class="ttname"><a href="../../db/d89/classxii_r_t_t_i.html#a71963127487a83932158f4a058cb1a0e">xiiRTTI::GetTypeNameHash</a></div><div class="ttdeci">XII_ALWAYS_INLINE xiiUInt64 GetTypeNameHash() const</div><div class="ttdoc">Returns the hash of the name of this type.</div><div class="ttdef"><b>Definition</b> RTTI.h:47</div></div>
+<div class="ttc" id="aclassxii_r_t_t_i_html_a79b56edb6c5f2cb0d06ef5763a7a5db5"><div class="ttname"><a href="../../db/d89/classxii_r_t_t_i.html#a79b56edb6c5f2cb0d06ef5763a7a5db5">xiiRTTI::GetParentType</a></div><div class="ttdeci">XII_ALWAYS_INLINE const xiiRTTI * GetParentType() const</div><div class="ttdoc">Returns the type that is the base class of this type. May be nullptr if this type has no base class.</div><div class="ttdef"><b>Definition</b> RTTI.h:50</div></div>
+<div class="ttc" id="aclassxii_r_t_t_i_html_a831874f77928738d8adfb3d38abf2aaa"><div class="ttname"><a href="../../db/d89/classxii_r_t_t_i.html#a831874f77928738d8adfb3d38abf2aaa">xiiRTTI::GetTypeVersion</a></div><div class="ttdeci">XII_ALWAYS_INLINE xiiUInt32 GetTypeVersion() const</div><div class="ttdoc">Returns the version number of this type.</div><div class="ttdef"><b>Definition</b> RTTI.h:92</div></div>
+<div class="ttc" id="aclassxii_r_t_t_i_html_a84233f5c90c038c1bd97e8b9ec4aa211"><div class="ttname"><a href="../../db/d89/classxii_r_t_t_i.html#a84233f5c90c038c1bd97e8b9ec4aa211">xiiRTTI::GetTypeName</a></div><div class="ttdeci">XII_ALWAYS_INLINE xiiStringView GetTypeName() const</div><div class="ttdoc">Returns the name of this type.</div><div class="ttdef"><b>Definition</b> RTTI.h:44</div></div>
+<div class="ttc" id="aclassxii_r_t_t_i_html_a99c86c0dacf1fcd6270123452dc80a6f"><div class="ttname"><a href="../../db/d89/classxii_r_t_t_i.html#a99c86c0dacf1fcd6270123452dc80a6f">xiiRTTI::GetProperties</a></div><div class="ttdeci">XII_ALWAYS_INLINE xiiArrayPtr&lt; const xiiAbstractProperty *const &gt; GetProperties() const</div><div class="ttdoc">Returns the array of properties that this type has. Does NOT include properties from base classes.</div><div class="ttdef"><b>Definition</b> RTTI.h:75</div></div>
+<div class="ttc" id="aclassxii_r_t_t_i_html_aa26c08569674d005e9944732c4cede7d"><div class="ttname"><a href="../../db/d89/classxii_r_t_t_i.html#aa26c08569674d005e9944732c4cede7d">xiiRTTI::GetAllocator</a></div><div class="ttdeci">XII_ALWAYS_INLINE xiiRTTIAllocator * GetAllocator() const</div><div class="ttdoc">Returns the object through which instances of this type can be allocated.</div><div class="ttdef"><b>Definition</b> RTTI.h:72</div></div>
+<div class="ttc" id="aclassxii_r_t_t_i_html_aa7838365864432bf2f97698ac6c99c01"><div class="ttname"><a href="../../db/d89/classxii_r_t_t_i.html#aa7838365864432bf2f97698ac6c99c01">xiiRTTI::GetTypeSize</a></div><div class="ttdeci">XII_ALWAYS_INLINE xiiUInt32 GetTypeSize() const</div><div class="ttdoc">Returns the size (in bytes) of an instance of this type.</div><div class="ttdef"><b>Definition</b> RTTI.h:89</div></div>
+<div class="ttc" id="aclassxii_r_t_t_i_html_ab01841286e6950143394487153c63c22"><div class="ttname"><a href="../../db/d89/classxii_r_t_t_i.html#ab01841286e6950143394487153c63c22">xiiRTTI::IsDerivedFrom</a></div><div class="ttdeci">XII_ALWAYS_INLINE bool IsDerivedFrom(const xiiRTTI *pBaseType) const</div><div class="ttdoc">Returns true if this type is derived from the given type (or of the same type).</div><div class="ttdef"><b>Definition</b> RTTI.h:56</div></div>
+<div class="ttc" id="aclassxii_r_t_t_i_html_ab04580f3ca5f9e4a86b7a523d6806a20"><div class="ttname"><a href="../../db/d89/classxii_r_t_t_i.html#ab04580f3ca5f9e4a86b7a523d6806a20">xiiRTTI::GetVariantType</a></div><div class="ttdeci">XII_ALWAYS_INLINE xiiVariantType::Enum GetVariantType() const</div><div class="ttdoc">Returns the corresponding variant type for this type or Invalid if there is none.</div><div class="ttdef"><b>Definition</b> RTTI.h:53</div></div>
+<div class="ttc" id="aclassxii_r_t_t_i_html_addc7dacc0bde5aa4141a5049200076be"><div class="ttname"><a href="../../db/d89/classxii_r_t_t_i.html#addc7dacc0bde5aa4141a5049200076be">xiiRTTI::CanHandleMessage</a></div><div class="ttdeci">bool CanHandleMessage(xiiMessageId id) const</div><div class="ttdoc">Returns whether this type can handle the message type with the given id.</div><div class="ttdef"><b>Definition</b> RTTI.h:134</div></div>
+<div class="ttc" id="aclassxii_r_t_t_i_html_ae57a864cdfc0618251e547769f3ec824"><div class="ttname"><a href="../../db/d89/classxii_r_t_t_i.html#ae57a864cdfc0618251e547769f3ec824">xiiRTTI::GetTypeFlags</a></div><div class="ttdeci">XII_ALWAYS_INLINE const xiiBitflags&lt; xiiTypeFlags &gt; &amp; GetTypeFlags() const</div><div class="ttdoc">Returns the type flags.</div><div class="ttdef"><b>Definition</b> RTTI.h:95</div></div>
+<div class="ttc" id="aclassxii_small_array_base_html_a04e886c6f3b509236c70581718f988ad"><div class="ttname"><a href="../../d0/d92/classxii_small_array_base.html#a04e886c6f3b509236c70581718f988ad">xiiSmallArrayBase::GetCount</a></div><div class="ttdeci">xiiUInt32 GetCount() const</div><div class="ttdoc">Returns the number of active elements in the array.</div><div class="ttdef"><b>Definition</b> SmallArray_inl.h:201</div></div>
+<div class="ttc" id="aclassxii_small_array_html"><div class="ttname"><a href="../../d6/d1f/classxii_small_array.html">xiiSmallArray</a></div><div class="ttdef"><b>Definition</b> SmallArray.h:212</div></div>
+<div class="ttc" id="agroup__group1_html_ga24f647174760cac13d2624b5ad74b00c"><div class="ttname"><a href="../../da/d1f/group__group1.html#ga24f647174760cac13d2624b5ad74b00c">func</a></div><div class="ttdeci">void func()</div><div class="ttdef"><b>Definition</b> group.cpp:13</div></div>
+<div class="ttc" id="astructxii_bitflags_html"><div class="ttname"><a href="../../d7/d55/structxii_bitflags.html">xiiBitflags</a></div><div class="ttdoc">The xiiBitflags class allows you to work with type-safe bitflags.</div><div class="ttdef"><b>Definition</b> Bitflags.h:82</div></div>
+<div class="ttc" id="astructxii_delegate_html"><div class="ttname"><a href="../../dc/d84/structxii_delegate.html">xiiDelegate</a></div><div class="ttdoc">A generic delegate class which supports static functions and member functions.</div><div class="ttdef"><b>Definition</b> Delegate.h:76</div></div>
+<div class="ttc" id="astructxii_internal_1_1_new_instance_html"><div class="ttname"><a href="../../de/d3c/structxii_internal_1_1_new_instance.html">xiiInternal::NewInstance</a></div><div class="ttdef"><b>Definition</b> AllocatorBase_inl.h:18</div></div>
+<div class="ttc" id="astructxii_message_sender_info_html"><div class="ttname"><a href="../../df/dfe/structxii_message_sender_info.html">xiiMessageSenderInfo</a></div><div class="ttdef"><b>Definition</b> MessageHandler.h:42</div></div>
+<div class="ttc" id="astructxii_plugin_event_html"><div class="ttname"><a href="../../d9/dc8/structxii_plugin_event.html">xiiPluginEvent</a></div><div class="ttdoc">The data that is broadcast whenever a plugin is (un-) loaded.</div><div class="ttdef"><b>Definition</b> Plugin.h:11</div></div>
+<div class="ttc" id="astructxii_r_t_t_i_1_1_for_each_options_1_1_bits_html"><div class="ttname"><a href="../../d3/d64/structxii_r_t_t_i_1_1_for_each_options_1_1_bits.html">xiiRTTI::ForEachOptions::Bits</a></div><div class="ttdef"><b>Definition</b> RTTI.h:160</div></div>
+<div class="ttc" id="astructxii_r_t_t_i_1_1_for_each_options_html"><div class="ttname"><a href="../../d3/d09/structxii_r_t_t_i_1_1_for_each_options.html">xiiRTTI::ForEachOptions</a></div><div class="ttdef"><b>Definition</b> RTTI.h:147</div></div>
+<div class="ttc" id="astructxii_r_t_t_i_allocator_html"><div class="ttname"><a href="../../d9/d89/structxii_r_t_t_i_allocator.html">xiiRTTIAllocator</a></div><div class="ttdoc">The interface for an allocator that creates instances of reflected types.</div><div class="ttdef"><b>Definition</b> RTTI.h:229</div></div>
+<div class="ttc" id="astructxii_r_t_t_i_allocator_html_a0c52fd8ea0f304135678b6146cee370d"><div class="ttname"><a href="../../d9/d89/structxii_r_t_t_i_allocator.html#a0c52fd8ea0f304135678b6146cee370d">xiiRTTIAllocator::Deallocate</a></div><div class="ttdeci">virtual void Deallocate(void *pObject, xiiAllocatorBase *pAllocator=nullptr)=0</div><div class="ttdoc">Deallocates the given instance.</div></div>
+<div class="ttc" id="astructxii_r_t_t_i_allocator_html_a0e25bc629a32d963cbe750abe84f7fc4"><div class="ttname"><a href="../../d9/d89/structxii_r_t_t_i_allocator.html#a0e25bc629a32d963cbe750abe84f7fc4">xiiRTTIAllocator::Allocate</a></div><div class="ttdeci">xiiInternal::NewInstance&lt; T &gt; Allocate(xiiAllocatorBase *pAllocator=nullptr)</div><div class="ttdoc">Allocates one instance.</div><div class="ttdef"><b>Definition</b> RTTI.h:237</div></div>
+<div class="ttc" id="astructxii_r_t_t_i_allocator_html_a743c5e9e6cc050eba2a8d15918fb3d57"><div class="ttname"><a href="../../d9/d89/structxii_r_t_t_i_allocator.html#a743c5e9e6cc050eba2a8d15918fb3d57">xiiRTTIAllocator::CanAllocate</a></div><div class="ttdeci">virtual bool CanAllocate() const</div><div class="ttdoc">Returns whether the type that is represented by this allocator, can be dynamically allocated at runti...</div><div class="ttdef"><b>Definition</b> RTTI.h:233</div></div>
+<div class="ttc" id="astructxii_r_t_t_i_allocator_html_aa2263cde602aab6441cb935b521412d1"><div class="ttname"><a href="../../d9/d89/structxii_r_t_t_i_allocator.html#aa2263cde602aab6441cb935b521412d1">xiiRTTIAllocator::Clone</a></div><div class="ttdeci">xiiInternal::NewInstance&lt; T &gt; Clone(const void *pObject, xiiAllocatorBase *pAllocator=nullptr)</div><div class="ttdoc">Clones the given instance.</div><div class="ttdef"><b>Definition</b> RTTI.h:244</div></div>
+<div class="ttc" id="astructxii_r_t_t_i_default_allocator_html"><div class="ttname"><a href="../../d9/de2/structxii_r_t_t_i_default_allocator.html">xiiRTTIDefaultAllocator</a></div><div class="ttdoc">Default implementation of xiiRTTIAllocator that allocates instances via the given allocator.</div><div class="ttdef"><b>Definition</b> RTTI.h:284</div></div>
+<div class="ttc" id="astructxii_r_t_t_i_default_allocator_html_a280c5adc9dc0d2be1029927c30ae81c7"><div class="ttname"><a href="../../d9/de2/structxii_r_t_t_i_default_allocator.html#a280c5adc9dc0d2be1029927c30ae81c7">xiiRTTIDefaultAllocator::Deallocate</a></div><div class="ttdeci">virtual void Deallocate(void *pObject, xiiAllocatorBase *pAllocator) override</div><div class="ttdoc">Deletes the given instance with the given allocator.</div><div class="ttdef"><b>Definition</b> RTTI.h:308</div></div>
+<div class="ttc" id="astructxii_r_t_t_i_default_allocator_html_a2d4cc76e3730cb4da3e18ab94cdcf4bb"><div class="ttname"><a href="../../d9/de2/structxii_r_t_t_i_default_allocator.html#a2d4cc76e3730cb4da3e18ab94cdcf4bb">xiiRTTIDefaultAllocator::AllocateInternal</a></div><div class="ttdeci">virtual xiiInternal::NewInstance&lt; void &gt; AllocateInternal(xiiAllocatorBase *pAllocator) override</div><div class="ttdoc">Returns a new instance that was allocated with the given allocator.</div><div class="ttdef"><b>Definition</b> RTTI.h:286</div></div>
+<div class="ttc" id="astructxii_r_t_t_i_default_allocator_html_a4367b7e926702142767f3f4d03318d6d"><div class="ttname"><a href="../../d9/de2/structxii_r_t_t_i_default_allocator.html#a4367b7e926702142767f3f4d03318d6d">xiiRTTIDefaultAllocator::CloneInternal</a></div><div class="ttdeci">virtual xiiInternal::NewInstance&lt; void &gt; CloneInternal(const void *pObject, xiiAllocatorBase *pAllocator) override</div><div class="ttdoc">Clones the given instance with the given allocator.</div><div class="ttdef"><b>Definition</b> RTTI.h:297</div></div>
+<div class="ttc" id="astructxii_r_t_t_i_no_allocator_html"><div class="ttname"><a href="../../d0/dd9/structxii_r_t_t_i_no_allocator.html">xiiRTTINoAllocator</a></div><div class="ttdoc">Dummy Allocator for types that should not be allocatable through the reflection system.</div><div class="ttdef"><b>Definition</b> RTTI.h:263</div></div>
+<div class="ttc" id="astructxii_r_t_t_i_no_allocator_html_a2a2130976aff83235ff14e6abad0745b"><div class="ttname"><a href="../../d0/dd9/structxii_r_t_t_i_no_allocator.html#a2a2130976aff83235ff14e6abad0745b">xiiRTTINoAllocator::Deallocate</a></div><div class="ttdeci">virtual void Deallocate(void *pObject, xiiAllocatorBase *pAllocator) override</div><div class="ttdoc">Will trigger an assert.</div><div class="ttdef"><b>Definition</b> RTTI.h:275</div></div>
+<div class="ttc" id="astructxii_r_t_t_i_no_allocator_html_a357ccf8a3c2bbd17f751aad0d152c049"><div class="ttname"><a href="../../d0/dd9/structxii_r_t_t_i_no_allocator.html#a357ccf8a3c2bbd17f751aad0d152c049">xiiRTTINoAllocator::CanAllocate</a></div><div class="ttdeci">virtual bool CanAllocate() const override</div><div class="ttdoc">Returns false, because this type of allocator is used for classes that shall not be allocated dynamic...</div><div class="ttdef"><b>Definition</b> RTTI.h:265</div></div>
+<div class="ttc" id="astructxii_r_t_t_i_no_allocator_html_ac59cde5b7ba48bfb85b5126934dcb52b"><div class="ttname"><a href="../../d0/dd9/structxii_r_t_t_i_no_allocator.html#ac59cde5b7ba48bfb85b5126934dcb52b">xiiRTTINoAllocator::AllocateInternal</a></div><div class="ttdeci">virtual xiiInternal::NewInstance&lt; void &gt; AllocateInternal(xiiAllocatorBase *pAllocator) override</div><div class="ttdoc">Will trigger an assert.</div><div class="ttdef"><b>Definition</b> RTTI.h:268</div></div>
+<div class="ttc" id="astructxii_string_view_html"><div class="ttname"><a href="../../da/d9d/structxii_string_view.html">xiiStringView</a></div><div class="ttdoc">xiiStringView represent a read-only sub-string of a larger string, as it can store a dedicated string...</div><div class="ttdef"><b>Definition</b> StringView.h:28</div></div>
+<div class="ttc" id="astructxii_trait_int_html"><div class="ttname"><a href="../../da/d04/structxii_trait_int.html">xiiTraitInt</a></div><div class="ttdoc">Type traits.</div><div class="ttdef"><b>Definition</b> TypeTraits.h:10</div></div>
+<div class="ttc" id="astructxii_variant_type_html_a38d867476ba7137c38a09976ece9ee6b"><div class="ttname"><a href="../../dd/dba/structxii_variant_type.html#a38d867476ba7137c38a09976ece9ee6b">xiiVariantType::Enum</a></div><div class="ttdeci">Enum</div><div class="ttdoc">This enum describes the type of data that is currently stored inside the variant. Note that changes t...</div><div class="ttdef"><b>Definition</b> VariantType.h:26</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.html">home</a></li><li class="navelem"><a class="el" href="../../dir_1036706e55c22cab35bc1c58ee689f1d.html">runner</a></li><li class="navelem"><a class="el" href="../../dir_629f8151d55d307162ff2d619fb1783d.html">work</a></li><li class="navelem"><a class="el" href="../../dir_1ddc44fe1263a8c7935fa6130b7d9499.html">XII</a></li><li class="navelem"><a class="el" href="../../dir_2c1b6808f12952f4c36e05ba7068379a.html">XII</a></li><li class="navelem"><a class="el" href="../../dir_b5a1c4ecfca018ad24b729e213296d41.html">Source</a></li><li class="navelem"><a class="el" href="../../dir_e321052006a51284e67389ab20037e7c.html">Engine</a></li><li class="navelem"><a class="el" href="../../dir_be0c42c58b36f42c54ec54024ed4f6af.html">Foundation</a></li><li class="navelem"><a class="el" href="../../dir_f1e13142959a2e7970d979e1f6f7bcb1.html">Reflection</a></li><li class="navelem"><a class="el" href="../../dir_44ac7f88d9b5593e444e5c7bf3d69918.html">Implementation</a></li><li class="navelem"><b>RTTI.h</b></li>
+    <li class="footer">Generated on Mon Jul 1 2024 23:53:10 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,422 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.11.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<!-- BEGIN opengraph metadata -->
+<meta property="og:title" content="XII" />
+<meta property="og:image" content="../../XII-Logo.png" />
+<meta property="og:description" content="An advanced high-performance simulation engine." />
+<meta property="og:url" content="https://www.xiitechnologies.com" />
+<!-- END opengraph metadata -->
+<!-- BEGIN twitter metadata -->
+<meta name="twitter:image:src" content="../../XII-Logo.png" />
+<meta name="twitter:title" content="XII" />
+<meta name="twitter:description" content="An advanced high-performance simulation engine." />
+<!-- END twitter metadata -->
+<title>XII: xiiSimdVec4i Class Reference</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link rel="icon" type="image/svg+xml" href="logo.drawio.svg"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="../../toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../custom.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<a href="https://github.com/jothepro/doxygen-awesome-css" class="github-corner" title="View source on GitHub" target="_blank" rel="noopener noreferrer">
+    <svg viewBox="0 0 250 250" width="40" height="40" style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+    <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="../../XII-Logo.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">XII
+   &#160;<span id="projectnumber">1.0.0</span>
+   </div>
+   <div id="projectbrief">A high-performance simulation engine.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(1); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.html','Search',true);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('d5/d4f/classxii_simd_vec4i.html','../../'); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="../../d2/d84/classxii_simd_vec4i-members.html">List of all members</a>  </div>
+  <div class="headertitle"><div class="title">xiiSimdVec4i Class Reference</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p><a class="el" href="../../d8/d4f/class_a.html">A</a> SIMD 4-component vector class of signed 32b integers.  
+ <a href="#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="../../dd/d19/_simd_vec4i_8h_source.html">SimdVec4i.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:aecfb3172a9fcb0eca3af0c0be11c0ff9" id="r_aecfb3172a9fcb0eca3af0c0be11c0ff9"><td class="memItemLeft" align="right" valign="top"><a id="aecfb3172a9fcb0eca3af0c0be11c0ff9" name="aecfb3172a9fcb0eca3af0c0be11c0ff9"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>XII_DECLARE_POD_TYPE</b> ()</td></tr>
+<tr class="separator:aecfb3172a9fcb0eca3af0c0be11c0ff9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13b0c8e05f823ec472e4fa41a454ba7b" id="r_a13b0c8e05f823ec472e4fa41a454ba7b"><td class="memItemLeft" align="right" valign="top"><a id="a13b0c8e05f823ec472e4fa41a454ba7b" name="a13b0c8e05f823ec472e4fa41a454ba7b"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>xiiSimdVec4i</b> (xiiInt32 iXyzw)</td></tr>
+<tr class="separator:a13b0c8e05f823ec472e4fa41a454ba7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59cebdcbb13e0059a546e7604aca6a23" id="r_a59cebdcbb13e0059a546e7604aca6a23"><td class="memItemLeft" align="right" valign="top"><a id="a59cebdcbb13e0059a546e7604aca6a23" name="a59cebdcbb13e0059a546e7604aca6a23"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>xiiSimdVec4i</b> (xiiInt32 x, xiiInt32 y, xiiInt32 z, xiiInt32 w=1)</td></tr>
+<tr class="separator:a59cebdcbb13e0059a546e7604aca6a23"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaac564f7fd1f5bf03991f5114639ae8c" id="r_aaac564f7fd1f5bf03991f5114639ae8c"><td class="memItemLeft" align="right" valign="top"><a id="aaac564f7fd1f5bf03991f5114639ae8c" name="aaac564f7fd1f5bf03991f5114639ae8c"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>xiiSimdVec4i</b> (xiiInternal::QuadInt v)</td></tr>
+<tr class="separator:aaac564f7fd1f5bf03991f5114639ae8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa8ced354f68b6cbd79a30cdf7dcf53b" id="r_aaa8ced354f68b6cbd79a30cdf7dcf53b"><td class="memItemLeft" align="right" valign="top"><a id="aaa8ced354f68b6cbd79a30cdf7dcf53b" name="aaa8ced354f68b6cbd79a30cdf7dcf53b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Set</b> (xiiInt32 iXyzw)</td></tr>
+<tr class="separator:aaa8ced354f68b6cbd79a30cdf7dcf53b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58979fd5ede7b2ea25ed34317d95dc8a" id="r_a58979fd5ede7b2ea25ed34317d95dc8a"><td class="memItemLeft" align="right" valign="top"><a id="a58979fd5ede7b2ea25ed34317d95dc8a" name="a58979fd5ede7b2ea25ed34317d95dc8a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Set</b> (xiiInt32 x, xiiInt32 y, xiiInt32 z, xiiInt32 w)</td></tr>
+<tr class="separator:a58979fd5ede7b2ea25ed34317d95dc8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77b0b5be40c3cf1d0d80abaafcc5776c" id="r_a77b0b5be40c3cf1d0d80abaafcc5776c"><td class="memItemLeft" align="right" valign="top"><a id="a77b0b5be40c3cf1d0d80abaafcc5776c" name="a77b0b5be40c3cf1d0d80abaafcc5776c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetZero</b> ()</td></tr>
+<tr class="separator:a77b0b5be40c3cf1d0d80abaafcc5776c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba86cce922efdd2a76b15bfd4616e319" id="r_aba86cce922efdd2a76b15bfd4616e319"><td class="memTemplParams" colspan="2"><a id="aba86cce922efdd2a76b15bfd4616e319" name="aba86cce922efdd2a76b15bfd4616e319"></a>
+template&lt;xiiInt32 N&gt; </td></tr>
+<tr class="memitem:aba86cce922efdd2a76b15bfd4616e319"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>Load</b> (const xiiInt32 *pInts)</td></tr>
+<tr class="separator:aba86cce922efdd2a76b15bfd4616e319"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27f2090db96bfae11dad6a27711fd2cb" id="r_a27f2090db96bfae11dad6a27711fd2cb"><td class="memTemplParams" colspan="2"><a id="a27f2090db96bfae11dad6a27711fd2cb" name="a27f2090db96bfae11dad6a27711fd2cb"></a>
+template&lt;xiiInt32 N&gt; </td></tr>
+<tr class="memitem:a27f2090db96bfae11dad6a27711fd2cb"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>Store</b> (xiiInt32 *pInts) const</td></tr>
+<tr class="separator:a27f2090db96bfae11dad6a27711fd2cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2754e9ad4ec37a95eb5f8bc5bff88dd7" id="r_a2754e9ad4ec37a95eb5f8bc5bff88dd7"><td class="memItemLeft" align="right" valign="top"><a id="a2754e9ad4ec37a95eb5f8bc5bff88dd7" name="a2754e9ad4ec37a95eb5f8bc5bff88dd7"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>xiiSimdVec4i</b> (const <a class="el" href="../../d9/d21/classxii_simd_vec4u.html">xiiSimdVec4u</a> &amp;u)</td></tr>
+<tr class="separator:a2754e9ad4ec37a95eb5f8bc5bff88dd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca0cfbe4bc12d68d22d8761416eba458" id="r_aca0cfbe4bc12d68d22d8761416eba458"><td class="memItemLeft" align="right" valign="top"><a id="aca0cfbe4bc12d68d22d8761416eba458" name="aca0cfbe4bc12d68d22d8761416eba458"></a>
+<a class="el" href="../../d3/da5/classxii_simd_vec4f.html">xiiSimdVec4f</a>&#160;</td><td class="memItemRight" valign="bottom"><b>ToFloat</b> () const</td></tr>
+<tr class="separator:aca0cfbe4bc12d68d22d8761416eba458"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab836387d04270221f40a1bcce58fd7c5" id="r_ab836387d04270221f40a1bcce58fd7c5"><td class="memTemplParams" colspan="2"><a id="ab836387d04270221f40a1bcce58fd7c5" name="ab836387d04270221f40a1bcce58fd7c5"></a>
+template&lt;xiiInt32 N&gt; </td></tr>
+<tr class="memitem:ab836387d04270221f40a1bcce58fd7c5"><td class="memTemplItemLeft" align="right" valign="top">xiiInt32&#160;</td><td class="memTemplItemRight" valign="bottom"><b>GetComponent</b> () const</td></tr>
+<tr class="separator:ab836387d04270221f40a1bcce58fd7c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0fff2a971b58104857c5823040bcdc8" id="r_ad0fff2a971b58104857c5823040bcdc8"><td class="memItemLeft" align="right" valign="top"><a id="ad0fff2a971b58104857c5823040bcdc8" name="ad0fff2a971b58104857c5823040bcdc8"></a>
+xiiInt32&#160;</td><td class="memItemRight" valign="bottom"><b>x</b> () const</td></tr>
+<tr class="separator:ad0fff2a971b58104857c5823040bcdc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21466f5b98ffaab5192bc43152a4732b" id="r_a21466f5b98ffaab5192bc43152a4732b"><td class="memItemLeft" align="right" valign="top"><a id="a21466f5b98ffaab5192bc43152a4732b" name="a21466f5b98ffaab5192bc43152a4732b"></a>
+xiiInt32&#160;</td><td class="memItemRight" valign="bottom"><b>y</b> () const</td></tr>
+<tr class="separator:a21466f5b98ffaab5192bc43152a4732b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac8b08493468ead90ddd1d5536503e85" id="r_aac8b08493468ead90ddd1d5536503e85"><td class="memItemLeft" align="right" valign="top"><a id="aac8b08493468ead90ddd1d5536503e85" name="aac8b08493468ead90ddd1d5536503e85"></a>
+xiiInt32&#160;</td><td class="memItemRight" valign="bottom"><b>z</b> () const</td></tr>
+<tr class="separator:aac8b08493468ead90ddd1d5536503e85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f549297d7b5c4f6f5909921d1b7a89f" id="r_a4f549297d7b5c4f6f5909921d1b7a89f"><td class="memItemLeft" align="right" valign="top"><a id="a4f549297d7b5c4f6f5909921d1b7a89f" name="a4f549297d7b5c4f6f5909921d1b7a89f"></a>
+xiiInt32&#160;</td><td class="memItemRight" valign="bottom"><b>w</b> () const</td></tr>
+<tr class="separator:a4f549297d7b5c4f6f5909921d1b7a89f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab23a827e0695e6ffc78141b8d2626e97" id="r_ab23a827e0695e6ffc78141b8d2626e97"><td class="memTemplParams" colspan="2"><a id="ab23a827e0695e6ffc78141b8d2626e97" name="ab23a827e0695e6ffc78141b8d2626e97"></a>
+template&lt;xiiSwizzle::Enum s&gt; </td></tr>
+<tr class="memitem:ab23a827e0695e6ffc78141b8d2626e97"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="../../d5/d4f/classxii_simd_vec4i.html">xiiSimdVec4i</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><b>Get</b> () const</td></tr>
+<tr class="separator:ab23a827e0695e6ffc78141b8d2626e97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1cd526dc7078c4ce749412534ea4bbb4" id="r_a1cd526dc7078c4ce749412534ea4bbb4"><td class="memTemplParams" colspan="2"><a id="a1cd526dc7078c4ce749412534ea4bbb4" name="a1cd526dc7078c4ce749412534ea4bbb4"></a>
+template&lt;xiiSwizzle::Enum s&gt; </td></tr>
+<tr class="memitem:a1cd526dc7078c4ce749412534ea4bbb4"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="../../d5/d4f/classxii_simd_vec4i.html">xiiSimdVec4i</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><b>GetCombined</b> (const <a class="el" href="../../d5/d4f/classxii_simd_vec4i.html">xiiSimdVec4i</a> &amp;other) const</td></tr>
+<tr class="memdesc:a1cd526dc7078c4ce749412534ea4bbb4"><td class="mdescLeft">&#160;</td><td class="mdescRight">x = this[s0], y = this[s1], z = other[s2], w = other[s3] <br /></td></tr>
+<tr class="separator:a1cd526dc7078c4ce749412534ea4bbb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b36bccc25d6571dad76c6f6753ca85a" id="r_a4b36bccc25d6571dad76c6f6753ca85a"><td class="memItemLeft" align="right" valign="top"><a id="a4b36bccc25d6571dad76c6f6753ca85a" name="a4b36bccc25d6571dad76c6f6753ca85a"></a>
+<a class="el" href="../../d5/d4f/classxii_simd_vec4i.html">xiiSimdVec4i</a>&#160;</td><td class="memItemRight" valign="bottom"><b>operator-</b> () const</td></tr>
+<tr class="separator:a4b36bccc25d6571dad76c6f6753ca85a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa7c8fe407540cd9398d0ca082fe3204" id="r_afa7c8fe407540cd9398d0ca082fe3204"><td class="memItemLeft" align="right" valign="top"><a id="afa7c8fe407540cd9398d0ca082fe3204" name="afa7c8fe407540cd9398d0ca082fe3204"></a>
+<a class="el" href="../../d5/d4f/classxii_simd_vec4i.html">xiiSimdVec4i</a>&#160;</td><td class="memItemRight" valign="bottom"><b>operator+</b> (const <a class="el" href="../../d5/d4f/classxii_simd_vec4i.html">xiiSimdVec4i</a> &amp;v) const</td></tr>
+<tr class="separator:afa7c8fe407540cd9398d0ca082fe3204"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9d4f307416b36403aba163608045499" id="r_ae9d4f307416b36403aba163608045499"><td class="memItemLeft" align="right" valign="top"><a id="ae9d4f307416b36403aba163608045499" name="ae9d4f307416b36403aba163608045499"></a>
+<a class="el" href="../../d5/d4f/classxii_simd_vec4i.html">xiiSimdVec4i</a>&#160;</td><td class="memItemRight" valign="bottom"><b>operator-</b> (const <a class="el" href="../../d5/d4f/classxii_simd_vec4i.html">xiiSimdVec4i</a> &amp;v) const</td></tr>
+<tr class="separator:ae9d4f307416b36403aba163608045499"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e969750240dfbd7c7e60aa36c88b838" id="r_a3e969750240dfbd7c7e60aa36c88b838"><td class="memItemLeft" align="right" valign="top"><a id="a3e969750240dfbd7c7e60aa36c88b838" name="a3e969750240dfbd7c7e60aa36c88b838"></a>
+<a class="el" href="../../d5/d4f/classxii_simd_vec4i.html">xiiSimdVec4i</a>&#160;</td><td class="memItemRight" valign="bottom"><b>CompMul</b> (const <a class="el" href="../../d5/d4f/classxii_simd_vec4i.html">xiiSimdVec4i</a> &amp;v) const</td></tr>
+<tr class="separator:a3e969750240dfbd7c7e60aa36c88b838"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3bc2bdc9ff240e5a594f1fae5f03395" id="r_ab3bc2bdc9ff240e5a594f1fae5f03395"><td class="memItemLeft" align="right" valign="top"><a id="ab3bc2bdc9ff240e5a594f1fae5f03395" name="ab3bc2bdc9ff240e5a594f1fae5f03395"></a>
+<a class="el" href="../../d5/d4f/classxii_simd_vec4i.html">xiiSimdVec4i</a>&#160;</td><td class="memItemRight" valign="bottom"><b>CompDiv</b> (const <a class="el" href="../../d5/d4f/classxii_simd_vec4i.html">xiiSimdVec4i</a> &amp;v) const</td></tr>
+<tr class="separator:ab3bc2bdc9ff240e5a594f1fae5f03395"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad202b4d41be26aa5f91b18f1f1a552a2" id="r_ad202b4d41be26aa5f91b18f1f1a552a2"><td class="memItemLeft" align="right" valign="top"><a id="ad202b4d41be26aa5f91b18f1f1a552a2" name="ad202b4d41be26aa5f91b18f1f1a552a2"></a>
+<a class="el" href="../../d5/d4f/classxii_simd_vec4i.html">xiiSimdVec4i</a>&#160;</td><td class="memItemRight" valign="bottom"><b>operator|</b> (const <a class="el" href="../../d5/d4f/classxii_simd_vec4i.html">xiiSimdVec4i</a> &amp;v) const</td></tr>
+<tr class="separator:ad202b4d41be26aa5f91b18f1f1a552a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac13a9c998437c3651215539d4661a82" id="r_aac13a9c998437c3651215539d4661a82"><td class="memItemLeft" align="right" valign="top"><a id="aac13a9c998437c3651215539d4661a82" name="aac13a9c998437c3651215539d4661a82"></a>
+<a class="el" href="../../d5/d4f/classxii_simd_vec4i.html">xiiSimdVec4i</a>&#160;</td><td class="memItemRight" valign="bottom"><b>operator&amp;</b> (const <a class="el" href="../../d5/d4f/classxii_simd_vec4i.html">xiiSimdVec4i</a> &amp;v) const</td></tr>
+<tr class="separator:aac13a9c998437c3651215539d4661a82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a80766969f15fe18a3ad24bb00e67d3" id="r_a3a80766969f15fe18a3ad24bb00e67d3"><td class="memItemLeft" align="right" valign="top"><a id="a3a80766969f15fe18a3ad24bb00e67d3" name="a3a80766969f15fe18a3ad24bb00e67d3"></a>
+<a class="el" href="../../d5/d4f/classxii_simd_vec4i.html">xiiSimdVec4i</a>&#160;</td><td class="memItemRight" valign="bottom"><b>operator^</b> (const <a class="el" href="../../d5/d4f/classxii_simd_vec4i.html">xiiSimdVec4i</a> &amp;v) const</td></tr>
+<tr class="separator:a3a80766969f15fe18a3ad24bb00e67d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d9f9ea70f77ce4fd01b49859d7d52f0" id="r_a9d9f9ea70f77ce4fd01b49859d7d52f0"><td class="memItemLeft" align="right" valign="top"><a id="a9d9f9ea70f77ce4fd01b49859d7d52f0" name="a9d9f9ea70f77ce4fd01b49859d7d52f0"></a>
+<a class="el" href="../../d5/d4f/classxii_simd_vec4i.html">xiiSimdVec4i</a>&#160;</td><td class="memItemRight" valign="bottom"><b>operator~</b> () const</td></tr>
+<tr class="separator:a9d9f9ea70f77ce4fd01b49859d7d52f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4941cab5d887c845345dbf05800453c" id="r_af4941cab5d887c845345dbf05800453c"><td class="memItemLeft" align="right" valign="top"><a id="af4941cab5d887c845345dbf05800453c" name="af4941cab5d887c845345dbf05800453c"></a>
+<a class="el" href="../../d5/d4f/classxii_simd_vec4i.html">xiiSimdVec4i</a>&#160;</td><td class="memItemRight" valign="bottom"><b>operator&lt;&lt;</b> (xiiUInt32 uiShift) const</td></tr>
+<tr class="separator:af4941cab5d887c845345dbf05800453c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2533e07f8e78ae09d2257acf8f68d500" id="r_a2533e07f8e78ae09d2257acf8f68d500"><td class="memItemLeft" align="right" valign="top"><a id="a2533e07f8e78ae09d2257acf8f68d500" name="a2533e07f8e78ae09d2257acf8f68d500"></a>
+<a class="el" href="../../d5/d4f/classxii_simd_vec4i.html">xiiSimdVec4i</a>&#160;</td><td class="memItemRight" valign="bottom"><b>operator&gt;&gt;</b> (xiiUInt32 uiShift) const</td></tr>
+<tr class="separator:a2533e07f8e78ae09d2257acf8f68d500"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e14f27efe5e65cad1cddc06f153aab9" id="r_a2e14f27efe5e65cad1cddc06f153aab9"><td class="memItemLeft" align="right" valign="top"><a id="a2e14f27efe5e65cad1cddc06f153aab9" name="a2e14f27efe5e65cad1cddc06f153aab9"></a>
+<a class="el" href="../../d5/d4f/classxii_simd_vec4i.html">xiiSimdVec4i</a>&#160;</td><td class="memItemRight" valign="bottom"><b>operator&lt;&lt;</b> (const <a class="el" href="../../d5/d4f/classxii_simd_vec4i.html">xiiSimdVec4i</a> &amp;v) const</td></tr>
+<tr class="separator:a2e14f27efe5e65cad1cddc06f153aab9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afeff270cc411839bc662fe180cd81c0d" id="r_afeff270cc411839bc662fe180cd81c0d"><td class="memItemLeft" align="right" valign="top"><a id="afeff270cc411839bc662fe180cd81c0d" name="afeff270cc411839bc662fe180cd81c0d"></a>
+<a class="el" href="../../d5/d4f/classxii_simd_vec4i.html">xiiSimdVec4i</a>&#160;</td><td class="memItemRight" valign="bottom"><b>operator&gt;&gt;</b> (const <a class="el" href="../../d5/d4f/classxii_simd_vec4i.html">xiiSimdVec4i</a> &amp;v) const</td></tr>
+<tr class="separator:afeff270cc411839bc662fe180cd81c0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab709accc91b38781d7d752fdfc84880f" id="r_ab709accc91b38781d7d752fdfc84880f"><td class="memItemLeft" align="right" valign="top"><a id="ab709accc91b38781d7d752fdfc84880f" name="ab709accc91b38781d7d752fdfc84880f"></a>
+<a class="el" href="../../d5/d4f/classxii_simd_vec4i.html">xiiSimdVec4i</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator+=</b> (const <a class="el" href="../../d5/d4f/classxii_simd_vec4i.html">xiiSimdVec4i</a> &amp;v)</td></tr>
+<tr class="separator:ab709accc91b38781d7d752fdfc84880f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc8fa8828e17edb837f346197d802149" id="r_acc8fa8828e17edb837f346197d802149"><td class="memItemLeft" align="right" valign="top"><a id="acc8fa8828e17edb837f346197d802149" name="acc8fa8828e17edb837f346197d802149"></a>
+<a class="el" href="../../d5/d4f/classxii_simd_vec4i.html">xiiSimdVec4i</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator-=</b> (const <a class="el" href="../../d5/d4f/classxii_simd_vec4i.html">xiiSimdVec4i</a> &amp;v)</td></tr>
+<tr class="separator:acc8fa8828e17edb837f346197d802149"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05c323868b785cc30d8db7f471102275" id="r_a05c323868b785cc30d8db7f471102275"><td class="memItemLeft" align="right" valign="top"><a id="a05c323868b785cc30d8db7f471102275" name="a05c323868b785cc30d8db7f471102275"></a>
+<a class="el" href="../../d5/d4f/classxii_simd_vec4i.html">xiiSimdVec4i</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator|=</b> (const <a class="el" href="../../d5/d4f/classxii_simd_vec4i.html">xiiSimdVec4i</a> &amp;v)</td></tr>
+<tr class="separator:a05c323868b785cc30d8db7f471102275"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a55bc5b22c6806db13e2bfbc24ea274" id="r_a4a55bc5b22c6806db13e2bfbc24ea274"><td class="memItemLeft" align="right" valign="top"><a id="a4a55bc5b22c6806db13e2bfbc24ea274" name="a4a55bc5b22c6806db13e2bfbc24ea274"></a>
+<a class="el" href="../../d5/d4f/classxii_simd_vec4i.html">xiiSimdVec4i</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator&amp;=</b> (const <a class="el" href="../../d5/d4f/classxii_simd_vec4i.html">xiiSimdVec4i</a> &amp;v)</td></tr>
+<tr class="separator:a4a55bc5b22c6806db13e2bfbc24ea274"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae40bd848d5e763f4e32cfd02fe0d8201" id="r_ae40bd848d5e763f4e32cfd02fe0d8201"><td class="memItemLeft" align="right" valign="top"><a id="ae40bd848d5e763f4e32cfd02fe0d8201" name="ae40bd848d5e763f4e32cfd02fe0d8201"></a>
+<a class="el" href="../../d5/d4f/classxii_simd_vec4i.html">xiiSimdVec4i</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator^=</b> (const <a class="el" href="../../d5/d4f/classxii_simd_vec4i.html">xiiSimdVec4i</a> &amp;v)</td></tr>
+<tr class="separator:ae40bd848d5e763f4e32cfd02fe0d8201"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e21b9ef781d372ac37d151545d63826" id="r_a5e21b9ef781d372ac37d151545d63826"><td class="memItemLeft" align="right" valign="top"><a id="a5e21b9ef781d372ac37d151545d63826" name="a5e21b9ef781d372ac37d151545d63826"></a>
+<a class="el" href="../../d5/d4f/classxii_simd_vec4i.html">xiiSimdVec4i</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator&lt;&lt;=</b> (xiiUInt32 uiShift)</td></tr>
+<tr class="separator:a5e21b9ef781d372ac37d151545d63826"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac79e8e6277c5d382f01b34b31b09ec48" id="r_ac79e8e6277c5d382f01b34b31b09ec48"><td class="memItemLeft" align="right" valign="top"><a id="ac79e8e6277c5d382f01b34b31b09ec48" name="ac79e8e6277c5d382f01b34b31b09ec48"></a>
+<a class="el" href="../../d5/d4f/classxii_simd_vec4i.html">xiiSimdVec4i</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator&gt;&gt;=</b> (xiiUInt32 uiShift)</td></tr>
+<tr class="separator:ac79e8e6277c5d382f01b34b31b09ec48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad569255d15f4241ba52c957d7b71aaaf" id="r_ad569255d15f4241ba52c957d7b71aaaf"><td class="memItemLeft" align="right" valign="top"><a id="ad569255d15f4241ba52c957d7b71aaaf" name="ad569255d15f4241ba52c957d7b71aaaf"></a>
+<a class="el" href="../../d5/d4f/classxii_simd_vec4i.html">xiiSimdVec4i</a>&#160;</td><td class="memItemRight" valign="bottom"><b>CompMin</b> (const <a class="el" href="../../d5/d4f/classxii_simd_vec4i.html">xiiSimdVec4i</a> &amp;v) const</td></tr>
+<tr class="separator:ad569255d15f4241ba52c957d7b71aaaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5557acd63d4af0a53b81e729ba92a929" id="r_a5557acd63d4af0a53b81e729ba92a929"><td class="memItemLeft" align="right" valign="top"><a id="a5557acd63d4af0a53b81e729ba92a929" name="a5557acd63d4af0a53b81e729ba92a929"></a>
+<a class="el" href="../../d5/d4f/classxii_simd_vec4i.html">xiiSimdVec4i</a>&#160;</td><td class="memItemRight" valign="bottom"><b>CompMax</b> (const <a class="el" href="../../d5/d4f/classxii_simd_vec4i.html">xiiSimdVec4i</a> &amp;v) const</td></tr>
+<tr class="separator:a5557acd63d4af0a53b81e729ba92a929"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76c93a9746a71353fe5b679e199d2a3e" id="r_a76c93a9746a71353fe5b679e199d2a3e"><td class="memItemLeft" align="right" valign="top"><a id="a76c93a9746a71353fe5b679e199d2a3e" name="a76c93a9746a71353fe5b679e199d2a3e"></a>
+<a class="el" href="../../d5/d4f/classxii_simd_vec4i.html">xiiSimdVec4i</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Abs</b> () const</td></tr>
+<tr class="separator:a76c93a9746a71353fe5b679e199d2a3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe1564aa4908cee9d8a312d7eb96fd30" id="r_afe1564aa4908cee9d8a312d7eb96fd30"><td class="memItemLeft" align="right" valign="top"><a id="afe1564aa4908cee9d8a312d7eb96fd30" name="afe1564aa4908cee9d8a312d7eb96fd30"></a>
+<a class="el" href="../../de/d88/classxii_simd_vec4b.html">xiiSimdVec4b</a>&#160;</td><td class="memItemRight" valign="bottom"><b>operator==</b> (const <a class="el" href="../../d5/d4f/classxii_simd_vec4i.html">xiiSimdVec4i</a> &amp;v) const</td></tr>
+<tr class="separator:afe1564aa4908cee9d8a312d7eb96fd30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89c50ce4ad7a2685719a3614f4882d17" id="r_a89c50ce4ad7a2685719a3614f4882d17"><td class="memItemLeft" align="right" valign="top"><a id="a89c50ce4ad7a2685719a3614f4882d17" name="a89c50ce4ad7a2685719a3614f4882d17"></a>
+<a class="el" href="../../de/d88/classxii_simd_vec4b.html">xiiSimdVec4b</a>&#160;</td><td class="memItemRight" valign="bottom"><b>operator!=</b> (const <a class="el" href="../../d5/d4f/classxii_simd_vec4i.html">xiiSimdVec4i</a> &amp;v) const</td></tr>
+<tr class="separator:a89c50ce4ad7a2685719a3614f4882d17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa66f17109dc410fcfd6ecfcfc80d5b13" id="r_aa66f17109dc410fcfd6ecfcfc80d5b13"><td class="memItemLeft" align="right" valign="top"><a id="aa66f17109dc410fcfd6ecfcfc80d5b13" name="aa66f17109dc410fcfd6ecfcfc80d5b13"></a>
+<a class="el" href="../../de/d88/classxii_simd_vec4b.html">xiiSimdVec4b</a>&#160;</td><td class="memItemRight" valign="bottom"><b>operator&lt;=</b> (const <a class="el" href="../../d5/d4f/classxii_simd_vec4i.html">xiiSimdVec4i</a> &amp;v) const</td></tr>
+<tr class="separator:aa66f17109dc410fcfd6ecfcfc80d5b13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a398ddc000262413b65cea063e3ebd49e" id="r_a398ddc000262413b65cea063e3ebd49e"><td class="memItemLeft" align="right" valign="top"><a id="a398ddc000262413b65cea063e3ebd49e" name="a398ddc000262413b65cea063e3ebd49e"></a>
+<a class="el" href="../../de/d88/classxii_simd_vec4b.html">xiiSimdVec4b</a>&#160;</td><td class="memItemRight" valign="bottom"><b>operator&lt;</b> (const <a class="el" href="../../d5/d4f/classxii_simd_vec4i.html">xiiSimdVec4i</a> &amp;v) const</td></tr>
+<tr class="separator:a398ddc000262413b65cea063e3ebd49e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5965a98e0b9737e4d57164d227b95049" id="r_a5965a98e0b9737e4d57164d227b95049"><td class="memItemLeft" align="right" valign="top"><a id="a5965a98e0b9737e4d57164d227b95049" name="a5965a98e0b9737e4d57164d227b95049"></a>
+<a class="el" href="../../de/d88/classxii_simd_vec4b.html">xiiSimdVec4b</a>&#160;</td><td class="memItemRight" valign="bottom"><b>operator&gt;=</b> (const <a class="el" href="../../d5/d4f/classxii_simd_vec4i.html">xiiSimdVec4i</a> &amp;v) const</td></tr>
+<tr class="separator:a5965a98e0b9737e4d57164d227b95049"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a685f3338faefdef033613d0bbf6daf78" id="r_a685f3338faefdef033613d0bbf6daf78"><td class="memItemLeft" align="right" valign="top"><a id="a685f3338faefdef033613d0bbf6daf78" name="a685f3338faefdef033613d0bbf6daf78"></a>
+<a class="el" href="../../de/d88/classxii_simd_vec4b.html">xiiSimdVec4b</a>&#160;</td><td class="memItemRight" valign="bottom"><b>operator&gt;</b> (const <a class="el" href="../../d5/d4f/classxii_simd_vec4i.html">xiiSimdVec4i</a> &amp;v) const</td></tr>
+<tr class="separator:a685f3338faefdef033613d0bbf6daf78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53bbbe51b0dbf4a4fa27527118878643" id="r_a53bbbe51b0dbf4a4fa27527118878643"><td class="memTemplParams" colspan="2"><a id="a53bbbe51b0dbf4a4fa27527118878643" name="a53bbbe51b0dbf4a4fa27527118878643"></a>
+template&lt;xiiInt32 N&gt; </td></tr>
+<tr class="memitem:a53bbbe51b0dbf4a4fa27527118878643"><td class="memTemplItemLeft" align="right" valign="top">XII_ALWAYS_INLINE void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>Load</b> (const xiiInt32 *pInts)</td></tr>
+<tr class="separator:a53bbbe51b0dbf4a4fa27527118878643"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b92d86cf557349fe868d55294ac0705" id="r_a9b92d86cf557349fe868d55294ac0705"><td class="memTemplParams" colspan="2"><a id="a9b92d86cf557349fe868d55294ac0705" name="a9b92d86cf557349fe868d55294ac0705"></a>
+template&lt;xiiInt32 N&gt; </td></tr>
+<tr class="memitem:a9b92d86cf557349fe868d55294ac0705"><td class="memTemplItemLeft" align="right" valign="top">XII_ALWAYS_INLINE void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>Store</b> (xiiInt32 *pInts) const</td></tr>
+<tr class="separator:a9b92d86cf557349fe868d55294ac0705"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c37f95c8db9190e44734f85ca239b5f" id="r_a9c37f95c8db9190e44734f85ca239b5f"><td class="memTemplParams" colspan="2"><a id="a9c37f95c8db9190e44734f85ca239b5f" name="a9c37f95c8db9190e44734f85ca239b5f"></a>
+template&lt;xiiInt32 N&gt; </td></tr>
+<tr class="memitem:a9c37f95c8db9190e44734f85ca239b5f"><td class="memTemplItemLeft" align="right" valign="top">XII_ALWAYS_INLINE xiiInt32&#160;</td><td class="memTemplItemRight" valign="bottom"><b>GetComponent</b> () const</td></tr>
+<tr class="separator:a9c37f95c8db9190e44734f85ca239b5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff7d46b506805d284e5cca43c1662e9b" id="r_aff7d46b506805d284e5cca43c1662e9b"><td class="memTemplParams" colspan="2"><a id="aff7d46b506805d284e5cca43c1662e9b" name="aff7d46b506805d284e5cca43c1662e9b"></a>
+template&lt;xiiSwizzle::Enum s&gt; </td></tr>
+<tr class="memitem:aff7d46b506805d284e5cca43c1662e9b"><td class="memTemplItemLeft" align="right" valign="top">XII_ALWAYS_INLINE <a class="el" href="../../d5/d4f/classxii_simd_vec4i.html">xiiSimdVec4i</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><b>Get</b> () const</td></tr>
+<tr class="separator:aff7d46b506805d284e5cca43c1662e9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e5d7e4b535cdd8b0c9f103c1e518967" id="r_a0e5d7e4b535cdd8b0c9f103c1e518967"><td class="memItemLeft" align="right" valign="top"><a id="a0e5d7e4b535cdd8b0c9f103c1e518967" name="a0e5d7e4b535cdd8b0c9f103c1e518967"></a>
+template&lt;&gt; </td></tr>
+<tr class="memitem:a0e5d7e4b535cdd8b0c9f103c1e518967"><td class="memTemplItemLeft" align="right" valign="top">XII_ALWAYS_INLINE void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>Load</b> (const xiiInt32 *pInts)</td></tr>
+<tr class="separator:a0e5d7e4b535cdd8b0c9f103c1e518967"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e5d7e4b535cdd8b0c9f103c1e518967" id="r_a0e5d7e4b535cdd8b0c9f103c1e518967"><td class="memItemLeft" align="right" valign="top"><a id="a0e5d7e4b535cdd8b0c9f103c1e518967" name="a0e5d7e4b535cdd8b0c9f103c1e518967"></a>
+template&lt;&gt; </td></tr>
+<tr class="memitem:a0e5d7e4b535cdd8b0c9f103c1e518967"><td class="memTemplItemLeft" align="right" valign="top">XII_ALWAYS_INLINE void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>Load</b> (const xiiInt32 *pInts)</td></tr>
+<tr class="separator:a0e5d7e4b535cdd8b0c9f103c1e518967"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e5d7e4b535cdd8b0c9f103c1e518967" id="r_a0e5d7e4b535cdd8b0c9f103c1e518967"><td class="memItemLeft" align="right" valign="top"><a id="a0e5d7e4b535cdd8b0c9f103c1e518967" name="a0e5d7e4b535cdd8b0c9f103c1e518967"></a>
+template&lt;&gt; </td></tr>
+<tr class="memitem:a0e5d7e4b535cdd8b0c9f103c1e518967"><td class="memTemplItemLeft" align="right" valign="top">XII_ALWAYS_INLINE void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>Load</b> (const xiiInt32 *pInts)</td></tr>
+<tr class="separator:a0e5d7e4b535cdd8b0c9f103c1e518967"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e5d7e4b535cdd8b0c9f103c1e518967" id="r_a0e5d7e4b535cdd8b0c9f103c1e518967"><td class="memItemLeft" align="right" valign="top"><a id="a0e5d7e4b535cdd8b0c9f103c1e518967" name="a0e5d7e4b535cdd8b0c9f103c1e518967"></a>
+template&lt;&gt; </td></tr>
+<tr class="memitem:a0e5d7e4b535cdd8b0c9f103c1e518967"><td class="memTemplItemLeft" align="right" valign="top">XII_ALWAYS_INLINE void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>Load</b> (const xiiInt32 *pInts)</td></tr>
+<tr class="separator:a0e5d7e4b535cdd8b0c9f103c1e518967"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5180b8cf251742e3515c7b971c6ebf8" id="r_af5180b8cf251742e3515c7b971c6ebf8"><td class="memItemLeft" align="right" valign="top"><a id="af5180b8cf251742e3515c7b971c6ebf8" name="af5180b8cf251742e3515c7b971c6ebf8"></a>
+template&lt;&gt; </td></tr>
+<tr class="memitem:af5180b8cf251742e3515c7b971c6ebf8"><td class="memTemplItemLeft" align="right" valign="top">XII_ALWAYS_INLINE void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>Store</b> (xiiInt32 *pInts) const</td></tr>
+<tr class="separator:af5180b8cf251742e3515c7b971c6ebf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5180b8cf251742e3515c7b971c6ebf8" id="r_af5180b8cf251742e3515c7b971c6ebf8"><td class="memItemLeft" align="right" valign="top"><a id="af5180b8cf251742e3515c7b971c6ebf8" name="af5180b8cf251742e3515c7b971c6ebf8"></a>
+template&lt;&gt; </td></tr>
+<tr class="memitem:af5180b8cf251742e3515c7b971c6ebf8"><td class="memTemplItemLeft" align="right" valign="top">XII_ALWAYS_INLINE void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>Store</b> (xiiInt32 *pInts) const</td></tr>
+<tr class="separator:af5180b8cf251742e3515c7b971c6ebf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5180b8cf251742e3515c7b971c6ebf8" id="r_af5180b8cf251742e3515c7b971c6ebf8"><td class="memItemLeft" align="right" valign="top"><a id="af5180b8cf251742e3515c7b971c6ebf8" name="af5180b8cf251742e3515c7b971c6ebf8"></a>
+template&lt;&gt; </td></tr>
+<tr class="memitem:af5180b8cf251742e3515c7b971c6ebf8"><td class="memTemplItemLeft" align="right" valign="top">XII_ALWAYS_INLINE void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>Store</b> (xiiInt32 *pInts) const</td></tr>
+<tr class="separator:af5180b8cf251742e3515c7b971c6ebf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5180b8cf251742e3515c7b971c6ebf8" id="r_af5180b8cf251742e3515c7b971c6ebf8"><td class="memItemLeft" align="right" valign="top"><a id="af5180b8cf251742e3515c7b971c6ebf8" name="af5180b8cf251742e3515c7b971c6ebf8"></a>
+template&lt;&gt; </td></tr>
+<tr class="memitem:af5180b8cf251742e3515c7b971c6ebf8"><td class="memTemplItemLeft" align="right" valign="top">XII_ALWAYS_INLINE void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>Store</b> (xiiInt32 *pInts) const</td></tr>
+<tr class="separator:af5180b8cf251742e3515c7b971c6ebf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e5d7e4b535cdd8b0c9f103c1e518967" id="r_a0e5d7e4b535cdd8b0c9f103c1e518967"><td class="memItemLeft" align="right" valign="top"><a id="a0e5d7e4b535cdd8b0c9f103c1e518967" name="a0e5d7e4b535cdd8b0c9f103c1e518967"></a>
+template&lt;&gt; </td></tr>
+<tr class="memitem:a0e5d7e4b535cdd8b0c9f103c1e518967"><td class="memTemplItemLeft" align="right" valign="top">XII_ALWAYS_INLINE void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>Load</b> (const xiiInt32 *pInts)</td></tr>
+<tr class="separator:a0e5d7e4b535cdd8b0c9f103c1e518967"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e5d7e4b535cdd8b0c9f103c1e518967" id="r_a0e5d7e4b535cdd8b0c9f103c1e518967"><td class="memItemLeft" align="right" valign="top"><a id="a0e5d7e4b535cdd8b0c9f103c1e518967" name="a0e5d7e4b535cdd8b0c9f103c1e518967"></a>
+template&lt;&gt; </td></tr>
+<tr class="memitem:a0e5d7e4b535cdd8b0c9f103c1e518967"><td class="memTemplItemLeft" align="right" valign="top">XII_ALWAYS_INLINE void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>Load</b> (const xiiInt32 *pInts)</td></tr>
+<tr class="separator:a0e5d7e4b535cdd8b0c9f103c1e518967"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e5d7e4b535cdd8b0c9f103c1e518967" id="r_a0e5d7e4b535cdd8b0c9f103c1e518967"><td class="memItemLeft" align="right" valign="top"><a id="a0e5d7e4b535cdd8b0c9f103c1e518967" name="a0e5d7e4b535cdd8b0c9f103c1e518967"></a>
+template&lt;&gt; </td></tr>
+<tr class="memitem:a0e5d7e4b535cdd8b0c9f103c1e518967"><td class="memTemplItemLeft" align="right" valign="top">XII_ALWAYS_INLINE void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>Load</b> (const xiiInt32 *pInts)</td></tr>
+<tr class="separator:a0e5d7e4b535cdd8b0c9f103c1e518967"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e5d7e4b535cdd8b0c9f103c1e518967" id="r_a0e5d7e4b535cdd8b0c9f103c1e518967"><td class="memItemLeft" align="right" valign="top"><a id="a0e5d7e4b535cdd8b0c9f103c1e518967" name="a0e5d7e4b535cdd8b0c9f103c1e518967"></a>
+template&lt;&gt; </td></tr>
+<tr class="memitem:a0e5d7e4b535cdd8b0c9f103c1e518967"><td class="memTemplItemLeft" align="right" valign="top">XII_ALWAYS_INLINE void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>Load</b> (const xiiInt32 *pInts)</td></tr>
+<tr class="separator:a0e5d7e4b535cdd8b0c9f103c1e518967"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5180b8cf251742e3515c7b971c6ebf8" id="r_af5180b8cf251742e3515c7b971c6ebf8"><td class="memItemLeft" align="right" valign="top"><a id="af5180b8cf251742e3515c7b971c6ebf8" name="af5180b8cf251742e3515c7b971c6ebf8"></a>
+template&lt;&gt; </td></tr>
+<tr class="memitem:af5180b8cf251742e3515c7b971c6ebf8"><td class="memTemplItemLeft" align="right" valign="top">XII_ALWAYS_INLINE void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>Store</b> (xiiInt32 *pInts) const</td></tr>
+<tr class="separator:af5180b8cf251742e3515c7b971c6ebf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5180b8cf251742e3515c7b971c6ebf8" id="r_af5180b8cf251742e3515c7b971c6ebf8"><td class="memItemLeft" align="right" valign="top"><a id="af5180b8cf251742e3515c7b971c6ebf8" name="af5180b8cf251742e3515c7b971c6ebf8"></a>
+template&lt;&gt; </td></tr>
+<tr class="memitem:af5180b8cf251742e3515c7b971c6ebf8"><td class="memTemplItemLeft" align="right" valign="top">XII_ALWAYS_INLINE void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>Store</b> (xiiInt32 *pInts) const</td></tr>
+<tr class="separator:af5180b8cf251742e3515c7b971c6ebf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5180b8cf251742e3515c7b971c6ebf8" id="r_af5180b8cf251742e3515c7b971c6ebf8"><td class="memItemLeft" align="right" valign="top"><a id="af5180b8cf251742e3515c7b971c6ebf8" name="af5180b8cf251742e3515c7b971c6ebf8"></a>
+template&lt;&gt; </td></tr>
+<tr class="memitem:af5180b8cf251742e3515c7b971c6ebf8"><td class="memTemplItemLeft" align="right" valign="top">XII_ALWAYS_INLINE void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>Store</b> (xiiInt32 *pInts) const</td></tr>
+<tr class="separator:af5180b8cf251742e3515c7b971c6ebf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5180b8cf251742e3515c7b971c6ebf8" id="r_af5180b8cf251742e3515c7b971c6ebf8"><td class="memItemLeft" align="right" valign="top"><a id="af5180b8cf251742e3515c7b971c6ebf8" name="af5180b8cf251742e3515c7b971c6ebf8"></a>
+template&lt;&gt; </td></tr>
+<tr class="memitem:af5180b8cf251742e3515c7b971c6ebf8"><td class="memTemplItemLeft" align="right" valign="top">XII_ALWAYS_INLINE void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>Store</b> (xiiInt32 *pInts) const</td></tr>
+<tr class="separator:af5180b8cf251742e3515c7b971c6ebf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3cbee77b6fc4639a9b02070bd000e986" id="r_a3cbee77b6fc4639a9b02070bd000e986"><td class="memTemplParams" colspan="2"><a id="a3cbee77b6fc4639a9b02070bd000e986" name="a3cbee77b6fc4639a9b02070bd000e986"></a>
+template&lt;xiiSwizzle::Enum s&gt; </td></tr>
+<tr class="memitem:a3cbee77b6fc4639a9b02070bd000e986"><td class="memTemplItemLeft" align="right" valign="top">XII_ALWAYS_INLINE <a class="el" href="../../d5/d4f/classxii_simd_vec4i.html">xiiSimdVec4i</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><b>GetCombined</b> (const <a class="el" href="../../d5/d4f/classxii_simd_vec4i.html">xiiSimdVec4i</a> &amp;other) const</td></tr>
+<tr class="separator:a3cbee77b6fc4639a9b02070bd000e986"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a4936a387c1b5192d550e4b7a31db95a7" id="r_a4936a387c1b5192d550e4b7a31db95a7"><td class="memItemLeft" align="right" valign="top"><a id="a4936a387c1b5192d550e4b7a31db95a7" name="a4936a387c1b5192d550e4b7a31db95a7"></a>
+static <a class="el" href="../../d5/d4f/classxii_simd_vec4i.html">xiiSimdVec4i</a>&#160;</td><td class="memItemRight" valign="bottom"><b>MakeZero</b> ()</td></tr>
+<tr class="memdesc:a4936a387c1b5192d550e4b7a31db95a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a <a class="el" href="../../d5/d4f/classxii_simd_vec4i.html" title="A SIMD 4-component vector class of signed 32b integers.">xiiSimdVec4i</a> that is initialized to zero. <br /></td></tr>
+<tr class="separator:a4936a387c1b5192d550e4b7a31db95a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9ecff56cf17d40abcc2158b1e6cd9b7" id="r_ad9ecff56cf17d40abcc2158b1e6cd9b7"><td class="memItemLeft" align="right" valign="top"><a id="ad9ecff56cf17d40abcc2158b1e6cd9b7" name="ad9ecff56cf17d40abcc2158b1e6cd9b7"></a>
+static <a class="el" href="../../d5/d4f/classxii_simd_vec4i.html">xiiSimdVec4i</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Truncate</b> (const <a class="el" href="../../d3/da5/classxii_simd_vec4f.html">xiiSimdVec4f</a> &amp;f)</td></tr>
+<tr class="separator:ad9ecff56cf17d40abcc2158b1e6cd9b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12dcfa882f058588699003f9c183aee1" id="r_a12dcfa882f058588699003f9c183aee1"><td class="memItemLeft" align="right" valign="top"><a id="a12dcfa882f058588699003f9c183aee1" name="a12dcfa882f058588699003f9c183aee1"></a>
+static <a class="el" href="../../d5/d4f/classxii_simd_vec4i.html">xiiSimdVec4i</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Select</b> (const <a class="el" href="../../de/d88/classxii_simd_vec4b.html">xiiSimdVec4b</a> &amp;vCmp, const <a class="el" href="../../d5/d4f/classxii_simd_vec4i.html">xiiSimdVec4i</a> &amp;vTrue, const <a class="el" href="../../d5/d4f/classxii_simd_vec4i.html">xiiSimdVec4i</a> &amp;vFalse)</td></tr>
+<tr class="separator:a12dcfa882f058588699003f9c183aee1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:abd835edcf8cc69a3e2ad8e0e3e4b3cda" id="r_abd835edcf8cc69a3e2ad8e0e3e4b3cda"><td class="memItemLeft" align="right" valign="top"><a id="abd835edcf8cc69a3e2ad8e0e3e4b3cda" name="abd835edcf8cc69a3e2ad8e0e3e4b3cda"></a>
+xiiInternal::QuadInt&#160;</td><td class="memItemRight" valign="bottom"><b>m_v</b></td></tr>
+<tr class="separator:abd835edcf8cc69a3e2ad8e0e3e4b3cda"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p><a class="el" href="../../d8/d4f/class_a.html">A</a> SIMD 4-component vector class of signed 32b integers. </p>
+</div><hr/>The documentation for this class was generated from the following files:<ul>
+<li>/home/runner/work/XII/XII/Source/Engine/Foundation/SimdMath/<a class="el" href="../../dd/d19/_simd_vec4i_8h_source.html">SimdVec4i.h</a></li>
+<li>/home/runner/work/XII/XII/Source/Engine/Foundation/SimdMath/Implementation/FPU/<a class="el" href="../../dd/dbc/_f_p_u_vec4i__inl_8h_source.html">FPUVec4i_inl.h</a></li>
+<li>/home/runner/work/XII/XII/Source/Engine/Foundation/SimdMath/Implementation/FPU/<a class="el" href="../../d6/da2/_f_p_u_vec4u__inl_8h_source.html">FPUVec4u_inl.h</a></li>
+<li>/home/runner/work/XII/XII/Source/Engine/Foundation/SimdMath/Implementation/NEON/<a class="el" href="../../df/d3a/_n_e_o_n_vec4i__inl_8h_source.html">NEONVec4i_inl.h</a></li>
+<li>/home/runner/work/XII/XII/Source/Engine/Foundation/SimdMath/Implementation/NEON/<a class="el" href="../../da/dc5/_n_e_o_n_vec4u__inl_8h_source.html">NEONVec4u_inl.h</a></li>
+<li>/home/runner/work/XII/XII/Source/Engine/Foundation/SimdMath/Implementation/SSE/<a class="el" href="../../da/d35/_s_s_e_vec4i__inl_8h_source.html">SSEVec4i_inl.h</a></li>
+<li>/home/runner/work/XII/XII/Source/Engine/Foundation/SimdMath/Implementation/SSE/<a class="el" href="../../d6/d45/_s_s_e_vec4u__inl_8h_source.html">SSEVec4u_inl.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../d5/d4f/classxii_simd_vec4i.html">xiiSimdVec4i</a></li>
+    <li class="footer">Generated on Mon Jul 1 2024 23:53:16 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+  </ul>
+</div>
+</body>
+</html>

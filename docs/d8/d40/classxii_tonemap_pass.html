@@ -1,0 +1,448 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.11.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<!-- BEGIN opengraph metadata -->
+<meta property="og:title" content="XII" />
+<meta property="og:image" content="../../XII-Logo.png" />
+<meta property="og:description" content="An advanced high-performance simulation engine." />
+<meta property="og:url" content="https://www.xiitechnologies.com" />
+<!-- END opengraph metadata -->
+<!-- BEGIN twitter metadata -->
+<meta name="twitter:image:src" content="../../XII-Logo.png" />
+<meta name="twitter:title" content="XII" />
+<meta name="twitter:description" content="An advanced high-performance simulation engine." />
+<!-- END twitter metadata -->
+<title>XII: xiiTonemapPass Class Reference</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link rel="icon" type="image/svg+xml" href="logo.drawio.svg"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="../../toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../custom.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<a href="https://github.com/jothepro/doxygen-awesome-css" class="github-corner" title="View source on GitHub" target="_blank" rel="noopener noreferrer">
+    <svg viewBox="0 0 250 250" width="40" height="40" style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+    <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="../../XII-Logo.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">XII
+   &#160;<span id="projectnumber">1.0.0</span>
+   </div>
+   <div id="projectbrief">A high-performance simulation engine.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(1); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.html','Search',true);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('d8/d40/classxii_tonemap_pass.html','../../'); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
+<a href="../../dc/d13/classxii_tonemap_pass-members.html">List of all members</a>  </div>
+  <div class="headertitle"><div class="title">xiiTonemapPass Class Reference</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+Inheritance diagram for xiiTonemapPass:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../df/d5f/classxii_tonemap_pass__inherit__graph.svg" width="182" height="330"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">legend</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a78635e69cda83f835ebc3f29d94ef46a" id="r_a78635e69cda83f835ebc3f29d94ef46a"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a78635e69cda83f835ebc3f29d94ef46a">GetRenderTargetDescriptions</a> (const <a class="el" href="../../dd/df1/classxii_view.html">xiiView</a> &amp;view, const <a class="el" href="../../d0/d60/classxii_array_ptr.html">xiiArrayPtr</a>&lt; <a class="el" href="../../de/dd4/structxii_g_a_l_texture_creation_description.html">xiiGALTextureCreationDescription</a> *const &gt; inputs, <a class="el" href="../../d0/d60/classxii_array_ptr.html">xiiArrayPtr</a>&lt; <a class="el" href="../../de/dd4/structxii_g_a_l_texture_creation_description.html">xiiGALTextureCreationDescription</a> &gt; outputs) override</td></tr>
+<tr class="memdesc:a78635e69cda83f835ebc3f29d94ef46a"><td class="mdescLeft">&#160;</td><td class="mdescRight">For a given input pin configuration, provide the output configuration of this node. Outputs is already resized to the number of output pins.  <br /></td></tr>
+<tr class="separator:a78635e69cda83f835ebc3f29d94ef46a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8bc3dd3186c001627073915bb38616fd" id="r_a8bc3dd3186c001627073915bb38616fd"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8bc3dd3186c001627073915bb38616fd">Execute</a> (const <a class="el" href="../../d9/d0f/structxii_render_view_context.html">xiiRenderViewContext</a> &amp;renderViewContext, const <a class="el" href="../../d0/d60/classxii_array_ptr.html">xiiArrayPtr</a>&lt; <a class="el" href="../../d3/deb/structxii_render_pipeline_pass_connection.html">xiiRenderPipelinePassConnection</a> *const &gt; inputs, const <a class="el" href="../../d0/d60/classxii_array_ptr.html">xiiArrayPtr</a>&lt; <a class="el" href="../../d3/deb/structxii_render_pipeline_pass_connection.html">xiiRenderPipelinePassConnection</a> *const &gt; outputs) override</td></tr>
+<tr class="memdesc:a8bc3dd3186c001627073915bb38616fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Render into outputs. Both inputs and outputs are passed in with actual texture handles. Disconnected pins have a nullptr value in the passed in arrays. You can now create views and render target setups on the fly and fill the output targets with data.  <br /></td></tr>
+<tr class="separator:a8bc3dd3186c001627073915bb38616fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac498444ecc02c958354b8b1b75338b74" id="r_ac498444ecc02c958354b8b1b75338b74"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac498444ecc02c958354b8b1b75338b74">Serialize</a> (<a class="el" href="../../d0/d18/classxii_stream_writer.html">xiiStreamWriter</a> &amp;inout_stream) const override</td></tr>
+<tr class="separator:ac498444ecc02c958354b8b1b75338b74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90cf7fec5658a11d525e85ab2ecf9ef9" id="r_a90cf7fec5658a11d525e85ab2ecf9ef9"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a90cf7fec5658a11d525e85ab2ecf9ef9">Deserialize</a> (<a class="el" href="../../d4/d5e/classxii_stream_reader.html">xiiStreamReader</a> &amp;inout_stream) override</td></tr>
+<tr class="separator:a90cf7fec5658a11d525e85ab2ecf9ef9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classxii_render_pipeline_pass"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_classxii_render_pipeline_pass')"><img src="../../closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="../../d5/d44/classxii_render_pipeline_pass.html">xiiRenderPipelinePass</a></td></tr>
+<tr class="memitem:a5e897e2de9250054a1084aac00227dd8 inherit pub_methods_classxii_render_pipeline_pass" id="r_a5e897e2de9250054a1084aac00227dd8"><td class="memItemLeft" align="right" valign="top">
+&#160;</td><td class="memItemRight" valign="bottom"><b>xiiRenderPipelinePass</b> (<a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sName, bool bIsStereoAware=false)</td></tr>
+<tr class="separator:a5e897e2de9250054a1084aac00227dd8 inherit pub_methods_classxii_render_pipeline_pass"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada77ef560359b1ae6d85e09ee1172e02 inherit pub_methods_classxii_render_pipeline_pass" id="r_ada77ef560359b1ae6d85e09ee1172e02"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetName</b> (<a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sName)</td></tr>
+<tr class="memdesc:ada77ef560359b1ae6d85e09ee1172e02 inherit pub_methods_classxii_render_pipeline_pass"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the name of the pass. <br /></td></tr>
+<tr class="separator:ada77ef560359b1ae6d85e09ee1172e02 inherit pub_methods_classxii_render_pipeline_pass"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac9d2647f997a91291afcca8ec2a7c29 inherit pub_methods_classxii_render_pipeline_pass" id="r_aac9d2647f997a91291afcca8ec2a7c29"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetName</b> () const</td></tr>
+<tr class="memdesc:aac9d2647f997a91291afcca8ec2a7c29 inherit pub_methods_classxii_render_pipeline_pass"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the name of the pass. <br /></td></tr>
+<tr class="separator:aac9d2647f997a91291afcca8ec2a7c29 inherit pub_methods_classxii_render_pipeline_pass"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4163127ec40a1ce5b8f22e4955f26abe inherit pub_methods_classxii_render_pipeline_pass" id="r_a4163127ec40a1ce5b8f22e4955f26abe"><td class="memItemLeft" align="right" valign="top">
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsStereoAware</b> () const</td></tr>
+<tr class="memdesc:a4163127ec40a1ce5b8f22e4955f26abe inherit pub_methods_classxii_render_pipeline_pass"><td class="mdescLeft">&#160;</td><td class="mdescRight">True if the render pipeline pass can handle stereo cameras correctly. <br /></td></tr>
+<tr class="separator:a4163127ec40a1ce5b8f22e4955f26abe inherit pub_methods_classxii_render_pipeline_pass"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55a440ea75cb1a5e4b109b677812a2c1 inherit pub_methods_classxii_render_pipeline_pass" id="r_a55a440ea75cb1a5e4b109b677812a2c1"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d44/classxii_render_pipeline_pass.html#a55a440ea75cb1a5e4b109b677812a2c1">InitRenderPipelinePass</a> (const <a class="el" href="../../d0/d60/classxii_array_ptr.html">xiiArrayPtr</a>&lt; <a class="el" href="../../d3/deb/structxii_render_pipeline_pass_connection.html">xiiRenderPipelinePassConnection</a> *const &gt; inputs, const <a class="el" href="../../d0/d60/classxii_array_ptr.html">xiiArrayPtr</a>&lt; <a class="el" href="../../d3/deb/structxii_render_pipeline_pass_connection.html">xiiRenderPipelinePassConnection</a> *const &gt; outputs)</td></tr>
+<tr class="memdesc:a55a440ea75cb1a5e4b109b677812a2c1 inherit pub_methods_classxii_render_pipeline_pass"><td class="mdescLeft">&#160;</td><td class="mdescRight">After GetRenderTargetDescriptions was called successfully for each pass, this function is called with the inputs and outputs for review. Disconnected pins have a nullptr value in the passed in arrays. This is the time to create additional resources that are not covered by the pins automatically, e.g. a picking texture or eye adaptation buffer.  <br /></td></tr>
+<tr class="separator:a55a440ea75cb1a5e4b109b677812a2c1 inherit pub_methods_classxii_render_pipeline_pass"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a469c62090e3034fe624841a0f32734a6 inherit pub_methods_classxii_render_pipeline_pass" id="r_a469c62090e3034fe624841a0f32734a6"><td class="memItemLeft" align="right" valign="top">
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>ExecuteInactive</b> (const <a class="el" href="../../d9/d0f/structxii_render_view_context.html">xiiRenderViewContext</a> &amp;renderViewContext, const <a class="el" href="../../d0/d60/classxii_array_ptr.html">xiiArrayPtr</a>&lt; <a class="el" href="../../d3/deb/structxii_render_pipeline_pass_connection.html">xiiRenderPipelinePassConnection</a> *const &gt; inputs, const <a class="el" href="../../d0/d60/classxii_array_ptr.html">xiiArrayPtr</a>&lt; <a class="el" href="../../d3/deb/structxii_render_pipeline_pass_connection.html">xiiRenderPipelinePassConnection</a> *const &gt; outputs)</td></tr>
+<tr class="separator:a469c62090e3034fe624841a0f32734a6 inherit pub_methods_classxii_render_pipeline_pass"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a4c82ddf770dc1087d05c4ff0d182db inherit pub_methods_classxii_render_pipeline_pass" id="r_a8a4c82ddf770dc1087d05c4ff0d182db"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d44/classxii_render_pipeline_pass.html#a8a4c82ddf770dc1087d05c4ff0d182db">ReadBackProperties</a> (<a class="el" href="../../dd/df1/classxii_view.html">xiiView</a> *pView)</td></tr>
+<tr class="memdesc:a8a4c82ddf770dc1087d05c4ff0d182db inherit pub_methods_classxii_render_pipeline_pass"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allows for the pass to write data back using xiiView::SetRenderPassReadBackProperty. E.g. picking results etc.  <br /></td></tr>
+<tr class="separator:a8a4c82ddf770dc1087d05c4ff0d182db inherit pub_methods_classxii_render_pipeline_pass"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0fa8a688ab7a56c17b9dfe8633186956 inherit pub_methods_classxii_render_pipeline_pass" id="r_a0fa8a688ab7a56c17b9dfe8633186956"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><b>RenderDataWithCategory</b> (const <a class="el" href="../../d9/d0f/structxii_render_view_context.html">xiiRenderViewContext</a> &amp;renderViewContext, <a class="el" href="../../d0/d8b/structxii_render_data_1_1_category.html">xiiRenderData::Category</a> category, <a class="el" href="../../de/de6/classxii_render_data_batch.html#ae8823b7785d8c3eac98debed01eff75b">xiiRenderDataBatch::Filter</a> filter=<a class="el" href="../../de/de6/classxii_render_data_batch.html#ae8823b7785d8c3eac98debed01eff75b">xiiRenderDataBatch::Filter</a>())</td></tr>
+<tr class="separator:a0fa8a688ab7a56c17b9dfe8633186956 inherit pub_methods_classxii_render_pipeline_pass"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a268e91f39cfd861424f2f7675014d714 inherit pub_methods_classxii_render_pipeline_pass" id="r_a268e91f39cfd861424f2f7675014d714"><td class="memItemLeft" align="right" valign="top">
+XII_ALWAYS_INLINE <a class="el" href="../../df/d0e/classxii_render_pipeline.html">xiiRenderPipeline</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetPipeline</b> ()</td></tr>
+<tr class="separator:a268e91f39cfd861424f2f7675014d714 inherit pub_methods_classxii_render_pipeline_pass"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2fc345f8a39f47e662eaa447bdcf89dd inherit pub_methods_classxii_render_pipeline_pass" id="r_a2fc345f8a39f47e662eaa447bdcf89dd"><td class="memItemLeft" align="right" valign="top">
+XII_ALWAYS_INLINE const <a class="el" href="../../df/d0e/classxii_render_pipeline.html">xiiRenderPipeline</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetPipeline</b> () const</td></tr>
+<tr class="separator:a2fc345f8a39f47e662eaa447bdcf89dd inherit pub_methods_classxii_render_pipeline_pass"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classxii_render_pipeline_node"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_classxii_render_pipeline_node')"><img src="../../closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="../../d9/d98/classxii_render_pipeline_node.html">xiiRenderPipelineNode</a></td></tr>
+<tr class="memitem:a0fe8cd60bb0dd5156717a1f8d12877ef inherit pub_methods_classxii_render_pipeline_node" id="r_a0fe8cd60bb0dd5156717a1f8d12877ef"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><b>InitializePins</b> ()</td></tr>
+<tr class="separator:a0fe8cd60bb0dd5156717a1f8d12877ef inherit pub_methods_classxii_render_pipeline_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90d7b2556a5981664aad289a51fdadd5 inherit pub_methods_classxii_render_pipeline_node" id="r_a90d7b2556a5981664aad289a51fdadd5"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="../../d6/d0c/classxii_hashed_string.html">xiiHashedString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetPinName</b> (const <a class="el" href="../../d9/d96/structxii_render_pipeline_node_pin.html">xiiRenderPipelineNodePin</a> *pPin) const</td></tr>
+<tr class="separator:a90d7b2556a5981664aad289a51fdadd5 inherit pub_methods_classxii_render_pipeline_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9872b005badc9d9a85bbca00ea7f3c3a inherit pub_methods_classxii_render_pipeline_node" id="r_a9872b005badc9d9a85bbca00ea7f3c3a"><td class="memItemLeft" align="right" valign="top">
+const <a class="el" href="../../d9/d96/structxii_render_pipeline_node_pin.html">xiiRenderPipelineNodePin</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetPinByName</b> (<a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sName) const</td></tr>
+<tr class="separator:a9872b005badc9d9a85bbca00ea7f3c3a inherit pub_methods_classxii_render_pipeline_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9c5b544dcdc3fb8b20c5868a4108403 inherit pub_methods_classxii_render_pipeline_node" id="r_ad9c5b544dcdc3fb8b20c5868a4108403"><td class="memItemLeft" align="right" valign="top">
+const <a class="el" href="../../d9/d96/structxii_render_pipeline_node_pin.html">xiiRenderPipelineNodePin</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetPinByName</b> (<a class="el" href="../../d6/d0c/classxii_hashed_string.html">xiiHashedString</a> sName) const</td></tr>
+<tr class="separator:ad9c5b544dcdc3fb8b20c5868a4108403 inherit pub_methods_classxii_render_pipeline_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5537d0e7ac689901c6d86a4a4ee8541 inherit pub_methods_classxii_render_pipeline_node" id="r_ae5537d0e7ac689901c6d86a4a4ee8541"><td class="memItemLeft" align="right" valign="top">
+const <a class="el" href="../../d0/d60/classxii_array_ptr.html">xiiArrayPtr</a>&lt; const <a class="el" href="../../d9/d96/structxii_render_pipeline_node_pin.html">xiiRenderPipelineNodePin</a> *const &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetInputPins</b> () const</td></tr>
+<tr class="separator:ae5537d0e7ac689901c6d86a4a4ee8541 inherit pub_methods_classxii_render_pipeline_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3668a6c700c2d6149b9a4b4982c31f40 inherit pub_methods_classxii_render_pipeline_node" id="r_a3668a6c700c2d6149b9a4b4982c31f40"><td class="memItemLeft" align="right" valign="top">
+const <a class="el" href="../../d0/d60/classxii_array_ptr.html">xiiArrayPtr</a>&lt; const <a class="el" href="../../d9/d96/structxii_render_pipeline_node_pin.html">xiiRenderPipelineNodePin</a> *const &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetOutputPins</b> () const</td></tr>
+<tr class="separator:a3668a6c700c2d6149b9a4b4982c31f40 inherit pub_methods_classxii_render_pipeline_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classxii_reflected_class"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_classxii_reflected_class')"><img src="../../closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="../../dc/d71/classxii_reflected_class.html">xiiReflectedClass</a></td></tr>
+<tr class="memitem:a00430d2230bc44ad262be3d0a4e62e10 inherit pub_methods_classxii_reflected_class" id="r_a00430d2230bc44ad262be3d0a4e62e10"><td class="memItemLeft" align="right" valign="top">
+virtual const <a class="el" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetDynamicRTTI</b> () const</td></tr>
+<tr class="separator:a00430d2230bc44ad262be3d0a4e62e10 inherit pub_methods_classxii_reflected_class"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e0f7cbc734bb4dd62b0d583bbbe2ade inherit pub_methods_classxii_reflected_class" id="r_a8e0f7cbc734bb4dd62b0d583bbbe2ade"><td class="memItemLeft" align="right" valign="top">
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsInstanceOf</b> (const <a class="el" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a> *pType) const</td></tr>
+<tr class="memdesc:a8e0f7cbc734bb4dd62b0d583bbbe2ade inherit pub_methods_classxii_reflected_class"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether the type of this instance is of the given type or derived from it. <br /></td></tr>
+<tr class="separator:a8e0f7cbc734bb4dd62b0d583bbbe2ade inherit pub_methods_classxii_reflected_class"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0a423d0f813feb28b200d9a9756eab8 inherit pub_methods_classxii_reflected_class" id="r_ac0a423d0f813feb28b200d9a9756eab8"><td class="memTemplParams" colspan="2">
+template&lt;typename T &gt; </td></tr>
+<tr class="memitem:ac0a423d0f813feb28b200d9a9756eab8 inherit pub_methods_classxii_reflected_class"><td class="memTemplItemLeft" align="right" valign="top">XII_ALWAYS_INLINE bool&#160;</td><td class="memTemplItemRight" valign="bottom"><b>IsInstanceOf</b> () const</td></tr>
+<tr class="memdesc:ac0a423d0f813feb28b200d9a9756eab8 inherit pub_methods_classxii_reflected_class"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether the type of this instance is of the given type or derived from it. <br /></td></tr>
+<tr class="separator:ac0a423d0f813feb28b200d9a9756eab8 inherit pub_methods_classxii_reflected_class"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:abe03c4942605ab91804460a379186485" id="r_abe03c4942605ab91804460a379186485"><td class="memItemLeft" align="right" valign="top"><a id="abe03c4942605ab91804460a379186485" name="abe03c4942605ab91804460a379186485"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetVignettingTextureFile</b> (const char *szFile)</td></tr>
+<tr class="separator:abe03c4942605ab91804460a379186485"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afbab415c249a2c6234b5586bd82ad9a0" id="r_afbab415c249a2c6234b5586bd82ad9a0"><td class="memItemLeft" align="right" valign="top"><a id="afbab415c249a2c6234b5586bd82ad9a0" name="afbab415c249a2c6234b5586bd82ad9a0"></a>
+const char *&#160;</td><td class="memItemRight" valign="bottom"><b>GetVignettingTextureFile</b> () const</td></tr>
+<tr class="separator:afbab415c249a2c6234b5586bd82ad9a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd7e8a26feee4cc18a7aa14d8eaf202b" id="r_acd7e8a26feee4cc18a7aa14d8eaf202b"><td class="memItemLeft" align="right" valign="top"><a id="acd7e8a26feee4cc18a7aa14d8eaf202b" name="acd7e8a26feee4cc18a7aa14d8eaf202b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetLUT1TextureFile</b> (const char *szFile)</td></tr>
+<tr class="separator:acd7e8a26feee4cc18a7aa14d8eaf202b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae014e40fa5ff096094612b9edef6cc35" id="r_ae014e40fa5ff096094612b9edef6cc35"><td class="memItemLeft" align="right" valign="top"><a id="ae014e40fa5ff096094612b9edef6cc35" name="ae014e40fa5ff096094612b9edef6cc35"></a>
+const char *&#160;</td><td class="memItemRight" valign="bottom"><b>GetLUT1TextureFile</b> () const</td></tr>
+<tr class="separator:ae014e40fa5ff096094612b9edef6cc35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a76b35e9b140e021ff067e6953ee0de" id="r_a5a76b35e9b140e021ff067e6953ee0de"><td class="memItemLeft" align="right" valign="top"><a id="a5a76b35e9b140e021ff067e6953ee0de" name="a5a76b35e9b140e021ff067e6953ee0de"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetLUT2TextureFile</b> (const char *szFile)</td></tr>
+<tr class="separator:a5a76b35e9b140e021ff067e6953ee0de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a962f355f5a555ab3dcd5708936c421c9" id="r_a962f355f5a555ab3dcd5708936c421c9"><td class="memItemLeft" align="right" valign="top"><a id="a962f355f5a555ab3dcd5708936c421c9" name="a962f355f5a555ab3dcd5708936c421c9"></a>
+const char *&#160;</td><td class="memItemRight" valign="bottom"><b>GetLUT2TextureFile</b> () const</td></tr>
+<tr class="separator:a962f355f5a555ab3dcd5708936c421c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:a4587a0e7079390e29592408b65666671" id="r_a4587a0e7079390e29592408b65666671"><td class="memItemLeft" align="right" valign="top"><a id="a4587a0e7079390e29592408b65666671" name="a4587a0e7079390e29592408b65666671"></a>
+<a class="el" href="../../d4/d12/structxii_render_pipeline_node_input_pin.html">xiiRenderPipelineNodeInputPin</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_PinColorInput</b></td></tr>
+<tr class="separator:a4587a0e7079390e29592408b65666671"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2237a69342e30a92ee73199e4cabe2cc" id="r_a2237a69342e30a92ee73199e4cabe2cc"><td class="memItemLeft" align="right" valign="top"><a id="a2237a69342e30a92ee73199e4cabe2cc" name="a2237a69342e30a92ee73199e4cabe2cc"></a>
+<a class="el" href="../../d4/d12/structxii_render_pipeline_node_input_pin.html">xiiRenderPipelineNodeInputPin</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_PinBloomInput</b></td></tr>
+<tr class="separator:a2237a69342e30a92ee73199e4cabe2cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aedbc0d8c1729977df5a215845bdf0bfc" id="r_aedbc0d8c1729977df5a215845bdf0bfc"><td class="memItemLeft" align="right" valign="top"><a id="aedbc0d8c1729977df5a215845bdf0bfc" name="aedbc0d8c1729977df5a215845bdf0bfc"></a>
+<a class="el" href="../../d7/d3c/structxii_render_pipeline_node_output_pin.html">xiiRenderPipelineNodeOutputPin</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_PinOutput</b></td></tr>
+<tr class="separator:aedbc0d8c1729977df5a215845bdf0bfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2af0691b6402f9eb7d7da79cee113a7d" id="r_a2af0691b6402f9eb7d7da79cee113a7d"><td class="memItemLeft" align="right" valign="top"><a id="a2af0691b6402f9eb7d7da79cee113a7d" name="a2af0691b6402f9eb7d7da79cee113a7d"></a>
+<a class="el" href="../../d6/d16/classxii_typed_resource_handle.html">xiiTexture2DResourceHandle</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_hVignettingTexture</b></td></tr>
+<tr class="separator:a2af0691b6402f9eb7d7da79cee113a7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac23baf6b6c0651157002a63d289f7259" id="r_ac23baf6b6c0651157002a63d289f7259"><td class="memItemLeft" align="right" valign="top"><a id="ac23baf6b6c0651157002a63d289f7259" name="ac23baf6b6c0651157002a63d289f7259"></a>
+<a class="el" href="../../d6/d16/classxii_typed_resource_handle.html">xiiTexture2DResourceHandle</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_hNoiseTexture</b></td></tr>
+<tr class="separator:ac23baf6b6c0651157002a63d289f7259"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7dcabda56c4b4d541b051279407745fc" id="r_a7dcabda56c4b4d541b051279407745fc"><td class="memItemLeft" align="right" valign="top"><a id="a7dcabda56c4b4d541b051279407745fc" name="a7dcabda56c4b4d541b051279407745fc"></a>
+<a class="el" href="../../d6/d16/classxii_typed_resource_handle.html">xiiTexture3DResourceHandle</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_hLUT1</b></td></tr>
+<tr class="separator:a7dcabda56c4b4d541b051279407745fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45d20380037284868e0ed2d726021622" id="r_a45d20380037284868e0ed2d726021622"><td class="memItemLeft" align="right" valign="top"><a id="a45d20380037284868e0ed2d726021622" name="a45d20380037284868e0ed2d726021622"></a>
+<a class="el" href="../../d6/d16/classxii_typed_resource_handle.html">xiiTexture3DResourceHandle</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_hLUT2</b></td></tr>
+<tr class="separator:a45d20380037284868e0ed2d726021622"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19c225e35a184e2154433a6336ae9b95" id="r_a19c225e35a184e2154433a6336ae9b95"><td class="memItemLeft" align="right" valign="top"><a id="a19c225e35a184e2154433a6336ae9b95" name="a19c225e35a184e2154433a6336ae9b95"></a>
+<a class="el" href="../../d3/de6/classxii_color.html">xiiColor</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_MoodColor</b></td></tr>
+<tr class="separator:a19c225e35a184e2154433a6336ae9b95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a741046626f9af089dd9f704a67167dfa" id="r_a741046626f9af089dd9f704a67167dfa"><td class="memItemLeft" align="right" valign="top"><a id="a741046626f9af089dd9f704a67167dfa" name="a741046626f9af089dd9f704a67167dfa"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>m_fMoodStrength</b></td></tr>
+<tr class="separator:a741046626f9af089dd9f704a67167dfa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae56e011d80311fec0272f9074e7c1e6" id="r_aae56e011d80311fec0272f9074e7c1e6"><td class="memItemLeft" align="right" valign="top"><a id="aae56e011d80311fec0272f9074e7c1e6" name="aae56e011d80311fec0272f9074e7c1e6"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>m_fSaturation</b></td></tr>
+<tr class="separator:aae56e011d80311fec0272f9074e7c1e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adaf46608e424cb39ff8ea803ba005a38" id="r_adaf46608e424cb39ff8ea803ba005a38"><td class="memItemLeft" align="right" valign="top"><a id="adaf46608e424cb39ff8ea803ba005a38" name="adaf46608e424cb39ff8ea803ba005a38"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>m_fContrast</b></td></tr>
+<tr class="separator:adaf46608e424cb39ff8ea803ba005a38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a996e54b76faee49b9c2aad2f49e99934" id="r_a996e54b76faee49b9c2aad2f49e99934"><td class="memItemLeft" align="right" valign="top"><a id="a996e54b76faee49b9c2aad2f49e99934" name="a996e54b76faee49b9c2aad2f49e99934"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>m_fLut1Strength</b></td></tr>
+<tr class="separator:a996e54b76faee49b9c2aad2f49e99934"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d81e7795949a4d33d6b91df074ddba3" id="r_a7d81e7795949a4d33d6b91df074ddba3"><td class="memItemLeft" align="right" valign="top"><a id="a7d81e7795949a4d33d6b91df074ddba3" name="a7d81e7795949a4d33d6b91df074ddba3"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>m_fLut2Strength</b></td></tr>
+<tr class="separator:a7d81e7795949a4d33d6b91df074ddba3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87a6732e40868b5afc589ddb3577b635" id="r_a87a6732e40868b5afc589ddb3577b635"><td class="memItemLeft" align="right" valign="top"><a id="a87a6732e40868b5afc589ddb3577b635" name="a87a6732e40868b5afc589ddb3577b635"></a>
+<a class="el" href="../../d7/d1a/classxii_constant_buffer_storage_handle.html">xiiConstantBufferStorageHandle</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_hConstantBuffer</b></td></tr>
+<tr class="separator:a87a6732e40868b5afc589ddb3577b635"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3fe6fa8e6dc8f8504535fb1af77730c" id="r_ad3fe6fa8e6dc8f8504535fb1af77730c"><td class="memItemLeft" align="right" valign="top"><a id="ad3fe6fa8e6dc8f8504535fb1af77730c" name="ad3fe6fa8e6dc8f8504535fb1af77730c"></a>
+<a class="el" href="../../d6/d16/classxii_typed_resource_handle.html">xiiShaderResourceHandle</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_hShader</b></td></tr>
+<tr class="separator:ad3fe6fa8e6dc8f8504535fb1af77730c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pub_static_methods_classxii_no_base"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_static_methods_classxii_no_base')"><img src="../../closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="../../d2/d38/classxii_no_base.html">xiiNoBase</a></td></tr>
+<tr class="memitem:a4bde433b55ebd55edf63c57239799bba inherit pub_static_methods_classxii_no_base" id="r_a4bde433b55ebd55edf63c57239799bba"><td class="memItemLeft" align="right" valign="top">
+static const <a class="el" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetStaticRTTI</b> ()</td></tr>
+<tr class="separator:a4bde433b55ebd55edf63c57239799bba inherit pub_static_methods_classxii_no_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a90cf7fec5658a11d525e85ab2ecf9ef9" name="a90cf7fec5658a11d525e85ab2ecf9ef9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a90cf7fec5658a11d525e85ab2ecf9ef9">&#9670;&#160;</a></span>Deserialize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a> xiiTonemapPass::Deserialize </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d4/d5e/classxii_stream_reader.html">xiiStreamReader</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>inout_stream</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented from <a class="el" href="../../d5/d44/classxii_render_pipeline_pass.html">xiiRenderPipelinePass</a>.</p>
+
+</div>
+</div>
+<a id="a8bc3dd3186c001627073915bb38616fd" name="a8bc3dd3186c001627073915bb38616fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8bc3dd3186c001627073915bb38616fd">&#9670;&#160;</a></span>Execute()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void xiiTonemapPass::Execute </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d9/d0f/structxii_render_view_context.html">xiiRenderViewContext</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>renderViewContext</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d0/d60/classxii_array_ptr.html">xiiArrayPtr</a>&lt; <a class="el" href="../../d3/deb/structxii_render_pipeline_pass_connection.html">xiiRenderPipelinePassConnection</a> *const &gt;</td>          <td class="paramname"><span class="paramname"><em>inputs</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d0/d60/classxii_array_ptr.html">xiiArrayPtr</a>&lt; <a class="el" href="../../d3/deb/structxii_render_pipeline_pass_connection.html">xiiRenderPipelinePassConnection</a> *const &gt;</td>          <td class="paramname"><span class="paramname"><em>outputs</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Render into outputs. Both inputs and outputs are passed in with actual texture handles. Disconnected pins have a nullptr value in the passed in arrays. You can now create views and render target setups on the fly and fill the output targets with data. </p>
+
+<p>Implements <a class="el" href="../../d5/d44/classxii_render_pipeline_pass.html#a9fc6cb1f56342b99fa2cd950e1dc9952">xiiRenderPipelinePass</a>.</p>
+
+</div>
+</div>
+<a id="a78635e69cda83f835ebc3f29d94ef46a" name="a78635e69cda83f835ebc3f29d94ef46a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a78635e69cda83f835ebc3f29d94ef46a">&#9670;&#160;</a></span>GetRenderTargetDescriptions()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool xiiTonemapPass::GetRenderTargetDescriptions </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../dd/df1/classxii_view.html">xiiView</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>view</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d0/d60/classxii_array_ptr.html">xiiArrayPtr</a>&lt; <a class="el" href="../../de/dd4/structxii_g_a_l_texture_creation_description.html">xiiGALTextureCreationDescription</a> *const &gt;</td>          <td class="paramname"><span class="paramname"><em>inputs</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d0/d60/classxii_array_ptr.html">xiiArrayPtr</a>&lt; <a class="el" href="../../de/dd4/structxii_g_a_l_texture_creation_description.html">xiiGALTextureCreationDescription</a> &gt;</td>          <td class="paramname"><span class="paramname"><em>outputs</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>For a given input pin configuration, provide the output configuration of this node. Outputs is already resized to the number of output pins. </p>
+
+<p>Implements <a class="el" href="../../d5/d44/classxii_render_pipeline_pass.html#a36bc9d71d7061f9ea4e723fda6d41e7a">xiiRenderPipelinePass</a>.</p>
+
+</div>
+</div>
+<a id="ac498444ecc02c958354b8b1b75338b74" name="ac498444ecc02c958354b8b1b75338b74"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac498444ecc02c958354b8b1b75338b74">&#9670;&#160;</a></span>Serialize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a> xiiTonemapPass::Serialize </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d0/d18/classxii_stream_writer.html">xiiStreamWriter</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>inout_stream</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented from <a class="el" href="../../d5/d44/classxii_render_pipeline_pass.html">xiiRenderPipelinePass</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li>/home/runner/work/XII/XII/Source/Engine/GraphicsCore/Pipeline/Passes/<a class="el" href="../../da/d00/_tonemap_pass_8h_source.html">TonemapPass.h</a></li>
+<li>/home/runner/work/XII/XII/Source/Engine/GraphicsCore/Pipeline/Implementation/Passes/<b>TonemapPass.cpp</b></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../d8/d40/classxii_tonemap_pass.html">xiiTonemapPass</a></li>
+    <li class="footer">Generated on Mon Jul 1 2024 23:53:16 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+  </ul>
+</div>
+</body>
+</html>

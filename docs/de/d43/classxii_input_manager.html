@@ -1,0 +1,709 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.11.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<!-- BEGIN opengraph metadata -->
+<meta property="og:title" content="XII" />
+<meta property="og:image" content="../../XII-Logo.png" />
+<meta property="og:description" content="An advanced high-performance simulation engine." />
+<meta property="og:url" content="https://www.xiitechnologies.com" />
+<!-- END opengraph metadata -->
+<!-- BEGIN twitter metadata -->
+<meta name="twitter:image:src" content="../../XII-Logo.png" />
+<meta name="twitter:title" content="XII" />
+<meta name="twitter:description" content="An advanced high-performance simulation engine." />
+<!-- END twitter metadata -->
+<title>XII: xiiInputManager Class Reference</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link rel="icon" type="image/svg+xml" href="logo.drawio.svg"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="../../toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../custom.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<a href="https://github.com/jothepro/doxygen-awesome-css" class="github-corner" title="View source on GitHub" target="_blank" rel="noopener noreferrer">
+    <svg viewBox="0 0 250 250" width="40" height="40" style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+    <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="../../XII-Logo.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">XII
+   &#160;<span id="projectnumber">1.0.0</span>
+   </div>
+   <div id="projectbrief">A high-performance simulation engine.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(1); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.html','Search',true);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('de/d43/classxii_input_manager.html','../../'); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#pub-types">Public Types</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#friends">Friends</a> &#124;
+<a href="../../db/dc8/classxii_input_manager-members.html">List of all members</a>  </div>
+  <div class="headertitle"><div class="title">xiiInputManager Class Reference</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>The central class to set up and query the state of all input.  
+ <a href="#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="../../da/d09/_input_manager_8h_source.html">InputManager.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/dda/structxii_input_manager_1_1_input_event_data.html">InputEventData</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The data that is broadcast when certain events occur.  <a href="../../d6/dda/structxii_input_manager_1_1_input_event_data.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:ab8f5f56b15ba493aef7e3af6e100cef4" id="r_ab8f5f56b15ba493aef7e3af6e100cef4"><td class="memItemLeft" align="right" valign="top"><a id="ab8f5f56b15ba493aef7e3af6e100cef4" name="ab8f5f56b15ba493aef7e3af6e100cef4"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>xiiEventInput</b> = <a class="el" href="../../dc/d22/classxii_event.html">xiiEvent</a>&lt;const <a class="el" href="../../d6/dda/structxii_input_manager_1_1_input_event_data.html">InputEventData</a>&amp;&gt;</td></tr>
+<tr class="separator:ab8f5f56b15ba493aef7e3af6e100cef4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a70fb780c23c64f655c51a51ad4fbed87" id="r_a70fb780c23c64f655c51a51ad4fbed87"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a70fb780c23c64f655c51a51ad4fbed87">Update</a> (<a class="el" href="../../d7/dc1/structxii_time.html">xiiTime</a> timeDifference)</td></tr>
+<tr class="memdesc:a70fb780c23c64f655c51a51ad4fbed87"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the state of the input manager. This should be called exactly once each frame.  <br /></td></tr>
+<tr class="separator:a70fb780c23c64f655c51a51ad4fbed87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49a6d628fd1d2f8014562d724a571361" id="r_a49a6d628fd1d2f8014562d724a571361"><td class="memItemLeft" align="right" valign="top"><a id="a49a6d628fd1d2f8014562d724a571361" name="a49a6d628fd1d2f8014562d724a571361"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>SetInputSlotDisplayName</b> (<a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sInputSlot, <a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sDefaultDisplayName)</td></tr>
+<tr class="memdesc:a49a6d628fd1d2f8014562d724a571361"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes the display name of an input slot. <br /></td></tr>
+<tr class="separator:a49a6d628fd1d2f8014562d724a571361"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a049bf1080e684dd0f34cd867ee81f8c0" id="r_a049bf1080e684dd0f34cd867ee81f8c0"><td class="memItemLeft" align="right" valign="top"><a id="a049bf1080e684dd0f34cd867ee81f8c0" name="a049bf1080e684dd0f34cd867ee81f8c0"></a>
+static <a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetInputSlotDisplayName</b> (<a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sInputSlot)</td></tr>
+<tr class="memdesc:a049bf1080e684dd0f34cd867ee81f8c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the display name that was assigned to the given input slot. <br /></td></tr>
+<tr class="separator:a049bf1080e684dd0f34cd867ee81f8c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afbf1eb59e2e93bac7620ef27454741d0" id="r_afbf1eb59e2e93bac7620ef27454741d0"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afbf1eb59e2e93bac7620ef27454741d0">GetInputSlotDisplayName</a> (<a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sInputSet, <a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sAction, xiiInt32 iTrigger=-1)</td></tr>
+<tr class="memdesc:afbf1eb59e2e93bac7620ef27454741d0"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="../../d8/d4f/class_a.html">A</a> shortcut to get the display name of the input slot bound to a given action.  <br /></td></tr>
+<tr class="separator:afbf1eb59e2e93bac7620ef27454741d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6e0f17645ec570f337af614ec3359db" id="r_ab6e0f17645ec570f337af614ec3359db"><td class="memItemLeft" align="right" valign="top"><a id="ab6e0f17645ec570f337af614ec3359db" name="ab6e0f17645ec570f337af614ec3359db"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>SetInputSlotDeadZone</b> (<a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sInputSlot, float fDeadZone)</td></tr>
+<tr class="memdesc:ab6e0f17645ec570f337af614ec3359db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the dead zone for the given input slot. As long as the hardware reports values lower than this, the input slot will report a value of zero. <br /></td></tr>
+<tr class="separator:ab6e0f17645ec570f337af614ec3359db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed1b697480adc3d356d09eb3ffea5964" id="r_aed1b697480adc3d356d09eb3ffea5964"><td class="memItemLeft" align="right" valign="top"><a id="aed1b697480adc3d356d09eb3ffea5964" name="aed1b697480adc3d356d09eb3ffea5964"></a>
+static float&#160;</td><td class="memItemRight" valign="bottom"><b>GetInputSlotDeadZone</b> (<a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sInputSlot)</td></tr>
+<tr class="memdesc:aed1b697480adc3d356d09eb3ffea5964"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the dead zone value for the given input slot. <br /></td></tr>
+<tr class="separator:aed1b697480adc3d356d09eb3ffea5964"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5628dff1c469ee650f01d8de656a1596" id="r_a5628dff1c469ee650f01d8de656a1596"><td class="memItemLeft" align="right" valign="top"><a id="a5628dff1c469ee650f01d8de656a1596" name="a5628dff1c469ee650f01d8de656a1596"></a>
+static <a class="el" href="../../d7/d55/structxii_bitflags.html">xiiBitflags</a>&lt; <a class="el" href="../../db/db7/structxii_input_slot_flags.html">xiiInputSlotFlags</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetInputSlotFlags</b> (<a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sInputSlot)</td></tr>
+<tr class="memdesc:a5628dff1c469ee650f01d8de656a1596"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the flags for the given input slot. <br /></td></tr>
+<tr class="separator:a5628dff1c469ee650f01d8de656a1596"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13871433c0424b2c60f91b8b729ba74d" id="r_a13871433c0424b2c60f91b8b729ba74d"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../db/d09/structxii_key_state.html#a089112c653dc7e641b840a3d8315edd3">xiiKeyState::Enum</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a13871433c0424b2c60f91b8b729ba74d">GetInputSlotState</a> (<a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sInputSlot, float *pValue=nullptr)</td></tr>
+<tr class="memdesc:a13871433c0424b2c60f91b8b729ba74d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current key state of the given input slot and optionally also returns its full value.  <br /></td></tr>
+<tr class="separator:a13871433c0424b2c60f91b8b729ba74d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b395f42431d54da75fec8d7537dc1b2" id="r_a1b395f42431d54da75fec8d7537dc1b2"><td class="memItemLeft" align="right" valign="top"><a id="a1b395f42431d54da75fec8d7537dc1b2" name="a1b395f42431d54da75fec8d7537dc1b2"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>RetrieveAllKnownInputSlots</b> (<a class="el" href="../../dc/da4/classxii_dynamic_array.html">xiiDynamicArray</a>&lt; <a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> &gt; &amp;out_inputSlots)</td></tr>
+<tr class="memdesc:a1b395f42431d54da75fec8d7537dc1b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an array that contains all the names of all currently known input slots. <br /></td></tr>
+<tr class="separator:a1b395f42431d54da75fec8d7537dc1b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7673841c0cba406f623a6299215d0cfb" id="r_a7673841c0cba406f623a6299215d0cfb"><td class="memItemLeft" align="right" valign="top">static xiiUInt32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7673841c0cba406f623a6299215d0cfb">RetrieveLastCharacter</a> (bool bResetCurrent=true)</td></tr>
+<tr class="memdesc:a7673841c0cba406f623a6299215d0cfb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the last typed character as the OS has reported it. Thus supports Unicode etc.  <br /></td></tr>
+<tr class="separator:a7673841c0cba406f623a6299215d0cfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8136ed34dffe1ddbd193876cd27eb372" id="r_a8136ed34dffe1ddbd193876cd27eb372"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8136ed34dffe1ddbd193876cd27eb372">PollHardware</a> ()</td></tr>
+<tr class="memdesc:a8136ed34dffe1ddbd193876cd27eb372"><td class="mdescLeft">&#160;</td><td class="mdescRight">Makes sure that hardware input is processed at this moment, which allows to do this more often than <a class="el" href="#a70fb780c23c64f655c51a51ad4fbed87" title="Updates the state of the input manager. This should be called exactly once each frame.">Update()</a> is called.  <br /></td></tr>
+<tr class="separator:a8136ed34dffe1ddbd193876cd27eb372"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2c3dec9eaaf048c87027171afcdffdf" id="r_ae2c3dec9eaaf048c87027171afcdffdf"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae2c3dec9eaaf048c87027171afcdffdf">ClearInputMapping</a> (<a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sInputSet, <a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sInputSlot)</td></tr>
+<tr class="memdesc:ae2c3dec9eaaf048c87027171afcdffdf"><td class="mdescLeft">&#160;</td><td class="mdescRight">If <em>szInputSlot</em> is used in any action in <em>szInputSet</em>, it will be removed from all of them.  <br /></td></tr>
+<tr class="separator:ae2c3dec9eaaf048c87027171afcdffdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38ed7b2acef6782706628a7fb232d899" id="r_a38ed7b2acef6782706628a7fb232d899"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a38ed7b2acef6782706628a7fb232d899">SetInputActionConfig</a> (<a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sInputSet, <a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sAction, const <a class="el" href="../../d0/db4/structxii_input_action_config.html">xiiInputActionConfig</a> &amp;config, bool bClearPreviousInputMappings)</td></tr>
+<tr class="memdesc:a38ed7b2acef6782706628a7fb232d899"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is the one function to set up which input actions are available and by which input slots (keys) they are triggered.  <br /></td></tr>
+<tr class="separator:a38ed7b2acef6782706628a7fb232d899"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83d2f7dd18a78c3f5220f141882789c0" id="r_a83d2f7dd18a78c3f5220f141882789c0"><td class="memItemLeft" align="right" valign="top"><a id="a83d2f7dd18a78c3f5220f141882789c0" name="a83d2f7dd18a78c3f5220f141882789c0"></a>
+static <a class="el" href="../../d0/db4/structxii_input_action_config.html">xiiInputActionConfig</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetInputActionConfig</b> (<a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sInputSet, <a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sAction)</td></tr>
+<tr class="memdesc:a83d2f7dd18a78c3f5220f141882789c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the configuration for the given input action in the given input set. Returns a default configuration, if the action does not exist. <br /></td></tr>
+<tr class="separator:a83d2f7dd18a78c3f5220f141882789c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a968d9b84dcc5ca17e8cc4a0bdcf5f135" id="r_a968d9b84dcc5ca17e8cc4a0bdcf5f135"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a968d9b84dcc5ca17e8cc4a0bdcf5f135">RemoveInputAction</a> (<a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sInputSet, <a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sAction)</td></tr>
+<tr class="memdesc:a968d9b84dcc5ca17e8cc4a0bdcf5f135"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deletes all state associated with the given input action.  <br /></td></tr>
+<tr class="separator:a968d9b84dcc5ca17e8cc4a0bdcf5f135"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7eb950e5011ce21b9340727414d678a" id="r_aa7eb950e5011ce21b9340727414d678a"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../db/d09/structxii_key_state.html#a089112c653dc7e641b840a3d8315edd3">xiiKeyState::Enum</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa7eb950e5011ce21b9340727414d678a">GetInputActionState</a> (<a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sInputSet, <a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sAction, float *pValue=nullptr, xiiInt8 *pTriggeredSlot=nullptr)</td></tr>
+<tr class="memdesc:aa7eb950e5011ce21b9340727414d678a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current state and value of the given input action.  <br /></td></tr>
+<tr class="separator:aa7eb950e5011ce21b9340727414d678a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae237056b11d471ccff98a0d0dea80e8a" id="r_ae237056b11d471ccff98a0d0dea80e8a"><td class="memItemLeft" align="right" valign="top"><a id="ae237056b11d471ccff98a0d0dea80e8a" name="ae237056b11d471ccff98a0d0dea80e8a"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>SetActionDisplayName</b> (<a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sAction, <a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sDisplayName)</td></tr>
+<tr class="memdesc:ae237056b11d471ccff98a0d0dea80e8a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the display name for the given action. <br /></td></tr>
+<tr class="separator:ae237056b11d471ccff98a0d0dea80e8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88f30953ec8672118c35b1d7f5d4a0e8" id="r_a88f30953ec8672118c35b1d7f5d4a0e8"><td class="memItemLeft" align="right" valign="top"><a id="a88f30953ec8672118c35b1d7f5d4a0e8" name="a88f30953ec8672118c35b1d7f5d4a0e8"></a>
+static const <a class="el" href="../../df/dfb/structxii_hybrid_string.html">xiiString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetActionDisplayName</b> (<a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sAction)</td></tr>
+<tr class="memdesc:a88f30953ec8672118c35b1d7f5d4a0e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the display name for the given action, or the action name itself, if no special display name was specified yet. <br /></td></tr>
+<tr class="separator:a88f30953ec8672118c35b1d7f5d4a0e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa520dba090a37ae34ed2ca8abe28d85a" id="r_aa520dba090a37ae34ed2ca8abe28d85a"><td class="memItemLeft" align="right" valign="top"><a id="aa520dba090a37ae34ed2ca8abe28d85a" name="aa520dba090a37ae34ed2ca8abe28d85a"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>GetAllInputSets</b> (<a class="el" href="../../dc/da4/classxii_dynamic_array.html">xiiDynamicArray</a>&lt; <a class="el" href="../../df/dfb/structxii_hybrid_string.html">xiiString</a> &gt; &amp;out_inputSetNames)</td></tr>
+<tr class="memdesc:aa520dba090a37ae34ed2ca8abe28d85a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the names of all currently registered input sets. <br /></td></tr>
+<tr class="separator:aa520dba090a37ae34ed2ca8abe28d85a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6a3c5d196936bc4c8d3d61839156069" id="r_ab6a3c5d196936bc4c8d3d61839156069"><td class="memItemLeft" align="right" valign="top"><a id="ab6a3c5d196936bc4c8d3d61839156069" name="ab6a3c5d196936bc4c8d3d61839156069"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>GetAllInputActions</b> (<a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sInputSetName, <a class="el" href="../../dc/da4/classxii_dynamic_array.html">xiiDynamicArray</a>&lt; <a class="el" href="../../df/dfb/structxii_hybrid_string.html">xiiString</a> &gt; &amp;out_inputActions)</td></tr>
+<tr class="memdesc:ab6a3c5d196936bc4c8d3d61839156069"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the names of all input actions in the given input set. <br /></td></tr>
+<tr class="separator:ab6a3c5d196936bc4c8d3d61839156069"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8bee54ea929ee80df067b127b058c83" id="r_af8bee54ea929ee80df067b127b058c83"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af8bee54ea929ee80df067b127b058c83">SetExclusiveInputSet</a> (<a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sExclusiveSet)</td></tr>
+<tr class="memdesc:af8bee54ea929ee80df067b127b058c83"><td class="mdescLeft">&#160;</td><td class="mdescRight">This can be used to pass input exclusively to this input set and no others.  <br /></td></tr>
+<tr class="separator:af8bee54ea929ee80df067b127b058c83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77308960eb6f7c754f50023588da4210" id="r_a77308960eb6f7c754f50023588da4210"><td class="memItemLeft" align="right" valign="top"><a id="a77308960eb6f7c754f50023588da4210" name="a77308960eb6f7c754f50023588da4210"></a>
+static <a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetExclusiveInputSet</b> ()</td></tr>
+<tr class="memdesc:a77308960eb6f7c754f50023588da4210"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether any input set gets input exclusively. <br /></td></tr>
+<tr class="separator:a77308960eb6f7c754f50023588da4210"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa97c69bb7f5d67fe4fdecc858f00f170" id="r_aa97c69bb7f5d67fe4fdecc858f00f170"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa97c69bb7f5d67fe4fdecc858f00f170">InjectInputSlotValue</a> (<a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sInputSlot, float fValue)</td></tr>
+<tr class="memdesc:aa97c69bb7f5d67fe4fdecc858f00f170"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function allows to 'inject' input state for one frame.  <br /></td></tr>
+<tr class="separator:aa97c69bb7f5d67fe4fdecc858f00f170"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af403c0e7f9782be5590209133419f6fb" id="r_af403c0e7f9782be5590209133419f6fb"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af403c0e7f9782be5590209133419f6fb">GetPressedInputSlot</a> (<a class="el" href="../../db/db7/structxii_input_slot_flags.html#a3e9e6761413c16a3ca9109bb9d421bb0">xiiInputSlotFlags::Enum</a> mustHaveFlags, <a class="el" href="../../db/db7/structxii_input_slot_flags.html#a3e9e6761413c16a3ca9109bb9d421bb0">xiiInputSlotFlags::Enum</a> mustNotHaveFlags)</td></tr>
+<tr class="memdesc:af403c0e7f9782be5590209133419f6fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether any input slot has been triggered in this frame, which has all <em>MustHaveFlags</em> and has none of the <em>MustNotHaveFlags</em>.  <br /></td></tr>
+<tr class="separator:af403c0e7f9782be5590209133419f6fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb4ea2520e06287887889cf5540192ba" id="r_aeb4ea2520e06287887889cf5540192ba"><td class="memItemLeft" align="right" valign="top"><a id="aeb4ea2520e06287887889cf5540192ba" name="aeb4ea2520e06287887889cf5540192ba"></a>
+static <a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a>&#160;</td><td class="memItemRight" valign="bottom"><b>ConvertScanCodeToEngineName</b> (xiiUInt8 uiScanCode, bool bIsExtendedKey)</td></tr>
+<tr class="memdesc:aeb4ea2520e06287887889cf5540192ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mostly for internal use. Converts a scan-code value to the string that is used inside the engine for that key. <br /></td></tr>
+<tr class="separator:aeb4ea2520e06287887889cf5540192ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab26d96e2d356d200e0fb753da6927986" id="r_ab26d96e2d356d200e0fb753da6927986"><td class="memItemLeft" align="right" valign="top"><a id="ab26d96e2d356d200e0fb753da6927986" name="ab26d96e2d356d200e0fb753da6927986"></a>
+static <a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetInputSlotTouchPoint</b> (unsigned int uiIndex)</td></tr>
+<tr class="memdesc:ab26d96e2d356d200e0fb753da6927986"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper for retrieving the input slot string for touch point with a given index. <br /></td></tr>
+<tr class="separator:ab26d96e2d356d200e0fb753da6927986"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e7a2fc73c8361a00d37c79be04619bd" id="r_a0e7a2fc73c8361a00d37c79be04619bd"><td class="memItemLeft" align="right" valign="top"><a id="a0e7a2fc73c8361a00d37c79be04619bd" name="a0e7a2fc73c8361a00d37c79be04619bd"></a>
+static <a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetInputSlotTouchPointPositionX</b> (unsigned int uiIndex)</td></tr>
+<tr class="memdesc:a0e7a2fc73c8361a00d37c79be04619bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper for retrieving the input slot string for touch point x position with a given index. <br /></td></tr>
+<tr class="separator:a0e7a2fc73c8361a00d37c79be04619bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4631ae1efd86cea6a8eea032ecae604" id="r_ad4631ae1efd86cea6a8eea032ecae604"><td class="memItemLeft" align="right" valign="top"><a id="ad4631ae1efd86cea6a8eea032ecae604" name="ad4631ae1efd86cea6a8eea032ecae604"></a>
+static <a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetInputSlotTouchPointPositionY</b> (unsigned int uiIndex)</td></tr>
+<tr class="memdesc:ad4631ae1efd86cea6a8eea032ecae604"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper for retrieving the input slot string for touch point y position with a given index. <br /></td></tr>
+<tr class="separator:ad4631ae1efd86cea6a8eea032ecae604"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a238622acfff4e2d0ad0638e15295f939" id="r_a238622acfff4e2d0ad0638e15295f939"><td class="memItemLeft" align="right" valign="top"><a id="a238622acfff4e2d0ad0638e15295f939" name="a238622acfff4e2d0ad0638e15295f939"></a>
+static xiiEventSubscriptionID&#160;</td><td class="memItemRight" valign="bottom"><b>AddEventHandler</b> (<a class="el" href="../../d0/d7f/classxii_event_base.html#ada90d4faae8102fb84947a77720e2f70">xiiEventInput::Handler</a> handler)</td></tr>
+<tr class="memdesc:a238622acfff4e2d0ad0638e15295f939"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds an event handler that is called for input events. <br /></td></tr>
+<tr class="separator:a238622acfff4e2d0ad0638e15295f939"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44fa1e282d079d837c222ac1df819a28" id="r_a44fa1e282d079d837c222ac1df819a28"><td class="memItemLeft" align="right" valign="top"><a id="a44fa1e282d079d837c222ac1df819a28" name="a44fa1e282d079d837c222ac1df819a28"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>RemoveEventHandler</b> (<a class="el" href="../../d0/d7f/classxii_event_base.html#ada90d4faae8102fb84947a77720e2f70">xiiEventInput::Handler</a> handler)</td></tr>
+<tr class="memdesc:a44fa1e282d079d837c222ac1df819a28"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes a previously added event handler. <br /></td></tr>
+<tr class="separator:a44fa1e282d079d837c222ac1df819a28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01c5c9929268d96b00a834479c02dc51" id="r_a01c5c9929268d96b00a834479c02dc51"><td class="memItemLeft" align="right" valign="top"><a id="a01c5c9929268d96b00a834479c02dc51" name="a01c5c9929268d96b00a834479c02dc51"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>RemoveEventHandler</b> (xiiEventSubscriptionID id)</td></tr>
+<tr class="separator:a01c5c9929268d96b00a834479c02dc51"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
+Friends</h2></td></tr>
+<tr class="memitem:a0407217790159f18ebe24218ed680bb6" id="r_a0407217790159f18ebe24218ed680bb6"><td class="memItemLeft" align="right" valign="top"><a id="a0407217790159f18ebe24218ed680bb6" name="a0407217790159f18ebe24218ed680bb6"></a>
+class&#160;</td><td class="memItemRight" valign="bottom"><b>xiiInputDevice</b></td></tr>
+<tr class="separator:a0407217790159f18ebe24218ed680bb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>The central class to set up and query the state of all input. </p>
+<p>The <a class="el" href="../../de/d43/classxii_input_manager.html" title="The central class to set up and query the state of all input.">xiiInputManager</a> is the central hub through which you can configure which keys will trigger which actions. You can query in which state an action is (inactive (up), active (down), just recently activated (pressed) or just recently deactivated (released)). You can query their values (e.g. how much a thumb-stick or the mouse was moved). Additionally you can localize buttons and actions. The internal data will always use English names and the US keyboard layout, but what with which names those keys are presented to the user can be changed. Although the input manager allows to query the state of each key, button, axis, etc. directly, this is not advised. Instead the user should set up 'actions' and define which keys will trigger those actions. At runtime the user should only query the state of actions. In the best case, an application allows the player to change the mapping which keys are used to trigger which actions. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="ae2c3dec9eaaf048c87027171afcdffdf" name="ae2c3dec9eaaf048c87027171afcdffdf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae2c3dec9eaaf048c87027171afcdffdf">&#9670;&#160;</a></span>ClearInputMapping()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void xiiInputManager::ClearInputMapping </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a></td>          <td class="paramname"><span class="paramname"><em>sInputSet</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a></td>          <td class="paramname"><span class="paramname"><em>sInputSlot</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>If <em>szInputSlot</em> is used in any action in <em>szInputSet</em>, it will be removed from all of them. </p>
+<p>This should be used to reset the usage of an input slot before it is bound to another input action. </p>
+
+</div>
+</div>
+<a id="aa7eb950e5011ce21b9340727414d678a" name="aa7eb950e5011ce21b9340727414d678a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa7eb950e5011ce21b9340727414d678a">&#9670;&#160;</a></span>GetInputActionState()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../db/d09/structxii_key_state.html#a089112c653dc7e641b840a3d8315edd3">xiiKeyState::Enum</a> xiiInputManager::GetInputActionState </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a></td>          <td class="paramname"><span class="paramname"><em>sInputSet</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a></td>          <td class="paramname"><span class="paramname"><em>sAction</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float *</td>          <td class="paramname"><span class="paramname"><em>pValue</em></span><span class="paramdefsep"> = </span><span class="paramdefval">nullptr</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">xiiInt8 *</td>          <td class="paramname"><span class="paramname"><em>pTriggeredSlot</em></span><span class="paramdefsep"> = </span><span class="paramdefval">nullptr</span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the current state and value of the given input action. </p>
+<p>This is the one function that is called repeatedly at runtime to figure out which actions are active and thus which game-play functions to execute. You can (and should) use the /a pValue to scale game play features (e.g. how fast to drive). </p>
+
+</div>
+</div>
+<a id="afbf1eb59e2e93bac7620ef27454741d0" name="afbf1eb59e2e93bac7620ef27454741d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afbf1eb59e2e93bac7620ef27454741d0">&#9670;&#160;</a></span>GetInputSlotDisplayName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> xiiInputManager::GetInputSlotDisplayName </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a></td>          <td class="paramname"><span class="paramname"><em>sInputSet</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a></td>          <td class="paramname"><span class="paramname"><em>sAction</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">xiiInt32</td>          <td class="paramname"><span class="paramname"><em>iTrigger</em></span><span class="paramdefsep"> = </span><span class="paramdefval">-1</span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="../../d8/d4f/class_a.html">A</a> shortcut to get the display name of the input slot bound to a given action. </p>
+<p>If iTrigger is set, the name of that trigger (0 .. xiiInputActionConfig::MaxInputSlotAlternatives) will be used. If iTrigger is less than 0, the first valid trigger is used. If iTrigger is outside the valid range or no valid trigger is bound, nullptr is returned. </p>
+<dl class="test"><dt><b><a class="el" href="../../d4/df6/test.html#_test000001">Test</a></b></dt><dd>This is new </dd></dl>
+
+</div>
+</div>
+<a id="a13871433c0424b2c60f91b8b729ba74d" name="a13871433c0424b2c60f91b8b729ba74d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a13871433c0424b2c60f91b8b729ba74d">&#9670;&#160;</a></span>GetInputSlotState()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../db/d09/structxii_key_state.html#a089112c653dc7e641b840a3d8315edd3">xiiKeyState::Enum</a> xiiInputManager::GetInputSlotState </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a></td>          <td class="paramname"><span class="paramname"><em>sInputSlot</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float *</td>          <td class="paramname"><span class="paramname"><em>pValue</em></span><span class="paramdefsep"> = </span><span class="paramdefval">nullptr</span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the current key state of the given input slot and optionally also returns its full value. </p>
+<p>Do not use this function, unless you really, really need the value of exactly this key. Prefer to map your key to an action and then use <a class="el" href="#aa7eb950e5011ce21b9340727414d678a" title="Returns the current state and value of the given input action.">GetInputActionState()</a>. That method is more robust and extensible. </p>
+
+</div>
+</div>
+<a id="af403c0e7f9782be5590209133419f6fb" name="af403c0e7f9782be5590209133419f6fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af403c0e7f9782be5590209133419f6fb">&#9670;&#160;</a></span>GetPressedInputSlot()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> xiiInputManager::GetPressedInputSlot </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../db/db7/structxii_input_slot_flags.html#a3e9e6761413c16a3ca9109bb9d421bb0">xiiInputSlotFlags::Enum</a></td>          <td class="paramname"><span class="paramname"><em>mustHaveFlags</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../db/db7/structxii_input_slot_flags.html#a3e9e6761413c16a3ca9109bb9d421bb0">xiiInputSlotFlags::Enum</a></td>          <td class="paramname"><span class="paramname"><em>mustNotHaveFlags</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Checks whether any input slot has been triggered in this frame, which has all <em>MustHaveFlags</em> and has none of the <em>MustNotHaveFlags</em>. </p>
+<p>This function can be used in a UI to wait for user input and then assign that input to a certain action. </p>
+
+</div>
+</div>
+<a id="aa97c69bb7f5d67fe4fdecc858f00f170" name="aa97c69bb7f5d67fe4fdecc858f00f170"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa97c69bb7f5d67fe4fdecc858f00f170">&#9670;&#160;</a></span>InjectInputSlotValue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void xiiInputManager::InjectInputSlotValue </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a></td>          <td class="paramname"><span class="paramname"><em>sInputSlot</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>fValue</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This function allows to 'inject' input state for one frame. </p>
+<p>This can be useful to emulate certain keys, e.g. for virtual devices. Note that it usually makes more sense to actually have another input device, however this can be used to get data into the system quickly for when a full blown input device might be overkill. The injected input state is cleared immediately after it has been processed, so to keep a virtual input slot active, the input needs to be injected every frame.</p>
+<p>Note that when the input is injected after <a class="el" href="#a70fb780c23c64f655c51a51ad4fbed87" title="Updates the state of the input manager. This should be called exactly once each frame.">xiiInputManager::Update</a> was called, its effect will be delayed by one frame. </p>
+
+</div>
+</div>
+<a id="a8136ed34dffe1ddbd193876cd27eb372" name="a8136ed34dffe1ddbd193876cd27eb372"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8136ed34dffe1ddbd193876cd27eb372">&#9670;&#160;</a></span>PollHardware()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void xiiInputManager::PollHardware </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Makes sure that hardware input is processed at this moment, which allows to do this more often than <a class="el" href="#a70fb780c23c64f655c51a51ad4fbed87" title="Updates the state of the input manager. This should be called exactly once each frame.">Update()</a> is called. </p>
+<p>When you have a game where you are doing relatively few game updates (including processing input), for example only 20 times per second, it is possible to 'miss' input. <a class="el" href="#a8136ed34dffe1ddbd193876cd27eb372" title="Makes sure that hardware input is processed at this moment, which allows to do this more often than U...">PollHardware()</a> allows to introduce sampling the hardware state more often to prevent this. E.g. when your renderer renders at 60 Hz, you can poll input also at 60 Hz, even though you really only process it at 20 Hz. In typical usage scenarios this is not required to do and can be ignored. Note that you can call <a class="el" href="#a8136ed34dffe1ddbd193876cd27eb372" title="Makes sure that hardware input is processed at this moment, which allows to do this more often than U...">PollHardware()</a> as often as you like and at irregular intervals, it will not have a negative effect on the input states. </p>
+
+</div>
+</div>
+<a id="a968d9b84dcc5ca17e8cc4a0bdcf5f135" name="a968d9b84dcc5ca17e8cc4a0bdcf5f135"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a968d9b84dcc5ca17e8cc4a0bdcf5f135">&#9670;&#160;</a></span>RemoveInputAction()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void xiiInputManager::RemoveInputAction </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a></td>          <td class="paramname"><span class="paramname"><em>sInputSet</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a></td>          <td class="paramname"><span class="paramname"><em>sAction</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Deletes all state associated with the given input action. </p>
+<p>It is not necessary to call this function for cleanup. </p>
+
+</div>
+</div>
+<a id="a7673841c0cba406f623a6299215d0cfb" name="a7673841c0cba406f623a6299215d0cfb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7673841c0cba406f623a6299215d0cfb">&#9670;&#160;</a></span>RetrieveLastCharacter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">xiiUInt32 xiiInputManager::RetrieveLastCharacter </td>
+          <td>(</td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>bResetCurrent</em></span><span class="paramdefsep"> = </span><span class="paramdefval">true</span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the last typed character as the OS has reported it. Thus supports Unicode etc. </p>
+<p>If <em>bResetCurrent</em> is true, the internal last character will be reset to '\0'. If it is false, the internal state will not be changed. This should only be used, if the calling code does not do anything meaningful with the value. </p>
+
+</div>
+</div>
+<a id="af8bee54ea929ee80df067b127b058c83" name="af8bee54ea929ee80df067b127b058c83"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af8bee54ea929ee80df067b127b058c83">&#9670;&#160;</a></span>SetExclusiveInputSet()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void xiiInputManager::SetExclusiveInputSet </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a></td>          <td class="paramname"><span class="paramname"><em>sExclusiveSet</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This can be used to pass input exclusively to this input set and no others. </p>
+<p>Querying input from other input sets will always return 'key up'. </p>
+
+</div>
+</div>
+<a id="a38ed7b2acef6782706628a7fb232d899" name="a38ed7b2acef6782706628a7fb232d899"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a38ed7b2acef6782706628a7fb232d899">&#9670;&#160;</a></span>SetInputActionConfig()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void xiiInputManager::SetInputActionConfig </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a></td>          <td class="paramname"><span class="paramname"><em>sInputSet</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a></td>          <td class="paramname"><span class="paramname"><em>sAction</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d0/db4/structxii_input_action_config.html">xiiInputActionConfig</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>config</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>bClearPreviousInputMappings</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This is the one function to set up which input actions are available and by which input slots (keys) they are triggered. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">szInputSet</td><td>'Input Sets' are sets of actions that are disjunct from each other. That means the same input slot (key, mouse button, etc.) can trigger multiple different actions from different input sets. For example In the input set 'Game' the left mouse button may trigger the action 'Shoot', but in the input set 'UI' the left mouse button may trigger the action 'Click'. All input sets are always evaluated and update their state simultaneously. The user only has to decide which actions to react to, ie. whether the game is currently running and thus the 'Game' input set is queried or whether a menu is shown and thus the 'UI' input set is queried. </td></tr>
+    <tr><td class="paramname">szAction</td><td>The action that is supposed to be triggered. The same action name may be reused in multiple input sets, they will have nothing in common. The action name should describe WHAT is to be done, not which key the user pressed. For example an action could be 'player_forwards'. Which key is set to trigger that action should be irrelevant at run-time. </td></tr>
+    <tr><td class="paramname">Config</td><td>This struct defines exactly which input slots (keys, buttons etc.) will trigger this action. The configuration allows to scale key values by the frame time, to get smooth movement when the frame-rate varies. It allows to only accept input from a slot if two other slots have certain values. This makes it possible to react to mouse or touch input only if that input is done inside a certain input area. The action can be triggered by multiple keys, if desired. In the most common cases, one will only set one or two input slots as triggers (Config.m_sInputSlotTrigger) and possibly decide whether frame time scaling is required. It makes sense to let the <a class="el" href="../../de/d43/classxii_input_manager.html" title="The central class to set up and query the state of all input.">xiiInputManager</a> do the frame time scaling, because it should not be applied to all input, e.g. mouse delta values should never be scaled by the frame time. </td></tr>
+    <tr><td class="paramname">bClearPreviousInputMappings</td><td>If set to true it is ensured that all the input slots that are used by this action are not mapped to any other action. That means no other action can be triggered by this key within this input set. For most actions this should be set to true. However, if you have several actions that can be triggered by the same slot (for example touch input) but only in different areas of the screen, this should be set to false. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a70fb780c23c64f655c51a51ad4fbed87" name="a70fb780c23c64f655c51a51ad4fbed87"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a70fb780c23c64f655c51a51ad4fbed87">&#9670;&#160;</a></span>Update()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void xiiInputManager::Update </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d7/dc1/structxii_time.html">xiiTime</a></td>          <td class="paramname"><span class="paramname"><em>timeDifference</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Updates the state of the input manager. This should be called exactly once each frame. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tTimeDifference</td><td>The time elapsed since the last update. This will affect the value scaling of actions that use frame time scaling and is necessary to update controller vibration tracks. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li>/home/runner/work/XII/XII/Source/Engine/Core/Input/<a class="el" href="../../da/d09/_input_manager_8h_source.html">InputManager.h</a></li>
+<li>/home/runner/work/XII/XII/Source/Engine/Core/Input/Implementation/<b>Action.cpp</b></li>
+<li>/home/runner/work/XII/XII/Source/Engine/Core/Input/Implementation/<b>InputManager.cpp</b></li>
+<li>/home/runner/work/XII/XII/Source/Engine/Core/Input/Implementation/<b>ScancodeTable.cpp</b></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../de/d43/classxii_input_manager.html">xiiInputManager</a></li>
+    <li class="footer">Generated on Mon Jul 1 2024 23:53:15 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,288 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.11.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<!-- BEGIN opengraph metadata -->
+<meta property="og:title" content="XII" />
+<meta property="og:image" content="../../XII-Logo.png" />
+<meta property="og:description" content="An advanced high-performance simulation engine." />
+<meta property="og:url" content="https://www.xiitechnologies.com" />
+<!-- END opengraph metadata -->
+<!-- BEGIN twitter metadata -->
+<meta name="twitter:image:src" content="../../XII-Logo.png" />
+<meta name="twitter:title" content="XII" />
+<meta name="twitter:description" content="An advanced high-performance simulation engine." />
+<!-- END twitter metadata -->
+<title>XII: reverse_pointer_iterator&lt; T &gt; Struct Template Reference</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link rel="icon" type="image/svg+xml" href="logo.drawio.svg"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="../../toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../custom.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<a href="https://github.com/jothepro/doxygen-awesome-css" class="github-corner" title="View source on GitHub" target="_blank" rel="noopener noreferrer">
+    <svg viewBox="0 0 250 250" width="40" height="40" style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+    <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="../../XII-Logo.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">XII
+   &#160;<span id="projectnumber">1.0.0</span>
+   </div>
+   <div id="projectbrief">A high-performance simulation engine.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(1); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.html','Search',true);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('d3/df2/structreverse__pointer__iterator.html','../../'); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="../../dc/d43/structreverse__pointer__iterator-members.html">List of all members</a>  </div>
+  <div class="headertitle"><div class="title">reverse_pointer_iterator&lt; T &gt; Struct Template Reference</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Non-Const class for Pointer like reverse iterators.  
+ <a href="#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="../../db/d5d/_array_iterator_8h_source.html">ArrayIterator.h</a>&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for reverse_pointer_iterator&lt; T &gt;:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d3/da6/structreverse__pointer__iterator__inherit__graph.svg" width="228" height="124"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">legend</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a289d2c92867b75207fcd474ac6522ca1" id="r_a289d2c92867b75207fcd474ac6522ca1"><td class="memItemLeft" align="right" valign="top"><a id="a289d2c92867b75207fcd474ac6522ca1" name="a289d2c92867b75207fcd474ac6522ca1"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>pointer</b> = T*</td></tr>
+<tr class="separator:a289d2c92867b75207fcd474ac6522ca1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5b80c8169c302c8bd0d917069803150" id="r_ae5b80c8169c302c8bd0d917069803150"><td class="memItemLeft" align="right" valign="top"><a id="ae5b80c8169c302c8bd0d917069803150" name="ae5b80c8169c302c8bd0d917069803150"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>reference</b> = T&amp;</td></tr>
+<tr class="separator:ae5b80c8169c302c8bd0d917069803150"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_types_structconst__reverse__pointer__iterator"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_types_structconst__reverse__pointer__iterator')"><img src="../../closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="../../d5/dc9/structconst__reverse__pointer__iterator.html">const_reverse_pointer_iterator&lt; T &gt;</a></td></tr>
+<tr class="memitem:afd08d732427c5fb7284b00b78a8a74a5 inherit pub_types_structconst__reverse__pointer__iterator" id="r_afd08d732427c5fb7284b00b78a8a74a5"><td class="memItemLeft" align="right" valign="top">
+using&#160;</td><td class="memItemRight" valign="bottom"><b>iterator_category</b> = std::random_access_iterator_tag</td></tr>
+<tr class="separator:afd08d732427c5fb7284b00b78a8a74a5 inherit pub_types_structconst__reverse__pointer__iterator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04efa127f7af22bfe3e22292c3315527 inherit pub_types_structconst__reverse__pointer__iterator" id="r_a04efa127f7af22bfe3e22292c3315527"><td class="memItemLeft" align="right" valign="top">
+using&#160;</td><td class="memItemRight" valign="bottom"><b>value_type</b> = T</td></tr>
+<tr class="separator:a04efa127f7af22bfe3e22292c3315527 inherit pub_types_structconst__reverse__pointer__iterator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae14bc237ba27a418776a734364efbbc1 inherit pub_types_structconst__reverse__pointer__iterator" id="r_ae14bc237ba27a418776a734364efbbc1"><td class="memItemLeft" align="right" valign="top">
+using&#160;</td><td class="memItemRight" valign="bottom"><b>difference_type</b> = std::ptrdiff_t</td></tr>
+<tr class="separator:ae14bc237ba27a418776a734364efbbc1 inherit pub_types_structconst__reverse__pointer__iterator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59ccf0058483a7ffd51585bfdb892926 inherit pub_types_structconst__reverse__pointer__iterator" id="r_a59ccf0058483a7ffd51585bfdb892926"><td class="memItemLeft" align="right" valign="top">
+using&#160;</td><td class="memItemRight" valign="bottom"><b>pointer</b> = T*</td></tr>
+<tr class="separator:a59ccf0058483a7ffd51585bfdb892926 inherit pub_types_structconst__reverse__pointer__iterator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc93ba9121f3a5184d905ca2d761a5d0 inherit pub_types_structconst__reverse__pointer__iterator" id="r_acc93ba9121f3a5184d905ca2d761a5d0"><td class="memItemLeft" align="right" valign="top">
+using&#160;</td><td class="memItemRight" valign="bottom"><b>reference</b> = T&amp;</td></tr>
+<tr class="separator:acc93ba9121f3a5184d905ca2d761a5d0 inherit pub_types_structconst__reverse__pointer__iterator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:aa5788ffac55fadcbce0e4ee8d45b042d" id="r_aa5788ffac55fadcbce0e4ee8d45b042d"><td class="memItemLeft" align="right" valign="top"><a id="aa5788ffac55fadcbce0e4ee8d45b042d" name="aa5788ffac55fadcbce0e4ee8d45b042d"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>reverse_pointer_iterator</b> (T *pPtr)</td></tr>
+<tr class="separator:aa5788ffac55fadcbce0e4ee8d45b042d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0ded51000bda5f1d3aee9481a2d52a3" id="r_aa0ded51000bda5f1d3aee9481a2d52a3"><td class="memItemLeft" align="right" valign="top"><a id="aa0ded51000bda5f1d3aee9481a2d52a3" name="aa0ded51000bda5f1d3aee9481a2d52a3"></a>
+XII_ALWAYS_INLINE <a class="el" href="../../d3/df2/structreverse__pointer__iterator.html">reverse_pointer_iterator</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator++</b> ()</td></tr>
+<tr class="separator:aa0ded51000bda5f1d3aee9481a2d52a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6fe42f043d9308440b1d4ffb9e4ceb85" id="r_a6fe42f043d9308440b1d4ffb9e4ceb85"><td class="memItemLeft" align="right" valign="top"><a id="a6fe42f043d9308440b1d4ffb9e4ceb85" name="a6fe42f043d9308440b1d4ffb9e4ceb85"></a>
+XII_ALWAYS_INLINE <a class="el" href="../../d3/df2/structreverse__pointer__iterator.html">reverse_pointer_iterator</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator--</b> ()</td></tr>
+<tr class="separator:a6fe42f043d9308440b1d4ffb9e4ceb85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f8c7868977481b879e3ecd4cf032b95" id="r_a1f8c7868977481b879e3ecd4cf032b95"><td class="memItemLeft" align="right" valign="top"><a id="a1f8c7868977481b879e3ecd4cf032b95" name="a1f8c7868977481b879e3ecd4cf032b95"></a>
+XII_ALWAYS_INLINE <a class="el" href="../../d3/df2/structreverse__pointer__iterator.html">reverse_pointer_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><b>operator++</b> (xiiInt32)</td></tr>
+<tr class="separator:a1f8c7868977481b879e3ecd4cf032b95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8251fcf29def486c020cfec8fa4d66e6" id="r_a8251fcf29def486c020cfec8fa4d66e6"><td class="memItemLeft" align="right" valign="top"><a id="a8251fcf29def486c020cfec8fa4d66e6" name="a8251fcf29def486c020cfec8fa4d66e6"></a>
+XII_ALWAYS_INLINE <a class="el" href="../../d3/df2/structreverse__pointer__iterator.html">reverse_pointer_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><b>operator--</b> (xiiInt32)</td></tr>
+<tr class="separator:a8251fcf29def486c020cfec8fa4d66e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6fb3deab1373a3818c7b2ae640c7f717" id="r_a6fb3deab1373a3818c7b2ae640c7f717"><td class="memItemLeft" align="right" valign="top"><a id="a6fb3deab1373a3818c7b2ae640c7f717" name="a6fb3deab1373a3818c7b2ae640c7f717"></a>
+XII_ALWAYS_INLINE <a class="el" href="../../d3/df2/structreverse__pointer__iterator.html">reverse_pointer_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><b>operator+</b> (std::ptrdiff_t rhs) const</td></tr>
+<tr class="separator:a6fb3deab1373a3818c7b2ae640c7f717"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38a8824915ba994ffdd21bc9db5c2495" id="r_a38a8824915ba994ffdd21bc9db5c2495"><td class="memItemLeft" align="right" valign="top"><a id="a38a8824915ba994ffdd21bc9db5c2495" name="a38a8824915ba994ffdd21bc9db5c2495"></a>
+XII_ALWAYS_INLINE <a class="el" href="../../d3/df2/structreverse__pointer__iterator.html">reverse_pointer_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><b>operator-</b> (std::ptrdiff_t rhs) const</td></tr>
+<tr class="separator:a38a8824915ba994ffdd21bc9db5c2495"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7448bdf84258db34ecc7705f82f5109" id="r_ae7448bdf84258db34ecc7705f82f5109"><td class="memItemLeft" align="right" valign="top"><a id="ae7448bdf84258db34ecc7705f82f5109" name="ae7448bdf84258db34ecc7705f82f5109"></a>
+XII_ALWAYS_INLINE T &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator*</b> () const</td></tr>
+<tr class="separator:ae7448bdf84258db34ecc7705f82f5109"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9785a112e6c61823f551d79d81864d70" id="r_a9785a112e6c61823f551d79d81864d70"><td class="memItemLeft" align="right" valign="top"><a id="a9785a112e6c61823f551d79d81864d70" name="a9785a112e6c61823f551d79d81864d70"></a>
+XII_ALWAYS_INLINE T *&#160;</td><td class="memItemRight" valign="bottom"><b>operator-&gt;</b> () const</td></tr>
+<tr class="separator:a9785a112e6c61823f551d79d81864d70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4575756af5d4a8530a28cac1a77c5a57" id="r_a4575756af5d4a8530a28cac1a77c5a57"><td class="memItemLeft" align="right" valign="top"><a id="a4575756af5d4a8530a28cac1a77c5a57" name="a4575756af5d4a8530a28cac1a77c5a57"></a>
+XII_ALWAYS_INLINE T &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator[]</b> (std::ptrdiff_t iIndex) const</td></tr>
+<tr class="separator:a4575756af5d4a8530a28cac1a77c5a57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_structconst__reverse__pointer__iterator"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_structconst__reverse__pointer__iterator')"><img src="../../closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="../../d5/dc9/structconst__reverse__pointer__iterator.html">const_reverse_pointer_iterator&lt; T &gt;</a></td></tr>
+<tr class="memitem:af11b2a4f05ee33a8a720974d4b6c23eb inherit pub_methods_structconst__reverse__pointer__iterator" id="r_af11b2a4f05ee33a8a720974d4b6c23eb"><td class="memItemLeft" align="right" valign="top">
+&#160;</td><td class="memItemRight" valign="bottom"><b>const_reverse_pointer_iterator</b> (T const *pPtr)</td></tr>
+<tr class="separator:af11b2a4f05ee33a8a720974d4b6c23eb inherit pub_methods_structconst__reverse__pointer__iterator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca9db6e8be0fdb4c1b4040350ef78158 inherit pub_methods_structconst__reverse__pointer__iterator" id="r_aca9db6e8be0fdb4c1b4040350ef78158"><td class="memItemLeft" align="right" valign="top">
+XII_ALWAYS_INLINE <a class="el" href="../../d5/dc9/structconst__reverse__pointer__iterator.html">const_reverse_pointer_iterator</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator++</b> ()</td></tr>
+<tr class="separator:aca9db6e8be0fdb4c1b4040350ef78158 inherit pub_methods_structconst__reverse__pointer__iterator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a273ed0868850067c4ce36c912148a7c9 inherit pub_methods_structconst__reverse__pointer__iterator" id="r_a273ed0868850067c4ce36c912148a7c9"><td class="memItemLeft" align="right" valign="top">
+XII_ALWAYS_INLINE <a class="el" href="../../d5/dc9/structconst__reverse__pointer__iterator.html">const_reverse_pointer_iterator</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator--</b> ()</td></tr>
+<tr class="separator:a273ed0868850067c4ce36c912148a7c9 inherit pub_methods_structconst__reverse__pointer__iterator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5281481689d7111f6da9377f0cb0c45 inherit pub_methods_structconst__reverse__pointer__iterator" id="r_ad5281481689d7111f6da9377f0cb0c45"><td class="memItemLeft" align="right" valign="top">
+XII_ALWAYS_INLINE <a class="el" href="../../d5/dc9/structconst__reverse__pointer__iterator.html">const_reverse_pointer_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><b>operator++</b> (xiiInt32)</td></tr>
+<tr class="separator:ad5281481689d7111f6da9377f0cb0c45 inherit pub_methods_structconst__reverse__pointer__iterator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a847c0668a3c5e5177fe392f13bc07c39 inherit pub_methods_structconst__reverse__pointer__iterator" id="r_a847c0668a3c5e5177fe392f13bc07c39"><td class="memItemLeft" align="right" valign="top">
+XII_ALWAYS_INLINE <a class="el" href="../../d5/dc9/structconst__reverse__pointer__iterator.html">const_reverse_pointer_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><b>operator--</b> (xiiInt32)</td></tr>
+<tr class="separator:a847c0668a3c5e5177fe392f13bc07c39 inherit pub_methods_structconst__reverse__pointer__iterator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab83b6d8506e18344f35210f2672c4762 inherit pub_methods_structconst__reverse__pointer__iterator" id="r_ab83b6d8506e18344f35210f2672c4762"><td class="memItemLeft" align="right" valign="top">
+XII_ALWAYS_INLINE bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator==</b> (const <a class="el" href="../../d5/dc9/structconst__reverse__pointer__iterator.html">const_reverse_pointer_iterator</a> &amp;rhs) const</td></tr>
+<tr class="separator:ab83b6d8506e18344f35210f2672c4762 inherit pub_methods_structconst__reverse__pointer__iterator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23687c6b0c88de2ffa8fdd27482d5efd inherit pub_methods_structconst__reverse__pointer__iterator" id="r_a23687c6b0c88de2ffa8fdd27482d5efd"><td class="memItemLeft" align="right" valign="top">
+XII_ALWAYS_INLINE std::ptrdiff_t&#160;</td><td class="memItemRight" valign="bottom"><b>operator-</b> (const <a class="el" href="../../d5/dc9/structconst__reverse__pointer__iterator.html">const_reverse_pointer_iterator</a> &amp;rhs) const</td></tr>
+<tr class="separator:a23687c6b0c88de2ffa8fdd27482d5efd inherit pub_methods_structconst__reverse__pointer__iterator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35939277886d98ec102766a5e2a00642 inherit pub_methods_structconst__reverse__pointer__iterator" id="r_a35939277886d98ec102766a5e2a00642"><td class="memItemLeft" align="right" valign="top">
+XII_ALWAYS_INLINE <a class="el" href="../../d5/dc9/structconst__reverse__pointer__iterator.html">const_reverse_pointer_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><b>operator+</b> (std::ptrdiff_t rhs) const</td></tr>
+<tr class="separator:a35939277886d98ec102766a5e2a00642 inherit pub_methods_structconst__reverse__pointer__iterator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee970574c9ed3e7a94eb7d68afca7ed6 inherit pub_methods_structconst__reverse__pointer__iterator" id="r_aee970574c9ed3e7a94eb7d68afca7ed6"><td class="memItemLeft" align="right" valign="top">
+XII_ALWAYS_INLINE <a class="el" href="../../d5/dc9/structconst__reverse__pointer__iterator.html">const_reverse_pointer_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><b>operator-</b> (std::ptrdiff_t rhs) const</td></tr>
+<tr class="separator:aee970574c9ed3e7a94eb7d68afca7ed6 inherit pub_methods_structconst__reverse__pointer__iterator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9dbf2e2688a4466742c79e7cc29a2f5e inherit pub_methods_structconst__reverse__pointer__iterator" id="r_a9dbf2e2688a4466742c79e7cc29a2f5e"><td class="memItemLeft" align="right" valign="top">
+XII_ALWAYS_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><b>operator+=</b> (std::ptrdiff_t rhs)</td></tr>
+<tr class="separator:a9dbf2e2688a4466742c79e7cc29a2f5e inherit pub_methods_structconst__reverse__pointer__iterator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77b5da2ee798a7c25a6f5d3feac53099 inherit pub_methods_structconst__reverse__pointer__iterator" id="r_a77b5da2ee798a7c25a6f5d3feac53099"><td class="memItemLeft" align="right" valign="top">
+XII_ALWAYS_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><b>operator-=</b> (std::ptrdiff_t rhs)</td></tr>
+<tr class="separator:a77b5da2ee798a7c25a6f5d3feac53099 inherit pub_methods_structconst__reverse__pointer__iterator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ecc0db95da49730403f4406cd69acb7 inherit pub_methods_structconst__reverse__pointer__iterator" id="r_a6ecc0db95da49730403f4406cd69acb7"><td class="memItemLeft" align="right" valign="top">
+XII_ALWAYS_INLINE const T &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator*</b> () const</td></tr>
+<tr class="separator:a6ecc0db95da49730403f4406cd69acb7 inherit pub_methods_structconst__reverse__pointer__iterator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f50d09808805ab350358532e416e56b inherit pub_methods_structconst__reverse__pointer__iterator" id="r_a4f50d09808805ab350358532e416e56b"><td class="memItemLeft" align="right" valign="top">
+XII_ALWAYS_INLINE const T *&#160;</td><td class="memItemRight" valign="bottom"><b>operator-&gt;</b> () const</td></tr>
+<tr class="separator:a4f50d09808805ab350358532e416e56b inherit pub_methods_structconst__reverse__pointer__iterator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b5eaf5a078694c355f07ab09cba9c61 inherit pub_methods_structconst__reverse__pointer__iterator" id="r_a7b5eaf5a078694c355f07ab09cba9c61"><td class="memItemLeft" align="right" valign="top">
+XII_ALWAYS_INLINE bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator&lt;</b> (const <a class="el" href="../../d5/dc9/structconst__reverse__pointer__iterator.html">const_reverse_pointer_iterator</a> &amp;rhs) const</td></tr>
+<tr class="separator:a7b5eaf5a078694c355f07ab09cba9c61 inherit pub_methods_structconst__reverse__pointer__iterator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ef40f6c08349f49f019f5116d804222 inherit pub_methods_structconst__reverse__pointer__iterator" id="r_a2ef40f6c08349f49f019f5116d804222"><td class="memItemLeft" align="right" valign="top">
+XII_ALWAYS_INLINE bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator&gt;</b> (const <a class="el" href="../../d5/dc9/structconst__reverse__pointer__iterator.html">const_reverse_pointer_iterator</a> &amp;rhs) const</td></tr>
+<tr class="separator:a2ef40f6c08349f49f019f5116d804222 inherit pub_methods_structconst__reverse__pointer__iterator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a003b591ed617191e8f466f417aa9dd36 inherit pub_methods_structconst__reverse__pointer__iterator" id="r_a003b591ed617191e8f466f417aa9dd36"><td class="memItemLeft" align="right" valign="top">
+XII_ALWAYS_INLINE bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator&lt;=</b> (const <a class="el" href="../../d5/dc9/structconst__reverse__pointer__iterator.html">const_reverse_pointer_iterator</a> &amp;rhs) const</td></tr>
+<tr class="separator:a003b591ed617191e8f466f417aa9dd36 inherit pub_methods_structconst__reverse__pointer__iterator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66d31d73f304bf5c9114fee63a70a290 inherit pub_methods_structconst__reverse__pointer__iterator" id="r_a66d31d73f304bf5c9114fee63a70a290"><td class="memItemLeft" align="right" valign="top">
+XII_ALWAYS_INLINE bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator&gt;=</b> (const <a class="el" href="../../d5/dc9/structconst__reverse__pointer__iterator.html">const_reverse_pointer_iterator</a> &amp;rhs) const</td></tr>
+<tr class="separator:a66d31d73f304bf5c9114fee63a70a290 inherit pub_methods_structconst__reverse__pointer__iterator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adcdb507d1e123aeefa0c692c6e706f8a inherit pub_methods_structconst__reverse__pointer__iterator" id="r_adcdb507d1e123aeefa0c692c6e706f8a"><td class="memItemLeft" align="right" valign="top">
+XII_ALWAYS_INLINE const T &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator[]</b> (std::ptrdiff_t iIndex) const</td></tr>
+<tr class="separator:adcdb507d1e123aeefa0c692c6e706f8a inherit pub_methods_structconst__reverse__pointer__iterator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pro_attribs_structconst__reverse__pointer__iterator"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_attribs_structconst__reverse__pointer__iterator')"><img src="../../closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="../../d5/dc9/structconst__reverse__pointer__iterator.html">const_reverse_pointer_iterator&lt; T &gt;</a></td></tr>
+<tr class="memitem:a728fb43dd50fcb3ed2eb9f99845474fa inherit pro_attribs_structconst__reverse__pointer__iterator" id="r_a728fb43dd50fcb3ed2eb9f99845474fa"><td class="memItemLeft" align="right" valign="top">
+T *&#160;</td><td class="memItemRight" valign="bottom"><b>m_pPtr</b></td></tr>
+<tr class="separator:a728fb43dd50fcb3ed2eb9f99845474fa inherit pro_attribs_structconst__reverse__pointer__iterator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><div class="compoundTemplParams">template&lt;class T&gt;<br />
+struct reverse_pointer_iterator&lt; T &gt;</div><p>Non-Const class for Pointer like reverse iterators. </p>
+</div><hr/>The documentation for this struct was generated from the following file:<ul>
+<li>/home/runner/work/XII/XII/Source/Engine/Foundation/Containers/Implementation/<a class="el" href="../../db/d5d/_array_iterator_8h_source.html">ArrayIterator.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../d3/df2/structreverse__pointer__iterator.html">reverse_pointer_iterator</a></li>
+    <li class="footer">Generated on Mon Jul 1 2024 23:53:13 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+  </ul>
+</div>
+</body>
+</html>

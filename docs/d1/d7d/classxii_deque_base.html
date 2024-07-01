@@ -1,0 +1,437 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.11.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<!-- BEGIN opengraph metadata -->
+<meta property="og:title" content="XII" />
+<meta property="og:image" content="../../XII-Logo.png" />
+<meta property="og:description" content="An advanced high-performance simulation engine." />
+<meta property="og:url" content="https://www.xiitechnologies.com" />
+<!-- END opengraph metadata -->
+<!-- BEGIN twitter metadata -->
+<meta name="twitter:image:src" content="../../XII-Logo.png" />
+<meta name="twitter:title" content="XII" />
+<meta name="twitter:description" content="An advanced high-performance simulation engine." />
+<!-- END twitter metadata -->
+<title>XII: xiiDequeBase&lt; T, Construct &gt; Class Template Reference</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link rel="icon" type="image/svg+xml" href="logo.drawio.svg"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="../../toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../custom.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<a href="https://github.com/jothepro/doxygen-awesome-css" class="github-corner" title="View source on GitHub" target="_blank" rel="noopener noreferrer">
+    <svg viewBox="0 0 250 250" width="40" height="40" style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+    <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="../../XII-Logo.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">XII
+   &#160;<span id="projectnumber">1.0.0</span>
+   </div>
+   <div id="projectbrief">A high-performance simulation engine.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(1); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.html','Search',true);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('d1/d7d/classxii_deque_base.html','../../'); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="../../df/d11/classxii_deque_base-members.html">List of all members</a>  </div>
+  <div class="headertitle"><div class="title">xiiDequeBase&lt; T, Construct &gt; Class Template Reference</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p><a class="el" href="../../d8/d4f/class_a.html">A</a> double ended queue container.  
+ <a href="#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="../../d5/d6c/_deque_8h_source.html">Deque.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a4dbaad80d2fbd4b0a887c65fdbc27b18" id="r_a4dbaad80d2fbd4b0a887c65fdbc27b18"><td class="memItemLeft" align="right" valign="top"><a id="a4dbaad80d2fbd4b0a887c65fdbc27b18" name="a4dbaad80d2fbd4b0a887c65fdbc27b18"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>const_iterator</b> = <a class="el" href="../../db/de6/structconst__iterator__base.html">const_iterator_base</a>&lt;<a class="el" href="../../d1/d7d/classxii_deque_base.html">xiiDequeBase</a>&lt;T, Construct&gt;, T, false&gt;</td></tr>
+<tr class="separator:a4dbaad80d2fbd4b0a887c65fdbc27b18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9621fa8c6a8aa3d429ee458274c6c09a" id="r_a9621fa8c6a8aa3d429ee458274c6c09a"><td class="memItemLeft" align="right" valign="top"><a id="a9621fa8c6a8aa3d429ee458274c6c09a" name="a9621fa8c6a8aa3d429ee458274c6c09a"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>const_reverse_iterator</b> = <a class="el" href="../../db/de6/structconst__iterator__base.html">const_iterator_base</a>&lt;<a class="el" href="../../d1/d7d/classxii_deque_base.html">xiiDequeBase</a>&lt;T, Construct&gt;, T, true&gt;</td></tr>
+<tr class="separator:a9621fa8c6a8aa3d429ee458274c6c09a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1cc2217aed0dbb58070f483415e31c4" id="r_ae1cc2217aed0dbb58070f483415e31c4"><td class="memItemLeft" align="right" valign="top"><a id="ae1cc2217aed0dbb58070f483415e31c4" name="ae1cc2217aed0dbb58070f483415e31c4"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>iterator</b> = <a class="el" href="../../db/d66/structiterator__base.html">iterator_base</a>&lt;<a class="el" href="../../d1/d7d/classxii_deque_base.html">xiiDequeBase</a>&lt;T, Construct&gt;, T, false&gt;</td></tr>
+<tr class="separator:ae1cc2217aed0dbb58070f483415e31c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1447e235f8435572e45bbb173b9dcf8" id="r_af1447e235f8435572e45bbb173b9dcf8"><td class="memItemLeft" align="right" valign="top"><a id="af1447e235f8435572e45bbb173b9dcf8" name="af1447e235f8435572e45bbb173b9dcf8"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>reverse_iterator</b> = <a class="el" href="../../db/d66/structiterator__base.html">iterator_base</a>&lt;<a class="el" href="../../d1/d7d/classxii_deque_base.html">xiiDequeBase</a>&lt;T, Construct&gt;, T, true&gt;</td></tr>
+<tr class="separator:af1447e235f8435572e45bbb173b9dcf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:afa53969988821e65d753787b0c0fc89e" id="r_afa53969988821e65d753787b0c0fc89e"><td class="memItemLeft" align="right" valign="top"><a id="afa53969988821e65d753787b0c0fc89e" name="afa53969988821e65d753787b0c0fc89e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Clear</b> ()</td></tr>
+<tr class="memdesc:afa53969988821e65d753787b0c0fc89e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructs all elements and sets the count to zero. Does not deallocate any data. <br /></td></tr>
+<tr class="separator:afa53969988821e65d753787b0c0fc89e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b664f33559cfbae688e74640228e3a3" id="r_a9b664f33559cfbae688e74640228e3a3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9b664f33559cfbae688e74640228e3a3">Reserve</a> (xiiUInt32 uiCount)</td></tr>
+<tr class="memdesc:a9b664f33559cfbae688e74640228e3a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rearranges the internal data structures such that the amount of reserved elements can be appended with as few allocations, as possible.  <br /></td></tr>
+<tr class="separator:a9b664f33559cfbae688e74640228e3a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb9f50af5a92121b3c02c831e965f1f1" id="r_abb9f50af5a92121b3c02c831e965f1f1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abb9f50af5a92121b3c02c831e965f1f1">Compact</a> ()</td></tr>
+<tr class="memdesc:abb9f50af5a92121b3c02c831e965f1f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function deallocates as much memory as possible to shrink the deque to the bare minimum size that it needs to work.  <br /></td></tr>
+<tr class="separator:abb9f50af5a92121b3c02c831e965f1f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e649eac7f0c7a6eea9ff976fbd33122" id="r_a0e649eac7f0c7a6eea9ff976fbd33122"><td class="memItemLeft" align="right" valign="top"><a id="a0e649eac7f0c7a6eea9ff976fbd33122" name="a0e649eac7f0c7a6eea9ff976fbd33122"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Swap</b> (<a class="el" href="../../d1/d7d/classxii_deque_base.html">xiiDequeBase</a>&lt; T, Construct &gt; &amp;other)</td></tr>
+<tr class="memdesc:a0e649eac7f0c7a6eea9ff976fbd33122"><td class="mdescLeft">&#160;</td><td class="mdescRight">swaps the contents of this deque with another one <br /></td></tr>
+<tr class="separator:a0e649eac7f0c7a6eea9ff976fbd33122"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab74c7d6cbaef3323571c97cbd08b625" id="r_aab74c7d6cbaef3323571c97cbd08b625"><td class="memItemLeft" align="right" valign="top"><a id="aab74c7d6cbaef3323571c97cbd08b625" name="aab74c7d6cbaef3323571c97cbd08b625"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetCount</b> (xiiUInt32 uiCount)</td></tr>
+<tr class="memdesc:aab74c7d6cbaef3323571c97cbd08b625"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the number of active elements in the deque. All new elements are default constructed. If the deque is shrunk, elements at the end of the deque are destructed. <br /></td></tr>
+<tr class="separator:aab74c7d6cbaef3323571c97cbd08b625"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c714b11aa25638bf88b3173e0063808" id="r_a1c714b11aa25638bf88b3173e0063808"><td class="memTemplParams" colspan="2"><a id="a1c714b11aa25638bf88b3173e0063808" name="a1c714b11aa25638bf88b3173e0063808"></a>
+template&lt;typename  = void&gt; </td></tr>
+<tr class="memitem:a1c714b11aa25638bf88b3173e0063808"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>SetCountUninitialized</b> (xiiUInt32 uiCount)</td></tr>
+<tr class="memdesc:a1c714b11aa25638bf88b3173e0063808"><td class="mdescLeft">&#160;</td><td class="mdescRight">\Same as <a class="el" href="#aab74c7d6cbaef3323571c97cbd08b625" title="Sets the number of active elements in the deque. All new elements are default constructed....">SetCount()</a>, but new elements do not get default constructed. <br /></td></tr>
+<tr class="separator:a1c714b11aa25638bf88b3173e0063808"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae779cc2e29fe5522a439027774526114" id="r_ae779cc2e29fe5522a439027774526114"><td class="memItemLeft" align="right" valign="top"><a id="ae779cc2e29fe5522a439027774526114" name="ae779cc2e29fe5522a439027774526114"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>EnsureCount</b> (xiiUInt32 uiCount)</td></tr>
+<tr class="memdesc:ae779cc2e29fe5522a439027774526114"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ensures the container has at least <em>uiCount</em> elements. Ie. calls <a class="el" href="#aab74c7d6cbaef3323571c97cbd08b625" title="Sets the number of active elements in the deque. All new elements are default constructed....">SetCount()</a> if the container has fewer elements, does nothing otherwise. <br /></td></tr>
+<tr class="separator:ae779cc2e29fe5522a439027774526114"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada04e81722f420de3a7a0c043bf0278e" id="r_ada04e81722f420de3a7a0c043bf0278e"><td class="memItemLeft" align="right" valign="top"><a id="ada04e81722f420de3a7a0c043bf0278e" name="ada04e81722f420de3a7a0c043bf0278e"></a>
+T &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator[]</b> (xiiUInt32 uiIndex)</td></tr>
+<tr class="memdesc:ada04e81722f420de3a7a0c043bf0278e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Accesses the n-th element in the deque. <br /></td></tr>
+<tr class="separator:ada04e81722f420de3a7a0c043bf0278e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac97796a62aa99f3db56b9edf019b3ace" id="r_ac97796a62aa99f3db56b9edf019b3ace"><td class="memItemLeft" align="right" valign="top"><a id="ac97796a62aa99f3db56b9edf019b3ace" name="ac97796a62aa99f3db56b9edf019b3ace"></a>
+const T &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator[]</b> (xiiUInt32 uiIndex) const</td></tr>
+<tr class="memdesc:ac97796a62aa99f3db56b9edf019b3ace"><td class="mdescLeft">&#160;</td><td class="mdescRight">Accesses the n-th element in the deque. <br /></td></tr>
+<tr class="separator:ac97796a62aa99f3db56b9edf019b3ace"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c4f6451cce0d87574a5275236508e16" id="r_a6c4f6451cce0d87574a5275236508e16"><td class="memItemLeft" align="right" valign="top"><a id="a6c4f6451cce0d87574a5275236508e16" name="a6c4f6451cce0d87574a5275236508e16"></a>
+T &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>ExpandAndGetRef</b> ()</td></tr>
+<tr class="memdesc:a6c4f6451cce0d87574a5275236508e16"><td class="mdescLeft">&#160;</td><td class="mdescRight">Grows the deque by one element and returns a reference to the newly created element. <br /></td></tr>
+<tr class="separator:a6c4f6451cce0d87574a5275236508e16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4e9b0d6472df9371d4e6cab9e340e01" id="r_ad4e9b0d6472df9371d4e6cab9e340e01"><td class="memItemLeft" align="right" valign="top"><a id="ad4e9b0d6472df9371d4e6cab9e340e01" name="ad4e9b0d6472df9371d4e6cab9e340e01"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>PushBack</b> ()</td></tr>
+<tr class="memdesc:ad4e9b0d6472df9371d4e6cab9e340e01"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds one default constructed element to the back of the deque. <br /></td></tr>
+<tr class="separator:ad4e9b0d6472df9371d4e6cab9e340e01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d22f144049a0a51d1bcecd4c965456a" id="r_a6d22f144049a0a51d1bcecd4c965456a"><td class="memItemLeft" align="right" valign="top"><a id="a6d22f144049a0a51d1bcecd4c965456a" name="a6d22f144049a0a51d1bcecd4c965456a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>PushBack</b> (const T &amp;element)</td></tr>
+<tr class="memdesc:a6d22f144049a0a51d1bcecd4c965456a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds one element to the back of the deque. <br /></td></tr>
+<tr class="separator:a6d22f144049a0a51d1bcecd4c965456a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d5383192941dd3397760a64177f0452" id="r_a8d5383192941dd3397760a64177f0452"><td class="memItemLeft" align="right" valign="top"><a id="a8d5383192941dd3397760a64177f0452" name="a8d5383192941dd3397760a64177f0452"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>PushBack</b> (T &amp;&amp;value)</td></tr>
+<tr class="memdesc:a8d5383192941dd3397760a64177f0452"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds one element at the end of the deque. <br /></td></tr>
+<tr class="separator:a8d5383192941dd3397760a64177f0452"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae66a288b3a37f2a5e236499858d662ae" id="r_ae66a288b3a37f2a5e236499858d662ae"><td class="memItemLeft" align="right" valign="top"><a id="ae66a288b3a37f2a5e236499858d662ae" name="ae66a288b3a37f2a5e236499858d662ae"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>PopBack</b> (xiiUInt32 uiElements=1)</td></tr>
+<tr class="memdesc:ae66a288b3a37f2a5e236499858d662ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes the last element from the deque. <br /></td></tr>
+<tr class="separator:ae66a288b3a37f2a5e236499858d662ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:affcf16a7eb5ac1bb1a1ffdd8b8835da1" id="r_affcf16a7eb5ac1bb1a1ffdd8b8835da1"><td class="memItemLeft" align="right" valign="top"><a id="affcf16a7eb5ac1bb1a1ffdd8b8835da1" name="affcf16a7eb5ac1bb1a1ffdd8b8835da1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>PushFront</b> (const T &amp;element)</td></tr>
+<tr class="memdesc:affcf16a7eb5ac1bb1a1ffdd8b8835da1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds one element to the front of the deque. <br /></td></tr>
+<tr class="separator:affcf16a7eb5ac1bb1a1ffdd8b8835da1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6432b00ce6fbe22cdf3c2007db6f6ace" id="r_a6432b00ce6fbe22cdf3c2007db6f6ace"><td class="memItemLeft" align="right" valign="top"><a id="a6432b00ce6fbe22cdf3c2007db6f6ace" name="a6432b00ce6fbe22cdf3c2007db6f6ace"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>PushFront</b> (T &amp;&amp;element)</td></tr>
+<tr class="memdesc:a6432b00ce6fbe22cdf3c2007db6f6ace"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds one element to the front of the deque. <br /></td></tr>
+<tr class="separator:a6432b00ce6fbe22cdf3c2007db6f6ace"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a617bcbef391101ddfedc8ba3bfbc38be" id="r_a617bcbef391101ddfedc8ba3bfbc38be"><td class="memItemLeft" align="right" valign="top"><a id="a617bcbef391101ddfedc8ba3bfbc38be" name="a617bcbef391101ddfedc8ba3bfbc38be"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>PushFront</b> ()</td></tr>
+<tr class="memdesc:a617bcbef391101ddfedc8ba3bfbc38be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds one default constructed element to the front of the deque. <br /></td></tr>
+<tr class="separator:a617bcbef391101ddfedc8ba3bfbc38be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a892f55e291b53a4594c9b55f042a7488" id="r_a892f55e291b53a4594c9b55f042a7488"><td class="memItemLeft" align="right" valign="top"><a id="a892f55e291b53a4594c9b55f042a7488" name="a892f55e291b53a4594c9b55f042a7488"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>PopFront</b> (xiiUInt32 uiElements=1)</td></tr>
+<tr class="memdesc:a892f55e291b53a4594c9b55f042a7488"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes the first element from the deque. <br /></td></tr>
+<tr class="separator:a892f55e291b53a4594c9b55f042a7488"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb1a0ff4777547ffb34b0752f32d416d" id="r_abb1a0ff4777547ffb34b0752f32d416d"><td class="memItemLeft" align="right" valign="top"><a id="abb1a0ff4777547ffb34b0752f32d416d" name="abb1a0ff4777547ffb34b0752f32d416d"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsEmpty</b> () const</td></tr>
+<tr class="memdesc:abb1a0ff4777547ffb34b0752f32d416d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether no elements are active in the deque. <br /></td></tr>
+<tr class="separator:abb1a0ff4777547ffb34b0752f32d416d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a816c70b7c82c13e82a7276d43105a53c" id="r_a816c70b7c82c13e82a7276d43105a53c"><td class="memItemLeft" align="right" valign="top"><a id="a816c70b7c82c13e82a7276d43105a53c" name="a816c70b7c82c13e82a7276d43105a53c"></a>
+xiiUInt32&#160;</td><td class="memItemRight" valign="bottom"><b>GetCount</b> () const</td></tr>
+<tr class="memdesc:a816c70b7c82c13e82a7276d43105a53c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of active elements in the deque. <br /></td></tr>
+<tr class="separator:a816c70b7c82c13e82a7276d43105a53c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0f74902183b70e8fe471bfffcb28a97" id="r_af0f74902183b70e8fe471bfffcb28a97"><td class="memItemLeft" align="right" valign="top"><a id="af0f74902183b70e8fe471bfffcb28a97" name="af0f74902183b70e8fe471bfffcb28a97"></a>
+const T &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>PeekFront</b> () const</td></tr>
+<tr class="memdesc:af0f74902183b70e8fe471bfffcb28a97"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the first element. <br /></td></tr>
+<tr class="separator:af0f74902183b70e8fe471bfffcb28a97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c7bee5a1fc6a021bfd839bf333b435d" id="r_a7c7bee5a1fc6a021bfd839bf333b435d"><td class="memItemLeft" align="right" valign="top"><a id="a7c7bee5a1fc6a021bfd839bf333b435d" name="a7c7bee5a1fc6a021bfd839bf333b435d"></a>
+T &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>PeekFront</b> ()</td></tr>
+<tr class="memdesc:a7c7bee5a1fc6a021bfd839bf333b435d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the first element. <br /></td></tr>
+<tr class="separator:a7c7bee5a1fc6a021bfd839bf333b435d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b20a75bcb2091ef5c434c25b049515d" id="r_a8b20a75bcb2091ef5c434c25b049515d"><td class="memItemLeft" align="right" valign="top"><a id="a8b20a75bcb2091ef5c434c25b049515d" name="a8b20a75bcb2091ef5c434c25b049515d"></a>
+const T &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>PeekBack</b> () const</td></tr>
+<tr class="memdesc:a8b20a75bcb2091ef5c434c25b049515d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the last element. <br /></td></tr>
+<tr class="separator:a8b20a75bcb2091ef5c434c25b049515d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c0ce8012988ade695c8817edc042c0c" id="r_a1c0ce8012988ade695c8817edc042c0c"><td class="memItemLeft" align="right" valign="top"><a id="a1c0ce8012988ade695c8817edc042c0c" name="a1c0ce8012988ade695c8817edc042c0c"></a>
+T &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>PeekBack</b> ()</td></tr>
+<tr class="memdesc:a1c0ce8012988ade695c8817edc042c0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the last element. <br /></td></tr>
+<tr class="separator:a1c0ce8012988ade695c8817edc042c0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a228b9beca6b5a98e04f25a1ff38706" id="r_a0a228b9beca6b5a98e04f25a1ff38706"><td class="memItemLeft" align="right" valign="top"><a id="a0a228b9beca6b5a98e04f25a1ff38706" name="a0a228b9beca6b5a98e04f25a1ff38706"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>Contains</b> (const T &amp;value) const</td></tr>
+<tr class="memdesc:a0a228b9beca6b5a98e04f25a1ff38706"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether there is any element in the deque with the given value. <br /></td></tr>
+<tr class="separator:a0a228b9beca6b5a98e04f25a1ff38706"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a118d956f2118ab6025430d9d6d1299f7" id="r_a118d956f2118ab6025430d9d6d1299f7"><td class="memItemLeft" align="right" valign="top"><a id="a118d956f2118ab6025430d9d6d1299f7" name="a118d956f2118ab6025430d9d6d1299f7"></a>
+xiiUInt32&#160;</td><td class="memItemRight" valign="bottom"><b>IndexOf</b> (const T &amp;value, xiiUInt32 uiStartIndex=0) const</td></tr>
+<tr class="memdesc:a118d956f2118ab6025430d9d6d1299f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the first index at which an element with the given value could be found or xiiInvalidIndex if nothing was found. <br /></td></tr>
+<tr class="separator:a118d956f2118ab6025430d9d6d1299f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2420fecfa1148966e1f68194438a0bdd" id="r_a2420fecfa1148966e1f68194438a0bdd"><td class="memItemLeft" align="right" valign="top"><a id="a2420fecfa1148966e1f68194438a0bdd" name="a2420fecfa1148966e1f68194438a0bdd"></a>
+xiiUInt32&#160;</td><td class="memItemRight" valign="bottom"><b>LastIndexOf</b> (const T &amp;value, xiiUInt32 uiStartIndex=xiiInvalidIndex) const</td></tr>
+<tr class="memdesc:a2420fecfa1148966e1f68194438a0bdd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the last index at which an element with the given value could be found or xiiInvalidIndex if nothing was found. <br /></td></tr>
+<tr class="separator:a2420fecfa1148966e1f68194438a0bdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0bec12007290a083e91d69f1837f2ab6" id="r_a0bec12007290a083e91d69f1837f2ab6"><td class="memItemLeft" align="right" valign="top"><a id="a0bec12007290a083e91d69f1837f2ab6" name="a0bec12007290a083e91d69f1837f2ab6"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>RemoveAtAndSwap</b> (xiiUInt32 uiIndex)</td></tr>
+<tr class="memdesc:a0bec12007290a083e91d69f1837f2ab6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes the element at the given index and fills the gap with the last element in the deque. <br /></td></tr>
+<tr class="separator:a0bec12007290a083e91d69f1837f2ab6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a1050c4ac46b7d65c8c4d014248fc9b" id="r_a5a1050c4ac46b7d65c8c4d014248fc9b"><td class="memItemLeft" align="right" valign="top"><a id="a5a1050c4ac46b7d65c8c4d014248fc9b" name="a5a1050c4ac46b7d65c8c4d014248fc9b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>RemoveAtAndCopy</b> (xiiUInt32 uiIndex)</td></tr>
+<tr class="memdesc:a5a1050c4ac46b7d65c8c4d014248fc9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes the element at index and fills the gap by shifting all following elements. <br /></td></tr>
+<tr class="separator:a5a1050c4ac46b7d65c8c4d014248fc9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad98c5e75b76c5cc23f402039fcaa169b" id="r_ad98c5e75b76c5cc23f402039fcaa169b"><td class="memItemLeft" align="right" valign="top"><a id="ad98c5e75b76c5cc23f402039fcaa169b" name="ad98c5e75b76c5cc23f402039fcaa169b"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>RemoveAndCopy</b> (const T &amp;value)</td></tr>
+<tr class="memdesc:ad98c5e75b76c5cc23f402039fcaa169b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes the first occurrence of value and fills the gap by shifting all following elements. <br /></td></tr>
+<tr class="separator:ad98c5e75b76c5cc23f402039fcaa169b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95d444fe3af042f55d4b77e6ffac715d" id="r_a95d444fe3af042f55d4b77e6ffac715d"><td class="memItemLeft" align="right" valign="top"><a id="a95d444fe3af042f55d4b77e6ffac715d" name="a95d444fe3af042f55d4b77e6ffac715d"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>RemoveAndSwap</b> (const T &amp;value)</td></tr>
+<tr class="memdesc:a95d444fe3af042f55d4b77e6ffac715d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes the first occurrence of value and fills the gap with the last element in the deque. <br /></td></tr>
+<tr class="separator:a95d444fe3af042f55d4b77e6ffac715d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5700885bbbba08b8d6bb0b6fc9346a5e" id="r_a5700885bbbba08b8d6bb0b6fc9346a5e"><td class="memItemLeft" align="right" valign="top"><a id="a5700885bbbba08b8d6bb0b6fc9346a5e" name="a5700885bbbba08b8d6bb0b6fc9346a5e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>InsertAt</b> (xiiUInt32 uiIndex, const T &amp;value)</td></tr>
+<tr class="memdesc:a5700885bbbba08b8d6bb0b6fc9346a5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inserts value at index by shifting all following elements. Valid insert positions are [0; GetCount]. <br /></td></tr>
+<tr class="separator:a5700885bbbba08b8d6bb0b6fc9346a5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab279b2088f63823c7afe7b8ff7c2a1bb" id="r_ab279b2088f63823c7afe7b8ff7c2a1bb"><td class="memTemplParams" colspan="2"><a id="ab279b2088f63823c7afe7b8ff7c2a1bb" name="ab279b2088f63823c7afe7b8ff7c2a1bb"></a>
+template&lt;typename Comparer &gt; </td></tr>
+<tr class="memitem:ab279b2088f63823c7afe7b8ff7c2a1bb"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>Sort</b> (const Comparer &amp;comparer)</td></tr>
+<tr class="memdesc:ab279b2088f63823c7afe7b8ff7c2a1bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sort with explicit comparer. <br /></td></tr>
+<tr class="separator:ab279b2088f63823c7afe7b8ff7c2a1bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8b02bcdccb800fc17228ce9cfb2fb52" id="r_ae8b02bcdccb800fc17228ce9cfb2fb52"><td class="memItemLeft" align="right" valign="top"><a id="ae8b02bcdccb800fc17228ce9cfb2fb52" name="ae8b02bcdccb800fc17228ce9cfb2fb52"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Sort</b> ()</td></tr>
+<tr class="memdesc:ae8b02bcdccb800fc17228ce9cfb2fb52"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sort with default comparer. <br /></td></tr>
+<tr class="separator:ae8b02bcdccb800fc17228ce9cfb2fb52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1eee825f78dfc0a2ae87e3d520ded732" id="r_a1eee825f78dfc0a2ae87e3d520ded732"><td class="memItemLeft" align="right" valign="top"><a id="a1eee825f78dfc0a2ae87e3d520ded732" name="a1eee825f78dfc0a2ae87e3d520ded732"></a>
+<a class="el" href="../../d5/d66/classxii_allocator_base.html">xiiAllocatorBase</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetAllocator</b> () const</td></tr>
+<tr class="memdesc:a1eee825f78dfc0a2ae87e3d520ded732"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the allocator that is used by this instance. <br /></td></tr>
+<tr class="separator:a1eee825f78dfc0a2ae87e3d520ded732"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9bf6081af25b7f13a911032c6ec0c96" id="r_aa9bf6081af25b7f13a911032c6ec0c96"><td class="memItemLeft" align="right" valign="top">xiiUInt32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa9bf6081af25b7f13a911032c6ec0c96">GetContiguousRange</a> (xiiUInt32 uiStartIndex) const</td></tr>
+<tr class="memdesc:aa9bf6081af25b7f13a911032c6ec0c96"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of elements after uiStartIndex that are stored in contiguous memory.  <br /></td></tr>
+<tr class="separator:aa9bf6081af25b7f13a911032c6ec0c96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a293a0a14e5b3eca228d71c75562d40bb" id="r_a293a0a14e5b3eca228d71c75562d40bb"><td class="memItemLeft" align="right" valign="top"><a id="a293a0a14e5b3eca228d71c75562d40bb" name="a293a0a14e5b3eca228d71c75562d40bb"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator==</b> (const <a class="el" href="../../d1/d7d/classxii_deque_base.html">xiiDequeBase</a>&lt; T, Construct &gt; &amp;rhs) const</td></tr>
+<tr class="memdesc:a293a0a14e5b3eca228d71c75562d40bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Comparison operator. <br /></td></tr>
+<tr class="separator:a293a0a14e5b3eca228d71c75562d40bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe5332bb093bdfed4202c5fdd3739a12" id="r_abe5332bb093bdfed4202c5fdd3739a12"><td class="memItemLeft" align="right" valign="top"><a id="abe5332bb093bdfed4202c5fdd3739a12" name="abe5332bb093bdfed4202c5fdd3739a12"></a>
+xiiUInt64&#160;</td><td class="memItemRight" valign="bottom"><b>GetHeapMemoryUsage</b> () const</td></tr>
+<tr class="memdesc:abe5332bb093bdfed4202c5fdd3739a12"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the amount of bytes that are currently allocated on the heap. <br /></td></tr>
+<tr class="separator:abe5332bb093bdfed4202c5fdd3739a12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a127aa133501c0b9f965ed0df17818b3d" id="r_a127aa133501c0b9f965ed0df17818b3d"><td class="memItemLeft" align="right" valign="top"><a id="a127aa133501c0b9f965ed0df17818b3d" name="a127aa133501c0b9f965ed0df17818b3d"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>xiiDequeBase</b> (<a class="el" href="../../d5/d66/classxii_allocator_base.html">xiiAllocatorBase</a> *pAllocator)</td></tr>
+<tr class="memdesc:a127aa133501c0b9f965ed0df17818b3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">No memory is allocated during construction. <br /></td></tr>
+<tr class="separator:a127aa133501c0b9f965ed0df17818b3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82ccbdcc0b50f54ce8c7796b55b4e6cc" id="r_a82ccbdcc0b50f54ce8c7796b55b4e6cc"><td class="memItemLeft" align="right" valign="top"><a id="a82ccbdcc0b50f54ce8c7796b55b4e6cc" name="a82ccbdcc0b50f54ce8c7796b55b4e6cc"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>xiiDequeBase</b> (const <a class="el" href="../../d1/d7d/classxii_deque_base.html">xiiDequeBase</a>&lt; T, Construct &gt; &amp;rhs, <a class="el" href="../../d5/d66/classxii_allocator_base.html">xiiAllocatorBase</a> *pAllocator)</td></tr>
+<tr class="memdesc:a82ccbdcc0b50f54ce8c7796b55b4e6cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs this deque by copying from rhs. <br /></td></tr>
+<tr class="separator:a82ccbdcc0b50f54ce8c7796b55b4e6cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63704f928f938b75474bd7ebd3cfa90a" id="r_a63704f928f938b75474bd7ebd3cfa90a"><td class="memItemLeft" align="right" valign="top"><a id="a63704f928f938b75474bd7ebd3cfa90a" name="a63704f928f938b75474bd7ebd3cfa90a"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>xiiDequeBase</b> (<a class="el" href="../../d1/d7d/classxii_deque_base.html">xiiDequeBase</a>&lt; T, Construct &gt; &amp;&amp;rhs, <a class="el" href="../../d5/d66/classxii_allocator_base.html">xiiAllocatorBase</a> *pAllocator)</td></tr>
+<tr class="memdesc:a63704f928f938b75474bd7ebd3cfa90a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs this deque by moving from rhs. <br /></td></tr>
+<tr class="separator:a63704f928f938b75474bd7ebd3cfa90a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d937b7518a530c97fcad95921939872" id="r_a1d937b7518a530c97fcad95921939872"><td class="memItemLeft" align="right" valign="top"><a id="a1d937b7518a530c97fcad95921939872" name="a1d937b7518a530c97fcad95921939872"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>~xiiDequeBase</b> ()</td></tr>
+<tr class="memdesc:a1d937b7518a530c97fcad95921939872"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor. <br /></td></tr>
+<tr class="separator:a1d937b7518a530c97fcad95921939872"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade2c9195ef003e1289f9a73883edbc01" id="r_ade2c9195ef003e1289f9a73883edbc01"><td class="memItemLeft" align="right" valign="top"><a id="ade2c9195ef003e1289f9a73883edbc01" name="ade2c9195ef003e1289f9a73883edbc01"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="../../d1/d7d/classxii_deque_base.html">xiiDequeBase</a>&lt; T, Construct &gt; &amp;rhs)</td></tr>
+<tr class="memdesc:ade2c9195ef003e1289f9a73883edbc01"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assignment operator. <br /></td></tr>
+<tr class="separator:ade2c9195ef003e1289f9a73883edbc01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8a3dcbb3ed255bcc3283d8a1d5e3e34" id="r_ae8a3dcbb3ed255bcc3283d8a1d5e3e34"><td class="memItemLeft" align="right" valign="top"><a id="ae8a3dcbb3ed255bcc3283d8a1d5e3e34" name="ae8a3dcbb3ed255bcc3283d8a1d5e3e34"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (<a class="el" href="../../d1/d7d/classxii_deque_base.html">xiiDequeBase</a>&lt; T, Construct &gt; &amp;&amp;rhs)</td></tr>
+<tr class="memdesc:ae8a3dcbb3ed255bcc3283d8a1d5e3e34"><td class="mdescLeft">&#160;</td><td class="mdescRight">Move operator. <br /></td></tr>
+<tr class="separator:ae8a3dcbb3ed255bcc3283d8a1d5e3e34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><div class="compoundTemplParams">template&lt;typename T, bool Construct&gt;<br />
+class xiiDequeBase&lt; T, Construct &gt;</div><p><a class="el" href="../../d8/d4f/class_a.html">A</a> double ended queue container. </p>
+<p>The deque allocates elements in fixed size chunks (usually around 4KB per chunk), but with at least 32 elements per chunk. It will allocate additional chunks when necessary, but never reallocate already existing data. Therefore it is well suited when it is not known up front how many elements are needed, as it can start with a small amount of data and grow on demand. Also an element in a deque is never moved around in memory, thus it is safe to store pointers to elements inside the deque. The deque uses one redirection to look up elements, for which it uses one index array. Thus a look up into a deque is slightly slower than a pure array lookup, but still very fast, compared to all other containers. Deques can easily grow and shrink at both ends and are thus well suited for use as a FIFO or LIFO queue or even a ring-buffer. It is optimized to even handle the ring-buffer use case without any memory allocations, as long as the buffer does not need to grow. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="abb9f50af5a92121b3c02c831e965f1f1" name="abb9f50af5a92121b3c02c831e965f1f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb9f50af5a92121b3c02c831e965f1f1">&#9670;&#160;</a></span>Compact()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , bool Construct&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="../../d1/d7d/classxii_deque_base.html">xiiDequeBase</a>&lt; T, Construct &gt;::Compact </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This function deallocates as much memory as possible to shrink the deque to the bare minimum size that it needs to work. </p>
+<p>This function is never called internally. It is only for the user to trigger a size reduction when he feels like it. The index array data is not reduced as much as possible, a bit spare memory is kept to allow for scaling the deque up again, without immediate reallocation of all data structures. If the deque is completely empty, ALL data is completely deallocated. </p>
+
+</div>
+</div>
+<a id="aa9bf6081af25b7f13a911032c6ec0c96" name="aa9bf6081af25b7f13a911032c6ec0c96"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa9bf6081af25b7f13a911032c6ec0c96">&#9670;&#160;</a></span>GetContiguousRange()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , bool Construct&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">xiiUInt32 <a class="el" href="../../d1/d7d/classxii_deque_base.html">xiiDequeBase</a>&lt; T, Construct &gt;::GetContiguousRange </td>
+          <td>(</td>
+          <td class="paramtype">xiiUInt32</td>          <td class="paramname"><span class="paramname"><em>uiStartIndex</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the number of elements after uiStartIndex that are stored in contiguous memory. </p>
+<p>That means one can do a memcpy or memcmp from position uiStartIndex up until uiStartIndex + range. </p>
+
+</div>
+</div>
+<a id="a9b664f33559cfbae688e74640228e3a3" name="a9b664f33559cfbae688e74640228e3a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b664f33559cfbae688e74640228e3a3">&#9670;&#160;</a></span>Reserve()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , bool Construct&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="../../d1/d7d/classxii_deque_base.html">xiiDequeBase</a>&lt; T, Construct &gt;::Reserve </td>
+          <td>(</td>
+          <td class="paramtype">xiiUInt32</td>          <td class="paramname"><span class="paramname"><em>uiCount</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Rearranges the internal data structures such that the amount of reserved elements can be appended with as few allocations, as possible. </p>
+<p>This does not reserve the actual amount of chunks, that would be needed, but only grows the index array (for redirections) as much as needed. Thus you can use it to reserve enough bookkeeping storage, without actually allocating all that data. In contrast to the <a class="el" href="../../dc/da4/classxii_dynamic_array.html">xiiDynamicArray</a> and <a class="el" href="../../dc/da9/classxii_hybrid_array.html" title="A hybrid array uses in-place storage to handle the first few elements without any allocation....">xiiHybridArray</a> containers, <a class="el" href="../../d8/df8/classxii_deque.html">xiiDeque</a> does not require you to reserve space up front, to be fast. However, if useful information is available, 'Reserve' can be used to prevent a few unnecessary reallocations of its internal data structures. </p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li>/home/runner/work/XII/XII/Source/Engine/Foundation/Containers/<a class="el" href="../../d5/d6c/_deque_8h_source.html">Deque.h</a></li>
+<li>/home/runner/work/XII/XII/Source/Engine/Foundation/Containers/Implementation/<a class="el" href="../../d2/d2d/_deque__inl_8h_source.html">Deque_inl.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../d1/d7d/classxii_deque_base.html">xiiDequeBase</a></li>
+    <li class="footer">Generated on Mon Jul 1 2024 23:53:14 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+  </ul>
+</div>
+</body>
+</html>

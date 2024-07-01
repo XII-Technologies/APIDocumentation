@@ -1,0 +1,481 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.11.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<!-- BEGIN opengraph metadata -->
+<meta property="og:title" content="XII" />
+<meta property="og:image" content="../../XII-Logo.png" />
+<meta property="og:description" content="An advanced high-performance simulation engine." />
+<meta property="og:url" content="https://www.xiitechnologies.com" />
+<!-- END opengraph metadata -->
+<!-- BEGIN twitter metadata -->
+<meta name="twitter:image:src" content="../../XII-Logo.png" />
+<meta name="twitter:title" content="XII" />
+<meta name="twitter:description" content="An advanced high-performance simulation engine." />
+<!-- END twitter metadata -->
+<title>XII: xiiTexConv Class Reference</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link rel="icon" type="image/svg+xml" href="logo.drawio.svg"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="../../toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../custom.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<a href="https://github.com/jothepro/doxygen-awesome-css" class="github-corner" title="View source on GitHub" target="_blank" rel="noopener noreferrer">
+    <svg viewBox="0 0 250 250" width="40" height="40" style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+    <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="../../XII-Logo.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">XII
+   &#160;<span id="projectnumber">1.0.0</span>
+   </div>
+   <div id="projectbrief">A high-performance simulation engine.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(1); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.html','Search',true);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('d5/ddb/classxii_tex_conv.html','../../'); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#pub-types">Public Types</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="../../d6/ddd/classxii_tex_conv-members.html">List of all members</a>  </div>
+  <div class="headertitle"><div class="title">xiiTexConv Class Reference</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+Inheritance diagram for xiiTexConv:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../da/da9/classxii_tex_conv__inherit__graph.svg" width="122" height="110"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">legend</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d15/structxii_tex_conv_1_1_key_enum_value_pair.html">KeyEnumValuePair</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:ab7121d912ac0835816c3c494bd5b7581" id="r_ab7121d912ac0835816c3c494bd5b7581"><td class="memItemLeft" align="right" valign="top"><a id="ab7121d912ac0835816c3c494bd5b7581" name="ab7121d912ac0835816c3c494bd5b7581"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>SUPER</b> = <a class="el" href="../../dd/d2b/classxii_application.html">xiiApplication</a></td></tr>
+<tr class="separator:ab7121d912ac0835816c3c494bd5b7581"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_types_classxii_application"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_types_classxii_application')"><img src="../../closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="../../dd/d2b/classxii_application.html">xiiApplication</a></td></tr>
+<tr class="memitem:a15434b0054b5c87809df19e488693370 inherit pub_types_classxii_application" id="r_a15434b0054b5c87809df19e488693370"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d2b/classxii_application.html#a15434b0054b5c87809df19e488693370">Execution</a> { <a class="el" href="../../dd/d2b/classxii_application.html#a15434b0054b5c87809df19e488693370aa0bfb8e59e6c13fc8d990781f77694fe">Continue</a>
+, <a class="el" href="../../dd/d2b/classxii_application.html#a15434b0054b5c87809df19e488693370a0d82790b0612935992bd564a17ce37d6">Quit</a>
+ }</td></tr>
+<tr class="memdesc:a15434b0054b5c87809df19e488693370"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines the possible return values for the <a class="el" href="../../dd/d2b/classxii_application.html#add6d74803256b335b6765297248775f6" title="Main run function which is called periodically. This function must be overridden.">xiiApplication::Run()</a> function.  <a href="../../dd/d2b/classxii_application.html#a15434b0054b5c87809df19e488693370">More...</a><br /></td></tr>
+<tr class="separator:a15434b0054b5c87809df19e488693370 inherit pub_types_classxii_application"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:aa1fdff9c0b7910c50d32664df164ba6b" id="r_aa1fdff9c0b7910c50d32664df164ba6b"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../dd/d2b/classxii_application.html#a15434b0054b5c87809df19e488693370">Execution</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa1fdff9c0b7910c50d32664df164ba6b">Run</a> () override</td></tr>
+<tr class="memdesc:aa1fdff9c0b7910c50d32664df164ba6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Main run function which is called periodically. This function must be overridden.  <br /></td></tr>
+<tr class="separator:aa1fdff9c0b7910c50d32664df164ba6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a881aa4e96b0c3157a608f486ef265ce8" id="r_a881aa4e96b0c3157a608f486ef265ce8"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a881aa4e96b0c3157a608f486ef265ce8">BeforeCoreSystemsStartup</a> () override</td></tr>
+<tr class="memdesc:a881aa4e96b0c3157a608f486ef265ce8"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function is called before any kind of engine initialization is done.  <br /></td></tr>
+<tr class="separator:a881aa4e96b0c3157a608f486ef265ce8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a2eff265739d7a41e43c75d7ce41c7d" id="r_a7a2eff265739d7a41e43c75d7ce41c7d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7a2eff265739d7a41e43c75d7ce41c7d">AfterCoreSystemsStartup</a> () override</td></tr>
+<tr class="memdesc:a7a2eff265739d7a41e43c75d7ce41c7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function is called after basic engine initialization has been done.  <br /></td></tr>
+<tr class="separator:a7a2eff265739d7a41e43c75d7ce41c7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f69e9f9ff303d4c94a73afdf7661d0f" id="r_a6f69e9f9ff303d4c94a73afdf7661d0f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6f69e9f9ff303d4c94a73afdf7661d0f">BeforeCoreSystemsShutdown</a> () override</td></tr>
+<tr class="memdesc:a6f69e9f9ff303d4c94a73afdf7661d0f"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function is called after the application main loop has run for the last time, before engine deinitialization.  <br /></td></tr>
+<tr class="separator:a6f69e9f9ff303d4c94a73afdf7661d0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b0cfb6e724577857aa3f131a0c4e43f" id="r_a9b0cfb6e724577857aa3f131a0c4e43f"><td class="memItemLeft" align="right" valign="top"><a id="a9b0cfb6e724577857aa3f131a0c4e43f" name="a9b0cfb6e724577857aa3f131a0c4e43f"></a>
+<a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><b>ParseCommandLine</b> ()</td></tr>
+<tr class="separator:a9b0cfb6e724577857aa3f131a0c4e43f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab812baaf419d5b32fbeede08074d2a89" id="r_ab812baaf419d5b32fbeede08074d2a89"><td class="memItemLeft" align="right" valign="top"><a id="ab812baaf419d5b32fbeede08074d2a89" name="ab812baaf419d5b32fbeede08074d2a89"></a>
+<a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><b>ParseOutputType</b> ()</td></tr>
+<tr class="separator:ab812baaf419d5b32fbeede08074d2a89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d4e458f32ae4b87c5f021d85d2f5e17" id="r_a7d4e458f32ae4b87c5f021d85d2f5e17"><td class="memItemLeft" align="right" valign="top"><a id="a7d4e458f32ae4b87c5f021d85d2f5e17" name="a7d4e458f32ae4b87c5f021d85d2f5e17"></a>
+<a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><b>DetectOutputFormat</b> ()</td></tr>
+<tr class="separator:a7d4e458f32ae4b87c5f021d85d2f5e17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c964cb4090c2107a759505957e4abe5" id="r_a6c964cb4090c2107a759505957e4abe5"><td class="memItemLeft" align="right" valign="top"><a id="a6c964cb4090c2107a759505957e4abe5" name="a6c964cb4090c2107a759505957e4abe5"></a>
+<a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><b>ParseInputFiles</b> ()</td></tr>
+<tr class="separator:a6c964cb4090c2107a759505957e4abe5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99fef4a101b971f15f079e939eb1253b" id="r_a99fef4a101b971f15f079e939eb1253b"><td class="memItemLeft" align="right" valign="top"><a id="a99fef4a101b971f15f079e939eb1253b" name="a99fef4a101b971f15f079e939eb1253b"></a>
+<a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><b>ParseOutputFiles</b> ()</td></tr>
+<tr class="separator:a99fef4a101b971f15f079e939eb1253b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7469508eb6f55a4dfe9cf55fcf2921ae" id="r_a7469508eb6f55a4dfe9cf55fcf2921ae"><td class="memItemLeft" align="right" valign="top"><a id="a7469508eb6f55a4dfe9cf55fcf2921ae" name="a7469508eb6f55a4dfe9cf55fcf2921ae"></a>
+<a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><b>ParseChannelMappings</b> ()</td></tr>
+<tr class="separator:a7469508eb6f55a4dfe9cf55fcf2921ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba474b3018ed9c23a9962ec3435c5406" id="r_aba474b3018ed9c23a9962ec3435c5406"><td class="memItemLeft" align="right" valign="top"><a id="aba474b3018ed9c23a9962ec3435c5406" name="aba474b3018ed9c23a9962ec3435c5406"></a>
+<a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><b>ParseChannelSliceMapping</b> (xiiInt32 iSlice)</td></tr>
+<tr class="separator:aba474b3018ed9c23a9962ec3435c5406"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3bacd78a5bb10ff72aa5567b596001e6" id="r_a3bacd78a5bb10ff72aa5567b596001e6"><td class="memItemLeft" align="right" valign="top"><a id="a3bacd78a5bb10ff72aa5567b596001e6" name="a3bacd78a5bb10ff72aa5567b596001e6"></a>
+<a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><b>ParseChannelMappingConfig</b> (<a class="el" href="../../d0/db9/structxii_tex_conv_channel_mapping.html">xiiTexConvChannelMapping</a> &amp;out_mapping, const char *szCfg, xiiInt32 iChannelIndex, bool bSingleChannel)</td></tr>
+<tr class="separator:a3bacd78a5bb10ff72aa5567b596001e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adbffc0b9e650c8960e18ab7694cce797" id="r_adbffc0b9e650c8960e18ab7694cce797"><td class="memItemLeft" align="right" valign="top"><a id="adbffc0b9e650c8960e18ab7694cce797" name="adbffc0b9e650c8960e18ab7694cce797"></a>
+<a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><b>ParseUsage</b> ()</td></tr>
+<tr class="separator:adbffc0b9e650c8960e18ab7694cce797"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf8f3d812dfbfca252f4a72b859e31d8" id="r_abf8f3d812dfbfca252f4a72b859e31d8"><td class="memItemLeft" align="right" valign="top"><a id="abf8f3d812dfbfca252f4a72b859e31d8" name="abf8f3d812dfbfca252f4a72b859e31d8"></a>
+<a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><b>ParseMipmapMode</b> ()</td></tr>
+<tr class="separator:abf8f3d812dfbfca252f4a72b859e31d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a992f394830ccda697931b79d420f129a" id="r_a992f394830ccda697931b79d420f129a"><td class="memItemLeft" align="right" valign="top"><a id="a992f394830ccda697931b79d420f129a" name="a992f394830ccda697931b79d420f129a"></a>
+<a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><b>ParseTargetPlatform</b> ()</td></tr>
+<tr class="separator:a992f394830ccda697931b79d420f129a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76865d29105e6f47eddc32a37769cbcb" id="r_a76865d29105e6f47eddc32a37769cbcb"><td class="memItemLeft" align="right" valign="top"><a id="a76865d29105e6f47eddc32a37769cbcb" name="a76865d29105e6f47eddc32a37769cbcb"></a>
+<a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><b>ParseCompressionMode</b> ()</td></tr>
+<tr class="separator:a76865d29105e6f47eddc32a37769cbcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1abccc75d3d6c0bc65f15eadbec59602" id="r_a1abccc75d3d6c0bc65f15eadbec59602"><td class="memItemLeft" align="right" valign="top"><a id="a1abccc75d3d6c0bc65f15eadbec59602" name="a1abccc75d3d6c0bc65f15eadbec59602"></a>
+<a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><b>ParseWrapModes</b> ()</td></tr>
+<tr class="separator:a1abccc75d3d6c0bc65f15eadbec59602"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade50f39b1071e376f0f6113c39ef62dc" id="r_ade50f39b1071e376f0f6113c39ef62dc"><td class="memItemLeft" align="right" valign="top"><a id="ade50f39b1071e376f0f6113c39ef62dc" name="ade50f39b1071e376f0f6113c39ef62dc"></a>
+<a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><b>ParseFilterModes</b> ()</td></tr>
+<tr class="separator:ade50f39b1071e376f0f6113c39ef62dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3ae31f3b69c6f18924d680a1614e700" id="r_ad3ae31f3b69c6f18924d680a1614e700"><td class="memItemLeft" align="right" valign="top"><a id="ad3ae31f3b69c6f18924d680a1614e700" name="ad3ae31f3b69c6f18924d680a1614e700"></a>
+<a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><b>ParseResolutionModifiers</b> ()</td></tr>
+<tr class="separator:ad3ae31f3b69c6f18924d680a1614e700"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a884a956983af962be0b409e2c956291b" id="r_a884a956983af962be0b409e2c956291b"><td class="memItemLeft" align="right" valign="top"><a id="a884a956983af962be0b409e2c956291b" name="a884a956983af962be0b409e2c956291b"></a>
+<a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><b>ParseMiscOptions</b> ()</td></tr>
+<tr class="separator:a884a956983af962be0b409e2c956291b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab143bdd5e2c02d3301b46015d5577ad9" id="r_ab143bdd5e2c02d3301b46015d5577ad9"><td class="memItemLeft" align="right" valign="top"><a id="ab143bdd5e2c02d3301b46015d5577ad9" name="ab143bdd5e2c02d3301b46015d5577ad9"></a>
+<a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><b>ParseAssetHeader</b> ()</td></tr>
+<tr class="separator:ab143bdd5e2c02d3301b46015d5577ad9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa881d9fdee524defc928cd3c4215d07e" id="r_aa881d9fdee524defc928cd3c4215d07e"><td class="memItemLeft" align="right" valign="top"><a id="aa881d9fdee524defc928cd3c4215d07e" name="aa881d9fdee524defc928cd3c4215d07e"></a>
+<a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><b>ParseBumpMapFilter</b> ()</td></tr>
+<tr class="separator:aa881d9fdee524defc928cd3c4215d07e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af470a33db916b04f08e2fba4b370c856" id="r_af470a33db916b04f08e2fba4b370c856"><td class="memItemLeft" align="right" valign="top"><a id="af470a33db916b04f08e2fba4b370c856" name="af470a33db916b04f08e2fba4b370c856"></a>
+<a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><b>ParseUIntOption</b> (const char *szOption, xiiInt32 iMinValue, xiiInt32 iMaxValue, xiiUInt32 &amp;ref_uiResult) const</td></tr>
+<tr class="separator:af470a33db916b04f08e2fba4b370c856"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a823deb9d82f3e914bee0091e979ece07" id="r_a823deb9d82f3e914bee0091e979ece07"><td class="memItemLeft" align="right" valign="top"><a id="a823deb9d82f3e914bee0091e979ece07" name="a823deb9d82f3e914bee0091e979ece07"></a>
+<a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><b>ParseStringOption</b> (const char *szOption, const <a class="el" href="../../dc/da4/classxii_dynamic_array.html">xiiDynamicArray</a>&lt; <a class="el" href="../../d8/d15/structxii_tex_conv_1_1_key_enum_value_pair.html">KeyEnumValuePair</a> &gt; &amp;allowed, xiiInt32 &amp;ref_iResult) const</td></tr>
+<tr class="separator:a823deb9d82f3e914bee0091e979ece07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc9b42ff2e454e19defc3f37dc26bc76" id="r_acc9b42ff2e454e19defc3f37dc26bc76"><td class="memItemLeft" align="right" valign="top"><a id="acc9b42ff2e454e19defc3f37dc26bc76" name="acc9b42ff2e454e19defc3f37dc26bc76"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>PrintOptionValues</b> (const char *szOption, const <a class="el" href="../../dc/da4/classxii_dynamic_array.html">xiiDynamicArray</a>&lt; <a class="el" href="../../d8/d15/structxii_tex_conv_1_1_key_enum_value_pair.html">KeyEnumValuePair</a> &gt; &amp;allowed) const</td></tr>
+<tr class="separator:acc9b42ff2e454e19defc3f37dc26bc76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac7ef239e8f432852c79b517c3564b4c" id="r_aac7ef239e8f432852c79b517c3564b4c"><td class="memItemLeft" align="right" valign="top"><a id="aac7ef239e8f432852c79b517c3564b4c" name="aac7ef239e8f432852c79b517c3564b4c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>PrintOptionValuesHelp</b> (const char *szOption, const <a class="el" href="../../dc/da4/classxii_dynamic_array.html">xiiDynamicArray</a>&lt; <a class="el" href="../../d8/d15/structxii_tex_conv_1_1_key_enum_value_pair.html">KeyEnumValuePair</a> &gt; &amp;allowed) const</td></tr>
+<tr class="separator:aac7ef239e8f432852c79b517c3564b4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6335f41c63fe8f031b58f3e3fdb5b5ea" id="r_a6335f41c63fe8f031b58f3e3fdb5b5ea"><td class="memItemLeft" align="right" valign="top"><a id="a6335f41c63fe8f031b58f3e3fdb5b5ea" name="a6335f41c63fe8f031b58f3e3fdb5b5ea"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>ParseFile</b> (const char *szOption, <a class="el" href="../../df/dfb/structxii_hybrid_string.html">xiiString</a> &amp;ref_sResult) const</td></tr>
+<tr class="separator:a6335f41c63fe8f031b58f3e3fdb5b5ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80dd16082607f9f3fb4203b517993379" id="r_a80dd16082607f9f3fb4203b517993379"><td class="memItemLeft" align="right" valign="top"><a id="a80dd16082607f9f3fb4203b517993379" name="a80dd16082607f9f3fb4203b517993379"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsTexFormat</b> () const</td></tr>
+<tr class="separator:a80dd16082607f9f3fb4203b517993379"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aedaed5e1fc46bed4ae46a5e8420d1ac1" id="r_aedaed5e1fc46bed4ae46a5e8420d1ac1"><td class="memItemLeft" align="right" valign="top"><a id="aedaed5e1fc46bed4ae46a5e8420d1ac1" name="aedaed5e1fc46bed4ae46a5e8420d1ac1"></a>
+<a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><b>WriteTexFile</b> (<a class="el" href="../../d0/d18/classxii_stream_writer.html">xiiStreamWriter</a> &amp;ref_stream, const <a class="el" href="../../d4/d6a/classxii_image.html">xiiImage</a> &amp;image)</td></tr>
+<tr class="separator:aedaed5e1fc46bed4ae46a5e8420d1ac1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49f7aad132822bf6c522997b738888e7" id="r_a49f7aad132822bf6c522997b738888e7"><td class="memItemLeft" align="right" valign="top"><a id="a49f7aad132822bf6c522997b738888e7" name="a49f7aad132822bf6c522997b738888e7"></a>
+<a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><b>WriteOutputFile</b> (const char *szFile, const <a class="el" href="../../d4/d6a/classxii_image.html">xiiImage</a> &amp;image)</td></tr>
+<tr class="separator:a49f7aad132822bf6c522997b738888e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classxii_application"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_classxii_application')"><img src="../../closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="../../dd/d2b/classxii_application.html">xiiApplication</a></td></tr>
+<tr class="memitem:a92765f1c00de63915482f750e0882437 inherit pub_methods_classxii_application" id="r_a92765f1c00de63915482f750e0882437"><td class="memItemLeft" align="right" valign="top">
+&#160;</td><td class="memItemRight" valign="bottom"><b>xiiApplication</b> (<a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sAppName)</td></tr>
+<tr class="memdesc:a92765f1c00de63915482f750e0882437 inherit pub_methods_classxii_application"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor. <br /></td></tr>
+<tr class="separator:a92765f1c00de63915482f750e0882437 inherit pub_methods_classxii_application"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7b2aafeefdcdcc43549a96b516fe7c1 inherit pub_methods_classxii_application" id="r_aa7b2aafeefdcdcc43549a96b516fe7c1"><td class="memItemLeft" align="right" valign="top">
+virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~xiiApplication</b> ()</td></tr>
+<tr class="memdesc:aa7b2aafeefdcdcc43549a96b516fe7c1 inherit pub_methods_classxii_application"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual destructor. <br /></td></tr>
+<tr class="separator:aa7b2aafeefdcdcc43549a96b516fe7c1 inherit pub_methods_classxii_application"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3d94c01e34396ba47f294f0449b850b inherit pub_methods_classxii_application" id="r_af3d94c01e34396ba47f294f0449b850b"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetApplicationName</b> (<a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sAppName)</td></tr>
+<tr class="memdesc:af3d94c01e34396ba47f294f0449b850b inherit pub_methods_classxii_application"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes the application name. <br /></td></tr>
+<tr class="separator:af3d94c01e34396ba47f294f0449b850b inherit pub_methods_classxii_application"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7f7f489b22b978f5157390f74179cfc inherit pub_methods_classxii_application" id="r_ab7f7f489b22b978f5157390f74179cfc"><td class="memItemLeft" align="right" valign="top">
+const <a class="el" href="../../df/dfb/structxii_hybrid_string.html">xiiString</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetApplicationName</b> () const</td></tr>
+<tr class="memdesc:ab7f7f489b22b978f5157390f74179cfc inherit pub_methods_classxii_application"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the application name. <br /></td></tr>
+<tr class="separator:ab7f7f489b22b978f5157390f74179cfc inherit pub_methods_classxii_application"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a0a0e5813ce9281ec711a60241f7c0f inherit pub_methods_classxii_application" id="r_a4a0a0e5813ce9281ec711a60241f7c0f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d2b/classxii_application.html#a4a0a0e5813ce9281ec711a60241f7c0f">BeforeHighLevelSystemsShutdown</a> ()</td></tr>
+<tr class="memdesc:a4a0a0e5813ce9281ec711a60241f7c0f inherit pub_methods_classxii_application"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function is called after the application main loop has run for the last time, before engine deinitialization.  <br /></td></tr>
+<tr class="separator:a4a0a0e5813ce9281ec711a60241f7c0f inherit pub_methods_classxii_application"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf087123effab08169b5c0f76fa8c3f6 inherit pub_methods_classxii_application" id="r_aaf087123effab08169b5c0f76fa8c3f6"><td class="memItemLeft" align="right" valign="top">
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>AfterHighLevelSystemsShutdown</b> ()</td></tr>
+<tr class="memdesc:aaf087123effab08169b5c0f76fa8c3f6 inherit pub_methods_classxii_application"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called after <a class="el" href="../../dd/d8e/classxii_startup.html#a785be7a33e589ff3da1d1d7e7e2b7c12" title="Runs the &#39;high level&#39; shutdown sequence of all subsystems in the proper order (reversed startup order...">xiiStartup::ShutdownHighLevelSystems()</a> has been executed. <br /></td></tr>
+<tr class="separator:aaf087123effab08169b5c0f76fa8c3f6 inherit pub_methods_classxii_application"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4192dfd474d1e3a6361bd851e0c8ed08 inherit pub_methods_classxii_application" id="r_a4192dfd474d1e3a6361bd851e0c8ed08"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d2b/classxii_application.html#a4192dfd474d1e3a6361bd851e0c8ed08">AfterCoreSystemsShutdown</a> ()</td></tr>
+<tr class="memdesc:a4192dfd474d1e3a6361bd851e0c8ed08 inherit pub_methods_classxii_application"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function is called after <a class="el" href="../../dd/d8e/classxii_startup.html#a23d4adb6b359b16fb6e4d0af7720e771" title="Runs the &#39;core&#39; shutdown sequence of all subsystems in the proper order (reversed startup order).">xiiStartup::ShutdownCoreSystems()</a> has been called.  <br /></td></tr>
+<tr class="separator:a4192dfd474d1e3a6361bd851e0c8ed08 inherit pub_methods_classxii_application"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0b69956e24bd7b6c73079a9abf38d27 inherit pub_methods_classxii_application" id="r_ae0b69956e24bd7b6c73079a9abf38d27"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d2b/classxii_application.html#ae0b69956e24bd7b6c73079a9abf38d27">BeforeEnterBackground</a> ()</td></tr>
+<tr class="memdesc:ae0b69956e24bd7b6c73079a9abf38d27 inherit pub_methods_classxii_application"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function is called when an application is moved to the background.  <br /></td></tr>
+<tr class="separator:ae0b69956e24bd7b6c73079a9abf38d27 inherit pub_methods_classxii_application"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98b7eb3ee04ab34ecc0acd9b2dbb35af inherit pub_methods_classxii_application" id="r_a98b7eb3ee04ab34ecc0acd9b2dbb35af"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d2b/classxii_application.html#a98b7eb3ee04ab34ecc0acd9b2dbb35af">BeforeEnterForeground</a> ()</td></tr>
+<tr class="memdesc:a98b7eb3ee04ab34ecc0acd9b2dbb35af inherit pub_methods_classxii_application"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function is called whenever an application is resumed from background mode.  <br /></td></tr>
+<tr class="separator:a98b7eb3ee04ab34ecc0acd9b2dbb35af inherit pub_methods_classxii_application"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1df98d9182653abafa3eac1d938d3764 inherit pub_methods_classxii_application" id="r_a1df98d9182653abafa3eac1d938d3764"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetReturnCode</b> (xiiInt32 iReturnCode)</td></tr>
+<tr class="memdesc:a1df98d9182653abafa3eac1d938d3764 inherit pub_methods_classxii_application"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the value that the application will return to the OS. You can call this function at any point during execution to update the return value of the application. Default is zero. <br /></td></tr>
+<tr class="separator:a1df98d9182653abafa3eac1d938d3764 inherit pub_methods_classxii_application"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8ef82bcad8677c024e9d4aab7368a45 inherit pub_methods_classxii_application" id="r_aa8ef82bcad8677c024e9d4aab7368a45"><td class="memItemLeft" align="right" valign="top">
+xiiInt32&#160;</td><td class="memItemRight" valign="bottom"><b>GetReturnCode</b> () const</td></tr>
+<tr class="memdesc:aa8ef82bcad8677c024e9d4aab7368a45 inherit pub_methods_classxii_application"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the currently set value that the application will return to the OS. <br /></td></tr>
+<tr class="separator:aa8ef82bcad8677c024e9d4aab7368a45 inherit pub_methods_classxii_application"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e06b5eaca6daec8636045d80789f5fc inherit pub_methods_classxii_application" id="r_a7e06b5eaca6daec8636045d80789f5fc"><td class="memItemLeft" align="right" valign="top">
+virtual const char *&#160;</td><td class="memItemRight" valign="bottom"><b>TranslateReturnCode</b> () const</td></tr>
+<tr class="memdesc:a7e06b5eaca6daec8636045d80789f5fc inherit pub_methods_classxii_application"><td class="mdescLeft">&#160;</td><td class="mdescRight">If the return code is not zero, this function might be called to get a string to print the error code in human readable form. <br /></td></tr>
+<tr class="separator:a7e06b5eaca6daec8636045d80789f5fc inherit pub_methods_classxii_application"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad991d929e2271ad91c5d8cc7905f3c4c inherit pub_methods_classxii_application" id="r_ad991d929e2271ad91c5d8cc7905f3c4c"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetCommandLineArguments</b> (xiiUInt32 uiArgumentCount, const char **pArguments)</td></tr>
+<tr class="memdesc:ad991d929e2271ad91c5d8cc7905f3c4c inherit pub_methods_classxii_application"><td class="mdescLeft">&#160;</td><td class="mdescRight">Will set the command line arguments that were passed to the app by the OS. This is automatically called by XII_APPLICATION_ENTRY_POINT() and XII_CONSOLEAPP_ENTRY_POINT(). <br /></td></tr>
+<tr class="separator:ad991d929e2271ad91c5d8cc7905f3c4c inherit pub_methods_classxii_application"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f8c4db0b71f87c2fec1eee2fc2bfd4e inherit pub_methods_classxii_application" id="r_a6f8c4db0b71f87c2fec1eee2fc2bfd4e"><td class="memItemLeft" align="right" valign="top">xiiUInt32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d2b/classxii_application.html#a6f8c4db0b71f87c2fec1eee2fc2bfd4e">GetArgumentCount</a> () const</td></tr>
+<tr class="memdesc:a6f8c4db0b71f87c2fec1eee2fc2bfd4e inherit pub_methods_classxii_application"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of command line arguments that were passed to the application.  <br /></td></tr>
+<tr class="separator:a6f8c4db0b71f87c2fec1eee2fc2bfd4e inherit pub_methods_classxii_application"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e5e1556ee4802f658f3d15ff1f47877 inherit pub_methods_classxii_application" id="r_a0e5e1556ee4802f658f3d15ff1f47877"><td class="memItemLeft" align="right" valign="top">
+const char *&#160;</td><td class="memItemRight" valign="bottom"><b>GetArgument</b> (xiiUInt32 uiArgument) const</td></tr>
+<tr class="memdesc:a0e5e1556ee4802f658f3d15ff1f47877 inherit pub_methods_classxii_application"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns one of the command line arguments that was passed to the application. <br /></td></tr>
+<tr class="separator:a0e5e1556ee4802f658f3d15ff1f47877 inherit pub_methods_classxii_application"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a485b5a287f84de37afbaaa3f42442fe6 inherit pub_methods_classxii_application" id="r_a485b5a287f84de37afbaaa3f42442fe6"><td class="memItemLeft" align="right" valign="top">
+const char **&#160;</td><td class="memItemRight" valign="bottom"><b>GetArgumentsArray</b> () const</td></tr>
+<tr class="memdesc:a485b5a287f84de37afbaaa3f42442fe6 inherit pub_methods_classxii_application"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the complete array of command line arguments that were passed to the application. <br /></td></tr>
+<tr class="separator:a485b5a287f84de37afbaaa3f42442fe6 inherit pub_methods_classxii_application"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75ad85297feb5e6db968d709a94880bc inherit pub_methods_classxii_application" id="r_a75ad85297feb5e6db968d709a94880bc"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><b>EnableMemoryLeakReporting</b> (bool bEnable)</td></tr>
+<tr class="separator:a75ad85297feb5e6db968d709a94880bc inherit pub_methods_classxii_application"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7042572cd46f4c762de393771442570 inherit pub_methods_classxii_application" id="r_ab7042572cd46f4c762de393771442570"><td class="memItemLeft" align="right" valign="top">
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsMemoryLeakReportingEnabled</b> () const</td></tr>
+<tr class="separator:ab7042572cd46f4c762de393771442570 inherit pub_methods_classxii_application"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a426c3434af987f8310759eb5b8aaa475 inherit pub_methods_classxii_application" id="r_a426c3434af987f8310759eb5b8aaa475"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d2b/classxii_application.html#a426c3434af987f8310759eb5b8aaa475">RequestQuit</a> ()</td></tr>
+<tr class="memdesc:a426c3434af987f8310759eb5b8aaa475 inherit pub_methods_classxii_application"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calling this function requests that the application quits after the current invocation of <a class="el" href="../../dd/d2b/classxii_application.html#add6d74803256b335b6765297248775f6" title="Main run function which is called periodically. This function must be overridden.">Run()</a> finishes.  <br /></td></tr>
+<tr class="separator:a426c3434af987f8310759eb5b8aaa475 inherit pub_methods_classxii_application"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4995a8322131a8a7534afd83ba19b26f inherit pub_methods_classxii_application" id="r_a4995a8322131a8a7534afd83ba19b26f"><td class="memItemLeft" align="right" valign="top">
+XII_ALWAYS_INLINE bool&#160;</td><td class="memItemRight" valign="bottom"><b>WasQuitRequested</b> () const</td></tr>
+<tr class="memdesc:a4995a8322131a8a7534afd83ba19b26f inherit pub_methods_classxii_application"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether <a class="el" href="../../dd/d2b/classxii_application.html#a426c3434af987f8310759eb5b8aaa475" title="Calling this function requests that the application quits after the current invocation of Run() finis...">RequestQuit()</a> was called. <br /></td></tr>
+<tr class="separator:a4995a8322131a8a7534afd83ba19b26f inherit pub_methods_classxii_application"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pub_static_methods_classxii_application"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_static_methods_classxii_application')"><img src="../../closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="../../dd/d2b/classxii_application.html">xiiApplication</a></td></tr>
+<tr class="memitem:a4d9267a6e437e0d14617479cc10a67af inherit pub_static_methods_classxii_application" id="r_a4d9267a6e437e0d14617479cc10a67af"><td class="memItemLeft" align="right" valign="top">
+static <a class="el" href="../../dd/d2b/classxii_application.html">xiiApplication</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetApplicationInstance</b> ()</td></tr>
+<tr class="memdesc:a4d9267a6e437e0d14617479cc10a67af inherit pub_static_methods_classxii_application"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the one instance of <a class="el" href="../../dd/d2b/classxii_application.html" title="Base class to be used by applications based on XII.">xiiApplication</a> that is available. <br /></td></tr>
+<tr class="separator:a4d9267a6e437e0d14617479cc10a67af inherit pub_static_methods_classxii_application"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_classxii_application"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_attribs_classxii_application')"><img src="../../closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="../../dd/d2b/classxii_application.html">xiiApplication</a></td></tr>
+<tr class="memitem:a85246db2e67cdc0cee929ab85812fa86 inherit pro_attribs_classxii_application" id="r_a85246db2e67cdc0cee929ab85812fa86"><td class="memItemLeft" align="right" valign="top">
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_bWasQuitRequested</b> = false</td></tr>
+<tr class="separator:a85246db2e67cdc0cee929ab85812fa86 inherit pro_attribs_classxii_application"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a7a2eff265739d7a41e43c75d7ce41c7d" name="a7a2eff265739d7a41e43c75d7ce41c7d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a2eff265739d7a41e43c75d7ce41c7d">&#9670;&#160;</a></span>AfterCoreSystemsStartup()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void xiiTexConv::AfterCoreSystemsStartup </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This function is called after basic engine initialization has been done. </p>
+<p><a class="el" href="../../dd/d2b/classxii_application.html" title="Base class to be used by applications based on XII.">xiiApplication</a> will automatically call <a class="el" href="../../dd/d8e/classxii_startup.html#a33afa05eb4f7a8eefb1dcce11146f9d6" title="Runs the &#39;core&#39; startup sequence of all subsystems in the proper order.">xiiStartup::StartupCoreSystems()</a> to initialize the application. This function can be overridden to do additional application specific initialization. To startup entire subsystems, you should however use the features provided by <a class="el" href="../../dd/d8e/classxii_startup.html" title="The startup system makes sure to initialize and shut down all known subsystems in the proper order.">xiiStartup</a> and <a class="el" href="../../de/d08/classxii_sub_system.html" title="Base class for all subsystems.">xiiSubSystem</a>. </p>
+
+<p>Reimplemented from <a class="el" href="../../dd/d2b/classxii_application.html#a5d424fee5b31f4a58bb0cf255317b0a1">xiiApplication</a>.</p>
+
+</div>
+</div>
+<a id="a6f69e9f9ff303d4c94a73afdf7661d0f" name="a6f69e9f9ff303d4c94a73afdf7661d0f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f69e9f9ff303d4c94a73afdf7661d0f">&#9670;&#160;</a></span>BeforeCoreSystemsShutdown()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void xiiTexConv::BeforeCoreSystemsShutdown </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This function is called after the application main loop has run for the last time, before engine deinitialization. </p>
+<p>Override this function to do application specific deinitialization that still requires a running engine. After this function returns <a class="el" href="../../dd/d8e/classxii_startup.html#a23d4adb6b359b16fb6e4d0af7720e771" title="Runs the &#39;core&#39; shutdown sequence of all subsystems in the proper order (reversed startup order).">xiiStartup::ShutdownCoreSystems()</a> is called and thus everything, including allocators, is shut down. To shut down entire subsystems, you should, however, use the features provided by <a class="el" href="../../dd/d8e/classxii_startup.html" title="The startup system makes sure to initialize and shut down all known subsystems in the proper order.">xiiStartup</a> and <a class="el" href="../../de/d08/classxii_sub_system.html" title="Base class for all subsystems.">xiiSubSystem</a>. </p>
+
+<p>Reimplemented from <a class="el" href="../../dd/d2b/classxii_application.html#a5de078f92df4d64f9c2b106f670351e0">xiiApplication</a>.</p>
+
+</div>
+</div>
+<a id="a881aa4e96b0c3157a608f486ef265ce8" name="a881aa4e96b0c3157a608f486ef265ce8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a881aa4e96b0c3157a608f486ef265ce8">&#9670;&#160;</a></span>BeforeCoreSystemsStartup()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a> xiiTexConv::BeforeCoreSystemsStartup </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This function is called before any kind of engine initialization is done. </p>
+<p>Override this function to be able to configure subsystems, before they are initialized. After this function returns, <a class="el" href="../../dd/d8e/classxii_startup.html#a33afa05eb4f7a8eefb1dcce11146f9d6" title="Runs the &#39;core&#39; startup sequence of all subsystems in the proper order.">xiiStartup::StartupCoreSystems()</a> is automatically called. If you need to set up custom allocators, this is the place to do this. </p>
+
+<p>Reimplemented from <a class="el" href="../../dd/d2b/classxii_application.html#a129d221fbc4cee48a415cd2c77437e17">xiiApplication</a>.</p>
+
+</div>
+</div>
+<a id="aa1fdff9c0b7910c50d32664df164ba6b" name="aa1fdff9c0b7910c50d32664df164ba6b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa1fdff9c0b7910c50d32664df164ba6b">&#9670;&#160;</a></span>Run()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dd/d2b/classxii_application.html#a15434b0054b5c87809df19e488693370">xiiApplication::Execution</a> xiiTexConv::Run </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Main run function which is called periodically. This function must be overridden. </p>
+<p>Return <a class="el" href="../../dd/d2b/classxii_application.html#a15434b0054b5c87809df19e488693370a0d82790b0612935992bd564a17ce37d6" title="The &#39;Run&#39; function should return this to quit the application.">Execution::Quit</a> when the application should quit. You may set a return code via <a class="el" href="../../dd/d2b/classxii_application.html#a1df98d9182653abafa3eac1d938d3764" title="Sets the value that the application will return to the OS. You can call this function at any point du...">SetReturnCode()</a> beforehand. </p>
+
+<p>Implements <a class="el" href="../../dd/d2b/classxii_application.html#add6d74803256b335b6765297248775f6">xiiApplication</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li>/home/runner/work/XII/XII/Source/Tools/TexConv/<a class="el" href="../../dc/d86/_tex_conv_8h_source.html">TexConv.h</a></li>
+<li>/home/runner/work/XII/XII/Source/Tools/TexConv/<b>ParseChannelMapping.cpp</b></li>
+<li>/home/runner/work/XII/XII/Source/Tools/TexConv/<b>ParseOptions.cpp</b></li>
+<li>/home/runner/work/XII/XII/Source/Tools/TexConv/<b>ParseUtils.cpp</b></li>
+<li>/home/runner/work/XII/XII/Source/Tools/TexConv/<b>TexConv.cpp</b></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../d5/ddb/classxii_tex_conv.html">xiiTexConv</a></li>
+    <li class="footer">Generated on Mon Jul 1 2024 23:53:16 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,341 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.11.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<!-- BEGIN opengraph metadata -->
+<meta property="og:title" content="XII" />
+<meta property="og:image" content="../../XII-Logo.png" />
+<meta property="og:description" content="An advanced high-performance simulation engine." />
+<meta property="og:url" content="https://www.xiitechnologies.com" />
+<!-- END opengraph metadata -->
+<!-- BEGIN twitter metadata -->
+<meta name="twitter:image:src" content="../../XII-Logo.png" />
+<meta name="twitter:title" content="XII" />
+<meta name="twitter:description" content="An advanced high-performance simulation engine." />
+<!-- END twitter metadata -->
+<title>XII: /home/runner/work/XII/XII/Source/EditorPlugins/Scene/EnginePluginScene/SceneContext/SceneContext.h Source File</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link rel="icon" type="image/svg+xml" href="logo.drawio.svg"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="../../toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../custom.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<a href="https://github.com/jothepro/doxygen-awesome-css" class="github-corner" title="View source on GitHub" target="_blank" rel="noopener noreferrer">
+    <svg viewBox="0 0 250 250" width="40" height="40" style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+    <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="../../XII-Logo.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">XII
+   &#160;<span id="projectnumber">1.0.0</span>
+   </div>
+   <div id="projectbrief">A high-performance simulation engine.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(1); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.html','Search',true);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('d7/db3/_scene_context_8h_source.html','../../'); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">SceneContext.h</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &lt;EnginePluginScene/EnginePluginSceneDLL.h&gt;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;EditorEngineProcessFramework/EngineProcess/EngineProcessDocumentContext.h&gt;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;GraphicsCore/Pipeline/Declarations.h&gt;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;SharedPluginScene/Common/Messages.h&gt;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="keyword">class </span><a class="code hl_class" href="../../d9/db6/classxii_object_selection_msg_to_engine.html">xiiObjectSelectionMsgToEngine</a>;</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="keyword">class </span><a class="code hl_class" href="../../da/d27/classxii_render_context.html">xiiRenderContext</a>;</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="keyword">class </span><a class="code hl_class" href="../../d6/d63/classxii_game_state_base.html">xiiGameStateBase</a>;</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="keyword">class </span><a class="code hl_class" href="../../d5/db6/classxii_game_mode_msg_to_engine.html">xiiGameModeMsgToEngine</a>;</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keyword">class </span><a class="code hl_class" href="../../de/df2/classxii_world_settings_msg_to_engine.html">xiiWorldSettingsMsgToEngine</a>;</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keyword">class </span><a class="code hl_class" href="../../d3/d4d/classxii_objects_for_debug_vis_msg_to_engine.html">xiiObjectsForDebugVisMsgToEngine</a>;</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keyword">class </span><a class="code hl_class" href="../../d9/dc1/classxii_grid_settings_msg_to_engine.html">xiiGridSettingsMsgToEngine</a>;</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="keyword">class </span><a class="code hl_class" href="../../d0/d50/classxii_simulation_settings_msg_to_engine.html">xiiSimulationSettingsMsgToEngine</a>;</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="keyword">struct </span><a class="code hl_struct" href="../../d5/db1/structxii_resource_manager_event.html">xiiResourceManagerEvent</a>;</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="keyword">class </span><a class="code hl_class" href="../../d0/dcb/classxii_exposed_document_object_properties_msg_to_engine.html">xiiExposedDocumentObjectPropertiesMsgToEngine</a>;</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="keyword">class </span><a class="code hl_class" href="../../d6/d27/classxii_view_redraw_msg_to_engine.html">xiiViewRedrawMsgToEngine</a>;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="keyword">class </span><a class="code hl_class" href="../../de/d8c/classxii_world_writer.html">xiiWorldWriter</a>;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="keyword">class </span><a class="code hl_class" href="../../d6/d42/classxii_deferred_file_writer.html">xiiDeferredFileWriter</a>;</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="keyword">class </span><a class="code hl_class" href="../../d2/d93/classxii_layer_context.html">xiiLayerContext</a>;</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="keyword">struct </span><a class="code hl_struct" href="../../d7/de3/structxii_game_application_execution_event.html">xiiGameApplicationExecutionEvent</a>;</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="foldopen" id="foldopen00025" data-start="{" data-end="};">
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="../../db/de8/classxii_scene_context.html">   25</a></span><span class="keyword">class </span>XII_ENGINEPLUGINSCENE_DLL <a class="code hl_class" href="../../db/de8/classxii_scene_context.html">xiiSceneContext</a> : <span class="keyword">public</span> <a class="code hl_class" href="../../db/df8/classxii_engine_process_document_context.html">xiiEngineProcessDocumentContext</a></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>{</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>  XII_ADD_DYNAMIC_REFLECTION(<a class="code hl_class" href="../../db/de8/classxii_scene_context.html">xiiSceneContext</a>, <a class="code hl_class" href="../../db/df8/classxii_engine_process_document_context.html">xiiEngineProcessDocumentContext</a>);</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>  <a class="code hl_class" href="../../db/de8/classxii_scene_context.html">xiiSceneContext</a>();</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>  <a class="code hl_class" href="../../db/de8/classxii_scene_context.html">~xiiSceneContext</a>();</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>  <span class="keyword">virtual</span> <span class="keywordtype">void</span> HandleMessage(<span class="keyword">const</span> <a class="code hl_class" href="../../d9/d5f/classxii_editor_engine_document_msg.html">xiiEditorEngineDocumentMsg</a>* pMsg) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>  <span class="keyword">const</span> <a class="code hl_class" href="../../d8/df8/classxii_deque.html">xiiDeque&lt;xiiGameObjectHandle&gt;</a>&amp; GetSelection()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_Selection; }</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>  <span class="keyword">const</span> <a class="code hl_class" href="../../d8/df8/classxii_deque.html">xiiDeque&lt;xiiGameObjectHandle&gt;</a>&amp; GetSelectionWithChildren()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_SelectionWithChildren; }</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>  <span class="keywordtype">bool</span>                                 GetRenderSelectionOverlay()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_bRenderSelectionOverlay; }</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>  <span class="keywordtype">bool</span>                                 GetRenderShapeIcons()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_bRenderShapeIcons; }</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>  <span class="keywordtype">bool</span>                                 GetRenderSelectionBoxes()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_bRenderSelectionBoxes; }</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>  <span class="keywordtype">float</span>                                GetGridDensity()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code hl_function" href="../../d1/d37/namespacexii_math.html#a821b432e7a9c8ac292eb255ee11e9e10">xiiMath::Abs</a>(m_fGridDensity); }</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>  <span class="keywordtype">bool</span>                                 IsGridInGlobalSpace()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_fGridDensity &gt;= 0.0f; }</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>  <a class="code hl_class" href="../../d5/d13/classxii_transform_template.html">xiiTransform</a>                         GetGridTransform()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_GridTransform; }</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>  <a class="code hl_class" href="../../d6/d63/classxii_game_state_base.html">xiiGameStateBase</a>* GetGameState() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>  <span class="keywordtype">bool</span>              IsPlayTheGameActive()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> GetGameState() != <span class="keyword">nullptr</span>; }</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>  xiiUInt32                       RegisterLayer(<a class="code hl_class" href="../../d2/d93/classxii_layer_context.html">xiiLayerContext</a>* pLayer);</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>  <span class="keywordtype">void</span>                            UnregisterLayer(<a class="code hl_class" href="../../d2/d93/classxii_layer_context.html">xiiLayerContext</a>* pLayer);</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>  <span class="keywordtype">void</span>                            AddLayerIndexTag(<span class="keyword">const</span> <a class="code hl_class" href="../../dc/d60/classxii_entity_msg_to_engine.html">xiiEntityMsgToEngine</a>&amp; msg, <a class="code hl_class" href="../../d2/d12/classxii_world_rtti_converter_context.html">xiiWorldRttiConverterContext</a>&amp; ref_context, <span class="keyword">const</span> <a class="code hl_class" href="../../db/d3b/classxii_tag.html">xiiTag</a>&amp; layerTag);</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>  <span class="keyword">const</span> <a class="code hl_class" href="../../d0/d60/classxii_array_ptr.html">xiiArrayPtr&lt;const xiiTag&gt;</a> GetInvisibleLayerTags() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>  <a class="code hl_class" href="../../db/df8/classxii_engine_process_document_context.html">xiiEngineProcessDocumentContext</a>*           GetActiveDocumentContext();</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>  <span class="keyword">const</span> <a class="code hl_class" href="../../db/df8/classxii_engine_process_document_context.html">xiiEngineProcessDocumentContext</a>*     GetActiveDocumentContext() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>  <a class="code hl_class" href="../../d2/d12/classxii_world_rtti_converter_context.html">xiiWorldRttiConverterContext</a>&amp;              GetActiveContext();</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>  <span class="keyword">const</span> <a class="code hl_class" href="../../d2/d12/classxii_world_rtti_converter_context.html">xiiWorldRttiConverterContext</a>&amp;        GetActiveContext() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>  <a class="code hl_class" href="../../d2/d12/classxii_world_rtti_converter_context.html">xiiWorldRttiConverterContext</a>*              GetContextForLayer(<span class="keyword">const</span> <a class="code hl_class" href="../../dc/d1d/classxii_uuid.html">xiiUuid</a>&amp; layerGuid);</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>  <a class="code hl_class" href="../../d0/d60/classxii_array_ptr.html">xiiArrayPtr&lt;xiiWorldRttiConverterContext*&gt;</a> GetAllContexts();</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="keyword">protected</span>:</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>  <span class="keyword">virtual</span> <span class="keywordtype">void</span> OnInitialize() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>  <span class="keyword">virtual</span> <span class="keywordtype">void</span> OnDeinitialize() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>  <span class="keyword">virtual</span> <a class="code hl_class" href="../../de/d97/classxii_engine_process_view_context.html">xiiEngineProcessViewContext</a>* <a class="code hl_function" href="../../db/df8/classxii_engine_process_document_context.html#ac7e51b557990dbadbc22c9a572ff074c">CreateViewContext</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>  <span class="keyword">virtual</span> <span class="keywordtype">void</span>                         <a class="code hl_function" href="../../db/df8/classxii_engine_process_document_context.html#acb4f16c39b43a61dc75bef43c22d9d91">DestroyViewContext</a>(<a class="code hl_class" href="../../de/d97/classxii_engine_process_view_context.html">xiiEngineProcessViewContext</a>* pContext) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>  <span class="keyword">virtual</span> <a class="code hl_struct" href="../../d0/d54/structxii_status.html">xiiStatus</a>                    <a class="code hl_function" href="../../db/df8/classxii_engine_process_document_context.html#ac71430d6b5b1d9a42e3812bfbab6a01e">ExportDocument</a>(<span class="keyword">const</span> <a class="code hl_class" href="../../d8/d3e/classxii_export_document_msg_to_engine.html">xiiExportDocumentMsgToEngine</a>* pMsg) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>  <span class="keywordtype">void</span>                                 ExportExposedParameters(<span class="keyword">const</span> <a class="code hl_class" href="../../de/d8c/classxii_world_writer.html">xiiWorldWriter</a>&amp; ww, <a class="code hl_class" href="../../d6/d42/classxii_deferred_file_writer.html">xiiDeferredFileWriter</a>&amp; file) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>  <span class="keyword">virtual</span> <span class="keywordtype">bool</span>                <a class="code hl_function" href="../../db/df8/classxii_engine_process_document_context.html#ae83baa7b73e2081195059659d3979777">UpdateThumbnailViewContext</a>(<a class="code hl_class" href="../../de/d97/classxii_engine_process_view_context.html">xiiEngineProcessViewContext</a>* pThumbnailViewContext) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>  <span class="keyword">virtual</span> <span class="keywordtype">void</span>                <a class="code hl_function" href="../../db/df8/classxii_engine_process_document_context.html#af63231a8093ebaa0c8c558389f512c1b">OnThumbnailViewContextCreated</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>  <span class="keyword">virtual</span> <span class="keywordtype">void</span>                <a class="code hl_function" href="../../db/df8/classxii_engine_process_document_context.html#ad42f06dd233d3629a4a7fec5162521cf">OnDestroyThumbnailViewContext</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>  <span class="keyword">virtual</span> <span class="keywordtype">void</span>                <a class="code hl_function" href="../../db/df8/classxii_engine_process_document_context.html#a316fa73990db25703850f08e9b3138a2">UpdateDocumentContext</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>  <span class="keyword">virtual</span> <a class="code hl_struct" href="../../da/d2c/structxii_game_object_handle.html">xiiGameObjectHandle</a> <a class="code hl_function" href="../../db/df8/classxii_engine_process_document_context.html#a47156231947e23349838f08e42db4a71">ResolveStringToGameObjectHandle</a>(<span class="keyword">const</span> <span class="keywordtype">void</span>* pString, <a class="code hl_struct" href="../../da/d8d/structxii_component_handle.html">xiiComponentHandle</a> hThis, <a class="code hl_struct" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sProperty) <span class="keyword">const override</span>;</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>  <span class="keyword">struct </span>TagGameObject</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>  {</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    <a class="code hl_struct" href="../../da/d2c/structxii_game_object_handle.html">xiiGameObjectHandle</a> m_hObject;</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    <a class="code hl_class" href="../../db/d3b/classxii_tag.html">xiiTag</a>              m_Tag;</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>  };</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>  <span class="keywordtype">void</span> AddAmbientLight(<span class="keywordtype">bool</span> bSetEditorTag, <span class="keywordtype">bool</span> bForce);</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>  <span class="keywordtype">void</span> RemoveAmbientLight();</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span> </div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>  <span class="keywordtype">void</span> HandleViewRedrawMsg(<span class="keyword">const</span> <a class="code hl_class" href="../../d6/d27/classxii_view_redraw_msg_to_engine.html">xiiViewRedrawMsgToEngine</a>* pMsg);</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>  <span class="keywordtype">void</span> HandleSelectionMsg(<span class="keyword">const</span> <a class="code hl_class" href="../../d9/db6/classxii_object_selection_msg_to_engine.html">xiiObjectSelectionMsgToEngine</a>* pMsg);</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>  <span class="keywordtype">void</span> HandleGameModeMsg(<span class="keyword">const</span> <a class="code hl_class" href="../../d5/db6/classxii_game_mode_msg_to_engine.html">xiiGameModeMsgToEngine</a>* pMsg);</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>  <span class="keywordtype">void</span> HandleSimulationSettingsMsg(<span class="keyword">const</span> <a class="code hl_class" href="../../d0/d50/classxii_simulation_settings_msg_to_engine.html">xiiSimulationSettingsMsgToEngine</a>* msg);</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>  <span class="keywordtype">void</span> HandleGridSettingsMsg(<span class="keyword">const</span> <a class="code hl_class" href="../../d9/dc1/classxii_grid_settings_msg_to_engine.html">xiiGridSettingsMsgToEngine</a>* msg);</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>  <span class="keywordtype">void</span> HandleWorldSettingsMsg(<span class="keyword">const</span> <a class="code hl_class" href="../../de/df2/classxii_world_settings_msg_to_engine.html">xiiWorldSettingsMsgToEngine</a>* msg);</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>  <span class="keywordtype">void</span> HandleObjectsForDebugVisMsg(<span class="keyword">const</span> <a class="code hl_class" href="../../d3/d4d/classxii_objects_for_debug_vis_msg_to_engine.html">xiiObjectsForDebugVisMsgToEngine</a>* pMsg);</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>  <span class="keywordtype">void</span> ComputeHierarchyBounds(<a class="code hl_class" href="../../d0/d91/classxii_game_object.html">xiiGameObject</a>* pObj, <a class="code hl_class" href="../../d3/d90/classxii_bounding_box_sphere_template.html">xiiBoundingBoxSphere</a>&amp; bounds);</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>  <span class="keywordtype">void</span> HandleExposedPropertiesMsg(<span class="keyword">const</span> <a class="code hl_class" href="../../d0/dcb/classxii_exposed_document_object_properties_msg_to_engine.html">xiiExposedDocumentObjectPropertiesMsgToEngine</a>* pMsg);</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>  <span class="keywordtype">void</span> HandleSceneGeometryMsg(<span class="keyword">const</span> <a class="code hl_class" href="../../dc/d15/classxii_export_scene_geometry_msg_to_engine.html">xiiExportSceneGeometryMsgToEngine</a>* pMsg);</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>  <span class="keywordtype">void</span> HandlePullObjectStateMsg(<span class="keyword">const</span> <a class="code hl_class" href="../../dd/d29/classxii_pull_object_state_msg_to_engine.html">xiiPullObjectStateMsgToEngine</a>* pMsg);</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>  <span class="keywordtype">void</span> AnswerObjectStatePullRequest(<span class="keyword">const</span> <a class="code hl_class" href="../../d6/d27/classxii_view_redraw_msg_to_engine.html">xiiViewRedrawMsgToEngine</a>* pMsg);</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>  <span class="keywordtype">void</span> HandleActiveLayerChangedMsg(<span class="keyword">const</span> <a class="code hl_class" href="../../d6/d54/classxii_active_layer_changed_msg_to_engine.html">xiiActiveLayerChangedMsgToEngine</a>* pMsg);</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>  <span class="keywordtype">void</span> HandleTagMsgToEngineMsg(<span class="keyword">const</span> <a class="code hl_class" href="../../d4/d53/classxii_object_tag_msg_to_engine.html">xiiObjectTagMsgToEngine</a>* pMsg);</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>  <span class="keywordtype">void</span> HandleLayerVisibilityChangedMsgToEngineMsg(<span class="keyword">const</span> <a class="code hl_class" href="../../d0/d04/classxii_layer_visibility_changed_msg_to_engine.html">xiiLayerVisibilityChangedMsgToEngine</a>* pMsg);</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span> </div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>  <span class="keywordtype">void</span> DrawSelectionBounds(<span class="keyword">const</span> <a class="code hl_class" href="../../d5/db8/classxii_view_handle.html">xiiViewHandle</a>&amp; hView);</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span> </div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>  <span class="keywordtype">void</span> UpdateInvisibleLayerTags();</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>  <span class="keywordtype">void</span> InsertSelectedChildren(<span class="keyword">const</span> <a class="code hl_class" href="../../d0/d91/classxii_game_object.html">xiiGameObject</a>* pObject);</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>  <span class="keywordtype">void</span> QuerySelectionBBox(<span class="keyword">const</span> <a class="code hl_class" href="../../d9/d5f/classxii_editor_engine_document_msg.html">xiiEditorEngineDocumentMsg</a>* pMsg);</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>  <span class="keywordtype">void</span> OnSimulationEnabled();</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>  <span class="keywordtype">void</span> OnSimulationDisabled();</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>  <span class="keywordtype">void</span> OnPlayTheGameModeStarted(<span class="keyword">const</span> <a class="code hl_class" href="../../d5/d13/classxii_transform_template.html">xiiTransform</a>* pStartPosition);</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span> </div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>  <span class="keywordtype">void</span> OnResourceManagerEvent(<span class="keyword">const</span> <a class="code hl_struct" href="../../d5/db1/structxii_resource_manager_event.html">xiiResourceManagerEvent</a>&amp; e);</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>  <span class="keywordtype">void</span> GameApplicationEventHandler(<span class="keyword">const</span> <a class="code hl_struct" href="../../d7/de3/structxii_game_application_execution_event.html">xiiGameApplicationExecutionEvent</a>&amp; e);</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span> </div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>  <span class="keywordtype">bool</span>         m_bUpdateAllLocalBounds = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>  <span class="keywordtype">bool</span>         m_bRenderSelectionOverlay;</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>  <span class="keywordtype">bool</span>         m_bRenderShapeIcons;</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>  <span class="keywordtype">bool</span>         m_bRenderSelectionBoxes;</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>  <span class="keywordtype">float</span>        m_fGridDensity;</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>  <a class="code hl_class" href="../../d5/d13/classxii_transform_template.html">xiiTransform</a> m_GridTransform;</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span> </div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>  <a class="code hl_class" href="../../d8/df8/classxii_deque.html">xiiDeque&lt;xiiGameObjectHandle&gt;</a>            m_Selection;</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>  <a class="code hl_class" href="../../d8/df8/classxii_deque.html">xiiDeque&lt;xiiGameObjectHandle&gt;</a>            m_SelectionWithChildren;</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>  <a class="code hl_class" href="../../d6/d31/classxii_set.html">xiiSet&lt;xiiGameObjectHandle&gt;</a>              m_SelectionWithChildrenSet;</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>  <a class="code hl_struct" href="../../da/d2c/structxii_game_object_handle.html">xiiGameObjectHandle</a>                      m_hSkyLight;</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>  <a class="code hl_struct" href="../../da/d2c/structxii_game_object_handle.html">xiiGameObjectHandle</a>                      m_hDirectionalLight;</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>  <a class="code hl_class" href="../../dc/da4/classxii_dynamic_array.html">xiiDynamicArray&lt;xiiExposedSceneProperty&gt;</a> m_ExposedSceneProperties;</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span> </div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>  <a class="code hl_class" href="../../d0/d53/classxii_push_object_state_msg_to_editor.html">xiiPushObjectStateMsgToEditor</a> m_PushObjectStateMsg;</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span> </div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>  <a class="code hl_class" href="../../dc/d1d/classxii_uuid.html">xiiUuid</a>                                        m_ActiveLayer;</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>  <a class="code hl_class" href="../../dc/da4/classxii_dynamic_array.html">xiiDynamicArray&lt;xiiLayerContext*&gt;</a>              m_Layers;</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>  <a class="code hl_class" href="../../dc/da4/classxii_dynamic_array.html">xiiDynamicArray&lt;xiiWorldRttiConverterContext*&gt;</a> m_Contexts;</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span> </div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>  <span class="comment">// We use tags in the form of Layer_4 (Layer_Scene for the scene itself) to not pollute the tag registry with hundreds of unique tags. The tags do not need to be unique across documents so we can just use the layer index but that requires the Tags to be recomputed whenever we remove / add layers.</span></div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>  <span class="comment">// By caching the guids we do not need to send another message each time a layer is loaded as we send also guids of unloaded layers.</span></div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>  <a class="code hl_class" href="../../db/d3b/classxii_tag.html">xiiTag</a>                     m_LayerTag;</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>  <a class="code hl_class" href="../../dc/da9/classxii_hybrid_array.html">xiiHybridArray&lt;xiiUuid, 1&gt;</a> m_InvisibleLayers;</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>  <span class="keywordtype">bool</span>                       m_bInvisibleLayersDirty = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>  <a class="code hl_class" href="../../dc/da9/classxii_hybrid_array.html">xiiHybridArray&lt;xiiTag, 1&gt;</a>  m_InvisibleLayerTags;</div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span> </div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>  <a class="code hl_class" href="../../dc/da4/classxii_dynamic_array.html">xiiDynamicArray&lt;TagGameObject&gt;</a> m_ObjectsToTag;</div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>};</div>
+</div>
+<div class="ttc" id="aclassxii_active_layer_changed_msg_to_engine_html"><div class="ttname"><a href="../../d6/d54/classxii_active_layer_changed_msg_to_engine.html">xiiActiveLayerChangedMsgToEngine</a></div><div class="ttdef"><b>Definition</b> Messages.h:62</div></div>
+<div class="ttc" id="aclassxii_array_ptr_html"><div class="ttname"><a href="../../d0/d60/classxii_array_ptr.html">xiiArrayPtr</a></div><div class="ttdoc">This class encapsulates an array and it's size. It is recommended to use this class instead of plain ...</div><div class="ttdef"><b>Definition</b> ArrayPtr.h:37</div></div>
+<div class="ttc" id="aclassxii_bounding_box_sphere_template_html"><div class="ttname"><a href="../../d3/d90/classxii_bounding_box_sphere_template.html">xiiBoundingBoxSphereTemplate&lt; float &gt;</a></div></div>
+<div class="ttc" id="aclassxii_deferred_file_writer_html"><div class="ttname"><a href="../../d6/d42/classxii_deferred_file_writer.html">xiiDeferredFileWriter</a></div><div class="ttdoc">A file writer that caches all written data and only opens and writes to the output file when everythi...</div><div class="ttdef"><b>Definition</b> DeferredFileWriter.h:9</div></div>
+<div class="ttc" id="aclassxii_deque_html"><div class="ttname"><a href="../../d8/df8/classxii_deque.html">xiiDeque</a></div><div class="ttdef"><b>Definition</b> Deque.h:267</div></div>
+<div class="ttc" id="aclassxii_dynamic_array_html"><div class="ttname"><a href="../../dc/da4/classxii_dynamic_array.html">xiiDynamicArray</a></div><div class="ttdef"><b>Definition</b> DynamicArray.h:81</div></div>
+<div class="ttc" id="aclassxii_editor_engine_document_msg_html"><div class="ttname"><a href="../../d9/d5f/classxii_editor_engine_document_msg.html">xiiEditorEngineDocumentMsg</a></div><div class="ttdoc">Base class for all messages that are tied to some document.</div><div class="ttdef"><b>Definition</b> EngineProcessMessages.h:150</div></div>
+<div class="ttc" id="aclassxii_engine_process_document_context_html"><div class="ttname"><a href="../../db/df8/classxii_engine_process_document_context.html">xiiEngineProcessDocumentContext</a></div><div class="ttdoc">A document context is the counter part to an editor document on the engine side.</div><div class="ttdef"><b>Definition</b> EngineProcessDocumentContext.h:42</div></div>
+<div class="ttc" id="aclassxii_engine_process_document_context_html_a316fa73990db25703850f08e9b3138a2"><div class="ttname"><a href="../../db/df8/classxii_engine_process_document_context.html#a316fa73990db25703850f08e9b3138a2">xiiEngineProcessDocumentContext::UpdateDocumentContext</a></div><div class="ttdeci">virtual void UpdateDocumentContext()</div><div class="ttdoc">A tick functions that allows each document context to do processing that continues over multiple fram...</div><div class="ttdef"><b>Definition</b> EngineProcessDocumentContext.cpp:412</div></div>
+<div class="ttc" id="aclassxii_engine_process_document_context_html_a47156231947e23349838f08e42db4a71"><div class="ttname"><a href="../../db/df8/classxii_engine_process_document_context.html#a47156231947e23349838f08e42db4a71">xiiEngineProcessDocumentContext::ResolveStringToGameObjectHandle</a></div><div class="ttdeci">virtual xiiGameObjectHandle ResolveStringToGameObjectHandle(const void *pString, xiiComponentHandle hThis, xiiStringView sProperty) const</div><div class="ttdoc">Tries to resolve a 'reference' (given in pData) to an xiiGameObject.</div><div class="ttdef"><b>Definition</b> EngineProcessDocumentContext.cpp:800</div></div>
+<div class="ttc" id="aclassxii_engine_process_document_context_html_ac71430d6b5b1d9a42e3812bfbab6a01e"><div class="ttname"><a href="../../db/df8/classxii_engine_process_document_context.html#ac71430d6b5b1d9a42e3812bfbab6a01e">xiiEngineProcessDocumentContext::ExportDocument</a></div><div class="ttdeci">virtual xiiStatus ExportDocument(const xiiExportDocumentMsgToEngine *pMsg)</div><div class="ttdoc">Exports to current document resource to file. Make sure to write xiiAssetFileHeader at the start of i...</div><div class="ttdef"><b>Definition</b> EngineProcessDocumentContext.cpp:551</div></div>
+<div class="ttc" id="aclassxii_engine_process_document_context_html_ac7e51b557990dbadbc22c9a572ff074c"><div class="ttname"><a href="../../db/df8/classxii_engine_process_document_context.html#ac7e51b557990dbadbc22c9a572ff074c">xiiEngineProcessDocumentContext::CreateViewContext</a></div><div class="ttdeci">virtual xiiEngineProcessViewContext * CreateViewContext()=0</div><div class="ttdoc">Needs to be implemented to create a view context used for windows and thumbnails rendering.</div></div>
+<div class="ttc" id="aclassxii_engine_process_document_context_html_acb4f16c39b43a61dc75bef43c22d9d91"><div class="ttname"><a href="../../db/df8/classxii_engine_process_document_context.html#acb4f16c39b43a61dc75bef43c22d9d91">xiiEngineProcessDocumentContext::DestroyViewContext</a></div><div class="ttdeci">virtual void DestroyViewContext(xiiEngineProcessViewContext *pContext)=0</div><div class="ttdoc">Needs to be implemented to destroy the view context created in CreateViewContext.</div></div>
+<div class="ttc" id="aclassxii_engine_process_document_context_html_ad42f06dd233d3629a4a7fec5162521cf"><div class="ttname"><a href="../../db/df8/classxii_engine_process_document_context.html#ad42f06dd233d3629a4a7fec5162521cf">xiiEngineProcessDocumentContext::OnDestroyThumbnailViewContext</a></div><div class="ttdeci">virtual void OnDestroyThumbnailViewContext()</div><div class="ttdoc">Called before a thumbnail context is destroyed. Used for cleanup of what was done in OnThumbnailViewC...</div><div class="ttdef"><b>Definition</b> EngineProcessDocumentContext.cpp:664</div></div>
+<div class="ttc" id="aclassxii_engine_process_document_context_html_ae83baa7b73e2081195059659d3979777"><div class="ttname"><a href="../../db/df8/classxii_engine_process_document_context.html#ae83baa7b73e2081195059659d3979777">xiiEngineProcessDocumentContext::UpdateThumbnailViewContext</a></div><div class="ttdeci">virtual bool UpdateThumbnailViewContext(xiiEngineProcessViewContext *pThumbnailViewContext)</div><div class="ttdoc">Overwrite this function to apply the thumbnail render settings to the given context.</div><div class="ttdef"><b>Definition</b> EngineProcessDocumentContext.cpp:657</div></div>
+<div class="ttc" id="aclassxii_engine_process_document_context_html_af63231a8093ebaa0c8c558389f512c1b"><div class="ttname"><a href="../../db/df8/classxii_engine_process_document_context.html#af63231a8093ebaa0c8c558389f512c1b">xiiEngineProcessDocumentContext::OnThumbnailViewContextCreated</a></div><div class="ttdeci">virtual void OnThumbnailViewContextCreated()</div><div class="ttdoc">Called after a thumbnail context was created. Allows to insert code before the thumbnail is generated...</div><div class="ttdef"><b>Definition</b> EngineProcessDocumentContext.cpp:663</div></div>
+<div class="ttc" id="aclassxii_engine_process_view_context_html"><div class="ttname"><a href="../../de/d97/classxii_engine_process_view_context.html">xiiEngineProcessViewContext</a></div><div class="ttdoc">Represents the view/window on the engine process side, holds all data necessary for rendering.</div><div class="ttdef"><b>Definition</b> EngineProcessViewContext.h:53</div></div>
+<div class="ttc" id="aclassxii_entity_msg_to_engine_html"><div class="ttname"><a href="../../dc/d60/classxii_entity_msg_to_engine.html">xiiEntityMsgToEngine</a></div><div class="ttdef"><b>Definition</b> EngineProcessMessages.h:298</div></div>
+<div class="ttc" id="aclassxii_export_document_msg_to_engine_html"><div class="ttname"><a href="../../d8/d3e/classxii_export_document_msg_to_engine.html">xiiExportDocumentMsgToEngine</a></div><div class="ttdef"><b>Definition</b> EngineProcessMessages.h:306</div></div>
+<div class="ttc" id="aclassxii_export_scene_geometry_msg_to_engine_html"><div class="ttname"><a href="../../dc/d15/classxii_export_scene_geometry_msg_to_engine.html">xiiExportSceneGeometryMsgToEngine</a></div><div class="ttdef"><b>Definition</b> Messages.h:26</div></div>
+<div class="ttc" id="aclassxii_exposed_document_object_properties_msg_to_engine_html"><div class="ttname"><a href="../../d0/dcb/classxii_exposed_document_object_properties_msg_to_engine.html">xiiExposedDocumentObjectPropertiesMsgToEngine</a></div><div class="ttdef"><b>Definition</b> Messages.h:18</div></div>
+<div class="ttc" id="aclassxii_game_mode_msg_to_engine_html"><div class="ttname"><a href="../../d5/db6/classxii_game_mode_msg_to_engine.html">xiiGameModeMsgToEngine</a></div><div class="ttdef"><b>Definition</b> EngineProcessMessages.h:535</div></div>
+<div class="ttc" id="aclassxii_game_object_html"><div class="ttname"><a href="../../d0/d91/classxii_game_object.html">xiiGameObject</a></div><div class="ttdoc">This class represents an object inside the world.</div><div class="ttdef"><b>Definition</b> GameObject.h:32</div></div>
+<div class="ttc" id="aclassxii_game_state_base_html"><div class="ttname"><a href="../../d6/d63/classxii_game_state_base.html">xiiGameStateBase</a></div><div class="ttdoc">xiiGameState is the base class to build custom game logic upon. It works closely together with xiiGam...</div><div class="ttdef"><b>Definition</b> GameStateBase.h:38</div></div>
+<div class="ttc" id="aclassxii_grid_settings_msg_to_engine_html"><div class="ttname"><a href="../../d9/dc1/classxii_grid_settings_msg_to_engine.html">xiiGridSettingsMsgToEngine</a></div><div class="ttdef"><b>Definition</b> EngineProcessMessages.h:505</div></div>
+<div class="ttc" id="aclassxii_hybrid_array_html"><div class="ttname"><a href="../../dc/da9/classxii_hybrid_array.html">xiiHybridArray</a></div><div class="ttdoc">A hybrid array uses in-place storage to handle the first few elements without any allocation....</div><div class="ttdef"><b>Definition</b> HybridArray.h:12</div></div>
+<div class="ttc" id="aclassxii_layer_context_html"><div class="ttname"><a href="../../d2/d93/classxii_layer_context.html">xiiLayerContext</a></div><div class="ttdoc">Layers that are loaded as sub-documents of a scene share the xiiWorld with their main document scene....</div><div class="ttdef"><b>Definition</b> LayerContext.h:13</div></div>
+<div class="ttc" id="aclassxii_layer_visibility_changed_msg_to_engine_html"><div class="ttname"><a href="../../d0/d04/classxii_layer_visibility_changed_msg_to_engine.html">xiiLayerVisibilityChangedMsgToEngine</a></div><div class="ttdef"><b>Definition</b> Messages.h:70</div></div>
+<div class="ttc" id="aclassxii_object_selection_msg_to_engine_html"><div class="ttname"><a href="../../d9/db6/classxii_object_selection_msg_to_engine.html">xiiObjectSelectionMsgToEngine</a></div><div class="ttdef"><b>Definition</b> EngineProcessMessages.h:488</div></div>
+<div class="ttc" id="aclassxii_object_tag_msg_to_engine_html"><div class="ttname"><a href="../../d4/d53/classxii_object_tag_msg_to_engine.html">xiiObjectTagMsgToEngine</a></div><div class="ttdef"><b>Definition</b> EngineProcessMessages.h:471</div></div>
+<div class="ttc" id="aclassxii_objects_for_debug_vis_msg_to_engine_html"><div class="ttname"><a href="../../d3/d4d/classxii_objects_for_debug_vis_msg_to_engine.html">xiiObjectsForDebugVisMsgToEngine</a></div><div class="ttdoc">Send by the editor scene document to the runtime scene document, to tell it about the poll results (s...</div><div class="ttdef"><b>Definition</b> EngineProcessMessages.h:604</div></div>
+<div class="ttc" id="aclassxii_pull_object_state_msg_to_engine_html"><div class="ttname"><a href="../../dd/d29/classxii_pull_object_state_msg_to_engine.html">xiiPullObjectStateMsgToEngine</a></div><div class="ttdef"><b>Definition</b> Messages.h:37</div></div>
+<div class="ttc" id="aclassxii_push_object_state_msg_to_editor_html"><div class="ttname"><a href="../../d0/d53/classxii_push_object_state_msg_to_editor.html">xiiPushObjectStateMsgToEditor</a></div><div class="ttdef"><b>Definition</b> Messages.h:54</div></div>
+<div class="ttc" id="aclassxii_render_context_html"><div class="ttname"><a href="../../da/d27/classxii_render_context.html">xiiRenderContext</a></div><div class="ttdef"><b>Definition</b> RenderContext.h:34</div></div>
+<div class="ttc" id="aclassxii_scene_context_html"><div class="ttname"><a href="../../db/de8/classxii_scene_context.html">xiiSceneContext</a></div><div class="ttdef"><b>Definition</b> SceneContext.h:26</div></div>
+<div class="ttc" id="aclassxii_set_html"><div class="ttname"><a href="../../d6/d31/classxii_set.html">xiiSet</a></div><div class="ttdef"><b>Definition</b> Set.h:236</div></div>
+<div class="ttc" id="aclassxii_simulation_settings_msg_to_engine_html"><div class="ttname"><a href="../../d0/d50/classxii_simulation_settings_msg_to_engine.html">xiiSimulationSettingsMsgToEngine</a></div><div class="ttdef"><b>Definition</b> EngineProcessMessages.h:496</div></div>
+<div class="ttc" id="aclassxii_tag_html"><div class="ttname"><a href="../../db/d3b/classxii_tag.html">xiiTag</a></div><div class="ttdoc">The tag class stores the necessary lookup information for a single tag which can be used in conjuncti...</div><div class="ttdef"><b>Definition</b> Tag.h:15</div></div>
+<div class="ttc" id="aclassxii_transform_template_html"><div class="ttname"><a href="../../d5/d13/classxii_transform_template.html">xiiTransformTemplate&lt; float &gt;</a></div></div>
+<div class="ttc" id="aclassxii_uuid_html"><div class="ttname"><a href="../../dc/d1d/classxii_uuid.html">xiiUuid</a></div><div class="ttdoc">This data type is the abstraction for 128-bit Uuid (also known as GUID) instances.</div><div class="ttdef"><b>Definition</b> Uuid.h:11</div></div>
+<div class="ttc" id="aclassxii_view_handle_html"><div class="ttname"><a href="../../d5/db8/classxii_view_handle.html">xiiViewHandle</a></div><div class="ttdef"><b>Definition</b> Declarations.h:65</div></div>
+<div class="ttc" id="aclassxii_view_redraw_msg_to_engine_html"><div class="ttname"><a href="../../d6/d27/classxii_view_redraw_msg_to_engine.html">xiiViewRedrawMsgToEngine</a></div><div class="ttdef"><b>Definition</b> EngineProcessMessages.h:256</div></div>
+<div class="ttc" id="aclassxii_world_rtti_converter_context_html"><div class="ttname"><a href="../../d2/d12/classxii_world_rtti_converter_context.html">xiiWorldRttiConverterContext</a></div><div class="ttdoc">The world rtti converter context tracks created objects and is capable of also handling components / ...</div><div class="ttdef"><b>Definition</b> WorldRttiConverterContext.h:14</div></div>
+<div class="ttc" id="aclassxii_world_settings_msg_to_engine_html"><div class="ttname"><a href="../../de/df2/classxii_world_settings_msg_to_engine.html">xiiWorldSettingsMsgToEngine</a></div><div class="ttdef"><b>Definition</b> EngineProcessMessages.h:524</div></div>
+<div class="ttc" id="aclassxii_world_writer_html"><div class="ttname"><a href="../../de/d8c/classxii_world_writer.html">xiiWorldWriter</a></div><div class="ttdoc">Stores an entire xiiWorld in a stream.</div><div class="ttdef"><b>Definition</b> WorldWriter.h:13</div></div>
+<div class="ttc" id="anamespacexii_math_html_a821b432e7a9c8ac292eb255ee11e9e10"><div class="ttname"><a href="../../d1/d37/namespacexii_math.html#a821b432e7a9c8ac292eb255ee11e9e10">xiiMath::Abs</a></div><div class="ttdeci">constexpr XII_ALWAYS_INLINE T Abs(T f)</div><div class="ttdoc">Returns the absolute value of f.</div><div class="ttdef"><b>Definition</b> Math_inl.h:20</div></div>
+<div class="ttc" id="astructxii_component_handle_html"><div class="ttname"><a href="../../da/d8d/structxii_component_handle.html">xiiComponentHandle</a></div><div class="ttdoc">A handle to a component.</div><div class="ttdef"><b>Definition</b> Declarations.h:138</div></div>
+<div class="ttc" id="astructxii_game_application_execution_event_html"><div class="ttname"><a href="../../d7/de3/structxii_game_application_execution_event.html">xiiGameApplicationExecutionEvent</a></div><div class="ttdef"><b>Definition</b> GameApplicationBase.h:32</div></div>
+<div class="ttc" id="astructxii_game_object_handle_html"><div class="ttname"><a href="../../da/d2c/structxii_game_object_handle.html">xiiGameObjectHandle</a></div><div class="ttdoc">A handle to a game object.</div><div class="ttdef"><b>Definition</b> Declarations.h:76</div></div>
+<div class="ttc" id="astructxii_resource_manager_event_html"><div class="ttname"><a href="../../d5/db1/structxii_resource_manager_event.html">xiiResourceManagerEvent</a></div><div class="ttdoc">Events sent by the xiiResourceManager.</div><div class="ttdef"><b>Definition</b> Declarations.h:40</div></div>
+<div class="ttc" id="astructxii_status_html"><div class="ttname"><a href="../../d0/d54/structxii_status.html">xiiStatus</a></div><div class="ttdoc">An xiiResult with an additional message for the reason of failure.</div><div class="ttdef"><b>Definition</b> Status.h:12</div></div>
+<div class="ttc" id="astructxii_string_view_html"><div class="ttname"><a href="../../da/d9d/structxii_string_view.html">xiiStringView</a></div><div class="ttdoc">xiiStringView represent a read-only sub-string of a larger string, as it can store a dedicated string...</div><div class="ttdef"><b>Definition</b> StringView.h:28</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.html">home</a></li><li class="navelem"><a class="el" href="../../dir_1036706e55c22cab35bc1c58ee689f1d.html">runner</a></li><li class="navelem"><a class="el" href="../../dir_629f8151d55d307162ff2d619fb1783d.html">work</a></li><li class="navelem"><a class="el" href="../../dir_1ddc44fe1263a8c7935fa6130b7d9499.html">XII</a></li><li class="navelem"><a class="el" href="../../dir_2c1b6808f12952f4c36e05ba7068379a.html">XII</a></li><li class="navelem"><a class="el" href="../../dir_b5a1c4ecfca018ad24b729e213296d41.html">Source</a></li><li class="navelem"><a class="el" href="../../dir_8b2872ebfb9e9766b55af832f324e224.html">EditorPlugins</a></li><li class="navelem"><a class="el" href="../../dir_c642feaeb18ef88402e5c1122103be28.html">Scene</a></li><li class="navelem"><a class="el" href="../../dir_63518dabd7b797596422f4226e48248e.html">EnginePluginScene</a></li><li class="navelem"><a class="el" href="../../dir_54ddabeaa13394bdb4489cf5e1a773e2.html">SceneContext</a></li><li class="navelem"><b>SceneContext.h</b></li>
+    <li class="footer">Generated on Mon Jul 1 2024 23:53:04 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+  </ul>
+</div>
+</body>
+</html>

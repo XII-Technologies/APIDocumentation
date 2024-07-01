@@ -1,0 +1,523 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.11.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<!-- BEGIN opengraph metadata -->
+<meta property="og:title" content="XII" />
+<meta property="og:image" content="../../XII-Logo.png" />
+<meta property="og:description" content="An advanced high-performance simulation engine." />
+<meta property="og:url" content="https://www.xiitechnologies.com" />
+<!-- END opengraph metadata -->
+<!-- BEGIN twitter metadata -->
+<meta name="twitter:image:src" content="../../XII-Logo.png" />
+<meta name="twitter:title" content="XII" />
+<meta name="twitter:description" content="An advanced high-performance simulation engine." />
+<!-- END twitter metadata -->
+<title>XII: xiiAbstractFunctionProperty Class Reference</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link rel="icon" type="image/svg+xml" href="logo.drawio.svg"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="../../toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../custom.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<a href="https://github.com/jothepro/doxygen-awesome-css" class="github-corner" title="View source on GitHub" target="_blank" rel="noopener noreferrer">
+    <svg viewBox="0 0 250 250" width="40" height="40" style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+    <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="../../XII-Logo.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">XII
+   &#160;<span id="projectnumber">1.0.0</span>
+   </div>
+   <div id="projectbrief">A high-performance simulation engine.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(1); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.html','Search',true);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('de/d27/classxii_abstract_function_property.html','../../'); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="../../da/de7/classxii_abstract_function_property-members.html">List of all members</a>  </div>
+  <div class="headertitle"><div class="title">xiiAbstractFunctionProperty Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>The base class for a property that represents a function.  
+ <a href="#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="../../d8/d4a/_abstract_property_8h_source.html">AbstractProperty.h</a>&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for xiiAbstractFunctionProperty:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d6/d1e/classxii_abstract_function_property__inherit__graph.svg" width="100%" height="582"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">legend</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:af5c36c1e65846ae3407259500e2e326e" id="r_af5c36c1e65846ae3407259500e2e326e"><td class="memItemLeft" align="right" valign="top"><a id="af5c36c1e65846ae3407259500e2e326e" name="af5c36c1e65846ae3407259500e2e326e"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>xiiAbstractFunctionProperty</b> (<a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sPropertyName)</td></tr>
+<tr class="memdesc:af5c36c1e65846ae3407259500e2e326e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Passes the property name through to <a class="el" href="../../da/d25/classxii_abstract_property.html" title="This is the base interface for all properties in the reflection system. It provides enough informatio...">xiiAbstractProperty</a>. <br /></td></tr>
+<tr class="separator:af5c36c1e65846ae3407259500e2e326e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46d3d1dc8f2c5381d9c87faf9a760b67" id="r_a46d3d1dc8f2c5381d9c87faf9a760b67"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d8/d9c/structxii_property_category.html#a955c0fc07dab4281c48ea7319c91a361">xiiPropertyCategory::Enum</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a46d3d1dc8f2c5381d9c87faf9a760b67">GetCategory</a> () const override</td></tr>
+<tr class="memdesc:a46d3d1dc8f2c5381d9c87faf9a760b67"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the category of this property. Cast this property to the next higher type for more information.  <br /></td></tr>
+<tr class="separator:a46d3d1dc8f2c5381d9c87faf9a760b67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a762eb413af6738fbbb8497ae124fef3b" id="r_a762eb413af6738fbbb8497ae124fef3b"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../dc/d96/structxii_function_type.html#aa1f281549634c67b2db3e16e4a220520">xiiFunctionType::Enum</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a762eb413af6738fbbb8497ae124fef3b">GetFunctionType</a> () const =0</td></tr>
+<tr class="memdesc:a762eb413af6738fbbb8497ae124fef3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the type of function, see xiiFunctionPropertyType::Enum.  <br /></td></tr>
+<tr class="separator:a762eb413af6738fbbb8497ae124fef3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6eac337da299922ff4f2ebf1ad1af082" id="r_a6eac337da299922ff4f2ebf1ad1af082"><td class="memItemLeft" align="right" valign="top">virtual const <a class="el" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6eac337da299922ff4f2ebf1ad1af082">GetReturnType</a> () const =0</td></tr>
+<tr class="memdesc:a6eac337da299922ff4f2ebf1ad1af082"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the type of the return value.  <br /></td></tr>
+<tr class="separator:a6eac337da299922ff4f2ebf1ad1af082"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae830261e68cda5daa4c6482cb0e81a97" id="r_ae830261e68cda5daa4c6482cb0e81a97"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d7/d55/structxii_bitflags.html">xiiBitflags</a>&lt; <a class="el" href="../../d6/d7c/structxii_property_flags.html">xiiPropertyFlags</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae830261e68cda5daa4c6482cb0e81a97">GetReturnFlags</a> () const =0</td></tr>
+<tr class="memdesc:ae830261e68cda5daa4c6482cb0e81a97"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns property flags of the return value.  <br /></td></tr>
+<tr class="separator:ae830261e68cda5daa4c6482cb0e81a97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94001645e771965fe0599ee76581c9e1" id="r_a94001645e771965fe0599ee76581c9e1"><td class="memItemLeft" align="right" valign="top">virtual xiiUInt32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a94001645e771965fe0599ee76581c9e1">GetArgumentCount</a> () const =0</td></tr>
+<tr class="memdesc:a94001645e771965fe0599ee76581c9e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of arguments.  <br /></td></tr>
+<tr class="separator:a94001645e771965fe0599ee76581c9e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab452086894aeba5f900869080fee3db7" id="r_ab452086894aeba5f900869080fee3db7"><td class="memItemLeft" align="right" valign="top">virtual const <a class="el" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab452086894aeba5f900869080fee3db7">GetArgumentType</a> (xiiUInt32 uiParamIndex) const =0</td></tr>
+<tr class="memdesc:ab452086894aeba5f900869080fee3db7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the type of the given argument.  <br /></td></tr>
+<tr class="separator:ab452086894aeba5f900869080fee3db7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9519a3ff6266b66607c996934de2f63" id="r_af9519a3ff6266b66607c996934de2f63"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d7/d55/structxii_bitflags.html">xiiBitflags</a>&lt; <a class="el" href="../../d6/d7c/structxii_property_flags.html">xiiPropertyFlags</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af9519a3ff6266b66607c996934de2f63">GetArgumentFlags</a> (xiiUInt32 uiParamIndex) const =0</td></tr>
+<tr class="memdesc:af9519a3ff6266b66607c996934de2f63"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the property flags of the given argument.  <br /></td></tr>
+<tr class="separator:af9519a3ff6266b66607c996934de2f63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad44d8779f400e07571101f12b0529e86" id="r_ad44d8779f400e07571101f12b0529e86"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad44d8779f400e07571101f12b0529e86">Execute</a> (void *pInstance, <a class="el" href="../../d0/d60/classxii_array_ptr.html">xiiArrayPtr</a>&lt; <a class="el" href="../../db/d1a/classxii_variant.html">xiiVariant</a> &gt; arguments, <a class="el" href="../../db/d1a/classxii_variant.html">xiiVariant</a> &amp;out_returnValue) const =0</td></tr>
+<tr class="memdesc:ad44d8779f400e07571101f12b0529e86"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calls the function. Provide the instance on which the function is supposed to be called.  <br /></td></tr>
+<tr class="separator:ad44d8779f400e07571101f12b0529e86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab7e1c20d6e85351c79fab09a89732af" id="r_aab7e1c20d6e85351c79fab09a89732af"><td class="memItemLeft" align="right" valign="top">virtual const <a class="el" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aab7e1c20d6e85351c79fab09a89732af">GetSpecificType</a> () const override</td></tr>
+<tr class="memdesc:aab7e1c20d6e85351c79fab09a89732af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the type information of the constant property. Use this to cast this property to a specific version of <a class="el" href="../../d3/de4/classxii_typed_constant_property.html" title="The base class for all typed member properties. Ie. once the type of a property is determined,...">xiiTypedConstantProperty</a>.  <br /></td></tr>
+<tr class="separator:aab7e1c20d6e85351c79fab09a89732af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04f532b2195764070a134c56279a2ea0" id="r_a04f532b2195764070a134c56279a2ea0"><td class="memItemLeft" align="right" valign="top"><a id="a04f532b2195764070a134c56279a2ea0" name="a04f532b2195764070a134c56279a2ea0"></a>
+<a class="el" href="../../de/d27/classxii_abstract_function_property.html">xiiAbstractFunctionProperty</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>AddFlags</b> (<a class="el" href="../../d7/d55/structxii_bitflags.html">xiiBitflags</a>&lt; <a class="el" href="../../d6/d7c/structxii_property_flags.html">xiiPropertyFlags</a> &gt; flags)</td></tr>
+<tr class="memdesc:a04f532b2195764070a134c56279a2ea0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds flags to the property. Returns itself to allow to be called during initialization. <br /></td></tr>
+<tr class="separator:a04f532b2195764070a134c56279a2ea0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab06d84403e5e9fdba778237ee6728b94" id="r_ab06d84403e5e9fdba778237ee6728b94"><td class="memItemLeft" align="right" valign="top"><a id="ab06d84403e5e9fdba778237ee6728b94" name="ab06d84403e5e9fdba778237ee6728b94"></a>
+<a class="el" href="../../de/d27/classxii_abstract_function_property.html">xiiAbstractFunctionProperty</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>AddAttributes</b> (<a class="el" href="../../d5/df0/classxii_property_attribute.html">xiiPropertyAttribute</a> *pAttrib1, <a class="el" href="../../d5/df0/classxii_property_attribute.html">xiiPropertyAttribute</a> *pAttrib2=nullptr, <a class="el" href="../../d5/df0/classxii_property_attribute.html">xiiPropertyAttribute</a> *pAttrib3=nullptr, <a class="el" href="../../d5/df0/classxii_property_attribute.html">xiiPropertyAttribute</a> *pAttrib4=nullptr, <a class="el" href="../../d5/df0/classxii_property_attribute.html">xiiPropertyAttribute</a> *pAttrib5=nullptr, <a class="el" href="../../d5/df0/classxii_property_attribute.html">xiiPropertyAttribute</a> *pAttrib6=nullptr)</td></tr>
+<tr class="memdesc:ab06d84403e5e9fdba778237ee6728b94"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds attributes to the property. Returns itself to allow to be called during initialization. Allocate an attribute using standard 'new'. <br /></td></tr>
+<tr class="separator:ab06d84403e5e9fdba778237ee6728b94"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classxii_abstract_property"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_classxii_abstract_property')"><img src="../../closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="../../da/d25/classxii_abstract_property.html">xiiAbstractProperty</a></td></tr>
+<tr class="memitem:a84b927e254d587c57b4dd956eb93d4a1 inherit pub_methods_classxii_abstract_property" id="r_a84b927e254d587c57b4dd956eb93d4a1"><td class="memItemLeft" align="right" valign="top">
+&#160;</td><td class="memItemRight" valign="bottom"><b>xiiAbstractProperty</b> (<a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sPropertyName)</td></tr>
+<tr class="memdesc:a84b927e254d587c57b4dd956eb93d4a1 inherit pub_methods_classxii_abstract_property"><td class="mdescLeft">&#160;</td><td class="mdescRight">The constructor must get the name of the property. The string must be a compile-time constant. <br /></td></tr>
+<tr class="separator:a84b927e254d587c57b4dd956eb93d4a1 inherit pub_methods_classxii_abstract_property"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6cc3cf4e5893d65b88b67ba6c6c6f0c3 inherit pub_methods_classxii_abstract_property" id="r_a6cc3cf4e5893d65b88b67ba6c6c6f0c3"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetPropertyName</b> () const</td></tr>
+<tr class="memdesc:a6cc3cf4e5893d65b88b67ba6c6c6f0c3 inherit pub_methods_classxii_abstract_property"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the name of the property. <br /></td></tr>
+<tr class="separator:a6cc3cf4e5893d65b88b67ba6c6c6f0c3 inherit pub_methods_classxii_abstract_property"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf52f12e0c85bf15996d309354bc5125 inherit pub_methods_classxii_abstract_property" id="r_aaf52f12e0c85bf15996d309354bc5125"><td class="memItemLeft" align="right" valign="top">
+const <a class="el" href="../../d7/d55/structxii_bitflags.html">xiiBitflags</a>&lt; <a class="el" href="../../d6/d7c/structxii_property_flags.html">xiiPropertyFlags</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetFlags</b> () const</td></tr>
+<tr class="memdesc:aaf52f12e0c85bf15996d309354bc5125 inherit pub_methods_classxii_abstract_property"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the flags of the property. <br /></td></tr>
+<tr class="separator:aaf52f12e0c85bf15996d309354bc5125 inherit pub_methods_classxii_abstract_property"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4aa513d987be8a86f89827bd64a1b1e inherit pub_methods_classxii_abstract_property" id="r_af4aa513d987be8a86f89827bd64a1b1e"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="../../da/d25/classxii_abstract_property.html">xiiAbstractProperty</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>AddFlags</b> (<a class="el" href="../../d7/d55/structxii_bitflags.html">xiiBitflags</a>&lt; <a class="el" href="../../d6/d7c/structxii_property_flags.html">xiiPropertyFlags</a> &gt; flags)</td></tr>
+<tr class="memdesc:af4aa513d987be8a86f89827bd64a1b1e inherit pub_methods_classxii_abstract_property"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds flags to the property. Returns itself to allow to be called during initialization. <br /></td></tr>
+<tr class="separator:af4aa513d987be8a86f89827bd64a1b1e inherit pub_methods_classxii_abstract_property"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1306cba889c57221656d894af811b4f inherit pub_methods_classxii_abstract_property" id="r_af1306cba889c57221656d894af811b4f"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="../../da/d25/classxii_abstract_property.html">xiiAbstractProperty</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>AddAttributes</b> (<a class="el" href="../../d5/df0/classxii_property_attribute.html">xiiPropertyAttribute</a> *pAttrib1, <a class="el" href="../../d5/df0/classxii_property_attribute.html">xiiPropertyAttribute</a> *pAttrib2=nullptr, <a class="el" href="../../d5/df0/classxii_property_attribute.html">xiiPropertyAttribute</a> *pAttrib3=nullptr, <a class="el" href="../../d5/df0/classxii_property_attribute.html">xiiPropertyAttribute</a> *pAttrib4=nullptr, <a class="el" href="../../d5/df0/classxii_property_attribute.html">xiiPropertyAttribute</a> *pAttrib5=nullptr, <a class="el" href="../../d5/df0/classxii_property_attribute.html">xiiPropertyAttribute</a> *pAttrib6=nullptr)</td></tr>
+<tr class="memdesc:af1306cba889c57221656d894af811b4f inherit pub_methods_classxii_abstract_property"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds attributes to the property. Returns itself to allow to be called during initialization. Allocate an attribute using standard 'new'. <br /></td></tr>
+<tr class="separator:af1306cba889c57221656d894af811b4f inherit pub_methods_classxii_abstract_property"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acdab3642a3c77a8600e8dbdd344dbfa5 inherit pub_methods_classxii_abstract_property" id="r_acdab3642a3c77a8600e8dbdd344dbfa5"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="../../d0/d60/classxii_array_ptr.html">xiiArrayPtr</a>&lt; const <a class="el" href="../../d5/df0/classxii_property_attribute.html">xiiPropertyAttribute</a> *const &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetAttributes</b> () const</td></tr>
+<tr class="memdesc:acdab3642a3c77a8600e8dbdd344dbfa5 inherit pub_methods_classxii_abstract_property"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the array of property attributes. <br /></td></tr>
+<tr class="separator:acdab3642a3c77a8600e8dbdd344dbfa5 inherit pub_methods_classxii_abstract_property"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad4ec48408db2eba3b0056700af83a3b inherit pub_methods_classxii_abstract_property" id="r_aad4ec48408db2eba3b0056700af83a3b"><td class="memTemplParams" colspan="2">
+template&lt;typename Type &gt; </td></tr>
+<tr class="memitem:aad4ec48408db2eba3b0056700af83a3b inherit pub_methods_classxii_abstract_property"><td class="memTemplItemLeft" align="right" valign="top">const Type *&#160;</td><td class="memTemplItemRight" valign="bottom"><b>GetAttributeByType</b> () const</td></tr>
+<tr class="memdesc:aad4ec48408db2eba3b0056700af83a3b inherit pub_methods_classxii_abstract_property"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the first attribute that derives from the given type, or nullptr if nothing is found. <br /></td></tr>
+<tr class="separator:aad4ec48408db2eba3b0056700af83a3b inherit pub_methods_classxii_abstract_property"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pro_attribs_classxii_abstract_property"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_attribs_classxii_abstract_property')"><img src="../../closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="../../da/d25/classxii_abstract_property.html">xiiAbstractProperty</a></td></tr>
+<tr class="memitem:a21c1cf152a2595b9cec84da4264258a0 inherit pro_attribs_classxii_abstract_property" id="r_a21c1cf152a2595b9cec84da4264258a0"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="../../d7/d55/structxii_bitflags.html">xiiBitflags</a>&lt; <a class="el" href="../../d6/d7c/structxii_property_flags.html">xiiPropertyFlags</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_Flags</b></td></tr>
+<tr class="separator:a21c1cf152a2595b9cec84da4264258a0 inherit pro_attribs_classxii_abstract_property"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ab36c24bce444210f4073e13b5d9d62 inherit pro_attribs_classxii_abstract_property" id="r_a4ab36c24bce444210f4073e13b5d9d62"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_sPropertyName</b></td></tr>
+<tr class="separator:a4ab36c24bce444210f4073e13b5d9d62 inherit pro_attribs_classxii_abstract_property"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae62000a5340129da5eccc66add039dc1 inherit pro_attribs_classxii_abstract_property" id="r_ae62000a5340129da5eccc66add039dc1"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="../../dc/da9/classxii_hybrid_array.html">xiiHybridArray</a>&lt; const <a class="el" href="../../d5/df0/classxii_property_attribute.html">xiiPropertyAttribute</a> *, 2U, <a class="el" href="../../df/d02/structxii_static_allocator_wrapper.html">xiiStaticAllocatorWrapper</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_Attributes</b></td></tr>
+<tr class="separator:ae62000a5340129da5eccc66add039dc1 inherit pro_attribs_classxii_abstract_property"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>The base class for a property that represents a function. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="ad44d8779f400e07571101f12b0529e86" name="ad44d8779f400e07571101f12b0529e86"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad44d8779f400e07571101f12b0529e86">&#9670;&#160;</a></span>Execute()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void xiiAbstractFunctionProperty::Execute </td>
+          <td>(</td>
+          <td class="paramtype">void *</td>          <td class="paramname"><span class="paramname"><em>pInstance</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d0/d60/classxii_array_ptr.html">xiiArrayPtr</a>&lt; <a class="el" href="../../db/d1a/classxii_variant.html">xiiVariant</a> &gt;</td>          <td class="paramname"><span class="paramname"><em>arguments</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../db/d1a/classxii_variant.html">xiiVariant</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>out_returnValue</em></span>&#160;) const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Calls the function. Provide the instance on which the function is supposed to be called. </p>
+<p>arguments must be the size of GetArgumentCount, the following rules apply for both arguments and return value: Any standard type must be provided by value, even if it is a pointer to one. Types must match exactly, no ConvertTo is called. enum and bitflags are supported if <a class="el" href="../../de/dfd/structxii_enum.html" title="A custom enum implementation that allows to define the underlying storage type to control its memory ...">xiiEnum</a> / <a class="el" href="../../d7/d55/structxii_bitflags.html" title="The xiiBitflags class allows you to work with type-safe bitflags.">xiiBitflags</a> is used, value must be provided as xiiInt64. Out values (&amp;, *) are written back to the variant they were read from. Any class is provided by pointer, regardless of whether it is a pointer or not. The returnValue must only be valid if the return value is a ref or by value class. In that case returnValue must be a ptr to a valid class instance of the returned type. An invalid variant is equal to a nullptr, except for if the argument is of type <a class="el" href="../../db/d1a/classxii_variant.html" title="xiiVariant is a class that can store different types of variables, which is useful in situations wher...">xiiVariant</a>, in which case it is impossible to pass along a nullptr. </p>
+
+<p>Implemented in <a class="el" href="../../da/d9e/classxii_constructor_function_property.html#a38c7f94460ace7a789143a3f1beb8a06">xiiConstructorFunctionProperty&lt; CLASS, Args &gt;</a>, <a class="el" href="../../d3/d43/classxii_function_property_3_01_r_07_5_08_07_args_8_8_8_08_4.html#a341925916dc7f768bba3fb633349462b">xiiFunctionProperty&lt; R(*)(Args...)&gt;</a>, <a class="el" href="../../df/d6f/classxii_function_property_3_01_r_07_c_l_a_s_s_1_1_5_08_07_args_8_8_8_08_01const_01_4.html#ac4ffc4232ce9fca64c63bb97f11cb67d">xiiFunctionProperty&lt; R(CLASS::*)(Args...) const &gt;</a>, <a class="el" href="../../dc/dd1/classxii_function_property_3_01_r_07_c_l_a_s_s_1_1_5_08_07_args_8_8_8_08_4.html#a05c1431c9dacec9bb9caf91c92c044a4">xiiFunctionProperty&lt; R(CLASS::*)(Args...)&gt;</a>, <a class="el" href="../../d4/dcb/classxii_phantom_function_property.html#a45e7bfc288ee245bf5ea1ac80dedbc91">xiiPhantomFunctionProperty</a>, <a class="el" href="../../df/dce/classxii_script_coroutine_function_property.html#a17f000240f40be5abb9c2fe0c5431eff">xiiScriptCoroutineFunctionProperty</a>, and <a class="el" href="../../dd/d02/classxii_visual_script_function_property.html#a56203267b888e82da2409207c9c55e2b">xiiVisualScriptFunctionProperty</a>.</p>
+
+</div>
+</div>
+<a id="a94001645e771965fe0599ee76581c9e1" name="a94001645e771965fe0599ee76581c9e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a94001645e771965fe0599ee76581c9e1">&#9670;&#160;</a></span>GetArgumentCount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual xiiUInt32 xiiAbstractFunctionProperty::GetArgumentCount </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the number of arguments. </p>
+
+<p>Implemented in <a class="el" href="../../d4/dcb/classxii_phantom_function_property.html#a8f56d6b31dc7196fbc859b37517b665f">xiiPhantomFunctionProperty</a>, <a class="el" href="../../df/dce/classxii_script_coroutine_function_property.html#aed0978bf7976fd60c3d7a88f4949262d">xiiScriptCoroutineFunctionProperty</a>, <a class="el" href="../../d9/dc8/classxii_typed_function_property.html#a725de67a87380b09c8de17723c77cceb">xiiTypedFunctionProperty&lt; R, Args &gt;</a>, <a class="el" href="../../d9/dc8/classxii_typed_function_property.html#a725de67a87380b09c8de17723c77cceb">xiiTypedFunctionProperty&lt; CLASS *, Args... &gt;</a>, <a class="el" href="../../d9/dc8/classxii_typed_function_property.html#a725de67a87380b09c8de17723c77cceb">xiiTypedFunctionProperty&lt; R, Args... &gt;</a>, and <a class="el" href="../../dd/d02/classxii_visual_script_function_property.html#aa15789cf1974d7014ce0b0db697c36ab">xiiVisualScriptFunctionProperty</a>.</p>
+
+</div>
+</div>
+<a id="af9519a3ff6266b66607c996934de2f63" name="af9519a3ff6266b66607c996934de2f63"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af9519a3ff6266b66607c996934de2f63">&#9670;&#160;</a></span>GetArgumentFlags()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="../../d7/d55/structxii_bitflags.html">xiiBitflags</a>&lt; <a class="el" href="../../d6/d7c/structxii_property_flags.html">xiiPropertyFlags</a> &gt; xiiAbstractFunctionProperty::GetArgumentFlags </td>
+          <td>(</td>
+          <td class="paramtype">xiiUInt32</td>          <td class="paramname"><span class="paramname"><em>uiParamIndex</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the property flags of the given argument. </p>
+
+<p>Implemented in <a class="el" href="../../d4/dcb/classxii_phantom_function_property.html#a4b0a75f44f16e2f1f21d2b1b16eac1f1">xiiPhantomFunctionProperty</a>, <a class="el" href="../../df/dce/classxii_script_coroutine_function_property.html#acbc98235b53d6ebd7833b77795cf4ba7">xiiScriptCoroutineFunctionProperty</a>, <a class="el" href="../../d9/dc8/classxii_typed_function_property.html#ad71a9d0789bf70e9ab33eab20911bf21">xiiTypedFunctionProperty&lt; R, Args &gt;</a>, <a class="el" href="../../d9/dc8/classxii_typed_function_property.html#ad71a9d0789bf70e9ab33eab20911bf21">xiiTypedFunctionProperty&lt; CLASS *, Args... &gt;</a>, <a class="el" href="../../d9/dc8/classxii_typed_function_property.html#ad71a9d0789bf70e9ab33eab20911bf21">xiiTypedFunctionProperty&lt; R, Args... &gt;</a>, and <a class="el" href="../../dd/d02/classxii_visual_script_function_property.html#ac0bd2352f8306d7d235fad5e399e3167">xiiVisualScriptFunctionProperty</a>.</p>
+
+</div>
+</div>
+<a id="ab452086894aeba5f900869080fee3db7" name="ab452086894aeba5f900869080fee3db7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab452086894aeba5f900869080fee3db7">&#9670;&#160;</a></span>GetArgumentType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual const <a class="el" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a> * xiiAbstractFunctionProperty::GetArgumentType </td>
+          <td>(</td>
+          <td class="paramtype">xiiUInt32</td>          <td class="paramname"><span class="paramname"><em>uiParamIndex</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the type of the given argument. </p>
+
+<p>Implemented in <a class="el" href="../../d4/dcb/classxii_phantom_function_property.html#a7bbc09bdc0bdf28d6697acbbd1008405">xiiPhantomFunctionProperty</a>, <a class="el" href="../../df/dce/classxii_script_coroutine_function_property.html#a90fc5f7ae36c8923535a98949148d3bf">xiiScriptCoroutineFunctionProperty</a>, <a class="el" href="../../d9/dc8/classxii_typed_function_property.html#a639e04679f74d7c2696316ed26647971">xiiTypedFunctionProperty&lt; R, Args &gt;</a>, <a class="el" href="../../d9/dc8/classxii_typed_function_property.html#a639e04679f74d7c2696316ed26647971">xiiTypedFunctionProperty&lt; CLASS *, Args... &gt;</a>, <a class="el" href="../../d9/dc8/classxii_typed_function_property.html#a639e04679f74d7c2696316ed26647971">xiiTypedFunctionProperty&lt; R, Args... &gt;</a>, and <a class="el" href="../../dd/d02/classxii_visual_script_function_property.html#a7dd1a4e565153f53cfc6acbf1723abe5">xiiVisualScriptFunctionProperty</a>.</p>
+
+</div>
+</div>
+<a id="a46d3d1dc8f2c5381d9c87faf9a760b67" name="a46d3d1dc8f2c5381d9c87faf9a760b67"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a46d3d1dc8f2c5381d9c87faf9a760b67">&#9670;&#160;</a></span>GetCategory()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="../../d8/d9c/structxii_property_category.html#a955c0fc07dab4281c48ea7319c91a361">xiiPropertyCategory::Enum</a> xiiAbstractFunctionProperty::GetCategory </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the category of this property. Cast this property to the next higher type for more information. </p>
+
+<p>Implements <a class="el" href="../../da/d25/classxii_abstract_property.html#a11532b5facfb451603bdd8640db830c5">xiiAbstractProperty</a>.</p>
+
+</div>
+</div>
+<a id="a762eb413af6738fbbb8497ae124fef3b" name="a762eb413af6738fbbb8497ae124fef3b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a762eb413af6738fbbb8497ae124fef3b">&#9670;&#160;</a></span>GetFunctionType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="../../dc/d96/structxii_function_type.html#aa1f281549634c67b2db3e16e4a220520">xiiFunctionType::Enum</a> xiiAbstractFunctionProperty::GetFunctionType </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the type of function, see xiiFunctionPropertyType::Enum. </p>
+
+<p>Implemented in <a class="el" href="../../da/d9e/classxii_constructor_function_property.html#a7032e10d22d85873a22718e57eae8e02">xiiConstructorFunctionProperty&lt; CLASS, Args &gt;</a>, <a class="el" href="../../d3/d43/classxii_function_property_3_01_r_07_5_08_07_args_8_8_8_08_4.html#a1099f937f76c1fe08038c2198d2d1ece">xiiFunctionProperty&lt; R(*)(Args...)&gt;</a>, <a class="el" href="../../df/d6f/classxii_function_property_3_01_r_07_c_l_a_s_s_1_1_5_08_07_args_8_8_8_08_01const_01_4.html#a1453908192661a0443d59340f84bafe7">xiiFunctionProperty&lt; R(CLASS::*)(Args...) const &gt;</a>, <a class="el" href="../../dc/dd1/classxii_function_property_3_01_r_07_c_l_a_s_s_1_1_5_08_07_args_8_8_8_08_4.html#a61c69497a40074cfa1046f0e233926e1">xiiFunctionProperty&lt; R(CLASS::*)(Args...)&gt;</a>, <a class="el" href="../../d4/dcb/classxii_phantom_function_property.html#a4321e2cc872ef53a96a8ff3ea50b60f6">xiiPhantomFunctionProperty</a>, <a class="el" href="../../df/dce/classxii_script_coroutine_function_property.html#ae638916a1f2df85c53087bfd7f26d9b3">xiiScriptCoroutineFunctionProperty</a>, and <a class="el" href="../../dd/d02/classxii_visual_script_function_property.html#a7fbf8244c9fcc62be9b5f62f9782b314">xiiVisualScriptFunctionProperty</a>.</p>
+
+</div>
+</div>
+<a id="ae830261e68cda5daa4c6482cb0e81a97" name="ae830261e68cda5daa4c6482cb0e81a97"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae830261e68cda5daa4c6482cb0e81a97">&#9670;&#160;</a></span>GetReturnFlags()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="../../d7/d55/structxii_bitflags.html">xiiBitflags</a>&lt; <a class="el" href="../../d6/d7c/structxii_property_flags.html">xiiPropertyFlags</a> &gt; xiiAbstractFunctionProperty::GetReturnFlags </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns property flags of the return value. </p>
+
+<p>Implemented in <a class="el" href="../../d4/dcb/classxii_phantom_function_property.html#ae3c4780b555fd2701fc5deb3ce43f30a">xiiPhantomFunctionProperty</a>, <a class="el" href="../../df/dce/classxii_script_coroutine_function_property.html#abdec750f9988bb58f3173960ef8ff178">xiiScriptCoroutineFunctionProperty</a>, <a class="el" href="../../d9/dc8/classxii_typed_function_property.html#a4fdd9e499cc8cefaf9f43e0202f7e7f3">xiiTypedFunctionProperty&lt; R, Args &gt;</a>, <a class="el" href="../../d9/dc8/classxii_typed_function_property.html#a4fdd9e499cc8cefaf9f43e0202f7e7f3">xiiTypedFunctionProperty&lt; CLASS *, Args... &gt;</a>, <a class="el" href="../../d9/dc8/classxii_typed_function_property.html#a4fdd9e499cc8cefaf9f43e0202f7e7f3">xiiTypedFunctionProperty&lt; R, Args... &gt;</a>, and <a class="el" href="../../dd/d02/classxii_visual_script_function_property.html#abff5d197aa6cee43787569415ce02ec4">xiiVisualScriptFunctionProperty</a>.</p>
+
+</div>
+</div>
+<a id="a6eac337da299922ff4f2ebf1ad1af082" name="a6eac337da299922ff4f2ebf1ad1af082"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6eac337da299922ff4f2ebf1ad1af082">&#9670;&#160;</a></span>GetReturnType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual const <a class="el" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a> * xiiAbstractFunctionProperty::GetReturnType </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the type of the return value. </p>
+
+<p>Implemented in <a class="el" href="../../d4/dcb/classxii_phantom_function_property.html#a07d5f3b2e48a228e59279145ee6327bf">xiiPhantomFunctionProperty</a>, <a class="el" href="../../df/dce/classxii_script_coroutine_function_property.html#a1c34704ec140d1cd05f5597c10399bd4">xiiScriptCoroutineFunctionProperty</a>, <a class="el" href="../../d9/dc8/classxii_typed_function_property.html#a979b0ff0bce71b8c7c16ff4619704248">xiiTypedFunctionProperty&lt; R, Args &gt;</a>, <a class="el" href="../../d9/dc8/classxii_typed_function_property.html#a979b0ff0bce71b8c7c16ff4619704248">xiiTypedFunctionProperty&lt; CLASS *, Args... &gt;</a>, <a class="el" href="../../d9/dc8/classxii_typed_function_property.html#a979b0ff0bce71b8c7c16ff4619704248">xiiTypedFunctionProperty&lt; R, Args... &gt;</a>, and <a class="el" href="../../dd/d02/classxii_visual_script_function_property.html#a475ac9520ddba8061789c30a744d2b47">xiiVisualScriptFunctionProperty</a>.</p>
+
+</div>
+</div>
+<a id="aab7e1c20d6e85351c79fab09a89732af" name="aab7e1c20d6e85351c79fab09a89732af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab7e1c20d6e85351c79fab09a89732af">&#9670;&#160;</a></span>GetSpecificType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual const <a class="el" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a> * xiiAbstractFunctionProperty::GetSpecificType </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the type information of the constant property. Use this to cast this property to a specific version of <a class="el" href="../../d3/de4/classxii_typed_constant_property.html" title="The base class for all typed member properties. Ie. once the type of a property is determined,...">xiiTypedConstantProperty</a>. </p>
+
+<p>Implements <a class="el" href="../../da/d25/classxii_abstract_property.html#af2444215837714062b107e2288b1ac61">xiiAbstractProperty</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li>/home/runner/work/XII/XII/Source/Engine/Foundation/Reflection/Implementation/<a class="el" href="../../d8/d4a/_abstract_property_8h_source.html">AbstractProperty.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../de/d27/classxii_abstract_function_property.html">xiiAbstractFunctionProperty</a></li>
+    <li class="footer">Generated on Mon Jul 1 2024 23:53:13 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+  </ul>
+</div>
+</body>
+</html>

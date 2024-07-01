@@ -1,0 +1,411 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.11.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<!-- BEGIN opengraph metadata -->
+<meta property="og:title" content="XII" />
+<meta property="og:image" content="../../XII-Logo.png" />
+<meta property="og:description" content="An advanced high-performance simulation engine." />
+<meta property="og:url" content="https://www.xiitechnologies.com" />
+<!-- END opengraph metadata -->
+<!-- BEGIN twitter metadata -->
+<meta name="twitter:image:src" content="../../XII-Logo.png" />
+<meta name="twitter:title" content="XII" />
+<meta name="twitter:description" content="An advanced high-performance simulation engine." />
+<!-- END twitter metadata -->
+<title>XII: xiiMeshBufferResource Class Reference</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link rel="icon" type="image/svg+xml" href="logo.drawio.svg"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="../../toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../custom.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<a href="https://github.com/jothepro/doxygen-awesome-css" class="github-corner" title="View source on GitHub" target="_blank" rel="noopener noreferrer">
+    <svg viewBox="0 0 250 250" width="40" height="40" style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+    <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="../../XII-Logo.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">XII
+   &#160;<span id="projectnumber">1.0.0</span>
+   </div>
+   <div id="projectbrief">A high-performance simulation engine.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(1); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.html','Search',true);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('da/d98/classxii_mesh_buffer_resource.html','../../'); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="../../d7/d0c/classxii_mesh_buffer_resource-members.html">List of all members</a>  </div>
+  <div class="headertitle"><div class="title">xiiMeshBufferResource Class Reference</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+Inheritance diagram for xiiMeshBufferResource:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d7/deb/classxii_mesh_buffer_resource__inherit__graph.svg" width="183" height="256"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">legend</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a62c6f778b4d1bf31b729149e9ad0dc60" id="r_a62c6f778b4d1bf31b729149e9ad0dc60"><td class="memItemLeft" align="right" valign="top"><a id="a62c6f778b4d1bf31b729149e9ad0dc60" name="a62c6f778b4d1bf31b729149e9ad0dc60"></a>
+XII_ALWAYS_INLINE xiiUInt32&#160;</td><td class="memItemRight" valign="bottom"><b>GetPrimitiveCount</b> () const</td></tr>
+<tr class="separator:a62c6f778b4d1bf31b729149e9ad0dc60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2eaa64e7b789e8fa61ce2a866c7a44a5" id="r_a2eaa64e7b789e8fa61ce2a866c7a44a5"><td class="memItemLeft" align="right" valign="top"><a id="a2eaa64e7b789e8fa61ce2a866c7a44a5" name="a2eaa64e7b789e8fa61ce2a866c7a44a5"></a>
+XII_ALWAYS_INLINE <a class="el" href="../../d1/dba/classxii_g_a_l_buffer_handle.html">xiiGALBufferHandle</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetVertexBuffer</b> () const</td></tr>
+<tr class="separator:a2eaa64e7b789e8fa61ce2a866c7a44a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e31e74c0affc0522f6b66d1c51bf8c4" id="r_a5e31e74c0affc0522f6b66d1c51bf8c4"><td class="memItemLeft" align="right" valign="top"><a id="a5e31e74c0affc0522f6b66d1c51bf8c4" name="a5e31e74c0affc0522f6b66d1c51bf8c4"></a>
+XII_ALWAYS_INLINE <a class="el" href="../../d1/dba/classxii_g_a_l_buffer_handle.html">xiiGALBufferHandle</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetIndexBuffer</b> () const</td></tr>
+<tr class="separator:a5e31e74c0affc0522f6b66d1c51bf8c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94e6c34729cd170d28edcd9a1e4ac434" id="r_a94e6c34729cd170d28edcd9a1e4ac434"><td class="memItemLeft" align="right" valign="top"><a id="a94e6c34729cd170d28edcd9a1e4ac434" name="a94e6c34729cd170d28edcd9a1e4ac434"></a>
+XII_ALWAYS_INLINE <a class="el" href="../../de/dfd/structxii_enum.html">xiiEnum</a>&lt; <a class="el" href="../../db/d19/structxii_g_a_l_primitive_topology.html">xiiGALPrimitiveTopology</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetTopology</b> () const</td></tr>
+<tr class="separator:a94e6c34729cd170d28edcd9a1e4ac434"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ea786a72f0b90206aaf8b0f796e4834" id="r_a4ea786a72f0b90206aaf8b0f796e4834"><td class="memItemLeft" align="right" valign="top"><a id="a4ea786a72f0b90206aaf8b0f796e4834" name="a4ea786a72f0b90206aaf8b0f796e4834"></a>
+const <a class="el" href="../../d8/d43/structxii_input_layout_info.html">xiiInputLayoutInfo</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetInputLayout</b> () const</td></tr>
+<tr class="memdesc:a4ea786a72f0b90206aaf8b0f796e4834"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the vertex declaration used by this mesh buffer. <br /></td></tr>
+<tr class="separator:a4ea786a72f0b90206aaf8b0f796e4834"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3914b5b42890aa560dd3672c61526edf" id="r_a3914b5b42890aa560dd3672c61526edf"><td class="memItemLeft" align="right" valign="top"><a id="a3914b5b42890aa560dd3672c61526edf" name="a3914b5b42890aa560dd3672c61526edf"></a>
+const <a class="el" href="../../d3/d90/classxii_bounding_box_sphere_template.html">xiiBoundingBoxSphere</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetBounds</b> () const</td></tr>
+<tr class="memdesc:a3914b5b42890aa560dd3672c61526edf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the bounds of the mesh. <br /></td></tr>
+<tr class="separator:a3914b5b42890aa560dd3672c61526edf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classxii_resource"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_classxii_resource')"><img src="../../closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="../../d9/de1/classxii_resource.html">xiiResource</a></td></tr>
+<tr class="memitem:a207e0e3bbc18e1025d64d996c770f6e2 inherit pub_methods_classxii_resource" id="r_a207e0e3bbc18e1025d64d996c770f6e2"><td class="memItemLeft" align="right" valign="top">
+XII_ALWAYS_INLINE const <a class="el" href="../../df/dfb/structxii_hybrid_string.html">xiiString</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetResourceID</b> () const</td></tr>
+<tr class="memdesc:a207e0e3bbc18e1025d64d996c770f6e2 inherit pub_methods_classxii_resource"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the unique ID that identifies this resource. On a file resource this might be a path. Can also be a GUID or any other scheme that uniquely identifies the resource. <br /></td></tr>
+<tr class="separator:a207e0e3bbc18e1025d64d996c770f6e2 inherit pub_methods_classxii_resource"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83651b5a5739fb66e659867042fefce3 inherit pub_methods_classxii_resource" id="r_a83651b5a5739fb66e659867042fefce3"><td class="memItemLeft" align="right" valign="top">
+XII_ALWAYS_INLINE xiiUInt64&#160;</td><td class="memItemRight" valign="bottom"><b>GetResourceIDHash</b> () const</td></tr>
+<tr class="memdesc:a83651b5a5739fb66e659867042fefce3 inherit pub_methods_classxii_resource"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the hash of the unique ID. <br /></td></tr>
+<tr class="separator:a83651b5a5739fb66e659867042fefce3 inherit pub_methods_classxii_resource"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5457d7842f48c77f380861a7f9080db3 inherit pub_methods_classxii_resource" id="r_a5457d7842f48c77f380861a7f9080db3"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetResourceDescription</b> (<a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sDescription)</td></tr>
+<tr class="memdesc:a5457d7842f48c77f380861a7f9080db3 inherit pub_methods_classxii_resource"><td class="mdescLeft">&#160;</td><td class="mdescRight">The resource description allows to store an additional string that might be more descriptive during debugging, than the unique ID. <br /></td></tr>
+<tr class="separator:a5457d7842f48c77f380861a7f9080db3 inherit pub_methods_classxii_resource"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4ded93d41aa0c44309af648b8a81249 inherit pub_methods_classxii_resource" id="r_af4ded93d41aa0c44309af648b8a81249"><td class="memItemLeft" align="right" valign="top">
+const <a class="el" href="../../df/dfb/structxii_hybrid_string.html">xiiString</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetResourceDescription</b> () const</td></tr>
+<tr class="memdesc:af4ded93d41aa0c44309af648b8a81249 inherit pub_methods_classxii_resource"><td class="mdescLeft">&#160;</td><td class="mdescRight">The resource description allows to store an additional string that might be more descriptive during debugging, than the unique ID. <br /></td></tr>
+<tr class="separator:af4ded93d41aa0c44309af648b8a81249 inherit pub_methods_classxii_resource"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abef4dd58f238590907276c48dac6ec9e inherit pub_methods_classxii_resource" id="r_abef4dd58f238590907276c48dac6ec9e"><td class="memItemLeft" align="right" valign="top">
+XII_ALWAYS_INLINE xiiResourceState&#160;</td><td class="memItemRight" valign="bottom"><b>GetLoadingState</b> () const</td></tr>
+<tr class="memdesc:abef4dd58f238590907276c48dac6ec9e inherit pub_methods_classxii_resource"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current state in which this resource is in. <br /></td></tr>
+<tr class="separator:abef4dd58f238590907276c48dac6ec9e inherit pub_methods_classxii_resource"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98f74b39dddc996719866808b5df830e inherit pub_methods_classxii_resource" id="r_a98f74b39dddc996719866808b5df830e"><td class="memItemLeft" align="right" valign="top">XII_ALWAYS_INLINE xiiUInt8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/de1/classxii_resource.html#a98f74b39dddc996719866808b5df830e">GetNumQualityLevelsDiscardable</a> () const</td></tr>
+<tr class="memdesc:a98f74b39dddc996719866808b5df830e inherit pub_methods_classxii_resource"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current maximum quality level that the resource could have.  <br /></td></tr>
+<tr class="separator:a98f74b39dddc996719866808b5df830e inherit pub_methods_classxii_resource"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46add6b80fb582c5082619b1f6b607bf inherit pub_methods_classxii_resource" id="r_a46add6b80fb582c5082619b1f6b607bf"><td class="memItemLeft" align="right" valign="top">
+XII_ALWAYS_INLINE xiiUInt8&#160;</td><td class="memItemRight" valign="bottom"><b>GetNumQualityLevelsLoadable</b> () const</td></tr>
+<tr class="memdesc:a46add6b80fb582c5082619b1f6b607bf inherit pub_methods_classxii_resource"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns how many quality levels the resource may additionally load. <br /></td></tr>
+<tr class="separator:a46add6b80fb582c5082619b1f6b607bf inherit pub_methods_classxii_resource"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa422848fa88c0cb003525fc814cd873e inherit pub_methods_classxii_resource" id="r_aa422848fa88c0cb003525fc814cd873e"><td class="memItemLeft" align="right" valign="top">
+float&#160;</td><td class="memItemRight" valign="bottom"><b>GetLoadingPriority</b> (<a class="el" href="../../d7/dc1/structxii_time.html">xiiTime</a> now) const</td></tr>
+<tr class="memdesc:aa422848fa88c0cb003525fc814cd873e inherit pub_methods_classxii_resource"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the priority that is used by the resource manager to determine which resource to load next. <br /></td></tr>
+<tr class="separator:aa422848fa88c0cb003525fc814cd873e inherit pub_methods_classxii_resource"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8157e058039b56c0a5288e00fc70838 inherit pub_methods_classxii_resource" id="r_af8157e058039b56c0a5288e00fc70838"><td class="memItemLeft" align="right" valign="top">
+xiiResourcePriority&#160;</td><td class="memItemRight" valign="bottom"><b>GetPriority</b> () const</td></tr>
+<tr class="memdesc:af8157e058039b56c0a5288e00fc70838 inherit pub_methods_classxii_resource"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current resource priority. <br /></td></tr>
+<tr class="separator:af8157e058039b56c0a5288e00fc70838 inherit pub_methods_classxii_resource"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95a473e75a4278e92a32704f36df7b5e inherit pub_methods_classxii_resource" id="r_a95a473e75a4278e92a32704f36df7b5e"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetPriority</b> (xiiResourcePriority priority)</td></tr>
+<tr class="memdesc:a95a473e75a4278e92a32704f36df7b5e inherit pub_methods_classxii_resource"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes the current resource priority. <br /></td></tr>
+<tr class="separator:a95a473e75a4278e92a32704f36df7b5e inherit pub_methods_classxii_resource"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeac4e895d6de172e94a1b444ccb7e132 inherit pub_methods_classxii_resource" id="r_aeac4e895d6de172e94a1b444ccb7e132"><td class="memItemLeft" align="right" valign="top">
+XII_ALWAYS_INLINE const <a class="el" href="../../d7/d55/structxii_bitflags.html">xiiBitflags</a>&lt; <a class="el" href="../../df/dd1/structxii_resource_flags.html">xiiResourceFlags</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetBaseResourceFlags</b> () const</td></tr>
+<tr class="memdesc:aeac4e895d6de172e94a1b444ccb7e132 inherit pub_methods_classxii_resource"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the basic flags for the resource type. Mostly used the resource manager. <br /></td></tr>
+<tr class="separator:aeac4e895d6de172e94a1b444ccb7e132 inherit pub_methods_classxii_resource"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b06bd75194ed4682232cdb63578dee1 inherit pub_methods_classxii_resource" id="r_a9b06bd75194ed4682232cdb63578dee1"><td class="memItemLeft" align="right" valign="top">
+XII_ALWAYS_INLINE const <a class="el" href="../../da/da5/structxii_resource_1_1_memory_usage.html">MemoryUsage</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetMemoryUsage</b> () const</td></tr>
+<tr class="memdesc:a9b06bd75194ed4682232cdb63578dee1 inherit pub_methods_classxii_resource"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the information about the current memory usage of the resource. <br /></td></tr>
+<tr class="separator:a9b06bd75194ed4682232cdb63578dee1 inherit pub_methods_classxii_resource"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3c8ffa795f894d54a1b96efbd155b2a inherit pub_methods_classxii_resource" id="r_ab3c8ffa795f894d54a1b96efbd155b2a"><td class="memItemLeft" align="right" valign="top">
+XII_ALWAYS_INLINE <a class="el" href="../../d7/dc1/structxii_time.html">xiiTime</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetLastAcquireTime</b> () const</td></tr>
+<tr class="memdesc:ab3c8ffa795f894d54a1b96efbd155b2a inherit pub_methods_classxii_resource"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the time at which the resource was (tried to be) acquired last. If a resource is acquired using xiiResourceAcquireMode::PointerOnly, this does not update the last acquired time, since the resource is not acquired for full use. <br /></td></tr>
+<tr class="separator:ab3c8ffa795f894d54a1b96efbd155b2a inherit pub_methods_classxii_resource"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10388959d1eb8f209184614504e80dcb inherit pub_methods_classxii_resource" id="r_a10388959d1eb8f209184614504e80dcb"><td class="memItemLeft" align="right" valign="top">
+XII_ALWAYS_INLINE xiiInt32&#160;</td><td class="memItemRight" valign="bottom"><b>GetReferenceCount</b> () const</td></tr>
+<tr class="memdesc:a10388959d1eb8f209184614504e80dcb inherit pub_methods_classxii_resource"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the reference count of this resource. <br /></td></tr>
+<tr class="separator:a10388959d1eb8f209184614504e80dcb inherit pub_methods_classxii_resource"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8b58d9b07045d664fbcee6b601e2ca9 inherit pub_methods_classxii_resource" id="r_af8b58d9b07045d664fbcee6b601e2ca9"><td class="memItemLeft" align="right" valign="top">XII_ALWAYS_INLINE const <a class="el" href="../../d5/da2/classxii_timestamp.html">xiiTimestamp</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/de1/classxii_resource.html#af8b58d9b07045d664fbcee6b601e2ca9">GetLoadedFileModificationTime</a> () const</td></tr>
+<tr class="memdesc:af8b58d9b07045d664fbcee6b601e2ca9 inherit pub_methods_classxii_resource"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the modification date of the file from which this resource was loaded.  <br /></td></tr>
+<tr class="separator:af8b58d9b07045d664fbcee6b601e2ca9 inherit pub_methods_classxii_resource"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe990d47a3607b9a99afa91656056d79 inherit pub_methods_classxii_resource" id="r_abe990d47a3607b9a99afa91656056d79"><td class="memItemLeft" align="right" valign="top">XII_ALWAYS_INLINE xiiUInt32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/de1/classxii_resource.html#abe990d47a3607b9a99afa91656056d79">GetCurrentResourceChangeCounter</a> () const</td></tr>
+<tr class="memdesc:abe990d47a3607b9a99afa91656056d79 inherit pub_methods_classxii_resource"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current value of the resource change counter. Can be used to detect whether the resource has changed since using it last time.  <br /></td></tr>
+<tr class="separator:abe990d47a3607b9a99afa91656056d79 inherit pub_methods_classxii_resource"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc6e65c855406751502d8a46880f759a inherit pub_methods_classxii_resource" id="r_abc6e65c855406751502d8a46880f759a"><td class="memItemLeft" align="right" valign="top">
+XII_ALWAYS_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><b>IncResourceChangeCounter</b> ()</td></tr>
+<tr class="memdesc:abc6e65c855406751502d8a46880f759a inherit pub_methods_classxii_resource"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allows to manually increase the resource change counter to signal that dependent code might need to update. <br /></td></tr>
+<tr class="separator:abc6e65c855406751502d8a46880f759a inherit pub_methods_classxii_resource"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d3e4db55299b1bc6321453eb782ecfc inherit pub_methods_classxii_resource" id="r_a8d3e4db55299b1bc6321453eb782ecfc"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/de1/classxii_resource.html#a8d3e4db55299b1bc6321453eb782ecfc">ResetResource</a> ()</td></tr>
+<tr class="memdesc:a8d3e4db55299b1bc6321453eb782ecfc inherit pub_methods_classxii_resource"><td class="mdescLeft">&#160;</td><td class="mdescRight">If the resource has modifications from the original state, it should reset itself to that state now (or force a reload on itself).  <br /></td></tr>
+<tr class="separator:a8d3e4db55299b1bc6321453eb782ecfc inherit pub_methods_classxii_resource"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1831661b496fb1be050ef0f073d7d888 inherit pub_methods_classxii_resource" id="r_a1831661b496fb1be050ef0f073d7d888"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/de1/classxii_resource.html#a1831661b496fb1be050ef0f073d7d888">PrintHandleStackTraces</a> ()</td></tr>
+<tr class="memdesc:a1831661b496fb1be050ef0f073d7d888 inherit pub_methods_classxii_resource"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prints the stack-traces for all handles that currently reference this resource.  <br /></td></tr>
+<tr class="separator:a1831661b496fb1be050ef0f073d7d888 inherit pub_methods_classxii_resource"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classxii_reflected_class"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_classxii_reflected_class')"><img src="../../closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="../../dc/d71/classxii_reflected_class.html">xiiReflectedClass</a></td></tr>
+<tr class="memitem:a00430d2230bc44ad262be3d0a4e62e10 inherit pub_methods_classxii_reflected_class" id="r_a00430d2230bc44ad262be3d0a4e62e10"><td class="memItemLeft" align="right" valign="top">
+virtual const <a class="el" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetDynamicRTTI</b> () const</td></tr>
+<tr class="separator:a00430d2230bc44ad262be3d0a4e62e10 inherit pub_methods_classxii_reflected_class"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e0f7cbc734bb4dd62b0d583bbbe2ade inherit pub_methods_classxii_reflected_class" id="r_a8e0f7cbc734bb4dd62b0d583bbbe2ade"><td class="memItemLeft" align="right" valign="top">
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsInstanceOf</b> (const <a class="el" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a> *pType) const</td></tr>
+<tr class="memdesc:a8e0f7cbc734bb4dd62b0d583bbbe2ade inherit pub_methods_classxii_reflected_class"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether the type of this instance is of the given type or derived from it. <br /></td></tr>
+<tr class="separator:a8e0f7cbc734bb4dd62b0d583bbbe2ade inherit pub_methods_classxii_reflected_class"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0a423d0f813feb28b200d9a9756eab8 inherit pub_methods_classxii_reflected_class" id="r_ac0a423d0f813feb28b200d9a9756eab8"><td class="memTemplParams" colspan="2">
+template&lt;typename T &gt; </td></tr>
+<tr class="memitem:ac0a423d0f813feb28b200d9a9756eab8 inherit pub_methods_classxii_reflected_class"><td class="memTemplItemLeft" align="right" valign="top">XII_ALWAYS_INLINE bool&#160;</td><td class="memTemplItemRight" valign="bottom"><b>IsInstanceOf</b> () const</td></tr>
+<tr class="memdesc:ac0a423d0f813feb28b200d9a9756eab8 inherit pub_methods_classxii_reflected_class"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether the type of this instance is of the given type or derived from it. <br /></td></tr>
+<tr class="separator:ac0a423d0f813feb28b200d9a9756eab8 inherit pub_methods_classxii_reflected_class"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a70fec469294825fc30b647eda9c50549" id="r_a70fec469294825fc30b647eda9c50549"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d7/d9e/structxii_resource_load_desc.html">xiiResourceLoadDesc</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a70fec469294825fc30b647eda9c50549">UnloadData</a> (Unload WhatToUnload) override</td></tr>
+<tr class="memdesc:a70fec469294825fc30b647eda9c50549"><td class="mdescLeft">&#160;</td><td class="mdescRight">Requests the resource to unload another quality level. If bFullUnload is true, the resource should unload all data, because it is going to be deleted afterwards.  <br /></td></tr>
+<tr class="separator:a70fec469294825fc30b647eda9c50549"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b0b2df65a7ea39d42651764425143ae" id="r_a4b0b2df65a7ea39d42651764425143ae"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d7/d9e/structxii_resource_load_desc.html">xiiResourceLoadDesc</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4b0b2df65a7ea39d42651764425143ae">UpdateContent</a> (<a class="el" href="../../d4/d5e/classxii_stream_reader.html">xiiStreamReader</a> *Stream) override</td></tr>
+<tr class="memdesc:a4b0b2df65a7ea39d42651764425143ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called whenever more data for the resource is available. The resource must read the stream to update it's data.  <br /></td></tr>
+<tr class="separator:a4b0b2df65a7ea39d42651764425143ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac73844e2ce2b952dc4100be9bc78f9e2" id="r_ac73844e2ce2b952dc4100be9bc78f9e2"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac73844e2ce2b952dc4100be9bc78f9e2">UpdateMemoryUsage</a> (<a class="el" href="../../da/da5/structxii_resource_1_1_memory_usage.html">MemoryUsage</a> &amp;out_NewMemoryUsage) override</td></tr>
+<tr class="memdesc:ac73844e2ce2b952dc4100be9bc78f9e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function must be overridden by all resource types.  <br /></td></tr>
+<tr class="separator:ac73844e2ce2b952dc4100be9bc78f9e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pub_static_methods_classxii_no_base"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_static_methods_classxii_no_base')"><img src="../../closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="../../d2/d38/classxii_no_base.html">xiiNoBase</a></td></tr>
+<tr class="memitem:a4bde433b55ebd55edf63c57239799bba inherit pub_static_methods_classxii_no_base" id="r_a4bde433b55ebd55edf63c57239799bba"><td class="memItemLeft" align="right" valign="top">
+static const <a class="el" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetStaticRTTI</b> ()</td></tr>
+<tr class="separator:a4bde433b55ebd55edf63c57239799bba inherit pub_static_methods_classxii_no_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_attribs_classxii_resource"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_attribs_classxii_resource')"><img src="../../closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="../../d9/de1/classxii_resource.html">xiiResource</a></td></tr>
+<tr class="memitem:a9208846df7ea88cb00063e6e4207066e inherit pub_attribs_classxii_resource" id="r_a9208846df7ea88cb00063e6e4207066e"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="../../dc/d22/classxii_event.html">xiiEvent</a>&lt; const <a class="el" href="../../df/de3/structxii_resource_event.html">xiiResourceEvent</a> &amp;, <a class="el" href="../../dd/d52/classxii_mutex.html">xiiMutex</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_ResourceEvents</b></td></tr>
+<tr class="separator:a9208846df7ea88cb00063e6e4207066e inherit pub_attribs_classxii_resource"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_types_classxii_resource"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_types_classxii_resource')"><img src="../../closed.png" alt="-"/>&#160;Protected Types inherited from <a class="el" href="../../d9/de1/classxii_resource.html">xiiResource</a></td></tr>
+<tr class="memitem:a836bebaf3137ed6c57ddd1942e9531da inherit pro_types_classxii_resource" id="r_a836bebaf3137ed6c57ddd1942e9531da"><td class="memItemLeft" align="right" valign="top"><a id="a836bebaf3137ed6c57ddd1942e9531da" name="a836bebaf3137ed6c57ddd1942e9531da"></a>enum class &#160;</td><td class="memItemRight" valign="bottom"><b>DoUpdate</b> { <b>OnMainThread</b>
+, <b>OnAnyThread</b>
+ }</td></tr>
+<tr class="separator:a836bebaf3137ed6c57ddd1942e9531da inherit pro_types_classxii_resource"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada86fcf6467e3d07529b77df97218bdf inherit pro_types_classxii_resource" id="r_ada86fcf6467e3d07529b77df97218bdf"><td class="memItemLeft" align="right" valign="top"><a id="ada86fcf6467e3d07529b77df97218bdf" name="ada86fcf6467e3d07529b77df97218bdf"></a>enum class &#160;</td><td class="memItemRight" valign="bottom"><b>Unload</b> { <b>AllQualityLevels</b>
+, <b>OneQualityLevel</b>
+ }</td></tr>
+<tr class="separator:ada86fcf6467e3d07529b77df97218bdf inherit pro_types_classxii_resource"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_classxii_resource"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_methods_classxii_resource')"><img src="../../closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="../../d9/de1/classxii_resource.html">xiiResource</a></td></tr>
+<tr class="memitem:a8aa642893e0810df69cf75425eea0389 inherit pro_methods_classxii_resource" id="r_a8aa642893e0810df69cf75425eea0389"><td class="memItemLeft" align="right" valign="top">
+&#160;</td><td class="memItemRight" valign="bottom"><b>xiiResource</b> (DoUpdate ResourceUpdateThread, xiiUInt8 uiQualityLevelsLoadable)</td></tr>
+<tr class="memdesc:a8aa642893e0810df69cf75425eea0389 inherit pro_methods_classxii_resource"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor. <br /></td></tr>
+<tr class="separator:a8aa642893e0810df69cf75425eea0389 inherit pro_methods_classxii_resource"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d596b2462ec0e8773e9c9a686b0f458 inherit pro_methods_classxii_resource" id="r_a7d596b2462ec0e8773e9c9a686b0f458"><td class="memItemLeft" align="right" valign="top">
+virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~xiiResource</b> ()</td></tr>
+<tr class="memdesc:a7d596b2462ec0e8773e9c9a686b0f458 inherit pro_methods_classxii_resource"><td class="mdescLeft">&#160;</td><td class="mdescRight">virtual destructor. <br /></td></tr>
+<tr class="separator:a7d596b2462ec0e8773e9c9a686b0f458 inherit pro_methods_classxii_resource"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ddd24fde67475e2cd60081d6ba6020c inherit pro_methods_classxii_resource" id="r_a0ddd24fde67475e2cd60081d6ba6020c"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="../../da/da5/structxii_resource_1_1_memory_usage.html">MemoryUsage</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>ModifyMemoryUsage</b> ()</td></tr>
+<tr class="memdesc:a0ddd24fde67475e2cd60081d6ba6020c inherit pro_methods_classxii_resource"><td class="mdescLeft">&#160;</td><td class="mdescRight">Non-const version for resources that want to write this variable directly. <br /></td></tr>
+<tr class="separator:a0ddd24fde67475e2cd60081d6ba6020c inherit pro_methods_classxii_resource"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35962e4b0448f41a840ad47405f386bf inherit pro_methods_classxii_resource" id="r_a35962e4b0448f41a840ad47405f386bf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/de1/classxii_resource.html#a35962e4b0448f41a840ad47405f386bf">SetIsReloadable</a> (bool bIsReloadable)</td></tr>
+<tr class="memdesc:a35962e4b0448f41a840ad47405f386bf inherit pro_methods_classxii_resource"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call this to specify whether a resource is reloadable.  <br /></td></tr>
+<tr class="separator:a35962e4b0448f41a840ad47405f386bf inherit pro_methods_classxii_resource"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07d5954f763eed4f411251733cc12ce5 inherit pro_methods_classxii_resource" id="r_a07d5954f763eed4f411251733cc12ce5"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetHasLoadingFallback</b> (bool bHasLoadingFallback)</td></tr>
+<tr class="memdesc:a07d5954f763eed4f411251733cc12ce5 inherit pro_methods_classxii_resource"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used internally by the code injection macros. <br /></td></tr>
+<tr class="separator:a07d5954f763eed4f411251733cc12ce5 inherit pro_methods_classxii_resource"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a70fec469294825fc30b647eda9c50549" name="a70fec469294825fc30b647eda9c50549"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a70fec469294825fc30b647eda9c50549">&#9670;&#160;</a></span>UnloadData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d7/d9e/structxii_resource_load_desc.html">xiiResourceLoadDesc</a> xiiMeshBufferResource::UnloadData </td>
+          <td>(</td>
+          <td class="paramtype">Unload</td>          <td class="paramname"><span class="paramname"><em>WhatToUnload</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Requests the resource to unload another quality level. If bFullUnload is true, the resource should unload all data, because it is going to be deleted afterwards. </p>
+
+<p>Implements <a class="el" href="../../d9/de1/classxii_resource.html#a02b8e6565d09c03e0e7038eb05bf311c">xiiResource</a>.</p>
+
+</div>
+</div>
+<a id="a4b0b2df65a7ea39d42651764425143ae" name="a4b0b2df65a7ea39d42651764425143ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b0b2df65a7ea39d42651764425143ae">&#9670;&#160;</a></span>UpdateContent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d7/d9e/structxii_resource_load_desc.html">xiiResourceLoadDesc</a> xiiMeshBufferResource::UpdateContent </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d4/d5e/classxii_stream_reader.html">xiiStreamReader</a> *</td>          <td class="paramname"><span class="paramname"><em>pStream</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Called whenever more data for the resource is available. The resource must read the stream to update it's data. </p>
+<p>pStream may be nullptr in case the resource data could not be found. </p>
+
+<p>Implements <a class="el" href="../../d9/de1/classxii_resource.html#aec592e9010ff171261e3554aedc1f465">xiiResource</a>.</p>
+
+</div>
+</div>
+<a id="ac73844e2ce2b952dc4100be9bc78f9e2" name="ac73844e2ce2b952dc4100be9bc78f9e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac73844e2ce2b952dc4100be9bc78f9e2">&#9670;&#160;</a></span>UpdateMemoryUsage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void xiiMeshBufferResource::UpdateMemoryUsage </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../da/da5/structxii_resource_1_1_memory_usage.html">MemoryUsage</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>out_NewMemoryUsage</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This function must be overridden by all resource types. </p>
+<p>It has to compute the memory used by this resource. It is called by the resource manager whenever the resource's data has been loaded or unloaded. </p>
+
+<p>Implements <a class="el" href="../../d9/de1/classxii_resource.html#ac9c3e409747cbd0ca5cdfe2a2a83aef1">xiiResource</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li>/home/runner/work/XII/XII/Source/Engine/GraphicsCore/Meshes/<a class="el" href="../../d3/d90/_mesh_buffer_resource_8h_source.html">MeshBufferResource.h</a></li>
+<li>/home/runner/work/XII/XII/Source/Engine/GraphicsCore/Meshes/Implementation/<b>MeshBufferResource.cpp</b></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../da/d98/classxii_mesh_buffer_resource.html">xiiMeshBufferResource</a></li>
+    <li class="footer">Generated on Mon Jul 1 2024 23:53:15 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+  </ul>
+</div>
+</body>
+</html>

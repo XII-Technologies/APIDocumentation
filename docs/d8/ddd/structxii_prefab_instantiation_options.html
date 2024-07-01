@@ -1,0 +1,231 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.11.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<!-- BEGIN opengraph metadata -->
+<meta property="og:title" content="XII" />
+<meta property="og:image" content="../../XII-Logo.png" />
+<meta property="og:description" content="An advanced high-performance simulation engine." />
+<meta property="og:url" content="https://www.xiitechnologies.com" />
+<!-- END opengraph metadata -->
+<!-- BEGIN twitter metadata -->
+<meta name="twitter:image:src" content="../../XII-Logo.png" />
+<meta name="twitter:title" content="XII" />
+<meta name="twitter:description" content="An advanced high-performance simulation engine." />
+<!-- END twitter metadata -->
+<title>XII: xiiPrefabInstantiationOptions Struct Reference</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link rel="icon" type="image/svg+xml" href="logo.drawio.svg"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="../../toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../custom.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<a href="https://github.com/jothepro/doxygen-awesome-css" class="github-corner" title="View source on GitHub" target="_blank" rel="noopener noreferrer">
+    <svg viewBox="0 0 250 250" width="40" height="40" style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+    <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="../../XII-Logo.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">XII
+   &#160;<span id="projectnumber">1.0.0</span>
+   </div>
+   <div id="projectbrief">A high-performance simulation engine.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(1); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.html','Search',true);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('d8/ddd/structxii_prefab_instantiation_options.html','../../'); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="../../d4/dd9/structxii_prefab_instantiation_options-members.html">List of all members</a>  </div>
+  <div class="headertitle"><div class="title">xiiPrefabInstantiationOptions Struct Reference</div></div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a5cd1ff127e47a915103c05de7f88eb63" id="r_a5cd1ff127e47a915103c05de7f88eb63"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5cd1ff127e47a915103c05de7f88eb63">RandomSeedMode</a> { <a class="el" href="#a5cd1ff127e47a915103c05de7f88eb63af929328ef3d8c6e25c52b549fc61fccd">DeterministicFromParent</a>
+, <a class="el" href="#a5cd1ff127e47a915103c05de7f88eb63a0c57a1275241066e9a81818d40f14195">CompletelyRandom</a>
+, <a class="el" href="#a5cd1ff127e47a915103c05de7f88eb63a57a1fef61773a50df3142c703b88e45e">FixedFromSerialization</a>
+, <a class="el" href="#a5cd1ff127e47a915103c05de7f88eb63a9ecf165ffcc7f00249f4a127534818ee">CustomRootValue</a>
+ }</td></tr>
+<tr class="separator:a5cd1ff127e47a915103c05de7f88eb63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:ad7fd72390a66184417b487bb0906194c" id="r_ad7fd72390a66184417b487bb0906194c"><td class="memItemLeft" align="right" valign="top"><a id="ad7fd72390a66184417b487bb0906194c" name="ad7fd72390a66184417b487bb0906194c"></a>
+<a class="el" href="../../da/d2c/structxii_game_object_handle.html">xiiGameObjectHandle</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_hParent</b></td></tr>
+<tr class="separator:ad7fd72390a66184417b487bb0906194c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d783a559127b36ad8e3a1d69a324857" id="r_a0d783a559127b36ad8e3a1d69a324857"><td class="memItemLeft" align="right" valign="top"><a id="a0d783a559127b36ad8e3a1d69a324857" name="a0d783a559127b36ad8e3a1d69a324857"></a>
+<a class="el" href="../../dc/da4/classxii_dynamic_array.html">xiiDynamicArray</a>&lt; <a class="el" href="../../d0/d91/classxii_game_object.html">xiiGameObject</a> * &gt; *&#160;</td><td class="memItemRight" valign="bottom"><b>m_pCreatedRootObjectsOut</b> = nullptr</td></tr>
+<tr class="separator:a0d783a559127b36ad8e3a1d69a324857"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9dfd6519fdbdea769f2c9fe18e6ced11" id="r_a9dfd6519fdbdea769f2c9fe18e6ced11"><td class="memItemLeft" align="right" valign="top"><a id="a9dfd6519fdbdea769f2c9fe18e6ced11" name="a9dfd6519fdbdea769f2c9fe18e6ced11"></a>
+<a class="el" href="../../dc/da4/classxii_dynamic_array.html">xiiDynamicArray</a>&lt; <a class="el" href="../../d0/d91/classxii_game_object.html">xiiGameObject</a> * &gt; *&#160;</td><td class="memItemRight" valign="bottom"><b>m_pCreatedChildObjectsOut</b> = nullptr</td></tr>
+<tr class="separator:a9dfd6519fdbdea769f2c9fe18e6ced11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade739c8810de12491245147f9020679f" id="r_ade739c8810de12491245147f9020679f"><td class="memItemLeft" align="right" valign="top"><a id="ade739c8810de12491245147f9020679f" name="ade739c8810de12491245147f9020679f"></a>
+const xiiUInt16 *&#160;</td><td class="memItemRight" valign="bottom"><b>m_pOverrideTeamID</b> = nullptr</td></tr>
+<tr class="separator:ade739c8810de12491245147f9020679f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b3cad5570ca8eb0fb0520fbd6e9e512" id="r_a7b3cad5570ca8eb0fb0520fbd6e9e512"><td class="memItemLeft" align="right" valign="top"><a id="a7b3cad5570ca8eb0fb0520fbd6e9e512" name="a7b3cad5570ca8eb0fb0520fbd6e9e512"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_bForceDynamic</b> = false</td></tr>
+<tr class="separator:a7b3cad5570ca8eb0fb0520fbd6e9e512"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a897b7dab68844cdd8dc718e11d4720e7" id="r_a897b7dab68844cdd8dc718e11d4720e7"><td class="memItemLeft" align="right" valign="top"><a id="a897b7dab68844cdd8dc718e11d4720e7" name="a897b7dab68844cdd8dc718e11d4720e7"></a>
+<a class="el" href="../../d5/dd2/classxii_temp_hashed_string.html">xiiTempHashedString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_ReplaceNamedRootWithParent</b></td></tr>
+<tr class="memdesc:a897b7dab68844cdd8dc718e11d4720e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">If the prefab has a single root node with this non-empty name, rather than creating a new object, instead the m_hParent object is used. <br /></td></tr>
+<tr class="separator:a897b7dab68844cdd8dc718e11d4720e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94ba66a1ee6c52088f2091842a7b8720" id="r_a94ba66a1ee6c52088f2091842a7b8720"><td class="memItemLeft" align="right" valign="top"><a id="a94ba66a1ee6c52088f2091842a7b8720" name="a94ba66a1ee6c52088f2091842a7b8720"></a>
+<a class="el" href="#a5cd1ff127e47a915103c05de7f88eb63">RandomSeedMode</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_RandomSeedMode</b> = <a class="el" href="#a5cd1ff127e47a915103c05de7f88eb63af929328ef3d8c6e25c52b549fc61fccd">RandomSeedMode::DeterministicFromParent</a></td></tr>
+<tr class="separator:a94ba66a1ee6c52088f2091842a7b8720"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f68beb514a2bd784638a3203610ccb4" id="r_a0f68beb514a2bd784638a3203610ccb4"><td class="memItemLeft" align="right" valign="top"><a id="a0f68beb514a2bd784638a3203610ccb4" name="a0f68beb514a2bd784638a3203610ccb4"></a>
+xiiUInt32&#160;</td><td class="memItemRight" valign="bottom"><b>m_uiCustomRandomSeedRootValue</b> = 0</td></tr>
+<tr class="separator:a0f68beb514a2bd784638a3203610ccb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a883dd3330f2938885fc71abfd834b145" id="r_a883dd3330f2938885fc71abfd834b145"><td class="memItemLeft" align="right" valign="top"><a id="a883dd3330f2938885fc71abfd834b145" name="a883dd3330f2938885fc71abfd834b145"></a>
+<a class="el" href="../../d7/dc1/structxii_time.html">xiiTime</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_MaxStepTime</b> = <a class="el" href="../../d7/dc1/structxii_time.html#af50981ed01769e51493ea3d573c007ae">xiiTime::MakeZero</a>()</td></tr>
+<tr class="separator:a883dd3330f2938885fc71abfd834b145"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d429eaada870765abb7f8d948ec3c94" id="r_a7d429eaada870765abb7f8d948ec3c94"><td class="memItemLeft" align="right" valign="top"><a id="a7d429eaada870765abb7f8d948ec3c94" name="a7d429eaada870765abb7f8d948ec3c94"></a>
+<a class="el" href="../../dd/d9e/classxii_progress.html">xiiProgress</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_pProgress</b> = nullptr</td></tr>
+<tr class="separator:a7d429eaada870765abb7f8d948ec3c94"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Member Enumeration Documentation</h2>
+<a id="a5cd1ff127e47a915103c05de7f88eb63" name="a5cd1ff127e47a915103c05de7f88eb63"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5cd1ff127e47a915103c05de7f88eb63">&#9670;&#160;</a></span>RandomSeedMode</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum class <a class="el" href="#a5cd1ff127e47a915103c05de7f88eb63">xiiPrefabInstantiationOptions::RandomSeedMode</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a5cd1ff127e47a915103c05de7f88eb63af929328ef3d8c6e25c52b549fc61fccd" name="a5cd1ff127e47a915103c05de7f88eb63af929328ef3d8c6e25c52b549fc61fccd"></a>DeterministicFromParent&#160;</td><td class="fielddoc"><p><a class="el" href="../../d6/d89/classxii_world.html#ac1ad5ba372c5eaf29a38e8316e193ce3" title="Create a new game object from the given description and returns a handle to it.">xiiWorld::CreateObject()</a> will either derive a deterministic value from the parent object, or assign a random value if no parent exists. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a5cd1ff127e47a915103c05de7f88eb63a0c57a1275241066e9a81818d40f14195" name="a5cd1ff127e47a915103c05de7f88eb63a0c57a1275241066e9a81818d40f14195"></a>CompletelyRandom&#160;</td><td class="fielddoc"><p><a class="el" href="../../d6/d89/classxii_world.html#ac1ad5ba372c5eaf29a38e8316e193ce3" title="Create a new game object from the given description and returns a handle to it.">xiiWorld::CreateObject()</a> will assign a random value to this object. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a5cd1ff127e47a915103c05de7f88eb63a57a1fef61773a50df3142c703b88e45e" name="a5cd1ff127e47a915103c05de7f88eb63a57a1fef61773a50df3142c703b88e45e"></a>FixedFromSerialization&#160;</td><td class="fielddoc"><p>Keep deserialized random seed value. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a5cd1ff127e47a915103c05de7f88eb63a9ecf165ffcc7f00249f4a127534818ee" name="a5cd1ff127e47a915103c05de7f88eb63a9ecf165ffcc7f00249f4a127534818ee"></a>CustomRootValue&#160;</td><td class="fielddoc"><p>Use the given seed root value to assign a deterministic (but different) value to each game object. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<hr/>The documentation for this struct was generated from the following file:<ul>
+<li>/home/runner/work/XII/XII/Source/Engine/Core/WorldSerializer/<a class="el" href="../../d8/d07/_world_reader_8h_source.html">WorldReader.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../d8/ddd/structxii_prefab_instantiation_options.html">xiiPrefabInstantiationOptions</a></li>
+    <li class="footer">Generated on Mon Jul 1 2024 23:53:15 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+  </ul>
+</div>
+</body>
+</html>

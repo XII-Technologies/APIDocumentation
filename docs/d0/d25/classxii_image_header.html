@@ -1,0 +1,373 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.11.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<!-- BEGIN opengraph metadata -->
+<meta property="og:title" content="XII" />
+<meta property="og:image" content="../../XII-Logo.png" />
+<meta property="og:description" content="An advanced high-performance simulation engine." />
+<meta property="og:url" content="https://www.xiitechnologies.com" />
+<!-- END opengraph metadata -->
+<!-- BEGIN twitter metadata -->
+<meta name="twitter:image:src" content="../../XII-Logo.png" />
+<meta name="twitter:title" content="XII" />
+<meta name="twitter:description" content="An advanced high-performance simulation engine." />
+<!-- END twitter metadata -->
+<title>XII: xiiImageHeader Class Reference</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link rel="icon" type="image/svg+xml" href="logo.drawio.svg"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="../../toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../custom.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<a href="https://github.com/jothepro/doxygen-awesome-css" class="github-corner" title="View source on GitHub" target="_blank" rel="noopener noreferrer">
+    <svg viewBox="0 0 250 250" width="40" height="40" style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+    <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="../../XII-Logo.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">XII
+   &#160;<span id="projectnumber">1.0.0</span>
+   </div>
+   <div id="projectbrief">A high-performance simulation engine.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(1); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.html','Search',true);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('d0/d25/classxii_image_header.html','../../'); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
+<a href="../../df/def/classxii_image_header-members.html">List of all members</a>  </div>
+  <div class="headertitle"><div class="title">xiiImageHeader Class Reference</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p><a class="el" href="../../d8/d4f/class_a.html">A</a> class containing image meta data, such as format and dimensions.  
+ <a href="#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="../../d9/d2a/_image_header_8h_source.html">ImageHeader.h</a>&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for xiiImageHeader:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../de/de0/classxii_image_header__inherit__graph.svg" width="138" height="183"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">legend</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a9a86d582c15ef874508e41e3c7908d18" id="r_a9a86d582c15ef874508e41e3c7908d18"><td class="memItemLeft" align="right" valign="top"><a id="a9a86d582c15ef874508e41e3c7908d18" name="a9a86d582c15ef874508e41e3c7908d18"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>xiiImageHeader</b> ()</td></tr>
+<tr class="memdesc:a9a86d582c15ef874508e41e3c7908d18"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs an image using an unknown format and zero size. <br /></td></tr>
+<tr class="separator:a9a86d582c15ef874508e41e3c7908d18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef22dce8339e326c230849785b7b094c" id="r_aef22dce8339e326c230849785b7b094c"><td class="memItemLeft" align="right" valign="top"><a id="aef22dce8339e326c230849785b7b094c" name="aef22dce8339e326c230849785b7b094c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Clear</b> ()</td></tr>
+<tr class="memdesc:aef22dce8339e326c230849785b7b094c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs an image using an unknown format and zero size. <br /></td></tr>
+<tr class="separator:aef22dce8339e326c230849785b7b094c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08a28ce89c83b23174013b967ecc2ed2" id="r_a08a28ce89c83b23174013b967ecc2ed2"><td class="memItemLeft" align="right" valign="top"><a id="a08a28ce89c83b23174013b967ecc2ed2" name="a08a28ce89c83b23174013b967ecc2ed2"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetImageFormat</b> (const <a class="el" href="../../d5/dd3/structxii_image_format.html#a005ef22274255637febbc13f075b9e38">xiiImageFormat::Enum</a> &amp;format)</td></tr>
+<tr class="memdesc:a08a28ce89c83b23174013b967ecc2ed2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the image format. <br /></td></tr>
+<tr class="separator:a08a28ce89c83b23174013b967ecc2ed2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abdc2a4fe62136495e4c6c84af1057a22" id="r_abdc2a4fe62136495e4c6c84af1057a22"><td class="memItemLeft" align="right" valign="top"><a id="abdc2a4fe62136495e4c6c84af1057a22" name="abdc2a4fe62136495e4c6c84af1057a22"></a>
+<a class="el" href="../../d5/dd3/structxii_image_format.html#a005ef22274255637febbc13f075b9e38">xiiImageFormat::Enum</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetImageFormat</b> () const</td></tr>
+<tr class="memdesc:abdc2a4fe62136495e4c6c84af1057a22"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the image format. <br /></td></tr>
+<tr class="separator:abdc2a4fe62136495e4c6c84af1057a22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a172cf13a96ae16c06c1a8704931d4fe1" id="r_a172cf13a96ae16c06c1a8704931d4fe1"><td class="memItemLeft" align="right" valign="top"><a id="a172cf13a96ae16c06c1a8704931d4fe1" name="a172cf13a96ae16c06c1a8704931d4fe1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetWidth</b> (xiiUInt32 uiWidth)</td></tr>
+<tr class="memdesc:a172cf13a96ae16c06c1a8704931d4fe1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the image width. <br /></td></tr>
+<tr class="separator:a172cf13a96ae16c06c1a8704931d4fe1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66dab649ea6d3930126aabdc703e75c3" id="r_a66dab649ea6d3930126aabdc703e75c3"><td class="memItemLeft" align="right" valign="top"><a id="a66dab649ea6d3930126aabdc703e75c3" name="a66dab649ea6d3930126aabdc703e75c3"></a>
+xiiUInt32&#160;</td><td class="memItemRight" valign="bottom"><b>GetWidth</b> (xiiUInt32 uiMipLevel=0) const</td></tr>
+<tr class="memdesc:a66dab649ea6d3930126aabdc703e75c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the image width for a given mip level, clamped to 1. <br /></td></tr>
+<tr class="separator:a66dab649ea6d3930126aabdc703e75c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0efb5338d33130258e0d4ea863a30cec" id="r_a0efb5338d33130258e0d4ea863a30cec"><td class="memItemLeft" align="right" valign="top"><a id="a0efb5338d33130258e0d4ea863a30cec" name="a0efb5338d33130258e0d4ea863a30cec"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetHeight</b> (xiiUInt32 uiHeight)</td></tr>
+<tr class="memdesc:a0efb5338d33130258e0d4ea863a30cec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the image height. <br /></td></tr>
+<tr class="separator:a0efb5338d33130258e0d4ea863a30cec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3acf9fe0ea4c953f72d2dd7bf47caec8" id="r_a3acf9fe0ea4c953f72d2dd7bf47caec8"><td class="memItemLeft" align="right" valign="top"><a id="a3acf9fe0ea4c953f72d2dd7bf47caec8" name="a3acf9fe0ea4c953f72d2dd7bf47caec8"></a>
+xiiUInt32&#160;</td><td class="memItemRight" valign="bottom"><b>GetHeight</b> (xiiUInt32 uiMipLevel=0) const</td></tr>
+<tr class="memdesc:a3acf9fe0ea4c953f72d2dd7bf47caec8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the image height for a given mip level, clamped to 1. <br /></td></tr>
+<tr class="separator:a3acf9fe0ea4c953f72d2dd7bf47caec8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3dad23e7797a5de9a8500c0084ea262e" id="r_a3dad23e7797a5de9a8500c0084ea262e"><td class="memItemLeft" align="right" valign="top"><a id="a3dad23e7797a5de9a8500c0084ea262e" name="a3dad23e7797a5de9a8500c0084ea262e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetDepth</b> (xiiUInt32 uiDepth)</td></tr>
+<tr class="memdesc:a3dad23e7797a5de9a8500c0084ea262e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the image depth. The default is 1. <br /></td></tr>
+<tr class="separator:a3dad23e7797a5de9a8500c0084ea262e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea4a8b5b9a6dcec6e3464b497080aa2d" id="r_aea4a8b5b9a6dcec6e3464b497080aa2d"><td class="memItemLeft" align="right" valign="top"><a id="aea4a8b5b9a6dcec6e3464b497080aa2d" name="aea4a8b5b9a6dcec6e3464b497080aa2d"></a>
+xiiUInt32&#160;</td><td class="memItemRight" valign="bottom"><b>GetDepth</b> (xiiUInt32 uiMipLevel=0) const</td></tr>
+<tr class="memdesc:aea4a8b5b9a6dcec6e3464b497080aa2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the image depth for a given mip level, clamped to 1. <br /></td></tr>
+<tr class="separator:aea4a8b5b9a6dcec6e3464b497080aa2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2b1bd1a05ae594545e93b5142c83cdf" id="r_ae2b1bd1a05ae594545e93b5142c83cdf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae2b1bd1a05ae594545e93b5142c83cdf">SetNumMipLevels</a> (xiiUInt32 uiNumMipLevels)</td></tr>
+<tr class="memdesc:ae2b1bd1a05ae594545e93b5142c83cdf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the number of mip levels, including the full-size image.  <br /></td></tr>
+<tr class="separator:ae2b1bd1a05ae594545e93b5142c83cdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ad5aa4686e93e4a02feaecaa4c6ed90" id="r_a1ad5aa4686e93e4a02feaecaa4c6ed90"><td class="memItemLeft" align="right" valign="top"><a id="a1ad5aa4686e93e4a02feaecaa4c6ed90" name="a1ad5aa4686e93e4a02feaecaa4c6ed90"></a>
+xiiUInt32&#160;</td><td class="memItemRight" valign="bottom"><b>GetNumMipLevels</b> () const</td></tr>
+<tr class="memdesc:a1ad5aa4686e93e4a02feaecaa4c6ed90"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of mip levels, including the full-size image. <br /></td></tr>
+<tr class="separator:a1ad5aa4686e93e4a02feaecaa4c6ed90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d41c678edde2b74a5e7d018c9aaf272" id="r_a3d41c678edde2b74a5e7d018c9aaf272"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3d41c678edde2b74a5e7d018c9aaf272">SetNumFaces</a> (xiiUInt32 uiNumFaces)</td></tr>
+<tr class="memdesc:a3d41c678edde2b74a5e7d018c9aaf272"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the number of cubemap faces. Use 1 for a non-cubemap.  <br /></td></tr>
+<tr class="separator:a3d41c678edde2b74a5e7d018c9aaf272"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a115651ef25272665a6e791da2cc9890e" id="r_a115651ef25272665a6e791da2cc9890e"><td class="memItemLeft" align="right" valign="top"><a id="a115651ef25272665a6e791da2cc9890e" name="a115651ef25272665a6e791da2cc9890e"></a>
+xiiUInt32&#160;</td><td class="memItemRight" valign="bottom"><b>GetNumFaces</b> () const</td></tr>
+<tr class="memdesc:a115651ef25272665a6e791da2cc9890e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of cubemap faces, or 1 for a non-cubemap. <br /></td></tr>
+<tr class="separator:a115651ef25272665a6e791da2cc9890e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc9a2f47dbf86198cc50d43df3577d06" id="r_afc9a2f47dbf86198cc50d43df3577d06"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afc9a2f47dbf86198cc50d43df3577d06">SetNumArrayIndices</a> (xiiUInt32 uiNumArrayIndices)</td></tr>
+<tr class="memdesc:afc9a2f47dbf86198cc50d43df3577d06"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the number of array indices.  <br /></td></tr>
+<tr class="separator:afc9a2f47dbf86198cc50d43df3577d06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3fb9de08ca65a36bc0a7b3518fa03ab" id="r_ae3fb9de08ca65a36bc0a7b3518fa03ab"><td class="memItemLeft" align="right" valign="top"><a id="ae3fb9de08ca65a36bc0a7b3518fa03ab" name="ae3fb9de08ca65a36bc0a7b3518fa03ab"></a>
+xiiUInt32&#160;</td><td class="memItemRight" valign="bottom"><b>GetNumArrayIndices</b> () const</td></tr>
+<tr class="memdesc:ae3fb9de08ca65a36bc0a7b3518fa03ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of array indices. <br /></td></tr>
+<tr class="separator:ae3fb9de08ca65a36bc0a7b3518fa03ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b610075e7b773370b200f80e517be56" id="r_a8b610075e7b773370b200f80e517be56"><td class="memItemLeft" align="right" valign="top"><a id="a8b610075e7b773370b200f80e517be56" name="a8b610075e7b773370b200f80e517be56"></a>
+xiiUInt32&#160;</td><td class="memItemRight" valign="bottom"><b>GetPlaneCount</b> () const</td></tr>
+<tr class="memdesc:a8b610075e7b773370b200f80e517be56"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of image planes. <br /></td></tr>
+<tr class="separator:a8b610075e7b773370b200f80e517be56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e29a1f5b2f10b6545b6bd183360b378" id="r_a3e29a1f5b2f10b6545b6bd183360b378"><td class="memItemLeft" align="right" valign="top"><a id="a3e29a1f5b2f10b6545b6bd183360b378" name="a3e29a1f5b2f10b6545b6bd183360b378"></a>
+xiiUInt32&#160;</td><td class="memItemRight" valign="bottom"><b>GetNumBlocksX</b> (xiiUInt32 uiMipLevel=0, xiiUInt32 uiPlaneIndex=0) const</td></tr>
+<tr class="memdesc:a3e29a1f5b2f10b6545b6bd183360b378"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of blocks contained in a given mip level in the horizontal direction. <br /></td></tr>
+<tr class="separator:a3e29a1f5b2f10b6545b6bd183360b378"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afbd9b4918fbb41dc7d8a72df05a462e2" id="r_afbd9b4918fbb41dc7d8a72df05a462e2"><td class="memItemLeft" align="right" valign="top"><a id="afbd9b4918fbb41dc7d8a72df05a462e2" name="afbd9b4918fbb41dc7d8a72df05a462e2"></a>
+xiiUInt32&#160;</td><td class="memItemRight" valign="bottom"><b>GetNumBlocksY</b> (xiiUInt32 uiMipLevel=0, xiiUInt32 uiPlaneIndex=0) const</td></tr>
+<tr class="memdesc:afbd9b4918fbb41dc7d8a72df05a462e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of blocks contained in a given mip level in the horizontal direction. <br /></td></tr>
+<tr class="separator:afbd9b4918fbb41dc7d8a72df05a462e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e0e0c2de68376c9708d344c00cb3635" id="r_a9e0e0c2de68376c9708d344c00cb3635"><td class="memItemLeft" align="right" valign="top"><a id="a9e0e0c2de68376c9708d344c00cb3635" name="a9e0e0c2de68376c9708d344c00cb3635"></a>
+xiiUInt32&#160;</td><td class="memItemRight" valign="bottom"><b>GetNumBlocksZ</b> (xiiUInt32 uiMipLevel=0, xiiUInt32 uiPlaneIndex=0) const</td></tr>
+<tr class="memdesc:a9e0e0c2de68376c9708d344c00cb3635"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of blocks contained in a given mip level in the depth direction. <br /></td></tr>
+<tr class="separator:a9e0e0c2de68376c9708d344c00cb3635"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d14c7ed4cbf31a94f3a5b5cccb3f770" id="r_a0d14c7ed4cbf31a94f3a5b5cccb3f770"><td class="memItemLeft" align="right" valign="top"><a id="a0d14c7ed4cbf31a94f3a5b5cccb3f770" name="a0d14c7ed4cbf31a94f3a5b5cccb3f770"></a>
+xiiUInt64&#160;</td><td class="memItemRight" valign="bottom"><b>GetRowPitch</b> (xiiUInt32 uiMipLevel=0, xiiUInt32 uiPlaneIndex=0) const</td></tr>
+<tr class="memdesc:a0d14c7ed4cbf31a94f3a5b5cccb3f770"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the offset in bytes between two subsequent rows of the given mip level. <br /></td></tr>
+<tr class="separator:a0d14c7ed4cbf31a94f3a5b5cccb3f770"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c0ab72b6a05da7b78104ea12add3241" id="r_a7c0ab72b6a05da7b78104ea12add3241"><td class="memItemLeft" align="right" valign="top"><a id="a7c0ab72b6a05da7b78104ea12add3241" name="a7c0ab72b6a05da7b78104ea12add3241"></a>
+xiiUInt64&#160;</td><td class="memItemRight" valign="bottom"><b>GetDepthPitch</b> (xiiUInt32 uiMipLevel=0, xiiUInt32 uiPlaneIndex=0) const</td></tr>
+<tr class="memdesc:a7c0ab72b6a05da7b78104ea12add3241"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the offset in bytes between two subsequent depth slices of the given mip level. <br /></td></tr>
+<tr class="separator:a7c0ab72b6a05da7b78104ea12add3241"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29c9a0f6835faddecb26eb151a31c55d" id="r_a29c9a0f6835faddecb26eb151a31c55d"><td class="memItemLeft" align="right" valign="top"><a id="a29c9a0f6835faddecb26eb151a31c55d" name="a29c9a0f6835faddecb26eb151a31c55d"></a>
+xiiUInt64&#160;</td><td class="memItemRight" valign="bottom"><b>ComputeDataSize</b> () const</td></tr>
+<tr class="memdesc:a29c9a0f6835faddecb26eb151a31c55d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the data size required for an image with the header's format and dimensions. <br /></td></tr>
+<tr class="separator:a29c9a0f6835faddecb26eb151a31c55d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aedefcd7281848389aeba9094caa5973d" id="r_aedefcd7281848389aeba9094caa5973d"><td class="memItemLeft" align="right" valign="top"><a id="aedefcd7281848389aeba9094caa5973d" name="aedefcd7281848389aeba9094caa5973d"></a>
+xiiUInt32&#160;</td><td class="memItemRight" valign="bottom"><b>ComputeNumberOfMipMaps</b> () const</td></tr>
+<tr class="memdesc:aedefcd7281848389aeba9094caa5973d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the number of mip maps in the full mip chain. <br /></td></tr>
+<tr class="separator:aedefcd7281848389aeba9094caa5973d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:a67b72e650db47408cf41dec290a8c460" id="r_a67b72e650db47408cf41dec290a8c460"><td class="memItemLeft" align="right" valign="top"><a id="a67b72e650db47408cf41dec290a8c460" name="a67b72e650db47408cf41dec290a8c460"></a>
+xiiUInt32&#160;</td><td class="memItemRight" valign="bottom"><b>m_uiNumMipLevels</b></td></tr>
+<tr class="separator:a67b72e650db47408cf41dec290a8c460"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab305ced8e957de08120535691976b718" id="r_ab305ced8e957de08120535691976b718"><td class="memItemLeft" align="right" valign="top"><a id="ab305ced8e957de08120535691976b718" name="ab305ced8e957de08120535691976b718"></a>
+xiiUInt32&#160;</td><td class="memItemRight" valign="bottom"><b>m_uiNumFaces</b></td></tr>
+<tr class="separator:ab305ced8e957de08120535691976b718"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6eddde82c0590889c60daa72c49013cc" id="r_a6eddde82c0590889c60daa72c49013cc"><td class="memItemLeft" align="right" valign="top"><a id="a6eddde82c0590889c60daa72c49013cc" name="a6eddde82c0590889c60daa72c49013cc"></a>
+xiiUInt32&#160;</td><td class="memItemRight" valign="bottom"><b>m_uiNumArrayIndices</b></td></tr>
+<tr class="separator:a6eddde82c0590889c60daa72c49013cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8417fb271661cedfc1a121f7fbdc6d69" id="r_a8417fb271661cedfc1a121f7fbdc6d69"><td class="memItemLeft" align="right" valign="top"><a id="a8417fb271661cedfc1a121f7fbdc6d69" name="a8417fb271661cedfc1a121f7fbdc6d69"></a>
+xiiUInt32&#160;</td><td class="memItemRight" valign="bottom"><b>m_uiWidth</b></td></tr>
+<tr class="separator:a8417fb271661cedfc1a121f7fbdc6d69"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a255a2d074987c26b7f6afb762b892f" id="r_a5a255a2d074987c26b7f6afb762b892f"><td class="memItemLeft" align="right" valign="top"><a id="a5a255a2d074987c26b7f6afb762b892f" name="a5a255a2d074987c26b7f6afb762b892f"></a>
+xiiUInt32&#160;</td><td class="memItemRight" valign="bottom"><b>m_uiHeight</b></td></tr>
+<tr class="separator:a5a255a2d074987c26b7f6afb762b892f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa16652a33e853574dfc92dd53f760787" id="r_aa16652a33e853574dfc92dd53f760787"><td class="memItemLeft" align="right" valign="top"><a id="aa16652a33e853574dfc92dd53f760787" name="aa16652a33e853574dfc92dd53f760787"></a>
+xiiUInt32&#160;</td><td class="memItemRight" valign="bottom"><b>m_uiDepth</b></td></tr>
+<tr class="separator:aa16652a33e853574dfc92dd53f760787"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad254e88568221fdb04fca357e5bd4660" id="r_ad254e88568221fdb04fca357e5bd4660"><td class="memItemLeft" align="right" valign="top"><a id="ad254e88568221fdb04fca357e5bd4660" name="ad254e88568221fdb04fca357e5bd4660"></a>
+<a class="el" href="../../d5/dd3/structxii_image_format.html#a005ef22274255637febbc13f075b9e38">xiiImageFormat::Enum</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_Format</b></td></tr>
+<tr class="separator:ad254e88568221fdb04fca357e5bd4660"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p><a class="el" href="../../d8/d4f/class_a.html">A</a> class containing image meta data, such as format and dimensions. </p>
+<p>This class has no associated behavior or functionality, and its getters and setters have no effect other than changing the contained value. It is intended as a container to be modified by image utils and loaders. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="afc9a2f47dbf86198cc50d43df3577d06" name="afc9a2f47dbf86198cc50d43df3577d06"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc9a2f47dbf86198cc50d43df3577d06">&#9670;&#160;</a></span>SetNumArrayIndices()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void xiiImageHeader::SetNumArrayIndices </td>
+          <td>(</td>
+          <td class="paramtype">xiiUInt32</td>          <td class="paramname"><span class="paramname"><em>uiNumArrayIndices</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets the number of array indices. </p>
+<p>Setting this to 0 will result in an empty image. </p>
+
+</div>
+</div>
+<a id="a3d41c678edde2b74a5e7d018c9aaf272" name="a3d41c678edde2b74a5e7d018c9aaf272"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d41c678edde2b74a5e7d018c9aaf272">&#9670;&#160;</a></span>SetNumFaces()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void xiiImageHeader::SetNumFaces </td>
+          <td>(</td>
+          <td class="paramtype">xiiUInt32</td>          <td class="paramname"><span class="paramname"><em>uiNumFaces</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets the number of cubemap faces. Use 1 for a non-cubemap. </p>
+<p>Setting this to 0 will result in an empty image. </p>
+
+</div>
+</div>
+<a id="ae2b1bd1a05ae594545e93b5142c83cdf" name="ae2b1bd1a05ae594545e93b5142c83cdf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae2b1bd1a05ae594545e93b5142c83cdf">&#9670;&#160;</a></span>SetNumMipLevels()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void xiiImageHeader::SetNumMipLevels </td>
+          <td>(</td>
+          <td class="paramtype">xiiUInt32</td>          <td class="paramname"><span class="paramname"><em>uiNumMipLevels</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets the number of mip levels, including the full-size image. </p>
+<p>Setting this to 0 will result in an empty image. </p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li>/home/runner/work/XII/XII/Source/Engine/Texture/Image/<a class="el" href="../../d9/d2a/_image_header_8h_source.html">ImageHeader.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../d0/d25/classxii_image_header.html">xiiImageHeader</a></li>
+    <li class="footer">Generated on Mon Jul 1 2024 23:53:15 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+  </ul>
+</div>
+</body>
+</html>

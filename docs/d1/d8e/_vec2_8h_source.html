@@ -1,0 +1,362 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.11.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<!-- BEGIN opengraph metadata -->
+<meta property="og:title" content="XII" />
+<meta property="og:image" content="../../XII-Logo.png" />
+<meta property="og:description" content="An advanced high-performance simulation engine." />
+<meta property="og:url" content="https://www.xiitechnologies.com" />
+<!-- END opengraph metadata -->
+<!-- BEGIN twitter metadata -->
+<meta name="twitter:image:src" content="../../XII-Logo.png" />
+<meta name="twitter:title" content="XII" />
+<meta name="twitter:description" content="An advanced high-performance simulation engine." />
+<!-- END twitter metadata -->
+<title>XII: /home/runner/work/XII/XII/Source/Engine/Foundation/Math/Vec2.h Source File</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link rel="icon" type="image/svg+xml" href="logo.drawio.svg"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="../../toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../custom.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<a href="https://github.com/jothepro/doxygen-awesome-css" class="github-corner" title="View source on GitHub" target="_blank" rel="noopener noreferrer">
+    <svg viewBox="0 0 250 250" width="40" height="40" style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+    <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="../../XII-Logo.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">XII
+   &#160;<span id="projectnumber">1.0.0</span>
+   </div>
+   <div id="projectbrief">A high-performance simulation engine.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(1); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.html','Search',true);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('d1/d8e/_vec2_8h_source.html','../../'); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Vec2.h</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &lt;Foundation/Math/Math.h&gt;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#if XII_ENABLED(XII_MATH_CHECK_FOR_NAN)</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#  define XII_VEC2_CHECK_FOR_NAN(obj) (obj)-&gt;AssertNotNaN();</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#  define XII_VEC2_CHECK_FOR_NAN(obj)</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Type&gt;</div>
+<div class="foldopen" id="foldopen00013" data-start="{" data-end="};">
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="../../d1/d0d/classxii_vec2_template.html">   13</a></span><span class="keyword">class </span><a class="code hl_class" href="../../d1/d0d/classxii_vec2_template.html">xiiVec2Template</a></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>{</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>  <span class="comment">// Means that vectors can be copied using memcpy instead of copy construction.</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>  XII_DECLARE_POD_TYPE();</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>  <span class="keyword">using </span>ComponentType = Type;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>  <span class="comment">// *** Data ***</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>  Type x;</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>  Type y;</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>  <span class="comment">// *** Constructors ***</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>  <a class="code hl_function" href="../../d1/d0d/classxii_vec2_template.html#ab563984d6d779f64ab67d82ceb384aa0">xiiVec2Template</a>(); <span class="comment">// [tested]</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>  <a class="code hl_function" href="../../d1/d0d/classxii_vec2_template.html#ab563984d6d779f64ab67d82ceb384aa0">xiiVec2Template</a>(Type x, Type y); <span class="comment">// [tested]</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>  <span class="keyword">explicit</span> <a class="code hl_function" href="../../d1/d0d/classxii_vec2_template.html#ab563984d6d779f64ab67d82ceb384aa0">xiiVec2Template</a>(Type v); <span class="comment">// [tested]</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>  <span class="comment">// no copy-constructor and operator= since the default-generated ones will be faster</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="../../d1/d0d/classxii_vec2_template.html#a98718931a18e0a6df9f2087dbb7d2983">   40</a></span>  XII_DECLARE_IF_FLOAT_TYPE [[nodiscard]] <span class="keyword">static</span> <span class="keyword">const</span> <a class="code hl_class" href="../../d1/d0d/classxii_vec2_template.html">xiiVec2Template&lt;Type&gt;</a> <a class="code hl_function" href="../../d1/d0d/classxii_vec2_template.html#a98718931a18e0a6df9f2087dbb7d2983">MakeNaN</a>() { <span class="keywordflow">return</span> <a class="code hl_function" href="../../d1/d0d/classxii_vec2_template.html#ab563984d6d779f64ab67d82ceb384aa0">xiiVec2Template&lt;Type&gt;</a>(<a class="code hl_function" href="../../d1/d37/namespacexii_math.html#a794f0339ad168c57748133cd2687fe4d">xiiMath::NaN&lt;Type&gt;</a>()); }</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="../../d1/d0d/classxii_vec2_template.html#a612a72bc2b5f3322de66026c9b145e49">   43</a></span>  [[nodiscard]] <span class="keyword">static</span> <span class="keyword">constexpr</span> <a class="code hl_class" href="../../d1/d0d/classxii_vec2_template.html">xiiVec2Template&lt;Type&gt;</a> <a class="code hl_function" href="../../d1/d0d/classxii_vec2_template.html#a612a72bc2b5f3322de66026c9b145e49">MakeZero</a>() { <span class="keywordflow">return</span> <a class="code hl_function" href="../../d1/d0d/classxii_vec2_template.html#ab563984d6d779f64ab67d82ceb384aa0">xiiVec2Template</a>(0); } <span class="comment">// [tested]</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="../../d1/d0d/classxii_vec2_template.html#aaafe4c2b6fd35b1a29781f694827216f">   46</a></span>  [[nodiscard]] <span class="keyword">static</span> <span class="keyword">constexpr</span> <a class="code hl_class" href="../../d1/d0d/classxii_vec2_template.html">xiiVec2Template&lt;Type&gt;</a> <a class="code hl_function" href="../../d1/d0d/classxii_vec2_template.html#aaafe4c2b6fd35b1a29781f694827216f">Make</a>(Type x, Type y) { <span class="keywordflow">return</span> <a class="code hl_function" href="../../d1/d0d/classxii_vec2_template.html#ab563984d6d779f64ab67d82ceb384aa0">xiiVec2Template&lt;Type&gt;</a>(x, y); } <span class="comment">// [tested]</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="preprocessor">#if XII_ENABLED(XII_MATH_CHECK_FOR_NAN)</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>  <span class="keywordtype">void</span> AssertNotNaN()<span class="keyword"> const</span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="keyword">  </span>{</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    XII_ASSERT_ALWAYS(!<a class="code hl_function" href="../../d1/d0d/classxii_vec2_template.html#a78e9bae3485f5b02ac864c5341fa2273">IsNaN</a>(), <span class="stringliteral">&quot;This object contains NaN values. This can happen when you forgot to initialize it before using it. Please &quot;</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>                                <span class="stringliteral">&quot;check that all code-paths properly initialize this object.&quot;</span>);</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>  }</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>  <span class="comment">// *** Conversions ***</span></div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>  <span class="keyword">const</span> <a class="code hl_class" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3Template&lt;Type&gt;</a> <a class="code hl_function" href="../../d1/d0d/classxii_vec2_template.html#a7f97ebb9edd4317d006999adb412f237">GetAsVec3</a>(Type z) <span class="keyword">const</span>; <span class="comment">// [tested]</span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>  <span class="keyword">const</span> <a class="code hl_class" href="../../d1/d20/classxii_vec4_template.html">xiiVec4Template&lt;Type&gt;</a> <a class="code hl_function" href="../../d1/d0d/classxii_vec2_template.html#a200a6fda476f10f773f5fdedf09a770e">GetAsVec4</a>(Type z, Type w) <span class="keyword">const</span>; <span class="comment">// [tested]</span></div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno"><a class="line" href="../../d1/d0d/classxii_vec2_template.html#a5f3b10c565efcf9258726a49d704275c">   65</a></span>  <span class="keyword">const</span> Type* <a class="code hl_function" href="../../d1/d0d/classxii_vec2_template.html#a5f3b10c565efcf9258726a49d704275c">GetData</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> &amp;x; }</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno"><a class="line" href="../../d1/d0d/classxii_vec2_template.html#ab361bd16c80a092db7ba3981fdaddea7">   68</a></span>  Type* <a class="code hl_function" href="../../d1/d0d/classxii_vec2_template.html#ab361bd16c80a092db7ba3981fdaddea7">GetData</a>() { <span class="keywordflow">return</span> &amp;x; }</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>  <span class="comment">// *** Functions to set the vector to specific values ***</span></div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>  <span class="keywordtype">void</span> <a class="code hl_function" href="../../d1/d0d/classxii_vec2_template.html#a4fe70680e4be1f88a1e878816ba77dc4">Set</a>(Type xy); <span class="comment">// [tested]</span></div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>  <span class="keywordtype">void</span> <a class="code hl_function" href="../../d1/d0d/classxii_vec2_template.html#a4fe70680e4be1f88a1e878816ba77dc4">Set</a>(Type x, Type y); <span class="comment">// [tested]</span></div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>  <span class="keywordtype">void</span> <a class="code hl_function" href="../../d1/d0d/classxii_vec2_template.html#a23729487b42eb699808346ea1e0902c7">SetZero</a>(); <span class="comment">// [tested]</span></div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>  <span class="comment">// *** Functions dealing with length ***</span></div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>  XII_DECLARE_IF_FLOAT_TYPE Type <a class="code hl_function" href="../../d1/d0d/classxii_vec2_template.html#a2a933cec269257237759ba6b3c4fc7c7">GetLength</a>() <span class="keyword">const</span>; <span class="comment">// [tested]</span></div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span> </div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>  XII_DECLARE_IF_FLOAT_TYPE <a class="code hl_struct" href="../../dd/dad/structxii_result.html">xiiResult</a> <a class="code hl_function" href="../../d1/d0d/classxii_vec2_template.html#aed740a62e6e237abd688d6700ecfcc52">SetLength</a>(Type fNewLength, Type fEpsilon = xiiMath::DefaultEpsilon&lt;Type&gt;()); <span class="comment">// [tested]</span></div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span> </div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>  Type <a class="code hl_function" href="../../d1/d0d/classxii_vec2_template.html#adc3894b5226e1833035b09c036ca9d84">GetLengthSquared</a>() <span class="keyword">const</span>; <span class="comment">// [tested]</span></div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span> </div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>  XII_DECLARE_IF_FLOAT_TYPE Type <a class="code hl_function" href="../../d1/d0d/classxii_vec2_template.html#a7fede154da6dbab1acc9c841c018d116">GetLengthAndNormalize</a>(); <span class="comment">// [tested]</span></div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span> </div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>  XII_DECLARE_IF_FLOAT_TYPE <span class="keyword">const</span> <a class="code hl_class" href="../../d1/d0d/classxii_vec2_template.html">xiiVec2Template&lt;Type&gt;</a> <a class="code hl_function" href="../../d1/d0d/classxii_vec2_template.html#aa72dc57841f36d62ff83f36e2031e113">GetNormalized</a>() <span class="keyword">const</span>; <span class="comment">// [tested]</span></div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span> </div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>  XII_DECLARE_IF_FLOAT_TYPE <span class="keywordtype">void</span> <a class="code hl_function" href="../../d1/d0d/classxii_vec2_template.html#adc5355aee3ce86d017a94ded063b17fb">Normalize</a>(); <span class="comment">// [tested]</span></div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span> </div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>  XII_DECLARE_IF_FLOAT_TYPE <a class="code hl_struct" href="../../dd/dad/structxii_result.html">xiiResult</a> <a class="code hl_function" href="../../d1/d0d/classxii_vec2_template.html#af6b78eebd48872f4c2ed9d45bfbff599">NormalizeIfNotZero</a>(<span class="keyword">const</span> <a class="code hl_class" href="../../d1/d0d/classxii_vec2_template.html">xiiVec2Template&lt;Type&gt;</a>&amp; vFallback = <a class="code hl_class" href="../../d1/d0d/classxii_vec2_template.html">xiiVec2Template&lt;Type&gt;</a>(1, 0), Type fEpsilon = xiiMath::DefaultEpsilon&lt;Type&gt;()); <span class="comment">// [tested]</span></div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span> </div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="../../d1/d0d/classxii_vec2_template.html#a2bb93a40f09265cb2368682241cc4011">IsZero</a>() <span class="keyword">const</span>; <span class="comment">// [tested]</span></div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span> </div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="../../d1/d0d/classxii_vec2_template.html#a2bb93a40f09265cb2368682241cc4011">IsZero</a>(Type fEpsilon) <span class="keyword">const</span>; <span class="comment">// [tested]</span></div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span> </div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>  XII_DECLARE_IF_FLOAT_TYPE <span class="keywordtype">bool</span> <a class="code hl_function" href="../../d1/d0d/classxii_vec2_template.html#adbb197ee424f7f48f36f637fadb2c735">IsNormalized</a>(Type fEpsilon = xiiMath::HugeEpsilon&lt;Type&gt;()) <span class="keyword">const</span>; <span class="comment">// [tested]</span></div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span> </div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="../../d1/d0d/classxii_vec2_template.html#a78e9bae3485f5b02ac864c5341fa2273">IsNaN</a>() <span class="keyword">const</span>; <span class="comment">// [tested]</span></div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span> </div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="../../d1/d0d/classxii_vec2_template.html#a84fde443875292bbaf1da11562a3a2db">IsValid</a>() <span class="keyword">const</span>; <span class="comment">// [tested]</span></div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span> </div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>  XII_DECLARE_IF_FLOAT_TYPE Type <a class="code hl_function" href="../../d1/d0d/classxii_vec2_template.html#a836ba4bba3a71c71529b677f9d76c278">Distance</a>(<span class="keyword">const</span> <a class="code hl_class" href="../../d1/d0d/classxii_vec2_template.html">xiiVec2Template&lt;Type&gt;</a>&amp; vPoint) <span class="keyword">const</span>; <span class="comment">// [tested]</span></div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span> </div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>  Type <a class="code hl_function" href="../../d1/d0d/classxii_vec2_template.html#a5fca7e509d217416d767dc038afa95ab">DistanceSquared</a>(<span class="keyword">const</span> <a class="code hl_class" href="../../d1/d0d/classxii_vec2_template.html">xiiVec2Template&lt;Type&gt;</a>&amp; vPoint) <span class="keyword">const</span>; <span class="comment">// [tested]</span></div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span> </div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span> </div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>  <span class="comment">// *** Operators ***</span></div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>  <span class="keyword">const</span> <a class="code hl_class" href="../../d1/d0d/classxii_vec2_template.html">xiiVec2Template&lt;Type&gt;</a> <a class="code hl_function" href="../../d1/d0d/classxii_vec2_template.html#a780339d36eec1c20e4aa8c1f2a655797">operator-</a>() <span class="keyword">const</span>; <span class="comment">// [tested]</span></div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span> </div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>  <span class="keywordtype">void</span> <a class="code hl_function" href="../../d1/d0d/classxii_vec2_template.html#ab14953e0d722466f7ae9a934da7a6e45">operator+=</a>(<span class="keyword">const</span> <a class="code hl_class" href="../../d1/d0d/classxii_vec2_template.html">xiiVec2Template&lt;Type&gt;</a>&amp; vCc); <span class="comment">// [tested]</span></div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span> </div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>  <span class="keywordtype">void</span> <a class="code hl_function" href="../../d1/d0d/classxii_vec2_template.html#a277c26a02d10b67275d4cd3b575c37a0">operator-=</a>(<span class="keyword">const</span> <a class="code hl_class" href="../../d1/d0d/classxii_vec2_template.html">xiiVec2Template&lt;Type&gt;</a>&amp; vCc); <span class="comment">// [tested]</span></div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span> </div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>  <span class="keywordtype">void</span> <a class="code hl_function" href="../../d1/d0d/classxii_vec2_template.html#abd7d20f569aea08fb26c3401ec763791">operator*=</a>(Type f); <span class="comment">// [tested]</span></div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span> </div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>  <span class="keywordtype">void</span> <a class="code hl_function" href="../../d1/d0d/classxii_vec2_template.html#adeff5daa4b13dc6c6d5252a90f245af9">operator/=</a>(Type f); <span class="comment">// [tested]</span></div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span> </div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="../../d1/d0d/classxii_vec2_template.html#ad722164290abb9d10cade94c75117116">IsIdentical</a>(<span class="keyword">const</span> <a class="code hl_class" href="../../d1/d0d/classxii_vec2_template.html">xiiVec2Template&lt;Type&gt;</a>&amp; rhs) <span class="keyword">const</span>; <span class="comment">// [tested]</span></div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span> </div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="../../d1/d0d/classxii_vec2_template.html#af28c1db86c646aa5292dc02a504ff996">IsEqual</a>(<span class="keyword">const</span> <a class="code hl_class" href="../../d1/d0d/classxii_vec2_template.html">xiiVec2Template&lt;Type&gt;</a>&amp; rhs, Type fEpsilon) <span class="keyword">const</span>; <span class="comment">// [tested]</span></div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span> </div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span> </div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>  <span class="comment">// *** Common vector operations ***</span></div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>  <a class="code hl_class" href="../../d3/ddb/classxii_angle_template.html">xiiAngle</a> <a class="code hl_function" href="../../d1/d0d/classxii_vec2_template.html#adf1017dcf1e1063b65b02f3d584e5f19">GetAngleBetween</a>(<span class="keyword">const</span> <a class="code hl_class" href="../../d1/d0d/classxii_vec2_template.html">xiiVec2Template&lt;Type&gt;</a>&amp; rhs) <span class="keyword">const</span>; <span class="comment">// [tested]</span></div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span> </div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>  Type <a class="code hl_function" href="../../d1/d0d/classxii_vec2_template.html#a45f41d82d03628e0f69a6ff95d97a5c3">Dot</a>(<span class="keyword">const</span> <a class="code hl_class" href="../../d1/d0d/classxii_vec2_template.html">xiiVec2Template&lt;Type&gt;</a>&amp; rhs) <span class="keyword">const</span>; <span class="comment">// [tested]</span></div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span> </div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>  <span class="keyword">const</span> <a class="code hl_class" href="../../d1/d0d/classxii_vec2_template.html">xiiVec2Template&lt;Type&gt;</a> <a class="code hl_function" href="../../d1/d0d/classxii_vec2_template.html#aa20b3061301f78442334f5de30e0cc51">CompMin</a>(<span class="keyword">const</span> <a class="code hl_class" href="../../d1/d0d/classxii_vec2_template.html">xiiVec2Template&lt;Type&gt;</a>&amp; rhs) <span class="keyword">const</span>; <span class="comment">// [tested]</span></div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span> </div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>  <span class="keyword">const</span> <a class="code hl_class" href="../../d1/d0d/classxii_vec2_template.html">xiiVec2Template&lt;Type&gt;</a> <a class="code hl_function" href="../../d1/d0d/classxii_vec2_template.html#a22aff2a1589e86df7a43334d5d06ff50">CompMax</a>(<span class="keyword">const</span> <a class="code hl_class" href="../../d1/d0d/classxii_vec2_template.html">xiiVec2Template&lt;Type&gt;</a>&amp; rhs) <span class="keyword">const</span>; <span class="comment">// [tested]</span></div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span> </div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>  <span class="keyword">const</span> <a class="code hl_class" href="../../d1/d0d/classxii_vec2_template.html">xiiVec2Template&lt;Type&gt;</a> <a class="code hl_function" href="../../d1/d0d/classxii_vec2_template.html#aa728159c1b0b50e9d11eadac9ef214e3">CompClamp</a>(<span class="keyword">const</span> <a class="code hl_class" href="../../d1/d0d/classxii_vec2_template.html">xiiVec2Template&lt;Type&gt;</a>&amp; vLow, <span class="keyword">const</span> <a class="code hl_class" href="../../d1/d0d/classxii_vec2_template.html">xiiVec2Template&lt;Type&gt;</a>&amp; vHigh) <span class="keyword">const</span>; <span class="comment">// [tested]</span></div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span> </div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>  <span class="keyword">const</span> <a class="code hl_class" href="../../d1/d0d/classxii_vec2_template.html">xiiVec2Template&lt;Type&gt;</a> <a class="code hl_function" href="../../d1/d0d/classxii_vec2_template.html#ae3bf0e9af8df422aa06c615f5bdc5564">CompMul</a>(<span class="keyword">const</span> <a class="code hl_class" href="../../d1/d0d/classxii_vec2_template.html">xiiVec2Template&lt;Type&gt;</a>&amp; rhs) <span class="keyword">const</span>; <span class="comment">// [tested]</span></div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span> </div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>  <span class="keyword">const</span> <a class="code hl_class" href="../../d1/d0d/classxii_vec2_template.html">xiiVec2Template&lt;Type&gt;</a> <a class="code hl_function" href="../../d1/d0d/classxii_vec2_template.html#a4da934cc9261098df723f7365a9cfce8">CompDiv</a>(<span class="keyword">const</span> <a class="code hl_class" href="../../d1/d0d/classxii_vec2_template.html">xiiVec2Template&lt;Type&gt;</a>&amp; rhs) <span class="keyword">const</span>; <span class="comment">// [tested]</span></div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span> </div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>  <span class="keyword">const</span> <a class="code hl_class" href="../../d1/d0d/classxii_vec2_template.html">xiiVec2Template&lt;Type&gt;</a> <a class="code hl_function" href="../../d1/d0d/classxii_vec2_template.html#a80268c93bfea5c0102c47a63b604ad83">Abs</a>() <span class="keyword">const</span>; <span class="comment">// [tested]</span></div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span> </div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span> </div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>  <span class="comment">// *** Other common operations ***</span></div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>  XII_DECLARE_IF_FLOAT_TYPE <span class="keywordtype">void</span> <a class="code hl_function" href="../../d1/d0d/classxii_vec2_template.html#a5e99afb67f6269e2eedc27d6e5729005">MakeOrthogonalTo</a>(<span class="keyword">const</span> <a class="code hl_class" href="../../d1/d0d/classxii_vec2_template.html">xiiVec2Template&lt;Type&gt;</a>&amp; vNormal); <span class="comment">// [tested]</span></div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span> </div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>  <span class="keyword">const</span> <a class="code hl_class" href="../../d1/d0d/classxii_vec2_template.html">xiiVec2Template&lt;Type&gt;</a> <a class="code hl_function" href="../../d1/d0d/classxii_vec2_template.html#a9a8f11479d64180b9329c0ac24e994c8">GetOrthogonalVector</a>() <span class="keyword">const</span>; <span class="comment">// [tested]</span></div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span> </div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>  XII_DECLARE_IF_FLOAT_TYPE <span class="keyword">const</span> <a class="code hl_class" href="../../d1/d0d/classxii_vec2_template.html">xiiVec2Template&lt;Type&gt;</a> <a class="code hl_function" href="../../d1/d0d/classxii_vec2_template.html#a1055be6f9ffcd811402e8e830ed88bc6">GetReflectedVector</a>(<span class="keyword">const</span> <a class="code hl_class" href="../../d1/d0d/classxii_vec2_template.html">xiiVec2Template&lt;Type&gt;</a>&amp; vNormal) <span class="keyword">const</span>; <span class="comment">// [tested]</span></div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>};</div>
+</div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span> </div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span><span class="comment">// *** Operators ***</span></div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span> </div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Type&gt;</div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span><span class="keyword">const</span> <a class="code hl_class" href="../../d1/d0d/classxii_vec2_template.html">xiiVec2Template&lt;Type&gt;</a> operator+(<span class="keyword">const</span> <a class="code hl_class" href="../../d1/d0d/classxii_vec2_template.html">xiiVec2Template&lt;Type&gt;</a>&amp; v1, <span class="keyword">const</span> <a class="code hl_class" href="../../d1/d0d/classxii_vec2_template.html">xiiVec2Template&lt;Type&gt;</a>&amp; v2); <span class="comment">// [tested]</span></div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span> </div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Type&gt;</div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span><span class="keyword">const</span> <a class="code hl_class" href="../../d1/d0d/classxii_vec2_template.html">xiiVec2Template&lt;Type&gt;</a> operator-(<span class="keyword">const</span> <a class="code hl_class" href="../../d1/d0d/classxii_vec2_template.html">xiiVec2Template&lt;Type&gt;</a>&amp; v1, <span class="keyword">const</span> <a class="code hl_class" href="../../d1/d0d/classxii_vec2_template.html">xiiVec2Template&lt;Type&gt;</a>&amp; v2); <span class="comment">// [tested]</span></div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span> </div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Type&gt;</div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span><span class="keyword">const</span> <a class="code hl_class" href="../../d1/d0d/classxii_vec2_template.html">xiiVec2Template&lt;Type&gt;</a> operator*(Type f, <span class="keyword">const</span> <a class="code hl_class" href="../../d1/d0d/classxii_vec2_template.html">xiiVec2Template&lt;Type&gt;</a>&amp; v); <span class="comment">// [tested]</span></div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span> </div>
+<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Type&gt;</div>
+<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span><span class="keyword">const</span> <a class="code hl_class" href="../../d1/d0d/classxii_vec2_template.html">xiiVec2Template&lt;Type&gt;</a> operator*(<span class="keyword">const</span> <a class="code hl_class" href="../../d1/d0d/classxii_vec2_template.html">xiiVec2Template&lt;Type&gt;</a>&amp; v, Type f); <span class="comment">// [tested]</span></div>
+<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span> </div>
+<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Type&gt;</div>
+<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span><span class="keyword">const</span> <a class="code hl_class" href="../../d1/d0d/classxii_vec2_template.html">xiiVec2Template&lt;Type&gt;</a> operator/(<span class="keyword">const</span> <a class="code hl_class" href="../../d1/d0d/classxii_vec2_template.html">xiiVec2Template&lt;Type&gt;</a>&amp; v, Type f); <span class="comment">// [tested]</span></div>
+<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span> </div>
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Type&gt;</div>
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span><span class="keywordtype">bool</span> operator==(<span class="keyword">const</span> <a class="code hl_class" href="../../d1/d0d/classxii_vec2_template.html">xiiVec2Template&lt;Type&gt;</a>&amp; v1, <span class="keyword">const</span> <a class="code hl_class" href="../../d1/d0d/classxii_vec2_template.html">xiiVec2Template&lt;Type&gt;</a>&amp; v2); <span class="comment">// [tested]</span></div>
+<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span> </div>
+<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Type&gt;</div>
+<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span><span class="keywordtype">bool</span> operator&lt;(<span class="keyword">const</span> <a class="code hl_class" href="../../d1/d0d/classxii_vec2_template.html">xiiVec2Template&lt;Type&gt;</a>&amp; v1, <span class="keyword">const</span> <a class="code hl_class" href="../../d1/d0d/classxii_vec2_template.html">xiiVec2Template&lt;Type&gt;</a>&amp; v2);</div>
+<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span> </div>
+<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span><span class="preprocessor">#include &lt;Foundation/Math/Implementation/Vec2_inl.h&gt;</span></div>
+<div class="ttc" id="aclassxii_angle_template_html"><div class="ttname"><a href="../../d3/ddb/classxii_angle_template.html">xiiAngleTemplate&lt; float &gt;</a></div></div>
+<div class="ttc" id="aclassxii_vec2_template_html"><div class="ttname"><a href="../../d1/d0d/classxii_vec2_template.html">xiiVec2Template</a></div><div class="ttdoc">A 2-component vector class.</div><div class="ttdef"><b>Definition</b> Vec2.h:14</div></div>
+<div class="ttc" id="aclassxii_vec2_template_html_a1055be6f9ffcd811402e8e830ed88bc6"><div class="ttname"><a href="../../d1/d0d/classxii_vec2_template.html#a1055be6f9ffcd811402e8e830ed88bc6">xiiVec2Template::GetReflectedVector</a></div><div class="ttdeci">XII_DECLARE_IF_FLOAT_TYPE const xiiVec2Template&lt; Type &gt; GetReflectedVector(const xiiVec2Template&lt; Type &gt; &amp;vNormal) const</div><div class="ttdoc">Returns this vector reflected at vNormal.</div><div class="ttdef"><b>Definition</b> Vec2_inl.h:242</div></div>
+<div class="ttc" id="aclassxii_vec2_template_html_a200a6fda476f10f773f5fdedf09a770e"><div class="ttname"><a href="../../d1/d0d/classxii_vec2_template.html#a200a6fda476f10f773f5fdedf09a770e">xiiVec2Template::GetAsVec4</a></div><div class="ttdeci">const xiiVec4Template&lt; Type &gt; GetAsVec4(Type z, Type w) const</div><div class="ttdoc">Returns a xiiVec4Template with x,y from this vector and z and w set by the parameters.</div><div class="ttdef"><b>Definition</b> Vec4_inl.h:18</div></div>
+<div class="ttc" id="aclassxii_vec2_template_html_a22aff2a1589e86df7a43334d5d06ff50"><div class="ttname"><a href="../../d1/d0d/classxii_vec2_template.html#a22aff2a1589e86df7a43334d5d06ff50">xiiVec2Template::CompMax</a></div><div class="ttdeci">const xiiVec2Template&lt; Type &gt; CompMax(const xiiVec2Template&lt; Type &gt; &amp;rhs) const</div><div class="ttdoc">Returns the component-wise maximum of *this and rhs.</div><div class="ttdef"><b>Definition</b> Vec2_inl.h:277</div></div>
+<div class="ttc" id="aclassxii_vec2_template_html_a23729487b42eb699808346ea1e0902c7"><div class="ttname"><a href="../../d1/d0d/classxii_vec2_template.html#a23729487b42eb699808346ea1e0902c7">xiiVec2Template::SetZero</a></div><div class="ttdeci">void SetZero()</div><div class="ttdoc">Sets the vector to all zero.</div><div class="ttdef"><b>Definition</b> Vec2_inl.h:41</div></div>
+<div class="ttc" id="aclassxii_vec2_template_html_a277c26a02d10b67275d4cd3b575c37a0"><div class="ttname"><a href="../../d1/d0d/classxii_vec2_template.html#a277c26a02d10b67275d4cd3b575c37a0">xiiVec2Template::operator-=</a></div><div class="ttdeci">void operator-=(const xiiVec2Template&lt; Type &gt; &amp;vCc)</div><div class="ttdoc">Subtracts cc component-wise from this vector.</div><div class="ttdef"><b>Definition</b> Vec2_inl.h:187</div></div>
+<div class="ttc" id="aclassxii_vec2_template_html_a2a933cec269257237759ba6b3c4fc7c7"><div class="ttname"><a href="../../d1/d0d/classxii_vec2_template.html#a2a933cec269257237759ba6b3c4fc7c7">xiiVec2Template::GetLength</a></div><div class="ttdeci">XII_DECLARE_IF_FLOAT_TYPE Type GetLength() const</div><div class="ttdoc">Returns the length of the vector.</div><div class="ttdef"><b>Definition</b> Vec2_inl.h:47</div></div>
+<div class="ttc" id="aclassxii_vec2_template_html_a2bb93a40f09265cb2368682241cc4011"><div class="ttname"><a href="../../d1/d0d/classxii_vec2_template.html#a2bb93a40f09265cb2368682241cc4011">xiiVec2Template::IsZero</a></div><div class="ttdeci">bool IsZero() const</div><div class="ttdoc">Returns, whether this vector is (0, 0).</div><div class="ttdef"><b>Definition</b> Vec2_inl.h:119</div></div>
+<div class="ttc" id="aclassxii_vec2_template_html_a45f41d82d03628e0f69a6ff95d97a5c3"><div class="ttname"><a href="../../d1/d0d/classxii_vec2_template.html#a45f41d82d03628e0f69a6ff95d97a5c3">xiiVec2Template::Dot</a></div><div class="ttdeci">Type Dot(const xiiVec2Template&lt; Type &gt; &amp;rhs) const</div><div class="ttdoc">Returns the Dot-product of the two vectors (commutative, order does not matter)</div><div class="ttdef"><b>Definition</b> Vec2_inl.h:250</div></div>
+<div class="ttc" id="aclassxii_vec2_template_html_a4da934cc9261098df723f7365a9cfce8"><div class="ttname"><a href="../../d1/d0d/classxii_vec2_template.html#a4da934cc9261098df723f7365a9cfce8">xiiVec2Template::CompDiv</a></div><div class="ttdeci">const xiiVec2Template&lt; Type &gt; CompDiv(const xiiVec2Template&lt; Type &gt; &amp;rhs) const</div><div class="ttdoc">Returns the component-wise division of *this and rhs.</div><div class="ttdef"><b>Definition</b> Vec2_inl.h:305</div></div>
+<div class="ttc" id="aclassxii_vec2_template_html_a4fe70680e4be1f88a1e878816ba77dc4"><div class="ttname"><a href="../../d1/d0d/classxii_vec2_template.html#a4fe70680e4be1f88a1e878816ba77dc4">xiiVec2Template::Set</a></div><div class="ttdeci">void Set(Type xy)</div><div class="ttdoc">Sets all components to this value.</div><div class="ttdef"><b>Definition</b> Vec2_inl.h:27</div></div>
+<div class="ttc" id="aclassxii_vec2_template_html_a5e99afb67f6269e2eedc27d6e5729005"><div class="ttname"><a href="../../d1/d0d/classxii_vec2_template.html#a5e99afb67f6269e2eedc27d6e5729005">xiiVec2Template::MakeOrthogonalTo</a></div><div class="ttdeci">XII_DECLARE_IF_FLOAT_TYPE void MakeOrthogonalTo(const xiiVec2Template&lt; Type &gt; &amp;vNormal)</div><div class="ttdoc">Modifies this direction vector to be orthogonal to the given (normalized) direction vector....</div><div class="ttdef"><b>Definition</b> Vec2_inl.h:224</div></div>
+<div class="ttc" id="aclassxii_vec2_template_html_a5f3b10c565efcf9258726a49d704275c"><div class="ttname"><a href="../../d1/d0d/classxii_vec2_template.html#a5f3b10c565efcf9258726a49d704275c">xiiVec2Template::GetData</a></div><div class="ttdeci">const Type * GetData() const</div><div class="ttdoc">Returns the data as an array.</div><div class="ttdef"><b>Definition</b> Vec2.h:65</div></div>
+<div class="ttc" id="aclassxii_vec2_template_html_a5fca7e509d217416d767dc038afa95ab"><div class="ttname"><a href="../../d1/d0d/classxii_vec2_template.html#a5fca7e509d217416d767dc038afa95ab">xiiVec2Template::DistanceSquared</a></div><div class="ttdeci">Type DistanceSquared(const xiiVec2Template&lt; Type &gt; &amp;vPoint) const</div><div class="ttdoc">Returns the squared distance between two 2D Vectors. Faster, since no square-root is taken....</div><div class="ttdef"><b>Definition</b> Vec2_inl.h:161</div></div>
+<div class="ttc" id="aclassxii_vec2_template_html_a612a72bc2b5f3322de66026c9b145e49"><div class="ttname"><a href="../../d1/d0d/classxii_vec2_template.html#a612a72bc2b5f3322de66026c9b145e49">xiiVec2Template::MakeZero</a></div><div class="ttdeci">static constexpr xiiVec2Template&lt; Type &gt; MakeZero()</div><div class="ttdoc">Static function that returns a zero-vector.</div><div class="ttdef"><b>Definition</b> Vec2.h:43</div></div>
+<div class="ttc" id="aclassxii_vec2_template_html_a780339d36eec1c20e4aa8c1f2a655797"><div class="ttname"><a href="../../d1/d0d/classxii_vec2_template.html#a780339d36eec1c20e4aa8c1f2a655797">xiiVec2Template::operator-</a></div><div class="ttdeci">const xiiVec2Template&lt; Type &gt; operator-() const</div><div class="ttdoc">Returns the negation of this vector.</div><div class="ttdef"><b>Definition</b> Vec2_inl.h:170</div></div>
+<div class="ttc" id="aclassxii_vec2_template_html_a78e9bae3485f5b02ac864c5341fa2273"><div class="ttname"><a href="../../d1/d0d/classxii_vec2_template.html#a78e9bae3485f5b02ac864c5341fa2273">xiiVec2Template::IsNaN</a></div><div class="ttdeci">bool IsNaN() const</div><div class="ttdoc">Returns true, if any of x or y is NaN.</div><div class="ttdef"><b>Definition</b> Vec2_inl.h:133</div></div>
+<div class="ttc" id="aclassxii_vec2_template_html_a7f97ebb9edd4317d006999adb412f237"><div class="ttname"><a href="../../d1/d0d/classxii_vec2_template.html#a7f97ebb9edd4317d006999adb412f237">xiiVec2Template::GetAsVec3</a></div><div class="ttdeci">const xiiVec3Template&lt; Type &gt; GetAsVec3(Type z) const</div><div class="ttdoc">Returns a xiiVec3Template with x,y from this vector and z set by the parameter.</div><div class="ttdef"><b>Definition</b> Vec4_inl.h:10</div></div>
+<div class="ttc" id="aclassxii_vec2_template_html_a7fede154da6dbab1acc9c841c018d116"><div class="ttname"><a href="../../d1/d0d/classxii_vec2_template.html#a7fede154da6dbab1acc9c841c018d116">xiiVec2Template::GetLengthAndNormalize</a></div><div class="ttdeci">XII_DECLARE_IF_FLOAT_TYPE Type GetLengthAndNormalize()</div><div class="ttdoc">Normalizes this vector and returns its previous length in one operation. More efficient than calling ...</div><div class="ttdef"><b>Definition</b> Vec2_inl.h:69</div></div>
+<div class="ttc" id="aclassxii_vec2_template_html_a80268c93bfea5c0102c47a63b604ad83"><div class="ttname"><a href="../../d1/d0d/classxii_vec2_template.html#a80268c93bfea5c0102c47a63b604ad83">xiiVec2Template::Abs</a></div><div class="ttdeci">const xiiVec2Template&lt; Type &gt; Abs() const</div><div class="ttdoc">brief Returns the component-wise absolute of *this.</div><div class="ttdef"><b>Definition</b> Vec2_inl.h:314</div></div>
+<div class="ttc" id="aclassxii_vec2_template_html_a836ba4bba3a71c71529b677f9d76c278"><div class="ttname"><a href="../../d1/d0d/classxii_vec2_template.html#a836ba4bba3a71c71529b677f9d76c278">xiiVec2Template::Distance</a></div><div class="ttdeci">XII_DECLARE_IF_FLOAT_TYPE Type Distance(const xiiVec2Template&lt; Type &gt; &amp;vPoint) const</div><div class="ttdoc">Returns the distance between two 2D Vectors.</div><div class="ttdef"><b>Definition</b> Vec2_inl.h:155</div></div>
+<div class="ttc" id="aclassxii_vec2_template_html_a84fde443875292bbaf1da11562a3a2db"><div class="ttname"><a href="../../d1/d0d/classxii_vec2_template.html#a84fde443875292bbaf1da11562a3a2db">xiiVec2Template::IsValid</a></div><div class="ttdeci">bool IsValid() const</div><div class="ttdoc">Checks that all components are finite numbers.</div><div class="ttdef"><b>Definition</b> Vec2_inl.h:144</div></div>
+<div class="ttc" id="aclassxii_vec2_template_html_a98718931a18e0a6df9f2087dbb7d2983"><div class="ttname"><a href="../../d1/d0d/classxii_vec2_template.html#a98718931a18e0a6df9f2087dbb7d2983">xiiVec2Template::MakeNaN</a></div><div class="ttdeci">static XII_DECLARE_IF_FLOAT_TYPE const xiiVec2Template&lt; Type &gt; MakeNaN()</div><div class="ttdoc">Returns a vector with all components set to Not-a-Number (NaN).</div><div class="ttdef"><b>Definition</b> Vec2.h:40</div></div>
+<div class="ttc" id="aclassxii_vec2_template_html_a9a8f11479d64180b9329c0ac24e994c8"><div class="ttname"><a href="../../d1/d0d/classxii_vec2_template.html#a9a8f11479d64180b9329c0ac24e994c8">xiiVec2Template::GetOrthogonalVector</a></div><div class="ttdeci">const xiiVec2Template&lt; Type &gt; GetOrthogonalVector() const</div><div class="ttdoc">Returns some arbitrary vector orthogonal to this one. The vector is NOT normalized.</div><div class="ttdef"><b>Definition</b> Vec2_inl.h:233</div></div>
+<div class="ttc" id="aclassxii_vec2_template_html_aa20b3061301f78442334f5de30e0cc51"><div class="ttname"><a href="../../d1/d0d/classxii_vec2_template.html#aa20b3061301f78442334f5de30e0cc51">xiiVec2Template::CompMin</a></div><div class="ttdeci">const xiiVec2Template&lt; Type &gt; CompMin(const xiiVec2Template&lt; Type &gt; &amp;rhs) const</div><div class="ttdoc">Returns the component-wise minimum of *this and rhs.</div><div class="ttdef"><b>Definition</b> Vec2_inl.h:268</div></div>
+<div class="ttc" id="aclassxii_vec2_template_html_aa728159c1b0b50e9d11eadac9ef214e3"><div class="ttname"><a href="../../d1/d0d/classxii_vec2_template.html#aa728159c1b0b50e9d11eadac9ef214e3">xiiVec2Template::CompClamp</a></div><div class="ttdeci">const xiiVec2Template&lt; Type &gt; CompClamp(const xiiVec2Template&lt; Type &gt; &amp;vLow, const xiiVec2Template&lt; Type &gt; &amp;vHigh) const</div><div class="ttdoc">Returns the component-wise clamped value of *this between low and high.</div><div class="ttdef"><b>Definition</b> Vec2_inl.h:286</div></div>
+<div class="ttc" id="aclassxii_vec2_template_html_aa72dc57841f36d62ff83f36e2031e113"><div class="ttname"><a href="../../d1/d0d/classxii_vec2_template.html#aa72dc57841f36d62ff83f36e2031e113">xiiVec2Template::GetNormalized</a></div><div class="ttdeci">XII_DECLARE_IF_FLOAT_TYPE const xiiVec2Template&lt; Type &gt; GetNormalized() const</div><div class="ttdoc">Returns a normalized version of this vector, leaves the vector itself unchanged.</div><div class="ttdef"><b>Definition</b> Vec2_inl.h:77</div></div>
+<div class="ttc" id="aclassxii_vec2_template_html_aaafe4c2b6fd35b1a29781f694827216f"><div class="ttname"><a href="../../d1/d0d/classxii_vec2_template.html#aaafe4c2b6fd35b1a29781f694827216f">xiiVec2Template::Make</a></div><div class="ttdeci">static constexpr xiiVec2Template&lt; Type &gt; Make(Type x, Type y)</div><div class="ttdoc">Returns a vector initialized to x,y.</div><div class="ttdef"><b>Definition</b> Vec2.h:46</div></div>
+<div class="ttc" id="aclassxii_vec2_template_html_ab14953e0d722466f7ae9a934da7a6e45"><div class="ttname"><a href="../../d1/d0d/classxii_vec2_template.html#ab14953e0d722466f7ae9a934da7a6e45">xiiVec2Template::operator+=</a></div><div class="ttdeci">void operator+=(const xiiVec2Template&lt; Type &gt; &amp;vCc)</div><div class="ttdoc">Adds cc component-wise to this vector.</div><div class="ttdef"><b>Definition</b> Vec2_inl.h:178</div></div>
+<div class="ttc" id="aclassxii_vec2_template_html_ab361bd16c80a092db7ba3981fdaddea7"><div class="ttname"><a href="../../d1/d0d/classxii_vec2_template.html#ab361bd16c80a092db7ba3981fdaddea7">xiiVec2Template::GetData</a></div><div class="ttdeci">Type * GetData()</div><div class="ttdoc">Returns the data as an array.</div><div class="ttdef"><b>Definition</b> Vec2.h:68</div></div>
+<div class="ttc" id="aclassxii_vec2_template_html_ab563984d6d779f64ab67d82ceb384aa0"><div class="ttname"><a href="../../d1/d0d/classxii_vec2_template.html#ab563984d6d779f64ab67d82ceb384aa0">xiiVec2Template::xiiVec2Template</a></div><div class="ttdeci">xiiVec2Template()</div><div class="ttdoc">default-constructed vector is uninitialized (for speed)</div><div class="ttdef"><b>Definition</b> Vec2_inl.h:4</div></div>
+<div class="ttc" id="aclassxii_vec2_template_html_abd7d20f569aea08fb26c3401ec763791"><div class="ttname"><a href="../../d1/d0d/classxii_vec2_template.html#abd7d20f569aea08fb26c3401ec763791">xiiVec2Template::operator*=</a></div><div class="ttdeci">void operator*=(Type f)</div><div class="ttdoc">Multiplies all components of this vector with f.</div><div class="ttdef"><b>Definition</b> Vec2_inl.h:196</div></div>
+<div class="ttc" id="aclassxii_vec2_template_html_ad722164290abb9d10cade94c75117116"><div class="ttname"><a href="../../d1/d0d/classxii_vec2_template.html#ad722164290abb9d10cade94c75117116">xiiVec2Template::IsIdentical</a></div><div class="ttdeci">bool IsIdentical(const xiiVec2Template&lt; Type &gt; &amp;rhs) const</div><div class="ttdoc">Equality Check (bitwise)</div><div class="ttdef"><b>Definition</b> Vec2_inl.h:374</div></div>
+<div class="ttc" id="aclassxii_vec2_template_html_adbb197ee424f7f48f36f637fadb2c735"><div class="ttname"><a href="../../d1/d0d/classxii_vec2_template.html#adbb197ee424f7f48f36f637fadb2c735">xiiVec2Template::IsNormalized</a></div><div class="ttdeci">XII_DECLARE_IF_FLOAT_TYPE bool IsNormalized(Type fEpsilon=xiiMath::HugeEpsilon&lt; Type &gt;()) const</div><div class="ttdoc">Returns, whether the squared length of this vector is between 0.999f and 1.001f.</div><div class="ttdef"><b>Definition</b> Vec2_inl.h:112</div></div>
+<div class="ttc" id="aclassxii_vec2_template_html_adc3894b5226e1833035b09c036ca9d84"><div class="ttname"><a href="../../d1/d0d/classxii_vec2_template.html#adc3894b5226e1833035b09c036ca9d84">xiiVec2Template::GetLengthSquared</a></div><div class="ttdeci">Type GetLengthSquared() const</div><div class="ttdoc">Returns the squared length. Faster, since no square-root is taken. Useful, if one only wants to compa...</div><div class="ttdef"><b>Definition</b> Vec2_inl.h:63</div></div>
+<div class="ttc" id="aclassxii_vec2_template_html_adc5355aee3ce86d017a94ded063b17fb"><div class="ttname"><a href="../../d1/d0d/classxii_vec2_template.html#adc5355aee3ce86d017a94ded063b17fb">xiiVec2Template::Normalize</a></div><div class="ttdeci">XII_DECLARE_IF_FLOAT_TYPE void Normalize()</div><div class="ttdoc">Normalizes this vector.</div><div class="ttdef"><b>Definition</b> Vec2_inl.h:86</div></div>
+<div class="ttc" id="aclassxii_vec2_template_html_adeff5daa4b13dc6c6d5252a90f245af9"><div class="ttname"><a href="../../d1/d0d/classxii_vec2_template.html#adeff5daa4b13dc6c6d5252a90f245af9">xiiVec2Template::operator/=</a></div><div class="ttdeci">void operator/=(Type f)</div><div class="ttdoc">Divides all components of this vector by f.</div><div class="ttdef"><b>Definition</b> Vec2_inl.h:205</div></div>
+<div class="ttc" id="aclassxii_vec2_template_html_adf1017dcf1e1063b65b02f3d584e5f19"><div class="ttname"><a href="../../d1/d0d/classxii_vec2_template.html#adf1017dcf1e1063b65b02f3d584e5f19">xiiVec2Template::GetAngleBetween</a></div><div class="ttdeci">xiiAngle GetAngleBetween(const xiiVec2Template&lt; Type &gt; &amp;rhs) const</div><div class="ttdoc">Returns the positive angle between *this and rhs.</div><div class="ttdef"><b>Definition</b> Vec2_inl.h:259</div></div>
+<div class="ttc" id="aclassxii_vec2_template_html_ae3bf0e9af8df422aa06c615f5bdc5564"><div class="ttname"><a href="../../d1/d0d/classxii_vec2_template.html#ae3bf0e9af8df422aa06c615f5bdc5564">xiiVec2Template::CompMul</a></div><div class="ttdeci">const xiiVec2Template&lt; Type &gt; CompMul(const xiiVec2Template&lt; Type &gt; &amp;rhs) const</div><div class="ttdoc">Returns the component-wise multiplication of *this and rhs.</div><div class="ttdef"><b>Definition</b> Vec2_inl.h:296</div></div>
+<div class="ttc" id="aclassxii_vec2_template_html_aed740a62e6e237abd688d6700ecfcc52"><div class="ttname"><a href="../../d1/d0d/classxii_vec2_template.html#aed740a62e6e237abd688d6700ecfcc52">xiiVec2Template::SetLength</a></div><div class="ttdeci">XII_DECLARE_IF_FLOAT_TYPE xiiResult SetLength(Type fNewLength, Type fEpsilon=xiiMath::DefaultEpsilon&lt; Type &gt;())</div><div class="ttdoc">Tries to rescale the vector to the given length. If the vector is too close to zero,...</div><div class="ttdef"><b>Definition</b> Vec2_inl.h:53</div></div>
+<div class="ttc" id="aclassxii_vec2_template_html_af28c1db86c646aa5292dc02a504ff996"><div class="ttname"><a href="../../d1/d0d/classxii_vec2_template.html#af28c1db86c646aa5292dc02a504ff996">xiiVec2Template::IsEqual</a></div><div class="ttdeci">bool IsEqual(const xiiVec2Template&lt; Type &gt; &amp;rhs, Type fEpsilon) const</div><div class="ttdoc">Equality Check with epsilon.</div><div class="ttdef"><b>Definition</b> Vec2_inl.h:383</div></div>
+<div class="ttc" id="aclassxii_vec2_template_html_af6b78eebd48872f4c2ed9d45bfbff599"><div class="ttname"><a href="../../d1/d0d/classxii_vec2_template.html#af6b78eebd48872f4c2ed9d45bfbff599">xiiVec2Template::NormalizeIfNotZero</a></div><div class="ttdeci">XII_DECLARE_IF_FLOAT_TYPE xiiResult NormalizeIfNotZero(const xiiVec2Template&lt; Type &gt; &amp;vFallback=xiiVec2Template&lt; Type &gt;(1, 0), Type fEpsilon=xiiMath::DefaultEpsilon&lt; Type &gt;())</div><div class="ttdoc">Tries to normalize this vector. If the vector is too close to zero, XII_FAILURE is returned and the v...</div><div class="ttdef"><b>Definition</b> Vec2_inl.h:92</div></div>
+<div class="ttc" id="aclassxii_vec3_template_html"><div class="ttname"><a href="../../d9/d9a/classxii_vec3_template.html">xiiVec3Template</a></div><div class="ttdoc">A 3-component vector class.</div><div class="ttdef"><b>Definition</b> Vec3.h:9</div></div>
+<div class="ttc" id="aclassxii_vec4_template_html"><div class="ttname"><a href="../../d1/d20/classxii_vec4_template.html">xiiVec4Template</a></div><div class="ttdoc">A 4-component vector class.</div><div class="ttdef"><b>Definition</b> Vec4.h:9</div></div>
+<div class="ttc" id="anamespacexii_math_html_a794f0339ad168c57748133cd2687fe4d"><div class="ttname"><a href="../../d1/d37/namespacexii_math.html#a794f0339ad168c57748133cd2687fe4d">xiiMath::NaN</a></div><div class="ttdeci">constexpr TYPE NaN()</div><div class="ttdoc">Returns the value for NaN as the template type. Returns zero, if the type does not support NaN.</div><div class="ttdef"><b>Definition</b> Constants_inl.h:72</div></div>
+<div class="ttc" id="astructxii_result_html"><div class="ttname"><a href="../../dd/dad/structxii_result.html">xiiResult</a></div><div class="ttdoc">Default enum for returning failure or success, instead of using a bool.</div><div class="ttdef"><b>Definition</b> Types.h:56</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.html">home</a></li><li class="navelem"><a class="el" href="../../dir_1036706e55c22cab35bc1c58ee689f1d.html">runner</a></li><li class="navelem"><a class="el" href="../../dir_629f8151d55d307162ff2d619fb1783d.html">work</a></li><li class="navelem"><a class="el" href="../../dir_1ddc44fe1263a8c7935fa6130b7d9499.html">XII</a></li><li class="navelem"><a class="el" href="../../dir_2c1b6808f12952f4c36e05ba7068379a.html">XII</a></li><li class="navelem"><a class="el" href="../../dir_b5a1c4ecfca018ad24b729e213296d41.html">Source</a></li><li class="navelem"><a class="el" href="../../dir_e321052006a51284e67389ab20037e7c.html">Engine</a></li><li class="navelem"><a class="el" href="../../dir_be0c42c58b36f42c54ec54024ed4f6af.html">Foundation</a></li><li class="navelem"><a class="el" href="../../dir_c1b0860bb61ff24e678d996d14e4bcdd.html">Math</a></li><li class="navelem"><b>Vec2.h</b></li>
+    <li class="footer">Generated on Mon Jul 1 2024 23:53:10 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+  </ul>
+</div>
+</body>
+</html>

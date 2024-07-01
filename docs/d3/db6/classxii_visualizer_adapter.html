@@ -1,0 +1,297 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.11.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<!-- BEGIN opengraph metadata -->
+<meta property="og:title" content="XII" />
+<meta property="og:image" content="../../XII-Logo.png" />
+<meta property="og:description" content="An advanced high-performance simulation engine." />
+<meta property="og:url" content="https://www.xiitechnologies.com" />
+<!-- END opengraph metadata -->
+<!-- BEGIN twitter metadata -->
+<meta name="twitter:image:src" content="../../XII-Logo.png" />
+<meta name="twitter:title" content="XII" />
+<meta name="twitter:description" content="An advanced high-performance simulation engine." />
+<!-- END twitter metadata -->
+<title>XII: xiiVisualizerAdapter Class Reference</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link rel="icon" type="image/svg+xml" href="logo.drawio.svg"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="../../toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../custom.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<a href="https://github.com/jothepro/doxygen-awesome-css" class="github-corner" title="View source on GitHub" target="_blank" rel="noopener noreferrer">
+    <svg viewBox="0 0 250 250" width="40" height="40" style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+    <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="../../XII-Logo.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">XII
+   &#160;<span id="projectnumber">1.0.0</span>
+   </div>
+   <div id="projectbrief">A high-performance simulation engine.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(1); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.html','Search',true);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('d3/db6/classxii_visualizer_adapter.html','../../'); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
+<a href="../../d9/d0a/classxii_visualizer_adapter-members.html">List of all members</a>  </div>
+  <div class="headertitle"><div class="title">xiiVisualizerAdapter Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Base class for the editor side code that sets up a 'visualizer' for object properties.  
+ <a href="#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="../../d9/d1e/_visualizer_adapter_8h_source.html">VisualizerAdapter.h</a>&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for xiiVisualizerAdapter:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../dc/d3d/classxii_visualizer_adapter__inherit__graph.svg" width="442" height="496"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">legend</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a1bd130b9797ff10aa3147ede7d6b3968" id="r_a1bd130b9797ff10aa3147ede7d6b3968"><td class="memItemLeft" align="right" valign="top"><a id="a1bd130b9797ff10aa3147ede7d6b3968" name="a1bd130b9797ff10aa3147ede7d6b3968"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetVisualizer</b> (const <a class="el" href="../../dd/d2d/classxii_visualizer_attribute.html">xiiVisualizerAttribute</a> *pAttribute, const <a class="el" href="../../da/dd8/classxii_document_object.html">xiiDocumentObject</a> *pObject)</td></tr>
+<tr class="separator:a1bd130b9797ff10aa3147ede7d6b3968"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:ae115e1571c2d8fab06cf7592f08f8f3a" id="r_ae115e1571c2d8fab06cf7592f08f8f3a"><td class="memItemLeft" align="right" valign="top"><a id="ae115e1571c2d8fab06cf7592f08f8f3a" name="ae115e1571c2d8fab06cf7592f08f8f3a"></a>
+virtual <a class="el" href="../../d5/d13/classxii_transform_template.html">xiiTransform</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetObjectTransform</b> () const</td></tr>
+<tr class="separator:ae115e1571c2d8fab06cf7592f08f8f3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4583b8a4e8da3401c0bbbdc6789bacc1" id="r_a4583b8a4e8da3401c0bbbdc6789bacc1"><td class="memItemLeft" align="right" valign="top"><a id="a4583b8a4e8da3401c0bbbdc6789bacc1" name="a4583b8a4e8da3401c0bbbdc6789bacc1"></a>
+<a class="el" href="../../de/d12/classxii_object_accessor_base.html">xiiObjectAccessorBase</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetObjectAccessor</b> () const</td></tr>
+<tr class="separator:a4583b8a4e8da3401c0bbbdc6789bacc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0fddb3f5de9e7284a99cd4795f4ec6c" id="r_ae0fddb3f5de9e7284a99cd4795f4ec6c"><td class="memItemLeft" align="right" valign="top"><a id="ae0fddb3f5de9e7284a99cd4795f4ec6c" name="ae0fddb3f5de9e7284a99cd4795f4ec6c"></a>
+const <a class="el" href="../../da/d25/classxii_abstract_property.html">xiiAbstractProperty</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetProperty</b> (const char *szProperty) const</td></tr>
+<tr class="separator:ae0fddb3f5de9e7284a99cd4795f4ec6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a768707e2f024feccd5587f8af187c423" id="r_a768707e2f024feccd5587f8af187c423"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a768707e2f024feccd5587f8af187c423">Finalize</a> ()=0</td></tr>
+<tr class="memdesc:a768707e2f024feccd5587f8af187c423"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called to actually properly set up the adapter. All setup code is implemented here.  <br /></td></tr>
+<tr class="separator:a768707e2f024feccd5587f8af187c423"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7349d16da90c39e908aaaf7b6c31531c" id="r_a7349d16da90c39e908aaaf7b6c31531c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7349d16da90c39e908aaaf7b6c31531c">Update</a> ()=0</td></tr>
+<tr class="memdesc:a7349d16da90c39e908aaaf7b6c31531c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when object properties have changed and the visualizer may need to react.  <br /></td></tr>
+<tr class="separator:a7349d16da90c39e908aaaf7b6c31531c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51e8f9ab5a51057ca4127218a56214e1" id="r_a51e8f9ab5a51057ca4127218a56214e1"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a51e8f9ab5a51057ca4127218a56214e1">UpdateGizmoTransform</a> ()=0</td></tr>
+<tr class="memdesc:a51e8f9ab5a51057ca4127218a56214e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when the object has been moved somehow. More light weight than a full update.  <br /></td></tr>
+<tr class="separator:a51e8f9ab5a51057ca4127218a56214e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:a41637cb76c765b660fadd821e3a4e10c" id="r_a41637cb76c765b660fadd821e3a4e10c"><td class="memItemLeft" align="right" valign="top"><a id="a41637cb76c765b660fadd821e3a4e10c" name="a41637cb76c765b660fadd821e3a4e10c"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_bVisualizerIsVisible</b></td></tr>
+<tr class="separator:a41637cb76c765b660fadd821e3a4e10c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf57a27508e84811a662a7e2c4ac175e" id="r_abf57a27508e84811a662a7e2c4ac175e"><td class="memItemLeft" align="right" valign="top"><a id="abf57a27508e84811a662a7e2c4ac175e" name="abf57a27508e84811a662a7e2c4ac175e"></a>
+const <a class="el" href="../../dd/d2d/classxii_visualizer_attribute.html">xiiVisualizerAttribute</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_pVisualizerAttr</b> = nullptr</td></tr>
+<tr class="separator:abf57a27508e84811a662a7e2c4ac175e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20f16c069d55032f421d4fa94445e20f" id="r_a20f16c069d55032f421d4fa94445e20f"><td class="memItemLeft" align="right" valign="top"><a id="a20f16c069d55032f421d4fa94445e20f" name="a20f16c069d55032f421d4fa94445e20f"></a>
+const <a class="el" href="../../da/dd8/classxii_document_object.html">xiiDocumentObject</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_pObject</b> = nullptr</td></tr>
+<tr class="separator:a20f16c069d55032f421d4fa94445e20f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Base class for the editor side code that sets up a 'visualizer' for object properties. </p>
+<p>Typically visualizers are configured with <a class="el" href="../../dd/d2d/classxii_visualizer_attribute.html">xiiVisualizerAttribute</a>'s on component types. The adapter reads the attribute values and sets up the necessary code to render them in the engine. This is usually achieved by creating <a class="el" href="../../da/d10/classxii_engine_gizmo_handle.html">xiiEngineGizmoHandle</a> objects (which get automatically synchronized with the engine process). The adapter then reacts to editor side object changes and adjusts the engine side representation as needed. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a768707e2f024feccd5587f8af187c423" name="a768707e2f024feccd5587f8af187c423"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a768707e2f024feccd5587f8af187c423">&#9670;&#160;</a></span>Finalize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void xiiVisualizerAdapter::Finalize </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Called to actually properly set up the adapter. All setup code is implemented here. </p>
+
+<p>Implemented in <a class="el" href="../../d0/d64/classxii_box_reflection_probe_visualizer_adapter.html#a1ab2deb7b5c31bac5240ee318e49a65e">xiiBoxReflectionProbeVisualizerAdapter</a>, <a class="el" href="../../db/d5a/classxii_box_visualizer_adapter.html#af949271361ce5d1754a6c22787cd1a13">xiiBoxVisualizerAdapter</a>, <a class="el" href="../../da/d15/classxii_camera_visualizer_adapter.html#a097868239690e78d8c653ba7cea69098">xiiCameraVisualizerAdapter</a>, <a class="el" href="../../d0/d9f/classxii_capsule_visualizer_adapter.html#a873ea236bfb2f0758d022afe78aa7a05">xiiCapsuleVisualizerAdapter</a>, <a class="el" href="../../d0/dc6/classxii_cone_visualizer_adapter.html#a9ea9542d7008b334418d82edb8197479">xiiConeVisualizerAdapter</a>, <a class="el" href="../../df/d76/classxii_cylinder_visualizer_adapter.html#aa65185c9d4ca482b524512832ff01da8">xiiCylinderVisualizerAdapter</a>, <a class="el" href="../../d5/d85/classxii_direction_visualizer_adapter.html#a69b1f95d02323ff80a88b46cb0446a3e">xiiDirectionVisualizerAdapter</a>, <a class="el" href="../../d2/d6d/classxii_point_light_visualizer_adapter.html#ae1ae440891e07e83df8ced4a8a7eb48a">xiiPointLightVisualizerAdapter</a>, <a class="el" href="../../d4/dc0/classxii_sphere_visualizer_adapter.html#a3161ed7570ec1b67ccde20c697546e01">xiiSphereVisualizerAdapter</a>, and <a class="el" href="../../df/d8c/classxii_spot_light_visualizer_adapter.html#a7f7a9829659d60811fef44d6d8f2c774">xiiSpotLightVisualizerAdapter</a>.</p>
+
+</div>
+</div>
+<a id="a7349d16da90c39e908aaaf7b6c31531c" name="a7349d16da90c39e908aaaf7b6c31531c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7349d16da90c39e908aaaf7b6c31531c">&#9670;&#160;</a></span>Update()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void xiiVisualizerAdapter::Update </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Called when object properties have changed and the visualizer may need to react. </p>
+
+<p>Implemented in <a class="el" href="../../d0/d64/classxii_box_reflection_probe_visualizer_adapter.html#a64e38d85711ea05fdbc1b2be2ce467ce">xiiBoxReflectionProbeVisualizerAdapter</a>, <a class="el" href="../../db/d5a/classxii_box_visualizer_adapter.html#af7c39ef8f615a3adebdeffc7a0521370">xiiBoxVisualizerAdapter</a>, <a class="el" href="../../da/d15/classxii_camera_visualizer_adapter.html#aa38dfee30b6d6e394750af34cab8ccb8">xiiCameraVisualizerAdapter</a>, <a class="el" href="../../d0/d9f/classxii_capsule_visualizer_adapter.html#aac496c9f156c69c0dd46d4316c20d0ed">xiiCapsuleVisualizerAdapter</a>, <a class="el" href="../../d0/dc6/classxii_cone_visualizer_adapter.html#a822cc64b2343a49b9f671dba5fa3bb8f">xiiConeVisualizerAdapter</a>, <a class="el" href="../../df/d76/classxii_cylinder_visualizer_adapter.html#abc88cd5ff093f4f50239a650f3d19cc1">xiiCylinderVisualizerAdapter</a>, <a class="el" href="../../d5/d85/classxii_direction_visualizer_adapter.html#ad8317eb19d5142cf2d9a5e4b0d179a7c">xiiDirectionVisualizerAdapter</a>, <a class="el" href="../../d2/d6d/classxii_point_light_visualizer_adapter.html#a8521f41efb47940b44ade877149252b2">xiiPointLightVisualizerAdapter</a>, <a class="el" href="../../d4/dc0/classxii_sphere_visualizer_adapter.html#ac18846f6646e04c3ae907bf293713822">xiiSphereVisualizerAdapter</a>, and <a class="el" href="../../df/d8c/classxii_spot_light_visualizer_adapter.html#a9dc56d0091126a278779581430ffdef7">xiiSpotLightVisualizerAdapter</a>.</p>
+
+</div>
+</div>
+<a id="a51e8f9ab5a51057ca4127218a56214e1" name="a51e8f9ab5a51057ca4127218a56214e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a51e8f9ab5a51057ca4127218a56214e1">&#9670;&#160;</a></span>UpdateGizmoTransform()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void xiiVisualizerAdapter::UpdateGizmoTransform </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Called when the object has been moved somehow. More light weight than a full update. </p>
+
+<p>Implemented in <a class="el" href="../../d0/d64/classxii_box_reflection_probe_visualizer_adapter.html#af8a5b9537570c3fce61882a3511623e1">xiiBoxReflectionProbeVisualizerAdapter</a>, <a class="el" href="../../db/d5a/classxii_box_visualizer_adapter.html#ab288b3f0ab604f8728d212e76f73d8a4">xiiBoxVisualizerAdapter</a>, <a class="el" href="../../da/d15/classxii_camera_visualizer_adapter.html#adede6ad8839a17ab1da6a76532cddde2">xiiCameraVisualizerAdapter</a>, <a class="el" href="../../d0/d9f/classxii_capsule_visualizer_adapter.html#a1c657242f89dbab282065cced66cfe5a">xiiCapsuleVisualizerAdapter</a>, <a class="el" href="../../d0/dc6/classxii_cone_visualizer_adapter.html#a859db2a93dd1b4629d95172685aa3de8">xiiConeVisualizerAdapter</a>, <a class="el" href="../../df/d76/classxii_cylinder_visualizer_adapter.html#aed572d02a14afe78b115ef2376f4f8ac">xiiCylinderVisualizerAdapter</a>, <a class="el" href="../../d5/d85/classxii_direction_visualizer_adapter.html#aa218de63dbb344228a4e006761c3e1aa">xiiDirectionVisualizerAdapter</a>, <a class="el" href="../../d2/d6d/classxii_point_light_visualizer_adapter.html#af45ef68d374bac57d77d6111917e1ce7">xiiPointLightVisualizerAdapter</a>, <a class="el" href="../../d4/dc0/classxii_sphere_visualizer_adapter.html#a07335f631305704c829b136cb043aa47">xiiSphereVisualizerAdapter</a>, and <a class="el" href="../../df/d8c/classxii_spot_light_visualizer_adapter.html#a34bf0f801095768a1bb8db6ff48501f2">xiiSpotLightVisualizerAdapter</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li>/home/runner/work/XII/XII/Source/Editor/EditorFramework/Visualizers/<a class="el" href="../../d9/d1e/_visualizer_adapter_8h_source.html">VisualizerAdapter.h</a></li>
+<li>/home/runner/work/XII/XII/Source/Editor/EditorFramework/Visualizers/Implementation/<b>VisualizerAdapter.cpp</b></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../d3/db6/classxii_visualizer_adapter.html">xiiVisualizerAdapter</a></li>
+    <li class="footer">Generated on Mon Jul 1 2024 23:53:17 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+  </ul>
+</div>
+</body>
+</html>

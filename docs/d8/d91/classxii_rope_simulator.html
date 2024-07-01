@@ -1,0 +1,217 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.11.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<!-- BEGIN opengraph metadata -->
+<meta property="og:title" content="XII" />
+<meta property="og:image" content="../../XII-Logo.png" />
+<meta property="og:description" content="An advanced high-performance simulation engine." />
+<meta property="og:url" content="https://www.xiitechnologies.com" />
+<!-- END opengraph metadata -->
+<!-- BEGIN twitter metadata -->
+<meta name="twitter:image:src" content="../../XII-Logo.png" />
+<meta name="twitter:title" content="XII" />
+<meta name="twitter:description" content="An advanced high-performance simulation engine." />
+<!-- END twitter metadata -->
+<title>XII: xiiRopeSimulator Class Reference</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link rel="icon" type="image/svg+xml" href="logo.drawio.svg"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="../../toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../custom.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<a href="https://github.com/jothepro/doxygen-awesome-css" class="github-corner" title="View source on GitHub" target="_blank" rel="noopener noreferrer">
+    <svg viewBox="0 0 250 250" width="40" height="40" style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+    <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="../../XII-Logo.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">XII
+   &#160;<span id="projectnumber">1.0.0</span>
+   </div>
+   <div id="projectbrief">A high-performance simulation engine.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(1); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.html','Search',true);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('d8/d91/classxii_rope_simulator.html','../../'); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="../../db/d08/classxii_rope_simulator-members.html">List of all members</a>  </div>
+  <div class="headertitle"><div class="title">xiiRopeSimulator Class Reference</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p><a class="el" href="../../d8/d4f/class_a.html">A</a> simple simulator for swinging and hanging ropes.  
+ <a href="#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="../../da/d40/_rope_simulator_8h_source.html">RopeSimulator.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dcf/structxii_rope_simulator_1_1_node.html">Node</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a93effa55dacfb75d2021a7db49e51a05" id="r_a93effa55dacfb75d2021a7db49e51a05"><td class="memItemLeft" align="right" valign="top"><a id="a93effa55dacfb75d2021a7db49e51a05" name="a93effa55dacfb75d2021a7db49e51a05"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SimulateRope</b> (const <a class="el" href="../../d7/dc1/structxii_time.html">xiiTime</a> &amp;diff)</td></tr>
+<tr class="separator:a93effa55dacfb75d2021a7db49e51a05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a872767e3ce9b3ace0e9f4889131f12" id="r_a9a872767e3ce9b3ace0e9f4889131f12"><td class="memItemLeft" align="right" valign="top"><a id="a9a872767e3ce9b3ace0e9f4889131f12" name="a9a872767e3ce9b3ace0e9f4889131f12"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SimulateStep</b> (const <a class="el" href="../../d2/d73/classxii_simd_float.html">xiiSimdFloat</a> fDiffSqr, xiiUInt32 uiMaxIterations, <a class="el" href="../../d2/d73/classxii_simd_float.html">xiiSimdFloat</a> fAllowedError)</td></tr>
+<tr class="separator:a9a872767e3ce9b3ace0e9f4889131f12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a719010e9ae747f5694184a660fdf9290" id="r_a719010e9ae747f5694184a660fdf9290"><td class="memItemLeft" align="right" valign="top"><a id="a719010e9ae747f5694184a660fdf9290" name="a719010e9ae747f5694184a660fdf9290"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SimulateTillEquilibrium</b> (<a class="el" href="../../d2/d73/classxii_simd_float.html">xiiSimdFloat</a> fAllowedMovement=0.005f, xiiUInt32 uiMaxIterations=1000)</td></tr>
+<tr class="separator:a719010e9ae747f5694184a660fdf9290"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46baec5ccef3ddf8e337d627dc3cbef5" id="r_a46baec5ccef3ddf8e337d627dc3cbef5"><td class="memItemLeft" align="right" valign="top"><a id="a46baec5ccef3ddf8e337d627dc3cbef5" name="a46baec5ccef3ddf8e337d627dc3cbef5"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>HasEquilibrium</b> (<a class="el" href="../../d2/d73/classxii_simd_float.html">xiiSimdFloat</a> fAllowedMovement) const</td></tr>
+<tr class="separator:a46baec5ccef3ddf8e337d627dc3cbef5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a129c00cf42190a91d03bede924b6f5b1" id="r_a129c00cf42190a91d03bede924b6f5b1"><td class="memItemLeft" align="right" valign="top"><a id="a129c00cf42190a91d03bede924b6f5b1" name="a129c00cf42190a91d03bede924b6f5b1"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>GetTotalLength</b> () const</td></tr>
+<tr class="separator:a129c00cf42190a91d03bede924b6f5b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82a4eacb06434a385e4996cee815ed06" id="r_a82a4eacb06434a385e4996cee815ed06"><td class="memItemLeft" align="right" valign="top"><a id="a82a4eacb06434a385e4996cee815ed06" name="a82a4eacb06434a385e4996cee815ed06"></a>
+<a class="el" href="../../d3/da5/classxii_simd_vec4f.html">xiiSimdVec4f</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetPositionAtLength</b> (float fLength) const</td></tr>
+<tr class="separator:a82a4eacb06434a385e4996cee815ed06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:a4e5c3c5bef39a6aea23578b9dc900686" id="r_a4e5c3c5bef39a6aea23578b9dc900686"><td class="memItemLeft" align="right" valign="top"><a id="a4e5c3c5bef39a6aea23578b9dc900686" name="a4e5c3c5bef39a6aea23578b9dc900686"></a>
+<a class="el" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_vAcceleration</b> = <a class="el" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3</a>(0, 0, -10)</td></tr>
+<tr class="memdesc:a4e5c3c5bef39a6aea23578b9dc900686"><td class="mdescLeft">&#160;</td><td class="mdescRight">External acceleration, typically gravity or a combination of gravity and wind. Applied to all rope nodes equally. <br /></td></tr>
+<tr class="separator:a4e5c3c5bef39a6aea23578b9dc900686"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf371ea9beebe75f332967a2a6619235" id="r_abf371ea9beebe75f332967a2a6619235"><td class="memItemLeft" align="right" valign="top"><a id="abf371ea9beebe75f332967a2a6619235" name="abf371ea9beebe75f332967a2a6619235"></a>
+<a class="el" href="../../dc/da4/classxii_dynamic_array.html">xiiDynamicArray</a>&lt; <a class="el" href="../../de/dcf/structxii_rope_simulator_1_1_node.html">Node</a>, <a class="el" href="../../d8/d02/structxii_aligned_allocator_wrapper.html">xiiAlignedAllocatorWrapper</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_Nodes</b></td></tr>
+<tr class="memdesc:abf371ea9beebe75f332967a2a6619235"><td class="mdescLeft">&#160;</td><td class="mdescRight">All the nodes in the rope. <br /></td></tr>
+<tr class="separator:abf371ea9beebe75f332967a2a6619235"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afaa731a57f351aa554d5cb95ecbcebde" id="r_afaa731a57f351aa554d5cb95ecbcebde"><td class="memItemLeft" align="right" valign="top"><a id="afaa731a57f351aa554d5cb95ecbcebde" name="afaa731a57f351aa554d5cb95ecbcebde"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>m_fDampingFactor</b> = 0.995f</td></tr>
+<tr class="memdesc:afaa731a57f351aa554d5cb95ecbcebde"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="../../d8/d4f/class_a.html">A</a> factor to dampen velocities to make the rope stop swinging. Should be between 0.97 (strong damping) and 1.0 (no damping). <br /></td></tr>
+<tr class="separator:afaa731a57f351aa554d5cb95ecbcebde"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5cc669b37f77153b604017999569e4be" id="r_a5cc669b37f77153b604017999569e4be"><td class="memItemLeft" align="right" valign="top"><a id="a5cc669b37f77153b604017999569e4be" name="a5cc669b37f77153b604017999569e4be"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>m_fSegmentLength</b> = 0.1f</td></tr>
+<tr class="memdesc:a5cc669b37f77153b604017999569e4be"><td class="mdescLeft">&#160;</td><td class="mdescRight">How long each rope segment (between two nodes) should be. <br /></td></tr>
+<tr class="separator:a5cc669b37f77153b604017999569e4be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae657f1d4894d43c42e4c54f005fe43ec" id="r_ae657f1d4894d43c42e4c54f005fe43ec"><td class="memItemLeft" align="right" valign="top"><a id="ae657f1d4894d43c42e4c54f005fe43ec" name="ae657f1d4894d43c42e4c54f005fe43ec"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_bFirstNodeIsFixed</b> = true</td></tr>
+<tr class="separator:ae657f1d4894d43c42e4c54f005fe43ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0cd537d80f499e9b7b3297aa5584e4f0" id="r_a0cd537d80f499e9b7b3297aa5584e4f0"><td class="memItemLeft" align="right" valign="top"><a id="a0cd537d80f499e9b7b3297aa5584e4f0" name="a0cd537d80f499e9b7b3297aa5584e4f0"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_bLastNodeIsFixed</b> = true</td></tr>
+<tr class="separator:a0cd537d80f499e9b7b3297aa5584e4f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p><a class="el" href="../../d8/d4f/class_a.html">A</a> simple simulator for swinging and hanging ropes. </p>
+<p>Can be used both for interactive rope simulation, as well as to just pre-compute the shape of hanging wires, cables, etc. Uses Verlet Integration to update the rope positions from velocities, and the "Jakobsen method" to enforce rope distance constraints.</p>
+<p>Based on <a href="https://owlree.blog/posts/simulating-a-rope.html">https://owlree.blog/posts/simulating-a-rope.html</a> </p>
+</div><hr/>The documentation for this class was generated from the following files:<ul>
+<li>/home/runner/work/XII/XII/Source/Engine/GameEngine/Physics/<a class="el" href="../../da/d40/_rope_simulator_8h_source.html">RopeSimulator.h</a></li>
+<li>/home/runner/work/XII/XII/Source/Engine/GameEngine/Physics/Implementation/<b>RopeSimulator.cpp</b></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../d8/d91/classxii_rope_simulator.html">xiiRopeSimulator</a></li>
+    <li class="footer">Generated on Mon Jul 1 2024 23:53:16 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+  </ul>
+</div>
+</body>
+</html>

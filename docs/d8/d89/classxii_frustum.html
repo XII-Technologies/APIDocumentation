@@ -1,0 +1,753 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.11.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<!-- BEGIN opengraph metadata -->
+<meta property="og:title" content="XII" />
+<meta property="og:image" content="../../XII-Logo.png" />
+<meta property="og:description" content="An advanced high-performance simulation engine." />
+<meta property="og:url" content="https://www.xiitechnologies.com" />
+<!-- END opengraph metadata -->
+<!-- BEGIN twitter metadata -->
+<meta name="twitter:image:src" content="../../XII-Logo.png" />
+<meta name="twitter:title" content="XII" />
+<meta name="twitter:description" content="An advanced high-performance simulation engine." />
+<!-- END twitter metadata -->
+<title>XII: xiiFrustum Class Reference</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link rel="icon" type="image/svg+xml" href="logo.drawio.svg"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="../../toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../custom.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<a href="https://github.com/jothepro/doxygen-awesome-css" class="github-corner" title="View source on GitHub" target="_blank" rel="noopener noreferrer">
+    <svg viewBox="0 0 250 250" width="40" height="40" style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+    <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="../../XII-Logo.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">XII
+   &#160;<span id="projectnumber">1.0.0</span>
+   </div>
+   <div id="projectbrief">A high-performance simulation engine.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(1); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.html','Search',true);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('d8/d89/classxii_frustum.html','../../'); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="../../d1/dc1/classxii_frustum-members.html">List of all members</a>  </div>
+  <div class="headertitle"><div class="title">xiiFrustum Class Reference</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Represents the frustum of some camera and can be used for culling objects.  
+ <a href="#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="../../d5/d69/_frustum_8h_source.html">Frustum.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a2e0b0409b287c840740fb07a2e7bb1a3" id="r_a2e0b0409b287c840740fb07a2e7bb1a3"><td class="memItemLeft" align="right" valign="top"><a id="a2e0b0409b287c840740fb07a2e7bb1a3" name="a2e0b0409b287c840740fb07a2e7bb1a3"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>PlaneType</b> : xiiUInt8 { <br />
+&#160;&#160;<b>NearPlane</b>
+, <b>LeftPlane</b>
+, <b>RightPlane</b>
+, <b>FarPlane</b>
+, <br />
+&#160;&#160;<b>BottomPlane</b>
+, <b>TopPlane</b>
+, <b>PLANE_COUNT</b>
+<br />
+ }</td></tr>
+<tr class="separator:a2e0b0409b287c840740fb07a2e7bb1a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a134860d8bc85345a8419223db579fb37" id="r_a134860d8bc85345a8419223db579fb37"><td class="memItemLeft" align="right" valign="top"><a id="a134860d8bc85345a8419223db579fb37" name="a134860d8bc85345a8419223db579fb37"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>FrustumCorner</b> : xiiUInt8 { <br />
+&#160;&#160;<b>NearTopLeft</b>
+, <b>NearTopRight</b>
+, <b>NearBottomLeft</b>
+, <b>NearBottomRight</b>
+, <br />
+&#160;&#160;<b>FarTopLeft</b>
+, <b>FarTopRight</b>
+, <b>FarBottomLeft</b>
+, <b>FarBottomRight</b>
+, <br />
+&#160;&#160;<b>CORNER_COUNT</b> = 8
+<br />
+ }</td></tr>
+<tr class="separator:a134860d8bc85345a8419223db579fb37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:ab142dff992473c36fa368de231177b1b" id="r_ab142dff992473c36fa368de231177b1b"><td class="memItemLeft" align="right" valign="top"><a id="ab142dff992473c36fa368de231177b1b" name="ab142dff992473c36fa368de231177b1b"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>xiiFrustum</b> ()</td></tr>
+<tr class="memdesc:ab142dff992473c36fa368de231177b1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The constructor does NOT initialize the frustum planes, make sure to call SetFrustum() before trying to use it. <br /></td></tr>
+<tr class="separator:ab142dff992473c36fa368de231177b1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e639f42532527a7c7cb1fac8cc0657f" id="r_a3e639f42532527a7c7cb1fac8cc0657f"><td class="memItemLeft" align="right" valign="top"><a id="a3e639f42532527a7c7cb1fac8cc0657f" name="a3e639f42532527a7c7cb1fac8cc0657f"></a>
+const <a class="el" href="../../d5/dd4/structxii_plane_template.html">xiiPlane</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetPlane</b> (xiiUInt8 uiPlane) const</td></tr>
+<tr class="memdesc:a3e639f42532527a7c7cb1fac8cc0657f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the n-th plane of the frustum. <br /></td></tr>
+<tr class="separator:a3e639f42532527a7c7cb1fac8cc0657f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2c2e8483f7dd8e4a0681a73c42bffb4" id="r_ae2c2e8483f7dd8e4a0681a73c42bffb4"><td class="memItemLeft" align="right" valign="top"><a id="ae2c2e8483f7dd8e4a0681a73c42bffb4" name="ae2c2e8483f7dd8e4a0681a73c42bffb4"></a>
+<a class="el" href="../../d5/dd4/structxii_plane_template.html">xiiPlane</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>AccessPlane</b> (xiiUInt8 uiPlane)</td></tr>
+<tr class="memdesc:ae2c2e8483f7dd8e4a0681a73c42bffb4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the n-th plane of the frustum and allows modification. <br /></td></tr>
+<tr class="separator:ae2c2e8483f7dd8e4a0681a73c42bffb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8a43dfcff338f3f4705badcc1127bff" id="r_ad8a43dfcff338f3f4705badcc1127bff"><td class="memItemLeft" align="right" valign="top"><a id="ad8a43dfcff338f3f4705badcc1127bff" name="ad8a43dfcff338f3f4705badcc1127bff"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsValid</b> () const</td></tr>
+<tr class="memdesc:ad8a43dfcff338f3f4705badcc1127bff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks that all planes are valid. <br /></td></tr>
+<tr class="separator:ad8a43dfcff338f3f4705badcc1127bff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a658ebcee15901c0c8ae9acaf8958b329" id="r_a658ebcee15901c0c8ae9acaf8958b329"><td class="memItemLeft" align="right" valign="top"><a id="a658ebcee15901c0c8ae9acaf8958b329" name="a658ebcee15901c0c8ae9acaf8958b329"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>TransformFrustum</b> (const <a class="el" href="../../d1/dec/classxii_mat4_template.html">xiiMat4</a> &amp;mTransform)</td></tr>
+<tr class="memdesc:a658ebcee15901c0c8ae9acaf8958b329"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transforms the frustum by the given matrix. This allows to adjust the frustum to a new orientation when a camera is moved or when it is necessary to cull from a different position. <br /></td></tr>
+<tr class="separator:a658ebcee15901c0c8ae9acaf8958b329"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2755360f2fe1706680f6a87323d0bc11" id="r_a2755360f2fe1706680f6a87323d0bc11"><td class="memItemLeft" align="right" valign="top"><a id="a2755360f2fe1706680f6a87323d0bc11" name="a2755360f2fe1706680f6a87323d0bc11"></a>
+<a class="el" href="../../d8/d89/classxii_frustum.html">xiiFrustum</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetTransformedFrustum</b> (const <a class="el" href="../../d1/dec/classxii_mat4_template.html">xiiMat4</a> &amp;mTransform) const</td></tr>
+<tr class="memdesc:a2755360f2fe1706680f6a87323d0bc11"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns frustum transformed by given matrix. <br /></td></tr>
+<tr class="separator:a2755360f2fe1706680f6a87323d0bc11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7362e1421648b3a40cc85bf4e1a0098" id="r_ab7362e1421648b3a40cc85bf4e1a0098"><td class="memItemLeft" align="right" valign="top"><a id="ab7362e1421648b3a40cc85bf4e1a0098" name="ab7362e1421648b3a40cc85bf4e1a0098"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>InvertFrustum</b> ()</td></tr>
+<tr class="memdesc:ab7362e1421648b3a40cc85bf4e1a0098"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flips all frustum planes around. Might be necessary after creating the frustum from a mirror projection matrix. <br /></td></tr>
+<tr class="separator:ab7362e1421648b3a40cc85bf4e1a0098"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07127d651d6738d06233cb528deaa679" id="r_a07127d651d6738d06233cb528deaa679"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a07127d651d6738d06233cb528deaa679">ComputeCornerPoints</a> (<a class="el" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3</a> out_pPoints[FrustumCorner::CORNER_COUNT]) const</td></tr>
+<tr class="memdesc:a07127d651d6738d06233cb528deaa679"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the frustum corner points.  <br /></td></tr>
+<tr class="separator:a07127d651d6738d06233cb528deaa679"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab3f1a9b80df081da71f12f58abf15ff" id="r_aab3f1a9b80df081da71f12f58abf15ff"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../da/d6f/structxii_volume_position.html#ad19dbda581df168c4175b6ad2df2d39e">xiiVolumePosition::Enum</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aab3f1a9b80df081da71f12f58abf15ff">GetObjectPosition</a> (const <a class="el" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3</a> *pVertices, xiiUInt32 uiNumVertices) const</td></tr>
+<tr class="memdesc:aab3f1a9b80df081da71f12f58abf15ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether the given object is inside or outside the frustum.  <br /></td></tr>
+<tr class="separator:aab3f1a9b80df081da71f12f58abf15ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac0b0e4588f3d6f6aad30a19b7d695fd" id="r_aac0b0e4588f3d6f6aad30a19b7d695fd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../da/d6f/structxii_volume_position.html#ad19dbda581df168c4175b6ad2df2d39e">xiiVolumePosition::Enum</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aac0b0e4588f3d6f6aad30a19b7d695fd">GetObjectPosition</a> (const <a class="el" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3</a> *pVertices, xiiUInt32 uiNumVertices, const <a class="el" href="../../d1/dec/classxii_mat4_template.html">xiiMat4</a> &amp;mObjectTransform) const</td></tr>
+<tr class="memdesc:aac0b0e4588f3d6f6aad30a19b7d695fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Same as <a class="el" href="#aab3f1a9b80df081da71f12f58abf15ff" title="Checks whether the given object is inside or outside the frustum.">GetObjectPosition()</a>, but applies a transformation to the given object first. This allows to do culling on instanced objects.  <br /></td></tr>
+<tr class="separator:aac0b0e4588f3d6f6aad30a19b7d695fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a179eab4feddd7e19969bb9604475413a" id="r_a179eab4feddd7e19969bb9604475413a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../da/d6f/structxii_volume_position.html#ad19dbda581df168c4175b6ad2df2d39e">xiiVolumePosition::Enum</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a179eab4feddd7e19969bb9604475413a">GetObjectPosition</a> (const <a class="el" href="../../dd/d79/classxii_bounding_sphere_template.html">xiiBoundingSphere</a> &amp;sphere) const</td></tr>
+<tr class="memdesc:a179eab4feddd7e19969bb9604475413a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether the given object is inside or outside the frustum.  <br /></td></tr>
+<tr class="separator:a179eab4feddd7e19969bb9604475413a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a875e4ffbfcd7268c730ea5f680baad1d" id="r_a875e4ffbfcd7268c730ea5f680baad1d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../da/d6f/structxii_volume_position.html#ad19dbda581df168c4175b6ad2df2d39e">xiiVolumePosition::Enum</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a875e4ffbfcd7268c730ea5f680baad1d">GetObjectPosition</a> (const <a class="el" href="../../d2/dd6/classxii_bounding_box_template.html">xiiBoundingBox</a> &amp;box) const</td></tr>
+<tr class="memdesc:a875e4ffbfcd7268c730ea5f680baad1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether the given object is inside or outside the frustum.  <br /></td></tr>
+<tr class="separator:a875e4ffbfcd7268c730ea5f680baad1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc7ba12ab56ef8ea5ea9772093ca11f6" id="r_adc7ba12ab56ef8ea5ea9772093ca11f6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adc7ba12ab56ef8ea5ea9772093ca11f6">Overlaps</a> (const <a class="el" href="../../dd/d35/classxii_simd_b_box.html">xiiSimdBBox</a> &amp;object) const</td></tr>
+<tr class="memdesc:adc7ba12ab56ef8ea5ea9772093ca11f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the object is fully inside the frustum or partially overlaps it. Returns false when the object is fully outside the frustum.  <br /></td></tr>
+<tr class="separator:adc7ba12ab56ef8ea5ea9772093ca11f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f353e6b7fb35787a2c7fee2f5df6f00" id="r_a7f353e6b7fb35787a2c7fee2f5df6f00"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7f353e6b7fb35787a2c7fee2f5df6f00">Overlaps</a> (const <a class="el" href="../../d6/da2/classxii_simd_b_sphere.html">xiiSimdBSphere</a> &amp;object) const</td></tr>
+<tr class="memdesc:a7f353e6b7fb35787a2c7fee2f5df6f00"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the object is fully inside the frustum or partially overlaps it. Returns false when the object is fully outside the frustum.  <br /></td></tr>
+<tr class="separator:a7f353e6b7fb35787a2c7fee2f5df6f00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:aaff60f2e6655f8db362fdd31715850ee" id="r_aaff60f2e6655f8db362fdd31715850ee"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d8/d89/classxii_frustum.html">xiiFrustum</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaff60f2e6655f8db362fdd31715850ee">MakeFromPlanes</a> (const <a class="el" href="../../d5/dd4/structxii_plane_template.html">xiiPlane</a> *pPlanes)</td></tr>
+<tr class="memdesc:aaff60f2e6655f8db362fdd31715850ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the frustum manually by specifying the planes directly.  <br /></td></tr>
+<tr class="separator:aaff60f2e6655f8db362fdd31715850ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2bad3a77b590ac18cb4fbda2e8d79a0d" id="r_a2bad3a77b590ac18cb4fbda2e8d79a0d"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2bad3a77b590ac18cb4fbda2e8d79a0d">TryMakeFromPlanes</a> (<a class="el" href="../../d8/d89/classxii_frustum.html">xiiFrustum</a> &amp;out_frustum, const <a class="el" href="../../d5/dd4/structxii_plane_template.html">xiiPlane</a> *pPlanes)</td></tr>
+<tr class="memdesc:a2bad3a77b590ac18cb4fbda2e8d79a0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the frustum manually by specifying the planes directly.  <br /></td></tr>
+<tr class="separator:a2bad3a77b590ac18cb4fbda2e8d79a0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad30d25f60ebf41d1ac94fbadbf026063" id="r_ad30d25f60ebf41d1ac94fbadbf026063"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d8/d89/classxii_frustum.html">xiiFrustum</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad30d25f60ebf41d1ac94fbadbf026063">MakeFromMVP</a> (const <a class="el" href="../../d1/dec/classxii_mat4_template.html">xiiMat4</a> &amp;mModelViewProjection, <a class="el" href="../../d5/d82/structxii_clip_space_depth_range.html#a3c966a87c0a4727af25bf59d42cac790">xiiClipSpaceDepthRange::Enum</a> depthRange=<a class="el" href="../../d5/d82/structxii_clip_space_depth_range.html#a6dfdb6b00e6c8c81e5365fd7d44057ae">xiiClipSpaceDepthRange::Default</a>, xiiHandedness::Enum handedness=<a class="el" href="../../df/d31/structxii_handedness.html#a4335487b0f24437d35f7fa9e93e040f3">xiiHandedness::Default</a>)</td></tr>
+<tr class="memdesc:ad30d25f60ebf41d1ac94fbadbf026063"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates the frustum by extracting the planes from the given (model-view / projection) matrix.  <br /></td></tr>
+<tr class="separator:ad30d25f60ebf41d1ac94fbadbf026063"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad3aa36f4394e6718673272986706083" id="r_aad3aa36f4394e6718673272986706083"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aad3aa36f4394e6718673272986706083">TryMakeFromMVP</a> (<a class="el" href="../../d8/d89/classxii_frustum.html">xiiFrustum</a> &amp;out_frustum, const <a class="el" href="../../d1/dec/classxii_mat4_template.html">xiiMat4</a> &amp;mModelViewProjection, <a class="el" href="../../d5/d82/structxii_clip_space_depth_range.html#a3c966a87c0a4727af25bf59d42cac790">xiiClipSpaceDepthRange::Enum</a> depthRange=<a class="el" href="../../d5/d82/structxii_clip_space_depth_range.html#a6dfdb6b00e6c8c81e5365fd7d44057ae">xiiClipSpaceDepthRange::Default</a>, xiiHandedness::Enum handedness=<a class="el" href="../../df/d31/structxii_handedness.html#a4335487b0f24437d35f7fa9e93e040f3">xiiHandedness::Default</a>)</td></tr>
+<tr class="memdesc:aad3aa36f4394e6718673272986706083"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates the frustum by extracting the planes from the given (model-view / projection) matrix.  <br /></td></tr>
+<tr class="separator:aad3aa36f4394e6718673272986706083"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6397e4e98fc1e0b926eb862021e214cb" id="r_a6397e4e98fc1e0b926eb862021e214cb"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d8/d89/classxii_frustum.html">xiiFrustum</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6397e4e98fc1e0b926eb862021e214cb">MakeFromFOV</a> (const <a class="el" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3</a> &amp;vPosition, const <a class="el" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3</a> &amp;vForwards, const <a class="el" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3</a> &amp;vUp, <a class="el" href="../../d3/ddb/classxii_angle_template.html">xiiAngle</a> fovX, <a class="el" href="../../d3/ddb/classxii_angle_template.html">xiiAngle</a> fovY, float fNearPlane, float fFarPlane)</td></tr>
+<tr class="memdesc:a6397e4e98fc1e0b926eb862021e214cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a frustum from the given camera position, direction vectors and the field-of-view along X and Y.  <br /></td></tr>
+<tr class="separator:a6397e4e98fc1e0b926eb862021e214cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5bd4a561093362c8b204afeac4aba937" id="r_a5bd4a561093362c8b204afeac4aba937"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5bd4a561093362c8b204afeac4aba937">TryMakeFromFOV</a> (<a class="el" href="../../d8/d89/classxii_frustum.html">xiiFrustum</a> &amp;out_frustum, const <a class="el" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3</a> &amp;vPosition, const <a class="el" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3</a> &amp;vForwards, const <a class="el" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3</a> &amp;vUp, <a class="el" href="../../d3/ddb/classxii_angle_template.html">xiiAngle</a> fovX, <a class="el" href="../../d3/ddb/classxii_angle_template.html">xiiAngle</a> fovY, float fNearPlane, float fFarPlane)</td></tr>
+<tr class="memdesc:a5bd4a561093362c8b204afeac4aba937"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a frustum from the given camera position, direction vectors and the field-of-view along X and Y.  <br /></td></tr>
+<tr class="separator:a5bd4a561093362c8b204afeac4aba937"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac225033452658cdcc5762982190c2946" id="r_ac225033452658cdcc5762982190c2946"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d8/d89/classxii_frustum.html">xiiFrustum</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac225033452658cdcc5762982190c2946">MakeFromCorners</a> (const <a class="el" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3</a> pCorners[FrustumCorner::CORNER_COUNT])</td></tr>
+<tr class="memdesc:ac225033452658cdcc5762982190c2946"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a frustum from 8 corner points.  <br /></td></tr>
+<tr class="separator:ac225033452658cdcc5762982190c2946"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:addf9c8a4ae1221a4c0d1d03ca5285fff" id="r_addf9c8a4ae1221a4c0d1d03ca5285fff"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#addf9c8a4ae1221a4c0d1d03ca5285fff">TryMakeFromCorners</a> (<a class="el" href="../../d8/d89/classxii_frustum.html">xiiFrustum</a> &amp;out_frustum, const <a class="el" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3</a> pCorners[FrustumCorner::CORNER_COUNT])</td></tr>
+<tr class="memdesc:addf9c8a4ae1221a4c0d1d03ca5285fff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a frustum from 8 corner points.  <br /></td></tr>
+<tr class="separator:addf9c8a4ae1221a4c0d1d03ca5285fff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Represents the frustum of some camera and can be used for culling objects. </p>
+<p>The frustum always consists of exactly 6 planes (near, far, left, right, top, bottom).</p>
+<p>The frustum planes point outwards, ie. when an object is in front of one of the planes, it is considered to be outside the frustum.</p>
+<p>Planes can be automatically extracted from a projection matrix or passed in manually. In the latter case, make sure to pass them in in the order defined in the PlaneType enum. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a07127d651d6738d06233cb528deaa679" name="a07127d651d6738d06233cb528deaa679"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a07127d651d6738d06233cb528deaa679">&#9670;&#160;</a></span>ComputeCornerPoints()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a> xiiFrustum::ComputeCornerPoints </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3</a></td>          <td class="paramname"><span class="paramname"><em>out_pPoints</em></span>[FrustumCorner::CORNER_COUNT]</td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Computes the frustum corner points. </p>
+<p>Note: If the frustum contains an infinite far plane, the far plane corners (out_points[4..7]) will be at infinity. </p>
+
+</div>
+</div>
+<a id="a875e4ffbfcd7268c730ea5f680baad1d" name="a875e4ffbfcd7268c730ea5f680baad1d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a875e4ffbfcd7268c730ea5f680baad1d">&#9670;&#160;</a></span>GetObjectPosition() <span class="overload">[1/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../da/d6f/structxii_volume_position.html#ad19dbda581df168c4175b6ad2df2d39e">xiiVolumePosition::Enum</a> xiiFrustum::GetObjectPosition </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d2/dd6/classxii_bounding_box_template.html">xiiBoundingBox</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>box</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Checks whether the given object is inside or outside the frustum. </p>
+<dl class="test"><dt><b><a class="el" href="../../d4/df6/test.html#_test000022">Test</a></b></dt><dd>Not yet tested </dd></dl>
+
+</div>
+</div>
+<a id="a179eab4feddd7e19969bb9604475413a" name="a179eab4feddd7e19969bb9604475413a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a179eab4feddd7e19969bb9604475413a">&#9670;&#160;</a></span>GetObjectPosition() <span class="overload">[2/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../da/d6f/structxii_volume_position.html#ad19dbda581df168c4175b6ad2df2d39e">xiiVolumePosition::Enum</a> xiiFrustum::GetObjectPosition </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../dd/d79/classxii_bounding_sphere_template.html">xiiBoundingSphere</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>sphere</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Checks whether the given object is inside or outside the frustum. </p>
+<dl class="test"><dt><b><a class="el" href="../../d4/df6/test.html#_test000021">Test</a></b></dt><dd>Not yet tested </dd></dl>
+
+</div>
+</div>
+<a id="aab3f1a9b80df081da71f12f58abf15ff" name="aab3f1a9b80df081da71f12f58abf15ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab3f1a9b80df081da71f12f58abf15ff">&#9670;&#160;</a></span>GetObjectPosition() <span class="overload">[3/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../da/d6f/structxii_volume_position.html#ad19dbda581df168c4175b6ad2df2d39e">xiiVolumePosition::Enum</a> xiiFrustum::GetObjectPosition </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3</a> *</td>          <td class="paramname"><span class="paramname"><em>pVertices</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">xiiUInt32</td>          <td class="paramname"><span class="paramname"><em>uiNumVertices</em></span>&#160;) const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Checks whether the given object is inside or outside the frustum. </p>
+<p><a class="el" href="../../d8/d4f/class_a.html">A</a> concave object might be classified as 'intersecting' although it is outside the frustum, if it overlaps the planes just right. However an object that overlaps the frustum is definitely never classified as 'outside'. </p>
+<dl class="test"><dt><b><a class="el" href="../../d4/df6/test.html#_test000019">Test</a></b></dt><dd>Not yet tested </dd></dl>
+
+</div>
+</div>
+<a id="aac0b0e4588f3d6f6aad30a19b7d695fd" name="aac0b0e4588f3d6f6aad30a19b7d695fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aac0b0e4588f3d6f6aad30a19b7d695fd">&#9670;&#160;</a></span>GetObjectPosition() <span class="overload">[4/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../da/d6f/structxii_volume_position.html#ad19dbda581df168c4175b6ad2df2d39e">xiiVolumePosition::Enum</a> xiiFrustum::GetObjectPosition </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3</a> *</td>          <td class="paramname"><span class="paramname"><em>pVertices</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">xiiUInt32</td>          <td class="paramname"><span class="paramname"><em>uiNumVertices</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d1/dec/classxii_mat4_template.html">xiiMat4</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>mObjectTransform</em></span>&#160;) const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Same as <a class="el" href="#aab3f1a9b80df081da71f12f58abf15ff" title="Checks whether the given object is inside or outside the frustum.">GetObjectPosition()</a>, but applies a transformation to the given object first. This allows to do culling on instanced objects. </p>
+<dl class="test"><dt><b><a class="el" href="../../d4/df6/test.html#_test000020">Test</a></b></dt><dd>Not yet tested </dd></dl>
+
+</div>
+</div>
+<a id="ac225033452658cdcc5762982190c2946" name="ac225033452658cdcc5762982190c2946"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac225033452658cdcc5762982190c2946">&#9670;&#160;</a></span>MakeFromCorners()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d8/d89/classxii_frustum.html">xiiFrustum</a> xiiFrustum::MakeFromCorners </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3</a></td>          <td class="paramname"><span class="paramname"><em>pCorners</em></span>[FrustumCorner::CORNER_COUNT]</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">nodiscard</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Creates a frustum from 8 corner points. </p>
+<p>Asserts that the frustum is valid after construction. Thus the given points must form a proper frustum. </p>
+
+</div>
+</div>
+<a id="a6397e4e98fc1e0b926eb862021e214cb" name="a6397e4e98fc1e0b926eb862021e214cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6397e4e98fc1e0b926eb862021e214cb">&#9670;&#160;</a></span>MakeFromFOV()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d8/d89/classxii_frustum.html">xiiFrustum</a> xiiFrustum::MakeFromFOV </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>vPosition</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>vForwards</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>vUp</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d3/ddb/classxii_angle_template.html">xiiAngle</a></td>          <td class="paramname"><span class="paramname"><em>fovX</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d3/ddb/classxii_angle_template.html">xiiAngle</a></td>          <td class="paramname"><span class="paramname"><em>fovY</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>fNearPlane</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>fFarPlane</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">nodiscard</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Creates a frustum from the given camera position, direction vectors and the field-of-view along X and Y. </p>
+<p>The up vector does not need to be exactly orthogonal to the forwards vector, it will get recomputed properly. FOV X and Y define the entire field-of-view, so a FOV of 180 degree would mean the entire half-space in front of the camera. </p>
+
+</div>
+</div>
+<a id="ad30d25f60ebf41d1ac94fbadbf026063" name="ad30d25f60ebf41d1ac94fbadbf026063"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad30d25f60ebf41d1ac94fbadbf026063">&#9670;&#160;</a></span>MakeFromMVP()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d8/d89/classxii_frustum.html">xiiFrustum</a> xiiFrustum::MakeFromMVP </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d1/dec/classxii_mat4_template.html">xiiMat4</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>mModelViewProjection</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d5/d82/structxii_clip_space_depth_range.html#a3c966a87c0a4727af25bf59d42cac790">xiiClipSpaceDepthRange::Enum</a></td>          <td class="paramname"><span class="paramname"><em>depthRange</em></span><span class="paramdefsep"> = </span><span class="paramdefval"><a class="el" href="../../d5/d82/structxii_clip_space_depth_range.html#a6dfdb6b00e6c8c81e5365fd7d44057ae">xiiClipSpaceDepthRange::Default</a></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">xiiHandedness::Enum</td>          <td class="paramname"><span class="paramname"><em>handedness</em></span><span class="paramdefsep"> = </span><span class="paramdefval"><a class="el" href="../../df/d31/structxii_handedness.html#a4335487b0f24437d35f7fa9e93e040f3">xiiHandedness::Default</a></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">nodiscard</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Creates the frustum by extracting the planes from the given (model-view / projection) matrix. </p>
+<p>If the matrix is just the projection matrix, the frustum will be in local space. Pass the full ModelViewProjection matrix to create the frustum in world-space. If the projection matrix contained in ModelViewProjection is an infinite plane projection matrix, the resulting frustum will yield a far plane with infinite distance. </p>
+
+</div>
+</div>
+<a id="aaff60f2e6655f8db362fdd31715850ee" name="aaff60f2e6655f8db362fdd31715850ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaff60f2e6655f8db362fdd31715850ee">&#9670;&#160;</a></span>MakeFromPlanes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d8/d89/classxii_frustum.html">xiiFrustum</a> xiiFrustum::MakeFromPlanes </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d5/dd4/structxii_plane_template.html">xiiPlane</a> *</td>          <td class="paramname"><span class="paramname"><em>pPlanes</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">nodiscard</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets the frustum manually by specifying the planes directly. </p>
+<dl class="section note"><dt>Note</dt><dd>Make sure to pass in the planes in the order of the PlaneType enum, otherwise <a class="el" href="../../d8/d89/classxii_frustum.html" title="Represents the frustum of some camera and can be used for culling objects.">xiiFrustum</a> may not always work as expected. </dd></dl>
+
+</div>
+</div>
+<a id="adc7ba12ab56ef8ea5ea9772093ca11f6" name="adc7ba12ab56ef8ea5ea9772093ca11f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc7ba12ab56ef8ea5ea9772093ca11f6">&#9670;&#160;</a></span>Overlaps() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">XII_FORCE_INLINE bool xiiFrustum::Overlaps </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../dd/d35/classxii_simd_b_box.html">xiiSimdBBox</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>object</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns true if the object is fully inside the frustum or partially overlaps it. Returns false when the object is fully outside the frustum. </p>
+<p>This function is more efficient than <a class="el" href="#aab3f1a9b80df081da71f12f58abf15ff" title="Checks whether the given object is inside or outside the frustum.">GetObjectPosition()</a> and should be preferred when possible. </p>
+
+</div>
+</div>
+<a id="a7f353e6b7fb35787a2c7fee2f5df6f00" name="a7f353e6b7fb35787a2c7fee2f5df6f00"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f353e6b7fb35787a2c7fee2f5df6f00">&#9670;&#160;</a></span>Overlaps() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">XII_FORCE_INLINE bool xiiFrustum::Overlaps </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d6/da2/classxii_simd_b_sphere.html">xiiSimdBSphere</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>object</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns true if the object is fully inside the frustum or partially overlaps it. Returns false when the object is fully outside the frustum. </p>
+<p>This function is more efficient than <a class="el" href="#aab3f1a9b80df081da71f12f58abf15ff" title="Checks whether the given object is inside or outside the frustum.">GetObjectPosition()</a> and should be preferred when possible. </p>
+
+</div>
+</div>
+<a id="addf9c8a4ae1221a4c0d1d03ca5285fff" name="addf9c8a4ae1221a4c0d1d03ca5285fff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#addf9c8a4ae1221a4c0d1d03ca5285fff">&#9670;&#160;</a></span>TryMakeFromCorners()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a> xiiFrustum::TryMakeFromCorners </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d8/d89/classxii_frustum.html">xiiFrustum</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>out_frustum</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3</a></td>          <td class="paramname"><span class="paramname"><em>pCorners</em></span>[FrustumCorner::CORNER_COUNT]&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">nodiscard</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Creates a frustum from 8 corner points. </p>
+<p>Returns XII_SUCESS with a valid outFrustum if the operation was successful and XII_FAILURE otherwise. </p>
+
+</div>
+</div>
+<a id="a5bd4a561093362c8b204afeac4aba937" name="a5bd4a561093362c8b204afeac4aba937"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5bd4a561093362c8b204afeac4aba937">&#9670;&#160;</a></span>TryMakeFromFOV()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a> xiiFrustum::TryMakeFromFOV </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d8/d89/classxii_frustum.html">xiiFrustum</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>out_frustum</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>vPosition</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>vForwards</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>vUp</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d3/ddb/classxii_angle_template.html">xiiAngle</a></td>          <td class="paramname"><span class="paramname"><em>fovX</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d3/ddb/classxii_angle_template.html">xiiAngle</a></td>          <td class="paramname"><span class="paramname"><em>fovY</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>fNearPlane</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>fFarPlane</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">nodiscard</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Creates a frustum from the given camera position, direction vectors and the field-of-view along X and Y. </p>
+<p>The up vector does not need to be exactly orthogonal to the forwards vector, it will get recomputed properly. FOV X and Y define the entire field-of-view, so a FOV of 180 degree would mean the entire half-space in front of the camera.</p>
+<p>Returns XII_SUCESS with a valid outFrustum if the operation was successful and XII_FAILURE otherwise. </p>
+
+</div>
+</div>
+<a id="aad3aa36f4394e6718673272986706083" name="aad3aa36f4394e6718673272986706083"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad3aa36f4394e6718673272986706083">&#9670;&#160;</a></span>TryMakeFromMVP()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a> xiiFrustum::TryMakeFromMVP </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d8/d89/classxii_frustum.html">xiiFrustum</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>out_frustum</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d1/dec/classxii_mat4_template.html">xiiMat4</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>mModelViewProjection</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d5/d82/structxii_clip_space_depth_range.html#a3c966a87c0a4727af25bf59d42cac790">xiiClipSpaceDepthRange::Enum</a></td>          <td class="paramname"><span class="paramname"><em>depthRange</em></span><span class="paramdefsep"> = </span><span class="paramdefval"><a class="el" href="../../d5/d82/structxii_clip_space_depth_range.html#a6dfdb6b00e6c8c81e5365fd7d44057ae">xiiClipSpaceDepthRange::Default</a></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">xiiHandedness::Enum</td>          <td class="paramname"><span class="paramname"><em>handedness</em></span><span class="paramdefsep"> = </span><span class="paramdefval"><a class="el" href="../../df/d31/structxii_handedness.html#a4335487b0f24437d35f7fa9e93e040f3">xiiHandedness::Default</a></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">nodiscard</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Creates the frustum by extracting the planes from the given (model-view / projection) matrix. </p>
+<p>If the matrix is just the projection matrix, the frustum will be in local space. Pass the full ModelViewProjection matrix to create the frustum in world-space. If the projection matrix contained in ModelViewProjection is an infinite plane projection matrix, the resulting frustum will yield a far plane with infinite distance.</p>
+<p>Returns XII_SUCESS with a valid outFrustum if the operation was successful and XII_FAILURE otherwise. </p>
+
+</div>
+</div>
+<a id="a2bad3a77b590ac18cb4fbda2e8d79a0d" name="a2bad3a77b590ac18cb4fbda2e8d79a0d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2bad3a77b590ac18cb4fbda2e8d79a0d">&#9670;&#160;</a></span>TryMakeFromPlanes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a> xiiFrustum::TryMakeFromPlanes </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d8/d89/classxii_frustum.html">xiiFrustum</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>out_frustum</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d5/dd4/structxii_plane_template.html">xiiPlane</a> *</td>          <td class="paramname"><span class="paramname"><em>pPlanes</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">nodiscard</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets the frustum manually by specifying the planes directly. </p>
+<dl class="section note"><dt>Note</dt><dd>Make sure to pass in the planes in the order of the PlaneType enum, otherwise <a class="el" href="../../d8/d89/classxii_frustum.html" title="Represents the frustum of some camera and can be used for culling objects.">xiiFrustum</a> may not always work as expected.</dd></dl>
+<p>Returns XII_SUCESS with a valid outFrustum if the operation was successful and XII_FAILURE otherwise. </p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li>/home/runner/work/XII/XII/Source/Engine/Foundation/Math/<a class="el" href="../../d5/d69/_frustum_8h_source.html">Frustum.h</a></li>
+<li>/home/runner/work/XII/XII/Source/Engine/Foundation/Math/Implementation/<b>Frustum.cpp</b></li>
+<li>/home/runner/work/XII/XII/Source/Engine/Foundation/Math/Implementation/<a class="el" href="../../d9/d37/_frustum__inl_8h_source.html">Frustum_inl.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../d8/d89/classxii_frustum.html">xiiFrustum</a></li>
+    <li class="footer">Generated on Mon Jul 1 2024 23:53:14 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,522 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.11.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<!-- BEGIN opengraph metadata -->
+<meta property="og:title" content="XII" />
+<meta property="og:image" content="../../XII-Logo.png" />
+<meta property="og:description" content="An advanced high-performance simulation engine." />
+<meta property="og:url" content="https://www.xiitechnologies.com" />
+<!-- END opengraph metadata -->
+<!-- BEGIN twitter metadata -->
+<meta name="twitter:image:src" content="../../XII-Logo.png" />
+<meta name="twitter:title" content="XII" />
+<meta name="twitter:description" content="An advanced high-performance simulation engine." />
+<!-- END twitter metadata -->
+<title>XII: xiiPathUtils Class Reference</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link rel="icon" type="image/svg+xml" href="logo.drawio.svg"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="../../toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../custom.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<a href="https://github.com/jothepro/doxygen-awesome-css" class="github-corner" title="View source on GitHub" target="_blank" rel="noopener noreferrer">
+    <svg viewBox="0 0 250 250" width="40" height="40" style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+    <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="../../XII-Logo.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">XII
+   &#160;<span id="projectnumber">1.0.0</span>
+   </div>
+   <div id="projectbrief">A high-performance simulation engine.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(1); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.html','Search',true);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('d0/d17/classxii_path_utils.html','../../'); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
+<a href="../../d5/d08/classxii_path_utils-members.html">List of all members</a>  </div>
+  <div class="headertitle"><div class="title">xiiPathUtils Class Reference</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Contains Helper functions to work with paths.  
+ <a href="#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="../../dd/d82/_path_utils_8h_source.html">PathUtils.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a296a4c42330e1bbb110b28f4cb55e10f" id="r_a296a4c42330e1bbb110b28f4cb55e10f"><td class="memItemLeft" align="right" valign="top"><a id="a296a4c42330e1bbb110b28f4cb55e10f" name="a296a4c42330e1bbb110b28f4cb55e10f"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsPathSeparator</b> (xiiUInt32 c)</td></tr>
+<tr class="memdesc:a296a4c42330e1bbb110b28f4cb55e10f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether c is any known path separator. <br /></td></tr>
+<tr class="separator:a296a4c42330e1bbb110b28f4cb55e10f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af334a7fa1be165457f1dad1ee8c3c471" id="r_af334a7fa1be165457f1dad1ee8c3c471"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af334a7fa1be165457f1dad1ee8c3c471">IsValidFilenameChar</a> (xiiUInt32 uiCharacter)</td></tr>
+<tr class="memdesc:af334a7fa1be165457f1dad1ee8c3c471"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if a given character is allowed in a filename (not path!)  <br /></td></tr>
+<tr class="separator:af334a7fa1be165457f1dad1ee8c3c471"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab36b044f45664467af838ba051622b72" id="r_ab36b044f45664467af838ba051622b72"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab36b044f45664467af838ba051622b72">ContainsInvalidFilenameChars</a> (<a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sPath)</td></tr>
+<tr class="memdesc:ab36b044f45664467af838ba051622b72"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks every character in the string with <a class="el" href="#af334a7fa1be165457f1dad1ee8c3c471" title="Checks if a given character is allowed in a filename (not path!)">IsValidFilenameChar()</a>  <br /></td></tr>
+<tr class="separator:ab36b044f45664467af838ba051622b72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad163d21e2df9c0222ab6cac572d3ae6" id="r_aad163d21e2df9c0222ab6cac572d3ae6"><td class="memItemLeft" align="right" valign="top"><a id="aad163d21e2df9c0222ab6cac572d3ae6" name="aad163d21e2df9c0222ab6cac572d3ae6"></a>
+static const char *&#160;</td><td class="memItemRight" valign="bottom"><b>FindPreviousSeparator</b> (const char *szPathStart, const char *szStartSearchAt)</td></tr>
+<tr class="memdesc:aad163d21e2df9c0222ab6cac572d3ae6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Searches for the previous path separator before szStartSearchAt. Will return nullptr if it reaches szPathStart before finding any separator. <br /></td></tr>
+<tr class="separator:aad163d21e2df9c0222ab6cac572d3ae6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d5af91da5b069d53e82fe5c4c1ef2bf" id="r_a5d5af91da5b069d53e82fe5c4c1ef2bf"><td class="memItemLeft" align="right" valign="top"><a id="a5d5af91da5b069d53e82fe5c4c1ef2bf" name="a5d5af91da5b069d53e82fe5c4c1ef2bf"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>HasAnyExtension</b> (<a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sPath)</td></tr>
+<tr class="memdesc:a5d5af91da5b069d53e82fe5c4c1ef2bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether the given path has any file extension. <br /></td></tr>
+<tr class="separator:a5d5af91da5b069d53e82fe5c4c1ef2bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71b42068084079f127bc8e8c2bfd23a7" id="r_a71b42068084079f127bc8e8c2bfd23a7"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a71b42068084079f127bc8e8c2bfd23a7">HasExtension</a> (<a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sPath, <a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sExtension)</td></tr>
+<tr class="memdesc:a71b42068084079f127bc8e8c2bfd23a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether the path ends with the given file extension. szExtension may or may not start with a dot. The check is case insensitive.  <br /></td></tr>
+<tr class="separator:a71b42068084079f127bc8e8c2bfd23a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae93db666ca8c00433c9351e1a96ae3d2" id="r_ae93db666ca8c00433c9351e1a96ae3d2"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae93db666ca8c00433c9351e1a96ae3d2">GetFileExtension</a> (<a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sPath, bool bFullExtension=false)</td></tr>
+<tr class="memdesc:ae93db666ca8c00433c9351e1a96ae3d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the file extension of the given path. Will be empty, if the path does not end with a proper extension. The dot (.) is not included.  <br /></td></tr>
+<tr class="separator:ae93db666ca8c00433c9351e1a96ae3d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af533cf9c482bbb1fa032999e67bfbed2" id="r_af533cf9c482bbb1fa032999e67bfbed2"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af533cf9c482bbb1fa032999e67bfbed2">GetFileName</a> (<a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sPath, bool bRemoveFullExtension=false)</td></tr>
+<tr class="memdesc:af533cf9c482bbb1fa032999e67bfbed2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the file name of a path, excluding the path and extension.  <br /></td></tr>
+<tr class="separator:af533cf9c482bbb1fa032999e67bfbed2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b77840949e3dc67ed2a0ca282027123" id="r_a1b77840949e3dc67ed2a0ca282027123"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1b77840949e3dc67ed2a0ca282027123">GetFileNameAndExtension</a> (<a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sPath)</td></tr>
+<tr class="memdesc:a1b77840949e3dc67ed2a0ca282027123"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the substring that represents the file name including the file extension.  <br /></td></tr>
+<tr class="separator:a1b77840949e3dc67ed2a0ca282027123"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33f8b5c05513cdd0249a9ce513f56049" id="r_a33f8b5c05513cdd0249a9ce513f56049"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a33f8b5c05513cdd0249a9ce513f56049">GetFileDirectory</a> (<a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sPath)</td></tr>
+<tr class="memdesc:a33f8b5c05513cdd0249a9ce513f56049"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the directory of the given file, which is the substring up to the last path separator.  <br /></td></tr>
+<tr class="separator:a33f8b5c05513cdd0249a9ce513f56049"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5977a6cfe8663d68002579c048e0cb30" id="r_a5977a6cfe8663d68002579c048e0cb30"><td class="memItemLeft" align="right" valign="top"><a id="a5977a6cfe8663d68002579c048e0cb30" name="a5977a6cfe8663d68002579c048e0cb30"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsAbsolutePath</b> (<a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sPath)</td></tr>
+<tr class="memdesc:a5977a6cfe8663d68002579c048e0cb30"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true, if the given path represents an absolute path on the current OS. <br /></td></tr>
+<tr class="separator:a5977a6cfe8663d68002579c048e0cb30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81d55a78ebb3e16fea39bf593d893342" id="r_a81d55a78ebb3e16fea39bf593d893342"><td class="memItemLeft" align="right" valign="top"><a id="a81d55a78ebb3e16fea39bf593d893342" name="a81d55a78ebb3e16fea39bf593d893342"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsRelativePath</b> (<a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sPath)</td></tr>
+<tr class="memdesc:a81d55a78ebb3e16fea39bf593d893342"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true, if the given path represents a relative path on the current OS. <br /></td></tr>
+<tr class="separator:a81d55a78ebb3e16fea39bf593d893342"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac926f4e33b022330627de5eff594af32" id="r_ac926f4e33b022330627de5eff594af32"><td class="memItemLeft" align="right" valign="top"><a id="ac926f4e33b022330627de5eff594af32" name="ac926f4e33b022330627de5eff594af32"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsRootedPath</b> (<a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sPath)</td></tr>
+<tr class="memdesc:ac926f4e33b022330627de5eff594af32"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="../../d8/d4f/class_a.html">A</a> rooted path starts with a colon and then names a file-system data directory. Rooted paths are used as 'absolute' paths within the <a class="el" href="../../d7/d0a/classxii_file_system.html" title="The xiiFileSystem provides high-level functionality to manage files in a virtual file system.">xiiFileSystem</a>. <br /></td></tr>
+<tr class="separator:ac926f4e33b022330627de5eff594af32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ae1ba938b06a4cba6ccf77a1e024690" id="r_a5ae1ba938b06a4cba6ccf77a1e024690"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5ae1ba938b06a4cba6ccf77a1e024690">GetRootedPathParts</a> (<a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sPath, <a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> &amp;ref_sRoot, <a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> &amp;ref_sRelPath)</td></tr>
+<tr class="memdesc:a5ae1ba938b06a4cba6ccf77a1e024690"><td class="mdescLeft">&#160;</td><td class="mdescRight">Splits the passed path into its root portion and the relative path.  <br /></td></tr>
+<tr class="separator:a5ae1ba938b06a4cba6ccf77a1e024690"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb63112f1a6d316c3af4940ffc2891ed" id="r_acb63112f1a6d316c3af4940ffc2891ed"><td class="memItemLeft" align="right" valign="top"><a id="acb63112f1a6d316c3af4940ffc2891ed" name="acb63112f1a6d316c3af4940ffc2891ed"></a>
+static <a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetRootedPathRootName</b> (<a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sPath)</td></tr>
+<tr class="memdesc:acb63112f1a6d316c3af4940ffc2891ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Special case of GetRootedPathParts that returns the root of the input path and discards the relative path. <br /></td></tr>
+<tr class="separator:acb63112f1a6d316c3af4940ffc2891ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf0e8078fedec454b3ffb674249b57aa" id="r_aaf0e8078fedec454b3ffb674249b57aa"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaf0e8078fedec454b3ffb674249b57aa">MakeValidFilename</a> (<a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sFilename, xiiUInt32 uiReplacementCharacter, <a class="el" href="../../d4/dbb/classxii_string_builder.html">xiiStringBuilder</a> &amp;out_sFilename)</td></tr>
+<tr class="memdesc:aaf0e8078fedec454b3ffb674249b57aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a valid filename (not path!) using the given string by replacing all disallowed characters.  <br /></td></tr>
+<tr class="separator:aaf0e8078fedec454b3ffb674249b57aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26dfbe711cebef8410a036e97306dbdd" id="r_a26dfbe711cebef8410a036e97306dbdd"><td class="memItemLeft" align="right" valign="top"><a id="a26dfbe711cebef8410a036e97306dbdd" name="a26dfbe711cebef8410a036e97306dbdd"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsSubPath</b> (<a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sPrefixPath, <a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sFullPath)</td></tr>
+<tr class="memdesc:a26dfbe711cebef8410a036e97306dbdd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether <em>sFullPath</em> starts with <em>sPrefixPath</em>. <br /></td></tr>
+<tr class="separator:a26dfbe711cebef8410a036e97306dbdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d93b3159d1e40e09794cd50eebe60bb" id="r_a1d93b3159d1e40e09794cd50eebe60bb"><td class="memItemLeft" align="right" valign="top"><a id="a1d93b3159d1e40e09794cd50eebe60bb" name="a1d93b3159d1e40e09794cd50eebe60bb"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsSubPath_NoCase</b> (<a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sPrefixPath, <a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sFullPath)</td></tr>
+<tr class="memdesc:a1d93b3159d1e40e09794cd50eebe60bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether <em>sFullPath</em> starts with <em>sPrefixPath</em>. Case insensitive. <br /></td></tr>
+<tr class="separator:a1d93b3159d1e40e09794cd50eebe60bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
+Static Public Attributes</h2></td></tr>
+<tr class="memitem:ac6882d71f9649e4ad5ae278487f94b3e" id="r_ac6882d71f9649e4ad5ae278487f94b3e"><td class="memItemLeft" align="right" valign="top"><a id="ac6882d71f9649e4ad5ae278487f94b3e" name="ac6882d71f9649e4ad5ae278487f94b3e"></a>
+static const char&#160;</td><td class="memItemRight" valign="bottom"><b>OsSpecificPathSeparator</b></td></tr>
+<tr class="memdesc:ac6882d71f9649e4ad5ae278487f94b3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The path separator used by this operating system. <br /></td></tr>
+<tr class="separator:ac6882d71f9649e4ad5ae278487f94b3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Contains Helper functions to work with paths. </p>
+<p>Only functions that require read-only access to a string are provided here All functions that require to modify the path are provided by <a class="el" href="../../d4/dbb/classxii_string_builder.html" title="xiiStringBuilder is a class that is meant for creating and modifying strings.">xiiStringBuilder</a>. Many functions return <a class="el" href="../../da/d9d/structxii_string_view.html" title="xiiStringView represent a read-only sub-string of a larger string, as it can store a dedicated string...">xiiStringView</a>'s, which will always be strict sub-strings of their input data. That allows that these functions can work without any additional memory allocations. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="ab36b044f45664467af838ba051622b72" name="ab36b044f45664467af838ba051622b72"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab36b044f45664467af838ba051622b72">&#9670;&#160;</a></span>ContainsInvalidFilenameChars()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool xiiPathUtils::ContainsInvalidFilenameChars </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a></td>          <td class="paramname"><span class="paramname"><em>sPath</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Checks every character in the string with <a class="el" href="#af334a7fa1be165457f1dad1ee8c3c471" title="Checks if a given character is allowed in a filename (not path!)">IsValidFilenameChar()</a> </p>
+<p>This is a basic check, only because each character passes the test, it does not guarantee that the full string is a valid path. </p>
+<dl class="test"><dt><b><a class="el" href="../../d4/df6/test.html#_test000035">Test</a></b></dt><dd>Not tested yet </dd></dl>
+
+</div>
+</div>
+<a id="a33f8b5c05513cdd0249a9ce513f56049" name="a33f8b5c05513cdd0249a9ce513f56049"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a33f8b5c05513cdd0249a9ce513f56049">&#9670;&#160;</a></span>GetFileDirectory()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> xiiPathUtils::GetFileDirectory </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a></td>          <td class="paramname"><span class="paramname"><em>sPath</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the directory of the given file, which is the substring up to the last path separator. </p>
+<p>If the path already ends in a path separator, and thus points to a folder, instead of a file, the unchanged path is returned. "path/to/file" -&gt; "path/to/" "path/to/folder/" -&gt; "path/to/folder/" "filename" -&gt; "" "/file_at_root_level" -&gt; "/" </p>
+
+</div>
+</div>
+<a id="ae93db666ca8c00433c9351e1a96ae3d2" name="ae93db666ca8c00433c9351e1a96ae3d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae93db666ca8c00433c9351e1a96ae3d2">&#9670;&#160;</a></span>GetFileExtension()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> xiiPathUtils::GetFileExtension </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a></td>          <td class="paramname"><span class="paramname"><em>sPath</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>bFullExtension</em></span><span class="paramdefsep"> = </span><span class="paramdefval">false</span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the file extension of the given path. Will be empty, if the path does not end with a proper extension. The dot (.) is not included. </p>
+<p>If bFullExtension is false, a file named "file.a.b.c" will return "c". If bFullExtension is true, a file named "file.a.b.c" will return "a.b.c". </p>
+
+</div>
+</div>
+<a id="af533cf9c482bbb1fa032999e67bfbed2" name="af533cf9c482bbb1fa032999e67bfbed2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af533cf9c482bbb1fa032999e67bfbed2">&#9670;&#160;</a></span>GetFileName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> xiiPathUtils::GetFileName </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a></td>          <td class="paramname"><span class="paramname"><em>sPath</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>bRemoveFullExtension</em></span><span class="paramdefsep"> = </span><span class="paramdefval">false</span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the file name of a path, excluding the path and extension. </p>
+<p>If the path already ends with a path separator, the result will be empty. </p>
+
+</div>
+</div>
+<a id="a1b77840949e3dc67ed2a0ca282027123" name="a1b77840949e3dc67ed2a0ca282027123"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b77840949e3dc67ed2a0ca282027123">&#9670;&#160;</a></span>GetFileNameAndExtension()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> xiiPathUtils::GetFileNameAndExtension </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a></td>          <td class="paramname"><span class="paramname"><em>sPath</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the substring that represents the file name including the file extension. </p>
+<p>Returns an empty string, if sPath already ends in a path separator, or is empty itself. </p>
+
+</div>
+</div>
+<a id="a5ae1ba938b06a4cba6ccf77a1e024690" name="a5ae1ba938b06a4cba6ccf77a1e024690"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ae1ba938b06a4cba6ccf77a1e024690">&#9670;&#160;</a></span>GetRootedPathParts()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void xiiPathUtils::GetRootedPathParts </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a></td>          <td class="paramname"><span class="paramname"><em>sPath</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>ref_sRoot</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>ref_sRelPath</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Splits the passed path into its root portion and the relative path. </p>
+<p>":MyRoot\file.txt" -&gt; root = "MyRoot", relPath="file.txt" ":MyRoot\folder\file.txt" -&gt; root = "MyRoot", relPath = "folder\file.txt" ":\MyRoot\folder\file.txt" -&gt; root = "MyRoot", relPath = "folder\file.txt" ":/MyRoot\folder\file.txt" -&gt; root = "MyRoot", relPath = "folder\file.txt" If the path is not rooted, then root will be an empty string and relPath is set to the full input path. </p>
+
+</div>
+</div>
+<a id="a71b42068084079f127bc8e8c2bfd23a7" name="a71b42068084079f127bc8e8c2bfd23a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a71b42068084079f127bc8e8c2bfd23a7">&#9670;&#160;</a></span>HasExtension()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool xiiPathUtils::HasExtension </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a></td>          <td class="paramname"><span class="paramname"><em>sPath</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a></td>          <td class="paramname"><span class="paramname"><em>sExtension</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Checks whether the path ends with the given file extension. szExtension may or may not start with a dot. The check is case insensitive. </p>
+<p>HasExtension("file.txt", "txt") -&gt; true HasExtension("file.txt", ".txt") -&gt; true HasExtension("file.a.b", ".b") -&gt; true HasExtension("file.a.b", "a.b") -&gt; true HasExtension("file.a.b", ".a.b") -&gt; true HasExtension("file.a.b", "file.a.b") -&gt; false </p>
+
+</div>
+</div>
+<a id="af334a7fa1be165457f1dad1ee8c3c471" name="af334a7fa1be165457f1dad1ee8c3c471"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af334a7fa1be165457f1dad1ee8c3c471">&#9670;&#160;</a></span>IsValidFilenameChar()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool xiiPathUtils::IsValidFilenameChar </td>
+          <td>(</td>
+          <td class="paramtype">xiiUInt32</td>          <td class="paramname"><span class="paramname"><em>uiCharacter</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Checks if a given character is allowed in a filename (not path!) </p>
+<dl class="test"><dt><b><a class="el" href="../../d4/df6/test.html#_test000034">Test</a></b></dt><dd>Not tested yet </dd></dl>
+
+</div>
+</div>
+<a id="aaf0e8078fedec454b3ffb674249b57aa" name="aaf0e8078fedec454b3ffb674249b57aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf0e8078fedec454b3ffb674249b57aa">&#9670;&#160;</a></span>MakeValidFilename()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void xiiPathUtils::MakeValidFilename </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a></td>          <td class="paramname"><span class="paramname"><em>sFilename</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">xiiUInt32</td>          <td class="paramname"><span class="paramname"><em>uiReplacementCharacter</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d4/dbb/classxii_string_builder.html">xiiStringBuilder</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>out_sFilename</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Creates a valid filename (not path!) using the given string by replacing all disallowed characters. </p>
+<p>Note that path separators in the given string will be replaced as well! Asserts that replacementCharacter is an allowed character. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="#af334a7fa1be165457f1dad1ee8c3c471" title="Checks if a given character is allowed in a filename (not path!)">IsValidFilenameChar()</a> </dd></dl>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li>/home/runner/work/XII/XII/Source/Engine/Foundation/Strings/<a class="el" href="../../dd/d82/_path_utils_8h_source.html">PathUtils.h</a></li>
+<li>/home/runner/work/XII/XII/Source/Engine/Foundation/Strings/Implementation/<b>PathUtils.cpp</b></li>
+<li>/home/runner/work/XII/XII/Source/Engine/Foundation/Strings/Implementation/<a class="el" href="../../d1/d9d/_path_utils__inl_8h_source.html">PathUtils_inl.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../d0/d17/classxii_path_utils.html">xiiPathUtils</a></li>
+    <li class="footer">Generated on Mon Jul 1 2024 23:53:15 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+  </ul>
+</div>
+</body>
+</html>

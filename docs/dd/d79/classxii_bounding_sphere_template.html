@@ -1,0 +1,400 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.11.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<!-- BEGIN opengraph metadata -->
+<meta property="og:title" content="XII" />
+<meta property="og:image" content="../../XII-Logo.png" />
+<meta property="og:description" content="An advanced high-performance simulation engine." />
+<meta property="og:url" content="https://www.xiitechnologies.com" />
+<!-- END opengraph metadata -->
+<!-- BEGIN twitter metadata -->
+<meta name="twitter:image:src" content="../../XII-Logo.png" />
+<meta name="twitter:title" content="XII" />
+<meta name="twitter:description" content="An advanced high-performance simulation engine." />
+<!-- END twitter metadata -->
+<title>XII: xiiBoundingSphereTemplate&lt; Type &gt; Class Template Reference</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link rel="icon" type="image/svg+xml" href="logo.drawio.svg"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="../../toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../custom.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<a href="https://github.com/jothepro/doxygen-awesome-css" class="github-corner" title="View source on GitHub" target="_blank" rel="noopener noreferrer">
+    <svg viewBox="0 0 250 250" width="40" height="40" style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+    <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="../../XII-Logo.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">XII
+   &#160;<span id="projectnumber">1.0.0</span>
+   </div>
+   <div id="projectbrief">A high-performance simulation engine.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(1); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.html','Search',true);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('dd/d79/classxii_bounding_sphere_template.html','../../'); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="../../d2/d1c/classxii_bounding_sphere_template-members.html">List of all members</a>  </div>
+  <div class="headertitle"><div class="title">xiiBoundingSphereTemplate&lt; Type &gt; Class Template Reference</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>An implementation of a bounding sphere.  
+ <a href="#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="../../d6/d7f/_bounding_sphere_8h_source.html">BoundingSphere.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a5a45a86fbb55d2ea3e4e03654fc17364" id="r_a5a45a86fbb55d2ea3e4e03654fc17364"><td class="memItemLeft" align="right" valign="top"><a id="a5a45a86fbb55d2ea3e4e03654fc17364" name="a5a45a86fbb55d2ea3e4e03654fc17364"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>ComponentType</b> = Type</td></tr>
+<tr class="separator:a5a45a86fbb55d2ea3e4e03654fc17364"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a0a57e9a851a25a5553da3b2fe2ce481f" id="r_a0a57e9a851a25a5553da3b2fe2ce481f"><td class="memItemLeft" align="right" valign="top"><a id="a0a57e9a851a25a5553da3b2fe2ce481f" name="a0a57e9a851a25a5553da3b2fe2ce481f"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>XII_DECLARE_POD_TYPE</b> ()</td></tr>
+<tr class="separator:a0a57e9a851a25a5553da3b2fe2ce481f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab29bdcaf8caaaabbfc3cde668450992a" id="r_ab29bdcaf8caaaabbfc3cde668450992a"><td class="memItemLeft" align="right" valign="top"><a id="ab29bdcaf8caaaabbfc3cde668450992a" name="ab29bdcaf8caaaabbfc3cde668450992a"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>xiiBoundingSphereTemplate</b> ()</td></tr>
+<tr class="memdesc:ab29bdcaf8caaaabbfc3cde668450992a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor does not initialize any data. <br /></td></tr>
+<tr class="separator:ab29bdcaf8caaaabbfc3cde668450992a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8bc580df1b64ad4dac86266b70afd15" id="r_ae8bc580df1b64ad4dac86266b70afd15"><td class="memItemLeft" align="right" valign="top"><a id="ae8bc580df1b64ad4dac86266b70afd15" name="ae8bc580df1b64ad4dac86266b70afd15"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsZero</b> (Type fEpsilon=xiiMath::DefaultEpsilon&lt; Type &gt;()) const</td></tr>
+<tr class="memdesc:ae8bc580df1b64ad4dac86266b70afd15"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether the sphere is all zero. <br /></td></tr>
+<tr class="separator:ae8bc580df1b64ad4dac86266b70afd15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec97f1e17f2252554e530afeb7357567" id="r_aec97f1e17f2252554e530afeb7357567"><td class="memItemLeft" align="right" valign="top"><a id="aec97f1e17f2252554e530afeb7357567" name="aec97f1e17f2252554e530afeb7357567"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsValid</b> () const</td></tr>
+<tr class="memdesc:aec97f1e17f2252554e530afeb7357567"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether the sphere has valid values. <br /></td></tr>
+<tr class="separator:aec97f1e17f2252554e530afeb7357567"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d485d2bbfa866051dc6c8760673f17a" id="r_a5d485d2bbfa866051dc6c8760673f17a"><td class="memItemLeft" align="right" valign="top"><a id="a5d485d2bbfa866051dc6c8760673f17a" name="a5d485d2bbfa866051dc6c8760673f17a"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsNaN</b> () const</td></tr>
+<tr class="memdesc:a5d485d2bbfa866051dc6c8760673f17a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether any value is NaN. <br /></td></tr>
+<tr class="separator:a5d485d2bbfa866051dc6c8760673f17a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80193ef1d62c8c60e85f0040e7bc8fd3" id="r_a80193ef1d62c8c60e85f0040e7bc8fd3"><td class="memItemLeft" align="right" valign="top"><a id="a80193ef1d62c8c60e85f0040e7bc8fd3" name="a80193ef1d62c8c60e85f0040e7bc8fd3"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ExpandToInclude</b> (const <a class="el" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3Template</a>&lt; Type &gt; &amp;vPoint)</td></tr>
+<tr class="memdesc:a80193ef1d62c8c60e85f0040e7bc8fd3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Increases the sphere's radius to include this point. Does NOT change its position, thus the resulting sphere might be not a very tight fit. <br /></td></tr>
+<tr class="separator:a80193ef1d62c8c60e85f0040e7bc8fd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a938fb66744036731ba15de54429ffe5d" id="r_a938fb66744036731ba15de54429ffe5d"><td class="memItemLeft" align="right" valign="top"><a id="a938fb66744036731ba15de54429ffe5d" name="a938fb66744036731ba15de54429ffe5d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ExpandToInclude</b> (const <a class="el" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3Template</a>&lt; Type &gt; *pPoints, xiiUInt32 uiNumPoints, xiiUInt32 uiStride=sizeof(<a class="el" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3Template</a>&lt; Type &gt;))</td></tr>
+<tr class="memdesc:a938fb66744036731ba15de54429ffe5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Increases the sphere's radius to include all given points. Does NOT change its position, thus the resulting sphere might be not a very tight fit. More efficient than calling this for every point individually. <br /></td></tr>
+<tr class="separator:a938fb66744036731ba15de54429ffe5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec9db03e07e352bc9e86f04f4b1cbd0e" id="r_aec9db03e07e352bc9e86f04f4b1cbd0e"><td class="memItemLeft" align="right" valign="top"><a id="aec9db03e07e352bc9e86f04f4b1cbd0e" name="aec9db03e07e352bc9e86f04f4b1cbd0e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ExpandToInclude</b> (const <a class="el" href="../../dd/d79/classxii_bounding_sphere_template.html">xiiBoundingSphereTemplate</a> &amp;rhs)</td></tr>
+<tr class="memdesc:aec9db03e07e352bc9e86f04f4b1cbd0e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Increases this sphere's radius, such that it encloses the other sphere. Does not change the center position of this sphere. <br /></td></tr>
+<tr class="separator:aec9db03e07e352bc9e86f04f4b1cbd0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb739e9be4cfc7d166befa9c358b3f4f" id="r_afb739e9be4cfc7d166befa9c358b3f4f"><td class="memItemLeft" align="right" valign="top"><a id="afb739e9be4cfc7d166befa9c358b3f4f" name="afb739e9be4cfc7d166befa9c358b3f4f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ExpandToInclude</b> (const <a class="el" href="../../d2/dd6/classxii_bounding_box_template.html">xiiBoundingBoxTemplate</a>&lt; Type &gt; &amp;rhs)</td></tr>
+<tr class="memdesc:afb739e9be4cfc7d166befa9c358b3f4f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Increases this sphere's radius, such that it encloses the box. Does not change the center position of this sphere. <br /></td></tr>
+<tr class="separator:afb739e9be4cfc7d166befa9c358b3f4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7905bdaac8b200e46f9fc506bd65a27" id="r_ab7905bdaac8b200e46f9fc506bd65a27"><td class="memItemLeft" align="right" valign="top"><a id="ab7905bdaac8b200e46f9fc506bd65a27" name="ab7905bdaac8b200e46f9fc506bd65a27"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Grow</b> (Type fDiff)</td></tr>
+<tr class="memdesc:ab7905bdaac8b200e46f9fc506bd65a27"><td class="mdescLeft">&#160;</td><td class="mdescRight">Increases the size of the sphere by the given amount. <br /></td></tr>
+<tr class="separator:ab7905bdaac8b200e46f9fc506bd65a27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a9fea36ddcec67afac9cba4f59b5485" id="r_a6a9fea36ddcec67afac9cba4f59b5485"><td class="memItemLeft" align="right" valign="top"><a id="a6a9fea36ddcec67afac9cba4f59b5485" name="a6a9fea36ddcec67afac9cba4f59b5485"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsIdentical</b> (const <a class="el" href="../../dd/d79/classxii_bounding_sphere_template.html">xiiBoundingSphereTemplate</a> &amp;rhs) const</td></tr>
+<tr class="memdesc:a6a9fea36ddcec67afac9cba4f59b5485"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tests whether two spheres are identical. <br /></td></tr>
+<tr class="separator:a6a9fea36ddcec67afac9cba4f59b5485"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6780eefe68e16016c31f17fc276465c" id="r_af6780eefe68e16016c31f17fc276465c"><td class="memItemLeft" align="right" valign="top"><a id="af6780eefe68e16016c31f17fc276465c" name="af6780eefe68e16016c31f17fc276465c"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsEqual</b> (const <a class="el" href="../../dd/d79/classxii_bounding_sphere_template.html">xiiBoundingSphereTemplate</a> &amp;rhs, Type fEpsilon=xiiMath::DefaultEpsilon&lt; Type &gt;()) const</td></tr>
+<tr class="memdesc:af6780eefe68e16016c31f17fc276465c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tests whether two spheres are equal within some threshold. <br /></td></tr>
+<tr class="separator:af6780eefe68e16016c31f17fc276465c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7979964408018ed38e43c448914730a" id="r_ae7979964408018ed38e43c448914730a"><td class="memItemLeft" align="right" valign="top"><a id="ae7979964408018ed38e43c448914730a" name="ae7979964408018ed38e43c448914730a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Translate</b> (const <a class="el" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3Template</a>&lt; Type &gt; &amp;vTranslation)</td></tr>
+<tr class="memdesc:ae7979964408018ed38e43c448914730a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Moves the sphere by the given vector. <br /></td></tr>
+<tr class="separator:ae7979964408018ed38e43c448914730a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7b595722f621ecff2fd21fe1ce37800" id="r_aa7b595722f621ecff2fd21fe1ce37800"><td class="memItemLeft" align="right" valign="top"><a id="aa7b595722f621ecff2fd21fe1ce37800" name="aa7b595722f621ecff2fd21fe1ce37800"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ScaleFromCenter</b> (Type fScale)</td></tr>
+<tr class="memdesc:aa7b595722f621ecff2fd21fe1ce37800"><td class="mdescLeft">&#160;</td><td class="mdescRight">Scales the sphere's size, does not change its center position. <br /></td></tr>
+<tr class="separator:aa7b595722f621ecff2fd21fe1ce37800"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae773cba15bdae9d0952c3e11bb43d0c5" id="r_ae773cba15bdae9d0952c3e11bb43d0c5"><td class="memItemLeft" align="right" valign="top"><a id="ae773cba15bdae9d0952c3e11bb43d0c5" name="ae773cba15bdae9d0952c3e11bb43d0c5"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ScaleFromOrigin</b> (const <a class="el" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3Template</a>&lt; Type &gt; &amp;vScale)</td></tr>
+<tr class="memdesc:ae773cba15bdae9d0952c3e11bb43d0c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Scales the sphere in world unites, meaning its center position will change as well. <br /></td></tr>
+<tr class="separator:ae773cba15bdae9d0952c3e11bb43d0c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad320a1dbfc60fe192dc29d744ca50752" id="r_ad320a1dbfc60fe192dc29d744ca50752"><td class="memItemLeft" align="right" valign="top"><a id="ad320a1dbfc60fe192dc29d744ca50752" name="ad320a1dbfc60fe192dc29d744ca50752"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>TransformFromOrigin</b> (const <a class="el" href="../../d1/dec/classxii_mat4_template.html">xiiMat4Template</a>&lt; Type &gt; &amp;mTransform)</td></tr>
+<tr class="memdesc:ad320a1dbfc60fe192dc29d744ca50752"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transforms the sphere with the given matrix from the world origin. I.e. scalings and rotations will influence its position. <br /></td></tr>
+<tr class="separator:ad320a1dbfc60fe192dc29d744ca50752"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38bf494dafd4350db92297c289297118" id="r_a38bf494dafd4350db92297c289297118"><td class="memItemLeft" align="right" valign="top"><a id="a38bf494dafd4350db92297c289297118" name="a38bf494dafd4350db92297c289297118"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>TransformFromCenter</b> (const <a class="el" href="../../d1/dec/classxii_mat4_template.html">xiiMat4Template</a>&lt; Type &gt; &amp;mTransform)</td></tr>
+<tr class="memdesc:a38bf494dafd4350db92297c289297118"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transforms the sphere with the given matrix from its own center. I.e. rotations have no effect, scalings will only affect the radius, and only translations will affect its position. <br /></td></tr>
+<tr class="separator:a38bf494dafd4350db92297c289297118"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07eff45caa8016fd8d2a13f4b8c7be40" id="r_a07eff45caa8016fd8d2a13f4b8c7be40"><td class="memItemLeft" align="right" valign="top"><a id="a07eff45caa8016fd8d2a13f4b8c7be40" name="a07eff45caa8016fd8d2a13f4b8c7be40"></a>
+Type&#160;</td><td class="memItemRight" valign="bottom"><b>GetDistanceTo</b> (const <a class="el" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3Template</a>&lt; Type &gt; &amp;vPoint) const</td></tr>
+<tr class="memdesc:a07eff45caa8016fd8d2a13f4b8c7be40"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the distance of the point to the sphere's surface. Returns negative values for points inside the sphere. <br /></td></tr>
+<tr class="separator:a07eff45caa8016fd8d2a13f4b8c7be40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc2c820d742a73adc586440c762ca406" id="r_adc2c820d742a73adc586440c762ca406"><td class="memItemLeft" align="right" valign="top"><a id="adc2c820d742a73adc586440c762ca406" name="adc2c820d742a73adc586440c762ca406"></a>
+Type&#160;</td><td class="memItemRight" valign="bottom"><b>GetDistanceTo</b> (const <a class="el" href="../../dd/d79/classxii_bounding_sphere_template.html">xiiBoundingSphereTemplate</a> &amp;rhs) const</td></tr>
+<tr class="memdesc:adc2c820d742a73adc586440c762ca406"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the distance between the two spheres. Zero for spheres that are exactly touching each other, negative values for overlapping spheres. <br /></td></tr>
+<tr class="separator:adc2c820d742a73adc586440c762ca406"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0cbf8bc5e65eeb4d343da55ccc95a4b" id="r_ae0cbf8bc5e65eeb4d343da55ccc95a4b"><td class="memItemLeft" align="right" valign="top"><a id="ae0cbf8bc5e65eeb4d343da55ccc95a4b" name="ae0cbf8bc5e65eeb4d343da55ccc95a4b"></a>
+Type&#160;</td><td class="memItemRight" valign="bottom"><b>GetDistanceTo</b> (const <a class="el" href="../../d2/dd6/classxii_bounding_box_template.html">xiiBoundingBoxTemplate</a>&lt; Type &gt; &amp;rhs) const</td></tr>
+<tr class="memdesc:ae0cbf8bc5e65eeb4d343da55ccc95a4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the minimum distance between the box and the sphere. Zero if both are exactly touching, negative values if they overlap. <br /></td></tr>
+<tr class="separator:ae0cbf8bc5e65eeb4d343da55ccc95a4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83001db854c35b3c9e94ff3a5f5868d1" id="r_a83001db854c35b3c9e94ff3a5f5868d1"><td class="memItemLeft" align="right" valign="top"><a id="a83001db854c35b3c9e94ff3a5f5868d1" name="a83001db854c35b3c9e94ff3a5f5868d1"></a>
+Type&#160;</td><td class="memItemRight" valign="bottom"><b>GetDistanceTo</b> (const <a class="el" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3Template</a>&lt; Type &gt; *pPoints, xiiUInt32 uiNumPoints, xiiUInt32 uiStride=sizeof(<a class="el" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3Template</a>&lt; Type &gt;)) const</td></tr>
+<tr class="memdesc:a83001db854c35b3c9e94ff3a5f5868d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the minimum distance of any of the points to the sphere. <br /></td></tr>
+<tr class="separator:a83001db854c35b3c9e94ff3a5f5868d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3582b68594ea926746e7c87f1965c27" id="r_aa3582b68594ea926746e7c87f1965c27"><td class="memItemLeft" align="right" valign="top"><a id="aa3582b68594ea926746e7c87f1965c27" name="aa3582b68594ea926746e7c87f1965c27"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>Contains</b> (const <a class="el" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3Template</a>&lt; Type &gt; &amp;vPoint) const</td></tr>
+<tr class="memdesc:aa3582b68594ea926746e7c87f1965c27"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the given point is inside the sphere. <br /></td></tr>
+<tr class="separator:aa3582b68594ea926746e7c87f1965c27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ad3bff7129714d993f02c75b2853e15" id="r_a6ad3bff7129714d993f02c75b2853e15"><td class="memItemLeft" align="right" valign="top"><a id="a6ad3bff7129714d993f02c75b2853e15" name="a6ad3bff7129714d993f02c75b2853e15"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>Contains</b> (const <a class="el" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3Template</a>&lt; Type &gt; *pPoints, xiiUInt32 uiNumPoints, xiiUInt32 uiStride=sizeof(<a class="el" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3Template</a>&lt; Type &gt;)) const</td></tr>
+<tr class="memdesc:a6ad3bff7129714d993f02c75b2853e15"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether all the given points are inside this sphere. <br /></td></tr>
+<tr class="separator:a6ad3bff7129714d993f02c75b2853e15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f9656c1bf1c2baabc26bd1a43c060c2" id="r_a1f9656c1bf1c2baabc26bd1a43c060c2"><td class="memItemLeft" align="right" valign="top"><a id="a1f9656c1bf1c2baabc26bd1a43c060c2" name="a1f9656c1bf1c2baabc26bd1a43c060c2"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>Contains</b> (const <a class="el" href="../../dd/d79/classxii_bounding_sphere_template.html">xiiBoundingSphereTemplate</a> &amp;rhs) const</td></tr>
+<tr class="memdesc:a1f9656c1bf1c2baabc26bd1a43c060c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether the other sphere is completely inside this sphere. <br /></td></tr>
+<tr class="separator:a1f9656c1bf1c2baabc26bd1a43c060c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71508b015ef85d00d9d828aab4d6b07d" id="r_a71508b015ef85d00d9d828aab4d6b07d"><td class="memItemLeft" align="right" valign="top"><a id="a71508b015ef85d00d9d828aab4d6b07d" name="a71508b015ef85d00d9d828aab4d6b07d"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>Contains</b> (const <a class="el" href="../../d2/dd6/classxii_bounding_box_template.html">xiiBoundingBoxTemplate</a>&lt; Type &gt; &amp;rhs) const</td></tr>
+<tr class="memdesc:a71508b015ef85d00d9d828aab4d6b07d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether the given box is completely inside this sphere. <br /></td></tr>
+<tr class="separator:a71508b015ef85d00d9d828aab4d6b07d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aefef38c6ad5ce13dfc1a304d7a5ae739" id="r_aefef38c6ad5ce13dfc1a304d7a5ae739"><td class="memItemLeft" align="right" valign="top"><a id="aefef38c6ad5ce13dfc1a304d7a5ae739" name="aefef38c6ad5ce13dfc1a304d7a5ae739"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>Overlaps</b> (const <a class="el" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3Template</a>&lt; Type &gt; *pPoints, xiiUInt32 uiNumPoints, xiiUInt32 uiStride=sizeof(<a class="el" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3Template</a>&lt; Type &gt;)) const</td></tr>
+<tr class="memdesc:aefef38c6ad5ce13dfc1a304d7a5ae739"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether any of the given points is inside the sphere. <br /></td></tr>
+<tr class="separator:aefef38c6ad5ce13dfc1a304d7a5ae739"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa978b09e239e830d9f52f81d1a3fff0b" id="r_aa978b09e239e830d9f52f81d1a3fff0b"><td class="memItemLeft" align="right" valign="top"><a id="aa978b09e239e830d9f52f81d1a3fff0b" name="aa978b09e239e830d9f52f81d1a3fff0b"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>Overlaps</b> (const <a class="el" href="../../dd/d79/classxii_bounding_sphere_template.html">xiiBoundingSphereTemplate</a> &amp;rhs) const</td></tr>
+<tr class="memdesc:aa978b09e239e830d9f52f81d1a3fff0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether the two objects overlap. <br /></td></tr>
+<tr class="separator:aa978b09e239e830d9f52f81d1a3fff0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8252e89c4a9b9123fc3b1d65f66753e1" id="r_a8252e89c4a9b9123fc3b1d65f66753e1"><td class="memItemLeft" align="right" valign="top"><a id="a8252e89c4a9b9123fc3b1d65f66753e1" name="a8252e89c4a9b9123fc3b1d65f66753e1"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>Overlaps</b> (const <a class="el" href="../../d2/dd6/classxii_bounding_box_template.html">xiiBoundingBoxTemplate</a>&lt; Type &gt; &amp;rhs) const</td></tr>
+<tr class="memdesc:a8252e89c4a9b9123fc3b1d65f66753e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether the two objects overlap. <br /></td></tr>
+<tr class="separator:a8252e89c4a9b9123fc3b1d65f66753e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3510c2857accc8db2eb8829d4e38f85" id="r_af3510c2857accc8db2eb8829d4e38f85"><td class="memItemLeft" align="right" valign="top"><a id="af3510c2857accc8db2eb8829d4e38f85" name="af3510c2857accc8db2eb8829d4e38f85"></a>
+const <a class="el" href="../../d2/dd6/classxii_bounding_box_template.html">xiiBoundingBoxTemplate</a>&lt; Type &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetBoundingBox</b> () const</td></tr>
+<tr class="memdesc:af3510c2857accc8db2eb8829d4e38f85"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a bounding box that encloses this sphere. <br /></td></tr>
+<tr class="separator:af3510c2857accc8db2eb8829d4e38f85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0e5e3692952a90c02094170ef0c9af9" id="r_ae0e5e3692952a90c02094170ef0c9af9"><td class="memItemLeft" align="right" valign="top"><a id="ae0e5e3692952a90c02094170ef0c9af9" name="ae0e5e3692952a90c02094170ef0c9af9"></a>
+const <a class="el" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3Template</a>&lt; Type &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetClampedPoint</b> (const <a class="el" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3Template</a>&lt; Type &gt; &amp;vPoint)</td></tr>
+<tr class="memdesc:ae0e5e3692952a90c02094170ef0c9af9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clamps the given position to the volume of the sphere. The resulting point will always be inside the sphere, but have the closest distance to the original point. <br /></td></tr>
+<tr class="separator:ae0e5e3692952a90c02094170ef0c9af9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae306aa33ed2e7328d3ec737e24a8e3d4" id="r_ae306aa33ed2e7328d3ec737e24a8e3d4"><td class="memItemLeft" align="right" valign="top"><a id="ae306aa33ed2e7328d3ec737e24a8e3d4" name="ae306aa33ed2e7328d3ec737e24a8e3d4"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>GetRayIntersection</b> (const <a class="el" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3Template</a>&lt; Type &gt; &amp;vRayStartPos, const <a class="el" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3Template</a>&lt; Type &gt; &amp;vRayDir, Type *out_pIntersectionDistance=nullptr, <a class="el" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3Template</a>&lt; Type &gt; *out_pIntersection=nullptr) const</td></tr>
+<tr class="memdesc:ae306aa33ed2e7328d3ec737e24a8e3d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the intersection of a ray with this sphere. Returns true if there was an intersection. May optionally return the intersection time and position. The ray's direction must be normalized. The function will also return true, if the ray already starts inside the sphere, but it will still compute the intersection with the surface of the sphere. <br /></td></tr>
+<tr class="separator:ae306aa33ed2e7328d3ec737e24a8e3d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a909963bb233c3de64014635759bfa08d" id="r_a909963bb233c3de64014635759bfa08d"><td class="memItemLeft" align="right" valign="top"><a id="a909963bb233c3de64014635759bfa08d" name="a909963bb233c3de64014635759bfa08d"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>GetLineSegmentIntersection</b> (const <a class="el" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3Template</a>&lt; Type &gt; &amp;vLineStartPos, const <a class="el" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3Template</a>&lt; Type &gt; &amp;vLineEndPos, Type *out_pHitFraction=nullptr, <a class="el" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3Template</a>&lt; Type &gt; *out_pIntersection=nullptr) const</td></tr>
+<tr class="memdesc:a909963bb233c3de64014635759bfa08d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the line segment intersects the sphere. <br /></td></tr>
+<tr class="separator:a909963bb233c3de64014635759bfa08d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a9773226063d510968bf344fe38617536" id="r_a9773226063d510968bf344fe38617536"><td class="memItemLeft" align="right" valign="top"><a id="a9773226063d510968bf344fe38617536" name="a9773226063d510968bf344fe38617536"></a>
+static <a class="el" href="../../dd/d79/classxii_bounding_sphere_template.html">xiiBoundingSphereTemplate</a>&lt; Type &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>MakeZero</b> ()</td></tr>
+<tr class="memdesc:a9773226063d510968bf344fe38617536"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a sphere at the origin with radius zero. <br /></td></tr>
+<tr class="separator:a9773226063d510968bf344fe38617536"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a252ae46c7158d8db200676b8b2b8f0bb" id="r_a252ae46c7158d8db200676b8b2b8f0bb"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../dd/d79/classxii_bounding_sphere_template.html">xiiBoundingSphereTemplate</a>&lt; Type &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a252ae46c7158d8db200676b8b2b8f0bb">MakeInvalid</a> (const <a class="el" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3Template</a>&lt; Type &gt; &amp;vCenter=<a class="el" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3Template</a>&lt; Type &gt;<a class="el" href="#a9773226063d510968bf344fe38617536">::MakeZero</a>())</td></tr>
+<tr class="memdesc:a252ae46c7158d8db200676b8b2b8f0bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an 'invalid' sphere, with its center at the given position and a negative radius.  <br /></td></tr>
+<tr class="separator:a252ae46c7158d8db200676b8b2b8f0bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b856cc63f13f290748c82a9bc94b43b" id="r_a3b856cc63f13f290748c82a9bc94b43b"><td class="memItemLeft" align="right" valign="top"><a id="a3b856cc63f13f290748c82a9bc94b43b" name="a3b856cc63f13f290748c82a9bc94b43b"></a>
+static <a class="el" href="../../dd/d79/classxii_bounding_sphere_template.html">xiiBoundingSphereTemplate</a>&lt; Type &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>MakeFromCenterAndRadius</b> (const <a class="el" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3Template</a>&lt; Type &gt; &amp;vCenter, Type fRadius)</td></tr>
+<tr class="memdesc:a3b856cc63f13f290748c82a9bc94b43b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a sphere with the provided center and radius. <br /></td></tr>
+<tr class="separator:a3b856cc63f13f290748c82a9bc94b43b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d596a2371914b0e06a3af0663618fff" id="r_a0d596a2371914b0e06a3af0663618fff"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../dd/d79/classxii_bounding_sphere_template.html">xiiBoundingSphereTemplate</a>&lt; Type &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0d596a2371914b0e06a3af0663618fff">MakeFromPoints</a> (const <a class="el" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3Template</a>&lt; Type &gt; *pPoints, xiiUInt32 uiNumPoints, xiiUInt32 uiStride=sizeof(<a class="el" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3Template</a>&lt; Type &gt;))</td></tr>
+<tr class="memdesc:a0d596a2371914b0e06a3af0663618fff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a bounding sphere around the provided points.  <br /></td></tr>
+<tr class="separator:a0d596a2371914b0e06a3af0663618fff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:a74494c20e1627f8e29a807f60c98f70c" id="r_a74494c20e1627f8e29a807f60c98f70c"><td class="memItemLeft" align="right" valign="top"><a id="a74494c20e1627f8e29a807f60c98f70c" name="a74494c20e1627f8e29a807f60c98f70c"></a>
+<a class="el" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3Template</a>&lt; Type &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_vCenter</b></td></tr>
+<tr class="separator:a74494c20e1627f8e29a807f60c98f70c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb01c1832d48db9a1633dbab1c11e313" id="r_acb01c1832d48db9a1633dbab1c11e313"><td class="memItemLeft" align="right" valign="top"><a id="acb01c1832d48db9a1633dbab1c11e313" name="acb01c1832d48db9a1633dbab1c11e313"></a>
+Type&#160;</td><td class="memItemRight" valign="bottom"><b>m_fRadius</b></td></tr>
+<tr class="separator:acb01c1832d48db9a1633dbab1c11e313"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><div class="compoundTemplParams">template&lt;typename Type&gt;<br />
+class xiiBoundingSphereTemplate&lt; Type &gt;</div><p>An implementation of a bounding sphere. </p>
+<p>This class allows to construct and manipulate bounding spheres. It also provides a large set of functions to do overlap queries, ray casts and other useful operations. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a0d596a2371914b0e06a3af0663618fff" name="a0d596a2371914b0e06a3af0663618fff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d596a2371914b0e06a3af0663618fff">&#9670;&#160;</a></span>MakeFromPoints()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Type &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">XII_FORCE_INLINE <a class="el" href="../../dd/d79/classxii_bounding_sphere_template.html">xiiBoundingSphereTemplate</a>&lt; Type &gt; <a class="el" href="../../dd/d79/classxii_bounding_sphere_template.html">xiiBoundingSphereTemplate</a>&lt; Type &gt;::MakeFromPoints </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3Template</a>&lt; Type &gt; *</td>          <td class="paramname"><span class="paramname"><em>pPoints</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">xiiUInt32</td>          <td class="paramname"><span class="paramname"><em>uiNumPoints</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">xiiUInt32</td>          <td class="paramname"><span class="paramname"><em>uiStride</em></span><span class="paramdefsep"> = </span><span class="paramdefval">sizeof(<a class="el" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3Template</a>&lt;Type&gt;)</span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">nodiscard</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Creates a bounding sphere around the provided points. </p>
+<p>The center of the sphere will be at the 'center of mass' of all the points, and the radius will be the distance to the farthest point from there. </p>
+
+</div>
+</div>
+<a id="a252ae46c7158d8db200676b8b2b8f0bb" name="a252ae46c7158d8db200676b8b2b8f0bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a252ae46c7158d8db200676b8b2b8f0bb">&#9670;&#160;</a></span>MakeInvalid()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Type &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">XII_FORCE_INLINE <a class="el" href="../../dd/d79/classxii_bounding_sphere_template.html">xiiBoundingSphereTemplate</a>&lt; Type &gt; <a class="el" href="../../dd/d79/classxii_bounding_sphere_template.html">xiiBoundingSphereTemplate</a>&lt; Type &gt;::MakeInvalid </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3Template</a>&lt; Type &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>vCenter</em></span><span class="paramdefsep"> = </span><span class="paramdefval"><a class="el" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3Template</a>&lt;Type&gt;<a class="el" href="#a9773226063d510968bf344fe38617536">::MakeZero</a>()</span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">nodiscard</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Creates an 'invalid' sphere, with its center at the given position and a negative radius. </p>
+<p>Such a sphere can be made 'valid' through <a class="el" href="#a80193ef1d62c8c60e85f0040e7bc8fd3" title="Increases the sphere&#39;s radius to include this point. Does NOT change its position,...">ExpandToInclude()</a>, but be aware that the originally provided center position will always be part of the sphere. </p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li>/home/runner/work/XII/XII/Source/Engine/Foundation/Math/<a class="el" href="../../d6/d7f/_bounding_sphere_8h_source.html">BoundingSphere.h</a></li>
+<li>/home/runner/work/XII/XII/Source/Engine/Foundation/Math/Implementation/<a class="el" href="../../da/d5c/_all_classes__inl_8h_source.html">AllClasses_inl.h</a></li>
+<li>/home/runner/work/XII/XII/Source/Engine/Foundation/Math/Implementation/<a class="el" href="../../d9/d6f/_bounding_sphere__inl_8h_source.html">BoundingSphere_inl.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../dd/d79/classxii_bounding_sphere_template.html">xiiBoundingSphereTemplate</a></li>
+    <li class="footer">Generated on Mon Jul 1 2024 23:53:13 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,486 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.11.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<!-- BEGIN opengraph metadata -->
+<meta property="og:title" content="XII" />
+<meta property="og:image" content="../../XII-Logo.png" />
+<meta property="og:description" content="An advanced high-performance simulation engine." />
+<meta property="og:url" content="https://www.xiitechnologies.com" />
+<!-- END opengraph metadata -->
+<!-- BEGIN twitter metadata -->
+<meta name="twitter:image:src" content="../../XII-Logo.png" />
+<meta name="twitter:title" content="XII" />
+<meta name="twitter:description" content="An advanced high-performance simulation engine." />
+<!-- END twitter metadata -->
+<title>XII: xiiMemoryStreamContainerWrapperStorage&lt; CONTAINER &gt; Class Template Reference</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link rel="icon" type="image/svg+xml" href="logo.drawio.svg"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="../../toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../custom.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<a href="https://github.com/jothepro/doxygen-awesome-css" class="github-corner" title="View source on GitHub" target="_blank" rel="noopener noreferrer">
+    <svg viewBox="0 0 250 250" width="40" height="40" style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+    <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="../../XII-Logo.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">XII
+   &#160;<span id="projectnumber">1.0.0</span>
+   </div>
+   <div id="projectbrief">A high-performance simulation engine.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(1); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.html','Search',true);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('dd/d1a/classxii_memory_stream_container_wrapper_storage.html','../../'); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="../../d6/d90/classxii_memory_stream_container_wrapper_storage-members.html">List of all members</a>  </div>
+  <div class="headertitle"><div class="title">xiiMemoryStreamContainerWrapperStorage&lt; CONTAINER &gt; Class Template Reference</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Wrapper around an existing container to implement <a class="el" href="../../d3/daa/classxii_memory_stream_storage_interface.html" title="Instances of this class act as storage for memory streams.">xiiMemoryStreamStorageInterface</a>.  
+ <a href="#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="../../db/de0/_memory_stream_8h_source.html">MemoryStream.h</a>&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for xiiMemoryStreamContainerWrapperStorage&lt; CONTAINER &gt;:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../dc/da4/classxii_memory_stream_container_wrapper_storage__inherit__graph.svg" width="258" height="124"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">legend</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:ac24405907a180f889c43d4cce154d9d4" id="r_ac24405907a180f889c43d4cce154d9d4"><td class="memItemLeft" align="right" valign="top"><a id="ac24405907a180f889c43d4cce154d9d4" name="ac24405907a180f889c43d4cce154d9d4"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>xiiMemoryStreamContainerWrapperStorage</b> (CONTAINER *pContainer)</td></tr>
+<tr class="separator:ac24405907a180f889c43d4cce154d9d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af332e1530e2c8cf302c3fa7ee50546d0" id="r_af332e1530e2c8cf302c3fa7ee50546d0"><td class="memItemLeft" align="right" valign="top">virtual xiiUInt64&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af332e1530e2c8cf302c3fa7ee50546d0">GetStorageSize64</a> () const override</td></tr>
+<tr class="memdesc:af332e1530e2c8cf302c3fa7ee50546d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of bytes that are currently stored.  <br /></td></tr>
+<tr class="separator:af332e1530e2c8cf302c3fa7ee50546d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a982199aab03dd84e3f46efcab0d2060e" id="r_a982199aab03dd84e3f46efcab0d2060e"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a982199aab03dd84e3f46efcab0d2060e">Clear</a> () override</td></tr>
+<tr class="memdesc:a982199aab03dd84e3f46efcab0d2060e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clears the entire storage. All readers and writers must be reset to start from the beginning again.  <br /></td></tr>
+<tr class="separator:a982199aab03dd84e3f46efcab0d2060e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c1b68427e9cfad7693fbcbebada71b5" id="r_a7c1b68427e9cfad7693fbcbebada71b5"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7c1b68427e9cfad7693fbcbebada71b5">Compact</a> () override</td></tr>
+<tr class="memdesc:a7c1b68427e9cfad7693fbcbebada71b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deallocates any allocated memory that's not needed to hold the currently stored data.  <br /></td></tr>
+<tr class="separator:a7c1b68427e9cfad7693fbcbebada71b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca25b0bcef1997e7229b39486e5a1db2" id="r_aca25b0bcef1997e7229b39486e5a1db2"><td class="memItemLeft" align="right" valign="top">virtual xiiUInt64&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aca25b0bcef1997e7229b39486e5a1db2">GetHeapMemoryUsage</a> () const override</td></tr>
+<tr class="memdesc:aca25b0bcef1997e7229b39486e5a1db2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the amount of bytes that are currently allocated on the heap.  <br /></td></tr>
+<tr class="separator:aca25b0bcef1997e7229b39486e5a1db2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9bad6f05246a6e839a276b41b1a56cc8" id="r_a9bad6f05246a6e839a276b41b1a56cc8"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9bad6f05246a6e839a276b41b1a56cc8">Reserve</a> (xiiUInt64 uiBytes) override</td></tr>
+<tr class="memdesc:a9bad6f05246a6e839a276b41b1a56cc8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reserves N bytes of storage.  <br /></td></tr>
+<tr class="separator:a9bad6f05246a6e839a276b41b1a56cc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1122b573d0a3369b3974efdf3c97d01" id="r_af1122b573d0a3369b3974efdf3c97d01"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af1122b573d0a3369b3974efdf3c97d01">CopyToStream</a> (<a class="el" href="../../d0/d18/classxii_stream_writer.html">xiiStreamWriter</a> &amp;ref_stream) const override</td></tr>
+<tr class="memdesc:af1122b573d0a3369b3974efdf3c97d01"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes the entire content of the storage to the provided stream.  <br /></td></tr>
+<tr class="separator:af1122b573d0a3369b3974efdf3c97d01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d39bbcdfe0c9eb157ee1eda015a3ec4" id="r_a7d39bbcdfe0c9eb157ee1eda015a3ec4"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d0/d60/classxii_array_ptr.html">xiiArrayPtr</a>&lt; const xiiUInt8 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7d39bbcdfe0c9eb157ee1eda015a3ec4">GetContiguousMemoryRange</a> (xiiUInt64 uiStartByte) const override</td></tr>
+<tr class="memdesc:a7d39bbcdfe0c9eb157ee1eda015a3ec4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a read-only <a class="el" href="../../d0/d60/classxii_array_ptr.html" title="This class encapsulates an array and it&#39;s size. It is recommended to use this class instead of plain ...">xiiArrayPtr</a> that represents a contiguous area in memory which starts at the given first byte.  <br /></td></tr>
+<tr class="separator:a7d39bbcdfe0c9eb157ee1eda015a3ec4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea2c49a6f70a3304676cc3aab2ec5c3e" id="r_aea2c49a6f70a3304676cc3aab2ec5c3e"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d0/d60/classxii_array_ptr.html">xiiArrayPtr</a>&lt; xiiUInt8 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aea2c49a6f70a3304676cc3aab2ec5c3e">GetContiguousMemoryRange</a> (xiiUInt64 uiStartByte) override</td></tr>
+<tr class="memdesc:aea2c49a6f70a3304676cc3aab2ec5c3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Non-const overload of <a class="el" href="#a7d39bbcdfe0c9eb157ee1eda015a3ec4" title="Returns a read-only xiiArrayPtr that represents a contiguous area in memory which starts at the given...">GetContiguousMemoryRange()</a>.  <br /></td></tr>
+<tr class="separator:aea2c49a6f70a3304676cc3aab2ec5c3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classxii_memory_stream_storage_interface"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_classxii_memory_stream_storage_interface')"><img src="../../closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="../../d3/daa/classxii_memory_stream_storage_interface.html">xiiMemoryStreamStorageInterface</a></td></tr>
+<tr class="memitem:af5b0c63688c9d06cc9e18e74d9ba2697 inherit pub_methods_classxii_memory_stream_storage_interface" id="r_af5b0c63688c9d06cc9e18e74d9ba2697"><td class="memItemLeft" align="right" valign="top">
+xiiUInt32&#160;</td><td class="memItemRight" valign="bottom"><b>GetStorageSize32</b> () const</td></tr>
+<tr class="memdesc:af5b0c63688c9d06cc9e18e74d9ba2697 inherit pub_methods_classxii_memory_stream_storage_interface"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of bytes that are currently stored. Asserts that the stored amount is less than 4GB. <br /></td></tr>
+<tr class="separator:af5b0c63688c9d06cc9e18e74d9ba2697 inherit pub_methods_classxii_memory_stream_storage_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a5cf499f2dd9001a28f4c6eb6bb6a75 inherit pub_methods_classxii_memory_stream_storage_interface" id="r_a6a5cf499f2dd9001a28f4c6eb6bb6a75"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ReadAll</b> (<a class="el" href="../../d4/d5e/classxii_stream_reader.html">xiiStreamReader</a> &amp;ref_stream, xiiUInt64 uiMaxBytes=<a class="el" href="../../d1/d37/namespacexii_math.html#a6bbce1588f70c91d6cad87e82a0238c1">xiiMath::MaxValue</a>&lt; xiiUInt64 &gt;())</td></tr>
+<tr class="memdesc:a6a5cf499f2dd9001a28f4c6eb6bb6a75 inherit pub_methods_classxii_memory_stream_storage_interface"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies all data from the given stream into the storage. <br /></td></tr>
+<tr class="separator:a6a5cf499f2dd9001a28f4c6eb6bb6a75 inherit pub_methods_classxii_memory_stream_storage_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><div class="compoundTemplParams">template&lt;typename CONTAINER&gt;<br />
+class xiiMemoryStreamContainerWrapperStorage&lt; CONTAINER &gt;</div><p>Wrapper around an existing container to implement <a class="el" href="../../d3/daa/classxii_memory_stream_storage_interface.html" title="Instances of this class act as storage for memory streams.">xiiMemoryStreamStorageInterface</a>. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a982199aab03dd84e3f46efcab0d2060e" name="a982199aab03dd84e3f46efcab0d2060e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a982199aab03dd84e3f46efcab0d2060e">&#9670;&#160;</a></span>Clear()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename CONTAINER &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void <a class="el" href="../../dd/d1a/classxii_memory_stream_container_wrapper_storage.html">xiiMemoryStreamContainerWrapperStorage</a>&lt; CONTAINER &gt;::Clear </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Clears the entire storage. All readers and writers must be reset to start from the beginning again. </p>
+
+<p>Implements <a class="el" href="../../d3/daa/classxii_memory_stream_storage_interface.html#a17f28568d6ced52e3383f992ae4e7e9f">xiiMemoryStreamStorageInterface</a>.</p>
+
+</div>
+</div>
+<a id="a7c1b68427e9cfad7693fbcbebada71b5" name="a7c1b68427e9cfad7693fbcbebada71b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c1b68427e9cfad7693fbcbebada71b5">&#9670;&#160;</a></span>Compact()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename CONTAINER &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void <a class="el" href="../../dd/d1a/classxii_memory_stream_container_wrapper_storage.html">xiiMemoryStreamContainerWrapperStorage</a>&lt; CONTAINER &gt;::Compact </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Deallocates any allocated memory that's not needed to hold the currently stored data. </p>
+
+<p>Implements <a class="el" href="../../d3/daa/classxii_memory_stream_storage_interface.html#a2b6d10d0a7f7cf4ef8980c5d02f44786">xiiMemoryStreamStorageInterface</a>.</p>
+
+</div>
+</div>
+<a id="af1122b573d0a3369b3974efdf3c97d01" name="af1122b573d0a3369b3974efdf3c97d01"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af1122b573d0a3369b3974efdf3c97d01">&#9670;&#160;</a></span>CopyToStream()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename CONTAINER &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a> <a class="el" href="../../dd/d1a/classxii_memory_stream_container_wrapper_storage.html">xiiMemoryStreamContainerWrapperStorage</a>&lt; CONTAINER &gt;::CopyToStream </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d0/d18/classxii_stream_writer.html">xiiStreamWriter</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>ref_stream</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Writes the entire content of the storage to the provided stream. </p>
+
+<p>Implements <a class="el" href="../../d3/daa/classxii_memory_stream_storage_interface.html#a45961434325bd79e88d32522c82d9767">xiiMemoryStreamStorageInterface</a>.</p>
+
+</div>
+</div>
+<a id="a7d39bbcdfe0c9eb157ee1eda015a3ec4" name="a7d39bbcdfe0c9eb157ee1eda015a3ec4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d39bbcdfe0c9eb157ee1eda015a3ec4">&#9670;&#160;</a></span>GetContiguousMemoryRange() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename CONTAINER &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="../../d0/d60/classxii_array_ptr.html">xiiArrayPtr</a>&lt; const xiiUInt8 &gt; <a class="el" href="../../dd/d1a/classxii_memory_stream_container_wrapper_storage.html">xiiMemoryStreamContainerWrapperStorage</a>&lt; CONTAINER &gt;::GetContiguousMemoryRange </td>
+          <td>(</td>
+          <td class="paramtype">xiiUInt64</td>          <td class="paramname"><span class="paramname"><em>uiStartByte</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns a read-only <a class="el" href="../../d0/d60/classxii_array_ptr.html" title="This class encapsulates an array and it&#39;s size. It is recommended to use this class instead of plain ...">xiiArrayPtr</a> that represents a contiguous area in memory which starts at the given first byte. </p>
+<p>This piece of memory can be read/copied/modified in one operation (memcpy etc). The next byte after this slice may be located somewhere entirely different in memory. Call <a class="el" href="#a7d39bbcdfe0c9eb157ee1eda015a3ec4" title="Returns a read-only xiiArrayPtr that represents a contiguous area in memory which starts at the given...">GetContiguousMemoryRange()</a> again with the next byte after this range, to get access to the next memory area.</p>
+<p>Chunks may differ in size. </p>
+
+<p>Implements <a class="el" href="../../d3/daa/classxii_memory_stream_storage_interface.html#ab895ba4269c0b4eb43ef4b2e600668fa">xiiMemoryStreamStorageInterface</a>.</p>
+
+</div>
+</div>
+<a id="aea2c49a6f70a3304676cc3aab2ec5c3e" name="aea2c49a6f70a3304676cc3aab2ec5c3e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea2c49a6f70a3304676cc3aab2ec5c3e">&#9670;&#160;</a></span>GetContiguousMemoryRange() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename CONTAINER &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="../../d0/d60/classxii_array_ptr.html">xiiArrayPtr</a>&lt; xiiUInt8 &gt; <a class="el" href="../../dd/d1a/classxii_memory_stream_container_wrapper_storage.html">xiiMemoryStreamContainerWrapperStorage</a>&lt; CONTAINER &gt;::GetContiguousMemoryRange </td>
+          <td>(</td>
+          <td class="paramtype">xiiUInt64</td>          <td class="paramname"><span class="paramname"><em>uiStartByte</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Non-const overload of <a class="el" href="#a7d39bbcdfe0c9eb157ee1eda015a3ec4" title="Returns a read-only xiiArrayPtr that represents a contiguous area in memory which starts at the given...">GetContiguousMemoryRange()</a>. </p>
+
+<p>Implements <a class="el" href="../../d3/daa/classxii_memory_stream_storage_interface.html#aa2745e588aaf9a7f64d1600654c773d1">xiiMemoryStreamStorageInterface</a>.</p>
+
+</div>
+</div>
+<a id="aca25b0bcef1997e7229b39486e5a1db2" name="aca25b0bcef1997e7229b39486e5a1db2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca25b0bcef1997e7229b39486e5a1db2">&#9670;&#160;</a></span>GetHeapMemoryUsage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename CONTAINER &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual xiiUInt64 <a class="el" href="../../dd/d1a/classxii_memory_stream_container_wrapper_storage.html">xiiMemoryStreamContainerWrapperStorage</a>&lt; CONTAINER &gt;::GetHeapMemoryUsage </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the amount of bytes that are currently allocated on the heap. </p>
+
+<p>Implements <a class="el" href="../../d3/daa/classxii_memory_stream_storage_interface.html#a100e0aef1b36bcc858c22bcb5aa31388">xiiMemoryStreamStorageInterface</a>.</p>
+
+</div>
+</div>
+<a id="af332e1530e2c8cf302c3fa7ee50546d0" name="af332e1530e2c8cf302c3fa7ee50546d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af332e1530e2c8cf302c3fa7ee50546d0">&#9670;&#160;</a></span>GetStorageSize64()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename CONTAINER &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual xiiUInt64 <a class="el" href="../../dd/d1a/classxii_memory_stream_container_wrapper_storage.html">xiiMemoryStreamContainerWrapperStorage</a>&lt; CONTAINER &gt;::GetStorageSize64 </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the number of bytes that are currently stored. </p>
+
+<p>Implements <a class="el" href="../../d3/daa/classxii_memory_stream_storage_interface.html#a5ccb45f1fcc4479527bf1b84e3ef9b6b">xiiMemoryStreamStorageInterface</a>.</p>
+
+</div>
+</div>
+<a id="a9bad6f05246a6e839a276b41b1a56cc8" name="a9bad6f05246a6e839a276b41b1a56cc8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9bad6f05246a6e839a276b41b1a56cc8">&#9670;&#160;</a></span>Reserve()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename CONTAINER &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void <a class="el" href="../../dd/d1a/classxii_memory_stream_container_wrapper_storage.html">xiiMemoryStreamContainerWrapperStorage</a>&lt; CONTAINER &gt;::Reserve </td>
+          <td>(</td>
+          <td class="paramtype">xiiUInt64</td>          <td class="paramname"><span class="paramname"><em>uiBytes</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reserves N bytes of storage. </p>
+
+<p>Implements <a class="el" href="../../d3/daa/classxii_memory_stream_storage_interface.html#acc41ddad201402651d597a29082a7397">xiiMemoryStreamStorageInterface</a>.</p>
+
+</div>
+</div>
+<a id="a185f3caa31aa9970151f17be939c288a" name="a185f3caa31aa9970151f17be939c288a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a185f3caa31aa9970151f17be939c288a">&#9670;&#160;</a></span>SetInternalSize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename CONTAINER &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void <a class="el" href="../../dd/d1a/classxii_memory_stream_container_wrapper_storage.html">xiiMemoryStreamContainerWrapperStorage</a>&lt; CONTAINER &gt;::SetInternalSize </td>
+          <td>(</td>
+          <td class="paramtype">xiiUInt64</td>          <td class="paramname"><span class="paramname"><em>uiSize</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="../../d3/daa/classxii_memory_stream_storage_interface.html">xiiMemoryStreamStorageInterface</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li>/home/runner/work/XII/XII/Source/Engine/Foundation/IO/<a class="el" href="../../db/de0/_memory_stream_8h_source.html">MemoryStream.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../dd/d1a/classxii_memory_stream_container_wrapper_storage.html">xiiMemoryStreamContainerWrapperStorage</a></li>
+    <li class="footer">Generated on Mon Jul 1 2024 23:53:15 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+  </ul>
+</div>
+</body>
+</html>

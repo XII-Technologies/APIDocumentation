@@ -1,0 +1,269 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.11.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<!-- BEGIN opengraph metadata -->
+<meta property="og:title" content="XII" />
+<meta property="og:image" content="../../XII-Logo.png" />
+<meta property="og:description" content="An advanced high-performance simulation engine." />
+<meta property="og:url" content="https://www.xiitechnologies.com" />
+<!-- END opengraph metadata -->
+<!-- BEGIN twitter metadata -->
+<meta name="twitter:image:src" content="../../XII-Logo.png" />
+<meta name="twitter:title" content="XII" />
+<meta name="twitter:description" content="An advanced high-performance simulation engine." />
+<!-- END twitter metadata -->
+<title>XII: xiiResourceManagerWorkerDataLoad Class Reference</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link rel="icon" type="image/svg+xml" href="logo.drawio.svg"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="../../toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../custom.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<a href="https://github.com/jothepro/doxygen-awesome-css" class="github-corner" title="View source on GitHub" target="_blank" rel="noopener noreferrer">
+    <svg viewBox="0 0 250 250" width="40" height="40" style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+    <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="../../XII-Logo.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">XII
+   &#160;<span id="projectnumber">1.0.0</span>
+   </div>
+   <div id="projectbrief">A high-performance simulation engine.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(1); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.html','Search',true);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('d1/d0e/classxii_resource_manager_worker_data_load.html','../../'); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#friends">Friends</a> &#124;
+<a href="../../d3/d35/classxii_resource_manager_worker_data_load-members.html">List of all members</a>  </div>
+  <div class="headertitle"><div class="title">xiiResourceManagerWorkerDataLoad Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>[internal] Worker task for loading resources (typically from disk).  
+ <a href="#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="../../db/d79/_worker_tasks_8h_source.html">WorkerTasks.h</a>&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for xiiResourceManagerWorkerDataLoad:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d5/d9c/classxii_resource_manager_worker_data_load__inherit__graph.svg" width="211" height="271"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">legend</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a90f43cad405e64431fa8ac5d45f2b50d" id="r_a90f43cad405e64431fa8ac5d45f2b50d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a90f43cad405e64431fa8ac5d45f2b50d">Execute</a> () override</td></tr>
+<tr class="memdesc:a90f43cad405e64431fa8ac5d45f2b50d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Override this to implement the task's supposed functionality.  <br /></td></tr>
+<tr class="separator:a90f43cad405e64431fa8ac5d45f2b50d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
+Friends</h2></td></tr>
+<tr class="memitem:aad5c1fd97c86fe727580bb720bb8c5ff" id="r_aad5c1fd97c86fe727580bb720bb8c5ff"><td class="memItemLeft" align="right" valign="top"><a id="aad5c1fd97c86fe727580bb720bb8c5ff" name="aad5c1fd97c86fe727580bb720bb8c5ff"></a>
+class&#160;</td><td class="memItemRight" valign="bottom"><b>xiiResourceManager</b></td></tr>
+<tr class="separator:aad5c1fd97c86fe727580bb720bb8c5ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a555a617cc523c0890c918954b196a840" id="r_a555a617cc523c0890c918954b196a840"><td class="memItemLeft" align="right" valign="top"><a id="a555a617cc523c0890c918954b196a840" name="a555a617cc523c0890c918954b196a840"></a>
+class&#160;</td><td class="memItemRight" valign="bottom"><b>xiiResourceManagerState</b></td></tr>
+<tr class="separator:a555a617cc523c0890c918954b196a840"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pub_methods_classxii_task"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_classxii_task')"><img src="../../closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="../../d3/d9b/classxii_task.html">xiiTask</a></td></tr>
+<tr class="memitem:ae03e7f23e33858f7ab2e687d3d4ee265 inherit pub_methods_classxii_task" id="r_ae03e7f23e33858f7ab2e687d3d4ee265"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d9b/classxii_task.html#ae03e7f23e33858f7ab2e687d3d4ee265">ConfigureTask</a> (<a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sTaskName, xiiTaskNesting nestingMode, <a class="el" href="../../dc/d84/structxii_delegate.html">xiiOnTaskFinishedCallback</a> callback=<a class="el" href="../../dc/d84/structxii_delegate.html">xiiOnTaskFinishedCallback</a>())</td></tr>
+<tr class="memdesc:ae03e7f23e33858f7ab2e687d3d4ee265 inherit pub_methods_classxii_task"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the most important task properties. This has to be done before the task is added to a task group for the first time.  <br /></td></tr>
+<tr class="separator:ae03e7f23e33858f7ab2e687d3d4ee265 inherit pub_methods_classxii_task"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6fd03e64c6b45d06433def2d14b759b inherit pub_methods_classxii_task" id="r_aa6fd03e64c6b45d06433def2d14b759b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d9b/classxii_task.html#aa6fd03e64c6b45d06433def2d14b759b">SetMultiplicity</a> (xiiUInt32 uiMultiplicity)</td></tr>
+<tr class="memdesc:aa6fd03e64c6b45d06433def2d14b759b inherit pub_methods_classxii_task"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes the multiplicity of this task.  <br /></td></tr>
+<tr class="separator:aa6fd03e64c6b45d06433def2d14b759b inherit pub_methods_classxii_task"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af549d5e2dace8b610deb700610daabdb inherit pub_methods_classxii_task" id="r_af549d5e2dace8b610deb700610daabdb"><td class="memItemLeft" align="right" valign="top">xiiUInt32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d9b/classxii_task.html#af549d5e2dace8b610deb700610daabdb">GetMultiplicity</a> () const</td></tr>
+<tr class="separator:af549d5e2dace8b610deb700610daabdb inherit pub_methods_classxii_task"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5bfaf2e965bc45fe5710ceb4aea4d0d1 inherit pub_methods_classxii_task" id="r_a5bfaf2e965bc45fe5710ceb4aea4d0d1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d9b/classxii_task.html#a5bfaf2e965bc45fe5710ceb4aea4d0d1">IsTaskFinished</a> () const</td></tr>
+<tr class="memdesc:a5bfaf2e965bc45fe5710ceb4aea4d0d1 inherit pub_methods_classxii_task"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether the task has been finished. This includes being canceled.  <br /></td></tr>
+<tr class="separator:a5bfaf2e965bc45fe5710ceb4aea4d0d1 inherit pub_methods_classxii_task"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34c951a3a9f72e4b5674aedeed5848a9 inherit pub_methods_classxii_task" id="r_a34c951a3a9f72e4b5674aedeed5848a9"><td class="memItemLeft" align="right" valign="top">
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>HasBeenCanceled</b> () const</td></tr>
+<tr class="memdesc:a34c951a3a9f72e4b5674aedeed5848a9 inherit pub_methods_classxii_task"><td class="mdescLeft">&#160;</td><td class="mdescRight">Can be used inside an overridden 'Execute' function to terminate execution prematurely. <br /></td></tr>
+<tr class="separator:a34c951a3a9f72e4b5674aedeed5848a9 inherit pub_methods_classxii_task"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classxii_ref_counted"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_classxii_ref_counted')"><img src="../../closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="../../d3/dd0/classxii_ref_counted.html">xiiRefCounted</a></td></tr>
+<tr class="memitem:a3a0e5c6ed7ac22eb6b7fd2454c641724 inherit pub_methods_classxii_ref_counted" id="r_a3a0e5c6ed7ac22eb6b7fd2454c641724"><td class="memItemLeft" align="right" valign="top">
+virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~xiiRefCounted</b> ()=default</td></tr>
+<tr class="memdesc:a3a0e5c6ed7ac22eb6b7fd2454c641724 inherit pub_methods_classxii_ref_counted"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a virtual destructor. <br /></td></tr>
+<tr class="separator:a3a0e5c6ed7ac22eb6b7fd2454c641724 inherit pub_methods_classxii_ref_counted"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classxii_ref_counting_impl"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_classxii_ref_counting_impl')"><img src="../../closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="../../d7/df4/classxii_ref_counting_impl.html">xiiRefCountingImpl</a></td></tr>
+<tr class="memitem:ab0609d4d40055d689e72fd792239b4b4 inherit pub_methods_classxii_ref_counting_impl" id="r_ab0609d4d40055d689e72fd792239b4b4"><td class="memItemLeft" align="right" valign="top">
+&#160;</td><td class="memItemRight" valign="bottom"><b>xiiRefCountingImpl</b> ()=default</td></tr>
+<tr class="memdesc:ab0609d4d40055d689e72fd792239b4b4 inherit pub_methods_classxii_ref_counting_impl"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor. <br /></td></tr>
+<tr class="separator:ab0609d4d40055d689e72fd792239b4b4 inherit pub_methods_classxii_ref_counting_impl"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9f56997f73ff0e780d1f5b4c7b47f49 inherit pub_methods_classxii_ref_counting_impl" id="r_ab9f56997f73ff0e780d1f5b4c7b47f49"><td class="memItemLeft" align="right" valign="top">
+&#160;</td><td class="memItemRight" valign="bottom"><b>xiiRefCountingImpl</b> (const <a class="el" href="../../d7/df4/classxii_ref_counting_impl.html">xiiRefCountingImpl</a> &amp;rhs)</td></tr>
+<tr class="separator:ab9f56997f73ff0e780d1f5b4c7b47f49 inherit pub_methods_classxii_ref_counting_impl"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2594133c630abd15739894ef67c38b7 inherit pub_methods_classxii_ref_counting_impl" id="r_ad2594133c630abd15739894ef67c38b7"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="../../d7/df4/classxii_ref_counting_impl.html">xiiRefCountingImpl</a> &amp;rhs)</td></tr>
+<tr class="separator:ad2594133c630abd15739894ef67c38b7 inherit pub_methods_classxii_ref_counting_impl"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af89a37294bfebe74f2f43c492d2c14c3 inherit pub_methods_classxii_ref_counting_impl" id="r_af89a37294bfebe74f2f43c492d2c14c3"><td class="memItemLeft" align="right" valign="top">
+xiiInt32&#160;</td><td class="memItemRight" valign="bottom"><b>AddRef</b> () const</td></tr>
+<tr class="memdesc:af89a37294bfebe74f2f43c492d2c14c3 inherit pub_methods_classxii_ref_counting_impl"><td class="mdescLeft">&#160;</td><td class="mdescRight">Increments the reference counter. Returns the new reference count. <br /></td></tr>
+<tr class="separator:af89a37294bfebe74f2f43c492d2c14c3 inherit pub_methods_classxii_ref_counting_impl"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2cef7cdc6931aad7337348db21f38c64 inherit pub_methods_classxii_ref_counting_impl" id="r_a2cef7cdc6931aad7337348db21f38c64"><td class="memItemLeft" align="right" valign="top">
+xiiInt32&#160;</td><td class="memItemRight" valign="bottom"><b>ReleaseRef</b> () const</td></tr>
+<tr class="memdesc:a2cef7cdc6931aad7337348db21f38c64 inherit pub_methods_classxii_ref_counting_impl"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decrements the reference counter. Returns the new reference count. <br /></td></tr>
+<tr class="separator:a2cef7cdc6931aad7337348db21f38c64 inherit pub_methods_classxii_ref_counting_impl"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ae4990ae83e124ddc5e1fa69261f88f inherit pub_methods_classxii_ref_counting_impl" id="r_a1ae4990ae83e124ddc5e1fa69261f88f"><td class="memItemLeft" align="right" valign="top">
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsReferenced</b> () const</td></tr>
+<tr class="memdesc:a1ae4990ae83e124ddc5e1fa69261f88f inherit pub_methods_classxii_ref_counting_impl"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the reference count is greater than 0, false otherwise. <br /></td></tr>
+<tr class="separator:a1ae4990ae83e124ddc5e1fa69261f88f inherit pub_methods_classxii_ref_counting_impl"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f7119c376cfcd3e1d4a0264a1b3f218 inherit pub_methods_classxii_ref_counting_impl" id="r_a9f7119c376cfcd3e1d4a0264a1b3f218"><td class="memItemLeft" align="right" valign="top">
+xiiInt32&#160;</td><td class="memItemRight" valign="bottom"><b>GetRefCount</b> () const</td></tr>
+<tr class="memdesc:a9f7119c376cfcd3e1d4a0264a1b3f218 inherit pub_methods_classxii_ref_counting_impl"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current reference count. <br /></td></tr>
+<tr class="separator:a9f7119c376cfcd3e1d4a0264a1b3f218 inherit pub_methods_classxii_ref_counting_impl"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_classxii_task"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_methods_classxii_task')"><img src="../../closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="../../d3/d9b/classxii_task.html">xiiTask</a></td></tr>
+<tr class="memitem:af1516532d9cffd0e5124411663e775e4 inherit pro_methods_classxii_task" id="r_af1516532d9cffd0e5124411663e775e4"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d9b/classxii_task.html#af1516532d9cffd0e5124411663e775e4">ExecuteWithMultiplicity</a> (xiiUInt32 uiInvocation) const</td></tr>
+<tr class="memdesc:af1516532d9cffd0e5124411663e775e4 inherit pro_methods_classxii_task"><td class="mdescLeft">&#160;</td><td class="mdescRight">Override this to implement the task's supposed functionality.  <br /></td></tr>
+<tr class="separator:af1516532d9cffd0e5124411663e775e4 inherit pro_methods_classxii_task"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>[internal] Worker task for loading resources (typically from disk). </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a90f43cad405e64431fa8ac5d45f2b50d" name="a90f43cad405e64431fa8ac5d45f2b50d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a90f43cad405e64431fa8ac5d45f2b50d">&#9670;&#160;</a></span>Execute()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void xiiResourceManagerWorkerDataLoad::Execute </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Override this to implement the task's supposed functionality. </p>
+<p>This function is called for tasks that do not use multiplicity. They are executed a single time for each time they are added to the <a class="el" href="../../d1/dc7/classxii_task_system.html" title="This system allows to automatically distribute tasks onto a number of worker threads.">xiiTaskSystem</a>. </p>
+
+<p>Reimplemented from <a class="el" href="../../d3/d9b/classxii_task.html#ae86de0539cc6ab496ecef3917a0b7565">xiiTask</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li>/home/runner/work/XII/XII/Source/Engine/Core/ResourceManager/Implementation/<a class="el" href="../../db/d79/_worker_tasks_8h_source.html">WorkerTasks.h</a></li>
+<li>/home/runner/work/XII/XII/Source/Engine/Core/ResourceManager/Implementation/<b>WorkerTasks.cpp</b></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../d1/d0e/classxii_resource_manager_worker_data_load.html">xiiResourceManagerWorkerDataLoad</a></li>
+    <li class="footer">Generated on Mon Jul 1 2024 23:53:16 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+  </ul>
+</div>
+</body>
+</html>

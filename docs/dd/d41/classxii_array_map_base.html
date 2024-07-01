@@ -1,0 +1,373 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.11.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<!-- BEGIN opengraph metadata -->
+<meta property="og:title" content="XII" />
+<meta property="og:image" content="../../XII-Logo.png" />
+<meta property="og:description" content="An advanced high-performance simulation engine." />
+<meta property="og:url" content="https://www.xiitechnologies.com" />
+<!-- END opengraph metadata -->
+<!-- BEGIN twitter metadata -->
+<meta name="twitter:image:src" content="../../XII-Logo.png" />
+<meta name="twitter:title" content="XII" />
+<meta name="twitter:description" content="An advanced high-performance simulation engine." />
+<!-- END twitter metadata -->
+<title>XII: xiiArrayMapBase&lt; KEY, VALUE &gt; Class Template Reference</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link rel="icon" type="image/svg+xml" href="logo.drawio.svg"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="../../toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../custom.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<a href="https://github.com/jothepro/doxygen-awesome-css" class="github-corner" title="View source on GitHub" target="_blank" rel="noopener noreferrer">
+    <svg viewBox="0 0 250 250" width="40" height="40" style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+    <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="../../XII-Logo.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">XII
+   &#160;<span id="projectnumber">1.0.0</span>
+   </div>
+   <div id="projectbrief">A high-performance simulation engine.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(1); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.html','Search',true);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('dd/d41/classxii_array_map_base.html','../../'); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#pub-types">Public Types</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="../../de/d0a/classxii_array_map_base-members.html">List of all members</a>  </div>
+  <div class="headertitle"><div class="title">xiiArrayMapBase&lt; KEY, VALUE &gt; Class Template Reference</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>An associative container, similar to <a class="el" href="../../d6/df7/classxii_map.html">xiiMap</a>, but all data is stored in a sorted contiguous array, which makes frequent lookups more efficient.  
+ <a href="#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="../../d6/d0b/_array_map_8h_source.html">ArrayMap.h</a>&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for xiiArrayMapBase&lt; KEY, VALUE &gt;:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d0/d93/classxii_array_map_base__inherit__graph.svg" width="206" height="139"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">legend</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d16/structxii_array_map_base_1_1_pair.html">Pair</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a257498751e41f395ebc708f5f20fbef2" id="r_a257498751e41f395ebc708f5f20fbef2"><td class="memItemLeft" align="right" valign="top"><a id="a257498751e41f395ebc708f5f20fbef2" name="a257498751e41f395ebc708f5f20fbef2"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>const_iterator</b> = typename <a class="el" href="../../dc/da4/classxii_dynamic_array.html">xiiDynamicArray</a>&lt;<a class="el" href="../../db/d16/structxii_array_map_base_1_1_pair.html">Pair</a>&gt;::const_iterator</td></tr>
+<tr class="separator:a257498751e41f395ebc708f5f20fbef2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada47391494ba84c19745fa21d679942b" id="r_ada47391494ba84c19745fa21d679942b"><td class="memItemLeft" align="right" valign="top"><a id="ada47391494ba84c19745fa21d679942b" name="ada47391494ba84c19745fa21d679942b"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>const_reverse_iterator</b> = typename <a class="el" href="../../dc/da4/classxii_dynamic_array.html">xiiDynamicArray</a>&lt;<a class="el" href="../../db/d16/structxii_array_map_base_1_1_pair.html">Pair</a>&gt;::const_reverse_iterator</td></tr>
+<tr class="separator:ada47391494ba84c19745fa21d679942b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07108f49ae9bac9c6a73d619a141b40f" id="r_a07108f49ae9bac9c6a73d619a141b40f"><td class="memItemLeft" align="right" valign="top"><a id="a07108f49ae9bac9c6a73d619a141b40f" name="a07108f49ae9bac9c6a73d619a141b40f"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>iterator</b> = typename <a class="el" href="../../dc/da4/classxii_dynamic_array.html">xiiDynamicArray</a>&lt;<a class="el" href="../../db/d16/structxii_array_map_base_1_1_pair.html">Pair</a>&gt;::iterator</td></tr>
+<tr class="separator:a07108f49ae9bac9c6a73d619a141b40f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74d0f6ac518839e12518b36cd8df42ab" id="r_a74d0f6ac518839e12518b36cd8df42ab"><td class="memItemLeft" align="right" valign="top"><a id="a74d0f6ac518839e12518b36cd8df42ab" name="a74d0f6ac518839e12518b36cd8df42ab"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>reverse_iterator</b> = typename <a class="el" href="../../dc/da4/classxii_dynamic_array.html">xiiDynamicArray</a>&lt;<a class="el" href="../../db/d16/structxii_array_map_base_1_1_pair.html">Pair</a>&gt;::reverse_iterator</td></tr>
+<tr class="separator:a74d0f6ac518839e12518b36cd8df42ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:aea72b66f9dedca864c36801af73abcff" id="r_aea72b66f9dedca864c36801af73abcff"><td class="memItemLeft" align="right" valign="top"><a id="aea72b66f9dedca864c36801af73abcff" name="aea72b66f9dedca864c36801af73abcff"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>xiiArrayMapBase</b> (<a class="el" href="../../d5/d66/classxii_allocator_base.html">xiiAllocatorBase</a> *pAllocator)</td></tr>
+<tr class="memdesc:aea72b66f9dedca864c36801af73abcff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor. <br /></td></tr>
+<tr class="separator:aea72b66f9dedca864c36801af73abcff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2a6eda28da10dc85daea9a409a954ae" id="r_aa2a6eda28da10dc85daea9a409a954ae"><td class="memItemLeft" align="right" valign="top"><a id="aa2a6eda28da10dc85daea9a409a954ae" name="aa2a6eda28da10dc85daea9a409a954ae"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>xiiArrayMapBase</b> (const <a class="el" href="../../dd/d41/classxii_array_map_base.html">xiiArrayMapBase</a> &amp;rhs, <a class="el" href="../../d5/d66/classxii_allocator_base.html">xiiAllocatorBase</a> *pAllocator)</td></tr>
+<tr class="memdesc:aa2a6eda28da10dc85daea9a409a954ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy-Constructor. <br /></td></tr>
+<tr class="separator:aa2a6eda28da10dc85daea9a409a954ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d932172d61426cf3f35c9b310d307bc" id="r_a0d932172d61426cf3f35c9b310d307bc"><td class="memItemLeft" align="right" valign="top"><a id="a0d932172d61426cf3f35c9b310d307bc" name="a0d932172d61426cf3f35c9b310d307bc"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="../../dd/d41/classxii_array_map_base.html">xiiArrayMapBase</a> &amp;rhs)</td></tr>
+<tr class="memdesc:a0d932172d61426cf3f35c9b310d307bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy assignment operator. <br /></td></tr>
+<tr class="separator:a0d932172d61426cf3f35c9b310d307bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd650ddab26ed2831b7ee40a2841af4b" id="r_afd650ddab26ed2831b7ee40a2841af4b"><td class="memItemLeft" align="right" valign="top"><a id="afd650ddab26ed2831b7ee40a2841af4b" name="afd650ddab26ed2831b7ee40a2841af4b"></a>
+xiiUInt32&#160;</td><td class="memItemRight" valign="bottom"><b>GetCount</b> () const</td></tr>
+<tr class="memdesc:afd650ddab26ed2831b7ee40a2841af4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of elements stored in the map. <br /></td></tr>
+<tr class="separator:afd650ddab26ed2831b7ee40a2841af4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ae0237a437c76d2bff158c786f4544f" id="r_a8ae0237a437c76d2bff158c786f4544f"><td class="memItemLeft" align="right" valign="top"><a id="a8ae0237a437c76d2bff158c786f4544f" name="a8ae0237a437c76d2bff158c786f4544f"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsEmpty</b> () const</td></tr>
+<tr class="memdesc:a8ae0237a437c76d2bff158c786f4544f"><td class="mdescLeft">&#160;</td><td class="mdescRight">True if the map contains no elements. <br /></td></tr>
+<tr class="separator:a8ae0237a437c76d2bff158c786f4544f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa02187ade06dcd5a8a5270afa904fdd2" id="r_aa02187ade06dcd5a8a5270afa904fdd2"><td class="memItemLeft" align="right" valign="top"><a id="aa02187ade06dcd5a8a5270afa904fdd2" name="aa02187ade06dcd5a8a5270afa904fdd2"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Clear</b> ()</td></tr>
+<tr class="memdesc:aa02187ade06dcd5a8a5270afa904fdd2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Purges all elements from the map. <br /></td></tr>
+<tr class="separator:aa02187ade06dcd5a8a5270afa904fdd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4faa611cf6f6736118e5eafd38fab421" id="r_a4faa611cf6f6736118e5eafd38fab421"><td class="memTemplParams" colspan="2"><a id="a4faa611cf6f6736118e5eafd38fab421" name="a4faa611cf6f6736118e5eafd38fab421"></a>
+template&lt;typename CompatibleKeyType , typename CompatibleValueType &gt; </td></tr>
+<tr class="memitem:a4faa611cf6f6736118e5eafd38fab421"><td class="memTemplItemLeft" align="right" valign="top">xiiUInt32&#160;</td><td class="memTemplItemRight" valign="bottom"><b>Insert</b> (CompatibleKeyType &amp;&amp;key, CompatibleValueType &amp;&amp;value)</td></tr>
+<tr class="memdesc:a4faa611cf6f6736118e5eafd38fab421"><td class="mdescLeft">&#160;</td><td class="mdescRight">Always inserts a new value under the given key. Duplicates are allowed. Returns the index of the newly added element. <br /></td></tr>
+<tr class="separator:a4faa611cf6f6736118e5eafd38fab421"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5146d9aa4d41ef30b01f192f4f3fda60" id="r_a5146d9aa4d41ef30b01f192f4f3fda60"><td class="memItemLeft" align="right" valign="top"><a id="a5146d9aa4d41ef30b01f192f4f3fda60" name="a5146d9aa4d41ef30b01f192f4f3fda60"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Sort</b> () const</td></tr>
+<tr class="memdesc:a5146d9aa4d41ef30b01f192f4f3fda60"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ensures the internal data structure is sorted. This is done automatically every time a lookup needs to be made. <br /></td></tr>
+<tr class="separator:a5146d9aa4d41ef30b01f192f4f3fda60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29b0ebf890246afa710c2e4f01bd42e1" id="r_a29b0ebf890246afa710c2e4f01bd42e1"><td class="memTemplParams" colspan="2"><a id="a29b0ebf890246afa710c2e4f01bd42e1" name="a29b0ebf890246afa710c2e4f01bd42e1"></a>
+template&lt;typename CompatibleKeyType &gt; </td></tr>
+<tr class="memitem:a29b0ebf890246afa710c2e4f01bd42e1"><td class="memTemplItemLeft" align="right" valign="top">xiiUInt32&#160;</td><td class="memTemplItemRight" valign="bottom"><b>Find</b> (const CompatibleKeyType &amp;key) const</td></tr>
+<tr class="memdesc:a29b0ebf890246afa710c2e4f01bd42e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an index to one element with the given key. If the key is inserted multiple times, there is no guarantee which one is returned. Returns xiiInvalidIndex when no such element exists. <br /></td></tr>
+<tr class="separator:a29b0ebf890246afa710c2e4f01bd42e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09fca74e5389d4aefea45cb125df9cbb" id="r_a09fca74e5389d4aefea45cb125df9cbb"><td class="memTemplParams" colspan="2"><a id="a09fca74e5389d4aefea45cb125df9cbb" name="a09fca74e5389d4aefea45cb125df9cbb"></a>
+template&lt;typename CompatibleKeyType &gt; </td></tr>
+<tr class="memitem:a09fca74e5389d4aefea45cb125df9cbb"><td class="memTemplItemLeft" align="right" valign="top">xiiUInt32&#160;</td><td class="memTemplItemRight" valign="bottom"><b>LowerBound</b> (const CompatibleKeyType &amp;key) const</td></tr>
+<tr class="memdesc:a09fca74e5389d4aefea45cb125df9cbb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the index to the first element with a key equal or larger than the given key. Returns xiiInvalidIndex when no such element exists. If there are multiple keys with the same value, the one at the smallest index is returned. <br /></td></tr>
+<tr class="separator:a09fca74e5389d4aefea45cb125df9cbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57d2c24ca76592cd535a920cb097e432" id="r_a57d2c24ca76592cd535a920cb097e432"><td class="memTemplParams" colspan="2"><a id="a57d2c24ca76592cd535a920cb097e432" name="a57d2c24ca76592cd535a920cb097e432"></a>
+template&lt;typename CompatibleKeyType &gt; </td></tr>
+<tr class="memitem:a57d2c24ca76592cd535a920cb097e432"><td class="memTemplItemLeft" align="right" valign="top">xiiUInt32&#160;</td><td class="memTemplItemRight" valign="bottom"><b>UpperBound</b> (const CompatibleKeyType &amp;key) const</td></tr>
+<tr class="memdesc:a57d2c24ca76592cd535a920cb097e432"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the index to the first element with a key that is LARGER than the given key. Returns xiiInvalidIndex when no such element exists. If there are multiple keys with the same value, the one at the smallest index is returned. <br /></td></tr>
+<tr class="separator:a57d2c24ca76592cd535a920cb097e432"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afada7e6414cd80b6d92821ded2601695" id="r_afada7e6414cd80b6d92821ded2601695"><td class="memItemLeft" align="right" valign="top"><a id="afada7e6414cd80b6d92821ded2601695" name="afada7e6414cd80b6d92821ded2601695"></a>
+const KEY &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetKey</b> (xiiUInt32 uiIndex) const</td></tr>
+<tr class="memdesc:afada7e6414cd80b6d92821ded2601695"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the key that is stored at the given index. <br /></td></tr>
+<tr class="separator:afada7e6414cd80b6d92821ded2601695"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5ea5f9a2da389a853e32d5a128f2d43" id="r_ac5ea5f9a2da389a853e32d5a128f2d43"><td class="memItemLeft" align="right" valign="top"><a id="ac5ea5f9a2da389a853e32d5a128f2d43" name="ac5ea5f9a2da389a853e32d5a128f2d43"></a>
+const VALUE &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetValue</b> (xiiUInt32 uiIndex) const</td></tr>
+<tr class="memdesc:ac5ea5f9a2da389a853e32d5a128f2d43"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the value that is stored at the given index. <br /></td></tr>
+<tr class="separator:ac5ea5f9a2da389a853e32d5a128f2d43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e9473016850a00a59519a4f8032e092" id="r_a0e9473016850a00a59519a4f8032e092"><td class="memItemLeft" align="right" valign="top"><a id="a0e9473016850a00a59519a4f8032e092" name="a0e9473016850a00a59519a4f8032e092"></a>
+VALUE &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetValue</b> (xiiUInt32 uiIndex)</td></tr>
+<tr class="memdesc:a0e9473016850a00a59519a4f8032e092"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the value that is stored at the given index. <br /></td></tr>
+<tr class="separator:a0e9473016850a00a59519a4f8032e092"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a983365b97ab634125fba7f6e8c875e96" id="r_a983365b97ab634125fba7f6e8c875e96"><td class="memItemLeft" align="right" valign="top"><a id="a983365b97ab634125fba7f6e8c875e96" name="a983365b97ab634125fba7f6e8c875e96"></a>
+<a class="el" href="../../dc/da4/classxii_dynamic_array.html">xiiDynamicArray</a>&lt; <a class="el" href="../../db/d16/structxii_array_map_base_1_1_pair.html">Pair</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetData</b> ()</td></tr>
+<tr class="memdesc:a983365b97ab634125fba7f6e8c875e96"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a reference to the map data array. <br /></td></tr>
+<tr class="separator:a983365b97ab634125fba7f6e8c875e96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d5afea029423831de29671d30206a29" id="r_a2d5afea029423831de29671d30206a29"><td class="memItemLeft" align="right" valign="top"><a id="a2d5afea029423831de29671d30206a29" name="a2d5afea029423831de29671d30206a29"></a>
+const <a class="el" href="../../dc/da4/classxii_dynamic_array.html">xiiDynamicArray</a>&lt; <a class="el" href="../../db/d16/structxii_array_map_base_1_1_pair.html">Pair</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetData</b> () const</td></tr>
+<tr class="memdesc:a2d5afea029423831de29671d30206a29"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a constant reference to the map data array. <br /></td></tr>
+<tr class="separator:a2d5afea029423831de29671d30206a29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9961a87b8bda24148758d3c68b19063f" id="r_a9961a87b8bda24148758d3c68b19063f"><td class="memTemplParams" colspan="2"><a id="a9961a87b8bda24148758d3c68b19063f" name="a9961a87b8bda24148758d3c68b19063f"></a>
+template&lt;typename CompatibleKeyType &gt; </td></tr>
+<tr class="memitem:a9961a87b8bda24148758d3c68b19063f"><td class="memTemplItemLeft" align="right" valign="top">VALUE &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>FindOrAdd</b> (const CompatibleKeyType &amp;key, bool *out_pExisted=nullptr)</td></tr>
+<tr class="memdesc:a9961a87b8bda24148758d3c68b19063f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the value stored at the given key. If none exists, one is created. <em>bExisted</em> indicates whether an element needed to be created. <br /></td></tr>
+<tr class="separator:a9961a87b8bda24148758d3c68b19063f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a7355c2f0fce663f68f44dc7f4b89d5" id="r_a0a7355c2f0fce663f68f44dc7f4b89d5"><td class="memTemplParams" colspan="2"><a id="a0a7355c2f0fce663f68f44dc7f4b89d5" name="a0a7355c2f0fce663f68f44dc7f4b89d5"></a>
+template&lt;typename CompatibleKeyType &gt; </td></tr>
+<tr class="memitem:a0a7355c2f0fce663f68f44dc7f4b89d5"><td class="memTemplItemLeft" align="right" valign="top">VALUE &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator[]</b> (const CompatibleKeyType &amp;key)</td></tr>
+<tr class="memdesc:a0a7355c2f0fce663f68f44dc7f4b89d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Same as FindOrAdd. <br /></td></tr>
+<tr class="separator:a0a7355c2f0fce663f68f44dc7f4b89d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5e52c2dc88fcb915fd029d12ebe9c17" id="r_aa5e52c2dc88fcb915fd029d12ebe9c17"><td class="memItemLeft" align="right" valign="top"><a id="aa5e52c2dc88fcb915fd029d12ebe9c17" name="aa5e52c2dc88fcb915fd029d12ebe9c17"></a>
+const <a class="el" href="../../db/d16/structxii_array_map_base_1_1_pair.html">Pair</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetPair</b> (xiiUInt32 uiIndex) const</td></tr>
+<tr class="memdesc:aa5e52c2dc88fcb915fd029d12ebe9c17"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the key/value pair at the given index. <br /></td></tr>
+<tr class="separator:aa5e52c2dc88fcb915fd029d12ebe9c17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6ea39bad52218d60bd2656ecf685465" id="r_ac6ea39bad52218d60bd2656ecf685465"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac6ea39bad52218d60bd2656ecf685465">RemoveAtAndCopy</a> (xiiUInt32 uiIndex, bool bKeepSorted=false)</td></tr>
+<tr class="memdesc:ac6ea39bad52218d60bd2656ecf685465"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes the element at the given index.  <br /></td></tr>
+<tr class="separator:ac6ea39bad52218d60bd2656ecf685465"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adcc4fa34cd9cc3f1c2162f94fd81ee23" id="r_adcc4fa34cd9cc3f1c2162f94fd81ee23"><td class="memTemplParams" colspan="2">template&lt;typename CompatibleKeyType &gt; </td></tr>
+<tr class="memitem:adcc4fa34cd9cc3f1c2162f94fd81ee23"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#adcc4fa34cd9cc3f1c2162f94fd81ee23">RemoveAndCopy</a> (const CompatibleKeyType &amp;key, bool bKeepSorted=false)</td></tr>
+<tr class="memdesc:adcc4fa34cd9cc3f1c2162f94fd81ee23"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes one element with the given key. Returns true, if one was found and removed. If the same key exists multiple times, you need to call this function multiple times to remove them all.  <br /></td></tr>
+<tr class="separator:adcc4fa34cd9cc3f1c2162f94fd81ee23"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3de951fad8043f5b52cacf8b4f700d9b" id="r_a3de951fad8043f5b52cacf8b4f700d9b"><td class="memTemplParams" colspan="2"><a id="a3de951fad8043f5b52cacf8b4f700d9b" name="a3de951fad8043f5b52cacf8b4f700d9b"></a>
+template&lt;typename CompatibleKeyType &gt; </td></tr>
+<tr class="memitem:a3de951fad8043f5b52cacf8b4f700d9b"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><b>Contains</b> (const CompatibleKeyType &amp;key) const</td></tr>
+<tr class="memdesc:a3de951fad8043f5b52cacf8b4f700d9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether an element with the given key exists. <br /></td></tr>
+<tr class="separator:a3de951fad8043f5b52cacf8b4f700d9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47efeaebff153fcc1aa9bbbe1ff76742" id="r_a47efeaebff153fcc1aa9bbbe1ff76742"><td class="memTemplParams" colspan="2"><a id="a47efeaebff153fcc1aa9bbbe1ff76742" name="a47efeaebff153fcc1aa9bbbe1ff76742"></a>
+template&lt;typename CompatibleKeyType &gt; </td></tr>
+<tr class="memitem:a47efeaebff153fcc1aa9bbbe1ff76742"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><b>Contains</b> (const CompatibleKeyType &amp;key, const VALUE &amp;value) const</td></tr>
+<tr class="memdesc:a47efeaebff153fcc1aa9bbbe1ff76742"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether an element with the given key and value already exists. <br /></td></tr>
+<tr class="separator:a47efeaebff153fcc1aa9bbbe1ff76742"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aecbdc6fc36cffd723e1c42ade3a1149c" id="r_aecbdc6fc36cffd723e1c42ade3a1149c"><td class="memItemLeft" align="right" valign="top"><a id="aecbdc6fc36cffd723e1c42ade3a1149c" name="aecbdc6fc36cffd723e1c42ade3a1149c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Reserve</b> (xiiUInt32 uiSize)</td></tr>
+<tr class="memdesc:aecbdc6fc36cffd723e1c42ade3a1149c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reserves enough memory to store <em>size</em> elements. <br /></td></tr>
+<tr class="separator:aecbdc6fc36cffd723e1c42ade3a1149c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1553632e03c71fd276d8d1ad029aab2c" id="r_a1553632e03c71fd276d8d1ad029aab2c"><td class="memItemLeft" align="right" valign="top"><a id="a1553632e03c71fd276d8d1ad029aab2c" name="a1553632e03c71fd276d8d1ad029aab2c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Compact</b> ()</td></tr>
+<tr class="memdesc:a1553632e03c71fd276d8d1ad029aab2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compacts the internal memory to not waste any space. <br /></td></tr>
+<tr class="separator:a1553632e03c71fd276d8d1ad029aab2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ed54bac82dfd2d3f0e274413af9856d" id="r_a0ed54bac82dfd2d3f0e274413af9856d"><td class="memItemLeft" align="right" valign="top"><a id="a0ed54bac82dfd2d3f0e274413af9856d" name="a0ed54bac82dfd2d3f0e274413af9856d"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator==</b> (const <a class="el" href="../../dd/d41/classxii_array_map_base.html">xiiArrayMapBase</a>&lt; KEY, VALUE &gt; &amp;rhs) const</td></tr>
+<tr class="memdesc:a0ed54bac82dfd2d3f0e274413af9856d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compares the two containers for equality. <br /></td></tr>
+<tr class="separator:a0ed54bac82dfd2d3f0e274413af9856d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a656fc5451fdfb8e742e429489bc9408c" id="r_a656fc5451fdfb8e742e429489bc9408c"><td class="memItemLeft" align="right" valign="top"><a id="a656fc5451fdfb8e742e429489bc9408c" name="a656fc5451fdfb8e742e429489bc9408c"></a>
+xiiUInt64&#160;</td><td class="memItemRight" valign="bottom"><b>GetHeapMemoryUsage</b> () const</td></tr>
+<tr class="memdesc:a656fc5451fdfb8e742e429489bc9408c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the amount of bytes that are currently allocated on the heap. <br /></td></tr>
+<tr class="separator:a656fc5451fdfb8e742e429489bc9408c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3eb5184f2becb5d3da3ac46f960f9df3" id="r_a3eb5184f2becb5d3da3ac46f960f9df3"><td class="memTemplParams" colspan="2"><a id="a3eb5184f2becb5d3da3ac46f960f9df3" name="a3eb5184f2becb5d3da3ac46f960f9df3"></a>
+template&lt;typename CompatibleKeyType &gt; </td></tr>
+<tr class="memitem:a3eb5184f2becb5d3da3ac46f960f9df3"><td class="memTemplItemLeft" align="right" valign="top">XII_ALWAYS_INLINE VALUE &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator[]</b> (const CompatibleKeyType &amp;key)</td></tr>
+<tr class="separator:a3eb5184f2becb5d3da3ac46f960f9df3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1157330a447d01ef53b592017defe452" id="r_a1157330a447d01ef53b592017defe452"><td class="memTemplParams" colspan="2"><a id="a1157330a447d01ef53b592017defe452" name="a1157330a447d01ef53b592017defe452"></a>
+template&lt;typename CompatibleKeyType &gt; </td></tr>
+<tr class="memitem:a1157330a447d01ef53b592017defe452"><td class="memTemplItemLeft" align="right" valign="top">XII_ALWAYS_INLINE bool&#160;</td><td class="memTemplItemRight" valign="bottom"><b>Contains</b> (const CompatibleKeyType &amp;key) const</td></tr>
+<tr class="separator:a1157330a447d01ef53b592017defe452"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><div class="compoundTemplParams">template&lt;typename KEY, typename VALUE&gt;<br />
+class xiiArrayMapBase&lt; KEY, VALUE &gt;</div><p>An associative container, similar to <a class="el" href="../../d6/df7/classxii_map.html">xiiMap</a>, but all data is stored in a sorted contiguous array, which makes frequent lookups more efficient. </p>
+<p>Prefer this container over <a class="el" href="../../d6/df7/classxii_map.html">xiiMap</a> when you modify the container less often than you look things up (which is in most cases), and when you do not need to store iterators to elements and require them to stay valid when the container is modified.</p>
+<p><a class="el" href="../../dd/d41/classxii_array_map_base.html" title="An associative container, similar to xiiMap, but all data is stored in a sorted contiguous array,...">xiiArrayMapBase</a> also allows to store multiple values under the same key (like a multi-map). </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="adcc4fa34cd9cc3f1c2162f94fd81ee23" name="adcc4fa34cd9cc3f1c2162f94fd81ee23"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adcc4fa34cd9cc3f1c2162f94fd81ee23">&#9670;&#160;</a></span>RemoveAndCopy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename KEY , typename VALUE &gt; </div>
+<div class="memtemplate">
+template&lt;typename CompatibleKeyType &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="../../dd/d41/classxii_array_map_base.html">xiiArrayMapBase</a>&lt; KEY, VALUE &gt;::RemoveAndCopy </td>
+          <td>(</td>
+          <td class="paramtype">const CompatibleKeyType &amp;</td>          <td class="paramname"><span class="paramname"><em>key</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>bKeepSorted</em></span><span class="paramdefsep"> = </span><span class="paramdefval">false</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Removes one element with the given key. Returns true, if one was found and removed. If the same key exists multiple times, you need to call this function multiple times to remove them all. </p>
+<p>If the map is sorted and bKeepSorted is true, the element will be removed such that the map stays sorted. This is only useful, if only a single (or very few) elements are removed before the next lookup. If multiple values are removed, or new values are going to be inserted, as well, <em>bKeepSorted</em> should be left to false. </p>
+
+</div>
+</div>
+<a id="ac6ea39bad52218d60bd2656ecf685465" name="ac6ea39bad52218d60bd2656ecf685465"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac6ea39bad52218d60bd2656ecf685465">&#9670;&#160;</a></span>RemoveAtAndCopy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename KEY , typename VALUE &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="../../dd/d41/classxii_array_map_base.html">xiiArrayMapBase</a>&lt; KEY, VALUE &gt;::RemoveAtAndCopy </td>
+          <td>(</td>
+          <td class="paramtype">xiiUInt32</td>          <td class="paramname"><span class="paramname"><em>uiIndex</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>bKeepSorted</em></span><span class="paramdefsep"> = </span><span class="paramdefval">false</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Removes the element at the given index. </p>
+<p>If the map is sorted and bKeepSorted is true, the element will be removed such that the map stays sorted. This is only useful, if only a single (or very few) elements are removed before the next lookup. If multiple values are removed, or new values are going to be inserted, as well, <em>bKeepSorted</em> should be left to false. </p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li>/home/runner/work/XII/XII/Source/Engine/Foundation/Containers/<a class="el" href="../../d6/d0b/_array_map_8h_source.html">ArrayMap.h</a></li>
+<li>/home/runner/work/XII/XII/Source/Engine/Foundation/Containers/Implementation/<a class="el" href="../../dc/d08/_array_map__inl_8h_source.html">ArrayMap_inl.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../dd/d41/classxii_array_map_base.html">xiiArrayMapBase</a></li>
+    <li class="footer">Generated on Mon Jul 1 2024 23:53:13 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+  </ul>
+</div>
+</body>
+</html>

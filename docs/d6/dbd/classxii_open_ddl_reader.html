@@ -1,0 +1,1004 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.11.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<!-- BEGIN opengraph metadata -->
+<meta property="og:title" content="XII" />
+<meta property="og:image" content="../../XII-Logo.png" />
+<meta property="og:description" content="An advanced high-performance simulation engine." />
+<meta property="og:url" content="https://www.xiitechnologies.com" />
+<!-- END opengraph metadata -->
+<!-- BEGIN twitter metadata -->
+<meta name="twitter:image:src" content="../../XII-Logo.png" />
+<meta name="twitter:title" content="XII" />
+<meta name="twitter:description" content="An advanced high-performance simulation engine." />
+<!-- END twitter metadata -->
+<title>XII: xiiOpenDdlReader Class Reference</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link rel="icon" type="image/svg+xml" href="logo.drawio.svg"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="../../toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../custom.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<a href="https://github.com/jothepro/doxygen-awesome-css" class="github-corner" title="View source on GitHub" target="_blank" rel="noopener noreferrer">
+    <svg viewBox="0 0 250 250" width="40" height="40" style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+    <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="../../XII-Logo.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">XII
+   &#160;<span id="projectnumber">1.0.0</span>
+   </div>
+   <div id="projectbrief">A high-performance simulation engine.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(1); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.html','Search',true);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('d6/dbd/classxii_open_ddl_reader.html','../../'); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
+<a href="#pro-static-attribs">Static Protected Attributes</a> &#124;
+<a href="../../d6/ddd/classxii_open_ddl_reader-members.html">List of all members</a>  </div>
+  <div class="headertitle"><div class="title">xiiOpenDdlReader Class Reference</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>An OpenDDL reader parses an entire DDL document and creates an in-memory representation of the document structure.  
+ <a href="#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="../../d3/d4f/_open_ddl_reader_8h_source.html">OpenDdlReader.h</a>&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for xiiOpenDdlReader:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../df/da6/classxii_open_ddl_reader__inherit__graph.svg" width="151" height="183"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">legend</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a4852309b798f7a102264a9683ad26fff" id="r_a4852309b798f7a102264a9683ad26fff"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4852309b798f7a102264a9683ad26fff">ParseDocument</a> (<a class="el" href="../../d4/d5e/classxii_stream_reader.html">xiiStreamReader</a> &amp;ref_stream, xiiUInt32 uiFirstLineOffset=0, <a class="el" href="../../d6/d6b/classxii_log_interface.html">xiiLogInterface</a> *pLog=<a class="el" href="../../d4/dc6/classxii_log.html#a5ddae12a2a4c3a6446f9754e90cee4f9">xiiLog::GetThreadLocalLogSystem</a>(), xiiUInt32 uiCacheSizeInKB=4)</td></tr>
+<tr class="memdesc:a4852309b798f7a102264a9683ad26fff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parses the given document, returns XII_FAILURE if an unrecoverable parsing error was encountered.  <br /></td></tr>
+<tr class="separator:a4852309b798f7a102264a9683ad26fff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6894e388e108789cf74044aea72c4aa6" id="r_a6894e388e108789cf74044aea72c4aa6"><td class="memItemLeft" align="right" valign="top"><a id="a6894e388e108789cf74044aea72c4aa6" name="a6894e388e108789cf74044aea72c4aa6"></a>
+const <a class="el" href="../../d1/d33/classxii_open_ddl_reader_element.html">xiiOpenDdlReaderElement</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetRootElement</b> () const</td></tr>
+<tr class="memdesc:a6894e388e108789cf74044aea72c4aa6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Every document has exactly one root element. <br /></td></tr>
+<tr class="separator:a6894e388e108789cf74044aea72c4aa6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c0a46f8224378f103e61eafa7aa4afa" id="r_a9c0a46f8224378f103e61eafa7aa4afa"><td class="memItemLeft" align="right" valign="top"><a id="a9c0a46f8224378f103e61eafa7aa4afa" name="a9c0a46f8224378f103e61eafa7aa4afa"></a>
+const <a class="el" href="../../d1/d33/classxii_open_ddl_reader_element.html">xiiOpenDdlReaderElement</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>FindElement</b> (<a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sGlobalName) const</td></tr>
+<tr class="memdesc:a9c0a46f8224378f103e61eafa7aa4afa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Searches for an element with a global name. NULL if there is no such element. <br /></td></tr>
+<tr class="separator:a9c0a46f8224378f103e61eafa7aa4afa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classxii_open_ddl_parser"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_classxii_open_ddl_parser')"><img src="../../closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="../../d5/df7/classxii_open_ddl_parser.html">xiiOpenDdlParser</a></td></tr>
+<tr class="memitem:ad52bf2e9c30b24e2ce7a5abbc3a4542b inherit pub_methods_classxii_open_ddl_parser" id="r_ad52bf2e9c30b24e2ce7a5abbc3a4542b"><td class="memItemLeft" align="right" valign="top">
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>HadFatalParsingError</b> () const</td></tr>
+<tr class="memdesc:ad52bf2e9c30b24e2ce7a5abbc3a4542b inherit pub_methods_classxii_open_ddl_parser"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether an error occurred during parsing that resulted in cancellation of further parsing. <br /></td></tr>
+<tr class="separator:ad52bf2e9c30b24e2ce7a5abbc3a4542b inherit pub_methods_classxii_open_ddl_parser"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:aeaf9ef32ff73098582c74b79d64bac8b" id="r_aeaf9ef32ff73098582c74b79d64bac8b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aeaf9ef32ff73098582c74b79d64bac8b">OnBeginObject</a> (<a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sType, <a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sName, bool bGlobalName) override</td></tr>
+<tr class="memdesc:aeaf9ef32ff73098582c74b79d64bac8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when a new object is encountered.  <br /></td></tr>
+<tr class="separator:aeaf9ef32ff73098582c74b79d64bac8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b8793a5b07778d08675446c16eb907d" id="r_a6b8793a5b07778d08675446c16eb907d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6b8793a5b07778d08675446c16eb907d">OnEndObject</a> () override</td></tr>
+<tr class="memdesc:a6b8793a5b07778d08675446c16eb907d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when the end of an object is encountered.  <br /></td></tr>
+<tr class="separator:a6b8793a5b07778d08675446c16eb907d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a189b5a9e16da66da578d8589f24e84be" id="r_a189b5a9e16da66da578d8589f24e84be"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a189b5a9e16da66da578d8589f24e84be">OnBeginPrimitiveList</a> (xiiOpenDdlPrimitiveType type, <a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sName, bool bGlobalName) override</td></tr>
+<tr class="memdesc:a189b5a9e16da66da578d8589f24e84be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when a new primitive object is encountered.  <br /></td></tr>
+<tr class="separator:a189b5a9e16da66da578d8589f24e84be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae055efd2f0df2413bd7b73b184bdf092" id="r_ae055efd2f0df2413bd7b73b184bdf092"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae055efd2f0df2413bd7b73b184bdf092">OnEndPrimitiveList</a> () override</td></tr>
+<tr class="memdesc:ae055efd2f0df2413bd7b73b184bdf092"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when the end of a primitive object is encountered.  <br /></td></tr>
+<tr class="separator:ae055efd2f0df2413bd7b73b184bdf092"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef82e6ddca92679810d5df6ffef99c8e" id="r_aef82e6ddca92679810d5df6ffef99c8e"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aef82e6ddca92679810d5df6ffef99c8e">OnPrimitiveBool</a> (xiiUInt32 count, const bool *pData, bool bThisIsAll) override</td></tr>
+<tr class="memdesc:aef82e6ddca92679810d5df6ffef99c8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when data for a primitive type is available. More than one value may be reported at a time.  <br /></td></tr>
+<tr class="separator:aef82e6ddca92679810d5df6ffef99c8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ffc8b1ccccfd5ea15433b190cae307a" id="r_a0ffc8b1ccccfd5ea15433b190cae307a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0ffc8b1ccccfd5ea15433b190cae307a">OnPrimitiveInt8</a> (xiiUInt32 count, const xiiInt8 *pData, bool bThisIsAll) override</td></tr>
+<tr class="memdesc:a0ffc8b1ccccfd5ea15433b190cae307a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when data for a primitive type is available. More than one value may be reported at a time.  <br /></td></tr>
+<tr class="separator:a0ffc8b1ccccfd5ea15433b190cae307a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aebf39ec8f94427d1040e2dad7af454b9" id="r_aebf39ec8f94427d1040e2dad7af454b9"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aebf39ec8f94427d1040e2dad7af454b9">OnPrimitiveInt16</a> (xiiUInt32 count, const xiiInt16 *pData, bool bThisIsAll) override</td></tr>
+<tr class="memdesc:aebf39ec8f94427d1040e2dad7af454b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when data for a primitive type is available. More than one value may be reported at a time.  <br /></td></tr>
+<tr class="separator:aebf39ec8f94427d1040e2dad7af454b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef20d760bc8e6228a49936864d4c01b7" id="r_aef20d760bc8e6228a49936864d4c01b7"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aef20d760bc8e6228a49936864d4c01b7">OnPrimitiveInt32</a> (xiiUInt32 count, const xiiInt32 *pData, bool bThisIsAll) override</td></tr>
+<tr class="memdesc:aef20d760bc8e6228a49936864d4c01b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when data for a primitive type is available. More than one value may be reported at a time.  <br /></td></tr>
+<tr class="separator:aef20d760bc8e6228a49936864d4c01b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9aa9716cca965f8d25c17dacc60632a0" id="r_a9aa9716cca965f8d25c17dacc60632a0"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9aa9716cca965f8d25c17dacc60632a0">OnPrimitiveInt64</a> (xiiUInt32 count, const xiiInt64 *pData, bool bThisIsAll) override</td></tr>
+<tr class="memdesc:a9aa9716cca965f8d25c17dacc60632a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when data for a primitive type is available. More than one value may be reported at a time.  <br /></td></tr>
+<tr class="separator:a9aa9716cca965f8d25c17dacc60632a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2656509e765485d506925dc580644298" id="r_a2656509e765485d506925dc580644298"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2656509e765485d506925dc580644298">OnPrimitiveUInt8</a> (xiiUInt32 count, const xiiUInt8 *pData, bool bThisIsAll) override</td></tr>
+<tr class="memdesc:a2656509e765485d506925dc580644298"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when data for a primitive type is available. More than one value may be reported at a time.  <br /></td></tr>
+<tr class="separator:a2656509e765485d506925dc580644298"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ff70428c10fdf9850c07f65ad7c03dc" id="r_a1ff70428c10fdf9850c07f65ad7c03dc"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1ff70428c10fdf9850c07f65ad7c03dc">OnPrimitiveUInt16</a> (xiiUInt32 count, const xiiUInt16 *pData, bool bThisIsAll) override</td></tr>
+<tr class="memdesc:a1ff70428c10fdf9850c07f65ad7c03dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when data for a primitive type is available. More than one value may be reported at a time.  <br /></td></tr>
+<tr class="separator:a1ff70428c10fdf9850c07f65ad7c03dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1128470b5c1c106a310d6723f5cacc2" id="r_ac1128470b5c1c106a310d6723f5cacc2"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac1128470b5c1c106a310d6723f5cacc2">OnPrimitiveUInt32</a> (xiiUInt32 count, const xiiUInt32 *pData, bool bThisIsAll) override</td></tr>
+<tr class="memdesc:ac1128470b5c1c106a310d6723f5cacc2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when data for a primitive type is available. More than one value may be reported at a time.  <br /></td></tr>
+<tr class="separator:ac1128470b5c1c106a310d6723f5cacc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad561a21984c1a25adf7cb74a768112c2" id="r_ad561a21984c1a25adf7cb74a768112c2"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad561a21984c1a25adf7cb74a768112c2">OnPrimitiveUInt64</a> (xiiUInt32 count, const xiiUInt64 *pData, bool bThisIsAll) override</td></tr>
+<tr class="memdesc:ad561a21984c1a25adf7cb74a768112c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when data for a primitive type is available. More than one value may be reported at a time.  <br /></td></tr>
+<tr class="separator:ad561a21984c1a25adf7cb74a768112c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a395ef8eb5fb7b63d86babe14cb659e52" id="r_a395ef8eb5fb7b63d86babe14cb659e52"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a395ef8eb5fb7b63d86babe14cb659e52">OnPrimitiveFloat</a> (xiiUInt32 count, const float *pData, bool bThisIsAll) override</td></tr>
+<tr class="memdesc:a395ef8eb5fb7b63d86babe14cb659e52"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when data for a primitive type is available. More than one value may be reported at a time.  <br /></td></tr>
+<tr class="separator:a395ef8eb5fb7b63d86babe14cb659e52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a860f5745bec5d8639caf62ea1ceaacd3" id="r_a860f5745bec5d8639caf62ea1ceaacd3"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a860f5745bec5d8639caf62ea1ceaacd3">OnPrimitiveDouble</a> (xiiUInt32 count, const double *pData, bool bThisIsAll) override</td></tr>
+<tr class="memdesc:a860f5745bec5d8639caf62ea1ceaacd3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when data for a primitive type is available. More than one value may be reported at a time.  <br /></td></tr>
+<tr class="separator:a860f5745bec5d8639caf62ea1ceaacd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae52acb9d50a0914a191a22c4812bc61d" id="r_ae52acb9d50a0914a191a22c4812bc61d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae52acb9d50a0914a191a22c4812bc61d">OnPrimitiveString</a> (xiiUInt32 count, const <a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> *pData, bool bThisIsAll) override</td></tr>
+<tr class="memdesc:ae52acb9d50a0914a191a22c4812bc61d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when data for a primitive type is available. More than one value may be reported at a time.  <br /></td></tr>
+<tr class="separator:ae52acb9d50a0914a191a22c4812bc61d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7bde3f57d38e94c869df2a0fdf15b699" id="r_a7bde3f57d38e94c869df2a0fdf15b699"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7bde3f57d38e94c869df2a0fdf15b699">OnParsingError</a> (<a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sMessage, bool bFatal, xiiUInt32 uiLine, xiiUInt32 uiColumn) override</td></tr>
+<tr class="memdesc:a7bde3f57d38e94c869df2a0fdf15b699"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when something unexpected is encountered in the document.  <br /></td></tr>
+<tr class="separator:a7bde3f57d38e94c869df2a0fdf15b699"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc3529455db9afa6258a638d0616176a" id="r_acc3529455db9afa6258a638d0616176a"><td class="memItemLeft" align="right" valign="top"><a id="acc3529455db9afa6258a638d0616176a" name="acc3529455db9afa6258a638d0616176a"></a>
+<a class="el" href="../../d1/d33/classxii_open_ddl_reader_element.html">xiiOpenDdlReaderElement</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>CreateElement</b> (xiiOpenDdlPrimitiveType type, <a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sType, <a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sName, bool bGlobalName)</td></tr>
+<tr class="separator:acc3529455db9afa6258a638d0616176a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd03f86d7bf94f8d98a5b439feecc63f" id="r_abd03f86d7bf94f8d98a5b439feecc63f"><td class="memItemLeft" align="right" valign="top"><a id="abd03f86d7bf94f8d98a5b439feecc63f" name="abd03f86d7bf94f8d98a5b439feecc63f"></a>
+<a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a>&#160;</td><td class="memItemRight" valign="bottom"><b>CopyString</b> (const <a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> &amp;string)</td></tr>
+<tr class="separator:abd03f86d7bf94f8d98a5b439feecc63f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd441183bbf05e349a39904ff5ee2170" id="r_abd441183bbf05e349a39904ff5ee2170"><td class="memItemLeft" align="right" valign="top"><a id="abd441183bbf05e349a39904ff5ee2170" name="abd441183bbf05e349a39904ff5ee2170"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>StorePrimitiveData</b> (bool bThisIsAll, xiiUInt32 bytecount, const xiiUInt8 *pData)</td></tr>
+<tr class="separator:abd441183bbf05e349a39904ff5ee2170"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90134d714ff559ba3a4c0b778e474e90" id="r_a90134d714ff559ba3a4c0b778e474e90"><td class="memItemLeft" align="right" valign="top"><a id="a90134d714ff559ba3a4c0b778e474e90" name="a90134d714ff559ba3a4c0b778e474e90"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ClearDataChunks</b> ()</td></tr>
+<tr class="separator:a90134d714ff559ba3a4c0b778e474e90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5799ff43acfe9f00b3fce6a5aa85484" id="r_ac5799ff43acfe9f00b3fce6a5aa85484"><td class="memItemLeft" align="right" valign="top"><a id="ac5799ff43acfe9f00b3fce6a5aa85484" name="ac5799ff43acfe9f00b3fce6a5aa85484"></a>
+xiiUInt8 *&#160;</td><td class="memItemRight" valign="bottom"><b>AllocateBytes</b> (xiiUInt32 uiNumBytes)</td></tr>
+<tr class="separator:ac5799ff43acfe9f00b3fce6a5aa85484"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_classxii_open_ddl_parser"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_methods_classxii_open_ddl_parser')"><img src="../../closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="../../d5/df7/classxii_open_ddl_parser.html">xiiOpenDdlParser</a></td></tr>
+<tr class="memitem:a7ff95cf607474448be3b6e790cd470e5 inherit pro_methods_classxii_open_ddl_parser" id="r_a7ff95cf607474448be3b6e790cd470e5"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetLogInterface</b> (<a class="el" href="../../d6/d6b/classxii_log_interface.html">xiiLogInterface</a> *pLog)</td></tr>
+<tr class="memdesc:a7ff95cf607474448be3b6e790cd470e5 inherit pro_methods_classxii_open_ddl_parser"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets a <a class="el" href="../../d6/d6b/classxii_log_interface.html" title="Base class for all logging classes.">xiiLogInterface</a> through which errors and warnings are reported. <br /></td></tr>
+<tr class="separator:a7ff95cf607474448be3b6e790cd470e5 inherit pro_methods_classxii_open_ddl_parser"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac27c85456445fb68e364ffe652f87dec inherit pro_methods_classxii_open_ddl_parser" id="r_ac27c85456445fb68e364ffe652f87dec"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/df7/classxii_open_ddl_parser.html#ac27c85456445fb68e364ffe652f87dec">SetCacheSize</a> (xiiUInt32 uiSizeInKB)</td></tr>
+<tr class="memdesc:ac27c85456445fb68e364ffe652f87dec inherit pro_methods_classxii_open_ddl_parser"><td class="mdescLeft">&#160;</td><td class="mdescRight">Data is returned in larger chunks, to reduce the number of function calls. The cache size determines the maximum chunk size per primitive type.  <br /></td></tr>
+<tr class="separator:ac27c85456445fb68e364ffe652f87dec inherit pro_methods_classxii_open_ddl_parser"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50dbc8afb5d7113c5b2eb34c415afc3e inherit pro_methods_classxii_open_ddl_parser" id="r_a50dbc8afb5d7113c5b2eb34c415afc3e"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetInputStream</b> (<a class="el" href="../../d4/d5e/classxii_stream_reader.html">xiiStreamReader</a> &amp;stream, xiiUInt32 uiFirstLineOffset=0)</td></tr>
+<tr class="memdesc:a50dbc8afb5d7113c5b2eb34c415afc3e inherit pro_methods_classxii_open_ddl_parser"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configures the parser to read from the given stream. This can only be called once on a parser instance. <br /></td></tr>
+<tr class="separator:a50dbc8afb5d7113c5b2eb34c415afc3e inherit pro_methods_classxii_open_ddl_parser"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3dcbc8d4f2d59c6180d342d25a5301f inherit pro_methods_classxii_open_ddl_parser" id="r_ae3dcbc8d4f2d59c6180d342d25a5301f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/df7/classxii_open_ddl_parser.html#ae3dcbc8d4f2d59c6180d342d25a5301f">ContinueParsing</a> ()</td></tr>
+<tr class="memdesc:ae3dcbc8d4f2d59c6180d342d25a5301f inherit pro_methods_classxii_open_ddl_parser"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call this to parse the next piece of the document. This may trigger a callback through which data is returned.  <br /></td></tr>
+<tr class="separator:ae3dcbc8d4f2d59c6180d342d25a5301f inherit pro_methods_classxii_open_ddl_parser"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a611238bf5f2b602048b691cd75c11fe9 inherit pro_methods_classxii_open_ddl_parser" id="r_a611238bf5f2b602048b691cd75c11fe9"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><b>ParseAll</b> ()</td></tr>
+<tr class="memdesc:a611238bf5f2b602048b691cd75c11fe9 inherit pro_methods_classxii_open_ddl_parser"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calls <a class="el" href="../../d5/df7/classxii_open_ddl_parser.html#ae3dcbc8d4f2d59c6180d342d25a5301f" title="Call this to parse the next piece of the document. This may trigger a callback through which data is ...">ContinueParsing()</a> in a loop until that returns false. <br /></td></tr>
+<tr class="separator:a611238bf5f2b602048b691cd75c11fe9 inherit pro_methods_classxii_open_ddl_parser"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d22e2a0cfc26ef62d41a6663588e28e inherit pro_methods_classxii_open_ddl_parser" id="r_a5d22e2a0cfc26ef62d41a6663588e28e"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SkipRestOfObject</b> ()</td></tr>
+<tr class="memdesc:a5d22e2a0cfc26ef62d41a6663588e28e inherit pro_methods_classxii_open_ddl_parser"><td class="mdescLeft">&#160;</td><td class="mdescRight">Skips the rest of the currently open object. No <a class="el" href="../../d5/df7/classxii_open_ddl_parser.html#a109c730d22325d19eab5c6f10786f48c" title="Called when the end of an object is encountered.">OnEndObject()</a> call will be done for this object either. <br /></td></tr>
+<tr class="separator:a5d22e2a0cfc26ef62d41a6663588e28e inherit pro_methods_classxii_open_ddl_parser"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ae33ad2c26af59ee5e54b8c2ecc717b inherit pro_methods_classxii_open_ddl_parser" id="r_a0ae33ad2c26af59ee5e54b8c2ecc717b"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><b>StopParsing</b> ()</td></tr>
+<tr class="memdesc:a0ae33ad2c26af59ee5e54b8c2ecc717b inherit pro_methods_classxii_open_ddl_parser"><td class="mdescLeft">&#160;</td><td class="mdescRight">Can be used to prevent parsing the rest of the document. <br /></td></tr>
+<tr class="separator:a0ae33ad2c26af59ee5e54b8c2ecc717b inherit pro_methods_classxii_open_ddl_parser"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aded9fcb02afd1f84a2900522cf5a2470 inherit pro_methods_classxii_open_ddl_parser" id="r_aded9fcb02afd1f84a2900522cf5a2470"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ParsingError</b> (<a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sMessage, bool bFatal)</td></tr>
+<tr class="memdesc:aded9fcb02afd1f84a2900522cf5a2470 inherit pro_methods_classxii_open_ddl_parser"><td class="mdescLeft">&#160;</td><td class="mdescRight">Outputs that a parsing error was detected (via OnParsingError) and stops further parsing, if bFatal is set to true. <br /></td></tr>
+<tr class="separator:aded9fcb02afd1f84a2900522cf5a2470 inherit pro_methods_classxii_open_ddl_parser"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:ad66691a2100c3df331ce706de8b3cde5" id="r_ad66691a2100c3df331ce706de8b3cde5"><td class="memItemLeft" align="right" valign="top"><a id="ad66691a2100c3df331ce706de8b3cde5" name="ad66691a2100c3df331ce706de8b3cde5"></a>
+<a class="el" href="../../dc/da9/classxii_hybrid_array.html">xiiHybridArray</a>&lt; xiiUInt8 *, 16 &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_DataChunks</b></td></tr>
+<tr class="separator:ad66691a2100c3df331ce706de8b3cde5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8c504c11f571701cf500bd7d4349ada" id="r_ad8c504c11f571701cf500bd7d4349ada"><td class="memItemLeft" align="right" valign="top"><a id="ad8c504c11f571701cf500bd7d4349ada" name="ad8c504c11f571701cf500bd7d4349ada"></a>
+xiiUInt8 *&#160;</td><td class="memItemRight" valign="bottom"><b>m_pCurrentChunk</b></td></tr>
+<tr class="separator:ad8c504c11f571701cf500bd7d4349ada"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41ae320ea28c7c666d9c5448ebb90f1c" id="r_a41ae320ea28c7c666d9c5448ebb90f1c"><td class="memItemLeft" align="right" valign="top"><a id="a41ae320ea28c7c666d9c5448ebb90f1c" name="a41ae320ea28c7c666d9c5448ebb90f1c"></a>
+xiiUInt32&#160;</td><td class="memItemRight" valign="bottom"><b>m_uiBytesInChunkLeft</b></td></tr>
+<tr class="separator:a41ae320ea28c7c666d9c5448ebb90f1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9c7948caa430efe8dae76116682325b" id="r_ab9c7948caa430efe8dae76116682325b"><td class="memItemLeft" align="right" valign="top"><a id="ab9c7948caa430efe8dae76116682325b" name="ab9c7948caa430efe8dae76116682325b"></a>
+<a class="el" href="../../dc/da4/classxii_dynamic_array.html">xiiDynamicArray</a>&lt; xiiUInt8 &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_TempCache</b></td></tr>
+<tr class="separator:ab9c7948caa430efe8dae76116682325b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ddcffcd96e4e056579e4ec50549b1b4" id="r_a6ddcffcd96e4e056579e4ec50549b1b4"><td class="memItemLeft" align="right" valign="top"><a id="a6ddcffcd96e4e056579e4ec50549b1b4" name="a6ddcffcd96e4e056579e4ec50549b1b4"></a>
+<a class="el" href="../../d8/df8/classxii_deque.html">xiiDeque</a>&lt; <a class="el" href="../../d1/d33/classxii_open_ddl_reader_element.html">xiiOpenDdlReaderElement</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_Elements</b></td></tr>
+<tr class="separator:a6ddcffcd96e4e056579e4ec50549b1b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89aabb3098cdc29ae266ed2d1130aa66" id="r_a89aabb3098cdc29ae266ed2d1130aa66"><td class="memItemLeft" align="right" valign="top"><a id="a89aabb3098cdc29ae266ed2d1130aa66" name="a89aabb3098cdc29ae266ed2d1130aa66"></a>
+<a class="el" href="../../dc/da9/classxii_hybrid_array.html">xiiHybridArray</a>&lt; <a class="el" href="../../d1/d33/classxii_open_ddl_reader_element.html">xiiOpenDdlReaderElement</a> *, 16 &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_ObjectStack</b></td></tr>
+<tr class="separator:a89aabb3098cdc29ae266ed2d1130aa66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2fec6bbc78735ccbc23d63fd6206709" id="r_aa2fec6bbc78735ccbc23d63fd6206709"><td class="memItemLeft" align="right" valign="top"><a id="aa2fec6bbc78735ccbc23d63fd6206709" name="aa2fec6bbc78735ccbc23d63fd6206709"></a>
+<a class="el" href="../../d8/df8/classxii_deque.html">xiiDeque</a>&lt; <a class="el" href="../../df/dfb/structxii_hybrid_string.html">xiiString</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_Strings</b></td></tr>
+<tr class="separator:aa2fec6bbc78735ccbc23d63fd6206709"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a047c3fd396f55c4cc068aec36f535f9d" id="r_a047c3fd396f55c4cc068aec36f535f9d"><td class="memItemLeft" align="right" valign="top"><a id="a047c3fd396f55c4cc068aec36f535f9d" name="a047c3fd396f55c4cc068aec36f535f9d"></a>
+<a class="el" href="../../d6/df7/classxii_map.html">xiiMap</a>&lt; <a class="el" href="../../df/dfb/structxii_hybrid_string.html">xiiString</a>, <a class="el" href="../../d1/d33/classxii_open_ddl_reader_element.html">xiiOpenDdlReaderElement</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_GlobalNames</b></td></tr>
+<tr class="separator:a047c3fd396f55c4cc068aec36f535f9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_classxii_open_ddl_parser"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_attribs_classxii_open_ddl_parser')"><img src="../../closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="../../d5/df7/classxii_open_ddl_parser.html">xiiOpenDdlParser</a></td></tr>
+<tr class="memitem:a8c69d7d1b83fbc906915684cd8a31200 inherit pro_attribs_classxii_open_ddl_parser" id="r_a8c69d7d1b83fbc906915684cd8a31200"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="../../d6/d6b/classxii_log_interface.html">xiiLogInterface</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_pLogInterface</b></td></tr>
+<tr class="separator:a8c69d7d1b83fbc906915684cd8a31200 inherit pro_attribs_classxii_open_ddl_parser"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-static-attribs" name="pro-static-attribs"></a>
+Static Protected Attributes</h2></td></tr>
+<tr class="memitem:a0bc8076cfb92a5dc404a023866b3b1c1" id="r_a0bc8076cfb92a5dc404a023866b3b1c1"><td class="memItemLeft" align="right" valign="top"><a id="a0bc8076cfb92a5dc404a023866b3b1c1" name="a0bc8076cfb92a5dc404a023866b3b1c1"></a>
+static constexpr xiiUInt32&#160;</td><td class="memItemRight" valign="bottom"><b>s_uiChunkSize</b> = 1000 * 4</td></tr>
+<tr class="separator:a0bc8076cfb92a5dc404a023866b3b1c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>An OpenDDL reader parses an entire DDL document and creates an in-memory representation of the document structure. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="aeaf9ef32ff73098582c74b79d64bac8b" name="aeaf9ef32ff73098582c74b79d64bac8b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeaf9ef32ff73098582c74b79d64bac8b">&#9670;&#160;</a></span>OnBeginObject()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void xiiOpenDdlReader::OnBeginObject </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a></td>          <td class="paramname"><span class="paramname"><em>sType</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a></td>          <td class="paramname"><span class="paramname"><em>sName</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>bGlobalName</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Called when a new object is encountered. </p>
+
+<p>Implements <a class="el" href="../../d5/df7/classxii_open_ddl_parser.html#a844a6db7d21225ad4fd11540473932c8">xiiOpenDdlParser</a>.</p>
+
+</div>
+</div>
+<a id="a189b5a9e16da66da578d8589f24e84be" name="a189b5a9e16da66da578d8589f24e84be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a189b5a9e16da66da578d8589f24e84be">&#9670;&#160;</a></span>OnBeginPrimitiveList()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void xiiOpenDdlReader::OnBeginPrimitiveList </td>
+          <td>(</td>
+          <td class="paramtype">xiiOpenDdlPrimitiveType</td>          <td class="paramname"><span class="paramname"><em>type</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a></td>          <td class="paramname"><span class="paramname"><em>sName</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>bGlobalName</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Called when a new primitive object is encountered. </p>
+
+<p>Implements <a class="el" href="../../d5/df7/classxii_open_ddl_parser.html#a44e7ba0d753af2bf537eef12ae0f927b">xiiOpenDdlParser</a>.</p>
+
+</div>
+</div>
+<a id="a6b8793a5b07778d08675446c16eb907d" name="a6b8793a5b07778d08675446c16eb907d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b8793a5b07778d08675446c16eb907d">&#9670;&#160;</a></span>OnEndObject()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void xiiOpenDdlReader::OnEndObject </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Called when the end of an object is encountered. </p>
+
+<p>Implements <a class="el" href="../../d5/df7/classxii_open_ddl_parser.html#a109c730d22325d19eab5c6f10786f48c">xiiOpenDdlParser</a>.</p>
+
+</div>
+</div>
+<a id="ae055efd2f0df2413bd7b73b184bdf092" name="ae055efd2f0df2413bd7b73b184bdf092"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae055efd2f0df2413bd7b73b184bdf092">&#9670;&#160;</a></span>OnEndPrimitiveList()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void xiiOpenDdlReader::OnEndPrimitiveList </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Called when the end of a primitive object is encountered. </p>
+
+<p>Implements <a class="el" href="../../d5/df7/classxii_open_ddl_parser.html#a3d2873e85662beb97bfc6c0754ff6d8a">xiiOpenDdlParser</a>.</p>
+
+</div>
+</div>
+<a id="a7bde3f57d38e94c869df2a0fdf15b699" name="a7bde3f57d38e94c869df2a0fdf15b699"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7bde3f57d38e94c869df2a0fdf15b699">&#9670;&#160;</a></span>OnParsingError()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void xiiOpenDdlReader::OnParsingError </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a></td>          <td class="paramname"><span class="paramname"><em>sMessage</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>bFatal</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">xiiUInt32</td>          <td class="paramname"><span class="paramname"><em>uiLine</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">xiiUInt32</td>          <td class="paramname"><span class="paramname"><em>uiColumn</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Called when something unexpected is encountered in the document. </p>
+<p>The error message describes what was expected and what was encountered. If bFatal is true, the error has left the parser in an unrecoverable state and thus it will not continue parsing. In that case client code will need to clean up it's open state, as no further callbacks will be called. If bFatal is false, the document is not entirely valid, but the parser is still able to continue. </p>
+
+<p>Reimplemented from <a class="el" href="../../d5/df7/classxii_open_ddl_parser.html#a5998c5b4817a163f94fa12721a71bf1b">xiiOpenDdlParser</a>.</p>
+
+</div>
+</div>
+<a id="aef82e6ddca92679810d5df6ffef99c8e" name="aef82e6ddca92679810d5df6ffef99c8e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef82e6ddca92679810d5df6ffef99c8e">&#9670;&#160;</a></span>OnPrimitiveBool()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void xiiOpenDdlReader::OnPrimitiveBool </td>
+          <td>(</td>
+          <td class="paramtype">xiiUInt32</td>          <td class="paramname"><span class="paramname"><em>count</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const bool *</td>          <td class="paramname"><span class="paramname"><em>pData</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>bThisIsAll</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Called when data for a primitive type is available. More than one value may be reported at a time. </p>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000044">Todo</a></b></dt><dd>Currently not supported </dd></dl>
+
+<p>Implements <a class="el" href="../../d5/df7/classxii_open_ddl_parser.html#ad3f80494c1fb43a6672fc60c08c246dc">xiiOpenDdlParser</a>.</p>
+
+</div>
+</div>
+<a id="a860f5745bec5d8639caf62ea1ceaacd3" name="a860f5745bec5d8639caf62ea1ceaacd3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a860f5745bec5d8639caf62ea1ceaacd3">&#9670;&#160;</a></span>OnPrimitiveDouble()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void xiiOpenDdlReader::OnPrimitiveDouble </td>
+          <td>(</td>
+          <td class="paramtype">xiiUInt32</td>          <td class="paramname"><span class="paramname"><em>count</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double *</td>          <td class="paramname"><span class="paramname"><em>pData</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>bThisIsAll</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Called when data for a primitive type is available. More than one value may be reported at a time. </p>
+
+<p>Implements <a class="el" href="../../d5/df7/classxii_open_ddl_parser.html#a6d02c96e47352472eae2ece71b748c19">xiiOpenDdlParser</a>.</p>
+
+</div>
+</div>
+<a id="a395ef8eb5fb7b63d86babe14cb659e52" name="a395ef8eb5fb7b63d86babe14cb659e52"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a395ef8eb5fb7b63d86babe14cb659e52">&#9670;&#160;</a></span>OnPrimitiveFloat()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void xiiOpenDdlReader::OnPrimitiveFloat </td>
+          <td>(</td>
+          <td class="paramtype">xiiUInt32</td>          <td class="paramname"><span class="paramname"><em>count</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const float *</td>          <td class="paramname"><span class="paramname"><em>pData</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>bThisIsAll</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Called when data for a primitive type is available. More than one value may be reported at a time. </p>
+
+<p>Implements <a class="el" href="../../d5/df7/classxii_open_ddl_parser.html#a1053e8680d8c526befe3d21073acaeb0">xiiOpenDdlParser</a>.</p>
+
+</div>
+</div>
+<a id="aebf39ec8f94427d1040e2dad7af454b9" name="aebf39ec8f94427d1040e2dad7af454b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aebf39ec8f94427d1040e2dad7af454b9">&#9670;&#160;</a></span>OnPrimitiveInt16()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void xiiOpenDdlReader::OnPrimitiveInt16 </td>
+          <td>(</td>
+          <td class="paramtype">xiiUInt32</td>          <td class="paramname"><span class="paramname"><em>count</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const xiiInt16 *</td>          <td class="paramname"><span class="paramname"><em>pData</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>bThisIsAll</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Called when data for a primitive type is available. More than one value may be reported at a time. </p>
+
+<p>Implements <a class="el" href="../../d5/df7/classxii_open_ddl_parser.html#acdee02409785f0a1600dd498d0dfb48f">xiiOpenDdlParser</a>.</p>
+
+</div>
+</div>
+<a id="aef20d760bc8e6228a49936864d4c01b7" name="aef20d760bc8e6228a49936864d4c01b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef20d760bc8e6228a49936864d4c01b7">&#9670;&#160;</a></span>OnPrimitiveInt32()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void xiiOpenDdlReader::OnPrimitiveInt32 </td>
+          <td>(</td>
+          <td class="paramtype">xiiUInt32</td>          <td class="paramname"><span class="paramname"><em>count</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const xiiInt32 *</td>          <td class="paramname"><span class="paramname"><em>pData</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>bThisIsAll</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Called when data for a primitive type is available. More than one value may be reported at a time. </p>
+
+<p>Implements <a class="el" href="../../d5/df7/classxii_open_ddl_parser.html#a9c7f15624589a0ca8e63f1268087a58e">xiiOpenDdlParser</a>.</p>
+
+</div>
+</div>
+<a id="a9aa9716cca965f8d25c17dacc60632a0" name="a9aa9716cca965f8d25c17dacc60632a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9aa9716cca965f8d25c17dacc60632a0">&#9670;&#160;</a></span>OnPrimitiveInt64()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void xiiOpenDdlReader::OnPrimitiveInt64 </td>
+          <td>(</td>
+          <td class="paramtype">xiiUInt32</td>          <td class="paramname"><span class="paramname"><em>count</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const xiiInt64 *</td>          <td class="paramname"><span class="paramname"><em>pData</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>bThisIsAll</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Called when data for a primitive type is available. More than one value may be reported at a time. </p>
+
+<p>Implements <a class="el" href="../../d5/df7/classxii_open_ddl_parser.html#a7e4d0ff62219d7a0c13bd825e4ecb8b9">xiiOpenDdlParser</a>.</p>
+
+</div>
+</div>
+<a id="a0ffc8b1ccccfd5ea15433b190cae307a" name="a0ffc8b1ccccfd5ea15433b190cae307a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ffc8b1ccccfd5ea15433b190cae307a">&#9670;&#160;</a></span>OnPrimitiveInt8()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void xiiOpenDdlReader::OnPrimitiveInt8 </td>
+          <td>(</td>
+          <td class="paramtype">xiiUInt32</td>          <td class="paramname"><span class="paramname"><em>count</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const xiiInt8 *</td>          <td class="paramname"><span class="paramname"><em>pData</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>bThisIsAll</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Called when data for a primitive type is available. More than one value may be reported at a time. </p>
+
+<p>Implements <a class="el" href="../../d5/df7/classxii_open_ddl_parser.html#a5aa3ebf2169037a29b31deb4c4561a55">xiiOpenDdlParser</a>.</p>
+
+</div>
+</div>
+<a id="ae52acb9d50a0914a191a22c4812bc61d" name="ae52acb9d50a0914a191a22c4812bc61d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae52acb9d50a0914a191a22c4812bc61d">&#9670;&#160;</a></span>OnPrimitiveString()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void xiiOpenDdlReader::OnPrimitiveString </td>
+          <td>(</td>
+          <td class="paramtype">xiiUInt32</td>          <td class="paramname"><span class="paramname"><em>count</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> *</td>          <td class="paramname"><span class="paramname"><em>pData</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>bThisIsAll</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Called when data for a primitive type is available. More than one value may be reported at a time. </p>
+
+<p>Implements <a class="el" href="../../d5/df7/classxii_open_ddl_parser.html#a7bb7d02af6e9380cc871a5bee7e2f892">xiiOpenDdlParser</a>.</p>
+
+</div>
+</div>
+<a id="a1ff70428c10fdf9850c07f65ad7c03dc" name="a1ff70428c10fdf9850c07f65ad7c03dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1ff70428c10fdf9850c07f65ad7c03dc">&#9670;&#160;</a></span>OnPrimitiveUInt16()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void xiiOpenDdlReader::OnPrimitiveUInt16 </td>
+          <td>(</td>
+          <td class="paramtype">xiiUInt32</td>          <td class="paramname"><span class="paramname"><em>count</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const xiiUInt16 *</td>          <td class="paramname"><span class="paramname"><em>pData</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>bThisIsAll</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Called when data for a primitive type is available. More than one value may be reported at a time. </p>
+
+<p>Implements <a class="el" href="../../d5/df7/classxii_open_ddl_parser.html#a2fa49004241cc73c34ef4ff7090c6a11">xiiOpenDdlParser</a>.</p>
+
+</div>
+</div>
+<a id="ac1128470b5c1c106a310d6723f5cacc2" name="ac1128470b5c1c106a310d6723f5cacc2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac1128470b5c1c106a310d6723f5cacc2">&#9670;&#160;</a></span>OnPrimitiveUInt32()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void xiiOpenDdlReader::OnPrimitiveUInt32 </td>
+          <td>(</td>
+          <td class="paramtype">xiiUInt32</td>          <td class="paramname"><span class="paramname"><em>count</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const xiiUInt32 *</td>          <td class="paramname"><span class="paramname"><em>pData</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>bThisIsAll</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Called when data for a primitive type is available. More than one value may be reported at a time. </p>
+
+<p>Implements <a class="el" href="../../d5/df7/classxii_open_ddl_parser.html#aef03c1b85981e268869103bfc6a80a46">xiiOpenDdlParser</a>.</p>
+
+</div>
+</div>
+<a id="ad561a21984c1a25adf7cb74a768112c2" name="ad561a21984c1a25adf7cb74a768112c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad561a21984c1a25adf7cb74a768112c2">&#9670;&#160;</a></span>OnPrimitiveUInt64()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void xiiOpenDdlReader::OnPrimitiveUInt64 </td>
+          <td>(</td>
+          <td class="paramtype">xiiUInt32</td>          <td class="paramname"><span class="paramname"><em>count</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const xiiUInt64 *</td>          <td class="paramname"><span class="paramname"><em>pData</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>bThisIsAll</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Called when data for a primitive type is available. More than one value may be reported at a time. </p>
+
+<p>Implements <a class="el" href="../../d5/df7/classxii_open_ddl_parser.html#a4b2f612d12524a2e2c7c52720578d01e">xiiOpenDdlParser</a>.</p>
+
+</div>
+</div>
+<a id="a2656509e765485d506925dc580644298" name="a2656509e765485d506925dc580644298"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2656509e765485d506925dc580644298">&#9670;&#160;</a></span>OnPrimitiveUInt8()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void xiiOpenDdlReader::OnPrimitiveUInt8 </td>
+          <td>(</td>
+          <td class="paramtype">xiiUInt32</td>          <td class="paramname"><span class="paramname"><em>count</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const xiiUInt8 *</td>          <td class="paramname"><span class="paramname"><em>pData</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>bThisIsAll</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Called when data for a primitive type is available. More than one value may be reported at a time. </p>
+
+<p>Implements <a class="el" href="../../d5/df7/classxii_open_ddl_parser.html#a143768317ddf6e51a556c713f8b40d16">xiiOpenDdlParser</a>.</p>
+
+</div>
+</div>
+<a id="a4852309b798f7a102264a9683ad26fff" name="a4852309b798f7a102264a9683ad26fff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4852309b798f7a102264a9683ad26fff">&#9670;&#160;</a></span>ParseDocument()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a> xiiOpenDdlReader::ParseDocument </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d4/d5e/classxii_stream_reader.html">xiiStreamReader</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>ref_stream</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">xiiUInt32</td>          <td class="paramname"><span class="paramname"><em>uiFirstLineOffset</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d6/d6b/classxii_log_interface.html">xiiLogInterface</a> *</td>          <td class="paramname"><span class="paramname"><em>pLog</em></span><span class="paramdefsep"> = </span><span class="paramdefval"><a class="el" href="../../d4/dc6/classxii_log.html#a5ddae12a2a4c3a6446f9754e90cee4f9">xiiLog::GetThreadLocalLogSystem</a>()</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">xiiUInt32</td>          <td class="paramname"><span class="paramname"><em>uiCacheSizeInKB</em></span><span class="paramdefsep"> = </span><span class="paramdefval">4</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Parses the given document, returns XII_FAILURE if an unrecoverable parsing error was encountered. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">stream</td><td>is the input data. </td></tr>
+    <tr><td class="paramname">uiFirstLineOffset</td><td>allows to adjust the reported line numbers in error messages, in case the given stream represents a sub-section of a larger file.</td></tr>
+    <tr><td class="paramname">pLog</td><td>is used for outputting details about parsing errors. If nullptr is given, no details are logged.</td></tr>
+    <tr><td class="paramname">uiCacheSizeInKB</td><td>is the internal cache size that the parser uses. If the parsed documents contain primitives lists with several thousand elements in a single list, increasing the cache size can improve performance, but typically this doesn't need to be adjusted. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li>/home/runner/work/XII/XII/Source/Engine/Foundation/IO/<a class="el" href="../../d3/d4f/_open_ddl_reader_8h_source.html">OpenDdlReader.h</a></li>
+<li>/home/runner/work/XII/XII/Source/Engine/Foundation/IO/Implementation/<b>OpenDdlReader.cpp</b></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../d6/dbd/classxii_open_ddl_reader.html">xiiOpenDdlReader</a></li>
+    <li class="footer">Generated on Mon Jul 1 2024 23:53:15 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+  </ul>
+</div>
+</body>
+</html>

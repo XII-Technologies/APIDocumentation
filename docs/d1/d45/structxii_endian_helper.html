@@ -1,0 +1,357 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.11.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<!-- BEGIN opengraph metadata -->
+<meta property="og:title" content="XII" />
+<meta property="og:image" content="../../XII-Logo.png" />
+<meta property="og:description" content="An advanced high-performance simulation engine." />
+<meta property="og:url" content="https://www.xiitechnologies.com" />
+<!-- END opengraph metadata -->
+<!-- BEGIN twitter metadata -->
+<meta name="twitter:image:src" content="../../XII-Logo.png" />
+<meta name="twitter:title" content="XII" />
+<meta name="twitter:description" content="An advanced high-performance simulation engine." />
+<!-- END twitter metadata -->
+<title>XII: xiiEndianHelper Struct Reference</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link rel="icon" type="image/svg+xml" href="logo.drawio.svg"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="../../toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../custom.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<a href="https://github.com/jothepro/doxygen-awesome-css" class="github-corner" title="View source on GitHub" target="_blank" rel="noopener noreferrer">
+    <svg viewBox="0 0 250 250" width="40" height="40" style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+    <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="../../XII-Logo.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">XII
+   &#160;<span id="projectnumber">1.0.0</span>
+   </div>
+   <div id="projectbrief">A high-performance simulation engine.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(1); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.html','Search',true);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('d1/d45/structxii_endian_helper.html','../../'); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="../../de/de2/structxii_endian_helper-members.html">List of all members</a>  </div>
+  <div class="headertitle"><div class="title">xiiEndianHelper Struct Reference</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Collection of helper methods when working with endianess "problems".  
+ <a href="#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="../../db/dad/_endian_helper_8h_source.html">EndianHelper.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a607da5aa302290ca1cbf6a4954bd5c8d" id="r_a607da5aa302290ca1cbf6a4954bd5c8d"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a607da5aa302290ca1cbf6a4954bd5c8d">IsBigEndian</a> ()</td></tr>
+<tr class="memdesc:a607da5aa302290ca1cbf6a4954bd5c8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if called on a big endian system, false otherwise.  <br /></td></tr>
+<tr class="separator:a607da5aa302290ca1cbf6a4954bd5c8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a287d44e7d1f9cb390dcba9ac8685c65d" id="r_a287d44e7d1f9cb390dcba9ac8685c65d"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a287d44e7d1f9cb390dcba9ac8685c65d">IsLittleEndian</a> ()</td></tr>
+<tr class="memdesc:a287d44e7d1f9cb390dcba9ac8685c65d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if called on a little endian system, false otherwise.  <br /></td></tr>
+<tr class="separator:a287d44e7d1f9cb390dcba9ac8685c65d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a196faec10a91983a2cb3a8e457bceb80" id="r_a196faec10a91983a2cb3a8e457bceb80"><td class="memItemLeft" align="right" valign="top"><a id="a196faec10a91983a2cb3a8e457bceb80" name="a196faec10a91983a2cb3a8e457bceb80"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>SwitchWords</b> (xiiUInt16 *pWords, xiiUInt32 uiCount)</td></tr>
+<tr class="memdesc:a196faec10a91983a2cb3a8e457bceb80"><td class="mdescLeft">&#160;</td><td class="mdescRight">Switches endianess of the given array of words (16 bit values). <br /></td></tr>
+<tr class="separator:a196faec10a91983a2cb3a8e457bceb80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a475d9cca1635052439290272dff3eb37" id="r_a475d9cca1635052439290272dff3eb37"><td class="memItemLeft" align="right" valign="top"><a id="a475d9cca1635052439290272dff3eb37" name="a475d9cca1635052439290272dff3eb37"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>SwitchDWords</b> (xiiUInt32 *pDWords, xiiUInt32 uiCount)</td></tr>
+<tr class="memdesc:a475d9cca1635052439290272dff3eb37"><td class="mdescLeft">&#160;</td><td class="mdescRight">Switches endianess of the given array of double words (32 bit values). <br /></td></tr>
+<tr class="separator:a475d9cca1635052439290272dff3eb37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4335b3fa729862ee6046d0a3faf53579" id="r_a4335b3fa729862ee6046d0a3faf53579"><td class="memItemLeft" align="right" valign="top"><a id="a4335b3fa729862ee6046d0a3faf53579" name="a4335b3fa729862ee6046d0a3faf53579"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>SwitchQWords</b> (xiiUInt64 *pQWords, xiiUInt32 uiCount)</td></tr>
+<tr class="memdesc:a4335b3fa729862ee6046d0a3faf53579"><td class="mdescLeft">&#160;</td><td class="mdescRight">Switches endianess of the given array of quad words (64 bit values). <br /></td></tr>
+<tr class="separator:a4335b3fa729862ee6046d0a3faf53579"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d8b02dcd8d543e2e084262546b226ed" id="r_a1d8b02dcd8d543e2e084262546b226ed"><td class="memItemLeft" align="right" valign="top"><a id="a1d8b02dcd8d543e2e084262546b226ed" name="a1d8b02dcd8d543e2e084262546b226ed"></a>
+static XII_ALWAYS_INLINE xiiUInt16&#160;</td><td class="memItemRight" valign="bottom"><b>Switch</b> (xiiUInt16 uiWord)</td></tr>
+<tr class="memdesc:a1d8b02dcd8d543e2e084262546b226ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a single switched word (16 bit value). <br /></td></tr>
+<tr class="separator:a1d8b02dcd8d543e2e084262546b226ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a850f61c865e735174307e0ca9c30d925" id="r_a850f61c865e735174307e0ca9c30d925"><td class="memItemLeft" align="right" valign="top"><a id="a850f61c865e735174307e0ca9c30d925" name="a850f61c865e735174307e0ca9c30d925"></a>
+static XII_ALWAYS_INLINE xiiUInt32&#160;</td><td class="memItemRight" valign="bottom"><b>Switch</b> (xiiUInt32 uiDWord)</td></tr>
+<tr class="memdesc:a850f61c865e735174307e0ca9c30d925"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a single switched double word (32 bit value). <br /></td></tr>
+<tr class="separator:a850f61c865e735174307e0ca9c30d925"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae1b39a77e8264436c3379d0dc76fea8" id="r_aae1b39a77e8264436c3379d0dc76fea8"><td class="memItemLeft" align="right" valign="top"><a id="aae1b39a77e8264436c3379d0dc76fea8" name="aae1b39a77e8264436c3379d0dc76fea8"></a>
+static XII_ALWAYS_INLINE xiiUInt64&#160;</td><td class="memItemRight" valign="bottom"><b>Switch</b> (xiiUInt64 uiQWord)</td></tr>
+<tr class="memdesc:aae1b39a77e8264436c3379d0dc76fea8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a single switched quad word (64 bit value). <br /></td></tr>
+<tr class="separator:aae1b39a77e8264436c3379d0dc76fea8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4348b30671167d268cb0a1cd64821f8" id="r_af4348b30671167d268cb0a1cd64821f8"><td class="memTemplParams" colspan="2"><a id="af4348b30671167d268cb0a1cd64821f8" name="af4348b30671167d268cb0a1cd64821f8"></a>
+template&lt;typename T &gt; </td></tr>
+<tr class="memitem:af4348b30671167d268cb0a1cd64821f8"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>SwitchInPlace</b> (T *pValue)</td></tr>
+<tr class="memdesc:af4348b30671167d268cb0a1cd64821f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Switches a value in place (template accepts pointers for 2, 4 &amp; 8 byte data types) <br /></td></tr>
+<tr class="separator:af4348b30671167d268cb0a1cd64821f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac04b6c644a4a6486a0721a59da7f1f88" id="r_ac04b6c644a4a6486a0721a59da7f1f88"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac04b6c644a4a6486a0721a59da7f1f88">SwitchStruct</a> (void *pDataPointer, const char *szFormat)</td></tr>
+<tr class="memdesc:ac04b6c644a4a6486a0721a59da7f1f88"><td class="mdescLeft">&#160;</td><td class="mdescRight">Switches a given struct according to the layout described in the szFormat parameter.  <br /></td></tr>
+<tr class="separator:ac04b6c644a4a6486a0721a59da7f1f88"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acbfb9f56323b04a667cc3cb8d9aad66c" id="r_acbfb9f56323b04a667cc3cb8d9aad66c"><td class="memTemplParams" colspan="2"><a id="acbfb9f56323b04a667cc3cb8d9aad66c" name="acbfb9f56323b04a667cc3cb8d9aad66c"></a>
+template&lt;typename T &gt; </td></tr>
+<tr class="memitem:acbfb9f56323b04a667cc3cb8d9aad66c"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>SwitchStruct</b> (T *pDataPointer, const char *szFormat)</td></tr>
+<tr class="memdesc:acbfb9f56323b04a667cc3cb8d9aad66c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Templated helper method for SwitchStruct. <br /></td></tr>
+<tr class="separator:acbfb9f56323b04a667cc3cb8d9aad66c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c5f61f3bf305708d84ace865af33d25" id="r_a2c5f61f3bf305708d84ace865af33d25"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2c5f61f3bf305708d84ace865af33d25">SwitchStructs</a> (void *pDataPointer, const char *szFormat, xiiUInt32 uiStride, xiiUInt32 uiCount)</td></tr>
+<tr class="memdesc:a2c5f61f3bf305708d84ace865af33d25"><td class="mdescLeft">&#160;</td><td class="mdescRight">Switches a given set of struct according to the layout described in the szFormat parameter.  <br /></td></tr>
+<tr class="separator:a2c5f61f3bf305708d84ace865af33d25"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27742cde7e3d6ef5b066da6ce40a723c" id="r_a27742cde7e3d6ef5b066da6ce40a723c"><td class="memTemplParams" colspan="2"><a id="a27742cde7e3d6ef5b066da6ce40a723c" name="a27742cde7e3d6ef5b066da6ce40a723c"></a>
+template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a27742cde7e3d6ef5b066da6ce40a723c"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>SwitchStructs</b> (T *pDataPointer, const char *szFormat, xiiUInt32 uiCount)</td></tr>
+<tr class="memdesc:a27742cde7e3d6ef5b066da6ce40a723c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Templated helper method for SwitchStructs. <br /></td></tr>
+<tr class="separator:a27742cde7e3d6ef5b066da6ce40a723c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Collection of helper methods when working with endianess "problems". </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a607da5aa302290ca1cbf6a4954bd5c8d" name="a607da5aa302290ca1cbf6a4954bd5c8d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a607da5aa302290ca1cbf6a4954bd5c8d">&#9670;&#160;</a></span>IsBigEndian()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool xiiEndianHelper::IsBigEndian </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns true if called on a big endian system, false otherwise. </p>
+<dl class="section note"><dt>Note</dt><dd>Note that usually the compile time decisions with the defines XII_PLATFORM_LITTLE_ENDIAN, XII_PLATFORM_BIG_ENDIAN is preferred. </dd></dl>
+
+</div>
+</div>
+<a id="a287d44e7d1f9cb390dcba9ac8685c65d" name="a287d44e7d1f9cb390dcba9ac8685c65d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a287d44e7d1f9cb390dcba9ac8685c65d">&#9670;&#160;</a></span>IsLittleEndian()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool xiiEndianHelper::IsLittleEndian </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns true if called on a little endian system, false otherwise. </p>
+<dl class="section note"><dt>Note</dt><dd>Note that usually the compile time decisions with the defines XII_PLATFORM_LITTLE_ENDIAN, XII_PLATFORM_BIG_ENDIAN is preferred. </dd></dl>
+
+</div>
+</div>
+<a id="ac04b6c644a4a6486a0721a59da7f1f88" name="ac04b6c644a4a6486a0721a59da7f1f88"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac04b6c644a4a6486a0721a59da7f1f88">&#9670;&#160;</a></span>SwitchStruct()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void xiiEndianHelper::SwitchStruct </td>
+          <td>(</td>
+          <td class="paramtype">void *</td>          <td class="paramname"><span class="paramname"><em>pDataPointer</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>szFormat</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Switches a given struct according to the layout described in the szFormat parameter. </p>
+<p>The format string may contain the characters:</p><ul>
+<li>c, b for a member of 1 byte</li>
+<li>w, s for a member of 2 bytes (word, xiiUInt16)</li>
+<li>d for a member of 4 bytes (DWORD, xiiUInt32)</li>
+<li>q for a member of 8 bytes (DWORD, xiiUInt64) </li>
+</ul>
+
+</div>
+</div>
+<a id="a2c5f61f3bf305708d84ace865af33d25" name="a2c5f61f3bf305708d84ace865af33d25"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c5f61f3bf305708d84ace865af33d25">&#9670;&#160;</a></span>SwitchStructs()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void xiiEndianHelper::SwitchStructs </td>
+          <td>(</td>
+          <td class="paramtype">void *</td>          <td class="paramname"><span class="paramname"><em>pDataPointer</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>szFormat</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">xiiUInt32</td>          <td class="paramname"><span class="paramname"><em>uiStride</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">xiiUInt32</td>          <td class="paramname"><span class="paramname"><em>uiCount</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Switches a given set of struct according to the layout described in the szFormat parameter. </p>
+<p>The format string may contain the characters:</p><ul>
+<li>c, b for a member of 1 byte</li>
+<li>w, s for a member of 2 bytes (word, xiiUInt16)</li>
+<li>d for a member of 4 bytes (DWORD, xiiUInt32)</li>
+<li>q for a member of 8 bytes (DWORD, xiiUInt64) </li>
+</ul>
+
+</div>
+</div>
+<hr/>The documentation for this struct was generated from the following files:<ul>
+<li>/home/runner/work/XII/XII/Source/Engine/Foundation/Memory/<a class="el" href="../../db/dad/_endian_helper_8h_source.html">EndianHelper.h</a></li>
+<li>/home/runner/work/XII/XII/Source/Engine/Foundation/Memory/Implementation/<b>EndianHelper.cpp</b></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../d1/d45/structxii_endian_helper.html">xiiEndianHelper</a></li>
+    <li class="footer">Generated on Mon Jul 1 2024 23:53:14 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+  </ul>
+</div>
+</body>
+</html>

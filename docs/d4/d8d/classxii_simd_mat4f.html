@@ -1,0 +1,297 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.11.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<!-- BEGIN opengraph metadata -->
+<meta property="og:title" content="XII" />
+<meta property="og:image" content="../../XII-Logo.png" />
+<meta property="og:description" content="An advanced high-performance simulation engine." />
+<meta property="og:url" content="https://www.xiitechnologies.com" />
+<!-- END opengraph metadata -->
+<!-- BEGIN twitter metadata -->
+<meta name="twitter:image:src" content="../../XII-Logo.png" />
+<meta name="twitter:title" content="XII" />
+<meta name="twitter:description" content="An advanced high-performance simulation engine." />
+<!-- END twitter metadata -->
+<title>XII: xiiSimdMat4f Class Reference</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link rel="icon" type="image/svg+xml" href="logo.drawio.svg"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="../../toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../custom.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<a href="https://github.com/jothepro/doxygen-awesome-css" class="github-corner" title="View source on GitHub" target="_blank" rel="noopener noreferrer">
+    <svg viewBox="0 0 250 250" width="40" height="40" style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+    <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="../../XII-Logo.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">XII
+   &#160;<span id="projectnumber">1.0.0</span>
+   </div>
+   <div id="projectbrief">A high-performance simulation engine.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(1); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.html','Search',true);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('d4/d8d/classxii_simd_mat4f.html','../../'); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="../../d4/d00/classxii_simd_mat4f-members.html">List of all members</a>  </div>
+  <div class="headertitle"><div class="title">xiiSimdMat4f Class Reference</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p><a class="el" href="../../d8/d4f/class_a.html">A</a> 4x4 matrix class.  
+ <a href="#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="../../d2/d3d/_simd_mat4f_8h_source.html">SimdMat4f.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a7213cdf19022a0d140088866de602deb" id="r_a7213cdf19022a0d140088866de602deb"><td class="memItemLeft" align="right" valign="top"><a id="a7213cdf19022a0d140088866de602deb" name="a7213cdf19022a0d140088866de602deb"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>XII_DECLARE_POD_TYPE</b> ()</td></tr>
+<tr class="separator:a7213cdf19022a0d140088866de602deb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc17cc78f1a8d872fbeac55dd8f2d4b8" id="r_abc17cc78f1a8d872fbeac55dd8f2d4b8"><td class="memItemLeft" align="right" valign="top"><a id="abc17cc78f1a8d872fbeac55dd8f2d4b8" name="abc17cc78f1a8d872fbeac55dd8f2d4b8"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>GetAsArray</b> (float *out_pData, <a class="el" href="../../d0/d4f/structxii_matrix_layout.html#ac36c91b001c7cd816897b73c0bff5e6d">xiiMatrixLayout::Enum</a> layout) const</td></tr>
+<tr class="separator:abc17cc78f1a8d872fbeac55dd8f2d4b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65483fef7918955d5c1d8f62df38c0a9" id="r_a65483fef7918955d5c1d8f62df38c0a9"><td class="memItemLeft" align="right" valign="top"><a id="a65483fef7918955d5c1d8f62df38c0a9" name="a65483fef7918955d5c1d8f62df38c0a9"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Transpose</b> ()</td></tr>
+<tr class="memdesc:a65483fef7918955d5c1d8f62df38c0a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transposes this matrix. <br /></td></tr>
+<tr class="separator:a65483fef7918955d5c1d8f62df38c0a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe3bd22986f2dfe22d7c554ac666081e" id="r_abe3bd22986f2dfe22d7c554ac666081e"><td class="memItemLeft" align="right" valign="top"><a id="abe3bd22986f2dfe22d7c554ac666081e" name="abe3bd22986f2dfe22d7c554ac666081e"></a>
+<a class="el" href="../../d4/d8d/classxii_simd_mat4f.html">xiiSimdMat4f</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetTranspose</b> () const</td></tr>
+<tr class="memdesc:abe3bd22986f2dfe22d7c554ac666081e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the transpose of this matrix. <br /></td></tr>
+<tr class="separator:abe3bd22986f2dfe22d7c554ac666081e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1359cf7c10b5f827cca2b03eb2b46066" id="r_a1359cf7c10b5f827cca2b03eb2b46066"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1359cf7c10b5f827cca2b03eb2b46066">Invert</a> (const <a class="el" href="../../d2/d73/classxii_simd_float.html">xiiSimdFloat</a> &amp;fEpsilon=xiiMath::SmallEpsilon&lt; float &gt;())</td></tr>
+<tr class="memdesc:a1359cf7c10b5f827cca2b03eb2b46066"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inverts this matrix. Return value indicates whether the matrix could be inverted.  <br /></td></tr>
+<tr class="separator:a1359cf7c10b5f827cca2b03eb2b46066"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9516b16c20bebad041276678fc145eb1" id="r_a9516b16c20bebad041276678fc145eb1"><td class="memItemLeft" align="right" valign="top"><a id="a9516b16c20bebad041276678fc145eb1" name="a9516b16c20bebad041276678fc145eb1"></a>
+<a class="el" href="../../d4/d8d/classxii_simd_mat4f.html">xiiSimdMat4f</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetInverse</b> (const <a class="el" href="../../d2/d73/classxii_simd_float.html">xiiSimdFloat</a> &amp;fEpsilon=xiiMath::SmallEpsilon&lt; float &gt;()) const</td></tr>
+<tr class="memdesc:a9516b16c20bebad041276678fc145eb1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the inverse of this matrix. <br /></td></tr>
+<tr class="separator:a9516b16c20bebad041276678fc145eb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47b000e858f38ad23ccbe16e36f2a1a8" id="r_a47b000e858f38ad23ccbe16e36f2a1a8"><td class="memItemLeft" align="right" valign="top"><a id="a47b000e858f38ad23ccbe16e36f2a1a8" name="a47b000e858f38ad23ccbe16e36f2a1a8"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsEqual</b> (const <a class="el" href="../../d4/d8d/classxii_simd_mat4f.html">xiiSimdMat4f</a> &amp;rhs, const <a class="el" href="../../d2/d73/classxii_simd_float.html">xiiSimdFloat</a> &amp;fEpsilon) const</td></tr>
+<tr class="memdesc:a47b000e858f38ad23ccbe16e36f2a1a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Equality Check with epsilon. <br /></td></tr>
+<tr class="separator:a47b000e858f38ad23ccbe16e36f2a1a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7033bffc88394d53e2936aff4d2e4dc7" id="r_a7033bffc88394d53e2936aff4d2e4dc7"><td class="memItemLeft" align="right" valign="top"><a id="a7033bffc88394d53e2936aff4d2e4dc7" name="a7033bffc88394d53e2936aff4d2e4dc7"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsIdentity</b> (const <a class="el" href="../../d2/d73/classxii_simd_float.html">xiiSimdFloat</a> &amp;fEpsilon=xiiMath::DefaultEpsilon&lt; float &gt;()) const</td></tr>
+<tr class="memdesc:a7033bffc88394d53e2936aff4d2e4dc7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether this is an identity matrix. <br /></td></tr>
+<tr class="separator:a7033bffc88394d53e2936aff4d2e4dc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a154af6d1f5bbb100d73f39eb07b3f7e4" id="r_a154af6d1f5bbb100d73f39eb07b3f7e4"><td class="memItemLeft" align="right" valign="top"><a id="a154af6d1f5bbb100d73f39eb07b3f7e4" name="a154af6d1f5bbb100d73f39eb07b3f7e4"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsValid</b> () const</td></tr>
+<tr class="memdesc:a154af6d1f5bbb100d73f39eb07b3f7e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether all components are finite numbers. <br /></td></tr>
+<tr class="separator:a154af6d1f5bbb100d73f39eb07b3f7e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a471b4fcba934cce647b8483f21571db2" id="r_a471b4fcba934cce647b8483f21571db2"><td class="memItemLeft" align="right" valign="top"><a id="a471b4fcba934cce647b8483f21571db2" name="a471b4fcba934cce647b8483f21571db2"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsNaN</b> () const</td></tr>
+<tr class="memdesc:a471b4fcba934cce647b8483f21571db2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether any component is NaN. <br /></td></tr>
+<tr class="separator:a471b4fcba934cce647b8483f21571db2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15795b5e854f6633e4cd6f8511278c34" id="r_a15795b5e854f6633e4cd6f8511278c34"><td class="memItemLeft" align="right" valign="top"><a id="a15795b5e854f6633e4cd6f8511278c34" name="a15795b5e854f6633e4cd6f8511278c34"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetRows</b> (const <a class="el" href="../../d3/da5/classxii_simd_vec4f.html">xiiSimdVec4f</a> &amp;vRow0, const <a class="el" href="../../d3/da5/classxii_simd_vec4f.html">xiiSimdVec4f</a> &amp;vRow1, const <a class="el" href="../../d3/da5/classxii_simd_vec4f.html">xiiSimdVec4f</a> &amp;vRow2, const <a class="el" href="../../d3/da5/classxii_simd_vec4f.html">xiiSimdVec4f</a> &amp;vRow3)</td></tr>
+<tr class="separator:a15795b5e854f6633e4cd6f8511278c34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f40b7638919b52ca27aba49cf970f30" id="r_a5f40b7638919b52ca27aba49cf970f30"><td class="memItemLeft" align="right" valign="top"><a id="a5f40b7638919b52ca27aba49cf970f30" name="a5f40b7638919b52ca27aba49cf970f30"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>GetRows</b> (<a class="el" href="../../d3/da5/classxii_simd_vec4f.html">xiiSimdVec4f</a> &amp;ref_vRow0, <a class="el" href="../../d3/da5/classxii_simd_vec4f.html">xiiSimdVec4f</a> &amp;ref_vRow1, <a class="el" href="../../d3/da5/classxii_simd_vec4f.html">xiiSimdVec4f</a> &amp;ref_vRow2, <a class="el" href="../../d3/da5/classxii_simd_vec4f.html">xiiSimdVec4f</a> &amp;ref_vRow3) const</td></tr>
+<tr class="separator:a5f40b7638919b52ca27aba49cf970f30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0bb26cee7c275a11080640e52a1ac4a1" id="r_a0bb26cee7c275a11080640e52a1ac4a1"><td class="memItemLeft" align="right" valign="top"><a id="a0bb26cee7c275a11080640e52a1ac4a1" name="a0bb26cee7c275a11080640e52a1ac4a1"></a>
+<a class="el" href="../../d3/da5/classxii_simd_vec4f.html">xiiSimdVec4f</a>&#160;</td><td class="memItemRight" valign="bottom"><b>TransformPosition</b> (const <a class="el" href="../../d3/da5/classxii_simd_vec4f.html">xiiSimdVec4f</a> &amp;v) const</td></tr>
+<tr class="memdesc:a0bb26cee7c275a11080640e52a1ac4a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Matrix-vector multiplication, assuming the 4th component of the vector is one (default behavior). <br /></td></tr>
+<tr class="separator:a0bb26cee7c275a11080640e52a1ac4a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78f9441b50f69d7652688066fdfea1e6" id="r_a78f9441b50f69d7652688066fdfea1e6"><td class="memItemLeft" align="right" valign="top"><a id="a78f9441b50f69d7652688066fdfea1e6" name="a78f9441b50f69d7652688066fdfea1e6"></a>
+<a class="el" href="../../d3/da5/classxii_simd_vec4f.html">xiiSimdVec4f</a>&#160;</td><td class="memItemRight" valign="bottom"><b>TransformDirection</b> (const <a class="el" href="../../d3/da5/classxii_simd_vec4f.html">xiiSimdVec4f</a> &amp;v) const</td></tr>
+<tr class="memdesc:a78f9441b50f69d7652688066fdfea1e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Matrix-vector multiplication, assuming the 4th component of the vector is zero. So, rotation/scaling only. <br /></td></tr>
+<tr class="separator:a78f9441b50f69d7652688066fdfea1e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5104a3ec5938a6bc2372980942b23c54" id="r_a5104a3ec5938a6bc2372980942b23c54"><td class="memItemLeft" align="right" valign="top"><a id="a5104a3ec5938a6bc2372980942b23c54" name="a5104a3ec5938a6bc2372980942b23c54"></a>
+<a class="el" href="../../d4/d8d/classxii_simd_mat4f.html">xiiSimdMat4f</a>&#160;</td><td class="memItemRight" valign="bottom"><b>operator*</b> (const <a class="el" href="../../d4/d8d/classxii_simd_mat4f.html">xiiSimdMat4f</a> &amp;rhs) const</td></tr>
+<tr class="separator:a5104a3ec5938a6bc2372980942b23c54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67580343afc737b845a87e02ac7b32f6" id="r_a67580343afc737b845a87e02ac7b32f6"><td class="memItemLeft" align="right" valign="top"><a id="a67580343afc737b845a87e02ac7b32f6" name="a67580343afc737b845a87e02ac7b32f6"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>operator*=</b> (const <a class="el" href="../../d4/d8d/classxii_simd_mat4f.html">xiiSimdMat4f</a> &amp;rhs)</td></tr>
+<tr class="separator:a67580343afc737b845a87e02ac7b32f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50ee7cc60ee2ec82c2ff8c8a56691c68" id="r_a50ee7cc60ee2ec82c2ff8c8a56691c68"><td class="memItemLeft" align="right" valign="top"><a id="a50ee7cc60ee2ec82c2ff8c8a56691c68" name="a50ee7cc60ee2ec82c2ff8c8a56691c68"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator==</b> (const <a class="el" href="../../d4/d8d/classxii_simd_mat4f.html">xiiSimdMat4f</a> &amp;rhs) const</td></tr>
+<tr class="separator:a50ee7cc60ee2ec82c2ff8c8a56691c68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e7d2b0bd50d32492142668e0ce72301" id="r_a5e7d2b0bd50d32492142668e0ce72301"><td class="memItemLeft" align="right" valign="top"><a id="a5e7d2b0bd50d32492142668e0ce72301" name="a5e7d2b0bd50d32492142668e0ce72301"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator!=</b> (const <a class="el" href="../../d4/d8d/classxii_simd_mat4f.html">xiiSimdMat4f</a> &amp;rhs) const</td></tr>
+<tr class="separator:a5e7d2b0bd50d32492142668e0ce72301"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a1b26bfe8c7cfc0841676d5e1f7d4a35f" id="r_a1b26bfe8c7cfc0841676d5e1f7d4a35f"><td class="memItemLeft" align="right" valign="top"><a id="a1b26bfe8c7cfc0841676d5e1f7d4a35f" name="a1b26bfe8c7cfc0841676d5e1f7d4a35f"></a>
+static <a class="el" href="../../d4/d8d/classxii_simd_mat4f.html">xiiSimdMat4f</a>&#160;</td><td class="memItemRight" valign="bottom"><b>MakeZero</b> ()</td></tr>
+<tr class="memdesc:a1b26bfe8c7cfc0841676d5e1f7d4a35f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a zero matrix. <br /></td></tr>
+<tr class="separator:a1b26bfe8c7cfc0841676d5e1f7d4a35f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e0416ac7dc6c73487059bfab8c0ba39" id="r_a8e0416ac7dc6c73487059bfab8c0ba39"><td class="memItemLeft" align="right" valign="top"><a id="a8e0416ac7dc6c73487059bfab8c0ba39" name="a8e0416ac7dc6c73487059bfab8c0ba39"></a>
+static <a class="el" href="../../d4/d8d/classxii_simd_mat4f.html">xiiSimdMat4f</a>&#160;</td><td class="memItemRight" valign="bottom"><b>MakeIdentity</b> ()</td></tr>
+<tr class="memdesc:a8e0416ac7dc6c73487059bfab8c0ba39"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an identity matrix. <br /></td></tr>
+<tr class="separator:a8e0416ac7dc6c73487059bfab8c0ba39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4cf95629eaf2b9f3b6cc0b72d899df54" id="r_a4cf95629eaf2b9f3b6cc0b72d899df54"><td class="memItemLeft" align="right" valign="top"><a id="a4cf95629eaf2b9f3b6cc0b72d899df54" name="a4cf95629eaf2b9f3b6cc0b72d899df54"></a>
+static <a class="el" href="../../d4/d8d/classxii_simd_mat4f.html">xiiSimdMat4f</a>&#160;</td><td class="memItemRight" valign="bottom"><b>MakeFromRowMajorArray</b> (const float *const pData)</td></tr>
+<tr class="memdesc:a4cf95629eaf2b9f3b6cc0b72d899df54"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a matrix from 16 values that are in row-major layout. <br /></td></tr>
+<tr class="separator:a4cf95629eaf2b9f3b6cc0b72d899df54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58a4582f377dc10692e3d319a54e3289" id="r_a58a4582f377dc10692e3d319a54e3289"><td class="memItemLeft" align="right" valign="top"><a id="a58a4582f377dc10692e3d319a54e3289" name="a58a4582f377dc10692e3d319a54e3289"></a>
+static <a class="el" href="../../d4/d8d/classxii_simd_mat4f.html">xiiSimdMat4f</a>&#160;</td><td class="memItemRight" valign="bottom"><b>MakeFromColumnMajorArray</b> (const float *const pData)</td></tr>
+<tr class="memdesc:a58a4582f377dc10692e3d319a54e3289"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a matrix from 16 values that are in column-major layout. <br /></td></tr>
+<tr class="separator:a58a4582f377dc10692e3d319a54e3289"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa40d06f03d9949f50de7155aab7f5db9" id="r_aa40d06f03d9949f50de7155aab7f5db9"><td class="memItemLeft" align="right" valign="top"><a id="aa40d06f03d9949f50de7155aab7f5db9" name="aa40d06f03d9949f50de7155aab7f5db9"></a>
+static <a class="el" href="../../d4/d8d/classxii_simd_mat4f.html">xiiSimdMat4f</a>&#160;</td><td class="memItemRight" valign="bottom"><b>MakeFromColumns</b> (const <a class="el" href="../../d3/da5/classxii_simd_vec4f.html">xiiSimdVec4f</a> &amp;vCol0, const <a class="el" href="../../d3/da5/classxii_simd_vec4f.html">xiiSimdVec4f</a> &amp;vCol1, const <a class="el" href="../../d3/da5/classxii_simd_vec4f.html">xiiSimdVec4f</a> &amp;vCol2, const <a class="el" href="../../d3/da5/classxii_simd_vec4f.html">xiiSimdVec4f</a> &amp;vCol3)</td></tr>
+<tr class="memdesc:aa40d06f03d9949f50de7155aab7f5db9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a matrix from 4 column vectors. <br /></td></tr>
+<tr class="separator:aa40d06f03d9949f50de7155aab7f5db9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8514e251f85a4a2c6694eb3679ccb7ef" id="r_a8514e251f85a4a2c6694eb3679ccb7ef"><td class="memItemLeft" align="right" valign="top"><a id="a8514e251f85a4a2c6694eb3679ccb7ef" name="a8514e251f85a4a2c6694eb3679ccb7ef"></a>
+static <a class="el" href="../../d4/d8d/classxii_simd_mat4f.html">xiiSimdMat4f</a>&#160;</td><td class="memItemRight" valign="bottom"><b>MakeFromValues</b> (float f1r1, float f2r1, float f3r1, float f4r1, float f1r2, float f2r2, float f3r2, float f4r2, float f1r3, float f2r3, float f3r3, float f4r3, float f1r4, float f2r4, float f3r4, float f4r4)</td></tr>
+<tr class="memdesc:a8514e251f85a4a2c6694eb3679ccb7ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a matrix from 16 values. Naming is "column-n row-m". <br /></td></tr>
+<tr class="separator:a8514e251f85a4a2c6694eb3679ccb7ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:a334fd64ebda9196136bde2a576492b09" id="r_a334fd64ebda9196136bde2a576492b09"><td class="memItemLeft" align="right" valign="top"><a id="a334fd64ebda9196136bde2a576492b09" name="a334fd64ebda9196136bde2a576492b09"></a>
+<a class="el" href="../../d3/da5/classxii_simd_vec4f.html">xiiSimdVec4f</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_col0</b></td></tr>
+<tr class="separator:a334fd64ebda9196136bde2a576492b09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac24829c038a0a1081ed8b3de86dbbd97" id="r_ac24829c038a0a1081ed8b3de86dbbd97"><td class="memItemLeft" align="right" valign="top"><a id="ac24829c038a0a1081ed8b3de86dbbd97" name="ac24829c038a0a1081ed8b3de86dbbd97"></a>
+<a class="el" href="../../d3/da5/classxii_simd_vec4f.html">xiiSimdVec4f</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_col1</b></td></tr>
+<tr class="separator:ac24829c038a0a1081ed8b3de86dbbd97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c9d5499d3f5bac5ee28fd4c67667d70" id="r_a6c9d5499d3f5bac5ee28fd4c67667d70"><td class="memItemLeft" align="right" valign="top"><a id="a6c9d5499d3f5bac5ee28fd4c67667d70" name="a6c9d5499d3f5bac5ee28fd4c67667d70"></a>
+<a class="el" href="../../d3/da5/classxii_simd_vec4f.html">xiiSimdVec4f</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_col2</b></td></tr>
+<tr class="separator:a6c9d5499d3f5bac5ee28fd4c67667d70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2bf316e24cba975f0b248ad1c1063c7" id="r_ad2bf316e24cba975f0b248ad1c1063c7"><td class="memItemLeft" align="right" valign="top"><a id="ad2bf316e24cba975f0b248ad1c1063c7" name="ad2bf316e24cba975f0b248ad1c1063c7"></a>
+<a class="el" href="../../d3/da5/classxii_simd_vec4f.html">xiiSimdVec4f</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_col3</b></td></tr>
+<tr class="separator:ad2bf316e24cba975f0b248ad1c1063c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p><a class="el" href="../../d8/d4f/class_a.html">A</a> 4x4 matrix class. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a1359cf7c10b5f827cca2b03eb2b46066" name="a1359cf7c10b5f827cca2b03eb2b46066"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1359cf7c10b5f827cca2b03eb2b46066">&#9670;&#160;</a></span>Invert()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a> xiiSimdMat4f::Invert </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d2/d73/classxii_simd_float.html">xiiSimdFloat</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>fEpsilon</em></span><span class="paramdefsep"> = </span><span class="paramdefval">xiiMath::SmallEpsilon&lt;float&gt;()</span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Inverts this matrix. Return value indicates whether the matrix could be inverted. </p>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000051">Todo</a></b></dt><dd>Optimize </dd></dl>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li>/home/runner/work/XII/XII/Source/Engine/Foundation/SimdMath/<a class="el" href="../../d2/d3d/_simd_mat4f_8h_source.html">SimdMat4f.h</a></li>
+<li>/home/runner/work/XII/XII/Source/Engine/Foundation/SimdMath/Implementation/FPU/<a class="el" href="../../dc/ddf/_f_p_u_mat4f__inl_8h_source.html">FPUMat4f_inl.h</a></li>
+<li>/home/runner/work/XII/XII/Source/Engine/Foundation/SimdMath/Implementation/NEON/<a class="el" href="../../d6/d52/_n_e_o_n_mat4f__inl_8h_source.html">NEONMat4f_inl.h</a></li>
+<li>/home/runner/work/XII/XII/Source/Engine/Foundation/SimdMath/Implementation/<b>SimdMat4f.cpp</b></li>
+<li>/home/runner/work/XII/XII/Source/Engine/Foundation/SimdMath/Implementation/<a class="el" href="../../de/db6/_simd_mat4f__inl_8h_source.html">SimdMat4f_inl.h</a></li>
+<li>/home/runner/work/XII/XII/Source/Engine/Foundation/SimdMath/Implementation/SSE/<a class="el" href="../../d7/db2/_s_s_e_mat4f__inl_8h_source.html">SSEMat4f_inl.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../d4/d8d/classxii_simd_mat4f.html">xiiSimdMat4f</a></li>
+    <li class="footer">Generated on Mon Jul 1 2024 23:53:16 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+  </ul>
+</div>
+</body>
+</html>

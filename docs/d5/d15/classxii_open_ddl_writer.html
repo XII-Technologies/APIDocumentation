@@ -1,0 +1,484 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.11.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<!-- BEGIN opengraph metadata -->
+<meta property="og:title" content="XII" />
+<meta property="og:image" content="../../XII-Logo.png" />
+<meta property="og:description" content="An advanced high-performance simulation engine." />
+<meta property="og:url" content="https://www.xiitechnologies.com" />
+<!-- END opengraph metadata -->
+<!-- BEGIN twitter metadata -->
+<meta name="twitter:image:src" content="../../XII-Logo.png" />
+<meta name="twitter:title" content="XII" />
+<meta name="twitter:description" content="An advanced high-performance simulation engine." />
+<!-- END twitter metadata -->
+<title>XII: xiiOpenDdlWriter Class Reference</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link rel="icon" type="image/svg+xml" href="logo.drawio.svg"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="../../toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../custom.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<a href="https://github.com/jothepro/doxygen-awesome-css" class="github-corner" title="View source on GitHub" target="_blank" rel="noopener noreferrer">
+    <svg viewBox="0 0 250 250" width="40" height="40" style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+    <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="../../XII-Logo.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">XII
+   &#160;<span id="projectnumber">1.0.0</span>
+   </div>
+   <div id="projectbrief">A high-performance simulation engine.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(1); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.html','Search',true);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('d5/d15/classxii_open_ddl_writer.html','../../'); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#pub-types">Public Types</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-types">Protected Types</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
+<a href="../../d2/d11/classxii_open_ddl_writer-members.html">List of all members</a>  </div>
+  <div class="headertitle"><div class="title">xiiOpenDdlWriter Class Reference</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>The base class for OpenDDL writers.  
+ <a href="#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="../../d3/d29/_open_ddl_writer_8h_source.html">OpenDdlWriter.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d00/structxii_open_ddl_writer_1_1_ddl_state.html">DdlState</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:ac6621e26be4f2ce08e8e66a41c372ff5" id="r_ac6621e26be4f2ce08e8e66a41c372ff5"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac6621e26be4f2ce08e8e66a41c372ff5">TypeStringMode</a> { <a class="el" href="#ac6621e26be4f2ce08e8e66a41c372ff5a952358fc53c0167a1ea7354f338ed5af">Compliant</a>
+, <a class="el" href="#ac6621e26be4f2ce08e8e66a41c372ff5a5b3571429e97357bc5cd927384ed2d10">ShortenedUnsignedInt</a>
+, <a class="el" href="#ac6621e26be4f2ce08e8e66a41c372ff5ace42b65744e60ed9b32e7d4f750a66a5">Shortest</a>
+ }</td></tr>
+<tr class="separator:ac6621e26be4f2ce08e8e66a41c372ff5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0afc2aeb0d0cc77cd1f2dff0a9f38e79" id="r_a0afc2aeb0d0cc77cd1f2dff0a9f38e79"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0afc2aeb0d0cc77cd1f2dff0a9f38e79">FloatPrecisionMode</a> { <a class="el" href="#a0afc2aeb0d0cc77cd1f2dff0a9f38e79a4b8123df4e2b3456270c11394adf7607">Readable</a>
+, <a class="el" href="#a0afc2aeb0d0cc77cd1f2dff0a9f38e79a1649aed298f99d587e2eb30c1db5946b">Exact</a>
+ }</td></tr>
+<tr class="separator:a0afc2aeb0d0cc77cd1f2dff0a9f38e79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a99e09f562cd5f514e5bd5ceb47c64832" id="r_a99e09f562cd5f514e5bd5ceb47c64832"><td class="memItemLeft" align="right" valign="top"><a id="a99e09f562cd5f514e5bd5ceb47c64832" name="a99e09f562cd5f514e5bd5ceb47c64832"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>xiiOpenDdlWriter</b> ()</td></tr>
+<tr class="memdesc:a99e09f562cd5f514e5bd5ceb47c64832"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor. <br /></td></tr>
+<tr class="separator:a99e09f562cd5f514e5bd5ceb47c64832"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd9957dd8782a95a04ebd288c9e69480" id="r_afd9957dd8782a95a04ebd288c9e69480"><td class="memItemLeft" align="right" valign="top"><a id="afd9957dd8782a95a04ebd288c9e69480" name="afd9957dd8782a95a04ebd288c9e69480"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetOutputStream</b> (<a class="el" href="../../d0/d18/classxii_stream_writer.html">xiiStreamWriter</a> *pOutput)</td></tr>
+<tr class="memdesc:afd9957dd8782a95a04ebd288c9e69480"><td class="mdescLeft">&#160;</td><td class="mdescRight">All output is written to this binary stream. <br /></td></tr>
+<tr class="separator:afd9957dd8782a95a04ebd288c9e69480"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32cac839b7d33b96cf704d3f57f1b0bf" id="r_a32cac839b7d33b96cf704d3f57f1b0bf"><td class="memItemLeft" align="right" valign="top"><a id="a32cac839b7d33b96cf704d3f57f1b0bf" name="a32cac839b7d33b96cf704d3f57f1b0bf"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetCompactMode</b> (bool bCompact)</td></tr>
+<tr class="memdesc:a32cac839b7d33b96cf704d3f57f1b0bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configures how much whitespace is output. <br /></td></tr>
+<tr class="separator:a32cac839b7d33b96cf704d3f57f1b0bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a973b5d28f8a9bc3b7977781d7cd20fb3" id="r_a973b5d28f8a9bc3b7977781d7cd20fb3"><td class="memItemLeft" align="right" valign="top"><a id="a973b5d28f8a9bc3b7977781d7cd20fb3" name="a973b5d28f8a9bc3b7977781d7cd20fb3"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetPrimitiveTypeStringMode</b> (<a class="el" href="#ac6621e26be4f2ce08e8e66a41c372ff5">TypeStringMode</a> mode)</td></tr>
+<tr class="memdesc:a973b5d28f8a9bc3b7977781d7cd20fb3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configures how verbose the type strings are going to be written. <br /></td></tr>
+<tr class="separator:a973b5d28f8a9bc3b7977781d7cd20fb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31938bc7d10de5f8f547b84af8704ec6" id="r_a31938bc7d10de5f8f547b84af8704ec6"><td class="memItemLeft" align="right" valign="top"><a id="a31938bc7d10de5f8f547b84af8704ec6" name="a31938bc7d10de5f8f547b84af8704ec6"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetFloatPrecisionMode</b> (<a class="el" href="#a0afc2aeb0d0cc77cd1f2dff0a9f38e79">FloatPrecisionMode</a> mode)</td></tr>
+<tr class="memdesc:a31938bc7d10de5f8f547b84af8704ec6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configures how float values are output. <br /></td></tr>
+<tr class="separator:a31938bc7d10de5f8f547b84af8704ec6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8dc3ad1803e0634640e55b90db0b916a" id="r_a8dc3ad1803e0634640e55b90db0b916a"><td class="memItemLeft" align="right" valign="top"><a id="a8dc3ad1803e0634640e55b90db0b916a" name="a8dc3ad1803e0634640e55b90db0b916a"></a>
+<a class="el" href="#a0afc2aeb0d0cc77cd1f2dff0a9f38e79">FloatPrecisionMode</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetFloatPrecisionMode</b> () const</td></tr>
+<tr class="memdesc:a8dc3ad1803e0634640e55b90db0b916a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns how float values are output. <br /></td></tr>
+<tr class="separator:a8dc3ad1803e0634640e55b90db0b916a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a265f79c4c13ae619c087bd5ab11769d5" id="r_a265f79c4c13ae619c087bd5ab11769d5"><td class="memItemLeft" align="right" valign="top"><a id="a265f79c4c13ae619c087bd5ab11769d5" name="a265f79c4c13ae619c087bd5ab11769d5"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetIndentation</b> (xiiInt8 iIndentation)</td></tr>
+<tr class="memdesc:a265f79c4c13ae619c087bd5ab11769d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allows to set the indentation. Negative values are possible. This makes it possible to set the indentation e.g. to -2, thus the output will only have indentation after a level of 3 has been reached. <br /></td></tr>
+<tr class="separator:a265f79c4c13ae619c087bd5ab11769d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18caa77a7871e1db7c51e2498218d71e" id="r_a18caa77a7871e1db7c51e2498218d71e"><td class="memItemLeft" align="right" valign="top"><a id="a18caa77a7871e1db7c51e2498218d71e" name="a18caa77a7871e1db7c51e2498218d71e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>BeginObject</b> (<a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sType, <a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sName={}, bool bGlobalName=false, bool bSingleLine=false)</td></tr>
+<tr class="memdesc:a18caa77a7871e1db7c51e2498218d71e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Begins outputting an object. <br /></td></tr>
+<tr class="separator:a18caa77a7871e1db7c51e2498218d71e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6082222d2f67b9d9663f071e5e145d5" id="r_af6082222d2f67b9d9663f071e5e145d5"><td class="memItemLeft" align="right" valign="top"><a id="af6082222d2f67b9d9663f071e5e145d5" name="af6082222d2f67b9d9663f071e5e145d5"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>EndObject</b> ()</td></tr>
+<tr class="memdesc:af6082222d2f67b9d9663f071e5e145d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ends outputting an object. <br /></td></tr>
+<tr class="separator:af6082222d2f67b9d9663f071e5e145d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a277f8f4fa1010814da2c573ef6f628cc" id="r_a277f8f4fa1010814da2c573ef6f628cc"><td class="memItemLeft" align="right" valign="top"><a id="a277f8f4fa1010814da2c573ef6f628cc" name="a277f8f4fa1010814da2c573ef6f628cc"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>BeginPrimitiveList</b> (xiiOpenDdlPrimitiveType type, <a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sName={}, bool bGlobalName=false)</td></tr>
+<tr class="memdesc:a277f8f4fa1010814da2c573ef6f628cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Begins outputting a list of primitives of the given type. <br /></td></tr>
+<tr class="separator:a277f8f4fa1010814da2c573ef6f628cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeec298a5ac8d267a9bfb9688c81f8148" id="r_aeec298a5ac8d267a9bfb9688c81f8148"><td class="memItemLeft" align="right" valign="top"><a id="aeec298a5ac8d267a9bfb9688c81f8148" name="aeec298a5ac8d267a9bfb9688c81f8148"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>EndPrimitiveList</b> ()</td></tr>
+<tr class="memdesc:aeec298a5ac8d267a9bfb9688c81f8148"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ends outputting the list of primitives. <br /></td></tr>
+<tr class="separator:aeec298a5ac8d267a9bfb9688c81f8148"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abba590e7affc2a038c5f18b79be1d434" id="r_abba590e7affc2a038c5f18b79be1d434"><td class="memItemLeft" align="right" valign="top"><a id="abba590e7affc2a038c5f18b79be1d434" name="abba590e7affc2a038c5f18b79be1d434"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>WriteBool</b> (const bool *pValues, xiiUInt32 uiCount=1)</td></tr>
+<tr class="memdesc:abba590e7affc2a038c5f18b79be1d434"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes a number of values to the primitive list. Can be called multiple times between <a class="el" href="#a277f8f4fa1010814da2c573ef6f628cc" title="Begins outputting a list of primitives of the given type.">BeginPrimitiveList()</a> / <a class="el" href="#aeec298a5ac8d267a9bfb9688c81f8148" title="Ends outputting the list of primitives.">EndPrimitiveList()</a>. <br /></td></tr>
+<tr class="separator:abba590e7affc2a038c5f18b79be1d434"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f225741819296aa4d14647da67e802b" id="r_a6f225741819296aa4d14647da67e802b"><td class="memItemLeft" align="right" valign="top"><a id="a6f225741819296aa4d14647da67e802b" name="a6f225741819296aa4d14647da67e802b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>WriteInt8</b> (const xiiInt8 *pValues, xiiUInt32 uiCount=1)</td></tr>
+<tr class="memdesc:a6f225741819296aa4d14647da67e802b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes a number of values to the primitive list. Can be called multiple times between <a class="el" href="#a277f8f4fa1010814da2c573ef6f628cc" title="Begins outputting a list of primitives of the given type.">BeginPrimitiveList()</a> / <a class="el" href="#aeec298a5ac8d267a9bfb9688c81f8148" title="Ends outputting the list of primitives.">EndPrimitiveList()</a>. <br /></td></tr>
+<tr class="separator:a6f225741819296aa4d14647da67e802b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae013b732f086d99a025bfa8c2f9f17d5" id="r_ae013b732f086d99a025bfa8c2f9f17d5"><td class="memItemLeft" align="right" valign="top"><a id="ae013b732f086d99a025bfa8c2f9f17d5" name="ae013b732f086d99a025bfa8c2f9f17d5"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>WriteInt16</b> (const xiiInt16 *pValues, xiiUInt32 uiCount=1)</td></tr>
+<tr class="memdesc:ae013b732f086d99a025bfa8c2f9f17d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes a number of values to the primitive list. Can be called multiple times between <a class="el" href="#a277f8f4fa1010814da2c573ef6f628cc" title="Begins outputting a list of primitives of the given type.">BeginPrimitiveList()</a> / <a class="el" href="#aeec298a5ac8d267a9bfb9688c81f8148" title="Ends outputting the list of primitives.">EndPrimitiveList()</a>. <br /></td></tr>
+<tr class="separator:ae013b732f086d99a025bfa8c2f9f17d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2e64cc267ddf96764edba5126a44cc6" id="r_ad2e64cc267ddf96764edba5126a44cc6"><td class="memItemLeft" align="right" valign="top"><a id="ad2e64cc267ddf96764edba5126a44cc6" name="ad2e64cc267ddf96764edba5126a44cc6"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>WriteInt32</b> (const xiiInt32 *pValues, xiiUInt32 uiCount=1)</td></tr>
+<tr class="memdesc:ad2e64cc267ddf96764edba5126a44cc6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes a number of values to the primitive list. Can be called multiple times between <a class="el" href="#a277f8f4fa1010814da2c573ef6f628cc" title="Begins outputting a list of primitives of the given type.">BeginPrimitiveList()</a> / <a class="el" href="#aeec298a5ac8d267a9bfb9688c81f8148" title="Ends outputting the list of primitives.">EndPrimitiveList()</a>. <br /></td></tr>
+<tr class="separator:ad2e64cc267ddf96764edba5126a44cc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47c8022477c1f8198a6df0cc264b479d" id="r_a47c8022477c1f8198a6df0cc264b479d"><td class="memItemLeft" align="right" valign="top"><a id="a47c8022477c1f8198a6df0cc264b479d" name="a47c8022477c1f8198a6df0cc264b479d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>WriteInt64</b> (const xiiInt64 *pValues, xiiUInt32 uiCount=1)</td></tr>
+<tr class="memdesc:a47c8022477c1f8198a6df0cc264b479d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes a number of values to the primitive list. Can be called multiple times between <a class="el" href="#a277f8f4fa1010814da2c573ef6f628cc" title="Begins outputting a list of primitives of the given type.">BeginPrimitiveList()</a> / <a class="el" href="#aeec298a5ac8d267a9bfb9688c81f8148" title="Ends outputting the list of primitives.">EndPrimitiveList()</a>. <br /></td></tr>
+<tr class="separator:a47c8022477c1f8198a6df0cc264b479d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5ea53db7aa0cef60e4e5cbfd3a2a274" id="r_ae5ea53db7aa0cef60e4e5cbfd3a2a274"><td class="memItemLeft" align="right" valign="top"><a id="ae5ea53db7aa0cef60e4e5cbfd3a2a274" name="ae5ea53db7aa0cef60e4e5cbfd3a2a274"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>WriteUInt8</b> (const xiiUInt8 *pValues, xiiUInt32 uiCount=1)</td></tr>
+<tr class="memdesc:ae5ea53db7aa0cef60e4e5cbfd3a2a274"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes a number of values to the primitive list. Can be called multiple times between <a class="el" href="#a277f8f4fa1010814da2c573ef6f628cc" title="Begins outputting a list of primitives of the given type.">BeginPrimitiveList()</a> / <a class="el" href="#aeec298a5ac8d267a9bfb9688c81f8148" title="Ends outputting the list of primitives.">EndPrimitiveList()</a>. <br /></td></tr>
+<tr class="separator:ae5ea53db7aa0cef60e4e5cbfd3a2a274"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a732ce5c60bee2e3ca4e8a886dae2994c" id="r_a732ce5c60bee2e3ca4e8a886dae2994c"><td class="memItemLeft" align="right" valign="top"><a id="a732ce5c60bee2e3ca4e8a886dae2994c" name="a732ce5c60bee2e3ca4e8a886dae2994c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>WriteUInt16</b> (const xiiUInt16 *pValues, xiiUInt32 uiCount=1)</td></tr>
+<tr class="memdesc:a732ce5c60bee2e3ca4e8a886dae2994c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes a number of values to the primitive list. Can be called multiple times between <a class="el" href="#a277f8f4fa1010814da2c573ef6f628cc" title="Begins outputting a list of primitives of the given type.">BeginPrimitiveList()</a> / <a class="el" href="#aeec298a5ac8d267a9bfb9688c81f8148" title="Ends outputting the list of primitives.">EndPrimitiveList()</a>. <br /></td></tr>
+<tr class="separator:a732ce5c60bee2e3ca4e8a886dae2994c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a590b1aa99ac1fe3c56776b18067952b0" id="r_a590b1aa99ac1fe3c56776b18067952b0"><td class="memItemLeft" align="right" valign="top"><a id="a590b1aa99ac1fe3c56776b18067952b0" name="a590b1aa99ac1fe3c56776b18067952b0"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>WriteUInt32</b> (const xiiUInt32 *pValues, xiiUInt32 uiCount=1)</td></tr>
+<tr class="memdesc:a590b1aa99ac1fe3c56776b18067952b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes a number of values to the primitive list. Can be called multiple times between <a class="el" href="#a277f8f4fa1010814da2c573ef6f628cc" title="Begins outputting a list of primitives of the given type.">BeginPrimitiveList()</a> / <a class="el" href="#aeec298a5ac8d267a9bfb9688c81f8148" title="Ends outputting the list of primitives.">EndPrimitiveList()</a>. <br /></td></tr>
+<tr class="separator:a590b1aa99ac1fe3c56776b18067952b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad05de65b34ce52e0e61ddc1a7328c107" id="r_ad05de65b34ce52e0e61ddc1a7328c107"><td class="memItemLeft" align="right" valign="top"><a id="ad05de65b34ce52e0e61ddc1a7328c107" name="ad05de65b34ce52e0e61ddc1a7328c107"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>WriteUInt64</b> (const xiiUInt64 *pValues, xiiUInt32 uiCount=1)</td></tr>
+<tr class="memdesc:ad05de65b34ce52e0e61ddc1a7328c107"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes a number of values to the primitive list. Can be called multiple times between <a class="el" href="#a277f8f4fa1010814da2c573ef6f628cc" title="Begins outputting a list of primitives of the given type.">BeginPrimitiveList()</a> / <a class="el" href="#aeec298a5ac8d267a9bfb9688c81f8148" title="Ends outputting the list of primitives.">EndPrimitiveList()</a>. <br /></td></tr>
+<tr class="separator:ad05de65b34ce52e0e61ddc1a7328c107"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada8c7a379e1b4aa63298410c673d15d9" id="r_ada8c7a379e1b4aa63298410c673d15d9"><td class="memItemLeft" align="right" valign="top"><a id="ada8c7a379e1b4aa63298410c673d15d9" name="ada8c7a379e1b4aa63298410c673d15d9"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>WriteFloat</b> (const float *pValues, xiiUInt32 uiCount=1)</td></tr>
+<tr class="memdesc:ada8c7a379e1b4aa63298410c673d15d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes a number of values to the primitive list. Can be called multiple times between <a class="el" href="#a277f8f4fa1010814da2c573ef6f628cc" title="Begins outputting a list of primitives of the given type.">BeginPrimitiveList()</a> / <a class="el" href="#aeec298a5ac8d267a9bfb9688c81f8148" title="Ends outputting the list of primitives.">EndPrimitiveList()</a>. <br /></td></tr>
+<tr class="separator:ada8c7a379e1b4aa63298410c673d15d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84ca622f1f1c25c94d7746fc4b5bb564" id="r_a84ca622f1f1c25c94d7746fc4b5bb564"><td class="memItemLeft" align="right" valign="top"><a id="a84ca622f1f1c25c94d7746fc4b5bb564" name="a84ca622f1f1c25c94d7746fc4b5bb564"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>WriteDouble</b> (const double *pValues, xiiUInt32 uiCount=1)</td></tr>
+<tr class="memdesc:a84ca622f1f1c25c94d7746fc4b5bb564"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes a number of values to the primitive list. Can be called multiple times between <a class="el" href="#a277f8f4fa1010814da2c573ef6f628cc" title="Begins outputting a list of primitives of the given type.">BeginPrimitiveList()</a> / <a class="el" href="#aeec298a5ac8d267a9bfb9688c81f8148" title="Ends outputting the list of primitives.">EndPrimitiveList()</a>. <br /></td></tr>
+<tr class="separator:a84ca622f1f1c25c94d7746fc4b5bb564"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac92b0a79cc3637957a60622cb8c9d389" id="r_ac92b0a79cc3637957a60622cb8c9d389"><td class="memItemLeft" align="right" valign="top"><a id="ac92b0a79cc3637957a60622cb8c9d389" name="ac92b0a79cc3637957a60622cb8c9d389"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>WriteString</b> (const <a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> &amp;sString)</td></tr>
+<tr class="memdesc:ac92b0a79cc3637957a60622cb8c9d389"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes a single string to the primitive list. Can be called multiple times between <a class="el" href="#a277f8f4fa1010814da2c573ef6f628cc" title="Begins outputting a list of primitives of the given type.">BeginPrimitiveList()</a> / <a class="el" href="#aeec298a5ac8d267a9bfb9688c81f8148" title="Ends outputting the list of primitives.">EndPrimitiveList()</a>. <br /></td></tr>
+<tr class="separator:ac92b0a79cc3637957a60622cb8c9d389"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a197c8b3dcdf5b4a5e75629aadb5e854c" id="r_a197c8b3dcdf5b4a5e75629aadb5e854c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a197c8b3dcdf5b4a5e75629aadb5e854c">WriteBinaryAsString</a> (const void *pData, xiiUInt32 uiBytes)</td></tr>
+<tr class="memdesc:a197c8b3dcdf5b4a5e75629aadb5e854c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes a single string to the primitive list, but the value is a HEX representation of the given binary data.  <br /></td></tr>
+<tr class="separator:a197c8b3dcdf5b4a5e75629aadb5e854c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-types" name="pro-types"></a>
+Protected Types</h2></td></tr>
+<tr class="memitem:a2b15f2c81ba2ef64d083c21893fee872" id="r_a2b15f2c81ba2ef64d083c21893fee872"><td class="memItemLeft" align="right" valign="top"><a id="a2b15f2c81ba2ef64d083c21893fee872" name="a2b15f2c81ba2ef64d083c21893fee872"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>State</b> { <br />
+&#160;&#160;<b>Invalid</b> = -5
+, <b>Empty</b> = -4
+, <b>ObjectSingleLine</b> = -3
+, <b>ObjectMultiLine</b> = -2
+, <br />
+&#160;&#160;<b>ObjectStart</b> = -1
+, <b>PrimitivesBool</b> = 0
+, <b>PrimitivesInt8</b>
+, <b>PrimitivesInt16</b>
+, <br />
+&#160;&#160;<b>PrimitivesInt32</b>
+, <b>PrimitivesInt64</b>
+, <b>PrimitivesUInt8</b>
+, <b>PrimitivesUInt16</b>
+, <br />
+&#160;&#160;<b>PrimitivesUInt32</b>
+, <b>PrimitivesUInt64</b>
+, <b>PrimitivesFloat</b>
+, <b>PrimitivesDouble</b>
+, <br />
+&#160;&#160;<b>PrimitivesString</b>
+<br />
+ }</td></tr>
+<tr class="separator:a2b15f2c81ba2ef64d083c21893fee872"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:ab2233f47494d4b75191ffa018a7d216d" id="r_ab2233f47494d4b75191ffa018a7d216d"><td class="memItemLeft" align="right" valign="top"><a id="ab2233f47494d4b75191ffa018a7d216d" name="ab2233f47494d4b75191ffa018a7d216d"></a>
+XII_ALWAYS_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><b>OutputString</b> (<a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> s)</td></tr>
+<tr class="separator:ab2233f47494d4b75191ffa018a7d216d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43c00e6c34c777677900649aaf14878d" id="r_a43c00e6c34c777677900649aaf14878d"><td class="memItemLeft" align="right" valign="top"><a id="a43c00e6c34c777677900649aaf14878d" name="a43c00e6c34c777677900649aaf14878d"></a>
+XII_ALWAYS_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><b>OutputString</b> (<a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> s, xiiUInt32 uiElementCount)</td></tr>
+<tr class="separator:a43c00e6c34c777677900649aaf14878d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3403ced4e409bd37e262c46c01e4596b" id="r_a3403ced4e409bd37e262c46c01e4596b"><td class="memItemLeft" align="right" valign="top"><a id="a3403ced4e409bd37e262c46c01e4596b" name="a3403ced4e409bd37e262c46c01e4596b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OutputEscapedString</b> (const <a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> &amp;string)</td></tr>
+<tr class="separator:a3403ced4e409bd37e262c46c01e4596b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab014f48d53595b9dd3f3d8d53a352d19" id="r_ab014f48d53595b9dd3f3d8d53a352d19"><td class="memItemLeft" align="right" valign="top"><a id="ab014f48d53595b9dd3f3d8d53a352d19" name="ab014f48d53595b9dd3f3d8d53a352d19"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OutputIndentation</b> ()</td></tr>
+<tr class="separator:ab014f48d53595b9dd3f3d8d53a352d19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab78d28d274580faa61288786563c0be6" id="r_ab78d28d274580faa61288786563c0be6"><td class="memItemLeft" align="right" valign="top"><a id="ab78d28d274580faa61288786563c0be6" name="ab78d28d274580faa61288786563c0be6"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OutputPrimitiveTypeNameCompliant</b> (xiiOpenDdlPrimitiveType type)</td></tr>
+<tr class="separator:ab78d28d274580faa61288786563c0be6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a252eddea0c21076a3b3d50dbf5259dac" id="r_a252eddea0c21076a3b3d50dbf5259dac"><td class="memItemLeft" align="right" valign="top"><a id="a252eddea0c21076a3b3d50dbf5259dac" name="a252eddea0c21076a3b3d50dbf5259dac"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OutputPrimitiveTypeNameShort</b> (xiiOpenDdlPrimitiveType type)</td></tr>
+<tr class="separator:a252eddea0c21076a3b3d50dbf5259dac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4967dffb3400a9d5105bbf4b2337716e" id="r_a4967dffb3400a9d5105bbf4b2337716e"><td class="memItemLeft" align="right" valign="top"><a id="a4967dffb3400a9d5105bbf4b2337716e" name="a4967dffb3400a9d5105bbf4b2337716e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OutputPrimitiveTypeNameShortest</b> (xiiOpenDdlPrimitiveType type)</td></tr>
+<tr class="separator:a4967dffb3400a9d5105bbf4b2337716e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5874be6ebfaa8f40867a6e38492e7abe" id="r_a5874be6ebfaa8f40867a6e38492e7abe"><td class="memItemLeft" align="right" valign="top"><a id="a5874be6ebfaa8f40867a6e38492e7abe" name="a5874be6ebfaa8f40867a6e38492e7abe"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>WritePrimitiveType</b> (xiiOpenDdlWriter::State exp)</td></tr>
+<tr class="separator:a5874be6ebfaa8f40867a6e38492e7abe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5cfbf6e8690222aba865cd01b06ec7e3" id="r_a5cfbf6e8690222aba865cd01b06ec7e3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5cfbf6e8690222aba865cd01b06ec7e3">OutputObjectName</a> (<a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sName, bool bGlobalName)</td></tr>
+<tr class="separator:a5cfbf6e8690222aba865cd01b06ec7e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d74fabe4cae1517246e2e0c9284f55c" id="r_a6d74fabe4cae1517246e2e0c9284f55c"><td class="memItemLeft" align="right" valign="top"><a id="a6d74fabe4cae1517246e2e0c9284f55c" name="a6d74fabe4cae1517246e2e0c9284f55c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>WriteBinaryAsHex</b> (const void *pData, xiiUInt32 uiBytes)</td></tr>
+<tr class="separator:a6d74fabe4cae1517246e2e0c9284f55c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7dc9c8f0fda23d6f3f270352451761d3" id="r_a7dc9c8f0fda23d6f3f270352451761d3"><td class="memItemLeft" align="right" valign="top"><a id="a7dc9c8f0fda23d6f3f270352451761d3" name="a7dc9c8f0fda23d6f3f270352451761d3"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OutputObjectBeginning</b> ()</td></tr>
+<tr class="separator:a7dc9c8f0fda23d6f3f270352451761d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:a33edd7ab535c693eaa8156f2bb7ad6be" id="r_a33edd7ab535c693eaa8156f2bb7ad6be"><td class="memItemLeft" align="right" valign="top"><a id="a33edd7ab535c693eaa8156f2bb7ad6be" name="a33edd7ab535c693eaa8156f2bb7ad6be"></a>
+xiiInt32&#160;</td><td class="memItemRight" valign="bottom"><b>m_iIndentation</b> = 0</td></tr>
+<tr class="separator:a33edd7ab535c693eaa8156f2bb7ad6be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeda456cf8764f3b39e9427c6d6b29dca" id="r_aeda456cf8764f3b39e9427c6d6b29dca"><td class="memItemLeft" align="right" valign="top"><a id="aeda456cf8764f3b39e9427c6d6b29dca" name="aeda456cf8764f3b39e9427c6d6b29dca"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_bCompactMode</b> = false</td></tr>
+<tr class="separator:aeda456cf8764f3b39e9427c6d6b29dca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31194f81a74d8715fada56210e0439dc" id="r_a31194f81a74d8715fada56210e0439dc"><td class="memItemLeft" align="right" valign="top"><a id="a31194f81a74d8715fada56210e0439dc" name="a31194f81a74d8715fada56210e0439dc"></a>
+<a class="el" href="#ac6621e26be4f2ce08e8e66a41c372ff5">TypeStringMode</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_TypeStringMode</b> = <a class="el" href="#ac6621e26be4f2ce08e8e66a41c372ff5a5b3571429e97357bc5cd927384ed2d10">TypeStringMode::ShortenedUnsignedInt</a></td></tr>
+<tr class="separator:a31194f81a74d8715fada56210e0439dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1208a8e66a2a9ed8e9af1b05a7331a34" id="r_a1208a8e66a2a9ed8e9af1b05a7331a34"><td class="memItemLeft" align="right" valign="top"><a id="a1208a8e66a2a9ed8e9af1b05a7331a34" name="a1208a8e66a2a9ed8e9af1b05a7331a34"></a>
+<a class="el" href="#a0afc2aeb0d0cc77cd1f2dff0a9f38e79">FloatPrecisionMode</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_FloatPrecisionMode</b> = <a class="el" href="#a0afc2aeb0d0cc77cd1f2dff0a9f38e79a1649aed298f99d587e2eb30c1db5946b">FloatPrecisionMode::Exact</a></td></tr>
+<tr class="separator:a1208a8e66a2a9ed8e9af1b05a7331a34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a607262c59f249ea2cf2e363dec72f7c7" id="r_a607262c59f249ea2cf2e363dec72f7c7"><td class="memItemLeft" align="right" valign="top"><a id="a607262c59f249ea2cf2e363dec72f7c7" name="a607262c59f249ea2cf2e363dec72f7c7"></a>
+<a class="el" href="../../d0/d18/classxii_stream_writer.html">xiiStreamWriter</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_pOutput</b> = nullptr</td></tr>
+<tr class="separator:a607262c59f249ea2cf2e363dec72f7c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a861bfeecbf8e1277ef32e127d05df364" id="r_a861bfeecbf8e1277ef32e127d05df364"><td class="memItemLeft" align="right" valign="top"><a id="a861bfeecbf8e1277ef32e127d05df364" name="a861bfeecbf8e1277ef32e127d05df364"></a>
+<a class="el" href="../../d4/dbb/classxii_string_builder.html">xiiStringBuilder</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_sTemp</b></td></tr>
+<tr class="separator:a861bfeecbf8e1277ef32e127d05df364"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46b5270b49d48e0007d5a0ea5eec9bcd" id="r_a46b5270b49d48e0007d5a0ea5eec9bcd"><td class="memItemLeft" align="right" valign="top"><a id="a46b5270b49d48e0007d5a0ea5eec9bcd" name="a46b5270b49d48e0007d5a0ea5eec9bcd"></a>
+<a class="el" href="../../dc/da9/classxii_hybrid_array.html">xiiHybridArray</a>&lt; <a class="el" href="../../dc/d00/structxii_open_ddl_writer_1_1_ddl_state.html">DdlState</a>, 16 &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_StateStack</b></td></tr>
+<tr class="separator:a46b5270b49d48e0007d5a0ea5eec9bcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>The base class for OpenDDL writers. </p>
+<p>Declares a common interface for writing OpenDDL files. </p>
+</div><h2 class="groupheader">Member Enumeration Documentation</h2>
+<a id="a0afc2aeb0d0cc77cd1f2dff0a9f38e79" name="a0afc2aeb0d0cc77cd1f2dff0a9f38e79"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0afc2aeb0d0cc77cd1f2dff0a9f38e79">&#9670;&#160;</a></span>FloatPrecisionMode</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum class <a class="el" href="#a0afc2aeb0d0cc77cd1f2dff0a9f38e79">xiiOpenDdlWriter::FloatPrecisionMode</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a0afc2aeb0d0cc77cd1f2dff0a9f38e79a4b8123df4e2b3456270c11394adf7607" name="a0afc2aeb0d0cc77cd1f2dff0a9f38e79a4b8123df4e2b3456270c11394adf7607"></a>Readable&#160;</td><td class="fielddoc"><p>Float values are printed as readable numbers. Precision might get lost though. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a0afc2aeb0d0cc77cd1f2dff0a9f38e79a1649aed298f99d587e2eb30c1db5946b" name="a0afc2aeb0d0cc77cd1f2dff0a9f38e79a1649aed298f99d587e2eb30c1db5946b"></a>Exact&#160;</td><td class="fielddoc"><p>Float values are printed as HEX, representing the exact binary data. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="ac6621e26be4f2ce08e8e66a41c372ff5" name="ac6621e26be4f2ce08e8e66a41c372ff5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac6621e26be4f2ce08e8e66a41c372ff5">&#9670;&#160;</a></span>TypeStringMode</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum class <a class="el" href="#ac6621e26be4f2ce08e8e66a41c372ff5">xiiOpenDdlWriter::TypeStringMode</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ac6621e26be4f2ce08e8e66a41c372ff5a952358fc53c0167a1ea7354f338ed5af" name="ac6621e26be4f2ce08e8e66a41c372ff5a952358fc53c0167a1ea7354f338ed5af"></a>Compliant&#160;</td><td class="fielddoc"><p>All primitive types are written as the OpenDDL standard defines them (very verbose) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ac6621e26be4f2ce08e8e66a41c372ff5a5b3571429e97357bc5cd927384ed2d10" name="ac6621e26be4f2ce08e8e66a41c372ff5a5b3571429e97357bc5cd927384ed2d10"></a>ShortenedUnsignedInt&#160;</td><td class="fielddoc"><p>unsigned_intX is shortened to uintX </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ac6621e26be4f2ce08e8e66a41c372ff5ace42b65744e60ed9b32e7d4f750a66a5" name="ac6621e26be4f2ce08e8e66a41c372ff5ace42b65744e60ed9b32e7d4f750a66a5"></a>Shortest&#160;</td><td class="fielddoc"><p>All primitive type names are shortened to one or two characters: i1, i2, i3, i4, u1, u2, u3, u4, b, s, f, d (int, uint, bool, string, float, double) </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a5cfbf6e8690222aba865cd01b06ec7e3" name="a5cfbf6e8690222aba865cd01b06ec7e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5cfbf6e8690222aba865cd01b06ec7e3">&#9670;&#160;</a></span>OutputObjectName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void xiiOpenDdlWriter::OutputObjectName </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a></td>          <td class="paramname"><span class="paramname"><em>sName</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>bGlobalName</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="test"><dt><b><a class="el" href="../../d4/df6/test.html#_test000017">Test</a></b></dt><dd>This code path is untested </dd></dl>
+
+</div>
+</div>
+<a id="a197c8b3dcdf5b4a5e75629aadb5e854c" name="a197c8b3dcdf5b4a5e75629aadb5e854c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a197c8b3dcdf5b4a5e75629aadb5e854c">&#9670;&#160;</a></span>WriteBinaryAsString()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void xiiOpenDdlWriter::WriteBinaryAsString </td>
+          <td>(</td>
+          <td class="paramtype">const void *</td>          <td class="paramname"><span class="paramname"><em>pData</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">xiiUInt32</td>          <td class="paramname"><span class="paramname"><em>uiBytes</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Writes a single string to the primitive list, but the value is a HEX representation of the given binary data. </p>
+<dl class="test"><dt><b><a class="el" href="../../d4/df6/test.html#_test000018">Test</a></b></dt><dd><a class="el" href="#a197c8b3dcdf5b4a5e75629aadb5e854c" title="Writes a single string to the primitive list, but the value is a HEX representation of the given bina...">xiiOpenDdlWriter::WriteBinaryAsString</a> </dd></dl>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li>/home/runner/work/XII/XII/Source/Engine/Foundation/IO/<a class="el" href="../../d3/d29/_open_ddl_writer_8h_source.html">OpenDdlWriter.h</a></li>
+<li>/home/runner/work/XII/XII/Source/Engine/Foundation/IO/Implementation/<b>OpenDdlWriter.cpp</b></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../d5/d15/classxii_open_ddl_writer.html">xiiOpenDdlWriter</a></li>
+    <li class="footer">Generated on Mon Jul 1 2024 23:53:15 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+  </ul>
+</div>
+</body>
+</html>
