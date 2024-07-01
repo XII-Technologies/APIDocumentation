@@ -1,7 +1,6 @@
 var structxii_generic_id =
 [
     [ "StorageType", "d0/dcc/structxii_generic_id.htm#a3c1375382b1185e9724cc6ad887e883a", null ],
-    [ "STORAGE_SIZE", "d0/dcc/structxii_generic_id.htm#a360234174c15cfc5f51a1b1d67f9e9b2ad9afb18edd4ad7d6cd87646b8cbda3fe", null ],
     [ "xiiGenericId", "d0/dcc/structxii_generic_id.htm#a387213b10e8f6ae4365801d4d2f11f01", null ],
     [ "XII_DECLARE_ID_TYPE", "d0/dcc/structxii_generic_id.htm#a54d40f617a379229b8cae5a65b451f93", null ],
     [ "m_Data", "d0/dcc/structxii_generic_id.htm#ae651895dd44b3b9404b4bfbfe87123b2", null ],

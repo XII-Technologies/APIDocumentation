@@ -4,7 +4,7 @@ var classxii_visual_script_pin =
     [ "~xiiVisualScriptPin", "d3/d82/classxii_visual_script_pin.htm#ae962c139f9dd9418381aa5131e5f948b", null ],
     [ "CanConvertTo", "d3/d82/classxii_visual_script_pin.htm#ad1745a3f4fbc691db11a686fc2ee63e6", null ],
     [ "GetDataPinIndex", "d3/d82/classxii_visual_script_pin.htm#ab7971b97a5380fee7ca41436d8bbdea2", null ],
-    [ "GetDataType", "d3/d82/classxii_visual_script_pin.htm#a2a2ba9945253fea1b99a0a6514dafe2b", null ],
+    [ "GetDataType", "d3/d82/classxii_visual_script_pin.htm#acb7bb6179501ced91be27f7b603e4136", null ],
     [ "GetDataTypeName", "d3/d82/classxii_visual_script_pin.htm#a4cf7a5ead06ff93ed2abca67500b2ba5", null ],
     [ "GetDeductTypeFunc", "d3/d82/classxii_visual_script_pin.htm#aae6ba3360e1199dedb1301d6832c87b3", null ],
     [ "GetResolvedScriptDataType", "d3/d82/classxii_visual_script_pin.htm#ae4083f841194749ce7f0aee2b229e8e1", null ],

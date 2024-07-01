@@ -34,7 +34,7 @@ var classxii_array_ptr =
     [ "operator==", "d0/d60/classxii_array_ptr.htm#a8df7d238ef6fe116cd27132b756bb798", null ],
     [ "operator==", "d0/d60/classxii_array_ptr.htm#ae741b96f303b054bc01795bba84faaa1", null ],
     [ "operator[]", "d0/d60/classxii_array_ptr.htm#a5489dfb672c0dee38daf06237da8902c", null ],
-    [ "operator[]", "d0/d60/classxii_array_ptr.htm#a9054c8818771151136a552c47cc1eb32", null ],
+    [ "operator[]", "d0/d60/classxii_array_ptr.htm#a794a25444c1560105d1b43cdb101f77e", null ],
     [ "Swap", "d0/d60/classxii_array_ptr.htm#a167a4078a162ed3b5e1d5ac058624beb", null ],
     [ "ToByteArray", "d0/d60/classxii_array_ptr.htm#ad7a90242ebfdddeeeabe1853325afaa2", null ],
     [ "ToByteArray", "d0/d60/classxii_array_ptr.htm#aa4d631277dc3cdbd8cd3d225b3c9941a", null ],

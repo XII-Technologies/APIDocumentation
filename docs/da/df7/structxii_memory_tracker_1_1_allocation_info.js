@@ -2,7 +2,7 @@ var structxii_memory_tracker_1_1_allocation_info =
 [
     [ "AllocationInfo", "da/df7/structxii_memory_tracker_1_1_allocation_info.htm#a51d37dcfc4aeecd4682013db79fbe95d", null ],
     [ "GetStackTrace", "da/df7/structxii_memory_tracker_1_1_allocation_info.htm#a3ea954a529faf7749036b85992153af3", null ],
-    [ "GetStackTrace", "da/df7/structxii_memory_tracker_1_1_allocation_info.htm#a8801366607878e6c5f4f3b5e2df01af3", null ],
+    [ "GetStackTrace", "da/df7/structxii_memory_tracker_1_1_allocation_info.htm#ae6f68fb75398c4cb008ee48678caac58", null ],
     [ "SetStackTrace", "da/df7/structxii_memory_tracker_1_1_allocation_info.htm#a413c99ee4039752e9d80c4d12c5ae203", null ],
     [ "XII_DECLARE_POD_TYPE", "da/df7/structxii_memory_tracker_1_1_allocation_info.htm#a301eb58688a9d5dc117ac93768c79f03", null ],
     [ "m_pStackTrace", "da/df7/structxii_memory_tracker_1_1_allocation_info.htm#a698a51dd8930783b41c150c07f9ba037", null ],

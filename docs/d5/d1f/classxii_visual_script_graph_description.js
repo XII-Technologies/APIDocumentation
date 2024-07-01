@@ -12,8 +12,8 @@ var classxii_visual_script_graph_description =
     [ "xiiVisualScriptGraphDescription", "d5/d1f/classxii_visual_script_graph_description.htm#a13bfa4f6a060aadfef96f58e5eacc61e", null ],
     [ "~xiiVisualScriptGraphDescription", "d5/d1f/classxii_visual_script_graph_description.htm#a8d9a10a663b756512d7f5618c7aa3905", null ],
     [ "Deserialize", "d5/d1f/classxii_visual_script_graph_description.htm#a753ef89a5b19af37f135c7e1639d57ee", null ],
-    [ "GetLocalDataDesc", "d5/d1f/classxii_visual_script_graph_description.htm#a663dc0d3a9d294ed5b5023b02bbf0fa4", null ],
+    [ "GetLocalDataDesc", "d5/d1f/classxii_visual_script_graph_description.htm#a9f717721f8db2ffa9b23f67c23e7ffb4", null ],
     [ "GetMessageDesc", "d5/d1f/classxii_visual_script_graph_description.htm#a05fe882b2dac29b1f1ded5fc6c038cfb", null ],
-    [ "GetNode", "d5/d1f/classxii_visual_script_graph_description.htm#abc3846185a4fcbab39a7edd9cc5655b5", null ],
+    [ "GetNode", "d5/d1f/classxii_visual_script_graph_description.htm#a92fa5a77cc4aff398ef0fe9d9a59c4cb", null ],
     [ "IsCoroutine", "d5/d1f/classxii_visual_script_graph_description.htm#a78c04a4058b9c5be9374d65550bede7b", null ]
 ];

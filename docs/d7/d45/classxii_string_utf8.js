@@ -5,7 +5,7 @@ var classxii_string_utf8 =
     [ "xiiStringUtf8", "d7/d45/classxii_string_utf8.htm#a86a14fef19348aa263bd94314ed26b19", null ],
     [ "xiiStringUtf8", "d7/d45/classxii_string_utf8.htm#aa9f5b725ad2e7697d60e70422d7c4d4f", null ],
     [ "xiiStringUtf8", "d7/d45/classxii_string_utf8.htm#a2e5d7f07d3a2142b3cf081b71c9a5603", null ],
-    [ "GetData", "d7/d45/classxii_string_utf8.htm#a42bb5a0c530aecfe9f8cc5d91a339a36", null ],
+    [ "GetData", "d7/d45/classxii_string_utf8.htm#ac89f84142e432ecdd328d476ed562240", null ],
     [ "GetElementCount", "d7/d45/classxii_string_utf8.htm#a08e42e073d53a04ffedbef321327657b", null ],
     [ "GetView", "d7/d45/classxii_string_utf8.htm#a6b0bd448b8fba9d7f091a4bf237566f8", null ],
     [ "operator const char *", "d7/d45/classxii_string_utf8.htm#ad16fd582c48a0f6d074b09648fbbd489", null ],

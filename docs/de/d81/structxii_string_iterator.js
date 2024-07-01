@@ -9,7 +9,7 @@ var structxii_string_iterator =
     [ "xiiStringIterator", "de/d81/structxii_string_iterator.htm#a328f16309087bf99fdc6597e55a7131e", null ],
     [ "Advance", "de/d81/structxii_string_iterator.htm#ac85be9d66a28a226c963abbcc0004d4a", null ],
     [ "GetCharacter", "de/d81/structxii_string_iterator.htm#a75128e83d2d6f529f4aa4414813bf40a", null ],
-    [ "GetData", "de/d81/structxii_string_iterator.htm#aedf6a7475ac224a76cf6a4121b910720", null ],
+    [ "GetData", "de/d81/structxii_string_iterator.htm#aea2ba4171466b3fa4168ad956c6aebd6", null ],
     [ "IsValid", "de/d81/structxii_string_iterator.htm#a91a4535ce56adfa96fa09fab27c23b1b", null ],
     [ "operator*", "de/d81/structxii_string_iterator.htm#a28ff913a0f79297d6546cbafac5d4897", null ],
     [ "operator+", "de/d81/structxii_string_iterator.htm#a38b0694c6211ec75d6ff3299822e1e6f", null ],

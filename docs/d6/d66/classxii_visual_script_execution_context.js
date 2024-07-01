@@ -7,7 +7,7 @@ var classxii_visual_script_execution_context =
     [ "Deinitialize", "d6/d66/classxii_visual_script_execution_context.htm#a116cbe1edfdd0fcabb1f2f7e5d91aa8a", null ],
     [ "Execute", "d6/d66/classxii_visual_script_execution_context.htm#a759e29fb2c82fb88d1f722c5fb9a8964", null ],
     [ "GetCurrentCoroutine", "d6/d66/classxii_visual_script_execution_context.htm#acba2a989de6431cf288d2be888c0427f", null ],
-    [ "GetData", "d6/d66/classxii_visual_script_execution_context.htm#a4e3e948e70a1f8b4cf2e1e5dfc4ce980", null ],
+    [ "GetData", "d6/d66/classxii_visual_script_execution_context.htm#a2a3b75c3e0697279e4de62e484bbe7cb", null ],
     [ "GetData", "d6/d66/classxii_visual_script_execution_context.htm#a159eb5a2df0fc414418bbf4edc05842a", null ],
     [ "GetDataAsVariant", "d6/d66/classxii_visual_script_execution_context.htm#a66f76a33f9e643d4db711e88623d9b01", null ],
     [ "GetDeltaTimeSinceLastExecution", "d6/d66/classxii_visual_script_execution_context.htm#a050c71b13d4a52716f6bb1289e39947c", null ],

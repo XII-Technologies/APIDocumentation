@@ -8,7 +8,7 @@ var classxii_spawn_component =
     [ "GetAttachAsChild", "df/d53/classxii_spawn_component.htm#ad4e2872d5e5ec331865a348fe8f6fe01", null ],
     [ "GetParameter", "df/d53/classxii_spawn_component.htm#af7289be53a34567963bcc1f3e414746a", null ],
     [ "GetParameters", "df/d53/classxii_spawn_component.htm#a9419266bf97c9efc59a515fb7ce65bc7", null ],
-    [ "GetPrefab", "df/d53/classxii_spawn_component.htm#a083753810d546fdd11e46759b19b042f", null ],
+    [ "GetPrefab", "df/d53/classxii_spawn_component.htm#ad0f0b439879fd186c1bf0e3ddb9269a0", null ],
     [ "GetPrefabFile", "df/d53/classxii_spawn_component.htm#ad48923e744560b7aac1b4c2a9f8e50a1", null ],
     [ "GetSpawnAtStart", "df/d53/classxii_spawn_component.htm#a6b51c866628ea9d15748a8977a1713b0", null ],
     [ "GetSpawnContinuously", "df/d53/classxii_spawn_component.htm#ab769de5a4f61bd83f993dca8cd8e041a", null ],

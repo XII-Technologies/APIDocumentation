@@ -11,7 +11,7 @@ var structxii_hybrid_string_base =
     [ "~xiiHybridStringBase", "df/d4f/structxii_hybrid_string_base.htm#a4df07698a7751857afeb872ef08053d3", null ],
     [ "Clear", "df/d4f/structxii_hybrid_string_base.htm#a3e3c71d8981b8bbbca81a9c55421860d", null ],
     [ "GetCharacterCount", "df/d4f/structxii_hybrid_string_base.htm#a086838cd056f14619fdb74147286f2bb", null ],
-    [ "GetData", "df/d4f/structxii_hybrid_string_base.htm#a0b5d233da03c9c8de3a264ec2aa3a854", null ],
+    [ "GetData", "df/d4f/structxii_hybrid_string_base.htm#af918be3076cb4cb09be77b2783bc8029", null ],
     [ "GetElementCount", "df/d4f/structxii_hybrid_string_base.htm#a8615de56509497abe4e25ff08955a025", null ],
     [ "GetFirst", "df/d4f/structxii_hybrid_string_base.htm#a8ff03462c0d48940f7f12af313135107", null ],
     [ "GetHeapMemoryUsage", "df/d4f/structxii_hybrid_string_base.htm#a23af029cf9011b12d88278fd23e59c98", null ],

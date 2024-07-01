@@ -21,7 +21,7 @@ var classxii_camera =
     [ "GetPosition", "dc/d68/classxii_camera.htm#af51a844916a0abcd1df6c80d76d99cdc", null ],
     [ "GetProjectionMatrix", "dc/d68/classxii_camera.htm#a3d2df6b0ff9858a8ac77b5fa25174800", null ],
     [ "GetSettingsModificationCounter", "dc/d68/classxii_camera.htm#aef317b3be6f80a0db1d2767d2b40afe0", null ],
-    [ "GetViewMatrix", "dc/d68/classxii_camera.htm#a883883de80d6d3986400f680b390f660", null ],
+    [ "GetViewMatrix", "dc/d68/classxii_camera.htm#a050f5f64decbb405e1e9b98d42996c9b", null ],
     [ "IsOrthographic", "dc/d68/classxii_camera.htm#ab8c3b7d699a18984fb534c59dbcc8cda", null ],
     [ "IsPerspective", "dc/d68/classxii_camera.htm#a45b1872ac42b3d5ca9c54446eb6666c2", null ],
     [ "IsStereoscopic", "dc/d68/classxii_camera.htm#ac5f3c7e2e8e8af95bf5ef03a24244157", null ],

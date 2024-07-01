@@ -5,7 +5,7 @@ var classxii_transform_template =
     [ "xiiTransformTemplate", "d5/d13/classxii_transform_template.htm#af5f15afb9a22a7c2f913f6f0316a0751", null ],
     [ "ContainsNegativeScale", "d5/d13/classxii_transform_template.htm#a33662d5ecbe759b7b29cf3e14f456652", null ],
     [ "ContainsUniformScale", "d5/d13/classxii_transform_template.htm#a425ad7398ce0d3d84707b7b6ee7c04a6", null ],
-    [ "GetAsMat4", "d5/d13/classxii_transform_template.htm#a9e7c0d80aebfb786dd22d57b98f415dc", null ],
+    [ "GetAsMat4", "d5/d13/classxii_transform_template.htm#a806372139851347c072ab5c28c69acef", null ],
     [ "GetInverse", "d5/d13/classxii_transform_template.htm#a70ed1d718e1e7b27e52b3d43113de7d5", null ],
     [ "GetMaxScale", "d5/d13/classxii_transform_template.htm#a253a2035630ccd15b1c5d39a9a5d5826", null ],
     [ "Invert", "d5/d13/classxii_transform_template.htm#a1351dca4ceb5c54ddfbaab055a46968e", null ],

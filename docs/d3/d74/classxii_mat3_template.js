@@ -29,7 +29,7 @@ var classxii_mat3_template =
     [ "SetRow", "d3/d74/classxii_mat3_template.htm#a9df6f445183ab2fe78794e27a6ab8c12", null ],
     [ "SetScalingFactors", "d3/d74/classxii_mat3_template.htm#a9aab0677882d361e8eb188d9f30707db", null ],
     [ "SetZero", "d3/d74/classxii_mat3_template.htm#a9ab491f721aa3f2be6e453782c147bff", null ],
-    [ "TransformDirection", "d3/d74/classxii_mat3_template.htm#a82951f19f6a4cc13b0dfe5568d273f46", null ],
+    [ "TransformDirection", "d3/d74/classxii_mat3_template.htm#af8517a144ac1cf4d9df9232804817f11", null ],
     [ "Transpose", "d3/d74/classxii_mat3_template.htm#a5f510634863c1ab428d1454e00eaa4b6", null ],
     [ "XII_DECLARE_POD_TYPE", "d3/d74/classxii_mat3_template.htm#a7ee1d5cb8b2513c2244dd32ef364dc8f", null ],
     [ "m_fElementsCM", "d3/d74/classxii_mat3_template.htm#ae0ae61baee9629f7bc8d90b134437070", null ]

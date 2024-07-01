@@ -7,7 +7,7 @@ var classxii_g_a_l_texture_d3_d11 =
     [ "CreateTexture2D", "d5/d37/classxii_g_a_l_texture_d3_d11.htm#a9e079040c33103d25c745e0a0ce1f295", null ],
     [ "CreateTexture3D", "d5/d37/classxii_g_a_l_texture_d3_d11.htm#ab2c78464431a45e676e0bfff94c20669", null ],
     [ "DeInitPlatform", "d5/d37/classxii_g_a_l_texture_d3_d11.htm#a989a898c93c730e481a893d72fccd06a", null ],
-    [ "GetSparseProperties", "d5/d37/classxii_g_a_l_texture_d3_d11.htm#afbf4e4b6e47f06a8440ef2529f1c67b0", null ],
+    [ "GetSparseProperties", "d5/d37/classxii_g_a_l_texture_d3_d11.htm#a93349d7eb93379120d72e5d0c0aaab4c", null ],
     [ "GetTexture", "d5/d37/classxii_g_a_l_texture_d3_d11.htm#a7a9acedfddddba3374a30d2539aed46a", null ],
     [ "InitializeSparseTextureProperties", "d5/d37/classxii_g_a_l_texture_d3_d11.htm#ab5b972c3a4063893ecaab043af636a4a", null ],
     [ "InitPlatform", "d5/d37/classxii_g_a_l_texture_d3_d11.htm#a384c86779fa3b7fc1e6e5ad8353f2f3b", null ],

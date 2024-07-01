@@ -8,7 +8,7 @@ var structxii_string_reverse_iterator =
     [ "xiiStringReverseIterator", "d8/d78/structxii_string_reverse_iterator.htm#afac5c118a40a4272ed1218094d9aea85", null ],
     [ "xiiStringReverseIterator", "d8/d78/structxii_string_reverse_iterator.htm#aea633a96f97731f4ec8cfbff2a647cf1", null ],
     [ "GetCharacter", "d8/d78/structxii_string_reverse_iterator.htm#a1a22d5900004ce7015d1c5f5ba5e8fc5", null ],
-    [ "GetData", "d8/d78/structxii_string_reverse_iterator.htm#a23c6d0dc0e355fd058bbfcee511f3626", null ],
+    [ "GetData", "d8/d78/structxii_string_reverse_iterator.htm#a36d1e75d91af820c383e1e46456f5fb0", null ],
     [ "IsValid", "d8/d78/structxii_string_reverse_iterator.htm#a5a8f74a06980ec33ff8774d911e5d385", null ],
     [ "operator*", "d8/d78/structxii_string_reverse_iterator.htm#a6bc485bbb5f5ab9401d4f349c3183d10", null ],
     [ "operator+", "d8/d78/structxii_string_reverse_iterator.htm#a0ca42aa2663ee2234ddb207a08116e8a", null ],

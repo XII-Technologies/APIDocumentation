@@ -28,7 +28,7 @@ var classxii_blob_ptr =
     [ "operator=", "d3/d93/classxii_blob_ptr.htm#a05b95e1c29d6cc29169a555402d1eb62", null ],
     [ "operator==", "d3/d93/classxii_blob_ptr.htm#ab3fc093be9edc88b641bdf2874853e57", null ],
     [ "operator[]", "d3/d93/classxii_blob_ptr.htm#a07419bca62c1e522879972b038ef838c", null ],
-    [ "operator[]", "d3/d93/classxii_blob_ptr.htm#a0c6f284381cc283443b56068902faba3", null ],
+    [ "operator[]", "d3/d93/classxii_blob_ptr.htm#a03895d7fcda2439991728d52d70e07e9", null ],
     [ "Swap", "d3/d93/classxii_blob_ptr.htm#aca9ffee671454a1dac4c7e2204f63be2", null ],
     [ "ToByteBlob", "d3/d93/classxii_blob_ptr.htm#a5239a964b01057da403d6e36f5eb1014", null ],
     [ "ToByteBlob", "d3/d93/classxii_blob_ptr.htm#a71a36623f98cbb79f03ce32d5e59dbb5", null ],

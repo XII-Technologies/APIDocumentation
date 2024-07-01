@@ -18,7 +18,7 @@ var classxii_property_anim_component =
     [ "CreatePropertyBindings", "da/d5a/classxii_property_anim_component.htm#a5b97631b4d0d9a87ca1652d8a95439a3", null ],
     [ "DeserializeComponent", "da/d5a/classxii_property_anim_component.htm#a760bc1dc0a19921a8e02e91af99424ea", null ],
     [ "EvaluateEventTrack", "da/d5a/classxii_property_anim_component.htm#a006fa6e1f5f2abb64f0a4cd91b03b525", null ],
-    [ "GetPropertyAnim", "da/d5a/classxii_property_anim_component.htm#ae5bc44c0223a621097f0d0e71391b006", null ],
+    [ "GetPropertyAnim", "da/d5a/classxii_property_anim_component.htm#a92d3c2a653b3170538447ba686c05bc2", null ],
     [ "GetPropertyAnimFile", "da/d5a/classxii_property_anim_component.htm#aea9f5246589f50baeb6b5d4e85a8a41a", null ],
     [ "OnMsgSetPlaying", "da/d5a/classxii_property_anim_component.htm#a1747587554067ac86a700a5b01674ca7", null ],
     [ "OnSimulationStarted", "da/d5a/classxii_property_anim_component.htm#aa48af9319107eaea2b801446496e90e9", null ],

@@ -3,7 +3,7 @@ var classxii_color_animation_component =
     [ "xiiColorAnimationComponent", "db/d48/classxii_color_animation_component.htm#af513be59b2fddbc519425453fe8ae3b6", null ],
     [ "DeserializeComponent", "db/d48/classxii_color_animation_component.htm#a6a53bca8d184ddae69fbf6a084661ff3", null ],
     [ "GetApplyRecursive", "db/d48/classxii_color_animation_component.htm#aac85f8f5a2d8e62099f765ffd1f3c0c5", null ],
-    [ "GetColorGradient", "db/d48/classxii_color_animation_component.htm#af0c86e9408acc11fe9696d23e1c7375e", null ],
+    [ "GetColorGradient", "db/d48/classxii_color_animation_component.htm#a9d82698dd8f38e22620183387792307b", null ],
     [ "GetColorGradientFile", "db/d48/classxii_color_animation_component.htm#ab3dae0ffef434b6dd2f084058f16ebc1", null ],
     [ "GetRandomStartOffset", "db/d48/classxii_color_animation_component.htm#adcd52b9eb0ab28c557876e0fded5194c", null ],
     [ "OnSimulationStarted", "db/d48/classxii_color_animation_component.htm#a5a17e701739aa735b0927d90962922db", null ],

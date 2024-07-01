@@ -3,7 +3,7 @@ var classxii_g_a_l_pipeline_state =
     [ "xiiGALPipelineState", "d0/d7b/classxii_g_a_l_pipeline_state.htm#aa94ded7d7a958a5972817ab99663a3ba", null ],
     [ "~xiiGALPipelineState", "d0/d7b/classxii_g_a_l_pipeline_state.htm#a0bdce090d6a7b216737b9f634b0497a2", null ],
     [ "DeInitPlatform", "d0/d7b/classxii_g_a_l_pipeline_state.htm#a21c7c2982e12bea8cff21779388ff43f", null ],
-    [ "GetDescription", "d0/d7b/classxii_g_a_l_pipeline_state.htm#aa33d2c01edb8fe168797cc382a04c253", null ],
+    [ "GetDescription", "d0/d7b/classxii_g_a_l_pipeline_state.htm#aad4283f4cecf4ad3e7baef340e6e7eb6", null ],
     [ "InitPlatform", "d0/d7b/classxii_g_a_l_pipeline_state.htm#af38348e652b79ebde254cc02debad775", null ],
     [ "ResetBoundResources", "d0/d7b/classxii_g_a_l_pipeline_state.htm#a616ac4bfbcfe37fbe01671efcde076ab", null ],
     [ "SetConstantBuffer", "d0/d7b/classxii_g_a_l_pipeline_state.htm#a239527954a500c15728e4b779e212d71", null ],

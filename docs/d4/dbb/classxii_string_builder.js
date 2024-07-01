@@ -29,7 +29,7 @@ var classxii_string_builder =
     [ "Clear", "d4/dbb/classxii_string_builder.htm#a6c4ff4b9a231f6a5cd063b03613d87b4", null ],
     [ "GetAllocator", "d4/dbb/classxii_string_builder.htm#af400b5486adfb481f3bc1940932a672b", null ],
     [ "GetCharacterCount", "d4/dbb/classxii_string_builder.htm#a1d19773960f09e48cf3544ef36edca64", null ],
-    [ "GetData", "d4/dbb/classxii_string_builder.htm#a07d589269f03088a6f02b51f3c1a5ca8", null ],
+    [ "GetData", "d4/dbb/classxii_string_builder.htm#a83ea1990a5c974e5d806e9f32146b2a1", null ],
     [ "GetElementCount", "d4/dbb/classxii_string_builder.htm#a150b4db5b8ac2beb7a7a9c1081781cc4", null ],
     [ "GetHeapMemoryUsage", "d4/dbb/classxii_string_builder.htm#aab6bdc6adbaf905c2cf4146655198819", null ],
     [ "Insert", "d4/dbb/classxii_string_builder.htm#a2445f6243764d8d16e1459f27055859a", null ],

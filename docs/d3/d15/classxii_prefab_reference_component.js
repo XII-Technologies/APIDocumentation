@@ -6,7 +6,7 @@ var classxii_prefab_reference_component =
     [ "DeserializeComponent", "d3/d15/classxii_prefab_reference_component.htm#ad3de1a361ab1cbcfaf5cf08e4851f25e", null ],
     [ "GetParameter", "d3/d15/classxii_prefab_reference_component.htm#aea4f876a2500ccf759afe24056b529fa", null ],
     [ "GetParameters", "d3/d15/classxii_prefab_reference_component.htm#a1c3362d6e3f7803689270b70184e4e02", null ],
-    [ "GetPrefab", "d3/d15/classxii_prefab_reference_component.htm#ab1b2acd0fc12829f4042f73ff1bbca7d", null ],
+    [ "GetPrefab", "d3/d15/classxii_prefab_reference_component.htm#a4c89b41b2a7b851fcb22ff65d234a2ff", null ],
     [ "GetPrefabFile", "d3/d15/classxii_prefab_reference_component.htm#a40ff8b44eea9cbff0d235a964b67f190", null ],
     [ "OnActivated", "d3/d15/classxii_prefab_reference_component.htm#adddffdc95d7e85bd31bd4b1003d7338a", null ],
     [ "OnDeactivated", "d3/d15/classxii_prefab_reference_component.htm#a3ddd819c30558efb8f4cfb82d4ee498c", null ],

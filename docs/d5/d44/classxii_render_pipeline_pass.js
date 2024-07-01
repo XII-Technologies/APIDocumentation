@@ -7,7 +7,7 @@ var classxii_render_pipeline_pass =
     [ "ExecuteInactive", "d5/d44/classxii_render_pipeline_pass.htm#a469c62090e3034fe624841a0f32734a6", null ],
     [ "GetName", "d5/d44/classxii_render_pipeline_pass.htm#aac9d2647f997a91291afcca8ec2a7c29", null ],
     [ "GetPipeline", "d5/d44/classxii_render_pipeline_pass.htm#a411e8f650e49eb700301f9a744500845", null ],
-    [ "GetPipeline", "d5/d44/classxii_render_pipeline_pass.htm#acad787796797f3024fe5e122f1cb2ce8", null ],
+    [ "GetPipeline", "d5/d44/classxii_render_pipeline_pass.htm#a891a0715440006f319a75c750bd3080b", null ],
     [ "GetRenderTargetDescriptions", "d5/d44/classxii_render_pipeline_pass.htm#a36bc9d71d7061f9ea4e723fda6d41e7a", null ],
     [ "InitRenderPipelinePass", "d5/d44/classxii_render_pipeline_pass.htm#a55a440ea75cb1a5e4b109b677812a2c1", null ],
     [ "IsStereoAware", "d5/d44/classxii_render_pipeline_pass.htm#a4163127ec40a1ce5b8f22e4955f26abe", null ],

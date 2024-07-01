@@ -7,7 +7,7 @@ var classxii_dynamic_mesh_buffer_resource =
     [ "AccessIndex32Data", "dd/d17/classxii_dynamic_mesh_buffer_resource.htm#aaf375716ce012051ff988094e36ac524", null ],
     [ "AccessVertexData", "dd/d17/classxii_dynamic_mesh_buffer_resource.htm#ae130011eb099d5e32dbe1f50094d580e", null ],
     [ "GetColorBuffer", "dd/d17/classxii_dynamic_mesh_buffer_resource.htm#af97c682ed5d7a98be992e9c82937a022", null ],
-    [ "GetDescriptor", "dd/d17/classxii_dynamic_mesh_buffer_resource.htm#ab720928656d1fd5abcd72c11962857e9", null ],
+    [ "GetDescriptor", "dd/d17/classxii_dynamic_mesh_buffer_resource.htm#a227a1d14308315f27297063f18b99f3f", null ],
     [ "GetIndexBuffer", "dd/d17/classxii_dynamic_mesh_buffer_resource.htm#a5a3ee0635cde2add358dcc0b6864e3e3", null ],
     [ "GetInputLayout", "dd/d17/classxii_dynamic_mesh_buffer_resource.htm#a797bd34922830eacccddcb2beac87df0", null ],
     [ "GetVertexBuffer", "dd/d17/classxii_dynamic_mesh_buffer_resource.htm#abf9a2c4c8b16728d3787bc63b5f6c246", null ],

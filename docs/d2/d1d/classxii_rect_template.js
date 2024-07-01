@@ -13,7 +13,7 @@ var classxii_rect_template =
     [ "GetBottomLeft", "d2/d1d/classxii_rect_template.htm#a07350543ad80baee68d8206e13ef574d", null ],
     [ "GetBottomRight", "d2/d1d/classxii_rect_template.htm#a493c0cbd51905d18fba732070a85d768", null ],
     [ "GetCenter", "d2/d1d/classxii_rect_template.htm#ac95d17620c2471c4a64ff9e69407fb60", null ],
-    [ "GetClampedPoint", "d2/d1d/classxii_rect_template.htm#a6216509334479cabaf997dfca6fb0831", null ],
+    [ "GetClampedPoint", "d2/d1d/classxii_rect_template.htm#abc781019104b2a4451cd834eed7debd7", null ],
     [ "GetClampedRect", "d2/d1d/classxii_rect_template.htm#a6dcf18f790b1843caa33fcb8908064d6", null ],
     [ "GetExtents", "d2/d1d/classxii_rect_template.htm#a68cd8189e0e7a4f17e263be25e603800", null ],
     [ "GetHalfExtents", "d2/d1d/classxii_rect_template.htm#a716f78ed46e48898457722c7a5a285d9", null ],

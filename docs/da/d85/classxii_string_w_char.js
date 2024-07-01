@@ -5,7 +5,7 @@ var classxii_string_w_char =
     [ "xiiStringWChar", "da/d85/classxii_string_w_char.htm#a025d80541e71f52ba08fff6a09ab9056", null ],
     [ "xiiStringWChar", "da/d85/classxii_string_w_char.htm#abbdde28fbba2943c7be9abd4ab82c05c", null ],
     [ "xiiStringWChar", "da/d85/classxii_string_w_char.htm#a90d44d511ff98a3c34dfe3113e072bb5", null ],
-    [ "GetData", "da/d85/classxii_string_w_char.htm#ac07730bf92e724723012850ed880dc9b", null ],
+    [ "GetData", "da/d85/classxii_string_w_char.htm#ace4b8724d1ea683b15fa99a4eb5b75a4", null ],
     [ "GetElementCount", "da/d85/classxii_string_w_char.htm#a478f5548da0885fe69c239a9cb5715a0", null ],
     [ "operator const wchar_t *", "da/d85/classxii_string_w_char.htm#a20dbb4479f5c24bd9557d23b93a03887", null ],
     [ "operator=", "da/d85/classxii_string_w_char.htm#a2ca9c9f9d223332b2d7098e8082f9ae4", null ],

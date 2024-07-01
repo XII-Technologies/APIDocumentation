@@ -19,7 +19,7 @@ var classxii_small_array =
     [ "Reserve", "d6/d1f/classxii_small_array.htm#a051891f92a2151eac6114b33b5d75d9c", null ],
     [ "SetCount", "d6/d1f/classxii_small_array.htm#a53e4d945886e0df86cacedc7860fcbb2", null ],
     [ "SetCount", "d6/d1f/classxii_small_array.htm#adaab2232582912d330c0049c0c426aa4", null ],
-    [ "SetCountUninitialized", "d6/d1f/classxii_small_array.htm#a918304b6846da800ed9e5b1a1f404d3e", null ],
     [ "SetCountUninitialized", "d6/d1f/classxii_small_array.htm#acc8f9d053f26a1a75bd1a6de39fec301", null ],
+    [ "SetCountUninitialized", "d6/d1f/classxii_small_array.htm#a918304b6846da800ed9e5b1a1f404d3e", null ],
     [ "XII_DECLARE_MEM_RELOCATABLE_TYPE_CONDITIONAL", "d6/d1f/classxii_small_array.htm#a7745085e7aff9c12d115fd89e0bd5cdb", null ]
 ];

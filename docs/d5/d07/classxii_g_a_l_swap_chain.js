@@ -6,7 +6,7 @@ var classxii_g_a_l_swap_chain =
     [ "DeInitPlatform", "d5/d07/classxii_g_a_l_swap_chain.htm#aa1ff21fe0f5b3c9ae1286c93df11a386", null ],
     [ "GetBackBufferTexture", "d5/d07/classxii_g_a_l_swap_chain.htm#a79e02fea314c01af515f01b56057a4ba", null ],
     [ "GetCurrentSize", "d5/d07/classxii_g_a_l_swap_chain.htm#ab2462e578a24df82ad84acebfa9593b1", null ],
-    [ "GetDescription", "d5/d07/classxii_g_a_l_swap_chain.htm#af3b6f02937387264b3da416873f97ec9", null ],
+    [ "GetDescription", "d5/d07/classxii_g_a_l_swap_chain.htm#a742f41755206a63d1e15d4fe1514d915", null ],
     [ "GetPresentMode", "d5/d07/classxii_g_a_l_swap_chain.htm#a1046141038648958ac8f21b8b1abdee3", null ],
     [ "InitPlatform", "d5/d07/classxii_g_a_l_swap_chain.htm#adb11f1882485a775f5bd8813648cece1", null ],
     [ "Present", "d5/d07/classxii_g_a_l_swap_chain.htm#a11f483e43d58395675e8bc4fecafe791", null ],

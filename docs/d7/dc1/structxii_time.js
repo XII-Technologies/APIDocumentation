@@ -13,7 +13,6 @@ var structxii_time =
     [ "IsZero", "d7/dc1/structxii_time.htm#a0c6420bf3eee91dbe57bfd09ed62e62e", null ],
     [ "IsZeroOrNegative", "d7/dc1/structxii_time.htm#abd000eaf352336630e4668fbabac7d12", null ],
     [ "IsZeroOrPositive", "d7/dc1/structxii_time.htm#a5734079c350c88feee2bd295c4ad255b", null ],
-    [ "operator", "d7/dc1/structxii_time.htm#a925bac587c8d481d65d65a48a46a4c7f", null ],
     [ "operator*=", "d7/dc1/structxii_time.htm#a4095ce4b7e190fb370b58488df7bc808", null ],
     [ "operator+", "d7/dc1/structxii_time.htm#abf031f977087608fbde0627a0f7bba79", null ],
     [ "operator+=", "d7/dc1/structxii_time.htm#a89d2a756dddd7f4db5dfcbbf9095451a", null ],
@@ -21,6 +20,7 @@ var structxii_time =
     [ "operator-", "d7/dc1/structxii_time.htm#ad1057942b41158cf062f430a323fa5e5", null ],
     [ "operator-=", "d7/dc1/structxii_time.htm#a3697c1f478925f760529fe6de7572c1b", null ],
     [ "operator/=", "d7/dc1/structxii_time.htm#a7b012debca7cdcad5d6700e8223b9143", null ],
+    [ "operator<=>", "d7/dc1/structxii_time.htm#aee772ed77e2c3b18188df65863c2611c", null ],
     [ "operator==", "d7/dc1/structxii_time.htm#ad31e28467075926f65200c36bc427a5f", null ],
     [ "XII_DECLARE_POD_TYPE", "d7/dc1/structxii_time.htm#aa46ec81fe997edfd14d2a92efb376b0d", null ]
 ];

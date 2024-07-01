@@ -14,7 +14,7 @@ var classxii_mat4_template =
     [ "GetRotationalPart", "d1/dec/classxii_mat4_template.htm#a0d3ec2c3862c2da2413a69bae4ca3473", null ],
     [ "GetRow", "d1/dec/classxii_mat4_template.htm#a4e56f7694674702e3d2977c394b853e0", null ],
     [ "GetScalingFactors", "d1/dec/classxii_mat4_template.htm#a3e0db63cc2dac827fe433d16247e5f97", null ],
-    [ "GetTranslationVector", "d1/dec/classxii_mat4_template.htm#a6b5d1228cdbe6fda34c621dd0fad3184", null ],
+    [ "GetTranslationVector", "d1/dec/classxii_mat4_template.htm#a700065a965c36a3140667f65962e6b32", null ],
     [ "GetTranspose", "d1/dec/classxii_mat4_template.htm#a83f63e807ecf6895c3674c26c011cc48", null ],
     [ "Invert", "d1/dec/classxii_mat4_template.htm#a17562e4b7506e1d46229f8623564ce8d", null ],
     [ "IsEqual", "d1/dec/classxii_mat4_template.htm#a22dcdf69eea89ff8ff575c3be11399e0", null ],

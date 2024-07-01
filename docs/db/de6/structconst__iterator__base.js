@@ -7,7 +7,6 @@ var structconst__iterator__base =
     [ "value_type", "db/de6/structconst__iterator__base.htm#af3ad80a0bbbc1c32132ff388986fdf1e", null ],
     [ "const_iterator_base", "db/de6/structconst__iterator__base.htm#a1f52a71d2a35768f2841bffe1995bff2", null ],
     [ "const_iterator_base", "db/de6/structconst__iterator__base.htm#a31267ada9a93fdc04455575d1970ac59", null ],
-    [ "operator", "db/de6/structconst__iterator__base.htm#aa6f170417820ddfa7f563be302617efd", null ],
     [ "operator*", "db/de6/structconst__iterator__base.htm#a2af50cca6694618f727ce0f4c0b57c5d", null ],
     [ "operator+", "db/de6/structconst__iterator__base.htm#a2cf8c5729d585071c9dccd22e4f92061", null ],
     [ "operator++", "db/de6/structconst__iterator__base.htm#a172422a5050761ba1e48ef7918e11639", null ],
@@ -18,9 +17,10 @@ var structconst__iterator__base =
     [ "operator--", "db/de6/structconst__iterator__base.htm#a84fda8fc12f0ba17a384503b1d0fea27", null ],
     [ "operator--", "db/de6/structconst__iterator__base.htm#a6ba06de15ced8aee8ee34da8b8e746f3", null ],
     [ "operator-=", "db/de6/structconst__iterator__base.htm#ae9bb17260532f5a0550180e6594c891d", null ],
-    [ "operator->", "db/de6/structconst__iterator__base.htm#a350b64e23d3ac40cee6953284d686462", null ],
+    [ "operator->", "db/de6/structconst__iterator__base.htm#ab972bf04b602e021ce658fde0b36694b", null ],
+    [ "operator<=>", "db/de6/structconst__iterator__base.htm#a5319bdc5e0e011cdc0f5db83623eae43", null ],
     [ "operator==", "db/de6/structconst__iterator__base.htm#a166b90add0cf9e01060f6a4526005054", null ],
-    [ "operator[]", "db/de6/structconst__iterator__base.htm#aad6a62fef31f521ff87a647bc5a3cc35", null ],
+    [ "operator[]", "db/de6/structconst__iterator__base.htm#a918f801fe619eecf68985f7d04be3456", null ],
     [ "m_pArray", "db/de6/structconst__iterator__base.htm#afd29af213ff9a06b616060e66ba3b25a", null ],
     [ "m_uiIndex", "db/de6/structconst__iterator__base.htm#aa1e23074bc4a9b5d3fdd5c8486b486b0", null ]
 ];

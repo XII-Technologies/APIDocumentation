@@ -1,74 +1,76 @@
 var annotated_dup =
 [
     [ "std", null, [
-      [ "tuple_element< 0, xiiHashTableBaseConstIterator< K, V, H > >", "d5/d43/structstd_1_1tuple__element_3_010_00_01xii_hash_table_base_const_iterator_3_01_k_00_01_v_00_01_h_01_4_01_4.htm", "d5/d43/structstd_1_1tuple__element_3_010_00_01xii_hash_table_base_const_iterator_3_01_k_00_01_v_00_01_h_01_4_01_4" ],
-      [ "tuple_element< 0, xiiHashTableBaseIterator< K, V, H > >", "df/d32/structstd_1_1tuple__element_3_010_00_01xii_hash_table_base_iterator_3_01_k_00_01_v_00_01_h_01_4_01_4.htm", "df/d32/structstd_1_1tuple__element_3_010_00_01xii_hash_table_base_iterator_3_01_k_00_01_v_00_01_h_01_4_01_4" ],
-      [ "tuple_element< 0, xiiMapBaseConstIteratorBase< KeyType, ValueType, Comparer, REVERSE > >", "dc/d96/structstd_1_1tuple__element_3_010_00_01xii_map_base_const_iterator_base_3_01_key_type_00_01_valu773ea5396ab72430ea34cf8e1fd633dd.htm", "dc/d96/structstd_1_1tuple__element_3_010_00_01xii_map_base_const_iterator_base_3_01_key_type_00_01_valu773ea5396ab72430ea34cf8e1fd633dd" ],
-      [ "tuple_element< 0, xiiMapBaseIteratorBase< KeyType, ValueType, Comparer, REVERSE > >", "da/dcd/structstd_1_1tuple__element_3_010_00_01xii_map_base_iterator_base_3_01_key_type_00_01_value_type69ac16be74b8c2b6991ffe5265b22239.htm", "da/dcd/structstd_1_1tuple__element_3_010_00_01xii_map_base_iterator_base_3_01_key_type_00_01_value_type69ac16be74b8c2b6991ffe5265b22239" ],
-      [ "tuple_element< 1, xiiHashTableBaseConstIterator< K, V, H > >", "d0/d1a/structstd_1_1tuple__element_3_011_00_01xii_hash_table_base_const_iterator_3_01_k_00_01_v_00_01_h_01_4_01_4.htm", "d0/d1a/structstd_1_1tuple__element_3_011_00_01xii_hash_table_base_const_iterator_3_01_k_00_01_v_00_01_h_01_4_01_4" ],
-      [ "tuple_element< 1, xiiHashTableBaseIterator< K, V, H > >", "d0/d8e/structstd_1_1tuple__element_3_011_00_01xii_hash_table_base_iterator_3_01_k_00_01_v_00_01_h_01_4_01_4.htm", "d0/d8e/structstd_1_1tuple__element_3_011_00_01xii_hash_table_base_iterator_3_01_k_00_01_v_00_01_h_01_4_01_4" ],
-      [ "tuple_element< 1, xiiMapBaseConstIteratorBase< KeyType, ValueType, Comparer, REVERSE > >", "d6/dfe/structstd_1_1tuple__element_3_011_00_01xii_map_base_const_iterator_base_3_01_key_type_00_01_valu3df242874468f573a047af2271c0290a.htm", "d6/dfe/structstd_1_1tuple__element_3_011_00_01xii_map_base_const_iterator_base_3_01_key_type_00_01_valu3df242874468f573a047af2271c0290a" ],
-      [ "tuple_element< 1, xiiMapBaseIteratorBase< KeyType, ValueType, Comparer, REVERSE > >", "dc/d2a/structstd_1_1tuple__element_3_011_00_01xii_map_base_iterator_base_3_01_key_type_00_01_value_type6bc0a331d26363383746c6e0ddbc8247.htm", "dc/d2a/structstd_1_1tuple__element_3_011_00_01xii_map_base_iterator_base_3_01_key_type_00_01_value_type6bc0a331d26363383746c6e0ddbc8247" ],
       [ "tuple_size< xiiHashTableBaseConstIterator< K, V, H > >", "db/d6e/structstd_1_1tuple__size_3_01xii_hash_table_base_const_iterator_3_01_k_00_01_v_00_01_h_01_4_01_4.htm", null ],
+      [ "tuple_element< 0, xiiHashTableBaseConstIterator< K, V, H > >", "d5/d43/structstd_1_1tuple__element_3_010_00_01xii_hash_table_base_const_iterator_3_01_k_00_01_v_00_01_h_01_4_01_4.htm", "d5/d43/structstd_1_1tuple__element_3_010_00_01xii_hash_table_base_const_iterator_3_01_k_00_01_v_00_01_h_01_4_01_4" ],
+      [ "tuple_element< 1, xiiHashTableBaseConstIterator< K, V, H > >", "d0/d1a/structstd_1_1tuple__element_3_011_00_01xii_hash_table_base_const_iterator_3_01_k_00_01_v_00_01_h_01_4_01_4.htm", "d0/d1a/structstd_1_1tuple__element_3_011_00_01xii_hash_table_base_const_iterator_3_01_k_00_01_v_00_01_h_01_4_01_4" ],
       [ "tuple_size< xiiHashTableBaseIterator< K, V, H > >", "d4/db5/structstd_1_1tuple__size_3_01xii_hash_table_base_iterator_3_01_k_00_01_v_00_01_h_01_4_01_4.htm", null ],
+      [ "tuple_element< 0, xiiHashTableBaseIterator< K, V, H > >", "df/d32/structstd_1_1tuple__element_3_010_00_01xii_hash_table_base_iterator_3_01_k_00_01_v_00_01_h_01_4_01_4.htm", "df/d32/structstd_1_1tuple__element_3_010_00_01xii_hash_table_base_iterator_3_01_k_00_01_v_00_01_h_01_4_01_4" ],
+      [ "tuple_element< 1, xiiHashTableBaseIterator< K, V, H > >", "d0/d8e/structstd_1_1tuple__element_3_011_00_01xii_hash_table_base_iterator_3_01_k_00_01_v_00_01_h_01_4_01_4.htm", "d0/d8e/structstd_1_1tuple__element_3_011_00_01xii_hash_table_base_iterator_3_01_k_00_01_v_00_01_h_01_4_01_4" ],
       [ "tuple_size< xiiMapBaseConstIteratorBase< KeyType, ValueType, Comparer, REVERSE > >", "dd/dc0/structstd_1_1tuple__size_3_01xii_map_base_const_iterator_base_3_01_key_type_00_01_value_type_00_e17f71d5dccab3bda356810b8e9348ad.htm", null ],
-      [ "tuple_size< xiiMapBaseIteratorBase< KeyType, ValueType, Comparer, REVERSE > >", "d8/d96/structstd_1_1tuple__size_3_01xii_map_base_iterator_base_3_01_key_type_00_01_value_type_00_01_com9e7eedcb449af87d61d19cc92b9e207b.htm", null ]
+      [ "tuple_element< 0, xiiMapBaseConstIteratorBase< KeyType, ValueType, Comparer, REVERSE > >", "dc/d96/structstd_1_1tuple__element_3_010_00_01xii_map_base_const_iterator_base_3_01_key_type_00_01_valu773ea5396ab72430ea34cf8e1fd633dd.htm", "dc/d96/structstd_1_1tuple__element_3_010_00_01xii_map_base_const_iterator_base_3_01_key_type_00_01_valu773ea5396ab72430ea34cf8e1fd633dd" ],
+      [ "tuple_element< 1, xiiMapBaseConstIteratorBase< KeyType, ValueType, Comparer, REVERSE > >", "d6/dfe/structstd_1_1tuple__element_3_011_00_01xii_map_base_const_iterator_base_3_01_key_type_00_01_valu3df242874468f573a047af2271c0290a.htm", "d6/dfe/structstd_1_1tuple__element_3_011_00_01xii_map_base_const_iterator_base_3_01_key_type_00_01_valu3df242874468f573a047af2271c0290a" ],
+      [ "tuple_size< xiiMapBaseIteratorBase< KeyType, ValueType, Comparer, REVERSE > >", "d8/d96/structstd_1_1tuple__size_3_01xii_map_base_iterator_base_3_01_key_type_00_01_value_type_00_01_com9e7eedcb449af87d61d19cc92b9e207b.htm", null ],
+      [ "tuple_element< 0, xiiMapBaseIteratorBase< KeyType, ValueType, Comparer, REVERSE > >", "da/dcd/structstd_1_1tuple__element_3_010_00_01xii_map_base_iterator_base_3_01_key_type_00_01_value_type69ac16be74b8c2b6991ffe5265b22239.htm", "da/dcd/structstd_1_1tuple__element_3_010_00_01xii_map_base_iterator_base_3_01_key_type_00_01_value_type69ac16be74b8c2b6991ffe5265b22239" ],
+      [ "tuple_element< 1, xiiMapBaseIteratorBase< KeyType, ValueType, Comparer, REVERSE > >", "dc/d2a/structstd_1_1tuple__element_3_011_00_01xii_map_base_iterator_base_3_01_key_type_00_01_value_type6bc0a331d26363383746c6e0ddbc8247.htm", "dc/d2a/structstd_1_1tuple__element_3_011_00_01xii_map_base_iterator_base_3_01_key_type_00_01_value_type6bc0a331d26363383746c6e0ddbc8247" ]
     ] ],
-    [ "xiiArchiveUtils", "d2/d5c/namespacexii_archive_utils.htm", "d2/d5c/namespacexii_archive_utils" ],
+    [ "xiiArchiveUtils", "d2/d5c/namespacexii_archive_utils.htm", [
+      [ "TOCMeta", "dd/dcd/structxii_archive_utils_1_1_t_o_c_meta.htm", "dd/dcd/structxii_archive_utils_1_1_t_o_c_meta" ]
+    ] ],
     [ "xiiArrayPtrDetail", null, [
       [ "ByteTypeHelper", "d0/d1f/structxii_array_ptr_detail_1_1_byte_type_helper.htm", "d0/d1f/structxii_array_ptr_detail_1_1_byte_type_helper" ],
       [ "ByteTypeHelper< const U >", "d7/d98/structxii_array_ptr_detail_1_1_byte_type_helper_3_01const_01_u_01_4.htm", "d7/d98/structxii_array_ptr_detail_1_1_byte_type_helper_3_01const_01_u_01_4" ]
     ] ],
     [ "xiiDataDirectory", null, [
+      [ "ArchiveType", "d1/d7b/classxii_data_directory_1_1_archive_type.htm", "d1/d7b/classxii_data_directory_1_1_archive_type" ],
       [ "ArchiveReaderCommon", "db/d24/classxii_data_directory_1_1_archive_reader_common.htm", "db/d24/classxii_data_directory_1_1_archive_reader_common" ],
       [ "ArchiveReaderUncompressed", "dd/d1d/classxii_data_directory_1_1_archive_reader_uncompressed.htm", "dd/d1d/classxii_data_directory_1_1_archive_reader_uncompressed" ],
-      [ "ArchiveType", "d1/d7b/classxii_data_directory_1_1_archive_type.htm", "d1/d7b/classxii_data_directory_1_1_archive_type" ],
+      [ "FolderType", "d5/dd5/classxii_data_directory_1_1_folder_type.htm", "d5/dd5/classxii_data_directory_1_1_folder_type" ],
+      [ "FolderReader", "da/d76/classxii_data_directory_1_1_folder_reader.htm", "da/d76/classxii_data_directory_1_1_folder_reader" ],
+      [ "FolderWriter", "d0/d0b/classxii_data_directory_1_1_folder_writer.htm", "d0/d0b/classxii_data_directory_1_1_folder_writer" ],
       [ "FileserveDataDirectoryReader", "d4/d69/classxii_data_directory_1_1_fileserve_data_directory_reader.htm", "d4/d69/classxii_data_directory_1_1_fileserve_data_directory_reader" ],
       [ "FileserveDataDirectoryWriter", "d5/d1d/classxii_data_directory_1_1_fileserve_data_directory_writer.htm", "d5/d1d/classxii_data_directory_1_1_fileserve_data_directory_writer" ],
-      [ "FileserveType", "d9/df6/classxii_data_directory_1_1_fileserve_type.htm", "d9/df6/classxii_data_directory_1_1_fileserve_type" ],
-      [ "FolderReader", "da/d76/classxii_data_directory_1_1_folder_reader.htm", "da/d76/classxii_data_directory_1_1_folder_reader" ],
-      [ "FolderType", "d5/dd5/classxii_data_directory_1_1_folder_type.htm", "d5/dd5/classxii_data_directory_1_1_folder_type" ],
-      [ "FolderWriter", "d0/d0b/classxii_data_directory_1_1_folder_writer.htm", "d0/d0b/classxii_data_directory_1_1_folder_writer" ]
+      [ "FileserveType", "d9/df6/classxii_data_directory_1_1_fileserve_type.htm", "d9/df6/classxii_data_directory_1_1_fileserve_type" ]
     ] ],
     [ "xiiExpression", null, [
-      [ "FunctionDesc", "dc/d45/structxii_expression_1_1_function_desc.htm", "dc/d45/structxii_expression_1_1_function_desc" ],
       [ "Register", "d5/d08/structxii_expression_1_1_register.htm", "d5/d08/structxii_expression_1_1_register" ],
       [ "RegisterType", "dc/d2b/structxii_expression_1_1_register_type.htm", "dc/d2b/structxii_expression_1_1_register_type" ],
-      [ "StreamDesc", "d9/d0a/structxii_expression_1_1_stream_desc.htm", "d9/d0a/structxii_expression_1_1_stream_desc" ]
+      [ "StreamDesc", "d9/d0a/structxii_expression_1_1_stream_desc.htm", "d9/d0a/structxii_expression_1_1_stream_desc" ],
+      [ "FunctionDesc", "dc/d45/structxii_expression_1_1_function_desc.htm", "dc/d45/structxii_expression_1_1_function_desc" ]
     ] ],
     [ "xiiGAL", null, [
       [ "ModifiedRange", "d1/db2/structxii_g_a_l_1_1_modified_range.htm", "d1/db2/structxii_g_a_l_1_1_modified_range" ]
     ] ],
     [ "xiiInternal", null, [
-      [ "CompileTimeMurmurHash", "d3/dd3/structxii_internal_1_1_compile_time_murmur_hash.htm", "d3/dd3/structxii_internal_1_1_compile_time_murmur_hash" ],
-      [ "CompileTimeMurmurHash< N, 0 >", "d6/d9a/structxii_internal_1_1_compile_time_murmur_hash_3_01_n_00_010_01_4.htm", "d6/d9a/structxii_internal_1_1_compile_time_murmur_hash_3_01_n_00_010_01_4" ],
-      [ "CompileTimeMurmurHash< N, 1 >", "dc/d2b/structxii_internal_1_1_compile_time_murmur_hash_3_01_n_00_011_01_4.htm", "dc/d2b/structxii_internal_1_1_compile_time_murmur_hash_3_01_n_00_011_01_4" ],
-      [ "CompileTimeMurmurHash< N, 2 >", "d7/d35/structxii_internal_1_1_compile_time_murmur_hash_3_01_n_00_012_01_4.htm", "d7/d35/structxii_internal_1_1_compile_time_murmur_hash_3_01_n_00_012_01_4" ],
-      [ "CompileTimeMurmurHash< N, 3 >", "db/d5f/structxii_internal_1_1_compile_time_murmur_hash_3_01_n_00_013_01_4.htm", "db/d5f/structxii_internal_1_1_compile_time_murmur_hash_3_01_n_00_013_01_4" ],
-      [ "CompileTimeMurmurHash< N, 4 >", "d5/d0f/structxii_internal_1_1_compile_time_murmur_hash_3_01_n_00_014_01_4.htm", "d5/d0f/structxii_internal_1_1_compile_time_murmur_hash_3_01_n_00_014_01_4" ],
-      [ "DeserializeHelper", "dc/dcf/structxii_internal_1_1_deserialize_helper.htm", null ],
       [ "EventMessageSenderHelper", "d9/dc2/structxii_internal_1_1_event_message_sender_helper.htm", null ],
+      [ "WorldData", "d6/d66/classxii_internal_1_1_world_data.htm", "d6/d66/classxii_internal_1_1_world_data" ],
+      [ "CompileTimeMurmurHash", "d3/dd3/structxii_internal_1_1_compile_time_murmur_hash.htm", "d3/dd3/structxii_internal_1_1_compile_time_murmur_hash" ],
+      [ "CompileTimeMurmurHash< N, 4 >", "d5/d0f/structxii_internal_1_1_compile_time_murmur_hash_3_01_n_00_014_01_4.htm", "d5/d0f/structxii_internal_1_1_compile_time_murmur_hash_3_01_n_00_014_01_4" ],
+      [ "CompileTimeMurmurHash< N, 3 >", "db/d5f/structxii_internal_1_1_compile_time_murmur_hash_3_01_n_00_013_01_4.htm", "db/d5f/structxii_internal_1_1_compile_time_murmur_hash_3_01_n_00_013_01_4" ],
+      [ "CompileTimeMurmurHash< N, 2 >", "d7/d35/structxii_internal_1_1_compile_time_murmur_hash_3_01_n_00_012_01_4.htm", "d7/d35/structxii_internal_1_1_compile_time_murmur_hash_3_01_n_00_012_01_4" ],
+      [ "CompileTimeMurmurHash< N, 1 >", "dc/d2b/structxii_internal_1_1_compile_time_murmur_hash_3_01_n_00_011_01_4.htm", "dc/d2b/structxii_internal_1_1_compile_time_murmur_hash_3_01_n_00_011_01_4" ],
+      [ "CompileTimeMurmurHash< N, 0 >", "d6/d9a/structxii_internal_1_1_compile_time_murmur_hash_3_01_n_00_010_01_4.htm", "d6/d9a/structxii_internal_1_1_compile_time_murmur_hash_3_01_n_00_010_01_4" ],
       [ "HashHelperImpl", "d0/dd6/structxii_internal_1_1_hash_helper_impl.htm", null ],
       [ "HashHelperImpl< T, true >", "d2/d62/structxii_internal_1_1_hash_helper_impl_3_01_t_00_01true_01_4.htm", null ],
+      [ "DeserializeHelper", "dc/dcf/structxii_internal_1_1_deserialize_helper.htm", null ],
+      [ "WriteObjectHelper", "de/d90/structxii_internal_1_1_write_object_helper.htm", null ],
+      [ "WriteObjectHelper< T * >", "d2/d4a/structxii_internal_1_1_write_object_helper_3_01_t_01_5_01_4.htm", null ],
+      [ "xiiAllocatorImpl", "d4/deb/classxii_internal_1_1xii_allocator_impl.htm", "d4/deb/classxii_internal_1_1xii_allocator_impl" ],
+      [ "xiiAllocatorMixinReallocate", "d9/dcd/classxii_internal_1_1xii_allocator_mixin_reallocate.htm", "d9/dcd/classxii_internal_1_1xii_allocator_mixin_reallocate" ],
+      [ "xiiAllocatorMixinReallocate< AllocationPolicy, TrackingMode, true >", "d8/dee/classxii_internal_1_1xii_allocator_mixin_reallocate_3_01_allocation_policy_00_01_tracking_mode_00_01true_01_4.htm", "d8/dee/classxii_internal_1_1xii_allocator_mixin_reallocate_3_01_allocation_policy_00_01_tracking_mode_00_01true_01_4" ],
+      [ "NewInstance", "de/d3c/structxii_internal_1_1_new_instance.htm", "de/d3c/structxii_internal_1_1_new_instance" ],
+      [ "MessageHandlerTraits", "de/da4/structxii_internal_1_1_message_handler_traits.htm", null ],
       [ "MessageHandler", "da/d27/structxii_internal_1_1_message_handler.htm", [
         [ "Impl", "dd/db2/classxii_internal_1_1_message_handler_1_1_impl.htm", "dd/db2/classxii_internal_1_1_message_handler_1_1_impl" ]
       ] ],
       [ "MessageHandler< true >", "d7/dd1/structxii_internal_1_1_message_handler_3_01true_01_4.htm", [
         [ "Impl", "d4/dbc/classxii_internal_1_1_message_handler_3_01true_01_4_1_1_impl.htm", "d4/dbc/classxii_internal_1_1_message_handler_3_01true_01_4_1_1_impl" ]
       ] ],
-      [ "MessageHandlerTraits", "de/da4/structxii_internal_1_1_message_handler_traits.htm", null ],
-      [ "NewInstance", "de/d3c/structxii_internal_1_1_new_instance.htm", "de/d3c/structxii_internal_1_1_new_instance" ],
-      [ "RenderDataCacheEntry", "dd/d26/structxii_internal_1_1_render_data_cache_entry.htm", "dd/d26/structxii_internal_1_1_render_data_cache_entry" ],
-      [ "WorldData", "d6/d66/classxii_internal_1_1_world_data.htm", "d6/d66/classxii_internal_1_1_world_data" ],
-      [ "WriteObjectHelper", "de/d90/structxii_internal_1_1_write_object_helper.htm", null ],
-      [ "WriteObjectHelper< T * >", "d2/d4a/structxii_internal_1_1_write_object_helper_3_01_t_01_5_01_4.htm", null ],
-      [ "xiiAllocatorImpl", "d4/deb/classxii_internal_1_1xii_allocator_impl.htm", "d4/deb/classxii_internal_1_1xii_allocator_impl" ],
-      [ "xiiAllocatorMixinReallocate", "d9/dcd/classxii_internal_1_1xii_allocator_mixin_reallocate.htm", "d9/dcd/classxii_internal_1_1xii_allocator_mixin_reallocate" ],
-      [ "xiiAllocatorMixinReallocate< AllocationPolicy, TrackingMode, true >", "d8/dee/classxii_internal_1_1xii_allocator_mixin_reallocate_3_01_allocation_policy_00_01_tracking_mode_00_01true_01_4.htm", "d8/dee/classxii_internal_1_1xii_allocator_mixin_reallocate_3_01_allocation_policy_00_01_tracking_mode_00_01true_01_4" ],
       [ "xiiStaticRTTI", "dd/d9e/structxii_internal_1_1xii_static_r_t_t_i.htm", null ],
-      [ "xiiStaticRTTI< void >", "d5/de5/structxii_internal_1_1xii_static_r_t_t_i_3_01void_01_4.htm", null ],
       [ "xiiStaticRTTI< xiiNoBase >", "dc/d3b/structxii_internal_1_1xii_static_r_t_t_i_3_01xii_no_base_01_4.htm", null ],
-      [ "xiiStaticRTTIWrapper", "df/d52/structxii_internal_1_1xii_static_r_t_t_i_wrapper.htm", null ]
+      [ "xiiStaticRTTI< void >", "d5/de5/structxii_internal_1_1xii_static_r_t_t_i_3_01void_01_4.htm", null ],
+      [ "xiiStaticRTTIWrapper", "df/d52/structxii_internal_1_1xii_static_r_t_t_i_wrapper.htm", null ],
+      [ "RenderDataCacheEntry", "dd/d26/structxii_internal_1_1_render_data_cache_entry.htm", "dd/d26/structxii_internal_1_1_render_data_cache_entry" ]
     ] ],
     [ "xiiLogWriter", null, [
       [ "Console", "d8/dff/classxii_log_writer_1_1_console.htm", null ],
@@ -77,34 +79,34 @@ var annotated_dup =
       [ "VisualStudio", "d9/d2e/classxii_log_writer_1_1_visual_studio.htm", null ]
     ] ],
     [ "xiiMemoryPolicies", null, [
-      [ "AlloctionMetaData", "d2/d63/structxii_memory_policies_1_1_alloction_meta_data.htm", "d2/d63/structxii_memory_policies_1_1_alloction_meta_data" ],
       [ "xiiAlignedAllocation", "d6/d67/classxii_memory_policies_1_1xii_aligned_allocation.htm", "d6/d67/classxii_memory_policies_1_1xii_aligned_allocation" ],
       [ "xiiAlignedHeapAllocation", "d7/d4d/classxii_memory_policies_1_1xii_aligned_heap_allocation.htm", "d7/d4d/classxii_memory_policies_1_1xii_aligned_heap_allocation" ],
       [ "xiiGuardedAllocation", "d0/df3/classxii_memory_policies_1_1xii_guarded_allocation.htm", "d0/df3/classxii_memory_policies_1_1xii_guarded_allocation" ],
       [ "xiiHeapAllocation", "de/d33/classxii_memory_policies_1_1xii_heap_allocation.htm", "de/d33/classxii_memory_policies_1_1xii_heap_allocation" ],
       [ "xiiProxyAllocation", "d9/d0b/classxii_memory_policies_1_1xii_proxy_allocation.htm", "d9/d0b/classxii_memory_policies_1_1xii_proxy_allocation" ],
-      [ "xiiStackAllocation", "d1/d53/classxii_memory_policies_1_1xii_stack_allocation.htm", "d1/d53/classxii_memory_policies_1_1xii_stack_allocation" ]
+      [ "xiiStackAllocation", "d1/d53/classxii_memory_policies_1_1xii_stack_allocation.htm", "d1/d53/classxii_memory_policies_1_1xii_stack_allocation" ],
+      [ "AlloctionMetaData", "d2/d63/structxii_memory_policies_1_1_alloction_meta_data.htm", "d2/d63/structxii_memory_policies_1_1_alloction_meta_data" ]
     ] ],
     [ "xiiMinWindows", null, [
-      [ "FromNativeImpl", "d1/d80/structxii_min_windows_1_1_from_native_impl.htm", null ],
-      [ "ToNativeImpl", "d7/d24/structxii_min_windows_1_1_to_native_impl.htm", null ]
+      [ "ToNativeImpl", "d7/d24/structxii_min_windows_1_1_to_native_impl.htm", null ],
+      [ "FromNativeImpl", "d1/d80/structxii_min_windows_1_1_from_native_impl.htm", null ]
     ] ],
     [ "xiiMinX11", null, [
-      [ "FromNativeImpl", "d1/d69/structxii_min_x11_1_1_from_native_impl.htm", null ],
-      [ "ToNativeImpl", "d1/ddb/structxii_min_x11_1_1_to_native_impl.htm", null ]
+      [ "ToNativeImpl", "d1/ddb/structxii_min_x11_1_1_to_native_impl.htm", null ],
+      [ "FromNativeImpl", "d1/d69/structxii_min_x11_1_1_from_native_impl.htm", null ]
     ] ],
     [ "xiiModelImporter2", null, [
+      [ "ImportOptions", "db/d06/structxii_model_importer2_1_1_import_options.htm", "db/d06/structxii_model_importer2_1_1_import_options" ],
+      [ "OutputTexture", "db/d9b/structxii_model_importer2_1_1_output_texture.htm", "db/d9b/structxii_model_importer2_1_1_output_texture" ],
+      [ "OutputMaterial", "df/d2e/structxii_model_importer2_1_1_output_material.htm", "df/d2e/structxii_model_importer2_1_1_output_material" ],
       [ "Importer", "d0/d1a/classxii_model_importer2_1_1_importer.htm", "d0/d1a/classxii_model_importer2_1_1_importer" ],
       [ "ImporterAssimp", "d8/dd1/classxii_model_importer2_1_1_importer_assimp.htm", "d8/dd1/classxii_model_importer2_1_1_importer_assimp" ],
       [ "ImporterMagicaVoxel", "d1/dde/classxii_model_importer2_1_1_importer_magica_voxel.htm", "d1/dde/classxii_model_importer2_1_1_importer_magica_voxel" ],
-      [ "ImporterSourceBSP", "d8/de1/classxii_model_importer2_1_1_importer_source_b_s_p.htm", "d8/de1/classxii_model_importer2_1_1_importer_source_b_s_p" ],
-      [ "ImportOptions", "db/d06/structxii_model_importer2_1_1_import_options.htm", "db/d06/structxii_model_importer2_1_1_import_options" ],
-      [ "OutputMaterial", "df/d2e/structxii_model_importer2_1_1_output_material.htm", "df/d2e/structxii_model_importer2_1_1_output_material" ],
-      [ "OutputTexture", "db/d9b/structxii_model_importer2_1_1_output_texture.htm", "db/d9b/structxii_model_importer2_1_1_output_texture" ]
+      [ "ImporterSourceBSP", "d8/de1/classxii_model_importer2_1_1_importer_source_b_s_p.htm", "d8/de1/classxii_model_importer2_1_1_importer_source_b_s_p" ]
     ] ],
     [ "xiiShaderHelper", null, [
-      [ "xiiShaderSections", "df/ddc/structxii_shader_helper_1_1xii_shader_sections.htm", "df/ddc/structxii_shader_helper_1_1xii_shader_sections" ],
-      [ "xiiTextSectionizer", "d7/ddb/classxii_shader_helper_1_1xii_text_sectionizer.htm", "d7/ddb/classxii_shader_helper_1_1xii_text_sectionizer" ]
+      [ "xiiTextSectionizer", "d7/ddb/classxii_shader_helper_1_1xii_text_sectionizer.htm", "d7/ddb/classxii_shader_helper_1_1xii_text_sectionizer" ],
+      [ "xiiShaderSections", "df/ddc/structxii_shader_helper_1_1xii_shader_sections.htm", "df/ddc/structxii_shader_helper_1_1xii_shader_sections" ]
     ] ],
     [ "xiiStateMachineInternal", null, [
       [ "Compound", "df/d59/structxii_state_machine_internal_1_1_compound.htm", "df/d59/structxii_state_machine_internal_1_1_compound" ]
@@ -194,7 +196,7 @@ var annotated_dup =
     [ "xiiAlphaControlPoint", "d2/dde/classxii_alpha_control_point.htm", "d2/dde/classxii_alpha_control_point" ],
     [ "xiiAlwaysVisibleComponent", "de/d92/classxii_always_visible_component.htm", "de/d92/classxii_always_visible_component" ],
     [ "xiiAmbientCube", "d1/d80/structxii_ambient_cube.htm", "d1/d80/structxii_ambient_cube" ],
-    [ "xiiAmbientCubeBasis", "de/d96/structxii_ambient_cube_basis.htm", "de/d96/structxii_ambient_cube_basis" ],
+    [ "xiiAmbientCubeBasis", "de/d96/structxii_ambient_cube_basis.htm", null ],
     [ "xiiAmbientLightComponent", "df/d41/classxii_ambient_light_component.htm", "df/d41/classxii_ambient_light_component" ],
     [ "xiiAndroidUtils", "df/de0/classxii_android_utils.htm", null ],
     [ "xiiAngleTemplate", "d3/ddb/classxii_angle_template.htm", "d3/ddb/classxii_angle_template" ],

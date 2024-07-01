@@ -5,7 +5,7 @@ var classxii_string_utf16 =
     [ "xiiStringUtf16", "d5/d4f/classxii_string_utf16.htm#ac4a7b25416ae35e2e56c21659cad325c", null ],
     [ "xiiStringUtf16", "d5/d4f/classxii_string_utf16.htm#a93637f3956ea5306ec1ccc7373c68db5", null ],
     [ "xiiStringUtf16", "d5/d4f/classxii_string_utf16.htm#aec0a887ce2558ef6e62307526691048b", null ],
-    [ "GetData", "d5/d4f/classxii_string_utf16.htm#afbfc4ebf7fb164c5c278601f29652608", null ],
+    [ "GetData", "d5/d4f/classxii_string_utf16.htm#a2962097e3e346b3c87d2d1610ca59a64", null ],
     [ "GetElementCount", "d5/d4f/classxii_string_utf16.htm#a09fa5f03030425e471fcaf917b9a4a09", null ],
     [ "operator=", "d5/d4f/classxii_string_utf16.htm#aa46d92d6d188b9b5cca611f34acf8131", null ],
     [ "operator=", "d5/d4f/classxii_string_utf16.htm#a245c33b1f577a524c0d71cdbe2abc7db", null ],

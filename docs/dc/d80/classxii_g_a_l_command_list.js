@@ -34,7 +34,7 @@ var classxii_g_a_l_command_list =
     [ "Flush", "dc/d80/classxii_g_a_l_command_list.htm#aa65767c75d5b21f07c15dd194590c1c4", null ],
     [ "GenerateMips", "dc/d80/classxii_g_a_l_command_list.htm#aeab7b31eeaf17a4360a3f51aae9d4563", null ],
     [ "GetCommandQueue", "dc/d80/classxii_g_a_l_command_list.htm#a0868adea18175793e479ea6b97b360b1", null ],
-    [ "GetDescription", "dc/d80/classxii_g_a_l_command_list.htm#a6fadaa676135badcb24e2995a415f349", null ],
+    [ "GetDescription", "dc/d80/classxii_g_a_l_command_list.htm#a94c19111b0066ef08cd6062348770ebf", null ],
     [ "GetRecordingState", "dc/d80/classxii_g_a_l_command_list.htm#a1e0d22eeca9576f70d22422dd6b6fedf", null ],
     [ "InsertDebugLabel", "dc/d80/classxii_g_a_l_command_list.htm#a8b39ce41b621490a7e6be82f6bb11d11", null ],
     [ "InvalidateState", "dc/d80/classxii_g_a_l_command_list.htm#a1a142472ca204fe72c75e8c49beec4c9", null ],
