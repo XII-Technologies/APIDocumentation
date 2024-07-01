@@ -1,7 +1,6 @@
 var structxii_object_flags =
 [
-    [ "Bits", "de/d49/structxii_object_flags_1_1_bits.htm", "de/d49/structxii_object_flags_1_1_bits" ],
-    [ "StorageType", "dd/d15/structxii_object_flags.htm#a55d6f798d22936ea9ebbd0a0e1ecf191", null ],
+    [ "Bits", "de/d49/structxii_object_flags_1_1_bits.htm", null ],
     [ "Enum", "dd/d15/structxii_object_flags.htm#ab84c26953c65707e422df64a7fb08c30", [
       [ "None", "dd/d15/structxii_object_flags.htm#ab84c26953c65707e422df64a7fb08c30a639775e2b31636eee7712cad1869e397", null ],
       [ "Dynamic", "dd/d15/structxii_object_flags.htm#ab84c26953c65707e422df64a7fb08c30ab66f5a5daad9939a7584210343e3d2e6", null ],

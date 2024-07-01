@@ -10,6 +10,5 @@ var classxii_thread =
     [ "GetThreadName", "d8/d8c/classxii_thread.htm#acf8f8f4ed14933578bbd6c1cb6a8e827", null ],
     [ "GetThreadStatus", "d8/d8c/classxii_thread.htm#a7aceea17f0351634fa2847a20916bb20", null ],
     [ "IsRunning", "d8/d8c/classxii_thread.htm#a39044576b53f6dd56680be7552f1e383", null ],
-    [ "Run", "d8/d8c/classxii_thread.htm#aad0c0f9e61146e3d1ffa488e35fcc01c", null ],
-    [ "RunThread", "d8/d8c/classxii_thread.htm#a6541f7f4cd64588b53bbf837cd61a2f6", null ]
+    [ "Run", "d8/d8c/classxii_thread.htm#aad0c0f9e61146e3d1ffa488e35fcc01c", null ]
 ];

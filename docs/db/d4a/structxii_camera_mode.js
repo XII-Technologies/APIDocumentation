@@ -1,6 +1,5 @@
 var structxii_camera_mode =
 [
-    [ "StorageType", "db/d4a/structxii_camera_mode.htm#a6416beb73b1fd97df05d889d71fa597d", null ],
     [ "Enum", "db/d4a/structxii_camera_mode.htm#ad88142773a407b01a024f00425d270df", [
       [ "None", "db/d4a/structxii_camera_mode.htm#ad88142773a407b01a024f00425d270dfa74f237fe41477f4dafe326e9156a6e6b", null ],
       [ "PerspectiveFixedFovX", "db/d4a/structxii_camera_mode.htm#ad88142773a407b01a024f00425d270dfa92367786f408995ea00fb7e4b495e168", null ],

@@ -1,7 +1,6 @@
 var classxii_clock =
 [
-    [ "EventData", "d4/d57/structxii_clock_1_1_event_data.htm", "d4/d57/structxii_clock_1_1_event_data" ],
-    [ "Event", "d5/da3/classxii_clock.htm#aec2337ff524c8766f51780bac5c875db", null ],
+    [ "EventData", "d4/d57/structxii_clock_1_1_event_data.htm", null ],
     [ "xiiClock", "d5/da3/classxii_clock.htm#abb440373732a814fca7a350a6de692f0", null ],
     [ "GetAccumulatedTime", "d5/da3/classxii_clock.htm#ac95c0089f9e01457ef0edaa1db2f0ccf", null ],
     [ "GetClockName", "d5/da3/classxii_clock.htm#a7a855e217f4b97348d45bce21e7ed200", null ],

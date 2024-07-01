@@ -15,20 +15,5 @@ var classxii_virtual_thumb_stick =
     [ "SetInputArea", "d2/d95/classxii_virtual_thumb_stick.htm#a4631dd571ed5ae03b3fe06974a47abe2", null ],
     [ "SetThumbstickOutput", "d2/d95/classxii_virtual_thumb_stick.htm#ad10b81f36de53ee1533f74970596cf2d", null ],
     [ "SetTriggerInputSlot", "d2/d95/classxii_virtual_thumb_stick.htm#ac675dcd7f183e42f0e5b81ded5072f36", null ],
-    [ "UpdateActionMapping", "d2/d95/classxii_virtual_thumb_stick.htm#aa0f46035f40a6e585ae4d77691427087", null ],
-    [ "UpdateInputSlotValues", "d2/d95/classxii_virtual_thumb_stick.htm#a7af75239aebfbdd71b6d3e3b56709203", null ],
-    [ "m_ActionConfig", "d2/d95/classxii_virtual_thumb_stick.htm#ae6ef39d989cf0ba450d2b2c140df783b", null ],
-    [ "m_bConfigChanged", "d2/d95/classxii_virtual_thumb_stick.htm#a5e0a8568d7278bd50ac72598043e21d1", null ],
-    [ "m_bEnabled", "d2/d95/classxii_virtual_thumb_stick.htm#adf6fc994016dd99a65d4c3fd9e81c261", null ],
-    [ "m_bIsActive", "d2/d95/classxii_virtual_thumb_stick.htm#a49c073cea6e4900b8aa084e4f7683032", null ],
-    [ "m_CenterMode", "d2/d95/classxii_virtual_thumb_stick.htm#a216c038fa92486081a6bd0f5220efdbc", null ],
-    [ "m_fRadius", "d2/d95/classxii_virtual_thumb_stick.htm#a3f15ad787b12416ee07d7fa32b7c61ef", null ],
-    [ "m_sName", "d2/d95/classxii_virtual_thumb_stick.htm#a93fc63b13c4059520f0152a8385aa7a3", null ],
-    [ "m_sOutputDown", "d2/d95/classxii_virtual_thumb_stick.htm#acbfed480326c7fb930f7f409800cfecb", null ],
-    [ "m_sOutputLeft", "d2/d95/classxii_virtual_thumb_stick.htm#ae40a6e685e18fadca3b0497fcd90d3cf", null ],
-    [ "m_sOutputRight", "d2/d95/classxii_virtual_thumb_stick.htm#a1c49417e6aabd503f390010087cae5b0", null ],
-    [ "m_sOutputUp", "d2/d95/classxii_virtual_thumb_stick.htm#a3714006b5dcd4d338cec20bafdfb7a67", null ],
-    [ "m_vCenter", "d2/d95/classxii_virtual_thumb_stick.htm#a80e59608b332bfbb6c41c67195fea572", null ],
-    [ "m_vLowerLeft", "d2/d95/classxii_virtual_thumb_stick.htm#aad907cae1b8d9b80f24128f1f2444ac0", null ],
-    [ "m_vUpperRight", "d2/d95/classxii_virtual_thumb_stick.htm#ac0ecadadfcd7095f562310cafe85b142", null ]
+    [ "UpdateInputSlotValues", "d2/d95/classxii_virtual_thumb_stick.htm#a7af75239aebfbdd71b6d3e3b56709203", null ]
 ];

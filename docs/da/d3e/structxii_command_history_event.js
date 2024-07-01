@@ -11,7 +11,5 @@ var structxii_command_history_event =
       [ "TransactionEnded", "da/d3e/structxii_command_history_event.htm#acccdc8b58e10e00882fd51f877f7362baf7b198b6b8a5cefba4948bf467cbfe8a", null ],
       [ "TransactionCanceled", "da/d3e/structxii_command_history_event.htm#acccdc8b58e10e00882fd51f877f7362ba40c9bfbf896e148e824009440e1ebaa7", null ],
       [ "HistoryChanged", "da/d3e/structxii_command_history_event.htm#acccdc8b58e10e00882fd51f877f7362bad4bfcc8e508351114ec1910965b0267e", null ]
-    ] ],
-    [ "m_pDocument", "da/d3e/structxii_command_history_event.htm#af960d72c6d74998d71a3172c327d9f2c", null ],
-    [ "m_Type", "da/d3e/structxii_command_history_event.htm#aee34ede06b469cb40719e270e6a7ebd2", null ]
+    ] ]
 ];

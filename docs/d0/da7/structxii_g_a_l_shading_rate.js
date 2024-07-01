@@ -1,7 +1,6 @@
 var structxii_g_a_l_shading_rate =
 [
-    [ "Bits", "d4/de3/structxii_g_a_l_shading_rate_1_1_bits.htm", "d4/de3/structxii_g_a_l_shading_rate_1_1_bits" ],
-    [ "StorageType", "d0/da7/structxii_g_a_l_shading_rate.htm#a66036233eed645d022f5ecdc1ccd8837", null ],
+    [ "Bits", "d4/de3/structxii_g_a_l_shading_rate_1_1_bits.htm", null ],
     [ "Enum", "d0/da7/structxii_g_a_l_shading_rate.htm#a4031e7ff0886e340c8dacce8493f870a", [
       [ "_1X1", "d0/da7/structxii_g_a_l_shading_rate.htm#a4031e7ff0886e340c8dacce8493f870aa6c394deb7e2042336a0ae296030c6f97", null ],
       [ "_1X2", "d0/da7/structxii_g_a_l_shading_rate.htm#a4031e7ff0886e340c8dacce8493f870aa5eaf6e5a91fbcfbd756ea412b285f24d", null ],

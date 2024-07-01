@@ -1,6 +1,5 @@
 var structxii_g_a_l_shader_variable_description =
 [
-    [ "XII_DECLARE_MEM_RELOCATABLE_TYPE", "d7/d1f/structxii_g_a_l_shader_variable_description.htm#a104a214525a1a8f5eeedd1c66279d419", null ],
     [ "m_Class", "d7/d1f/structxii_g_a_l_shader_variable_description.htm#a33a4fa591b5bfe33b90c67d9ca75196e", null ],
     [ "m_Members", "d7/d1f/structxii_g_a_l_shader_variable_description.htm#aca8a19c8f81483a1e1adb874b9751854", null ],
     [ "m_PrimitiveType", "d7/d1f/structxii_g_a_l_shader_variable_description.htm#a4f97ca4fc270aca4b81e575db052d3e5", null ],

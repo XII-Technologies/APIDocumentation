@@ -1,6 +1,5 @@
 var structxii_g_a_l_buffer_view_type =
 [
-    [ "StorageType", "d1/d7d/structxii_g_a_l_buffer_view_type.htm#aa30bad9647b682ef8575405a2c72b1fc", null ],
     [ "Enum", "d1/d7d/structxii_g_a_l_buffer_view_type.htm#a7a446994bcbd972e282b16b300306dd6", [
       [ "Undefined", "d1/d7d/structxii_g_a_l_buffer_view_type.htm#a7a446994bcbd972e282b16b300306dd6a466a024cba1875b1f5682387261baca6", null ],
       [ "ShaderResource", "d1/d7d/structxii_g_a_l_buffer_view_type.htm#a7a446994bcbd972e282b16b300306dd6ae743aa896bf3443547d630c80ab01b0f", null ],

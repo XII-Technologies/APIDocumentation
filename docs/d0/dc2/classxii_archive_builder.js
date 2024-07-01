@@ -16,6 +16,5 @@ var classxii_archive_builder =
     [ "WriteArchive", "d0/dc2/classxii_archive_builder.htm#a5f72451c8755ca0752dd97107772e52c", null ],
     [ "WriteFileProgressCallback", "d0/dc2/classxii_archive_builder.htm#a22fb61a4592d0c3ba655a82f36d24071", null ],
     [ "WriteFileResultCallback", "d0/dc2/classxii_archive_builder.htm#aab726a4ae6eb049442f1e1ac587d7a3f", null ],
-    [ "WriteNextFileCallback", "d0/dc2/classxii_archive_builder.htm#ad12c9c838c5ce0f3cdd96de63a034d63", null ],
-    [ "m_Entries", "d0/dc2/classxii_archive_builder.htm#a865d7743e427af133ad5886dc74fd68a", null ]
+    [ "WriteNextFileCallback", "d0/dc2/classxii_archive_builder.htm#ad12c9c838c5ce0f3cdd96de63a034d63", null ]
 ];

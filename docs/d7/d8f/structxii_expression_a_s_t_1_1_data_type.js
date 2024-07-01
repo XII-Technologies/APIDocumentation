@@ -1,6 +1,5 @@
 var structxii_expression_a_s_t_1_1_data_type =
 [
-    [ "StorageType", "d7/d8f/structxii_expression_a_s_t_1_1_data_type.htm#adaf7b05c3065294237247bc0dacec9fc", null ],
     [ "Enum", "d7/d8f/structxii_expression_a_s_t_1_1_data_type.htm#a3f35cb13d8925930f4a369337d81e664", [
       [ "Unknown", "d7/d8f/structxii_expression_a_s_t_1_1_data_type.htm#a3f35cb13d8925930f4a369337d81e664a2c8ae2b0606ad3235e1c286f6bd49a4e", null ],
       [ "Unknown2", "d7/d8f/structxii_expression_a_s_t_1_1_data_type.htm#a3f35cb13d8925930f4a369337d81e664a230cbb783bd7e0cfec9b6b5af2efda35", null ],

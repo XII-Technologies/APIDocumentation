@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['violet_19097',['Violet',['../d3/de6/classxii_color.htm#ae0052e4284108807305eca16e26b98b5',1,'xiiColor']]]
+  ['violet_0',['Violet',['../d3/de6/classxii_color.htm#ae0052e4284108807305eca16e26b98b5',1,'xiiColor']]]
 ];

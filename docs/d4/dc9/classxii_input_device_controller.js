@@ -1,7 +1,6 @@
 var classxii_input_device_controller =
 [
-    [ "Motor", "d5/d26/structxii_input_device_controller_1_1_motor.htm", "d5/d26/structxii_input_device_controller_1_1_motor" ],
-    [ "xiiInputDeviceController", "d4/dc9/classxii_input_device_controller.htm#adaa6b2d87daf867a3eb6d945095b67e7", null ],
+    [ "Motor", "d5/d26/structxii_input_device_controller_1_1_motor.htm", null ],
     [ "AddVibrationTrack", "d4/dc9/classxii_input_device_controller.htm#a03e611f335759cd80f6a7932ec409aa6", null ],
     [ "ApplyVibration", "d4/dc9/classxii_input_device_controller.htm#adb0c15a82abcde3657a83b0ecc4721d0", null ],
     [ "EnableVibration", "d4/dc9/classxii_input_device_controller.htm#a4ef0914731f500d78c15568f7b1547fa", null ],

@@ -1,7 +1,5 @@
 var classxii_phantom_set_property =
 [
-    [ "xiiPhantomSetProperty", "da/dae/classxii_phantom_set_property.htm#a71e2d377cecb4954a2cb40e834e33c2c", null ],
-    [ "~xiiPhantomSetProperty", "da/dae/classxii_phantom_set_property.htm#a28e2222669bffe36ae90683df11a9584", null ],
     [ "Clear", "da/dae/classxii_phantom_set_property.htm#a24abb8253d3f0ceb99dcf1950192336c", null ],
     [ "Contains", "da/dae/classxii_phantom_set_property.htm#ad0d0adaae8ed1556e54463806b9ce9fe", null ],
     [ "GetSpecificType", "da/dae/classxii_phantom_set_property.htm#a29f291b9bb0149b09eaf92dd99700dcb", null ],

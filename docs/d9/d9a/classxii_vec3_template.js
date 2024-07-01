@@ -1,6 +1,5 @@
 var classxii_vec3_template =
 [
-    [ "ComponentType", "d9/d9a/classxii_vec3_template.htm#ac227f6ab2a1d9843d10f37abdeec8dbd", null ],
     [ "xiiVec3Template", "d9/d9a/classxii_vec3_template.htm#a53bfbab7f6139591acf9433eff4e728d", null ],
     [ "xiiVec3Template", "d9/d9a/classxii_vec3_template.htm#af17bd3f307dd75513d9aaefb6cc9ec22", null ],
     [ "xiiVec3Template", "d9/d9a/classxii_vec3_template.htm#a2e8604b3ca70e0215573a577731f00ad", null ],
@@ -20,8 +19,8 @@ var classxii_vec3_template =
     [ "GetAsPositionVec4", "d9/d9a/classxii_vec3_template.htm#a73d935a51d5ea3dd14ee9a4f171135fe", null ],
     [ "GetAsVec2", "d9/d9a/classxii_vec3_template.htm#afa181ef7561d20baca71eaf8aa80b1c8", null ],
     [ "GetAsVec4", "d9/d9a/classxii_vec3_template.htm#ac0c2ea06ef463e3916f3efdb36b4aa6b", null ],
-    [ "GetData", "d9/d9a/classxii_vec3_template.htm#a19498f4f27aacc479fca27859e91cb05", null ],
-    [ "GetData", "d9/d9a/classxii_vec3_template.htm#a865d1025db5b648919cb43de929e2187", null ],
+    [ "GetData", "d9/d9a/classxii_vec3_template.htm#a48481b65638502ecafc82e9c8ca7ca3d", null ],
+    [ "GetData", "d9/d9a/classxii_vec3_template.htm#ad881587f601fd666ca65c3a1f34fd1f8", null ],
     [ "GetLength", "d9/d9a/classxii_vec3_template.htm#afdbfe005da534ab16e275c8d18bd9f81", null ],
     [ "GetLengthAndNormalize", "d9/d9a/classxii_vec3_template.htm#a5633026a4c9b22b3bf29bbfffe8da7e3", null ],
     [ "GetLengthSquared", "d9/d9a/classxii_vec3_template.htm#a20c6aefe09afd9ee32cee75ac3490b61", null ],
@@ -49,9 +48,5 @@ var classxii_vec3_template =
     [ "Set", "d9/d9a/classxii_vec3_template.htm#a5e43059ab12cc33dc39155bde33c3cee", null ],
     [ "Set", "d9/d9a/classxii_vec3_template.htm#a31110d5b5e1de3cad4fe3546aec520f1", null ],
     [ "SetLength", "d9/d9a/classxii_vec3_template.htm#ad2cb527586b7ad99cf02329ee839f75c", null ],
-    [ "SetZero", "d9/d9a/classxii_vec3_template.htm#a988bf2dfd781e2f4565cb6bd74ea861d", null ],
-    [ "XII_DECLARE_POD_TYPE", "d9/d9a/classxii_vec3_template.htm#ab74de4a8062342d68d7be49dd9558dfe", null ],
-    [ "x", "d9/d9a/classxii_vec3_template.htm#aba669b48199fe5e35ece95e388957940", null ],
-    [ "y", "d9/d9a/classxii_vec3_template.htm#ac5616c21b3b03c329b343c6a883824e6", null ],
-    [ "z", "d9/d9a/classxii_vec3_template.htm#a117d95d711109cf135fcf0e0bee23108", null ]
+    [ "SetZero", "d9/d9a/classxii_vec3_template.htm#a988bf2dfd781e2f4565cb6bd74ea861d", null ]
 ];

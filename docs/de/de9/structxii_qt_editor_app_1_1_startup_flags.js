@@ -1,7 +1,6 @@
 var structxii_qt_editor_app_1_1_startup_flags =
 [
-    [ "Bits", "d2/de1/structxii_qt_editor_app_1_1_startup_flags_1_1_bits.htm", "d2/de1/structxii_qt_editor_app_1_1_startup_flags_1_1_bits" ],
-    [ "StorageType", "de/de9/structxii_qt_editor_app_1_1_startup_flags.htm#a9e44ac3db66b91c209133740938347c7", null ],
+    [ "Bits", "d2/de1/structxii_qt_editor_app_1_1_startup_flags_1_1_bits.htm", null ],
     [ "Enum", "de/de9/structxii_qt_editor_app_1_1_startup_flags.htm#ade46dd67224ae8b93e90a6566f683e22", [
       [ "Headless", "de/de9/structxii_qt_editor_app_1_1_startup_flags.htm#ade46dd67224ae8b93e90a6566f683e22a7b5bbc8adff6a068ef0261fbcf7d5613", null ],
       [ "SafeMode", "de/de9/structxii_qt_editor_app_1_1_startup_flags.htm#ade46dd67224ae8b93e90a6566f683e22a87901a4e1d7ea9243b30d90036791165", null ],

@@ -1,7 +1,6 @@
 var structxii_g_a_l_color_mask =
 [
-    [ "Bits", "d0/d47/structxii_g_a_l_color_mask_1_1_bits.htm", "d0/d47/structxii_g_a_l_color_mask_1_1_bits" ],
-    [ "StorageType", "d7/dd1/structxii_g_a_l_color_mask.htm#a38662257e299abe51c995961fe06b1b5", null ],
+    [ "Bits", "d0/d47/structxii_g_a_l_color_mask_1_1_bits.htm", null ],
     [ "Enum", "d7/dd1/structxii_g_a_l_color_mask.htm#a8c7d9d97828b9d4deb3e3c6a1456f223", [
       [ "None", "d7/dd1/structxii_g_a_l_color_mask.htm#a8c7d9d97828b9d4deb3e3c6a1456f223aa683abe689aa1863f4eca973293acf14", null ],
       [ "Red", "d7/dd1/structxii_g_a_l_color_mask.htm#a8c7d9d97828b9d4deb3e3c6a1456f223a77c0e00bd470b7959ca437b301159d1d", null ],

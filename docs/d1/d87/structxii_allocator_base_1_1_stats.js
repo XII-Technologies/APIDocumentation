@@ -1,6 +1,5 @@
 var structxii_allocator_base_1_1_stats =
 [
-    [ "XII_DECLARE_POD_TYPE", "d1/d87/structxii_allocator_base_1_1_stats.htm#a2b469879545db00db7cf3653e5c62894", null ],
     [ "m_PerFrameAllocationTime", "d1/d87/structxii_allocator_base_1_1_stats.htm#ae251d84378468be3183b769910d6b8bd", null ],
     [ "m_uiAllocationSize", "d1/d87/structxii_allocator_base_1_1_stats.htm#ac59721d124724ba3da87180b407e6e20", null ],
     [ "m_uiNumAllocations", "d1/d87/structxii_allocator_base_1_1_stats.htm#a0a9aef620c455faa28c5cb83398f7f28", null ],

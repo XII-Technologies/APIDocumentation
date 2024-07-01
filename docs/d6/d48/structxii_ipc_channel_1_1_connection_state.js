@@ -1,6 +1,5 @@
 var structxii_ipc_channel_1_1_connection_state =
 [
-    [ "StorageType", "d6/d48/structxii_ipc_channel_1_1_connection_state.htm#a236c526daf63b5f68d7cbb8a5e801a2d", null ],
     [ "Enum", "d6/d48/structxii_ipc_channel_1_1_connection_state.htm#a265ed929439bb498220cd3711abee485", [
       [ "Disconnected", "d6/d48/structxii_ipc_channel_1_1_connection_state.htm#a265ed929439bb498220cd3711abee485aa1b2098b08a828c0c73a61f98d81c1c7", null ],
       [ "Connecting", "d6/d48/structxii_ipc_channel_1_1_connection_state.htm#a265ed929439bb498220cd3711abee485a7441d8340735492c6097ce9666599671", null ],

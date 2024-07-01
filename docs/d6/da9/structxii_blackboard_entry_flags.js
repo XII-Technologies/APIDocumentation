@@ -1,7 +1,6 @@
 var structxii_blackboard_entry_flags =
 [
-    [ "Bits", "d1/d09/structxii_blackboard_entry_flags_1_1_bits.htm", "d1/d09/structxii_blackboard_entry_flags_1_1_bits" ],
-    [ "StorageType", "d6/da9/structxii_blackboard_entry_flags.htm#a21e01e2741ffb69ee38b44eea4f6098e", null ],
+    [ "Bits", "d1/d09/structxii_blackboard_entry_flags_1_1_bits.htm", null ],
     [ "Enum", "d6/da9/structxii_blackboard_entry_flags.htm#ae4ea5fdc2f5c4da57cfe731502c4bf63", [
       [ "None", "d6/da9/structxii_blackboard_entry_flags.htm#ae4ea5fdc2f5c4da57cfe731502c4bf63a2dc912f3c567e134d2098a17f584b128", null ],
       [ "Save", "d6/da9/structxii_blackboard_entry_flags.htm#ae4ea5fdc2f5c4da57cfe731502c4bf63a00f7aaefaf0d5b88ac0858d269e95af5", null ],

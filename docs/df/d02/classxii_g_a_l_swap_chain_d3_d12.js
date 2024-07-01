@@ -1,27 +1,9 @@
 var classxii_g_a_l_swap_chain_d3_d12 =
 [
-    [ "xiiGALSwapChainD3D12", "df/d02/classxii_g_a_l_swap_chain_d3_d12.htm#a168adbb0424681d2c10d7c7422535493", null ],
-    [ "~xiiGALSwapChainD3D12", "df/d02/classxii_g_a_l_swap_chain_d3_d12.htm#aacf0fad04596628604ba01c0d27db670", null ],
     [ "AcquireNextRenderTarget", "df/d02/classxii_g_a_l_swap_chain_d3_d12.htm#a6001eef6a04285d9d30dd8e4aa8e1b37", null ],
-    [ "CreateBackBufferInternal", "df/d02/classxii_g_a_l_swap_chain_d3_d12.htm#a7a8d91ab28cda196e1aa200b2fbeb6e4", null ],
-    [ "CreateDXGISwapChain", "df/d02/classxii_g_a_l_swap_chain_d3_d12.htm#a5855993bd3533a9cc9bdcb92911258ce", null ],
-    [ "DeInitPlatform", "df/d02/classxii_g_a_l_swap_chain_d3_d12.htm#a2acc174652288b69e87bfd1ee4756be8", null ],
-    [ "DestroyBackBufferInternal", "df/d02/classxii_g_a_l_swap_chain_d3_d12.htm#a6e51058d1e8c972416ac978e6aefcf39", null ],
-    [ "InitPlatform", "df/d02/classxii_g_a_l_swap_chain_d3_d12.htm#acfd51ca208f12ca948b79dc622f2210b", null ],
     [ "Present", "df/d02/classxii_g_a_l_swap_chain_d3_d12.htm#ab3a4db38b688fc27da2dd1eed48965ea", null ],
     [ "Resize", "df/d02/classxii_g_a_l_swap_chain_d3_d12.htm#a5536c51d1b280567c44ed65a70ab93a6", null ],
-    [ "SetDebugNamePlatform", "df/d02/classxii_g_a_l_swap_chain_d3_d12.htm#a3b5beb53a95ac2fb4645552a43cdcd56", null ],
     [ "SetFullScreenMode", "df/d02/classxii_g_a_l_swap_chain_d3_d12.htm#aa48f9a29d2ebb4176902fc3e9c5d38c0", null ],
     [ "SetMaximumFrameLatency", "df/d02/classxii_g_a_l_swap_chain_d3_d12.htm#a532aeda741e9eaacf740003f6b8c78a5", null ],
-    [ "SetWindowedMode", "df/d02/classxii_g_a_l_swap_chain_d3_d12.htm#a85421e43689000f752d9eb06257a7d75", null ],
-    [ "UpdateSwapChain", "df/d02/classxii_g_a_l_swap_chain_d3_d12.htm#af15899d3b85fe82c6273b8fbc031267d", null ],
-    [ "WaitForFrame", "df/d02/classxii_g_a_l_swap_chain_d3_d12.htm#af77109c9b80ae03ef23b5a92c44ba63b", null ],
-    [ "xiiGALDeviceD3D12", "df/d02/classxii_g_a_l_swap_chain_d3_d12.htm#a9b3da82b84b68e0128d059e18e11b67d", null ],
-    [ "xiiGALTexture", "df/d02/classxii_g_a_l_swap_chain_d3_d12.htm#ae9c1ffbbfbdbd10ec746299b78518848", null ],
-    [ "xiiMemoryUtils", "df/d02/classxii_g_a_l_swap_chain_d3_d12.htm#aefc9ff75d6833fd2f05be48e16436db6", null ],
-    [ "m_BackBufferTextures", "df/d02/classxii_g_a_l_swap_chain_d3_d12.htm#abcf57d24d31b9e96d021019257ba2670", null ],
-    [ "m_FrameLatencyWaitableObject", "df/d02/classxii_g_a_l_swap_chain_d3_d12.htm#a218e1662b2499f1fd9526c033c1faee5", null ],
-    [ "m_FullScreenMode", "df/d02/classxii_g_a_l_swap_chain_d3_d12.htm#a8fe0047dbc25c9711423ead16df8f2ce", null ],
-    [ "m_pDXGISwapChain3", "df/d02/classxii_g_a_l_swap_chain_d3_d12.htm#a32da592f15e93f5cd24ad9c16121cec0", null ],
-    [ "m_uiMaximumFrameLatency", "df/d02/classxii_g_a_l_swap_chain_d3_d12.htm#a713ee1e1ad63d0c21da4a00e92a425bc", null ]
+    [ "SetWindowedMode", "df/d02/classxii_g_a_l_swap_chain_d3_d12.htm#a85421e43689000f752d9eb06257a7d75", null ]
 ];

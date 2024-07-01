@@ -1,14 +1,10 @@
 var classxii_hashed_string =
 [
-    [ "HashedData", "de/df9/structxii_hashed_string_1_1_hashed_data.htm", "de/df9/structxii_hashed_string_1_1_hashed_data" ],
-    [ "HashedType", "d6/d0c/classxii_hashed_string.htm#a0ae61f30a21d053e64aacceb938f90d1", null ],
-    [ "StringStorage", "d6/d0c/classxii_hashed_string.htm#a969152d0f5be54cced398088bf7011b8", null ],
-    [ "xiiHashedString", "d6/d0c/classxii_hashed_string.htm#afc65ee4ad8c6c34f8caff1cd2b3c9d82", null ],
+    [ "HashedData", "de/df9/structxii_hashed_string_1_1_hashed_data.htm", null ],
+    [ "xiiHashedString", "d6/d0c/classxii_hashed_string.htm#ae284aa726de42336a2f6c3a992c5e8e4", null ],
     [ "xiiHashedString", "d6/d0c/classxii_hashed_string.htm#a5f4a341d5887229a3e5fca1c85cfb75a", null ],
     [ "xiiHashedString", "d6/d0c/classxii_hashed_string.htm#a9b5d0035dac27d79fa38ea117b5f8b5b", null ],
-    [ "Assign", "d6/d0c/classxii_hashed_string.htm#a55ad522187e4a55bf3aeb90f6b01c421", null ],
     [ "Assign", "d6/d0c/classxii_hashed_string.htm#a54c8ecc5b07fff781b4c8fb18b9d89cc", null ],
-    [ "Assign", "d6/d0c/classxii_hashed_string.htm#a1dca8ce2fd7362eda35a9edd8d3caec1", null ],
     [ "Assign", "d6/d0c/classxii_hashed_string.htm#ae43c79600e55af0daf8bcbcee592a544", null ],
     [ "Clear", "d6/d0c/classxii_hashed_string.htm#abbac46b61eee7cd13fa984b047363843", null ],
     [ "GetData", "d6/d0c/classxii_hashed_string.htm#ac351a65c4f1754d02d9f1181969a96c5", null ],
@@ -23,6 +19,5 @@ var classxii_hashed_string =
     [ "operator=", "d6/d0c/classxii_hashed_string.htm#af4186412eca98a8fb4a2f66449f9b6c0", null ],
     [ "operator=", "d6/d0c/classxii_hashed_string.htm#a87eeaecd77b3034b28f93958421303e4", null ],
     [ "operator==", "d6/d0c/classxii_hashed_string.htm#aaee48674cfaf6da1188ff096ced2c952", null ],
-    [ "operator==", "d6/d0c/classxii_hashed_string.htm#a95154015c2d4a0925e01dbca1479b612", null ],
-    [ "XII_DECLARE_MEM_RELOCATABLE_TYPE", "d6/d0c/classxii_hashed_string.htm#ad086be117594f63d95e56ea0f8a4c982", null ]
+    [ "operator==", "d6/d0c/classxii_hashed_string.htm#a95154015c2d4a0925e01dbca1479b612", null ]
 ];

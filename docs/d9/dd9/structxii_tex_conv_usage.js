@@ -1,6 +1,5 @@
 var structxii_tex_conv_usage =
 [
-    [ "StorageType", "d9/dd9/structxii_tex_conv_usage.htm#af586ef845549302a4dc8dbec8c24690d", null ],
     [ "Enum", "d9/dd9/structxii_tex_conv_usage.htm#a5c58a263fc8562c1df4d677a87099f83", [
       [ "Auto", "d9/dd9/structxii_tex_conv_usage.htm#a5c58a263fc8562c1df4d677a87099f83aeaf7e25b4916248f73183fa81c81dcd3", null ],
       [ "Color", "d9/dd9/structxii_tex_conv_usage.htm#a5c58a263fc8562c1df4d677a87099f83a9d3177fbcde51098eb918d70aaa4f115", null ],

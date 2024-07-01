@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['extensions_20227',['Extensions',['../dd/db4/md__home_runner_work__x_i_i__x_i_i__documentation__third_party_docs_extensions.htm',1,'']]]
+  ['doxygen_20awesome_0',['Doxygen Awesome',['../d7/d03/md__2home_2runner_2work_2_x_i_i_2_x_i_i_2_documentation_2_third_party_2_r_e_a_d_m_e.htm',1,'']]]
 ];

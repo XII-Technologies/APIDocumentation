@@ -1,9 +1,7 @@
 var classxii_collection_resource =
 [
-    [ "xiiCollectionResource", "d8/d56/classxii_collection_resource.htm#a31e3bea54612a2410363e9193a63b22f", null ],
-    [ "~xiiCollectionResource", "d8/d56/classxii_collection_resource.htm#a91a20d0898470007899b4960526eab7e", null ],
     [ "GetDescriptor", "d8/d56/classxii_collection_resource.htm#a3d1e09ce917c62df08fb6da259e0b30f", null ],
-    [ "GetPreloadedResources", "d8/d56/classxii_collection_resource.htm#afa146befd20f562c8305edf63774317c", null ],
+    [ "GetPreloadedResources", "d8/d56/classxii_collection_resource.htm#a4c07d5cb464333d33b92cc65efd0ad60", null ],
     [ "IsLoadingFinished", "d8/d56/classxii_collection_resource.htm#ab720d3e19858ceeb0d8dfd1859e9e120", null ],
     [ "PreloadResources", "d8/d56/classxii_collection_resource.htm#adba3915454c5b98560b040c215ab8e81", null ],
     [ "RegisterNames", "d8/d56/classxii_collection_resource.htm#aec1faf2c34b9e30192cd3ece4ace8bcb", null ],

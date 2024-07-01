@@ -1,11 +1,10 @@
 var classxii_dynamic_quadtree =
 [
-    [ "xiiDynamicQuadtree", "d6/db3/classxii_dynamic_quadtree.htm#a34247fc62372d8f56d8f836222827ccf", null ],
     [ "CreateTree", "d6/db3/classxii_dynamic_quadtree.htm#a0c664ff1d98c64e0e8f1eed24b1d5ef1", null ],
     [ "FindObjectsInRange", "d6/db3/classxii_dynamic_quadtree.htm#ace46848b82e21fdc1c81d12b18921d81", null ],
     [ "FindObjectsInRange", "d6/db3/classxii_dynamic_quadtree.htm#a6d169fc3f9be5a867c9cfc314be072da", null ],
     [ "FindVisibleObjects", "d6/db3/classxii_dynamic_quadtree.htm#a27e43c7e1266a67fbfdf9a9b84ea30aa", null ],
-    [ "GetBoundingBox", "d6/db3/classxii_dynamic_quadtree.htm#ab37d0b2b31541c17420e251e894580fe", null ],
+    [ "GetBoundingBox", "d6/db3/classxii_dynamic_quadtree.htm#a908f8ee135307fd04462ad308476a99d", null ],
     [ "GetCount", "d6/db3/classxii_dynamic_quadtree.htm#ad70a6cdbe6a79df5f1fb71ce7a0a930c", null ],
     [ "InsertObject", "d6/db3/classxii_dynamic_quadtree.htm#affbeee052bee681abaef63f4ff4d0934", null ],
     [ "IsEmpty", "d6/db3/classxii_dynamic_quadtree.htm#a5c78e668f88757ee0d08ffefae143ff6", null ],

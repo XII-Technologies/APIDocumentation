@@ -1,7 +1,6 @@
 var structxii_g_a_l_shader_variable_flags =
 [
-    [ "Bits", "da/dde/structxii_g_a_l_shader_variable_flags_1_1_bits.htm", "da/dde/structxii_g_a_l_shader_variable_flags_1_1_bits" ],
-    [ "StorageType", "d3/d05/structxii_g_a_l_shader_variable_flags.htm#abb219da4ec1ecd2befbba0472d4e4031", null ],
+    [ "Bits", "da/dde/structxii_g_a_l_shader_variable_flags_1_1_bits.htm", null ],
     [ "Enum", "d3/d05/structxii_g_a_l_shader_variable_flags.htm#a84edff70d97ff62192c9196d2c7855b7", [
       [ "None", "d3/d05/structxii_g_a_l_shader_variable_flags.htm#a84edff70d97ff62192c9196d2c7855b7a0c1bbc104f39a9ce8a56e1cde498ddb1", null ],
       [ "NoDynamicBuffers", "d3/d05/structxii_g_a_l_shader_variable_flags.htm#a84edff70d97ff62192c9196d2c7855b7a6e3c9f1ecaad006e5c34276a1b03a227", null ],

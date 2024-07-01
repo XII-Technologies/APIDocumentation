@@ -109,7 +109,5 @@ var classxii_j_s_o_n_writer =
     [ "WriteVec4I32", "d1/d23/classxii_j_s_o_n_writer.htm#abade4a218977789c7a97c5d9b2910a86", null ],
     [ "WriteVec4I64", "d1/d23/classxii_j_s_o_n_writer.htm#a66dea5a807974fe7d1d69d02a390a3b0", null ],
     [ "WriteVec4U32", "d1/d23/classxii_j_s_o_n_writer.htm#af5c5ce1b50971e4363558432314b08bb", null ],
-    [ "WriteVec4U64", "d1/d23/classxii_j_s_o_n_writer.htm#a7acdbdfd425ea72019da6dc1ea7f0c7d", null ],
-    [ "m_ArrayMode", "d1/d23/classxii_j_s_o_n_writer.htm#ab63bd4f8689ae7c3d00b87b515433450", null ],
-    [ "m_WhitespaceMode", "d1/d23/classxii_j_s_o_n_writer.htm#a03c525a105aa73880a7cce90fe91d767", null ]
+    [ "WriteVec4U64", "d1/d23/classxii_j_s_o_n_writer.htm#a7acdbdfd425ea72019da6dc1ea7f0c7d", null ]
 ];

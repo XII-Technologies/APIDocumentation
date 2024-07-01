@@ -1,7 +1,6 @@
 var structxii_g_a_l_compute_shader_properties =
 [
-    [ "operator==", "df/d89/structxii_g_a_l_compute_shader_properties.htm#affd914fcda7a66e9c4316762a3799057", null ],
-    [ "XII_DECLARE_POD_TYPE", "df/d89/structxii_g_a_l_compute_shader_properties.htm#aaa2125cf8a827e3098d272dbc4f16489", null ],
+    [ "operator==", "df/d89/structxii_g_a_l_compute_shader_properties.htm#ac38168a72e230141e8b86f422426c9c3", null ],
     [ "m_uiMaxThreadGroupCountX", "df/d89/structxii_g_a_l_compute_shader_properties.htm#a360958c74a487b34b0ddcd4eddb8a3fa", null ],
     [ "m_uiMaxThreadGroupCountY", "df/d89/structxii_g_a_l_compute_shader_properties.htm#a97240aca97c97998db1b78fc5cb84194", null ],
     [ "m_uiMaxThreadGroupCountZ", "df/d89/structxii_g_a_l_compute_shader_properties.htm#a0a2d20a9c18d77b493b4597cca0b405b", null ],

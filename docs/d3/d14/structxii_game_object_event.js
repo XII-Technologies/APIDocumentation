@@ -15,6 +15,5 @@ var structxii_game_object_event =
       [ "TriggerSnapEachSelectedObjectToGrid", "d3/d14/structxii_game_object_event.htm#a4f061b8a6e7408537f3f0858b17da590afa808bd6bd4cceab4a6e60d8d03f9d68", null ],
       [ "GameModeChanged", "d3/d14/structxii_game_object_event.htm#a4f061b8a6e7408537f3f0858b17da590a4891293c924d2073221961a4017e4ea1", null ],
       [ "GizmoTransformMayBeInvalid", "d3/d14/structxii_game_object_event.htm#a4f061b8a6e7408537f3f0858b17da590a58296d4f55981897343d7824dd1cfaca", null ]
-    ] ],
-    [ "m_Type", "d3/d14/structxii_game_object_event.htm#a97d2203376be337988bfffb26fd97d24", null ]
+    ] ]
 ];

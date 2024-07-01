@@ -1,7 +1,6 @@
 var structxii_g_a_l_pipeline_resource_flags =
 [
-    [ "Bits", "df/de4/structxii_g_a_l_pipeline_resource_flags_1_1_bits.htm", "df/de4/structxii_g_a_l_pipeline_resource_flags_1_1_bits" ],
-    [ "StorageType", "da/d8c/structxii_g_a_l_pipeline_resource_flags.htm#aed25764c83a5b373c64e7963acee9f8e", null ],
+    [ "Bits", "df/de4/structxii_g_a_l_pipeline_resource_flags_1_1_bits.htm", null ],
     [ "Enum", "da/d8c/structxii_g_a_l_pipeline_resource_flags.htm#a149c0308106286ee271be0c308b08828", [
       [ "None", "da/d8c/structxii_g_a_l_pipeline_resource_flags.htm#a149c0308106286ee271be0c308b08828a9742e15be90970f81e2c88acbea9756a", null ],
       [ "NoDynamicBuffers", "da/d8c/structxii_g_a_l_pipeline_resource_flags.htm#a149c0308106286ee271be0c308b08828a778a8299bbe34b5276c07623e4c7d331", null ],

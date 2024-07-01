@@ -1,6 +1,5 @@
 var structxii_task_priority =
 [
-    [ "StorageType", "d9/d69/structxii_task_priority.htm#a589b670e647f702ed5e040699245eac1", null ],
     [ "Enum", "d9/d69/structxii_task_priority.htm#a2aa9f9ee2f9b337039c13a946945d93d", [
       [ "EarlyThisFrame", "d9/d69/structxii_task_priority.htm#a2aa9f9ee2f9b337039c13a946945d93daa8b4c35b5ab0cf3076f03f8a213a40fd", null ],
       [ "ThisFrame", "d9/d69/structxii_task_priority.htm#a2aa9f9ee2f9b337039c13a946945d93da286b6b4a6536d32d5b2f6ec30e8da63e", null ],

@@ -1,7 +1,6 @@
 var structxii_g_a_l_command_queue_type =
 [
-    [ "Bits", "d2/d67/structxii_g_a_l_command_queue_type_1_1_bits.htm", "d2/d67/structxii_g_a_l_command_queue_type_1_1_bits" ],
-    [ "StorageType", "d7/db4/structxii_g_a_l_command_queue_type.htm#ab896588875af1e78f128a9eebdf1978c", null ],
+    [ "Bits", "d2/d67/structxii_g_a_l_command_queue_type_1_1_bits.htm", null ],
     [ "Enum", "d7/db4/structxii_g_a_l_command_queue_type.htm#a47dd1577b4fcd1112a73e9a4798421cb", [
       [ "Unknown", "d7/db4/structxii_g_a_l_command_queue_type.htm#a47dd1577b4fcd1112a73e9a4798421cba54e7b66302b3311cb9120db765bef28b", null ],
       [ "Transfer", "d7/db4/structxii_g_a_l_command_queue_type.htm#a47dd1577b4fcd1112a73e9a4798421cba1b1270477d9a0342a145608904bd0d1d", null ],

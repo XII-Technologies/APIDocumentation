@@ -1,6 +1,5 @@
 var structxii_g_a_l_layout_element =
 [
-    [ "XII_DECLARE_POD_TYPE", "d7/df5/structxii_g_a_l_layout_element.htm#a59865b6262bbf260bac6d56d7b41bae8", null ],
     [ "m_Format", "d7/df5/structxii_g_a_l_layout_element.htm#a7fc24d0ad20fa1672d78664220f646f8", null ],
     [ "m_Frequency", "d7/df5/structxii_g_a_l_layout_element.htm#aeda0a6ae7da85409c5bfdffef8b9022a", null ],
     [ "m_Semantic", "d7/df5/structxii_g_a_l_layout_element.htm#ab9f3508510bb8ee6ffad928ed8cad060", null ],

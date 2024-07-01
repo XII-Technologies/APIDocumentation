@@ -1,7 +1,6 @@
 var structxii_g_a_l_resource_state_flags =
 [
-    [ "Bits", "d4/d36/structxii_g_a_l_resource_state_flags_1_1_bits.htm", "d4/d36/structxii_g_a_l_resource_state_flags_1_1_bits" ],
-    [ "StorageType", "d6/dec/structxii_g_a_l_resource_state_flags.htm#acd932ba5f8bb1fbf6affe11ef80d4829", null ],
+    [ "Bits", "d4/d36/structxii_g_a_l_resource_state_flags_1_1_bits.htm", null ],
     [ "Enum", "d6/dec/structxii_g_a_l_resource_state_flags.htm#a4863cdfd85d00744a4db3689c58b5e84", [
       [ "Unknown", "d6/dec/structxii_g_a_l_resource_state_flags.htm#a4863cdfd85d00744a4db3689c58b5e84a3fe51028e788643e7b21c52cd9bf8c1b", null ],
       [ "Undefined", "d6/dec/structxii_g_a_l_resource_state_flags.htm#a4863cdfd85d00744a4db3689c58b5e84a02de4ba855b29b01aad9b3b5a2cf0508", null ],

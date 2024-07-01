@@ -1,7 +1,6 @@
 var structxii_g_a_l_pipeline_stage_flags =
 [
-    [ "Bits", "d3/dca/structxii_g_a_l_pipeline_stage_flags_1_1_bits.htm", "d3/dca/structxii_g_a_l_pipeline_stage_flags_1_1_bits" ],
-    [ "StorageType", "dc/d29/structxii_g_a_l_pipeline_stage_flags.htm#acb9a735769fc7eb1f5de308862ad6813", null ],
+    [ "Bits", "d3/dca/structxii_g_a_l_pipeline_stage_flags_1_1_bits.htm", null ],
     [ "Enum", "dc/d29/structxii_g_a_l_pipeline_stage_flags.htm#ab114e9a33a63968b73bdf79069b73282", [
       [ "Undefined", "dc/d29/structxii_g_a_l_pipeline_stage_flags.htm#ab114e9a33a63968b73bdf79069b73282ab3f8948f583d42de1db5b365376c7cf0", null ],
       [ "TopOfPipeline", "dc/d29/structxii_g_a_l_pipeline_stage_flags.htm#ab114e9a33a63968b73bdf79069b73282aa71a83f93cf58da46228c6d2c4629f79", null ],

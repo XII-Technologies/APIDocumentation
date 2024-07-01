@@ -1,6 +1,5 @@
 var structxii_g_a_l_render_pass_attachment_description =
 [
-    [ "XII_DECLARE_POD_TYPE", "de/d88/structxii_g_a_l_render_pass_attachment_description.htm#ae3b24faf4546afc3b0593091d9b701a3", null ],
     [ "m_FinalStateFlags", "de/d88/structxii_g_a_l_render_pass_attachment_description.htm#ab32e01fbfa798b9906e7837733800eea", null ],
     [ "m_Format", "de/d88/structxii_g_a_l_render_pass_attachment_description.htm#a491e99b12c9c62fb1880ec4544dc0731", null ],
     [ "m_InitialStateFlags", "de/d88/structxii_g_a_l_render_pass_attachment_description.htm#ada18c1172b3d717e7d9d1a42539ebe2a", null ],

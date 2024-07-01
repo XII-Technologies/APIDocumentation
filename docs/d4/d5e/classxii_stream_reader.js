@@ -13,7 +13,6 @@ var classxii_stream_reader =
     [ "ReadSet", "d4/d5e/classxii_stream_reader.htm#a4574f95f5fd6d58d4f12f9560c2d4c3c", null ],
     [ "ReadString", "d4/d5e/classxii_stream_reader.htm#a0adab1774db90da6ccf26137d3dea01f", null ],
     [ "ReadString", "d4/d5e/classxii_stream_reader.htm#a350e9301c343af4c19bb46dbb0129d72", null ],
-    [ "ReadVersion", "d4/d5e/classxii_stream_reader.htm#a0397e8c5afe73119520eee2828c27708", null ],
     [ "ReadWordValue", "d4/d5e/classxii_stream_reader.htm#af3371cb1fad8f094bc12d60bbcbe8bd5", null ],
     [ "SkipBytes", "d4/d5e/classxii_stream_reader.htm#a2d4b8f7751d4b12a6fb64b21aac13575", null ]
 ];

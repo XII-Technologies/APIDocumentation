@@ -1,6 +1,5 @@
 var structxii_g_a_l_texture_format =
 [
-    [ "StorageType", "d2/de1/structxii_g_a_l_texture_format.htm#a9acf97fad4114d74426f452ffd7b659b", null ],
     [ "Enum", "d2/de1/structxii_g_a_l_texture_format.htm#a4ebed18ce152a1ef73a0afa6ae6e767b", [
       [ "Unknown", "d2/de1/structxii_g_a_l_texture_format.htm#a4ebed18ce152a1ef73a0afa6ae6e767ba25b3432c621fc52e91badebf82ccabe5", null ],
       [ "RGBA32Typeless", "d2/de1/structxii_g_a_l_texture_format.htm#a4ebed18ce152a1ef73a0afa6ae6e767ba0cf24673d26d1c92876204595cf8817f", null ],

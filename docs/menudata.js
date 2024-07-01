@@ -154,4 +154,4 @@ var menudata={children:[
 {text:"w",url:"functions_eval_w.htm#index_w"},
 {text:"x",url:"functions_eval_x.htm#index_x"},
 {text:"z",url:"functions_eval_z.htm#index_z"}]},
-{text:"Related Functions",url:"functions_rela.htm"}]}]}]}
+{text:"Related Symbols",url:"functions_rela.htm"}]}]}]}

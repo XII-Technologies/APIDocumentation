@@ -1,7 +1,6 @@
 var structxii_asset_document_flags =
 [
-    [ "Bits", "d6/df4/structxii_asset_document_flags_1_1_bits.htm", "d6/df4/structxii_asset_document_flags_1_1_bits" ],
-    [ "StorageType", "dd/d3b/structxii_asset_document_flags.htm#a75cb5f63a6612449bc7a402429542c9c", null ],
+    [ "Bits", "d6/df4/structxii_asset_document_flags_1_1_bits.htm", null ],
     [ "Enum", "dd/d3b/structxii_asset_document_flags.htm#a8a9d3d28ff9f81b678c247c918074c17", [
       [ "None", "dd/d3b/structxii_asset_document_flags.htm#a8a9d3d28ff9f81b678c247c918074c17a2db8a651433c3896490c60dcd6b2702f", null ],
       [ "AutoTransformOnSave", "dd/d3b/structxii_asset_document_flags.htm#a8a9d3d28ff9f81b678c247c918074c17a835d2c04f74d199f685e53d259224e49", null ],

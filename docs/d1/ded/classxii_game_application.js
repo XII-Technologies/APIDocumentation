@@ -1,28 +1,9 @@
 var classxii_game_application =
 [
-    [ "SUPER", "d1/ded/classxii_game_application.htm#aa6ddc1d46fbbc37d8e15c557a4c40623", null ],
     [ "xiiGameApplication", "d1/ded/classxii_game_application.htm#a4606ccdf0cfcdfca3a3aa03b9e20d4a9", null ],
-    [ "~xiiGameApplication", "d1/ded/classxii_game_application.htm#a729964626a9108101543dd40ae644cdd", null ],
-    [ "Deinit_ShutdownGraphicsDevice", "d1/ded/classxii_game_application.htm#a9f98f1103e8f2a93a222431d1ecf84fd", null ],
     [ "FindProjectDirectory", "d1/ded/classxii_game_application.htm#a6fb468add7c67454696a1506484f6666", null ],
     [ "GetAppProjectPath", "d1/ded/classxii_game_application.htm#ab0ee0f904a0a1a7d17ae811a034bc4dc", null ],
-    [ "Init_ConfigureAssetManagement", "d1/ded/classxii_game_application.htm#a104fad24666caa3a0838773e99249939", null ],
-    [ "Init_ConfigureInput", "d1/ded/classxii_game_application.htm#af913119415c41e6406807668f1d127b5", null ],
-    [ "Init_LoadRequiredPlugins", "d1/ded/classxii_game_application.htm#a2c9270c0c7ec5f22fd2693aec488bcb7", null ],
     [ "Init_SetupDefaultResources", "d1/ded/classxii_game_application.htm#a559c7bc7ae52997ab21c1d6481844c34", null ],
-    [ "Init_SetupGraphicsDevice", "d1/ded/classxii_game_application.htm#ae4a8f5ad7555c09c4faf2d9584b610f1", null ],
-    [ "IsGameUpdateEnabled", "d1/ded/classxii_game_application.htm#afcbe515109ce34a90a611898a0883f0f", null ],
     [ "ReinitializeInputConfig", "d1/ded/classxii_game_application.htm#a36e092672a36325f769005c82f0d815f", null ],
-    [ "RenderConsole", "d1/ded/classxii_game_application.htm#ae6a74c237e4a4cf00b5d805b14438d37", null ],
-    [ "RenderFps", "d1/ded/classxii_game_application.htm#a897166bbae72d28bdd88b63dc9e35cec", null ],
-    [ "Run_FinishFrame", "d1/ded/classxii_game_application.htm#a926e2e3568009e3102019266f10baaa7", null ],
-    [ "Run_Present", "d1/ded/classxii_game_application.htm#a661c71b1eb80b7ad5fe693e5fd2de21c", null ],
-    [ "Run_ProcessApplicationInput", "d1/ded/classxii_game_application.htm#a32649ea0cb40870597b440ce6d93a3ee", null ],
-    [ "Run_WorldUpdateAndRender", "d1/ded/classxii_game_application.htm#acab1daae897db95548a950e7d380c89d", null ],
-    [ "UpdateWorldsAndExtractViews", "d1/ded/classxii_game_application.htm#aa3174f06e0ffda9678e7b6d4edbb0ce4", null ],
-    [ "m_bIgnoreErrors", "d1/ded/classxii_game_application.htm#aa75b822649a9a1bbbf85375f7ec802b6", null ],
-    [ "m_bShowConsole", "d1/ded/classxii_game_application.htm#af42d21208b2bbbb3d106d670d29fb517", null ],
-    [ "m_pConsole", "d1/ded/classxii_game_application.htm#a5f86b15902fd281bda1ba6cb060b6856", null ],
-    [ "m_pUpdateTask", "d1/ded/classxii_game_application.htm#af459e9cfb469599662113d59a7dfa514", null ],
     [ "m_sAppProjectPath", "d1/ded/classxii_game_application.htm#a5f74c2c8dd879302fae58061ec7dfcc5", null ]
 ];

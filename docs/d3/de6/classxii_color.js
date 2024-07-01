@@ -1,7 +1,7 @@
 var classxii_color =
 [
     [ "xiiColor", "d3/de6/classxii_color.htm#a7a32a941fa7ee10ac77b43bfaf2bb8ae", null ],
-    [ "xiiColor", "d3/de6/classxii_color.htm#a14d92d70afc3a4555157a637f1f6518e", null ],
+    [ "xiiColor", "d3/de6/classxii_color.htm#aeee059293f88def629250c127f65c5d7", null ],
     [ "xiiColor", "d3/de6/classxii_color.htm#a62b1d33626487b9e59848548c92516df", null ],
     [ "xiiColor", "d3/de6/classxii_color.htm#ae1be1428926ecfb89a940e488c123927", null ],
     [ "ApplyHdrExposureValue", "d3/de6/classxii_color.htm#a02c98ec743b66d08b00076b993918d51", null ],
@@ -11,8 +11,8 @@ var classxii_color =
     [ "GetAsVec4", "d3/de6/classxii_color.htm#a0cb03d5a2982c7bcaf4c30093a6f983a", null ],
     [ "GetComplementaryColor", "d3/de6/classxii_color.htm#a5a95556593ef9671a50bf9443ad689a0", null ],
     [ "GetDarker", "d3/de6/classxii_color.htm#a48bb6b714dfa683571bbcbdab1a83f66", null ],
-    [ "GetData", "d3/de6/classxii_color.htm#a58eb2abf274000af0c27e5745ee8fd55", null ],
-    [ "GetData", "d3/de6/classxii_color.htm#a2e94a06902bb22eecfadf16dff473ebf", null ],
+    [ "GetData", "d3/de6/classxii_color.htm#ac8422e052574d3af249b4d5e95b84707", null ],
+    [ "GetData", "d3/de6/classxii_color.htm#ab7683b87cdb93f224acc84547c1e3cf9", null ],
     [ "GetHSV", "d3/de6/classxii_color.htm#a1c295e3d6ce28752d0aa98e0b3ab9b58", null ],
     [ "GetInvertedColor", "d3/de6/classxii_color.htm#aa448be2f2e447985dcb58ebeff1cc7c3", null ],
     [ "GetLuminance", "d3/de6/classxii_color.htm#a7f55690145f069ccd1de38e29e204416", null ],
@@ -39,10 +39,5 @@ var classxii_color =
     [ "SetRGBA", "d3/de6/classxii_color.htm#aa33dc4c12f06784e2e38bdc557344199", null ],
     [ "ToABGR8", "d3/de6/classxii_color.htm#a3b717a24d32a4e8268dc9177135130f5", null ],
     [ "ToRGBA8", "d3/de6/classxii_color.htm#a40c5272fb7afdd8223023280efdce636", null ],
-    [ "WithAlpha", "d3/de6/classxii_color.htm#ad7e8ee92b1d45362fae5657610df8e39", null ],
-    [ "XII_DECLARE_POD_TYPE", "d3/de6/classxii_color.htm#a0ed9bd18da7266cc67aed60bf22fa34c", null ],
-    [ "a", "d3/de6/classxii_color.htm#a49b677eb14bd33007656e375de8ecb3a", null ],
-    [ "b", "d3/de6/classxii_color.htm#a0e90b14850a2ed5509e96e680b7082fc", null ],
-    [ "g", "d3/de6/classxii_color.htm#a3cf7904d553dc6309098612c45b872f5", null ],
-    [ "r", "d3/de6/classxii_color.htm#a8ba0d12d278d5de32712cfa1f767b923", null ]
+    [ "WithAlpha", "d3/de6/classxii_color.htm#ad7e8ee92b1d45362fae5657610df8e39", null ]
 ];

@@ -1,7 +1,6 @@
 var structxii_g_a_l_resource_dimension_capability_flags =
 [
-    [ "Bits", "da/d56/structxii_g_a_l_resource_dimension_capability_flags_1_1_bits.htm", "da/d56/structxii_g_a_l_resource_dimension_capability_flags_1_1_bits" ],
-    [ "StorageType", "d5/d30/structxii_g_a_l_resource_dimension_capability_flags.htm#ae0fbf70da2635dd916e08c8cc8534251", null ],
+    [ "Bits", "da/d56/structxii_g_a_l_resource_dimension_capability_flags_1_1_bits.htm", null ],
     [ "Enum", "d5/d30/structxii_g_a_l_resource_dimension_capability_flags.htm#a3c967880af6da3646f4056f7efa738ae", [
       [ "None", "d5/d30/structxii_g_a_l_resource_dimension_capability_flags.htm#a3c967880af6da3646f4056f7efa738aeabd9bf2bf25edba3ca7d871d364f048d7", null ],
       [ "Buffer", "d5/d30/structxii_g_a_l_resource_dimension_capability_flags.htm#a3c967880af6da3646f4056f7efa738aeacc6470743b9e5aa6866b649e1cd1a665", null ],

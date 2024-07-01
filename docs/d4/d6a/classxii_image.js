@@ -6,8 +6,6 @@ var classxii_image =
     [ "Convert", "d4/d6a/classxii_image.htm#aa40d030c6c45f0f209085a6d599107e9", null ],
     [ "GetBlobPtr", "d4/d6a/classxii_image.htm#ab056dcd307449e1fe0f1b6fa7520da22", null ],
     [ "GetBlobPtr", "d4/d6a/classxii_image.htm#a00c46498961fe7a2f71563f5610e03f7", null ],
-    [ "GetByteBlobPtr", "d4/d6a/classxii_image.htm#afd14145bb2c30231d4994bbc56e8241a", null ],
-    [ "GetByteBlobPtr", "d4/d6a/classxii_image.htm#a3fda39d2145d0a2830c8d1f6e21034e6", null ],
     [ "GetPixelPointer", "d4/d6a/classxii_image.htm#a94b84acf6fd50e2122c369763c3ff143", null ],
     [ "GetPixelPointer", "d4/d6a/classxii_image.htm#a9512e789f06b71761118dcbf02850921", null ],
     [ "GetPlaneView", "d4/d6a/classxii_image.htm#ae58a39be17d8b0ad7e4c578f1962f30b", null ],
@@ -19,10 +17,8 @@ var classxii_image =
     [ "GetSubImageView", "d4/d6a/classxii_image.htm#ab7f97edd54fa0457c76fcb1f91e5369c", null ],
     [ "GetSubImageView", "d4/d6a/classxii_image.htm#a79c1138286f0004ed1d1fec2302e4d4e", null ],
     [ "LoadFrom", "d4/d6a/classxii_image.htm#a1f7c3cd3091470c653a9e67fb05db707", null ],
-    [ "operator=", "d4/d6a/classxii_image.htm#adc32f97c259e7262784ad1d320c3f9dd", null ],
     [ "ResetAndAlloc", "d4/d6a/classxii_image.htm#a956464e593c690119390e73e1fa937e0", null ],
     [ "ResetAndCopy", "d4/d6a/classxii_image.htm#a4d138e943260de98675be7d9c93b9c24", null ],
     [ "ResetAndMove", "d4/d6a/classxii_image.htm#aac1bb998ca050ccab8e55b778e18b108", null ],
-    [ "ResetAndUseExternalStorage", "d4/d6a/classxii_image.htm#a7a191560caccdb910c7e0207148837a3", null ],
-    [ "XII_DECLARE_MEM_RELOCATABLE_TYPE", "d4/d6a/classxii_image.htm#a8e91f6f75382995a7c67b1cfe3198306", null ]
+    [ "ResetAndUseExternalStorage", "d4/d6a/classxii_image.htm#a7a191560caccdb910c7e0207148837a3", null ]
 ];

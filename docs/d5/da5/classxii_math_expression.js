@@ -1,6 +1,6 @@
 var classxii_math_expression =
 [
-    [ "Input", "d6/df2/structxii_math_expression_1_1_input.htm", "d6/df2/structxii_math_expression_1_1_input" ],
+    [ "Input", "d6/df2/structxii_math_expression_1_1_input.htm", null ],
     [ "xiiMathExpression", "d5/da5/classxii_math_expression.htm#ac7b6ac01dc9e8242502f9719310c025e", null ],
     [ "xiiMathExpression", "d5/da5/classxii_math_expression.htm#aa8b14a0e1e27e4c4431d91992f1618f6", null ],
     [ "Evaluate", "d5/da5/classxii_math_expression.htm#ab509d02ff9575dba51bcdce1fa6ada74", null ],

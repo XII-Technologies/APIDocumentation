@@ -1,30 +1,12 @@
 var classxii_power_connector_component =
 [
-    [ "Attach", "d9/dd2/classxii_power_connector_component.htm#a0325e82e31ec70c62b076318b528e4d4", null ],
-    [ "ConnectToSocket", "d9/dd2/classxii_power_connector_component.htm#a927fb8790bd3fc283a0f9502e01a70a5", null ],
     [ "DeserializeComponent", "d9/dd2/classxii_power_connector_component.htm#a169df586ad18e56e84dab7fdac597574", null ],
-    [ "Detach", "d9/dd2/classxii_power_connector_component.htm#a4bbd460ac464258e3ddb2805e1e7c416", null ],
-    [ "GetOutput", "d9/dd2/classxii_power_connector_component.htm#acc09b6559f35f9d32303266eba3e0ea9", null ],
-    [ "InputChanged", "d9/dd2/classxii_power_connector_component.htm#a540dda0251054c5f8f8dfa2447f2f5da", null ],
     [ "IsAttached", "d9/dd2/classxii_power_connector_component.htm#a16c097bd0d36a63672368d8badb4e3c3", null ],
     [ "IsConnected", "d9/dd2/classxii_power_connector_component.htm#a4c98d0019da862021d7eca176afd0299", null ],
     [ "OnDeactivated", "d9/dd2/classxii_power_connector_component.htm#aa46a024edb3e20bcb0148478123ee644", null ],
     [ "OnMsgObjectGrabbed", "d9/dd2/classxii_power_connector_component.htm#ae6b114502e159bb0ec8a07d499cb4c11", null ],
     [ "OnMsgSensorDetectedObjectsChanged", "d9/dd2/classxii_power_connector_component.htm#a15f443082f2006f6ecc21915bbb63195", null ],
     [ "OnSimulationStarted", "d9/dd2/classxii_power_connector_component.htm#a299f848aee71e4f69e24d4adc0965fd2", null ],
-    [ "OutputChanged", "d9/dd2/classxii_power_connector_component.htm#a82234c244f2fb8b95fb684a90236054e", null ],
     [ "SerializeComponent", "d9/dd2/classxii_power_connector_component.htm#a5ae8f67ab4b3a039438cfb35efc7b5a0", null ],
-    [ "SetBuddy", "d9/dd2/classxii_power_connector_component.htm#a36984d5c0b9774ca2857ae5e16f5459e", null ],
-    [ "SetBuddyReference", "d9/dd2/classxii_power_connector_component.htm#aa7fda830c3c467d1c2fe88a7809155a1", null ],
-    [ "SetConnectedTo", "d9/dd2/classxii_power_connector_component.htm#aad9d79cb07f744911a71b6f6d362f7f3", null ],
-    [ "SetConnectedToReference", "d9/dd2/classxii_power_connector_component.htm#af2452ee58b19e1a5b6c4f63ac74a749d", null ],
-    [ "SetInput", "d9/dd2/classxii_power_connector_component.htm#a7216aaeec38c6b86d3c1afc11309c98e", null ],
-    [ "SetOutput", "d9/dd2/classxii_power_connector_component.htm#aa624c2f33ec2409a6f9c87c334a52041", null ],
-    [ "m_DetachTime", "d9/dd2/classxii_power_connector_component.htm#a0a8191de1c03fef8607041889ba11f54", null ],
-    [ "m_hAttachPoint", "d9/dd2/classxii_power_connector_component.htm#a8ec1ba908bee0b00ee520186e180cac6", null ],
-    [ "m_hBuddy", "d9/dd2/classxii_power_connector_component.htm#a9e214be2faaeadf31609a1a931d9c7a7", null ],
-    [ "m_hConnectedTo", "d9/dd2/classxii_power_connector_component.htm#a0eb5a40f6dc5e7836d7d4ebeea32056a", null ],
-    [ "m_hGrabbedBy", "d9/dd2/classxii_power_connector_component.htm#a900f748af7fc6bd92187cfc82f2f16a5", null ],
-    [ "m_uiInput", "d9/dd2/classxii_power_connector_component.htm#a7d50b0ac6bec5291b50325d9aa7023ee", null ],
-    [ "m_uiOutput", "d9/dd2/classxii_power_connector_component.htm#adc0386145dad3cf5c2e491c5f3dea17f", null ]
+    [ "SetOutput", "d9/dd2/classxii_power_connector_component.htm#aa624c2f33ec2409a6f9c87c334a52041", null ]
 ];

@@ -1,6 +1,5 @@
 var structxii_g_a_l_graphics_adapter_vendor =
 [
-    [ "StorageType", "d4/d31/structxii_g_a_l_graphics_adapter_vendor.htm#a9c2fa05547ee9316568ce20942e22d82", null ],
     [ "Enum", "d4/d31/structxii_g_a_l_graphics_adapter_vendor.htm#acb0977587f7d17323a6efb5d12004508", [
       [ "Unknown", "d4/d31/structxii_g_a_l_graphics_adapter_vendor.htm#acb0977587f7d17323a6efb5d12004508a288894f829bba8270f901996ccc222ad", null ],
       [ "Nvidia", "d4/d31/structxii_g_a_l_graphics_adapter_vendor.htm#acb0977587f7d17323a6efb5d12004508af51c4115f4eee748ce220e9aee6a119c", null ],

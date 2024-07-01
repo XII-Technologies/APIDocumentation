@@ -1,30 +1,7 @@
 var structxii_reflection_pool_1_1_data =
 [
-    [ "ProbeData", "d9/da7/structxii_reflection_pool_1_1_data_1_1_probe_data.htm", "d9/da7/structxii_reflection_pool_1_1_data_1_1_probe_data" ],
-    [ "WorldReflectionData", "d5/d55/structxii_reflection_pool_1_1_data_1_1_world_reflection_data.htm", "d5/d55/structxii_reflection_pool_1_1_data_1_1_world_reflection_data" ],
-    [ "Data", "df/ddd/structxii_reflection_pool_1_1_data.htm#a2a7fa147b71e6fc32fc5fbc673af3d80", null ],
-    [ "~Data", "df/ddd/structxii_reflection_pool_1_1_data.htm#a113d14e384e673e2f01ba7f44cb6f707", null ],
-    [ "AddProbe", "df/ddd/structxii_reflection_pool_1_1_data.htm#a5f9c4a903554135b945669faba58d9ce", null ],
+    [ "ProbeData", "d9/da7/structxii_reflection_pool_1_1_data_1_1_probe_data.htm", null ],
+    [ "WorldReflectionData", "d5/d55/structxii_reflection_pool_1_1_data_1_1_world_reflection_data.htm", null ],
     [ "CreateReflectionViewsAndResources", "df/ddd/structxii_reflection_pool_1_1_data.htm#a99436397ebac80efe1bbe23e536bf305", null ],
-    [ "CreateSkyIrradianceTexture", "df/ddd/structxii_reflection_pool_1_1_data.htm#ac81a22a9664d0e46b06a1a98a10e3ea1", null ],
-    [ "GetWorldData", "df/ddd/structxii_reflection_pool_1_1_data.htm#abd4d4a3d662f28d87ea6101207de2371", null ],
-    [ "OnReflectionProbeMappingEvent", "df/ddd/structxii_reflection_pool_1_1_data.htm#aa4f4e85139d0d13c7b882a748660eeb1", null ],
-    [ "PostExtraction", "df/ddd/structxii_reflection_pool_1_1_data.htm#a75d7a343cac27cc13aca985ddae7b054", null ],
-    [ "PreExtraction", "df/ddd/structxii_reflection_pool_1_1_data.htm#a6644772d65fe945731fcbd23b6ff2d89", null ],
-    [ "RemoveProbe", "df/ddd/structxii_reflection_pool_1_1_data.htm#a447359ff337121182dbf21d189f91948", null ],
-    [ "UpdateProbeData", "df/ddd/structxii_reflection_pool_1_1_data.htm#aa82f8637e8dc5ce56f16137dea7984f8", null ],
-    [ "UpdateSkyLightData", "df/ddd/structxii_reflection_pool_1_1_data.htm#a6948a6b54741b039a859521531bf627e", null ],
-    [ "m_ActiveDynamicUpdate", "df/ddd/structxii_reflection_pool_1_1_data.htm#aae6bb6100000134c188ce0863f2912fb", null ],
-    [ "m_DynamicUpdateQueue", "df/ddd/structxii_reflection_pool_1_1_data.htm#ab33eb0ad17b5123cfa2ba7ec11a0ef83", null ],
-    [ "m_hDebugMaterial", "df/ddd/structxii_reflection_pool_1_1_data.htm#a437428a6c8033c7cb8f278bf3a33e6e7", null ],
-    [ "m_hDebugSphere", "df/ddd/structxii_reflection_pool_1_1_data.htm#acfa649c91ec7eb576d553e169d120624", null ],
-    [ "m_hFallbackReflectionSpecularTexture", "df/ddd/structxii_reflection_pool_1_1_data.htm#a288e8213dd199ece9c4e886af59143f1", null ],
-    [ "m_hSkyIrradianceTexture", "df/ddd/structxii_reflection_pool_1_1_data.htm#a6adc6f09a9a28f376b98572a94e1ad0f", null ],
-    [ "m_Mutex", "df/ddd/structxii_reflection_pool_1_1_data.htm#a005d08b2b5b3c63e009b73c83f34c6d7", null ],
-    [ "m_PendingDynamicUpdate", "df/ddd/structxii_reflection_pool_1_1_data.htm#a65ad25a4ca48e343454ec1a0d179014f", null ],
-    [ "m_ReflectionProbeUpdater", "df/ddd/structxii_reflection_pool_1_1_data.htm#adb9b3e595872a426569ff31130c724ff", null ],
-    [ "m_SkyIrradianceStorage", "df/ddd/structxii_reflection_pool_1_1_data.htm#a3a6cb77c4e52760ddee1c1dd64b16512", null ],
-    [ "m_uiSkyIrradianceChanged", "df/ddd/structxii_reflection_pool_1_1_data.htm#aab62ed396899f55999117f99b5ddc9ec", null ],
-    [ "m_uiWorldHasSkyLight", "df/ddd/structxii_reflection_pool_1_1_data.htm#af358c0e5a81079f4031de0a89741a8b2", null ],
-    [ "m_WorldReflectionData", "df/ddd/structxii_reflection_pool_1_1_data.htm#a57ecba97463210375ebb1b17fd0a91f6", null ]
+    [ "PreExtraction", "df/ddd/structxii_reflection_pool_1_1_data.htm#a6644772d65fe945731fcbd23b6ff2d89", null ]
 ];

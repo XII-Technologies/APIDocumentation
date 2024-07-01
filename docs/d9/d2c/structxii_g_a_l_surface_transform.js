@@ -1,6 +1,5 @@
 var structxii_g_a_l_surface_transform =
 [
-    [ "StorageType", "d9/d2c/structxii_g_a_l_surface_transform.htm#a897df9bf88d850137cc54a126b8c5113", null ],
     [ "Enum", "d9/d2c/structxii_g_a_l_surface_transform.htm#a79c57cb47773dc230f242eb53adc9148", [
       [ "Optimal", "d9/d2c/structxii_g_a_l_surface_transform.htm#a79c57cb47773dc230f242eb53adc9148ade5162c0b23228a11932b56dcf4abcba", null ],
       [ "Identity", "d9/d2c/structxii_g_a_l_surface_transform.htm#a79c57cb47773dc230f242eb53adc9148a5c9f9a2b2f16702a1d644b0b75ead67d", null ],

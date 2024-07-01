@@ -1,18 +1,16 @@
 var classxii_quat_template =
 [
-    [ "ComponentType", "d9/d1b/classxii_quat_template.htm#a6b970debf0253d65fa6b2dfd24cec186", null ],
-    [ "xiiQuatTemplate", "d9/d1b/classxii_quat_template.htm#a9f374db5aad9f6b3cd0cdb252228d1f6", null ],
     [ "xiiQuatTemplate", "d9/d1b/classxii_quat_template.htm#a220ecd9cecaa3d6942fecbbae7d2500e", null ],
     [ "Dot", "d9/d1b/classxii_quat_template.htm#a6e0a54212fcfe9b1926789427db98aac", null ],
     [ "GetAsEulerAngles", "d9/d1b/classxii_quat_template.htm#a8d26c87261cce8521c28c4b3a1b12f99", null ],
     [ "GetAsMat3", "d9/d1b/classxii_quat_template.htm#aa6d32f6602a305f9bb2b80d578db647f", null ],
     [ "GetAsMat4", "d9/d1b/classxii_quat_template.htm#ae4acab9c811fa6a9f02c2312599526fc", null ],
-    [ "GetData", "d9/d1b/classxii_quat_template.htm#a1ec78eb7bae18fae4193cc9d704e233f", null ],
-    [ "GetData", "d9/d1b/classxii_quat_template.htm#ae6017ba95daf63150ce076f8fc478314", null ],
+    [ "GetData", "d9/d1b/classxii_quat_template.htm#aeb735a987fa83603befb91d1e2280212", null ],
+    [ "GetData", "d9/d1b/classxii_quat_template.htm#a3bd474b4eed5529ffef17c8e62a67731", null ],
     [ "GetInverse", "d9/d1b/classxii_quat_template.htm#a667d7d73fac575cd61cc7e565b1392d0", null ],
     [ "GetNegated", "d9/d1b/classxii_quat_template.htm#a6cfe8b6e653991280f68b8dc22c5e388", null ],
     [ "GetRotationAxisAndAngle", "d9/d1b/classxii_quat_template.htm#a77e82ce5677442e006c325a65d9731fe", null ],
-    [ "GetVectorPart", "d9/d1b/classxii_quat_template.htm#a3c82f03b610bf53c9d172ec02a6e9ee6", null ],
+    [ "GetVectorPart", "d9/d1b/classxii_quat_template.htm#a59c86a2211ed5f8bde54987bcc50c49e", null ],
     [ "Invert", "d9/d1b/classxii_quat_template.htm#a1ccee339c17216c8ed01970c2c4bfea2", null ],
     [ "IsEqualRotation", "d9/d1b/classxii_quat_template.htm#a09a33fa5dcfe6cfaab85362445b27898", null ],
     [ "IsNaN", "d9/d1b/classxii_quat_template.htm#acac88d8e4caf8ddb378b3c8afcc1efce", null ],
@@ -21,10 +19,5 @@ var classxii_quat_template =
     [ "ReconstructFromMat3", "d9/d1b/classxii_quat_template.htm#a626e119e067b041d16a8fd8bfb006c92", null ],
     [ "ReconstructFromMat4", "d9/d1b/classxii_quat_template.htm#a7e0b7355144093951d34ec4cd7c08e81", null ],
     [ "Rotate", "d9/d1b/classxii_quat_template.htm#ab8e8505692df6d368692c6e3ea6c1de8", null ],
-    [ "SetIdentity", "d9/d1b/classxii_quat_template.htm#ae88f50c75d2e37f3b4f4d2b735d20915", null ],
-    [ "XII_DECLARE_POD_TYPE", "d9/d1b/classxii_quat_template.htm#a26c26f991f27ebcb8d6bd3aa7e2edd08", null ],
-    [ "w", "d9/d1b/classxii_quat_template.htm#a5075d7c7aec251654c357df8d41f04ba", null ],
-    [ "x", "d9/d1b/classxii_quat_template.htm#a3f325187806e1ad5b09891345abcba48", null ],
-    [ "y", "d9/d1b/classxii_quat_template.htm#a08bdd74002df5070d9cd63b31051e664", null ],
-    [ "z", "d9/d1b/classxii_quat_template.htm#afd97f0d770485a057399d676020cc012", null ]
+    [ "SetIdentity", "d9/d1b/classxii_quat_template.htm#ae88f50c75d2e37f3b4f4d2b735d20915", null ]
 ];

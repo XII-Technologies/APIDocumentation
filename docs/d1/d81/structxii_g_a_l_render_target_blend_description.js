@@ -1,6 +1,5 @@
 var structxii_g_a_l_render_target_blend_description =
 [
-    [ "XII_DECLARE_POD_TYPE", "d1/d81/structxii_g_a_l_render_target_blend_description.htm#a4d412d67e67dcec4d68d5d6afd21bd7b", null ],
     [ "m_bBlendEnable", "d1/d81/structxii_g_a_l_render_target_blend_description.htm#aed9541b3936ecde8e08fbdcb6d56db8e", null ],
     [ "m_BlendOperation", "d1/d81/structxii_g_a_l_render_target_blend_description.htm#a7561946858080f691fd819d4d3fa31a3", null ],
     [ "m_BlendOperationAlpha", "d1/d81/structxii_g_a_l_render_target_blend_description.htm#ae7f05a36caea6dc422fd6495d906e761", null ],

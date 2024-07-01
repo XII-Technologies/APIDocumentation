@@ -1,27 +1,8 @@
 var classxii_fog_component =
 [
-    [ "xiiFogComponent", "d0/dd7/classxii_fog_component.htm#a58a4fa112bfddefe27dddf610704f09f", null ],
-    [ "~xiiFogComponent", "d0/dd7/classxii_fog_component.htm#ac95a3040c7801431325c4975dc402f35", null ],
     [ "Deinitialize", "d0/dd7/classxii_fog_component.htm#a545787b16a3012998a204b3914b62651", null ],
     [ "DeserializeComponent", "d0/dd7/classxii_fog_component.htm#abf8ed0366e3b37ee783fb6934f6a8b7d", null ],
-    [ "GetColor", "d0/dd7/classxii_fog_component.htm#ac65509514a454fa99575aa91177cb85b", null ],
-    [ "GetDensity", "d0/dd7/classxii_fog_component.htm#ae1f63bfb7c937a45cf05cfc501a77900", null ],
-    [ "GetHeightFalloff", "d0/dd7/classxii_fog_component.htm#aeb2ae7fd64fdce9731ba94f8e33b7bbd", null ],
-    [ "GetModulateWithSkyColor", "d0/dd7/classxii_fog_component.htm#a5eed03b7b51d705ac38e698e88e1a5d4", null ],
-    [ "GetSkyDistance", "d0/dd7/classxii_fog_component.htm#ac8b4cccde0c44afd2544bb3bd558fb5e", null ],
     [ "OnActivated", "d0/dd7/classxii_fog_component.htm#a100d2c53acbf7d60087032498702e604", null ],
     [ "OnDeactivated", "d0/dd7/classxii_fog_component.htm#aabe770dd5a13eb0c37de3ac8ab73209e", null ],
-    [ "OnMsgExtractRenderData", "d0/dd7/classxii_fog_component.htm#a65a75d4e80df5da0a48198b5aa55b933", null ],
-    [ "OnUpdateLocalBounds", "d0/dd7/classxii_fog_component.htm#a290aafa6f4bae198d0815c730a3be14a", null ],
-    [ "SerializeComponent", "d0/dd7/classxii_fog_component.htm#a733e7324aefac4ec2fc392d9c115f4f7", null ],
-    [ "SetColor", "d0/dd7/classxii_fog_component.htm#a9729c1cb6042780af2e837982560a733", null ],
-    [ "SetDensity", "d0/dd7/classxii_fog_component.htm#a513fed4f4468b1dfb7c00cf4b1456143", null ],
-    [ "SetHeightFalloff", "d0/dd7/classxii_fog_component.htm#a1d057d30c7c9d9880db22a8e9a35435d", null ],
-    [ "SetModulateWithSkyColor", "d0/dd7/classxii_fog_component.htm#ad9e0ee2f8ae8e4c5b0ef76127d402b87", null ],
-    [ "SetSkyDistance", "d0/dd7/classxii_fog_component.htm#aca8b01798cca1f14f3b88b6bf7cac34e", null ],
-    [ "m_bModulateWithSkyColor", "d0/dd7/classxii_fog_component.htm#a6c9c10cb4c967a2cf88603ae8552538c", null ],
-    [ "m_Color", "d0/dd7/classxii_fog_component.htm#a0bf7d026d971f532e94e938e5c6376de", null ],
-    [ "m_fDensity", "d0/dd7/classxii_fog_component.htm#ab83e098748ae95aed22aa599efb833cf", null ],
-    [ "m_fHeightFalloff", "d0/dd7/classxii_fog_component.htm#aac0a226ea10e7d53abeb9dfe5d5a8a4d", null ],
-    [ "m_fSkyDistance", "d0/dd7/classxii_fog_component.htm#ab34ed3b3886ca53131237285081ee815", null ]
+    [ "SerializeComponent", "d0/dd7/classxii_fog_component.htm#a733e7324aefac4ec2fc392d9c115f4f7", null ]
 ];

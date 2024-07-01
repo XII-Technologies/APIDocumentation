@@ -1,7 +1,6 @@
 var structxii_g_a_l_device_features =
 [
-    [ "operator==", "d6/d8f/structxii_g_a_l_device_features.htm#a9c9f9a367587213acbe6562119b36db4", null ],
-    [ "XII_DECLARE_POD_TYPE", "d6/d8f/structxii_g_a_l_device_features.htm#a6d9e0b135b81147b5eb7168aefae9c6f", null ],
+    [ "operator==", "d6/d8f/structxii_g_a_l_device_features.htm#a3e02c5975b630e21a53f33a726564d44", null ],
     [ "m_BinaryOcclusionQueries", "d6/d8f/structxii_g_a_l_device_features.htm#ad7eac6c9f941d0a684407bb51fe47c8b", null ],
     [ "m_BindlessResources", "d6/d8f/structxii_g_a_l_device_features.htm#a85de9c6bc486a890841126bfe7875471", null ],
     [ "m_ComputeShaders", "d6/d8f/structxii_g_a_l_device_features.htm#a3125567abd4aa131cc75d82c5048fb10", null ],

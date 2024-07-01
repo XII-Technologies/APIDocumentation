@@ -1,9 +1,7 @@
 var classxii_memory_stream_reader =
 [
     [ "xiiMemoryStreamReader", "da/d51/classxii_memory_stream_reader.htm#a9954dd25b7c8e279dba55d2d51fac1e8", null ],
-    [ "~xiiMemoryStreamReader", "da/d51/classxii_memory_stream_reader.htm#ae8705673c3631ee905f7294d8cf2998d", null ],
     [ "GetByteCount32", "da/d51/classxii_memory_stream_reader.htm#a02afdaf26d5bd81aaebd6d224aa440b6", null ],
-    [ "GetByteCount64", "da/d51/classxii_memory_stream_reader.htm#a268bbdc7d4b6cad4db74ee6603a75cd4", null ],
     [ "GetReadPosition", "da/d51/classxii_memory_stream_reader.htm#a88b4686b80b8abc07d2f6af6a53fd910", null ],
     [ "ReadBytes", "da/d51/classxii_memory_stream_reader.htm#a23cf8e32c0756789cfeef3b0b93bdd1a", null ],
     [ "SetDebugSourceInformation", "da/d51/classxii_memory_stream_reader.htm#ab28c678b081adbfa9de211931d42067a", null ],

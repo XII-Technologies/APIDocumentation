@@ -1,6 +1,5 @@
 var structxii_g_a_l_shader_primitive_type =
 [
-    [ "StorageType", "de/d04/structxii_g_a_l_shader_primitive_type.htm#a901183391c37c46d330c8eb0db48d5dd", null ],
     [ "Enum", "de/d04/structxii_g_a_l_shader_primitive_type.htm#a1610874798251f36546edc21e7db770c", [
       [ "Unknown", "de/d04/structxii_g_a_l_shader_primitive_type.htm#a1610874798251f36546edc21e7db770caa376dd9671f2be97982e8abd6dbe6121", null ],
       [ "Void", "de/d04/structxii_g_a_l_shader_primitive_type.htm#a1610874798251f36546edc21e7db770caa772aa2ec2e52e89ccab80bb73a4d399", null ],

@@ -7,6 +7,5 @@ var classxii_float16 =
     [ "operator!=", "d0/d08/classxii_float16.htm#af0a53a3480add8e3d62cb35dfbc30977", null ],
     [ "operator=", "d0/d08/classxii_float16.htm#aacb22613159b6e7d8d06ab8c06bb21c1", null ],
     [ "operator==", "d0/d08/classxii_float16.htm#a11b466349306a1356f43f9e782d9b792", null ],
-    [ "SetRawData", "d0/d08/classxii_float16.htm#a266905269e9260316b5fef0486cdb1bc", null ],
-    [ "XII_DECLARE_POD_TYPE", "d0/d08/classxii_float16.htm#ad64a2fcff0494a489fd263df8e7e1c21", null ]
+    [ "SetRawData", "d0/d08/classxii_float16.htm#a266905269e9260316b5fef0486cdb1bc", null ]
 ];

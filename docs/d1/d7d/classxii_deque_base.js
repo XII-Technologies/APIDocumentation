@@ -1,9 +1,5 @@
 var classxii_deque_base =
 [
-    [ "const_iterator", "d1/d7d/classxii_deque_base.htm#a4dbaad80d2fbd4b0a887c65fdbc27b18", null ],
-    [ "const_reverse_iterator", "d1/d7d/classxii_deque_base.htm#a9621fa8c6a8aa3d429ee458274c6c09a", null ],
-    [ "iterator", "d1/d7d/classxii_deque_base.htm#ae1cc2217aed0dbb58070f483415e31c4", null ],
-    [ "reverse_iterator", "d1/d7d/classxii_deque_base.htm#af1447e235f8435572e45bbb173b9dcf8", null ],
     [ "xiiDequeBase", "d1/d7d/classxii_deque_base.htm#a127aa133501c0b9f965ed0df17818b3d", null ],
     [ "xiiDequeBase", "d1/d7d/classxii_deque_base.htm#a82ccbdcc0b50f54ce8c7796b55b4e6cc", null ],
     [ "xiiDequeBase", "d1/d7d/classxii_deque_base.htm#a63704f928f938b75474bd7ebd3cfa90a", null ],
@@ -13,7 +9,7 @@ var classxii_deque_base =
     [ "Contains", "d1/d7d/classxii_deque_base.htm#a0a228b9beca6b5a98e04f25a1ff38706", null ],
     [ "EnsureCount", "d1/d7d/classxii_deque_base.htm#ae779cc2e29fe5522a439027774526114", null ],
     [ "ExpandAndGetRef", "d1/d7d/classxii_deque_base.htm#a6c4f6451cce0d87574a5275236508e16", null ],
-    [ "GetAllocator", "d1/d7d/classxii_deque_base.htm#ac6bd66726793b411f2df0cfdb23dfbaa", null ],
+    [ "GetAllocator", "d1/d7d/classxii_deque_base.htm#a1eee825f78dfc0a2ae87e3d520ded732", null ],
     [ "GetContiguousRange", "d1/d7d/classxii_deque_base.htm#aa9bf6081af25b7f13a911032c6ec0c96", null ],
     [ "GetCount", "d1/d7d/classxii_deque_base.htm#a816c70b7c82c13e82a7276d43105a53c", null ],
     [ "GetHeapMemoryUsage", "d1/d7d/classxii_deque_base.htm#abe5332bb093bdfed4202c5fdd3739a12", null ],

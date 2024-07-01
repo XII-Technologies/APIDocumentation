@@ -1,7 +1,5 @@
 var classxii_open_ddl_parser =
 [
-    [ "xiiOpenDdlParser", "d5/df7/classxii_open_ddl_parser.htm#a59f5e0856589e6c32ea114e6ac32ed1f", null ],
-    [ "~xiiOpenDdlParser", "d5/df7/classxii_open_ddl_parser.htm#a35c409c25dff834a07a03b95cca3af74", null ],
     [ "ContinueParsing", "d5/df7/classxii_open_ddl_parser.htm#ae3dcbc8d4f2d59c6180d342d25a5301f", null ],
     [ "HadFatalParsingError", "d5/df7/classxii_open_ddl_parser.htm#ad52bf2e9c30b24e2ce7a5abbc3a4542b", null ],
     [ "OnBeginObject", "d5/df7/classxii_open_ddl_parser.htm#a844a6db7d21225ad4fd11540473932c8", null ],
@@ -27,6 +25,5 @@ var classxii_open_ddl_parser =
     [ "SetInputStream", "d5/df7/classxii_open_ddl_parser.htm#a50dbc8afb5d7113c5b2eb34c415afc3e", null ],
     [ "SetLogInterface", "d5/df7/classxii_open_ddl_parser.htm#a7ff95cf607474448be3b6e790cd470e5", null ],
     [ "SkipRestOfObject", "d5/df7/classxii_open_ddl_parser.htm#a5d22e2a0cfc26ef62d41a6663588e28e", null ],
-    [ "StopParsing", "d5/df7/classxii_open_ddl_parser.htm#a0ae33ad2c26af59ee5e54b8c2ecc717b", null ],
-    [ "m_pLogInterface", "d5/df7/classxii_open_ddl_parser.htm#a8c69d7d1b83fbc906915684cd8a31200", null ]
+    [ "StopParsing", "d5/df7/classxii_open_ddl_parser.htm#a0ae33ad2c26af59ee5e54b8c2ecc717b", null ]
 ];

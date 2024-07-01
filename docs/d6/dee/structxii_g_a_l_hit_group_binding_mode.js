@@ -1,6 +1,5 @@
 var structxii_g_a_l_hit_group_binding_mode =
 [
-    [ "StorageType", "d6/dee/structxii_g_a_l_hit_group_binding_mode.htm#a8fc458ee322ccf1f6a0a06ff4700e595", null ],
     [ "Enum", "d6/dee/structxii_g_a_l_hit_group_binding_mode.htm#a4affb3f18e9e1d878d25fff69dbabed9", [
       [ "PerGeometry", "d6/dee/structxii_g_a_l_hit_group_binding_mode.htm#a4affb3f18e9e1d878d25fff69dbabed9a75258308b254639738af3fd4a38b8f28", null ],
       [ "PerInstance", "d6/dee/structxii_g_a_l_hit_group_binding_mode.htm#a4affb3f18e9e1d878d25fff69dbabed9a4ff19f4daf2be52c4ba59c881675319b", null ],

@@ -1,7 +1,6 @@
 var classxii_date_time =
 [
     [ "xiiDateTime", "de/dc3/classxii_date_time.htm#afebef7150eb8ec5829001eb056e578fb", null ],
-    [ "~xiiDateTime", "de/dc3/classxii_date_time.htm#a925d9f8b94593169bb3a064bb810e8e1", null ],
     [ "GetDay", "de/dc3/classxii_date_time.htm#a737988d1a19158a7c3eb07999c70c766", null ],
     [ "GetDayOfWeek", "de/dc3/classxii_date_time.htm#afcaf8857d8a859570010ccf4c4cda408", null ],
     [ "GetHour", "de/dc3/classxii_date_time.htm#ab644f5f6784043875fb284b8e041aad7", null ],

@@ -1,6 +1,5 @@
 var structxii_variant_type =
 [
-    [ "StorageType", "dd/dba/structxii_variant_type.htm#afede150b2478b38eac9ffbc216a13d29", null ],
     [ "Enum", "dd/dba/structxii_variant_type.htm#a38d867476ba7137c38a09976ece9ee6b", [
       [ "Invalid", "dd/dba/structxii_variant_type.htm#a38d867476ba7137c38a09976ece9ee6ba364f81759beed1225a661eaf5bb0cea0", null ],
       [ "FirstStandardType", "dd/dba/structxii_variant_type.htm#a38d867476ba7137c38a09976ece9ee6ba651755d3adc6e0da125c0baa3ebe83ef", null ],

@@ -8,7 +8,5 @@ var structxii_tools_project_event =
       [ "ProjectClosed", "d6/d25/structxii_tools_project_event.htm#a6f64ba13c1d8539f01b72dd4de758297af3fb7496b86913920227b97ce49dd23c", null ],
       [ "ProjectConfigChanged", "d6/d25/structxii_tools_project_event.htm#a6f64ba13c1d8539f01b72dd4de758297aec604c03f58ca260def1ad2fc84ae5ef", null ],
       [ "SaveAll", "d6/d25/structxii_tools_project_event.htm#a6f64ba13c1d8539f01b72dd4de758297a317a44053c6b90a1486598ff40f9dfa8", null ]
-    ] ],
-    [ "m_pProject", "d6/d25/structxii_tools_project_event.htm#a783beb5160bcdfde98e65275a49fdfb0", null ],
-    [ "m_Type", "d6/d25/structxii_tools_project_event.htm#ad4b4872a572a7c00781bdac1bac1eaae", null ]
+    ] ]
 ];

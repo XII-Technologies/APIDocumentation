@@ -1,6 +1,5 @@
 var structxii_g_a_l_primitive_topology =
 [
-    [ "StorageType", "db/d19/structxii_g_a_l_primitive_topology.htm#acf964e931782d24f9ee02b7bda6af1c2", null ],
     [ "Enum", "db/d19/structxii_g_a_l_primitive_topology.htm#a7b7c5b79846d73ceaf06670334c7388e", [
       [ "Undefined", "db/d19/structxii_g_a_l_primitive_topology.htm#a7b7c5b79846d73ceaf06670334c7388ea2b4aa05f86acfea3c85411b0a8076ceb", null ],
       [ "PointList", "db/d19/structxii_g_a_l_primitive_topology.htm#a7b7c5b79846d73ceaf06670334c7388ea45a476286a94764a32097a8f75de9304", null ],

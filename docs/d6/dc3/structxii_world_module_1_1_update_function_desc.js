@@ -1,7 +1,6 @@
 var structxii_world_module_1_1_update_function_desc =
 [
-    [ "Phase", "da/d87/structxii_world_module_1_1_update_function_desc_1_1_phase.htm", "da/d87/structxii_world_module_1_1_update_function_desc_1_1_phase" ],
-    [ "UpdateFunctionDesc", "d6/dc3/structxii_world_module_1_1_update_function_desc.htm#a23d48cecfe8dd20716c2cbaaa1b0ce64", null ],
+    [ "Phase", "da/d87/structxii_world_module_1_1_update_function_desc_1_1_phase.htm", null ],
     [ "m_bOnlyUpdateWhenSimulating", "d6/dc3/structxii_world_module_1_1_update_function_desc.htm#aa1551f4b52491d83d44cb17b73d448ce", null ],
     [ "m_DependsOn", "d6/dc3/structxii_world_module_1_1_update_function_desc.htm#a57acbc6ce6939c3df30036aedb031b7e", null ],
     [ "m_fPriority", "d6/dc3/structxii_world_module_1_1_update_function_desc.htm#ae38c19ee49147d3ac30f937f49cc6bf1", null ],

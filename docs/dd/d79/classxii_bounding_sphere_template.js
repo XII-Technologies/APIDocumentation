@@ -1,6 +1,5 @@
 var classxii_bounding_sphere_template =
 [
-    [ "ComponentType", "dd/d79/classxii_bounding_sphere_template.htm#a5a45a86fbb55d2ea3e4e03654fc17364", null ],
     [ "xiiBoundingSphereTemplate", "dd/d79/classxii_bounding_sphere_template.htm#ab29bdcaf8caaaabbfc3cde668450992a", null ],
     [ "Contains", "dd/d79/classxii_bounding_sphere_template.htm#a71508b015ef85d00d9d828aab4d6b07d", null ],
     [ "Contains", "dd/d79/classxii_bounding_sphere_template.htm#a1f9656c1bf1c2baabc26bd1a43c060c2", null ],
@@ -31,8 +30,5 @@ var classxii_bounding_sphere_template =
     [ "ScaleFromOrigin", "dd/d79/classxii_bounding_sphere_template.htm#ae773cba15bdae9d0952c3e11bb43d0c5", null ],
     [ "TransformFromCenter", "dd/d79/classxii_bounding_sphere_template.htm#a38bf494dafd4350db92297c289297118", null ],
     [ "TransformFromOrigin", "dd/d79/classxii_bounding_sphere_template.htm#ad320a1dbfc60fe192dc29d744ca50752", null ],
-    [ "Translate", "dd/d79/classxii_bounding_sphere_template.htm#ae7979964408018ed38e43c448914730a", null ],
-    [ "XII_DECLARE_POD_TYPE", "dd/d79/classxii_bounding_sphere_template.htm#a0a57e9a851a25a5553da3b2fe2ce481f", null ],
-    [ "m_fRadius", "dd/d79/classxii_bounding_sphere_template.htm#acb01c1832d48db9a1633dbab1c11e313", null ],
-    [ "m_vCenter", "dd/d79/classxii_bounding_sphere_template.htm#a74494c20e1627f8e29a807f60c98f70c", null ]
+    [ "Translate", "dd/d79/classxii_bounding_sphere_template.htm#ae7979964408018ed38e43c448914730a", null ]
 ];

@@ -1,6 +1,5 @@
 var structxii_g_a_l_texture_component_swizzle =
 [
-    [ "StorageType", "df/df1/structxii_g_a_l_texture_component_swizzle.htm#af2b14a0f469a7b5ec05d25777b5b935e", null ],
     [ "Enum", "df/df1/structxii_g_a_l_texture_component_swizzle.htm#acbe35cbcc9c4af37b4c6ebfdd5097b24", [
       [ "Identity", "df/df1/structxii_g_a_l_texture_component_swizzle.htm#acbe35cbcc9c4af37b4c6ebfdd5097b24a8e732ba6e10601f0333e28043162b35e", null ],
       [ "Zero", "df/df1/structxii_g_a_l_texture_component_swizzle.htm#acbe35cbcc9c4af37b4c6ebfdd5097b24a25511cb85fae72658ff98b8625a3b651", null ],

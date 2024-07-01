@@ -1,6 +1,5 @@
 var structxii_script_coroutine_creation_mode =
 [
-    [ "StorageType", "de/da1/structxii_script_coroutine_creation_mode.htm#a3faaebc3170a1d14bf766a36226430db", null ],
     [ "Enum", "de/da1/structxii_script_coroutine_creation_mode.htm#a72c2dbb927d181f9a6bb2f1600f5b8dd", [
       [ "StopOther", "de/da1/structxii_script_coroutine_creation_mode.htm#a72c2dbb927d181f9a6bb2f1600f5b8dda6ec561132183ba483a050a40243693e5", null ],
       [ "DontCreateNew", "de/da1/structxii_script_coroutine_creation_mode.htm#a72c2dbb927d181f9a6bb2f1600f5b8dda4f413d4e2ffe0d297d515ef404b22bc3", null ],

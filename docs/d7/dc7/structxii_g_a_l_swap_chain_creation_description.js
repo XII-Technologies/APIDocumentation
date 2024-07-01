@@ -1,7 +1,6 @@
 var structxii_g_a_l_swap_chain_creation_description =
 [
-    [ "operator==", "d7/dc7/structxii_g_a_l_swap_chain_creation_description.htm#afb5a34fcaa0d47868a323737d2b1d8f7", null ],
-    [ "XII_DECLARE_POD_TYPE", "d7/dc7/structxii_g_a_l_swap_chain_creation_description.htm#a2899d3d46771a5dc74b8fc74c46c8223", null ],
+    [ "operator==", "d7/dc7/structxii_g_a_l_swap_chain_creation_description.htm#af0f423221649e64f937d009cbfc7d7b7", null ],
     [ "m_bIsPrimary", "d7/dc7/structxii_g_a_l_swap_chain_creation_description.htm#a68882a6649eb12cdadb7be6dd2805e3b", null ],
     [ "m_ColorBufferFormat", "d7/dc7/structxii_g_a_l_swap_chain_creation_description.htm#a4979a6f5d622b450069b38e478ec40b0", null ],
     [ "m_fDefaultDepthValue", "d7/dc7/structxii_g_a_l_swap_chain_creation_description.htm#aeebf502f7ea03e2ef38bd9139a71e5a1", null ],

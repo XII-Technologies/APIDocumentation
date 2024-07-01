@@ -1,6 +1,5 @@
 var structxii_g_a_l_cull_mode =
 [
-    [ "StorageType", "de/ddb/structxii_g_a_l_cull_mode.htm#a347a21d0df56b2eb71b66e118f6c7a3b", null ],
     [ "Enum", "de/ddb/structxii_g_a_l_cull_mode.htm#a7b3c13fc477dc735a5d0700f27f46b24", [
       [ "Undefined", "de/ddb/structxii_g_a_l_cull_mode.htm#a7b3c13fc477dc735a5d0700f27f46b24a998497c381d4aba9daa0776beaa6f6f6", null ],
       [ "None", "de/ddb/structxii_g_a_l_cull_mode.htm#a7b3c13fc477dc735a5d0700f27f46b24adbb2f12e1ab058fe69a7331e5ee36b0c", null ],

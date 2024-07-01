@@ -9,6 +9,5 @@ var classxii_timestamp =
     [ "operator+=", "d5/da2/classxii_timestamp.htm#aff70d2743144fab5f4069eda749ad497", null ],
     [ "operator-", "d5/da2/classxii_timestamp.htm#a87066aa34daaf9ee58146e6ffdb13b86", null ],
     [ "operator-", "d5/da2/classxii_timestamp.htm#a9fb1fd0bdffab55bc89177402cf96897", null ],
-    [ "operator-=", "d5/da2/classxii_timestamp.htm#abf94488a5934a3e4160259fd703ce414", null ],
-    [ "XII_DECLARE_POD_TYPE", "d5/da2/classxii_timestamp.htm#adc9504f3101616172634aa10b8b85070", null ]
+    [ "operator-=", "d5/da2/classxii_timestamp.htm#abf94488a5934a3e4160259fd703ce414", null ]
 ];

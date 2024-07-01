@@ -1,6 +1,5 @@
 var structxii_log_msg_type =
 [
-    [ "StorageType", "d4/de6/structxii_log_msg_type.htm#add861051b76f599db8db9885498a77cb", null ],
     [ "Enum", "d4/de6/structxii_log_msg_type.htm#a7b991cbae5d585576d8269d959abbc49", [
       [ "GlobalDefault", "d4/de6/structxii_log_msg_type.htm#a7b991cbae5d585576d8269d959abbc49a099f259b62cbf7f1a0cddac6ef22997c", null ],
       [ "Flush", "d4/de6/structxii_log_msg_type.htm#a7b991cbae5d585576d8269d959abbc49a23aa80423afbbb54f389bf78075116ca", null ],

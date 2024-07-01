@@ -1,7 +1,6 @@
 var structxii_g_a_l_shader_resource_bind_flags =
 [
-    [ "Bits", "d0/d9d/structxii_g_a_l_shader_resource_bind_flags_1_1_bits.htm", "d0/d9d/structxii_g_a_l_shader_resource_bind_flags_1_1_bits" ],
-    [ "StorageType", "db/dc6/structxii_g_a_l_shader_resource_bind_flags.htm#a463884bb89993e77426f1d218719cbb1", null ],
+    [ "Bits", "d0/d9d/structxii_g_a_l_shader_resource_bind_flags_1_1_bits.htm", null ],
     [ "Enum", "db/dc6/structxii_g_a_l_shader_resource_bind_flags.htm#a56b1dc1bd82fa5176ace318b745cdc5b", [
       [ "Static", "db/dc6/structxii_g_a_l_shader_resource_bind_flags.htm#a56b1dc1bd82fa5176ace318b745cdc5ba34b573cdff75753a34169d40c916e8d7", null ],
       [ "Mutable", "db/dc6/structxii_g_a_l_shader_resource_bind_flags.htm#a56b1dc1bd82fa5176ace318b745cdc5baffaaedcafe81fe8c2564f3c6c4d8a5d7", null ],

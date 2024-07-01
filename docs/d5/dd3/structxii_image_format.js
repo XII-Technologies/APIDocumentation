@@ -1,6 +1,5 @@
 var structxii_image_format =
 [
-    [ "StorageType", "d5/dd3/structxii_image_format.htm#a11c71ca6e5f13f321975bfce72e83e22", null ],
     [ "Enum", "d5/dd3/structxii_image_format.htm#a005ef22274255637febbc13f075b9e38", [
       [ "UNKNOWN", "d5/dd3/structxii_image_format.htm#a005ef22274255637febbc13f075b9e38a229b0d9aa25c6c3fc489035af6147ee0", null ],
       [ "R32G32B32A32_FLOAT", "d5/dd3/structxii_image_format.htm#a005ef22274255637febbc13f075b9e38aab70f2e05366d99882f51695ab23fa05", null ],

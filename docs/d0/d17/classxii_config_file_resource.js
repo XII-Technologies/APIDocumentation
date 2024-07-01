@@ -1,7 +1,5 @@
 var classxii_config_file_resource =
 [
-    [ "xiiConfigFileResource", "d0/d17/classxii_config_file_resource.htm#af37a3f1ed501811dacf5d2191f324bf1", null ],
-    [ "~xiiConfigFileResource", "d0/d17/classxii_config_file_resource.htm#a3f4a73afce5efac530f9a3df68f69a2a", null ],
     [ "GetBool", "d0/d17/classxii_config_file_resource.htm#aaa82bc800cd2f73013c3c73cd0002387", null ],
     [ "GetBool", "d0/d17/classxii_config_file_resource.htm#a227a865637bb7f0581f726833d85f9b9", null ],
     [ "GetDouble", "d0/d17/classxii_config_file_resource.htm#ae1e689e85ceef43d6c41cc0af80f7e9c", null ],
@@ -14,6 +12,5 @@ var classxii_config_file_resource =
     [ "GetString", "d0/d17/classxii_config_file_resource.htm#a9127f634489c0a52c524a39adb9f78e9", null ],
     [ "UnloadData", "d0/d17/classxii_config_file_resource.htm#afb7ac674883aebfdc145cfd68b8151d2", null ],
     [ "UpdateContent", "d0/d17/classxii_config_file_resource.htm#abf7046f7741aa9abd7639bfa1271b293", null ],
-    [ "UpdateMemoryUsage", "d0/d17/classxii_config_file_resource.htm#a49a095e5bbe67cc97f88b7be3e03fa12", null ],
-    [ "xiiConfigFileResourceLoader", "d0/d17/classxii_config_file_resource.htm#aebdbd4971545b4e84c9a221a93e4c0b2", null ]
+    [ "UpdateMemoryUsage", "d0/d17/classxii_config_file_resource.htm#a49a095e5bbe67cc97f88b7be3e03fa12", null ]
 ];

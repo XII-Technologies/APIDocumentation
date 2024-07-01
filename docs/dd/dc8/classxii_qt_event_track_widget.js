@@ -1,28 +1,4 @@
 var classxii_qt_event_track_widget =
 [
-    [ "SelectedPoint", "d1/d18/structxii_qt_event_track_widget_1_1_selected_point.htm", "d1/d18/structxii_qt_event_track_widget_1_1_selected_point" ],
-    [ "xiiQtEventTrackWidget", "dd/dc8/classxii_qt_event_track_widget.htm#a49f207b32490d5d09cb2fd6adfffdd67", null ],
-    [ "BeginOperationEvent", "dd/dc8/classxii_qt_event_track_widget.htm#a0491cd81644e367981384c9a5e6fed88", null ],
-    [ "ClearSelection", "dd/dc8/classxii_qt_event_track_widget.htm#a2cc18ef176a7d6bd4c4f829f0e4543e1", null ],
-    [ "ContextMenuEvent", "dd/dc8/classxii_qt_event_track_widget.htm#a7fc3ebfab1a089d75d169948b7fedfd4", null ],
-    [ "DeleteControlPointsEvent", "dd/dc8/classxii_qt_event_track_widget.htm#a486162e5295b4939c02d755c79449c02", null ],
-    [ "DoubleClickEvent", "dd/dc8/classxii_qt_event_track_widget.htm#a62c4abf49bbe9f47af67c8f32dc639c0", null ],
-    [ "EndOperationEvent", "dd/dc8/classxii_qt_event_track_widget.htm#ab68b983d2b68f96377cc90dcf46f5096", null ],
-    [ "FrameCurve", "dd/dc8/classxii_qt_event_track_widget.htm#a174318d9dd81f274bf891704248366fa", null ],
-    [ "GetSelection", "dd/dc8/classxii_qt_event_track_widget.htm#a75ccf493e162073dc63cf301368599ef", null ],
-    [ "keyPressEvent", "dd/dc8/classxii_qt_event_track_widget.htm#a38b3dd1c638f9505f683fabf72fffb65", null ],
-    [ "MapFromScene", "dd/dc8/classxii_qt_event_track_widget.htm#a0d263ea08f554c3bbcad0d1961b01d61", null ],
-    [ "MapToScene", "dd/dc8/classxii_qt_event_track_widget.htm#ac3ba2a87e416ff173df864181b5663cb", null ],
-    [ "mouseDoubleClickEvent", "dd/dc8/classxii_qt_event_track_widget.htm#a62a6a9e7e383394258236f5368543968", null ],
-    [ "mouseMoveEvent", "dd/dc8/classxii_qt_event_track_widget.htm#ab420c4aec4ccedaff7c9e0120b09bcec", null ],
-    [ "mousePressEvent", "dd/dc8/classxii_qt_event_track_widget.htm#a1e7d56dd7d35b6ef6f11e92204057f88", null ],
-    [ "mouseReleaseEvent", "dd/dc8/classxii_qt_event_track_widget.htm#ae22d70e274049b176b03f407ea67afaa", null ],
-    [ "MoveControlPointsEvent", "dd/dc8/classxii_qt_event_track_widget.htm#a851c017bcda6c1fb4c185afeab802bd7", null ],
-    [ "paintEvent", "dd/dc8/classxii_qt_event_track_widget.htm#ac840bdbfc6040c0473e1478b146cd68c", null ],
-    [ "ScaleControlPointsEvent", "dd/dc8/classxii_qt_event_track_widget.htm#a3cbbfb3330cfd5938153c7113d046cfd", null ],
-    [ "SelectionChangedEvent", "dd/dc8/classxii_qt_event_track_widget.htm#ace06b74733eb16a0478cf06b6205c39e", null ],
-    [ "SetData", "dd/dc8/classxii_qt_event_track_widget.htm#af8477d49f07884dff35f687e3891b549", null ],
-    [ "SetGridBarWidget", "dd/dc8/classxii_qt_event_track_widget.htm#a399daf55ea45bdb1f030607b5bfabee9", null ],
-    [ "SetScrubberPosition", "dd/dc8/classxii_qt_event_track_widget.htm#a4573c9017fe84410952243c3e4e80554", null ],
-    [ "wheelEvent", "dd/dc8/classxii_qt_event_track_widget.htm#a580a9b181b6d5864414598a544886f47", null ]
+    [ "SelectedPoint", "d1/d18/structxii_qt_event_track_widget_1_1_selected_point.htm", null ]
 ];

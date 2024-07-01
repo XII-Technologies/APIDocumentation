@@ -23,12 +23,5 @@ var classxii_image_header =
     [ "SetNumArrayIndices", "d0/d25/classxii_image_header.htm#afc9a2f47dbf86198cc50d43df3577d06", null ],
     [ "SetNumFaces", "d0/d25/classxii_image_header.htm#a3d41c678edde2b74a5e7d018c9aaf272", null ],
     [ "SetNumMipLevels", "d0/d25/classxii_image_header.htm#ae2b1bd1a05ae594545e93b5142c83cdf", null ],
-    [ "SetWidth", "d0/d25/classxii_image_header.htm#a172cf13a96ae16c06c1a8704931d4fe1", null ],
-    [ "m_Format", "d0/d25/classxii_image_header.htm#ad254e88568221fdb04fca357e5bd4660", null ],
-    [ "m_uiDepth", "d0/d25/classxii_image_header.htm#aa16652a33e853574dfc92dd53f760787", null ],
-    [ "m_uiHeight", "d0/d25/classxii_image_header.htm#a5a255a2d074987c26b7f6afb762b892f", null ],
-    [ "m_uiNumArrayIndices", "d0/d25/classxii_image_header.htm#a6eddde82c0590889c60daa72c49013cc", null ],
-    [ "m_uiNumFaces", "d0/d25/classxii_image_header.htm#ab305ced8e957de08120535691976b718", null ],
-    [ "m_uiNumMipLevels", "d0/d25/classxii_image_header.htm#a67b72e650db47408cf41dec290a8c460", null ],
-    [ "m_uiWidth", "d0/d25/classxii_image_header.htm#a8417fb271661cedfc1a121f7fbdc6d69", null ]
+    [ "SetWidth", "d0/d25/classxii_image_header.htm#a172cf13a96ae16c06c1a8704931d4fe1", null ]
 ];

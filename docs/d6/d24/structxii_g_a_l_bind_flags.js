@@ -1,7 +1,6 @@
 var structxii_g_a_l_bind_flags =
 [
-    [ "Bits", "d2/d10/structxii_g_a_l_bind_flags_1_1_bits.htm", "d2/d10/structxii_g_a_l_bind_flags_1_1_bits" ],
-    [ "StorageType", "d6/d24/structxii_g_a_l_bind_flags.htm#a6885b0c4fa6dfbcb43c3a4adfff41409", null ],
+    [ "Bits", "d2/d10/structxii_g_a_l_bind_flags_1_1_bits.htm", null ],
     [ "Enum", "d6/d24/structxii_g_a_l_bind_flags.htm#a25f393130b89d8ef16082ac3ade3c33f", [
       [ "None", "d6/d24/structxii_g_a_l_bind_flags.htm#a25f393130b89d8ef16082ac3ade3c33fa57e1b7fe135c78779a2047a5cd1936ec", null ],
       [ "VertexBuffer", "d6/d24/structxii_g_a_l_bind_flags.htm#a25f393130b89d8ef16082ac3ade3c33fa8f6a4a9e824870e8fe41e1ad1353d03d", null ],

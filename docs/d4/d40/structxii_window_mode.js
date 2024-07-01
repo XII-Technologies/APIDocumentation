@@ -1,6 +1,5 @@
 var structxii_window_mode =
 [
-    [ "StorageType", "d4/d40/structxii_window_mode.htm#ad7aa0c5afdf3f8ae86cbedd1b51d9f94", null ],
     [ "Enum", "d4/d40/structxii_window_mode.htm#a572581340725890ccb4f8b0c2c40ef73", [
       [ "WindowFixedResolution", "d4/d40/structxii_window_mode.htm#a572581340725890ccb4f8b0c2c40ef73a33e301fb73b0d227640bf2cf84f045b3", null ],
       [ "WindowResizable", "d4/d40/structxii_window_mode.htm#a572581340725890ccb4f8b0c2c40ef73a267d8ec33bdf68fa657f3c763f5e3b21", null ],

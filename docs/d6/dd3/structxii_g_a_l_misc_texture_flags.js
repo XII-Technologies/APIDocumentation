@@ -1,7 +1,6 @@
 var structxii_g_a_l_misc_texture_flags =
 [
-    [ "Bits", "d2/d47/structxii_g_a_l_misc_texture_flags_1_1_bits.htm", "d2/d47/structxii_g_a_l_misc_texture_flags_1_1_bits" ],
-    [ "StorageType", "d6/dd3/structxii_g_a_l_misc_texture_flags.htm#a4ebb9321f493e0f999d768bc0f735879", null ],
+    [ "Bits", "d2/d47/structxii_g_a_l_misc_texture_flags_1_1_bits.htm", null ],
     [ "Enum", "d6/dd3/structxii_g_a_l_misc_texture_flags.htm#a196e11b3b7e52d4fab6d6f47801e8556", [
       [ "None", "d6/dd3/structxii_g_a_l_misc_texture_flags.htm#a196e11b3b7e52d4fab6d6f47801e8556ad75832e503a880f28d7ff3aa26d0d79a", null ],
       [ "GenerateMips", "d6/dd3/structxii_g_a_l_misc_texture_flags.htm#a196e11b3b7e52d4fab6d6f47801e8556afc8042b959890e820564a897da0ac65b", null ],

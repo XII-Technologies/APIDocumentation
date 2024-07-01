@@ -1,7 +1,6 @@
 var structxii_input_slot_flags =
 [
-    [ "Bits", "de/def/structxii_input_slot_flags_1_1_bits.htm", "de/def/structxii_input_slot_flags_1_1_bits" ],
-    [ "StorageType", "db/db7/structxii_input_slot_flags.htm#a40f50a72c96909dba91d0556f1ee24c0", null ],
+    [ "Bits", "de/def/structxii_input_slot_flags_1_1_bits.htm", null ],
     [ "Enum", "db/db7/structxii_input_slot_flags.htm#a3e9e6761413c16a3ca9109bb9d421bb0", [
       [ "None", "db/db7/structxii_input_slot_flags.htm#a3e9e6761413c16a3ca9109bb9d421bb0af968df08d1464251231e1ef62f8e5d59", null ],
       [ "ReportsRelativeValues", "db/db7/structxii_input_slot_flags.htm#a3e9e6761413c16a3ca9109bb9d421bb0addae36f681cf409f656a0468482aaf11", null ],

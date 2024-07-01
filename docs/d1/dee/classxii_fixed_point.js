@@ -8,7 +8,6 @@ var classxii_fixed_point =
     [ "operator*=", "d1/dee/classxii_fixed_point.htm#adb25da16a201a79314fd68c7d6384edc", null ],
     [ "operator*=", "d1/dee/classxii_fixed_point.htm#aa4f144ef3ee580036eb342fa28fd624e", null ],
     [ "operator+=", "d1/dee/classxii_fixed_point.htm#a1a7322f02466e53c0c775b78fc15d6df", null ],
-    [ "operator-", "d1/dee/classxii_fixed_point.htm#a57a849c951e34d3d67aa12213d0bc83d", null ],
     [ "operator-=", "d1/dee/classxii_fixed_point.htm#aecaec626c649edc8ee4d7eeedd189abd", null ],
     [ "operator/=", "d1/dee/classxii_fixed_point.htm#aa2ce4aab23b3b3456c010c43e75cc560", null ],
     [ "operator/=", "d1/dee/classxii_fixed_point.htm#ac864a211e2201c30b344fd0d6d25570b", null ],

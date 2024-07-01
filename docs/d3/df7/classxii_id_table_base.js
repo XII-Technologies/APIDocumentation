@@ -2,8 +2,6 @@ var classxii_id_table_base =
 [
     [ "ConstIterator", "da/db5/classxii_id_table_base_1_1_const_iterator.htm", "da/db5/classxii_id_table_base_1_1_const_iterator" ],
     [ "Iterator", "df/dcc/structxii_id_table_base_1_1_iterator.htm", "df/dcc/structxii_id_table_base_1_1_iterator" ],
-    [ "IndexType", "d3/df7/classxii_id_table_base.htm#ab21e5e356474535ff24295a51937646f", null ],
-    [ "TypeOfId", "d3/df7/classxii_id_table_base.htm#adff70de4bb0e6623b86ff4a5c210cc7a", null ],
     [ "xiiIdTableBase", "d3/df7/classxii_id_table_base.htm#aa3e2172ef62d8514836e1bff3290f93c", null ],
     [ "xiiIdTableBase", "d3/df7/classxii_id_table_base.htm#ad5d131fda61103498e6addc6eb43c9c5", null ],
     [ "~xiiIdTableBase", "d3/df7/classxii_id_table_base.htm#a5df9454dc6f372c40fe8e7308dc04702", null ],

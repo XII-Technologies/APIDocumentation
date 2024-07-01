@@ -1,6 +1,5 @@
 var structxii_token =
 [
-    [ "xiiToken", "d8/d89/structxii_token.htm#ac3a471a61873ba3d50546543b2713977", null ],
     [ "m_DataView", "d8/d89/structxii_token.htm#aa28f906b6f9ea43d173cda2f0d160bd7", null ],
     [ "m_File", "d8/d89/structxii_token.htm#a62abe9791d284f8f12026d57a7bec871", null ],
     [ "m_iType", "d8/d89/structxii_token.htm#aac5fc899401c0456e8c1d2d72b30feca", null ],

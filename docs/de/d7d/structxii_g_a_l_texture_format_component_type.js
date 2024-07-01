@@ -1,6 +1,5 @@
 var structxii_g_a_l_texture_format_component_type =
 [
-    [ "StorageType", "de/d7d/structxii_g_a_l_texture_format_component_type.htm#a723ab2e6450f294119b241e6834598b3", null ],
     [ "Enum", "de/d7d/structxii_g_a_l_texture_format_component_type.htm#a6442fba8dc46b3b6efd2193ad2964cbf", [
       [ "Undefined", "de/d7d/structxii_g_a_l_texture_format_component_type.htm#a6442fba8dc46b3b6efd2193ad2964cbfa76510ef3220b15178e1c0d163216dcec", null ],
       [ "Float", "de/d7d/structxii_g_a_l_texture_format_component_type.htm#a6442fba8dc46b3b6efd2193ad2964cbfa20f0a248acc1e88c82228192b4526b3b", null ],

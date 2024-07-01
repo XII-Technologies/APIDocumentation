@@ -1,32 +1,8 @@
 var classxii_volume_component =
 [
-    [ "xiiVolumeComponent", "d4/d4d/classxii_volume_component.htm#a6aaf141c4a750d719b57004d2fcd66d1", null ],
-    [ "~xiiVolumeComponent", "d4/d4d/classxii_volume_component.htm#a93b6c902a5f72022b7d91ea6a9145a13", null ],
     [ "DeserializeComponent", "d4/d4d/classxii_volume_component.htm#a6b580706f98bfaa62f8bf5f6bc5d3799", null ],
-    [ "GetSortOrder", "d4/d4d/classxii_volume_component.htm#a915e45bc70a49acb5d4dfbf443eeaff9", null ],
-    [ "GetTemplate", "d4/d4d/classxii_volume_component.htm#aad23c5e59ab41719dfd9a78b6adad1cb", null ],
-    [ "GetTemplateFile", "d4/d4d/classxii_volume_component.htm#afb4a6c81c6b378d89392a8d8cb26c742", null ],
-    [ "GetValue", "d4/d4d/classxii_volume_component.htm#aa746cd271fce70de68aece34e3a8b8de", null ],
-    [ "GetVolumeType", "d4/d4d/classxii_volume_component.htm#abdc086bf5ad7dff8f5db5dfe8fd50f69", null ],
-    [ "InitializeFromTemplate", "d4/d4d/classxii_volume_component.htm#a55d718719bfa7868ba87e9f68d03ab32", null ],
     [ "OnActivated", "d4/d4d/classxii_volume_component.htm#a2d3be3b3caecd4dd9616243f1e8c15fb", null ],
     [ "OnDeactivated", "d4/d4d/classxii_volume_component.htm#ac51163af40537cc6f23051f0b32ddbb7", null ],
-    [ "Reflection_GetKeys", "d4/d4d/classxii_volume_component.htm#ac0d7173dc4697c2272e5f625b2dbc7fd", null ],
-    [ "Reflection_GetValue", "d4/d4d/classxii_volume_component.htm#aa3d399c50a6a17ba5d3c9ad1ab800379", null ],
-    [ "Reflection_InsertValue", "d4/d4d/classxii_volume_component.htm#adc6b052e1dae6700c69cf42bb20eb3e1", null ],
-    [ "Reflection_RemoveValue", "d4/d4d/classxii_volume_component.htm#ac2963ac6b06b910f44a280b137bc02d0", null ],
-    [ "ReloadTemplate", "d4/d4d/classxii_volume_component.htm#af73fe236d7623d6d64d375a0cf9224c0", null ],
-    [ "RemoveReloadFunction", "d4/d4d/classxii_volume_component.htm#a3cc5c17e275ef0ee17c291d64b3fb2a4", null ],
     [ "SerializeComponent", "d4/d4d/classxii_volume_component.htm#adf07896e06ec8ddd4b40ca28da1115a6", null ],
-    [ "SetSortOrder", "d4/d4d/classxii_volume_component.htm#a20b95091cf53fff94ad899ab42c62362", null ],
-    [ "SetTemplate", "d4/d4d/classxii_volume_component.htm#ad8b01e0bab0a6cc4d9b8993e70cb58b9", null ],
-    [ "SetTemplateFile", "d4/d4d/classxii_volume_component.htm#a0ced0ed4586059190ee07b15e473057e", null ],
-    [ "SetValue", "d4/d4d/classxii_volume_component.htm#ab926ce82a3589bcbc2afdf1d497050e9", null ],
-    [ "SetVolumeType", "d4/d4d/classxii_volume_component.htm#aff8c25995c38da7084f22b8f77452dfc", null ],
-    [ "m_bReloadFunctionAdded", "d4/d4d/classxii_volume_component.htm#af66dfd70c054cfb2aceaa923640746dd", null ],
-    [ "m_fSortOrder", "d4/d4d/classxii_volume_component.htm#afa84c7af7c4ff239b026169bbc22bf7d", null ],
-    [ "m_hTemplateResource", "d4/d4d/classxii_volume_component.htm#abe7c6b98e79671a9552568f2ccdeb152", null ],
-    [ "m_OverwrittenValues", "d4/d4d/classxii_volume_component.htm#a56abbeff022283dc5366b0d2b9d2451e", null ],
-    [ "m_SpatialCategory", "d4/d4d/classxii_volume_component.htm#a883c81785be0c22e4efe4d9b2e6eff14", null ],
-    [ "m_Values", "d4/d4d/classxii_volume_component.htm#ab80614b6a62141d86139ab5eaf41e219", null ]
+    [ "SetSortOrder", "d4/d4d/classxii_volume_component.htm#a20b95091cf53fff94ad899ab42c62362", null ]
 ];

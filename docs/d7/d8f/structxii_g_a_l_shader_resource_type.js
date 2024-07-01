@@ -1,6 +1,5 @@
 var structxii_g_a_l_shader_resource_type =
 [
-    [ "StorageType", "d7/d8f/structxii_g_a_l_shader_resource_type.htm#af9ad3da5769edffef8b85006ed0186d1", null ],
     [ "Enum", "d7/d8f/structxii_g_a_l_shader_resource_type.htm#a364ee1582d0f94bbc4c8ba4c2f1eec41", [
       [ "Unknown", "d7/d8f/structxii_g_a_l_shader_resource_type.htm#a364ee1582d0f94bbc4c8ba4c2f1eec41a5df72ca1524c565bde3fa40984105efb", null ],
       [ "ConstantBuffer", "d7/d8f/structxii_g_a_l_shader_resource_type.htm#a364ee1582d0f94bbc4c8ba4c2f1eec41a161499f9b0869a1acea60b516229bd77", null ],

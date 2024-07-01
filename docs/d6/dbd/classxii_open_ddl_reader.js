@@ -1,11 +1,5 @@
 var classxii_open_ddl_reader =
 [
-    [ "xiiOpenDdlReader", "d6/dbd/classxii_open_ddl_reader.htm#a5f517cfcd1f068e173bd96d1d1a94a45", null ],
-    [ "~xiiOpenDdlReader", "d6/dbd/classxii_open_ddl_reader.htm#a87c3c7841c8d3a52da2bac109c78cbe3", null ],
-    [ "AllocateBytes", "d6/dbd/classxii_open_ddl_reader.htm#ac5799ff43acfe9f00b3fce6a5aa85484", null ],
-    [ "ClearDataChunks", "d6/dbd/classxii_open_ddl_reader.htm#a90134d714ff559ba3a4c0b778e474e90", null ],
-    [ "CopyString", "d6/dbd/classxii_open_ddl_reader.htm#abd03f86d7bf94f8d98a5b439feecc63f", null ],
-    [ "CreateElement", "d6/dbd/classxii_open_ddl_reader.htm#acc3529455db9afa6258a638d0616176a", null ],
     [ "FindElement", "d6/dbd/classxii_open_ddl_reader.htm#a9c0a46f8224378f103e61eafa7aa4afa", null ],
     [ "GetRootElement", "d6/dbd/classxii_open_ddl_reader.htm#a6894e388e108789cf74044aea72c4aa6", null ],
     [ "OnBeginObject", "d6/dbd/classxii_open_ddl_reader.htm#aeaf9ef32ff73098582c74b79d64bac8b", null ],
@@ -25,14 +19,5 @@ var classxii_open_ddl_reader =
     [ "OnPrimitiveUInt32", "d6/dbd/classxii_open_ddl_reader.htm#ac1128470b5c1c106a310d6723f5cacc2", null ],
     [ "OnPrimitiveUInt64", "d6/dbd/classxii_open_ddl_reader.htm#ad561a21984c1a25adf7cb74a768112c2", null ],
     [ "OnPrimitiveUInt8", "d6/dbd/classxii_open_ddl_reader.htm#a2656509e765485d506925dc580644298", null ],
-    [ "ParseDocument", "d6/dbd/classxii_open_ddl_reader.htm#a4852309b798f7a102264a9683ad26fff", null ],
-    [ "StorePrimitiveData", "d6/dbd/classxii_open_ddl_reader.htm#abd441183bbf05e349a39904ff5ee2170", null ],
-    [ "m_DataChunks", "d6/dbd/classxii_open_ddl_reader.htm#ad66691a2100c3df331ce706de8b3cde5", null ],
-    [ "m_Elements", "d6/dbd/classxii_open_ddl_reader.htm#a6ddcffcd96e4e056579e4ec50549b1b4", null ],
-    [ "m_GlobalNames", "d6/dbd/classxii_open_ddl_reader.htm#a047c3fd396f55c4cc068aec36f535f9d", null ],
-    [ "m_ObjectStack", "d6/dbd/classxii_open_ddl_reader.htm#a89aabb3098cdc29ae266ed2d1130aa66", null ],
-    [ "m_pCurrentChunk", "d6/dbd/classxii_open_ddl_reader.htm#ad8c504c11f571701cf500bd7d4349ada", null ],
-    [ "m_Strings", "d6/dbd/classxii_open_ddl_reader.htm#aa2fec6bbc78735ccbc23d63fd6206709", null ],
-    [ "m_TempCache", "d6/dbd/classxii_open_ddl_reader.htm#ab9c7948caa430efe8dae76116682325b", null ],
-    [ "m_uiBytesInChunkLeft", "d6/dbd/classxii_open_ddl_reader.htm#a41ae320ea28c7c666d9c5448ebb90f1c", null ]
+    [ "ParseDocument", "d6/dbd/classxii_open_ddl_reader.htm#a4852309b798f7a102264a9683ad26fff", null ]
 ];

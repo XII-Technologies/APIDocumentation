@@ -1,7 +1,6 @@
 var structxii_g_a_l_display_mode_description =
 [
-    [ "operator==", "d0/d32/structxii_g_a_l_display_mode_description.htm#ac8b16f7cf57cb8c37e3e75194fc6c0a4", null ],
-    [ "XII_DECLARE_POD_TYPE", "d0/d32/structxii_g_a_l_display_mode_description.htm#ab429b7473a5732257a738bc7e27bc9e6", null ],
+    [ "operator==", "d0/d32/structxii_g_a_l_display_mode_description.htm#a537c15baa517814d951202748afd9fc9", null ],
     [ "m_Resolution", "d0/d32/structxii_g_a_l_display_mode_description.htm#a04db740e25dba538c734de4cae465fd3", null ],
     [ "m_ScalingMode", "d0/d32/structxii_g_a_l_display_mode_description.htm#a179df429a6e3ececc781444b033fda35", null ],
     [ "m_ScanLineOrder", "d0/d32/structxii_g_a_l_display_mode_description.htm#aabe71961068d405ad938827598828fa2", null ],

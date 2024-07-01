@@ -1,6 +1,5 @@
 var structxii_g_a_l_buffer_mode =
 [
-    [ "StorageType", "de/dad/structxii_g_a_l_buffer_mode.htm#a332f615e5147fd05fcfa76a2b39434ea", null ],
     [ "Enum", "de/dad/structxii_g_a_l_buffer_mode.htm#af83ed81cfe23fce52430344d972a5103", [
       [ "Undefined", "de/dad/structxii_g_a_l_buffer_mode.htm#af83ed81cfe23fce52430344d972a5103aec303ec3595226f028b4aac640ef6d83", null ],
       [ "Formatted", "de/dad/structxii_g_a_l_buffer_mode.htm#af83ed81cfe23fce52430344d972a5103a73ba86e9daed1260f41c1608c9934137", null ],

@@ -1,13 +1,11 @@
 var classxii_typed_resource_handle =
 [
-    [ "ResourceType", "d6/d16/classxii_typed_resource_handle.htm#af5dcb5ff16e5bdf9eb9d78ac5891d157", null ],
     [ "xiiTypedResourceHandle", "d6/d16/classxii_typed_resource_handle.htm#a84be06ad3a50f747fc243e43741b1e11", null ],
     [ "xiiTypedResourceHandle", "d6/d16/classxii_typed_resource_handle.htm#a3cf63005729dc7582ae79044c7f57b6d", null ],
     [ "xiiTypedResourceHandle", "d6/d16/classxii_typed_resource_handle.htm#ae4f3edf367352f79f75a699e7a0bd1ac", null ],
     [ "xiiTypedResourceHandle", "d6/d16/classxii_typed_resource_handle.htm#a189c1baa3f559f637cdf159bf41d1d40", null ],
-    [ "xiiTypedResourceHandle", "d6/d16/classxii_typed_resource_handle.htm#a9ae0f2eabfda064289d73c5f370b5376", null ],
     [ "AssignFromTypelessHandle", "d6/d16/classxii_typed_resource_handle.htm#a18e367d12f112f1b1b7e603c6bb50796", null ],
-    [ "GetResourceID", "d6/d16/classxii_typed_resource_handle.htm#a46abbcdc48c14cb66553ca9bf9fe501a", null ],
+    [ "GetResourceID", "d6/d16/classxii_typed_resource_handle.htm#abf031726c3f7e4cc92fc1790df84df11", null ],
     [ "GetResourceIDHash", "d6/d16/classxii_typed_resource_handle.htm#a4cdc910f4883f01392a3fd6d74302460", null ],
     [ "Invalidate", "d6/d16/classxii_typed_resource_handle.htm#a0085567bd3ad2f1b4d616e10992122c0", null ],
     [ "IsValid", "d6/d16/classxii_typed_resource_handle.htm#ad7993c6987f96e7a6bd6e0b1961219d0", null ],
@@ -20,10 +18,5 @@ var classxii_typed_resource_handle =
     [ "operator=", "d6/d16/classxii_typed_resource_handle.htm#a5c105183001e46ca9c93f8d55c5ce4ea", null ],
     [ "operator=", "d6/d16/classxii_typed_resource_handle.htm#ae39a67bd93a052b375c251d1fd9bed60", null ],
     [ "operator==", "d6/d16/classxii_typed_resource_handle.htm#a9f57fcf537526901ddf107b735a33bad", null ],
-    [ "operator==", "d6/d16/classxii_typed_resource_handle.htm#a0d639d3dd12aaedc932bd8ee436826ae", null ],
-    [ "xiiTypedResourceHandle", "d6/d16/classxii_typed_resource_handle.htm#a784685f45586ab1aaa390dcdd3a99ee0", null ],
-    [ "xiiResourceHandleReadContext", "d6/d16/classxii_typed_resource_handle.htm#a14e42353b5599856d74ad30fa578ed94", null ],
-    [ "xiiResourceHandleStreamOperations", "d6/d16/classxii_typed_resource_handle.htm#a29c3bfe611faf4eede8c4053d70728a6", null ],
-    [ "xiiResourceHandleWriteContext", "d6/d16/classxii_typed_resource_handle.htm#ab644a45c825658ccf92eab8c99303f40", null ],
-    [ "xiiResourceManager", "d6/d16/classxii_typed_resource_handle.htm#aad5c1fd97c86fe727580bb720bb8c5ff", null ]
+    [ "operator==", "d6/d16/classxii_typed_resource_handle.htm#a0d639d3dd12aaedc932bd8ee436826ae", null ]
 ];

@@ -1,6 +1,5 @@
 var structxii_g_a_l_device_event_type =
 [
-    [ "StorageType", "df/d86/structxii_g_a_l_device_event_type.htm#a4f51ae83682afbed4fc2273226d0b661", null ],
     [ "Enum", "df/d86/structxii_g_a_l_device_event_type.htm#aa09a6b636733448016160754f3eee4a3", [
       [ "Unknown", "df/d86/structxii_g_a_l_device_event_type.htm#aa09a6b636733448016160754f3eee4a3aafbb3ffc947954ac0e3a0f8ff2f41150", null ],
       [ "AfterInitialization", "df/d86/structxii_g_a_l_device_event_type.htm#aa09a6b636733448016160754f3eee4a3a910617a216d0f60480b53c62f3b203f5", null ],

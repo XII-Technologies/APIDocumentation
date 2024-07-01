@@ -1,7 +1,6 @@
 var structxii_g_a_l_misc_buffer_flags =
 [
-    [ "Bits", "dc/d7b/structxii_g_a_l_misc_buffer_flags_1_1_bits.htm", "dc/d7b/structxii_g_a_l_misc_buffer_flags_1_1_bits" ],
-    [ "StorageType", "d4/da8/structxii_g_a_l_misc_buffer_flags.htm#ab9de77270b83bbf8099338f605200402", null ],
+    [ "Bits", "dc/d7b/structxii_g_a_l_misc_buffer_flags_1_1_bits.htm", null ],
     [ "Enum", "d4/da8/structxii_g_a_l_misc_buffer_flags.htm#acc33af4eba1efc98368dada684c6da02", [
       [ "None", "d4/da8/structxii_g_a_l_misc_buffer_flags.htm#acc33af4eba1efc98368dada684c6da02ae68e94b5d6856199819f5a88e3ad950a", null ],
       [ "SparseAlias", "d4/da8/structxii_g_a_l_misc_buffer_flags.htm#acc33af4eba1efc98368dada684c6da02a394cbc79190a4d37be852d391107d3d2", null ],

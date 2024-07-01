@@ -1,6 +1,5 @@
 var structxii_g_a_l_sampler_creation_description =
 [
-    [ "XII_DECLARE_POD_TYPE", "d6/dbe/structxii_g_a_l_sampler_creation_description.htm#a56bed3b8b0bd66c01e5050a2db6ea90c", null ],
     [ "m_AddressU", "d6/dbe/structxii_g_a_l_sampler_creation_description.htm#aa8d752fdbcb85fa0c56f43466285d5f7", null ],
     [ "m_AddressV", "d6/dbe/structxii_g_a_l_sampler_creation_description.htm#af9fbd69b25ccca4ae27f561abed010ae", null ],
     [ "m_AddressW", "d6/dbe/structxii_g_a_l_sampler_creation_description.htm#a52186d7a25e91e4652638aa8195db62d", null ],

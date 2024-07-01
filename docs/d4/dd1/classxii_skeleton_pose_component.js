@@ -1,28 +1,7 @@
 var classxii_skeleton_pose_component =
 [
-    [ "xiiSkeletonPoseComponent", "d4/dd1/classxii_skeleton_pose_component.htm#acc7e03cbc9822c42edc0c1d007859a1a", null ],
-    [ "~xiiSkeletonPoseComponent", "d4/dd1/classxii_skeleton_pose_component.htm#aa89823fe889f3e778008fcc5f8d71a99", null ],
     [ "DeserializeComponent", "d4/dd1/classxii_skeleton_pose_component.htm#a34d158c44d32e9e585e70fdf2c0b8d58", null ],
-    [ "GetBone", "d4/dd1/classxii_skeleton_pose_component.htm#a5a57b4709f7c6eb57d02628d10a218be", null ],
-    [ "GetBones", "d4/dd1/classxii_skeleton_pose_component.htm#a88d65efc57a6aed4ddd94587b4fcee91", null ],
-    [ "GetPoseMode", "d4/dd1/classxii_skeleton_pose_component.htm#a0cfb3ad1f951cc8d8d5941637cbea244", null ],
-    [ "GetSkeleton", "d4/dd1/classxii_skeleton_pose_component.htm#a77a709a738ca76e1b976e4f9166856e5", null ],
-    [ "GetSkeletonFile", "d4/dd1/classxii_skeleton_pose_component.htm#ab859a81357e330fa17d8ba80c6621d96", null ],
     [ "OnActivated", "d4/dd1/classxii_skeleton_pose_component.htm#a371338332d95f6e3739e01a355490213", null ],
     [ "OnSimulationStarted", "d4/dd1/classxii_skeleton_pose_component.htm#a4ba0229636f9f60bfa390a21d9d06746", null ],
-    [ "RemoveBone", "d4/dd1/classxii_skeleton_pose_component.htm#ac0ca17936bb26ba0ad33036e4daf72e2", null ],
-    [ "ResendPose", "d4/dd1/classxii_skeleton_pose_component.htm#a65c03b66e677ceba5a65e0dc757c8d91", null ],
-    [ "SendCustomPose", "d4/dd1/classxii_skeleton_pose_component.htm#ab81d12e00247c8f3afb381be465c0966", null ],
-    [ "SendRestPose", "d4/dd1/classxii_skeleton_pose_component.htm#aea149b455895dcf4374f127ab5add41a", null ],
-    [ "SerializeComponent", "d4/dd1/classxii_skeleton_pose_component.htm#a7e620a1dbfa36ce92844df02b5e810fc", null ],
-    [ "SetBone", "d4/dd1/classxii_skeleton_pose_component.htm#a780ddf251ee2eaaa0d2db20d9c69d673", null ],
-    [ "SetPoseMode", "d4/dd1/classxii_skeleton_pose_component.htm#a08df8f63d67b26260a1f4307bfc18bb3", null ],
-    [ "SetSkeleton", "d4/dd1/classxii_skeleton_pose_component.htm#aa1d4ad46d2a87c6b33eb82426a6e2c94", null ],
-    [ "SetSkeletonFile", "d4/dd1/classxii_skeleton_pose_component.htm#aa63ef6792c2f58a7719ff5224830229b", null ],
-    [ "Update", "d4/dd1/classxii_skeleton_pose_component.htm#a1171eadface52ac45090d01ef266ccb6", null ],
-    [ "m_Bones", "d4/dd1/classxii_skeleton_pose_component.htm#aab26746b2890bae326f055066a346992", null ],
-    [ "m_fDummy", "d4/dd1/classxii_skeleton_pose_component.htm#a7bda6a14a5b50196a86b5390b9e19d3c", null ],
-    [ "m_hSkeleton", "d4/dd1/classxii_skeleton_pose_component.htm#a58517aa7576a02c91d2eb2aab34d24fa", null ],
-    [ "m_PoseMode", "d4/dd1/classxii_skeleton_pose_component.htm#a4c204018150d22f660bc7ff962d4a5c5", null ],
-    [ "m_uiResendPose", "d4/dd1/classxii_skeleton_pose_component.htm#aa28ef07a0a3eb4e30de67b273623ba98", null ]
+    [ "SerializeComponent", "d4/dd1/classxii_skeleton_pose_component.htm#a7e620a1dbfa36ce92844df02b5e810fc", null ]
 ];

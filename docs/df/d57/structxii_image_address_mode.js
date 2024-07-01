@@ -1,6 +1,5 @@
 var structxii_image_address_mode =
 [
-    [ "StorageType", "df/d57/structxii_image_address_mode.htm#a1cc6930741f8ebeeadb52e44646408d6", null ],
     [ "Enum", "df/d57/structxii_image_address_mode.htm#a2f860fd0e87f14125a981706cc5d8966", [
       [ "Repeat", "df/d57/structxii_image_address_mode.htm#a2f860fd0e87f14125a981706cc5d8966a9ec6d9c7fbe0db602b3f290507ba4143", null ],
       [ "Clamp", "df/d57/structxii_image_address_mode.htm#a2f860fd0e87f14125a981706cc5d8966add59b2a497fe6ca652ce90544065c841", null ],

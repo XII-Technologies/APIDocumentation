@@ -1,6 +1,5 @@
 var structxii_g_a_l_shading_rate_texture_access =
 [
-    [ "StorageType", "d8/d7c/structxii_g_a_l_shading_rate_texture_access.htm#a69e7680f9663c55b91712e0e4977aea2", null ],
     [ "Enum", "d8/d7c/structxii_g_a_l_shading_rate_texture_access.htm#a477026c5bda01d7e9edf072e14560ba1", [
       [ "Unknown", "d8/d7c/structxii_g_a_l_shading_rate_texture_access.htm#a477026c5bda01d7e9edf072e14560ba1a16a8c0fae41061eb2c36156ced36e94e", null ],
       [ "OnGPU", "d8/d7c/structxii_g_a_l_shading_rate_texture_access.htm#a477026c5bda01d7e9edf072e14560ba1a7f03b69f6c91fb771311cda2b15057f8", null ],

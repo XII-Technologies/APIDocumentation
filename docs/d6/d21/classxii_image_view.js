@@ -3,9 +3,7 @@ var classxii_image_view =
     [ "xiiImageView", "d6/d21/classxii_image_view.htm#a13e27d5c7793b241a360a080795b16f4", null ],
     [ "xiiImageView", "d6/d21/classxii_image_view.htm#af9637ccfa8bb0edab356a60d8caa58c0", null ],
     [ "Clear", "d6/d21/classxii_image_view.htm#a19b01fdae7b262bdb2a54dd23dac2d39", null ],
-    [ "ComputeLayout", "d6/d21/classxii_image_view.htm#ae3fd1b538d0459295fac1ce4c59bec20", null ],
     [ "GetBlobPtr", "d6/d21/classxii_image_view.htm#a00c46498961fe7a2f71563f5610e03f7", null ],
-    [ "GetByteBlobPtr", "d6/d21/classxii_image_view.htm#a3fda39d2145d0a2830c8d1f6e21034e6", null ],
     [ "GetDepth", "d6/d21/classxii_image_view.htm#aea4a8b5b9a6dcec6e3464b497080aa2d", null ],
     [ "GetDepthPitch", "d6/d21/classxii_image_view.htm#a7c0ab72b6a05da7b78104ea12add3241", null ],
     [ "GetHeader", "d6/d21/classxii_image_view.htm#a90bec0765df3055bb4b6421d7564dc3c", null ],
@@ -23,15 +21,10 @@ var classxii_image_view =
     [ "GetRowPitch", "d6/d21/classxii_image_view.htm#a0d14c7ed4cbf31a94f3a5b5cccb3f770", null ],
     [ "GetRowView", "d6/d21/classxii_image_view.htm#adb442f235469aad3a2d58e7807432129", null ],
     [ "GetSliceView", "d6/d21/classxii_image_view.htm#a54901f0256b7f9c83db33a9a1780524a", null ],
-    [ "GetSubImageOffset", "d6/d21/classxii_image_view.htm#a72729be0b769e99aa425c4dd5f0d0f8b", null ],
     [ "GetSubImageView", "d6/d21/classxii_image_view.htm#a79c1138286f0004ed1d1fec2302e4d4e", null ],
     [ "GetWidth", "d6/d21/classxii_image_view.htm#a66dab649ea6d3930126aabdc703e75c3", null ],
     [ "IsValid", "d6/d21/classxii_image_view.htm#a1149ada0d13605f1d6e85bb5ae842d01", null ],
     [ "ReinterpretAs", "d6/d21/classxii_image_view.htm#a34b3abc76b26b5001183c4dabf73aa86", null ],
     [ "ResetAndViewExternalStorage", "d6/d21/classxii_image_view.htm#a81bacd8bfbebc6d7d674fd327ce409ec", null ],
-    [ "SaveTo", "d6/d21/classxii_image_view.htm#a969217e3a60f7cddd58fa18b58fb2cc2", null ],
-    [ "ValidateDataTypeAccessor", "d6/d21/classxii_image_view.htm#a1870eb28e7420580f313f372f9d7aea8", null ],
-    [ "ValidateSubImageIndices", "d6/d21/classxii_image_view.htm#a0ad15213e21a462c821004995e2010e9", null ],
-    [ "m_DataPtr", "d6/d21/classxii_image_view.htm#a01a03c9001fa5c5f705f729b2550fb7f", null ],
-    [ "m_SubImageOffsets", "d6/d21/classxii_image_view.htm#a723b669dc835182182add346c13e964b", null ]
+    [ "SaveTo", "d6/d21/classxii_image_view.htm#a969217e3a60f7cddd58fa18b58fb2cc2", null ]
 ];

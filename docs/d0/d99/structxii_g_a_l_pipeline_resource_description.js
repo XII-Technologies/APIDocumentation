@@ -1,6 +1,5 @@
 var structxii_g_a_l_pipeline_resource_description =
 [
-    [ "XII_DECLARE_POD_TYPE", "d0/d99/structxii_g_a_l_pipeline_resource_description.htm#a38271850972154640edfdfaa55bff477", null ],
     [ "m_PipelineResourceFlags", "d0/d99/structxii_g_a_l_pipeline_resource_description.htm#a230316798cb19925425b232fe91d0adf", null ],
     [ "m_ResourceType", "d0/d99/structxii_g_a_l_pipeline_resource_description.htm#a484d8624fd496220275e86217ddf634e", null ],
     [ "m_ResourceVariableType", "d0/d99/structxii_g_a_l_pipeline_resource_description.htm#a68f812fd6a3c07dfae3393b375edc7e2", null ],

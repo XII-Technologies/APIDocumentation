@@ -1,6 +1,5 @@
 var structxii_g_a_l_rasterizer_state_creation_description =
 [
-    [ "XII_DECLARE_POD_TYPE", "d2/d58/structxii_g_a_l_rasterizer_state_creation_description.htm#a83fb3b68014d7dceb60a0b9be4c574de", null ],
     [ "m_bAntialiasedLineEnable", "d2/d58/structxii_g_a_l_rasterizer_state_creation_description.htm#a7436229c8cc6e720af2320e8faa79518", null ],
     [ "m_bDepthClipEnable", "d2/d58/structxii_g_a_l_rasterizer_state_creation_description.htm#a68774c0e094313bfd1f8f9a5878f8ca1", null ],
     [ "m_bFrontCounterClockwise", "d2/d58/structxii_g_a_l_rasterizer_state_creation_description.htm#ab23e65847b56112308ac9bb819a5527d", null ],

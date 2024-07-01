@@ -1,7 +1,5 @@
 var classxii_property_path =
 [
-    [ "xiiPropertyPath", "da/d3e/classxii_property_path.htm#ac2c096a9ce0cb227cb565300637016ac", null ],
-    [ "~xiiPropertyPath", "da/d3e/classxii_property_path.htm#a906b051877f83a50dd8401aa2e810093", null ],
     [ "GetValue", "da/d3e/classxii_property_path.htm#a497879b030767e355364f7e1053fdd14", null ],
     [ "GetValue", "da/d3e/classxii_property_path.htm#a3e2a24126dbb13b7414b629ad3b65a80", null ],
     [ "InitializeFromPath", "da/d3e/classxii_property_path.htm#a63a2275739d32d629033d469137486e0", null ],

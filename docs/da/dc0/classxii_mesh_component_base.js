@@ -1,31 +1,6 @@
 var classxii_mesh_component_base =
 [
-    [ "xiiMeshComponentBase", "da/dc0/classxii_mesh_component_base.htm#a12a0c235992f0fc6374b176456eb33b6", null ],
-    [ "~xiiMeshComponentBase", "da/dc0/classxii_mesh_component_base.htm#ab3bcfa9a76f5812b831d21291e48e95f", null ],
-    [ "CreateRenderData", "da/dc0/classxii_mesh_component_base.htm#a961d64719e9ac95dde06f0fb696416d6", null ],
     [ "DeserializeComponent", "da/dc0/classxii_mesh_component_base.htm#a57bed0e7e0ba458d7987a257fff95dda", null ],
-    [ "GetColor", "da/dc0/classxii_mesh_component_base.htm#a63c71ffa4f37c571b89263aec394579f", null ],
     [ "GetLocalBounds", "da/dc0/classxii_mesh_component_base.htm#a49b906cd257e76337cc41f6091bc2150", null ],
-    [ "GetMaterial", "da/dc0/classxii_mesh_component_base.htm#a3ed3b5f3460700d98af23c5c6cc1db45", null ],
-    [ "GetMesh", "da/dc0/classxii_mesh_component_base.htm#aa7eae3fee9ad19be4462e35c6822467b", null ],
-    [ "GetMeshFile", "da/dc0/classxii_mesh_component_base.htm#a42cb5a0c3eb80d6f7e61b6c5385d741b", null ],
-    [ "GetSortingDepthOffset", "da/dc0/classxii_mesh_component_base.htm#a367b6cf12c9511e53540fbb8d33dddf3", null ],
-    [ "Materials_GetCount", "da/dc0/classxii_mesh_component_base.htm#a1dc4983b475614c54a0abb0b05859549", null ],
-    [ "Materials_GetValue", "da/dc0/classxii_mesh_component_base.htm#a729fdb773145e19e5dd35964e872f5c7", null ],
-    [ "Materials_Insert", "da/dc0/classxii_mesh_component_base.htm#a62777fa8159c1657574f4e1e10685eb2", null ],
-    [ "Materials_Remove", "da/dc0/classxii_mesh_component_base.htm#ad688ed0e4c4690a0ab531519f4db1825", null ],
-    [ "Materials_SetValue", "da/dc0/classxii_mesh_component_base.htm#a3489a92ee345f55bf57947267010b097", null ],
-    [ "OnMsgExtractRenderData", "da/dc0/classxii_mesh_component_base.htm#ac994df387185c6248cf88200242c5f72", null ],
-    [ "OnMsgSetColor", "da/dc0/classxii_mesh_component_base.htm#ac218cf3e404accdaa2e1642b406c66b7", null ],
-    [ "OnMsgSetMeshMaterial", "da/dc0/classxii_mesh_component_base.htm#aefd5c71c36466998145e64df444bb011", null ],
-    [ "SerializeComponent", "da/dc0/classxii_mesh_component_base.htm#a58d3edf139015f7bfa2295931d4278fc", null ],
-    [ "SetColor", "da/dc0/classxii_mesh_component_base.htm#a930288108f5aecca3e99ddef3b80e07d", null ],
-    [ "SetMaterial", "da/dc0/classxii_mesh_component_base.htm#a73ad5c5fbebb910002336cacb12d6ef8", null ],
-    [ "SetMesh", "da/dc0/classxii_mesh_component_base.htm#aad968d6d88c895faa46f57ec41ea835e", null ],
-    [ "SetMeshFile", "da/dc0/classxii_mesh_component_base.htm#a0c16e3ce7638bcb1d67f71f4292e03da", null ],
-    [ "SetSortingDepthOffset", "da/dc0/classxii_mesh_component_base.htm#a7d02d4932f1e67b8382ed19fa37103b1", null ],
-    [ "m_Color", "da/dc0/classxii_mesh_component_base.htm#aad70cb31eb3083cfae1a4053467ab7d9", null ],
-    [ "m_fSortingDepthOffset", "da/dc0/classxii_mesh_component_base.htm#a6f85d27ac3882a36b40d2d28a53835e0", null ],
-    [ "m_hMesh", "da/dc0/classxii_mesh_component_base.htm#ab32f7678b8f2bfe46f05c458c3df0c9b", null ],
-    [ "m_Materials", "da/dc0/classxii_mesh_component_base.htm#a308540d65fe051997d7ce9772122188c", null ]
+    [ "SerializeComponent", "da/dc0/classxii_mesh_component_base.htm#a58d3edf139015f7bfa2295931d4278fc", null ]
 ];

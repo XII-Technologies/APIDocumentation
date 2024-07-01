@@ -1,7 +1,6 @@
 var structxii_resource_flags =
 [
-    [ "Bits", "df/d78/structxii_resource_flags_1_1_bits.htm", "df/d78/structxii_resource_flags_1_1_bits" ],
-    [ "StorageType", "df/dd1/structxii_resource_flags.htm#aaaee2238f61c18326268984a12d47f3d", null ],
+    [ "Bits", "df/d78/structxii_resource_flags_1_1_bits.htm", null ],
     [ "Enum", "df/dd1/structxii_resource_flags.htm#a35ed53a09c8c81dd2636b2b56d69618c", [
       [ "UpdateOnMainThread", "df/dd1/structxii_resource_flags.htm#a35ed53a09c8c81dd2636b2b56d69618ca7a5a37e6fa29b6e6a8156f3c108d2687", null ],
       [ "NoFileAccessRequired", "df/dd1/structxii_resource_flags.htm#a35ed53a09c8c81dd2636b2b56d69618cac90bfda26e01cf68ab211caaf7c9c253", null ],

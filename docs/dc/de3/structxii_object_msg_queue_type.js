@@ -1,6 +1,5 @@
 var structxii_object_msg_queue_type =
 [
-    [ "StorageType", "dc/de3/structxii_object_msg_queue_type.htm#a28d550d51375d2504d7b9ee815bf3f5a", null ],
     [ "Enum", "dc/de3/structxii_object_msg_queue_type.htm#a3d66b91c215db559dd0c20b592406600", [
       [ "PostAsync", "dc/de3/structxii_object_msg_queue_type.htm#a3d66b91c215db559dd0c20b592406600a3b2807c4c281446817051833c792c301", null ],
       [ "PostTransform", "dc/de3/structxii_object_msg_queue_type.htm#a3d66b91c215db559dd0c20b592406600a2707a2e2ec56a7608da5f0154e69f32b", null ],

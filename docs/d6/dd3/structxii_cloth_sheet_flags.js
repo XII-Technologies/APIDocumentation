@@ -1,7 +1,6 @@
 var structxii_cloth_sheet_flags =
 [
-    [ "Bits", "d9/d7d/structxii_cloth_sheet_flags_1_1_bits.htm", "d9/d7d/structxii_cloth_sheet_flags_1_1_bits" ],
-    [ "StorageType", "d6/dd3/structxii_cloth_sheet_flags.htm#a7c131e4e4f71e48d9fa73c13ad28c2b8", null ],
+    [ "Bits", "d9/d7d/structxii_cloth_sheet_flags_1_1_bits.htm", null ],
     [ "Enum", "d6/dd3/structxii_cloth_sheet_flags.htm#a7d9a53d7f8a5e1e6808e2d49a533060c", [
       [ "FixedCornerTopLeft", "d6/dd3/structxii_cloth_sheet_flags.htm#a7d9a53d7f8a5e1e6808e2d49a533060ca986247452a1d0aa77ac37cc45aabc15b", null ],
       [ "FixedCornerTopRight", "d6/dd3/structxii_cloth_sheet_flags.htm#a7d9a53d7f8a5e1e6808e2d49a533060caf85c120be0a7bfddd732428a94981a6d", null ],

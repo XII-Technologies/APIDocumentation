@@ -1,6 +1,5 @@
 var structxii_g_a_l_depth_stencil_state_creation_description =
 [
-    [ "XII_DECLARE_POD_TYPE", "d8/d3c/structxii_g_a_l_depth_stencil_state_creation_description.htm#adeee9e88ebf8ebd6feaba4f0689e991f", null ],
     [ "m_BackFace", "d8/d3c/structxii_g_a_l_depth_stencil_state_creation_description.htm#a273e9ca8c83467f18603ab1901dfb2b8", null ],
     [ "m_bDepthEnable", "d8/d3c/structxii_g_a_l_depth_stencil_state_creation_description.htm#a1e2233f9e3fd7b95c57cedff9f63e98c", null ],
     [ "m_bDepthWriteEnable", "d8/d3c/structxii_g_a_l_depth_stencil_state_creation_description.htm#aaf38e4ecfe0084e595f2ec6f616835aa", null ],

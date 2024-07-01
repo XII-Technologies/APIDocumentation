@@ -6,9 +6,6 @@ var classxii_unique_ptr =
     [ "xiiUniquePtr", "d9/d4a/classxii_unique_ptr.htm#a7e45948afc33429ac70e647d8591bd81", null ],
     [ "xiiUniquePtr", "d9/d4a/classxii_unique_ptr.htm#a71774846fc16d7646fda292dabffd2bc", null ],
     [ "~xiiUniquePtr", "d9/d4a/classxii_unique_ptr.htm#a4b2ad18b78ae37387f0176fb09ceef63", null ],
-    [ "xiiUniquePtr", "d9/d4a/classxii_unique_ptr.htm#a7efcd8f6df97d228f1398e2d04390456", null ],
-    [ "xiiUniquePtr", "d9/d4a/classxii_unique_ptr.htm#a1dc7548b9b18807d52c88ed9d2d8a550", null ],
-    [ "xiiUniquePtr", "d9/d4a/classxii_unique_ptr.htm#a0448ae26385139d2e1e494a2986417ac", null ],
     [ "Borrow", "d9/d4a/classxii_unique_ptr.htm#aff6bd0f915964769fe2ec7a2a81fd2d5", null ],
     [ "Clear", "d9/d4a/classxii_unique_ptr.htm#ae6ab86a1b7163781f20f1edef10f108c", null ],
     [ "operator bool", "d9/d4a/classxii_unique_ptr.htm#a95d685772ae01d47d18419995292e170", null ],
@@ -16,15 +13,11 @@ var classxii_unique_ptr =
     [ "operator->", "d9/d4a/classxii_unique_ptr.htm#a730c723b6fd3688e3419deed65d74914", null ],
     [ "operator<=>", "d9/d4a/classxii_unique_ptr.htm#a0225441a0053b1ce25c2ce82069eacb3", null ],
     [ "operator<=>", "d9/d4a/classxii_unique_ptr.htm#a0d1cf9926130327d4b52172598640909", null ],
-    [ "operator=", "d9/d4a/classxii_unique_ptr.htm#ae64eeba5988f21d42fcb86cc1d5c96b2", null ],
-    [ "operator=", "d9/d4a/classxii_unique_ptr.htm#a773489f1338e13bd11b1e1092d118d90", null ],
+    [ "operator=", "d9/d4a/classxii_unique_ptr.htm#a450d734d750ffbd5971b5059b6f29d12", null ],
     [ "operator=", "d9/d4a/classxii_unique_ptr.htm#a9cf200a55b92f09984abf5af80dbcf00", null ],
-    [ "operator=", "d9/d4a/classxii_unique_ptr.htm#af0a146551ce3ffc64c6ea4a084e2690a", null ],
-    [ "operator=", "d9/d4a/classxii_unique_ptr.htm#a18143dc086d55ec9a4826220b0dce29f", null ],
+    [ "operator=", "d9/d4a/classxii_unique_ptr.htm#a7ff2fed44303fc2f1a8c9a7be85b6665", null ],
     [ "operator==", "d9/d4a/classxii_unique_ptr.htm#a34db940bf6c6ff732cd24e257a18b90e", null ],
     [ "operator==", "d9/d4a/classxii_unique_ptr.htm#a71c056cd5ba6422016ad2e881dd6f3a5", null ],
     [ "Release", "d9/d4a/classxii_unique_ptr.htm#a9cfcda4fba6d9b0180063474f92c9b6e", null ],
-    [ "Release", "d9/d4a/classxii_unique_ptr.htm#a3d56881c638a152e643b94b6efe040fa", null ],
-    [ "XII_DECLARE_MEM_RELOCATABLE_TYPE", "d9/d4a/classxii_unique_ptr.htm#a19fbd14969e0105b1bf6f1264793f321", null ],
-    [ "xiiUniquePtr", "d9/d4a/classxii_unique_ptr.htm#ae58389c942c085b2c1acb0b6e49245e3", null ]
+    [ "Release", "d9/d4a/classxii_unique_ptr.htm#a3d56881c638a152e643b94b6efe040fa", null ]
 ];

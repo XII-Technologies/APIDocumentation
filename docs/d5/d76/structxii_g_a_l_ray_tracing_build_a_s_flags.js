@@ -1,7 +1,6 @@
 var structxii_g_a_l_ray_tracing_build_a_s_flags =
 [
-    [ "Bits", "dd/d58/structxii_g_a_l_ray_tracing_build_a_s_flags_1_1_bits.htm", "dd/d58/structxii_g_a_l_ray_tracing_build_a_s_flags_1_1_bits" ],
-    [ "StorageType", "d5/d76/structxii_g_a_l_ray_tracing_build_a_s_flags.htm#a5362f5523ad5175223668c425715f97b", null ],
+    [ "Bits", "dd/d58/structxii_g_a_l_ray_tracing_build_a_s_flags_1_1_bits.htm", null ],
     [ "Enum", "d5/d76/structxii_g_a_l_ray_tracing_build_a_s_flags.htm#af642f139c8be62fe71f9766443859077", [
       [ "None", "d5/d76/structxii_g_a_l_ray_tracing_build_a_s_flags.htm#af642f139c8be62fe71f9766443859077a6b98c3eaf30fc99c1b71f8b8dbc54183", null ],
       [ "AllowUpdate", "d5/d76/structxii_g_a_l_ray_tracing_build_a_s_flags.htm#af642f139c8be62fe71f9766443859077a8be5b4f10a256248ca59cd4d12d9f94a", null ],

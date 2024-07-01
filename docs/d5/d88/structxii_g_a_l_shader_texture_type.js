@@ -1,6 +1,5 @@
 var structxii_g_a_l_shader_texture_type =
 [
-    [ "StorageType", "d5/d88/structxii_g_a_l_shader_texture_type.htm#a500a48ed243580c14f694e12d7f8543d", null ],
     [ "Enum", "d5/d88/structxii_g_a_l_shader_texture_type.htm#ab91fdd1dd528231b9445a987b1fcb2d0", [
       [ "Unknown", "d5/d88/structxii_g_a_l_shader_texture_type.htm#ab91fdd1dd528231b9445a987b1fcb2d0afe3f726342e5e41b6afe62fc395b51aa", null ],
       [ "Texture1D", "d5/d88/structxii_g_a_l_shader_texture_type.htm#ab91fdd1dd528231b9445a987b1fcb2d0afcbb2f22a0a63132497ef1cc5f9e4bd3", null ],

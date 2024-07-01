@@ -1,6 +1,5 @@
 var structxii_g_a_l_texture_view_creation_description =
 [
-    [ "XII_DECLARE_POD_TYPE", "d8/de2/structxii_g_a_l_texture_view_creation_description.htm#a4a8f3a1bce6b5aff89affa00295281de", null ],
     [ "m_AccessFlags", "d8/de2/structxii_g_a_l_texture_view_creation_description.htm#a953b8f9c3fbc4b13b6701e67aa973d88", null ],
     [ "m_ComponentSwizzle", "d8/de2/structxii_g_a_l_texture_view_creation_description.htm#a7d7cb1790d2c74fe1d78e5fec214d76f", null ],
     [ "m_Flags", "d8/de2/structxii_g_a_l_texture_view_creation_description.htm#af179d62ed43d8a162c90698f444b2b86", null ],

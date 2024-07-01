@@ -1,14 +1,9 @@
 var classxii_array_base =
 [
-    [ "const_iterator", "da/d4c/classxii_array_base.htm#a7ae42e49cc7a986b11ab8f9e46ca81f3", null ],
-    [ "const_reverse_iterator", "da/d4c/classxii_array_base.htm#ab83f379c07b0f700ae6e3880296d5e93", null ],
-    [ "iterator", "da/d4c/classxii_array_base.htm#a401682a7eb66ac570094b91c48630838", null ],
-    [ "reverse_iterator", "da/d4c/classxii_array_base.htm#ab4fb901d7d742ae53fd45e17610f45b5", null ],
     [ "xiiArrayBase", "da/d4c/classxii_array_base.htm#a85ea62d9f68f7a08c0d71d4f60ec4d7b", null ],
     [ "~xiiArrayBase", "da/d4c/classxii_array_base.htm#a1aa63ec4e48bbcd78206f1a4d0ed3412", null ],
     [ "Clear", "da/d4c/classxii_array_base.htm#ab517ef07fbed3ecc766ac24394ae1fc8", null ],
     [ "Contains", "da/d4c/classxii_array_base.htm#a4ae4bf9cd46a5736ddeed4672e84d05c", null ],
-    [ "DoSwap", "da/d4c/classxii_array_base.htm#a7be5b61a90b8af25985f90c7f4e4b072", null ],
     [ "EnsureCount", "da/d4c/classxii_array_base.htm#ac9e0425e1b0ae3e9a958af289d336b34", null ],
     [ "ExpandAndGetRef", "da/d4c/classxii_array_base.htm#af8b150ecd75941f71981db12f78c70b2", null ],
     [ "ExpandBy", "da/d4c/classxii_array_base.htm#ae7c9f257c3d2dad1fd92d8b80465e22c", null ],

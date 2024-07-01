@@ -1,6 +1,5 @@
 var structxii_property_category =
 [
-    [ "StorageType", "d8/d9c/structxii_property_category.htm#a55b89147f569cca29dd936529e41535f", null ],
     [ "Enum", "d8/d9c/structxii_property_category.htm#a955c0fc07dab4281c48ea7319c91a361", [
       [ "Constant", "d8/d9c/structxii_property_category.htm#a955c0fc07dab4281c48ea7319c91a361aebc087c90f16a3fe8e37762ae55e82fb", null ],
       [ "Member", "d8/d9c/structxii_property_category.htm#a955c0fc07dab4281c48ea7319c91a361aa2162b44ab3371e32b441f99a18e40ad", null ],

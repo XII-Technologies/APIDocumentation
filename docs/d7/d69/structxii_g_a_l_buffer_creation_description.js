@@ -1,6 +1,5 @@
 var structxii_g_a_l_buffer_creation_description =
 [
-    [ "XII_DECLARE_POD_TYPE", "d7/d69/structxii_g_a_l_buffer_creation_description.htm#a3f4c62eebadfd7a531dc22ed9a00ab5f", null ],
     [ "m_BindFlags", "d7/d69/structxii_g_a_l_buffer_creation_description.htm#ad80c8c474d88aea1ebf1f9bfdcadd6d3", null ],
     [ "m_CPUAccessFlags", "d7/d69/structxii_g_a_l_buffer_creation_description.htm#a79537c20211307844136274fa42884d6", null ],
     [ "m_MiscFlags", "d7/d69/structxii_g_a_l_buffer_creation_description.htm#a09d0beb2516a8121ffeeb60c2e9b6c08", null ],

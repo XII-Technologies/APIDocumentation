@@ -1,7 +1,6 @@
 var structxii_g_a_l_sparse_resource_capability_flags =
 [
-    [ "Bits", "d4/d6b/structxii_g_a_l_sparse_resource_capability_flags_1_1_bits.htm", "d4/d6b/structxii_g_a_l_sparse_resource_capability_flags_1_1_bits" ],
-    [ "StorageType", "dd/de6/structxii_g_a_l_sparse_resource_capability_flags.htm#ae9b0fd32bfa135253a1be1a167f43859", null ],
+    [ "Bits", "d4/d6b/structxii_g_a_l_sparse_resource_capability_flags_1_1_bits.htm", null ],
     [ "Enum", "dd/de6/structxii_g_a_l_sparse_resource_capability_flags.htm#afc7e83e9dd1f9d15babb136af5e90689", [
       [ "None", "dd/de6/structxii_g_a_l_sparse_resource_capability_flags.htm#afc7e83e9dd1f9d15babb136af5e90689a4f14211e349980f490bf7c07d62e1e4a", null ],
       [ "ShaderResourceResidency", "dd/de6/structxii_g_a_l_sparse_resource_capability_flags.htm#afc7e83e9dd1f9d15babb136af5e90689a16558ffd04fb2932c96f349a3f174f8a", null ],

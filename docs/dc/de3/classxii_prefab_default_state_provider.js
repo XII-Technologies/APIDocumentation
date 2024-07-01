@@ -1,6 +1,5 @@
 var classxii_prefab_default_state_provider =
 [
-    [ "xiiPrefabDefaultStateProvider", "dc/de3/classxii_prefab_default_state_provider.htm#ae3bf58ec055cf6cb35a14be8db8d0055", null ],
     [ "CreateRevertContainerDiff", "dc/de3/classxii_prefab_default_state_provider.htm#a6260b1fa8cf95b68877fb493f74a8bca", null ],
     [ "GetBackgroundColor", "dc/de3/classxii_prefab_default_state_provider.htm#a2e39c011ccbca98e81ff621a0840ac2a", null ],
     [ "GetDefaultValue", "dc/de3/classxii_prefab_default_state_provider.htm#a577048f470ead2f69071aabfef5d6473", null ],

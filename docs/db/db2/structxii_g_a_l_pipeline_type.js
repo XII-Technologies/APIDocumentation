@@ -1,6 +1,5 @@
 var structxii_g_a_l_pipeline_type =
 [
-    [ "StorageType", "db/db2/structxii_g_a_l_pipeline_type.htm#a31d712070eb9819291357bf2432093b0", null ],
     [ "Enum", "db/db2/structxii_g_a_l_pipeline_type.htm#ad5477c40754df4d33e387c8affd6784b", [
       [ "Graphics", "db/db2/structxii_g_a_l_pipeline_type.htm#ad5477c40754df4d33e387c8affd6784ba88246e08f7b84744f6a1cd0d74ad12a8", null ],
       [ "Compute", "db/db2/structxii_g_a_l_pipeline_type.htm#ad5477c40754df4d33e387c8affd6784bab14254056cfd23c2ec2d138d18e3068b", null ],

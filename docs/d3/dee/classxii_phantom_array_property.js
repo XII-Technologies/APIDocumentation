@@ -1,7 +1,5 @@
 var classxii_phantom_array_property =
 [
-    [ "xiiPhantomArrayProperty", "d3/dee/classxii_phantom_array_property.htm#a201e067a21d32650e9ad3323b722eea3", null ],
-    [ "~xiiPhantomArrayProperty", "d3/dee/classxii_phantom_array_property.htm#a10d604298be985169ad8383394f68934", null ],
     [ "Clear", "d3/dee/classxii_phantom_array_property.htm#adf2cb0139eecd797373b298f84913b3f", null ],
     [ "GetCount", "d3/dee/classxii_phantom_array_property.htm#a3726e5a71b7c6eaf635f1bf8e5c2fb8a", null ],
     [ "GetSpecificType", "d3/dee/classxii_phantom_array_property.htm#ad2ad4ecc33c85c1e4648f17dbee45274", null ],

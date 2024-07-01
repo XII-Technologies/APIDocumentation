@@ -1,6 +1,5 @@
 var structxii_game_object_desc =
 [
-    [ "XII_DECLARE_POD_TYPE", "dd/d15/structxii_game_object_desc.htm#a491cb9a0642926eb2f20b0ec982a47cf", null ],
     [ "m_bActiveFlag", "dd/d15/structxii_game_object_desc.htm#ad017519d77ffcea559ef721f292cdc43", null ],
     [ "m_bDynamic", "dd/d15/structxii_game_object_desc.htm#a92eb8f5a16d6887a7964aa4dea87c357", null ],
     [ "m_hParent", "dd/d15/structxii_game_object_desc.htm#a752d4d1540dafb61f79517686e545a1a", null ],

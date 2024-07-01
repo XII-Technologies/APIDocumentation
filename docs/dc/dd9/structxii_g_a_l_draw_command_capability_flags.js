@@ -1,7 +1,6 @@
 var structxii_g_a_l_draw_command_capability_flags =
 [
-    [ "Bits", "d9/d8c/structxii_g_a_l_draw_command_capability_flags_1_1_bits.htm", "d9/d8c/structxii_g_a_l_draw_command_capability_flags_1_1_bits" ],
-    [ "StorageType", "dc/dd9/structxii_g_a_l_draw_command_capability_flags.htm#a42120bf8ab92ec68e798003f1e654d5d", null ],
+    [ "Bits", "d9/d8c/structxii_g_a_l_draw_command_capability_flags_1_1_bits.htm", null ],
     [ "Enum", "dc/dd9/structxii_g_a_l_draw_command_capability_flags.htm#a35068ecd544943e03ab18638ae846040", [
       [ "None", "dc/dd9/structxii_g_a_l_draw_command_capability_flags.htm#a35068ecd544943e03ab18638ae846040a19a1048cfbecb7ec1b1b99bfefee81d7", null ],
       [ "BaseVertex", "dc/dd9/structxii_g_a_l_draw_command_capability_flags.htm#a35068ecd544943e03ab18638ae846040addcc6076cfd6cc2c1e169a077cb2e983", null ],

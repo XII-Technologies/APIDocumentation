@@ -1,7 +1,6 @@
 var classxii_bitfield =
 [
     [ "ConstIterator", "d9/db8/structxii_bitfield_1_1_const_iterator.htm", "d9/db8/structxii_bitfield_1_1_const_iterator" ],
-    [ "xiiBitfield", "d9/d8d/classxii_bitfield.htm#a1ea217f311634aae4bbca3da63e920f5", null ],
     [ "AreAllBitsSet", "d9/d8d/classxii_bitfield.htm#a5b5bc21358817b1b2550fe501c29ba24", null ],
     [ "Clear", "d9/d8d/classxii_bitfield.htm#a14d058b16b33c9bd32e5194ec06a5c45", null ],
     [ "ClearAllBits", "d9/d8d/classxii_bitfield.htm#a0baa4b7ad887af67b8347346f874d4ac", null ],
@@ -20,6 +19,5 @@ var classxii_bitfield =
     [ "SetBitValue", "d9/d8d/classxii_bitfield.htm#a20bc8e770be3e20b7489109de3122e71", null ],
     [ "SetCount", "d9/d8d/classxii_bitfield.htm#a9ad2778e76beb59fbbb3e9d5f2b51f3a", null ],
     [ "SetCountUninitialized", "d9/d8d/classxii_bitfield.htm#afa50cc0f06e3b478b90983a356f37799", null ],
-    [ "Swap", "d9/d8d/classxii_bitfield.htm#a10de80beb34c4fc266e8f1cae911bad7", null ],
-    [ "ConstIterator", "d9/d8d/classxii_bitfield.htm#aff4ff712b78d159dd32552cea3d923c8", null ]
+    [ "Swap", "d9/d8d/classxii_bitfield.htm#a10de80beb34c4fc266e8f1cae911bad7", null ]
 ];

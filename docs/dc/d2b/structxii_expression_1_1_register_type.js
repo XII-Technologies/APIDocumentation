@@ -1,6 +1,5 @@
 var structxii_expression_1_1_register_type =
 [
-    [ "StorageType", "dc/d2b/structxii_expression_1_1_register_type.htm#a6abb8074187005fdac3abe39966c44e3", null ],
     [ "Enum", "dc/d2b/structxii_expression_1_1_register_type.htm#a8e6822d6ceb7fcec5cab5831d8704aea", [
       [ "Unknown", "dc/d2b/structxii_expression_1_1_register_type.htm#a8e6822d6ceb7fcec5cab5831d8704aeaa0ae818e0156392f67f80b901040d5595", null ],
       [ "Bool", "dc/d2b/structxii_expression_1_1_register_type.htm#a8e6822d6ceb7fcec5cab5831d8704aeaac9f66a2a9ec843c6b943c56c7da49810", null ],

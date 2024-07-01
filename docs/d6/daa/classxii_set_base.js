@@ -1,19 +1,15 @@
 var classxii_set_base =
 [
     [ "IteratorBase", "d2/d7f/structxii_set_base_1_1_iterator_base.htm", "d2/d7f/structxii_set_base_1_1_iterator_base" ],
-    [ "Iterator", "d6/daa/classxii_set_base.htm#a682e33c479479ffb85b8302243afb4de", null ],
-    [ "ReverseIterator", "d6/daa/classxii_set_base.htm#a8dadd4c079d5deb3af0ae28b1b3e3c4b", null ],
     [ "xiiSetBase", "d6/daa/classxii_set_base.htm#af3c54e2d35affe8f0e9582bccbda0350", null ],
     [ "xiiSetBase", "d6/daa/classxii_set_base.htm#a74fbc816194690bd16c93597b271c80f", null ],
     [ "~xiiSetBase", "d6/daa/classxii_set_base.htm#abcb763cd04848b5d61818421b60de4e8", null ],
     [ "Clear", "d6/daa/classxii_set_base.htm#a0d39b63f88f77dfff248b0586c9f9c24", null ],
-    [ "Contains", "d6/daa/classxii_set_base.htm#a124b43d7c5b8569cf30c3e3b8eb0b823", null ],
     [ "Contains", "d6/daa/classxii_set_base.htm#a8f118b4eae296d75dbbb6b8636bee278", null ],
     [ "ContainsSet", "d6/daa/classxii_set_base.htm#a4d24016c241584f27553d730d435b9b0", null ],
     [ "Difference", "d6/daa/classxii_set_base.htm#a5b05f30fd73f5b58ed6fa05ee29f18e9", null ],
-    [ "Find", "d6/daa/classxii_set_base.htm#abe6d31b7e4312000559135f9d1718b44", null ],
     [ "Find", "d6/daa/classxii_set_base.htm#a45edcd7f67a240a03dcf35f4b6b9ca8c", null ],
-    [ "GetAllocator", "d6/daa/classxii_set_base.htm#ae7171c020b43c3aa116ba8351bbfe8fa", null ],
+    [ "GetAllocator", "d6/daa/classxii_set_base.htm#aa44b1a49f38ea974c20feaddcf97dca5", null ],
     [ "GetCount", "d6/daa/classxii_set_base.htm#a612883c7cb7fab407d11aa6f2889b130", null ],
     [ "GetHeapMemoryUsage", "d6/daa/classxii_set_base.htm#ad442d03eea8de7d9c91c3e0c1f6cdc35", null ],
     [ "GetIterator", "d6/daa/classxii_set_base.htm#ae94d47ef967975a5a4b2f2a0fb953dd7", null ],
@@ -21,7 +17,6 @@ var classxii_set_base =
     [ "Insert", "d6/daa/classxii_set_base.htm#a0c684120db5132a2037d0defbe2d70c1", null ],
     [ "Intersection", "d6/daa/classxii_set_base.htm#a7f9b3ee58fb5f2d0f35c7a7177e64afb", null ],
     [ "IsEmpty", "d6/daa/classxii_set_base.htm#ab3d6ef2b492e4b048201e9897a956533", null ],
-    [ "LowerBound", "d6/daa/classxii_set_base.htm#a8c49293d493a21fbcda00eb03b22b7d9", null ],
     [ "LowerBound", "d6/daa/classxii_set_base.htm#af80f696c31de05176cebb0a1cf1649cf", null ],
     [ "operator=", "d6/daa/classxii_set_base.htm#a949710a7061f08ce30ec98e73c62002d", null ],
     [ "operator==", "d6/daa/classxii_set_base.htm#a348a90c29b37356ebec0d54391b9819e", null ],
@@ -29,6 +24,5 @@ var classxii_set_base =
     [ "Remove", "d6/daa/classxii_set_base.htm#a2eee9f79dfcc5ff744b8cfb123c87d61", null ],
     [ "Swap", "d6/daa/classxii_set_base.htm#abf5022e8a572d2c29d19a984ae01af7e", null ],
     [ "Union", "d6/daa/classxii_set_base.htm#a01f1d41d54c7ca40a4effee6f6d446e2", null ],
-    [ "UpperBound", "d6/daa/classxii_set_base.htm#a22cc500360f8af22d743111f3bde0062", null ],
     [ "UpperBound", "d6/daa/classxii_set_base.htm#aa22e1e00a492c0735196cdb2a4e36c39", null ]
 ];

@@ -1,6 +1,5 @@
 var structxii_basis_axis =
 [
-    [ "StorageType", "d9/dcc/structxii_basis_axis.htm#ae02c0ee8210c373d1e0db23378f45bc9", null ],
     [ "Enum", "d9/dcc/structxii_basis_axis.htm#a36c8166a71a3eb1739956b8873b1da2c", [
       [ "PositiveX", "d9/dcc/structxii_basis_axis.htm#a36c8166a71a3eb1739956b8873b1da2caf47a3cbdab93c5bcf2205fddd27fe7b4", null ],
       [ "PositiveY", "d9/dcc/structxii_basis_axis.htm#a36c8166a71a3eb1739956b8873b1da2ca2dd7ff8b9f6c4f15a54cde5b712cf72a", null ],

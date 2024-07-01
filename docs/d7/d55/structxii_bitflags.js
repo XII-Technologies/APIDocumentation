@@ -1,6 +1,5 @@
 var structxii_bitflags =
 [
-    [ "ConstIterator", "d7/d55/structxii_bitflags.htm#a325c453a5cbdae3a9d1ed6abd519925e", null ],
     [ "xiiBitflags", "d7/d55/structxii_bitflags.htm#a8b8c4d615ec4a857f1772939ef1cfbc6", null ],
     [ "xiiBitflags", "d7/d55/structxii_bitflags.htm#a35ffaa9d696a591e3c05c708009747cb", null ],
     [ "Add", "d7/d55/structxii_bitflags.htm#a89cb715ce2414f2e16675f5d8503cb1c", null ],
@@ -16,16 +15,13 @@ var structxii_bitflags =
     [ "IsNoFlagSet", "d7/d55/structxii_bitflags.htm#acbea4545a3af1e378e1cbda899b677b7", null ],
     [ "IsSet", "d7/d55/structxii_bitflags.htm#af2c990725fd731e800eeb6a22945003f", null ],
     [ "IsStrictlyAnySet", "d7/d55/structxii_bitflags.htm#a1fc07745b1877a7125a163ce1ff4e3c2", null ],
-    [ "operator&", "d7/d55/structxii_bitflags.htm#a533117388a6b4dd8726e9ec783abc055", null ],
+    [ "operator&", "d7/d55/structxii_bitflags.htm#a3ed4a9f1f55567e93e6dbe84fbf26d95", null ],
     [ "operator&=", "d7/d55/structxii_bitflags.htm#a7f78220f31e05c3d49ff428dfd8c58df", null ],
-    [ "operator=", "d7/d55/structxii_bitflags.htm#a41d865f7313a30be5b4102b1e3bb9b20", null ],
-    [ "operator==", "d7/d55/structxii_bitflags.htm#a449800393d9ddbe43fc5716c45404358", null ],
-    [ "operator==", "d7/d55/structxii_bitflags.htm#a1b724d214e8c83bd4365790bf3b77954", null ],
-    [ "operator|", "d7/d55/structxii_bitflags.htm#ab3453f1bf3294074969fbc3cd8cf8035", null ],
+    [ "operator==", "d7/d55/structxii_bitflags.htm#a2f32929c46593b6718a8c15c5dca9147", null ],
+    [ "operator==", "d7/d55/structxii_bitflags.htm#aed419ff77c2c0f16437584b4622b3517", null ],
+    [ "operator|", "d7/d55/structxii_bitflags.htm#a77959144491ddd50bbd134f016459e55", null ],
     [ "operator|=", "d7/d55/structxii_bitflags.htm#a8e74a594d74f59d68ab198b9d0da519b", null ],
     [ "Remove", "d7/d55/structxii_bitflags.htm#a0060d836baa5f6fab5caacadd4532f83", null ],
     [ "SetValue", "d7/d55/structxii_bitflags.htm#af2c473ccc094c92e73c8964960b82b80", null ],
-    [ "Toggle", "d7/d55/structxii_bitflags.htm#a0635b2009f32f25b318df037225c07d1", null ],
-    [ "m_bits", "d7/d55/structxii_bitflags.htm#a9bceba937956b8f1d7e1a4016b9e1a34", null ],
-    [ "m_Value", "d7/d55/structxii_bitflags.htm#a01198e0d973e34cae490634a7dda0b79", null ]
+    [ "Toggle", "d7/d55/structxii_bitflags.htm#a0635b2009f32f25b318df037225c07d1", null ]
 ];

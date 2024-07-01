@@ -1,7 +1,6 @@
 var structxii_g_a_l_c_p_u_access_flag =
 [
-    [ "Bits", "d9/d0b/structxii_g_a_l_c_p_u_access_flag_1_1_bits.htm", "d9/d0b/structxii_g_a_l_c_p_u_access_flag_1_1_bits" ],
-    [ "StorageType", "db/dca/structxii_g_a_l_c_p_u_access_flag.htm#a09c11cb301c6774e6dbecfeae2393fe6", null ],
+    [ "Bits", "d9/d0b/structxii_g_a_l_c_p_u_access_flag_1_1_bits.htm", null ],
     [ "Enum", "db/dca/structxii_g_a_l_c_p_u_access_flag.htm#a2d7b392faf2b73fe981386307093fe7b", [
       [ "None", "db/dca/structxii_g_a_l_c_p_u_access_flag.htm#a2d7b392faf2b73fe981386307093fe7bad2e3a048d9a16217abc8e8f6561fb6df", null ],
       [ "Read", "db/dca/structxii_g_a_l_c_p_u_access_flag.htm#a2d7b392faf2b73fe981386307093fe7ba0b5e04a17a13491ea9b0d2210835f4c0", null ],

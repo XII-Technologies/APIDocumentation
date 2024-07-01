@@ -1,7 +1,6 @@
 var structxii_g_a_l_shader_type =
 [
-    [ "Bits", "d6/d43/structxii_g_a_l_shader_type_1_1_bits.htm", "d6/d43/structxii_g_a_l_shader_type_1_1_bits" ],
-    [ "StorageType", "d1/dcf/structxii_g_a_l_shader_type.htm#ae379f50e9b95f74ef6ab5c4f37d2823b", null ],
+    [ "Bits", "d6/d43/structxii_g_a_l_shader_type_1_1_bits.htm", null ],
     [ "Enum", "d1/dcf/structxii_g_a_l_shader_type.htm#aa40e7f7b336f75b920cf5ab9d7f14763", [
       [ "Unknown", "d1/dcf/structxii_g_a_l_shader_type.htm#aa40e7f7b336f75b920cf5ab9d7f14763ad33425aaa546af78895119ee27ae7a02", null ],
       [ "Vertex", "d1/dcf/structxii_g_a_l_shader_type.htm#aa40e7f7b336f75b920cf5ab9d7f14763acc7274c333c8b62c62ee8fe84dda40e9", null ],

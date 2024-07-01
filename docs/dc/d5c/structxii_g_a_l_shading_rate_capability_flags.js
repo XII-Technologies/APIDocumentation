@@ -1,7 +1,6 @@
 var structxii_g_a_l_shading_rate_capability_flags =
 [
-    [ "Bits", "dd/d41/structxii_g_a_l_shading_rate_capability_flags_1_1_bits.htm", "dd/d41/structxii_g_a_l_shading_rate_capability_flags_1_1_bits" ],
-    [ "StorageType", "dc/d5c/structxii_g_a_l_shading_rate_capability_flags.htm#a8f795d1abb99f1f02e54175eece34dc3", null ],
+    [ "Bits", "dd/d41/structxii_g_a_l_shading_rate_capability_flags_1_1_bits.htm", null ],
     [ "Enum", "dc/d5c/structxii_g_a_l_shading_rate_capability_flags.htm#ae18051ba3e2592a63b1df04552e3f560", [
       [ "None", "dc/d5c/structxii_g_a_l_shading_rate_capability_flags.htm#ae18051ba3e2592a63b1df04552e3f560ab14cf458366dd1287fa12ea4131a583e", null ],
       [ "PerDraw", "dc/d5c/structxii_g_a_l_shading_rate_capability_flags.htm#ae18051ba3e2592a63b1df04552e3f560a949723e773d8f7da8a247f4991686c80", null ],

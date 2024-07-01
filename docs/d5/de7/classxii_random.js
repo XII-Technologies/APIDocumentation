@@ -1,6 +1,5 @@
 var classxii_random =
 [
-    [ "xiiRandom", "d5/de7/classxii_random.htm#ada6e1dca89d2f34caf5575f1d45ac474", null ],
     [ "Bool", "d5/de7/classxii_random.htm#a056f266347bb481f23534118dc51a5f5", null ],
     [ "DoubleInRange", "d5/de7/classxii_random.htm#aa3ded99aa8df394d950df12f7060d264", null ],
     [ "DoubleMinMax", "d5/de7/classxii_random.htm#a456d382181fe2140ffd41d6af5778c09", null ],

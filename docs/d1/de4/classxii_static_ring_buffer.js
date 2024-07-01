@@ -17,6 +17,5 @@ var classxii_static_ring_buffer =
     [ "PeekFront", "d1/de4/classxii_static_ring_buffer.htm#adb1c3dd2a7f440d06fcce4c8a428fde1", null ],
     [ "PopFront", "d1/de4/classxii_static_ring_buffer.htm#a82d0e3342ce0299d294e4451a884cb10", null ],
     [ "PushBack", "d1/de4/classxii_static_ring_buffer.htm#a05661a80e13204950e9837ac517fbb25", null ],
-    [ "PushBack", "d1/de4/classxii_static_ring_buffer.htm#a2a5fcb4e63ec031fc608fb3b84819c22", null ],
-    [ "XII_CHECK_AT_COMPILETIME_MSG", "d1/de4/classxii_static_ring_buffer.htm#ade4a74b9895a2289a7df63e0dbac6560", null ]
+    [ "PushBack", "d1/de4/classxii_static_ring_buffer.htm#a2a5fcb4e63ec031fc608fb3b84819c22", null ]
 ];

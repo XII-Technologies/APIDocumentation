@@ -88,6 +88,5 @@ var classxii_string_builder =
     [ "TrimLeft", "d4/dbb/classxii_string_builder.htm#af24648af0e0ae561e4f070cae50f230d", null ],
     [ "TrimRight", "d4/dbb/classxii_string_builder.htm#a567ab89b58017566b2178dbc870041d3", null ],
     [ "TrimWordEnd", "d4/dbb/classxii_string_builder.htm#ada2422be111f5859eec04c8b62b9c445", null ],
-    [ "TrimWordStart", "d4/dbb/classxii_string_builder.htm#aa4d3b5cb3a935b4ebfd8e609fa09c76f", null ],
-    [ "xiiHybridStringBase", "d4/dbb/classxii_string_builder.htm#af4d7573a936a1bc9c82897db4937e3bf", null ]
+    [ "TrimWordStart", "d4/dbb/classxii_string_builder.htm#aa4d3b5cb3a935b4ebfd8e609fa09c76f", null ]
 ];

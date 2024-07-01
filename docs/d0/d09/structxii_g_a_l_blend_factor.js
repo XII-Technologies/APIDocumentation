@@ -1,6 +1,5 @@
 var structxii_g_a_l_blend_factor =
 [
-    [ "StorageType", "d0/d09/structxii_g_a_l_blend_factor.htm#a5fec354a9433405acb229b502c8dd5f4", null ],
     [ "Enum", "d0/d09/structxii_g_a_l_blend_factor.htm#ab2a636fd90c3d9b80f46fb24074d25f8", [
       [ "Undefined", "d0/d09/structxii_g_a_l_blend_factor.htm#ab2a636fd90c3d9b80f46fb24074d25f8ad26b557c6b1798e817e2d46bc0586e4b", null ],
       [ "Zero", "d0/d09/structxii_g_a_l_blend_factor.htm#ab2a636fd90c3d9b80f46fb24074d25f8a8803c6e9d2c750d779852257369fb708", null ],

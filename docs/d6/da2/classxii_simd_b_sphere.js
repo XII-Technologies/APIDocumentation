@@ -14,11 +14,7 @@ var classxii_simd_b_sphere =
     [ "GetRadius", "d6/da2/classxii_simd_b_sphere.htm#aed47edfe9bf3055334b8a0a681083351", null ],
     [ "IsNaN", "d6/da2/classxii_simd_b_sphere.htm#a85dbe3d7b736b5642419ca8243cc64a7", null ],
     [ "IsValid", "d6/da2/classxii_simd_b_sphere.htm#ad9d4961303cc12efb8517f18f647d595", null ],
-    [ "operator!=", "d6/da2/classxii_simd_b_sphere.htm#add6fa22f43beb3d703f8060cfa19e37f", null ],
-    [ "operator==", "d6/da2/classxii_simd_b_sphere.htm#a6de728b7a8f2e1652748fd80486685e1", null ],
     [ "Overlaps", "d6/da2/classxii_simd_b_sphere.htm#a1216f535ea062f3e336fa09da554f7e1", null ],
     [ "Transform", "d6/da2/classxii_simd_b_sphere.htm#aa9ba7b49625fc2b9600c2e340e3ccd3d", null ],
-    [ "Transform", "d6/da2/classxii_simd_b_sphere.htm#a467f7388ec7b3a34143cae1e66d9f860", null ],
-    [ "XII_DECLARE_POD_TYPE", "d6/da2/classxii_simd_b_sphere.htm#ade010fcd562ce33be04e81e83933d20a", null ],
-    [ "m_CenterAndRadius", "d6/da2/classxii_simd_b_sphere.htm#a59df5af2e89e30a72e4a10ca0f57a0c5", null ]
+    [ "Transform", "d6/da2/classxii_simd_b_sphere.htm#a467f7388ec7b3a34143cae1e66d9f860", null ]
 ];

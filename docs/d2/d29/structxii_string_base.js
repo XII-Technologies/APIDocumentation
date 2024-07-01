@@ -1,9 +1,5 @@
 var structxii_string_base =
 [
-    [ "const_iterator", "d2/d29/structxii_string_base.htm#a384460e6505642b62a1d45197706cd5e", null ],
-    [ "const_reverse_iterator", "d2/d29/structxii_string_base.htm#ada258fb50185398b647a256c5c682318", null ],
-    [ "iterator", "d2/d29/structxii_string_base.htm#aa2e5eecaf640177d7bfdeec6fb862b54", null ],
-    [ "reverse_iterator", "d2/d29/structxii_string_base.htm#a86fcd6d22ade63a1ad65432ba050590a", null ],
     [ "Compare", "d2/d29/structxii_string_base.htm#ae27a79e330beec66d9d813022e83cb69", null ],
     [ "Compare_NoCase", "d2/d29/structxii_string_base.htm#a8aff83ea5b80b6dc110a9e2924fedc7b", null ],
     [ "CompareN", "d2/d29/structxii_string_base.htm#a3d435ef63aff0219d0f0668f37eef0a2", null ],
@@ -39,13 +35,5 @@ var structxii_string_base =
     [ "operator xiiStringView", "d2/d29/structxii_string_base.htm#a654d0fd5e7d4f179cc8df5cbce2aab50", null ],
     [ "Split", "d2/d29/structxii_string_base.htm#a3c8e89db84402b1901a58bd0c7faaaac", null ],
     [ "StartsWith", "d2/d29/structxii_string_base.htm#a5bf41eb3d6781a8aaff8a4d2f7f4df4f", null ],
-    [ "StartsWith_NoCase", "d2/d29/structxii_string_base.htm#aa4d582fedf5b825d1efd0dde2b25b556", null ],
-    [ "begin", "d2/d29/structxii_string_base.htm#a5b5f19c126e7df283dd448b12b2df899", null ],
-    [ "cbegin", "d2/d29/structxii_string_base.htm#a12c98cff745962d433c06a47b9855455", null ],
-    [ "cend", "d2/d29/structxii_string_base.htm#aa0f5db3c35db4fd9c2874b91d7d88e55", null ],
-    [ "crbegin", "d2/d29/structxii_string_base.htm#ac91c9a26e488a70e6d6d0bbdbc7fb94f", null ],
-    [ "crend", "d2/d29/structxii_string_base.htm#a1f8a779fac3cc4bfbc1b13e9b0b0b3f0", null ],
-    [ "end", "d2/d29/structxii_string_base.htm#ae5cc59f898e2491f704df7bd2ff7042b", null ],
-    [ "rbegin", "d2/d29/structxii_string_base.htm#ad97957a2ce16ecd26da306b242665c5d", null ],
-    [ "rend", "d2/d29/structxii_string_base.htm#a78a8dfac80762f9c6bb665f6a2b5fbea", null ]
+    [ "StartsWith_NoCase", "d2/d29/structxii_string_base.htm#aa4d582fedf5b825d1efd0dde2b25b556", null ]
 ];

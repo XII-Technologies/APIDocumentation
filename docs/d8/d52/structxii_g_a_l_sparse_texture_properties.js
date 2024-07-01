@@ -1,6 +1,5 @@
 var structxii_g_a_l_sparse_texture_properties =
 [
-    [ "XII_DECLARE_POD_TYPE", "d8/d52/structxii_g_a_l_sparse_texture_properties.htm#a3f88422c7cc0c8b135736c2c0a9a56bb", null ],
     [ "m_Flags", "d8/d52/structxii_g_a_l_sparse_texture_properties.htm#aa77e30b86ccdb1b59b25249a501490c3", null ],
     [ "m_uiAddressSpaceSize", "d8/d52/structxii_g_a_l_sparse_texture_properties.htm#a3fd4ffaf8cca4b5197d9eee26b86008c", null ],
     [ "m_uiBlockSize", "d8/d52/structxii_g_a_l_sparse_texture_properties.htm#a73dd239c5586bbd5bcac97f439fe7db9", null ],

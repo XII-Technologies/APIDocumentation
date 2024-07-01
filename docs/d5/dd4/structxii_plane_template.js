@@ -1,6 +1,5 @@
 var structxii_plane_template =
 [
-    [ "ComponentType", "d5/dd4/structxii_plane_template.htm#ab6e89d0f48bb0fe5a81f278f7706c9ef", null ],
     [ "xiiPlaneTemplate", "d5/dd4/structxii_plane_template.htm#a0d03e48ef8ac52556ec4a02b6707ac3b", null ],
     [ "Flip", "d5/dd4/structxii_plane_template.htm#a0a21d88e1f1714568e089eff8ebaa698", null ],
     [ "FlipIfNecessary", "d5/dd4/structxii_plane_template.htm#a9a582958aa4655d7b232dcf4173c1625", null ],
@@ -32,8 +31,5 @@ var structxii_plane_template =
     [ "SetFromPoints", "d5/dd4/structxii_plane_template.htm#a3f4815beca970fab338af88b3df0bdea", null ],
     [ "SetFromPoints", "d5/dd4/structxii_plane_template.htm#aa4f1a659234b264bb324d2753d129b15", null ],
     [ "Transform", "d5/dd4/structxii_plane_template.htm#aa1e05e3d95ef11eb02e5775030a333b4", null ],
-    [ "Transform", "d5/dd4/structxii_plane_template.htm#a282fefa169e172db321fdf63e31e7329", null ],
-    [ "XII_DECLARE_POD_TYPE", "d5/dd4/structxii_plane_template.htm#a38c24a8fffa01c304a8684536fee04bc", null ],
-    [ "m_fNegDistance", "d5/dd4/structxii_plane_template.htm#a7e6c79b8223dfcd8f53d019abcbfe7ed", null ],
-    [ "m_vNormal", "d5/dd4/structxii_plane_template.htm#abe787552ba5b9de0daf1babc1403984d", null ]
+    [ "Transform", "d5/dd4/structxii_plane_template.htm#a282fefa169e172db321fdf63e31e7329", null ]
 ];

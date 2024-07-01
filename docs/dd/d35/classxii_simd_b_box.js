@@ -18,14 +18,9 @@ var classxii_simd_b_box =
     [ "Grow", "dd/d35/classxii_simd_b_box.htm#a9f95af968c047e2353c226084f1946aa", null ],
     [ "IsNaN", "dd/d35/classxii_simd_b_box.htm#acc2bd6fee47e6382ad3c16181ba26b7b", null ],
     [ "IsValid", "dd/d35/classxii_simd_b_box.htm#a45dbc7b15d53efa68f1d947ef981bb06", null ],
-    [ "operator!=", "dd/d35/classxii_simd_b_box.htm#a4c99ab7f8e04a6fa54da4d551fc312bc", null ],
-    [ "operator==", "dd/d35/classxii_simd_b_box.htm#a7fabfa2176a534797cb7b4fbce624109", null ],
     [ "Overlaps", "dd/d35/classxii_simd_b_box.htm#aeeb76b4503380f3014ded6a2c1bc3310", null ],
     [ "Overlaps", "dd/d35/classxii_simd_b_box.htm#aeb06bb1e6e8ca70173ca4316d47f0e02", null ],
     [ "Transform", "dd/d35/classxii_simd_b_box.htm#afbe9bc8827f7f85c98e2a585ee652c24", null ],
     [ "Transform", "dd/d35/classxii_simd_b_box.htm#aa0750401f8af052742144bee6b277d97", null ],
-    [ "Translate", "dd/d35/classxii_simd_b_box.htm#ad4d2d930f522048b0abb06634b4aaed1", null ],
-    [ "XII_DECLARE_POD_TYPE", "dd/d35/classxii_simd_b_box.htm#a73f3fcdc1146f967b0e192490070d8fb", null ],
-    [ "m_Max", "dd/d35/classxii_simd_b_box.htm#a7a3b0fff6d77ec7eace2b64ad5bbed3a", null ],
-    [ "m_Min", "dd/d35/classxii_simd_b_box.htm#afe7d87bc2419e8e07e5ee0070fe01542", null ]
+    [ "Translate", "dd/d35/classxii_simd_b_box.htm#ad4d2d930f522048b0abb06634b4aaed1", null ]
 ];

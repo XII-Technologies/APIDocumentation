@@ -1,7 +1,6 @@
 var structxii_x_r_device_features =
 [
-    [ "Bits", "d9/ddf/structxii_x_r_device_features_1_1_bits.htm", "d9/ddf/structxii_x_r_device_features_1_1_bits" ],
-    [ "StorageType", "d9/d59/structxii_x_r_device_features.htm#a91c69c8c0a92bb5ba89d7737be4a3164", null ],
+    [ "Bits", "d9/ddf/structxii_x_r_device_features_1_1_bits.htm", null ],
     [ "Enum", "d9/d59/structxii_x_r_device_features.htm#a4b18917067869d15c9ca82ac12a503e2", [
       [ "None", "d9/d59/structxii_x_r_device_features.htm#a4b18917067869d15c9ca82ac12a503e2accdfa457c77f06ddfd259495283306c0", null ],
       [ "Trigger", "d9/d59/structxii_x_r_device_features.htm#a4b18917067869d15c9ca82ac12a503e2a8e354275c6afcc99edc3d28c9885905b", null ],

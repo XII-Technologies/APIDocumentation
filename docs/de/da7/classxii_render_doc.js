@@ -1,7 +1,5 @@
 var classxii_render_doc =
 [
-    [ "xiiRenderDoc", "de/da7/classxii_render_doc.htm#a0e57f8404c21550581a02c4e91bb4e7e", null ],
-    [ "~xiiRenderDoc", "de/da7/classxii_render_doc.htm#ad217319e3576be5cf472cc225c01c5a9", null ],
     [ "EndFrameCaptureAndDiscardResult", "de/da7/classxii_render_doc.htm#ae501e4d63f5b8124153e8777560ec2bc", null ],
     [ "EndFrameCaptureAndWriteOutput", "de/da7/classxii_render_doc.htm#a7bf025725c42e51d5296c47e367dadf6", null ],
     [ "GetAbsCaptureFilePathTemplate", "de/da7/classxii_render_doc.htm#a69ed43f32b05b0dd5463bf98dd7fb508", null ],

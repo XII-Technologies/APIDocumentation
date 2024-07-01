@@ -1,30 +1,5 @@
 var classxii_qt_asset_browser_filter =
 [
-    [ "xiiQtAssetBrowserFilter", "d0/db0/classxii_qt_asset_browser_filter.htm#aeca96adadfb81f7aef8945d4c39383e7", null ],
-    [ "GetPathFilter", "d0/db0/classxii_qt_asset_browser_filter.htm#a9479af4d4ef6d1e25458c2a8cc641868", null ],
-    [ "GetShowFiles", "d0/db0/classxii_qt_asset_browser_filter.htm#aca6a3391ffe51ec717a81e4592ecb695", null ],
-    [ "GetShowItemsInHiddenFolders", "d0/db0/classxii_qt_asset_browser_filter.htm#a39d3f3734d791450801a71082617cb64", null ],
-    [ "GetShowItemsInSubFolders", "d0/db0/classxii_qt_asset_browser_filter.htm#afe30865478dc094a8d7e395f05f2a8f6", null ],
-    [ "GetShowNonImportableFiles", "d0/db0/classxii_qt_asset_browser_filter.htm#a1d08ec5f3fe92a5be9e65b1874e00bed", null ],
-    [ "GetSortByRecentUse", "d0/db0/classxii_qt_asset_browser_filter.htm#aa6697fbbb15e5158971cac2dd5f71123", null ],
-    [ "GetTemporaryPinnedItem", "d0/db0/classxii_qt_asset_browser_filter.htm#a61615fcc129b693375189438a3fe5797", null ],
-    [ "GetTextFilter", "d0/db0/classxii_qt_asset_browser_filter.htm#a9607cd62f6c7ef760b6cfd6f2c210026", null ],
-    [ "GetTypeFilter", "d0/db0/classxii_qt_asset_browser_filter.htm#af840c02ac1d7f5b6c594dfdcc45c9878", null ],
-    [ "IsAssetFiltered", "d0/db0/classxii_qt_asset_browser_filter.htm#a8708e4e9de6429f10a33751474169149", null ],
-    [ "PathFilterChanged", "d0/db0/classxii_qt_asset_browser_filter.htm#a14410540a87b26fba41e77e2369ff569", null ],
     [ "Reset", "d0/db0/classxii_qt_asset_browser_filter.htm#a4a9bcf927ca3eebd6eaa9ead32575db9", null ],
-    [ "SetFileExtensionFilters", "d0/db0/classxii_qt_asset_browser_filter.htm#af46a4b49aa291ada520d857c0d2a86bc", null ],
-    [ "SetPathFilter", "d0/db0/classxii_qt_asset_browser_filter.htm#acd7d17fb5a6f90ff2740a92a5d10fbab", null ],
-    [ "SetShowFiles", "d0/db0/classxii_qt_asset_browser_filter.htm#a8e3b873363b7cc90ba24fd80ebcf21fb", null ],
-    [ "SetShowItemsInHiddenFolders", "d0/db0/classxii_qt_asset_browser_filter.htm#ad3f1f316a65c60e867ba81c929c00256", null ],
-    [ "SetShowItemsInSubFolders", "d0/db0/classxii_qt_asset_browser_filter.htm#ad919ecd38528c26cbe53bb3c5b453ba2", null ],
-    [ "SetShowNonImportableFiles", "d0/db0/classxii_qt_asset_browser_filter.htm#a2d707c88f465eacd91febe9a9ca790d9", null ],
-    [ "SetSortByRecentUse", "d0/db0/classxii_qt_asset_browser_filter.htm#a4f10a3646850b8b886c55e2aed6c185c", null ],
-    [ "SetTemporaryPinnedItem", "d0/db0/classxii_qt_asset_browser_filter.htm#a7567a3c6aed6c2f3cc3fa2f06e812e79", null ],
-    [ "SetTextFilter", "d0/db0/classxii_qt_asset_browser_filter.htm#ae04f681d56bd9fd680f6f36a47571dba", null ],
-    [ "SetTypeFilter", "d0/db0/classxii_qt_asset_browser_filter.htm#a9e35b7bb6da25c668f51a23cd5e48c0d", null ],
-    [ "SortByRecentUseChanged", "d0/db0/classxii_qt_asset_browser_filter.htm#a92f4abe6e5a9d2d0d335d060a319a294", null ],
-    [ "TextFilterChanged", "d0/db0/classxii_qt_asset_browser_filter.htm#ad99e8e395bf98bbd8bf4edc5e0dc6ae6", null ],
-    [ "TypeFilterChanged", "d0/db0/classxii_qt_asset_browser_filter.htm#ac97ea67a45cec54c9a2b0e66e54d0aa2", null ],
-    [ "UpdateImportExtensions", "d0/db0/classxii_qt_asset_browser_filter.htm#a7751ad893c215d25ef4fc18901845431", null ]
+    [ "SetTemporaryPinnedItem", "d0/db0/classxii_qt_asset_browser_filter.htm#a7567a3c6aed6c2f3cc3fa2f06e812e79", null ]
 ];

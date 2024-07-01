@@ -1,6 +1,5 @@
 var structxii_g_a_l_shader_variable_class_type =
 [
-    [ "StorageType", "d1/dec/structxii_g_a_l_shader_variable_class_type.htm#a6fdcc4590fdbf2e5959fb47cade9e4c1", null ],
     [ "Enum", "d1/dec/structxii_g_a_l_shader_variable_class_type.htm#a104bca7015bd08b6421ec60ced3f945c", [
       [ "Unknown", "d1/dec/structxii_g_a_l_shader_variable_class_type.htm#a104bca7015bd08b6421ec60ced3f945ca93c6cb34fd233a464cec0ac8b3d976c0", null ],
       [ "Scalar", "d1/dec/structxii_g_a_l_shader_variable_class_type.htm#a104bca7015bd08b6421ec60ced3f945cab4e6ada3d6d5374af5389980e154b1f7", null ],

@@ -1,6 +1,5 @@
 var structxii_easing_function =
 [
-    [ "StorageType", "dc/d8d/structxii_easing_function.htm#a28375fe0457c8aa32ef3c2e95d17cb37", null ],
     [ "Enum", "dc/d8d/structxii_easing_function.htm#a8be67e67471de2fe5de6c12b4c4247cf", [
       [ "ConstantZero", "dc/d8d/structxii_easing_function.htm#a8be67e67471de2fe5de6c12b4c4247cfa1b443164b6ac9087219e3f0022516225", null ],
       [ "ConstantQuarter", "dc/d8d/structxii_easing_function.htm#a8be67e67471de2fe5de6c12b4c4247cfaa4e84e6bb5eb11e487a0de56b66e7ca3", null ],

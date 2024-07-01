@@ -1,6 +1,5 @@
 var structxii_g_a_l_sub_pass_dependency_description =
 [
-    [ "XII_DECLARE_POD_TYPE", "d4/d07/structxii_g_a_l_sub_pass_dependency_description.htm#a8c938cb3ff062998b60bf95dcddcf7ea", null ],
     [ "m_DestinationAccessFlags", "d4/d07/structxii_g_a_l_sub_pass_dependency_description.htm#a4e04791df668243f2cf95110638fc37c", null ],
     [ "m_DestinationStageFlags", "d4/d07/structxii_g_a_l_sub_pass_dependency_description.htm#a1575967df16b596936af7d3f9a1665d8", null ],
     [ "m_SourceAccessFlags", "d4/d07/structxii_g_a_l_sub_pass_dependency_description.htm#a40a220ece19906043c493ecaa0595383", null ],

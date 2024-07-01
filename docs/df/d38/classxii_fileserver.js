@@ -1,6 +1,5 @@
 var classxii_fileserver =
 [
-    [ "xiiFileserver", "df/d38/classxii_fileserver.htm#a116b701a1d310918cc4a0e6849858366", null ],
     [ "BroadcastReloadResourcesCommand", "df/d38/classxii_fileserver.htm#ac5cd11176f7ba824e35301686765604b", null ],
     [ "GetPort", "df/d38/classxii_fileserver.htm#a5b858d7182a3f2b1266413cb193201a9", null ],
     [ "IsServerRunning", "df/d38/classxii_fileserver.htm#ac92dc38b4867dc40b6ffe992951dcbf0", null ],

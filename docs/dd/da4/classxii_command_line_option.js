@@ -18,6 +18,5 @@ var classxii_command_line_option =
     [ "GetParamShortDesc", "dd/da4/classxii_command_line_option.htm#afefb32bb09107ded0553ffc925e7c3de", null ],
     [ "GetSortingGroup", "dd/da4/classxii_command_line_option.htm#a140b6cc484c22e77899b1a9ca6894d63", null ],
     [ "GetSplitOptions", "dd/da4/classxii_command_line_option.htm#a852ced85440e0026bd0d30cd59a08f68", null ],
-    [ "GetType", "dd/da4/classxii_command_line_option.htm#ae3e704c9c926676f748d568a7b33c8b2", null ],
-    [ "m_sSortingGroup", "dd/da4/classxii_command_line_option.htm#a428eda72d8ad3a721487e37981302c05", null ]
+    [ "GetType", "dd/da4/classxii_command_line_option.htm#ae3e704c9c926676f748d568a7b33c8b2", null ]
 ];

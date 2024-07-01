@@ -1,7 +1,6 @@
 var structxii_g_a_l_swap_chain_usage_flags =
 [
-    [ "Bits", "de/d15/structxii_g_a_l_swap_chain_usage_flags_1_1_bits.htm", "de/d15/structxii_g_a_l_swap_chain_usage_flags_1_1_bits" ],
-    [ "StorageType", "d6/dc7/structxii_g_a_l_swap_chain_usage_flags.htm#a2512fb96ca9c80df23734991057067f9", null ],
+    [ "Bits", "de/d15/structxii_g_a_l_swap_chain_usage_flags_1_1_bits.htm", null ],
     [ "Enum", "d6/dc7/structxii_g_a_l_swap_chain_usage_flags.htm#a0a6400b36fb7969abaa95ffb71d04588", [
       [ "None", "d6/dc7/structxii_g_a_l_swap_chain_usage_flags.htm#a0a6400b36fb7969abaa95ffb71d04588a98bb2b4e915ef099eb7fb72fbacd5c6f", null ],
       [ "RenderTarget", "d6/dc7/structxii_g_a_l_swap_chain_usage_flags.htm#a0a6400b36fb7969abaa95ffb71d04588a384e16a4458d6021907062783c4f7f9f", null ],

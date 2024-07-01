@@ -1,6 +1,5 @@
 var structxii_g_a_l_stencil_operation =
 [
-    [ "StorageType", "db/d73/structxii_g_a_l_stencil_operation.htm#a23b5018e5ec264de97fb36ff870057b3", null ],
     [ "Enum", "db/d73/structxii_g_a_l_stencil_operation.htm#a344fa8117dfca731182d2e6972291ef2", [
       [ "Undefined", "db/d73/structxii_g_a_l_stencil_operation.htm#a344fa8117dfca731182d2e6972291ef2a2812d6300033772bf5ae46c8485fbc1b", null ],
       [ "Keep", "db/d73/structxii_g_a_l_stencil_operation.htm#a344fa8117dfca731182d2e6972291ef2a553db98ba287ebc1f70669141077120e", null ],

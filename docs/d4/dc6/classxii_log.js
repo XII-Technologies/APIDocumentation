@@ -6,6 +6,5 @@ var classxii_log =
       [ "Numeric", "d4/dc6/classxii_log.htm#a9756be3754e6faf059dee9e11e461002a87322391cc6e8948ce9fd5d6cb84fced", null ],
       [ "Textual", "d4/dc6/classxii_log.htm#a9756be3754e6faf059dee9e11e461002aa2fb9a703d274288448da0270a1eeb1a", null ],
       [ "TimeOnly", "d4/dc6/classxii_log.htm#a9756be3754e6faf059dee9e11e461002a38611b3e1d65dc7d9786bc85a7238491", null ]
-    ] ],
-    [ "xiiLogBlock", "d4/dc6/classxii_log.htm#ac4b845aa94f890beb7956c6b6aabbe4b", null ]
+    ] ]
 ];

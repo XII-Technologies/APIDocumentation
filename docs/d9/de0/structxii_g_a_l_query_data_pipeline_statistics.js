@@ -1,6 +1,5 @@
 var structxii_g_a_l_query_data_pipeline_statistics =
 [
-    [ "XII_DECLARE_POD_TYPE", "d9/de0/structxii_g_a_l_query_data_pipeline_statistics.htm#aa1efb72693da3a85362bc8b1e58f6471", null ],
     [ "m_Type", "d9/de0/structxii_g_a_l_query_data_pipeline_statistics.htm#a7d951c4fead53424b29f8a3af3c3434f", null ],
     [ "m_uiClippingInvocations", "d9/de0/structxii_g_a_l_query_data_pipeline_statistics.htm#a0a5c3d3de6b00cf576b3b2478cf801df", null ],
     [ "m_uiClippingPrimitives", "d9/de0/structxii_g_a_l_query_data_pipeline_statistics.htm#a00c8388f7c82a6ec3daaf6ff983fb7e4", null ],

@@ -1,6 +1,5 @@
 var classxii_bounding_box_template =
 [
-    [ "ComponentType", "d2/dd6/classxii_bounding_box_template.htm#ae2c7d69f04d610d7bb2030e687aa48fa", null ],
     [ "xiiBoundingBoxTemplate", "d2/dd6/classxii_bounding_box_template.htm#a063f7fc7c04b31aec13471ace1144fc5", null ],
     [ "xiiBoundingBoxTemplate", "d2/dd6/classxii_bounding_box_template.htm#af5bfe5d94dfb75949440f08afdcf65ff", null ],
     [ "Contains", "d2/dd6/classxii_bounding_box_template.htm#affdfec5156382d1871ea0a0549bd4098", null ],
@@ -36,8 +35,5 @@ var classxii_bounding_box_template =
     [ "ScaleFromOrigin", "d2/dd6/classxii_bounding_box_template.htm#a71ff908557e2aeccb82603a22cd26928", null ],
     [ "TransformFromCenter", "d2/dd6/classxii_bounding_box_template.htm#aae0b08823045e6141a5530791870c3a0", null ],
     [ "TransformFromOrigin", "d2/dd6/classxii_bounding_box_template.htm#a63aa26707d477372e2c2748bf72bb0d1", null ],
-    [ "Translate", "d2/dd6/classxii_bounding_box_template.htm#afb356372d0386f0f4305a5b9f2292ff6", null ],
-    [ "XII_DECLARE_POD_TYPE", "d2/dd6/classxii_bounding_box_template.htm#a6777b89b44b53206fbdbb6709c2dc5f6", null ],
-    [ "m_vMax", "d2/dd6/classxii_bounding_box_template.htm#a84dba2bcf801ebdb47899b5662554d77", null ],
-    [ "m_vMin", "d2/dd6/classxii_bounding_box_template.htm#ac2eff75aed0d9ba0d4046b622935f7dd", null ]
+    [ "Translate", "d2/dd6/classxii_bounding_box_template.htm#afb356372d0386f0f4305a5b9f2292ff6", null ]
 ];

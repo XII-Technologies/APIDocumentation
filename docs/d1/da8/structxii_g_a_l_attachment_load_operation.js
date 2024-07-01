@@ -1,6 +1,5 @@
 var structxii_g_a_l_attachment_load_operation =
 [
-    [ "StorageType", "d1/da8/structxii_g_a_l_attachment_load_operation.htm#aa5447101d2eef566916ff3269f8d5fc3", null ],
     [ "Enum", "d1/da8/structxii_g_a_l_attachment_load_operation.htm#ac253fabbe9fd160f2e29bb33a40cac63", [
       [ "Load", "d1/da8/structxii_g_a_l_attachment_load_operation.htm#ac253fabbe9fd160f2e29bb33a40cac63aded2e600b1acaefa46b0949273d73a57", null ],
       [ "Clear", "d1/da8/structxii_g_a_l_attachment_load_operation.htm#ac253fabbe9fd160f2e29bb33a40cac63a84bf067f7cfc0f179481c46e0b25042e", null ],

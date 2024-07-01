@@ -1,8 +1,7 @@
 var structxii_g_a_l_texture_format_description =
 [
     [ "GetElementSize", "d6/d3a/structxii_g_a_l_texture_format_description.htm#aa4a9a6e8c6e47fa40e02dd12188f6f45", null ],
-    [ "operator==", "d6/d3a/structxii_g_a_l_texture_format_description.htm#a754a74b109a007399ae1b4fd1d2028c6", null ],
-    [ "XII_DECLARE_POD_TYPE", "d6/d3a/structxii_g_a_l_texture_format_description.htm#a0f1ea6b807ed2776eb7ec21add2653f9", null ],
+    [ "operator==", "d6/d3a/structxii_g_a_l_texture_format_description.htm#a9ef204b59c87e41eb423f59c02084685", null ],
     [ "m_bIsTypeless", "d6/d3a/structxii_g_a_l_texture_format_description.htm#a09153d252dad681fb86c12c875a86529", null ],
     [ "m_ComponentType", "d6/d3a/structxii_g_a_l_texture_format_description.htm#acf133f3d1471e4fc50385da348bedf83", null ],
     [ "m_Format", "d6/d3a/structxii_g_a_l_texture_format_description.htm#a3715192c95e8b4f1b6fa9c7a78d31e52", null ],

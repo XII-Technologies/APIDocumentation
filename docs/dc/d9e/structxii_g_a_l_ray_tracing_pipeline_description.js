@@ -1,6 +1,5 @@
 var structxii_g_a_l_ray_tracing_pipeline_description =
 [
-    [ "XII_DECLARE_POD_TYPE", "dc/d9e/structxii_g_a_l_ray_tracing_pipeline_description.htm#a6d4fe53aea86c49a1b096f81c6518e47", null ],
     [ "m_GeneralShaders", "dc/d9e/structxii_g_a_l_ray_tracing_pipeline_description.htm#aef52c8a0589cf6edf76722c3fb892cc3", null ],
     [ "m_ProceduralHitShaders", "dc/d9e/structxii_g_a_l_ray_tracing_pipeline_description.htm#ab07c7a1889f67a3c14e3b739cc10110d", null ],
     [ "m_sShaderRecordName", "dc/d9e/structxii_g_a_l_ray_tracing_pipeline_description.htm#a41cd3ad56608d2753ab3483bbbbc26ba", null ],

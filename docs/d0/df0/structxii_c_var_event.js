@@ -5,7 +5,6 @@ var structxii_c_var_event =
       [ "DelayedSyncValueChanged", "d0/df0/structxii_c_var_event.htm#a223c8e7d335ad67fc5e52818726d6bc0a2433b8fee9b381b8f805e633b198748d", null ],
       [ "ListOfVarsChanged", "d0/df0/structxii_c_var_event.htm#a223c8e7d335ad67fc5e52818726d6bc0a5dd569fec5c58379be5e68b97d5da6c9", null ]
     ] ],
-    [ "xiiCVarEvent", "d0/df0/structxii_c_var_event.htm#a0a1692448206fa5304fa6beb2f3c18d6", null ],
     [ "m_EventType", "d0/df0/structxii_c_var_event.htm#a4fe93984aca738354a58515dec0fe5d2", null ],
     [ "m_pCVar", "d0/df0/structxii_c_var_event.htm#af7e59a48932feb6be711593ecdfec498", null ]
 ];

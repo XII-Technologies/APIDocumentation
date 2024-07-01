@@ -1,11 +1,8 @@
 var classxii_mat3_template =
 [
-    [ "ComponentType", "d3/d74/classxii_mat3_template.htm#ab5b722d8c5fb4dff361c8e56a17ab914", null ],
     [ "xiiMat3Template", "d3/d74/classxii_mat3_template.htm#a23f9e5e5e25001cecb1f7a04edea4586", null ],
     [ "xiiMat3Template", "d3/d74/classxii_mat3_template.htm#a9ec0055d56f57a16ae8b577b08bed7c6", null ],
     [ "xiiMat3Template", "d3/d74/classxii_mat3_template.htm#a424a78e134dd17629bec4ec88b77c428", null ],
-    [ "Element", "d3/d74/classxii_mat3_template.htm#ab738ac9814fdda6b5bed9c07a6ac08ec", null ],
-    [ "Element", "d3/d74/classxii_mat3_template.htm#a411a46d26e6cabd76d9ba9f3e0fb61f6", null ],
     [ "GetAsArray", "d3/d74/classxii_mat3_template.htm#af9222afcf5dbfde0aae56f0876bc2b79", null ],
     [ "GetColumn", "d3/d74/classxii_mat3_template.htm#abe79a4ff1ac34659d1e1ce609f1838d9", null ],
     [ "GetDeterminant", "d3/d74/classxii_mat3_template.htm#a01c2ab7226eb443ee4cbab0e92a86d0d", null ],
@@ -31,6 +28,5 @@ var classxii_mat3_template =
     [ "SetZero", "d3/d74/classxii_mat3_template.htm#a9ab491f721aa3f2be6e453782c147bff", null ],
     [ "TransformDirection", "d3/d74/classxii_mat3_template.htm#af8517a144ac1cf4d9df9232804817f11", null ],
     [ "Transpose", "d3/d74/classxii_mat3_template.htm#a5f510634863c1ab428d1454e00eaa4b6", null ],
-    [ "XII_DECLARE_POD_TYPE", "d3/d74/classxii_mat3_template.htm#a7ee1d5cb8b2513c2244dd32ef364dc8f", null ],
     [ "m_fElementsCM", "d3/d74/classxii_mat3_template.htm#ae0ae61baee9629f7bc8d90b134437070", null ]
 ];

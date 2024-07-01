@@ -1,7 +1,6 @@
 var structxii_plugin_load_flags =
 [
-    [ "Bits", "df/d92/structxii_plugin_load_flags_1_1_bits.htm", "df/d92/structxii_plugin_load_flags_1_1_bits" ],
-    [ "StorageType", "db/d85/structxii_plugin_load_flags.htm#a9261169b54a31cfef3a0e2b1e05607c1", null ],
+    [ "Bits", "df/d92/structxii_plugin_load_flags_1_1_bits.htm", null ],
     [ "Enum", "db/d85/structxii_plugin_load_flags.htm#af8058bfc8682cca321ed4d7e69b79cb3", [
       [ "LoadCopy", "db/d85/structxii_plugin_load_flags.htm#af8058bfc8682cca321ed4d7e69b79cb3ac04c6085fcd3dfaa2dfb30eac019f60c", null ],
       [ "PluginIsOptional", "db/d85/structxii_plugin_load_flags.htm#af8058bfc8682cca321ed4d7e69b79cb3a1e3c28820d124f42bb44d05affa272fc", null ],

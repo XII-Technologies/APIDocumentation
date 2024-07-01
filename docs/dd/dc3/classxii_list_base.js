@@ -6,7 +6,7 @@ var classxii_list_base =
     [ "~xiiListBase", "dd/dc3/classxii_list_base.htm#a009be35e072d595b2b86101333bdf2a3", null ],
     [ "Clear", "dd/dc3/classxii_list_base.htm#a09a2287e7bfba6714e64537fc973b328", null ],
     [ "Compact", "dd/dc3/classxii_list_base.htm#a4f2792345477f07326a9c37175b4c47c", null ],
-    [ "GetAllocator", "dd/dc3/classxii_list_base.htm#a5864d1e212789ecffb0c020d17951a4b", null ],
+    [ "GetAllocator", "dd/dc3/classxii_list_base.htm#abf99455077c6cc7780622679d6d071e1", null ],
     [ "GetCount", "dd/dc3/classxii_list_base.htm#a94474766c3c210c91dfe8c48fa1d0e33", null ],
     [ "GetEndIterator", "dd/dc3/classxii_list_base.htm#a6f9ba54d433d6806536e492abf241669", null ],
     [ "GetEndIterator", "dd/dc3/classxii_list_base.htm#a52395b93ea64869711fe2c466ba34824", null ],

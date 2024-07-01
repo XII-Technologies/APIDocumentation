@@ -1,28 +1,15 @@
 var classxii_standard_j_s_o_n_writer =
 [
-    [ "CommaWriter", "dd/d42/structxii_standard_j_s_o_n_writer_1_1_comma_writer.htm", "dd/d42/structxii_standard_j_s_o_n_writer_1_1_comma_writer" ],
-    [ "JSONState", "da/d0c/structxii_standard_j_s_o_n_writer_1_1_j_s_o_n_state.htm", "da/d0c/structxii_standard_j_s_o_n_writer_1_1_j_s_o_n_state" ],
-    [ "State", "de/dad/classxii_standard_j_s_o_n_writer.htm#a95a7636f25cb7acaee3361746f2c93ec", [
-      [ "Invalid", "de/dad/classxii_standard_j_s_o_n_writer.htm#a95a7636f25cb7acaee3361746f2c93eca61ed860e408c534687e914775022194b", null ],
-      [ "Empty", "de/dad/classxii_standard_j_s_o_n_writer.htm#a95a7636f25cb7acaee3361746f2c93ecafbe88ae16d6c465d4aa681c9e3f13e85", null ],
-      [ "Variable", "de/dad/classxii_standard_j_s_o_n_writer.htm#a95a7636f25cb7acaee3361746f2c93eca74e219f58eb832cf470b6e851bda33ff", null ],
-      [ "Object", "de/dad/classxii_standard_j_s_o_n_writer.htm#a95a7636f25cb7acaee3361746f2c93ecadae81d17937c2a56e828dfd056cf6455", null ],
-      [ "NamedObject", "de/dad/classxii_standard_j_s_o_n_writer.htm#a95a7636f25cb7acaee3361746f2c93eca3c2ac0e34aa4f73f4b0ddeced72fab21", null ],
-      [ "Array", "de/dad/classxii_standard_j_s_o_n_writer.htm#a95a7636f25cb7acaee3361746f2c93eca553b81290ae7a269f7ec09ccdfca6f24", null ],
-      [ "NamedArray", "de/dad/classxii_standard_j_s_o_n_writer.htm#a95a7636f25cb7acaee3361746f2c93eca33f3c5257916d9e53bcb9a535f5c1bbd", null ]
-    ] ],
+    [ "CommaWriter", "dd/d42/structxii_standard_j_s_o_n_writer_1_1_comma_writer.htm", null ],
+    [ "JSONState", "da/d0c/structxii_standard_j_s_o_n_writer_1_1_j_s_o_n_state.htm", null ],
     [ "xiiStandardJSONWriter", "de/dad/classxii_standard_j_s_o_n_writer.htm#a83a6ca5cb363df0a6bb2d87826d36369", null ],
     [ "~xiiStandardJSONWriter", "de/dad/classxii_standard_j_s_o_n_writer.htm#afa745d2efc2e6e008517541161610119", null ],
     [ "BeginArray", "de/dad/classxii_standard_j_s_o_n_writer.htm#a9c9f173b8a499b2a03d04e0e5cc5a1cd", null ],
     [ "BeginObject", "de/dad/classxii_standard_j_s_o_n_writer.htm#a946d1015ac1f8c4c14bda3a3891c8fe7", null ],
     [ "BeginVariable", "de/dad/classxii_standard_j_s_o_n_writer.htm#a0289a39c8c49f265af1d643c4edd09cb", null ],
-    [ "End", "de/dad/classxii_standard_j_s_o_n_writer.htm#ad73675af2cac3ee990ad71d3629d61b7", null ],
     [ "EndArray", "de/dad/classxii_standard_j_s_o_n_writer.htm#ab906497c6aab8df6bfe726b361842039", null ],
     [ "EndObject", "de/dad/classxii_standard_j_s_o_n_writer.htm#ab5979a277b5a2e81cffb9100d5166d03", null ],
     [ "EndVariable", "de/dad/classxii_standard_j_s_o_n_writer.htm#aad71899d7de01fd42a6abffcf0157be8", null ],
-    [ "OutputEscapedString", "de/dad/classxii_standard_j_s_o_n_writer.htm#aa0c0d1cdf3d7cbe8ec915e8fba12703f", null ],
-    [ "OutputIndentation", "de/dad/classxii_standard_j_s_o_n_writer.htm#af6fedb3a210a3317ef06d86830b487c1", null ],
-    [ "OutputString", "de/dad/classxii_standard_j_s_o_n_writer.htm#a9e590c1a1d045976c25f8f75b5dbad45", null ],
     [ "SetOutputStream", "de/dad/classxii_standard_j_s_o_n_writer.htm#a7d561115cd7f1ca469e3245cc2a422f9", null ],
     [ "WriteAngle", "de/dad/classxii_standard_j_s_o_n_writer.htm#a9165ddb9f4e8a64f4f3d6c832c64b924", null ],
     [ "WriteAngle", "de/dad/classxii_standard_j_s_o_n_writer.htm#a270b9a1d8692a3cee6e8594e119f5e2d", null ],
@@ -66,8 +53,5 @@ var classxii_standard_j_s_o_n_writer =
     [ "WriteVec4I32", "de/dad/classxii_standard_j_s_o_n_writer.htm#af6026ce7d78ec5a8af2f48596ea9ce5b", null ],
     [ "WriteVec4I64", "de/dad/classxii_standard_j_s_o_n_writer.htm#ada5cb688253c5e2bfc5aba41d25493ba", null ],
     [ "WriteVec4U32", "de/dad/classxii_standard_j_s_o_n_writer.htm#a57b15bf8d0366d7b798e1a327a5895b4", null ],
-    [ "WriteVec4U64", "de/dad/classxii_standard_j_s_o_n_writer.htm#aa3e23424e5ed7af6c958547d3336a213", null ],
-    [ "m_iIndentation", "de/dad/classxii_standard_j_s_o_n_writer.htm#a1084f2d60b6efece560a5a9c4a1cd4e5", null ],
-    [ "m_pOutput", "de/dad/classxii_standard_j_s_o_n_writer.htm#ae7ea0ec7901cba85b9e03c9a462941e4", null ],
-    [ "m_StateStack", "de/dad/classxii_standard_j_s_o_n_writer.htm#a8996171634fb729c863c39600587eb5b", null ]
+    [ "WriteVec4U64", "de/dad/classxii_standard_j_s_o_n_writer.htm#aa3e23424e5ed7af6c958547d3336a213", null ]
 ];

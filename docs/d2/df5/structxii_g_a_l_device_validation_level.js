@@ -1,6 +1,5 @@
 var structxii_g_a_l_device_validation_level =
 [
-    [ "StorageType", "d2/df5/structxii_g_a_l_device_validation_level.htm#ac128406f58c46c9a602401563d4ad5c6", null ],
     [ "Enum", "d2/df5/structxii_g_a_l_device_validation_level.htm#ad3b08a6f0974157402075c1e432e623c", [
       [ "Disabled", "d2/df5/structxii_g_a_l_device_validation_level.htm#ad3b08a6f0974157402075c1e432e623ca078317aa6ecb82382edc5035df41c783", null ],
       [ "Standard", "d2/df5/structxii_g_a_l_device_validation_level.htm#ad3b08a6f0974157402075c1e432e623ca0a5ceb8d5b99a21fcfe511399788e1c4", null ],

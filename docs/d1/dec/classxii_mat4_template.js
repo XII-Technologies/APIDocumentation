@@ -1,12 +1,9 @@
 var classxii_mat4_template =
 [
-    [ "ComponentType", "d1/dec/classxii_mat4_template.htm#ab244e641e72a0b5a8563dd444b99bef5", null ],
     [ "xiiMat4Template", "d1/dec/classxii_mat4_template.htm#ad06f1aada15fb3d6322d8fad0c3aff87", null ],
     [ "xiiMat4Template", "d1/dec/classxii_mat4_template.htm#a129cf735cc1c2e7a7134c3ebeb07ecf1", null ],
     [ "xiiMat4Template", "d1/dec/classxii_mat4_template.htm#ab4a6d23add06edebeec3bf1453e17bb5", null ],
     [ "xiiMat4Template", "d1/dec/classxii_mat4_template.htm#ae16088a3cb716535e74a5afb65a8c9a6", null ],
-    [ "Element", "d1/dec/classxii_mat4_template.htm#a7559a77bf06c8ad85c0567ebf2892b38", null ],
-    [ "Element", "d1/dec/classxii_mat4_template.htm#ab6d161b9dd4a878b8c6db02211e74d1a", null ],
     [ "GetAsArray", "d1/dec/classxii_mat4_template.htm#a85a0c91baf31f0e49243fcd4c2314199", null ],
     [ "GetColumn", "d1/dec/classxii_mat4_template.htm#af938e1d2dd6a525a2a69d82294b22cbf", null ],
     [ "GetDiagonal", "d1/dec/classxii_mat4_template.htm#af91ea1d9388c4b98e192542882aba2df", null ],
@@ -41,6 +38,5 @@ var classxii_mat4_template =
     [ "TransformPosition", "d1/dec/classxii_mat4_template.htm#ad143eddbdd5e71bd018b013439c0c120", null ],
     [ "TransformPosition", "d1/dec/classxii_mat4_template.htm#aab305c02e52bc1a21297b36d0ee529a1", null ],
     [ "Transpose", "d1/dec/classxii_mat4_template.htm#aabea123836f8a834510e18e9bf9d2cdf", null ],
-    [ "XII_DECLARE_POD_TYPE", "d1/dec/classxii_mat4_template.htm#a1a37029c861c1e6b79d03f3109aa97f2", null ],
     [ "m_fElementsCM", "d1/dec/classxii_mat4_template.htm#ae20a89278e0bcca31ce62eeedee23bbf", null ]
 ];

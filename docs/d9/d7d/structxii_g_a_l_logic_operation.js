@@ -1,6 +1,5 @@
 var structxii_g_a_l_logic_operation =
 [
-    [ "StorageType", "d9/d7d/structxii_g_a_l_logic_operation.htm#afd9620647ed6e0a826fae8d7232da2bd", null ],
     [ "Enum", "d9/d7d/structxii_g_a_l_logic_operation.htm#af8e2a0da0b43dfcff3ca28a2a3fca263", [
       [ "Clear", "d9/d7d/structxii_g_a_l_logic_operation.htm#af8e2a0da0b43dfcff3ca28a2a3fca263a1132bdb77395ddcea9021dfa19e2a3f9", null ],
       [ "Set", "d9/d7d/structxii_g_a_l_logic_operation.htm#af8e2a0da0b43dfcff3ca28a2a3fca263a7dee271f4118299d24c21e4a2e7b0557", null ],

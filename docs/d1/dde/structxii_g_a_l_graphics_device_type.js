@@ -1,6 +1,5 @@
 var structxii_g_a_l_graphics_device_type =
 [
-    [ "StorageType", "d1/dde/structxii_g_a_l_graphics_device_type.htm#a3cbe69d5a03575a7ff721ab94025d10f", null ],
     [ "Enum", "d1/dde/structxii_g_a_l_graphics_device_type.htm#a4d3301594c1735e73ba0bbfe64122c68", [
       [ "Undefined", "d1/dde/structxii_g_a_l_graphics_device_type.htm#a4d3301594c1735e73ba0bbfe64122c68a6e0120453c94519028fa4ba972926e43", null ],
       [ "Null", "d1/dde/structxii_g_a_l_graphics_device_type.htm#a4d3301594c1735e73ba0bbfe64122c68af35943b4df25bd1746dc53e9daf1c6d8", null ],

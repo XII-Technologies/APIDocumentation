@@ -1,6 +1,5 @@
 var classxii_drag_drop_handler =
 [
-    [ "xiiDragDropHandler", "db/d24/classxii_drag_drop_handler.htm#a9e2abdb574b866aa0ff534872e0c63e4", null ],
     [ "CanHandle", "db/d24/classxii_drag_drop_handler.htm#aac8c3f52c4a9aec0b3ba8ba292502ff9", null ],
     [ "OnDragBegin", "db/d24/classxii_drag_drop_handler.htm#a84cbf0e147bf4a773df034dc708bf2ca", null ],
     [ "OnDragCancel", "db/d24/classxii_drag_drop_handler.htm#a6527998a70aab9f733b05e8393c4a861", null ],

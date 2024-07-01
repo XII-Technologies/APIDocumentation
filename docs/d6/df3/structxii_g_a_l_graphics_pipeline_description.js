@@ -1,6 +1,5 @@
 var structxii_g_a_l_graphics_pipeline_description =
 [
-    [ "XII_DECLARE_POD_TYPE", "d6/df3/structxii_g_a_l_graphics_pipeline_description.htm#a09f02013f15ae6189a8faa882d2480c7", null ],
     [ "m_hAmplificationShader", "d6/df3/structxii_g_a_l_graphics_pipeline_description.htm#a0b5b6f0e455a318a2eccfa5c386bb5c8", null ],
     [ "m_hBlendState", "d6/df3/structxii_g_a_l_graphics_pipeline_description.htm#a08fab265fed44fda3fe61d827eebee45", null ],
     [ "m_hDepthStencilState", "d6/df3/structxii_g_a_l_graphics_pipeline_description.htm#a37e750405e1cebb33601d595524c1487", null ],

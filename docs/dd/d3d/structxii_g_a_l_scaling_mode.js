@@ -1,6 +1,5 @@
 var structxii_g_a_l_scaling_mode =
 [
-    [ "StorageType", "dd/d3d/structxii_g_a_l_scaling_mode.htm#a16f9fa8f315c092e246027e62874b9c2", null ],
     [ "Enum", "dd/d3d/structxii_g_a_l_scaling_mode.htm#aadb5d702b56454bf403be9270561fbf7", [
       [ "Unspecified", "dd/d3d/structxii_g_a_l_scaling_mode.htm#aadb5d702b56454bf403be9270561fbf7aa517c9e52546dca9d635f58b6b3d7cf6", null ],
       [ "Centered", "dd/d3d/structxii_g_a_l_scaling_mode.htm#aadb5d702b56454bf403be9270561fbf7ae99aed739cf621e833bb532f489f3822", null ],
