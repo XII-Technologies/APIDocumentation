@@ -1,3 +1,4 @@
+<!-- HTML header for doxygen 1.11.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
@@ -19,6 +20,22 @@
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../../doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript">
+  DoxygenAwesomeDarkModeToggle.init()
+</script>
+<script type="text/javascript" src="../../doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript">
+  DoxygenAwesomeFragmentCopyButton.init()
+</script>
+<script type="text/javascript" src="../../doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript">
+  DoxygenAwesomeParagraphLink.init()
+</script>
+<script type="text/javascript" src="../../doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript">
+  DoxygenAwesomeInteractiveToc.init()
+</script>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -106,7 +123,7 @@ $(function(){initNavTree('d7/d87/classxii_raycast_component.htm','../../'); init
 </div><!--header-->
 <div class="contents">
 
-<p>A component which does a ray cast and positions a target object there.  
+<p><a class="el" href="../../d8/d4f/class_a.htm">A</a> component which does a ray cast and positions a target object there.  
  <a href="#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="../../de/d51/_raycast_component_8h_source.htm">RaycastComponent.h</a>&gt;</code></p>
@@ -267,7 +284,7 @@ xiiUInt8&#160;</td><td class="memItemRight" valign="bottom"><b>m_uiCollisionLaye
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
 <tr class="memitem:a6980322a7000f13cc07b127fb1916901" id="r_a6980322a7000f13cc07b127fb1916901"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6980322a7000f13cc07b127fb1916901">Deinitialize</a> () override</td></tr>
-<tr class="memdesc:a6980322a7000f13cc07b127fb1916901"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method is called before the component is destroyed. A derived type can override this method to do common de-initialization work.  <br /></td></tr>
+<tr class="memdesc:a6980322a7000f13cc07b127fb1916901"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method is called before the component is destroyed. <a class="el" href="../../d8/d4f/class_a.htm">A</a> derived type can override this method to do common de-initialization work.  <br /></td></tr>
 <tr class="separator:a6980322a7000f13cc07b127fb1916901"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4665aaa94e882243890d6c146a02dcd9" id="r_a4665aaa94e882243890d6c146a02dcd9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4665aaa94e882243890d6c146a02dcd9">OnActivated</a> () override</td></tr>
 <tr class="memdesc:a4665aaa94e882243890d6c146a02dcd9"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method is called when the component gets activated.  <br /></td></tr>
@@ -326,7 +343,7 @@ const <a class="el" href="../../db/d89/classxii_r_t_t_i.htm">xiiRTTI</a> *&#160;
 <tr class="separator:ae8e397ade32eb7a5df4486207077e4ac inherit pro_attribs_classxii_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A component which does a ray cast and positions a target object there. </p>
+<div class="textblock"><p><a class="el" href="../../d8/d4f/class_a.htm">A</a> component which does a ray cast and positions a target object there. </p>
 <p>This component does a ray cast along the forward axis of the game object it is attached to. If this produces a hit the target object is placed there. If no hit is found the target object is either placed at the maximum distance or deactivated depending on the component configuration.</p>
 <p>This component can also trigger messages when objects enter the ray. E.g. when a player trips a laser detection beam. To enable this set the trigger collision layer to another layer than the main ray cast and set a trigger message.</p>
 <p>Sample setup: m_uiCollisionLayerEndPoint = Default m_uiCollisionLayerTrigger = Player m_sTriggerMessage = "APlayerEnteredTheBeam"</p>
@@ -355,7 +372,7 @@ const <a class="el" href="../../db/d89/classxii_r_t_t_i.htm">xiiRTTI</a> *&#160;
 </table>
 </div><div class="memdoc">
 
-<p>This method is called before the component is destroyed. A derived type can override this method to do common de-initialization work. </p>
+<p>This method is called before the component is destroyed. <a class="el" href="../../d8/d4f/class_a.htm">A</a> derived type can override this method to do common de-initialization work. </p>
 <p>This function is always called before destruction, even if the component is currently not active. The default implementation checks whether the component is currently active and will ensure <a class="el" href="#a8ce32a72599cdef0bd5ac9550e797bc1" title="This method is called when the component gets deactivated.">OnDeactivated()</a> gets called if necessary. For typical game code, prefer to use <a class="el" href="#a8ce32a72599cdef0bd5ac9550e797bc1" title="This method is called when the component gets deactivated.">OnDeactivated()</a>.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="#a4665aaa94e882243890d6c146a02dcd9" title="This method is called when the component gets activated.">OnActivated()</a>, <a class="el" href="#a8ce32a72599cdef0bd5ac9550e797bc1" title="This method is called when the component gets deactivated.">OnDeactivated()</a>, <a class="el" href="../../db/d60/classxii_component.htm#aa0875be82147de66ed85f9001dcb05b7" title="Can be overridden for basic initialization that depends on a valid hierarchy and position.">Initialize()</a>, <a class="el" href="#a6980322a7000f13cc07b127fb1916901" title="This method is called before the component is destroyed. A derived type can override this method to d...">Deinitialize()</a>, <a class="el" href="#ab52f5be1fbdd3d816d3f1505dd6f364a" title="This method is called once for active components, at the start of the next world update,...">OnSimulationStarted()</a> </dd></dl>
 
@@ -527,7 +544,7 @@ const <a class="el" href="../../db/d89/classxii_r_t_t_i.htm">xiiRTTI</a> *&#160;
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d7/d87/classxii_raycast_component.htm">xiiRaycastComponent</a></li>
-    <li class="footer">Generated on Mon Jul 1 2024 22:02:17 for XII Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Mon Jul 1 2024 22:47:36 for XII Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

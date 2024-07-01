@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['customization_0',['Customization',['../df/dd5/md__2home_2runner_2work_2_x_i_i_2_x_i_i_2_documentation_2_third_party_2docs_2customization.htm',1,'']]]
+  ['a_20section_20in_20group_205_0',['This is a section in group 5',['../dc/d9a/group__group5.htm',1,'']]],
+  ['another_20section_20in_20group_205_1',['This is another section in group 5',['../dc/d9a/group__group5.htm',1,'']]]
 ];

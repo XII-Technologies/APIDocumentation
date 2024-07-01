@@ -92,5 +92,8 @@ var searchData=
   ['freeunusedresources_89',['FreeUnusedResources',['../d4/d8e/classxii_resource_manager.htm#a208fef8fa6b340d120d03e78beda58ed',1,'xiiResourceManager']]],
   ['fromdxgiformat_90',['FromDxgiFormat',['../d3/d68/classxii_image_format_mappings.htm#a240a9bb0224c021d617659c7e221aa86',1,'xiiImageFormatMappings']]],
   ['fromfourcc_91',['FromFourCc',['../d3/d68/classxii_image_format_mappings.htm#a7fc4d31211d3f65d8f12600a138304a0',1,'xiiImageFormatMappings']]],
-  ['frompixelmask_92',['FromPixelMask',['../d5/dd3/structxii_image_format.htm#ae710aadd41ae18e2cc44b034f5fbb754',1,'xiiImageFormat']]]
+  ['frompixelmask_92',['FromPixelMask',['../d5/dd3/structxii_image_format.htm#ae710aadd41ae18e2cc44b034f5fbb754',1,'xiiImageFormat']]],
+  ['func_93',['func',['../da/d1f/group__group1.htm#ga24f647174760cac13d2624b5ad74b00c',1,'group.cpp']]],
+  ['func2_94',['func2',['../da/d1f/group__group1.htm#ga053929c0809a5f56f7548fd7d9968f31',1,'group.cpp']]],
+  ['func3_95',['func3',['../da/d1f/group__group1.htm#gadbf675591ff057ec48ce35b0d5cdf755',1,'group.cpp']]]
 ];

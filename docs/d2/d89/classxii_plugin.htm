@@ -1,3 +1,4 @@
+<!-- HTML header for doxygen 1.11.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
@@ -19,6 +20,22 @@
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../../doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript">
+  DoxygenAwesomeDarkModeToggle.init()
+</script>
+<script type="text/javascript" src="../../doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript">
+  DoxygenAwesomeFragmentCopyButton.init()
+</script>
+<script type="text/javascript" src="../../doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript">
+  DoxygenAwesomeParagraphLink.init()
+</script>
+<script type="text/javascript" src="../../doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript">
+  DoxygenAwesomeInteractiveToc.init()
+</script>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -164,7 +181,7 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>PlatformNeedsP
 <p>To load a plugin, call <a class="el" href="#aa0eff5d5a60bda0b8e4a9e6476328d99" title="Tries to load a DLL dynamically into the program.">xiiPlugin::LoadPlugin()</a> with the filename of the plugin (without a path). The plugin DLL has to be located next to the application binary.</p>
 <p>It is not possible to unload individual plugins, but you can unload all plugins. Make sure to only do this when no code and data from any of the plugins is still referenced somewhere.</p>
 <p>When a plugin has a dependency on another plugin, it should contain a call to XII_PLUGIN_DEPENDENCY() in one of its cpp files. This instructs the system to load that plugin as well, and makes sure to delay initialization until all (transitive) dependencies are loaded.</p>
-<p>A plugin may contain one or multiple XII_PLUGIN_ON_LOADED() and XII_PLUGIN_ON_UNLOADED() functions. These are called automatically once a plugin and all its dependencies are loaded. This can be used to make sure basic things get set up. For anything more complicated, use <a class="el" href="../../dd/d8e/classxii_startup.htm" title="The startup system makes sure to initialize and shut down all known subsystems in the proper order.">xiiStartup</a> instead. Once a plugin is loaded, the startup system will initialize new startup code properly. </p>
+<p><a class="el" href="../../d8/d4f/class_a.htm">A</a> plugin may contain one or multiple XII_PLUGIN_ON_LOADED() and XII_PLUGIN_ON_UNLOADED() functions. These are called automatically once a plugin and all its dependencies are loaded. This can be used to make sure basic things get set up. For anything more complicated, use <a class="el" href="../../dd/d8e/classxii_startup.htm" title="The startup system makes sure to initialize and shut down all known subsystems in the proper order.">xiiStartup</a> instead. Once a plugin is loaded, the startup system will initialize new startup code properly. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="ab6a3737635ce865bd504a9503b78c218" name="ab6a3737635ce865bd504a9503b78c218"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab6a3737635ce865bd504a9503b78c218">&#9670;&#160;</a></span>InitializeStaticallyLinkedPlugins()</h2>
@@ -295,7 +312,7 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>PlatformNeedsP
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d2/d89/classxii_plugin.htm">xiiPlugin</a></li>
-    <li class="footer">Generated on Mon Jul 1 2024 22:02:16 for XII Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Mon Jul 1 2024 22:47:36 for XII Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

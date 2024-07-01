@@ -1,3 +1,4 @@
+<!-- HTML header for doxygen 1.11.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
@@ -19,6 +20,22 @@
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../../doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript">
+  DoxygenAwesomeDarkModeToggle.init()
+</script>
+<script type="text/javascript" src="../../doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript">
+  DoxygenAwesomeFragmentCopyButton.init()
+</script>
+<script type="text/javascript" src="../../doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript">
+  DoxygenAwesomeParagraphLink.init()
+</script>
+<script type="text/javascript" src="../../doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript">
+  DoxygenAwesomeInteractiveToc.init()
+</script>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -107,7 +124,7 @@ $(function(){initNavTree('de/d83/classxii_global_event.htm','../../'); initResiz
 </div><!--header-->
 <div class="contents">
 
-<p>A class to broadcast and handle global (system-wide) events.  
+<p><a class="el" href="../../d8/d4f/class_a.htm">A</a> class to broadcast and handle global (system-wide) events.  
  <a href="#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="../../db/d12/_global_event_8h_source.htm">GlobalEvent.h</a>&gt;</code></p>
@@ -168,8 +185,8 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:afe563009387fc95276982bb4b87094e0 inherit pro_attribs_classxii_enumerable"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A class to broadcast and handle global (system-wide) events. </p>
-<p>A global event is an event that will be sent to all instances of <a class="el" href="../../de/d83/classxii_global_event.htm" title="A class to broadcast and handle global (system-wide) events.">xiiGlobalEvent</a> (or rather their respective handler functions), without the need to first register these event-handlers anywhere. Thus they are very useful to notify sub-systems of certain important events, such as that some kind of initialization will be done shortly, which means they can react by preparing properly. For example the xiiStartup-class will send certain events before doing startup and shutdown steps, which allows code to free resources before a sub-system might be shut down. <a class="el" href="../../de/d83/classxii_global_event.htm" title="A class to broadcast and handle global (system-wide) events.">xiiGlobalEvent</a>'s should be used when there is a kind of event that should be propagated throughout the entire engine, without knowledge which systems might want to know about it. These systems can then use an xiiGlobalEvent-instance to hook themselves into the global-event pipeline and react accordingly. Global events should mostly be used for startup / configuration / shutdown procedures. Also one should never assume any specific order of execution, all event handlers should be completely independent from each other.</p>
+<div class="textblock"><p><a class="el" href="../../d8/d4f/class_a.htm">A</a> class to broadcast and handle global (system-wide) events. </p>
+<p><a class="el" href="../../d8/d4f/class_a.htm">A</a> global event is an event that will be sent to all instances of <a class="el" href="../../de/d83/classxii_global_event.htm" title="A class to broadcast and handle global (system-wide) events.">xiiGlobalEvent</a> (or rather their respective handler functions), without the need to first register these event-handlers anywhere. Thus they are very useful to notify sub-systems of certain important events, such as that some kind of initialization will be done shortly, which means they can react by preparing properly. For example the xiiStartup-class will send certain events before doing startup and shutdown steps, which allows code to free resources before a sub-system might be shut down. <a class="el" href="../../de/d83/classxii_global_event.htm" title="A class to broadcast and handle global (system-wide) events.">xiiGlobalEvent</a>'s should be used when there is a kind of event that should be propagated throughout the entire engine, without knowledge which systems might want to know about it. These systems can then use an xiiGlobalEvent-instance to hook themselves into the global-event pipeline and react accordingly. Global events should mostly be used for startup / configuration / shutdown procedures. Also one should never assume any specific order of execution, all event handlers should be completely independent from each other.</p>
 <p>To create a global event handler, simply add this code inside a cpp file:</p>
 <p>XII_ON_GLOBAL_EVENT(EventName) { ... do something ... }</p>
 <p>You can also use XII_ON_GLOBAL_EVENT_ONCE, if the handler should only be executed the first time the event is sent. This is more efficient than filtering out duplicate events inside the event handler. </p>
@@ -259,7 +276,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../de/d83/classxii_global_event.htm">xiiGlobalEvent</a></li>
-    <li class="footer">Generated on Mon Jul 1 2024 22:02:16 for XII Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Mon Jul 1 2024 22:47:35 for XII Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

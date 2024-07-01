@@ -1,3 +1,4 @@
+<!-- HTML header for doxygen 1.11.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
@@ -19,6 +20,22 @@
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../../doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript">
+  DoxygenAwesomeDarkModeToggle.init()
+</script>
+<script type="text/javascript" src="../../doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript">
+  DoxygenAwesomeFragmentCopyButton.init()
+</script>
+<script type="text/javascript" src="../../doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript">
+  DoxygenAwesomeParagraphLink.init()
+</script>
+<script type="text/javascript" src="../../doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript">
+  DoxygenAwesomeInteractiveToc.init()
+</script>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -105,7 +122,7 @@ $(function(){initNavTree('de/d7d/classxii_data_transfer.htm','../../'); initResi
 </div><!--header-->
 <div class="contents">
 
-<p>A 'data transfer' is a blob of data that an application can send to connected tools such as xiiInspector upon request.  
+<p><a class="el" href="../../d8/d4f/class_a.htm">A</a> 'data transfer' is a blob of data that an application can send to connected tools such as xiiInspector upon request.  
  <a href="#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="../../d8/d67/_data_transfer_8h_source.htm">DataTransfer.h</a>&gt;</code></p>
@@ -143,7 +160,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>xiiDataTransferObjec
 <tr class="separator:ac03a5a65001f792e10293ad21ef897a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A 'data transfer' is a blob of data that an application can send to connected tools such as xiiInspector upon request. </p>
+<div class="textblock"><p><a class="el" href="../../d8/d4f/class_a.htm">A</a> 'data transfer' is a blob of data that an application can send to connected tools such as xiiInspector upon request. </p>
 <p>Data transfers can be used to allow an application to send large amounts of data to tools such as xiiInspector, which can then display or process them somehow. An example usage is to send a screenshot or the different textures of the G-Buffer for analysis. Or an application could send the current game state as one large text or binary document. The data transfer can contain any kind of data, however depending on its type, the connected tools may be able to display the data directly, or not. The <a class="el" href="../../de/d7d/classxii_data_transfer.htm" title="A &#39;data transfer&#39; is a blob of data that an application can send to connected tools such as xiiInspec...">xiiDataTransfer</a> object represents one logical group of data that will be sent all together. Each piece of data is represented by a <a class="el" href="../../d2/dbb/classxii_data_transfer_object.htm" title="A small wrapper class around a xiiTelemetryMessage for sending a &#39;data transfer&#39;. See xiiDataTransfer...">xiiDataTransferObject</a>. E.g. each texture of a G-Buffer (diffuse, normals, depth) should be sent via one instance of <a class="el" href="../../d2/dbb/classxii_data_transfer_object.htm" title="A small wrapper class around a xiiTelemetryMessage for sending a &#39;data transfer&#39;. See xiiDataTransfer...">xiiDataTransferObject</a>. Those instances of <a class="el" href="../../d2/dbb/classxii_data_transfer_object.htm" title="A small wrapper class around a xiiTelemetryMessage for sending a &#39;data transfer&#39;. See xiiDataTransfer...">xiiDataTransferObject</a> are just created on demand and destroyed directly after, they do not need to be kept around.</p>
 <p>The <a class="el" href="../../de/d7d/classxii_data_transfer.htm" title="A &#39;data transfer&#39; is a blob of data that an application can send to connected tools such as xiiInspec...">xiiDataTransfer</a> instance, however, needs to be created once and then kept around as long as the data transfer should be possible. It is additionally necessary to enable the data transfer by calling <a class="el" href="#ae3cd1891944bdc6639b02737e155c2d0" title="Enables the data transfer. It will show up with the given name in xiiInspector.">EnableDataTransfer()</a> once, which also specifies under which name the transfer appears in the connected tools.</p>
 <p>At runtime the application needs to check every <a class="el" href="../../de/d7d/classxii_data_transfer.htm" title="A &#39;data transfer&#39; is a blob of data that an application can send to connected tools such as xiiInspec...">xiiDataTransfer</a> object regularly whether <a class="el" href="#a3188c563357a5bbb8ff4e79aad4600e6" title="Returns whether the data transfer has been requested. Always returns false while the data transfer is...">IsTransferRequested()</a> returns true. If so, the application should prepare all data by putting it into instances of <a class="el" href="../../d2/dbb/classxii_data_transfer_object.htm" title="A small wrapper class around a xiiTelemetryMessage for sending a &#39;data transfer&#39;. See xiiDataTransfer...">xiiDataTransferObject</a> and then transferring them through the <a class="el" href="../../de/d7d/classxii_data_transfer.htm" title="A &#39;data transfer&#39; is a blob of data that an application can send to connected tools such as xiiInspec...">xiiDataTransfer</a> object via xiiDataTransfer::Transfer().</p>
@@ -179,7 +196,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>xiiDataTransferObjec
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../de/d7d/classxii_data_transfer.htm">xiiDataTransfer</a></li>
-    <li class="footer">Generated on Mon Jul 1 2024 22:02:15 for XII Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Mon Jul 1 2024 22:47:34 for XII Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

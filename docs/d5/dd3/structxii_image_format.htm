@@ -1,3 +1,4 @@
+<!-- HTML header for doxygen 1.11.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
@@ -19,6 +20,22 @@
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../../doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript">
+  DoxygenAwesomeDarkModeToggle.init()
+</script>
+<script type="text/javascript" src="../../doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript">
+  DoxygenAwesomeFragmentCopyButton.init()
+</script>
+<script type="text/javascript" src="../../doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript">
+  DoxygenAwesomeParagraphLink.init()
+</script>
+<script type="text/javascript" src="../../doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript">
+  DoxygenAwesomeInteractiveToc.init()
+</script>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -372,7 +389,7 @@ static xiiUInt64&#160;</td><td class="memItemRight" valign="bottom"><b>GetRowPit
 <tr class="separator:afb92d64c3d072cb8c734ba9499ffa860"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a887683cf1df367499ea90d9616e95207" id="r_a887683cf1df367499ea90d9616e95207"><td class="memItemLeft" align="right" valign="top"><a id="a887683cf1df367499ea90d9616e95207" name="a887683cf1df367499ea90d9616e95207"></a>
 static xiiUInt64&#160;</td><td class="memItemRight" valign="bottom"><b>GetDepthPitch</b> (<a class="el" href="#a005ef22274255637febbc13f075b9e38">Enum</a> format, xiiUInt32 uiWidth, xiiUInt32 uiHeight, xiiUInt32 uiPlaneIndex=0)</td></tr>
-<tr class="memdesc:a887683cf1df367499ea90d9616e95207"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the size in bytes of a 2D slice of blocks (compressed) or pixels (if uncompressed) of the given width and height. <br /></td></tr>
+<tr class="memdesc:a887683cf1df367499ea90d9616e95207"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the size in bytes of a 2<a class="el" href="../../d0/dd0/class_d.htm">D</a> slice of blocks (compressed) or pixels (if uncompressed) of the given width and height. <br /></td></tr>
 <tr class="separator:a887683cf1df367499ea90d9616e95207"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2f6438c8dfdc764342e47b063a89785b" id="r_a2f6438c8dfdc764342e47b063a89785b"><td class="memItemLeft" align="right" valign="top"><a id="a2f6438c8dfdc764342e47b063a89785b" name="a2f6438c8dfdc764342e47b063a89785b"></a>
 static <a class="el" href="../../df/df2/structxii_image_format_type.htm#a173196b4cbe84dfac133c6ceeecfcea1">xiiImageFormatType::Enum</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetType</b> (<a class="el" href="#a005ef22274255637febbc13f075b9e38">Enum</a> format)</td></tr>
@@ -411,7 +428,7 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>RequiresFirstL
 </div><div class="memdoc">
 
 <p>Enum describing the encoding format of the pixels of an image. </p>
-<p>Image formats can be separated into three types: linear, block compressed, and planar. In linear formats, the various channels of each pixel (such as R, G, B) are stored interleaved in memory [RGBRGBRGB...]. This is in contrast to planar formats, where each channel is stored in a separate slice of memory [RRR...GGG...BBB...]. Planar formats are typically used for video formats with luma and chroma channels, and may also be partially planarized. For example, NV12 has a luma (Y) plane and a chroma (UV) plane, where the chroma plane again stores the two sub-channels linearly interleaved. For these formats, <a class="el" href="#ab5454d00d1c4c47c2b3915de923b89cf" title="Returns the format of a subplane of a given format.">GetPlaneSubFormat()</a> returns a description of the encoding within each plane. Block compressed formats use a different approach, where pixels are arranged in blocks of a fixed format-dependent size (from 4x4 for BC1-7 and up to 12x12 for some ASTC formats), with colors encoded with a fixed ratio compression. </p>
+<p>Image formats can be separated into three types: linear, block compressed, and planar. In linear formats, the various channels of each pixel (such as R, G, <a class="el" href="../../df/d95/class_b.htm">B</a>) are stored interleaved in memory [RGBRGBRGB...]. This is in contrast to planar formats, where each channel is stored in a separate slice of memory [RRR...GGG...BBB...]. Planar formats are typically used for video formats with luma and chroma channels, and may also be partially planarized. For example, NV12 has a luma (Y) plane and a chroma (UV) plane, where the chroma plane again stores the two sub-channels linearly interleaved. For these formats, <a class="el" href="#ab5454d00d1c4c47c2b3915de923b89cf" title="Returns the format of a subplane of a given format.">GetPlaneSubFormat()</a> returns a description of the encoding within each plane. Block compressed formats use a different approach, where pixels are arranged in blocks of a fixed format-dependent size (from 4x4 for BC1-7 and up to 12x12 for some ASTC formats), with colors encoded with a fixed ratio compression. </p>
 
 </div>
 </div>
@@ -454,7 +471,7 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>RequiresFirstL
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d5/dd3/structxii_image_format.htm">xiiImageFormat</a></li>
-    <li class="footer">Generated on Mon Jul 1 2024 22:02:16 for XII Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Mon Jul 1 2024 22:47:35 for XII Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

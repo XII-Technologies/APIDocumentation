@@ -1,3 +1,4 @@
+<!-- HTML header for doxygen 1.11.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
@@ -19,6 +20,22 @@
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../../doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript">
+  DoxygenAwesomeDarkModeToggle.init()
+</script>
+<script type="text/javascript" src="../../doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript">
+  DoxygenAwesomeFragmentCopyButton.init()
+</script>
+<script type="text/javascript" src="../../doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript">
+  DoxygenAwesomeParagraphLink.init()
+</script>
+<script type="text/javascript" src="../../doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript">
+  DoxygenAwesomeInteractiveToc.init()
+</script>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -184,7 +201,7 @@ $(function(){initNavTree('de/dd7/_r_t_t_i_8h_source.htm','../../'); initResizabl
 <div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span> </div>
 <div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>  <span class="keyword">using </span>PredicateFunc = <a class="code hl_struct" href="../../dc/d84/structxii_delegate.htm">xiiDelegate</a>&lt;bool(<span class="keyword">const</span> <a class="code hl_class" href="../../db/d89/classxii_r_t_t_i.htm">xiiRTTI</a>*), 48&gt;;</div>
 <div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span> </div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>  <span class="keyword">static</span> <span class="keyword">const</span> <a class="code hl_class" href="../../db/d89/classxii_r_t_t_i.htm">xiiRTTI</a>* FindTypeIf(PredicateFunc func);</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>  <span class="keyword">static</span> <span class="keyword">const</span> <a class="code hl_class" href="../../db/d89/classxii_r_t_t_i.htm">xiiRTTI</a>* FindTypeIf(PredicateFunc <a class="code hl_function" href="../../da/d1f/group__group1.htm#ga24f647174760cac13d2624b5ad74b00c">func</a>);</div>
 <div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span> </div>
 <div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>  <span class="keyword">const</span> <a class="code hl_class" href="../../da/d25/classxii_abstract_property.htm">xiiAbstractProperty</a>* FindPropertyByName(<a class="code hl_struct" href="../../da/d9d/structxii_string_view.htm">xiiStringView</a> sName, <span class="keywordtype">bool</span> bSearchBaseTypes = <span class="keyword">true</span>) <span class="keyword">const</span>; <span class="comment">// [tested]</span></div>
 <div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span> </div>
@@ -243,14 +260,14 @@ $(function(){initNavTree('de/dd7/_r_t_t_i_8h_source.htm','../../'); initResizabl
 <div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span> </div>
 <div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>  <span class="keyword">using </span><a class="code hl_struct" href="../../dc/d84/structxii_delegate.htm">VisitorFunc</a> = <a class="code hl_struct" href="../../dc/d84/structxii_delegate.htm">xiiDelegate</a>&lt;void(<span class="keyword">const</span> <a class="code hl_class" href="../../db/d89/classxii_r_t_t_i.htm">xiiRTTI</a>*), 48&gt;;</div>
 <div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span> </div>
-<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>  <span class="keyword">static</span> <span class="keywordtype">void</span> ForEachType(<a class="code hl_struct" href="../../dc/d84/structxii_delegate.htm">VisitorFunc</a> func, <a class="code hl_struct" href="../../d7/d55/structxii_bitflags.htm">xiiBitflags&lt;ForEachOptions&gt;</a> options = ForEachOptions::Default); <span class="comment">// [tested]</span></div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>  <span class="keyword">static</span> <span class="keywordtype">void</span> ForEachType(<a class="code hl_struct" href="../../dc/d84/structxii_delegate.htm">VisitorFunc</a> <a class="code hl_function" href="../../da/d1f/group__group1.htm#ga24f647174760cac13d2624b5ad74b00c">func</a>, <a class="code hl_struct" href="../../d7/d55/structxii_bitflags.htm">xiiBitflags&lt;ForEachOptions&gt;</a> options = ForEachOptions::Default); <span class="comment">// [tested]</span></div>
 <div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span> </div>
-<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>  <span class="keyword">static</span> <span class="keywordtype">void</span> ForEachDerivedType(<span class="keyword">const</span> <a class="code hl_class" href="../../db/d89/classxii_r_t_t_i.htm">xiiRTTI</a>* pBaseType, <a class="code hl_struct" href="../../dc/d84/structxii_delegate.htm">VisitorFunc</a> func, <a class="code hl_struct" href="../../d7/d55/structxii_bitflags.htm">xiiBitflags&lt;ForEachOptions&gt;</a> options = ForEachOptions::Default);</div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>  <span class="keyword">static</span> <span class="keywordtype">void</span> ForEachDerivedType(<span class="keyword">const</span> <a class="code hl_class" href="../../db/d89/classxii_r_t_t_i.htm">xiiRTTI</a>* pBaseType, <a class="code hl_struct" href="../../dc/d84/structxii_delegate.htm">VisitorFunc</a> <a class="code hl_function" href="../../da/d1f/group__group1.htm#ga24f647174760cac13d2624b5ad74b00c">func</a>, <a class="code hl_struct" href="../../d7/d55/structxii_bitflags.htm">xiiBitflags&lt;ForEachOptions&gt;</a> options = ForEachOptions::Default);</div>
 <div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span> </div>
 <div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>  <span class="keyword">static</span> XII_ALWAYS_INLINE <span class="keywordtype">void</span> ForEachDerivedType(<a class="code hl_struct" href="../../dc/d84/structxii_delegate.htm">VisitorFunc</a> func, <a class="code hl_struct" href="../../d7/d55/structxii_bitflags.htm">xiiBitflags&lt;ForEachOptions&gt;</a> options = ForEachOptions::Default)</div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>  <span class="keyword">static</span> XII_ALWAYS_INLINE <span class="keywordtype">void</span> ForEachDerivedType(<a class="code hl_struct" href="../../dc/d84/structxii_delegate.htm">VisitorFunc</a> <a class="code hl_function" href="../../da/d1f/group__group1.htm#ga24f647174760cac13d2624b5ad74b00c">func</a>, <a class="code hl_struct" href="../../d7/d55/structxii_bitflags.htm">xiiBitflags&lt;ForEachOptions&gt;</a> options = ForEachOptions::Default)</div>
 <div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>  {</div>
-<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>    ForEachDerivedType(xiiGetStaticRTTI&lt;T&gt;(), func, options);</div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>    ForEachDerivedType(xiiGetStaticRTTI&lt;T&gt;(), <a class="code hl_function" href="../../da/d1f/group__group1.htm#ga24f647174760cac13d2624b5ad74b00c">func</a>, options);</div>
 <div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>  }</div>
 <div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span> </div>
 <div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span><span class="keyword">protected</span>:</div>
@@ -439,6 +456,7 @@ $(function(){initNavTree('de/dd7/_r_t_t_i_8h_source.htm','../../'); initResizabl
 <div class="ttc" id="aclassxii_r_t_t_i_htm_ae57a864cdfc0618251e547769f3ec824"><div class="ttname"><a href="../../db/d89/classxii_r_t_t_i.htm#ae57a864cdfc0618251e547769f3ec824">xiiRTTI::GetTypeFlags</a></div><div class="ttdeci">XII_ALWAYS_INLINE const xiiBitflags&lt; xiiTypeFlags &gt; &amp; GetTypeFlags() const</div><div class="ttdoc">Returns the type flags.</div><div class="ttdef"><b>Definition</b> RTTI.h:95</div></div>
 <div class="ttc" id="aclassxii_small_array_base_htm_a04e886c6f3b509236c70581718f988ad"><div class="ttname"><a href="../../d0/d92/classxii_small_array_base.htm#a04e886c6f3b509236c70581718f988ad">xiiSmallArrayBase::GetCount</a></div><div class="ttdeci">xiiUInt32 GetCount() const</div><div class="ttdoc">Returns the number of active elements in the array.</div><div class="ttdef"><b>Definition</b> SmallArray_inl.h:201</div></div>
 <div class="ttc" id="aclassxii_small_array_htm"><div class="ttname"><a href="../../d6/d1f/classxii_small_array.htm">xiiSmallArray</a></div><div class="ttdef"><b>Definition</b> SmallArray.h:212</div></div>
+<div class="ttc" id="agroup__group1_htm_ga24f647174760cac13d2624b5ad74b00c"><div class="ttname"><a href="../../da/d1f/group__group1.htm#ga24f647174760cac13d2624b5ad74b00c">func</a></div><div class="ttdeci">void func()</div><div class="ttdef"><b>Definition</b> group.cpp:13</div></div>
 <div class="ttc" id="astructxii_bitflags_htm"><div class="ttname"><a href="../../d7/d55/structxii_bitflags.htm">xiiBitflags</a></div><div class="ttdoc">The xiiBitflags class allows you to work with type-safe bitflags.</div><div class="ttdef"><b>Definition</b> Bitflags.h:82</div></div>
 <div class="ttc" id="astructxii_delegate_htm"><div class="ttname"><a href="../../dc/d84/structxii_delegate.htm">xiiDelegate</a></div><div class="ttdoc">A generic delegate class which supports static functions and member functions.</div><div class="ttdef"><b>Definition</b> Delegate.h:76</div></div>
 <div class="ttc" id="astructxii_internal_1_1_new_instance_htm"><div class="ttname"><a href="../../de/d3c/structxii_internal_1_1_new_instance.htm">xiiInternal::NewInstance</a></div><div class="ttdef"><b>Definition</b> AllocatorBase_inl.h:18</div></div>
@@ -468,7 +486,7 @@ $(function(){initNavTree('de/dd7/_r_t_t_i_8h_source.htm','../../'); initResizabl
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.htm">home</a></li><li class="navelem"><a class="el" href="../../dir_1036706e55c22cab35bc1c58ee689f1d.htm">runner</a></li><li class="navelem"><a class="el" href="../../dir_629f8151d55d307162ff2d619fb1783d.htm">work</a></li><li class="navelem"><a class="el" href="../../dir_1ddc44fe1263a8c7935fa6130b7d9499.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_2c1b6808f12952f4c36e05ba7068379a.htm">XII</a></li><li class="navelem"><a class="el" href="../../dir_b5a1c4ecfca018ad24b729e213296d41.htm">Source</a></li><li class="navelem"><a class="el" href="../../dir_e321052006a51284e67389ab20037e7c.htm">Engine</a></li><li class="navelem"><a class="el" href="../../dir_be0c42c58b36f42c54ec54024ed4f6af.htm">Foundation</a></li><li class="navelem"><a class="el" href="../../dir_f1e13142959a2e7970d979e1f6f7bcb1.htm">Reflection</a></li><li class="navelem"><a class="el" href="../../dir_44ac7f88d9b5593e444e5c7bf3d69918.htm">Implementation</a></li><li class="navelem"><b>RTTI.h</b></li>
-    <li class="footer">Generated on Mon Jul 1 2024 22:02:12 for XII Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Mon Jul 1 2024 22:47:31 for XII Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

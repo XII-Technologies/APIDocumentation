@@ -1,3 +1,4 @@
+<!-- HTML header for doxygen 1.11.0-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
@@ -19,6 +20,22 @@
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../../doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript">
+  DoxygenAwesomeDarkModeToggle.init()
+</script>
+<script type="text/javascript" src="../../doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript">
+  DoxygenAwesomeFragmentCopyButton.init()
+</script>
+<script type="text/javascript" src="../../doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript">
+  DoxygenAwesomeParagraphLink.init()
+</script>
+<script type="text/javascript" src="../../doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript">
+  DoxygenAwesomeInteractiveToc.init()
+</script>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -104,7 +121,7 @@ $(function(){initNavTree('d5/d96/classxii_dynamic_octree.htm','../../'); initRes
 </div><!--header-->
 <div class="contents">
 
-<p>A loose Octree implementation that is very lightweight on RAM.  
+<p><a class="el" href="../../d8/d4f/class_a.htm">A</a> loose Octree implementation that is very lightweight on RAM.  
  <a href="#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="../../da/d51/_dynamic_octree_8h_source.htm">DynamicOctree.h</a>&gt;</code></p>
@@ -157,10 +174,10 @@ const <a class="el" href="../../d2/dd6/classxii_bounding_box_template.htm">xiiBo
 <tr class="separator:a4c24651a3e0c05d7b8280334585b3e44"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A loose Octree implementation that is very lightweight on RAM. </p>
+<div class="textblock"><p><a class="el" href="../../d8/d4f/class_a.htm">A</a> loose Octree implementation that is very lightweight on RAM. </p>
 <p>This Octree does not store any bookkeeping information per node.<br  />
 Memory usage is linear in the number of objects inserted.<br  />
-An empty tree only needs few bytes. This is accomplished by making the tree static in it's dimensions and maximum subdivisions, such that each node can be assigned a unique index. A map is then used to store objects through the node-index in which they are located.<br  />
+An empty tree only needs few bytes. This is accomplished by making the tree static in it's dimensions and maximum subdivisions, such that each node can be assigned a unique index. <a class="el" href="../../d8/d4f/class_a.htm">A</a> map is then used to store objects through the node-index in which they are located.<br  />
 At traversals each node's bounding-box needs to be computed on-the-fly thus adding some CPU overhead (though, fewer memory use usually also means fewer cache-misses). <br  />
 Inserting an object is O(log d), with d being the tree-depth.<br  />
 Removing an object is either O(1) or O(n), with n being the number of objects inserted, depending on whether an iterator to the object is available.<br  />
@@ -201,7 +218,7 @@ Once objects are inserted, you can do range queries to find all objects in some 
     <tr><td class="paramname">vCenter</td><td>The center position of the tree. </td></tr>
     <tr><td class="paramname">vHalfExtents</td><td>The dimensions along each axis. The tree is always axis aligned. The tree will enclose all space from (vCenter - vHalfExtents) to (vCenter + vHalfExtents). Note that the tree will always use the maximum extent for all three extents, making the tree square, which affects the total number of nodes.<br  />
  However, the original (non-square) bounding box is used to determine whether some objects is inside the tree, at all, which might affect whether they are rejected during tree insertion. </td></tr>
-    <tr><td class="paramname">fMinNodeSize</td><td>The length of the cell's edges at the finest level. For a typical game world, where your level might have extents of 100 to 1000 meters, the min node size should not be smaller than 1 meter. The smaller the node size, the more cells the tree has. The limit of nodes in the tree is 2^32. A tree with 100 meters extents in X, Y and Z direction and a min node size of 1 meter, will have 1000000 nodes on the finest level (and roughly 1500000 nodes in total). </td></tr>
+    <tr><td class="paramname">fMinNodeSize</td><td>The length of the cell's edges at the finest level. For a typical game world, where your level might have extents of 100 to 1000 meters, the min node size should not be smaller than 1 meter. The smaller the node size, the more cells the tree has. The limit of nodes in the tree is 2^32. <a class="el" href="../../d8/d4f/class_a.htm">A</a> tree with 100 meters extents in X, Y and Z direction and a min node size of 1 meter, will have 1000000 nodes on the finest level (and roughly 1500000 nodes in total). </td></tr>
   </table>
   </dd>
 </dl>
@@ -327,7 +344,7 @@ Once objects are inserted, you can do range queries to find all objects in some 
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d5/d96/classxii_dynamic_octree.htm">xiiDynamicOctree</a></li>
-    <li class="footer">Generated on Mon Jul 1 2024 22:02:15 for XII Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Mon Jul 1 2024 22:47:34 for XII Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>
