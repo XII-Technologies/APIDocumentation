@@ -172,10 +172,10 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>CanUndo</b> () const<
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>CanRedo</b> () const</td></tr>
 <tr class="separator:a432f31d37960764739246db17e0c4d68"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a401ceb437cc8639d3edcba1077f21b53" id="r_a401ceb437cc8639d3edcba1077f21b53"><td class="memItemLeft" align="right" valign="top"><a id="a401ceb437cc8639d3edcba1077f21b53" name="a401ceb437cc8639d3edcba1077f21b53"></a>
-<a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetUndoDisplayString</b> () const</td></tr>
+<a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetUndoDisplayString</b> () const</td></tr>
 <tr class="separator:a401ceb437cc8639d3edcba1077f21b53"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a41b8ab64d74eb707543939fe4811d920" id="r_a41b8ab64d74eb707543939fe4811d920"><td class="memItemLeft" align="right" valign="top"><a id="a41b8ab64d74eb707543939fe4811d920" name="a41b8ab64d74eb707543939fe4811d920"></a>
-<a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetRedoDisplayString</b> () const</td></tr>
+<a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetRedoDisplayString</b> () const</td></tr>
 <tr class="separator:a41b8ab64d74eb707543939fe4811d920"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa4bc5e292b56684e3b08b38491a9670c" id="r_aa4bc5e292b56684e3b08b38491a9670c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa4bc5e292b56684e3b08b38491a9670c">StartTransaction</a> (const <a class="el" href="../../da/d2e/classxii_format_string.html">xiiFormatString</a> &amp;displayString)</td></tr>
 <tr class="separator:aa4bc5e292b56684e3b08b38491a9670c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -193,7 +193,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsInTransaction</b> (
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsInUndoRedo</b> () const</td></tr>
 <tr class="separator:a00c2ab7912ecc31dc17ada626f9c5ef8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a33cdce4d6fd2afc77643bbe2a6284748" id="r_a33cdce4d6fd2afc77643bbe2a6284748"><td class="memItemLeft" align="right" valign="top"><a id="a33cdce4d6fd2afc77643bbe2a6284748" name="a33cdce4d6fd2afc77643bbe2a6284748"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>BeginTemporaryCommands</b> (<a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sDisplayString, bool bFireEventsWhenUndoingTempCommands=false)</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>BeginTemporaryCommands</b> (<a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sDisplayString, bool bFireEventsWhenUndoingTempCommands=false)</td></tr>
 <tr class="memdesc:a33cdce4d6fd2afc77643bbe2a6284748"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call this to start a series of transactions that typically change the same value over and over (e.g. dragging an object to a position). Every time a new transaction is started, the previous one is undone first. At the end of a series of temporary transactions, only the last transaction will be stored as a single undo step. Call this first and then start a transaction inside it. <br /></td></tr>
 <tr class="separator:a33cdce4d6fd2afc77643bbe2a6284748"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aabb476a736fa7d0f8ad4c7cf0425793e" id="r_aabb476a736fa7d0f8ad4c7cf0425793e"><td class="memItemLeft" align="right" valign="top"><a id="aabb476a736fa7d0f8ad4c7cf0425793e" name="aabb476a736fa7d0f8ad4c7cf0425793e"></a>
@@ -270,7 +270,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>xiiCommand</b></td><
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000149">Todo</a></b></dt><dd>This would not be necessary, if hierarchical transactions would not crash </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000145">Todo</a></b></dt><dd>This would not be necessary, if hierarchical transactions would not crash </dd></dl>
 
 </div>
 </div>
@@ -288,7 +288,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>xiiCommand</b></td><
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000148">Todo</a></b></dt><dd>Allow to have a limited transaction history and clean up transactions after a while </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000144">Todo</a></b></dt><dd>Allow to have a limited transaction history and clean up transactions after a while </dd></dl>
 
 </div>
 </div>
@@ -302,7 +302,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>xiiCommand</b></td><
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d0/df0/classxii_command_history.html">xiiCommandHistory</a></li>
-    <li class="footer">Generated on Tue Jul 2 2024 19:08:44 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Sat Aug 31 2024 15:14:59 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

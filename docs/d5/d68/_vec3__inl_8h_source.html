@@ -250,106 +250,107 @@ $(function(){initNavTree('d5/d68/_vec3__inl_8h_source.html','../../'); initResiz
 <div class="foldopen" id="foldopen00091" data-start="{" data-end="}">
 <div class="line"><a id="l00091" name="l00091"></a><span class="lineno"><a class="line" href="../../d9/d9a/classxii_vec3_template.html#afa9d20345cdc98553c67fe6833db2acf">   91</a></span>XII_IMPLEMENT_IF_FLOAT_TYPE XII_ALWAYS_INLINE <span class="keywordtype">void</span> <a class="code hl_function" href="../../d9/d9a/classxii_vec3_template.html#afa9d20345cdc98553c67fe6833db2acf">xiiVec3Template&lt;Type&gt;::Normalize</a>()</div>
 <div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>{</div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>  *<span class="keyword">this</span> /= GetLength();</div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno"><a class="line" href="../../d9/d9a/classxii_vec3_template.html#afdbfe005da534ab16e275c8d18bd9f81">   94</a></span>}</div>
-</div>
+<div class="foldopen" id="foldopen00093" data-start="{" data-end="}">
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno"><a class="line" href="../../d9/d9a/classxii_vec3_template.html#afdbfe005da534ab16e275c8d18bd9f81">   93</a></span>  *<span class="keyword">this</span> /= <a class="code hl_function" href="../../d9/d9a/classxii_vec3_template.html#afdbfe005da534ab16e275c8d18bd9f81">GetLength</a>();</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>}</div>
 <div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span> </div>
 <div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Type&gt;</div>
 <div class="foldopen" id="foldopen00097" data-start="{" data-end="}">
 <div class="line"><a id="l00097" name="l00097"></a><span class="lineno"><a class="line" href="../../d9/d9a/classxii_vec3_template.html#a632fb5bad0c4c380f5fac5b4f48cc9d7">   97</a></span>XII_IMPLEMENT_IF_FLOAT_TYPE <a class="code hl_struct" href="../../dd/dad/structxii_result.html">xiiResult</a> <a class="code hl_function" href="../../d9/d9a/classxii_vec3_template.html#a632fb5bad0c4c380f5fac5b4f48cc9d7">xiiVec3Template&lt;Type&gt;::NormalizeIfNotZero</a>(<span class="keyword">const</span> <a class="code hl_class" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3Template&lt;Type&gt;</a>&amp; vFallback, Type fEpsilon)</div>
 <div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>{</div>
-<div class="foldopen" id="foldopen00099" data-start="{" data-end="}">
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno"><a class="line" href="../../d9/d9a/classxii_vec3_template.html#ad2cb527586b7ad99cf02329ee839f75c">   99</a></span>  XII_NAN_ASSERT(&amp;vFallback);</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>  XII_NAN_ASSERT(&amp;vFallback);</div>
 <div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span> </div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>  <span class="keyword">const</span> Type fLength = GetLength();</div>
+<div class="foldopen" id="foldopen00101" data-start="{" data-end="}">
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno"><a class="line" href="../../d9/d9a/classxii_vec3_template.html#a20c6aefe09afd9ee32cee75ac3490b61">  101</a></span>  <span class="keyword">const</span> Type fLength = GetLength();</div>
 <div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span> </div>
-<div class="foldopen" id="foldopen00103" data-start="{" data-end="}">
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno"><a class="line" href="../../d9/d9a/classxii_vec3_template.html#a20c6aefe09afd9ee32cee75ac3490b61">  103</a></span>  <span class="keywordflow">if</span> (!xiiMath::IsFinite(fLength) || <a class="code hl_function" href="../../d1/d37/namespacexii_math.html#a76f446939ad58af387fb79b8fd9deff7">xiiMath::IsZero</a>(fLength, fEpsilon))</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>  <span class="keywordflow">if</span> (!xiiMath::IsFinite(fLength) || <a class="code hl_function" href="../../d1/d37/namespacexii_math.html#a76f446939ad58af387fb79b8fd9deff7">xiiMath::IsZero</a>(fLength, fEpsilon))</div>
 <div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>  {</div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>    *<span class="keyword">this</span> = vFallback;</div>
+<div class="foldopen" id="foldopen00105" data-start="{" data-end="}">
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno"><a class="line" href="../../d9/d9a/classxii_vec3_template.html#a5633026a4c9b22b3bf29bbfffe8da7e3">  105</a></span>    *<span class="keyword">this</span> = vFallback;</div>
 <div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>    <span class="keywordflow">return</span> XII_FAILURE;</div>
 <div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>  }</div>
 <div class="foldopen" id="foldopen00108" data-start="{" data-end="}">
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno"><a class="line" href="../../d9/d9a/classxii_vec3_template.html#a5633026a4c9b22b3bf29bbfffe8da7e3">  108</a></span> </div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno"><a class="line" href="../../d9/d9a/classxii_vec3_template.html#ad8a8cb263d5d850828c0a01191a5a9d9">  108</a></span> </div>
 <div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>  *<span class="keyword">this</span> /= fLength;</div>
 <div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>  <span class="keywordflow">return</span> XII_SUCCESS;</div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>}</div>
-<div class="foldopen" id="foldopen00112" data-start="{" data-end="}">
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno"><a class="line" href="../../d9/d9a/classxii_vec3_template.html#ad8a8cb263d5d850828c0a01191a5a9d9">  112</a></span> </div>
-<div class="foldopen" id="foldopen00116" data-start="{" data-end="}">
-<div class="line"><a id="l00116" name="l00116"></a><span class="lineno"><a class="line" href="../../d9/d9a/classxii_vec3_template.html#afa9d20345cdc98553c67fe6833db2acf">  116</a></span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Type&gt;</div>
+<div class="foldopen" id="foldopen00111" data-start="{" data-end="}">
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno"><a class="line" href="../../d9/d9a/classxii_vec3_template.html#afa9d20345cdc98553c67fe6833db2acf">  111</a></span>}</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span> </div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Type&gt;</div>
 <div class="foldopen" id="foldopen00117" data-start="{" data-end="}">
 <div class="line"><a id="l00117" name="l00117"></a><span class="lineno"><a class="line" href="../../d9/d9a/classxii_vec3_template.html#adeb9860c5a5d47285a05bba8f06dd721">  117</a></span>XII_IMPLEMENT_IF_FLOAT_TYPE XII_FORCE_INLINE <span class="keywordtype">bool</span> <a class="code hl_function" href="../../d9/d9a/classxii_vec3_template.html#adeb9860c5a5d47285a05bba8f06dd721">xiiVec3Template&lt;Type&gt;::IsNormalized</a>(Type fEpsilon <span class="comment">/* = xiiMath::HugeEpsilon&lt;Type&gt;() */</span>)<span class="keyword"> const</span></div>
-<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span><span class="keyword"></span>{</div>
+<div class="foldopen" id="foldopen00118" data-start="{" data-end="}">
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno"><a class="line" href="../../d9/d9a/classxii_vec3_template.html#ab9f4e0928979082607eae058b8140daa">  118</a></span><span class="keyword"></span>{</div>
 <div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>  <span class="keyword">const</span> Type t = GetLengthSquared();</div>
 <div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>  <span class="keywordflow">return</span> <a class="code hl_function" href="../../d1/d37/namespacexii_math.html#a20047812a62c07b9ac2144a5520c18f0">xiiMath::IsEqual</a>(t, (Type)1, fEpsilon);</div>
-<div class="line"><a id="l00121" name="l00121"></a><span class="lineno"><a class="line" href="../../d9/d9a/classxii_vec3_template.html#a632fb5bad0c4c380f5fac5b4f48cc9d7">  121</a></span>}</div>
-</div>
+<div class="foldopen" id="foldopen00121" data-start="{" data-end="}">
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno"><a class="line" href="../../d9/d9a/classxii_vec3_template.html#a5d0f21b3bdaab6d049cf0e2746d4c80f">  121</a></span>}</div>
 <div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span> </div>
 <div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Type&gt;</div>
 <div class="foldopen" id="foldopen00124" data-start="{" data-end="}">
 <div class="line"><a id="l00124" name="l00124"></a><span class="lineno"><a class="line" href="../../d9/d9a/classxii_vec3_template.html#ab9f4e0928979082607eae058b8140daa">  124</a></span>XII_FORCE_INLINE <span class="keywordtype">bool</span> <a class="code hl_function" href="../../d9/d9a/classxii_vec3_template.html#ab9f4e0928979082607eae058b8140daa">xiiVec3Template&lt;Type&gt;::IsZero</a>()<span class="keyword"> const</span></div>
-<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span><span class="keyword"></span>{</div>
+<div class="foldopen" id="foldopen00125" data-start="{" data-end="}">
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno"><a class="line" href="../../d9/d9a/classxii_vec3_template.html#adeb9860c5a5d47285a05bba8f06dd721">  125</a></span><span class="keyword"></span>{</div>
 <div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>  XII_NAN_ASSERT(<span class="keyword">this</span>);</div>
-<div class="foldopen" id="foldopen00127" data-start="{" data-end="}">
-<div class="line"><a id="l00127" name="l00127"></a><span class="lineno"><a class="line" href="../../d9/d9a/classxii_vec3_template.html#a5d0f21b3bdaab6d049cf0e2746d4c80f">  127</a></span> </div>
-<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>  <span class="keywordflow">return</span> ((x == 0.0f) &amp;&amp; (y == 0.0f) &amp;&amp; (z == 0.0f));</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span> </div>
+<div class="foldopen" id="foldopen00128" data-start="{" data-end="}">
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno"><a class="line" href="../../d9/d9a/classxii_vec3_template.html#a232995c2778f2228e488ef26e420a3ea">  128</a></span>  <span class="keywordflow">return</span> ((x == 0.0f) &amp;&amp; (y == 0.0f) &amp;&amp; (z == 0.0f));</div>
 <div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>}</div>
 <div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span> </div>
 <div class="foldopen" id="foldopen00131" data-start="{" data-end="}">
-<div class="line"><a id="l00131" name="l00131"></a><span class="lineno"><a class="line" href="../../d9/d9a/classxii_vec3_template.html#adeb9860c5a5d47285a05bba8f06dd721">  131</a></span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Type&gt;</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno"><a class="line" href="../../d9/d9a/classxii_vec3_template.html#ada4983624dd9914c854b8e7fafa38b2b">  131</a></span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Type&gt;</div>
 <div class="foldopen" id="foldopen00132" data-start="{" data-end="}">
 <div class="line"><a id="l00132" name="l00132"></a><span class="lineno"><a class="line" href="../../d9/d9a/classxii_vec3_template.html#a5d0f21b3bdaab6d049cf0e2746d4c80f">  132</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="../../d9/d9a/classxii_vec3_template.html#ab9f4e0928979082607eae058b8140daa">xiiVec3Template&lt;Type&gt;::IsZero</a>(Type fEpsilon)<span class="keyword"> const</span></div>
 <div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span><span class="keyword"></span>{</div>
 <div class="foldopen" id="foldopen00134" data-start="{" data-end="}">
-<div class="line"><a id="l00134" name="l00134"></a><span class="lineno"><a class="line" href="../../d9/d9a/classxii_vec3_template.html#a232995c2778f2228e488ef26e420a3ea">  134</a></span>  XII_NAN_ASSERT(<span class="keyword">this</span>);</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno"><a class="line" href="../../d9/d9a/classxii_vec3_template.html#ab0e77606f47a98ec401351fcabda2a1a">  134</a></span>  XII_NAN_ASSERT(<span class="keyword">this</span>);</div>
 <div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span> </div>
 <div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>  <span class="keywordflow">return</span> (<a class="code hl_function" href="../../d1/d37/namespacexii_math.html#a76f446939ad58af387fb79b8fd9deff7">xiiMath::IsZero</a>(x, fEpsilon) &amp;&amp; <a class="code hl_function" href="../../d1/d37/namespacexii_math.html#a76f446939ad58af387fb79b8fd9deff7">xiiMath::IsZero</a>(y, fEpsilon) &amp;&amp; <a class="code hl_function" href="../../d1/d37/namespacexii_math.html#a76f446939ad58af387fb79b8fd9deff7">xiiMath::IsZero</a>(z, fEpsilon));</div>
-<div class="foldopen" id="foldopen00137" data-start="{" data-end="}">
-<div class="line"><a id="l00137" name="l00137"></a><span class="lineno"><a class="line" href="../../d9/d9a/classxii_vec3_template.html#ada4983624dd9914c854b8e7fafa38b2b">  137</a></span>}</div>
-<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span> </div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>}</div>
+<div class="foldopen" id="foldopen00138" data-start="{" data-end="}">
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno"><a class="line" href="../../d9/d9a/classxii_vec3_template.html#a4884b528402c7b319a0f0b9399f79000">  138</a></span> </div>
 <div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Type&gt;</div>
 <div class="foldopen" id="foldopen00140" data-start="{" data-end="}">
 <div class="line"><a id="l00140" name="l00140"></a><span class="lineno"><a class="line" href="../../d9/d9a/classxii_vec3_template.html#a232995c2778f2228e488ef26e420a3ea">  140</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="../../d9/d9a/classxii_vec3_template.html#a232995c2778f2228e488ef26e420a3ea">xiiVec3Template&lt;Type&gt;::IsNaN</a>()<span class="keyword"> const</span></div>
-<div class="foldopen" id="foldopen00141" data-start="{" data-end="}">
-<div class="line"><a id="l00141" name="l00141"></a><span class="lineno"><a class="line" href="../../d9/d9a/classxii_vec3_template.html#ab0e77606f47a98ec401351fcabda2a1a">  141</a></span><span class="keyword"></span>{</div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span><span class="keyword"></span>{</div>
 <div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>  <span class="keywordflow">if</span> (xiiMath::IsNaN(x))</div>
 <div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>  <span class="keywordflow">if</span> (xiiMath::IsNaN(y))</div>
-<div class="foldopen" id="foldopen00145" data-start="{" data-end="}">
-<div class="line"><a id="l00145" name="l00145"></a><span class="lineno"><a class="line" href="../../d9/d9a/classxii_vec3_template.html#a4884b528402c7b319a0f0b9399f79000">  145</a></span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="foldopen" id="foldopen00144" data-start="{" data-end="}">
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno"><a class="line" href="../../d9/d9a/classxii_vec3_template.html#aa1547bd9379b322d08eb5e74b1d6eae0">  144</a></span>  <span class="keywordflow">if</span> (xiiMath::IsNaN(y))</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>  <span class="keywordflow">if</span> (xiiMath::IsNaN(z))</div>
-<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="foldopen" id="foldopen00147" data-start="{" data-end="}">
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno"><a class="line" href="../../d9/d9a/classxii_vec3_template.html#a43497c7554912a12b0046a8ab93d19eb">  147</a></span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span> </div>
 <div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>  <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>}</div>
-<div class="foldopen" id="foldopen00151" data-start="{" data-end="}">
-<div class="line"><a id="l00151" name="l00151"></a><span class="lineno"><a class="line" href="../../d9/d9a/classxii_vec3_template.html#aa1547bd9379b322d08eb5e74b1d6eae0">  151</a></span> </div>
+<div class="foldopen" id="foldopen00150" data-start="{" data-end="}">
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno"><a class="line" href="../../d9/d9a/classxii_vec3_template.html#a62abcbb2c4cf31a17d61a6844ee1b90c">  150</a></span>}</div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span> </div>
 <div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Type&gt;</div>
 <div class="foldopen" id="foldopen00153" data-start="{" data-end="}">
 <div class="line"><a id="l00153" name="l00153"></a><span class="lineno"><a class="line" href="../../d9/d9a/classxii_vec3_template.html#ada4983624dd9914c854b8e7fafa38b2b">  153</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="../../d9/d9a/classxii_vec3_template.html#ada4983624dd9914c854b8e7fafa38b2b">xiiVec3Template&lt;Type&gt;::IsValid</a>()<span class="keyword"> const</span></div>
-<div class="foldopen" id="foldopen00154" data-start="{" data-end="}">
-<div class="line"><a id="l00154" name="l00154"></a><span class="lineno"><a class="line" href="../../d9/d9a/classxii_vec3_template.html#a43497c7554912a12b0046a8ab93d19eb">  154</a></span><span class="keyword"></span>{</div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span><span class="keyword"></span>{</div>
 <div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>  <span class="keywordflow">if</span> (!xiiMath::IsFinite(x))</div>
-<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="foldopen" id="foldopen00157" data-start="{" data-end="}">
-<div class="line"><a id="l00157" name="l00157"></a><span class="lineno"><a class="line" href="../../d9/d9a/classxii_vec3_template.html#a62abcbb2c4cf31a17d61a6844ee1b90c">  157</a></span>  <span class="keywordflow">if</span> (!xiiMath::IsFinite(y))</div>
+<div class="foldopen" id="foldopen00156" data-start="{" data-end="}">
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno"><a class="line" href="../../d9/d9a/classxii_vec3_template.html#a64c100864c6f13e9feb3a26d69b489d6">  156</a></span>    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>  <span class="keywordflow">if</span> (!xiiMath::IsFinite(y))</div>
 <div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>  <span class="keywordflow">if</span> (!xiiMath::IsFinite(z))</div>
-<div class="foldopen" id="foldopen00160" data-start="{" data-end="}">
-<div class="line"><a id="l00160" name="l00160"></a><span class="lineno"><a class="line" href="../../d9/d9a/classxii_vec3_template.html#ae123e96eaa13e2880166aa7203f701b9">  160</a></span>    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="foldopen" id="foldopen00159" data-start="{" data-end="}">
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno"><a class="line" href="../../d9/d9a/classxii_vec3_template.html#a0a0cafc5141ca0b6e6284ec4f3eee39c">  159</a></span>  <span class="keywordflow">if</span> (!xiiMath::IsFinite(z))</div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span> </div>
-<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>  <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="foldopen" id="foldopen00163" data-start="{" data-end="}">
-<div class="line"><a id="l00163" name="l00163"></a><span class="lineno"><a class="line" href="../../d9/d9a/classxii_vec3_template.html#a64c100864c6f13e9feb3a26d69b489d6">  163</a></span>}</div>
+<div class="foldopen" id="foldopen00162" data-start="{" data-end="}">
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno"><a class="line" href="../../d9/d9a/classxii_vec3_template.html#a7f17564f3d3b74dd42687c3babd39727">  162</a></span>  <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>}</div>
 <div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span> </div>
-<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Type&gt;</div>
+<div class="foldopen" id="foldopen00165" data-start="{" data-end="}">
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno"><a class="line" href="../../d9/d9a/classxii_vec3_template.html#a627258e981f04e4031a3edbf13aef857">  165</a></span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Type&gt;</div>
 <div class="foldopen" id="foldopen00166" data-start="{" data-end="}">
 <div class="line"><a id="l00166" name="l00166"></a><span class="lineno"><a class="line" href="../../d9/d9a/classxii_vec3_template.html#ab0e77606f47a98ec401351fcabda2a1a">  166</a></span>XII_IMPLEMENT_IF_FLOAT_TYPE XII_ALWAYS_INLINE Type <a class="code hl_function" href="../../d9/d9a/classxii_vec3_template.html#ab0e77606f47a98ec401351fcabda2a1a">xiiVec3Template&lt;Type&gt;::Distance</a>(<span class="keyword">const</span> <a class="code hl_class" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3Template&lt;Type&gt;</a>&amp; vPoint)<span class="keyword"> const</span></div>
 <div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span><span class="keyword"></span>{</div>
-<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>  <span class="keywordflow">return</span> (<a class="code hl_function" href="../../d1/d37/namespacexii_math.html#ae7fbda648b6f9bcc4dc23962d06c93f4">xiiMath::Sqrt</a>(DistanceSquared(vPoint)));</div>
-<div class="line"><a id="l00169" name="l00169"></a><span class="lineno"><a class="line" href="../../d9/d9a/classxii_vec3_template.html#a7f17564f3d3b74dd42687c3babd39727">  169</a></span>}</div>
-</div>
+<div class="foldopen" id="foldopen00168" data-start="{" data-end="}">
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno"><a class="line" href="../../d9/d9a/classxii_vec3_template.html#aa298cc63bf4b22e7c9548096d774317f">  168</a></span>  <span class="keywordflow">return</span> (<a class="code hl_function" href="../../d1/d37/namespacexii_math.html#ae7fbda648b6f9bcc4dc23962d06c93f4">xiiMath::Sqrt</a>(DistanceSquared(vPoint)));</div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>}</div>
 <div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span> </div>
 <div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Type&gt;</div>
 <div class="foldopen" id="foldopen00172" data-start="{" data-end="}">
@@ -357,78 +358,76 @@ $(function(){initNavTree('d5/d68/_vec3__inl_8h_source.html','../../'); initResiz
 <div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span><span class="keyword"></span>{</div>
 <div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>  XII_NAN_ASSERT(&amp;vPoint);</div>
 <div class="foldopen" id="foldopen00175" data-start="{" data-end="}">
-<div class="line"><a id="l00175" name="l00175"></a><span class="lineno"><a class="line" href="../../d9/d9a/classxii_vec3_template.html#aa298cc63bf4b22e7c9548096d774317f">  175</a></span>  XII_NAN_ASSERT(<span class="keyword">this</span>);</div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno"><a class="line" href="../../d9/d9a/classxii_vec3_template.html#ab1ea6f59052d3ea4298f07a25f8fe51e">  175</a></span>  XII_NAN_ASSERT(<span class="keyword">this</span>);</div>
 <div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span> </div>
 <div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>  <span class="keywordflow">return</span> (<a class="code hl_function" href="../../d1/d37/namespacexii_math.html#acadcf58b1a805ed9e8127057834a0b0a">xiiMath::Square</a>(vPoint.x - x) + <a class="code hl_function" href="../../d1/d37/namespacexii_math.html#acadcf58b1a805ed9e8127057834a0b0a">xiiMath::Square</a>(vPoint.y - y) + <a class="code hl_function" href="../../d1/d37/namespacexii_math.html#acadcf58b1a805ed9e8127057834a0b0a">xiiMath::Square</a>(vPoint.z - z));</div>
-<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>}</div>
+<div class="foldopen" id="foldopen00178" data-start="{" data-end="}">
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno"><a class="line" href="../../d9/d9a/classxii_vec3_template.html#a29f0f6353abb8f23538f847533b56b4a">  178</a></span>}</div>
 <div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span> </div>
 <div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Type&gt;</div>
 <div class="foldopen" id="foldopen00181" data-start="{" data-end="}">
-<div class="line"><a id="l00181" name="l00181"></a><span class="lineno"><a class="line" href="../../d9/d9a/classxii_vec3_template.html#aa1547bd9379b322d08eb5e74b1d6eae0">  181</a></span>XII_FORCE_INLINE <span class="keyword">const</span> <a class="code hl_class" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3Template&lt;Type&gt;</a> <a class="code hl_function" href="../../d9/d9a/classxii_vec3_template.html#aa1547bd9379b322d08eb5e74b1d6eae0">xiiVec3Template&lt;Type&gt;::operator-</a>()<span class="keyword"> const</span></div>
-<div class="foldopen" id="foldopen00182" data-start="{" data-end="}">
-<div class="line"><a id="l00182" name="l00182"></a><span class="lineno"><a class="line" href="../../d9/d9a/classxii_vec3_template.html#ab1ea6f59052d3ea4298f07a25f8fe51e">  182</a></span><span class="keyword"></span>{</div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno"><a class="line" href="../../d9/d9a/classxii_vec3_template.html#a658acf243e57aea0c7252d6918eca809">  181</a></span>XII_FORCE_INLINE <span class="keyword">const</span> <a class="code hl_class" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3Template&lt;Type&gt;</a> <a class="code hl_function" href="../../d9/d9a/classxii_vec3_template.html#aa1547bd9379b322d08eb5e74b1d6eae0">xiiVec3Template&lt;Type&gt;::operator-</a>()<span class="keyword"> const</span></div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span><span class="keyword"></span>{</div>
 <div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>  XII_NAN_ASSERT(<span class="keyword">this</span>);</div>
-<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span> </div>
-<div class="foldopen" id="foldopen00185" data-start="{" data-end="}">
-<div class="line"><a id="l00185" name="l00185"></a><span class="lineno"><a class="line" href="../../d9/d9a/classxii_vec3_template.html#a29f0f6353abb8f23538f847533b56b4a">  185</a></span>  <span class="keywordflow">return</span> <a class="code hl_class" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3Template&lt;Type&gt;</a>(-x, -y, -z);</div>
+<div class="foldopen" id="foldopen00184" data-start="{" data-end="}">
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno"><a class="line" href="../../d9/d9a/classxii_vec3_template.html#ac1522ebb097a2a97fb0bf03c62fae848">  184</a></span> </div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>  <span class="keywordflow">return</span> <a class="code hl_class" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3Template&lt;Type&gt;</a>(-x, -y, -z);</div>
 <div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>}</div>
-<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span> </div>
-<div class="foldopen" id="foldopen00188" data-start="{" data-end="}">
-<div class="line"><a id="l00188" name="l00188"></a><span class="lineno"><a class="line" href="../../d9/d9a/classxii_vec3_template.html#a658acf243e57aea0c7252d6918eca809">  188</a></span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Type&gt;</div>
+<div class="foldopen" id="foldopen00187" data-start="{" data-end="}">
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno"><a class="line" href="../../d9/d9a/classxii_vec3_template.html#a5b14a474a6d9f8e420ffb038387ce57b">  187</a></span> </div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Type&gt;</div>
 <div class="foldopen" id="foldopen00189" data-start="{" data-end="}">
 <div class="line"><a id="l00189" name="l00189"></a><span class="lineno"><a class="line" href="../../d9/d9a/classxii_vec3_template.html#a43497c7554912a12b0046a8ab93d19eb">  189</a></span>XII_FORCE_INLINE <span class="keywordtype">void</span> <a class="code hl_function" href="../../d9/d9a/classxii_vec3_template.html#a43497c7554912a12b0046a8ab93d19eb">xiiVec3Template&lt;Type&gt;::operator+=</a>(<span class="keyword">const</span> <a class="code hl_class" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3Template&lt;Type&gt;</a>&amp; rhs)</div>
-<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>{</div>
-<div class="foldopen" id="foldopen00191" data-start="{" data-end="}">
-<div class="line"><a id="l00191" name="l00191"></a><span class="lineno"><a class="line" href="../../d9/d9a/classxii_vec3_template.html#ac1522ebb097a2a97fb0bf03c62fae848">  191</a></span>  x += rhs.x;</div>
+<div class="foldopen" id="foldopen00190" data-start="{" data-end="}">
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno"><a class="line" href="../../d9/d9a/classxii_vec3_template.html#a1ff89963f60ec9800fc06a8471fe647d">  190</a></span>{</div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>  x += rhs.x;</div>
 <div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>  y += rhs.y;</div>
-<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>  z += rhs.z;</div>
-<div class="foldopen" id="foldopen00194" data-start="{" data-end="}">
-<div class="line"><a id="l00194" name="l00194"></a><span class="lineno"><a class="line" href="../../d9/d9a/classxii_vec3_template.html#a5b14a474a6d9f8e420ffb038387ce57b">  194</a></span> </div>
+<div class="foldopen" id="foldopen00193" data-start="{" data-end="}">
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno"><a class="line" href="../../d9/d9a/classxii_vec3_template.html#a5b71730344463b1face198a7e6dbecec">  193</a></span>  z += rhs.z;</div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span> </div>
 <div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>  XII_NAN_ASSERT(<span class="keyword">this</span>);</div>
-<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>}</div>
-<div class="foldopen" id="foldopen00197" data-start="{" data-end="}">
-<div class="line"><a id="l00197" name="l00197"></a><span class="lineno"><a class="line" href="../../d9/d9a/classxii_vec3_template.html#a1ff89963f60ec9800fc06a8471fe647d">  197</a></span> </div>
+<div class="foldopen" id="foldopen00196" data-start="{" data-end="}">
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno"><a class="line" href="../../d9/d9a/classxii_vec3_template.html#a3d8df4f197167248cae93de23060f8f7">  196</a></span>}</div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span> </div>
 <div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Type&gt;</div>
 <div class="foldopen" id="foldopen00199" data-start="{" data-end="}">
-<div class="line"><a id="l00199" name="l00199"></a><span class="lineno"><a class="line" href="../../d9/d9a/classxii_vec3_template.html#a62abcbb2c4cf31a17d61a6844ee1b90c">  199</a></span>XII_FORCE_INLINE <span class="keywordtype">void</span> <a class="code hl_function" href="../../d9/d9a/classxii_vec3_template.html#a62abcbb2c4cf31a17d61a6844ee1b90c">xiiVec3Template&lt;Type&gt;::operator-=</a>(<span class="keyword">const</span> <a class="code hl_class" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3Template&lt;Type&gt;</a>&amp; rhs)</div>
-<div class="foldopen" id="foldopen00200" data-start="{" data-end="}">
-<div class="line"><a id="l00200" name="l00200"></a><span class="lineno"><a class="line" href="../../d9/d9a/classxii_vec3_template.html#a5b71730344463b1face198a7e6dbecec">  200</a></span>{</div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno"><a class="line" href="../../d9/d9a/classxii_vec3_template.html#a6d00afc5de43fd995bf63081a695a5b9">  199</a></span>XII_FORCE_INLINE <span class="keywordtype">void</span> <a class="code hl_function" href="../../d9/d9a/classxii_vec3_template.html#a62abcbb2c4cf31a17d61a6844ee1b90c">xiiVec3Template&lt;Type&gt;::operator-=</a>(<span class="keyword">const</span> <a class="code hl_class" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3Template&lt;Type&gt;</a>&amp; rhs)</div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>{</div>
 <div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>  x -= rhs.x;</div>
 <div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>  y -= rhs.y;</div>
-<div class="foldopen" id="foldopen00203" data-start="{" data-end="}">
-<div class="line"><a id="l00203" name="l00203"></a><span class="lineno"><a class="line" href="../../d9/d9a/classxii_vec3_template.html#a3d8df4f197167248cae93de23060f8f7">  203</a></span>  z -= rhs.z;</div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>  z -= rhs.z;</div>
 <div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span> </div>
-<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>  XII_NAN_ASSERT(<span class="keyword">this</span>);</div>
-<div class="foldopen" id="foldopen00206" data-start="{" data-end="}">
-<div class="line"><a id="l00206" name="l00206"></a><span class="lineno"><a class="line" href="../../d9/d9a/classxii_vec3_template.html#a6d00afc5de43fd995bf63081a695a5b9">  206</a></span>}</div>
+<div class="foldopen" id="foldopen00205" data-start="{" data-end="}">
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno"><a class="line" href="../../d9/d9a/classxii_vec3_template.html#a2cbea8bf9bd011ac80658604579db97e">  205</a></span>  XII_NAN_ASSERT(<span class="keyword">this</span>);</div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>}</div>
 <div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span> </div>
 <div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Type&gt;</div>
 <div class="foldopen" id="foldopen00209" data-start="{" data-end="}">
 <div class="line"><a id="l00209" name="l00209"></a><span class="lineno"><a class="line" href="../../d9/d9a/classxii_vec3_template.html#ae123e96eaa13e2880166aa7203f701b9">  209</a></span>XII_FORCE_INLINE <span class="keywordtype">void</span> <a class="code hl_function" href="../../d9/d9a/classxii_vec3_template.html#ae123e96eaa13e2880166aa7203f701b9">xiiVec3Template&lt;Type&gt;::operator*=</a>(<span class="keyword">const</span> <a class="code hl_class" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3Template</a>&amp; rhs)</div>
 <div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>{</div>
-<div class="foldopen" id="foldopen00212" data-start="{" data-end="}">
-<div class="line"><a id="l00212" name="l00212"></a><span class="lineno"><a class="line" href="../../d9/d9a/classxii_vec3_template.html#a2cbea8bf9bd011ac80658604579db97e">  212</a></span> </div>
+<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span> </div>
 <div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span>  x *= rhs.x;</div>
-<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span>  y *= rhs.y;</div>
+<div class="foldopen" id="foldopen00214" data-start="{" data-end="}">
+<div class="line"><a id="l00214" name="l00214"></a><span class="lineno"><a class="line" href="../../d9/d9a/classxii_vec3_template.html#a5c75f164531c13f77b9d96b1c63d4512">  214</a></span>  y *= rhs.y;</div>
 <div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span>  z *= rhs.z;</div>
 <div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span> </div>
-<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span>  XII_NAN_ASSERT(<span class="keyword">this</span>);</div>
-<div class="foldopen" id="foldopen00218" data-start="{" data-end="}">
-<div class="line"><a id="l00218" name="l00218"></a><span class="lineno"><a class="line" href="../../d9/d9a/classxii_vec3_template.html#aad2dd0f6e02a5a30a8c3974e448969ee">  218</a></span>}</div>
+<div class="foldopen" id="foldopen00217" data-start="{" data-end="}">
+<div class="line"><a id="l00217" name="l00217"></a><span class="lineno"><a class="line" href="../../d9/d9a/classxii_vec3_template.html#affef600ee81b6171a712fbd66b6d9141">  217</a></span>  XII_NAN_ASSERT(<span class="keyword">this</span>);</div>
+<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>}</div>
 <div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span> </div>
-<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Type&gt;</div>
+<div class="foldopen" id="foldopen00220" data-start="{" data-end="}">
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno"><a class="line" href="../../d9/d9a/classxii_vec3_template.html#ab2f0d742d2b835cf5bc6ddb6b346a841">  220</a></span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Type&gt;</div>
 <div class="foldopen" id="foldopen00221" data-start="{" data-end="}">
-<div class="line"><a id="l00221" name="l00221"></a><span class="lineno"><a class="line" href="../../d9/d9a/classxii_vec3_template.html#a5c75f164531c13f77b9d96b1c63d4512">  221</a></span>XII_FORCE_INLINE <span class="keywordtype">void</span> <a class="code hl_function" href="../../d9/d9a/classxii_vec3_template.html#a64c100864c6f13e9feb3a26d69b489d6">xiiVec3Template&lt;Type&gt;::operator/=</a>(<span class="keyword">const</span> <a class="code hl_class" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3Template</a>&amp; rhs)</div>
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno"><a class="line" href="../../d9/d9a/classxii_vec3_template.html#a64c100864c6f13e9feb3a26d69b489d6">  221</a></span>XII_FORCE_INLINE <span class="keywordtype">void</span> <a class="code hl_function" href="../../d9/d9a/classxii_vec3_template.html#a64c100864c6f13e9feb3a26d69b489d6">xiiVec3Template&lt;Type&gt;::operator/=</a>(<span class="keyword">const</span> <a class="code hl_class" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3Template</a>&amp; rhs)</div>
 <div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span>{</div>
-<div class="foldopen" id="foldopen00224" data-start="{" data-end="}">
-<div class="line"><a id="l00224" name="l00224"></a><span class="lineno"><a class="line" href="../../d9/d9a/classxii_vec3_template.html#affef600ee81b6171a712fbd66b6d9141">  224</a></span> </div>
+<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span> </div>
 <div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span>  x /= rhs.x;</div>
 <div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span>  y /= rhs.y;</div>
-<div class="foldopen" id="foldopen00227" data-start="{" data-end="}">
-<div class="line"><a id="l00227" name="l00227"></a><span class="lineno"><a class="line" href="../../d9/d9a/classxii_vec3_template.html#ab2f0d742d2b835cf5bc6ddb6b346a841">  227</a></span>  z /= rhs.z;</div>
+<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>  z /= rhs.z;</div>
 <div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span> </div>
 <div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>  XII_NAN_ASSERT(<span class="keyword">this</span>);</div>
 <div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>}</div>
+</div>
 <div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span> </div>
 <div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Type&gt;</div>
 <div class="foldopen" id="foldopen00233" data-start="{" data-end="}">
@@ -769,6 +768,9 @@ $(function(){initNavTree('d5/d68/_vec3__inl_8h_source.html','../../'); initResiz
 </div>
 </div>
 </div>
+</div>
+</div>
+</div>
 <div class="ttc" id="aclassxii_angle_template_html"><div class="ttname"><a href="../../d3/ddb/classxii_angle_template.html">xiiAngleTemplate&lt; float &gt;</a></div></div>
 <div class="ttc" id="aclassxii_vec3_template_html"><div class="ttname"><a href="../../d9/d9a/classxii_vec3_template.html">xiiVec3Template</a></div><div class="ttdoc">A 3-component vector class.</div><div class="ttdef"><b>Definition</b> Vec3.h:9</div></div>
 <div class="ttc" id="aclassxii_vec3_template_html_a1ff89963f60ec9800fc06a8471fe647d"><div class="ttname"><a href="../../d9/d9a/classxii_vec3_template.html#a1ff89963f60ec9800fc06a8471fe647d">xiiVec3Template::CompClamp</a></div><div class="ttdeci">const xiiVec3Template&lt; Type &gt; CompClamp(const xiiVec3Template&lt; Type &gt; &amp;vLow, const xiiVec3Template&lt; Type &gt; &amp;vHigh) const</div><div class="ttdoc">Returns the component-wise clamped value of *this between low and high.</div><div class="ttdef"><b>Definition</b> Vec3_inl.h:346</div></div>
@@ -818,7 +820,7 @@ $(function(){initNavTree('d5/d68/_vec3__inl_8h_source.html','../../'); initResiz
 <div class="ttc" id="anamespacexii_math_html_ac1067d4c24d9b02662c60a528c870580"><div class="ttname"><a href="../../d1/d37/namespacexii_math.html#ac1067d4c24d9b02662c60a528c870580">xiiMath::Invert</a></div><div class="ttdeci">constexpr Type Invert(Type f)</div><div class="ttdoc">Returns 1 / f.</div><div class="ttdef"><b>Definition</b> Math_inl.h:62</div></div>
 <div class="ttc" id="anamespacexii_math_html_acadcf58b1a805ed9e8127057834a0b0a"><div class="ttname"><a href="../../d1/d37/namespacexii_math.html#acadcf58b1a805ed9e8127057834a0b0a">xiiMath::Square</a></div><div class="ttdeci">constexpr XII_ALWAYS_INLINE T Square(T f)</div><div class="ttdoc">Returns f * f.</div><div class="ttdef"><b>Definition</b> Math_inl.h:8</div></div>
 <div class="ttc" id="anamespacexii_math_html_ae7fbda648b6f9bcc4dc23962d06c93f4"><div class="ttname"><a href="../../d1/d37/namespacexii_math.html#ae7fbda648b6f9bcc4dc23962d06c93f4">xiiMath::Sqrt</a></div><div class="ttdeci">XII_ALWAYS_INLINE double Sqrt(double f)</div><div class="ttdoc">Returns the square root of f.</div><div class="ttdef"><b>Definition</b> MathDouble_inl.h:120</div></div>
-<div class="ttc" id="astructxii_arg_f_html"><div class="ttname"><a href="../../d5/d0e/structxii_arg_f.html">xiiArgF</a></div><div class="ttdef"><b>Definition</b> FormatStringArgs.h:41</div></div>
+<div class="ttc" id="astructxii_arg_f_html"><div class="ttname"><a href="../../d5/d0e/structxii_arg_f.html">xiiArgF</a></div><div class="ttdef"><b>Definition</b> FormatStringArgs.h:42</div></div>
 <div class="ttc" id="astructxii_result_html"><div class="ttname"><a href="../../dd/dad/structxii_result.html">xiiResult</a></div><div class="ttdoc">Default enum for returning failure or success, instead of using a bool.</div><div class="ttdef"><b>Definition</b> Types.h:56</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -826,7 +828,7 @@ $(function(){initNavTree('d5/d68/_vec3__inl_8h_source.html','../../'); initResiz
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.html">home</a></li><li class="navelem"><a class="el" href="../../dir_1036706e55c22cab35bc1c58ee689f1d.html">runner</a></li><li class="navelem"><a class="el" href="../../dir_629f8151d55d307162ff2d619fb1783d.html">work</a></li><li class="navelem"><a class="el" href="../../dir_1ddc44fe1263a8c7935fa6130b7d9499.html">XII</a></li><li class="navelem"><a class="el" href="../../dir_2c1b6808f12952f4c36e05ba7068379a.html">XII</a></li><li class="navelem"><a class="el" href="../../dir_b5a1c4ecfca018ad24b729e213296d41.html">Source</a></li><li class="navelem"><a class="el" href="../../dir_e321052006a51284e67389ab20037e7c.html">Engine</a></li><li class="navelem"><a class="el" href="../../dir_be0c42c58b36f42c54ec54024ed4f6af.html">Foundation</a></li><li class="navelem"><a class="el" href="../../dir_c1b0860bb61ff24e678d996d14e4bcdd.html">Math</a></li><li class="navelem"><a class="el" href="../../dir_fb7e93d80251333452775ccd3b7c417a.html">Implementation</a></li><li class="navelem"><b>Vec3_inl.h</b></li>
-    <li class="footer">Generated on Tue Jul 2 2024 19:08:40 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Sat Aug 31 2024 15:14:55 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

@@ -151,7 +151,7 @@ $(function(){initNavTree('d8/dd9/_recent_files_list_8h_source.html','../../'); i
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>      m_iContainerWindow(0)</div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    {</div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    }</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    <a class="code hl_struct" href="../../d6/d57/structxii_recent_files_list_1_1_recent_file.html">RecentFile</a>(<a class="code hl_struct" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sFile, xiiInt32 iContainerWindow) :</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    <a class="code hl_struct" href="../../d6/d57/structxii_recent_files_list_1_1_recent_file.html">RecentFile</a>(<a class="code hl_class" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sFile, xiiInt32 iContainerWindow) :</div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>      m_File(sFile), m_iContainerWindow(iContainerWindow)</div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    {</div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    }</div>
@@ -160,15 +160,15 @@ $(function(){initNavTree('d8/dd9/_recent_files_list_8h_source.html','../../'); i
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    xiiInt32  m_iContainerWindow;</div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>  };</div>
 </div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>  <span class="keywordtype">void</span> Insert(<a class="code hl_struct" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sFile, xiiInt32 iContainerWindow);</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>  <span class="keywordtype">void</span> Insert(<a class="code hl_class" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sFile, xiiInt32 iContainerWindow);</div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="../../dc/d4a/classxii_recent_files_list.html#a595be0dace867c13500f8832e994fdbd">   30</a></span>  <span class="keyword">const</span> <a class="code hl_class" href="../../d8/df8/classxii_deque.html">xiiDeque&lt;RecentFile&gt;</a>&amp; <a class="code hl_function" href="../../dc/d4a/classxii_recent_files_list.html#a595be0dace867c13500f8832e994fdbd">GetFileList</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_Files; }</div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="../../dc/d4a/classxii_recent_files_list.html#af9055a4926ec0568541f352f93129a4d">   33</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="../../dc/d4a/classxii_recent_files_list.html#af9055a4926ec0568541f352f93129a4d">Clear</a>() { m_Files.Clear(); }</div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>  <span class="keywordtype">void</span> Save(<a class="code hl_struct" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sFile);</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>  <span class="keywordtype">void</span> Save(<a class="code hl_class" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sFile);</div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>  <span class="keywordtype">void</span> Load(<a class="code hl_struct" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sFile);</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>  <span class="keywordtype">void</span> Load(<a class="code hl_class" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sFile);</div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="keyword">private</span>:</div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>  xiiUInt32            m_uiMaxElements;</div>
@@ -179,16 +179,16 @@ $(function(){initNavTree('d8/dd9/_recent_files_list_8h_source.html','../../'); i
 <div class="ttc" id="aclassxii_recent_files_list_html"><div class="ttname"><a href="../../dc/d4a/classxii_recent_files_list.html">xiiRecentFilesList</a></div><div class="ttdoc">Maintains a list of recently used files and the container window ID they previously resided in.</div><div class="ttdef"><b>Definition</b> RecentFilesList.h:7</div></div>
 <div class="ttc" id="aclassxii_recent_files_list_html_a595be0dace867c13500f8832e994fdbd"><div class="ttname"><a href="../../dc/d4a/classxii_recent_files_list.html#a595be0dace867c13500f8832e994fdbd">xiiRecentFilesList::GetFileList</a></div><div class="ttdeci">const xiiDeque&lt; RecentFile &gt; &amp; GetFileList() const</div><div class="ttdoc">Returns all files in the list.</div><div class="ttdef"><b>Definition</b> RecentFilesList.h:30</div></div>
 <div class="ttc" id="aclassxii_recent_files_list_html_af9055a4926ec0568541f352f93129a4d"><div class="ttname"><a href="../../dc/d4a/classxii_recent_files_list.html#af9055a4926ec0568541f352f93129a4d">xiiRecentFilesList::Clear</a></div><div class="ttdeci">void Clear()</div><div class="ttdoc">Clears the list.</div><div class="ttdef"><b>Definition</b> RecentFilesList.h:33</div></div>
+<div class="ttc" id="aclassxii_string_view_html"><div class="ttname"><a href="../../d4/d85/classxii_string_view.html">xiiStringView</a></div><div class="ttdoc">xiiStringView represent a read-only sub-string of a larger string, as it can store a dedicated string...</div><div class="ttdef"><b>Definition</b> StringView.h:34</div></div>
 <div class="ttc" id="astructxii_hybrid_string_html"><div class="ttname"><a href="../../df/dfb/structxii_hybrid_string.html">xiiHybridString&lt; 32, xiiDefaultAllocatorWrapper &gt;</a></div></div>
 <div class="ttc" id="astructxii_recent_files_list_1_1_recent_file_html"><div class="ttname"><a href="../../d6/d57/structxii_recent_files_list_1_1_recent_file.html">xiiRecentFilesList::RecentFile</a></div><div class="ttdoc">Struct that defines the file and container window of the recent file list.</div><div class="ttdef"><b>Definition</b> RecentFilesList.h:13</div></div>
-<div class="ttc" id="astructxii_string_view_html"><div class="ttname"><a href="../../da/d9d/structxii_string_view.html">xiiStringView</a></div><div class="ttdoc">xiiStringView represent a read-only sub-string of a larger string, as it can store a dedicated string...</div><div class="ttdef"><b>Definition</b> StringView.h:28</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.html">home</a></li><li class="navelem"><a class="el" href="../../dir_1036706e55c22cab35bc1c58ee689f1d.html">runner</a></li><li class="navelem"><a class="el" href="../../dir_629f8151d55d307162ff2d619fb1783d.html">work</a></li><li class="navelem"><a class="el" href="../../dir_1ddc44fe1263a8c7935fa6130b7d9499.html">XII</a></li><li class="navelem"><a class="el" href="../../dir_2c1b6808f12952f4c36e05ba7068379a.html">XII</a></li><li class="navelem"><a class="el" href="../../dir_b5a1c4ecfca018ad24b729e213296d41.html">Source</a></li><li class="navelem"><a class="el" href="../../dir_64f53f8da7bf780a58c32bb848e7873b.html">Tools</a></li><li class="navelem"><a class="el" href="../../dir_4b5bc41f7c4cbfc8ca80bdea56300f1d.html">Libs</a></li><li class="navelem"><a class="el" href="../../dir_ba58a103e79106e89914cc52b64849d5.html">ToolsFoundation</a></li><li class="navelem"><a class="el" href="../../dir_ac0adbc37a4992c356298d1140ad63dd.html">Utilities</a></li><li class="navelem"><b>RecentFilesList.h</b></li>
-    <li class="footer">Generated on Tue Jul 2 2024 19:08:43 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Sat Aug 31 2024 15:14:58 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

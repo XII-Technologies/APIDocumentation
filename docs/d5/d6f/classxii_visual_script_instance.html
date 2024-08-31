@@ -148,8 +148,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a5f5eb09f22cdb36a89e90d956643d0cd" id="r_a5f5eb09f22cdb36a89e90d956643d0cd"><td class="memItemLeft" align="right" valign="top"><a id="a5f5eb09f22cdb36a89e90d956643d0cd" name="a5f5eb09f22cdb36a89e90d956643d0cd"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>xiiVisualScriptInstance</b> (<a class="el" href="../../dc/d71/classxii_reflected_class.html">xiiReflectedClass</a> &amp;inout_owner, <a class="el" href="../../d6/d89/classxii_world.html">xiiWorld</a> *pWorld, const <a class="el" href="../../d8/d9b/classxii_shared_ptr.html">xiiSharedPtr</a>&lt; <a class="el" href="../../d4/d79/classxii_visual_script_data_storage.html">xiiVisualScriptDataStorage</a> &gt; &amp;pConstantDataStorage, const <a class="el" href="../../d8/d9b/classxii_shared_ptr.html">xiiSharedPtr</a>&lt; const <a class="el" href="../../df/d92/structxii_visual_script_data_description.html">xiiVisualScriptDataDescription</a> &gt; &amp;pInstanceDataDesc, const <a class="el" href="../../d8/d9b/classxii_shared_ptr.html">xiiSharedPtr</a>&lt; <a class="el" href="../../d2/d89/classxii_ref_counted_container.html">xiiVisualScriptInstanceDataMapping</a> &gt; &amp;pInstanceDataMapping)</td></tr>
 <tr class="separator:a5f5eb09f22cdb36a89e90d956643d0cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af331f4a5cbc11742ad95ba1ca59e2f60" id="r_af331f4a5cbc11742ad95ba1ca59e2f60"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af331f4a5cbc11742ad95ba1ca59e2f60">ApplyParameters</a> (const <a class="el" href="../../d2/db1/classxii_array_map.html">xiiArrayMap</a>&lt; <a class="el" href="../../d6/d0c/classxii_hashed_string.html">xiiHashedString</a>, <a class="el" href="../../db/d1a/classxii_variant.html">xiiVariant</a> &gt; &amp;parameters) override</td></tr>
-<tr class="separator:af331f4a5cbc11742ad95ba1ca59e2f60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92dd908611d4714a470c81c9ea753ab0" id="r_a92dd908611d4714a470c81c9ea753ab0"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a92dd908611d4714a470c81c9ea753ab0">SetInstanceVariable</a> (const <a class="el" href="../../d6/d0c/classxii_hashed_string.html">xiiHashedString</a> &amp;sName, const <a class="el" href="../../db/d1a/classxii_variant.html">xiiVariant</a> &amp;value) override</td></tr>
+<tr class="separator:a92dd908611d4714a470c81c9ea753ab0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99ddb2d9ad9795832158e8e02127d562" id="r_a99ddb2d9ad9795832158e8e02127d562"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../db/d1a/classxii_variant.html">xiiVariant</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a99ddb2d9ad9795832158e8e02127d562">GetInstanceVariable</a> (const <a class="el" href="../../d6/d0c/classxii_hashed_string.html">xiiHashedString</a> &amp;sName) override</td></tr>
+<tr class="separator:a99ddb2d9ad9795832158e8e02127d562"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae38a982a15b0c9203fbff7d9a9e9bace" id="r_ae38a982a15b0c9203fbff7d9a9e9bace"><td class="memItemLeft" align="right" valign="top"><a id="ae38a982a15b0c9203fbff7d9a9e9bace" name="ae38a982a15b0c9203fbff7d9a9e9bace"></a>
 <a class="el" href="../../d4/d79/classxii_visual_script_data_storage.html">xiiVisualScriptDataStorage</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetConstantDataStorage</b> ()</td></tr>
 <tr class="separator:ae38a982a15b0c9203fbff7d9a9e9bace"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -166,10 +168,13 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a06dc897ddf7ee011a1eff090f6f057c0 inherit pub_methods_classxii_script_instance" id="r_a06dc897ddf7ee011a1eff090f6f057c0"><td class="memItemLeft" align="right" valign="top">
 <a class="el" href="../../d6/d89/classxii_world.html">xiiWorld</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetWorld</b> ()</td></tr>
 <tr class="separator:a06dc897ddf7ee011a1eff090f6f057c0 inherit pub_methods_classxii_script_instance"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2766ca5fd6d8bf7c03a4bc829ddce974 inherit pub_methods_classxii_script_instance" id="r_a2766ca5fd6d8bf7c03a4bc829ddce974"><td class="memItemLeft" align="right" valign="top">
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SetInstanceVariables</b> (const <a class="el" href="../../d2/db1/classxii_array_map.html">xiiArrayMap</a>&lt; <a class="el" href="../../d6/d0c/classxii_hashed_string.html">xiiHashedString</a>, <a class="el" href="../../db/d1a/classxii_variant.html">xiiVariant</a> &gt; &amp;parameters)</td></tr>
+<tr class="separator:a2766ca5fd6d8bf7c03a4bc829ddce974 inherit pub_methods_classxii_script_instance"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="af331f4a5cbc11742ad95ba1ca59e2f60" name="af331f4a5cbc11742ad95ba1ca59e2f60"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af331f4a5cbc11742ad95ba1ca59e2f60">&#9670;&#160;</a></span>ApplyParameters()</h2>
+<a id="a99ddb2d9ad9795832158e8e02127d562" name="a99ddb2d9ad9795832158e8e02127d562"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a99ddb2d9ad9795832158e8e02127d562">&#9670;&#160;</a></span>GetInstanceVariable()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -178,10 +183,41 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void xiiVisualScriptInstance::ApplyParameters </td>
+          <td class="memname"><a class="el" href="../../db/d1a/classxii_variant.html">xiiVariant</a> xiiVisualScriptInstance::GetInstanceVariable </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="../../d2/db1/classxii_array_map.html">xiiArrayMap</a>&lt; <a class="el" href="../../d6/d0c/classxii_hashed_string.html">xiiHashedString</a>, <a class="el" href="../../db/d1a/classxii_variant.html">xiiVariant</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>parameters</em></span></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="../../d6/d0c/classxii_hashed_string.html">xiiHashedString</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>sName</em></span></td><td>)</td>
           <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="../../d4/d45/classxii_script_instance.html">xiiScriptInstance</a>.</p>
+
+</div>
+</div>
+<a id="a92dd908611d4714a470c81c9ea753ab0" name="a92dd908611d4714a470c81c9ea753ab0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a92dd908611d4714a470c81c9ea753ab0">&#9670;&#160;</a></span>SetInstanceVariable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void xiiVisualScriptInstance::SetInstanceVariable </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d6/d0c/classxii_hashed_string.html">xiiHashedString</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>sName</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../db/d1a/classxii_variant.html">xiiVariant</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>value</em></span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -205,7 +241,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d5/d6f/classxii_visual_script_instance.html">xiiVisualScriptInstance</a></li>
-    <li class="footer">Generated on Tue Jul 2 2024 19:08:48 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Sat Aug 31 2024 15:15:02 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

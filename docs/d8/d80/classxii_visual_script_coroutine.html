@@ -148,8 +148,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ab4015f927f27817ce3c2e856e40cbc5e" id="r_ab4015f927f27817ce3c2e856e40cbc5e"><td class="memItemLeft" align="right" valign="top"><a id="ab4015f927f27817ce3c2e856e40cbc5e" name="ab4015f927f27817ce3c2e856e40cbc5e"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>xiiVisualScriptCoroutine</b> (const <a class="el" href="../../d8/d9b/classxii_shared_ptr.html">xiiSharedPtr</a>&lt; const <a class="el" href="../../d5/d1f/classxii_visual_script_graph_description.html">xiiVisualScriptGraphDescription</a> &gt; &amp;pDesc)</td></tr>
 <tr class="separator:ab4015f927f27817ce3c2e856e40cbc5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a016e573bacb95d395ced5f1109d0969f" id="r_a016e573bacb95d395ced5f1109d0969f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a016e573bacb95d395ced5f1109d0969f">Start</a> (<a class="el" href="../../d0/d60/classxii_array_ptr.html">xiiArrayPtr</a>&lt; <a class="el" href="../../db/d1a/classxii_variant.html">xiiVariant</a> &gt; arguments) override</td></tr>
-<tr class="separator:a016e573bacb95d395ced5f1109d0969f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d0ec5dbdf073cd681f92e05d69203f2" id="r_a8d0ec5dbdf073cd681f92e05d69203f2"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8d0ec5dbdf073cd681f92e05d69203f2">StartWithVarArgs</a> (<a class="el" href="../../d0/d60/classxii_array_ptr.html">xiiArrayPtr</a>&lt; <a class="el" href="../../db/d1a/classxii_variant.html">xiiVariant</a> &gt; arguments) override</td></tr>
+<tr class="separator:a8d0ec5dbdf073cd681f92e05d69203f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a92ece08d091d5bfbd103fa7718e520e6" id="r_a92ece08d091d5bfbd103fa7718e520e6"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a92ece08d091d5bfbd103fa7718e520e6">Stop</a> () override</td></tr>
 <tr class="separator:a92ece08d091d5bfbd103fa7718e520e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aefae49bea1562df66b8c0747c7a8fede" id="r_aefae49bea1562df66b8c0747c7a8fede"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d0/dbc/structxii_script_coroutine_1_1_result.html">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aefae49bea1562df66b8c0747c7a8fede">Update</a> (<a class="el" href="../../d7/dc1/structxii_time.html">xiiTime</a> deltaTimeSinceLastUpdate) override</td></tr>
@@ -159,7 +159,7 @@ Public Member Functions</h2></td></tr>
 <a class="el" href="../../df/d4e/structxii_script_coroutine_handle.html">xiiScriptCoroutineHandle</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetHandle</b> ()</td></tr>
 <tr class="separator:a7e9107cbf68372132904c4416f19d70c inherit pub_methods_classxii_script_coroutine"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acfcce0a41fdca60b9c95f6f6573886b7 inherit pub_methods_classxii_script_coroutine" id="r_acfcce0a41fdca60b9c95f6f6573886b7"><td class="memItemLeft" align="right" valign="top">
-<a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetName</b> () const</td></tr>
+<a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetName</b> () const</td></tr>
 <tr class="separator:acfcce0a41fdca60b9c95f6f6573886b7 inherit pub_methods_classxii_script_coroutine"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5f3d9234178ef67020006ded367de5fe inherit pub_methods_classxii_script_coroutine" id="r_a5f3d9234178ef67020006ded367de5fe"><td class="memItemLeft" align="right" valign="top">
 <a class="el" href="../../d4/d45/classxii_script_instance.html">xiiScriptInstance</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetScriptInstance</b> ()</td></tr>
@@ -178,8 +178,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>UpdateAndSchedule</b>
 <tr class="separator:a58ca2b0d18e611475f55f5c145878c3b inherit pub_methods_classxii_script_coroutine"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a016e573bacb95d395ced5f1109d0969f" name="a016e573bacb95d395ced5f1109d0969f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a016e573bacb95d395ced5f1109d0969f">&#9670;&#160;</a></span>Start()</h2>
+<a id="a8d0ec5dbdf073cd681f92e05d69203f2" name="a8d0ec5dbdf073cd681f92e05d69203f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8d0ec5dbdf073cd681f92e05d69203f2">&#9670;&#160;</a></span>StartWithVarArgs()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -188,7 +188,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>UpdateAndSchedule</b>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void xiiVisualScriptCoroutine::Start </td>
+          <td class="memname">void xiiVisualScriptCoroutine::StartWithVarArgs </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="../../d0/d60/classxii_array_ptr.html">xiiArrayPtr</a>&lt; <a class="el" href="../../db/d1a/classxii_variant.html">xiiVariant</a> &gt;</td>          <td class="paramname"><span class="paramname"><em>arguments</em></span></td><td>)</td>
           <td></td>
@@ -269,7 +269,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>UpdateAndSchedule</b>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d8/d80/classxii_visual_script_coroutine.html">xiiVisualScriptCoroutine</a></li>
-    <li class="footer">Generated on Tue Jul 2 2024 19:08:48 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Sat Aug 31 2024 15:15:02 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

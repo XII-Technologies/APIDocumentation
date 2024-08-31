@@ -165,6 +165,9 @@ const <a class="el" href="../../d6/d8c/structxii_window_creation_desc.html">xiiW
 <tr class="memitem:ab5c20ca3069fca37bda04ab08294edba inherit pub_methods_classxii_window" id="r_ab5c20ca3069fca37bda04ab08294edba"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d13/classxii_window.html#ab5c20ca3069fca37bda04ab08294edba">IsFullscreenWindow</a> (bool bOnlyProperFullscreenMode=false) const override</td></tr>
 <tr class="memdesc:ab5c20ca3069fca37bda04ab08294edba inherit pub_methods_classxii_window"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether the window covers an entire monitor.  <br /></td></tr>
 <tr class="separator:ab5c20ca3069fca37bda04ab08294edba inherit pub_methods_classxii_window"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a134a3236effa39ffde2e45a3ce951856 inherit pub_methods_classxii_window" id="r_a134a3236effa39ffde2e45a3ce951856"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d13/classxii_window.html#a134a3236effa39ffde2e45a3ce951856">IsVisible</a> () const override</td></tr>
+<tr class="memdesc:a134a3236effa39ffde2e45a3ce951856 inherit pub_methods_classxii_window"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether the window can potentially be seen by the user. Windows that are minimized or hidden are not visible.  <br /></td></tr>
+<tr class="separator:a134a3236effa39ffde2e45a3ce951856 inherit pub_methods_classxii_window"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a29d7d3630f0d88fe3d50a710bcd374b8 inherit pub_methods_classxii_window" id="r_a29d7d3630f0d88fe3d50a710bcd374b8"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d13/classxii_window.html#a29d7d3630f0d88fe3d50a710bcd374b8">AddReference</a> () override</td></tr>
 <tr class="separator:a29d7d3630f0d88fe3d50a710bcd374b8 inherit pub_methods_classxii_window"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a201c329dcba1c9b66da479483159106f inherit pub_methods_classxii_window" id="r_a201c329dcba1c9b66da479483159106f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d13/classxii_window.html#a201c329dcba1c9b66da479483159106f">RemoveReference</a> () override</td></tr>
@@ -201,6 +204,10 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>OnWindowMove<
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>OnFocus</b> (bool bHasFocus)</td></tr>
 <tr class="memdesc:a8d0fcb10ac3fd4ab68af552196068acf inherit pub_methods_classxii_window"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when the window gets focus or loses focus. <br /></td></tr>
 <tr class="separator:a8d0fcb10ac3fd4ab68af552196068acf inherit pub_methods_classxii_window"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab325cb0c2b6b7c3e93c57177d7ba1eaf inherit pub_methods_classxii_window" id="r_ab325cb0c2b6b7c3e93c57177d7ba1eaf"><td class="memItemLeft" align="right" valign="top">
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>OnVisibleChange</b> (bool bVisible)</td></tr>
+<tr class="memdesc:ab325cb0c2b6b7c3e93c57177d7ba1eaf inherit pub_methods_classxii_window"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when the window gets focus or loses focus. <br /></td></tr>
+<tr class="separator:ab325cb0c2b6b7c3e93c57177d7ba1eaf inherit pub_methods_classxii_window"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aadda987a4153f41525bb655dcc6d7467 inherit pub_methods_classxii_window" id="r_aadda987a4153f41525bb655dcc6d7467"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d13/classxii_window.html#aadda987a4153f41525bb655dcc6d7467">OnClickClose</a> ()</td></tr>
 <tr class="memdesc:aadda987a4153f41525bb655dcc6d7467 inherit pub_methods_classxii_window"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when the close button of the window is clicked. Does nothing by default.  <br /></td></tr>
 <tr class="separator:aadda987a4153f41525bb655dcc6d7467 inherit pub_methods_classxii_window"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -225,7 +232,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>OnFocus</b> (
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d8/d01/classxii_remote_process_window.html">xiiRemoteProcessWindow</a></li>
-    <li class="footer">Generated on Tue Jul 2 2024 19:08:47 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Sat Aug 31 2024 15:15:01 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

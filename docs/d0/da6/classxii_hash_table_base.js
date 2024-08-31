@@ -9,7 +9,7 @@ var classxii_hash_table_base =
     [ "Contains", "d0/da6/classxii_hash_table_base.html#a619655aec7081012f36bdaadc3c60d34", null ],
     [ "Find", "d0/da6/classxii_hash_table_base.html#ab506c027ed750515afdb6d846e2b2011", null ],
     [ "Find", "d0/da6/classxii_hash_table_base.html#a4a67d421ca6cbaec53333e177277d471", null ],
-    [ "FindOrAdd", "d0/da6/classxii_hash_table_base.html#af1c3f0f81b3f0d9d466a1abb4059d6b7", null ],
+    [ "FindOrAdd", "d0/da6/classxii_hash_table_base.html#ab05d0da19676bfa3540268637d2455bc", null ],
     [ "GetAllocator", "d0/da6/classxii_hash_table_base.html#a62a80a071f6afeeaab5ebbfeab7a27cf", null ],
     [ "GetCount", "d0/da6/classxii_hash_table_base.html#a49b9f741e5574293c600f9ec72afea9f", null ],
     [ "GetEndIterator", "d0/da6/classxii_hash_table_base.html#a71a2983d2350e06d07605f837700a4ef", null ],

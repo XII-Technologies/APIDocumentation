@@ -208,22 +208,25 @@ $(function(){initNavTree('dd/da8/_game_grid_8h_source.html','../../'); initResiz
 <div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span> </div>
 <div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="../../dc/d30/classxii_game_grid.html#a3c197e964fcd4c22f31ccdf2a99b53a9">GetRayIntersectionExpandedBBox</a>(<span class="keyword">const</span> <a class="code hl_class" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3</a>&amp; vRayStartWorldSpace, <span class="keyword">const</span> <a class="code hl_class" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3</a>&amp; vRayDirNormalizedWorldSpace, <span class="keywordtype">float</span> fMaxLength, <span class="keywordtype">float</span>&amp; out_fIntersection, <span class="keyword">const</span> <a class="code hl_class" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3</a>&amp; vExpandBBoxByThis) <span class="keyword">const</span>;</div>
 <div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span> </div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>  xiiUInt16 m_uiGridSizeX;</div>
-<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>  xiiUInt16 m_uiGridSizeY;</div>
-<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span> </div>
-<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>  <a class="code hl_class" href="../../d3/d74/classxii_mat3_template.html">xiiMat3</a> m_mRotateToWorldspace;</div>
-<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>  <a class="code hl_class" href="../../d3/d74/classxii_mat3_template.html">xiiMat3</a> m_mRotateToGridspace;</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>  <a class="code hl_struct" href="../../dd/dad/structxii_result.html">xiiResult</a> Serialize(<a class="code hl_class" href="../../d0/d18/classxii_stream_writer.html">xiiStreamWriter</a>&amp; ref_stream) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>  <a class="code hl_struct" href="../../dd/dad/structxii_result.html">xiiResult</a> Deserialize(<a class="code hl_class" href="../../d4/d5e/classxii_stream_reader.html">xiiStreamReader</a>&amp; ref_stream);</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span> </div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>  xiiUInt16 m_uiGridSizeX;</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>  xiiUInt16 m_uiGridSizeY;</div>
 <div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span> </div>
-<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>  <a class="code hl_class" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3</a> m_vWorldSpaceOrigin;</div>
-<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>  <a class="code hl_class" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3</a> m_vLocalSpaceCellSize;</div>
-<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>  <a class="code hl_class" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3</a> m_vInverseLocalSpaceCellSize;</div>
-<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span> </div>
-<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>  <a class="code hl_class" href="../../dc/da4/classxii_dynamic_array.html">xiiDynamicArray&lt;CellData&gt;</a> m_Cells;</div>
-<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>};</div>
-</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>  <a class="code hl_class" href="../../d3/d74/classxii_mat3_template.html">xiiMat3</a> m_mRotateToWorldspace;</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>  <a class="code hl_class" href="../../d3/d74/classxii_mat3_template.html">xiiMat3</a> m_mRotateToGridspace;</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span> </div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>  <a class="code hl_class" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3</a> m_vWorldSpaceOrigin;</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>  <a class="code hl_class" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3</a> m_vLocalSpaceCellSize;</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>  <a class="code hl_class" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3</a> m_vInverseLocalSpaceCellSize;</div>
 <div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span> </div>
-<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span><span class="preprocessor">#include &lt;Utilities/DataStructures/Implementation/GameGrid_inl.h&gt;</span></div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>  <a class="code hl_class" href="../../dc/da4/classxii_dynamic_array.html">xiiDynamicArray&lt;CellData&gt;</a> m_Cells;</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>};</div>
+</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span> </div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span><span class="preprocessor">#include &lt;Utilities/DataStructures/Implementation/GameGrid_inl.h&gt;</span></div>
 <div class="ttc" id="aclassxii_bounding_box_template_html"><div class="ttname"><a href="../../d2/dd6/classxii_bounding_box_template.html">xiiBoundingBoxTemplate&lt; float &gt;</a></div></div>
 <div class="ttc" id="aclassxii_dynamic_array_html"><div class="ttname"><a href="../../dc/da4/classxii_dynamic_array.html">xiiDynamicArray</a></div><div class="ttdef"><b>Definition</b> DynamicArray.h:81</div></div>
 <div class="ttc" id="aclassxii_game_grid_html"><div class="ttname"><a href="../../dc/d30/classxii_game_grid.html">xiiGameGrid</a></div><div class="ttdoc">xiiGameGrid is a general purpose 2D grid structure that has several convenience functions which are o...</div><div class="ttdef"><b>Definition</b> GameGrid.h:13</div></div>
@@ -255,15 +258,18 @@ $(function(){initNavTree('dd/da8/_game_grid_8h_source.html','../../'); initResiz
 <div class="ttc" id="aclassxii_game_grid_html_ae018a1397ec7d8ef5ac8c3bc075a02c2"><div class="ttname"><a href="../../dc/d30/classxii_game_grid.html#ae018a1397ec7d8ef5ac8c3bc075a02c2">xiiGameGrid::IsValidCellCoordinate</a></div><div class="ttdeci">bool IsValidCellCoordinate(const xiiVec2I32 &amp;vCoord) const</div><div class="ttdoc">Checks whether the given cell coordinate is inside valid ranges.</div><div class="ttdef"><b>Definition</b> GameGrid_inl.h:94</div></div>
 <div class="ttc" id="aclassxii_game_grid_html_af6bc408333aba798277494525df9a243"><div class="ttname"><a href="../../dc/d30/classxii_game_grid.html#af6bc408333aba798277494525df9a243">xiiGameGrid::GetCellSize</a></div><div class="ttdeci">xiiVec3 GetCellSize() const</div><div class="ttdoc">Returns the size of each cell.</div><div class="ttdef"><b>Definition</b> GameGrid.h:44</div></div>
 <div class="ttc" id="aclassxii_mat3_template_html"><div class="ttname"><a href="../../d3/d74/classxii_mat3_template.html">xiiMat3Template&lt; float &gt;</a></div></div>
+<div class="ttc" id="aclassxii_stream_reader_html"><div class="ttname"><a href="../../d4/d5e/classxii_stream_reader.html">xiiStreamReader</a></div><div class="ttdoc">Interface for binary in (read) streams.</div><div class="ttdef"><b>Definition</b> Stream.h:22</div></div>
+<div class="ttc" id="aclassxii_stream_writer_html"><div class="ttname"><a href="../../d0/d18/classxii_stream_writer.html">xiiStreamWriter</a></div><div class="ttdoc">Interface for binary out (write) streams.</div><div class="ttdef"><b>Definition</b> Stream.h:107</div></div>
 <div class="ttc" id="aclassxii_vec2_template_html"><div class="ttname"><a href="../../d1/d0d/classxii_vec2_template.html">xiiVec2Template&lt; xiiInt32 &gt;</a></div></div>
 <div class="ttc" id="aclassxii_vec3_template_html"><div class="ttname"><a href="../../d9/d9a/classxii_vec3_template.html">xiiVec3Template&lt; float &gt;</a></div></div>
+<div class="ttc" id="astructxii_result_html"><div class="ttname"><a href="../../dd/dad/structxii_result.html">xiiResult</a></div><div class="ttdoc">Default enum for returning failure or success, instead of using a bool.</div><div class="ttdef"><b>Definition</b> Types.h:56</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.html">home</a></li><li class="navelem"><a class="el" href="../../dir_1036706e55c22cab35bc1c58ee689f1d.html">runner</a></li><li class="navelem"><a class="el" href="../../dir_629f8151d55d307162ff2d619fb1783d.html">work</a></li><li class="navelem"><a class="el" href="../../dir_1ddc44fe1263a8c7935fa6130b7d9499.html">XII</a></li><li class="navelem"><a class="el" href="../../dir_2c1b6808f12952f4c36e05ba7068379a.html">XII</a></li><li class="navelem"><a class="el" href="../../dir_b5a1c4ecfca018ad24b729e213296d41.html">Source</a></li><li class="navelem"><a class="el" href="../../dir_e321052006a51284e67389ab20037e7c.html">Engine</a></li><li class="navelem"><a class="el" href="../../dir_9ee72279ab281f6aaaae1c60885125b9.html">Utilities</a></li><li class="navelem"><a class="el" href="../../dir_d5cf2893ed31c2d648feac176a3c2f32.html">DataStructures</a></li><li class="navelem"><b>GameGrid.h</b></li>
-    <li class="footer">Generated on Tue Jul 2 2024 19:08:43 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Sat Aug 31 2024 15:14:58 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

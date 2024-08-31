@@ -18,6 +18,7 @@ var classxii_resource =
     [ "GetResourceDescription", "d9/de1/classxii_resource.html#af4ded93d41aa0c44309af648b8a81249", null ],
     [ "GetResourceID", "d9/de1/classxii_resource.html#a207e0e3bbc18e1025d64d996c770f6e2", null ],
     [ "GetResourceIDHash", "d9/de1/classxii_resource.html#a83651b5a5739fb66e659867042fefce3", null ],
+    [ "GetResourceIdOrDescription", "d9/de1/classxii_resource.html#a4b3effaed6097859c990eeaa76d31ae9", null ],
     [ "IncResourceChangeCounter", "d9/de1/classxii_resource.html#abc6e65c855406751502d8a46880f759a", null ],
     [ "ModifyMemoryUsage", "d9/de1/classxii_resource.html#a0ddd24fde67475e2cd60081d6ba6020c", null ],
     [ "PrintHandleStackTraces", "d9/de1/classxii_resource.html#a1831661b496fb1be050ef0f073d7d888", null ],

@@ -12,7 +12,7 @@ var classxii_blackboard =
     [ "GetEntryValue", "d7/d47/classxii_blackboard.html#a34842c8965124dfab7bd065ff17288b8", null ],
     [ "HasEntry", "d7/d47/classxii_blackboard.html#a200cf5d6b49a4ce511696528f6a37226", null ],
     [ "IncrementEntryValue", "d7/d47/classxii_blackboard.html#a82dec9be1352c0c49da141d87d96e7e9", null ],
-    [ "OnEntryEvent", "d7/d47/classxii_blackboard.html#a37e9ace89b9e516e73e34ca5d56c8c88", null ],
+    [ "OnEntryEvent", "d7/d47/classxii_blackboard.html#a473ec358fbd665adae81c643e0246ee7", null ],
     [ "RemoveAllEntries", "d7/d47/classxii_blackboard.html#a41f92af5421ead7c3a757d1ad65c3806", null ],
     [ "RemoveEntry", "d7/d47/classxii_blackboard.html#ad22671ffec449be1312946f6160a1071", null ],
     [ "Serialize", "d7/d47/classxii_blackboard.html#a56814c10f763a9f0e898249955eb13d9", null ],

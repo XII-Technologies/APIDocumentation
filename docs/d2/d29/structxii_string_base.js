@@ -14,7 +14,7 @@ var structxii_string_base =
     [ "FindWholeWord", "d2/d29/structxii_string_base.html#a5f5893d90cc94a9a187f08fa6c13ec34", null ],
     [ "FindWholeWord_NoCase", "d2/d29/structxii_string_base.html#ad5005429360824b1798bef85dea712cd", null ],
     [ "GetFileDirectory", "d2/d29/structxii_string_base.html#a6daecf61eb300775ecaced2e95c1ed54", null ],
-    [ "GetFileExtension", "d2/d29/structxii_string_base.html#a1ef1a78330f1b3a875e5979dc640f3e2", null ],
+    [ "GetFileExtension", "d2/d29/structxii_string_base.html#a68007a5aba16e3f7d38fc6270619df68", null ],
     [ "GetFileName", "d2/d29/structxii_string_base.html#acadc8a4b5aab5156ac33af352c7f3410", null ],
     [ "GetFileNameAndExtension", "d2/d29/structxii_string_base.html#a3fae3e4e1da823bd30d5322872eda70e", null ],
     [ "GetIteratorBack", "d2/d29/structxii_string_base.html#a540637e5f22defeb32af069704c700d8", null ],

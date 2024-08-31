@@ -1,6 +1,5 @@
 var structxii_g_a_l_graphics_device_adapter_description =
 [
-    [ "operator==", "dd/d07/structxii_g_a_l_graphics_device_adapter_description.html#ad1d00fb78c66a704e91be85e0edb1fa3", null ],
     [ "m_BufferProperties", "dd/d07/structxii_g_a_l_graphics_device_adapter_description.html#ae62531223d7d2b4cdc357772ed3a0904", null ],
     [ "m_CommandQueueProperties", "dd/d07/structxii_g_a_l_graphics_device_adapter_description.html#ad2405779fc98256319e6af93ec85e8e2", null ],
     [ "m_ComputeShaderProperties", "dd/d07/structxii_g_a_l_graphics_device_adapter_description.html#a6ff3568c8bd56a7357b3c3e58057785b", null ],

@@ -167,34 +167,34 @@ const <a class="el" href="../../df/dfb/structxii_hybrid_string.html">xiiString12
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
 <tr class="memitem:acd11182eed4408e3c068a94ea8c14aca" id="r_acd11182eed4408e3c068a94ea8c14aca"><td class="memItemLeft" align="right" valign="top"><a id="acd11182eed4408e3c068a94ea8c14aca" name="acd11182eed4408e3c068a94ea8c14aca"></a>
-<a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><b>InitializeDataDirectory</b> (<a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sDataDirPath)</td></tr>
+<a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><b>InitializeDataDirectory</b> (<a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sDataDirPath)</td></tr>
 <tr class="memdesc:acd11182eed4408e3c068a94ea8c14aca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tries to setup the data directory. Can fail, if the type is incorrect (e.g. a ZIP file data directory type cannot handle a simple folder and vice versa) <br /></td></tr>
 <tr class="separator:acd11182eed4408e3c068a94ea8c14aca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abd25b08e47282bae0e2fa87942fe23ec" id="r_abd25b08e47282bae0e2fa87942fe23ec"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../de/d3d/classxii_data_directory_reader.html">xiiDataDirectoryReader</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abd25b08e47282bae0e2fa87942fe23ec">OpenFileToRead</a> (<a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sFile, <a class="el" href="../../dc/df4/structxii_file_share_mode.html#a853af051a2b930d18b9d14f78c09e5e1">xiiFileShareMode::Enum</a> FileShareMode, bool bSpecificallyThisDataDir)=0</td></tr>
+<tr class="memitem:abd25b08e47282bae0e2fa87942fe23ec" id="r_abd25b08e47282bae0e2fa87942fe23ec"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../de/d3d/classxii_data_directory_reader.html">xiiDataDirectoryReader</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abd25b08e47282bae0e2fa87942fe23ec">OpenFileToRead</a> (<a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sFile, <a class="el" href="../../dc/df4/structxii_file_share_mode.html#a853af051a2b930d18b9d14f78c09e5e1">xiiFileShareMode::Enum</a> FileShareMode, bool bSpecificallyThisDataDir)=0</td></tr>
 <tr class="memdesc:abd25b08e47282bae0e2fa87942fe23ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Must be implemented to create a <a class="el" href="../../de/d3d/classxii_data_directory_reader.html" title="A base class for readers that handle reading from a (virtual) file inside a data directory.">xiiDataDirectoryReader</a> for accessing the given file. Returns nullptr if the file could not be opened.  <br /></td></tr>
 <tr class="separator:abd25b08e47282bae0e2fa87942fe23ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6c13ac855808b22240a77ca11d3655cd" id="r_a6c13ac855808b22240a77ca11d3655cd"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d3/dd7/classxii_data_directory_writer.html">xiiDataDirectoryWriter</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6c13ac855808b22240a77ca11d3655cd">OpenFileToWrite</a> (<a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sFile, <a class="el" href="../../dc/df4/structxii_file_share_mode.html#a853af051a2b930d18b9d14f78c09e5e1">xiiFileShareMode::Enum</a> FileShareMode)</td></tr>
+<tr class="memitem:a6c13ac855808b22240a77ca11d3655cd" id="r_a6c13ac855808b22240a77ca11d3655cd"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d3/dd7/classxii_data_directory_writer.html">xiiDataDirectoryWriter</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6c13ac855808b22240a77ca11d3655cd">OpenFileToWrite</a> (<a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sFile, <a class="el" href="../../dc/df4/structxii_file_share_mode.html#a853af051a2b930d18b9d14f78c09e5e1">xiiFileShareMode::Enum</a> FileShareMode)</td></tr>
 <tr class="memdesc:a6c13ac855808b22240a77ca11d3655cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Must be implemented to create a <a class="el" href="../../d3/dd7/classxii_data_directory_writer.html" title="A base class for writers that handle writing to a (virtual) file inside a data directory.">xiiDataDirectoryWriter</a> for accessing the given file. Returns nullptr if the file could not be opened.  <br /></td></tr>
 <tr class="separator:a6c13ac855808b22240a77ca11d3655cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae00b69a7586651b18fe3a975f539c3a3" id="r_ae00b69a7586651b18fe3a975f539c3a3"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae00b69a7586651b18fe3a975f539c3a3">RemoveDataDirectory</a> ()=0</td></tr>
 <tr class="memdesc:ae00b69a7586651b18fe3a975f539c3a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function is called by the filesystem when a data directory is removed.  <br /></td></tr>
 <tr class="separator:ae00b69a7586651b18fe3a975f539c3a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8f8204841c9213f481f30f5121e03d94" id="r_a8f8204841c9213f481f30f5121e03d94"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8f8204841c9213f481f30f5121e03d94">DeleteFile</a> (<a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sFile)</td></tr>
+<tr class="memitem:a8f8204841c9213f481f30f5121e03d94" id="r_a8f8204841c9213f481f30f5121e03d94"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8f8204841c9213f481f30f5121e03d94">DeleteFile</a> (<a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sFile)</td></tr>
 <tr class="memdesc:a8f8204841c9213f481f30f5121e03d94"><td class="mdescLeft">&#160;</td><td class="mdescRight">If a Data Directory Type supports it, this function will remove the given file from it.  <br /></td></tr>
 <tr class="separator:a8f8204841c9213f481f30f5121e03d94"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2939f6389612e2aeb6ae2ae762276b8e" id="r_a2939f6389612e2aeb6ae2ae762276b8e"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2939f6389612e2aeb6ae2ae762276b8e">ExistsFile</a> (<a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sFile, bool bOneSpecificDataDir)</td></tr>
+<tr class="memitem:a2939f6389612e2aeb6ae2ae762276b8e" id="r_a2939f6389612e2aeb6ae2ae762276b8e"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2939f6389612e2aeb6ae2ae762276b8e">ExistsFile</a> (<a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sFile, bool bOneSpecificDataDir)</td></tr>
 <tr class="memdesc:a2939f6389612e2aeb6ae2ae762276b8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function checks whether the given file exists in this data directory.  <br /></td></tr>
 <tr class="separator:a2939f6389612e2aeb6ae2ae762276b8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:accf67cf83009d29d4385c1a8bdeaf1ed" id="r_accf67cf83009d29d4385c1a8bdeaf1ed"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#accf67cf83009d29d4385c1a8bdeaf1ed">GetFileStats</a> (<a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sFileOrFolder, bool bOneSpecificDataDir, <a class="el" href="../../d6/dd0/structxii_file_stats.html">xiiFileStats</a> &amp;out_Stats)=0</td></tr>
+<tr class="memitem:accf67cf83009d29d4385c1a8bdeaf1ed" id="r_accf67cf83009d29d4385c1a8bdeaf1ed"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#accf67cf83009d29d4385c1a8bdeaf1ed">GetFileStats</a> (<a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sFileOrFolder, bool bOneSpecificDataDir, <a class="el" href="../../d6/dd0/structxii_file_stats.html">xiiFileStats</a> &amp;out_Stats)=0</td></tr>
 <tr class="memdesc:accf67cf83009d29d4385c1a8bdeaf1ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Upon success returns the <a class="el" href="../../d6/dd0/structxii_file_stats.html" title="Holds the stats for a file.">xiiFileStats</a> for a file in this data directory.  <br /></td></tr>
 <tr class="separator:accf67cf83009d29d4385c1a8bdeaf1ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6bc3b529b723c4e6e4c88140cbef098e" id="r_a6bc3b529b723c4e6e4c88140cbef098e"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6bc3b529b723c4e6e4c88140cbef098e">ResolveAssetRedirection</a> (<a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sPathOrAssetGuid, <a class="el" href="../../d4/dbb/classxii_string_builder.html">xiiStringBuilder</a> &amp;out_sRedirection)</td></tr>
+<tr class="memitem:a6bc3b529b723c4e6e4c88140cbef098e" id="r_a6bc3b529b723c4e6e4c88140cbef098e"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6bc3b529b723c4e6e4c88140cbef098e">ResolveAssetRedirection</a> (<a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sPathOrAssetGuid, <a class="el" href="../../d4/dbb/classxii_string_builder.html">xiiStringBuilder</a> &amp;out_sRedirection)</td></tr>
 <tr class="memdesc:a6bc3b529b723c4e6e4c88140cbef098e"><td class="mdescLeft">&#160;</td><td class="mdescRight">If this data directory knows how to redirect the given path, it should do so and return true. Called by <a class="el" href="../../d7/d0a/classxii_file_system.html#a9abfaf036f4391db83674478735c9f32" title="Returns true, if any data directory knows how to redirect the given path. Otherwise the original stri...">xiiFileSystem::ResolveAssetRedirection</a>.  <br /></td></tr>
 <tr class="separator:a6bc3b529b723c4e6e4c88140cbef098e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6bd08b2185798c937702e813ee4a8a1a" id="r_a6bd08b2185798c937702e813ee4a8a1a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6bd08b2185798c937702e813ee4a8a1a">OnReaderWriterClose</a> (<a class="el" href="../../d5/d39/classxii_data_directory_reader_writer_base.html">xiiDataDirectoryReaderWriterBase</a> *pClosed)</td></tr>
 <tr class="memdesc:a6bd08b2185798c937702e813ee4a8a1a"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is automatically called whenever a <a class="el" href="../../d5/d39/classxii_data_directory_reader_writer_base.html" title="This is the base class for all data directory readers/writers.">xiiDataDirectoryReaderWriterBase</a> that was opened by this type is being closed.  <br /></td></tr>
 <tr class="separator:a6bd08b2185798c937702e813ee4a8a1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a65c551c72e3e70fc0185c784112e7343" id="r_a65c551c72e3e70fc0185c784112e7343"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a65c551c72e3e70fc0185c784112e7343">InternalInitializeDataDirectory</a> (<a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sDirectory)=0</td></tr>
+<tr class="memitem:a65c551c72e3e70fc0185c784112e7343" id="r_a65c551c72e3e70fc0185c784112e7343"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a65c551c72e3e70fc0185c784112e7343">InternalInitializeDataDirectory</a> (<a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sDirectory)=0</td></tr>
 <tr class="memdesc:a65c551c72e3e70fc0185c784112e7343"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function should only be used by a Factory (which should be a static function in the respective <a class="el" href="../../de/d33/classxii_data_directory_type.html" title="The base class for all data directory types.">xiiDataDirectoryType</a>).  <br /></td></tr>
 <tr class="separator:a65c551c72e3e70fc0185c784112e7343"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -230,7 +230,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>xiiDataDirectoryRead
         <tr>
           <td class="memname">virtual void xiiDataDirectoryType::DeleteFile </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a></td>          <td class="paramname"><span class="paramname"><em>sFile</em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a></td>          <td class="paramname"><span class="paramname"><em>sFile</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -259,7 +259,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>xiiDataDirectoryRead
         <tr>
           <td class="memname">bool xiiDataDirectoryType::ExistsFile </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a></td>          <td class="paramname"><span class="paramname"><em>sFile</em></span>, </td>
+          <td class="paramtype"><a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a></td>          <td class="paramname"><span class="paramname"><em>sFile</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -293,7 +293,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>xiiDataDirectoryRead
         <tr>
           <td class="memname">virtual <a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a> xiiDataDirectoryType::GetFileStats </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a></td>          <td class="paramname"><span class="paramname"><em>sFileOrFolder</em></span>, </td>
+          <td class="paramtype"><a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a></td>          <td class="paramname"><span class="paramname"><em>sFileOrFolder</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -360,7 +360,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>xiiDataDirectoryRead
         <tr>
           <td class="memname">virtual <a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a> xiiDataDirectoryType::InternalInitializeDataDirectory </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a></td>          <td class="paramname"><span class="paramname"><em>sDirectory</em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a></td>          <td class="paramname"><span class="paramname"><em>sDirectory</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -420,7 +420,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>xiiDataDirectoryRead
         <tr>
           <td class="memname">virtual <a class="el" href="../../de/d3d/classxii_data_directory_reader.html">xiiDataDirectoryReader</a> * xiiDataDirectoryType::OpenFileToRead </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a></td>          <td class="paramname"><span class="paramname"><em>sFile</em></span>, </td>
+          <td class="paramtype"><a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a></td>          <td class="paramname"><span class="paramname"><em>sFile</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -465,7 +465,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>xiiDataDirectoryRead
         <tr>
           <td class="memname">virtual <a class="el" href="../../d3/dd7/classxii_data_directory_writer.html">xiiDataDirectoryWriter</a> * xiiDataDirectoryType::OpenFileToWrite </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a></td>          <td class="paramname"><span class="paramname"><em>sFile</em></span>, </td>
+          <td class="paramtype"><a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a></td>          <td class="paramname"><span class="paramname"><em>sFile</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -558,7 +558,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>xiiDataDirectoryRead
         <tr>
           <td class="memname">virtual bool xiiDataDirectoryType::ResolveAssetRedirection </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a></td>          <td class="paramname"><span class="paramname"><em>sPathOrAssetGuid</em></span>, </td>
+          <td class="paramtype"><a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a></td>          <td class="paramname"><span class="paramname"><em>sPathOrAssetGuid</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -589,7 +589,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>xiiDataDirectoryRead
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../de/d33/classxii_data_directory_type.html">xiiDataDirectoryType</a></li>
-    <li class="footer">Generated on Tue Jul 2 2024 19:08:44 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Sat Aug 31 2024 15:14:59 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

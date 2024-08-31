@@ -149,7 +149,7 @@ $(function(){initNavTree('d6/d89/classxii_world.html','../../'); initResizable(t
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:abb6879f609c4a3fa3ff32e200b8d9535" id="r_abb6879f609c4a3fa3ff32e200b8d9535"><td class="memItemLeft" align="right" valign="top"><a id="abb6879f609c4a3fa3ff32e200b8d9535" name="abb6879f609c4a3fa3ff32e200b8d9535"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>ReferenceResolver</b> = <a class="el" href="../../dc/d84/structxii_delegate.html">xiiDelegate</a>&lt;<a class="el" href="../../da/d2c/structxii_game_object_handle.html">xiiGameObjectHandle</a>(const void*, <a class="el" href="../../da/d8d/structxii_component_handle.html">xiiComponentHandle</a> hThis, <a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sProperty)&gt;</td></tr>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>ReferenceResolver</b> = <a class="el" href="../../dc/d84/structxii_delegate.html">xiiDelegate</a>&lt;<a class="el" href="../../da/d2c/structxii_game_object_handle.html">xiiGameObjectHandle</a>(const void*, <a class="el" href="../../da/d8d/structxii_component_handle.html">xiiComponentHandle</a> hThis, <a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sProperty)&gt;</td></tr>
 <tr class="separator:abb6879f609c4a3fa3ff32e200b8d9535"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6617753923674663bbd3a9083afad6a4" id="r_a6617753923674663bbd3a9083afad6a4"><td class="memItemLeft" align="right" valign="top"><a id="a6617753923674663bbd3a9083afad6a4" name="a6617753923674663bbd3a9083afad6a4"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>ResourceReloadContext</b> = xiiInternal::WorldData::ResourceReloadContext</td></tr>
@@ -169,7 +169,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>Clear</b> ()</td></tr
 <tr class="memdesc:a3b7b2ff09bf7bed357a09a75ec486f8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deletes all game objects in a world. <br /></td></tr>
 <tr class="separator:a3b7b2ff09bf7bed357a09a75ec486f8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a866ec031f1d82f11716e3f55db08ba2d" id="r_a866ec031f1d82f11716e3f55db08ba2d"><td class="memItemLeft" align="right" valign="top"><a id="a866ec031f1d82f11716e3f55db08ba2d" name="a866ec031f1d82f11716e3f55db08ba2d"></a>
-<a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetName</b> () const</td></tr>
+<a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetName</b> () const</td></tr>
 <tr class="memdesc:a866ec031f1d82f11716e3f55db08ba2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the name of this world. <br /></td></tr>
 <tr class="separator:a866ec031f1d82f11716e3f55db08ba2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5a0ba3ae4ca090f8e8ff05bb0387a125" id="r_a5a0ba3ae4ca090f8e8ff05bb0387a125"><td class="memItemLeft" align="right" valign="top"><a id="a5a0ba3ae4ca090f8e8ff05bb0387a125" name="a5a0ba3ae4ca090f8e8ff05bb0387a125"></a>
@@ -393,8 +393,18 @@ template&lt;typename ComponentType &gt; </td></tr>
 <tr class="memitem:a51a436a2259c3c88d90bdc709d818559"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><b>TryGetComponent</b> (const <a class="el" href="../../da/d8d/structxii_component_handle.html">xiiComponentHandle</a> &amp;hComponent, const ComponentType *&amp;out_pComponent) const</td></tr>
 <tr class="memdesc:a51a436a2259c3c88d90bdc709d818559"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether a component with the given handle exists and if so writes out the corresponding pointer to out_pComponent. <br /></td></tr>
 <tr class="separator:a51a436a2259c3c88d90bdc709d818559"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63dcecccd00b1d95c5157e514116c1f1" id="r_a63dcecccd00b1d95c5157e514116c1f1"><td class="memTemplParams" colspan="2"><a id="a63dcecccd00b1d95c5157e514116c1f1" name="a63dcecccd00b1d95c5157e514116c1f1"></a>
+template&lt;typename T , typename U , std::enable_if_t&lt;!std::disjunction_v&lt; std::is_base_of&lt; U, T &gt;, std::is_base_of&lt; T, U &gt; &gt;, bool &gt;  = true&gt; </td></tr>
+<tr class="memitem:a63dcecccd00b1d95c5157e514116c1f1"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><b>TryGetComponent</b> (const <a class="el" href="../../d2/d85/structxii_typed_component_handle.html">xiiTypedComponentHandle</a>&lt; T &gt; &amp;hComponent, U *&amp;out_pComponent)=delete</td></tr>
+<tr class="memdesc:a63dcecccd00b1d95c5157e514116c1f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Explicitly delete TryGetComponent overload when handle type is not related to a pointer type given by out_pComponent. <br /></td></tr>
+<tr class="separator:a63dcecccd00b1d95c5157e514116c1f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade4c232ebcc8cea03fcd3af0bd5e7f64" id="r_ade4c232ebcc8cea03fcd3af0bd5e7f64"><td class="memTemplParams" colspan="2"><a id="ade4c232ebcc8cea03fcd3af0bd5e7f64" name="ade4c232ebcc8cea03fcd3af0bd5e7f64"></a>
+template&lt;typename T , typename U , std::enable_if_t&lt;!std::disjunction_v&lt; std::is_base_of&lt; U, T &gt;, std::is_base_of&lt; T, U &gt; &gt;, bool &gt;  = true&gt; </td></tr>
+<tr class="memitem:ade4c232ebcc8cea03fcd3af0bd5e7f64"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><b>TryGetComponent</b> (const <a class="el" href="../../d2/d85/structxii_typed_component_handle.html">xiiTypedComponentHandle</a>&lt; T &gt; &amp;hComponent, const U *&amp;out_pComponent) const =delete</td></tr>
+<tr class="memdesc:ade4c232ebcc8cea03fcd3af0bd5e7f64"><td class="mdescLeft">&#160;</td><td class="mdescRight">Explicitly delete TryGetComponent overload when handle type is not related to a pointer type given by out_pComponent. <br /></td></tr>
+<tr class="separator:ade4c232ebcc8cea03fcd3af0bd5e7f64"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a638d51a01d207c99389598df27845bf0" id="r_a638d51a01d207c99389598df27845bf0"><td class="memItemLeft" align="right" valign="top"><a id="a638d51a01d207c99389598df27845bf0" name="a638d51a01d207c99389598df27845bf0"></a>
-<a class="el" href="../../de/de2/classxii_component_init_batch_handle.html">xiiComponentInitBatchHandle</a>&#160;</td><td class="memItemRight" valign="bottom"><b>CreateComponentInitBatch</b> (<a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sBatchName, bool bMustFinishWithinOneFrame=true)</td></tr>
+<a class="el" href="../../de/de2/classxii_component_init_batch_handle.html">xiiComponentInitBatchHandle</a>&#160;</td><td class="memItemRight" valign="bottom"><b>CreateComponentInitBatch</b> (<a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sBatchName, bool bMustFinishWithinOneFrame=true)</td></tr>
 <tr class="memdesc:a638d51a01d207c99389598df27845bf0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new component init batch. It is ensured that the Initialize function is called for all components in a batch before the OnSimulationStarted is called. If bMustFinishWithinOneFrame is set to false the processing of an init batch can be distributed over multiple frames if m_MaxComponentInitializationTimePerFrame in the world desc is set to a reasonable value. <br /></td></tr>
 <tr class="separator:a638d51a01d207c99389598df27845bf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abd6aba62dd4dd4365a87cea731c219b3" id="r_abd6aba62dd4dd4365a87cea731c219b3"><td class="memItemLeft" align="right" valign="top"><a id="abd6aba62dd4dd4365a87cea731c219b3" name="abd6aba62dd4dd4365a87cea731c219b3"></a>
@@ -739,7 +749,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>Traverse</b> (<a clas
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d6/d89/classxii_world.html">xiiWorld</a></li>
-    <li class="footer">Generated on Tue Jul 2 2024 19:08:48 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Sat Aug 31 2024 15:15:02 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

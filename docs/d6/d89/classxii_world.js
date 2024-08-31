@@ -73,6 +73,8 @@ var classxii_world =
     [ "Traverse", "d6/d89/classxii_world.html#a88fc0ce1ee1e47c14f7d54483b0e7409", null ],
     [ "TryGetComponent", "d6/d89/classxii_world.html#abc48ca97e3890c1dce34eb141bfe4957", null ],
     [ "TryGetComponent", "d6/d89/classxii_world.html#a51a436a2259c3c88d90bdc709d818559", null ],
+    [ "TryGetComponent", "d6/d89/classxii_world.html#ade4c232ebcc8cea03fcd3af0bd5e7f64", null ],
+    [ "TryGetComponent", "d6/d89/classxii_world.html#a63dcecccd00b1d95c5157e514116c1f1", null ],
     [ "TryGetObject", "d6/d89/classxii_world.html#a50f41837276a898b0f649f8122adf2be", null ],
     [ "TryGetObject", "d6/d89/classxii_world.html#af20f28a4321230cf0eeacbe9add859d7", null ],
     [ "TryGetObjectWithGlobalKey", "d6/d89/classxii_world.html#a8f73cae5d000371744aa9bc0f9d399d4", null ],

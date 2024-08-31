@@ -361,7 +361,7 @@ $(function(){initNavTree('d2/d39/_static_r_t_t_i_8h_source.html','../../'); init
 <div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span><span class="preprocessor">  ;                        \</span></div>
 <div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span><span class="preprocessor">  Attributes = AttributeList</span></div>
 <div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span> </div>
-<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span><span class="preprocessor">#define XII_FUNCTION_PROPERTY(Function) (new xiiFunctionProperty&lt;decltype(&amp;OwnType::Function)&gt;(XII_STRINGIZE(Function), &amp;OwnType::Function))</span></div>
+<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span><span class="preprocessor">#define XII_FUNCTION_PROPERTY(Function) (new xiiFunctionProperty&lt;decltype(&amp;OwnType::Function)&gt;(XII_PP_STRINGIFY(Function), &amp;OwnType::Function))</span></div>
 <div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span> </div>
 <div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span><span class="preprocessor">#define XII_FUNCTION_PROPERTY_EX(PropertyName, Function) (new xiiFunctionProperty&lt;decltype(&amp;Function)&gt;(PropertyName, &amp;Function))</span></div>
 <div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span> </div>
@@ -507,15 +507,15 @@ $(function(){initNavTree('d2/d39/_static_r_t_t_i_8h_source.html','../../'); init
 <div class="line"><a id="l00543" name="l00543"></a><span class="lineno">  543</span> </div>
 <div class="line"><a id="l00544" name="l00544"></a><span class="lineno">  544</span> </div>
 <div class="line"><a id="l00545" name="l00545"></a><span class="lineno">  545</span><span class="comment">// [internal] Helper macro</span></div>
-<div class="line"><a id="l00546" name="l00546"></a><span class="lineno">  546</span><span class="preprocessor">#define XII_ENUM_VALUE_TO_CONSTANT_PROPERTY(name) XII_CONSTANT_PROPERTY(XII_STRINGIZE(name), (Storage)name),</span></div>
+<div class="line"><a id="l00546" name="l00546"></a><span class="lineno">  546</span><span class="preprocessor">#define XII_ENUM_VALUE_TO_CONSTANT_PROPERTY(name) XII_CONSTANT_PROPERTY(XII_PP_STRINGIFY(name), (Storage)name),</span></div>
 <div class="line"><a id="l00547" name="l00547"></a><span class="lineno">  547</span> </div>
 <div class="line"><a id="l00550" name="l00550"></a><span class="lineno">  550</span><span class="preprocessor">#define XII_ENUM_CONSTANTS(...) XII_EXPAND_ARGS(XII_ENUM_VALUE_TO_CONSTANT_PROPERTY, ##__VA_ARGS__)</span></div>
 <div class="line"><a id="l00551" name="l00551"></a><span class="lineno">  551</span> </div>
-<div class="line"><a id="l00554" name="l00554"></a><span class="lineno">  554</span><span class="preprocessor">#define XII_ENUM_CONSTANT(Value) XII_CONSTANT_PROPERTY(XII_STRINGIZE(Value), (Storage)Value)</span></div>
+<div class="line"><a id="l00554" name="l00554"></a><span class="lineno">  554</span><span class="preprocessor">#define XII_ENUM_CONSTANT(Value) XII_CONSTANT_PROPERTY(XII_PP_STRINGIFY(Value), (Storage)Value)</span></div>
 <div class="line"><a id="l00555" name="l00555"></a><span class="lineno">  555</span> </div>
 <div class="line"><a id="l00558" name="l00558"></a><span class="lineno">  558</span><span class="preprocessor">#define XII_BITFLAGS_CONSTANTS(...) XII_EXPAND_ARGS(XII_ENUM_VALUE_TO_CONSTANT_PROPERTY, ##__VA_ARGS__)</span></div>
 <div class="line"><a id="l00559" name="l00559"></a><span class="lineno">  559</span> </div>
-<div class="line"><a id="l00562" name="l00562"></a><span class="lineno">  562</span><span class="preprocessor">#define XII_BITFLAGS_CONSTANT(Value) XII_CONSTANT_PROPERTY(XII_STRINGIZE(Value), (Storage)Value)</span></div>
+<div class="line"><a id="l00562" name="l00562"></a><span class="lineno">  562</span><span class="preprocessor">#define XII_BITFLAGS_CONSTANT(Value) XII_CONSTANT_PROPERTY(XII_PP_STRINGIFY(Value), (Storage)Value)</span></div>
 <div class="line"><a id="l00563" name="l00563"></a><span class="lineno">  563</span> </div>
 <div class="line"><a id="l00564" name="l00564"></a><span class="lineno">  564</span> </div>
 <div class="line"><a id="l00565" name="l00565"></a><span class="lineno">  565</span> </div>
@@ -524,7 +524,7 @@ $(function(){initNavTree('d2/d39/_static_r_t_t_i_8h_source.html','../../'); init
 <div class="line"><a id="l00574" name="l00574"></a><span class="lineno">  574</span><span class="preprocessor">  using Storage = Type::StorageType;                                               \</span></div>
 <div class="line"><a id="l00575" name="l00575"></a><span class="lineno">  575</span><span class="preprocessor">  XII_BEGIN_PROPERTIES                                                             \</span></div>
 <div class="line"><a id="l00576" name="l00576"></a><span class="lineno">  576</span><span class="preprocessor">  {                                                                                \</span></div>
-<div class="line"><a id="l00577" name="l00577"></a><span class="lineno">  577</span><span class="preprocessor">    XII_CONSTANT_PROPERTY(XII_STRINGIZE(Type::Default), (Storage)Type::Default),</span></div>
+<div class="line"><a id="l00577" name="l00577"></a><span class="lineno">  577</span><span class="preprocessor">    XII_CONSTANT_PROPERTY(XII_PP_STRINGIFY(Type::Default), (Storage)Type::Default),</span></div>
 <div class="line"><a id="l00578" name="l00578"></a><span class="lineno">  578</span> </div>
 <div class="line"><a id="l00579" name="l00579"></a><span class="lineno">  579</span><span class="preprocessor">#define XII_END_STATIC_REFLECTED_ENUM \</span></div>
 <div class="line"><a id="l00580" name="l00580"></a><span class="lineno">  580</span><span class="preprocessor">  }                                   \</span></div>
@@ -539,7 +539,7 @@ $(function(){initNavTree('d2/d39/_static_r_t_t_i_8h_source.html','../../'); init
 <div class="line"><a id="l00595" name="l00595"></a><span class="lineno">  595</span><span class="preprocessor">  using Storage = Type::StorageType;                                                   \</span></div>
 <div class="line"><a id="l00596" name="l00596"></a><span class="lineno">  596</span><span class="preprocessor">  XII_BEGIN_PROPERTIES                                                                 \</span></div>
 <div class="line"><a id="l00597" name="l00597"></a><span class="lineno">  597</span><span class="preprocessor">  {                                                                                    \</span></div>
-<div class="line"><a id="l00598" name="l00598"></a><span class="lineno">  598</span><span class="preprocessor">    XII_CONSTANT_PROPERTY(XII_STRINGIZE(Type::Default), (Storage)Type::Default),</span></div>
+<div class="line"><a id="l00598" name="l00598"></a><span class="lineno">  598</span><span class="preprocessor">    XII_CONSTANT_PROPERTY(XII_PP_STRINGIFY(Type::Default), (Storage)Type::Default),</span></div>
 <div class="line"><a id="l00599" name="l00599"></a><span class="lineno">  599</span> </div>
 <div class="line"><a id="l00600" name="l00600"></a><span class="lineno">  600</span><span class="preprocessor">#define XII_END_STATIC_REFLECTED_BITFLAGS \</span></div>
 <div class="line"><a id="l00601" name="l00601"></a><span class="lineno">  601</span><span class="preprocessor">  }                                       \</span></div>
@@ -576,13 +576,13 @@ $(function(){initNavTree('d2/d39/_static_r_t_t_i_8h_source.html','../../'); init
 <div class="line"><a id="l00652" name="l00652"></a><span class="lineno">  652</span><span class="preprocessor">  }</span></div>
 <div class="ttc" id="aclassxii_no_base_html"><div class="ttname"><a href="../../d2/d38/classxii_no_base.html">xiiNoBase</a></div><div class="ttdoc">Dummy type to pass to templates and macros that expect a base type for a class that has no base.</div><div class="ttdef"><b>Definition</b> Types.h:133</div></div>
 <div class="ttc" id="aclassxii_r_t_t_i_html"><div class="ttname"><a href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a></div><div class="ttdoc">This class holds information about reflected types. Each instance represents one type that is known t...</div><div class="ttdef"><b>Definition</b> RTTI.h:30</div></div>
-<div class="ttc" id="aclassxii_reflected_class_html"><div class="ttname"><a href="../../dc/d71/classxii_reflected_class.html">xiiReflectedClass</a></div><div class="ttdoc">All classes that should be dynamically reflectable, need to be derived from this base class.</div><div class="ttdef"><b>Definition</b> DynamicRTTI.h:77</div></div>
+<div class="ttc" id="aclassxii_reflected_class_html"><div class="ttname"><a href="../../dc/d71/classxii_reflected_class.html">xiiReflectedClass</a></div><div class="ttdoc">All classes that should be dynamically reflectable, need to be derived from this base class.</div><div class="ttdef"><b>Definition</b> DynamicRTTI.h:84</div></div>
 <div class="ttc" id="aclassxii_variant_html"><div class="ttname"><a href="../../db/d1a/classxii_variant.html">xiiVariant</a></div><div class="ttdoc">xiiVariant is a class that can store different types of variables, which is useful in situations wher...</div><div class="ttdef"><b>Definition</b> Variant.h:44</div></div>
 <div class="ttc" id="astructxii_bitflags_html"><div class="ttname"><a href="../../d7/d55/structxii_bitflags.html">xiiBitflags</a></div><div class="ttdoc">The xiiBitflags class allows you to work with type-safe bitflags.</div><div class="ttdef"><b>Definition</b> Bitflags.h:82</div></div>
 <div class="ttc" id="astructxii_bitflags_html_a89cb715ce2414f2e16675f5d8503cb1c"><div class="ttname"><a href="../../d7/d55/structxii_bitflags.html#a89cb715ce2414f2e16675f5d8503cb1c">xiiBitflags::Add</a></div><div class="ttdeci">XII_ALWAYS_INLINE void Add(const xiiBitflags&lt; T &gt; &amp;rhs)</div><div class="ttdoc">Sets the given flag.</div><div class="ttdef"><b>Definition</b> Bitflags.h:154</div></div>
 <div class="ttc" id="astructxii_internal_1_1xii_static_r_t_t_i_html"><div class="ttname"><a href="../../dd/d9e/structxii_internal_1_1xii_static_r_t_t_i.html">xiiInternal::xiiStaticRTTI</a></div><div class="ttdoc">[internal] Helper struct for accessing static RTTI data.</div><div class="ttdef"><b>Definition</b> StaticRTTI.h:54</div></div>
 <div class="ttc" id="astructxii_internal_1_1xii_static_r_t_t_i_wrapper_html"><div class="ttname"><a href="../../df/d52/structxii_internal_1_1xii_static_r_t_t_i_wrapper.html">xiiInternal::xiiStaticRTTIWrapper</a></div><div class="ttdef"><b>Definition</b> StaticRTTI.h:111</div></div>
-<div class="ttc" id="astructxii_trait_int_html"><div class="ttname"><a href="../../da/d04/structxii_trait_int.html">xiiTraitInt</a></div><div class="ttdoc">Type traits.</div><div class="ttdef"><b>Definition</b> TypeTraits.h:10</div></div>
+<div class="ttc" id="astructxii_trait_int_html"><div class="ttname"><a href="../../da/d04/structxii_trait_int.html">xiiTraitInt</a></div><div class="ttdoc">Type traits.</div><div class="ttdef"><b>Definition</b> TypeTraits.h:12</div></div>
 <div class="ttc" id="astructxii_type_flags_1_1_bits_html"><div class="ttname"><a href="../../da/dce/structxii_type_flags_1_1_bits.html">xiiTypeFlags::Bits</a></div><div class="ttdef"><b>Definition</b> StaticRTTI.h:33</div></div>
 <div class="ttc" id="astructxii_type_flags_html"><div class="ttname"><a href="../../d6/de8/structxii_type_flags.html">xiiTypeFlags</a></div><div class="ttdoc">Flags that describe a reflected type.</div><div class="ttdef"><b>Definition</b> StaticRTTI.h:16</div></div>
 <div class="ttc" id="astructxii_type_flags_html_a91f9df8f69a1a163305414f423ec98c0"><div class="ttname"><a href="../../d6/de8/structxii_type_flags.html#a91f9df8f69a1a163305414f423ec98c0">xiiTypeFlags::Enum</a></div><div class="ttdeci">Enum</div><div class="ttdef"><b>Definition</b> StaticRTTI.h:20</div></div>
@@ -602,7 +602,7 @@ $(function(){initNavTree('d2/d39/_static_r_t_t_i_8h_source.html','../../'); init
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.html">home</a></li><li class="navelem"><a class="el" href="../../dir_1036706e55c22cab35bc1c58ee689f1d.html">runner</a></li><li class="navelem"><a class="el" href="../../dir_629f8151d55d307162ff2d619fb1783d.html">work</a></li><li class="navelem"><a class="el" href="../../dir_1ddc44fe1263a8c7935fa6130b7d9499.html">XII</a></li><li class="navelem"><a class="el" href="../../dir_2c1b6808f12952f4c36e05ba7068379a.html">XII</a></li><li class="navelem"><a class="el" href="../../dir_b5a1c4ecfca018ad24b729e213296d41.html">Source</a></li><li class="navelem"><a class="el" href="../../dir_e321052006a51284e67389ab20037e7c.html">Engine</a></li><li class="navelem"><a class="el" href="../../dir_be0c42c58b36f42c54ec54024ed4f6af.html">Foundation</a></li><li class="navelem"><a class="el" href="../../dir_f1e13142959a2e7970d979e1f6f7bcb1.html">Reflection</a></li><li class="navelem"><a class="el" href="../../dir_44ac7f88d9b5593e444e5c7bf3d69918.html">Implementation</a></li><li class="navelem"><b>StaticRTTI.h</b></li>
-    <li class="footer">Generated on Tue Jul 2 2024 19:08:41 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Sat Aug 31 2024 15:14:56 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

@@ -157,46 +157,46 @@ static const <a class="el" href="../../dc/d22/classxii_event.html">xiiEvent</a>&
 <tr class="separator:adcafb0a979e453f073fe1a9be65c10d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Loading and creating resources</div></td></tr>
 <tr class="memitem:a79a1bc5db8a2ac72fdfc386732ebfd45" id="r_a79a1bc5db8a2ac72fdfc386732ebfd45"><td class="memTemplParams" colspan="2">template&lt;typename ResourceType &gt; </td></tr>
-<tr class="memitem:a79a1bc5db8a2ac72fdfc386732ebfd45"><td class="memTemplItemLeft" align="right" valign="top">static <a class="el" href="../../d6/d16/classxii_typed_resource_handle.html">xiiTypedResourceHandle</a>&lt; ResourceType &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a79a1bc5db8a2ac72fdfc386732ebfd45">LoadResource</a> (<a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sResourceID)</td></tr>
+<tr class="memitem:a79a1bc5db8a2ac72fdfc386732ebfd45"><td class="memTemplItemLeft" align="right" valign="top">static <a class="el" href="../../d6/d16/classxii_typed_resource_handle.html">xiiTypedResourceHandle</a>&lt; ResourceType &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a79a1bc5db8a2ac72fdfc386732ebfd45">LoadResource</a> (<a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sResourceID)</td></tr>
 <tr class="memdesc:a79a1bc5db8a2ac72fdfc386732ebfd45"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a handle to the requested resource. szResourceID must uniquely identify the resource, different spellings / casing will result in different resources.  <br /></td></tr>
 <tr class="separator:a79a1bc5db8a2ac72fdfc386732ebfd45"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5aa7c47d141fcb9f88547dfccacc7fe1" id="r_a5aa7c47d141fcb9f88547dfccacc7fe1"><td class="memTemplParams" colspan="2">template&lt;typename ResourceType &gt; </td></tr>
-<tr class="memitem:a5aa7c47d141fcb9f88547dfccacc7fe1"><td class="memTemplItemLeft" align="right" valign="top">static <a class="el" href="../../d6/d16/classxii_typed_resource_handle.html">xiiTypedResourceHandle</a>&lt; ResourceType &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a5aa7c47d141fcb9f88547dfccacc7fe1">LoadResource</a> (<a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sResourceID, <a class="el" href="../../d6/d16/classxii_typed_resource_handle.html">xiiTypedResourceHandle</a>&lt; ResourceType &gt; hLoadingFallback)</td></tr>
+<tr class="memitem:a5aa7c47d141fcb9f88547dfccacc7fe1"><td class="memTemplItemLeft" align="right" valign="top">static <a class="el" href="../../d6/d16/classxii_typed_resource_handle.html">xiiTypedResourceHandle</a>&lt; ResourceType &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a5aa7c47d141fcb9f88547dfccacc7fe1">LoadResource</a> (<a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sResourceID, <a class="el" href="../../d6/d16/classxii_typed_resource_handle.html">xiiTypedResourceHandle</a>&lt; ResourceType &gt; hLoadingFallback)</td></tr>
 <tr class="memdesc:a5aa7c47d141fcb9f88547dfccacc7fe1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Same as <a class="el" href="#a79a1bc5db8a2ac72fdfc386732ebfd45" title="Returns a handle to the requested resource. szResourceID must uniquely identify the resource,...">LoadResource()</a>, but additionally allows to set a priority on the resource and a custom fallback resource for this instance.  <br /></td></tr>
 <tr class="separator:a5aa7c47d141fcb9f88547dfccacc7fe1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9389b2e1425abc4d62231ca31b323349" id="r_a9389b2e1425abc4d62231ca31b323349"><td class="memItemLeft" align="right" valign="top"><a id="a9389b2e1425abc4d62231ca31b323349" name="a9389b2e1425abc4d62231ca31b323349"></a>
-static <a class="el" href="../../d6/d01/classxii_typeless_resource_handle.html">xiiTypelessResourceHandle</a>&#160;</td><td class="memItemRight" valign="bottom"><b>LoadResourceByType</b> (const <a class="el" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a> *pResourceType, <a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sResourceID)</td></tr>
+static <a class="el" href="../../d6/d01/classxii_typeless_resource_handle.html">xiiTypelessResourceHandle</a>&#160;</td><td class="memItemRight" valign="bottom"><b>LoadResourceByType</b> (const <a class="el" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a> *pResourceType, <a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sResourceID)</td></tr>
 <tr class="memdesc:a9389b2e1425abc4d62231ca31b323349"><td class="mdescLeft">&#160;</td><td class="mdescRight">Same as <a class="el" href="#a79a1bc5db8a2ac72fdfc386732ebfd45" title="Returns a handle to the requested resource. szResourceID must uniquely identify the resource,...">LoadResource()</a>, but instead of a template argument, the resource type to use is given as <a class="el" href="../../db/d89/classxii_r_t_t_i.html" title="This class holds information about reflected types. Each instance represents one type that is known t...">xiiRTTI</a> info. Returns a typeless handle due to the missing template argument. <br /></td></tr>
 <tr class="separator:a9389b2e1425abc4d62231ca31b323349"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa3bcde7a9d1738cfbdf28c164eb1aaa2" id="r_aa3bcde7a9d1738cfbdf28c164eb1aaa2"><td class="memItemLeft" align="right" valign="top"><a id="aa3bcde7a9d1738cfbdf28c164eb1aaa2" name="aa3bcde7a9d1738cfbdf28c164eb1aaa2"></a>
 static bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsAnyLoadingInProgress</b> ()</td></tr>
 <tr class="memdesc:aa3bcde7a9d1738cfbdf28c164eb1aaa2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether any resource loading is in progress. <br /></td></tr>
 <tr class="separator:aa3bcde7a9d1738cfbdf28c164eb1aaa2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3a5e923cdc3ab32bb6b9ca0d28eeb446" id="r_a3a5e923cdc3ab32bb6b9ca0d28eeb446"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../df/dfb/structxii_hybrid_string.html">xiiString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3a5e923cdc3ab32bb6b9ca0d28eeb446">GenerateUniqueResourceID</a> (<a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sResourceIDPrefix)</td></tr>
+<tr class="memitem:a3a5e923cdc3ab32bb6b9ca0d28eeb446" id="r_a3a5e923cdc3ab32bb6b9ca0d28eeb446"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../df/dfb/structxii_hybrid_string.html">xiiString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3a5e923cdc3ab32bb6b9ca0d28eeb446">GenerateUniqueResourceID</a> (<a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sResourceIDPrefix)</td></tr>
 <tr class="memdesc:a3a5e923cdc3ab32bb6b9ca0d28eeb446"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates a unique resource ID with the given prefix.  <br /></td></tr>
 <tr class="separator:a3a5e923cdc3ab32bb6b9ca0d28eeb446"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a79de0ab8b19f34d7b3e3c42d6b15db4f" id="r_a79de0ab8b19f34d7b3e3c42d6b15db4f"><td class="memTemplParams" colspan="2">template&lt;typename ResourceType , typename DescriptorType &gt; </td></tr>
-<tr class="memitem:a79de0ab8b19f34d7b3e3c42d6b15db4f"><td class="memTemplItemLeft" align="right" valign="top">static <a class="el" href="../../d6/d16/classxii_typed_resource_handle.html">xiiTypedResourceHandle</a>&lt; ResourceType &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a79de0ab8b19f34d7b3e3c42d6b15db4f">CreateResource</a> (<a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sResourceID, DescriptorType &amp;&amp;descriptor, <a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sResourceDescription=nullptr)</td></tr>
+<tr class="memitem:a79de0ab8b19f34d7b3e3c42d6b15db4f"><td class="memTemplItemLeft" align="right" valign="top">static <a class="el" href="../../d6/d16/classxii_typed_resource_handle.html">xiiTypedResourceHandle</a>&lt; ResourceType &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a79de0ab8b19f34d7b3e3c42d6b15db4f">CreateResource</a> (<a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sResourceID, DescriptorType &amp;&amp;descriptor, <a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sResourceDescription=nullptr)</td></tr>
 <tr class="memdesc:a79de0ab8b19f34d7b3e3c42d6b15db4f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a resource from a descriptor.  <br /></td></tr>
 <tr class="separator:a79de0ab8b19f34d7b3e3c42d6b15db4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a314b5972e6dbb3fe7eb1f2361a878c1b" id="r_a314b5972e6dbb3fe7eb1f2361a878c1b"><td class="memTemplParams" colspan="2">template&lt;typename ResourceType , typename DescriptorType &gt; </td></tr>
-<tr class="memitem:a314b5972e6dbb3fe7eb1f2361a878c1b"><td class="memTemplItemLeft" align="right" valign="top">static <a class="el" href="../../d6/d16/classxii_typed_resource_handle.html">xiiTypedResourceHandle</a>&lt; ResourceType &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a314b5972e6dbb3fe7eb1f2361a878c1b">GetOrCreateResource</a> (<a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sResourceID, DescriptorType &amp;&amp;descriptor, <a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sResourceDescription=nullptr)</td></tr>
+<tr class="memitem:a314b5972e6dbb3fe7eb1f2361a878c1b"><td class="memTemplItemLeft" align="right" valign="top">static <a class="el" href="../../d6/d16/classxii_typed_resource_handle.html">xiiTypedResourceHandle</a>&lt; ResourceType &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a314b5972e6dbb3fe7eb1f2361a878c1b">GetOrCreateResource</a> (<a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sResourceID, DescriptorType &amp;&amp;descriptor, <a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sResourceDescription=nullptr)</td></tr>
 <tr class="memdesc:a314b5972e6dbb3fe7eb1f2361a878c1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a handle to the resource with the given ID if it exists or creates it from a descriptor.  <br /></td></tr>
 <tr class="separator:a314b5972e6dbb3fe7eb1f2361a878c1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6c851ae8ea9489fa0122f262fe75e152" id="r_a6c851ae8ea9489fa0122f262fe75e152"><td class="memTemplParams" colspan="2">template&lt;typename ResourceType &gt; </td></tr>
-<tr class="memitem:a6c851ae8ea9489fa0122f262fe75e152"><td class="memTemplItemLeft" align="right" valign="top">static <a class="el" href="../../d6/d16/classxii_typed_resource_handle.html">xiiTypedResourceHandle</a>&lt; ResourceType &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a6c851ae8ea9489fa0122f262fe75e152">GetExistingResource</a> (<a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sResourceID)</td></tr>
+<tr class="memitem:a6c851ae8ea9489fa0122f262fe75e152"><td class="memTemplItemLeft" align="right" valign="top">static <a class="el" href="../../d6/d16/classxii_typed_resource_handle.html">xiiTypedResourceHandle</a>&lt; ResourceType &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a6c851ae8ea9489fa0122f262fe75e152">GetExistingResource</a> (<a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sResourceID)</td></tr>
 <tr class="memdesc:a6c851ae8ea9489fa0122f262fe75e152"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a handle to the resource with the given ID. If the resource does not exist, the handle is invalid.  <br /></td></tr>
 <tr class="separator:a6c851ae8ea9489fa0122f262fe75e152"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad913187ad4028d7c4e49251be74b29c0" id="r_ad913187ad4028d7c4e49251be74b29c0"><td class="memItemLeft" align="right" valign="top"><a id="ad913187ad4028d7c4e49251be74b29c0" name="ad913187ad4028d7c4e49251be74b29c0"></a>
-static <a class="el" href="../../d6/d01/classxii_typeless_resource_handle.html">xiiTypelessResourceHandle</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetExistingResourceByType</b> (const <a class="el" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a> *pResourceType, <a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sResourceID)</td></tr>
+static <a class="el" href="../../d6/d01/classxii_typeless_resource_handle.html">xiiTypelessResourceHandle</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetExistingResourceByType</b> (const <a class="el" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a> *pResourceType, <a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sResourceID)</td></tr>
 <tr class="memdesc:ad913187ad4028d7c4e49251be74b29c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Same as <a class="el" href="#ad913187ad4028d7c4e49251be74b29c0" title="Same as GetExistingResourceByType() but allows to specify the resource type as a xiiRTTI.">GetExistingResourceByType()</a> but allows to specify the resource type as a <a class="el" href="../../db/d89/classxii_r_t_t_i.html" title="This class holds information about reflected types. Each instance represents one type that is known t...">xiiRTTI</a>. <br /></td></tr>
 <tr class="separator:ad913187ad4028d7c4e49251be74b29c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5239795edd9afb1539935e8a9be4ab6b" id="r_a5239795edd9afb1539935e8a9be4ab6b"><td class="memTemplParams" colspan="2"><a id="a5239795edd9afb1539935e8a9be4ab6b" name="a5239795edd9afb1539935e8a9be4ab6b"></a>
 template&lt;typename ResourceType &gt; </td></tr>
-<tr class="memitem:a5239795edd9afb1539935e8a9be4ab6b"><td class="memTemplItemLeft" align="right" valign="top">static <a class="el" href="../../d6/d16/classxii_typed_resource_handle.html">xiiTypedResourceHandle</a>&lt; ResourceType &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>GetExistingResourceOrCreateAsync</b> (<a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sResourceID, <a class="el" href="../../d9/d4a/classxii_unique_ptr.html">xiiUniquePtr</a>&lt; <a class="el" href="../../da/d81/classxii_resource_type_loader.html">xiiResourceTypeLoader</a> &gt; &amp;&amp;pLoader, <a class="el" href="../../d6/d16/classxii_typed_resource_handle.html">xiiTypedResourceHandle</a>&lt; ResourceType &gt; hLoadingFallback={})</td></tr>
+<tr class="memitem:a5239795edd9afb1539935e8a9be4ab6b"><td class="memTemplItemLeft" align="right" valign="top">static <a class="el" href="../../d6/d16/classxii_typed_resource_handle.html">xiiTypedResourceHandle</a>&lt; ResourceType &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>GetExistingResourceOrCreateAsync</b> (<a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sResourceID, <a class="el" href="../../d9/d4a/classxii_unique_ptr.html">xiiUniquePtr</a>&lt; <a class="el" href="../../da/d81/classxii_resource_type_loader.html">xiiResourceTypeLoader</a> &gt; &amp;&amp;pLoader, <a class="el" href="../../d6/d16/classxii_typed_resource_handle.html">xiiTypedResourceHandle</a>&lt; ResourceType &gt; hLoadingFallback={})</td></tr>
 <tr class="separator:a5239795edd9afb1539935e8a9be4ab6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac94fa32ae030311c92c88997c6609cda" id="r_ac94fa32ae030311c92c88997c6609cda"><td class="memItemLeft" align="right" valign="top"><a id="ac94fa32ae030311c92c88997c6609cda" name="ac94fa32ae030311c92c88997c6609cda"></a>
-static <a class="el" href="../../d6/d01/classxii_typeless_resource_handle.html">xiiTypelessResourceHandle</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetExistingResourceOrCreateAsync</b> (const <a class="el" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a> *pResourceType, <a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sResourceID, <a class="el" href="../../d9/d4a/classxii_unique_ptr.html">xiiUniquePtr</a>&lt; <a class="el" href="../../da/d81/classxii_resource_type_loader.html">xiiResourceTypeLoader</a> &gt; &amp;&amp;pLoader)</td></tr>
+static <a class="el" href="../../d6/d01/classxii_typeless_resource_handle.html">xiiTypelessResourceHandle</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetExistingResourceOrCreateAsync</b> (const <a class="el" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a> *pResourceType, <a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sResourceID, <a class="el" href="../../d9/d4a/classxii_unique_ptr.html">xiiUniquePtr</a>&lt; <a class="el" href="../../da/d81/classxii_resource_type_loader.html">xiiResourceTypeLoader</a> &gt; &amp;&amp;pLoader)</td></tr>
 <tr class="separator:ac94fa32ae030311c92c88997c6609cda"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af6cae7d8973387923c4fc475c1203541" id="r_af6cae7d8973387923c4fc475c1203541"><td class="memItemLeft" align="right" valign="top"><a id="af6cae7d8973387923c4fc475c1203541" name="af6cae7d8973387923c4fc475c1203541"></a>
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>PreloadResource</b> (const <a class="el" href="../../d6/d01/classxii_typeless_resource_handle.html">xiiTypelessResourceHandle</a> &amp;hResource)</td></tr>
@@ -257,10 +257,10 @@ template&lt;typename ResourceType &gt; </td></tr>
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>EndAcquireResourcePointer</b> (<a class="el" href="../../d9/de1/classxii_resource.html">xiiResource</a> *pResource)</td></tr>
 <tr class="memdesc:ae5828329503efb6f0bc0601f2cdeef5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Same as EndAcquireResource but without the template parameter. See also BeginAcquireResourcePointer. <br /></td></tr>
 <tr class="separator:ae5828329503efb6f0bc0601f2cdeef5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acc2b287bf89068bd57d7142475f600dd" id="r_acc2b287bf89068bd57d7142475f600dd"><td class="memItemLeft" align="right" valign="top"><a id="acc2b287bf89068bd57d7142475f600dd" name="acc2b287bf89068bd57d7142475f600dd"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>ForceNoFallbackAcquisition</b> (xiiUInt32 uiNumFrames=0xFFFFFFFF)</td></tr>
-<tr class="memdesc:acc2b287bf89068bd57d7142475f600dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forces the resource manager to treat xiiResourceAcquireMode::AllowLoadingFallback as xiiResourceAcquireMode::BlockTillLoaded on BeginAcquireResource. <br /></td></tr>
-<tr class="separator:acc2b287bf89068bd57d7142475f600dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f28c2067f9ce5083a5df0938511bb7d" id="r_a7f28c2067f9ce5083a5df0938511bb7d"><td class="memItemLeft" align="right" valign="top"><a id="a7f28c2067f9ce5083a5df0938511bb7d" name="a7f28c2067f9ce5083a5df0938511bb7d"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>ForceNoFallbackAcquisition</b> (xiiUInt32 uiNumFrames=0xFFFFFFFFU)</td></tr>
+<tr class="memdesc:a7f28c2067f9ce5083a5df0938511bb7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forces the resource manager to treat xiiResourceAcquireMode::AllowLoadingFallback as xiiResourceAcquireMode::BlockTillLoaded on BeginAcquireResource. <br /></td></tr>
+<tr class="separator:a7f28c2067f9ce5083a5df0938511bb7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1678e051d42d6cd9dca4de62b7cd70b0" id="r_a1678e051d42d6cd9dca4de62b7cd70b0"><td class="memItemLeft" align="right" valign="top"><a id="a1678e051d42d6cd9dca4de62b7cd70b0" name="a1678e051d42d6cd9dca4de62b7cd70b0"></a>
 static xiiUInt32&#160;</td><td class="memItemRight" valign="bottom"><b>GetForceNoFallbackAcquisition</b> ()</td></tr>
 <tr class="memdesc:a1678e051d42d6cd9dca4de62b7cd70b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">If the returned number is greater 0 the resource manager treats xiiResourceAcquireMode::AllowLoadingFallback as xiiResourceAcquireMode::BlockTillLoaded on BeginAcquireResource. <br /></td></tr>
@@ -303,20 +303,20 @@ static <a class="el" href="../../da/d81/classxii_resource_type_loader.html">xiiR
 <tr class="memdesc:a3e41d0a237123ce860e23646e98b7c9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the resource loader to use for the given resource type.  <br /></td></tr>
 <tr class="separator:a3e41d0a237123ce860e23646e98b7c9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Named resources</div></td></tr>
-<tr class="memitem:a3e15bdd3bcf103bfd5ca2ed66caaf133" id="r_a3e15bdd3bcf103bfd5ca2ed66caaf133"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3e15bdd3bcf103bfd5ca2ed66caaf133">RegisterNamedResource</a> (<a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sLookupName, <a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sRedirectionResource)</td></tr>
+<tr class="memitem:a3e15bdd3bcf103bfd5ca2ed66caaf133" id="r_a3e15bdd3bcf103bfd5ca2ed66caaf133"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3e15bdd3bcf103bfd5ca2ed66caaf133">RegisterNamedResource</a> (<a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sLookupName, <a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sRedirectionResource)</td></tr>
 <tr class="memdesc:a3e15bdd3bcf103bfd5ca2ed66caaf133"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers a 'named' resource. When a resource is looked up using <em>szLookupName</em>, the lookup will be redirected to <em>szRedirectionResource</em>.  <br /></td></tr>
 <tr class="separator:a3e15bdd3bcf103bfd5ca2ed66caaf133"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0114e5fdcefc34eaae6fa277a3261407" id="r_a0114e5fdcefc34eaae6fa277a3261407"><td class="memItemLeft" align="right" valign="top"><a id="a0114e5fdcefc34eaae6fa277a3261407" name="a0114e5fdcefc34eaae6fa277a3261407"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>UnregisterNamedResource</b> (<a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sLookupName)</td></tr>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>UnregisterNamedResource</b> (<a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sLookupName)</td></tr>
 <tr class="memdesc:a0114e5fdcefc34eaae6fa277a3261407"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes a previously registered name from the redirection table. <br /></td></tr>
 <tr class="separator:a0114e5fdcefc34eaae6fa277a3261407"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Asset system interaction</div></td></tr>
 <tr class="memitem:a5794ad359067a1fad71008fa7d1956b8" id="r_a5794ad359067a1fad71008fa7d1956b8"><td class="memItemLeft" align="right" valign="top"><a id="a5794ad359067a1fad71008fa7d1956b8" name="a5794ad359067a1fad71008fa7d1956b8"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>RegisterResourceForAssetType</b> (<a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sAssetTypeName, const <a class="el" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a> *pResourceType)</td></tr>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>RegisterResourceForAssetType</b> (<a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sAssetTypeName, const <a class="el" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a> *pResourceType)</td></tr>
 <tr class="memdesc:a5794ad359067a1fad71008fa7d1956b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers which resource type to use to load an asset with the given type name. <br /></td></tr>
 <tr class="separator:a5794ad359067a1fad71008fa7d1956b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afbfe7855a9193bcdb415b7485811aee6" id="r_afbfe7855a9193bcdb415b7485811aee6"><td class="memItemLeft" align="right" valign="top"><a id="afbfe7855a9193bcdb415b7485811aee6" name="afbfe7855a9193bcdb415b7485811aee6"></a>
-static const <a class="el" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>FindResourceForAssetType</b> (<a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sAssetTypeName)</td></tr>
+static const <a class="el" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>FindResourceForAssetType</b> (<a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sAssetTypeName)</td></tr>
 <tr class="memdesc:afbfe7855a9193bcdb415b7485811aee6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the resource type that was registered to handle the given asset type for loading. nullptr if no resource type was registered for this asset type. <br /></td></tr>
 <tr class="separator:afbfe7855a9193bcdb415b7485811aee6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Export mode</div></td></tr>
@@ -330,7 +330,7 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsExportModeEn
 <tr class="separator:af798a70e6527e88c539f104596053cff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6fd5960f01fb9e69099f15c634c813da" id="r_a6fd5960f01fb9e69099f15c634c813da"><td class="memTemplParams" colspan="2"><a id="a6fd5960f01fb9e69099f15c634c813da" name="a6fd5960f01fb9e69099f15c634c813da"></a>
 template&lt;typename ResourceType &gt; </td></tr>
-<tr class="memitem:a6fd5960f01fb9e69099f15c634c813da"><td class="memTemplItemLeft" align="right" valign="top">static <a class="el" href="../../d6/d16/classxii_typed_resource_handle.html">xiiTypedResourceHandle</a>&lt; ResourceType &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>GetResourceHandleForExport</b> (<a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sResourceID)</td></tr>
+<tr class="memitem:a6fd5960f01fb9e69099f15c634c813da"><td class="memTemplItemLeft" align="right" valign="top">static <a class="el" href="../../d6/d16/classxii_typed_resource_handle.html">xiiTypedResourceHandle</a>&lt; ResourceType &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>GetResourceHandleForExport</b> (<a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sResourceID)</td></tr>
 <tr class="memdesc:a6fd5960f01fb9e69099f15c634c813da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a resource handle for the given resource ID. This method can only be used if export mode is enabled. Internally it will create a resource but does not load the content. This way it can be ensured that the resource handle is always only the size of a pointer. <br /></td></tr>
 <tr class="separator:a6fd5960f01fb9e69099f15c634c813da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Resource Type Overrides</div></td></tr>
@@ -549,7 +549,7 @@ template&lt;typename ResourceType , typename DescriptorType &gt; </div>
         <tr>
           <td class="memname"><a class="el" href="../../d6/d16/classxii_typed_resource_handle.html">xiiTypedResourceHandle</a>&lt; ResourceType &gt; xiiResourceManager::CreateResource </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a></td>          <td class="paramname"><span class="paramname"><em>sResourceID</em></span>, </td>
+          <td class="paramtype"><a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a></td>          <td class="paramname"><span class="paramname"><em>sResourceID</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -559,7 +559,7 @@ template&lt;typename ResourceType , typename DescriptorType &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a></td>          <td class="paramname"><span class="paramname"><em>sResourceDescription</em></span><span class="paramdefsep"> = </span><span class="paramdefval">nullptr</span>&#160;)</td>
+          <td class="paramtype"><a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a></td>          <td class="paramname"><span class="paramname"><em>sResourceDescription</em></span><span class="paramdefsep"> = </span><span class="paramdefval">nullptr</span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -593,7 +593,7 @@ template&lt;typename ResourceType , typename DescriptorType &gt; </div>
         <tr>
           <td class="memname"><a class="el" href="../../df/dfb/structxii_hybrid_string.html">xiiString</a> xiiResourceManager::GenerateUniqueResourceID </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a></td>          <td class="paramname"><span class="paramname"><em>sResourceIDPrefix</em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a></td>          <td class="paramname"><span class="paramname"><em>sResourceIDPrefix</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -623,7 +623,7 @@ template&lt;typename ResourceType &gt; </div>
         <tr>
           <td class="memname"><a class="el" href="../../d6/d16/classxii_typed_resource_handle.html">xiiTypedResourceHandle</a>&lt; ResourceType &gt; xiiResourceManager::GetExistingResource </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a></td>          <td class="paramname"><span class="paramname"><em>sResourceID</em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a></td>          <td class="paramname"><span class="paramname"><em>sResourceID</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -653,7 +653,7 @@ template&lt;typename ResourceType , typename DescriptorType &gt; </div>
         <tr>
           <td class="memname"><a class="el" href="../../d6/d16/classxii_typed_resource_handle.html">xiiTypedResourceHandle</a>&lt; ResourceType &gt; xiiResourceManager::GetOrCreateResource </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a></td>          <td class="paramname"><span class="paramname"><em>sResourceID</em></span>, </td>
+          <td class="paramtype"><a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a></td>          <td class="paramname"><span class="paramname"><em>sResourceID</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -663,7 +663,7 @@ template&lt;typename ResourceType , typename DescriptorType &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a></td>          <td class="paramname"><span class="paramname"><em>sResourceDescription</em></span><span class="paramdefsep"> = </span><span class="paramdefval">nullptr</span>&#160;)</td>
+          <td class="paramtype"><a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a></td>          <td class="paramname"><span class="paramname"><em>sResourceDescription</em></span><span class="paramdefsep"> = </span><span class="paramdefval">nullptr</span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -781,7 +781,7 @@ template&lt;typename ResourceType &gt; </div>
         <tr>
           <td class="memname"><a class="el" href="../../d6/d16/classxii_typed_resource_handle.html">xiiTypedResourceHandle</a>&lt; ResourceType &gt; xiiResourceManager::LoadResource </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a></td>          <td class="paramname"><span class="paramname"><em>sResourceID</em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a></td>          <td class="paramname"><span class="paramname"><em>sResourceID</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -811,7 +811,7 @@ template&lt;typename ResourceType &gt; </div>
         <tr>
           <td class="memname"><a class="el" href="../../d6/d16/classxii_typed_resource_handle.html">xiiTypedResourceHandle</a>&lt; ResourceType &gt; xiiResourceManager::LoadResource </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a></td>          <td class="paramname"><span class="paramname"><em>sResourceID</em></span>, </td>
+          <td class="paramtype"><a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a></td>          <td class="paramname"><span class="paramname"><em>sResourceID</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -843,12 +843,12 @@ template&lt;typename ResourceType &gt; </div>
         <tr>
           <td class="memname">void xiiResourceManager::RegisterNamedResource </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a></td>          <td class="paramname"><span class="paramname"><em>sLookupName</em></span>, </td>
+          <td class="paramtype"><a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a></td>          <td class="paramname"><span class="paramname"><em>sLookupName</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a></td>          <td class="paramname"><span class="paramname"><em>sRedirectionResource</em></span>&#160;)</td>
+          <td class="paramtype"><a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a></td>          <td class="paramname"><span class="paramname"><em>sRedirectionResource</em></span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -1125,7 +1125,7 @@ template&lt;typename RESOURCE_TYPE &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d4/d8e/classxii_resource_manager.html">xiiResourceManager</a></li>
-    <li class="footer">Generated on Tue Jul 2 2024 19:08:47 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Sat Aug 31 2024 15:15:01 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

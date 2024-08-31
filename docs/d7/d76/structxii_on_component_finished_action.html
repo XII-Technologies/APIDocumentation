@@ -151,9 +151,9 @@ Inheritance diagram for xiiOnComponentFinishedAction:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:ad8b331ac0268dfca79312043a9102736" id="r_ad8b331ac0268dfca79312043a9102736"><td class="memItemLeft" align="right" valign="top"><a id="ad8b331ac0268dfca79312043a9102736" name="ad8b331ac0268dfca79312043a9102736"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>Enum</b> : StorageType { <b>None</b>
-, <b>DeleteComponent</b>
-, <b>DeleteGameObject</b>
+<tr class="memitem:ad8b331ac0268dfca79312043a9102736" id="r_ad8b331ac0268dfca79312043a9102736"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad8b331ac0268dfca79312043a9102736">Enum</a> : StorageType { <a class="el" href="#ad8b331ac0268dfca79312043a9102736a2d844cbf2e5670749292b6d91a0961b5">None</a>
+, <a class="el" href="#ad8b331ac0268dfca79312043a9102736a136b0742237267dd0910c154d025cb86">DeleteComponent</a>
+, <a class="el" href="#ad8b331ac0268dfca79312043a9102736a60929806a8f1fdfc9c99b0d6f35d4940">DeleteGameObject</a>
 , <b>Default</b> = None
  }</td></tr>
 <tr class="separator:ad8b331ac0268dfca79312043a9102736"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -163,7 +163,7 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>StorageType</b> = xi
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:afff8e5a31a78ade3234c599d7aa59a17" id="r_afff8e5a31a78ade3234c599d7aa59a17"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afff8e5a31a78ade3234c599d7aa59a17">HandleFinishedAction</a> (<a class="el" href="../../db/d60/classxii_component.html">xiiComponent</a> *pComponent, xiiOnComponentFinishedAction::Enum action)</td></tr>
+<tr class="memitem:afff8e5a31a78ade3234c599d7aa59a17" id="r_afff8e5a31a78ade3234c599d7aa59a17"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afff8e5a31a78ade3234c599d7aa59a17">HandleFinishedAction</a> (<a class="el" href="../../db/d60/classxii_component.html">xiiComponent</a> *pComponent, <a class="el" href="#ad8b331ac0268dfca79312043a9102736">xiiOnComponentFinishedAction::Enum</a> action)</td></tr>
 <tr class="memdesc:afff8e5a31a78ade3234c599d7aa59a17"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call this when a component is 'finished' with its work.  <br /></td></tr>
 <tr class="separator:afff8e5a31a78ade3234c599d7aa59a17"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa04c13a5ad1325bf4c55d1e18801e090" id="r_aa04c13a5ad1325bf4c55d1e18801e090"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa04c13a5ad1325bf4c55d1e18801e090">HandleDeleteObjectMsg</a> (<a class="el" href="../../df/df3/structxii_msg_delete_game_object.html">xiiMsgDeleteGameObject</a> &amp;ref_msg, <a class="el" href="../../de/dfd/structxii_enum.html">xiiEnum</a>&lt; <a class="el" href="../../d7/d76/structxii_on_component_finished_action.html">xiiOnComponentFinishedAction</a> &gt; &amp;ref_action)</td></tr>
@@ -172,7 +172,30 @@ Static Public Member Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Certain components may delete themselves or their owner when they are finished with their main purpose. </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
+</div><h2 class="groupheader">Member Enumeration Documentation</h2>
+<a id="ad8b331ac0268dfca79312043a9102736" name="ad8b331ac0268dfca79312043a9102736"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad8b331ac0268dfca79312043a9102736">&#9670;&#160;</a></span>Enum</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="#ad8b331ac0268dfca79312043a9102736">xiiOnComponentFinishedAction::Enum</a> : StorageType</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ad8b331ac0268dfca79312043a9102736a2d844cbf2e5670749292b6d91a0961b5" name="ad8b331ac0268dfca79312043a9102736a2d844cbf2e5670749292b6d91a0961b5"></a>None&#160;</td><td class="fielddoc"><p>Nothing happens after the action is finished. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad8b331ac0268dfca79312043a9102736a136b0742237267dd0910c154d025cb86" name="ad8b331ac0268dfca79312043a9102736a136b0742237267dd0910c154d025cb86"></a>DeleteComponent&#160;</td><td class="fielddoc"><p>The component deletes only itself, but its game object stays. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad8b331ac0268dfca79312043a9102736a60929806a8f1fdfc9c99b0d6f35d4940" name="ad8b331ac0268dfca79312043a9102736a60929806a8f1fdfc9c99b0d6f35d4940"></a>DeleteGameObject&#160;</td><td class="fielddoc"><p>When finished the component deletes its owner game object. If there are multiple objects with this mode, the component instead deletes itself, and only the last such component deletes the game object. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
 <a id="aa04c13a5ad1325bf4c55d1e18801e090" name="aa04c13a5ad1325bf4c55d1e18801e090"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa04c13a5ad1325bf4c55d1e18801e090">&#9670;&#160;</a></span>HandleDeleteObjectMsg()</h2>
 
@@ -222,7 +245,7 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">xiiOnComponentFinishedAction::Enum</td>          <td class="paramname"><span class="paramname"><em>action</em></span>&#160;)</td>
+          <td class="paramtype"><a class="el" href="#ad8b331ac0268dfca79312043a9102736">xiiOnComponentFinishedAction::Enum</a></td>          <td class="paramname"><span class="paramname"><em>action</em></span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -247,7 +270,7 @@ Static Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d7/d76/structxii_on_component_finished_action.html">xiiOnComponentFinishedAction</a></li>
-    <li class="footer">Generated on Tue Jul 2 2024 19:08:46 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Sat Aug 31 2024 15:15:01 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

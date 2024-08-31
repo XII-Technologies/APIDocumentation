@@ -152,7 +152,7 @@ $(function(){initNavTree('da/df5/_blend_state_vulkan_8h_source.html','../../'); 
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>  XII_ADD_DYNAMIC_REFLECTION(<a class="code hl_class" href="../../d2/d2f/classxii_g_a_l_blend_state_vulkan.html">xiiGALBlendStateVulkan</a>, <a class="code hl_class" href="../../d8/dac/classxii_g_a_l_blend_state.html">xiiGALBlendState</a>);</div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>  <span class="keyword">const</span> vk::PipelineColorBlendStateCreateInfo* GetBlendState() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>  XII_ALWAYS_INLINE <span class="keyword">const</span> vk::PipelineColorBlendStateCreateInfo* GetBlendState()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> &amp;m_BlendState; }</div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="keyword">protected</span>:</div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>  <span class="keyword">friend</span> <span class="keyword">class </span><a class="code hl_class" href="../../d3/d6b/classxii_g_a_l_device_vulkan.html">xiiGALDeviceVulkan</a>;</div>
@@ -171,11 +171,9 @@ $(function(){initNavTree('da/df5/_blend_state_vulkan_8h_source.html','../../'); 
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>  <a class="code hl_class" href="../../d9/d25/classxii_static_array.html">xiiStaticArray&lt;vk::PipelineColorBlendAttachmentState, XII_GAL_MAX_RENDERTARGET_COUNT&gt;</a> m_BlendAttachmentState;</div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>};</div>
 </div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="preprocessor">#include &lt;GraphicsVulkan/States/Implementation/BlendStateVulkan_inl.h&gt;</span></div>
 <div class="ttc" id="aclassxii_g_a_l_blend_state_html"><div class="ttname"><a href="../../d8/dac/classxii_g_a_l_blend_state.html">xiiGALBlendState</a></div><div class="ttdoc">Interface that defines methods to manipulate a blend state object.</div><div class="ttdef"><b>Definition</b> BlendState.h:178</div></div>
 <div class="ttc" id="aclassxii_g_a_l_blend_state_vulkan_html"><div class="ttname"><a href="../../d2/d2f/classxii_g_a_l_blend_state_vulkan.html">xiiGALBlendStateVulkan</a></div><div class="ttdef"><b>Definition</b> BlendStateVulkan.h:14</div></div>
-<div class="ttc" id="aclassxii_g_a_l_device_vulkan_html"><div class="ttname"><a href="../../d3/d6b/classxii_g_a_l_device_vulkan.html">xiiGALDeviceVulkan</a></div><div class="ttdef"><b>Definition</b> DeviceVulkan.h:10</div></div>
+<div class="ttc" id="aclassxii_g_a_l_device_vulkan_html"><div class="ttname"><a href="../../d3/d6b/classxii_g_a_l_device_vulkan.html">xiiGALDeviceVulkan</a></div><div class="ttdef"><b>Definition</b> DeviceVulkan.h:9</div></div>
 <div class="ttc" id="aclassxii_memory_utils_html"><div class="ttname"><a href="../../d8/d9d/classxii_memory_utils.html">xiiMemoryUtils</a></div><div class="ttdoc">This class provides functions to work on raw memory.</div><div class="ttdef"><b>Definition</b> MemoryUtils.h:26</div></div>
 <div class="ttc" id="aclassxii_static_array_html"><div class="ttname"><a href="../../d9/d25/classxii_static_array.html">xiiStaticArray</a></div><div class="ttdoc">Wraps a C-style array, which has a fixed size at compile-time, with a more convenient interface.</div><div class="ttdef"><b>Definition</b> StaticArray.h:13</div></div>
 <div class="ttc" id="astructxii_g_a_l_blend_state_creation_description_html"><div class="ttname"><a href="../../d6/dd7/structxii_g_a_l_blend_state_creation_description.html">xiiGALBlendStateCreationDescription</a></div><div class="ttdoc">This describes the blend state for all render targets in the graphics pipeline.</div><div class="ttdef"><b>Definition</b> BlendState.h:166</div></div>
@@ -186,7 +184,7 @@ $(function(){initNavTree('da/df5/_blend_state_vulkan_8h_source.html','../../'); 
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.html">home</a></li><li class="navelem"><a class="el" href="../../dir_1036706e55c22cab35bc1c58ee689f1d.html">runner</a></li><li class="navelem"><a class="el" href="../../dir_629f8151d55d307162ff2d619fb1783d.html">work</a></li><li class="navelem"><a class="el" href="../../dir_1ddc44fe1263a8c7935fa6130b7d9499.html">XII</a></li><li class="navelem"><a class="el" href="../../dir_2c1b6808f12952f4c36e05ba7068379a.html">XII</a></li><li class="navelem"><a class="el" href="../../dir_b5a1c4ecfca018ad24b729e213296d41.html">Source</a></li><li class="navelem"><a class="el" href="../../dir_e321052006a51284e67389ab20037e7c.html">Engine</a></li><li class="navelem"><a class="el" href="../../dir_32f911672529289aa73bbec1c1630508.html">GraphicsVulkan</a></li><li class="navelem"><a class="el" href="../../dir_6b4b509d7a44b838d3577d71c839ffbe.html">States</a></li><li class="navelem"><b>BlendStateVulkan.h</b></li>
-    <li class="footer">Generated on Tue Jul 2 2024 19:08:43 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Sat Aug 31 2024 15:14:58 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

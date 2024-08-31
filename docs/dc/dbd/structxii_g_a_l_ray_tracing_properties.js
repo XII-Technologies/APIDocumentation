@@ -1,6 +1,5 @@
 var structxii_g_a_l_ray_tracing_properties =
 [
-    [ "operator==", "dc/dbd/structxii_g_a_l_ray_tracing_properties.html#ad09c840583bb06c4a99d34426f85abbb", null ],
     [ "m_CapabilityFlags", "dc/dbd/structxii_g_a_l_ray_tracing_properties.html#a79f9e0a8cfefd0bcd3722824dec0a617", null ],
     [ "m_uiBoxBufferAlignment", "dc/dbd/structxii_g_a_l_ray_tracing_properties.html#ab5ec0e9b245b3443ba647e13ff6d652d", null ],
     [ "m_uiIndexBufferAlignment", "dc/dbd/structxii_g_a_l_ray_tracing_properties.html#a3a4cd1d2a1145c696036830f65b0df8a", null ],

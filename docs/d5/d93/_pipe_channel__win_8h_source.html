@@ -16,7 +16,7 @@
 <meta name="twitter:title" content="XII" />
 <meta name="twitter:description" content="An advanced high-performance simulation engine." />
 <!-- END twitter metadata -->
-<title>XII: /home/runner/work/XII/XII/Source/Engine/Foundation/Communication/Implementation/Win/PipeChannel_win.h Source File</title>
+<title>XII: /home/runner/work/XII/XII/Source/Engine/Foundation/Platform/Implementation/Windows/PipeChannel_win.h Source File</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <link rel="icon" type="image/svg+xml" href="XII-Logo.png"/>
 <script type="text/javascript" src="../../jquery.js"></script>
@@ -154,14 +154,14 @@ $(function(){initNavTree('d5/d93/_pipe_channel__win_8h_source.html','../../'); i
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="keyword">class </span>XII_FOUNDATION_DLL xiiPipeChannel_win : <span class="keyword">public</span> <a class="code hl_class" href="../../df/d60/classxii_ipc_channel.html">xiiIpcChannel</a></div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>{</div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>  xiiPipeChannel_win(<a class="code hl_struct" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sAddress, Mode::Enum mode);</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>  xiiPipeChannel_win(<a class="code hl_class" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sAddress, Mode::Enum mode);</div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>  ~xiiPipeChannel_win();</div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="keyword">private</span>:</div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>  <span class="keyword">friend</span> <span class="keyword">class </span><a class="code hl_class" href="../../d7/db4/classxii_message_loop.html">xiiMessageLoop</a>;</div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>  <span class="keyword">friend</span> <span class="keyword">class </span>xiiMessageLoop_win;</div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>  <span class="keywordtype">bool</span> CreatePipe(<a class="code hl_struct" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sAddress);</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>  <span class="keywordtype">bool</span> CreatePipe(<a class="code hl_class" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sAddress);</div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>  <span class="comment">// All functions from here on down are run from worker thread only</span></div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="../../df/d60/classxii_ipc_channel.html#ae57cb1ca31b38112300aa43922881f45">InternalConnect</a>() <span class="keyword">override</span>;</div>
@@ -211,14 +211,14 @@ $(function(){initNavTree('d5/d93/_pipe_channel__win_8h_source.html','../../'); i
 <div class="ttc" id="aclassxii_ipc_channel_html_ada57eaec0217698c5d1b80659b9924ab"><div class="ttname"><a href="../../df/d60/classxii_ipc_channel.html#ada57eaec0217698c5d1b80659b9924ab">xiiIpcChannel::InternalSend</a></div><div class="ttdeci">virtual void InternalSend()=0</div><div class="ttdoc">Called on worker thread to sent pending messages.</div></div>
 <div class="ttc" id="aclassxii_ipc_channel_html_ae57cb1ca31b38112300aa43922881f45"><div class="ttname"><a href="../../df/d60/classxii_ipc_channel.html#ae57cb1ca31b38112300aa43922881f45">xiiIpcChannel::InternalConnect</a></div><div class="ttdeci">virtual void InternalConnect()=0</div><div class="ttdoc">Called on worker thread after Connect was called.</div></div>
 <div class="ttc" id="aclassxii_message_loop_html"><div class="ttname"><a href="../../d7/db4/classxii_message_loop.html">xiiMessageLoop</a></div><div class="ttdoc">Internal sub-system used by xiiIpcChannel.</div><div class="ttdef"><b>Definition</b> MessageLoop.h:20</div></div>
-<div class="ttc" id="astructxii_string_view_html"><div class="ttname"><a href="../../da/d9d/structxii_string_view.html">xiiStringView</a></div><div class="ttdoc">xiiStringView represent a read-only sub-string of a larger string, as it can store a dedicated string...</div><div class="ttdef"><b>Definition</b> StringView.h:28</div></div>
+<div class="ttc" id="aclassxii_string_view_html"><div class="ttname"><a href="../../d4/d85/classxii_string_view.html">xiiStringView</a></div><div class="ttdoc">xiiStringView represent a read-only sub-string of a larger string, as it can store a dedicated string...</div><div class="ttdef"><b>Definition</b> StringView.h:34</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.html">home</a></li><li class="navelem"><a class="el" href="../../dir_1036706e55c22cab35bc1c58ee689f1d.html">runner</a></li><li class="navelem"><a class="el" href="../../dir_629f8151d55d307162ff2d619fb1783d.html">work</a></li><li class="navelem"><a class="el" href="../../dir_1ddc44fe1263a8c7935fa6130b7d9499.html">XII</a></li><li class="navelem"><a class="el" href="../../dir_2c1b6808f12952f4c36e05ba7068379a.html">XII</a></li><li class="navelem"><a class="el" href="../../dir_b5a1c4ecfca018ad24b729e213296d41.html">Source</a></li><li class="navelem"><a class="el" href="../../dir_e321052006a51284e67389ab20037e7c.html">Engine</a></li><li class="navelem"><a class="el" href="../../dir_be0c42c58b36f42c54ec54024ed4f6af.html">Foundation</a></li><li class="navelem"><a class="el" href="../../dir_a114401e9c99597f3e9367f4986aadc8.html">Communication</a></li><li class="navelem"><a class="el" href="../../dir_4ee8e8f80b4f116ca58de70cefde2b0a.html">Implementation</a></li><li class="navelem"><a class="el" href="../../dir_4204f63fb15a4638b403a0e9c9dc55d4.html">Win</a></li><li class="navelem"><b>PipeChannel_win.h</b></li>
-    <li class="footer">Generated on Tue Jul 2 2024 19:08:34 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="navelem"><a class="el" href="../../dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.html">home</a></li><li class="navelem"><a class="el" href="../../dir_1036706e55c22cab35bc1c58ee689f1d.html">runner</a></li><li class="navelem"><a class="el" href="../../dir_629f8151d55d307162ff2d619fb1783d.html">work</a></li><li class="navelem"><a class="el" href="../../dir_1ddc44fe1263a8c7935fa6130b7d9499.html">XII</a></li><li class="navelem"><a class="el" href="../../dir_2c1b6808f12952f4c36e05ba7068379a.html">XII</a></li><li class="navelem"><a class="el" href="../../dir_b5a1c4ecfca018ad24b729e213296d41.html">Source</a></li><li class="navelem"><a class="el" href="../../dir_e321052006a51284e67389ab20037e7c.html">Engine</a></li><li class="navelem"><a class="el" href="../../dir_be0c42c58b36f42c54ec54024ed4f6af.html">Foundation</a></li><li class="navelem"><a class="el" href="../../dir_664c047245be96e54b4c21a35d20a789.html">Platform</a></li><li class="navelem"><a class="el" href="../../dir_ed92eb75a0769b88f81ec30678d8111f.html">Implementation</a></li><li class="navelem"><a class="el" href="../../dir_6309b8608ad3a96b0815dd8267345211.html">Windows</a></li><li class="navelem"><b>PipeChannel_win.h</b></li>
+    <li class="footer">Generated on Sat Aug 31 2024 15:14:56 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

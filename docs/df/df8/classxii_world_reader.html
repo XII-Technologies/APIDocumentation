@@ -156,7 +156,7 @@ Classes</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:aa49f3cd19c1b869755c2739e006541dc" id="r_aa49f3cd19c1b869755c2739e006541dc"><td class="memItemLeft" align="right" valign="top"><a id="aa49f3cd19c1b869755c2739e006541dc" name="aa49f3cd19c1b869755c2739e006541dc"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>FindComponentTypeCallback</b> = <a class="el" href="../../dc/d84/structxii_delegate.html">xiiDelegate</a>&lt;const <a class="el" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a>*(<a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sTypeName)&gt;</td></tr>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>FindComponentTypeCallback</b> = <a class="el" href="../../dc/d84/structxii_delegate.html">xiiDelegate</a>&lt;const <a class="el" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a>*(<a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sTypeName)&gt;</td></tr>
 <tr class="separator:aa49f3cd19c1b869755c2739e006541dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -186,6 +186,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>ReadComponentHandle</
 xiiUInt32&#160;</td><td class="memItemRight" valign="bottom"><b>GetComponentTypeVersion</b> (const <a class="el" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a> *pRtti) const</td></tr>
 <tr class="memdesc:a50c86dc72ddbed4d092cef507873f5e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used during component deserialization to query the actual version number with which the given component type was written. The version number is given through the XII_BEGIN_COMPONENT_TYPE macro. Whenever the serialization of a component changes, that number should be increased. <br /></td></tr>
 <tr class="separator:a50c86dc72ddbed4d092cef507873f5e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5e05ae4f2b00084a5653fee2ab6027c" id="r_aa5e05ae4f2b00084a5653fee2ab6027c"><td class="memItemLeft" align="right" valign="top"><a id="aa5e05ae4f2b00084a5653fee2ab6027c" name="aa5e05ae4f2b00084a5653fee2ab6027c"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>HasComponentOfType</b> (const <a class="el" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a> *pRtti) const</td></tr>
+<tr class="memdesc:aa5e05ae4f2b00084a5653fee2ab6027c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether world contains a component of given type. <br /></td></tr>
+<tr class="separator:aa5e05ae4f2b00084a5653fee2ab6027c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a87b91893d3059f2d94c628c167b291b1" id="r_a87b91893d3059f2d94c628c167b291b1"><td class="memItemLeft" align="right" valign="top"><a id="a87b91893d3059f2d94c628c167b291b1" name="a87b91893d3059f2d94c628c167b291b1"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>ClearAndCompact</b> ()</td></tr>
 <tr class="memdesc:a87b91893d3059f2d94c628c167b291b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clears all data. <br /></td></tr>
@@ -356,7 +360,7 @@ Static Public Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../df/df8/classxii_world_reader.html">xiiWorldReader</a></li>
-    <li class="footer">Generated on Tue Jul 2 2024 19:08:48 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Sat Aug 31 2024 15:15:02 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

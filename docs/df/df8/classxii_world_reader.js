@@ -5,6 +5,7 @@ var classxii_world_reader =
     [ "GetComponentTypeVersion", "df/df8/classxii_world_reader.html#a50c86dc72ddbed4d092cef507873f5e1", null ],
     [ "GetHeapMemoryUsage", "df/df8/classxii_world_reader.html#a649d32f35c1514bc277fc7195ad3c559", null ],
     [ "GetStream", "df/df8/classxii_world_reader.html#ac73e19a8466fa32f5705523bc20d3738", null ],
+    [ "HasComponentOfType", "df/df8/classxii_world_reader.html#aa5e05ae4f2b00084a5653fee2ab6027c", null ],
     [ "InstantiatePrefab", "df/df8/classxii_world_reader.html#a3a39b2f837a942905fcbe65514211095", null ],
     [ "InstantiateWorld", "df/df8/classxii_world_reader.html#a4efe656b51aa75eeb1f83296ffd6ee72", null ],
     [ "ReadComponentHandle", "df/df8/classxii_world_reader.html#a6fc5b21a361bcdb9ceaa3ba9b7fe748c", null ],

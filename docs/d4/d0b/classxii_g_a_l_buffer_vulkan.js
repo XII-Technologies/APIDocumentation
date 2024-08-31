@@ -1,7 +1,7 @@
 var classxii_g_a_l_buffer_vulkan =
 [
-    [ "FlushMappedRange", "d4/d0b/classxii_g_a_l_buffer_vulkan.html#aab1d5a707fc984e07b5915f8396cfdbe", null ],
-    [ "GetMemoryProperties", "d4/d0b/classxii_g_a_l_buffer_vulkan.html#ae8ee11c761998902156000db8800d5aa", null ],
-    [ "GetSparseProperties", "d4/d0b/classxii_g_a_l_buffer_vulkan.html#a071d96b263519d4d2d52d0d170a2dc3b", null ],
-    [ "InvalidateMappedRange", "d4/d0b/classxii_g_a_l_buffer_vulkan.html#a2efd7e699d987167e833f1dfcbd284ad", null ]
+    [ "FlushMappedRange", "d4/d0b/classxii_g_a_l_buffer_vulkan.html#a4fa3d22615a815eff64bf55058d17590", null ],
+    [ "GetMemoryProperties", "d4/d0b/classxii_g_a_l_buffer_vulkan.html#a5d4ceab5dabd322c47547f1e54f4844f", null ],
+    [ "GetSparseProperties", "d4/d0b/classxii_g_a_l_buffer_vulkan.html#a2aa81e7b5d5f8d7f89a7c1f6d12be6b4", null ],
+    [ "InvalidateMappedRange", "d4/d0b/classxii_g_a_l_buffer_vulkan.html#a465c64fe7e4b81399baedefeca5b3f24", null ]
 ];

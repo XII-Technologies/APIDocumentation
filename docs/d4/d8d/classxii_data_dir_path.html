@@ -149,7 +149,7 @@ Public Member Functions</h2></td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><b>xiiDataDirPath</b> ()</td></tr>
 <tr class="memdesc:a3809fe84e2b00bcc1c4a3747796760a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default ctor, creates an invalid data directory path. <br /></td></tr>
 <tr class="separator:a3809fe84e2b00bcc1c4a3747796760a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1a34bd20972785d251597d23d3ff6e12" id="r_a1a34bd20972785d251597d23d3ff6e12"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1a34bd20972785d251597d23d3ff6e12">xiiDataDirPath</a> (<a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sAbsPath, <a class="el" href="../../d0/d60/classxii_array_ptr.html">xiiArrayPtr</a>&lt; <a class="el" href="../../df/dfb/structxii_hybrid_string.html">xiiString</a> &gt; dataDirRoots, xiiUInt32 uiLastKnownDataDirIndex=0)</td></tr>
+<tr class="memitem:a1a34bd20972785d251597d23d3ff6e12" id="r_a1a34bd20972785d251597d23d3ff6e12"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1a34bd20972785d251597d23d3ff6e12">xiiDataDirPath</a> (<a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sAbsPath, <a class="el" href="../../d0/d60/classxii_array_ptr.html">xiiArrayPtr</a>&lt; <a class="el" href="../../df/dfb/structxii_hybrid_string.html">xiiString</a> &gt; dataDirRoots, xiiUInt32 uiLastKnownDataDirIndex=0)</td></tr>
 <tr class="memdesc:a1a34bd20972785d251597d23d3ff6e12"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tries to create a new data directory path from an absolute path. Check IsValid afterwards to confirm this path is inside a data directory.  <br /></td></tr>
 <tr class="separator:a1a34bd20972785d251597d23d3ff6e12"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a765540bb2a31d12ab7f8fdbefad19f77" id="r_a765540bb2a31d12ab7f8fdbefad19f77"><td class="memItemLeft" align="right" valign="top"><a id="a765540bb2a31d12ab7f8fdbefad19f77" name="a765540bb2a31d12ab7f8fdbefad19f77"></a>
@@ -178,22 +178,22 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>Clear</b> ()</td></tr
 &#160;</td><td class="memItemRight" valign="bottom"><b>operator xiiStringView</b> () const</td></tr>
 <tr class="separator:aecdf69bda185c7a48ea91b72674a4e1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac6c85f1ca536bbf3191bcdfb49b90036" id="r_ac6c85f1ca536bbf3191bcdfb49b90036"><td class="memItemLeft" align="right" valign="top"><a id="ac6c85f1ca536bbf3191bcdfb49b90036" name="ac6c85f1ca536bbf3191bcdfb49b90036"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator==</b> (<a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> rhs) const</td></tr>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator==</b> (<a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> rhs) const</td></tr>
 <tr class="separator:ac6c85f1ca536bbf3191bcdfb49b90036"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ade278d7c3efa5e3f9133910a4dd03931" id="r_ade278d7c3efa5e3f9133910a4dd03931"><td class="memItemLeft" align="right" valign="top"><a id="ade278d7c3efa5e3f9133910a4dd03931" name="ade278d7c3efa5e3f9133910a4dd03931"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator!=</b> (<a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> rhs) const</td></tr>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator!=</b> (<a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> rhs) const</td></tr>
 <tr class="separator:ade278d7c3efa5e3f9133910a4dd03931"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Data directory access. Only allowed to be called if IsValid() is true.</div></td></tr>
 <tr class="memitem:a98d7a7ad80ea502b8fd862ef8a5e9398" id="r_a98d7a7ad80ea502b8fd862ef8a5e9398"><td class="memItemLeft" align="right" valign="top"><a id="a98d7a7ad80ea502b8fd862ef8a5e9398" name="a98d7a7ad80ea502b8fd862ef8a5e9398"></a>
-<a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetDataDirParentRelativePath</b> () const</td></tr>
+<a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetDataDirParentRelativePath</b> () const</td></tr>
 <tr class="memdesc:a98d7a7ad80ea502b8fd862ef8a5e9398"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a relative path including the data directory the path belongs to, e.g. "Testing Chambers/Objects/Barrel.xiiPrefab". <br /></td></tr>
 <tr class="separator:a98d7a7ad80ea502b8fd862ef8a5e9398"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a611fcd3cc839a23bd06ddbd4f3e324f1" id="r_a611fcd3cc839a23bd06ddbd4f3e324f1"><td class="memItemLeft" align="right" valign="top"><a id="a611fcd3cc839a23bd06ddbd4f3e324f1" name="a611fcd3cc839a23bd06ddbd4f3e324f1"></a>
-<a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetDataDirRelativePath</b> () const</td></tr>
+<a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetDataDirRelativePath</b> () const</td></tr>
 <tr class="memdesc:a611fcd3cc839a23bd06ddbd4f3e324f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a path relative to the data directory the path belongs to, e.g. "Objects/Barrel.xiiPrefab". <br /></td></tr>
 <tr class="separator:a611fcd3cc839a23bd06ddbd4f3e324f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3c3a7967aab8ee0ce039001cf36ba203" id="r_a3c3a7967aab8ee0ce039001cf36ba203"><td class="memItemLeft" align="right" valign="top"><a id="a3c3a7967aab8ee0ce039001cf36ba203" name="a3c3a7967aab8ee0ce039001cf36ba203"></a>
-<a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetDataDir</b> () const</td></tr>
+<a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetDataDir</b> () const</td></tr>
 <tr class="memdesc:a3c3a7967aab8ee0ce039001cf36ba203"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns absolute path to the data directory this path belongs to, e.g. "C:/xiiEngine/Data/Samples/Testing Chambers". <br /></td></tr>
 <tr class="separator:a3c3a7967aab8ee0ce039001cf36ba203"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a13ff78c05e7ad3bbe9f623b8c0c14ea4" id="r_a13ff78c05e7ad3bbe9f623b8c0c14ea4"><td class="memItemLeft" align="right" valign="top"><a id="a13ff78c05e7ad3bbe9f623b8c0c14ea4" name="a13ff78c05e7ad3bbe9f623b8c0c14ea4"></a>
@@ -229,7 +229,7 @@ xiiUInt8&#160;</td><td class="memItemRight" valign="bottom"><b>GetDataDirIndex</
         <tr>
           <td class="memname">xiiDataDirPath::xiiDataDirPath </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a></td>          <td class="paramname"><span class="paramname"><em>sAbsPath</em></span>, </td>
+          <td class="paramtype"><a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a></td>          <td class="paramname"><span class="paramname"><em>sAbsPath</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -304,7 +304,7 @@ xiiUInt8&#160;</td><td class="memItemRight" valign="bottom"><b>GetDataDirIndex</
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d4/d8d/classxii_data_dir_path.html">xiiDataDirPath</a></li>
-    <li class="footer">Generated on Tue Jul 2 2024 19:08:44 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Sat Aug 31 2024 15:14:59 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

@@ -159,7 +159,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:aa1b45a240189f6f5fe1d1562f8bbb7f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default Constructor. <br /></td></tr>
 <tr class="separator:aa1b45a240189f6f5fe1d1562f8bbb7f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4d0a4e7a1fee77cdba940a2179600c36" id="r_a4d0a4e7a1fee77cdba940a2179600c36"><td class="memItemLeft" align="right" valign="top"><a id="a4d0a4e7a1fee77cdba940a2179600c36" name="a4d0a4e7a1fee77cdba940a2179600c36"></a>
-float&#160;</td><td class="memItemRight" valign="bottom"><b>GetInputSlotState</b> (<a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sSlot) const</td></tr>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>GetInputSlotState</b> (<a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sSlot) const</td></tr>
 <tr class="memdesc:a4d0a4e7a1fee77cdba940a2179600c36"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allows to query current input values for the given slot. <br /></td></tr>
 <tr class="separator:a4d0a4e7a1fee77cdba940a2179600c36"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a15dbf12f97646a010591fd4c17bef015" id="r_a15dbf12f97646a010591fd4c17bef015"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a15dbf12f97646a010591fd4c17bef015">HasDeviceBeenUsedLastFrame</a> () const</td></tr>
@@ -200,7 +200,7 @@ Protected Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-static-methods" name="pro-static-methods"></a>
 Static Protected Member Functions</h2></td></tr>
 <tr class="memitem:a9048f4cf891f562e76aff5a61e517aa1" id="r_a9048f4cf891f562e76aff5a61e517aa1"><td class="memItemLeft" align="right" valign="top"><a id="a9048f4cf891f562e76aff5a61e517aa1" name="a9048f4cf891f562e76aff5a61e517aa1"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>RegisterInputSlot</b> (<a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sName, <a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sDefaultDisplayName, <a class="el" href="../../d7/d55/structxii_bitflags.html">xiiBitflags</a>&lt; <a class="el" href="../../db/db7/structxii_input_slot_flags.html">xiiInputSlotFlags</a> &gt; SlotFlags)</td></tr>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>RegisterInputSlot</b> (<a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sName, <a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sDefaultDisplayName, <a class="el" href="../../d7/d55/structxii_bitflags.html">xiiBitflags</a>&lt; <a class="el" href="../../db/db7/structxii_input_slot_flags.html">xiiInputSlotFlags</a> &gt; SlotFlags)</td></tr>
 <tr class="memdesc:a9048f4cf891f562e76aff5a61e517aa1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calls <a class="el" href="#a9048f4cf891f562e76aff5a61e517aa1" title="Calls RegisterInputSlot() on the xiiInputManager and passes the parameters through.">RegisterInputSlot()</a> on the <a class="el" href="../../de/d43/classxii_input_manager.html" title="The central class to set up and query the state of all input.">xiiInputManager</a> and passes the parameters through. <br /></td></tr>
 <tr class="separator:a9048f4cf891f562e76aff5a61e517aa1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -402,7 +402,7 @@ static const <a class="el" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a>
 <p>Override this, if you need to query the state of the hardware to update the input slots. </p>
 <dl class="section note"><dt>Note</dt><dd>This function might be called multiple times before <a class="el" href="#ab1cc621bc1f7252df00f2be9a20c9c74" title="Override this, if you need to reset certain input slot values to zero, after the xiiInputManager is f...">ResetInputSlotValues()</a> is called. This will be the case when <a class="el" href="../../de/d43/classxii_input_manager.html#a8136ed34dffe1ddbd193876cd27eb372" title="Makes sure that hardware input is processed at this moment, which allows to do this more often than U...">xiiInputManager::PollHardware</a> is used to make more frequent hardware updates than input is actually processed. Just make sure to always accumulate delta values (such as mouse move values) and don't expect <a class="el" href="#ab1cc621bc1f7252df00f2be9a20c9c74" title="Override this, if you need to reset certain input slot values to zero, after the xiiInputManager is f...">ResetInputSlotValues()</a> to be called in tandem with this function and it will be fine. </dd></dl>
 
-<p>Implemented in <a class="el" href="../../d0/d22/classxii_dummy_x_r_input.html#adefe4cf60537e282244b41aadfdd25ea">xiiDummyXRInput</a>, <a class="el" href="../../dd/d1a/classxii_input_device_mouse_keyboard.html#a1792e55fcd468b3f2bccf31d56ef3543">xiiInputDeviceMouseKeyboard</a>, <a class="el" href="../../d1/d10/classxii_input_device_x_box360.html#a040649a781430eb8886ef654892870f0">xiiInputDeviceXBox360</a>, <a class="el" href="../../dc/de5/classxii_standard_input_device.html#a55efe645bd9cf2a57673f066bca09bdb">xiiStandardInputDevice</a>, <a class="el" href="../../dc/de5/classxii_standard_input_device.html#a18c8ebe2ee79494d490c8b727595f5fb">xiiStandardInputDevice</a>, and <a class="el" href="../../d2/d95/classxii_virtual_thumb_stick.html#a7af75239aebfbdd71b6d3e3b56709203">xiiVirtualThumbStick</a>.</p>
+<p>Implemented in <a class="el" href="../../d0/d22/classxii_dummy_x_r_input.html#adefe4cf60537e282244b41aadfdd25ea">xiiDummyXRInput</a>, <a class="el" href="../../dd/d1a/classxii_input_device_mouse_keyboard.html#a1792e55fcd468b3f2bccf31d56ef3543">xiiInputDeviceMouseKeyboard</a>, <a class="el" href="../../d1/d10/classxii_input_device_x_box360.html#a040649a781430eb8886ef654892870f0">xiiInputDeviceXBox360</a>, <a class="el" href="../../dc/de5/classxii_standard_input_device.html#a55efe645bd9cf2a57673f066bca09bdb">xiiStandardInputDevice</a>, and <a class="el" href="../../d2/d95/classxii_virtual_thumb_stick.html#a7af75239aebfbdd71b6d3e3b56709203">xiiVirtualThumbStick</a>.</p>
 
 </div>
 </div>
@@ -442,7 +442,7 @@ static const <a class="el" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d7/db1/classxii_input_device.html">xiiInputDevice</a></li>
-    <li class="footer">Generated on Tue Jul 2 2024 19:08:45 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Sat Aug 31 2024 15:15:00 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

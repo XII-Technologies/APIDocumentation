@@ -176,7 +176,7 @@ $(function(){initNavTree('d3/d57/_color8_u_norm_8h_source.html','../../'); initR
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>};</div>
 </div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>XII_CHECK_AT_COMPILETIME(<span class="keyword">sizeof</span>(<a class="code hl_class" href="../../db/df1/classxii_color_base_u_b.html">xiiColorBaseUB</a>) == 4);</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="keyword">static_assert</span>(<span class="keyword">sizeof</span>(<a class="code hl_class" href="../../db/df1/classxii_color_base_u_b.html">xiiColorBaseUB</a>) == 4);</div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
 <div class="foldopen" id="foldopen00054" data-start="{" data-end="};">
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="../../d0/d34/classxii_color_linear_u_b.html">   54</a></span><span class="keyword">class </span>XII_FOUNDATION_DLL <a class="code hl_class" href="../../d0/d34/classxii_color_linear_u_b.html">xiiColorLinearUB</a> : <span class="keyword">public</span> <a class="code hl_class" href="../../db/df1/classxii_color_base_u_b.html">xiiColorBaseUB</a></div>
@@ -196,7 +196,7 @@ $(function(){initNavTree('d3/d57/_color8_u_norm_8h_source.html','../../'); initR
 <div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>};</div>
 </div>
 <div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>XII_CHECK_AT_COMPILETIME(<span class="keyword">sizeof</span>(<a class="code hl_class" href="../../d0/d34/classxii_color_linear_u_b.html">xiiColorLinearUB</a>) == 4);</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span><span class="keyword">static_assert</span>(<span class="keyword">sizeof</span>(<a class="code hl_class" href="../../d0/d34/classxii_color_linear_u_b.html">xiiColorLinearUB</a>) == 4);</div>
 <div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
 <div class="foldopen" id="foldopen00083" data-start="{" data-end="};">
 <div class="line"><a id="l00083" name="l00083"></a><span class="lineno"><a class="line" href="../../df/d71/classxii_color_gamma_u_b.html">   83</a></span><span class="keyword">class </span>XII_FOUNDATION_DLL <a class="code hl_class" href="../../df/d71/classxii_color_gamma_u_b.html">xiiColorGammaUB</a> : <span class="keyword">public</span> <a class="code hl_class" href="../../db/df1/classxii_color_base_u_b.html">xiiColorBaseUB</a></div>
@@ -213,12 +213,22 @@ $(function(){initNavTree('d3/d57/_color8_u_norm_8h_source.html','../../'); initR
 <div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>  <span class="keywordtype">void</span> operator=(<span class="keyword">const</span> <a class="code hl_class" href="../../d3/de6/classxii_color.html">xiiColor</a>&amp; color); <span class="comment">// [tested]</span></div>
 <div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span> </div>
 <div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>  <a class="code hl_class" href="../../d3/de6/classxii_color.html">xiiColor</a> ToLinearFloat() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>};</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span> </div>
+<div class="foldopen" id="foldopen00106" data-start="{" data-end="}">
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno"><a class="line" href="../../df/d71/classxii_color_gamma_u_b.html#af8528dfc7dd9b2bfe99721a2fa40978e">  106</a></span>  <span class="keyword">static</span> <a class="code hl_class" href="../../d0/d34/classxii_color_linear_u_b.html">xiiColorLinearUB</a> <a class="code hl_function" href="../../df/d71/classxii_color_gamma_u_b.html#af8528dfc7dd9b2bfe99721a2fa40978e">MakeFromABGR8</a>(xiiUInt32 value)</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>  {</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>    <span class="keywordflow">return</span> <a class="code hl_class" href="../../d0/d34/classxii_color_linear_u_b.html">xiiColorLinearUB</a>(<span class="keyword">static_cast&lt;</span>xiiUInt8<span class="keyword">&gt;</span>(value &gt;&gt; 0) &amp; 0xFF,</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>                            <span class="keyword">static_cast&lt;</span>xiiUInt8<span class="keyword">&gt;</span>(value &gt;&gt; 8) &amp; 0xFF,</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>                            <span class="keyword">static_cast&lt;</span>xiiUInt8<span class="keyword">&gt;</span>(value &gt;&gt; 16) &amp; 0xFF,</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>                            <span class="keyword">static_cast&lt;</span>xiiUInt8<span class="keyword">&gt;</span>(value &gt;&gt; 24) &amp; 0xFF);</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>  }</div>
 </div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span> </div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>XII_CHECK_AT_COMPILETIME(<span class="keyword">sizeof</span>(<a class="code hl_class" href="../../df/d71/classxii_color_gamma_u_b.html">xiiColorGammaUB</a>) == 4);</div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span> </div>
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span><span class="preprocessor">#include &lt;Foundation/Math/Implementation/Color8UNorm_inl.h&gt;</span></div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>};</div>
+</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span> </div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span><span class="keyword">static_assert</span>(<span class="keyword">sizeof</span>(<a class="code hl_class" href="../../df/d71/classxii_color_gamma_u_b.html">xiiColorGammaUB</a>) == 4);</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span> </div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span><span class="preprocessor">#include &lt;Foundation/Math/Implementation/Color8UNorm_inl.h&gt;</span></div>
 <div class="ttc" id="aclassxii_color_base_u_b_html"><div class="ttname"><a href="../../db/df1/classxii_color_base_u_b.html">xiiColorBaseUB</a></div><div class="ttdoc">A 8bit per channel color storage format with undefined encoding. It is up to the user to reinterpret ...</div><div class="ttdef"><b>Definition</b> Color8UNorm.h:12</div></div>
 <div class="ttc" id="aclassxii_color_base_u_b_html_a1ac2fd8a3b35e6a57b959906a615e8e3"><div class="ttname"><a href="../../db/df1/classxii_color_base_u_b.html#a1ac2fd8a3b35e6a57b959906a615e8e3">xiiColorBaseUB::GetData</a></div><div class="ttdeci">xiiUInt8 * GetData()</div><div class="ttdoc">Conversion to xiiUInt8*.</div><div class="ttdef"><b>Definition</b> Color8UNorm.h:31</div></div>
 <div class="ttc" id="aclassxii_color_base_u_b_html_a2ae44de99740a78bfbff5f1003d0cce3"><div class="ttname"><a href="../../db/df1/classxii_color_base_u_b.html#a2ae44de99740a78bfbff5f1003d0cce3">xiiColorBaseUB::GetData</a></div><div class="ttdeci">const xiiUInt8 * GetData() const</div><div class="ttdoc">Conversion to const xiiUInt8*.</div><div class="ttdef"><b>Definition</b> Color8UNorm.h:28</div></div>
@@ -227,6 +237,7 @@ $(function(){initNavTree('d3/d57/_color8_u_norm_8h_source.html','../../'); initR
 <div class="ttc" id="aclassxii_color_base_u_b_html_af7e7cbfa64546e8bbde2f906a455d542"><div class="ttname"><a href="../../db/df1/classxii_color_base_u_b.html#af7e7cbfa64546e8bbde2f906a455d542">xiiColorBaseUB::ToABGR8</a></div><div class="ttdeci">xiiUInt32 ToABGR8() const</div><div class="ttdoc">Packs the 4 color values into a single uint32 with R in the least significant bits and A in the most ...</div><div class="ttdef"><b>Definition</b> Color8UNorm.h:41</div></div>
 <div class="ttc" id="aclassxii_color_gamma_u_b_html"><div class="ttname"><a href="../../df/d71/classxii_color_gamma_u_b.html">xiiColorGammaUB</a></div><div class="ttdoc">A 8bit per channel unsigned normalized (values interpreted as 0-1) color storage format that represen...</div><div class="ttdef"><b>Definition</b> Color8UNorm.h:84</div></div>
 <div class="ttc" id="aclassxii_color_gamma_u_b_html_a8a32a24dca2e7c056d13e58626d9f9d5"><div class="ttname"><a href="../../df/d71/classxii_color_gamma_u_b.html#a8a32a24dca2e7c056d13e58626d9f9d5">xiiColorGammaUB::xiiColorGammaUB</a></div><div class="ttdeci">xiiColorGammaUB()=default</div><div class="ttdoc">Default-constructed color is uninitialized (for speed)</div></div>
+<div class="ttc" id="aclassxii_color_gamma_u_b_html_af8528dfc7dd9b2bfe99721a2fa40978e"><div class="ttname"><a href="../../df/d71/classxii_color_gamma_u_b.html#af8528dfc7dd9b2bfe99721a2fa40978e">xiiColorGammaUB::MakeFromABGR8</a></div><div class="ttdeci">static xiiColorLinearUB MakeFromABGR8(xiiUInt32 value)</div><div class="ttdoc">Extracts the values from a uint32 with R at the least significant bits, then G, then B and A at the m...</div><div class="ttdef"><b>Definition</b> Color8UNorm.h:106</div></div>
 <div class="ttc" id="aclassxii_color_html"><div class="ttname"><a href="../../d3/de6/classxii_color.html">xiiColor</a></div><div class="ttdoc">xiiColor represents an RGBA color in linear color space. Values are stored as float,...</div><div class="ttdef"><b>Definition</b> Color.h:44</div></div>
 <div class="ttc" id="aclassxii_color_linear_u_b_html"><div class="ttname"><a href="../../d0/d34/classxii_color_linear_u_b.html">xiiColorLinearUB</a></div><div class="ttdoc">A 8bit per channel unsigned normalized (values interpreted as 0-1) color storage format that represen...</div><div class="ttdef"><b>Definition</b> Color8UNorm.h:55</div></div>
 <div class="ttc" id="aclassxii_color_linear_u_b_html_a29d2a737305d18a7b1e22e29f9536c6b"><div class="ttname"><a href="../../d0/d34/classxii_color_linear_u_b.html#a29d2a737305d18a7b1e22e29f9536c6b">xiiColorLinearUB::xiiColorLinearUB</a></div><div class="ttdeci">xiiColorLinearUB()=default</div><div class="ttdoc">Default-constructed color is uninitialized (for speed)</div></div>
@@ -236,7 +247,7 @@ $(function(){initNavTree('d3/d57/_color8_u_norm_8h_source.html','../../'); initR
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.html">home</a></li><li class="navelem"><a class="el" href="../../dir_1036706e55c22cab35bc1c58ee689f1d.html">runner</a></li><li class="navelem"><a class="el" href="../../dir_629f8151d55d307162ff2d619fb1783d.html">work</a></li><li class="navelem"><a class="el" href="../../dir_1ddc44fe1263a8c7935fa6130b7d9499.html">XII</a></li><li class="navelem"><a class="el" href="../../dir_2c1b6808f12952f4c36e05ba7068379a.html">XII</a></li><li class="navelem"><a class="el" href="../../dir_b5a1c4ecfca018ad24b729e213296d41.html">Source</a></li><li class="navelem"><a class="el" href="../../dir_e321052006a51284e67389ab20037e7c.html">Engine</a></li><li class="navelem"><a class="el" href="../../dir_be0c42c58b36f42c54ec54024ed4f6af.html">Foundation</a></li><li class="navelem"><a class="el" href="../../dir_c1b0860bb61ff24e678d996d14e4bcdd.html">Math</a></li><li class="navelem"><b>Color8UNorm.h</b></li>
-    <li class="footer">Generated on Tue Jul 2 2024 19:08:40 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Sat Aug 31 2024 15:14:55 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

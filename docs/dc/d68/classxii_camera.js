@@ -24,11 +24,11 @@ var classxii_camera =
     [ "LookAt", "dc/d68/classxii_camera.html#aa8c76d09d665c139cb6f3bd6573784e8", null ],
     [ "MoveGlobally", "dc/d68/classxii_camera.html#a236c842c51cc652bb56ad22c2b93ae32", null ],
     [ "MoveLocally", "dc/d68/classxii_camera.html#a27052d222eef8a93e552b7f2da0190ca", null ],
-    [ "RotateGlobally", "dc/d68/classxii_camera.html#a86c6ab5026044ed58df53defe67d0c3d", null ],
-    [ "RotateLocally", "dc/d68/classxii_camera.html#a77eea6b44aeb0348fe042d46bff60b20", null ],
+    [ "RotateGlobally", "dc/d68/classxii_camera.html#ad813a7544c4d3a880e5640246bcaf3e9", null ],
+    [ "RotateLocally", "dc/d68/classxii_camera.html#a016c7cda023f24cf4df54d6c764a4cf6", null ],
     [ "SetCameraMode", "dc/d68/classxii_camera.html#ad45c3c752d60bc6f4a2bd180c656a097", null ],
     [ "SetCoordinateSystem", "dc/d68/classxii_camera.html#a568b90bbfe62cfe348731e83376d2639", null ],
-    [ "SetCoordinateSystem", "dc/d68/classxii_camera.html#a031f82de7ae71a4572e3f7fac3db335c", null ],
+    [ "SetCoordinateSystem", "dc/d68/classxii_camera.html#a22eae91e787ff77b7ff2ee39521598a8", null ],
     [ "SetStereoProjection", "dc/d68/classxii_camera.html#a1e0119cd32dc5df914d8167b3ce11299", null ],
     [ "SetViewMatrix", "dc/d68/classxii_camera.html#aad17519e990b2a5c4876b5dd26e17d1a", null ]
 ];

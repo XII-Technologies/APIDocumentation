@@ -14,6 +14,8 @@ var searchData=
   ['archivetype_11',['ArchiveType',['../d1/d7b/classxii_data_directory_1_1_archive_type.html',1,'xiiDataDirectory']]],
   ['areaedge_12',['AreaEdge',['../d9/d5d/structxii_grid_navmesh_1_1_area_edge.html',1,'xiiGridNavmesh']]],
   ['arrayptrtask_13',['ArrayPtrTask',['../dd/dc9/class_array_ptr_task.html',1,'']]],
-  ['astnode_14',['AstNode',['../d2/dc1/structxii_visual_script_compiler_1_1_ast_node.html',1,'xiiVisualScriptCompiler']]],
-  ['attributedefinition_15',['AttributeDefinition',['../d9/d6d/structxii_shader_parser_1_1_attribute_definition.html',1,'xiiShaderParser']]]
+  ['arraysizehelper_14',['ArraySizeHelper',['../d5/d39/structxii_internal_1_1_array_size_helper.html',1,'xiiInternal']]],
+  ['arraysizehelper_3c_20t_5bn_5d_3e_15',['ArraySizeHelper&lt; T[N]&gt;',['../da/df6/structxii_internal_1_1_array_size_helper_3_01_t_0f_n_0e_4.html',1,'xiiInternal']]],
+  ['astnode_16',['AstNode',['../d2/dc1/structxii_visual_script_compiler_1_1_ast_node.html',1,'xiiVisualScriptCompiler']]],
+  ['attributedefinition_17',['AttributeDefinition',['../d9/d6d/structxii_shader_parser_1_1_attribute_definition.html',1,'xiiShaderParser']]]
 ];

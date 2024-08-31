@@ -5,5 +5,7 @@ var classxii_game_application =
     [ "GetAppProjectPath", "d1/ded/classxii_game_application.html#ab0ee0f904a0a1a7d17ae811a034bc4dc", null ],
     [ "Init_SetupDefaultResources", "d1/ded/classxii_game_application.html#a559c7bc7ae52997ab21c1d6481844c34", null ],
     [ "ReinitializeInputConfig", "d1/ded/classxii_game_application.html#a36e092672a36325f769005c82f0d815f", null ],
+    [ "Run_AcquireImage", "d1/ded/classxii_game_application.html#ab2a49b91b92a7250d2130715c0ed0355", null ],
+    [ "Run_PresentImage", "d1/ded/classxii_game_application.html#a1233a28efb01314b10d9709c14d9dbcf", null ],
     [ "m_sAppProjectPath", "d1/ded/classxii_game_application.html#a5f74c2c8dd879302fae58061ec7dfcc5", null ]
 ];

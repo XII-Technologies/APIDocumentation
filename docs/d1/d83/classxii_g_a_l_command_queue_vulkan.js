@@ -1,6 +1,7 @@
 var classxii_g_a_l_command_queue_vulkan =
 [
-    [ "GetCompletedFenceValue", "d1/d83/classxii_g_a_l_command_queue_vulkan.html#a09605602ab4597248d2d7483196c2d33", null ],
-    [ "GetNextFenceValue", "d1/d83/classxii_g_a_l_command_queue_vulkan.html#a3b8e6afdb2c3ad0a4ea54c1c5c46ea4f", null ],
-    [ "WaitForIdle", "d1/d83/classxii_g_a_l_command_queue_vulkan.html#a4da286910300177e0550244542ba0c9d", null ]
+    [ "BeginCommandList", "d1/d83/classxii_g_a_l_command_queue_vulkan.html#a93c4fc53ba3e90e5952dbd2089836a9e", null ],
+    [ "GetCompletedFenceValue", "d1/d83/classxii_g_a_l_command_queue_vulkan.html#a09123e6969bc0a158158d5c422506283", null ],
+    [ "GetNextFenceValue", "d1/d83/classxii_g_a_l_command_queue_vulkan.html#a576cc7012703e2dcdcdcbeb1b1e88ae9", null ],
+    [ "WaitForIdle", "d1/d83/classxii_g_a_l_command_queue_vulkan.html#adcce74f154ffb569269a1e8b0d76cc08", null ]
 ];

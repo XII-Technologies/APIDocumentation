@@ -1,6 +1,6 @@
 var structxii_g_a_l_device_features =
 [
-    [ "operator==", "d6/d8f/structxii_g_a_l_device_features.html#a3e02c5975b630e21a53f33a726564d44", null ],
+    [ "m_AsynchronousShaderCompilation", "d6/d8f/structxii_g_a_l_device_features.html#a1895ab0d0fb64dc0b3466486ebb0c9d5", null ],
     [ "m_BinaryOcclusionQueries", "d6/d8f/structxii_g_a_l_device_features.html#ad7eac6c9f941d0a684407bb51fe47c8b", null ],
     [ "m_BindlessResources", "d6/d8f/structxii_g_a_l_device_features.html#a85de9c6bc486a890841126bfe7875471", null ],
     [ "m_ComputeShaders", "d6/d8f/structxii_g_a_l_device_features.html#a3125567abd4aa131cc75d82c5048fb10", null ],
@@ -15,6 +15,7 @@ var structxii_g_a_l_device_features =
     [ "m_MultithreadedResourceCreation", "d6/d8f/structxii_g_a_l_device_features.html#a34e6de87363255a24e8a9a2cd3183857", null ],
     [ "m_MultiViewport", "d6/d8f/structxii_g_a_l_device_features.html#a2b644254bf327974783141c5e9b090ee", null ],
     [ "m_NativeFence", "d6/d8f/structxii_g_a_l_device_features.html#ae6f15326ced2629f9730b2006184285b", null ],
+    [ "m_NativeMultiDraw", "d6/d8f/structxii_g_a_l_device_features.html#a8c9a8c16ef4b95abbf393e2dccb519b5", null ],
     [ "m_OcclusionQueries", "d6/d8f/structxii_g_a_l_device_features.html#a989723a76e1d1d78ad4b113c9c45c615", null ],
     [ "m_PipelineStatisticsQueries", "d6/d8f/structxii_g_a_l_device_features.html#a48feea694df847ab4418343d90c933db", null ],
     [ "m_PixelUAVWritesAndAtomics", "d6/d8f/structxii_g_a_l_device_features.html#a50423da71acd42f3a3baf62aed0a5a0e", null ],
@@ -40,6 +41,6 @@ var structxii_g_a_l_device_features =
     [ "m_UniformBuffer8BitAccess", "d6/d8f/structxii_g_a_l_device_features.html#a84e3212a2be1aba01893634d7286085d", null ],
     [ "m_VariableRateShading", "d6/d8f/structxii_g_a_l_device_features.html#a2fef025f1c4d006c7828e0da6c8895e6", null ],
     [ "m_VertexPipelineUAVWritesAndAtomics", "d6/d8f/structxii_g_a_l_device_features.html#a115787bf470de82bae0864c673b5762d", null ],
-    [ "m_WaveOp", "d6/d8f/structxii_g_a_l_device_features.html#a679cd42a4ed9425b41d3abd25e54476a", null ],
+    [ "m_WaveOperation", "d6/d8f/structxii_g_a_l_device_features.html#a2ab3928b829995bb4758058ceccdb315", null ],
     [ "m_WireframeFill", "d6/d8f/structxii_g_a_l_device_features.html#afac87c6926b186fcf52c3856f3928e00", null ]
 ];

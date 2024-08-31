@@ -145,10 +145,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:aff741e22b98b52da0a6e51829490dc1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Exposes the mutex that is internally used to secure multi-threaded access. <br /></td></tr>
 <tr class="separator:aff741e22b98b52da0a6e51829490dc1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Connection</div></td></tr>
-<tr class="memitem:aba38bb5be79084ec66a16d180f6b81af" id="r_aba38bb5be79084ec66a16d180f6b81af"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aba38bb5be79084ec66a16d180f6b81af">StartServer</a> (xiiUInt32 uiConnectionToken, <a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sAddress, bool bStartUpdateThread=true)</td></tr>
+<tr class="memitem:aba38bb5be79084ec66a16d180f6b81af" id="r_aba38bb5be79084ec66a16d180f6b81af"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aba38bb5be79084ec66a16d180f6b81af">StartServer</a> (xiiUInt32 uiConnectionToken, <a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sAddress, bool bStartUpdateThread=true)</td></tr>
 <tr class="memdesc:aba38bb5be79084ec66a16d180f6b81af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts the remote interface as a server.  <br /></td></tr>
 <tr class="separator:aba38bb5be79084ec66a16d180f6b81af"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acb9d0b30ff55097679a3303b9d7e3e82" id="r_acb9d0b30ff55097679a3303b9d7e3e82"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acb9d0b30ff55097679a3303b9d7e3e82">ConnectToServer</a> (xiiUInt32 uiConnectionToken, <a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sAddress, bool bStartUpdateThread=true)</td></tr>
+<tr class="memitem:acb9d0b30ff55097679a3303b9d7e3e82" id="r_acb9d0b30ff55097679a3303b9d7e3e82"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acb9d0b30ff55097679a3303b9d7e3e82">ConnectToServer</a> (xiiUInt32 uiConnectionToken, <a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sAddress, bool bStartUpdateThread=true)</td></tr>
 <tr class="memdesc:acb9d0b30ff55097679a3303b9d7e3e82"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts the network interface as a client. Tries to connect to the given address.  <br /></td></tr>
 <tr class="separator:acb9d0b30ff55097679a3303b9d7e3e82"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a26effd14ec98d5e7070cdbfc044e7ad3" id="r_a26effd14ec98d5e7070cdbfc044e7ad3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a26effd14ec98d5e7070cdbfc044e7ad3">WaitForConnectionToServer</a> (<a class="el" href="../../d7/dc1/structxii_time.html">xiiTime</a> timeout=<a class="el" href="../../d7/dc1/structxii_time.html#a13a76900b064afcfc26d8a85d096e26d">xiiTime::MakeFromSeconds</a>(10))</td></tr>
@@ -258,7 +258,7 @@ Public Attributes</h2></td></tr>
 <tr class="memdesc:af0013bab8eb60bd65734a7092699c598"><td class="mdescLeft">&#160;</td><td class="mdescRight">Derived classes should update this when the information is available.  <br /></td></tr>
 <tr class="separator:af0013bab8eb60bd65734a7092699c598"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a791646141c73a260e6f61beb171a494f" id="r_a791646141c73a260e6f61beb171a494f"><td class="memItemLeft" align="right" valign="top"><a id="a791646141c73a260e6f61beb171a494f" name="a791646141c73a260e6f61beb171a494f"></a>
-virtual <a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><b>InternalCreateConnection</b> (xiiRemoteMode mode, <a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sServerAddress)=0</td></tr>
+virtual <a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><b>InternalCreateConnection</b> (xiiRemoteMode mode, <a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sServerAddress)=0</td></tr>
 <tr class="memdesc:a791646141c73a260e6f61beb171a494f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Derived classes have to implement this to start a network connection. <br /></td></tr>
 <tr class="separator:a791646141c73a260e6f61beb171a494f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a573022cb9a1ab0936eea51a4a8556c32" id="r_a573022cb9a1ab0936eea51a4a8556c32"><td class="memItemLeft" align="right" valign="top"><a id="a573022cb9a1ab0936eea51a4a8556c32" name="a573022cb9a1ab0936eea51a4a8556c32"></a>
@@ -278,7 +278,7 @@ virtual <a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a>&#1
 <tr class="memdesc:ab3f061cc921ecdfae47f195ad2203b84"><td class="mdescLeft">&#160;</td><td class="mdescRight">Derived classes have to implement this to deliver messages to the server or client. <br /></td></tr>
 <tr class="separator:ab3f061cc921ecdfae47f195ad2203b84"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4a880892aec38c83528536b33b5e06c7" id="r_a4a880892aec38c83528536b33b5e06c7"><td class="memItemLeft" align="right" valign="top"><a id="a4a880892aec38c83528536b33b5e06c7" name="a4a880892aec38c83528536b33b5e06c7"></a>
-virtual <a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><b>DetermineTargetAddress</b> (<a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sConnectTo, xiiUInt32 &amp;out_IP, xiiUInt16 &amp;out_Port)</td></tr>
+virtual <a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><b>DetermineTargetAddress</b> (<a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sConnectTo, xiiUInt32 &amp;out_IP, xiiUInt16 &amp;out_Port)</td></tr>
 <tr class="memdesc:a4a880892aec38c83528536b33b5e06c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Derived classes can override this to interpret an address differently. <br /></td></tr>
 <tr class="separator:a4a880892aec38c83528536b33b5e06c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0a45e26b79efb6a042f29f50b122ad9e" id="r_a0a45e26b79efb6a042f29f50b122ad9e"><td class="memItemLeft" align="right" valign="top"><a id="a0a45e26b79efb6a042f29f50b122ad9e" name="a0a45e26b79efb6a042f29f50b122ad9e"></a>
@@ -317,7 +317,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>ReportMessage</b> (xi
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a></td>          <td class="paramname"><span class="paramname"><em>sAddress</em></span>, </td>
+          <td class="paramtype"><a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a></td>          <td class="paramname"><span class="paramname"><em>sAddress</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -382,7 +382,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>ReportMessage</b> (xi
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a></td>          <td class="paramname"><span class="paramname"><em>sAddress</em></span>, </td>
+          <td class="paramtype"><a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a></td>          <td class="paramname"><span class="paramname"><em>sAddress</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -460,7 +460,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>ReportMessage</b> (xi
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d4/d68/classxii_remote_interface.html">xiiRemoteInterface</a></li>
-    <li class="footer">Generated on Tue Jul 2 2024 19:08:47 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Sat Aug 31 2024 15:15:01 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

@@ -171,7 +171,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a180d9050c9b77df2ce43415f61d1f231 inherit pub_methods_classxii_data_directory_reader_writer_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">The derived class should pass along whether it is a reader or writer. <br /></td></tr>
 <tr class="separator:a180d9050c9b77df2ce43415f61d1f231 inherit pub_methods_classxii_data_directory_reader_writer_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a08d74710717b4e6cdaf4d938f42d8f5c inherit pub_methods_classxii_data_directory_reader_writer_base" id="r_a08d74710717b4e6cdaf4d938f42d8f5c"><td class="memItemLeft" align="right" valign="top">
-<a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Open</b> (<a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sFile, <a class="el" href="../../de/d33/classxii_data_directory_type.html">xiiDataDirectoryType</a> *pOwnerDataDirectory, <a class="el" href="../../dc/df4/structxii_file_share_mode.html#a853af051a2b930d18b9d14f78c09e5e1">xiiFileShareMode::Enum</a> fileShareMode)</td></tr>
+<a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Open</b> (<a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sFile, <a class="el" href="../../de/d33/classxii_data_directory_type.html">xiiDataDirectoryType</a> *pOwnerDataDirectory, <a class="el" href="../../dc/df4/structxii_file_share_mode.html#a853af051a2b930d18b9d14f78c09e5e1">xiiFileShareMode::Enum</a> fileShareMode)</td></tr>
 <tr class="memdesc:a08d74710717b4e6cdaf4d938f42d8f5c inherit pub_methods_classxii_data_directory_reader_writer_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used by <a class="el" href="../../de/d33/classxii_data_directory_type.html" title="The base class for all data directory types.">xiiDataDirectoryType</a>'s to try to open the given file. They need to pass along their own pointer. <br /></td></tr>
 <tr class="separator:a08d74710717b4e6cdaf4d938f42d8f5c inherit pub_methods_classxii_data_directory_reader_writer_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a69f5e96b6abde62564aa2630e0358fe9 inherit pub_methods_classxii_data_directory_reader_writer_base" id="r_a69f5e96b6abde62564aa2630e0358fe9"><td class="memItemLeft" align="right" valign="top">
@@ -218,9 +218,9 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_bIsReader</b></td><
 <tr class="memitem:ad63510e05189c095c1f98deeb1ab8792 inherit pro_attribs_classxii_data_directory_reader_writer_base" id="r_ad63510e05189c095c1f98deeb1ab8792"><td class="memItemLeft" align="right" valign="top">
 xiiInt32&#160;</td><td class="memItemRight" valign="bottom"><b>m_iDataDirUserData</b> = 0</td></tr>
 <tr class="separator:ad63510e05189c095c1f98deeb1ab8792 inherit pro_attribs_classxii_data_directory_reader_writer_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aee755ccd9fe36c5f59d4ca1b67b41fbf inherit pro_attribs_classxii_data_directory_reader_writer_base" id="r_aee755ccd9fe36c5f59d4ca1b67b41fbf"><td class="memItemLeft" align="right" valign="top">
-<a class="el" href="../../de/d33/classxii_data_directory_type.html">xiiDataDirectoryType</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_pDataDirectory</b></td></tr>
-<tr class="separator:aee755ccd9fe36c5f59d4ca1b67b41fbf inherit pro_attribs_classxii_data_directory_reader_writer_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb51616d131b2ad407ed34035ec73838 inherit pro_attribs_classxii_data_directory_reader_writer_base" id="r_afb51616d131b2ad407ed34035ec73838"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="../../de/d33/classxii_data_directory_type.html">xiiDataDirectoryType</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_pDataDirType</b></td></tr>
+<tr class="separator:afb51616d131b2ad407ed34035ec73838 inherit pro_attribs_classxii_data_directory_reader_writer_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a47bf152f20af5a0bfe2523aefd36ea4a inherit pro_attribs_classxii_data_directory_reader_writer_base" id="r_a47bf152f20af5a0bfe2523aefd36ea4a"><td class="memItemLeft" align="right" valign="top">
 <a class="el" href="../../df/dfb/structxii_hybrid_string.html">xiiString128</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_sFilePath</b></td></tr>
 <tr class="separator:a47bf152f20af5a0bfe2523aefd36ea4a inherit pro_attribs_classxii_data_directory_reader_writer_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -364,7 +364,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>FolderType</b></td><
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>xiiDataDirectory</b></li><li class="navelem"><a class="el" href="../../d0/d0b/classxii_data_directory_1_1_folder_writer.html">FolderWriter</a></li>
-    <li class="footer">Generated on Tue Jul 2 2024 19:08:48 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Sat Aug 31 2024 15:15:02 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

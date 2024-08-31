@@ -24,5 +24,7 @@ var searchData=
   ['eventdata_21',['EventData',['../d4/d57/structxii_clock_1_1_event_data.html',1,'xiiClock::EventData'],['../dd/d6c/structxii_global_event_1_1_event_data.html',1,'xiiGlobalEvent::EventData'],['../d9/d9e/structxii_object_meta_data_1_1_event_data.html',1,'xiiObjectMetaData&lt; KEY, VALUE &gt;::EventData'],['../db/db7/structxii_o_s_file_1_1_event_data.html',1,'xiiOSFile::EventData']]],
   ['eventmessagesenderhelper_22',['EventMessageSenderHelper',['../d9/dc2/structxii_internal_1_1_event_message_sender_helper.html',1,'xiiInternal']]],
   ['eventtype_23',['EventType',['../df/d5a/structxii_o_s_file_1_1_event_type.html',1,'xiiOSFile']]],
-  ['execresult_24',['ExecResult',['../d0/d83/structxii_visual_script_graph_description_1_1_exec_result.html',1,'xiiVisualScriptGraphDescription']]]
+  ['execresult_24',['ExecResult',['../d0/d83/structxii_visual_script_graph_description_1_1_exec_result.html',1,'xiiVisualScriptGraphDescription']]],
+  ['extensionfeatures_25',['ExtensionFeatures',['../dc/dcd/structxii_g_a_l_device_vulkan_1_1_extension_features.html',1,'xiiGALDeviceVulkan']]],
+  ['extensionproperties_26',['ExtensionProperties',['../d1/d5d/structxii_g_a_l_device_vulkan_1_1_extension_properties.html',1,'xiiGALDeviceVulkan']]]
 ];

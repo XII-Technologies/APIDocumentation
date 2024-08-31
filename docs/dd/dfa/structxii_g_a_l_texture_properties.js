@@ -1,6 +1,5 @@
 var structxii_g_a_l_texture_properties =
 [
-    [ "operator==", "dd/dfa/structxii_g_a_l_texture_properties.html#a8c855dbaf263ddeb22105c19b86e2301", null ],
     [ "m_bCubeMapArraysSupported", "dd/dfa/structxii_g_a_l_texture_properties.html#a95e629efbf306f11886f5365c16f13dc", null ],
     [ "m_bTexture2DMSArraySupported", "dd/dfa/structxii_g_a_l_texture_properties.html#a644c3858eaa1d6b6031e9fdb8e5a4faa", null ],
     [ "m_bTexture2DMSSupported", "dd/dfa/structxii_g_a_l_texture_properties.html#aec82a9a0adb1f9db1ae0c4df6b117737", null ],

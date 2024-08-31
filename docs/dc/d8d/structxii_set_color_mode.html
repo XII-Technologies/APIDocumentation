@@ -137,6 +137,11 @@ $(function(){initNavTree('dc/d8d/structxii_set_color_mode.html','../../'); initR
   <div class="headertitle"><div class="title">xiiSetColorMode Struct Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Describes how a color should be applied to another color.  
+ <a href="#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="../../d8/d2a/_set_color_message_8h_source.html">SetColorMessage.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for xiiSetColorMode:</div>
 <div class="dyncontent">
@@ -145,14 +150,14 @@ Inheritance diagram for xiiSetColorMode:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a5ae6dbcbc9375444a865aece17db9a52" id="r_a5ae6dbcbc9375444a865aece17db9a52"><td class="memItemLeft" align="right" valign="top"><a id="a5ae6dbcbc9375444a865aece17db9a52" name="a5ae6dbcbc9375444a865aece17db9a52"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>Enum</b> { <br />
-&#160;&#160;<b>SetRGBA</b>
-, <b>SetRGB</b>
-, <b>SetAlpha</b>
-, <b>AlphaBlend</b>
+<tr class="memitem:a5ae6dbcbc9375444a865aece17db9a52" id="r_a5ae6dbcbc9375444a865aece17db9a52"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5ae6dbcbc9375444a865aece17db9a52">Enum</a> { <br />
+&#160;&#160;<a class="el" href="#a5ae6dbcbc9375444a865aece17db9a52a247cba30daea1a2dacc0277be2ad1536">SetRGBA</a>
+, <a class="el" href="#a5ae6dbcbc9375444a865aece17db9a52a5a7ad19a48d991fcffbe0fecbc2d42a9">SetRGB</a>
+, <a class="el" href="#a5ae6dbcbc9375444a865aece17db9a52a52765dc5e1ecd632f1860797eb71de09">SetAlpha</a>
+, <a class="el" href="#a5ae6dbcbc9375444a865aece17db9a52a572c540b4e21fa0a1cc41ed0618ba5be">AlphaBlend</a>
 , <br />
-&#160;&#160;<b>Additive</b>
-, <b>Modulate</b>
+&#160;&#160;<a class="el" href="#a5ae6dbcbc9375444a865aece17db9a52a00f5665c66b415f27942ef17c8f9a6e8">Additive</a>
+, <a class="el" href="#a5ae6dbcbc9375444a865aece17db9a52a7430810451eebe993196993b11406dc3">Modulate</a>
 , <b>Default</b> = SetRGBA
 <br />
  }</td></tr>
@@ -161,6 +166,37 @@ Public Types</h2></td></tr>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>StorageType</b> = xiiUInt32</td></tr>
 <tr class="separator:adb9b5b2f4a32898138bfb2a024854507"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Describes how a color should be applied to another color. </p>
+</div><h2 class="groupheader">Member Enumeration Documentation</h2>
+<a id="a5ae6dbcbc9375444a865aece17db9a52" name="a5ae6dbcbc9375444a865aece17db9a52"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ae6dbcbc9375444a865aece17db9a52">&#9670;&#160;</a></span>Enum</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="#a5ae6dbcbc9375444a865aece17db9a52">xiiSetColorMode::Enum</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a5ae6dbcbc9375444a865aece17db9a52a247cba30daea1a2dacc0277be2ad1536" name="a5ae6dbcbc9375444a865aece17db9a52a247cba30daea1a2dacc0277be2ad1536"></a>SetRGBA&#160;</td><td class="fielddoc"><p>Overrides all four RGBA values. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a5ae6dbcbc9375444a865aece17db9a52a5a7ad19a48d991fcffbe0fecbc2d42a9" name="a5ae6dbcbc9375444a865aece17db9a52a5a7ad19a48d991fcffbe0fecbc2d42a9"></a>SetRGB&#160;</td><td class="fielddoc"><p>Overrides the RGB values but leaves Alpha untouched. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a5ae6dbcbc9375444a865aece17db9a52a52765dc5e1ecd632f1860797eb71de09" name="a5ae6dbcbc9375444a865aece17db9a52a52765dc5e1ecd632f1860797eb71de09"></a>SetAlpha&#160;</td><td class="fielddoc"><p>Overrides Alpha, leaves RGB untouched. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a5ae6dbcbc9375444a865aece17db9a52a572c540b4e21fa0a1cc41ed0618ba5be" name="a5ae6dbcbc9375444a865aece17db9a52a572c540b4e21fa0a1cc41ed0618ba5be"></a>AlphaBlend&#160;</td><td class="fielddoc"><p>Modifies the target RGBA values by interpolating from the previous color towards the incoming color using the incoming alpha value. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a5ae6dbcbc9375444a865aece17db9a52a00f5665c66b415f27942ef17c8f9a6e8" name="a5ae6dbcbc9375444a865aece17db9a52a00f5665c66b415f27942ef17c8f9a6e8"></a>Additive&#160;</td><td class="fielddoc"><p>Adds to the RGBA values. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a5ae6dbcbc9375444a865aece17db9a52a7430810451eebe993196993b11406dc3" name="a5ae6dbcbc9375444a865aece17db9a52a7430810451eebe993196993b11406dc3"></a>Modulate&#160;</td><td class="fielddoc"><p>Multiplies the RGBA values. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li>/home/runner/work/XII/XII/Source/Engine/Core/Messages/<a class="el" href="../../d8/d2a/_set_color_message_8h_source.html">SetColorMessage.h</a></li>
 </ul>
@@ -170,7 +206,7 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>StorageType</b> = xi
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dc/d8d/structxii_set_color_mode.html">xiiSetColorMode</a></li>
-    <li class="footer">Generated on Tue Jul 2 2024 19:08:47 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Sat Aug 31 2024 15:15:02 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

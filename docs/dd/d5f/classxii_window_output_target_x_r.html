@@ -153,11 +153,16 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a9851f8ddc6463afaedd084c5608abfb0" id="r_a9851f8ddc6463afaedd084c5608abfb0"><td class="memItemLeft" align="right" valign="top"><a id="a9851f8ddc6463afaedd084c5608abfb0" name="a9851f8ddc6463afaedd084c5608abfb0"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>xiiWindowOutputTargetXR</b> (<a class="el" href="../../d9/d58/classxii_x_r_interface.html">xiiXRInterface</a> *pVrInterface, <a class="el" href="../../d9/d4a/classxii_unique_ptr.html">xiiUniquePtr</a>&lt; <a class="el" href="../../d9/d8d/classxii_window_output_target_g_a_l.html">xiiWindowOutputTargetGAL</a> &gt; pCompanionWindowOutputTarget)</td></tr>
 <tr class="separator:a9851f8ddc6463afaedd084c5608abfb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:addc07a4410d546a06243af7b135f0fc3" id="r_addc07a4410d546a06243af7b135f0fc3"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#addc07a4410d546a06243af7b135f0fc3">Present</a> (bool bEnableVSync) override</td></tr>
-<tr class="separator:addc07a4410d546a06243af7b135f0fc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abdaa5f8ff35fbbd6dacc5df9c3d28a42" id="r_abdaa5f8ff35fbbd6dacc5df9c3d28a42"><td class="memItemLeft" align="right" valign="top"><a id="abdaa5f8ff35fbbd6dacc5df9c3d28a42" name="abdaa5f8ff35fbbd6dacc5df9c3d28a42"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>RenderCompanionView</b> (bool bThrottleCompanionView=true)</td></tr>
-<tr class="separator:abdaa5f8ff35fbbd6dacc5df9c3d28a42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7420e0c613a7a1c2bf72ce07c4866ea" id="r_af7420e0c613a7a1c2bf72ce07c4866ea"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af7420e0c613a7a1c2bf72ce07c4866ea">AcquireImage</a> () override</td></tr>
+<tr class="separator:af7420e0c613a7a1c2bf72ce07c4866ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8714e6dd83ea2278c3581bddc1a96e83" id="r_a8714e6dd83ea2278c3581bddc1a96e83"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8714e6dd83ea2278c3581bddc1a96e83">PresentImage</a> (bool bEnableVSync) override</td></tr>
+<tr class="separator:a8714e6dd83ea2278c3581bddc1a96e83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7522b9bc7a5e17d715f52d613e7fe2e" id="r_ac7522b9bc7a5e17d715f52d613e7fe2e"><td class="memItemLeft" align="right" valign="top"><a id="ac7522b9bc7a5e17d715f52d613e7fe2e" name="ac7522b9bc7a5e17d715f52d613e7fe2e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>CompanionViewBeginFrame</b> (bool bThrottleCompanionView=true)</td></tr>
+<tr class="separator:ac7522b9bc7a5e17d715f52d613e7fe2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea832efea0771d27e3f85a68ad3f6501" id="r_aea832efea0771d27e3f85a68ad3f6501"><td class="memItemLeft" align="right" valign="top"><a id="aea832efea0771d27e3f85a68ad3f6501" name="aea832efea0771d27e3f85a68ad3f6501"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>CompanionViewEndFrame</b> ()</td></tr>
+<tr class="separator:aea832efea0771d27e3f85a68ad3f6501"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aad4d0890e2d615d46a034aa55bb4368a" id="r_aad4d0890e2d615d46a034aa55bb4368a"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aad4d0890e2d615d46a034aa55bb4368a">CaptureImage</a> (<a class="el" href="../../d4/d6a/classxii_image.html">xiiImage</a> &amp;out_image) override</td></tr>
 <tr class="separator:aad4d0890e2d615d46a034aa55bb4368a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac774d9a6233e6209f7d103010453f612" id="r_ac774d9a6233e6209f7d103010453f612"><td class="memItemLeft" align="right" valign="top"><a id="ac774d9a6233e6209f7d103010453f612" name="ac774d9a6233e6209f7d103010453f612"></a>
@@ -168,6 +173,33 @@ const <a class="el" href="../../d7/d4b/classxii_window_output_target_base.html">
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>XR Window output target base implementation. Optionally wraps a companion window output target. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="af7420e0c613a7a1c2bf72ce07c4866ea" name="af7420e0c613a7a1c2bf72ce07c4866ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af7420e0c613a7a1c2bf72ce07c4866ea">&#9670;&#160;</a></span>AcquireImage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void xiiWindowOutputTargetXR::AcquireImage </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="../../d7/d4b/classxii_window_output_target_base.html">xiiWindowOutputTargetBase</a>.</p>
+
+</div>
+</div>
 <a id="aad4d0890e2d615d46a034aa55bb4368a" name="aad4d0890e2d615d46a034aa55bb4368a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aad4d0890e2d615d46a034aa55bb4368a">&#9670;&#160;</a></span>CaptureImage()</h2>
 
@@ -195,8 +227,8 @@ const <a class="el" href="../../d7/d4b/classxii_window_output_target_base.html">
 
 </div>
 </div>
-<a id="addc07a4410d546a06243af7b135f0fc3" name="addc07a4410d546a06243af7b135f0fc3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#addc07a4410d546a06243af7b135f0fc3">&#9670;&#160;</a></span>Present()</h2>
+<a id="a8714e6dd83ea2278c3581bddc1a96e83" name="a8714e6dd83ea2278c3581bddc1a96e83"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8714e6dd83ea2278c3581bddc1a96e83">&#9670;&#160;</a></span>PresentImage()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -205,7 +237,7 @@ const <a class="el" href="../../d7/d4b/classxii_window_output_target_base.html">
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void xiiWindowOutputTargetXR::Present </td>
+          <td class="memname">void xiiWindowOutputTargetXR::PresentImage </td>
           <td>(</td>
           <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>bEnableVSync</em></span></td><td>)</td>
           <td></td>
@@ -232,7 +264,7 @@ const <a class="el" href="../../d7/d4b/classxii_window_output_target_base.html">
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dd/d5f/classxii_window_output_target_x_r.html">xiiWindowOutputTargetXR</a></li>
-    <li class="footer">Generated on Tue Jul 2 2024 19:08:48 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Sat Aug 31 2024 15:15:02 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

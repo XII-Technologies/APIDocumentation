@@ -7,6 +7,7 @@ var classxii_standard_input_device =
     [ "GetShowMouseCursor", "dc/de5/classxii_standard_input_device.html#adc9b0001df86dbf518fa7e6d799b2594", null ],
     [ "GetShowMouseCursor", "dc/de5/classxii_standard_input_device.html#a9a99bfe508e67741cfc9b0d8a1f828d9", null ],
     [ "GetShowMouseCursor", "dc/de5/classxii_standard_input_device.html#a9a99bfe508e67741cfc9b0d8a1f828d9", null ],
+    [ "GetShowMouseCursor", "dc/de5/classxii_standard_input_device.html#a9a99bfe508e67741cfc9b0d8a1f828d9", null ],
     [ "InitializeDevice", "dc/de5/classxii_standard_input_device.html#a098e37bd0c864280379f5c0ee480c6ab", null ],
     [ "InitializeDevice", "dc/de5/classxii_standard_input_device.html#a10aea4757047e42d105bb73e233843e2", null ],
     [ "InitializeDevice", "dc/de5/classxii_standard_input_device.html#a10aea4757047e42d105bb73e233843e2", null ],
@@ -27,6 +28,5 @@ var classxii_standard_input_device =
     [ "SetShowMouseCursor", "dc/de5/classxii_standard_input_device.html#aff6644ea78ff4e2ff5c84c3c9bf6453b", null ],
     [ "SetShowMouseCursor", "dc/de5/classxii_standard_input_device.html#aff6644ea78ff4e2ff5c84c3c9bf6453b", null ],
     [ "UpdateInputSlotValues", "dc/de5/classxii_standard_input_device.html#a55efe645bd9cf2a57673f066bca09bdb", null ],
-    [ "UpdateInputSlotValues", "dc/de5/classxii_standard_input_device.html#a18c8ebe2ee79494d490c8b727595f5fb", null ],
     [ "WindowMessage", "dc/de5/classxii_standard_input_device.html#a7af1a7fab0cf3ea18fdfc061b691a8e8", null ]
 ];

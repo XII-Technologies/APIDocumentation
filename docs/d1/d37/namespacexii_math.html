@@ -879,13 +879,22 @@ XII_ALWAYS_INLINE bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsN
 XII_ALWAYS_INLINE float&#160;</td><td class="memItemRight" valign="bottom"><b>Floor</b> (float f)</td></tr>
 <tr class="memdesc:a35e45d754ffff2c112f2b7c378b579bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the next smaller integer, closest to f. Also the SMALLER value, if f is negative. <br /></td></tr>
 <tr class="separator:a35e45d754ffff2c112f2b7c378b579bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afcef5850f1f0399e0f996b1d7d6e7e79" id="r_afcef5850f1f0399e0f996b1d7d6e7e79"><td class="memItemLeft" align="right" valign="top">XII_ALWAYS_INLINE xiiInt32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afcef5850f1f0399e0f996b1d7d6e7e79">FloorToInt</a> (float f)</td></tr>
+<tr class="memdesc:afcef5850f1f0399e0f996b1d7d6e7e79"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the next smaller integer, closest to f. Also the SMALLER value, if f is negative.  <br /></td></tr>
+<tr class="separator:afcef5850f1f0399e0f996b1d7d6e7e79"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac8300a4be1ca71f931f28abb2b443ad8" id="r_ac8300a4be1ca71f931f28abb2b443ad8"><td class="memItemLeft" align="right" valign="top"><a id="ac8300a4be1ca71f931f28abb2b443ad8" name="ac8300a4be1ca71f931f28abb2b443ad8"></a>
 XII_ALWAYS_INLINE float&#160;</td><td class="memItemRight" valign="bottom"><b>Ceil</b> (float f)</td></tr>
 <tr class="memdesc:ac8300a4be1ca71f931f28abb2b443ad8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the next higher integer, closest to f. Also the HIGHER value, if f is negative. <br /></td></tr>
 <tr class="separator:ac8300a4be1ca71f931f28abb2b443ad8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5281e80b87505461bf7f522e843a5146" id="r_a5281e80b87505461bf7f522e843a5146"><td class="memItemLeft" align="right" valign="top">XII_ALWAYS_INLINE xiiInt32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5281e80b87505461bf7f522e843a5146">CeilToInt</a> (float f)</td></tr>
+<tr class="memdesc:a5281e80b87505461bf7f522e843a5146"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the next higher integer, closest to f. Also the HIGHER value, if f is negative.  <br /></td></tr>
+<tr class="separator:a5281e80b87505461bf7f522e843a5146"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aae1c8197fa3a7a5e8b463438018b101e" id="r_aae1c8197fa3a7a5e8b463438018b101e"><td class="memItemLeft" align="right" valign="top">XII_ALWAYS_INLINE float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aae1c8197fa3a7a5e8b463438018b101e">Round</a> (float f)</td></tr>
 <tr class="memdesc:aae1c8197fa3a7a5e8b463438018b101e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rounds f to the next integer.  <br /></td></tr>
 <tr class="separator:aae1c8197fa3a7a5e8b463438018b101e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade480378eb3c6e6363aefe723b48cb51" id="r_ade480378eb3c6e6363aefe723b48cb51"><td class="memItemLeft" align="right" valign="top">XII_ALWAYS_INLINE xiiInt32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ade480378eb3c6e6363aefe723b48cb51">RoundToInt</a> (float f)</td></tr>
+<tr class="memdesc:ade480378eb3c6e6363aefe723b48cb51"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rounds f to the next integer.  <br /></td></tr>
+<tr class="separator:ade480378eb3c6e6363aefe723b48cb51"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac3249fc72a7862de21ec0b078ada3a1e" id="r_ac3249fc72a7862de21ec0b078ada3a1e"><td class="memItemLeft" align="right" valign="top"><a id="ac3249fc72a7862de21ec0b078ada3a1e" name="ac3249fc72a7862de21ec0b078ada3a1e"></a>
 XII_ALWAYS_INLINE float&#160;</td><td class="memItemRight" valign="bottom"><b>RoundToMultiple</b> (float f, float fMultiple)</td></tr>
 <tr class="memdesc:ac3249fc72a7862de21ec0b078ada3a1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rounds f to the closest value of multiple. <br /></td></tr>
@@ -1051,6 +1060,21 @@ template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a1c76fabcf8a1d7531a753cbf123d75a0"><td class="memTemplItemLeft" align="right" valign="top">constexpr T&#160;</td><td class="memTemplItemRight" valign="bottom"><b>Clamp</b> (T value, T min_val, T max_val)</td></tr>
 <tr class="memdesc:a1c76fabcf8a1d7531a753cbf123d75a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clamps "value" to the range [min; max]. Returns "value", if it is inside the range already. <br /></td></tr>
 <tr class="separator:a1c76fabcf8a1d7531a753cbf123d75a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a346d3ffc55b294f1409c6ae743ae4755" id="r_a346d3ffc55b294f1409c6ae743ae4755"><td class="memItemLeft" align="right" valign="top">constexpr xiiUInt32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a346d3ffc55b294f1409c6ae743ae4755">WrapUInt</a> (xiiUInt32 uiValue, xiiUInt32 uiExcludedMaxValue)</td></tr>
+<tr class="memdesc:a346d3ffc55b294f1409c6ae743ae4755"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wraps uiValue around the maximum value, so that it stays within the range [0; uiExcludedMaxValue-1].  <br /></td></tr>
+<tr class="separator:a346d3ffc55b294f1409c6ae743ae4755"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa994201d8e10fb0f9550bb0929dd7e1e" id="r_aa994201d8e10fb0f9550bb0929dd7e1e"><td class="memItemLeft" align="right" valign="top">constexpr xiiInt32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa994201d8e10fb0f9550bb0929dd7e1e">WrapInt</a> (xiiInt32 iValue, xiiUInt32 uiExcludedMaxValue)</td></tr>
+<tr class="memdesc:aa994201d8e10fb0f9550bb0929dd7e1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wraps iValue around the maximum value, so that it stays within the range [0; uiExcludedMaxValue-1].  <br /></td></tr>
+<tr class="separator:aa994201d8e10fb0f9550bb0929dd7e1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85d028d770b06c14a92c67165e218da3" id="r_a85d028d770b06c14a92c67165e218da3"><td class="memItemLeft" align="right" valign="top">constexpr xiiInt32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a85d028d770b06c14a92c67165e218da3">WrapInt</a> (xiiInt32 iValue, xiiInt32 iMinValue, xiiInt32 iExcludedMaxValue)</td></tr>
+<tr class="memdesc:a85d028d770b06c14a92c67165e218da3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wraps iValue around the minimum and maximum value, so that it stays within the range [iMinValue; iExcludedMaxValue-1].  <br /></td></tr>
+<tr class="separator:a85d028d770b06c14a92c67165e218da3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa519f71622aa891f54122a546c326f41" id="r_aa519f71622aa891f54122a546c326f41"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa519f71622aa891f54122a546c326f41">WrapFloat01</a> (float fValue)</td></tr>
+<tr class="memdesc:aa519f71622aa891f54122a546c326f41"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wraps a float value around to stay within the [0; 1] range.  <br /></td></tr>
+<tr class="separator:aa519f71622aa891f54122a546c326f41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a929d84bc3a8b5c53b9791565da4f45a6" id="r_a929d84bc3a8b5c53b9791565da4f45a6"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a929d84bc3a8b5c53b9791565da4f45a6">WrapFloat</a> (float fValue, float fMinValue, float fMaxValue)</td></tr>
+<tr class="memdesc:a929d84bc3a8b5c53b9791565da4f45a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wraps a float value around to stay within the [min; max] range.  <br /></td></tr>
+<tr class="separator:a929d84bc3a8b5c53b9791565da4f45a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a628e3ee84f97e830030903fbb1d05075" id="r_a628e3ee84f97e830030903fbb1d05075"><td class="memTemplParams" colspan="2"><a id="a628e3ee84f97e830030903fbb1d05075" name="a628e3ee84f97e830030903fbb1d05075"></a>
 template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a628e3ee84f97e830030903fbb1d05075"><td class="memTemplItemLeft" align="right" valign="top">constexpr T&#160;</td><td class="memTemplItemRight" valign="bottom"><b>Saturate</b> (T value)</td></tr>
@@ -1294,6 +1318,34 @@ template&lt;typename Type &gt; </div>
 
 </div>
 </div>
+<a id="a5281e80b87505461bf7f522e843a5146" name="a5281e80b87505461bf7f522e843a5146"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5281e80b87505461bf7f522e843a5146">&#9670;&#160;</a></span>CeilToInt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">xiiInt32 xiiMath::CeilToInt </td>
+          <td>(</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>f</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">nodiscard</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the next higher integer, closest to f. Also the HIGHER value, if f is negative. </p>
+<p>This function is identical to '<a class="el" href="#aa43339fe6b184ea3acef846dc90f6147" title="Returns the next higher integer, closest to f. Also the HIGHER value, if f is negative.">Ceil()</a>' except that it already returns the result cast to an int. </p>
+
+</div>
+</div>
 <a id="a307af5bf30f7c96ec03c95f7db168acf" name="a307af5bf30f7c96ec03c95f7db168acf"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a307af5bf30f7c96ec03c95f7db168acf">&#9670;&#160;</a></span>CountLeadingZeros()</h2>
 
@@ -1516,6 +1568,34 @@ template&lt;typename Type &gt; </div>
 
 </div>
 </div>
+<a id="afcef5850f1f0399e0f996b1d7d6e7e79" name="afcef5850f1f0399e0f996b1d7d6e7e79"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afcef5850f1f0399e0f996b1d7d6e7e79">&#9670;&#160;</a></span>FloorToInt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">xiiInt32 xiiMath::FloorToInt </td>
+          <td>(</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>f</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">nodiscard</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the next smaller integer, closest to f. Also the SMALLER value, if f is negative. </p>
+<p>This function is identical to '<a class="el" href="#ad6842f0ad7ab4a71e50cc9b7944f45a1" title="Returns the next smaller integer, closest to f. Also the SMALLER value, if f is negative.">Floor()</a>' except that it already returns the result cast to an int. </p>
+
+</div>
+</div>
 <a id="aaef30261db876ade1c53d907aaa68828" name="aaef30261db876ade1c53d907aaa68828"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aaef30261db876ade1c53d907aaa68828">&#9670;&#160;</a></span>HighValue()</h2>
 
@@ -1661,6 +1741,35 @@ template&lt;typename TYPE &gt; </div>
 
 </div>
 </div>
+<a id="ade480378eb3c6e6363aefe723b48cb51" name="ade480378eb3c6e6363aefe723b48cb51"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade480378eb3c6e6363aefe723b48cb51">&#9670;&#160;</a></span>RoundToInt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">xiiInt32 xiiMath::RoundToInt </td>
+          <td>(</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>f</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">nodiscard</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Rounds f to the next integer. </p>
+<p>If f is positive 0.5 is rounded UP (i.e. to 1), if f is negative, -0.5 is rounded DOWN (i.e. to -1).</p>
+<p>This function is identical to '<a class="el" href="#a575d6ad80be9c4332a8c3fbf01ff8963" title="Rounds f to the next integer.">Round()</a>' except that it already returns the result cast to an int. </p>
+
+</div>
+</div>
 <a id="a35180b061a4620fef9f6cb839a9c5736" name="a35180b061a4620fef9f6cb839a9c5736"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a35180b061a4620fef9f6cb839a9c5736">&#9670;&#160;</a></span>Sin()</h2>
 
@@ -1691,13 +1800,180 @@ template&lt;typename Type &gt; </div>
 
 </div>
 </div>
+<a id="a929d84bc3a8b5c53b9791565da4f45a6" name="a929d84bc3a8b5c53b9791565da4f45a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a929d84bc3a8b5c53b9791565da4f45a6">&#9670;&#160;</a></span>WrapFloat()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">XII_ALWAYS_INLINE float xiiMath::WrapFloat </td>
+          <td>(</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>fValue</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>fMinValue</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>fMaxValue</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">nodiscard</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Wraps a float value around to stay within the [min; max] range. </p>
+<p>Both fMinValue and fMaxValue are inclusive. Both values may be negative, but fMinValue has to be strictly smaller than fMaxValue. </p>
+
+</div>
+</div>
+<a id="aa519f71622aa891f54122a546c326f41" name="aa519f71622aa891f54122a546c326f41"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa519f71622aa891f54122a546c326f41">&#9670;&#160;</a></span>WrapFloat01()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">XII_ALWAYS_INLINE float xiiMath::WrapFloat01 </td>
+          <td>(</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>fValue</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">nodiscard</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Wraps a float value around to stay within the [0; 1] range. </p>
+<p>Wrapping happens in both positive and negative direction. Ie -0.1f will be wrapped to 0.9f and 1.1f will be wrapped to 0.1f. Note that here the value 1.0f is included in the range. Only values larger than 1.0f get wrapped back to zero. Therefore it is different to what 'Fraction' would return. </p>
+
+</div>
+</div>
+<a id="a85d028d770b06c14a92c67165e218da3" name="a85d028d770b06c14a92c67165e218da3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a85d028d770b06c14a92c67165e218da3">&#9670;&#160;</a></span>WrapInt() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">XII_ALWAYS_INLINE constexpr xiiInt32 xiiMath::WrapInt </td>
+          <td>(</td>
+          <td class="paramtype">xiiInt32</td>          <td class="paramname"><span class="paramname"><em>iValue</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">xiiInt32</td>          <td class="paramname"><span class="paramname"><em>iMinValue</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">xiiInt32</td>          <td class="paramname"><span class="paramname"><em>iExcludedMaxValue</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">nodiscard</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Wraps iValue around the minimum and maximum value, so that it stays within the range [iMinValue; iExcludedMaxValue-1]. </p>
+<p>Ie a value of iExcludedMaxValue would be wrapped to iMinValue, and (iExcludedMaxValue+1) to (iMinValue+1), etc. Values below iMinValue are wrapped back around to a large value, ie (iMinValue-1) would be wrapped to (iExcludedMaxValue-1).</p>
+<p>Both iMinValue and iExcludedMaxValue can be negative, but iMinValue has to be strictly smaller than iExcludedMaxValue. </p>
+
+</div>
+</div>
+<a id="aa994201d8e10fb0f9550bb0929dd7e1e" name="aa994201d8e10fb0f9550bb0929dd7e1e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa994201d8e10fb0f9550bb0929dd7e1e">&#9670;&#160;</a></span>WrapInt() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">XII_ALWAYS_INLINE constexpr xiiInt32 xiiMath::WrapInt </td>
+          <td>(</td>
+          <td class="paramtype">xiiInt32</td>          <td class="paramname"><span class="paramname"><em>iValue</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">xiiUInt32</td>          <td class="paramname"><span class="paramname"><em>uiExcludedMaxValue</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">nodiscard</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Wraps iValue around the maximum value, so that it stays within the range [0; uiExcludedMaxValue-1]. </p>
+<p>Ie a value of uiExcludedMaxValue would be wrapped to 0, and (uiExcludedMaxValue+1) to 1, etc. Negative values are wrapped back around to a large value, ie -1 would be wrapped to (uiExcludedMaxValue-1). <a class="el" href="../../d8/d4f/class_a.html">A</a> value of 0 for uiExcludedMaxValue is invalid and results in a division by zero error. </p>
+
+</div>
+</div>
+<a id="a346d3ffc55b294f1409c6ae743ae4755" name="a346d3ffc55b294f1409c6ae743ae4755"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a346d3ffc55b294f1409c6ae743ae4755">&#9670;&#160;</a></span>WrapUInt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">XII_ALWAYS_INLINE constexpr xiiUInt32 xiiMath::WrapUInt </td>
+          <td>(</td>
+          <td class="paramtype">xiiUInt32</td>          <td class="paramname"><span class="paramname"><em>uiValue</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">xiiUInt32</td>          <td class="paramname"><span class="paramname"><em>uiExcludedMaxValue</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">nodiscard</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Wraps uiValue around the maximum value, so that it stays within the range [0; uiExcludedMaxValue-1]. </p>
+<p>Ie a value of uiExcludedMaxValue would be wrapped to 0, and (uiExcludedMaxValue+1) to 1, etc. <a class="el" href="../../d8/d4f/class_a.html">A</a> value of 0 for uiExcludedMaxValue is invalid and results in a division by zero error. </p>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d1/d37/namespacexii_math.html">xiiMath</a></li>
-    <li class="footer">Generated on Tue Jul 2 2024 19:08:48 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Sat Aug 31 2024 15:15:02 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

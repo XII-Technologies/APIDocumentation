@@ -149,6 +149,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a2030f257251e926f6054e41a0edcd495" id="r_a2030f257251e926f6054e41a0edcd495"><td class="memItemLeft" align="right" valign="top"><a id="a2030f257251e926f6054e41a0edcd495" name="a2030f257251e926f6054e41a0edcd495"></a>
 virtual <a class="el" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetWindAt</b> (const <a class="el" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3</a> &amp;vPosition) const =0</td></tr>
 <tr class="separator:a2030f257251e926f6054e41a0edcd495"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8bc05ef0dd334c22b89f63f7e4861628" id="r_a8bc05ef0dd334c22b89f63f7e4861628"><td class="memItemLeft" align="right" valign="top"><a id="a8bc05ef0dd334c22b89f63f7e4861628" name="a8bc05ef0dd334c22b89f63f7e4861628"></a>
+virtual <a class="el" href="../../d3/da5/classxii_simd_vec4f.html">xiiSimdVec4f</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetWindAtSimd</b> (const <a class="el" href="../../d3/da5/classxii_simd_vec4f.html">xiiSimdVec4f</a> &amp;vPosition) const</td></tr>
+<tr class="separator:a8bc05ef0dd334c22b89f63f7e4861628"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a23fc6513201bd53f458cdaff5abafbcf" id="r_a23fc6513201bd53f458cdaff5abafbcf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a23fc6513201bd53f458cdaff5abafbcf">ComputeWindFlutter</a> (const <a class="el" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3</a> &amp;vWind, const <a class="el" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3</a> &amp;vObjectDir, float fFlutterSpeed, xiiUInt32 uiFlutterRandomOffset) const</td></tr>
 <tr class="memdesc:a23fc6513201bd53f458cdaff5abafbcf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes a 'fluttering' wind motion orthogonal to an object direction.  <br /></td></tr>
 <tr class="separator:a23fc6513201bd53f458cdaff5abafbcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -273,7 +276,7 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>UpdateFunction</b> =
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">vWind</td><td>The sampled (and potentially boosted or clamped) wind value. </td></tr>
-    <tr><td class="paramname">vObjectDir</td><td>The main direction of the object. For example the (average) direction of a tree branch, or the direction of a rope or cable. The flutter value will be orthogonal to the object direction and the wind direction. So when when blows sideways onto a branch, the branch would flutter upwards and downwards. For a rope hanging downwards, wind blowing against it would make it flutter sideways. </td></tr>
+    <tr><td class="paramname">vObjectDir</td><td>The main direction of the object. For example the (average) direction of a tree branch, or the direction of a rope or cable. The flutter value will be orthogonal to the object direction and the wind direction. So when wind blows sideways onto a branch, the branch would flutter upwards and downwards. For a rope hanging downwards, wind blowing against it would make it flutter sideways. </td></tr>
     <tr><td class="paramname">fFlutterSpeed</td><td>How fast the object shall flutter (frequency). </td></tr>
     <tr><td class="paramname">uiFlutterRandomOffset</td><td><a class="el" href="../../d8/d4f/class_a.html">A</a> random number that adds an offset to the flutter, such that multiple objects next to each other will flutter out of phase. </td></tr>
   </table>
@@ -292,7 +295,7 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>UpdateFunction</b> =
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../df/d78/classxii_wind_world_module_interface.html">xiiWindWorldModuleInterface</a></li>
-    <li class="footer">Generated on Tue Jul 2 2024 19:08:48 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Sat Aug 31 2024 15:15:02 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

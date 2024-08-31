@@ -182,7 +182,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>SetHeadless</b
 <tr class="memdesc:ab2fb8960b13efd8569e2fd76804dd4c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set to true if the application doesn't show any window and only works in the background. <br /></td></tr>
 <tr class="separator:ab2fb8960b13efd8569e2fd76804dd4c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0a094a8546ac79027c34cdc0802069a1" id="r_a0a094a8546ac79027c34cdc0802069a1"><td class="memItemLeft" align="right" valign="top"><a id="a0a094a8546ac79027c34cdc0802069a1" name="a0a094a8546ac79027c34cdc0802069a1"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>MessageBoxStatus</b> (const <a class="el" href="../../d0/d54/structxii_status.html">xiiStatus</a> &amp;s, <a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sFailureMsg, <a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sSuccessMsg={}, bool bOnlySuccessMsgIfDetails=true)</td></tr>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>MessageBoxStatus</b> (const <a class="el" href="../../d0/d54/structxii_status.html">xiiStatus</a> &amp;s, <a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sFailureMsg, <a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sSuccessMsg={}, bool bOnlySuccessMsgIfDetails=true)</td></tr>
 <tr class="memdesc:a0a094a8546ac79027c34cdc0802069a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Might show a message box depending on the given status. If the status is 'failure' the szFailureMsg is shown, including the message in <a class="el" href="../../d0/d54/structxii_status.html" title="An xiiResult with an additional message for the reason of failure.">xiiStatus</a>. If the status is success a message box with text szSuccessMsg is shown, but only if the status message is not empty or if bOnlySuccessMsgIfDetails is false. <br /></td></tr>
 <tr class="separator:a0a094a8546ac79027c34cdc0802069a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a74a6c763bc50949428b85b40ea72a007" id="r_a74a6c763bc50949428b85b40ea72a007"><td class="memItemLeft" align="right" valign="top"><a id="a74a6c763bc50949428b85b40ea72a007" name="a74a6c763bc50949428b85b40ea72a007"></a>
@@ -209,29 +209,33 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>ShowGlobalStat
 <tr class="memdesc:a4901a0c602aac46d1a11d69ae979aeb3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shows a 'critical' message in all container windows (in red), which does not disappear, until it is replaced with another (empty) string. <br /></td></tr>
 <tr class="separator:a4901a0c602aac46d1a11d69ae979aeb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a91d22ee91d5e761352c2f410f80ba819" id="r_a91d22ee91d5e761352c2f410f80ba819"><td class="memItemLeft" align="right" valign="top"><a id="a91d22ee91d5e761352c2f410f80ba819" name="a91d22ee91d5e761352c2f410f80ba819"></a>
-static bool&#160;</td><td class="memItemRight" valign="bottom"><b>OpenFileInDefaultProgram</b> (<a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sPath)</td></tr>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>OpenFileInDefaultProgram</b> (<a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sPath)</td></tr>
 <tr class="memdesc:a91d22ee91d5e761352c2f410f80ba819"><td class="mdescLeft">&#160;</td><td class="mdescRight">Opens the given file in the program that is registered in the OS to handle that file type. <br /></td></tr>
 <tr class="separator:a91d22ee91d5e761352c2f410f80ba819"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7f3575d27865d4f42f3f5124966cd04c" id="r_a7f3575d27865d4f42f3f5124966cd04c"><td class="memItemLeft" align="right" valign="top"><a id="a7f3575d27865d4f42f3f5124966cd04c" name="a7f3575d27865d4f42f3f5124966cd04c"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>OpenInExplorer</b> (<a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sPath, bool bIsFile)</td></tr>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>OpenInExplorer</b> (<a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sPath, bool bIsFile)</td></tr>
 <tr class="memdesc:a7f3575d27865d4f42f3f5124966cd04c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Opens the given file or folder in the Explorer. <br /></td></tr>
 <tr class="separator:a7f3575d27865d4f42f3f5124966cd04c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72d79eb20be093749d9caa9100900ed9" id="r_a72d79eb20be093749d9caa9100900ed9"><td class="memItemLeft" align="right" valign="top"><a id="a72d79eb20be093749d9caa9100900ed9" name="a72d79eb20be093749d9caa9100900ed9"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>OpenWith</b> (<a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sPath)</td></tr>
+<tr class="memdesc:a72d79eb20be093749d9caa9100900ed9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shows the "Open With" dialog. <br /></td></tr>
+<tr class="separator:a72d79eb20be093749d9caa9100900ed9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a095704916ad3dd6db5641da24467beef" id="r_a095704916ad3dd6db5641da24467beef"><td class="memItemLeft" align="right" valign="top"><a id="a095704916ad3dd6db5641da24467beef" name="a095704916ad3dd6db5641da24467beef"></a>
 static <a class="el" href="../../d0/d54/structxii_status.html">xiiStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><b>OpenInVsCode</b> (const <a class="el" href="../../db/daa/class_q_list.html">QStringList</a> &amp;arguments)</td></tr>
 <tr class="memdesc:a095704916ad3dd6db5641da24467beef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attempts to launch Visual Studio Code with the given command line. <br /></td></tr>
 <tr class="separator:a095704916ad3dd6db5641da24467beef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6079a7b2a4b99db5deeff6cf8881bf06" id="r_a6079a7b2a4b99db5deeff6cf8881bf06"><td class="memItemLeft" align="right" valign="top">static const QIcon &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6079a7b2a4b99db5deeff6cf8881bf06">GetCachedIconResource</a> (<a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sIdentifier, <a class="el" href="../../d3/de6/classxii_color.html">xiiColor</a> svgTintColor=<a class="el" href="../../d3/de6/classxii_color.html#ab1e58c9a474533cce826620fd9f95069">xiiColor::MakeZero</a>())</td></tr>
+<tr class="memitem:a6079a7b2a4b99db5deeff6cf8881bf06" id="r_a6079a7b2a4b99db5deeff6cf8881bf06"><td class="memItemLeft" align="right" valign="top">static const QIcon &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6079a7b2a4b99db5deeff6cf8881bf06">GetCachedIconResource</a> (<a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sIdentifier, <a class="el" href="../../d3/de6/classxii_color.html">xiiColor</a> svgTintColor=<a class="el" href="../../d3/de6/classxii_color.html#ab1e58c9a474533cce826620fd9f95069">xiiColor::MakeZero</a>())</td></tr>
 <tr class="memdesc:a6079a7b2a4b99db5deeff6cf8881bf06"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a cached QIcon that was created from an internal Qt resource (e.g. 'QIcon(":QtNamespace/MyIcon.png")' ). Prevents creating the object over and over.  <br /></td></tr>
 <tr class="separator:a6079a7b2a4b99db5deeff6cf8881bf06"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a56495db8f8fdc8720e8362778becdadd" id="r_a56495db8f8fdc8720e8362778becdadd"><td class="memItemLeft" align="right" valign="top"><a id="a56495db8f8fdc8720e8362778becdadd" name="a56495db8f8fdc8720e8362778becdadd"></a>
-static const QImage &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetCachedImageResource</b> (<a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sIdentifier)</td></tr>
+static const QImage &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetCachedImageResource</b> (<a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sIdentifier)</td></tr>
 <tr class="memdesc:a56495db8f8fdc8720e8362778becdadd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a cached QImage that was created from an internal Qt resource (e.g. 'QImage(":QtNamespace/MyIcon.png")' ). Prevents creating the object over and over. <br /></td></tr>
 <tr class="separator:a56495db8f8fdc8720e8362778becdadd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adb891de0744e4106a934e386aef76337" id="r_adb891de0744e4106a934e386aef76337"><td class="memItemLeft" align="right" valign="top"><a id="adb891de0744e4106a934e386aef76337" name="adb891de0744e4106a934e386aef76337"></a>
-static const QPixmap &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetCachedPixmapResource</b> (<a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sIdentifier)</td></tr>
+static const QPixmap &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetCachedPixmapResource</b> (<a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sIdentifier)</td></tr>
 <tr class="memdesc:adb891de0744e4106a934e386aef76337"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a cached QPixmap that was created from an internal Qt resource (e.g. 'QPixmap(":QtNamespace/MyIcon.png")' ). Prevents creating the object over and over. <br /></td></tr>
 <tr class="separator:adb891de0744e4106a934e386aef76337"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a770ee21d614cfbfe3d0dbd0cafa2cd31" id="r_a770ee21d614cfbfe3d0dbd0cafa2cd31"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a770ee21d614cfbfe3d0dbd0cafa2cd31">AddToGitIgnore</a> (<a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sGitIgnoreFile, <a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sPattern)</td></tr>
+<tr class="memitem:a770ee21d614cfbfe3d0dbd0cafa2cd31" id="r_a770ee21d614cfbfe3d0dbd0cafa2cd31"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a770ee21d614cfbfe3d0dbd0cafa2cd31">AddToGitIgnore</a> (<a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sGitIgnoreFile, <a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sPattern)</td></tr>
 <tr class="memdesc:a770ee21d614cfbfe3d0dbd0cafa2cd31"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds the pattern to the gitignore file.  <br /></td></tr>
 <tr class="separator:a770ee21d614cfbfe3d0dbd0cafa2cd31"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa9631d949758bf01da34ed7b08ec643e" id="r_aa9631d949758bf01da34ed7b08ec643e"><td class="memItemLeft" align="right" valign="top"><a id="aa9631d949758bf01da34ed7b08ec643e" name="aa9631d949758bf01da34ed7b08ec643e"></a>
@@ -261,12 +265,12 @@ static <a class="el" href="../../dc/d22/classxii_event.html">xiiEvent</a>&lt; co
         <tr>
           <td class="memname"><a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a> xiiQtUiServices::AddToGitIgnore </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a></td>          <td class="paramname"><span class="paramname"><em>sGitIgnoreFile</em></span>, </td>
+          <td class="paramtype"><a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a></td>          <td class="paramname"><span class="paramname"><em>sGitIgnoreFile</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a></td>          <td class="paramname"><span class="paramname"><em>sPattern</em></span>&#160;)</td>
+          <td class="paramtype"><a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a></td>          <td class="paramname"><span class="paramname"><em>sPattern</em></span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -293,7 +297,7 @@ static <a class="el" href="../../dc/d22/classxii_event.html">xiiEvent</a>&lt; co
         <tr>
           <td class="memname">const QIcon &amp; xiiQtUiServices::GetCachedIconResource </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a></td>          <td class="paramname"><span class="paramname"><em>sIdentifier</em></span>, </td>
+          <td class="paramtype"><a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a></td>          <td class="paramname"><span class="paramname"><em>sIdentifier</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -325,7 +329,7 @@ static <a class="el" href="../../dc/d22/classxii_event.html">xiiEvent</a>&lt; co
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d0/db6/classxii_qt_ui_services.html">xiiQtUiServices</a></li>
-    <li class="footer">Generated on Tue Jul 2 2024 19:08:46 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Sat Aug 31 2024 15:15:01 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

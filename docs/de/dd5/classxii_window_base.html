@@ -157,6 +157,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a90912af8cccf501f5e957de32bd6e033" id="r_a90912af8cccf501f5e957de32bd6e033"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a90912af8cccf501f5e957de32bd6e033">IsFullscreenWindow</a> (bool bOnlyProperFullscreenMode=false) const =0</td></tr>
 <tr class="memdesc:a90912af8cccf501f5e957de32bd6e033"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether the window is a fullscreen window or should be one - some platforms may enforce this via the GALSwapchain)  <br /></td></tr>
 <tr class="separator:a90912af8cccf501f5e957de32bd6e033"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5473083dc598f86891bbe6792e04a00" id="r_ae5473083dc598f86891bbe6792e04a00"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae5473083dc598f86891bbe6792e04a00">IsVisible</a> () const =0</td></tr>
+<tr class="memdesc:ae5473083dc598f86891bbe6792e04a00"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether the window can potentially be seen by the user. Windows that are minimized or hidden are not visible.  <br /></td></tr>
+<tr class="separator:ae5473083dc598f86891bbe6792e04a00"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa56b9bfc341faea8e6e3d60f18a3d99a" id="r_aa56b9bfc341faea8e6e3d60f18a3d99a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa56b9bfc341faea8e6e3d60f18a3d99a">ProcessWindowMessages</a> ()=0</td></tr>
 <tr class="separator:aa56b9bfc341faea8e6e3d60f18a3d99a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad27c0f9fbe11f319e2b00d908634b7a9" id="r_ad27c0f9fbe11f319e2b00d908634b7a9"><td class="memItemLeft" align="right" valign="top"><a id="ad27c0f9fbe11f319e2b00d908634b7a9" name="ad27c0f9fbe11f319e2b00d908634b7a9"></a>
@@ -253,6 +256,35 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>RemoveReferen
 
 </div>
 </div>
+<a id="ae5473083dc598f86891bbe6792e04a00" name="ae5473083dc598f86891bbe6792e04a00"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae5473083dc598f86891bbe6792e04a00">&#9670;&#160;</a></span>IsVisible()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool xiiWindowBase::IsVisible </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Whether the window can potentially be seen by the user. Windows that are minimized or hidden are not visible. </p>
+
+<p>Implemented in <a class="el" href="../../d5/d92/classxii_editor_process_view_window.html#a35f2dbb0d5bd68bba8ea73a6b3abe078">xiiEditorProcessViewWindow</a>, <a class="el" href="../../d2/d13/classxii_window.html#a134a3236effa39ffde2e45a3ce951856">xiiWindow</a>, and <a class="el" href="../../d0/d31/classxii_window_x_r.html#ae470ba487b2ca41759c5d80862a31004">xiiWindowXR</a>.</p>
+
+</div>
+</div>
 <a id="aa56b9bfc341faea8e6e3d60f18a3d99a" name="aa56b9bfc341faea8e6e3d60f18a3d99a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa56b9bfc341faea8e6e3d60f18a3d99a">&#9670;&#160;</a></span>ProcessWindowMessages()</h2>
 
@@ -289,7 +321,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>RemoveReferen
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../de/dd5/classxii_window_base.html">xiiWindowBase</a></li>
-    <li class="footer">Generated on Tue Jul 2 2024 19:08:48 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Sat Aug 31 2024 15:15:02 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

@@ -157,70 +157,38 @@ $(function(){initNavTree('d9/da3/_heap_allocation_8h_source.html','../../'); ini
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>      <span class="comment">// Interestingly, the code that does that seems to work fine anyway.</span></div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>      XII_ASSERT_DEBUG(uiAlign &lt;= 8, <span class="stringliteral">&quot;This allocator does not guarantee alignments larger than 8. Use an aligned allocator to allocate the desired data type.&quot;</span>);</div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>      <span class="keywordtype">void</span>* ptr = malloc(PadSize(uiSize));</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>      <span class="keywordtype">void</span>* ptr = malloc(uiSize);</div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>      XII_CHECK_ALIGNMENT(ptr, uiAlign);</div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>      <span class="keywordflow">return</span> OffsetPtr(ptr);</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>      <span class="keywordflow">return</span> ptr;</div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    }</div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    XII_FORCE_INLINE <span class="keywordtype">void</span>* Reallocate(<span class="keywordtype">void</span>* pCurrentPtr, <span class="keywordtype">size_t</span> uiCurrentSize, <span class="keywordtype">size_t</span> uiNewSize, <span class="keywordtype">size_t</span> uiAlign)</div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    {</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>      <span class="keywordtype">void</span>* ptr = realloc(RestorePtr(pCurrentPtr), PadSize(uiNewSize));</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>      <span class="keywordtype">void</span>* ptr = realloc(pCurrentPtr, uiNewSize);</div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>      XII_CHECK_ALIGNMENT(ptr, uiAlign);</div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>      <span class="keywordflow">return</span> OffsetPtr(ptr);</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>      <span class="keywordflow">return</span> ptr;</div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    }</div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    XII_ALWAYS_INLINE <span class="keywordtype">void</span> Deallocate(<span class="keywordtype">void</span>* pPtr) { free(RestorePtr(pPtr)); }</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    XII_ALWAYS_INLINE <a class="code hl_class" href="../../d5/d66/classxii_allocator_base.html">xiiAllocatorBase</a>* GetParent()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <span class="keyword">nullptr</span>; }</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>  <span class="keyword">private</span>:</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    XII_ALWAYS_INLINE <span class="keywordtype">size_t</span> PadSize(<span class="keywordtype">size_t</span> uiSize)</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    {</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="preprocessor">#if XII_ENABLED(XII_COMPILE_FOR_DEBUG)</span></div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>      <span class="keywordflow">return</span> uiSize + 2 * XII_ALIGNMENT_MINIMUM;</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="preprocessor">#else</span></div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>      <span class="keywordflow">return</span> uiSize;</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    }</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    XII_ALWAYS_INLINE <span class="keywordtype">void</span>* OffsetPtr(<span class="keywordtype">void</span>* ptr)</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    {</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="preprocessor">#if XII_ENABLED(XII_COMPILE_FOR_DEBUG)</span></div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>      xiiUInt32 uiOffset            = <a class="code hl_function" href="../../d8/d9d/classxii_memory_utils.html#abe0de153a571b0a2cf908bb4b729de36">xiiMemoryUtils::IsAligned</a>(ptr, 2 * XII_ALIGNMENT_MINIMUM) ? XII_ALIGNMENT_MINIMUM : 2 * XII_ALIGNMENT_MINIMUM;</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>      ptr                           = <a class="code hl_function" href="../../d8/d9d/classxii_memory_utils.html#ae5cd4c80773bcac0c89493b9a07ede3a">xiiMemoryUtils::AddByteOffset</a>(ptr, uiOffset - 4);</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>      *<span class="keyword">static_cast&lt;</span>xiiUInt32*<span class="keyword">&gt;</span>(ptr) = uiOffset;</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>      <span class="keywordflow">return</span> <a class="code hl_function" href="../../d8/d9d/classxii_memory_utils.html#ae5cd4c80773bcac0c89493b9a07ede3a">xiiMemoryUtils::AddByteOffset</a>(ptr, 4);</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="preprocessor">#else</span></div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>      <span class="keywordflow">return</span> ptr;</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    }</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    XII_ALWAYS_INLINE <span class="keywordtype">void</span>* RestorePtr(<span class="keywordtype">void</span>* ptr)</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    {</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="preprocessor">#if XII_ENABLED(XII_COMPILE_FOR_DEBUG)</span></div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>      ptr               = <a class="code hl_function" href="../../d8/d9d/classxii_memory_utils.html#ae5cd4c80773bcac0c89493b9a07ede3a">xiiMemoryUtils::AddByteOffset</a>(ptr, -4);</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>      xiiInt32 uiOffset = *<span class="keyword">static_cast&lt;</span>xiiUInt32*<span class="keyword">&gt;</span>(ptr);</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>      <span class="keywordflow">return</span> <a class="code hl_function" href="../../d8/d9d/classxii_memory_utils.html#ae5cd4c80773bcac0c89493b9a07ede3a">xiiMemoryUtils::AddByteOffset</a>(ptr, -uiOffset + 4);</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span><span class="preprocessor">#else</span></div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>      <span class="keywordflow">return</span> ptr;</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    }</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>  };</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    XII_ALWAYS_INLINE <span class="keywordtype">void</span> Deallocate(<span class="keywordtype">void</span>* pPtr)</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    {</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>      free(pPtr);</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    }</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    XII_ALWAYS_INLINE <a class="code hl_class" href="../../d5/d66/classxii_allocator_base.html">xiiAllocatorBase</a>* GetParent()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <span class="keyword">nullptr</span>; }</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>  };</div>
 </div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>} <span class="comment">// namespace xiiMemoryPolicies</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>} <span class="comment">// namespace xiiMemoryPolicies</span></div>
 <div class="ttc" id="aclassxii_allocator_base_html"><div class="ttname"><a href="../../d5/d66/classxii_allocator_base.html">xiiAllocatorBase</a></div><div class="ttdoc">Base class for all memory allocators.</div><div class="ttdef"><b>Definition</b> AllocatorBase.h:22</div></div>
 <div class="ttc" id="aclassxii_memory_policies_1_1xii_heap_allocation_html"><div class="ttname"><a href="../../de/d33/classxii_memory_policies_1_1xii_heap_allocation.html">xiiMemoryPolicies::xiiHeapAllocation</a></div><div class="ttdoc">Default heap memory allocation policy.</div><div class="ttdef"><b>Definition</b> HeapAllocation.h:11</div></div>
-<div class="ttc" id="aclassxii_memory_utils_html_abe0de153a571b0a2cf908bb4b729de36"><div class="ttname"><a href="../../d8/d9d/classxii_memory_utils.html#abe0de153a571b0a2cf908bb4b729de36">xiiMemoryUtils::IsAligned</a></div><div class="ttdeci">static bool IsAligned(const T *pPtr, size_t uiAlignment)</div><div class="ttdoc">Checks whether ptr is aligned to a memory address that is a multiple of uiAlignment.</div></div>
-<div class="ttc" id="aclassxii_memory_utils_html_ae5cd4c80773bcac0c89493b9a07ede3a"><div class="ttname"><a href="../../d8/d9d/classxii_memory_utils.html#ae5cd4c80773bcac0c89493b9a07ede3a">xiiMemoryUtils::AddByteOffset</a></div><div class="ttdeci">static T * AddByteOffset(T *pPtr, std::ptrdiff_t offset)</div><div class="ttdoc">Returns the address stored in ptr plus the given byte offset iOffset, cast to type T.</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.html">home</a></li><li class="navelem"><a class="el" href="../../dir_1036706e55c22cab35bc1c58ee689f1d.html">runner</a></li><li class="navelem"><a class="el" href="../../dir_629f8151d55d307162ff2d619fb1783d.html">work</a></li><li class="navelem"><a class="el" href="../../dir_1ddc44fe1263a8c7935fa6130b7d9499.html">XII</a></li><li class="navelem"><a class="el" href="../../dir_2c1b6808f12952f4c36e05ba7068379a.html">XII</a></li><li class="navelem"><a class="el" href="../../dir_b5a1c4ecfca018ad24b729e213296d41.html">Source</a></li><li class="navelem"><a class="el" href="../../dir_e321052006a51284e67389ab20037e7c.html">Engine</a></li><li class="navelem"><a class="el" href="../../dir_be0c42c58b36f42c54ec54024ed4f6af.html">Foundation</a></li><li class="navelem"><a class="el" href="../../dir_f4c376a517d02920cdbc41b4ea2fc5f5.html">Memory</a></li><li class="navelem"><a class="el" href="../../dir_2a5e9a7a2f5f78531e2c7d0b6f1ae434.html">Policies</a></li><li class="navelem"><b>HeapAllocation.h</b></li>
-    <li class="footer">Generated on Tue Jul 2 2024 19:08:40 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Sat Aug 31 2024 15:14:56 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

@@ -19,6 +19,8 @@ var classxii_game_application_base =
     [ "GetPlatformProfile", "da/d67/classxii_game_application_base.html#ad604cf8b8849d52fcf2faeb6699bed72", null ],
     [ "GetProjectDataDirectoryPath", "da/d67/classxii_game_application_base.html#aa171be9a1908f057249cee5ac214f45d", null ],
     [ "Run", "da/d67/classxii_game_application_base.html#ae380efb2d22f6c0faf520024e6f8356a", null ],
+    [ "Run_AcquireImage", "da/d67/classxii_game_application_base.html#a172b74de34520372a86e492a44bcfff4", null ],
+    [ "Run_PresentImage", "da/d67/classxii_game_application_base.html#a1ed6760c25609852c92a30a4b680060a", null ],
     [ "SetContinuousFrameCapture", "da/d67/classxii_game_application_base.html#a93504cd63157c2b0852ece8c35172dd1", null ],
     [ "StoreScreenshot", "da/d67/classxii_game_application_base.html#a15b88b773f0e4fd48905278dab22f76a", null ],
     [ "TakeProfilingCapture", "da/d67/classxii_game_application_base.html#af5be99caab4ed39b6a9d7bc3060e3706", null ],

@@ -136,11 +136,11 @@ $(function(){initNavTree('de/dde/_string_utils_8h_source.html','../../'); initRe
 <div class="contents">
 <div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &lt;Foundation/ThirdParty/utf8/utf8.h&gt;</span></div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;Foundation/Basics.h&gt;</span></div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;Foundation/Strings/UnicodeUtils.h&gt;</span></div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;Foundation/Threading/AtomicInteger.h&gt;</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#ifndef XII_INCLUDING_BASICS_H</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#  error &quot;StringUtils.h must not be included directly, but instead include Foundation/Basics.h.&quot;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;Foundation/Strings/UnicodeUtils.h&gt;</span></div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
 <div class="foldopen" id="foldopen00010" data-start="{" data-end="};">
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="../../df/d65/classxii_string_utils.html">   10</a></span><span class="keyword">class </span>XII_FOUNDATION_DLL <a class="code hl_class" href="../../df/d65/classxii_string_utils.html">xiiStringUtils</a></div>
@@ -250,10 +250,12 @@ $(function(){initNavTree('de/dde/_string_utils_8h_source.html','../../'); initRe
 <div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span>  <span class="keyword">static</span> <span class="keywordtype">void</span> OutputFormattedInt(<span class="keywordtype">char</span>* szOutputBuffer, xiiUInt32 uiBufferSize, xiiUInt32&amp; ref_uiWritePos, xiiInt64 value, xiiUInt8 uiWidth, <span class="keywordtype">bool</span> bPadZeros, xiiUInt8 uiBase);</div>
 <div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span>  <span class="keyword">static</span> <span class="keywordtype">void</span> OutputFormattedUInt(<span class="keywordtype">char</span>* szOutputBuffer, xiiUInt32 uiBufferSize, xiiUInt32&amp; ref_uiWritePos, xiiUInt64 value, xiiUInt8 uiWidth, <span class="keywordtype">bool</span> bPadZeros, xiiUInt8 uiBase, <span class="keywordtype">bool</span> bUpperCase);</div>
 <div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span>  <span class="keyword">static</span> <span class="keywordtype">void</span> OutputFormattedFloat(<span class="keywordtype">char</span>* szOutputBuffer, xiiUInt32 uiBufferSize, xiiUInt32&amp; ref_uiWritePos, <span class="keywordtype">double</span> value, xiiUInt8 uiWidth, <span class="keywordtype">bool</span> bPadZeros, xiiInt8 iPrecision, <span class="keywordtype">bool</span> bScientific, <span class="keywordtype">bool</span> bRemoveTrailingZeroes = <span class="keyword">false</span>);</div>
-<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span>};</div>
+<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span> </div>
+<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span>  <span class="keyword">static</span> xiiUInt32 CalculateLineNumber(<span class="keyword">const</span> <span class="keywordtype">char</span>* szString, <span class="keyword">const</span> <span class="keywordtype">char</span>* szOffset, <span class="keyword">const</span> <span class="keywordtype">char</span>* pStringEnd = <a class="code hl_function" href="../../de/d05/classxii_unicode_utils.html#a660bf5a88b574b4be176332064e55fbe">xiiUnicodeUtils::GetMaxStringEnd&lt;char&gt;</a>());</div>
+<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span>};</div>
 </div>
-<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span> </div>
-<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span><span class="preprocessor">#include &lt;Foundation/Strings/Implementation/StringUtils_inl.h&gt;</span></div>
+<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span> </div>
+<div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span><span class="preprocessor">#include &lt;Foundation/Strings/Implementation/StringUtils_inl.h&gt;</span></div>
 <div class="ttc" id="aclassxii_string_utils_html"><div class="ttname"><a href="../../df/d65/classxii_string_utils.html">xiiStringUtils</a></div><div class="ttdoc">Helper functions to work with UTF-8 strings (which include pure ASCII strings)</div><div class="ttdef"><b>Definition</b> StringUtils.h:11</div></div>
 <div class="ttc" id="aclassxii_string_utils_html_a98e19f956607e291a7972109ed9e577f"><div class="ttname"><a href="../../df/d65/classxii_string_utils.html#a98e19f956607e291a7972109ed9e577f">xiiStringUtils::UpdateStringEnd</a></div><div class="ttdeci">static void UpdateStringEnd(const T *pStringStart, const T *&amp;ref_pStringEnd)</div><div class="ttdoc">Recomputes the end pointer of a string (szStringEnd), if that is currently set to xiiMaxStringEnd....</div></div>
 <div class="ttc" id="aclassxii_string_utils_html_acb10982c595d5619ce53fdd89313202f"><div class="ttname"><a href="../../df/d65/classxii_string_utils.html#acb10982c595d5619ce53fdd89313202f">xiiStringUtils::IsNullOrEmpty</a></div><div class="ttdeci">static constexpr bool IsNullOrEmpty(const T *pString)</div><div class="ttdoc">Returns true, if the given string is a nullptr pointer or a string that immediately terminates with a...</div></div>
@@ -267,7 +269,7 @@ $(function(){initNavTree('de/dde/_string_utils_8h_source.html','../../'); initRe
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.html">home</a></li><li class="navelem"><a class="el" href="../../dir_1036706e55c22cab35bc1c58ee689f1d.html">runner</a></li><li class="navelem"><a class="el" href="../../dir_629f8151d55d307162ff2d619fb1783d.html">work</a></li><li class="navelem"><a class="el" href="../../dir_1ddc44fe1263a8c7935fa6130b7d9499.html">XII</a></li><li class="navelem"><a class="el" href="../../dir_2c1b6808f12952f4c36e05ba7068379a.html">XII</a></li><li class="navelem"><a class="el" href="../../dir_b5a1c4ecfca018ad24b729e213296d41.html">Source</a></li><li class="navelem"><a class="el" href="../../dir_e321052006a51284e67389ab20037e7c.html">Engine</a></li><li class="navelem"><a class="el" href="../../dir_be0c42c58b36f42c54ec54024ed4f6af.html">Foundation</a></li><li class="navelem"><a class="el" href="../../dir_b0d9e1007714c8956662e529025ab552.html">Strings</a></li><li class="navelem"><b>StringUtils.h</b></li>
-    <li class="footer">Generated on Tue Jul 2 2024 19:08:41 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Sat Aug 31 2024 15:14:56 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

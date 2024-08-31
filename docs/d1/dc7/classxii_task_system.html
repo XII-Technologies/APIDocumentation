@@ -156,7 +156,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>WriteStateSnap
 <tr class="memdesc:a8aaca50fe859fd5278d61fe6372280c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes the internal state of the <a class="el" href="../../d1/dc7/classxii_task_system.html" title="This system allows to automatically distribute tasks onto a number of worker threads.">xiiTaskSystem</a> as a DGML graph. <br /></td></tr>
 <tr class="separator:a8aaca50fe859fd5278d61fe6372280c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a896e88c61001fef965d8d35e97eaa142" id="r_a896e88c61001fef965d8d35e97eaa142"><td class="memItemLeft" align="right" valign="top"><a id="a896e88c61001fef965d8d35e97eaa142" name="a896e88c61001fef965d8d35e97eaa142"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>WriteStateSnapshotToFile</b> (<a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sPath={})</td></tr>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>WriteStateSnapshotToFile</b> (<a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sPath={})</td></tr>
 <tr class="memdesc:a896e88c61001fef965d8d35e97eaa142"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convenience function to write the task graph snapshot to a file. If no path is given, the file is written to ":appdata/TaskGraphs/__date__.dgml". <br /></td></tr>
 <tr class="separator:a896e88c61001fef965d8d35e97eaa142"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -245,21 +245,21 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>StartTaskGroup
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader">Parallel For</h2></td></tr>
 <tr class="memitem:a3142d2d24107a0eaac4ff7f69e02aee4" id="r_a3142d2d24107a0eaac4ff7f69e02aee4"><td class="memItemLeft" align="right" valign="top"><a id="a3142d2d24107a0eaac4ff7f69e02aee4" name="a3142d2d24107a0eaac4ff7f69e02aee4"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>ParallelForIndexed</b> (xiiUInt32 uiStartIndex, xiiUInt32 uiNumItems, <a class="el" href="../../dc/d84/structxii_delegate.html">xiiParallelForIndexedFunction32</a> taskCallback, <a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sTaskName={}, xiiTaskNesting taskNesting=xiiTaskNesting::Never, const <a class="el" href="../../d5/d62/structxii_parallel_for_params.html">xiiParallelForParams</a> &amp;params=<a class="el" href="../../d5/d62/structxii_parallel_for_params.html">xiiParallelForParams</a>())</td></tr>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>ParallelForIndexed</b> (xiiUInt32 uiStartIndex, xiiUInt32 uiNumItems, <a class="el" href="../../dc/d84/structxii_delegate.html">xiiParallelForIndexedFunction32</a> taskCallback, <a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sTaskName={}, xiiTaskNesting taskNesting=xiiTaskNesting::Never, const <a class="el" href="../../d5/d62/structxii_parallel_for_params.html">xiiParallelForParams</a> &amp;params=<a class="el" href="../../d5/d62/structxii_parallel_for_params.html">xiiParallelForParams</a>())</td></tr>
 <tr class="memdesc:a3142d2d24107a0eaac4ff7f69e02aee4"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="../../d8/d4f/class_a.html">A</a> helper function to process task items in a parallel fashion by having per-worker index ranges generated. <br /></td></tr>
 <tr class="separator:a3142d2d24107a0eaac4ff7f69e02aee4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a12167e6306028ca674051dcd2559ac62" id="r_a12167e6306028ca674051dcd2559ac62"><td class="memItemLeft" align="right" valign="top"><a id="a12167e6306028ca674051dcd2559ac62" name="a12167e6306028ca674051dcd2559ac62"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>ParallelForIndexed</b> (xiiUInt64 uiStartIndex, xiiUInt64 uiNumItems, <a class="el" href="../../dc/d84/structxii_delegate.html">xiiParallelForIndexedFunction64</a> taskCallback, <a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sTaskName={}, xiiTaskNesting taskNesting=xiiTaskNesting::Never, const <a class="el" href="../../d5/d62/structxii_parallel_for_params.html">xiiParallelForParams</a> &amp;params=<a class="el" href="../../d5/d62/structxii_parallel_for_params.html">xiiParallelForParams</a>())</td></tr>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>ParallelForIndexed</b> (xiiUInt64 uiStartIndex, xiiUInt64 uiNumItems, <a class="el" href="../../dc/d84/structxii_delegate.html">xiiParallelForIndexedFunction64</a> taskCallback, <a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sTaskName={}, xiiTaskNesting taskNesting=xiiTaskNesting::Never, const <a class="el" href="../../d5/d62/structxii_parallel_for_params.html">xiiParallelForParams</a> &amp;params=<a class="el" href="../../d5/d62/structxii_parallel_for_params.html">xiiParallelForParams</a>())</td></tr>
 <tr class="memdesc:a12167e6306028ca674051dcd2559ac62"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="../../d8/d4f/class_a.html">A</a> helper function to process task items in a parallel fashion by having per-worker index ranges generated. <br /></td></tr>
 <tr class="separator:a12167e6306028ca674051dcd2559ac62"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7f83ee6b374ff547c65b326831426938" id="r_a7f83ee6b374ff547c65b326831426938"><td class="memTemplParams" colspan="2">template&lt;typename ElemType , typename Callback &gt; </td></tr>
-<tr class="memitem:a7f83ee6b374ff547c65b326831426938"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a7f83ee6b374ff547c65b326831426938">ParallelFor</a> (<a class="el" href="../../d0/d60/classxii_array_ptr.html">xiiArrayPtr</a>&lt; ElemType &gt; taskItems, Callback taskCallback, <a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sTaskName={}, const <a class="el" href="../../d5/d62/structxii_parallel_for_params.html">xiiParallelForParams</a> &amp;params=<a class="el" href="../../d5/d62/structxii_parallel_for_params.html">xiiParallelForParams</a>())</td></tr>
+<tr class="memitem:a7f83ee6b374ff547c65b326831426938"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a7f83ee6b374ff547c65b326831426938">ParallelFor</a> (<a class="el" href="../../d0/d60/classxii_array_ptr.html">xiiArrayPtr</a>&lt; ElemType &gt; taskItems, Callback taskCallback, <a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sTaskName={}, const <a class="el" href="../../d5/d62/structxii_parallel_for_params.html">xiiParallelForParams</a> &amp;params=<a class="el" href="../../d5/d62/structxii_parallel_for_params.html">xiiParallelForParams</a>())</td></tr>
 <tr class="separator:a7f83ee6b374ff547c65b326831426938"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a285a746b42c6711da8729f73a7334670" id="r_a285a746b42c6711da8729f73a7334670"><td class="memTemplParams" colspan="2">template&lt;typename ElemType , typename Callback &gt; </td></tr>
-<tr class="memitem:a285a746b42c6711da8729f73a7334670"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a285a746b42c6711da8729f73a7334670">ParallelForSingle</a> (<a class="el" href="../../d0/d60/classxii_array_ptr.html">xiiArrayPtr</a>&lt; ElemType &gt; taskItems, Callback taskCallback, <a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sTaskName={}, const <a class="el" href="../../d5/d62/structxii_parallel_for_params.html">xiiParallelForParams</a> &amp;params=<a class="el" href="../../d5/d62/structxii_parallel_for_params.html">xiiParallelForParams</a>())</td></tr>
+<tr class="memitem:a285a746b42c6711da8729f73a7334670"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a285a746b42c6711da8729f73a7334670">ParallelForSingle</a> (<a class="el" href="../../d0/d60/classxii_array_ptr.html">xiiArrayPtr</a>&lt; ElemType &gt; taskItems, Callback taskCallback, <a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sTaskName={}, const <a class="el" href="../../d5/d62/structxii_parallel_for_params.html">xiiParallelForParams</a> &amp;params=<a class="el" href="../../d5/d62/structxii_parallel_for_params.html">xiiParallelForParams</a>())</td></tr>
 <tr class="separator:a285a746b42c6711da8729f73a7334670"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0c75ed6cc46d2aa0cb66b8ae65f5f6f0" id="r_a0c75ed6cc46d2aa0cb66b8ae65f5f6f0"><td class="memTemplParams" colspan="2">template&lt;typename ElemType , typename Callback &gt; </td></tr>
-<tr class="memitem:a0c75ed6cc46d2aa0cb66b8ae65f5f6f0"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a0c75ed6cc46d2aa0cb66b8ae65f5f6f0">ParallelForSingleIndex</a> (<a class="el" href="../../d0/d60/classxii_array_ptr.html">xiiArrayPtr</a>&lt; ElemType &gt; taskItems, Callback taskCallback, <a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sTaskName={}, const <a class="el" href="../../d5/d62/structxii_parallel_for_params.html">xiiParallelForParams</a> &amp;params=<a class="el" href="../../d5/d62/structxii_parallel_for_params.html">xiiParallelForParams</a>())</td></tr>
+<tr class="memitem:a0c75ed6cc46d2aa0cb66b8ae65f5f6f0"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a0c75ed6cc46d2aa0cb66b8ae65f5f6f0">ParallelForSingleIndex</a> (<a class="el" href="../../d0/d60/classxii_array_ptr.html">xiiArrayPtr</a>&lt; ElemType &gt; taskItems, Callback taskCallback, <a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sTaskName={}, const <a class="el" href="../../d5/d62/structxii_parallel_for_params.html">xiiParallelForParams</a> &amp;params=<a class="el" href="../../d5/d62/structxii_parallel_for_params.html">xiiParallelForParams</a>())</td></tr>
 <tr class="separator:a0c75ed6cc46d2aa0cb66b8ae65f5f6f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -546,7 +546,7 @@ template&lt;typename ElemType , typename Callback &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a></td>          <td class="paramname"><span class="paramname"><em>sTaskName</em></span><span class="paramdefsep"> = </span><span class="paramdefval">{}</span>, </td>
+          <td class="paramtype"><a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a></td>          <td class="paramname"><span class="paramname"><em>sTaskName</em></span><span class="paramdefsep"> = </span><span class="paramdefval">{}</span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -590,7 +590,7 @@ template&lt;typename ElemType , typename Callback &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a></td>          <td class="paramname"><span class="paramname"><em>sTaskName</em></span><span class="paramdefsep"> = </span><span class="paramdefval">{}</span>, </td>
+          <td class="paramtype"><a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a></td>          <td class="paramname"><span class="paramname"><em>sTaskName</em></span><span class="paramdefsep"> = </span><span class="paramdefval">{}</span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -636,7 +636,7 @@ template&lt;typename ElemType , typename Callback &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a></td>          <td class="paramname"><span class="paramname"><em>sTaskName</em></span><span class="paramdefsep"> = </span><span class="paramdefval">{}</span>, </td>
+          <td class="paramtype"><a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a></td>          <td class="paramname"><span class="paramname"><em>sTaskName</em></span><span class="paramdefsep"> = </span><span class="paramdefval">{}</span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -791,7 +791,7 @@ template&lt;typename ElemType , typename Callback &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d1/dc7/classxii_task_system.html">xiiTaskSystem</a></li>
-    <li class="footer">Generated on Tue Jul 2 2024 19:08:47 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Sat Aug 31 2024 15:15:02 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

@@ -164,8 +164,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a6529072876fa356c059362c61cbebd71" id="r_a6529072876fa356c059362c61cbebd71"><td class="memItemLeft" align="right" valign="top"><a id="a6529072876fa356c059362c61cbebd71" name="a6529072876fa356c059362c61cbebd71"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>CreateSwapchain</b> (const <a class="el" href="../../d7/dc7/structxii_g_a_l_swap_chain_creation_description.html">xiiGALSwapChainCreationDescription</a> &amp;desc)</td></tr>
 <tr class="separator:a6529072876fa356c059362c61cbebd71"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a07ba8c58321d640aba069951efe3467c" id="r_a07ba8c58321d640aba069951efe3467c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a07ba8c58321d640aba069951efe3467c">Present</a> (bool bEnableVSync) override</td></tr>
-<tr class="separator:a07ba8c58321d640aba069951efe3467c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55352a73824fdbbb94eaa8b23b424acd" id="r_a55352a73824fdbbb94eaa8b23b424acd"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a55352a73824fdbbb94eaa8b23b424acd">PresentImage</a> (bool bEnableVSync) override</td></tr>
+<tr class="separator:a55352a73824fdbbb94eaa8b23b424acd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa67eb745cb05f4c5927cb5d402c0425b" id="r_aa67eb745cb05f4c5927cb5d402c0425b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa67eb745cb05f4c5927cb5d402c0425b">AcquireImage</a> () override</td></tr>
+<tr class="separator:aa67eb745cb05f4c5927cb5d402c0425b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af65d7c242b717b2da19302222e4d5e4d" id="r_af65d7c242b717b2da19302222e4d5e4d"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af65d7c242b717b2da19302222e4d5e4d">CaptureImage</a> (<a class="el" href="../../d4/d6a/classxii_image.html">xiiImage</a> &amp;out_image) override</td></tr>
 <tr class="separator:af65d7c242b717b2da19302222e4d5e4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -194,6 +196,33 @@ Public Attributes</h2></td></tr>
 <div class="textblock"><p>Creates a swapchain and keeps it up to date with the window. </p>
 <p>If the window is resized or xiiGameApplication::cvar_AppVSync changes and onSwapChainChanged is valid, the swapchain is destroyed and recreated. It is up the the application to respond to the OnSwapChainChanged callback and update any references to the swap-chain, e.g. uses in <a class="el" href="../../dd/df1/classxii_view.html" title="Encapsulates a view on the given world through the given camera and rendered with the specified Rende...">xiiView</a> or uses as render targets in <a class="el" href="../../df/d8d/classxii_g_a_l_render_target_setup.html">xiiGALRenderTargetSetup</a>. If onSwapChainChanged is not set, the swapchain will not be re-created and it is up to the application to manage the swapchain and react to window changes. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="aa67eb745cb05f4c5927cb5d402c0425b" name="aa67eb745cb05f4c5927cb5d402c0425b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa67eb745cb05f4c5927cb5d402c0425b">&#9670;&#160;</a></span>AcquireImage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void xiiWindowOutputTargetGAL::AcquireImage </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="../../d7/d4b/classxii_window_output_target_base.html">xiiWindowOutputTargetBase</a>.</p>
+
+</div>
+</div>
 <a id="af65d7c242b717b2da19302222e4d5e4d" name="af65d7c242b717b2da19302222e4d5e4d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af65d7c242b717b2da19302222e4d5e4d">&#9670;&#160;</a></span>CaptureImage()</h2>
 
@@ -216,15 +245,15 @@ Public Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000070">Todo</a></b></dt><dd>Make this more efficient </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000071">Todo</a></b></dt><dd>Support depth pitch. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000069">Todo</a></b></dt><dd>Make this more efficient </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000070">Todo</a></b></dt><dd>Support depth pitch. </dd></dl>
 
 <p>Implements <a class="el" href="../../d7/d4b/classxii_window_output_target_base.html">xiiWindowOutputTargetBase</a>.</p>
 
 </div>
 </div>
-<a id="a07ba8c58321d640aba069951efe3467c" name="a07ba8c58321d640aba069951efe3467c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a07ba8c58321d640aba069951efe3467c">&#9670;&#160;</a></span>Present()</h2>
+<a id="a55352a73824fdbbb94eaa8b23b424acd" name="a55352a73824fdbbb94eaa8b23b424acd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a55352a73824fdbbb94eaa8b23b424acd">&#9670;&#160;</a></span>PresentImage()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -233,7 +262,7 @@ Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void xiiWindowOutputTargetGAL::Present </td>
+          <td class="memname">void xiiWindowOutputTargetGAL::PresentImage </td>
           <td>(</td>
           <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>bEnableVSync</em></span></td><td>)</td>
           <td></td>
@@ -260,7 +289,7 @@ Public Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d9/d8d/classxii_window_output_target_g_a_l.html">xiiWindowOutputTargetGAL</a></li>
-    <li class="footer">Generated on Tue Jul 2 2024 19:08:48 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Sat Aug 31 2024 15:15:02 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

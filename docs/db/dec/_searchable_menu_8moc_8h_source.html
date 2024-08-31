@@ -156,7 +156,7 @@ $(function(){initNavTree('db/dec/_searchable_menu_8moc_8h_source.html','../../')
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="keyword">public</span>:</div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>  <a class="code hl_class" href="../../d3/d9e/classxii_qt_searchable_menu.html">xiiQtSearchableMenu</a>(QObject* pParent);</div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>  <span class="keywordtype">void</span> AddItem(<a class="code hl_struct" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sDisplayName, <a class="code hl_struct" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sInternalPath, <span class="keyword">const</span> QVariant&amp; variant, QIcon icon = QIcon());</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>  <span class="keywordtype">void</span> AddItem(<a class="code hl_class" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sDisplayName, <a class="code hl_class" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sInternalPath, <span class="keyword">const</span> QVariant&amp; variant, QIcon icon = QIcon());</div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>  QString GetSearchText() <span class="keyword">const</span>;</div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
@@ -178,7 +178,7 @@ $(function(){initNavTree('db/dec/_searchable_menu_8moc_8h_source.html','../../')
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>  <span class="keyword">virtual</span> <span class="keywordtype">bool</span> eventFilter(QObject*, QEvent*) <span class="keyword">override</span>;</div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>  QStandardItem* CreateCategoryMenu(<a class="code hl_struct" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sCategory);</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>  QStandardItem* CreateCategoryMenu(<a class="code hl_class" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sCategory);</div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>  <span class="keywordtype">bool</span>           SelectFirstLeaf(QModelIndex parent);</div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>  QWidget*                          m_pGroup;</div>
@@ -189,20 +189,20 @@ $(function(){initNavTree('db/dec/_searchable_menu_8moc_8h_source.html','../../')
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>  <a class="code hl_class" href="../../d6/df7/classxii_map.html">xiiMap&lt;xiiString, QStandardItem*&gt;</a> m_Hierarchy;</div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>};</div>
 </div>
-<div class="ttc" id="aclassxii_map_html"><div class="ttname"><a href="../../d6/df7/classxii_map.html">xiiMap</a></div><div class="ttdef"><b>Definition</b> Map.h:390</div></div>
+<div class="ttc" id="aclassxii_map_html"><div class="ttname"><a href="../../d6/df7/classxii_map.html">xiiMap</a></div><div class="ttdef"><b>Definition</b> Map.h:401</div></div>
 <div class="ttc" id="aclassxii_qt_search_widget_html"><div class="ttname"><a href="../../df/d50/classxii_qt_search_widget.html">xiiQtSearchWidget</a></div><div class="ttdoc">A widget that contains a line edit for a search text and a button to clear the search text.</div><div class="ttdef"><b>Definition</b> SearchWidget.moc.h:14</div></div>
 <div class="ttc" id="aclassxii_qt_searchable_menu_html"><div class="ttname"><a href="../../d3/d9e/classxii_qt_searchable_menu.html">xiiQtSearchableMenu</a></div><div class="ttdoc">Implements an item for insertion into a QMenu that shows a search bar and a hierarchical list of opti...</div><div class="ttdef"><b>Definition</b> SearchableMenu.moc.h:22</div></div>
 <div class="ttc" id="aclassxii_qt_searchable_menu_html_a4a78083b29796bae0da80a9c16184f30"><div class="ttname"><a href="../../d3/d9e/classxii_qt_searchable_menu.html#a4a78083b29796bae0da80a9c16184f30">xiiQtSearchableMenu::SearchTextChanged</a></div><div class="ttdeci">void SearchTextChanged(const QString &amp;sText)</div><div class="ttdoc">Triggered whenever the search text is modified.</div></div>
 <div class="ttc" id="aclassxii_qt_searchable_menu_html_a7cf788157e1fa815c4893f56efde8957"><div class="ttname"><a href="../../d3/d9e/classxii_qt_searchable_menu.html#a7cf788157e1fa815c4893f56efde8957">xiiQtSearchableMenu::MenuItemTriggered</a></div><div class="ttdeci">void MenuItemTriggered(const QString &amp;sName, const QVariant &amp;variant)</div><div class="ttdoc">Signaled when an item is double clicked or otherwise selected for activation.</div></div>
 <div class="ttc" id="aclassxii_qt_tree_search_filter_model_html"><div class="ttname"><a href="../../d5/d73/classxii_qt_tree_search_filter_model.html">xiiQtTreeSearchFilterModel</a></div><div class="ttdef"><b>Definition</b> TreeSearchFilterModel.moc.h:13</div></div>
-<div class="ttc" id="astructxii_string_view_html"><div class="ttname"><a href="../../da/d9d/structxii_string_view.html">xiiStringView</a></div><div class="ttdoc">xiiStringView represent a read-only sub-string of a larger string, as it can store a dedicated string...</div><div class="ttdef"><b>Definition</b> StringView.h:28</div></div>
+<div class="ttc" id="aclassxii_string_view_html"><div class="ttname"><a href="../../d4/d85/classxii_string_view.html">xiiStringView</a></div><div class="ttdoc">xiiStringView represent a read-only sub-string of a larger string, as it can store a dedicated string...</div><div class="ttdef"><b>Definition</b> StringView.h:34</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.html">home</a></li><li class="navelem"><a class="el" href="../../dir_1036706e55c22cab35bc1c58ee689f1d.html">runner</a></li><li class="navelem"><a class="el" href="../../dir_629f8151d55d307162ff2d619fb1783d.html">work</a></li><li class="navelem"><a class="el" href="../../dir_1ddc44fe1263a8c7935fa6130b7d9499.html">XII</a></li><li class="navelem"><a class="el" href="../../dir_2c1b6808f12952f4c36e05ba7068379a.html">XII</a></li><li class="navelem"><a class="el" href="../../dir_b5a1c4ecfca018ad24b729e213296d41.html">Source</a></li><li class="navelem"><a class="el" href="../../dir_64f53f8da7bf780a58c32bb848e7873b.html">Tools</a></li><li class="navelem"><a class="el" href="../../dir_4b5bc41f7c4cbfc8ca80bdea56300f1d.html">Libs</a></li><li class="navelem"><a class="el" href="../../dir_8694d7149aa3c4cbc4b219c953b250c5.html">GuiFoundation</a></li><li class="navelem"><a class="el" href="../../dir_9a2348ba360553a58aa9ebac918c2653.html">Widgets</a></li><li class="navelem"><b>SearchableMenu.moc.h</b></li>
-    <li class="footer">Generated on Tue Jul 2 2024 19:08:43 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Sat Aug 31 2024 15:14:58 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

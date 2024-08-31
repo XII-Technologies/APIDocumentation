@@ -1,7 +1,7 @@
 var classxii_g_a_l_bottom_level_a_s_vulkan =
 [
-    [ "GetActualGeometryCount", "db/dce/classxii_g_a_l_bottom_level_a_s_vulkan.html#a61f228a5cb147564ae525fdd40d4c5b7", null ],
-    [ "GetGeometryDescriptionIndex", "db/dce/classxii_g_a_l_bottom_level_a_s_vulkan.html#ab11a39ce95036b485d00acd3c0bec392", null ],
-    [ "GetGeometryIndex", "db/dce/classxii_g_a_l_bottom_level_a_s_vulkan.html#ae623a5c59299bb7275af1e2fc5b89cbe", null ],
-    [ "GetScratchBufferSizeDescription", "db/dce/classxii_g_a_l_bottom_level_a_s_vulkan.html#a1a2519fcc3699f03e5f060658334be6b", null ]
+    [ "GetActualGeometryCount", "db/dce/classxii_g_a_l_bottom_level_a_s_vulkan.html#a9fb52014125822ca6189e95fa0fa0cc0", null ],
+    [ "GetGeometryDescriptionIndex", "db/dce/classxii_g_a_l_bottom_level_a_s_vulkan.html#a1b19fb4353ec5d0fedb3f33a3a28fa3f", null ],
+    [ "GetGeometryIndex", "db/dce/classxii_g_a_l_bottom_level_a_s_vulkan.html#adff30b75974a0f7962cb4a9f11e5a69e", null ],
+    [ "GetScratchBufferSizeDescription", "db/dce/classxii_g_a_l_bottom_level_a_s_vulkan.html#a672bf7a0c691fe6f3f99e071bf1659d2", null ]
 ];

@@ -184,7 +184,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>ResaveAllAssets</b> (
 <tr class="separator:adff6dba6321cca3dee01405faa4ae39a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Manual and Automatic Change Notification</div></td></tr>
 <tr class="memitem:a2360ec42953bb36d6f579dc241032556" id="r_a2360ec42953bb36d6f579dc241032556"><td class="memItemLeft" align="right" valign="top"><a id="a2360ec42953bb36d6f579dc241032556" name="a2360ec42953bb36d6f579dc241032556"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>NotifyOfFileChange</b> (<a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sAbsolutePath)</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>NotifyOfFileChange</b> (<a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sAbsolutePath)</td></tr>
 <tr class="memdesc:a2360ec42953bb36d6f579dc241032556"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allows to tell the system of a new or changed file, that might be of interest to the Curator. <br /></td></tr>
 <tr class="separator:a2360ec42953bb36d6f579dc241032556"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a108d2eb48a97965cef3b1d0674471aea" id="r_a108d2eb48a97965cef3b1d0674471aea"><td class="memItemLeft" align="right" valign="top"><a id="a108d2eb48a97965cef3b1d0674471aea" name="a108d2eb48a97965cef3b1d0674471aea"></a>
@@ -206,7 +206,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>InvalidateAssetsWithT
 <tr class="separator:a78bf7935d3aab8bb41768b2500c48a8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Utilities</div></td></tr>
 <tr class="memitem:af8d172af27c47e7f09efdd2276725c3e" id="r_af8d172af27c47e7f09efdd2276725c3e"><td class="memItemLeft" align="right" valign="top"><a id="af8d172af27c47e7f09efdd2276725c3e" name="af8d172af27c47e7f09efdd2276725c3e"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>GenerateTransitiveHull</b> (const <a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sAssetOrPath, <a class="el" href="../../d6/d31/classxii_set.html">xiiSet</a>&lt; <a class="el" href="../../df/dfb/structxii_hybrid_string.html">xiiString</a> &gt; &amp;inout_deps, bool bIncludeTransformDeps=false, bool bIncludeThumbnailDeps=false, bool bIncludePackageDeps=false) const</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>GenerateTransitiveHull</b> (const <a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sAssetOrPath, <a class="el" href="../../d6/d31/classxii_set.html">xiiSet</a>&lt; <a class="el" href="../../df/dfb/structxii_hybrid_string.html">xiiString</a> &gt; &amp;inout_deps, bool bIncludeTransformDeps=false, bool bIncludeThumbnailDeps=false, bool bIncludePackageDeps=false) const</td></tr>
 <tr class="memdesc:af8d172af27c47e7f09efdd2276725c3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates one transitive hull for all the dependencies that are enabled. The set will contain dependencies that are reachable via any combination of enabled reference types. <br /></td></tr>
 <tr class="separator:af8d172af27c47e7f09efdd2276725c3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adcc0f37dc76c605da0a1c7aa038f5f91" id="r_adcc0f37dc76c605da0a1c7aa038f5f91"><td class="memItemLeft" align="right" valign="top"><a id="adcc0f37dc76c605da0a1c7aa038f5f91" name="adcc0f37dc76c605da0a1c7aa038f5f91"></a>
@@ -214,7 +214,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>GenerateInverseTransi
 <tr class="memdesc:adcc0f37dc76c605da0a1c7aa038f5f91"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates one inverse transitive hull for all the types dependencies that are enabled. The set will contain inverse dependencies that can reach the given asset (pAssetInfo) via any combination of the enabled reference types. As only assets can have dependencies, the inverse hull is always just asset GUIDs. <br /></td></tr>
 <tr class="separator:adcc0f37dc76c605da0a1c7aa038f5f91"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2da7752018934c36de06e3ed9520bd9d" id="r_a2da7752018934c36de06e3ed9520bd9d"><td class="memItemLeft" align="right" valign="top"><a id="a2da7752018934c36de06e3ed9520bd9d" name="a2da7752018934c36de06e3ed9520bd9d"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>WriteDependencyDGML</b> (const <a class="el" href="../../dc/d1d/classxii_uuid.html">xiiUuid</a> &amp;guid, <a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sOutputFile) const</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>WriteDependencyDGML</b> (const <a class="el" href="../../dc/d1d/classxii_uuid.html">xiiUuid</a> &amp;guid, <a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sOutputFile) const</td></tr>
 <tr class="memdesc:a2da7752018934c36de06e3ed9520bd9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates a DGML graph of all transform and thumbnail dependencies. <br /></td></tr>
 <tr class="separator:a2da7752018934c36de06e3ed9520bd9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8a4ac71d036ba9e97fd4f2cebd3094af" id="r_a8a4ac71d036ba9e97fd4f2cebd3094af"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8a4ac71d036ba9e97fd4f2cebd3094af">ClearAssetCaches</a> (<a class="el" href="../../d4/da4/classxii_asset_document_manager.html#a9a375f71a155ef917885c91836cca2e8">xiiAssetDocumentManager::OutputReliability</a> threshold)</td></tr>
@@ -249,7 +249,7 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>xiiLockedSubAssetTab
 <tr class="memitem:aec377a244ac6d65cdfb18a63d1435ba3" id="r_aec377a244ac6d65cdfb18a63d1435ba3"><td class="memItemLeft" align="right" valign="top"><a id="aec377a244ac6d65cdfb18a63d1435ba3" name="aec377a244ac6d65cdfb18a63d1435ba3"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>xiiLockedAssetTable</b> = <a class="el" href="../../da/d7f/classxii_locked_object.html">xiiLockedObject</a>&lt;<a class="el" href="../../dd/d52/classxii_mutex.html">xiiMutex</a>, const <a class="el" href="../../d8/dc2/classxii_hash_table.html">xiiHashTable</a>&lt;<a class="el" href="../../dc/d1d/classxii_uuid.html">xiiUuid</a>, <a class="el" href="../../d5/dc8/structxii_asset_info.html">xiiAssetInfo</a>*&gt;&gt;</td></tr>
 <tr class="separator:aec377a244ac6d65cdfb18a63d1435ba3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5e406d680727e567916cf6c7ce96d9a1" id="r_a5e406d680727e567916cf6c7ce96d9a1"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="../../da/d7f/classxii_locked_object.html">xiiLockedSubAsset</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5e406d680727e567916cf6c7ce96d9a1">FindSubAsset</a> (<a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sPathOrGuid, bool bExhaustiveSearch=false) const</td></tr>
+<tr class="memitem:a5e406d680727e567916cf6c7ce96d9a1" id="r_a5e406d680727e567916cf6c7ce96d9a1"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="../../da/d7f/classxii_locked_object.html">xiiLockedSubAsset</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5e406d680727e567916cf6c7ce96d9a1">FindSubAsset</a> (<a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sPathOrGuid, bool bExhaustiveSearch=false) const</td></tr>
 <tr class="memdesc:a5e406d680727e567916cf6c7ce96d9a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tries to find the asset information for an asset identified through a string.  <br /></td></tr>
 <tr class="separator:a5e406d680727e567916cf6c7ce96d9a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae81c09c4e8c79174d1530bc676efcf3a" id="r_ae81c09c4e8c79174d1530bc676efcf3a"><td class="memItemLeft" align="right" valign="top"><a id="ae81c09c4e8c79174d1530bc676efcf3a" name="ae81c09c4e8c79174d1530bc676efcf3a"></a>
@@ -280,7 +280,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>GetAssetTransformStat
 <tr class="memdesc:af89313c18632a6978fe680ca2f041b43"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of assets in the system and how many are in what transform state. <br /></td></tr>
 <tr class="separator:af89313c18632a6978fe680ca2f041b43"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeac871b5bc5d6b09528a2bec8545ae7f" id="r_aeac871b5bc5d6b09528a2bec8545ae7f"><td class="memItemLeft" align="right" valign="top"><a id="aeac871b5bc5d6b09528a2bec8545ae7f" name="aeac871b5bc5d6b09528a2bec8545ae7f"></a>
-<a class="el" href="../../df/dfb/structxii_hybrid_string.html">xiiString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>FindDataDirectoryForAsset</b> (<a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sAbsoluteAssetPath) const</td></tr>
+<a class="el" href="../../df/dfb/structxii_hybrid_string.html">xiiString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>FindDataDirectoryForAsset</b> (<a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sAbsoluteAssetPath) const</td></tr>
 <tr class="memdesc:aeac871b5bc5d6b09528a2bec8545ae7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Iterates over all known data directories and returns the absolute path to the directory in which this asset is located. <br /></td></tr>
 <tr class="separator:aeac871b5bc5d6b09528a2bec8545ae7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aca0682be36738185d2caeb54ff11cec9" id="r_aca0682be36738185d2caeb54ff11cec9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aca0682be36738185d2caeb54ff11cec9">FindBestMatchForFile</a> (<a class="el" href="../../d4/dbb/classxii_string_builder.html">xiiStringBuilder</a> &amp;ref_sFile, <a class="el" href="../../d0/d60/classxii_array_ptr.html">xiiArrayPtr</a>&lt; <a class="el" href="../../df/dfb/structxii_hybrid_string.html">xiiString</a> &gt; allowedFileExtensions) const</td></tr>
@@ -289,16 +289,16 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>GetAssetTransformStat
 <tr class="memitem:a5aa4edf6a62b41c40ffdb31e522c443e" id="r_a5aa4edf6a62b41c40ffdb31e522c443e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5aa4edf6a62b41c40ffdb31e522c443e">FindAllUses</a> (<a class="el" href="../../dc/d1d/classxii_uuid.html">xiiUuid</a> assetGuid, <a class="el" href="../../d6/d31/classxii_set.html">xiiSet</a>&lt; <a class="el" href="../../dc/d1d/classxii_uuid.html">xiiUuid</a> &gt; &amp;ref_uses, bool bTransitive) const</td></tr>
 <tr class="memdesc:a5aa4edf6a62b41c40ffdb31e522c443e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finds all uses, either as references or dependencies to a given asset.  <br /></td></tr>
 <tr class="separator:a5aa4edf6a62b41c40ffdb31e522c443e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab57b6c5bbbfa1ba36654c86af3b12fb7" id="r_ab57b6c5bbbfa1ba36654c86af3b12fb7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab57b6c5bbbfa1ba36654c86af3b12fb7">FindAllUses</a> (<a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sAbsolutePath, <a class="el" href="../../d6/d31/classxii_set.html">xiiSet</a>&lt; <a class="el" href="../../dc/d1d/classxii_uuid.html">xiiUuid</a> &gt; &amp;ref_uses) const</td></tr>
+<tr class="memitem:ab57b6c5bbbfa1ba36654c86af3b12fb7" id="r_ab57b6c5bbbfa1ba36654c86af3b12fb7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab57b6c5bbbfa1ba36654c86af3b12fb7">FindAllUses</a> (<a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sAbsolutePath, <a class="el" href="../../d6/d31/classxii_set.html">xiiSet</a>&lt; <a class="el" href="../../dc/d1d/classxii_uuid.html">xiiUuid</a> &gt; &amp;ref_uses) const</td></tr>
 <tr class="memdesc:ab57b6c5bbbfa1ba36654c86af3b12fb7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns all assets that use a file for transform. Use this to e.g. figure which assets still reference a .tga file in the project.  <br /></td></tr>
 <tr class="separator:ab57b6c5bbbfa1ba36654c86af3b12fb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a13c3d06528b713bf5c8fab1ea235053d" id="r_a13c3d06528b713bf5c8fab1ea235053d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a13c3d06528b713bf5c8fab1ea235053d">IsReferenced</a> (<a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a> sAbsolutePath) const</td></tr>
+<tr class="memitem:a13c3d06528b713bf5c8fab1ea235053d" id="r_a13c3d06528b713bf5c8fab1ea235053d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a13c3d06528b713bf5c8fab1ea235053d">IsReferenced</a> (<a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sAbsolutePath) const</td></tr>
 <tr class="memdesc:a13c3d06528b713bf5c8fab1ea235053d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether a file is referenced, i.e. used for transforming an asset. Use this to e.g. figure out whether a .tga file is still in use by any asset.  <br /></td></tr>
 <tr class="separator:a13c3d06528b713bf5c8fab1ea235053d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader">Asset Platform Configurations</h2></td></tr>
 <tr class="memitem:ac36126dd2bf7143524b979420a0a922c" id="r_ac36126dd2bf7143524b979420a0a922c"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="../../d6/db6/classxii_platform_profile.html">xiiPlatformProfile</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac36126dd2bf7143524b979420a0a922c">GetDevelopmentAssetProfile</a> () const</td></tr>
-<tr class="memdesc:ac36126dd2bf7143524b979420a0a922c"><td class="mdescLeft">&#160;</td><td class="mdescRight">The main platform on which development happens. E.g. "PC".  <br /></td></tr>
+<tr class="memdesc:ac36126dd2bf7143524b979420a0a922c"><td class="mdescLeft">&#160;</td><td class="mdescRight">The main platform on which development happens. E.g. "Default".  <br /></td></tr>
 <tr class="separator:ac36126dd2bf7143524b979420a0a922c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6455429669f6bda0c2aa7720b1d8bd65" id="r_a6455429669f6bda0c2aa7720b1d8bd65"><td class="memItemLeft" align="right" valign="top"><a id="a6455429669f6bda0c2aa7720b1d8bd65" name="a6455429669f6bda0c2aa7720b1d8bd65"></a>
 const <a class="el" href="../../d6/db6/classxii_platform_profile.html">xiiPlatformProfile</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetActiveAssetProfile</b> () const</td></tr>
@@ -391,7 +391,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>SaveRuntimeProfiles</
         <tr>
           <td class="memname">void xiiAssetCurator::FindAllUses </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a></td>          <td class="paramname"><span class="paramname"><em>sAbsolutePath</em></span>, </td>
+          <td class="paramtype"><a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a></td>          <td class="paramname"><span class="paramname"><em>sAbsolutePath</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -487,7 +487,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>SaveRuntimeProfiles</
         <tr>
           <td class="memname">const <a class="el" href="../../da/d7f/classxii_locked_object.html">xiiAssetCurator::xiiLockedSubAsset</a> xiiAssetCurator::FindSubAsset </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a></td>          <td class="paramname"><span class="paramname"><em>sPathOrGuid</em></span>, </td>
+          <td class="paramtype"><a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a></td>          <td class="paramname"><span class="paramname"><em>sPathOrGuid</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -517,7 +517,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>SaveRuntimeProfiles</
       </table>
 </div><div class="memdoc">
 
-<p>The main platform on which development happens. E.g. "PC". </p>
+<p>The main platform on which development happens. E.g. "Default". </p>
 <p>TODO: review this concept </p>
 
 </div>
@@ -531,7 +531,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>SaveRuntimeProfiles</
         <tr>
           <td class="memname">bool xiiAssetCurator::IsReferenced </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../da/d9d/structxii_string_view.html">xiiStringView</a></td>          <td class="paramname"><span class="paramname"><em>sAbsolutePath</em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a></td>          <td class="paramname"><span class="paramname"><em>sAbsolutePath</em></span></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
@@ -602,7 +602,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>SaveRuntimeProfiles</
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d8/dbd/classxii_asset_curator.html">xiiAssetCurator</a></li>
-    <li class="footer">Generated on Tue Jul 2 2024 19:08:44 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Sat Aug 31 2024 15:14:59 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>
