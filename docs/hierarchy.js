@@ -250,6 +250,7 @@ var hierarchy =
     [ "xiiConvexHullGenerator::Face", "d0/dec/structxii_convex_hull_generator_1_1_face.html", null ],
     [ "xiiOBJLoader::Face", "df/df3/structxii_o_b_j_loader_1_1_face.html", null ],
     [ "xiiOBJLoader::FaceVertex", "db/d30/structxii_o_b_j_loader_1_1_face_vertex.html", null ],
+    [ "xiiGALCommandQueueVulkan::FenceInfo", "d6/d56/structxii_g_a_l_command_queue_vulkan_1_1_fence_info.html", null ],
     [ "xiiTokenizedFileCache::FileData", "df/ddb/structxii_tokenized_file_cache_1_1_file_data.html", null ],
     [ "xiiFileSystem::FileEvent", "db/da4/structxii_file_system_1_1_file_event.html", null ],
     [ "xiiFileSystem::FileEventType", "d5/d74/structxii_file_system_1_1_file_event_type.html", null ],
@@ -1730,6 +1731,20 @@ var hierarchy =
         [ "xiiDynamicArray< vk::Semaphore >", "dc/da4/classxii_dynamic_array.html", null ]
       ] ]
     ] ],
+    [ "xiiArrayBase< vk::VertexInputAttributeDescription, xiiDynamicArrayBase< vk::VertexInputAttributeDescription > >", "da/d4c/classxii_array_base.html", [
+      [ "xiiDynamicArrayBase< vk::VertexInputAttributeDescription >", "d2/dea/classxii_dynamic_array_base.html", [
+        [ "xiiDynamicArray< vk::VertexInputAttributeDescription, xiiDefaultAllocatorWrapper >", "dc/da4/classxii_dynamic_array.html", [
+          [ "xiiHybridArray< vk::VertexInputAttributeDescription, XII_GAL_MAX_VERTEX_BUFFER_COUNT >", "dc/da9/classxii_hybrid_array.html", null ]
+        ] ]
+      ] ]
+    ] ],
+    [ "xiiArrayBase< vk::VertexInputBindingDescription, xiiDynamicArrayBase< vk::VertexInputBindingDescription > >", "da/d4c/classxii_array_base.html", [
+      [ "xiiDynamicArrayBase< vk::VertexInputBindingDescription >", "d2/dea/classxii_dynamic_array_base.html", [
+        [ "xiiDynamicArray< vk::VertexInputBindingDescription, xiiDefaultAllocatorWrapper >", "dc/da4/classxii_dynamic_array.html", [
+          [ "xiiHybridArray< vk::VertexInputBindingDescription, XII_GAL_MAX_VERTEX_BUFFER_COUNT >", "dc/da9/classxii_hybrid_array.html", null ]
+        ] ]
+      ] ]
+    ] ],
     [ "xiiArrayBase< void *, xiiDynamicArrayBase< void * > >", "da/d4c/classxii_array_base.html", [
       [ "xiiDynamicArrayBase< void * >", "d2/dea/classxii_dynamic_array_base.html", [
         [ "xiiDynamicArray< void * >", "dc/da4/classxii_dynamic_array.html", null ]
@@ -2365,6 +2380,11 @@ var hierarchy =
     ] ],
     [ "xiiArrayBase< xiiGALCommandQueueProperties, xiiStaticArray< xiiGALCommandQueueProperties, Capacity > >", "da/d4c/classxii_array_base.html", [
       [ "xiiStaticArray< xiiGALCommandQueueProperties, XII_GAL_MAX_ADAPTER_QUEUE_COUNT >", "d9/d25/classxii_static_array.html", null ]
+    ] ],
+    [ "xiiArrayBase< xiiGALCommandQueueVulkan::FenceInfo, xiiDynamicArrayBase< xiiGALCommandQueueVulkan::FenceInfo > >", "da/d4c/classxii_array_base.html", [
+      [ "xiiDynamicArrayBase< xiiGALCommandQueueVulkan::FenceInfo >", "d2/dea/classxii_dynamic_array_base.html", [
+        [ "xiiDynamicArray< xiiGALCommandQueueVulkan::FenceInfo >", "dc/da4/classxii_dynamic_array.html", null ]
+      ] ]
     ] ],
     [ "xiiArrayBase< xiiGALDevice::DestroyedObject, xiiDynamicArrayBase< xiiGALDevice::DestroyedObject > >", "da/d4c/classxii_array_base.html", [
       [ "xiiDynamicArrayBase< xiiGALDevice::DestroyedObject >", "d2/dea/classxii_dynamic_array_base.html", [
@@ -3343,11 +3363,11 @@ var hierarchy =
     ] ],
     [ "xiiArrayBase< xiiUInt64, xiiDynamicArrayBase< xiiUInt64 > >", "da/d4c/classxii_array_base.html", [
       [ "xiiDynamicArrayBase< xiiUInt64 >", "d2/dea/classxii_dynamic_array_base.html", [
+        [ "xiiDynamicArray< xiiUInt64 >", "dc/da4/classxii_dynamic_array.html", null ],
         [ "xiiDynamicArray< xiiUInt64, xiiDefaultAllocatorWrapper >", "dc/da4/classxii_dynamic_array.html", [
           [ "xiiHybridArray< xiiUInt64, 16 >", "dc/da9/classxii_hybrid_array.html", null ],
           [ "xiiHybridArray< xiiUInt64, 64 >", "dc/da9/classxii_hybrid_array.html", null ]
-        ] ],
-        [ "xiiDynamicArray< xiiUInt64 >", "dc/da4/classxii_dynamic_array.html", null ]
+        ] ]
       ] ]
     ] ],
     [ "xiiArrayBase< xiiUInt8 *, xiiDynamicArrayBase< xiiUInt8 * > >", "da/d4c/classxii_array_base.html", [
@@ -7582,6 +7602,7 @@ var hierarchy =
     [ "xiiShaderCompilerFlags", "d3/d56/structxii_shader_compiler_flags.html", null ],
     [ "xiiShaderManager", "df/deb/classxii_shader_manager.html", null ],
     [ "xiiShaderMat3", "d5/d72/classxii_shader_mat3.html", null ],
+    [ "xiiShaderMat4", "d3/d22/classxii_shader_mat4.html", null ],
     [ "xiiShaderParser", "d0/dcc/classxii_shader_parser.html", null ],
     [ "xiiShaderPermutationBinary", "de/de2/classxii_shader_permutation_binary.html", null ],
     [ "xiiShaderPermutationResourceDescriptor", "d6/de6/structxii_shader_permutation_resource_descriptor.html", null ],

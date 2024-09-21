@@ -51,7 +51,7 @@ var searchData=
   ['m_5fbisdirectory_48',['m_bIsDirectory',['../d6/dd0/structxii_file_stats.html#a1de1837a109bff62cb0fc73fbab0bb5d',1,'xiiFileStats']]],
   ['m_5fbisfullscreen_49',['m_bIsFullScreen',['../d0/db4/structxii_g_a_l_full_screen_mode_description.html#a62aac2ae34f6ba9932e229450f7e2182',1,'xiiGALFullScreenModeDescription']]],
   ['m_5fbisnormalized_50',['m_bIsNormalized',['../d5/d5f/structxii_g_a_l_buffer_format.html#ac97b219b876fd2cfc9d9fa8bf09bb4f2',1,'xiiGALBufferFormat']]],
-  ['m_5fbisprimary_51',['m_bIsPrimary',['../d3/dc7/structxii_screen_info.html#ad5871af95bf775bcb5048b02297c3c8f',1,'xiiScreenInfo::m_bIsPrimary'],['../d7/dc7/structxii_g_a_l_swap_chain_creation_description.html#a68882a6649eb12cdadb7be6dd2805e3b',1,'xiiGALSwapChainCreationDescription::m_bIsPrimary']]],
+  ['m_5fbisprimary_51',['m_bIsPrimary',['../d3/dc7/structxii_screen_info.html#ad5871af95bf775bcb5048b02297c3c8f',1,'xiiScreenInfo']]],
   ['m_5fbisrunning_52',['m_bIsRunning',['../df/d92/structxii_long_op_controller_manager_1_1_proxy_op_info.html#a1adeb43dbae7a5e705e32a37bf62eb17',1,'xiiLongOpControllerManager::ProxyOpInfo']]],
   ['m_5fbistypeless_53',['m_bIsTypeless',['../d6/d3a/structxii_g_a_l_texture_format_description.html#a09153d252dad681fb86c12c875a86529',1,'xiiGALTextureFormatDescription']]],
   ['m_5fblendoperation_54',['m_BlendOperation',['../d1/d81/structxii_g_a_l_render_target_blend_description.html#a7561946858080f691fd819d4d3fa31a3',1,'xiiGALRenderTargetBlendDescription']]],

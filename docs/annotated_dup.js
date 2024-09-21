@@ -2224,6 +2224,7 @@ var annotated_dup =
     [ "xiiShaderCompilerProgram", "da/dd3/classxii_shader_compiler_program.html", "da/dd3/classxii_shader_compiler_program" ],
     [ "xiiShaderManager", "df/deb/classxii_shader_manager.html", null ],
     [ "xiiShaderMat3", "d5/d72/classxii_shader_mat3.html", null ],
+    [ "xiiShaderMat4", "d3/d22/classxii_shader_mat4.html", null ],
     [ "xiiShaderParser", "d0/dcc/classxii_shader_parser.html", "d0/dcc/classxii_shader_parser" ],
     [ "xiiShaderPermutationBinary", "de/de2/classxii_shader_permutation_binary.html", null ],
     [ "xiiShaderPermutationResource", "d3/d91/classxii_shader_permutation_resource.html", "d3/d91/classxii_shader_permutation_resource" ],

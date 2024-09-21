@@ -506,11 +506,11 @@ $(function(){initNavTree('d4/d83/_sorting__inl_8h_source.html','../../'); initRe
 <div class="line"><a id="l00346" name="l00346"></a><span class="lineno">  346</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Container, <span class="keyword">typename</span> Comparer&gt;</div>
 <div class="line"><a id="l00347" name="l00347"></a><span class="lineno">  347</span><span class="keywordtype">void</span> <a class="code hl_function" href="../../da/d89/classxii_sorting.html#a5fb39fd88d79df78c16540f946dfc89d">xiiSorting::BubbleSort</a>(Container&amp; container, xiiUInt32 uiStartIndex, xiiUInt32 uiEndIndex, <span class="keyword">const</span> Comparer&amp; comparer)</div>
 <div class="line"><a id="l00348" name="l00348"></a><span class="lineno">  348</span>{</div>
-<div class="line"><a id="l00349" name="l00349"></a><span class="lineno">  349</span>  <span class="keywordtype">bool</span> sorted = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00349" name="l00349"></a><span class="lineno">  349</span>  <span class="keywordtype">bool</span> bIsSorted = <span class="keyword">false</span>;</div>
 <div class="line"><a id="l00350" name="l00350"></a><span class="lineno">  350</span> </div>
-<div class="line"><a id="l00351" name="l00351"></a><span class="lineno">  351</span>  <span class="keywordflow">while</span> (!sorted)</div>
+<div class="line"><a id="l00351" name="l00351"></a><span class="lineno">  351</span>  <span class="keywordflow">while</span> (!bIsSorted)</div>
 <div class="line"><a id="l00352" name="l00352"></a><span class="lineno">  352</span>  {</div>
-<div class="line"><a id="l00353" name="l00353"></a><span class="lineno">  353</span>    sorted = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00353" name="l00353"></a><span class="lineno">  353</span>    bIsSorted = <span class="keyword">true</span>;</div>
 <div class="line"><a id="l00354" name="l00354"></a><span class="lineno">  354</span> </div>
 <div class="line"><a id="l00355" name="l00355"></a><span class="lineno">  355</span>    <span class="keywordflow">for</span> (xiiUInt32 i = uiStartIndex + 1; i &lt;= uiEndIndex; ++i)</div>
 <div class="line"><a id="l00356" name="l00356"></a><span class="lineno">  356</span>    {</div>
@@ -518,7 +518,7 @@ $(function(){initNavTree('d4/d83/_sorting__inl_8h_source.html','../../'); initRe
 <div class="line"><a id="l00358" name="l00358"></a><span class="lineno">  358</span>      <span class="keywordflow">if</span> (DoCompare(comparer, container[uiHoleIndex], container[uiHoleIndex - 1]))</div>
 <div class="line"><a id="l00359" name="l00359"></a><span class="lineno">  359</span>      {</div>
 <div class="line"><a id="l00360" name="l00360"></a><span class="lineno">  360</span>        <a class="code hl_function" href="../../d1/d37/namespacexii_math.html#a2e7c389d4195d010ba0c207a1e981a58">xiiMath::Swap</a>(container[uiHoleIndex], container[uiHoleIndex - 1]);</div>
-<div class="line"><a id="l00361" name="l00361"></a><span class="lineno">  361</span>        sorted = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00361" name="l00361"></a><span class="lineno">  361</span>        bIsSorted = <span class="keyword">false</span>;</div>
 <div class="line"><a id="l00362" name="l00362"></a><span class="lineno">  362</span>      }</div>
 <div class="line"><a id="l00363" name="l00363"></a><span class="lineno">  363</span>    }</div>
 <div class="line"><a id="l00364" name="l00364"></a><span class="lineno">  364</span>  }</div>
@@ -528,11 +528,11 @@ $(function(){initNavTree('d4/d83/_sorting__inl_8h_source.html','../../'); initRe
 <div class="line"><a id="l00368" name="l00368"></a><span class="lineno">  368</span><span class="keywordtype">void</span> <a class="code hl_function" href="../../da/d89/classxii_sorting.html#a5fb39fd88d79df78c16540f946dfc89d">xiiSorting::BubbleSort</a>(<a class="code hl_class" href="../../d0/d60/classxii_array_ptr.html">xiiArrayPtr&lt;T&gt;</a>&amp; arrayPtr, xiiUInt32 uiStartIndex, xiiUInt32 uiEndIndex, <span class="keyword">const</span> Comparer&amp; comparer)</div>
 <div class="line"><a id="l00369" name="l00369"></a><span class="lineno">  369</span>{</div>
 <div class="line"><a id="l00370" name="l00370"></a><span class="lineno">  370</span>  T*   ptr    = arrayPtr.<a class="code hl_function" href="../../d0/d60/classxii_array_ptr.html#acfb4db6e3a381669be860ce1a5500c6b">GetPtr</a>();</div>
-<div class="line"><a id="l00371" name="l00371"></a><span class="lineno">  371</span>  <span class="keywordtype">bool</span> sorted = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00371" name="l00371"></a><span class="lineno">  371</span>  <span class="keywordtype">bool</span> bIsSorted = <span class="keyword">false</span>;</div>
 <div class="line"><a id="l00372" name="l00372"></a><span class="lineno">  372</span> </div>
-<div class="line"><a id="l00373" name="l00373"></a><span class="lineno">  373</span>  <span class="keywordflow">while</span> (!sorted)</div>
+<div class="line"><a id="l00373" name="l00373"></a><span class="lineno">  373</span>  <span class="keywordflow">while</span> (!bIsSorted)</div>
 <div class="line"><a id="l00374" name="l00374"></a><span class="lineno">  374</span>  {</div>
-<div class="line"><a id="l00375" name="l00375"></a><span class="lineno">  375</span>    sorted = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00375" name="l00375"></a><span class="lineno">  375</span>    bIsSorted = <span class="keyword">true</span>;</div>
 <div class="line"><a id="l00376" name="l00376"></a><span class="lineno">  376</span> </div>
 <div class="line"><a id="l00377" name="l00377"></a><span class="lineno">  377</span>    <span class="keywordflow">for</span> (xiiUInt32 i = uiStartIndex + 1; i &lt;= uiEndIndex; ++i)</div>
 <div class="line"><a id="l00378" name="l00378"></a><span class="lineno">  378</span>    {</div>
@@ -540,7 +540,7 @@ $(function(){initNavTree('d4/d83/_sorting__inl_8h_source.html','../../'); initRe
 <div class="line"><a id="l00380" name="l00380"></a><span class="lineno">  380</span>      <span class="keywordflow">if</span> (DoCompare(comparer, ptr[uiHoleIndex], ptr[uiHoleIndex - 1]))</div>
 <div class="line"><a id="l00381" name="l00381"></a><span class="lineno">  381</span>      {</div>
 <div class="line"><a id="l00382" name="l00382"></a><span class="lineno">  382</span>        <a class="code hl_function" href="../../d1/d37/namespacexii_math.html#a2e7c389d4195d010ba0c207a1e981a58">xiiMath::Swap</a>(ptr[uiHoleIndex], ptr[uiHoleIndex - 1]);</div>
-<div class="line"><a id="l00383" name="l00383"></a><span class="lineno">  383</span>        sorted = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00383" name="l00383"></a><span class="lineno">  383</span>        bIsSorted = <span class="keyword">false</span>;</div>
 <div class="line"><a id="l00384" name="l00384"></a><span class="lineno">  384</span>      }</div>
 <div class="line"><a id="l00385" name="l00385"></a><span class="lineno">  385</span>    }</div>
 <div class="line"><a id="l00386" name="l00386"></a><span class="lineno">  386</span>  }</div>
@@ -837,7 +837,7 @@ $(function(){initNavTree('d4/d83/_sorting__inl_8h_source.html','../../'); initRe
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.html">home</a></li><li class="navelem"><a class="el" href="../../dir_1036706e55c22cab35bc1c58ee689f1d.html">runner</a></li><li class="navelem"><a class="el" href="../../dir_629f8151d55d307162ff2d619fb1783d.html">work</a></li><li class="navelem"><a class="el" href="../../dir_1ddc44fe1263a8c7935fa6130b7d9499.html">XII</a></li><li class="navelem"><a class="el" href="../../dir_2c1b6808f12952f4c36e05ba7068379a.html">XII</a></li><li class="navelem"><a class="el" href="../../dir_b5a1c4ecfca018ad24b729e213296d41.html">Source</a></li><li class="navelem"><a class="el" href="../../dir_e321052006a51284e67389ab20037e7c.html">Engine</a></li><li class="navelem"><a class="el" href="../../dir_be0c42c58b36f42c54ec54024ed4f6af.html">Foundation</a></li><li class="navelem"><a class="el" href="../../dir_9c1e22d3e11d4a43084d1b1d2f918d61.html">Algorithm</a></li><li class="navelem"><a class="el" href="../../dir_d4adea5aac12000137e383d06fa4b0f6.html">Implementation</a></li><li class="navelem"><b>Sorting_inl.h</b></li>
-    <li class="footer">Generated on Sat Aug 31 2024 15:14:49 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Sat Sep 21 2024 21:49:35 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>
