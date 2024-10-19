@@ -18,5 +18,6 @@ var searchData=
   ['streamdesc_15',['StreamDesc',['../d9/d0a/structxii_expression_1_1_stream_desc.html',1,'xiiExpression']]],
   ['stringwrapper_16',['StringWrapper',['../de/da5/structxii_variant_1_1_string_wrapper.html',1,'xiiVariant']]],
   ['submesh_17',['SubMesh',['../d4/de3/structxii_mesh_resource_descriptor_1_1_sub_mesh.html',1,'xiiMeshResourceDescriptor']]],
-  ['swizzle_18',['Swizzle',['../d6/da0/structxii_expression_a_s_t_1_1_swizzle.html',1,'xiiExpressionAST']]]
+  ['swizzle_18',['Swizzle',['../d6/da0/structxii_expression_a_s_t_1_1_swizzle.html',1,'xiiExpressionAST']]],
+  ['syncpointdata_19',['SyncPointData',['../d6/d6d/structxii_g_a_l_fence_vulkan_1_1_sync_point_data.html',1,'xiiGALFenceVulkan']]]
 ];

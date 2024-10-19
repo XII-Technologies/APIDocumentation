@@ -145,6 +145,11 @@ $(function(){initNavTree('d7/db4/classxii_message_loop.html','../../'); initResi
  <a href="#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="../../d1/dcb/_message_loop_8h_source.html">MessageLoop.h</a>&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for xiiMessageLoop:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../dd/d00/classxii_message_loop__inherit__graph.svg" width="192" height="110"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -176,9 +181,8 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>ProcessTasks</b> ()</
 <tr class="memitem:a83fac5e37c3502b670407f2c84c638f1" id="r_a83fac5e37c3502b670407f2c84c638f1"><td class="memItemLeft" align="right" valign="top"><a id="a83fac5e37c3502b670407f2c84c638f1" name="a83fac5e37c3502b670407f2c84c638f1"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>Quit</b> ()</td></tr>
 <tr class="separator:a83fac5e37c3502b670407f2c84c638f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac30f49d31f519c78978d3c271fb6765f" id="r_ac30f49d31f519c78978d3c271fb6765f"><td class="memItemLeft" align="right" valign="top"><a id="ac30f49d31f519c78978d3c271fb6765f" name="ac30f49d31f519c78978d3c271fb6765f"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>WakeUp</b> ()=0</td></tr>
-<tr class="memdesc:ac30f49d31f519c78978d3c271fb6765f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wake up the message loop when new work comes in. <br /></td></tr>
+<tr class="memitem:ac30f49d31f519c78978d3c271fb6765f" id="r_ac30f49d31f519c78978d3c271fb6765f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac30f49d31f519c78978d3c271fb6765f">WakeUp</a> ()=0</td></tr>
+<tr class="memdesc:ac30f49d31f519c78978d3c271fb6765f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wake up the message loop when new work comes in.  <br /></td></tr>
 <tr class="separator:ac30f49d31f519c78978d3c271fb6765f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae70faf916b98f01de041bb7e2875287e" id="r_ae70faf916b98f01de041bb7e2875287e"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae70faf916b98f01de041bb7e2875287e">WaitForMessages</a> (xiiInt32 iTimeout, <a class="el" href="../../df/d60/classxii_ipc_channel.html">xiiIpcChannel</a> *pFilter)=0</td></tr>
 <tr class="memdesc:ae70faf916b98f01de041bb7e2875287e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Waits until a new message has been processed (sent, received).  <br /></td></tr>
@@ -276,6 +280,37 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>xiiIpcChannel</b></t
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Returns whether a message was received or the timeout was reached. </dd></dl>
 
+<p>Implemented in <a class="el" href="../../d4/d57/classxii_message_loop___no_impl.html#a3522ab057853b0aa484db5eb34c5dcc1">xiiMessageLoop_NoImpl</a>.</p>
+
+</div>
+</div>
+<a id="ac30f49d31f519c78978d3c271fb6765f" name="ac30f49d31f519c78978d3c271fb6765f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac30f49d31f519c78978d3c271fb6765f">&#9670;&#160;</a></span>WakeUp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void xiiMessageLoop::WakeUp </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Wake up the message loop when new work comes in. </p>
+
+<p>Implemented in <a class="el" href="../../d4/d57/classxii_message_loop___no_impl.html#a2ec7303f323eb554fc7b4ee5559bd2d2">xiiMessageLoop_NoImpl</a>.</p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
@@ -288,7 +323,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>xiiIpcChannel</b></t
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d7/db4/classxii_message_loop.html">xiiMessageLoop</a></li>
-    <li class="footer">Generated on Sat Sep 21 2024 21:49:45 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Sat Oct 19 2024 17:09:07 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

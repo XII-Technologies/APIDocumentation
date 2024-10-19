@@ -337,7 +337,7 @@ static const <a class="el" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a>
 <p>This method should only be used for persistently-mapped buffers that do not report the <a class="el" href="../../d9/d57/structxii_g_a_l_memory_properties.html#a2d89adcf1d3020c1ffd5da16f0bfa394a07ddca9044a994676dcc92b033061784">xiiGALMemoryProperties::HostCoherent</a> property. After an application modifies a mapped memory range on the CPU, it must flush the range to make it available to the GPU.</p>
 <dl class="section note"><dt>Note</dt><dd>This method must not be called for Dynamic buffers. When a mapped buffer is unmapped, it is automatically flushed by the engine if necessary. </dd></dl>
 
-<p>Implemented in <a class="el" href="../../d6/d02/classxii_g_a_l_buffer_d3_d11.html#a48ac0e5846b1ca123601f79f9870bc3d">xiiGALBufferD3D11</a>, <a class="el" href="../../d2/da9/classxii_g_a_l_buffer_d3_d12.html#aa25e239e8fc48b2d7686ea3894f37834">xiiGALBufferD3D12</a>, <a class="el" href="../../dc/db5/classxii_g_a_l_buffer_null.html#ac602de13fb033940c412dce38c39baef">xiiGALBufferNull</a>, and <a class="el" href="../../d4/d0b/classxii_g_a_l_buffer_vulkan.html#a4fa3d22615a815eff64bf55058d17590">xiiGALBufferVulkan</a>.</p>
+<p>Implemented in <a class="el" href="../../d6/d02/classxii_g_a_l_buffer_d3_d11.html#a56fa13ccb4b746c1549cc6fcf6c48752">xiiGALBufferD3D11</a>, <a class="el" href="../../d2/da9/classxii_g_a_l_buffer_d3_d12.html#aa25e239e8fc48b2d7686ea3894f37834">xiiGALBufferD3D12</a>, <a class="el" href="../../dc/db5/classxii_g_a_l_buffer_null.html#ac602de13fb033940c412dce38c39baef">xiiGALBufferNull</a>, and <a class="el" href="../../d4/d0b/classxii_g_a_l_buffer_vulkan.html#a4fa3d22615a815eff64bf55058d17590">xiiGALBufferVulkan</a>.</p>
 
 </div>
 </div>
@@ -403,7 +403,7 @@ static const <a class="el" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a>
 <p>This returns the buffer memory properties. </p>
 <p>The memory properties are only relevant for persistently mapped buffers. In particular, if the memory is not coherent, an application must call <a class="el" href="#a3f80adde59a6beb4ea0d26b914034d7e" title="This flushes the specified range of non-coherent memory from the host cache to make it available to t...">xiiGALBuffer::FlushMappedRange()</a> to make writes by the CPU available to the GPU, and call <a class="el" href="#aeb2d4d7481820f03be61f05ce1333832" title="This invalidates the specified range of non-coherent memory modified by the GPU to make it visible to...">xiiGALBuffer::InvalidateMappedRange()</a> to make writes by the GPU visible to the CPU. </p>
 
-<p>Implemented in <a class="el" href="../../d6/d02/classxii_g_a_l_buffer_d3_d11.html#a4442759bea27ed6e676cdd2d21e3cc14">xiiGALBufferD3D11</a>, <a class="el" href="../../d2/da9/classxii_g_a_l_buffer_d3_d12.html#acaeb658eab8cc623f056ee67722897eb">xiiGALBufferD3D12</a>, <a class="el" href="../../dc/db5/classxii_g_a_l_buffer_null.html#aefe69999c19833e6a49f37bf47230181">xiiGALBufferNull</a>, and <a class="el" href="../../d4/d0b/classxii_g_a_l_buffer_vulkan.html#a5d4ceab5dabd322c47547f1e54f4844f">xiiGALBufferVulkan</a>.</p>
+<p>Implemented in <a class="el" href="../../d6/d02/classxii_g_a_l_buffer_d3_d11.html#a148aeb70801e6e9963ab60b02372527e">xiiGALBufferD3D11</a>, <a class="el" href="../../d2/da9/classxii_g_a_l_buffer_d3_d12.html#acaeb658eab8cc623f056ee67722897eb">xiiGALBufferD3D12</a>, <a class="el" href="../../dc/db5/classxii_g_a_l_buffer_null.html#aefe69999c19833e6a49f37bf47230181">xiiGALBufferNull</a>, and <a class="el" href="../../d4/d0b/classxii_g_a_l_buffer_vulkan.html#a5d4ceab5dabd322c47547f1e54f4844f">xiiGALBufferVulkan</a>.</p>
 
 </div>
 </div>
@@ -474,7 +474,7 @@ static const <a class="el" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a>
 <p>This method should only be used for persistently-mapped buffers that do not report the <a class="el" href="../../d9/d57/structxii_g_a_l_memory_properties.html#a2d89adcf1d3020c1ffd5da16f0bfa394a07ddca9044a994676dcc92b033061784">xiiGALMemoryProperties::HostCoherent</a> property. After an application modifies a mapped memory range on the CPU, it must invalidate the range to make it visible to the CPU.</p>
 <dl class="section note"><dt>Note</dt><dd>This method must not be called for Dynamic buffers. When a mapped buffer is unmapped, it is automatically flushed by the engine if necessary. </dd></dl>
 
-<p>Implemented in <a class="el" href="../../d6/d02/classxii_g_a_l_buffer_d3_d11.html#ad7c3a96a524c806566510cf696dbfd03">xiiGALBufferD3D11</a>, <a class="el" href="../../d2/da9/classxii_g_a_l_buffer_d3_d12.html#a8b9e1ddd7ae09ba171f3e2a0d03316e9">xiiGALBufferD3D12</a>, <a class="el" href="../../dc/db5/classxii_g_a_l_buffer_null.html#af2b98e30fe137385a75a28502e9f61e1">xiiGALBufferNull</a>, and <a class="el" href="../../d4/d0b/classxii_g_a_l_buffer_vulkan.html#a465c64fe7e4b81399baedefeca5b3f24">xiiGALBufferVulkan</a>.</p>
+<p>Implemented in <a class="el" href="../../d6/d02/classxii_g_a_l_buffer_d3_d11.html#a12b5058bb4b610d1329e6859c6f233ec">xiiGALBufferD3D11</a>, <a class="el" href="../../d2/da9/classxii_g_a_l_buffer_d3_d12.html#a8b9e1ddd7ae09ba171f3e2a0d03316e9">xiiGALBufferD3D12</a>, <a class="el" href="../../dc/db5/classxii_g_a_l_buffer_null.html#af2b98e30fe137385a75a28502e9f61e1">xiiGALBufferNull</a>, and <a class="el" href="../../d4/d0b/classxii_g_a_l_buffer_vulkan.html#a465c64fe7e4b81399baedefeca5b3f24">xiiGALBufferVulkan</a>.</p>
 
 </div>
 </div>
@@ -488,7 +488,7 @@ static const <a class="el" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../da/d03/classxii_g_a_l_buffer.html">xiiGALBuffer</a></li>
-    <li class="footer">Generated on Sat Sep 21 2024 21:49:43 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Sat Oct 19 2024 17:09:06 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

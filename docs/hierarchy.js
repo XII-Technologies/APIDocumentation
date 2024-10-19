@@ -735,6 +735,7 @@ var hierarchy =
     [ "xiiExpression::StreamDesc", "d9/d0a/structxii_expression_1_1_stream_desc.html", null ],
     [ "xiiVariant::StringWrapper", "de/da5/structxii_variant_1_1_string_wrapper.html", null ],
     [ "xiiMeshResourceDescriptor::SubMesh", "d4/de3/structxii_mesh_resource_descriptor_1_1_sub_mesh.html", null ],
+    [ "xiiGALFenceVulkan::SyncPointData", "d6/d6d/structxii_g_a_l_fence_vulkan_1_1_sync_point_data.html", null ],
     [ "xiiReflectionProbeUpdater::TargetSlot", "db/dcc/structxii_reflection_probe_updater_1_1_target_slot.html", null ],
     [ "xiiTaskSystem::TaskData", "d1/d6f/structxii_task_system_1_1_task_data.html", null ],
     [ "xiiTelemetry::TelemetryEventData", "d0/de3/structxii_telemetry_1_1_telemetry_event_data.html", null ],
@@ -1978,9 +1979,9 @@ var hierarchy =
     [ "xiiArrayBase< xiiAssetDocumentTypeDescriptor, xiiStaticArray< xiiAssetDocumentTypeDescriptor, Capacity > >", "da/d4c/classxii_array_base.html", [
       [ "xiiStaticArray< xiiAssetDocumentTypeDescriptor, 4 >", "d9/d25/classxii_static_array.html", null ]
     ] ],
-    [ "xiiArrayBase< xiiAtomicInteger< xiiInt64 >, xiiDynamicArrayBase< xiiAtomicInteger< xiiInt64 > > >", "da/d4c/classxii_array_base.html", [
-      [ "xiiDynamicArrayBase< xiiAtomicInteger< xiiInt64 > >", "d2/dea/classxii_dynamic_array_base.html", [
-        [ "xiiDynamicArray< xiiAtomicInteger< xiiInt64 > >", "dc/da4/classxii_dynamic_array.html", null ]
+    [ "xiiArrayBase< xiiAtomicInteger, xiiDynamicArrayBase< xiiAtomicInteger > >", "da/d4c/classxii_array_base.html", [
+      [ "xiiDynamicArrayBase< xiiAtomicInteger >", "d2/dea/classxii_dynamic_array_base.html", [
+        [ "xiiDynamicArray< xiiAtomicInteger >", "dc/da4/classxii_dynamic_array.html", null ]
       ] ]
     ] ],
     [ "xiiArrayBase< xiiBlackboardCondition, xiiDynamicArrayBase< xiiBlackboardCondition > >", "da/d4c/classxii_array_base.html", [
@@ -3694,7 +3695,6 @@ var hierarchy =
     [ "xiiAtomicInteger< T >", "db/d8e/classxii_atomic_integer.html", null ],
     [ "xiiAtomicInteger< ConnectionState::Enum >", "db/d8e/classxii_atomic_integer.html", null ],
     [ "xiiAtomicInteger< xiiInt32 >", "db/d8e/classxii_atomic_integer.html", null ],
-    [ "xiiAtomicInteger< xiiInt64 >", "db/d8e/classxii_atomic_integer.html", null ],
     [ "xiiAtomicStorageType< T >", "de/dfb/structxii_atomic_storage_type.html", null ],
     [ "xiiAtomicStorageType< 1 >", "d5/d05/structxii_atomic_storage_type_3_011_01_4.html", null ],
     [ "xiiAtomicStorageType< 2 >", "db/d6c/structxii_atomic_storage_type_3_012_01_4.html", null ],
@@ -3703,7 +3703,6 @@ var hierarchy =
     [ "xiiAtomicStorageType< sizeof(ConnectionState::Enum)>", "de/dfb/structxii_atomic_storage_type.html", null ],
     [ "xiiAtomicStorageType< sizeof(T)>", "de/dfb/structxii_atomic_storage_type.html", null ],
     [ "xiiAtomicStorageType< sizeof(xiiInt32)>", "de/dfb/structxii_atomic_storage_type.html", null ],
-    [ "xiiAtomicStorageType< sizeof(xiiInt64)>", "de/dfb/structxii_atomic_storage_type.html", null ],
     [ "xiiAtomicUtils", "d9/d66/structxii_atomic_utils.html", null ],
     [ "xiiAttributeHolder", "d2/d46/structxii_attribute_holder.html", [
       [ "xiiReflectedFunctionDescriptor", "df/d54/structxii_reflected_function_descriptor.html", null ],
@@ -4138,6 +4137,9 @@ var hierarchy =
     [ "xiiDequeBase< xiiGALCommandList *, true >", "d1/d7d/classxii_deque_base.html", [
       [ "xiiDeque< xiiGALCommandList * >", "d8/df8/classxii_deque.html", null ]
     ] ],
+    [ "xiiDequeBase< xiiGALFenceVulkan::SyncPointData, true >", "d1/d7d/classxii_deque_base.html", [
+      [ "xiiDeque< xiiGALFenceVulkan::SyncPointData >", "d8/df8/classxii_deque.html", null ]
+    ] ],
     [ "xiiDequeBase< xiiGameObjectHandle, true >", "d1/d7d/classxii_deque_base.html", [
       [ "xiiDeque< xiiGameObjectHandle >", "d8/df8/classxii_deque.html", null ]
     ] ],
@@ -4308,9 +4310,7 @@ var hierarchy =
     [ "xiiEditActions", "d4/d1d/classxii_edit_actions.html", null ],
     [ "xiiEditorAppEvent", "d1/d43/structxii_editor_app_event.html", null ],
     [ "xiiEditorEngineConnection", "d3/df5/classxii_editor_engine_connection.html", null ],
-    [ "xiiEditorEngineProcessApp", "df/d40/classxii_editor_engine_process_app.html", [
-      [ "xiiEditorEngineProcessAppUWP", "de/d03/classxii_editor_engine_process_app_u_w_p.html", null ]
-    ] ],
+    [ "xiiEditorEngineProcessApp", "df/d40/classxii_editor_engine_process_app.html", null ],
     [ "xiiEditorEngineProcessConnection", "dc/d8e/classxii_editor_engine_process_connection.html", null ],
     [ "xiiEditorGuidEngineHandleMap< HandleType >", "df/d92/classxii_editor_guid_engine_handle_map.html", null ],
     [ "xiiEditorGuidEngineHandleMap< xiiComponentHandle >", "df/d92/classxii_editor_guid_engine_handle_map.html", null ],
@@ -6006,7 +6006,9 @@ var hierarchy =
     [ "xiiMeshTexCoordPrecision", "dc/de1/structxii_mesh_tex_coord_precision.html", [
       [ "xiiEnum< xiiMeshTexCoordPrecision >", "de/dfd/structxii_enum.html", null ]
     ] ],
-    [ "xiiMessageLoop", "d7/db4/classxii_message_loop.html", null ],
+    [ "xiiMessageLoop", "d7/db4/classxii_message_loop.html", [
+      [ "xiiMessageLoop_NoImpl", "d4/d57/classxii_message_loop___no_impl.html", null ]
+    ] ],
     [ "xiiMessageQueueBase< MetaDataType >", "d3/d61/classxii_message_queue_base.html", [
       [ "xiiMessageQueue< MetaDataType, AllocatorWrapper >", "d4/d21/classxii_message_queue.html", null ]
     ] ],
@@ -6111,7 +6113,6 @@ var hierarchy =
               [ "xiiInputDeviceXBox360", "d1/d10/classxii_input_device_x_box360.html", null ]
             ] ],
             [ "xiiInputDeviceMouseKeyboard", "dd/d1a/classxii_input_device_mouse_keyboard.html", [
-              [ "xiiStandardInputDevice", "dc/de5/classxii_standard_input_device.html", null ],
               [ "xiiStandardInputDevice", "dc/de5/classxii_standard_input_device.html", null ],
               [ "xiiStandardInputDevice", "dc/de5/classxii_standard_input_device.html", null ],
               [ "xiiStandardInputDevice", "dc/de5/classxii_standard_input_device.html", null ]

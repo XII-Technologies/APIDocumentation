@@ -137,7 +137,7 @@ $(function(){initNavTree('dc/d9b/_mini_dump_utils__win_8h_source.html','../../')
 <div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#include &lt;Foundation/FoundationInternal.h&gt;</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span>XII_FOUNDATION_INTERNAL_HEADER</div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;Foundation/Basics/Platform/Win/MinWindows.h&gt;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;Foundation/Basics/Platform/Windows/MinWindows.h&gt;</span></div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;Foundation/IO/OSFile.h&gt;</span></div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;Foundation/Platform/Implementation/Windows/DosDevicePath_win.h&gt;</span></div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;Foundation/System/MiniDumpUtils.h&gt;</span></div>
@@ -146,7 +146,7 @@ $(function(){initNavTree('dc/d9b/_mini_dump_utils__win_8h_source.html','../../')
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;Foundation/Utilities/CommandLineOptions.h&gt;</span></div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &lt;Foundation/Utilities/CommandLineUtils.h&gt;</span></div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#if XII_ENABLED(XII_PLATFORM_WINDOWS_DESKTOP)</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#if XII_ENABLED(XII_PLATFORM_WINDOWS)</span></div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#  include &lt;Dbghelp.h&gt;</span></div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#  include &lt;Shlwapi.h&gt;</span></div>
@@ -245,57 +245,47 @@ $(function(){initNavTree('dc/d9b/_mini_dump_utils__win_8h_source.html','../../')
 <div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span> </div>
 <div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span><a class="code hl_struct" href="../../d0/d54/structxii_status.html">xiiStatus</a> <a class="code hl_function" href="../../d7/d26/structxii_mini_dump_utils.html#afbb66400f3cbffeb3ad84c938a67db63">xiiMiniDumpUtils::WriteExternalProcessMiniDump</a>(<a class="code hl_class" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sDumpFile, xiiUInt32 uiProcessID)</div>
 <div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>{</div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span><span class="preprocessor">#if XII_ENABLED(XII_PLATFORM_WINDOWS_DESKTOP)</span></div>
-<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>  HANDLE hProcess = xiiMiniDumpUtils::GetProcessHandleWithNecessaryRights(uiProcessID);</div>
-<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span> </div>
-<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>  <span class="keywordflow">if</span> (hProcess == <span class="keyword">nullptr</span>)</div>
-<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>  {</div>
-<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>    <span class="keywordflow">return</span> <a class="code hl_struct" href="../../d0/d54/structxii_status.html">xiiStatus</a>(<span class="stringliteral">&quot;Cannot access process for mini-dump writing (PID invalid or not enough rights).&quot;</span>);</div>
-<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>  }</div>
-<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span> </div>
-<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>  <span class="keywordflow">return</span> WriteProcessMiniDump(sDumpFile, uiProcessID, hProcess, <span class="keyword">nullptr</span>);</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>  HANDLE hProcess = xiiMiniDumpUtils::GetProcessHandleWithNecessaryRights(uiProcessID);</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span> </div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>  <span class="keywordflow">if</span> (hProcess == <span class="keyword">nullptr</span>)</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>  {</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>    <span class="keywordflow">return</span> <a class="code hl_struct" href="../../d0/d54/structxii_status.html">xiiStatus</a>(<span class="stringliteral">&quot;Cannot access process for mini-dump writing (PID invalid or not enough rights).&quot;</span>);</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>  }</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span> </div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>  <span class="keywordflow">return</span> WriteProcessMiniDump(sDumpFile, uiProcessID, hProcess, <span class="keyword">nullptr</span>);</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>}</div>
 <div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span> </div>
-<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span><span class="preprocessor">#else</span></div>
-<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>  <span class="keywordflow">return</span> <a class="code hl_struct" href="../../d0/d54/structxii_status.html">xiiStatus</a>(<span class="stringliteral">&quot;Not implemented on UWP&quot;</span>);</div>
-<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>}</div>
-<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span> </div>
-<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span><a class="code hl_struct" href="../../d0/d54/structxii_status.html">xiiStatus</a> <a class="code hl_function" href="../../d7/d26/structxii_mini_dump_utils.html#a28242514571f210a1d9a9a0722aec227">xiiMiniDumpUtils::LaunchMiniDumpTool</a>(<a class="code hl_class" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sDumpFile)</div>
-<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>{</div>
-<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span><span class="preprocessor">#if XII_ENABLED(XII_PLATFORM_WINDOWS_DESKTOP)</span></div>
-<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>  <a class="code hl_class" href="../../d4/dbb/classxii_string_builder.html">xiiStringBuilder</a> sDumpToolPath = <a class="code hl_function" href="../../da/d95/classxii_o_s_file.html#a711646d84584fa4275cd01367f928803">xiiOSFile::GetApplicationDirectory</a>();</div>
-<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>  sDumpToolPath.<a class="code hl_function" href="../../d4/dbb/classxii_string_builder.html#aeb8dedf699785b95812b7b137a901324">AppendPath</a>(<span class="stringliteral">&quot;xiiMiniDumpTool.exe&quot;</span>);</div>
-<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>  sDumpToolPath.<a class="code hl_function" href="../../d4/dbb/classxii_string_builder.html#a7c1fb2c175a666d065a8abefaad5534a">MakeCleanPath</a>();</div>
-<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span> </div>
-<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>  <span class="keywordflow">if</span> (!<a class="code hl_function" href="../../da/d95/classxii_o_s_file.html#a57e1ed06c65f9b02826a1679e38cb410">xiiOSFile::ExistsFile</a>(sDumpToolPath))</div>
-<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>    <span class="keywordflow">return</span> <a class="code hl_struct" href="../../d0/d54/structxii_status.html">xiiStatus</a>(xiiFmt(<span class="stringliteral">&quot;xiiMiniDumpTool.exe not found in &#39;{}&#39;&quot;</span>, sDumpToolPath));</div>
-<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span> </div>
-<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>  xiiProcessOptions procOpt;</div>
-<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>  procOpt.m_sProcess = sDumpToolPath;</div>
-<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>  procOpt.m_Arguments.PushBack(<span class="stringliteral">&quot;-PID&quot;</span>);</div>
-<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>  procOpt.AddArgument(<span class="stringliteral">&quot;{}&quot;</span>, xiiProcess::GetCurrentProcessID());</div>
-<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>  procOpt.m_Arguments.PushBack(<span class="stringliteral">&quot;-f&quot;</span>);</div>
-<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>  procOpt.m_Arguments.PushBack(sDumpFile);</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span><a class="code hl_struct" href="../../d0/d54/structxii_status.html">xiiStatus</a> <a class="code hl_function" href="../../d7/d26/structxii_mini_dump_utils.html#a28242514571f210a1d9a9a0722aec227">xiiMiniDumpUtils::LaunchMiniDumpTool</a>(<a class="code hl_class" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sDumpFile)</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>{</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>  <a class="code hl_class" href="../../d4/dbb/classxii_string_builder.html">xiiStringBuilder</a> sDumpToolPath = <a class="code hl_function" href="../../da/d95/classxii_o_s_file.html#a711646d84584fa4275cd01367f928803">xiiOSFile::GetApplicationDirectory</a>();</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>  sDumpToolPath.<a class="code hl_function" href="../../d4/dbb/classxii_string_builder.html#aeb8dedf699785b95812b7b137a901324">AppendPath</a>(<span class="stringliteral">&quot;xiiMiniDumpTool.exe&quot;</span>);</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>  sDumpToolPath.<a class="code hl_function" href="../../d4/dbb/classxii_string_builder.html#a7c1fb2c175a666d065a8abefaad5534a">MakeCleanPath</a>();</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span> </div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>  <span class="keywordflow">if</span> (!<a class="code hl_function" href="../../da/d95/classxii_o_s_file.html#a57e1ed06c65f9b02826a1679e38cb410">xiiOSFile::ExistsFile</a>(sDumpToolPath))</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>    <span class="keywordflow">return</span> <a class="code hl_struct" href="../../d0/d54/structxii_status.html">xiiStatus</a>(xiiFmt(<span class="stringliteral">&quot;xiiMiniDumpTool.exe not found in &#39;{}&#39;&quot;</span>, sDumpToolPath));</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span> </div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>  xiiProcessOptions procOpt;</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>  procOpt.m_sProcess = sDumpToolPath;</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>  procOpt.m_Arguments.PushBack(<span class="stringliteral">&quot;-PID&quot;</span>);</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>  procOpt.AddArgument(<span class="stringliteral">&quot;{}&quot;</span>, xiiProcess::GetCurrentProcessID());</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>  procOpt.m_Arguments.PushBack(<span class="stringliteral">&quot;-f&quot;</span>);</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>  procOpt.m_Arguments.PushBack(sDumpFile);</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span> </div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>  <span class="keywordflow">if</span> (opt_FullCrashDumps.GetOptionValue(<a class="code hl_enumvalue" href="../../dd/da4/classxii_command_line_option.html#aeecfc1ea4f7297497d9e99f9274c8ac4a68eec46437c384d8dad18d5464ebc35c">xiiCommandLineOption::LogMode::Always</a>))</div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>  {</div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>    <span class="comment">// Forward the &#39;-fullcrashdumps&#39; command line argument</span></div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>    procOpt.AddArgument(<span class="stringliteral">&quot;-fullcrashdumps&quot;</span>);</div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>  }</div>
 <div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span> </div>
-<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>  <span class="keywordflow">if</span> (opt_FullCrashDumps.GetOptionValue(<a class="code hl_enumvalue" href="../../dd/da4/classxii_command_line_option.html#aeecfc1ea4f7297497d9e99f9274c8ac4a68eec46437c384d8dad18d5464ebc35c">xiiCommandLineOption::LogMode::Always</a>))</div>
-<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>  {</div>
-<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>    <span class="comment">// Forward the &#39;-fullcrashdumps&#39; command line argument</span></div>
-<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>    procOpt.AddArgument(<span class="stringliteral">&quot;-fullcrashdumps&quot;</span>);</div>
-<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>  }</div>
-<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span> </div>
-<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>  xiiProcessGroup proc;</div>
-<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>  <span class="keywordflow">if</span> (proc.Launch(procOpt).Failed())</div>
-<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>    <span class="keywordflow">return</span> <a class="code hl_struct" href="../../d0/d54/structxii_status.html">xiiStatus</a>(xiiFmt(<span class="stringliteral">&quot;Failed to launch &#39;{}&#39;&quot;</span>, sDumpToolPath));</div>
-<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span> </div>
-<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>  <span class="keywordflow">if</span> (proc.WaitToFinish().Failed())</div>
-<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>    <span class="keywordflow">return</span> <a class="code hl_struct" href="../../d0/d54/structxii_status.html">xiiStatus</a>(<span class="stringliteral">&quot;Waiting for MiniDumpTool to finish failed.&quot;</span>);</div>
-<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span> </div>
-<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>  <span class="keywordflow">return</span> <a class="code hl_struct" href="../../d0/d54/structxii_status.html">xiiStatus</a>(XII_SUCCESS);</div>
-<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span> </div>
-<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span><span class="preprocessor">#else</span></div>
-<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>  <span class="keywordflow">return</span> <a class="code hl_struct" href="../../d0/d54/structxii_status.html">xiiStatus</a>(<span class="stringliteral">&quot;Not implemented on UWP&quot;</span>);</div>
-<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>}</div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>  xiiProcessGroup proc;</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>  <span class="keywordflow">if</span> (proc.Launch(procOpt).Failed())</div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>    <span class="keywordflow">return</span> <a class="code hl_struct" href="../../d0/d54/structxii_status.html">xiiStatus</a>(xiiFmt(<span class="stringliteral">&quot;Failed to launch &#39;{}&#39;&quot;</span>, sDumpToolPath));</div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span> </div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>  <span class="keywordflow">if</span> (proc.WaitToFinish().Failed())</div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>    <span class="keywordflow">return</span> <a class="code hl_struct" href="../../d0/d54/structxii_status.html">xiiStatus</a>(<span class="stringliteral">&quot;Waiting for MiniDumpTool to finish failed.&quot;</span>);</div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span> </div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>  <span class="keywordflow">return</span> <a class="code hl_struct" href="../../d0/d54/structxii_status.html">xiiStatus</a>(XII_SUCCESS);</div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>}</div>
 <div class="ttc" id="aclassxii_command_line_option_bool_html"><div class="ttname"><a href="../../db/d51/classxii_command_line_option_bool.html">xiiCommandLineOptionBool</a></div><div class="ttdoc">This command line option exposes simple on/off switches.</div><div class="ttdef"><b>Definition</b> CommandLineOptions.h:139</div></div>
 <div class="ttc" id="aclassxii_command_line_option_html_aeecfc1ea4f7297497d9e99f9274c8ac4a68eec46437c384d8dad18d5464ebc35c"><div class="ttname"><a href="../../dd/da4/classxii_command_line_option.html#aeecfc1ea4f7297497d9e99f9274c8ac4a68eec46437c384d8dad18d5464ebc35c">xiiCommandLineOption::LogMode::Always</a></div><div class="ttdeci">@ Always</div><div class="ttdoc">Always log the options value on access.</div></div>
 <div class="ttc" id="aclassxii_dos_device_path_html"><div class="ttname"><a href="../../d4/d46/classxii_dos_device_path.html">xiiDosDevicePath</a></div><div class="ttdoc">Converts an absolute path to a 'DOS device path'.</div><div class="ttdef"><b>Definition</b> DosDevicePath_win.h:15</div></div>
@@ -316,7 +306,7 @@ $(function(){initNavTree('dc/d9b/_mini_dump_utils__win_8h_source.html','../../')
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.html">home</a></li><li class="navelem"><a class="el" href="../../dir_1036706e55c22cab35bc1c58ee689f1d.html">runner</a></li><li class="navelem"><a class="el" href="../../dir_629f8151d55d307162ff2d619fb1783d.html">work</a></li><li class="navelem"><a class="el" href="../../dir_1ddc44fe1263a8c7935fa6130b7d9499.html">XII</a></li><li class="navelem"><a class="el" href="../../dir_2c1b6808f12952f4c36e05ba7068379a.html">XII</a></li><li class="navelem"><a class="el" href="../../dir_b5a1c4ecfca018ad24b729e213296d41.html">Source</a></li><li class="navelem"><a class="el" href="../../dir_e321052006a51284e67389ab20037e7c.html">Engine</a></li><li class="navelem"><a class="el" href="../../dir_be0c42c58b36f42c54ec54024ed4f6af.html">Foundation</a></li><li class="navelem"><a class="el" href="../../dir_664c047245be96e54b4c21a35d20a789.html">Platform</a></li><li class="navelem"><a class="el" href="../../dir_ed92eb75a0769b88f81ec30678d8111f.html">Implementation</a></li><li class="navelem"><a class="el" href="../../dir_6309b8608ad3a96b0815dd8267345211.html">Windows</a></li><li class="navelem"><b>MiniDumpUtils_win.h</b></li>
-    <li class="footer">Generated on Sat Sep 21 2024 21:49:39 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Sat Oct 19 2024 17:09:02 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

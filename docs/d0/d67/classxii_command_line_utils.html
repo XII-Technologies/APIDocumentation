@@ -166,6 +166,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>SetCommandLine</b> (x
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetCommandLine</b> (<a class="el" href="../../d0/d60/classxii_array_ptr.html">xiiArrayPtr</a>&lt; <a class="el" href="../../df/dfb/structxii_hybrid_string.html">xiiString</a> &gt; commands)</td></tr>
 <tr class="memdesc:a8adade3f2e92228abd5764c3e91b18bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes <a class="el" href="../../d0/d67/classxii_command_line_utils.html" title="This is a helper class to parse command lines.">xiiCommandLineUtils</a> from a list of already split up commands. <br /></td></tr>
 <tr class="separator:a8adade3f2e92228abd5764c3e91b18bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa320b3815fd6af51244adb58debe6d0" id="r_aaa320b3815fd6af51244adb58debe6d0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaa320b3815fd6af51244adb58debe6d0">SetCommandLine</a> ()</td></tr>
+<tr class="memdesc:aaa320b3815fd6af51244adb58debe6d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes <a class="el" href="../../d0/d67/classxii_command_line_utils.html" title="This is a helper class to parse command lines.">xiiCommandLineUtils</a> by querying the command line parameters directly from the OS.  <br /></td></tr>
+<tr class="separator:aaa320b3815fd6af51244adb58debe6d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afe721968bc7487688c4827d55f83ede1" id="r_afe721968bc7487688c4827d55f83ede1"><td class="memItemLeft" align="right" valign="top"><a id="afe721968bc7487688c4827d55f83ede1" name="afe721968bc7487688c4827d55f83ede1"></a>
 const <a class="el" href="../../dc/da4/classxii_dynamic_array.html">xiiDynamicArray</a>&lt; <a class="el" href="../../df/dfb/structxii_hybrid_string.html">xiiString</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetCommandLineArray</b> () const</td></tr>
 <tr class="memdesc:afe721968bc7487688c4827d55f83ede1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the split up command line. <br /></td></tr>
@@ -227,7 +230,7 @@ static <a class="el" href="../../d0/d67/classxii_command_line_utils.html">xiiCom
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This is a helper class to parse command lines. </p>
-<p>Initialize it using <a class="el" href="#a8f5162d214ffc4c25bc2a4e1814616ba" title="Initializes xiiCommandLineUtils from the parameter arguments that were passed to the application.">SetCommandLine()</a>. Then query for command line options using <a class="el" href="#ab6d348e0e0e73b31cf44501b0bd5984b" title="Returns the n-th parameter to the command line option with the name szOption.">GetStringOption()</a>, <a class="el" href="#a1fabd3f4af10bf3dffe61e96a8ed8ed3" title="Returns a boolean interpretation of the option szOption or bDefault if it cannot be found.">GetBoolOption()</a>, <a class="el" href="#a3c7cdabcb33670d788ac8f2c34af7855" title="Returns an integer interpretation of the option szOption or iDefault if it cannot be found.">GetIntOption()</a> or <a class="el" href="#a836b13085582e813e8420f31feae3dd4" title="Returns a float interpretation of the option szOption or fDefault if it cannot be found.">GetFloatOption()</a> </p>
+<p>Initialize it using <a class="el" href="#aaa320b3815fd6af51244adb58debe6d0" title="Initializes xiiCommandLineUtils by querying the command line parameters directly from the OS.">SetCommandLine()</a>. Then query for command line options using <a class="el" href="#ab6d348e0e0e73b31cf44501b0bd5984b" title="Returns the n-th parameter to the command line option with the name szOption.">GetStringOption()</a>, <a class="el" href="#a1fabd3f4af10bf3dffe61e96a8ed8ed3" title="Returns a boolean interpretation of the option szOption or bDefault if it cannot be found.">GetBoolOption()</a>, <a class="el" href="#a3c7cdabcb33670d788ac8f2c34af7855" title="Returns an integer interpretation of the option szOption or iDefault if it cannot be found.">GetIntOption()</a> or <a class="el" href="#a836b13085582e813e8420f31feae3dd4" title="Returns a float interpretation of the option szOption or fDefault if it cannot be found.">GetFloatOption()</a> </p>
 </div><h2 class="groupheader">Member Enumeration Documentation</h2>
 <a id="a7efa5ae6984ae371a8304e720be0c1ea" name="a7efa5ae6984ae371a8304e720be0c1ea"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7efa5ae6984ae371a8304e720be0c1ea">&#9670;&#160;</a></span>ArgMode</h2>
@@ -506,6 +509,26 @@ static <a class="el" href="../../d0/d67/classxii_command_line_utils.html">xiiCom
 
 </div>
 </div>
+<a id="aaa320b3815fd6af51244adb58debe6d0" name="aaa320b3815fd6af51244adb58debe6d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa320b3815fd6af51244adb58debe6d0">&#9670;&#160;</a></span>SetCommandLine()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void xiiCommandLineUtils::SetCommandLine </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Initializes <a class="el" href="../../d0/d67/classxii_command_line_utils.html" title="This is a helper class to parse command lines.">xiiCommandLineUtils</a> by querying the command line parameters directly from the OS. </p>
+<p>This function is not available on all platforms. </p>
+
+</div>
+</div>
 <a id="a1519ba28b4618e821cbba4513658248b" name="a1519ba28b4618e821cbba4513658248b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1519ba28b4618e821cbba4513658248b">&#9670;&#160;</a></span>SplitCommandLineString()</h2>
 
@@ -563,7 +586,7 @@ static <a class="el" href="../../d0/d67/classxii_command_line_utils.html">xiiCom
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d0/d67/classxii_command_line_utils.html">xiiCommandLineUtils</a></li>
-    <li class="footer">Generated on Sat Sep 21 2024 21:49:43 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Sat Oct 19 2024 17:09:06 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

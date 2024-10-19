@@ -166,6 +166,12 @@ XII_ALWAYS_INLINE const <a class="el" href="../../dd/d6c/structxii_g_a_l_fence_c
 <tr class="memitem:a4eaf4f634511f54ffa675f1a3ef85c6a" id="r_a4eaf4f634511f54ffa675f1a3ef85c6a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4eaf4f634511f54ffa675f1a3ef85c6a">Wait</a> (xiiUInt64 uiValue)=0</td></tr>
 <tr class="memdesc:a4eaf4f634511f54ffa675f1a3ef85c6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">This waits until the fence reaches or exceeds the specified value on the host.  <br /></td></tr>
 <tr class="separator:a4eaf4f634511f54ffa675f1a3ef85c6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d0c24d9ac44561a91899b4644a1a9c3" id="r_a1d0c24d9ac44561a91899b4644a1a9c3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1d0c24d9ac44561a91899b4644a1a9c3">ValidateFenceSignal</a> (xiiUInt64 uiValue)</td></tr>
+<tr class="memdesc:a1d0c24d9ac44561a91899b4644a1a9c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Validates fence signal.  <br /></td></tr>
+<tr class="separator:a1d0c24d9ac44561a91899b4644a1a9c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af403a72e94eb3c78549f9d87dd765283" id="r_af403a72e94eb3c78549f9d87dd765283"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af403a72e94eb3c78549f9d87dd765283">ValidateDeviceWaitForFence</a> (xiiUInt64 uiValue)</td></tr>
+<tr class="memdesc:af403a72e94eb3c78549f9d87dd765283"><td class="mdescLeft">&#160;</td><td class="mdescRight">Validates device wait for fence.  <br /></td></tr>
+<tr class="separator:af403a72e94eb3c78549f9d87dd765283"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classxii_g_a_l_device_object"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_classxii_g_a_l_device_object')"><img src="../../closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="../../d5/d12/classxii_g_a_l_device_object.html">xiiGALDeviceObject</a></td></tr>
 <tr class="memitem:a3d8d11d00bda24e47458354124ffa77d inherit pub_methods_classxii_g_a_l_device_object" id="r_a3d8d11d00bda24e47458354124ffa77d"><td class="memItemLeft" align="right" valign="top">XII_ALWAYS_INLINE <a class="el" href="../../d5/d19/classxii_g_a_l_device.html">xiiGALDevice</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d12/classxii_g_a_l_device_object.html#a3d8d11d00bda24e47458354124ffa77d">GetDevice</a> () const</td></tr>
 <tr class="memdesc:a3d8d11d00bda24e47458354124ffa77d inherit pub_methods_classxii_g_a_l_device_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the <a class="el" href="../../d5/d19/classxii_g_a_l_device.html" title="The xiiRenderDevice class is the primary interface for interactions with rendering APIs....">xiiGALDevice</a> that created this resource.  <br /></td></tr>
@@ -253,9 +259,9 @@ Protected Attributes</h2></td></tr>
 <tr class="memitem:aa508f121feeb5b13a702aa79dfe94e51" id="r_aa508f121feeb5b13a702aa79dfe94e51"><td class="memItemLeft" align="right" valign="top"><a id="aa508f121feeb5b13a702aa79dfe94e51" name="aa508f121feeb5b13a702aa79dfe94e51"></a>
 <a class="el" href="../../dd/d6c/structxii_g_a_l_fence_creation_description.html">xiiGALFenceCreationDescription</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_Description</b></td></tr>
 <tr class="separator:aa508f121feeb5b13a702aa79dfe94e51"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abfeef0696b239499cdceb53457ebd49f" id="r_abfeef0696b239499cdceb53457ebd49f"><td class="memItemLeft" align="right" valign="top"><a id="abfeef0696b239499cdceb53457ebd49f" name="abfeef0696b239499cdceb53457ebd49f"></a>
-<a class="el" href="../../db/d8e/classxii_atomic_integer.html">xiiAtomicInteger64</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_uiLastCompletedFenceValue</b></td></tr>
-<tr class="separator:abfeef0696b239499cdceb53457ebd49f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5307724db4a1f78e0ed7d408493a0dea" id="r_a5307724db4a1f78e0ed7d408493a0dea"><td class="memItemLeft" align="right" valign="top"><a id="a5307724db4a1f78e0ed7d408493a0dea" name="a5307724db4a1f78e0ed7d408493a0dea"></a>
+std::atomic&lt; xiiUInt64 &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_LastCompletedFenceValue</b></td></tr>
+<tr class="separator:a5307724db4a1f78e0ed7d408493a0dea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_classxii_g_a_l_device_object"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_attribs_classxii_g_a_l_device_object')"><img src="../../closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="../../d5/d12/classxii_g_a_l_device_object.html">xiiGALDeviceObject</a></td></tr>
 <tr class="memitem:acdca6fd41d888d8ff4a3cf9bc4dfea29 inherit pro_attribs_classxii_g_a_l_device_object" id="r_acdca6fd41d888d8ff4a3cf9bc4dfea29"><td class="memItemLeft" align="right" valign="top">
 <a class="el" href="../../d5/d19/classxii_g_a_l_device.html">xiiGALDevice</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_pDevice</b></td></tr>
@@ -306,7 +312,7 @@ In Direct3D12 and Vulkan backends, fence is thread-safe. </dd></dl>
 <p>This returns the last completed value signaled by the GPU. </p>
 <dl class="section remark"><dt>Remarks</dt><dd>In Direct3D11 backend, this method is not thread-safe (even if the fence object is protected by a mutex) and must only be called by the same thread that signals the fence via an enqueue. </dd></dl>
 
-<p>Implemented in <a class="el" href="../../d5/d78/classxii_g_a_l_fence_d3_d11.html#a085ea1f2e9ea2a7e4dc6a85ef3f8ba7e">xiiGALFenceD3D11</a>, <a class="el" href="../../d1/d8c/classxii_g_a_l_fence_d3_d12.html#ac01ecdd01c2d5adf73bae6828817ce29">xiiGALFenceD3D12</a>, <a class="el" href="../../d4/d1d/classxii_g_a_l_fence_null.html#ac0b8be11101be610d09e72e9a113c1b2">xiiGALFenceNull</a>, and <a class="el" href="../../dc/df3/classxii_g_a_l_fence_vulkan.html#adf465ef5cab0b0a8a653c3c2bd71c3d2">xiiGALFenceVulkan</a>.</p>
+<p>Implemented in <a class="el" href="../../d5/d78/classxii_g_a_l_fence_d3_d11.html#a085ea1f2e9ea2a7e4dc6a85ef3f8ba7e">xiiGALFenceD3D11</a>, <a class="el" href="../../d1/d8c/classxii_g_a_l_fence_d3_d12.html#ac01ecdd01c2d5adf73bae6828817ce29">xiiGALFenceD3D12</a>, <a class="el" href="../../d4/d1d/classxii_g_a_l_fence_null.html#ac0b8be11101be610d09e72e9a113c1b2">xiiGALFenceNull</a>, and <a class="el" href="../../dc/df3/classxii_g_a_l_fence_vulkan.html#ac9f787352274c472c64f9c53b77f685a">xiiGALFenceVulkan</a>.</p>
 
 </div>
 </div>
@@ -345,6 +351,56 @@ In Direct3D12 and Vulkan backends, fence is thread-safe. </dd></dl>
 The fence must have been created with type General. </dd></dl>
 
 <p>Implemented in <a class="el" href="../../d5/d78/classxii_g_a_l_fence_d3_d11.html#a9f6a83b50abc26c3ba2e2d04f91a1dd1">xiiGALFenceD3D11</a>, <a class="el" href="../../d1/d8c/classxii_g_a_l_fence_d3_d12.html#a94a59bdb46978246dd632136a9fdfb15">xiiGALFenceD3D12</a>, <a class="el" href="../../d4/d1d/classxii_g_a_l_fence_null.html#ad989a839d56cfb2b1b1dbfae42e6d758">xiiGALFenceNull</a>, and <a class="el" href="../../dc/df3/classxii_g_a_l_fence_vulkan.html#ab40b858ecfbd6baf64e7bd3fdea52d41">xiiGALFenceVulkan</a>.</p>
+
+</div>
+</div>
+<a id="af403a72e94eb3c78549f9d87dd765283" name="af403a72e94eb3c78549f9d87dd765283"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af403a72e94eb3c78549f9d87dd765283">&#9670;&#160;</a></span>ValidateDeviceWaitForFence()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void xiiGALFence::ValidateDeviceWaitForFence </td>
+          <td>(</td>
+          <td class="paramtype">xiiUInt64</td>          <td class="paramname"><span class="paramname"><em>uiValue</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Validates device wait for fence. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">uiValue</td><td>- The enqueued value. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a1d0c24d9ac44561a91899b4644a1a9c3" name="a1d0c24d9ac44561a91899b4644a1a9c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d0c24d9ac44561a91899b4644a1a9c3">&#9670;&#160;</a></span>ValidateFenceSignal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void xiiGALFence::ValidateFenceSignal </td>
+          <td>(</td>
+          <td class="paramtype">xiiUInt64</td>          <td class="paramname"><span class="paramname"><em>uiValue</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Validates fence signal. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">uiValue</td><td>- The enqueued value. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -394,7 +450,7 @@ The fence must have been created with type General. </dd></dl>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d6/d79/classxii_g_a_l_fence.html">xiiGALFence</a></li>
-    <li class="footer">Generated on Sat Sep 21 2024 21:49:44 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Sat Oct 19 2024 17:09:06 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

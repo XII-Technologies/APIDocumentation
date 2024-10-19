@@ -148,7 +148,7 @@ $(function(){initNavTree('d8/d14/_texture_view_d3_d11_8h_source.html','../../');
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>  XII_ADD_DYNAMIC_REFLECTION(<a class="code hl_class" href="../../d0/d30/classxii_g_a_l_texture_view_d3_d11.html">xiiGALTextureViewD3D11</a>, <a class="code hl_class" href="../../da/d75/classxii_g_a_l_texture_view.html">xiiGALTextureView</a>);</div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>  ID3D11View* GetTextureView() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>  XII_ALWAYS_INLINE ID3D11View* GetTextureView()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_pTextureView; };</div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="keyword">protected</span>:</div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>  <span class="keyword">friend</span> <span class="keyword">class </span><a class="code hl_class" href="../../d2/d11/classxii_g_a_l_device_d3_d11.html">xiiGALDeviceD3D11</a>;</div>
@@ -173,8 +173,6 @@ $(function(){initNavTree('d8/d14/_texture_view_d3_d11_8h_source.html','../../');
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>  ID3D11View* m_pTextureView = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>};</div>
 </div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="preprocessor">#include &lt;GraphicsD3D11/Resources/Implementation/TextureViewD3D11_inl.h&gt;</span></div>
 <div class="ttc" id="aclassxii_g_a_l_device_d3_d11_html"><div class="ttname"><a href="../../d2/d11/classxii_g_a_l_device_d3_d11.html">xiiGALDeviceD3D11</a></div><div class="ttdef"><b>Definition</b> DeviceD3D11.h:25</div></div>
 <div class="ttc" id="aclassxii_g_a_l_texture_html"><div class="ttname"><a href="../../d3/d9a/classxii_g_a_l_texture.html">xiiGALTexture</a></div><div class="ttdoc">Interface that defines methods to manipulate a texture object.</div><div class="ttdef"><b>Definition</b> Texture.h:136</div></div>
 <div class="ttc" id="aclassxii_g_a_l_texture_view_d3_d11_html"><div class="ttname"><a href="../../d0/d30/classxii_g_a_l_texture_view_d3_d11.html">xiiGALTextureViewD3D11</a></div><div class="ttdef"><b>Definition</b> TextureViewD3D11.h:10</div></div>
@@ -189,7 +187,7 @@ $(function(){initNavTree('d8/d14/_texture_view_d3_d11_8h_source.html','../../');
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.html">home</a></li><li class="navelem"><a class="el" href="../../dir_1036706e55c22cab35bc1c58ee689f1d.html">runner</a></li><li class="navelem"><a class="el" href="../../dir_629f8151d55d307162ff2d619fb1783d.html">work</a></li><li class="navelem"><a class="el" href="../../dir_1ddc44fe1263a8c7935fa6130b7d9499.html">XII</a></li><li class="navelem"><a class="el" href="../../dir_2c1b6808f12952f4c36e05ba7068379a.html">XII</a></li><li class="navelem"><a class="el" href="../../dir_b5a1c4ecfca018ad24b729e213296d41.html">Source</a></li><li class="navelem"><a class="el" href="../../dir_e321052006a51284e67389ab20037e7c.html">Engine</a></li><li class="navelem"><a class="el" href="../../dir_1fecef1a621638f058ccc7afa2af7cec.html">GraphicsD3D11</a></li><li class="navelem"><a class="el" href="../../dir_abc1a4c06db8083c03cac69976ce47bb.html">Resources</a></li><li class="navelem"><b>TextureViewD3D11.h</b></li>
-    <li class="footer">Generated on Sat Sep 21 2024 21:49:41 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Sat Oct 19 2024 17:09:04 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

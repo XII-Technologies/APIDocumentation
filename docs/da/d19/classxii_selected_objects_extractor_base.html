@@ -151,6 +151,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a381133c1ce3784a7d535b1c6abc0900f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab9491f8ad0f1804ade730eaa481f25a4" id="r_ab9491f8ad0f1804ade730eaa481f25a4"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab9491f8ad0f1804ade730eaa481f25a4">Extract</a> (const <a class="el" href="../../dd/df1/classxii_view.html">xiiView</a> &amp;view, const <a class="el" href="../../dc/da4/classxii_dynamic_array.html">xiiDynamicArray</a>&lt; const <a class="el" href="../../d0/d91/classxii_game_object.html">xiiGameObject</a> * &gt; &amp;visibleObjects, <a class="el" href="../../d9/db2/classxii_extracted_render_data.html">xiiExtractedRenderData</a> &amp;ref_extractedRenderData) override</td></tr>
 <tr class="separator:ab9491f8ad0f1804ade730eaa481f25a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61ceb99907afc35c0611d1222afe3a4f" id="r_a61ceb99907afc35c0611d1222afe3a4f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a61ceb99907afc35c0611d1222afe3a4f">PostSortAndBatch</a> (const <a class="el" href="../../dd/df1/classxii_view.html">xiiView</a> &amp;view, const <a class="el" href="../../dc/da4/classxii_dynamic_array.html">xiiDynamicArray</a>&lt; const <a class="el" href="../../d0/d91/classxii_game_object.html">xiiGameObject</a> * &gt; &amp;visibleObjects, <a class="el" href="../../d9/db2/classxii_extracted_render_data.html">xiiExtractedRenderData</a> &amp;ref_extractedRenderData) override</td></tr>
+<tr class="separator:a61ceb99907afc35c0611d1222afe3a4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afdfbe793da2c4973c6ff051aa38aeb47" id="r_afdfbe793da2c4973c6ff051aa38aeb47"><td class="memItemLeft" align="right" valign="top"><a id="afdfbe793da2c4973c6ff051aa38aeb47" name="afdfbe793da2c4973c6ff051aa38aeb47"></a>
 virtual const <a class="el" href="../../d8/df8/classxii_deque.html">xiiDeque</a>&lt; <a class="el" href="../../da/d2c/structxii_game_object_handle.html">xiiGameObjectHandle</a> &gt; *&#160;</td><td class="memItemRight" valign="bottom"><b>GetSelection</b> ()=0</td></tr>
 <tr class="separator:afdfbe793da2c4973c6ff051aa38aeb47"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -166,9 +168,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>SetName</b> (<a class
 <a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetName</b> () const</td></tr>
 <tr class="memdesc:a61ebee5af1d28d6bd27fc4417eb291a3 inherit pub_methods_classxii_extractor"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the name of the extractor. <br /></td></tr>
 <tr class="separator:a61ebee5af1d28d6bd27fc4417eb291a3 inherit pub_methods_classxii_extractor"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a86a7957befbe9dfed802b3bf6072f767 inherit pub_methods_classxii_extractor" id="r_a86a7957befbe9dfed802b3bf6072f767"><td class="memItemLeft" align="right" valign="top">
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>PostSortAndBatch</b> (const <a class="el" href="../../dd/df1/classxii_view.html">xiiView</a> &amp;view, const <a class="el" href="../../dc/da4/classxii_dynamic_array.html">xiiDynamicArray</a>&lt; const <a class="el" href="../../d0/d91/classxii_game_object.html">xiiGameObject</a> * &gt; &amp;visibleObjects, <a class="el" href="../../d9/db2/classxii_extracted_render_data.html">xiiExtractedRenderData</a> &amp;ref_extractedRenderData)</td></tr>
-<tr class="separator:a86a7957befbe9dfed802b3bf6072f767 inherit pub_methods_classxii_extractor"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abcb3b9f51351b57275d5a3607112ea3d inherit pub_methods_classxii_extractor" id="r_abcb3b9f51351b57275d5a3607112ea3d"><td class="memItemLeft" align="right" valign="top">
 virtual <a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Serialize</b> (<a class="el" href="../../d0/d18/classxii_stream_writer.html">xiiStreamWriter</a> &amp;inout_stream) const</td></tr>
 <tr class="separator:abcb3b9f51351b57275d5a3607112ea3d inherit pub_methods_classxii_extractor"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -248,7 +247,43 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>ExtractRenderData</b>
 </table>
 </div><div class="memdoc">
 
-<p>Reimplemented from <a class="el" href="../../d9/dcf/classxii_extractor.html">xiiExtractor</a>.</p>
+<p>Implements <a class="el" href="../../d9/dcf/classxii_extractor.html">xiiExtractor</a>.</p>
+
+</div>
+</div>
+<a id="a61ceb99907afc35c0611d1222afe3a4f" name="a61ceb99907afc35c0611d1222afe3a4f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a61ceb99907afc35c0611d1222afe3a4f">&#9670;&#160;</a></span>PostSortAndBatch()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void xiiSelectedObjectsExtractorBase::PostSortAndBatch </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../dd/df1/classxii_view.html">xiiView</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>view</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../dc/da4/classxii_dynamic_array.html">xiiDynamicArray</a>&lt; const <a class="el" href="../../d0/d91/classxii_game_object.html">xiiGameObject</a> * &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>visibleObjects</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d9/db2/classxii_extracted_render_data.html">xiiExtractedRenderData</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>ref_extractedRenderData</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="../../d9/dcf/classxii_extractor.html">xiiExtractor</a>.</p>
 
 </div>
 </div>
@@ -262,7 +297,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>ExtractRenderData</b>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../da/d19/classxii_selected_objects_extractor_base.html">xiiSelectedObjectsExtractorBase</a></li>
-    <li class="footer">Generated on Sat Sep 21 2024 21:49:46 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Sat Oct 19 2024 17:09:08 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>
