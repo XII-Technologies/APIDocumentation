@@ -133,6 +133,7 @@ $(function(){initNavTree('d8/d4c/classxii_source_pass.html','../../'); initResiz
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="../../d8/d27/classxii_source_pass-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">xiiSourcePass Class Reference</div></div>
@@ -159,6 +160,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:adcad6f148671e30b934974f4f35f9dc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a16b1a806581b569b7af267a497e75ee1" id="r_a16b1a806581b569b7af267a497e75ee1"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a16b1a806581b569b7af267a497e75ee1">Deserialize</a> (<a class="el" href="../../d4/d5e/classxii_stream_reader.html">xiiStreamReader</a> &amp;inout_stream) override</td></tr>
 <tr class="separator:a16b1a806581b569b7af267a497e75ee1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28faf509ef5926dd47f410518cf253f8" id="r_a28faf509ef5926dd47f410518cf253f8"><td class="memItemLeft" align="right" valign="top"><a id="a28faf509ef5926dd47f410518cf253f8" name="a28faf509ef5926dd47f410518cf253f8"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>FreeCachedRenderPasses</b> ()</td></tr>
+<tr class="separator:a28faf509ef5926dd47f410518cf253f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classxii_render_pipeline_pass"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_classxii_render_pipeline_pass')"><img src="../../closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="../../d5/d44/classxii_render_pipeline_pass.html">xiiRenderPipelinePass</a></td></tr>
 <tr class="memitem:a5e897e2de9250054a1084aac00227dd8 inherit pub_methods_classxii_render_pipeline_pass" id="r_a5e897e2de9250054a1084aac00227dd8"><td class="memItemLeft" align="right" valign="top">
 &#160;</td><td class="memItemRight" valign="bottom"><b>xiiRenderPipelinePass</b> (<a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sName, bool bIsStereoAware=false)</td></tr>
@@ -175,6 +179,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>SetName</b> (<a class
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsStereoAware</b> () const</td></tr>
 <tr class="memdesc:a4163127ec40a1ce5b8f22e4955f26abe inherit pub_methods_classxii_render_pipeline_pass"><td class="mdescLeft">&#160;</td><td class="mdescRight">True if the render pipeline pass can handle stereo cameras correctly. <br /></td></tr>
 <tr class="separator:a4163127ec40a1ce5b8f22e4955f26abe inherit pub_methods_classxii_render_pipeline_pass"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ec9d04254cb4aabe98bf089d678dff1 inherit pub_methods_classxii_render_pipeline_pass" id="r_a8ec9d04254cb4aabe98bf089d678dff1"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../dd/d52/classxii_g_a_l_texture_view_handle.html">xiiGALTextureViewHandle</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d44/classxii_render_pipeline_pass.html#a8ec9d04254cb4aabe98bf089d678dff1">QueryTextureProvider</a> (const <a class="el" href="../../d9/d96/structxii_render_pipeline_node_pin.html">xiiRenderPipelineNodePin</a> *pPin, const <a class="el" href="../../de/dd4/structxii_g_a_l_texture_creation_description.html">xiiGALTextureCreationDescription</a> &amp;desc)</td></tr>
+<tr class="separator:a8ec9d04254cb4aabe98bf089d678dff1 inherit pub_methods_classxii_render_pipeline_pass"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a55a440ea75cb1a5e4b109b677812a2c1 inherit pub_methods_classxii_render_pipeline_pass" id="r_a55a440ea75cb1a5e4b109b677812a2c1"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d44/classxii_render_pipeline_pass.html#a55a440ea75cb1a5e4b109b677812a2c1">InitRenderPipelinePass</a> (const <a class="el" href="../../d0/d60/classxii_array_ptr.html">xiiArrayPtr</a>&lt; <a class="el" href="../../d3/deb/structxii_render_pipeline_pass_connection.html">xiiRenderPipelinePassConnection</a> *const &gt; inputs, const <a class="el" href="../../d0/d60/classxii_array_ptr.html">xiiArrayPtr</a>&lt; <a class="el" href="../../d3/deb/structxii_render_pipeline_pass_connection.html">xiiRenderPipelinePassConnection</a> *const &gt; outputs)</td></tr>
 <tr class="memdesc:a55a440ea75cb1a5e4b109b677812a2c1 inherit pub_methods_classxii_render_pipeline_pass"><td class="mdescLeft">&#160;</td><td class="mdescRight">After GetRenderTargetDescriptions was called successfully for each pass, this function is called with the inputs and outputs for review. Disconnected pins have a nullptr value in the passed in arrays. This is the time to create additional resources that are not covered by the pins automatically, e.g. a picking texture or eye adaptation buffer.  <br /></td></tr>
 <tr class="separator:a55a440ea75cb1a5e4b109b677812a2c1 inherit pub_methods_classxii_render_pipeline_pass"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -226,30 +232,54 @@ template&lt;typename T &gt; </td></tr>
 <tr class="memdesc:ac0a423d0f813feb28b200d9a9756eab8 inherit pub_methods_classxii_reflected_class"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether the type of this instance is of the given type or derived from it. <br /></td></tr>
 <tr class="separator:ac0a423d0f813feb28b200d9a9756eab8 inherit pub_methods_classxii_reflected_class"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a9dd6e3f8f5eb06617efecdb8383bb56d" id="r_a9dd6e3f8f5eb06617efecdb8383bb56d"><td class="memItemLeft" align="right" valign="top"><a id="a9dd6e3f8f5eb06617efecdb8383bb56d" name="a9dd6e3f8f5eb06617efecdb8383bb56d"></a>
+static <a class="el" href="../../de/dd4/structxii_g_a_l_texture_creation_description.html">xiiGALTextureCreationDescription</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetOutputDescription</b> (const <a class="el" href="../../dd/df1/classxii_view.html">xiiView</a> &amp;view, <a class="el" href="../../de/dfd/structxii_enum.html">xiiEnum</a>&lt; <a class="el" href="../../dc/d0c/structxii_source_format.html">xiiSourceFormat</a> &gt; format, <a class="el" href="../../de/dfd/structxii_enum.html">xiiEnum</a>&lt; <a class="el" href="../../d3/d28/structxii_g_a_l_m_s_a_a_sample_count.html">xiiGALMSAASampleCount</a> &gt; msaaMode)</td></tr>
+<tr class="separator:a9dd6e3f8f5eb06617efecdb8383bb56d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_static_methods_classxii_no_base"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_static_methods_classxii_no_base')"><img src="../../closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="../../d2/d38/classxii_no_base.html">xiiNoBase</a></td></tr>
+<tr class="memitem:a4bde433b55ebd55edf63c57239799bba inherit pub_static_methods_classxii_no_base" id="r_a4bde433b55ebd55edf63c57239799bba"><td class="memItemLeft" align="right" valign="top">
+static const <a class="el" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetStaticRTTI</b> ()</td></tr>
+<tr class="separator:a4bde433b55ebd55edf63c57239799bba inherit pub_static_methods_classxii_no_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
 <tr class="memitem:a16018513dfcf3444dd02582849e8be84" id="r_a16018513dfcf3444dd02582849e8be84"><td class="memItemLeft" align="right" valign="top"><a id="a16018513dfcf3444dd02582849e8be84" name="a16018513dfcf3444dd02582849e8be84"></a>
 <a class="el" href="../../d7/d3c/structxii_render_pipeline_node_output_pin.html">xiiRenderPipelineNodeOutputPin</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_PinOutput</b></td></tr>
 <tr class="separator:a16018513dfcf3444dd02582849e8be84"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a83281ec6bbd80fb260a80ee40d8ef5bd" id="r_a83281ec6bbd80fb260a80ee40d8ef5bd"><td class="memItemLeft" align="right" valign="top"><a id="a83281ec6bbd80fb260a80ee40d8ef5bd" name="a83281ec6bbd80fb260a80ee40d8ef5bd"></a>
-<a class="el" href="../../de/dfd/structxii_enum.html">xiiEnum</a>&lt; <a class="el" href="../../dc/d0c/structxii_source_format.html">xiiSourceFormat</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_Format</b></td></tr>
+<a class="el" href="../../de/dfd/structxii_enum.html">xiiEnum</a>&lt; <a class="el" href="../../dc/d0c/structxii_source_format.html">xiiSourceFormat</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_Format</b> = xiiSourceFormat::Default</td></tr>
 <tr class="separator:a83281ec6bbd80fb260a80ee40d8ef5bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adc17c7b5b20f60183355caa02c6c0d74" id="r_adc17c7b5b20f60183355caa02c6c0d74"><td class="memItemLeft" align="right" valign="top"><a id="adc17c7b5b20f60183355caa02c6c0d74" name="adc17c7b5b20f60183355caa02c6c0d74"></a>
-<a class="el" href="../../de/dfd/structxii_enum.html">xiiEnum</a>&lt; <a class="el" href="../../d3/d28/structxii_g_a_l_m_s_a_a_sample_count.html">xiiGALMSAASampleCount</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_SampleCount</b></td></tr>
+<a class="el" href="../../de/dfd/structxii_enum.html">xiiEnum</a>&lt; <a class="el" href="../../d3/d28/structxii_g_a_l_m_s_a_a_sample_count.html">xiiGALMSAASampleCount</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_SampleCount</b> = <a class="el" href="../../d3/d28/structxii_g_a_l_m_s_a_a_sample_count.html#a4d174563bcfff207aa4b781b51a206b5a9b851c99c8fbc4326f36a78a115f4864">xiiGALMSAASampleCount::OneSample</a></td></tr>
 <tr class="separator:adc17c7b5b20f60183355caa02c6c0d74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3d0b7d6d4e6f26fbafe3c14ebd4a4ca" id="r_ab3d0b7d6d4e6f26fbafe3c14ebd4a4ca"><td class="memItemLeft" align="right" valign="top"><a id="ab3d0b7d6d4e6f26fbafe3c14ebd4a4ca" name="ab3d0b7d6d4e6f26fbafe3c14ebd4a4ca"></a>
+<a class="el" href="../../de/dfd/structxii_enum.html">xiiEnum</a>&lt; <a class="el" href="../../d1/da8/structxii_g_a_l_attachment_load_operation.html">xiiGALAttachmentLoadOperation</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_AttachmentLoadOperation</b> = <a class="el" href="../../d1/da8/structxii_g_a_l_attachment_load_operation.html#ac253fabbe9fd160f2e29bb33a40cac63aded2e600b1acaefa46b0949273d73a57">xiiGALAttachmentLoadOperation::Load</a></td></tr>
+<tr class="separator:ab3d0b7d6d4e6f26fbafe3c14ebd4a4ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4395aaf17cfd38b188f6efdf0e3153e2" id="r_a4395aaf17cfd38b188f6efdf0e3153e2"><td class="memItemLeft" align="right" valign="top"><a id="a4395aaf17cfd38b188f6efdf0e3153e2" name="a4395aaf17cfd38b188f6efdf0e3153e2"></a>
+<a class="el" href="../../de/dfd/structxii_enum.html">xiiEnum</a>&lt; <a class="el" href="../../d4/d17/structxii_g_a_l_attachment_store_operation.html">xiiGALAttachmentStoreOperation</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_AttachmentStoreOperation</b> = <a class="el" href="../../d4/d17/structxii_g_a_l_attachment_store_operation.html#a0975ace7286da660ed0f6e0baa6d5661acbe098b053b238e88b6e60527086e682">xiiGALAttachmentStoreOperation::Store</a></td></tr>
+<tr class="separator:a4395aaf17cfd38b188f6efdf0e3153e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa72879ef7229104443159db76b4bc0db" id="r_aa72879ef7229104443159db76b4bc0db"><td class="memItemLeft" align="right" valign="top"><a id="aa72879ef7229104443159db76b4bc0db" name="aa72879ef7229104443159db76b4bc0db"></a>
+<a class="el" href="../../de/dfd/structxii_enum.html">xiiEnum</a>&lt; <a class="el" href="../../d1/da8/structxii_g_a_l_attachment_load_operation.html">xiiGALAttachmentLoadOperation</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_AttachmentStencilLoadOperation</b> = <a class="el" href="../../d1/da8/structxii_g_a_l_attachment_load_operation.html#ac253fabbe9fd160f2e29bb33a40cac63aded2e600b1acaefa46b0949273d73a57">xiiGALAttachmentLoadOperation::Load</a></td></tr>
+<tr class="separator:aa72879ef7229104443159db76b4bc0db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a501adc5b93ab006f25e1115b13d896" id="r_a0a501adc5b93ab006f25e1115b13d896"><td class="memItemLeft" align="right" valign="top"><a id="a0a501adc5b93ab006f25e1115b13d896" name="a0a501adc5b93ab006f25e1115b13d896"></a>
+<a class="el" href="../../de/dfd/structxii_enum.html">xiiEnum</a>&lt; <a class="el" href="../../d4/d17/structxii_g_a_l_attachment_store_operation.html">xiiGALAttachmentStoreOperation</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_AttachmentStencilStoreOperation</b> = <a class="el" href="../../d4/d17/structxii_g_a_l_attachment_store_operation.html#a0975ace7286da660ed0f6e0baa6d5661acbe098b053b238e88b6e60527086e682">xiiGALAttachmentStoreOperation::Store</a></td></tr>
+<tr class="separator:a0a501adc5b93ab006f25e1115b13d896"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8cc85d94df7455f9f97d234fa2005ff4" id="r_a8cc85d94df7455f9f97d234fa2005ff4"><td class="memItemLeft" align="right" valign="top"><a id="a8cc85d94df7455f9f97d234fa2005ff4" name="a8cc85d94df7455f9f97d234fa2005ff4"></a>
-<a class="el" href="../../d3/de6/classxii_color.html">xiiColor</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_ClearColor</b></td></tr>
+<a class="el" href="../../d3/de6/classxii_color.html">xiiColor</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_ClearColor</b> = <a class="el" href="../../d3/de6/classxii_color.html#a9bab62c2a390a5c5149c4e738384ac96">xiiColor::Black</a></td></tr>
 <tr class="separator:a8cc85d94df7455f9f97d234fa2005ff4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae328ea1cbc4e84709581a6119c5f8999" id="r_ae328ea1cbc4e84709581a6119c5f8999"><td class="memItemLeft" align="right" valign="top"><a id="ae328ea1cbc4e84709581a6119c5f8999" name="ae328ea1cbc4e84709581a6119c5f8999"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_bClear</b></td></tr>
-<tr class="separator:ae328ea1cbc4e84709581a6119c5f8999"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
-Additional Inherited Members</h2></td></tr>
-<tr class="inherit_header pub_static_methods_classxii_no_base"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_static_methods_classxii_no_base')"><img src="../../closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="../../d2/d38/classxii_no_base.html">xiiNoBase</a></td></tr>
-<tr class="memitem:a4bde433b55ebd55edf63c57239799bba inherit pub_static_methods_classxii_no_base" id="r_a4bde433b55ebd55edf63c57239799bba"><td class="memItemLeft" align="right" valign="top">
-static const <a class="el" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetStaticRTTI</b> ()</td></tr>
-<tr class="separator:a4bde433b55ebd55edf63c57239799bba inherit pub_static_methods_classxii_no_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5179d078cb78e7f19f21f2ebca78b2e1" id="r_a5179d078cb78e7f19f21f2ebca78b2e1"><td class="memItemLeft" align="right" valign="top"><a id="a5179d078cb78e7f19f21f2ebca78b2e1" name="a5179d078cb78e7f19f21f2ebca78b2e1"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>m_fDepthClearValue</b> = 1.0f</td></tr>
+<tr class="separator:a5179d078cb78e7f19f21f2ebca78b2e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d463c25c49505a8ae1f847cffff5192" id="r_a0d463c25c49505a8ae1f847cffff5192"><td class="memItemLeft" align="right" valign="top"><a id="a0d463c25c49505a8ae1f847cffff5192" name="a0d463c25c49505a8ae1f847cffff5192"></a>
+xiiUInt8&#160;</td><td class="memItemRight" valign="bottom"><b>m_uiStencilClearValue</b> = 0U</td></tr>
+<tr class="separator:a0d463c25c49505a8ae1f847cffff5192"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5eb00ddb16c10eeb75dc512301986dc" id="r_ac5eb00ddb16c10eeb75dc512301986dc"><td class="memItemLeft" align="right" valign="top"><a id="ac5eb00ddb16c10eeb75dc512301986dc" name="ac5eb00ddb16c10eeb75dc512301986dc"></a>
+<a class="el" href="../../dd/dce/classxii_g_a_l_render_pass_handle.html">xiiGALRenderPassHandle</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_hRenderPass</b></td></tr>
+<tr class="separator:ac5eb00ddb16c10eeb75dc512301986dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51f09b6e77c71314feaf415b1ddd871b" id="r_a51f09b6e77c71314feaf415b1ddd871b"><td class="memItemLeft" align="right" valign="top"><a id="a51f09b6e77c71314feaf415b1ddd871b" name="a51f09b6e77c71314feaf415b1ddd871b"></a>
+<a class="el" href="../../dd/d03/classxii_g_a_l_framebuffer_handle.html">xiiGALFramebufferHandle</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_hFramebuffer</b></td></tr>
+<tr class="separator:a51f09b6e77c71314feaf415b1ddd871b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="a16b1a806581b569b7af267a497e75ee1" name="a16b1a806581b569b7af267a497e75ee1"></a>
@@ -392,7 +422,7 @@ static const <a class="el" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d8/d4c/classxii_source_pass.html">xiiSourcePass</a></li>
-    <li class="footer">Generated on Sat Oct 19 2024 17:09:09 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Sat Nov 23 2024 18:10:02 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

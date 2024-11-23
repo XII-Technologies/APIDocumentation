@@ -41,6 +41,7 @@ var structxii_g_a_l_device_features =
     [ "m_UniformBuffer8BitAccess", "d6/d8f/structxii_g_a_l_device_features.html#a84e3212a2be1aba01893634d7286085d", null ],
     [ "m_VariableRateShading", "d6/d8f/structxii_g_a_l_device_features.html#a2fef025f1c4d006c7828e0da6c8895e6", null ],
     [ "m_VertexPipelineUAVWritesAndAtomics", "d6/d8f/structxii_g_a_l_device_features.html#a115787bf470de82bae0864c673b5762d", null ],
+    [ "m_VertexShaderRenderTargetArrayIndex", "d6/d8f/structxii_g_a_l_device_features.html#a0f1f4a6594db60e922942a0c699d081a", null ],
     [ "m_WaveOperation", "d6/d8f/structxii_g_a_l_device_features.html#a2ab3928b829995bb4758058ceccdb315", null ],
     [ "m_WireframeFill", "d6/d8f/structxii_g_a_l_device_features.html#afac87c6926b186fcf52c3856f3928e00", null ]
 ];

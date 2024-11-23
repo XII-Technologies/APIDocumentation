@@ -5,6 +5,7 @@ var classxii_render_pipeline_pass =
     [ "GetRenderTargetDescriptions", "d5/d44/classxii_render_pipeline_pass.html#a36bc9d71d7061f9ea4e723fda6d41e7a", null ],
     [ "InitRenderPipelinePass", "d5/d44/classxii_render_pipeline_pass.html#a55a440ea75cb1a5e4b109b677812a2c1", null ],
     [ "IsStereoAware", "d5/d44/classxii_render_pipeline_pass.html#a4163127ec40a1ce5b8f22e4955f26abe", null ],
+    [ "QueryTextureProvider", "d5/d44/classxii_render_pipeline_pass.html#a8ec9d04254cb4aabe98bf089d678dff1", null ],
     [ "ReadBackProperties", "d5/d44/classxii_render_pipeline_pass.html#a8a4c82ddf770dc1087d05c4ff0d182db", null ],
     [ "SetName", "d5/d44/classxii_render_pipeline_pass.html#ada77ef560359b1ae6d85e09ee1172e02", null ]
 ];

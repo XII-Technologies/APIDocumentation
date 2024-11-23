@@ -698,115 +698,113 @@ $(function(){initNavTree('de/d7b/_o_s_file__posix_8h_source.html','../../'); ini
 <div class="line"><a id="l00552" name="l00552"></a><span class="lineno">  552</span>    <span class="keywordflow">return</span>;</div>
 <div class="line"><a id="l00553" name="l00553"></a><span class="lineno">  553</span> </div>
 <div class="line"><a id="l00554" name="l00554"></a><span class="lineno">  554</span>  <span class="keywordflow">if</span> (UpdateCurrentFile(m_CurFile, m_sCurPath, hSearch, m_Data.m_wildcardSearch).Failed())</div>
-<div class="line"><a id="l00555" name="l00555"></a><span class="lineno">  555</span>  {</div>
-<div class="line"><a id="l00556" name="l00556"></a><span class="lineno">  556</span>    <span class="keywordflow">return</span>;</div>
-<div class="line"><a id="l00557" name="l00557"></a><span class="lineno">  557</span>  }</div>
+<div class="line"><a id="l00555" name="l00555"></a><span class="lineno">  555</span>    <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00556" name="l00556"></a><span class="lineno">  556</span> </div>
+<div class="line"><a id="l00557" name="l00557"></a><span class="lineno">  557</span>  m_Data.m_Handles.PushBack(hSearch);</div>
 <div class="line"><a id="l00558" name="l00558"></a><span class="lineno">  558</span> </div>
-<div class="line"><a id="l00559" name="l00559"></a><span class="lineno">  559</span>  m_Data.m_Handles.PushBack(hSearch);</div>
-<div class="line"><a id="l00560" name="l00560"></a><span class="lineno">  560</span> </div>
-<div class="line"><a id="l00561" name="l00561"></a><span class="lineno">  561</span>  <span class="keywordflow">if</span> ((m_CurFile.<a class="code hl_variable" href="../../d6/dd0/structxii_file_stats.html#a65063b0a02bf1d0792b9928cb8c27dfa">m_sName</a> == <span class="stringliteral">&quot;..&quot;</span>) || (m_CurFile.<a class="code hl_variable" href="../../d6/dd0/structxii_file_stats.html#a65063b0a02bf1d0792b9928cb8c27dfa">m_sName</a> == <span class="stringliteral">&quot;.&quot;</span>))</div>
-<div class="line"><a id="l00562" name="l00562"></a><span class="lineno">  562</span>  {</div>
-<div class="line"><a id="l00563" name="l00563"></a><span class="lineno">  563</span>    <a class="code hl_function" href="../../dc/d89/classxii_file_system_iterator.html#a06b532c6c4f805bbde598312c96a437e">Next</a>(); <span class="comment">// will search for the next file or folder that is not &quot;..&quot; or &quot;.&quot; ; might return false though</span></div>
-<div class="line"><a id="l00564" name="l00564"></a><span class="lineno">  564</span>    <span class="keywordflow">return</span>;</div>
-<div class="line"><a id="l00565" name="l00565"></a><span class="lineno">  565</span>  }</div>
-<div class="line"><a id="l00566" name="l00566"></a><span class="lineno">  566</span> </div>
-<div class="line"><a id="l00567" name="l00567"></a><span class="lineno">  567</span>  <span class="keywordflow">if</span> (m_CurFile.<a class="code hl_variable" href="../../d6/dd0/structxii_file_stats.html#a1de1837a109bff62cb0fc73fbab0bb5d">m_bIsDirectory</a>)</div>
-<div class="line"><a id="l00568" name="l00568"></a><span class="lineno">  568</span>  {</div>
-<div class="line"><a id="l00569" name="l00569"></a><span class="lineno">  569</span>    <span class="keywordflow">if</span> (!m_Flags.<a class="code hl_function" href="../../d7/d55/structxii_bitflags.html#af2c990725fd731e800eeb6a22945003f">IsSet</a>(xiiFileSystemIteratorFlags::ReportFolders))</div>
-<div class="line"><a id="l00570" name="l00570"></a><span class="lineno">  570</span>    {</div>
-<div class="line"><a id="l00571" name="l00571"></a><span class="lineno">  571</span>      <a class="code hl_function" href="../../dc/d89/classxii_file_system_iterator.html#a06b532c6c4f805bbde598312c96a437e">Next</a>();</div>
-<div class="line"><a id="l00572" name="l00572"></a><span class="lineno">  572</span>      <span class="keywordflow">return</span>;</div>
-<div class="line"><a id="l00573" name="l00573"></a><span class="lineno">  573</span>    }</div>
-<div class="line"><a id="l00574" name="l00574"></a><span class="lineno">  574</span>  }</div>
-<div class="line"><a id="l00575" name="l00575"></a><span class="lineno">  575</span>  <span class="keywordflow">else</span></div>
-<div class="line"><a id="l00576" name="l00576"></a><span class="lineno">  576</span>  {</div>
-<div class="line"><a id="l00577" name="l00577"></a><span class="lineno">  577</span>    <span class="keywordflow">if</span> (!m_Flags.<a class="code hl_function" href="../../d7/d55/structxii_bitflags.html#af2c990725fd731e800eeb6a22945003f">IsSet</a>(xiiFileSystemIteratorFlags::ReportFiles))</div>
-<div class="line"><a id="l00578" name="l00578"></a><span class="lineno">  578</span>    {</div>
-<div class="line"><a id="l00579" name="l00579"></a><span class="lineno">  579</span>      <a class="code hl_function" href="../../dc/d89/classxii_file_system_iterator.html#a06b532c6c4f805bbde598312c96a437e">Next</a>();</div>
-<div class="line"><a id="l00580" name="l00580"></a><span class="lineno">  580</span>      <span class="keywordflow">return</span>;</div>
-<div class="line"><a id="l00581" name="l00581"></a><span class="lineno">  581</span>    }</div>
-<div class="line"><a id="l00582" name="l00582"></a><span class="lineno">  582</span>  }</div>
-<div class="line"><a id="l00583" name="l00583"></a><span class="lineno">  583</span>}</div>
-<div class="line"><a id="l00584" name="l00584"></a><span class="lineno">  584</span> </div>
-<div class="line"><a id="l00585" name="l00585"></a><span class="lineno">  585</span>xiiInt32 xiiFileSystemIterator::InternalNext()</div>
-<div class="line"><a id="l00586" name="l00586"></a><span class="lineno">  586</span>{</div>
-<div class="line"><a id="l00587" name="l00587"></a><span class="lineno">  587</span>  <span class="keyword">constexpr</span> xiiInt32 CallInternalNext = 2;</div>
-<div class="line"><a id="l00588" name="l00588"></a><span class="lineno">  588</span> </div>
-<div class="line"><a id="l00589" name="l00589"></a><span class="lineno">  589</span>  <span class="keywordflow">if</span> (m_Data.m_Handles.IsEmpty())</div>
-<div class="line"><a id="l00590" name="l00590"></a><span class="lineno">  590</span>    <span class="keywordflow">return</span> XII_FAILURE;</div>
-<div class="line"><a id="l00591" name="l00591"></a><span class="lineno">  591</span> </div>
-<div class="line"><a id="l00592" name="l00592"></a><span class="lineno">  592</span>  <span class="keywordflow">if</span> (m_Flags.<a class="code hl_function" href="../../d7/d55/structxii_bitflags.html#af2c990725fd731e800eeb6a22945003f">IsSet</a>(xiiFileSystemIteratorFlags::Recursive) &amp;&amp; m_CurFile.<a class="code hl_variable" href="../../d6/dd0/structxii_file_stats.html#a1de1837a109bff62cb0fc73fbab0bb5d">m_bIsDirectory</a> &amp;&amp; (m_CurFile.<a class="code hl_variable" href="../../d6/dd0/structxii_file_stats.html#a65063b0a02bf1d0792b9928cb8c27dfa">m_sName</a> != <span class="stringliteral">&quot;..&quot;</span>) &amp;&amp; (m_CurFile.<a class="code hl_variable" href="../../d6/dd0/structxii_file_stats.html#a65063b0a02bf1d0792b9928cb8c27dfa">m_sName</a> != <span class="stringliteral">&quot;.&quot;</span>))</div>
-<div class="line"><a id="l00593" name="l00593"></a><span class="lineno">  593</span>  {</div>
-<div class="line"><a id="l00594" name="l00594"></a><span class="lineno">  594</span>    m_sCurPath.<a class="code hl_function" href="../../d4/dbb/classxii_string_builder.html#aeb8dedf699785b95812b7b137a901324">AppendPath</a>(m_CurFile.<a class="code hl_variable" href="../../d6/dd0/structxii_file_stats.html#a65063b0a02bf1d0792b9928cb8c27dfa">m_sName</a>.<a class="code hl_function" href="../../df/d4f/structxii_hybrid_string_base.html#af918be3076cb4cb09be77b2783bc8029">GetData</a>());</div>
+<div class="line"><a id="l00559" name="l00559"></a><span class="lineno">  559</span>  <span class="keywordflow">if</span> ((m_CurFile.<a class="code hl_variable" href="../../d6/dd0/structxii_file_stats.html#a65063b0a02bf1d0792b9928cb8c27dfa">m_sName</a> == <span class="stringliteral">&quot;..&quot;</span>) || (m_CurFile.<a class="code hl_variable" href="../../d6/dd0/structxii_file_stats.html#a65063b0a02bf1d0792b9928cb8c27dfa">m_sName</a> == <span class="stringliteral">&quot;.&quot;</span>))</div>
+<div class="line"><a id="l00560" name="l00560"></a><span class="lineno">  560</span>  {</div>
+<div class="line"><a id="l00561" name="l00561"></a><span class="lineno">  561</span>    <a class="code hl_function" href="../../dc/d89/classxii_file_system_iterator.html#a06b532c6c4f805bbde598312c96a437e">Next</a>(); <span class="comment">// will search for the next file or folder that is not &quot;..&quot; or &quot;.&quot; ; might return false though</span></div>
+<div class="line"><a id="l00562" name="l00562"></a><span class="lineno">  562</span>    <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00563" name="l00563"></a><span class="lineno">  563</span>  }</div>
+<div class="line"><a id="l00564" name="l00564"></a><span class="lineno">  564</span> </div>
+<div class="line"><a id="l00565" name="l00565"></a><span class="lineno">  565</span>  <span class="keywordflow">if</span> (m_CurFile.<a class="code hl_variable" href="../../d6/dd0/structxii_file_stats.html#a1de1837a109bff62cb0fc73fbab0bb5d">m_bIsDirectory</a>)</div>
+<div class="line"><a id="l00566" name="l00566"></a><span class="lineno">  566</span>  {</div>
+<div class="line"><a id="l00567" name="l00567"></a><span class="lineno">  567</span>    <span class="keywordflow">if</span> (!m_Flags.<a class="code hl_function" href="../../d7/d55/structxii_bitflags.html#af2c990725fd731e800eeb6a22945003f">IsSet</a>(xiiFileSystemIteratorFlags::ReportFolders))</div>
+<div class="line"><a id="l00568" name="l00568"></a><span class="lineno">  568</span>    {</div>
+<div class="line"><a id="l00569" name="l00569"></a><span class="lineno">  569</span>      <a class="code hl_function" href="../../dc/d89/classxii_file_system_iterator.html#a06b532c6c4f805bbde598312c96a437e">Next</a>();</div>
+<div class="line"><a id="l00570" name="l00570"></a><span class="lineno">  570</span>      <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00571" name="l00571"></a><span class="lineno">  571</span>    }</div>
+<div class="line"><a id="l00572" name="l00572"></a><span class="lineno">  572</span>  }</div>
+<div class="line"><a id="l00573" name="l00573"></a><span class="lineno">  573</span>  <span class="keywordflow">else</span></div>
+<div class="line"><a id="l00574" name="l00574"></a><span class="lineno">  574</span>  {</div>
+<div class="line"><a id="l00575" name="l00575"></a><span class="lineno">  575</span>    <span class="keywordflow">if</span> (!m_Flags.<a class="code hl_function" href="../../d7/d55/structxii_bitflags.html#af2c990725fd731e800eeb6a22945003f">IsSet</a>(xiiFileSystemIteratorFlags::ReportFiles))</div>
+<div class="line"><a id="l00576" name="l00576"></a><span class="lineno">  576</span>    {</div>
+<div class="line"><a id="l00577" name="l00577"></a><span class="lineno">  577</span>      <a class="code hl_function" href="../../dc/d89/classxii_file_system_iterator.html#a06b532c6c4f805bbde598312c96a437e">Next</a>();</div>
+<div class="line"><a id="l00578" name="l00578"></a><span class="lineno">  578</span>      <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00579" name="l00579"></a><span class="lineno">  579</span>    }</div>
+<div class="line"><a id="l00580" name="l00580"></a><span class="lineno">  580</span>  }</div>
+<div class="line"><a id="l00581" name="l00581"></a><span class="lineno">  581</span>}</div>
+<div class="line"><a id="l00582" name="l00582"></a><span class="lineno">  582</span> </div>
+<div class="line"><a id="l00583" name="l00583"></a><span class="lineno">  583</span>xiiInt32 xiiFileSystemIterator::InternalNext()</div>
+<div class="line"><a id="l00584" name="l00584"></a><span class="lineno">  584</span>{</div>
+<div class="line"><a id="l00585" name="l00585"></a><span class="lineno">  585</span>  <span class="keyword">constexpr</span> xiiInt32 CallInternalNext = 2;</div>
+<div class="line"><a id="l00586" name="l00586"></a><span class="lineno">  586</span> </div>
+<div class="line"><a id="l00587" name="l00587"></a><span class="lineno">  587</span>  <span class="keywordflow">if</span> (m_Data.m_Handles.IsEmpty())</div>
+<div class="line"><a id="l00588" name="l00588"></a><span class="lineno">  588</span>    <span class="keywordflow">return</span> XII_FAILURE;</div>
+<div class="line"><a id="l00589" name="l00589"></a><span class="lineno">  589</span> </div>
+<div class="line"><a id="l00590" name="l00590"></a><span class="lineno">  590</span>  <span class="keywordflow">if</span> (m_Flags.<a class="code hl_function" href="../../d7/d55/structxii_bitflags.html#af2c990725fd731e800eeb6a22945003f">IsSet</a>(xiiFileSystemIteratorFlags::Recursive) &amp;&amp; m_CurFile.<a class="code hl_variable" href="../../d6/dd0/structxii_file_stats.html#a1de1837a109bff62cb0fc73fbab0bb5d">m_bIsDirectory</a> &amp;&amp; (m_CurFile.<a class="code hl_variable" href="../../d6/dd0/structxii_file_stats.html#a65063b0a02bf1d0792b9928cb8c27dfa">m_sName</a> != <span class="stringliteral">&quot;..&quot;</span>) &amp;&amp; (m_CurFile.<a class="code hl_variable" href="../../d6/dd0/structxii_file_stats.html#a65063b0a02bf1d0792b9928cb8c27dfa">m_sName</a> != <span class="stringliteral">&quot;.&quot;</span>))</div>
+<div class="line"><a id="l00591" name="l00591"></a><span class="lineno">  591</span>  {</div>
+<div class="line"><a id="l00592" name="l00592"></a><span class="lineno">  592</span>    m_sCurPath.<a class="code hl_function" href="../../d4/dbb/classxii_string_builder.html#aeb8dedf699785b95812b7b137a901324">AppendPath</a>(m_CurFile.<a class="code hl_variable" href="../../d6/dd0/structxii_file_stats.html#a65063b0a02bf1d0792b9928cb8c27dfa">m_sName</a>.<a class="code hl_function" href="../../df/d4f/structxii_hybrid_string_base.html#af918be3076cb4cb09be77b2783bc8029">GetData</a>());</div>
+<div class="line"><a id="l00593" name="l00593"></a><span class="lineno">  593</span> </div>
+<div class="line"><a id="l00594" name="l00594"></a><span class="lineno">  594</span>    DIR* hSearch = opendir(m_sCurPath.<a class="code hl_function" href="../../d4/dbb/classxii_string_builder.html#a83ea1990a5c974e5d806e9f32146b2a1">GetData</a>());</div>
 <div class="line"><a id="l00595" name="l00595"></a><span class="lineno">  595</span> </div>
-<div class="line"><a id="l00596" name="l00596"></a><span class="lineno">  596</span>    DIR* hSearch = opendir(m_sCurPath.<a class="code hl_function" href="../../d4/dbb/classxii_string_builder.html#a83ea1990a5c974e5d806e9f32146b2a1">GetData</a>());</div>
-<div class="line"><a id="l00597" name="l00597"></a><span class="lineno">  597</span> </div>
-<div class="line"><a id="l00598" name="l00598"></a><span class="lineno">  598</span>    <span class="keywordflow">if</span> (hSearch != <span class="keyword">nullptr</span> &amp;&amp; UpdateCurrentFile(m_CurFile, m_sCurPath, hSearch, m_Data.m_wildcardSearch).Succeeded())</div>
-<div class="line"><a id="l00599" name="l00599"></a><span class="lineno">  599</span>    {</div>
-<div class="line"><a id="l00600" name="l00600"></a><span class="lineno">  600</span>      m_Data.m_Handles.PushBack(hSearch);</div>
-<div class="line"><a id="l00601" name="l00601"></a><span class="lineno">  601</span> </div>
-<div class="line"><a id="l00602" name="l00602"></a><span class="lineno">  602</span>      <span class="keywordflow">if</span> ((m_CurFile.<a class="code hl_variable" href="../../d6/dd0/structxii_file_stats.html#a65063b0a02bf1d0792b9928cb8c27dfa">m_sName</a> == <span class="stringliteral">&quot;..&quot;</span>) || (m_CurFile.<a class="code hl_variable" href="../../d6/dd0/structxii_file_stats.html#a65063b0a02bf1d0792b9928cb8c27dfa">m_sName</a> == <span class="stringliteral">&quot;.&quot;</span>))</div>
-<div class="line"><a id="l00603" name="l00603"></a><span class="lineno">  603</span>        <span class="keywordflow">return</span> CallInternalNext; <span class="comment">// will search for the next file or folder that is not &quot;..&quot; or &quot;.&quot; ; might return false though</span></div>
-<div class="line"><a id="l00604" name="l00604"></a><span class="lineno">  604</span> </div>
-<div class="line"><a id="l00605" name="l00605"></a><span class="lineno">  605</span>      <span class="keywordflow">if</span> (m_CurFile.<a class="code hl_variable" href="../../d6/dd0/structxii_file_stats.html#a1de1837a109bff62cb0fc73fbab0bb5d">m_bIsDirectory</a>)</div>
-<div class="line"><a id="l00606" name="l00606"></a><span class="lineno">  606</span>      {</div>
-<div class="line"><a id="l00607" name="l00607"></a><span class="lineno">  607</span>        <span class="keywordflow">if</span> (!m_Flags.<a class="code hl_function" href="../../d7/d55/structxii_bitflags.html#af2c990725fd731e800eeb6a22945003f">IsSet</a>(xiiFileSystemIteratorFlags::ReportFolders))</div>
-<div class="line"><a id="l00608" name="l00608"></a><span class="lineno">  608</span>          <span class="keywordflow">return</span> CallInternalNext;</div>
-<div class="line"><a id="l00609" name="l00609"></a><span class="lineno">  609</span>      }</div>
-<div class="line"><a id="l00610" name="l00610"></a><span class="lineno">  610</span>      <span class="keywordflow">else</span></div>
-<div class="line"><a id="l00611" name="l00611"></a><span class="lineno">  611</span>      {</div>
-<div class="line"><a id="l00612" name="l00612"></a><span class="lineno">  612</span>        <span class="keywordflow">if</span> (!m_Flags.<a class="code hl_function" href="../../d7/d55/structxii_bitflags.html#af2c990725fd731e800eeb6a22945003f">IsSet</a>(xiiFileSystemIteratorFlags::ReportFiles))</div>
-<div class="line"><a id="l00613" name="l00613"></a><span class="lineno">  613</span>          <span class="keywordflow">return</span> CallInternalNext;</div>
-<div class="line"><a id="l00614" name="l00614"></a><span class="lineno">  614</span>      }</div>
-<div class="line"><a id="l00615" name="l00615"></a><span class="lineno">  615</span> </div>
-<div class="line"><a id="l00616" name="l00616"></a><span class="lineno">  616</span>      <span class="keywordflow">return</span> XII_SUCCESS;</div>
-<div class="line"><a id="l00617" name="l00617"></a><span class="lineno">  617</span>    }</div>
-<div class="line"><a id="l00618" name="l00618"></a><span class="lineno">  618</span> </div>
-<div class="line"><a id="l00619" name="l00619"></a><span class="lineno">  619</span>    <span class="comment">// if the recursion did not work, just iterate in this folder further</span></div>
-<div class="line"><a id="l00620" name="l00620"></a><span class="lineno">  620</span>  }</div>
-<div class="line"><a id="l00621" name="l00621"></a><span class="lineno">  621</span> </div>
-<div class="line"><a id="l00622" name="l00622"></a><span class="lineno">  622</span>  <span class="keywordflow">if</span> (UpdateCurrentFile(m_CurFile, m_sCurPath, (DIR*)m_Data.m_Handles.PeekBack(), m_Data.m_wildcardSearch).Failed())</div>
-<div class="line"><a id="l00623" name="l00623"></a><span class="lineno">  623</span>  {</div>
-<div class="line"><a id="l00624" name="l00624"></a><span class="lineno">  624</span>    <span class="comment">// nothing found in this directory anymore</span></div>
-<div class="line"><a id="l00625" name="l00625"></a><span class="lineno">  625</span>    closedir((DIR*)m_Data.m_Handles.PeekBack());</div>
-<div class="line"><a id="l00626" name="l00626"></a><span class="lineno">  626</span>    m_Data.m_Handles.PopBack();</div>
-<div class="line"><a id="l00627" name="l00627"></a><span class="lineno">  627</span> </div>
-<div class="line"><a id="l00628" name="l00628"></a><span class="lineno">  628</span>    <span class="keywordflow">if</span> (m_Data.m_Handles.IsEmpty())</div>
-<div class="line"><a id="l00629" name="l00629"></a><span class="lineno">  629</span>      <span class="keywordflow">return</span> XII_FAILURE;</div>
-<div class="line"><a id="l00630" name="l00630"></a><span class="lineno">  630</span> </div>
-<div class="line"><a id="l00631" name="l00631"></a><span class="lineno">  631</span>    m_sCurPath.<a class="code hl_function" href="../../d4/dbb/classxii_string_builder.html#a32df060a23b1194a0856dfa97424f70e">PathParentDirectory</a>();</div>
-<div class="line"><a id="l00632" name="l00632"></a><span class="lineno">  632</span>    <span class="keywordflow">if</span> (m_sCurPath.<a class="code hl_function" href="../../d4/dbb/classxii_string_builder.html#a150b4db5b8ac2beb7a7a9c1081781cc4">GetElementCount</a>() &gt; 1 &amp;&amp; m_sCurPath.<a class="code hl_function" href="../../d2/d29/structxii_string_base.html#a59e350b8f45c88d18eacebc160e1b07f">EndsWith</a>(<span class="stringliteral">&quot;/&quot;</span>))</div>
-<div class="line"><a id="l00633" name="l00633"></a><span class="lineno">  633</span>    {</div>
-<div class="line"><a id="l00634" name="l00634"></a><span class="lineno">  634</span>      m_sCurPath.<a class="code hl_function" href="../../d4/dbb/classxii_string_builder.html#ac10cf1b62532e9daa2af2a877993ab99">Shrink</a>(0, 1);</div>
-<div class="line"><a id="l00635" name="l00635"></a><span class="lineno">  635</span>    }</div>
-<div class="line"><a id="l00636" name="l00636"></a><span class="lineno">  636</span> </div>
-<div class="line"><a id="l00637" name="l00637"></a><span class="lineno">  637</span>    <span class="keywordflow">return</span> CallInternalNext;</div>
-<div class="line"><a id="l00638" name="l00638"></a><span class="lineno">  638</span>  }</div>
-<div class="line"><a id="l00639" name="l00639"></a><span class="lineno">  639</span> </div>
-<div class="line"><a id="l00640" name="l00640"></a><span class="lineno">  640</span>  <span class="keywordflow">if</span> ((m_CurFile.<a class="code hl_variable" href="../../d6/dd0/structxii_file_stats.html#a65063b0a02bf1d0792b9928cb8c27dfa">m_sName</a> == <span class="stringliteral">&quot;..&quot;</span>) || (m_CurFile.<a class="code hl_variable" href="../../d6/dd0/structxii_file_stats.html#a65063b0a02bf1d0792b9928cb8c27dfa">m_sName</a> == <span class="stringliteral">&quot;.&quot;</span>))</div>
-<div class="line"><a id="l00641" name="l00641"></a><span class="lineno">  641</span>    <span class="keywordflow">return</span> CallInternalNext;</div>
-<div class="line"><a id="l00642" name="l00642"></a><span class="lineno">  642</span> </div>
-<div class="line"><a id="l00643" name="l00643"></a><span class="lineno">  643</span>  <span class="keywordflow">if</span> (m_CurFile.<a class="code hl_variable" href="../../d6/dd0/structxii_file_stats.html#a1de1837a109bff62cb0fc73fbab0bb5d">m_bIsDirectory</a>)</div>
-<div class="line"><a id="l00644" name="l00644"></a><span class="lineno">  644</span>  {</div>
-<div class="line"><a id="l00645" name="l00645"></a><span class="lineno">  645</span>    <span class="keywordflow">if</span> (!m_Flags.<a class="code hl_function" href="../../d7/d55/structxii_bitflags.html#af2c990725fd731e800eeb6a22945003f">IsSet</a>(xiiFileSystemIteratorFlags::ReportFolders))</div>
-<div class="line"><a id="l00646" name="l00646"></a><span class="lineno">  646</span>      <span class="keywordflow">return</span> CallInternalNext;</div>
-<div class="line"><a id="l00647" name="l00647"></a><span class="lineno">  647</span>  }</div>
-<div class="line"><a id="l00648" name="l00648"></a><span class="lineno">  648</span>  <span class="keywordflow">else</span></div>
-<div class="line"><a id="l00649" name="l00649"></a><span class="lineno">  649</span>  {</div>
-<div class="line"><a id="l00650" name="l00650"></a><span class="lineno">  650</span>    <span class="keywordflow">if</span> (!m_Flags.<a class="code hl_function" href="../../d7/d55/structxii_bitflags.html#af2c990725fd731e800eeb6a22945003f">IsSet</a>(xiiFileSystemIteratorFlags::ReportFiles))</div>
-<div class="line"><a id="l00651" name="l00651"></a><span class="lineno">  651</span>      <span class="keywordflow">return</span> CallInternalNext;</div>
-<div class="line"><a id="l00652" name="l00652"></a><span class="lineno">  652</span>  }</div>
-<div class="line"><a id="l00653" name="l00653"></a><span class="lineno">  653</span> </div>
-<div class="line"><a id="l00654" name="l00654"></a><span class="lineno">  654</span>  <span class="keywordflow">return</span> XII_SUCCESS;</div>
-<div class="line"><a id="l00655" name="l00655"></a><span class="lineno">  655</span>}</div>
-<div class="line"><a id="l00656" name="l00656"></a><span class="lineno">  656</span> </div>
-<div class="line"><a id="l00657" name="l00657"></a><span class="lineno">  657</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00596" name="l00596"></a><span class="lineno">  596</span>    <span class="keywordflow">if</span> (hSearch != <span class="keyword">nullptr</span> &amp;&amp; UpdateCurrentFile(m_CurFile, m_sCurPath, hSearch, m_Data.m_wildcardSearch).Succeeded())</div>
+<div class="line"><a id="l00597" name="l00597"></a><span class="lineno">  597</span>    {</div>
+<div class="line"><a id="l00598" name="l00598"></a><span class="lineno">  598</span>      m_Data.m_Handles.PushBack(hSearch);</div>
+<div class="line"><a id="l00599" name="l00599"></a><span class="lineno">  599</span> </div>
+<div class="line"><a id="l00600" name="l00600"></a><span class="lineno">  600</span>      <span class="keywordflow">if</span> ((m_CurFile.<a class="code hl_variable" href="../../d6/dd0/structxii_file_stats.html#a65063b0a02bf1d0792b9928cb8c27dfa">m_sName</a> == <span class="stringliteral">&quot;..&quot;</span>) || (m_CurFile.<a class="code hl_variable" href="../../d6/dd0/structxii_file_stats.html#a65063b0a02bf1d0792b9928cb8c27dfa">m_sName</a> == <span class="stringliteral">&quot;.&quot;</span>))</div>
+<div class="line"><a id="l00601" name="l00601"></a><span class="lineno">  601</span>        <span class="keywordflow">return</span> CallInternalNext; <span class="comment">// will search for the next file or folder that is not &quot;..&quot; or &quot;.&quot; ; might return false though</span></div>
+<div class="line"><a id="l00602" name="l00602"></a><span class="lineno">  602</span> </div>
+<div class="line"><a id="l00603" name="l00603"></a><span class="lineno">  603</span>      <span class="keywordflow">if</span> (m_CurFile.<a class="code hl_variable" href="../../d6/dd0/structxii_file_stats.html#a1de1837a109bff62cb0fc73fbab0bb5d">m_bIsDirectory</a>)</div>
+<div class="line"><a id="l00604" name="l00604"></a><span class="lineno">  604</span>      {</div>
+<div class="line"><a id="l00605" name="l00605"></a><span class="lineno">  605</span>        <span class="keywordflow">if</span> (!m_Flags.<a class="code hl_function" href="../../d7/d55/structxii_bitflags.html#af2c990725fd731e800eeb6a22945003f">IsSet</a>(xiiFileSystemIteratorFlags::ReportFolders))</div>
+<div class="line"><a id="l00606" name="l00606"></a><span class="lineno">  606</span>          <span class="keywordflow">return</span> CallInternalNext;</div>
+<div class="line"><a id="l00607" name="l00607"></a><span class="lineno">  607</span>      }</div>
+<div class="line"><a id="l00608" name="l00608"></a><span class="lineno">  608</span>      <span class="keywordflow">else</span></div>
+<div class="line"><a id="l00609" name="l00609"></a><span class="lineno">  609</span>      {</div>
+<div class="line"><a id="l00610" name="l00610"></a><span class="lineno">  610</span>        <span class="keywordflow">if</span> (!m_Flags.<a class="code hl_function" href="../../d7/d55/structxii_bitflags.html#af2c990725fd731e800eeb6a22945003f">IsSet</a>(xiiFileSystemIteratorFlags::ReportFiles))</div>
+<div class="line"><a id="l00611" name="l00611"></a><span class="lineno">  611</span>          <span class="keywordflow">return</span> CallInternalNext;</div>
+<div class="line"><a id="l00612" name="l00612"></a><span class="lineno">  612</span>      }</div>
+<div class="line"><a id="l00613" name="l00613"></a><span class="lineno">  613</span> </div>
+<div class="line"><a id="l00614" name="l00614"></a><span class="lineno">  614</span>      <span class="keywordflow">return</span> XII_SUCCESS;</div>
+<div class="line"><a id="l00615" name="l00615"></a><span class="lineno">  615</span>    }</div>
+<div class="line"><a id="l00616" name="l00616"></a><span class="lineno">  616</span> </div>
+<div class="line"><a id="l00617" name="l00617"></a><span class="lineno">  617</span>    <span class="comment">// if the recursion did not work, just iterate in this folder further</span></div>
+<div class="line"><a id="l00618" name="l00618"></a><span class="lineno">  618</span>  }</div>
+<div class="line"><a id="l00619" name="l00619"></a><span class="lineno">  619</span> </div>
+<div class="line"><a id="l00620" name="l00620"></a><span class="lineno">  620</span>  <span class="keywordflow">if</span> (UpdateCurrentFile(m_CurFile, m_sCurPath, (DIR*)m_Data.m_Handles.PeekBack(), m_Data.m_wildcardSearch).Failed())</div>
+<div class="line"><a id="l00621" name="l00621"></a><span class="lineno">  621</span>  {</div>
+<div class="line"><a id="l00622" name="l00622"></a><span class="lineno">  622</span>    <span class="comment">// nothing found in this directory anymore</span></div>
+<div class="line"><a id="l00623" name="l00623"></a><span class="lineno">  623</span>    closedir((DIR*)m_Data.m_Handles.PeekBack());</div>
+<div class="line"><a id="l00624" name="l00624"></a><span class="lineno">  624</span>    m_Data.m_Handles.PopBack();</div>
+<div class="line"><a id="l00625" name="l00625"></a><span class="lineno">  625</span> </div>
+<div class="line"><a id="l00626" name="l00626"></a><span class="lineno">  626</span>    <span class="keywordflow">if</span> (m_Data.m_Handles.IsEmpty())</div>
+<div class="line"><a id="l00627" name="l00627"></a><span class="lineno">  627</span>      <span class="keywordflow">return</span> XII_FAILURE;</div>
+<div class="line"><a id="l00628" name="l00628"></a><span class="lineno">  628</span> </div>
+<div class="line"><a id="l00629" name="l00629"></a><span class="lineno">  629</span>    m_sCurPath.<a class="code hl_function" href="../../d4/dbb/classxii_string_builder.html#a32df060a23b1194a0856dfa97424f70e">PathParentDirectory</a>();</div>
+<div class="line"><a id="l00630" name="l00630"></a><span class="lineno">  630</span>    <span class="keywordflow">if</span> (m_sCurPath.<a class="code hl_function" href="../../d4/dbb/classxii_string_builder.html#a150b4db5b8ac2beb7a7a9c1081781cc4">GetElementCount</a>() &gt; 1 &amp;&amp; m_sCurPath.<a class="code hl_function" href="../../d2/d29/structxii_string_base.html#a59e350b8f45c88d18eacebc160e1b07f">EndsWith</a>(<span class="stringliteral">&quot;/&quot;</span>))</div>
+<div class="line"><a id="l00631" name="l00631"></a><span class="lineno">  631</span>    {</div>
+<div class="line"><a id="l00632" name="l00632"></a><span class="lineno">  632</span>      m_sCurPath.<a class="code hl_function" href="../../d4/dbb/classxii_string_builder.html#ac10cf1b62532e9daa2af2a877993ab99">Shrink</a>(0, 1);</div>
+<div class="line"><a id="l00633" name="l00633"></a><span class="lineno">  633</span>    }</div>
+<div class="line"><a id="l00634" name="l00634"></a><span class="lineno">  634</span> </div>
+<div class="line"><a id="l00635" name="l00635"></a><span class="lineno">  635</span>    <span class="keywordflow">return</span> CallInternalNext;</div>
+<div class="line"><a id="l00636" name="l00636"></a><span class="lineno">  636</span>  }</div>
+<div class="line"><a id="l00637" name="l00637"></a><span class="lineno">  637</span> </div>
+<div class="line"><a id="l00638" name="l00638"></a><span class="lineno">  638</span>  <span class="keywordflow">if</span> ((m_CurFile.<a class="code hl_variable" href="../../d6/dd0/structxii_file_stats.html#a65063b0a02bf1d0792b9928cb8c27dfa">m_sName</a> == <span class="stringliteral">&quot;..&quot;</span>) || (m_CurFile.<a class="code hl_variable" href="../../d6/dd0/structxii_file_stats.html#a65063b0a02bf1d0792b9928cb8c27dfa">m_sName</a> == <span class="stringliteral">&quot;.&quot;</span>))</div>
+<div class="line"><a id="l00639" name="l00639"></a><span class="lineno">  639</span>    <span class="keywordflow">return</span> CallInternalNext;</div>
+<div class="line"><a id="l00640" name="l00640"></a><span class="lineno">  640</span> </div>
+<div class="line"><a id="l00641" name="l00641"></a><span class="lineno">  641</span>  <span class="keywordflow">if</span> (m_CurFile.<a class="code hl_variable" href="../../d6/dd0/structxii_file_stats.html#a1de1837a109bff62cb0fc73fbab0bb5d">m_bIsDirectory</a>)</div>
+<div class="line"><a id="l00642" name="l00642"></a><span class="lineno">  642</span>  {</div>
+<div class="line"><a id="l00643" name="l00643"></a><span class="lineno">  643</span>    <span class="keywordflow">if</span> (!m_Flags.<a class="code hl_function" href="../../d7/d55/structxii_bitflags.html#af2c990725fd731e800eeb6a22945003f">IsSet</a>(xiiFileSystemIteratorFlags::ReportFolders))</div>
+<div class="line"><a id="l00644" name="l00644"></a><span class="lineno">  644</span>      <span class="keywordflow">return</span> CallInternalNext;</div>
+<div class="line"><a id="l00645" name="l00645"></a><span class="lineno">  645</span>  }</div>
+<div class="line"><a id="l00646" name="l00646"></a><span class="lineno">  646</span>  <span class="keywordflow">else</span></div>
+<div class="line"><a id="l00647" name="l00647"></a><span class="lineno">  647</span>  {</div>
+<div class="line"><a id="l00648" name="l00648"></a><span class="lineno">  648</span>    <span class="keywordflow">if</span> (!m_Flags.<a class="code hl_function" href="../../d7/d55/structxii_bitflags.html#af2c990725fd731e800eeb6a22945003f">IsSet</a>(xiiFileSystemIteratorFlags::ReportFiles))</div>
+<div class="line"><a id="l00649" name="l00649"></a><span class="lineno">  649</span>      <span class="keywordflow">return</span> CallInternalNext;</div>
+<div class="line"><a id="l00650" name="l00650"></a><span class="lineno">  650</span>  }</div>
+<div class="line"><a id="l00651" name="l00651"></a><span class="lineno">  651</span> </div>
+<div class="line"><a id="l00652" name="l00652"></a><span class="lineno">  652</span>  <span class="keywordflow">return</span> XII_SUCCESS;</div>
+<div class="line"><a id="l00653" name="l00653"></a><span class="lineno">  653</span>}</div>
+<div class="line"><a id="l00654" name="l00654"></a><span class="lineno">  654</span> </div>
+<div class="line"><a id="l00655" name="l00655"></a><span class="lineno">  655</span><span class="preprocessor">#endif</span></div>
 <div class="ttc" id="aclassxii_array_ptr_html"><div class="ttname"><a href="../../d0/d60/classxii_array_ptr.html">xiiArrayPtr</a></div><div class="ttdoc">This class encapsulates an array and it's size. It is recommended to use this class instead of plain ...</div><div class="ttdef"><b>Definition</b> ArrayPtr.h:37</div></div>
 <div class="ttc" id="aclassxii_array_ptr_html_acfb4db6e3a381669be860ce1a5500c6b"><div class="ttname"><a href="../../d0/d60/classxii_array_ptr.html#acfb4db6e3a381669be860ce1a5500c6b">xiiArrayPtr::GetPtr</a></div><div class="ttdeci">XII_ALWAYS_INLINE PointerType GetPtr() const</div><div class="ttdoc">Returns the pointer to the array.</div><div class="ttdef"><b>Definition</b> ArrayPtr.h:122</div></div>
 <div class="ttc" id="aclassxii_file_system_iterator_html_a06b532c6c4f805bbde598312c96a437e"><div class="ttname"><a href="../../dc/d89/classxii_file_system_iterator.html#a06b532c6c4f805bbde598312c96a437e">xiiFileSystemIterator::Next</a></div><div class="ttdeci">void Next()</div><div class="ttdoc">Advances the iterator to the next file object. Might recurse into sub-folders.</div></div>
 <div class="ttc" id="aclassxii_file_system_iterator_html_ac80336a10202f0b0a7910c08d3248991"><div class="ttname"><a href="../../dc/d89/classxii_file_system_iterator.html#ac80336a10202f0b0a7910c08d3248991">xiiFileSystemIterator::StartSearch</a></div><div class="ttdeci">void StartSearch(xiiStringView sSearchTerm, xiiBitflags&lt; xiiFileSystemIteratorFlags &gt; flags=xiiFileSystemIteratorFlags::Default)</div><div class="ttdoc">Starts a search at the given folder. Use * and ? as wildcards.</div></div>
 <div class="ttc" id="aclassxii_file_system_iterator_html_acfae5e4e225090efdd1a3e06326365b5"><div class="ttname"><a href="../../dc/d89/classxii_file_system_iterator.html#acfae5e4e225090efdd1a3e06326365b5">xiiFileSystemIterator::IsValid</a></div><div class="ttdeci">bool IsValid() const</div><div class="ttdoc">Returns true if the iterator currently points to a valid file entry.</div></div>
-<div class="ttc" id="aclassxii_log_html_a9312254ec6a5da7419b6e62163192464"><div class="ttname"><a href="../../d4/dc6/classxii_log.html#a9312254ec6a5da7419b6e62163192464">xiiLog::Error</a></div><div class="ttdeci">static void Error(xiiLogInterface *pInterface, const xiiFormatString &amp;string)</div><div class="ttdoc">An error that needs to be fixed as soon as possible.</div><div class="ttdef"><b>Definition</b> Log.cpp:360</div></div>
+<div class="ttc" id="aclassxii_log_html_a9312254ec6a5da7419b6e62163192464"><div class="ttname"><a href="../../d4/dc6/classxii_log.html#a9312254ec6a5da7419b6e62163192464">xiiLog::Error</a></div><div class="ttdeci">static void Error(xiiLogInterface *pInterface, const xiiFormatString &amp;string)</div><div class="ttdoc">An error that needs to be fixed as soon as possible.</div><div class="ttdef"><b>Definition</b> Log.cpp:358</div></div>
 <div class="ttc" id="aclassxii_memory_utils_html_ae5cd4c80773bcac0c89493b9a07ede3a"><div class="ttname"><a href="../../d8/d9d/classxii_memory_utils.html#ae5cd4c80773bcac0c89493b9a07ede3a">xiiMemoryUtils::AddByteOffset</a></div><div class="ttdeci">static T * AddByteOffset(T *pPtr, std::ptrdiff_t offset)</div><div class="ttdoc">Returns the address stored in ptr plus the given byte offset iOffset, cast to type T.</div></div>
 <div class="ttc" id="aclassxii_o_s_file_html_a119478d3ed9b06762cbcfc54be300ae3"><div class="ttname"><a href="../../da/d95/classxii_o_s_file.html#a119478d3ed9b06762cbcfc54be300ae3">xiiOSFile::GetCurrentWorkingDirectory</a></div><div class="ttdeci">static const xiiString GetCurrentWorkingDirectory()</div><div class="ttdoc">Returns the processes current working directory (CWD).</div><div class="ttdef"><b>Definition</b> OSFile_posix.h:448</div></div>
 <div class="ttc" id="aclassxii_o_s_file_html_a4d878860c251454e27488c165a7e39c0"><div class="ttname"><a href="../../da/d95/classxii_o_s_file.html#a4d878860c251454e27488c165a7e39c0">xiiOSFile::GetTempDataFolder</a></div><div class="ttdeci">static xiiString GetTempDataFolder(xiiStringView sSubFolder={})</div><div class="ttdoc">Returns the folder into which temp data may be written.</div><div class="ttdef"><b>Definition</b> OSFile_posix.h:407</div></div>
@@ -866,7 +864,7 @@ $(function(){initNavTree('de/d7b/_o_s_file__posix_8h_source.html','../../'); ini
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.html">home</a></li><li class="navelem"><a class="el" href="../../dir_1036706e55c22cab35bc1c58ee689f1d.html">runner</a></li><li class="navelem"><a class="el" href="../../dir_629f8151d55d307162ff2d619fb1783d.html">work</a></li><li class="navelem"><a class="el" href="../../dir_1ddc44fe1263a8c7935fa6130b7d9499.html">XII</a></li><li class="navelem"><a class="el" href="../../dir_2c1b6808f12952f4c36e05ba7068379a.html">XII</a></li><li class="navelem"><a class="el" href="../../dir_b5a1c4ecfca018ad24b729e213296d41.html">Source</a></li><li class="navelem"><a class="el" href="../../dir_e321052006a51284e67389ab20037e7c.html">Engine</a></li><li class="navelem"><a class="el" href="../../dir_be0c42c58b36f42c54ec54024ed4f6af.html">Foundation</a></li><li class="navelem"><a class="el" href="../../dir_664c047245be96e54b4c21a35d20a789.html">Platform</a></li><li class="navelem"><a class="el" href="../../dir_ed92eb75a0769b88f81ec30678d8111f.html">Implementation</a></li><li class="navelem"><a class="el" href="../../dir_293306e2c3b7a7bc8be4cea8476b5bd0.html">Posix</a></li><li class="navelem"><b>OSFile_posix.h</b></li>
-    <li class="footer">Generated on Sat Oct 19 2024 17:09:02 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Sat Nov 23 2024 18:09:56 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

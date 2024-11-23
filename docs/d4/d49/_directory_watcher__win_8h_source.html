@@ -810,16 +810,14 @@ $(function(){initNavTree('d4/d49/_directory_watcher__win_8h_source.html','../../
 <div class="line"><a id="l00674" name="l00674"></a><span class="lineno">  674</span> </div>
 <div class="line"><a id="l00675" name="l00675"></a><span class="lineno">  675</span>  <span class="comment">// Wait for any of the watchers to have some data ready</span></div>
 <div class="line"><a id="l00676" name="l00676"></a><span class="lineno">  676</span>  <span class="keywordflow">if</span> (WaitForMultipleObjects(events.<a class="code hl_function" href="../../da/d4c/classxii_array_base.html#a43100f93e19bb795ea0980dae2b28e0b">GetCount</a>(), events.<a class="code hl_function" href="../../da/d4c/classxii_array_base.html#a2ac4701f79554bcc89ba1a2b0ad5f9ad">GetData</a>(), FALSE, <span class="keyword">static_cast&lt;</span>DWORD<span class="keyword">&gt;</span>(waitUpTo.<a class="code hl_function" href="../../d7/dc1/structxii_time.html#ab039f77744cbad442220b8b6d2f9c0e5">GetMilliseconds</a>())) == WAIT_TIMEOUT)</div>
-<div class="line"><a id="l00677" name="l00677"></a><span class="lineno">  677</span>  {</div>
-<div class="line"><a id="l00678" name="l00678"></a><span class="lineno">  678</span>    <span class="keywordflow">return</span>;</div>
-<div class="line"><a id="l00679" name="l00679"></a><span class="lineno">  679</span>  }</div>
-<div class="line"><a id="l00680" name="l00680"></a><span class="lineno">  680</span> </div>
-<div class="line"><a id="l00681" name="l00681"></a><span class="lineno">  681</span>  <span class="comment">// Iterate all of them to make sure we report all changes up to this point.</span></div>
-<div class="line"><a id="l00682" name="l00682"></a><span class="lineno">  682</span>  <span class="keywordflow">for</span> (xiiDirectoryWatcher* watcher : watchers)</div>
-<div class="line"><a id="l00683" name="l00683"></a><span class="lineno">  683</span>  {</div>
-<div class="line"><a id="l00684" name="l00684"></a><span class="lineno">  684</span>    watcher-&gt;EnumerateChanges(<a class="code hl_function" href="../../da/d1f/group__group1.html#ga24f647174760cac13d2624b5ad74b00c">func</a>);</div>
-<div class="line"><a id="l00685" name="l00685"></a><span class="lineno">  685</span>  }</div>
-<div class="line"><a id="l00686" name="l00686"></a><span class="lineno">  686</span>}</div>
+<div class="line"><a id="l00677" name="l00677"></a><span class="lineno">  677</span>    <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00678" name="l00678"></a><span class="lineno">  678</span> </div>
+<div class="line"><a id="l00679" name="l00679"></a><span class="lineno">  679</span>  <span class="comment">// Iterate all of them to make sure we report all changes up to this point.</span></div>
+<div class="line"><a id="l00680" name="l00680"></a><span class="lineno">  680</span>  <span class="keywordflow">for</span> (xiiDirectoryWatcher* watcher : watchers)</div>
+<div class="line"><a id="l00681" name="l00681"></a><span class="lineno">  681</span>  {</div>
+<div class="line"><a id="l00682" name="l00682"></a><span class="lineno">  682</span>    watcher-&gt;EnumerateChanges(<a class="code hl_function" href="../../da/d1f/group__group1.html#ga24f647174760cac13d2624b5ad74b00c">func</a>);</div>
+<div class="line"><a id="l00683" name="l00683"></a><span class="lineno">  683</span>  }</div>
+<div class="line"><a id="l00684" name="l00684"></a><span class="lineno">  684</span>}</div>
 <div class="ttc" id="aclassxii_array_base_html_a2ac4701f79554bcc89ba1a2b0ad5f9ad"><div class="ttname"><a href="../../da/d4c/classxii_array_base.html#a2ac4701f79554bcc89ba1a2b0ad5f9ad">xiiArrayBase::GetData</a></div><div class="ttdeci">T * GetData()</div><div class="ttdoc">Returns a pointer to the array data, or nullptr if the array is empty.</div><div class="ttdef"><b>Definition</b> ArrayBase_inl.h:417</div></div>
 <div class="ttc" id="aclassxii_array_base_html_a4114fd2fe9dc9b02ce50e8d723515c24"><div class="ttname"><a href="../../da/d4c/classxii_array_base.html#a4114fd2fe9dc9b02ce50e8d723515c24">xiiArrayBase::SetCountUninitialized</a></div><div class="ttdeci">void SetCountUninitialized(xiiUInt32 uiCount)</div><div class="ttdoc">Resizes the array to have exactly uiCount elements. Extra elements might be uninitialized.</div><div class="ttdef"><b>Definition</b> ArrayBase_inl.h:147</div></div>
 <div class="ttc" id="aclassxii_array_base_html_a43100f93e19bb795ea0980dae2b28e0b"><div class="ttname"><a href="../../da/d4c/classxii_array_base.html#a43100f93e19bb795ea0980dae2b28e0b">xiiArrayBase::GetCount</a></div><div class="ttdeci">xiiUInt32 GetCount() const</div><div class="ttdoc">Returns the number of active elements in the array.</div><div class="ttdef"><b>Definition</b> ArrayBase_inl.h:164</div></div>
@@ -887,7 +885,7 @@ $(function(){initNavTree('d4/d49/_directory_watcher__win_8h_source.html','../../
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.html">home</a></li><li class="navelem"><a class="el" href="../../dir_1036706e55c22cab35bc1c58ee689f1d.html">runner</a></li><li class="navelem"><a class="el" href="../../dir_629f8151d55d307162ff2d619fb1783d.html">work</a></li><li class="navelem"><a class="el" href="../../dir_1ddc44fe1263a8c7935fa6130b7d9499.html">XII</a></li><li class="navelem"><a class="el" href="../../dir_2c1b6808f12952f4c36e05ba7068379a.html">XII</a></li><li class="navelem"><a class="el" href="../../dir_b5a1c4ecfca018ad24b729e213296d41.html">Source</a></li><li class="navelem"><a class="el" href="../../dir_e321052006a51284e67389ab20037e7c.html">Engine</a></li><li class="navelem"><a class="el" href="../../dir_be0c42c58b36f42c54ec54024ed4f6af.html">Foundation</a></li><li class="navelem"><a class="el" href="../../dir_664c047245be96e54b4c21a35d20a789.html">Platform</a></li><li class="navelem"><a class="el" href="../../dir_ed92eb75a0769b88f81ec30678d8111f.html">Implementation</a></li><li class="navelem"><a class="el" href="../../dir_6309b8608ad3a96b0815dd8267345211.html">Windows</a></li><li class="navelem"><b>DirectoryWatcher_win.h</b></li>
-    <li class="footer">Generated on Sat Oct 19 2024 17:09:02 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Sat Nov 23 2024 18:09:56 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

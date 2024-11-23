@@ -46,7 +46,7 @@ var classxii_g_a_l_device =
     [ "GetBottomLevelAS", "d5/d19/classxii_g_a_l_device.html#a8bb6230ed4c565d7b739a19cfd4ba1a2", null ],
     [ "GetBuffer", "d5/d19/classxii_g_a_l_device.html#a0221414619cde3ea9764e510acb9454d", null ],
     [ "GetBufferView", "d5/d19/classxii_g_a_l_device.html#a6d6a9cfbf6b0b4482f025ce8eaed8d81", null ],
-    [ "GetDefaultCommandQueue", "d5/d19/classxii_g_a_l_device.html#a7f6b7e1de45ce44addf8bdce598099e3", null ],
+    [ "GetDefaultCommandQueue", "d5/d19/classxii_g_a_l_device.html#aec36b8ab2b91fabf44b348eb6d451204", null ],
     [ "GetDepthStencilState", "d5/d19/classxii_g_a_l_device.html#a0f9d16454655c5a8684eac77b7730b5e", null ],
     [ "GetDescription", "d5/d19/classxii_g_a_l_device.html#a6f65c258973f8d479bfd1aa346446fcd", null ],
     [ "GetFeatures", "d5/d19/classxii_g_a_l_device.html#ac356d7a5b9dda8b2c2ad5e86916a752f", null ],

@@ -147,9 +147,12 @@ Inheritance diagram for xiiGALDeviceD3D11:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a872d09780ebe89a672c141534dac4821" id="r_a872d09780ebe89a672c141534dac4821"><td class="memItemLeft" align="right" valign="top">virtual XII_ALWAYS_INLINE <a class="el" href="../../d1/dd2/classxii_g_a_l_command_queue.html">xiiGALCommandQueue</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a872d09780ebe89a672c141534dac4821">GetDefaultCommandQueue</a> (<a class="el" href="../../d7/d55/structxii_bitflags.html">xiiBitflags</a>&lt; <a class="el" href="../../d7/db4/structxii_g_a_l_command_queue_type.html">xiiGALCommandQueueType</a> &gt; queueType) const override final</td></tr>
-<tr class="memdesc:a872d09780ebe89a672c141534dac4821"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves a pointer to the compute queue if available, null otherwise.  <br /></td></tr>
-<tr class="separator:a872d09780ebe89a672c141534dac4821"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6801266afa4f532d6a13ce018948e7b" id="r_af6801266afa4f532d6a13ce018948e7b"><td class="memItemLeft" align="right" valign="top">virtual XII_ALWAYS_INLINE <a class="el" href="../../d1/dd2/classxii_g_a_l_command_queue.html">xiiGALCommandQueue</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af6801266afa4f532d6a13ce018948e7b">GetDefaultCommandQueue</a> (<a class="el" href="../../d7/d55/structxii_bitflags.html">xiiBitflags</a>&lt; <a class="el" href="../../d7/db4/structxii_g_a_l_command_queue_type.html">xiiGALCommandQueueType</a> &gt; queueType, bool bAllowGraphicsCommandQueueFallback) const override final</td></tr>
+<tr class="memdesc:af6801266afa4f532d6a13ce018948e7b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves a pointer to the compute queue if available, null otherwise.  <br /></td></tr>
+<tr class="separator:af6801266afa4f532d6a13ce018948e7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8132f5902147d7a49616a0758fdaf9bc" id="r_a8132f5902147d7a49616a0758fdaf9bc"><td class="memItemLeft" align="right" valign="top"><a id="a8132f5902147d7a49616a0758fdaf9bc" name="a8132f5902147d7a49616a0758fdaf9bc"></a>
+XII_ALWAYS_INLINE <a class="el" href="../../d5/d66/classxii_allocator_base.html">xiiAllocatorBase</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetAllocator</b> () const</td></tr>
+<tr class="separator:a8132f5902147d7a49616a0758fdaf9bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af1cd02282c8b7012e49c847a117ef747" id="r_af1cd02282c8b7012e49c847a117ef747"><td class="memItemLeft" align="right" valign="top"><a id="af1cd02282c8b7012e49c847a117ef747" name="af1cd02282c8b7012e49c847a117ef747"></a>
 XII_ALWAYS_INLINE ID3D11Device5 *&#160;</td><td class="memItemRight" valign="bottom"><b>GetD3D11Device</b> () const</td></tr>
 <tr class="separator:af1cd02282c8b7012e49c847a117ef747"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -168,9 +171,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>ReportLiveGPUObjects<
 <tr class="memitem:a60f53636a1012fc1edb188f35154e297" id="r_a60f53636a1012fc1edb188f35154e297"><td class="memItemLeft" align="right" valign="top"><a id="a60f53636a1012fc1edb188f35154e297" name="a60f53636a1012fc1edb188f35154e297"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>FlushPendingObjects</b> ()</td></tr>
 <tr class="separator:a60f53636a1012fc1edb188f35154e297"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7c8670d290d684fd2b529a1be2265255" id="r_a7c8670d290d684fd2b529a1be2265255"><td class="memItemLeft" align="right" valign="top"><a id="a7c8670d290d684fd2b529a1be2265255" name="a7c8670d290d684fd2b529a1be2265255"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>ResetCommandQueuesSwapChainReferences</b> ()</td></tr>
-<tr class="separator:a7c8670d290d684fd2b529a1be2265255"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9afd2259037efb74ad74b32a3bc7a694" id="r_a9afd2259037efb74ad74b32a3bc7a694"><td class="memItemLeft" align="right" valign="top"><a id="a9afd2259037efb74ad74b32a3bc7a694" name="a9afd2259037efb74ad74b32a3bc7a694"></a>
 ID3D11Resource *&#160;</td><td class="memItemRight" valign="bottom"><b>FindTemporaryBuffer</b> (xiiUInt32 uiSize)</td></tr>
 <tr class="separator:a9afd2259037efb74ad74b32a3bc7a694"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -887,12 +887,12 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>PipelineResourceSign
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000089">Todo</a></b></dt><dd>GraphicsD3D11: Assert that structure sizes has not been modified. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000088">Todo</a></b></dt><dd>GraphicsD3D11: Assert that structure sizes has not been modified. </dd></dl>
 
 </div>
 </div>
-<a id="a872d09780ebe89a672c141534dac4821" name="a872d09780ebe89a672c141534dac4821"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a872d09780ebe89a672c141534dac4821">&#9670;&#160;</a></span>GetDefaultCommandQueue()</h2>
+<a id="af6801266afa4f532d6a13ce018948e7b" name="af6801266afa4f532d6a13ce018948e7b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af6801266afa4f532d6a13ce018948e7b">&#9670;&#160;</a></span>GetDefaultCommandQueue()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -903,8 +903,12 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>PipelineResourceSign
         <tr>
           <td class="memname">virtual XII_ALWAYS_INLINE <a class="el" href="../../d1/dd2/classxii_g_a_l_command_queue.html">xiiGALCommandQueue</a> * xiiGALDeviceD3D11::GetDefaultCommandQueue </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../d7/d55/structxii_bitflags.html">xiiBitflags</a>&lt; <a class="el" href="../../d7/db4/structxii_g_a_l_command_queue_type.html">xiiGALCommandQueueType</a> &gt;</td>          <td class="paramname"><span class="paramname"><em>queueType</em></span></td><td>)</td>
-          <td> const</td>
+          <td class="paramtype"><a class="el" href="../../d7/d55/structxii_bitflags.html">xiiBitflags</a>&lt; <a class="el" href="../../d7/db4/structxii_g_a_l_command_queue_type.html">xiiGALCommandQueueType</a> &gt;</td>          <td class="paramname"><span class="paramname"><em>queueType</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>bAllowGraphicsCommandQueueFallback</em></span>&#160;) const</td>
         </tr>
       </table>
   </td>
@@ -923,7 +927,7 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>PipelineResourceSign
 </dl>
 <dl class="section note"><dt>Note</dt><dd>The default graphics queue is guaranteed to exist, for a successful device initialization. </dd></dl>
 
-<p>Implements <a class="el" href="../../d5/d19/classxii_g_a_l_device.html#a7f6b7e1de45ce44addf8bdce598099e3">xiiGALDevice</a>.</p>
+<p>Implements <a class="el" href="../../d5/d19/classxii_g_a_l_device.html#aec36b8ab2b91fabf44b348eb6d451204">xiiGALDevice</a>.</p>
 
 </div>
 </div>
@@ -949,7 +953,7 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>PipelineResourceSign
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000086">Todo</a></b></dt><dd>GraphicsD3D11: Select best adapter ID by default, based on memory size, number of command queues, and prefer Discrete over Integrated over Software adapters. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000085">Todo</a></b></dt><dd>GraphicsD3D11: Select best adapter ID by default, based on memory size, number of command queues, and prefer Discrete over Integrated over Software adapters. </dd></dl>
 
 </div>
 </div>
@@ -1002,8 +1006,8 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>PipelineResourceSign
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000087">Todo</a></b></dt><dd>Idle all command queues. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000088">Todo</a></b></dt><dd>Release stale resources. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000086">Todo</a></b></dt><dd>Idle all command queues. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000087">Todo</a></b></dt><dd>Release stale resources. </dd></dl>
 
 </div>
 </div>
@@ -1017,7 +1021,7 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>PipelineResourceSign
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d2/d11/classxii_g_a_l_device_d3_d11.html">xiiGALDeviceD3D11</a></li>
-    <li class="footer">Generated on Sat Oct 19 2024 17:09:06 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Sat Nov 23 2024 18:10:00 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

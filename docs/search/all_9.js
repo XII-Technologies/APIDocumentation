@@ -55,7 +55,7 @@ var searchData=
   ['horizontalmirrorrotate270_52',['HorizontalMirrorRotate270',['../d9/d2c/structxii_g_a_l_surface_transform.html#a79c57cb47773dc230f242eb53adc9148a9b28430a50a86d6771196225b1a27c1b',1,'xiiGALSurfaceTransform']]],
   ['horizontalmirrorrotate90_53',['HorizontalMirrorRotate90',['../d9/d2c/structxii_g_a_l_surface_transform.html#a79c57cb47773dc230f242eb53adc9148ac6c999fec560dd4ec22304c0a3fbd1c0',1,'xiiGALSurfaceTransform']]],
   ['host_54',['Host',['../dc/d29/structxii_g_a_l_pipeline_stage_flags.html#ab114e9a33a63968b73bdf79069b73282abee34e0bf3e7d627bdc3ee62121dbf48',1,'xiiGALPipelineStageFlags']]],
-  ['hostcoherent_55',['HostCoherent',['../d9/d57/structxii_g_a_l_memory_properties.html#a2d89adcf1d3020c1ffd5da16f0bfa394a07ddca9044a994676dcc92b033061784',1,'xiiGALMemoryProperties']]],
+  ['hostcoherent_55',['HostCoherent',['../d7/dbf/structxii_g_a_l_memory_property_flags.html#ac12ad026b44b657bd261c04c18856127a546c158d526b259861872dbffaa9a41c',1,'xiiGALMemoryPropertyFlags']]],
   ['hostread_56',['HostRead',['../d7/d8d/structxii_g_a_l_access_flags.html#a4c4d72bc05e2a6cd4819337ffa7f6b9aa8af07b7842ef100abaf98c9e7e862755',1,'xiiGALAccessFlags']]],
   ['hostwrite_57',['HostWrite',['../d7/d8d/structxii_g_a_l_access_flags.html#a4c4d72bc05e2a6cd4819337ffa7f6b9aae276c486764d0f838efea625b353d404',1,'xiiGALAccessFlags']]],
   ['hotpink_58',['HotPink',['../d3/de6/classxii_color.html#adece3e18d9acb2938dffeedbced9e611',1,'xiiColor']]],
