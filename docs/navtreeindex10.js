@@ -1,6 +1,5 @@
 var NAVTREEINDEX10 =
 {
-"d3/d28/structxii_g_a_l_m_s_a_a_sample_count.html#a4d174563bcfff207aa4b781b51a206b5aca1e3a1fee2adc8b284400a91968ed96":[6,0,892,0,5],
 "d3/d28/structxii_g_a_l_m_s_a_a_sample_count.html#a4d174563bcfff207aa4b781b51a206b5af0c75846cedbdd34bc42f7e9f87c7f5d":[6,0,892,0,3],
 "d3/d29/classxii_qt_category_proxy.html":[6,0,1697],
 "d3/d29/structxii_exposed_parameter.html":[6,0,682],
@@ -249,5 +248,6 @@ var NAVTREEINDEX10 =
 "d3/d95/classxii_mesh_asset_document.html":[6,0,1408],
 "d3/d95/classxii_mesh_asset_document.html#a49ecf3dd8dc7b3ad2358b17f32bede21":[6,0,1408,0],
 "d3/d95/classxii_mesh_asset_document.html#a563cfe35ec38b7d33371dfab8673c880":[6,0,1408,2],
-"d3/d95/classxii_mesh_asset_document.html#a77662f4a5d2970cbe4ec15c6f6138e0b":[6,0,1408,1]
+"d3/d95/classxii_mesh_asset_document.html#a77662f4a5d2970cbe4ec15c6f6138e0b":[6,0,1408,1],
+"d3/d96/classxii_logic_or_anim_node.html":[6,0,1324]
 };

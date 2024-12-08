@@ -134,10 +134,9 @@ var NAVTREEINDEX8 =
 "d2/da7/structxii_delegate_3_01_r_07_args_8_8_8_08_00_01_data_size_01_4.html#adbc952bec8337477a111e886c211dbba":[6,0,535,10],
 "d2/da8/classxii_collection_asset_data.html":[6,0,330],
 "d2/da9/classxii_g_a_l_buffer_d3_d12.html":[6,0,783],
-"d2/da9/classxii_g_a_l_buffer_d3_d12.html#a8b9e1ddd7ae09ba171f3e2a0d03316e9":[6,0,783,3],
-"d2/da9/classxii_g_a_l_buffer_d3_d12.html#aa25e239e8fc48b2d7686ea3894f37834":[6,0,783,0],
-"d2/da9/classxii_g_a_l_buffer_d3_d12.html#abd9fc2b03d02c1aba20b11883d593eca":[6,0,783,2],
-"d2/da9/classxii_g_a_l_buffer_d3_d12.html#acaeb658eab8cc623f056ee67722897eb":[6,0,783,1],
+"d2/da9/classxii_g_a_l_buffer_d3_d12.html#a3a7fd6c025a911fb1aec517fa03f1977":[6,0,783,2],
+"d2/da9/classxii_g_a_l_buffer_d3_d12.html#a4e17561d751db1fb15bf54f962433e3f":[6,0,783,1],
+"d2/da9/classxii_g_a_l_buffer_d3_d12.html#a98a7a5b41f896ede038f02ec27c168ae":[6,0,783,0],
 "d2/da9/structxii_object_mode.html":[6,0,1513],
 "d2/daa/classxii_cloth_sheet_renderer.html":[6,0,324],
 "d2/daa/classxii_property_anim_object_manager.html":[6,0,1654],
@@ -249,5 +248,6 @@ var NAVTREEINDEX8 =
 "d2/de1/structxii_g_a_l_texture_format.html#a4ebed18ce152a1ef73a0afa6ae6e767ba408a52874916b603cb17134d2b62e707":[6,0,1043,0,74],
 "d2/de1/structxii_g_a_l_texture_format.html#a4ebed18ce152a1ef73a0afa6ae6e767ba409af1930901a214cd0c5ada254f07b5":[6,0,1043,0,31],
 "d2/de1/structxii_g_a_l_texture_format.html#a4ebed18ce152a1ef73a0afa6ae6e767ba43de51629bb2b8c61fc49c7bf50d26ab":[6,0,1043,0,65],
-"d2/de1/structxii_g_a_l_texture_format.html#a4ebed18ce152a1ef73a0afa6ae6e767ba44c4b1a74237130c5209be6c6aeaa3e9":[6,0,1043,0,26]
+"d2/de1/structxii_g_a_l_texture_format.html#a4ebed18ce152a1ef73a0afa6ae6e767ba44c4b1a74237130c5209be6c6aeaa3e9":[6,0,1043,0,26],
+"d2/de1/structxii_g_a_l_texture_format.html#a4ebed18ce152a1ef73a0afa6ae6e767ba467ef9dc3855b076a874f94730f56433":[6,0,1043,0,61]
 };

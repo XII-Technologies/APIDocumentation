@@ -1,6 +1,5 @@
 var NAVTREEINDEX25 =
 {
-"d7/dd0/structxii_collection_entry.html#aab6abe2c07bfcac20824f9c12fff4802":[6,0,335,0],
 "d7/dd0/structxii_render_data_1_1_caching.html":[6,0,1961,0],
 "d7/dd1/classxii_resource_loader_from_file.html":[6,0,2006],
 "d7/dd1/classxii_resource_loader_from_file.html#a0541d145684d186537ffd7078ca8276b":[6,0,2006,0],
@@ -249,5 +248,6 @@ var NAVTREEINDEX25 =
 "d8/d2c/structxii_physics_cast_result.html":[6,0,1568],
 "d8/d2c/structxii_physics_cast_result.html#a3555955adbbd10d024a0939cea68dc5a":[6,0,1568,1],
 "d8/d2c/structxii_physics_cast_result.html#a4c38be8619d3da1c6260161a57d44990":[6,0,1568,2],
-"d8/d2c/structxii_physics_cast_result.html#a7686293ee3a031df4d7cba366506b692":[6,0,1568,3]
+"d8/d2c/structxii_physics_cast_result.html#a7686293ee3a031df4d7cba366506b692":[6,0,1568,3],
+"d8/d2c/structxii_physics_cast_result.html#aa7f682b60b7f921bc8a61c49eb11d236":[6,0,1568,4]
 };

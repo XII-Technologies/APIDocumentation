@@ -1,6 +1,5 @@
 var NAVTREEINDEX15 =
 {
-"d4/dce/structxii_g_a_l_shader_resource_description.html#a2ea11a5be44cef158ad6103e7c9365fd":[6,0,990,8],
 "d4/dce/structxii_g_a_l_shader_resource_description.html#a48e871d459f5d05848fd0d33f8160249":[6,0,990,2],
 "d4/dce/structxii_g_a_l_shader_resource_description.html#a70512d56d197fd6d0e9a948e1eefe725":[6,0,990,0],
 "d4/dce/structxii_g_a_l_shader_resource_description.html#a7df93eb926fb600bf6d0937199258f31":[6,0,990,5],
@@ -249,5 +248,6 @@ var NAVTREEINDEX15 =
 "d5/d19/classxii_g_a_l_device.html#aa6ebe8e541d7e1c263c5c8d92b190712":[6,0,829,39],
 "d5/d19/classxii_g_a_l_device.html#aad8d90f24286dfae7d44d5cc3e2f6777":[6,0,829,32],
 "d5/d19/classxii_g_a_l_device.html#ab4843ea1f8a11a225d6617c2ac5635b6":[6,0,829,29],
-"d5/d19/classxii_g_a_l_device.html#abcb017ddfc8d7b1279751d306a86fabf":[6,0,829,42]
+"d5/d19/classxii_g_a_l_device.html#abcb017ddfc8d7b1279751d306a86fabf":[6,0,829,42],
+"d5/d19/classxii_g_a_l_device.html#abceabd4c3f69cc202ab40c027c09492e":[6,0,829,34]
 };

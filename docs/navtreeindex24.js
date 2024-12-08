@@ -1,6 +1,5 @@
 var NAVTREEINDEX24 =
 {
-"d7/d75/classxii_asset_processor.html":[6,0,220],
 "d7/d75/classxii_asset_processor.html#a81e6219c01360c0763103efde52d041d":[6,0,220,0],
 "d7/d75/classxii_asset_processor.html#a81e6219c01360c0763103efde52d041da5bda814c4aedb126839228f1a3d92f09":[6,0,220,0,1],
 "d7/d75/classxii_asset_processor.html#a81e6219c01360c0763103efde52d041da7b7ecb39b9e110c2a31409a1672bad23":[6,0,220,0,2],
@@ -196,7 +195,7 @@ var NAVTREEINDEX24 =
 "d7/db4/structxii_g_a_l_command_queue_type.html#a47dd1577b4fcd1112a73e9a4798421cbad57343a84b3dd3011c0b8ec9510ea2b3":[6,0,813,1,6],
 "d7/db5/classxii_anim_controller.html":[6,0,139],
 "d7/db5/classxii_g_a_l_texture_d3_d12.html":[6,0,1041],
-"d7/db5/classxii_g_a_l_texture_d3_d12.html#a12bc7a63fb606cc0996970b97a81a4b5":[6,0,1041,0],
+"d7/db5/classxii_g_a_l_texture_d3_d12.html#a260218d6978104c3e7bc40101640b5c4":[6,0,1041,0],
 "d7/db6/structxii_decal_mode.html":[6,0,513],
 "d7/dbb/classxii_resource_loader_from_memory.html":[6,0,2007],
 "d7/dbb/classxii_resource_loader_from_memory.html#a7c7bd293c27628640c93777ce6329b35":[6,0,2007,1],
@@ -229,8 +228,8 @@ var NAVTREEINDEX24 =
 "d7/dc1/structxii_time.html#ad9ed4fa028711c7c43d4da30bbd88203":[6,0,2417,0],
 "d7/dc1/structxii_time.html#af3ccbc031f3f975851f2952c8482c95e":[6,0,2417,8],
 "d7/dc2/classxii_g_a_l_query_d3_d12.html":[6,0,920],
-"d7/dc2/classxii_g_a_l_query_d3_d12.html#a3ae541fc9d671b4d3dbc10bea3eda04f":[6,0,920,1],
-"d7/dc2/classxii_g_a_l_query_d3_d12.html#a73afa387be24c2fd5cb1c6064ee72d23":[6,0,920,0],
+"d7/dc2/classxii_g_a_l_query_d3_d12.html#a3f5d5d5f1c08070a7f83409a4181034f":[6,0,920,1],
+"d7/dc2/classxii_g_a_l_query_d3_d12.html#a98c24aa16c17514469bb591233e09c1f":[6,0,920,0],
 "d7/dc4/classxii_view_picking_msg_to_engine.html":[6,0,2544],
 "d7/dc7/classxii_reload_resource_msg_to_engine.html":[6,0,1946],
 "d7/dc7/structxii_g_a_l_swap_chain_creation_description.html":[6,0,1026],
@@ -249,5 +248,6 @@ var NAVTREEINDEX24 =
 "d7/dcb/classxii_qt_subsystems_widget.html":[6,0,1873],
 "d7/dd0/classxii_anim_graph.html":[6,0,140],
 "d7/dd0/structxii_collection_entry.html":[6,0,335],
-"d7/dd0/structxii_collection_entry.html#a9e9dee021d94e0e995d8698a64246e3d":[6,0,335,1]
+"d7/dd0/structxii_collection_entry.html#a9e9dee021d94e0e995d8698a64246e3d":[6,0,335,1],
+"d7/dd0/structxii_collection_entry.html#aab6abe2c07bfcac20824f9c12fff4802":[6,0,335,0]
 };

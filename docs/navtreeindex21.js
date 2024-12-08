@@ -1,6 +1,5 @@
 var NAVTREEINDEX21 =
 {
-"d6/d89/classxii_world.html#ae066a57f92fab86206c57e07ab246eee":[6,0,2617,64],
 "d6/d89/classxii_world.html#ae1895dfef2aed40956f7d51e4eb83a2e":[6,0,2617,37],
 "d6/d89/classxii_world.html#ae22d60922225ba030a2710834c15a518":[6,0,2617,15],
 "d6/d89/classxii_world.html#ae5da7c8d2ee490b687d3e15920f1c175":[6,0,2617,39],
@@ -145,7 +144,7 @@ var NAVTREEINDEX21 =
 "d6/da3/classxii_visual_script_coroutine_allocator.html":[6,0,2567],
 "d6/da3/classxii_visual_script_coroutine_allocator.html#a22d30937fcba1475a21520c21b14ac0e":[6,0,2567,0],
 "d6/da4/classxii_g_a_l_pipeline_resource_signature_d3_d12.html":[6,0,901],
-"d6/da4/classxii_g_a_l_pipeline_resource_signature_d3_d12.html#af49b918f5aace8e86b8b8191b6c923dd":[6,0,901,0],
+"d6/da4/classxii_g_a_l_pipeline_resource_signature_d3_d12.html#a40b78e72c7b473ee67b39fddffc420f1":[6,0,901,0],
 "d6/da6/classxii_g_a_l_texture_view_null.html":[6,0,1058],
 "d6/da6/classxii_manipulator_manager.html":[6,0,1357],
 "d6/da6/classxii_qt_visual_shader_scene.html":[6,0,1898],
@@ -249,5 +248,6 @@ var NAVTREEINDEX21 =
 "d6/db1/classxii_o_s_thread.html#a3a410ddef5a0f4c85ef16ddd8c009016":[6,0,1538,2],
 "d6/db1/classxii_o_s_thread.html#a9fbb6bcdde566264da1d8e10bb62b887":[6,0,1538,4],
 "d6/db1/classxii_o_s_thread.html#af55ef206c959b2db5fc5bace02ed2268":[6,0,1538,1],
-"d6/db3/classxii_dynamic_quadtree.html":[6,0,611]
+"d6/db3/classxii_dynamic_quadtree.html":[6,0,611],
+"d6/db3/classxii_dynamic_quadtree.html#a0c664ff1d98c64e0e8f1eed24b1d5ef1":[6,0,611,0]
 };

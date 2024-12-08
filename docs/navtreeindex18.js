@@ -1,6 +1,5 @@
 var NAVTREEINDEX18 =
 {
-"d5/dd3/structxii_image_format.html#a005ef22274255637febbc13f075b9e38a0dbff71c2ed68d4a9670466d75cde4c6":[6,0,1222,0,82],
 "d5/dd3/structxii_image_format.html#a005ef22274255637febbc13f075b9e38a0e2c354f8cc58025a635eed475da250b":[6,0,1222,0,93],
 "d5/dd3/structxii_image_format.html#a005ef22274255637febbc13f075b9e38a0e60c64e190443fe9cf4db1e763bd595":[6,0,1222,0,33],
 "d5/dd3/structxii_image_format.html#a005ef22274255637febbc13f075b9e38a0f4e500c70890dd84cd3e3ad1712d2f3":[6,0,1222,0,49],
@@ -249,5 +248,6 @@ var NAVTREEINDEX18 =
 "d5/dfb/classxii_g_a_l_swap_chain_vulkan.html":[6,0,1034],
 "d5/dfb/classxii_g_a_l_swap_chain_vulkan.html#a49f57f61129a0f5302ee1540a0d71c2c":[6,0,1034,3],
 "d5/dfb/classxii_g_a_l_swap_chain_vulkan.html#a4b75e2dd325824e0ea7affea66155e75":[6,0,1034,0],
-"d5/dfb/classxii_g_a_l_swap_chain_vulkan.html#a9e57db9772bdc2c1c26005e2d7a709ea":[6,0,1034,5]
+"d5/dfb/classxii_g_a_l_swap_chain_vulkan.html#a9e57db9772bdc2c1c26005e2d7a709ea":[6,0,1034,5],
+"d5/dfb/classxii_g_a_l_swap_chain_vulkan.html#abf2f34a1d819df481aa4a0b5df07753f":[6,0,1034,1]
 };

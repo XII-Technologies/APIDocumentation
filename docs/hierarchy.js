@@ -8086,7 +8086,6 @@ var hierarchy =
     [ "xiiUniquePtr< xiiExtractor >", "d9/d4a/classxii_unique_ptr.html", null ],
     [ "xiiUniquePtr< xiiFileSystemMirrorType >", "d9/d4a/classxii_unique_ptr.html", null ],
     [ "xiiUniquePtr< xiiFrameDataProviderBase >", "d9/d4a/classxii_unique_ptr.html", null ],
-    [ "xiiUniquePtr< xiiGALCommandListD3D12 >", "d9/d4a/classxii_unique_ptr.html", null ],
     [ "xiiUniquePtr< xiiGALCommandListNull >", "d9/d4a/classxii_unique_ptr.html", null ],
     [ "xiiUniquePtr< xiiGALCommandQueueD3D11 >", "d9/d4a/classxii_unique_ptr.html", null ],
     [ "xiiUniquePtr< xiiGALCommandQueueD3D12 >", "d9/d4a/classxii_unique_ptr.html", null ],

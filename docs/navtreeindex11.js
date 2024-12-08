@@ -1,6 +1,5 @@
 var NAVTREEINDEX11 =
 {
-"d3/d96/classxii_logic_or_anim_node.html":[6,0,1324],
 "d3/d97/classxii_g_a_l_sampler.html":[6,0,964],
 "d3/d97/classxii_g_a_l_sampler.html#af457707b611f98421998dcac1ce52c41":[6,0,964,0],
 "d3/d97/group_8cpp.html":[4,2,1],
@@ -249,5 +248,6 @@ var NAVTREEINDEX11 =
 "d3/de6/classxii_color.html#aeee059293f88def629250c127f65c5d7":[6,0,339,1],
 "d3/de6/classxii_color.html#af0b88696822985d827cc8c9dbb3a6981":[6,0,339,23],
 "d3/de6/classxii_color.html#af80ebfb3a0bb8c103c167391b682cef2":[6,0,339,17],
-"d3/de6/classxii_color.html#afc2650122eaca1c61a2c4780891c057f":[6,0,339,27]
+"d3/de6/classxii_color.html#afc2650122eaca1c61a2c4780891c057f":[6,0,339,27],
+"d3/de8/classxii_image_file_format.html":[6,0,1216]
 };

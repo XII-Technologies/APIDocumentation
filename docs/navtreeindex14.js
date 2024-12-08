@@ -1,6 +1,5 @@
 var NAVTREEINDEX14 =
 {
-"d4/d8d/classxii_data_dir_path.html#a8ecdd242dfa81382dee1757289607e24":[6,0,492,4],
 "d4/d8d/classxii_data_dir_path.html#a98d7a7ad80ea502b8fd862ef8a5e9398":[6,0,492,8],
 "d4/d8d/classxii_data_dir_path.html#ac3eb3f7f0a8586dd05c53d753a0ded73":[6,0,492,11],
 "d4/d8d/classxii_data_dir_path.html#ac6b2d0027fbcfc08c6d5ce0a8647e1d6":[6,0,492,10],
@@ -249,5 +248,6 @@ var NAVTREEINDEX14 =
 "d4/dcb/classxii_phantom_function_property.html#ae3c4780b555fd2701fc5deb3ce43f30a":[6,0,1560,5],
 "d4/dcc/classxii_transform_gizmo_action.html":[6,0,2439],
 "d4/dce/structxii_g_a_l_shader_resource_description.html":[6,0,990],
-"d4/dce/structxii_g_a_l_shader_resource_description.html#a1e7cd32ef8a66023150700a629d9d614":[6,0,990,7]
+"d4/dce/structxii_g_a_l_shader_resource_description.html#a1e7cd32ef8a66023150700a629d9d614":[6,0,990,7],
+"d4/dce/structxii_g_a_l_shader_resource_description.html#a2ea11a5be44cef158ad6103e7c9365fd":[6,0,990,8]
 };
