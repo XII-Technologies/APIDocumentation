@@ -1,0 +1,537 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.11.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<!-- BEGIN opengraph metadata -->
+<meta property="og:title" content="XII" />
+<meta property="og:image" content="XII-Logo.png" />
+<meta property="og:description" content="An advanced high-performance simulation engine." />
+<meta property="og:url" content="https://www.xiitechnologies.com" />
+<!-- END opengraph metadata -->
+<!-- BEGIN twitter metadata -->
+<meta name="twitter:image:src" content="XII-Logo.png" />
+<meta name="twitter:title" content="XII" />
+<meta name="twitter:description" content="An advanced high-performance simulation engine." />
+<!-- END twitter metadata -->
+<title>XII: xiiGALResourceFormat Struct Reference</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link rel="icon" type="image/svg+xml" href="XII-Logo.png"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="../../doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="../../toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../custom.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="../../custom-alternative.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<a href="https://github.com/XII-Technologies/APIDocumentation" class="github-corner" title="View source on GitHub" target="_blank" rel="noopener noreferrer">
+    <svg viewBox="0 0 250 250" width="40" height="40" style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+    <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="../../XII-Logo.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">XII
+   &#160;<span id="projectnumber">1.0.0</span>
+   </div>
+   <div id="projectbrief">A high-performance simulation engine.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(1); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.html','Search',true);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('de/d10/structxii_g_a_l_resource_format.html','../../'); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="../../d2/d23/structxii_g_a_l_resource_format-members.html">List of all members</a>  </div>
+  <div class="headertitle"><div class="title">xiiGALResourceFormat Struct Reference</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>This describes the available texture formats and generally mirrors the DXGI_FORMAT enumeratinon. The table below provides detailed information on each format. Most of these formats are widely supported by all modern APIs (DX10+, OpenGL3.3+ and OpenGLES3.0+). Specific requirements are additionally indicated.  
+ <a href="#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="../../d0/d29/_graphics_types_8h_source.html">GraphicsTypes.h</a>&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for xiiGALResourceFormat:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d5/d5e/structxii_g_a_l_resource_format__inherit__graph.svg" width="264" height="110"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">legend</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a85df1b2fc240485387136c2211fcebf6" id="r_a85df1b2fc240485387136c2211fcebf6"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a85df1b2fc240485387136c2211fcebf6">Enum</a> : StorageType { <br />
+&#160;&#160;<a class="el" href="#a85df1b2fc240485387136c2211fcebf6a4b2176c7551390ff705982a036704624">Unknown</a> = 0U
+, <a class="el" href="#a85df1b2fc240485387136c2211fcebf6a55eae384f77374512eceb5037af21eeb">RGBA32Typeless</a>
+, <a class="el" href="#a85df1b2fc240485387136c2211fcebf6a4d697a8d08775914c24a9eb1a9ab1a14">RGBA32Float</a>
+, <a class="el" href="#a85df1b2fc240485387136c2211fcebf6a78d94bc07f499c2ca4c14ecc4b7d24cf">RGBA32UInt</a>
+, <br />
+&#160;&#160;<a class="el" href="#a85df1b2fc240485387136c2211fcebf6a4f6e154f3586389e896e4f00d9152f3d">RGBA32SInt</a>
+, <a class="el" href="#a85df1b2fc240485387136c2211fcebf6a91cddf9f5d6f79e324b11b57a203d967">RGB32Typeless</a>
+, <a class="el" href="#a85df1b2fc240485387136c2211fcebf6a8922cc0123638bccb643e5d48bb7b0fc">RGB32Float</a>
+, <a class="el" href="#a85df1b2fc240485387136c2211fcebf6acc4a79f6d441e14ae4e83038bf45f7f8">RGB32UInt</a>
+, <br />
+&#160;&#160;<a class="el" href="#a85df1b2fc240485387136c2211fcebf6a1ec230084fcb64d802bb0224b5bc4789">RGB32SInt</a>
+, <a class="el" href="#a85df1b2fc240485387136c2211fcebf6ac6d16ee050ba166a258eb5ce42f257de">RGBA16Typeless</a>
+, <a class="el" href="#a85df1b2fc240485387136c2211fcebf6a262e4575e67c3f5f6e5de29d2982f119">RGBA16Float</a>
+, <a class="el" href="#a85df1b2fc240485387136c2211fcebf6abe7c38d15938590a4a97448b77ed8bad">RGBA16UNormalized</a>
+, <br />
+&#160;&#160;<a class="el" href="#a85df1b2fc240485387136c2211fcebf6a065a818b9ca79ca8153b0dbfe2e033fa">RGBA16UInt</a>
+, <a class="el" href="#a85df1b2fc240485387136c2211fcebf6a8ac9bfa4e6e243762d0020c727012e2d">RGBA16SNormalized</a>
+, <a class="el" href="#a85df1b2fc240485387136c2211fcebf6ad3dec0363c6ea62fecaf45d9adeb89f5">RGBA16SInt</a>
+, <a class="el" href="#a85df1b2fc240485387136c2211fcebf6aa1579275b6c566f2fffbfdb2eb7aa914">RG32Typeless</a>
+, <br />
+&#160;&#160;<a class="el" href="#a85df1b2fc240485387136c2211fcebf6a148a0a4337840e2365b865fd034ab1fa">RG32Float</a>
+, <a class="el" href="#a85df1b2fc240485387136c2211fcebf6a0fd66de3f258521bf3c038ae4b7b8da4">RG32UInt</a>
+, <a class="el" href="#a85df1b2fc240485387136c2211fcebf6afe31febcafcfb8dfbb9ec369d3487fe3">RG32SInt</a>
+, <a class="el" href="#a85df1b2fc240485387136c2211fcebf6af39e25a1e89b44f799d9546d273f0914">R32G8X24Typeless</a>
+, <br />
+&#160;&#160;<a class="el" href="#a85df1b2fc240485387136c2211fcebf6a8c2e2da45ce05e8ce351f50b536ebfaf">D32FloatS8X24UInt</a>
+, <a class="el" href="#a85df1b2fc240485387136c2211fcebf6aea1715cc93c18631d94c2d46aae7a52a">R32FloatX8X24Typeless</a>
+, <a class="el" href="#a85df1b2fc240485387136c2211fcebf6ab7a883be5db0c368c6494b1a1469e1dd">X32TypelessG8X24UInt</a>
+, <a class="el" href="#a85df1b2fc240485387136c2211fcebf6a962d7f30cb1a0f234b5591dc5335589d">RGB10A2Typeless</a>
+, <br />
+&#160;&#160;<a class="el" href="#a85df1b2fc240485387136c2211fcebf6a78ee46e08ced53bc24051e70a508ce0c">RGB10A2UNormalized</a>
+, <a class="el" href="#a85df1b2fc240485387136c2211fcebf6a2998a57edb7f4303f72c6ef659b3e758">RGB10A2UInt</a>
+, <a class="el" href="#a85df1b2fc240485387136c2211fcebf6a3e5fcb782a48c6f1ad158e45fc09a63d">RG11B10Float</a>
+, <a class="el" href="#a85df1b2fc240485387136c2211fcebf6a59da695c5429df3af9d2dd39a5c95c56">RGBA8Typeless</a>
+, <br />
+&#160;&#160;<a class="el" href="#a85df1b2fc240485387136c2211fcebf6a6cdbbbf421c365375996bf24b9c9fc14">RGBA8UNormalized</a>
+, <a class="el" href="#a85df1b2fc240485387136c2211fcebf6adb1828091e69b2e3051f9b541b31e1fc">RGBA8UNormalizedSRGB</a>
+, <a class="el" href="#a85df1b2fc240485387136c2211fcebf6a307ae6edb73134321660e76edb31921c">RGBA8UInt</a>
+, <a class="el" href="#a85df1b2fc240485387136c2211fcebf6a89afccdc1d5ef9fce137657ae7c66262">RGBA8SNormalized</a>
+, <br />
+&#160;&#160;<a class="el" href="#a85df1b2fc240485387136c2211fcebf6acf8fa6d4956c197a5dab4c98fec46f21">RGBA8SInt</a>
+, <a class="el" href="#a85df1b2fc240485387136c2211fcebf6adffba15c6117daed7a79059f12a9c5da">RG16Typeless</a>
+, <a class="el" href="#a85df1b2fc240485387136c2211fcebf6aaf9ebfa638a7ae8a2688f86d9e1a7684">RG16Float</a>
+, <a class="el" href="#a85df1b2fc240485387136c2211fcebf6a5434317b801e7b2215af3f61b5a49800">RG16UNormalized</a>
+, <br />
+&#160;&#160;<a class="el" href="#a85df1b2fc240485387136c2211fcebf6a3bb22a94a1d1d49d798cb68c849b8a5d">RG16UInt</a>
+, <a class="el" href="#a85df1b2fc240485387136c2211fcebf6a65b6f82851e27c05c492cab7cbf2d5a7">RG16SNormalized</a>
+, <a class="el" href="#a85df1b2fc240485387136c2211fcebf6a43b17ed8ebc47871e876da8ce7f6e32d">RG16SInt</a>
+, <a class="el" href="#a85df1b2fc240485387136c2211fcebf6abc48d72f0cfedbe319447a19bbb6015b">R32Typeless</a>
+, <br />
+&#160;&#160;<a class="el" href="#a85df1b2fc240485387136c2211fcebf6a1df5984f97445446434fac12e20bab02">D32Float</a>
+, <a class="el" href="#a85df1b2fc240485387136c2211fcebf6a6ce0ea9bbd46fa1215b75ac58d53a037">R32Float</a>
+, <a class="el" href="#a85df1b2fc240485387136c2211fcebf6abdcb8263cc28d9c06a1c4cf83fdaf083">R32UInt</a>
+, <a class="el" href="#a85df1b2fc240485387136c2211fcebf6a595e7e5353d84a0795b2d1827b98df37">R32SInt</a>
+, <br />
+&#160;&#160;<a class="el" href="#a85df1b2fc240485387136c2211fcebf6a92790a13618079a2c434303f7c4beed1">R24G8Typeless</a>
+, <a class="el" href="#a85df1b2fc240485387136c2211fcebf6a15db2094396466df7fb6c8cde7de7373">D24UNormalizedS8UInt</a>
+, <a class="el" href="#a85df1b2fc240485387136c2211fcebf6ad2333d9a4fac82d63a478c54ecfb477d">R24UNormalizedX8Typeless</a>
+, <a class="el" href="#a85df1b2fc240485387136c2211fcebf6a0c6c7eb82ad2211b9ab7244c2634ba39">X24TypelessG8UInt</a>
+, <br />
+&#160;&#160;<a class="el" href="#a85df1b2fc240485387136c2211fcebf6a8c0365282f997fe6c4fcd82561f24938">RG8Typeless</a>
+, <a class="el" href="#a85df1b2fc240485387136c2211fcebf6a131c49198997ce142f6e8d1c8548c00a">RG8UNormalized</a>
+, <a class="el" href="#a85df1b2fc240485387136c2211fcebf6ae3999cfe3d8886388d3b8264609fe213">RG8UInt</a>
+, <a class="el" href="#a85df1b2fc240485387136c2211fcebf6a452a1d1ab58473420effef711b6d0458">RG8SNormalized</a>
+, <br />
+&#160;&#160;<a class="el" href="#a85df1b2fc240485387136c2211fcebf6a5c60dc774d7ed300aa4834819868eaf7">RG8SInt</a>
+, <a class="el" href="#a85df1b2fc240485387136c2211fcebf6aec6dacaf5b9c397b6dba175b258c7e7c">R16Typeless</a>
+, <a class="el" href="#a85df1b2fc240485387136c2211fcebf6a516eb3de1dcee917911bcfc44fc4bbb2">R16Float</a>
+, <a class="el" href="#a85df1b2fc240485387136c2211fcebf6a92ea1e26b38d3b923dcd54568d7e2047">D16UNormalized</a>
+, <br />
+&#160;&#160;<a class="el" href="#a85df1b2fc240485387136c2211fcebf6ac7eaae6e1a1af449a603dc596a90a17e">R16UNormalized</a>
+, <a class="el" href="#a85df1b2fc240485387136c2211fcebf6a309254e76064372c53beb34c3c8e99df">R16UInt</a>
+, <a class="el" href="#a85df1b2fc240485387136c2211fcebf6a5ecd43e914744400e5a108b7907cb6a6">R16SNormalized</a>
+, <a class="el" href="#a85df1b2fc240485387136c2211fcebf6aa7c2111c996bc497e10ab990986ef017">R16SInt</a>
+, <br />
+&#160;&#160;<a class="el" href="#a85df1b2fc240485387136c2211fcebf6a5c1d57b9a78b0fa4c0731e0c4ff46dde">R8Typeless</a>
+, <a class="el" href="#a85df1b2fc240485387136c2211fcebf6aa92e7435a6e52f78f27dfcc6622b6814">R8UNormalized</a>
+, <a class="el" href="#a85df1b2fc240485387136c2211fcebf6aa892a5b7629740e35f321f7408f4fcfc">R8UInt</a>
+, <a class="el" href="#a85df1b2fc240485387136c2211fcebf6aae60528dc4b6074d5880a7e337ee7bc6">R8SNormalized</a>
+, <br />
+&#160;&#160;<a class="el" href="#a85df1b2fc240485387136c2211fcebf6a7fea53f99a9b26df790b1b15b23904c7">R8SInt</a>
+, <a class="el" href="#a85df1b2fc240485387136c2211fcebf6a1ded17d5a3d7c36a903c974d0626db55">A8UNormalized</a>
+, <a class="el" href="#a85df1b2fc240485387136c2211fcebf6a45bd0d192df69981b2cf31c7697b5550">R1UNormalized</a>
+, <a class="el" href="#a85df1b2fc240485387136c2211fcebf6aea3615144eb93ec66593dad424955d28">RGB9E5SharedExponent</a>
+, <br />
+&#160;&#160;<a class="el" href="#a85df1b2fc240485387136c2211fcebf6aff70898ce796dcf420421611a874ade3">RG8BG8UNormalized</a>
+, <a class="el" href="#a85df1b2fc240485387136c2211fcebf6a718231c8ddba5eec63a428000118ce73">GR8GB8UNormalized</a>
+, <a class="el" href="#a85df1b2fc240485387136c2211fcebf6a3086e9ef16b3dc3b07d96abb98875008">BC1Typeless</a>
+, <a class="el" href="#a85df1b2fc240485387136c2211fcebf6a0ed8c4a35cd2e8398572a6073e31376b">BC1UNormalized</a>
+, <br />
+&#160;&#160;<a class="el" href="#a85df1b2fc240485387136c2211fcebf6af6f0da5798c7f5d48807f372274c9254">BC1UNormalizedSRGB</a>
+, <a class="el" href="#a85df1b2fc240485387136c2211fcebf6a12bee04068650e5d75a86810d189892d">BC2Typeless</a>
+, <a class="el" href="#a85df1b2fc240485387136c2211fcebf6ac811c6e432c57b7903ed33dd47960679">BC2UNormalized</a>
+, <a class="el" href="#a85df1b2fc240485387136c2211fcebf6a378fe425a126dacd6c64962a5b84a141">BC2UNormalizedSRGB</a>
+, <br />
+&#160;&#160;<a class="el" href="#a85df1b2fc240485387136c2211fcebf6aeb794d272394ae236df02fb29b8be8e1">BC3Typeless</a>
+, <a class="el" href="#a85df1b2fc240485387136c2211fcebf6adeb157787820be481757977fbcacd8e9">BC3UNormalized</a>
+, <a class="el" href="#a85df1b2fc240485387136c2211fcebf6a4c67ca1bc6a939d4aa6d54b79f1419c7">BC3UNormalizedSRGB</a>
+, <a class="el" href="#a85df1b2fc240485387136c2211fcebf6ab7f2c690b5ddef0cab5d074b58e3bf02">BC4Typeless</a>
+, <br />
+&#160;&#160;<a class="el" href="#a85df1b2fc240485387136c2211fcebf6ae69ccc423ec6cde74d2021cf8e441390">BC4UNormalized</a>
+, <a class="el" href="#a85df1b2fc240485387136c2211fcebf6a5866274be41620e315d5ef7eb7d70d5c">BC4SNormalized</a>
+, <a class="el" href="#a85df1b2fc240485387136c2211fcebf6a08b9f1ce74078da112b870a698233d73">BC5Typeless</a>
+, <a class="el" href="#a85df1b2fc240485387136c2211fcebf6a3dddd26e27c4b82cee0bd2104c83621f">BC5UNormalized</a>
+, <br />
+&#160;&#160;<a class="el" href="#a85df1b2fc240485387136c2211fcebf6a3faf7aceed40c8683f32bd4e40ab1ca6">BC5SNormalized</a>
+, <a class="el" href="#a85df1b2fc240485387136c2211fcebf6a65022011f2a1adb0f81eb10c0e7943b8">B5G6R5UNormalized</a>
+, <a class="el" href="#a85df1b2fc240485387136c2211fcebf6af57fc49df70e2057601930396122e6fd">B5G5R5A1UNormalized</a>
+, <a class="el" href="#a85df1b2fc240485387136c2211fcebf6a86443e2eeebbd81191b5aeac301a8873">BGRA8UNormalized</a>
+, <br />
+&#160;&#160;<a class="el" href="#a85df1b2fc240485387136c2211fcebf6ac65c7f0c6eb49bae37635f48b7b2ff08">BGRX8UNormalized</a>
+, <a class="el" href="#a85df1b2fc240485387136c2211fcebf6ab02c1fbc906d36e39c433feb17e98e24">R10G10B10XRBiasA2UNormalized</a>
+, <a class="el" href="#a85df1b2fc240485387136c2211fcebf6a818d72ec5e3f01652398d3074dcf7a63">BGRA8Typeless</a>
+, <a class="el" href="#a85df1b2fc240485387136c2211fcebf6a2aa3b169115e20db395ee4eb541ec43a">BGRA8UNormalizedSRGB</a>
+, <br />
+&#160;&#160;<a class="el" href="#a85df1b2fc240485387136c2211fcebf6a5a72bdfa580412aff431c5e438a5b05a">BGRX8Typeless</a>
+, <a class="el" href="#a85df1b2fc240485387136c2211fcebf6a8a8c24c75e7673db381092b2ff7dfc47">BGRX8UNormalizedSRGB</a>
+, <a class="el" href="#a85df1b2fc240485387136c2211fcebf6aed76a3481c1740cb9b0b8edd568fc2bc">BC6HTypeless</a>
+, <a class="el" href="#a85df1b2fc240485387136c2211fcebf6a4e0aa9c51fa11e8358732b33799f09d7">BC6HUF16</a>
+, <br />
+&#160;&#160;<a class="el" href="#a85df1b2fc240485387136c2211fcebf6a7177f49b36844b7c6e22e69904586c09">BC6HSF16</a>
+, <a class="el" href="#a85df1b2fc240485387136c2211fcebf6a348fdc782f662697fbf12e3d47bae5f5">BC7Typeless</a>
+, <a class="el" href="#a85df1b2fc240485387136c2211fcebf6af6a015664d2ff69a634e34a9428746a3">BC7UNormalized</a>
+, <a class="el" href="#a85df1b2fc240485387136c2211fcebf6aaaaf2fb01e4a601a2afbeb5545978a16">BC7UNormalizedSRGB</a>
+, <br />
+&#160;&#160;<b>ENUM_COUNT</b>
+, <b>Default</b> = Unknown
+<br />
+ }</td></tr>
+<tr class="separator:a85df1b2fc240485387136c2211fcebf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a362821f2c4c4b9f5f8c4d5edeb8c6806" id="r_a362821f2c4c4b9f5f8c4d5edeb8c6806"><td class="memItemLeft" align="right" valign="top"><a id="a362821f2c4c4b9f5f8c4d5edeb8c6806" name="a362821f2c4c4b9f5f8c4d5edeb8c6806"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>StorageType</b> = xiiUInt16</td></tr>
+<tr class="separator:a362821f2c4c4b9f5f8c4d5edeb8c6806"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a7d9ab44eb71990354a4518e97a0c7faf" id="r_a7d9ab44eb71990354a4518e97a0c7faf"><td class="memItemLeft" align="right" valign="top"><a id="a7d9ab44eb71990354a4518e97a0c7faf" name="a7d9ab44eb71990354a4518e97a0c7faf"></a>
+static XII_ALWAYS_INLINE bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsDepthFormat</b> (<a class="el" href="#a85df1b2fc240485387136c2211fcebf6">xiiGALResourceFormat::Enum</a> format)</td></tr>
+<tr class="memdesc:a7d9ab44eb71990354a4518e97a0c7faf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether the given texture format is a depth format. <br /></td></tr>
+<tr class="separator:a7d9ab44eb71990354a4518e97a0c7faf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2841c3131de3af35ba01e89ab2d8a947" id="r_a2841c3131de3af35ba01e89ab2d8a947"><td class="memItemLeft" align="right" valign="top"><a id="a2841c3131de3af35ba01e89ab2d8a947" name="a2841c3131de3af35ba01e89ab2d8a947"></a>
+static XII_ALWAYS_INLINE bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsStencilFormat</b> (<a class="el" href="#a85df1b2fc240485387136c2211fcebf6">xiiGALResourceFormat::Enum</a> format)</td></tr>
+<tr class="memdesc:a2841c3131de3af35ba01e89ab2d8a947"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether the given texture format is a stencil format. <br /></td></tr>
+<tr class="separator:a2841c3131de3af35ba01e89ab2d8a947"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab610b66311e4877e10c2895a6990a373" id="r_ab610b66311e4877e10c2895a6990a373"><td class="memItemLeft" align="right" valign="top"><a id="ab610b66311e4877e10c2895a6990a373" name="ab610b66311e4877e10c2895a6990a373"></a>
+static XII_ALWAYS_INLINE bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsSrgb</b> (<a class="el" href="#a85df1b2fc240485387136c2211fcebf6">xiiGALResourceFormat::Enum</a> format)</td></tr>
+<tr class="memdesc:ab610b66311e4877e10c2895a6990a373"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether the given texture format is a sRGB format. <br /></td></tr>
+<tr class="separator:ab610b66311e4877e10c2895a6990a373"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>This describes the available texture formats and generally mirrors the DXGI_FORMAT enumeratinon. The table below provides detailed information on each format. Most of these formats are widely supported by all modern APIs (DX10+, OpenGL3.3+ and OpenGLES3.0+). Specific requirements are additionally indicated. </p>
+<dl class="section see"><dt>See also</dt><dd><a href="https://docs.microsoft.com/en-us/windows/win32/api/dxgiformat/ne-dxgiformat-dxgi_format">DXGI_FORMAT enumeration on MSDN.</a>, <a href="https://www.opengl.org/wiki/Image_Format">OpenGL Texture Formats.</a> </dd></dl>
+</div><h2 class="groupheader">Member Enumeration Documentation</h2>
+<a id="a85df1b2fc240485387136c2211fcebf6" name="a85df1b2fc240485387136c2211fcebf6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a85df1b2fc240485387136c2211fcebf6">&#9670;&#160;</a></span>Enum</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="#a85df1b2fc240485387136c2211fcebf6">xiiGALResourceFormat::Enum</a> : StorageType</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a85df1b2fc240485387136c2211fcebf6a4b2176c7551390ff705982a036704624" name="a85df1b2fc240485387136c2211fcebf6a4b2176c7551390ff705982a036704624"></a>Unknown&#160;</td><td class="fielddoc"><p>Unknown format. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a85df1b2fc240485387136c2211fcebf6a55eae384f77374512eceb5037af21eeb" name="a85df1b2fc240485387136c2211fcebf6a55eae384f77374512eceb5037af21eeb"></a>RGBA32Typeless&#160;</td><td class="fielddoc"><p>Four component 128-bit typeless format with 32-bit channels. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a85df1b2fc240485387136c2211fcebf6a4d697a8d08775914c24a9eb1a9ab1a14" name="a85df1b2fc240485387136c2211fcebf6a4d697a8d08775914c24a9eb1a9ab1a14"></a>RGBA32Float&#160;</td><td class="fielddoc"><p>Four-component 128-bit floating-point format with 32-bit channels. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a85df1b2fc240485387136c2211fcebf6a78d94bc07f499c2ca4c14ecc4b7d24cf" name="a85df1b2fc240485387136c2211fcebf6a78d94bc07f499c2ca4c14ecc4b7d24cf"></a>RGBA32UInt&#160;</td><td class="fielddoc"><p>Four-component 128-bit unsigned-integer format with 32-bit channels. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a85df1b2fc240485387136c2211fcebf6a4f6e154f3586389e896e4f00d9152f3d" name="a85df1b2fc240485387136c2211fcebf6a4f6e154f3586389e896e4f00d9152f3d"></a>RGBA32SInt&#160;</td><td class="fielddoc"><p>Four-component 128-bit signed-integer format with 32-bit channels. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a85df1b2fc240485387136c2211fcebf6a91cddf9f5d6f79e324b11b57a203d967" name="a85df1b2fc240485387136c2211fcebf6a91cddf9f5d6f79e324b11b57a203d967"></a>RGB32Typeless&#160;</td><td class="fielddoc"><p>Three-component 96-bit typeless format with 32-bit channels. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a85df1b2fc240485387136c2211fcebf6a8922cc0123638bccb643e5d48bb7b0fc" name="a85df1b2fc240485387136c2211fcebf6a8922cc0123638bccb643e5d48bb7b0fc"></a>RGB32Float&#160;</td><td class="fielddoc"><p>Three-component 96-bit floating-point format with 32-bit channels. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a85df1b2fc240485387136c2211fcebf6acc4a79f6d441e14ae4e83038bf45f7f8" name="a85df1b2fc240485387136c2211fcebf6acc4a79f6d441e14ae4e83038bf45f7f8"></a>RGB32UInt&#160;</td><td class="fielddoc"><p>Three-component 96-bit unsigned-integer format with 32-bit channels. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a85df1b2fc240485387136c2211fcebf6a1ec230084fcb64d802bb0224b5bc4789" name="a85df1b2fc240485387136c2211fcebf6a1ec230084fcb64d802bb0224b5bc4789"></a>RGB32SInt&#160;</td><td class="fielddoc"><p>Three-component 96-bit signed-integer format with 32-bit channels. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a85df1b2fc240485387136c2211fcebf6ac6d16ee050ba166a258eb5ce42f257de" name="a85df1b2fc240485387136c2211fcebf6ac6d16ee050ba166a258eb5ce42f257de"></a>RGBA16Typeless&#160;</td><td class="fielddoc"><p>Four-component 64-bit typeless format with 16-bit channels. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a85df1b2fc240485387136c2211fcebf6a262e4575e67c3f5f6e5de29d2982f119" name="a85df1b2fc240485387136c2211fcebf6a262e4575e67c3f5f6e5de29d2982f119"></a>RGBA16Float&#160;</td><td class="fielddoc"><p>Four-component 64-bit floating-point format with 16-bit channels. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a85df1b2fc240485387136c2211fcebf6abe7c38d15938590a4a97448b77ed8bad" name="a85df1b2fc240485387136c2211fcebf6abe7c38d15938590a4a97448b77ed8bad"></a>RGBA16UNormalized&#160;</td><td class="fielddoc"><p>Four-component 64-bit unsigned-normalized-integer format with 16-bit channels. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a85df1b2fc240485387136c2211fcebf6a065a818b9ca79ca8153b0dbfe2e033fa" name="a85df1b2fc240485387136c2211fcebf6a065a818b9ca79ca8153b0dbfe2e033fa"></a>RGBA16UInt&#160;</td><td class="fielddoc"><p>Four-component 64-bit unsigned-integer format with 16-bit channels. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a85df1b2fc240485387136c2211fcebf6a8ac9bfa4e6e243762d0020c727012e2d" name="a85df1b2fc240485387136c2211fcebf6a8ac9bfa4e6e243762d0020c727012e2d"></a>RGBA16SNormalized&#160;</td><td class="fielddoc"><p>Four-component 64-bit signed-normalized-integer format with 16-bit channels.s. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a85df1b2fc240485387136c2211fcebf6ad3dec0363c6ea62fecaf45d9adeb89f5" name="a85df1b2fc240485387136c2211fcebf6ad3dec0363c6ea62fecaf45d9adeb89f5"></a>RGBA16SInt&#160;</td><td class="fielddoc"><p>Four-component 64-bit signed-integer format with 16-bit channels. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a85df1b2fc240485387136c2211fcebf6aa1579275b6c566f2fffbfdb2eb7aa914" name="a85df1b2fc240485387136c2211fcebf6aa1579275b6c566f2fffbfdb2eb7aa914"></a>RG32Typeless&#160;</td><td class="fielddoc"><p>Two-component 64-bit typeless format with 32-bit channels. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a85df1b2fc240485387136c2211fcebf6a148a0a4337840e2365b865fd034ab1fa" name="a85df1b2fc240485387136c2211fcebf6a148a0a4337840e2365b865fd034ab1fa"></a>RG32Float&#160;</td><td class="fielddoc"><p>Two-component 64-bit floating-point format with 32-bit channels. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a85df1b2fc240485387136c2211fcebf6a0fd66de3f258521bf3c038ae4b7b8da4" name="a85df1b2fc240485387136c2211fcebf6a0fd66de3f258521bf3c038ae4b7b8da4"></a>RG32UInt&#160;</td><td class="fielddoc"><p>Two-component 64-bit unsigned-integer format with 32-bit channels. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a85df1b2fc240485387136c2211fcebf6afe31febcafcfb8dfbb9ec369d3487fe3" name="a85df1b2fc240485387136c2211fcebf6afe31febcafcfb8dfbb9ec369d3487fe3"></a>RG32SInt&#160;</td><td class="fielddoc"><p>Two-component 64-bit signed-integer format with 32-bit channels. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a85df1b2fc240485387136c2211fcebf6af39e25a1e89b44f799d9546d273f0914" name="a85df1b2fc240485387136c2211fcebf6af39e25a1e89b44f799d9546d273f0914"></a>R32G8X24Typeless&#160;</td><td class="fielddoc"><p>Two-component 64-bit typeless format with 32 bits for the R channel and 8 bits for the G channel. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a85df1b2fc240485387136c2211fcebf6a8c2e2da45ce05e8ce351f50b536ebfaf" name="a85df1b2fc240485387136c2211fcebf6a8c2e2da45ce05e8ce351f50b536ebfaf"></a>D32FloatS8X24UInt&#160;</td><td class="fielddoc"><p>Two-component 64-bit format with 32-bit floating-point depth channel and 8-bit stencil channel. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a85df1b2fc240485387136c2211fcebf6aea1715cc93c18631d94c2d46aae7a52a" name="a85df1b2fc240485387136c2211fcebf6aea1715cc93c18631d94c2d46aae7a52a"></a>R32FloatX8X24Typeless&#160;</td><td class="fielddoc"><p>Two-component 64-bit format with 32-bit floating-point R channel ad 8+24 bits of typeless data. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a85df1b2fc240485387136c2211fcebf6ab7a883be5db0c368c6494b1a1469e1dd" name="a85df1b2fc240485387136c2211fcebf6ab7a883be5db0c368c6494b1a1469e1dd"></a>X32TypelessG8X24UInt&#160;</td><td class="fielddoc"><p>Two-component 64-bit format with 32-bit typeless data and 8-bit G channel. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a85df1b2fc240485387136c2211fcebf6a962d7f30cb1a0f234b5591dc5335589d" name="a85df1b2fc240485387136c2211fcebf6a962d7f30cb1a0f234b5591dc5335589d"></a>RGB10A2Typeless&#160;</td><td class="fielddoc"><p>Four-component 32-bit typeles format with 10 bits for the RGB channels and 2 bits for the alpha channel. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a85df1b2fc240485387136c2211fcebf6a78ee46e08ced53bc24051e70a508ce0c" name="a85df1b2fc240485387136c2211fcebf6a78ee46e08ced53bc24051e70a508ce0c"></a>RGB10A2UNormalized&#160;</td><td class="fielddoc"><p>Four-component 32-bit unsigned-normalized-integer format with 10 bits for the RGB channels and 2 bits for the alpha channel. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a85df1b2fc240485387136c2211fcebf6a2998a57edb7f4303f72c6ef659b3e758" name="a85df1b2fc240485387136c2211fcebf6a2998a57edb7f4303f72c6ef659b3e758"></a>RGB10A2UInt&#160;</td><td class="fielddoc"><p>Four-component 32-bit unsigned-integer format with 10 bits for the RGB channels and 2 bits for the alpha channel. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a85df1b2fc240485387136c2211fcebf6a3e5fcb782a48c6f1ad158e45fc09a63d" name="a85df1b2fc240485387136c2211fcebf6a3e5fcb782a48c6f1ad158e45fc09a63d"></a>RG11B10Float&#160;</td><td class="fielddoc"><p>Three-component 32-bit format encoding three partial precision channels using 11 bits for the red and green channels, and 10-bits for the blue channel. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a85df1b2fc240485387136c2211fcebf6a59da695c5429df3af9d2dd39a5c95c56" name="a85df1b2fc240485387136c2211fcebf6a59da695c5429df3af9d2dd39a5c95c56"></a>RGBA8Typeless&#160;</td><td class="fielddoc"><p>Four-component 32-bit typeless format with 8-bit channels. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a85df1b2fc240485387136c2211fcebf6a6cdbbbf421c365375996bf24b9c9fc14" name="a85df1b2fc240485387136c2211fcebf6a6cdbbbf421c365375996bf24b9c9fc14"></a>RGBA8UNormalized&#160;</td><td class="fielddoc"><p>Four-component 32-bit unsigned-normalized-integer format with 8-bit channels. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a85df1b2fc240485387136c2211fcebf6adb1828091e69b2e3051f9b541b31e1fc" name="a85df1b2fc240485387136c2211fcebf6adb1828091e69b2e3051f9b541b31e1fc"></a>RGBA8UNormalizedSRGB&#160;</td><td class="fielddoc"><p>Four-component 32-bit unsigned-normalized-integer sRGB format with 8-bit channels. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a85df1b2fc240485387136c2211fcebf6a307ae6edb73134321660e76edb31921c" name="a85df1b2fc240485387136c2211fcebf6a307ae6edb73134321660e76edb31921c"></a>RGBA8UInt&#160;</td><td class="fielddoc"><p>Four-component 32-bit unsigned-integer format with 8-bit channels. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a85df1b2fc240485387136c2211fcebf6a89afccdc1d5ef9fce137657ae7c66262" name="a85df1b2fc240485387136c2211fcebf6a89afccdc1d5ef9fce137657ae7c66262"></a>RGBA8SNormalized&#160;</td><td class="fielddoc"><p>Four-component 32-bit signed-normalized-integer format with 8-bit channels. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a85df1b2fc240485387136c2211fcebf6acf8fa6d4956c197a5dab4c98fec46f21" name="a85df1b2fc240485387136c2211fcebf6acf8fa6d4956c197a5dab4c98fec46f21"></a>RGBA8SInt&#160;</td><td class="fielddoc"><p>Four-component 32-bit signed-integer format with 8-bit channels. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a85df1b2fc240485387136c2211fcebf6adffba15c6117daed7a79059f12a9c5da" name="a85df1b2fc240485387136c2211fcebf6adffba15c6117daed7a79059f12a9c5da"></a>RG16Typeless&#160;</td><td class="fielddoc"><p>Two-component 32-bit typeless format with 16-bit channels. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a85df1b2fc240485387136c2211fcebf6aaf9ebfa638a7ae8a2688f86d9e1a7684" name="a85df1b2fc240485387136c2211fcebf6aaf9ebfa638a7ae8a2688f86d9e1a7684"></a>RG16Float&#160;</td><td class="fielddoc"><p>Two-component 32-bit half-precision floating-point format with 16-bit channels. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a85df1b2fc240485387136c2211fcebf6a5434317b801e7b2215af3f61b5a49800" name="a85df1b2fc240485387136c2211fcebf6a5434317b801e7b2215af3f61b5a49800"></a>RG16UNormalized&#160;</td><td class="fielddoc"><p>Two-component 32-bit unsigned-normalized-integer format with 16-bit channels. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a85df1b2fc240485387136c2211fcebf6a3bb22a94a1d1d49d798cb68c849b8a5d" name="a85df1b2fc240485387136c2211fcebf6a3bb22a94a1d1d49d798cb68c849b8a5d"></a>RG16UInt&#160;</td><td class="fielddoc"><p>Two-component 32-bit unsigned-integer format with 16-bit channels. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a85df1b2fc240485387136c2211fcebf6a65b6f82851e27c05c492cab7cbf2d5a7" name="a85df1b2fc240485387136c2211fcebf6a65b6f82851e27c05c492cab7cbf2d5a7"></a>RG16SNormalized&#160;</td><td class="fielddoc"><p>Two-component 32-bit signed-normalized-integer format with 16-bit channels. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a85df1b2fc240485387136c2211fcebf6a43b17ed8ebc47871e876da8ce7f6e32d" name="a85df1b2fc240485387136c2211fcebf6a43b17ed8ebc47871e876da8ce7f6e32d"></a>RG16SInt&#160;</td><td class="fielddoc"><p>Two-component 32-bit signed-integer format with 16-bit channels. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a85df1b2fc240485387136c2211fcebf6abc48d72f0cfedbe319447a19bbb6015b" name="a85df1b2fc240485387136c2211fcebf6abc48d72f0cfedbe319447a19bbb6015b"></a>R32Typeless&#160;</td><td class="fielddoc"><p>Single-component 32-bit typeless format. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a85df1b2fc240485387136c2211fcebf6a1df5984f97445446434fac12e20bab02" name="a85df1b2fc240485387136c2211fcebf6a1df5984f97445446434fac12e20bab02"></a>D32Float&#160;</td><td class="fielddoc"><p>Single-component 32-bit floating-point depth format. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a85df1b2fc240485387136c2211fcebf6a6ce0ea9bbd46fa1215b75ac58d53a037" name="a85df1b2fc240485387136c2211fcebf6a6ce0ea9bbd46fa1215b75ac58d53a037"></a>R32Float&#160;</td><td class="fielddoc"><p>Single-component 32-bit floating-point format. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a85df1b2fc240485387136c2211fcebf6abdcb8263cc28d9c06a1c4cf83fdaf083" name="a85df1b2fc240485387136c2211fcebf6abdcb8263cc28d9c06a1c4cf83fdaf083"></a>R32UInt&#160;</td><td class="fielddoc"><p>Single-component 32-bit unsigned-integer format. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a85df1b2fc240485387136c2211fcebf6a595e7e5353d84a0795b2d1827b98df37" name="a85df1b2fc240485387136c2211fcebf6a595e7e5353d84a0795b2d1827b98df37"></a>R32SInt&#160;</td><td class="fielddoc"><p>Single-component 32-bit signed-integer format. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a85df1b2fc240485387136c2211fcebf6a92790a13618079a2c434303f7c4beed1" name="a85df1b2fc240485387136c2211fcebf6a92790a13618079a2c434303f7c4beed1"></a>R24G8Typeless&#160;</td><td class="fielddoc"><p>Two component 32-bit format with 24 bits for the R channel and 8 bits for the G channel. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a85df1b2fc240485387136c2211fcebf6a15db2094396466df7fb6c8cde7de7373" name="a85df1b2fc240485387136c2211fcebf6a15db2094396466df7fb6c8cde7de7373"></a>D24UNormalizedS8UInt&#160;</td><td class="fielddoc"><p>Two component 32-bit format with 24 bits for the unsigned-normalized-integer depth and 8 bits for the stencil. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a85df1b2fc240485387136c2211fcebf6ad2333d9a4fac82d63a478c54ecfb477d" name="a85df1b2fc240485387136c2211fcebf6ad2333d9a4fac82d63a478c54ecfb477d"></a>R24UNormalizedX8Typeless&#160;</td><td class="fielddoc"><p>Two component 32-bit format with 24 bits for the unsigned-normalized-integer data and 8 bits of unreferenced data. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a85df1b2fc240485387136c2211fcebf6a0c6c7eb82ad2211b9ab7244c2634ba39" name="a85df1b2fc240485387136c2211fcebf6a0c6c7eb82ad2211b9ab7244c2634ba39"></a>X24TypelessG8UInt&#160;</td><td class="fielddoc"><p>Two-component 32-bit format with 24 bits of unreferenced data and 8 bits of unsigned-integer data. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a85df1b2fc240485387136c2211fcebf6a8c0365282f997fe6c4fcd82561f24938" name="a85df1b2fc240485387136c2211fcebf6a8c0365282f997fe6c4fcd82561f24938"></a>RG8Typeless&#160;</td><td class="fielddoc"><p>Two-component 16-bit typeless format with 8-bit channels. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a85df1b2fc240485387136c2211fcebf6a131c49198997ce142f6e8d1c8548c00a" name="a85df1b2fc240485387136c2211fcebf6a131c49198997ce142f6e8d1c8548c00a"></a>RG8UNormalized&#160;</td><td class="fielddoc"><p>Two-component 16-bit unsigned-normalized-integer format with 8-bit channels. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a85df1b2fc240485387136c2211fcebf6ae3999cfe3d8886388d3b8264609fe213" name="a85df1b2fc240485387136c2211fcebf6ae3999cfe3d8886388d3b8264609fe213"></a>RG8UInt&#160;</td><td class="fielddoc"><p>Two-component 16-bit unsigned-integer format with 8-bit channels. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a85df1b2fc240485387136c2211fcebf6a452a1d1ab58473420effef711b6d0458" name="a85df1b2fc240485387136c2211fcebf6a452a1d1ab58473420effef711b6d0458"></a>RG8SNormalized&#160;</td><td class="fielddoc"><p>Two-component 16-bit signed-normalized-integer format with 8-bit channels. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a85df1b2fc240485387136c2211fcebf6a5c60dc774d7ed300aa4834819868eaf7" name="a85df1b2fc240485387136c2211fcebf6a5c60dc774d7ed300aa4834819868eaf7"></a>RG8SInt&#160;</td><td class="fielddoc"><p>Two-component 16-bit signed-integer format with 8-bit channels. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a85df1b2fc240485387136c2211fcebf6aec6dacaf5b9c397b6dba175b258c7e7c" name="a85df1b2fc240485387136c2211fcebf6aec6dacaf5b9c397b6dba175b258c7e7c"></a>R16Typeless&#160;</td><td class="fielddoc"><p>Single-component 16-bit typeless format. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a85df1b2fc240485387136c2211fcebf6a516eb3de1dcee917911bcfc44fc4bbb2" name="a85df1b2fc240485387136c2211fcebf6a516eb3de1dcee917911bcfc44fc4bbb2"></a>R16Float&#160;</td><td class="fielddoc"><p>Single-component 16-bit half-precision floating-point format. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a85df1b2fc240485387136c2211fcebf6a92ea1e26b38d3b923dcd54568d7e2047" name="a85df1b2fc240485387136c2211fcebf6a92ea1e26b38d3b923dcd54568d7e2047"></a>D16UNormalized&#160;</td><td class="fielddoc"><p>Single-component 16-bit unsigned-normalized-integer depth format. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a85df1b2fc240485387136c2211fcebf6ac7eaae6e1a1af449a603dc596a90a17e" name="a85df1b2fc240485387136c2211fcebf6ac7eaae6e1a1af449a603dc596a90a17e"></a>R16UNormalized&#160;</td><td class="fielddoc"><p>Single-component 16-bit unsigned-normalized-integer format. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a85df1b2fc240485387136c2211fcebf6a309254e76064372c53beb34c3c8e99df" name="a85df1b2fc240485387136c2211fcebf6a309254e76064372c53beb34c3c8e99df"></a>R16UInt&#160;</td><td class="fielddoc"><p>Single-component 16-bit unsigned-integer format. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a85df1b2fc240485387136c2211fcebf6a5ecd43e914744400e5a108b7907cb6a6" name="a85df1b2fc240485387136c2211fcebf6a5ecd43e914744400e5a108b7907cb6a6"></a>R16SNormalized&#160;</td><td class="fielddoc"><p>Single-component 16-bit signed-normalized-integer format. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a85df1b2fc240485387136c2211fcebf6aa7c2111c996bc497e10ab990986ef017" name="a85df1b2fc240485387136c2211fcebf6aa7c2111c996bc497e10ab990986ef017"></a>R16SInt&#160;</td><td class="fielddoc"><p>Single-component 16-bit signed-integer format. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a85df1b2fc240485387136c2211fcebf6a5c1d57b9a78b0fa4c0731e0c4ff46dde" name="a85df1b2fc240485387136c2211fcebf6a5c1d57b9a78b0fa4c0731e0c4ff46dde"></a>R8Typeless&#160;</td><td class="fielddoc"><p>Single-component 8-bit typeless format. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a85df1b2fc240485387136c2211fcebf6aa92e7435a6e52f78f27dfcc6622b6814" name="a85df1b2fc240485387136c2211fcebf6aa92e7435a6e52f78f27dfcc6622b6814"></a>R8UNormalized&#160;</td><td class="fielddoc"><p>Single-component 8-bit unsigned-normalized-integer format. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a85df1b2fc240485387136c2211fcebf6aa892a5b7629740e35f321f7408f4fcfc" name="a85df1b2fc240485387136c2211fcebf6aa892a5b7629740e35f321f7408f4fcfc"></a>R8UInt&#160;</td><td class="fielddoc"><p>Single-component 8-bit unsigned-integer format. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a85df1b2fc240485387136c2211fcebf6aae60528dc4b6074d5880a7e337ee7bc6" name="a85df1b2fc240485387136c2211fcebf6aae60528dc4b6074d5880a7e337ee7bc6"></a>R8SNormalized&#160;</td><td class="fielddoc"><p>Single-component 8-bit signed-normalized-integer format. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a85df1b2fc240485387136c2211fcebf6a7fea53f99a9b26df790b1b15b23904c7" name="a85df1b2fc240485387136c2211fcebf6a7fea53f99a9b26df790b1b15b23904c7"></a>R8SInt&#160;</td><td class="fielddoc"><p>Single-component 8-bit signed-integer-format format. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a85df1b2fc240485387136c2211fcebf6a1ded17d5a3d7c36a903c974d0626db55" name="a85df1b2fc240485387136c2211fcebf6a1ded17d5a3d7c36a903c974d0626db55"></a>A8UNormalized&#160;</td><td class="fielddoc"><p>Single-component 8-bit unsigned-normalized-integer format for alpha channel only. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a85df1b2fc240485387136c2211fcebf6a45bd0d192df69981b2cf31c7697b5550" name="a85df1b2fc240485387136c2211fcebf6a45bd0d192df69981b2cf31c7697b5550"></a>R1UNormalized&#160;</td><td class="fielddoc"><p>Single-component 1-bit format. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a85df1b2fc240485387136c2211fcebf6aea3615144eb93ec66593dad424955d28" name="a85df1b2fc240485387136c2211fcebf6aea3615144eb93ec66593dad424955d28"></a>RGB9E5SharedExponent&#160;</td><td class="fielddoc"><p>Three partial-precision floating-point numbers sharing single exponent encoded into a 32-bit value. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a85df1b2fc240485387136c2211fcebf6aff70898ce796dcf420421611a874ade3" name="a85df1b2fc240485387136c2211fcebf6aff70898ce796dcf420421611a874ade3"></a>RG8BG8UNormalized&#160;</td><td class="fielddoc"><p>Four-component unsigned-normalized-integer format analogous to UYVY encoding. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a85df1b2fc240485387136c2211fcebf6a718231c8ddba5eec63a428000118ce73" name="a85df1b2fc240485387136c2211fcebf6a718231c8ddba5eec63a428000118ce73"></a>GR8GB8UNormalized&#160;</td><td class="fielddoc"><p>Four-component unsigned-normalized-integer format analogous to YUY2 encoding. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a85df1b2fc240485387136c2211fcebf6a3086e9ef16b3dc3b07d96abb98875008" name="a85df1b2fc240485387136c2211fcebf6a3086e9ef16b3dc3b07d96abb98875008"></a>BC1Typeless&#160;</td><td class="fielddoc"><p>Four-component typeless block-compression format with 1:8 compression ratio. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a85df1b2fc240485387136c2211fcebf6a0ed8c4a35cd2e8398572a6073e31376b" name="a85df1b2fc240485387136c2211fcebf6a0ed8c4a35cd2e8398572a6073e31376b"></a>BC1UNormalized&#160;</td><td class="fielddoc"><p>Four-component unsigned-normalized-integer block-compression format with 5 bits for R, 6 bits for G, 5 bits for <a class="el" href="../../df/d95/class_b.html">B</a>, and 0 or 1 bit for <a class="el" href="../../d8/d4f/class_a.html">A</a> channels. The pixel data is encoded using 8 bytes per 4x4 block (4 bits per pixel) providing 1:8 compression ratio against RGBA8 format. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a85df1b2fc240485387136c2211fcebf6af6f0da5798c7f5d48807f372274c9254" name="a85df1b2fc240485387136c2211fcebf6af6f0da5798c7f5d48807f372274c9254"></a>BC1UNormalizedSRGB&#160;</td><td class="fielddoc"><p>Four-component unsigned-normalized-integer block-compression sRGB format with 5 bits for R, 6 bits for G, 5 bits for <a class="el" href="../../df/d95/class_b.html">B</a>, and 0 or 1 bit for <a class="el" href="../../d8/d4f/class_a.html">A</a> channels. The pixel data is encoded using 8 bytes per 4x4 block (4 bits per pixel) providing 1:8 compression ratio against RGBA8 format. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a85df1b2fc240485387136c2211fcebf6a12bee04068650e5d75a86810d189892d" name="a85df1b2fc240485387136c2211fcebf6a12bee04068650e5d75a86810d189892d"></a>BC2Typeless&#160;</td><td class="fielddoc"><p>Four-component typeless block-compression format with 1:4 compression ratio. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a85df1b2fc240485387136c2211fcebf6ac811c6e432c57b7903ed33dd47960679" name="a85df1b2fc240485387136c2211fcebf6ac811c6e432c57b7903ed33dd47960679"></a>BC2UNormalized&#160;</td><td class="fielddoc"><p>Four-component unsigned-normalized-integer block-compression format with 5 bits for R, 6 bits for G, 5 bits for <a class="el" href="../../df/d95/class_b.html">B</a> channels and 4 bits for low-coherent separate <a class="el" href="../../d8/d4f/class_a.html">A</a> channel. The pixel data is encoded using 16 bytes per 4x4 block (8 bits per pixel) providing 1:4 compression ratio against RGBA8 format. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a85df1b2fc240485387136c2211fcebf6a378fe425a126dacd6c64962a5b84a141" name="a85df1b2fc240485387136c2211fcebf6a378fe425a126dacd6c64962a5b84a141"></a>BC2UNormalizedSRGB&#160;</td><td class="fielddoc"><p>Four-component signed-normalized-integer block-compression sRGB format with 5 bits for R, 6 bits for G, 5 bits for <a class="el" href="../../df/d95/class_b.html">B</a> channels, and 4 bits for low-coherent separate <a class="el" href="../../d8/d4f/class_a.html">A</a> channel. The pixel data is encoded using 16 bytes per 4x4 block (8 bits per pixel) providing 1:4 compression ratio against RGBA8 format. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a85df1b2fc240485387136c2211fcebf6aeb794d272394ae236df02fb29b8be8e1" name="a85df1b2fc240485387136c2211fcebf6aeb794d272394ae236df02fb29b8be8e1"></a>BC3Typeless&#160;</td><td class="fielddoc"><p>Four-component typeless block-compression format with 1:4 compression ratio. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a85df1b2fc240485387136c2211fcebf6adeb157787820be481757977fbcacd8e9" name="a85df1b2fc240485387136c2211fcebf6adeb157787820be481757977fbcacd8e9"></a>BC3UNormalized&#160;</td><td class="fielddoc"><p>Four-component unsigned-normalized-integer block-compression format with 5 bits for R, 6 bits for G, 5 bits for <a class="el" href="../../df/d95/class_b.html">B</a> channels, and 8 bits for highly-coherent <a class="el" href="../../d8/d4f/class_a.html">A</a> channel. The pixel data is encoded using 16 bytes per 4x4 block (8 bits per pixel) providing 1:4 compression ratio against RGBA8 format. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a85df1b2fc240485387136c2211fcebf6a4c67ca1bc6a939d4aa6d54b79f1419c7" name="a85df1b2fc240485387136c2211fcebf6a4c67ca1bc6a939d4aa6d54b79f1419c7"></a>BC3UNormalizedSRGB&#160;</td><td class="fielddoc"><p>Four-component unsigned-normalized-integer block-compression sRGB format with 5 bits for R, 6 bits for G, 5 bits for <a class="el" href="../../df/d95/class_b.html">B</a>, and 8 bits for highly-coherent <a class="el" href="../../d8/d4f/class_a.html">A</a> channel. The pixel data is encoded using 16 bytes per 4x4 block (8 bits per pixel) providing 1:4 compression ratio against RGBA8 format. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a85df1b2fc240485387136c2211fcebf6ab7f2c690b5ddef0cab5d074b58e3bf02" name="a85df1b2fc240485387136c2211fcebf6ab7f2c690b5ddef0cab5d074b58e3bf02"></a>BC4Typeless&#160;</td><td class="fielddoc"><p>One-component typeless block-compression format with 1:2 compression ratio. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a85df1b2fc240485387136c2211fcebf6ae69ccc423ec6cde74d2021cf8e441390" name="a85df1b2fc240485387136c2211fcebf6ae69ccc423ec6cde74d2021cf8e441390"></a>BC4UNormalized&#160;</td><td class="fielddoc"><p>One-component unsigned-normalized-integer block-compression format with 8 bits for R channel. The pixel data is encoded using 8 bytes per 4x4 block (4 bits per pixel) providing 1:2 compression ratio against R8 format. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a85df1b2fc240485387136c2211fcebf6a5866274be41620e315d5ef7eb7d70d5c" name="a85df1b2fc240485387136c2211fcebf6a5866274be41620e315d5ef7eb7d70d5c"></a>BC4SNormalized&#160;</td><td class="fielddoc"><p>One-component signed-normalized-integer block-compression format with 8 bits for R channel. The pixel data is encoded using 8 bytes per 4x4 block (4 bits per pixel) providing 1:2 compression ratio against R8 format. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a85df1b2fc240485387136c2211fcebf6a08b9f1ce74078da112b870a698233d73" name="a85df1b2fc240485387136c2211fcebf6a08b9f1ce74078da112b870a698233d73"></a>BC5Typeless&#160;</td><td class="fielddoc"><p>Two-component typeless block-compression format with 1:2 compression ratio. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a85df1b2fc240485387136c2211fcebf6a3dddd26e27c4b82cee0bd2104c83621f" name="a85df1b2fc240485387136c2211fcebf6a3dddd26e27c4b82cee0bd2104c83621f"></a>BC5UNormalized&#160;</td><td class="fielddoc"><p>Two-component unsigned-normalized-integer block-compression format with 8 bits for R and 8 bits for G channel. The pixel data is encoded using 16 bytes per 4x4 block (8 bits per pixel) providing 1:2 compression ratio against RG8 format. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a85df1b2fc240485387136c2211fcebf6a3faf7aceed40c8683f32bd4e40ab1ca6" name="a85df1b2fc240485387136c2211fcebf6a3faf7aceed40c8683f32bd4e40ab1ca6"></a>BC5SNormalized&#160;</td><td class="fielddoc"><p>Two-component signed-normalized-integer block-compression format with 8 bits for R and 8 bits for G channel. The pixel data is encoded using 16 bytes per 4x4 block (8 bits per pixel) providing 1:2 compression ratio against RG8 format. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a85df1b2fc240485387136c2211fcebf6a65022011f2a1adb0f81eb10c0e7943b8" name="a85df1b2fc240485387136c2211fcebf6a65022011f2a1adb0f81eb10c0e7943b8"></a>B5G6R5UNormalized&#160;</td><td class="fielddoc"><p>Three-component 16-bit unsigned-normalized-integer format with 5 bits for <a class="el" href="../../df/d95/class_b.html">B</a>, 6 bits for G, and 5 bits for R channels. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a85df1b2fc240485387136c2211fcebf6af57fc49df70e2057601930396122e6fd" name="a85df1b2fc240485387136c2211fcebf6af57fc49df70e2057601930396122e6fd"></a>B5G5R5A1UNormalized&#160;</td><td class="fielddoc"><p>Four-component 16-bit unsigned-normalized-integer format with 5 bits for each color channel and a 1-bit alpha channel. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a85df1b2fc240485387136c2211fcebf6a86443e2eeebbd81191b5aeac301a8873" name="a85df1b2fc240485387136c2211fcebf6a86443e2eeebbd81191b5aeac301a8873"></a>BGRA8UNormalized&#160;</td><td class="fielddoc"><p>Four-component 32-bit unsigned-normalized-integer format with 8 bits for each channel. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a85df1b2fc240485387136c2211fcebf6ac65c7f0c6eb49bae37635f48b7b2ff08" name="a85df1b2fc240485387136c2211fcebf6ac65c7f0c6eb49bae37635f48b7b2ff08"></a>BGRX8UNormalized&#160;</td><td class="fielddoc"><p>Four-component 32-bit unsigned-normalized-integer format with 8 bits for each color channel and 8 bits unused. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a85df1b2fc240485387136c2211fcebf6ab02c1fbc906d36e39c433feb17e98e24" name="a85df1b2fc240485387136c2211fcebf6ab02c1fbc906d36e39c433feb17e98e24"></a>R10G10B10XRBiasA2UNormalized&#160;</td><td class="fielddoc"><p>Four-component 32-bit 2.8-biased fixed-point format with 10 bits for each color channel and a 2-bit alpha channel. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a85df1b2fc240485387136c2211fcebf6a818d72ec5e3f01652398d3074dcf7a63" name="a85df1b2fc240485387136c2211fcebf6a818d72ec5e3f01652398d3074dcf7a63"></a>BGRA8Typeless&#160;</td><td class="fielddoc"><p>Four-component 32-bit typeless format with 8 bits for each channel. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a85df1b2fc240485387136c2211fcebf6a2aa3b169115e20db395ee4eb541ec43a" name="a85df1b2fc240485387136c2211fcebf6a2aa3b169115e20db395ee4eb541ec43a"></a>BGRA8UNormalizedSRGB&#160;</td><td class="fielddoc"><p>Four-component 32-bit unsigned-normalized sRGB format with 8 bits for each channel. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a85df1b2fc240485387136c2211fcebf6a5a72bdfa580412aff431c5e438a5b05a" name="a85df1b2fc240485387136c2211fcebf6a5a72bdfa580412aff431c5e438a5b05a"></a>BGRX8Typeless&#160;</td><td class="fielddoc"><p>Four-component 32-bit typeless format that with 8 bits for each color channel, and 8 bits are unused. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a85df1b2fc240485387136c2211fcebf6a8a8c24c75e7673db381092b2ff7dfc47" name="a85df1b2fc240485387136c2211fcebf6a8a8c24c75e7673db381092b2ff7dfc47"></a>BGRX8UNormalizedSRGB&#160;</td><td class="fielddoc"><p>Four-component 32-bit unsigned-normalized sRGB format with 8 bits for each color channel, and 8 bits are unused. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a85df1b2fc240485387136c2211fcebf6aed76a3481c1740cb9b0b8edd568fc2bc" name="a85df1b2fc240485387136c2211fcebf6aed76a3481c1740cb9b0b8edd568fc2bc"></a>BC6HTypeless&#160;</td><td class="fielddoc"><p>Three-component typeless block-compression format. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a85df1b2fc240485387136c2211fcebf6a4e0aa9c51fa11e8358732b33799f09d7" name="a85df1b2fc240485387136c2211fcebf6a4e0aa9c51fa11e8358732b33799f09d7"></a>BC6HUF16&#160;</td><td class="fielddoc"><p>Three-component unsigned half-precision floating-point format with 16 bits for each channel. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a85df1b2fc240485387136c2211fcebf6a7177f49b36844b7c6e22e69904586c09" name="a85df1b2fc240485387136c2211fcebf6a7177f49b36844b7c6e22e69904586c09"></a>BC6HSF16&#160;</td><td class="fielddoc"><p>Three-channel signed half-precision floating-point format with 16 bits per each channel. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a85df1b2fc240485387136c2211fcebf6a348fdc782f662697fbf12e3d47bae5f5" name="a85df1b2fc240485387136c2211fcebf6a348fdc782f662697fbf12e3d47bae5f5"></a>BC7Typeless&#160;</td><td class="fielddoc"><p>Four-component typeless block-compression format. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a85df1b2fc240485387136c2211fcebf6af6a015664d2ff69a634e34a9428746a3" name="a85df1b2fc240485387136c2211fcebf6af6a015664d2ff69a634e34a9428746a3"></a>BC7UNormalized&#160;</td><td class="fielddoc"><p>Four-component block-compression unsigned-normalized-integer format with 4 to 7 bits per color channel and 0 to 8 bits of the alpha channel. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a85df1b2fc240485387136c2211fcebf6aaaaf2fb01e4a601a2afbeb5545978a16" name="a85df1b2fc240485387136c2211fcebf6aaaaf2fb01e4a601a2afbeb5545978a16"></a>BC7UNormalizedSRGB&#160;</td><td class="fielddoc"><p>Four-component block-compression unsigned-normalized-integer sRGB format with 4 to 7 bits per color channel and 0 to 8 bits of the alpha channel. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<hr/>The documentation for this struct was generated from the following file:<ul>
+<li>/home/runner/work/XII/XII/Source/Engine/GraphicsFoundation/Declarations/<a class="el" href="../../d0/d29/_graphics_types_8h_source.html">GraphicsTypes.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../de/d10/structxii_g_a_l_resource_format.html">xiiGALResourceFormat</a></li>
+    <li class="footer">Generated on Tue Dec 17 2024 16:26:57 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+  </ul>
+</div>
+</body>
+</html>

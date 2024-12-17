@@ -2275,8 +2275,8 @@ var hierarchy =
         ] ]
       ] ]
     ] ],
-    [ "xiiArrayBase< xiiEnum< xiiGALTextureFormat >, xiiStaticArray< xiiEnum< xiiGALTextureFormat >, Capacity > >", "da/d4c/classxii_array_base.html", [
-      [ "xiiStaticArray< xiiEnum< xiiGALTextureFormat >, XII_GAL_MAX_RENDERTARGET_COUNT >", "d9/d25/classxii_static_array.html", null ]
+    [ "xiiArrayBase< xiiEnum< xiiGALResourceFormat >, xiiStaticArray< xiiEnum< xiiGALResourceFormat >, Capacity > >", "da/d4c/classxii_array_base.html", [
+      [ "xiiStaticArray< xiiEnum< xiiGALResourceFormat >, XII_GAL_MAX_RENDERTARGET_COUNT >", "d9/d25/classxii_static_array.html", null ]
     ] ],
     [ "xiiArrayBase< xiiEventTrackControlPointData, xiiDynamicArrayBase< xiiEventTrackControlPointData > >", "da/d4c/classxii_array_base.html", [
       [ "xiiDynamicArrayBase< xiiEventTrackControlPointData >", "d2/dea/classxii_dynamic_array_base.html", [
@@ -2443,6 +2443,9 @@ var hierarchy =
         ] ]
       ] ]
     ] ],
+    [ "xiiArrayBase< xiiGALResourceFormat::Enum, xiiStaticArray< xiiGALResourceFormat::Enum, Capacity > >", "da/d4c/classxii_array_base.html", [
+      [ "xiiStaticArray< xiiGALResourceFormat::Enum, xiiGALTextureViewType::ENUM_COUNT >", "d9/d25/classxii_static_array.html", null ]
+    ] ],
     [ "xiiArrayBase< xiiGALShaderResourceDescription, xiiDynamicArrayBase< xiiGALShaderResourceDescription > >", "da/d4c/classxii_array_base.html", [
       [ "xiiDynamicArrayBase< xiiGALShaderResourceDescription >", "d2/dea/classxii_dynamic_array_base.html", [
         [ "xiiDynamicArray< xiiGALShaderResourceDescription, xiiDefaultAllocatorWrapper >", "dc/da4/classxii_dynamic_array.html", [
@@ -2481,9 +2484,6 @@ var hierarchy =
           [ "xiiHybridArray< xiiGALSwapChain *, 8U >", "dc/da9/classxii_hybrid_array.html", null ]
         ] ]
       ] ]
-    ] ],
-    [ "xiiArrayBase< xiiGALTextureFormat::Enum, xiiStaticArray< xiiGALTextureFormat::Enum, Capacity > >", "da/d4c/classxii_array_base.html", [
-      [ "xiiStaticArray< xiiGALTextureFormat::Enum, xiiGALTextureViewType::ENUM_COUNT >", "d9/d25/classxii_static_array.html", null ]
     ] ],
     [ "xiiArrayBase< xiiGALTextureHandle, xiiDynamicArrayBase< xiiGALTextureHandle > >", "da/d4c/classxii_array_base.html", [
       [ "xiiDynamicArrayBase< xiiGALTextureHandle >", "d2/dea/classxii_dynamic_array_base.html", [
@@ -3213,8 +3213,8 @@ var hierarchy =
         ] ]
       ] ]
     ] ],
-    [ "xiiArrayBase< xiiStaticArray< xiiGALTextureFormat::Enum, xiiGALTextureViewType::ENUM_COUNT >, xiiStaticArray< xiiStaticArray< xiiGALTextureFormat::Enum, xiiGALTextureViewType::ENUM_COUNT >, Capacity > >", "da/d4c/classxii_array_base.html", [
-      [ "xiiStaticArray< xiiStaticArray< xiiGALTextureFormat::Enum, xiiGALTextureViewType::ENUM_COUNT >, xiiGALTextureFormat::ENUM_COUNT >", "d9/d25/classxii_static_array.html", null ]
+    [ "xiiArrayBase< xiiStaticArray< xiiGALResourceFormat::Enum, xiiGALTextureViewType::ENUM_COUNT >, xiiStaticArray< xiiStaticArray< xiiGALResourceFormat::Enum, xiiGALTextureViewType::ENUM_COUNT >, Capacity > >", "da/d4c/classxii_array_base.html", [
+      [ "xiiStaticArray< xiiStaticArray< xiiGALResourceFormat::Enum, xiiGALTextureViewType::ENUM_COUNT >, xiiGALResourceFormat::ENUM_COUNT >", "d9/d25/classxii_static_array.html", null ]
     ] ],
     [ "xiiArrayBase< xiiStringBuilder, xiiDynamicArrayBase< xiiStringBuilder > >", "da/d4c/classxii_array_base.html", [
       [ "xiiDynamicArrayBase< xiiStringBuilder >", "d2/dea/classxii_dynamic_array_base.html", [
@@ -4785,6 +4785,12 @@ var hierarchy =
       [ "xiiEnum< xiiGALResourceDimension >", "de/dfd/structxii_enum.html", null ]
     ] ],
     [ "xiiGALResourceDimensionCapabilityFlags", "d5/d30/structxii_g_a_l_resource_dimension_capability_flags.html", null ],
+    [ "xiiGALResourceFormat", "de/d10/structxii_g_a_l_resource_format.html", [
+      [ "xiiEnum< xiiGALResourceFormat >", "de/dfd/structxii_enum.html", null ]
+    ] ],
+    [ "xiiGALResourceFormatComponentType", "d1/dee/structxii_g_a_l_resource_format_component_type.html", [
+      [ "xiiEnum< xiiGALResourceFormatComponentType >", "de/dfd/structxii_enum.html", null ]
+    ] ],
     [ "xiiGALResourceStateFlags", "d6/dec/structxii_g_a_l_resource_state_flags.html", null ],
     [ "xiiGALResourceUsage", "d9/d9e/structxii_g_a_l_resource_usage.html", [
       [ "xiiEnum< xiiGALResourceUsage >", "de/dfd/structxii_enum.html", null ]
@@ -4853,12 +4859,6 @@ var hierarchy =
     ] ],
     [ "xiiGALTextureComponentSwizzle", "df/df1/structxii_g_a_l_texture_component_swizzle.html", [
       [ "xiiEnum< xiiGALTextureComponentSwizzle >", "de/dfd/structxii_enum.html", null ]
-    ] ],
-    [ "xiiGALTextureFormat", "d2/de1/structxii_g_a_l_texture_format.html", [
-      [ "xiiEnum< xiiGALTextureFormat >", "de/dfd/structxii_enum.html", null ]
-    ] ],
-    [ "xiiGALTextureFormatComponentType", "de/d7d/structxii_g_a_l_texture_format_component_type.html", [
-      [ "xiiEnum< xiiGALTextureFormatComponentType >", "de/dfd/structxii_enum.html", null ]
     ] ],
     [ "xiiGALTextureHandle", "df/de3/classxii_g_a_l_texture_handle.html", null ],
     [ "xiiGALTextureUtilities", "d2/db9/classxii_g_a_l_texture_utilities.html", null ],
@@ -4939,9 +4939,6 @@ var hierarchy =
     ] ],
     [ "xiiHashableStruct< xiiGALBufferData >", "d7/d9f/classxii_hashable_struct.html", [
       [ "xiiGALBufferData", "da/dce/structxii_g_a_l_buffer_data.html", null ]
-    ] ],
-    [ "xiiHashableStruct< xiiGALBufferFormat >", "d7/d9f/classxii_hashable_struct.html", [
-      [ "xiiGALBufferFormat", "d5/d5f/structxii_g_a_l_buffer_format.html", null ]
     ] ],
     [ "xiiHashableStruct< xiiGALBufferProperties >", "d7/d9f/classxii_hashable_struct.html", [
       [ "xiiGALBufferProperties", "d6/db7/structxii_g_a_l_buffer_properties.html", null ]
@@ -5078,6 +5075,9 @@ var hierarchy =
     [ "xiiHashableStruct< xiiGALRenderTargetBlendDescription >", "d7/d9f/classxii_hashable_struct.html", [
       [ "xiiGALRenderTargetBlendDescription", "d1/d81/structxii_g_a_l_render_target_blend_description.html", null ]
     ] ],
+    [ "xiiHashableStruct< xiiGALResourceFormatDescription >", "d7/d9f/classxii_hashable_struct.html", [
+      [ "xiiGALResourceFormatDescription", "d9/d73/structxii_g_a_l_resource_format_description.html", null ]
+    ] ],
     [ "xiiHashableStruct< xiiGALSampleDescription >", "d7/d9f/classxii_hashable_struct.html", [
       [ "xiiGALSampleDescription", "da/de6/structxii_g_a_l_sample_description.html", null ]
     ] ],
@@ -5143,9 +5143,6 @@ var hierarchy =
     ] ],
     [ "xiiHashableStruct< xiiGALTextureData >", "d7/d9f/classxii_hashable_struct.html", [
       [ "xiiGALTextureData", "dc/de1/structxii_g_a_l_texture_data.html", null ]
-    ] ],
-    [ "xiiHashableStruct< xiiGALTextureFormatDescription >", "d7/d9f/classxii_hashable_struct.html", [
-      [ "xiiGALTextureFormatDescription", "d6/d3a/structxii_g_a_l_texture_format_description.html", null ]
     ] ],
     [ "xiiHashableStruct< xiiGALTextureMipLevelData >", "d7/d9f/classxii_hashable_struct.html", [
       [ "xiiGALTextureMipLevelData", "d6/d72/structxii_g_a_l_texture_mip_level_data.html", null ]

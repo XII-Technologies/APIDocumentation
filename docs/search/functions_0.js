@@ -90,7 +90,7 @@ var searchData=
   ['addstairs_87',['AddStairs',['../d9/dbc/classxii_geometry.html#ae19532dc7e059a968837fa3817b2755c',1,'xiiGeometry']]],
   ['addstate_88',['AddState',['../df/d9c/classxii_state_machine_description.html#ad907a5d18670db1fe545b331b1c82117',1,'xiiStateMachineDescription']]],
   ['addstaticcollisionbox_89',['AddStaticCollisionBox',['../d0/da9/classxii_physics_world_module_interface.html#a9431e65cfaf8d779e1a021d31490b4df',1,'xiiPhysicsWorldModuleInterface']]],
-  ['addstream_90',['AddStream',['../d3/dc6/classxii_processing_stream_group.html#ad91d95223ced9550dc41c203e51ce077',1,'xiiProcessingStreamGroup::AddStream()'],['../dd/deb/structxii_mesh_buffer_resource_descriptor.html#a116165477b8d254d912b665cc837a445',1,'xiiMeshBufferResourceDescriptor::AddStream()']]],
+  ['addstream_90',['AddStream',['../d3/dc6/classxii_processing_stream_group.html#ad91d95223ced9550dc41c203e51ce077',1,'xiiProcessingStreamGroup::AddStream()'],['../dd/deb/structxii_mesh_buffer_resource_descriptor.html#a890ec7cd897efa98d739f7f6fcc2bfd6',1,'xiiMeshBufferResourceDescriptor::AddStream()']]],
   ['addsyncobject_91',['AddSyncObject',['../d7/dd5/classxii_asset_document.html#ab59ed3e6a6c538a3aa0bdce8b3c64e64',1,'xiiAssetDocument']]],
   ['addtaskgroupdependency_92',['AddTaskGroupDependency',['../d1/dc7/classxii_task_system.html#ae616c195c09092ee1f8e6cec6a9ba2f9',1,'xiiTaskSystem']]],
   ['addtaskgroupdependencybatch_93',['AddTaskGroupDependencyBatch',['../d1/dc7/classxii_task_system.html#a7aa84a66c43fbf3117cdc6a43702b4d0',1,'xiiTaskSystem']]],

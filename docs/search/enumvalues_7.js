@@ -11,7 +11,7 @@ var searchData=
   ['global_8',['Global',['../db/d54/structxii_x_r_transform_space.html#a448e6f31de261f5e1a2ea40165bd7a59a3a0df13410916ddb0c21e3ecd64f2eda',1,'xiiXRTransformSpace']]],
   ['globaldefault_9',['GlobalDefault',['../d4/de6/structxii_log_msg_type.html#a7b991cbae5d585576d8269d959abbc49a099f259b62cbf7f1a0cddac6ef22997c',1,'xiiLogMsgType']]],
   ['globalinclude_10',['GlobalInclude',['../db/d38/classxii_preprocessor.html#a5466b323aa93219d02120f1dc285c440a4567afb135f83dee498bc0efb40ade9a',1,'xiiPreprocessor']]],
-  ['gr8gb8unormalized_11',['GR8GB8UNormalized',['../d2/de1/structxii_g_a_l_texture_format.html#a4ebed18ce152a1ef73a0afa6ae6e767baea94aa34fd4b583ee9520495a2d306df',1,'xiiGALTextureFormat']]],
+  ['gr8gb8unormalized_11',['GR8GB8UNormalized',['../de/d10/structxii_g_a_l_resource_format.html#a85df1b2fc240485387136c2211fcebf6a718231c8ddba5eec63a428000118ce73',1,'xiiGALResourceFormat']]],
   ['graphics_12',['Graphics',['../d7/db4/structxii_g_a_l_command_queue_type.html#a47dd1577b4fcd1112a73e9a4798421cba615529ad0ff2afb411ef75ba5c26220d',1,'xiiGALCommandQueueType::Graphics'],['../db/db2/structxii_g_a_l_pipeline_type.html#ad5477c40754df4d33e387c8affd6784ba88246e08f7b84744f6a1cd0d74ad12a8',1,'xiiGALPipelineType::Graphics']]],
   ['graphpatch_13',['GraphPatch',['../d9/d48/classxii_graph_patch.html#af9f2b99e4390863069278fcffd4cf2c9ad0e3b072009c86335ece17fb5cf0ec03',1,'xiiGraphPatch']]],
   ['greater_14',['Greater',['../d2/d6d/structxii_g_a_l_comparison_function.html#a379b1dc5f2a81ba2b9a7f934fe9b9df3a2f812c9f3481826157b98b5e7caf596e',1,'xiiGALComparisonFunction']]],

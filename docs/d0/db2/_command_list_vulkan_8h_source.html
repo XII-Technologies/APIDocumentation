@@ -222,7 +222,22 @@ $(function(){initNavTree('d0/db2/_command_list_vulkan_8h_source.html','../../');
 <div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span> </div>
 <div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span><span class="keyword">private</span>:</div>
 <div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>  vk::CommandBuffer m_vkCommandBuffer;</div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>};</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span> </div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>  <span class="keyword">struct </span>ContextState</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>  {</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    <span class="keywordtype">bool</span>      m_bCommittedVertexBuffersUpToDate = <span class="keyword">false</span>; </div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    <span class="keywordtype">bool</span>      m_bCommittedIndexBuffersUpToDate  = <span class="keyword">false</span>; </div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>    <span class="keywordtype">bool</span>      m_bShadingRateIsSet               = <span class="keyword">false</span>; </div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    <span class="keywordtype">bool</span>      m_bNullRenderTargets              = <span class="keyword">false</span>; </div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>    xiiUInt32 m_uiCommandCount                  = 0U;    </div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span> </div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    vk::PipelineBindPoint m_vkPipelineBindPoint = <span class="keyword">static_cast&lt;</span>vk::PipelineBindPoint<span class="keyword">&gt;</span>(VK_PIPELINE_BIND_POINT_MAX_ENUM); </div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>  } m_ContextState;</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span> </div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>  <span class="comment">// Graphics/Mesh, Compute, Ray Tracing.</span></div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>  <span class="keyword">static</span> <span class="keyword">constexpr</span> xiiUInt32 s_PipelineBindPointCount       = 3U;</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>  <span class="keyword">static</span> <span class="keyword">constexpr</span> xiiUInt32 s_MaxDescriptorSetPerSignature = 2U;</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>};</div>
 </div>
 <div class="ttc" id="aclassxii_array_ptr_html"><div class="ttname"><a href="../../d0/d60/classxii_array_ptr.html">xiiArrayPtr</a></div><div class="ttdoc">This class encapsulates an array and it's size. It is recommended to use this class instead of plain ...</div><div class="ttdef"><b>Definition</b> ArrayPtr.h:37</div></div>
 <div class="ttc" id="aclassxii_bounding_box_template_html"><div class="ttname"><a href="../../d2/dd6/classxii_bounding_box_template.html">xiiBoundingBoxTemplate</a></div><div class="ttdoc">An axis-aligned bounding box implementation.</div><div class="ttdef"><b>Definition</b> BoundingBox.h:12</div></div>
@@ -254,7 +269,7 @@ $(function(){initNavTree('d0/db2/_command_list_vulkan_8h_source.html','../../');
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.html">home</a></li><li class="navelem"><a class="el" href="../../dir_1036706e55c22cab35bc1c58ee689f1d.html">runner</a></li><li class="navelem"><a class="el" href="../../dir_629f8151d55d307162ff2d619fb1783d.html">work</a></li><li class="navelem"><a class="el" href="../../dir_1ddc44fe1263a8c7935fa6130b7d9499.html">XII</a></li><li class="navelem"><a class="el" href="../../dir_2c1b6808f12952f4c36e05ba7068379a.html">XII</a></li><li class="navelem"><a class="el" href="../../dir_b5a1c4ecfca018ad24b729e213296d41.html">Source</a></li><li class="navelem"><a class="el" href="../../dir_e321052006a51284e67389ab20037e7c.html">Engine</a></li><li class="navelem"><a class="el" href="../../dir_32f911672529289aa73bbec1c1630508.html">GraphicsVulkan</a></li><li class="navelem"><a class="el" href="../../dir_de4bc7040d388118bd551b63725a1c19.html">CommandEncoder</a></li><li class="navelem"><b>CommandListVulkan.h</b></li>
-    <li class="footer">Generated on Sun Dec 8 2024 02:39:52 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Tue Dec 17 2024 16:26:54 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

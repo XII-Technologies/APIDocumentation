@@ -1,9 +1,5 @@
 var NAVTREEINDEX49 =
 {
-"functions_i.html":[6,3,0,9],
-"functions_j.html":[6,3,0,10],
-"functions_k.html":[6,3,0,11],
-"functions_l.html":[6,3,0,12],
 "functions_m.html":[6,3,0,13],
 "functions_n.html":[6,3,0,14],
 "functions_o.html":[6,3,0,15],

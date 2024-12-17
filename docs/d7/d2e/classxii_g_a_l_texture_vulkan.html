@@ -148,9 +148,9 @@ Inheritance diagram for xiiGALTextureVulkan:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:abc199c60033f75a77c1e37501c87a1b3" id="r_abc199c60033f75a77c1e37501c87a1b3"><td class="memItemLeft" align="right" valign="top">virtual const <a class="el" href="../../d8/d52/structxii_g_a_l_sparse_texture_properties.html">xiiGALSparseTextureProperties</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abc199c60033f75a77c1e37501c87a1b3">GetSparseProperties</a> () const override final</td></tr>
-<tr class="memdesc:abc199c60033f75a77c1e37501c87a1b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">This returns the sparse texture properties.  <br /></td></tr>
-<tr class="separator:abc199c60033f75a77c1e37501c87a1b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ff41f4ba7190cbacc3f5575ac25002d" id="r_a2ff41f4ba7190cbacc3f5575ac25002d"><td class="memItemLeft" align="right" valign="top">virtual XII_ALWAYS_INLINE const <a class="el" href="../../d8/d52/structxii_g_a_l_sparse_texture_properties.html">xiiGALSparseTextureProperties</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2ff41f4ba7190cbacc3f5575ac25002d">GetSparseProperties</a> () const override final</td></tr>
+<tr class="memdesc:a2ff41f4ba7190cbacc3f5575ac25002d"><td class="mdescLeft">&#160;</td><td class="mdescRight">This returns the sparse texture properties.  <br /></td></tr>
+<tr class="separator:a2ff41f4ba7190cbacc3f5575ac25002d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4c022efc2b9cca860dd08902856632b0" id="r_a4c022efc2b9cca860dd08902856632b0"><td class="memItemLeft" align="right" valign="top"><a id="a4c022efc2b9cca860dd08902856632b0" name="a4c022efc2b9cca860dd08902856632b0"></a>
 XII_ALWAYS_INLINE vk::Image&#160;</td><td class="memItemRight" valign="bottom"><b>GetVulkanImage</b> () const</td></tr>
 <tr class="separator:a4c022efc2b9cca860dd08902856632b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -238,6 +238,11 @@ Protected Member Functions</h2></td></tr>
 <tr class="separator:a251752e6b52cae2cdacedd9aaea41a23"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac611937b3f27c6f02f6b64891355f7b4" id="r_ac611937b3f27c6f02f6b64891355f7b4"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac611937b3f27c6f02f6b64891355f7b4">DeInitPlatform</a> () override final</td></tr>
 <tr class="separator:ac611937b3f27c6f02f6b64891355f7b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c94e8c5e904022ed34ffdfce5a1abe0" id="r_a1c94e8c5e904022ed34ffdfce5a1abe0"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1c94e8c5e904022ed34ffdfce5a1abe0">SetDebugNamePlatform</a> (<a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sName) override final</td></tr>
+<tr class="separator:a1c94e8c5e904022ed34ffdfce5a1abe0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99b7f1c5a4f435c42614fb9b2429bb39" id="r_a99b7f1c5a4f435c42614fb9b2429bb39"><td class="memItemLeft" align="right" valign="top"><a id="a99b7f1c5a4f435c42614fb9b2429bb39" name="a99b7f1c5a4f435c42614fb9b2429bb39"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>InitializeSparseTextureProperties</b> ()</td></tr>
+<tr class="separator:a99b7f1c5a4f435c42614fb9b2429bb39"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_classxii_g_a_l_texture"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_methods_classxii_g_a_l_texture')"><img src="../../closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="../../d3/d9a/classxii_g_a_l_texture.html">xiiGALTexture</a></td></tr>
 <tr class="memitem:a71ce10cf052ae9bbe72081c8055a0238 inherit pro_methods_classxii_g_a_l_texture" id="r_a71ce10cf052ae9bbe72081c8055a0238"><td class="memItemLeft" align="right" valign="top">
 &#160;</td><td class="memItemRight" valign="bottom"><b>xiiGALTexture</b> (<a class="el" href="../../d5/d19/classxii_g_a_l_device.html">xiiGALDevice</a> *pDevice, const <a class="el" href="../../de/dd4/structxii_g_a_l_texture_creation_description.html">xiiGALTextureCreationDescription</a> &amp;creationDescription)</td></tr>
@@ -250,16 +255,15 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:a7ba98273bd740d9f4e9ed729de53b723 inherit pro_methods_classxii_g_a_l_device_object" id="r_a7ba98273bd740d9f4e9ed729de53b723"><td class="memItemLeft" align="right" valign="top">
 &#160;</td><td class="memItemRight" valign="bottom"><b>xiiGALDeviceObject</b> (<a class="el" href="../../d5/d19/classxii_g_a_l_device.html">xiiGALDevice</a> *pDevice)</td></tr>
 <tr class="separator:a7ba98273bd740d9f4e9ed729de53b723 inherit pro_methods_classxii_g_a_l_device_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pro_methods_classxii_g_a_l_object"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_methods_classxii_g_a_l_object')"><img src="../../closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="../../d3/dda/classxii_g_a_l_object.html">xiiGALObject</a></td></tr>
-<tr class="memitem:a0c4418a3bf119dafd498fcd1274cba52 inherit pro_methods_classxii_g_a_l_object" id="r_a0c4418a3bf119dafd498fcd1274cba52"><td class="memItemLeft" align="right" valign="top">
-virtual XII_ALWAYS_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><b>SetDebugNamePlatform</b> (<a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sName)</td></tr>
-<tr class="separator:a0c4418a3bf119dafd498fcd1274cba52 inherit pro_methods_classxii_g_a_l_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
 <tr class="memitem:ae62d2b5cbdee5e5bfbc6bda6721b61ac" id="r_ae62d2b5cbdee5e5bfbc6bda6721b61ac"><td class="memItemLeft" align="right" valign="top"><a id="ae62d2b5cbdee5e5bfbc6bda6721b61ac" name="ae62d2b5cbdee5e5bfbc6bda6721b61ac"></a>
 vk::Image&#160;</td><td class="memItemRight" valign="bottom"><b>m_vkImage</b></td></tr>
 <tr class="separator:ae62d2b5cbdee5e5bfbc6bda6721b61ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a59c9a9af8cec7d0302682fed1ece53" id="r_a3a59c9a9af8cec7d0302682fed1ece53"><td class="memItemLeft" align="right" valign="top"><a id="a3a59c9a9af8cec7d0302682fed1ece53" name="a3a59c9a9af8cec7d0302682fed1ece53"></a>
+<a class="el" href="../../d8/d52/structxii_g_a_l_sparse_texture_properties.html">xiiGALSparseTextureProperties</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_SparseTextureProperties</b></td></tr>
+<tr class="separator:a3a59c9a9af8cec7d0302682fed1ece53"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_classxii_g_a_l_texture"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_attribs_classxii_g_a_l_texture')"><img src="../../closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="../../d3/d9a/classxii_g_a_l_texture.html">xiiGALTexture</a></td></tr>
 <tr class="memitem:af99650871c45cdbbededf378938d7ea9 inherit pro_attribs_classxii_g_a_l_texture" id="r_af99650871c45cdbbededf378938d7ea9"><td class="memItemLeft" align="right" valign="top">
 <a class="el" href="../../de/dd4/structxii_g_a_l_texture_creation_description.html">xiiGALTextureCreationDescription</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_Description</b></td></tr>
@@ -323,8 +327,8 @@ static const <a class="el" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a>
 
 </div>
 </div>
-<a id="abc199c60033f75a77c1e37501c87a1b3" name="abc199c60033f75a77c1e37501c87a1b3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abc199c60033f75a77c1e37501c87a1b3">&#9670;&#160;</a></span>GetSparseProperties()</h2>
+<a id="a2ff41f4ba7190cbacc3f5575ac25002d" name="a2ff41f4ba7190cbacc3f5575ac25002d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ff41f4ba7190cbacc3f5575ac25002d">&#9670;&#160;</a></span>GetSparseProperties()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -333,7 +337,7 @@ static const <a class="el" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="../../d8/d52/structxii_g_a_l_sparse_texture_properties.html">xiiGALSparseTextureProperties</a> &amp; xiiGALTextureVulkan::GetSparseProperties </td>
+          <td class="memname">virtual XII_ALWAYS_INLINE const <a class="el" href="../../d8/d52/structxii_g_a_l_sparse_texture_properties.html">xiiGALSparseTextureProperties</a> &amp; xiiGALTextureVulkan::GetSparseProperties </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td> const</td>
@@ -341,7 +345,7 @@ static const <a class="el" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">final</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">final</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -379,6 +383,33 @@ static const <a class="el" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a>
 
 </div>
 </div>
+<a id="a1c94e8c5e904022ed34ffdfce5a1abe0" name="a1c94e8c5e904022ed34ffdfce5a1abe0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c94e8c5e904022ed34ffdfce5a1abe0">&#9670;&#160;</a></span>SetDebugNamePlatform()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void xiiGALTextureVulkan::SetDebugNamePlatform </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a></td>          <td class="paramname"><span class="paramname"><em>sName</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">final</span><span class="mlabel">override</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented from <a class="el" href="../../d3/dda/classxii_g_a_l_object.html">xiiGALObject</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>/home/runner/work/XII/XII/Source/Engine/GraphicsVulkan/Resources/<a class="el" href="../../da/d92/_texture_vulkan_8h_source.html">TextureVulkan.h</a></li>
 <li>/home/runner/work/XII/XII/Source/Engine/GraphicsVulkan/Resources/Implementation/<b>TextureVulkan.cpp</b></li>
@@ -389,7 +420,7 @@ static const <a class="el" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d7/d2e/classxii_g_a_l_texture_vulkan.html">xiiGALTextureVulkan</a></li>
-    <li class="footer">Generated on Sun Dec 8 2024 02:39:54 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Tue Dec 17 2024 16:26:57 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

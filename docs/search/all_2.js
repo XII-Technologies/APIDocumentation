@@ -2,7 +2,7 @@ var searchData=
 [
   ['a_0',['A',['../d8/d4f/class_a.html',1,'A'],['../df/df1/structxii_g_a_l_texture_component_swizzle.html#acbe35cbcc9c4af37b4c6ebfdd5097b24a1c50b188f355a18e3dc5844dde0fc686',1,'xiiGALTextureComponentSwizzle::A']]],
   ['a_20section_20in_20group_205_1',['This is a section in group 5',['../dc/d9a/group__group5.html',1,'']]],
-  ['a8unormalized_2',['A8UNormalized',['../d2/de1/structxii_g_a_l_texture_format.html#a4ebed18ce152a1ef73a0afa6ae6e767ba43de51629bb2b8c61fc49c7bf50d26ab',1,'xiiGALTextureFormat']]],
+  ['a8unormalized_2',['A8UNormalized',['../de/d10/structxii_g_a_l_resource_format.html#a85df1b2fc240485387136c2211fcebf6a1ded17d5a3d7c36a903c974d0626db55',1,'xiiGALResourceFormat']]],
   ['aborted_3',['Aborted',['../d3/d27/structxii_rasterization_result.html#abbba280f0d6eb6edf98ef93231933d75afebbde49c8f51fb222670cd8bba27387',1,'xiiRasterizationResult']]],
   ['abs_4',['Abs',['../d1/d0d/classxii_vec2_template.html#a80268c93bfea5c0102c47a63b604ad83',1,'xiiVec2Template::Abs()'],['../d9/d9a/classxii_vec3_template.html#a6d00afc5de43fd995bf63081a695a5b9',1,'xiiVec3Template::Abs()'],['../d1/d20/classxii_vec4_template.html#a00ca3c93711032c658bf9a51738bbc55',1,'xiiVec4Template::Abs()'],['../d1/d37/namespacexii_math.html#a821b432e7a9c8ac292eb255ee11e9e10',1,'xiiMath::Abs(T f)'],['../d1/d37/namespacexii_math.html#a435f566484863fc1c1067acaf883c5f9',1,'xiiMath::Abs(T f)']]],
   ['absorb_5',['Absorb',['../d4/db0/structxii_projectile_reaction.html#ad85bbae8dcc67f4bdcd688d26a876d7ca6ef043d744e4c0b7dfc3348db4c83051',1,'xiiProjectileReaction']]],
@@ -111,7 +111,7 @@ var searchData=
   ['addstairs_108',['AddStairs',['../d9/dbc/classxii_geometry.html#ae19532dc7e059a968837fa3817b2755c',1,'xiiGeometry']]],
   ['addstate_109',['AddState',['../df/d9c/classxii_state_machine_description.html#ad907a5d18670db1fe545b331b1c82117',1,'xiiStateMachineDescription']]],
   ['addstaticcollisionbox_110',['AddStaticCollisionBox',['../d0/da9/classxii_physics_world_module_interface.html#a9431e65cfaf8d779e1a021d31490b4df',1,'xiiPhysicsWorldModuleInterface']]],
-  ['addstream_111',['AddStream',['../d3/dc6/classxii_processing_stream_group.html#ad91d95223ced9550dc41c203e51ce077',1,'xiiProcessingStreamGroup::AddStream()'],['../dd/deb/structxii_mesh_buffer_resource_descriptor.html#a116165477b8d254d912b665cc837a445',1,'xiiMeshBufferResourceDescriptor::AddStream()']]],
+  ['addstream_111',['AddStream',['../d3/dc6/classxii_processing_stream_group.html#ad91d95223ced9550dc41c203e51ce077',1,'xiiProcessingStreamGroup::AddStream()'],['../dd/deb/structxii_mesh_buffer_resource_descriptor.html#a890ec7cd897efa98d739f7f6fcc2bfd6',1,'xiiMeshBufferResourceDescriptor::AddStream()']]],
   ['addsyncobject_112',['AddSyncObject',['../d7/dd5/classxii_asset_document.html#ab59ed3e6a6c538a3aa0bdce8b3c64e64',1,'xiiAssetDocument']]],
   ['addtaskgroupdependency_113',['AddTaskGroupDependency',['../d1/dc7/classxii_task_system.html#ae616c195c09092ee1f8e6cec6a9ba2f9',1,'xiiTaskSystem']]],
   ['addtaskgroupdependencybatch_114',['AddTaskGroupDependencyBatch',['../d1/dc7/classxii_task_system.html#a7aa84a66c43fbf3117cdc6a43702b4d0',1,'xiiTaskSystem']]],

@@ -1,7 +1,7 @@
 var searchData=
 [
   ['a_0',['A',['../df/df1/structxii_g_a_l_texture_component_swizzle.html#acbe35cbcc9c4af37b4c6ebfdd5097b24a1c50b188f355a18e3dc5844dde0fc686',1,'xiiGALTextureComponentSwizzle']]],
-  ['a8unormalized_1',['A8UNormalized',['../d2/de1/structxii_g_a_l_texture_format.html#a4ebed18ce152a1ef73a0afa6ae6e767ba43de51629bb2b8c61fc49c7bf50d26ab',1,'xiiGALTextureFormat']]],
+  ['a8unormalized_1',['A8UNormalized',['../de/d10/structxii_g_a_l_resource_format.html#a85df1b2fc240485387136c2211fcebf6a1ded17d5a3d7c36a903c974d0626db55',1,'xiiGALResourceFormat']]],
   ['aborted_2',['Aborted',['../d3/d27/structxii_rasterization_result.html#abbba280f0d6eb6edf98ef93231933d75afebbde49c8f51fb222670cd8bba27387',1,'xiiRasterizationResult']]],
   ['absorb_3',['Absorb',['../d4/db0/structxii_projectile_reaction.html#ad85bbae8dcc67f4bdcd688d26a876d7ca6ef043d744e4c0b7dfc3348db4c83051',1,'xiiProjectileReaction']]],
   ['abstract_4',['Abstract',['../d6/de8/structxii_type_flags.html#a91f9df8f69a1a163305414f423ec98c0a214ed8d5527a3b577a4ba4862e8d514d',1,'xiiTypeFlags']]],
