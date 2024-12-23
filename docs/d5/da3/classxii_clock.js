@@ -5,6 +5,7 @@ var classxii_clock =
     [ "GetAccumulatedTime", "d5/da3/classxii_clock.html#ac95c0089f9e01457ef0edaa1db2f0ccf", null ],
     [ "GetClockName", "d5/da3/classxii_clock.html#a7a855e217f4b97348d45bce21e7ed200", null ],
     [ "GetFixedTimeStep", "d5/da3/classxii_clock.html#a326d4ff4359577b43fcb8c83928361ac", null ],
+    [ "GetLastUpdateTime", "d5/da3/classxii_clock.html#a4ffc7d34c8ca04ffb9a8df1a3bca5e73", null ],
     [ "GetMaximumTimeStep", "d5/da3/classxii_clock.html#aba173cedc58ee042b64a1e180441cd10", null ],
     [ "GetMinimumTimeStep", "d5/da3/classxii_clock.html#a6cf3d956064c710b2ecd7d152f580b4b", null ],
     [ "GetPaused", "d5/da3/classxii_clock.html#a1d21a7fc1eaeaf8f476f147465c56b67", null ],

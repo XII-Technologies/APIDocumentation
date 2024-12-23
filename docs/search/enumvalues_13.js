@@ -97,5 +97,6 @@ var searchData=
   ['subtract_94',['Subtract',['../d0/d2e/structxii_g_a_l_blend_operation.html#a729909de9fee6bb0080ab73dc7cb173ba3a795ea32334dbc3c0a78d4c168fe3a8',1,'xiiGALBlendOperation']]],
   ['successmsg_95',['SuccessMsg',['../d4/de6/structxii_log_msg_type.html#a7b991cbae5d585576d8269d959abbc49a4d46c2d38d8141617ac9d0bbf4212842',1,'xiiLogMsgType']]],
   ['suggestcontainerwindow_96',['SuggestContainerWindow',['../d6/da2/structxii_tools_project_request.html#a821169319afd58a297fdda40cc0d784daf4686fc522014d0da8fa39482f132a5a',1,'xiiToolsProjectRequest']]],
-  ['supportsthumbnail_97',['SupportsThumbnail',['../dd/d3b/structxii_asset_document_flags.html#a8a9d3d28ff9f81b678c247c918074c17a819a353080f8d244dc1d1764765739ff',1,'xiiAssetDocumentFlags']]]
+  ['supportsthumbnail_97',['SupportsThumbnail',['../dd/d3b/structxii_asset_document_flags.html#a8a9d3d28ff9f81b678c247c918074c17a819a353080f8d244dc1d1764765739ff',1,'xiiAssetDocumentFlags']]],
+  ['swipe_98',['Swipe',['../d0/d83/structxii_virtual_thumb_stick_1_1_center_mode.html#a1af768f6c415421a3276a3cf850c40e6ade53e805b455ef14cf2a35bc322fffad',1,'xiiVirtualThumbStick::CenterMode']]]
 ];

@@ -105,6 +105,7 @@ var hierarchy =
     [ "xiiTransformComponentFlags::Bits", "d8/d10/structxii_transform_component_flags_1_1_bits.html", null ],
     [ "xiiTransformFlags::Bits", "d4/d73/structxii_transform_flags_1_1_bits.html", null ],
     [ "xiiTypeFlags::Bits", "da/dce/structxii_type_flags_1_1_bits.html", null ],
+    [ "xiiVirtualThumbStick::Flags::Bits", "d2/d14/structxii_virtual_thumb_stick_1_1_flags_1_1_bits.html", null ],
     [ "xiiVisualizerAnchor::Bits", "dd/d39/structxii_visualizer_anchor_1_1_bits.html", null ],
     [ "xiiXRDeviceFeatures::Bits", "d9/ddf/structxii_x_r_device_features_1_1_bits.html", null ],
     [ "xiiMeshResourceDescriptor::BoneData", "dd/df7/structxii_mesh_resource_descriptor_1_1_bone_data.html", null ],
@@ -145,6 +146,7 @@ var hierarchy =
     [ "xiiChunkStreamReader::ChunkInfo", "de/d2b/structxii_chunk_stream_reader_1_1_chunk_info.html", null ],
     [ "xiiColorGradient::ColorCP", "dd/d50/structxii_color_gradient_1_1_color_c_p.html", null ],
     [ "xiiRenderContext::CommandListScope< ScopeType >", "d4/d06/classxii_render_context_1_1_command_list_scope.html", null ],
+    [ "xiiGALCommandListVulkan::CommandListState", "da/d49/structxii_g_a_l_command_list_vulkan_1_1_command_list_state.html", null ],
     [ "xiiStandardJSONWriter::CommaWriter", "dd/d42/structxii_standard_j_s_o_n_writer_1_1_comma_writer.html", null ],
     [ "CompareConstChar", "dc/d66/struct_compare_const_char.html", null ],
     [ "xiiTimestamp::CompareMode", "d0/d4b/structxii_timestamp_1_1_compare_mode.html", null ],
@@ -258,6 +260,7 @@ var hierarchy =
     [ "xiiFileserveClientContext::FileStatus", "d9/d71/structxii_fileserve_client_context_1_1_file_status.html", null ],
     [ "xiiExpressionVM::Flags", "d4/d8b/structxii_expression_v_m_1_1_flags.html", null ],
     [ "xiiSpatialData::Flags", "d9/dfa/structxii_spatial_data_1_1_flags.html", null ],
+    [ "xiiVirtualThumbStick::Flags", "de/dd1/structxii_virtual_thumb_stick_1_1_flags.html", null ],
     [ "Fn_Test", "dc/dfc/class_fn___test.html", null ],
     [ "xiiRTTI::ForEachOptions", "d3/d09/structxii_r_t_t_i_1_1_for_each_options.html", null ],
     [ "xiiMinWindows::FromNativeImpl< T >", "d1/d80/structxii_min_windows_1_1_from_native_impl.html", null ],
@@ -273,6 +276,7 @@ var hierarchy =
     [ "xiiProfilingSystem::GPUScope", "d6/dbd/structxii_profiling_system_1_1_g_p_u_scope.html", null ],
     [ "GridVertex", "d6/dc8/struct_grid_vertex.html", null ],
     [ "xiiHashedString::HashedData", "de/df9/structxii_hashed_string_1_1_hashed_data.html", null ],
+    [ "xiiGALCommandListVulkan::MappedTextureKey::Hasher", "d9/d0e/structxii_g_a_l_command_list_vulkan_1_1_mapped_texture_key_1_1_hasher.html", null ],
     [ "xiiInternal::HashHelperImpl< T, isString >", "d0/dd6/structxii_internal_1_1_hash_helper_impl.html", null ],
     [ "xiiInternal::HashHelperImpl< T, true >", "d2/d62/structxii_internal_1_1_hash_helper_impl_3_01_t_00_01true_01_4.html", null ],
     [ "xiiLogWriter::HTML", "d3/d7f/classxii_log_writer_1_1_h_t_m_l.html", null ],
@@ -1683,11 +1687,6 @@ var hierarchy =
         [ "xiiDynamicArray< vk::AccessFlags >", "dc/da4/classxii_dynamic_array.html", null ]
       ] ]
     ] ],
-    [ "xiiArrayBase< vk::CommandBuffer, xiiDynamicArrayBase< vk::CommandBuffer > >", "da/d4c/classxii_array_base.html", [
-      [ "xiiDynamicArrayBase< vk::CommandBuffer >", "d2/dea/classxii_dynamic_array_base.html", [
-        [ "xiiDynamicArray< vk::CommandBuffer >", "dc/da4/classxii_dynamic_array.html", null ]
-      ] ]
-    ] ],
     [ "xiiArrayBase< vk::ExtensionProperties, xiiDynamicArrayBase< vk::ExtensionProperties > >", "da/d4c/classxii_array_base.html", [
       [ "xiiDynamicArrayBase< vk::ExtensionProperties >", "d2/dea/classxii_dynamic_array_base.html", [
         [ "xiiDynamicArray< vk::ExtensionProperties >", "dc/da4/classxii_dynamic_array.html", null ]
@@ -1701,6 +1700,11 @@ var hierarchy =
     [ "xiiArrayBase< vk::Image, xiiDynamicArrayBase< vk::Image > >", "da/d4c/classxii_array_base.html", [
       [ "xiiDynamicArrayBase< vk::Image >", "d2/dea/classxii_dynamic_array_base.html", [
         [ "xiiDynamicArray< vk::Image >", "dc/da4/classxii_dynamic_array.html", null ]
+      ] ]
+    ] ],
+    [ "xiiArrayBase< vk::ImageMemoryBarrier, xiiDynamicArrayBase< vk::ImageMemoryBarrier > >", "da/d4c/classxii_array_base.html", [
+      [ "xiiDynamicArrayBase< vk::ImageMemoryBarrier >", "d2/dea/classxii_dynamic_array_base.html", [
+        [ "xiiDynamicArray< vk::ImageMemoryBarrier >", "dc/da4/classxii_dynamic_array.html", null ]
       ] ]
     ] ],
     [ "xiiArrayBase< vk::LayerProperties, xiiDynamicArrayBase< vk::LayerProperties > >", "da/d4c/classxii_array_base.html", [
@@ -3774,6 +3778,7 @@ var hierarchy =
     [ "xiiBitflags< xiiSpawnComponentFlags >", "d7/d55/structxii_bitflags.html", null ],
     [ "xiiBitflags< xiiTransformComponentFlags >", "d7/d55/structxii_bitflags.html", null ],
     [ "xiiBitflags< xiiTypeFlags >", "d7/d55/structxii_bitflags.html", null ],
+    [ "xiiBitflags< xiiVirtualThumbStick::Flags >", "d7/d55/structxii_bitflags.html", null ],
     [ "xiiBitflags< xiiVisualizerAnchor >", "d7/d55/structxii_bitflags.html", null ],
     [ "xiiBitflagsBase", "d9/da1/classxii_bitflags_base.html", null ],
     [ "xiiBitIterator< DataType, ReturnsIndex, ReturnType, StorageType >", "d8/dd8/structxii_bit_iterator.html", null ],
@@ -3798,6 +3803,7 @@ var hierarchy =
     [ "xiiBoundingBoxSphereTemplate< xiiReal >", "d3/d90/classxii_bounding_box_sphere_template.html", null ],
     [ "xiiBoundingBoxTemplate< Type >", "d2/dd6/classxii_bounding_box_template.html", null ],
     [ "xiiBoundingBoxTemplate< float >", "d2/dd6/classxii_bounding_box_template.html", null ],
+    [ "xiiBoundingBoxTemplate< xiiUInt32 >", "d2/dd6/classxii_bounding_box_template.html", null ],
     [ "xiiBoundingSphereTemplate< Type >", "dd/d79/classxii_bounding_sphere_template.html", null ],
     [ "xiiBoundingSphereTemplate< float >", "dd/d79/classxii_bounding_sphere_template.html", null ],
     [ "xiiShaderUtilities::xiiBuiltinShader", "d9/d14/structxii_shader_utilities_1_1xii_builtin_shader.html", null ],
@@ -3867,7 +3873,6 @@ var hierarchy =
     [ "xiiCompareHelper< xiiExpression::FunctionDesc >", "d1/deb/structxii_compare_helper.html", null ],
     [ "xiiCompareHelper< xiiGALBufferD3D11 * >", "d1/deb/structxii_compare_helper.html", null ],
     [ "xiiCompareHelper< xiiGALBufferHandle >", "d1/deb/structxii_compare_helper.html", null ],
-    [ "xiiCompareHelper< xiiGALCommandListVulkan * >", "d1/deb/structxii_compare_helper.html", null ],
     [ "xiiCompareHelper< xiiGALTextureD3D11 * >", "d1/deb/structxii_compare_helper.html", null ],
     [ "xiiCompareHelper< xiiGALTextureHandle >", "d1/deb/structxii_compare_helper.html", null ],
     [ "xiiCompareHelper< xiiGameObject * >", "d1/deb/structxii_compare_helper.html", null ],
@@ -4133,6 +4138,9 @@ var hierarchy =
     ] ],
     [ "xiiDequeBase< xiiGALCommandListD3D11 *, true >", "d1/d7d/classxii_deque_base.html", [
       [ "xiiDeque< xiiGALCommandListD3D11 * >", "d8/df8/classxii_deque.html", null ]
+    ] ],
+    [ "xiiDequeBase< xiiGALCommandListVulkan *, true >", "d1/d7d/classxii_deque_base.html", [
+      [ "xiiDeque< xiiGALCommandListVulkan * >", "d8/df8/classxii_deque.html", null ]
     ] ],
     [ "xiiDequeBase< xiiGALFenceVulkan::SyncPointData, true >", "d1/d7d/classxii_deque_base.html", [
       [ "xiiDeque< xiiGALFenceVulkan::SyncPointData >", "d8/df8/classxii_deque.html", null ]
@@ -4943,6 +4951,9 @@ var hierarchy =
     [ "xiiHashableStruct< xiiGALBufferProperties >", "d7/d9f/classxii_hashable_struct.html", [
       [ "xiiGALBufferProperties", "d6/db7/structxii_g_a_l_buffer_properties.html", null ]
     ] ],
+    [ "xiiHashableStruct< xiiGALBufferToTextureCopyDescription >", "d7/d9f/classxii_hashable_struct.html", [
+      [ "xiiGALBufferToTextureCopyDescription", "de/d11/structxii_g_a_l_buffer_to_texture_copy_description.html", null ]
+    ] ],
     [ "xiiHashableStruct< xiiGALBufferViewCreationDescription >", "d7/d9f/classxii_hashable_struct.html", [
       [ "xiiGALBufferViewCreationDescription", "d3/d47/structxii_g_a_l_buffer_view_creation_description.html", null ]
     ] ],
@@ -5014,6 +5025,9 @@ var hierarchy =
     ] ],
     [ "xiiHashableStruct< xiiGALMeshShaderProperties >", "d7/d9f/classxii_hashable_struct.html", [
       [ "xiiGALMeshShaderProperties", "d9/dfd/structxii_g_a_l_mesh_shader_properties.html", null ]
+    ] ],
+    [ "xiiHashableStruct< xiiGALMipLevelProperties >", "d7/d9f/classxii_hashable_struct.html", [
+      [ "xiiGALMipLevelProperties", "d0/d01/structxii_g_a_l_mip_level_properties.html", null ]
     ] ],
     [ "xiiHashableStruct< xiiGALNormalizedDeviceCoordinates >", "d7/d9f/classxii_hashable_struct.html", [
       [ "xiiGALNormalizedDeviceCoordinates", "d2/dca/structxii_g_a_l_normalized_device_coordinates.html", null ]
@@ -5347,6 +5361,9 @@ var hierarchy =
     [ "xiiHashTableBase< KEY, VALUE, xiiHashHelper< KEY > >", "d0/da6/classxii_hash_table_base.html", null ],
     [ "xiiHashTableBase< KeyType, ValueType, xiiHashHelper< KeyType > >", "d0/da6/classxii_hash_table_base.html", null ],
     [ "xiiHashTableBase< LightAndRefView, xiiUInt32, xiiHashHelper< LightAndRefView > >", "d0/da6/classxii_hash_table_base.html", null ],
+    [ "xiiHashTableBase< MappedTextureKey, MappedTexture, Hasher >", "d0/da6/classxii_hash_table_base.html", [
+      [ "xiiHashTable< MappedTextureKey, MappedTexture, xiiGALCommandListVulkan::MappedTextureKey::Hasher >", "d8/dc2/classxii_hash_table.html", null ]
+    ] ],
     [ "xiiHashTableBase< T, typename DataMap::Iterator, xiiHashHelper< T > >", "d0/da6/classxii_hash_table_base.html", null ],
     [ "xiiHashTableBase< void *, xiiUInt32, xiiHashHelper< void * > >", "d0/da6/classxii_hash_table_base.html", null ],
     [ "xiiHashTableBase< xiiArchiveStoredString, xiiUInt32, xiiHashHelper< xiiArchiveStoredString > >", "d0/da6/classxii_hash_table_base.html", null ],
@@ -6962,6 +6979,8 @@ var hierarchy =
             [ "xiiExpressionWidgetAttribute", "d5/dad/classxii_expression_widget_attribute.html", null ],
             [ "xiiFileBrowserAttribute", "d0/d66/classxii_file_browser_attribute.html", null ],
             [ "xiiGameObjectReferenceAttribute", "d8/d66/classxii_game_object_reference_attribute.html", null ],
+            [ "xiiImageSliderUiAttribute", "d2/dfd/classxii_image_slider_ui_attribute.html", null ],
+            [ "xiiRttiTypeStringAttribute", "da/dc2/classxii_rtti_type_string_attribute.html", null ],
             [ "xiiVisualScriptVariableAttribute", "d0/d57/classxii_visual_script_variable_attribute.html", null ]
           ] ],
           [ "xiiVisualizerAttribute", "dd/d2d/classxii_visualizer_attribute.html", [
@@ -7574,7 +7593,6 @@ var hierarchy =
       [ "xiiSet< const xiiRTTI * >", "d6/d31/classxii_set.html", null ],
       [ "xiiSet< const xiiDocumentObject * >", "d6/d31/classxii_set.html", null ],
       [ "xiiSet< xiiExpression::FunctionDesc >", "d6/d31/classxii_set.html", null ],
-      [ "xiiSet< xiiGALCommandListVulkan * >", "d6/d31/classxii_set.html", null ],
       [ "xiiSet< xiiGALTextureHandle >", "d6/d31/classxii_set.html", null ],
       [ "xiiSet< xiiGALBufferHandle >", "d6/d31/classxii_set.html", null ],
       [ "xiiSet< xiiTempHashedString >", "d6/d31/classxii_set.html", null ],
@@ -7597,7 +7615,6 @@ var hierarchy =
     [ "xiiSetBase< xiiDataTransfer *, xiiCompareHelper< xiiDataTransfer * > >", "d6/daa/classxii_set_base.html", null ],
     [ "xiiSetBase< xiiExpression::FunctionDesc, xiiCompareHelper< xiiExpression::FunctionDesc > >", "d6/daa/classxii_set_base.html", null ],
     [ "xiiSetBase< xiiGALBufferHandle, xiiCompareHelper< xiiGALBufferHandle > >", "d6/daa/classxii_set_base.html", null ],
-    [ "xiiSetBase< xiiGALCommandListVulkan *, xiiCompareHelper< xiiGALCommandListVulkan * > >", "d6/daa/classxii_set_base.html", null ],
     [ "xiiSetBase< xiiGALTextureHandle, xiiCompareHelper< xiiGALTextureHandle > >", "d6/daa/classxii_set_base.html", null ],
     [ "xiiSetBase< xiiGameObject *, xiiCompareHelper< xiiGameObject * > >", "d6/daa/classxii_set_base.html", [
       [ "xiiSet< xiiGameObject *, xiiCompareHelper< xiiGameObject * >, xiiLocalAllocatorWrapper >", "d6/d31/classxii_set.html", null ]

@@ -169,6 +169,16 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a5328176f39c53434765a998ad391c76a" id="r_a5328176f39c53434765a998ad391c76a"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d1/dd2/classxii_g_a_l_command_queue.html">xiiGALCommandQueue</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5328176f39c53434765a998ad391c76a">GetDefaultCommandQueue</a> (<a class="el" href="../../d7/d55/structxii_bitflags.html">xiiBitflags</a>&lt; <a class="el" href="../../d7/db4/structxii_g_a_l_command_queue_type.html">xiiGALCommandQueueType</a> &gt; queueType, bool bAllowGraphicsCommandQueueFallback) const override final</td></tr>
 <tr class="memdesc:a5328176f39c53434765a998ad391c76a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves a pointer to the compute queue if available, null otherwise.  <br /></td></tr>
 <tr class="separator:a5328176f39c53434765a998ad391c76a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64f5b48b708d672a6c756ba0d7015e29" id="r_a64f5b48b708d672a6c756ba0d7015e29"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a64f5b48b708d672a6c756ba0d7015e29">SetDebugNamePlatform</a> (<a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sName) override final</td></tr>
+<tr class="separator:a64f5b48b708d672a6c756ba0d7015e29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7cd4290bc072bff2fa0e36d12566168" id="r_ab7cd4290bc072bff2fa0e36d12566168"><td class="memTemplParams" colspan="2"><a id="ab7cd4290bc072bff2fa0e36d12566168" name="ab7cd4290bc072bff2fa0e36d12566168"></a>
+template&lt;typename ObjectHandle , typename  = typename std::enable_if&lt;std::is_object&lt;ObjectHandle&gt;::value&gt;::type&gt; </td></tr>
+<tr class="memitem:ab7cd4290bc072bff2fa0e36d12566168"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>SetVulkanObjectDebugName</b> (ObjectHandle &amp;vkObject, const char *szDebugName, VmaAllocation vmaAllocation={})</td></tr>
+<tr class="separator:ab7cd4290bc072bff2fa0e36d12566168"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6fff7f8c47903aae772866f984781ba8" id="r_a6fff7f8c47903aae772866f984781ba8"><td class="memTemplParams" colspan="2"><a id="a6fff7f8c47903aae772866f984781ba8" name="a6fff7f8c47903aae772866f984781ba8"></a>
+template&lt;typename ObjectType , typename  = typename std::enable_if&lt;std::is_object&lt;ObjectType&gt;::value&gt;::type&gt; </td></tr>
+<tr class="memitem:a6fff7f8c47903aae772866f984781ba8"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>SafeReleaseDeviceObject</b> (ObjectType &amp;&amp;object, VmaAllocation vmaAlloaction)</td></tr>
+<tr class="separator:a6fff7f8c47903aae772866f984781ba8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af963dbc506313573a269f0418f221ef4" id="r_af963dbc506313573a269f0418f221ef4"><td class="memTemplParams" colspan="2"><a id="af963dbc506313573a269f0418f221ef4" name="af963dbc506313573a269f0418f221ef4"></a>
 template&lt;typename ObjectType , typename  = typename std::enable_if&lt;std::is_object&lt;ObjectType&gt;::value&gt;::type&gt; </td></tr>
 <tr class="memitem:af963dbc506313573a269f0418f221ef4"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>SafeReleaseDeviceObject</b> (ObjectType &amp;&amp;object)</td></tr>
@@ -236,9 +246,15 @@ XII_ALWAYS_INLINE const <a class="el" href="../../dc/dcd/structxii_g_a_l_device_
 <tr class="memitem:a4f97b1cd501d308a355998fb9edcde98" id="r_a4f97b1cd501d308a355998fb9edcde98"><td class="memItemLeft" align="right" valign="top"><a id="a4f97b1cd501d308a355998fb9edcde98" name="a4f97b1cd501d308a355998fb9edcde98"></a>
 XII_ALWAYS_INLINE <a class="el" href="../../d0/d60/classxii_array_ptr.html">xiiArrayPtr</a>&lt; vk::PipelineStageFlags &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetVulkanLogicalDeviceSupportedStagesFlags</b> ()</td></tr>
 <tr class="separator:a4f97b1cd501d308a355998fb9edcde98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aacf7876b9c15bbc36e31172abf5b82d0" id="r_aacf7876b9c15bbc36e31172abf5b82d0"><td class="memItemLeft" align="right" valign="top"><a id="aacf7876b9c15bbc36e31172abf5b82d0" name="aacf7876b9c15bbc36e31172abf5b82d0"></a>
+XII_ALWAYS_INLINE vk::PipelineStageFlags&#160;</td><td class="memItemRight" valign="bottom"><b>GetVulkanLogicalDeviceSupportedStagesFlags</b> (xiiUInt32 uiQueueFamilyIndex)</td></tr>
+<tr class="separator:aacf7876b9c15bbc36e31172abf5b82d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9a6b2414a95c46bbb6359fff807db4d0" id="r_a9a6b2414a95c46bbb6359fff807db4d0"><td class="memItemLeft" align="right" valign="top"><a id="a9a6b2414a95c46bbb6359fff807db4d0" name="a9a6b2414a95c46bbb6359fff807db4d0"></a>
 XII_ALWAYS_INLINE <a class="el" href="../../d0/d60/classxii_array_ptr.html">xiiArrayPtr</a>&lt; vk::AccessFlags &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetVulkanLogicalDeviceSupportedAccessFlags</b> ()</td></tr>
 <tr class="separator:a9a6b2414a95c46bbb6359fff807db4d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1df3eabab272e05a4ad0b654ba267865" id="r_a1df3eabab272e05a4ad0b654ba267865"><td class="memItemLeft" align="right" valign="top"><a id="a1df3eabab272e05a4ad0b654ba267865" name="a1df3eabab272e05a4ad0b654ba267865"></a>
+XII_ALWAYS_INLINE vk::AccessFlags&#160;</td><td class="memItemRight" valign="bottom"><b>GetVulkanLogicalDeviceSupportedAccessFlags</b> (xiiUInt32 uiQueueFamilyIndex)</td></tr>
+<tr class="separator:a1df3eabab272e05a4ad0b654ba267865"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af7871ec2213b834761945164ad4a54da" id="r_af7871ec2213b834761945164ad4a54da"><td class="memItemLeft" align="right" valign="top"><a id="af7871ec2213b834761945164ad4a54da" name="af7871ec2213b834761945164ad4a54da"></a>
 XII_ALWAYS_INLINE const <a class="el" href="../../d3/d98/structxii_g_a_l_device_vulkan_1_1_queue_information.html">xiiGALDeviceVulkan::QueueInformation</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetGraphicsQueueInformation</b> () const</td></tr>
 <tr class="separator:af7871ec2213b834761945164ad4a54da"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -753,10 +769,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>VerifyMultithreadedAc
 <tr class="memitem:a6e4ebf02b56a5b38d2844e92afd68512 inherit pro_methods_classxii_g_a_l_device" id="r_a6e4ebf02b56a5b38d2844e92afd68512"><td class="memItemLeft" align="right" valign="top">
 <a class="el" href="../../d1/dba/classxii_g_a_l_buffer_handle.html">xiiGALBufferHandle</a>&#160;</td><td class="memItemRight" valign="bottom"><b>FinalizeBufferInternal</b> (const <a class="el" href="../../d7/d69/structxii_g_a_l_buffer_creation_description.html">xiiGALBufferCreationDescription</a> &amp;description, <a class="el" href="../../da/d03/classxii_g_a_l_buffer.html">xiiGALBuffer</a> *pBuffer)</td></tr>
 <tr class="separator:a6e4ebf02b56a5b38d2844e92afd68512 inherit pro_methods_classxii_g_a_l_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pro_methods_classxii_g_a_l_object"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_methods_classxii_g_a_l_object')"><img src="../../closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="../../d3/dda/classxii_g_a_l_object.html">xiiGALObject</a></td></tr>
-<tr class="memitem:a0c4418a3bf119dafd498fcd1274cba52 inherit pro_methods_classxii_g_a_l_object" id="r_a0c4418a3bf119dafd498fcd1274cba52"><td class="memItemLeft" align="right" valign="top">
-virtual XII_ALWAYS_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><b>SetDebugNamePlatform</b> (<a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sName)</td></tr>
-<tr class="separator:a0c4418a3bf119dafd498fcd1274cba52 inherit pro_methods_classxii_g_a_l_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
 Friends</h2></td></tr>
@@ -984,6 +996,33 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>PipelineResourceSign
 
 </div>
 </div>
+<a id="a64f5b48b708d672a6c756ba0d7015e29" name="a64f5b48b708d672a6c756ba0d7015e29"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a64f5b48b708d672a6c756ba0d7015e29">&#9670;&#160;</a></span>SetDebugNamePlatform()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void xiiGALDeviceVulkan::SetDebugNamePlatform </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a></td>          <td class="paramname"><span class="paramname"><em>sName</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">final</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented from <a class="el" href="../../d3/dda/classxii_g_a_l_object.html">xiiGALObject</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>/home/runner/work/XII/XII/Source/Engine/GraphicsVulkan/Device/<a class="el" href="../../d2/d65/_device_vulkan_8h_source.html">DeviceVulkan.h</a></li>
 <li>/home/runner/work/XII/XII/Source/Engine/GraphicsVulkan/Device/Implementation/<b>DeviceVulkan.cpp</b></li>
@@ -994,7 +1033,7 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>PipelineResourceSign
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d3/d6b/classxii_g_a_l_device_vulkan.html">xiiGALDeviceVulkan</a></li>
-    <li class="footer">Generated on Tue Dec 17 2024 16:26:56 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Mon Dec 23 2024 17:27:12 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

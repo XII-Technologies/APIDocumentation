@@ -176,24 +176,27 @@ $(function(){initNavTree('d2/d94/_controller_8h_source.html','../../'); initResi
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>  <span class="keywordtype">void</span> SetControllerMapping(xiiUInt8 uiVirtualController, xiiInt8 iTakeInputFromPhysical);</div>
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>  xiiInt8 GetControllerMapping(xiiUInt8 uiVirtual) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>  xiiInt8 GetPhysicalControllerMapping(xiiUInt8 uiVirtual) <span class="keyword">const</span>;</div>
 <div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno"><a class="line" href="../../d4/dc9/classxii_input_device_controller.html#a978e80120b1033bd2f47a38a8918f7b7">   75</a></span>  <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="../../d4/dc9/classxii_input_device_controller.html#a978e80120b1033bd2f47a38a8918f7b7">IsControllerConnected</a>(xiiUInt8 uiPhysical) <span class="keyword">const</span> = 0;</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>  xiiInt8 GetVirtualControllerMapping(xiiUInt8 uiPhysical) <span class="keyword">const</span>;</div>
 <div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>  <span class="keywordtype">void</span> AddVibrationTrack(xiiUInt8 uiVirtual, Motor::Enum motor, <span class="keywordtype">float</span>* pVibrationTrackValue, xiiUInt32 uiSamples, <span class="keywordtype">float</span> fScalingFactor = 1.0f);</div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span> </div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span><span class="keyword">protected</span>:</div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>  <span class="keywordtype">void</span> UpdateVibration(<a class="code hl_struct" href="../../d7/dc1/structxii_time.html">xiiTime</a> tTimeDifference);</div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span> </div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno"><a class="line" href="../../d4/dc9/classxii_input_device_controller.html#adb0c15a82abcde3657a83b0ecc4721d0">  106</a></span>  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="../../d4/dc9/classxii_input_device_controller.html#adb0c15a82abcde3657a83b0ecc4721d0">ApplyVibration</a>(xiiUInt8 uiPhysicalController, Motor::Enum eMotor, <span class="keywordtype">float</span> fStrength) = 0;</div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span> </div>
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>  xiiUInt32 m_uiVibrationTrackPos;</div>
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>  <span class="keywordtype">float</span>     m_fVibrationTracks[MaxControllers][Motor::ENUM_COUNT][MaxVibrationSamples];</div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>  <span class="keywordtype">bool</span>      m_bVibrationEnabled[MaxControllers];</div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>  xiiInt8   m_iControllerMapping[MaxControllers];</div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>  <span class="keywordtype">float</span>     m_fVibrationStrength[MaxControllers][Motor::ENUM_COUNT];</div>
-<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>};</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno"><a class="line" href="../../d4/dc9/classxii_input_device_controller.html#a978e80120b1033bd2f47a38a8918f7b7">   79</a></span>  <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="../../d4/dc9/classxii_input_device_controller.html#a978e80120b1033bd2f47a38a8918f7b7">IsControllerConnected</a>(xiiUInt8 uiPhysical) <span class="keyword">const</span> = 0;</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>  <span class="keywordtype">void</span> AddVibrationTrack(xiiUInt8 uiVirtual, Motor::Enum motor, <span class="keywordtype">float</span>* pVibrationTrackValue, xiiUInt32 uiSamples, <span class="keywordtype">float</span> fScalingFactor = 1.0f);</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span> </div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span><span class="keyword">protected</span>:</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>  <span class="keywordtype">void</span> UpdateVibration(<a class="code hl_struct" href="../../d7/dc1/structxii_time.html">xiiTime</a> tTimeDifference);</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span> </div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno"><a class="line" href="../../d4/dc9/classxii_input_device_controller.html#adb0c15a82abcde3657a83b0ecc4721d0">  110</a></span>  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="../../d4/dc9/classxii_input_device_controller.html#adb0c15a82abcde3657a83b0ecc4721d0">ApplyVibration</a>(xiiUInt8 uiPhysicalController, Motor::Enum eMotor, <span class="keywordtype">float</span> fStrength) = 0;</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span> </div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>  xiiUInt32 m_uiVibrationTrackPos;</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>  <span class="keywordtype">float</span>     m_fVibrationTracks[MaxControllers][Motor::ENUM_COUNT][MaxVibrationSamples];</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>  <span class="keywordtype">bool</span>      m_bVibrationEnabled[MaxControllers];</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>  xiiInt8   m_iVirtualToPhysicalControllerMapping[MaxControllers]; <span class="comment">// maps from virtual controller index to physical device index</span></div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>  xiiInt8   m_iPhysicalToVirtualControllerMapping[MaxControllers]; <span class="comment">// maps from physical device index to virtual controller index</span></div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>  <span class="keywordtype">float</span>     m_fVibrationStrength[MaxControllers][Motor::ENUM_COUNT];</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>};</div>
 </div>
 <div class="ttc" id="aclassxii_input_device_controller_html"><div class="ttname"><a href="../../d4/dc9/classxii_input_device_controller.html">xiiInputDeviceController</a></div><div class="ttdoc">This class is the base class for all controller type input devices.</div><div class="ttdef"><b>Definition</b> Controller.h:12</div></div>
 <div class="ttc" id="aclassxii_input_device_controller_html_a978e80120b1033bd2f47a38a8918f7b7"><div class="ttname"><a href="../../d4/dc9/classxii_input_device_controller.html#a978e80120b1033bd2f47a38a8918f7b7">xiiInputDeviceController::IsControllerConnected</a></div><div class="ttdeci">virtual bool IsControllerConnected(xiiUInt8 uiPhysical) const =0</div><div class="ttdoc">Queries whether the controller with the given physical index is connected to the computer....</div></div>
@@ -207,7 +210,7 @@ $(function(){initNavTree('d2/d94/_controller_8h_source.html','../../'); initResi
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.html">home</a></li><li class="navelem"><a class="el" href="../../dir_1036706e55c22cab35bc1c58ee689f1d.html">runner</a></li><li class="navelem"><a class="el" href="../../dir_629f8151d55d307162ff2d619fb1783d.html">work</a></li><li class="navelem"><a class="el" href="../../dir_1ddc44fe1263a8c7935fa6130b7d9499.html">XII</a></li><li class="navelem"><a class="el" href="../../dir_2c1b6808f12952f4c36e05ba7068379a.html">XII</a></li><li class="navelem"><a class="el" href="../../dir_b5a1c4ecfca018ad24b729e213296d41.html">Source</a></li><li class="navelem"><a class="el" href="../../dir_e321052006a51284e67389ab20037e7c.html">Engine</a></li><li class="navelem"><a class="el" href="../../dir_6934db396743bb3844d563c7fa1f32a7.html">Core</a></li><li class="navelem"><a class="el" href="../../dir_c4fec11ccf1e859a90dd25bc0dca3b53.html">Input</a></li><li class="navelem"><a class="el" href="../../dir_5236c32178b05033e6bdb0358acd5f86.html">DeviceTypes</a></li><li class="navelem"><b>Controller.h</b></li>
-    <li class="footer">Generated on Tue Dec 17 2024 16:26:44 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Mon Dec 23 2024 17:27:03 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

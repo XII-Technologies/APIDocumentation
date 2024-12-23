@@ -252,6 +252,8 @@ Protected Member Functions</h2></td></tr>
 <tr class="separator:a375903ee598387229108320135876a23"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a299dd8ab9e65afd81adad594be6cca8e" id="r_a299dd8ab9e65afd81adad594be6cca8e"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a299dd8ab9e65afd81adad594be6cca8e">DeInitPlatform</a> () override final</td></tr>
 <tr class="separator:a299dd8ab9e65afd81adad594be6cca8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a203685003dbe8da83c60a9a9873897ad" id="r_a203685003dbe8da83c60a9a9873897ad"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a203685003dbe8da83c60a9a9873897ad">SetDebugNamePlatform</a> (<a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sName) override final</td></tr>
+<tr class="separator:a203685003dbe8da83c60a9a9873897ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3ab835b914ec74561bc69c4ebec2067a" id="r_a3ab835b914ec74561bc69c4ebec2067a"><td class="memItemLeft" align="right" valign="top"><a id="a3ab835b914ec74561bc69c4ebec2067a" name="a3ab835b914ec74561bc69c4ebec2067a"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>ReleaseResourcesImmediately</b> ()</td></tr>
 <tr class="separator:a3ab835b914ec74561bc69c4ebec2067a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -269,10 +271,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>UpdateLastCompletedFe
 <tr class="memitem:a7ba98273bd740d9f4e9ed729de53b723 inherit pro_methods_classxii_g_a_l_device_object" id="r_a7ba98273bd740d9f4e9ed729de53b723"><td class="memItemLeft" align="right" valign="top">
 &#160;</td><td class="memItemRight" valign="bottom"><b>xiiGALDeviceObject</b> (<a class="el" href="../../d5/d19/classxii_g_a_l_device.html">xiiGALDevice</a> *pDevice)</td></tr>
 <tr class="separator:a7ba98273bd740d9f4e9ed729de53b723 inherit pro_methods_classxii_g_a_l_device_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pro_methods_classxii_g_a_l_object"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_methods_classxii_g_a_l_object')"><img src="../../closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="../../d3/dda/classxii_g_a_l_object.html">xiiGALObject</a></td></tr>
-<tr class="memitem:a0c4418a3bf119dafd498fcd1274cba52 inherit pro_methods_classxii_g_a_l_object" id="r_a0c4418a3bf119dafd498fcd1274cba52"><td class="memItemLeft" align="right" valign="top">
-virtual XII_ALWAYS_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><b>SetDebugNamePlatform</b> (<a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sName)</td></tr>
-<tr class="separator:a0c4418a3bf119dafd498fcd1274cba52 inherit pro_methods_classxii_g_a_l_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -404,6 +402,33 @@ static const <a class="el" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a>
 
 </div>
 </div>
+<a id="a203685003dbe8da83c60a9a9873897ad" name="a203685003dbe8da83c60a9a9873897ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a203685003dbe8da83c60a9a9873897ad">&#9670;&#160;</a></span>SetDebugNamePlatform()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void xiiGALFenceVulkan::SetDebugNamePlatform </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a></td>          <td class="paramname"><span class="paramname"><em>sName</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">final</span><span class="mlabel">override</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented from <a class="el" href="../../d3/dda/classxii_g_a_l_object.html">xiiGALObject</a>.</p>
+
+</div>
+</div>
 <a id="ab40b858ecfbd6baf64e7bd3fdea52d41" name="ab40b858ecfbd6baf64e7bd3fdea52d41"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab40b858ecfbd6baf64e7bd3fdea52d41">&#9670;&#160;</a></span>Signal()</h2>
 
@@ -488,7 +513,7 @@ The fence must have been created with type General. </dd></dl>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dc/df3/classxii_g_a_l_fence_vulkan.html">xiiGALFenceVulkan</a></li>
-    <li class="footer">Generated on Tue Dec 17 2024 16:26:56 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Mon Dec 23 2024 17:27:12 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

@@ -112,7 +112,7 @@ var searchData=
   ['fixededgetop_109',['FixedEdgeTop',['../d6/dd3/structxii_cloth_sheet_flags.html#a7d9a53d7f8a5e1e6808e2d49a533060ca5f1b0b1cbc327ad0418a2cfc4ee4dc65',1,'xiiClothSheetFlags']]],
   ['fixedfromserialization_110',['FixedFromSerialization',['../d8/ddd/structxii_prefab_instantiation_options.html#a5cd1ff127e47a915103c05de7f88eb63a57a1fef61773a50df3142c703b88e45e',1,'xiiPrefabInstantiationOptions']]],
   ['fixedjointconfig_111',['FixedJointConfig',['../d5/d28/structxii_physics_world_module_interface_1_1_fixed_joint_config.html',1,'xiiPhysicsWorldModuleInterface']]],
-  ['flags_112',['Flags',['../d4/d8b/structxii_expression_v_m_1_1_flags.html',1,'xiiExpressionVM::Flags'],['../d9/dfa/structxii_spatial_data_1_1_flags.html',1,'xiiSpatialData::Flags']]],
+  ['flags_112',['Flags',['../d4/d8b/structxii_expression_v_m_1_1_flags.html',1,'xiiExpressionVM::Flags'],['../d9/dfa/structxii_spatial_data_1_1_flags.html',1,'xiiSpatialData::Flags'],['../de/dd1/structxii_virtual_thumb_stick_1_1_flags.html',1,'xiiVirtualThumbStick::Flags']]],
   ['flip_113',['Flip',['../d5/dd4/structxii_plane_template.html#a0a21d88e1f1714568e089eff8ebaa698',1,'xiiPlaneTemplate']]],
   ['flipifnecessary_114',['FlipIfNecessary',['../d5/dd4/structxii_plane_template.html#a9a582958aa4655d7b232dcf4173c1625',1,'xiiPlaneTemplate']]],
   ['flipped_115',['Flipped',['../da/d7c/structxii_clip_space_y_mode.html#a9156e519b2e4056da392017369de3676aa088ed30a7e530a62fe5dd30e2ed1ac8',1,'xiiClipSpaceYMode']]],

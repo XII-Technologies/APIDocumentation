@@ -11,7 +11,7 @@ var searchData=
   ['fileservetype_8',['FileserveType',['../d9/df6/classxii_data_directory_1_1_fileserve_type.html',1,'xiiDataDirectory']]],
   ['filestatus_9',['FileStatus',['../d9/d71/structxii_fileserve_client_context_1_1_file_status.html',1,'xiiFileserveClientContext']]],
   ['fixedjointconfig_10',['FixedJointConfig',['../d5/d28/structxii_physics_world_module_interface_1_1_fixed_joint_config.html',1,'xiiPhysicsWorldModuleInterface']]],
-  ['flags_11',['Flags',['../d4/d8b/structxii_expression_v_m_1_1_flags.html',1,'xiiExpressionVM::Flags'],['../d9/dfa/structxii_spatial_data_1_1_flags.html',1,'xiiSpatialData::Flags']]],
+  ['flags_11',['Flags',['../d4/d8b/structxii_expression_v_m_1_1_flags.html',1,'xiiExpressionVM::Flags'],['../d9/dfa/structxii_spatial_data_1_1_flags.html',1,'xiiSpatialData::Flags'],['../de/dd1/structxii_virtual_thumb_stick_1_1_flags.html',1,'xiiVirtualThumbStick::Flags']]],
   ['floatbinding_12',['FloatBinding',['../d3/dae/structxii_property_anim_component_1_1_float_binding.html',1,'xiiPropertyAnimComponent']]],
   ['fn_5ftest_13',['Fn_Test',['../dc/dfc/class_fn___test.html',1,'']]],
   ['folderreader_14',['FolderReader',['../da/d76/classxii_data_directory_1_1_folder_reader.html',1,'xiiDataDirectory']]],

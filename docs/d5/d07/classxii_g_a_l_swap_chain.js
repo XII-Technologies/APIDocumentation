@@ -1,6 +1,5 @@
 var classxii_g_a_l_swap_chain =
 [
-    [ "AcquireNextRenderTarget", "d5/d07/classxii_g_a_l_swap_chain.html#ac49523c9018ad668de32827dd5e212f4", null ],
     [ "GetBackBufferTexture", "d5/d07/classxii_g_a_l_swap_chain.html#a79e02fea314c01af515f01b56057a4ba", null ],
     [ "GetCurrentSize", "d5/d07/classxii_g_a_l_swap_chain.html#ab2462e578a24df82ad84acebfa9593b1", null ],
     [ "GetDescription", "d5/d07/classxii_g_a_l_swap_chain.html#a742f41755206a63d1e15d4fe1514d915", null ],

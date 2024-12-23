@@ -148,11 +148,8 @@ Inheritance diagram for xiiGALSwapChainVulkan:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a4b75e2dd325824e0ea7affea66155e75" id="r_a4b75e2dd325824e0ea7affea66155e75"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4b75e2dd325824e0ea7affea66155e75">AcquireNextRenderTarget</a> () override final</td></tr>
-<tr class="memdesc:a4b75e2dd325824e0ea7affea66155e75"><td class="mdescLeft">&#160;</td><td class="mdescRight">Acquires the next render target for presenting.  <br /></td></tr>
-<tr class="separator:a4b75e2dd325824e0ea7affea66155e75"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abf2f34a1d819df481aa4a0b5df07753f" id="r_abf2f34a1d819df481aa4a0b5df07753f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abf2f34a1d819df481aa4a0b5df07753f">Present</a> () override final</td></tr>
-<tr class="memdesc:abf2f34a1d819df481aa4a0b5df07753f"><td class="mdescLeft">&#160;</td><td class="mdescRight">This presents a rendered image to the screen.  <br /></td></tr>
+<tr class="memdesc:abf2f34a1d819df481aa4a0b5df07753f"><td class="mdescLeft">&#160;</td><td class="mdescRight">This presents a rendered image to the screen. Additionally, acquires the next render target for presenting on where supported.  <br /></td></tr>
 <tr class="separator:abf2f34a1d819df481aa4a0b5df07753f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afa0fe480c99dea7e32338098f0215c4c" id="r_afa0fe480c99dea7e32338098f0215c4c"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afa0fe480c99dea7e32338098f0215c4c">Resize</a> (<a class="el" href="../../db/d7f/classxii_size_template.html">xiiSizeU32</a> newSize, <a class="el" href="../../de/dfd/structxii_enum.html">xiiEnum</a>&lt; <a class="el" href="../../d9/d2c/structxii_g_a_l_surface_transform.html">xiiGALSurfaceTransform</a> &gt; newTransform=<a class="el" href="../../d9/d2c/structxii_g_a_l_surface_transform.html#a79c57cb47773dc230f242eb53adc9148ade5162c0b23228a11932b56dcf4abcba">xiiGALSurfaceTransform::Optimal</a>) override final</td></tr>
 <tr class="memdesc:afa0fe480c99dea7e32338098f0215c4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">This changes the swap chain size.  <br /></td></tr>
@@ -255,6 +252,8 @@ Protected Member Functions</h2></td></tr>
 <tr class="separator:a546ac733067a250f074418542890e5c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af1a647a2a6705b2cb03e4cf9299009de" id="r_af1a647a2a6705b2cb03e4cf9299009de"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af1a647a2a6705b2cb03e4cf9299009de">DeInitPlatform</a> () override final</td></tr>
 <tr class="separator:af1a647a2a6705b2cb03e4cf9299009de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5f2ceecaed8d68fb130a6b627dbf284" id="r_af5f2ceecaed8d68fb130a6b627dbf284"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af5f2ceecaed8d68fb130a6b627dbf284">SetDebugNamePlatform</a> (<a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sName) override final</td></tr>
+<tr class="separator:af5f2ceecaed8d68fb130a6b627dbf284"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abff0f349be79c00b08e17aa3eaf63099" id="r_abff0f349be79c00b08e17aa3eaf63099"><td class="memItemLeft" align="right" valign="top"><a id="abff0f349be79c00b08e17aa3eaf63099" name="abff0f349be79c00b08e17aa3eaf63099"></a>
 <a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><b>CreateVulkanSurface</b> ()</td></tr>
 <tr class="separator:abff0f349be79c00b08e17aa3eaf63099"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -287,10 +286,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>WaitForImageAcquiredF
 <tr class="memitem:a7ba98273bd740d9f4e9ed729de53b723 inherit pro_methods_classxii_g_a_l_device_object" id="r_a7ba98273bd740d9f4e9ed729de53b723"><td class="memItemLeft" align="right" valign="top">
 &#160;</td><td class="memItemRight" valign="bottom"><b>xiiGALDeviceObject</b> (<a class="el" href="../../d5/d19/classxii_g_a_l_device.html">xiiGALDevice</a> *pDevice)</td></tr>
 <tr class="separator:a7ba98273bd740d9f4e9ed729de53b723 inherit pro_methods_classxii_g_a_l_device_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pro_methods_classxii_g_a_l_object"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_methods_classxii_g_a_l_object')"><img src="../../closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="../../d3/dda/classxii_g_a_l_object.html">xiiGALObject</a></td></tr>
-<tr class="memitem:a0c4418a3bf119dafd498fcd1274cba52 inherit pro_methods_classxii_g_a_l_object" id="r_a0c4418a3bf119dafd498fcd1274cba52"><td class="memItemLeft" align="right" valign="top">
-virtual XII_ALWAYS_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><b>SetDebugNamePlatform</b> (<a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sName)</td></tr>
-<tr class="separator:a0c4418a3bf119dafd498fcd1274cba52 inherit pro_methods_classxii_g_a_l_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -377,35 +372,6 @@ static const <a class="el" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a>
 <tr class="separator:a4bde433b55ebd55edf63c57239799bba inherit pub_static_methods_classxii_no_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a4b75e2dd325824e0ea7affea66155e75" name="a4b75e2dd325824e0ea7affea66155e75"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4b75e2dd325824e0ea7affea66155e75">&#9670;&#160;</a></span>AcquireNextRenderTarget()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void xiiGALSwapChainVulkan::AcquireNextRenderTarget </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">final</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Acquires the next render target for presenting. </p>
-
-<p>Implements <a class="el" href="../../d5/d07/classxii_g_a_l_swap_chain.html#ac49523c9018ad668de32827dd5e212f4">xiiGALSwapChain</a>.</p>
-
-</div>
-</div>
 <a id="af1a647a2a6705b2cb03e4cf9299009de" name="af1a647a2a6705b2cb03e4cf9299009de"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af1a647a2a6705b2cb03e4cf9299009de">&#9670;&#160;</a></span>DeInitPlatform()</h2>
 
@@ -483,7 +449,7 @@ static const <a class="el" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a>
 </table>
 </div><div class="memdoc">
 
-<p>This presents a rendered image to the screen. </p>
+<p>This presents a rendered image to the screen. Additionally, acquires the next render target for presenting on where supported. </p>
 
 <p>Implements <a class="el" href="../../d5/d07/classxii_g_a_l_swap_chain.html#a11f483e43d58395675e8bc4fecafe791">xiiGALSwapChain</a>.</p>
 
@@ -527,6 +493,33 @@ static const <a class="el" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a>
 <dl class="section note"><dt>Note</dt><dd>When resizing non-primary swap chains, the engine unbinds the swap chain buffers from the output. </dd></dl>
 
 <p>Implements <a class="el" href="../../d5/d07/classxii_g_a_l_swap_chain.html#a33794e984390ed3b9dd85625b60ef42c">xiiGALSwapChain</a>.</p>
+
+</div>
+</div>
+<a id="af5f2ceecaed8d68fb130a6b627dbf284" name="af5f2ceecaed8d68fb130a6b627dbf284"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af5f2ceecaed8d68fb130a6b627dbf284">&#9670;&#160;</a></span>SetDebugNamePlatform()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void xiiGALSwapChainVulkan::SetDebugNamePlatform </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a></td>          <td class="paramname"><span class="paramname"><em>sName</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">final</span><span class="mlabel">override</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented from <a class="el" href="../../d3/dda/classxii_g_a_l_object.html">xiiGALObject</a>.</p>
 
 </div>
 </div>
@@ -628,7 +621,7 @@ static const <a class="el" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d5/dfb/classxii_g_a_l_swap_chain_vulkan.html">xiiGALSwapChainVulkan</a></li>
-    <li class="footer">Generated on Tue Dec 17 2024 16:26:57 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Mon Dec 23 2024 17:27:13 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>
