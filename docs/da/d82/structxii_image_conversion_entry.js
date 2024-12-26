@@ -1,4 +1,4 @@
 var structxii_image_conversion_entry =
 [
-    [ "m_additionalPenalty", "da/d82/structxii_image_conversion_entry.html#af3d3f6e80de46922ae4bf8295edd2129", null ]
+    [ "m_fAdditionalPenalty", "da/d82/structxii_image_conversion_entry.html#a95be92565ab910968c67149a06b79283", null ]
 ];

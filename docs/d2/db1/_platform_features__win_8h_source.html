@@ -172,29 +172,31 @@ $(function(){initNavTree('d2/db1/_platform_features__win_8h_source.html','../../
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="preprocessor">#if XII_ENABLED(XII_PLATFORM_ARCH_X86)</span></div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="preprocessor">#  if __AVX__</span></div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="preprocessor">#    define XII_SIMD_IMPLEMENTATION XII_SIMD_IMPLEMENTATION_AVX</span></div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="preprocessor">#  elif __SSE4_1__ &amp;&amp; __SSE3__</span></div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="preprocessor">#    define XII_SIMD_IMPLEMENTATION XII_SIMD_IMPLEMENTATION_SSE</span></div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="preprocessor">#  else</span></div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="preprocessor">#    define XII_SIMD_IMPLEMENTATION XII_SIMD_IMPLEMENTATION_FPU</span></div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="preprocessor">#  endif</span></div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="preprocessor">#elif XII_ENABLED(XII_PLATFORM_ARCH_ARM)</span></div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="preprocessor">#  define XII_SIMD_IMPLEMENTATION XII_SIMD_IMPLEMENTATION_FPU</span></div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="preprocessor">#else</span></div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="preprocessor">#  error &quot;Unknown architecture.&quot;</span></div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="preprocessor">#undef XII_SUPPORTS_CRASH_DUMPS</span></div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="preprocessor">#define XII_SUPPORTS_CRASH_DUMPS XII_ON</span></div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="preprocessor">#undef XII_SUPPORTS_LONG_PATHS</span></div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="preprocessor">#define XII_SUPPORTS_LONG_PATHS XII_ON</span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="preprocessor">#    define XII_SSE_LEVEL           XII_AVX_2</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="preprocessor">#  elif __SSE4_1__ &amp;&amp; __SSE3__</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="preprocessor">#    define XII_SIMD_IMPLEMENTATION XII_SIMD_IMPLEMENTATION_SSE</span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="preprocessor">#    define XII_SSE_LEVEL           XII_SSE_42</span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="preprocessor">#  else</span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="preprocessor">#    define XII_SIMD_IMPLEMENTATION XII_SIMD_IMPLEMENTATION_FPU</span></div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="preprocessor">#  endif</span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="preprocessor">#elif XII_ENABLED(XII_PLATFORM_ARCH_ARM)</span></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="preprocessor">#  define XII_SIMD_IMPLEMENTATION XII_SIMD_IMPLEMENTATION_FPU</span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="preprocessor">#  error &quot;Unknown architecture.&quot;</span></div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="preprocessor">#undef XII_SUPPORTS_CRASH_DUMPS</span></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="preprocessor">#define XII_SUPPORTS_CRASH_DUMPS XII_ON</span></div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="preprocessor">#undef XII_SUPPORTS_LONG_PATHS</span></div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="preprocessor">#define XII_SUPPORTS_LONG_PATHS XII_ON</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.html">home</a></li><li class="navelem"><a class="el" href="../../dir_1036706e55c22cab35bc1c58ee689f1d.html">runner</a></li><li class="navelem"><a class="el" href="../../dir_629f8151d55d307162ff2d619fb1783d.html">work</a></li><li class="navelem"><a class="el" href="../../dir_1ddc44fe1263a8c7935fa6130b7d9499.html">XII</a></li><li class="navelem"><a class="el" href="../../dir_2c1b6808f12952f4c36e05ba7068379a.html">XII</a></li><li class="navelem"><a class="el" href="../../dir_b5a1c4ecfca018ad24b729e213296d41.html">Source</a></li><li class="navelem"><a class="el" href="../../dir_e321052006a51284e67389ab20037e7c.html">Engine</a></li><li class="navelem"><a class="el" href="../../dir_be0c42c58b36f42c54ec54024ed4f6af.html">Foundation</a></li><li class="navelem"><a class="el" href="../../dir_864d26a8cb97342baee8bb044fc1552e.html">Basics</a></li><li class="navelem"><a class="el" href="../../dir_79e8a34a8dabf1afe977053f60c7e695.html">Platform</a></li><li class="navelem"><a class="el" href="../../dir_2e3d0faf26c6db9300a6cb19af434fa3.html">Windows</a></li><li class="navelem"><b>PlatformFeatures_win.h</b></li>
-    <li class="footer">Generated on Mon Dec 23 2024 17:27:04 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Thu Dec 26 2024 20:52:10 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

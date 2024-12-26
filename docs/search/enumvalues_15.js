@@ -24,9 +24,10 @@ var searchData=
   ['up_21',['Up',['../db/d09/structxii_key_state.html#a089112c653dc7e641b840a3d8315edd3a2e1cc15ec2e7f5322ab51a91cc3d1479',1,'xiiKeyState']]],
   ['updateimmediately_22',['UpdateImmediately',['../d0/d91/classxii_game_object.html#a05ca9a629994b6e8be20ba6c74f46f45a28495bc4bd0366e01fb565853b6bfcd2',1,'xiiGameObject']]],
   ['updateonmainthread_23',['UpdateOnMainThread',['../df/dd1/structxii_resource_flags.html#a35ed53a09c8c81dd2636b2b56d69618ca7a5a37e6fa29b6e6a8156f3c108d2687',1,'xiiResourceFlags']]],
-  ['upperfieldfirst_24',['UpperFieldFirst',['../dd/d96/structxii_g_a_l_scan_line_order.html#adfc935f7835900d8942ddaa31a0ebd00ae77aa3a5fb457798ea671d599556fbcd',1,'xiiGALScanLineOrder']]],
-  ['useargcargv_25',['UseArgcArgv',['../d0/d67/classxii_command_line_utils.html#a7efa5ae6984ae371a8304e720be0c1eaa83e0dbb218813700b9aa2d558304bd17',1,'xiiCommandLineUtils']]],
-  ['userdefined_26',['UserDefined',['../d6/dee/structxii_g_a_l_hit_group_binding_mode.html#a4affb3f18e9e1d878d25fff69dbabed9a8a6181be37f30fac56c2f7c2f5d39426',1,'xiiGALHitGroupBindingMode']]],
-  ['ushort_27',['UShort',['../d0/d60/classxii_g_a_l_device_utilities.html#a434d6c0afddd68f58d7b22eda992b34badfe785f133347f9b473f99009732b1bc',1,'xiiGALDeviceUtilities']]],
-  ['uuid_28',['Uuid',['../dd/dba/structxii_variant_type.html#a38d867476ba7137c38a09976ece9ee6ba6e346a06313406f6befb99e786d0a38d',1,'xiiVariantType']]]
+  ['updatestate_24',['UpdateState',['../db/da0/structxii_g_a_l_state_transition_flags.html#a633acb4fc10b4333cca2ad1b36b37490a74745250a5449ab469e0804b98ed1725',1,'xiiGALStateTransitionFlags']]],
+  ['upperfieldfirst_25',['UpperFieldFirst',['../dd/d96/structxii_g_a_l_scan_line_order.html#adfc935f7835900d8942ddaa31a0ebd00ae77aa3a5fb457798ea671d599556fbcd',1,'xiiGALScanLineOrder']]],
+  ['useargcargv_26',['UseArgcArgv',['../d0/d67/classxii_command_line_utils.html#a7efa5ae6984ae371a8304e720be0c1eaa83e0dbb218813700b9aa2d558304bd17',1,'xiiCommandLineUtils']]],
+  ['userdefined_27',['UserDefined',['../d6/dee/structxii_g_a_l_hit_group_binding_mode.html#a4affb3f18e9e1d878d25fff69dbabed9a8a6181be37f30fac56c2f7c2f5d39426',1,'xiiGALHitGroupBindingMode']]],
+  ['ushort_28',['UShort',['../d0/d60/classxii_g_a_l_device_utilities.html#a434d6c0afddd68f58d7b22eda992b34badfe785f133347f9b473f99009732b1bc',1,'xiiGALDeviceUtilities']]],
+  ['uuid_29',['Uuid',['../dd/dba/structxii_variant_type.html#a38d867476ba7137c38a09976ece9ee6ba6e346a06313406f6befb99e786d0a38d',1,'xiiVariantType']]]
 ];

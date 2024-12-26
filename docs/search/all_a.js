@@ -237,7 +237,7 @@ var searchData=
   ['isidentitycomponentmapping_234',['IsIdentityComponentMapping',['../d2/db9/classxii_g_a_l_texture_utilities.html#a8c2c6b504bc8eee289b2e4da2a56f87b',1,'xiiGALTextureUtilities']]],
   ['isinheadlessmode_235',['IsInHeadlessMode',['../d1/d83/classxii_qt_editor_app.html#a5b271254bf0d2a8e7c5f39c6958d4019',1,'xiiQtEditorApp']]],
   ['isinitialized_236',['IsInitialized',['../da/d40/classxii_frame_capture_interface.html#a78b0e8a0757521002787d2598cb4b063',1,'xiiFrameCaptureInterface::IsInitialized()'],['../d2/d13/classxii_window.html#a414030449608dd1ef8b5ed2aa93c5e4c',1,'xiiWindow::IsInitialized()'],['../d4/d73/classxii_dummy_x_r.html#a4a37b29c65df52652ecee382a4def8cc',1,'xiiDummyXR::IsInitialized()'],['../d9/d58/classxii_x_r_interface.html#ab255b019c13dd9d5ec470b84aa836b76',1,'xiiXRInterface::IsInitialized()'],['../db/de8/classxii_x_r_remoting_interface.html#a94d569547e2edc4a2beef860e64f305a',1,'xiiXRRemotingInterface::IsInitialized()'],['../de/da7/classxii_render_doc.html#a5018071a7b03fdd7c71336bfe49ed6d5',1,'xiiRenderDoc::IsInitialized()']]],
-  ['isinknownstate_237',['IsInKnownState',['../d4/d2d/classxii_g_a_l_resource.html#abf676430eb77234dc03a92664f383e52',1,'xiiGALResource']]],
+  ['isinknownstate_237',['IsInKnownState',['../d4/d2d/classxii_g_a_l_resource.html#a0db68325fe3b07c7064c6fc4cc07ce61',1,'xiiGALResource']]],
   ['isinloadingscreen_238',['IsInLoadingScreen',['../d0/dc7/classxii_fallback_game_state.html#a844496970063ef54134500018a85c002',1,'xiiFallbackGameState']]],
   ['isinrange_239',['IsInRange',['../d1/d37/namespacexii_math.html#a9d8e4353645b9c233b3a359e1e45b7fa',1,'xiiMath']]],
   ['isinsafemode_240',['IsInSafeMode',['../d1/d83/classxii_qt_editor_app.html#a10db748af4e9ed5ad84c89db45b375fd',1,'xiiQtEditorApp']]],

@@ -824,7 +824,7 @@ Protected Attributes</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>The handle to the created buffer object. The function calls <a class="el" href="../../d7/df4/classxii_ref_counting_impl.html#af89a37294bfebe74f2f43c492d2c14c3" title="Increments the reference counter. Returns the new reference count.">AddRef()</a>, so that the new object will have one reference.</dd></dl>
 <dl class="section remark"><dt>Remarks</dt><dd>Size of a uniform buffer (<a class="el" href="../../d6/d24/structxii_g_a_l_bind_flags.html#a25f393130b89d8ef16082ac3ade3c33faa4f3a0285c6609500c2a1f2541376c08" title="A buffer may be bound as a uniform buffer. Note that this flag may not be combined with any other bin...">xiiGALBindFlags::UniformBuffer</a>) must be multiple of 16.<br  />
 Stride of a formatted buffer will be computed automatically from the format if the m_uiElementByteStride member of buffer description is set to default value (0). </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000110">Todo</a></b></dt><dd>GraphicsFoundation: Assert that the command encoder used to initialize the resource is not a deferred context, as those cannot be used to initialize resources. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000109">Todo</a></b></dt><dd>GraphicsFoundation: Assert that the command encoder used to initialize the resource is not a deferred context, as those cannot be used to initialize resources. </dd></dl>
 
 </div>
 </div>
@@ -1030,7 +1030,7 @@ Stride of a formatted buffer will be computed automatically from the format if t
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The handle to the created pipeline resource signature object. The function calls <a class="el" href="../../d7/df4/classxii_ref_counting_impl.html#af89a37294bfebe74f2f43c492d2c14c3" title="Increments the reference counter. Returns the new reference count.">AddRef()</a>, so that the new object will have one reference. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000115">Todo</a></b></dt><dd>GraphicsFoundation: Verify combined texture samplers, all samplers should be assigned to textures when combined texture samplers are used, all immutable samplers should be assigned to textures or samplers when combined texture samplers are used. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000114">Todo</a></b></dt><dd>GraphicsFoundation: Verify combined texture samplers, all samplers should be assigned to textures when combined texture samplers are used, all immutable samplers should be assigned to textures or samplers when combined texture samplers are used. </dd></dl>
 
 </div>
 </div>
@@ -1065,7 +1065,7 @@ Stride of a formatted buffer will be computed automatically from the format if t
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The handle to the created pipeline state object. The function calls <a class="el" href="../../d7/df4/classxii_ref_counting_impl.html#af89a37294bfebe74f2f43c492d2c14c3" title="Increments the reference counter. Returns the new reference count.">AddRef()</a>, so that the new object will have one reference. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000116">Todo</a></b></dt><dd>GraphicsFoundation: Verify pipeline state description. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000115">Todo</a></b></dt><dd>GraphicsFoundation: Verify pipeline state description. </dd></dl>
 
 </div>
 </div>
@@ -1168,8 +1168,8 @@ Stride of a formatted buffer will be computed automatically from the format if t
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The handle to the created render pass object. The function calls <a class="el" href="../../d7/df4/classxii_ref_counting_impl.html#af89a37294bfebe74f2f43c492d2c14c3" title="Increments the reference counter. Returns the new reference count.">AddRef()</a>, so that the new object will have one reference. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000113">Todo</a></b></dt><dd>GraphicsFoundation: Use VkPhysicalDeviceFragmentShadingRatePropertiesKHR::maxFragmentShadingRateAttachmentTexelSizeAspectRatio. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000114">Todo</a></b></dt><dd>GraphicsFoundation: Check render pass dependency source and destination stage mask is set to the undefined pipeline stage. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000112">Todo</a></b></dt><dd>GraphicsFoundation: Use VkPhysicalDeviceFragmentShadingRatePropertiesKHR::maxFragmentShadingRateAttachmentTexelSizeAspectRatio. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000113">Todo</a></b></dt><dd>GraphicsFoundation: Check render pass dependency source and destination stage mask is set to the undefined pipeline stage. </dd></dl>
 
 </div>
 </div>
@@ -1319,8 +1319,8 @@ If initial data is provided, number of sub-resources must exactly match the numb
  15x6, 7x3, 3x1, 1x1, 15x6, 7x3, 3x1, 1x1.<br  />
 For a 15 x 6 x 4 3<a class="el" href="../../d0/dd0/class_d.html">D</a> texture, the following array of sub-resources should be provided:<br  />
  15x6x4, 7x3x2, 3x1x1, 1x1x1 </p>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000111">Todo</a></b></dt><dd>GraphicsFoundation: Vulkan allows the creation of 2<a class="el" href="../../d0/dd0/class_d.html">D</a> texture arrays, and using a single slice for view even if <a class="el" href="../../dc/d5c/structxii_g_a_l_shading_rate_capability_flags.html#ae18051ba3e2592a63b1df04552e3f560aafeab8337981d7714bf8b3d47a052dd3" title="Allows to use texture 2D array for shading rate.">xiiGALShadingRateCapabilityFlags::TextureArray</a> is not supported by the device. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000112">Todo</a></b></dt><dd>GraphicsFoundation: Validate texture mip size to the tile size property. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000110">Todo</a></b></dt><dd>GraphicsFoundation: Vulkan allows the creation of 2<a class="el" href="../../d0/dd0/class_d.html">D</a> texture arrays, and using a single slice for view even if <a class="el" href="../../dc/d5c/structxii_g_a_l_shading_rate_capability_flags.html#ae18051ba3e2592a63b1df04552e3f560aafeab8337981d7714bf8b3d47a052dd3" title="Allows to use texture 2D array for shading rate.">xiiGALShadingRateCapabilityFlags::TextureArray</a> is not supported by the device. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000111">Todo</a></b></dt><dd>GraphicsFoundation: Validate texture mip size to the tile size property. </dd></dl>
 
 </div>
 </div>
@@ -1525,7 +1525,7 @@ For a 15 x 6 x 4 3<a class="el" href="../../d0/dd0/class_d.html">D</a> texture, 
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d5/d19/classxii_g_a_l_device.html">xiiGALDevice</a></li>
-    <li class="footer">Generated on Mon Dec 23 2024 17:27:12 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Thu Dec 26 2024 20:52:19 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

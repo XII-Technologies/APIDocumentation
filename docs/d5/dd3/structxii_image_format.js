@@ -115,6 +115,7 @@ var structxii_image_format =
       [ "X1B5G5R5_UNORM", "d5/dd3/structxii_image_format.html#a005ef22274255637febbc13f075b9e38a4d19b4f2bc831f4f9e6a937214f90415", null ],
       [ "X1B5G5R5_UNORM_SRGB", "d5/dd3/structxii_image_format.html#a005ef22274255637febbc13f075b9e38a3030546d724853474ca67869294b7f61", null ],
       [ "NV12", "d5/dd3/structxii_image_format.html#a005ef22274255637febbc13f075b9e38a9d52f5f49cfb2643ba1cd678a771d5a5", null ],
+      [ "P010", "d5/dd3/structxii_image_format.html#a005ef22274255637febbc13f075b9e38ab8f8de42a148eda416a445fbeac490d2", null ],
       [ "NUM_FORMATS", "d5/dd3/structxii_image_format.html#a005ef22274255637febbc13f075b9e38aa353ecb313e41660bd8a678d0aaf8be4", null ],
       [ "Default", "d5/dd3/structxii_image_format.html#a005ef22274255637febbc13f075b9e38a667883cc546b00125389c4c05c6e37d7", null ]
     ] ]

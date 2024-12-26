@@ -149,7 +149,7 @@ Inheritance diagram for xiiGALCommandQueueVulkan:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d56/structxii_g_a_l_command_queue_vulkan_1_1_fence_info.html">FenceInfo</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d10/structxii_g_a_l_command_queue_vulkan_1_1_command_list_release_info.html">CommandListReleaseInfo</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -160,15 +160,6 @@ vk::PipelineStageFlags&#160;</td><td class="memItemRight" valign="bottom"><b>Get
 <tr class="memitem:afb3a91f74ef622ab5e99e0cd7be5f197" id="r_afb3a91f74ef622ab5e99e0cd7be5f197"><td class="memItemLeft" align="right" valign="top"><a id="afb3a91f74ef622ab5e99e0cd7be5f197" name="afb3a91f74ef622ab5e99e0cd7be5f197"></a>
 vk::AccessFlags&#160;</td><td class="memItemRight" valign="bottom"><b>GetSupportedAccessFlags</b> () const</td></tr>
 <tr class="separator:afb3a91f74ef622ab5e99e0cd7be5f197"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4ba4911ed2a58fa939e27ad1bb1c48f7" id="r_a4ba4911ed2a58fa939e27ad1bb1c48f7"><td class="memItemLeft" align="right" valign="top"><a id="a4ba4911ed2a58fa939e27ad1bb1c48f7" name="a4ba4911ed2a58fa939e27ad1bb1c48f7"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>TransitionImageLayout</b> (<a class="el" href="../../d7/d2e/classxii_g_a_l_texture_vulkan.html">xiiGALTextureVulkan</a> *pTextureVulkan, vk::ImageLayout imageLayout)</td></tr>
-<tr class="separator:a4ba4911ed2a58fa939e27ad1bb1c48f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a323fd3907d4120464a25cd7dacdb753c" id="r_a323fd3907d4120464a25cd7dacdb753c"><td class="memItemLeft" align="right" valign="top"><a id="a323fd3907d4120464a25cd7dacdb753c" name="a323fd3907d4120464a25cd7dacdb753c"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>AddWaitSemaphore</b> (vk::Semaphore semaphore, vk::PipelineStageFlags pipelineFlags)</td></tr>
-<tr class="separator:a323fd3907d4120464a25cd7dacdb753c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a73910866a16326f296e57b91d3da56aa" id="r_a73910866a16326f296e57b91d3da56aa"><td class="memItemLeft" align="right" valign="top"><a id="a73910866a16326f296e57b91d3da56aa" name="a73910866a16326f296e57b91d3da56aa"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>AddSignalSemaphore</b> (vk::Semaphore semaphore)</td></tr>
-<tr class="separator:a73910866a16326f296e57b91d3da56aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a576cc7012703e2dcdcdcbeb1b1e88ae9" id="r_a576cc7012703e2dcdcdcbeb1b1e88ae9"><td class="memItemLeft" align="right" valign="top">virtual XII_ALWAYS_INLINE xiiUInt64&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a576cc7012703e2dcdcdcbeb1b1e88ae9">GetNextFenceValue</a> () const override final</td></tr>
 <tr class="memdesc:a576cc7012703e2dcdcdcbeb1b1e88ae9"><td class="mdescLeft">&#160;</td><td class="mdescRight">This returns the value of the internal fence that will be signaled the next time.  <br /></td></tr>
 <tr class="separator:a576cc7012703e2dcdcdcbeb1b1e88ae9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -263,6 +254,9 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:a5c522bcf904bde15a49cac5e737ccfa4" id="r_a5c522bcf904bde15a49cac5e737ccfa4"><td class="memItemLeft" align="right" valign="top"><a id="a5c522bcf904bde15a49cac5e737ccfa4" name="a5c522bcf904bde15a49cac5e737ccfa4"></a>
 xiiUInt64&#160;</td><td class="memItemRight" valign="bottom"><b>SubmitCommandList</b> (<a class="el" href="../../dc/d80/classxii_g_a_l_command_list.html">xiiGALCommandList</a> *pCommandList, bool bReset)</td></tr>
 <tr class="separator:a5c522bcf904bde15a49cac5e737ccfa4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a499d173a38d134998484e8282e7c10ed" id="r_a499d173a38d134998484e8282e7c10ed"><td class="memItemLeft" align="right" valign="top"><a id="a499d173a38d134998484e8282e7c10ed" name="a499d173a38d134998484e8282e7c10ed"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ReleasePendingCommandListsToReset</b> ()</td></tr>
+<tr class="separator:a499d173a38d134998484e8282e7c10ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a12fe632a9cb38d7a7c1ae24680321891" id="r_a12fe632a9cb38d7a7c1ae24680321891"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a12fe632a9cb38d7a7c1ae24680321891">xiiGALCommandQueueVulkan</a> (<a class="el" href="../../d3/d6b/classxii_g_a_l_device_vulkan.html">xiiGALDeviceVulkan</a> *pDeviceVulkan, const <a class="el" href="../../d3/dc4/structxii_g_a_l_command_queue_creation_description.html">xiiGALCommandQueueCreationDescription</a> &amp;creationDescription)</td></tr>
 <tr class="separator:a12fe632a9cb38d7a7c1ae24680321891"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad3582ed9e2d1280925e0a5a9ef79e679" id="r_ad3582ed9e2d1280925e0a5a9ef79e679"><td class="memItemLeft" align="right" valign="top"><a id="ad3582ed9e2d1280925e0a5a9ef79e679" name="ad3582ed9e2d1280925e0a5a9ef79e679"></a>
@@ -302,33 +296,24 @@ vk::CommandPool&#160;</td><td class="memItemRight" valign="bottom"><b>m_vkComman
 <tr class="memitem:ae60650c9781d2bccb548f88f6ede2f70" id="r_ae60650c9781d2bccb548f88f6ede2f70"><td class="memItemLeft" align="right" valign="top"><a id="ae60650c9781d2bccb548f88f6ede2f70" name="ae60650c9781d2bccb548f88f6ede2f70"></a>
 <a class="el" href="../../d8/df8/classxii_deque.html">xiiDeque</a>&lt; <a class="el" href="../../dd/d24/classxii_g_a_l_command_list_vulkan.html">xiiGALCommandListVulkan</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_CommandLists</b></td></tr>
 <tr class="separator:ae60650c9781d2bccb548f88f6ede2f70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af62d8bc2208628b38f4303244c3c270d" id="r_af62d8bc2208628b38f4303244c3c270d"><td class="memItemLeft" align="right" valign="top"><a id="af62d8bc2208628b38f4303244c3c270d" name="af62d8bc2208628b38f4303244c3c270d"></a>
+<a class="el" href="../../dc/da4/classxii_dynamic_array.html">xiiDynamicArray</a>&lt; <a class="el" href="../../df/d10/structxii_g_a_l_command_queue_vulkan_1_1_command_list_release_info.html">CommandListReleaseInfo</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_CommandListsToReset</b></td></tr>
+<tr class="separator:af62d8bc2208628b38f4303244c3c270d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a54c03b54e80caac2da17dbeb7bfa784c" id="r_a54c03b54e80caac2da17dbeb7bfa784c"><td class="memItemLeft" align="right" valign="top"><a id="a54c03b54e80caac2da17dbeb7bfa784c" name="a54c03b54e80caac2da17dbeb7bfa784c"></a>
 vk::PipelineStageFlags&#160;</td><td class="memItemRight" valign="bottom"><b>m_vkSupportedStageFlags</b></td></tr>
 <tr class="separator:a54c03b54e80caac2da17dbeb7bfa784c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab062e8a90ced6d5417280d74386c82e9" id="r_ab062e8a90ced6d5417280d74386c82e9"><td class="memItemLeft" align="right" valign="top"><a id="ab062e8a90ced6d5417280d74386c82e9" name="ab062e8a90ced6d5417280d74386c82e9"></a>
 vk::AccessFlags&#160;</td><td class="memItemRight" valign="bottom"><b>m_vkSupportedAccessFlags</b></td></tr>
 <tr class="separator:ab062e8a90ced6d5417280d74386c82e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2aec6833a048bfa0fdccc4d4572f0102" id="r_a2aec6833a048bfa0fdccc4d4572f0102"><td class="memItemLeft" align="right" valign="top"><a id="a2aec6833a048bfa0fdccc4d4572f0102" name="a2aec6833a048bfa0fdccc4d4572f0102"></a>
-<a class="el" href="../../dc/da4/classxii_dynamic_array.html">xiiDynamicArray</a>&lt; vk::Semaphore &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_vkWaitSemaphores</b></td></tr>
-<tr class="separator:a2aec6833a048bfa0fdccc4d4572f0102"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab76c508833f89248c86e5b650870ed11" id="r_ab76c508833f89248c86e5b650870ed11"><td class="memItemLeft" align="right" valign="top"><a id="ab76c508833f89248c86e5b650870ed11" name="ab76c508833f89248c86e5b650870ed11"></a>
-<a class="el" href="../../dc/da4/classxii_dynamic_array.html">xiiDynamicArray</a>&lt; vk::Semaphore &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_vkSignalSemaphores</b></td></tr>
-<tr class="separator:ab76c508833f89248c86e5b650870ed11"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5e57bdab6120607d018c5caec20b4f20" id="r_a5e57bdab6120607d018c5caec20b4f20"><td class="memItemLeft" align="right" valign="top"><a id="a5e57bdab6120607d018c5caec20b4f20" name="a5e57bdab6120607d018c5caec20b4f20"></a>
-<a class="el" href="../../dc/da4/classxii_dynamic_array.html">xiiDynamicArray</a>&lt; vk::PipelineStageFlags &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_vkWaitDestinationStageFlags</b></td></tr>
-<tr class="separator:a5e57bdab6120607d018c5caec20b4f20"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a64e4ce99648953b5472f7c2a8a108442" id="r_a64e4ce99648953b5472f7c2a8a108442"><td class="memItemLeft" align="right" valign="top"><a id="a64e4ce99648953b5472f7c2a8a108442" name="a64e4ce99648953b5472f7c2a8a108442"></a>
-<a class="el" href="../../dc/da4/classxii_dynamic_array.html">xiiDynamicArray</a>&lt; xiiUInt64 &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_vkWaitSemaphoreValues</b></td></tr>
-<tr class="separator:a64e4ce99648953b5472f7c2a8a108442"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a327d2f85bc5cf735b49a41aa36d92c38" id="r_a327d2f85bc5cf735b49a41aa36d92c38"><td class="memItemLeft" align="right" valign="top"><a id="a327d2f85bc5cf735b49a41aa36d92c38" name="a327d2f85bc5cf735b49a41aa36d92c38"></a>
-<a class="el" href="../../dc/da4/classxii_dynamic_array.html">xiiDynamicArray</a>&lt; xiiUInt64 &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_vkSignalSemaphoreValues</b></td></tr>
-<tr class="separator:a327d2f85bc5cf735b49a41aa36d92c38"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad8e6242015ef3d03a35c5dc833722829" id="r_ad8e6242015ef3d03a35c5dc833722829"><td class="memItemLeft" align="right" valign="top"><a id="ad8e6242015ef3d03a35c5dc833722829" name="ad8e6242015ef3d03a35c5dc833722829"></a>
-<a class="el" href="../../dc/da4/classxii_dynamic_array.html">xiiDynamicArray</a>&lt; <a class="el" href="../../d6/d56/structxii_g_a_l_command_queue_vulkan_1_1_fence_info.html">xiiGALCommandQueueVulkan::FenceInfo</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_SignalFences</b></td></tr>
-<tr class="separator:ad8e6242015ef3d03a35c5dc833722829"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aff1cf745102eaa80f56bd90447e4a89d" id="r_aff1cf745102eaa80f56bd90447e4a89d"><td class="memItemLeft" align="right" valign="top"><a id="aff1cf745102eaa80f56bd90447e4a89d" name="aff1cf745102eaa80f56bd90447e4a89d"></a>
-<a class="el" href="../../dc/da4/classxii_dynamic_array.html">xiiDynamicArray</a>&lt; <a class="el" href="../../d6/d56/structxii_g_a_l_command_queue_vulkan_1_1_fence_info.html">xiiGALCommandQueueVulkan::FenceInfo</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_WaitFences</b></td></tr>
-<tr class="separator:aff1cf745102eaa80f56bd90447e4a89d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaba759c1e951a053f398fd0e31413258" id="r_aaba759c1e951a053f398fd0e31413258"><td class="memItemLeft" align="right" valign="top"><a id="aaba759c1e951a053f398fd0e31413258" name="aaba759c1e951a053f398fd0e31413258"></a>
+<a class="el" href="../../dd/dc8/classxii_g_a_l_fence_handle.html">xiiGALFenceHandle</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_hQueueFence</b></td></tr>
+<tr class="separator:aaba759c1e951a053f398fd0e31413258"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a882098a21fdc3db43f68169984ed51ab" id="r_a882098a21fdc3db43f68169984ed51ab"><td class="memItemLeft" align="right" valign="top"><a id="a882098a21fdc3db43f68169984ed51ab" name="a882098a21fdc3db43f68169984ed51ab"></a>
+std::atomic&lt; xiiUInt64 &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_uiNextFenceValue</b> = 1U</td></tr>
+<tr class="separator:a882098a21fdc3db43f68169984ed51ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec403d97be239f78977931dcf726fe97" id="r_aec403d97be239f78977931dcf726fe97"><td class="memItemLeft" align="right" valign="top"><a id="aec403d97be239f78977931dcf726fe97" name="aec403d97be239f78977931dcf726fe97"></a>
+<a class="el" href="../../d6/d6d/structxii_g_a_l_fence_vulkan_1_1_sync_point_data.html">xiiGALFenceVulkan::SyncPointData</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_LastSyncPoint</b></td></tr>
+<tr class="separator:aec403d97be239f78977931dcf726fe97"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_classxii_g_a_l_command_queue"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_attribs_classxii_g_a_l_command_queue')"><img src="../../closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="../../d1/dd2/classxii_g_a_l_command_queue.html">xiiGALCommandQueue</a></td></tr>
 <tr class="memitem:a04036cf46dd8fed0c4add632f61f9652 inherit pro_attribs_classxii_g_a_l_command_queue" id="r_a04036cf46dd8fed0c4add632f61f9652"><td class="memItemLeft" align="right" valign="top">
 <a class="el" href="../../d3/dc4/structxii_g_a_l_command_queue_creation_description.html">xiiGALCommandQueueCreationDescription</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_Description</b></td></tr>
@@ -542,7 +527,7 @@ static const <a class="el" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d1/d83/classxii_g_a_l_command_queue_vulkan.html">xiiGALCommandQueueVulkan</a></li>
-    <li class="footer">Generated on Mon Dec 23 2024 17:27:12 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Thu Dec 26 2024 20:52:19 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

@@ -141,54 +141,40 @@ $(function(){initNavTree('d3/de8/classxii_image_file_format.html','../../'); ini
 <div class="dynheader">
 Inheritance diagram for xiiImageFileFormat:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d9/d07/classxii_image_file_format__inherit__graph.svg" width="660" height="271"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d9/d07/classxii_image_file_format__inherit__graph.svg" width="660" height="110"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 <center><span class="legend">[<a target="top" href="../../graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:afa5e8079b4757aa548d7201759a05b36" id="r_afa5e8079b4757aa548d7201759a05b36"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afa5e8079b4757aa548d7201759a05b36">ReadImageHeader</a> (<a class="el" href="../../d4/d5e/classxii_stream_reader.html">xiiStreamReader</a> &amp;ref_stream, <a class="el" href="../../d0/d25/classxii_image_header.html">xiiImageHeader</a> &amp;ref_header, <a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sFileExtension) const =0</td></tr>
-<tr class="memdesc:afa5e8079b4757aa548d7201759a05b36"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads only the header information for an image and ignores the data. Much faster than reading the entire image, if the pixel data is not needed.  <br /></td></tr>
-<tr class="separator:afa5e8079b4757aa548d7201759a05b36"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4091df3acb1f7b379b85451591f5f252" id="r_a4091df3acb1f7b379b85451591f5f252"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4091df3acb1f7b379b85451591f5f252">ReadImage</a> (<a class="el" href="../../d4/d5e/classxii_stream_reader.html">xiiStreamReader</a> &amp;ref_stream, <a class="el" href="../../d4/d6a/classxii_image.html">xiiImage</a> &amp;ref_image, <a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sFileExtension) const =0</td></tr>
-<tr class="memdesc:a4091df3acb1f7b379b85451591f5f252"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads the data from the given stream and creates the image from it. Errors are written to the given <a class="el" href="../../d6/d6b/classxii_log_interface.html" title="Base class for all logging classes.">xiiLogInterface</a>.  <br /></td></tr>
-<tr class="separator:a4091df3acb1f7b379b85451591f5f252"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa10359fe3c1b14c155d09b35808e2242" id="r_aa10359fe3c1b14c155d09b35808e2242"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa10359fe3c1b14c155d09b35808e2242">WriteImage</a> (<a class="el" href="../../d0/d18/classxii_stream_writer.html">xiiStreamWriter</a> &amp;ref_stream, const <a class="el" href="../../d6/d21/classxii_image_view.html">xiiImageView</a> &amp;image, <a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sFileExtension) const =0</td></tr>
-<tr class="memdesc:aa10359fe3c1b14c155d09b35808e2242"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes the data to the given stream in this format. Errors are written to the given <a class="el" href="../../d6/d6b/classxii_log_interface.html" title="Base class for all logging classes.">xiiLogInterface</a>.  <br /></td></tr>
-<tr class="separator:aa10359fe3c1b14c155d09b35808e2242"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9ea166a495aa9fcacd91aecc96addfc" id="r_ae9ea166a495aa9fcacd91aecc96addfc"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae9ea166a495aa9fcacd91aecc96addfc">ReadImageHeader</a> (<a class="el" href="../../d4/d5e/classxii_stream_reader.html">xiiStreamReader</a> &amp;inout_stream, <a class="el" href="../../d0/d25/classxii_image_header.html">xiiImageHeader</a> &amp;ref_header, <a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sFileExtension) const =0</td></tr>
+<tr class="memdesc:ae9ea166a495aa9fcacd91aecc96addfc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads only the header information for an image and ignores the data. Much faster than reading the entire image, if the pixel data is not needed.  <br /></td></tr>
+<tr class="separator:ae9ea166a495aa9fcacd91aecc96addfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac03d5412564d8b5918a4b5700000d141" id="r_ac03d5412564d8b5918a4b5700000d141"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac03d5412564d8b5918a4b5700000d141">ReadImage</a> (<a class="el" href="../../d4/d5e/classxii_stream_reader.html">xiiStreamReader</a> &amp;inout_stream, <a class="el" href="../../d4/d6a/classxii_image.html">xiiImage</a> &amp;ref_image, <a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sFileExtension) const =0</td></tr>
+<tr class="memdesc:ac03d5412564d8b5918a4b5700000d141"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads the data from the given stream and creates the image from it. Errors are written to the given <a class="el" href="../../d6/d6b/classxii_log_interface.html" title="Base class for all logging classes.">xiiLogInterface</a>.  <br /></td></tr>
+<tr class="separator:ac03d5412564d8b5918a4b5700000d141"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46908cbd909a9464a45c34a3eb9e7be7" id="r_a46908cbd909a9464a45c34a3eb9e7be7"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a46908cbd909a9464a45c34a3eb9e7be7">WriteImage</a> (<a class="el" href="../../d0/d18/classxii_stream_writer.html">xiiStreamWriter</a> &amp;inout_stream, const <a class="el" href="../../d6/d21/classxii_image_view.html">xiiImageView</a> &amp;image, <a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sFileExtension) const =0</td></tr>
+<tr class="memdesc:a46908cbd909a9464a45c34a3eb9e7be7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes the data to the given stream in this format. Errors are written to the given <a class="el" href="../../d6/d6b/classxii_log_interface.html" title="Base class for all logging classes.">xiiLogInterface</a>.  <br /></td></tr>
+<tr class="separator:a46908cbd909a9464a45c34a3eb9e7be7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af196db64ea59f9ad2833a2afc0751937" id="r_af196db64ea59f9ad2833a2afc0751937"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af196db64ea59f9ad2833a2afc0751937">CanReadFileType</a> (<a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sExtension) const =0</td></tr>
 <tr class="memdesc:af196db64ea59f9ad2833a2afc0751937"><td class="mdescLeft">&#160;</td><td class="mdescRight">Should return true, if files with the given extension can be read.  <br /></td></tr>
 <tr class="separator:af196db64ea59f9ad2833a2afc0751937"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a95c0f0e23cb44be3d333e6138549ccda" id="r_a95c0f0e23cb44be3d333e6138549ccda"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a95c0f0e23cb44be3d333e6138549ccda">CanWriteFileType</a> (<a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sExtension) const =0</td></tr>
 <tr class="memdesc:a95c0f0e23cb44be3d333e6138549ccda"><td class="mdescLeft">&#160;</td><td class="mdescRight">Should return true, if files with the given extension can be written.  <br /></td></tr>
 <tr class="separator:a95c0f0e23cb44be3d333e6138549ccda"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a46a5a954095e2d61400e5086dc956a16" id="r_a46a5a954095e2d61400e5086dc956a16"><td class="memItemLeft" align="right" valign="top"><a id="a46a5a954095e2d61400e5086dc956a16" name="a46a5a954095e2d61400e5086dc956a16"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>XII_DECLARE_ENUMERABLE_CLASS</b> (<a class="el" href="../../d3/de8/classxii_image_file_format.html">xiiImageFileFormat</a>)</td></tr>
-<tr class="separator:a46a5a954095e2d61400e5086dc956a16"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a0ed8600a58dcd52c07d8045e2b1c7c53" id="r_a0ed8600a58dcd52c07d8045e2b1c7c53"><td class="memItemLeft" align="right" valign="top"><a id="a0ed8600a58dcd52c07d8045e2b1c7c53" name="a0ed8600a58dcd52c07d8045e2b1c7c53"></a>
-static <a class="el" href="../../d3/de8/classxii_image_file_format.html">xiiImageFileFormat</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetReaderFormat</b> (<a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sExtension)</td></tr>
-<tr class="memdesc:a0ed8600a58dcd52c07d8045e2b1c7c53"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a <a class="el" href="../../d3/de8/classxii_image_file_format.html">xiiImageFileFormat</a> that can read the given extension. Returns nullptr if there is no appropriate <a class="el" href="../../d3/de8/classxii_image_file_format.html">xiiImageFileFormat</a>. <br /></td></tr>
-<tr class="separator:a0ed8600a58dcd52c07d8045e2b1c7c53"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0a29ecdf5175a7e8b0c15e06fa9b5503" id="r_a0a29ecdf5175a7e8b0c15e06fa9b5503"><td class="memItemLeft" align="right" valign="top"><a id="a0a29ecdf5175a7e8b0c15e06fa9b5503" name="a0a29ecdf5175a7e8b0c15e06fa9b5503"></a>
-static <a class="el" href="../../d3/de8/classxii_image_file_format.html">xiiImageFileFormat</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetWriterFormat</b> (<a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sExtension)</td></tr>
-<tr class="memdesc:a0a29ecdf5175a7e8b0c15e06fa9b5503"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a <a class="el" href="../../d3/de8/classxii_image_file_format.html">xiiImageFileFormat</a> that can write the given extension. Returns nullptr if there is no appropriate <a class="el" href="../../d3/de8/classxii_image_file_format.html">xiiImageFileFormat</a>. <br /></td></tr>
-<tr class="separator:a0a29ecdf5175a7e8b0c15e06fa9b5503"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72ca24268a508d4a80ee4602d2bc8d3a" id="r_a72ca24268a508d4a80ee4602d2bc8d3a"><td class="memItemLeft" align="right" valign="top"><a id="a72ca24268a508d4a80ee4602d2bc8d3a" name="a72ca24268a508d4a80ee4602d2bc8d3a"></a>
+static const <a class="el" href="../../d3/de8/classxii_image_file_format.html">xiiImageFileFormat</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetReaderFormat</b> (<a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sExtension)</td></tr>
+<tr class="memdesc:a72ca24268a508d4a80ee4602d2bc8d3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a <a class="el" href="../../d3/de8/classxii_image_file_format.html">xiiImageFileFormat</a> that can read the given extension. Returns nullptr if there is no appropriate <a class="el" href="../../d3/de8/classxii_image_file_format.html">xiiImageFileFormat</a>. <br /></td></tr>
+<tr class="separator:a72ca24268a508d4a80ee4602d2bc8d3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e430a6186e69907d13c6b9633f4d906" id="r_a2e430a6186e69907d13c6b9633f4d906"><td class="memItemLeft" align="right" valign="top"><a id="a2e430a6186e69907d13c6b9633f4d906" name="a2e430a6186e69907d13c6b9633f4d906"></a>
+static const <a class="el" href="../../d3/de8/classxii_image_file_format.html">xiiImageFileFormat</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetWriterFormat</b> (<a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sExtension)</td></tr>
+<tr class="memdesc:a2e430a6186e69907d13c6b9633f4d906"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a <a class="el" href="../../d3/de8/classxii_image_file_format.html">xiiImageFileFormat</a> that can write the given extension. Returns nullptr if there is no appropriate <a class="el" href="../../d3/de8/classxii_image_file_format.html">xiiImageFileFormat</a>. <br /></td></tr>
+<tr class="separator:a2e430a6186e69907d13c6b9633f4d906"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a537ad78fb100599821d3724f2dea0ff8" id="r_a537ad78fb100599821d3724f2dea0ff8"><td class="memItemLeft" align="right" valign="top"><a id="a537ad78fb100599821d3724f2dea0ff8" name="a537ad78fb100599821d3724f2dea0ff8"></a>
 static <a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><b>ReadImageHeader</b> (<a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sFileName, <a class="el" href="../../d0/d25/classxii_image_header.html">xiiImageHeader</a> &amp;ref_header)</td></tr>
 <tr class="separator:a537ad78fb100599821d3724f2dea0ff8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_static_methods_classxii_no_base"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_static_methods_classxii_no_base')"><img src="../../closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="../../d2/d38/classxii_no_base.html">xiiNoBase</a></td></tr>
-<tr class="memitem:a4bde433b55ebd55edf63c57239799bba inherit pub_static_methods_classxii_no_base" id="r_a4bde433b55ebd55edf63c57239799bba"><td class="memItemLeft" align="right" valign="top">
-static const <a class="el" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetStaticRTTI</b> ()</td></tr>
-<tr class="separator:a4bde433b55ebd55edf63c57239799bba inherit pub_static_methods_classxii_no_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
-Additional Inherited Members</h2></td></tr>
-<tr class="inherit_header pro_attribs_classxii_enumerable"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_attribs_classxii_enumerable')"><img src="../../closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="../../dc/d54/classxii_enumerable.html">xiiEnumerable&lt; xiiImageFileFormat &gt;</a></td></tr>
-<tr class="memitem:afe563009387fc95276982bb4b87094e0 inherit pro_attribs_classxii_enumerable" id="r_afe563009387fc95276982bb4b87094e0"><td class="memItemLeft" align="right" valign="top">
-<a class="el" href="../../dc/d54/classxii_enumerable.html">xiiEnumerable</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_pNextInstance</b></td></tr>
-<tr class="separator:afe563009387fc95276982bb4b87094e0 inherit pro_attribs_classxii_enumerable"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="af196db64ea59f9ad2833a2afc0751937" name="af196db64ea59f9ad2833a2afc0751937"></a>
@@ -249,8 +235,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="a4091df3acb1f7b379b85451591f5f252" name="a4091df3acb1f7b379b85451591f5f252"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4091df3acb1f7b379b85451591f5f252">&#9670;&#160;</a></span>ReadImage()</h2>
+<a id="ac03d5412564d8b5918a4b5700000d141" name="ac03d5412564d8b5918a4b5700000d141"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac03d5412564d8b5918a4b5700000d141">&#9670;&#160;</a></span>ReadImage()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -261,7 +247,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">virtual <a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a> xiiImageFileFormat::ReadImage </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../d4/d5e/classxii_stream_reader.html">xiiStreamReader</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>ref_stream</em></span>, </td>
+          <td class="paramtype"><a class="el" href="../../d4/d5e/classxii_stream_reader.html">xiiStreamReader</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>inout_stream</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -283,12 +269,12 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reads the data from the given stream and creates the image from it. Errors are written to the given <a class="el" href="../../d6/d6b/classxii_log_interface.html" title="Base class for all logging classes.">xiiLogInterface</a>. </p>
 
-<p>Implemented in <a class="el" href="../../de/d71/classxii_bmp_file_format.html#a6f4cfc916e1d8c63158cc4e92347af1d">xiiBmpFileFormat</a>, <a class="el" href="../../d9/d5d/classxii_dds_file_format.html#a2fd0e173b493fcf54cf0f5aef7f79068">xiiDdsFileFormat</a>, <a class="el" href="../../d3/dc9/classxii_stb_image_file_formats.html#aface65356e848912e530628b87d00aef">xiiStbImageFileFormats</a>, and <a class="el" href="../../d7/d8e/classxii_tga_file_format.html#a4541cf530ff37f2c7e16593c963bfa4b">xiiTgaFileFormat</a>.</p>
+<p>Implemented in <a class="el" href="../../de/d71/classxii_bmp_file_format.html#a5b58e735705204c4169a5dd1fc507a59">xiiBmpFileFormat</a>, <a class="el" href="../../d9/d5d/classxii_dds_file_format.html#a1b44365323c97ce4ad3dcfe2ed729635">xiiDdsFileFormat</a>, <a class="el" href="../../d3/dc9/classxii_stb_image_file_formats.html#a810d0767af41c2d5f8f902310e556e81">xiiStbImageFileFormats</a>, and <a class="el" href="../../d7/d8e/classxii_tga_file_format.html#aec0ffa39ed6bf4004bf42db10579c835">xiiTgaFileFormat</a>.</p>
 
 </div>
 </div>
-<a id="afa5e8079b4757aa548d7201759a05b36" name="afa5e8079b4757aa548d7201759a05b36"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afa5e8079b4757aa548d7201759a05b36">&#9670;&#160;</a></span>ReadImageHeader()</h2>
+<a id="ae9ea166a495aa9fcacd91aecc96addfc" name="ae9ea166a495aa9fcacd91aecc96addfc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae9ea166a495aa9fcacd91aecc96addfc">&#9670;&#160;</a></span>ReadImageHeader()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -299,7 +285,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">virtual <a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a> xiiImageFileFormat::ReadImageHeader </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../d4/d5e/classxii_stream_reader.html">xiiStreamReader</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>ref_stream</em></span>, </td>
+          <td class="paramtype"><a class="el" href="../../d4/d5e/classxii_stream_reader.html">xiiStreamReader</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>inout_stream</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -321,12 +307,12 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reads only the header information for an image and ignores the data. Much faster than reading the entire image, if the pixel data is not needed. </p>
 
-<p>Implemented in <a class="el" href="../../de/d71/classxii_bmp_file_format.html#a224afc887c34ace8527d4675e33477b8">xiiBmpFileFormat</a>, <a class="el" href="../../d9/d5d/classxii_dds_file_format.html#a9fb3f5c50ee300d3ae3d827690586700">xiiDdsFileFormat</a>, <a class="el" href="../../d3/dc9/classxii_stb_image_file_formats.html#a81f7fd485d22c8e17330ae8a1f2a70d3">xiiStbImageFileFormats</a>, and <a class="el" href="../../d7/d8e/classxii_tga_file_format.html#a53937085708fe73b572dc3708616a326">xiiTgaFileFormat</a>.</p>
+<p>Implemented in <a class="el" href="../../de/d71/classxii_bmp_file_format.html#af653145dd04fb7dd7103562cf15f43ec">xiiBmpFileFormat</a>, <a class="el" href="../../d9/d5d/classxii_dds_file_format.html#a682d20ef04297101f404016d2135e93b">xiiDdsFileFormat</a>, <a class="el" href="../../d3/dc9/classxii_stb_image_file_formats.html#a54bf3777267c40d1124c88db7987c44f">xiiStbImageFileFormats</a>, and <a class="el" href="../../d7/d8e/classxii_tga_file_format.html#ab176f272cea43d64fb0bbbfa855d4a93">xiiTgaFileFormat</a>.</p>
 
 </div>
 </div>
-<a id="aa10359fe3c1b14c155d09b35808e2242" name="aa10359fe3c1b14c155d09b35808e2242"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa10359fe3c1b14c155d09b35808e2242">&#9670;&#160;</a></span>WriteImage()</h2>
+<a id="a46908cbd909a9464a45c34a3eb9e7be7" name="a46908cbd909a9464a45c34a3eb9e7be7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a46908cbd909a9464a45c34a3eb9e7be7">&#9670;&#160;</a></span>WriteImage()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -337,7 +323,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">virtual <a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a> xiiImageFileFormat::WriteImage </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../d0/d18/classxii_stream_writer.html">xiiStreamWriter</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>ref_stream</em></span>, </td>
+          <td class="paramtype"><a class="el" href="../../d0/d18/classxii_stream_writer.html">xiiStreamWriter</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>inout_stream</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -359,7 +345,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Writes the data to the given stream in this format. Errors are written to the given <a class="el" href="../../d6/d6b/classxii_log_interface.html" title="Base class for all logging classes.">xiiLogInterface</a>. </p>
 
-<p>Implemented in <a class="el" href="../../de/d71/classxii_bmp_file_format.html#a36578292b41d1b0ea0221ac743414968">xiiBmpFileFormat</a>, <a class="el" href="../../d9/d5d/classxii_dds_file_format.html#a726c038bb90cf38cd6f681ddfba448af">xiiDdsFileFormat</a>, <a class="el" href="../../d3/dc9/classxii_stb_image_file_formats.html#a902d92581e050e4ab2e7ab72b8326b8f">xiiStbImageFileFormats</a>, and <a class="el" href="../../d7/d8e/classxii_tga_file_format.html#a43949cbd4de6d92a061f5fc7793ae257">xiiTgaFileFormat</a>.</p>
+<p>Implemented in <a class="el" href="../../de/d71/classxii_bmp_file_format.html#a1c01e0a655057f2ee5f599f264061377">xiiBmpFileFormat</a>, <a class="el" href="../../d9/d5d/classxii_dds_file_format.html#acce67f2067dcf7adb40684bd6099dd6d">xiiDdsFileFormat</a>, <a class="el" href="../../d3/dc9/classxii_stb_image_file_formats.html#a8c451480b0e79e1db00424d619c3c186">xiiStbImageFileFormats</a>, and <a class="el" href="../../d7/d8e/classxii_tga_file_format.html#ab9d4dc6bebcf40667049827f1d88e4e5">xiiTgaFileFormat</a>.</p>
 
 </div>
 </div>
@@ -373,7 +359,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d3/de8/classxii_image_file_format.html">xiiImageFileFormat</a></li>
-    <li class="footer">Generated on Mon Dec 23 2024 17:27:13 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Thu Dec 26 2024 20:52:20 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

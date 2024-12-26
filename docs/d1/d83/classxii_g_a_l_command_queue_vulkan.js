@@ -1,6 +1,6 @@
 var classxii_g_a_l_command_queue_vulkan =
 [
-    [ "FenceInfo", "d6/d56/structxii_g_a_l_command_queue_vulkan_1_1_fence_info.html", null ],
+    [ "CommandListReleaseInfo", "df/d10/structxii_g_a_l_command_queue_vulkan_1_1_command_list_release_info.html", null ],
     [ "xiiGALCommandQueueVulkan", "d1/d83/classxii_g_a_l_command_queue_vulkan.html#a12fe632a9cb38d7a7c1ae24680321891", null ],
     [ "BeginCommandList", "d1/d83/classxii_g_a_l_command_queue_vulkan.html#a93c4fc53ba3e90e5952dbd2089836a9e", null ],
     [ "GetCompletedFenceValue", "d1/d83/classxii_g_a_l_command_queue_vulkan.html#a09123e6969bc0a158158d5c422506283", null ],
