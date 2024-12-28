@@ -175,14 +175,20 @@ Public Member Functions</h2></td></tr>
 template&lt;typename ObjectHandle , typename  = typename std::enable_if&lt;std::is_object&lt;ObjectHandle&gt;::value&gt;::type&gt; </td></tr>
 <tr class="memitem:ab7cd4290bc072bff2fa0e36d12566168"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>SetVulkanObjectDebugName</b> (ObjectHandle &amp;vkObject, const char *szDebugName, VmaAllocation vmaAllocation={})</td></tr>
 <tr class="separator:ab7cd4290bc072bff2fa0e36d12566168"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6fff7f8c47903aae772866f984781ba8" id="r_a6fff7f8c47903aae772866f984781ba8"><td class="memTemplParams" colspan="2"><a id="a6fff7f8c47903aae772866f984781ba8" name="a6fff7f8c47903aae772866f984781ba8"></a>
-template&lt;typename ObjectType , typename  = typename std::enable_if&lt;std::is_object&lt;ObjectType&gt;::value&gt;::type&gt; </td></tr>
-<tr class="memitem:a6fff7f8c47903aae772866f984781ba8"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>SafeReleaseDeviceObject</b> (ObjectType &amp;&amp;object, VmaAllocation vmaAlloaction)</td></tr>
-<tr class="separator:a6fff7f8c47903aae772866f984781ba8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af963dbc506313573a269f0418f221ef4" id="r_af963dbc506313573a269f0418f221ef4"><td class="memTemplParams" colspan="2"><a id="af963dbc506313573a269f0418f221ef4" name="af963dbc506313573a269f0418f221ef4"></a>
-template&lt;typename ObjectType , typename  = typename std::enable_if&lt;std::is_object&lt;ObjectType&gt;::value&gt;::type&gt; </td></tr>
-<tr class="memitem:af963dbc506313573a269f0418f221ef4"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>SafeReleaseDeviceObject</b> (ObjectType &amp;&amp;object)</td></tr>
-<tr class="separator:af963dbc506313573a269f0418f221ef4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6f4d4aaac9dbfe0eb03a886ee07e6c5" id="r_af6f4d4aaac9dbfe0eb03a886ee07e6c5"><td class="memTemplParams" colspan="2"><a id="af6f4d4aaac9dbfe0eb03a886ee07e6c5" name="af6f4d4aaac9dbfe0eb03a886ee07e6c5"></a>
+template&lt;typename T &gt; </td></tr>
+<tr class="memitem:af6f4d4aaac9dbfe0eb03a886ee07e6c5"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>SafeReleaseDeviceObject</b> (T &amp;vkObject, VmaAllocation vmaAlloaction)</td></tr>
+<tr class="separator:af6f4d4aaac9dbfe0eb03a886ee07e6c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22369de9690ae5182c906bbb69195145" id="r_a22369de9690ae5182c906bbb69195145"><td class="memTemplParams" colspan="2"><a id="a22369de9690ae5182c906bbb69195145" name="a22369de9690ae5182c906bbb69195145"></a>
+template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a22369de9690ae5182c906bbb69195145"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>SafeReleaseDeviceObject</b> (T &amp;vkObject)</td></tr>
+<tr class="separator:a22369de9690ae5182c906bbb69195145"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c7f699626466c5c7a33c302548e56ae" id="r_a3c7f699626466c5c7a33c302548e56ae"><td class="memItemLeft" align="right" valign="top"><a id="a3c7f699626466c5c7a33c302548e56ae" name="a3c7f699626466c5c7a33c302548e56ae"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ReclaimPoolFenceLater</b> (vk::Fence &amp;vkFence)</td></tr>
+<tr class="separator:a3c7f699626466c5c7a33c302548e56ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e541a670120dafeddda2cffa91ad7cc" id="r_a6e541a670120dafeddda2cffa91ad7cc"><td class="memItemLeft" align="right" valign="top"><a id="a6e541a670120dafeddda2cffa91ad7cc" name="a6e541a670120dafeddda2cffa91ad7cc"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ReclaimPoolSemaphoreLater</b> (vk::Semaphore &amp;vkSemaphore)</td></tr>
+<tr class="separator:a6e541a670120dafeddda2cffa91ad7cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab2924df3a90437bc80a1e6d2d44e4c6c" id="r_ab2924df3a90437bc80a1e6d2d44e4c6c"><td class="memItemLeft" align="right" valign="top"><a id="ab2924df3a90437bc80a1e6d2d44e4c6c" name="ab2924df3a90437bc80a1e6d2d44e4c6c"></a>
 XII_ALWAYS_INLINE <a class="el" href="../../d5/d66/classxii_allocator_base.html">xiiAllocatorBase</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetAllocator</b> () const</td></tr>
 <tr class="separator:ab2924df3a90437bc80a1e6d2d44e4c6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -198,18 +204,18 @@ XII_ALWAYS_INLINE xiiUInt32&#160;</td><td class="memItemRight" valign="bottom"><
 <tr class="memitem:ac2ac5c6d97e49739d46dd409d308866f" id="r_ac2ac5c6d97e49739d46dd409d308866f"><td class="memItemLeft" align="right" valign="top"><a id="ac2ac5c6d97e49739d46dd409d308866f" name="ac2ac5c6d97e49739d46dd409d308866f"></a>
 XII_ALWAYS_INLINE const vk::DispatchLoaderDynamic &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetVulkanDynamicDispatchLoader</b> () const</td></tr>
 <tr class="separator:ac2ac5c6d97e49739d46dd409d308866f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac2a9642af534cbcba4a4a86dbdc839fb" id="r_ac2a9642af534cbcba4a4a86dbdc839fb"><td class="memItemLeft" align="right" valign="top"><a id="ac2a9642af534cbcba4a4a86dbdc839fb" name="ac2a9642af534cbcba4a4a86dbdc839fb"></a>
-XII_ALWAYS_INLINE <a class="el" href="../../d0/d60/classxii_array_ptr.html">xiiArrayPtr</a>&lt; vk::LayerProperties &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetVulkanInstanceLayers</b> ()</td></tr>
-<tr class="separator:ac2a9642af534cbcba4a4a86dbdc839fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad1057def6f653d7140557e25d566f050" id="r_ad1057def6f653d7140557e25d566f050"><td class="memItemLeft" align="right" valign="top"><a id="ad1057def6f653d7140557e25d566f050" name="ad1057def6f653d7140557e25d566f050"></a>
-XII_ALWAYS_INLINE <a class="el" href="../../d0/d60/classxii_array_ptr.html">xiiArrayPtr</a>&lt; vk::ExtensionProperties &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetVulkanInstanceExtensionProperties</b> ()</td></tr>
-<tr class="separator:ad1057def6f653d7140557e25d566f050"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac682142cc7d3b61c340f7f62e70d9214" id="r_ac682142cc7d3b61c340f7f62e70d9214"><td class="memItemLeft" align="right" valign="top"><a id="ac682142cc7d3b61c340f7f62e70d9214" name="ac682142cc7d3b61c340f7f62e70d9214"></a>
-XII_ALWAYS_INLINE <a class="el" href="../../d0/d60/classxii_array_ptr.html">xiiArrayPtr</a>&lt; const char * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetVulkanInstanceEnabledExtensions</b> ()</td></tr>
-<tr class="separator:ac682142cc7d3b61c340f7f62e70d9214"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abaf6c8e6fa9034c73ed3608589f714b9" id="r_abaf6c8e6fa9034c73ed3608589f714b9"><td class="memItemLeft" align="right" valign="top"><a id="abaf6c8e6fa9034c73ed3608589f714b9" name="abaf6c8e6fa9034c73ed3608589f714b9"></a>
-XII_ALWAYS_INLINE <a class="el" href="../../d0/d60/classxii_array_ptr.html">xiiArrayPtr</a>&lt; vk::PhysicalDevice &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetVulkanPhysicalDevices</b> ()</td></tr>
-<tr class="separator:abaf6c8e6fa9034c73ed3608589f714b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ebf3d00372fe72fe0443bfc141e98b5" id="r_a3ebf3d00372fe72fe0443bfc141e98b5"><td class="memItemLeft" align="right" valign="top"><a id="a3ebf3d00372fe72fe0443bfc141e98b5" name="a3ebf3d00372fe72fe0443bfc141e98b5"></a>
+XII_ALWAYS_INLINE <a class="el" href="../../d0/d60/classxii_array_ptr.html">xiiArrayPtr</a>&lt; const vk::LayerProperties &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetVulkanInstanceLayers</b> () const</td></tr>
+<tr class="separator:a3ebf3d00372fe72fe0443bfc141e98b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa57a072a8cc5c8b7912f1074ea0cd168" id="r_aa57a072a8cc5c8b7912f1074ea0cd168"><td class="memItemLeft" align="right" valign="top"><a id="aa57a072a8cc5c8b7912f1074ea0cd168" name="aa57a072a8cc5c8b7912f1074ea0cd168"></a>
+XII_ALWAYS_INLINE <a class="el" href="../../d0/d60/classxii_array_ptr.html">xiiArrayPtr</a>&lt; const vk::ExtensionProperties &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetVulkanInstanceExtensionProperties</b> () const</td></tr>
+<tr class="separator:aa57a072a8cc5c8b7912f1074ea0cd168"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52589639a0508c4b957a452f85f1424f" id="r_a52589639a0508c4b957a452f85f1424f"><td class="memItemLeft" align="right" valign="top"><a id="a52589639a0508c4b957a452f85f1424f" name="a52589639a0508c4b957a452f85f1424f"></a>
+XII_ALWAYS_INLINE <a class="el" href="../../d0/d60/classxii_array_ptr.html">xiiArrayPtr</a>&lt; const char *const &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetVulkanInstanceEnabledExtensions</b> () const</td></tr>
+<tr class="separator:a52589639a0508c4b957a452f85f1424f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a757433813182d69d799aa0ee38919e54" id="r_a757433813182d69d799aa0ee38919e54"><td class="memItemLeft" align="right" valign="top"><a id="a757433813182d69d799aa0ee38919e54" name="a757433813182d69d799aa0ee38919e54"></a>
+XII_ALWAYS_INLINE <a class="el" href="../../d0/d60/classxii_array_ptr.html">xiiArrayPtr</a>&lt; const vk::PhysicalDevice &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetVulkanPhysicalDevices</b> () const</td></tr>
+<tr class="separator:a757433813182d69d799aa0ee38919e54"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8a59a920f46efd6a3428bfb86667e001" id="r_a8a59a920f46efd6a3428bfb86667e001"><td class="memItemLeft" align="right" valign="top"><a id="a8a59a920f46efd6a3428bfb86667e001" name="a8a59a920f46efd6a3428bfb86667e001"></a>
 XII_ALWAYS_INLINE vk::PhysicalDevice&#160;</td><td class="memItemRight" valign="bottom"><b>GetVulkanPhysicalDevice</b> () const</td></tr>
 <tr class="separator:a8a59a920f46efd6a3428bfb86667e001"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -222,12 +228,12 @@ XII_ALWAYS_INLINE const vk::PhysicalDeviceFeatures &amp;&#160;</td><td class="me
 <tr class="memitem:a8944747a5871d410cb8235cd5fe9df0b" id="r_a8944747a5871d410cb8235cd5fe9df0b"><td class="memItemLeft" align="right" valign="top"><a id="a8944747a5871d410cb8235cd5fe9df0b" name="a8944747a5871d410cb8235cd5fe9df0b"></a>
 XII_ALWAYS_INLINE const vk::PhysicalDeviceMemoryProperties &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetVulkanPhysicalDeviceMemoryProperties</b> () const</td></tr>
 <tr class="separator:a8944747a5871d410cb8235cd5fe9df0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad4a16469efec654e14ce7b783d9f813c" id="r_ad4a16469efec654e14ce7b783d9f813c"><td class="memItemLeft" align="right" valign="top"><a id="ad4a16469efec654e14ce7b783d9f813c" name="ad4a16469efec654e14ce7b783d9f813c"></a>
-XII_ALWAYS_INLINE <a class="el" href="../../d0/d60/classxii_array_ptr.html">xiiArrayPtr</a>&lt; vk::QueueFamilyProperties &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetPhysicalDeviceQueueFamilyProperties</b> ()</td></tr>
-<tr class="separator:ad4a16469efec654e14ce7b783d9f813c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a14ebe48543f236bbf1d316f6f8439aca" id="r_a14ebe48543f236bbf1d316f6f8439aca"><td class="memItemLeft" align="right" valign="top"><a id="a14ebe48543f236bbf1d316f6f8439aca" name="a14ebe48543f236bbf1d316f6f8439aca"></a>
-XII_ALWAYS_INLINE <a class="el" href="../../d0/d60/classxii_array_ptr.html">xiiArrayPtr</a>&lt; vk::ExtensionProperties &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetPhysicalDeviceSupportedExtensions</b> ()</td></tr>
-<tr class="separator:a14ebe48543f236bbf1d316f6f8439aca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf900a1c52b071bd2be3d4f8fc763f48" id="r_aaf900a1c52b071bd2be3d4f8fc763f48"><td class="memItemLeft" align="right" valign="top"><a id="aaf900a1c52b071bd2be3d4f8fc763f48" name="aaf900a1c52b071bd2be3d4f8fc763f48"></a>
+XII_ALWAYS_INLINE <a class="el" href="../../d0/d60/classxii_array_ptr.html">xiiArrayPtr</a>&lt; const vk::QueueFamilyProperties &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetPhysicalDeviceQueueFamilyProperties</b> () const</td></tr>
+<tr class="separator:aaf900a1c52b071bd2be3d4f8fc763f48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac78e6211d3efe0a2fa2ac88c0111eeef" id="r_ac78e6211d3efe0a2fa2ac88c0111eeef"><td class="memItemLeft" align="right" valign="top"><a id="ac78e6211d3efe0a2fa2ac88c0111eeef" name="ac78e6211d3efe0a2fa2ac88c0111eeef"></a>
+XII_ALWAYS_INLINE <a class="el" href="../../d0/d60/classxii_array_ptr.html">xiiArrayPtr</a>&lt; const vk::ExtensionProperties &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetPhysicalDeviceSupportedExtensions</b> () const</td></tr>
+<tr class="separator:ac78e6211d3efe0a2fa2ac88c0111eeef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8ab91cb205fb51c721eeab330fe831b7" id="r_a8ab91cb205fb51c721eeab330fe831b7"><td class="memItemLeft" align="right" valign="top"><a id="a8ab91cb205fb51c721eeab330fe831b7" name="a8ab91cb205fb51c721eeab330fe831b7"></a>
 XII_ALWAYS_INLINE const <a class="el" href="../../dc/dcd/structxii_g_a_l_device_vulkan_1_1_extension_features.html">xiiGALDeviceVulkan::ExtensionFeatures</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetPhysicalDeviceExtensionFeatures</b> () const</td></tr>
 <tr class="separator:a8ab91cb205fb51c721eeab330fe831b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -243,18 +249,18 @@ XII_ALWAYS_INLINE const vk::PhysicalDeviceFeatures &amp;&#160;</td><td class="me
 <tr class="memitem:a0696449bdfa9b2873ef0b36138e527f0" id="r_a0696449bdfa9b2873ef0b36138e527f0"><td class="memItemLeft" align="right" valign="top"><a id="a0696449bdfa9b2873ef0b36138e527f0" name="a0696449bdfa9b2873ef0b36138e527f0"></a>
 XII_ALWAYS_INLINE const <a class="el" href="../../dc/dcd/structxii_g_a_l_device_vulkan_1_1_extension_features.html">xiiGALDeviceVulkan::ExtensionFeatures</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetVulkanLogicalDeviceExtensionFeatures</b> () const</td></tr>
 <tr class="separator:a0696449bdfa9b2873ef0b36138e527f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4f97b1cd501d308a355998fb9edcde98" id="r_a4f97b1cd501d308a355998fb9edcde98"><td class="memItemLeft" align="right" valign="top"><a id="a4f97b1cd501d308a355998fb9edcde98" name="a4f97b1cd501d308a355998fb9edcde98"></a>
-XII_ALWAYS_INLINE <a class="el" href="../../d0/d60/classxii_array_ptr.html">xiiArrayPtr</a>&lt; vk::PipelineStageFlags &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetVulkanLogicalDeviceSupportedStagesFlags</b> ()</td></tr>
-<tr class="separator:a4f97b1cd501d308a355998fb9edcde98"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aacf7876b9c15bbc36e31172abf5b82d0" id="r_aacf7876b9c15bbc36e31172abf5b82d0"><td class="memItemLeft" align="right" valign="top"><a id="aacf7876b9c15bbc36e31172abf5b82d0" name="aacf7876b9c15bbc36e31172abf5b82d0"></a>
-XII_ALWAYS_INLINE vk::PipelineStageFlags&#160;</td><td class="memItemRight" valign="bottom"><b>GetVulkanLogicalDeviceSupportedStagesFlags</b> (xiiUInt32 uiQueueFamilyIndex)</td></tr>
-<tr class="separator:aacf7876b9c15bbc36e31172abf5b82d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9a6b2414a95c46bbb6359fff807db4d0" id="r_a9a6b2414a95c46bbb6359fff807db4d0"><td class="memItemLeft" align="right" valign="top"><a id="a9a6b2414a95c46bbb6359fff807db4d0" name="a9a6b2414a95c46bbb6359fff807db4d0"></a>
-XII_ALWAYS_INLINE <a class="el" href="../../d0/d60/classxii_array_ptr.html">xiiArrayPtr</a>&lt; vk::AccessFlags &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetVulkanLogicalDeviceSupportedAccessFlags</b> ()</td></tr>
-<tr class="separator:a9a6b2414a95c46bbb6359fff807db4d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1df3eabab272e05a4ad0b654ba267865" id="r_a1df3eabab272e05a4ad0b654ba267865"><td class="memItemLeft" align="right" valign="top"><a id="a1df3eabab272e05a4ad0b654ba267865" name="a1df3eabab272e05a4ad0b654ba267865"></a>
-XII_ALWAYS_INLINE vk::AccessFlags&#160;</td><td class="memItemRight" valign="bottom"><b>GetVulkanLogicalDeviceSupportedAccessFlags</b> (xiiUInt32 uiQueueFamilyIndex)</td></tr>
-<tr class="separator:a1df3eabab272e05a4ad0b654ba267865"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ee38a5e817ffba8037fc1736d39cc52" id="r_a1ee38a5e817ffba8037fc1736d39cc52"><td class="memItemLeft" align="right" valign="top"><a id="a1ee38a5e817ffba8037fc1736d39cc52" name="a1ee38a5e817ffba8037fc1736d39cc52"></a>
+XII_ALWAYS_INLINE <a class="el" href="../../d0/d60/classxii_array_ptr.html">xiiArrayPtr</a>&lt; const vk::PipelineStageFlags &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetVulkanLogicalDeviceSupportedStagesFlags</b> () const</td></tr>
+<tr class="separator:a1ee38a5e817ffba8037fc1736d39cc52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab38c6a73eb5f33d7e91bcfabde3c1fd3" id="r_ab38c6a73eb5f33d7e91bcfabde3c1fd3"><td class="memItemLeft" align="right" valign="top"><a id="ab38c6a73eb5f33d7e91bcfabde3c1fd3" name="ab38c6a73eb5f33d7e91bcfabde3c1fd3"></a>
+XII_ALWAYS_INLINE vk::PipelineStageFlags&#160;</td><td class="memItemRight" valign="bottom"><b>GetVulkanLogicalDeviceSupportedStagesFlags</b> (xiiUInt32 uiQueueFamilyIndex) const</td></tr>
+<tr class="separator:ab38c6a73eb5f33d7e91bcfabde3c1fd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4807c48cdc0e89843b1af878a5437aa" id="r_ae4807c48cdc0e89843b1af878a5437aa"><td class="memItemLeft" align="right" valign="top"><a id="ae4807c48cdc0e89843b1af878a5437aa" name="ae4807c48cdc0e89843b1af878a5437aa"></a>
+XII_ALWAYS_INLINE <a class="el" href="../../d0/d60/classxii_array_ptr.html">xiiArrayPtr</a>&lt; const vk::AccessFlags &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetVulkanLogicalDeviceSupportedAccessFlags</b> () const</td></tr>
+<tr class="separator:ae4807c48cdc0e89843b1af878a5437aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95058926619a0a46802d17633117c46e" id="r_a95058926619a0a46802d17633117c46e"><td class="memItemLeft" align="right" valign="top"><a id="a95058926619a0a46802d17633117c46e" name="a95058926619a0a46802d17633117c46e"></a>
+XII_ALWAYS_INLINE vk::AccessFlags&#160;</td><td class="memItemRight" valign="bottom"><b>GetVulkanLogicalDeviceSupportedAccessFlags</b> (xiiUInt32 uiQueueFamilyIndex) const</td></tr>
+<tr class="separator:a95058926619a0a46802d17633117c46e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af7871ec2213b834761945164ad4a54da" id="r_af7871ec2213b834761945164ad4a54da"><td class="memItemLeft" align="right" valign="top"><a id="af7871ec2213b834761945164ad4a54da" name="af7871ec2213b834761945164ad4a54da"></a>
 XII_ALWAYS_INLINE const <a class="el" href="../../d3/d98/structxii_g_a_l_device_vulkan_1_1_queue_information.html">xiiGALDeviceVulkan::QueueInformation</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetGraphicsQueueInformation</b> () const</td></tr>
 <tr class="separator:af7871ec2213b834761945164ad4a54da"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -267,9 +273,21 @@ XII_ALWAYS_INLINE const <a class="el" href="../../d3/d98/structxii_g_a_l_device_
 <tr class="memitem:ab22da65e9fec62d893d50393dd63e577" id="r_ab22da65e9fec62d893d50393dd63e577"><td class="memItemLeft" align="right" valign="top"><a id="ab22da65e9fec62d893d50393dd63e577" name="ab22da65e9fec62d893d50393dd63e577"></a>
 XII_ALWAYS_INLINE xiiGALDeviceVulkan::DebugMode&#160;</td><td class="memItemRight" valign="bottom"><b>GetDebugMode</b> () const</td></tr>
 <tr class="separator:ab22da65e9fec62d893d50393dd63e577"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af2841b45c90f378f38912524961e91ab" id="r_af2841b45c90f378f38912524961e91ab"><td class="memItemLeft" align="right" valign="top"><a id="af2841b45c90f378f38912524961e91ab" name="af2841b45c90f378f38912524961e91ab"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>FlushPendingObjects</b> ()</td></tr>
-<tr class="separator:af2841b45c90f378f38912524961e91ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20c012483279a2d665765ad2be9a4436" id="r_a20c012483279a2d665765ad2be9a4436"><td class="memItemLeft" align="right" valign="top"><a id="a20c012483279a2d665765ad2be9a4436" name="a20c012483279a2d665765ad2be9a4436"></a>
+XII_ALWAYS_INLINE <a class="el" href="../../d1/d19/classxii_g_a_l_fence_pool_vulkan.html">xiiGALFencePoolVulkan</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetVulkanFencePool</b> () const</td></tr>
+<tr class="separator:a20c012483279a2d665765ad2be9a4436"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b918938ff20cba2ac3122e0c692762b" id="r_a3b918938ff20cba2ac3122e0c692762b"><td class="memItemLeft" align="right" valign="top"><a id="a3b918938ff20cba2ac3122e0c692762b" name="a3b918938ff20cba2ac3122e0c692762b"></a>
+XII_ALWAYS_INLINE <a class="el" href="../../db/d3b/classxii_g_a_l_semaphore_pool_vulkan.html">xiiGALSemaphorePoolVulkan</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetVulkanSemaphorePool</b> () const</td></tr>
+<tr class="separator:a3b918938ff20cba2ac3122e0c692762b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f5c1a464054ece1aa37ea1ed9cda0de" id="r_a6f5c1a464054ece1aa37ea1ed9cda0de"><td class="memItemLeft" align="right" valign="top"><a id="a6f5c1a464054ece1aa37ea1ed9cda0de" name="a6f5c1a464054ece1aa37ea1ed9cda0de"></a>
+<a class="el" href="../../dc/df3/classxii_g_a_l_fence_vulkan.html">xiiGALFenceVulkan</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>CreateFenceInternal</b> (const <a class="el" href="../../dd/d6c/structxii_g_a_l_fence_creation_description.html">xiiGALFenceCreationDescription</a> &amp;description)</td></tr>
+<tr class="separator:a6f5c1a464054ece1aa37ea1ed9cda0de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef93f2546d943eccad6c43f5f771d640" id="r_aef93f2546d943eccad6c43f5f771d640"><td class="memItemLeft" align="right" valign="top"><a id="aef93f2546d943eccad6c43f5f771d640" name="aef93f2546d943eccad6c43f5f771d640"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>DestroyFenceInternal</b> (<a class="el" href="../../d6/d79/classxii_g_a_l_fence.html">xiiGALFence</a> *pFence)</td></tr>
+<tr class="separator:aef93f2546d943eccad6c43f5f771d640"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b793b3aa2daac71f63ef25ed1be3e88" id="r_a7b793b3aa2daac71f63ef25ed1be3e88"><td class="memItemLeft" align="right" valign="top"><a id="a7b793b3aa2daac71f63ef25ed1be3e88" name="a7b793b3aa2daac71f63ef25ed1be3e88"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ReleasePerFrameResources</b> (xiiUInt64 uiCompletedValue)</td></tr>
+<tr class="separator:a7b793b3aa2daac71f63ef25ed1be3e88"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classxii_g_a_l_device"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_classxii_g_a_l_device')"><img src="../../closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="../../d5/d19/classxii_g_a_l_device.html">xiiGALDevice</a></td></tr>
 <tr class="memitem:a64fd727410fb0d83a90f5b7999feaf7b inherit pub_methods_classxii_g_a_l_device" id="r_a64fd727410fb0d83a90f5b7999feaf7b"><td class="memItemLeft" align="right" valign="top">
 <a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Initialize</b> ()</td></tr>
@@ -734,6 +752,9 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>WaitIdlePlatf
 <tr class="memitem:a75519d96b6d0eba7d0f4c07d75fea767" id="r_a75519d96b6d0eba7d0f4c07d75fea767"><td class="memItemLeft" align="right" valign="top"><a id="a75519d96b6d0eba7d0f4c07d75fea767" name="a75519d96b6d0eba7d0f4c07d75fea767"></a>
 virtual <a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><b>FillCapabilitiesPlatform</b> () override final</td></tr>
 <tr class="separator:a75519d96b6d0eba7d0f4c07d75fea767"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8fd274437ccce36bd17dd408ae23c7c8" id="r_a8fd274437ccce36bd17dd408ae23c7c8"><td class="memItemLeft" align="right" valign="top"><a id="a8fd274437ccce36bd17dd408ae23c7c8" name="a8fd274437ccce36bd17dd408ae23c7c8"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SafeReleaseDeviceObjectInternal</b> (vk::ObjectType vkObjectType, void *pObject, VmaAllocation vmaAllocation)</td></tr>
+<tr class="separator:a8fd274437ccce36bd17dd408ae23c7c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_classxii_g_a_l_device"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_methods_classxii_g_a_l_device')"><img src="../../closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="../../d5/d19/classxii_g_a_l_device.html">xiiGALDevice</a></td></tr>
 <tr class="memitem:a244bcc92bd7524107d112c658e0beb15 inherit pro_methods_classxii_g_a_l_device" id="r_a244bcc92bd7524107d112c658e0beb15"><td class="memItemLeft" align="right" valign="top">
 &#160;</td><td class="memItemRight" valign="bottom"><b>xiiGALDevice</b> (const <a class="el" href="../../d6/dd5/structxii_g_a_l_device_creation_description.html">xiiGALDeviceCreationDescription</a> &amp;creationDescription)</td></tr>
@@ -1033,7 +1054,7 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>PipelineResourceSign
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d3/d6b/classxii_g_a_l_device_vulkan.html">xiiGALDeviceVulkan</a></li>
-    <li class="footer">Generated on Thu Dec 26 2024 20:52:19 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Sat Dec 28 2024 16:59:11 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

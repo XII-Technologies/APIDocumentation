@@ -2396,13 +2396,13 @@ var hierarchy =
         ] ]
       ] ]
     ] ],
+    [ "xiiArrayBase< xiiGALCommandListVulkan *, xiiDynamicArrayBase< xiiGALCommandListVulkan * > >", "da/d4c/classxii_array_base.html", [
+      [ "xiiDynamicArrayBase< xiiGALCommandListVulkan * >", "d2/dea/classxii_dynamic_array_base.html", [
+        [ "xiiDynamicArray< xiiGALCommandListVulkan * >", "dc/da4/classxii_dynamic_array.html", null ]
+      ] ]
+    ] ],
     [ "xiiArrayBase< xiiGALCommandQueueProperties, xiiStaticArray< xiiGALCommandQueueProperties, Capacity > >", "da/d4c/classxii_array_base.html", [
       [ "xiiStaticArray< xiiGALCommandQueueProperties, XII_GAL_MAX_ADAPTER_QUEUE_COUNT >", "d9/d25/classxii_static_array.html", null ]
-    ] ],
-    [ "xiiArrayBase< xiiGALCommandQueueVulkan::CommandListReleaseInfo, xiiDynamicArrayBase< xiiGALCommandQueueVulkan::CommandListReleaseInfo > >", "da/d4c/classxii_array_base.html", [
-      [ "xiiDynamicArrayBase< xiiGALCommandQueueVulkan::CommandListReleaseInfo >", "d2/dea/classxii_dynamic_array_base.html", [
-        [ "xiiDynamicArray< xiiGALCommandQueueVulkan::CommandListReleaseInfo >", "dc/da4/classxii_dynamic_array.html", null ]
-      ] ]
     ] ],
     [ "xiiArrayBase< xiiGALDevice::DestroyedObject, xiiDynamicArrayBase< xiiGALDevice::DestroyedObject > >", "da/d4c/classxii_array_base.html", [
       [ "xiiDynamicArrayBase< xiiGALDevice::DestroyedObject >", "d2/dea/classxii_dynamic_array_base.html", [
@@ -4112,8 +4112,17 @@ var hierarchy =
     [ "xiiDequeBase< Node, Construct >", "d1/d7d/classxii_deque_base.html", [
       [ "xiiDeque< Node, xiiNullAllocatorWrapper, false >", "d8/df8/classxii_deque.html", null ]
     ] ],
+    [ "xiiDequeBase< PerFrameData, true >", "d1/d7d/classxii_deque_base.html", [
+      [ "xiiDeque< PerFrameData >", "d8/df8/classxii_deque.html", null ]
+    ] ],
     [ "xiiDequeBase< PoolEntry, true >", "d1/d7d/classxii_deque_base.html", [
       [ "xiiDeque< PoolEntry >", "d8/df8/classxii_deque.html", null ]
+    ] ],
+    [ "xiiDequeBase< SafeReclaimResource, true >", "d1/d7d/classxii_deque_base.html", [
+      [ "xiiDeque< SafeReclaimResource >", "d8/df8/classxii_deque.html", null ]
+    ] ],
+    [ "xiiDequeBase< SafeReleaseDescription, true >", "d1/d7d/classxii_deque_base.html", [
+      [ "xiiDeque< SafeReleaseDescription >", "d8/df8/classxii_deque.html", null ]
     ] ],
     [ "xiiDequeBase< ShadowData, true >", "d1/d7d/classxii_deque_base.html", [
       [ "xiiDeque< ShadowData >", "d8/df8/classxii_deque.html", null ]
@@ -4135,6 +4144,12 @@ var hierarchy =
     ] ],
     [ "xiiDequeBase< UsedTempResource, true >", "d1/d7d/classxii_deque_base.html", [
       [ "xiiDeque< UsedTempResource, xiiLocalAllocatorWrapper >", "d8/df8/classxii_deque.html", null ]
+    ] ],
+    [ "xiiDequeBase< vk::Fence, true >", "d1/d7d/classxii_deque_base.html", [
+      [ "xiiDeque< vk::Fence >", "d8/df8/classxii_deque.html", null ]
+    ] ],
+    [ "xiiDequeBase< vk::Semaphore, true >", "d1/d7d/classxii_deque_base.html", [
+      [ "xiiDeque< vk::Semaphore >", "d8/df8/classxii_deque.html", null ]
     ] ],
     [ "xiiDequeBase< xiiArchiveBuilder::SourceEntry, true >", "d1/d7d/classxii_deque_base.html", [
       [ "xiiDeque< xiiArchiveBuilder::SourceEntry >", "d8/df8/classxii_deque.html", null ]
@@ -4162,6 +4177,9 @@ var hierarchy =
     ] ],
     [ "xiiDequeBase< xiiGALCommandListVulkan *, true >", "d1/d7d/classxii_deque_base.html", [
       [ "xiiDeque< xiiGALCommandListVulkan * >", "d8/df8/classxii_deque.html", null ]
+    ] ],
+    [ "xiiDequeBase< xiiGALCommandQueueVulkan::CommandListReleaseInfo, true >", "d1/d7d/classxii_deque_base.html", [
+      [ "xiiDeque< xiiGALCommandQueueVulkan::CommandListReleaseInfo >", "d8/df8/classxii_deque.html", null ]
     ] ],
     [ "xiiDequeBase< xiiGALFenceVulkan::SyncPointData, true >", "d1/d7d/classxii_deque_base.html", [
       [ "xiiDeque< xiiGALFenceVulkan::SyncPointData >", "d8/df8/classxii_deque.html", null ]
@@ -4747,6 +4765,7 @@ var hierarchy =
     ] ],
     [ "xiiGALDrawCommandCapabilityFlags", "dc/dd9/structxii_g_a_l_draw_command_capability_flags.html", null ],
     [ "xiiGALFenceHandle", "dd/dc8/classxii_g_a_l_fence_handle.html", null ],
+    [ "xiiGALFencePoolVulkan", "d1/d19/classxii_g_a_l_fence_pool_vulkan.html", null ],
     [ "xiiGALFenceType", "d9/d08/structxii_g_a_l_fence_type.html", [
       [ "xiiEnum< xiiGALFenceType >", "de/dfd/structxii_enum.html", null ]
     ] ],
@@ -4835,6 +4854,7 @@ var hierarchy =
     [ "xiiGALScanLineOrder", "dd/d96/structxii_g_a_l_scan_line_order.html", [
       [ "xiiEnum< xiiGALScanLineOrder >", "de/dfd/structxii_enum.html", null ]
     ] ],
+    [ "xiiGALSemaphorePoolVulkan", "db/d3b/classxii_g_a_l_semaphore_pool_vulkan.html", null ],
     [ "xiiGALSetShaderResourceFlags", "dc/d47/structxii_g_a_l_set_shader_resource_flags.html", null ],
     [ "xiiGALSetVertexBufferFlags", "d1/dd2/structxii_g_a_l_set_vertex_buffer_flags.html", null ],
     [ "xiiGALShaderBindingTableHandle", "d8/db5/classxii_g_a_l_shader_binding_table_handle.html", null ],
@@ -8138,6 +8158,8 @@ var hierarchy =
     [ "xiiUniquePtr< xiiGALCommandQueueD3D12 >", "d9/d4a/classxii_unique_ptr.html", null ],
     [ "xiiUniquePtr< xiiGALCommandQueueNull >", "d9/d4a/classxii_unique_ptr.html", null ],
     [ "xiiUniquePtr< xiiGALCommandQueueVulkan >", "d9/d4a/classxii_unique_ptr.html", null ],
+    [ "xiiUniquePtr< xiiGALFencePoolVulkan >", "d9/d4a/classxii_unique_ptr.html", null ],
+    [ "xiiUniquePtr< xiiGALSemaphorePoolVulkan >", "d9/d4a/classxii_unique_ptr.html", null ],
     [ "xiiUniquePtr< xiiGameStateBase >", "d9/d4a/classxii_unique_ptr.html", null ],
     [ "xiiUniquePtr< xiiImageDataResourceDescriptor >", "d9/d4a/classxii_unique_ptr.html", null ],
     [ "xiiUniquePtr< xiiIpcChannel >", "d9/d4a/classxii_unique_ptr.html", null ],
