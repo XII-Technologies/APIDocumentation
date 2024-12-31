@@ -1,5 +1,6 @@
 var NAVTREEINDEX28 =
 {
+"d9/d08/structxii_g_a_l_fence_type.html#a90e526bb30919f03435a33c89f119a9f":[6,0,856,0],
 "d9/d08/structxii_g_a_l_fence_type.html#a90e526bb30919f03435a33c89f119a9fa2a9f979a6b919b6362790a14205007be":[6,0,856,0,3],
 "d9/d08/structxii_g_a_l_fence_type.html#a90e526bb30919f03435a33c89f119a9fa2eb79aff0866b84fcddb3bce17b7015b":[6,0,856,0,2],
 "d9/d08/structxii_g_a_l_fence_type.html#a90e526bb30919f03435a33c89f119a9fac4f1fe61cc47e98093cb50c363743120":[6,0,856,0,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX28 =
 "d9/d5d/classxii_dds_file_format.html#ad50200c5a0dd883c161120594a65c2e1":[6,0,496,0],
 "d9/d5d/structxii_grid_navmesh_1_1_area_edge.html":[6,0,1149,0],
 "d9/d5d/structxii_grid_navmesh_1_1_area_edge.html#a3f0ce1e50f2adfff042aada7c1f6c5db":[6,0,1149,0,1],
-"d9/d5d/structxii_grid_navmesh_1_1_area_edge.html#a64c15d088d143959072d5c3e95a676ca":[6,0,1149,0,0],
-"d9/d5f/classxii_editor_engine_document_msg.html":[6,0,626]
+"d9/d5d/structxii_grid_navmesh_1_1_area_edge.html#a64c15d088d143959072d5c3e95a676ca":[6,0,1149,0,0]
 };

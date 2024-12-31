@@ -1,5 +1,6 @@
 var NAVTREEINDEX26 =
 {
+"d8/d51/classxii_render_pipeline_asset_document.html#a3a29dd808d839dd2a3bc82be8f56ff60":[6,0,1976,0],
 "d8/d51/classxii_render_pipeline_asset_document.html#a503806c90bbf661c1acdd12c28eaf474":[6,0,1976,2],
 "d8/d51/classxii_render_pipeline_asset_document.html#a8b1ad10847abd8aeb5f0a28aa208a1fd":[6,0,1976,4],
 "d8/d51/classxii_render_pipeline_asset_document.html#a9677ee815d8d64454fcabae3cf3e7fa2":[6,0,1976,1],
@@ -200,7 +201,7 @@ var NAVTREEINDEX26 =
 "d8/d95/classxii_prefab_resource.html#af1cd20402f9b977193d6593b786105c9":[6,0,1613,0],
 "d8/d96/structstd_1_1tuple__size_3_01xii_map_base_iterator_base_3_01_key_type_00_01_value_type_00_01_com9e7eedcb449af87d61d19cc92b9e207b.html":[6,0,0,11],
 "d8/d97/classxii_g_a_l_pipeline_resource_signature_vulkan.html":[6,0,906],
-"d8/d97/classxii_g_a_l_pipeline_resource_signature_vulkan.html#a38b726ae404565e007f21598815efa76":[6,0,906,0],
+"d8/d97/classxii_g_a_l_pipeline_resource_signature_vulkan.html#a6982f1fb6e1a7d1d4485df80cd8bf5f2":[6,0,906,0],
 "d8/d99/classxii_qt_button_proxy.html":[6,0,1703],
 "d8/d9a/classxii_l_u_t_asset_document_manager.html":[6,0,1356],
 "d8/d9a/classxii_l_u_t_asset_document_manager.html#a6b2b035bff82565ae34c18da52611162":[6,0,1356,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX26 =
 "d8/da5/classxii_render_data.html":[6,0,1969],
 "d8/da5/classxii_render_data.html#aa7b3828acb943e031f920eaa428bf00e":[6,0,1969,2],
 "d8/da5/classxii_render_data.html#af3e40e0a6b4de644d4739bf1aaf640b0":[6,0,1969,3],
-"d8/da7/classxii_duplicate_objects_command.html":[6,0,595],
-"d8/da7/classxii_duplicate_objects_command.html#a091a3417d642cfad68b777bc93b92178":[6,0,595,0]
+"d8/da7/classxii_duplicate_objects_command.html":[6,0,595]
 };

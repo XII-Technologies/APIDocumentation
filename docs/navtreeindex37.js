@@ -1,5 +1,7 @@
 var NAVTREEINDEX37 =
 {
+"db/df5/classxii_hidden_attribute.html":[6,0,1195],
+"db/df5/structxii_mesh_buffer_utils.html":[6,0,1422],
 "db/df7/structxii_creature_leg.html":[6,0,458],
 "db/df8/classxii_engine_process_document_context.html":[6,0,648],
 "db/df8/classxii_engine_process_document_context.html#a0100c3db5d558b0dab667195a9a81682":[6,0,648,1],
@@ -247,7 +249,5 @@ var NAVTREEINDEX37 =
 "dc/d68/classxii_camera.html#a236c842c51cc652bb56ad22c2b93ae32":[6,0,286,22],
 "dc/d68/classxii_camera.html#a27052d222eef8a93e552b7f2da0190ca":[6,0,286,23],
 "dc/d68/classxii_camera.html#a2fda08438f8959b1f94e2fdd9dcbf738":[6,0,286,7],
-"dc/d68/classxii_camera.html#a30634ebc42ddd1f2bb15289999a72841":[6,0,286,9],
-"dc/d68/classxii_camera.html#a3d2df6b0ff9858a8ac77b5fa25174800":[6,0,286,17],
-"dc/d68/classxii_camera.html#a43352fae2c899cf7045b52450c1ef0c1":[6,0,286,2]
+"dc/d68/classxii_camera.html#a30634ebc42ddd1f2bb15289999a72841":[6,0,286,9]
 };

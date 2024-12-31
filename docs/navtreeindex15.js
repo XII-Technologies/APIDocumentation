@@ -1,5 +1,6 @@
 var NAVTREEINDEX15 =
 {
+"d4/dea/classxii_state_machine_asset_document.html#a60672886de5c731eaa31039545b96774":[6,0,2281,0],
 "d4/dea/classxii_state_machine_asset_document.html#a8f91bc0638a5cadb499c200000ed7c2c":[6,0,2281,1],
 "d4/dea/structxii_container_sub_type_resolver_3_01xii_hash_set_3_01_t_01_4_01_4.html":[6,0,430],
 "d4/deb/classxii_internal_1_1xii_allocator_impl.html":[6,0,6,20],
@@ -248,6 +249,5 @@ var NAVTREEINDEX15 =
 "d5/d30/structxii_g_a_l_resource_dimension_capability_flags.html":[6,0,960],
 "d5/d30/structxii_g_a_l_resource_dimension_capability_flags.html#a3c967880af6da3646f4056f7efa738ae":[6,0,960,1],
 "d5/d30/structxii_g_a_l_resource_dimension_capability_flags.html#a3c967880af6da3646f4056f7efa738aea3ae0565965571786b45ab20010affe9a":[6,0,960,1,9],
-"d5/d30/structxii_g_a_l_resource_dimension_capability_flags.html#a3c967880af6da3646f4056f7efa738aea3d1318da106ebf123260b53933c267ec":[6,0,960,1,6],
-"d5/d30/structxii_g_a_l_resource_dimension_capability_flags.html#a3c967880af6da3646f4056f7efa738aea3f16511a1e75684eadf8d0050c97471a":[6,0,960,1,2]
+"d5/d30/structxii_g_a_l_resource_dimension_capability_flags.html#a3c967880af6da3646f4056f7efa738aea3d1318da106ebf123260b53933c267ec":[6,0,960,1,6]
 };

@@ -1,5 +1,6 @@
 var NAVTREEINDEX44 =
 {
+"de/d10/structxii_g_a_l_resource_format.html#a85df1b2fc240485387136c2211fcebf6af6f0da5798c7f5d48807f372274c9254":[6,0,961,0,72],
 "de/d10/structxii_g_a_l_resource_format.html#a85df1b2fc240485387136c2211fcebf6afe31febcafcfb8dfbb9ec369d3487fe3":[6,0,961,0,18],
 "de/d10/structxii_g_a_l_resource_format.html#a85df1b2fc240485387136c2211fcebf6aff70898ce796dcf420421611a874ade3":[6,0,961,0,68],
 "de/d10/structxii_msg_set_color.html":[6,0,1485],
@@ -248,6 +249,5 @@ var NAVTREEINDEX44 =
 "de/d63/structxii_image_sizeof_helper_3_01const_01void_01_4.html":[6,0,1235],
 "de/d67/structxii_asset_document_type_descriptor.html":[6,0,214],
 "de/d6a/classxii_qt_visual_script_variable_widget.html":[6,0,1901],
-"de/d6d/structxii_path_node_tangent_mode.html":[6,0,1555],
-"de/d6d/structxii_path_node_tangent_mode.html#abde1e08a9cb26ac69d24b015b6a71ba4":[6,0,1555,0]
+"de/d6d/structxii_path_node_tangent_mode.html":[6,0,1555]
 };

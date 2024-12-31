@@ -1,5 +1,6 @@
 var NAVTREEINDEX16 =
 {
+"d5/d30/structxii_g_a_l_resource_dimension_capability_flags.html#a3c967880af6da3646f4056f7efa738aea3f16511a1e75684eadf8d0050c97471a":[6,0,960,1,2],
 "d5/d30/structxii_g_a_l_resource_dimension_capability_flags.html#a3c967880af6da3646f4056f7efa738aea41cc8c5c0c704e2166672ff9bd8cb1d6":[6,0,960,1,8],
 "d5/d30/structxii_g_a_l_resource_dimension_capability_flags.html#a3c967880af6da3646f4056f7efa738aea9e204bf66d8d4210dfdd464d2ef0637c":[6,0,960,1,4],
 "d5/d30/structxii_g_a_l_resource_dimension_capability_flags.html#a3c967880af6da3646f4056f7efa738aeaa85941c6c65fa44721dfae3a1254f56d":[6,0,960,1,5],
@@ -248,6 +249,5 @@ var NAVTREEINDEX16 =
 "d5/d88/structxii_g_a_l_shader_texture_type.html#ab91fdd1dd528231b9445a987b1fcb2d0a74a42f54ffbb1353b62a9d7e487e23cc":[6,0,1006,0,9],
 "d5/d88/structxii_g_a_l_shader_texture_type.html#ab91fdd1dd528231b9445a987b1fcb2d0a76c821ede560c62960a4d7b049f0fe6c":[6,0,1006,0,6],
 "d5/d88/structxii_g_a_l_shader_texture_type.html#ab91fdd1dd528231b9445a987b1fcb2d0ac198799e04952460b590a8994a97aea5":[6,0,1006,0,5],
-"d5/d88/structxii_g_a_l_shader_texture_type.html#ab91fdd1dd528231b9445a987b1fcb2d0acbaa88959205273ab5d316a4b54525ad":[6,0,1006,0,3],
-"d5/d88/structxii_g_a_l_shader_texture_type.html#ab91fdd1dd528231b9445a987b1fcb2d0acf67b9ad16de09f7946e4f5e36ed179d":[6,0,1006,0,8]
+"d5/d88/structxii_g_a_l_shader_texture_type.html#ab91fdd1dd528231b9445a987b1fcb2d0acbaa88959205273ab5d316a4b54525ad":[6,0,1006,0,3]
 };

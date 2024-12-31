@@ -1,5 +1,7 @@
 var NAVTREEINDEX32 =
 {
+"da/d3e/classxii_property_path.html#a63a2275739d32d629033d469137486e0":[6,0,1672,2],
+"da/d3e/classxii_property_path.html#a7656a3399a96fe794b1e5cabeea6093f":[6,0,1672,7],
 "da/d3e/classxii_property_path.html#a8a2b7c3a62b5d7a0525623cb6beb96f1":[6,0,1672,6],
 "da/d3e/classxii_property_path.html#a8d21c79799072f4e02d76e21c84493c7":[6,0,1672,3],
 "da/d3e/classxii_property_path.html#a90bb04264a10f9c0f58e66d42e027675":[6,0,1672,9],
@@ -247,7 +249,5 @@ var NAVTREEINDEX32 =
 "da/d7f/classxii_g_a_l_swap_chain_d3_d11.html#af61f2c773f31209f0026143fb07b860e":[6,0,1035,1],
 "da/d7f/classxii_g_a_l_swap_chain_d3_d11.html#afb8b3105f89698243bee13f692878cb4":[6,0,1035,2],
 "da/d7f/classxii_locked_object.html":[6,0,1320],
-"da/d7f/classxii_locked_object.html#a6942be5e3dbd91e9f731ca79224ee75c":[6,0,1320,0],
-"da/d7f/structxii_comparison_operator.html":[6,0,382],
-"da/d80/structget_argument_3_010_00_01_head_00_01_tail_8_8_8_01_4.html":[6,0,33]
+"da/d7f/classxii_locked_object.html#a6942be5e3dbd91e9f731ca79224ee75c":[6,0,1320,0]
 };

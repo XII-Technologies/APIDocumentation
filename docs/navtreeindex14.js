@@ -1,5 +1,6 @@
 var NAVTREEINDEX14 =
 {
+"d4/da8/structxii_g_a_l_misc_buffer_flags.html#acc33af4eba1efc98368dada684c6da02ae68e94b5d6856199819f5a88e3ad950a":[6,0,892,1,0],
 "d4/da9/classxii_state_machine_instance.html":[6,0,2287],
 "d4/da9/classxii_state_machine_instance.html#a8260f285571825598a24d35a0faca417":[6,0,2287,0],
 "d4/da9/classxii_state_machine_instance.html#a9ab8a1dd80678bc5a955247dbdd010f0":[6,0,2287,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX14 =
 "d4/dea/classxii_file_writer.html#aeef10c737192724c5c4cd01347bb9367":[6,0,721,0],
 "d4/dea/classxii_state_machine_asset_document.html":[6,0,2281],
 "d4/dea/classxii_state_machine_asset_document.html#a35f776355b3684b9b4b10f932a657c40":[6,0,2281,3],
-"d4/dea/classxii_state_machine_asset_document.html#a5f42acb7e645701675d0bc0eee99cd85":[6,0,2281,2],
-"d4/dea/classxii_state_machine_asset_document.html#a60672886de5c731eaa31039545b96774":[6,0,2281,0]
+"d4/dea/classxii_state_machine_asset_document.html#a5f42acb7e645701675d0bc0eee99cd85":[6,0,2281,2]
 };

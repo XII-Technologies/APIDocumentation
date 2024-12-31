@@ -1,5 +1,6 @@
 var NAVTREEINDEX48 =
 {
+"df/d8c/classxii_spot_light_visualizer_adapter.html#a7f7a9829659d60811fef44d6d8f2c774":[6,0,2265,0],
 "df/d8c/classxii_spot_light_visualizer_adapter.html#a9dc56d0091126a278779581430ffdef7":[6,0,2265,1],
 "df/d8d/classxii_g_a_l_render_target_setup.html":[6,0,957],
 "df/d8d/classxii_visual_script_class_asset_properties.html":[6,0,2573],
@@ -248,6 +249,5 @@ var NAVTREEINDEX48 =
 "functions_enum_e.html":[6,3,4,3],
 "functions_enum_f.html":[6,3,4,4],
 "functions_enum_h.html":[6,3,4,5],
-"functions_enum_i.html":[6,3,4,6],
-"functions_enum_l.html":[6,3,4,7]
+"functions_enum_i.html":[6,3,4,6]
 };

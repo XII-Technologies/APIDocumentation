@@ -1,5 +1,6 @@
 var NAVTREEINDEX43 =
 {
+"dd/de7/classxii_light_component.html#ab50a2c7ea1433ffe7ebbcadff93be611":[6,0,1311,0],
 "dd/de9/classxii_simple_document_config_msg_to_engine.html":[6,0,2191],
 "dd/dea/structxii_blackboard_template_resource_descriptor.html":[6,0,259],
 "dd/deb/structxii_arg_sensitive.html":[6,0,196],
@@ -248,6 +249,5 @@ var NAVTREEINDEX43 =
 "de/d10/structxii_g_a_l_resource_format.html#a85df1b2fc240485387136c2211fcebf6aed76a3481c1740cb9b0b8edd568fc2bc":[6,0,961,0,94],
 "de/d10/structxii_g_a_l_resource_format.html#a85df1b2fc240485387136c2211fcebf6af39e25a1e89b44f799d9546d273f0914":[6,0,961,0,19],
 "de/d10/structxii_g_a_l_resource_format.html#a85df1b2fc240485387136c2211fcebf6af57fc49df70e2057601930396122e6fd":[6,0,961,0,86],
-"de/d10/structxii_g_a_l_resource_format.html#a85df1b2fc240485387136c2211fcebf6af6a015664d2ff69a634e34a9428746a3":[6,0,961,0,98],
-"de/d10/structxii_g_a_l_resource_format.html#a85df1b2fc240485387136c2211fcebf6af6f0da5798c7f5d48807f372274c9254":[6,0,961,0,72]
+"de/d10/structxii_g_a_l_resource_format.html#a85df1b2fc240485387136c2211fcebf6af6a015664d2ff69a634e34a9428746a3":[6,0,961,0,98]
 };

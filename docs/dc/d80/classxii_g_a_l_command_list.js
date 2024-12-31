@@ -28,7 +28,6 @@ var classxii_g_a_l_command_list =
     [ "EndDebugGroup", "dc/d80/classxii_g_a_l_command_list.html#a340f27a9840a131ef9056a88f76a120c", null ],
     [ "EndQuery", "dc/d80/classxii_g_a_l_command_list.html#af5beac89cd973efc30edf7790e9a9c0f", null ],
     [ "EndRenderPass", "dc/d80/classxii_g_a_l_command_list.html#aa857e47441756680037d20c39a8a169e", null ],
-    [ "Flush", "dc/d80/classxii_g_a_l_command_list.html#aa65767c75d5b21f07c15dd194590c1c4", null ],
     [ "GenerateMips", "dc/d80/classxii_g_a_l_command_list.html#aeab7b31eeaf17a4360a3f51aae9d4563", null ],
     [ "GetCommandQueue", "dc/d80/classxii_g_a_l_command_list.html#a0868adea18175793e479ea6b97b360b1", null ],
     [ "GetDescription", "dc/d80/classxii_g_a_l_command_list.html#a94c19111b0066ef08cd6062348770ebf", null ],

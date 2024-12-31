@@ -1,5 +1,6 @@
 var NAVTREEINDEX18 =
 {
+"d5/dd3/structxii_image_format.html#a005ef22274255637febbc13f075b9e38aa09e83a8bf5bcd446ee938221fccda6d":[6,0,1228,0,19],
 "d5/dd3/structxii_image_format.html#a005ef22274255637febbc13f075b9e38aa2ea1edc2072638d5ce9c7fe7583361f":[6,0,1228,0,24],
 "d5/dd3/structxii_image_format.html#a005ef22274255637febbc13f075b9e38aa353ecb313e41660bd8a678d0aaf8be4":[6,0,1228,0,115],
 "d5/dd3/structxii_image_format.html#a005ef22274255637febbc13f075b9e38aa5fe9b7e101ac3c992ed906a086aee2a":[6,0,1228,0,44],
@@ -248,6 +249,5 @@ var NAVTREEINDEX18 =
 "d6/d0c/classxii_hashed_string.html#a9b5d0035dac27d79fa38ea117b5f8b5b":[6,0,1156,3],
 "d6/d0c/classxii_hashed_string.html#aaee48674cfaf6da1188ff096ced2c952":[6,0,1156,18],
 "d6/d0c/classxii_hashed_string.html#abb9d0d043b09b0a5023f59c126b6e76a":[6,0,1156,8],
-"d6/d0c/classxii_hashed_string.html#abbac46b61eee7cd13fa984b047363843":[6,0,1156,6],
-"d6/d0c/classxii_hashed_string.html#ac351a65c4f1754d02d9f1181969a96c5":[6,0,1156,7]
+"d6/d0c/classxii_hashed_string.html#abbac46b61eee7cd13fa984b047363843":[6,0,1156,6]
 };

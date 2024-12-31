@@ -1,5 +1,6 @@
 var NAVTREEINDEX42 =
 {
+"dd/d9e/classxii_progress.html#aa45c4f7091f2f1c66431bbef57ec8272":[6,0,1640,7],
 "dd/d9e/classxii_progress.html#aa893f84ddcb411610aac730ef2be0a47":[6,0,1640,6],
 "dd/d9e/classxii_progress.html#acf214d3658bb827323f67772cf151024":[6,0,1640,8],
 "dd/d9e/classxii_progress.html#ad7f50c75ce35e59a9c768a1a2359aa7f":[6,0,1640,5],
@@ -248,6 +249,5 @@ var NAVTREEINDEX42 =
 "dd/de6/structxii_g_a_l_sparse_resource_capability_flags.html#afc7e83e9dd1f9d15babb136af5e90689aeeb23e8844c12db6578bc9d2afb280f7":[6,0,1022,1,18],
 "dd/de6/structxii_g_a_l_sparse_resource_capability_flags.html#afc7e83e9dd1f9d15babb136af5e90689af01ea109816cfbad4afeecaee3ce3563":[6,0,1022,1,2],
 "dd/de7/classxii_light_component.html":[6,0,1311],
-"dd/de7/classxii_light_component.html#a2921b2729d97a4eaa194a0cec34c1a2e":[6,0,1311,1],
-"dd/de7/classxii_light_component.html#ab50a2c7ea1433ffe7ebbcadff93be611":[6,0,1311,0]
+"dd/de7/classxii_light_component.html#a2921b2729d97a4eaa194a0cec34c1a2e":[6,0,1311,1]
 };

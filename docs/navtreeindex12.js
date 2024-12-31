@@ -7,8 +7,9 @@ var NAVTREEINDEX12 =
 "d4/d07/structxii_g_a_l_sub_pass_dependency_description.html#af892446cc6eee5a99deb8a92296edb88":[6,0,1030,4],
 "d4/d0a/structxii_property_clipboard.html":[6,0,1667],
 "d4/d0b/classxii_g_a_l_buffer_vulkan.html":[6,0,798],
+"d4/d0b/classxii_g_a_l_buffer_vulkan.html#a195fb22cc04664d93d7822b3e8b35fa2":[6,0,798,2],
 "d4/d0b/classxii_g_a_l_buffer_vulkan.html#a2aa81e7b5d5f8d7f89a7c1f6d12be6b4":[6,0,798,1],
-"d4/d0b/classxii_g_a_l_buffer_vulkan.html#a465c64fe7e4b81399baedefeca5b3f24":[6,0,798,2],
+"d4/d0b/classxii_g_a_l_buffer_vulkan.html#a465c64fe7e4b81399baedefeca5b3f24":[6,0,798,3],
 "d4/d0b/classxii_g_a_l_buffer_vulkan.html#a4fa3d22615a815eff64bf55058d17590":[6,0,798,0],
 "d4/d0c/classxii_qt_pick_document_object_dlg.html":[6,0,1818],
 "d4/d0c/classxii_qt_pick_document_object_dlg.html#aa9a9f98b6eb735e66d7a34a7a2cbcf0b":[6,0,1818,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX12 =
 "d4/d68/classxii_remote_interface.html#a7b7bffe429f197a5e07c8c5084b78461":[6,0,1957,29],
 "d4/d68/classxii_remote_interface.html#a7d34b071626c9f1ec5242e23ab2fff0b":[6,0,1957,36],
 "d4/d68/classxii_remote_interface.html#a8e740bb490b8fcad2b1c4cb4b9ecaccf":[6,0,1957,8],
-"d4/d68/classxii_remote_interface.html#a90f5e0b469cd466558bbbb8639924313":[6,0,1957,4],
-"d4/d68/classxii_remote_interface.html#a927764dfb696e4ff51dbe155edcc45fa":[6,0,1957,27]
+"d4/d68/classxii_remote_interface.html#a90f5e0b469cd466558bbbb8639924313":[6,0,1957,4]
 };

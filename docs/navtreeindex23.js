@@ -1,5 +1,6 @@
 var NAVTREEINDEX23 =
 {
+"d7/d17/classxii_g_a_l_depth_stencil_state.html#a06e1b12598577129d9aca2ec6b221282":[6,0,821,0],
 "d7/d17/classxii_resource_handle_stream_operations.html":[6,0,2011],
 "d7/d17/structxii_asset_table_1_1_manager_resource.html":[6,0,223,0],
 "d7/d17/structxii_file_system_mirror_1_1_dir_entry.html":[6,0,720,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX23 =
 "d7/d8d/structxii_g_a_l_access_flags.html#a4c4d72bc05e2a6cd4819337ffa7f6b9aa58608fd56cb1c89400d71bf787a36fd6":[6,0,756,1,3],
 "d7/d8d/structxii_g_a_l_access_flags.html#a4c4d72bc05e2a6cd4819337ffa7f6b9aa642f15a16db9d776f06a4ad3cc396b90":[6,0,756,1,11],
 "d7/d8d/structxii_g_a_l_access_flags.html#a4c4d72bc05e2a6cd4819337ffa7f6b9aa704716417fee9445c7811c051697c412":[6,0,756,1,21],
-"d7/d8d/structxii_g_a_l_access_flags.html#a4c4d72bc05e2a6cd4819337ffa7f6b9aa776e7f12072e4896fbec95735e2ffa1d":[6,0,756,1,16],
-"d7/d8d/structxii_g_a_l_access_flags.html#a4c4d72bc05e2a6cd4819337ffa7f6b9aa7c945fe9b1c37c5023cf2ada2e878bad":[6,0,756,1,13]
+"d7/d8d/structxii_g_a_l_access_flags.html#a4c4d72bc05e2a6cd4819337ffa7f6b9aa776e7f12072e4896fbec95735e2ffa1d":[6,0,756,1,16]
 };

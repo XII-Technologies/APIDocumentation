@@ -189,12 +189,24 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>TransitionOrVerifyTex
 <tr class="memitem:a05bf774003f37afe8f244192cf215b56" id="r_a05bf774003f37afe8f244192cf215b56"><td class="memItemLeft" align="right" valign="top"><a id="a05bf774003f37afe8f244192cf215b56" name="a05bf774003f37afe8f244192cf215b56"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>FlushBarriers</b> ()</td></tr>
 <tr class="separator:a05bf774003f37afe8f244192cf215b56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74fb09968280ce5243884cc866a418c7" id="r_a74fb09968280ce5243884cc866a418c7"><td class="memItemLeft" align="right" valign="top"><a id="a74fb09968280ce5243884cc866a418c7" name="a74fb09968280ce5243884cc866a418c7"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>CopyBufferToTexture</b> (vk::Buffer vkSourceBuffer, xiiUInt64 uiSourceBufferOffset, xiiUInt32 uiSourceBufferRowStrideInTexels, <a class="el" href="../../d7/d2e/classxii_g_a_l_texture_vulkan.html">xiiGALTextureVulkan</a> *pDestinationTextureVulkan, const <a class="el" href="../../d2/dd6/classxii_bounding_box_template.html">xiiBoundingBoxU32</a> &amp;destinationRegion, xiiUInt32 uiDestinationMipLevel, xiiUInt32 uiDestinationArraySlice, bool bVerifyOnly=false)</td></tr>
+<tr class="separator:a74fb09968280ce5243884cc866a418c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ac35e81a951e6b6e32b85575bc82f2c" id="r_a4ac35e81a951e6b6e32b85575bc82f2c"><td class="memItemLeft" align="right" valign="top"><a id="a4ac35e81a951e6b6e32b85575bc82f2c" name="a4ac35e81a951e6b6e32b85575bc82f2c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>CopyTextureToBuffer</b> (<a class="el" href="../../d7/d2e/classxii_g_a_l_texture_vulkan.html">xiiGALTextureVulkan</a> *pSourceTextureVulkan, const <a class="el" href="../../d2/dd6/classxii_bounding_box_template.html">xiiBoundingBoxU32</a> &amp;sourceRegion, xiiUInt32 uiSourceMipLevel, xiiUInt32 uiSourceArraySlice, vk::Buffer vkDestinationBuffer, xiiUInt64 uiDestinationBufferOffset, xiiUInt32 uiDestinationBufferRowStrideInTexels, bool bVerifyOnly=false)</td></tr>
+<tr class="separator:a4ac35e81a951e6b6e32b85575bc82f2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac7e03d17af503c868a87f6f304a51a77" id="r_ac7e03d17af503c868a87f6f304a51a77"><td class="memItemLeft" align="right" valign="top"><a id="ac7e03d17af503c868a87f6f304a51a77" name="ac7e03d17af503c868a87f6f304a51a77"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>CopyBufferToImage</b> (vk::Buffer vkSourceBuffer, vk::Image vkDestinationImage, vk::ImageLayout vkDestinationImageLayout, <a class="el" href="../../d0/d60/classxii_array_ptr.html">xiiArrayPtr</a>&lt; const vk::BufferImageCopy &gt; pRegions)</td></tr>
 <tr class="separator:ac7e03d17af503c868a87f6f304a51a77"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad367170ee82b3ac31d5564430cd301ee" id="r_ad367170ee82b3ac31d5564430cd301ee"><td class="memItemLeft" align="right" valign="top"><a id="ad367170ee82b3ac31d5564430cd301ee" name="ad367170ee82b3ac31d5564430cd301ee"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>CopyImageToBuffer</b> (vk::Image vkSourceImage, vk::ImageLayout vkSourceImageLayout, vk::Buffer vkDestinationBuffer, <a class="el" href="../../d0/d60/classxii_array_ptr.html">xiiArrayPtr</a>&lt; const vk::BufferImageCopy &gt; pRegions)</td></tr>
 <tr class="separator:ad367170ee82b3ac31d5564430cd301ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0afc208784c82ca9e8f4b76c97999e4c" id="r_a0afc208784c82ca9e8f4b76c97999e4c"><td class="memItemLeft" align="right" valign="top"><a id="a0afc208784c82ca9e8f4b76c97999e4c" name="a0afc208784c82ca9e8f4b76c97999e4c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>CopyImage</b> (vk::Image vkSourceImage, vk::ImageLayout vkSourceImageLayout, vk::Image vkDestinationImage, vk::ImageLayout vkDestinationImageLayout, <a class="el" href="../../d0/d60/classxii_array_ptr.html">xiiArrayPtr</a>&lt; const vk::ImageCopy &gt; pRegions)</td></tr>
+<tr class="separator:a0afc208784c82ca9e8f4b76c97999e4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad524b6d17e3a6d64410f3208518813cd" id="r_ad524b6d17e3a6d64410f3208518813cd"><td class="memItemLeft" align="right" valign="top"><a id="ad524b6d17e3a6d64410f3208518813cd" name="ad524b6d17e3a6d64410f3208518813cd"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>CopyTextureRegion</b> (<a class="el" href="../../d7/d2e/classxii_g_a_l_texture_vulkan.html">xiiGALTextureVulkan</a> *pSourceTextureVulkan, <a class="el" href="../../d7/d2e/classxii_g_a_l_texture_vulkan.html">xiiGALTextureVulkan</a> *pDestinationTextureVulkan, const vk::ImageCopy &amp;copyRegion)</td></tr>
+<tr class="separator:ad524b6d17e3a6d64410f3208518813cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a08c12e953a7e344b46467c5e88103039" id="r_a08c12e953a7e344b46467c5e88103039"><td class="memItemLeft" align="right" valign="top"><a id="a08c12e953a7e344b46467c5e88103039" name="a08c12e953a7e344b46467c5e88103039"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>AddWaitSemaphore</b> (vk::Semaphore semaphore, vk::PipelineStageFlags pipelineFlags)</td></tr>
 <tr class="separator:a08c12e953a7e344b46467c5e88103039"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -362,10 +374,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>EndDebugGroup</b> ()<
 <tr class="memitem:a8b39ce41b621490a7e6be82f6bb11d11 inherit pub_methods_classxii_g_a_l_command_list" id="r_a8b39ce41b621490a7e6be82f6bb11d11"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d80/classxii_g_a_l_command_list.html#a8b39ce41b621490a7e6be82f6bb11d11">InsertDebugLabel</a> (<a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sName, const <a class="el" href="../../d3/de6/classxii_color.html">xiiColor</a> &amp;color=<a class="el" href="../../d3/de6/classxii_color.html#a9bab62c2a390a5c5149c4e738384ac96">xiiColor::Black</a>)</td></tr>
 <tr class="memdesc:a8b39ce41b621490a7e6be82f6bb11d11 inherit pub_methods_classxii_g_a_l_command_list"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inserts a debug label into the command list.  <br /></td></tr>
 <tr class="separator:a8b39ce41b621490a7e6be82f6bb11d11 inherit pub_methods_classxii_g_a_l_command_list"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa65767c75d5b21f07c15dd194590c1c4 inherit pub_methods_classxii_g_a_l_command_list" id="r_aa65767c75d5b21f07c15dd194590c1c4"><td class="memItemLeft" align="right" valign="top">
-void&#160;</td><td class="memItemRight" valign="bottom"><b>Flush</b> ()</td></tr>
-<tr class="memdesc:aa65767c75d5b21f07c15dd194590c1c4 inherit pub_methods_classxii_g_a_l_command_list"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flushes the command list. It ensures that all commands that have been sent to the command list are completed. <br /></td></tr>
-<tr class="separator:aa65767c75d5b21f07c15dd194590c1c4 inherit pub_methods_classxii_g_a_l_command_list"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1a142472ca204fe72c75e8c49beec4c9 inherit pub_methods_classxii_g_a_l_command_list" id="r_a1a142472ca204fe72c75e8c49beec4c9"><td class="memItemLeft" align="right" valign="top">
 void&#160;</td><td class="memItemRight" valign="bottom"><b>InvalidateState</b> ()</td></tr>
 <tr class="memdesc:a1a142472ca204fe72c75e8c49beec4c9 inherit pub_methods_classxii_g_a_l_command_list"><td class="mdescLeft">&#160;</td><td class="mdescRight">Invalidates the current state of the command list. It is typically called when the command list is reset or when the pipeline state is changed. <br /></td></tr>
@@ -575,9 +583,6 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>EndDebugGroup
 <tr class="memitem:a871d43fb463f26f8fbb776a7511943ef" id="r_a871d43fb463f26f8fbb776a7511943ef"><td class="memItemLeft" align="right" valign="top"><a id="a871d43fb463f26f8fbb776a7511943ef" name="a871d43fb463f26f8fbb776a7511943ef"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>InsertDebugLabelPlatform</b> (<a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sName, const <a class="el" href="../../d3/de6/classxii_color.html">xiiColor</a> &amp;color) override final</td></tr>
 <tr class="separator:a871d43fb463f26f8fbb776a7511943ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8bb76a6e59af2f1b1b968137338ba3aa" id="r_a8bb76a6e59af2f1b1b968137338ba3aa"><td class="memItemLeft" align="right" valign="top"><a id="a8bb76a6e59af2f1b1b968137338ba3aa" name="a8bb76a6e59af2f1b1b968137338ba3aa"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>FlushPlatform</b> () override final</td></tr>
-<tr class="separator:a8bb76a6e59af2f1b1b968137338ba3aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a25c12f422a0989de066e88b52a050dd6" id="r_a25c12f422a0989de066e88b52a050dd6"><td class="memItemLeft" align="right" valign="top"><a id="a25c12f422a0989de066e88b52a050dd6" name="a25c12f422a0989de066e88b52a050dd6"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>InvalidateStatePlatform</b> () override final</td></tr>
 <tr class="separator:a25c12f422a0989de066e88b52a050dd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -703,7 +708,7 @@ xiiUInt32&#160;</td><td class="memItemRight" valign="bottom"><b>m_uiStencilRef</
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dd/d24/classxii_g_a_l_command_list_vulkan.html">xiiGALCommandListVulkan</a></li>
-    <li class="footer">Generated on Sat Dec 28 2024 16:59:11 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Tue Dec 31 2024 03:58:14 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

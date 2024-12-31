@@ -1,5 +1,6 @@
 var NAVTREEINDEX27 =
 {
+"d8/da7/classxii_duplicate_objects_command.html#a091a3417d642cfad68b777bc93b92178":[6,0,595,0],
 "d8/da7/classxii_duplicate_objects_command.html#a7d2c61685c47c8ed2331961409b888a2":[6,0,595,2],
 "d8/da7/classxii_duplicate_objects_command.html#aa840b9f1a290ed82d707050c8c288106":[6,0,595,1],
 "d8/da8/structxii_object_picking_result.html":[6,0,1522],
@@ -248,6 +249,5 @@ var NAVTREEINDEX27 =
 "d9/d07/classxii_c_var.html#a693fae3620ba401917d9e6b11414af8e":[6,0,475,2],
 "d9/d07/classxii_c_var.html#a697db3abd3826d3105034bb2350206d8":[6,0,475,1],
 "d9/d07/classxii_c_var.html#a9f68db71b2d4bc056865b57957a8af44":[6,0,475,0],
-"d9/d08/structxii_g_a_l_fence_type.html":[6,0,856],
-"d9/d08/structxii_g_a_l_fence_type.html#a90e526bb30919f03435a33c89f119a9f":[6,0,856,0]
+"d9/d08/structxii_g_a_l_fence_type.html":[6,0,856]
 };

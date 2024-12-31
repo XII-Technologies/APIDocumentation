@@ -1,5 +1,6 @@
 var NAVTREEINDEX39 =
 {
+"dc/d9b/classxii_typed_enum_property.html#ad564e5309984e7f9a6ee706777553309":[6,0,2477,1],
 "dc/d9e/structxii_g_a_l_ray_tracing_pipeline_description.html":[6,0,942],
 "dc/d9e/structxii_g_a_l_ray_tracing_pipeline_description.html#a41cd3ad56608d2753ab3483bbbbc26ba":[6,0,942,2],
 "dc/d9e/structxii_g_a_l_ray_tracing_pipeline_description.html#a4ec0e8c7152dfa0e5b6c81be9ef940a5":[6,0,942,5],
@@ -248,6 +249,5 @@ var NAVTREEINDEX39 =
 "dd/d07/structxii_g_a_l_graphics_device_adapter_description.html#a4de3987150efd784d564bb09b9e79fdb":[6,0,869,11],
 "dd/d07/structxii_g_a_l_graphics_device_adapter_description.html#a508aba358416ccc5f7d46a074402f222":[6,0,869,4],
 "dd/d07/structxii_g_a_l_graphics_device_adapter_description.html#a5328cef8f6ce1ed5fdf2fbbeac2ab4d5":[6,0,869,9],
-"dd/d07/structxii_g_a_l_graphics_device_adapter_description.html#a6ff3568c8bd56a7357b3c3e58057785b":[6,0,869,2],
-"dd/d07/structxii_g_a_l_graphics_device_adapter_description.html#a711c631013938db9cadf0ff179b06110":[6,0,869,16]
+"dd/d07/structxii_g_a_l_graphics_device_adapter_description.html#a6ff3568c8bd56a7357b3c3e58057785b":[6,0,869,2]
 };

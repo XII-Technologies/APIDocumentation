@@ -1,5 +1,7 @@
 var NAVTREEINDEX36 =
 {
+"db/d96/classxii_surface_resource.html#a1621f806fd453f97dcf8455adfefaccf":[6,0,2345,0],
+"db/d96/classxii_surface_resource.html#a9f8776b9ca83cc029d32fb80fb7ddb2f":[6,0,2345,2],
 "db/d96/classxii_surface_resource.html#ad0154bd86ed65cbf0af7293b1d22b3dd":[6,0,2345,3],
 "db/d99/classxii_block_storage_1_1_iterator.html":[6,0,263,1],
 "db/d9b/structxii_model_importer2_1_1_output_texture.html":[6,0,11,6],
@@ -247,7 +249,5 @@ var NAVTREEINDEX36 =
 "db/df2/classxii_g_a_l_pipeline_state_d3_d12.html":[6,0,912],
 "db/df2/classxii_g_a_l_pipeline_state_d3_d12.html#a3651f038db60ab37401dd57a28e34192":[6,0,912,0],
 "db/df4/classxii_paste_objects_command.html":[6,0,1551],
-"db/df5/classxii_comment_component.html":[6,0,372],
-"db/df5/classxii_hidden_attribute.html":[6,0,1195],
-"db/df5/structxii_mesh_buffer_utils.html":[6,0,1422]
+"db/df5/classxii_comment_component.html":[6,0,372]
 };

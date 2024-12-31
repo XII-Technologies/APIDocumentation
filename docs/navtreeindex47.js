@@ -1,5 +1,6 @@
 var NAVTREEINDEX47 =
 {
+"df/d2a/classxii_long_op_controller_manager.html#aa5ec33b43b7f72fcc187ee7570622ac3":[6,0,1340,1],
 "df/d2a/classxii_long_op_controller_manager.html#ac95d1fdbd157dd508d061f0e5f9df1bc":[6,0,1340,7],
 "df/d2a/classxii_long_op_controller_manager.html#aca115c30e42ca66f3e4622c55984e60d":[6,0,1340,8],
 "df/d2a/classxii_long_op_controller_manager.html#ae30fdfd30871321d89e359d448cea7a1":[6,0,1340,4],
@@ -248,6 +249,5 @@ var NAVTREEINDEX47 =
 "df/d89/structxii_g_a_l_compute_shader_properties.html#ac1cd5b01d45de23874adf7efc898cbe6":[6,0,817,6],
 "df/d89/structxii_g_a_l_compute_shader_properties.html#ac806f26e21f6a6491807a04a384ea824":[6,0,817,3],
 "df/d8c/classxii_spot_light_visualizer_adapter.html":[6,0,2265],
-"df/d8c/classxii_spot_light_visualizer_adapter.html#a34bf0f801095768a1bb8db6ff48501f2":[6,0,2265,2],
-"df/d8c/classxii_spot_light_visualizer_adapter.html#a7f7a9829659d60811fef44d6d8f2c774":[6,0,2265,0]
+"df/d8c/classxii_spot_light_visualizer_adapter.html#a34bf0f801095768a1bb8db6ff48501f2":[6,0,2265,2]
 };
