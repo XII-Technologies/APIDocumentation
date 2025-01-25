@@ -187,14 +187,16 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:a58195820a26d7994ca3b6b2ed160c348" id="r_a58195820a26d7994ca3b6b2ed160c348"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a58195820a26d7994ca3b6b2ed160c348">UpdateInputSlotValues</a> ()=0</td></tr>
 <tr class="memdesc:a58195820a26d7994ca3b6b2ed160c348"><td class="mdescLeft">&#160;</td><td class="mdescRight">Override this, if you need to query the state of the hardware to update the input slots.  <br /></td></tr>
 <tr class="separator:a58195820a26d7994ca3b6b2ed160c348"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab1cc621bc1f7252df00f2be9a20c9c74" id="r_ab1cc621bc1f7252df00f2be9a20c9c74"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab1cc621bc1f7252df00f2be9a20c9c74">ResetInputSlotValues</a> ()</td></tr>
-<tr class="memdesc:ab1cc621bc1f7252df00f2be9a20c9c74"><td class="mdescLeft">&#160;</td><td class="mdescRight">Override this, if you need to reset certain input slot values to zero, after the <a class="el" href="../../de/d43/classxii_input_manager.html" title="The central class to set up and query the state of all input.">xiiInputManager</a> is finished with the current frame update.  <br /></td></tr>
+<tr class="memitem:ab1cc621bc1f7252df00f2be9a20c9c74" id="r_ab1cc621bc1f7252df00f2be9a20c9c74"><td class="memItemLeft" align="right" valign="top"><a id="ab1cc621bc1f7252df00f2be9a20c9c74" name="ab1cc621bc1f7252df00f2be9a20c9c74"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>ResetInputSlotValues</b> ()</td></tr>
+<tr class="memdesc:ab1cc621bc1f7252df00f2be9a20c9c74"><td class="mdescLeft">&#160;</td><td class="mdescRight">Override this, if you need to reset certain input slot values to zero, after the <a class="el" href="../../de/d43/classxii_input_manager.html" title="The central class to set up and query the state of all input.">xiiInputManager</a> is finished with the current frame update. <br /></td></tr>
 <tr class="separator:ab1cc621bc1f7252df00f2be9a20c9c74"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:accb25b55755a4846a568b367b6a67718" id="r_accb25b55755a4846a568b367b6a67718"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#accb25b55755a4846a568b367b6a67718">RegisterInputSlots</a> ()=0</td></tr>
 <tr class="memdesc:accb25b55755a4846a568b367b6a67718"><td class="mdescLeft">&#160;</td><td class="mdescRight">Override this to register all the input slots that this device exposes.  <br /></td></tr>
 <tr class="separator:accb25b55755a4846a568b367b6a67718"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaddc20f247e6cfdbacae3623a4903cde" id="r_aaddc20f247e6cfdbacae3623a4903cde"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaddc20f247e6cfdbacae3623a4903cde">UpdateHardwareState</a> (<a class="el" href="../../d7/dc1/structxii_time.html">xiiTime</a> tTimeDifference)</td></tr>
-<tr class="memdesc:aaddc20f247e6cfdbacae3623a4903cde"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function is called once after <a class="el" href="../../de/d43/classxii_input_manager.html#a70fb780c23c64f655c51a51ad4fbed87" title="Updates the state of the input manager. This should be called exactly once each frame.">xiiInputManager::Update</a> with the same time delta value. It allows to update hardware state, such as the vibration of gamepad motors.  <br /></td></tr>
+<tr class="memitem:aaddc20f247e6cfdbacae3623a4903cde" id="r_aaddc20f247e6cfdbacae3623a4903cde"><td class="memItemLeft" align="right" valign="top"><a id="aaddc20f247e6cfdbacae3623a4903cde" name="aaddc20f247e6cfdbacae3623a4903cde"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>UpdateHardwareState</b> (<a class="el" href="../../d7/dc1/structxii_time.html">xiiTime</a> tTimeDifference)</td></tr>
+<tr class="memdesc:aaddc20f247e6cfdbacae3623a4903cde"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function is called once after <a class="el" href="../../de/d43/classxii_input_manager.html#a70fb780c23c64f655c51a51ad4fbed87" title="Updates the state of the input manager. This should be called exactly once each frame.">xiiInputManager::Update</a> with the same time delta value. It allows to update hardware state, such as the vibration of gamepad motors. <br /></td></tr>
 <tr class="separator:aaddc20f247e6cfdbacae3623a4903cde"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-static-methods" name="pro-static-methods"></a>
@@ -284,7 +286,7 @@ static const <a class="el" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a>
 
 <p>Override this if you need to do device specific initialization before the first use. </p>
 
-<p>Implemented in <a class="el" href="../../d0/d22/classxii_dummy_x_r_input.html#aa894ea59593f294294cd4fdc6718643b">xiiDummyXRInput</a>, <a class="el" href="../../d1/d10/classxii_input_device_x_box360.html#a6977437c48cb04f548b59f70ca4e0df1">xiiInputDeviceXBox360</a>, <a class="el" href="../../dc/de5/classxii_standard_input_device.html#a098e37bd0c864280379f5c0ee480c6ab">xiiStandardInputDevice</a>, <a class="el" href="../../dc/de5/classxii_standard_input_device.html#a10aea4757047e42d105bb73e233843e2">xiiStandardInputDevice</a>, <a class="el" href="../../dc/de5/classxii_standard_input_device.html#a10aea4757047e42d105bb73e233843e2">xiiStandardInputDevice</a>, and <a class="el" href="../../d2/d95/classxii_virtual_thumb_stick.html#a904ead50418a4431403817bd13c4a930">xiiVirtualThumbStick</a>.</p>
+<p>Implemented in <a class="el" href="../../d0/d22/classxii_dummy_x_r_input.html#aa894ea59593f294294cd4fdc6718643b">xiiDummyXRInput</a>, and <a class="el" href="../../d2/d95/classxii_virtual_thumb_stick.html#a904ead50418a4431403817bd13c4a930">xiiVirtualThumbStick</a>.</p>
 
 </div>
 </div>
@@ -314,65 +316,7 @@ static const <a class="el" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a>
 <p>Override this to register all the input slots that this device exposes. </p>
 <p>This is called once during initialization. It needs to call <a class="el" href="#a9048f4cf891f562e76aff5a61e517aa1" title="Calls RegisterInputSlot() on the xiiInputManager and passes the parameters through.">RegisterInputSlot()</a> once for every input slot that this device exposes to the system. </p>
 
-<p>Implemented in <a class="el" href="../../d0/d22/classxii_dummy_x_r_input.html#abd5ac644e616fd2b7ec5f241e470f99a">xiiDummyXRInput</a>, <a class="el" href="../../d1/d10/classxii_input_device_x_box360.html#aeb2c3e0a32446657b4b882824cc5533e">xiiInputDeviceXBox360</a>, <a class="el" href="../../dc/de5/classxii_standard_input_device.html#a7beed68d46f706284fca9f78d5bed09a">xiiStandardInputDevice</a>, <a class="el" href="../../dc/de5/classxii_standard_input_device.html#a965a691bb94742eed52472b3705dabbe">xiiStandardInputDevice</a>, <a class="el" href="../../dc/de5/classxii_standard_input_device.html#a965a691bb94742eed52472b3705dabbe">xiiStandardInputDevice</a>, and <a class="el" href="../../d2/d95/classxii_virtual_thumb_stick.html#a604c888032c9cdcdad67b6050b8e2790">xiiVirtualThumbStick</a>.</p>
-
-</div>
-</div>
-<a id="ab1cc621bc1f7252df00f2be9a20c9c74" name="ab1cc621bc1f7252df00f2be9a20c9c74"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab1cc621bc1f7252df00f2be9a20c9c74">&#9670;&#160;</a></span>ResetInputSlotValues()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void xiiInputDevice::ResetInputSlotValues </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Override this, if you need to reset certain input slot values to zero, after the <a class="el" href="../../de/d43/classxii_input_manager.html" title="The central class to set up and query the state of all input.">xiiInputManager</a> is finished with the current frame update. </p>
-
-<p>Reimplemented in <a class="el" href="../../dc/de5/classxii_standard_input_device.html#a8ac7a3c447aa9a5e8d47eafde61fe9e6">xiiStandardInputDevice</a>, and <a class="el" href="../../dc/de5/classxii_standard_input_device.html#ad8716d3a827a64b0b5b99f2966e09b2f">xiiStandardInputDevice</a>.</p>
-
-</div>
-</div>
-<a id="aaddc20f247e6cfdbacae3623a4903cde" name="aaddc20f247e6cfdbacae3623a4903cde"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaddc20f247e6cfdbacae3623a4903cde">&#9670;&#160;</a></span>UpdateHardwareState()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void xiiInputDevice::UpdateHardwareState </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="../../d7/dc1/structxii_time.html">xiiTime</a></td>          <td class="paramname"><span class="paramname"><em>tTimeDifference</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>This function is called once after <a class="el" href="../../de/d43/classxii_input_manager.html#a70fb780c23c64f655c51a51ad4fbed87" title="Updates the state of the input manager. This should be called exactly once each frame.">xiiInputManager::Update</a> with the same time delta value. It allows to update hardware state, such as the vibration of gamepad motors. </p>
-
-<p>Reimplemented in <a class="el" href="../../d1/d10/classxii_input_device_x_box360.html#a5feb9dcb71c2e79d8f562b3228cd0e1b">xiiInputDeviceXBox360</a>.</p>
+<p>Implemented in <a class="el" href="../../d0/d22/classxii_dummy_x_r_input.html#abd5ac644e616fd2b7ec5f241e470f99a">xiiDummyXRInput</a>, and <a class="el" href="../../d2/d95/classxii_virtual_thumb_stick.html#a604c888032c9cdcdad67b6050b8e2790">xiiVirtualThumbStick</a>.</p>
 
 </div>
 </div>
@@ -402,7 +346,7 @@ static const <a class="el" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a>
 <p>Override this, if you need to query the state of the hardware to update the input slots. </p>
 <dl class="section note"><dt>Note</dt><dd>This function might be called multiple times before <a class="el" href="#ab1cc621bc1f7252df00f2be9a20c9c74" title="Override this, if you need to reset certain input slot values to zero, after the xiiInputManager is f...">ResetInputSlotValues()</a> is called. This will be the case when <a class="el" href="../../de/d43/classxii_input_manager.html#a8136ed34dffe1ddbd193876cd27eb372" title="Makes sure that hardware input is processed at this moment, which allows to do this more often than U...">xiiInputManager::PollHardware</a> is used to make more frequent hardware updates than input is actually processed. Just make sure to always accumulate delta values (such as mouse move values) and don't expect <a class="el" href="#ab1cc621bc1f7252df00f2be9a20c9c74" title="Override this, if you need to reset certain input slot values to zero, after the xiiInputManager is f...">ResetInputSlotValues()</a> to be called in tandem with this function and it will be fine. </dd></dl>
 
-<p>Implemented in <a class="el" href="../../d0/d22/classxii_dummy_x_r_input.html#adefe4cf60537e282244b41aadfdd25ea">xiiDummyXRInput</a>, <a class="el" href="../../dd/d1a/classxii_input_device_mouse_keyboard.html#a1792e55fcd468b3f2bccf31d56ef3543">xiiInputDeviceMouseKeyboard</a>, <a class="el" href="../../d1/d10/classxii_input_device_x_box360.html#a040649a781430eb8886ef654892870f0">xiiInputDeviceXBox360</a>, <a class="el" href="../../dc/de5/classxii_standard_input_device.html#a55efe645bd9cf2a57673f066bca09bdb">xiiStandardInputDevice</a>, and <a class="el" href="../../d2/d95/classxii_virtual_thumb_stick.html#a7af75239aebfbdd71b6d3e3b56709203">xiiVirtualThumbStick</a>.</p>
+<p>Implemented in <a class="el" href="../../d0/d22/classxii_dummy_x_r_input.html#adefe4cf60537e282244b41aadfdd25ea">xiiDummyXRInput</a>, <a class="el" href="../../dd/d1a/classxii_input_device_mouse_keyboard.html#a1792e55fcd468b3f2bccf31d56ef3543">xiiInputDeviceMouseKeyboard</a>, and <a class="el" href="../../d2/d95/classxii_virtual_thumb_stick.html#a7af75239aebfbdd71b6d3e3b56709203">xiiVirtualThumbStick</a>.</p>
 
 </div>
 </div>
@@ -442,7 +386,7 @@ static const <a class="el" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d7/db1/classxii_input_device.html">xiiInputDevice</a></li>
-    <li class="footer">Generated on Tue Dec 31 2024 03:58:15 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Sat Jan 25 2025 15:49:33 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

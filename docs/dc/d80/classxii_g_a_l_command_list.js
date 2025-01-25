@@ -3,7 +3,8 @@ var classxii_g_a_l_command_list =
     [ "RecordingState", "dc/d80/classxii_g_a_l_command_list.html#a144bbbf6d64c7ff201bda0b60ab10121", [
       [ "Recording", "dc/d80/classxii_g_a_l_command_list.html#a144bbbf6d64c7ff201bda0b60ab10121ac5564d2e8b8e0ae08bf4363f2b947166", null ],
       [ "Ended", "dc/d80/classxii_g_a_l_command_list.html#a144bbbf6d64c7ff201bda0b60ab10121a0157fbb99be9622bdaa6e544270c0622", null ],
-      [ "Reset", "dc/d80/classxii_g_a_l_command_list.html#a144bbbf6d64c7ff201bda0b60ab10121a526d688f37a86d3c3f27d0c5016eb71d", null ]
+      [ "Reset", "dc/d80/classxii_g_a_l_command_list.html#a144bbbf6d64c7ff201bda0b60ab10121a526d688f37a86d3c3f27d0c5016eb71d", null ],
+      [ "Submitted", "dc/d80/classxii_g_a_l_command_list.html#a144bbbf6d64c7ff201bda0b60ab10121a5c835c22429f25992b4371691ecde1a4", null ]
     ] ],
     [ "Begin", "dc/d80/classxii_g_a_l_command_list.html#a857bc00c0ff79959d90eceb2c5debe89", null ],
     [ "BeginDebugGroup", "dc/d80/classxii_g_a_l_command_list.html#a19992f27f81268a23e4e8c8f58680cb9", null ],
@@ -43,17 +44,21 @@ var classxii_g_a_l_command_list =
     [ "Reset", "dc/d80/classxii_g_a_l_command_list.html#aabe345fe21dc3c37d7d261d273a7c7b9", null ],
     [ "ResolveTextureSubResource", "dc/d80/classxii_g_a_l_command_list.html#ae5db92fec2b4395e7997b064c1eecd23", null ],
     [ "SetBlendFactor", "dc/d80/classxii_g_a_l_command_list.html#a45ad5d1e39b1f83e20d95ad2915ec895", null ],
+    [ "SetConstantBuffer", "dc/d80/classxii_g_a_l_command_list.html#aea0b27a0c4f550de0cd3d899ad6d22b6", null ],
     [ "SetIndexBuffer", "dc/d80/classxii_g_a_l_command_list.html#abd6e31a366a624a29983f6c07d82770b", null ],
     [ "SetPipelineState", "dc/d80/classxii_g_a_l_command_list.html#ac7b8cce2392638436136829725a634e2", null ],
+    [ "SetSampler", "dc/d80/classxii_g_a_l_command_list.html#aa2bca413b023005b9a5ca29b066f459b", null ],
     [ "SetScissorRects", "dc/d80/classxii_g_a_l_command_list.html#ac3a152fdf60f3a9f8a4c9ae50954474a", null ],
+    [ "SetShaderResourceBufferView", "dc/d80/classxii_g_a_l_command_list.html#ac427ba6ca619129ea1e9502ad2db2361", null ],
+    [ "SetShaderResourceTextureView", "dc/d80/classxii_g_a_l_command_list.html#a5283f1532f061fd17df5d299d94e6660", null ],
     [ "SetStencilRef", "dc/d80/classxii_g_a_l_command_list.html#a786d9633bb9c400e51948967053394ad", null ],
+    [ "SetUnorderedAccessBufferView", "dc/d80/classxii_g_a_l_command_list.html#a4ad3c06cbbcce181f3aa9975c0efb218", null ],
+    [ "SetUnorderedAccessTextureView", "dc/d80/classxii_g_a_l_command_list.html#a1910dd176dd1f2f01180fc3cecba154d", null ],
     [ "SetVertexBuffers", "dc/d80/classxii_g_a_l_command_list.html#a1ab62000749d9763e2f808afd87d8d51", null ],
     [ "SetViewports", "dc/d80/classxii_g_a_l_command_list.html#a9a7de9d8e4061dc528836ae8681a19ba", null ],
-    [ "Submit", "dc/d80/classxii_g_a_l_command_list.html#aa7cf0c6afd54fc17191621846083ccb8", null ],
+    [ "Submit", "dc/d80/classxii_g_a_l_command_list.html#adff59b3e8c0ef8a8c0cc937fc0df0f84", null ],
     [ "UnmapBuffer", "dc/d80/classxii_g_a_l_command_list.html#ad381f75e3c3f6f8548bb5385429c4647", null ],
     [ "UnmapTextureSubresource", "dc/d80/classxii_g_a_l_command_list.html#a4e25b440ff2c7067ad4c75f2e66beda8", null ],
     [ "UpdateBuffer", "dc/d80/classxii_g_a_l_command_list.html#afd5890183083b2c592f59ce3164a93a3", null ],
-    [ "UpdateBufferExtended", "dc/d80/classxii_g_a_l_command_list.html#ae6df3301a016b3fb7cd676a17cff36fa", null ],
-    [ "UpdateTexture", "dc/d80/classxii_g_a_l_command_list.html#a725deca2c9db5d7a3599ebf21d1f5f6b", null ],
-    [ "UpdateTextureExtended", "dc/d80/classxii_g_a_l_command_list.html#adb87aa1e4995cbdc638f684bdec42b49", null ]
+    [ "UpdateTexture", "dc/d80/classxii_g_a_l_command_list.html#a725deca2c9db5d7a3599ebf21d1f5f6b", null ]
 ];

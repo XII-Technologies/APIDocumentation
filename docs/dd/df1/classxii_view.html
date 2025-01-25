@@ -253,12 +253,24 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>ExtractData</b> ()</t
 const <a class="el" href="../../d8/d9b/classxii_shared_ptr.html">xiiSharedPtr</a>&lt; <a class="el" href="../../d3/d9b/classxii_task.html">xiiTask</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetExtractTask</b> ()</td></tr>
 <tr class="memdesc:ab78df4790f2f8fa34cbab2645e12afe1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a task implementation that calls ExtractData on this view. <br /></td></tr>
 <tr class="separator:ab78df4790f2f8fa34cbab2645e12afe1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac4a1e935a89bc00266d9852c0575a4cb" id="r_ac4a1e935a89bc00266d9852c0575a4cb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac4a1e935a89bc00266d9852c0575a4cb">ComputePickingRay</a> (float fScreenPosX, float fScreenPosY, <a class="el" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3</a> &amp;out_vRayStartPos, <a class="el" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3</a> &amp;out_vRayDir) const</td></tr>
-<tr class="memdesc:ac4a1e935a89bc00266d9852c0575a4cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the start position and direction (in world space) of the picking ray through the screen position in this view.  <br /></td></tr>
-<tr class="separator:ac4a1e935a89bc00266d9852c0575a4cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa7b6c7c2120ec90b58f022a74752bbf7" id="r_aa7b6c7c2120ec90b58f022a74752bbf7"><td class="memItemLeft" align="right" valign="top"><a id="aa7b6c7c2120ec90b58f022a74752bbf7" name="aa7b6c7c2120ec90b58f022a74752bbf7"></a>
-<a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><b>ComputeScreenSpacePos</b> (const <a class="el" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3</a> &amp;vPoint, <a class="el" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3</a> &amp;out_vScreenPos) const</td></tr>
-<tr class="separator:aa7b6c7c2120ec90b58f022a74752bbf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67d209e577f8267cc12539e059afd126" id="r_a67d209e577f8267cc12539e059afd126"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a67d209e577f8267cc12539e059afd126">ComputePickingRay</a> (float fNormalizedScreenPosX, float fNormalizedScreenPosY, <a class="el" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3</a> &amp;out_vRayStartPos, <a class="el" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3</a> &amp;out_vRayDir) const</td></tr>
+<tr class="memdesc:a67d209e577f8267cc12539e059afd126"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the start position and direction (in world space) of the picking ray through the screen position in this view.  <br /></td></tr>
+<tr class="separator:a67d209e577f8267cc12539e059afd126"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c15c1551893c4e0830e48df91a13483" id="r_a4c15c1551893c4e0830e48df91a13483"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4c15c1551893c4e0830e48df91a13483">ComputeScreenSpacePos</a> (const <a class="el" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3</a> &amp;vWorldPos, <a class="el" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3</a> &amp;out_vScreenPosNormalized) const</td></tr>
+<tr class="memdesc:a4c15c1551893c4e0830e48df91a13483"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the normalized screen-space coordinate ([0; 1] range) that the given world-space point projects to.  <br /></td></tr>
+<tr class="separator:a4c15c1551893c4e0830e48df91a13483"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17e913195a5efac266ee68a0e022c02b" id="r_a17e913195a5efac266ee68a0e022c02b"><td class="memItemLeft" align="right" valign="top"><a id="a17e913195a5efac266ee68a0e022c02b" name="a17e913195a5efac266ee68a0e022c02b"></a>
+<a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><b>ComputeWorldSpacePos</b> (float fNormalizedScreenPosX, float fNormalizedScreenPosY, <a class="el" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3</a> &amp;out_vWorldPos) const</td></tr>
+<tr class="memdesc:a17e913195a5efac266ee68a0e022c02b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the world-space position that the given normalized screen-space coordinate maps to. <br /></td></tr>
+<tr class="separator:a17e913195a5efac266ee68a0e022c02b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9cb3d973b8bcfd4a713ad27fa80679e3" id="r_a9cb3d973b8bcfd4a713ad27fa80679e3"><td class="memItemLeft" align="right" valign="top"><a id="a9cb3d973b8bcfd4a713ad27fa80679e3" name="a9cb3d973b8bcfd4a713ad27fa80679e3"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ConvertScreenPixelPosToNormalizedPos</b> (<a class="el" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3</a> &amp;inout_vPixelPos)</td></tr>
+<tr class="memdesc:a9cb3d973b8bcfd4a713ad27fa80679e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts a screen-space position from pixel coordinates to normalized coordinates. <br /></td></tr>
+<tr class="separator:a9cb3d973b8bcfd4a713ad27fa80679e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5eb161f5c4eda78d64f4b5b7a9c4e7cf" id="r_a5eb161f5c4eda78d64f4b5b7a9c4e7cf"><td class="memItemLeft" align="right" valign="top"><a id="a5eb161f5c4eda78d64f4b5b7a9c4e7cf" name="a5eb161f5c4eda78d64f4b5b7a9c4e7cf"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ConvertScreenNormalizedPosToPixelPos</b> (<a class="el" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3</a> &amp;inout_vNormalizedPos)</td></tr>
+<tr class="memdesc:a5eb161f5c4eda78d64f4b5b7a9c4e7cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts a screen-space position from normalized coordinates to pixel coordinates. <br /></td></tr>
+<tr class="separator:a5eb161f5c4eda78d64f4b5b7a9c4e7cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2a1475d31768f1f30369a5ee3fdcaaf9" id="r_a2a1475d31768f1f30369a5ee3fdcaaf9"><td class="memItemLeft" align="right" valign="top"><a id="a2a1475d31768f1f30369a5ee3fdcaaf9" name="a2a1475d31768f1f30369a5ee3fdcaaf9"></a>
 const <a class="el" href="../../d1/dec/classxii_mat4_template.html">xiiMat4</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetProjectionMatrix</b> (xiiCameraEye eye) const</td></tr>
 <tr class="memdesc:a2a1475d31768f1f30369a5ee3fdcaaf9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current projection matrix. <br /></td></tr>
@@ -375,21 +387,21 @@ static const <a class="el" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Encapsulates a view on the given world through the given camera and rendered with the specified RenderPipeline into the given render target setup. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="ac4a1e935a89bc00266d9852c0575a4cb" name="ac4a1e935a89bc00266d9852c0575a4cb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac4a1e935a89bc00266d9852c0575a4cb">&#9670;&#160;</a></span>ComputePickingRay()</h2>
+<a id="a67d209e577f8267cc12539e059afd126" name="a67d209e577f8267cc12539e059afd126"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a67d209e577f8267cc12539e059afd126">&#9670;&#160;</a></span>ComputePickingRay()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">XII_FORCE_INLINE <a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a> xiiView::ComputePickingRay </td>
+          <td class="memname"><a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a> xiiView::ComputePickingRay </td>
           <td>(</td>
-          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>fScreenPosX</em></span>, </td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>fNormalizedScreenPosX</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>fScreenPosY</em></span>, </td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>fNormalizedScreenPosY</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -404,8 +416,32 @@ static const <a class="el" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a>
       </table>
 </div><div class="memdoc">
 
-<p>Returns the start position and direction (in world space) of the picking ray through the screen position in this view. </p>
-<p>fScreenPosX and fScreenPosY are expected to be in [0; 1] range (normalized pixel coordinates). If no ray can be computed, XII_FAILURE is returned. </p>
+<p>Calculates the start position and direction (in world space) of the picking ray through the screen position in this view. </p>
+<p>fNormalizedScreenPosX and fNormalizedScreenPosY are expected to be in [0; 1] range (normalized screen coordinates). If no ray can be computed, EZ_FAILURE is returned. </p>
+
+</div>
+</div>
+<a id="a4c15c1551893c4e0830e48df91a13483" name="a4c15c1551893c4e0830e48df91a13483"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4c15c1551893c4e0830e48df91a13483">&#9670;&#160;</a></span>ComputeScreenSpacePos()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a> xiiView::ComputeScreenSpacePos </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>vWorldPos</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>out_vScreenPosNormalized</em></span>&#160;) const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Calculates the normalized screen-space coordinate ([0; 1] range) that the given world-space point projects to. </p>
+<p>Returns EZ_FAILURE, if the point could not be projected into screen-space. </p>
 
 </div>
 </div>
@@ -440,7 +476,7 @@ static const <a class="el" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dd/df1/classxii_view.html">xiiView</a></li>
-    <li class="footer">Generated on Tue Dec 31 2024 03:58:17 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Sat Jan 25 2025 15:49:34 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

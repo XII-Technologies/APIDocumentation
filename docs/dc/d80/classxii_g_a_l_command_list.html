@@ -157,6 +157,7 @@ Public Types</h2></td></tr>
 <tr class="memitem:a144bbbf6d64c7ff201bda0b60ab10121" id="r_a144bbbf6d64c7ff201bda0b60ab10121"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a144bbbf6d64c7ff201bda0b60ab10121">RecordingState</a> { <a class="el" href="#a144bbbf6d64c7ff201bda0b60ab10121ac5564d2e8b8e0ae08bf4363f2b947166">Recording</a>
 , <a class="el" href="#a144bbbf6d64c7ff201bda0b60ab10121a0157fbb99be9622bdaa6e544270c0622">Ended</a>
 , <a class="el" href="#a144bbbf6d64c7ff201bda0b60ab10121a526d688f37a86d3c3f27d0c5016eb71d">Reset</a>
+, <a class="el" href="#a144bbbf6d64c7ff201bda0b60ab10121a5c835c22429f25992b4371691ecde1a4">Submitted</a>
  }</td></tr>
 <tr class="memdesc:a144bbbf6d64c7ff201bda0b60ab10121"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enum class representing the state of a command list recording.  <a href="#a144bbbf6d64c7ff201bda0b60ab10121">More...</a><br /></td></tr>
 <tr class="separator:a144bbbf6d64c7ff201bda0b60ab10121"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -193,13 +194,12 @@ XII_ALWAYS_INLINE <a class="el" href="../../dd/d03/classxii_g_a_l_framebuffer_ha
 <tr class="memitem:a32f9b37ac7a21d38243e586497a46e70" id="r_a32f9b37ac7a21d38243e586497a46e70"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a32f9b37ac7a21d38243e586497a46e70">End</a> ()</td></tr>
 <tr class="memdesc:a32f9b37ac7a21d38243e586497a46e70"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ends the command list. This method should be called after all commands are issued.  <br /></td></tr>
 <tr class="separator:a32f9b37ac7a21d38243e586497a46e70"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aabe345fe21dc3c37d7d261d273a7c7b9" id="r_aabe345fe21dc3c37d7d261d273a7c7b9"><td class="memItemLeft" align="right" valign="top"><a id="aabe345fe21dc3c37d7d261d273a7c7b9" name="aabe345fe21dc3c37d7d261d273a7c7b9"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>Reset</b> ()</td></tr>
-<tr class="memdesc:aabe345fe21dc3c37d7d261d273a7c7b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resets the command list. This method is used to clear all commands that have been recorded in the command list. <br /></td></tr>
+<tr class="memitem:aabe345fe21dc3c37d7d261d273a7c7b9" id="r_aabe345fe21dc3c37d7d261d273a7c7b9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aabe345fe21dc3c37d7d261d273a7c7b9">Reset</a> ()</td></tr>
+<tr class="memdesc:aabe345fe21dc3c37d7d261d273a7c7b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resets the command list. This method is used to clear all commands that have been recorded in the command list.  <br /></td></tr>
 <tr class="separator:aabe345fe21dc3c37d7d261d273a7c7b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa7cf0c6afd54fc17191621846083ccb8" id="r_aa7cf0c6afd54fc17191621846083ccb8"><td class="memItemLeft" align="right" valign="top">xiiUInt64&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa7cf0c6afd54fc17191621846083ccb8">Submit</a> (bool bReset=true)</td></tr>
-<tr class="memdesc:aa7cf0c6afd54fc17191621846083ccb8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submits a command list for execution. If bReset is true, the command list is reset after submission.  <br /></td></tr>
-<tr class="separator:aa7cf0c6afd54fc17191621846083ccb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adff59b3e8c0ef8a8c0cc937fc0df0f84" id="r_adff59b3e8c0ef8a8c0cc937fc0df0f84"><td class="memItemLeft" align="right" valign="top">xiiUInt64&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adff59b3e8c0ef8a8c0cc937fc0df0f84">Submit</a> ()</td></tr>
+<tr class="memdesc:adff59b3e8c0ef8a8c0cc937fc0df0f84"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submits a command list to the command queue for execution. The command list is reset after the execution on the command queue.  <br /></td></tr>
+<tr class="separator:adff59b3e8c0ef8a8c0cc937fc0df0f84"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac7b8cce2392638436136829725a634e2" id="r_ac7b8cce2392638436136829725a634e2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac7b8cce2392638436136829725a634e2">SetPipelineState</a> (<a class="el" href="../../df/dea/classxii_g_a_l_pipeline_state_handle.html">xiiGALPipelineStateHandle</a> hPipelineState)</td></tr>
 <tr class="memdesc:ac7b8cce2392638436136829725a634e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the pipeline state object for the command list.  <br /></td></tr>
 <tr class="separator:ac7b8cce2392638436136829725a634e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -221,6 +221,23 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>Reset</b> ()</td></tr
 <tr class="memitem:a1ab62000749d9763e2f808afd87d8d51" id="r_a1ab62000749d9763e2f808afd87d8d51"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1ab62000749d9763e2f808afd87d8d51">SetVertexBuffers</a> (xiiUInt32 uiStartSlot, <a class="el" href="../../d0/d60/classxii_array_ptr.html">xiiArrayPtr</a>&lt; <a class="el" href="../../d1/dba/classxii_g_a_l_buffer_handle.html">xiiGALBufferHandle</a> &gt; pVertexBuffers, <a class="el" href="../../d0/d60/classxii_array_ptr.html">xiiArrayPtr</a>&lt; xiiUInt64 &gt; pByteOffsets, <a class="el" href="../../d7/d55/structxii_bitflags.html">xiiBitflags</a>&lt; <a class="el" href="../../d1/dd2/structxii_g_a_l_set_vertex_buffer_flags.html">xiiGALSetVertexBufferFlags</a> &gt; flags=<a class="el" href="../../d1/dd2/structxii_g_a_l_set_vertex_buffer_flags.html#aee16c235ab911bd713b70128cbf45917a6d544788375de6ea50ff4d53d953dc88">xiiGALSetVertexBufferFlags::None</a>)</td></tr>
 <tr class="memdesc:a1ab62000749d9763e2f808afd87d8d51"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the vertex buffers for the input-assembler stage of the pipeline. This contains the vertex data.  <br /></td></tr>
 <tr class="separator:a1ab62000749d9763e2f808afd87d8d51"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea0b27a0c4f550de0cd3d899ad6d22b6" id="r_aea0b27a0c4f550de0cd3d899ad6d22b6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aea0b27a0c4f550de0cd3d899ad6d22b6">SetConstantBuffer</a> (const <a class="el" href="../../d0/d99/structxii_g_a_l_pipeline_resource_description.html">xiiGALPipelineResourceDescription</a> &amp;bindingInformation, <a class="el" href="../../d1/dba/classxii_g_a_l_buffer_handle.html">xiiGALBufferHandle</a> hConstantBuffer)</td></tr>
+<tr class="memdesc:aea0b27a0c4f550de0cd3d899ad6d22b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is used to set the constant (uniform) buffer for a shader resource.  <br /></td></tr>
+<tr class="separator:aea0b27a0c4f550de0cd3d899ad6d22b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac427ba6ca619129ea1e9502ad2db2361" id="r_ac427ba6ca619129ea1e9502ad2db2361"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac427ba6ca619129ea1e9502ad2db2361">SetShaderResourceBufferView</a> (const <a class="el" href="../../d0/d99/structxii_g_a_l_pipeline_resource_description.html">xiiGALPipelineResourceDescription</a> &amp;bindingInformation, <a class="el" href="../../df/ddf/classxii_g_a_l_buffer_view_handle.html">xiiGALBufferViewHandle</a> hBufferView)</td></tr>
+<tr class="memdesc:ac427ba6ca619129ea1e9502ad2db2361"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is used to set the buffer view for a shader resource.  <br /></td></tr>
+<tr class="separator:ac427ba6ca619129ea1e9502ad2db2361"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5283f1532f061fd17df5d299d94e6660" id="r_a5283f1532f061fd17df5d299d94e6660"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5283f1532f061fd17df5d299d94e6660">SetShaderResourceTextureView</a> (const <a class="el" href="../../d0/d99/structxii_g_a_l_pipeline_resource_description.html">xiiGALPipelineResourceDescription</a> &amp;bindingInformation, <a class="el" href="../../dd/d52/classxii_g_a_l_texture_view_handle.html">xiiGALTextureViewHandle</a> hTextureView)</td></tr>
+<tr class="memdesc:a5283f1532f061fd17df5d299d94e6660"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is used to set the texture view for a shader resource.  <br /></td></tr>
+<tr class="separator:a5283f1532f061fd17df5d299d94e6660"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ad3c06cbbcce181f3aa9975c0efb218" id="r_a4ad3c06cbbcce181f3aa9975c0efb218"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4ad3c06cbbcce181f3aa9975c0efb218">SetUnorderedAccessBufferView</a> (const <a class="el" href="../../d0/d99/structxii_g_a_l_pipeline_resource_description.html">xiiGALPipelineResourceDescription</a> &amp;bindingInformation, <a class="el" href="../../df/ddf/classxii_g_a_l_buffer_view_handle.html">xiiGALBufferViewHandle</a> hBufferView)</td></tr>
+<tr class="separator:a4ad3c06cbbcce181f3aa9975c0efb218"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1910dd176dd1f2f01180fc3cecba154d" id="r_a1910dd176dd1f2f01180fc3cecba154d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1910dd176dd1f2f01180fc3cecba154d">SetUnorderedAccessTextureView</a> (const <a class="el" href="../../d0/d99/structxii_g_a_l_pipeline_resource_description.html">xiiGALPipelineResourceDescription</a> &amp;bindingInformation, <a class="el" href="../../dd/d52/classxii_g_a_l_texture_view_handle.html">xiiGALTextureViewHandle</a> hTextureView)</td></tr>
+<tr class="memdesc:a1910dd176dd1f2f01180fc3cecba154d"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is used to set the texture view for an unordered access.  <br /></td></tr>
+<tr class="separator:a1910dd176dd1f2f01180fc3cecba154d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2bca413b023005b9a5ca29b066f459b" id="r_aa2bca413b023005b9a5ca29b066f459b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa2bca413b023005b9a5ca29b066f459b">SetSampler</a> (const <a class="el" href="../../d0/d99/structxii_g_a_l_pipeline_resource_description.html">xiiGALPipelineResourceDescription</a> &amp;bindingInformation, <a class="el" href="../../da/dfe/classxii_g_a_l_sampler_handle.html">xiiGALSamplerHandle</a> hSampler)</td></tr>
+<tr class="memdesc:aa2bca413b023005b9a5ca29b066f459b"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is used to set the sampler for a sampler resource.  <br /></td></tr>
+<tr class="separator:aa2bca413b023005b9a5ca29b066f459b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae4790cc43eb961740e267e18e1a7bf69" id="r_ae4790cc43eb961740e267e18e1a7bf69"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae4790cc43eb961740e267e18e1a7bf69">ClearRenderTargetView</a> (<a class="el" href="../../dd/d52/classxii_g_a_l_texture_view_handle.html">xiiGALTextureViewHandle</a> hRenderTargetView, const <a class="el" href="../../d3/de6/classxii_color.html">xiiColor</a> &amp;clearColor)</td></tr>
 <tr class="memdesc:ae4790cc43eb961740e267e18e1a7bf69"><td class="mdescLeft">&#160;</td><td class="mdescRight">This clears the specified render target view to the specified color.  <br /></td></tr>
 <tr class="separator:ae4790cc43eb961740e267e18e1a7bf69"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -274,9 +291,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>EndRenderPass</b> ()<
 <tr class="memitem:afd5890183083b2c592f59ce3164a93a3" id="r_afd5890183083b2c592f59ce3164a93a3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afd5890183083b2c592f59ce3164a93a3">UpdateBuffer</a> (<a class="el" href="../../d1/dba/classxii_g_a_l_buffer_handle.html">xiiGALBufferHandle</a> hBuffer, xiiUInt32 uiDestinationOffset, <a class="el" href="../../d0/d60/classxii_array_ptr.html">xiiArrayPtr</a>&lt; const xiiUInt8 &gt; pSourceData)</td></tr>
 <tr class="memdesc:afd5890183083b2c592f59ce3164a93a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates a buffer.  <br /></td></tr>
 <tr class="separator:afd5890183083b2c592f59ce3164a93a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae6df3301a016b3fb7cd676a17cff36fa" id="r_ae6df3301a016b3fb7cd676a17cff36fa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae6df3301a016b3fb7cd676a17cff36fa">UpdateBufferExtended</a> (<a class="el" href="../../d1/dba/classxii_g_a_l_buffer_handle.html">xiiGALBufferHandle</a> hBuffer, xiiUInt32 uiDestinationOffset, <a class="el" href="../../d0/d60/classxii_array_ptr.html">xiiArrayPtr</a>&lt; const xiiUInt8 &gt; pSourceData, <a class="el" href="../../d7/d55/structxii_bitflags.html">xiiBitflags</a>&lt; <a class="el" href="../../d3/dc9/structxii_g_a_l_map_flags.html">xiiGALMapFlags</a> &gt; mapFlags=<a class="el" href="../../d3/dc9/structxii_g_a_l_map_flags.html#a460dc4db6ae78167db15de29366559eaa5af27f3002de9d9ed6b201a37442b078">xiiGALMapFlags::Discard</a>, bool bCopyToTemporaryStorage=false)</td></tr>
-<tr class="memdesc:ae6df3301a016b3fb7cd676a17cff36fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates a buffer.  <br /></td></tr>
-<tr class="separator:ae6df3301a016b3fb7cd676a17cff36fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5079e201ba2e307c1bc76826c38c8c07" id="r_a5079e201ba2e307c1bc76826c38c8c07"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5079e201ba2e307c1bc76826c38c8c07">CopyBuffer</a> (<a class="el" href="../../d1/dba/classxii_g_a_l_buffer_handle.html">xiiGALBufferHandle</a> hSourceBuffer, <a class="el" href="../../d1/dba/classxii_g_a_l_buffer_handle.html">xiiGALBufferHandle</a> hDestinationBuffer)</td></tr>
 <tr class="memdesc:a5079e201ba2e307c1bc76826c38c8c07"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies the entire contents of the source buffer to the destination buffer.  <br /></td></tr>
 <tr class="separator:a5079e201ba2e307c1bc76826c38c8c07"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -292,9 +306,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>EndRenderPass</b> ()<
 <tr class="memitem:a725deca2c9db5d7a3599ebf21d1f5f6b" id="r_a725deca2c9db5d7a3599ebf21d1f5f6b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a725deca2c9db5d7a3599ebf21d1f5f6b">UpdateTexture</a> (<a class="el" href="../../df/de3/classxii_g_a_l_texture_handle.html">xiiGALTextureHandle</a> hTexture, const <a class="el" href="../../d6/d72/structxii_g_a_l_texture_mip_level_data.html">xiiGALTextureMipLevelData</a> &amp;textureMiplevelData, const <a class="el" href="../../d2/dd6/classxii_bounding_box_template.html">xiiBoundingBoxU32</a> &amp;textureBox, const <a class="el" href="../../d3/d22/structxii_g_a_l_texture_sub_resource_data.html">xiiGALTextureSubResourceData</a> &amp;subresourceData)</td></tr>
 <tr class="memdesc:a725deca2c9db5d7a3599ebf21d1f5f6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates a texture.  <br /></td></tr>
 <tr class="separator:a725deca2c9db5d7a3599ebf21d1f5f6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adb87aa1e4995cbdc638f684bdec42b49" id="r_adb87aa1e4995cbdc638f684bdec42b49"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adb87aa1e4995cbdc638f684bdec42b49">UpdateTextureExtended</a> (<a class="el" href="../../df/de3/classxii_g_a_l_texture_handle.html">xiiGALTextureHandle</a> hTexture, const <a class="el" href="../../d6/d72/structxii_g_a_l_texture_mip_level_data.html">xiiGALTextureMipLevelData</a> &amp;textureMiplevelData, const <a class="el" href="../../d2/dd6/classxii_bounding_box_template.html">xiiBoundingBoxU32</a> &amp;textureBox, const <a class="el" href="../../d3/d22/structxii_g_a_l_texture_sub_resource_data.html">xiiGALTextureSubResourceData</a> &amp;subresourceData)</td></tr>
-<tr class="memdesc:adb87aa1e4995cbdc638f684bdec42b49"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates a texture.  <br /></td></tr>
-<tr class="separator:adb87aa1e4995cbdc638f684bdec42b49"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a92abd6d0f62c72c15b96338dd48cbf1c" id="r_a92abd6d0f62c72c15b96338dd48cbf1c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a92abd6d0f62c72c15b96338dd48cbf1c">CopyTexture</a> (<a class="el" href="../../df/de3/classxii_g_a_l_texture_handle.html">xiiGALTextureHandle</a> hSourceTexture, <a class="el" href="../../df/de3/classxii_g_a_l_texture_handle.html">xiiGALTextureHandle</a> hDestinationTexture)</td></tr>
 <tr class="memdesc:a92abd6d0f62c72c15b96338dd48cbf1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies the entire contents of the source texture to the destination texture.  <br /></td></tr>
 <tr class="separator:a92abd6d0f62c72c15b96338dd48cbf1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -502,6 +513,8 @@ static const <a class="el" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a>
 </td></tr>
 <tr><td class="fieldname"><a id="a144bbbf6d64c7ff201bda0b60ab10121a526d688f37a86d3c3f27d0c5016eb71d" name="a144bbbf6d64c7ff201bda0b60ab10121a526d688f37a86d3c3f27d0c5016eb71d"></a>Reset&#160;</td><td class="fielddoc"><p>The command list has been reset and is ready to be recorded again. </p>
 </td></tr>
+<tr><td class="fieldname"><a id="a144bbbf6d64c7ff201bda0b60ab10121a5c835c22429f25992b4371691ecde1a4" name="a144bbbf6d64c7ff201bda0b60ab10121a5c835c22429f25992b4371691ecde1a4"></a>Submitted&#160;</td><td class="fielddoc"><p>The command list has been submitted and is no longer available for recording commands. <a class="el" href="../../d8/d4f/class_a.html">A</a> new command list has to be requested for recording more commands. </p>
+</td></tr>
 </table>
 
 </div>
@@ -579,7 +592,7 @@ static const <a class="el" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a>
   </table>
   </dd>
 </dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000099">Todo</a></b></dt><dd>GraphicsFoundation: Assert command queue compatibiliity. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000096">Todo</a></b></dt><dd>GraphicsFoundation: Assert command queue compatibiliity. </dd></dl>
 
 </div>
 </div>
@@ -605,9 +618,9 @@ static const <a class="el" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a>
   </table>
   </dd>
 </dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000094">Todo</a></b></dt><dd>GraphicsFoundation: Potentially reset the current render targets here. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000095">Todo</a></b></dt><dd></dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000096">Todo</a></b></dt><dd>GraphicsFoundation: Implement render pass attachment handling in the GAL, as well as state transitions in the begin render pass description. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000091">Todo</a></b></dt><dd>GraphicsFoundation: Potentially reset the current render targets here. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000092">Todo</a></b></dt><dd></dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000093">Todo</a></b></dt><dd>GraphicsFoundation: Implement render pass attachment handling in the GAL, as well as state transitions in the begin render pass description. </dd></dl>
 
 </div>
 </div>
@@ -794,7 +807,7 @@ static const <a class="el" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a>
   </table>
   </dd>
 </dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000105">Todo</a></b></dt><dd>GraphicsFoundation: Validate texture copy parameters. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000099">Todo</a></b></dt><dd>GraphicsFoundation: Validate texture copy parameters. </dd></dl>
 
 </div>
 </div>
@@ -849,7 +862,7 @@ static const <a class="el" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a>
   </table>
   </dd>
 </dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000106">Todo</a></b></dt><dd>GraphicsFoundation: Validate texture copy parameters. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000100">Todo</a></b></dt><dd>GraphicsFoundation: Validate texture copy parameters. </dd></dl>
 
 </div>
 </div>
@@ -878,7 +891,7 @@ static const <a class="el" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a>
 </div><div class="memdoc">
 
 <p>Dispatches a compute shader. </p>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000093">Todo</a></b></dt><dd>GraphicsFoundation: Add indirect mesh draw via DrawIndirect(). </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000090">Todo</a></b></dt><dd>GraphicsFoundation: Add indirect mesh draw via DrawIndirect(). </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">uiThreadGroupCountX</td><td>- The number of thread groups to dispatch in the X dimension. </td></tr>
@@ -940,7 +953,7 @@ static const <a class="el" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a>
 </div><div class="memdoc">
 
 <p>Draws non-indexed primitives. </p>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000092">Todo</a></b></dt><dd>GraphicsFoundation: Add unordered access view clear. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000089">Todo</a></b></dt><dd>GraphicsFoundation: Add unordered access view clear. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">uiVertexCount</td><td>- The number of vertices to draw. </td></tr>
@@ -1062,7 +1075,7 @@ static const <a class="el" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a>
   </table>
   </dd>
 </dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000097">Todo</a></b></dt><dd>GraphicsFoundation: Add more validation and parameters (draw count, draw offse/stride, etc.). </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000094">Todo</a></b></dt><dd>GraphicsFoundation: Add more validation and parameters (draw count, draw offse/stride, etc.). </dd></dl>
 
 </div>
 </div>
@@ -1135,7 +1148,7 @@ static const <a class="el" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a>
   </table>
   </dd>
 </dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000098">Todo</a></b></dt><dd>GraphicsFoundation: Add more validation and parameters (draw count, draw offset/stride, etc.). </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000095">Todo</a></b></dt><dd>GraphicsFoundation: Add more validation and parameters (draw count, draw offset/stride, etc.). </dd></dl>
 
 </div>
 </div>
@@ -1217,7 +1230,7 @@ static const <a class="el" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a>
   </table>
   </dd>
 </dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000100">Todo</a></b></dt><dd>GraphicsFoundation: Assert command queue compatibiliity. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000097">Todo</a></b></dt><dd>GraphicsFoundation: Assert command queue compatibiliity. </dd></dl>
 
 </div>
 </div>
@@ -1370,7 +1383,27 @@ static const <a class="el" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a>
   </table>
   </dd>
 </dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000108">Todo</a></b></dt><dd>GraphicsFoundation: Validate map subresource parameters. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000102">Todo</a></b></dt><dd>GraphicsFoundation: Validate map subresource parameters. </dd></dl>
+
+</div>
+</div>
+<a id="aabe345fe21dc3c37d7d261d273a7c7b9" name="aabe345fe21dc3c37d7d261d273a7c7b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aabe345fe21dc3c37d7d261d273a7c7b9">&#9670;&#160;</a></span>Reset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void xiiGALCommandList::Reset </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Resets the command list. This method is used to clear all commands that have been recorded in the command list. </p>
+<dl class="section remark"><dt>Remarks</dt><dd>This method can be called only if the command list has not yet been submitted for execution. </dd></dl>
 
 </div>
 </div>
@@ -1413,7 +1446,7 @@ static const <a class="el" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a>
   </table>
   </dd>
 </dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000107">Todo</a></b></dt><dd>GraphicsFoundation: Validate resolve texture parameters. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000101">Todo</a></b></dt><dd>GraphicsFoundation: Validate resolve texture parameters. </dd></dl>
 
 </div>
 </div>
@@ -1434,6 +1467,36 @@ static const <a class="el" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a>
 
 <p>Sets the blend factors used in the blend state. </p>
 <p>blendFactor - The blend factors represented by a <a class="el" href="../../d3/de6/classxii_color.html" title="xiiColor represents an RGBA color in linear color space. Values are stored as float,...">xiiColor</a>. </p>
+
+</div>
+</div>
+<a id="aea0b27a0c4f550de0cd3d899ad6d22b6" name="aea0b27a0c4f550de0cd3d899ad6d22b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea0b27a0c4f550de0cd3d899ad6d22b6">&#9670;&#160;</a></span>SetConstantBuffer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void xiiGALCommandList::SetConstantBuffer </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d0/d99/structxii_g_a_l_pipeline_resource_description.html">xiiGALPipelineResourceDescription</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>bindingInformation</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/dba/classxii_g_a_l_buffer_handle.html">xiiGALBufferHandle</a></td>          <td class="paramname"><span class="paramname"><em>hConstantBuffer</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This is used to set the constant (uniform) buffer for a shader resource. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bindingInformation</td><td>- This describes the binding information for the shader resource, see <a class="el" href="../../d0/d99/structxii_g_a_l_pipeline_resource_description.html" title="This describes the pipeline resource information.">xiiGALPipelineResourceDescription</a> for details. </td></tr>
+    <tr><td class="paramname">hConstantBuffer</td><td>- The handle to the constant (uniform) buffer object to set. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -1492,6 +1555,36 @@ static const <a class="el" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a>
 
 </div>
 </div>
+<a id="aa2bca413b023005b9a5ca29b066f459b" name="aa2bca413b023005b9a5ca29b066f459b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa2bca413b023005b9a5ca29b066f459b">&#9670;&#160;</a></span>SetSampler()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void xiiGALCommandList::SetSampler </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d0/d99/structxii_g_a_l_pipeline_resource_description.html">xiiGALPipelineResourceDescription</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>bindingInformation</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../da/dfe/classxii_g_a_l_sampler_handle.html">xiiGALSamplerHandle</a></td>          <td class="paramname"><span class="paramname"><em>hSampler</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This is used to set the sampler for a sampler resource. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bindingInformation</td><td>- This describes the binding information for the sampler resource, see <a class="el" href="../../d0/d99/structxii_g_a_l_pipeline_resource_description.html" title="This describes the pipeline resource information.">xiiGALPipelineResourceDescription</a> for details. </td></tr>
+    <tr><td class="paramname">hSampler</td><td>- The handle to the sampler object to set. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="ac3a152fdf60f3a9f8a4c9ae50954474a" name="ac3a152fdf60f3a9f8a4c9ae50954474a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac3a152fdf60f3a9f8a4c9ae50954474a">&#9670;&#160;</a></span>SetScissorRects()</h2>
 
@@ -1528,6 +1621,66 @@ static const <a class="el" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a>
 
 </div>
 </div>
+<a id="ac427ba6ca619129ea1e9502ad2db2361" name="ac427ba6ca619129ea1e9502ad2db2361"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac427ba6ca619129ea1e9502ad2db2361">&#9670;&#160;</a></span>SetShaderResourceBufferView()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void xiiGALCommandList::SetShaderResourceBufferView </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d0/d99/structxii_g_a_l_pipeline_resource_description.html">xiiGALPipelineResourceDescription</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>bindingInformation</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../df/ddf/classxii_g_a_l_buffer_view_handle.html">xiiGALBufferViewHandle</a></td>          <td class="paramname"><span class="paramname"><em>hBufferView</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This is used to set the buffer view for a shader resource. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bindingInformation</td><td>- This describes the binding information for the shader resource, see <a class="el" href="../../d0/d99/structxii_g_a_l_pipeline_resource_description.html" title="This describes the pipeline resource information.">xiiGALPipelineResourceDescription</a> for details. </td></tr>
+    <tr><td class="paramname">hBufferView</td><td>- The handle to the buffer view object to set. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a5283f1532f061fd17df5d299d94e6660" name="a5283f1532f061fd17df5d299d94e6660"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5283f1532f061fd17df5d299d94e6660">&#9670;&#160;</a></span>SetShaderResourceTextureView()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void xiiGALCommandList::SetShaderResourceTextureView </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d0/d99/structxii_g_a_l_pipeline_resource_description.html">xiiGALPipelineResourceDescription</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>bindingInformation</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../dd/d52/classxii_g_a_l_texture_view_handle.html">xiiGALTextureViewHandle</a></td>          <td class="paramname"><span class="paramname"><em>hTextureView</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This is used to set the texture view for a shader resource. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bindingInformation</td><td>- This describes the binding information for the shader resource, see <a class="el" href="../../d0/d99/structxii_g_a_l_pipeline_resource_description.html" title="This describes the pipeline resource information.">xiiGALPipelineResourceDescription</a> for details. </td></tr>
+    <tr><td class="paramname">hTextureView</td><td>- The handle to the texture view object to set. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a786d9633bb9c400e51948967053394ad" name="a786d9633bb9c400e51948967053394ad"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a786d9633bb9c400e51948967053394ad">&#9670;&#160;</a></span>SetStencilRef()</h2>
 
@@ -1547,6 +1700,65 @@ static const <a class="el" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">uiStencilRef</td><td>- Stencil reference value. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a4ad3c06cbbcce181f3aa9975c0efb218" name="a4ad3c06cbbcce181f3aa9975c0efb218"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ad3c06cbbcce181f3aa9975c0efb218">&#9670;&#160;</a></span>SetUnorderedAccessBufferView()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void xiiGALCommandList::SetUnorderedAccessBufferView </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d0/d99/structxii_g_a_l_pipeline_resource_description.html">xiiGALPipelineResourceDescription</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>bindingInformation</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../df/ddf/classxii_g_a_l_buffer_view_handle.html">xiiGALBufferViewHandle</a></td>          <td class="paramname"><span class="paramname"><em>hBufferView</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>This is used to set the buffer view for an unordered access.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bindingInformation</td><td>- This describes the binding information for the shader resource, see <a class="el" href="../../d0/d99/structxii_g_a_l_pipeline_resource_description.html" title="This describes the pipeline resource information.">xiiGALPipelineResourceDescription</a> for details. </td></tr>
+    <tr><td class="paramname">hBufferView</td><td>- The handle to the buffer view object to set. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a1910dd176dd1f2f01180fc3cecba154d" name="a1910dd176dd1f2f01180fc3cecba154d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1910dd176dd1f2f01180fc3cecba154d">&#9670;&#160;</a></span>SetUnorderedAccessTextureView()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void xiiGALCommandList::SetUnorderedAccessTextureView </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d0/d99/structxii_g_a_l_pipeline_resource_description.html">xiiGALPipelineResourceDescription</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>bindingInformation</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../dd/d52/classxii_g_a_l_texture_view_handle.html">xiiGALTextureViewHandle</a></td>          <td class="paramname"><span class="paramname"><em>hTextureView</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This is used to set the texture view for an unordered access. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bindingInformation</td><td>- This describes the binding information for the shader resource, see <a class="el" href="../../d0/d99/structxii_g_a_l_pipeline_resource_description.html" title="This describes the pipeline resource information.">xiiGALPipelineResourceDescription</a> for details. </td></tr>
+    <tr><td class="paramname">hTextureView</td><td>- The handle to the texture view object to set. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1631,8 +1843,8 @@ static const <a class="el" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a>
 
 </div>
 </div>
-<a id="aa7cf0c6afd54fc17191621846083ccb8" name="aa7cf0c6afd54fc17191621846083ccb8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa7cf0c6afd54fc17191621846083ccb8">&#9670;&#160;</a></span>Submit()</h2>
+<a id="adff59b3e8c0ef8a8c0cc937fc0df0f84" name="adff59b3e8c0ef8a8c0cc937fc0df0f84"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adff59b3e8c0ef8a8c0cc937fc0df0f84">&#9670;&#160;</a></span>Submit()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1640,19 +1852,13 @@ static const <a class="el" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a>
         <tr>
           <td class="memname">xiiUInt64 xiiGALCommandList::Submit </td>
           <td>(</td>
-          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>bReset</em></span><span class="paramdefsep"> = </span><span class="paramdefval">true</span></td><td>)</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Submits a command list for execution. If bReset is true, the command list is reset after submission. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">bReset</td><td>- Calls <a class="el" href="#aabe345fe21dc3c37d7d261d273a7c7b9" title="Resets the command list. This method is used to clear all commands that have been recorded in the com...">Reset()</a> to reset the command list after submission.</td></tr>
-  </table>
-  </dd>
-</dl>
+<p>Submits a command list to the command queue for execution. The command list is reset after the execution on the command queue. </p>
 <dl class="section return"><dt>Returns</dt><dd>The current internal fence value. </dd></dl>
 
 </div>
@@ -1750,56 +1956,6 @@ static const <a class="el" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a>
   </table>
   </dd>
 </dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000101">Todo</a></b></dt><dd>GraphicsFoundation: Check alignment. </dd></dl>
-
-</div>
-</div>
-<a id="ae6df3301a016b3fb7cd676a17cff36fa" name="ae6df3301a016b3fb7cd676a17cff36fa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae6df3301a016b3fb7cd676a17cff36fa">&#9670;&#160;</a></span>UpdateBufferExtended()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void xiiGALCommandList::UpdateBufferExtended </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="../../d1/dba/classxii_g_a_l_buffer_handle.html">xiiGALBufferHandle</a></td>          <td class="paramname"><span class="paramname"><em>hBuffer</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">xiiUInt32</td>          <td class="paramname"><span class="paramname"><em>uiDestinationOffset</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="../../d0/d60/classxii_array_ptr.html">xiiArrayPtr</a>&lt; const xiiUInt8 &gt;</td>          <td class="paramname"><span class="paramname"><em>pSourceData</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="../../d7/d55/structxii_bitflags.html">xiiBitflags</a>&lt; <a class="el" href="../../d3/dc9/structxii_g_a_l_map_flags.html">xiiGALMapFlags</a> &gt;</td>          <td class="paramname"><span class="paramname"><em>mapFlags</em></span><span class="paramdefsep"> = </span><span class="paramdefval"><a class="el" href="../../d3/dc9/structxii_g_a_l_map_flags.html#a460dc4db6ae78167db15de29366559eaa5af27f3002de9d9ed6b201a37442b078">xiiGALMapFlags::Discard</a></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>bCopyToTemporaryStorage</em></span><span class="paramdefsep"> = </span><span class="paramdefval">false</span>&#160;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Updates a buffer. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">hBuffer</td><td>- The handle to the buffer object. </td></tr>
-    <tr><td class="paramname">uiDestinationOffset</td><td>- Byte offset into the buffer where the update should start. </td></tr>
-    <tr><td class="paramname">pSourceData</td><td>- Pointer to the source data. </td></tr>
-    <tr><td class="paramname">mapFlags</td><td>- Flags specifying how the buffer should be mapped. </td></tr>
-    <tr><td class="paramname">bCopyToTemporaryStorage</td><td>- Upload to temporary buffer, then buffer to buffer transfer at the current time in the command list. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000102">Todo</a></b></dt><dd>GraphicsFoundation: Check alignment. </dd></dl>
 
 </div>
 </div>
@@ -1842,50 +1998,7 @@ static const <a class="el" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a>
   </table>
   </dd>
 </dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000103">Todo</a></b></dt><dd>GraphicsFoundation: Validate texture update parameters. </dd></dl>
-
-</div>
-</div>
-<a id="adb87aa1e4995cbdc638f684bdec42b49" name="adb87aa1e4995cbdc638f684bdec42b49"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adb87aa1e4995cbdc638f684bdec42b49">&#9670;&#160;</a></span>UpdateTextureExtended()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void xiiGALCommandList::UpdateTextureExtended </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="../../df/de3/classxii_g_a_l_texture_handle.html">xiiGALTextureHandle</a></td>          <td class="paramname"><span class="paramname"><em>hTexture</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="../../d6/d72/structxii_g_a_l_texture_mip_level_data.html">xiiGALTextureMipLevelData</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>textureMiplevelData</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="../../d2/dd6/classxii_bounding_box_template.html">xiiBoundingBoxU32</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>textureBox</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="../../d3/d22/structxii_g_a_l_texture_sub_resource_data.html">xiiGALTextureSubResourceData</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>subresourceData</em></span>&#160;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Updates a texture. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">hTexture</td><td>- The handle to the texture object. </td></tr>
-    <tr><td class="paramname">textureMiplevelData</td><td>- Specifies the subresource to update. See <a class="el" href="../../d6/d72/structxii_g_a_l_texture_mip_level_data.html" title="This describes the mapped texture sub-resource mip-level data.">xiiGALTextureMipLevelData</a> for details. </td></tr>
-    <tr><td class="paramname">textureBox</td><td>- Specifies the region within the subresource to update. </td></tr>
-    <tr><td class="paramname">subresourceData</td><td>- Specifies the new data. See <a class="el" href="../../d3/d22/structxii_g_a_l_texture_sub_resource_data.html" title="This describes the data for one texture sub-resource.">xiiGALTextureSubResourceData</a> for details. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000104">Todo</a></b></dt><dd>GraphicsFoundation: Validate texture update parameters. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000098">Todo</a></b></dt><dd>GraphicsFoundation: Validate texture update parameters. </dd></dl>
 
 </div>
 </div>
@@ -1899,7 +2012,7 @@ static const <a class="el" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dc/d80/classxii_g_a_l_command_list.html">xiiGALCommandList</a></li>
-    <li class="footer">Generated on Tue Dec 31 2024 03:58:14 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Sat Jan 25 2025 15:49:32 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

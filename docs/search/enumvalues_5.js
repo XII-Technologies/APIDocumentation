@@ -8,7 +8,7 @@ var searchData=
   ['emptydocument_5',['EmptyDocument',['../df/dc8/structxii_document_flags.html#acfa2d5b155a47d31c5d46002da3811e3ac074f231f8d32faece6f81a029309ef1',1,'xiiDocumentFlags']]],
   ['enabled_6',['Enabled',['../d0/d1e/structxii_g_a_l_device_feature_state.html#a3353b07dddb3003f313f52f2e311d161a5f0d8d167cf6d0b24f9856c4d10c553b',1,'xiiGALDeviceFeatureState']]],
   ['end_7',['End',['../de/d1d/classxii_memory_mapped_file.html#a87467459914609e33ca1514fd0351388a87557f11575c0ad78e4e28abedc13b6e',1,'xiiMemoryMappedFile']]],
-  ['ended_8',['Ended',['../dc/d80/classxii_g_a_l_command_list.html#a144bbbf6d64c7ff201bda0b60ab10121a0157fbb99be9622bdaa6e544270c0622',1,'xiiGALCommandList']]],
+  ['ended_8',['Ended',['../dc/d80/classxii_g_a_l_command_list.html#a144bbbf6d64c7ff201bda0b60ab10121a0157fbb99be9622bdaa6e544270c0622',1,'xiiGALCommandList::Ended'],['../d8/db3/classxii_g_a_l_query.html#a13b9c295483ae4a42123735b261b1cd5a0157fbb99be9622bdaa6e544270c0622',1,'xiiGALQuery::Ended']]],
   ['endexpansion_9',['EndExpansion',['../da/ddd/structxii_preprocessor_1_1_processing_event.html#a802fe292e88c1d6864e3e14e68f89856a4880973de81f2e9ee34fe53e57b25eb1',1,'xiiPreprocessor::ProcessingEvent']]],
   ['endgroup_10',['EndGroup',['../d4/de6/structxii_log_msg_type.html#a7b991cbae5d585576d8269d959abbc49a3b79be1704a6cb298fc284d92ac8f6b1',1,'xiiLogMsgType']]],
   ['endoffile_11',['EndOfFile',['../d7/de7/structxii_token_type.html#afab41d2a9ab700f2bde9fafefdfaf846a965f6512123500ffaeb677b4f1a4a5e7',1,'xiiTokenType']]],

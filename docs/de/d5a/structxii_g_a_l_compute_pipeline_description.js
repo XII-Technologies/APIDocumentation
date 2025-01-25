@@ -1,4 +1,4 @@
 var structxii_g_a_l_compute_pipeline_description =
 [
-    [ "hComputeShader", "de/d5a/structxii_g_a_l_compute_pipeline_description.html#a774aef366e5c43289ccf7128799e16a2", null ]
+    [ "m_hComputeShader", "de/d5a/structxii_g_a_l_compute_pipeline_description.html#a0ba661a1a724c60818f01e7c8dbc1d99", null ]
 ];

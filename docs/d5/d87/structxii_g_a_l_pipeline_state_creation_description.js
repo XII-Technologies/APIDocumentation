@@ -10,6 +10,5 @@ var structxii_g_a_l_pipeline_state_creation_description =
     [ "m_PipelineType", "d5/d87/structxii_g_a_l_pipeline_state_creation_description.html#ac284729be2663f6436a3714de39357c7", null ],
     [ "m_RayTracingPipeline", "d5/d87/structxii_g_a_l_pipeline_state_creation_description.html#a354bb159aba0a2ccca94fb7a4070ae05", null ],
     [ "m_TilePipeline", "d5/d87/structxii_g_a_l_pipeline_state_creation_description.html#ac98f56920a40ee76c289970005e21c43", null ],
-    [ "m_uiCommandQueueMask", "d5/d87/structxii_g_a_l_pipeline_state_creation_description.html#a9fbff740b614869e9467719503799855", null ],
     [ "m_uiNodeMask", "d5/d87/structxii_g_a_l_pipeline_state_creation_description.html#a9f320c981a2e36634b6a0ac2cb11b28a", null ]
 ];

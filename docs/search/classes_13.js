@@ -15,7 +15,7 @@ var searchData=
   ['tickevent_12',['TickEvent',['../d3/d41/structxii_qt_ui_services_1_1_tick_event.html',1,'xiiQtUiServices']]],
   ['tocmeta_13',['TOCMeta',['../dd/dcd/structxii_archive_utils_1_1_t_o_c_meta.html',1,'xiiArchiveUtils']]],
   ['tokenmatch_14',['TokenMatch',['../d7/dab/structxii_token_parse_utils_1_1_token_match.html',1,'xiiTokenParseUtils']]],
-  ['tonativeimpl_15',['ToNativeImpl',['../d7/d24/structxii_min_windows_1_1_to_native_impl.html',1,'xiiMinWindows::ToNativeImpl&lt; T &gt;'],['../d1/ddb/structxii_min_x11_1_1_to_native_impl.html',1,'xiiMinX11::ToNativeImpl&lt; T &gt;']]],
+  ['tonativeimpl_15',['ToNativeImpl',['../d7/d24/structxii_min_windows_1_1_to_native_impl.html',1,'xiiMinWindows']]],
   ['transformationchanges_16',['TransformationChanges',['../dc/d47/struct_transformation_changes.html',1,'']]],
   ['triangle_17',['Triangle',['../da/d3b/structxii_debug_renderer_1_1_triangle.html',1,'xiiDebugRenderer']]],
   ['tuple_5felement_3c_200_2c_20xiihashtablebaseconstiterator_3c_20k_2c_20v_2c_20h_20_3e_20_3e_18',['tuple_element&lt; 0, xiiHashTableBaseConstIterator&lt; K, V, H &gt; &gt;',['../d5/d43/structstd_1_1tuple__element_3_010_00_01xii_hash_table_base_const_iterator_3_01_k_00_01_v_00_01_h_01_4_01_4.html',1,'std']]],

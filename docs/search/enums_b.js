@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['randomseedmode_0',['RandomSeedMode',['../d8/ddd/structxii_prefab_instantiation_options.html#a5cd1ff127e47a915103c05de7f88eb63',1,'xiiPrefabInstantiationOptions']]],
-  ['recordingstate_1',['RecordingState',['../dc/d80/classxii_g_a_l_command_list.html#a144bbbf6d64c7ff201bda0b60ab10121',1,'xiiGALCommandList']]]
+  ['querystate_0',['QueryState',['../d8/db3/classxii_g_a_l_query.html#a13b9c295483ae4a42123735b261b1cd5',1,'xiiGALQuery']]]
 ];

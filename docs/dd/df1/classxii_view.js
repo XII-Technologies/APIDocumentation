@@ -1,7 +1,11 @@
 var classxii_view =
 [
     [ "ComputeCullingFrustum", "dd/df1/classxii_view.html#a7103929a19469b465636fdc6f0aba469", null ],
-    [ "ComputePickingRay", "dd/df1/classxii_view.html#ac4a1e935a89bc00266d9852c0575a4cb", null ],
+    [ "ComputePickingRay", "dd/df1/classxii_view.html#a67d209e577f8267cc12539e059afd126", null ],
+    [ "ComputeScreenSpacePos", "dd/df1/classxii_view.html#a4c15c1551893c4e0830e48df91a13483", null ],
+    [ "ComputeWorldSpacePos", "dd/df1/classxii_view.html#a17e913195a5efac266ee68a0e022c02b", null ],
+    [ "ConvertScreenNormalizedPosToPixelPos", "dd/df1/classxii_view.html#a5eb161f5c4eda78d64f4b5b7a9c4e7cf", null ],
+    [ "ConvertScreenPixelPosToNormalizedPos", "dd/df1/classxii_view.html#a9cb3d973b8bcfd4a713ad27fa80679e3", null ],
     [ "ExtractData", "dd/df1/classxii_view.html#af4def1901428e290b48cd3c3ac7710ce", null ],
     [ "ForceUpdate", "dd/df1/classxii_view.html#a74441752a0cae35fcf29acc60103fcfa", null ],
     [ "GetActiveRenderTargets", "dd/df1/classxii_view.html#a4a0f385d6889574795fba3feeef73c95", null ],

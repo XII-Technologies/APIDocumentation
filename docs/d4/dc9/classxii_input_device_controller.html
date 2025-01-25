@@ -149,7 +149,7 @@ $(function(){initNavTree('d4/dc9/classxii_input_device_controller.html','../../'
 <div class="dynheader">
 Inheritance diagram for xiiInputDeviceController:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../df/d88/classxii_input_device_controller__inherit__graph.svg" width="240" height="418"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../df/d88/classxii_input_device_controller__inherit__graph.svg" width="240" height="344"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 <center><span class="legend">[<a target="top" href="../../graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
@@ -195,8 +195,9 @@ xiiInt8&#160;</td><td class="memItemRight" valign="bottom"><b>GetPhysicalControl
 xiiInt8&#160;</td><td class="memItemRight" valign="bottom"><b>GetVirtualControllerMapping</b> (xiiUInt8 uiPhysical) const</td></tr>
 <tr class="memdesc:a39b53e0f233bbbbcb98f280f56ddef96"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns to which virtual controller the given physical controller pushes its input. May be negative, which means the physical controller is not used. <br /></td></tr>
 <tr class="separator:a39b53e0f233bbbbcb98f280f56ddef96"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a978e80120b1033bd2f47a38a8918f7b7" id="r_a978e80120b1033bd2f47a38a8918f7b7"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a978e80120b1033bd2f47a38a8918f7b7">IsControllerConnected</a> (xiiUInt8 uiPhysical) const =0</td></tr>
-<tr class="memdesc:a978e80120b1033bd2f47a38a8918f7b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Queries whether the controller with the given physical index is connected to the computer. This may change at any time.  <br /></td></tr>
+<tr class="memitem:a978e80120b1033bd2f47a38a8918f7b7" id="r_a978e80120b1033bd2f47a38a8918f7b7"><td class="memItemLeft" align="right" valign="top"><a id="a978e80120b1033bd2f47a38a8918f7b7" name="a978e80120b1033bd2f47a38a8918f7b7"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsControllerConnected</b> (xiiUInt8 uiPhysical) const =0</td></tr>
+<tr class="memdesc:a978e80120b1033bd2f47a38a8918f7b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Queries whether the controller with the given physical index is connected to the computer. This may change at any time. <br /></td></tr>
 <tr class="separator:a978e80120b1033bd2f47a38a8918f7b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a03e611f335759cd80f6a7932ec409aa6" id="r_a03e611f335759cd80f6a7932ec409aa6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a03e611f335759cd80f6a7932ec409aa6">AddVibrationTrack</a> (xiiUInt8 uiVirtual, Motor::Enum motor, float *pVibrationTrackValue, xiiUInt32 uiSamples, float fScalingFactor=1.0f)</td></tr>
 <tr class="memdesc:a03e611f335759cd80f6a7932ec409aa6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a short 'vibration track' (a sequence of vibrations) to the given controller.  <br /></td></tr>
@@ -239,14 +240,16 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:a58195820a26d7994ca3b6b2ed160c348 inherit pro_methods_classxii_input_device" id="r_a58195820a26d7994ca3b6b2ed160c348"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/db1/classxii_input_device.html#a58195820a26d7994ca3b6b2ed160c348">UpdateInputSlotValues</a> ()=0</td></tr>
 <tr class="memdesc:a58195820a26d7994ca3b6b2ed160c348 inherit pro_methods_classxii_input_device"><td class="mdescLeft">&#160;</td><td class="mdescRight">Override this, if you need to query the state of the hardware to update the input slots.  <br /></td></tr>
 <tr class="separator:a58195820a26d7994ca3b6b2ed160c348 inherit pro_methods_classxii_input_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab1cc621bc1f7252df00f2be9a20c9c74 inherit pro_methods_classxii_input_device" id="r_ab1cc621bc1f7252df00f2be9a20c9c74"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/db1/classxii_input_device.html#ab1cc621bc1f7252df00f2be9a20c9c74">ResetInputSlotValues</a> ()</td></tr>
-<tr class="memdesc:ab1cc621bc1f7252df00f2be9a20c9c74 inherit pro_methods_classxii_input_device"><td class="mdescLeft">&#160;</td><td class="mdescRight">Override this, if you need to reset certain input slot values to zero, after the <a class="el" href="../../de/d43/classxii_input_manager.html" title="The central class to set up and query the state of all input.">xiiInputManager</a> is finished with the current frame update.  <br /></td></tr>
+<tr class="memitem:ab1cc621bc1f7252df00f2be9a20c9c74 inherit pro_methods_classxii_input_device" id="r_ab1cc621bc1f7252df00f2be9a20c9c74"><td class="memItemLeft" align="right" valign="top">
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>ResetInputSlotValues</b> ()</td></tr>
+<tr class="memdesc:ab1cc621bc1f7252df00f2be9a20c9c74 inherit pro_methods_classxii_input_device"><td class="mdescLeft">&#160;</td><td class="mdescRight">Override this, if you need to reset certain input slot values to zero, after the <a class="el" href="../../de/d43/classxii_input_manager.html" title="The central class to set up and query the state of all input.">xiiInputManager</a> is finished with the current frame update. <br /></td></tr>
 <tr class="separator:ab1cc621bc1f7252df00f2be9a20c9c74 inherit pro_methods_classxii_input_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:accb25b55755a4846a568b367b6a67718 inherit pro_methods_classxii_input_device" id="r_accb25b55755a4846a568b367b6a67718"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/db1/classxii_input_device.html#accb25b55755a4846a568b367b6a67718">RegisterInputSlots</a> ()=0</td></tr>
 <tr class="memdesc:accb25b55755a4846a568b367b6a67718 inherit pro_methods_classxii_input_device"><td class="mdescLeft">&#160;</td><td class="mdescRight">Override this to register all the input slots that this device exposes.  <br /></td></tr>
 <tr class="separator:accb25b55755a4846a568b367b6a67718 inherit pro_methods_classxii_input_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaddc20f247e6cfdbacae3623a4903cde inherit pro_methods_classxii_input_device" id="r_aaddc20f247e6cfdbacae3623a4903cde"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/db1/classxii_input_device.html#aaddc20f247e6cfdbacae3623a4903cde">UpdateHardwareState</a> (<a class="el" href="../../d7/dc1/structxii_time.html">xiiTime</a> tTimeDifference)</td></tr>
-<tr class="memdesc:aaddc20f247e6cfdbacae3623a4903cde inherit pro_methods_classxii_input_device"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function is called once after <a class="el" href="../../de/d43/classxii_input_manager.html#a70fb780c23c64f655c51a51ad4fbed87" title="Updates the state of the input manager. This should be called exactly once each frame.">xiiInputManager::Update</a> with the same time delta value. It allows to update hardware state, such as the vibration of gamepad motors.  <br /></td></tr>
+<tr class="memitem:aaddc20f247e6cfdbacae3623a4903cde inherit pro_methods_classxii_input_device" id="r_aaddc20f247e6cfdbacae3623a4903cde"><td class="memItemLeft" align="right" valign="top">
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>UpdateHardwareState</b> (<a class="el" href="../../d7/dc1/structxii_time.html">xiiTime</a> tTimeDifference)</td></tr>
+<tr class="memdesc:aaddc20f247e6cfdbacae3623a4903cde inherit pro_methods_classxii_input_device"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function is called once after <a class="el" href="../../de/d43/classxii_input_manager.html#a70fb780c23c64f655c51a51ad4fbed87" title="Updates the state of the input manager. This should be called exactly once each frame.">xiiInputManager::Update</a> with the same time delta value. It allows to update hardware state, such as the vibration of gamepad motors. <br /></td></tr>
 <tr class="separator:aaddc20f247e6cfdbacae3623a4903cde inherit pro_methods_classxii_input_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
@@ -369,35 +372,6 @@ xiiUInt32&#160;</td><td class="memItemRight" valign="bottom"><b>m_uiLastCharacte
 
 </div>
 </div>
-<a id="a978e80120b1033bd2f47a38a8918f7b7" name="a978e80120b1033bd2f47a38a8918f7b7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a978e80120b1033bd2f47a38a8918f7b7">&#9670;&#160;</a></span>IsControllerConnected()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual bool xiiInputDeviceController::IsControllerConnected </td>
-          <td>(</td>
-          <td class="paramtype">xiiUInt8</td>          <td class="paramname"><span class="paramname"><em>uiPhysical</em></span></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Queries whether the controller with the given physical index is connected to the computer. This may change at any time. </p>
-
-<p>Implemented in <a class="el" href="../../d1/d10/classxii_input_device_x_box360.html#a71d60104f13622a371084938d16bc5bd">xiiInputDeviceXBox360</a>.</p>
-
-</div>
-</div>
 <a id="a09b322fb8dcbd50f633c9aca104f80f8" name="a09b322fb8dcbd50f633c9aca104f80f8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a09b322fb8dcbd50f633c9aca104f80f8">&#9670;&#160;</a></span>SetControllerMapping()</h2>
 
@@ -489,7 +463,7 @@ xiiUInt32&#160;</td><td class="memItemRight" valign="bottom"><b>m_uiLastCharacte
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d4/dc9/classxii_input_device_controller.html">xiiInputDeviceController</a></li>
-    <li class="footer">Generated on Tue Dec 31 2024 03:58:15 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Sat Jan 25 2025 15:49:33 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

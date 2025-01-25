@@ -49,7 +49,7 @@ var searchData=
   ['fromstart_46',['FromStart',['../da/dc9/structxii_file_seek_mode.html#aa238d26443e31d26362e3c7d14b701b5ab08bfb3368186f1a5d0bff03558b5d0e',1,'xiiFileSeekMode']]],
   ['front_47',['Front',['../d0/da1/structxii_position_on_plane.html#a36bc7bfaf6ef233d77623806b61626d4a571569765bc0ad8d27bbe8c78271a182',1,'xiiPositionOnPlane::Front'],['../de/ddb/structxii_g_a_l_cull_mode.html#a7b3c13fc477dc735a5d0700f27f46b24aad8112c3eeb1615141fcebade3e8e7cc',1,'xiiGALCullMode::Front']]],
   ['fullaxis_48',['FullAxis',['../db/db7/structxii_input_slot_flags.html#a3e9e6761413c16a3ca9109bb9d421bb0ab553d7d27386f1bb9df3a720e150e510',1,'xiiInputSlotFlags']]],
-  ['fullscreenborderlessnativeresolution_49',['FullscreenBorderlessNativeResolution',['../d4/d40/structxii_window_mode.html#a572581340725890ccb4f8b0c2c40ef73ad5e32e9ff34c3be52e6ab48ce5cdcdc6',1,'xiiWindowMode']]],
-  ['fullscreenfixedresolution_50',['FullscreenFixedResolution',['../d4/d40/structxii_window_mode.html#a572581340725890ccb4f8b0c2c40ef73a1ebda2228190db68b14fb92a98246ced',1,'xiiWindowMode']]],
+  ['fullscreenborderlessnativeresolution_49',['FullscreenBorderlessNativeResolution',['../d4/d40/structxii_window_mode.html#aced6b6446fc8e62f3a850a3d8d4e23a6ad5e32e9ff34c3be52e6ab48ce5cdcdc6',1,'xiiWindowMode']]],
+  ['fullscreenfixedresolution_50',['FullscreenFixedResolution',['../d4/d40/structxii_window_mode.html#aced6b6446fc8e62f3a850a3d8d4e23a6a1ebda2228190db68b14fb92a98246ced',1,'xiiWindowMode']]],
   ['function_51',['Function',['../d8/d9c/structxii_property_category.html#a955c0fc07dab4281c48ea7319c91a361aed09569f5ffaa96d4e6ed6d8727bd083',1,'xiiPropertyCategory']]]
 ];

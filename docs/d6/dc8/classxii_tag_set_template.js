@@ -7,6 +7,7 @@ var classxii_tag_set_template =
     [ "IsAnySet", "d6/dc8/classxii_tag_set_template.html#a18e33c59dfc8e3ea1a69555de5ac66f9", null ],
     [ "IsEmpty", "d6/dc8/classxii_tag_set_template.html#a90fd9eb0bbd28557a4d967539fe38dda", null ],
     [ "IsSet", "d6/dc8/classxii_tag_set_template.html#abe850bb458adaf6ec2b2e8cc32b0aee0", null ],
+    [ "IsSetByName", "d6/dc8/classxii_tag_set_template.html#aaaf9ec4319af2bcbebd55f999f9dd618", null ],
     [ "IsSetByName", "d6/dc8/classxii_tag_set_template.html#abe13c27c78b8c4ba0d473d1866094826", null ],
     [ "Load", "d6/dc8/classxii_tag_set_template.html#a43b5d93bf620bc927aa4b84e5dbc61b0", null ],
     [ "Remove", "d6/dc8/classxii_tag_set_template.html#ae6f2f27087d1a2b6cc09ce9ba2a9d5f6", null ],

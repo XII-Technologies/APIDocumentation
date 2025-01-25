@@ -179,37 +179,38 @@ $(function(){initNavTree('df/d3b/_stack_tracer__android_8h_source.html','../../'
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>  <a class="code hl_struct" href="../../dd/d1d/struct_backtrace.html">Backtrace</a> backtrace;</div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>  backtrace.trace         = trace;</div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>  _Unwind_Reason_Code res = _Unwind_Backtrace(BacktraceCallback, &amp;backtrace);</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>  <span class="keywordflow">return</span> backtrace.uiPos;</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>}</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>  XII_IGNORE_UNUSED(res);</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>  <span class="keywordflow">return</span> backtrace.uiPos;</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>}</div>
 </div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="comment">// static</span></div>
-<div class="foldopen" id="foldopen00047" data-start="{" data-end="}">
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="../../dd/dbd/classxii_stack_tracer.html#a9354349e6fff8410bd7c62466b52392f">   47</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="../../dd/dbd/classxii_stack_tracer.html#a9354349e6fff8410bd7c62466b52392f">xiiStackTracer::ResolveStackTrace</a>(<span class="keyword">const</span> <a class="code hl_class" href="../../d0/d60/classxii_array_ptr.html">xiiArrayPtr&lt;void*&gt;</a>&amp; trace, <a class="code hl_struct" href="../../dc/d84/structxii_delegate.html">PrintFunc</a> printFunc)</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>{</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>  <span class="keywordtype">char</span> szBuffer[512];</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>  <span class="keywordflow">for</span> (xiiUInt32 i = 0; i &lt; trace.<a class="code hl_function" href="../../d0/d60/classxii_array_ptr.html#af1e072a93ee1a583d0db00e821c2d999">GetCount</a>(); i++)</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>  {</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    Dl_info info;</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <span class="keywordflow">if</span> (dladdr(trace[i], &amp;info) &amp;&amp; info.dli_sname)</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    {</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>      xiiInt32 iLen = <a class="code hl_function" href="../../d1/d37/namespacexii_math.html#a2c660f80f0df5bb91a751d12a93cb9cb">xiiMath::Min</a>(strlen(info.dli_sname), (<span class="keywordtype">size_t</span>)XII_ARRAY_SIZE(szBuffer) - 2);</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>      memcpy(szBuffer, info.dli_sname, iLen);</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>      szBuffer[iLen]     = <span class="charliteral">&#39;\n&#39;</span>;</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>      szBuffer[iLen + 1] = <span class="charliteral">&#39;\0&#39;</span>;</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>      printFunc(szBuffer);</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    }</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    <span class="keywordflow">else</span></div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    {</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>      printFunc(<span class="stringliteral">&quot;Unresolved stack.\n&quot;</span>);</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    }</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>  }</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>}</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="comment">// static</span></div>
+<div class="foldopen" id="foldopen00048" data-start="{" data-end="}">
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="../../dd/dbd/classxii_stack_tracer.html#a9354349e6fff8410bd7c62466b52392f">   48</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="../../dd/dbd/classxii_stack_tracer.html#a9354349e6fff8410bd7c62466b52392f">xiiStackTracer::ResolveStackTrace</a>(<span class="keyword">const</span> <a class="code hl_class" href="../../d0/d60/classxii_array_ptr.html">xiiArrayPtr&lt;void*&gt;</a>&amp; trace, <a class="code hl_struct" href="../../dc/d84/structxii_delegate.html">PrintFunc</a> printFunc)</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>{</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>  <span class="keywordtype">char</span> szBuffer[512];</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>  <span class="keywordflow">for</span> (xiiUInt32 i = 0; i &lt; trace.<a class="code hl_function" href="../../d0/d60/classxii_array_ptr.html#af1e072a93ee1a583d0db00e821c2d999">GetCount</a>(); i++)</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>  {</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    Dl_info info;</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    <span class="keywordflow">if</span> (dladdr(trace[i], &amp;info) &amp;&amp; info.dli_sname)</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    {</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>      xiiInt32 iLen = <a class="code hl_function" href="../../d1/d37/namespacexii_math.html#a2c660f80f0df5bb91a751d12a93cb9cb">xiiMath::Min</a>(strlen(info.dli_sname), (<span class="keywordtype">size_t</span>)XII_ARRAY_SIZE(szBuffer) - 2);</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>      memcpy(szBuffer, info.dli_sname, iLen);</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>      szBuffer[iLen]     = <span class="charliteral">&#39;\n&#39;</span>;</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>      szBuffer[iLen + 1] = <span class="charliteral">&#39;\0&#39;</span>;</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>      printFunc(szBuffer);</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    }</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    <span class="keywordflow">else</span></div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    {</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>      printFunc(<span class="stringliteral">&quot;Unresolved stack.\n&quot;</span>);</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    }</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>  }</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>}</div>
 </div>
 <div class="ttc" id="aclassxii_array_ptr_html"><div class="ttname"><a href="../../d0/d60/classxii_array_ptr.html">xiiArrayPtr</a></div><div class="ttdoc">This class encapsulates an array and it's size. It is recommended to use this class instead of plain ...</div><div class="ttdef"><b>Definition</b> ArrayPtr.h:37</div></div>
 <div class="ttc" id="aclassxii_array_ptr_html_af1e072a93ee1a583d0db00e821c2d999"><div class="ttname"><a href="../../d0/d60/classxii_array_ptr.html#af1e072a93ee1a583d0db00e821c2d999">xiiArrayPtr::GetCount</a></div><div class="ttdeci">XII_ALWAYS_INLINE xiiUInt32 GetCount() const</div><div class="ttdoc">Returns the number of elements in the array.</div><div class="ttdef"><b>Definition</b> ArrayPtr.h:146</div></div>
 <div class="ttc" id="aclassxii_stack_tracer_html_a1fe0c96a8c83f0523dd057f118f5ac3e"><div class="ttname"><a href="../../dd/dbd/classxii_stack_tracer.html#a1fe0c96a8c83f0523dd057f118f5ac3e">xiiStackTracer::GetStackTrace</a></div><div class="ttdeci">static xiiUInt32 GetStackTrace(xiiArrayPtr&lt; void * &gt; &amp;ref_trace, void *pContext=nullptr)</div><div class="ttdoc">Captures the current stack trace.</div><div class="ttdef"><b>Definition</b> StackTracer_android.h:38</div></div>
-<div class="ttc" id="aclassxii_stack_tracer_html_a9354349e6fff8410bd7c62466b52392f"><div class="ttname"><a href="../../dd/dbd/classxii_stack_tracer.html#a9354349e6fff8410bd7c62466b52392f">xiiStackTracer::ResolveStackTrace</a></div><div class="ttdeci">static void ResolveStackTrace(const xiiArrayPtr&lt; void * &gt; &amp;trace, PrintFunc printFunc)</div><div class="ttdoc">Print a stack trace.</div><div class="ttdef"><b>Definition</b> StackTracer_android.h:47</div></div>
+<div class="ttc" id="aclassxii_stack_tracer_html_a9354349e6fff8410bd7c62466b52392f"><div class="ttname"><a href="../../dd/dbd/classxii_stack_tracer.html#a9354349e6fff8410bd7c62466b52392f">xiiStackTracer::ResolveStackTrace</a></div><div class="ttdeci">static void ResolveStackTrace(const xiiArrayPtr&lt; void * &gt; &amp;trace, PrintFunc printFunc)</div><div class="ttdoc">Print a stack trace.</div><div class="ttdef"><b>Definition</b> StackTracer_android.h:48</div></div>
 <div class="ttc" id="anamespacexii_math_html_a2c660f80f0df5bb91a751d12a93cb9cb"><div class="ttname"><a href="../../d1/d37/namespacexii_math.html#a2c660f80f0df5bb91a751d12a93cb9cb">xiiMath::Min</a></div><div class="ttdeci">constexpr XII_ALWAYS_INLINE T Min(T f1, T f2)</div><div class="ttdoc">Returns the smaller value, f1 or f2.</div><div class="ttdef"><b>Definition</b> Math_inl.h:26</div></div>
 <div class="ttc" id="astruct_backtrace_html"><div class="ttname"><a href="../../dd/d1d/struct_backtrace.html">Backtrace</a></div><div class="ttdef"><b>Definition</b> StackTracer_android.h:17</div></div>
 <div class="ttc" id="astructxii_delegate_html"><div class="ttname"><a href="../../dc/d84/structxii_delegate.html">xiiDelegate</a></div><div class="ttdoc">A generic delegate class which supports static functions and member functions.</div><div class="ttdef"><b>Definition</b> Delegate.h:76</div></div>
@@ -220,7 +221,7 @@ $(function(){initNavTree('df/d3b/_stack_tracer__android_8h_source.html','../../'
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.html">home</a></li><li class="navelem"><a class="el" href="../../dir_1036706e55c22cab35bc1c58ee689f1d.html">runner</a></li><li class="navelem"><a class="el" href="../../dir_629f8151d55d307162ff2d619fb1783d.html">work</a></li><li class="navelem"><a class="el" href="../../dir_1ddc44fe1263a8c7935fa6130b7d9499.html">XII</a></li><li class="navelem"><a class="el" href="../../dir_2c1b6808f12952f4c36e05ba7068379a.html">XII</a></li><li class="navelem"><a class="el" href="../../dir_b5a1c4ecfca018ad24b729e213296d41.html">Source</a></li><li class="navelem"><a class="el" href="../../dir_e321052006a51284e67389ab20037e7c.html">Engine</a></li><li class="navelem"><a class="el" href="../../dir_be0c42c58b36f42c54ec54024ed4f6af.html">Foundation</a></li><li class="navelem"><a class="el" href="../../dir_664c047245be96e54b4c21a35d20a789.html">Platform</a></li><li class="navelem"><a class="el" href="../../dir_ed92eb75a0769b88f81ec30678d8111f.html">Implementation</a></li><li class="navelem"><a class="el" href="../../dir_da62aa5cd644f12921b7f87ac1eaf5b5.html">Android</a></li><li class="navelem"><b>StackTracer_android.h</b></li>
-    <li class="footer">Generated on Tue Dec 31 2024 03:58:10 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Sat Jan 25 2025 15:49:28 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

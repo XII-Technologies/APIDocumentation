@@ -39,6 +39,7 @@ var classxii_game_object =
     [ "GetTags", "d0/d91/classxii_game_object.html#a1c5cd9d22245007e058a9d42f393eef6", null ],
     [ "GetTeamID", "d0/d91/classxii_game_object.html#ade66519545dd74f1e6333e737a8238be", null ],
     [ "GetVisibilityState", "d0/d91/classxii_game_object.html#a1ea5c9cfec10d04daeb9711308eda4cb", null ],
+    [ "HasTag", "d0/d91/classxii_game_object.html#af8bf826aa5a89d6fe332015266ac312b", null ],
     [ "IsActive", "d0/d91/classxii_game_object.html#aa4fe3a84f1be8921eb61bd9e27dae2e6", null ],
     [ "IsDynamic", "d0/d91/classxii_game_object.html#a5378a2055df6f62fd3c8703974021d77", null ],
     [ "IsStatic", "d0/d91/classxii_game_object.html#a3506fb866fdec0263a2a463f67e297f2", null ],
