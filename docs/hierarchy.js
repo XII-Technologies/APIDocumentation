@@ -1250,31 +1250,11 @@ var hierarchy =
         [ "xiiDynamicArray< const xiiExpressionFunction * >", "dc/da4/classxii_dynamic_array.html", null ]
       ] ]
     ] ],
-    [ "xiiArrayBase< const xiiGALBufferViewVulkan *, xiiDynamicArrayBase< const xiiGALBufferViewVulkan * > >", "da/d4c/classxii_array_base.html", [
-      [ "xiiDynamicArrayBase< const xiiGALBufferViewVulkan * >", "d2/dea/classxii_dynamic_array_base.html", [
-        [ "xiiDynamicArray< const xiiGALBufferViewVulkan * >", "dc/da4/classxii_dynamic_array.html", null ]
-      ] ]
-    ] ],
-    [ "xiiArrayBase< const xiiGALBufferVulkan *, xiiDynamicArrayBase< const xiiGALBufferVulkan * > >", "da/d4c/classxii_array_base.html", [
-      [ "xiiDynamicArrayBase< const xiiGALBufferVulkan * >", "d2/dea/classxii_dynamic_array_base.html", [
-        [ "xiiDynamicArray< const xiiGALBufferVulkan * >", "dc/da4/classxii_dynamic_array.html", null ]
-      ] ]
-    ] ],
     [ "xiiArrayBase< const xiiGALResource *, xiiDynamicArrayBase< const xiiGALResource * > >", "da/d4c/classxii_array_base.html", [
       [ "xiiDynamicArrayBase< const xiiGALResource * >", "d2/dea/classxii_dynamic_array_base.html", [
         [ "xiiDynamicArray< const xiiGALResource *, xiiDefaultAllocatorWrapper >", "dc/da4/classxii_dynamic_array.html", [
           [ "xiiHybridArray< const xiiGALResource *, 16 >", "dc/da9/classxii_hybrid_array.html", null ]
         ] ]
-      ] ]
-    ] ],
-    [ "xiiArrayBase< const xiiGALSamplerVulkan *, xiiDynamicArrayBase< const xiiGALSamplerVulkan * > >", "da/d4c/classxii_array_base.html", [
-      [ "xiiDynamicArrayBase< const xiiGALSamplerVulkan * >", "d2/dea/classxii_dynamic_array_base.html", [
-        [ "xiiDynamicArray< const xiiGALSamplerVulkan * >", "dc/da4/classxii_dynamic_array.html", null ]
-      ] ]
-    ] ],
-    [ "xiiArrayBase< const xiiGALTextureViewVulkan *, xiiDynamicArrayBase< const xiiGALTextureViewVulkan * > >", "da/d4c/classxii_array_base.html", [
-      [ "xiiDynamicArrayBase< const xiiGALTextureViewVulkan * >", "d2/dea/classxii_dynamic_array_base.html", [
-        [ "xiiDynamicArray< const xiiGALTextureViewVulkan * >", "dc/da4/classxii_dynamic_array.html", null ]
       ] ]
     ] ],
     [ "xiiArrayBase< const xiiGameObject *, xiiDynamicArrayBase< const xiiGameObject * > >", "da/d4c/classxii_array_base.html", [
@@ -1821,13 +1801,6 @@ var hierarchy =
       [ "xiiDynamicArrayBase< vk::VertexInputBindingDescription >", "d2/dea/classxii_dynamic_array_base.html", [
         [ "xiiDynamicArray< vk::VertexInputBindingDescription, xiiDefaultAllocatorWrapper >", "dc/da4/classxii_dynamic_array.html", [
           [ "xiiHybridArray< vk::VertexInputBindingDescription, XII_GAL_MAX_VERTEX_BUFFER_COUNT >", "dc/da9/classxii_hybrid_array.html", null ]
-        ] ]
-      ] ]
-    ] ],
-    [ "xiiArrayBase< vk::WriteDescriptorSet, xiiDynamicArrayBase< vk::WriteDescriptorSet > >", "da/d4c/classxii_array_base.html", [
-      [ "xiiDynamicArrayBase< vk::WriteDescriptorSet >", "d2/dea/classxii_dynamic_array_base.html", [
-        [ "xiiDynamicArray< vk::WriteDescriptorSet, xiiDefaultAllocatorWrapper >", "dc/da4/classxii_dynamic_array.html", [
-          [ "xiiHybridArray< vk::WriteDescriptorSet, 16U >", "dc/da9/classxii_hybrid_array.html", null ]
         ] ]
       ] ]
     ] ],
@@ -2459,6 +2432,16 @@ var hierarchy =
         ] ]
       ] ]
     ] ],
+    [ "xiiArrayBase< xiiGALBufferViewVulkan *, xiiDynamicArrayBase< xiiGALBufferViewVulkan * > >", "da/d4c/classxii_array_base.html", [
+      [ "xiiDynamicArrayBase< xiiGALBufferViewVulkan * >", "d2/dea/classxii_dynamic_array_base.html", [
+        [ "xiiDynamicArray< xiiGALBufferViewVulkan * >", "dc/da4/classxii_dynamic_array.html", null ]
+      ] ]
+    ] ],
+    [ "xiiArrayBase< xiiGALBufferVulkan *, xiiDynamicArrayBase< xiiGALBufferVulkan * > >", "da/d4c/classxii_array_base.html", [
+      [ "xiiDynamicArrayBase< xiiGALBufferVulkan * >", "d2/dea/classxii_dynamic_array_base.html", [
+        [ "xiiDynamicArray< xiiGALBufferVulkan * >", "dc/da4/classxii_dynamic_array.html", null ]
+      ] ]
+    ] ],
     [ "xiiArrayBase< xiiGALCommandListVulkan *, xiiDynamicArrayBase< xiiGALCommandListVulkan * > >", "da/d4c/classxii_array_base.html", [
       [ "xiiDynamicArrayBase< xiiGALCommandListVulkan * >", "d2/dea/classxii_dynamic_array_base.html", [
         [ "xiiDynamicArray< xiiGALCommandListVulkan * >", "dc/da4/classxii_dynamic_array.html", null ]
@@ -2498,6 +2481,13 @@ var hierarchy =
         ] ]
       ] ]
     ] ],
+    [ "xiiArrayBase< xiiGALPipelineResourceDescriptionVulkan, xiiDynamicArrayBase< xiiGALPipelineResourceDescriptionVulkan > >", "da/d4c/classxii_array_base.html", [
+      [ "xiiDynamicArrayBase< xiiGALPipelineResourceDescriptionVulkan >", "d2/dea/classxii_dynamic_array_base.html", [
+        [ "xiiDynamicArray< xiiGALPipelineResourceDescriptionVulkan, xiiDefaultAllocatorWrapper >", "dc/da4/classxii_dynamic_array.html", [
+          [ "xiiHybridArray< xiiGALPipelineResourceDescriptionVulkan, 1U >", "dc/da9/classxii_hybrid_array.html", null ]
+        ] ]
+      ] ]
+    ] ],
     [ "xiiArrayBase< xiiGALPipelineResourceSignatureVulkan::ImmutableSamplerStorage, xiiDynamicArrayBase< xiiGALPipelineResourceSignatureVulkan::ImmutableSamplerStorage > >", "da/d4c/classxii_array_base.html", [
       [ "xiiDynamicArrayBase< xiiGALPipelineResourceSignatureVulkan::ImmutableSamplerStorage >", "d2/dea/classxii_dynamic_array_base.html", [
         [ "xiiDynamicArray< xiiGALPipelineResourceSignatureVulkan::ImmutableSamplerStorage >", "dc/da4/classxii_dynamic_array.html", null ]
@@ -2530,6 +2520,11 @@ var hierarchy =
     ] ],
     [ "xiiArrayBase< xiiGALResourceFormat::Enum, xiiStaticArray< xiiGALResourceFormat::Enum, Capacity > >", "da/d4c/classxii_array_base.html", [
       [ "xiiStaticArray< xiiGALResourceFormat::Enum[xiiGALTextureViewType::ENUM_COUNT], xiiGALResourceFormat::ENUM_COUNT >", "d9/d25/classxii_static_array.html", null ]
+    ] ],
+    [ "xiiArrayBase< xiiGALSamplerVulkan *, xiiDynamicArrayBase< xiiGALSamplerVulkan * > >", "da/d4c/classxii_array_base.html", [
+      [ "xiiDynamicArrayBase< xiiGALSamplerVulkan * >", "d2/dea/classxii_dynamic_array_base.html", [
+        [ "xiiDynamicArray< xiiGALSamplerVulkan * >", "dc/da4/classxii_dynamic_array.html", null ]
+      ] ]
     ] ],
     [ "xiiArrayBase< xiiGALShaderResourceDescription, xiiDynamicArrayBase< xiiGALShaderResourceDescription > >", "da/d4c/classxii_array_base.html", [
       [ "xiiDynamicArrayBase< xiiGALShaderResourceDescription >", "d2/dea/classxii_dynamic_array_base.html", [
@@ -2590,6 +2585,11 @@ var hierarchy =
         ] ]
       ] ]
     ] ],
+    [ "xiiArrayBase< xiiGALTextureViewVulkan *, xiiDynamicArrayBase< xiiGALTextureViewVulkan * > >", "da/d4c/classxii_array_base.html", [
+      [ "xiiDynamicArrayBase< xiiGALTextureViewVulkan * >", "d2/dea/classxii_dynamic_array_base.html", [
+        [ "xiiDynamicArray< xiiGALTextureViewVulkan * >", "dc/da4/classxii_dynamic_array.html", null ]
+      ] ]
+    ] ],
     [ "xiiArrayBase< xiiGALVertexInputLayout, xiiDynamicArrayBase< xiiGALVertexInputLayout > >", "da/d4c/classxii_array_base.html", [
       [ "xiiDynamicArrayBase< xiiGALVertexInputLayout >", "d2/dea/classxii_dynamic_array_base.html", [
         [ "xiiDynamicArray< xiiGALVertexInputLayout, xiiDefaultAllocatorWrapper >", "dc/da4/classxii_dynamic_array.html", [
@@ -2648,6 +2648,13 @@ var hierarchy =
           [ "xiiHybridArray< xiiHashedString, 4 >", "dc/da9/classxii_hybrid_array.html", null ],
           [ "xiiHybridArray< xiiHashedString, 1 >", "dc/da9/classxii_hybrid_array.html", null ],
           [ "xiiHybridArray< xiiHashedString, 16 >", "dc/da9/classxii_hybrid_array.html", null ]
+        ] ]
+      ] ]
+    ] ],
+    [ "xiiArrayBase< xiiHybridArray< xiiGALPipelineResourceDescriptionVulkan, 1U >, xiiDynamicArrayBase< xiiHybridArray< xiiGALPipelineResourceDescriptionVulkan, 1U > > >", "da/d4c/classxii_array_base.html", [
+      [ "xiiDynamicArrayBase< xiiHybridArray< xiiGALPipelineResourceDescriptionVulkan, 1U > >", "d2/dea/classxii_dynamic_array_base.html", [
+        [ "xiiDynamicArray< xiiHybridArray< xiiGALPipelineResourceDescriptionVulkan, 1U >, xiiDefaultAllocatorWrapper >", "dc/da4/classxii_dynamic_array.html", [
+          [ "xiiHybridArray< xiiHybridArray< xiiGALPipelineResourceDescriptionVulkan, 1U >, 1U >", "dc/da9/classxii_hybrid_array.html", null ]
         ] ]
       ] ]
     ] ],
@@ -4970,6 +4977,7 @@ var hierarchy =
     [ "xiiGALSparseTextureFlags", "d6/ddc/structxii_g_a_l_sparse_texture_flags.html", null ],
     [ "xiiGALStagingBufferPoolVulkan", "d5/d7f/classxii_g_a_l_staging_buffer_pool_vulkan.html", null ],
     [ "xiiGALStateTransitionFlags", "db/da0/structxii_g_a_l_state_transition_flags.html", null ],
+    [ "xiiGALStateTransitionMode", "dc/dfa/structxii_g_a_l_state_transition_mode.html", null ],
     [ "xiiGALStencilOperation", "db/d73/structxii_g_a_l_stencil_operation.html", [
       [ "xiiEnum< xiiGALStencilOperation >", "de/dfd/structxii_enum.html", null ]
     ] ],
@@ -5153,6 +5161,9 @@ var hierarchy =
     ] ],
     [ "xiiHashableStruct< xiiGALPipelineResourceDescription >", "d7/d9f/classxii_hashable_struct.html", [
       [ "xiiGALPipelineResourceDescription", "d0/d99/structxii_g_a_l_pipeline_resource_description.html", null ]
+    ] ],
+    [ "xiiHashableStruct< xiiGALPipelineResourceDescriptionVulkan >", "d7/d9f/classxii_hashable_struct.html", [
+      [ "xiiGALPipelineResourceDescriptionVulkan", "d0/d50/structxii_g_a_l_pipeline_resource_description_vulkan.html", null ]
     ] ],
     [ "xiiHashableStruct< xiiGALQueryCreationDescription >", "d7/d9f/classxii_hashable_struct.html", [
       [ "xiiGALQueryCreationDescription", "d3/d4e/structxii_g_a_l_query_creation_description.html", null ]

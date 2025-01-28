@@ -238,6 +238,9 @@ XII_ALWAYS_INLINE <a class="el" href="../../dd/d03/classxii_g_a_l_framebuffer_ha
 <tr class="memitem:aa2bca413b023005b9a5ca29b066f459b" id="r_aa2bca413b023005b9a5ca29b066f459b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa2bca413b023005b9a5ca29b066f459b">SetSampler</a> (const <a class="el" href="../../d0/d99/structxii_g_a_l_pipeline_resource_description.html">xiiGALPipelineResourceDescription</a> &amp;bindingInformation, <a class="el" href="../../da/dfe/classxii_g_a_l_sampler_handle.html">xiiGALSamplerHandle</a> hSampler)</td></tr>
 <tr class="memdesc:aa2bca413b023005b9a5ca29b066f459b"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is used to set the sampler for a sampler resource.  <br /></td></tr>
 <tr class="separator:aa2bca413b023005b9a5ca29b066f459b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5b604cc01d2564d04b25bb8295c57d0" id="r_aa5b604cc01d2564d04b25bb8295c57d0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa5b604cc01d2564d04b25bb8295c57d0">CommitShaderResources</a> (<a class="el" href="../../de/dfd/structxii_enum.html">xiiEnum</a>&lt; <a class="el" href="../../dc/dfa/structxii_g_a_l_state_transition_mode.html">xiiGALStateTransitionMode</a> &gt; mode=<a class="el" href="../../dc/dfa/structxii_g_a_l_state_transition_mode.html#aa5fa3cbafd6aa6285316726bbbb62b81aad65128e12a12e88e833b9ef0adbfa73">xiiGALStateTransitionMode::Transition</a>)</td></tr>
+<tr class="memdesc:aa5b604cc01d2564d04b25bb8295c57d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">This commits the pipeline shader resources to the GPU, and ensures that all necessary state transitions are performed.  <br /></td></tr>
+<tr class="separator:aa5b604cc01d2564d04b25bb8295c57d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae4790cc43eb961740e267e18e1a7bf69" id="r_ae4790cc43eb961740e267e18e1a7bf69"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae4790cc43eb961740e267e18e1a7bf69">ClearRenderTargetView</a> (<a class="el" href="../../dd/d52/classxii_g_a_l_texture_view_handle.html">xiiGALTextureViewHandle</a> hRenderTargetView, const <a class="el" href="../../d3/de6/classxii_color.html">xiiColor</a> &amp;clearColor)</td></tr>
 <tr class="memdesc:ae4790cc43eb961740e267e18e1a7bf69"><td class="mdescLeft">&#160;</td><td class="mdescRight">This clears the specified render target view to the specified color.  <br /></td></tr>
 <tr class="separator:ae4790cc43eb961740e267e18e1a7bf69"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -696,6 +699,31 @@ static const <a class="el" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a>
   <table class="params">
     <tr><td class="paramname">hRenderTargetView</td><td>- The handle to the render target view object. The view must be a <a class="el" href="../../db/d60/structxii_g_a_l_texture_view_type.html#ad4f8ca273dab45d482b39716b7c25272ab6c3bfa1704520642c126b534daf13e6" title="A texture view will define a render target view that will be used as the render target for rendering ...">xiiGALTextureViewType::RenderTarget</a>. </td></tr>
     <tr><td class="paramname">clearColor</td><td>- The color to which to clear the render target view. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aa5b604cc01d2564d04b25bb8295c57d0" name="aa5b604cc01d2564d04b25bb8295c57d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa5b604cc01d2564d04b25bb8295c57d0">&#9670;&#160;</a></span>CommitShaderResources()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a> xiiGALCommandList::CommitShaderResources </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/dfd/structxii_enum.html">xiiEnum</a>&lt; <a class="el" href="../../dc/dfa/structxii_g_a_l_state_transition_mode.html">xiiGALStateTransitionMode</a> &gt;</td>          <td class="paramname"><span class="paramname"><em>mode</em></span><span class="paramdefsep"> = </span><span class="paramdefval"><a class="el" href="../../dc/dfa/structxii_g_a_l_state_transition_mode.html#aa5fa3cbafd6aa6285316726bbbb62b81aad65128e12a12e88e833b9ef0adbfa73">xiiGALStateTransitionMode::Transition</a></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This commits the pipeline shader resources to the GPU, and ensures that all necessary state transitions are performed. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mode</td><td>- The state transition mode. The default is <a class="el" href="../../dc/dfa/structxii_g_a_l_state_transition_mode.html#aa5fa3cbafd6aa6285316726bbbb62b81aad65128e12a12e88e833b9ef0adbfa73" title="Transition resources to the states required by the specific command. Resources in unknown state are i...">xiiGALStateTransitionMode::Transition</a>. </td></tr>
   </table>
   </dd>
 </dl>
@@ -2012,7 +2040,7 @@ static const <a class="el" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dc/d80/classxii_g_a_l_command_list.html">xiiGALCommandList</a></li>
-    <li class="footer">Generated on Sat Jan 25 2025 15:49:32 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Tue Jan 28 2025 05:32:25 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

@@ -12,6 +12,7 @@ var classxii_g_a_l_command_list =
     [ "BeginRenderPass", "dc/d80/classxii_g_a_l_command_list.html#a39d229a291c085dc7847f46182da31e0", null ],
     [ "ClearDepthStencilView", "dc/d80/classxii_g_a_l_command_list.html#ac1a6dc6554fab475565ea967a9223363", null ],
     [ "ClearRenderTargetView", "dc/d80/classxii_g_a_l_command_list.html#ae4790cc43eb961740e267e18e1a7bf69", null ],
+    [ "CommitShaderResources", "dc/d80/classxii_g_a_l_command_list.html#aa5b604cc01d2564d04b25bb8295c57d0", null ],
     [ "CopyBuffer", "dc/d80/classxii_g_a_l_command_list.html#a5079e201ba2e307c1bc76826c38c8c07", null ],
     [ "CopyBufferRegion", "dc/d80/classxii_g_a_l_command_list.html#abb5d9a29bcda2e5c57349023168cfc0f", null ],
     [ "CopyTexture", "dc/d80/classxii_g_a_l_command_list.html#a92abd6d0f62c72c15b96338dd48cbf1c", null ],
