@@ -142,7 +142,7 @@ $(function(){initNavTree('d0/d68/_bounding_box_sphere__inl_8h_source.html','../.
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span>{</div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#if XII_ENABLED(XII_MATH_CHECK_FOR_NAN)</span></div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>  <span class="comment">// Initialize all data to NaN in debug mode to find problems with uninitialized data easier.</span></div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>  <span class="comment">// m_vOrigin and m_vBoxHalfExtends are already initialized to NaN by their own constructor.</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>  <span class="comment">// m_vOrigin and m_vBoxHalfExtents are already initialized to NaN by their own constructor.</span></div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>  <span class="keyword">const</span> Type TypeNaN = <a class="code hl_function" href="../../d1/d37/namespacexii_math.html#a794f0339ad168c57748133cd2687fe4d">xiiMath::NaN&lt;Type&gt;</a>();</div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>  m_fSphereRadius    = TypeNaN;</div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#endif</span></div>
@@ -154,7 +154,7 @@ $(function(){initNavTree('d0/d68/_bounding_box_sphere__inl_8h_source.html','../.
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>{</div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>  m_vCenter         = rhs.m_vCenter;</div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>  m_fSphereRadius   = rhs.m_fSphereRadius;</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>  m_vBoxHalfExtends = rhs.m_vBoxHalfExtends;</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>  m_vBoxHalfExtents = rhs.m_vBoxHalfExtents;</div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>}</div>
 <div class="foldopen" id="foldopen00021" data-start="{" data-end="}">
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="../../d3/d90/classxii_bounding_box_sphere_template.html#af1529814cab810d87388785d74a453a9">   21</a></span> </div>
@@ -163,7 +163,7 @@ $(function(){initNavTree('d0/d68/_bounding_box_sphere__inl_8h_source.html','../.
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>{</div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>  m_vCenter         = rhs.m_vCenter;</div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>  m_fSphereRadius   = rhs.m_fSphereRadius;</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>  m_vBoxHalfExtends = rhs.m_vBoxHalfExtends;</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>  m_vBoxHalfExtents = rhs.m_vBoxHalfExtents;</div>
 <div class="foldopen" id="foldopen00028" data-start="{" data-end="}">
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="../../d3/d90/classxii_bounding_box_sphere_template.html#ac919f8a66d9c74ef80e39daea81f2990">   28</a></span>}</div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
@@ -173,8 +173,8 @@ $(function(){initNavTree('d0/d68/_bounding_box_sphere__inl_8h_source.html','../.
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>  m_vCenter(box.GetCenter())</div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>{</div>
 <div class="foldopen" id="foldopen00034" data-start="{" data-end="}">
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="../../d3/d90/classxii_bounding_box_sphere_template.html#aec9622719ec44dc340cc3610896d8ceb">   34</a></span>  m_vBoxHalfExtends = box.<a class="code hl_function" href="../../d2/dd6/classxii_bounding_box_template.html#a77842d774498da2802db313542dabb86">GetHalfExtents</a>();</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>  m_fSphereRadius   = m_vBoxHalfExtends.GetLength();</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="../../d3/d90/classxii_bounding_box_sphere_template.html#aec9622719ec44dc340cc3610896d8ceb">   34</a></span>  m_vBoxHalfExtents = box.<a class="code hl_function" href="../../d2/dd6/classxii_bounding_box_template.html#a77842d774498da2802db313542dabb86">GetHalfExtents</a>();</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>  m_fSphereRadius   = m_vBoxHalfExtents.GetLength();</div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>}</div>
 <div class="foldopen" id="foldopen00037" data-start="{" data-end="}">
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="../../d3/d90/classxii_bounding_box_sphere_template.html#a2d751e48dca031fd7dc55e076d34dc64">   37</a></span> </div>
@@ -184,7 +184,7 @@ $(function(){initNavTree('d0/d68/_bounding_box_sphere__inl_8h_source.html','../.
 <div class="foldopen" id="foldopen00040" data-start="{" data-end="}">
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="../../d3/d90/classxii_bounding_box_sphere_template.html#a203def67d84cff17d347f3a02df60efe">   40</a></span>  m_vCenter(sphere.m_vCenter), m_fSphereRadius(sphere.m_fRadius)</div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>{</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>  m_vBoxHalfExtends.Set(m_fSphereRadius);</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>  m_vBoxHalfExtents.Set(m_fSphereRadius);</div>
 <div class="foldopen" id="foldopen00043" data-start="{" data-end="}">
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="../../d3/d90/classxii_bounding_box_sphere_template.html#ab3f5738a1b7de44c3a6c734718f8a948">   43</a></span>}</div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
@@ -196,7 +196,7 @@ $(function(){initNavTree('d0/d68/_bounding_box_sphere__inl_8h_source.html','../.
 <div class="foldopen" id="foldopen00049" data-start="{" data-end="}">
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="../../d3/d90/classxii_bounding_box_sphere_template.html#accf690d8a8002ff396c78878a98affb3">   49</a></span>  res.m_vCenter.SetZero();</div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>  res.m_fSphereRadius = 0;</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>  res.m_vBoxHalfExtends.SetZero();</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>  res.m_vBoxHalfExtents.SetZero();</div>
 <div class="foldopen" id="foldopen00052" data-start="{" data-end="}">
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="../../d3/d90/classxii_bounding_box_sphere_template.html#acee3f92555b255676bf7b3030283da26">   52</a></span>  <span class="keywordflow">return</span> res;</div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>}</div>
@@ -208,7 +208,7 @@ $(function(){initNavTree('d0/d68/_bounding_box_sphere__inl_8h_source.html','../.
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>  <a class="code hl_class" href="../../d3/d90/classxii_bounding_box_sphere_template.html">xiiBoundingBoxSphereTemplate&lt;Type&gt;</a> res;</div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>  res.m_vCenter.SetZero();</div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>  res.m_fSphereRadius = -xiiMath::SmallEpsilon&lt;Type&gt;(); <span class="comment">// has to be very small for ExpandToInclude to work</span></div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>  res.m_vBoxHalfExtends.Set(-<a class="code hl_function" href="../../d1/d37/namespacexii_math.html#a6bbce1588f70c91d6cad87e82a0238c1">xiiMath::MaxValue&lt;Type&gt;</a>());</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>  res.m_vBoxHalfExtents.Set(-<a class="code hl_function" href="../../d1/d37/namespacexii_math.html#a6bbce1588f70c91d6cad87e82a0238c1">xiiMath::MaxValue&lt;Type&gt;</a>());</div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>  <span class="keywordflow">return</span> res;</div>
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="../../d3/d90/classxii_bounding_box_sphere_template.html#af54f8f9aa8aa8fd3af973df4d52a772d">   63</a></span>}</div>
 </div>
@@ -221,7 +221,7 @@ $(function(){initNavTree('d0/d68/_bounding_box_sphere__inl_8h_source.html','../.
 <div class="foldopen" id="foldopen00069" data-start="{" data-end="}">
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno"><a class="line" href="../../d3/d90/classxii_bounding_box_sphere_template.html#a75d3ee52dfa05e5841cdbdc825de3698">   69</a></span>  res.m_vCenter         = vCenter;</div>
 <div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>  res.m_fSphereRadius   = fSphereRadius;</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>  res.m_vBoxHalfExtends = vBoxHalfExtents;</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>  res.m_vBoxHalfExtents = vBoxHalfExtents;</div>
 <div class="foldopen" id="foldopen00072" data-start="{" data-end="}">
 <div class="line"><a id="l00072" name="l00072"></a><span class="lineno"><a class="line" href="../../d3/d90/classxii_bounding_box_sphere_template.html#a81af603a74fe04497b062b51d011b272">   72</a></span>  <span class="keywordflow">return</span> res;</div>
 <div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>}</div>
@@ -236,7 +236,7 @@ $(function(){initNavTree('d0/d68/_bounding_box_sphere__inl_8h_source.html','../.
 <div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span> </div>
 <div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>  <a class="code hl_class" href="../../d3/d90/classxii_bounding_box_sphere_template.html">xiiBoundingBoxSphereTemplate&lt;Type&gt;</a> res;</div>
 <div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>  res.m_vCenter         = box.<a class="code hl_function" href="../../d2/dd6/classxii_bounding_box_template.html#a96aa074a14723968d77ef4e584d077b3">GetCenter</a>();</div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>  res.m_vBoxHalfExtends = box.<a class="code hl_function" href="../../d2/dd6/classxii_bounding_box_template.html#a77842d774498da2802db313542dabb86">GetHalfExtents</a>();</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>  res.m_vBoxHalfExtents = box.<a class="code hl_function" href="../../d2/dd6/classxii_bounding_box_template.html#a77842d774498da2802db313542dabb86">GetHalfExtents</a>();</div>
 <div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span> </div>
 <div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>  <a class="code hl_class" href="../../dd/d79/classxii_bounding_sphere_template.html">xiiBoundingSphereTemplate&lt;Type&gt;</a> sphere = <a class="code hl_function" href="../../dd/d79/classxii_bounding_sphere_template.html#a3b856cc63f13f290748c82a9bc94b43b">xiiBoundingSphereTemplate&lt;Type&gt;::MakeFromCenterAndRadius</a>(res.m_vCenter, 0.0f);</div>
 <div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>  sphere.<a class="code hl_function" href="../../dd/d79/classxii_bounding_sphere_template.html#a80193ef1d62c8c60e85f0040e7bc8fd3">ExpandToInclude</a>(pPoints, uiNumPoints, uiStride);</div>
@@ -251,8 +251,8 @@ $(function(){initNavTree('d0/d68/_bounding_box_sphere__inl_8h_source.html','../.
 <div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>{</div>
 <div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>  <a class="code hl_class" href="../../d3/d90/classxii_bounding_box_sphere_template.html">xiiBoundingBoxSphereTemplate&lt;Type&gt;</a> res;</div>
 <div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>  res.m_vCenter         = box.<a class="code hl_function" href="../../d2/dd6/classxii_bounding_box_template.html#a96aa074a14723968d77ef4e584d077b3">GetCenter</a>();</div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>  res.m_vBoxHalfExtends = box.<a class="code hl_function" href="../../d2/dd6/classxii_bounding_box_template.html#a77842d774498da2802db313542dabb86">GetHalfExtents</a>();</div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>  res.m_fSphereRadius   = res.m_vBoxHalfExtends.GetLength();</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>  res.m_vBoxHalfExtents = box.<a class="code hl_function" href="../../d2/dd6/classxii_bounding_box_template.html#a77842d774498da2802db313542dabb86">GetHalfExtents</a>();</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>  res.m_fSphereRadius   = res.m_vBoxHalfExtents.GetLength();</div>
 <div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>  <span class="keywordflow">return</span> res;</div>
 <div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>}</div>
 </div>
@@ -264,7 +264,7 @@ $(function(){initNavTree('d0/d68/_bounding_box_sphere__inl_8h_source.html','../.
 <div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>  <a class="code hl_class" href="../../d3/d90/classxii_bounding_box_sphere_template.html">xiiBoundingBoxSphereTemplate&lt;Type&gt;</a> res;</div>
 <div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>  res.m_vCenter       = sphere.m_vCenter;</div>
 <div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>  res.m_fSphereRadius = sphere.m_fRadius;</div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>  res.m_vBoxHalfExtends.Set(res.m_fSphereRadius);</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>  res.m_vBoxHalfExtents.Set(res.m_fSphereRadius);</div>
 <div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>  <span class="keywordflow">return</span> res;</div>
 <div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>}</div>
 </div>
@@ -275,8 +275,8 @@ $(function(){initNavTree('d0/d68/_bounding_box_sphere__inl_8h_source.html','../.
 <div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>{</div>
 <div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>  <a class="code hl_class" href="../../d3/d90/classxii_bounding_box_sphere_template.html">xiiBoundingBoxSphereTemplate&lt;Type&gt;</a> res;</div>
 <div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>  res.m_vCenter         = box.<a class="code hl_function" href="../../d2/dd6/classxii_bounding_box_template.html#a96aa074a14723968d77ef4e584d077b3">GetCenter</a>();</div>
-<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>  res.m_vBoxHalfExtends = box.<a class="code hl_function" href="../../d2/dd6/classxii_bounding_box_template.html#a77842d774498da2802db313542dabb86">GetHalfExtents</a>();</div>
-<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>  res.m_fSphereRadius   = <a class="code hl_function" href="../../d1/d37/namespacexii_math.html#a2c660f80f0df5bb91a751d12a93cb9cb">xiiMath::Min</a>(res.m_vBoxHalfExtends.GetLength(), (sphere.m_vCenter - res.m_vCenter).GetLength() + sphere.m_fRadius);</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>  res.m_vBoxHalfExtents = box.<a class="code hl_function" href="../../d2/dd6/classxii_bounding_box_template.html#a77842d774498da2802db313542dabb86">GetHalfExtents</a>();</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>  res.m_fSphereRadius   = <a class="code hl_function" href="../../d1/d37/namespacexii_math.html#a2c660f80f0df5bb91a751d12a93cb9cb">xiiMath::Min</a>(res.m_vBoxHalfExtents.GetLength(), (sphere.m_vCenter - res.m_vCenter).GetLength() + sphere.m_fRadius);</div>
 <div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>  <span class="keywordflow">return</span> res;</div>
 <div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>}</div>
 </div>
@@ -285,7 +285,7 @@ $(function(){initNavTree('d0/d68/_bounding_box_sphere__inl_8h_source.html','../.
 <div class="foldopen" id="foldopen00122" data-start="{" data-end="}">
 <div class="line"><a id="l00122" name="l00122"></a><span class="lineno"><a class="line" href="../../d3/d90/classxii_bounding_box_sphere_template.html#af54f8f9aa8aa8fd3af973df4d52a772d">  122</a></span>XII_FORCE_INLINE <span class="keywordtype">bool</span> <a class="code hl_function" href="../../d3/d90/classxii_bounding_box_sphere_template.html#af54f8f9aa8aa8fd3af973df4d52a772d">xiiBoundingBoxSphereTemplate&lt;Type&gt;::IsValid</a>()<span class="keyword"> const</span></div>
 <div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span><span class="keyword"></span>{</div>
-<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>  <span class="keywordflow">return</span> (m_vCenter.IsValid() &amp;&amp; m_fSphereRadius &gt;= 0.0f &amp;&amp; m_vBoxHalfExtends.IsValid() &amp;&amp; (m_vBoxHalfExtends.x &gt;= 0) &amp;&amp; (m_vBoxHalfExtends.y &gt;= 0) &amp;&amp; (m_vBoxHalfExtends.z &gt;= 0));</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>  <span class="keywordflow">return</span> (m_vCenter.IsValid() &amp;&amp; m_fSphereRadius &gt;= 0.0f &amp;&amp; m_vBoxHalfExtents.IsValid() &amp;&amp; (m_vBoxHalfExtents.x &gt;= 0) &amp;&amp; (m_vBoxHalfExtents.y &gt;= 0) &amp;&amp; (m_vBoxHalfExtents.z &gt;= 0));</div>
 <div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>}</div>
 </div>
 <div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span> </div>
@@ -293,7 +293,7 @@ $(function(){initNavTree('d0/d68/_bounding_box_sphere__inl_8h_source.html','../.
 <div class="foldopen" id="foldopen00128" data-start="{" data-end="}">
 <div class="line"><a id="l00128" name="l00128"></a><span class="lineno"><a class="line" href="../../d3/d90/classxii_bounding_box_sphere_template.html#afbd9b611dbe99ce46bc7872a107d8c4d">  128</a></span>XII_FORCE_INLINE <span class="keywordtype">bool</span> <a class="code hl_function" href="../../d3/d90/classxii_bounding_box_sphere_template.html#afbd9b611dbe99ce46bc7872a107d8c4d">xiiBoundingBoxSphereTemplate&lt;Type&gt;::IsNaN</a>()<span class="keyword"> const</span></div>
 <div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span><span class="keyword"></span>{</div>
-<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>  <span class="keywordflow">return</span> (m_vCenter.IsNaN() || xiiMath::IsNaN(m_fSphereRadius) || m_vBoxHalfExtends.IsNaN());</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>  <span class="keywordflow">return</span> (m_vCenter.IsNaN() || xiiMath::IsNaN(m_fSphereRadius) || m_vBoxHalfExtents.IsNaN());</div>
 <div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>}</div>
 </div>
 <div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span> </div>
@@ -301,7 +301,7 @@ $(function(){initNavTree('d0/d68/_bounding_box_sphere__inl_8h_source.html','../.
 <div class="foldopen" id="foldopen00134" data-start="{" data-end="}">
 <div class="line"><a id="l00134" name="l00134"></a><span class="lineno"><a class="line" href="../../d3/d90/classxii_bounding_box_sphere_template.html#a75d3ee52dfa05e5841cdbdc825de3698">  134</a></span>XII_FORCE_INLINE <span class="keyword">const</span> <a class="code hl_class" href="../../d2/dd6/classxii_bounding_box_template.html">xiiBoundingBoxTemplate&lt;Type&gt;</a> <a class="code hl_function" href="../../d3/d90/classxii_bounding_box_sphere_template.html#a75d3ee52dfa05e5841cdbdc825de3698">xiiBoundingBoxSphereTemplate&lt;Type&gt;::GetBox</a>()<span class="keyword"> const</span></div>
 <div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span><span class="keyword"></span>{</div>
-<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>  <span class="keywordflow">return</span> <a class="code hl_function" href="../../d2/dd6/classxii_bounding_box_template.html#a601600ddb23a373306154e130c075d56">xiiBoundingBoxTemplate&lt;Type&gt;::MakeFromMinMax</a>(m_vCenter - m_vBoxHalfExtends, m_vCenter + m_vBoxHalfExtends);</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>  <span class="keywordflow">return</span> <a class="code hl_function" href="../../d2/dd6/classxii_bounding_box_template.html#a601600ddb23a373306154e130c075d56">xiiBoundingBoxTemplate&lt;Type&gt;::MakeFromMinMax</a>(m_vCenter - m_vBoxHalfExtents, m_vCenter + m_vBoxHalfExtents);</div>
 <div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>}</div>
 </div>
 <div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span> </div>
@@ -318,8 +318,8 @@ $(function(){initNavTree('d0/d68/_bounding_box_sphere__inl_8h_source.html','../.
 <div class="line"><a id="l00146" name="l00146"></a><span class="lineno"><a class="line" href="../../d3/d90/classxii_bounding_box_sphere_template.html#a73056e1a4a8fcdb35056b50dd7a3c83b">  146</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="../../d3/d90/classxii_bounding_box_sphere_template.html#a73056e1a4a8fcdb35056b50dd7a3c83b">xiiBoundingBoxSphereTemplate&lt;Type&gt;::ExpandToInclude</a>(<span class="keyword">const</span> <a class="code hl_class" href="../../d3/d90/classxii_bounding_box_sphere_template.html">xiiBoundingBoxSphereTemplate</a>&amp; rhs)</div>
 <div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>{</div>
 <div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>  <a class="code hl_class" href="../../d2/dd6/classxii_bounding_box_template.html">xiiBoundingBoxTemplate&lt;Type&gt;</a> box;</div>
-<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>  box.m_vMin = m_vCenter - m_vBoxHalfExtends;</div>
-<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>  box.m_vMax = m_vCenter + m_vBoxHalfExtends;</div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>  box.m_vMin = m_vCenter - m_vBoxHalfExtents;</div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>  box.m_vMax = m_vCenter + m_vBoxHalfExtents;</div>
 <div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>  box.<a class="code hl_function" href="../../d2/dd6/classxii_bounding_box_template.html#ad814b0f7cc43991ceb6aa41c328dfb11">ExpandToInclude</a>(rhs.<a class="code hl_function" href="../../d3/d90/classxii_bounding_box_sphere_template.html#a75d3ee52dfa05e5841cdbdc825de3698">GetBox</a>());</div>
 <div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span> </div>
 <div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>  <a class="code hl_class" href="../../d3/d90/classxii_bounding_box_sphere_template.html">xiiBoundingBoxSphereTemplate&lt;Type&gt;</a> result = <a class="code hl_function" href="../../d3/d90/classxii_bounding_box_sphere_template.html#a8890d92120c50e23cbc9b87fd3fd854b">xiiBoundingBoxSphereTemplate&lt;Type&gt;::MakeFromBox</a>(box);</div>
@@ -329,7 +329,7 @@ $(function(){initNavTree('d0/d68/_bounding_box_sphere__inl_8h_source.html','../.
 <div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span> </div>
 <div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>  m_vCenter         = result.m_vCenter;</div>
 <div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>  m_fSphereRadius   = <a class="code hl_function" href="../../d1/d37/namespacexii_math.html#a2c660f80f0df5bb91a751d12a93cb9cb">xiiMath::Min</a>(result.m_fSphereRadius, <a class="code hl_function" href="../../d1/d37/namespacexii_math.html#a4d6f8bf4858245e40a706a3aabd0a59e">xiiMath::Max</a>(fSphereRadiusA, fSphereRadiusB));</div>
-<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>  m_vBoxHalfExtends = result.m_vBoxHalfExtends;</div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>  m_vBoxHalfExtents = result.m_vBoxHalfExtents;</div>
 <div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>}</div>
 </div>
 <div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span> </div>
@@ -347,7 +347,7 @@ $(function(){initNavTree('d0/d68/_bounding_box_sphere__inl_8h_source.html','../.
 <div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>    mAbsRotation.<a class="code hl_variable" href="../../d3/d74/classxii_mat3_template.html#ae0ae61baee9629f7bc8d90b134437070">m_fElementsCM</a>[i] = <a class="code hl_function" href="../../d1/d37/namespacexii_math.html#a821b432e7a9c8ac292eb255ee11e9e10">xiiMath::Abs</a>(mAbsRotation.<a class="code hl_variable" href="../../d3/d74/classxii_mat3_template.html#ae0ae61baee9629f7bc8d90b134437070">m_fElementsCM</a>[i]);</div>
 <div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>  }</div>
 <div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span> </div>
-<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>  m_vBoxHalfExtends = mAbsRotation.<a class="code hl_function" href="../../d3/d74/classxii_mat3_template.html#af8517a144ac1cf4d9df9232804817f11">TransformDirection</a>(m_vBoxHalfExtends).CompMin(<a class="code hl_class" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3</a>(m_fSphereRadius));</div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>  m_vBoxHalfExtents = mAbsRotation.<a class="code hl_function" href="../../d3/d74/classxii_mat3_template.html#af8517a144ac1cf4d9df9232804817f11">TransformDirection</a>(m_vBoxHalfExtents).CompMin(<a class="code hl_class" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3</a>(m_fSphereRadius));</div>
 <div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>}</div>
 </div>
 </div>
@@ -355,7 +355,7 @@ $(function(){initNavTree('d0/d68/_bounding_box_sphere__inl_8h_source.html','../.
 <div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Type&gt;</div>
 <div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>XII_FORCE_INLINE <span class="keywordtype">bool</span> operator==(<span class="keyword">const</span> <a class="code hl_class" href="../../d3/d90/classxii_bounding_box_sphere_template.html">xiiBoundingBoxSphereTemplate&lt;Type&gt;</a>&amp; lhs, <span class="keyword">const</span> <a class="code hl_class" href="../../d3/d90/classxii_bounding_box_sphere_template.html">xiiBoundingBoxSphereTemplate&lt;Type&gt;</a>&amp; rhs)</div>
 <div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>{</div>
-<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>  <span class="keywordflow">return</span> lhs.m_vCenter == rhs.m_vCenter &amp;&amp; lhs.m_vBoxHalfExtends == rhs.m_vBoxHalfExtends &amp;&amp; lhs.m_fSphereRadius == rhs.m_fSphereRadius;</div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>  <span class="keywordflow">return</span> lhs.m_vCenter == rhs.m_vCenter &amp;&amp; lhs.m_vBoxHalfExtents == rhs.m_vBoxHalfExtents &amp;&amp; lhs.m_fSphereRadius == rhs.m_fSphereRadius;</div>
 <div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>}</div>
 </div>
 </div>
@@ -416,7 +416,7 @@ $(function(){initNavTree('d0/d68/_bounding_box_sphere__inl_8h_source.html','../.
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.html">home</a></li><li class="navelem"><a class="el" href="../../dir_1036706e55c22cab35bc1c58ee689f1d.html">runner</a></li><li class="navelem"><a class="el" href="../../dir_629f8151d55d307162ff2d619fb1783d.html">work</a></li><li class="navelem"><a class="el" href="../../dir_1ddc44fe1263a8c7935fa6130b7d9499.html">XII</a></li><li class="navelem"><a class="el" href="../../dir_2c1b6808f12952f4c36e05ba7068379a.html">XII</a></li><li class="navelem"><a class="el" href="../../dir_b5a1c4ecfca018ad24b729e213296d41.html">Source</a></li><li class="navelem"><a class="el" href="../../dir_e321052006a51284e67389ab20037e7c.html">Engine</a></li><li class="navelem"><a class="el" href="../../dir_be0c42c58b36f42c54ec54024ed4f6af.html">Foundation</a></li><li class="navelem"><a class="el" href="../../dir_c1b0860bb61ff24e678d996d14e4bcdd.html">Math</a></li><li class="navelem"><a class="el" href="../../dir_fb7e93d80251333452775ccd3b7c417a.html">Implementation</a></li><li class="navelem"><b>BoundingBoxSphere_inl.h</b></li>
-    <li class="footer">Generated on Wed Jan 29 2025 16:02:08 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Tue Feb 18 2025 06:36:58 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

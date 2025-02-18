@@ -12,5 +12,6 @@ var searchData=
   ['deserializehelper_9',['DeserializeHelper',['../dc/dcf/structxii_internal_1_1_deserialize_helper.html',1,'xiiInternal']]],
   ['destroyedobject_10',['DestroyedObject',['../dd/d88/structxii_g_a_l_device_1_1_destroyed_object.html',1,'xiiGALDevice']]],
   ['direntry_11',['DirEntry',['../d7/d17/structxii_file_system_mirror_1_1_dir_entry.html',1,'xiiFileSystemMirror']]],
-  ['disjointquerywrapper_12',['DisjointQueryWrapper',['../d5/db4/structxii_disjoint_query_pool_1_1_disjoint_query_wrapper.html',1,'xiiDisjointQueryPool']]]
+  ['disjointquerywrapper_12',['DisjointQueryWrapper',['../d5/db4/structxii_disjoint_query_pool_1_1_disjoint_query_wrapper.html',1,'xiiDisjointQueryPool']]],
+  ['dynamicbufferpage_13',['DynamicBufferPage',['../d9/d27/structxii_g_a_l_dynamic_buffer_pool_vulkan_1_1_dynamic_buffer_page.html',1,'xiiGALDynamicBufferPoolVulkan']]]
 ];

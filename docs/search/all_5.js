@@ -221,5 +221,6 @@ var searchData=
   ['dumpmemoryleaks_218',['DumpMemoryLeaks',['../de/df3/classxii_memory_tracker.html#afda1307dd3f1d3b2fb01e68379c619d0',1,'xiiMemoryTracker']]],
   ['duplicatespecial_219',['DuplicateSpecial',['../da/d0a/classxii_scene_document.html#a2b79e5db7fe68797834eb708698dd5fa',1,'xiiSceneDocument']]],
   ['duration_220',['Duration',['../d7/dd9/structxii_g_a_l_query_type.html#a40e558bd24a5e0d3f8025299ed1ca87da366c58b6763c7dd263ebaee8ae1cc8cb',1,'xiiGALQueryType']]],
-  ['dynamic_221',['Dynamic',['../dd/d15/structxii_object_flags.html#ab84c26953c65707e422df64a7fb08c30ab66f5a5daad9939a7584210343e3d2e6',1,'xiiObjectFlags::Dynamic'],['../d9/d9e/structxii_g_a_l_resource_usage.html#aa3f7d7b5b5d7b94f2e8f6b55eb5fa7dca4901d9e1b26175f0dfe510ad6963835d',1,'xiiGALResourceUsage::Dynamic']]]
+  ['dynamic_221',['Dynamic',['../dd/d15/structxii_object_flags.html#ab84c26953c65707e422df64a7fb08c30ab66f5a5daad9939a7584210343e3d2e6',1,'xiiObjectFlags::Dynamic'],['../d9/d9e/structxii_g_a_l_resource_usage.html#aa3f7d7b5b5d7b94f2e8f6b55eb5fa7dca4901d9e1b26175f0dfe510ad6963835d',1,'xiiGALResourceUsage::Dynamic']]],
+  ['dynamicbufferpage_222',['DynamicBufferPage',['../d9/d27/structxii_g_a_l_dynamic_buffer_pool_vulkan_1_1_dynamic_buffer_page.html',1,'xiiGALDynamicBufferPoolVulkan']]]
 ];
