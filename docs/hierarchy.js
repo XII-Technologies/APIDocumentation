@@ -1722,6 +1722,11 @@ var hierarchy =
         ] ]
       ] ]
     ] ],
+    [ "xiiArrayBase< vk::DeviceSize, xiiDynamicArrayBase< vk::DeviceSize > >", "da/d4c/classxii_array_base.html", [
+      [ "xiiDynamicArrayBase< vk::DeviceSize >", "d2/dea/classxii_dynamic_array_base.html", [
+        [ "xiiDynamicArray< vk::DeviceSize >", "dc/da4/classxii_dynamic_array.html", null ]
+      ] ]
+    ] ],
     [ "xiiArrayBase< vk::ExtensionProperties, xiiDynamicArrayBase< vk::ExtensionProperties > >", "da/d4c/classxii_array_base.html", [
       [ "xiiDynamicArrayBase< vk::ExtensionProperties >", "d2/dea/classxii_dynamic_array_base.html", [
         [ "xiiDynamicArray< vk::ExtensionProperties >", "dc/da4/classxii_dynamic_array.html", null ]
@@ -3438,11 +3443,11 @@ var hierarchy =
     ] ],
     [ "xiiArrayBase< xiiUInt64, xiiDynamicArrayBase< xiiUInt64 > >", "da/d4c/classxii_array_base.html", [
       [ "xiiDynamicArrayBase< xiiUInt64 >", "d2/dea/classxii_dynamic_array_base.html", [
-        [ "xiiDynamicArray< xiiUInt64 >", "dc/da4/classxii_dynamic_array.html", null ],
         [ "xiiDynamicArray< xiiUInt64, xiiDefaultAllocatorWrapper >", "dc/da4/classxii_dynamic_array.html", [
           [ "xiiHybridArray< xiiUInt64, 16 >", "dc/da9/classxii_hybrid_array.html", null ],
           [ "xiiHybridArray< xiiUInt64, 64 >", "dc/da9/classxii_hybrid_array.html", null ]
-        ] ]
+        ] ],
+        [ "xiiDynamicArray< xiiUInt64 >", "dc/da4/classxii_dynamic_array.html", null ]
       ] ]
     ] ],
     [ "xiiArrayBase< xiiUInt8 *, xiiDynamicArrayBase< xiiUInt8 * > >", "da/d4c/classxii_array_base.html", [
