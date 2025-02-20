@@ -320,7 +320,6 @@ var hierarchy =
     [ "xiiAnimationClipResourceDescriptor::KeyframeQuat", "d4/d3b/structxii_animation_clip_resource_descriptor_1_1_keyframe_quat.html", null ],
     [ "xiiAnimationClipResourceDescriptor::KeyframeVec3", "db/d6a/structxii_animation_clip_resource_descriptor_1_1_keyframe_vec3.html", null ],
     [ "xiiTextureAtlasCreationDesc::Layer", "da/de8/structxii_texture_atlas_creation_desc_1_1_layer.html", null ],
-    [ "xiiDebugRenderer::Line", "d3/df9/structxii_debug_renderer_1_1_line.html", null ],
     [ "xiiGeometry::Line", "d8/d15/structxii_geometry_1_1_line.html", null ],
     [ "xiiPathComponent::LinearizedElement", "d9/de2/structxii_path_component_1_1_linearized_element.html", null ],
     [ "xiiPathComponent::LinearSampler", "d0/d2b/structxii_path_component_1_1_linear_sampler.html", null ],
@@ -747,7 +746,6 @@ var hierarchy =
     [ "xiiTexturePacker::Texture", "de/dce/structxii_texture_packer_1_1_texture.html", null ],
     [ "xiiMaterialResourceDescriptor::Texture2DBinding", "d0/d58/structxii_material_resource_descriptor_1_1_texture2_d_binding.html", null ],
     [ "xiiMaterialResourceDescriptor::TextureCubeBinding", "d7/df3/structxii_material_resource_descriptor_1_1_texture_cube_binding.html", null ],
-    [ "xiiDebugRenderer::TexturedTriangle", "d0/da3/structxii_debug_renderer_1_1_textured_triangle.html", null ],
     [ "xiiGPUResourcePool::TextureHandleWithAge", "d1/dc4/structxii_g_p_u_resource_pool_1_1_texture_handle_with_age.html", null ],
     [ "xiiProfilingSystem::ThreadInfo", "d2/d10/structxii_profiling_system_1_1_thread_info.html", null ],
     [ "xiiAssetDocument::ThumbnailInfo", "db/d84/classxii_asset_document_1_1_thumbnail_info.html", null ],
@@ -756,7 +754,6 @@ var hierarchy =
     [ "xiiTokenParseUtils::TokenMatch", "d7/dab/structxii_token_parse_utils_1_1_token_match.html", null ],
     [ "xiiMinWindows::ToNativeImpl< T >", "d7/d24/structxii_min_windows_1_1_to_native_impl.html", null ],
     [ "TransformationChanges", "dc/d47/struct_transformation_changes.html", null ],
-    [ "xiiDebugRenderer::Triangle", "da/d3b/structxii_debug_renderer_1_1_triangle.html", null ],
     [ "std::tuple_element< 0, xiiHashTableBaseConstIterator< K, V, H > >", "d5/d43/structstd_1_1tuple__element_3_010_00_01xii_hash_table_base_const_iterator_3_01_k_00_01_v_00_01_h_01_4_01_4.html", null ],
     [ "std::tuple_element< 0, xiiHashTableBaseIterator< K, V, H > >", "df/d32/structstd_1_1tuple__element_3_010_00_01xii_hash_table_base_iterator_3_01_k_00_01_v_00_01_h_01_4_01_4.html", null ],
     [ "std::tuple_element< 0, xiiMapBaseConstIteratorBase< KeyType, ValueType, Comparer, REVERSE > >", "dc/d96/structstd_1_1tuple__element_3_010_00_01xii_map_base_const_iterator_base_3_01_key_type_00_01_valu773ea5396ab72430ea34cf8e1fd633dd.html", null ],
@@ -2192,9 +2189,9 @@ var hierarchy =
         ] ]
       ] ]
     ] ],
-    [ "xiiArrayBase< xiiDebugRenderer::Line, xiiDynamicArrayBase< xiiDebugRenderer::Line > >", "da/d4c/classxii_array_base.html", [
-      [ "xiiDynamicArrayBase< xiiDebugRenderer::Line >", "d2/dea/classxii_dynamic_array_base.html", [
-        [ "xiiDynamicArray< xiiDebugRenderer::Line >", "dc/da4/classxii_dynamic_array.html", null ]
+    [ "xiiArrayBase< xiiDebugRendererLine, xiiDynamicArrayBase< xiiDebugRendererLine > >", "da/d4c/classxii_array_base.html", [
+      [ "xiiDynamicArrayBase< xiiDebugRendererLine >", "d2/dea/classxii_dynamic_array_base.html", [
+        [ "xiiDynamicArray< xiiDebugRendererLine >", "dc/da4/classxii_dynamic_array.html", null ]
       ] ]
     ] ],
     [ "xiiArrayBase< xiiDelegate, xiiDynamicArrayBase< xiiDelegate > >", "da/d4c/classxii_array_base.html", [
@@ -4073,6 +4070,9 @@ var hierarchy =
     [ "xiiDateTime", "de/dc3/classxii_date_time.html", null ],
     [ "xiiDebugRenderer", "d7/dac/classxii_debug_renderer.html", null ],
     [ "xiiDebugRendererContext", "df/dfc/classxii_debug_renderer_context.html", null ],
+    [ "xiiDebugRendererLine", "d1/dc2/structxii_debug_renderer_line.html", null ],
+    [ "xiiDebugRendererTexturedTriangle", "d1/de3/structxii_debug_renderer_textured_triangle.html", null ],
+    [ "xiiDebugRendererTriangle", "db/d86/structxii_debug_renderer_triangle.html", null ],
     [ "xiiDebugTextHAlign", "d9/d2a/structxii_debug_text_h_align.html", null ],
     [ "xiiDebugTextPlacement", "d5/d8f/structxii_debug_text_placement.html", null ],
     [ "xiiDebugTextVAlign", "d0/da6/structxii_debug_text_v_align.html", null ],
