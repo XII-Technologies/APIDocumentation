@@ -238,22 +238,22 @@ $(function(){initNavTree('da/d47/_data_dir_path__inl_8h_source.html','../../'); 
 <div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>}</div>
 </div>
 <div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span><span class="keyword">inline</span> <a class="code hl_class" href="../../d0/d18/classxii_stream_writer.html">xiiStreamWriter</a>&amp; xiiDataDirPath::Write(<a class="code hl_class" href="../../d0/d18/classxii_stream_writer.html">xiiStreamWriter</a>&amp; ref_stream)<span class="keyword"> const</span></div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span><span class="keyword">inline</span> <a class="code hl_class" href="../../d0/d18/classxii_stream_writer.html">xiiStreamWriter</a>&amp; xiiDataDirPath::Write(<a class="code hl_class" href="../../d0/d18/classxii_stream_writer.html">xiiStreamWriter</a>&amp; inout_stream)<span class="keyword"> const</span></div>
 <div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span><span class="keyword"></span>{</div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>  ref_stream &lt;&lt; m_sAbsolutePath;</div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>  ref_stream &lt;&lt; m_uiDataDirParent;</div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>  ref_stream &lt;&lt; m_uiDataDirLength;</div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>  ref_stream &lt;&lt; m_uiDataDirIndex;</div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>  <span class="keywordflow">return</span> ref_stream;</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>  inout_stream &lt;&lt; m_sAbsolutePath;</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>  inout_stream &lt;&lt; m_uiDataDirParent;</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>  inout_stream &lt;&lt; m_uiDataDirLength;</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>  inout_stream &lt;&lt; m_uiDataDirIndex;</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>  <span class="keywordflow">return</span> inout_stream;</div>
 <div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>}</div>
 <div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span> </div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span><span class="keyword">inline</span> <a class="code hl_class" href="../../d4/d5e/classxii_stream_reader.html">xiiStreamReader</a>&amp; xiiDataDirPath::Read(<a class="code hl_class" href="../../d4/d5e/classxii_stream_reader.html">xiiStreamReader</a>&amp; ref_stream)</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span><span class="keyword">inline</span> <a class="code hl_class" href="../../d4/d5e/classxii_stream_reader.html">xiiStreamReader</a>&amp; xiiDataDirPath::Read(<a class="code hl_class" href="../../d4/d5e/classxii_stream_reader.html">xiiStreamReader</a>&amp; inout_stream)</div>
 <div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>{</div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>  ref_stream &gt;&gt; m_sAbsolutePath;</div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>  ref_stream &gt;&gt; m_uiDataDirParent;</div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>  ref_stream &gt;&gt; m_uiDataDirLength;</div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>  ref_stream &gt;&gt; m_uiDataDirIndex;</div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>  <span class="keywordflow">return</span> ref_stream;</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>  inout_stream &gt;&gt; m_sAbsolutePath;</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>  inout_stream &gt;&gt; m_uiDataDirParent;</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>  inout_stream &gt;&gt; m_uiDataDirLength;</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>  inout_stream &gt;&gt; m_uiDataDirIndex;</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>  <span class="keywordflow">return</span> inout_stream;</div>
 <div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>}</div>
 <div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span> </div>
 <div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span><span class="keywordtype">bool</span> xiiCompareDataDirPath::Less(<a class="code hl_class" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> lhs, <a class="code hl_class" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> rhs)</div>
@@ -272,14 +272,14 @@ $(function(){initNavTree('da/d47/_data_dir_path__inl_8h_source.html','../../'); 
 <div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>  <span class="keywordflow">return</span> lhs.<a class="code hl_function" href="../../d4/d85/classxii_string_view.html#a3eed1e0fcd7aa1a0af2ecab95c7870df">IsEqual</a>(rhs);</div>
 <div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>}</div>
 <div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span> </div>
-<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span><span class="keyword">inline</span> <a class="code hl_class" href="../../d0/d18/classxii_stream_writer.html">xiiStreamWriter</a>&amp; operator&lt;&lt;(<a class="code hl_class" href="../../d0/d18/classxii_stream_writer.html">xiiStreamWriter</a>&amp; ref_stream, <span class="keyword">const</span> <a class="code hl_class" href="../../d4/d8d/classxii_data_dir_path.html">xiiDataDirPath</a>&amp; value)</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span><span class="keyword">inline</span> <a class="code hl_class" href="../../d0/d18/classxii_stream_writer.html">xiiStreamWriter</a>&amp; operator&lt;&lt;(<a class="code hl_class" href="../../d0/d18/classxii_stream_writer.html">xiiStreamWriter</a>&amp; inout_stream, <span class="keyword">const</span> <a class="code hl_class" href="../../d4/d8d/classxii_data_dir_path.html">xiiDataDirPath</a>&amp; value)</div>
 <div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>{</div>
-<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>  <span class="keywordflow">return</span> value.Write(ref_stream);</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>  <span class="keywordflow">return</span> value.Write(inout_stream);</div>
 <div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>}</div>
 <div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span> </div>
-<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span><span class="keyword">inline</span> <a class="code hl_class" href="../../d4/d5e/classxii_stream_reader.html">xiiStreamReader</a>&amp; operator&gt;&gt;(<a class="code hl_class" href="../../d4/d5e/classxii_stream_reader.html">xiiStreamReader</a>&amp; ref_stream, <a class="code hl_class" href="../../d4/d8d/classxii_data_dir_path.html">xiiDataDirPath</a>&amp; out_value)</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span><span class="keyword">inline</span> <a class="code hl_class" href="../../d4/d5e/classxii_stream_reader.html">xiiStreamReader</a>&amp; operator&gt;&gt;(<a class="code hl_class" href="../../d4/d5e/classxii_stream_reader.html">xiiStreamReader</a>&amp; inout_stream, <a class="code hl_class" href="../../d4/d8d/classxii_data_dir_path.html">xiiDataDirPath</a>&amp; out_value)</div>
 <div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>{</div>
-<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>  <span class="keywordflow">return</span> out_value.Read(ref_stream);</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>  <span class="keywordflow">return</span> out_value.Read(inout_stream);</div>
 <div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>}</div>
 <div class="ttc" id="aclassxii_array_ptr_html"><div class="ttname"><a href="../../d0/d60/classxii_array_ptr.html">xiiArrayPtr</a></div><div class="ttdoc">This class encapsulates an array and it's size. It is recommended to use this class instead of plain ...</div><div class="ttdef"><b>Definition</b> ArrayPtr.h:37</div></div>
 <div class="ttc" id="aclassxii_data_dir_path_html"><div class="ttname"><a href="../../d4/d8d/classxii_data_dir_path.html">xiiDataDirPath</a></div><div class="ttdoc">A reference to a file or folder inside a data directory.</div><div class="ttdef"><b>Definition</b> DataDirPath.h:18</div></div>
@@ -312,7 +312,7 @@ $(function(){initNavTree('da/d47/_data_dir_path__inl_8h_source.html','../../'); 
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.html">home</a></li><li class="navelem"><a class="el" href="../../dir_1036706e55c22cab35bc1c58ee689f1d.html">runner</a></li><li class="navelem"><a class="el" href="../../dir_629f8151d55d307162ff2d619fb1783d.html">work</a></li><li class="navelem"><a class="el" href="../../dir_1ddc44fe1263a8c7935fa6130b7d9499.html">XII</a></li><li class="navelem"><a class="el" href="../../dir_2c1b6808f12952f4c36e05ba7068379a.html">XII</a></li><li class="navelem"><a class="el" href="../../dir_b5a1c4ecfca018ad24b729e213296d41.html">Source</a></li><li class="navelem"><a class="el" href="../../dir_64f53f8da7bf780a58c32bb848e7873b.html">Tools</a></li><li class="navelem"><a class="el" href="../../dir_4b5bc41f7c4cbfc8ca80bdea56300f1d.html">Libs</a></li><li class="navelem"><a class="el" href="../../dir_ba58a103e79106e89914cc52b64849d5.html">ToolsFoundation</a></li><li class="navelem"><a class="el" href="../../dir_477def286c2d2152f3157edad2157379.html">FileSystem</a></li><li class="navelem"><a class="el" href="../../dir_6cba2ae8d5e75b8834c93114c9e48a82.html">Implementation</a></li><li class="navelem"><b>DataDirPath_inl.h</b></li>
-    <li class="footer">Generated on Thu Feb 20 2025 00:19:25 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Thu Mar 13 2025 23:56:43 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

@@ -199,6 +199,9 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>GetCommonVariantSubTy
 <tr class="memitem:abbd50cb58c4fc99bb63ef9e16d85e150" id="r_abbd50cb58c4fc99bb63ef9e16d85e150"><td class="memItemLeft" align="right" valign="top"><a id="abbd50cb58c4fc99bb63ef9e16d85e150" name="abbd50cb58c4fc99bb63ef9e16d85e150"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>PrepareToDie</b> ()</td></tr>
 <tr class="separator:abbd50cb58c4fc99bb63ef9e16d85e150"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24be51243756df6f8cf1ef6c45c0ffc3" id="r_a24be51243756df6f8cf1ef6c45c0ffc3"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a24be51243756df6f8cf1ef6c45c0ffc3">SetReadOnly</a> (bool bReadOnly=true)</td></tr>
+<tr class="memdesc:a24be51243756df6f8cf1ef6c45c0ffc3"><td class="mdescLeft">&#160;</td><td class="mdescRight">By default disables the widget, but can be overridden to make a widget more interactable (for example to be able to copy text from it).  <br /></td></tr>
+<tr class="separator:a24be51243756df6f8cf1ef6c45c0ffc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -339,6 +342,35 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_bIsDefault</b></td>
 
 </div>
 </div>
+<a id="a24be51243756df6f8cf1ef6c45c0ffc3" name="a24be51243756df6f8cf1ef6c45c0ffc3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24be51243756df6f8cf1ef6c45c0ffc3">&#9670;&#160;</a></span>SetReadOnly()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void xiiQtPropertyWidget::SetReadOnly </td>
+          <td>(</td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>bReadOnly</em></span><span class="paramdefsep"> = </span><span class="paramdefval">true</span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>By default disables the widget, but can be overridden to make a widget more interactable (for example to be able to copy text from it). </p>
+
+<p>Reimplemented in <a class="el" href="../../d8/d2a/classxii_qt_file_property_widget.html#a1e19f9cffb74f977f9d6307fe7860734">xiiQtFilePropertyWidget</a>, <a class="el" href="../../d6/de7/classxii_qt_property_editor_int_spinbox_widget.html#a5575e996aad9f6003a9f752b146041f5">xiiQtPropertyEditorIntSpinboxWidget</a>, <a class="el" href="../../d5/d11/classxii_qt_property_editor_line_edit_widget.html#a58b026cf9b31e26245a9bd02c9e89a22">xiiQtPropertyEditorLineEditWidget</a>, and <a class="el" href="../../d6/d09/classxii_qt_property_editor_u_int_spinbox_widget.html#ac355b6f310dd13b9245d8b097f78c944">xiiQtPropertyEditorUIntSpinboxWidget</a>.</p>
+
+</div>
+</div>
 <a id="a8cc5c68c374f1c198e0e69700494943c" name="a8cc5c68c374f1c198e0e69700494943c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8cc5c68c374f1c198e0e69700494943c">&#9670;&#160;</a></span>SetSelection()</h2>
 
@@ -365,7 +397,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_bIsDefault</b></td>
 <p>This is called whenever the selection in the editor changes and thus the widget may need to display a different value. </p>
 <p>If the array holds more than one element, the user selected multiple objects. In this case, the code should check whether the values differ across the selected objects and if so, the widget should display "multiple values". </p>
 
-<p>Reimplemented in <a class="el" href="../../d7/d85/classxii_qt_embedded_class_property_widget.html#a892a3e3a0b8fde73dd6d5a82735fe001">xiiQtEmbeddedClassPropertyWidget</a>, <a class="el" href="../../d7/d0c/classxii_qt_exposed_bone_widget.html#af89469476b680463495006cf0b953340">xiiQtExposedBoneWidget</a>, <a class="el" href="../../d9/d92/classxii_qt_exposed_parameters_property_widget.html#a5ea2c061785202eab06abf4b120378d1">xiiQtExposedParametersPropertyWidget</a>, <a class="el" href="../../dd/d44/classxii_qt_property_container_widget.html#a839b45937db97da2b8e4511311f55891">xiiQtPropertyContainerWidget</a>, <a class="el" href="../../dc/d27/classxii_qt_property_editor_curve1_d_widget.html#a34a90ba07941b5337b591b525cf2d7d5">xiiQtPropertyEditorCurve1DWidget</a>, <a class="el" href="../../d8/dc8/classxii_qt_property_editor_tag_set_widget.html#a9276d9246318bb950484caacf96c08db">xiiQtPropertyEditorTagSetWidget</a>, <a class="el" href="../../d4/dc5/classxii_qt_property_pointer_widget.html#a51b18da3254322abe9f062688a84ccc5">xiiQtPropertyPointerWidget</a>, <a class="el" href="../../d3/d12/classxii_qt_property_type_widget.html#a244928de8bfc62c0330d6b1278990a96">xiiQtPropertyTypeWidget</a>, <a class="el" href="../../d5/db2/classxii_qt_standard_property_widget.html#a56f2beba33131fb7ca12450a797de63b">xiiQtStandardPropertyWidget</a>, and <a class="el" href="../../d5/dd4/classxii_qt_variance_type_widget.html#a657c8b5b5fed0db5cdd92263c82b5ab3">xiiQtVarianceTypeWidget</a>.</p>
+<p>Reimplemented in <a class="el" href="../../da/df0/classxii_qt_code_editor_preferences_widget.html#a6e4a864f762339ca9d5517ed6976b0cc">xiiQtCodeEditorPreferencesWidget</a>, <a class="el" href="../../dd/dbb/classxii_qt_compiler_preferences_widget.html#af75a002659d90fb1addf46e0780481a8">xiiQtCompilerPreferencesWidget</a>, <a class="el" href="../../d7/d85/classxii_qt_embedded_class_property_widget.html#a892a3e3a0b8fde73dd6d5a82735fe001">xiiQtEmbeddedClassPropertyWidget</a>, <a class="el" href="../../d7/d0c/classxii_qt_exposed_bone_widget.html#af89469476b680463495006cf0b953340">xiiQtExposedBoneWidget</a>, <a class="el" href="../../d9/d92/classxii_qt_exposed_parameters_property_widget.html#a5ea2c061785202eab06abf4b120378d1">xiiQtExposedParametersPropertyWidget</a>, <a class="el" href="../../dd/d44/classxii_qt_property_container_widget.html#a839b45937db97da2b8e4511311f55891">xiiQtPropertyContainerWidget</a>, <a class="el" href="../../dc/d27/classxii_qt_property_editor_curve1_d_widget.html#a34a90ba07941b5337b591b525cf2d7d5">xiiQtPropertyEditorCurve1DWidget</a>, <a class="el" href="../../d8/dc8/classxii_qt_property_editor_tag_set_widget.html#a9276d9246318bb950484caacf96c08db">xiiQtPropertyEditorTagSetWidget</a>, <a class="el" href="../../d4/dc5/classxii_qt_property_pointer_widget.html#a51b18da3254322abe9f062688a84ccc5">xiiQtPropertyPointerWidget</a>, <a class="el" href="../../d3/d12/classxii_qt_property_type_widget.html#a244928de8bfc62c0330d6b1278990a96">xiiQtPropertyTypeWidget</a>, <a class="el" href="../../d5/db2/classxii_qt_standard_property_widget.html#a56f2beba33131fb7ca12450a797de63b">xiiQtStandardPropertyWidget</a>, and <a class="el" href="../../d5/dd4/classxii_qt_variance_type_widget.html#a657c8b5b5fed0db5cdd92263c82b5ab3">xiiQtVarianceTypeWidget</a>.</p>
 
 </div>
 </div>
@@ -379,7 +411,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_bIsDefault</b></td>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d9/d80/classxii_qt_property_widget.html">xiiQtPropertyWidget</a></li>
-    <li class="footer">Generated on Thu Feb 20 2025 00:19:29 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Thu Mar 13 2025 23:56:46 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

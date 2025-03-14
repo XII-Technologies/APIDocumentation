@@ -2,7 +2,9 @@ var classxii_selection_manager =
 [
     [ "Storage", "d7/da6/classxii_selection_manager_1_1_storage.html", null ],
     [ "GetCurrentObject", "d6/df0/classxii_selection_manager.html#a66003ed22ea0d91aca52bd68482105c8", null ],
+    [ "GetRuntimeOverrideSelection", "d6/df0/classxii_selection_manager.html#a10f3f575e16f44ac40112889100ec55b", null ],
     [ "GetSelection", "d6/df0/classxii_selection_manager.html#a69391005034f5e236802c883030025f1", null ],
-    [ "GetTopLevelSelection", "d6/df0/classxii_selection_manager.html#ab437f18e02bc683709f40bc72f8a6f19", null ],
-    [ "GetTopLevelSelection", "d6/df0/classxii_selection_manager.html#a8bd7e2a8633842d507c9fd35bf6b7122", null ]
+    [ "GetTopLevelSelection", "d6/df0/classxii_selection_manager.html#acf6fffe0c7d4804c743f8dc2a7ccafb5", null ],
+    [ "GetTopLevelSelectionOfType", "d6/df0/classxii_selection_manager.html#a99f428c50fdab07a56ce4cde2df7cc90", null ],
+    [ "SetRuntimeOverrideSelection", "d6/df0/classxii_selection_manager.html#a58c09f8dce558a06c52b5626a70b518a", null ]
 ];

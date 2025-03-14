@@ -138,36 +138,35 @@ $(function(){initNavTree('de/d07/_click_gizmo_8h_source.html','../../'); initRes
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &lt;EditorEngineProcessFramework/Gizmos/GizmoHandle.h&gt;</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;EditorFramework/Gizmos/GizmoBase.h&gt;</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;ToolsFoundation/ToolsFoundationDLL.h&gt;</span></div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
-<div class="foldopen" id="foldopen00010" data-start="{" data-end="};">
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="../../d4/d00/classxii_click_gizmo.html">   10</a></span><span class="keyword">class </span>XII_EDITORFRAMEWORK_DLL <a class="code hl_class" href="../../d4/d00/classxii_click_gizmo.html">xiiClickGizmo</a> : <span class="keyword">public</span> <a class="code hl_class" href="../../d7/dec/classxii_gizmo.html">xiiGizmo</a></div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>{</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>  XII_ADD_DYNAMIC_REFLECTION(<a class="code hl_class" href="../../d4/d00/classxii_click_gizmo.html">xiiClickGizmo</a>, <a class="code hl_class" href="../../d7/dec/classxii_gizmo.html">xiiGizmo</a>);</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>  <a class="code hl_class" href="../../d4/d00/classxii_click_gizmo.html">xiiClickGizmo</a>();</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>  <span class="keywordtype">void</span> SetColor(<span class="keyword">const</span> <a class="code hl_class" href="../../d3/de6/classxii_color.html">xiiColor</a>&amp; color);</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="keyword">protected</span>:</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>  <span class="keyword">virtual</span> xiiEditorInput DoMousePressEvent(QMouseEvent* e) <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>  <span class="keyword">virtual</span> xiiEditorInput DoMouseReleaseEvent(QMouseEvent* e) <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>  <span class="keyword">virtual</span> <span class="keywordtype">void</span> DoFocusLost(<span class="keywordtype">bool</span> bCancel) <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>  <span class="keyword">virtual</span> <span class="keywordtype">void</span> OnSetOwner(<a class="code hl_class" href="../../d0/d97/classxii_qt_engine_document_window.html">xiiQtEngineDocumentWindow</a>* pOwnerWindow, <a class="code hl_class" href="../../d3/d93/classxii_qt_engine_view_widget.html">xiiQtEngineViewWidget</a>* pOwnerView) <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>  <span class="keyword">virtual</span> <span class="keywordtype">void</span> OnVisibleChanged(<span class="keywordtype">bool</span> bVisible) <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>  <span class="keyword">virtual</span> <span class="keywordtype">void</span> OnTransformationChanged(<span class="keyword">const</span> <a class="code hl_class" href="../../d5/d13/classxii_transform_template.html">xiiTransform</a>&amp; transform) <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>  <a class="code hl_class" href="../../da/d10/classxii_engine_gizmo_handle.html">xiiEngineGizmoHandle</a> m_hShape;</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>};</div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
+<div class="foldopen" id="foldopen00009" data-start="{" data-end="};">
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="../../d4/d00/classxii_click_gizmo.html">    9</a></span><span class="keyword">class </span>XII_EDITORFRAMEWORK_DLL <a class="code hl_class" href="../../d4/d00/classxii_click_gizmo.html">xiiClickGizmo</a> : <span class="keyword">public</span> <a class="code hl_class" href="../../d7/dec/classxii_gizmo.html">xiiGizmo</a></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>{</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>  XII_ADD_DYNAMIC_REFLECTION(<a class="code hl_class" href="../../d4/d00/classxii_click_gizmo.html">xiiClickGizmo</a>, <a class="code hl_class" href="../../d7/dec/classxii_gizmo.html">xiiGizmo</a>);</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>  <a class="code hl_class" href="../../d4/d00/classxii_click_gizmo.html">xiiClickGizmo</a>();</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>  <span class="keywordtype">void</span> SetColor(<span class="keyword">const</span> <a class="code hl_class" href="../../d3/de6/classxii_color.html">xiiColor</a>&amp; color);</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="keyword">protected</span>:</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>  <span class="keyword">virtual</span> xiiEditorInput DoMousePressEvent(QMouseEvent* e) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>  <span class="keyword">virtual</span> xiiEditorInput DoMouseReleaseEvent(QMouseEvent* e) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>  <span class="keyword">virtual</span> <span class="keywordtype">void</span> DoFocusLost(<span class="keywordtype">bool</span> bCancel) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>  <span class="keyword">virtual</span> <span class="keywordtype">void</span> OnSetOwner(<a class="code hl_class" href="../../d0/d97/classxii_qt_engine_document_window.html">xiiQtEngineDocumentWindow</a>* pOwnerWindow, <a class="code hl_class" href="../../d3/d93/classxii_qt_engine_view_widget.html">xiiQtEngineViewWidget</a>* pOwnerView) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>  <span class="keyword">virtual</span> <span class="keywordtype">void</span> OnVisibleChanged(<span class="keywordtype">bool</span> bVisible) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>  <span class="keyword">virtual</span> <span class="keywordtype">void</span> OnTransformationChanged(<span class="keyword">const</span> <a class="code hl_class" href="../../d5/d13/classxii_transform_template.html">xiiTransform</a>&amp; transform) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>  <a class="code hl_class" href="../../da/d10/classxii_engine_gizmo_handle.html">xiiEngineGizmoHandle</a> m_hShape;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>};</div>
 </div>
-<div class="ttc" id="aclassxii_click_gizmo_html"><div class="ttname"><a href="../../d4/d00/classxii_click_gizmo.html">xiiClickGizmo</a></div><div class="ttdoc">The click gizmo displays a simple shape that can be clicked.</div><div class="ttdef"><b>Definition</b> ClickGizmo.h:11</div></div>
+<div class="ttc" id="aclassxii_click_gizmo_html"><div class="ttname"><a href="../../d4/d00/classxii_click_gizmo.html">xiiClickGizmo</a></div><div class="ttdoc">The click gizmo displays a simple shape that can be clicked.</div><div class="ttdef"><b>Definition</b> ClickGizmo.h:10</div></div>
 <div class="ttc" id="aclassxii_color_html"><div class="ttname"><a href="../../d3/de6/classxii_color.html">xiiColor</a></div><div class="ttdoc">xiiColor represents an RGBA color in linear color space. Values are stored as float,...</div><div class="ttdef"><b>Definition</b> Color.h:44</div></div>
 <div class="ttc" id="aclassxii_engine_gizmo_handle_html"><div class="ttname"><a href="../../da/d10/classxii_engine_gizmo_handle.html">xiiEngineGizmoHandle</a></div><div class="ttdef"><b>Definition</b> GizmoHandle.h:90</div></div>
-<div class="ttc" id="aclassxii_gizmo_html"><div class="ttname"><a href="../../d7/dec/classxii_gizmo.html">xiiGizmo</a></div><div class="ttdef"><b>Definition</b> GizmoBase.h:25</div></div>
-<div class="ttc" id="aclassxii_qt_engine_document_window_html"><div class="ttname"><a href="../../d0/d97/classxii_qt_engine_document_window.html">xiiQtEngineDocumentWindow</a></div><div class="ttdoc">Base class for all document windows that need a connection to the engine process, and might want to r...</div><div class="ttdef"><b>Definition</b> EngineDocumentWindow.moc.h:38</div></div>
+<div class="ttc" id="aclassxii_gizmo_html"><div class="ttname"><a href="../../d7/dec/classxii_gizmo.html">xiiGizmo</a></div><div class="ttdef"><b>Definition</b> GizmoBase.h:24</div></div>
+<div class="ttc" id="aclassxii_qt_engine_document_window_html"><div class="ttname"><a href="../../d0/d97/classxii_qt_engine_document_window.html">xiiQtEngineDocumentWindow</a></div><div class="ttdoc">Base class for all document windows that need a connection to the engine process, and might want to r...</div><div class="ttdef"><b>Definition</b> EngineDocumentWindow.moc.h:37</div></div>
 <div class="ttc" id="aclassxii_qt_engine_view_widget_html"><div class="ttname"><a href="../../d3/d93/classxii_qt_engine_view_widget.html">xiiQtEngineViewWidget</a></div><div class="ttdoc">Base class for views that show engine output.</div><div class="ttdef"><b>Definition</b> EngineViewWidget.moc.h:36</div></div>
 <div class="ttc" id="aclassxii_transform_template_html"><div class="ttname"><a href="../../d5/d13/classxii_transform_template.html">xiiTransformTemplate&lt; float &gt;</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
@@ -176,7 +175,7 @@ $(function(){initNavTree('de/d07/_click_gizmo_8h_source.html','../../'); initRes
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.html">home</a></li><li class="navelem"><a class="el" href="../../dir_1036706e55c22cab35bc1c58ee689f1d.html">runner</a></li><li class="navelem"><a class="el" href="../../dir_629f8151d55d307162ff2d619fb1783d.html">work</a></li><li class="navelem"><a class="el" href="../../dir_1ddc44fe1263a8c7935fa6130b7d9499.html">XII</a></li><li class="navelem"><a class="el" href="../../dir_2c1b6808f12952f4c36e05ba7068379a.html">XII</a></li><li class="navelem"><a class="el" href="../../dir_b5a1c4ecfca018ad24b729e213296d41.html">Source</a></li><li class="navelem"><a class="el" href="../../dir_6b4bf1df3614588897d8c8b2dbbde39b.html">Editor</a></li><li class="navelem"><a class="el" href="../../dir_85cc0ddb74daab9d3d596e3c0704d4e4.html">EditorFramework</a></li><li class="navelem"><a class="el" href="../../dir_232608b1c0980be2499e7dc7afaa914c.html">Gizmos</a></li><li class="navelem"><b>ClickGizmo.h</b></li>
-    <li class="footer">Generated on Thu Feb 20 2025 00:19:17 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Thu Mar 13 2025 23:56:34 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

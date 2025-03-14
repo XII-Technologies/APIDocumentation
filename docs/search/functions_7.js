@@ -33,6 +33,7 @@ var searchData=
   ['hastexturecoordinates_30',['HasTextureCoordinates',['../d9/d9e/classxii_o_b_j_loader.html#aa7a3ae8676b0cd0b57453bf5969f3303',1,'xiiOBJLoader']]],
   ['hasvertexnormals_31',['HasVertexNormals',['../d9/d9e/classxii_o_b_j_loader.html#a909b4750869602226225e6f42ca86258',1,'xiiOBJLoader']]],
   ['hexcharactertointvalue_32',['HexCharacterToIntValue',['../d9/d80/namespacexii_conversion_utils.html#a17994f85ffb1e3a99ff891c02e62c9b3',1,'xiiConversionUtils']]],
-  ['highvalue_33',['HighValue',['../d1/d37/namespacexii_math.html#aaef30261db876ade1c53d907aaa68828',1,'xiiMath']]],
-  ['hypot_34',['Hypot',['../d1/d37/namespacexii_math.html#a6e63ed2ebc617c166a6c427dce01a096',1,'xiiMath::Hypot(double x, double y)'],['../d1/d37/namespacexii_math.html#ab0c9b1ed4fce57cc1957e2a66ccf14b7',1,'xiiMath::Hypot(float x, float y)']]]
+  ['hideaction_33',['HideAction',['../db/db2/classxii_action_map.html#a90f2bc27546468e6628111d721e71e57',1,'xiiActionMap']]],
+  ['highvalue_34',['HighValue',['../d1/d37/namespacexii_math.html#aaef30261db876ade1c53d907aaa68828',1,'xiiMath']]],
+  ['hypot_35',['Hypot',['../d1/d37/namespacexii_math.html#a6e63ed2ebc617c166a6c427dce01a096',1,'xiiMath::Hypot(double x, double y)'],['../d1/d37/namespacexii_math.html#ab0c9b1ed4fce57cc1957e2a66ccf14b7',1,'xiiMath::Hypot(float x, float y)']]]
 ];

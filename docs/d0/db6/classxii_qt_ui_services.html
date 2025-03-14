@@ -155,10 +155,10 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ac88753c94f2132eabb83268df97a9b57" id="r_ac88753c94f2132eabb83268df97a9b57"><td class="memItemLeft" align="right" valign="top"><a id="ac88753c94f2132eabb83268df97a9b57" name="ac88753c94f2132eabb83268df97a9b57"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>ShowColorDialog</b> (const <a class="el" href="../../d3/de6/classxii_color.html">xiiColor</a> &amp;color, bool bAlpha, bool bHDR, QWidget *pParent, const char *szSlotCurColChanged, const char *szSlotAccept, const char *szSlotReject)</td></tr>
-<tr class="memdesc:ac88753c94f2132eabb83268df97a9b57"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shows a non-modal color dialog. The Qt slots are called when the selected color is changed or when the dialog is closed and the result accepted or rejected. <br /></td></tr>
-<tr class="separator:ac88753c94f2132eabb83268df97a9b57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0bdef4d29c2480927edf41bc0da79ead" id="r_a0bdef4d29c2480927edf41bc0da79ead"><td class="memItemLeft" align="right" valign="top"><a id="a0bdef4d29c2480927edf41bc0da79ead" name="a0bdef4d29c2480927edf41bc0da79ead"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ShowColorDialog</b> (const <a class="el" href="../../d3/de6/classxii_color.html">xiiColor</a> &amp;color, bool bAlpha, bool bHDR, QWidget *pParent, <a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sSlotCurColChanged, <a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sSlotAccept, <a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sSlotReject)</td></tr>
+<tr class="memdesc:a0bdef4d29c2480927edf41bc0da79ead"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shows a non-modal color dialog. The Qt slots are called when the selected color is changed or when the dialog is closed and the result accepted or rejected. <br /></td></tr>
+<tr class="separator:a0bdef4d29c2480927edf41bc0da79ead"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab4458edc33ebabc0d6d9d11e978b6d31" id="r_ab4458edc33ebabc0d6d9d11e978b6d31"><td class="memItemLeft" align="right" valign="top"><a id="ab4458edc33ebabc0d6d9d11e978b6d31" name="ab4458edc33ebabc0d6d9d11e978b6d31"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>LoadState</b> ()</td></tr>
 <tr class="memdesc:ab4458edc33ebabc0d6d9d11e978b6d31"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads some global state used by <a class="el" href="../../d0/db6/classxii_qt_ui_services.html">xiiQtUiServices</a> from the registry. E.g. the last position of the color dialog. <br /></td></tr>
@@ -183,7 +183,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>SetHeadless</b
 <tr class="separator:ab2fb8960b13efd8569e2fd76804dd4c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0a094a8546ac79027c34cdc0802069a1" id="r_a0a094a8546ac79027c34cdc0802069a1"><td class="memItemLeft" align="right" valign="top"><a id="a0a094a8546ac79027c34cdc0802069a1" name="a0a094a8546ac79027c34cdc0802069a1"></a>
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>MessageBoxStatus</b> (const <a class="el" href="../../d0/d54/structxii_status.html">xiiStatus</a> &amp;s, <a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sFailureMsg, <a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sSuccessMsg={}, bool bOnlySuccessMsgIfDetails=true)</td></tr>
-<tr class="memdesc:a0a094a8546ac79027c34cdc0802069a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Might show a message box depending on the given status. If the status is 'failure' the szFailureMsg is shown, including the message in <a class="el" href="../../d0/d54/structxii_status.html" title="An xiiResult with an additional message for the reason of failure.">xiiStatus</a>. If the status is success a message box with text szSuccessMsg is shown, but only if the status message is not empty or if bOnlySuccessMsgIfDetails is false. <br /></td></tr>
+<tr class="memdesc:a0a094a8546ac79027c34cdc0802069a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Might show a message box depending on the given status. If the status is 'failure' the sFailureMsg is shown, including the message in <a class="el" href="../../d0/d54/structxii_status.html" title="An xiiResult with an additional message for the reason of failure.">xiiStatus</a>. If the status is success a message box with text sSuccessMsg is shown, but only if the status message is not empty or if bOnlySuccessMsgIfDetails is false. <br /></td></tr>
 <tr class="separator:a0a094a8546ac79027c34cdc0802069a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a74a6c763bc50949428b85b40ea72a007" id="r_a74a6c763bc50949428b85b40ea72a007"><td class="memItemLeft" align="right" valign="top"><a id="a74a6c763bc50949428b85b40ea72a007" name="a74a6c763bc50949428b85b40ea72a007"></a>
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>MessageBoxInformation</b> (const <a class="el" href="../../da/d2e/classxii_format_string.html">xiiFormatString</a> &amp;msg)</td></tr>
@@ -212,18 +212,18 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>ShowGlobalStat
 static bool&#160;</td><td class="memItemRight" valign="bottom"><b>OpenFileInDefaultProgram</b> (<a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sPath)</td></tr>
 <tr class="memdesc:a91d22ee91d5e761352c2f410f80ba819"><td class="mdescLeft">&#160;</td><td class="mdescRight">Opens the given file in the program that is registered in the OS to handle that file type. <br /></td></tr>
 <tr class="separator:a91d22ee91d5e761352c2f410f80ba819"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7f3575d27865d4f42f3f5124966cd04c" id="r_a7f3575d27865d4f42f3f5124966cd04c"><td class="memItemLeft" align="right" valign="top"><a id="a7f3575d27865d4f42f3f5124966cd04c" name="a7f3575d27865d4f42f3f5124966cd04c"></a>
+<tr class="memitem:a7b5dd1a3aca9ab731ccf022cd0dceb68" id="r_a7b5dd1a3aca9ab731ccf022cd0dceb68"><td class="memItemLeft" align="right" valign="top"><a id="a7b5dd1a3aca9ab731ccf022cd0dceb68" name="a7b5dd1a3aca9ab731ccf022cd0dceb68"></a>
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>OpenInExplorer</b> (<a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sPath, bool bIsFile)</td></tr>
-<tr class="memdesc:a7f3575d27865d4f42f3f5124966cd04c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Opens the given file or folder in the Explorer. <br /></td></tr>
-<tr class="separator:a7f3575d27865d4f42f3f5124966cd04c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a72d79eb20be093749d9caa9100900ed9" id="r_a72d79eb20be093749d9caa9100900ed9"><td class="memItemLeft" align="right" valign="top"><a id="a72d79eb20be093749d9caa9100900ed9" name="a72d79eb20be093749d9caa9100900ed9"></a>
+<tr class="memdesc:a7b5dd1a3aca9ab731ccf022cd0dceb68"><td class="mdescLeft">&#160;</td><td class="mdescRight">Opens the given file or folder in the Explorer. <br /></td></tr>
+<tr class="separator:a7b5dd1a3aca9ab731ccf022cd0dceb68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adfc9959a67997997dd290824776b403a" id="r_adfc9959a67997997dd290824776b403a"><td class="memItemLeft" align="right" valign="top"><a id="adfc9959a67997997dd290824776b403a" name="adfc9959a67997997dd290824776b403a"></a>
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>OpenWith</b> (<a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sPath)</td></tr>
-<tr class="memdesc:a72d79eb20be093749d9caa9100900ed9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shows the "Open With" dialog. <br /></td></tr>
-<tr class="separator:a72d79eb20be093749d9caa9100900ed9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a095704916ad3dd6db5641da24467beef" id="r_a095704916ad3dd6db5641da24467beef"><td class="memItemLeft" align="right" valign="top"><a id="a095704916ad3dd6db5641da24467beef" name="a095704916ad3dd6db5641da24467beef"></a>
+<tr class="memdesc:adfc9959a67997997dd290824776b403a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shows the "Open With" dialog. <br /></td></tr>
+<tr class="separator:adfc9959a67997997dd290824776b403a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d6b19e17c93602b5ac7948eefcd6bde" id="r_a9d6b19e17c93602b5ac7948eefcd6bde"><td class="memItemLeft" align="right" valign="top"><a id="a9d6b19e17c93602b5ac7948eefcd6bde" name="a9d6b19e17c93602b5ac7948eefcd6bde"></a>
 static <a class="el" href="../../d0/d54/structxii_status.html">xiiStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><b>OpenInVsCode</b> (const <a class="el" href="../../db/daa/class_q_list.html">QStringList</a> &amp;arguments)</td></tr>
-<tr class="memdesc:a095704916ad3dd6db5641da24467beef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attempts to launch Visual Studio Code with the given command line. <br /></td></tr>
-<tr class="separator:a095704916ad3dd6db5641da24467beef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memdesc:a9d6b19e17c93602b5ac7948eefcd6bde"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attempts to launch Visual Studio Code with the given command line. <br /></td></tr>
+<tr class="separator:a9d6b19e17c93602b5ac7948eefcd6bde"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6079a7b2a4b99db5deeff6cf8881bf06" id="r_a6079a7b2a4b99db5deeff6cf8881bf06"><td class="memItemLeft" align="right" valign="top">static const QIcon &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6079a7b2a4b99db5deeff6cf8881bf06">GetCachedIconResource</a> (<a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sIdentifier, <a class="el" href="../../d3/de6/classxii_color.html">xiiColor</a> svgTintColor=<a class="el" href="../../d3/de6/classxii_color.html#ab1e58c9a474533cce826620fd9f95069">xiiColor::MakeZero</a>())</td></tr>
 <tr class="memdesc:a6079a7b2a4b99db5deeff6cf8881bf06"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a cached QIcon that was created from an internal Qt resource (e.g. 'QIcon(":QtNamespace/MyIcon.png")' ). Prevents creating the object over and over.  <br /></td></tr>
 <tr class="separator:a6079a7b2a4b99db5deeff6cf8881bf06"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -329,7 +329,7 @@ static <a class="el" href="../../dc/d22/classxii_event.html">xiiEvent</a>&lt; co
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d0/db6/classxii_qt_ui_services.html">xiiQtUiServices</a></li>
-    <li class="footer">Generated on Thu Feb 20 2025 00:19:29 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Thu Mar 13 2025 23:56:46 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

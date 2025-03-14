@@ -146,16 +146,17 @@ Inheritance diagram for xiiDocumentObjectMetaData:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a47d674363a00dbfd840c357f44979749" id="r_a47d674363a00dbfd840c357f44979749"><td class="memItemLeft" align="right" valign="top"><a id="a47d674363a00dbfd840c357f44979749" name="a47d674363a00dbfd840c357f44979749"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>ModifiedFlags</b> : xiiUInt32 { <b>HiddenFlag</b> = XII_BIT(0)
+<tr class="memitem:a47d674363a00dbfd840c357f44979749" id="r_a47d674363a00dbfd840c357f44979749"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a47d674363a00dbfd840c357f44979749">ModifiedFlags</a> : xiiUInt32 { <b>HiddenFlag</b> = XII_BIT(0)
 , <b>PrefabFlag</b> = XII_BIT(1)
-, <b>AllFlags</b> = 0xFFFFFFFFU
+, <b>ActiveParentFlag</b> = XII_BIT(2)
+, <a class="el" href="#a47d674363a00dbfd840c357f44979749ab16490c0bbcbc099bc8f2caad070f490">AllFlags</a> = 0xFFFFFFFFU
  }</td></tr>
 <tr class="separator:a47d674363a00dbfd840c357f44979749"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a750938810d34998fe4f55b2ddf674e4f" id="r_a750938810d34998fe4f55b2ddf674e4f"><td class="memItemLeft" align="right" valign="top"><a id="a750938810d34998fe4f55b2ddf674e4f" name="a750938810d34998fe4f55b2ddf674e4f"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_bHidden</b></td></tr>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_bHidden</b> = false</td></tr>
 <tr class="separator:a750938810d34998fe4f55b2ddf674e4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0171b11cddc0516e23b9fdbc4ca22f16" id="r_a0171b11cddc0516e23b9fdbc4ca22f16"><td class="memItemLeft" align="right" valign="top"><a id="a0171b11cddc0516e23b9fdbc4ca22f16" name="a0171b11cddc0516e23b9fdbc4ca22f16"></a>
 <a class="el" href="../../dc/d1d/classxii_uuid.html">xiiUuid</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_CreateFromPrefab</b></td></tr>
@@ -190,6 +191,25 @@ template&lt;typename T &gt; </td></tr>
 static const <a class="el" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetStaticRTTI</b> ()</td></tr>
 <tr class="separator:a4bde433b55ebd55edf63c57239799bba inherit pub_static_methods_classxii_no_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Enumeration Documentation</h2>
+<a id="a47d674363a00dbfd840c357f44979749" name="a47d674363a00dbfd840c357f44979749"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a47d674363a00dbfd840c357f44979749">&#9670;&#160;</a></span>ModifiedFlags</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="#a47d674363a00dbfd840c357f44979749">xiiDocumentObjectMetaData::ModifiedFlags</a> : xiiUInt32</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a47d674363a00dbfd840c357f44979749ab16490c0bbcbc099bc8f2caad070f490" name="a47d674363a00dbfd840c357f44979749ab16490c0bbcbc099bc8f2caad070f490"></a>AllFlags&#160;</td><td class="fielddoc"><p>This flag is used to update an entry, even though there is no meta data for it. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>/home/runner/work/XII/XII/Source/Tools/Libs/ToolsFoundation/Document/<a class="el" href="../../d5/d61/_document_8h_source.html">Document.h</a></li>
 </ul>
@@ -199,7 +219,7 @@ static const <a class="el" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d4/d38/classxii_document_object_meta_data.html">xiiDocumentObjectMetaData</a></li>
-    <li class="footer">Generated on Thu Feb 20 2025 00:19:26 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Thu Mar 13 2025 23:56:44 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

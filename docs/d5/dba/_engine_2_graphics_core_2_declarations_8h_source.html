@@ -172,11 +172,34 @@ $(function(){initNavTree('d5/dba/_engine_2_graphics_core_2_declarations_8h_sourc
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>};</div>
 </div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="preprocessor">#define XII_RENDERER_TODO 0</span></div>
+<div class="foldopen" id="foldopen00037" data-start="{" data-end="};">
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="../../d7/d9b/structxii_mesh_import_transform.html">   37</a></span><span class="keyword">struct </span>XII_GRAPHICSCORE_DLL <a class="code hl_struct" href="../../d7/d9b/structxii_mesh_import_transform.html">xiiMeshImportTransform</a></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>{</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>  <span class="keyword">using </span>StorageType = xiiInt8;</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>  <span class="keyword">enum</span> Enum</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>  {</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    Blender_YUp,</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    Blender_ZUp,</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    Custom = 127,</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    Default = Blender_YUp</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>  };</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>  <span class="keyword">static</span> <a class="code hl_enumeration" href="../../d9/dcc/structxii_basis_axis.html#a36c8166a71a3eb1739956b8873b1da2c">xiiBasisAxis::Enum</a> GetRightDir(xiiMeshImportTransform::Enum transform, <a class="code hl_enumeration" href="../../d9/dcc/structxii_basis_axis.html#a36c8166a71a3eb1739956b8873b1da2c">xiiBasisAxis::Enum</a> dir);</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>  <span class="keyword">static</span> <a class="code hl_enumeration" href="../../d9/dcc/structxii_basis_axis.html#a36c8166a71a3eb1739956b8873b1da2c">xiiBasisAxis::Enum</a> GetUpDir(xiiMeshImportTransform::Enum transform, <a class="code hl_enumeration" href="../../d9/dcc/structxii_basis_axis.html#a36c8166a71a3eb1739956b8873b1da2c">xiiBasisAxis::Enum</a> dir);</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>  <span class="keyword">static</span> <span class="keywordtype">bool</span>               GetFlipForward(xiiMeshImportTransform::Enum transform, <span class="keywordtype">bool</span> bFlip);</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>};</div>
+</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>XII_DECLARE_REFLECTABLE_TYPE(XII_GRAPHICSCORE_DLL, <a class="code hl_struct" href="../../d7/d9b/structxii_mesh_import_transform.html">xiiMeshImportTransform</a>);</div>
 <div class="ttc" id="aclassxii_hashed_string_html"><div class="ttname"><a href="../../d6/d0c/classxii_hashed_string.html">xiiHashedString</a></div><div class="ttdoc">This class is optimized to take nearly no memory (sizeof(void*)) and to allow very fast checks whethe...</div><div class="ttdef"><b>Definition</b> HashedString.h:25</div></div>
 <div class="ttc" id="aclassxii_shader_stage_binary_html"><div class="ttname"><a href="../../d1/da4/classxii_shader_stage_binary.html">xiiShaderStageBinary</a></div><div class="ttdef"><b>Definition</b> ShaderStageBinary.h:14</div></div>
 <div class="ttc" id="aclassxii_typed_resource_handle_html"><div class="ttname"><a href="../../d6/d16/classxii_typed_resource_handle.html">xiiTypedResourceHandle&lt; class xiiTexture2DResource &gt;</a></div></div>
+<div class="ttc" id="astructxii_basis_axis_html_a36c8166a71a3eb1739956b8873b1da2c"><div class="ttname"><a href="../../d9/dcc/structxii_basis_axis.html#a36c8166a71a3eb1739956b8873b1da2c">xiiBasisAxis::Enum</a></div><div class="ttdeci">Enum</div><div class="ttdoc">An enum that allows to select on of the six main axis (positive / negative)</div><div class="ttdef"><b>Definition</b> Declarations.h:260</div></div>
 <div class="ttc" id="astructxii_input_layout_info_html"><div class="ttname"><a href="../../d8/d43/structxii_input_layout_info.html">xiiInputLayoutInfo</a></div><div class="ttdef"><b>Definition</b> MeshBufferResource.h:24</div></div>
+<div class="ttc" id="astructxii_mesh_import_transform_html"><div class="ttname"><a href="../../d7/d9b/structxii_mesh_import_transform.html">xiiMeshImportTransform</a></div><div class="ttdef"><b>Definition</b> Declarations.h:38</div></div>
 <div class="ttc" id="astructxii_permutation_var_html"><div class="ttname"><a href="../../d8/d57/structxii_permutation_var.html">xiiPermutationVar</a></div><div class="ttdef"><b>Definition</b> Declarations.h:25</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -184,7 +207,7 @@ $(function(){initNavTree('d5/dba/_engine_2_graphics_core_2_declarations_8h_sourc
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.html">home</a></li><li class="navelem"><a class="el" href="../../dir_1036706e55c22cab35bc1c58ee689f1d.html">runner</a></li><li class="navelem"><a class="el" href="../../dir_629f8151d55d307162ff2d619fb1783d.html">work</a></li><li class="navelem"><a class="el" href="../../dir_1ddc44fe1263a8c7935fa6130b7d9499.html">XII</a></li><li class="navelem"><a class="el" href="../../dir_2c1b6808f12952f4c36e05ba7068379a.html">XII</a></li><li class="navelem"><a class="el" href="../../dir_b5a1c4ecfca018ad24b729e213296d41.html">Source</a></li><li class="navelem"><a class="el" href="../../dir_e321052006a51284e67389ab20037e7c.html">Engine</a></li><li class="navelem"><a class="el" href="../../dir_d1b456933e20132afd1d01c7da962f40.html">GraphicsCore</a></li><li class="navelem"><b>Declarations.h</b></li>
-    <li class="footer">Generated on Thu Feb 20 2025 00:19:25 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Thu Mar 13 2025 23:56:34 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

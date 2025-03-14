@@ -19,11 +19,11 @@ var classxii_document =
     [ "IsMainDocument", "d8/da9/classxii_document.html#ae9027901ed85461428dca30ae365f40d", null ],
     [ "IsSubDocument", "d8/da9/classxii_document.html#aba0fb27e4f95dcc641cafd829a006a76", null ],
     [ "OnInterDocumentMessage", "d8/da9/classxii_document.html#a7500206be67a851acaba869a9c6733f0", null ],
-    [ "RevertPrefabs", "d8/da9/classxii_document.html#a3b43c6bfc3dd3f4626f57229654ac0ac", null ],
+    [ "RevertPrefabs", "d8/da9/classxii_document.html#a2f37c51b32691419ceb0b4b1f7933100", null ],
     [ "SaveDocument", "d8/da9/classxii_document.html#a226ae03c078139a6bf5892f975866877", null ],
     [ "SetAddToResetFilesList", "d8/da9/classxii_document.html#a7437e0285627617d2fcecbdb77a53591", null ],
     [ "ShowDocumentStatus", "d8/da9/classxii_document.html#afdad3bfb3a3584b7e54bfb4b75d54bf5", null ],
-    [ "UnlinkPrefabs", "d8/da9/classxii_document.html#a40801e3ce5f484dd7ffc1e6bb956a12c", null ],
+    [ "UnlinkPrefabs", "d8/da9/classxii_document.html#a5ae91a081d84623e97f6aaeb7371632c", null ],
     [ "UpdatePrefabs", "d8/da9/classxii_document.html#a02b89fed8675bbfbb78916939b096983", null ],
     [ "m_pObjectAccessor", "d8/da9/classxii_document.html#adc9e959be07f12092ffa8491c1e88861", null ]
 ];

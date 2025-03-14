@@ -25,6 +25,8 @@ var searchData=
   ['eventmessagesenderhelper_22',['EventMessageSenderHelper',['../d9/dc2/structxii_internal_1_1_event_message_sender_helper.html',1,'xiiInternal']]],
   ['eventtype_23',['EventType',['../df/d5a/structxii_o_s_file_1_1_event_type.html',1,'xiiOSFile']]],
   ['execresult_24',['ExecResult',['../d0/d83/structxii_visual_script_graph_description_1_1_exec_result.html',1,'xiiVisualScriptGraphDescription']]],
-  ['extensionfeatures_25',['ExtensionFeatures',['../dc/dcd/structxii_g_a_l_device_vulkan_1_1_extension_features.html',1,'xiiGALDeviceVulkan']]],
-  ['extensionproperties_26',['ExtensionProperties',['../d1/d5d/structxii_g_a_l_device_vulkan_1_1_extension_properties.html',1,'xiiGALDeviceVulkan']]]
+  ['expressionhighlighter_25',['ExpressionHighlighter',['../d7/d72/class_expression_highlighter.html',1,'']]],
+  ['expressiontokentype_26',['ExpressionTokenType',['../dc/d2c/struct_expression_token_type.html',1,'']]],
+  ['extensionfeatures_27',['ExtensionFeatures',['../dc/dcd/structxii_g_a_l_device_vulkan_1_1_extension_features.html',1,'xiiGALDeviceVulkan']]],
+  ['extensionproperties_28',['ExtensionProperties',['../d1/d5d/structxii_g_a_l_device_vulkan_1_1_extension_properties.html',1,'xiiGALDeviceVulkan']]]
 ];

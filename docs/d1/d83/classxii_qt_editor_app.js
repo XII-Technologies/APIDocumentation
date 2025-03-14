@@ -16,5 +16,6 @@ var classxii_qt_editor_app =
     [ "ReloadEngineResources", "d1/d83/classxii_qt_editor_app.html#ae5aeb2b5adf9f34017c5ce537140d02e", null ],
     [ "RunFileserve", "d1/d83/classxii_qt_editor_app.html#ab6d8ab34414838fd7d051ec1cc7a931e", null ],
     [ "RunInspector", "d1/d83/classxii_qt_editor_app.html#a4690972d48badcf04a5181b198ec750e", null ],
+    [ "RunTracy", "d1/d83/classxii_qt_editor_app.html#af6e08dd675ec0f7abb4e7353c5967bbe", null ],
     [ "SaveOpenDocumentsList", "d1/d83/classxii_qt_editor_app.html#af9848ba9e979801f5c561e1e32a70cc1", null ]
 ];

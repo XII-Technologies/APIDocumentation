@@ -167,6 +167,9 @@ Public Types</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:ab0c1496f69da6fc60d6d89b0f95dd3f8" id="r_ab0c1496f69da6fc60d6d89b0f95dd3f8"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab0c1496f69da6fc60d6d89b0f95dd3f8">GetNodeCreationTemplates</a> (<a class="el" href="../../dc/da4/classxii_dynamic_array.html">xiiDynamicArray</a>&lt; <a class="el" href="../../d5/dc2/structxii_node_creation_template.html">xiiNodeCreationTemplate</a> &gt; &amp;out_templates) const</td></tr>
+<tr class="memdesc:ab0c1496f69da6fc60d6d89b0f95dd3f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">For node documents this function is called instead of GetCreateableTypes to get a list for the node creation menu.  <br /></td></tr>
+<tr class="separator:ab0c1496f69da6fc60d6d89b0f95dd3f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5f4f454d64a7e0f97b168b732a07eb03" id="r_a5f4f454d64a7e0f97b168b732a07eb03"><td class="memItemLeft" align="right" valign="top"><a id="a5f4f454d64a7e0f97b168b732a07eb03" name="a5f4f454d64a7e0f97b168b732a07eb03"></a>
 virtual const <a class="el" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetConnectionType</b> () const</td></tr>
 <tr class="separator:a5f4f454d64a7e0f97b168b732a07eb03"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -264,9 +267,6 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>DestroyAllObj
 <tr class="memitem:a492017da9f5fcbb81b23b864d57bd9aa inherit pub_methods_classxii_document_object_manager" id="r_a492017da9f5fcbb81b23b864d57bd9aa"><td class="memItemLeft" align="right" valign="top">
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>GetCreateableTypes</b> (<a class="el" href="../../dc/da9/classxii_hybrid_array.html">xiiHybridArray</a>&lt; const <a class="el" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a> *, 32 &gt; &amp;ref_types) const</td></tr>
 <tr class="separator:a492017da9f5fcbb81b23b864d57bd9aa inherit pub_methods_classxii_document_object_manager"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aff045936fb4bb9dc10611aebcb17511f inherit pub_methods_classxii_document_object_manager" id="r_aff045936fb4bb9dc10611aebcb17511f"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d8c/classxii_document_object_manager.html#aff045936fb4bb9dc10611aebcb17511f">GetTypeCategory</a> (const <a class="el" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a> *pRtti) const</td></tr>
-<tr class="memdesc:aff045936fb4bb9dc10611aebcb17511f inherit pub_methods_classxii_document_object_manager"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allows to annotate types with a category (group), such that things like creator menus can use this to present the types in a more user friendly way.  <br /></td></tr>
-<tr class="separator:aff045936fb4bb9dc10611aebcb17511f inherit pub_methods_classxii_document_object_manager"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5d3f0346ebd235b0e4bd275e2c5f298c inherit pub_methods_classxii_document_object_manager" id="r_a5d3f0346ebd235b0e4bd275e2c5f298c"><td class="memItemLeft" align="right" valign="top">
 void&#160;</td><td class="memItemRight" valign="bottom"><b>PatchEmbeddedClassObjects</b> (const <a class="el" href="../../da/dd8/classxii_document_object.html">xiiDocumentObject</a> *pObject) const</td></tr>
 <tr class="separator:a5d3f0346ebd235b0e4bd275e2c5f298c inherit pub_methods_classxii_document_object_manager"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -366,8 +366,11 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>CanReachNode</b> (con
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>WouldConnectionCreateCircle</b> (const <a class="el" href="../../d1/da6/classxii_pin.html">xiiPin</a> &amp;source, const <a class="el" href="../../d1/da6/classxii_pin.html">xiiPin</a> &amp;target) const</td></tr>
 <tr class="memdesc:a7e24190f3218161ef7db8267152a83d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if adding a connection between the two pins would create a circular graph. <br /></td></tr>
 <tr class="separator:a7e24190f3218161ef7db8267152a83d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28cd2090ac5b62de19c2798ec3f7d8cc" id="r_a28cd2090ac5b62de19c2798ec3f7d8cc"><td class="memItemLeft" align="right" valign="top"><a id="a28cd2090ac5b62de19c2798ec3f7d8cc" name="a28cd2090ac5b62de19c2798ec3f7d8cc"></a>
+<a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><b>ResolveConnection</b> (const <a class="el" href="../../dc/d1d/classxii_uuid.html">xiiUuid</a> &amp;sourceObject, const <a class="el" href="../../dc/d1d/classxii_uuid.html">xiiUuid</a> &amp;targetObject, <a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sourcePin, <a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> targetPin, const <a class="el" href="../../d1/da6/classxii_pin.html">xiiPin</a> *&amp;out_pSourcePin, const <a class="el" href="../../d1/da6/classxii_pin.html">xiiPin</a> *&amp;out_pTargetPin) const</td></tr>
+<tr class="separator:a28cd2090ac5b62de19c2798ec3f7d8cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a883fd17abe63b2d591b874bf9117d654" id="r_a883fd17abe63b2d591b874bf9117d654"><td class="memItemLeft" align="right" valign="top"><a id="a883fd17abe63b2d591b874bf9117d654" name="a883fd17abe63b2d591b874bf9117d654"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>GetDynamicPinNames</b> (const <a class="el" href="../../da/dd8/classxii_document_object.html">xiiDocumentObject</a> *pObject, <a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sPropertyName, <a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sPinName, <a class="el" href="../../dc/da4/classxii_dynamic_array.html">xiiDynamicArray</a>&lt; <a class="el" href="../../df/dfb/structxii_hybrid_string.html">xiiString</a> &gt; &amp;out_Names) const</td></tr>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>GetDynamicPinNames</b> (const <a class="el" href="../../da/dd8/classxii_document_object.html">xiiDocumentObject</a> *pObject, <a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sPropertyName, <a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sPinName, <a class="el" href="../../dc/da4/classxii_dynamic_array.html">xiiDynamicArray</a>&lt; <a class="el" href="../../df/dfb/structxii_hybrid_string.html">xiiString</a> &gt; &amp;out_Names) const</td></tr>
 <tr class="separator:a883fd17abe63b2d591b874bf9117d654"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a22c354ae9cca57ed7c379f7db3d790af" id="r_a22c354ae9cca57ed7c379f7db3d790af"><td class="memItemLeft" align="right" valign="top"><a id="a22c354ae9cca57ed7c379f7db3d790af" name="a22c354ae9cca57ed7c379f7db3d790af"></a>
 virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>TryRecreatePins</b> (const <a class="el" href="../../da/dd8/classxii_document_object.html">xiiDocumentObject</a> *pObject)</td></tr>
@@ -408,6 +411,37 @@ virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>TryRecreatePi
 
 </div>
 </div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="ab0c1496f69da6fc60d6d89b0f95dd3f8" name="ab0c1496f69da6fc60d6d89b0f95dd3f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab0c1496f69da6fc60d6d89b0f95dd3f8">&#9670;&#160;</a></span>GetNodeCreationTemplates()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void xiiDocumentNodeManager::GetNodeCreationTemplates </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../dc/da4/classxii_dynamic_array.html">xiiDynamicArray</a>&lt; <a class="el" href="../../d5/dc2/structxii_node_creation_template.html">xiiNodeCreationTemplate</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>out_templates</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>For node documents this function is called instead of GetCreateableTypes to get a list for the node creation menu. </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d5/dc2/structxii_node_creation_template.html" title="Describes a template that will be used to create new nodes. In most cases this only contains the type...">xiiNodeCreationTemplate</a> </dd></dl>
+
+<p>Reimplemented in <a class="el" href="../../d0/de2/classxii_visual_script_node_manager.html#a0185b180aa6a816b4402f52d7b6c509d">xiiVisualScriptNodeManager</a>, and <a class="el" href="../../d5/dec/classxii_visual_shader_node_manager.html#ac6e71289e11d8d2fb5e89b119c673e48">xiiVisualShaderNodeManager</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>/home/runner/work/XII/XII/Source/Tools/Libs/ToolsFoundation/NodeObject/<a class="el" href="../../db/d9e/_document_node_manager_8h_source.html">DocumentNodeManager.h</a></li>
 <li>/home/runner/work/XII/XII/Source/Tools/Libs/ToolsFoundation/NodeObject/Implementation/<b>DocumentNodeManager.cpp</b></li>
@@ -418,7 +452,7 @@ virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>TryRecreatePi
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../db/d55/classxii_document_node_manager.html">xiiDocumentNodeManager</a></li>
-    <li class="footer">Generated on Thu Feb 20 2025 00:19:26 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Thu Mar 13 2025 23:56:44 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

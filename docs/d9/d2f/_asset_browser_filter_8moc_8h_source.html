@@ -177,37 +177,40 @@ $(function(){initNavTree('d9/d2f/_asset_browser_filter_8moc_8h_source.html','../
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>  <span class="keywordtype">void</span> SetFileExtensionFilters(<a class="code hl_class" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sExtensions);</div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>  <span class="keywordtype">void</span>          SetTemporaryPinnedItem(<a class="code hl_class" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sDataDirParentRelativePath);</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>  <a class="code hl_class" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> GetTemporaryPinnedItem()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_sTemporaryPinnedItem; }</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>Q_SIGNALS:</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>  <span class="keywordtype">void</span> TextFilterChanged();</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>  <span class="keywordtype">void</span> TypeFilterChanged();</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>  <span class="keywordtype">void</span> PathFilterChanged();</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>  <span class="keywordtype">void</span> SortByRecentUseChanged();</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>  <span class="keyword">virtual</span> <span class="keywordtype">bool</span> IsAssetFiltered(<a class="code hl_class" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sDataDirParentRelativePath, <span class="keywordtype">bool</span> bIsFolder, <span class="keyword">const</span> <a class="code hl_struct" href="../../d7/d7e/structxii_sub_asset.html">xiiSubAsset</a>* pInfo) <span class="keyword">const override</span>;</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>  <a class="code hl_class" href="../../df/dfb/structxii_hybrid_string.html">xiiString</a>                m_sTypeFilter;</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>  <a class="code hl_class" href="../../df/dfb/structxii_hybrid_string.html">xiiString</a>                m_sPathFilter;</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>  <a class="code hl_class" href="../../df/dfb/structxii_hybrid_string.html">xiiString</a>                m_sTemporaryPinnedItem;</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>  <a class="code hl_class" href="../../dd/d81/classxii_search_pattern_filter.html">xiiSearchPatternFilter</a>   m_SearchFilter;</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>  <span class="keywordtype">bool</span>                     m_bShowItemsInSubFolders    = <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>  <span class="keywordtype">bool</span>                     m_bShowFiles                = <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>  <span class="keywordtype">bool</span>                     m_bShowNonImportableFiles   = <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>  <span class="keywordtype">bool</span>                     m_bShowItemsInHiddenFolders = <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>  <span class="keywordtype">bool</span>                     m_bSortByRecentUse          = <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>  <span class="keyword">mutable</span> <a class="code hl_class" href="../../d4/dbb/classxii_string_builder.html">xiiStringBuilder</a> m_sTemp; <span class="comment">// stored here to reduce unnecessary allocations</span></div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>  <span class="comment">// Cache for uses search</span></div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>  <span class="keywordtype">bool</span>              m_bUsesSearchActive = <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>  <span class="keywordtype">bool</span>              m_bTransitive       = <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>  <a class="code hl_class" href="../../d6/d31/classxii_set.html">xiiSet&lt;xiiUuid&gt;</a>   m_Uses;</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>  <a class="code hl_class" href="../../d6/d31/classxii_set.html">xiiSet&lt;xiiString&gt;</a> m_ImportExtensions;</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>  <a class="code hl_class" href="../../d6/d31/classxii_set.html">xiiSet&lt;xiiString&gt;</a> m_FileExtensions;</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>};</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>  <span class="keywordtype">void</span> SetRequiredTag(<a class="code hl_class" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sRequiredTag);</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>  <span class="keywordtype">void</span>          SetTemporaryPinnedItem(<a class="code hl_class" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sDataDirParentRelativePath);</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>  <a class="code hl_class" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> GetTemporaryPinnedItem()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_sTemporaryPinnedItem; }</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>Q_SIGNALS:</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>  <span class="keywordtype">void</span> TextFilterChanged();</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>  <span class="keywordtype">void</span> TypeFilterChanged();</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>  <span class="keywordtype">void</span> PathFilterChanged();</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>  <span class="keywordtype">void</span> SortByRecentUseChanged();</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>  <span class="keyword">virtual</span> <span class="keywordtype">bool</span> IsAssetFiltered(<a class="code hl_class" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sDataDirParentRelativePath, <span class="keywordtype">bool</span> bIsFolder, <span class="keyword">const</span> <a class="code hl_struct" href="../../d7/d7e/structxii_sub_asset.html">xiiSubAsset</a>* pInfo) <span class="keyword">const override</span>;</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>  <a class="code hl_class" href="../../df/dfb/structxii_hybrid_string.html">xiiString</a>                m_sTypeFilter;</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>  <a class="code hl_class" href="../../df/dfb/structxii_hybrid_string.html">xiiString</a>                m_sRequiredTag = <span class="stringliteral">&quot;*&quot;</span>; <span class="comment">// show all is the default for the asset browser</span></div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>  <a class="code hl_class" href="../../df/dfb/structxii_hybrid_string.html">xiiString</a>                m_sPathFilter;</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>  <a class="code hl_class" href="../../df/dfb/structxii_hybrid_string.html">xiiString</a>                m_sTemporaryPinnedItem;</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>  <a class="code hl_class" href="../../dd/d81/classxii_search_pattern_filter.html">xiiSearchPatternFilter</a>   m_SearchFilter;</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>  <span class="keywordtype">bool</span>                     m_bShowItemsInSubFolders    = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>  <span class="keywordtype">bool</span>                     m_bShowFiles                = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>  <span class="keywordtype">bool</span>                     m_bShowNonImportableFiles   = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>  <span class="keywordtype">bool</span>                     m_bShowItemsInHiddenFolders = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>  <span class="keywordtype">bool</span>                     m_bSortByRecentUse          = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>  <span class="keyword">mutable</span> <a class="code hl_class" href="../../d4/dbb/classxii_string_builder.html">xiiStringBuilder</a> m_sTemp; <span class="comment">// stored here to reduce unnecessary allocations</span></div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>  <span class="comment">// Cache for uses search</span></div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>  <span class="keywordtype">bool</span>              m_bUsesSearchActive = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>  <span class="keywordtype">bool</span>              m_bTransitive       = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>  <a class="code hl_class" href="../../d6/d31/classxii_set.html">xiiSet&lt;xiiUuid&gt;</a>   m_Uses;</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>  <a class="code hl_class" href="../../d6/d31/classxii_set.html">xiiSet&lt;xiiString&gt;</a> m_ImportExtensions;</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>  <a class="code hl_class" href="../../d6/d31/classxii_set.html">xiiSet&lt;xiiString&gt;</a> m_FileExtensions;</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>};</div>
 </div>
 <div class="ttc" id="aclassxii_qt_asset_browser_filter_html"><div class="ttname"><a href="../../d0/db0/classxii_qt_asset_browser_filter.html">xiiQtAssetBrowserFilter</a></div><div class="ttdef"><b>Definition</b> AssetBrowserFilter.moc.h:9</div></div>
 <div class="ttc" id="aclassxii_qt_asset_filter_html"><div class="ttname"><a href="../../d6/de1/classxii_qt_asset_filter.html">xiiQtAssetFilter</a></div><div class="ttdoc">Interface class of the asset filter used to decide which items are shown in the asset browser.</div><div class="ttdef"><b>Definition</b> AssetBrowserModel.moc.h:20</div></div>
@@ -216,14 +219,14 @@ $(function(){initNavTree('d9/d2f/_asset_browser_filter_8moc_8h_source.html','../
 <div class="ttc" id="aclassxii_string_builder_html"><div class="ttname"><a href="../../d4/dbb/classxii_string_builder.html">xiiStringBuilder</a></div><div class="ttdoc">xiiStringBuilder is a class that is meant for creating and modifying strings.</div><div class="ttdef"><b>Definition</b> StringBuilder.h:35</div></div>
 <div class="ttc" id="aclassxii_string_view_html"><div class="ttname"><a href="../../d4/d85/classxii_string_view.html">xiiStringView</a></div><div class="ttdoc">xiiStringView represent a read-only sub-string of a larger string, as it can store a dedicated string...</div><div class="ttdef"><b>Definition</b> StringView.h:34</div></div>
 <div class="ttc" id="astructxii_hybrid_string_html"><div class="ttname"><a href="../../df/dfb/structxii_hybrid_string.html">xiiHybridString&lt; 32, xiiDefaultAllocatorWrapper &gt;</a></div></div>
-<div class="ttc" id="astructxii_sub_asset_html"><div class="ttname"><a href="../../d7/d7e/structxii_sub_asset.html">xiiSubAsset</a></div><div class="ttdoc">Information about an asset or sub-asset.</div><div class="ttdef"><b>Definition</b> AssetCurator.h:108</div></div>
+<div class="ttc" id="astructxii_sub_asset_html"><div class="ttname"><a href="../../d7/d7e/structxii_sub_asset.html">xiiSubAsset</a></div><div class="ttdoc">Information about an asset or sub-asset.</div><div class="ttdef"><b>Definition</b> AssetCurator.h:111</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.html">home</a></li><li class="navelem"><a class="el" href="../../dir_1036706e55c22cab35bc1c58ee689f1d.html">runner</a></li><li class="navelem"><a class="el" href="../../dir_629f8151d55d307162ff2d619fb1783d.html">work</a></li><li class="navelem"><a class="el" href="../../dir_1ddc44fe1263a8c7935fa6130b7d9499.html">XII</a></li><li class="navelem"><a class="el" href="../../dir_2c1b6808f12952f4c36e05ba7068379a.html">XII</a></li><li class="navelem"><a class="el" href="../../dir_b5a1c4ecfca018ad24b729e213296d41.html">Source</a></li><li class="navelem"><a class="el" href="../../dir_6b4bf1df3614588897d8c8b2dbbde39b.html">Editor</a></li><li class="navelem"><a class="el" href="../../dir_85cc0ddb74daab9d3d596e3c0704d4e4.html">EditorFramework</a></li><li class="navelem"><a class="el" href="../../dir_9269f6696f1dd89cee2bea6edfb12105.html">Assets</a></li><li class="navelem"><b>AssetBrowserFilter.moc.h</b></li>
-    <li class="footer">Generated on Thu Feb 20 2025 00:19:17 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Thu Mar 13 2025 23:56:34 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

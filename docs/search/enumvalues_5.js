@@ -23,5 +23,7 @@ var searchData=
   ['event_20',['Event',['../d8/dca/structxii_visual_script_send_message_mode.html#ade7fc86c3b92c8bf547ba8684756bf8dac1d25a44d7b3e0985a03f686c423f5c8',1,'xiiVisualScriptSendMessageMode']]],
   ['exact_21',['Exact',['../d5/d15/classxii_open_ddl_writer.html#a0afc2aeb0d0cc77cd1f2dff0a9f38e79a1649aed298f99d587e2eb30c1db5946b',1,'xiiOpenDdlWriter']]],
   ['exclude_22',['Exclude',['../d0/dc2/classxii_archive_builder.html#a79ed6bf54149bed426fcdc8ede30739ca843f2812f595e7ec7c5036e89fde02d6',1,'xiiArchiveBuilder']]],
-  ['exclusive_23',['Exclusive',['../dc/df4/structxii_file_share_mode.html#a853af051a2b930d18b9d14f78c09e5e1a0f9092044a6e5fe07f86fd976cc0183f',1,'xiiFileShareMode']]]
+  ['excludeabstract_23',['ExcludeAbstract',['../d3/d09/structxii_r_t_t_i_1_1_for_each_options.html#ae52a706ccc417fe50af7cf69b6e75a13afb67f2789d3d58934c07e176e978ec3f',1,'xiiRTTI::ForEachOptions']]],
+  ['excludenonallocatable_24',['ExcludeNonAllocatable',['../d3/d09/structxii_r_t_t_i_1_1_for_each_options.html#ae52a706ccc417fe50af7cf69b6e75a13a5d203dfb813ed80fcc45cf9eaf40d49e',1,'xiiRTTI::ForEachOptions']]],
+  ['exclusive_25',['Exclusive',['../dc/df4/structxii_file_share_mode.html#a853af051a2b930d18b9d14f78c09e5e1a0f9092044a6e5fe07f86fd976cc0183f',1,'xiiFileShareMode']]]
 ];

@@ -218,6 +218,9 @@ const <a class="el" href="../../da/dd8/classxii_document_object.html">xiiDocumen
 <tr class="memitem:a97a1483a3c8d3be27c70780cfc9341b7" id="r_a97a1483a3c8d3be27c70780cfc9341b7"><td class="memItemLeft" align="right" valign="top"><a id="a97a1483a3c8d3be27c70780cfc9341b7" name="a97a1483a3c8d3be27c70780cfc9341b7"></a>
 <a class="el" href="../../da/d0a/classxii_scene_document.html">xiiSceneDocument</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetLayerDocument</b> (const <a class="el" href="../../dc/d1d/classxii_uuid.html">xiiUuid</a> &amp;layerGuid) const</td></tr>
 <tr class="separator:a97a1483a3c8d3be27c70780cfc9341b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3440ae6eef0cf2d6bc9445470d9b6af5" id="r_a3440ae6eef0cf2d6bc9445470d9b6af5"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d1/dbf/classxii_game_object_document.html">xiiGameObjectDocument</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3440ae6eef0cf2d6bc9445470d9b6af5">GetRedirectedGameObjectDoc</a> () override</td></tr>
+<tr class="memdesc:a3440ae6eef0cf2d6bc9445470d9b6af5"><td class="mdescLeft">&#160;</td><td class="mdescRight">In case a document consists of multiple layers, this redirection is necessary to execute actions on the active layer.  <br /></td></tr>
+<tr class="separator:a3440ae6eef0cf2d6bc9445470d9b6af5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7ba669dc2858b36a11a9520e72447959" id="r_a7ba669dc2858b36a11a9520e72447959"><td class="memItemLeft" align="right" valign="top"><a id="a7ba669dc2858b36a11a9520e72447959" name="a7ba669dc2858b36a11a9520e72447959"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsAnyLayerModified</b> () const</td></tr>
 <tr class="separator:a7ba669dc2858b36a11a9520e72447959"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -237,13 +240,32 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsAnyLayerModified</b
 <tr class="memitem:a4ddeb7768276b2c1d238069306de3833" id="r_a4ddeb7768276b2c1d238069306de3833"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4ddeb7768276b2c1d238069306de3833">SendGameWorldToEngine</a> () override</td></tr>
 <tr class="memdesc:a4ddeb7768276b2c1d238069306de3833"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends the current state of the scene to the engine process. This is typically done after scene load or when the world might have deviated on the engine side (after play the game etc.)  <br /></td></tr>
 <tr class="separator:a4ddeb7768276b2c1d238069306de3833"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">Selection Specific Functions</div></td></tr>
+<tr class="memitem:a74ba104b6150cb9bcc101b5106a1b58e" id="r_a74ba104b6150cb9bcc101b5106a1b58e"><td class="memItemLeft" align="right" valign="top"><a id="a74ba104b6150cb9bcc101b5106a1b58e" name="a74ba104b6150cb9bcc101b5106a1b58e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>PreventDoubleSelectionChange</b> (bool b)</td></tr>
+<tr class="separator:a74ba104b6150cb9bcc101b5106a1b58e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acfb1a8590a1c98f20c80b3e466ab5331" id="r_acfb1a8590a1c98f20c80b3e466ab5331"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acfb1a8590a1c98f20c80b3e466ab5331">UndoSelection</a> () override</td></tr>
+<tr class="separator:acfb1a8590a1c98f20c80b3e466ab5331"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classxii_scene_document"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_classxii_scene_document')"><img src="../../closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="../../da/d0a/classxii_scene_document.html">xiiSceneDocument</a></td></tr>
 <tr class="memitem:a3267a239711e25959e2a013bee6ea75e inherit pub_methods_classxii_scene_document" id="r_a3267a239711e25959e2a013bee6ea75e"><td class="memItemLeft" align="right" valign="top">
 &#160;</td><td class="memItemRight" valign="bottom"><b>xiiSceneDocument</b> (<a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sDocumentPath, DocumentType documentType)</td></tr>
 <tr class="separator:a3267a239711e25959e2a013bee6ea75e inherit pub_methods_classxii_scene_document"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8ac5805c8719250efcc9a3705ec450c9 inherit pub_methods_classxii_scene_document" id="r_a8ac5805c8719250efcc9a3705ec450c9"><td class="memItemLeft" align="right" valign="top">
 void&#160;</td><td class="memItemRight" valign="bottom"><b>GroupSelection</b> ()</td></tr>
+<tr class="memdesc:a8ac5805c8719250efcc9a3705ec450c9 inherit pub_methods_classxii_scene_document"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new object and attaches all currently selected objects to it. <br /></td></tr>
 <tr class="separator:a8ac5805c8719250efcc9a3705ec450c9 inherit pub_methods_classxii_scene_document"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abcfca4ecf351fdef8db43a4ca18f9abe inherit pub_methods_classxii_scene_document" id="r_abcfca4ecf351fdef8db43a4ca18f9abe"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SelectParentObject</b> ()</td></tr>
+<tr class="memdesc:abcfca4ecf351fdef8db43a4ca18f9abe inherit pub_methods_classxii_scene_document"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes the selection to the parent object. <br /></td></tr>
+<tr class="separator:abcfca4ecf351fdef8db43a4ca18f9abe inherit pub_methods_classxii_scene_document"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15fb3ca621bb488f7c70d434f501ef47 inherit pub_methods_classxii_scene_document" id="r_a15fb3ca621bb488f7c70d434f501ef47"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetSelectedAsActiveParent</b> ()</td></tr>
+<tr class="memdesc:a15fb3ca621bb488f7c70d434f501ef47 inherit pub_methods_classxii_scene_document"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the last selected object as the 'active parent'. <br /></td></tr>
+<tr class="separator:a15fb3ca621bb488f7c70d434f501ef47 inherit pub_methods_classxii_scene_document"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf37d6850f3f45f4b8dbfb6d37e46159 inherit pub_methods_classxii_scene_document" id="r_aaf37d6850f3f45f4b8dbfb6d37e46159"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ClearActiveParent</b> ()</td></tr>
+<tr class="memdesc:aaf37d6850f3f45f4b8dbfb6d37e46159 inherit pub_methods_classxii_scene_document"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clears the 'active parent' object. <br /></td></tr>
+<tr class="separator:aaf37d6850f3f45f4b8dbfb6d37e46159 inherit pub_methods_classxii_scene_document"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2b79e5db7fe68797834eb708698dd5fa inherit pub_methods_classxii_scene_document" id="r_a2b79e5db7fe68797834eb708698dd5fa"><td class="memItemLeft" align="right" valign="top">
 void&#160;</td><td class="memItemRight" valign="bottom"><b>DuplicateSpecial</b> ()</td></tr>
 <tr class="memdesc:a2b79e5db7fe68797834eb708698dd5fa inherit pub_methods_classxii_scene_document"><td class="mdescLeft">&#160;</td><td class="mdescRight">Opens the Duplicate Special dialog. <br /></td></tr>
@@ -268,10 +290,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>DetachFromParent</b> 
 void&#160;</td><td class="memItemRight" valign="bottom"><b>CopyReference</b> ()</td></tr>
 <tr class="memdesc:a0b6863b578049a6fdab7e95181293812 inherit pub_methods_classxii_scene_document"><td class="mdescLeft">&#160;</td><td class="mdescRight">Puts the GUID of the single selected object into the clipboard. <br /></td></tr>
 <tr class="separator:a0b6863b578049a6fdab7e95181293812 inherit pub_methods_classxii_scene_document"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae4f891e2730efd91e2035d9749224f74 inherit pub_methods_classxii_scene_document" id="r_ae4f891e2730efd91e2035d9749224f74"><td class="memItemLeft" align="right" valign="top">
-<a class="el" href="../../d0/d54/structxii_status.html">xiiStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><b>CreateEmptyObject</b> (bool bAttachToParent, bool bAtPickedPosition)</td></tr>
-<tr class="memdesc:ae4f891e2730efd91e2035d9749224f74 inherit pub_methods_classxii_scene_document"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new empty object, either top-level (selection empty) or as a child of the selected item. <br /></td></tr>
-<tr class="separator:ae4f891e2730efd91e2035d9749224f74 inherit pub_methods_classxii_scene_document"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38bae7d4cc5ff16f65639eb57715d274 inherit pub_methods_classxii_scene_document" id="r_a38bae7d4cc5ff16f65639eb57715d274"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="../../d0/d54/structxii_status.html">xiiStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><b>CreateEmptyObject</b> (bool bAttachToParent, bool bAtPickedPosition, bool bComponentSelectionMenu)</td></tr>
+<tr class="memdesc:a38bae7d4cc5ff16f65639eb57715d274 inherit pub_methods_classxii_scene_document"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new empty object, either top-level (selection empty) or as a child of the selected item. <br /></td></tr>
+<tr class="separator:a38bae7d4cc5ff16f65639eb57715d274 inherit pub_methods_classxii_scene_document"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0de14dfc3313c26dfcdafc2eddef5386 inherit pub_methods_classxii_scene_document" id="r_a0de14dfc3313c26dfcdafc2eddef5386"><td class="memItemLeft" align="right" valign="top">
 void&#160;</td><td class="memItemRight" valign="bottom"><b>DuplicateSelection</b> ()</td></tr>
 <tr class="separator:a0de14dfc3313c26dfcdafc2eddef5386 inherit pub_methods_classxii_scene_document"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -313,31 +335,31 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>DuplicateSelectedObje
 <tr class="memitem:aaec256861b6ae96d6464baf379009902 inherit pub_methods_classxii_scene_document" id="r_aaec256861b6ae96d6464baf379009902"><td class="memItemLeft" align="right" valign="top">
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>CopySelectedObjects</b> (<a class="el" href="../../d9/d21/classxii_abstract_object_graph.html">xiiAbstractObjectGraph</a> &amp;ref_graph, <a class="el" href="../../d6/df7/classxii_map.html">xiiMap</a>&lt; <a class="el" href="../../dc/d1d/classxii_uuid.html">xiiUuid</a>, <a class="el" href="../../dc/d1d/classxii_uuid.html">xiiUuid</a> &gt; *out_pParents) const</td></tr>
 <tr class="separator:aaec256861b6ae96d6464baf379009902 inherit pub_methods_classxii_scene_document"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac1c77066e264367ff44aff7803563942 inherit pub_methods_classxii_scene_document" id="r_ac1c77066e264367ff44aff7803563942"><td class="memItemLeft" align="right" valign="top">
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>PasteAt</b> (const <a class="el" href="../../d0/d60/classxii_array_ptr.html">xiiArrayPtr</a>&lt; <a class="el" href="../../d9/d2e/structxii_document_1_1_paste_info.html">PasteInfo</a> &gt; &amp;info, const <a class="el" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3</a> &amp;vPos)</td></tr>
-<tr class="separator:ac1c77066e264367ff44aff7803563942 inherit pub_methods_classxii_scene_document"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9de4eadab9b46c12fb937127d5da81f3 inherit pub_methods_classxii_scene_document" id="r_a9de4eadab9b46c12fb937127d5da81f3"><td class="memItemLeft" align="right" valign="top">
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>PasteAt</b> (const <a class="el" href="../../d0/d60/classxii_array_ptr.html">xiiArrayPtr</a>&lt; <a class="el" href="../../d9/d2e/structxii_document_1_1_paste_info.html">PasteInfo</a> &gt; &amp;info, const <a class="el" href="../../d9/d21/classxii_abstract_object_graph.html">xiiAbstractObjectGraph</a> &amp;objectGraph, const <a class="el" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3</a> &amp;vPos)</td></tr>
+<tr class="separator:a9de4eadab9b46c12fb937127d5da81f3 inherit pub_methods_classxii_scene_document"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1168cffb404514f17f650428073be908 inherit pub_methods_classxii_scene_document" id="r_a1168cffb404514f17f650428073be908"><td class="memItemLeft" align="right" valign="top">
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>PasteAtOrignalPosition</b> (const <a class="el" href="../../d0/d60/classxii_array_ptr.html">xiiArrayPtr</a>&lt; <a class="el" href="../../d9/d2e/structxii_document_1_1_paste_info.html">PasteInfo</a> &gt; &amp;info, const <a class="el" href="../../d9/d21/classxii_abstract_object_graph.html">xiiAbstractObjectGraph</a> &amp;objectGraph)</td></tr>
 <tr class="separator:a1168cffb404514f17f650428073be908 inherit pub_methods_classxii_scene_document"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a801a9f017b7ccadf823f42fd2a7af95e inherit pub_methods_classxii_scene_document" id="r_a801a9f017b7ccadf823f42fd2a7af95e"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d0a/classxii_scene_document.html#a801a9f017b7ccadf823f42fd2a7af95e">UpdatePrefabs</a> () override</td></tr>
 <tr class="memdesc:a801a9f017b7ccadf823f42fd2a7af95e inherit pub_methods_classxii_scene_document"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates ALL prefabs in the document with the latest changes. Merges the current prefab templates with the instances in the document.  <br /></td></tr>
 <tr class="separator:a801a9f017b7ccadf823f42fd2a7af95e inherit pub_methods_classxii_scene_document"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9cb92ffeb77792771beb0a24c2d7c457 inherit pub_methods_classxii_scene_document" id="r_a9cb92ffeb77792771beb0a24c2d7c457"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d0a/classxii_scene_document.html#a9cb92ffeb77792771beb0a24c2d7c457">UnlinkPrefabs</a> (const <a class="el" href="../../d8/df8/classxii_deque.html">xiiDeque</a>&lt; const <a class="el" href="../../da/dd8/classxii_document_object.html">xiiDocumentObject</a> * &gt; &amp;selection) override</td></tr>
-<tr class="memdesc:a9cb92ffeb77792771beb0a24c2d7c457 inherit pub_methods_classxii_scene_document"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes the link to the prefab template, making the editor prefab a simple object.  <br /></td></tr>
-<tr class="separator:a9cb92ffeb77792771beb0a24c2d7c457 inherit pub_methods_classxii_scene_document"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ea0fb438302451bf3c8a50d786bc319 inherit pub_methods_classxii_scene_document" id="r_a3ea0fb438302451bf3c8a50d786bc319"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d0a/classxii_scene_document.html#a3ea0fb438302451bf3c8a50d786bc319">UnlinkPrefabs</a> (<a class="el" href="../../d0/d60/classxii_array_ptr.html">xiiArrayPtr</a>&lt; const <a class="el" href="../../da/dd8/classxii_document_object.html">xiiDocumentObject</a> * &gt; selection) override</td></tr>
+<tr class="memdesc:a3ea0fb438302451bf3c8a50d786bc319 inherit pub_methods_classxii_scene_document"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes the link to the prefab template, making the editor prefab a simple object.  <br /></td></tr>
+<tr class="separator:a3ea0fb438302451bf3c8a50d786bc319 inherit pub_methods_classxii_scene_document"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aefdcca3099b7c665532e828484bbca7d inherit pub_methods_classxii_scene_document" id="r_aefdcca3099b7c665532e828484bbca7d"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../dc/d1d/classxii_uuid.html">xiiUuid</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d0a/classxii_scene_document.html#aefdcca3099b7c665532e828484bbca7d">ReplaceByPrefab</a> (const <a class="el" href="../../da/dd8/classxii_document_object.html">xiiDocumentObject</a> *pRootObject, <a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sPrefabFile, const <a class="el" href="../../dc/d1d/classxii_uuid.html">xiiUuid</a> &amp;prefabAsset, const <a class="el" href="../../dc/d1d/classxii_uuid.html">xiiUuid</a> &amp;prefabSeed, bool bEnginePrefab) override</td></tr>
 <tr class="separator:aefdcca3099b7c665532e828484bbca7d inherit pub_methods_classxii_scene_document"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae767150bc38d6772a22e46dca614b128 inherit pub_methods_classxii_scene_document" id="r_ae767150bc38d6772a22e46dca614b128"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../dc/d1d/classxii_uuid.html">xiiUuid</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d0a/classxii_scene_document.html#ae767150bc38d6772a22e46dca614b128">RevertPrefab</a> (const <a class="el" href="../../da/dd8/classxii_document_object.html">xiiDocumentObject</a> *pObject) override</td></tr>
 <tr class="memdesc:ae767150bc38d6772a22e46dca614b128 inherit pub_methods_classxii_scene_document"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reverts all selected editor prefabs to their original template state.  <br /></td></tr>
 <tr class="separator:ae767150bc38d6772a22e46dca614b128 inherit pub_methods_classxii_scene_document"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af1d89cba692f916a7e1b1c3c331c9eb2 inherit pub_methods_classxii_scene_document" id="r_af1d89cba692f916a7e1b1c3c331c9eb2"><td class="memItemLeft" align="right" valign="top">
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>ConvertToEditorPrefab</b> (const <a class="el" href="../../d8/df8/classxii_deque.html">xiiDeque</a>&lt; const <a class="el" href="../../da/dd8/classxii_document_object.html">xiiDocumentObject</a> * &gt; &amp;selection)</td></tr>
-<tr class="memdesc:af1d89cba692f916a7e1b1c3c331c9eb2 inherit pub_methods_classxii_scene_document"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts all objects in the selection that are engine prefabs to their respective editor prefab representation. <br /></td></tr>
-<tr class="separator:af1d89cba692f916a7e1b1c3c331c9eb2 inherit pub_methods_classxii_scene_document"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7fac7a41cb4d61c8d2c4eede30a9ff9f inherit pub_methods_classxii_scene_document" id="r_a7fac7a41cb4d61c8d2c4eede30a9ff9f"><td class="memItemLeft" align="right" valign="top">
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>ConvertToEnginePrefab</b> (const <a class="el" href="../../d8/df8/classxii_deque.html">xiiDeque</a>&lt; const <a class="el" href="../../da/dd8/classxii_document_object.html">xiiDocumentObject</a> * &gt; &amp;selection)</td></tr>
-<tr class="memdesc:a7fac7a41cb4d61c8d2c4eede30a9ff9f inherit pub_methods_classxii_scene_document"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts all objects in the selection that are editor prefabs to their respective engine prefab representation. <br /></td></tr>
-<tr class="separator:a7fac7a41cb4d61c8d2c4eede30a9ff9f inherit pub_methods_classxii_scene_document"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d6b0c4830e6011ebcfdefec39b5ff8e inherit pub_methods_classxii_scene_document" id="r_a6d6b0c4830e6011ebcfdefec39b5ff8e"><td class="memItemLeft" align="right" valign="top">
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>ConvertToEditorPrefab</b> (<a class="el" href="../../d0/d60/classxii_array_ptr.html">xiiArrayPtr</a>&lt; const <a class="el" href="../../da/dd8/classxii_document_object.html">xiiDocumentObject</a> * &gt; selection)</td></tr>
+<tr class="memdesc:a6d6b0c4830e6011ebcfdefec39b5ff8e inherit pub_methods_classxii_scene_document"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts all objects in the selection that are engine prefabs to their respective editor prefab representation. <br /></td></tr>
+<tr class="separator:a6d6b0c4830e6011ebcfdefec39b5ff8e inherit pub_methods_classxii_scene_document"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0be802d7ab7a05e59aba419c288e8d33 inherit pub_methods_classxii_scene_document" id="r_a0be802d7ab7a05e59aba419c288e8d33"><td class="memItemLeft" align="right" valign="top">
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>ConvertToEnginePrefab</b> (<a class="el" href="../../d0/d60/classxii_array_ptr.html">xiiArrayPtr</a>&lt; const <a class="el" href="../../da/dd8/classxii_document_object.html">xiiDocumentObject</a> * &gt; selection)</td></tr>
+<tr class="memdesc:a0be802d7ab7a05e59aba419c288e8d33 inherit pub_methods_classxii_scene_document"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts all objects in the selection that are editor prefabs to their respective engine prefab representation. <br /></td></tr>
+<tr class="separator:a0be802d7ab7a05e59aba419c288e8d33 inherit pub_methods_classxii_scene_document"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a01961048e99c6c1c5db33045da35019c inherit pub_methods_classxii_scene_document" id="r_a01961048e99c6c1c5db33045da35019c"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d0/d54/structxii_status.html">xiiStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d0a/classxii_scene_document.html#a01961048e99c6c1c5db33045da35019c">CreatePrefabDocumentFromSelection</a> (<a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sFile, const <a class="el" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a> *pRootType, <a class="el" href="../../dc/d84/structxii_delegate.html">xiiDelegate</a>&lt; void(<a class="el" href="../../d1/d94/classxii_abstract_object_node.html">xiiAbstractObjectNode</a> *)&gt; adjustGraphNodeCB={}, <a class="el" href="../../dc/d84/structxii_delegate.html">xiiDelegate</a>&lt; void(<a class="el" href="../../da/dd8/classxii_document_object.html">xiiDocumentObject</a> *)&gt; adjustNewNodesCB={}, <a class="el" href="../../dc/d84/structxii_delegate.html">xiiDelegate</a>&lt; void(<a class="el" href="../../d9/d21/classxii_abstract_object_graph.html">xiiAbstractObjectGraph</a> &amp;graph, <a class="el" href="../../dc/da4/classxii_dynamic_array.html">xiiDynamicArray</a>&lt; <a class="el" href="../../d1/d94/classxii_abstract_object_node.html">xiiAbstractObjectNode</a> * &gt; &amp;graphRootNodes)&gt; finalizeGraphCB={}) override</td></tr>
 <tr class="separator:a01961048e99c6c1c5db33045da35019c inherit pub_methods_classxii_scene_document"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abbce965b7f1151ab909ed7f8017cb329 inherit pub_methods_classxii_scene_document" id="r_abbce965b7f1151ab909ed7f8017cb329"><td class="memItemLeft" align="right" valign="top">
@@ -374,6 +396,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>SendObjectMsg</b> (co
 <tr class="memitem:a8d8a70d0593c777e0dbef51bb260e008 inherit pub_methods_classxii_scene_document" id="r_a8d8a70d0593c777e0dbef51bb260e008"><td class="memItemLeft" align="right" valign="top">
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SendObjectMsgRecursive</b> (const <a class="el" href="../../da/dd8/classxii_document_object.html">xiiDocumentObject</a> *pObj, <a class="el" href="../../d4/d53/classxii_object_tag_msg_to_engine.html">xiiObjectTagMsgToEngine</a> *pMsg)</td></tr>
 <tr class="separator:a8d8a70d0593c777e0dbef51bb260e008 inherit pub_methods_classxii_scene_document"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb26e3a4e5677bef9d99137977646199 inherit pub_methods_classxii_scene_document" id="r_acb26e3a4e5677bef9d99137977646199"><td class="memItemLeft" align="right" valign="top">
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>CanUndoSelection</b> () const</td></tr>
+<tr class="separator:acb26e3a4e5677bef9d99137977646199 inherit pub_methods_classxii_scene_document"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a75767be0cca9f4378a9e817de7ef1f65 inherit pub_methods_classxii_scene_document" id="r_a75767be0cca9f4378a9e817de7ef1f65"><td class="memItemLeft" align="right" valign="top">
 const <a class="el" href="../../d7/de4/classxii_scene_document_settings_base.html">xiiSceneDocumentSettingsBase</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetSettingsBase</b> () const</td></tr>
 <tr class="separator:a75767be0cca9f4378a9e817de7ef1f65 inherit pub_methods_classxii_scene_document"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -401,11 +426,11 @@ xiiInt32&#160;</td><td class="memItemRight" valign="bottom"><b>FindExposedParame
 <tr class="separator:a3bc78f5498ac81cfb457f46f1d09b7ba inherit pub_methods_classxii_scene_document"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af0e48c1c8d939ab7a70459f827efdc48 inherit pub_methods_classxii_scene_document" id="r_af0e48c1c8d939ab7a70459f827efdc48"><td class="memItemLeft" align="right" valign="top">
 <a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><b>JumpToLevelCamera</b> (xiiUInt8 uiSlot, bool bImmediate)</td></tr>
-<tr class="memdesc:af0e48c1c8d939ab7a70459f827efdc48 inherit pub_methods_classxii_scene_document"><td class="mdescLeft">&#160;</td><td class="mdescRight">Searches for an <a class="el" href="../../d9/d06/classxii_camera_component.html">xiiCameraComponent</a> with the 'EditorShortcut' property set to <em>uiSlot</em> and moves the editor camera to that position. <br /></td></tr>
+<tr class="memdesc:af0e48c1c8d939ab7a70459f827efdc48 inherit pub_methods_classxii_scene_document"><td class="mdescLeft">&#160;</td><td class="mdescRight">Searches for a <a class="el" href="../../d9/d06/classxii_camera_component.html">xiiCameraComponent</a> with the 'EditorShortcut' property set to <em>uiSlot</em> and moves the editor camera to that position. <br /></td></tr>
 <tr class="separator:af0e48c1c8d939ab7a70459f827efdc48 inherit pub_methods_classxii_scene_document"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acd3a07d006684cd6a16a1c219d23858d inherit pub_methods_classxii_scene_document" id="r_acd3a07d006684cd6a16a1c219d23858d"><td class="memItemLeft" align="right" valign="top">
 <a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><b>CreateLevelCamera</b> (xiiUInt8 uiSlot)</td></tr>
-<tr class="memdesc:acd3a07d006684cd6a16a1c219d23858d inherit pub_methods_classxii_scene_document"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an object with an <a class="el" href="../../d9/d06/classxii_camera_component.html">xiiCameraComponent</a> at the current editor camera position and sets the 'EditorShortcut' property to <em>uiSlot</em>. <br /></td></tr>
+<tr class="memdesc:acd3a07d006684cd6a16a1c219d23858d inherit pub_methods_classxii_scene_document"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an object with a <a class="el" href="../../d9/d06/classxii_camera_component.html">xiiCameraComponent</a> at the current editor camera position and sets the 'EditorShortcut' property to <em>uiSlot</em>. <br /></td></tr>
 <tr class="separator:acd3a07d006684cd6a16a1c219d23858d inherit pub_methods_classxii_scene_document"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abe26b2b8a52639d580a64464e2deddf9 inherit pub_methods_classxii_scene_document" id="r_abe26b2b8a52639d580a64464e2deddf9"><td class="memItemLeft" align="right" valign="top">virtual xiiManipulatorSearchStrategy&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d0a/classxii_scene_document.html#abe26b2b8a52639d580a64464e2deddf9">GetManipulatorSearchStrategy</a> () const override</td></tr>
 <tr class="memdesc:abe26b2b8a52639d580a64464e2deddf9 inherit pub_methods_classxii_scene_document"><td class="mdescLeft">&#160;</td><td class="mdescRight">Needed by <a class="el" href="../../d6/da6/classxii_manipulator_manager.html">xiiManipulatorManager</a> to know where to look for the manipulator attributes.  <br /></td></tr>
@@ -449,10 +474,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>SnapCameraToObject</b
 void&#160;</td><td class="memItemRight" valign="bottom"><b>MoveCameraHere</b> ()</td></tr>
 <tr class="memdesc:a0cfc996b1c29b842f99605bd0a4c9a86 inherit pub_methods_classxii_game_object_document"><td class="mdescLeft">&#160;</td><td class="mdescRight">Moves the camera to the current picking position. <br /></td></tr>
 <tr class="separator:a0cfc996b1c29b842f99605bd0a4c9a86 inherit pub_methods_classxii_game_object_document"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a11ec82d02ee4f47e5df523eb8bfe82cf inherit pub_methods_classxii_game_object_document" id="r_a11ec82d02ee4f47e5df523eb8bfe82cf"><td class="memItemLeft" align="right" valign="top">
-<a class="el" href="../../d0/d54/structxii_status.html">xiiStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><b>CreateGameObjectHere</b> ()</td></tr>
-<tr class="memdesc:a11ec82d02ee4f47e5df523eb8bfe82cf inherit pub_methods_classxii_game_object_document"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an empty game object at the current picking position. <br /></td></tr>
-<tr class="separator:a11ec82d02ee4f47e5df523eb8bfe82cf inherit pub_methods_classxii_game_object_document"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7a869eec4a7485a3c4d36400bd7a4228 inherit pub_methods_classxii_game_object_document" id="r_a7a869eec4a7485a3c4d36400bd7a4228"><td class="memItemLeft" align="right" valign="top">
 void&#160;</td><td class="memItemRight" valign="bottom"><b>ScheduleSendObjectSelection</b> ()</td></tr>
 <tr class="separator:a7a869eec4a7485a3c4d36400bd7a4228 inherit pub_methods_classxii_game_object_document"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -460,42 +481,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>ScheduleSendObjectSel
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SendObjectSelection</b> ()</td></tr>
 <tr class="memdesc:af63a8d0c35315bd3fbf0be3c57e6b5f8 inherit pub_methods_classxii_game_object_document"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends the current object selection, but only if it was modified or specifically tagged for resending with ScheduleSendObjectSelection(). <br /></td></tr>
 <tr class="separator:af63a8d0c35315bd3fbf0be3c57e6b5f8 inherit pub_methods_classxii_game_object_document"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4f0f67ecb9c4a543f0c9e4116ac58da3 inherit pub_methods_classxii_game_object_document" id="r_a4f0f67ecb9c4a543f0c9e4116ac58da3"><td class="memItemLeft" align="right" valign="top">
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>GetAddAmbientLight</b> () const</td></tr>
-<tr class="separator:a4f0f67ecb9c4a543f0c9e4116ac58da3 inherit pub_methods_classxii_game_object_document"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aefc12b4a5b00de34d9e9fff7ba9b81ab inherit pub_methods_classxii_game_object_document" id="r_aefc12b4a5b00de34d9e9fff7ba9b81ab"><td class="memItemLeft" align="right" valign="top">
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SetAddAmbientLight</b> (bool b)</td></tr>
-<tr class="separator:aefc12b4a5b00de34d9e9fff7ba9b81ab inherit pub_methods_classxii_game_object_document"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae1a7262d64522954c8da8229ccaeb54c inherit pub_methods_classxii_game_object_document" id="r_ae1a7262d64522954c8da8229ccaeb54c"><td class="memItemLeft" align="right" valign="top">
-float&#160;</td><td class="memItemRight" valign="bottom"><b>GetSimulationSpeed</b> () const</td></tr>
-<tr class="separator:ae1a7262d64522954c8da8229ccaeb54c inherit pub_methods_classxii_game_object_document"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9bd0f2f222506efc7d50613ba08ae3c6 inherit pub_methods_classxii_game_object_document" id="r_a9bd0f2f222506efc7d50613ba08ae3c6"><td class="memItemLeft" align="right" valign="top">
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SetSimulationSpeed</b> (float f)</td></tr>
-<tr class="separator:a9bd0f2f222506efc7d50613ba08ae3c6 inherit pub_methods_classxii_game_object_document"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af2acb930590552e93de7fbe6c9fe137f inherit pub_methods_classxii_game_object_document" id="r_af2acb930590552e93de7fbe6c9fe137f"><td class="memItemLeft" align="right" valign="top">
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>GetRenderSelectionOverlay</b> () const</td></tr>
-<tr class="separator:af2acb930590552e93de7fbe6c9fe137f inherit pub_methods_classxii_game_object_document"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac90f592ec44d0a132a3dd5bb8bdce6c7 inherit pub_methods_classxii_game_object_document" id="r_ac90f592ec44d0a132a3dd5bb8bdce6c7"><td class="memItemLeft" align="right" valign="top">
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SetRenderSelectionOverlay</b> (bool b)</td></tr>
-<tr class="separator:ac90f592ec44d0a132a3dd5bb8bdce6c7 inherit pub_methods_classxii_game_object_document"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2f8a188d9836b78fe182420930952da6 inherit pub_methods_classxii_game_object_document" id="r_a2f8a188d9836b78fe182420930952da6"><td class="memItemLeft" align="right" valign="top">
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>GetRenderVisualizers</b> () const</td></tr>
-<tr class="separator:a2f8a188d9836b78fe182420930952da6 inherit pub_methods_classxii_game_object_document"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a030392149d6647def64f2c58e17cc5d1 inherit pub_methods_classxii_game_object_document" id="r_a030392149d6647def64f2c58e17cc5d1"><td class="memItemLeft" align="right" valign="top">
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SetRenderVisualizers</b> (bool b)</td></tr>
-<tr class="separator:a030392149d6647def64f2c58e17cc5d1 inherit pub_methods_classxii_game_object_document"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abd263e58e40b93df989c42e7a0081cfe inherit pub_methods_classxii_game_object_document" id="r_abd263e58e40b93df989c42e7a0081cfe"><td class="memItemLeft" align="right" valign="top">
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>GetRenderShapeIcons</b> () const</td></tr>
-<tr class="separator:abd263e58e40b93df989c42e7a0081cfe inherit pub_methods_classxii_game_object_document"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae64e014574e70ffba0f2389947fcc3c1 inherit pub_methods_classxii_game_object_document" id="r_ae64e014574e70ffba0f2389947fcc3c1"><td class="memItemLeft" align="right" valign="top">
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SetRenderShapeIcons</b> (bool b)</td></tr>
-<tr class="separator:ae64e014574e70ffba0f2389947fcc3c1 inherit pub_methods_classxii_game_object_document"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6580d55f15c0b4722b3648592d7f0cd4 inherit pub_methods_classxii_game_object_document" id="r_a6580d55f15c0b4722b3648592d7f0cd4"><td class="memItemLeft" align="right" valign="top">
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>GetPickTransparent</b> () const</td></tr>
-<tr class="separator:a6580d55f15c0b4722b3648592d7f0cd4 inherit pub_methods_classxii_game_object_document"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae600313ad50e180d083187b6f7a26d9f inherit pub_methods_classxii_game_object_document" id="r_ae600313ad50e180d083187b6f7a26d9f"><td class="memItemLeft" align="right" valign="top">
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SetPickTransparent</b> (bool b)</td></tr>
-<tr class="separator:ae600313ad50e180d083187b6f7a26d9f inherit pub_methods_classxii_game_object_document"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2440004c56f2b12d0ea5bc0e911a7a6b inherit pub_methods_classxii_game_object_document" id="r_a2440004c56f2b12d0ea5bc0e911a7a6b"><td class="memItemLeft" align="right" valign="top">
 void&#160;</td><td class="memItemRight" valign="bottom"><b>DetermineNodeName</b> (const <a class="el" href="../../da/dd8/classxii_document_object.html">xiiDocumentObject</a> *pObject, const <a class="el" href="../../dc/d1d/classxii_uuid.html">xiiUuid</a> &amp;prefabGuid, <a class="el" href="../../d4/dbb/classxii_string_builder.html">xiiStringBuilder</a> &amp;out_sResult, QIcon *out_pIcon=nullptr) const</td></tr>
 <tr class="memdesc:a2440004c56f2b12d0ea5bc0e911a7a6b inherit pub_methods_classxii_game_object_document"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates a good name for pObject. Queries the "Name" property, child components and asset properties, if necessary. <br /></td></tr>
@@ -539,6 +524,49 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>GetGizmoMoveParentOnl
 <tr class="memitem:a90ab26bbe62d468fc45224de33adc30f inherit pub_methods_classxii_game_object_document" id="r_a90ab26bbe62d468fc45224de33adc30f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dbf/classxii_game_object_document.html#a90ab26bbe62d468fc45224de33adc30f">ComputeTopLevelSelectedGameObjects</a> (<a class="el" href="../../d8/df8/classxii_deque.html">xiiDeque</a>&lt; <a class="el" href="../../d8/da2/structxii_selected_game_object.html">xiiSelectedGameObject</a> &gt; &amp;out_selection)</td></tr>
 <tr class="memdesc:a90ab26bbe62d468fc45224de33adc30f inherit pub_methods_classxii_game_object_document"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finds all objects that are selected at the top level, ie. none of their parents is selected.  <br /></td></tr>
 <tr class="separator:a90ab26bbe62d468fc45224de33adc30f inherit pub_methods_classxii_game_object_document"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f0f67ecb9c4a543f0c9e4116ac58da3 inherit pub_methods_classxii_game_object_document" id="r_a4f0f67ecb9c4a543f0c9e4116ac58da3"><td class="memItemLeft" align="right" valign="top">
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>GetAddAmbientLight</b> () const</td></tr>
+<tr class="separator:a4f0f67ecb9c4a543f0c9e4116ac58da3 inherit pub_methods_classxii_game_object_document"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aefc12b4a5b00de34d9e9fff7ba9b81ab inherit pub_methods_classxii_game_object_document" id="r_aefc12b4a5b00de34d9e9fff7ba9b81ab"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetAddAmbientLight</b> (bool b)</td></tr>
+<tr class="separator:aefc12b4a5b00de34d9e9fff7ba9b81ab inherit pub_methods_classxii_game_object_document"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1a7262d64522954c8da8229ccaeb54c inherit pub_methods_classxii_game_object_document" id="r_ae1a7262d64522954c8da8229ccaeb54c"><td class="memItemLeft" align="right" valign="top">
+float&#160;</td><td class="memItemRight" valign="bottom"><b>GetSimulationSpeed</b> () const</td></tr>
+<tr class="separator:ae1a7262d64522954c8da8229ccaeb54c inherit pub_methods_classxii_game_object_document"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9bd0f2f222506efc7d50613ba08ae3c6 inherit pub_methods_classxii_game_object_document" id="r_a9bd0f2f222506efc7d50613ba08ae3c6"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetSimulationSpeed</b> (float f)</td></tr>
+<tr class="separator:a9bd0f2f222506efc7d50613ba08ae3c6 inherit pub_methods_classxii_game_object_document"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2acb930590552e93de7fbe6c9fe137f inherit pub_methods_classxii_game_object_document" id="r_af2acb930590552e93de7fbe6c9fe137f"><td class="memItemLeft" align="right" valign="top">
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>GetRenderSelectionOverlay</b> () const</td></tr>
+<tr class="separator:af2acb930590552e93de7fbe6c9fe137f inherit pub_methods_classxii_game_object_document"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac90f592ec44d0a132a3dd5bb8bdce6c7 inherit pub_methods_classxii_game_object_document" id="r_ac90f592ec44d0a132a3dd5bb8bdce6c7"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetRenderSelectionOverlay</b> (bool b)</td></tr>
+<tr class="separator:ac90f592ec44d0a132a3dd5bb8bdce6c7 inherit pub_methods_classxii_game_object_document"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f8a188d9836b78fe182420930952da6 inherit pub_methods_classxii_game_object_document" id="r_a2f8a188d9836b78fe182420930952da6"><td class="memItemLeft" align="right" valign="top">
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>GetRenderVisualizers</b> () const</td></tr>
+<tr class="separator:a2f8a188d9836b78fe182420930952da6 inherit pub_methods_classxii_game_object_document"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a030392149d6647def64f2c58e17cc5d1 inherit pub_methods_classxii_game_object_document" id="r_a030392149d6647def64f2c58e17cc5d1"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetRenderVisualizers</b> (bool b)</td></tr>
+<tr class="separator:a030392149d6647def64f2c58e17cc5d1 inherit pub_methods_classxii_game_object_document"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd263e58e40b93df989c42e7a0081cfe inherit pub_methods_classxii_game_object_document" id="r_abd263e58e40b93df989c42e7a0081cfe"><td class="memItemLeft" align="right" valign="top">
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>GetRenderShapeIcons</b> () const</td></tr>
+<tr class="separator:abd263e58e40b93df989c42e7a0081cfe inherit pub_methods_classxii_game_object_document"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae64e014574e70ffba0f2389947fcc3c1 inherit pub_methods_classxii_game_object_document" id="r_ae64e014574e70ffba0f2389947fcc3c1"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetRenderShapeIcons</b> (bool b)</td></tr>
+<tr class="separator:ae64e014574e70ffba0f2389947fcc3c1 inherit pub_methods_classxii_game_object_document"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6580d55f15c0b4722b3648592d7f0cd4 inherit pub_methods_classxii_game_object_document" id="r_a6580d55f15c0b4722b3648592d7f0cd4"><td class="memItemLeft" align="right" valign="top">
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>GetPickTransparent</b> () const</td></tr>
+<tr class="separator:a6580d55f15c0b4722b3648592d7f0cd4 inherit pub_methods_classxii_game_object_document"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae600313ad50e180d083187b6f7a26d9f inherit pub_methods_classxii_game_object_document" id="r_ae600313ad50e180d083187b6f7a26d9f"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetPickTransparent</b> (bool b)</td></tr>
+<tr class="separator:ae600313ad50e180d083187b6f7a26d9f inherit pub_methods_classxii_game_object_document"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a605b82ecad45e547259f969c97560983 inherit pub_methods_classxii_game_object_document" id="r_a605b82ecad45e547259f969c97560983"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetActiveParent</b> (<a class="el" href="../../dc/d1d/classxii_uuid.html">xiiUuid</a> object)</td></tr>
+<tr class="memdesc:a605b82ecad45e547259f969c97560983 inherit pub_methods_classxii_game_object_document"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specifies which object is the 'active parent', which is the object under which newly created objects should be parented. <br /></td></tr>
+<tr class="separator:a605b82ecad45e547259f969c97560983 inherit pub_methods_classxii_game_object_document"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a631a4af22b2a2cfe6ef3f1f8f2a5f373 inherit pub_methods_classxii_game_object_document" id="r_a631a4af22b2a2cfe6ef3f1f8f2a5f373"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dc/d1d/classxii_uuid.html">xiiUuid</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dbf/classxii_game_object_document.html#a631a4af22b2a2cfe6ef3f1f8f2a5f373">GetActiveParent</a> () const</td></tr>
+<tr class="memdesc:a631a4af22b2a2cfe6ef3f1f8f2a5f373 inherit pub_methods_classxii_game_object_document"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the object under which newly created objects should be parented.  <br /></td></tr>
+<tr class="separator:a631a4af22b2a2cfe6ef3f1f8f2a5f373 inherit pub_methods_classxii_game_object_document"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a69b191792c09e7fa5fe3b21c857659ab inherit pub_methods_classxii_game_object_document" id="r_a69b191792c09e7fa5fe3b21c857659ab"><td class="memItemLeft" align="right" valign="top">
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetGlobalTransform</b> (const <a class="el" href="../../da/dd8/classxii_document_object.html">xiiDocumentObject</a> *pObject, const <a class="el" href="../../d5/d13/classxii_transform_template.html">xiiTransform</a> &amp;t, xiiUInt8 uiTransformationChanges) const</td></tr>
 <tr class="memdesc:a69b191792c09e7fa5fe3b21c857659ab inherit pub_methods_classxii_game_object_document"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the new global transformation of the given object. The transformationChanges bitmask (of type <a class="el" href="../../dc/d47/struct_transformation_changes.html">TransformationChanges</a>) allows to tell the system that, e.g. only translation has changed and thus some work can be spared. <br /></td></tr>
@@ -556,7 +584,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>SetGlobalTransformPar
 <tr class="memdesc:a767577f4ea76914d35c4ad9b55fc0efc inherit pub_methods_classxii_game_object_document"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the global transform of the parent and combines it with the local transform of the given object. This function does not return a cached value, but always computes it. It does update the internal cache for later reads though. <br /></td></tr>
 <tr class="separator:a767577f4ea76914d35c4ad9b55fc0efc inherit pub_methods_classxii_game_object_document"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5830843680a50487c76c92d6cead3cb9 inherit pub_methods_classxii_game_object_document" id="r_a5830843680a50487c76c92d6cead3cb9"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dbf/classxii_game_object_document.html#a5830843680a50487c76c92d6cead3cb9">ComputeObjectTransformation</a> (const <a class="el" href="../../da/dd8/classxii_document_object.html">xiiDocumentObject</a> *pObject, <a class="el" href="../../d5/d13/classxii_transform_template.html">xiiTransform</a> &amp;out_result) const override</td></tr>
-<tr class="memdesc:a5830843680a50487c76c92d6cead3cb9 inherit pub_methods_classxii_game_object_document"><td class="mdescLeft">&#160;</td><td class="mdescRight">Traverses the pObject hierarchy up until it hits an <a class="el" href="../../d0/d91/classxii_game_object.html" title="This class represents an object inside the world.">xiiGameObject</a>, then computes the global transform of that.  <br /></td></tr>
+<tr class="memdesc:a5830843680a50487c76c92d6cead3cb9 inherit pub_methods_classxii_game_object_document"><td class="mdescLeft">&#160;</td><td class="mdescRight">Traverses the pObject hierarchy up until it hits a <a class="el" href="../../d0/d91/classxii_game_object.html" title="This class represents an object inside the world.">xiiGameObject</a>, then computes the global transform of that.  <br /></td></tr>
 <tr class="separator:a5830843680a50487c76c92d6cead3cb9 inherit pub_methods_classxii_game_object_document"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classxii_asset_document"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_classxii_asset_document')"><img src="../../closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="../../d7/dd5/classxii_asset_document.html">xiiAssetDocument</a></td></tr>
 <tr class="memitem:aca6a1318ebae2e52a258bbbb01fdbf40 inherit pub_methods_classxii_asset_document" id="r_aca6a1318ebae2e52a258bbbb01fdbf40"><td class="memItemLeft" align="right" valign="top">
@@ -740,10 +768,10 @@ const <a class="el" href="../../d8/da9/classxii_document.html">xiiDocument</a> *
 <tr class="memitem:aea6bf18cfcee203d52a5063db6726694 inherit pub_methods_classxii_document" id="r_aea6bf18cfcee203d52a5063db6726694"><td class="memItemLeft" align="right" valign="top">
 <a class="el" href="../../d8/da9/classxii_document.html">xiiDocument</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetActiveSubDocument</b> ()</td></tr>
 <tr class="separator:aea6bf18cfcee203d52a5063db6726694 inherit pub_methods_classxii_document"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3b43c6bfc3dd3f4626f57229654ac0ac inherit pub_methods_classxii_document" id="r_a3b43c6bfc3dd3f4626f57229654ac0ac"><td class="memItemLeft" align="right" valign="top">
-void&#160;</td><td class="memItemRight" valign="bottom"><b>RevertPrefabs</b> (const <a class="el" href="../../d8/df8/classxii_deque.html">xiiDeque</a>&lt; const <a class="el" href="../../da/dd8/classxii_document_object.html">xiiDocumentObject</a> * &gt; &amp;selection)</td></tr>
-<tr class="memdesc:a3b43c6bfc3dd3f4626f57229654ac0ac inherit pub_methods_classxii_document"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resets the given objects to their template prefab state, if they have local modifications. <br /></td></tr>
-<tr class="separator:a3b43c6bfc3dd3f4626f57229654ac0ac inherit pub_methods_classxii_document"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f37c51b32691419ceb0b4b1f7933100 inherit pub_methods_classxii_document" id="r_a2f37c51b32691419ceb0b4b1f7933100"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><b>RevertPrefabs</b> (<a class="el" href="../../d0/d60/classxii_array_ptr.html">xiiArrayPtr</a>&lt; const <a class="el" href="../../da/dd8/classxii_document_object.html">xiiDocumentObject</a> * &gt; selection)</td></tr>
+<tr class="memdesc:a2f37c51b32691419ceb0b4b1f7933100 inherit pub_methods_classxii_document"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resets the given objects to their template prefab state, if they have local modifications. <br /></td></tr>
+<tr class="separator:a2f37c51b32691419ceb0b4b1f7933100 inherit pub_methods_classxii_document"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2983b30788bcab87e46a88f0b98108df inherit pub_methods_classxii_document" id="r_a2983b30788bcab87e46a88f0b98108df"><td class="memItemLeft" align="right" valign="top">
 virtual <a class="el" href="../../d0/d54/structxii_status.html">xiiStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><b>CreatePrefabDocument</b> (<a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sFile, <a class="el" href="../../d0/d60/classxii_array_ptr.html">xiiArrayPtr</a>&lt; const <a class="el" href="../../da/dd8/classxii_document_object.html">xiiDocumentObject</a> * &gt; rootObjects, const <a class="el" href="../../dc/d1d/classxii_uuid.html">xiiUuid</a> &amp;invPrefabSeed, <a class="el" href="../../dc/d1d/classxii_uuid.html">xiiUuid</a> &amp;out_newDocumentGuid, <a class="el" href="../../dc/d84/structxii_delegate.html">xiiDelegate</a>&lt; void(<a class="el" href="../../d1/d94/classxii_abstract_object_node.html">xiiAbstractObjectNode</a> *)&gt; adjustGraphNodeCB={}, bool bKeepOpen=false, <a class="el" href="../../dc/d84/structxii_delegate.html">xiiDelegate</a>&lt; void(<a class="el" href="../../d9/d21/classxii_abstract_object_graph.html">xiiAbstractObjectGraph</a> &amp;graph, <a class="el" href="../../dc/da4/classxii_dynamic_array.html">xiiDynamicArray</a>&lt; <a class="el" href="../../d1/d94/classxii_abstract_object_node.html">xiiAbstractObjectNode</a> * &gt; &amp;graphRootNodes)&gt; finalizeGraphCB={})</td></tr>
 <tr class="separator:a2983b30788bcab87e46a88f0b98108df inherit pub_methods_classxii_document"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -895,6 +923,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>SyncObjectHiddenState
 void&#160;</td><td class="memItemRight" valign="bottom"><b>UpdateObjectDebugTargets</b> ()</td></tr>
 <tr class="memdesc:a50c70a369bc79c0d385a449802ff9d9a inherit pro_methods_classxii_scene_document"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finds all objects that are actively being 'debugged' (or visualized) by the editor and thus should get the debug visualization flag in the runtime. <br /></td></tr>
 <tr class="separator:a50c70a369bc79c0d385a449802ff9d9a inherit pro_methods_classxii_scene_document"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad17f16856c393a998302350a2472f75d inherit pro_methods_classxii_scene_document" id="r_ad17f16856c393a998302350a2472f75d"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SelectionManagerEventHandler</b> (const <a class="el" href="../../d2/dd6/structxii_selection_manager_event.html">xiiSelectionManagerEvent</a> &amp;e)</td></tr>
+<tr class="separator:ad17f16856c393a998302350a2472f75d inherit pro_methods_classxii_scene_document"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a79035ddef199407ac964bd68a3764530 inherit pro_methods_classxii_scene_document" id="r_a79035ddef199407ac964bd68a3764530"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d0a/classxii_scene_document.html#a79035ddef199407ac964bd68a3764530">OnInterDocumentMessage</a> (<a class="el" href="../../dc/d71/classxii_reflected_class.html">xiiReflectedClass</a> *pMessage, <a class="el" href="../../d8/da9/classxii_document.html">xiiDocument</a> *pSender) override</td></tr>
 <tr class="memdesc:a79035ddef199407ac964bd68a3764530 inherit pro_methods_classxii_scene_document"><td class="mdescLeft">&#160;</td><td class="mdescRight">Communication with other document types.  <br /></td></tr>
 <tr class="separator:a79035ddef199407ac964bd68a3764530 inherit pro_methods_classxii_scene_document"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1012,6 +1043,18 @@ GameMode::Enum&#160;</td><td class="memItemRight" valign="bottom"><b>m_GameMode<
 <tr class="memitem:af6c5277ccf23580f41db0435d1ac84b5 inherit pro_attribs_classxii_scene_document" id="r_af6c5277ccf23580f41db0435d1ac84b5"><td class="memItemLeft" align="right" valign="top">
 <a class="el" href="../../d9/d59/classxii_rtti_converter_context.html">xiiRttiConverterContext</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_Context</b></td></tr>
 <tr class="separator:af6c5277ccf23580f41db0435d1ac84b5 inherit pro_attribs_classxii_scene_document"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9a9aa3402265440ba027ee74e9a0144 inherit pro_attribs_classxii_scene_document" id="r_ad9a9aa3402265440ba027ee74e9a0144"><td class="memItemLeft" align="right" valign="top">
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_bStoreSelectionChange</b> = true</td></tr>
+<tr class="separator:ad9a9aa3402265440ba027ee74e9a0144 inherit pro_attribs_classxii_scene_document"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b4b6b0106ca898789590d25369bd430 inherit pro_attribs_classxii_scene_document" id="r_a7b4b6b0106ca898789590d25369bd430"><td class="memItemLeft" align="right" valign="top">
+xiiInt8&#160;</td><td class="memItemRight" valign="bottom"><b>m_iAllowSelectionChanges</b> = -1</td></tr>
+<tr class="separator:a7b4b6b0106ca898789590d25369bd430 inherit pro_attribs_classxii_scene_document"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a325bd1b514d14dc65c155aa9aada0f85 inherit pro_attribs_classxii_scene_document" id="r_a325bd1b514d14dc65c155aa9aada0f85"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="../../dc/d22/classxii_event.html">xiiCopyOnBroadcastEvent</a>&lt; constxiiSelectionManagerEvent &amp; &gt;::Unsubscriber&#160;</td><td class="memItemRight" valign="bottom"><b>m_SelectionHandlerUnsubscriber</b></td></tr>
+<tr class="separator:a325bd1b514d14dc65c155aa9aada0f85 inherit pro_attribs_classxii_scene_document"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74806164e0aa2eb13fcc42bab7c7b5c8 inherit pro_attribs_classxii_scene_document" id="r_a74806164e0aa2eb13fcc42bab7c7b5c8"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="../../d8/df8/classxii_deque.html">xiiDeque</a>&lt; <a class="el" href="../../da/dc4/structxii_scene_document_1_1_selection_history.html">SelectionHistory</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_SelectionStack</b></td></tr>
+<tr class="separator:a74806164e0aa2eb13fcc42bab7c7b5c8 inherit pro_attribs_classxii_scene_document"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_classxii_game_object_document"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_attribs_classxii_game_object_document')"><img src="../../closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="../../d1/dbf/classxii_game_object_document.html">xiiGameObjectDocument</a></td></tr>
 <tr class="memitem:a2edbc09418071c12130d3ab96b4e03d7 inherit pro_attribs_classxii_game_object_document" id="r_a2edbc09418071c12130d3ab96b4e03d7"><td class="memItemLeft" align="right" valign="top">
 <a class="el" href="../../d6/d9c/structxii_game_object_document_1_1_game_mode_data.html">GameModeData</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_CurrentMode</b></td></tr>
@@ -1039,7 +1082,7 @@ xiiEventSubscriptionID&#160;</td><td class="memItemRight" valign="bottom"><b>m_O
 xiiAssetDocEngineConnection&#160;</td><td class="memItemRight" valign="bottom"><b>m_EngineConnectionType</b> = xiiAssetDocEngineConnection::None</td></tr>
 <tr class="separator:a19ddd7bb909f662a2bd4c95e76fe6a26 inherit pro_attribs_classxii_asset_document"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6a2447dd126d6c249f4ce003162057d1 inherit pro_attribs_classxii_asset_document" id="r_a6a2447dd126d6c249f4ce003162057d1"><td class="memItemLeft" align="right" valign="top">
-<a class="el" href="../../d3/df5/classxii_editor_engine_connection.html">xiiEditorEngineConnection</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_pEngineConnection</b> = nullptr</td></tr>
+<a class="el" href="../../d3/df5/classxii_editor_engine_connection.html">xiiEditorEngineConnection</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_pEngineConnection</b></td></tr>
 <tr class="separator:a6a2447dd126d6c249f4ce003162057d1 inherit pro_attribs_classxii_asset_document"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abfc9c73d452f9576aa1c14bd9c94a8e8 inherit pro_attribs_classxii_asset_document" id="r_abfc9c73d452f9576aa1c14bd9c94a8e8"><td class="memItemLeft" align="right" valign="top">
 <a class="el" href="../../d8/dc2/classxii_hash_table.html">xiiHashTable</a>&lt; <a class="el" href="../../dc/d1d/classxii_uuid.html">xiiUuid</a>, <a class="el" href="../../d3/d05/classxii_editor_engine_sync_object.html">xiiEditorEngineSyncObject</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_AllSyncObjects</b></td></tr>
@@ -1081,6 +1124,35 @@ const <a class="el" href="../../d0/d90/structxii_document_type_descriptor.html">
 <tr class="separator:ae05bf7f95e63941c625f9ed38cb81422 inherit pro_attribs_classxii_document"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a3440ae6eef0cf2d6bc9445470d9b6af5" name="a3440ae6eef0cf2d6bc9445470d9b6af5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3440ae6eef0cf2d6bc9445470d9b6af5">&#9670;&#160;</a></span>GetRedirectedGameObjectDoc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/dbf/classxii_game_object_document.html">xiiGameObjectDocument</a> * xiiScene2Document::GetRedirectedGameObjectDoc </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>In case a document consists of multiple layers, this redirection is necessary to execute actions on the active layer. </p>
+
+<p>Reimplemented from <a class="el" href="../../d1/dbf/classxii_game_object_document.html#a719d94cc885ac7e1c618d5473c6e96de">xiiGameObjectDocument</a>.</p>
+
+</div>
+</div>
 <a id="af688258a4d4e2d23afe6c5432418451c" name="af688258a4d4e2d23afe6c5432418451c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af688258a4d4e2d23afe6c5432418451c">&#9670;&#160;</a></span>GetSettingsObject()</h2>
 
@@ -1250,6 +1322,33 @@ const <a class="el" href="../../d0/d90/structxii_document_type_descriptor.html">
 
 </div>
 </div>
+<a id="acfb1a8590a1c98f20c80b3e466ab5331" name="acfb1a8590a1c98f20c80b3e466ab5331"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acfb1a8590a1c98f20c80b3e466ab5331">&#9670;&#160;</a></span>UndoSelection()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void xiiScene2Document::UndoSelection </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented from <a class="el" href="../../da/d0a/classxii_scene_document.html">xiiSceneDocument</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>/home/runner/work/XII/XII/Source/EditorPlugins/Scene/EditorPluginScene/Scene/<a class="el" href="../../de/d5d/_scene2_document_8h_source.html">Scene2Document.h</a></li>
 <li>/home/runner/work/XII/XII/Source/EditorPlugins/Scene/EditorPluginScene/Scene/<b>Scene2Document.cpp</b></li>
@@ -1260,7 +1359,7 @@ const <a class="el" href="../../d0/d90/structxii_document_type_descriptor.html">
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../df/dac/classxii_scene2_document.html">xiiScene2Document</a></li>
-    <li class="footer">Generated on Thu Feb 20 2025 00:19:29 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Thu Mar 13 2025 23:56:47 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

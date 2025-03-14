@@ -2,8 +2,8 @@ var structxii_plugin_bundle =
 [
     [ "IsStateEqual", "d3/d15/structxii_plugin_bundle.html#a5fbbf8279194b1cfe5f411fe67dfe953", null ],
     [ "ReadBundleFromDDL", "d3/d15/structxii_plugin_bundle.html#acf1fc3238c7b71a5e15a0ff82a342088", null ],
-    [ "ReadStateFromDDL", "d3/d15/structxii_plugin_bundle.html#a852143d53b2ba7b0b1a6caf4163b94ea", null ],
-    [ "WriteStateToDDL", "d3/d15/structxii_plugin_bundle.html#a644ac8963aa77baeb2c415eb15581590", null ],
+    [ "ReadStateFromDDL", "d3/d15/structxii_plugin_bundle.html#a2695c451f09896cffa71ac3a157935bc", null ],
+    [ "WriteStateToDDL", "d3/d15/structxii_plugin_bundle.html#a69c5c20dc7167cfbe31b02967ea8113f", null ],
     [ "m_bLoadCopy", "d3/d15/structxii_plugin_bundle.html#ab05e98ef22b782d61525813210257394", null ],
     [ "m_bMandatory", "d3/d15/structxii_plugin_bundle.html#a4ca176b19884e9e4161574be87c96a98", null ],
     [ "m_bSelected", "d3/d15/structxii_plugin_bundle.html#a4b9e524293e104fba1b4be7e6316f367", null ],

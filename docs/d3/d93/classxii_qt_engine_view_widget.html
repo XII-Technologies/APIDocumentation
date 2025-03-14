@@ -296,6 +296,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>EngineViewProcessEven
 <tr class="memitem:a89182a582fc24aaebdbefc8618eac77c" id="r_a89182a582fc24aaebdbefc8618eac77c"><td class="memItemLeft" align="right" valign="top"><a id="a89182a582fc24aaebdbefc8618eac77c" name="a89182a582fc24aaebdbefc8618eac77c"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>ShowRestartButton</b> (bool bShow)</td></tr>
 <tr class="separator:a89182a582fc24aaebdbefc8618eac77c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f5e6cf5515dc834dee245420b1b2165" id="r_a3f5e6cf5515dc834dee245420b1b2165"><td class="memItemLeft" align="right" valign="top"><a id="a3f5e6cf5515dc834dee245420b1b2165" name="a3f5e6cf5515dc834dee245420b1b2165"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>RecreateEngineViewport</b> ()</td></tr>
+<tr class="separator:a3f5e6cf5515dc834dee245420b1b2165"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6e89ab542f2d0d971e3dfb40666bcf40" id="r_a6e89ab542f2d0d971e3dfb40666bcf40"><td class="memItemLeft" align="right" valign="top"><a id="a6e89ab542f2d0d971e3dfb40666bcf40" name="a6e89ab542f2d0d971e3dfb40666bcf40"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>OnOpenContextMenu</b> (QPoint globalPos)</td></tr>
 <tr class="separator:a6e89ab542f2d0d971e3dfb40666bcf40"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -347,12 +350,15 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>m_fCameraTargetFovOr
 <tr class="memitem:adea7d1c122b7cd7843fa687ca606a80d" id="r_adea7d1c122b7cd7843fa687ca606a80d"><td class="memItemLeft" align="right" valign="top"><a id="adea7d1c122b7cd7843fa687ca606a80d" name="adea7d1c122b7cd7843fa687ca606a80d"></a>
 <a class="el" href="../../d7/dc1/structxii_time.html">xiiTime</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_LastCameraUpdate</b></td></tr>
 <tr class="separator:adea7d1c122b7cd7843fa687ca606a80d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a81a6d6dab7709351a94bfabbfc3b67f0" id="r_a81a6d6dab7709351a94bfabbfc3b67f0"><td class="memItemLeft" align="right" valign="top"><a id="a81a6d6dab7709351a94bfabbfc3b67f0" name="a81a6d6dab7709351a94bfabbfc3b67f0"></a>
-QHBoxLayout *&#160;</td><td class="memItemRight" valign="bottom"><b>m_pRestartButtonLayout</b> = nullptr</td></tr>
-<tr class="separator:a81a6d6dab7709351a94bfabbfc3b67f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d85ef5fc883be3e5b3287c3ff53dad0" id="r_a5d85ef5fc883be3e5b3287c3ff53dad0"><td class="memItemLeft" align="right" valign="top"><a id="a5d85ef5fc883be3e5b3287c3ff53dad0" name="a5d85ef5fc883be3e5b3287c3ff53dad0"></a>
+QHBoxLayout *&#160;</td><td class="memItemRight" valign="bottom"><b>m_pMainLayout</b> = nullptr</td></tr>
+<tr class="separator:a5d85ef5fc883be3e5b3287c3ff53dad0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3790c7a961fa2528a16c3c4c9eee2d70" id="r_a3790c7a961fa2528a16c3c4c9eee2d70"><td class="memItemLeft" align="right" valign="top"><a id="a3790c7a961fa2528a16c3c4c9eee2d70" name="a3790c7a961fa2528a16c3c4c9eee2d70"></a>
 QPushButton *&#160;</td><td class="memItemRight" valign="bottom"><b>m_pRestartButton</b> = nullptr</td></tr>
 <tr class="separator:a3790c7a961fa2528a16c3c4c9eee2d70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4dd091c71c9edf13809a343c440ac4c3" id="r_a4dd091c71c9edf13809a343c440ac4c3"><td class="memItemLeft" align="right" valign="top"><a id="a4dd091c71c9edf13809a343c440ac4c3" name="a4dd091c71c9edf13809a343c440ac4c3"></a>
+QWidget *&#160;</td><td class="memItemRight" valign="bottom"><b>m_pViewportWidget</b> = nullptr</td></tr>
+<tr class="separator:a4dd091c71c9edf13809a343c440ac4c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa818692ebe6db690f2dd6d36429dfca9" id="r_aa818692ebe6db690f2dd6d36429dfca9"><td class="memItemLeft" align="right" valign="top"><a id="aa818692ebe6db690f2dd6d36429dfca9" name="aa818692ebe6db690f2dd6d36429dfca9"></a>
 <a class="el" href="../../d8/da8/structxii_object_picking_result.html">xiiObjectPickingResult</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_LastPickingResult</b></td></tr>
 <tr class="separator:aa818692ebe6db690f2dd6d36429dfca9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -501,7 +507,7 @@ static <a class="el" href="../../d4/d5f/structxii_qt_engine_view_widget_1_1_inte
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d3/d93/classxii_qt_engine_view_widget.html">xiiQtEngineViewWidget</a></li>
-    <li class="footer">Generated on Thu Feb 20 2025 00:19:28 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Thu Mar 13 2025 23:56:46 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

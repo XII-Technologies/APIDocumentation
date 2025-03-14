@@ -5,8 +5,8 @@ var classxii_long_op_controller_manager =
     [ "CancelOperation", "df/d2a/classxii_long_op_controller_manager.html#a2ed250e5f6733045c27203d9674eafc2", null ],
     [ "GetOperation", "df/d2a/classxii_long_op_controller_manager.html#afeb96a7ad768f47b7e56d9376ff3d294", null ],
     [ "GetOperations", "df/d2a/classxii_long_op_controller_manager.html#ae30fdfd30871321d89e359d448cea7a1", null ],
-    [ "RegisterLongOp", "df/d2a/classxii_long_op_controller_manager.html#a5a0959af78e3864e3a18d794adab3f3e", null ],
+    [ "RegisterLongOp", "df/d2a/classxii_long_op_controller_manager.html#a8381b1b132c9fc18f1c2848ea12af1e1", null ],
     [ "StartOperation", "df/d2a/classxii_long_op_controller_manager.html#a44f725c908a2a843700c2f57b1d9485a", null ],
-    [ "UnregisterLongOp", "df/d2a/classxii_long_op_controller_manager.html#ac95d1fdbd157dd508d061f0e5f9df1bc", null ],
+    [ "UnregisterLongOp", "df/d2a/classxii_long_op_controller_manager.html#a0774d0d1b5b89d29acd207e533fe47c0", null ],
     [ "m_Events", "df/d2a/classxii_long_op_controller_manager.html#aca115c30e42ca66f3e4622c55984e60d", null ]
 ];

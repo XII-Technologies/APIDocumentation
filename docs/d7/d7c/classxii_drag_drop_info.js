@@ -1,5 +1,6 @@
 var classxii_drag_drop_info =
 [
+    [ "m_ActiveParentObject", "d7/d7c/classxii_drag_drop_info.html#ad0619af15874c704cd558ea0e6eaaa2b", null ],
     [ "m_iTargetObjectInsertChildIndex", "d7/d7c/classxii_drag_drop_info.html#aa0b7012deb92ee1c5ea3e14322ef208a", null ],
     [ "m_iTargetObjectSubID", "d7/d7c/classxii_drag_drop_info.html#a657b925fe9a59d4cc405664b025f86d4", null ],
     [ "m_pAdapter", "d7/d7c/classxii_drag_drop_info.html#a294202861f31ced47f1c2e6f26b967ed", null ],

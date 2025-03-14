@@ -151,11 +151,11 @@ Inheritance diagram for xiiLongOpProxy:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:acb8dc3c320e9835c3feb5b79b22f6238" id="r_acb8dc3c320e9835c3feb5b79b22f6238"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acb8dc3c320e9835c3feb5b79b22f6238">InitializeRegistered</a> (const <a class="el" href="../../dc/d1d/classxii_uuid.html">xiiUuid</a> &amp;documentGuid, const <a class="el" href="../../dc/d1d/classxii_uuid.html">xiiUuid</a> &amp;componentGuid)</td></tr>
-<tr class="memdesc:acb8dc3c320e9835c3feb5b79b22f6238"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called once by <a class="el" href="../../df/d2a/classxii_long_op_controller_manager.html#a5a0959af78e3864e3a18d794adab3f3e" title="Typically called by xiiLongOpsAdapter when a component that has an xiiLongOpAttribute is added to a s...">xiiLongOpControllerManager::RegisterLongOp()</a> to inform the proxy to which <a class="el" href="../../d8/da9/classxii_document.html">xiiDocument</a> and component (<a class="el" href="../../da/dd8/classxii_document_object.html">xiiDocumentObject</a>) it is linked.  <br /></td></tr>
+<tr class="memdesc:acb8dc3c320e9835c3feb5b79b22f6238"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called once by <a class="el" href="../../df/d2a/classxii_long_op_controller_manager.html#a8381b1b132c9fc18f1c2848ea12af1e1" title="Typically called by xiiLongOpsAdapter when a component that has a xiiLongOpAttribute is added to a sc...">xiiLongOpControllerManager::RegisterLongOp()</a> to inform the proxy to which <a class="el" href="../../d8/da9/classxii_document.html">xiiDocument</a> and component (<a class="el" href="../../da/dd8/classxii_document_object.html">xiiDocumentObject</a>) it is linked.  <br /></td></tr>
 <tr class="separator:acb8dc3c320e9835c3feb5b79b22f6238"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:add770e15757ea1851eff470bc3398da8" id="r_add770e15757ea1851eff470bc3398da8"><td class="memItemLeft" align="right" valign="top">virtual const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#add770e15757ea1851eff470bc3398da8">GetDisplayName</a> () const =0</td></tr>
-<tr class="memdesc:add770e15757ea1851eff470bc3398da8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called by the <a class="el" href="../../dc/d51/classxii_qt_long_ops_panel.html" title="This panel listens to events from xiiLongOpControllerManager and displays all currently known long op...">xiiQtLongOpsPanel</a> to determine the display string to be shown in the UI.  <br /></td></tr>
-<tr class="separator:add770e15757ea1851eff470bc3398da8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a04fa686bae28bc738ff1d55d6eb6b0" id="r_a9a04fa686bae28bc738ff1d55d6eb6b0"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9a04fa686bae28bc738ff1d55d6eb6b0">GetDisplayName</a> () const =0</td></tr>
+<tr class="memdesc:a9a04fa686bae28bc738ff1d55d6eb6b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called by the <a class="el" href="../../dc/d51/classxii_qt_long_ops_panel.html" title="This panel listens to events from xiiLongOpControllerManager and displays all currently known long op...">xiiQtLongOpsPanel</a> to determine the display string to be shown in the UI.  <br /></td></tr>
+<tr class="separator:a9a04fa686bae28bc738ff1d55d6eb6b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae9a0c4a478bf05cb11f51b10ff3e74c7" id="r_ae9a0c4a478bf05cb11f51b10ff3e74c7"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae9a0c4a478bf05cb11f51b10ff3e74c7">GetReplicationInfo</a> (<a class="el" href="../../d4/dbb/classxii_string_builder.html">xiiStringBuilder</a> &amp;out_sReplicationOpType, <a class="el" href="../../d0/d18/classxii_stream_writer.html">xiiStreamWriter</a> &amp;inout_config)=0</td></tr>
 <tr class="memdesc:ae9a0c4a478bf05cb11f51b10ff3e74c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called every time the long op shall be executed.  <br /></td></tr>
 <tr class="separator:ae9a0c4a478bf05cb11f51b10ff3e74c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -227,8 +227,8 @@ static const <a class="el" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a>
 
 </div>
 </div>
-<a id="add770e15757ea1851eff470bc3398da8" name="add770e15757ea1851eff470bc3398da8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#add770e15757ea1851eff470bc3398da8">&#9670;&#160;</a></span>GetDisplayName()</h2>
+<a id="a9a04fa686bae28bc738ff1d55d6eb6b0" name="a9a04fa686bae28bc738ff1d55d6eb6b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a04fa686bae28bc738ff1d55d6eb6b0">&#9670;&#160;</a></span>GetDisplayName()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -237,7 +237,7 @@ static const <a class="el" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual const char * xiiLongOpProxy::GetDisplayName </td>
+          <td class="memname">virtual <a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> xiiLongOpProxy::GetDisplayName </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td> const</td>
@@ -252,7 +252,7 @@ static const <a class="el" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a>
 
 <p>Called by the <a class="el" href="../../dc/d51/classxii_qt_long_ops_panel.html" title="This panel listens to events from xiiLongOpControllerManager and displays all currently known long op...">xiiQtLongOpsPanel</a> to determine the display string to be shown in the UI. </p>
 
-<p>Implemented in <a class="el" href="../../db/dcb/classxii_long_op_proxy___bake_scene.html#a26df0245d3e83489c58133006ccc1283">xiiLongOpProxy_BakeScene</a>.</p>
+<p>Implemented in <a class="el" href="../../db/dcb/classxii_long_op_proxy___bake_scene.html#a4a8b917375bbd7dfa6c3e760dd4642cc">xiiLongOpProxy_BakeScene</a>.</p>
 
 </div>
 </div>
@@ -323,7 +323,7 @@ static const <a class="el" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a>
 </table>
 </div><div class="memdoc">
 
-<p>Called once by <a class="el" href="../../df/d2a/classxii_long_op_controller_manager.html#a5a0959af78e3864e3a18d794adab3f3e" title="Typically called by xiiLongOpsAdapter when a component that has an xiiLongOpAttribute is added to a s...">xiiLongOpControllerManager::RegisterLongOp()</a> to inform the proxy to which <a class="el" href="../../d8/da9/classxii_document.html">xiiDocument</a> and component (<a class="el" href="../../da/dd8/classxii_document_object.html">xiiDocumentObject</a>) it is linked. </p>
+<p>Called once by <a class="el" href="../../df/d2a/classxii_long_op_controller_manager.html#a8381b1b132c9fc18f1c2848ea12af1e1" title="Typically called by xiiLongOpsAdapter when a component that has a xiiLongOpAttribute is added to a sc...">xiiLongOpControllerManager::RegisterLongOp()</a> to inform the proxy to which <a class="el" href="../../d8/da9/classxii_document.html">xiiDocument</a> and component (<a class="el" href="../../da/dd8/classxii_document_object.html">xiiDocumentObject</a>) it is linked. </p>
 
 <p>Reimplemented in <a class="el" href="../../db/dcb/classxii_long_op_proxy___bake_scene.html#a3e17e1382d455aae26ef934c10fce456">xiiLongOpProxy_BakeScene</a>.</p>
 
@@ -338,7 +338,7 @@ static const <a class="el" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d9/de0/classxii_long_op_proxy.html">xiiLongOpProxy</a></li>
-    <li class="footer">Generated on Thu Feb 20 2025 00:19:28 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Thu Mar 13 2025 23:56:46 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

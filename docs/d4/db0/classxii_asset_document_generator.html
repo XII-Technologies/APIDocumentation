@@ -173,9 +173,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a7c50a3fb1475a8f1751d0a09e74e6a4b" id="r_a7c50a3fb1475a8f1751d0a09e74e6a4b"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7c50a3fb1475a8f1751d0a09e74e6a4b">GetGeneratorGroup</a> () const =0</td></tr>
 <tr class="memdesc:a7c50a3fb1475a8f1751d0a09e74e6a4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allows to merge the import modes of multiple generators in the UI in one group.  <br /></td></tr>
 <tr class="separator:a7c50a3fb1475a8f1751d0a09e74e6a4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afa83e4b51b24b64ad9f008d693bb1870" id="r_afa83e4b51b24b64ad9f008d693bb1870"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d0/d54/structxii_status.html">xiiStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afa83e4b51b24b64ad9f008d693bb1870">Generate</a> (<a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sInputFileAbs, <a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sMode, <a class="el" href="../../d8/da9/classxii_document.html">xiiDocument</a> *&amp;out_pGeneratedDocument)=0</td></tr>
-<tr class="memdesc:afa83e4b51b24b64ad9f008d693bb1870"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tells the generator to create a new asset document with the chosen mode.  <br /></td></tr>
-<tr class="separator:afa83e4b51b24b64ad9f008d693bb1870"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7bade3c373e409a296a7a6336f8a6ab3" id="r_a7bade3c373e409a296a7a6336f8a6ab3"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d0/d54/structxii_status.html">xiiStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7bade3c373e409a296a7a6336f8a6ab3">Generate</a> (<a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sInputFileAbs, <a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sMode, <a class="el" href="../../dc/da4/classxii_dynamic_array.html">xiiDynamicArray</a>&lt; <a class="el" href="../../d8/da9/classxii_document.html">xiiDocument</a> * &gt; &amp;out_generatedDocuments)=0</td></tr>
+<tr class="memdesc:a7bade3c373e409a296a7a6336f8a6ab3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tells the generator to create a new asset document with the chosen mode.  <br /></td></tr>
+<tr class="separator:a7bade3c373e409a296a7a6336f8a6ab3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad7b922382be4b6850750f0935e294299" id="r_ad7b922382be4b6850750f0935e294299"><td class="memItemLeft" align="right" valign="top"><a id="ad7b922382be4b6850750f0935e294299" name="ad7b922382be4b6850750f0935e294299"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>SupportsFileType</b> (<a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sFile) const</td></tr>
 <tr class="memdesc:ad7b922382be4b6850750f0935e294299"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether this generator supports the given file type for import. <br /></td></tr>
@@ -235,8 +235,8 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>xiiQtAssetImportDlg<
 <div class="textblock"><p>Provides functionality for importing files as asset documents. </p>
 <p>Derived from this class to add a custom importer (see existing derived classes for examples). Each importer typically handles one target asset type. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="afa83e4b51b24b64ad9f008d693bb1870" name="afa83e4b51b24b64ad9f008d693bb1870"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afa83e4b51b24b64ad9f008d693bb1870">&#9670;&#160;</a></span>Generate()</h2>
+<a id="a7bade3c373e409a296a7a6336f8a6ab3" name="a7bade3c373e409a296a7a6336f8a6ab3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7bade3c373e409a296a7a6336f8a6ab3">&#9670;&#160;</a></span>Generate()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -257,7 +257,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>xiiQtAssetImportDlg<
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../d8/da9/classxii_document.html">xiiDocument</a> *&amp;</td>          <td class="paramname"><span class="paramname"><em>out_pGeneratedDocument</em></span>&#160;)</td>
+          <td class="paramtype"><a class="el" href="../../dc/da4/classxii_dynamic_array.html">xiiDynamicArray</a>&lt; <a class="el" href="../../d8/da9/classxii_document.html">xiiDocument</a> * &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>out_generatedDocuments</em></span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -269,7 +269,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>xiiQtAssetImportDlg<
 
 <p>Tells the generator to create a new asset document with the chosen mode. </p>
 
-<p>Implemented in <a class="el" href="../../d4/dd5/classxii_animated_mesh_asset_document_generator.html#a1e8fe99c74193edb63d2ebd91e23edb3">xiiAnimatedMeshAssetDocumentGenerator</a>, <a class="el" href="../../d4/d85/classxii_animation_clip_asset_document_generator.html#a41aa5e515804626b5d6e2014327563eb">xiiAnimationClipAssetDocumentGenerator</a>, <a class="el" href="../../db/d08/classxii_decal_asset_document_generator.html#a59d7c4ca3506b63a976a3ecd9e66112f">xiiDecalAssetDocumentGenerator</a>, <a class="el" href="../../df/da3/classxii_l_u_t_asset_document_generator.html#a0fc1046283bffd67c1ec99332ce8aec3">xiiLUTAssetDocumentGenerator</a>, <a class="el" href="../../de/d61/classxii_mesh_asset_document_generator.html#a668d5f4e6b669cca0ed1942db9c62d89">xiiMeshAssetDocumentGenerator</a>, <a class="el" href="../../db/d3c/classxii_skeleton_asset_document_generator.html#a91ec27629d0f6fbc44ca1259487eed75">xiiSkeletonAssetDocumentGenerator</a>, <a class="el" href="../../d9/dfd/classxii_texture_asset_document_generator.html#a45ab3076d94f035a374a9f4a5110f8fd">xiiTextureAssetDocumentGenerator</a>, and <a class="el" href="../../da/de8/classxii_texture_cube_asset_document_generator.html#ae2e6aaa2455a4befcf833f1a7ce5c619">xiiTextureCubeAssetDocumentGenerator</a>.</p>
+<p>Implemented in <a class="el" href="../../d4/dd5/classxii_animated_mesh_asset_document_generator.html#a58c86912312a3448ed95972d13bef548">xiiAnimatedMeshAssetDocumentGenerator</a>, <a class="el" href="../../d4/d85/classxii_animation_clip_asset_document_generator.html#a4b98640461045975c730d16ed73cb477">xiiAnimationClipAssetDocumentGenerator</a>, <a class="el" href="../../db/d08/classxii_decal_asset_document_generator.html#a7c5cf17ad82bb4b364764a7ee69e3d70">xiiDecalAssetDocumentGenerator</a>, <a class="el" href="../../df/da3/classxii_l_u_t_asset_document_generator.html#a39c84d4114f91683246cfe7209e7eae2">xiiLUTAssetDocumentGenerator</a>, <a class="el" href="../../de/d61/classxii_mesh_asset_document_generator.html#a1ad3d2c7064bf7dbe1fa1b2731a71341">xiiMeshAssetDocumentGenerator</a>, <a class="el" href="../../db/d3c/classxii_skeleton_asset_document_generator.html#a5b1669a836c08d377794cb483ba3d54d">xiiSkeletonAssetDocumentGenerator</a>, <a class="el" href="../../d9/dfd/classxii_texture_asset_document_generator.html#a3becee4f5709886c05b6ba26ecdf24d9">xiiTextureAssetDocumentGenerator</a>, and <a class="el" href="../../da/de8/classxii_texture_cube_asset_document_generator.html#a88725c15afe8cafc4cd6d5201fd0f720">xiiTextureCubeAssetDocumentGenerator</a>.</p>
 
 </div>
 </div>
@@ -436,7 +436,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>xiiQtAssetImportDlg<
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d4/db0/classxii_asset_document_generator.html">xiiAssetDocumentGenerator</a></li>
-    <li class="footer">Generated on Thu Feb 20 2025 00:19:26 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Thu Mar 13 2025 23:56:44 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

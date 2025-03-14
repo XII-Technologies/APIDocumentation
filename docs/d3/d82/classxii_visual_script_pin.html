@@ -145,9 +145,9 @@ Inheritance diagram for xiiVisualScriptPin:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a18bb68501f660da20cd940a51fec8c68" id="r_a18bb68501f660da20cd940a51fec8c68"><td class="memItemLeft" align="right" valign="top"><a id="a18bb68501f660da20cd940a51fec8c68" name="a18bb68501f660da20cd940a51fec8c68"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>xiiVisualScriptPin</b> (Type type, <a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sName, const <a class="el" href="../../da/dbe/structxii_visual_script_node_registry_1_1_pin_desc.html">xiiVisualScriptNodeRegistry::PinDesc</a> &amp;pinDesc, const <a class="el" href="../../da/dd8/classxii_document_object.html">xiiDocumentObject</a> *pObject, xiiUInt32 uiDataPinIndex)</td></tr>
-<tr class="separator:a18bb68501f660da20cd940a51fec8c68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3d4964cd2d659dea182649351072921" id="r_aa3d4964cd2d659dea182649351072921"><td class="memItemLeft" align="right" valign="top"><a id="aa3d4964cd2d659dea182649351072921" name="aa3d4964cd2d659dea182649351072921"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>xiiVisualScriptPin</b> (Type type, <a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sName, const <a class="el" href="../../da/dbe/structxii_visual_script_node_registry_1_1_pin_desc.html">xiiVisualScriptNodeRegistry::PinDesc</a> &amp;pinDesc, const <a class="el" href="../../da/dd8/classxii_document_object.html">xiiDocumentObject</a> *pObject, xiiUInt32 uiDataPinIndex, xiiUInt32 uiElementIndex)</td></tr>
+<tr class="separator:aa3d4964cd2d659dea182649351072921"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac4a679040ac2999531d0b03e099f9fdd" id="r_ac4a679040ac2999531d0b03e099f9fdd"><td class="memItemLeft" align="right" valign="top"><a id="ac4a679040ac2999531d0b03e099f9fdd" name="ac4a679040ac2999531d0b03e099f9fdd"></a>
 XII_ALWAYS_INLINE bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsExecutionPin</b> () const</td></tr>
 <tr class="separator:ac4a679040ac2999531d0b03e099f9fdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -169,6 +169,9 @@ xiiVisualScriptDataType::Enum&#160;</td><td class="memItemRight" valign="bottom"
 <tr class="memitem:ab7971b97a5380fee7ca41436d8bbdea2" id="r_ab7971b97a5380fee7ca41436d8bbdea2"><td class="memItemLeft" align="right" valign="top"><a id="ab7971b97a5380fee7ca41436d8bbdea2" name="ab7971b97a5380fee7ca41436d8bbdea2"></a>
 XII_ALWAYS_INLINE xiiUInt32&#160;</td><td class="memItemRight" valign="bottom"><b>GetDataPinIndex</b> () const</td></tr>
 <tr class="separator:ab7971b97a5380fee7ca41436d8bbdea2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6fc6b4ff7522185c973b2f12793ebeb4" id="r_a6fc6b4ff7522185c973b2f12793ebeb4"><td class="memItemLeft" align="right" valign="top"><a id="a6fc6b4ff7522185c973b2f12793ebeb4" name="a6fc6b4ff7522185c973b2f12793ebeb4"></a>
+XII_ALWAYS_INLINE xiiUInt32&#160;</td><td class="memItemRight" valign="bottom"><b>GetElementIndex</b> () const</td></tr>
+<tr class="separator:a6fc6b4ff7522185c973b2f12793ebeb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a20d1c78647af4551344d3f3d3cbc9d12" id="r_a20d1c78647af4551344d3f3d3cbc9d12"><td class="memItemLeft" align="right" valign="top"><a id="a20d1c78647af4551344d3f3d3cbc9d12" name="a20d1c78647af4551344d3f3d3cbc9d12"></a>
 XII_ALWAYS_INLINE bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsRequired</b> () const</td></tr>
 <tr class="separator:a20d1c78647af4551344d3f3d3cbc9d12"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -178,9 +181,15 @@ XII_ALWAYS_INLINE bool&#160;</td><td class="memItemRight" valign="bottom"><b>Has
 <tr class="memitem:af642da06bd410cd486c1d8025e7b03c9" id="r_af642da06bd410cd486c1d8025e7b03c9"><td class="memItemLeft" align="right" valign="top"><a id="af642da06bd410cd486c1d8025e7b03c9" name="af642da06bd410cd486c1d8025e7b03c9"></a>
 XII_ALWAYS_INLINE bool&#160;</td><td class="memItemRight" valign="bottom"><b>SplitExecution</b> () const</td></tr>
 <tr class="separator:af642da06bd410cd486c1d8025e7b03c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad225ebaedf6efae0d6bd97bc494cd440" id="r_ad225ebaedf6efae0d6bd97bc494cd440"><td class="memItemLeft" align="right" valign="top"><a id="ad225ebaedf6efae0d6bd97bc494cd440" name="ad225ebaedf6efae0d6bd97bc494cd440"></a>
+XII_ALWAYS_INLINE bool&#160;</td><td class="memItemRight" valign="bottom"><b>ReplaceWithArray</b> () const</td></tr>
+<tr class="separator:ad225ebaedf6efae0d6bd97bc494cd440"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a55a70b310ec9996f14d98926a7948c5e" id="r_a55a70b310ec9996f14d98926a7948c5e"><td class="memItemLeft" align="right" valign="top"><a id="a55a70b310ec9996f14d98926a7948c5e" name="a55a70b310ec9996f14d98926a7948c5e"></a>
 XII_ALWAYS_INLINE bool&#160;</td><td class="memItemRight" valign="bottom"><b>NeedsTypeDeduction</b> () const</td></tr>
 <tr class="separator:a55a70b310ec9996f14d98926a7948c5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add3833679457c085d98687acc272d3cf" id="r_add3833679457c085d98687acc272d3cf"><td class="memItemLeft" align="right" valign="top"><a id="add3833679457c085d98687acc272d3cf" name="add3833679457c085d98687acc272d3cf"></a>
+XII_ALWAYS_INLINE const <a class="el" href="../../d6/d0c/classxii_hashed_string.html">xiiHashedString</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetDynamicPinProperty</b> () const</td></tr>
+<tr class="separator:add3833679457c085d98687acc272d3cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aae6ba3360e1199dedb1301d6832c87b3" id="r_aae6ba3360e1199dedb1301d6832c87b3"><td class="memItemLeft" align="right" valign="top"><a id="aae6ba3360e1199dedb1301d6832c87b3" name="aae6ba3360e1199dedb1301d6832c87b3"></a>
 XII_ALWAYS_INLINE xiiVisualScriptNodeRegistry::PinDesc::DeductTypeFunc&#160;</td><td class="memItemRight" valign="bottom"><b>GetDeductTypeFunc</b> () const</td></tr>
 <tr class="separator:aae6ba3360e1199dedb1301d6832c87b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -253,7 +262,7 @@ Shape&#160;</td><td class="memItemRight" valign="bottom"><b>m_Shape</b> = Shape:
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d3/d82/classxii_visual_script_pin.html">xiiVisualScriptPin</a></li>
-    <li class="footer">Generated on Thu Feb 20 2025 00:19:30 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Thu Mar 13 2025 23:56:48 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

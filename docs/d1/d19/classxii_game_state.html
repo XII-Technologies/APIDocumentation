@@ -142,7 +142,7 @@ $(function(){initNavTree('d1/d19/classxii_game_state.html','../../'); initResiza
 </div><!--header-->
 <div class="contents">
 
-<p><a class="el" href="../../d1/d19/classxii_game_state.html" title="xiiGameState is the base class to build custom game logic upon. It works closely together with xiiGam...">xiiGameState</a> is the base class to build custom game logic upon. It works closely together with <a class="el" href="../../d1/ded/classxii_game_application.html" title="The base class for all typical game applications made with xiiEngine.">xiiGameApplication</a>.  
+<p><a class="el" href="../../d1/d19/classxii_game_state.html" title="xiiGameState implements the xiiGameStateBase interface and adds several convenience features.">xiiGameState</a> implements the <a class="el" href="../../d6/d63/classxii_game_state_base.html" title="xiiGameStateBase is the base class for all game states. Game states are used to implement custom high...">xiiGameStateBase</a> interface and adds several convenience features.  
  <a href="#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="../../d1/d14/_game_state_8h_source.html">GameState.h</a>&gt;</code></p>
@@ -158,15 +158,6 @@ Public Member Functions</h2></td></tr>
 <a class="el" href="../../d6/d89/classxii_world.html">xiiWorld</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetMainWorld</b> ()</td></tr>
 <tr class="memdesc:a956252d626851b0bdef50c1569eadcfa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the <a class="el" href="../../d6/d89/classxii_world.html" title="A world encapsulates a scene graph of game objects and various component managers and their component...">xiiWorld</a> that is currently the active one. <br /></td></tr>
 <tr class="separator:a956252d626851b0bdef50c1569eadcfa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae30ed5d987592a260de917485f638ab0" id="r_ae30ed5d987592a260de917485f638ab0"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae30ed5d987592a260de917485f638ab0">OnActivation</a> (<a class="el" href="../../d6/d89/classxii_world.html">xiiWorld</a> *pWorld, const <a class="el" href="../../d5/d13/classxii_transform_template.html">xiiTransform</a> *pStartPosition) override</td></tr>
-<tr class="memdesc:ae30ed5d987592a260de917485f638ab0"><td class="mdescLeft">&#160;</td><td class="mdescRight">When a game state was chosen, it gets activated through this function.  <br /></td></tr>
-<tr class="separator:ae30ed5d987592a260de917485f638ab0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a43c949ae7d5447924a3a4838193c60e6" id="r_a43c949ae7d5447924a3a4838193c60e6"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a43c949ae7d5447924a3a4838193c60e6">OnDeactivation</a> () override</td></tr>
-<tr class="memdesc:a43c949ae7d5447924a3a4838193c60e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when the game state is being shut down.  <br /></td></tr>
-<tr class="separator:a43c949ae7d5447924a3a4838193c60e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8958e26c97b6467226006a1b55f0485c" id="r_a8958e26c97b6467226006a1b55f0485c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8958e26c97b6467226006a1b55f0485c">ScheduleRendering</a> () override</td></tr>
-<tr class="memdesc:a8958e26c97b6467226006a1b55f0485c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Has to call xiiRenderLoop::AddMainView for all views that need to be rendered.  <br /></td></tr>
-<tr class="separator:a8958e26c97b6467226006a1b55f0485c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a987f617af63a2a74a68f242bcd06f87b" id="r_a987f617af63a2a74a68f242bcd06f87b"><td class="memItemLeft" align="right" valign="top"><a id="a987f617af63a2a74a68f242bcd06f87b" name="a987f617af63a2a74a68f242bcd06f87b"></a>
 <a class="el" href="../../dc/d68/classxii_camera.html">xiiCamera</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetMainCamera</b> ()</td></tr>
 <tr class="memdesc:a987f617af63a2a74a68f242bcd06f87b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gives access to the game state's main camera object. <br /></td></tr>
@@ -175,27 +166,59 @@ Public Member Functions</h2></td></tr>
 <a class="el" href="../../dd/df1/classxii_view.html">xiiView</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetMainView</b> ()</td></tr>
 <tr class="memdesc:a100d941baa23fe1990edbac0bf93ebf2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the <a class="el" href="../../dd/df1/classxii_view.html" title="Encapsulates a view on the given world through the given camera and rendered with the specified Rende...">xiiView</a> that is currently the one used for rendering the main output. <br /></td></tr>
 <tr class="separator:a100d941baa23fe1990edbac0bf93ebf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1438f37ee88ce06bbe911cd97ac4c2da" id="r_a1438f37ee88ce06bbe911cd97ac4c2da"><td class="memItemLeft" align="right" valign="top"><a id="a1438f37ee88ce06bbe911cd97ac4c2da" name="a1438f37ee88ce06bbe911cd97ac4c2da"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsLoadingSceneInBackground</b> (float *out_pProgress=nullptr) const</td></tr>
+<tr class="memdesc:a1438f37ee88ce06bbe911cd97ac4c2da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether a scene is currently being loaded. <br /></td></tr>
+<tr class="separator:a1438f37ee88ce06bbe911cd97ac4c2da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c6fbb7987c7f1e2bfa72dbe968f0c37" id="r_a8c6fbb7987c7f1e2bfa72dbe968f0c37"><td class="memItemLeft" align="right" valign="top"><a id="a8c6fbb7987c7f1e2bfa72dbe968f0c37" name="a8c6fbb7987c7f1e2bfa72dbe968f0c37"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsInLoadingScreen</b> () const</td></tr>
+<tr class="memdesc:a8c6fbb7987c7f1e2bfa72dbe968f0c37"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether the game state currently displays a loading screen. This usually implies that a scene is being loaded as well. <br /></td></tr>
+<tr class="separator:a8c6fbb7987c7f1e2bfa72dbe968f0c37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7c215b9e1434f30c02a4ceed444e566" id="r_ae7c215b9e1434f30c02a4ceed444e566"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae7c215b9e1434f30c02a4ceed444e566">OnActivation</a> (<a class="el" href="../../d6/d89/classxii_world.html">xiiWorld</a> *pWorld, <a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sStartPosition, const <a class="el" href="../../d5/d13/classxii_transform_template.html">xiiTransform</a> &amp;startPositionOffset) override</td></tr>
+<tr class="memdesc:ae7c215b9e1434f30c02a4ceed444e566"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called upon game startup.  <br /></td></tr>
+<tr class="separator:ae7c215b9e1434f30c02a4ceed444e566"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43c949ae7d5447924a3a4838193c60e6" id="r_a43c949ae7d5447924a3a4838193c60e6"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a43c949ae7d5447924a3a4838193c60e6">OnDeactivation</a> () override</td></tr>
+<tr class="memdesc:a43c949ae7d5447924a3a4838193c60e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cleans up the main window before the game is shut down.  <br /></td></tr>
+<tr class="separator:a43c949ae7d5447924a3a4838193c60e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5af0e4a66e596df013f280e062f0588a" id="r_a5af0e4a66e596df013f280e062f0588a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5af0e4a66e596df013f280e062f0588a">AddMainViewsToRender</a> () override</td></tr>
+<tr class="memdesc:a5af0e4a66e596df013f280e062f0588a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Makes sure m_hMainView gets rendered. Mainly needed by the editor.  <br /></td></tr>
+<tr class="separator:a5af0e4a66e596df013f280e062f0588a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37f6f028d6df8a6ff0a9d97d9ef2ebbc" id="r_a37f6f028d6df8a6ff0a9d97d9ef2ebbc"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a37f6f028d6df8a6ff0a9d97d9ef2ebbc">RequestQuit</a> () override</td></tr>
+<tr class="memdesc:a37f6f028d6df8a6ff0a9d97d9ef2ebbc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Simply stores that the game should stop.  <br /></td></tr>
+<tr class="separator:a37f6f028d6df8a6ff0a9d97d9ef2ebbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae58f1c53d581f3a5929f176c3ef4279c" id="r_ae58f1c53d581f3a5929f176c3ef4279c"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae58f1c53d581f3a5929f176c3ef4279c">WasQuitRequested</a> () const override</td></tr>
+<tr class="memdesc:ae58f1c53d581f3a5929f176c3ef4279c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether <a class="el" href="#ae58f1c53d581f3a5929f176c3ef4279c" title="Whether WasQuitRequested() was called before.">WasQuitRequested()</a> was called before.  <br /></td></tr>
+<tr class="separator:ae58f1c53d581f3a5929f176c3ef4279c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abdc61b340536c59e9d74c1372b182fc0" id="r_abdc61b340536c59e9d74c1372b182fc0"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abdc61b340536c59e9d74c1372b182fc0">ProcessInput</a> () override</td></tr>
+<tr class="memdesc:abdc61b340536c59e9d74c1372b182fc0"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="../../d1/d19/classxii_game_state.html" title="xiiGameState implements the xiiGameStateBase interface and adds several convenience features.">xiiGameState</a> doesn't implement any input logic, but it forwards to <a class="el" href="#ac34835c529189c990c4e194d53ab8e09" title="If a scene is being loaded in the background, this advanced the loading.">UpdateBackgroundSceneLoading()</a>.  <br /></td></tr>
+<tr class="separator:abdc61b340536c59e9d74c1372b182fc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b31ba83682b9e9887f3e1a7e25c751b" id="r_a7b31ba83682b9e9887f3e1a7e25c751b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7b31ba83682b9e9887f3e1a7e25c751b">LoadScene</a> (<a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sSceneFile, <a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sPreloadCollection, <a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sStartPosition, const <a class="el" href="../../d5/d13/classxii_transform_template.html">xiiTransform</a> &amp;startPositionOffset)</td></tr>
+<tr class="memdesc:a7b31ba83682b9e9887f3e1a7e25c751b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Immediately switches to a loading screen and starts loading a level.  <br /></td></tr>
+<tr class="separator:a7b31ba83682b9e9887f3e1a7e25c751b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae106c19597806f80ba07823cf464c8b0" id="r_ae106c19597806f80ba07823cf464c8b0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae106c19597806f80ba07823cf464c8b0">SwitchToLoadingScreen</a> (<a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sTargetSceneFile)</td></tr>
+<tr class="memdesc:ae106c19597806f80ba07823cf464c8b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convenience function to switch to a loading screen.  <br /></td></tr>
+<tr class="separator:ae106c19597806f80ba07823cf464c8b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2681575f1f227f6e3d03b425ef067714" id="r_a2681575f1f227f6e3d03b425ef067714"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2681575f1f227f6e3d03b425ef067714">ChangeMainWorld</a> (<a class="el" href="../../d6/d89/classxii_world.html">xiiWorld</a> *pNewMainWorld, <a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sStartPosition, const <a class="el" href="../../d5/d13/classxii_transform_template.html">xiiTransform</a> &amp;startPositionOffset)</td></tr>
+<tr class="memdesc:a2681575f1f227f6e3d03b425ef067714"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets m_pMainWorld and updates m_pMainView to use that new world for rendering.  <br /></td></tr>
+<tr class="separator:a2681575f1f227f6e3d03b425ef067714"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c42a645feac6a576045fcf295cb817e" id="r_a5c42a645feac6a576045fcf295cb817e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5c42a645feac6a576045fcf295cb817e">StartBackgroundSceneLoading</a> (<a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sSceneFile, <a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sPreloadCollection)</td></tr>
+<tr class="memdesc:a5c42a645feac6a576045fcf295cb817e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts loading a scene in the background.  <br /></td></tr>
+<tr class="separator:a5c42a645feac6a576045fcf295cb817e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a825f99f15cce3fabdc361dd61fdb36f2" id="r_a825f99f15cce3fabdc361dd61fdb36f2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a825f99f15cce3fabdc361dd61fdb36f2">CancelBackgroundSceneLoading</a> ()</td></tr>
+<tr class="memdesc:a825f99f15cce3fabdc361dd61fdb36f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">If a scene is currently being loaded in the background, cancel the loading.  <br /></td></tr>
+<tr class="separator:a825f99f15cce3fabdc361dd61fdb36f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classxii_game_state_base"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_classxii_game_state_base')"><img src="../../closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="../../d6/d63/classxii_game_state_base.html">xiiGameStateBase</a></td></tr>
-<tr class="memitem:a8d33de3bf375a635d385c8bf510c14e3 inherit pub_methods_classxii_game_state_base" id="r_a8d33de3bf375a635d385c8bf510c14e3"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d63/classxii_game_state_base.html#a8d33de3bf375a635d385c8bf510c14e3">ProcessInput</a> ()</td></tr>
-<tr class="memdesc:a8d33de3bf375a635d385c8bf510c14e3 inherit pub_methods_classxii_game_state_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called once per game update. Should handle input updates here.  <br /></td></tr>
-<tr class="separator:a8d33de3bf375a635d385c8bf510c14e3 inherit pub_methods_classxii_game_state_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7312b6bb7d355040a9e7f330c6c1a594 inherit pub_methods_classxii_game_state_base" id="r_a7312b6bb7d355040a9e7f330c6c1a594"><td class="memItemLeft" align="right" valign="top">
+<tr class="memitem:a15c6de481d87ead52fd65e8e732cd9be inherit pub_methods_classxii_game_state_base" id="r_a15c6de481d87ead52fd65e8e732cd9be"><td class="memItemLeft" align="right" valign="top">
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>BeforeWorldUpdate</b> ()</td></tr>
-<tr class="memdesc:a7312b6bb7d355040a9e7f330c6c1a594 inherit pub_methods_classxii_game_state_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called once each frame before the worlds are updated. <br /></td></tr>
-<tr class="separator:a7312b6bb7d355040a9e7f330c6c1a594 inherit pub_methods_classxii_game_state_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6b4bb3b769bfc9ddc3440419413c162f inherit pub_methods_classxii_game_state_base" id="r_a6b4bb3b769bfc9ddc3440419413c162f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d63/classxii_game_state_base.html#a6b4bb3b769bfc9ddc3440419413c162f">AfterWorldUpdate</a> ()</td></tr>
-<tr class="memdesc:a6b4bb3b769bfc9ddc3440419413c162f inherit pub_methods_classxii_game_state_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called once each frame after the worlds have been updated.  <br /></td></tr>
-<tr class="separator:a6b4bb3b769bfc9ddc3440419413c162f inherit pub_methods_classxii_game_state_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5818fbb85acf55990b8b8fb3a140a01f inherit pub_methods_classxii_game_state_base" id="r_a5818fbb85acf55990b8b8fb3a140a01f"><td class="memItemLeft" align="right" valign="top">virtual xiiGameStatePriority&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d63/classxii_game_state_base.html#a5818fbb85acf55990b8b8fb3a140a01f">DeterminePriority</a> (<a class="el" href="../../d6/d89/classxii_world.html">xiiWorld</a> *pWorld) const =0</td></tr>
-<tr class="memdesc:a5818fbb85acf55990b8b8fb3a140a01f inherit pub_methods_classxii_game_state_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called by <a class="el" href="../../d1/ded/classxii_game_application.html" title="The base class for all typical game applications made with xiiEngine.">xiiGameApplication</a> to determine which game state is best suited to handle a situation.  <br /></td></tr>
-<tr class="separator:a5818fbb85acf55990b8b8fb3a140a01f inherit pub_methods_classxii_game_state_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2b380e8f2be3139a5bba9aea65f4265d inherit pub_methods_classxii_game_state_base" id="r_a2b380e8f2be3139a5bba9aea65f4265d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d63/classxii_game_state_base.html#a2b380e8f2be3139a5bba9aea65f4265d">RequestQuit</a> ()</td></tr>
-<tr class="memdesc:a2b380e8f2be3139a5bba9aea65f4265d inherit pub_methods_classxii_game_state_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call this to signal that a game state requested the application to quit.  <br /></td></tr>
-<tr class="separator:a2b380e8f2be3139a5bba9aea65f4265d inherit pub_methods_classxii_game_state_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a398a11ca8dce07adb477b7fe36e92550 inherit pub_methods_classxii_game_state_base" id="r_a398a11ca8dce07adb477b7fe36e92550"><td class="memItemLeft" align="right" valign="top">
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>WasQuitRequested</b> () const</td></tr>
-<tr class="memdesc:a398a11ca8dce07adb477b7fe36e92550 inherit pub_methods_classxii_game_state_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether the game state wants to quit the application. <br /></td></tr>
-<tr class="separator:a398a11ca8dce07adb477b7fe36e92550 inherit pub_methods_classxii_game_state_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memdesc:a15c6de481d87ead52fd65e8e732cd9be inherit pub_methods_classxii_game_state_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called once each frame before the worlds are updated. <br /></td></tr>
+<tr class="separator:a15c6de481d87ead52fd65e8e732cd9be inherit pub_methods_classxii_game_state_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a54759ca70cfaed726a8edb8cb02b72 inherit pub_methods_classxii_game_state_base" id="r_a0a54759ca70cfaed726a8edb8cb02b72"><td class="memItemLeft" align="right" valign="top">
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>AfterWorldUpdate</b> ()</td></tr>
+<tr class="memdesc:a0a54759ca70cfaed726a8edb8cb02b72 inherit pub_methods_classxii_game_state_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called once each frame after the worlds have been updated. <br /></td></tr>
+<tr class="separator:a0a54759ca70cfaed726a8edb8cb02b72 inherit pub_methods_classxii_game_state_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92794d49378ca1b2af78009bad6e82c9 inherit pub_methods_classxii_game_state_base" id="r_a92794d49378ca1b2af78009bad6e82c9"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d63/classxii_game_state_base.html#a92794d49378ca1b2af78009bad6e82c9">IsFallbackGameState</a> () const</td></tr>
+<tr class="memdesc:a92794d49378ca1b2af78009bad6e82c9 inherit pub_methods_classxii_game_state_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Should be overridden by game states that are only meant as a fallback solution.  <br /></td></tr>
+<tr class="separator:a92794d49378ca1b2af78009bad6e82c9 inherit pub_methods_classxii_game_state_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classxii_reflected_class"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_classxii_reflected_class')"><img src="../../closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="../../dc/d71/classxii_reflected_class.html">xiiReflectedClass</a></td></tr>
 <tr class="memitem:a00430d2230bc44ad262be3d0a4e62e10 inherit pub_methods_classxii_reflected_class" id="r_a00430d2230bc44ad262be3d0a4e62e10"><td class="memItemLeft" align="right" valign="top">
 virtual const <a class="el" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetDynamicRTTI</b> () const</td></tr>
@@ -214,7 +237,7 @@ template&lt;typename T &gt; </td></tr>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:abdfbd8b542447089c8d609754aca5961" id="r_abdfbd8b542447089c8d609754aca5961"><td class="memItemLeft" align="right" valign="top"><a id="abdfbd8b542447089c8d609754aca5961" name="abdfbd8b542447089c8d609754aca5961"></a>
 static <a class="el" href="../../d1/d19/classxii_game_state.html">xiiGameState</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetActiveGameState</b> ()</td></tr>
-<tr class="memdesc:abdfbd8b542447089c8d609754aca5961"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the active <a class="el" href="../../d1/d19/classxii_game_state.html" title="xiiGameState is the base class to build custom game logic upon. It works closely together with xiiGam...">xiiGameState</a>. Only one <a class="el" href="../../d1/d19/classxii_game_state.html" title="xiiGameState is the base class to build custom game logic upon. It works closely together with xiiGam...">xiiGameState</a> is allowed to exist. <br /></td></tr>
+<tr class="memdesc:abdfbd8b542447089c8d609754aca5961"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the active <a class="el" href="../../d1/d19/classxii_game_state.html" title="xiiGameState implements the xiiGameStateBase interface and adds several convenience features.">xiiGameState</a>. Only one <a class="el" href="../../d1/d19/classxii_game_state.html" title="xiiGameState implements the xiiGameStateBase interface and adds several convenience features.">xiiGameState</a> is allowed to exist. <br /></td></tr>
 <tr class="separator:abdfbd8b542447089c8d609754aca5961"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_static_methods_classxii_no_base"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_static_methods_classxii_no_base')"><img src="../../closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="../../d2/d38/classxii_no_base.html">xiiNoBase</a></td></tr>
 <tr class="memitem:a4bde433b55ebd55edf63c57239799bba inherit pub_static_methods_classxii_no_base" id="r_a4bde433b55ebd55edf63c57239799bba"><td class="memItemLeft" align="right" valign="top">
@@ -231,27 +254,25 @@ Protected Member Functions</h2></td></tr>
 <tr class="memdesc:a26c4d9d701b0be6cff619dc1d9d6bb84"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an actor with a default window (<a class="el" href="../../dd/d17/classxii_game_state_window.html" title="A window class that expands a little on xiiWindow. Default type used by xiiGameState to create a wind...">xiiGameStateWindow</a>) adds it to the application.  <br /></td></tr>
 <tr class="separator:a26c4d9d701b0be6cff619dc1d9d6bb84"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4611e39b74bca1b0b955e23df550c563" id="r_a4611e39b74bca1b0b955e23df550c563"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4611e39b74bca1b0b955e23df550c563">ConfigureInputActions</a> ()</td></tr>
-<tr class="memdesc:a4611e39b74bca1b0b955e23df550c563"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds custom input actions, if necessary. Unless overridden <a class="el" href="#ae30ed5d987592a260de917485f638ab0" title="When a game state was chosen, it gets activated through this function.">OnActivation()</a> will call this.  <br /></td></tr>
+<tr class="memdesc:a4611e39b74bca1b0b955e23df550c563"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds custom input actions, if necessary. Unless overridden <a class="el" href="#ae7c215b9e1434f30c02a4ceed444e566" title="Called upon game startup.">OnActivation()</a> will call this.  <br /></td></tr>
 <tr class="separator:a4611e39b74bca1b0b955e23df550c563"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af3c176418afe46ba29c796ecd3f16860" id="r_af3c176418afe46ba29c796ecd3f16860"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af3c176418afe46ba29c796ecd3f16860">SpawnPlayer</a> (const <a class="el" href="../../d5/d13/classxii_transform_template.html">xiiTransform</a> *pStartPosition)</td></tr>
-<tr class="memdesc:af3c176418afe46ba29c796ecd3f16860"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overridable function that may create a player object.  <br /></td></tr>
-<tr class="separator:af3c176418afe46ba29c796ecd3f16860"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24bec37786852825c0ec04dcd6fb2783" id="r_a24bec37786852825c0ec04dcd6fb2783"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a24bec37786852825c0ec04dcd6fb2783">SpawnPlayer</a> (<a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sStartPosition, const <a class="el" href="../../d5/d13/classxii_transform_template.html">xiiTransform</a> &amp;startPositionOffset)</td></tr>
+<tr class="memdesc:a24bec37786852825c0ec04dcd6fb2783"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overrideable function that may create a player object.  <br /></td></tr>
+<tr class="separator:a24bec37786852825c0ec04dcd6fb2783"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a349767789a617c550b6f253eb4f51074" id="r_a349767789a617c550b6f253eb4f51074"><td class="memItemLeft" align="right" valign="top"><a id="a349767789a617c550b6f253eb4f51074" name="a349767789a617c550b6f253eb4f51074"></a>
 <a class="el" href="../../d9/d4a/classxii_unique_ptr.html">xiiUniquePtr</a>&lt; <a class="el" href="../../d0/d7c/classxii_actor.html">xiiActor</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>CreateXRActor</b> ()</td></tr>
-<tr class="memdesc:a349767789a617c550b6f253eb4f51074"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an XR Actor if XR is configured and available for the project. <br /></td></tr>
+<tr class="memdesc:a349767789a617c550b6f253eb4f51074"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an XR Actor, if XR is configured and available for the project. <br /></td></tr>
 <tr class="separator:a349767789a617c550b6f253eb4f51074"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a345587fa373bee57561a832f7b0f90a6" id="r_a345587fa373bee57561a832f7b0f90a6"><td class="memItemLeft" align="right" valign="top"><a id="a345587fa373bee57561a832f7b0f90a6" name="a345587fa373bee57561a832f7b0f90a6"></a>
 <a class="el" href="../../dd/df1/classxii_view.html">xiiView</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>CreateMainView</b> ()</td></tr>
 <tr class="memdesc:a345587fa373bee57561a832f7b0f90a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a default main view. <br /></td></tr>
 <tr class="separator:a345587fa373bee57561a832f7b0f90a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af63ddc5c41a406f21ba3802274e34b6e" id="r_af63ddc5c41a406f21ba3802274e34b6e"><td class="memItemLeft" align="right" valign="top"><a id="af63ddc5c41a406f21ba3802274e34b6e" name="af63ddc5c41a406f21ba3802274e34b6e"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>ChangeMainWorld</b> (<a class="el" href="../../d6/d89/classxii_world.html">xiiWorld</a> *pNewMainWorld)</td></tr>
-<tr class="memdesc:af63ddc5c41a406f21ba3802274e34b6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets m_pMainWorld and updates m_pMainView to use that new world for rendering. <br /></td></tr>
-<tr class="separator:af63ddc5c41a406f21ba3802274e34b6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aca6472aa0418d27e77dc749d3c65146d" id="r_aca6472aa0418d27e77dc749d3c65146d"><td class="memItemLeft" align="right" valign="top"><a id="aca6472aa0418d27e77dc749d3c65146d" name="aca6472aa0418d27e77dc749d3c65146d"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>ConfigureMainCamera</b> ()</td></tr>
-<tr class="memdesc:aca6472aa0418d27e77dc749d3c65146d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets up m_MainCamera for first use. <br /></td></tr>
-<tr class="separator:aca6472aa0418d27e77dc749d3c65146d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8f1b2a9501d79e097378a3857093600" id="r_aa8f1b2a9501d79e097378a3857093600"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa8f1b2a9501d79e097378a3857093600">OnChangedMainWorld</a> (<a class="el" href="../../d6/d89/classxii_world.html">xiiWorld</a> *pPrevWorld, <a class="el" href="../../d6/d89/classxii_world.html">xiiWorld</a> *pNewWorld, <a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sStartPosition, const <a class="el" href="../../d5/d13/classxii_transform_template.html">xiiTransform</a> &amp;startPositionOffset)</td></tr>
+<tr class="memdesc:aa8f1b2a9501d79e097378a3857093600"><td class="mdescLeft">&#160;</td><td class="mdescRight">Executed when <a class="el" href="#a2681575f1f227f6e3d03b425ef067714" title="Sets m_pMainWorld and updates m_pMainView to use that new world for rendering.">ChangeMainWorld()</a> is used to switch to a new world.  <br /></td></tr>
+<tr class="separator:aa8f1b2a9501d79e097378a3857093600"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab543125c0537dd57cdeb969b05d7d52c" id="r_ab543125c0537dd57cdeb969b05d7d52c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab543125c0537dd57cdeb969b05d7d52c">ConfigureMainCamera</a> () override</td></tr>
+<tr class="memdesc:ab543125c0537dd57cdeb969b05d7d52c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Searches for a "Main View" <a class="el" href="../../d9/d06/classxii_camera_component.html">xiiCameraComponent</a> in the world and uses that for the camera position, if available.  <br /></td></tr>
+<tr class="separator:ab543125c0537dd57cdeb969b05d7d52c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3007143bc2a87f32ca2310f9081cb7fd" id="r_a3007143bc2a87f32ca2310f9081cb7fd"><td class="memItemLeft" align="right" valign="top"><a id="a3007143bc2a87f32ca2310f9081cb7fd" name="a3007143bc2a87f32ca2310f9081cb7fd"></a>
 virtual <a class="el" href="../../d9/d4a/classxii_unique_ptr.html">xiiUniquePtr</a>&lt; <a class="el" href="../../d2/d13/classxii_window.html">xiiWindow</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>CreateMainWindow</b> ()</td></tr>
 <tr class="memdesc:a3007143bc2a87f32ca2310f9081cb7fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Override this to modify the default window creation behavior. Called by <a class="el" href="#a26c4d9d701b0be6cff619dc1d9d6bb84" title="Creates an actor with a default window (xiiGameStateWindow) adds it to the application.">CreateActors()</a>. <br /></td></tr>
@@ -262,12 +283,31 @@ virtual <a class="el" href="../../d9/d4a/classxii_unique_ptr.html">xiiUniquePtr<
 <tr class="separator:a79f314ccb301c6449d9ec9c216d2386f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a958e737aee2658061efe277105465f55" id="r_a958e737aee2658061efe277105465f55"><td class="memItemLeft" align="right" valign="top"><a id="a958e737aee2658061efe277105465f55" name="a958e737aee2658061efe277105465f55"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SetupMainView</b> (<a class="el" href="../../de/dc7/classxii_g_a_l_swap_chain_handle.html">xiiGALSwapChainHandle</a> hSwapChain, <a class="el" href="../../db/d7f/classxii_size_template.html">xiiSizeU32</a> viewportSize)</td></tr>
-<tr class="memdesc:a958e737aee2658061efe277105465f55"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a default render view. Unless overridden, <a class="el" href="#ae30ed5d987592a260de917485f638ab0" title="When a game state was chosen, it gets activated through this function.">OnActivation()</a> will do this for the main window. <br /></td></tr>
+<tr class="memdesc:a958e737aee2658061efe277105465f55"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a default render view. Unless overridden, <a class="el" href="#ae7c215b9e1434f30c02a4ceed444e566" title="Called upon game startup.">OnActivation()</a> will do this for the main window. <br /></td></tr>
 <tr class="separator:a958e737aee2658061efe277105465f55"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab9552c40f43f3c20751f53e64596bf1a" id="r_ab9552c40f43f3c20751f53e64596bf1a"><td class="memItemLeft" align="right" valign="top"><a id="ab9552c40f43f3c20751f53e64596bf1a" name="ab9552c40f43f3c20751f53e64596bf1a"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>ConfigureMainWindowInputDevices</b> (<a class="el" href="../../d2/d13/classxii_window.html">xiiWindow</a> *pWindow)</td></tr>
 <tr class="memdesc:ab9552c40f43f3c20751f53e64596bf1a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configures available input devices, e.g. sets mouse speed, cursor clipping, etc. Called by <a class="el" href="#a26c4d9d701b0be6cff619dc1d9d6bb84" title="Creates an actor with a default window (xiiGameStateWindow) adds it to the application.">CreateActors()</a> with the result of <a class="el" href="#a3007143bc2a87f32ca2310f9081cb7fd" title="Override this to modify the default window creation behavior. Called by CreateActors().">CreateMainWindow()</a>. <br /></td></tr>
 <tr class="separator:ab9552c40f43f3c20751f53e64596bf1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82578b3a0e78c226d775d26fb8254a7f" id="r_a82578b3a0e78c226d775d26fb8254a7f"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../df/dfb/structxii_hybrid_string.html">xiiString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a82578b3a0e78c226d775d26fb8254a7f">GetStartupSceneFile</a> ()</td></tr>
+<tr class="memdesc:a82578b3a0e78c226d775d26fb8254a7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the path to the scene file to load at startup.  <br /></td></tr>
+<tr class="separator:a82578b3a0e78c226d775d26fb8254a7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66b5d0d3782743d1df6fae035a4be964" id="r_a66b5d0d3782743d1df6fae035a4be964"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d9/d4a/classxii_unique_ptr.html">xiiUniquePtr</a>&lt; <a class="el" href="../../d6/d89/classxii_world.html">xiiWorld</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a66b5d0d3782743d1df6fae035a4be964">CreateLoadingScreenWorld</a> (<a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sTargetSceneFile)</td></tr>
+<tr class="memdesc:a66b5d0d3782743d1df6fae035a4be964"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called by <a class="el" href="#ae106c19597806f80ba07823cf464c8b0" title="Convenience function to switch to a loading screen.">SwitchToLoadingScreen()</a> to set up a new loading screen world.  <br /></td></tr>
+<tr class="separator:a66b5d0d3782743d1df6fae035a4be964"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac34835c529189c990c4e194d53ab8e09" id="r_ac34835c529189c990c4e194d53ab8e09"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac34835c529189c990c4e194d53ab8e09">UpdateBackgroundSceneLoading</a> ()</td></tr>
+<tr class="memdesc:ac34835c529189c990c4e194d53ab8e09"><td class="mdescLeft">&#160;</td><td class="mdescRight">If a scene is being loaded in the background, this advanced the loading.  <br /></td></tr>
+<tr class="separator:ac34835c529189c990c4e194d53ab8e09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4cb24091e12451b79f387c2a82b34e22" id="r_a4cb24091e12451b79f387c2a82b34e22"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4cb24091e12451b79f387c2a82b34e22">OnBackgroundSceneLoadingFinished</a> (<a class="el" href="../../d9/d4a/classxii_unique_ptr.html">xiiUniquePtr</a>&lt; <a class="el" href="../../d6/d89/classxii_world.html">xiiWorld</a> &gt; &amp;&amp;pWorld)</td></tr>
+<tr class="memdesc:a4cb24091e12451b79f387c2a82b34e22"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called by <code><a class="el" href="#ac34835c529189c990c4e194d53ab8e09" title="If a scene is being loaded in the background, this advanced the loading.">UpdateBackgroundSceneLoading()</a></code> when a scene is finished loading.  <br /></td></tr>
+<tr class="separator:a4cb24091e12451b79f387c2a82b34e22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac27b142c9e511a367f31508185f08335" id="r_ac27b142c9e511a367f31508185f08335"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac27b142c9e511a367f31508185f08335">OnBackgroundSceneLoadingFailed</a> (<a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sReason)</td></tr>
+<tr class="memdesc:ac27b142c9e511a367f31508185f08335"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called by <code><a class="el" href="#ac34835c529189c990c4e194d53ab8e09" title="If a scene is being loaded in the background, this advanced the loading.">UpdateBackgroundSceneLoading()</a></code> when a scene failed to load.  <br /></td></tr>
+<tr class="separator:ac27b142c9e511a367f31508185f08335"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aedc6ad3bb0eb850d5fcf72047e468470" id="r_aedc6ad3bb0eb850d5fcf72047e468470"><td class="memItemLeft" align="right" valign="top"><a id="aedc6ad3bb0eb850d5fcf72047e468470" name="aedc6ad3bb0eb850d5fcf72047e468470"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>OnBackgroundSceneLoadingCanceled</b> ()</td></tr>
+<tr class="memdesc:aedc6ad3bb0eb850d5fcf72047e468470"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called by <code><a class="el" href="#a825f99f15cce3fabdc361dd61fdb36f2" title="If a scene is currently being loaded in the background, cancel the loading.">CancelBackgroundSceneLoading()</a></code> when scene loading gets canceled. <br /></td></tr>
+<tr class="separator:aedc6ad3bb0eb850d5fcf72047e468470"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -280,6 +320,9 @@ Protected Attributes</h2></td></tr>
 <tr class="memitem:ad442cd4a86bbe4625a93e870d90ce18d" id="r_ad442cd4a86bbe4625a93e870d90ce18d"><td class="memItemLeft" align="right" valign="top"><a id="ad442cd4a86bbe4625a93e870d90ce18d" name="ad442cd4a86bbe4625a93e870d90ce18d"></a>
 <a class="el" href="../../dc/d68/classxii_camera.html">xiiCamera</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_MainCamera</b></td></tr>
 <tr class="separator:ad442cd4a86bbe4625a93e870d90ce18d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41e3770814f409104a15a5630d050f75" id="r_a41e3770814f409104a15a5630d050f75"><td class="memItemLeft" align="right" valign="top"><a id="a41e3770814f409104a15a5630d050f75" name="a41e3770814f409104a15a5630d050f75"></a>
+<a class="el" href="../../d9/d4a/classxii_unique_ptr.html">xiiUniquePtr</a>&lt; <a class="el" href="../../d4/d73/classxii_dummy_x_r.html">xiiDummyXR</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_pDummyXR</b></td></tr>
+<tr class="separator:a41e3770814f409104a15a5630d050f75"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4b4b6548a8a0fd3ce25475a1d3a9fa45" id="r_a4b4b6548a8a0fd3ce25475a1d3a9fa45"><td class="memItemLeft" align="right" valign="top"><a id="a4b4b6548a8a0fd3ce25475a1d3a9fa45" name="a4b4b6548a8a0fd3ce25475a1d3a9fa45"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_bStateWantsToQuit</b> = false</td></tr>
 <tr class="separator:a4b4b6548a8a0fd3ce25475a1d3a9fa45"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -289,13 +332,24 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_bXREnabled</b> = fa
 <tr class="memitem:a760c83fd84b83db168176346e8094035" id="r_a760c83fd84b83db168176346e8094035"><td class="memItemLeft" align="right" valign="top"><a id="a760c83fd84b83db168176346e8094035" name="a760c83fd84b83db168176346e8094035"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_bXRRemotingEnabled</b> = false</td></tr>
 <tr class="separator:a760c83fd84b83db168176346e8094035"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a41e3770814f409104a15a5630d050f75" id="r_a41e3770814f409104a15a5630d050f75"><td class="memItemLeft" align="right" valign="top"><a id="a41e3770814f409104a15a5630d050f75" name="a41e3770814f409104a15a5630d050f75"></a>
-<a class="el" href="../../d9/d4a/classxii_unique_ptr.html">xiiUniquePtr</a>&lt; <a class="el" href="../../d4/d73/classxii_dummy_x_r.html">xiiDummyXR</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_pDummyXR</b></td></tr>
-<tr class="separator:a41e3770814f409104a15a5630d050f75"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pro_attribs_classxii_game_state_base"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_attribs_classxii_game_state_base')"><img src="../../closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="../../d6/d63/classxii_game_state_base.html">xiiGameStateBase</a></td></tr>
-<tr class="memitem:a74c878e8bb4bfffeb08732ba8ac67e59 inherit pro_attribs_classxii_game_state_base" id="r_a74c878e8bb4bfffeb08732ba8ac67e59"><td class="memItemLeft" align="right" valign="top">
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_bStateWantsToQuit</b> = false</td></tr>
-<tr class="separator:a74c878e8bb4bfffeb08732ba8ac67e59 inherit pro_attribs_classxii_game_state_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7bb8fb7a46e053f6f67045e6757e1660" id="r_a7bb8fb7a46e053f6f67045e6757e1660"><td class="memItemLeft" align="right" valign="top"><a id="a7bb8fb7a46e053f6f67045e6757e1660" name="a7bb8fb7a46e053f6f67045e6757e1660"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_bTransitionWhenReady</b> = false</td></tr>
+<tr class="separator:a7bb8fb7a46e053f6f67045e6757e1660"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a136cd142a7d5fa7317d67dc252417252" id="r_a136cd142a7d5fa7317d67dc252417252"><td class="memItemLeft" align="right" valign="top"><a id="a136cd142a7d5fa7317d67dc252417252" name="a136cd142a7d5fa7317d67dc252417252"></a>
+<a class="el" href="../../d9/d4a/classxii_unique_ptr.html">xiiUniquePtr</a>&lt; <a class="el" href="../../d2/d29/classxii_scene_load_utility.html">xiiSceneLoadUtility</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_pBackgroundSceneLoad</b></td></tr>
+<tr class="separator:a136cd142a7d5fa7317d67dc252417252"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac26464aeb8d7d0ae7457c2bdca1ccf2f" id="r_ac26464aeb8d7d0ae7457c2bdca1ccf2f"><td class="memItemLeft" align="right" valign="top"><a id="ac26464aeb8d7d0ae7457c2bdca1ccf2f" name="ac26464aeb8d7d0ae7457c2bdca1ccf2f"></a>
+<a class="el" href="../../d9/d4a/classxii_unique_ptr.html">xiiUniquePtr</a>&lt; <a class="el" href="../../d6/d89/classxii_world.html">xiiWorld</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_pLoadingScreenWorld</b></td></tr>
+<tr class="separator:ac26464aeb8d7d0ae7457c2bdca1ccf2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b2b556faebb4206dc80c85cb16d0f1c" id="r_a3b2b556faebb4206dc80c85cb16d0f1c"><td class="memItemLeft" align="right" valign="top"><a id="a3b2b556faebb4206dc80c85cb16d0f1c" name="a3b2b556faebb4206dc80c85cb16d0f1c"></a>
+<a class="el" href="../../d9/d4a/classxii_unique_ptr.html">xiiUniquePtr</a>&lt; <a class="el" href="../../d6/d89/classxii_world.html">xiiWorld</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_pLoadedWorld</b></td></tr>
+<tr class="separator:a3b2b556faebb4206dc80c85cb16d0f1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f4b090ea23435e187bf18e897b4dc60" id="r_a0f4b090ea23435e187bf18e897b4dc60"><td class="memItemLeft" align="right" valign="top"><a id="a0f4b090ea23435e187bf18e897b4dc60" name="a0f4b090ea23435e187bf18e897b4dc60"></a>
+<a class="el" href="../../df/dfb/structxii_hybrid_string.html">xiiString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_sTargetSceneSpawnPoint</b></td></tr>
+<tr class="separator:a0f4b090ea23435e187bf18e897b4dc60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3340729e8e094d09b153b7bcb7439ca" id="r_ae3340729e8e094d09b153b7bcb7439ca"><td class="memItemLeft" align="right" valign="top"><a id="ae3340729e8e094d09b153b7bcb7439ca" name="ae3340729e8e094d09b153b7bcb7439ca"></a>
+<a class="el" href="../../d5/d13/classxii_transform_template.html">xiiTransform</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_TargetSceneSpawnOffset</b> = <a class="el" href="../../d5/d13/classxii_transform_template.html#a40abb6aee6122fe6c5d20ae72caa2b47">xiiTransform::MakeIdentity</a>()</td></tr>
+<tr class="separator:ae3340729e8e094d09b153b7bcb7439ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-static-attribs" name="pro-static-attribs"></a>
 Static Protected Attributes</h2></td></tr>
@@ -304,13 +358,99 @@ static <a class="el" href="../../d1/d19/classxii_game_state.html">xiiGameState</
 <tr class="separator:a5d0ef66cfec282d0f7edb351a0dcb840"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p><a class="el" href="../../d1/d19/classxii_game_state.html" title="xiiGameState is the base class to build custom game logic upon. It works closely together with xiiGam...">xiiGameState</a> is the base class to build custom game logic upon. It works closely together with <a class="el" href="../../d1/ded/classxii_game_application.html" title="The base class for all typical game applications made with xiiEngine.">xiiGameApplication</a>. </p>
-<p>In a typical game there is always exactly one instance of an <a class="el" href="../../d1/d19/classxii_game_state.html" title="xiiGameState is the base class to build custom game logic upon. It works closely together with xiiGam...">xiiGameState</a> derived class active. The game state handles custom game logic, which must be handled outside <a class="el" href="../../d6/d89/classxii_world.html" title="A world encapsulates a scene graph of game objects and various component managers and their component...">xiiWorld</a>, custom components and scripts.</p>
-<p>For example a custom implementation of <a class="el" href="../../d1/d19/classxii_game_state.html" title="xiiGameState is the base class to build custom game logic upon. It works closely together with xiiGam...">xiiGameState</a> may handle how to show a menu, when to switch to another level, how multi-player works, or which player information is transitioned from one level to the next. It's main purpose is to implement high-level game logic.</p>
-<p><a class="el" href="../../d1/ded/classxii_game_application.html" title="The base class for all typical game applications made with xiiEngine.">xiiGameApplication</a> will loop through all available <a class="el" href="../../d1/d19/classxii_game_state.html" title="xiiGameState is the base class to build custom game logic upon. It works closely together with xiiGam...">xiiGameState</a> implementations and ask each available one whether it can handle a certain level. Each game state returns a 'score' how well it can handle the game.</p>
-<p>In a typical game you only have one game state linked into the binary, so in that case there is no reason for such a system. However, in an editor you might have multiple game states available through plugins, but only one can take control. In such a case, each game state may inspect the given world and check whether it is e.g. a single-player or multi-player level, or whether it uses it's own game specific components, and then decide whether it is the best fit for that level.</p>
-<dl class="section note"><dt>Note</dt><dd>Do not forget to reflect your derived class, otherwise <a class="el" href="../../d1/ded/classxii_game_application.html" title="The base class for all typical game applications made with xiiEngine.">xiiGameApplication</a> may not find it. </dd></dl>
+<div class="textblock"><p><a class="el" href="../../d1/d19/classxii_game_state.html" title="xiiGameState implements the xiiGameStateBase interface and adds several convenience features.">xiiGameState</a> implements the <a class="el" href="../../d6/d63/classxii_game_state_base.html" title="xiiGameStateBase is the base class for all game states. Game states are used to implement custom high...">xiiGameStateBase</a> interface and adds several convenience features. </p>
+<p>For an explanation what game states are, see the online documentation: <a href="https://xiiengine.net/pages/docs/runtime/application/game-state.html">https://xiiengine.net/pages/docs/runtime/application/game-state.html</a></p>
+<p>The <a class="el" href="../../d1/d19/classxii_game_state.html" title="xiiGameState implements the xiiGameStateBase interface and adds several convenience features.">xiiGameState</a> adds some default functionality:</p><ul>
+<li>Creation of a main window and render pipeline</li>
+<li><a class="el" href="../../d8/d4f/class_a.html">A</a> main view handle</li>
+<li><a class="el" href="../../d8/d4f/class_a.html">A</a> main camera object</li>
+<li><a class="el" href="../../d8/d4f/class_a.html">A</a> main world that is currently active</li>
+<li>Background loading of scenes</li>
+<li><a class="el" href="../../d8/d4f/class_a.html">A</a> separate world used as a loading screen</li>
+<li>automatic player prefab spawning if a <a class="el" href="../../dc/d56/classxii_player_start_point_component.html">xiiPlayerStartPointComponent</a> is part of the scene</li>
+<li>automatically applies the state of the "Main View" <a class="el" href="../../d9/d06/classxii_camera_component.html">xiiCameraComponent</a> in the scene</li>
+<li>Many additional hooks to customize only specific parts, such as the window creation</li>
+</ul>
+<p>Typically you would derive from <a class="el" href="../../d1/d19/classxii_game_state.html" title="xiiGameState implements the xiiGameStateBase interface and adds several convenience features.">xiiGameState</a> and then override functions like <code><a class="el" href="#abdc61b340536c59e9d74c1372b182fc0" title="The xiiGameState doesn&#39;t implement any input logic, but it forwards to UpdateBackgroundSceneLoading()...">ProcessInput()</a></code> and <code><a class="el" href="#ab543125c0537dd57cdeb969b05d7d52c" title="Searches for a &quot;Main View&quot; xiiCameraComponent in the world and uses that for the camera position,...">ConfigureMainCamera()</a></code>. Take a look at <code><a class="el" href="../../d0/dc7/classxii_fallback_game_state.html" title="xiiFallbackGameState is an xiiGameState that can handle existing worlds when no other game state is a...">xiiFallbackGameState</a></code> for inspiration. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a5af0e4a66e596df013f280e062f0588a" name="a5af0e4a66e596df013f280e062f0588a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5af0e4a66e596df013f280e062f0588a">&#9670;&#160;</a></span>AddMainViewsToRender()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void xiiGameState::AddMainViewsToRender </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Makes sure m_hMainView gets rendered. Mainly needed by the editor. </p>
+
+<p>Implements <a class="el" href="../../d6/d63/classxii_game_state_base.html#ae42c15e6fc9247382e4ddce25798d960">xiiGameStateBase</a>.</p>
+
+</div>
+</div>
+<a id="a825f99f15cce3fabdc361dd61fdb36f2" name="a825f99f15cce3fabdc361dd61fdb36f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a825f99f15cce3fabdc361dd61fdb36f2">&#9670;&#160;</a></span>CancelBackgroundSceneLoading()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void xiiGameState::CancelBackgroundSceneLoading </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>If a scene is currently being loaded in the background, cancel the loading. </p>
+<p>Calls <code><a class="el" href="#aedc6ad3bb0eb850d5fcf72047e468470" title="Called by CancelBackgroundSceneLoading() when scene loading gets canceled.">OnBackgroundSceneLoadingCanceled()</a></code> if a scene was loading. </p>
+
+</div>
+</div>
+<a id="a2681575f1f227f6e3d03b425ef067714" name="a2681575f1f227f6e3d03b425ef067714"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2681575f1f227f6e3d03b425ef067714">&#9670;&#160;</a></span>ChangeMainWorld()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void xiiGameState::ChangeMainWorld </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d6/d89/classxii_world.html">xiiWorld</a> *</td>          <td class="paramname"><span class="paramname"><em>pNewMainWorld</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a></td>          <td class="paramname"><span class="paramname"><em>sStartPosition</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d5/d13/classxii_transform_template.html">xiiTransform</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>startPositionOffset</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets m_pMainWorld and updates m_pMainView to use that new world for rendering. </p>
+<p>Calls <a class="el" href="#aa8f1b2a9501d79e097378a3857093600" title="Executed when ChangeMainWorld() is used to switch to a new world.">OnChangedMainWorld()</a> afterwards, so that you can follow up on a scene change as needed. Calls <a class="el" href="#ab543125c0537dd57cdeb969b05d7d52c" title="Searches for a &quot;Main View&quot; xiiCameraComponent in the world and uses that for the camera position,...">ConfigureMainCamera()</a> as well. </p>
+
+</div>
+</div>
 <a id="a4611e39b74bca1b0b955e23df550c563" name="a4611e39b74bca1b0b955e23df550c563"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4611e39b74bca1b0b955e23df550c563">&#9670;&#160;</a></span>ConfigureInputActions()</h2>
 
@@ -334,9 +474,41 @@ static <a class="el" href="../../d1/d19/classxii_game_state.html">xiiGameState</
 </table>
 </div><div class="memdoc">
 
-<p>Adds custom input actions, if necessary. Unless overridden <a class="el" href="#ae30ed5d987592a260de917485f638ab0" title="When a game state was chosen, it gets activated through this function.">OnActivation()</a> will call this. </p>
+<p>Adds custom input actions, if necessary. Unless overridden <a class="el" href="#ae7c215b9e1434f30c02a4ceed444e566" title="Called upon game startup.">OnActivation()</a> will call this. </p>
 
 <p>Reimplemented in <a class="el" href="../../d0/dc7/classxii_fallback_game_state.html#af1869fcacfba02b6a6549dc9f2c41e37">xiiFallbackGameState</a>.</p>
+
+</div>
+</div>
+<a id="ab543125c0537dd57cdeb969b05d7d52c" name="ab543125c0537dd57cdeb969b05d7d52c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab543125c0537dd57cdeb969b05d7d52c">&#9670;&#160;</a></span>ConfigureMainCamera()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void xiiGameState::ConfigureMainCamera </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Searches for a "Main View" <a class="el" href="../../d9/d06/classxii_camera_component.html">xiiCameraComponent</a> in the world and uses that for the camera position, if available. </p>
+<p>Override this for custom camera logic. </p>
+
+<p>Reimplemented from <a class="el" href="../../d6/d63/classxii_game_state_base.html#a387973d6bb9b3f188c4f713f7c5f45a1">xiiGameStateBase</a>.</p>
+
+<p>Reimplemented in <a class="el" href="../../d0/dc7/classxii_fallback_game_state.html#a0c808937035834ae958eef56bf7fc046">xiiFallbackGameState</a>.</p>
 
 </div>
 </div>
@@ -368,8 +540,98 @@ static <a class="el" href="../../d1/d19/classxii_game_state.html">xiiGameState</
 
 </div>
 </div>
-<a id="ae30ed5d987592a260de917485f638ab0" name="ae30ed5d987592a260de917485f638ab0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae30ed5d987592a260de917485f638ab0">&#9670;&#160;</a></span>OnActivation()</h2>
+<a id="a66b5d0d3782743d1df6fae035a4be964" name="a66b5d0d3782743d1df6fae035a4be964"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a66b5d0d3782743d1df6fae035a4be964">&#9670;&#160;</a></span>CreateLoadingScreenWorld()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/d4a/classxii_unique_ptr.html">xiiUniquePtr</a>&lt; <a class="el" href="../../d6/d89/classxii_world.html">xiiWorld</a> &gt; xiiGameState::CreateLoadingScreenWorld </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a></td>          <td class="paramname"><span class="paramname"><em>sTargetSceneFile</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Called by <a class="el" href="#ae106c19597806f80ba07823cf464c8b0" title="Convenience function to switch to a loading screen.">SwitchToLoadingScreen()</a> to set up a new loading screen world. </p>
+<p><a class="el" href="../../d8/d4f/class_a.html">A</a> loading screen uses a separate <a class="el" href="../../d6/d89/classxii_world.html" title="A world encapsulates a scene graph of game objects and various component managers and their component...">xiiWorld</a>. It can be fully set up in code or loaded from disk, but it should be very light-weight, so that it is quick to set up. </p>
+
+</div>
+</div>
+<a id="a82578b3a0e78c226d775d26fb8254a7f" name="a82578b3a0e78c226d775d26fb8254a7f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a82578b3a0e78c226d775d26fb8254a7f">&#9670;&#160;</a></span>GetStartupSceneFile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/dfb/structxii_hybrid_string.html">xiiString</a> xiiGameState::GetStartupSceneFile </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the path to the scene file to load at startup. </p>
+<p>By default this is taken from the command line '-scene' option. Override this function to define a custom startup scene (e.g. for the main menu) or load a saved state. </p>
+
+</div>
+</div>
+<a id="a7b31ba83682b9e9887f3e1a7e25c751b" name="a7b31ba83682b9e9887f3e1a7e25c751b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b31ba83682b9e9887f3e1a7e25c751b">&#9670;&#160;</a></span>LoadScene()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void xiiGameState::LoadScene </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a></td>          <td class="paramname"><span class="paramname"><em>sSceneFile</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a></td>          <td class="paramname"><span class="paramname"><em>sPreloadCollection</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a></td>          <td class="paramname"><span class="paramname"><em>sStartPosition</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d5/d13/classxii_transform_template.html">xiiTransform</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>startPositionOffset</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Immediately switches to a loading screen and starts loading a level. </p>
+<p>When the level is finished loading, <code><a class="el" href="#a4cb24091e12451b79f387c2a82b34e22" title="Called by UpdateBackgroundSceneLoading() when a scene is finished loading.">OnBackgroundSceneLoadingFinished()</a></code> is called, which switches to it immediately, unless overridden. If the scene was already fully preloaded, the switch happens immediately, without showing a loading screen. </p>
+
+</div>
+</div>
+<a id="ae7c215b9e1434f30c02a4ceed444e566" name="ae7c215b9e1434f30c02a4ceed444e566"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae7c215b9e1434f30c02a4ceed444e566">&#9670;&#160;</a></span>OnActivation()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -385,7 +647,12 @@ static <a class="el" href="../../d1/d19/classxii_game_state.html">xiiGameState</
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="../../d5/d13/classxii_transform_template.html">xiiTransform</a> *</td>          <td class="paramname"><span class="paramname"><em>pStartPosition</em></span>&#160;)</td>
+          <td class="paramtype"><a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a></td>          <td class="paramname"><span class="paramname"><em>sStartPosition</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d5/d13/classxii_transform_template.html">xiiTransform</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>startPositionOffset</em></span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -395,18 +662,114 @@ static <a class="el" href="../../d1/d19/classxii_game_state.html">xiiGameState</
 </table>
 </div><div class="memdoc">
 
-<p>When a game state was chosen, it gets activated through this function. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">pWorld</td><td>The game state is supposed to operate on the given world. In a stand-alone application pWorld will always be nullptr and the game state is expected to create worlds itself. When run inside the editor, pWorld will already exist and the game state is expected to work on it.</td></tr>
-    <tr><td class="paramname">pStartPosition</td><td>An optional transform for the 'player object' to start at. Usually nullptr, but may be set by the editor to relocate or create the player object at the given destination. </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>Called upon game startup. </p>
+<p>Calls <a class="el" href="#a26c4d9d701b0be6cff619dc1d9d6bb84" title="Creates an actor with a default window (xiiGameStateWindow) adds it to the application.">CreateActors()</a> to create the game's main window and setup input devices. Calls <a class="el" href="#a4611e39b74bca1b0b955e23df550c563" title="Adds custom input actions, if necessary. Unless overridden OnActivation() will call this.">ConfigureInputActions()</a> to setup input actions. Finally switches to pWorld (if available) or starts loading the scene that <a class="el" href="#a82578b3a0e78c226d775d26fb8254a7f" title="Returns the path to the scene file to load at startup.">GetStartupSceneFile()</a> returns.</p>
+<p>Override any of the above functions to customize them. </p>
 
-<p>Implements <a class="el" href="../../d6/d63/classxii_game_state_base.html#a76098be6f82919043fccd2d64d865ad5">xiiGameStateBase</a>.</p>
+<p>Implements <a class="el" href="../../d6/d63/classxii_game_state_base.html#acf09645a0820498000a965d9a06db58c">xiiGameStateBase</a>.</p>
 
-<p>Reimplemented in <a class="el" href="../../d0/dc7/classxii_fallback_game_state.html#a7e1e5b43c234cc1cab6f72ebaed1da9f">xiiFallbackGameState</a>.</p>
+<p>Reimplemented in <a class="el" href="../../d0/dc7/classxii_fallback_game_state.html#a10bb5124d3d8b463dd7729a9fda17225">xiiFallbackGameState</a>.</p>
+
+</div>
+</div>
+<a id="ac27b142c9e511a367f31508185f08335" name="ac27b142c9e511a367f31508185f08335"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac27b142c9e511a367f31508185f08335">&#9670;&#160;</a></span>OnBackgroundSceneLoadingFailed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void xiiGameState::OnBackgroundSceneLoadingFailed </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a></td>          <td class="paramname"><span class="paramname"><em>sReason</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Called by <code><a class="el" href="#ac34835c529189c990c4e194d53ab8e09" title="If a scene is being loaded in the background, this advanced the loading.">UpdateBackgroundSceneLoading()</a></code> when a scene failed to load. </p>
+
+<p>Reimplemented in <a class="el" href="../../d0/dc7/classxii_fallback_game_state.html#afdf1019ceeeed37a7a994bff2a2c4757">xiiFallbackGameState</a>.</p>
+
+</div>
+</div>
+<a id="a4cb24091e12451b79f387c2a82b34e22" name="a4cb24091e12451b79f387c2a82b34e22"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4cb24091e12451b79f387c2a82b34e22">&#9670;&#160;</a></span>OnBackgroundSceneLoadingFinished()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void xiiGameState::OnBackgroundSceneLoadingFinished </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d9/d4a/classxii_unique_ptr.html">xiiUniquePtr</a>&lt; <a class="el" href="../../d6/d89/classxii_world.html">xiiWorld</a> &gt; &amp;&amp;</td>          <td class="paramname"><span class="paramname"><em>pWorld</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Called by <code><a class="el" href="#ac34835c529189c990c4e194d53ab8e09" title="If a scene is being loaded in the background, this advanced the loading.">UpdateBackgroundSceneLoading()</a></code> when a scene is finished loading. </p>
+<p>May switch to the scene immediately or wait, for example for a user to confirm. </p>
+
+<p>Reimplemented in <a class="el" href="../../d0/dc7/classxii_fallback_game_state.html#ae213eb42042fca6486cda1ae506d7fd7">xiiFallbackGameState</a>.</p>
+
+</div>
+</div>
+<a id="aa8f1b2a9501d79e097378a3857093600" name="aa8f1b2a9501d79e097378a3857093600"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa8f1b2a9501d79e097378a3857093600">&#9670;&#160;</a></span>OnChangedMainWorld()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void xiiGameState::OnChangedMainWorld </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d6/d89/classxii_world.html">xiiWorld</a> *</td>          <td class="paramname"><span class="paramname"><em>pPrevWorld</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d6/d89/classxii_world.html">xiiWorld</a> *</td>          <td class="paramname"><span class="paramname"><em>pNewWorld</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a></td>          <td class="paramname"><span class="paramname"><em>sStartPosition</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d5/d13/classxii_transform_template.html">xiiTransform</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>startPositionOffset</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Executed when <a class="el" href="#a2681575f1f227f6e3d03b425ef067714" title="Sets m_pMainWorld and updates m_pMainView to use that new world for rendering.">ChangeMainWorld()</a> is used to switch to a new world. </p>
+<p>Override this to be informed about scene changes. This happens right at startup (both for given worlds and custom created ones) and when the game needs to switch to a new level. </p>
 
 </div>
 </div>
@@ -433,16 +796,14 @@ static <a class="el" href="../../d1/d19/classxii_game_state.html">xiiGameState</
 </table>
 </div><div class="memdoc">
 
-<p>Called when the game state is being shut down. </p>
+<p>Cleans up the main window before the game is shut down. </p>
 
 <p>Implements <a class="el" href="../../d6/d63/classxii_game_state_base.html#ac8277a988376f5726dd2f9fb295a9a2f">xiiGameStateBase</a>.</p>
 
-<p>Reimplemented in <a class="el" href="../../d0/dc7/classxii_fallback_game_state.html#a6d3899556cc5505f366cb36107ae1f1e">xiiFallbackGameState</a>.</p>
-
 </div>
 </div>
-<a id="a8958e26c97b6467226006a1b55f0485c" name="a8958e26c97b6467226006a1b55f0485c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8958e26c97b6467226006a1b55f0485c">&#9670;&#160;</a></span>ScheduleRendering()</h2>
+<a id="abdc61b340536c59e9d74c1372b182fc0" name="abdc61b340536c59e9d74c1372b182fc0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abdc61b340536c59e9d74c1372b182fc0">&#9670;&#160;</a></span>ProcessInput()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -451,7 +812,7 @@ static <a class="el" href="../../d1/d19/classxii_game_state.html">xiiGameState</
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void xiiGameState::ScheduleRendering </td>
+          <td class="memname">void xiiGameState::ProcessInput </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
@@ -464,14 +825,46 @@ static <a class="el" href="../../d1/d19/classxii_game_state.html">xiiGameState</
 </table>
 </div><div class="memdoc">
 
-<p>Has to call xiiRenderLoop::AddMainView for all views that need to be rendered. </p>
+<p>The <a class="el" href="../../d1/d19/classxii_game_state.html" title="xiiGameState implements the xiiGameStateBase interface and adds several convenience features.">xiiGameState</a> doesn't implement any input logic, but it forwards to <a class="el" href="#ac34835c529189c990c4e194d53ab8e09" title="If a scene is being loaded in the background, this advanced the loading.">UpdateBackgroundSceneLoading()</a>. </p>
 
-<p>Implements <a class="el" href="../../d6/d63/classxii_game_state_base.html#a5080d0a1b978f673ed10e15d002def5b">xiiGameStateBase</a>.</p>
+<p>Reimplemented from <a class="el" href="../../d6/d63/classxii_game_state_base.html#a48e008e9b9f879ebc83d8e69bbb033ac">xiiGameStateBase</a>.</p>
+
+<p>Reimplemented in <a class="el" href="../../d0/dc7/classxii_fallback_game_state.html#a14c86722352ae5e9924af178bb43ecb7">xiiFallbackGameState</a>.</p>
 
 </div>
 </div>
-<a id="af3c176418afe46ba29c796ecd3f16860" name="af3c176418afe46ba29c796ecd3f16860"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af3c176418afe46ba29c796ecd3f16860">&#9670;&#160;</a></span>SpawnPlayer()</h2>
+<a id="a37f6f028d6df8a6ff0a9d97d9ef2ebbc" name="a37f6f028d6df8a6ff0a9d97d9ef2ebbc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a37f6f028d6df8a6ff0a9d97d9ef2ebbc">&#9670;&#160;</a></span>RequestQuit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void xiiGameState::RequestQuit </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Simply stores that the game should stop. </p>
+<p>Override this to add more elaborate logic, if necessary. </p>
+
+<p>Implements <a class="el" href="../../d6/d63/classxii_game_state_base.html#a524d05f02d414da5c1942541b48866b5">xiiGameStateBase</a>.</p>
+
+</div>
+</div>
+<a id="a24bec37786852825c0ec04dcd6fb2783" name="a24bec37786852825c0ec04dcd6fb2783"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24bec37786852825c0ec04dcd6fb2783">&#9670;&#160;</a></span>SpawnPlayer()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -482,8 +875,12 @@ static <a class="el" href="../../d1/d19/classxii_game_state.html">xiiGameState</
         <tr>
           <td class="memname"><a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a> xiiGameState::SpawnPlayer </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="../../d5/d13/classxii_transform_template.html">xiiTransform</a> *</td>          <td class="paramname"><span class="paramname"><em>pStartPosition</em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a></td>          <td class="paramname"><span class="paramname"><em>sStartPosition</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">const <a class="el" href="../../d5/d13/classxii_transform_template.html">xiiTransform</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>startPositionOffset</em></span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -493,11 +890,114 @@ static <a class="el" href="../../d1/d19/classxii_game_state.html">xiiGameState</
 </table>
 </div><div class="memdoc">
 
-<p>Overridable function that may create a player object. </p>
-<p>By default called by <a class="el" href="#ae30ed5d987592a260de917485f638ab0" title="When a game state was chosen, it gets activated through this function.">OnActivation()</a>. The default implementation will search the world for xiiPlayerStartComponent's and instantiate the given player prefab at one of those locations. If pStartPosition is not nullptr, it will be used as the spawn position for the player prefab, otherwise the location of the xiiPlayerStartComponent will be used.</p>
+<p>Overrideable function that may create a player object. </p>
+<p>By default called by <a class="el" href="#aa8f1b2a9501d79e097378a3857093600" title="Executed when ChangeMainWorld() is used to switch to a new world.">OnChangedMainWorld()</a> when switching to a non-loading screen world. The default implementation will search the world for xiiPlayerStartComponent's and instantiate the given player prefab at one of those locations. If pStartPosition is not nullptr, it will be used as the spawn position for the player prefab, otherwise the location of the xiiPlayerStartComponent will be used.</p>
+<p>sStartPosition allows to spawn the player at another named location, but there is no default implementation for such logic.</p>
 <p>Returns XII_SUCCESS if a prefab was spawned, XII_FAILURE if nothing was done. </p>
 
-<p>Reimplemented in <a class="el" href="../../d0/dc7/classxii_fallback_game_state.html#a6ff6a1c9e3c7422303cf4166d1f9f770">xiiFallbackGameState</a>.</p>
+<p>Reimplemented in <a class="el" href="../../d0/dc7/classxii_fallback_game_state.html#a3dfc84079639e5c3cab47b416e2e335c">xiiFallbackGameState</a>.</p>
+
+</div>
+</div>
+<a id="a5c42a645feac6a576045fcf295cb817e" name="a5c42a645feac6a576045fcf295cb817e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c42a645feac6a576045fcf295cb817e">&#9670;&#160;</a></span>StartBackgroundSceneLoading()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void xiiGameState::StartBackgroundSceneLoading </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a></td>          <td class="paramname"><span class="paramname"><em>sSceneFile</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a></td>          <td class="paramname"><span class="paramname"><em>sPreloadCollection</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Starts loading a scene in the background. </p>
+<p>If available, a collection can be provided. Resources referenced in the collection will be fully preloaded first and then the scene is loaded. This is the only way to get a proper estimation of loading progress and is necessary to get a smooth start, otherwise the engine will have to load resources on-demand, many of which will be needed during the first frame.</p>
+<p>Once finished, one of these hooks is executed: <code><a class="el" href="#a4cb24091e12451b79f387c2a82b34e22" title="Called by UpdateBackgroundSceneLoading() when a scene is finished loading.">OnBackgroundSceneLoadingFinished()</a></code> <code><a class="el" href="#ac27b142c9e511a367f31508185f08335" title="Called by UpdateBackgroundSceneLoading() when a scene failed to load.">OnBackgroundSceneLoadingFailed()</a></code> <code><a class="el" href="#aedc6ad3bb0eb850d5fcf72047e468470" title="Called by CancelBackgroundSceneLoading() when scene loading gets canceled.">OnBackgroundSceneLoadingCanceled()</a></code> </p>
+
+</div>
+</div>
+<a id="ae106c19597806f80ba07823cf464c8b0" name="ae106c19597806f80ba07823cf464c8b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae106c19597806f80ba07823cf464c8b0">&#9670;&#160;</a></span>SwitchToLoadingScreen()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void xiiGameState::SwitchToLoadingScreen </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a></td>          <td class="paramname"><span class="paramname"><em>sTargetSceneFile</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Convenience function to switch to a loading screen. </p>
+<p>Nothing actually gets loaded. Without further logic, the app will stay in the loading screen indefinitely. sTargetSceneFile is only passed in, so that the loading screen can be customized accordingly, for example it may show a screenshot of the target scene. </p>
+
+</div>
+</div>
+<a id="ac34835c529189c990c4e194d53ab8e09" name="ac34835c529189c990c4e194d53ab8e09"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac34835c529189c990c4e194d53ab8e09">&#9670;&#160;</a></span>UpdateBackgroundSceneLoading()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void xiiGameState::UpdateBackgroundSceneLoading </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>If a scene is being loaded in the background, this advanced the loading. </p>
+<p>Upon success or failure, executes either of these: <code><a class="el" href="#a4cb24091e12451b79f387c2a82b34e22" title="Called by UpdateBackgroundSceneLoading() when a scene is finished loading.">OnBackgroundSceneLoadingFinished()</a></code> <code><a class="el" href="#ac27b142c9e511a367f31508185f08335" title="Called by UpdateBackgroundSceneLoading() when a scene failed to load.">OnBackgroundSceneLoadingFailed()</a></code> </p>
+
+</div>
+</div>
+<a id="ae58f1c53d581f3a5929f176c3ef4279c" name="ae58f1c53d581f3a5929f176c3ef4279c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae58f1c53d581f3a5929f176c3ef4279c">&#9670;&#160;</a></span>WasQuitRequested()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool xiiGameState::WasQuitRequested </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Whether <a class="el" href="#ae58f1c53d581f3a5929f176c3ef4279c" title="Whether WasQuitRequested() was called before.">WasQuitRequested()</a> was called before. </p>
+
+<p>Implements <a class="el" href="../../d6/d63/classxii_game_state_base.html#a695bad8fd4a0128d2d7c754186c4d9b3">xiiGameStateBase</a>.</p>
 
 </div>
 </div>
@@ -511,7 +1011,7 @@ static <a class="el" href="../../d1/d19/classxii_game_state.html">xiiGameState</
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d1/d19/classxii_game_state.html">xiiGameState</a></li>
-    <li class="footer">Generated on Thu Feb 20 2025 00:19:27 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Thu Mar 13 2025 23:56:45 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

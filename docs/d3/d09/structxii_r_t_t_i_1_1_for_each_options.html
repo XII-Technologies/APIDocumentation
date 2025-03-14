@@ -146,16 +146,41 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:ae52a706ccc417fe50af7cf69b6e75a13" id="r_ae52a706ccc417fe50af7cf69b6e75a13"><td class="memItemLeft" align="right" valign="top"><a id="ae52a706ccc417fe50af7cf69b6e75a13" name="ae52a706ccc417fe50af7cf69b6e75a13"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>Enum</b> : StorageType { <b>None</b> = 0
-, <b>ExcludeNonAllocatable</b> = XII_BIT(0)
-, <b>ExcludeAbstract</b> = XII_BIT(1)
-, <b>Default</b> = None
+<tr class="memitem:ae52a706ccc417fe50af7cf69b6e75a13" id="r_ae52a706ccc417fe50af7cf69b6e75a13"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae52a706ccc417fe50af7cf69b6e75a13">Enum</a> : StorageType { <br />
+&#160;&#160;<b>None</b> = 0
+, <a class="el" href="#ae52a706ccc417fe50af7cf69b6e75a13a5d203dfb813ed80fcc45cf9eaf40d49e">ExcludeNonAllocatable</a> = XII_BIT(0)
+, <a class="el" href="#ae52a706ccc417fe50af7cf69b6e75a13afb67f2789d3d58934c07e176e978ec3f">ExcludeAbstract</a> = XII_BIT(1)
+, <b>ExcludeNotConcrete</b> = ExcludeNonAllocatable | ExcludeAbstract
+, <br />
+&#160;&#160;<b>Default</b> = None
+<br />
  }</td></tr>
 <tr class="separator:ae52a706ccc417fe50af7cf69b6e75a13"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a619eb21a8e2199461584b5480a609aea" id="r_a619eb21a8e2199461584b5480a609aea"><td class="memItemLeft" align="right" valign="top"><a id="a619eb21a8e2199461584b5480a609aea" name="a619eb21a8e2199461584b5480a609aea"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>StorageType</b> = xiiUInt8</td></tr>
 <tr class="separator:a619eb21a8e2199461584b5480a609aea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Enumeration Documentation</h2>
+<a id="ae52a706ccc417fe50af7cf69b6e75a13" name="ae52a706ccc417fe50af7cf69b6e75a13"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae52a706ccc417fe50af7cf69b6e75a13">&#9670;&#160;</a></span>Enum</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="#ae52a706ccc417fe50af7cf69b6e75a13">xiiRTTI::ForEachOptions::Enum</a> : StorageType</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ae52a706ccc417fe50af7cf69b6e75a13a5d203dfb813ed80fcc45cf9eaf40d49e" name="ae52a706ccc417fe50af7cf69b6e75a13a5d203dfb813ed80fcc45cf9eaf40d49e"></a>ExcludeNonAllocatable&#160;</td><td class="fielddoc"><p>Excludes all types that cannot be allocated through <a class="el" href="../../db/d89/classxii_r_t_t_i.html" title="This class holds information about reflected types. Each instance represents one type that is known t...">xiiRTTI</a>. They may still be creatable through regular C++, though. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ae52a706ccc417fe50af7cf69b6e75a13afb67f2789d3d58934c07e176e978ec3f" name="ae52a706ccc417fe50af7cf69b6e75a13afb67f2789d3d58934c07e176e978ec3f"></a>ExcludeAbstract&#160;</td><td class="fielddoc"><p>Excludes all types that are marked as 'abstract'. They may not be abstract in the C++ sense, though. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li>/home/runner/work/XII/XII/Source/Engine/Foundation/Reflection/Implementation/<a class="el" href="../../de/dd7/_r_t_t_i_8h_source.html">RTTI.h</a></li>
 </ul>
@@ -165,7 +190,7 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>StorageType</b> = xi
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a></li><li class="navelem"><a class="el" href="../../d3/d09/structxii_r_t_t_i_1_1_for_each_options.html">ForEachOptions</a></li>
-    <li class="footer">Generated on Thu Feb 20 2025 00:19:29 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Thu Mar 13 2025 23:56:47 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

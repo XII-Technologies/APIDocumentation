@@ -174,6 +174,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>SetSelection</b> (con
 <tr class="memitem:af84251ed6105e2c4887c8fc26e8fdfb4" id="r_af84251ed6105e2c4887c8fc26e8fdfb4"><td class="memItemLeft" align="right" valign="top"><a id="af84251ed6105e2c4887c8fc26e8fdfb4" name="af84251ed6105e2c4887c8fc26e8fdfb4"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>ToggleObject</b> (const <a class="el" href="../../da/dd8/classxii_document_object.html">xiiDocumentObject</a> *pObject)</td></tr>
 <tr class="separator:af84251ed6105e2c4887c8fc26e8fdfb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58c09f8dce558a06c52b5626a70b518a" id="r_a58c09f8dce558a06c52b5626a70b518a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a58c09f8dce558a06c52b5626a70b518a">SetRuntimeOverrideSelection</a> (const <a class="el" href="../../d8/df8/classxii_deque.html">xiiDeque</a>&lt; const <a class="el" href="../../da/dd8/classxii_document_object.html">xiiDocumentObject</a> * &gt; &amp;selection)</td></tr>
+<tr class="memdesc:a58c09f8dce558a06c52b5626a70b518a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets a separate selection (temporarily), which is sent to the engine but not propagated to the editor.  <br /></td></tr>
+<tr class="separator:a58c09f8dce558a06c52b5626a70b518a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10f3f575e16f44ac40112889100ec55b" id="r_a10f3f575e16f44ac40112889100ec55b"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="../../d8/df8/classxii_deque.html">xiiDeque</a>&lt; const <a class="el" href="../../da/dd8/classxii_document_object.html">xiiDocumentObject</a> * &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a10f3f575e16f44ac40112889100ec55b">GetRuntimeOverrideSelection</a> () const</td></tr>
+<tr class="memdesc:a10f3f575e16f44ac40112889100ec55b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current runtime override selection.  <br /></td></tr>
+<tr class="separator:a10f3f575e16f44ac40112889100ec55b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a66003ed22ea0d91aca52bd68482105c8" id="r_a66003ed22ea0d91aca52bd68482105c8"><td class="memItemLeft" align="right" valign="top"><a id="a66003ed22ea0d91aca52bd68482105c8" name="a66003ed22ea0d91aca52bd68482105c8"></a>
 const <a class="el" href="../../da/dd8/classxii_document_object.html">xiiDocumentObject</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetCurrentObject</b> () const</td></tr>
 <tr class="memdesc:a66003ed22ea0d91aca52bd68482105c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the last selected object in the selection or null if empty. <br /></td></tr>
@@ -185,14 +191,13 @@ const <a class="el" href="../../d8/df8/classxii_deque.html">xiiDeque</a>&lt; con
 <tr class="memitem:a74d7acdf692430918a1da3f486daf50b" id="r_a74d7acdf692430918a1da3f486daf50b"><td class="memItemLeft" align="right" valign="top"><a id="a74d7acdf692430918a1da3f486daf50b" name="a74d7acdf692430918a1da3f486daf50b"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsSelectionEmpty</b> () const</td></tr>
 <tr class="separator:a74d7acdf692430918a1da3f486daf50b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab437f18e02bc683709f40bc72f8a6f19" id="r_ab437f18e02bc683709f40bc72f8a6f19"><td class="memItemLeft" align="right" valign="top"><a id="ab437f18e02bc683709f40bc72f8a6f19" name="ab437f18e02bc683709f40bc72f8a6f19"></a>
-const <a class="el" href="../../d8/df8/classxii_deque.html">xiiDeque</a>&lt; const <a class="el" href="../../da/dd8/classxii_document_object.html">xiiDocumentObject</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetTopLevelSelection</b> () const</td></tr>
-<tr class="memdesc:ab437f18e02bc683709f40bc72f8a6f19"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the subset of selected items which have no parent selected. I.e. if an object is selected and one of its ancestors is selected, it is culled from the list. Items are returned in the order of appearance in an expanded scene tree. <br /></td></tr>
-<tr class="separator:ab437f18e02bc683709f40bc72f8a6f19"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8bd7e2a8633842d507c9fd35bf6b7122" id="r_a8bd7e2a8633842d507c9fd35bf6b7122"><td class="memItemLeft" align="right" valign="top"><a id="a8bd7e2a8633842d507c9fd35bf6b7122" name="a8bd7e2a8633842d507c9fd35bf6b7122"></a>
-const <a class="el" href="../../d8/df8/classxii_deque.html">xiiDeque</a>&lt; const <a class="el" href="../../da/dd8/classxii_document_object.html">xiiDocumentObject</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetTopLevelSelection</b> (const <a class="el" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a> *pBase) const</td></tr>
-<tr class="memdesc:a8bd7e2a8633842d507c9fd35bf6b7122"><td class="mdescLeft">&#160;</td><td class="mdescRight">Same as <a class="el" href="#ab437f18e02bc683709f40bc72f8a6f19" title="Returns the subset of selected items which have no parent selected. I.e. if an object is selected and...">GetTopLevelSelection()</a> but additionally requires that all objects are derived from type pBase. <br /></td></tr>
-<tr class="separator:a8bd7e2a8633842d507c9fd35bf6b7122"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf6fffe0c7d4804c743f8dc2a7ccafb5" id="r_acf6fffe0c7d4804c743f8dc2a7ccafb5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acf6fffe0c7d4804c743f8dc2a7ccafb5">GetTopLevelSelection</a> (<a class="el" href="../../dc/da4/classxii_dynamic_array.html">xiiDynamicArray</a>&lt; <a class="el" href="../../d6/dee/structxii_selection_entry.html">xiiSelectionEntry</a> &gt; &amp;out_entries) const</td></tr>
+<tr class="memdesc:acf6fffe0c7d4804c743f8dc2a7ccafb5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the subset of selected items which have no parent selected.  <br /></td></tr>
+<tr class="separator:acf6fffe0c7d4804c743f8dc2a7ccafb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99f428c50fdab07a56ce4cde2df7cc90" id="r_a99f428c50fdab07a56ce4cde2df7cc90"><td class="memItemLeft" align="right" valign="top"><a id="a99f428c50fdab07a56ce4cde2df7cc90" name="a99f428c50fdab07a56ce4cde2df7cc90"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>GetTopLevelSelectionOfType</b> (const <a class="el" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a> *pBase, <a class="el" href="../../dc/da4/classxii_dynamic_array.html">xiiDynamicArray</a>&lt; <a class="el" href="../../d6/dee/structxii_selection_entry.html">xiiSelectionEntry</a> &gt; &amp;out_entries) const</td></tr>
+<tr class="memdesc:a99f428c50fdab07a56ce4cde2df7cc90"><td class="mdescLeft">&#160;</td><td class="mdescRight">Same as <a class="el" href="#acf6fffe0c7d4804c743f8dc2a7ccafb5" title="Returns the subset of selected items which have no parent selected.">GetTopLevelSelection()</a> but additionally requires that all objects are derived from type pBase. <br /></td></tr>
+<tr class="separator:a99f428c50fdab07a56ce4cde2df7cc90"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae684288a55c99571a157ad66fcf20d25" id="r_ae684288a55c99571a157ad66fcf20d25"><td class="memItemLeft" align="right" valign="top"><a id="ae684288a55c99571a157ad66fcf20d25" name="ae684288a55c99571a157ad66fcf20d25"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsSelected</b> (const <a class="el" href="../../da/dd8/classxii_document_object.html">xiiDocumentObject</a> *pObject) const</td></tr>
 <tr class="separator:ae684288a55c99571a157ad66fcf20d25"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -223,7 +228,77 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>xiiDocument</b></td>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Selection Manager stores a set of selected document objects. </p>
-</div><hr/>The documentation for this class was generated from the following files:<ul>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a10f3f575e16f44ac40112889100ec55b" name="a10f3f575e16f44ac40112889100ec55b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a10f3f575e16f44ac40112889100ec55b">&#9670;&#160;</a></span>GetRuntimeOverrideSelection()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="../../d8/df8/classxii_deque.html">xiiDeque</a>&lt; const <a class="el" href="../../da/dd8/classxii_document_object.html">xiiDocumentObject</a> * &gt; &amp; xiiSelectionManager::GetRuntimeOverrideSelection </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the current runtime override selection. </p>
+<p>Valid, if the selection is non-empty. See <a class="el" href="#a58c09f8dce558a06c52b5626a70b518a" title="Sets a separate selection (temporarily), which is sent to the engine but not propagated to the editor...">SetRuntimeOverrideSelection()</a> for details. </p>
+
+</div>
+</div>
+<a id="acf6fffe0c7d4804c743f8dc2a7ccafb5" name="acf6fffe0c7d4804c743f8dc2a7ccafb5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf6fffe0c7d4804c743f8dc2a7ccafb5">&#9670;&#160;</a></span>GetTopLevelSelection()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void xiiSelectionManager::GetTopLevelSelection </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../dc/da4/classxii_dynamic_array.html">xiiDynamicArray</a>&lt; <a class="el" href="../../d6/dee/structxii_selection_entry.html">xiiSelectionEntry</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>out_entries</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the subset of selected items which have no parent selected. </p>
+<p>I.e. if an object is selected and one of its ancestors is selected, it is culled from the list. Items are returned in the order of appearance in an expanded scene tree. Their order in the selection is returned through <a class="el" href="../../d6/dee/structxii_selection_entry.html">xiiSelectionEntry</a>. </p>
+
+</div>
+</div>
+<a id="a58c09f8dce558a06c52b5626a70b518a" name="a58c09f8dce558a06c52b5626a70b518a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a58c09f8dce558a06c52b5626a70b518a">&#9670;&#160;</a></span>SetRuntimeOverrideSelection()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void xiiSelectionManager::SetRuntimeOverrideSelection </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d8/df8/classxii_deque.html">xiiDeque</a>&lt; const <a class="el" href="../../da/dd8/classxii_document_object.html">xiiDocumentObject</a> * &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>selection</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets a separate selection (temporarily), which is sent to the engine but not propagated to the editor. </p>
+<p>This is used for cases where temporarily the engine should use a different selection than the editor. Currently this is used during drag-and-drop, to already show the dragged object as selected and especially to exclude it from picking, but not yet show the new object as selected in the property grids, such that users can interact with the previously selected object.</p>
+<p>To clear a runtime override selection, simply set an empty selection. </p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
 <li>/home/runner/work/XII/XII/Source/Tools/Libs/ToolsFoundation/Selection/<a class="el" href="../../d5/d5c/_selection_manager_8h_source.html">SelectionManager.h</a></li>
 <li>/home/runner/work/XII/XII/Source/Tools/Libs/ToolsFoundation/Selection/Implementation/<b>SelectionManager.cpp</b></li>
 </ul>
@@ -233,7 +308,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>xiiDocument</b></td>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d6/df0/classxii_selection_manager.html">xiiSelectionManager</a></li>
-    <li class="footer">Generated on Thu Feb 20 2025 00:19:29 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Thu Mar 13 2025 23:56:47 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

@@ -151,7 +151,7 @@ Inheritance diagram for xiiVisualScriptDataType:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:addcfac600c1c2a5fc8603e3c82fd7879" id="r_addcfac600c1c2a5fc8603e3c82fd7879"><td class="memItemLeft" align="right" valign="top"><a id="addcfac600c1c2a5fc8603e3c82fd7879" name="addcfac600c1c2a5fc8603e3c82fd7879"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>Enum</b> : xiiUInt8 { <br />
+<tr class="memitem:a6d613f350a67a002ddff2e774e8e6bba" id="r_a6d613f350a67a002ddff2e774e8e6bba"><td class="memItemLeft" align="right" valign="top"><a id="a6d613f350a67a002ddff2e774e8e6bba" name="a6d613f350a67a002ddff2e774e8e6bba"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>Enum</b> : StorageType { <br />
 &#160;&#160;<b>Invalid</b> = 0
 , <b>Bool</b>
 , <b>Byte</b>
@@ -182,13 +182,15 @@ Public Types</h2></td></tr>
 , <b>Count</b>
 , <b>EnumValue</b>
 , <br />
-&#160;&#160;<b>ExtendedCount</b>
+&#160;&#160;<b>BitflagValue</b>
+, <b>ExtendedCount</b>
 , <b>AnyPointer</b> = 0xFE
 , <b>Any</b> = 0xFF
-, <b>Default</b> = Invalid
+, <br />
+&#160;&#160;<b>Default</b> = Invalid
 <br />
  }</td></tr>
-<tr class="separator:addcfac600c1c2a5fc8603e3c82fd7879"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a6d613f350a67a002ddff2e774e8e6bba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a732edb3bc8ae8e1fe5b2d75d4d81c326" id="r_a732edb3bc8ae8e1fe5b2d75d4d81c326"><td class="memItemLeft" align="right" valign="top"><a id="a732edb3bc8ae8e1fe5b2d75d4d81c326" name="a732edb3bc8ae8e1fe5b2d75d4d81c326"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>StorageType</b> = xiiUInt8</td></tr>
 <tr class="separator:a732edb3bc8ae8e1fe5b2d75d4d81c326"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -207,6 +209,9 @@ static <a class="el" href="../../dd/dba/structxii_variant_type.html#a38d867476ba
 <tr class="memitem:a2215f77097581e91fd336e01f62a14fd" id="r_a2215f77097581e91fd336e01f62a14fd"><td class="memItemLeft" align="right" valign="top"><a id="a2215f77097581e91fd336e01f62a14fd" name="a2215f77097581e91fd336e01f62a14fd"></a>
 static Enum&#160;</td><td class="memItemRight" valign="bottom"><b>FromVariantType</b> (<a class="el" href="../../dd/dba/structxii_variant_type.html#a38d867476ba7137c38a09976ece9ee6b">xiiVariantType::Enum</a> variantType)</td></tr>
 <tr class="separator:a2215f77097581e91fd336e01f62a14fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f8a658116f3593f1cd9b8d2fc337cf0" id="r_a3f8a658116f3593f1cd9b8d2fc337cf0"><td class="memItemLeft" align="right" valign="top"><a id="a3f8a658116f3593f1cd9b8d2fc337cf0" name="a3f8a658116f3593f1cd9b8d2fc337cf0"></a>
+static <a class="el" href="../../de/d63/classxii_processing_stream.html#a61a5f8d7dfbc0d30a08a35f369334b7d">xiiProcessingStream::DataType</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetStreamDataType</b> (Enum dataType)</td></tr>
+<tr class="separator:a3f8a658116f3593f1cd9b8d2fc337cf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0405a7a2aab12c23c3a9e91c7dd9745b" id="r_a0405a7a2aab12c23c3a9e91c7dd9745b"><td class="memItemLeft" align="right" valign="top"><a id="a0405a7a2aab12c23c3a9e91c7dd9745b" name="a0405a7a2aab12c23c3a9e91c7dd9745b"></a>
 static const <a class="el" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetRtti</b> (Enum dataType)</td></tr>
 <tr class="separator:a0405a7a2aab12c23c3a9e91c7dd9745b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -239,7 +244,7 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>CanConvertTo</
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d5/dce/structxii_visual_script_data_type.html">xiiVisualScriptDataType</a></li>
-    <li class="footer">Generated on Thu Feb 20 2025 00:19:30 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Thu Mar 13 2025 23:56:48 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

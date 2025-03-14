@@ -145,14 +145,13 @@ $(function(){initNavTree('d5/db7/classxii_action_map_manager.html','../../'); in
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:ab2d214583659abeeafbd5a612e69fe1b" id="r_ab2d214583659abeeafbd5a612e69fe1b"><td class="memItemLeft" align="right" valign="top"><a id="ab2d214583659abeeafbd5a612e69fe1b" name="ab2d214583659abeeafbd5a612e69fe1b"></a>
-static <a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><b>RegisterActionMap</b> (<a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sMapping)</td></tr>
-<tr class="memdesc:ab2d214583659abeeafbd5a612e69fe1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a new action map with the given name. Returns XII_FAILURE if the name was already used before. <br /></td></tr>
-<tr class="separator:ab2d214583659abeeafbd5a612e69fe1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab575ecb4cf55580bc036c5cf069bf61a" id="r_ab575ecb4cf55580bc036c5cf069bf61a"><td class="memItemLeft" align="right" valign="top"><a id="ab575ecb4cf55580bc036c5cf069bf61a" name="ab575ecb4cf55580bc036c5cf069bf61a"></a>
-static <a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><b>UnregisterActionMap</b> (<a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sMapping)</td></tr>
-<tr class="memdesc:ab575ecb4cf55580bc036c5cf069bf61a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deletes the action map with the given name. Returns XII_FAILURE, if no such map exists. <br /></td></tr>
-<tr class="separator:ab575ecb4cf55580bc036c5cf069bf61a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a988a70291673ce5f786c038a62136c79" id="r_a988a70291673ce5f786c038a62136c79"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a988a70291673ce5f786c038a62136c79">RegisterActionMap</a> (<a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sMapping, <a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sParentMapping={})</td></tr>
+<tr class="memdesc:a988a70291673ce5f786c038a62136c79"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a new action map with the given name and an optional inherited parent mapping. Asserts if the name was already used before.  <br /></td></tr>
+<tr class="separator:a988a70291673ce5f786c038a62136c79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1b2c88a1ac198658b07100ad752e592" id="r_af1b2c88a1ac198658b07100ad752e592"><td class="memItemLeft" align="right" valign="top"><a id="af1b2c88a1ac198658b07100ad752e592" name="af1b2c88a1ac198658b07100ad752e592"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>UnregisterActionMap</b> (<a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sMapping)</td></tr>
+<tr class="memdesc:af1b2c88a1ac198658b07100ad752e592"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deletes the action map with the given name. Asserts, if no such map exists. <br /></td></tr>
+<tr class="separator:af1b2c88a1ac198658b07100ad752e592"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a817f3940834b2a508fb8476ae21b84c8" id="r_a817f3940834b2a508fb8476ae21b84c8"><td class="memItemLeft" align="right" valign="top"><a id="a817f3940834b2a508fb8476ae21b84c8" name="a817f3940834b2a508fb8476ae21b84c8"></a>
 static <a class="el" href="../../db/db2/classxii_action_map.html">xiiActionMap</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetActionMap</b> (<a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sMapping)</td></tr>
 <tr class="memdesc:a817f3940834b2a508fb8476ae21b84c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the action map with the given name, or nullptr, if it doesn't exist. <br /></td></tr>
@@ -160,7 +159,48 @@ static <a class="el" href="../../db/db2/classxii_action_map.html">xiiActionMap</
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="../../d8/d4f/class_a.html">A</a> central place for creating and retrieving action maps. </p>
-</div><hr/>The documentation for this class was generated from the following files:<ul>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a988a70291673ce5f786c038a62136c79" name="a988a70291673ce5f786c038a62136c79"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a988a70291673ce5f786c038a62136c79">&#9670;&#160;</a></span>RegisterActionMap()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void xiiActionMapManager::RegisterActionMap </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a></td>          <td class="paramname"><span class="paramname"><em>sMapping</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a></td>          <td class="paramname"><span class="paramname"><em>sParentMapping</em></span><span class="paramdefsep"> = </span><span class="paramdefval">{}</span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">{</div>
+<div class="line">      <span class="keyword">const</span> <span class="keywordtype">char</span>* szMenuBar = <span class="stringliteral">&quot;AssetMenuBar&quot;</span></div>
+</div><!-- fragment -->
+<p>Adds a new action map with the given name and an optional inherited parent mapping. Asserts if the name was already used before. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sMapping</td><td>Name of the new mapping. This string has to be used when adding actions to the map. </td></tr>
+    <tr><td class="paramname">sParentMapping</td><td>If set, the new mapping will inherit all actions of this mapping. The name must exist and resolve to a valid mapping once <a class="el" href="../../db/db2/classxii_action_map.html#ac4b2a218c9f15a5a2085cfefaaa97eeb" title="Builds an action tree out of all mapped actions of this and any parent mappings.">xiiActionMap::BuildActionTree</a> is called to generate the action tree. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
 <li>/home/runner/work/XII/XII/Source/Tools/Libs/GuiFoundation/Action/<a class="el" href="../../d2/db7/_action_map_manager_8h_source.html">ActionMapManager.h</a></li>
 <li>/home/runner/work/XII/XII/Source/Editor/EditorFramework/EditorApp/Implementation/<b>Startup.cpp</b></li>
 <li>/home/runner/work/XII/XII/Source/Tools/Libs/GuiFoundation/Action/Implementation/<b>ActionMapManager.cpp</b></li>
@@ -171,7 +211,7 @@ static <a class="el" href="../../db/db2/classxii_action_map.html">xiiActionMap</
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d5/db7/classxii_action_map_manager.html">xiiActionMapManager</a></li>
-    <li class="footer">Generated on Thu Feb 20 2025 00:19:26 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Thu Mar 13 2025 23:56:43 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

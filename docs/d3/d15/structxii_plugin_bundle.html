@@ -150,14 +150,14 @@ Public Member Functions</h2></td></tr>
 <a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><b>ReadBundleFromDDL</b> (<a class="el" href="../../d6/dbd/classxii_open_ddl_reader.html">xiiOpenDdlReader</a> &amp;ref_ddl)</td></tr>
 <tr class="memdesc:acf1fc3238c7b71a5e15a0ff82a342088"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads the bundle description, but not the state. <br /></td></tr>
 <tr class="separator:acf1fc3238c7b71a5e15a0ff82a342088"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a644ac8963aa77baeb2c415eb15581590" id="r_a644ac8963aa77baeb2c415eb15581590"><td class="memItemLeft" align="right" valign="top"><a id="a644ac8963aa77baeb2c415eb15581590" name="a644ac8963aa77baeb2c415eb15581590"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>WriteStateToDDL</b> (<a class="el" href="../../d5/d15/classxii_open_ddl_writer.html">xiiOpenDdlWriter</a> &amp;ref_ddl, const char *szOwnName) const</td></tr>
-<tr class="memdesc:a644ac8963aa77baeb2c415eb15581590"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes only the bundle's state to a DDL file. <br /></td></tr>
-<tr class="separator:a644ac8963aa77baeb2c415eb15581590"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a852143d53b2ba7b0b1a6caf4163b94ea" id="r_a852143d53b2ba7b0b1a6caf4163b94ea"><td class="memItemLeft" align="right" valign="top"><a id="a852143d53b2ba7b0b1a6caf4163b94ea" name="a852143d53b2ba7b0b1a6caf4163b94ea"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>ReadStateFromDDL</b> (<a class="el" href="../../d6/dbd/classxii_open_ddl_reader.html">xiiOpenDdlReader</a> &amp;ref_ddl, const char *szOwnName)</td></tr>
-<tr class="memdesc:a852143d53b2ba7b0b1a6caf4163b94ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads only the bundle's state from a DDL file. <br /></td></tr>
-<tr class="separator:a852143d53b2ba7b0b1a6caf4163b94ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69c5c20dc7167cfbe31b02967ea8113f" id="r_a69c5c20dc7167cfbe31b02967ea8113f"><td class="memItemLeft" align="right" valign="top"><a id="a69c5c20dc7167cfbe31b02967ea8113f" name="a69c5c20dc7167cfbe31b02967ea8113f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>WriteStateToDDL</b> (<a class="el" href="../../d5/d15/classxii_open_ddl_writer.html">xiiOpenDdlWriter</a> &amp;ref_ddl, <a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sOwnName) const</td></tr>
+<tr class="memdesc:a69c5c20dc7167cfbe31b02967ea8113f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes only the bundle's state to a DDL file. <br /></td></tr>
+<tr class="separator:a69c5c20dc7167cfbe31b02967ea8113f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2695c451f09896cffa71ac3a157935bc" id="r_a2695c451f09896cffa71ac3a157935bc"><td class="memItemLeft" align="right" valign="top"><a id="a2695c451f09896cffa71ac3a157935bc" name="a2695c451f09896cffa71ac3a157935bc"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ReadStateFromDDL</b> (<a class="el" href="../../d6/dbd/classxii_open_ddl_reader.html">xiiOpenDdlReader</a> &amp;ref_ddl, <a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sOwnName)</td></tr>
+<tr class="memdesc:a2695c451f09896cffa71ac3a157935bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads only the bundle's state from a DDL file. <br /></td></tr>
+<tr class="separator:a2695c451f09896cffa71ac3a157935bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5fbbf8279194b1cfe5f411fe67dfe953" id="r_a5fbbf8279194b1cfe5f411fe67dfe953"><td class="memItemLeft" align="right" valign="top"><a id="a5fbbf8279194b1cfe5f411fe67dfe953" name="a5fbbf8279194b1cfe5f411fe67dfe953"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsStateEqual</b> (const <a class="el" href="../../d3/d15/structxii_plugin_bundle.html">xiiPluginBundle</a> &amp;rhs) const</td></tr>
 <tr class="memdesc:a5fbbf8279194b1cfe5f411fe67dfe953"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether two bundles have the same state. <br /></td></tr>
@@ -233,7 +233,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_bMandatory</b> = fa
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d3/d15/structxii_plugin_bundle.html">xiiPluginBundle</a></li>
-    <li class="footer">Generated on Thu Feb 20 2025 00:19:28 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Thu Mar 13 2025 23:56:46 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

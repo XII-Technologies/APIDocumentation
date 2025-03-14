@@ -1,6 +1,7 @@
 var classxii_task_worker_thread =
 [
     [ "xiiTaskWorkerThread", "d9/d85/classxii_task_worker_thread.html#a0a2bc3c7ea7c82217230eb48ae688834", null ],
+    [ "BroadcastClearThreadLocalsEvent", "d9/d85/classxii_task_worker_thread.html#a5ad4202f974a12f444cc4e49186f1122", null ],
     [ "DeactivateWorker", "d9/d85/classxii_task_worker_thread.html#a243e7199f20e3aeb0625272eaea3844f", null ],
     [ "GetThreadUtilization", "d9/d85/classxii_task_worker_thread.html#a9c18b75033430002772cca74362a5044", null ],
     [ "Run", "d9/d85/classxii_task_worker_thread.html#a4e6edff4111688705389537d5bebb932", null ],

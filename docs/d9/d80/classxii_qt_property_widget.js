@@ -5,6 +5,7 @@ var classxii_qt_property_widget =
     [ "GetLabel", "d9/d80/classxii_qt_property_widget.html#a849bfed8c0e8a92770ffae63ccd22fcf", null ],
     [ "HasLabel", "d9/d80/classxii_qt_property_widget.html#aa2415941f6d606187ce9d284c99a9050", null ],
     [ "SetIsDefault", "d9/d80/classxii_qt_property_widget.html#a81e3ac710f5d7e59d934e9a2d1bd420c", null ],
+    [ "SetReadOnly", "d9/d80/classxii_qt_property_widget.html#a24be51243756df6f8cf1ef6c45c0ffc3", null ],
     [ "SetSelection", "d9/d80/classxii_qt_property_widget.html#a8cc5c68c374f1c198e0e69700494943c", null ],
     [ "m_bIsDefault", "d9/d80/classxii_qt_property_widget.html#a85f75c6eca752971da650c0d1668818a", null ]
 ];

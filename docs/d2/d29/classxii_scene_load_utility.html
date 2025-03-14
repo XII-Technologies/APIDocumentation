@@ -146,17 +146,21 @@ $(function(){initNavTree('d2/d29/classxii_scene_load_utility.html','../../'); in
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a1767a7cea4cae164dadf14e250863d67" id="r_a1767a7cea4cae164dadf14e250863d67"><td class="memItemLeft" align="right" valign="top"><a id="a1767a7cea4cae164dadf14e250863d67" name="a1767a7cea4cae164dadf14e250863d67"></a>enum class &#160;</td><td class="memItemRight" valign="bottom"><b>LoadingState</b> { <b>NotStarted</b>
+<tr class="memitem:a1767a7cea4cae164dadf14e250863d67" id="r_a1767a7cea4cae164dadf14e250863d67"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1767a7cea4cae164dadf14e250863d67">LoadingState</a> { <br />
+&#160;&#160;<b>NotStarted</b>
 , <b>Ongoing</b>
 , <b>FinishedSuccessfully</b>
-, <b>Failed</b>
+, <a class="el" href="#a1767a7cea4cae164dadf14e250863d67a114614c6b69d9aeda72c88002dc26dce">FinishedAndRetrieved</a>
+, <br />
+&#160;&#160;<b>Failed</b>
+<br />
  }</td></tr>
 <tr class="separator:a1767a7cea4cae164dadf14e250863d67"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a8a4f2e1dab430a2204974f983b10c65c" id="r_a8a4f2e1dab430a2204974f983b10c65c"><td class="memItemLeft" align="right" valign="top"><a id="a8a4f2e1dab430a2204974f983b10c65c" name="a8a4f2e1dab430a2204974f983b10c65c"></a>
-LoadingState&#160;</td><td class="memItemRight" valign="bottom"><b>GetLoadingState</b> () const</td></tr>
+<a class="el" href="#a1767a7cea4cae164dadf14e250863d67">LoadingState</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetLoadingState</b> () const</td></tr>
 <tr class="memdesc:a8a4f2e1dab430a2204974f983b10c65c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether loading is still ongoing or finished. <br /></td></tr>
 <tr class="separator:a8a4f2e1dab430a2204974f983b10c65c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3b7bb425d7aacc589f71d1c7467f5534" id="r_a3b7bb425d7aacc589f71d1c7467f5534"><td class="memItemLeft" align="right" valign="top"><a id="a3b7bb425d7aacc589f71d1c7467f5534" name="a3b7bb425d7aacc589f71d1c7467f5534"></a>
@@ -176,10 +180,45 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>GetLoadingProgress</
 <tr class="memitem:a87f31e5d9eb27351237b8fadea04d4c8" id="r_a87f31e5d9eb27351237b8fadea04d4c8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/d4a/classxii_unique_ptr.html">xiiUniquePtr</a>&lt; <a class="el" href="../../d6/d89/classxii_world.html">xiiWorld</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a87f31e5d9eb27351237b8fadea04d4c8">RetrieveLoadedScene</a> ()</td></tr>
 <tr class="memdesc:a87f31e5d9eb27351237b8fadea04d4c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Once loading is finished successfully, call this to take ownership of the loaded scene.  <br /></td></tr>
 <tr class="separator:a87f31e5d9eb27351237b8fadea04d4c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1fe87c36ee9cd954cb55484efa87c24f" id="r_a1fe87c36ee9cd954cb55484efa87c24f"><td class="memItemLeft" align="right" valign="top"><a id="a1fe87c36ee9cd954cb55484efa87c24f" name="a1fe87c36ee9cd954cb55484efa87c24f"></a>
+<a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetRequestedScene</b> () const</td></tr>
+<tr class="memdesc:a1fe87c36ee9cd954cb55484efa87c24f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the path to the scene file as it was originally requested. <br /></td></tr>
+<tr class="separator:a1fe87c36ee9cd954cb55484efa87c24f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e7c5112cd8fcce89fc7b514f97984e8" id="r_a6e7c5112cd8fcce89fc7b514f97984e8"><td class="memItemLeft" align="right" valign="top"><a id="a6e7c5112cd8fcce89fc7b514f97984e8" name="a6e7c5112cd8fcce89fc7b514f97984e8"></a>
+<a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetRedirectedScene</b> () const</td></tr>
+<tr class="memdesc:a6e7c5112cd8fcce89fc7b514f97984e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the path to the scene file after it was redirected. <br /></td></tr>
+<tr class="separator:a6e7c5112cd8fcce89fc7b514f97984e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This class allows to load a scene in the background and switch to it, once loading has finished. </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
+</div><h2 class="groupheader">Member Enumeration Documentation</h2>
+<a id="a1767a7cea4cae164dadf14e250863d67" name="a1767a7cea4cae164dadf14e250863d67"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1767a7cea4cae164dadf14e250863d67">&#9670;&#160;</a></span>LoadingState</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum class <a class="el" href="#a1767a7cea4cae164dadf14e250863d67">xiiSceneLoadUtility::LoadingState</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a1767a7cea4cae164dadf14e250863d67a114614c6b69d9aeda72c88002dc26dce" name="a1767a7cea4cae164dadf14e250863d67a114614c6b69d9aeda72c88002dc26dce"></a>FinishedAndRetrieved&#160;</td><td class="fielddoc"><p>Loading succeeded and someone already called <a class="el" href="#a87f31e5d9eb27351237b8fadea04d4c8" title="Once loading is finished successfully, call this to take ownership of the loaded scene.">RetrieveLoadedScene()</a> </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
 <a id="a87f31e5d9eb27351237b8fadea04d4c8" name="a87f31e5d9eb27351237b8fadea04d4c8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a87f31e5d9eb27351237b8fadea04d4c8">&#9670;&#160;</a></span>RetrieveLoadedScene()</h2>
 
@@ -254,7 +293,7 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>GetLoadingProgress</
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d2/d29/classxii_scene_load_utility.html">xiiSceneLoadUtility</a></li>
-    <li class="footer">Generated on Thu Feb 20 2025 00:19:29 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Thu Mar 13 2025 23:56:47 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

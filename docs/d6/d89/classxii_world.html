@@ -563,6 +563,9 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>TryGetObjectWithGloba
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>TryGetObjectWithGlobalKey</b> (const <a class="el" href="../../d5/dd2/classxii_temp_hashed_string.html">xiiTempHashedString</a> &amp;sGlobalKey, const <a class="el" href="../../d0/d91/classxii_game_object.html">xiiGameObject</a> *&amp;out_pObject) const</td></tr>
 <tr class="memdesc:a8f73cae5d000371744aa9bc0f9d399d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether an object with the given global key exists and if so writes out the corresponding pointer to out_pObject. <br /></td></tr>
 <tr class="separator:a8f73cae5d000371744aa9bc0f9d399d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2dbbb44b17ee9c8e4eed6de77653a5df" id="r_a2dbbb44b17ee9c8e4eed6de77653a5df"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d91/classxii_game_object.html">xiiGameObject</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2dbbb44b17ee9c8e4eed6de77653a5df">SearchForObject</a> (<a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sSearchPath, <a class="el" href="../../d0/d91/classxii_game_object.html">xiiGameObject</a> *pReferenceObject=nullptr, const <a class="el" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a> *pExpectedComponent=nullptr)</td></tr>
+<tr class="memdesc:a2dbbb44b17ee9c8e4eed6de77653a5df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Searches for an object by path. Can find objects through a global key and/or relative to an object. May also search for an object that has a certain component.  <br /></td></tr>
+<tr class="separator:a2dbbb44b17ee9c8e4eed6de77653a5df"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae1895dfef2aed40956f7d51e4eb83a2e" id="r_ae1895dfef2aed40956f7d51e4eb83a2e"><td class="memItemLeft" align="right" valign="top"><a id="ae1895dfef2aed40956f7d51e4eb83a2e" name="ae1895dfef2aed40956f7d51e4eb83a2e"></a>
 xiiUInt32&#160;</td><td class="memItemRight" valign="bottom"><b>GetObjectCount</b> () const</td></tr>
 <tr class="memdesc:ae1895dfef2aed40956f7d51e4eb83a2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the total number of objects in this world. <br /></td></tr>
@@ -718,6 +721,63 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>Traverse</b> (<a clas
 
 </div>
 </div>
+<a id="a2dbbb44b17ee9c8e4eed6de77653a5df" name="a2dbbb44b17ee9c8e4eed6de77653a5df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2dbbb44b17ee9c8e4eed6de77653a5df">&#9670;&#160;</a></span>SearchForObject()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d0/d91/classxii_game_object.html">xiiGameObject</a> * xiiWorld::SearchForObject </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a></td>          <td class="paramname"><span class="paramname"><em>sSearchPath</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d0/d91/classxii_game_object.html">xiiGameObject</a> *</td>          <td class="paramname"><span class="paramname"><em>pReferenceObject</em></span><span class="paramdefsep"> = </span><span class="paramdefval">nullptr</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a> *</td>          <td class="paramname"><span class="paramname"><em>pExpectedComponent</em></span><span class="paramdefsep"> = </span><span class="paramdefval">nullptr</span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">nodiscard</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Searches for an object by path. Can find objects through a global key and/or relative to an object. May also search for an object that has a certain component. </p>
+<p>The syntax for <em>sSearchPath</em> is as follows:</p><ul>
+<li>All pieces of the path must be separated by slashes (/)</li>
+<li>If it starts with "G:" then it will search for an object via global key. Ie "G:keyname" will search for an object with the global key "keyname". If no such object exists, the search fails. Otherwise this object becomes the reference object for the remainder. If pReferenceObject was nullptr to begin with, sSearchPath MUST start with a global key search.</li>
+<li>If it starts (or continues) with "P:" it will search "upwards" from the reference object to find the closest parent object that has the requested name. Ie "P:parentname" will check the reference object's name for "parentname", if it doesn't match, it checks the parent object, and so on, until it either fails, because no such named parent exists, or it finds an object.</li>
+<li>If the path starts (or continues) with "../" it will go to the parent object of the current object. This is repeated for every occurrance of "../". The search fails, if there are not enough parent objects.</li>
+<li>If the path starts (or continues) with a relative path (e.g. "a/b") it then searches for any direct or indirect child called "a" and below that a direct or indirect object with name "b". If that is found, and pExpectedComponent is not nullptr, it is checked whether the found object has that component type attached. If so, the search terminates successfully. Otherwise the search continues for all other combinations of objects called "a" with decendants called "b" until it finds an object with that component type, or runs out of objects.</li>
+</ul>
+<p>Example paths:</p><ul>
+<li>"G:player" -&gt; search for the object with the global key "player"</li>
+<li>"P:root" -&gt; starting at the reference object searches for the parent object called "root"</li>
+<li>"../.." -&gt; starting at the reference object, goes two levels up</li>
+<li>"head/camera" -&gt; starting at the reference object searches for a child object called "head" and from there searches for a child object called "camera"</li>
+<li>"G:door1/P:frame" -&gt; uses a global key to find the "door1" object and from there gets the parent object called "frame"</li>
+<li>"G:door1/.." -&gt; uses a global key to find the "door1" object and returns its parent object</li>
+<li>"P:root/obj2" -&gt; starting at the reference object searches for a parent called "root" and from there searches for a child object called "obj2"</li>
+</ul>
+<p>Invalid paths:</p><ul>
+<li>"P:name/G:key" -&gt; "G:" must be the first part of the string.</li>
+<li>"obj/../" -&gt; ".." can only appear at the beginning of the relative path</li>
+<li>"obj/P:name" -&gt; "P:" must be at the very beginning or directly after "G:" </li>
+</ul>
+
+</div>
+</div>
 <a id="aafc301d10505ff5f9610bfcb4ce7b549" name="aafc301d10505ff5f9610bfcb4ce7b549"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aafc301d10505ff5f9610bfcb4ce7b549">&#9670;&#160;</a></span>SetGameObjectReferenceResolver()</h2>
 
@@ -749,7 +809,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>Traverse</b> (<a clas
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d6/d89/classxii_world.html">xiiWorld</a></li>
-    <li class="footer">Generated on Thu Feb 20 2025 00:19:30 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Thu Mar 13 2025 23:56:48 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

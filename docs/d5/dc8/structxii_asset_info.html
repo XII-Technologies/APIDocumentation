@@ -153,7 +153,8 @@ Public Types</h2></td></tr>
 , <b>MissingTransformDependency</b>
 , <b>MissingThumbnailDependency</b>
 , <br />
-&#160;&#160;<b>CircularDependency</b>
+&#160;&#160;<b>MissingPackageDependency</b>
+, <b>CircularDependency</b>
 , <b>COUNT</b>
 <br />
  }</td></tr>
@@ -188,6 +189,10 @@ xiiUInt64&#160;</td><td class="memItemRight" valign="bottom"><b>m_AssetHash</b> 
 xiiUInt64&#160;</td><td class="memItemRight" valign="bottom"><b>m_ThumbHash</b> = 0</td></tr>
 <tr class="memdesc:a8deda3d18ebafc89266cd7635cef7b84"><td class="mdescLeft">&#160;</td><td class="mdescRight">Valid if m_TransformState != Unknown and asset not in Curator's m_TransformStateStale list. <br /></td></tr>
 <tr class="separator:a8deda3d18ebafc89266cd7635cef7b84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a686a555c3ee0dade95c72b244d1ee585" id="r_a686a555c3ee0dade95c72b244d1ee585"><td class="memItemLeft" align="right" valign="top"><a id="a686a555c3ee0dade95c72b244d1ee585" name="a686a555c3ee0dade95c72b244d1ee585"></a>
+xiiUInt64&#160;</td><td class="memItemRight" valign="bottom"><b>m_PackageHash</b> = 0</td></tr>
+<tr class="memdesc:a686a555c3ee0dade95c72b244d1ee585"><td class="mdescLeft">&#160;</td><td class="mdescRight">Valid if m_TransformState != Unknown and asset not in Curator's m_TransformStateStale list. <br /></td></tr>
+<tr class="separator:a686a555c3ee0dade95c72b244d1ee585"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afe967110084f3582511ae879ec023815" id="r_afe967110084f3582511ae879ec023815"><td class="memItemLeft" align="right" valign="top"><a id="afe967110084f3582511ae879ec023815" name="afe967110084f3582511ae879ec023815"></a>
 <a class="el" href="../../dc/da4/classxii_dynamic_array.html">xiiDynamicArray</a>&lt; <a class="el" href="../../d5/dce/structxii_log_entry.html">xiiLogEntry</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_LogEntries</b></td></tr>
 <tr class="separator:afe967110084f3582511ae879ec023815"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -206,6 +211,9 @@ const <a class="el" href="../../de/d67/structxii_asset_document_type_descriptor.
 <tr class="memitem:a4f960b9a976cb03767c2a5e518817877" id="r_a4f960b9a976cb03767c2a5e518817877"><td class="memItemLeft" align="right" valign="top"><a id="a4f960b9a976cb03767c2a5e518817877" name="a4f960b9a976cb03767c2a5e518817877"></a>
 <a class="el" href="../../d6/d31/classxii_set.html">xiiSet</a>&lt; <a class="el" href="../../df/dfb/structxii_hybrid_string.html">xiiString</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_MissingThumbnailDeps</b></td></tr>
 <tr class="separator:a4f960b9a976cb03767c2a5e518817877"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afdf7b0e8ee6329bc68356a52e877867b" id="r_afdf7b0e8ee6329bc68356a52e877867b"><td class="memItemLeft" align="right" valign="top"><a id="afdf7b0e8ee6329bc68356a52e877867b" name="afdf7b0e8ee6329bc68356a52e877867b"></a>
+<a class="el" href="../../d6/d31/classxii_set.html">xiiSet</a>&lt; <a class="el" href="../../df/dfb/structxii_hybrid_string.html">xiiString</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_MissingPackageDeps</b></td></tr>
+<tr class="separator:afdf7b0e8ee6329bc68356a52e877867b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a70d9f4f871bfabfcbf12c67f5c18fca0" id="r_a70d9f4f871bfabfcbf12c67f5c18fca0"><td class="memItemLeft" align="right" valign="top"><a id="a70d9f4f871bfabfcbf12c67f5c18fca0" name="a70d9f4f871bfabfcbf12c67f5c18fca0"></a>
 <a class="el" href="../../d6/d31/classxii_set.html">xiiSet</a>&lt; <a class="el" href="../../df/dfb/structxii_hybrid_string.html">xiiString</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_CircularDependencies</b></td></tr>
 <tr class="separator:a70d9f4f871bfabfcbf12c67f5c18fca0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -224,7 +232,7 @@ const <a class="el" href="../../de/d67/structxii_asset_document_type_descriptor.
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d5/dc8/structxii_asset_info.html">xiiAssetInfo</a></li>
-    <li class="footer">Generated on Thu Feb 20 2025 00:19:26 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Thu Mar 13 2025 23:56:44 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

@@ -9,5 +9,6 @@ var classxii_document_node_manager =
       [ "ConnectNtoN", "db/d55/classxii_document_node_manager.html#a0b2d58014ff84a8403cf2873947e75e2a51eac945b564c56af95604481b31264c", null ]
     ] ],
     [ "CanReachNode", "db/d55/classxii_document_node_manager.html#a20fb9e26a07d3943c350a171f658d4b9", null ],
+    [ "GetNodeCreationTemplates", "db/d55/classxii_document_node_manager.html#ab0c1496f69da6fc60d6d89b0f95dd3f8", null ],
     [ "WouldConnectionCreateCircle", "db/d55/classxii_document_node_manager.html#a7e24190f3218161ef7db8267152a83d9", null ]
 ];
