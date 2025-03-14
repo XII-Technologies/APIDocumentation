@@ -71,6 +71,7 @@ var NAVTREEINDEX25 =
 "d7/df1/structxii_thread_event.html#ad0f18b80dbf9491586961720cbe55634a11b291936db953288e049b36bb543604":[6,0,2436,0,0],
 "d7/df1/structxii_thread_event.html#ad0f18b80dbf9491586961720cbe55634a4ad2dfcc55361022c8187fd09292aeca":[6,0,2436,0,3],
 "d7/df1/structxii_thread_event.html#ad0f18b80dbf9491586961720cbe55634a52c7c550b893f8f292ff4a7989cdb90e":[6,0,2436,0,1],
+"d7/df1/structxii_thread_event.html#ad0f18b80dbf9491586961720cbe55634aed4d517dc85e644cd7f64a73d86a3ea4":[6,0,2436,0,4],
 "d7/df2/classxii_reflection_filter_pass.html":[6,0,1950],
 "d7/df2/classxii_reflection_filter_pass.html#a0d5c7a5f8e9ffa606e067a275a6cdd07":[6,0,1950,0],
 "d7/df2/classxii_reflection_filter_pass.html#a24925e4437928a62376c7b713cbdd5fe":[6,0,1950,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX25 =
 "d8/d4a/classxii_graph_patch_context.html#af5621f7cf4e22e4a69700909263bcfd4":[6,0,1132,1],
 "d8/d4c/classxii_source_pass.html":[6,0,2258],
 "d8/d4c/classxii_source_pass.html#a26643e5446b3c77c74df4339a7a4a08e":[6,0,2258,0],
-"d8/d4c/classxii_source_pass.html#abea760dc52b3a88fb4c50516f3748f93":[6,0,2258,1],
-"d8/d4d/classxii_q_grid_bar_widget.html":[6,0,1673]
+"d8/d4c/classxii_source_pass.html#abea760dc52b3a88fb4c50516f3748f93":[6,0,2258,1]
 };

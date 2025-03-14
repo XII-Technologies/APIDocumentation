@@ -141,10 +141,14 @@ $(function(){initNavTree('d7/df1/structxii_thread_event.html','../../'); initRes
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:ad0f18b80dbf9491586961720cbe55634" id="r_ad0f18b80dbf9491586961720cbe55634"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad0f18b80dbf9491586961720cbe55634">Type</a> { <a class="el" href="#ad0f18b80dbf9491586961720cbe55634a11b291936db953288e049b36bb543604">ThreadCreated</a>
+<tr class="memitem:ad0f18b80dbf9491586961720cbe55634" id="r_ad0f18b80dbf9491586961720cbe55634"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad0f18b80dbf9491586961720cbe55634">Type</a> { <br />
+&#160;&#160;<a class="el" href="#ad0f18b80dbf9491586961720cbe55634a11b291936db953288e049b36bb543604">ThreadCreated</a>
 , <a class="el" href="#ad0f18b80dbf9491586961720cbe55634a52c7c550b893f8f292ff4a7989cdb90e">ThreadDestroyed</a>
 , <a class="el" href="#ad0f18b80dbf9491586961720cbe55634a0751f3bd0d12d93ca4aaf7e9ea758e39">StartingExecution</a>
 , <a class="el" href="#ad0f18b80dbf9491586961720cbe55634a4ad2dfcc55361022c8187fd09292aeca">FinishedExecution</a>
+, <br />
+&#160;&#160;<a class="el" href="#ad0f18b80dbf9491586961720cbe55634aed4d517dc85e644cd7f64a73d86a3ea4">ClearThreadLocals</a>
+<br />
  }</td></tr>
 <tr class="separator:ad0f18b80dbf9491586961720cbe55634"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -178,13 +182,15 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ad0f18b80dbf9491586961720cbe55634a11b291936db953288e049b36bb543604" name="ad0f18b80dbf9491586961720cbe55634a11b291936db953288e049b36bb543604"></a>ThreadCreated&#160;</td><td class="fielddoc"><p>Called on the thread that creates the <a class="el" href="../../d8/d8c/classxii_thread.html" title="This class is the base class for platform independent long running threads.">xiiThread</a> instance. </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ad0f18b80dbf9491586961720cbe55634a11b291936db953288e049b36bb543604" name="ad0f18b80dbf9491586961720cbe55634a11b291936db953288e049b36bb543604"></a>ThreadCreated&#160;</td><td class="fielddoc"><p>Called on the thread that creates the <a class="el" href="../../d8/d8c/classxii_thread.html" title="This class is the base class for platform independent long running threads.">xiiThread</a> instance (not the <a class="el" href="../../d8/d8c/classxii_thread.html" title="This class is the base class for platform independent long running threads.">xiiThread</a> itself). </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ad0f18b80dbf9491586961720cbe55634a52c7c550b893f8f292ff4a7989cdb90e" name="ad0f18b80dbf9491586961720cbe55634a52c7c550b893f8f292ff4a7989cdb90e"></a>ThreadDestroyed&#160;</td><td class="fielddoc"><p>Called on the thread that destroys the <a class="el" href="../../d8/d8c/classxii_thread.html" title="This class is the base class for platform independent long running threads.">xiiThread</a> instance. </p>
+<tr><td class="fieldname"><a id="ad0f18b80dbf9491586961720cbe55634a52c7c550b893f8f292ff4a7989cdb90e" name="ad0f18b80dbf9491586961720cbe55634a52c7c550b893f8f292ff4a7989cdb90e"></a>ThreadDestroyed&#160;</td><td class="fielddoc"><p>Called on the thread that destroys the <a class="el" href="../../d8/d8c/classxii_thread.html" title="This class is the base class for platform independent long running threads.">xiiThread</a> instance (not the <a class="el" href="../../d8/d8c/classxii_thread.html" title="This class is the base class for platform independent long running threads.">xiiThread</a> itself). </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ad0f18b80dbf9491586961720cbe55634a0751f3bd0d12d93ca4aaf7e9ea758e39" name="ad0f18b80dbf9491586961720cbe55634a0751f3bd0d12d93ca4aaf7e9ea758e39"></a>StartingExecution&#160;</td><td class="fielddoc"><p>Called on the thread that executes the <a class="el" href="../../d8/d8c/classxii_thread.html" title="This class is the base class for platform independent long running threads.">xiiThread</a> instance. </p>
+<tr><td class="fieldname"><a id="ad0f18b80dbf9491586961720cbe55634a0751f3bd0d12d93ca4aaf7e9ea758e39" name="ad0f18b80dbf9491586961720cbe55634a0751f3bd0d12d93ca4aaf7e9ea758e39"></a>StartingExecution&#160;</td><td class="fielddoc"><p>Called on the <a class="el" href="../../d8/d8c/classxii_thread.html" title="This class is the base class for platform independent long running threads.">xiiThread</a> before the Run() method is executed. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ad0f18b80dbf9491586961720cbe55634a4ad2dfcc55361022c8187fd09292aeca" name="ad0f18b80dbf9491586961720cbe55634a4ad2dfcc55361022c8187fd09292aeca"></a>FinishedExecution&#160;</td><td class="fielddoc"><p>Called on the thread that executes the <a class="el" href="../../d8/d8c/classxii_thread.html" title="This class is the base class for platform independent long running threads.">xiiThread</a> instance. </p>
+<tr><td class="fieldname"><a id="ad0f18b80dbf9491586961720cbe55634a4ad2dfcc55361022c8187fd09292aeca" name="ad0f18b80dbf9491586961720cbe55634a4ad2dfcc55361022c8187fd09292aeca"></a>FinishedExecution&#160;</td><td class="fielddoc"><p>Called on the <a class="el" href="../../d8/d8c/classxii_thread.html" title="This class is the base class for platform independent long running threads.">xiiThread</a> after the Run() method was executed. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad0f18b80dbf9491586961720cbe55634aed4d517dc85e644cd7f64a73d86a3ea4" name="ad0f18b80dbf9491586961720cbe55634aed4d517dc85e644cd7f64a73d86a3ea4"></a>ClearThreadLocals&#160;</td><td class="fielddoc"><p>Potentially called on the <a class="el" href="../../d8/d8c/classxii_thread.html" title="This class is the base class for platform independent long running threads.">xiiThread</a> (currently only for task system threads) at a time when plugins should clean up thread-local storage. </p>
 </td></tr>
 </table>
 
@@ -199,7 +205,7 @@ Public Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d7/df1/structxii_thread_event.html">xiiThreadEvent</a></li>
-    <li class="footer">Generated on Thu Mar 13 2025 23:56:47 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Fri Mar 14 2025 17:47:11 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

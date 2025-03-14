@@ -1,5 +1,6 @@
 var NAVTREEINDEX44 =
 {
+"de/d10/structxii_msg_set_color.html":[6,0,1476],
 "de/d10/structxii_msg_set_color.html#a14c0660cd8ce63b4d84cde8ef371cb2a":[6,0,1476,2],
 "de/d10/structxii_msg_set_color.html#a2cbb9f105133a12e21585e1aefdf697d":[6,0,1476,3],
 "de/d10/structxii_msg_set_color.html#a5b4404f2634402362eafe9e169e18198":[6,0,1476,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX44 =
 "de/d6d/structxii_path_node_tangent_mode.html#abde1e08a9cb26ac69d24b015b6a71ba4a3486a51e609abba5bc2043e2a199e7da":[6,0,1548,0,2],
 "de/d6d/structxii_path_node_tangent_mode.html#abde1e08a9cb26ac69d24b015b6a71ba4a3c864a9190ff1fb3501c7f18918fa907":[6,0,1548,0,0],
 "de/d6e/classxii_history_source_pass_texture_data_provider.html":[6,0,1187],
-"de/d6e/structogt__mesh__vertex.html":[6,0,43],
-"de/d70/structxii_default_allocator_wrapper.html":[6,0,530]
+"de/d6e/structogt__mesh__vertex.html":[6,0,43]
 };

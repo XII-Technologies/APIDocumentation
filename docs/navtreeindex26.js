@@ -1,5 +1,6 @@
 var NAVTREEINDEX26 =
 {
+"d8/d4d/classxii_q_grid_bar_widget.html":[6,0,1673],
 "d8/d4e/classxii_global_settings_msg_to_engine.html":[6,0,1127],
 "d8/d4e/structxii_d_g_m_l_graph_1_1_property_value.html":[6,0,554,4],
 "d8/d4f/class_a.html":[6,0,14],
@@ -248,6 +249,5 @@ var NAVTREEINDEX26 =
 "d8/da5/classxii_render_data.html#a6ad19b1a61f0cb7ec53ca1fec0796d84":[6,0,1978,4],
 "d8/da5/classxii_render_data.html#aa7b3828acb943e031f920eaa428bf00e":[6,0,1978,2],
 "d8/da5/classxii_render_data.html#ab35c4993602db7890eff77d174c12505":[6,0,1978,3],
-"d8/da7/classxii_duplicate_objects_command.html":[6,0,605],
-"d8/da7/classxii_duplicate_objects_command.html#a091a3417d642cfad68b777bc93b92178":[6,0,605,0]
+"d8/da7/classxii_duplicate_objects_command.html":[6,0,605]
 };

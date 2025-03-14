@@ -1,5 +1,6 @@
 var NAVTREEINDEX28 =
 {
+"d9/d07/classxii_c_var.html#a693fae3620ba401917d9e6b11414af8e":[6,0,482,2],
 "d9/d07/classxii_c_var.html#a697db3abd3826d3105034bb2350206d8":[6,0,482,1],
 "d9/d07/classxii_c_var.html#a9f68db71b2d4bc056865b57957a8af44":[6,0,482,0],
 "d9/d08/structxii_g_a_l_fence_type.html":[6,0,860],
@@ -248,6 +249,5 @@ var NAVTREEINDEX28 =
 "d9/d5d/classxii_dds_file_format.html#a682d20ef04297101f404016d2135e93b":[6,0,502,3],
 "d9/d5d/classxii_dds_file_format.html#aca4c3c7c322b4fc7da76e4bbf6d1b67b":[6,0,502,1],
 "d9/d5d/classxii_dds_file_format.html#acce67f2067dcf7adb40684bd6099dd6d":[6,0,502,4],
-"d9/d5d/classxii_dds_file_format.html#ad50200c5a0dd883c161120594a65c2e1":[6,0,502,0],
-"d9/d5d/structxii_grid_navmesh_1_1_area_edge.html":[6,0,1138,0]
+"d9/d5d/classxii_dds_file_format.html#ad50200c5a0dd883c161120594a65c2e1":[6,0,502,0]
 };

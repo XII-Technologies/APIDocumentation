@@ -1,5 +1,6 @@
 var NAVTREEINDEX48 =
 {
+"df/d92/structxii_visual_script_data_description.html":[6,0,2591],
 "df/d95/class_b.html":[6,0,17],
 "df/d98/classxii_document_clear_msg_to_engine.html":[6,0,568],
 "df/d99/classxii_grid_navmesh.html":[6,0,1138],
@@ -248,6 +249,5 @@ var NAVTREEINDEX48 =
 "functions_eval_d.html":[6,3,5,4],
 "functions_eval_e.html":[6,3,5,5],
 "functions_eval_f.html":[6,3,5,6],
-"functions_eval_g.html":[6,3,5,7],
-"functions_eval_h.html":[6,3,5,8]
+"functions_eval_g.html":[6,3,5,7]
 };

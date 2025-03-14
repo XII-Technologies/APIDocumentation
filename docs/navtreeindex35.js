@@ -1,5 +1,6 @@
 var NAVTREEINDEX35 =
 {
+"db/d3b/classxii_g_a_l_semaphore_pool_vulkan.html":[6,0,980],
 "db/d3b/classxii_tag.html":[6,0,2366],
 "db/d3c/classxii_skeleton_asset_document_generator.html":[6,0,2223],
 "db/d3c/classxii_skeleton_asset_document_generator.html#a22d26a8c15769166f58bf82d8b8406e5":[6,0,2223,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX35 =
 "db/d8e/classxii_atomic_integer.html#aabdf5bd54862c616418be49fb3ae15ad":[6,0,227,4],
 "db/d8e/classxii_atomic_integer.html#ab13c9aa234037950cbfbfacaca0e0168":[6,0,227,11],
 "db/d8e/classxii_atomic_integer.html#ac1032efec3c4912df4382e9a6022c2ac":[6,0,227,5],
-"db/d8e/classxii_atomic_integer.html#ac46b08e464fdf6cb2fba8bafca570390":[6,0,227,9],
-"db/d8e/classxii_atomic_integer.html#accd341a159b9735b35ce2d70371bbaaf":[6,0,227,2]
+"db/d8e/classxii_atomic_integer.html#ac46b08e464fdf6cb2fba8bafca570390":[6,0,227,9]
 };
