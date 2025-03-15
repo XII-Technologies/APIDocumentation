@@ -1,5 +1,6 @@
 var NAVTREEINDEX32 =
 {
+"da/d3d/structxii_component___script_base_class_functions.html":[6,0,388],
 "da/d3d/structxii_g_a_l_ray_tracing_capability_flags.html":[6,0,941],
 "da/d3d/structxii_g_a_l_ray_tracing_capability_flags.html#af8519d16a825771c80cba3477f08edf6":[6,0,941,1],
 "da/d3d/structxii_g_a_l_ray_tracing_capability_flags.html#af8519d16a825771c80cba3477f08edf6a308407a507137360ec9c57eb47ea51cb":[6,0,941,1,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX32 =
 "da/d7c/classxii_shader_resource.html":[6,0,2165],
 "da/d7c/classxii_shader_resource.html#a2a59f08d5104ad0b4f07be6d39a658ae":[6,0,2165,0],
 "da/d7c/classxii_shader_resource.html#a542451824cea875a41b734a2076ca5b5":[6,0,2165,1],
-"da/d7c/classxii_shader_resource.html#aa7d7bc3140899c2ba7995d1bf8b7b799":[6,0,2165,2],
-"da/d7c/structxii_clip_space_y_mode.html":[6,0,319]
+"da/d7c/classxii_shader_resource.html#aa7d7bc3140899c2ba7995d1bf8b7b799":[6,0,2165,2]
 };

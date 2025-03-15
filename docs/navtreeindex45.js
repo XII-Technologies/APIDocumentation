@@ -1,5 +1,6 @@
 var NAVTREEINDEX45 =
 {
+"de/d6e/structogt__mesh__vertex.html":[6,0,43],
 "de/d70/structxii_default_allocator_wrapper.html":[6,0,530],
 "de/d71/classxii_bmp_file_format.html":[6,0,268],
 "de/d71/classxii_bmp_file_format.html#a1c01e0a655057f2ee5f599f264061377":[6,0,268,4],
@@ -248,6 +249,5 @@ var NAVTREEINDEX45 =
 "de/dad/classxii_standard_j_s_o_n_writer.html#ad1818ca494753990c09e61416f5a19ee":[6,0,2286,33],
 "de/dad/classxii_standard_j_s_o_n_writer.html#ada5cb688253c5e2bfc5aba41d25493ba":[6,0,2286,51],
 "de/dad/classxii_standard_j_s_o_n_writer.html#adf0e47d3c63088de782c33d25f2f73d7":[6,0,2286,36],
-"de/dad/classxii_standard_j_s_o_n_writer.html#aee0cb72941dfd3adf5694ca3ebeb28a5":[6,0,2286,28],
-"de/dad/classxii_standard_j_s_o_n_writer.html#aee83a0c6b33ae4aab739c3b45648a8ae":[6,0,2286,31]
+"de/dad/classxii_standard_j_s_o_n_writer.html#aee0cb72941dfd3adf5694ca3ebeb28a5":[6,0,2286,28]
 };

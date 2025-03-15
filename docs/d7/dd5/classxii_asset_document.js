@@ -27,8 +27,8 @@ var classxii_asset_document =
     [ "InternalCreateThumbnail", "d7/dd5/classxii_asset_document.html#a8e12ae39c26b2d374a843c51548b7c8b", null ],
     [ "InternalGetMetaDataHash", "d7/dd5/classxii_asset_document.html#a926ba5b6d6317d601dca95b54810e6aa", null ],
     [ "InternalSaveDocument", "d7/dd5/classxii_asset_document.html#a7d52f7d07c26e843de9660efd99a6c21", null ],
-    [ "InternalTransformAsset", "d7/dd5/classxii_asset_document.html#a56bee5a99d04dcf3d90702381f98b2bb", null ],
     [ "InternalTransformAsset", "d7/dd5/classxii_asset_document.html#a3359459bc0055cfe5dce3baad65432d3", null ],
+    [ "InternalTransformAsset", "d7/dd5/classxii_asset_document.html#a144558e5fe0347f08743cccabbe91579", null ],
     [ "InvalidateAssetThumbnail", "d7/dd5/classxii_asset_document.html#ad1d7b22d088dbe1161371f7ddd4c84f2", null ],
     [ "RemoteCreateThumbnail", "d7/dd5/classxii_asset_document.html#a88f019746a61aad39446433c0136dbe7", null ],
     [ "RemoveSyncObject", "d7/dd5/classxii_asset_document.html#ad7a4d82aa0d7e6ddd4d36fd4b84048bd", null ],
@@ -40,5 +40,6 @@ var classxii_asset_document =
     [ "SyncObjectsToEngine", "d7/dd5/classxii_asset_document.html#adc51b5bf57d6b9108913c54536a77b31", null ],
     [ "TransformAsset", "d7/dd5/classxii_asset_document.html#a6ddf6b427c32286e8d0e6677501bef40", null ],
     [ "UpdateAssetDocumentInfo", "d7/dd5/classxii_asset_document.html#aa4ab7ab567cb104cf3138228ac514b31", null ],
+    [ "WaitForEngineStatusLoaded", "d7/dd5/classxii_asset_document.html#a7b0d17c20b84f641dbb2d47102640c4c", null ],
     [ "m_CommonAssetUiChangeEvent", "d7/dd5/classxii_asset_document.html#abee7e1d1f1c6d4c33f7ae7e572755ae2", null ]
 ];

@@ -1,5 +1,6 @@
 var NAVTREEINDEX34 =
 {
+"da/de2/classxii_curve1_d_resource.html#ac733c09b277081917c5fd4a79db54653":[6,0,467,3],
 "da/de3/classxii_rotate_gizmo_edit_tool.html":[6,0,2041],
 "da/de3/classxii_scene_document_root.html":[6,0,2069],
 "da/de4/classxii_g_a_l_shader_resource_binding_handle.html":[6,0,992],
@@ -248,6 +249,5 @@ var NAVTREEINDEX34 =
 "db/d38/structxii_tex_conv_target_platform.html":[6,0,2398],
 "db/d39/classxii_g_a_l_framebuffer.html":[6,0,864],
 "db/d39/classxii_g_a_l_framebuffer.html#acbe249a5d0e24bf683e083394cc6539b":[6,0,864,0],
-"db/d3a/structxii_color_gradient_1_1_intensity_c_p.html":[6,0,347,2],
-"db/d3a/structxii_color_gradient_1_1_intensity_c_p.html#a3ff60edc0b9f956425d0b325884b9045":[6,0,347,2,0]
+"db/d3a/structxii_color_gradient_1_1_intensity_c_p.html":[6,0,347,2]
 };

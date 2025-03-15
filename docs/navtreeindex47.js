@@ -1,5 +1,6 @@
 var NAVTREEINDEX47 =
 {
+"df/d38/classxii_fileserver.html#ac92dc38b4867dc40b6ffe992951dcbf0":[6,0,721,2],
 "df/d38/classxii_fileserver.html#afb150177db6c601d5dc90b9d7865cfda":[6,0,721,3],
 "df/d3a/structxii_engine_process_document_context_flags.html":[6,0,658],
 "df/d3c/structxii_g_a_l_b_l_a_s_bounding_box_description.html":[6,0,772],
@@ -248,6 +249,5 @@ var NAVTREEINDEX47 =
 "df/d92/structxii_long_op_controller_manager_1_1_proxy_op_info.html#a8345326d90568d91086e67a222bd80d6":[6,0,1330,0,5],
 "df/d92/structxii_long_op_controller_manager_1_1_proxy_op_info.html#abe5d31d183e79295c90b797932cc7d7c":[6,0,1330,0,4],
 "df/d92/structxii_long_op_controller_manager_1_1_proxy_op_info.html#abff510efad0678ae51b923b67081f388":[6,0,1330,0,2],
-"df/d92/structxii_long_op_controller_manager_1_1_proxy_op_info.html#ae9fbddc23ead7a1753ce3eda5d6defb5":[6,0,1330,0,1],
-"df/d92/structxii_plugin_load_flags_1_1_bits.html":[6,0,1586,0]
+"df/d92/structxii_long_op_controller_manager_1_1_proxy_op_info.html#ae9fbddc23ead7a1753ce3eda5d6defb5":[6,0,1330,0,1]
 };

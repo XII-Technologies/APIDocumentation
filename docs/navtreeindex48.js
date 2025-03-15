@@ -1,5 +1,6 @@
 var NAVTREEINDEX48 =
 {
+"df/d92/structxii_plugin_load_flags_1_1_bits.html":[6,0,1586,0],
 "df/d92/structxii_visual_script_data_description.html":[6,0,2591],
 "df/d95/class_b.html":[6,0,17],
 "df/d98/classxii_document_clear_msg_to_engine.html":[6,0,568],
@@ -53,9 +54,10 @@ var NAVTREEINDEX48 =
 "df/dab/classxii_enum_base.html":[6,0,669],
 "df/dac/classxii_scene2_document.html":[6,0,2062],
 "df/dac/classxii_scene2_document.html#a3440ae6eef0cf2d6bc9445470d9b6af5":[6,0,2062,0],
-"df/dac/classxii_scene2_document.html#a4ddeb7768276b2c1d238069306de3833":[6,0,2062,4],
+"df/dac/classxii_scene2_document.html#a4ddeb7768276b2c1d238069306de3833":[6,0,2062,5],
 "df/dac/classxii_scene2_document.html#a9df9aa6688abcd39d9bc995d34b2de49":[6,0,2062,2],
 "df/dac/classxii_scene2_document.html#abc066ce488b997adbece6387c95974de":[6,0,2062,3],
+"df/dac/classxii_scene2_document.html#ac9cb4014d10bcff0e3d16d81f5d1cf85":[6,0,2062,4],
 "df/dac/classxii_scene2_document.html#af688258a4d4e2d23afe6c5432418451c":[6,0,2062,1],
 "df/dae/structxii_gizmo_flags.html":[6,0,1119],
 "df/db8/structxii_function_parameter_type_resolver_3_01_i_00_01_r_07_5_08_07_p_8_8_8_08_4.html":[6,0,758],
@@ -247,7 +249,5 @@ var NAVTREEINDEX48 =
 "functions_eval_b.html":[6,3,5,2],
 "functions_eval_c.html":[6,3,5,3],
 "functions_eval_d.html":[6,3,5,4],
-"functions_eval_e.html":[6,3,5,5],
-"functions_eval_f.html":[6,3,5,6],
-"functions_eval_g.html":[6,3,5,7]
+"functions_eval_e.html":[6,3,5,5]
 };

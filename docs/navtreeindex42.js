@@ -1,5 +1,6 @@
 var NAVTREEINDEX42 =
 {
+"dd/da1/classxii_internal_1_1_world_data_1_1_write_marker.html":[6,0,6,17,3],
 "dd/da4/classxii_command_line_option.html":[6,0,364],
 "dd/da4/classxii_command_line_option.html#a0d088b99e0e50ab991e920c8668ce5c9":[6,0,364,5],
 "dd/da4/classxii_command_line_option.html#a140b6cc484c22e77899b1a9ca6894d63":[6,0,364,7],
@@ -248,6 +249,5 @@ var NAVTREEINDEX42 =
 "dd/dea/structxii_blackboard_template_resource_descriptor.html":[6,0,260],
 "dd/deb/structxii_arg_sensitive.html":[6,0,197],
 "dd/deb/structxii_container_sub_type_resolver_3_01xii_set_3_01_t_01_4_01_4.html":[6,0,438],
-"dd/deb/structxii_mesh_buffer_resource_descriptor.html":[6,0,1410],
-"dd/deb/structxii_mesh_buffer_resource_descriptor.html#a0303cac192655b806f4941e95bc75e14":[6,0,1410,6]
+"dd/deb/structxii_mesh_buffer_resource_descriptor.html":[6,0,1410]
 };

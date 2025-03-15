@@ -177,6 +177,10 @@ const <a class="el" href="../../da/dd8/classxii_document_object.html">xiiDocumen
 <a class="el" href="../../d7/dd5/classxii_asset_document.html#ac655b2681b42cffadffe31310467a8fc">EngineStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetEngineStatus</b> () const</td></tr>
 <tr class="memdesc:a54fbd8407b480757cfeb92ea1975c9d7 inherit pub_methods_classxii_asset_document"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current state of the engine process side of this document. <br /></td></tr>
 <tr class="separator:a54fbd8407b480757cfeb92ea1975c9d7 inherit pub_methods_classxii_asset_document"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b0d17c20b84f641dbb2d47102640c4c inherit pub_methods_classxii_asset_document" id="r_a7b0d17c20b84f641dbb2d47102640c4c"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="../../d0/d54/structxii_status.html">xiiStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><b>WaitForEngineStatusLoaded</b> () const</td></tr>
+<tr class="memdesc:a7b0d17c20b84f641dbb2d47102640c4c inherit pub_methods_classxii_asset_document"><td class="mdescLeft">&#160;</td><td class="mdescRight">Waits for GetEngineStatus to return Loaded or returns a failure reason. <br /></td></tr>
+<tr class="separator:a7b0d17c20b84f641dbb2d47102640c4c inherit pub_methods_classxii_asset_document"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a187e016fb0a8971cbfa1ce5cd746fd91 inherit pub_methods_classxii_asset_document" id="r_a187e016fb0a8971cbfa1ce5cd746fd91"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../db/d1a/classxii_variant.html">xiiVariant</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dd5/classxii_asset_document.html#a187e016fb0a8971cbfa1ce5cd746fd91">GetCreateEngineMetaData</a> () const</td></tr>
 <tr class="memdesc:a187e016fb0a8971cbfa1ce5cd746fd91 inherit pub_methods_classxii_asset_document"><td class="mdescLeft">&#160;</td><td class="mdescRight">Passed into xiiEngineProcessDocumentContext::Initialize on the engine process side. Allows the document to provide additional data to the engine process during context creation.  <br /></td></tr>
 <tr class="separator:a187e016fb0a8971cbfa1ce5cd746fd91 inherit pub_methods_classxii_asset_document"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -453,12 +457,12 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:a82544b178e6704883a3575d8388ab798" id="r_a82544b178e6704883a3575d8388ab798"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d6/d57/structxii_transform_status.html">xiiTransformStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a82544b178e6704883a3575d8388ab798">InternalTransformAsset</a> (<a class="el" href="../../d0/d18/classxii_stream_writer.html">xiiStreamWriter</a> &amp;stream, <a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sOutputTag, const <a class="el" href="../../d6/db6/classxii_platform_profile.html">xiiPlatformProfile</a> *pAssetProfile, const <a class="el" href="../../d2/d2f/classxii_asset_file_header.html">xiiAssetFileHeader</a> &amp;AssetHeader, <a class="el" href="../../d7/d55/structxii_bitflags.html">xiiBitflags</a>&lt; <a class="el" href="../../d8/d36/structxii_transform_flags.html">xiiTransformFlags</a> &gt; transformFlags) override</td></tr>
 <tr class="memdesc:a82544b178e6704883a3575d8388ab798"><td class="mdescLeft">&#160;</td><td class="mdescRight">Override this and write the transformed file for the given szOutputTag into the given stream.  <br /></td></tr>
 <tr class="separator:a82544b178e6704883a3575d8388ab798"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a65d5b35f795af8a30240421082ab6247" id="r_a65d5b35f795af8a30240421082ab6247"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d6/d57/structxii_transform_status.html">xiiTransformStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a65d5b35f795af8a30240421082ab6247">InternalTransformAsset</a> (const char *szTargetFile, <a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sOutputTag, const <a class="el" href="../../d6/db6/classxii_platform_profile.html">xiiPlatformProfile</a> *pAssetProfile, const <a class="el" href="../../d2/d2f/classxii_asset_file_header.html">xiiAssetFileHeader</a> &amp;AssetHeader, <a class="el" href="../../d7/d55/structxii_bitflags.html">xiiBitflags</a>&lt; <a class="el" href="../../d8/d36/structxii_transform_flags.html">xiiTransformFlags</a> &gt; transformFlags) override</td></tr>
-<tr class="memdesc:a65d5b35f795af8a30240421082ab6247"><td class="mdescLeft">&#160;</td><td class="mdescRight">Only override this function, if the transformed file for the given szOutputTag must be written from another process.  <br /></td></tr>
-<tr class="separator:a65d5b35f795af8a30240421082ab6247"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a06d51048dfc4de1059a61b2332462b67" id="r_a06d51048dfc4de1059a61b2332462b67"><td class="memItemLeft" align="right" valign="top"><a id="a06d51048dfc4de1059a61b2332462b67" name="a06d51048dfc4de1059a61b2332462b67"></a>
-<a class="el" href="../../d0/d54/structxii_status.html">xiiStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><b>RunTexConv</b> (const char *szTargetFile, const <a class="el" href="../../d2/d2f/classxii_asset_file_header.html">xiiAssetFileHeader</a> &amp;AssetHeader, bool bUpdateThumbnail, const <a class="el" href="../../d8/db7/classxii_texture_asset_profile_config.html">xiiTextureAssetProfileConfig</a> *pAssetConfig)</td></tr>
-<tr class="separator:a06d51048dfc4de1059a61b2332462b67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a783eda6d28725a4d901e2e7239b87eef" id="r_a783eda6d28725a4d901e2e7239b87eef"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d6/d57/structxii_transform_status.html">xiiTransformStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a783eda6d28725a4d901e2e7239b87eef">InternalTransformAsset</a> (<a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sTargetFile, <a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sOutputTag, const <a class="el" href="../../d6/db6/classxii_platform_profile.html">xiiPlatformProfile</a> *pAssetProfile, const <a class="el" href="../../d2/d2f/classxii_asset_file_header.html">xiiAssetFileHeader</a> &amp;AssetHeader, <a class="el" href="../../d7/d55/structxii_bitflags.html">xiiBitflags</a>&lt; <a class="el" href="../../d8/d36/structxii_transform_flags.html">xiiTransformFlags</a> &gt; transformFlags) override</td></tr>
+<tr class="memdesc:a783eda6d28725a4d901e2e7239b87eef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Only override this function, if the transformed file for the given szOutputTag must be written from another process.  <br /></td></tr>
+<tr class="separator:a783eda6d28725a4d901e2e7239b87eef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed550e3465083736c798bf91624f5d87" id="r_aed550e3465083736c798bf91624f5d87"><td class="memItemLeft" align="right" valign="top"><a id="aed550e3465083736c798bf91624f5d87" name="aed550e3465083736c798bf91624f5d87"></a>
+<a class="el" href="../../d0/d54/structxii_status.html">xiiStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><b>RunTexConv</b> (<a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sTargetFile, const <a class="el" href="../../d2/d2f/classxii_asset_file_header.html">xiiAssetFileHeader</a> &amp;AssetHeader, bool bUpdateThumbnail, const <a class="el" href="../../d8/db7/classxii_texture_asset_profile_config.html">xiiTextureAssetProfileConfig</a> *pAssetConfig)</td></tr>
+<tr class="separator:aed550e3465083736c798bf91624f5d87"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a92e20150a53f980067d14daa797db05d" id="r_a92e20150a53f980067d14daa797db05d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a92e20150a53f980067d14daa797db05d">UpdateAssetDocumentInfo</a> (<a class="el" href="../../da/d03/classxii_asset_document_info.html">xiiAssetDocumentInfo</a> *pInfo) const override</td></tr>
 <tr class="memdesc:a92e20150a53f980067d14daa797db05d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Override this to add custom data (e.g. additional file dependencies) to the info struct.  <br /></td></tr>
 <tr class="separator:a92e20150a53f980067d14daa797db05d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -533,9 +537,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>InvalidateAssetThumbn
 void&#160;</td><td class="memItemRight" valign="bottom"><b>AppendThumbnailInfo</b> (<a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sThumbnailFile, const <a class="el" href="../../db/d84/classxii_asset_document_1_1_thumbnail_info.html">ThumbnailInfo</a> &amp;thumbnailInfo) const</td></tr>
 <tr class="memdesc:a816e9cdc1ba4011035fe9560b0dd1a41 inherit pro_methods_classxii_asset_document"><td class="mdescLeft">&#160;</td><td class="mdescRight">Appends an asset header containing the thumbnail hash to the file. Each thumbnail is appended by it to check up-to-date state. <br /></td></tr>
 <tr class="separator:a816e9cdc1ba4011035fe9560b0dd1a41 inherit pro_methods_classxii_asset_document"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0b725fe2797cdcedbc5958f17b4bc6b9 inherit pro_methods_classxii_asset_document" id="r_a0b725fe2797cdcedbc5958f17b4bc6b9"><td class="memItemLeft" align="right" valign="top">
-<a class="el" href="../../d0/d54/structxii_status.html">xiiStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><b>RemoteExport</b> (const <a class="el" href="../../d2/d2f/classxii_asset_file_header.html">xiiAssetFileHeader</a> &amp;header, const char *szOutputTarget) const</td></tr>
-<tr class="separator:a0b725fe2797cdcedbc5958f17b4bc6b9 inherit pro_methods_classxii_asset_document"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4c4be701ce2af76e27da32823498dab inherit pro_methods_classxii_asset_document" id="r_ac4c4be701ce2af76e27da32823498dab"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="../../d0/d54/structxii_status.html">xiiStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><b>RemoteExport</b> (const <a class="el" href="../../d2/d2f/classxii_asset_file_header.html">xiiAssetFileHeader</a> &amp;header, <a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sOutputTarget) const</td></tr>
+<tr class="separator:ac4c4be701ce2af76e27da32823498dab inherit pro_methods_classxii_asset_document"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_classxii_document"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_methods_classxii_document')"><img src="../../closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="../../d8/da9/classxii_document.html">xiiDocument</a></td></tr>
 <tr class="memitem:ae35064504821bd26f6bc80cf9077799f inherit pro_methods_classxii_document" id="r_ae35064504821bd26f6bc80cf9077799f"><td class="memItemLeft" align="right" valign="top">
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetModified</b> (bool b)</td></tr>
@@ -680,57 +684,8 @@ const <a class="el" href="../../d0/d90/structxii_document_type_descriptor.html">
 
 </div>
 </div>
-<a id="a65d5b35f795af8a30240421082ab6247" name="a65d5b35f795af8a30240421082ab6247"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a65d5b35f795af8a30240421082ab6247">&#9670;&#160;</a></span>InternalTransformAsset() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="../../d6/d57/structxii_transform_status.html">xiiTransformStatus</a> xiiTextureAssetDocument::InternalTransformAsset </td>
-          <td>(</td>
-          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>szTargetFile</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a></td>          <td class="paramname"><span class="paramname"><em>sOutputTag</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="../../d6/db6/classxii_platform_profile.html">xiiPlatformProfile</a> *</td>          <td class="paramname"><span class="paramname"><em>pAssetProfile</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="../../d2/d2f/classxii_asset_file_header.html">xiiAssetFileHeader</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>AssetHeader</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="../../d7/d55/structxii_bitflags.html">xiiBitflags</a>&lt; <a class="el" href="../../d8/d36/structxii_transform_flags.html">xiiTransformFlags</a> &gt;</td>          <td class="paramname"><span class="paramname"><em>transformFlags</em></span>&#160;)</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Only override this function, if the transformed file for the given szOutputTag must be written from another process. </p>
-<p>szTargetFile is where the transformed asset should be written to. The overriding function must ensure to first write <em>AssetHeader</em> to the file, to make it a valid asset file or provide a custom xiiAssetDocumentManager::IsOutputUpToDate function. See <a class="el" href="../../d8/d36/structxii_transform_flags.html">xiiTransformFlags</a> for definition of transform flags. </p>
-
-<p>Reimplemented from <a class="el" href="../../d7/dd5/classxii_asset_document.html#a56bee5a99d04dcf3d90702381f98b2bb">xiiAssetDocument</a>.</p>
-
-</div>
-</div>
 <a id="a82544b178e6704883a3575d8388ab798" name="a82544b178e6704883a3575d8388ab798"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a82544b178e6704883a3575d8388ab798">&#9670;&#160;</a></span>InternalTransformAsset() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a82544b178e6704883a3575d8388ab798">&#9670;&#160;</a></span>InternalTransformAsset() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -788,6 +743,55 @@ const <a class="el" href="../../d0/d90/structxii_document_type_descriptor.html">
 
 </div>
 </div>
+<a id="a783eda6d28725a4d901e2e7239b87eef" name="a783eda6d28725a4d901e2e7239b87eef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a783eda6d28725a4d901e2e7239b87eef">&#9670;&#160;</a></span>InternalTransformAsset() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d6/d57/structxii_transform_status.html">xiiTransformStatus</a> xiiTextureAssetDocument::InternalTransformAsset </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a></td>          <td class="paramname"><span class="paramname"><em>sTargetFile</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a></td>          <td class="paramname"><span class="paramname"><em>sOutputTag</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d6/db6/classxii_platform_profile.html">xiiPlatformProfile</a> *</td>          <td class="paramname"><span class="paramname"><em>pAssetProfile</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d2/d2f/classxii_asset_file_header.html">xiiAssetFileHeader</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>AssetHeader</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d7/d55/structxii_bitflags.html">xiiBitflags</a>&lt; <a class="el" href="../../d8/d36/structxii_transform_flags.html">xiiTransformFlags</a> &gt;</td>          <td class="paramname"><span class="paramname"><em>transformFlags</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Only override this function, if the transformed file for the given szOutputTag must be written from another process. </p>
+<p>szTargetFile is where the transformed asset should be written to. The overriding function must ensure to first write <em>AssetHeader</em> to the file, to make it a valid asset file or provide a custom xiiAssetDocumentManager::IsOutputUpToDate function. See <a class="el" href="../../d8/d36/structxii_transform_flags.html">xiiTransformFlags</a> for definition of transform flags. </p>
+
+<p>Reimplemented from <a class="el" href="../../d7/dd5/classxii_asset_document.html#a144558e5fe0347f08743cccabbe91579">xiiAssetDocument</a>.</p>
+
+</div>
+</div>
 <a id="a92e20150a53f980067d14daa797db05d" name="a92e20150a53f980067d14daa797db05d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a92e20150a53f980067d14daa797db05d">&#9670;&#160;</a></span>UpdateAssetDocumentInfo()</h2>
 
@@ -828,7 +832,7 @@ const <a class="el" href="../../d0/d90/structxii_document_type_descriptor.html">
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d7/d60/classxii_texture_asset_document.html">xiiTextureAssetDocument</a></li>
-    <li class="footer">Generated on Fri Mar 14 2025 17:47:11 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Sat Mar 15 2025 12:21:13 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

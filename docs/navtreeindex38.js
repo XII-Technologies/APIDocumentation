@@ -1,5 +1,6 @@
 var NAVTREEINDEX38 =
 {
+"dc/d68/classxii_camera.html#a27052d222eef8a93e552b7f2da0190ca":[6,0,287,23],
 "dc/d68/classxii_camera.html#a2fda08438f8959b1f94e2fdd9dcbf738":[6,0,287,7],
 "dc/d68/classxii_camera.html#a30634ebc42ddd1f2bb15289999a72841":[6,0,287,9],
 "dc/d68/classxii_camera.html#a3d2df6b0ff9858a8ac77b5fa25174800":[6,0,287,17],
@@ -248,6 +249,5 @@ var NAVTREEINDEX38 =
 "dc/d96/structxii_function_type.html#aa1f281549634c67b2db3e16e4a220520a40d66527b2a1736eaaac0e1233b23afc":[6,0,765,0,3],
 "dc/d96/structxii_function_type.html#aa1f281549634c67b2db3e16e4a220520a928de39758e8778c7234499476a0c497":[6,0,765,0,2],
 "dc/d96/structxii_function_type.html#aa1f281549634c67b2db3e16e4a220520ac150232610215ceafcb9740638a8ce14":[6,0,765,0,1],
-"dc/d96/structxii_function_type.html#aa1f281549634c67b2db3e16e4a220520ae85639ec5b786cb040da3e982b7ea2b3":[6,0,765,0,0],
-"dc/d97/structxii_g_a_l_map_flags_1_1_bits.html":[6,0,888,0]
+"dc/d96/structxii_function_type.html#aa1f281549634c67b2db3e16e4a220520ae85639ec5b786cb040da3e982b7ea2b3":[6,0,765,0,0]
 };

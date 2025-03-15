@@ -1,5 +1,6 @@
 var NAVTREEINDEX25 =
 {
+"d7/ddb/classxii_hash_stream_writer64.html#ac0e118c539af4ec0d7f14349b955a4da":[6,0,1176,2],
 "d7/ddb/classxii_shader_helper_1_1xii_text_sectionizer.html":[6,0,11,1],
 "d7/ddb/structxii_singleton_registry_1_1_singleton_entry.html":[6,0,2215,0],
 "d7/ddc/classxii_spatial_system___regular_grid.html":[6,0,2263],
@@ -248,6 +249,5 @@ var NAVTREEINDEX25 =
 "d8/d4a/classxii_graph_patch_context.html#ac979729bf09264c37363d114576fb10f":[6,0,1132,2],
 "d8/d4a/classxii_graph_patch_context.html#af5621f7cf4e22e4a69700909263bcfd4":[6,0,1132,1],
 "d8/d4c/classxii_source_pass.html":[6,0,2258],
-"d8/d4c/classxii_source_pass.html#a26643e5446b3c77c74df4339a7a4a08e":[6,0,2258,0],
-"d8/d4c/classxii_source_pass.html#abea760dc52b3a88fb4c50516f3748f93":[6,0,2258,1]
+"d8/d4c/classxii_source_pass.html#a26643e5446b3c77c74df4339a7a4a08e":[6,0,2258,0]
 };

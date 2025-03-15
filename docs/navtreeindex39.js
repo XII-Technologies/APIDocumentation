@@ -1,5 +1,6 @@
 var NAVTREEINDEX39 =
 {
+"dc/d97/structxii_g_a_l_map_flags_1_1_bits.html":[6,0,888,0],
 "dc/d98/structxii_variant_adapter_3_01_t_00_01_c_00_011_00_010_01_4.html":[6,0,2523],
 "dc/d9a/group__group5.html":[4,3],
 "dc/d9a/group__group5.html#mypage1":[4,3,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX39 =
 "dd/d07/structxii_g_a_l_graphics_device_adapter_description.html#abd12b8c380da65b087be2371244741f6":[6,0,872,18],
 "dd/d07/structxii_g_a_l_graphics_device_adapter_description.html#ac8fcb62d92528bc96cbff9805d7fb6db":[6,0,872,14],
 "dd/d07/structxii_g_a_l_graphics_device_adapter_description.html#acec62aaf2dbfa523b10956e813803902":[6,0,872,12],
-"dd/d07/structxii_g_a_l_graphics_device_adapter_description.html#acfe93668df01355813228ee5116e90da":[6,0,872,3],
-"dd/d07/structxii_g_a_l_graphics_device_adapter_description.html#ad0049f3f59e39bf6df32e367fb36c5b0":[6,0,872,15]
+"dd/d07/structxii_g_a_l_graphics_device_adapter_description.html#acfe93668df01355813228ee5116e90da":[6,0,872,3]
 };

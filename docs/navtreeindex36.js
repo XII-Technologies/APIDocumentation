@@ -1,5 +1,6 @@
 var NAVTREEINDEX36 =
 {
+"db/d8e/classxii_atomic_integer.html#ac46b08e464fdf6cb2fba8bafca570390":[6,0,227,9],
 "db/d8e/classxii_atomic_integer.html#accd341a159b9735b35ce2d70371bbaaf":[6,0,227,2],
 "db/d8e/classxii_atomic_integer.html#ae2446fa177ed8ee5ab2e095d02ae3e5a":[6,0,227,8],
 "db/d8e/classxii_atomic_integer.html#ae503ca5506215aaad6b9ac0cf81e1602":[6,0,227,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX36 =
 "db/df1/classxii_color_base_u_b.html#abaa16d7838b5dd84c33fb93e281884d7":[6,0,344,5],
 "db/df1/classxii_color_base_u_b.html#af7e7cbfa64546e8bbde2f906a455d542":[6,0,344,4],
 "db/df1/classxii_color_base_u_b.html#afc58eed02105bf8495d3f44b0ea7921a":[6,0,344,1],
-"db/df4/classxii_paste_objects_command.html":[6,0,1544],
-"db/df5/classxii_comment_component.html":[6,0,374]
+"db/df4/classxii_paste_objects_command.html":[6,0,1544]
 };
