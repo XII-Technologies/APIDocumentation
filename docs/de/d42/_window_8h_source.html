@@ -1,39 +1,15 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<meta name="generator" content="Doxygen 1.12.0"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.13.2"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<!-- BEGIN opengraph metadata -->
-<meta property="og:title" content="XII" />
-<meta property="og:image" content="XII-Logo.png" />
-<meta property="og:description" content="An advanced high-performance simulation engine." />
-<meta property="og:url" content="https://www.xiitechnologies.com" />
-<!-- END opengraph metadata -->
-<!-- BEGIN twitter metadata -->
-<meta name="twitter:image:src" content="XII-Logo.png" />
-<meta name="twitter:title" content="XII" />
-<meta name="twitter:description" content="An advanced high-performance simulation engine." />
-<!-- END twitter metadata -->
 <title>XII: /home/runner/work/XII/XII/Source/Engine/Core/System/Window.h Source File</title>
+<link rel="icon" href="../../XII-Logo.png" type="image/x-icon" />
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
-<link rel="icon" type="image/svg+xml" href="XII-Logo.png"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
-<script type="text/javascript" src="../../doxygen-awesome-darkmode-toggle.js"></script>
-<script type="text/javascript" src="../../doxygen-awesome-fragment-copy-button.js"></script>
-<script type="text/javascript" src="../../doxygen-awesome-paragraph-link.js"></script>
-<script type="text/javascript" src="../../doxygen-awesome-interactive-toc.js"></script>
-<script type="text/javascript" src="../../doxygen-awesome-tabs.js"></script>
-<script type="text/javascript" src="../../toggle-alternative-theme.js"></script>
-<script type="text/javascript">
-    DoxygenAwesomeFragmentCopyButton.init()
-    DoxygenAwesomeDarkModeToggle.init()
-    DoxygenAwesomeParagraphLink.init()
-    DoxygenAwesomeInteractiveToc.init()
-    DoxygenAwesomeTabs.init()
-</script>
 <link href="../../navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../navtreedata.js"></script>
 <script type="text/javascript" src="../../navtree.js"></script>
@@ -45,28 +21,22 @@
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-<!-- https://tholman.com/github-corners/ -->
-<a href="https://github.com/XII-Technologies/APIDocumentation" class="github-corner" title="View source on GitHub" target="_blank" rel="noopener noreferrer">
-    <svg viewBox="0 0 250 250" width="40" height="40" style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
-    <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
  <tbody>
- <tr style="height: 56px;">
+ <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="../../XII-Logo.png"/></td>
-  <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">XII
-   &#160;<span id="projectnumber">1.0.0</span>
+  <td id="projectalign">
+   <div id="projectname">XII<span id="projectnumber">&#160;Release 0.1.0</span>
    </div>
-   <div id="projectbrief">A high-performance simulation engine.</div>
   </td>
  </tr>
  </tbody>
 </table>
 </div>
 <!-- end header part -->
-<!-- Generated by Doxygen 1.12.0 -->
+<!-- Generated by Doxygen 1.13.2 -->
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
 var searchBox = new SearchBox("searchBox", "../../search/",'.html');
@@ -151,18 +121,18 @@ $(function(){initNavTree('de/d42/_window_8h_source.html','../../'); initResizabl
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#else</span></div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#  include &lt;Core/Platform/NoImpl/WindowDeclaration_NoImpl.h&gt;</span></div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span></div>
 <div class="foldopen" id="foldopen00024" data-start="{" data-end="};">
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="../../de/dd5/classxii_window_base.html">   24</a></span><span class="keyword">class </span>XII_CORE_DLL <a class="code hl_class" href="../../de/dd5/classxii_window_base.html">xiiWindowBase</a></div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>{</div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="keyword">public</span>:</div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>  <span class="keyword">virtual</span> <a class="code hl_class" href="../../de/dd5/classxii_window_base.html">~xiiWindowBase</a>() = <span class="keywordflow">default</span>;</div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>  <span class="keyword">virtual</span> <a class="code hl_class" href="../../db/d7f/classxii_size_template.html">xiiSizeU32</a>      GetClientAreaSize() <span class="keyword">const</span>     = 0;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>  <span class="keyword">virtual</span> xiiSizeU32      GetClientAreaSize() <span class="keyword">const</span>     = 0;</div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>  <span class="keyword">virtual</span> xiiWindowHandle GetNativeWindowHandle() <span class="keyword">const</span> = 0;</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span></div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="../../de/dd5/classxii_window_base.html#a90912af8cccf501f5e957de32bd6e033">   36</a></span>  <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="../../de/dd5/classxii_window_base.html#a90912af8cccf501f5e957de32bd6e033">IsFullscreenWindow</a>(<span class="keywordtype">bool</span> bOnlyProperFullscreenMode = <span class="keyword">false</span>) <span class="keyword">const</span> = 0;</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span></div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="../../de/dd5/classxii_window_base.html#ae5473083dc598f86891bbe6792e04a00">   40</a></span>  <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="../../de/dd5/classxii_window_base.html#ae5473083dc598f86891bbe6792e04a00">IsVisible</a>() <span class="keyword">const</span> = 0;</div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>  <span class="keyword">virtual</span> <span class="keywordtype">void</span> ProcessWindowMessages() = 0;</div>
@@ -171,7 +141,7 @@ $(function(){initNavTree('de/d42/_window_8h_source.html','../../'); initResizabl
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>  <span class="keyword">virtual</span> <span class="keywordtype">void</span> RemoveReference() = 0;</div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>};</div>
 </div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span></div>
 <div class="foldopen" id="foldopen00049" data-start="{" data-end="};">
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="../../d4/d40/structxii_window_mode.html">   49</a></span><span class="keyword">struct </span>XII_CORE_DLL <a class="code hl_struct" href="../../d4/d40/structxii_window_mode.html">xiiWindowMode</a></div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>{</div>
@@ -185,71 +155,71 @@ $(function(){initNavTree('de/d42/_window_8h_source.html','../../'); initResizabl
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="../../d4/d40/structxii_window_mode.html#aced6b6446fc8e62f3a850a3d8d4e23a6ad5e32e9ff34c3be52e6ab48ce5cdcdc6">   57</a></span>    <a class="code hl_enumvalue" href="../../d4/d40/structxii_window_mode.html#aced6b6446fc8e62f3a850a3d8d4e23a6ad5e32e9ff34c3be52e6ab48ce5cdcdc6">FullscreenBorderlessNativeResolution</a>, </div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="../../d4/d40/structxii_window_mode.html#aced6b6446fc8e62f3a850a3d8d4e23a6a1ebda2228190db68b14fb92a98246ced">   58</a></span>    <a class="code hl_enumvalue" href="../../d4/d40/structxii_window_mode.html#aced6b6446fc8e62f3a850a3d8d4e23a6a1ebda2228190db68b14fb92a98246ced">FullscreenFixedResolution</a>,            </div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    Default = WindowFixedResolution</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    Default = <a class="code hl_enumvalue" href="../../d4/d40/structxii_window_mode.html#aced6b6446fc8e62f3a850a3d8d4e23a6a33e301fb73b0d227640bf2cf84f045b3">WindowFixedResolution</a></div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>  };</div>
 </div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno"><a class="line" href="../../d4/d40/structxii_window_mode.html#a618fbd5ea2b30748daa5289d03ee70e7">   64</a></span>  <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="../../d4/d40/structxii_window_mode.html#a618fbd5ea2b30748daa5289d03ee70e7">IsFullscreen</a>(<a class="code hl_enumeration" href="../../d4/d40/structxii_window_mode.html#aced6b6446fc8e62f3a850a3d8d4e23a6">Enum</a> e) { <span class="keywordflow">return</span> e == FullscreenBorderlessNativeResolution || e == FullscreenFixedResolution; }</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span></div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno"><a class="line" href="../../d4/d40/structxii_window_mode.html#a618fbd5ea2b30748daa5289d03ee70e7">   64</a></span>  <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="../../d4/d40/structxii_window_mode.html#a618fbd5ea2b30748daa5289d03ee70e7">IsFullscreen</a>(<a class="code hl_enumeration" href="../../d4/d40/structxii_window_mode.html#aced6b6446fc8e62f3a850a3d8d4e23a6">Enum</a> e) { <span class="keywordflow">return</span> e == <a class="code hl_enumvalue" href="../../d4/d40/structxii_window_mode.html#aced6b6446fc8e62f3a850a3d8d4e23a6ad5e32e9ff34c3be52e6ab48ce5cdcdc6">FullscreenBorderlessNativeResolution</a> || e == <a class="code hl_enumvalue" href="../../d4/d40/structxii_window_mode.html#aced6b6446fc8e62f3a850a3d8d4e23a6a1ebda2228190db68b14fb92a98246ced">FullscreenFixedResolution</a>; }</div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>};</div>
 </div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span></div>
 <div class="foldopen" id="foldopen00068" data-start="{" data-end="};">
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno"><a class="line" href="../../d6/d8c/structxii_window_creation_desc.html">   68</a></span><span class="keyword">struct </span>XII_CORE_DLL <a class="code hl_struct" href="../../d6/d8c/structxii_window_creation_desc.html">xiiWindowCreationDesc</a></div>
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>{</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>  <a class="code hl_struct" href="../../dd/dad/structxii_result.html">xiiResult</a> AdjustWindowSizeAndPosition();</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>  <span class="keywordtype">void</span> SaveToDDL(<a class="code hl_class" href="../../d5/d15/classxii_open_ddl_writer.html">xiiOpenDdlWriter</a>&amp; ref_writer);</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>  <a class="code hl_struct" href="../../dd/dad/structxii_result.html">xiiResult</a> SaveToDDL(<a class="code hl_class" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sFile);</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>  <span class="keywordtype">void</span> LoadFromDDL(<span class="keyword">const</span> <a class="code hl_class" href="../../d1/d33/classxii_open_ddl_reader_element.html">xiiOpenDdlReaderElement</a>* pParentElement);</div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span> </div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>  <a class="code hl_struct" href="../../dd/dad/structxii_result.html">xiiResult</a> LoadFromDDL(<a class="code hl_class" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sFile);</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>  <a class="code hl_struct" href="../../dd/dad/structxii_result.html">xiiResult</a> <a class="code hl_function" href="../../d6/d8c/structxii_window_creation_desc.html#a44d11053ebf6284ac36d3250b8fc6723">AdjustWindowSizeAndPosition</a>();</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span></div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>  <span class="keywordtype">void</span> <a class="code hl_function" href="../../d6/d8c/structxii_window_creation_desc.html#afd6cbf55f7d879fc727dacb46531115b">SaveToDDL</a>(<a class="code hl_class" href="../../d5/d15/classxii_open_ddl_writer.html">xiiOpenDdlWriter</a>&amp; ref_writer);</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span></div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>  <a class="code hl_struct" href="../../dd/dad/structxii_result.html">xiiResult</a> <a class="code hl_function" href="../../d6/d8c/structxii_window_creation_desc.html#afd6cbf55f7d879fc727dacb46531115b">SaveToDDL</a>(<a class="code hl_class" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sFile);</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span></div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>  <span class="keywordtype">void</span> <a class="code hl_function" href="../../d6/d8c/structxii_window_creation_desc.html#a5f552ce820fa8f263d31aaf7976be501">LoadFromDDL</a>(<span class="keyword">const</span> <a class="code hl_class" href="../../d1/d33/classxii_open_ddl_reader_element.html">xiiOpenDdlReaderElement</a>* pParentElement);</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span></div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>  <a class="code hl_struct" href="../../dd/dad/structxii_result.html">xiiResult</a> <a class="code hl_function" href="../../d6/d8c/structxii_window_creation_desc.html#a5f552ce820fa8f263d31aaf7976be501">LoadFromDDL</a>(<a class="code hl_class" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sFile);</div>
 <div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span> </div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno"><a class="line" href="../../d6/d8c/structxii_window_creation_desc.html#a66942ecccb9f78d08ad509a2e20a4bf0">   93</a></span>  <a class="code hl_class" href="../../df/dfb/structxii_hybrid_string.html">xiiString</a> m_Title = <span class="stringliteral">&quot;XII&quot;</span>;</div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span> </div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span></div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno"><a class="line" href="../../d6/d8c/structxii_window_creation_desc.html#a66942ecccb9f78d08ad509a2e20a4bf0">   93</a></span>  xiiString <a class="code hl_variable" href="../../d6/d8c/structxii_window_creation_desc.html#a66942ecccb9f78d08ad509a2e20a4bf0">m_Title</a> = <span class="stringliteral">&quot;XII&quot;</span>;</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span></div>
 <div class="line"><a id="l00096" name="l00096"></a><span class="lineno"><a class="line" href="../../d6/d8c/structxii_window_creation_desc.html#a48134bca01578e27267fc93cb3e0b601">   96</a></span>  <a class="code hl_struct" href="../../de/dfd/structxii_enum.html">xiiEnum&lt;xiiWindowMode&gt;</a> <a class="code hl_variable" href="../../d6/d8c/structxii_window_creation_desc.html#a48134bca01578e27267fc93cb3e0b601">m_WindowMode</a>;</div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span> </div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno"><a class="line" href="../../d6/d8c/structxii_window_creation_desc.html#a69741d3a86b143665c3c6c26d62d60e6">  100</a></span>  xiiInt8 m_iMonitor = -1;</div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span> </div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno"><a class="line" href="../../d6/d8c/structxii_window_creation_desc.html#a36a7ff1ca01631101ebb26dc68fb7599">  103</a></span>  <a class="code hl_class" href="../../d1/d0d/classxii_vec2_template.html">xiiVec2I32</a> m_Position = <a class="code hl_class" href="../../d1/d0d/classxii_vec2_template.html">xiiVec2I32</a>(0x80000000, 0x80000000); <span class="comment">// Magic number on windows that positions the window at a &#39;good default position&#39;</span></div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span> </div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno"><a class="line" href="../../d6/d8c/structxii_window_creation_desc.html#a55da1cc661d3c6ddbb0d53ebaff62298">  106</a></span>  <a class="code hl_class" href="../../db/d7f/classxii_size_template.html">xiiSizeU32</a> m_Resolution = <a class="code hl_class" href="../../db/d7f/classxii_size_template.html">xiiSizeU32</a>(1280U, 720U);</div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span> </div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno"><a class="line" href="../../d6/d8c/structxii_window_creation_desc.html#ad32fee4b5c33c49e5d9c81a684095200">  110</a></span>  xiiUInt8 m_uiWindowNumber = 0;</div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span> </div>
-<div class="line"><a id="l00114" name="l00114"></a><span class="lineno"><a class="line" href="../../d6/d8c/structxii_window_creation_desc.html#ac1ac18d561a602db57b5c4692b7a8a96">  114</a></span>  <span class="keywordtype">bool</span> m_bClipMouseCursor = <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span> </div>
-<div class="line"><a id="l00118" name="l00118"></a><span class="lineno"><a class="line" href="../../d6/d8c/structxii_window_creation_desc.html#a51eb1018e59e6911c8400d8523e5f3f3">  118</a></span>  <span class="keywordtype">bool</span> m_bShowMouseCursor = <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span> </div>
-<div class="line"><a id="l00121" name="l00121"></a><span class="lineno"><a class="line" href="../../d6/d8c/structxii_window_creation_desc.html#a0f5a8c301f102e58fa8917ed1a016288">  121</a></span>  <span class="keywordtype">bool</span> m_bSetForegroundOnInit = <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span> </div>
-<div class="line"><a id="l00124" name="l00124"></a><span class="lineno"><a class="line" href="../../d6/d8c/structxii_window_creation_desc.html#af0c3077ff26a440832adef83ea4ea65b">  124</a></span>  <span class="keywordtype">bool</span> m_bCenterWindowOnDisplay = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span></div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno"><a class="line" href="../../d6/d8c/structxii_window_creation_desc.html#a69741d3a86b143665c3c6c26d62d60e6">  100</a></span>  xiiInt8 <a class="code hl_variable" href="../../d6/d8c/structxii_window_creation_desc.html#a69741d3a86b143665c3c6c26d62d60e6">m_iMonitor</a> = -1;</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span></div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno"><a class="line" href="../../d6/d8c/structxii_window_creation_desc.html#a36a7ff1ca01631101ebb26dc68fb7599">  103</a></span>  xiiVec2I32 <a class="code hl_variable" href="../../d6/d8c/structxii_window_creation_desc.html#a36a7ff1ca01631101ebb26dc68fb7599">m_Position</a> = xiiVec2I32(0x80000000, 0x80000000); <span class="comment">// Magic number on windows that positions the window at a &#39;good default position&#39;</span></div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span></div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno"><a class="line" href="../../d6/d8c/structxii_window_creation_desc.html#a55da1cc661d3c6ddbb0d53ebaff62298">  106</a></span>  xiiSizeU32 <a class="code hl_variable" href="../../d6/d8c/structxii_window_creation_desc.html#a55da1cc661d3c6ddbb0d53ebaff62298">m_Resolution</a> = xiiSizeU32(1280U, 720U);</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span></div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno"><a class="line" href="../../d6/d8c/structxii_window_creation_desc.html#ad32fee4b5c33c49e5d9c81a684095200">  110</a></span>  xiiUInt8 <a class="code hl_variable" href="../../d6/d8c/structxii_window_creation_desc.html#ad32fee4b5c33c49e5d9c81a684095200">m_uiWindowNumber</a> = 0;</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span></div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno"><a class="line" href="../../d6/d8c/structxii_window_creation_desc.html#ac1ac18d561a602db57b5c4692b7a8a96">  114</a></span>  <span class="keywordtype">bool</span> <a class="code hl_variable" href="../../d6/d8c/structxii_window_creation_desc.html#ac1ac18d561a602db57b5c4692b7a8a96">m_bClipMouseCursor</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span></div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno"><a class="line" href="../../d6/d8c/structxii_window_creation_desc.html#a51eb1018e59e6911c8400d8523e5f3f3">  118</a></span>  <span class="keywordtype">bool</span> <a class="code hl_variable" href="../../d6/d8c/structxii_window_creation_desc.html#a51eb1018e59e6911c8400d8523e5f3f3">m_bShowMouseCursor</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span></div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno"><a class="line" href="../../d6/d8c/structxii_window_creation_desc.html#a0f5a8c301f102e58fa8917ed1a016288">  121</a></span>  <span class="keywordtype">bool</span> <a class="code hl_variable" href="../../d6/d8c/structxii_window_creation_desc.html#a0f5a8c301f102e58fa8917ed1a016288">m_bSetForegroundOnInit</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span></div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno"><a class="line" href="../../d6/d8c/structxii_window_creation_desc.html#af0c3077ff26a440832adef83ea4ea65b">  124</a></span>  <span class="keywordtype">bool</span> <a class="code hl_variable" href="../../d6/d8c/structxii_window_creation_desc.html#af0c3077ff26a440832adef83ea4ea65b">m_bCenterWindowOnDisplay</a> = <span class="keyword">true</span>;</div>
 <div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>};</div>
 </div>
-<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span> </div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span></div>
 <div class="foldopen" id="foldopen00132" data-start="{" data-end="};">
-<div class="line"><a id="l00132" name="l00132"></a><span class="lineno"><a class="line" href="../../d2/d13/classxii_window.html">  132</a></span><span class="keyword">class </span>XII_CORE_DLL <a class="code hl_class" href="../../d2/d13/classxii_window.html">xiiWindow</a> : <span class="keyword">public</span> <a class="code hl_class" href="../../de/dd5/classxii_window_base.html">xiiWindowBase</a></div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno"><a class="line" href="../../d2/d13/classxii_window.html">  132</a></span><span class="keyword">class </span>XII_CORE_DLL <a class="code hl_function" href="../../d2/d13/classxii_window.html#ac5633354854fb9c6513b5f087c0370a8">xiiWindow</a> : <span class="keyword">public</span> <a class="code hl_class" href="../../de/dd5/classxii_window_base.html">xiiWindowBase</a></div>
 <div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>{</div>
 <div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>  <a class="code hl_class" href="../../d2/d13/classxii_window.html">xiiWindow</a>();</div>
-<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span> </div>
-<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>  <span class="keyword">virtual</span> <a class="code hl_class" href="../../d2/d13/classxii_window.html">~xiiWindow</a>();</div>
-<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span> </div>
-<div class="line"><a id="l00145" name="l00145"></a><span class="lineno"><a class="line" href="../../d2/d13/classxii_window.html#afddf325c3c08d8267dca97e72621017c">  145</a></span>  <span class="keyword">inline</span> <span class="keyword">const</span> <a class="code hl_struct" href="../../d6/d8c/structxii_window_creation_desc.html">xiiWindowCreationDesc</a>&amp; <a class="code hl_function" href="../../d2/d13/classxii_window.html#afddf325c3c08d8267dca97e72621017c">GetCreationDescription</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_CreationDescription; }</div>
-<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span> </div>
-<div class="line"><a id="l00148" name="l00148"></a><span class="lineno"><a class="line" href="../../d2/d13/classxii_window.html#a85bafa14a75f946bd716ad5ebad22e2d">  148</a></span>  <span class="keyword">virtual</span> <a class="code hl_class" href="../../db/d7f/classxii_size_template.html">xiiSizeU32</a> <a class="code hl_function" href="../../d2/d13/classxii_window.html#a85bafa14a75f946bd716ad5ebad22e2d">GetClientAreaSize</a>()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> m_CreationDescription.m_Resolution; }</div>
-<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span> </div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>  <a class="code hl_function" href="../../d2/d13/classxii_window.html#ac5633354854fb9c6513b5f087c0370a8">xiiWindow</a>();</div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span></div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>  <span class="keyword">virtual</span> <a class="code hl_function" href="../../d2/d13/classxii_window.html#ac5633354854fb9c6513b5f087c0370a8">~xiiWindow</a>();</div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span></div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno"><a class="line" href="../../d2/d13/classxii_window.html#afddf325c3c08d8267dca97e72621017c">  145</a></span>  <span class="keyword">inline</span> <span class="keyword">const</span> <a class="code hl_struct" href="../../d6/d8c/structxii_window_creation_desc.html">xiiWindowCreationDesc</a>&amp; <a class="code hl_function" href="../../d2/d13/classxii_window.html#afddf325c3c08d8267dca97e72621017c">GetCreationDescription</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="../../d2/d13/classxii_window.html#a2e692ef61a473482f20ae6982f8711e6">m_CreationDescription</a>; }</div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span></div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno"><a class="line" href="../../d2/d13/classxii_window.html#a85bafa14a75f946bd716ad5ebad22e2d">  148</a></span>  <span class="keyword">virtual</span> xiiSizeU32 <a class="code hl_function" href="../../d2/d13/classxii_window.html#a85bafa14a75f946bd716ad5ebad22e2d">GetClientAreaSize</a>()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="../../d2/d13/classxii_window.html#a2e692ef61a473482f20ae6982f8711e6">m_CreationDescription</a>.m_Resolution; }</div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span></div>
 <div class="line"><a id="l00151" name="l00151"></a><span class="lineno"><a class="line" href="../../d2/d13/classxii_window.html#a4230a26f2b3788364842feb422a5a9c2">  151</a></span>  <span class="keyword">virtual</span> xiiWindowHandle <a class="code hl_function" href="../../d2/d13/classxii_window.html#a4230a26f2b3788364842feb422a5a9c2">GetNativeWindowHandle</a>() <span class="keyword">const override</span>;</div>
-<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span> </div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span></div>
 <div class="foldopen" id="foldopen00156" data-start="{" data-end="}">
 <div class="line"><a id="l00156" name="l00156"></a><span class="lineno"><a class="line" href="../../d2/d13/classxii_window.html#ab5c20ca3069fca37bda04ab08294edba">  156</a></span>  <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="../../d2/d13/classxii_window.html#ab5c20ca3069fca37bda04ab08294edba">IsFullscreenWindow</a>(<span class="keywordtype">bool</span> bOnlyProperFullscreenMode = <span class="keyword">false</span>)<span class="keyword"> const override</span></div>
 <div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span><span class="keyword">  </span>{</div>
 <div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>    <span class="keywordflow">if</span> (bOnlyProperFullscreenMode)</div>
-<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>      <span class="keywordflow">return</span> m_CreationDescription.m_WindowMode == <a class="code hl_enumvalue" href="../../d4/d40/structxii_window_mode.html#aced6b6446fc8e62f3a850a3d8d4e23a6a1ebda2228190db68b14fb92a98246ced">xiiWindowMode::FullscreenFixedResolution</a>;</div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>      <span class="keywordflow">return</span> <a class="code hl_variable" href="../../d2/d13/classxii_window.html#a2e692ef61a473482f20ae6982f8711e6">m_CreationDescription</a>.m_WindowMode == <a class="code hl_enumvalue" href="../../d4/d40/structxii_window_mode.html#aced6b6446fc8e62f3a850a3d8d4e23a6a1ebda2228190db68b14fb92a98246ced">xiiWindowMode::FullscreenFixedResolution</a>;</div>
 <div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span> </div>
-<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="../../d4/d40/structxii_window_mode.html#a618fbd5ea2b30748daa5289d03ee70e7">xiiWindowMode::IsFullscreen</a>(m_CreationDescription.m_WindowMode);</div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="../../d4/d40/structxii_window_mode.html#a618fbd5ea2b30748daa5289d03ee70e7">xiiWindowMode::IsFullscreen</a>(<a class="code hl_variable" href="../../d2/d13/classxii_window.html#a2e692ef61a473482f20ae6982f8711e6">m_CreationDescription</a>.m_WindowMode);</div>
 <div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>  }</div>
 </div>
 <div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span> </div>
@@ -258,27 +228,27 @@ $(function(){initNavTree('de/d42/_window_8h_source.html','../../'); initResizabl
 <div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>  <span class="keyword">virtual</span> <span class="keywordtype">void</span> AddReference()<span class="keyword"> override </span>{ m_iReferenceCount.Increment(); }</div>
 <div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>  <span class="keyword">virtual</span> <span class="keywordtype">void</span> RemoveReference()<span class="keyword"> override </span>{ m_iReferenceCount.Decrement(); }</div>
 <div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span> </div>
-<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span> </div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span></div>
 <div class="line"><a id="l00173" name="l00173"></a><span class="lineno"><a class="line" href="../../d2/d13/classxii_window.html#a65bcddd20aa225d5e053befb4ea9e534">  173</a></span>  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="../../d2/d13/classxii_window.html#a65bcddd20aa225d5e053befb4ea9e534">ProcessWindowMessages</a>() <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span> </div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span></div>
 <div class="line"><a id="l00180" name="l00180"></a><span class="lineno"><a class="line" href="../../d2/d13/classxii_window.html#a67dc5b6aba5980d4f0443f1fa1a89826">  180</a></span>  <a class="code hl_struct" href="../../dd/dad/structxii_result.html">xiiResult</a> <a class="code hl_function" href="../../d2/d13/classxii_window.html#a67dc5b6aba5980d4f0443f1fa1a89826">Initialize</a>();</div>
-<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span> </div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span></div>
 <div class="foldopen" id="foldopen00190" data-start="{" data-end="}">
 <div class="line"><a id="l00190" name="l00190"></a><span class="lineno"><a class="line" href="../../d2/d13/classxii_window.html#a8bc7e9a93c79fe2a5f2647804aaee0d4">  190</a></span>  <a class="code hl_struct" href="../../dd/dad/structxii_result.html">xiiResult</a> <a class="code hl_function" href="../../d2/d13/classxii_window.html#a8bc7e9a93c79fe2a5f2647804aaee0d4">Initialize</a>(<span class="keyword">const</span> <a class="code hl_struct" href="../../d6/d8c/structxii_window_creation_desc.html">xiiWindowCreationDesc</a>&amp; creationDescription)</div>
 <div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>  {</div>
-<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>    m_CreationDescription = creationDescription;</div>
-<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>    <span class="keywordflow">return</span> Initialize();</div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>    <a class="code hl_variable" href="../../d2/d13/classxii_window.html#a2e692ef61a473482f20ae6982f8711e6">m_CreationDescription</a> = creationDescription;</div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="../../d2/d13/classxii_window.html#a67dc5b6aba5980d4f0443f1fa1a89826">Initialize</a>();</div>
 <div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>  }</div>
 </div>
-<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span> </div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span></div>
 <div class="line"><a id="l00197" name="l00197"></a><span class="lineno"><a class="line" href="../../d2/d13/classxii_window.html#a414030449608dd1ef8b5ed2aa93c5e4c">  197</a></span>  <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="../../d2/d13/classxii_window.html#a414030449608dd1ef8b5ed2aa93c5e4c">IsInitialized</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_bInitialized; }</div>
-<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span> </div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span></div>
 <div class="line"><a id="l00200" name="l00200"></a><span class="lineno"><a class="line" href="../../d2/d13/classxii_window.html#a9720a6a7c785f782ba9d7cd0c8bd61c5">  200</a></span>  <a class="code hl_struct" href="../../dd/dad/structxii_result.html">xiiResult</a> <a class="code hl_function" href="../../d2/d13/classxii_window.html#a9720a6a7c785f782ba9d7cd0c8bd61c5">Destroy</a>();</div>
-<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span> </div>
-<div class="line"><a id="l00204" name="l00204"></a><span class="lineno"><a class="line" href="../../d2/d13/classxii_window.html#a76e1b136feeb2c818ffa108aa02d0190">  204</a></span>  <a class="code hl_struct" href="../../dd/dad/structxii_result.html">xiiResult</a> <a class="code hl_function" href="../../d2/d13/classxii_window.html#a76e1b136feeb2c818ffa108aa02d0190">Resize</a>(<span class="keyword">const</span> <a class="code hl_class" href="../../db/d7f/classxii_size_template.html">xiiSizeU32</a>&amp; newWindowSize);</div>
-<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span> </div>
-<div class="line"><a id="l00211" name="l00211"></a><span class="lineno"><a class="line" href="../../d2/d13/classxii_window.html#a71e9d7cda9887334f72aa2043a4732e8">  211</a></span>  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="../../d2/d13/classxii_window.html#a71e9d7cda9887334f72aa2043a4732e8">OnResize</a>(<span class="keyword">const</span> <a class="code hl_class" href="../../db/d7f/classxii_size_template.html">xiiSizeU32</a>&amp; newWindowSize);</div>
-<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span> </div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span></div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno"><a class="line" href="../../d2/d13/classxii_window.html#a76e1b136feeb2c818ffa108aa02d0190">  204</a></span>  <a class="code hl_struct" href="../../dd/dad/structxii_result.html">xiiResult</a> <a class="code hl_function" href="../../d2/d13/classxii_window.html#a76e1b136feeb2c818ffa108aa02d0190">Resize</a>(<span class="keyword">const</span> xiiSizeU32&amp; newWindowSize);</div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span></div>
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno"><a class="line" href="../../d2/d13/classxii_window.html#a71e9d7cda9887334f72aa2043a4732e8">  211</a></span>  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="../../d2/d13/classxii_window.html#a71e9d7cda9887334f72aa2043a4732e8">OnResize</a>(<span class="keyword">const</span> xiiSizeU32&amp; newWindowSize);</div>
+<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span></div>
 <div class="foldopen" id="foldopen00214" data-start="{" data-end="}">
 <div class="line"><a id="l00214" name="l00214"></a><span class="lineno"><a class="line" href="../../d2/d13/classxii_window.html#a1da83eb7c4c4d0abcb4b010f66497d1c">  214</a></span>  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="../../d2/d13/classxii_window.html#a1da83eb7c4c4d0abcb4b010f66497d1c">OnWindowMove</a>(<span class="keyword">const</span> xiiInt32 iNewPosX, <span class="keyword">const</span> xiiInt32 iNewPosY)</div>
 <div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span>  {</div>
@@ -286,11 +256,11 @@ $(function(){initNavTree('de/d42/_window_8h_source.html','../../'); initResizabl
 <div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span>    XII_IGNORE_UNUSED(iNewPosY);</div>
 <div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>  }</div>
 </div>
-<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span> </div>
+<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span></div>
 <div class="line"><a id="l00221" name="l00221"></a><span class="lineno"><a class="line" href="../../d2/d13/classxii_window.html#a8d0fcb10ac3fd4ab68af552196068acf">  221</a></span>  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="../../d2/d13/classxii_window.html#a8d0fcb10ac3fd4ab68af552196068acf">OnFocus</a>(<span class="keywordtype">bool</span> bHasFocus) { XII_IGNORE_UNUSED(bHasFocus); }</div>
-<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span> </div>
+<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span></div>
 <div class="line"><a id="l00224" name="l00224"></a><span class="lineno"><a class="line" href="../../d2/d13/classxii_window.html#ab325cb0c2b6b7c3e93c57177d7ba1eaf">  224</a></span>  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="../../d2/d13/classxii_window.html#ab325cb0c2b6b7c3e93c57177d7ba1eaf">OnVisibleChange</a>(<span class="keywordtype">bool</span> bVisible) { m_bVisible = bVisible; }</div>
-<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span> </div>
+<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span></div>
 <div class="line"><a id="l00227" name="l00227"></a><span class="lineno"><a class="line" href="../../d2/d13/classxii_window.html#aadda987a4153f41525bb655dcc6d7467">  227</a></span>  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="../../d2/d13/classxii_window.html#aadda987a4153f41525bb655dcc6d7467">OnClickClose</a>() {}</div>
 <div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span> </div>
 <div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span> </div>
@@ -306,9 +276,9 @@ $(function(){initNavTree('de/d42/_window_8h_source.html','../../'); initResizabl
 <div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span><span class="preprocessor">#else</span></div>
 <div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span><span class="preprocessor">#  error &quot;Missing code for xiiWindow on this platform!&quot;</span></div>
 <div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span> </div>
+<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span></div>
 <div class="line"><a id="l00252" name="l00252"></a><span class="lineno"><a class="line" href="../../d2/d13/classxii_window.html#ab011354c87a6954259de3e3bfcc09fea">  252</a></span>  xiiStandardInputDevice* <a class="code hl_function" href="../../d2/d13/classxii_window.html#ab011354c87a6954259de3e3bfcc09fea">GetInputDevice</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_pInputDevice.Borrow(); }</div>
-<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span> </div>
+<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span></div>
 <div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span>  <span class="keyword">static</span> xiiUInt8 GetNextUnusedWindowNumber();</div>
 <div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span> </div>
 <div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span><span class="keyword">protected</span>:</div>
@@ -321,23 +291,19 @@ $(function(){initNavTree('de/d42/_window_8h_source.html','../../'); initResizabl
 <div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span>  <a class="code hl_class" href="../../d9/d4a/classxii_unique_ptr.html">xiiUniquePtr&lt;xiiStandardInputDevice&gt;</a> m_pInputDevice;</div>
 <div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span> </div>
 <div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span>  <span class="keyword">mutable</span> xiiWindowInternalHandle m_hWindowHandle = xiiWindowInternalHandle();</div>
-<div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span> </div>
+<div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span></div>
 <div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span>  <span class="keyword">static</span> xiiUInt8    s_uiNextUnusedWindowNumber;</div>
-<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span>  <a class="code hl_class" href="../../db/d8e/classxii_atomic_integer.html">xiiAtomicInteger32</a> m_iReferenceCount = 0;</div>
+<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span>  xiiAtomicInteger32 m_iReferenceCount = 0;</div>
 <div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span>};</div>
 </div>
-<div class="ttc" id="aclassxii_atomic_integer_html"><div class="ttname"><a href="../../db/d8e/classxii_atomic_integer.html">xiiAtomicInteger&lt; xiiInt32 &gt;</a></div></div>
-<div class="ttc" id="aclassxii_open_ddl_reader_element_html"><div class="ttname"><a href="../../d1/d33/classxii_open_ddl_reader_element.html">xiiOpenDdlReaderElement</a></div><div class="ttdoc">Represents a single 'object' in a DDL document, e.g. either a custom type or a primitives list.</div><div class="ttdef"><b>Definition</b> OpenDdlReader.h:11</div></div>
+<div class="ttc" id="aclassxii_open_ddl_reader_element_html"><div class="ttname"><a href="../../d1/d33/classxii_open_ddl_reader_element.html">xiiOpenDdlReaderElement</a></div><div class="ttdoc">Represents a single &#39;object&#39; in a DDL document, e.g. either a custom type or a primitives list.</div><div class="ttdef"><b>Definition</b> OpenDdlReader.h:11</div></div>
 <div class="ttc" id="aclassxii_open_ddl_reader_html"><div class="ttname"><a href="../../d6/dbd/classxii_open_ddl_reader.html">xiiOpenDdlReader</a></div><div class="ttdoc">An OpenDDL reader parses an entire DDL document and creates an in-memory representation of the docume...</div><div class="ttdef"><b>Definition</b> OpenDdlReader.h:118</div></div>
 <div class="ttc" id="aclassxii_open_ddl_writer_html"><div class="ttname"><a href="../../d5/d15/classxii_open_ddl_writer.html">xiiOpenDdlWriter</a></div><div class="ttdoc">The base class for OpenDDL writers.</div><div class="ttdef"><b>Definition</b> OpenDdlWriter.h:13</div></div>
-<div class="ttc" id="aclassxii_size_template_html"><div class="ttname"><a href="../../db/d7f/classxii_size_template.html">xiiSizeTemplate&lt; xiiUInt32 &gt;</a></div></div>
 <div class="ttc" id="aclassxii_string_view_html"><div class="ttname"><a href="../../d4/d85/classxii_string_view.html">xiiStringView</a></div><div class="ttdoc">xiiStringView represent a read-only sub-string of a larger string, as it can store a dedicated string...</div><div class="ttdef"><b>Definition</b> StringView.h:34</div></div>
 <div class="ttc" id="aclassxii_unique_ptr_html"><div class="ttname"><a href="../../d9/d4a/classxii_unique_ptr.html">xiiUniquePtr</a></div><div class="ttdoc">A Unique ptr manages an object and destroys that object when it goes out of scope....</div><div class="ttdef"><b>Definition</b> UniquePtr.h:9</div></div>
-<div class="ttc" id="aclassxii_vec2_template_html"><div class="ttname"><a href="../../d1/d0d/classxii_vec2_template.html">xiiVec2Template&lt; xiiInt32 &gt;</a></div></div>
 <div class="ttc" id="aclassxii_window_base_html"><div class="ttname"><a href="../../de/dd5/classxii_window_base.html">xiiWindowBase</a></div><div class="ttdoc">Base class of all window classes that have a client area and a native window handle.</div><div class="ttdef"><b>Definition</b> Window.h:25</div></div>
 <div class="ttc" id="aclassxii_window_base_html_a90912af8cccf501f5e957de32bd6e033"><div class="ttname"><a href="../../de/dd5/classxii_window_base.html#a90912af8cccf501f5e957de32bd6e033">xiiWindowBase::IsFullscreenWindow</a></div><div class="ttdeci">virtual bool IsFullscreenWindow(bool bOnlyProperFullscreenMode=false) const =0</div><div class="ttdoc">Whether the window is a fullscreen window or should be one - some platforms may enforce this via the ...</div></div>
 <div class="ttc" id="aclassxii_window_base_html_ae5473083dc598f86891bbe6792e04a00"><div class="ttname"><a href="../../de/dd5/classxii_window_base.html#ae5473083dc598f86891bbe6792e04a00">xiiWindowBase::IsVisible</a></div><div class="ttdeci">virtual bool IsVisible() const =0</div><div class="ttdoc">Whether the window can potentially be seen by the user. Windows that are minimized or hidden are not ...</div></div>
-<div class="ttc" id="aclassxii_window_html"><div class="ttname"><a href="../../d2/d13/classxii_window.html">xiiWindow</a></div><div class="ttdoc">A simple abstraction for platform specific window creation.</div><div class="ttdef"><b>Definition</b> Window.h:133</div></div>
 <div class="ttc" id="aclassxii_window_html_a134a3236effa39ffde2e45a3ce951856"><div class="ttname"><a href="../../d2/d13/classxii_window.html#a134a3236effa39ffde2e45a3ce951856">xiiWindow::IsVisible</a></div><div class="ttdeci">virtual bool IsVisible() const override</div><div class="ttdoc">Whether the window can potentially be seen by the user. Windows that are minimized or hidden are not ...</div><div class="ttdef"><b>Definition</b> Window.h:164</div></div>
 <div class="ttc" id="aclassxii_window_html_a1da83eb7c4c4d0abcb4b010f66497d1c"><div class="ttname"><a href="../../d2/d13/classxii_window.html#a1da83eb7c4c4d0abcb4b010f66497d1c">xiiWindow::OnWindowMove</a></div><div class="ttdeci">virtual void OnWindowMove(const xiiInt32 iNewPosX, const xiiInt32 iNewPosY)</div><div class="ttdoc">Called when the window position is changed. Not possible on all OSes.</div><div class="ttdef"><b>Definition</b> Window.h:214</div></div>
 <div class="ttc" id="aclassxii_window_html_a2e692ef61a473482f20ae6982f8711e6"><div class="ttname"><a href="../../d2/d13/classxii_window.html#a2e692ef61a473482f20ae6982f8711e6">xiiWindow::m_CreationDescription</a></div><div class="ttdeci">xiiWindowCreationDesc m_CreationDescription</div><div class="ttdef"><b>Definition</b> Window.h:263</div></div>
@@ -355,12 +321,24 @@ $(function(){initNavTree('de/d42/_window_8h_source.html','../../'); initResizabl
 <div class="ttc" id="aclassxii_window_html_ab011354c87a6954259de3e3bfcc09fea"><div class="ttname"><a href="../../d2/d13/classxii_window.html#ab011354c87a6954259de3e3bfcc09fea">xiiWindow::GetInputDevice</a></div><div class="ttdeci">xiiStandardInputDevice * GetInputDevice() const</div><div class="ttdoc">Returns the input device that is attached to this window and typically provides mouse / keyboard inpu...</div><div class="ttdef"><b>Definition</b> Window.h:252</div></div>
 <div class="ttc" id="aclassxii_window_html_ab325cb0c2b6b7c3e93c57177d7ba1eaf"><div class="ttname"><a href="../../d2/d13/classxii_window.html#ab325cb0c2b6b7c3e93c57177d7ba1eaf">xiiWindow::OnVisibleChange</a></div><div class="ttdeci">virtual void OnVisibleChange(bool bVisible)</div><div class="ttdoc">Called when the window gets focus or loses focus.</div><div class="ttdef"><b>Definition</b> Window.h:224</div></div>
 <div class="ttc" id="aclassxii_window_html_ab5c20ca3069fca37bda04ab08294edba"><div class="ttname"><a href="../../d2/d13/classxii_window.html#ab5c20ca3069fca37bda04ab08294edba">xiiWindow::IsFullscreenWindow</a></div><div class="ttdeci">virtual bool IsFullscreenWindow(bool bOnlyProperFullscreenMode=false) const override</div><div class="ttdoc">Returns whether the window covers an entire monitor.</div><div class="ttdef"><b>Definition</b> Window.h:156</div></div>
+<div class="ttc" id="aclassxii_window_html_ac5633354854fb9c6513b5f087c0370a8"><div class="ttname"><a href="../../d2/d13/classxii_window.html#ac5633354854fb9c6513b5f087c0370a8">xiiWindow::xiiWindow</a></div><div class="ttdeci">xiiWindow()</div><div class="ttdoc">Creates empty window instance with standard settings.</div><div class="ttdef"><b>Definition</b> Window.cpp:197</div></div>
 <div class="ttc" id="aclassxii_window_html_afddf325c3c08d8267dca97e72621017c"><div class="ttname"><a href="../../d2/d13/classxii_window.html#afddf325c3c08d8267dca97e72621017c">xiiWindow::GetCreationDescription</a></div><div class="ttdeci">const xiiWindowCreationDesc &amp; GetCreationDescription() const</div><div class="ttdoc">Returns the currently active description struct.</div><div class="ttdef"><b>Definition</b> Window.h:145</div></div>
 <div class="ttc" id="astructxii_enum_html"><div class="ttname"><a href="../../de/dfd/structxii_enum.html">xiiEnum</a></div><div class="ttdoc">A custom enum implementation that allows to define the underlying storage type to control its memory ...</div><div class="ttdef"><b>Definition</b> Enum.h:37</div></div>
-<div class="ttc" id="astructxii_hybrid_string_html"><div class="ttname"><a href="../../df/dfb/structxii_hybrid_string.html">xiiHybridString&lt; 32, xiiDefaultAllocatorWrapper &gt;</a></div></div>
 <div class="ttc" id="astructxii_result_html"><div class="ttname"><a href="../../dd/dad/structxii_result.html">xiiResult</a></div><div class="ttdoc">Default enum for returning failure or success, instead of using a bool.</div><div class="ttdef"><b>Definition</b> Types.h:56</div></div>
 <div class="ttc" id="astructxii_window_creation_desc_html"><div class="ttname"><a href="../../d6/d8c/structxii_window_creation_desc.html">xiiWindowCreationDesc</a></div><div class="ttdoc">Parameters for creating a window, such as position and resolution.</div><div class="ttdef"><b>Definition</b> Window.h:69</div></div>
+<div class="ttc" id="astructxii_window_creation_desc_html_a0f5a8c301f102e58fa8917ed1a016288"><div class="ttname"><a href="../../d6/d8c/structxii_window_creation_desc.html#a0f5a8c301f102e58fa8917ed1a016288">xiiWindowCreationDesc::m_bSetForegroundOnInit</a></div><div class="ttdeci">bool m_bSetForegroundOnInit</div><div class="ttdoc">Whether the window is activated and focused on Initialize()</div><div class="ttdef"><b>Definition</b> Window.h:121</div></div>
+<div class="ttc" id="astructxii_window_creation_desc_html_a36a7ff1ca01631101ebb26dc68fb7599"><div class="ttname"><a href="../../d6/d8c/structxii_window_creation_desc.html#a36a7ff1ca01631101ebb26dc68fb7599">xiiWindowCreationDesc::m_Position</a></div><div class="ttdeci">xiiVec2I32 m_Position</div><div class="ttdoc">The virtual position of the window. Determines on which monitor the window ends up.</div><div class="ttdef"><b>Definition</b> Window.h:103</div></div>
+<div class="ttc" id="astructxii_window_creation_desc_html_a44d11053ebf6284ac36d3250b8fc6723"><div class="ttname"><a href="../../d6/d8c/structxii_window_creation_desc.html#a44d11053ebf6284ac36d3250b8fc6723">xiiWindowCreationDesc::AdjustWindowSizeAndPosition</a></div><div class="ttdeci">xiiResult AdjustWindowSizeAndPosition()</div><div class="ttdoc">Adjusts the position and size members, depending on the current value of m_WindowMode and m_iMonitor.</div><div class="ttdef"><b>Definition</b> Window.cpp:13</div></div>
 <div class="ttc" id="astructxii_window_creation_desc_html_a48134bca01578e27267fc93cb3e0b601"><div class="ttname"><a href="../../d6/d8c/structxii_window_creation_desc.html#a48134bca01578e27267fc93cb3e0b601">xiiWindowCreationDesc::m_WindowMode</a></div><div class="ttdeci">xiiEnum&lt; xiiWindowMode &gt; m_WindowMode</div><div class="ttdoc">Defines how the window size is determined.</div><div class="ttdef"><b>Definition</b> Window.h:96</div></div>
+<div class="ttc" id="astructxii_window_creation_desc_html_a51eb1018e59e6911c8400d8523e5f3f3"><div class="ttname"><a href="../../d6/d8c/structxii_window_creation_desc.html#a51eb1018e59e6911c8400d8523e5f3f3">xiiWindowCreationDesc::m_bShowMouseCursor</a></div><div class="ttdeci">bool m_bShowMouseCursor</div><div class="ttdef"><b>Definition</b> Window.h:118</div></div>
+<div class="ttc" id="astructxii_window_creation_desc_html_a55da1cc661d3c6ddbb0d53ebaff62298"><div class="ttname"><a href="../../d6/d8c/structxii_window_creation_desc.html#a55da1cc661d3c6ddbb0d53ebaff62298">xiiWindowCreationDesc::m_Resolution</a></div><div class="ttdeci">xiiSizeU32 m_Resolution</div><div class="ttdoc">The pixel resolution of the window.</div><div class="ttdef"><b>Definition</b> Window.h:106</div></div>
+<div class="ttc" id="astructxii_window_creation_desc_html_a5f552ce820fa8f263d31aaf7976be501"><div class="ttname"><a href="../../d6/d8c/structxii_window_creation_desc.html#a5f552ce820fa8f263d31aaf7976be501">xiiWindowCreationDesc::LoadFromDDL</a></div><div class="ttdeci">void LoadFromDDL(const xiiOpenDdlReaderElement *pParentElement)</div><div class="ttdoc">Deserializes the configuration from DDL.</div><div class="ttdef"><b>Definition</b> Window.cpp:126</div></div>
+<div class="ttc" id="astructxii_window_creation_desc_html_a66942ecccb9f78d08ad509a2e20a4bf0"><div class="ttname"><a href="../../d6/d8c/structxii_window_creation_desc.html#a66942ecccb9f78d08ad509a2e20a4bf0">xiiWindowCreationDesc::m_Title</a></div><div class="ttdeci">xiiString m_Title</div><div class="ttdoc">The window title to be displayed.</div><div class="ttdef"><b>Definition</b> Window.h:93</div></div>
+<div class="ttc" id="astructxii_window_creation_desc_html_a69741d3a86b143665c3c6c26d62d60e6"><div class="ttname"><a href="../../d6/d8c/structxii_window_creation_desc.html#a69741d3a86b143665c3c6c26d62d60e6">xiiWindowCreationDesc::m_iMonitor</a></div><div class="ttdeci">xiiInt8 m_iMonitor</div><div class="ttdef"><b>Definition</b> Window.h:100</div></div>
+<div class="ttc" id="astructxii_window_creation_desc_html_ac1ac18d561a602db57b5c4692b7a8a96"><div class="ttname"><a href="../../d6/d8c/structxii_window_creation_desc.html#ac1ac18d561a602db57b5c4692b7a8a96">xiiWindowCreationDesc::m_bClipMouseCursor</a></div><div class="ttdeci">bool m_bClipMouseCursor</div><div class="ttdef"><b>Definition</b> Window.h:114</div></div>
+<div class="ttc" id="astructxii_window_creation_desc_html_ad32fee4b5c33c49e5d9c81a684095200"><div class="ttname"><a href="../../d6/d8c/structxii_window_creation_desc.html#ad32fee4b5c33c49e5d9c81a684095200">xiiWindowCreationDesc::m_uiWindowNumber</a></div><div class="ttdeci">xiiUInt8 m_uiWindowNumber</div><div class="ttdef"><b>Definition</b> Window.h:110</div></div>
+<div class="ttc" id="astructxii_window_creation_desc_html_af0c3077ff26a440832adef83ea4ea65b"><div class="ttname"><a href="../../d6/d8c/structxii_window_creation_desc.html#af0c3077ff26a440832adef83ea4ea65b">xiiWindowCreationDesc::m_bCenterWindowOnDisplay</a></div><div class="ttdeci">bool m_bCenterWindowOnDisplay</div><div class="ttdoc">Whether the window is centered on the display.</div><div class="ttdef"><b>Definition</b> Window.h:124</div></div>
+<div class="ttc" id="astructxii_window_creation_desc_html_afd6cbf55f7d879fc727dacb46531115b"><div class="ttname"><a href="../../d6/d8c/structxii_window_creation_desc.html#afd6cbf55f7d879fc727dacb46531115b">xiiWindowCreationDesc::SaveToDDL</a></div><div class="ttdeci">void SaveToDDL(xiiOpenDdlWriter &amp;ref_writer)</div><div class="ttdoc">Serializes the configuration to DDL.</div><div class="ttdef"><b>Definition</b> Window.cpp:69</div></div>
 <div class="ttc" id="astructxii_window_mode_html"><div class="ttname"><a href="../../d4/d40/structxii_window_mode.html">xiiWindowMode</a></div><div class="ttdoc">Determines how the position and resolution for a window are picked.</div><div class="ttdef"><b>Definition</b> Window.h:50</div></div>
 <div class="ttc" id="astructxii_window_mode_html_a618fbd5ea2b30748daa5289d03ee70e7"><div class="ttname"><a href="../../d4/d40/structxii_window_mode.html#a618fbd5ea2b30748daa5289d03ee70e7">xiiWindowMode::IsFullscreen</a></div><div class="ttdeci">static constexpr bool IsFullscreen(Enum e)</div><div class="ttdoc">Returns whether the window covers an entire monitor. This includes borderless windows and proper full...</div><div class="ttdef"><b>Definition</b> Window.h:64</div></div>
 <div class="ttc" id="astructxii_window_mode_html_aced6b6446fc8e62f3a850a3d8d4e23a6"><div class="ttname"><a href="../../d4/d40/structxii_window_mode.html#aced6b6446fc8e62f3a850a3d8d4e23a6">xiiWindowMode::Enum</a></div><div class="ttdeci">Enum</div><div class="ttdef"><b>Definition</b> Window.h:54</div></div>
@@ -374,7 +352,7 @@ $(function(){initNavTree('de/d42/_window_8h_source.html','../../'); initResizabl
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.html">home</a></li><li class="navelem"><a class="el" href="../../dir_1036706e55c22cab35bc1c58ee689f1d.html">runner</a></li><li class="navelem"><a class="el" href="../../dir_629f8151d55d307162ff2d619fb1783d.html">work</a></li><li class="navelem"><a class="el" href="../../dir_1ddc44fe1263a8c7935fa6130b7d9499.html">XII</a></li><li class="navelem"><a class="el" href="../../dir_2c1b6808f12952f4c36e05ba7068379a.html">XII</a></li><li class="navelem"><a class="el" href="../../dir_b5a1c4ecfca018ad24b729e213296d41.html">Source</a></li><li class="navelem"><a class="el" href="../../dir_e321052006a51284e67389ab20037e7c.html">Engine</a></li><li class="navelem"><a class="el" href="../../dir_6934db396743bb3844d563c7fa1f32a7.html">Core</a></li><li class="navelem"><a class="el" href="../../dir_010ee2ae163492535281bbc566e65bb8.html">System</a></li><li class="navelem"><b>Window.h</b></li>
-    <li class="footer">Generated on Fri Mar 21 2025 22:41:55 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
+    <li class="footer">Generated on Fri Mar 21 2025 23:27:38 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 </body>

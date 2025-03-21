@@ -1,39 +1,15 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<meta name="generator" content="Doxygen 1.12.0"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.13.2"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<!-- BEGIN opengraph metadata -->
-<meta property="og:title" content="XII" />
-<meta property="og:image" content="XII-Logo.png" />
-<meta property="og:description" content="An advanced high-performance simulation engine." />
-<meta property="og:url" content="https://www.xiitechnologies.com" />
-<!-- END opengraph metadata -->
-<!-- BEGIN twitter metadata -->
-<meta name="twitter:image:src" content="XII-Logo.png" />
-<meta name="twitter:title" content="XII" />
-<meta name="twitter:description" content="An advanced high-performance simulation engine." />
-<!-- END twitter metadata -->
 <title>XII: /home/runner/work/XII/XII/Source/Engine/Foundation/Containers/Implementation/HashSet_inl.h Source File</title>
+<link rel="icon" href="../../XII-Logo.png" type="image/x-icon" />
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
-<link rel="icon" type="image/svg+xml" href="XII-Logo.png"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
-<script type="text/javascript" src="../../doxygen-awesome-darkmode-toggle.js"></script>
-<script type="text/javascript" src="../../doxygen-awesome-fragment-copy-button.js"></script>
-<script type="text/javascript" src="../../doxygen-awesome-paragraph-link.js"></script>
-<script type="text/javascript" src="../../doxygen-awesome-interactive-toc.js"></script>
-<script type="text/javascript" src="../../doxygen-awesome-tabs.js"></script>
-<script type="text/javascript" src="../../toggle-alternative-theme.js"></script>
-<script type="text/javascript">
-    DoxygenAwesomeFragmentCopyButton.init()
-    DoxygenAwesomeDarkModeToggle.init()
-    DoxygenAwesomeParagraphLink.init()
-    DoxygenAwesomeInteractiveToc.init()
-    DoxygenAwesomeTabs.init()
-</script>
 <link href="../../navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../navtreedata.js"></script>
 <script type="text/javascript" src="../../navtree.js"></script>
@@ -45,28 +21,22 @@
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-<!-- https://tholman.com/github-corners/ -->
-<a href="https://github.com/XII-Technologies/APIDocumentation" class="github-corner" title="View source on GitHub" target="_blank" rel="noopener noreferrer">
-    <svg viewBox="0 0 250 250" width="40" height="40" style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
-    <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
  <tbody>
- <tr style="height: 56px;">
+ <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="../../XII-Logo.png"/></td>
-  <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">XII
-   &#160;<span id="projectnumber">1.0.0</span>
+  <td id="projectalign">
+   <div id="projectname">XII<span id="projectnumber">&#160;Release 0.1.0</span>
    </div>
-   <div id="projectbrief">A high-performance simulation engine.</div>
   </td>
  </tr>
  </tbody>
 </table>
 </div>
 <!-- end header part -->
-<!-- Generated by Doxygen 1.12.0 -->
+<!-- Generated by Doxygen 1.13.2 -->
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
 var searchBox = new SearchBox("searchBox", "../../search/",'.html');
@@ -130,7 +100,7 @@ $(function(){initNavTree('df/dbb/_hash_set__inl_8h_source.html','../../'); initR
   <div class="headertitle"><div class="title">HashSet_inl.h</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#ifndef xiiInvalidIndex</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#  define xiiInvalidIndex 0xFFFFFFFF</span></div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#endif</span></div>
@@ -138,13 +108,13 @@ $(function(){initNavTree('df/dbb/_hash_set__inl_8h_source.html','../../'); initR
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment">// ***** Const Iterator *****</span></div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> K, <span class="keyword">typename</span> H&gt;</div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><a class="code hl_class" href="../../d6/daa/classxii_hash_set_base.html">xiiHashSetBase&lt;K, H&gt;::ConstIterator::ConstIterator</a>(<span class="keyword">const</span> <a class="code hl_class" href="../../d6/daa/classxii_hash_set_base.html">xiiHashSetBase&lt;K, H&gt;</a>&amp; hashSet) :</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>xiiHashSetBase&lt;K, H&gt;::ConstIterator::ConstIterator(<span class="keyword">const</span> <a class="code hl_class" href="../../d6/daa/classxii_hash_set_base.html">xiiHashSetBase&lt;K, H&gt;</a>&amp; hashSet) :</div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>  m_pHashSet(&amp;hashSet)</div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>{</div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>}</div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> K, <span class="keyword">typename</span> H&gt;</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="keywordtype">void</span> <a class="code hl_class" href="../../d6/daa/classxii_hash_set_base.html">xiiHashSetBase&lt;K, H&gt;::ConstIterator::SetToBegin</a>()</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="keywordtype">void</span> xiiHashSetBase&lt;K, H&gt;::ConstIterator::SetToBegin()</div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>{</div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>  <span class="keywordflow">if</span> (m_pHashSet-&gt;IsEmpty())</div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>  {</div>
@@ -160,7 +130,7 @@ $(function(){initNavTree('df/dbb/_hash_set__inl_8h_source.html','../../'); initR
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
 <div class="foldopen" id="foldopen00029" data-start="{" data-end="}">
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="../../d1/dde/classxii_hash_set_base_1_1_const_iterator.html#af12e5d1836310d01b85745a98b99149e">   29</a></span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> K, <span class="keyword">typename</span> H&gt;</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code hl_class" href="../../d6/daa/classxii_hash_set_base.html">xiiHashSetBase&lt;K, H&gt;::ConstIterator::SetToEnd</a>()</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="keyword">inline</span> <span class="keywordtype">void</span> xiiHashSetBase&lt;K, H&gt;::ConstIterator::SetToEnd()</div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>{</div>
 <div class="foldopen" id="foldopen00032" data-start="{" data-end="}">
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="../../d1/dde/classxii_hash_set_base_1_1_const_iterator.html#a1c4ff6b0662b89d0c1f0d68b04f88b3d">   32</a></span>  m_uiCurrentCount = m_pHashSet-&gt;m_uiCount;</div>
@@ -242,7 +212,7 @@ $(function(){initNavTree('df/dbb/_hash_set__inl_8h_source.html','../../'); initR
 <div class="foldopen" id="foldopen00092" data-start="{" data-end="}">
 <div class="line"><a id="l00092" name="l00092"></a><span class="lineno"><a class="line" href="../../d6/daa/classxii_hash_set_base.html#a5a8260e30f97741ad01290d044d639aa">   92</a></span> </div>
 <div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> K, <span class="keyword">typename</span> H&gt;</div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span><a class="code hl_function" href="../../d6/daa/classxii_hash_set_base.html#a3037d907dd327f0c5e77dc44f5859f40">xiiHashSetBase&lt;K, H&gt;::xiiHashSetBase</a>(<span class="keyword">const</span> <a class="code hl_class" href="../../d6/daa/classxii_hash_set_base.html">xiiHashSetBase&lt;K, H&gt;</a>&amp; other, <a class="code hl_class" href="../../d5/d66/classxii_allocator_base.html">xiiAllocatorBase</a>* pAllocator)</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span><a class="code hl_function" href="../../d6/daa/classxii_hash_set_base.html#a3037d907dd327f0c5e77dc44f5859f40">xiiHashSetBase&lt;K, H&gt;::xiiHashSetBase</a>(<span class="keyword">const</span> <a class="code hl_function" href="../../d6/daa/classxii_hash_set_base.html#a3037d907dd327f0c5e77dc44f5859f40">xiiHashSetBase&lt;K, H&gt;</a>&amp; other, <a class="code hl_class" href="../../d5/d66/classxii_allocator_base.html">xiiAllocatorBase</a>* pAllocator)</div>
 <div class="foldopen" id="foldopen00095" data-start="{" data-end="}">
 <div class="line"><a id="l00095" name="l00095"></a><span class="lineno"><a class="line" href="../../d6/daa/classxii_hash_set_base.html#a1baa135019f97a028acf5dd122377708">   95</a></span>{</div>
 <div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>  m_pEntries    = <span class="keyword">nullptr</span>;</div>
@@ -284,7 +254,7 @@ $(function(){initNavTree('df/dbb/_hash_set__inl_8h_source.html','../../'); initR
 <div class="foldopen" id="foldopen00125" data-start="{" data-end="}">
 <div class="line"><a id="l00125" name="l00125"></a><span class="lineno"><a class="line" href="../../d6/daa/classxii_hash_set_base.html#a29f69a6fe97e2ffa2b53b3da63f708b7">  125</a></span> </div>
 <div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> K, <span class="keyword">typename</span> H&gt;</div>
-<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span><span class="keywordtype">void</span> <a class="code hl_function" href="../../d6/daa/classxii_hash_set_base.html#ad8206b6001ceb19fe78ba0363b9d0a8b">xiiHashSetBase&lt;K, H&gt;::operator=</a>(<span class="keyword">const</span> <a class="code hl_class" href="../../d6/daa/classxii_hash_set_base.html">xiiHashSetBase&lt;K, H&gt;</a>&amp; rhs)</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span><span class="keywordtype">void</span> <a class="code hl_function" href="../../d6/daa/classxii_hash_set_base.html#ad8206b6001ceb19fe78ba0363b9d0a8b">xiiHashSetBase&lt;K, H&gt;::operator=</a>(<span class="keyword">const</span> <a class="code hl_function" href="../../d6/daa/classxii_hash_set_base.html#a3037d907dd327f0c5e77dc44f5859f40">xiiHashSetBase&lt;K, H&gt;</a>&amp; rhs)</div>
 <div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>{</div>
 <div class="foldopen" id="foldopen00129" data-start="{" data-end="}">
 <div class="line"><a id="l00129" name="l00129"></a><span class="lineno"><a class="line" href="../../d6/daa/classxii_hash_set_base.html#ae1929333a5bd46ba11bd557d307428ce">  129</a></span>  <a class="code hl_function" href="../../d6/daa/classxii_hash_set_base.html#a1baa135019f97a028acf5dd122377708">Clear</a>();</div>
@@ -305,7 +275,7 @@ $(function(){initNavTree('df/dbb/_hash_set__inl_8h_source.html','../../'); initR
 <div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>}</div>
 <div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span> </div>
 <div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> K, <span class="keyword">typename</span> H&gt;</div>
-<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span><span class="keywordtype">void</span> <a class="code hl_function" href="../../d6/daa/classxii_hash_set_base.html#ad8206b6001ceb19fe78ba0363b9d0a8b">xiiHashSetBase&lt;K, H&gt;::operator=</a>(<a class="code hl_class" href="../../d6/daa/classxii_hash_set_base.html">xiiHashSetBase&lt;K, H&gt;</a>&amp;&amp; rhs)</div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span><span class="keywordtype">void</span> <a class="code hl_function" href="../../d6/daa/classxii_hash_set_base.html#ad8206b6001ceb19fe78ba0363b9d0a8b">xiiHashSetBase&lt;K, H&gt;::operator=</a>(<a class="code hl_function" href="../../d6/daa/classxii_hash_set_base.html#a3037d907dd327f0c5e77dc44f5859f40">xiiHashSetBase&lt;K, H&gt;</a>&amp;&amp; rhs)</div>
 <div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>{</div>
 <div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>  <span class="comment">// Clear any existing data (calls destructors if necessary)</span></div>
 <div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>  <a class="code hl_function" href="../../d6/daa/classxii_hash_set_base.html#a1baa135019f97a028acf5dd122377708">Clear</a>();</div>
@@ -347,7 +317,7 @@ $(function(){initNavTree('df/dbb/_hash_set__inl_8h_source.html','../../'); initR
 <div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span> </div>
 <div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> K, <span class="keyword">typename</span> H&gt;</div>
 <div class="foldopen" id="foldopen00185" data-start="{" data-end="}">
-<div class="line"><a id="l00185" name="l00185"></a><span class="lineno"><a class="line" href="../../d6/daa/classxii_hash_set_base.html#afcf3028a0d851a1e5d349b7df1439d8b">  185</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="../../d6/daa/classxii_hash_set_base.html#afcf3028a0d851a1e5d349b7df1439d8b">xiiHashSetBase&lt;K, H&gt;::operator==</a>(<span class="keyword">const</span> <a class="code hl_class" href="../../d6/daa/classxii_hash_set_base.html">xiiHashSetBase&lt;K, H&gt;</a>&amp; rhs)<span class="keyword"> const</span></div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno"><a class="line" href="../../d6/daa/classxii_hash_set_base.html#afcf3028a0d851a1e5d349b7df1439d8b">  185</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="../../d6/daa/classxii_hash_set_base.html#afcf3028a0d851a1e5d349b7df1439d8b">xiiHashSetBase&lt;K, H&gt;::operator==</a>(<span class="keyword">const</span> <a class="code hl_function" href="../../d6/daa/classxii_hash_set_base.html#a3037d907dd327f0c5e77dc44f5859f40">xiiHashSetBase&lt;K, H&gt;</a>&amp; rhs)<span class="keyword"> const</span></div>
 <div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span><span class="keyword"></span>{</div>
 <div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>  <span class="keywordflow">if</span> (m_uiCount != rhs.m_uiCount)</div>
 <div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
@@ -502,7 +472,7 @@ $(function(){initNavTree('df/dbb/_hash_set__inl_8h_source.html','../../'); initR
 <div class="line"><a id="l00322" name="l00322"></a><span class="lineno">  322</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> K, <span class="keyword">typename</span> H&gt;</div>
 <div class="line"><a id="l00323" name="l00323"></a><span class="lineno">  323</span><span class="keyword">typename</span> <a class="code hl_class" href="../../d1/dde/classxii_hash_set_base_1_1_const_iterator.html">xiiHashSetBase&lt;K, H&gt;::ConstIterator</a> <a class="code hl_function" href="../../d6/daa/classxii_hash_set_base.html#a5fb29f693cc6cf869143d2d15dbb405f">xiiHashSetBase&lt;K, H&gt;::Remove</a>(<span class="keyword">const</span> <span class="keyword">typename</span> <a class="code hl_class" href="../../d1/dde/classxii_hash_set_base_1_1_const_iterator.html">xiiHashSetBase&lt;K, H&gt;::ConstIterator</a>&amp; pos)</div>
 <div class="line"><a id="l00324" name="l00324"></a><span class="lineno">  324</span>{</div>
-<div class="line"><a id="l00325" name="l00325"></a><span class="lineno">  325</span>  ConstIterator it      = pos;</div>
+<div class="line"><a id="l00325" name="l00325"></a><span class="lineno">  325</span>  <a class="code hl_class" href="../../d6/df7/classxii_map.html">ConstIterator</a> it      = pos;</div>
 <div class="line"><a id="l00326" name="l00326"></a><span class="lineno">  326</span>  xiiUInt32     uiIndex = pos.m_uiCurrentIndex;</div>
 <div class="line"><a id="l00327" name="l00327"></a><span class="lineno">  327</span>  ++it;</div>
 <div class="line"><a id="l00328" name="l00328"></a><span class="lineno">  328</span>  --it.m_uiCurrentCount;</div>
@@ -511,7 +481,7 @@ $(function(){initNavTree('df/dbb/_hash_set__inl_8h_source.html','../../'); initR
 <div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span>}</div>
 <div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span> </div>
 <div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> K, <span class="keyword">typename</span> H&gt;</div>
-<div class="line"><a id="l00334" name="l00334"></a><span class="lineno">  334</span><span class="keywordtype">void</span> <a class="code hl_class" href="../../d6/daa/classxii_hash_set_base.html">xiiHashSetBase&lt;K, H&gt;::RemoveInternal</a>(xiiUInt32 uiIndex)</div>
+<div class="line"><a id="l00334" name="l00334"></a><span class="lineno">  334</span><span class="keywordtype">void</span> <a class="code hl_function" href="../../d6/daa/classxii_hash_set_base.html#a3037d907dd327f0c5e77dc44f5859f40">xiiHashSetBase&lt;K, H&gt;::RemoveInternal</a>(xiiUInt32 uiIndex)</div>
 <div class="line"><a id="l00335" name="l00335"></a><span class="lineno">  335</span>{</div>
 <div class="line"><a id="l00336" name="l00336"></a><span class="lineno">  336</span>  <a class="code hl_function" href="../../d8/d9d/classxii_memory_utils.html#a6c8728654ad1b5c0c9dcbb597a93594d">xiiMemoryUtils::Destruct</a>(&amp;m_pEntries[uiIndex], 1);</div>
 <div class="line"><a id="l00337" name="l00337"></a><span class="lineno">  337</span> </div>
@@ -555,7 +525,7 @@ $(function(){initNavTree('df/dbb/_hash_set__inl_8h_source.html','../../'); initR
 <div class="line"><a id="l00375" name="l00375"></a><span class="lineno">  375</span> </div>
 <div class="line"><a id="l00376" name="l00376"></a><span class="lineno">  376</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> K, <span class="keyword">typename</span> H&gt;</div>
 <div class="line"><a id="l00377" name="l00377"></a><span class="lineno">  377</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> CompatibleKeyType&gt;</div>
-<div class="line"><a id="l00378" name="l00378"></a><span class="lineno">  378</span>XII_FORCE_INLINE <span class="keyword">typename</span> <a class="code hl_class" href="../../d1/dde/classxii_hash_set_base_1_1_const_iterator.html">xiiHashSetBase&lt;K, H&gt;::ConstIterator</a> <a class="code hl_function" href="../../d6/daa/classxii_hash_set_base.html#a6d96d21ec86de3f2eb3ef4e663f61110">xiiHashSetBase&lt;K, H&gt;::Find</a>(<span class="keyword">const</span> CompatibleKeyType&amp; key)<span class="keyword"> const</span></div>
+<div class="line"><a id="l00378" name="l00378"></a><span class="lineno">  378</span>XII_FORCE_INLINE <span class="keyword">typename</span> <a class="code hl_function" href="../../d6/daa/classxii_hash_set_base.html#a3037d907dd327f0c5e77dc44f5859f40">xiiHashSetBase&lt;K, H&gt;::ConstIterator</a> <a class="code hl_function" href="../../d6/daa/classxii_hash_set_base.html#a6d96d21ec86de3f2eb3ef4e663f61110">xiiHashSetBase&lt;K, H&gt;::Find</a>(<span class="keyword">const</span> CompatibleKeyType&amp; key)<span class="keyword"> const</span></div>
 <div class="line"><a id="l00379" name="l00379"></a><span class="lineno">  379</span><span class="keyword"></span>{</div>
 <div class="line"><a id="l00380" name="l00380"></a><span class="lineno">  380</span>  xiiUInt32 uiIndex = FindEntry(key);</div>
 <div class="line"><a id="l00381" name="l00381"></a><span class="lineno">  381</span>  <span class="keywordflow">if</span> (uiIndex == xiiInvalidIndex)</div>
@@ -563,7 +533,7 @@ $(function(){initNavTree('df/dbb/_hash_set__inl_8h_source.html','../../'); initR
 <div class="line"><a id="l00383" name="l00383"></a><span class="lineno">  383</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="../../d6/daa/classxii_hash_set_base.html#ae1929333a5bd46ba11bd557d307428ce">GetEndIterator</a>();</div>
 <div class="line"><a id="l00384" name="l00384"></a><span class="lineno">  384</span>  }</div>
 <div class="line"><a id="l00385" name="l00385"></a><span class="lineno">  385</span> </div>
-<div class="line"><a id="l00386" name="l00386"></a><span class="lineno">  386</span>  ConstIterator it(*<span class="keyword">this</span>);</div>
+<div class="line"><a id="l00386" name="l00386"></a><span class="lineno">  386</span>  <a class="code hl_class" href="../../d1/dde/classxii_hash_set_base_1_1_const_iterator.html">ConstIterator</a> it(*<span class="keyword">this</span>);</div>
 <div class="line"><a id="l00387" name="l00387"></a><span class="lineno">  387</span>  it.m_uiCurrentIndex = uiIndex;</div>
 <div class="line"><a id="l00388" name="l00388"></a><span class="lineno">  388</span>  it.m_uiCurrentCount = 0; <span class="comment">// we do not know the &#39;count&#39; (which is used as an optimization), so we just use 0</span></div>
 <div class="line"><a id="l00389" name="l00389"></a><span class="lineno">  389</span> </div>
@@ -572,7 +542,7 @@ $(function(){initNavTree('df/dbb/_hash_set__inl_8h_source.html','../../'); initR
 <div class="line"><a id="l00392" name="l00392"></a><span class="lineno">  392</span> </div>
 <div class="line"><a id="l00393" name="l00393"></a><span class="lineno">  393</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> K, <span class="keyword">typename</span> H&gt;</div>
 <div class="foldopen" id="foldopen00394" data-start="{" data-end="}">
-<div class="line"><a id="l00394" name="l00394"></a><span class="lineno"><a class="line" href="../../d6/daa/classxii_hash_set_base.html#a9b32d6374d6fac58f14abd9ef7ab4f2e">  394</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="../../d6/daa/classxii_hash_set_base.html#a9b32d6374d6fac58f14abd9ef7ab4f2e">xiiHashSetBase&lt;K, H&gt;::ContainsSet</a>(<span class="keyword">const</span> <a class="code hl_class" href="../../d6/daa/classxii_hash_set_base.html">xiiHashSetBase&lt;K, H&gt;</a>&amp; operand)<span class="keyword"> const</span></div>
+<div class="line"><a id="l00394" name="l00394"></a><span class="lineno"><a class="line" href="../../d6/daa/classxii_hash_set_base.html#a9b32d6374d6fac58f14abd9ef7ab4f2e">  394</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="../../d6/daa/classxii_hash_set_base.html#a9b32d6374d6fac58f14abd9ef7ab4f2e">xiiHashSetBase&lt;K, H&gt;::ContainsSet</a>(<span class="keyword">const</span> <a class="code hl_function" href="../../d6/daa/classxii_hash_set_base.html#a3037d907dd327f0c5e77dc44f5859f40">xiiHashSetBase&lt;K, H&gt;</a>&amp; operand)<span class="keyword"> const</span></div>
 <div class="line"><a id="l00395" name="l00395"></a><span class="lineno">  395</span><span class="keyword"></span>{</div>
 <div class="line"><a id="l00396" name="l00396"></a><span class="lineno">  396</span>  <span class="keywordflow">for</span> (<span class="keyword">const</span> K&amp; key : operand)</div>
 <div class="line"><a id="l00397" name="l00397"></a><span class="lineno">  397</span>  {</div>
@@ -586,7 +556,7 @@ $(function(){initNavTree('df/dbb/_hash_set__inl_8h_source.html','../../'); initR
 <div class="line"><a id="l00404" name="l00404"></a><span class="lineno">  404</span> </div>
 <div class="line"><a id="l00405" name="l00405"></a><span class="lineno">  405</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> K, <span class="keyword">typename</span> H&gt;</div>
 <div class="foldopen" id="foldopen00406" data-start="{" data-end="}">
-<div class="line"><a id="l00406" name="l00406"></a><span class="lineno"><a class="line" href="../../d6/daa/classxii_hash_set_base.html#a1767bafb36564e4061d01cfaba3c03ea">  406</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="../../d6/daa/classxii_hash_set_base.html#a1767bafb36564e4061d01cfaba3c03ea">xiiHashSetBase&lt;K, H&gt;::Union</a>(<span class="keyword">const</span> <a class="code hl_class" href="../../d6/daa/classxii_hash_set_base.html">xiiHashSetBase&lt;K, H&gt;</a>&amp; operand)</div>
+<div class="line"><a id="l00406" name="l00406"></a><span class="lineno"><a class="line" href="../../d6/daa/classxii_hash_set_base.html#a1767bafb36564e4061d01cfaba3c03ea">  406</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="../../d6/daa/classxii_hash_set_base.html#a1767bafb36564e4061d01cfaba3c03ea">xiiHashSetBase&lt;K, H&gt;::Union</a>(<span class="keyword">const</span> <a class="code hl_function" href="../../d6/daa/classxii_hash_set_base.html#a3037d907dd327f0c5e77dc44f5859f40">xiiHashSetBase&lt;K, H&gt;</a>&amp; operand)</div>
 <div class="line"><a id="l00407" name="l00407"></a><span class="lineno">  407</span>{</div>
 <div class="line"><a id="l00408" name="l00408"></a><span class="lineno">  408</span>  <a class="code hl_function" href="../../d6/daa/classxii_hash_set_base.html#a6e156fc343d8947a9fea4696f73ab26f">Reserve</a>(<a class="code hl_function" href="../../d6/daa/classxii_hash_set_base.html#ae690c3d8577eb8ddc1218396e0514200">GetCount</a>() + operand.<a class="code hl_function" href="../../d6/daa/classxii_hash_set_base.html#ae690c3d8577eb8ddc1218396e0514200">GetCount</a>());</div>
 <div class="line"><a id="l00409" name="l00409"></a><span class="lineno">  409</span>  <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; key : operand)</div>
@@ -598,7 +568,7 @@ $(function(){initNavTree('df/dbb/_hash_set__inl_8h_source.html','../../'); initR
 <div class="line"><a id="l00414" name="l00414"></a><span class="lineno">  414</span> </div>
 <div class="line"><a id="l00415" name="l00415"></a><span class="lineno">  415</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> K, <span class="keyword">typename</span> H&gt;</div>
 <div class="foldopen" id="foldopen00416" data-start="{" data-end="}">
-<div class="line"><a id="l00416" name="l00416"></a><span class="lineno"><a class="line" href="../../d6/daa/classxii_hash_set_base.html#a884df912d6b8b6b9e523c7289c17c867">  416</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="../../d6/daa/classxii_hash_set_base.html#a884df912d6b8b6b9e523c7289c17c867">xiiHashSetBase&lt;K, H&gt;::Difference</a>(<span class="keyword">const</span> <a class="code hl_class" href="../../d6/daa/classxii_hash_set_base.html">xiiHashSetBase&lt;K, H&gt;</a>&amp; operand)</div>
+<div class="line"><a id="l00416" name="l00416"></a><span class="lineno"><a class="line" href="../../d6/daa/classxii_hash_set_base.html#a884df912d6b8b6b9e523c7289c17c867">  416</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="../../d6/daa/classxii_hash_set_base.html#a884df912d6b8b6b9e523c7289c17c867">xiiHashSetBase&lt;K, H&gt;::Difference</a>(<span class="keyword">const</span> <a class="code hl_function" href="../../d6/daa/classxii_hash_set_base.html#a3037d907dd327f0c5e77dc44f5859f40">xiiHashSetBase&lt;K, H&gt;</a>&amp; operand)</div>
 <div class="line"><a id="l00417" name="l00417"></a><span class="lineno">  417</span>{</div>
 <div class="line"><a id="l00418" name="l00418"></a><span class="lineno">  418</span>  <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; key : operand)</div>
 <div class="line"><a id="l00419" name="l00419"></a><span class="lineno">  419</span>  {</div>
@@ -609,7 +579,7 @@ $(function(){initNavTree('df/dbb/_hash_set__inl_8h_source.html','../../'); initR
 <div class="line"><a id="l00423" name="l00423"></a><span class="lineno">  423</span> </div>
 <div class="line"><a id="l00424" name="l00424"></a><span class="lineno">  424</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> K, <span class="keyword">typename</span> H&gt;</div>
 <div class="foldopen" id="foldopen00425" data-start="{" data-end="}">
-<div class="line"><a id="l00425" name="l00425"></a><span class="lineno"><a class="line" href="../../d6/daa/classxii_hash_set_base.html#ad319d1cf75cad154ee3230197391ece9">  425</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="../../d6/daa/classxii_hash_set_base.html#ad319d1cf75cad154ee3230197391ece9">xiiHashSetBase&lt;K, H&gt;::Intersection</a>(<span class="keyword">const</span> <a class="code hl_class" href="../../d6/daa/classxii_hash_set_base.html">xiiHashSetBase&lt;K, H&gt;</a>&amp; operand)</div>
+<div class="line"><a id="l00425" name="l00425"></a><span class="lineno"><a class="line" href="../../d6/daa/classxii_hash_set_base.html#ad319d1cf75cad154ee3230197391ece9">  425</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="../../d6/daa/classxii_hash_set_base.html#ad319d1cf75cad154ee3230197391ece9">xiiHashSetBase&lt;K, H&gt;::Intersection</a>(<span class="keyword">const</span> <a class="code hl_function" href="../../d6/daa/classxii_hash_set_base.html#a3037d907dd327f0c5e77dc44f5859f40">xiiHashSetBase&lt;K, H&gt;</a>&amp; operand)</div>
 <div class="line"><a id="l00426" name="l00426"></a><span class="lineno">  426</span>{</div>
 <div class="line"><a id="l00427" name="l00427"></a><span class="lineno">  427</span>  <span class="keywordflow">for</span> (<span class="keyword">auto</span> it = <a class="code hl_function" href="../../d6/daa/classxii_hash_set_base.html#a29f69a6fe97e2ffa2b53b3da63f708b7">GetIterator</a>(); it.<a class="code hl_function" href="../../d1/dde/classxii_hash_set_base_1_1_const_iterator.html#adbf3ba379c3d84d48b3f71998b0cc263">IsValid</a>();)</div>
 <div class="line"><a id="l00428" name="l00428"></a><span class="lineno">  428</span>  {</div>
@@ -659,7 +629,7 @@ $(function(){initNavTree('df/dbb/_hash_set__inl_8h_source.html','../../'); initR
 <div class="line"><a id="l00463" name="l00463"></a><span class="lineno">  463</span> </div>
 <div class="line"><a id="l00464" name="l00464"></a><span class="lineno">  464</span><span class="comment">// private methods</span></div>
 <div class="line"><a id="l00465" name="l00465"></a><span class="lineno">  465</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> K, <span class="keyword">typename</span> H&gt;</div>
-<div class="line"><a id="l00466" name="l00466"></a><span class="lineno">  466</span><span class="keywordtype">void</span> <a class="code hl_class" href="../../d6/daa/classxii_hash_set_base.html">xiiHashSetBase&lt;K, H&gt;::SetCapacity</a>(xiiUInt32 uiCapacity)</div>
+<div class="line"><a id="l00466" name="l00466"></a><span class="lineno">  466</span><span class="keywordtype">void</span> xiiHashSetBase&lt;K, H&gt;::SetCapacity(xiiUInt32 uiCapacity)</div>
 <div class="line"><a id="l00467" name="l00467"></a><span class="lineno">  467</span>{</div>
 <div class="line"><a id="l00468" name="l00468"></a><span class="lineno">  468</span>  XII_ASSERT_DEBUG(<a class="code hl_function" href="../../d1/d37/namespacexii_math.html#a12b773e8c11bb90d8edc742cdad5d2f1">xiiMath::IsPowerOf2</a>(uiCapacity), <span class="stringliteral">&quot;uiCapacity must be a power of two to avoid modulo during lookup.&quot;</span>);</div>
 <div class="line"><a id="l00469" name="l00469"></a><span class="lineno">  469</span>  <span class="keyword">const</span> xiiUInt32 uiOldCapacity = m_uiCapacity;</div>
@@ -689,14 +659,14 @@ $(function(){initNavTree('df/dbb/_hash_set__inl_8h_source.html','../../'); initR
 <div class="line"><a id="l00493" name="l00493"></a><span class="lineno">  493</span> </div>
 <div class="line"><a id="l00494" name="l00494"></a><span class="lineno">  494</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> K, <span class="keyword">typename</span> H&gt;</div>
 <div class="line"><a id="l00495" name="l00495"></a><span class="lineno">  495</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> CompatibleKeyType&gt;</div>
-<div class="line"><a id="l00496" name="l00496"></a><span class="lineno">  496</span>XII_FORCE_INLINE xiiUInt32 <a class="code hl_class" href="../../d6/daa/classxii_hash_set_base.html">xiiHashSetBase&lt;K, H&gt;::FindEntry</a>(<span class="keyword">const</span> CompatibleKeyType&amp; key)<span class="keyword"> const</span></div>
+<div class="line"><a id="l00496" name="l00496"></a><span class="lineno">  496</span>XII_FORCE_INLINE xiiUInt32 <a class="code hl_function" href="../../d6/daa/classxii_hash_set_base.html#a3037d907dd327f0c5e77dc44f5859f40">xiiHashSetBase&lt;K, H&gt;::FindEntry</a>(<span class="keyword">const</span> CompatibleKeyType&amp; key)<span class="keyword"> const</span></div>
 <div class="line"><a id="l00497" name="l00497"></a><span class="lineno">  497</span><span class="keyword"></span>{</div>
 <div class="line"><a id="l00498" name="l00498"></a><span class="lineno">  498</span>  <span class="keywordflow">return</span> FindEntry(H::Hash(key), key);</div>
 <div class="line"><a id="l00499" name="l00499"></a><span class="lineno">  499</span>}</div>
 <div class="line"><a id="l00500" name="l00500"></a><span class="lineno">  500</span> </div>
 <div class="line"><a id="l00501" name="l00501"></a><span class="lineno">  501</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> K, <span class="keyword">typename</span> H&gt;</div>
 <div class="line"><a id="l00502" name="l00502"></a><span class="lineno">  502</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> CompatibleKeyType&gt;</div>
-<div class="line"><a id="l00503" name="l00503"></a><span class="lineno">  503</span><span class="keyword">inline</span> xiiUInt32 <a class="code hl_class" href="../../d6/daa/classxii_hash_set_base.html">xiiHashSetBase&lt;K, H&gt;::FindEntry</a>(xiiUInt32 uiHash, <span class="keyword">const</span> CompatibleKeyType&amp; key)<span class="keyword"> const</span></div>
+<div class="line"><a id="l00503" name="l00503"></a><span class="lineno">  503</span><span class="keyword">inline</span> xiiUInt32 <a class="code hl_function" href="../../d6/daa/classxii_hash_set_base.html#a3037d907dd327f0c5e77dc44f5859f40">xiiHashSetBase&lt;K, H&gt;::FindEntry</a>(xiiUInt32 uiHash, <span class="keyword">const</span> CompatibleKeyType&amp; key)<span class="keyword"> const</span></div>
 <div class="line"><a id="l00504" name="l00504"></a><span class="lineno">  504</span><span class="keyword"></span>{</div>
 <div class="line"><a id="l00505" name="l00505"></a><span class="lineno">  505</span>  <span class="keywordflow">if</span> (m_uiCapacity &gt; 0)</div>
 <div class="line"><a id="l00506" name="l00506"></a><span class="lineno">  506</span>  {</div>
@@ -721,7 +691,7 @@ $(function(){initNavTree('df/dbb/_hash_set__inl_8h_source.html','../../'); initR
 <div class="line"><a id="l00525" name="l00525"></a><span class="lineno">  525</span><span class="preprocessor">#define XII_HASHSET_USE_BITFLAGS XII_ON</span></div>
 <div class="line"><a id="l00526" name="l00526"></a><span class="lineno">  526</span> </div>
 <div class="line"><a id="l00527" name="l00527"></a><span class="lineno">  527</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> K, <span class="keyword">typename</span> H&gt;</div>
-<div class="line"><a id="l00528" name="l00528"></a><span class="lineno">  528</span>XII_FORCE_INLINE xiiUInt32 <a class="code hl_class" href="../../d6/daa/classxii_hash_set_base.html">xiiHashSetBase&lt;K, H&gt;::GetFlagsCapacity</a>()<span class="keyword"> const</span></div>
+<div class="line"><a id="l00528" name="l00528"></a><span class="lineno">  528</span>XII_FORCE_INLINE xiiUInt32 <a class="code hl_function" href="../../d6/daa/classxii_hash_set_base.html#a3037d907dd327f0c5e77dc44f5859f40">xiiHashSetBase&lt;K, H&gt;::GetFlagsCapacity</a>()<span class="keyword"> const</span></div>
 <div class="line"><a id="l00529" name="l00529"></a><span class="lineno">  529</span><span class="keyword"></span>{</div>
 <div class="line"><a id="l00530" name="l00530"></a><span class="lineno">  530</span><span class="preprocessor">#if XII_ENABLED(XII_HASHSET_USE_BITFLAGS)</span></div>
 <div class="line"><a id="l00531" name="l00531"></a><span class="lineno">  531</span>  <span class="keywordflow">return</span> (m_uiCapacity + 15) / 16;</div>
@@ -731,7 +701,7 @@ $(function(){initNavTree('df/dbb/_hash_set__inl_8h_source.html','../../'); initR
 <div class="line"><a id="l00535" name="l00535"></a><span class="lineno">  535</span>}</div>
 <div class="line"><a id="l00536" name="l00536"></a><span class="lineno">  536</span> </div>
 <div class="line"><a id="l00537" name="l00537"></a><span class="lineno">  537</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> K, <span class="keyword">typename</span> H&gt;</div>
-<div class="line"><a id="l00538" name="l00538"></a><span class="lineno">  538</span>xiiUInt32 <a class="code hl_class" href="../../d6/daa/classxii_hash_set_base.html">xiiHashSetBase&lt;K, H&gt;::GetFlags</a>(xiiUInt32* pFlags, xiiUInt32 uiEntryIndex)<span class="keyword"> const</span></div>
+<div class="line"><a id="l00538" name="l00538"></a><span class="lineno">  538</span>xiiUInt32 <a class="code hl_function" href="../../d6/daa/classxii_hash_set_base.html#a3037d907dd327f0c5e77dc44f5859f40">xiiHashSetBase&lt;K, H&gt;::GetFlags</a>(xiiUInt32* pFlags, xiiUInt32 uiEntryIndex)<span class="keyword"> const</span></div>
 <div class="line"><a id="l00539" name="l00539"></a><span class="lineno">  539</span><span class="keyword"></span>{</div>
 <div class="line"><a id="l00540" name="l00540"></a><span class="lineno">  540</span><span class="preprocessor">#if XII_ENABLED(XII_HASHSET_USE_BITFLAGS)</span></div>
 <div class="line"><a id="l00541" name="l00541"></a><span class="lineno">  541</span>  <span class="keyword">const</span> xiiUInt32 uiIndex    = uiEntryIndex / 16;</div>
@@ -743,7 +713,7 @@ $(function(){initNavTree('df/dbb/_hash_set__inl_8h_source.html','../../'); initR
 <div class="line"><a id="l00547" name="l00547"></a><span class="lineno">  547</span>}</div>
 <div class="line"><a id="l00548" name="l00548"></a><span class="lineno">  548</span> </div>
 <div class="line"><a id="l00549" name="l00549"></a><span class="lineno">  549</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> K, <span class="keyword">typename</span> H&gt;</div>
-<div class="line"><a id="l00550" name="l00550"></a><span class="lineno">  550</span><span class="keywordtype">void</span> <a class="code hl_class" href="../../d6/daa/classxii_hash_set_base.html">xiiHashSetBase&lt;K, H&gt;::SetFlags</a>(xiiUInt32 uiEntryIndex, xiiUInt32 uiFlags)</div>
+<div class="line"><a id="l00550" name="l00550"></a><span class="lineno">  550</span><span class="keywordtype">void</span> <a class="code hl_function" href="../../d6/daa/classxii_hash_set_base.html#a3037d907dd327f0c5e77dc44f5859f40">xiiHashSetBase&lt;K, H&gt;::SetFlags</a>(xiiUInt32 uiEntryIndex, xiiUInt32 uiFlags)</div>
 <div class="line"><a id="l00551" name="l00551"></a><span class="lineno">  551</span>{</div>
 <div class="line"><a id="l00552" name="l00552"></a><span class="lineno">  552</span><span class="preprocessor">#if XII_ENABLED(XII_HASHSET_USE_BITFLAGS)</span></div>
 <div class="line"><a id="l00553" name="l00553"></a><span class="lineno">  553</span>  <span class="keyword">const</span> xiiUInt32 uiIndex    = uiEntryIndex / 16;</div>
@@ -758,13 +728,13 @@ $(function(){initNavTree('df/dbb/_hash_set__inl_8h_source.html','../../'); initR
 <div class="line"><a id="l00562" name="l00562"></a><span class="lineno">  562</span>}</div>
 <div class="line"><a id="l00563" name="l00563"></a><span class="lineno">  563</span> </div>
 <div class="line"><a id="l00564" name="l00564"></a><span class="lineno">  564</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> K, <span class="keyword">typename</span> H&gt;</div>
-<div class="line"><a id="l00565" name="l00565"></a><span class="lineno">  565</span>XII_FORCE_INLINE <span class="keywordtype">bool</span> <a class="code hl_class" href="../../d6/daa/classxii_hash_set_base.html">xiiHashSetBase&lt;K, H&gt;::IsFreeEntry</a>(xiiUInt32 uiEntryIndex)<span class="keyword"> const</span></div>
+<div class="line"><a id="l00565" name="l00565"></a><span class="lineno">  565</span>XII_FORCE_INLINE <span class="keywordtype">bool</span> <a class="code hl_function" href="../../d6/daa/classxii_hash_set_base.html#a3037d907dd327f0c5e77dc44f5859f40">xiiHashSetBase&lt;K, H&gt;::IsFreeEntry</a>(xiiUInt32 uiEntryIndex)<span class="keyword"> const</span></div>
 <div class="line"><a id="l00566" name="l00566"></a><span class="lineno">  566</span><span class="keyword"></span>{</div>
 <div class="line"><a id="l00567" name="l00567"></a><span class="lineno">  567</span>  <span class="keywordflow">return</span> GetFlags(m_pEntryFlags, uiEntryIndex) == FREE_ENTRY;</div>
 <div class="line"><a id="l00568" name="l00568"></a><span class="lineno">  568</span>}</div>
 <div class="line"><a id="l00569" name="l00569"></a><span class="lineno">  569</span> </div>
 <div class="line"><a id="l00570" name="l00570"></a><span class="lineno">  570</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> K, <span class="keyword">typename</span> H&gt;</div>
-<div class="line"><a id="l00571" name="l00571"></a><span class="lineno">  571</span>XII_FORCE_INLINE <span class="keywordtype">bool</span> <a class="code hl_class" href="../../d6/daa/classxii_hash_set_base.html">xiiHashSetBase&lt;K, H&gt;::IsValidEntry</a>(xiiUInt32 uiEntryIndex)<span class="keyword"> const</span></div>
+<div class="line"><a id="l00571" name="l00571"></a><span class="lineno">  571</span>XII_FORCE_INLINE <span class="keywordtype">bool</span> <a class="code hl_function" href="../../d6/daa/classxii_hash_set_base.html#a3037d907dd327f0c5e77dc44f5859f40">xiiHashSetBase&lt;K, H&gt;::IsValidEntry</a>(xiiUInt32 uiEntryIndex)<span class="keyword"> const</span></div>
 <div class="line"><a id="l00572" name="l00572"></a><span class="lineno">  572</span><span class="keyword"></span>{</div>
 <div class="line"><a id="l00573" name="l00573"></a><span class="lineno">  573</span>  XII_ASSERT_DEBUG(uiEntryIndex &lt; m_uiCapacity, <span class="stringliteral">&quot;Out of bounds access&quot;</span>);</div>
 <div class="line"><a id="l00574" name="l00574"></a><span class="lineno">  574</span> </div>
@@ -772,93 +742,93 @@ $(function(){initNavTree('df/dbb/_hash_set__inl_8h_source.html','../../'); initR
 <div class="line"><a id="l00576" name="l00576"></a><span class="lineno">  576</span>}</div>
 <div class="line"><a id="l00577" name="l00577"></a><span class="lineno">  577</span> </div>
 <div class="line"><a id="l00578" name="l00578"></a><span class="lineno">  578</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> K, <span class="keyword">typename</span> H&gt;</div>
-<div class="line"><a id="l00579" name="l00579"></a><span class="lineno">  579</span>XII_FORCE_INLINE <span class="keywordtype">bool</span> <a class="code hl_class" href="../../d6/daa/classxii_hash_set_base.html">xiiHashSetBase&lt;K, H&gt;::IsDeletedEntry</a>(xiiUInt32 uiEntryIndex)<span class="keyword"> const</span></div>
+<div class="line"><a id="l00579" name="l00579"></a><span class="lineno">  579</span>XII_FORCE_INLINE <span class="keywordtype">bool</span> <a class="code hl_function" href="../../d6/daa/classxii_hash_set_base.html#a3037d907dd327f0c5e77dc44f5859f40">xiiHashSetBase&lt;K, H&gt;::IsDeletedEntry</a>(xiiUInt32 uiEntryIndex)<span class="keyword"> const</span></div>
 <div class="line"><a id="l00580" name="l00580"></a><span class="lineno">  580</span><span class="keyword"></span>{</div>
 <div class="line"><a id="l00581" name="l00581"></a><span class="lineno">  581</span>  <span class="keywordflow">return</span> GetFlags(m_pEntryFlags, uiEntryIndex) == DELETED_ENTRY;</div>
 <div class="line"><a id="l00582" name="l00582"></a><span class="lineno">  582</span>}</div>
 <div class="line"><a id="l00583" name="l00583"></a><span class="lineno">  583</span> </div>
 <div class="line"><a id="l00584" name="l00584"></a><span class="lineno">  584</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> K, <span class="keyword">typename</span> H&gt;</div>
-<div class="line"><a id="l00585" name="l00585"></a><span class="lineno">  585</span>XII_FORCE_INLINE <span class="keywordtype">void</span> <a class="code hl_class" href="../../d6/daa/classxii_hash_set_base.html">xiiHashSetBase&lt;K, H&gt;::MarkEntryAsFree</a>(xiiUInt32 uiEntryIndex)</div>
+<div class="line"><a id="l00585" name="l00585"></a><span class="lineno">  585</span>XII_FORCE_INLINE <span class="keywordtype">void</span> <a class="code hl_function" href="../../d6/daa/classxii_hash_set_base.html#a3037d907dd327f0c5e77dc44f5859f40">xiiHashSetBase&lt;K, H&gt;::MarkEntryAsFree</a>(xiiUInt32 uiEntryIndex)</div>
 <div class="line"><a id="l00586" name="l00586"></a><span class="lineno">  586</span>{</div>
 <div class="line"><a id="l00587" name="l00587"></a><span class="lineno">  587</span>  SetFlags(uiEntryIndex, FREE_ENTRY);</div>
 <div class="line"><a id="l00588" name="l00588"></a><span class="lineno">  588</span>}</div>
 <div class="line"><a id="l00589" name="l00589"></a><span class="lineno">  589</span> </div>
 <div class="line"><a id="l00590" name="l00590"></a><span class="lineno">  590</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> K, <span class="keyword">typename</span> H&gt;</div>
-<div class="line"><a id="l00591" name="l00591"></a><span class="lineno">  591</span>XII_FORCE_INLINE <span class="keywordtype">void</span> <a class="code hl_class" href="../../d6/daa/classxii_hash_set_base.html">xiiHashSetBase&lt;K, H&gt;::MarkEntryAsValid</a>(xiiUInt32 uiEntryIndex)</div>
+<div class="line"><a id="l00591" name="l00591"></a><span class="lineno">  591</span>XII_FORCE_INLINE <span class="keywordtype">void</span> <a class="code hl_function" href="../../d6/daa/classxii_hash_set_base.html#a3037d907dd327f0c5e77dc44f5859f40">xiiHashSetBase&lt;K, H&gt;::MarkEntryAsValid</a>(xiiUInt32 uiEntryIndex)</div>
 <div class="line"><a id="l00592" name="l00592"></a><span class="lineno">  592</span>{</div>
 <div class="line"><a id="l00593" name="l00593"></a><span class="lineno">  593</span>  SetFlags(uiEntryIndex, VALID_ENTRY);</div>
 <div class="line"><a id="l00594" name="l00594"></a><span class="lineno">  594</span>}</div>
 <div class="line"><a id="l00595" name="l00595"></a><span class="lineno">  595</span> </div>
 <div class="line"><a id="l00596" name="l00596"></a><span class="lineno">  596</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> K, <span class="keyword">typename</span> H&gt;</div>
-<div class="line"><a id="l00597" name="l00597"></a><span class="lineno">  597</span>XII_FORCE_INLINE <span class="keywordtype">void</span> <a class="code hl_class" href="../../d6/daa/classxii_hash_set_base.html">xiiHashSetBase&lt;K, H&gt;::MarkEntryAsDeleted</a>(xiiUInt32 uiEntryIndex)</div>
+<div class="line"><a id="l00597" name="l00597"></a><span class="lineno">  597</span>XII_FORCE_INLINE <span class="keywordtype">void</span> <a class="code hl_function" href="../../d6/daa/classxii_hash_set_base.html#a3037d907dd327f0c5e77dc44f5859f40">xiiHashSetBase&lt;K, H&gt;::MarkEntryAsDeleted</a>(xiiUInt32 uiEntryIndex)</div>
 <div class="line"><a id="l00598" name="l00598"></a><span class="lineno">  598</span>{</div>
 <div class="line"><a id="l00599" name="l00599"></a><span class="lineno">  599</span>  SetFlags(uiEntryIndex, DELETED_ENTRY);</div>
 <div class="line"><a id="l00600" name="l00600"></a><span class="lineno">  600</span>}</div>
 <div class="line"><a id="l00601" name="l00601"></a><span class="lineno">  601</span> </div>
 <div class="line"><a id="l00602" name="l00602"></a><span class="lineno">  602</span> </div>
 <div class="line"><a id="l00603" name="l00603"></a><span class="lineno">  603</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> K, <span class="keyword">typename</span> H, <span class="keyword">typename</span> A&gt;</div>
-<div class="line"><a id="l00604" name="l00604"></a><span class="lineno">  604</span><a class="code hl_class" href="../../d3/d8b/classxii_hash_set.html">xiiHashSet&lt;K, H, A&gt;::xiiHashSet</a>() :</div>
-<div class="line"><a id="l00605" name="l00605"></a><span class="lineno">  605</span>  <a class="code hl_class" href="../../d6/daa/classxii_hash_set_base.html">xiiHashSetBase</a>&lt;K, H&gt;(<a class="code hl_class" href="../../d8/d4f/class_a.html">A</a>::<a class="code hl_function" href="../../d6/daa/classxii_hash_set_base.html#a71c9869a77ce7108e9bcd1323f03d908">GetAllocator</a>())</div>
+<div class="line"><a id="l00604" name="l00604"></a><span class="lineno">  604</span>xiiHashSet&lt;K, H, A&gt;::xiiHashSet() :</div>
+<div class="line"><a id="l00605" name="l00605"></a><span class="lineno">  605</span>  <a class="code hl_function" href="../../d6/daa/classxii_hash_set_base.html#a3037d907dd327f0c5e77dc44f5859f40">xiiHashSetBase</a>&lt;K, H&gt;(A::<a class="code hl_function" href="../../d6/daa/classxii_hash_set_base.html#a71c9869a77ce7108e9bcd1323f03d908">GetAllocator</a>())</div>
 <div class="line"><a id="l00606" name="l00606"></a><span class="lineno">  606</span>{</div>
 <div class="line"><a id="l00607" name="l00607"></a><span class="lineno">  607</span>}</div>
 <div class="line"><a id="l00608" name="l00608"></a><span class="lineno">  608</span> </div>
 <div class="line"><a id="l00609" name="l00609"></a><span class="lineno">  609</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> K, <span class="keyword">typename</span> H, <span class="keyword">typename</span> A&gt;</div>
-<div class="line"><a id="l00610" name="l00610"></a><span class="lineno">  610</span><a class="code hl_class" href="../../d3/d8b/classxii_hash_set.html">xiiHashSet&lt;K, H, A&gt;::xiiHashSet</a>(<a class="code hl_class" href="../../d5/d66/classxii_allocator_base.html">xiiAllocatorBase</a>* pAllocator) :</div>
+<div class="line"><a id="l00610" name="l00610"></a><span class="lineno">  610</span>xiiHashSet&lt;K, H, A&gt;::xiiHashSet(<a class="code hl_class" href="../../d5/d66/classxii_allocator_base.html">xiiAllocatorBase</a>* pAllocator) :</div>
 <div class="line"><a id="l00611" name="l00611"></a><span class="lineno">  611</span>  <a class="code hl_class" href="../../d6/daa/classxii_hash_set_base.html">xiiHashSetBase</a>&lt;K, H&gt;(pAllocator)</div>
 <div class="line"><a id="l00612" name="l00612"></a><span class="lineno">  612</span>{</div>
 <div class="line"><a id="l00613" name="l00613"></a><span class="lineno">  613</span>}</div>
 <div class="line"><a id="l00614" name="l00614"></a><span class="lineno">  614</span> </div>
 <div class="line"><a id="l00615" name="l00615"></a><span class="lineno">  615</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> K, <span class="keyword">typename</span> H, <span class="keyword">typename</span> A&gt;</div>
-<div class="line"><a id="l00616" name="l00616"></a><span class="lineno">  616</span><a class="code hl_class" href="../../d3/d8b/classxii_hash_set.html">xiiHashSet&lt;K, H, A&gt;::xiiHashSet</a>(<span class="keyword">const</span> <a class="code hl_class" href="../../d3/d8b/classxii_hash_set.html">xiiHashSet&lt;K, H, A&gt;</a>&amp; other) :</div>
-<div class="line"><a id="l00617" name="l00617"></a><span class="lineno">  617</span>  <a class="code hl_class" href="../../d6/daa/classxii_hash_set_base.html">xiiHashSetBase</a>&lt;K, H&gt;(other, <a class="code hl_class" href="../../d8/d4f/class_a.html">A</a>::GetAllocator())</div>
+<div class="line"><a id="l00616" name="l00616"></a><span class="lineno">  616</span>xiiHashSet&lt;K, H, A&gt;::xiiHashSet(<span class="keyword">const</span> <a class="code hl_class" href="../../d3/d8b/classxii_hash_set.html">xiiHashSet&lt;K, H, A&gt;</a>&amp; other) :</div>
+<div class="line"><a id="l00617" name="l00617"></a><span class="lineno">  617</span>  <a class="code hl_class" href="../../d6/daa/classxii_hash_set_base.html">xiiHashSetBase</a>&lt;K, H&gt;(other, A::GetAllocator())</div>
 <div class="line"><a id="l00618" name="l00618"></a><span class="lineno">  618</span>{</div>
 <div class="line"><a id="l00619" name="l00619"></a><span class="lineno">  619</span>}</div>
 <div class="line"><a id="l00620" name="l00620"></a><span class="lineno">  620</span> </div>
 <div class="line"><a id="l00621" name="l00621"></a><span class="lineno">  621</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> K, <span class="keyword">typename</span> H, <span class="keyword">typename</span> A&gt;</div>
-<div class="line"><a id="l00622" name="l00622"></a><span class="lineno">  622</span><a class="code hl_class" href="../../d3/d8b/classxii_hash_set.html">xiiHashSet&lt;K, H, A&gt;::xiiHashSet</a>(<span class="keyword">const</span> <a class="code hl_class" href="../../d6/daa/classxii_hash_set_base.html">xiiHashSetBase&lt;K, H&gt;</a>&amp; other) :</div>
-<div class="line"><a id="l00623" name="l00623"></a><span class="lineno">  623</span>  <a class="code hl_class" href="../../d6/daa/classxii_hash_set_base.html">xiiHashSetBase</a>&lt;K, H&gt;(other, <a class="code hl_class" href="../../d8/d4f/class_a.html">A</a>::GetAllocator())</div>
+<div class="line"><a id="l00622" name="l00622"></a><span class="lineno">  622</span>xiiHashSet&lt;K, H, A&gt;::xiiHashSet(<span class="keyword">const</span> <a class="code hl_class" href="../../d6/daa/classxii_hash_set_base.html">xiiHashSetBase&lt;K, H&gt;</a>&amp; other) :</div>
+<div class="line"><a id="l00623" name="l00623"></a><span class="lineno">  623</span>  <a class="code hl_class" href="../../d6/daa/classxii_hash_set_base.html">xiiHashSetBase</a>&lt;K, H&gt;(other, A::GetAllocator())</div>
 <div class="line"><a id="l00624" name="l00624"></a><span class="lineno">  624</span>{</div>
 <div class="line"><a id="l00625" name="l00625"></a><span class="lineno">  625</span>}</div>
 <div class="line"><a id="l00626" name="l00626"></a><span class="lineno">  626</span> </div>
 <div class="line"><a id="l00627" name="l00627"></a><span class="lineno">  627</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> K, <span class="keyword">typename</span> H, <span class="keyword">typename</span> A&gt;</div>
-<div class="line"><a id="l00628" name="l00628"></a><span class="lineno">  628</span><a class="code hl_class" href="../../d3/d8b/classxii_hash_set.html">xiiHashSet&lt;K, H, A&gt;::xiiHashSet</a>(<a class="code hl_class" href="../../d3/d8b/classxii_hash_set.html">xiiHashSet&lt;K, H, A&gt;</a>&amp;&amp; other) :</div>
+<div class="line"><a id="l00628" name="l00628"></a><span class="lineno">  628</span>xiiHashSet&lt;K, H, A&gt;::xiiHashSet(<a class="code hl_class" href="../../d3/d8b/classxii_hash_set.html">xiiHashSet&lt;K, H, A&gt;</a>&amp;&amp; other) :</div>
 <div class="line"><a id="l00629" name="l00629"></a><span class="lineno">  629</span>  <a class="code hl_class" href="../../d6/daa/classxii_hash_set_base.html">xiiHashSetBase</a>&lt;K, H&gt;(std::move(other), other.GetAllocator())</div>
 <div class="line"><a id="l00630" name="l00630"></a><span class="lineno">  630</span>{</div>
 <div class="line"><a id="l00631" name="l00631"></a><span class="lineno">  631</span>}</div>
 <div class="line"><a id="l00632" name="l00632"></a><span class="lineno">  632</span> </div>
 <div class="line"><a id="l00633" name="l00633"></a><span class="lineno">  633</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> K, <span class="keyword">typename</span> H, <span class="keyword">typename</span> A&gt;</div>
-<div class="line"><a id="l00634" name="l00634"></a><span class="lineno">  634</span><a class="code hl_class" href="../../d3/d8b/classxii_hash_set.html">xiiHashSet&lt;K, H, A&gt;::xiiHashSet</a>(<a class="code hl_class" href="../../d6/daa/classxii_hash_set_base.html">xiiHashSetBase&lt;K, H&gt;</a>&amp;&amp; other) :</div>
+<div class="line"><a id="l00634" name="l00634"></a><span class="lineno">  634</span>xiiHashSet&lt;K, H, A&gt;::xiiHashSet(<a class="code hl_class" href="../../d6/daa/classxii_hash_set_base.html">xiiHashSetBase&lt;K, H&gt;</a>&amp;&amp; other) :</div>
 <div class="line"><a id="l00635" name="l00635"></a><span class="lineno">  635</span>  <a class="code hl_class" href="../../d6/daa/classxii_hash_set_base.html">xiiHashSetBase</a>&lt;K, H&gt;(std::move(other), other.GetAllocator())</div>
 <div class="line"><a id="l00636" name="l00636"></a><span class="lineno">  636</span>{</div>
 <div class="line"><a id="l00637" name="l00637"></a><span class="lineno">  637</span>}</div>
 <div class="line"><a id="l00638" name="l00638"></a><span class="lineno">  638</span> </div>
 <div class="line"><a id="l00639" name="l00639"></a><span class="lineno">  639</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> K, <span class="keyword">typename</span> H, <span class="keyword">typename</span> A&gt;</div>
-<div class="line"><a id="l00640" name="l00640"></a><span class="lineno">  640</span><span class="keywordtype">void</span> <a class="code hl_class" href="../../d3/d8b/classxii_hash_set.html">xiiHashSet&lt;K, H, A&gt;::operator=</a>(<span class="keyword">const</span> <a class="code hl_class" href="../../d3/d8b/classxii_hash_set.html">xiiHashSet&lt;K, H, A&gt;</a>&amp; rhs)</div>
+<div class="line"><a id="l00640" name="l00640"></a><span class="lineno">  640</span><span class="keywordtype">void</span> xiiHashSet&lt;K, H, A&gt;::operator=(<span class="keyword">const</span> <a class="code hl_class" href="../../d3/d8b/classxii_hash_set.html">xiiHashSet&lt;K, H, A&gt;</a>&amp; rhs)</div>
 <div class="line"><a id="l00641" name="l00641"></a><span class="lineno">  641</span>{</div>
 <div class="line"><a id="l00642" name="l00642"></a><span class="lineno">  642</span>  <a class="code hl_function" href="../../d6/daa/classxii_hash_set_base.html#ad8206b6001ceb19fe78ba0363b9d0a8b">xiiHashSetBase&lt;K, H&gt;::operator=</a>(rhs);</div>
 <div class="line"><a id="l00643" name="l00643"></a><span class="lineno">  643</span>}</div>
 <div class="line"><a id="l00644" name="l00644"></a><span class="lineno">  644</span> </div>
 <div class="line"><a id="l00645" name="l00645"></a><span class="lineno">  645</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> K, <span class="keyword">typename</span> H, <span class="keyword">typename</span> A&gt;</div>
-<div class="line"><a id="l00646" name="l00646"></a><span class="lineno">  646</span><span class="keywordtype">void</span> <a class="code hl_class" href="../../d3/d8b/classxii_hash_set.html">xiiHashSet&lt;K, H, A&gt;::operator=</a>(<span class="keyword">const</span> <a class="code hl_class" href="../../d6/daa/classxii_hash_set_base.html">xiiHashSetBase&lt;K, H&gt;</a>&amp; rhs)</div>
+<div class="line"><a id="l00646" name="l00646"></a><span class="lineno">  646</span><span class="keywordtype">void</span> xiiHashSet&lt;K, H, A&gt;::operator=(<span class="keyword">const</span> <a class="code hl_class" href="../../d6/daa/classxii_hash_set_base.html">xiiHashSetBase&lt;K, H&gt;</a>&amp; rhs)</div>
 <div class="line"><a id="l00647" name="l00647"></a><span class="lineno">  647</span>{</div>
 <div class="line"><a id="l00648" name="l00648"></a><span class="lineno">  648</span>  <a class="code hl_function" href="../../d6/daa/classxii_hash_set_base.html#ad8206b6001ceb19fe78ba0363b9d0a8b">xiiHashSetBase&lt;K, H&gt;::operator=</a>(rhs);</div>
 <div class="line"><a id="l00649" name="l00649"></a><span class="lineno">  649</span>}</div>
 <div class="line"><a id="l00650" name="l00650"></a><span class="lineno">  650</span> </div>
 <div class="line"><a id="l00651" name="l00651"></a><span class="lineno">  651</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> K, <span class="keyword">typename</span> H, <span class="keyword">typename</span> A&gt;</div>
-<div class="line"><a id="l00652" name="l00652"></a><span class="lineno">  652</span><span class="keywordtype">void</span> <a class="code hl_class" href="../../d3/d8b/classxii_hash_set.html">xiiHashSet&lt;K, H, A&gt;::operator=</a>(<a class="code hl_class" href="../../d3/d8b/classxii_hash_set.html">xiiHashSet&lt;K, H, A&gt;</a>&amp;&amp; rhs)</div>
+<div class="line"><a id="l00652" name="l00652"></a><span class="lineno">  652</span><span class="keywordtype">void</span> xiiHashSet&lt;K, H, A&gt;::operator=(<a class="code hl_class" href="../../d3/d8b/classxii_hash_set.html">xiiHashSet&lt;K, H, A&gt;</a>&amp;&amp; rhs)</div>
 <div class="line"><a id="l00653" name="l00653"></a><span class="lineno">  653</span>{</div>
 <div class="line"><a id="l00654" name="l00654"></a><span class="lineno">  654</span>  <a class="code hl_function" href="../../d6/daa/classxii_hash_set_base.html#ad8206b6001ceb19fe78ba0363b9d0a8b">xiiHashSetBase&lt;K, H&gt;::operator=</a>(std::move(rhs));</div>
 <div class="line"><a id="l00655" name="l00655"></a><span class="lineno">  655</span>}</div>
 <div class="line"><a id="l00656" name="l00656"></a><span class="lineno">  656</span> </div>
 <div class="line"><a id="l00657" name="l00657"></a><span class="lineno">  657</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> K, <span class="keyword">typename</span> H, <span class="keyword">typename</span> A&gt;</div>
-<div class="line"><a id="l00658" name="l00658"></a><span class="lineno">  658</span><span class="keywordtype">void</span> <a class="code hl_class" href="../../d3/d8b/classxii_hash_set.html">xiiHashSet&lt;K, H, A&gt;::operator=</a>(<a class="code hl_class" href="../../d6/daa/classxii_hash_set_base.html">xiiHashSetBase&lt;K, H&gt;</a>&amp;&amp; rhs)</div>
+<div class="line"><a id="l00658" name="l00658"></a><span class="lineno">  658</span><span class="keywordtype">void</span> xiiHashSet&lt;K, H, A&gt;::operator=(<a class="code hl_class" href="../../d6/daa/classxii_hash_set_base.html">xiiHashSetBase&lt;K, H&gt;</a>&amp;&amp; rhs)</div>
 <div class="line"><a id="l00659" name="l00659"></a><span class="lineno">  659</span>{</div>
 <div class="line"><a id="l00660" name="l00660"></a><span class="lineno">  660</span>  <a class="code hl_function" href="../../d6/daa/classxii_hash_set_base.html#ad8206b6001ceb19fe78ba0363b9d0a8b">xiiHashSetBase&lt;K, H&gt;::operator=</a>(std::move(rhs));</div>
 <div class="line"><a id="l00661" name="l00661"></a><span class="lineno">  661</span>}</div>
 <div class="line"><a id="l00662" name="l00662"></a><span class="lineno">  662</span> </div>
 <div class="line"><a id="l00663" name="l00663"></a><span class="lineno">  663</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> KeyType, <span class="keyword">typename</span> Hasher&gt;</div>
 <div class="foldopen" id="foldopen00664" data-start="{" data-end="}">
-<div class="line"><a id="l00664" name="l00664"></a><span class="lineno"><a class="line" href="../../d6/daa/classxii_hash_set_base.html#a5f64f55e41157082e0929f418cbac836">  664</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="../../d6/daa/classxii_hash_set_base.html#a5f64f55e41157082e0929f418cbac836">xiiHashSetBase&lt;KeyType, Hasher&gt;::Swap</a>(<a class="code hl_class" href="../../d6/daa/classxii_hash_set_base.html">xiiHashSetBase&lt;KeyType, Hasher&gt;</a>&amp; other)</div>
+<div class="line"><a id="l00664" name="l00664"></a><span class="lineno"><a class="line" href="../../d6/daa/classxii_hash_set_base.html#a5f64f55e41157082e0929f418cbac836">  664</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="../../d6/daa/classxii_hash_set_base.html#a5f64f55e41157082e0929f418cbac836">xiiHashSetBase&lt;KeyType, Hasher&gt;::Swap</a>(<a class="code hl_function" href="../../d6/daa/classxii_hash_set_base.html#a3037d907dd327f0c5e77dc44f5859f40">xiiHashSetBase&lt;KeyType, Hasher&gt;</a>&amp; other)</div>
 <div class="line"><a id="l00665" name="l00665"></a><span class="lineno">  665</span>{</div>
 <div class="line"><a id="l00666" name="l00666"></a><span class="lineno">  666</span>  <a class="code hl_function" href="../../d1/d37/namespacexii_math.html#a2e7c389d4195d010ba0c207a1e981a58">xiiMath::Swap</a>(this-&gt;m_pEntries, other.m_pEntries);</div>
 <div class="line"><a id="l00667" name="l00667"></a><span class="lineno">  667</span>  <a class="code hl_function" href="../../d1/d37/namespacexii_math.html#a2e7c389d4195d010ba0c207a1e981a58">xiiMath::Swap</a>(this-&gt;m_pEntryFlags, other.m_pEntryFlags);</div>
@@ -896,11 +866,10 @@ $(function(){initNavTree('df/dbb/_hash_set__inl_8h_source.html','../../'); initR
 </div>
 </div>
 </div>
-<div class="ttc" id="aclass_a_html"><div class="ttname"><a href="../../d8/d4f/class_a.html">A</a></div><div class="ttdef"><b>Definition</b> diagrams_a.h:3</div></div>
 <div class="ttc" id="aclassxii_allocator_base_html"><div class="ttname"><a href="../../d5/d66/classxii_allocator_base.html">xiiAllocatorBase</a></div><div class="ttdoc">Base class for all memory allocators.</div><div class="ttdef"><b>Definition</b> AllocatorBase.h:22</div></div>
 <div class="ttc" id="aclassxii_hash_set_base_1_1_const_iterator_html"><div class="ttname"><a href="../../d1/dde/classxii_hash_set_base_1_1_const_iterator.html">xiiHashSetBase::ConstIterator</a></div><div class="ttdoc">Const iterator.</div><div class="ttdef"><b>Definition</b> HashSet.h:23</div></div>
-<div class="ttc" id="aclassxii_hash_set_base_1_1_const_iterator_html_a1c4ff6b0662b89d0c1f0d68b04f88b3d"><div class="ttname"><a href="../../d1/dde/classxii_hash_set_base_1_1_const_iterator.html#a1c4ff6b0662b89d0c1f0d68b04f88b3d">xiiHashSetBase::ConstIterator::Key</a></div><div class="ttdeci">const KeyType &amp; Key() const</div><div class="ttdoc">Returns the 'key' of the element that this iterator points to.</div><div class="ttdef"><b>Definition</b> HashSet_inl.h:49</div></div>
-<div class="ttc" id="aclassxii_hash_set_base_1_1_const_iterator_html_a754721e041bf031591d1342d352e8404"><div class="ttname"><a href="../../d1/dde/classxii_hash_set_base_1_1_const_iterator.html#a754721e041bf031591d1342d352e8404">xiiHashSetBase::ConstIterator::operator++</a></div><div class="ttdeci">void operator++()</div><div class="ttdoc">Shorthand for 'Next'.</div><div class="ttdef"><b>Definition</b> HashSet_inl.h:75</div></div>
+<div class="ttc" id="aclassxii_hash_set_base_1_1_const_iterator_html_a1c4ff6b0662b89d0c1f0d68b04f88b3d"><div class="ttname"><a href="../../d1/dde/classxii_hash_set_base_1_1_const_iterator.html#a1c4ff6b0662b89d0c1f0d68b04f88b3d">xiiHashSetBase::ConstIterator::Key</a></div><div class="ttdeci">const KeyType &amp; Key() const</div><div class="ttdoc">Returns the &#39;key&#39; of the element that this iterator points to.</div><div class="ttdef"><b>Definition</b> HashSet_inl.h:49</div></div>
+<div class="ttc" id="aclassxii_hash_set_base_1_1_const_iterator_html_a754721e041bf031591d1342d352e8404"><div class="ttname"><a href="../../d1/dde/classxii_hash_set_base_1_1_const_iterator.html#a754721e041bf031591d1342d352e8404">xiiHashSetBase::ConstIterator::operator++</a></div><div class="ttdeci">void operator++()</div><div class="ttdoc">Shorthand for &#39;Next&#39;.</div><div class="ttdef"><b>Definition</b> HashSet_inl.h:75</div></div>
 <div class="ttc" id="aclassxii_hash_set_base_1_1_const_iterator_html_adbf3ba379c3d84d48b3f71998b0cc263"><div class="ttname"><a href="../../d1/dde/classxii_hash_set_base_1_1_const_iterator.html#adbf3ba379c3d84d48b3f71998b0cc263">xiiHashSetBase::ConstIterator::IsValid</a></div><div class="ttdeci">bool IsValid() const</div><div class="ttdoc">Checks whether this iterator points to a valid element.</div><div class="ttdef"><b>Definition</b> HashSet_inl.h:37</div></div>
 <div class="ttc" id="aclassxii_hash_set_base_1_1_const_iterator_html_aefc863f928dced20eb6bcdb858c886dc"><div class="ttname"><a href="../../d1/dde/classxii_hash_set_base_1_1_const_iterator.html#aefc863f928dced20eb6bcdb858c886dc">xiiHashSetBase::ConstIterator::Next</a></div><div class="ttdeci">void Next()</div><div class="ttdoc">Advances the iterator to the next element in the map. The iterator will not be valid anymore,...</div><div class="ttdef"><b>Definition</b> HashSet_inl.h:55</div></div>
 <div class="ttc" id="aclassxii_hash_set_base_1_1_const_iterator_html_af12e5d1836310d01b85745a98b99149e"><div class="ttname"><a href="../../d1/dde/classxii_hash_set_base_1_1_const_iterator.html#af12e5d1836310d01b85745a98b99149e">xiiHashSetBase::ConstIterator::operator==</a></div><div class="ttdeci">bool operator==(const typename xiiHashSetBase&lt; KeyType, Hasher &gt;::ConstIterator &amp;rhs) const</div><div class="ttdoc">Checks whether the two iterators point to the same element.</div><div class="ttdef"><b>Definition</b> HashSet_inl.h:43</div></div>
@@ -928,6 +897,7 @@ $(function(){initNavTree('df/dbb/_hash_set__inl_8h_source.html','../../'); initR
 <div class="ttc" id="aclassxii_hash_set_base_html_af6fe5dbbef451a631f5fa7244a47cb49"><div class="ttname"><a href="../../d6/daa/classxii_hash_set_base.html#af6fe5dbbef451a631f5fa7244a47cb49">xiiHashSetBase::Insert</a></div><div class="ttdeci">bool Insert(CompatibleKeyType &amp;&amp;key)</div><div class="ttdoc">Inserts the key. Returns whether the key was already existing.</div><div class="ttdef"><b>Definition</b> HashSet_inl.h:270</div></div>
 <div class="ttc" id="aclassxii_hash_set_base_html_afcf3028a0d851a1e5d349b7df1439d8b"><div class="ttname"><a href="../../d6/daa/classxii_hash_set_base.html#afcf3028a0d851a1e5d349b7df1439d8b">xiiHashSetBase::operator==</a></div><div class="ttdeci">bool operator==(const xiiHashSetBase&lt; KeyType, Hasher &gt; &amp;rhs) const</div><div class="ttdoc">Compares this table to another table.</div><div class="ttdef"><b>Definition</b> HashSet_inl.h:185</div></div>
 <div class="ttc" id="aclassxii_hash_set_html"><div class="ttname"><a href="../../d3/d8b/classxii_hash_set.html">xiiHashSet</a></div><div class="ttdef"><b>Definition</b> HashSet.h:188</div></div>
+<div class="ttc" id="aclassxii_map_html"><div class="ttname"><a href="../../d6/df7/classxii_map.html">ConstIterator</a></div></div>
 <div class="ttc" id="aclassxii_memory_utils_html_a6c8728654ad1b5c0c9dcbb597a93594d"><div class="ttname"><a href="../../d8/d9d/classxii_memory_utils.html#a6c8728654ad1b5c0c9dcbb597a93594d">xiiMemoryUtils::Destruct</a></div><div class="ttdeci">static void Destruct(T *pDestination, size_t uiCount=1)</div><div class="ttdoc">Destructs uiCount objects of type T at pDestination.</div></div>
 <div class="ttc" id="aclassxii_memory_utils_html_a86dc640bd82c5855ecbace5d95b1549e"><div class="ttname"><a href="../../d8/d9d/classxii_memory_utils.html#a86dc640bd82c5855ecbace5d95b1549e">xiiMemoryUtils::CopyOrMoveConstruct</a></div><div class="ttdeci">static void CopyOrMoveConstruct(Destination *pDestination, Source &amp;&amp;source)</div><div class="ttdoc">This function will either move call MoveConstruct or CopyConstruct for a single element source,...</div></div>
 <div class="ttc" id="aclassxii_memory_utils_html_aa46340f1eaae0121ec1bcb712ea2755f"><div class="ttname"><a href="../../d8/d9d/classxii_memory_utils.html#aa46340f1eaae0121ec1bcb712ea2755f">xiiMemoryUtils::ZeroFill</a></div><div class="ttdeci">static void ZeroFill(T *pDestination, size_t uiCount=1)</div><div class="ttdoc">Zeros every byte in the provided memory buffer.</div></div>
@@ -942,7 +912,7 @@ $(function(){initNavTree('df/dbb/_hash_set__inl_8h_source.html','../../'); initR
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.html">home</a></li><li class="navelem"><a class="el" href="../../dir_1036706e55c22cab35bc1c58ee689f1d.html">runner</a></li><li class="navelem"><a class="el" href="../../dir_629f8151d55d307162ff2d619fb1783d.html">work</a></li><li class="navelem"><a class="el" href="../../dir_1ddc44fe1263a8c7935fa6130b7d9499.html">XII</a></li><li class="navelem"><a class="el" href="../../dir_2c1b6808f12952f4c36e05ba7068379a.html">XII</a></li><li class="navelem"><a class="el" href="../../dir_b5a1c4ecfca018ad24b729e213296d41.html">Source</a></li><li class="navelem"><a class="el" href="../../dir_e321052006a51284e67389ab20037e7c.html">Engine</a></li><li class="navelem"><a class="el" href="../../dir_be0c42c58b36f42c54ec54024ed4f6af.html">Foundation</a></li><li class="navelem"><a class="el" href="../../dir_7f59ab18dbc50035dfc0ee7070867286.html">Containers</a></li><li class="navelem"><a class="el" href="../../dir_acc055bf9d45372e5f916366fab93514.html">Implementation</a></li><li class="navelem"><b>HashSet_inl.h</b></li>
-    <li class="footer">Generated on Fri Mar 21 2025 22:42:00 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
+    <li class="footer">Generated on Fri Mar 21 2025 23:27:39 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 </body>

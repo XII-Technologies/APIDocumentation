@@ -1,39 +1,15 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<meta name="generator" content="Doxygen 1.12.0"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.13.2"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<!-- BEGIN opengraph metadata -->
-<meta property="og:title" content="XII" />
-<meta property="og:image" content="XII-Logo.png" />
-<meta property="og:description" content="An advanced high-performance simulation engine." />
-<meta property="og:url" content="https://www.xiitechnologies.com" />
-<!-- END opengraph metadata -->
-<!-- BEGIN twitter metadata -->
-<meta name="twitter:image:src" content="XII-Logo.png" />
-<meta name="twitter:title" content="XII" />
-<meta name="twitter:description" content="An advanced high-performance simulation engine." />
-<!-- END twitter metadata -->
 <title>XII: /home/runner/work/XII/XII/Source/Engine/Core/World/Implementation/World_inl.h Source File</title>
+<link rel="icon" href="../../XII-Logo.png" type="image/x-icon" />
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
-<link rel="icon" type="image/svg+xml" href="XII-Logo.png"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
-<script type="text/javascript" src="../../doxygen-awesome-darkmode-toggle.js"></script>
-<script type="text/javascript" src="../../doxygen-awesome-fragment-copy-button.js"></script>
-<script type="text/javascript" src="../../doxygen-awesome-paragraph-link.js"></script>
-<script type="text/javascript" src="../../doxygen-awesome-interactive-toc.js"></script>
-<script type="text/javascript" src="../../doxygen-awesome-tabs.js"></script>
-<script type="text/javascript" src="../../toggle-alternative-theme.js"></script>
-<script type="text/javascript">
-    DoxygenAwesomeFragmentCopyButton.init()
-    DoxygenAwesomeDarkModeToggle.init()
-    DoxygenAwesomeParagraphLink.init()
-    DoxygenAwesomeInteractiveToc.init()
-    DoxygenAwesomeTabs.init()
-</script>
 <link href="../../navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../navtreedata.js"></script>
 <script type="text/javascript" src="../../navtree.js"></script>
@@ -45,28 +21,22 @@
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-<!-- https://tholman.com/github-corners/ -->
-<a href="https://github.com/XII-Technologies/APIDocumentation" class="github-corner" title="View source on GitHub" target="_blank" rel="noopener noreferrer">
-    <svg viewBox="0 0 250 250" width="40" height="40" style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
-    <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
  <tbody>
- <tr style="height: 56px;">
+ <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="../../XII-Logo.png"/></td>
-  <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">XII
-   &#160;<span id="projectnumber">1.0.0</span>
+  <td id="projectalign">
+   <div id="projectname">XII<span id="projectnumber">&#160;Release 0.1.0</span>
    </div>
-   <div id="projectbrief">A high-performance simulation engine.</div>
   </td>
  </tr>
  </tbody>
 </table>
 </div>
 <!-- end header part -->
-<!-- Generated by Doxygen 1.12.0 -->
+<!-- Generated by Doxygen 1.13.2 -->
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
 var searchBox = new SearchBox("searchBox", "../../search/",'.html');
@@ -148,7 +118,7 @@ $(function(){initNavTree('dc/d38/_world__inl_8h_source.html','../../'); initResi
 <div class="foldopen" id="foldopen00012" data-start="{" data-end="}">
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="../../d6/d89/classxii_world.html#ac1ad5ba372c5eaf29a38e8316e193ce3">   12</a></span>XII_FORCE_INLINE <a class="code hl_struct" href="../../da/d2c/structxii_game_object_handle.html">xiiGameObjectHandle</a> <a class="code hl_function" href="../../d6/d89/classxii_world.html#ac1ad5ba372c5eaf29a38e8316e193ce3">xiiWorld::CreateObject</a>(<span class="keyword">const</span> <a class="code hl_struct" href="../../dd/d15/structxii_game_object_desc.html">xiiGameObjectDesc</a>&amp; desc)</div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>{</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>  <a class="code hl_class" href="../../d0/d91/classxii_game_object.html">xiiGameObject</a>* pNewObject;</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>  xiiGameObject* pNewObject;</div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>  <span class="keywordflow">return</span> <a class="code hl_function" href="../../d6/d89/classxii_world.html#ac1ad5ba372c5eaf29a38e8316e193ce3">CreateObject</a>(desc, pNewObject);</div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>}</div>
 </div>
@@ -166,39 +136,39 @@ $(function(){initNavTree('dc/d38/_world__inl_8h_source.html','../../'); initResi
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>  CheckForReadAccess();</div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>  XII_ASSERT_DEV(hObject.IsInvalidated() || hObject.m_InternalId.m_WorldIndex == m_uiIndex, <span class="stringliteral">&quot;Object does not belong to this world. Expected world id {0} got id {1}&quot;</span>, m_uiIndex, hObject.m_InternalId.m_WorldIndex);</div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>  <span class="keywordflow">return</span> m_Data.m_Objects.<a class="code hl_function" href="../../d3/df7/classxii_id_table_base.html#ab335e73479fc6d2800af53627b93e6a1">Contains</a>(hObject);</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>  <span class="keywordflow">return</span> m_Data.m_Objects.Contains(hObject);</div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>}</div>
 </div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
 <div class="foldopen" id="foldopen00031" data-start="{" data-end="}">
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="../../d6/d89/classxii_world.html#af20f28a4321230cf0eeacbe9add859d7">   31</a></span>XII_FORCE_INLINE <span class="keywordtype">bool</span> <a class="code hl_function" href="../../d6/d89/classxii_world.html#af20f28a4321230cf0eeacbe9add859d7">xiiWorld::TryGetObject</a>(<span class="keyword">const</span> <a class="code hl_struct" href="../../da/d2c/structxii_game_object_handle.html">xiiGameObjectHandle</a>&amp; hObject, <a class="code hl_class" href="../../d0/d91/classxii_game_object.html">xiiGameObject</a>*&amp; out_pObject)</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="../../d6/d89/classxii_world.html#af20f28a4321230cf0eeacbe9add859d7">   31</a></span>XII_FORCE_INLINE <span class="keywordtype">bool</span> <a class="code hl_function" href="../../d6/d89/classxii_world.html#af20f28a4321230cf0eeacbe9add859d7">xiiWorld::TryGetObject</a>(<span class="keyword">const</span> <a class="code hl_struct" href="../../da/d2c/structxii_game_object_handle.html">xiiGameObjectHandle</a>&amp; hObject, xiiGameObject*&amp; out_pObject)</div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>{</div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>  CheckForReadAccess();</div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>  XII_ASSERT_DEV(hObject.IsInvalidated() || hObject.m_InternalId.m_WorldIndex == m_uiIndex, <span class="stringliteral">&quot;Object does not belong to this world. Expected world id {0} got id {1}&quot;</span>, m_uiIndex, hObject.m_InternalId.m_WorldIndex);</div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>  <span class="keywordflow">return</span> m_Data.m_Objects.<a class="code hl_function" href="../../d3/df7/classxii_id_table_base.html#aa1a09c6eed7767f470cfaf9479e1c911">TryGetValue</a>(hObject, out_pObject);</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>  <span class="keywordflow">return</span> m_Data.m_Objects.TryGetValue(hObject, out_pObject);</div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>}</div>
 </div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
 <div class="foldopen" id="foldopen00039" data-start="{" data-end="}">
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="../../d6/d89/classxii_world.html#a50f41837276a898b0f649f8122adf2be">   39</a></span>XII_FORCE_INLINE <span class="keywordtype">bool</span> <a class="code hl_function" href="../../d6/d89/classxii_world.html#af20f28a4321230cf0eeacbe9add859d7">xiiWorld::TryGetObject</a>(<span class="keyword">const</span> <a class="code hl_struct" href="../../da/d2c/structxii_game_object_handle.html">xiiGameObjectHandle</a>&amp; hObject, <span class="keyword">const</span> <a class="code hl_class" href="../../d0/d91/classxii_game_object.html">xiiGameObject</a>*&amp; out_pObject)<span class="keyword"> const</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="../../d6/d89/classxii_world.html#a50f41837276a898b0f649f8122adf2be">   39</a></span>XII_FORCE_INLINE <span class="keywordtype">bool</span> <a class="code hl_function" href="../../d6/d89/classxii_world.html#af20f28a4321230cf0eeacbe9add859d7">xiiWorld::TryGetObject</a>(<span class="keyword">const</span> <a class="code hl_struct" href="../../da/d2c/structxii_game_object_handle.html">xiiGameObjectHandle</a>&amp; hObject, <span class="keyword">const</span> xiiGameObject*&amp; out_pObject)<span class="keyword"> const</span></div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="keyword"></span>{</div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>  CheckForReadAccess();</div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>  XII_ASSERT_DEV(hObject.IsInvalidated() || hObject.m_InternalId.m_WorldIndex == m_uiIndex, <span class="stringliteral">&quot;Object does not belong to this world. Expected world id {0} got id {1}&quot;</span>, m_uiIndex, hObject.m_InternalId.m_WorldIndex);</div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>  <a class="code hl_class" href="../../d0/d91/classxii_game_object.html">xiiGameObject</a>* pObject = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>  <span class="keywordtype">bool</span>           bResult = m_Data.m_Objects.<a class="code hl_function" href="../../d3/df7/classxii_id_table_base.html#aa1a09c6eed7767f470cfaf9479e1c911">TryGetValue</a>(hObject, pObject);</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>  xiiGameObject* pObject = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>  <span class="keywordtype">bool</span>           bResult = m_Data.m_Objects.TryGetValue(hObject, pObject);</div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>  out_pObject            = pObject;</div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>  <span class="keywordflow">return</span> bResult;</div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>}</div>
 </div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
 <div class="foldopen" id="foldopen00050" data-start="{" data-end="}">
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="../../d6/d89/classxii_world.html#ab574b8804887cbc40aab9b276e377b82">   50</a></span>XII_FORCE_INLINE <span class="keywordtype">bool</span> <a class="code hl_function" href="../../d6/d89/classxii_world.html#ab574b8804887cbc40aab9b276e377b82">xiiWorld::TryGetObjectWithGlobalKey</a>(<span class="keyword">const</span> <a class="code hl_class" href="../../d5/dd2/classxii_temp_hashed_string.html">xiiTempHashedString</a>&amp; sGlobalKey, <a class="code hl_class" href="../../d0/d91/classxii_game_object.html">xiiGameObject</a>*&amp; out_pObject)</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="../../d6/d89/classxii_world.html#ab574b8804887cbc40aab9b276e377b82">   50</a></span>XII_FORCE_INLINE <span class="keywordtype">bool</span> <a class="code hl_function" href="../../d6/d89/classxii_world.html#ab574b8804887cbc40aab9b276e377b82">xiiWorld::TryGetObjectWithGlobalKey</a>(<span class="keyword">const</span> <a class="code hl_class" href="../../d5/dd2/classxii_temp_hashed_string.html">xiiTempHashedString</a>&amp; sGlobalKey, xiiGameObject*&amp; out_pObject)</div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>{</div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>  CheckForReadAccess();</div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>  <a class="code hl_struct" href="../../d7/d42/structxii_game_object_id.html">xiiGameObjectId</a> id;</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>  <span class="keywordflow">if</span> (m_Data.m_GlobalKeyToIdTable.<a class="code hl_function" href="../../d0/da6/classxii_hash_table_base.html#a1bb2c25791102db37be680622f5402af">TryGetValue</a>(sGlobalKey.<a class="code hl_function" href="../../d5/dd2/classxii_temp_hashed_string.html#ab38187a2e9906242cbd4b8c07e76ae1e">GetHash</a>(), <span class="keywordtype">id</span>))</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>  <span class="keywordflow">if</span> (m_Data.m_GlobalKeyToIdTable.TryGetValue(sGlobalKey.<a class="code hl_function" href="../../d5/dd2/classxii_temp_hashed_string.html#ab38187a2e9906242cbd4b8c07e76ae1e">GetHash</a>(), <span class="keywordtype">id</span>))</div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>  {</div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    out_pObject = m_Data.m_Objects[id];</div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
@@ -209,11 +179,11 @@ $(function(){initNavTree('dc/d38/_world__inl_8h_source.html','../../'); initResi
 </div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
 <div class="foldopen" id="foldopen00063" data-start="{" data-end="}">
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="../../d6/d89/classxii_world.html#a8f73cae5d000371744aa9bc0f9d399d4">   63</a></span>XII_FORCE_INLINE <span class="keywordtype">bool</span> <a class="code hl_function" href="../../d6/d89/classxii_world.html#ab574b8804887cbc40aab9b276e377b82">xiiWorld::TryGetObjectWithGlobalKey</a>(<span class="keyword">const</span> <a class="code hl_class" href="../../d5/dd2/classxii_temp_hashed_string.html">xiiTempHashedString</a>&amp; sGlobalKey, <span class="keyword">const</span> <a class="code hl_class" href="../../d0/d91/classxii_game_object.html">xiiGameObject</a>*&amp; out_pObject)<span class="keyword"> const</span></div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="../../d6/d89/classxii_world.html#a8f73cae5d000371744aa9bc0f9d399d4">   63</a></span>XII_FORCE_INLINE <span class="keywordtype">bool</span> <a class="code hl_function" href="../../d6/d89/classxii_world.html#ab574b8804887cbc40aab9b276e377b82">xiiWorld::TryGetObjectWithGlobalKey</a>(<span class="keyword">const</span> <a class="code hl_class" href="../../d5/dd2/classxii_temp_hashed_string.html">xiiTempHashedString</a>&amp; sGlobalKey, <span class="keyword">const</span> xiiGameObject*&amp; out_pObject)<span class="keyword"> const</span></div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="keyword"></span>{</div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>  CheckForReadAccess();</div>
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>  <a class="code hl_struct" href="../../d7/d42/structxii_game_object_id.html">xiiGameObjectId</a> id;</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>  <span class="keywordflow">if</span> (m_Data.m_GlobalKeyToIdTable.<a class="code hl_function" href="../../d0/da6/classxii_hash_table_base.html#a1bb2c25791102db37be680622f5402af">TryGetValue</a>(sGlobalKey.<a class="code hl_function" href="../../d5/dd2/classxii_temp_hashed_string.html#ab38187a2e9906242cbd4b8c07e76ae1e">GetHash</a>(), <span class="keywordtype">id</span>))</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>  <span class="keywordflow">if</span> (m_Data.m_GlobalKeyToIdTable.TryGetValue(sGlobalKey.<a class="code hl_function" href="../../d5/dd2/classxii_temp_hashed_string.html#ab38187a2e9906242cbd4b8c07e76ae1e">GetHash</a>(), <span class="keywordtype">id</span>))</div>
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>  {</div>
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    out_pObject = m_Data.m_Objects[id];</div>
 <div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
@@ -228,7 +198,7 @@ $(function(){initNavTree('dc/d38/_world__inl_8h_source.html','../../'); initResi
 <div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span><span class="keyword"></span>{</div>
 <div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>  CheckForReadAccess();</div>
 <div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>  <span class="comment">// Subtract one to exclude dummy object with instance index 0</span></div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>  <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>xiiUInt32<span class="keyword">&gt;</span>(m_Data.m_Objects.<a class="code hl_function" href="../../d3/df7/classxii_id_table_base.html#aee9358398db230d74286bc495e117746">GetCount</a>() - 1);</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>  <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>xiiUInt32<span class="keyword">&gt;</span>(m_Data.m_Objects.GetCount() - 1);</div>
 <div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>}</div>
 </div>
 <div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> </div>
@@ -249,7 +219,7 @@ $(function(){initNavTree('dc/d38/_world__inl_8h_source.html','../../'); initResi
 </div>
 <div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span> </div>
 <div class="foldopen" id="foldopen00095" data-start="{" data-end="}">
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno"><a class="line" href="../../d6/d89/classxii_world.html#a88fc0ce1ee1e47c14f7d54483b0e7409">   95</a></span>XII_FORCE_INLINE <span class="keywordtype">void</span> <a class="code hl_function" href="../../d6/d89/classxii_world.html#a88fc0ce1ee1e47c14f7d54483b0e7409">xiiWorld::Traverse</a>(<a class="code hl_class" href="../../dc/d84/structxii_delegate.html">VisitorFunc</a> visitorFunc, TraversalMethod method <span class="comment">/*= DepthFirst*/</span>)</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno"><a class="line" href="../../d6/d89/classxii_world.html#a88fc0ce1ee1e47c14f7d54483b0e7409">   95</a></span>XII_FORCE_INLINE <span class="keywordtype">void</span> <a class="code hl_function" href="../../d6/d89/classxii_world.html#a88fc0ce1ee1e47c14f7d54483b0e7409">xiiWorld::Traverse</a>(<a class="code hl_typedef" href="../../d6/d89/classxii_world.html#a2a28037bf6e0847c42b7941e4861ea4b">VisitorFunc</a> visitorFunc, TraversalMethod method <span class="comment">/*= DepthFirst*/</span>)</div>
 <div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>{</div>
 <div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>  CheckForWriteAccess();</div>
 <div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span> </div>
@@ -275,7 +245,7 @@ $(function(){initNavTree('dc/d38/_world__inl_8h_source.html','../../'); initResi
 <div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> ModuleType&gt;</div>
 <div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>XII_ALWAYS_INLINE <span class="keywordtype">void</span> <a class="code hl_function" href="../../d6/d89/classxii_world.html#a38824fbcfcfcb825cb46da2bdb5c6165">xiiWorld::DeleteModule</a>()</div>
 <div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>{</div>
-<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>  <span class="keyword">static_assert</span>(XII_IS_DERIVED_FROM_STATIC(<a class="code hl_class" href="../../d9/dfe/classxii_world_module.html">xiiWorldModule</a>, ModuleType), <span class="stringliteral">&quot;Not a valid module type&quot;</span>);</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>  <span class="keyword">static_assert</span>(XII_IS_DERIVED_FROM_STATIC(xiiWorldModule, ModuleType), <span class="stringliteral">&quot;Not a valid module type&quot;</span>);</div>
 <div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span> </div>
 <div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>  <a class="code hl_function" href="../../d6/d89/classxii_world.html#a38824fbcfcfcb825cb46da2bdb5c6165">DeleteModule</a>(xiiGetStaticRTTI&lt;ModuleType&gt;());</div>
 <div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>}</div>
@@ -283,7 +253,7 @@ $(function(){initNavTree('dc/d38/_world__inl_8h_source.html','../../'); initResi
 <div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> ModuleType&gt;</div>
 <div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>XII_ALWAYS_INLINE ModuleType* <a class="code hl_function" href="../../d6/d89/classxii_world.html#a3d51ee4350f3ce7da958e6026178f1b6">xiiWorld::GetModule</a>()</div>
 <div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>{</div>
-<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>  <span class="keyword">static_assert</span>(XII_IS_DERIVED_FROM_STATIC(<a class="code hl_class" href="../../d9/dfe/classxii_world_module.html">xiiWorldModule</a>, ModuleType), <span class="stringliteral">&quot;Not a valid module type&quot;</span>);</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>  <span class="keyword">static_assert</span>(XII_IS_DERIVED_FROM_STATIC(xiiWorldModule, ModuleType), <span class="stringliteral">&quot;Not a valid module type&quot;</span>);</div>
 <div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span> </div>
 <div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>  <span class="keywordflow">return</span> xiiStaticCast&lt;ModuleType*&gt;(<a class="code hl_function" href="../../d6/d89/classxii_world.html#a3d51ee4350f3ce7da958e6026178f1b6">GetModule</a>(xiiGetStaticRTTI&lt;ModuleType&gt;()));</div>
 <div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>}</div>
@@ -291,7 +261,7 @@ $(function(){initNavTree('dc/d38/_world__inl_8h_source.html','../../'); initResi
 <div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> ModuleType&gt;</div>
 <div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>XII_ALWAYS_INLINE <span class="keyword">const</span> ModuleType* <a class="code hl_function" href="../../d6/d89/classxii_world.html#a3d51ee4350f3ce7da958e6026178f1b6">xiiWorld::GetModule</a>()<span class="keyword"> const</span></div>
 <div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span><span class="keyword"></span>{</div>
-<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>  <span class="keyword">static_assert</span>(XII_IS_DERIVED_FROM_STATIC(<a class="code hl_class" href="../../d9/dfe/classxii_world_module.html">xiiWorldModule</a>, ModuleType), <span class="stringliteral">&quot;Not a valid module type&quot;</span>);</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>  <span class="keyword">static_assert</span>(XII_IS_DERIVED_FROM_STATIC(xiiWorldModule, ModuleType), <span class="stringliteral">&quot;Not a valid module type&quot;</span>);</div>
 <div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span> </div>
 <div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>  <span class="keywordflow">return</span> xiiStaticCast&lt;const ModuleType*&gt;(<a class="code hl_function" href="../../d6/d89/classxii_world.html#a3d51ee4350f3ce7da958e6026178f1b6">GetModule</a>(xiiGetStaticRTTI&lt;ModuleType&gt;()));</div>
 <div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>}</div>
@@ -306,21 +276,21 @@ $(function(){initNavTree('dc/d38/_world__inl_8h_source.html','../../'); initResi
 <div class="foldopen" id="foldopen00148" data-start="{" data-end="}">
 <div class="line"><a id="l00148" name="l00148"></a><span class="lineno"><a class="line" href="../../d6/d89/classxii_world.html#a6799f445f644cbceb6e60360f350e5b3">  148</a></span>ManagerType* <a class="code hl_function" href="../../d6/d89/classxii_world.html#a6799f445f644cbceb6e60360f350e5b3">xiiWorld::GetOrCreateComponentManager</a>()</div>
 <div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>{</div>
-<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>  <span class="keyword">static_assert</span>(XII_IS_DERIVED_FROM_STATIC(<a class="code hl_class" href="../../d4/d61/classxii_component_manager_base.html">xiiComponentManagerBase</a>, ManagerType), <span class="stringliteral">&quot;Not a valid component manager type&quot;</span>);</div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>  <span class="keyword">static_assert</span>(XII_IS_DERIVED_FROM_STATIC(xiiComponentManagerBase, ManagerType), <span class="stringliteral">&quot;Not a valid component manager type&quot;</span>);</div>
 <div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span> </div>
 <div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>  CheckForWriteAccess();</div>
 <div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span> </div>
 <div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>  <span class="keyword">const</span> xiiWorldModuleTypeId uiTypeId = ManagerType::TypeId();</div>
-<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>  m_Data.m_Modules.<a class="code hl_function" href="../../da/d4c/classxii_array_base.html#ac9e0425e1b0ae3e9a958af289d336b34">EnsureCount</a>(uiTypeId + 1);</div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>  m_Data.m_Modules.EnsureCount(uiTypeId + 1);</div>
 <div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span> </div>
 <div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>  ManagerType* pModule = <span class="keyword">static_cast&lt;</span>ManagerType*<span class="keyword">&gt;</span>(m_Data.m_Modules[uiTypeId]);</div>
 <div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>  <span class="keywordflow">if</span> (pModule == <span class="keyword">nullptr</span>)</div>
 <div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>  {</div>
 <div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>    pModule = XII_NEW(&amp;m_Data.m_Allocator, ManagerType, <span class="keyword">this</span>);</div>
-<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>    <span class="keyword">static_cast&lt;</span><a class="code hl_class" href="../../d9/dfe/classxii_world_module.html">xiiWorldModule</a>*<span class="keyword">&gt;</span>(pModule)-&gt;Initialize();</div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>    <span class="keyword">static_cast&lt;</span>xiiWorldModule*<span class="keyword">&gt;</span>(pModule)-&gt;Initialize();</div>
 <div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span> </div>
 <div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>    m_Data.m_Modules[uiTypeId] = pModule;</div>
-<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>    m_Data.m_ModulesToStartSimulation.<a class="code hl_function" href="../../da/d4c/classxii_array_base.html#a8b86f58a2097871da0e0b91eecc823e4">PushBack</a>(pModule);</div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>    m_Data.m_ModulesToStartSimulation.PushBack(pModule);</div>
 <div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>  }</div>
 <div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span> </div>
 <div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>  <span class="keywordflow">return</span> pModule;</div>
@@ -328,9 +298,9 @@ $(function(){initNavTree('dc/d38/_world__inl_8h_source.html','../../'); initResi
 </div>
 <div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span> </div>
 <div class="foldopen" id="foldopen00170" data-start="{" data-end="}">
-<div class="line"><a id="l00170" name="l00170"></a><span class="lineno"><a class="line" href="../../d6/d89/classxii_world.html#a661f2f9b8e62466a3096efabb18c10df">  170</a></span>XII_ALWAYS_INLINE <a class="code hl_class" href="../../d4/d61/classxii_component_manager_base.html">xiiComponentManagerBase</a>* <a class="code hl_function" href="../../d6/d89/classxii_world.html#a661f2f9b8e62466a3096efabb18c10df">xiiWorld::GetOrCreateManagerForComponentType</a>(<span class="keyword">const</span> <a class="code hl_class" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a>* pComponentRtti)</div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno"><a class="line" href="../../d6/d89/classxii_world.html#a661f2f9b8e62466a3096efabb18c10df">  170</a></span>XII_ALWAYS_INLINE xiiComponentManagerBase* <a class="code hl_function" href="../../d6/d89/classxii_world.html#a661f2f9b8e62466a3096efabb18c10df">xiiWorld::GetOrCreateManagerForComponentType</a>(<span class="keyword">const</span> <a class="code hl_class" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a>* pComponentRtti)</div>
 <div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>{</div>
-<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>  XII_ASSERT_DEV(pComponentRtti-&gt;<a class="code hl_function" href="../../db/d89/classxii_r_t_t_i.html#ab01841286e6950143394487153c63c22">IsDerivedFrom</a>&lt;<a class="code hl_class" href="../../db/d60/classxii_component.html">xiiComponent</a>&gt;(), <span class="stringliteral">&quot;Invalid component type &#39;%s&#39;&quot;</span>, pComponentRtti-&gt;<a class="code hl_function" href="../../db/d89/classxii_r_t_t_i.html#a84233f5c90c038c1bd97e8b9ec4aa211">GetTypeName</a>());</div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>  XII_ASSERT_DEV(pComponentRtti-&gt;<a class="code hl_function" href="../../db/d89/classxii_r_t_t_i.html#ab01841286e6950143394487153c63c22">IsDerivedFrom</a>&lt;xiiComponent&gt;(), <span class="stringliteral">&quot;Invalid component type &#39;%s&#39;&quot;</span>, pComponentRtti-&gt;<a class="code hl_function" href="../../db/d89/classxii_r_t_t_i.html#a84233f5c90c038c1bd97e8b9ec4aa211">GetTypeName</a>());</div>
 <div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span> </div>
 <div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>  <span class="keywordflow">return</span> xiiStaticCast&lt;xiiComponentManagerBase*&gt;(<a class="code hl_function" href="../../d6/d89/classxii_world.html#a0290e79544cd99c5a709fb8723d7be75">GetOrCreateModule</a>(pComponentRtti));</div>
 <div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>}</div>
@@ -340,18 +310,18 @@ $(function(){initNavTree('dc/d38/_world__inl_8h_source.html','../../'); initResi
 <div class="foldopen" id="foldopen00178" data-start="{" data-end="}">
 <div class="line"><a id="l00178" name="l00178"></a><span class="lineno"><a class="line" href="../../d6/d89/classxii_world.html#a88baad8fdcad7e1632fd81984b59f1be">  178</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="../../d6/d89/classxii_world.html#a88baad8fdcad7e1632fd81984b59f1be">xiiWorld::DeleteComponentManager</a>()</div>
 <div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>{</div>
-<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>  <span class="keyword">static_assert</span>(XII_IS_DERIVED_FROM_STATIC(<a class="code hl_class" href="../../d4/d61/classxii_component_manager_base.html">xiiComponentManagerBase</a>, ManagerType), <span class="stringliteral">&quot;Not a valid component manager type&quot;</span>);</div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>  <span class="keyword">static_assert</span>(XII_IS_DERIVED_FROM_STATIC(xiiComponentManagerBase, ManagerType), <span class="stringliteral">&quot;Not a valid component manager type&quot;</span>);</div>
 <div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span> </div>
 <div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>  CheckForWriteAccess();</div>
 <div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span> </div>
 <div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>  <span class="keyword">const</span> xiiWorldModuleTypeId uiTypeId = ManagerType::TypeId();</div>
-<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>  <span class="keywordflow">if</span> (uiTypeId &lt; m_Data.m_Modules.<a class="code hl_function" href="../../da/d4c/classxii_array_base.html#a43100f93e19bb795ea0980dae2b28e0b">GetCount</a>())</div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>  <span class="keywordflow">if</span> (uiTypeId &lt; m_Data.m_Modules.GetCount())</div>
 <div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>  {</div>
 <div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>    <span class="keywordflow">if</span> (ManagerType* pModule = <span class="keyword">static_cast&lt;</span>ManagerType*<span class="keyword">&gt;</span>(m_Data.m_Modules[uiTypeId]))</div>
 <div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>    {</div>
 <div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>      m_Data.m_Modules[uiTypeId] = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span> </div>
-<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>      <span class="keyword">static_cast&lt;</span><a class="code hl_class" href="../../d9/dfe/classxii_world_module.html">xiiWorldModule</a>*<span class="keyword">&gt;</span>(pModule)-&gt;Deinitialize();</div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>      <span class="keyword">static_cast&lt;</span>xiiWorldModule*<span class="keyword">&gt;</span>(pModule)-&gt;Deinitialize();</div>
 <div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>      DeregisterUpdateFunctions(pModule);</div>
 <div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>      XII_DELETE(&amp;m_Data.m_Allocator, pModule);</div>
 <div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>    }</div>
@@ -378,12 +348,12 @@ $(function(){initNavTree('dc/d38/_world__inl_8h_source.html','../../'); initResi
 <div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> ManagerType&gt;</div>
 <div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span>XII_FORCE_INLINE <span class="keyword">const</span> ManagerType* <a class="code hl_function" href="../../d6/d89/classxii_world.html#a6caf942709841e4e396e043d212ba1e3">xiiWorld::GetComponentManager</a>()<span class="keyword"> const</span></div>
 <div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span><span class="keyword"></span>{</div>
-<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span>  <span class="keyword">static_assert</span>(XII_IS_DERIVED_FROM_STATIC(<a class="code hl_class" href="../../d4/d61/classxii_component_manager_base.html">xiiComponentManagerBase</a>, ManagerType), <span class="stringliteral">&quot;Not a valid component manager type&quot;</span>);</div>
+<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span>  <span class="keyword">static_assert</span>(XII_IS_DERIVED_FROM_STATIC(xiiComponentManagerBase, ManagerType), <span class="stringliteral">&quot;Not a valid component manager type&quot;</span>);</div>
 <div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span> </div>
 <div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span>  CheckForReadAccess();</div>
 <div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span> </div>
 <div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span>  <span class="keyword">const</span> xiiWorldModuleTypeId uiTypeId = ManagerType::TypeId();</div>
-<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span>  <span class="keywordflow">if</span> (uiTypeId &lt; m_Data.m_Modules.<a class="code hl_function" href="../../da/d4c/classxii_array_base.html#a43100f93e19bb795ea0980dae2b28e0b">GetCount</a>())</div>
+<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span>  <span class="keywordflow">if</span> (uiTypeId &lt; m_Data.m_Modules.GetCount())</div>
 <div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span>  {</div>
 <div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span>    <span class="keywordflow">return</span> xiiStaticCast&lt;const ManagerType*&gt;(m_Data.m_Modules[uiTypeId]);</div>
 <div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span>  }</div>
@@ -392,18 +362,18 @@ $(function(){initNavTree('dc/d38/_world__inl_8h_source.html','../../'); initResi
 <div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>}</div>
 <div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span> </div>
 <div class="foldopen" id="foldopen00230" data-start="{" data-end="}">
-<div class="line"><a id="l00230" name="l00230"></a><span class="lineno"><a class="line" href="../../d6/d89/classxii_world.html#a76875197d24c57080e3d396d01a494a6">  230</a></span>XII_ALWAYS_INLINE <a class="code hl_class" href="../../d4/d61/classxii_component_manager_base.html">xiiComponentManagerBase</a>* <a class="code hl_function" href="../../d6/d89/classxii_world.html#a76875197d24c57080e3d396d01a494a6">xiiWorld::GetManagerForComponentType</a>(<span class="keyword">const</span> <a class="code hl_class" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a>* pComponentRtti)</div>
+<div class="line"><a id="l00230" name="l00230"></a><span class="lineno"><a class="line" href="../../d6/d89/classxii_world.html#a76875197d24c57080e3d396d01a494a6">  230</a></span>XII_ALWAYS_INLINE xiiComponentManagerBase* <a class="code hl_function" href="../../d6/d89/classxii_world.html#a76875197d24c57080e3d396d01a494a6">xiiWorld::GetManagerForComponentType</a>(<span class="keyword">const</span> <a class="code hl_class" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a>* pComponentRtti)</div>
 <div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>{</div>
-<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>  XII_ASSERT_DEV(pComponentRtti-&gt;<a class="code hl_function" href="../../db/d89/classxii_r_t_t_i.html#ab01841286e6950143394487153c63c22">IsDerivedFrom</a>&lt;<a class="code hl_class" href="../../db/d60/classxii_component.html">xiiComponent</a>&gt;(), <span class="stringliteral">&quot;Invalid component type &#39;{0}&#39;&quot;</span>, pComponentRtti-&gt;<a class="code hl_function" href="../../db/d89/classxii_r_t_t_i.html#a84233f5c90c038c1bd97e8b9ec4aa211">GetTypeName</a>());</div>
+<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>  XII_ASSERT_DEV(pComponentRtti-&gt;<a class="code hl_function" href="../../db/d89/classxii_r_t_t_i.html#ab01841286e6950143394487153c63c22">IsDerivedFrom</a>&lt;xiiComponent&gt;(), <span class="stringliteral">&quot;Invalid component type &#39;{0}&#39;&quot;</span>, pComponentRtti-&gt;<a class="code hl_function" href="../../db/d89/classxii_r_t_t_i.html#a84233f5c90c038c1bd97e8b9ec4aa211">GetTypeName</a>());</div>
 <div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span> </div>
 <div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>  <span class="keywordflow">return</span> xiiStaticCast&lt;xiiComponentManagerBase*&gt;(<a class="code hl_function" href="../../d6/d89/classxii_world.html#a3d51ee4350f3ce7da958e6026178f1b6">GetModule</a>(pComponentRtti));</div>
 <div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>}</div>
 </div>
 <div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span> </div>
 <div class="foldopen" id="foldopen00237" data-start="{" data-end="}">
-<div class="line"><a id="l00237" name="l00237"></a><span class="lineno"><a class="line" href="../../d6/d89/classxii_world.html#aab3296fca8bfada5aef91a4d3930fd97">  237</a></span>XII_ALWAYS_INLINE <span class="keyword">const</span> <a class="code hl_class" href="../../d4/d61/classxii_component_manager_base.html">xiiComponentManagerBase</a>* <a class="code hl_function" href="../../d6/d89/classxii_world.html#a76875197d24c57080e3d396d01a494a6">xiiWorld::GetManagerForComponentType</a>(<span class="keyword">const</span> <a class="code hl_class" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a>* pComponentRtti)<span class="keyword"> const</span></div>
+<div class="line"><a id="l00237" name="l00237"></a><span class="lineno"><a class="line" href="../../d6/d89/classxii_world.html#aab3296fca8bfada5aef91a4d3930fd97">  237</a></span>XII_ALWAYS_INLINE <span class="keyword">const</span> xiiComponentManagerBase* <a class="code hl_function" href="../../d6/d89/classxii_world.html#a76875197d24c57080e3d396d01a494a6">xiiWorld::GetManagerForComponentType</a>(<span class="keyword">const</span> <a class="code hl_class" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a>* pComponentRtti)<span class="keyword"> const</span></div>
 <div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span><span class="keyword"></span>{</div>
-<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>  XII_ASSERT_DEV(pComponentRtti-&gt;<a class="code hl_function" href="../../db/d89/classxii_r_t_t_i.html#ab01841286e6950143394487153c63c22">IsDerivedFrom</a>&lt;<a class="code hl_class" href="../../db/d60/classxii_component.html">xiiComponent</a>&gt;(), <span class="stringliteral">&quot;Invalid component type &#39;{0}&#39;&quot;</span>, pComponentRtti-&gt;<a class="code hl_function" href="../../db/d89/classxii_r_t_t_i.html#a84233f5c90c038c1bd97e8b9ec4aa211">GetTypeName</a>());</div>
+<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>  XII_ASSERT_DEV(pComponentRtti-&gt;<a class="code hl_function" href="../../db/d89/classxii_r_t_t_i.html#ab01841286e6950143394487153c63c22">IsDerivedFrom</a>&lt;xiiComponent&gt;(), <span class="stringliteral">&quot;Invalid component type &#39;{0}&#39;&quot;</span>, pComponentRtti-&gt;<a class="code hl_function" href="../../db/d89/classxii_r_t_t_i.html#a84233f5c90c038c1bd97e8b9ec4aa211">GetTypeName</a>());</div>
 <div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span> </div>
 <div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>  <span class="keywordflow">return</span> xiiStaticCast&lt;const xiiComponentManagerBase*&gt;(<a class="code hl_function" href="../../d6/d89/classxii_world.html#a3d51ee4350f3ce7da958e6026178f1b6">GetModule</a>(pComponentRtti));</div>
 <div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>}</div>
@@ -415,11 +385,11 @@ $(function(){initNavTree('dc/d38/_world__inl_8h_source.html','../../'); initResi
 <div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>  CheckForReadAccess();</div>
 <div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span>  <span class="keyword">const</span> xiiWorldModuleTypeId uiTypeId = hComponent.m_InternalId.m_TypeId;</div>
 <div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span> </div>
-<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span>  <span class="keywordflow">if</span> (uiTypeId &lt; m_Data.m_Modules.<a class="code hl_function" href="../../da/d4c/classxii_array_base.html#a43100f93e19bb795ea0980dae2b28e0b">GetCount</a>())</div>
+<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span>  <span class="keywordflow">if</span> (uiTypeId &lt; m_Data.m_Modules.GetCount())</div>
 <div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span>  {</div>
-<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span>    <span class="keywordflow">if</span> (<span class="keyword">const</span> <a class="code hl_class" href="../../d9/dfe/classxii_world_module.html">xiiWorldModule</a>* pModule = m_Data.m_Modules[uiTypeId])</div>
+<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span>    <span class="keywordflow">if</span> (<span class="keyword">const</span> xiiWorldModule* pModule = m_Data.m_Modules[uiTypeId])</div>
 <div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span>    {</div>
-<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span>      <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span><span class="keyword">const </span><a class="code hl_class" href="../../d4/d61/classxii_component_manager_base.html">xiiComponentManagerBase</a>*<span class="keyword">&gt;</span>(pModule)-&gt;<a class="code hl_function" href="../../d6/d89/classxii_world.html#a6638a0f8658fed9ea87e20669aeb8edb">IsValidComponent</a>(hComponent);</div>
+<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span>      <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span><span class="keyword">const </span>xiiComponentManagerBase*<span class="keyword">&gt;</span>(pModule)-&gt;<a class="code hl_function" href="../../d6/d89/classxii_world.html#a6638a0f8658fed9ea87e20669aeb8edb">IsValidComponent</a>(hComponent);</div>
 <div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span>    }</div>
 <div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span>  }</div>
 <div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span> </div>
@@ -432,16 +402,16 @@ $(function(){initNavTree('dc/d38/_world__inl_8h_source.html','../../'); initResi
 <div class="line"><a id="l00261" name="l00261"></a><span class="lineno"><a class="line" href="../../d6/d89/classxii_world.html#abc48ca97e3890c1dce34eb141bfe4957">  261</a></span><span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="../../d6/d89/classxii_world.html#abc48ca97e3890c1dce34eb141bfe4957">xiiWorld::TryGetComponent</a>(<span class="keyword">const</span> <a class="code hl_struct" href="../../da/d8d/structxii_component_handle.html">xiiComponentHandle</a>&amp; hComponent, ComponentType*&amp; out_pComponent)</div>
 <div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span>{</div>
 <div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span>  CheckForWriteAccess();</div>
-<div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span>  <span class="keyword">static_assert</span>(XII_IS_DERIVED_FROM_STATIC(<a class="code hl_class" href="../../db/d60/classxii_component.html">xiiComponent</a>, ComponentType), <span class="stringliteral">&quot;Not a valid component type&quot;</span>);</div>
+<div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span>  <span class="keyword">static_assert</span>(XII_IS_DERIVED_FROM_STATIC(xiiComponent, ComponentType), <span class="stringliteral">&quot;Not a valid component type&quot;</span>);</div>
 <div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span> </div>
 <div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span>  <span class="keyword">const</span> xiiWorldModuleTypeId uiTypeId = hComponent.m_InternalId.m_TypeId;</div>
 <div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span> </div>
-<div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span>  <span class="keywordflow">if</span> (uiTypeId &lt; m_Data.m_Modules.<a class="code hl_function" href="../../da/d4c/classxii_array_base.html#a43100f93e19bb795ea0980dae2b28e0b">GetCount</a>())</div>
+<div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span>  <span class="keywordflow">if</span> (uiTypeId &lt; m_Data.m_Modules.GetCount())</div>
 <div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span>  {</div>
-<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span>    <span class="keywordflow">if</span> (<a class="code hl_class" href="../../d9/dfe/classxii_world_module.html">xiiWorldModule</a>* pModule = m_Data.m_Modules[uiTypeId])</div>
+<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span>    <span class="keywordflow">if</span> (xiiWorldModule* pModule = m_Data.m_Modules[uiTypeId])</div>
 <div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span>    {</div>
-<div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span>      <a class="code hl_class" href="../../db/d60/classxii_component.html">xiiComponent</a>* pComponent = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span>      <span class="keywordtype">bool</span>          bResult    = <span class="keyword">static_cast&lt;</span><a class="code hl_class" href="../../d4/d61/classxii_component_manager_base.html">xiiComponentManagerBase</a>*<span class="keyword">&gt;</span>(pModule)-&gt;<a class="code hl_function" href="../../d6/d89/classxii_world.html#abc48ca97e3890c1dce34eb141bfe4957">TryGetComponent</a>(hComponent, pComponent);</div>
+<div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span>      xiiComponent* pComponent = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span>      <span class="keywordtype">bool</span>          bResult    = <span class="keyword">static_cast&lt;</span>xiiComponentManagerBase*<span class="keyword">&gt;</span>(pModule)-&gt;<a class="code hl_function" href="../../d6/d89/classxii_world.html#abc48ca97e3890c1dce34eb141bfe4957">TryGetComponent</a>(hComponent, pComponent);</div>
 <div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span>      out_pComponent           = xiiDynamicCast&lt;ComponentType*&gt;(pComponent);</div>
 <div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span>      <span class="keywordflow">return</span> bResult &amp;&amp; out_pComponent != <span class="keyword">nullptr</span>;</div>
 <div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span>    }</div>
@@ -456,16 +426,16 @@ $(function(){initNavTree('dc/d38/_world__inl_8h_source.html','../../'); initResi
 <div class="line"><a id="l00283" name="l00283"></a><span class="lineno"><a class="line" href="../../d6/d89/classxii_world.html#a51a436a2259c3c88d90bdc709d818559">  283</a></span><span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="../../d6/d89/classxii_world.html#abc48ca97e3890c1dce34eb141bfe4957">xiiWorld::TryGetComponent</a>(<span class="keyword">const</span> <a class="code hl_struct" href="../../da/d8d/structxii_component_handle.html">xiiComponentHandle</a>&amp; hComponent, <span class="keyword">const</span> ComponentType*&amp; out_pComponent)<span class="keyword"> const</span></div>
 <div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span><span class="keyword"></span>{</div>
 <div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span>  CheckForReadAccess();</div>
-<div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span>  <span class="keyword">static_assert</span>(XII_IS_DERIVED_FROM_STATIC(<a class="code hl_class" href="../../db/d60/classxii_component.html">xiiComponent</a>, ComponentType), <span class="stringliteral">&quot;Not a valid component type&quot;</span>);</div>
+<div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span>  <span class="keyword">static_assert</span>(XII_IS_DERIVED_FROM_STATIC(xiiComponent, ComponentType), <span class="stringliteral">&quot;Not a valid component type&quot;</span>);</div>
 <div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span> </div>
 <div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span>  <span class="keyword">const</span> xiiWorldModuleTypeId uiTypeId = hComponent.m_InternalId.m_TypeId;</div>
 <div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span> </div>
-<div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span>  <span class="keywordflow">if</span> (uiTypeId &lt; m_Data.m_Modules.<a class="code hl_function" href="../../da/d4c/classxii_array_base.html#a43100f93e19bb795ea0980dae2b28e0b">GetCount</a>())</div>
+<div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span>  <span class="keywordflow">if</span> (uiTypeId &lt; m_Data.m_Modules.GetCount())</div>
 <div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span>  {</div>
-<div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span>    <span class="keywordflow">if</span> (<span class="keyword">const</span> <a class="code hl_class" href="../../d9/dfe/classxii_world_module.html">xiiWorldModule</a>* pModule = m_Data.m_Modules[uiTypeId])</div>
+<div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span>    <span class="keywordflow">if</span> (<span class="keyword">const</span> xiiWorldModule* pModule = m_Data.m_Modules[uiTypeId])</div>
 <div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span>    {</div>
-<div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span>      <span class="keyword">const</span> <a class="code hl_class" href="../../db/d60/classxii_component.html">xiiComponent</a>* pComponent = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span>      <span class="keywordtype">bool</span>                bResult    = <span class="keyword">static_cast&lt;</span><span class="keyword">const </span><a class="code hl_class" href="../../d4/d61/classxii_component_manager_base.html">xiiComponentManagerBase</a>*<span class="keyword">&gt;</span>(pModule)-&gt;<a class="code hl_function" href="../../d6/d89/classxii_world.html#abc48ca97e3890c1dce34eb141bfe4957">TryGetComponent</a>(hComponent, pComponent);</div>
+<div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span>      <span class="keyword">const</span> xiiComponent* pComponent = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span>      <span class="keywordtype">bool</span>                bResult    = <span class="keyword">static_cast&lt;</span><span class="keyword">const </span>xiiComponentManagerBase*<span class="keyword">&gt;</span>(pModule)-&gt;<a class="code hl_function" href="../../d6/d89/classxii_world.html#abc48ca97e3890c1dce34eb141bfe4957">TryGetComponent</a>(hComponent, pComponent);</div>
 <div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span>      out_pComponent                 = xiiDynamicCast&lt;const ComponentType*&gt;(pComponent);</div>
 <div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span>      <span class="keywordflow">return</span> bResult &amp;&amp; out_pComponent != <span class="keyword">nullptr</span>;</div>
 <div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span>    }</div>
@@ -480,7 +450,7 @@ $(function(){initNavTree('dc/d38/_world__inl_8h_source.html','../../'); initResi
 <div class="line"><a id="l00305" name="l00305"></a><span class="lineno">  305</span>{</div>
 <div class="line"><a id="l00306" name="l00306"></a><span class="lineno">  306</span>  CheckForWriteAccess();</div>
 <div class="line"><a id="l00307" name="l00307"></a><span class="lineno">  307</span> </div>
-<div class="line"><a id="l00308" name="l00308"></a><span class="lineno">  308</span>  <a class="code hl_class" href="../../d0/d91/classxii_game_object.html">xiiGameObject</a>* pReceiverObject = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00308" name="l00308"></a><span class="lineno">  308</span>  xiiGameObject* pReceiverObject = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a id="l00309" name="l00309"></a><span class="lineno">  309</span>  <span class="keywordflow">if</span> (<a class="code hl_function" href="../../d6/d89/classxii_world.html#af20f28a4321230cf0eeacbe9add859d7">TryGetObject</a>(hReceiverObject, pReceiverObject))</div>
 <div class="line"><a id="l00310" name="l00310"></a><span class="lineno">  310</span>  {</div>
 <div class="line"><a id="l00311" name="l00311"></a><span class="lineno">  311</span>    pReceiverObject-&gt;<a class="code hl_function" href="../../d0/d91/classxii_game_object.html#a9acebff434fab9c9802e4b98d3c9d5b4">SendMessage</a>(ref_msg);</div>
@@ -502,7 +472,7 @@ $(function(){initNavTree('dc/d38/_world__inl_8h_source.html','../../'); initResi
 <div class="line"><a id="l00325" name="l00325"></a><span class="lineno">  325</span>{</div>
 <div class="line"><a id="l00326" name="l00326"></a><span class="lineno">  326</span>  CheckForWriteAccess();</div>
 <div class="line"><a id="l00327" name="l00327"></a><span class="lineno">  327</span> </div>
-<div class="line"><a id="l00328" name="l00328"></a><span class="lineno">  328</span>  <a class="code hl_class" href="../../d0/d91/classxii_game_object.html">xiiGameObject</a>* pReceiverObject = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00328" name="l00328"></a><span class="lineno">  328</span>  xiiGameObject* pReceiverObject = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a id="l00329" name="l00329"></a><span class="lineno">  329</span>  <span class="keywordflow">if</span> (<a class="code hl_function" href="../../d6/d89/classxii_world.html#af20f28a4321230cf0eeacbe9add859d7">TryGetObject</a>(hReceiverObject, pReceiverObject))</div>
 <div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span>  {</div>
 <div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span>    pReceiverObject-&gt;<a class="code hl_function" href="../../d0/d91/classxii_game_object.html#abb4b51ff5b640ceb0172a49cf6b32a0b">SendMessageRecursive</a>(ref_msg);</div>
@@ -540,7 +510,7 @@ $(function(){initNavTree('dc/d38/_world__inl_8h_source.html','../../'); initResi
 <div class="line"><a id="l00357" name="l00357"></a><span class="lineno">  357</span>{</div>
 <div class="line"><a id="l00358" name="l00358"></a><span class="lineno">  358</span>  CheckForWriteAccess();</div>
 <div class="line"><a id="l00359" name="l00359"></a><span class="lineno">  359</span> </div>
-<div class="line"><a id="l00360" name="l00360"></a><span class="lineno">  360</span>  <a class="code hl_class" href="../../db/d60/classxii_component.html">xiiComponent</a>* pReceiverComponent = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00360" name="l00360"></a><span class="lineno">  360</span>  xiiComponent* pReceiverComponent = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a id="l00361" name="l00361"></a><span class="lineno">  361</span>  <span class="keywordflow">if</span> (<a class="code hl_function" href="../../d6/d89/classxii_world.html#abc48ca97e3890c1dce34eb141bfe4957">TryGetComponent</a>(hReceiverComponent, pReceiverComponent))</div>
 <div class="line"><a id="l00362" name="l00362"></a><span class="lineno">  362</span>  {</div>
 <div class="line"><a id="l00363" name="l00363"></a><span class="lineno">  363</span>    pReceiverComponent-&gt;<a class="code hl_function" href="../../db/d60/classxii_component.html#aea04f38daccdc6df45d4db6a47829d39">SendMessage</a>(ref_msg);</div>
@@ -590,7 +560,7 @@ $(function(){initNavTree('dc/d38/_world__inl_8h_source.html','../../'); initResi
 <div class="line"><a id="l00397" name="l00397"></a><span class="lineno">  397</span>{</div>
 <div class="line"><a id="l00398" name="l00398"></a><span class="lineno">  398</span>  CheckForWriteAccess();</div>
 <div class="line"><a id="l00399" name="l00399"></a><span class="lineno">  399</span> </div>
-<div class="line"><a id="l00400" name="l00400"></a><span class="lineno">  400</span>  <span class="keywordflow">return</span> m_Data.m_pSpatialSystem.<a class="code hl_function" href="../../d9/d4a/classxii_unique_ptr.html#aff6bd0f915964769fe2ec7a2a81fd2d5">Borrow</a>();</div>
+<div class="line"><a id="l00400" name="l00400"></a><span class="lineno">  400</span>  <span class="keywordflow">return</span> m_Data.m_pSpatialSystem.Borrow();</div>
 <div class="line"><a id="l00401" name="l00401"></a><span class="lineno">  401</span>}</div>
 </div>
 <div class="line"><a id="l00402" name="l00402"></a><span class="lineno">  402</span> </div>
@@ -599,12 +569,12 @@ $(function(){initNavTree('dc/d38/_world__inl_8h_source.html','../../'); initResi
 <div class="line"><a id="l00404" name="l00404"></a><span class="lineno">  404</span><span class="keyword"></span>{</div>
 <div class="line"><a id="l00405" name="l00405"></a><span class="lineno">  405</span>  CheckForReadAccess();</div>
 <div class="line"><a id="l00406" name="l00406"></a><span class="lineno">  406</span> </div>
-<div class="line"><a id="l00407" name="l00407"></a><span class="lineno">  407</span>  <span class="keywordflow">return</span> m_Data.m_pSpatialSystem.<a class="code hl_function" href="../../d9/d4a/classxii_unique_ptr.html#aff6bd0f915964769fe2ec7a2a81fd2d5">Borrow</a>();</div>
+<div class="line"><a id="l00407" name="l00407"></a><span class="lineno">  407</span>  <span class="keywordflow">return</span> m_Data.m_pSpatialSystem.Borrow();</div>
 <div class="line"><a id="l00408" name="l00408"></a><span class="lineno">  408</span>}</div>
 </div>
 <div class="line"><a id="l00409" name="l00409"></a><span class="lineno">  409</span> </div>
 <div class="foldopen" id="foldopen00410" data-start="{" data-end="}">
-<div class="line"><a id="l00410" name="l00410"></a><span class="lineno"><a class="line" href="../../d6/d89/classxii_world.html#a6b9ce066baf55425f1c5ed787b5504a2">  410</a></span>XII_ALWAYS_INLINE <span class="keywordtype">void</span> <a class="code hl_function" href="../../d6/d89/classxii_world.html#a6b9ce066baf55425f1c5ed787b5504a2">xiiWorld::GetCoordinateSystem</a>(<span class="keyword">const</span> <a class="code hl_class" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3</a>&amp; vGlobalPosition, <a class="code hl_struct" href="../../d3/d57/structxii_coordinate_system.html">xiiCoordinateSystem</a>&amp; out_coordinateSystem)<span class="keyword"> const</span></div>
+<div class="line"><a id="l00410" name="l00410"></a><span class="lineno"><a class="line" href="../../d6/d89/classxii_world.html#a6b9ce066baf55425f1c5ed787b5504a2">  410</a></span>XII_ALWAYS_INLINE <span class="keywordtype">void</span> <a class="code hl_function" href="../../d6/d89/classxii_world.html#a6b9ce066baf55425f1c5ed787b5504a2">xiiWorld::GetCoordinateSystem</a>(<span class="keyword">const</span> xiiVec3&amp; vGlobalPosition, <a class="code hl_struct" href="../../d3/d57/structxii_coordinate_system.html">xiiCoordinateSystem</a>&amp; out_coordinateSystem)<span class="keyword"> const</span></div>
 <div class="line"><a id="l00411" name="l00411"></a><span class="lineno">  411</span><span class="keyword"></span>{</div>
 <div class="line"><a id="l00412" name="l00412"></a><span class="lineno">  412</span>  m_Data.m_pCoordinateSystemProvider-&gt;GetCoordinateSystem(vGlobalPosition, out_coordinateSystem);</div>
 <div class="line"><a id="l00413" name="l00413"></a><span class="lineno">  413</span>}</div>
@@ -613,14 +583,14 @@ $(function(){initNavTree('dc/d38/_world__inl_8h_source.html','../../'); initResi
 <div class="foldopen" id="foldopen00415" data-start="{" data-end="}">
 <div class="line"><a id="l00415" name="l00415"></a><span class="lineno"><a class="line" href="../../d6/d89/classxii_world.html#a059ef22af06a09c56728813eb3a4b99f">  415</a></span>XII_ALWAYS_INLINE <a class="code hl_class" href="../../d1/da6/classxii_coordinate_system_provider.html">xiiCoordinateSystemProvider</a>&amp; <a class="code hl_function" href="../../d6/d89/classxii_world.html#a059ef22af06a09c56728813eb3a4b99f">xiiWorld::GetCoordinateSystemProvider</a>()</div>
 <div class="line"><a id="l00416" name="l00416"></a><span class="lineno">  416</span>{</div>
-<div class="line"><a id="l00417" name="l00417"></a><span class="lineno">  417</span>  <span class="keywordflow">return</span> *(m_Data.m_pCoordinateSystemProvider.<a class="code hl_function" href="../../d8/d9b/classxii_shared_ptr.html#acdbc0ac2ce97ae9ba5894184acb9c89b">Borrow</a>());</div>
+<div class="line"><a id="l00417" name="l00417"></a><span class="lineno">  417</span>  <span class="keywordflow">return</span> *(m_Data.m_pCoordinateSystemProvider.Borrow());</div>
 <div class="line"><a id="l00418" name="l00418"></a><span class="lineno">  418</span>}</div>
 </div>
 <div class="line"><a id="l00419" name="l00419"></a><span class="lineno">  419</span> </div>
 <div class="foldopen" id="foldopen00420" data-start="{" data-end="}">
 <div class="line"><a id="l00420" name="l00420"></a><span class="lineno"><a class="line" href="../../d6/d89/classxii_world.html#af6df3893fd14906d588fbd837bf1ce14">  420</a></span>XII_ALWAYS_INLINE <span class="keyword">const</span> <a class="code hl_class" href="../../d1/da6/classxii_coordinate_system_provider.html">xiiCoordinateSystemProvider</a>&amp; <a class="code hl_function" href="../../d6/d89/classxii_world.html#a059ef22af06a09c56728813eb3a4b99f">xiiWorld::GetCoordinateSystemProvider</a>()<span class="keyword"> const</span></div>
 <div class="line"><a id="l00421" name="l00421"></a><span class="lineno">  421</span><span class="keyword"></span>{</div>
-<div class="line"><a id="l00422" name="l00422"></a><span class="lineno">  422</span>  <span class="keywordflow">return</span> *(m_Data.m_pCoordinateSystemProvider.<a class="code hl_function" href="../../d8/d9b/classxii_shared_ptr.html#acdbc0ac2ce97ae9ba5894184acb9c89b">Borrow</a>());</div>
+<div class="line"><a id="l00422" name="l00422"></a><span class="lineno">  422</span>  <span class="keywordflow">return</span> *(m_Data.m_pCoordinateSystemProvider.Borrow());</div>
 <div class="line"><a id="l00423" name="l00423"></a><span class="lineno">  423</span>}</div>
 </div>
 <div class="line"><a id="l00424" name="l00424"></a><span class="lineno">  424</span> </div>
@@ -653,7 +623,7 @@ $(function(){initNavTree('dc/d38/_world__inl_8h_source.html','../../'); initResi
 </div>
 <div class="line"><a id="l00444" name="l00444"></a><span class="lineno">  444</span> </div>
 <div class="foldopen" id="foldopen00445" data-start="{" data-end="}">
-<div class="line"><a id="l00445" name="l00445"></a><span class="lineno"><a class="line" href="../../d6/d89/classxii_world.html#adbd15b01f14a40f97a7111a80c02eb65">  445</a></span>XII_ALWAYS_INLINE <a class="code hl_class" href="../../d9/dc9/classxii_large_block_allocator.html">xiiInternal::WorldLargeBlockAllocator</a>* <a class="code hl_function" href="../../d6/d89/classxii_world.html#adbd15b01f14a40f97a7111a80c02eb65">xiiWorld::GetBlockAllocator</a>()</div>
+<div class="line"><a id="l00445" name="l00445"></a><span class="lineno"><a class="line" href="../../d6/d89/classxii_world.html#adbd15b01f14a40f97a7111a80c02eb65">  445</a></span>XII_ALWAYS_INLINE xiiInternal::WorldLargeBlockAllocator* <a class="code hl_function" href="../../d6/d89/classxii_world.html#adbd15b01f14a40f97a7111a80c02eb65">xiiWorld::GetBlockAllocator</a>()</div>
 <div class="line"><a id="l00446" name="l00446"></a><span class="lineno">  446</span>{</div>
 <div class="line"><a id="l00447" name="l00447"></a><span class="lineno">  447</span>  <span class="keywordflow">return</span> &amp;m_Data.m_BlockAllocator;</div>
 <div class="line"><a id="l00448" name="l00448"></a><span class="lineno">  448</span>}</div>
@@ -732,13 +702,13 @@ $(function(){initNavTree('dc/d38/_world__inl_8h_source.html','../../'); initResi
 <div class="foldopen" id="foldopen00510" data-start="{" data-end="}">
 <div class="line"><a id="l00510" name="l00510"></a><span class="lineno"><a class="line" href="../../d6/d89/classxii_world.html#a6a034a0501b8ea7e64d0c01459cc0f8f">  510</a></span>XII_ALWAYS_INLINE xiiUInt32 <a class="code hl_function" href="../../d6/d89/classxii_world.html#a6a034a0501b8ea7e64d0c01459cc0f8f">xiiWorld::GetWorldCount</a>()</div>
 <div class="line"><a id="l00511" name="l00511"></a><span class="lineno">  511</span>{</div>
-<div class="line"><a id="l00512" name="l00512"></a><span class="lineno">  512</span>  <span class="keywordflow">return</span> s_Worlds.<a class="code hl_function" href="../../da/d4c/classxii_array_base.html#a43100f93e19bb795ea0980dae2b28e0b">GetCount</a>();</div>
+<div class="line"><a id="l00512" name="l00512"></a><span class="lineno">  512</span>  <span class="keywordflow">return</span> s_Worlds.GetCount();</div>
 <div class="line"><a id="l00513" name="l00513"></a><span class="lineno">  513</span>}</div>
 </div>
 <div class="line"><a id="l00514" name="l00514"></a><span class="lineno">  514</span> </div>
 <div class="line"><a id="l00515" name="l00515"></a><span class="lineno">  515</span><span class="comment">// static</span></div>
 <div class="foldopen" id="foldopen00516" data-start="{" data-end="}">
-<div class="line"><a id="l00516" name="l00516"></a><span class="lineno"><a class="line" href="../../d6/d89/classxii_world.html#ad9210078dabf628dd1afecce9e2ada88">  516</a></span>XII_ALWAYS_INLINE <a class="code hl_class" href="../../d6/d89/classxii_world.html">xiiWorld</a>* <a class="code hl_function" href="../../d6/d89/classxii_world.html#ad9210078dabf628dd1afecce9e2ada88">xiiWorld::GetWorld</a>(xiiUInt32 uiIndex)</div>
+<div class="line"><a id="l00516" name="l00516"></a><span class="lineno"><a class="line" href="../../d6/d89/classxii_world.html#ad9210078dabf628dd1afecce9e2ada88">  516</a></span>XII_ALWAYS_INLINE <a class="code hl_function" href="../../d6/d89/classxii_world.html#a3dbf6f8ad1a6c3c79d367b3376763a83">xiiWorld</a>* <a class="code hl_function" href="../../d6/d89/classxii_world.html#ad9210078dabf628dd1afecce9e2ada88">xiiWorld::GetWorld</a>(xiiUInt32 uiIndex)</div>
 <div class="line"><a id="l00517" name="l00517"></a><span class="lineno">  517</span>{</div>
 <div class="line"><a id="l00518" name="l00518"></a><span class="lineno">  518</span>  <span class="keywordflow">return</span> s_Worlds[uiIndex];</div>
 <div class="line"><a id="l00519" name="l00519"></a><span class="lineno">  519</span>}</div>
@@ -746,7 +716,7 @@ $(function(){initNavTree('dc/d38/_world__inl_8h_source.html','../../'); initResi
 <div class="line"><a id="l00520" name="l00520"></a><span class="lineno">  520</span> </div>
 <div class="line"><a id="l00521" name="l00521"></a><span class="lineno">  521</span><span class="comment">// static</span></div>
 <div class="foldopen" id="foldopen00522" data-start="{" data-end="}">
-<div class="line"><a id="l00522" name="l00522"></a><span class="lineno"><a class="line" href="../../d6/d89/classxii_world.html#af3a800f153772561e92eea8d43097cf4">  522</a></span>XII_ALWAYS_INLINE <a class="code hl_class" href="../../d6/d89/classxii_world.html">xiiWorld</a>* <a class="code hl_function" href="../../d6/d89/classxii_world.html#ad9210078dabf628dd1afecce9e2ada88">xiiWorld::GetWorld</a>(<span class="keyword">const</span> <a class="code hl_struct" href="../../da/d2c/structxii_game_object_handle.html">xiiGameObjectHandle</a>&amp; hObject)</div>
+<div class="line"><a id="l00522" name="l00522"></a><span class="lineno"><a class="line" href="../../d6/d89/classxii_world.html#af3a800f153772561e92eea8d43097cf4">  522</a></span>XII_ALWAYS_INLINE <a class="code hl_function" href="../../d6/d89/classxii_world.html#a3dbf6f8ad1a6c3c79d367b3376763a83">xiiWorld</a>* <a class="code hl_function" href="../../d6/d89/classxii_world.html#ad9210078dabf628dd1afecce9e2ada88">xiiWorld::GetWorld</a>(<span class="keyword">const</span> <a class="code hl_struct" href="../../da/d2c/structxii_game_object_handle.html">xiiGameObjectHandle</a>&amp; hObject)</div>
 <div class="line"><a id="l00523" name="l00523"></a><span class="lineno">  523</span>{</div>
 <div class="line"><a id="l00524" name="l00524"></a><span class="lineno">  524</span>  <span class="keywordflow">return</span> s_Worlds[hObject.GetInternalID().m_WorldIndex];</div>
 <div class="line"><a id="l00525" name="l00525"></a><span class="lineno">  525</span>}</div>
@@ -754,7 +724,7 @@ $(function(){initNavTree('dc/d38/_world__inl_8h_source.html','../../'); initResi
 <div class="line"><a id="l00526" name="l00526"></a><span class="lineno">  526</span> </div>
 <div class="line"><a id="l00527" name="l00527"></a><span class="lineno">  527</span><span class="comment">// static</span></div>
 <div class="foldopen" id="foldopen00528" data-start="{" data-end="}">
-<div class="line"><a id="l00528" name="l00528"></a><span class="lineno"><a class="line" href="../../d6/d89/classxii_world.html#ad9c233d2d82f092227603b10fc9bd96c">  528</a></span>XII_ALWAYS_INLINE <a class="code hl_class" href="../../d6/d89/classxii_world.html">xiiWorld</a>* <a class="code hl_function" href="../../d6/d89/classxii_world.html#ad9210078dabf628dd1afecce9e2ada88">xiiWorld::GetWorld</a>(<span class="keyword">const</span> <a class="code hl_struct" href="../../da/d8d/structxii_component_handle.html">xiiComponentHandle</a>&amp; hComponent)</div>
+<div class="line"><a id="l00528" name="l00528"></a><span class="lineno"><a class="line" href="../../d6/d89/classxii_world.html#ad9c233d2d82f092227603b10fc9bd96c">  528</a></span>XII_ALWAYS_INLINE <a class="code hl_function" href="../../d6/d89/classxii_world.html#a3dbf6f8ad1a6c3c79d367b3376763a83">xiiWorld</a>* <a class="code hl_function" href="../../d6/d89/classxii_world.html#ad9210078dabf628dd1afecce9e2ada88">xiiWorld::GetWorld</a>(<span class="keyword">const</span> <a class="code hl_struct" href="../../da/d8d/structxii_component_handle.html">xiiComponentHandle</a>&amp; hComponent)</div>
 <div class="line"><a id="l00529" name="l00529"></a><span class="lineno">  529</span>{</div>
 <div class="line"><a id="l00530" name="l00530"></a><span class="lineno">  530</span>  <span class="keywordflow">return</span> s_Worlds[hComponent.GetInternalID().m_WorldIndex];</div>
 <div class="line"><a id="l00531" name="l00531"></a><span class="lineno">  531</span>}</div>
@@ -772,7 +742,7 @@ $(function(){initNavTree('dc/d38/_world__inl_8h_source.html','../../'); initResi
 <div class="line"><a id="l00542" name="l00542"></a><span class="lineno">  542</span> </div>
 <div class="line"><a id="l00543" name="l00543"></a><span class="lineno">  543</span>XII_ALWAYS_INLINE <a class="code hl_class" href="../../d0/d91/classxii_game_object.html">xiiGameObject</a>* xiiWorld::GetObjectUnchecked(xiiUInt32 uiIndex)<span class="keyword"> const</span></div>
 <div class="line"><a id="l00544" name="l00544"></a><span class="lineno">  544</span><span class="keyword"></span>{</div>
-<div class="line"><a id="l00545" name="l00545"></a><span class="lineno">  545</span>  <span class="keywordflow">return</span> m_Data.m_Objects.<a class="code hl_function" href="../../d3/df7/classxii_id_table_base.html#a9a73806c402a0b74619e4af5c9774aec">GetValueUnchecked</a>(uiIndex);</div>
+<div class="line"><a id="l00545" name="l00545"></a><span class="lineno">  545</span>  <span class="keywordflow">return</span> m_Data.m_Objects.GetValueUnchecked(uiIndex);</div>
 <div class="line"><a id="l00546" name="l00546"></a><span class="lineno">  546</span>}</div>
 <div class="line"><a id="l00547" name="l00547"></a><span class="lineno">  547</span> </div>
 <div class="line"><a id="l00548" name="l00548"></a><span class="lineno">  548</span>XII_ALWAYS_INLINE <span class="keywordtype">bool</span> xiiWorld::ReportErrorWhenStaticObjectMoves()<span class="keyword"> const</span></div>
@@ -782,7 +752,7 @@ $(function(){initNavTree('dc/d38/_world__inl_8h_source.html','../../'); initResi
 <div class="line"><a id="l00552" name="l00552"></a><span class="lineno">  552</span> </div>
 <div class="line"><a id="l00553" name="l00553"></a><span class="lineno">  553</span>XII_ALWAYS_INLINE <span class="keywordtype">float</span> xiiWorld::GetInvDeltaSeconds()<span class="keyword"> const</span></div>
 <div class="line"><a id="l00554" name="l00554"></a><span class="lineno">  554</span><span class="keyword"></span>{</div>
-<div class="line"><a id="l00555" name="l00555"></a><span class="lineno">  555</span>  <span class="keyword">const</span> <span class="keywordtype">float</span> fDelta = (float)m_Data.m_Clock.<a class="code hl_function" href="../../d5/da3/classxii_clock.html#a722a42d93ac8d6524ebb434e68c8e5f5">GetTimeDiff</a>().<a class="code hl_function" href="../../d7/dc1/structxii_time.html#a3263cf5a3955dbca58bd7ab78acd2599">GetSeconds</a>();</div>
+<div class="line"><a id="l00555" name="l00555"></a><span class="lineno">  555</span>  <span class="keyword">const</span> <span class="keywordtype">float</span> fDelta = (float)m_Data.m_Clock.GetTimeDiff().GetSeconds();</div>
 <div class="line"><a id="l00556" name="l00556"></a><span class="lineno">  556</span>  <span class="keywordflow">if</span> (fDelta &gt; 0.0f)</div>
 <div class="line"><a id="l00557" name="l00557"></a><span class="lineno">  557</span>  {</div>
 <div class="line"><a id="l00558" name="l00558"></a><span class="lineno">  558</span>    <span class="keywordflow">return</span> 1.0f / fDelta;</div>
@@ -793,11 +763,7 @@ $(function(){initNavTree('dc/d38/_world__inl_8h_source.html','../../'); initResi
 <div class="line"><a id="l00563" name="l00563"></a><span class="lineno">  563</span>}</div>
 <div class="ttc" id="aclassxii_allocator_base_html"><div class="ttname"><a href="../../d5/d66/classxii_allocator_base.html">xiiAllocatorBase</a></div><div class="ttdoc">Base class for all memory allocators.</div><div class="ttdef"><b>Definition</b> AllocatorBase.h:22</div></div>
 <div class="ttc" id="aclassxii_array_base_html_a43100f93e19bb795ea0980dae2b28e0b"><div class="ttname"><a href="../../da/d4c/classxii_array_base.html#a43100f93e19bb795ea0980dae2b28e0b">xiiArrayBase::GetCount</a></div><div class="ttdeci">xiiUInt32 GetCount() const</div><div class="ttdoc">Returns the number of active elements in the array.</div><div class="ttdef"><b>Definition</b> ArrayBase_inl.h:164</div></div>
-<div class="ttc" id="aclassxii_array_base_html_a8b86f58a2097871da0e0b91eecc823e4"><div class="ttname"><a href="../../da/d4c/classxii_array_base.html#a8b86f58a2097871da0e0b91eecc823e4">xiiArrayBase::PushBack</a></div><div class="ttdeci">void PushBack(const T &amp;value)</div><div class="ttdoc">Pushes value at the end of the array.</div><div class="ttdef"><b>Definition</b> ArrayBase_inl.h:325</div></div>
-<div class="ttc" id="aclassxii_array_base_html_ac9e0425e1b0ae3e9a958af289d336b34"><div class="ttname"><a href="../../da/d4c/classxii_array_base.html#ac9e0425e1b0ae3e9a958af289d336b34">xiiArrayBase::EnsureCount</a></div><div class="ttdeci">void EnsureCount(xiiUInt32 uiCount)</div><div class="ttdoc">Ensures the container has at least uiCount elements. Ie. calls SetCount() if the container has fewer ...</div><div class="ttdef"><b>Definition</b> ArrayBase_inl.h:136</div></div>
 <div class="ttc" id="aclassxii_clock_html"><div class="ttname"><a href="../../d5/da3/classxii_clock.html">xiiClock</a></div><div class="ttdoc">A clock that can be speed up, slowed down, paused, etc. Useful for updating game logic,...</div><div class="ttdef"><b>Definition</b> Clock.h:15</div></div>
-<div class="ttc" id="aclassxii_clock_html_a722a42d93ac8d6524ebb434e68c8e5f5"><div class="ttname"><a href="../../d5/da3/classxii_clock.html#a722a42d93ac8d6524ebb434e68c8e5f5">xiiClock::GetTimeDiff</a></div><div class="ttdeci">xiiTime GetTimeDiff() const</div><div class="ttdoc">Returns the time difference between the last two calls to Update().</div><div class="ttdef"><b>Definition</b> Clock_inl.h:52</div></div>
-<div class="ttc" id="aclassxii_component_html"><div class="ttname"><a href="../../db/d60/classxii_component.html">xiiComponent</a></div><div class="ttdoc">Base class of all component types.</div><div class="ttdef"><b>Definition</b> Component.h:25</div></div>
 <div class="ttc" id="aclassxii_component_html_aea04f38daccdc6df45d4db6a47829d39"><div class="ttname"><a href="../../db/d60/classxii_component.html#aea04f38daccdc6df45d4db6a47829d39">xiiComponent::SendMessage</a></div><div class="ttdeci">XII_ALWAYS_INLINE bool SendMessage(xiiMessage &amp;ref_msg)</div><div class="ttdoc">Sends a message to this component.</div><div class="ttdef"><b>Definition</b> Component.h:117</div></div>
 <div class="ttc" id="aclassxii_component_manager_base_html"><div class="ttname"><a href="../../d4/d61/classxii_component_manager_base.html">xiiComponentManagerBase</a></div><div class="ttdoc">Base class for all component managers. Do not derive directly from this class, but derive from xiiCom...</div><div class="ttdef"><b>Definition</b> ComponentManager.h:21</div></div>
 <div class="ttc" id="aclassxii_coordinate_system_provider_html"><div class="ttname"><a href="../../d1/da6/classxii_coordinate_system_provider.html">xiiCoordinateSystemProvider</a></div><div class="ttdef"><b>Definition</b> CoordinateSystem.h:18</div></div>
@@ -806,33 +772,23 @@ $(function(){initNavTree('dc/d38/_world__inl_8h_source.html','../../'); initResi
 <div class="ttc" id="aclassxii_game_object_html"><div class="ttname"><a href="../../d0/d91/classxii_game_object.html">xiiGameObject</a></div><div class="ttdoc">This class represents an object inside the world.</div><div class="ttdef"><b>Definition</b> GameObject.h:32</div></div>
 <div class="ttc" id="aclassxii_game_object_html_a9acebff434fab9c9802e4b98d3c9d5b4"><div class="ttname"><a href="../../d0/d91/classxii_game_object.html#a9acebff434fab9c9802e4b98d3c9d5b4">xiiGameObject::SendMessage</a></div><div class="ttdeci">bool SendMessage(xiiMessage &amp;ref_msg)</div><div class="ttdoc">Sends a message to all components of this object.</div><div class="ttdef"><b>Definition</b> GameObject_inl.h:521</div></div>
 <div class="ttc" id="aclassxii_game_object_html_abb4b51ff5b640ceb0172a49cf6b32a0b"><div class="ttname"><a href="../../d0/d91/classxii_game_object.html#abb4b51ff5b640ceb0172a49cf6b32a0b">xiiGameObject::SendMessageRecursive</a></div><div class="ttdeci">bool SendMessageRecursive(xiiMessage &amp;ref_msg)</div><div class="ttdoc">Sends a message to all components of this object and then recursively to all children.</div><div class="ttdef"><b>Definition</b> GameObject_inl.h:531</div></div>
-<div class="ttc" id="aclassxii_hash_table_base_html_a1bb2c25791102db37be680622f5402af"><div class="ttname"><a href="../../d0/da6/classxii_hash_table_base.html#a1bb2c25791102db37be680622f5402af">xiiHashTableBase::TryGetValue</a></div><div class="ttdeci">bool TryGetValue(const CompatibleKeyType &amp;key, ValueType &amp;out_value) const</div><div class="ttdoc">Returns whether an entry with the given key was found and if found writes out the corresponding value...</div></div>
-<div class="ttc" id="aclassxii_id_table_base_html_a9a73806c402a0b74619e4af5c9774aec"><div class="ttname"><a href="../../d3/df7/classxii_id_table_base.html#a9a73806c402a0b74619e4af5c9774aec">xiiIdTableBase::GetValueUnchecked</a></div><div class="ttdeci">const ValueType &amp; GetValueUnchecked(const IndexType index) const</div><div class="ttdoc">Returns the value at the given index. Does bounds checks in debug builds but does not check for stale...</div><div class="ttdef"><b>Definition</b> IdTable_inl.h:305</div></div>
-<div class="ttc" id="aclassxii_id_table_base_html_aa1a09c6eed7767f470cfaf9479e1c911"><div class="ttname"><a href="../../d3/df7/classxii_id_table_base.html#aa1a09c6eed7767f470cfaf9479e1c911">xiiIdTableBase::TryGetValue</a></div><div class="ttdeci">bool TryGetValue(const IdType id, ValueType &amp;out_value) const</div><div class="ttdoc">Returns if an entry with the given id was found and if found writes out the corresponding value to ou...</div><div class="ttdef"><b>Definition</b> IdTable_inl.h:257</div></div>
-<div class="ttc" id="aclassxii_id_table_base_html_ab335e73479fc6d2800af53627b93e6a1"><div class="ttname"><a href="../../d3/df7/classxii_id_table_base.html#ab335e73479fc6d2800af53627b93e6a1">xiiIdTableBase::Contains</a></div><div class="ttdeci">bool Contains(const IdType id) const</div><div class="ttdoc">Returns if the table contains an entry corresponding to the given id.</div><div class="ttdef"><b>Definition</b> IdTable_inl.h:319</div></div>
-<div class="ttc" id="aclassxii_id_table_base_html_aee9358398db230d74286bc495e117746"><div class="ttname"><a href="../../d3/df7/classxii_id_table_base.html#aee9358398db230d74286bc495e117746">xiiIdTableBase::GetCount</a></div><div class="ttdeci">IndexType GetCount() const</div><div class="ttdoc">Returns the number of active entries in the table.</div><div class="ttdef"><b>Definition</b> IdTable_inl.h:158</div></div>
 <div class="ttc" id="aclassxii_internal_1_1_world_data_1_1_const_object_iterator_html"><div class="ttname"><a href="../../df/dfd/classxii_internal_1_1_world_data_1_1_const_object_iterator.html">xiiInternal::WorldData::ConstObjectIterator</a></div><div class="ttdef"><b>Definition</b> WorldData.h:50</div></div>
 <div class="ttc" id="aclassxii_internal_1_1_world_data_1_1_object_iterator_html"><div class="ttname"><a href="../../d7/d33/classxii_internal_1_1_world_data_1_1_object_iterator.html">xiiInternal::WorldData::ObjectIterator</a></div><div class="ttdef"><b>Definition</b> WorldData.h:75</div></div>
 <div class="ttc" id="aclassxii_internal_1_1_world_data_1_1_read_marker_html"><div class="ttname"><a href="../../dc/d8c/classxii_internal_1_1_world_data_1_1_read_marker.html">xiiInternal::WorldData::ReadMarker</a></div><div class="ttdef"><b>Definition</b> WorldData.h:273</div></div>
 <div class="ttc" id="aclassxii_internal_1_1_world_data_1_1_write_marker_html"><div class="ttname"><a href="../../dd/da1/classxii_internal_1_1_world_data_1_1_write_marker.html">xiiInternal::WorldData::WriteMarker</a></div><div class="ttdef"><b>Definition</b> WorldData.h:286</div></div>
-<div class="ttc" id="aclassxii_large_block_allocator_html"><div class="ttname"><a href="../../d9/dc9/classxii_large_block_allocator.html">xiiLargeBlockAllocator&lt; DEFAULT_BLOCK_SIZE &gt;</a></div></div>
 <div class="ttc" id="aclassxii_log_html_aa390b31f5bf8f8a833afe3ad57f0c24e"><div class="ttname"><a href="../../d4/dc6/classxii_log.html#aa390b31f5bf8f8a833afe3ad57f0c24e">xiiLog::Warning</a></div><div class="ttdeci">static void Warning(xiiLogInterface *pInterface, const xiiFormatString &amp;string)</div><div class="ttdoc">A potential problem or a performance warning. Might be possible to ignore it.</div><div class="ttdef"><b>Definition</b> Log.cpp:374</div></div>
-<div class="ttc" id="aclassxii_message_html"><div class="ttname"><a href="../../d9/d55/classxii_message.html">xiiMessage</a></div><div class="ttdoc">Base class for all message types. Each message type has it's own id which is used to dispatch message...</div><div class="ttdef"><b>Definition</b> Message.h:22</div></div>
+<div class="ttc" id="aclassxii_message_html"><div class="ttname"><a href="../../d9/d55/classxii_message.html">xiiMessage</a></div><div class="ttdoc">Base class for all message types. Each message type has it&#39;s own id which is used to dispatch message...</div><div class="ttdef"><b>Definition</b> Message.h:22</div></div>
 <div class="ttc" id="aclassxii_message_html_aecb02f490a8eea97cf4f09bb2b9c05e6"><div class="ttname"><a href="../../d9/d55/classxii_message.html#aecb02f490a8eea97cf4f09bb2b9c05e6">xiiMessage::GetId</a></div><div class="ttdeci">XII_ALWAYS_INLINE xiiMessageId GetId() const</div><div class="ttdoc">Returns the id for this message type.</div><div class="ttdef"><b>Definition</b> Message.h:48</div></div>
 <div class="ttc" id="aclassxii_r_t_t_i_html"><div class="ttname"><a href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a></div><div class="ttdoc">This class holds information about reflected types. Each instance represents one type that is known t...</div><div class="ttdef"><b>Definition</b> RTTI.h:30</div></div>
 <div class="ttc" id="aclassxii_r_t_t_i_html_a84233f5c90c038c1bd97e8b9ec4aa211"><div class="ttname"><a href="../../db/d89/classxii_r_t_t_i.html#a84233f5c90c038c1bd97e8b9ec4aa211">xiiRTTI::GetTypeName</a></div><div class="ttdeci">XII_ALWAYS_INLINE xiiStringView GetTypeName() const</div><div class="ttdoc">Returns the name of this type.</div><div class="ttdef"><b>Definition</b> RTTI.h:44</div></div>
 <div class="ttc" id="aclassxii_r_t_t_i_html_ab01841286e6950143394487153c63c22"><div class="ttname"><a href="../../db/d89/classxii_r_t_t_i.html#ab01841286e6950143394487153c63c22">xiiRTTI::IsDerivedFrom</a></div><div class="ttdeci">XII_ALWAYS_INLINE bool IsDerivedFrom(const xiiRTTI *pBaseType) const</div><div class="ttdoc">Returns true if this type is derived from the given type (or of the same type).</div><div class="ttdef"><b>Definition</b> RTTI.h:56</div></div>
 <div class="ttc" id="aclassxii_random_html"><div class="ttname"><a href="../../d5/de7/classxii_random.html">xiiRandom</a></div><div class="ttdoc">A random number generator. Currently uses the WELL512 algorithm.</div><div class="ttdef"><b>Definition</b> Random.h:9</div></div>
 <div class="ttc" id="aclassxii_shared_ptr_html"><div class="ttname"><a href="../../d8/d9b/classxii_shared_ptr.html">xiiSharedPtr</a></div><div class="ttdoc">A Shared ptr manages a shared object and destroys that object when no one references it anymore....</div><div class="ttdef"><b>Definition</b> SharedPtr.h:10</div></div>
-<div class="ttc" id="aclassxii_shared_ptr_html_acdbc0ac2ce97ae9ba5894184acb9c89b"><div class="ttname"><a href="../../d8/d9b/classxii_shared_ptr.html#acdbc0ac2ce97ae9ba5894184acb9c89b">xiiSharedPtr::Borrow</a></div><div class="ttdeci">T * Borrow() const</div><div class="ttdoc">Borrows the managed object. The shared ptr stays unmodified.</div><div class="ttdef"><b>Definition</b> SharedPtr_inl.h:168</div></div>
 <div class="ttc" id="aclassxii_spatial_system_html"><div class="ttname"><a href="../../d3/d34/classxii_spatial_system.html">xiiSpatialSystem</a></div><div class="ttdef"><b>Definition</b> SpatialSystem.h:10</div></div>
 <div class="ttc" id="aclassxii_string_view_html"><div class="ttname"><a href="../../d4/d85/classxii_string_view.html">xiiStringView</a></div><div class="ttdoc">xiiStringView represent a read-only sub-string of a larger string, as it can store a dedicated string...</div><div class="ttdef"><b>Definition</b> StringView.h:34</div></div>
 <div class="ttc" id="aclassxii_temp_hashed_string_html"><div class="ttname"><a href="../../d5/dd2/classxii_temp_hashed_string.html">xiiTempHashedString</a></div><div class="ttdoc">A class to use together with xiiHashedString for quick comparisons with temporary strings that need n...</div><div class="ttdef"><b>Definition</b> HashedString.h:149</div></div>
 <div class="ttc" id="aclassxii_temp_hashed_string_html_ab38187a2e9906242cbd4b8c07e76ae1e"><div class="ttname"><a href="../../d5/dd2/classxii_temp_hashed_string.html#ab38187a2e9906242cbd4b8c07e76ae1e">xiiTempHashedString::GetHash</a></div><div class="ttdeci">xiiUInt64 GetHash() const</div><div class="ttdoc">Returns the hash of the stored string.</div><div class="ttdef"><b>Definition</b> HashedString_inl.h:204</div></div>
 <div class="ttc" id="aclassxii_thread_utils_html_a6c89bbd858287614a82c17251d87eb5f"><div class="ttname"><a href="../../d4/d5c/classxii_thread_utils.html#a6c89bbd858287614a82c17251d87eb5f">xiiThreadUtils::GetCurrentThreadID</a></div><div class="ttdeci">static xiiThreadID GetCurrentThreadID()</div><div class="ttdoc">Returns an identifier for the currently running thread.</div><div class="ttdef"><b>Definition</b> ThreadUtils_posix.h:38</div></div>
-<div class="ttc" id="aclassxii_unique_ptr_html_aff6bd0f915964769fe2ec7a2a81fd2d5"><div class="ttname"><a href="../../d9/d4a/classxii_unique_ptr.html#aff6bd0f915964769fe2ec7a2a81fd2d5">xiiUniquePtr::Borrow</a></div><div class="ttdeci">T * Borrow() const</div><div class="ttdoc">Borrows the managed object. The unique ptr stays unmodified.</div><div class="ttdef"><b>Definition</b> UniquePtr_inl.h:102</div></div>
-<div class="ttc" id="aclassxii_vec3_template_html"><div class="ttname"><a href="../../d9/d9a/classxii_vec3_template.html">xiiVec3Template&lt; float &gt;</a></div></div>
-<div class="ttc" id="aclassxii_world_html"><div class="ttname"><a href="../../d6/d89/classxii_world.html">xiiWorld</a></div><div class="ttdoc">A world encapsulates a scene graph of game objects and various component managers and their component...</div><div class="ttdef"><b>Definition</b> World.h:22</div></div>
 <div class="ttc" id="aclassxii_world_html_a0290e79544cd99c5a709fb8723d7be75"><div class="ttname"><a href="../../d6/d89/classxii_world.html#a0290e79544cd99c5a709fb8723d7be75">xiiWorld::GetOrCreateModule</a></div><div class="ttdeci">ModuleType * GetOrCreateModule()</div><div class="ttdoc">Creates an instance of the given module type or derived type or returns a pointer to an already exist...</div></div>
 <div class="ttc" id="aclassxii_world_html_a04af13eebc0ce73d6f29b343e7a184f0"><div class="ttname"><a href="../../d6/d89/classxii_world.html#a04af13eebc0ce73d6f29b343e7a184f0">xiiWorld::PostMessageRecursive</a></div><div class="ttdeci">void PostMessageRecursive(const xiiGameObjectHandle &amp;hReceiverObject, const xiiMessage &amp;msg, xiiTime delay, xiiObjectMsgQueueType::Enum queueType=xiiObjectMsgQueueType::NextFrame) const</div><div class="ttdoc">Queues the message for the given phase. The message is send to the receiverObject and all its childre...</div><div class="ttdef"><b>Definition</b> World_inl.h:350</div></div>
 <div class="ttc" id="aclassxii_world_html_a059ef22af06a09c56728813eb3a4b99f"><div class="ttname"><a href="../../d6/d89/classxii_world.html#a059ef22af06a09c56728813eb3a4b99f">xiiWorld::GetCoordinateSystemProvider</a></div><div class="ttdeci">xiiCoordinateSystemProvider &amp; GetCoordinateSystemProvider()</div><div class="ttdoc">Returns the coordinate system provider that is associated with this world.</div><div class="ttdef"><b>Definition</b> World_inl.h:415</div></div>
@@ -841,10 +797,12 @@ $(function(){initNavTree('dc/d38/_world__inl_8h_source.html','../../'); initResi
 <div class="ttc" id="aclassxii_world_html_a0cb9d374b075ab115cb3f0b84c57061e"><div class="ttname"><a href="../../d6/d89/classxii_world.html#a0cb9d374b075ab115cb3f0b84c57061e">xiiWorld::IsValidObject</a></div><div class="ttdeci">bool IsValidObject(const xiiGameObjectHandle &amp;hObject) const</div><div class="ttdoc">Returns whether the given handle corresponds to a valid object.</div><div class="ttdef"><b>Definition</b> World_inl.h:23</div></div>
 <div class="ttc" id="aclassxii_world_html_a179394b7af41aa781984bf11e4e672ce"><div class="ttname"><a href="../../d6/d89/classxii_world.html#a179394b7af41aa781984bf11e4e672ce">xiiWorld::GetReadMarker</a></div><div class="ttdeci">xiiInternal::WorldData::ReadMarker &amp; GetReadMarker() const</div><div class="ttdoc">Mark the world for reading by using XII_LOCK(world.GetReadMarker()). Multiple threads can read simult...</div><div class="ttdef"><b>Definition</b> World_inl.h:455</div></div>
 <div class="ttc" id="aclassxii_world_html_a289efb4b7bafcda02e6f20bb8f3be4e6"><div class="ttname"><a href="../../d6/d89/classxii_world.html#a289efb4b7bafcda02e6f20bb8f3be4e6">xiiWorld::SetUserData</a></div><div class="ttdeci">void SetUserData(void *pUserData)</div><div class="ttdoc">Associates the given user data with the world. The user is responsible for the life time of user data...</div><div class="ttdef"><b>Definition</b> World_inl.h:465</div></div>
+<div class="ttc" id="aclassxii_world_html_a2a28037bf6e0847c42b7941e4861ea4b"><div class="ttname"><a href="../../d6/d89/classxii_world.html#a2a28037bf6e0847c42b7941e4861ea4b">xiiWorld::VisitorFunc</a></div><div class="ttdeci">xiiInternal::WorldData::VisitorFunc VisitorFunc</div><div class="ttdoc">Defines a visitor function that is called for every game-object when using the traverse method....</div><div class="ttdef"><b>Definition</b> World.h:122</div></div>
 <div class="ttc" id="aclassxii_world_html_a2b007afa6b6e99aa0359e900cd610da3"><div class="ttname"><a href="../../d6/d89/classxii_world.html#a2b007afa6b6e99aa0359e900cd610da3">xiiWorld::SendMessage</a></div><div class="ttdeci">void SendMessage(const xiiGameObjectHandle &amp;hReceiverObject, xiiMessage &amp;ref_msg)</div><div class="ttdoc">Sends a message to all components of the receiverObject.</div><div class="ttdef"><b>Definition</b> World_inl.h:304</div></div>
 <div class="ttc" id="aclassxii_world_html_a2e02c9225e05f5a21352fa669fedd280"><div class="ttname"><a href="../../d6/d89/classxii_world.html#a2e02c9225e05f5a21352fa669fedd280">xiiWorld::GetUpdateCounter</a></div><div class="ttdeci">xiiUInt32 GetUpdateCounter() const</div><div class="ttdoc">Returns the number of update calls. Can be used to determine whether an operation has already been do...</div><div class="ttdef"><b>Definition</b> World_inl.h:391</div></div>
 <div class="ttc" id="aclassxii_world_html_a38824fbcfcfcb825cb46da2bdb5c6165"><div class="ttname"><a href="../../d6/d89/classxii_world.html#a38824fbcfcfcb825cb46da2bdb5c6165">xiiWorld::DeleteModule</a></div><div class="ttdeci">void DeleteModule()</div><div class="ttdoc">Deletes the module of the given type or derived types.</div></div>
 <div class="ttc" id="aclassxii_world_html_a3d51ee4350f3ce7da958e6026178f1b6"><div class="ttname"><a href="../../d6/d89/classxii_world.html#a3d51ee4350f3ce7da958e6026178f1b6">xiiWorld::GetModule</a></div><div class="ttdeci">ModuleType * GetModule()</div><div class="ttdoc">Returns the instance to the given module type or derived types.</div></div>
+<div class="ttc" id="aclassxii_world_html_a3dbf6f8ad1a6c3c79d367b3376763a83"><div class="ttname"><a href="../../d6/d89/classxii_world.html#a3dbf6f8ad1a6c3c79d367b3376763a83">xiiWorld::xiiWorld</a></div><div class="ttdeci">xiiWorld(xiiWorldDesc &amp;ref_desc)</div><div class="ttdoc">Creates a new world with the given name.</div><div class="ttdef"><b>Definition</b> World.cpp:56</div></div>
 <div class="ttc" id="aclassxii_world_html_a4d42df7ea2dabed071a6b0b417491191"><div class="ttname"><a href="../../d6/d89/classxii_world.html#a4d42df7ea2dabed071a6b0b417491191">xiiWorld::GetStackAllocator</a></div><div class="ttdeci">xiiDoubleBufferedStackAllocator * GetStackAllocator()</div><div class="ttdoc">Returns the stack allocator used by this world.</div><div class="ttdef"><b>Definition</b> World_inl.h:450</div></div>
 <div class="ttc" id="aclassxii_world_html_a4ea6dd2047161c57be8db5c32aeaafe1"><div class="ttname"><a href="../../d6/d89/classxii_world.html#a4ea6dd2047161c57be8db5c32aeaafe1">xiiWorld::GetUserData</a></div><div class="ttdeci">void * GetUserData() const</div><div class="ttdoc">Returns the associated user data.</div><div class="ttdef"><b>Definition</b> World_inl.h:472</div></div>
 <div class="ttc" id="aclassxii_world_html_a5a0ba3ae4ca090f8e8ff05bb0387a125"><div class="ttname"><a href="../../d6/d89/classxii_world.html#a5a0ba3ae4ca090f8e8ff05bb0387a125">xiiWorld::GetIndex</a></div><div class="ttdeci">xiiUInt32 GetIndex() const</div><div class="ttdoc">Returns the index of this world.</div><div class="ttdef"><b>Definition</b> World_inl.h:7</div></div>
@@ -879,20 +837,18 @@ $(function(){initNavTree('dc/d38/_world__inl_8h_source.html','../../'); initResi
 <div class="ttc" id="aclassxii_world_module_html"><div class="ttname"><a href="../../d9/dfe/classxii_world_module.html">xiiWorldModule</a></div><div class="ttdef"><b>Definition</b> WorldModule.h:10</div></div>
 <div class="ttc" id="astructxii_component_handle_html"><div class="ttname"><a href="../../da/d8d/structxii_component_handle.html">xiiComponentHandle</a></div><div class="ttdoc">A handle to a component.</div><div class="ttdef"><b>Definition</b> Declarations.h:138</div></div>
 <div class="ttc" id="astructxii_coordinate_system_html"><div class="ttname"><a href="../../d3/d57/structxii_coordinate_system.html">xiiCoordinateSystem</a></div><div class="ttdef"><b>Definition</b> CoordinateSystem.h:9</div></div>
-<div class="ttc" id="astructxii_delegate_html"><div class="ttname"><a href="../../dc/d84/structxii_delegate.html">xiiDelegate&lt; xiiVisitorExecution::Enum(xiiGameObject *)&gt;</a></div></div>
 <div class="ttc" id="astructxii_game_object_desc_html"><div class="ttname"><a href="../../dd/d15/structxii_game_object_desc.html">xiiGameObjectDesc</a></div><div class="ttdoc">Describes the initial state of a game object.</div><div class="ttdef"><b>Definition</b> GameObjectDesc.h:11</div></div>
 <div class="ttc" id="astructxii_game_object_handle_html"><div class="ttname"><a href="../../da/d2c/structxii_game_object_handle.html">xiiGameObjectHandle</a></div><div class="ttdoc">A handle to a game object.</div><div class="ttdef"><b>Definition</b> Declarations.h:76</div></div>
 <div class="ttc" id="astructxii_game_object_id_html"><div class="ttname"><a href="../../d7/d42/structxii_game_object_id.html">xiiGameObjectId</a></div><div class="ttdoc">Internal game object id used by xiiGameObjectHandle.</div><div class="ttdef"><b>Definition</b> Declarations.h:43</div></div>
 <div class="ttc" id="astructxii_object_msg_queue_type_html_a3d66b91c215db559dd0c20b592406600"><div class="ttname"><a href="../../dc/de3/structxii_object_msg_queue_type.html#a3d66b91c215db559dd0c20b592406600">xiiObjectMsgQueueType::Enum</a></div><div class="ttdeci">Enum</div><div class="ttdef"><b>Definition</b> Declarations.h:302</div></div>
 <div class="ttc" id="astructxii_time_html"><div class="ttname"><a href="../../d7/dc1/structxii_time.html">xiiTime</a></div><div class="ttdoc">The time class encapsulates a double value storing the time in seconds.</div><div class="ttdef"><b>Definition</b> Time.h:12</div></div>
-<div class="ttc" id="astructxii_time_html_a3263cf5a3955dbca58bd7ab78acd2599"><div class="ttname"><a href="../../d7/dc1/structxii_time.html#a3263cf5a3955dbca58bd7ab78acd2599">xiiTime::GetSeconds</a></div><div class="ttdeci">constexpr double GetSeconds() const</div><div class="ttdoc">Returns the seconds value.</div><div class="ttdef"><b>Definition</b> Time_inl.h:30</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.html">home</a></li><li class="navelem"><a class="el" href="../../dir_1036706e55c22cab35bc1c58ee689f1d.html">runner</a></li><li class="navelem"><a class="el" href="../../dir_629f8151d55d307162ff2d619fb1783d.html">work</a></li><li class="navelem"><a class="el" href="../../dir_1ddc44fe1263a8c7935fa6130b7d9499.html">XII</a></li><li class="navelem"><a class="el" href="../../dir_2c1b6808f12952f4c36e05ba7068379a.html">XII</a></li><li class="navelem"><a class="el" href="../../dir_b5a1c4ecfca018ad24b729e213296d41.html">Source</a></li><li class="navelem"><a class="el" href="../../dir_e321052006a51284e67389ab20037e7c.html">Engine</a></li><li class="navelem"><a class="el" href="../../dir_6934db396743bb3844d563c7fa1f32a7.html">Core</a></li><li class="navelem"><a class="el" href="../../dir_ab754377d544640af55d8a4d89e9b622.html">World</a></li><li class="navelem"><a class="el" href="../../dir_ecac7d2fdc9715fd40219423254923f5.html">Implementation</a></li><li class="navelem"><b>World_inl.h</b></li>
-    <li class="footer">Generated on Fri Mar 21 2025 22:41:55 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
+    <li class="footer">Generated on Fri Mar 21 2025 23:27:38 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 </body>

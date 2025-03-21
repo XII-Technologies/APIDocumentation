@@ -1,39 +1,15 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<meta name="generator" content="Doxygen 1.12.0"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.13.2"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<!-- BEGIN opengraph metadata -->
-<meta property="og:title" content="XII" />
-<meta property="og:image" content="XII-Logo.png" />
-<meta property="og:description" content="An advanced high-performance simulation engine." />
-<meta property="og:url" content="https://www.xiitechnologies.com" />
-<!-- END opengraph metadata -->
-<!-- BEGIN twitter metadata -->
-<meta name="twitter:image:src" content="XII-Logo.png" />
-<meta name="twitter:title" content="XII" />
-<meta name="twitter:description" content="An advanced high-performance simulation engine." />
-<!-- END twitter metadata -->
 <title>XII: /home/runner/work/XII/XII/Source/Engine/Core/Utils/Implementation/IntervalScheduler_inl.h Source File</title>
+<link rel="icon" href="../../XII-Logo.png" type="image/x-icon" />
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
-<link rel="icon" type="image/svg+xml" href="XII-Logo.png"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
-<script type="text/javascript" src="../../doxygen-awesome-darkmode-toggle.js"></script>
-<script type="text/javascript" src="../../doxygen-awesome-fragment-copy-button.js"></script>
-<script type="text/javascript" src="../../doxygen-awesome-paragraph-link.js"></script>
-<script type="text/javascript" src="../../doxygen-awesome-interactive-toc.js"></script>
-<script type="text/javascript" src="../../doxygen-awesome-tabs.js"></script>
-<script type="text/javascript" src="../../toggle-alternative-theme.js"></script>
-<script type="text/javascript">
-    DoxygenAwesomeFragmentCopyButton.init()
-    DoxygenAwesomeDarkModeToggle.init()
-    DoxygenAwesomeParagraphLink.init()
-    DoxygenAwesomeInteractiveToc.init()
-    DoxygenAwesomeTabs.init()
-</script>
 <link href="../../navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../navtreedata.js"></script>
 <script type="text/javascript" src="../../navtree.js"></script>
@@ -45,28 +21,22 @@
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-<!-- https://tholman.com/github-corners/ -->
-<a href="https://github.com/XII-Technologies/APIDocumentation" class="github-corner" title="View source on GitHub" target="_blank" rel="noopener noreferrer">
-    <svg viewBox="0 0 250 250" width="40" height="40" style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
-    <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
  <tbody>
- <tr style="height: 56px;">
+ <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="../../XII-Logo.png"/></td>
-  <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">XII
-   &#160;<span id="projectnumber">1.0.0</span>
+  <td id="projectalign">
+   <div id="projectname">XII<span id="projectnumber">&#160;Release 0.1.0</span>
    </div>
-   <div id="projectbrief">A high-performance simulation engine.</div>
   </td>
  </tr>
  </tbody>
 </table>
 </div>
 <!-- end header part -->
-<!-- Generated by Doxygen 1.12.0 -->
+<!-- Generated by Doxygen 1.13.2 -->
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
 var searchBox = new SearchBox("searchBox", "../../search/",'.html');
@@ -157,7 +127,7 @@ $(function(){initNavTree('d7/d4d/_interval_scheduler__inl_8h_source.html','../..
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="comment">// static</span></div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>XII_ALWAYS_INLINE <span class="keywordtype">float</span> xiiIntervalSchedulerBase::GetRandomZeroToOne(<span class="keywordtype">int</span> pos, xiiUInt32&amp; seed)</div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>{</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>  <span class="keywordflow">return</span> <a class="code hl_function" href="../../db/d5d/structxii_simd_random.html#a1ccdd3dfbc7b2e9f687360d102ded2d9">xiiSimdRandom::FloatZeroToOne</a>(<a class="code hl_class" href="../../d5/d4f/classxii_simd_vec4i.html">xiiSimdVec4i</a>(pos), <a class="code hl_class" href="../../d9/d21/classxii_simd_vec4u.html">xiiSimdVec4u</a>(seed++)).x();</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>  <span class="keywordflow">return</span> <a class="code hl_function" href="../../db/d5d/structxii_simd_random.html#a1ccdd3dfbc7b2e9f687360d102ded2d9">xiiSimdRandom::FloatZeroToOne</a>(xiiSimdVec4i(pos), xiiSimdVec4u(seed++)).x();</div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>}</div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="keyword">constexpr</span> <a class="code hl_struct" href="../../d7/dc1/structxii_time.html">xiiTime</a> s_JitterRange = <a class="code hl_function" href="../../d7/dc1/structxii_time.html#addb607142bc0c04689cf8b856882d827">xiiTime::MakeFromMicroseconds</a>(10);</div>
@@ -165,32 +135,32 @@ $(function(){initNavTree('d7/d4d/_interval_scheduler__inl_8h_source.html','../..
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="comment">// static</span></div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>XII_ALWAYS_INLINE <a class="code hl_struct" href="../../d7/dc1/structxii_time.html">xiiTime</a> xiiIntervalSchedulerBase::GetRandomTimeJitter(<span class="keywordtype">int</span> pos, xiiUInt32&amp; seed)</div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>{</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>  <span class="keyword">const</span> <span class="keywordtype">float</span> x = <a class="code hl_function" href="../../db/d5d/structxii_simd_random.html#a1ccdd3dfbc7b2e9f687360d102ded2d9">xiiSimdRandom::FloatZeroToOne</a>(<a class="code hl_class" href="../../d5/d4f/classxii_simd_vec4i.html">xiiSimdVec4i</a>(pos), <a class="code hl_class" href="../../d9/d21/classxii_simd_vec4u.html">xiiSimdVec4u</a>(seed++)).x();</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>  <span class="keyword">const</span> <span class="keywordtype">float</span> x = <a class="code hl_function" href="../../db/d5d/structxii_simd_random.html#a1ccdd3dfbc7b2e9f687360d102ded2d9">xiiSimdRandom::FloatZeroToOne</a>(xiiSimdVec4i(pos), xiiSimdVec4u(seed++)).x();</div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>  <span class="keywordflow">return</span> s_JitterRange * (x * 2.0f - 1.0f);</div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>}</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span></div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="keywordtype">bool</span> <a class="code hl_class" href="../../db/d37/classxii_interval_scheduler.html">xiiIntervalScheduler&lt;T&gt;::Data::IsValid</a>()<span class="keyword"> const</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="keywordtype">bool</span> xiiIntervalScheduler&lt;T&gt;::Data::IsValid()<span class="keyword"> const</span></div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="keyword"></span>{</div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>  <span class="keywordflow">return</span> m_Interval.<a class="code hl_function" href="../../d7/dc1/structxii_time.html#a57b03e112c0de4abead2d8a5407cb6c0">IsZeroOrPositive</a>();</div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>}</div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="keywordtype">void</span> <a class="code hl_class" href="../../db/d37/classxii_interval_scheduler.html">xiiIntervalScheduler&lt;T&gt;::Data::MarkAsInvalid</a>()</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="keywordtype">void</span> xiiIntervalScheduler&lt;T&gt;::Data::MarkAsInvalid()</div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>{</div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>  m_Interval = <a class="code hl_function" href="../../d7/dc1/structxii_time.html#a13a76900b064afcfc26d8a85d096e26d">xiiTime::MakeFromSeconds</a>(-1);</div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>}</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span></div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="keywordtype">void</span> <a class="code hl_class" href="../../db/d37/classxii_interval_scheduler.html">xiiIntervalScheduler&lt;T&gt;::AddOrUpdateWork</a>(<span class="keyword">const</span> T&amp; work, <a class="code hl_struct" href="../../d7/dc1/structxii_time.html">xiiTime</a> interval)</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="keywordtype">void</span> xiiIntervalScheduler&lt;T&gt;::AddOrUpdateWork(<span class="keyword">const</span> T&amp; work, xiiTime interval)</div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>{</div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>  <span class="keyword">typename</span> DataMap::Iterator it;</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>  <span class="keywordflow">if</span> (m_WorkIdToData.<a class="code hl_function" href="../../d0/da6/classxii_hash_table_base.html#a1bb2c25791102db37be680622f5402af">TryGetValue</a>(work, it))</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>  <span class="keywordflow">if</span> (m_WorkIdToData.TryGetValue(work, it))</div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>  {</div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    <span class="keyword">auto</span>&amp;   data        = it.Value();</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    <a class="code hl_struct" href="../../d7/dc1/structxii_time.html">xiiTime</a> oldInterval = data.m_Interval;</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    xiiTime oldInterval = data.m_Interval;</div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    <span class="keywordflow">if</span> (interval == oldInterval)</div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>      <span class="keywordflow">return</span>;</div>
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
@@ -203,7 +173,7 @@ $(function(){initNavTree('d7/d4d/_interval_scheduler__inl_8h_source.html','../..
 <div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>  Data data;</div>
 <div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>  data.m_Work              = work;</div>
 <div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>  data.m_Interval          = <a class="code hl_function" href="../../d1/d37/namespacexii_math.html#a4d6f8bf4858245e40a706a3aabd0a59e">xiiMath::Max</a>(interval, <a class="code hl_function" href="../../d7/dc1/structxii_time.html#af50981ed01769e51493ea3d573c007ae">xiiTime::MakeZero</a>());</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>  data.m_DueTime           = m_CurrentTime + GetRandomZeroToOne(m_Data.<a class="code hl_function" href="../../d6/d86/classxii_map_base.html#a7d45470ae96a09b661b5fb92fad8d694">GetCount</a>(), m_uiSeed) * data.m_Interval;</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>  data.m_DueTime           = m_CurrentTime + GetRandomZeroToOne(m_Data.GetCount(), m_uiSeed) * data.m_Interval;</div>
 <div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>  data.m_LastScheduledTime = m_CurrentTime;</div>
 <div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
 <div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>  m_WorkIdToData[work] = InsertData(data);</div>
@@ -214,10 +184,10 @@ $(function(){initNavTree('d7/d4d/_interval_scheduler__inl_8h_source.html','../..
 <div class="foldopen" id="foldopen00084" data-start="{" data-end="}">
 <div class="line"><a id="l00084" name="l00084"></a><span class="lineno"><a class="line" href="../../db/d37/classxii_interval_scheduler.html#a2aa961b42d07fb4d9db366afea9d783d">   84</a></span> </div>
 <div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span><span class="keywordtype">void</span> <a class="code hl_class" href="../../db/d37/classxii_interval_scheduler.html">xiiIntervalScheduler&lt;T&gt;::RemoveWork</a>(<span class="keyword">const</span> T&amp; work)</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span><span class="keywordtype">void</span> xiiIntervalScheduler&lt;T&gt;::RemoveWork(<span class="keyword">const</span> T&amp; work)</div>
 <div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>{</div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>  <span class="keyword">typename</span> <a class="code hl_struct" href="../../d3/d1e/structxii_map_base_iterator_base.html">DataMap::Iterator</a> it;</div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>  <span class="keywordflow">if</span> (m_WorkIdToData.<a class="code hl_function" href="../../d0/da6/classxii_hash_table_base.html#a61a55f0964be78ad4db6dfddc4026312">Remove</a>(work, &amp;it))</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>  <span class="keyword">typename</span> DataMap::Iterator it;</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>  <span class="keywordflow">if</span> (m_WorkIdToData.Remove(work, &amp;it))</div>
 <div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>  {</div>
 <div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    <span class="keyword">auto</span>&amp;   data        = it.<a class="code hl_function" href="../../d3/d1e/structxii_map_base_iterator_base.html#af74ae7406530dbaaccfe8cbfef5348e2">Value</a>();</div>
 <div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    <a class="code hl_struct" href="../../d7/dc1/structxii_time.html">xiiTime</a> oldInterval = data.m_Interval;</div>
@@ -229,7 +199,7 @@ $(function(){initNavTree('d7/d4d/_interval_scheduler__inl_8h_source.html','../..
 <div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>}</div>
 <div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span> </div>
 <div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span><a class="code hl_struct" href="../../d7/dc1/structxii_time.html">xiiTime</a> <a class="code hl_class" href="../../db/d37/classxii_interval_scheduler.html">xiiIntervalScheduler&lt;T&gt;::GetInterval</a>(<span class="keyword">const</span> T&amp; work)<span class="keyword"> const</span></div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span><a class="code hl_struct" href="../../d7/dc1/structxii_time.html">xiiTime</a> xiiIntervalScheduler&lt;T&gt;::GetInterval(<span class="keyword">const</span> T&amp; work)<span class="keyword"> const</span></div>
 <div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span><span class="keyword"></span>{</div>
 <div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>  <span class="keyword">typename</span> DataMap::Iterator it;</div>
 <div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>  XII_VERIFY(m_WorkIdToData.<a class="code hl_function" href="../../d0/da6/classxii_hash_table_base.html#a1bb2c25791102db37be680622f5402af">TryGetValue</a>(work, it), <span class="stringliteral">&quot;Entry not found&quot;</span>);</div>
@@ -238,14 +208,14 @@ $(function(){initNavTree('d7/d4d/_interval_scheduler__inl_8h_source.html','../..
 <div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span> </div>
 <div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
 <div class="foldopen" id="foldopen00109" data-start="{" data-end="}">
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno"><a class="line" href="../../db/d37/classxii_interval_scheduler.html#a2aa961b42d07fb4d9db366afea9d783d">  109</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="../../db/d37/classxii_interval_scheduler.html#a2aa961b42d07fb4d9db366afea9d783d">xiiIntervalScheduler&lt;T&gt;::Update</a>(<a class="code hl_struct" href="../../d7/dc1/structxii_time.html">xiiTime</a> deltaTime, <a class="code hl_struct" href="../../dc/d84/structxii_delegate.html">RunWorkCallback</a> runWorkCallback)</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno"><a class="line" href="../../db/d37/classxii_interval_scheduler.html#a2aa961b42d07fb4d9db366afea9d783d">  109</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="../../db/d37/classxii_interval_scheduler.html#a2aa961b42d07fb4d9db366afea9d783d">xiiIntervalScheduler&lt;T&gt;::Update</a>(<a class="code hl_struct" href="../../d7/dc1/structxii_time.html">xiiTime</a> deltaTime, RunWorkCallback runWorkCallback)</div>
 <div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>{</div>
 <div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>  <span class="keywordflow">if</span> (deltaTime.<a class="code hl_function" href="../../d7/dc1/structxii_time.html#a6131c2212540b71ec5a9ea42f7c93dcd">IsZeroOrNegative</a>())</div>
 <div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>    <span class="keywordflow">return</span>;</div>
 <div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span> </div>
 <div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>  m_CurrentTime += deltaTime;</div>
 <div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span> </div>
-<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>  <span class="keywordflow">if</span> (m_Data.<a class="code hl_function" href="../../d6/d86/classxii_map_base.html#a749be38b6f8d77ab0cf04f47b98483c4">IsEmpty</a>())</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>  <span class="keywordflow">if</span> (m_Data.IsEmpty())</div>
 <div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>    <span class="keywordflow">return</span>;</div>
 <div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span> </div>
 <div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>  {</div>
@@ -257,13 +227,13 @@ $(function(){initNavTree('d7/d4d/_interval_scheduler__inl_8h_source.html','../..
 <div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>    fNumWork *= deltaTime.<a class="code hl_function" href="../../d7/dc1/structxii_time.html#a3263cf5a3955dbca58bd7ab78acd2599">GetSeconds</a>();</div>
 <div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span> </div>
 <div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>    <span class="keyword">const</span> <span class="keywordtype">float</span>     fRemainder      = <span class="keyword">static_cast&lt;</span><span class="keywordtype">float</span><span class="keyword">&gt;</span>(<a class="code hl_function" href="../../d1/d37/namespacexii_math.html#aa61976adbc40a0c6c6c08a5471bfaa27">xiiMath::Fraction</a>(fNumWork));</div>
-<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>    <span class="keyword">const</span> <span class="keywordtype">int</span>       pos             = <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(m_CurrentTime.<a class="code hl_function" href="../../d7/dc1/structxii_time.html#a17347f540811281033cc9363754e8da0">GetNanoseconds</a>());</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>    <span class="keyword">const</span> <span class="keywordtype">int</span>       pos             = <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(m_CurrentTime.GetNanoseconds());</div>
 <div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>    <span class="keyword">const</span> xiiUInt32 extra           = GetRandomZeroToOne(pos, m_uiSeed) &lt; fRemainder ? 1 : 0;</div>
-<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>    <span class="keyword">const</span> xiiUInt32 uiScheduleCount = <a class="code hl_function" href="../../d1/d37/namespacexii_math.html#a2c660f80f0df5bb91a751d12a93cb9cb">xiiMath::Min</a>(<span class="keyword">static_cast&lt;</span>xiiUInt32<span class="keyword">&gt;</span>(fNumWork) + extra + m_Histogram[0], m_Data.<a class="code hl_function" href="../../d6/d86/classxii_map_base.html#a7d45470ae96a09b661b5fb92fad8d694">GetCount</a>());</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>    <span class="keyword">const</span> xiiUInt32 uiScheduleCount = <a class="code hl_function" href="../../d1/d37/namespacexii_math.html#a2c660f80f0df5bb91a751d12a93cb9cb">xiiMath::Min</a>(<span class="keyword">static_cast&lt;</span>xiiUInt32<span class="keyword">&gt;</span>(fNumWork) + extra + m_Histogram[0], m_Data.GetCount());</div>
 <div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span> </div>
 <div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>    <span class="comment">// schedule work</span></div>
 <div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>    {</div>
-<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>      <span class="keyword">auto</span> RunWork = [&amp;](<span class="keyword">typename</span> <a class="code hl_struct" href="../../d3/d1e/structxii_map_base_iterator_base.html">DataMap::Iterator</a> it, xiiUInt32 uiIndex) {</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>      <span class="keyword">auto</span> RunWork = [&amp;](<span class="keyword">typename</span> DataMap::Iterator it, xiiUInt32 uiIndex) {</div>
 <div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>        <span class="keyword">auto</span>&amp; data = it.<a class="code hl_function" href="../../d3/d1e/structxii_map_base_iterator_base.html#af74ae7406530dbaaccfe8cbfef5348e2">Value</a>();</div>
 <div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>        <span class="keywordflow">if</span> (data.IsValid())</div>
 <div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>        {</div>
@@ -277,10 +247,10 @@ $(function(){initNavTree('d7/d4d/_interval_scheduler__inl_8h_source.html','../..
 <div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>          data.m_LastScheduledTime = m_CurrentTime;</div>
 <div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>        }</div>
 <div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span> </div>
-<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>        m_ScheduledWork.<a class="code hl_function" href="../../da/d4c/classxii_array_base.html#a8b86f58a2097871da0e0b91eecc823e4">PushBack</a>(it);</div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>        m_ScheduledWork.PushBack(it);</div>
 <div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>      };</div>
 <div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span> </div>
-<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>      <span class="keyword">auto</span> it = m_Data.<a class="code hl_function" href="../../d6/d86/classxii_map_base.html#aca107a29ba86aa6c7ec6314e28c5fd80">GetIterator</a>();</div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>      <span class="keyword">auto</span> it = m_Data.GetIterator();</div>
 <div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>      <span class="keywordflow">for</span> (xiiUInt32 i = 0; i &lt; uiScheduleCount; ++i, ++it)</div>
 <div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>      {</div>
 <div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>        RunWork(it, i);</div>
@@ -311,7 +281,7 @@ $(function(){initNavTree('d7/d4d/_interval_scheduler__inl_8h_source.html','../..
 <div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>        m_WorkIdToData[data.m_Work] = InsertData(data);</div>
 <div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>      }</div>
 <div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span> </div>
-<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>      m_Data.<a class="code hl_function" href="../../d6/d86/classxii_map_base.html#a0b42808ba9fffccdce603c115d4d633b">Remove</a>(it);</div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>      m_Data.Remove(it);</div>
 <div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>    }</div>
 <div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>    m_ScheduledWork.Clear();</div>
 <div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>  }</div>
@@ -320,7 +290,7 @@ $(function(){initNavTree('d7/d4d/_interval_scheduler__inl_8h_source.html','../..
 </div>
 <div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span> </div>
 <div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span><span class="keywordtype">void</span> <a class="code hl_class" href="../../db/d37/classxii_interval_scheduler.html">xiiIntervalScheduler&lt;T&gt;::Clear</a>()</div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span><span class="keywordtype">void</span> xiiIntervalScheduler&lt;T&gt;::Clear()</div>
 <div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>{</div>
 <div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>  m_CurrentTime = <a class="code hl_function" href="../../d7/dc1/structxii_time.html#af50981ed01769e51493ea3d573c007ae">xiiTime::MakeZero</a>();</div>
 <div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>  m_uiSeed      = 0;</div>
@@ -331,45 +301,31 @@ $(function(){initNavTree('d7/d4d/_interval_scheduler__inl_8h_source.html','../..
 <div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>}</div>
 <div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span> </div>
 <div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>XII_FORCE_INLINE <span class="keyword">typename</span> <a class="code hl_struct" href="../../d3/d1e/structxii_map_base_iterator_base.html">xiiIntervalScheduler&lt;T&gt;::DataMap::Iterator</a> <a class="code hl_class" href="../../db/d37/classxii_interval_scheduler.html">xiiIntervalScheduler&lt;T&gt;::InsertData</a>(Data&amp; data)</div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>XII_FORCE_INLINE <span class="keyword">typename</span> xiiIntervalScheduler&lt;T&gt;::DataMap::Iterator xiiIntervalScheduler&lt;T&gt;::InsertData(Data&amp; data)</div>
 <div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>{</div>
 <div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>  <span class="comment">// make sure that we have a unique due time since the map can&#39;t store multiple keys with the same value</span></div>
 <div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>  <span class="keywordtype">int</span> pos = 0;</div>
-<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>  <span class="keywordflow">while</span> (m_Data.<a class="code hl_function" href="../../d6/d86/classxii_map_base.html#aa6e27dc54ec8cc3f247e2e70e7ef0968">Contains</a>(data.m_DueTime))</div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>  <span class="keywordflow">while</span> (m_Data.Contains(data.m_DueTime))</div>
 <div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>  {</div>
 <div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>    data.m_DueTime += GetRandomTimeJitter(pos++, m_uiSeed);</div>
 <div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>  }</div>
 <div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span> </div>
-<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>  <span class="keywordflow">return</span> m_Data.<a class="code hl_function" href="../../d6/d86/classxii_map_base.html#a7e48397530157eae5193f83fdced2ed1">Insert</a>(data.m_DueTime, data);</div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>  <span class="keywordflow">return</span> m_Data.Insert(data.m_DueTime, data);</div>
 <div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>}</div>
-<div class="ttc" id="aclassxii_array_base_html_a8b86f58a2097871da0e0b91eecc823e4"><div class="ttname"><a href="../../da/d4c/classxii_array_base.html#a8b86f58a2097871da0e0b91eecc823e4">xiiArrayBase::PushBack</a></div><div class="ttdeci">void PushBack(const T &amp;value)</div><div class="ttdoc">Pushes value at the end of the array.</div><div class="ttdef"><b>Definition</b> ArrayBase_inl.h:325</div></div>
 <div class="ttc" id="aclassxii_hash_table_base_html_a1bb2c25791102db37be680622f5402af"><div class="ttname"><a href="../../d0/da6/classxii_hash_table_base.html#a1bb2c25791102db37be680622f5402af">xiiHashTableBase::TryGetValue</a></div><div class="ttdeci">bool TryGetValue(const CompatibleKeyType &amp;key, ValueType &amp;out_value) const</div><div class="ttdoc">Returns whether an entry with the given key was found and if found writes out the corresponding value...</div></div>
-<div class="ttc" id="aclassxii_hash_table_base_html_a61a55f0964be78ad4db6dfddc4026312"><div class="ttname"><a href="../../d0/da6/classxii_hash_table_base.html#a61a55f0964be78ad4db6dfddc4026312">xiiHashTableBase::Remove</a></div><div class="ttdeci">bool Remove(const CompatibleKeyType &amp;key, ValueType *out_pOldValue=nullptr)</div><div class="ttdoc">Removes the entry with the given key. Returns whether an entry was removed and optionally writes out ...</div></div>
 <div class="ttc" id="aclassxii_hash_table_base_html_a6e77dc508bfe72bb60bc8ae923fa6353"><div class="ttname"><a href="../../d0/da6/classxii_hash_table_base.html#a6e77dc508bfe72bb60bc8ae923fa6353">xiiHashTableBase::Clear</a></div><div class="ttdeci">void Clear()</div><div class="ttdoc">Clears the table.</div><div class="ttdef"><b>Definition</b> HashTable_inl.h:350</div></div>
-<div class="ttc" id="aclassxii_interval_scheduler_html"><div class="ttname"><a href="../../db/d37/classxii_interval_scheduler.html">xiiIntervalScheduler</a></div><div class="ttdef"><b>Definition</b> IntervalScheduler.h:65</div></div>
 <div class="ttc" id="aclassxii_interval_scheduler_html_a2aa961b42d07fb4d9db366afea9d783d"><div class="ttname"><a href="../../db/d37/classxii_interval_scheduler.html#a2aa961b42d07fb4d9db366afea9d783d">xiiIntervalScheduler::Update</a></div><div class="ttdeci">void Update(xiiTime deltaTime, RunWorkCallback runWorkCallback)</div><div class="ttdoc">Advances the scheduler by deltaTime and triggers runWorkCallback for each work that should be run dur...</div><div class="ttdef"><b>Definition</b> IntervalScheduler_inl.h:109</div></div>
-<div class="ttc" id="aclassxii_map_base_html_a0b42808ba9fffccdce603c115d4d633b"><div class="ttname"><a href="../../d6/d86/classxii_map_base.html#a0b42808ba9fffccdce603c115d4d633b">xiiMapBase::Remove</a></div><div class="ttdeci">bool Remove(const CompatibleKeyType &amp;key)</div><div class="ttdoc">Erases the key/value pair with the given key, if it exists. O(log n) operation.</div><div class="ttdef"><b>Definition</b> Map_inl.h:541</div></div>
 <div class="ttc" id="aclassxii_map_base_html_a6df7dde5c973d1e39914cad08fa129e9"><div class="ttname"><a href="../../d6/d86/classxii_map_base.html#a6df7dde5c973d1e39914cad08fa129e9">xiiMapBase::Clear</a></div><div class="ttdeci">void Clear()</div><div class="ttdoc">Destroys all elements in the map and resets its size to zero.</div><div class="ttdef"><b>Definition</b> Map_inl.h:171</div></div>
-<div class="ttc" id="aclassxii_map_base_html_a749be38b6f8d77ab0cf04f47b98483c4"><div class="ttname"><a href="../../d6/d86/classxii_map_base.html#a749be38b6f8d77ab0cf04f47b98483c4">xiiMapBase::IsEmpty</a></div><div class="ttdeci">bool IsEmpty() const</div><div class="ttdoc">Returns whether there are no elements in the map. O(1) operation.</div><div class="ttdef"><b>Definition</b> Map_inl.h:190</div></div>
-<div class="ttc" id="aclassxii_map_base_html_a7d45470ae96a09b661b5fb92fad8d694"><div class="ttname"><a href="../../d6/d86/classxii_map_base.html#a7d45470ae96a09b661b5fb92fad8d694">xiiMapBase::GetCount</a></div><div class="ttdeci">xiiUInt32 GetCount() const</div><div class="ttdoc">Returns the number of elements currently stored in the map. O(1) operation.</div><div class="ttdef"><b>Definition</b> Map_inl.h:196</div></div>
-<div class="ttc" id="aclassxii_map_base_html_a7e48397530157eae5193f83fdced2ed1"><div class="ttname"><a href="../../d6/d86/classxii_map_base.html#a7e48397530157eae5193f83fdced2ed1">xiiMapBase::Insert</a></div><div class="ttdeci">Iterator Insert(CompatibleKeyType &amp;&amp;key, CompatibleValueType &amp;&amp;value)</div><div class="ttdoc">Inserts the key/value pair into the tree and returns an Iterator to it. O(log n) operation.</div><div class="ttdef"><b>Definition</b> Map_inl.h:531</div></div>
-<div class="ttc" id="aclassxii_map_base_html_aa6e27dc54ec8cc3f247e2e70e7ef0968"><div class="ttname"><a href="../../d6/d86/classxii_map_base.html#aa6e27dc54ec8cc3f247e2e70e7ef0968">xiiMapBase::Contains</a></div><div class="ttdeci">bool Contains(const CompatibleKeyType &amp;key) const</div><div class="ttdoc">Checks whether the given key is in the container.</div></div>
-<div class="ttc" id="aclassxii_map_base_html_aca107a29ba86aa6c7ec6314e28c5fd80"><div class="ttname"><a href="../../d6/d86/classxii_map_base.html#aca107a29ba86aa6c7ec6314e28c5fd80">xiiMapBase::GetIterator</a></div><div class="ttdeci">Iterator GetIterator()</div><div class="ttdoc">Returns an Iterator to the very first element.</div><div class="ttdef"><b>Definition</b> Map_inl.h:203</div></div>
 <div class="ttc" id="aclassxii_memory_utils_html_aa46340f1eaae0121ec1bcb712ea2755f"><div class="ttname"><a href="../../d8/d9d/classxii_memory_utils.html#aa46340f1eaae0121ec1bcb712ea2755f">xiiMemoryUtils::ZeroFill</a></div><div class="ttdeci">static void ZeroFill(T *pDestination, size_t uiCount=1)</div><div class="ttdoc">Zeros every byte in the provided memory buffer.</div></div>
-<div class="ttc" id="aclassxii_simd_vec4i_html"><div class="ttname"><a href="../../d5/d4f/classxii_simd_vec4i.html">xiiSimdVec4i</a></div><div class="ttdoc">A SIMD 4-component vector class of signed 32b integers.</div><div class="ttdef"><b>Definition</b> SimdVec4i.h:9</div></div>
-<div class="ttc" id="aclassxii_simd_vec4u_html"><div class="ttname"><a href="../../d9/d21/classxii_simd_vec4u.html">xiiSimdVec4u</a></div><div class="ttdoc">A SIMD 4-component vector class of unsigned 32b integers.</div><div class="ttdef"><b>Definition</b> SimdVec4u.h:7</div></div>
 <div class="ttc" id="anamespacexii_math_html_a2c660f80f0df5bb91a751d12a93cb9cb"><div class="ttname"><a href="../../d1/d37/namespacexii_math.html#a2c660f80f0df5bb91a751d12a93cb9cb">xiiMath::Min</a></div><div class="ttdeci">constexpr XII_ALWAYS_INLINE T Min(T f1, T f2)</div><div class="ttdoc">Returns the smaller value, f1 or f2.</div><div class="ttdef"><b>Definition</b> Math_inl.h:26</div></div>
 <div class="ttc" id="anamespacexii_math_html_a4d6f8bf4858245e40a706a3aabd0a59e"><div class="ttname"><a href="../../d1/d37/namespacexii_math.html#a4d6f8bf4858245e40a706a3aabd0a59e">xiiMath::Max</a></div><div class="ttdeci">constexpr XII_ALWAYS_INLINE T Max(T f1, T f2)</div><div class="ttdoc">Returns the greater value, f1 or f2.</div><div class="ttdef"><b>Definition</b> Math_inl.h:38</div></div>
 <div class="ttc" id="anamespacexii_math_html_aa61976adbc40a0c6c6c08a5471bfaa27"><div class="ttname"><a href="../../d1/d37/namespacexii_math.html#aa61976adbc40a0c6c6c08a5471bfaa27">xiiMath::Fraction</a></div><div class="ttdeci">XII_ALWAYS_INLINE Type Fraction(Type f)</div><div class="ttdoc">Returns the fraction-part of f.</div><div class="ttdef"><b>Definition</b> Math_inl.h:314</div></div>
 <div class="ttc" id="anamespacexii_math_html_ae7fbda648b6f9bcc4dc23962d06c93f4"><div class="ttname"><a href="../../d1/d37/namespacexii_math.html#ae7fbda648b6f9bcc4dc23962d06c93f4">xiiMath::Sqrt</a></div><div class="ttdeci">XII_ALWAYS_INLINE double Sqrt(double f)</div><div class="ttdoc">Returns the square root of f.</div><div class="ttdef"><b>Definition</b> MathDouble_inl.h:120</div></div>
-<div class="ttc" id="astructxii_delegate_html"><div class="ttname"><a href="../../dc/d84/structxii_delegate.html">xiiDelegate</a></div><div class="ttdoc">A generic delegate class which supports static functions and member functions.</div><div class="ttdef"><b>Definition</b> Delegate.h:76</div></div>
 <div class="ttc" id="astructxii_map_base_const_iterator_base_html_abd893cb6933f0d410b0839016aadc8f3"><div class="ttname"><a href="../../db/d2e/structxii_map_base_const_iterator_base.html#abd893cb6933f0d410b0839016aadc8f3">xiiMapBaseConstIteratorBase::IsValid</a></div><div class="ttdeci">XII_ALWAYS_INLINE bool IsValid() const</div><div class="ttdoc">Checks whether this iterator points to a valid element.</div><div class="ttdef"><b>Definition</b> Map.h:27</div></div>
-<div class="ttc" id="astructxii_map_base_iterator_base_html"><div class="ttname"><a href="../../d3/d1e/structxii_map_base_iterator_base.html">xiiMapBaseIteratorBase</a></div><div class="ttdoc">Forward Iterator to iterate over all elements in sorted order.</div><div class="ttdef"><b>Definition</b> Map.h:100</div></div>
-<div class="ttc" id="astructxii_map_base_iterator_base_html_af74ae7406530dbaaccfe8cbfef5348e2"><div class="ttname"><a href="../../d3/d1e/structxii_map_base_iterator_base.html#af74ae7406530dbaaccfe8cbfef5348e2">xiiMapBaseIteratorBase::Value</a></div><div class="ttdeci">XII_FORCE_INLINE ValueType &amp; Value()</div><div class="ttdoc">Returns the 'value' of the element that this iterator points to.</div><div class="ttdef"><b>Definition</b> Map.h:116</div></div>
+<div class="ttc" id="astructxii_map_base_iterator_base_html_af74ae7406530dbaaccfe8cbfef5348e2"><div class="ttname"><a href="../../d3/d1e/structxii_map_base_iterator_base.html#af74ae7406530dbaaccfe8cbfef5348e2">xiiMapBaseIteratorBase::Value</a></div><div class="ttdeci">XII_FORCE_INLINE ValueType &amp; Value()</div><div class="ttdoc">Returns the &#39;value&#39; of the element that this iterator points to.</div><div class="ttdef"><b>Definition</b> Map.h:116</div></div>
 <div class="ttc" id="astructxii_simd_random_html_a1ccdd3dfbc7b2e9f687360d102ded2d9"><div class="ttname"><a href="../../db/d5d/structxii_simd_random.html#a1ccdd3dfbc7b2e9f687360d102ded2d9">xiiSimdRandom::FloatZeroToOne</a></div><div class="ttdeci">static xiiSimdVec4f FloatZeroToOne(const xiiSimdVec4i &amp;vPosition, const xiiSimdVec4u &amp;vSeed=xiiSimdVec4u::MakeZero())</div><div class="ttdoc">Returns 4 random float values in range [0.0 ; 1.0], ie. including zero and one.</div><div class="ttdef"><b>Definition</b> SimdRandom_inl.h:24</div></div>
 <div class="ttc" id="astructxii_time_html"><div class="ttname"><a href="../../d7/dc1/structxii_time.html">xiiTime</a></div><div class="ttdoc">The time class encapsulates a double value storing the time in seconds.</div><div class="ttdef"><b>Definition</b> Time.h:12</div></div>
 <div class="ttc" id="astructxii_time_html_a13a76900b064afcfc26d8a85d096e26d"><div class="ttname"><a href="../../d7/dc1/structxii_time.html#a13a76900b064afcfc26d8a85d096e26d">xiiTime::MakeFromSeconds</a></div><div class="ttdeci">XII_ALWAYS_INLINE static constexpr xiiTime MakeFromSeconds(double fSeconds)</div><div class="ttdoc">Creates an instance of xiiTime that was initialized from seconds.</div><div class="ttdef"><b>Definition</b> Time.h:27</div></div>
-<div class="ttc" id="astructxii_time_html_a17347f540811281033cc9363754e8da0"><div class="ttname"><a href="../../d7/dc1/structxii_time.html#a17347f540811281033cc9363754e8da0">xiiTime::GetNanoseconds</a></div><div class="ttdeci">constexpr double GetNanoseconds() const</div><div class="ttdoc">Returns the nanoseconds value.</div><div class="ttdef"><b>Definition</b> Time_inl.h:15</div></div>
 <div class="ttc" id="astructxii_time_html_a3263cf5a3955dbca58bd7ab78acd2599"><div class="ttname"><a href="../../d7/dc1/structxii_time.html#a3263cf5a3955dbca58bd7ab78acd2599">xiiTime::GetSeconds</a></div><div class="ttdeci">constexpr double GetSeconds() const</div><div class="ttdoc">Returns the seconds value.</div><div class="ttdef"><b>Definition</b> Time_inl.h:30</div></div>
 <div class="ttc" id="astructxii_time_html_a56165dd620a60ef093339d0323455a01"><div class="ttname"><a href="../../d7/dc1/structxii_time.html#a56165dd620a60ef093339d0323455a01">xiiTime::IsZero</a></div><div class="ttdeci">XII_ALWAYS_INLINE constexpr bool IsZero() const</div><div class="ttdoc">Returns true if the stored time is exactly zero. That typically means the value was not changed from ...</div><div class="ttdef"><b>Definition</b> Time.h:44</div></div>
 <div class="ttc" id="astructxii_time_html_a57b03e112c0de4abead2d8a5407cb6c0"><div class="ttname"><a href="../../d7/dc1/structxii_time.html#a57b03e112c0de4abead2d8a5407cb6c0">xiiTime::IsZeroOrPositive</a></div><div class="ttdeci">XII_ALWAYS_INLINE constexpr bool IsZeroOrPositive() const</div><div class="ttdoc">Returns true if the stored time is zero or positive.</div><div class="ttdef"><b>Definition</b> Time.h:56</div></div>
@@ -382,7 +338,7 @@ $(function(){initNavTree('d7/d4d/_interval_scheduler__inl_8h_source.html','../..
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.html">home</a></li><li class="navelem"><a class="el" href="../../dir_1036706e55c22cab35bc1c58ee689f1d.html">runner</a></li><li class="navelem"><a class="el" href="../../dir_629f8151d55d307162ff2d619fb1783d.html">work</a></li><li class="navelem"><a class="el" href="../../dir_1ddc44fe1263a8c7935fa6130b7d9499.html">XII</a></li><li class="navelem"><a class="el" href="../../dir_2c1b6808f12952f4c36e05ba7068379a.html">XII</a></li><li class="navelem"><a class="el" href="../../dir_b5a1c4ecfca018ad24b729e213296d41.html">Source</a></li><li class="navelem"><a class="el" href="../../dir_e321052006a51284e67389ab20037e7c.html">Engine</a></li><li class="navelem"><a class="el" href="../../dir_6934db396743bb3844d563c7fa1f32a7.html">Core</a></li><li class="navelem"><a class="el" href="../../dir_adebcc6adcff8ac19ff9e173a546d91f.html">Utils</a></li><li class="navelem"><a class="el" href="../../dir_2ba6aee8da357115503a25145cffa2fc.html">Implementation</a></li><li class="navelem"><b>IntervalScheduler_inl.h</b></li>
-    <li class="footer">Generated on Fri Mar 21 2025 22:41:55 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
+    <li class="footer">Generated on Fri Mar 21 2025 23:27:38 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 </body>

@@ -1,39 +1,15 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<meta name="generator" content="Doxygen 1.12.0"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.13.2"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<!-- BEGIN opengraph metadata -->
-<meta property="og:title" content="XII" />
-<meta property="og:image" content="XII-Logo.png" />
-<meta property="og:description" content="An advanced high-performance simulation engine." />
-<meta property="og:url" content="https://www.xiitechnologies.com" />
-<!-- END opengraph metadata -->
-<!-- BEGIN twitter metadata -->
-<meta name="twitter:image:src" content="XII-Logo.png" />
-<meta name="twitter:title" content="XII" />
-<meta name="twitter:description" content="An advanced high-performance simulation engine." />
-<!-- END twitter metadata -->
 <title>XII: /home/runner/work/XII/XII/Source/Engine/Foundation/Math/Implementation/Quat_inl.h Source File</title>
+<link rel="icon" href="../../XII-Logo.png" type="image/x-icon" />
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
-<link rel="icon" type="image/svg+xml" href="XII-Logo.png"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
-<script type="text/javascript" src="../../doxygen-awesome-darkmode-toggle.js"></script>
-<script type="text/javascript" src="../../doxygen-awesome-fragment-copy-button.js"></script>
-<script type="text/javascript" src="../../doxygen-awesome-paragraph-link.js"></script>
-<script type="text/javascript" src="../../doxygen-awesome-interactive-toc.js"></script>
-<script type="text/javascript" src="../../doxygen-awesome-tabs.js"></script>
-<script type="text/javascript" src="../../toggle-alternative-theme.js"></script>
-<script type="text/javascript">
-    DoxygenAwesomeFragmentCopyButton.init()
-    DoxygenAwesomeDarkModeToggle.init()
-    DoxygenAwesomeParagraphLink.init()
-    DoxygenAwesomeInteractiveToc.init()
-    DoxygenAwesomeTabs.init()
-</script>
 <link href="../../navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../navtreedata.js"></script>
 <script type="text/javascript" src="../../navtree.js"></script>
@@ -45,28 +21,22 @@
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-<!-- https://tholman.com/github-corners/ -->
-<a href="https://github.com/XII-Technologies/APIDocumentation" class="github-corner" title="View source on GitHub" target="_blank" rel="noopener noreferrer">
-    <svg viewBox="0 0 250 250" width="40" height="40" style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
-    <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
  <tbody>
- <tr style="height: 56px;">
+ <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="../../XII-Logo.png"/></td>
-  <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">XII
-   &#160;<span id="projectnumber">1.0.0</span>
+  <td id="projectalign">
+   <div id="projectname">XII<span id="projectnumber">&#160;Release 0.1.0</span>
    </div>
-   <div id="projectbrief">A high-performance simulation engine.</div>
   </td>
  </tr>
  </tbody>
 </table>
 </div>
 <!-- end header part -->
-<!-- Generated by Doxygen 1.12.0 -->
+<!-- Generated by Doxygen 1.13.2 -->
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
 var searchBox = new SearchBox("searchBox", "../../search/",'.html');
@@ -136,7 +106,7 @@ $(function(){initNavTree('de/d9b/_quat__inl_8h_source.html','../../'); initResiz
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;Foundation/Math/Vec3.h&gt;</span></div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Type&gt;</div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>XII_ALWAYS_INLINE <a class="code hl_class" href="../../d9/d1b/classxii_quat_template.html">xiiQuatTemplate&lt;Type&gt;::xiiQuatTemplate</a>()</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>XII_ALWAYS_INLINE xiiQuatTemplate&lt;Type&gt;::xiiQuatTemplate()</div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>{</div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#if XII_ENABLED(XII_MATH_CHECK_FOR_NAN)</span></div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>  <span class="comment">// Initialize all data to NaN in debug mode to find problems with uninitialized data easier.</span></div>
@@ -150,7 +120,7 @@ $(function(){initNavTree('de/d9b/_quat__inl_8h_source.html','../../'); initResiz
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Type&gt;</div>
 <div class="foldopen" id="foldopen00020" data-start="{" data-end="}">
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="../../d9/d1b/classxii_quat_template.html#a220ecd9cecaa3d6942fecbbae7d2500e">   20</a></span>XII_ALWAYS_INLINE <a class="code hl_class" href="../../d9/d1b/classxii_quat_template.html">xiiQuatTemplate&lt;Type&gt;::xiiQuatTemplate</a>(Type inX, Type inY, Type inZ, Type inW) :</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="../../d9/d1b/classxii_quat_template.html#a220ecd9cecaa3d6942fecbbae7d2500e">   20</a></span>XII_ALWAYS_INLINE xiiQuatTemplate&lt;Type&gt;::xiiQuatTemplate(Type inX, Type inY, Type inZ, Type inW) :</div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>  x(inX), y(inY), z(inZ), w(inW)</div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>{</div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>}</div>
@@ -158,17 +128,17 @@ $(function(){initNavTree('de/d9b/_quat__inl_8h_source.html','../../'); initResiz
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Type&gt;</div>
 <div class="foldopen" id="foldopen00026" data-start="{" data-end="}">
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="../../d9/d1b/classxii_quat_template.html#a45c67720a172302b4e216ad10f0869b5">   26</a></span>XII_ALWAYS_INLINE <span class="keyword">const</span> <a class="code hl_class" href="../../d9/d1b/classxii_quat_template.html">xiiQuatTemplate&lt;Type&gt;</a> <a class="code hl_function" href="../../d9/d1b/classxii_quat_template.html#a45c67720a172302b4e216ad10f0869b5">xiiQuatTemplate&lt;Type&gt;::MakeIdentity</a>()</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="../../d9/d1b/classxii_quat_template.html#a45c67720a172302b4e216ad10f0869b5">   26</a></span>XII_ALWAYS_INLINE <span class="keyword">const</span> xiiQuatTemplate&lt;Type&gt; <a class="code hl_function" href="../../d9/d1b/classxii_quat_template.html#a45c67720a172302b4e216ad10f0869b5">xiiQuatTemplate&lt;Type&gt;::MakeIdentity</a>()</div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>{</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>  <span class="keywordflow">return</span> <a class="code hl_class" href="../../d9/d1b/classxii_quat_template.html">xiiQuatTemplate</a>(0, 0, 0, 1);</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>  <span class="keywordflow">return</span> xiiQuatTemplate(0, 0, 0, 1);</div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>}</div>
 </div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Type&gt;</div>
 <div class="foldopen" id="foldopen00032" data-start="{" data-end="}">
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="../../d9/d1b/classxii_quat_template.html#a59f583ce7eec689c9f150652b68c20e6">   32</a></span>XII_ALWAYS_INLINE <a class="code hl_class" href="../../d9/d1b/classxii_quat_template.html">xiiQuatTemplate&lt;Type&gt;</a> <a class="code hl_function" href="../../d9/d1b/classxii_quat_template.html#a59f583ce7eec689c9f150652b68c20e6">xiiQuatTemplate&lt;Type&gt;::MakeFromElements</a>(Type inX, Type inY, Type inZ, Type inW)</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="../../d9/d1b/classxii_quat_template.html#a59f583ce7eec689c9f150652b68c20e6">   32</a></span>XII_ALWAYS_INLINE xiiQuatTemplate&lt;Type&gt; <a class="code hl_function" href="../../d9/d1b/classxii_quat_template.html#a59f583ce7eec689c9f150652b68c20e6">xiiQuatTemplate&lt;Type&gt;::MakeFromElements</a>(Type inX, Type inY, Type inZ, Type inW)</div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>{</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>  <span class="keywordflow">return</span> <a class="code hl_class" href="../../d9/d1b/classxii_quat_template.html">xiiQuatTemplate&lt;Type&gt;</a>(inX, inY, inZ, inW);</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>  <span class="keywordflow">return</span> xiiQuatTemplate&lt;Type&gt;(inX, inY, inZ, inW);</div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>}</div>
 </div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
@@ -184,7 +154,7 @@ $(function(){initNavTree('de/d9b/_quat__inl_8h_source.html','../../'); initResiz
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Type&gt;</div>
 <div class="foldopen" id="foldopen00047" data-start="{" data-end="}">
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="../../d9/d1b/classxii_quat_template.html#ae2db7d2cb373f9ff5c91629ac0d88795">   47</a></span><a class="code hl_class" href="../../d9/d1b/classxii_quat_template.html">xiiQuatTemplate&lt;Type&gt;</a> <a class="code hl_function" href="../../d9/d1b/classxii_quat_template.html#ae2db7d2cb373f9ff5c91629ac0d88795">xiiQuatTemplate&lt;Type&gt;::MakeFromAxisAndAngle</a>(<span class="keyword">const</span> <a class="code hl_class" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3Template&lt;Type&gt;</a>&amp; vRotationAxis, <a class="code hl_class" href="../../d3/ddb/classxii_angle_template.html">xiiAngleTemplate&lt;Type&gt;</a> angle)</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="../../d9/d1b/classxii_quat_template.html#ae2db7d2cb373f9ff5c91629ac0d88795">   47</a></span>xiiQuatTemplate&lt;Type&gt; <a class="code hl_function" href="../../d9/d1b/classxii_quat_template.html#ae2db7d2cb373f9ff5c91629ac0d88795">xiiQuatTemplate&lt;Type&gt;::MakeFromAxisAndAngle</a>(<span class="keyword">const</span> <a class="code hl_class" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3Template&lt;Type&gt;</a>&amp; vRotationAxis, <a class="code hl_class" href="../../d3/ddb/classxii_angle_template.html">xiiAngleTemplate&lt;Type&gt;</a> angle)</div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>{</div>
 <div class="foldopen" id="foldopen00049" data-start="{" data-end="}">
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="../../d9/d1b/classxii_quat_template.html#a45c67720a172302b4e216ad10f0869b5">   49</a></span>  <span class="keyword">const</span> <a class="code hl_class" href="../../d3/ddb/classxii_angle_template.html">xiiAngleTemplate&lt;Type&gt;</a> halfAngle = angle * (Type)0.5;</div>
@@ -193,7 +163,7 @@ $(function(){initNavTree('de/d9b/_quat__inl_8h_source.html','../../'); initResiz
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>  Type                  w = xiiMath::Cos(halfAngle);</div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
 <div class="foldopen" id="foldopen00054" data-start="{" data-end="}">
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="../../d9/d1b/classxii_quat_template.html#ae88f50c75d2e37f3b4f4d2b735d20915">   54</a></span>  <span class="keywordflow">return</span> <a class="code hl_class" href="../../d9/d1b/classxii_quat_template.html">xiiQuatTemplate&lt;Type&gt;</a>(v.x, v.y, v.z, w);</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="../../d9/d1b/classxii_quat_template.html#ae88f50c75d2e37f3b4f4d2b735d20915">   54</a></span>  <span class="keywordflow">return</span> xiiQuatTemplate&lt;Type&gt;(v.x, v.y, v.z, w);</div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>}</div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Type&gt;</div>
@@ -250,39 +220,39 @@ $(function(){initNavTree('de/d9b/_quat__inl_8h_source.html','../../'); initResiz
 <div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>  XII_NAN_ASSERT(<span class="keyword">this</span>);</div>
 <div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span> </div>
 <div class="foldopen" id="foldopen00099" data-start="{" data-end="}">
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno"><a class="line" href="../../d9/d1b/classxii_quat_template.html#a77e82ce5677442e006c325a65d9731fe">   99</a></span>  *<span class="keyword">this</span> = GetInverse();</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno"><a class="line" href="../../d9/d1b/classxii_quat_template.html#a77e82ce5677442e006c325a65d9731fe">   99</a></span>  *<span class="keyword">this</span> = <a class="code hl_function" href="../../d9/d1b/classxii_quat_template.html#a667d7d73fac575cd61cc7e565b1392d0">GetInverse</a>();</div>
 <div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>}</div>
 <div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span> </div>
 <div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Type&gt;</div>
 <div class="foldopen" id="foldopen00103" data-start="{" data-end="}">
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno"><a class="line" href="../../d9/d1b/classxii_quat_template.html#a667d7d73fac575cd61cc7e565b1392d0">  103</a></span>XII_FORCE_INLINE <span class="keyword">const</span> <a class="code hl_class" href="../../d9/d1b/classxii_quat_template.html">xiiQuatTemplate&lt;Type&gt;</a> <a class="code hl_function" href="../../d9/d1b/classxii_quat_template.html#a667d7d73fac575cd61cc7e565b1392d0">xiiQuatTemplate&lt;Type&gt;::GetInverse</a>()<span class="keyword"> const</span></div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno"><a class="line" href="../../d9/d1b/classxii_quat_template.html#a667d7d73fac575cd61cc7e565b1392d0">  103</a></span>XII_FORCE_INLINE <span class="keyword">const</span> xiiQuatTemplate&lt;Type&gt; <a class="code hl_function" href="../../d9/d1b/classxii_quat_template.html#a667d7d73fac575cd61cc7e565b1392d0">xiiQuatTemplate&lt;Type&gt;::GetInverse</a>()<span class="keyword"> const</span></div>
 <div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span><span class="keyword"></span>{</div>
 <div class="foldopen" id="foldopen00105" data-start="{" data-end="}">
 <div class="line"><a id="l00105" name="l00105"></a><span class="lineno"><a class="line" href="../../d9/d1b/classxii_quat_template.html#aa6d32f6602a305f9bb2b80d578db647f">  105</a></span>  XII_NAN_ASSERT(<span class="keyword">this</span>);</div>
 <div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span> </div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>  <span class="keywordflow">return</span> (<a class="code hl_class" href="../../d9/d1b/classxii_quat_template.html">xiiQuatTemplate</a>(-x, -y, -z, w));</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>  <span class="keywordflow">return</span> (xiiQuatTemplate(-x, -y, -z, w));</div>
 <div class="foldopen" id="foldopen00108" data-start="{" data-end="}">
 <div class="line"><a id="l00108" name="l00108"></a><span class="lineno"><a class="line" href="../../d9/d1b/classxii_quat_template.html#ae4acab9c811fa6a9f02c2312599526fc">  108</a></span>}</div>
 <div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span> </div>
 <div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Type&gt;</div>
 <div class="foldopen" id="foldopen00111" data-start="{" data-end="}">
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno"><a class="line" href="../../d9/d1b/classxii_quat_template.html#a6cfe8b6e653991280f68b8dc22c5e388">  111</a></span>XII_FORCE_INLINE <span class="keyword">const</span> <a class="code hl_class" href="../../d9/d1b/classxii_quat_template.html">xiiQuatTemplate&lt;Type&gt;</a> <a class="code hl_function" href="../../d9/d1b/classxii_quat_template.html#a6cfe8b6e653991280f68b8dc22c5e388">xiiQuatTemplate&lt;Type&gt;::GetNegated</a>()<span class="keyword"> const</span></div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno"><a class="line" href="../../d9/d1b/classxii_quat_template.html#a6cfe8b6e653991280f68b8dc22c5e388">  111</a></span>XII_FORCE_INLINE <span class="keyword">const</span> xiiQuatTemplate&lt;Type&gt; <a class="code hl_function" href="../../d9/d1b/classxii_quat_template.html#a6cfe8b6e653991280f68b8dc22c5e388">xiiQuatTemplate&lt;Type&gt;::GetNegated</a>()<span class="keyword"> const</span></div>
 <div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span><span class="keyword"></span>{</div>
 <div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>  XII_NAN_ASSERT(<span class="keyword">this</span>);</div>
 <div class="foldopen" id="foldopen00114" data-start="{" data-end="}">
 <div class="line"><a id="l00114" name="l00114"></a><span class="lineno"><a class="line" href="../../d9/d1b/classxii_quat_template.html#acac88d8e4caf8ddb378b3c8afcc1efce">  114</a></span> </div>
-<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>  <span class="keywordflow">return</span> (<a class="code hl_class" href="../../d9/d1b/classxii_quat_template.html">xiiQuatTemplate</a>(-x, -y, -z, -w));</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>  <span class="keywordflow">return</span> (xiiQuatTemplate(-x, -y, -z, -w));</div>
 <div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>}</div>
 <div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span> </div>
 <div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Type&gt;</div>
 <div class="foldopen" id="foldopen00119" data-start="{" data-end="}">
-<div class="line"><a id="l00119" name="l00119"></a><span class="lineno"><a class="line" href="../../d9/d1b/classxii_quat_template.html#a6e0a54212fcfe9b1926789427db98aac">  119</a></span>XII_FORCE_INLINE Type <a class="code hl_function" href="../../d9/d1b/classxii_quat_template.html#a6e0a54212fcfe9b1926789427db98aac">xiiQuatTemplate&lt;Type&gt;::Dot</a>(<span class="keyword">const</span> <a class="code hl_class" href="../../d9/d1b/classxii_quat_template.html">xiiQuatTemplate</a>&amp; rhs)<span class="keyword"> const</span></div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno"><a class="line" href="../../d9/d1b/classxii_quat_template.html#a6e0a54212fcfe9b1926789427db98aac">  119</a></span>XII_FORCE_INLINE Type <a class="code hl_function" href="../../d9/d1b/classxii_quat_template.html#a6e0a54212fcfe9b1926789427db98aac">xiiQuatTemplate&lt;Type&gt;::Dot</a>(<span class="keyword">const</span> xiiQuatTemplate&amp; rhs)<span class="keyword"> const</span></div>
 <div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span><span class="keyword"></span>{</div>
 <div class="foldopen" id="foldopen00121" data-start="{" data-end="}">
 <div class="line"><a id="l00121" name="l00121"></a><span class="lineno"><a class="line" href="../../d9/d1b/classxii_quat_template.html#a09a33fa5dcfe6cfaab85362445b27898">  121</a></span>  XII_NAN_ASSERT(<span class="keyword">this</span>);</div>
 <div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>  XII_NAN_ASSERT(&amp;rhs);</div>
 <div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span> </div>
-<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>  <span class="keywordflow">return</span> GetVectorPart().Dot(rhs.<a class="code hl_function" href="../../d9/d1b/classxii_quat_template.html#a59c86a2211ed5f8bde54987bcc50c49e">GetVectorPart</a>()) + w * rhs.w;</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>  <span class="keywordflow">return</span> <a class="code hl_function" href="../../d9/d1b/classxii_quat_template.html#a59c86a2211ed5f8bde54987bcc50c49e">GetVectorPart</a>().Dot(rhs.<a class="code hl_function" href="../../d9/d1b/classxii_quat_template.html#a59c86a2211ed5f8bde54987bcc50c49e">GetVectorPart</a>()) + w * rhs.w;</div>
 <div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>}</div>
 <div class="foldopen" id="foldopen00126" data-start="{" data-end="}">
 <div class="line"><a id="l00126" name="l00126"></a><span class="lineno"><a class="line" href="../../d9/d1b/classxii_quat_template.html#a1ccee339c17216c8ed01970c2c4bfea2">  126</a></span> </div>
@@ -296,11 +266,11 @@ $(function(){initNavTree('de/d9b/_quat__inl_8h_source.html','../../'); initResiz
 <div class="foldopen" id="foldopen00132" data-start="{" data-end="}">
 <div class="line"><a id="l00132" name="l00132"></a><span class="lineno"><a class="line" href="../../d9/d1b/classxii_quat_template.html#a6cfe8b6e653991280f68b8dc22c5e388">  132</a></span> </div>
 <div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Type&gt;</div>
-<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>XII_ALWAYS_INLINE <span class="keyword">const</span> <a class="code hl_class" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3Template&lt;Type&gt;</a> operator*(<span class="keyword">const</span> <a class="code hl_class" href="../../d9/d1b/classxii_quat_template.html">xiiQuatTemplate&lt;Type&gt;</a>&amp; q, <span class="keyword">const</span> <a class="code hl_class" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3Template&lt;Type&gt;</a>&amp; v)</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>XII_ALWAYS_INLINE <span class="keyword">const</span> <a class="code hl_class" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3Template&lt;Type&gt;</a> operator*(<span class="keyword">const</span> xiiQuatTemplate&lt;Type&gt;&amp; q, <span class="keyword">const</span> <a class="code hl_class" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3Template&lt;Type&gt;</a>&amp; v)</div>
 <div class="foldopen" id="foldopen00135" data-start="{" data-end="}">
 <div class="line"><a id="l00135" name="l00135"></a><span class="lineno"><a class="line" href="../../d9/d1b/classxii_quat_template.html#a6e0a54212fcfe9b1926789427db98aac">  135</a></span>{</div>
-<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>  <a class="code hl_class" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3Template&lt;Type&gt;</a> t = q.<a class="code hl_function" href="../../d9/d1b/classxii_quat_template.html#a59c86a2211ed5f8bde54987bcc50c49e">GetVectorPart</a>().CrossRH(v) * (Type)2;</div>
-<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>  <span class="keywordflow">return</span> v + q.w * t + q.<a class="code hl_function" href="../../d9/d1b/classxii_quat_template.html#a59c86a2211ed5f8bde54987bcc50c49e">GetVectorPart</a>().CrossRH(t);</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>  <a class="code hl_class" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3Template&lt;Type&gt;</a> t = q.GetVectorPart().<a class="code hl_function" href="../../d9/d9a/classxii_vec3_template.html#a658acf243e57aea0c7252d6918eca809">CrossRH</a>(v) * (Type)2;</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>  <span class="keywordflow">return</span> v + q.w * t + q.GetVectorPart().CrossRH(t);</div>
 <div class="foldopen" id="foldopen00138" data-start="{" data-end="}">
 <div class="line"><a id="l00138" name="l00138"></a><span class="lineno"><a class="line" href="../../d9/d1b/classxii_quat_template.html#ab8e8505692df6d368692c6e3ea6c1de8">  138</a></span>}</div>
 <div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span> </div>
@@ -308,7 +278,7 @@ $(function(){initNavTree('de/d9b/_quat__inl_8h_source.html','../../'); initResiz
 <div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>XII_ALWAYS_INLINE <span class="keyword">const</span> <a class="code hl_class" href="../../d9/d1b/classxii_quat_template.html">xiiQuatTemplate&lt;Type&gt;</a> operator*(<span class="keyword">const</span> <a class="code hl_class" href="../../d9/d1b/classxii_quat_template.html">xiiQuatTemplate&lt;Type&gt;</a>&amp; q1, <span class="keyword">const</span> <a class="code hl_class" href="../../d9/d1b/classxii_quat_template.html">xiiQuatTemplate&lt;Type&gt;</a>&amp; q2)</div>
 <div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>{</div>
 <div class="foldopen" id="foldopen00143" data-start="{" data-end="}">
-<div class="line"><a id="l00143" name="l00143"></a><span class="lineno"><a class="line" href="../../d9/d1b/classxii_quat_template.html#a8d26c87261cce8521c28c4b3a1b12f99">  143</a></span>  <a class="code hl_class" href="../../d9/d1b/classxii_quat_template.html">xiiQuatTemplate&lt;Type&gt;</a> q;</div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno"><a class="line" href="../../d9/d1b/classxii_quat_template.html#a8d26c87261cce8521c28c4b3a1b12f99">  143</a></span>  xiiQuatTemplate&lt;Type&gt; q;</div>
 <div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span> </div>
 <div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>  q.w = q1.w * q2.w - (q1.x * q2.x + q1.y * q2.y + q1.z * q2.z);</div>
 <div class="foldopen" id="foldopen00146" data-start="{" data-end="}">
@@ -328,7 +298,7 @@ $(function(){initNavTree('de/d9b/_quat__inl_8h_source.html','../../'); initResiz
 <div class="foldopen" id="foldopen00159" data-start="{" data-end="}">
 <div class="line"><a id="l00159" name="l00159"></a><span class="lineno"><a class="line" href="../../d9/d1b/classxii_quat_template.html#ae8d1ef81f529aa01674735ee3095d2a0">  159</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="../../d9/d1b/classxii_quat_template.html#ae8d1ef81f529aa01674735ee3095d2a0">xiiQuatTemplate&lt;Type&gt;::IsValid</a>(Type fEpsilon)<span class="keyword"> const</span></div>
 <div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span><span class="keyword"></span>{</div>
-<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>  <span class="keywordflow">if</span> (!GetVectorPart().IsValid())</div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>  <span class="keywordflow">if</span> (!<a class="code hl_function" href="../../d9/d1b/classxii_quat_template.html#a59c86a2211ed5f8bde54987bcc50c49e">GetVectorPart</a>().<a class="code hl_function" href="../../d9/d1b/classxii_quat_template.html#ae8d1ef81f529aa01674735ee3095d2a0">IsValid</a>())</div>
 <div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>  <span class="keywordflow">if</span> (!xiiMath::IsFinite(w))</div>
 <div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
@@ -349,9 +319,9 @@ $(function(){initNavTree('de/d9b/_quat__inl_8h_source.html','../../'); initResiz
 <div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span> </div>
 <div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Type&gt;</div>
 <div class="foldopen" id="foldopen00178" data-start="{" data-end="}">
-<div class="line"><a id="l00178" name="l00178"></a><span class="lineno"><a class="line" href="../../d9/d1b/classxii_quat_template.html#a09a33fa5dcfe6cfaab85362445b27898">  178</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="../../d9/d1b/classxii_quat_template.html#a09a33fa5dcfe6cfaab85362445b27898">xiiQuatTemplate&lt;Type&gt;::IsEqualRotation</a>(<span class="keyword">const</span> <a class="code hl_class" href="../../d9/d1b/classxii_quat_template.html">xiiQuatTemplate&lt;Type&gt;</a>&amp; qOther, Type fEpsilon)<span class="keyword"> const</span></div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno"><a class="line" href="../../d9/d1b/classxii_quat_template.html#a09a33fa5dcfe6cfaab85362445b27898">  178</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="../../d9/d1b/classxii_quat_template.html#a09a33fa5dcfe6cfaab85362445b27898">xiiQuatTemplate&lt;Type&gt;::IsEqualRotation</a>(<span class="keyword">const</span> xiiQuatTemplate&lt;Type&gt;&amp; qOther, Type fEpsilon)<span class="keyword"> const</span></div>
 <div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span><span class="keyword"></span>{</div>
-<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>  <span class="keywordflow">if</span> (GetVectorPart().IsEqual(qOther.<a class="code hl_function" href="../../d9/d1b/classxii_quat_template.html#a59c86a2211ed5f8bde54987bcc50c49e">GetVectorPart</a>(), (Type)0.00001) &amp;&amp; <a class="code hl_function" href="../../d1/d37/namespacexii_math.html#a20047812a62c07b9ac2144a5520c18f0">xiiMath::IsEqual</a>(w, qOther.w, (Type)0.00001))</div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>  <span class="keywordflow">if</span> (<a class="code hl_function" href="../../d9/d1b/classxii_quat_template.html#a59c86a2211ed5f8bde54987bcc50c49e">GetVectorPart</a>().IsEqual(qOther.<a class="code hl_function" href="../../d9/d1b/classxii_quat_template.html#a59c86a2211ed5f8bde54987bcc50c49e">GetVectorPart</a>(), (Type)0.00001) &amp;&amp; <a class="code hl_function" href="../../d1/d37/namespacexii_math.html#a20047812a62c07b9ac2144a5520c18f0">xiiMath::IsEqual</a>(w, qOther.w, (Type)0.00001))</div>
 <div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>  {</div>
 <div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>  }</div>
@@ -359,13 +329,13 @@ $(function(){initNavTree('de/d9b/_quat__inl_8h_source.html','../../'); initResiz
 <div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>  <a class="code hl_class" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3Template&lt;Type&gt;</a>  vA1, vA2;</div>
 <div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>  <a class="code hl_class" href="../../d3/ddb/classxii_angle_template.html">xiiAngleTemplate&lt;Type&gt;</a> A1, A2;</div>
 <div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span> </div>
-<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>  GetRotationAxisAndAngle(vA1, A1);</div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>  <a class="code hl_function" href="../../d9/d1b/classxii_quat_template.html#a77e82ce5677442e006c325a65d9731fe">GetRotationAxisAndAngle</a>(vA1, A1);</div>
 <div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>  qOther.<a class="code hl_function" href="../../d9/d1b/classxii_quat_template.html#a77e82ce5677442e006c325a65d9731fe">GetRotationAxisAndAngle</a>(vA2, A2);</div>
 <div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span> </div>
-<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>  <span class="keywordflow">if</span> ((A1.<a class="code hl_function" href="../../d3/ddb/classxii_angle_template.html#a2b5342a182d1fdedc3db8a49cd4a2e21">IsEqualSimple</a>(A2, <a class="code hl_class" href="../../d3/ddb/classxii_angle_template.html">xiiAngleTemplate&lt;Type&gt;::MakeFromDegree</a>(<span class="keyword">static_cast&lt;</span>Type<span class="keyword">&gt;</span>(fEpsilon)))) &amp;&amp; (vA1.<a class="code hl_function" href="../../d9/d9a/classxii_vec3_template.html#aa298cc63bf4b22e7c9548096d774317f">IsEqual</a>(vA2, fEpsilon)))</div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>  <span class="keywordflow">if</span> ((A1.<a class="code hl_function" href="../../d3/ddb/classxii_angle_template.html#a2b5342a182d1fdedc3db8a49cd4a2e21">IsEqualSimple</a>(A2, <a class="code hl_function" href="../../d3/ddb/classxii_angle_template.html#ad54cb856684d34910eaa24e78e90c71f">xiiAngleTemplate&lt;Type&gt;::MakeFromDegree</a>(<span class="keyword">static_cast&lt;</span>Type<span class="keyword">&gt;</span>(fEpsilon)))) &amp;&amp; (vA1.<a class="code hl_function" href="../../d9/d9a/classxii_vec3_template.html#aa298cc63bf4b22e7c9548096d774317f">IsEqual</a>(vA2, fEpsilon)))</div>
 <div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span> </div>
-<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>  <span class="keywordflow">if</span> ((A1.<a class="code hl_function" href="../../d3/ddb/classxii_angle_template.html#a2b5342a182d1fdedc3db8a49cd4a2e21">IsEqualSimple</a>(-A2, <a class="code hl_class" href="../../d3/ddb/classxii_angle_template.html">xiiAngleTemplate&lt;Type&gt;::MakeFromDegree</a>(<span class="keyword">static_cast&lt;</span>Type<span class="keyword">&gt;</span>(fEpsilon)))) &amp;&amp; (vA1.<a class="code hl_function" href="../../d9/d9a/classxii_vec3_template.html#aa298cc63bf4b22e7c9548096d774317f">IsEqual</a>(-vA2, fEpsilon)))</div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>  <span class="keywordflow">if</span> ((A1.<a class="code hl_function" href="../../d3/ddb/classxii_angle_template.html#a2b5342a182d1fdedc3db8a49cd4a2e21">IsEqualSimple</a>(-A2, <a class="code hl_function" href="../../d3/ddb/classxii_angle_template.html#ad54cb856684d34910eaa24e78e90c71f">xiiAngleTemplate&lt;Type&gt;::MakeFromDegree</a>(<span class="keyword">static_cast&lt;</span>Type<span class="keyword">&gt;</span>(fEpsilon)))) &amp;&amp; (vA1.<a class="code hl_function" href="../../d9/d9a/classxii_vec3_template.html#aa298cc63bf4b22e7c9548096d774317f">IsEqual</a>(-vA2, fEpsilon)))</div>
 <div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span> </div>
 <div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>  <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
@@ -449,7 +419,7 @@ $(function(){initNavTree('de/d9b/_quat__inl_8h_source.html','../../'); initResiz
 <div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span> </div>
 <div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Type&gt;</div>
 <div class="foldopen" id="foldopen00272" data-start="{" data-end="}">
-<div class="line"><a id="l00272" name="l00272"></a><span class="lineno"><a class="line" href="../../d9/d1b/classxii_quat_template.html#a664b4032d4eecb0a43870aac8dcd2277">  272</a></span><a class="code hl_class" href="../../d9/d1b/classxii_quat_template.html">xiiQuatTemplate&lt;Type&gt;</a> <a class="code hl_function" href="../../d9/d1b/classxii_quat_template.html#a664b4032d4eecb0a43870aac8dcd2277">xiiQuatTemplate&lt;Type&gt;::MakeFromMat3</a>(<span class="keyword">const</span> <a class="code hl_class" href="../../d3/d74/classxii_mat3_template.html">xiiMat3Template&lt;Type&gt;</a>&amp; m)</div>
+<div class="line"><a id="l00272" name="l00272"></a><span class="lineno"><a class="line" href="../../d9/d1b/classxii_quat_template.html#a664b4032d4eecb0a43870aac8dcd2277">  272</a></span>xiiQuatTemplate&lt;Type&gt; <a class="code hl_function" href="../../d9/d1b/classxii_quat_template.html#a664b4032d4eecb0a43870aac8dcd2277">xiiQuatTemplate&lt;Type&gt;::MakeFromMat3</a>(<span class="keyword">const</span> <a class="code hl_class" href="../../d3/d74/classxii_mat3_template.html">xiiMat3Template&lt;Type&gt;</a>&amp; m)</div>
 <div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span>{</div>
 <div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span>  XII_NAN_ASSERT(&amp;m);</div>
 <div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span> </div>
@@ -492,7 +462,7 @@ $(function(){initNavTree('de/d9b/_quat__inl_8h_source.html','../../'); initResiz
 <div class="line"><a id="l00312" name="l00312"></a><span class="lineno">  312</span>    val[k] = (m.Element(i, k) + m.Element(k, i)) * t;</div>
 <div class="line"><a id="l00313" name="l00313"></a><span class="lineno">  313</span>  }</div>
 <div class="line"><a id="l00314" name="l00314"></a><span class="lineno">  314</span> </div>
-<div class="line"><a id="l00315" name="l00315"></a><span class="lineno">  315</span>  <a class="code hl_class" href="../../d9/d1b/classxii_quat_template.html">xiiQuatTemplate&lt;Type&gt;</a> q;</div>
+<div class="line"><a id="l00315" name="l00315"></a><span class="lineno">  315</span>  xiiQuatTemplate&lt;Type&gt; q;</div>
 <div class="line"><a id="l00316" name="l00316"></a><span class="lineno">  316</span>  q.x = val[0];</div>
 <div class="line"><a id="l00317" name="l00317"></a><span class="lineno">  317</span>  q.y = val[1];</div>
 <div class="line"><a id="l00318" name="l00318"></a><span class="lineno">  318</span>  q.z = val[2];</div>
@@ -511,8 +481,8 @@ $(function(){initNavTree('de/d9b/_quat__inl_8h_source.html','../../'); initResiz
 <div class="line"><a id="l00329" name="l00329"></a><span class="lineno">  329</span> </div>
 <div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span>  <a class="code hl_class" href="../../d3/d74/classxii_mat3_template.html">xiiMat3Template&lt;Type&gt;</a> m;</div>
 <div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span>  m.<a class="code hl_function" href="../../d3/d74/classxii_mat3_template.html#a305fa340274e241f3f0e8aaed8419c25">SetColumn</a>(0, x);</div>
-<div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span>  m.<a class="code hl_function" href="../../d3/d74/classxii_mat3_template.html#a305fa340274e241f3f0e8aaed8419c25">SetColumn</a>(1, y);</div>
-<div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span>  m.<a class="code hl_function" href="../../d3/d74/classxii_mat3_template.html#a305fa340274e241f3f0e8aaed8419c25">SetColumn</a>(2, z);</div>
+<div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span>  m.SetColumn(1, y);</div>
+<div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span>  m.SetColumn(2, z);</div>
 <div class="line"><a id="l00334" name="l00334"></a><span class="lineno">  334</span> </div>
 <div class="line"><a id="l00335" name="l00335"></a><span class="lineno">  335</span>  *<span class="keyword">this</span> = <a class="code hl_function" href="../../d9/d1b/classxii_quat_template.html#a664b4032d4eecb0a43870aac8dcd2277">xiiQuatTemplate&lt;Type&gt;::MakeFromMat3</a>(m);</div>
 <div class="line"><a id="l00336" name="l00336"></a><span class="lineno">  336</span>}</div>
@@ -528,16 +498,16 @@ $(function(){initNavTree('de/d9b/_quat__inl_8h_source.html','../../'); initResiz
 <div class="line"><a id="l00344" name="l00344"></a><span class="lineno">  344</span> </div>
 <div class="line"><a id="l00345" name="l00345"></a><span class="lineno">  345</span>  <a class="code hl_class" href="../../d3/d74/classxii_mat3_template.html">xiiMat3Template&lt;Type&gt;</a> m;</div>
 <div class="line"><a id="l00346" name="l00346"></a><span class="lineno">  346</span>  m.<a class="code hl_function" href="../../d3/d74/classxii_mat3_template.html#a305fa340274e241f3f0e8aaed8419c25">SetColumn</a>(0, x);</div>
-<div class="line"><a id="l00347" name="l00347"></a><span class="lineno">  347</span>  m.<a class="code hl_function" href="../../d3/d74/classxii_mat3_template.html#a305fa340274e241f3f0e8aaed8419c25">SetColumn</a>(1, y);</div>
-<div class="line"><a id="l00348" name="l00348"></a><span class="lineno">  348</span>  m.<a class="code hl_function" href="../../d3/d74/classxii_mat3_template.html#a305fa340274e241f3f0e8aaed8419c25">SetColumn</a>(2, z);</div>
+<div class="line"><a id="l00347" name="l00347"></a><span class="lineno">  347</span>  m.SetColumn(1, y);</div>
+<div class="line"><a id="l00348" name="l00348"></a><span class="lineno">  348</span>  m.SetColumn(2, z);</div>
 <div class="line"><a id="l00349" name="l00349"></a><span class="lineno">  349</span> </div>
 <div class="line"><a id="l00350" name="l00350"></a><span class="lineno">  350</span>  *<span class="keyword">this</span> = <a class="code hl_function" href="../../d9/d1b/classxii_quat_template.html#a664b4032d4eecb0a43870aac8dcd2277">xiiQuatTemplate&lt;Type&gt;::MakeFromMat3</a>(m);</div>
 <div class="line"><a id="l00351" name="l00351"></a><span class="lineno">  351</span>}</div>
 </div>
-<div class="line"><a id="l00352" name="l00352"></a><span class="lineno">  352</span> </div>
+<div class="line"><a id="l00352" name="l00352"></a><span class="lineno">  352</span></div>
 <div class="line"><a id="l00359" name="l00359"></a><span class="lineno">  359</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Type&gt;</div>
 <div class="foldopen" id="foldopen00360" data-start="{" data-end="}">
-<div class="line"><a id="l00360" name="l00360"></a><span class="lineno"><a class="line" href="../../d9/d1b/classxii_quat_template.html#ae7e511b8549e531592a619e00187180a">  360</a></span><a class="code hl_class" href="../../d9/d1b/classxii_quat_template.html">xiiQuatTemplate&lt;Type&gt;</a> <a class="code hl_function" href="../../d9/d1b/classxii_quat_template.html#ae7e511b8549e531592a619e00187180a">xiiQuatTemplate&lt;Type&gt;::MakeShortestRotation</a>(<span class="keyword">const</span> <a class="code hl_class" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3Template&lt;Type&gt;</a>&amp; vDirFrom, <span class="keyword">const</span> <a class="code hl_class" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3Template&lt;Type&gt;</a>&amp; vDirTo)</div>
+<div class="line"><a id="l00360" name="l00360"></a><span class="lineno"><a class="line" href="../../d9/d1b/classxii_quat_template.html#ae7e511b8549e531592a619e00187180a">  360</a></span>xiiQuatTemplate&lt;Type&gt; <a class="code hl_function" href="../../d9/d1b/classxii_quat_template.html#ae7e511b8549e531592a619e00187180a">xiiQuatTemplate&lt;Type&gt;::MakeShortestRotation</a>(<span class="keyword">const</span> <a class="code hl_class" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3Template&lt;Type&gt;</a>&amp; vDirFrom, <span class="keyword">const</span> <a class="code hl_class" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3Template&lt;Type&gt;</a>&amp; vDirTo)</div>
 <div class="line"><a id="l00361" name="l00361"></a><span class="lineno">  361</span>{</div>
 <div class="line"><a id="l00362" name="l00362"></a><span class="lineno">  362</span>  <span class="keyword">const</span> <a class="code hl_class" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3Template&lt;Type&gt;</a> v0 = vDirFrom.<a class="code hl_function" href="../../d9/d9a/classxii_vec3_template.html#ad8a8cb263d5d850828c0a01191a5a9d9">GetNormalized</a>();</div>
 <div class="line"><a id="l00363" name="l00363"></a><span class="lineno">  363</span>  <span class="keyword">const</span> <a class="code hl_class" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3Template&lt;Type&gt;</a> v1 = vDirTo.<a class="code hl_function" href="../../d9/d9a/classxii_vec3_template.html#ad8a8cb263d5d850828c0a01191a5a9d9">GetNormalized</a>();</div>
@@ -547,31 +517,31 @@ $(function(){initNavTree('de/d9b/_quat__inl_8h_source.html','../../'); initResiz
 <div class="line"><a id="l00367" name="l00367"></a><span class="lineno">  367</span>  <span class="comment">// if both vectors are identical -&gt; no rotation needed</span></div>
 <div class="line"><a id="l00368" name="l00368"></a><span class="lineno">  368</span>  <span class="keywordflow">if</span> (<a class="code hl_function" href="../../d1/d37/namespacexii_math.html#a20047812a62c07b9ac2144a5520c18f0">xiiMath::IsEqual</a>(fDot, (Type)1, (Type)0.0000001))</div>
 <div class="line"><a id="l00369" name="l00369"></a><span class="lineno">  369</span>  {</div>
-<div class="line"><a id="l00370" name="l00370"></a><span class="lineno">  370</span>    <span class="keywordflow">return</span> MakeIdentity();</div>
+<div class="line"><a id="l00370" name="l00370"></a><span class="lineno">  370</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="../../d9/d1b/classxii_quat_template.html#a45c67720a172302b4e216ad10f0869b5">MakeIdentity</a>();</div>
 <div class="line"><a id="l00371" name="l00371"></a><span class="lineno">  371</span>  }</div>
 <div class="line"><a id="l00372" name="l00372"></a><span class="lineno">  372</span>  <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code hl_function" href="../../d1/d37/namespacexii_math.html#a20047812a62c07b9ac2144a5520c18f0">xiiMath::IsEqual</a>(fDot, (Type)-1, (Type)0.0000001)) <span class="comment">// if both vectors are opposing</span></div>
 <div class="line"><a id="l00373" name="l00373"></a><span class="lineno">  373</span>  {</div>
 <div class="line"><a id="l00374" name="l00374"></a><span class="lineno">  374</span>    <span class="comment">// find an axis, that is not identical and not opposing, xiiVec3Template::Cross-product to find perpendicular vector, rotate around that</span></div>
 <div class="line"><a id="l00375" name="l00375"></a><span class="lineno">  375</span>    <span class="keywordflow">if</span> (<a class="code hl_function" href="../../d1/d37/namespacexii_math.html#a821b432e7a9c8ac292eb255ee11e9e10">xiiMath::Abs</a>(v0.<a class="code hl_function" href="../../d9/d9a/classxii_vec3_template.html#a29f0f6353abb8f23538f847533b56b4a">Dot</a>(<a class="code hl_class" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3Template&lt;Type&gt;</a>(1, 0, 0))) &lt; (Type)0.8)</div>
-<div class="line"><a id="l00376" name="l00376"></a><span class="lineno">  376</span>      <span class="keywordflow">return</span> MakeFromAxisAndAngle(v0.<a class="code hl_function" href="../../d9/d9a/classxii_vec3_template.html#a658acf243e57aea0c7252d6918eca809">CrossRH</a>(<a class="code hl_class" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3Template&lt;Type&gt;</a>(1, 0, 0)).GetNormalized(), <a class="code hl_class" href="../../d3/ddb/classxii_angle_template.html">xiiAngleTemplate&lt;Type&gt;::MakeFromRadian</a>(<a class="code hl_function" href="../../d1/d37/namespacexii_math.html#ab2c8efd61efaef9d965db8ff5625c8eb">xiiMath::Pi&lt;Type&gt;</a>()));</div>
+<div class="line"><a id="l00376" name="l00376"></a><span class="lineno">  376</span>      <span class="keywordflow">return</span> <a class="code hl_function" href="../../d9/d1b/classxii_quat_template.html#ae2db7d2cb373f9ff5c91629ac0d88795">MakeFromAxisAndAngle</a>(v0.<a class="code hl_function" href="../../d9/d9a/classxii_vec3_template.html#a658acf243e57aea0c7252d6918eca809">CrossRH</a>(<a class="code hl_class" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3Template&lt;Type&gt;</a>(1, 0, 0)).GetNormalized(), <a class="code hl_function" href="../../d3/ddb/classxii_angle_template.html#a9c40ebf5138d287759bf494db230a5b2">xiiAngleTemplate&lt;Type&gt;::MakeFromRadian</a>(<a class="code hl_function" href="../../d1/d37/namespacexii_math.html#ab2c8efd61efaef9d965db8ff5625c8eb">xiiMath::Pi&lt;Type&gt;</a>()));</div>
 <div class="line"><a id="l00377" name="l00377"></a><span class="lineno">  377</span>    <span class="keywordflow">else</span></div>
-<div class="line"><a id="l00378" name="l00378"></a><span class="lineno">  378</span>      <span class="keywordflow">return</span> MakeFromAxisAndAngle(v0.<a class="code hl_function" href="../../d9/d9a/classxii_vec3_template.html#a658acf243e57aea0c7252d6918eca809">CrossRH</a>(<a class="code hl_class" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3Template&lt;Type&gt;</a>(0, 1, 0)).GetNormalized(), <a class="code hl_class" href="../../d3/ddb/classxii_angle_template.html">xiiAngleTemplate&lt;Type&gt;::MakeFromRadian</a>(<a class="code hl_function" href="../../d1/d37/namespacexii_math.html#ab2c8efd61efaef9d965db8ff5625c8eb">xiiMath::Pi&lt;Type&gt;</a>()));</div>
+<div class="line"><a id="l00378" name="l00378"></a><span class="lineno">  378</span>      <span class="keywordflow">return</span> <a class="code hl_function" href="../../d9/d1b/classxii_quat_template.html#ae2db7d2cb373f9ff5c91629ac0d88795">MakeFromAxisAndAngle</a>(v0.<a class="code hl_function" href="../../d9/d9a/classxii_vec3_template.html#a658acf243e57aea0c7252d6918eca809">CrossRH</a>(<a class="code hl_class" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3Template&lt;Type&gt;</a>(0, 1, 0)).GetNormalized(), <a class="code hl_function" href="../../d3/ddb/classxii_angle_template.html#a9c40ebf5138d287759bf494db230a5b2">xiiAngleTemplate&lt;Type&gt;::MakeFromRadian</a>(<a class="code hl_function" href="../../d1/d37/namespacexii_math.html#ab2c8efd61efaef9d965db8ff5625c8eb">xiiMath::Pi&lt;Type&gt;</a>()));</div>
 <div class="line"><a id="l00379" name="l00379"></a><span class="lineno">  379</span>  }</div>
 <div class="line"><a id="l00380" name="l00380"></a><span class="lineno">  380</span> </div>
 <div class="line"><a id="l00381" name="l00381"></a><span class="lineno">  381</span>  <span class="keyword">const</span> <a class="code hl_class" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3Template&lt;Type&gt;</a> c = v0.<a class="code hl_function" href="../../d9/d9a/classxii_vec3_template.html#a658acf243e57aea0c7252d6918eca809">CrossRH</a>(v1);</div>
 <div class="line"><a id="l00382" name="l00382"></a><span class="lineno">  382</span>  <span class="keyword">const</span> Type                  d = v0.<a class="code hl_function" href="../../d9/d9a/classxii_vec3_template.html#a29f0f6353abb8f23538f847533b56b4a">Dot</a>(v1);</div>
 <div class="line"><a id="l00383" name="l00383"></a><span class="lineno">  383</span>  <span class="keyword">const</span> Type                  s = <a class="code hl_function" href="../../d1/d37/namespacexii_math.html#ae7fbda648b6f9bcc4dc23962d06c93f4">xiiMath::Sqrt</a>(((Type)1 + d) * (Type)2);</div>
 <div class="line"><a id="l00384" name="l00384"></a><span class="lineno">  384</span> </div>
-<div class="line"><a id="l00385" name="l00385"></a><span class="lineno">  385</span>  XII_ASSERT_DEBUG(c.<a class="code hl_function" href="../../d9/d9a/classxii_vec3_template.html#ada4983624dd9914c854b8e7fafa38b2b">IsValid</a>(), <span class="stringliteral">&quot;SetShortestRotation failed.&quot;</span>);</div>
+<div class="line"><a id="l00385" name="l00385"></a><span class="lineno">  385</span>  XII_ASSERT_DEBUG(c.IsValid(), <span class="stringliteral">&quot;SetShortestRotation failed.&quot;</span>);</div>
 <div class="line"><a id="l00386" name="l00386"></a><span class="lineno">  386</span> </div>
 <div class="line"><a id="l00387" name="l00387"></a><span class="lineno">  387</span>  <span class="keyword">const</span> Type fOneDivS = 1.0f / s;</div>
 <div class="line"><a id="l00388" name="l00388"></a><span class="lineno">  388</span> </div>
-<div class="line"><a id="l00389" name="l00389"></a><span class="lineno">  389</span>  <a class="code hl_class" href="../../d9/d1b/classxii_quat_template.html">xiiQuatTemplate&lt;Type&gt;</a> q;</div>
+<div class="line"><a id="l00389" name="l00389"></a><span class="lineno">  389</span>  xiiQuatTemplate&lt;Type&gt; q;</div>
 <div class="line"><a id="l00390" name="l00390"></a><span class="lineno">  390</span>  q.x = c.x * fOneDivS;</div>
 <div class="line"><a id="l00391" name="l00391"></a><span class="lineno">  391</span>  q.y = c.y * fOneDivS;</div>
 <div class="line"><a id="l00392" name="l00392"></a><span class="lineno">  392</span>  q.z = c.z * fOneDivS;</div>
 <div class="line"><a id="l00393" name="l00393"></a><span class="lineno">  393</span>  q.w = s / (Type)2;</div>
-<div class="line"><a id="l00394" name="l00394"></a><span class="lineno">  394</span>  q.<a class="code hl_function" href="../../d9/d1b/classxii_quat_template.html#aab1ecbbf3bfc5f7d00b32df1ce89e342">Normalize</a>();</div>
+<div class="line"><a id="l00394" name="l00394"></a><span class="lineno">  394</span>  q.Normalize();</div>
 <div class="line"><a id="l00395" name="l00395"></a><span class="lineno">  395</span> </div>
 <div class="line"><a id="l00396" name="l00396"></a><span class="lineno">  396</span>  <span class="keywordflow">return</span> q;</div>
 <div class="line"><a id="l00397" name="l00397"></a><span class="lineno">  397</span>}</div>
@@ -579,7 +549,7 @@ $(function(){initNavTree('de/d9b/_quat__inl_8h_source.html','../../'); initResiz
 <div class="line"><a id="l00398" name="l00398"></a><span class="lineno">  398</span> </div>
 <div class="line"><a id="l00399" name="l00399"></a><span class="lineno">  399</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Type&gt;</div>
 <div class="foldopen" id="foldopen00400" data-start="{" data-end="}">
-<div class="line"><a id="l00400" name="l00400"></a><span class="lineno"><a class="line" href="../../d9/d1b/classxii_quat_template.html#a3f56a071f4b43773680c2bff985610cb">  400</a></span><a class="code hl_class" href="../../d9/d1b/classxii_quat_template.html">xiiQuatTemplate&lt;Type&gt;</a> <a class="code hl_function" href="../../d9/d1b/classxii_quat_template.html#a3f56a071f4b43773680c2bff985610cb">xiiQuatTemplate&lt;Type&gt;::MakeSlerp</a>(<span class="keyword">const</span> <a class="code hl_class" href="../../d9/d1b/classxii_quat_template.html">xiiQuatTemplate&lt;Type&gt;</a>&amp; qFrom, <span class="keyword">const</span> <a class="code hl_class" href="../../d9/d1b/classxii_quat_template.html">xiiQuatTemplate&lt;Type&gt;</a>&amp; qTo, Type t)</div>
+<div class="line"><a id="l00400" name="l00400"></a><span class="lineno"><a class="line" href="../../d9/d1b/classxii_quat_template.html#a3f56a071f4b43773680c2bff985610cb">  400</a></span>xiiQuatTemplate&lt;Type&gt; <a class="code hl_function" href="../../d9/d1b/classxii_quat_template.html#a3f56a071f4b43773680c2bff985610cb">xiiQuatTemplate&lt;Type&gt;::MakeSlerp</a>(<span class="keyword">const</span> xiiQuatTemplate&lt;Type&gt;&amp; qFrom, <span class="keyword">const</span> xiiQuatTemplate&lt;Type&gt;&amp; qTo, Type t)</div>
 <div class="line"><a id="l00401" name="l00401"></a><span class="lineno">  401</span>{</div>
 <div class="line"><a id="l00402" name="l00402"></a><span class="lineno">  402</span>  XII_ASSERT_DEBUG((t &gt;= (Type)0) &amp;&amp; (t &lt;= (Type)1), <span class="stringliteral">&quot;Invalid lerp factor.&quot;</span>);</div>
 <div class="line"><a id="l00403" name="l00403"></a><span class="lineno">  403</span> </div>
@@ -623,7 +593,7 @@ $(function(){initNavTree('de/d9b/_quat__inl_8h_source.html','../../'); initResiz
 <div class="line"><a id="l00441" name="l00441"></a><span class="lineno">  441</span>  <span class="keywordflow">if</span> (bFlipSign)</div>
 <div class="line"><a id="l00442" name="l00442"></a><span class="lineno">  442</span>    t1 = -t1;</div>
 <div class="line"><a id="l00443" name="l00443"></a><span class="lineno">  443</span> </div>
-<div class="line"><a id="l00444" name="l00444"></a><span class="lineno">  444</span>  <a class="code hl_class" href="../../d9/d1b/classxii_quat_template.html">xiiQuatTemplate&lt;Type&gt;</a> q;</div>
+<div class="line"><a id="l00444" name="l00444"></a><span class="lineno">  444</span>  xiiQuatTemplate&lt;Type&gt; q;</div>
 <div class="line"><a id="l00445" name="l00445"></a><span class="lineno">  445</span> </div>
 <div class="line"><a id="l00446" name="l00446"></a><span class="lineno">  446</span>  q.x = t0 * qFrom.x;</div>
 <div class="line"><a id="l00447" name="l00447"></a><span class="lineno">  447</span>  q.y = t0 * qFrom.y;</div>
@@ -635,7 +605,7 @@ $(function(){initNavTree('de/d9b/_quat__inl_8h_source.html','../../'); initResiz
 <div class="line"><a id="l00453" name="l00453"></a><span class="lineno">  453</span>  q.z += t1 * qTo.z;</div>
 <div class="line"><a id="l00454" name="l00454"></a><span class="lineno">  454</span>  q.w += t1 * qTo.w;</div>
 <div class="line"><a id="l00455" name="l00455"></a><span class="lineno">  455</span> </div>
-<div class="line"><a id="l00456" name="l00456"></a><span class="lineno">  456</span>  q.<a class="code hl_function" href="../../d9/d1b/classxii_quat_template.html#aab1ecbbf3bfc5f7d00b32df1ce89e342">Normalize</a>();</div>
+<div class="line"><a id="l00456" name="l00456"></a><span class="lineno">  456</span>  q.Normalize();</div>
 <div class="line"><a id="l00457" name="l00457"></a><span class="lineno">  457</span> </div>
 <div class="line"><a id="l00458" name="l00458"></a><span class="lineno">  458</span>  <span class="keywordflow">return</span> q;</div>
 <div class="line"><a id="l00459" name="l00459"></a><span class="lineno">  459</span>}</div>
@@ -694,7 +664,7 @@ $(function(){initNavTree('de/d9b/_quat__inl_8h_source.html','../../'); initResiz
 <div class="line"><a id="l00509" name="l00509"></a><span class="lineno">  509</span> </div>
 <div class="line"><a id="l00510" name="l00510"></a><span class="lineno">  510</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Type&gt;</div>
 <div class="foldopen" id="foldopen00511" data-start="{" data-end="}">
-<div class="line"><a id="l00511" name="l00511"></a><span class="lineno"><a class="line" href="../../d9/d1b/classxii_quat_template.html#a8e68f57844cd49c546fbfef854b37200">  511</a></span><a class="code hl_class" href="../../d9/d1b/classxii_quat_template.html">xiiQuatTemplate&lt;Type&gt;</a> <a class="code hl_function" href="../../d9/d1b/classxii_quat_template.html#a8e68f57844cd49c546fbfef854b37200">xiiQuatTemplate&lt;Type&gt;::MakeFromEulerAngles</a>(<span class="keyword">const</span> <a class="code hl_class" href="../../d3/ddb/classxii_angle_template.html">xiiAngleTemplate&lt;Type&gt;</a>&amp; x, <span class="keyword">const</span> <a class="code hl_class" href="../../d3/ddb/classxii_angle_template.html">xiiAngleTemplate&lt;Type&gt;</a>&amp; y, <span class="keyword">const</span> <a class="code hl_class" href="../../d3/ddb/classxii_angle_template.html">xiiAngleTemplate&lt;Type&gt;</a>&amp; z)</div>
+<div class="line"><a id="l00511" name="l00511"></a><span class="lineno"><a class="line" href="../../d9/d1b/classxii_quat_template.html#a8e68f57844cd49c546fbfef854b37200">  511</a></span>xiiQuatTemplate&lt;Type&gt; <a class="code hl_function" href="../../d9/d1b/classxii_quat_template.html#a8e68f57844cd49c546fbfef854b37200">xiiQuatTemplate&lt;Type&gt;::MakeFromEulerAngles</a>(<span class="keyword">const</span> <a class="code hl_class" href="../../d3/ddb/classxii_angle_template.html">xiiAngleTemplate&lt;Type&gt;</a>&amp; x, <span class="keyword">const</span> <a class="code hl_class" href="../../d3/ddb/classxii_angle_template.html">xiiAngleTemplate&lt;Type&gt;</a>&amp; y, <span class="keyword">const</span> <a class="code hl_class" href="../../d3/ddb/classxii_angle_template.html">xiiAngleTemplate&lt;Type&gt;</a>&amp; z)</div>
 <div class="line"><a id="l00512" name="l00512"></a><span class="lineno">  512</span>{</div>
 <div class="line"><a id="l00515" name="l00515"></a><span class="lineno">  515</span>  <span class="keyword">const</span> <span class="keyword">auto</span>&amp;  yaw   = z;</div>
 <div class="line"><a id="l00516" name="l00516"></a><span class="lineno">  516</span>  <span class="keyword">const</span> <span class="keyword">auto</span>&amp;  pitch = y;</div>
@@ -706,7 +676,7 @@ $(function(){initNavTree('de/d9b/_quat__inl_8h_source.html','../../'); initResiz
 <div class="line"><a id="l00522" name="l00522"></a><span class="lineno">  522</span>  <span class="keyword">const</span> <span class="keywordtype">double</span> cr    = xiiMath::Cos(roll * (Type)0.5);</div>
 <div class="line"><a id="l00523" name="l00523"></a><span class="lineno">  523</span>  <span class="keyword">const</span> <span class="keywordtype">double</span> sr    = xiiMath::Sin(roll * (Type)0.5);</div>
 <div class="line"><a id="l00524" name="l00524"></a><span class="lineno">  524</span> </div>
-<div class="line"><a id="l00525" name="l00525"></a><span class="lineno">  525</span>  <a class="code hl_class" href="../../d9/d1b/classxii_quat_template.html">xiiQuatTemplate&lt;Type&gt;</a> q;</div>
+<div class="line"><a id="l00525" name="l00525"></a><span class="lineno">  525</span>  xiiQuatTemplate&lt;Type&gt; q;</div>
 <div class="line"><a id="l00526" name="l00526"></a><span class="lineno">  526</span>  q.w = (Type)(cy * cp * cr + sy * sp * sr);</div>
 <div class="line"><a id="l00527" name="l00527"></a><span class="lineno">  527</span>  q.x = (Type)(cy * cp * sr - sy * sp * cr);</div>
 <div class="line"><a id="l00528" name="l00528"></a><span class="lineno">  528</span>  q.y = (Type)(cy * sp * cr + sy * cp * sr);</div>
@@ -747,6 +717,7 @@ $(function(){initNavTree('de/d9b/_quat__inl_8h_source.html','../../'); initResiz
 </div>
 <div class="ttc" id="aclassxii_angle_template_html"><div class="ttname"><a href="../../d3/ddb/classxii_angle_template.html">xiiAngleTemplate</a></div><div class="ttdoc">Wrapper class for a safe usage and conversions of angles.</div><div class="ttdef"><b>Definition</b> Angle.h:10</div></div>
 <div class="ttc" id="aclassxii_angle_template_html_a2b5342a182d1fdedc3db8a49cd4a2e21"><div class="ttname"><a href="../../d3/ddb/classxii_angle_template.html#a2b5342a182d1fdedc3db8a49cd4a2e21">xiiAngleTemplate::IsEqualSimple</a></div><div class="ttdeci">bool IsEqualSimple(xiiAngleTemplate&lt; Type &gt; rhs, xiiAngleTemplate&lt; Type &gt; epsilon) const</div><div class="ttdoc">Equality check with epsilon. Simple check without normalization. 360 degree will equal 0 degree,...</div><div class="ttdef"><b>Definition</b> Angle_inl.h:92</div></div>
+<div class="ttc" id="aclassxii_angle_template_html_a9c40ebf5138d287759bf494db230a5b2"><div class="ttname"><a href="../../d3/ddb/classxii_angle_template.html#a9c40ebf5138d287759bf494db230a5b2">xiiAngleTemplate::MakeFromRadian</a></div><div class="ttdeci">static constexpr xiiAngleTemplate&lt; Type &gt; MakeFromRadian(Type fRadian)</div><div class="ttdoc">Creates an instance of xiiAngleTemplate&lt;Type&gt; that was initialized from radian. (No need for any conv...</div><div class="ttdef"><b>Definition</b> Angle_inl.h:40</div></div>
 <div class="ttc" id="aclassxii_angle_template_html_ad54cb856684d34910eaa24e78e90c71f"><div class="ttname"><a href="../../d3/ddb/classxii_angle_template.html#ad54cb856684d34910eaa24e78e90c71f">xiiAngleTemplate::MakeFromDegree</a></div><div class="ttdeci">static constexpr xiiAngleTemplate&lt; Type &gt; MakeFromDegree(Type fDegree)</div><div class="ttdoc">Creates an instance of xiiAngleTemplate&lt;Type&gt; that was initialized from degree. (Performs a conversio...</div><div class="ttdef"><b>Definition</b> Angle_inl.h:34</div></div>
 <div class="ttc" id="aclassxii_mat3_template_html"><div class="ttname"><a href="../../d3/d74/classxii_mat3_template.html">xiiMat3Template</a></div><div class="ttdoc">A 3x3 component matrix class.</div><div class="ttdef"><b>Definition</b> Mat3.h:9</div></div>
 <div class="ttc" id="aclassxii_mat3_template_html_a305fa340274e241f3f0e8aaed8419c25"><div class="ttname"><a href="../../d3/d74/classxii_mat3_template.html#a305fa340274e241f3f0e8aaed8419c25">xiiMat3Template::SetColumn</a></div><div class="ttdeci">void SetColumn(xiiUInt32 uiColumn, const xiiVec3Template&lt; Type &gt; &amp;vColumn)</div><div class="ttdoc">Sets all 3 components of the i-th column.</div><div class="ttdef"><b>Definition</b> Mat3_inl.h:248</div></div>
@@ -757,11 +728,11 @@ $(function(){initNavTree('de/d9b/_quat__inl_8h_source.html','../../'); initResiz
 <div class="ttc" id="aclassxii_quat_template_html_a1ccee339c17216c8ed01970c2c4bfea2"><div class="ttname"><a href="../../d9/d1b/classxii_quat_template.html#a1ccee339c17216c8ed01970c2c4bfea2">xiiQuatTemplate::Invert</a></div><div class="ttdeci">void Invert()</div><div class="ttdoc">Inverts the rotation, so instead of rotating N degrees around an axis, the quaternion will rotate -N ...</div><div class="ttdef"><b>Definition</b> Quat_inl.h:95</div></div>
 <div class="ttc" id="aclassxii_quat_template_html_a3f56a071f4b43773680c2bff985610cb"><div class="ttname"><a href="../../d9/d1b/classxii_quat_template.html#a3f56a071f4b43773680c2bff985610cb">xiiQuatTemplate::MakeSlerp</a></div><div class="ttdeci">static xiiQuatTemplate&lt; Type &gt; MakeSlerp(const xiiQuatTemplate &amp;qFrom, const xiiQuatTemplate &amp;qTo, Type t)</div><div class="ttdoc">Returns a quaternion that is the spherical linear interpolation of the other two.</div><div class="ttdef"><b>Definition</b> Quat_inl.h:400</div></div>
 <div class="ttc" id="aclassxii_quat_template_html_a45c67720a172302b4e216ad10f0869b5"><div class="ttname"><a href="../../d9/d1b/classxii_quat_template.html#a45c67720a172302b4e216ad10f0869b5">xiiQuatTemplate::MakeIdentity</a></div><div class="ttdeci">static const xiiQuatTemplate&lt; Type &gt; MakeIdentity()</div><div class="ttdoc">Static function that returns a quaternion that represents the identity rotation (none).</div><div class="ttdef"><b>Definition</b> Quat_inl.h:26</div></div>
-<div class="ttc" id="aclassxii_quat_template_html_a59c86a2211ed5f8bde54987bcc50c49e"><div class="ttname"><a href="../../d9/d1b/classxii_quat_template.html#a59c86a2211ed5f8bde54987bcc50c49e">xiiQuatTemplate::GetVectorPart</a></div><div class="ttdeci">xiiVec3Template&lt; Type &gt; GetVectorPart() const</div><div class="ttdoc">Returns the x,y,z components as a vector.</div><div class="ttdef"><b>Definition</b> Quat.h:102</div></div>
+<div class="ttc" id="aclassxii_quat_template_html_a59c86a2211ed5f8bde54987bcc50c49e"><div class="ttname"><a href="../../d9/d1b/classxii_quat_template.html#a59c86a2211ed5f8bde54987bcc50c49e">xiiQuatTemplate&lt; float &gt;::GetVectorPart</a></div><div class="ttdeci">xiiVec3Template&lt; float &gt; GetVectorPart() const</div><div class="ttdef"><b>Definition</b> Quat.h:102</div></div>
 <div class="ttc" id="aclassxii_quat_template_html_a59f583ce7eec689c9f150652b68c20e6"><div class="ttname"><a href="../../d9/d1b/classxii_quat_template.html#a59f583ce7eec689c9f150652b68c20e6">xiiQuatTemplate::MakeFromElements</a></div><div class="ttdeci">static xiiQuatTemplate&lt; Type &gt; MakeFromElements(Type x, Type y, Type z, Type w)</div><div class="ttdoc">Sets the individual elements of the quaternion directly. Note that x,y,z do NOT represent a rotation ...</div><div class="ttdef"><b>Definition</b> Quat_inl.h:32</div></div>
 <div class="ttc" id="aclassxii_quat_template_html_a626e119e067b041d16a8fd8bfb006c92"><div class="ttname"><a href="../../d9/d1b/classxii_quat_template.html#a626e119e067b041d16a8fd8bfb006c92">xiiQuatTemplate::ReconstructFromMat3</a></div><div class="ttdeci">void ReconstructFromMat3(const xiiMat3Template&lt; Type &gt; &amp;m)</div><div class="ttdoc">Reconstructs a rotation quaternion from a matrix that may contain scaling and mirroring.</div><div class="ttdef"><b>Definition</b> Quat_inl.h:324</div></div>
 <div class="ttc" id="aclassxii_quat_template_html_a664b4032d4eecb0a43870aac8dcd2277"><div class="ttname"><a href="../../d9/d1b/classxii_quat_template.html#a664b4032d4eecb0a43870aac8dcd2277">xiiQuatTemplate::MakeFromMat3</a></div><div class="ttdeci">static xiiQuatTemplate&lt; Type &gt; MakeFromMat3(const xiiMat3Template&lt; Type &gt; &amp;m)</div><div class="ttdoc">Creates a quaternion from the given matrix.</div><div class="ttdef"><b>Definition</b> Quat_inl.h:272</div></div>
-<div class="ttc" id="aclassxii_quat_template_html_a667d7d73fac575cd61cc7e565b1392d0"><div class="ttname"><a href="../../d9/d1b/classxii_quat_template.html#a667d7d73fac575cd61cc7e565b1392d0">xiiQuatTemplate::GetInverse</a></div><div class="ttdeci">const xiiQuatTemplate&lt; Type &gt; GetInverse() const</div><div class="ttdoc">Returns a quaternion that represents the negative / inverted rotation. E.g. the one that would rotate...</div><div class="ttdef"><b>Definition</b> Quat_inl.h:103</div></div>
+<div class="ttc" id="aclassxii_quat_template_html_a667d7d73fac575cd61cc7e565b1392d0"><div class="ttname"><a href="../../d9/d1b/classxii_quat_template.html#a667d7d73fac575cd61cc7e565b1392d0">xiiQuatTemplate&lt; float &gt;::GetInverse</a></div><div class="ttdeci">const xiiQuatTemplate&lt; float &gt; GetInverse() const</div></div>
 <div class="ttc" id="aclassxii_quat_template_html_a6cfe8b6e653991280f68b8dc22c5e388"><div class="ttname"><a href="../../d9/d1b/classxii_quat_template.html#a6cfe8b6e653991280f68b8dc22c5e388">xiiQuatTemplate::GetNegated</a></div><div class="ttdeci">const xiiQuatTemplate&lt; Type &gt; GetNegated() const</div><div class="ttdoc">Returns the Quaternion with all 4 components negated. This is not the same as the inverted rotation!</div><div class="ttdef"><b>Definition</b> Quat_inl.h:111</div></div>
 <div class="ttc" id="aclassxii_quat_template_html_a6e0a54212fcfe9b1926789427db98aac"><div class="ttname"><a href="../../d9/d1b/classxii_quat_template.html#a6e0a54212fcfe9b1926789427db98aac">xiiQuatTemplate::Dot</a></div><div class="ttdeci">Type Dot(const xiiQuatTemplate &amp;rhs) const</div><div class="ttdoc">Returns the dot-product of the two quaternions (commutative, order does not matter).</div><div class="ttdef"><b>Definition</b> Quat_inl.h:119</div></div>
 <div class="ttc" id="aclassxii_quat_template_html_a77e82ce5677442e006c325a65d9731fe"><div class="ttname"><a href="../../d9/d1b/classxii_quat_template.html#a77e82ce5677442e006c325a65d9731fe">xiiQuatTemplate::GetRotationAxisAndAngle</a></div><div class="ttdeci">void GetRotationAxisAndAngle(xiiVec3Template&lt; Type &gt; &amp;out_vAxis, xiiAngleTemplate&lt; Type &gt; &amp;out_angle, Type fEpsilon=xiiMath::DefaultEpsilon&lt; Type &gt;()) const</div><div class="ttdoc">Returns the rotation-axis and angle, that this quaternion rotates around.</div><div class="ttdef"><b>Definition</b> Quat_inl.h:73</div></div>
@@ -783,7 +754,6 @@ $(function(){initNavTree('de/d9b/_quat__inl_8h_source.html','../../'); initResiz
 <div class="ttc" id="aclassxii_vec3_template_html_a658acf243e57aea0c7252d6918eca809"><div class="ttname"><a href="../../d9/d9a/classxii_vec3_template.html#a658acf243e57aea0c7252d6918eca809">xiiVec3Template::CrossRH</a></div><div class="ttdeci">const xiiVec3Template&lt; Type &gt; CrossRH(const xiiVec3Template&lt; Type &gt; &amp;rhs) const</div><div class="ttdoc">Returns the Cross-product of the two vectors (NOT commutative, order DOES matter)</div><div class="ttdef"><b>Definition</b> Vec3_inl.h:310</div></div>
 <div class="ttc" id="aclassxii_vec3_template_html_aa298cc63bf4b22e7c9548096d774317f"><div class="ttname"><a href="../../d9/d9a/classxii_vec3_template.html#aa298cc63bf4b22e7c9548096d774317f">xiiVec3Template::IsEqual</a></div><div class="ttdeci">bool IsEqual(const xiiVec3Template&lt; Type &gt; &amp;rhs, Type fEpsilon) const</div><div class="ttdoc">Equality Check with epsilon.</div><div class="ttdef"><b>Definition</b> Vec3_inl.h:442</div></div>
 <div class="ttc" id="aclassxii_vec3_template_html_ad8a8cb263d5d850828c0a01191a5a9d9"><div class="ttname"><a href="../../d9/d9a/classxii_vec3_template.html#ad8a8cb263d5d850828c0a01191a5a9d9">xiiVec3Template::GetNormalized</a></div><div class="ttdeci">XII_DECLARE_IF_FLOAT_TYPE const xiiVec3Template&lt; Type &gt; GetNormalized() const</div><div class="ttdoc">Returns a normalized version of this vector, leaves the vector itself unchanged.</div><div class="ttdef"><b>Definition</b> Vec3_inl.h:82</div></div>
-<div class="ttc" id="aclassxii_vec3_template_html_ada4983624dd9914c854b8e7fafa38b2b"><div class="ttname"><a href="../../d9/d9a/classxii_vec3_template.html#ada4983624dd9914c854b8e7fafa38b2b">xiiVec3Template::IsValid</a></div><div class="ttdeci">bool IsValid() const</div><div class="ttdoc">Checks that all components are finite numbers.</div><div class="ttdef"><b>Definition</b> Vec3_inl.h:153</div></div>
 <div class="ttc" id="anamespacexii_math_html_a20047812a62c07b9ac2144a5520c18f0"><div class="ttname"><a href="../../d1/d37/namespacexii_math.html#a20047812a62c07b9ac2144a5520c18f0">xiiMath::IsEqual</a></div><div class="ttdeci">constexpr bool IsEqual(Type lhs, Type rhs, Type fEpsilon)</div><div class="ttdoc">Checks, whether fValue is in the range [fDesired - fMaxImprecision; fDesired + fMaxImprecision].</div><div class="ttdef"><b>Definition</b> Math_inl.h:285</div></div>
 <div class="ttc" id="anamespacexii_math_html_a794f0339ad168c57748133cd2687fe4d"><div class="ttname"><a href="../../d1/d37/namespacexii_math.html#a794f0339ad168c57748133cd2687fe4d">xiiMath::NaN</a></div><div class="ttdeci">constexpr TYPE NaN()</div><div class="ttdoc">Returns the value for NaN as the template type. Returns zero, if the type does not support NaN.</div><div class="ttdef"><b>Definition</b> Constants_inl.h:72</div></div>
 <div class="ttc" id="anamespacexii_math_html_a821b432e7a9c8ac292eb255ee11e9e10"><div class="ttname"><a href="../../d1/d37/namespacexii_math.html#a821b432e7a9c8ac292eb255ee11e9e10">xiiMath::Abs</a></div><div class="ttdeci">constexpr XII_ALWAYS_INLINE T Abs(T f)</div><div class="ttdoc">Returns the absolute value of f.</div><div class="ttdef"><b>Definition</b> Math_inl.h:20</div></div>
@@ -796,7 +766,7 @@ $(function(){initNavTree('de/d9b/_quat__inl_8h_source.html','../../'); initResiz
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.html">home</a></li><li class="navelem"><a class="el" href="../../dir_1036706e55c22cab35bc1c58ee689f1d.html">runner</a></li><li class="navelem"><a class="el" href="../../dir_629f8151d55d307162ff2d619fb1783d.html">work</a></li><li class="navelem"><a class="el" href="../../dir_1ddc44fe1263a8c7935fa6130b7d9499.html">XII</a></li><li class="navelem"><a class="el" href="../../dir_2c1b6808f12952f4c36e05ba7068379a.html">XII</a></li><li class="navelem"><a class="el" href="../../dir_b5a1c4ecfca018ad24b729e213296d41.html">Source</a></li><li class="navelem"><a class="el" href="../../dir_e321052006a51284e67389ab20037e7c.html">Engine</a></li><li class="navelem"><a class="el" href="../../dir_be0c42c58b36f42c54ec54024ed4f6af.html">Foundation</a></li><li class="navelem"><a class="el" href="../../dir_c1b0860bb61ff24e678d996d14e4bcdd.html">Math</a></li><li class="navelem"><a class="el" href="../../dir_fb7e93d80251333452775ccd3b7c417a.html">Implementation</a></li><li class="navelem"><b>Quat_inl.h</b></li>
-    <li class="footer">Generated on Fri Mar 21 2025 22:42:02 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
+    <li class="footer">Generated on Fri Mar 21 2025 23:27:40 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 </body>

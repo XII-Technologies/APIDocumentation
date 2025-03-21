@@ -1,39 +1,15 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<meta name="generator" content="Doxygen 1.12.0"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.13.2"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<!-- BEGIN opengraph metadata -->
-<meta property="og:title" content="XII" />
-<meta property="og:image" content="XII-Logo.png" />
-<meta property="og:description" content="An advanced high-performance simulation engine." />
-<meta property="og:url" content="https://www.xiitechnologies.com" />
-<!-- END opengraph metadata -->
-<!-- BEGIN twitter metadata -->
-<meta name="twitter:image:src" content="XII-Logo.png" />
-<meta name="twitter:title" content="XII" />
-<meta name="twitter:description" content="An advanced high-performance simulation engine." />
-<!-- END twitter metadata -->
 <title>XII: xiiWorld Class Reference</title>
+<link rel="icon" href="../../XII-Logo.png" type="image/x-icon" />
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
-<link rel="icon" type="image/svg+xml" href="XII-Logo.png"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
-<script type="text/javascript" src="../../doxygen-awesome-darkmode-toggle.js"></script>
-<script type="text/javascript" src="../../doxygen-awesome-fragment-copy-button.js"></script>
-<script type="text/javascript" src="../../doxygen-awesome-paragraph-link.js"></script>
-<script type="text/javascript" src="../../doxygen-awesome-interactive-toc.js"></script>
-<script type="text/javascript" src="../../doxygen-awesome-tabs.js"></script>
-<script type="text/javascript" src="../../toggle-alternative-theme.js"></script>
-<script type="text/javascript">
-    DoxygenAwesomeFragmentCopyButton.init()
-    DoxygenAwesomeDarkModeToggle.init()
-    DoxygenAwesomeParagraphLink.init()
-    DoxygenAwesomeInteractiveToc.init()
-    DoxygenAwesomeTabs.init()
-</script>
 <link href="../../navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../navtreedata.js"></script>
 <script type="text/javascript" src="../../navtree.js"></script>
@@ -45,28 +21,22 @@
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-<!-- https://tholman.com/github-corners/ -->
-<a href="https://github.com/XII-Technologies/APIDocumentation" class="github-corner" title="View source on GitHub" target="_blank" rel="noopener noreferrer">
-    <svg viewBox="0 0 250 250" width="40" height="40" style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
-    <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
  <tbody>
- <tr style="height: 56px;">
+ <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="../../XII-Logo.png"/></td>
-  <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">XII
-   &#160;<span id="projectnumber">1.0.0</span>
+  <td id="projectalign">
+   <div id="projectname">XII<span id="projectnumber">&#160;Release 0.1.0</span>
    </div>
-   <div id="projectbrief">A high-performance simulation engine.</div>
   </td>
  </tr>
  </tbody>
 </table>
 </div>
 <!-- end header part -->
-<!-- Generated by Doxygen 1.12.0 -->
+<!-- Generated by Doxygen 1.13.2 -->
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
 var searchBox = new SearchBox("searchBox", "../../search/",'.html');
@@ -133,7 +103,7 @@ $(function(){initNavTree('d6/d89/classxii_world.html','../../'); initResizable(t
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#friends">Friends</a> &#124;
 <a href="../../df/d06/classxii_world-members.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">xiiWorld Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div></div>
+  <div class="headertitle"><div class="title">xiiWorld Class Reference<span class="mlabels"><span class="mlabel final">final</span></span></div></div>
 </div><!--header-->
 <div class="contents">
 
@@ -273,36 +243,36 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>AddResourceReloadFunc
 void&#160;</td><td class="memItemRight" valign="bottom"><b>RemoveResourceReloadFunction</b> (<a class="el" href="../../d6/d01/classxii_typeless_resource_handle.html">xiiTypelessResourceHandle</a> hResource, <a class="el" href="../../da/d8d/structxii_component_handle.html">xiiComponentHandle</a> hComponent, void *pUserData)</td></tr>
 <tr class="separator:a77d3f378149c66095f31574d8ba8a5cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a41f5e8f7785d115174d92a52d1f723a2" id="r_a41f5e8f7785d115174d92a52d1f723a2"><td class="memTemplParams" colspan="2"><a id="a41f5e8f7785d115174d92a52d1f723a2" name="a41f5e8f7785d115174d92a52d1f723a2"></a>
-template&lt;typename ModuleType &gt; </td></tr>
+template&lt;typename ModuleType&gt; </td></tr>
 <tr class="memitem:a41f5e8f7785d115174d92a52d1f723a2"><td class="memTemplItemLeft" align="right" valign="top">XII_ALWAYS_INLINE ModuleType *&#160;</td><td class="memTemplItemRight" valign="bottom"><b>GetOrCreateModule</b> ()</td></tr>
 <tr class="separator:a41f5e8f7785d115174d92a52d1f723a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae499b4b00de67bdfe82e332d6fd16c53" id="r_ae499b4b00de67bdfe82e332d6fd16c53"><td class="memTemplParams" colspan="2"><a id="ae499b4b00de67bdfe82e332d6fd16c53" name="ae499b4b00de67bdfe82e332d6fd16c53"></a>
-template&lt;typename ModuleType &gt; </td></tr>
+template&lt;typename ModuleType&gt; </td></tr>
 <tr class="memitem:ae499b4b00de67bdfe82e332d6fd16c53"><td class="memTemplItemLeft" align="right" valign="top">XII_ALWAYS_INLINE void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>DeleteModule</b> ()</td></tr>
 <tr class="separator:ae499b4b00de67bdfe82e332d6fd16c53"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0baf4f7c569541c5725c71f042836ddb" id="r_a0baf4f7c569541c5725c71f042836ddb"><td class="memTemplParams" colspan="2"><a id="a0baf4f7c569541c5725c71f042836ddb" name="a0baf4f7c569541c5725c71f042836ddb"></a>
-template&lt;typename ModuleType &gt; </td></tr>
+template&lt;typename ModuleType&gt; </td></tr>
 <tr class="memitem:a0baf4f7c569541c5725c71f042836ddb"><td class="memTemplItemLeft" align="right" valign="top">XII_ALWAYS_INLINE ModuleType *&#160;</td><td class="memTemplItemRight" valign="bottom"><b>GetModule</b> ()</td></tr>
 <tr class="separator:a0baf4f7c569541c5725c71f042836ddb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae007c693579512128a59b618d467c28e" id="r_ae007c693579512128a59b618d467c28e"><td class="memTemplParams" colspan="2"><a id="ae007c693579512128a59b618d467c28e" name="ae007c693579512128a59b618d467c28e"></a>
-template&lt;typename ModuleType &gt; </td></tr>
+template&lt;typename ModuleType&gt; </td></tr>
 <tr class="memitem:ae007c693579512128a59b618d467c28e"><td class="memTemplItemLeft" align="right" valign="top">XII_ALWAYS_INLINE const ModuleType *&#160;</td><td class="memTemplItemRight" valign="bottom"><b>GetModule</b> () const</td></tr>
 <tr class="separator:ae007c693579512128a59b618d467c28e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ace66fc8bee45163ae3992a2563a8f8c5" id="r_ace66fc8bee45163ae3992a2563a8f8c5"><td class="memTemplParams" colspan="2"><a id="ace66fc8bee45163ae3992a2563a8f8c5" name="ace66fc8bee45163ae3992a2563a8f8c5"></a>
-template&lt;typename ModuleType &gt; </td></tr>
+template&lt;typename ModuleType&gt; </td></tr>
 <tr class="memitem:ace66fc8bee45163ae3992a2563a8f8c5"><td class="memTemplItemLeft" align="right" valign="top">XII_ALWAYS_INLINE const ModuleType *&#160;</td><td class="memTemplItemRight" valign="bottom"><b>GetModuleReadOnly</b> () const</td></tr>
 <tr class="separator:ace66fc8bee45163ae3992a2563a8f8c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5c91428c923fa7681c648c5b8f812aa9" id="r_a5c91428c923fa7681c648c5b8f812aa9"><td class="memTemplParams" colspan="2"><a id="a5c91428c923fa7681c648c5b8f812aa9" name="a5c91428c923fa7681c648c5b8f812aa9"></a>
-template&lt;typename ManagerType &gt; </td></tr>
+template&lt;typename ManagerType&gt; </td></tr>
 <tr class="memitem:a5c91428c923fa7681c648c5b8f812aa9"><td class="memTemplItemLeft" align="right" valign="top">XII_FORCE_INLINE ManagerType *&#160;</td><td class="memTemplItemRight" valign="bottom"><b>GetComponentManager</b> ()</td></tr>
 <tr class="separator:a5c91428c923fa7681c648c5b8f812aa9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad3b613861a5d76fa8d655e3d7c84e78a" id="r_ad3b613861a5d76fa8d655e3d7c84e78a"><td class="memTemplParams" colspan="2"><a id="ad3b613861a5d76fa8d655e3d7c84e78a" name="ad3b613861a5d76fa8d655e3d7c84e78a"></a>
-template&lt;typename ManagerType &gt; </td></tr>
+template&lt;typename ManagerType&gt; </td></tr>
 <tr class="memitem:ad3b613861a5d76fa8d655e3d7c84e78a"><td class="memTemplItemLeft" align="right" valign="top">XII_FORCE_INLINE const ManagerType *&#160;</td><td class="memTemplItemRight" valign="bottom"><b>GetComponentManager</b> () const</td></tr>
 <tr class="separator:ad3b613861a5d76fa8d655e3d7c84e78a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Module Functions</div></td></tr>
 <tr class="memitem:a0290e79544cd99c5a709fb8723d7be75" id="r_a0290e79544cd99c5a709fb8723d7be75"><td class="memTemplParams" colspan="2"><a id="a0290e79544cd99c5a709fb8723d7be75" name="a0290e79544cd99c5a709fb8723d7be75"></a>
-template&lt;typename ModuleType &gt; </td></tr>
+template&lt;typename ModuleType&gt; </td></tr>
 <tr class="memitem:a0290e79544cd99c5a709fb8723d7be75"><td class="memTemplItemLeft" align="right" valign="top">ModuleType *&#160;</td><td class="memTemplItemRight" valign="bottom"><b>GetOrCreateModule</b> ()</td></tr>
 <tr class="memdesc:a0290e79544cd99c5a709fb8723d7be75"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an instance of the given module type or derived type or returns a pointer to an already existing instance. <br /></td></tr>
 <tr class="separator:a0290e79544cd99c5a709fb8723d7be75"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -311,7 +281,7 @@ template&lt;typename ModuleType &gt; </td></tr>
 <tr class="memdesc:a5b1733cc49a300d1fa82fb9fcde87f2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an instance of the given module type or derived type or returns a pointer to an already existing instance. <br /></td></tr>
 <tr class="separator:a5b1733cc49a300d1fa82fb9fcde87f2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a38824fbcfcfcb825cb46da2bdb5c6165" id="r_a38824fbcfcfcb825cb46da2bdb5c6165"><td class="memTemplParams" colspan="2"><a id="a38824fbcfcfcb825cb46da2bdb5c6165" name="a38824fbcfcfcb825cb46da2bdb5c6165"></a>
-template&lt;typename ModuleType &gt; </td></tr>
+template&lt;typename ModuleType&gt; </td></tr>
 <tr class="memitem:a38824fbcfcfcb825cb46da2bdb5c6165"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>DeleteModule</b> ()</td></tr>
 <tr class="memdesc:a38824fbcfcfcb825cb46da2bdb5c6165"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deletes the module of the given type or derived types. <br /></td></tr>
 <tr class="separator:a38824fbcfcfcb825cb46da2bdb5c6165"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -320,17 +290,17 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>DeleteModule</b> (con
 <tr class="memdesc:abce15b3419f886afe4fe548249c7b060"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deletes the module of the given type or derived types. <br /></td></tr>
 <tr class="separator:abce15b3419f886afe4fe548249c7b060"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3d51ee4350f3ce7da958e6026178f1b6" id="r_a3d51ee4350f3ce7da958e6026178f1b6"><td class="memTemplParams" colspan="2"><a id="a3d51ee4350f3ce7da958e6026178f1b6" name="a3d51ee4350f3ce7da958e6026178f1b6"></a>
-template&lt;typename ModuleType &gt; </td></tr>
+template&lt;typename ModuleType&gt; </td></tr>
 <tr class="memitem:a3d51ee4350f3ce7da958e6026178f1b6"><td class="memTemplItemLeft" align="right" valign="top">ModuleType *&#160;</td><td class="memTemplItemRight" valign="bottom"><b>GetModule</b> ()</td></tr>
 <tr class="memdesc:a3d51ee4350f3ce7da958e6026178f1b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the instance to the given module type or derived types. <br /></td></tr>
 <tr class="separator:a3d51ee4350f3ce7da958e6026178f1b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab5453926427b77103b2c4bfb19f3ba27" id="r_ab5453926427b77103b2c4bfb19f3ba27"><td class="memTemplParams" colspan="2"><a id="ab5453926427b77103b2c4bfb19f3ba27" name="ab5453926427b77103b2c4bfb19f3ba27"></a>
-template&lt;typename ModuleType &gt; </td></tr>
+template&lt;typename ModuleType&gt; </td></tr>
 <tr class="memitem:ab5453926427b77103b2c4bfb19f3ba27"><td class="memTemplItemLeft" align="right" valign="top">const ModuleType *&#160;</td><td class="memTemplItemRight" valign="bottom"><b>GetModule</b> () const</td></tr>
 <tr class="memdesc:ab5453926427b77103b2c4bfb19f3ba27"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the instance to the given module type or derived types. <br /></td></tr>
 <tr class="separator:ab5453926427b77103b2c4bfb19f3ba27"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a61bab5419bf4c17930ce63eb2851708c" id="r_a61bab5419bf4c17930ce63eb2851708c"><td class="memTemplParams" colspan="2"><a id="a61bab5419bf4c17930ce63eb2851708c" name="a61bab5419bf4c17930ce63eb2851708c"></a>
-template&lt;typename ModuleType &gt; </td></tr>
+template&lt;typename ModuleType&gt; </td></tr>
 <tr class="memitem:a61bab5419bf4c17930ce63eb2851708c"><td class="memTemplItemLeft" align="right" valign="top">const ModuleType *&#160;</td><td class="memTemplItemRight" valign="bottom"><b>GetModuleReadOnly</b> () const</td></tr>
 <tr class="memdesc:a61bab5419bf4c17930ce63eb2851708c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the instance to the given module type or derived types. <br /></td></tr>
 <tr class="separator:a61bab5419bf4c17930ce63eb2851708c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -344,7 +314,7 @@ const <a class="el" href="../../d9/dfe/classxii_world_module.html">xiiWorldModul
 <tr class="separator:afd67545bfe585420edefbf03c915c235"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Component Functions</div></td></tr>
 <tr class="memitem:a6799f445f644cbceb6e60360f350e5b3" id="r_a6799f445f644cbceb6e60360f350e5b3"><td class="memTemplParams" colspan="2"><a id="a6799f445f644cbceb6e60360f350e5b3" name="a6799f445f644cbceb6e60360f350e5b3"></a>
-template&lt;typename ManagerType &gt; </td></tr>
+template&lt;typename ManagerType&gt; </td></tr>
 <tr class="memitem:a6799f445f644cbceb6e60360f350e5b3"><td class="memTemplItemLeft" align="right" valign="top">ManagerType *&#160;</td><td class="memTemplItemRight" valign="bottom"><b>GetOrCreateComponentManager</b> ()</td></tr>
 <tr class="memdesc:a6799f445f644cbceb6e60360f350e5b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an instance of the given component manager type or returns a pointer to an already existing instance. <br /></td></tr>
 <tr class="separator:a6799f445f644cbceb6e60360f350e5b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -353,17 +323,17 @@ template&lt;typename ManagerType &gt; </td></tr>
 <tr class="memdesc:a661f2f9b8e62466a3096efabb18c10df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the component manager that handles the given rtti component type. <br /></td></tr>
 <tr class="separator:a661f2f9b8e62466a3096efabb18c10df"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a88baad8fdcad7e1632fd81984b59f1be" id="r_a88baad8fdcad7e1632fd81984b59f1be"><td class="memTemplParams" colspan="2"><a id="a88baad8fdcad7e1632fd81984b59f1be" name="a88baad8fdcad7e1632fd81984b59f1be"></a>
-template&lt;typename ManagerType &gt; </td></tr>
+template&lt;typename ManagerType&gt; </td></tr>
 <tr class="memitem:a88baad8fdcad7e1632fd81984b59f1be"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>DeleteComponentManager</b> ()</td></tr>
 <tr class="memdesc:a88baad8fdcad7e1632fd81984b59f1be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deletes the component manager of the given type and all its components. <br /></td></tr>
 <tr class="separator:a88baad8fdcad7e1632fd81984b59f1be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6caf942709841e4e396e043d212ba1e3" id="r_a6caf942709841e4e396e043d212ba1e3"><td class="memTemplParams" colspan="2"><a id="a6caf942709841e4e396e043d212ba1e3" name="a6caf942709841e4e396e043d212ba1e3"></a>
-template&lt;typename ManagerType &gt; </td></tr>
+template&lt;typename ManagerType&gt; </td></tr>
 <tr class="memitem:a6caf942709841e4e396e043d212ba1e3"><td class="memTemplItemLeft" align="right" valign="top">ManagerType *&#160;</td><td class="memTemplItemRight" valign="bottom"><b>GetComponentManager</b> ()</td></tr>
 <tr class="memdesc:a6caf942709841e4e396e043d212ba1e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the instance to the given component manager type. <br /></td></tr>
 <tr class="separator:a6caf942709841e4e396e043d212ba1e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9063ea7894d002b705b71f7224f46f23" id="r_a9063ea7894d002b705b71f7224f46f23"><td class="memTemplParams" colspan="2"><a id="a9063ea7894d002b705b71f7224f46f23" name="a9063ea7894d002b705b71f7224f46f23"></a>
-template&lt;typename ManagerType &gt; </td></tr>
+template&lt;typename ManagerType&gt; </td></tr>
 <tr class="memitem:a9063ea7894d002b705b71f7224f46f23"><td class="memTemplItemLeft" align="right" valign="top">const ManagerType *&#160;</td><td class="memTemplItemRight" valign="bottom"><b>GetComponentManager</b> () const</td></tr>
 <tr class="memdesc:a9063ea7894d002b705b71f7224f46f23"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the instance to the given component manager type. <br /></td></tr>
 <tr class="separator:a9063ea7894d002b705b71f7224f46f23"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -380,22 +350,22 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsValidComponent</b> 
 <tr class="memdesc:a6638a0f8658fed9ea87e20669aeb8edb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether the given handle references a valid component. <br /></td></tr>
 <tr class="separator:a6638a0f8658fed9ea87e20669aeb8edb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abc48ca97e3890c1dce34eb141bfe4957" id="r_abc48ca97e3890c1dce34eb141bfe4957"><td class="memTemplParams" colspan="2"><a id="abc48ca97e3890c1dce34eb141bfe4957" name="abc48ca97e3890c1dce34eb141bfe4957"></a>
-template&lt;typename ComponentType &gt; </td></tr>
+template&lt;typename ComponentType&gt; </td></tr>
 <tr class="memitem:abc48ca97e3890c1dce34eb141bfe4957"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><b>TryGetComponent</b> (const <a class="el" href="../../da/d8d/structxii_component_handle.html">xiiComponentHandle</a> &amp;hComponent, ComponentType *&amp;out_pComponent)</td></tr>
 <tr class="memdesc:abc48ca97e3890c1dce34eb141bfe4957"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether a component with the given handle exists and if so writes out the corresponding pointer to out_pComponent. <br /></td></tr>
 <tr class="separator:abc48ca97e3890c1dce34eb141bfe4957"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a51a436a2259c3c88d90bdc709d818559" id="r_a51a436a2259c3c88d90bdc709d818559"><td class="memTemplParams" colspan="2"><a id="a51a436a2259c3c88d90bdc709d818559" name="a51a436a2259c3c88d90bdc709d818559"></a>
-template&lt;typename ComponentType &gt; </td></tr>
+template&lt;typename ComponentType&gt; </td></tr>
 <tr class="memitem:a51a436a2259c3c88d90bdc709d818559"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><b>TryGetComponent</b> (const <a class="el" href="../../da/d8d/structxii_component_handle.html">xiiComponentHandle</a> &amp;hComponent, const ComponentType *&amp;out_pComponent) const</td></tr>
 <tr class="memdesc:a51a436a2259c3c88d90bdc709d818559"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether a component with the given handle exists and if so writes out the corresponding pointer to out_pComponent. <br /></td></tr>
 <tr class="separator:a51a436a2259c3c88d90bdc709d818559"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a63dcecccd00b1d95c5157e514116c1f1" id="r_a63dcecccd00b1d95c5157e514116c1f1"><td class="memTemplParams" colspan="2"><a id="a63dcecccd00b1d95c5157e514116c1f1" name="a63dcecccd00b1d95c5157e514116c1f1"></a>
-template&lt;typename T , typename U , std::enable_if_t&lt;!std::disjunction_v&lt; std::is_base_of&lt; U, T &gt;, std::is_base_of&lt; T, U &gt; &gt;, bool &gt;  = true&gt; </td></tr>
+template&lt;typename T, typename U, std::enable_if_t&lt;!std::disjunction_v&lt; std::is_base_of&lt; U, T &gt;, std::is_base_of&lt; T, U &gt; &gt;, bool &gt; = true&gt; </td></tr>
 <tr class="memitem:a63dcecccd00b1d95c5157e514116c1f1"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><b>TryGetComponent</b> (const <a class="el" href="../../d2/d85/structxii_typed_component_handle.html">xiiTypedComponentHandle</a>&lt; T &gt; &amp;hComponent, U *&amp;out_pComponent)=delete</td></tr>
 <tr class="memdesc:a63dcecccd00b1d95c5157e514116c1f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Explicitly delete TryGetComponent overload when handle type is not related to a pointer type given by out_pComponent. <br /></td></tr>
 <tr class="separator:a63dcecccd00b1d95c5157e514116c1f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ade4c232ebcc8cea03fcd3af0bd5e7f64" id="r_ade4c232ebcc8cea03fcd3af0bd5e7f64"><td class="memTemplParams" colspan="2"><a id="ade4c232ebcc8cea03fcd3af0bd5e7f64" name="ade4c232ebcc8cea03fcd3af0bd5e7f64"></a>
-template&lt;typename T , typename U , std::enable_if_t&lt;!std::disjunction_v&lt; std::is_base_of&lt; U, T &gt;, std::is_base_of&lt; T, U &gt; &gt;, bool &gt;  = true&gt; </td></tr>
+template&lt;typename T, typename U, std::enable_if_t&lt;!std::disjunction_v&lt; std::is_base_of&lt; U, T &gt;, std::is_base_of&lt; T, U &gt; &gt;, bool &gt; = true&gt; </td></tr>
 <tr class="memitem:ade4c232ebcc8cea03fcd3af0bd5e7f64"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><b>TryGetComponent</b> (const <a class="el" href="../../d2/d85/structxii_typed_component_handle.html">xiiTypedComponentHandle</a>&lt; T &gt; &amp;hComponent, const U *&amp;out_pComponent) const =delete</td></tr>
 <tr class="memdesc:ade4c232ebcc8cea03fcd3af0bd5e7f64"><td class="mdescLeft">&#160;</td><td class="mdescRight">Explicitly delete TryGetComponent overload when handle type is not related to a pointer type given by out_pComponent. <br /></td></tr>
 <tr class="separator:ade4c232ebcc8cea03fcd3af0bd5e7f64"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -744,13 +714,13 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>Traverse</b> (<a clas
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">nodiscard</span></span>  </td>
+<span class="mlabels"><span class="mlabel nodiscard">nodiscard</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 <p>Searches for an object by path. Can find objects through a global key and/or relative to an object. May also search for an object that has a certain component. </p>
-<p>The syntax for <em>sSearchPath</em> is as follows:</p><ul>
+<p>The syntax for <em class="arg">sSearchPath</em> is as follows:</p><ul>
 <li>All pieces of the path must be separated by slashes (/)</li>
 <li>If it starts with "G:" then it will search for an object via global key. Ie "G:keyname" will search for an object with the global key "keyname". If no such object exists, the search fails. Otherwise this object becomes the reference object for the remainder. If pReferenceObject was nullptr to begin with, sSearchPath MUST start with a global key search.</li>
 <li>If it starts (or continues) with "P:" it will search "upwards" from the reference object to find the closest parent object that has the requested name. Ie "P:parentname" will check the reference object's name for "parentname", if it doesn't match, it checks the parent object, and so on, until it either fails, because no such named parent exists, or it finds an object.</li>
@@ -805,7 +775,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>Traverse</b> (<a clas
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d6/d89/classxii_world.html">xiiWorld</a></li>
-    <li class="footer">Generated on Fri Mar 21 2025 22:42:09 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
+    <li class="footer">Generated on Fri Mar 21 2025 23:27:49 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 </body>

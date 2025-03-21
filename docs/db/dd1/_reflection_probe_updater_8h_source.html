@@ -1,39 +1,15 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<meta name="generator" content="Doxygen 1.12.0"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.13.2"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<!-- BEGIN opengraph metadata -->
-<meta property="og:title" content="XII" />
-<meta property="og:image" content="XII-Logo.png" />
-<meta property="og:description" content="An advanced high-performance simulation engine." />
-<meta property="og:url" content="https://www.xiitechnologies.com" />
-<!-- END opengraph metadata -->
-<!-- BEGIN twitter metadata -->
-<meta name="twitter:image:src" content="XII-Logo.png" />
-<meta name="twitter:title" content="XII" />
-<meta name="twitter:description" content="An advanced high-performance simulation engine." />
-<!-- END twitter metadata -->
 <title>XII: /home/runner/work/XII/XII/Source/Engine/GraphicsCore/Lights/Implementation/ReflectionProbeUpdater.h Source File</title>
+<link rel="icon" href="../../XII-Logo.png" type="image/x-icon" />
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
-<link rel="icon" type="image/svg+xml" href="XII-Logo.png"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
-<script type="text/javascript" src="../../doxygen-awesome-darkmode-toggle.js"></script>
-<script type="text/javascript" src="../../doxygen-awesome-fragment-copy-button.js"></script>
-<script type="text/javascript" src="../../doxygen-awesome-paragraph-link.js"></script>
-<script type="text/javascript" src="../../doxygen-awesome-interactive-toc.js"></script>
-<script type="text/javascript" src="../../doxygen-awesome-tabs.js"></script>
-<script type="text/javascript" src="../../toggle-alternative-theme.js"></script>
-<script type="text/javascript">
-    DoxygenAwesomeFragmentCopyButton.init()
-    DoxygenAwesomeDarkModeToggle.init()
-    DoxygenAwesomeParagraphLink.init()
-    DoxygenAwesomeInteractiveToc.init()
-    DoxygenAwesomeTabs.init()
-</script>
 <link href="../../navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../navtreedata.js"></script>
 <script type="text/javascript" src="../../navtree.js"></script>
@@ -45,28 +21,22 @@
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-<!-- https://tholman.com/github-corners/ -->
-<a href="https://github.com/XII-Technologies/APIDocumentation" class="github-corner" title="View source on GitHub" target="_blank" rel="noopener noreferrer">
-    <svg viewBox="0 0 250 250" width="40" height="40" style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
-    <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
  <tbody>
- <tr style="height: 56px;">
+ <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="../../XII-Logo.png"/></td>
-  <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">XII
-   &#160;<span id="projectnumber">1.0.0</span>
+  <td id="projectalign">
+   <div id="projectname">XII<span id="projectnumber">&#160;Release 0.1.0</span>
    </div>
-   <div id="projectbrief">A high-performance simulation engine.</div>
   </td>
  </tr>
  </tbody>
 </table>
 </div>
 <!-- end header part -->
-<!-- Generated by Doxygen 1.12.0 -->
+<!-- Generated by Doxygen 1.13.2 -->
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
 var searchBox = new SearchBox("searchBox", "../../search/",'.html');
@@ -140,9 +110,9 @@ $(function(){initNavTree('db/dd1/_reflection_probe_updater_8h_source.html','../.
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &lt;GraphicsFoundation/GraphicsFoundationDLL.h&gt;</span></div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>XII_DECLARE_FLAGS(xiiUInt8, xiiReflectionProbeUpdaterFlags, SkyLight, HasCustomCubeMap);</div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span></div>
 <div class="foldopen" id="foldopen00014" data-start="{" data-end="};">
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="../../d1/d6a/classxii_reflection_probe_updater.html">   14</a></span><span class="keyword">class </span><a class="code hl_class" href="../../d1/d6a/classxii_reflection_probe_updater.html">xiiReflectionProbeUpdater</a></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="../../d1/d6a/classxii_reflection_probe_updater.html">   14</a></span><span class="keyword">class </span><a class="code hl_function" href="../../d1/d6a/classxii_reflection_probe_updater.html#a4bc8c08faa0d10da81aa8065c2061f1e">xiiReflectionProbeUpdater</a></div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>{</div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="keyword">public</span>:</div>
 <div class="foldopen" id="foldopen00018" data-start="{" data-end="};">
@@ -157,18 +127,18 @@ $(function(){initNavTree('db/dd1/_reflection_probe_updater_8h_source.html','../.
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="keyword">public</span>:</div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="../../d1/d6a/classxii_reflection_probe_updater.html#a4bc8c08faa0d10da81aa8065c2061f1e">   27</a></span>  <a class="code hl_function" href="../../d1/d6a/classxii_reflection_probe_updater.html#a4bc8c08faa0d10da81aa8065c2061f1e">xiiReflectionProbeUpdater</a>();</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>  <a class="code hl_class" href="../../d1/d6a/classxii_reflection_probe_updater.html">~xiiReflectionProbeUpdater</a>();</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>  <a class="code hl_function" href="../../d1/d6a/classxii_reflection_probe_updater.html#a4bc8c08faa0d10da81aa8065c2061f1e">~xiiReflectionProbeUpdater</a>();</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span></div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>  xiiUInt32 <a class="code hl_function" href="../../d1/d6a/classxii_reflection_probe_updater.html#aae69cf9c28d4249263bcfd80b1670a72">GetFreeUpdateSlots</a>(<a class="code hl_class" href="../../dc/da4/classxii_dynamic_array.html">xiiDynamicArray&lt;xiiReflectionProbeRef&gt;</a>&amp; out_updatesFinished);</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>  <a class="code hl_struct" href="../../dd/dad/structxii_result.html">xiiResult</a> <a class="code hl_function" href="../../d1/d6a/classxii_reflection_probe_updater.html#ab38cda546bc31529cdaf234709d84df5">StartDynamicUpdate</a>(<span class="keyword">const</span> <a class="code hl_struct" href="../../da/d44/structxii_reflection_probe_ref.html">xiiReflectionProbeRef</a>&amp; probe, <span class="keyword">const</span> <a class="code hl_struct" href="../../d8/d70/structxii_reflection_probe_desc.html">xiiReflectionProbeDesc</a>&amp; desc, <span class="keyword">const</span> <a class="code hl_class" href="../../d5/d13/classxii_transform_template.html">xiiTransform</a>&amp; globalTransform, <span class="keyword">const</span> <a class="code hl_struct" href="../../db/dcc/structxii_reflection_probe_updater_1_1_target_slot.html">TargetSlot</a>&amp; target);</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>  <a class="code hl_struct" href="../../dd/dad/structxii_result.html">xiiResult</a> <a class="code hl_function" href="../../d1/d6a/classxii_reflection_probe_updater.html#a44434a47c99ec211f2048945202857e2">StartFilterUpdate</a>(<span class="keyword">const</span> <a class="code hl_struct" href="../../da/d44/structxii_reflection_probe_ref.html">xiiReflectionProbeRef</a>&amp; probe, <span class="keyword">const</span> <a class="code hl_struct" href="../../d8/d70/structxii_reflection_probe_desc.html">xiiReflectionProbeDesc</a>&amp; desc, <a class="code hl_class" href="../../d6/d16/classxii_typed_resource_handle.html">xiiTextureCubeResourceHandle</a> hSourceTexture, <span class="keyword">const</span> <a class="code hl_struct" href="../../db/dcc/structxii_reflection_probe_updater_1_1_target_slot.html">TargetSlot</a>&amp; target);</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>  <a class="code hl_struct" href="../../dd/dad/structxii_result.html">xiiResult</a> <a class="code hl_function" href="../../d1/d6a/classxii_reflection_probe_updater.html#ab38cda546bc31529cdaf234709d84df5">StartDynamicUpdate</a>(<span class="keyword">const</span> <a class="code hl_struct" href="../../da/d44/structxii_reflection_probe_ref.html">xiiReflectionProbeRef</a>&amp; probe, <span class="keyword">const</span> <a class="code hl_struct" href="../../d8/d70/structxii_reflection_probe_desc.html">xiiReflectionProbeDesc</a>&amp; desc, <span class="keyword">const</span> xiiTransform&amp; globalTransform, <span class="keyword">const</span> <a class="code hl_struct" href="../../db/dcc/structxii_reflection_probe_updater_1_1_target_slot.html">TargetSlot</a>&amp; target);</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>  <a class="code hl_struct" href="../../dd/dad/structxii_result.html">xiiResult</a> <a class="code hl_function" href="../../d1/d6a/classxii_reflection_probe_updater.html#a44434a47c99ec211f2048945202857e2">StartFilterUpdate</a>(<span class="keyword">const</span> <a class="code hl_struct" href="../../da/d44/structxii_reflection_probe_ref.html">xiiReflectionProbeRef</a>&amp; probe, <span class="keyword">const</span> <a class="code hl_struct" href="../../d8/d70/structxii_reflection_probe_desc.html">xiiReflectionProbeDesc</a>&amp; desc, xiiTextureCubeResourceHandle hSourceTexture, <span class="keyword">const</span> <a class="code hl_struct" href="../../db/dcc/structxii_reflection_probe_updater_1_1_target_slot.html">TargetSlot</a>&amp; target);</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span></div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>  <span class="keywordtype">void</span> <a class="code hl_function" href="../../d1/d6a/classxii_reflection_probe_updater.html#a1de2ffe73643f659eafdd98d9915e67f">CancelUpdate</a>(<span class="keyword">const</span> <a class="code hl_struct" href="../../da/d44/structxii_reflection_probe_ref.html">xiiReflectionProbeRef</a>&amp; probe);</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span></div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>  <span class="keywordtype">void</span> <a class="code hl_function" href="../../d1/d6a/classxii_reflection_probe_updater.html#aa4adfc27c330878f88c4e6fb73b6a09d">GenerateUpdateSteps</a>();</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span></div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>  <span class="keywordtype">void</span> <a class="code hl_function" href="../../d1/d6a/classxii_reflection_probe_updater.html#a3a9e5b572f53bf53c020fb947a8b5134">ScheduleUpdateSteps</a>();</div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="keyword">private</span>:</div>
@@ -206,11 +176,11 @@ $(function(){initNavTree('db/dd1/_reflection_probe_updater_8h_source.html','../.
 <div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    ProbeUpdateInfo();</div>
 <div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>    ~ProbeUpdateInfo();</div>
 <div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span> </div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>    <a class="code hl_struct" href="../../d7/d55/structxii_bitflags.html">xiiBitflags&lt;xiiReflectionProbeUpdaterFlags&gt;</a> m_flags;</div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    <a class="code hl_struct" href="../../da/d44/structxii_reflection_probe_ref.html">xiiReflectionProbeRef</a>                       m_probe;</div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    <a class="code hl_struct" href="../../d8/d70/structxii_reflection_probe_desc.html">xiiReflectionProbeDesc</a>                      m_desc;</div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>    <a class="code hl_class" href="../../d5/d13/classxii_transform_template.html">xiiTransform</a>                                m_globalTransform;</div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>    <a class="code hl_class" href="../../d6/d16/classxii_typed_resource_handle.html">xiiTextureCubeResourceHandle</a>                m_sourceTexture;</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>    xiiBitflags&lt;xiiReflectionProbeUpdaterFlags&gt; m_flags;</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    xiiReflectionProbeRef                       m_probe;</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    xiiReflectionProbeDesc                      m_desc;</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>    xiiTransform                                m_globalTransform;</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>    xiiTextureCubeResourceHandle                m_sourceTexture;</div>
 <div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>    TargetSlot                                  m_TargetSlot;</div>
 <div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span> </div>
 <div class="foldopen" id="foldopen00102" data-start="{" data-end="};">
@@ -254,7 +224,6 @@ $(function(){initNavTree('db/dd1/_reflection_probe_updater_8h_source.html','../.
 <div class="ttc" id="aclassxii_g_a_l_texture_handle_html"><div class="ttname"><a href="../../df/de3/classxii_g_a_l_texture_handle.html">xiiGALTextureHandle</a></div><div class="ttdef"><b>Definition</b> GraphicsTypes.h:1875</div></div>
 <div class="ttc" id="aclassxii_g_a_l_texture_view_handle_html"><div class="ttname"><a href="../../dd/d52/classxii_g_a_l_texture_view_handle.html">xiiGALTextureViewHandle</a></div><div class="ttdef"><b>Definition</b> GraphicsTypes.h:1882</div></div>
 <div class="ttc" id="aclassxii_hybrid_array_html"><div class="ttname"><a href="../../dc/da9/classxii_hybrid_array.html">xiiHybridArray</a></div><div class="ttdoc">A hybrid array uses in-place storage to handle the first few elements without any allocation....</div><div class="ttdef"><b>Definition</b> HybridArray.h:12</div></div>
-<div class="ttc" id="aclassxii_reflection_probe_updater_html"><div class="ttname"><a href="../../d1/d6a/classxii_reflection_probe_updater.html">xiiReflectionProbeUpdater</a></div><div class="ttdoc">Renders reflection probes and stores filtered mipmap chains into an atlas texture as well as computin...</div><div class="ttdef"><b>Definition</b> ReflectionProbeUpdater.h:15</div></div>
 <div class="ttc" id="aclassxii_reflection_probe_updater_html_a1de2ffe73643f659eafdd98d9915e67f"><div class="ttname"><a href="../../d1/d6a/classxii_reflection_probe_updater.html#a1de2ffe73643f659eafdd98d9915e67f">xiiReflectionProbeUpdater::CancelUpdate</a></div><div class="ttdeci">void CancelUpdate(const xiiReflectionProbeRef &amp;probe)</div><div class="ttdoc">Cancel a previously started update.</div><div class="ttdef"><b>Definition</b> ReflectionProbeUpdater.cpp:157</div></div>
 <div class="ttc" id="aclassxii_reflection_probe_updater_html_a3a9e5b572f53bf53c020fb947a8b5134"><div class="ttname"><a href="../../d1/d6a/classxii_reflection_probe_updater.html#a3a9e5b572f53bf53c020fb947a8b5134">xiiReflectionProbeUpdater::ScheduleUpdateSteps</a></div><div class="ttdeci">void ScheduleUpdateSteps()</div><div class="ttdoc">Schedules probe rendering views. Should be called at some point during the extraction phase....</div><div class="ttdef"><b>Definition</b> ReflectionProbeUpdater.cpp:233</div></div>
 <div class="ttc" id="aclassxii_reflection_probe_updater_html_a44434a47c99ec211f2048945202857e2"><div class="ttname"><a href="../../d1/d6a/classxii_reflection_probe_updater.html#a44434a47c99ec211f2048945202857e2">xiiReflectionProbeUpdater::StartFilterUpdate</a></div><div class="ttdeci">xiiResult StartFilterUpdate(const xiiReflectionProbeRef &amp;probe, const xiiReflectionProbeDesc &amp;desc, xiiTextureCubeResourceHandle hSourceTexture, const TargetSlot &amp;target)</div><div class="ttdoc">Starts filtering an existing cube map into a new reflection probe.</div><div class="ttdef"><b>Definition</b> ReflectionProbeUpdater.cpp:132</div></div>
@@ -262,10 +231,7 @@ $(function(){initNavTree('db/dd1/_reflection_probe_updater_8h_source.html','../.
 <div class="ttc" id="aclassxii_reflection_probe_updater_html_aa4adfc27c330878f88c4e6fb73b6a09d"><div class="ttname"><a href="../../d1/d6a/classxii_reflection_probe_updater.html#aa4adfc27c330878f88c4e6fb73b6a09d">xiiReflectionProbeUpdater::GenerateUpdateSteps</a></div><div class="ttdeci">void GenerateUpdateSteps()</div><div class="ttdoc">Generates update steps. Should be called in PreExtraction phase.</div><div class="ttdef"><b>Definition</b> ReflectionProbeUpdater.cpp:170</div></div>
 <div class="ttc" id="aclassxii_reflection_probe_updater_html_aae69cf9c28d4249263bcfd80b1670a72"><div class="ttname"><a href="../../d1/d6a/classxii_reflection_probe_updater.html#aae69cf9c28d4249263bcfd80b1670a72">xiiReflectionProbeUpdater::GetFreeUpdateSlots</a></div><div class="ttdeci">xiiUInt32 GetFreeUpdateSlots(xiiDynamicArray&lt; xiiReflectionProbeRef &gt; &amp;out_updatesFinished)</div><div class="ttdoc">Returns how many new probes can be started this frame.</div><div class="ttdef"><b>Definition</b> ReflectionProbeUpdater.cpp:96</div></div>
 <div class="ttc" id="aclassxii_reflection_probe_updater_html_ab38cda546bc31529cdaf234709d84df5"><div class="ttname"><a href="../../d1/d6a/classxii_reflection_probe_updater.html#ab38cda546bc31529cdaf234709d84df5">xiiReflectionProbeUpdater::StartDynamicUpdate</a></div><div class="ttdeci">xiiResult StartDynamicUpdate(const xiiReflectionProbeRef &amp;probe, const xiiReflectionProbeDesc &amp;desc, const xiiTransform &amp;globalTransform, const TargetSlot &amp;target)</div><div class="ttdoc">Starts rendering a new reflection probe.</div><div class="ttdef"><b>Definition</b> ReflectionProbeUpdater.cpp:109</div></div>
-<div class="ttc" id="aclassxii_transform_template_html"><div class="ttname"><a href="../../d5/d13/classxii_transform_template.html">xiiTransformTemplate&lt; float &gt;</a></div></div>
-<div class="ttc" id="aclassxii_typed_resource_handle_html"><div class="ttname"><a href="../../d6/d16/classxii_typed_resource_handle.html">xiiTypedResourceHandle&lt; class xiiTextureCubeResource &gt;</a></div></div>
 <div class="ttc" id="aclassxii_view_handle_html"><div class="ttname"><a href="../../d5/db8/classxii_view_handle.html">xiiViewHandle</a></div><div class="ttdef"><b>Definition</b> Declarations.h:65</div></div>
-<div class="ttc" id="astructxii_bitflags_html"><div class="ttname"><a href="../../d7/d55/structxii_bitflags.html">xiiBitflags</a></div><div class="ttdoc">The xiiBitflags class allows you to work with type-safe bitflags.</div><div class="ttdef"><b>Definition</b> Bitflags.h:82</div></div>
 <div class="ttc" id="astructxii_enum_html"><div class="ttname"><a href="../../de/dfd/structxii_enum.html">xiiEnum</a></div><div class="ttdoc">A custom enum implementation that allows to define the underlying storage type to control its memory ...</div><div class="ttdef"><b>Definition</b> Enum.h:37</div></div>
 <div class="ttc" id="astructxii_reflection_probe_desc_html"><div class="ttname"><a href="../../d8/d70/structxii_reflection_probe_desc.html">xiiReflectionProbeDesc</a></div><div class="ttdoc">Describes how a cube map should be generated.</div><div class="ttdef"><b>Definition</b> ReflectionProbeData.h:24</div></div>
 <div class="ttc" id="astructxii_reflection_probe_ref_html"><div class="ttname"><a href="../../da/d44/structxii_reflection_probe_ref.html">xiiReflectionProbeRef</a></div><div class="ttdoc">A unique reference to a reflection probe.</div><div class="ttdef"><b>Definition</b> ReflectionProbeData.h:76</div></div>
@@ -282,7 +248,7 @@ $(function(){initNavTree('db/dd1/_reflection_probe_updater_8h_source.html','../.
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.html">home</a></li><li class="navelem"><a class="el" href="../../dir_1036706e55c22cab35bc1c58ee689f1d.html">runner</a></li><li class="navelem"><a class="el" href="../../dir_629f8151d55d307162ff2d619fb1783d.html">work</a></li><li class="navelem"><a class="el" href="../../dir_1ddc44fe1263a8c7935fa6130b7d9499.html">XII</a></li><li class="navelem"><a class="el" href="../../dir_2c1b6808f12952f4c36e05ba7068379a.html">XII</a></li><li class="navelem"><a class="el" href="../../dir_b5a1c4ecfca018ad24b729e213296d41.html">Source</a></li><li class="navelem"><a class="el" href="../../dir_e321052006a51284e67389ab20037e7c.html">Engine</a></li><li class="navelem"><a class="el" href="../../dir_d1b456933e20132afd1d01c7da962f40.html">GraphicsCore</a></li><li class="navelem"><a class="el" href="../../dir_d0e2fd164d9fb9422dfd9d016e3c1221.html">Lights</a></li><li class="navelem"><a class="el" href="../../dir_026691e24722955e08af78236915ded8.html">Implementation</a></li><li class="navelem"><b>ReflectionProbeUpdater.h</b></li>
-    <li class="footer">Generated on Fri Mar 21 2025 22:42:04 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
+    <li class="footer">Generated on Fri Mar 21 2025 23:27:43 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 </body>

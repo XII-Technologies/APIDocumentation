@@ -1,39 +1,15 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<meta name="generator" content="Doxygen 1.12.0"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.13.2"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<!-- BEGIN opengraph metadata -->
-<meta property="og:title" content="XII" />
-<meta property="og:image" content="XII-Logo.png" />
-<meta property="og:description" content="An advanced high-performance simulation engine." />
-<meta property="og:url" content="https://www.xiitechnologies.com" />
-<!-- END opengraph metadata -->
-<!-- BEGIN twitter metadata -->
-<meta name="twitter:image:src" content="XII-Logo.png" />
-<meta name="twitter:title" content="XII" />
-<meta name="twitter:description" content="An advanced high-performance simulation engine." />
-<!-- END twitter metadata -->
 <title>XII: xiiResourceManager Class Reference</title>
+<link rel="icon" href="../../XII-Logo.png" type="image/x-icon" />
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
-<link rel="icon" type="image/svg+xml" href="XII-Logo.png"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
-<script type="text/javascript" src="../../doxygen-awesome-darkmode-toggle.js"></script>
-<script type="text/javascript" src="../../doxygen-awesome-fragment-copy-button.js"></script>
-<script type="text/javascript" src="../../doxygen-awesome-paragraph-link.js"></script>
-<script type="text/javascript" src="../../doxygen-awesome-interactive-toc.js"></script>
-<script type="text/javascript" src="../../doxygen-awesome-tabs.js"></script>
-<script type="text/javascript" src="../../toggle-alternative-theme.js"></script>
-<script type="text/javascript">
-    DoxygenAwesomeFragmentCopyButton.init()
-    DoxygenAwesomeDarkModeToggle.init()
-    DoxygenAwesomeParagraphLink.init()
-    DoxygenAwesomeInteractiveToc.init()
-    DoxygenAwesomeTabs.init()
-</script>
 <link href="../../navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../navtreedata.js"></script>
 <script type="text/javascript" src="../../navtree.js"></script>
@@ -45,28 +21,22 @@
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-<!-- https://tholman.com/github-corners/ -->
-<a href="https://github.com/XII-Technologies/APIDocumentation" class="github-corner" title="View source on GitHub" target="_blank" rel="noopener noreferrer">
-    <svg viewBox="0 0 250 250" width="40" height="40" style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
-    <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
  <tbody>
- <tr style="height: 56px;">
+ <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="../../XII-Logo.png"/></td>
-  <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">XII
-   &#160;<span id="projectnumber">1.0.0</span>
+  <td id="projectalign">
+   <div id="projectname">XII<span id="projectnumber">&#160;Release 0.1.0</span>
    </div>
-   <div id="projectbrief">A high-performance simulation engine.</div>
   </td>
  </tr>
  </tbody>
 </table>
 </div>
 <!-- end header part -->
-<!-- Generated by Doxygen 1.12.0 -->
+<!-- Generated by Doxygen 1.13.2 -->
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
 var searchBox = new SearchBox("searchBox", "../../search/",'.html');
@@ -143,11 +113,11 @@ $(function(){initNavTree('d4/d8e/classxii_resource_manager.html','../../'); init
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a00cf775e2d97427860d17616a1221969" id="r_a00cf775e2d97427860d17616a1221969"><td class="memTemplParams" colspan="2"><a id="a00cf775e2d97427860d17616a1221969" name="a00cf775e2d97427860d17616a1221969"></a>
-template&lt;typename ResourceType &gt; </td></tr>
+template&lt;typename ResourceType&gt; </td></tr>
 <tr class="memitem:a00cf775e2d97427860d17616a1221969"><td class="memTemplItemLeft" align="right" valign="top">XII_FORCE_INLINE ResourceType *&#160;</td><td class="memTemplItemRight" valign="bottom"><b>GetResource</b> (<a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sResourceID, bool bIsReloadable)</td></tr>
 <tr class="separator:a00cf775e2d97427860d17616a1221969"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7dcd6b37bb061c3bb2cc1d2f833c51e5" id="r_a7dcd6b37bb061c3bb2cc1d2f833c51e5"><td class="memTemplParams" colspan="2"><a id="a7dcd6b37bb061c3bb2cc1d2f833c51e5" name="a7dcd6b37bb061c3bb2cc1d2f833c51e5"></a>
-template&lt;typename ResourceType &gt; </td></tr>
+template&lt;typename ResourceType&gt; </td></tr>
 <tr class="memitem:a7dcd6b37bb061c3bb2cc1d2f833c51e5"><td class="memTemplItemLeft" align="right" valign="top">XII_FORCE_INLINE <a class="el" href="../../d6/d16/classxii_typed_resource_handle.html">xiiTypedResourceHandle</a>&lt; ResourceType &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>LoadResource</b> (<a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sResourceID)</td></tr>
 <tr class="separator:a7dcd6b37bb061c3bb2cc1d2f833c51e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -164,11 +134,11 @@ static const <a class="el" href="../../dc/d22/classxii_event.html">xiiEvent</a>&
 <tr class="memdesc:adcafb0a979e453f073fe1a9be65c10d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Goes through all existing resources and broadcasts the 'Exists' event.  <br /></td></tr>
 <tr class="separator:adcafb0a979e453f073fe1a9be65c10d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Loading and creating resources</div></td></tr>
-<tr class="memitem:aaf87c60a105c5b77125fc5954e776841" id="r_aaf87c60a105c5b77125fc5954e776841"><td class="memTemplParams" colspan="2">template&lt;typename ResourceType &gt; </td></tr>
+<tr class="memitem:aaf87c60a105c5b77125fc5954e776841" id="r_aaf87c60a105c5b77125fc5954e776841"><td class="memTemplParams" colspan="2">template&lt;typename ResourceType&gt; </td></tr>
 <tr class="memitem:aaf87c60a105c5b77125fc5954e776841"><td class="memTemplItemLeft" align="right" valign="top">static <a class="el" href="../../d6/d16/classxii_typed_resource_handle.html">xiiTypedResourceHandle</a>&lt; ResourceType &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#aaf87c60a105c5b77125fc5954e776841">LoadResource</a> (<a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sResourceID)</td></tr>
 <tr class="memdesc:aaf87c60a105c5b77125fc5954e776841"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a handle to the requested resource. szResourceID must uniquely identify the resource, different spellings / casing will result in different resources.  <br /></td></tr>
 <tr class="separator:aaf87c60a105c5b77125fc5954e776841"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5aa7c47d141fcb9f88547dfccacc7fe1" id="r_a5aa7c47d141fcb9f88547dfccacc7fe1"><td class="memTemplParams" colspan="2">template&lt;typename ResourceType &gt; </td></tr>
+<tr class="memitem:a5aa7c47d141fcb9f88547dfccacc7fe1" id="r_a5aa7c47d141fcb9f88547dfccacc7fe1"><td class="memTemplParams" colspan="2">template&lt;typename ResourceType&gt; </td></tr>
 <tr class="memitem:a5aa7c47d141fcb9f88547dfccacc7fe1"><td class="memTemplItemLeft" align="right" valign="top">static <a class="el" href="../../d6/d16/classxii_typed_resource_handle.html">xiiTypedResourceHandle</a>&lt; ResourceType &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a5aa7c47d141fcb9f88547dfccacc7fe1">LoadResource</a> (<a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sResourceID, <a class="el" href="../../d6/d16/classxii_typed_resource_handle.html">xiiTypedResourceHandle</a>&lt; ResourceType &gt; hLoadingFallback)</td></tr>
 <tr class="memdesc:a5aa7c47d141fcb9f88547dfccacc7fe1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Same as <a class="el" href="#aaf87c60a105c5b77125fc5954e776841" title="Returns a handle to the requested resource. szResourceID must uniquely identify the resource,...">LoadResource()</a>, but additionally allows to set a priority on the resource and a custom fallback resource for this instance.  <br /></td></tr>
 <tr class="separator:a5aa7c47d141fcb9f88547dfccacc7fe1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -183,15 +153,15 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsAnyLoadingIn
 <tr class="memitem:a3a5e923cdc3ab32bb6b9ca0d28eeb446" id="r_a3a5e923cdc3ab32bb6b9ca0d28eeb446"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../df/dfb/structxii_hybrid_string.html">xiiString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3a5e923cdc3ab32bb6b9ca0d28eeb446">GenerateUniqueResourceID</a> (<a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sResourceIDPrefix)</td></tr>
 <tr class="memdesc:a3a5e923cdc3ab32bb6b9ca0d28eeb446"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates a unique resource ID with the given prefix.  <br /></td></tr>
 <tr class="separator:a3a5e923cdc3ab32bb6b9ca0d28eeb446"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a79de0ab8b19f34d7b3e3c42d6b15db4f" id="r_a79de0ab8b19f34d7b3e3c42d6b15db4f"><td class="memTemplParams" colspan="2">template&lt;typename ResourceType , typename DescriptorType &gt; </td></tr>
+<tr class="memitem:a79de0ab8b19f34d7b3e3c42d6b15db4f" id="r_a79de0ab8b19f34d7b3e3c42d6b15db4f"><td class="memTemplParams" colspan="2">template&lt;typename ResourceType, typename DescriptorType&gt; </td></tr>
 <tr class="memitem:a79de0ab8b19f34d7b3e3c42d6b15db4f"><td class="memTemplItemLeft" align="right" valign="top">static <a class="el" href="../../d6/d16/classxii_typed_resource_handle.html">xiiTypedResourceHandle</a>&lt; ResourceType &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a79de0ab8b19f34d7b3e3c42d6b15db4f">CreateResource</a> (<a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sResourceID, DescriptorType &amp;&amp;descriptor, <a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sResourceDescription=nullptr)</td></tr>
 <tr class="memdesc:a79de0ab8b19f34d7b3e3c42d6b15db4f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a resource from a descriptor.  <br /></td></tr>
 <tr class="separator:a79de0ab8b19f34d7b3e3c42d6b15db4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a314b5972e6dbb3fe7eb1f2361a878c1b" id="r_a314b5972e6dbb3fe7eb1f2361a878c1b"><td class="memTemplParams" colspan="2">template&lt;typename ResourceType , typename DescriptorType &gt; </td></tr>
+<tr class="memitem:a314b5972e6dbb3fe7eb1f2361a878c1b" id="r_a314b5972e6dbb3fe7eb1f2361a878c1b"><td class="memTemplParams" colspan="2">template&lt;typename ResourceType, typename DescriptorType&gt; </td></tr>
 <tr class="memitem:a314b5972e6dbb3fe7eb1f2361a878c1b"><td class="memTemplItemLeft" align="right" valign="top">static <a class="el" href="../../d6/d16/classxii_typed_resource_handle.html">xiiTypedResourceHandle</a>&lt; ResourceType &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a314b5972e6dbb3fe7eb1f2361a878c1b">GetOrCreateResource</a> (<a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sResourceID, DescriptorType &amp;&amp;descriptor, <a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sResourceDescription=nullptr)</td></tr>
 <tr class="memdesc:a314b5972e6dbb3fe7eb1f2361a878c1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a handle to the resource with the given ID if it exists or creates it from a descriptor.  <br /></td></tr>
 <tr class="separator:a314b5972e6dbb3fe7eb1f2361a878c1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6c851ae8ea9489fa0122f262fe75e152" id="r_a6c851ae8ea9489fa0122f262fe75e152"><td class="memTemplParams" colspan="2">template&lt;typename ResourceType &gt; </td></tr>
+<tr class="memitem:a6c851ae8ea9489fa0122f262fe75e152" id="r_a6c851ae8ea9489fa0122f262fe75e152"><td class="memTemplParams" colspan="2">template&lt;typename ResourceType&gt; </td></tr>
 <tr class="memitem:a6c851ae8ea9489fa0122f262fe75e152"><td class="memTemplItemLeft" align="right" valign="top">static <a class="el" href="../../d6/d16/classxii_typed_resource_handle.html">xiiTypedResourceHandle</a>&lt; ResourceType &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a6c851ae8ea9489fa0122f262fe75e152">GetExistingResource</a> (<a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sResourceID)</td></tr>
 <tr class="memdesc:a6c851ae8ea9489fa0122f262fe75e152"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a handle to the resource with the given ID. If the resource does not exist, the handle is invalid.  <br /></td></tr>
 <tr class="separator:a6c851ae8ea9489fa0122f262fe75e152"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -200,7 +170,7 @@ static <a class="el" href="../../d6/d01/classxii_typeless_resource_handle.html">
 <tr class="memdesc:ad913187ad4028d7c4e49251be74b29c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Same as <a class="el" href="#ad913187ad4028d7c4e49251be74b29c0" title="Same as GetExistingResourceByType() but allows to specify the resource type as a xiiRTTI.">GetExistingResourceByType()</a> but allows to specify the resource type as a <a class="el" href="../../db/d89/classxii_r_t_t_i.html" title="This class holds information about reflected types. Each instance represents one type that is known t...">xiiRTTI</a>. <br /></td></tr>
 <tr class="separator:ad913187ad4028d7c4e49251be74b29c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5239795edd9afb1539935e8a9be4ab6b" id="r_a5239795edd9afb1539935e8a9be4ab6b"><td class="memTemplParams" colspan="2"><a id="a5239795edd9afb1539935e8a9be4ab6b" name="a5239795edd9afb1539935e8a9be4ab6b"></a>
-template&lt;typename ResourceType &gt; </td></tr>
+template&lt;typename ResourceType&gt; </td></tr>
 <tr class="memitem:a5239795edd9afb1539935e8a9be4ab6b"><td class="memTemplItemLeft" align="right" valign="top">static <a class="el" href="../../d6/d16/classxii_typed_resource_handle.html">xiiTypedResourceHandle</a>&lt; ResourceType &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>GetExistingResourceOrCreateAsync</b> (<a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sResourceID, <a class="el" href="../../d9/d4a/classxii_unique_ptr.html">xiiUniquePtr</a>&lt; <a class="el" href="../../da/d81/classxii_resource_type_loader.html">xiiResourceTypeLoader</a> &gt; &amp;&amp;pLoader, <a class="el" href="../../d6/d16/classxii_typed_resource_handle.html">xiiTypedResourceHandle</a>&lt; ResourceType &gt; hLoadingFallback={})</td></tr>
 <tr class="separator:a5239795edd9afb1539935e8a9be4ab6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac94fa32ae030311c92c88997c6609cda" id="r_ac94fa32ae030311c92c88997c6609cda"><td class="memItemLeft" align="right" valign="top"><a id="ac94fa32ae030311c92c88997c6609cda" name="ac94fa32ae030311c92c88997c6609cda"></a>
@@ -224,7 +194,7 @@ static xiiUInt32&#160;</td><td class="memItemRight" valign="bottom"><b>ReloadAll
 <tr class="memdesc:ad831921d5068b70b767831f11ceda905"><td class="mdescLeft">&#160;</td><td class="mdescRight">Goes through all resources and makes sure they are reloaded, if they have changed. If bForce is true, all resources are updated, even if there is no indication that they have changed. <br /></td></tr>
 <tr class="separator:ad831921d5068b70b767831f11ceda905"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afba271b1c6e0fb3f25926f899d726dea" id="r_afba271b1c6e0fb3f25926f899d726dea"><td class="memTemplParams" colspan="2"><a id="afba271b1c6e0fb3f25926f899d726dea" name="afba271b1c6e0fb3f25926f899d726dea"></a>
-template&lt;typename ResourceType &gt; </td></tr>
+template&lt;typename ResourceType&gt; </td></tr>
 <tr class="memitem:afba271b1c6e0fb3f25926f899d726dea"><td class="memTemplItemLeft" align="right" valign="top">static xiiUInt32&#160;</td><td class="memTemplItemRight" valign="bottom"><b>ReloadResourcesOfType</b> (bool bForce)</td></tr>
 <tr class="memdesc:afba271b1c6e0fb3f25926f899d726dea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Goes through all resources of the given type and makes sure they are reloaded, if they have changed. If bForce is true, resources are updated, even if there is no indication that they have changed. <br /></td></tr>
 <tr class="separator:afba271b1c6e0fb3f25926f899d726dea"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -233,7 +203,7 @@ static xiiUInt32&#160;</td><td class="memItemRight" valign="bottom"><b>ReloadRes
 <tr class="memdesc:a1e953092bd08e3cc531c01446966b4b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Goes through all resources of the given type and makes sure they are reloaded, if they have changed. If bForce is true, resources are updated, even if there is no indication that they have changed. <br /></td></tr>
 <tr class="separator:a1e953092bd08e3cc531c01446966b4b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1b4877232738dd18827443b40a34fda7" id="r_a1b4877232738dd18827443b40a34fda7"><td class="memTemplParams" colspan="2"><a id="a1b4877232738dd18827443b40a34fda7" name="a1b4877232738dd18827443b40a34fda7"></a>
-template&lt;typename ResourceType &gt; </td></tr>
+template&lt;typename ResourceType&gt; </td></tr>
 <tr class="memitem:a1b4877232738dd18827443b40a34fda7"><td class="memTemplItemLeft" align="right" valign="top">static bool&#160;</td><td class="memTemplItemRight" valign="bottom"><b>ReloadResource</b> (const <a class="el" href="../../d6/d16/classxii_typed_resource_handle.html">xiiTypedResourceHandle</a>&lt; ResourceType &gt; &amp;hResource, bool bForce)</td></tr>
 <tr class="memdesc:a1b4877232738dd18827443b40a34fda7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reloads only the one specific resource. If bForce is true, it is updated, even if there is no indication that it has changed. <br /></td></tr>
 <tr class="separator:a1b4877232738dd18827443b40a34fda7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -248,7 +218,7 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>ReloadResource
 <tr class="memdesc:a34f38664f25d12184939600ea46c0cee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes the 'PreventFileReload' flag and forces a reload on the resource.  <br /></td></tr>
 <tr class="separator:a34f38664f25d12184939600ea46c0cee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Acquiring resources</div></td></tr>
-<tr class="memitem:a5479934b8fc637ff4067fdd2d24bc2e0" id="r_a5479934b8fc637ff4067fdd2d24bc2e0"><td class="memTemplParams" colspan="2">template&lt;typename ResourceType &gt; </td></tr>
+<tr class="memitem:a5479934b8fc637ff4067fdd2d24bc2e0" id="r_a5479934b8fc637ff4067fdd2d24bc2e0"><td class="memTemplParams" colspan="2">template&lt;typename ResourceType&gt; </td></tr>
 <tr class="memitem:a5479934b8fc637ff4067fdd2d24bc2e0"><td class="memTemplItemLeft" align="right" valign="top">static ResourceType *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a5479934b8fc637ff4067fdd2d24bc2e0">BeginAcquireResource</a> (const <a class="el" href="../../d6/d16/classxii_typed_resource_handle.html">xiiTypedResourceHandle</a>&lt; ResourceType &gt; &amp;hResource, xiiResourceAcquireMode mode, const <a class="el" href="../../d6/d16/classxii_typed_resource_handle.html">xiiTypedResourceHandle</a>&lt; ResourceType &gt; &amp;hLoadingFallback=<a class="el" href="../../d6/d16/classxii_typed_resource_handle.html">xiiTypedResourceHandle</a>&lt; ResourceType &gt;(), xiiResourceAcquireResult *out_pAcquireResult=nullptr)</td></tr>
 <tr class="memdesc:a5479934b8fc637ff4067fdd2d24bc2e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Acquires a resource pointer from a handle. Prefer to use <a class="el" href="../../d2/d79/classxii_resource_lock.html" title="Helper class to acquire and release a resource safely.">xiiResourceLock</a>, which wraps BeginAcquireResource / EndAcquireResource.  <br /></td></tr>
 <tr class="separator:a5479934b8fc637ff4067fdd2d24bc2e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -257,7 +227,7 @@ static <a class="el" href="../../d9/de1/classxii_resource.html">xiiResource</a> 
 <tr class="memdesc:a4c240f6745be036ded7c47916c59034e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Same as BeginAcquireResource but only for the base resource pointer. <br /></td></tr>
 <tr class="separator:a4c240f6745be036ded7c47916c59034e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a69d96e946aa3e79a3af69bfa249e78fa" id="r_a69d96e946aa3e79a3af69bfa249e78fa"><td class="memTemplParams" colspan="2"><a id="a69d96e946aa3e79a3af69bfa249e78fa" name="a69d96e946aa3e79a3af69bfa249e78fa"></a>
-template&lt;typename ResourceType &gt; </td></tr>
+template&lt;typename ResourceType&gt; </td></tr>
 <tr class="memitem:a69d96e946aa3e79a3af69bfa249e78fa"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>EndAcquireResource</b> (ResourceType *pResource)</td></tr>
 <tr class="memdesc:a69d96e946aa3e79a3af69bfa249e78fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Needs to be called in concert with <a class="el" href="#a5479934b8fc637ff4067fdd2d24bc2e0" title="Acquires a resource pointer from a handle. Prefer to use xiiResourceLock, which wraps BeginAcquireRes...">BeginAcquireResource()</a> after accessing a resource has been finished. Prefer to use <a class="el" href="../../d2/d79/classxii_resource_lock.html" title="Helper class to acquire and release a resource safely.">xiiResourceLock</a> instead. <br /></td></tr>
 <tr class="separator:a69d96e946aa3e79a3af69bfa249e78fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -274,7 +244,7 @@ static xiiUInt32&#160;</td><td class="memItemRight" valign="bottom"><b>GetForceN
 <tr class="memdesc:a1678e051d42d6cd9dca4de62b7cd70b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">If the returned number is greater 0 the resource manager treats xiiResourceAcquireMode::AllowLoadingFallback as xiiResourceAcquireMode::BlockTillLoaded on BeginAcquireResource. <br /></td></tr>
 <tr class="separator:a1678e051d42d6cd9dca4de62b7cd70b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aafb891b9a15fc3c8b2df87241c29439a" id="r_aafb891b9a15fc3c8b2df87241c29439a"><td class="memTemplParams" colspan="2"><a id="aafb891b9a15fc3c8b2df87241c29439a" name="aafb891b9a15fc3c8b2df87241c29439a"></a>
-template&lt;typename ResourceType &gt; </td></tr>
+template&lt;typename ResourceType&gt; </td></tr>
 <tr class="memitem:aafb891b9a15fc3c8b2df87241c29439a"><td class="memTemplItemLeft" align="right" valign="top">static <a class="el" href="../../da/d7f/classxii_locked_object.html">xiiLockedObject</a>&lt; <a class="el" href="../../dd/d52/classxii_mutex.html">xiiMutex</a>, <a class="el" href="../../dc/da4/classxii_dynamic_array.html">xiiDynamicArray</a>&lt; <a class="el" href="../../d9/de1/classxii_resource.html">xiiResource</a> * &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>GetAllResourcesOfType</b> ()</td></tr>
 <tr class="memdesc:aafb891b9a15fc3c8b2df87241c29439a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves an array of pointers to resources of the indicated type which are loaded at the moment. Destroy the returned object as soon as possible as it holds the entire resource manager locked. <br /></td></tr>
 <tr class="separator:aafb891b9a15fc3c8b2df87241c29439a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -306,13 +276,13 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>SetDefaultReso
 static <a class="el" href="../../da/d81/classxii_resource_type_loader.html">xiiResourceTypeLoader</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetDefaultResourceLoader</b> ()</td></tr>
 <tr class="memdesc:a9a9044db3ee623e9e6bd6ad559d95454"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the resource loader to use when no type specific resource loader is available. <br /></td></tr>
 <tr class="separator:a9a9044db3ee623e9e6bd6ad559d95454"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3e41d0a237123ce860e23646e98b7c9a" id="r_a3e41d0a237123ce860e23646e98b7c9a"><td class="memTemplParams" colspan="2">template&lt;typename ResourceType &gt; </td></tr>
+<tr class="memitem:a3e41d0a237123ce860e23646e98b7c9a" id="r_a3e41d0a237123ce860e23646e98b7c9a"><td class="memTemplParams" colspan="2">template&lt;typename ResourceType&gt; </td></tr>
 <tr class="memitem:a3e41d0a237123ce860e23646e98b7c9a"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a3e41d0a237123ce860e23646e98b7c9a">SetResourceTypeLoader</a> (<a class="el" href="../../da/d81/classxii_resource_type_loader.html">xiiResourceTypeLoader</a> *pCreator)</td></tr>
 <tr class="memdesc:a3e41d0a237123ce860e23646e98b7c9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the resource loader to use for the given resource type.  <br /></td></tr>
 <tr class="separator:a3e41d0a237123ce860e23646e98b7c9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Named resources</div></td></tr>
 <tr class="memitem:a3e15bdd3bcf103bfd5ca2ed66caaf133" id="r_a3e15bdd3bcf103bfd5ca2ed66caaf133"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3e15bdd3bcf103bfd5ca2ed66caaf133">RegisterNamedResource</a> (<a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sLookupName, <a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sRedirectionResource)</td></tr>
-<tr class="memdesc:a3e15bdd3bcf103bfd5ca2ed66caaf133"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers a 'named' resource. When a resource is looked up using <em>szLookupName</em>, the lookup will be redirected to <em>szRedirectionResource</em>.  <br /></td></tr>
+<tr class="memdesc:a3e15bdd3bcf103bfd5ca2ed66caaf133"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers a 'named' resource. When a resource is looked up using <em class="arg">szLookupName</em>, the lookup will be redirected to <em class="arg">szRedirectionResource</em>.  <br /></td></tr>
 <tr class="separator:a3e15bdd3bcf103bfd5ca2ed66caaf133"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0114e5fdcefc34eaae6fa277a3261407" id="r_a0114e5fdcefc34eaae6fa277a3261407"><td class="memItemLeft" align="right" valign="top"><a id="a0114e5fdcefc34eaae6fa277a3261407" name="a0114e5fdcefc34eaae6fa277a3261407"></a>
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>UnregisterNamedResource</b> (<a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sLookupName)</td></tr>
@@ -337,7 +307,7 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsExportModeEn
 <tr class="memdesc:af798a70e6527e88c539f104596053cff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether export mode is active. <br /></td></tr>
 <tr class="separator:af798a70e6527e88c539f104596053cff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6fd5960f01fb9e69099f15c634c813da" id="r_a6fd5960f01fb9e69099f15c634c813da"><td class="memTemplParams" colspan="2"><a id="a6fd5960f01fb9e69099f15c634c813da" name="a6fd5960f01fb9e69099f15c634c813da"></a>
-template&lt;typename ResourceType &gt; </td></tr>
+template&lt;typename ResourceType&gt; </td></tr>
 <tr class="memitem:a6fd5960f01fb9e69099f15c634c813da"><td class="memTemplItemLeft" align="right" valign="top">static <a class="el" href="../../d6/d16/classxii_typed_resource_handle.html">xiiTypedResourceHandle</a>&lt; ResourceType &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>GetResourceHandleForExport</b> (<a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sResourceID)</td></tr>
 <tr class="memdesc:a6fd5960f01fb9e69099f15c634c813da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a resource handle for the given resource ID. This method can only be used if export mode is enabled. Internally it will create a resource but does not load the content. This way it can be ensured that the resource handle is always only the size of a pointer. <br /></td></tr>
 <tr class="separator:a6fd5960f01fb9e69099f15c634c813da"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -346,7 +316,7 @@ template&lt;typename ResourceType &gt; </td></tr>
 <tr class="memdesc:ae928c6d4377de42a0999ccb8c494b9a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers a resource type to be used instead of any of it's base classes, when loading specific data.  <br /></td></tr>
 <tr class="separator:ae928c6d4377de42a0999ccb8c494b9a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a66f37809af2c671e3593aee36eebc04d" id="r_a66f37809af2c671e3593aee36eebc04d"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a66f37809af2c671e3593aee36eebc04d">UnregisterResourceOverrideType</a> (const <a class="el" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a> *pDerivedTypeToUse)</td></tr>
-<tr class="memdesc:a66f37809af2c671e3593aee36eebc04d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unregisters <em>pDerivedTypeToUse</em> as an override resource.  <br /></td></tr>
+<tr class="memdesc:a66f37809af2c671e3593aee36eebc04d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unregisters <em class="arg">pDerivedTypeToUse</em> as an override resource.  <br /></td></tr>
 <tr class="separator:a66f37809af2c671e3593aee36eebc04d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
@@ -372,18 +342,18 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>xiiResourceHandleRea
 using&#160;</td><td class="memItemRight" valign="bottom"><b>ResourceCleanupCB</b> = <a class="el" href="../../dc/d84/structxii_delegate.html">xiiDelegate</a>&lt;void()&gt;</td></tr>
 <tr class="separator:af227b39329c784fcf5124d2affdb37ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7864376e1964f070656303f0a31aeaae" id="r_a7864376e1964f070656303f0a31aeaae"><td class="memTemplParams" colspan="2"><a id="a7864376e1964f070656303f0a31aeaae" name="a7864376e1964f070656303f0a31aeaae"></a>
-template&lt;typename RESOURCE_TYPE &gt; </td></tr>
+template&lt;typename RESOURCE_TYPE&gt; </td></tr>
 <tr class="memitem:a7864376e1964f070656303f0a31aeaae"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>SetResourceTypeLoadingFallback</b> (const <a class="el" href="../../d6/d16/classxii_typed_resource_handle.html">xiiTypedResourceHandle</a>&lt; RESOURCE_TYPE &gt; &amp;hResource)</td></tr>
 <tr class="memdesc:a7864376e1964f070656303f0a31aeaae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specifies which resource to use as a loading fallback for the given type, while a resource is not yet loaded. <br /></td></tr>
 <tr class="separator:a7864376e1964f070656303f0a31aeaae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac703f0879f9011022d3d5d68bfa6a6f5" id="r_ac703f0879f9011022d3d5d68bfa6a6f5"><td class="memTemplParams" colspan="2">template&lt;typename RESOURCE_TYPE &gt; </td></tr>
+<tr class="memitem:ac703f0879f9011022d3d5d68bfa6a6f5" id="r_ac703f0879f9011022d3d5d68bfa6a6f5"><td class="memTemplParams" colspan="2">template&lt;typename RESOURCE_TYPE&gt; </td></tr>
 <tr class="memitem:ac703f0879f9011022d3d5d68bfa6a6f5"><td class="memTemplItemLeft" align="right" valign="top">static const <a class="el" href="../../d6/d16/classxii_typed_resource_handle.html">xiiTypedResourceHandle</a>&lt; RESOURCE_TYPE &gt; &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#ac703f0879f9011022d3d5d68bfa6a6f5">GetResourceTypeLoadingFallback</a> ()</td></tr>
 <tr class="separator:ac703f0879f9011022d3d5d68bfa6a6f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0b8438e80b9d3517afe9f0502c616937" id="r_a0b8438e80b9d3517afe9f0502c616937"><td class="memTemplParams" colspan="2">template&lt;typename RESOURCE_TYPE &gt; </td></tr>
+<tr class="memitem:a0b8438e80b9d3517afe9f0502c616937" id="r_a0b8438e80b9d3517afe9f0502c616937"><td class="memTemplParams" colspan="2">template&lt;typename RESOURCE_TYPE&gt; </td></tr>
 <tr class="memitem:a0b8438e80b9d3517afe9f0502c616937"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a0b8438e80b9d3517afe9f0502c616937">SetResourceTypeMissingFallback</a> (const <a class="el" href="../../d6/d16/classxii_typed_resource_handle.html">xiiTypedResourceHandle</a>&lt; RESOURCE_TYPE &gt; &amp;hResource)</td></tr>
 <tr class="memdesc:a0b8438e80b9d3517afe9f0502c616937"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specifies which resource to use as a missing fallback for the given type, when a resource cannot be loaded.  <br /></td></tr>
 <tr class="separator:a0b8438e80b9d3517afe9f0502c616937"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a296635aea33986f1e3f8a356fbd367ca" id="r_a296635aea33986f1e3f8a356fbd367ca"><td class="memTemplParams" colspan="2">template&lt;typename RESOURCE_TYPE &gt; </td></tr>
+<tr class="memitem:a296635aea33986f1e3f8a356fbd367ca" id="r_a296635aea33986f1e3f8a356fbd367ca"><td class="memTemplParams" colspan="2">template&lt;typename RESOURCE_TYPE&gt; </td></tr>
 <tr class="memitem:a296635aea33986f1e3f8a356fbd367ca"><td class="memTemplItemLeft" align="right" valign="top">static const <a class="el" href="../../d6/d16/classxii_typed_resource_handle.html">xiiTypedResourceHandle</a>&lt; RESOURCE_TYPE &gt; &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a296635aea33986f1e3f8a356fbd367ca">GetResourceTypeMissingFallback</a> ()</td></tr>
 <tr class="separator:a296635aea33986f1e3f8a356fbd367ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5b493278fd85c39997d03a73540de1be" id="r_a5b493278fd85c39997d03a73540de1be"><td class="memItemLeft" align="right" valign="top"><a id="a5b493278fd85c39997d03a73540de1be" name="a5b493278fd85c39997d03a73540de1be"></a>
@@ -411,12 +381,12 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>SetAutoFreeUnu
 <tr class="memdesc:a211b99cf30b7c625fcf12a084a8ffb07"><td class="mdescLeft">&#160;</td><td class="mdescRight">If timeout is not zero, <a class="el" href="#a208fef8fa6b340d120d03e78beda58ed" title="Deallocates resources whose refcount has reached 0. Returns the number of deleted resources.">FreeUnusedResources()</a> is called once every frame with the given parameters. <br /></td></tr>
 <tr class="separator:a211b99cf30b7c625fcf12a084a8ffb07"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9a75ce771f1e6f73c286a1b33b4b99c3" id="r_a9a75ce771f1e6f73c286a1b33b4b99c3"><td class="memTemplParams" colspan="2"><a id="a9a75ce771f1e6f73c286a1b33b4b99c3" name="a9a75ce771f1e6f73c286a1b33b4b99c3"></a>
-template&lt;typename ResourceType &gt; </td></tr>
+template&lt;typename ResourceType&gt; </td></tr>
 <tr class="memitem:a9a75ce771f1e6f73c286a1b33b4b99c3"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>SetIncrementalUnloadForResourceType</b> (bool bActive)</td></tr>
 <tr class="memdesc:a9a75ce771f1e6f73c286a1b33b4b99c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">If set to 'false' resources of the given type will not be incrementally unloaded in the background, when they are not referenced anymore. <br /></td></tr>
 <tr class="separator:a9a75ce771f1e6f73c286a1b33b4b99c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ade9f97374648e3b10fb50a6e94f1b50c" id="r_ade9f97374648e3b10fb50a6e94f1b50c"><td class="memTemplParams" colspan="2"><a id="ade9f97374648e3b10fb50a6e94f1b50c" name="ade9f97374648e3b10fb50a6e94f1b50c"></a>
-template&lt;typename TypeBeingUpdated , typename TypeItWantsToAcquire &gt; </td></tr>
+template&lt;typename TypeBeingUpdated, typename TypeItWantsToAcquire&gt; </td></tr>
 <tr class="memitem:ade9f97374648e3b10fb50a6e94f1b50c"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>AllowResourceTypeAcquireDuringUpdateContent</b> ()</td></tr>
 <tr class="separator:ade9f97374648e3b10fb50a6e94f1b50c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab3ef20b53f8ba41acd7b78aeda07da3f" id="r_ab3ef20b53f8ba41acd7b78aeda07da3f"><td class="memItemLeft" align="right" valign="top"><a id="ab3ef20b53f8ba41acd7b78aeda07da3f" name="ab3ef20b53f8ba41acd7b78aeda07da3f"></a>
@@ -428,7 +398,7 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsResourceType
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader">Resource Priorities</h2></td></tr>
 <tr class="memitem:a4aa2a8f20ed839331587d7a439acb592" id="r_a4aa2a8f20ed839331587d7a439acb592"><td class="memTemplParams" colspan="2"><a id="a4aa2a8f20ed839331587d7a439acb592" name="a4aa2a8f20ed839331587d7a439acb592"></a>
-template&lt;typename RESOURCE_TYPE &gt; </td></tr>
+template&lt;typename RESOURCE_TYPE&gt; </td></tr>
 <tr class="memitem:a4aa2a8f20ed839331587d7a439acb592"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>SetResourceTypeDefaultPriority</b> (xiiResourcePriority priority)</td></tr>
 <tr class="memdesc:a4aa2a8f20ed839331587d7a439acb592"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specifies which resource to use as a loading fallback for the given type, while a resource is not yet loaded. <br /></td></tr>
 <tr class="separator:a4aa2a8f20ed839331587d7a439acb592"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -442,7 +412,7 @@ template&lt;typename RESOURCE_TYPE &gt; </td></tr>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename ResourceType &gt; </div>
+template&lt;typename ResourceType&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -470,7 +440,7 @@ template&lt;typename ResourceType &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -507,7 +477,7 @@ template&lt;typename ResourceType &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -535,7 +505,7 @@ template&lt;typename ResourceType &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -549,7 +519,7 @@ template&lt;typename ResourceType &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename ResourceType , typename DescriptorType &gt; </div>
+template&lt;typename ResourceType, typename DescriptorType&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -572,7 +542,7 @@ template&lt;typename ResourceType , typename DescriptorType &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -607,7 +577,7 @@ template&lt;typename ResourceType , typename DescriptorType &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -623,7 +593,7 @@ template&lt;typename ResourceType , typename DescriptorType &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename ResourceType &gt; </div>
+template&lt;typename ResourceType&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -637,7 +607,7 @@ template&lt;typename ResourceType &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -653,7 +623,7 @@ template&lt;typename ResourceType &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename ResourceType , typename DescriptorType &gt; </div>
+template&lt;typename ResourceType, typename DescriptorType&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -676,7 +646,7 @@ template&lt;typename ResourceType , typename DescriptorType &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -711,7 +681,7 @@ template&lt;typename ResourceType , typename DescriptorType &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -725,7 +695,7 @@ template&lt;typename ResourceType , typename DescriptorType &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename RESOURCE_TYPE &gt; </div>
+template&lt;typename RESOURCE_TYPE&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -739,7 +709,7 @@ template&lt;typename RESOURCE_TYPE &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -753,7 +723,7 @@ template&lt;typename RESOURCE_TYPE &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename RESOURCE_TYPE &gt; </div>
+template&lt;typename RESOURCE_TYPE&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -767,7 +737,7 @@ template&lt;typename RESOURCE_TYPE &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -781,7 +751,7 @@ template&lt;typename RESOURCE_TYPE &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename ResourceType &gt; </div>
+template&lt;typename ResourceType&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -795,7 +765,7 @@ template&lt;typename ResourceType &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -811,7 +781,7 @@ template&lt;typename ResourceType &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename ResourceType &gt; </div>
+template&lt;typename ResourceType&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -829,7 +799,7 @@ template&lt;typename ResourceType &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -861,12 +831,12 @@ template&lt;typename ResourceType &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Registers a 'named' resource. When a resource is looked up using <em>szLookupName</em>, the lookup will be redirected to <em>szRedirectionResource</em>. </p>
+<p>Registers a 'named' resource. When a resource is looked up using <em class="arg">szLookupName</em>, the lookup will be redirected to <em class="arg">szRedirectionResource</em>. </p>
 <p>This can be used to register a resource under an easier to use name. For example one can register "MenuBackground" as the name for "{
 E50DCC85-D375-4999-9CFE-42F1377FAC85 }". If the lookup name already exists, it will be overwritten. </p>
 
@@ -894,14 +864,14 @@ E50DCC85-D375-4999-9CFE-42F1377FAC85 }". If the lookup name already exists, it w
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 <p>Registers a resource type to be used instead of any of it's base classes, when loading specific data. </p>
-<p>When resource <a class="el" href="../../df/d95/class_b.html">B</a> is derived from <a class="el" href="../../d8/d4f/class_a.html">A</a> it can be registered to be instantiated when loading data, even if the code specifies to use a resource of type <a class="el" href="../../d8/d4f/class_a.html">A</a>. Whenever <a class="el" href="#aaf87c60a105c5b77125fc5954e776841" title="Returns a handle to the requested resource. szResourceID must uniquely identify the resource,...">LoadResource&lt;A&gt;()</a> is executed, the registered callback <em>OverrideDecider</em> is run to figure out whether <a class="el" href="../../df/d95/class_b.html">B</a> should be instantiated instead. If OverrideDecider returns true, <a class="el" href="../../df/d95/class_b.html">B</a> is used.</p>
-<p>OverrideDecider is given the resource ID after it has been resolved by the <a class="el" href="../../d7/d0a/classxii_file_system.html" title="The xiiFileSystem provides high-level functionality to manage files in a virtual file system.">xiiFileSystem</a>. So it has to be able to make its decision from the file path, name or extension. The override is registered for all base classes of <em>pDerivedTypeToUse</em>, in case the derivation hierarchy is longer.</p>
+<p>When resource <a class="el" href="../../df/d95/class_b.html">B</a> is derived from <a class="el" href="../../d8/d4f/class_a.html">A</a> it can be registered to be instantiated when loading data, even if the code specifies to use a resource of type <a class="el" href="../../d8/d4f/class_a.html">A</a>. Whenever <a class="el" href="#aaf87c60a105c5b77125fc5954e776841" title="Returns a handle to the requested resource. szResourceID must uniquely identify the resource,...">LoadResource&lt;A&gt;()</a> is executed, the registered callback <em class="arg">OverrideDecider</em> is run to figure out whether <a class="el" href="../../df/d95/class_b.html">B</a> should be instantiated instead. If OverrideDecider returns true, <a class="el" href="../../df/d95/class_b.html">B</a> is used.</p>
+<p>OverrideDecider is given the resource ID after it has been resolved by the <a class="el" href="../../d7/d0a/classxii_file_system.html" title="The xiiFileSystem provides high-level functionality to manage files in a virtual file system.">xiiFileSystem</a>. So it has to be able to make its decision from the file path, name or extension. The override is registered for all base classes of <em class="arg">pDerivedTypeToUse</em>, in case the derivation hierarchy is longer.</p>
 <p>Without calling this at startup, a derived resource type has to be manually requested in code. </p>
 
 </div>
@@ -924,7 +894,7 @@ E50DCC85-D375-4999-9CFE-42F1377FAC85 }". If the lookup name already exists, it w
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -952,7 +922,7 @@ E50DCC85-D375-4999-9CFE-42F1377FAC85 }". If the lookup name already exists, it w
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -984,7 +954,7 @@ E50DCC85-D375-4999-9CFE-42F1377FAC85 }". If the lookup name already exists, it w
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1001,7 +971,7 @@ E50DCC85-D375-4999-9CFE-42F1377FAC85 }". If the lookup name already exists, it w
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename ResourceType &gt; </div>
+template&lt;typename ResourceType&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -1015,7 +985,7 @@ template&lt;typename ResourceType &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1031,7 +1001,7 @@ template&lt;typename ResourceType &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename RESOURCE_TYPE &gt; </div>
+template&lt;typename RESOURCE_TYPE&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -1045,7 +1015,7 @@ template&lt;typename RESOURCE_TYPE &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1073,12 +1043,12 @@ template&lt;typename RESOURCE_TYPE &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Unregisters <em>pDerivedTypeToUse</em> as an override resource. </p>
+<p>Unregisters <em class="arg">pDerivedTypeToUse</em> as an override resource. </p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="#ae928c6d4377de42a0999ccb8c494b9a6" title="Registers a resource type to be used instead of any of it&#39;s base classes, when loading specific data.">RegisterResourceOverrideType()</a> </dd></dl>
 
 </div>
@@ -1105,7 +1075,7 @@ template&lt;typename RESOURCE_TYPE &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1133,7 +1103,7 @@ template&lt;typename RESOURCE_TYPE &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d4/d8e/classxii_resource_manager.html">xiiResourceManager</a></li>
-    <li class="footer">Generated on Fri Mar 21 2025 22:42:09 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
+    <li class="footer">Generated on Fri Mar 21 2025 23:27:48 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 </body>

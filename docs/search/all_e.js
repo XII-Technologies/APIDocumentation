@@ -861,7 +861,7 @@ var searchData=
   ['maximumanisotropic_858',['MaximumAnisotropic',['../db/d9d/structxii_g_a_l_filter_type.html#a078045721000a292a9dcacfb4bc966e6a591e9a491a424d05dba0d22cdf88f74c',1,'xiiGALFilterType']]],
   ['maximumlinear_859',['MaximumLinear',['../db/d9d/structxii_g_a_l_filter_type.html#a078045721000a292a9dcacfb4bc966e6a07914368ede20fa7cad159bba0fcd357',1,'xiiGALFilterType']]],
   ['maximumpoint_860',['MaximumPoint',['../db/d9d/structxii_g_a_l_filter_type.html#a078045721000a292a9dcacfb4bc966e6afdf90e239d46eb2e611ff9b1bff3de97',1,'xiiGALFilterType']]],
-  ['maxrecursiondepthdefault_861',['MaxRecursionDepthDefault',['../d0/d7f/classxii_event_base.html#a14eaea6839303c35216387d13f555d2ba8abb769e7341b0ad6d6c82ad6a5b67e3',1,'xiiEventBase']]],
+  ['maxrecursiondepthdefault_861',['MaxRecursionDepthDefault',['../d0/d7f/classxii_event_base.html#a47c0c3b0c09c926309f7fa6763933c9ba8abb769e7341b0ad6d6c82ad6a5b67e3',1,'xiiEventBase']]],
   ['maxvalue_862',['MaxValue',['../d1/d37/namespacexii_math.html#a6bbce1588f70c91d6cad87e82a0238c1',1,'xiiMath']]],
   ['mediumaquamarine_863',['MediumAquaMarine',['../d3/de6/classxii_color.html#a8ab8e4b86668dfd05edf94cc7dda6bc6',1,'xiiColor']]],
   ['mediumblue_864',['MediumBlue',['../d3/de6/classxii_color.html#a7ce291b9f63d86e911b1f77929e67b33',1,'xiiColor']]],

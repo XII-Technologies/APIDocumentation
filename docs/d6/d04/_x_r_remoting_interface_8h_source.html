@@ -1,39 +1,15 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<meta name="generator" content="Doxygen 1.12.0"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.13.2"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<!-- BEGIN opengraph metadata -->
-<meta property="og:title" content="XII" />
-<meta property="og:image" content="XII-Logo.png" />
-<meta property="og:description" content="An advanced high-performance simulation engine." />
-<meta property="og:url" content="https://www.xiitechnologies.com" />
-<!-- END opengraph metadata -->
-<!-- BEGIN twitter metadata -->
-<meta name="twitter:image:src" content="XII-Logo.png" />
-<meta name="twitter:title" content="XII" />
-<meta name="twitter:description" content="An advanced high-performance simulation engine." />
-<!-- END twitter metadata -->
 <title>XII: /home/runner/work/XII/XII/Source/Engine/GameEngine/XR/XRRemotingInterface.h Source File</title>
+<link rel="icon" href="../../XII-Logo.png" type="image/x-icon" />
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
-<link rel="icon" type="image/svg+xml" href="XII-Logo.png"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
-<script type="text/javascript" src="../../doxygen-awesome-darkmode-toggle.js"></script>
-<script type="text/javascript" src="../../doxygen-awesome-fragment-copy-button.js"></script>
-<script type="text/javascript" src="../../doxygen-awesome-paragraph-link.js"></script>
-<script type="text/javascript" src="../../doxygen-awesome-interactive-toc.js"></script>
-<script type="text/javascript" src="../../doxygen-awesome-tabs.js"></script>
-<script type="text/javascript" src="../../toggle-alternative-theme.js"></script>
-<script type="text/javascript">
-    DoxygenAwesomeFragmentCopyButton.init()
-    DoxygenAwesomeDarkModeToggle.init()
-    DoxygenAwesomeParagraphLink.init()
-    DoxygenAwesomeInteractiveToc.init()
-    DoxygenAwesomeTabs.init()
-</script>
 <link href="../../navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../navtreedata.js"></script>
 <script type="text/javascript" src="../../navtree.js"></script>
@@ -45,28 +21,22 @@
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-<!-- https://tholman.com/github-corners/ -->
-<a href="https://github.com/XII-Technologies/APIDocumentation" class="github-corner" title="View source on GitHub" target="_blank" rel="noopener noreferrer">
-    <svg viewBox="0 0 250 250" width="40" height="40" style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
-    <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
  <tbody>
- <tr style="height: 56px;">
+ <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="../../XII-Logo.png"/></td>
-  <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">XII
-   &#160;<span id="projectnumber">1.0.0</span>
+  <td id="projectalign">
+   <div id="projectname">XII<span id="projectnumber">&#160;Release 0.1.0</span>
    </div>
-   <div id="projectbrief">A high-performance simulation engine.</div>
   </td>
  </tr>
  </tbody>
 </table>
 </div>
 <!-- end header part -->
-<!-- Generated by Doxygen 1.12.0 -->
+<!-- Generated by Doxygen 1.13.2 -->
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
 var searchBox = new SearchBox("searchBox", "../../search/",'.html');
@@ -200,28 +170,27 @@ $(function(){initNavTree('d6/d04/_x_r_remoting_interface_8h_source.html','../../
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>};</div>
 </div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="keyword">using </span><a class="code hl_class" href="../../dc/d22/classxii_event.html">xiiXRRemotingConnectionEvent</a> = <a class="code hl_class" href="../../dc/d22/classxii_event.html">xiiEvent&lt;const xiiXRRemotingConnectionEventData&amp;&gt;</a>;</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="keyword">using </span>xiiXRRemotingConnectionEvent = <a class="code hl_class" href="../../dc/d22/classxii_event.html">xiiEvent&lt;const xiiXRRemotingConnectionEventData&amp;&gt;</a>;</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span></div>
 <div class="foldopen" id="foldopen00070" data-start="{" data-end="};">
 <div class="line"><a id="l00070" name="l00070"></a><span class="lineno"><a class="line" href="../../db/de8/classxii_x_r_remoting_interface.html">   70</a></span><span class="keyword">class </span><a class="code hl_class" href="../../db/de8/classxii_x_r_remoting_interface.html">xiiXRRemotingInterface</a></div>
 <div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>{</div>
 <div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno"><a class="line" href="../../db/de8/classxii_x_r_remoting_interface.html#a2c2e087c353eb932105be994d7f724e5">   74</a></span>  <span class="keyword">static</span> <a class="code hl_class" href="../../dd/d5a/classxii_typed_c_var.html">xiiCVarBool</a> <a class="code hl_variable" href="../../db/de8/classxii_x_r_remoting_interface.html#a2c2e087c353eb932105be994d7f724e5">cvar_XrRemoting</a>;</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno"><a class="line" href="../../db/de8/classxii_x_r_remoting_interface.html#a8ec225235774bd3f8cb12fc62cb1d502">   76</a></span>  <span class="keyword">static</span> <a class="code hl_class" href="../../dd/d5a/classxii_typed_c_var.html">xiiCVarString</a> <a class="code hl_variable" href="../../db/de8/classxii_x_r_remoting_interface.html#a8ec225235774bd3f8cb12fc62cb1d502">cvar_XrRemotingHostName</a>;</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno"><a class="line" href="../../db/de8/classxii_x_r_remoting_interface.html#a2c2e087c353eb932105be994d7f724e5">   74</a></span>  <span class="keyword">static</span> xiiCVarBool <a class="code hl_variable" href="../../db/de8/classxii_x_r_remoting_interface.html#a2c2e087c353eb932105be994d7f724e5">cvar_XrRemoting</a>;</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno"><a class="line" href="../../db/de8/classxii_x_r_remoting_interface.html#a8ec225235774bd3f8cb12fc62cb1d502">   76</a></span>  <span class="keyword">static</span> xiiCVarString <a class="code hl_variable" href="../../db/de8/classxii_x_r_remoting_interface.html#a8ec225235774bd3f8cb12fc62cb1d502">cvar_XrRemotingHostName</a>;</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span></div>
 <div class="line"><a id="l00079" name="l00079"></a><span class="lineno"><a class="line" href="../../db/de8/classxii_x_r_remoting_interface.html#af09282a71ef17a430eb8cc4c1e485005">   79</a></span>  <span class="keyword">virtual</span> <a class="code hl_struct" href="../../dd/dad/structxii_result.html">xiiResult</a> <a class="code hl_function" href="../../db/de8/classxii_x_r_remoting_interface.html#af09282a71ef17a430eb8cc4c1e485005">Initialize</a>() = 0;</div>
 <div class="line"><a id="l00081" name="l00081"></a><span class="lineno"><a class="line" href="../../db/de8/classxii_x_r_remoting_interface.html#a2b54e9885c44ecb81934b305311f4541">   81</a></span>  <span class="keyword">virtual</span> <a class="code hl_struct" href="../../dd/dad/structxii_result.html">xiiResult</a> <a class="code hl_function" href="../../db/de8/classxii_x_r_remoting_interface.html#a2b54e9885c44ecb81934b305311f4541">Deinitialize</a>() = 0;</div>
 <div class="line"><a id="l00083" name="l00083"></a><span class="lineno"><a class="line" href="../../db/de8/classxii_x_r_remoting_interface.html#a94d569547e2edc4a2beef860e64f305a">   83</a></span>  <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="../../db/de8/classxii_x_r_remoting_interface.html#a94d569547e2edc4a2beef860e64f305a">IsInitialized</a>() <span class="keyword">const</span> = 0;</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span> </div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span></div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span></div>
 <div class="line"><a id="l00089" name="l00089"></a><span class="lineno"><a class="line" href="../../db/de8/classxii_x_r_remoting_interface.html#acbb7385a207995e4f1f8988630fed3a4">   89</a></span>  <span class="keyword">virtual</span> <a class="code hl_struct" href="../../dd/dad/structxii_result.html">xiiResult</a> <a class="code hl_function" href="../../db/de8/classxii_x_r_remoting_interface.html#acbb7385a207995e4f1f8988630fed3a4">Connect</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* szRemoteHostName, uint16_t remotePort = 8265, <span class="keywordtype">bool</span> bEnableAudio = <span class="keyword">true</span>, <span class="keywordtype">int</span> iMaxBitrateKbps = 20000) = 0;</div>
 <div class="line"><a id="l00091" name="l00091"></a><span class="lineno"><a class="line" href="../../db/de8/classxii_x_r_remoting_interface.html#af180e47aae137f9ee9022f9ac3b08062">   91</a></span>  <span class="keyword">virtual</span> <a class="code hl_struct" href="../../dd/dad/structxii_result.html">xiiResult</a> <a class="code hl_function" href="../../db/de8/classxii_x_r_remoting_interface.html#af180e47aae137f9ee9022f9ac3b08062">Disconnect</a>() = 0;</div>
 <div class="line"><a id="l00093" name="l00093"></a><span class="lineno"><a class="line" href="../../db/de8/classxii_x_r_remoting_interface.html#aa1dc1e54de1616b164907f6af445252c">   93</a></span>  <span class="keyword">virtual</span> <a class="code hl_struct" href="../../de/dfd/structxii_enum.html">xiiEnum&lt;xiiXRRemotingConnectionState&gt;</a> <a class="code hl_function" href="../../db/de8/classxii_x_r_remoting_interface.html#aa1dc1e54de1616b164907f6af445252c">GetConnectionState</a>() <span class="keyword">const</span> = 0;</div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno"><a class="line" href="../../db/de8/classxii_x_r_remoting_interface.html#aa69e1c5b98d40151173c0e455ce815cf">   95</a></span>  <span class="keyword">virtual</span> <a class="code hl_class" href="../../dc/d22/classxii_event.html">xiiXRRemotingConnectionEvent</a>&amp; <a class="code hl_function" href="../../db/de8/classxii_x_r_remoting_interface.html#aa69e1c5b98d40151173c0e455ce815cf">GetConnectionEvent</a>() = 0;</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno"><a class="line" href="../../db/de8/classxii_x_r_remoting_interface.html#aa69e1c5b98d40151173c0e455ce815cf">   95</a></span>  <span class="keyword">virtual</span> xiiXRRemotingConnectionEvent&amp; <a class="code hl_function" href="../../db/de8/classxii_x_r_remoting_interface.html#aa69e1c5b98d40151173c0e455ce815cf">GetConnectionEvent</a>() = 0;</div>
 <div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>};</div>
 </div>
 <div class="ttc" id="aclassxii_event_html"><div class="ttname"><a href="../../dc/d22/classxii_event.html">xiiEvent</a></div><div class="ttdef"><b>Definition</b> Event.h:177</div></div>
-<div class="ttc" id="aclassxii_typed_c_var_html"><div class="ttname"><a href="../../dd/d5a/classxii_typed_c_var.html">xiiTypedCVar</a></div><div class="ttdoc">[internal] Helper class to implement xiiCVarInt, xiiCVarFlag, xiiCVarBool and xiiCVarString.</div><div class="ttdef"><b>Definition</b> CVar.h:268</div></div>
 <div class="ttc" id="aclassxii_x_r_remoting_interface_html"><div class="ttname"><a href="../../db/de8/classxii_x_r_remoting_interface.html">xiiXRRemotingInterface</a></div><div class="ttdoc">XR Remoting singleton interface. Allows for streaming the XR application to a remote device.</div><div class="ttdef"><b>Definition</b> XRRemotingInterface.h:71</div></div>
 <div class="ttc" id="aclassxii_x_r_remoting_interface_html_a2b54e9885c44ecb81934b305311f4541"><div class="ttname"><a href="../../db/de8/classxii_x_r_remoting_interface.html#a2b54e9885c44ecb81934b305311f4541">xiiXRRemotingInterface::Deinitialize</a></div><div class="ttdeci">virtual xiiResult Deinitialize()=0</div><div class="ttdoc">Shuts down XR Remoting. This will fail if XR actors still exists or if xiiXRInterface is still initia...</div></div>
 <div class="ttc" id="aclassxii_x_r_remoting_interface_html_a2c2e087c353eb932105be994d7f724e5"><div class="ttname"><a href="../../db/de8/classxii_x_r_remoting_interface.html#a2c2e087c353eb932105be994d7f724e5">xiiXRRemotingInterface::cvar_XrRemoting</a></div><div class="ttdeci">static xiiCVarBool cvar_XrRemoting</div><div class="ttdoc">Enable XR Remoting if available.</div><div class="ttdef"><b>Definition</b> XRRemotingInterface.h:74</div></div>
@@ -243,7 +212,7 @@ $(function(){initNavTree('d6/d04/_x_r_remoting_interface_8h_source.html','../../
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.html">home</a></li><li class="navelem"><a class="el" href="../../dir_1036706e55c22cab35bc1c58ee689f1d.html">runner</a></li><li class="navelem"><a class="el" href="../../dir_629f8151d55d307162ff2d619fb1783d.html">work</a></li><li class="navelem"><a class="el" href="../../dir_1ddc44fe1263a8c7935fa6130b7d9499.html">XII</a></li><li class="navelem"><a class="el" href="../../dir_2c1b6808f12952f4c36e05ba7068379a.html">XII</a></li><li class="navelem"><a class="el" href="../../dir_b5a1c4ecfca018ad24b729e213296d41.html">Source</a></li><li class="navelem"><a class="el" href="../../dir_e321052006a51284e67389ab20037e7c.html">Engine</a></li><li class="navelem"><a class="el" href="../../dir_16b55c55cbcae272b81765d1a4443891.html">GameEngine</a></li><li class="navelem"><a class="el" href="../../dir_b9090f277fab5d1058837259d079c1c9.html">XR</a></li><li class="navelem"><b>XRRemotingInterface.h</b></li>
-    <li class="footer">Generated on Fri Mar 21 2025 22:42:04 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
+    <li class="footer">Generated on Fri Mar 21 2025 23:27:42 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 </body>

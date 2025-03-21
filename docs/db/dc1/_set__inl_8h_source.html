@@ -1,39 +1,15 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<meta name="generator" content="Doxygen 1.12.0"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.13.2"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<!-- BEGIN opengraph metadata -->
-<meta property="og:title" content="XII" />
-<meta property="og:image" content="XII-Logo.png" />
-<meta property="og:description" content="An advanced high-performance simulation engine." />
-<meta property="og:url" content="https://www.xiitechnologies.com" />
-<!-- END opengraph metadata -->
-<!-- BEGIN twitter metadata -->
-<meta name="twitter:image:src" content="XII-Logo.png" />
-<meta name="twitter:title" content="XII" />
-<meta name="twitter:description" content="An advanced high-performance simulation engine." />
-<!-- END twitter metadata -->
 <title>XII: /home/runner/work/XII/XII/Source/Engine/Foundation/Containers/Implementation/Set_inl.h Source File</title>
+<link rel="icon" href="../../XII-Logo.png" type="image/x-icon" />
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
-<link rel="icon" type="image/svg+xml" href="XII-Logo.png"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
-<script type="text/javascript" src="../../doxygen-awesome-darkmode-toggle.js"></script>
-<script type="text/javascript" src="../../doxygen-awesome-fragment-copy-button.js"></script>
-<script type="text/javascript" src="../../doxygen-awesome-paragraph-link.js"></script>
-<script type="text/javascript" src="../../doxygen-awesome-interactive-toc.js"></script>
-<script type="text/javascript" src="../../doxygen-awesome-tabs.js"></script>
-<script type="text/javascript" src="../../toggle-alternative-theme.js"></script>
-<script type="text/javascript">
-    DoxygenAwesomeFragmentCopyButton.init()
-    DoxygenAwesomeDarkModeToggle.init()
-    DoxygenAwesomeParagraphLink.init()
-    DoxygenAwesomeInteractiveToc.init()
-    DoxygenAwesomeTabs.init()
-</script>
 <link href="../../navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../navtreedata.js"></script>
 <script type="text/javascript" src="../../navtree.js"></script>
@@ -45,28 +21,22 @@
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-<!-- https://tholman.com/github-corners/ -->
-<a href="https://github.com/XII-Technologies/APIDocumentation" class="github-corner" title="View source on GitHub" target="_blank" rel="noopener noreferrer">
-    <svg viewBox="0 0 250 250" width="40" height="40" style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
-    <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
  <tbody>
- <tr style="height: 56px;">
+ <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="../../XII-Logo.png"/></td>
-  <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">XII
-   &#160;<span id="projectnumber">1.0.0</span>
+  <td id="projectalign">
+   <div id="projectname">XII<span id="projectnumber">&#160;Release 0.1.0</span>
    </div>
-   <div id="projectbrief">A high-performance simulation engine.</div>
   </td>
  </tr>
  </tbody>
 </table>
 </div>
 <!-- end header part -->
-<!-- Generated by Doxygen 1.12.0 -->
+<!-- Generated by Doxygen 1.13.2 -->
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
 var searchBox = new SearchBox("searchBox", "../../search/",'.html');
@@ -139,7 +109,7 @@ $(function(){initNavTree('db/dc1/_set__inl_8h_source.html','../../'); initResiza
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment">// ***** Const Iterator *****</span></div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> KeyType, <span class="keyword">typename</span> Comparer&gt;</div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="keyword">template</span> &lt;<span class="keywordtype">bool</span> REVERSE&gt;</div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="keywordtype">void</span> <a class="code hl_class" href="../../d6/daa/classxii_set_base.html">xiiSetBase&lt;KeyType, Comparer&gt;::IteratorBase&lt;REVERSE&gt;::Advance</a>(xiiInt32 dir0, xiiInt32 dir1)</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="keywordtype">void</span> xiiSetBase&lt;KeyType, Comparer&gt;::IteratorBase&lt;REVERSE&gt;::Advance(xiiInt32 dir0, xiiInt32 dir1)</div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>{</div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>  <span class="keywordflow">if</span> (m_pElement == <span class="keyword">nullptr</span>)</div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>  {</div>
@@ -188,7 +158,7 @@ $(function(){initNavTree('db/dc1/_set__inl_8h_source.html','../../'); initResiza
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> KeyType, <span class="keyword">typename</span> Comparer&gt;</div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="keyword">template</span> &lt;<span class="keywordtype">bool</span> REVERSE&gt;</div>
 <div class="foldopen" id="foldopen00058" data-start="{" data-end="}">
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="../../d2/d7f/structxii_set_base_1_1_iterator_base.html#a2ff06830810fd2493fee24df19af8571">   58</a></span><span class="keywordtype">void</span> <a class="code hl_class" href="../../d6/daa/classxii_set_base.html">xiiSetBase&lt;KeyType, Comparer&gt;::IteratorBase&lt;REVERSE&gt;::Next</a>()</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="../../d2/d7f/structxii_set_base_1_1_iterator_base.html#a2ff06830810fd2493fee24df19af8571">   58</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="../../d2/d7f/structxii_set_base_1_1_iterator_base.html#a2ff06830810fd2493fee24df19af8571">xiiSetBase&lt;KeyType, Comparer&gt;::IteratorBase&lt;REVERSE&gt;::Next</a>()</div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>{</div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>  <span class="keywordflow">if</span> <span class="keyword">constexpr</span> (REVERSE)</div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>  {</div>
@@ -207,7 +177,7 @@ $(function(){initNavTree('db/dc1/_set__inl_8h_source.html','../../'); initResiza
 <div class="line"><a id="l00070" name="l00070"></a><span class="lineno"><a class="line" href="../../d2/d7f/structxii_set_base_1_1_iterator_base.html#a8e31798998c37860483f36b512b11211">   70</a></span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> KeyType, <span class="keyword">typename</span> Comparer&gt;</div>
 <div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span><span class="keyword">template</span> &lt;<span class="keywordtype">bool</span> REVERSE&gt;</div>
 <div class="foldopen" id="foldopen00072" data-start="{" data-end="}">
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno"><a class="line" href="../../d2/d7f/structxii_set_base_1_1_iterator_base.html#a8e31798998c37860483f36b512b11211">   72</a></span><span class="keywordtype">void</span> <a class="code hl_class" href="../../d6/daa/classxii_set_base.html">xiiSetBase&lt;KeyType, Comparer&gt;::IteratorBase&lt;REVERSE&gt;::Prev</a>()</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno"><a class="line" href="../../d2/d7f/structxii_set_base_1_1_iterator_base.html#a8e31798998c37860483f36b512b11211">   72</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="../../d2/d7f/structxii_set_base_1_1_iterator_base.html#a8e31798998c37860483f36b512b11211">xiiSetBase&lt;KeyType, Comparer&gt;::IteratorBase&lt;REVERSE&gt;::Prev</a>()</div>
 <div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>{</div>
 <div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>  <span class="keywordflow">if</span> <span class="keyword">constexpr</span> (REVERSE)</div>
 <div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>  {</div>
@@ -224,7 +194,7 @@ $(function(){initNavTree('db/dc1/_set__inl_8h_source.html','../../'); initResiza
 <div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span><span class="comment">// ***** xiiSetBase *****</span></div>
 <div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span> </div>
 <div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> KeyType, <span class="keyword">typename</span> Comparer&gt;</div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span><span class="keywordtype">void</span> <a class="code hl_class" href="../../d6/daa/classxii_set_base.html">xiiSetBase&lt;KeyType, Comparer&gt;::Constructor</a>()</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span><span class="keywordtype">void</span> xiiSetBase&lt;KeyType, Comparer&gt;::Constructor()</div>
 <div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>{</div>
 <div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>  m_uiCount = 0;</div>
 <div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
@@ -251,14 +221,14 @@ $(function(){initNavTree('db/dc1/_set__inl_8h_source.html','../../'); initResiza
 <div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span> </div>
 <div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> KeyType, <span class="keyword">typename</span> Comparer&gt;</div>
 <div class="foldopen" id="foldopen00108" data-start="{" data-end="}">
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno"><a class="line" href="../../d6/daa/classxii_set_base.html#a74fbc816194690bd16c93597b271c80f">  108</a></span><a class="code hl_function" href="../../d6/daa/classxii_set_base.html#af3c54e2d35affe8f0e9582bccbda0350">xiiSetBase&lt;KeyType, Comparer&gt;::xiiSetBase</a>(<span class="keyword">const</span> <a class="code hl_class" href="../../d6/daa/classxii_set_base.html">xiiSetBase&lt;KeyType, Comparer&gt;</a>&amp; cc, <a class="code hl_class" href="../../d5/d66/classxii_allocator_base.html">xiiAllocatorBase</a>* pAllocator) :</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno"><a class="line" href="../../d6/daa/classxii_set_base.html#a74fbc816194690bd16c93597b271c80f">  108</a></span><a class="code hl_function" href="../../d6/daa/classxii_set_base.html#af3c54e2d35affe8f0e9582bccbda0350">xiiSetBase&lt;KeyType, Comparer&gt;::xiiSetBase</a>(<span class="keyword">const</span> <a class="code hl_function" href="../../d6/daa/classxii_set_base.html#af3c54e2d35affe8f0e9582bccbda0350">xiiSetBase&lt;KeyType, Comparer&gt;</a>&amp; cc, <a class="code hl_class" href="../../d5/d66/classxii_allocator_base.html">xiiAllocatorBase</a>* pAllocator) :</div>
 <div class="foldopen" id="foldopen00109" data-start="{" data-end="}">
 <div class="line"><a id="l00109" name="l00109"></a><span class="lineno"><a class="line" href="../../d6/daa/classxii_set_base.html#ab3d6ef2b492e4b048201e9897a956533">  109</a></span>  m_Elements(pAllocator)</div>
 <div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>{</div>
 <div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>  Constructor();</div>
 <div class="foldopen" id="foldopen00112" data-start="{" data-end="}">
 <div class="line"><a id="l00112" name="l00112"></a><span class="lineno"><a class="line" href="../../d6/daa/classxii_set_base.html#a612883c7cb7fab407d11aa6f2889b130">  112</a></span> </div>
-<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>  operator=(cc);</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>  <a class="code hl_function" href="../../d6/daa/classxii_set_base.html#a949710a7061f08ce30ec98e73c62002d">operator=</a>(cc);</div>
 <div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>}</div>
 <div class="foldopen" id="foldopen00115" data-start="{" data-end="}">
 <div class="line"><a id="l00115" name="l00115"></a><span class="lineno"><a class="line" href="../../d6/daa/classxii_set_base.html#a0d39b63f88f77dfff248b0586c9f9c24">  115</a></span> </div>
@@ -267,19 +237,19 @@ $(function(){initNavTree('db/dc1/_set__inl_8h_source.html','../../'); initResiza
 <div class="line"><a id="l00117" name="l00117"></a><span class="lineno"><a class="line" href="../../d6/daa/classxii_set_base.html#abcb763cd04848b5d61818421b60de4e8">  117</a></span><a class="code hl_function" href="../../d6/daa/classxii_set_base.html#abcb763cd04848b5d61818421b60de4e8">xiiSetBase&lt;KeyType, Comparer&gt;::~xiiSetBase</a>()</div>
 <div class="foldopen" id="foldopen00118" data-start="{" data-end="}">
 <div class="line"><a id="l00118" name="l00118"></a><span class="lineno"><a class="line" href="../../d6/daa/classxii_set_base.html#ae94d47ef967975a5a4b2f2a0fb953dd7">  118</a></span>{</div>
-<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>  Clear();</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>  <a class="code hl_function" href="../../d6/daa/classxii_set_base.html#a0d39b63f88f77dfff248b0586c9f9c24">Clear</a>();</div>
 <div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>}</div>
 <div class="foldopen" id="foldopen00121" data-start="{" data-end="}">
 <div class="line"><a id="l00121" name="l00121"></a><span class="lineno"><a class="line" href="../../d6/daa/classxii_set_base.html#a24e212497cd1e3e8d2321220e311554b">  121</a></span> </div>
 <div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> KeyType, <span class="keyword">typename</span> Comparer&gt;</div>
 <div class="foldopen" id="foldopen00123" data-start="{" data-end="}">
-<div class="line"><a id="l00123" name="l00123"></a><span class="lineno"><a class="line" href="../../d6/daa/classxii_set_base.html#a949710a7061f08ce30ec98e73c62002d">  123</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="../../d6/daa/classxii_set_base.html#a949710a7061f08ce30ec98e73c62002d">xiiSetBase&lt;KeyType, Comparer&gt;::operator=</a>(<span class="keyword">const</span> <a class="code hl_class" href="../../d6/daa/classxii_set_base.html">xiiSetBase&lt;KeyType, Comparer&gt;</a>&amp; rhs)</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno"><a class="line" href="../../d6/daa/classxii_set_base.html#a949710a7061f08ce30ec98e73c62002d">  123</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="../../d6/daa/classxii_set_base.html#a949710a7061f08ce30ec98e73c62002d">xiiSetBase&lt;KeyType, Comparer&gt;::operator=</a>(<span class="keyword">const</span> <a class="code hl_function" href="../../d6/daa/classxii_set_base.html#af3c54e2d35affe8f0e9582bccbda0350">xiiSetBase&lt;KeyType, Comparer&gt;</a>&amp; rhs)</div>
 <div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>{</div>
 <div class="foldopen" id="foldopen00125" data-start="{" data-end="}">
-<div class="line"><a id="l00125" name="l00125"></a><span class="lineno"><a class="line" href="../../d6/daa/classxii_set_base.html#a0c684120db5132a2037d0defbe2d70c1">  125</a></span>  Clear();</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno"><a class="line" href="../../d6/daa/classxii_set_base.html#a0c684120db5132a2037d0defbe2d70c1">  125</a></span>  <a class="code hl_function" href="../../d6/daa/classxii_set_base.html#a0d39b63f88f77dfff248b0586c9f9c24">Clear</a>();</div>
 <div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span> </div>
 <div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>  <span class="keywordflow">for</span> (Iterator it = rhs.<a class="code hl_function" href="../../d6/daa/classxii_set_base.html#ae94d47ef967975a5a4b2f2a0fb953dd7">GetIterator</a>(); it.<a class="code hl_function" href="../../d2/d7f/structxii_set_base_1_1_iterator_base.html#ac63e3411c493c3da1ae66797f838b432">IsValid</a>(); ++it)</div>
-<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>    Insert(it.Key());</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>    <a class="code hl_function" href="../../d6/daa/classxii_set_base.html#a0c684120db5132a2037d0defbe2d70c1">Insert</a>(it.Key());</div>
 <div class="foldopen" id="foldopen00129" data-start="{" data-end="}">
 <div class="line"><a id="l00129" name="l00129"></a><span class="lineno"><a class="line" href="../../d6/daa/classxii_set_base.html#a945ed5e59fddd5c68117a7f741533498">  129</a></span>}</div>
 <div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span> </div>
@@ -287,7 +257,7 @@ $(function(){initNavTree('db/dc1/_set__inl_8h_source.html','../../'); initResiza
 <div class="foldopen" id="foldopen00132" data-start="{" data-end="}">
 <div class="line"><a id="l00132" name="l00132"></a><span class="lineno"><a class="line" href="../../d6/daa/classxii_set_base.html#a0d39b63f88f77dfff248b0586c9f9c24">  132</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="../../d6/daa/classxii_set_base.html#a0d39b63f88f77dfff248b0586c9f9c24">xiiSetBase&lt;KeyType, Comparer&gt;::Clear</a>()</div>
 <div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>{</div>
-<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>  <span class="keywordflow">for</span> (<a class="code hl_struct" href="../../d2/d7f/structxii_set_base_1_1_iterator_base.html">Iterator</a> it = GetIterator(); it.<a class="code hl_function" href="../../d2/d7f/structxii_set_base_1_1_iterator_base.html#ac63e3411c493c3da1ae66797f838b432">IsValid</a>(); ++it)</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>  <span class="keywordflow">for</span> (Iterator it = <a class="code hl_function" href="../../d6/daa/classxii_set_base.html#ae94d47ef967975a5a4b2f2a0fb953dd7">GetIterator</a>(); it.IsValid(); ++it)</div>
 <div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>    <a class="code hl_function" href="../../d8/d9d/classxii_memory_utils.html#a6c8728654ad1b5c0c9dcbb597a93594d">xiiMemoryUtils::Destruct&lt;Node&gt;</a>(it.m_pElement, 1);</div>
 <div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span> </div>
 <div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>  m_pFreeElementStack = <span class="keyword">nullptr</span>;</div>
@@ -325,26 +295,26 @@ $(function(){initNavTree('db/dc1/_set__inl_8h_source.html','../../'); initResiza
 <div class="line"><a id="l00162" name="l00162"></a><span class="lineno"><a class="line" href="../../d6/daa/classxii_set_base.html#a7f9b3ee58fb5f2d0f35c7a7177e64afb">  162</a></span> </div>
 <div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> KeyType, <span class="keyword">typename</span> Comparer&gt;</div>
 <div class="foldopen" id="foldopen00164" data-start="{" data-end="}">
-<div class="line"><a id="l00164" name="l00164"></a><span class="lineno"><a class="line" href="../../d6/daa/classxii_set_base.html#ae94d47ef967975a5a4b2f2a0fb953dd7">  164</a></span>XII_ALWAYS_INLINE <span class="keyword">typename</span> <a class="code hl_struct" href="../../d2/d7f/structxii_set_base_1_1_iterator_base.html">xiiSetBase&lt;KeyType, Comparer&gt;::Iterator</a> <a class="code hl_function" href="../../d6/daa/classxii_set_base.html#ae94d47ef967975a5a4b2f2a0fb953dd7">xiiSetBase&lt;KeyType, Comparer&gt;::GetIterator</a>()<span class="keyword"> const</span></div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno"><a class="line" href="../../d6/daa/classxii_set_base.html#ae94d47ef967975a5a4b2f2a0fb953dd7">  164</a></span>XII_ALWAYS_INLINE <span class="keyword">typename</span> xiiSetBase&lt;KeyType, Comparer&gt;::Iterator <a class="code hl_function" href="../../d6/daa/classxii_set_base.html#ae94d47ef967975a5a4b2f2a0fb953dd7">xiiSetBase&lt;KeyType, Comparer&gt;::GetIterator</a>()<span class="keyword"> const</span></div>
 <div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span><span class="keyword"></span>{</div>
-<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>  <span class="keywordflow">return</span> <a class="code hl_struct" href="../../d2/d7f/structxii_set_base_1_1_iterator_base.html">Iterator</a>(GetLeftMost());</div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>  <span class="keywordflow">return</span> Iterator(GetLeftMost());</div>
 <div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>}</div>
 </div>
 <div class="foldopen" id="foldopen00168" data-start="{" data-end="}">
 <div class="line"><a id="l00168" name="l00168"></a><span class="lineno"><a class="line" href="../../d6/daa/classxii_set_base.html#a348a90c29b37356ebec0d54391b9819e">  168</a></span> </div>
 <div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> KeyType, <span class="keyword">typename</span> Comparer&gt;</div>
 <div class="foldopen" id="foldopen00170" data-start="{" data-end="}">
-<div class="line"><a id="l00170" name="l00170"></a><span class="lineno"><a class="line" href="../../d6/daa/classxii_set_base.html#a24e212497cd1e3e8d2321220e311554b">  170</a></span>XII_ALWAYS_INLINE <span class="keyword">typename</span> <a class="code hl_struct" href="../../d2/d7f/structxii_set_base_1_1_iterator_base.html">xiiSetBase&lt;KeyType, Comparer&gt;::ReverseIterator</a> <a class="code hl_function" href="../../d6/daa/classxii_set_base.html#a24e212497cd1e3e8d2321220e311554b">xiiSetBase&lt;KeyType, Comparer&gt;::GetReverseIterator</a>()<span class="keyword"> const</span></div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno"><a class="line" href="../../d6/daa/classxii_set_base.html#a24e212497cd1e3e8d2321220e311554b">  170</a></span>XII_ALWAYS_INLINE <span class="keyword">typename</span> xiiSetBase&lt;KeyType, Comparer&gt;::ReverseIterator <a class="code hl_function" href="../../d6/daa/classxii_set_base.html#a24e212497cd1e3e8d2321220e311554b">xiiSetBase&lt;KeyType, Comparer&gt;::GetReverseIterator</a>()<span class="keyword"> const</span></div>
 <div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span><span class="keyword"></span>{</div>
-<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>  <span class="keywordflow">return</span> <a class="code hl_struct" href="../../d2/d7f/structxii_set_base_1_1_iterator_base.html">ReverseIterator</a>(GetRightMost());</div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>  <span class="keywordflow">return</span> ReverseIterator(GetRightMost());</div>
 <div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>}</div>
 </div>
 <div class="foldopen" id="foldopen00174" data-start="{" data-end="}">
 <div class="line"><a id="l00174" name="l00174"></a><span class="lineno"><a class="line" href="../../d6/daa/classxii_set_base.html#abf5022e8a572d2c29d19a984ae01af7e">  174</a></span> </div>
 <div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> KeyType, <span class="keyword">typename</span> Comparer&gt;</div>
-<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span><span class="keyword">typename</span> xiiSetBase&lt;KeyType, Comparer&gt;::Node* <a class="code hl_class" href="../../d6/daa/classxii_set_base.html">xiiSetBase&lt;KeyType, Comparer&gt;::GetLeftMost</a>()<span class="keyword"> const</span></div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span><span class="keyword">typename</span> xiiSetBase&lt;KeyType, Comparer&gt;::Node* xiiSetBase&lt;KeyType, Comparer&gt;::GetLeftMost()<span class="keyword"> const</span></div>
 <div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span><span class="keyword"></span>{</div>
-<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>  <span class="keywordflow">if</span> (IsEmpty())</div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>  <span class="keywordflow">if</span> (<a class="code hl_function" href="../../d6/daa/classxii_set_base.html#ab3d6ef2b492e4b048201e9897a956533">IsEmpty</a>())</div>
 <div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>    <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span> </div>
 <div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>  Node* pNode = m_pRoot;</div>
@@ -356,7 +326,7 @@ $(function(){initNavTree('db/dc1/_set__inl_8h_source.html','../../'); initResiza
 <div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>}</div>
 <div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span> </div>
 <div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> KeyType, <span class="keyword">typename</span> Comparer&gt;</div>
-<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span><span class="keyword">typename</span> xiiSetBase&lt;KeyType, Comparer&gt;::Node* <a class="code hl_class" href="../../d6/daa/classxii_set_base.html">xiiSetBase&lt;KeyType, Comparer&gt;::GetRightMost</a>()<span class="keyword"> const</span></div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span><span class="keyword">typename</span> xiiSetBase&lt;KeyType, Comparer&gt;::Node* xiiSetBase&lt;KeyType, Comparer&gt;::GetRightMost()<span class="keyword"> const</span></div>
 <div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span><span class="keyword"></span>{</div>
 <div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>  <span class="keywordflow">if</span> (IsEmpty())</div>
 <div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>    <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
@@ -371,7 +341,7 @@ $(function(){initNavTree('db/dc1/_set__inl_8h_source.html','../../'); initResiza
 <div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span> </div>
 <div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> KeyType, <span class="keyword">typename</span> Comparer&gt;</div>
 <div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> CompatibleKeyType&gt;</div>
-<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span><span class="keyword">typename</span> xiiSetBase&lt;KeyType, Comparer&gt;::Node* <a class="code hl_class" href="../../d6/daa/classxii_set_base.html">xiiSetBase&lt;KeyType, Comparer&gt;::Internal_Find</a>(<span class="keyword">const</span> CompatibleKeyType&amp; key)<span class="keyword"> const</span></div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span><span class="keyword">typename</span> xiiSetBase&lt;KeyType, Comparer&gt;::Node* xiiSetBase&lt;KeyType, Comparer&gt;::Internal_Find(<span class="keyword">const</span> CompatibleKeyType&amp; key)<span class="keyword"> const</span></div>
 <div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span><span class="keyword"></span>{</div>
 <div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>  Node* pNode = m_pRoot;</div>
 <div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span> </div>
@@ -394,9 +364,9 @@ $(function(){initNavTree('db/dc1/_set__inl_8h_source.html','../../'); initResiza
 <div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span> </div>
 <div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> KeyType, <span class="keyword">typename</span> Comparer&gt;</div>
 <div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> CompatibleKeyType&gt;</div>
-<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>XII_ALWAYS_INLINE <span class="keyword">typename</span> <a class="code hl_struct" href="../../d2/d7f/structxii_set_base_1_1_iterator_base.html">xiiSetBase&lt;KeyType, Comparer&gt;::Iterator</a> <a class="code hl_function" href="../../d6/daa/classxii_set_base.html#a45edcd7f67a240a03dcf35f4b6b9ca8c">xiiSetBase&lt;KeyType, Comparer&gt;::Find</a>(<span class="keyword">const</span> CompatibleKeyType&amp; key)<span class="keyword"> const</span></div>
+<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>XII_ALWAYS_INLINE <span class="keyword">typename</span> xiiSetBase&lt;KeyType, Comparer&gt;::Iterator <a class="code hl_function" href="../../d6/daa/classxii_set_base.html#a45edcd7f67a240a03dcf35f4b6b9ca8c">xiiSetBase&lt;KeyType, Comparer&gt;::Find</a>(<span class="keyword">const</span> CompatibleKeyType&amp; key)<span class="keyword"> const</span></div>
 <div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span><span class="keyword"></span>{</div>
-<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>  <span class="keywordflow">return</span> Iterator(Internal_Find(key));</div>
+<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>  <span class="keywordflow">return</span> <a class="code hl_class" href="../../d6/df7/classxii_map.html">Iterator</a>(Internal_Find(key));</div>
 <div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>}</div>
 <div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span> </div>
 <div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> KeyType, <span class="keyword">typename</span> Comparer&gt;</div>
@@ -408,11 +378,11 @@ $(function(){initNavTree('db/dc1/_set__inl_8h_source.html','../../'); initResiza
 <div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span> </div>
 <div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> KeyType, <span class="keyword">typename</span> Comparer&gt;</div>
 <div class="foldopen" id="foldopen00241" data-start="{" data-end="}">
-<div class="line"><a id="l00241" name="l00241"></a><span class="lineno"><a class="line" href="../../d6/daa/classxii_set_base.html#a4d24016c241584f27553d730d435b9b0">  241</a></span>XII_FORCE_INLINE <span class="keywordtype">bool</span> <a class="code hl_function" href="../../d6/daa/classxii_set_base.html#a4d24016c241584f27553d730d435b9b0">xiiSetBase&lt;KeyType, Comparer&gt;::ContainsSet</a>(<span class="keyword">const</span> <a class="code hl_class" href="../../d6/daa/classxii_set_base.html">xiiSetBase&lt;KeyType, Comparer&gt;</a>&amp; operand)<span class="keyword"> const</span></div>
+<div class="line"><a id="l00241" name="l00241"></a><span class="lineno"><a class="line" href="../../d6/daa/classxii_set_base.html#a4d24016c241584f27553d730d435b9b0">  241</a></span>XII_FORCE_INLINE <span class="keywordtype">bool</span> <a class="code hl_function" href="../../d6/daa/classxii_set_base.html#a4d24016c241584f27553d730d435b9b0">xiiSetBase&lt;KeyType, Comparer&gt;::ContainsSet</a>(<span class="keyword">const</span> <a class="code hl_function" href="../../d6/daa/classxii_set_base.html#af3c54e2d35affe8f0e9582bccbda0350">xiiSetBase&lt;KeyType, Comparer&gt;</a>&amp; operand)<span class="keyword"> const</span></div>
 <div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span><span class="keyword"></span>{</div>
 <div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>  <span class="keywordflow">for</span> (<span class="keyword">const</span> KeyType&amp; key : operand)</div>
 <div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>  {</div>
-<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>    <span class="keywordflow">if</span> (!Contains(key))</div>
+<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>    <span class="keywordflow">if</span> (!<a class="code hl_function" href="../../d6/daa/classxii_set_base.html#a8f118b4eae296d75dbbb6b8636bee278">Contains</a>(key))</div>
 <div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>      <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span>  }</div>
 <div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span> </div>
@@ -422,7 +392,7 @@ $(function(){initNavTree('db/dc1/_set__inl_8h_source.html','../../'); initResiza
 <div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span> </div>
 <div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> KeyType, <span class="keyword">typename</span> Comparer&gt;</div>
 <div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> CompatibleKeyType&gt;</div>
-<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span><span class="keyword">typename</span> xiiSetBase&lt;KeyType, Comparer&gt;::Node* <a class="code hl_class" href="../../d6/daa/classxii_set_base.html">xiiSetBase&lt;KeyType, Comparer&gt;::Internal_LowerBound</a>(<span class="keyword">const</span> CompatibleKeyType&amp; key)<span class="keyword"> const</span></div>
+<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span><span class="keyword">typename</span> xiiSetBase&lt;KeyType, Comparer&gt;::Node* xiiSetBase&lt;KeyType, Comparer&gt;::Internal_LowerBound(<span class="keyword">const</span> CompatibleKeyType&amp; key)<span class="keyword"> const</span></div>
 <div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span><span class="keyword"></span>{</div>
 <div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span>  Node* pNode        = m_pRoot;</div>
 <div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span>  Node* pNodeSmaller = <span class="keyword">nullptr</span>;</div>
@@ -446,14 +416,14 @@ $(function(){initNavTree('db/dc1/_set__inl_8h_source.html','../../'); initResiza
 <div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span> </div>
 <div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> KeyType, <span class="keyword">typename</span> Comparer&gt;</div>
 <div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> CompatibleKeyType&gt;</div>
-<div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span>XII_ALWAYS_INLINE <span class="keyword">typename</span> <a class="code hl_struct" href="../../d2/d7f/structxii_set_base_1_1_iterator_base.html">xiiSetBase&lt;KeyType, Comparer&gt;::Iterator</a> <a class="code hl_function" href="../../d6/daa/classxii_set_base.html#af80f696c31de05176cebb0a1cf1649cf">xiiSetBase&lt;KeyType, Comparer&gt;::LowerBound</a>(<span class="keyword">const</span> CompatibleKeyType&amp; key)<span class="keyword"> const</span></div>
+<div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span>XII_ALWAYS_INLINE <span class="keyword">typename</span> xiiSetBase&lt;KeyType, Comparer&gt;::Iterator <a class="code hl_function" href="../../d6/daa/classxii_set_base.html#af80f696c31de05176cebb0a1cf1649cf">xiiSetBase&lt;KeyType, Comparer&gt;::LowerBound</a>(<span class="keyword">const</span> CompatibleKeyType&amp; key)<span class="keyword"> const</span></div>
 <div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span><span class="keyword"></span>{</div>
-<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span>  <span class="keywordflow">return</span> Iterator(Internal_LowerBound(key));</div>
+<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span>  <span class="keywordflow">return</span> <a class="code hl_class" href="../../d6/df7/classxii_map.html">Iterator</a>(Internal_LowerBound(key));</div>
 <div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span>}</div>
 <div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span> </div>
 <div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> KeyType, <span class="keyword">typename</span> Comparer&gt;</div>
 <div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> CompatibleKeyType&gt;</div>
-<div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span><span class="keyword">typename</span> xiiSetBase&lt;KeyType, Comparer&gt;::Node* <a class="code hl_class" href="../../d6/daa/classxii_set_base.html">xiiSetBase&lt;KeyType, Comparer&gt;::Internal_UpperBound</a>(<span class="keyword">const</span> CompatibleKeyType&amp; key)<span class="keyword"> const</span></div>
+<div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span><span class="keyword">typename</span> xiiSetBase&lt;KeyType, Comparer&gt;::Node* xiiSetBase&lt;KeyType, Comparer&gt;::Internal_UpperBound(<span class="keyword">const</span> CompatibleKeyType&amp; key)<span class="keyword"> const</span></div>
 <div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span><span class="keyword"></span>{</div>
 <div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span>  Node* pNode        = m_pRoot;</div>
 <div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span>  Node* pNodeSmaller = <span class="keyword">nullptr</span>;</div>
@@ -465,7 +435,7 @@ $(function(){initNavTree('db/dc1/_set__inl_8h_source.html','../../'); initResiza
 <div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span> </div>
 <div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span>    <span class="keywordflow">if</span> (dir == dir2)</div>
 <div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span>    {</div>
-<div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span>      Iterator it(pNode);</div>
+<div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span>      <a class="code hl_class" href="../../d6/df7/classxii_map.html">Iterator</a> it(pNode);</div>
 <div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span>      ++it;</div>
 <div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span>      <span class="keywordflow">return</span> it.m_pElement;</div>
 <div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span>    }</div>
@@ -481,41 +451,41 @@ $(function(){initNavTree('db/dc1/_set__inl_8h_source.html','../../'); initResiza
 <div class="line"><a id="l00310" name="l00310"></a><span class="lineno">  310</span> </div>
 <div class="line"><a id="l00311" name="l00311"></a><span class="lineno">  311</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> KeyType, <span class="keyword">typename</span> Comparer&gt;</div>
 <div class="line"><a id="l00312" name="l00312"></a><span class="lineno">  312</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> CompatibleKeyType&gt;</div>
-<div class="line"><a id="l00313" name="l00313"></a><span class="lineno">  313</span>XII_ALWAYS_INLINE <span class="keyword">typename</span> <a class="code hl_struct" href="../../d2/d7f/structxii_set_base_1_1_iterator_base.html">xiiSetBase&lt;KeyType, Comparer&gt;::Iterator</a> <a class="code hl_function" href="../../d6/daa/classxii_set_base.html#aa22e1e00a492c0735196cdb2a4e36c39">xiiSetBase&lt;KeyType, Comparer&gt;::UpperBound</a>(<span class="keyword">const</span> CompatibleKeyType&amp; key)<span class="keyword"> const</span></div>
+<div class="line"><a id="l00313" name="l00313"></a><span class="lineno">  313</span>XII_ALWAYS_INLINE <span class="keyword">typename</span> xiiSetBase&lt;KeyType, Comparer&gt;::Iterator <a class="code hl_function" href="../../d6/daa/classxii_set_base.html#aa22e1e00a492c0735196cdb2a4e36c39">xiiSetBase&lt;KeyType, Comparer&gt;::UpperBound</a>(<span class="keyword">const</span> CompatibleKeyType&amp; key)<span class="keyword"> const</span></div>
 <div class="line"><a id="l00314" name="l00314"></a><span class="lineno">  314</span><span class="keyword"></span>{</div>
-<div class="line"><a id="l00315" name="l00315"></a><span class="lineno">  315</span>  <span class="keywordflow">return</span> Iterator(Internal_UpperBound(key));</div>
+<div class="line"><a id="l00315" name="l00315"></a><span class="lineno">  315</span>  <span class="keywordflow">return</span> <a class="code hl_class" href="../../d6/df7/classxii_map.html">Iterator</a>(Internal_UpperBound(key));</div>
 <div class="line"><a id="l00316" name="l00316"></a><span class="lineno">  316</span>}</div>
 <div class="line"><a id="l00317" name="l00317"></a><span class="lineno">  317</span> </div>
 <div class="line"><a id="l00318" name="l00318"></a><span class="lineno">  318</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> KeyType, <span class="keyword">typename</span> Comparer&gt;</div>
 <div class="foldopen" id="foldopen00319" data-start="{" data-end="}">
-<div class="line"><a id="l00319" name="l00319"></a><span class="lineno"><a class="line" href="../../d6/daa/classxii_set_base.html#a01f1d41d54c7ca40a4effee6f6d446e2">  319</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="../../d6/daa/classxii_set_base.html#a01f1d41d54c7ca40a4effee6f6d446e2">xiiSetBase&lt;KeyType, Comparer&gt;::Union</a>(<span class="keyword">const</span> <a class="code hl_class" href="../../d6/daa/classxii_set_base.html">xiiSetBase&lt;KeyType, Comparer&gt;</a>&amp; operand)</div>
+<div class="line"><a id="l00319" name="l00319"></a><span class="lineno"><a class="line" href="../../d6/daa/classxii_set_base.html#a01f1d41d54c7ca40a4effee6f6d446e2">  319</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="../../d6/daa/classxii_set_base.html#a01f1d41d54c7ca40a4effee6f6d446e2">xiiSetBase&lt;KeyType, Comparer&gt;::Union</a>(<span class="keyword">const</span> <a class="code hl_function" href="../../d6/daa/classxii_set_base.html#af3c54e2d35affe8f0e9582bccbda0350">xiiSetBase&lt;KeyType, Comparer&gt;</a>&amp; operand)</div>
 <div class="line"><a id="l00320" name="l00320"></a><span class="lineno">  320</span>{</div>
 <div class="line"><a id="l00321" name="l00321"></a><span class="lineno">  321</span>  <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; key : operand)</div>
 <div class="line"><a id="l00322" name="l00322"></a><span class="lineno">  322</span>  {</div>
-<div class="line"><a id="l00323" name="l00323"></a><span class="lineno">  323</span>    Insert(key);</div>
+<div class="line"><a id="l00323" name="l00323"></a><span class="lineno">  323</span>    <a class="code hl_function" href="../../d6/daa/classxii_set_base.html#a0c684120db5132a2037d0defbe2d70c1">Insert</a>(key);</div>
 <div class="line"><a id="l00324" name="l00324"></a><span class="lineno">  324</span>  }</div>
 <div class="line"><a id="l00325" name="l00325"></a><span class="lineno">  325</span>}</div>
 </div>
 <div class="line"><a id="l00326" name="l00326"></a><span class="lineno">  326</span> </div>
 <div class="line"><a id="l00327" name="l00327"></a><span class="lineno">  327</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> KeyType, <span class="keyword">typename</span> Comparer&gt;</div>
 <div class="foldopen" id="foldopen00328" data-start="{" data-end="}">
-<div class="line"><a id="l00328" name="l00328"></a><span class="lineno"><a class="line" href="../../d6/daa/classxii_set_base.html#a5b05f30fd73f5b58ed6fa05ee29f18e9">  328</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="../../d6/daa/classxii_set_base.html#a5b05f30fd73f5b58ed6fa05ee29f18e9">xiiSetBase&lt;KeyType, Comparer&gt;::Difference</a>(<span class="keyword">const</span> <a class="code hl_class" href="../../d6/daa/classxii_set_base.html">xiiSetBase&lt;KeyType, Comparer&gt;</a>&amp; operand)</div>
+<div class="line"><a id="l00328" name="l00328"></a><span class="lineno"><a class="line" href="../../d6/daa/classxii_set_base.html#a5b05f30fd73f5b58ed6fa05ee29f18e9">  328</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="../../d6/daa/classxii_set_base.html#a5b05f30fd73f5b58ed6fa05ee29f18e9">xiiSetBase&lt;KeyType, Comparer&gt;::Difference</a>(<span class="keyword">const</span> <a class="code hl_function" href="../../d6/daa/classxii_set_base.html#af3c54e2d35affe8f0e9582bccbda0350">xiiSetBase&lt;KeyType, Comparer&gt;</a>&amp; operand)</div>
 <div class="line"><a id="l00329" name="l00329"></a><span class="lineno">  329</span>{</div>
 <div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span>  <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; key : operand)</div>
 <div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span>  {</div>
-<div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span>    Remove(key);</div>
+<div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span>    <a class="code hl_function" href="../../d6/daa/classxii_set_base.html#a945ed5e59fddd5c68117a7f741533498">Remove</a>(key);</div>
 <div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span>  }</div>
 <div class="line"><a id="l00334" name="l00334"></a><span class="lineno">  334</span>}</div>
 </div>
 <div class="line"><a id="l00335" name="l00335"></a><span class="lineno">  335</span> </div>
 <div class="line"><a id="l00336" name="l00336"></a><span class="lineno">  336</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> KeyType, <span class="keyword">typename</span> Comparer&gt;</div>
 <div class="foldopen" id="foldopen00337" data-start="{" data-end="}">
-<div class="line"><a id="l00337" name="l00337"></a><span class="lineno"><a class="line" href="../../d6/daa/classxii_set_base.html#a7f9b3ee58fb5f2d0f35c7a7177e64afb">  337</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="../../d6/daa/classxii_set_base.html#a7f9b3ee58fb5f2d0f35c7a7177e64afb">xiiSetBase&lt;KeyType, Comparer&gt;::Intersection</a>(<span class="keyword">const</span> <a class="code hl_class" href="../../d6/daa/classxii_set_base.html">xiiSetBase&lt;KeyType, Comparer&gt;</a>&amp; operand)</div>
+<div class="line"><a id="l00337" name="l00337"></a><span class="lineno"><a class="line" href="../../d6/daa/classxii_set_base.html#a7f9b3ee58fb5f2d0f35c7a7177e64afb">  337</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="../../d6/daa/classxii_set_base.html#a7f9b3ee58fb5f2d0f35c7a7177e64afb">xiiSetBase&lt;KeyType, Comparer&gt;::Intersection</a>(<span class="keyword">const</span> <a class="code hl_function" href="../../d6/daa/classxii_set_base.html#af3c54e2d35affe8f0e9582bccbda0350">xiiSetBase&lt;KeyType, Comparer&gt;</a>&amp; operand)</div>
 <div class="line"><a id="l00338" name="l00338"></a><span class="lineno">  338</span>{</div>
-<div class="line"><a id="l00339" name="l00339"></a><span class="lineno">  339</span>  <span class="keywordflow">for</span> (<span class="keyword">auto</span> it = GetIterator(); it.IsValid();)</div>
+<div class="line"><a id="l00339" name="l00339"></a><span class="lineno">  339</span>  <span class="keywordflow">for</span> (<span class="keyword">auto</span> it = <a class="code hl_function" href="../../d6/daa/classxii_set_base.html#ae94d47ef967975a5a4b2f2a0fb953dd7">GetIterator</a>(); it.IsValid();)</div>
 <div class="line"><a id="l00340" name="l00340"></a><span class="lineno">  340</span>  {</div>
 <div class="line"><a id="l00341" name="l00341"></a><span class="lineno">  341</span>    <span class="keywordflow">if</span> (!operand.<a class="code hl_function" href="../../d6/daa/classxii_set_base.html#a8f118b4eae296d75dbbb6b8636bee278">Contains</a>(it.Key()))</div>
-<div class="line"><a id="l00342" name="l00342"></a><span class="lineno">  342</span>      it = Remove(it);</div>
+<div class="line"><a id="l00342" name="l00342"></a><span class="lineno">  342</span>      it = <a class="code hl_function" href="../../d6/daa/classxii_set_base.html#a945ed5e59fddd5c68117a7f741533498">Remove</a>(it);</div>
 <div class="line"><a id="l00343" name="l00343"></a><span class="lineno">  343</span>    <span class="keywordflow">else</span></div>
 <div class="line"><a id="l00344" name="l00344"></a><span class="lineno">  344</span>      ++it;</div>
 <div class="line"><a id="l00345" name="l00345"></a><span class="lineno">  345</span>  }</div>
@@ -525,15 +495,15 @@ $(function(){initNavTree('db/dc1/_set__inl_8h_source.html','../../'); initResiza
 <div class="line"><a id="l00348" name="l00348"></a><span class="lineno">  348</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> KeyType, <span class="keyword">typename</span> Comparer&gt;</div>
 <div class="line"><a id="l00349" name="l00349"></a><span class="lineno">  349</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> CompatibleKeyType&gt;</div>
 <div class="foldopen" id="foldopen00350" data-start="{" data-end="}">
-<div class="line"><a id="l00350" name="l00350"></a><span class="lineno"><a class="line" href="../../d6/daa/classxii_set_base.html#a0c684120db5132a2037d0defbe2d70c1">  350</a></span><span class="keyword">typename</span> <a class="code hl_struct" href="../../d2/d7f/structxii_set_base_1_1_iterator_base.html">xiiSetBase&lt;KeyType, Comparer&gt;::Iterator</a> <a class="code hl_function" href="../../d6/daa/classxii_set_base.html#a0c684120db5132a2037d0defbe2d70c1">xiiSetBase&lt;KeyType, Comparer&gt;::Insert</a>(CompatibleKeyType&amp;&amp; key)</div>
+<div class="line"><a id="l00350" name="l00350"></a><span class="lineno"><a class="line" href="../../d6/daa/classxii_set_base.html#a0c684120db5132a2037d0defbe2d70c1">  350</a></span><span class="keyword">typename</span> xiiSetBase&lt;KeyType, Comparer&gt;::Iterator <a class="code hl_function" href="../../d6/daa/classxii_set_base.html#a0c684120db5132a2037d0defbe2d70c1">xiiSetBase&lt;KeyType, Comparer&gt;::Insert</a>(CompatibleKeyType&amp;&amp; key)</div>
 <div class="line"><a id="l00351" name="l00351"></a><span class="lineno">  351</span>{</div>
 <div class="line"><a id="l00352" name="l00352"></a><span class="lineno">  352</span>  Node* pInsertedNode = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a id="l00353" name="l00353"></a><span class="lineno">  353</span> </div>
-<div class="line"><a id="l00354" name="l00354"></a><span class="lineno">  354</span>  m_pRoot             = Insert(m_pRoot, std::forward&lt;CompatibleKeyType&gt;(key), pInsertedNode);</div>
+<div class="line"><a id="l00354" name="l00354"></a><span class="lineno">  354</span>  m_pRoot             = <a class="code hl_function" href="../../d6/daa/classxii_set_base.html#a0c684120db5132a2037d0defbe2d70c1">Insert</a>(m_pRoot, std::forward&lt;CompatibleKeyType&gt;(key), pInsertedNode);</div>
 <div class="line"><a id="l00355" name="l00355"></a><span class="lineno">  355</span>  m_pRoot-&gt;m_pParent  = <span class="keyword">reinterpret_cast&lt;</span>Node*<span class="keyword">&gt;</span>(&amp;m_NilNode);</div>
 <div class="line"><a id="l00356" name="l00356"></a><span class="lineno">  356</span>  m_NilNode.m_pParent = <span class="keyword">reinterpret_cast&lt;</span>Node*<span class="keyword">&gt;</span>(&amp;m_NilNode);</div>
 <div class="line"><a id="l00357" name="l00357"></a><span class="lineno">  357</span> </div>
-<div class="line"><a id="l00358" name="l00358"></a><span class="lineno">  358</span>  <span class="keywordflow">return</span> <a class="code hl_struct" href="../../d2/d7f/structxii_set_base_1_1_iterator_base.html">Iterator</a>(pInsertedNode);</div>
+<div class="line"><a id="l00358" name="l00358"></a><span class="lineno">  358</span>  <span class="keywordflow">return</span> Iterator(pInsertedNode);</div>
 <div class="line"><a id="l00359" name="l00359"></a><span class="lineno">  359</span>}</div>
 </div>
 <div class="line"><a id="l00360" name="l00360"></a><span class="lineno">  360</span> </div>
@@ -543,7 +513,7 @@ $(function(){initNavTree('db/dc1/_set__inl_8h_source.html','../../'); initResiza
 <div class="line"><a id="l00363" name="l00363"></a><span class="lineno"><a class="line" href="../../d6/daa/classxii_set_base.html#a945ed5e59fddd5c68117a7f741533498">  363</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="../../d6/daa/classxii_set_base.html#a945ed5e59fddd5c68117a7f741533498">xiiSetBase&lt;KeyType, Comparer&gt;::Remove</a>(<span class="keyword">const</span> CompatibleKeyType&amp; key)</div>
 <div class="line"><a id="l00364" name="l00364"></a><span class="lineno">  364</span>{</div>
 <div class="line"><a id="l00365" name="l00365"></a><span class="lineno">  365</span>  <span class="keywordtype">bool</span> bRemoved       = <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00366" name="l00366"></a><span class="lineno">  366</span>  m_pRoot             = Remove(m_pRoot, key, bRemoved);</div>
+<div class="line"><a id="l00366" name="l00366"></a><span class="lineno">  366</span>  m_pRoot             = <a class="code hl_function" href="../../d6/daa/classxii_set_base.html#a945ed5e59fddd5c68117a7f741533498">Remove</a>(m_pRoot, key, bRemoved);</div>
 <div class="line"><a id="l00367" name="l00367"></a><span class="lineno">  367</span>  m_pRoot-&gt;m_pParent  = <span class="keyword">reinterpret_cast&lt;</span>Node*<span class="keyword">&gt;</span>(&amp;m_NilNode);</div>
 <div class="line"><a id="l00368" name="l00368"></a><span class="lineno">  368</span>  m_NilNode.m_pParent = <span class="keyword">reinterpret_cast&lt;</span>Node*<span class="keyword">&gt;</span>(&amp;m_NilNode);</div>
 <div class="line"><a id="l00369" name="l00369"></a><span class="lineno">  369</span> </div>
@@ -553,7 +523,7 @@ $(function(){initNavTree('db/dc1/_set__inl_8h_source.html','../../'); initResiza
 <div class="line"><a id="l00372" name="l00372"></a><span class="lineno">  372</span> </div>
 <div class="line"><a id="l00373" name="l00373"></a><span class="lineno">  373</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> KeyType, <span class="keyword">typename</span> Comparer&gt;</div>
 <div class="line"><a id="l00374" name="l00374"></a><span class="lineno">  374</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> CompatibleKeyType&gt;</div>
-<div class="line"><a id="l00375" name="l00375"></a><span class="lineno">  375</span><span class="keyword">typename</span> xiiSetBase&lt;KeyType, Comparer&gt;::Node* <a class="code hl_class" href="../../d6/daa/classxii_set_base.html">xiiSetBase&lt;KeyType, Comparer&gt;::AcquireNode</a>(CompatibleKeyType&amp;&amp; key, xiiUInt16 uiLevel, Node* pParent)</div>
+<div class="line"><a id="l00375" name="l00375"></a><span class="lineno">  375</span><span class="keyword">typename</span> xiiSetBase&lt;KeyType, Comparer&gt;::Node* xiiSetBase&lt;KeyType, Comparer&gt;::AcquireNode(CompatibleKeyType&amp;&amp; key, xiiUInt16 uiLevel, Node* pParent)</div>
 <div class="line"><a id="l00376" name="l00376"></a><span class="lineno">  376</span>{</div>
 <div class="line"><a id="l00377" name="l00377"></a><span class="lineno">  377</span>  Node* pNode;</div>
 <div class="line"><a id="l00378" name="l00378"></a><span class="lineno">  378</span> </div>
@@ -582,7 +552,7 @@ $(function(){initNavTree('db/dc1/_set__inl_8h_source.html','../../'); initResiza
 <div class="line"><a id="l00401" name="l00401"></a><span class="lineno">  401</span>}</div>
 <div class="line"><a id="l00402" name="l00402"></a><span class="lineno">  402</span> </div>
 <div class="line"><a id="l00403" name="l00403"></a><span class="lineno">  403</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> KeyType, <span class="keyword">typename</span> Comparer&gt;</div>
-<div class="line"><a id="l00404" name="l00404"></a><span class="lineno">  404</span><span class="keywordtype">void</span> <a class="code hl_class" href="../../d6/daa/classxii_set_base.html">xiiSetBase&lt;KeyType, Comparer&gt;::ReleaseNode</a>(Node* pNode)</div>
+<div class="line"><a id="l00404" name="l00404"></a><span class="lineno">  404</span><span class="keywordtype">void</span> xiiSetBase&lt;KeyType, Comparer&gt;::ReleaseNode(Node* pNode)</div>
 <div class="line"><a id="l00405" name="l00405"></a><span class="lineno">  405</span>{</div>
 <div class="line"><a id="l00406" name="l00406"></a><span class="lineno">  406</span>  XII_ASSERT_DEBUG(pNode != <span class="keyword">nullptr</span>, <span class="stringliteral">&quot;pNode is invalid.&quot;</span>);</div>
 <div class="line"><a id="l00407" name="l00407"></a><span class="lineno">  407</span> </div>
@@ -607,7 +577,7 @@ $(function(){initNavTree('db/dc1/_set__inl_8h_source.html','../../'); initResiza
 <div class="line"><a id="l00426" name="l00426"></a><span class="lineno">  426</span>}</div>
 <div class="line"><a id="l00427" name="l00427"></a><span class="lineno">  427</span> </div>
 <div class="line"><a id="l00428" name="l00428"></a><span class="lineno">  428</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> KeyType, <span class="keyword">typename</span> Comparer&gt;</div>
-<div class="line"><a id="l00429" name="l00429"></a><span class="lineno">  429</span><span class="keyword">typename</span> xiiSetBase&lt;KeyType, Comparer&gt;::Node* <a class="code hl_class" href="../../d6/daa/classxii_set_base.html">xiiSetBase&lt;KeyType, Comparer&gt;::SkewNode</a>(Node* root)</div>
+<div class="line"><a id="l00429" name="l00429"></a><span class="lineno">  429</span><span class="keyword">typename</span> xiiSetBase&lt;KeyType, Comparer&gt;::Node* xiiSetBase&lt;KeyType, Comparer&gt;::SkewNode(Node* root)</div>
 <div class="line"><a id="l00430" name="l00430"></a><span class="lineno">  430</span>{</div>
 <div class="line"><a id="l00431" name="l00431"></a><span class="lineno">  431</span>  <span class="keywordflow">if</span> ((root-&gt;m_pLink[0]-&gt;m_uiLevel == root-&gt;m_uiLevel) &amp;&amp; (root-&gt;m_uiLevel != 0))</div>
 <div class="line"><a id="l00432" name="l00432"></a><span class="lineno">  432</span>  {</div>
@@ -623,7 +593,7 @@ $(function(){initNavTree('db/dc1/_set__inl_8h_source.html','../../'); initResiza
 <div class="line"><a id="l00442" name="l00442"></a><span class="lineno">  442</span>}</div>
 <div class="line"><a id="l00443" name="l00443"></a><span class="lineno">  443</span> </div>
 <div class="line"><a id="l00444" name="l00444"></a><span class="lineno">  444</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> KeyType, <span class="keyword">typename</span> Comparer&gt;</div>
-<div class="line"><a id="l00445" name="l00445"></a><span class="lineno">  445</span><span class="keyword">typename</span> xiiSetBase&lt;KeyType, Comparer&gt;::Node* <a class="code hl_class" href="../../d6/daa/classxii_set_base.html">xiiSetBase&lt;KeyType, Comparer&gt;::SplitNode</a>(Node* root)</div>
+<div class="line"><a id="l00445" name="l00445"></a><span class="lineno">  445</span><span class="keyword">typename</span> xiiSetBase&lt;KeyType, Comparer&gt;::Node* xiiSetBase&lt;KeyType, Comparer&gt;::SplitNode(Node* root)</div>
 <div class="line"><a id="l00446" name="l00446"></a><span class="lineno">  446</span>{</div>
 <div class="line"><a id="l00447" name="l00447"></a><span class="lineno">  447</span>  <span class="keywordflow">if</span> ((root-&gt;m_pLink[1]-&gt;m_pLink[1]-&gt;m_uiLevel == root-&gt;m_uiLevel) &amp;&amp; (root-&gt;m_uiLevel != 0))</div>
 <div class="line"><a id="l00448" name="l00448"></a><span class="lineno">  448</span>  {</div>
@@ -851,25 +821,25 @@ $(function(){initNavTree('db/dc1/_set__inl_8h_source.html','../../'); initResiza
 <div class="line"><a id="l00670" name="l00670"></a><span class="lineno">  670</span> </div>
 <div class="line"><a id="l00671" name="l00671"></a><span class="lineno">  671</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> KeyType, <span class="keyword">typename</span> Comparer&gt;</div>
 <div class="foldopen" id="foldopen00672" data-start="{" data-end="}">
-<div class="line"><a id="l00672" name="l00672"></a><span class="lineno"><a class="line" href="../../d6/daa/classxii_set_base.html#a2eee9f79dfcc5ff744b8cfb123c87d61">  672</a></span><span class="keyword">typename</span> <a class="code hl_struct" href="../../d2/d7f/structxii_set_base_1_1_iterator_base.html">xiiSetBase&lt;KeyType, Comparer&gt;::Iterator</a> <a class="code hl_function" href="../../d6/daa/classxii_set_base.html#a945ed5e59fddd5c68117a7f741533498">xiiSetBase&lt;KeyType, Comparer&gt;::Remove</a>(<span class="keyword">const</span> <a class="code hl_struct" href="../../d2/d7f/structxii_set_base_1_1_iterator_base.html">Iterator</a>&amp; pos)</div>
+<div class="line"><a id="l00672" name="l00672"></a><span class="lineno"><a class="line" href="../../d6/daa/classxii_set_base.html#a2eee9f79dfcc5ff744b8cfb123c87d61">  672</a></span><span class="keyword">typename</span> xiiSetBase&lt;KeyType, Comparer&gt;::Iterator <a class="code hl_function" href="../../d6/daa/classxii_set_base.html#a945ed5e59fddd5c68117a7f741533498">xiiSetBase&lt;KeyType, Comparer&gt;::Remove</a>(<span class="keyword">const</span> Iterator&amp; pos)</div>
 <div class="line"><a id="l00673" name="l00673"></a><span class="lineno">  673</span>{</div>
 <div class="line"><a id="l00674" name="l00674"></a><span class="lineno">  674</span>  XII_ASSERT_DEBUG(pos.m_pElement != <span class="keyword">nullptr</span>, <span class="stringliteral">&quot;The Iterator(pos) is invalid.&quot;</span>);</div>
 <div class="line"><a id="l00675" name="l00675"></a><span class="lineno">  675</span> </div>
-<div class="line"><a id="l00676" name="l00676"></a><span class="lineno">  676</span>  <a class="code hl_struct" href="../../d2/d7f/structxii_set_base_1_1_iterator_base.html">Iterator</a> temp(pos);</div>
+<div class="line"><a id="l00676" name="l00676"></a><span class="lineno">  676</span>  Iterator temp(pos);</div>
 <div class="line"><a id="l00677" name="l00677"></a><span class="lineno">  677</span>  ++temp;</div>
-<div class="line"><a id="l00678" name="l00678"></a><span class="lineno">  678</span>  Remove(pos.<a class="code hl_function" href="../../d2/d7f/structxii_set_base_1_1_iterator_base.html#a01107a7bcf1556fec812125be2755d22">Key</a>());</div>
+<div class="line"><a id="l00678" name="l00678"></a><span class="lineno">  678</span>  <a class="code hl_function" href="../../d6/daa/classxii_set_base.html#a945ed5e59fddd5c68117a7f741533498">Remove</a>(pos.<a class="code hl_function" href="../../d2/d7f/structxii_set_base_1_1_iterator_base.html#a01107a7bcf1556fec812125be2755d22">Key</a>());</div>
 <div class="line"><a id="l00679" name="l00679"></a><span class="lineno">  679</span>  <span class="keywordflow">return</span> temp;</div>
 <div class="line"><a id="l00680" name="l00680"></a><span class="lineno">  680</span>}</div>
 </div>
 <div class="line"><a id="l00681" name="l00681"></a><span class="lineno">  681</span> </div>
 <div class="line"><a id="l00682" name="l00682"></a><span class="lineno">  682</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> KeyType, <span class="keyword">typename</span> Comparer&gt;</div>
 <div class="foldopen" id="foldopen00683" data-start="{" data-end="}">
-<div class="line"><a id="l00683" name="l00683"></a><span class="lineno"><a class="line" href="../../d6/daa/classxii_set_base.html#a348a90c29b37356ebec0d54391b9819e">  683</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="../../d6/daa/classxii_set_base.html#a348a90c29b37356ebec0d54391b9819e">xiiSetBase&lt;KeyType, Comparer&gt;::operator==</a>(<span class="keyword">const</span> <a class="code hl_class" href="../../d6/daa/classxii_set_base.html">xiiSetBase&lt;KeyType, Comparer&gt;</a>&amp; rhs)<span class="keyword"> const</span></div>
+<div class="line"><a id="l00683" name="l00683"></a><span class="lineno"><a class="line" href="../../d6/daa/classxii_set_base.html#a348a90c29b37356ebec0d54391b9819e">  683</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="../../d6/daa/classxii_set_base.html#a348a90c29b37356ebec0d54391b9819e">xiiSetBase&lt;KeyType, Comparer&gt;::operator==</a>(<span class="keyword">const</span> <a class="code hl_function" href="../../d6/daa/classxii_set_base.html#af3c54e2d35affe8f0e9582bccbda0350">xiiSetBase&lt;KeyType, Comparer&gt;</a>&amp; rhs)<span class="keyword"> const</span></div>
 <div class="line"><a id="l00684" name="l00684"></a><span class="lineno">  684</span><span class="keyword"></span>{</div>
-<div class="line"><a id="l00685" name="l00685"></a><span class="lineno">  685</span>  <span class="keywordflow">if</span> (GetCount() != rhs.<a class="code hl_function" href="../../d6/daa/classxii_set_base.html#a612883c7cb7fab407d11aa6f2889b130">GetCount</a>())</div>
+<div class="line"><a id="l00685" name="l00685"></a><span class="lineno">  685</span>  <span class="keywordflow">if</span> (<a class="code hl_function" href="../../d6/daa/classxii_set_base.html#a612883c7cb7fab407d11aa6f2889b130">GetCount</a>() != rhs.<a class="code hl_function" href="../../d6/daa/classxii_set_base.html#a612883c7cb7fab407d11aa6f2889b130">GetCount</a>())</div>
 <div class="line"><a id="l00686" name="l00686"></a><span class="lineno">  686</span>    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><a id="l00687" name="l00687"></a><span class="lineno">  687</span> </div>
-<div class="line"><a id="l00688" name="l00688"></a><span class="lineno">  688</span>  <span class="keyword">auto</span> itLhs = GetIterator();</div>
+<div class="line"><a id="l00688" name="l00688"></a><span class="lineno">  688</span>  <span class="keyword">auto</span> itLhs = <a class="code hl_function" href="../../d6/daa/classxii_set_base.html#ae94d47ef967975a5a4b2f2a0fb953dd7">GetIterator</a>();</div>
 <div class="line"><a id="l00689" name="l00689"></a><span class="lineno">  689</span>  <span class="keyword">auto</span> itRhs = rhs.<a class="code hl_function" href="../../d6/daa/classxii_set_base.html#ae94d47ef967975a5a4b2f2a0fb953dd7">GetIterator</a>();</div>
 <div class="line"><a id="l00690" name="l00690"></a><span class="lineno">  690</span> </div>
 <div class="line"><a id="l00691" name="l00691"></a><span class="lineno">  691</span>  <span class="keywordflow">while</span> (itLhs.IsValid())</div>
@@ -888,50 +858,50 @@ $(function(){initNavTree('db/dc1/_set__inl_8h_source.html','../../'); initResiza
 <div class="line"><a id="l00703" name="l00703"></a><span class="lineno">  703</span><span class="preprocessor">#undef STACK_SIZE</span></div>
 <div class="line"><a id="l00704" name="l00704"></a><span class="lineno">  704</span> </div>
 <div class="line"><a id="l00705" name="l00705"></a><span class="lineno">  705</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> KeyType, <span class="keyword">typename</span> Comparer, <span class="keyword">typename</span> AllocatorWrapper&gt;</div>
-<div class="line"><a id="l00706" name="l00706"></a><span class="lineno">  706</span><a class="code hl_class" href="../../d6/d31/classxii_set.html">xiiSet&lt;KeyType, Comparer, AllocatorWrapper&gt;::xiiSet</a>() :</div>
+<div class="line"><a id="l00706" name="l00706"></a><span class="lineno">  706</span>xiiSet&lt;KeyType, Comparer, AllocatorWrapper&gt;::xiiSet() :</div>
 <div class="line"><a id="l00707" name="l00707"></a><span class="lineno">  707</span>  <a class="code hl_class" href="../../d6/daa/classxii_set_base.html">xiiSetBase</a>&lt;KeyType, Comparer&gt;(Comparer(), AllocatorWrapper::GetAllocator())</div>
 <div class="line"><a id="l00708" name="l00708"></a><span class="lineno">  708</span>{</div>
 <div class="line"><a id="l00709" name="l00709"></a><span class="lineno">  709</span>}</div>
 <div class="line"><a id="l00710" name="l00710"></a><span class="lineno">  710</span> </div>
 <div class="line"><a id="l00711" name="l00711"></a><span class="lineno">  711</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> KeyType, <span class="keyword">typename</span> Comparer, <span class="keyword">typename</span> AllocatorWrapper&gt;</div>
-<div class="line"><a id="l00712" name="l00712"></a><span class="lineno">  712</span><a class="code hl_class" href="../../d6/d31/classxii_set.html">xiiSet&lt;KeyType, Comparer, AllocatorWrapper&gt;::xiiSet</a>(<a class="code hl_class" href="../../d5/d66/classxii_allocator_base.html">xiiAllocatorBase</a>* pAllocator) :</div>
+<div class="line"><a id="l00712" name="l00712"></a><span class="lineno">  712</span>xiiSet&lt;KeyType, Comparer, AllocatorWrapper&gt;::xiiSet(<a class="code hl_class" href="../../d5/d66/classxii_allocator_base.html">xiiAllocatorBase</a>* pAllocator) :</div>
 <div class="line"><a id="l00713" name="l00713"></a><span class="lineno">  713</span>  <a class="code hl_class" href="../../d6/daa/classxii_set_base.html">xiiSetBase</a>&lt;KeyType, Comparer&gt;(Comparer(), pAllocator)</div>
 <div class="line"><a id="l00714" name="l00714"></a><span class="lineno">  714</span>{</div>
 <div class="line"><a id="l00715" name="l00715"></a><span class="lineno">  715</span>}</div>
 <div class="line"><a id="l00716" name="l00716"></a><span class="lineno">  716</span> </div>
 <div class="line"><a id="l00717" name="l00717"></a><span class="lineno">  717</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> KeyType, <span class="keyword">typename</span> Comparer, <span class="keyword">typename</span> AllocatorWrapper&gt;</div>
-<div class="line"><a id="l00718" name="l00718"></a><span class="lineno">  718</span><a class="code hl_class" href="../../d6/d31/classxii_set.html">xiiSet&lt;KeyType, Comparer, AllocatorWrapper&gt;::xiiSet</a>(<span class="keyword">const</span> Comparer&amp; comparer, <a class="code hl_class" href="../../d5/d66/classxii_allocator_base.html">xiiAllocatorBase</a>* pAllocator) :</div>
+<div class="line"><a id="l00718" name="l00718"></a><span class="lineno">  718</span>xiiSet&lt;KeyType, Comparer, AllocatorWrapper&gt;::xiiSet(<span class="keyword">const</span> Comparer&amp; comparer, <a class="code hl_class" href="../../d5/d66/classxii_allocator_base.html">xiiAllocatorBase</a>* pAllocator) :</div>
 <div class="line"><a id="l00719" name="l00719"></a><span class="lineno">  719</span>  <a class="code hl_class" href="../../d6/daa/classxii_set_base.html">xiiSetBase</a>&lt;KeyType, Comparer&gt;(comparer, pAllocator)</div>
 <div class="line"><a id="l00720" name="l00720"></a><span class="lineno">  720</span>{</div>
 <div class="line"><a id="l00721" name="l00721"></a><span class="lineno">  721</span>}</div>
 <div class="line"><a id="l00722" name="l00722"></a><span class="lineno">  722</span> </div>
 <div class="line"><a id="l00723" name="l00723"></a><span class="lineno">  723</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> KeyType, <span class="keyword">typename</span> Comparer, <span class="keyword">typename</span> AllocatorWrapper&gt;</div>
-<div class="line"><a id="l00724" name="l00724"></a><span class="lineno">  724</span><a class="code hl_class" href="../../d6/d31/classxii_set.html">xiiSet&lt;KeyType, Comparer, AllocatorWrapper&gt;::xiiSet</a>(<span class="keyword">const</span> <a class="code hl_class" href="../../d6/d31/classxii_set.html">xiiSet&lt;KeyType, Comparer, AllocatorWrapper&gt;</a>&amp; other) :</div>
+<div class="line"><a id="l00724" name="l00724"></a><span class="lineno">  724</span>xiiSet&lt;KeyType, Comparer, AllocatorWrapper&gt;::xiiSet(<span class="keyword">const</span> <a class="code hl_class" href="../../d6/d31/classxii_set.html">xiiSet&lt;KeyType, Comparer, AllocatorWrapper&gt;</a>&amp; other) :</div>
 <div class="line"><a id="l00725" name="l00725"></a><span class="lineno">  725</span>  <a class="code hl_class" href="../../d6/daa/classxii_set_base.html">xiiSetBase</a>&lt;KeyType, Comparer&gt;(other, AllocatorWrapper::GetAllocator())</div>
 <div class="line"><a id="l00726" name="l00726"></a><span class="lineno">  726</span>{</div>
 <div class="line"><a id="l00727" name="l00727"></a><span class="lineno">  727</span>}</div>
 <div class="line"><a id="l00728" name="l00728"></a><span class="lineno">  728</span> </div>
 <div class="line"><a id="l00729" name="l00729"></a><span class="lineno">  729</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> KeyType, <span class="keyword">typename</span> Comparer, <span class="keyword">typename</span> AllocatorWrapper&gt;</div>
-<div class="line"><a id="l00730" name="l00730"></a><span class="lineno">  730</span><a class="code hl_class" href="../../d6/d31/classxii_set.html">xiiSet&lt;KeyType, Comparer, AllocatorWrapper&gt;::xiiSet</a>(<span class="keyword">const</span> <a class="code hl_class" href="../../d6/daa/classxii_set_base.html">xiiSetBase&lt;KeyType, Comparer&gt;</a>&amp; other) :</div>
+<div class="line"><a id="l00730" name="l00730"></a><span class="lineno">  730</span>xiiSet&lt;KeyType, Comparer, AllocatorWrapper&gt;::xiiSet(<span class="keyword">const</span> <a class="code hl_class" href="../../d6/daa/classxii_set_base.html">xiiSetBase&lt;KeyType, Comparer&gt;</a>&amp; other) :</div>
 <div class="line"><a id="l00731" name="l00731"></a><span class="lineno">  731</span>  <a class="code hl_class" href="../../d6/daa/classxii_set_base.html">xiiSetBase</a>&lt;KeyType, Comparer&gt;(other, AllocatorWrapper::GetAllocator())</div>
 <div class="line"><a id="l00732" name="l00732"></a><span class="lineno">  732</span>{</div>
 <div class="line"><a id="l00733" name="l00733"></a><span class="lineno">  733</span>}</div>
 <div class="line"><a id="l00734" name="l00734"></a><span class="lineno">  734</span> </div>
 <div class="line"><a id="l00735" name="l00735"></a><span class="lineno">  735</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> KeyType, <span class="keyword">typename</span> Comparer, <span class="keyword">typename</span> AllocatorWrapper&gt;</div>
-<div class="line"><a id="l00736" name="l00736"></a><span class="lineno">  736</span><span class="keywordtype">void</span> <a class="code hl_class" href="../../d6/d31/classxii_set.html">xiiSet&lt;KeyType, Comparer, AllocatorWrapper&gt;::operator=</a>(<span class="keyword">const</span> <a class="code hl_class" href="../../d6/d31/classxii_set.html">xiiSet&lt;KeyType, Comparer, AllocatorWrapper&gt;</a>&amp; rhs)</div>
+<div class="line"><a id="l00736" name="l00736"></a><span class="lineno">  736</span><span class="keywordtype">void</span> xiiSet&lt;KeyType, Comparer, AllocatorWrapper&gt;::operator=(<span class="keyword">const</span> <a class="code hl_class" href="../../d6/d31/classxii_set.html">xiiSet&lt;KeyType, Comparer, AllocatorWrapper&gt;</a>&amp; rhs)</div>
 <div class="line"><a id="l00737" name="l00737"></a><span class="lineno">  737</span>{</div>
 <div class="line"><a id="l00738" name="l00738"></a><span class="lineno">  738</span>  <a class="code hl_function" href="../../d6/daa/classxii_set_base.html#a949710a7061f08ce30ec98e73c62002d">xiiSetBase&lt;KeyType, Comparer&gt;::operator=</a>(rhs);</div>
 <div class="line"><a id="l00739" name="l00739"></a><span class="lineno">  739</span>}</div>
 <div class="line"><a id="l00740" name="l00740"></a><span class="lineno">  740</span> </div>
 <div class="line"><a id="l00741" name="l00741"></a><span class="lineno">  741</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> KeyType, <span class="keyword">typename</span> Comparer, <span class="keyword">typename</span> AllocatorWrapper&gt;</div>
-<div class="line"><a id="l00742" name="l00742"></a><span class="lineno">  742</span><span class="keywordtype">void</span> <a class="code hl_class" href="../../d6/d31/classxii_set.html">xiiSet&lt;KeyType, Comparer, AllocatorWrapper&gt;::operator=</a>(<span class="keyword">const</span> <a class="code hl_class" href="../../d6/daa/classxii_set_base.html">xiiSetBase&lt;KeyType, Comparer&gt;</a>&amp; rhs)</div>
+<div class="line"><a id="l00742" name="l00742"></a><span class="lineno">  742</span><span class="keywordtype">void</span> xiiSet&lt;KeyType, Comparer, AllocatorWrapper&gt;::operator=(<span class="keyword">const</span> <a class="code hl_class" href="../../d6/daa/classxii_set_base.html">xiiSetBase&lt;KeyType, Comparer&gt;</a>&amp; rhs)</div>
 <div class="line"><a id="l00743" name="l00743"></a><span class="lineno">  743</span>{</div>
 <div class="line"><a id="l00744" name="l00744"></a><span class="lineno">  744</span>  <a class="code hl_function" href="../../d6/daa/classxii_set_base.html#a949710a7061f08ce30ec98e73c62002d">xiiSetBase&lt;KeyType, Comparer&gt;::operator=</a>(rhs);</div>
 <div class="line"><a id="l00745" name="l00745"></a><span class="lineno">  745</span>}</div>
 <div class="line"><a id="l00746" name="l00746"></a><span class="lineno">  746</span> </div>
 <div class="line"><a id="l00747" name="l00747"></a><span class="lineno">  747</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> KeyType, <span class="keyword">typename</span> Comparer&gt;</div>
 <div class="foldopen" id="foldopen00748" data-start="{" data-end="}">
-<div class="line"><a id="l00748" name="l00748"></a><span class="lineno"><a class="line" href="../../d6/daa/classxii_set_base.html#abf5022e8a572d2c29d19a984ae01af7e">  748</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="../../d6/daa/classxii_set_base.html#abf5022e8a572d2c29d19a984ae01af7e">xiiSetBase&lt;KeyType, Comparer&gt;::Swap</a>(<a class="code hl_class" href="../../d6/daa/classxii_set_base.html">xiiSetBase&lt;KeyType, Comparer&gt;</a>&amp; other)</div>
+<div class="line"><a id="l00748" name="l00748"></a><span class="lineno"><a class="line" href="../../d6/daa/classxii_set_base.html#abf5022e8a572d2c29d19a984ae01af7e">  748</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="../../d6/daa/classxii_set_base.html#abf5022e8a572d2c29d19a984ae01af7e">xiiSetBase&lt;KeyType, Comparer&gt;::Swap</a>(<a class="code hl_function" href="../../d6/daa/classxii_set_base.html#af3c54e2d35affe8f0e9582bccbda0350">xiiSetBase&lt;KeyType, Comparer&gt;</a>&amp; other)</div>
 <div class="line"><a id="l00749" name="l00749"></a><span class="lineno">  749</span>{</div>
 <div class="line"><a id="l00750" name="l00750"></a><span class="lineno">  750</span>  SwapNilNode(this-&gt;m_pRoot, &amp;this-&gt;m_NilNode, &amp;other.m_NilNode);</div>
 <div class="line"><a id="l00751" name="l00751"></a><span class="lineno">  751</span>  SwapNilNode(other.m_pRoot, &amp;other.m_NilNode, &amp;this-&gt;m_NilNode);</div>
@@ -952,7 +922,7 @@ $(function(){initNavTree('db/dc1/_set__inl_8h_source.html','../../'); initResiza
 </div>
 <div class="line"><a id="l00765" name="l00765"></a><span class="lineno">  765</span> </div>
 <div class="line"><a id="l00766" name="l00766"></a><span class="lineno">  766</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> KeyType, <span class="keyword">typename</span> Comparer&gt;</div>
-<div class="line"><a id="l00767" name="l00767"></a><span class="lineno">  767</span><span class="keywordtype">void</span> <a class="code hl_class" href="../../d6/daa/classxii_set_base.html">xiiSetBase&lt;KeyType, Comparer&gt;::SwapNilNode</a>(Node*&amp; pCurNode, NilNode* pOld, NilNode* pNew)</div>
+<div class="line"><a id="l00767" name="l00767"></a><span class="lineno">  767</span><span class="keywordtype">void</span> xiiSetBase&lt;KeyType, Comparer&gt;::SwapNilNode(Node*&amp; pCurNode, NilNode* pOld, NilNode* pNew)</div>
 <div class="line"><a id="l00768" name="l00768"></a><span class="lineno">  768</span>{</div>
 <div class="line"><a id="l00769" name="l00769"></a><span class="lineno">  769</span>  <span class="keywordflow">if</span> (pCurNode == pOld)</div>
 <div class="line"><a id="l00770" name="l00770"></a><span class="lineno">  770</span>  {</div>
@@ -986,12 +956,13 @@ $(function(){initNavTree('db/dc1/_set__inl_8h_source.html','../../'); initResiza
 </div>
 </div>
 <div class="ttc" id="aclassxii_allocator_base_html"><div class="ttname"><a href="../../d5/d66/classxii_allocator_base.html">xiiAllocatorBase</a></div><div class="ttdoc">Base class for all memory allocators.</div><div class="ttdef"><b>Definition</b> AllocatorBase.h:22</div></div>
+<div class="ttc" id="aclassxii_map_html"><div class="ttname"><a href="../../d6/df7/classxii_map.html">Iterator</a></div></div>
 <div class="ttc" id="aclassxii_memory_utils_html_a0b9f518ec24d03e497b61b248ead335e"><div class="ttname"><a href="../../d8/d9d/classxii_memory_utils.html#a0b9f518ec24d03e497b61b248ead335e">xiiMemoryUtils::Construct</a></div><div class="ttdeci">static void Construct(T *pDestination, size_t uiCount=1)</div><div class="ttdoc">Constructs uiCount objects of type T in a raw buffer at pDestination.</div></div>
 <div class="ttc" id="aclassxii_memory_utils_html_a6c8728654ad1b5c0c9dcbb597a93594d"><div class="ttname"><a href="../../d8/d9d/classxii_memory_utils.html#a6c8728654ad1b5c0c9dcbb597a93594d">xiiMemoryUtils::Destruct</a></div><div class="ttdeci">static void Destruct(T *pDestination, size_t uiCount=1)</div><div class="ttdoc">Destructs uiCount objects of type T at pDestination.</div></div>
 <div class="ttc" id="aclassxii_set_base_html"><div class="ttname"><a href="../../d6/daa/classxii_set_base.html">xiiSetBase</a></div><div class="ttdoc">A set container that only stores whether an element resides in it or not. Similar to STL::set.</div><div class="ttdef"><b>Definition</b> Set.h:13</div></div>
 <div class="ttc" id="aclassxii_set_base_html_a01f1d41d54c7ca40a4effee6f6d446e2"><div class="ttname"><a href="../../d6/daa/classxii_set_base.html#a01f1d41d54c7ca40a4effee6f6d446e2">xiiSetBase::Union</a></div><div class="ttdeci">void Union(const xiiSetBase&lt; KeyType, Comparer &gt; &amp;operand)</div><div class="ttdoc">Makes this set the union of itself and the operand.</div><div class="ttdef"><b>Definition</b> Set_inl.h:319</div></div>
-<div class="ttc" id="aclassxii_set_base_html_a0c684120db5132a2037d0defbe2d70c1"><div class="ttname"><a href="../../d6/daa/classxii_set_base.html#a0c684120db5132a2037d0defbe2d70c1">xiiSetBase::Insert</a></div><div class="ttdeci">Iterator Insert(CompatibleKeyType &amp;&amp;key)</div><div class="ttdoc">Inserts the key into the tree and returns an Iterator to it. O(log n) operation.</div><div class="ttdef"><b>Definition</b> Set_inl.h:350</div></div>
-<div class="ttc" id="aclassxii_set_base_html_a0d39b63f88f77dfff248b0586c9f9c24"><div class="ttname"><a href="../../d6/daa/classxii_set_base.html#a0d39b63f88f77dfff248b0586c9f9c24">xiiSetBase::Clear</a></div><div class="ttdeci">void Clear()</div><div class="ttdoc">Destroys all elements in the set and resets its size to zero.</div><div class="ttdef"><b>Definition</b> Set_inl.h:132</div></div>
+<div class="ttc" id="aclassxii_set_base_html_a0c684120db5132a2037d0defbe2d70c1"><div class="ttname"><a href="../../d6/daa/classxii_set_base.html#a0c684120db5132a2037d0defbe2d70c1">xiiSetBase&lt; KeyType, xiiCompareHelper&lt; KeyType &gt; &gt;::Insert</a></div><div class="ttdeci">Iterator Insert(CompatibleKeyType &amp;&amp;key)</div><div class="ttdef"><b>Definition</b> Set_inl.h:350</div></div>
+<div class="ttc" id="aclassxii_set_base_html_a0d39b63f88f77dfff248b0586c9f9c24"><div class="ttname"><a href="../../d6/daa/classxii_set_base.html#a0d39b63f88f77dfff248b0586c9f9c24">xiiSetBase&lt; KeyType, xiiCompareHelper&lt; KeyType &gt; &gt;::Clear</a></div><div class="ttdeci">void Clear()</div><div class="ttdef"><b>Definition</b> Set_inl.h:132</div></div>
 <div class="ttc" id="aclassxii_set_base_html_a24e212497cd1e3e8d2321220e311554b"><div class="ttname"><a href="../../d6/daa/classxii_set_base.html#a24e212497cd1e3e8d2321220e311554b">xiiSetBase::GetReverseIterator</a></div><div class="ttdeci">ReverseIterator GetReverseIterator() const</div><div class="ttdoc">Returns a constant ReverseIterator to the very last element.</div><div class="ttdef"><b>Definition</b> Set_inl.h:170</div></div>
 <div class="ttc" id="aclassxii_set_base_html_a348a90c29b37356ebec0d54391b9819e"><div class="ttname"><a href="../../d6/daa/classxii_set_base.html#a348a90c29b37356ebec0d54391b9819e">xiiSetBase::operator==</a></div><div class="ttdeci">bool operator==(const xiiSetBase&lt; KeyType, Comparer &gt; &amp;rhs) const</div><div class="ttdoc">Comparison operator.</div><div class="ttdef"><b>Definition</b> Set_inl.h:683</div></div>
 <div class="ttc" id="aclassxii_set_base_html_a45edcd7f67a240a03dcf35f4b6b9ca8c"><div class="ttname"><a href="../../d6/daa/classxii_set_base.html#a45edcd7f67a240a03dcf35f4b6b9ca8c">xiiSetBase::Find</a></div><div class="ttdeci">Iterator Find(const CompatibleKeyType &amp;key) const</div><div class="ttdoc">Searches for key, returns an Iterator to it or an invalid iterator, if no such key is found....</div></div>
@@ -1001,7 +972,7 @@ $(function(){initNavTree('db/dc1/_set__inl_8h_source.html','../../'); initResiza
 <div class="ttc" id="aclassxii_set_base_html_a7f9b3ee58fb5f2d0f35c7a7177e64afb"><div class="ttname"><a href="../../d6/daa/classxii_set_base.html#a7f9b3ee58fb5f2d0f35c7a7177e64afb">xiiSetBase::Intersection</a></div><div class="ttdeci">void Intersection(const xiiSetBase&lt; KeyType, Comparer &gt; &amp;operand)</div><div class="ttdoc">Makes this set the intersection of itself and the operand.</div><div class="ttdef"><b>Definition</b> Set_inl.h:337</div></div>
 <div class="ttc" id="aclassxii_set_base_html_a8f118b4eae296d75dbbb6b8636bee278"><div class="ttname"><a href="../../d6/daa/classxii_set_base.html#a8f118b4eae296d75dbbb6b8636bee278">xiiSetBase::Contains</a></div><div class="ttdeci">bool Contains(const CompatibleKeyType &amp;key) const</div><div class="ttdoc">Checks whether the given key is in the container.</div></div>
 <div class="ttc" id="aclassxii_set_base_html_a945ed5e59fddd5c68117a7f741533498"><div class="ttname"><a href="../../d6/daa/classxii_set_base.html#a945ed5e59fddd5c68117a7f741533498">xiiSetBase::Remove</a></div><div class="ttdeci">bool Remove(const CompatibleKeyType &amp;key)</div><div class="ttdoc">Erases the element with the given key, if it exists. O(log n) operation.</div><div class="ttdef"><b>Definition</b> Set_inl.h:363</div></div>
-<div class="ttc" id="aclassxii_set_base_html_a949710a7061f08ce30ec98e73c62002d"><div class="ttname"><a href="../../d6/daa/classxii_set_base.html#a949710a7061f08ce30ec98e73c62002d">xiiSetBase::operator=</a></div><div class="ttdeci">void operator=(const xiiSetBase&lt; KeyType, Comparer &gt; &amp;rhs)</div><div class="ttdoc">Copies all keys from the given set into this one.</div><div class="ttdef"><b>Definition</b> Set_inl.h:123</div></div>
+<div class="ttc" id="aclassxii_set_base_html_a949710a7061f08ce30ec98e73c62002d"><div class="ttname"><a href="../../d6/daa/classxii_set_base.html#a949710a7061f08ce30ec98e73c62002d">xiiSetBase&lt; KeyType, xiiCompareHelper&lt; KeyType &gt; &gt;::operator=</a></div><div class="ttdeci">void operator=(const xiiSetBase&lt; KeyType, xiiCompareHelper&lt; KeyType &gt; &gt; &amp;rhs)</div><div class="ttdef"><b>Definition</b> Set_inl.h:123</div></div>
 <div class="ttc" id="aclassxii_set_base_html_aa22e1e00a492c0735196cdb2a4e36c39"><div class="ttname"><a href="../../d6/daa/classxii_set_base.html#aa22e1e00a492c0735196cdb2a4e36c39">xiiSetBase::UpperBound</a></div><div class="ttdeci">Iterator UpperBound(const CompatibleKeyType &amp;key) const</div><div class="ttdoc">Returns an Iterator to the element with a key that is LARGER than the given key. Returns an invalid i...</div></div>
 <div class="ttc" id="aclassxii_set_base_html_ab3d6ef2b492e4b048201e9897a956533"><div class="ttname"><a href="../../d6/daa/classxii_set_base.html#ab3d6ef2b492e4b048201e9897a956533">xiiSetBase::IsEmpty</a></div><div class="ttdeci">bool IsEmpty() const</div><div class="ttdoc">Returns whether there are no elements in the set. O(1) operation.</div><div class="ttdef"><b>Definition</b> Set_inl.h:151</div></div>
 <div class="ttc" id="aclassxii_set_base_html_abcb763cd04848b5d61818421b60de4e8"><div class="ttname"><a href="../../d6/daa/classxii_set_base.html#abcb763cd04848b5d61818421b60de4e8">xiiSetBase::~xiiSetBase</a></div><div class="ttdeci">~xiiSetBase()</div><div class="ttdoc">Destroys all elements in the set.</div><div class="ttdef"><b>Definition</b> Set_inl.h:117</div></div>
@@ -1011,8 +982,9 @@ $(function(){initNavTree('db/dc1/_set__inl_8h_source.html','../../'); initResiza
 <div class="ttc" id="aclassxii_set_base_html_af80f696c31de05176cebb0a1cf1649cf"><div class="ttname"><a href="../../d6/daa/classxii_set_base.html#af80f696c31de05176cebb0a1cf1649cf">xiiSetBase::LowerBound</a></div><div class="ttdeci">Iterator LowerBound(const CompatibleKeyType &amp;key) const</div><div class="ttdoc">Returns an Iterator to the element with a key equal or larger than the given key. Returns an invalid ...</div></div>
 <div class="ttc" id="aclassxii_set_html"><div class="ttname"><a href="../../d6/d31/classxii_set.html">xiiSet</a></div><div class="ttdef"><b>Definition</b> Set.h:236</div></div>
 <div class="ttc" id="anamespacexii_math_html_a2e7c389d4195d010ba0c207a1e981a58"><div class="ttname"><a href="../../d1/d37/namespacexii_math.html#a2e7c389d4195d010ba0c207a1e981a58">xiiMath::Swap</a></div><div class="ttdeci">XII_ALWAYS_INLINE void Swap(T &amp;ref_f1, T &amp;ref_f2)</div><div class="ttdoc">Swaps the values in the two variables f1 and f2.</div><div class="ttdef"><b>Definition</b> Math_inl.h:222</div></div>
-<div class="ttc" id="astructxii_set_base_1_1_iterator_base_html"><div class="ttname"><a href="../../d2/d7f/structxii_set_base_1_1_iterator_base.html">xiiSetBase::IteratorBase</a></div><div class="ttdoc">Base class for all iterators.</div><div class="ttdef"><b>Definition</b> Set.h:35</div></div>
-<div class="ttc" id="astructxii_set_base_1_1_iterator_base_html_a01107a7bcf1556fec812125be2755d22"><div class="ttname"><a href="../../d2/d7f/structxii_set_base_1_1_iterator_base.html#a01107a7bcf1556fec812125be2755d22">xiiSetBase::IteratorBase::Key</a></div><div class="ttdeci">XII_FORCE_INLINE const KeyType &amp; Key() const</div><div class="ttdoc">Returns the 'key' of the element that this iterator points to.</div><div class="ttdef"><b>Definition</b> Set.h:57</div></div>
+<div class="ttc" id="astructxii_set_base_1_1_iterator_base_html_a01107a7bcf1556fec812125be2755d22"><div class="ttname"><a href="../../d2/d7f/structxii_set_base_1_1_iterator_base.html#a01107a7bcf1556fec812125be2755d22">xiiSetBase::IteratorBase::Key</a></div><div class="ttdeci">XII_FORCE_INLINE const KeyType &amp; Key() const</div><div class="ttdoc">Returns the &#39;key&#39; of the element that this iterator points to.</div><div class="ttdef"><b>Definition</b> Set.h:57</div></div>
+<div class="ttc" id="astructxii_set_base_1_1_iterator_base_html_a2ff06830810fd2493fee24df19af8571"><div class="ttname"><a href="../../d2/d7f/structxii_set_base_1_1_iterator_base.html#a2ff06830810fd2493fee24df19af8571">xiiSetBase::IteratorBase::Next</a></div><div class="ttdeci">void Next()</div><div class="ttdoc">Advances the iterator to the next element in the set. The iterator will not be valid anymore,...</div><div class="ttdef"><b>Definition</b> Set_inl.h:58</div></div>
+<div class="ttc" id="astructxii_set_base_1_1_iterator_base_html_a8e31798998c37860483f36b512b11211"><div class="ttname"><a href="../../d2/d7f/structxii_set_base_1_1_iterator_base.html#a8e31798998c37860483f36b512b11211">xiiSetBase::IteratorBase::Prev</a></div><div class="ttdeci">void Prev()</div><div class="ttdoc">Advances the iterator to the previous element in the set. The iterator will not be valid anymore,...</div><div class="ttdef"><b>Definition</b> Set_inl.h:72</div></div>
 <div class="ttc" id="astructxii_set_base_1_1_iterator_base_html_ac63e3411c493c3da1ae66797f838b432"><div class="ttname"><a href="../../d2/d7f/structxii_set_base_1_1_iterator_base.html#ac63e3411c493c3da1ae66797f838b432">xiiSetBase::IteratorBase::IsValid</a></div><div class="ttdeci">XII_ALWAYS_INLINE bool IsValid() const</div><div class="ttdoc">Checks whether this iterator points to a valid element.</div><div class="ttdef"><b>Definition</b> Set.h:51</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -1020,7 +992,7 @@ $(function(){initNavTree('db/dc1/_set__inl_8h_source.html','../../'); initResiza
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.html">home</a></li><li class="navelem"><a class="el" href="../../dir_1036706e55c22cab35bc1c58ee689f1d.html">runner</a></li><li class="navelem"><a class="el" href="../../dir_629f8151d55d307162ff2d619fb1783d.html">work</a></li><li class="navelem"><a class="el" href="../../dir_1ddc44fe1263a8c7935fa6130b7d9499.html">XII</a></li><li class="navelem"><a class="el" href="../../dir_2c1b6808f12952f4c36e05ba7068379a.html">XII</a></li><li class="navelem"><a class="el" href="../../dir_b5a1c4ecfca018ad24b729e213296d41.html">Source</a></li><li class="navelem"><a class="el" href="../../dir_e321052006a51284e67389ab20037e7c.html">Engine</a></li><li class="navelem"><a class="el" href="../../dir_be0c42c58b36f42c54ec54024ed4f6af.html">Foundation</a></li><li class="navelem"><a class="el" href="../../dir_7f59ab18dbc50035dfc0ee7070867286.html">Containers</a></li><li class="navelem"><a class="el" href="../../dir_acc055bf9d45372e5f916366fab93514.html">Implementation</a></li><li class="navelem"><b>Set_inl.h</b></li>
-    <li class="footer">Generated on Fri Mar 21 2025 22:42:01 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
+    <li class="footer">Generated on Fri Mar 21 2025 23:27:40 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 </body>

@@ -1,39 +1,15 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<meta name="generator" content="Doxygen 1.12.0"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.13.2"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<!-- BEGIN opengraph metadata -->
-<meta property="og:title" content="XII" />
-<meta property="og:image" content="XII-Logo.png" />
-<meta property="og:description" content="An advanced high-performance simulation engine." />
-<meta property="og:url" content="https://www.xiitechnologies.com" />
-<!-- END opengraph metadata -->
-<!-- BEGIN twitter metadata -->
-<meta name="twitter:image:src" content="XII-Logo.png" />
-<meta name="twitter:title" content="XII" />
-<meta name="twitter:description" content="An advanced high-performance simulation engine." />
-<!-- END twitter metadata -->
 <title>XII: /home/runner/work/XII/XII/Source/Engine/Foundation/SimdMath/SimdMat4f.h Source File</title>
+<link rel="icon" href="../../XII-Logo.png" type="image/x-icon" />
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
-<link rel="icon" type="image/svg+xml" href="XII-Logo.png"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
-<script type="text/javascript" src="../../doxygen-awesome-darkmode-toggle.js"></script>
-<script type="text/javascript" src="../../doxygen-awesome-fragment-copy-button.js"></script>
-<script type="text/javascript" src="../../doxygen-awesome-paragraph-link.js"></script>
-<script type="text/javascript" src="../../doxygen-awesome-interactive-toc.js"></script>
-<script type="text/javascript" src="../../doxygen-awesome-tabs.js"></script>
-<script type="text/javascript" src="../../toggle-alternative-theme.js"></script>
-<script type="text/javascript">
-    DoxygenAwesomeFragmentCopyButton.init()
-    DoxygenAwesomeDarkModeToggle.init()
-    DoxygenAwesomeParagraphLink.init()
-    DoxygenAwesomeInteractiveToc.init()
-    DoxygenAwesomeTabs.init()
-</script>
 <link href="../../navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../navtreedata.js"></script>
 <script type="text/javascript" src="../../navtree.js"></script>
@@ -45,28 +21,22 @@
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-<!-- https://tholman.com/github-corners/ -->
-<a href="https://github.com/XII-Technologies/APIDocumentation" class="github-corner" title="View source on GitHub" target="_blank" rel="noopener noreferrer">
-    <svg viewBox="0 0 250 250" width="40" height="40" style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
-    <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
  <tbody>
- <tr style="height: 56px;">
+ <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="../../XII-Logo.png"/></td>
-  <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">XII
-   &#160;<span id="projectnumber">1.0.0</span>
+  <td id="projectalign">
+   <div id="projectname">XII<span id="projectnumber">&#160;Release 0.1.0</span>
    </div>
-   <div id="projectbrief">A high-performance simulation engine.</div>
   </td>
  </tr>
  </tbody>
 </table>
 </div>
 <!-- end header part -->
-<!-- Generated by Doxygen 1.12.0 -->
+<!-- Generated by Doxygen 1.13.2 -->
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
 var searchBox = new SearchBox("searchBox", "../../search/",'.html');
@@ -133,61 +103,61 @@ $(function(){initNavTree('d2/d3d/_simd_mat4f_8h_source.html','../../'); initResi
 <div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &lt;Foundation/SimdMath/SimdVec4f.h&gt;</span></div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span></div>
 <div class="foldopen" id="foldopen00006" data-start="{" data-end="};">
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno"><a class="line" href="../../d4/d8d/classxii_simd_mat4f.html">    6</a></span><span class="keyword">class </span>XII_FOUNDATION_DLL <a class="code hl_class" href="../../d4/d8d/classxii_simd_mat4f.html">xiiSimdMat4f</a></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno"><a class="line" href="../../d4/d8d/classxii_simd_mat4f.html">    6</a></span><span class="keyword">class </span>XII_FOUNDATION_DLL xiiSimdMat4f</div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>{</div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="keyword">public</span>:</div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>  XII_DECLARE_POD_TYPE();</div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>  <a class="code hl_class" href="../../d4/d8d/classxii_simd_mat4f.html">xiiSimdMat4f</a>();</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>  [[nodiscard]] <span class="keyword">static</span> <a class="code hl_class" href="../../d4/d8d/classxii_simd_mat4f.html">xiiSimdMat4f</a> MakeZero();</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>  [[nodiscard]] <span class="keyword">static</span> <a class="code hl_class" href="../../d4/d8d/classxii_simd_mat4f.html">xiiSimdMat4f</a> MakeIdentity();</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>  [[nodiscard]] <span class="keyword">static</span> <a class="code hl_class" href="../../d4/d8d/classxii_simd_mat4f.html">xiiSimdMat4f</a> MakeFromRowMajorArray(<span class="keyword">const</span> <span class="keywordtype">float</span>* <span class="keyword">const</span> pData);</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>  [[nodiscard]] <span class="keyword">static</span> <a class="code hl_class" href="../../d4/d8d/classxii_simd_mat4f.html">xiiSimdMat4f</a> MakeFromColumnMajorArray(<span class="keyword">const</span> <span class="keywordtype">float</span>* <span class="keyword">const</span> pData);</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>  [[nodiscard]] <span class="keyword">static</span> <a class="code hl_class" href="../../d4/d8d/classxii_simd_mat4f.html">xiiSimdMat4f</a> MakeFromColumns(<span class="keyword">const</span> <a class="code hl_class" href="../../d3/da5/classxii_simd_vec4f.html">xiiSimdVec4f</a>&amp; vCol0, <span class="keyword">const</span> <a class="code hl_class" href="../../d3/da5/classxii_simd_vec4f.html">xiiSimdVec4f</a>&amp; vCol1, <span class="keyword">const</span> <a class="code hl_class" href="../../d3/da5/classxii_simd_vec4f.html">xiiSimdVec4f</a>&amp; vCol2, <span class="keyword">const</span> <a class="code hl_class" href="../../d3/da5/classxii_simd_vec4f.html">xiiSimdVec4f</a>&amp; vCol3);</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>  [[nodiscard]] <span class="keyword">static</span> <a class="code hl_class" href="../../d4/d8d/classxii_simd_mat4f.html">xiiSimdMat4f</a> MakeFromValues(<span class="keywordtype">float</span> f1r1, <span class="keywordtype">float</span> f2r1, <span class="keywordtype">float</span> f3r1, <span class="keywordtype">float</span> f4r1, <span class="keywordtype">float</span> f1r2, <span class="keywordtype">float</span> f2r2, <span class="keywordtype">float</span> f3r2, <span class="keywordtype">float</span> f4r2, <span class="keywordtype">float</span> f1r3, <span class="keywordtype">float</span> f2r3, <span class="keywordtype">float</span> f3r3, <span class="keywordtype">float</span> f4r3, <span class="keywordtype">float</span> f1r4, <span class="keywordtype">float</span> f2r4, <span class="keywordtype">float</span> f3r4, <span class="keywordtype">float</span> f4r4);</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>  xiiSimdMat4f();</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>  [[nodiscard]] <span class="keyword">static</span> xiiSimdMat4f <a class="code hl_function" href="../../d4/d8d/classxii_simd_mat4f.html#a1b26bfe8c7cfc0841676d5e1f7d4a35f">MakeZero</a>();</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>  [[nodiscard]] <span class="keyword">static</span> xiiSimdMat4f <a class="code hl_function" href="../../d4/d8d/classxii_simd_mat4f.html#a8e0416ac7dc6c73487059bfab8c0ba39">MakeIdentity</a>();</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>  [[nodiscard]] <span class="keyword">static</span> xiiSimdMat4f <a class="code hl_function" href="../../d4/d8d/classxii_simd_mat4f.html#a4cf95629eaf2b9f3b6cc0b72d899df54">MakeFromRowMajorArray</a>(<span class="keyword">const</span> <span class="keywordtype">float</span>* <span class="keyword">const</span> pData);</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>  [[nodiscard]] <span class="keyword">static</span> xiiSimdMat4f <a class="code hl_function" href="../../d4/d8d/classxii_simd_mat4f.html#a58a4582f377dc10692e3d319a54e3289">MakeFromColumnMajorArray</a>(<span class="keyword">const</span> <span class="keywordtype">float</span>* <span class="keyword">const</span> pData);</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>  [[nodiscard]] <span class="keyword">static</span> xiiSimdMat4f <a class="code hl_function" href="../../d4/d8d/classxii_simd_mat4f.html#aa40d06f03d9949f50de7155aab7f5db9">MakeFromColumns</a>(<span class="keyword">const</span> <a class="code hl_class" href="../../d3/da5/classxii_simd_vec4f.html">xiiSimdVec4f</a>&amp; vCol0, <span class="keyword">const</span> <a class="code hl_class" href="../../d3/da5/classxii_simd_vec4f.html">xiiSimdVec4f</a>&amp; vCol1, <span class="keyword">const</span> <a class="code hl_class" href="../../d3/da5/classxii_simd_vec4f.html">xiiSimdVec4f</a>&amp; vCol2, <span class="keyword">const</span> <a class="code hl_class" href="../../d3/da5/classxii_simd_vec4f.html">xiiSimdVec4f</a>&amp; vCol3);</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>  [[nodiscard]] <span class="keyword">static</span> xiiSimdMat4f <a class="code hl_function" href="../../d4/d8d/classxii_simd_mat4f.html#a8514e251f85a4a2c6694eb3679ccb7ef">MakeFromValues</a>(<span class="keywordtype">float</span> f1r1, <span class="keywordtype">float</span> f2r1, <span class="keywordtype">float</span> f3r1, <span class="keywordtype">float</span> f4r1, <span class="keywordtype">float</span> f1r2, <span class="keywordtype">float</span> f2r2, <span class="keywordtype">float</span> f3r2, <span class="keywordtype">float</span> f4r2, <span class="keywordtype">float</span> f1r3, <span class="keywordtype">float</span> f2r3, <span class="keywordtype">float</span> f3r3, <span class="keywordtype">float</span> f4r3, <span class="keywordtype">float</span> f1r4, <span class="keywordtype">float</span> f2r4, <span class="keywordtype">float</span> f3r4, <span class="keywordtype">float</span> f4r4);</div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>  <span class="keywordtype">void</span> GetAsArray(<span class="keywordtype">float</span>* out_pData, <a class="code hl_enumeration" href="../../d0/d4f/structxii_matrix_layout.html#ac36c91b001c7cd816897b73c0bff5e6d">xiiMatrixLayout::Enum</a> layout) <span class="keyword">const</span>; <span class="comment">// [tested]</span></div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>  <span class="keywordtype">void</span> Transpose(); <span class="comment">// [tested]</span></div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>  <a class="code hl_class" href="../../d4/d8d/classxii_simd_mat4f.html">xiiSimdMat4f</a> GetTranspose() <span class="keyword">const</span>; <span class="comment">// [tested]</span></div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>  <a class="code hl_struct" href="../../dd/dad/structxii_result.html">xiiResult</a> Invert(<span class="keyword">const</span> <a class="code hl_class" href="../../d2/d73/classxii_simd_float.html">xiiSimdFloat</a>&amp; fEpsilon = xiiMath::SmallEpsilon&lt;float&gt;()); <span class="comment">// [tested]</span></div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>  <a class="code hl_class" href="../../d4/d8d/classxii_simd_mat4f.html">xiiSimdMat4f</a> GetInverse(<span class="keyword">const</span> <a class="code hl_class" href="../../d2/d73/classxii_simd_float.html">xiiSimdFloat</a>&amp; fEpsilon = xiiMath::SmallEpsilon&lt;float&gt;()) <span class="keyword">const</span>; <span class="comment">// [tested]</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>  <span class="keywordtype">void</span> <a class="code hl_function" href="../../d4/d8d/classxii_simd_mat4f.html#a65483fef7918955d5c1d8f62df38c0a9">Transpose</a>(); <span class="comment">// [tested]</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>  xiiSimdMat4f <a class="code hl_function" href="../../d4/d8d/classxii_simd_mat4f.html#abe3bd22986f2dfe22d7c554ac666081e">GetTranspose</a>() <span class="keyword">const</span>; <span class="comment">// [tested]</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>  <a class="code hl_struct" href="../../dd/dad/structxii_result.html">xiiResult</a> <a class="code hl_function" href="../../d4/d8d/classxii_simd_mat4f.html#a1359cf7c10b5f827cca2b03eb2b46066">Invert</a>(<span class="keyword">const</span> <a class="code hl_class" href="../../d2/d73/classxii_simd_float.html">xiiSimdFloat</a>&amp; fEpsilon = xiiMath::SmallEpsilon&lt;float&gt;()); <span class="comment">// [tested]</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>  xiiSimdMat4f <a class="code hl_function" href="../../d4/d8d/classxii_simd_mat4f.html#a9516b16c20bebad041276678fc145eb1">GetInverse</a>(<span class="keyword">const</span> <a class="code hl_class" href="../../d2/d73/classxii_simd_float.html">xiiSimdFloat</a>&amp; fEpsilon = xiiMath::SmallEpsilon&lt;float&gt;()) <span class="keyword">const</span>; <span class="comment">// [tested]</span></div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>  <span class="keywordtype">bool</span> IsEqual(<span class="keyword">const</span> <a class="code hl_class" href="../../d4/d8d/classxii_simd_mat4f.html">xiiSimdMat4f</a>&amp; rhs, <span class="keyword">const</span> <a class="code hl_class" href="../../d2/d73/classxii_simd_float.html">xiiSimdFloat</a>&amp; fEpsilon) <span class="keyword">const</span>; <span class="comment">// [tested]</span></div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>  <span class="keywordtype">bool</span> IsIdentity(<span class="keyword">const</span> <a class="code hl_class" href="../../d2/d73/classxii_simd_float.html">xiiSimdFloat</a>&amp; fEpsilon = xiiMath::DefaultEpsilon&lt;float&gt;()) <span class="keyword">const</span>; <span class="comment">// [tested]</span></div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>  <span class="keywordtype">bool</span> IsValid() <span class="keyword">const</span>; <span class="comment">// [tested]</span></div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>  <span class="keywordtype">bool</span> IsNaN() <span class="keyword">const</span>; <span class="comment">// [tested]</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="../../d4/d8d/classxii_simd_mat4f.html#a47b000e858f38ad23ccbe16e36f2a1a8">IsEqual</a>(<span class="keyword">const</span> xiiSimdMat4f&amp; rhs, <span class="keyword">const</span> <a class="code hl_class" href="../../d2/d73/classxii_simd_float.html">xiiSimdFloat</a>&amp; fEpsilon) <span class="keyword">const</span>; <span class="comment">// [tested]</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="../../d4/d8d/classxii_simd_mat4f.html#a7033bffc88394d53e2936aff4d2e4dc7">IsIdentity</a>(<span class="keyword">const</span> <a class="code hl_class" href="../../d2/d73/classxii_simd_float.html">xiiSimdFloat</a>&amp; fEpsilon = xiiMath::DefaultEpsilon&lt;float&gt;()) <span class="keyword">const</span>; <span class="comment">// [tested]</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="../../d4/d8d/classxii_simd_mat4f.html#a154af6d1f5bbb100d73f39eb07b3f7e4">IsValid</a>() <span class="keyword">const</span>; <span class="comment">// [tested]</span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span></div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="../../d4/d8d/classxii_simd_mat4f.html#a471b4fcba934cce647b8483f21571db2">IsNaN</a>() <span class="keyword">const</span>; <span class="comment">// [tested]</span></div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="keyword">public</span>:</div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>  <span class="keywordtype">void</span> SetRows(<span class="keyword">const</span> <a class="code hl_class" href="../../d3/da5/classxii_simd_vec4f.html">xiiSimdVec4f</a>&amp; vRow0, <span class="keyword">const</span> <a class="code hl_class" href="../../d3/da5/classxii_simd_vec4f.html">xiiSimdVec4f</a>&amp; vRow1, <span class="keyword">const</span> <a class="code hl_class" href="../../d3/da5/classxii_simd_vec4f.html">xiiSimdVec4f</a>&amp; vRow2, <span class="keyword">const</span> <a class="code hl_class" href="../../d3/da5/classxii_simd_vec4f.html">xiiSimdVec4f</a>&amp; vRow3); <span class="comment">// [tested]</span></div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>  <span class="keywordtype">void</span> GetRows(<a class="code hl_class" href="../../d3/da5/classxii_simd_vec4f.html">xiiSimdVec4f</a>&amp; ref_vRow0, <a class="code hl_class" href="../../d3/da5/classxii_simd_vec4f.html">xiiSimdVec4f</a>&amp; ref_vRow1, <a class="code hl_class" href="../../d3/da5/classxii_simd_vec4f.html">xiiSimdVec4f</a>&amp; ref_vRow2, <a class="code hl_class" href="../../d3/da5/classxii_simd_vec4f.html">xiiSimdVec4f</a>&amp; ref_vRow3) <span class="keyword">const</span>;   <span class="comment">// [tested]</span></div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>  [[nodiscard]] <a class="code hl_class" href="../../d3/da5/classxii_simd_vec4f.html">xiiSimdVec4f</a> TransformPosition(<span class="keyword">const</span> <a class="code hl_class" href="../../d3/da5/classxii_simd_vec4f.html">xiiSimdVec4f</a>&amp; v) <span class="keyword">const</span>; <span class="comment">// [tested]</span></div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>  [[nodiscard]] <a class="code hl_class" href="../../d3/da5/classxii_simd_vec4f.html">xiiSimdVec4f</a> TransformDirection(<span class="keyword">const</span> <a class="code hl_class" href="../../d3/da5/classxii_simd_vec4f.html">xiiSimdVec4f</a>&amp; v) <span class="keyword">const</span>; <span class="comment">// [tested]</span></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>  [[nodiscard]] <a class="code hl_class" href="../../d3/da5/classxii_simd_vec4f.html">xiiSimdVec4f</a> <a class="code hl_function" href="../../d4/d8d/classxii_simd_mat4f.html#a0bb26cee7c275a11080640e52a1ac4a1">TransformPosition</a>(<span class="keyword">const</span> <a class="code hl_class" href="../../d3/da5/classxii_simd_vec4f.html">xiiSimdVec4f</a>&amp; v) <span class="keyword">const</span>; <span class="comment">// [tested]</span></div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span></div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>  [[nodiscard]] <a class="code hl_class" href="../../d3/da5/classxii_simd_vec4f.html">xiiSimdVec4f</a> <a class="code hl_function" href="../../d4/d8d/classxii_simd_mat4f.html#a78f9441b50f69d7652688066fdfea1e6">TransformDirection</a>(<span class="keyword">const</span> <a class="code hl_class" href="../../d3/da5/classxii_simd_vec4f.html">xiiSimdVec4f</a>&amp; v) <span class="keyword">const</span>; <span class="comment">// [tested]</span></div>
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>  [[nodiscard]] <a class="code hl_class" href="../../d4/d8d/classxii_simd_mat4f.html">xiiSimdMat4f</a> operator*(<span class="keyword">const</span> <a class="code hl_class" href="../../d4/d8d/classxii_simd_mat4f.html">xiiSimdMat4f</a>&amp; rhs) <span class="keyword">const</span>; <span class="comment">// [tested]</span></div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>  <span class="keywordtype">void</span>                       operator*=(<span class="keyword">const</span> <a class="code hl_class" href="../../d4/d8d/classxii_simd_mat4f.html">xiiSimdMat4f</a>&amp; rhs);</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>  [[nodiscard]] xiiSimdMat4f operator*(<span class="keyword">const</span> xiiSimdMat4f&amp; rhs) <span class="keyword">const</span>; <span class="comment">// [tested]</span></div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>  <span class="keywordtype">void</span>                       operator*=(<span class="keyword">const</span> xiiSimdMat4f&amp; rhs);</div>
 <div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>  [[nodiscard]] <span class="keywordtype">bool</span> operator==(<span class="keyword">const</span> <a class="code hl_class" href="../../d4/d8d/classxii_simd_mat4f.html">xiiSimdMat4f</a>&amp; rhs) <span class="keyword">const</span>; <span class="comment">// [tested]</span></div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>  [[nodiscard]] <span class="keywordtype">bool</span> operator!=(<span class="keyword">const</span> <a class="code hl_class" href="../../d4/d8d/classxii_simd_mat4f.html">xiiSimdMat4f</a>&amp; rhs) <span class="keyword">const</span>; <span class="comment">// [tested]</span></div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>  [[nodiscard]] <span class="keywordtype">bool</span> operator==(<span class="keyword">const</span> xiiSimdMat4f&amp; rhs) <span class="keyword">const</span>; <span class="comment">// [tested]</span></div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>  [[nodiscard]] <span class="keywordtype">bool</span> operator!=(<span class="keyword">const</span> xiiSimdMat4f&amp; rhs) <span class="keyword">const</span>; <span class="comment">// [tested]</span></div>
 <div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> </div>
 <div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span><span class="keyword">public</span>:</div>
 <div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>  <a class="code hl_class" href="../../d3/da5/classxii_simd_vec4f.html">xiiSimdVec4f</a> m_col0;</div>
@@ -209,7 +179,22 @@ $(function(){initNavTree('d2/d3d/_simd_mat4f_8h_source.html','../../'); initResi
 <div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span><span class="preprocessor">#  error &quot;Unknown SIMD implementation.&quot;</span></div>
 <div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span><span class="preprocessor">#endif</span></div>
 <div class="ttc" id="aclassxii_simd_float_html"><div class="ttname"><a href="../../d2/d73/classxii_simd_float.html">xiiSimdFloat</a></div><div class="ttdef"><b>Definition</b> SimdFloat.h:7</div></div>
-<div class="ttc" id="aclassxii_simd_mat4f_html"><div class="ttname"><a href="../../d4/d8d/classxii_simd_mat4f.html">xiiSimdMat4f</a></div><div class="ttdoc">A 4x4 matrix class.</div><div class="ttdef"><b>Definition</b> SimdMat4f.h:7</div></div>
+<div class="ttc" id="aclassxii_simd_mat4f_html_a0bb26cee7c275a11080640e52a1ac4a1"><div class="ttname"><a href="../../d4/d8d/classxii_simd_mat4f.html#a0bb26cee7c275a11080640e52a1ac4a1">xiiSimdMat4f::TransformPosition</a></div><div class="ttdeci">xiiSimdVec4f TransformPosition(const xiiSimdVec4f &amp;v) const</div><div class="ttdoc">Matrix-vector multiplication, assuming the 4th component of the vector is one (default behavior).</div><div class="ttdef"><b>Definition</b> SimdMat4f_inl.h:140</div></div>
+<div class="ttc" id="aclassxii_simd_mat4f_html_a1359cf7c10b5f827cca2b03eb2b46066"><div class="ttname"><a href="../../d4/d8d/classxii_simd_mat4f.html#a1359cf7c10b5f827cca2b03eb2b46066">xiiSimdMat4f::Invert</a></div><div class="ttdeci">xiiResult Invert(const xiiSimdFloat &amp;fEpsilon=xiiMath::SmallEpsilon&lt; float &gt;())</div><div class="ttdoc">Inverts this matrix. Return value indicates whether the matrix could be inverted.</div><div class="ttdef"><b>Definition</b> SimdMat4f.cpp:8</div></div>
+<div class="ttc" id="aclassxii_simd_mat4f_html_a154af6d1f5bbb100d73f39eb07b3f7e4"><div class="ttname"><a href="../../d4/d8d/classxii_simd_mat4f.html#a154af6d1f5bbb100d73f39eb07b3f7e4">xiiSimdMat4f::IsValid</a></div><div class="ttdeci">bool IsValid() const</div><div class="ttdoc">Checks whether all components are finite numbers.</div><div class="ttdef"><b>Definition</b> SimdMat4f_inl.h:109</div></div>
+<div class="ttc" id="aclassxii_simd_mat4f_html_a1b26bfe8c7cfc0841676d5e1f7d4a35f"><div class="ttname"><a href="../../d4/d8d/classxii_simd_mat4f.html#a1b26bfe8c7cfc0841676d5e1f7d4a35f">xiiSimdMat4f::MakeZero</a></div><div class="ttdeci">static xiiSimdMat4f MakeZero()</div><div class="ttdoc">Returns a zero matrix.</div><div class="ttdef"><b>Definition</b> SimdMat4f_inl.h:61</div></div>
+<div class="ttc" id="aclassxii_simd_mat4f_html_a471b4fcba934cce647b8483f21571db2"><div class="ttname"><a href="../../d4/d8d/classxii_simd_mat4f.html#a471b4fcba934cce647b8483f21571db2">xiiSimdMat4f::IsNaN</a></div><div class="ttdeci">bool IsNaN() const</div><div class="ttdoc">Checks whether any component is NaN.</div><div class="ttdef"><b>Definition</b> SimdMat4f_inl.h:114</div></div>
+<div class="ttc" id="aclassxii_simd_mat4f_html_a47b000e858f38ad23ccbe16e36f2a1a8"><div class="ttname"><a href="../../d4/d8d/classxii_simd_mat4f.html#a47b000e858f38ad23ccbe16e36f2a1a8">xiiSimdMat4f::IsEqual</a></div><div class="ttdeci">bool IsEqual(const xiiSimdMat4f &amp;rhs, const xiiSimdFloat &amp;fEpsilon) const</div><div class="ttdoc">Equality Check with epsilon.</div><div class="ttdef"><b>Definition</b> SimdMat4f_inl.h:95</div></div>
+<div class="ttc" id="aclassxii_simd_mat4f_html_a4cf95629eaf2b9f3b6cc0b72d899df54"><div class="ttname"><a href="../../d4/d8d/classxii_simd_mat4f.html#a4cf95629eaf2b9f3b6cc0b72d899df54">xiiSimdMat4f::MakeFromRowMajorArray</a></div><div class="ttdeci">static xiiSimdMat4f MakeFromRowMajorArray(const float *const pData)</div><div class="ttdoc">Creates a matrix from 16 values that are in row-major layout.</div><div class="ttdef"><b>Definition</b> SimdMat4f_inl.h:25</div></div>
+<div class="ttc" id="aclassxii_simd_mat4f_html_a58a4582f377dc10692e3d319a54e3289"><div class="ttname"><a href="../../d4/d8d/classxii_simd_mat4f.html#a58a4582f377dc10692e3d319a54e3289">xiiSimdMat4f::MakeFromColumnMajorArray</a></div><div class="ttdeci">static xiiSimdMat4f MakeFromColumnMajorArray(const float *const pData)</div><div class="ttdoc">Creates a matrix from 16 values that are in column-major layout.</div><div class="ttdef"><b>Definition</b> SimdMat4f_inl.h:36</div></div>
+<div class="ttc" id="aclassxii_simd_mat4f_html_a65483fef7918955d5c1d8f62df38c0a9"><div class="ttname"><a href="../../d4/d8d/classxii_simd_mat4f.html#a65483fef7918955d5c1d8f62df38c0a9">xiiSimdMat4f::Transpose</a></div><div class="ttdeci">void Transpose()</div><div class="ttdoc">Transposes this matrix.</div><div class="ttdef"><b>Definition</b> FPUMat4f_inl.h:3</div></div>
+<div class="ttc" id="aclassxii_simd_mat4f_html_a7033bffc88394d53e2936aff4d2e4dc7"><div class="ttname"><a href="../../d4/d8d/classxii_simd_mat4f.html#a7033bffc88394d53e2936aff4d2e4dc7">xiiSimdMat4f::IsIdentity</a></div><div class="ttdeci">bool IsIdentity(const xiiSimdFloat &amp;fEpsilon=xiiMath::DefaultEpsilon&lt; float &gt;()) const</div><div class="ttdoc">Checks whether this is an identity matrix.</div><div class="ttdef"><b>Definition</b> SimdMat4f_inl.h:102</div></div>
+<div class="ttc" id="aclassxii_simd_mat4f_html_a78f9441b50f69d7652688066fdfea1e6"><div class="ttname"><a href="../../d4/d8d/classxii_simd_mat4f.html#a78f9441b50f69d7652688066fdfea1e6">xiiSimdMat4f::TransformDirection</a></div><div class="ttdeci">xiiSimdVec4f TransformDirection(const xiiSimdVec4f &amp;v) const</div><div class="ttdoc">Matrix-vector multiplication, assuming the 4th component of the vector is zero. So,...</div><div class="ttdef"><b>Definition</b> SimdMat4f_inl.h:151</div></div>
+<div class="ttc" id="aclassxii_simd_mat4f_html_a8514e251f85a4a2c6694eb3679ccb7ef"><div class="ttname"><a href="../../d4/d8d/classxii_simd_mat4f.html#a8514e251f85a4a2c6694eb3679ccb7ef">xiiSimdMat4f::MakeFromValues</a></div><div class="ttdeci">static xiiSimdMat4f MakeFromValues(float f1r1, float f2r1, float f3r1, float f4r1, float f1r2, float f2r2, float f3r2, float f4r2, float f1r3, float f2r3, float f3r3, float f4r3, float f1r4, float f2r4, float f3r4, float f4r4)</div><div class="ttdoc">Creates a matrix from 16 values. Naming is &quot;column-n row-m&quot;.</div><div class="ttdef"><b>Definition</b> SimdMat4f_inl.h:5</div></div>
+<div class="ttc" id="aclassxii_simd_mat4f_html_a8e0416ac7dc6c73487059bfab8c0ba39"><div class="ttname"><a href="../../d4/d8d/classxii_simd_mat4f.html#a8e0416ac7dc6c73487059bfab8c0ba39">xiiSimdMat4f::MakeIdentity</a></div><div class="ttdeci">static xiiSimdMat4f MakeIdentity()</div><div class="ttdoc">Returns an identity matrix.</div><div class="ttdef"><b>Definition</b> SimdMat4f_inl.h:71</div></div>
+<div class="ttc" id="aclassxii_simd_mat4f_html_a9516b16c20bebad041276678fc145eb1"><div class="ttname"><a href="../../d4/d8d/classxii_simd_mat4f.html#a9516b16c20bebad041276678fc145eb1">xiiSimdMat4f::GetInverse</a></div><div class="ttdeci">xiiSimdMat4f GetInverse(const xiiSimdFloat &amp;fEpsilon=xiiMath::SmallEpsilon&lt; float &gt;()) const</div><div class="ttdoc">Returns the inverse of this matrix.</div><div class="ttdef"><b>Definition</b> SimdMat4f_inl.h:88</div></div>
+<div class="ttc" id="aclassxii_simd_mat4f_html_aa40d06f03d9949f50de7155aab7f5db9"><div class="ttname"><a href="../../d4/d8d/classxii_simd_mat4f.html#aa40d06f03d9949f50de7155aab7f5db9">xiiSimdMat4f::MakeFromColumns</a></div><div class="ttdeci">static xiiSimdMat4f MakeFromColumns(const xiiSimdVec4f &amp;vCol0, const xiiSimdVec4f &amp;vCol1, const xiiSimdVec4f &amp;vCol2, const xiiSimdVec4f &amp;vCol3)</div><div class="ttdoc">Creates a matrix from 4 column vectors.</div><div class="ttdef"><b>Definition</b> SimdMat4f_inl.h:15</div></div>
+<div class="ttc" id="aclassxii_simd_mat4f_html_abe3bd22986f2dfe22d7c554ac666081e"><div class="ttname"><a href="../../d4/d8d/classxii_simd_mat4f.html#abe3bd22986f2dfe22d7c554ac666081e">xiiSimdMat4f::GetTranspose</a></div><div class="ttdeci">xiiSimdMat4f GetTranspose() const</div><div class="ttdoc">Returns the transpose of this matrix.</div><div class="ttdef"><b>Definition</b> SimdMat4f_inl.h:81</div></div>
 <div class="ttc" id="aclassxii_simd_vec4f_html"><div class="ttname"><a href="../../d3/da5/classxii_simd_vec4f.html">xiiSimdVec4f</a></div><div class="ttdoc">A 4-component SIMD vector class.</div><div class="ttdef"><b>Definition</b> SimdVec4f.h:8</div></div>
 <div class="ttc" id="astructxii_matrix_layout_html_ac36c91b001c7cd816897b73c0bff5e6d"><div class="ttname"><a href="../../d0/d4f/structxii_matrix_layout.html#ac36c91b001c7cd816897b73c0bff5e6d">xiiMatrixLayout::Enum</a></div><div class="ttdeci">Enum</div><div class="ttdef"><b>Definition</b> Declarations.h:64</div></div>
 <div class="ttc" id="astructxii_result_html"><div class="ttname"><a href="../../dd/dad/structxii_result.html">xiiResult</a></div><div class="ttdoc">Default enum for returning failure or success, instead of using a bool.</div><div class="ttdef"><b>Definition</b> Types.h:56</div></div>
@@ -219,7 +204,7 @@ $(function(){initNavTree('d2/d3d/_simd_mat4f_8h_source.html','../../'); initResi
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.html">home</a></li><li class="navelem"><a class="el" href="../../dir_1036706e55c22cab35bc1c58ee689f1d.html">runner</a></li><li class="navelem"><a class="el" href="../../dir_629f8151d55d307162ff2d619fb1783d.html">work</a></li><li class="navelem"><a class="el" href="../../dir_1ddc44fe1263a8c7935fa6130b7d9499.html">XII</a></li><li class="navelem"><a class="el" href="../../dir_2c1b6808f12952f4c36e05ba7068379a.html">XII</a></li><li class="navelem"><a class="el" href="../../dir_b5a1c4ecfca018ad24b729e213296d41.html">Source</a></li><li class="navelem"><a class="el" href="../../dir_e321052006a51284e67389ab20037e7c.html">Engine</a></li><li class="navelem"><a class="el" href="../../dir_be0c42c58b36f42c54ec54024ed4f6af.html">Foundation</a></li><li class="navelem"><a class="el" href="../../dir_6571b00f9c254a01b1735d75b2065daf.html">SimdMath</a></li><li class="navelem"><b>SimdMat4f.h</b></li>
-    <li class="footer">Generated on Fri Mar 21 2025 22:42:03 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
+    <li class="footer">Generated on Fri Mar 21 2025 23:27:41 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 </body>

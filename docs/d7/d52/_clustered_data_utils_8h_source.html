@@ -1,39 +1,15 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<meta name="generator" content="Doxygen 1.12.0"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.13.2"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<!-- BEGIN opengraph metadata -->
-<meta property="og:title" content="XII" />
-<meta property="og:image" content="XII-Logo.png" />
-<meta property="og:description" content="An advanced high-performance simulation engine." />
-<meta property="og:url" content="https://www.xiitechnologies.com" />
-<!-- END opengraph metadata -->
-<!-- BEGIN twitter metadata -->
-<meta name="twitter:image:src" content="XII-Logo.png" />
-<meta name="twitter:title" content="XII" />
-<meta name="twitter:description" content="An advanced high-performance simulation engine." />
-<!-- END twitter metadata -->
 <title>XII: /home/runner/work/XII/XII/Source/Engine/GraphicsCore/Lights/Implementation/ClusteredDataUtils.h Source File</title>
+<link rel="icon" href="../../XII-Logo.png" type="image/x-icon" />
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
-<link rel="icon" type="image/svg+xml" href="XII-Logo.png"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
-<script type="text/javascript" src="../../doxygen-awesome-darkmode-toggle.js"></script>
-<script type="text/javascript" src="../../doxygen-awesome-fragment-copy-button.js"></script>
-<script type="text/javascript" src="../../doxygen-awesome-paragraph-link.js"></script>
-<script type="text/javascript" src="../../doxygen-awesome-interactive-toc.js"></script>
-<script type="text/javascript" src="../../doxygen-awesome-tabs.js"></script>
-<script type="text/javascript" src="../../toggle-alternative-theme.js"></script>
-<script type="text/javascript">
-    DoxygenAwesomeFragmentCopyButton.init()
-    DoxygenAwesomeDarkModeToggle.init()
-    DoxygenAwesomeParagraphLink.init()
-    DoxygenAwesomeInteractiveToc.init()
-    DoxygenAwesomeTabs.init()
-</script>
 <link href="../../navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../navtreedata.js"></script>
 <script type="text/javascript" src="../../navtree.js"></script>
@@ -45,28 +21,22 @@
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-<!-- https://tholman.com/github-corners/ -->
-<a href="https://github.com/XII-Technologies/APIDocumentation" class="github-corner" title="View source on GitHub" target="_blank" rel="noopener noreferrer">
-    <svg viewBox="0 0 250 250" width="40" height="40" style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
-    <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
  <tbody>
- <tr style="height: 56px;">
+ <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="../../XII-Logo.png"/></td>
-  <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">XII
-   &#160;<span id="projectnumber">1.0.0</span>
+  <td id="projectalign">
+   <div id="projectname">XII<span id="projectnumber">&#160;Release 0.1.0</span>
    </div>
-   <div id="projectbrief">A high-performance simulation engine.</div>
   </td>
  </tr>
  </tbody>
 </table>
 </div>
 <!-- end header part -->
-<!-- Generated by Doxygen 1.12.0 -->
+<!-- Generated by Doxygen 1.13.2 -->
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
 var searchBox = new SearchBox("searchBox", "../../search/",'.html');
@@ -175,12 +145,12 @@ $(function(){initNavTree('d7/d52/_clustered_data_utils_8h_source.html','../../')
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>  }</div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>  <span class="comment">// in order: tlf, trf, blf, brf, tln, trn, bln, brn</span></div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>  XII_FORCE_INLINE <span class="keywordtype">void</span> GetClusterCornerPoints(<span class="keyword">const</span> <a class="code hl_class" href="../../dc/d68/classxii_camera.html">xiiCamera</a>&amp; camera, <span class="keywordtype">float</span> fZf, <span class="keywordtype">float</span> fZn, <span class="keywordtype">float</span> fTanLeft, <span class="keywordtype">float</span> fTanRight, <span class="keywordtype">float</span> fTanBottom, <span class="keywordtype">float</span> fTanTop, xiiInt32 x, xiiInt32 y, xiiInt32 z, <a class="code hl_class" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3</a>* out_pCorners)</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>  XII_FORCE_INLINE <span class="keywordtype">void</span> GetClusterCornerPoints(<span class="keyword">const</span> <a class="code hl_class" href="../../dc/d68/classxii_camera.html">xiiCamera</a>&amp; camera, <span class="keywordtype">float</span> fZf, <span class="keywordtype">float</span> fZn, <span class="keywordtype">float</span> fTanLeft, <span class="keywordtype">float</span> fTanRight, <span class="keywordtype">float</span> fTanBottom, <span class="keywordtype">float</span> fTanTop, xiiInt32 x, xiiInt32 y, xiiInt32 z, xiiVec3* out_pCorners)</div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>  {</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <span class="keyword">const</span> <a class="code hl_class" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3</a>&amp; pos        = camera.<a class="code hl_function" href="../../dc/d68/classxii_camera.html#af51a844916a0abcd1df6c80d76d99cdc">GetPosition</a>();</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <span class="keyword">const</span> <a class="code hl_class" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3</a>&amp; dirForward = camera.<a class="code hl_function" href="../../dc/d68/classxii_camera.html#a2fda08438f8959b1f94e2fdd9dcbf738">GetDirForwards</a>();</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <span class="keyword">const</span> <a class="code hl_class" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3</a>&amp; dirRight   = camera.<a class="code hl_function" href="../../dc/d68/classxii_camera.html#a7f9ec38722675b9a9778b8d55827d103">GetDirRight</a>();</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    <span class="keyword">const</span> <a class="code hl_class" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3</a>&amp; dirUp      = camera.<a class="code hl_function" href="../../dc/d68/classxii_camera.html#a30634ebc42ddd1f2bb15289999a72841">GetDirUp</a>();</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <span class="keyword">const</span> xiiVec3&amp; pos        = camera.<a class="code hl_function" href="../../dc/d68/classxii_camera.html#af51a844916a0abcd1df6c80d76d99cdc">GetPosition</a>();</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <span class="keyword">const</span> xiiVec3&amp; dirForward = camera.<a class="code hl_function" href="../../dc/d68/classxii_camera.html#a2fda08438f8959b1f94e2fdd9dcbf738">GetDirForwards</a>();</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <span class="keyword">const</span> xiiVec3&amp; dirRight   = camera.<a class="code hl_function" href="../../dc/d68/classxii_camera.html#a7f9ec38722675b9a9778b8d55827d103">GetDirRight</a>();</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    <span class="keyword">const</span> xiiVec3&amp; dirUp      = camera.<a class="code hl_function" href="../../dc/d68/classxii_camera.html#a30634ebc42ddd1f2bb15289999a72841">GetDirUp</a>();</div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    <span class="keyword">const</span> <span class="keywordtype">float</span> fStartXf = fZf * fTanLeft;</div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    <span class="keyword">const</span> <span class="keywordtype">float</span> fStartYf = fZf * fTanBottom;</div>
@@ -214,20 +184,20 @@ $(function(){initNavTree('d7/d52/_clustered_data_utils_8h_source.html','../../')
 <div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    out_pCorners[7] = out_pCorners[6] + dirRight * fStepXn;</div>
 <div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>  }</div>
 <div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span> </div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>  <span class="keywordtype">void</span> FillClusterBoundingSpheres(<span class="keyword">const</span> <a class="code hl_class" href="../../dc/d68/classxii_camera.html">xiiCamera</a>&amp; camera, <span class="keyword">const</span> <a class="code hl_class" href="../../d1/dec/classxii_mat4_template.html">xiiMat4</a>&amp; mProj, <a class="code hl_class" href="../../d0/d60/classxii_array_ptr.html">xiiArrayPtr&lt;xiiSimdBSphere&gt;</a> clusterBoundingSpheres)</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>  <span class="keywordtype">void</span> FillClusterBoundingSpheres(<span class="keyword">const</span> <a class="code hl_class" href="../../dc/d68/classxii_camera.html">xiiCamera</a>&amp; camera, <span class="keyword">const</span> xiiMat4&amp; mProj, <a class="code hl_class" href="../../d0/d60/classxii_array_ptr.html">xiiArrayPtr&lt;xiiSimdBSphere&gt;</a> clusterBoundingSpheres)</div>
 <div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>  {</div>
 <div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>    XII_PROFILE_SCOPE(<span class="stringliteral">&quot;FillClusterBoundingSpheres&quot;</span>);</div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span> </div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span></div>
 <div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    <span class="keywordflow">if</span> (camera.IsOrthographic())</div>
 <div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>      <span class="keywordflow">return</span>;</div>
 <div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span> </div>
 <div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    <a class="code hl_class" href="../../d3/da5/classxii_simd_vec4f.html">xiiSimdVec4f</a> stepScale;</div>
 <div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>    <a class="code hl_class" href="../../d3/da5/classxii_simd_vec4f.html">xiiSimdVec4f</a> tanLBLB;</div>
 <div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    {</div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>      <a class="code hl_class" href="../../d3/ddb/classxii_angle_template.html">xiiAngle</a> fFovLeft;</div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>      <a class="code hl_class" href="../../d3/ddb/classxii_angle_template.html">xiiAngle</a> fFovRight;</div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>      <a class="code hl_class" href="../../d3/ddb/classxii_angle_template.html">xiiAngle</a> fFovBottom;</div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>      <a class="code hl_class" href="../../d3/ddb/classxii_angle_template.html">xiiAngle</a> fFovTop;</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>      xiiAngle fFovLeft;</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>      xiiAngle fFovRight;</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>      xiiAngle fFovBottom;</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>      xiiAngle fFovTop;</div>
 <div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>      xiiGraphicsUtils::ExtractPerspectiveMatrixFieldOfView(mProj, fFovLeft, fFovRight, fFovBottom, fFovTop);</div>
 <div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span> </div>
 <div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>      <span class="keyword">const</span> <span class="keywordtype">float</span> fTanLeft   = xiiMath::Tan(fFovLeft);</div>
@@ -309,7 +279,7 @@ $(function(){initNavTree('d7/d52/_clustered_data_utils_8h_source.html','../../')
 <div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>  {</div>
 <div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>    FillLightData(ref_perLightData, pSpotLightRenderData, LIGHT_TYPE_SPOT);</div>
 <div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span> </div>
-<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>    ref_perLightData.direction       = <a class="code hl_function" href="../../d9/dac/classxii_shader_utilities.html#ae18058658f36cfe254d7dff9a16146e2">xiiShaderUtilities::Float3ToRGB10</a>(pSpotLightRenderData-&gt;m_GlobalTransform.m_qRotation * <a class="code hl_class" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3</a>(-1, 0, 0));</div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>    ref_perLightData.direction       = <a class="code hl_function" href="../../d9/dac/classxii_shader_utilities.html#ae18058658f36cfe254d7dff9a16146e2">xiiShaderUtilities::Float3ToRGB10</a>(pSpotLightRenderData-&gt;m_GlobalTransform.m_qRotation * xiiVec3(-1, 0, 0));</div>
 <div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>    ref_perLightData.position        = pSpotLightRenderData-&gt;m_GlobalTransform.m_vPosition;</div>
 <div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>    ref_perLightData.invSqrAttRadius = 1.0f / (pSpotLightRenderData-&gt;m_fRange * pSpotLightRenderData-&gt;m_fRange);</div>
 <div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span> </div>
@@ -317,29 +287,29 @@ $(function(){initNavTree('d7/d52/_clustered_data_utils_8h_source.html','../../')
 <div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>    <span class="keyword">const</span> <span class="keywordtype">float</span> fCosOuter        = xiiMath::Cos(pSpotLightRenderData-&gt;m_OuterSpotAngle * 0.5f);</div>
 <div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>    <span class="keyword">const</span> <span class="keywordtype">float</span> fSpotParamScale  = 1.0f / <a class="code hl_function" href="../../d1/d37/namespacexii_math.html#a4d6f8bf4858245e40a706a3aabd0a59e">xiiMath::Max</a>(0.001f, (fCosInner - fCosOuter));</div>
 <div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>    <span class="keyword">const</span> <span class="keywordtype">float</span> fSpotParamOffset = -fCosOuter * fSpotParamScale;</div>
-<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>    ref_perLightData.spotParams  = <a class="code hl_function" href="../../d9/dac/classxii_shader_utilities.html#afc63a1a9e802c5f444069b97a6dd2dd4">xiiShaderUtilities::Float2ToRG16F</a>(<a class="code hl_class" href="../../d1/d0d/classxii_vec2_template.html">xiiVec2</a>(fSpotParamScale, fSpotParamOffset));</div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>    ref_perLightData.spotParams  = <a class="code hl_function" href="../../d9/dac/classxii_shader_utilities.html#afc63a1a9e802c5f444069b97a6dd2dd4">xiiShaderUtilities::Float2ToRG16F</a>(xiiVec2(fSpotParamScale, fSpotParamOffset));</div>
 <div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>  }</div>
 <div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span> </div>
 <div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>  <span class="keywordtype">void</span> FillDirLightData(xiiPerLightData&amp; ref_perLightData, <span class="keyword">const</span> <a class="code hl_class" href="../../d1/d98/classxii_directional_light_render_data.html">xiiDirectionalLightRenderData</a>* pDirLightRenderData)</div>
 <div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>  {</div>
 <div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>    FillLightData(ref_perLightData, pDirLightRenderData, LIGHT_TYPE_DIR);</div>
 <div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span> </div>
-<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>    ref_perLightData.direction = <a class="code hl_function" href="../../d9/dac/classxii_shader_utilities.html#ae18058658f36cfe254d7dff9a16146e2">xiiShaderUtilities::Float3ToRGB10</a>(pDirLightRenderData-&gt;m_GlobalTransform.m_qRotation * <a class="code hl_class" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3</a>(-1, 0, 0));</div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>    ref_perLightData.direction = <a class="code hl_function" href="../../d9/dac/classxii_shader_utilities.html#ae18058658f36cfe254d7dff9a16146e2">xiiShaderUtilities::Float3ToRGB10</a>(pDirLightRenderData-&gt;m_GlobalTransform.m_qRotation * xiiVec3(-1, 0, 0));</div>
 <div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>  }</div>
 <div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span> </div>
 <div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>  <span class="keywordtype">void</span> FillDecalData(xiiPerDecalData&amp; ref_perDecalData, <span class="keyword">const</span> <a class="code hl_class" href="../../d6/d93/classxii_decal_render_data.html">xiiDecalRenderData</a>* pDecalRenderData)</div>
 <div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>  {</div>
-<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>    <a class="code hl_class" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3</a> position    = pDecalRenderData-&gt;m_GlobalTransform.m_vPosition;</div>
-<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>    <a class="code hl_class" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3</a> dirForwards = pDecalRenderData-&gt;m_GlobalTransform.m_qRotation * <a class="code hl_class" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3</a>(1.0f, 0.0, 0.0f);</div>
-<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>    <a class="code hl_class" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3</a> dirUp       = pDecalRenderData-&gt;m_GlobalTransform.m_qRotation * <a class="code hl_class" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3</a>(0.0f, 0.0, 1.0f);</div>
-<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>    <a class="code hl_class" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3</a> scale       = pDecalRenderData-&gt;m_GlobalTransform.m_vScale;</div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>    xiiVec3 position    = pDecalRenderData-&gt;m_GlobalTransform.m_vPosition;</div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>    xiiVec3 dirForwards = pDecalRenderData-&gt;m_GlobalTransform.m_qRotation * xiiVec3(1.0f, 0.0, 0.0f);</div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>    xiiVec3 dirUp       = pDecalRenderData-&gt;m_GlobalTransform.m_qRotation * xiiVec3(0.0f, 0.0, 1.0f);</div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>    xiiVec3 scale       = pDecalRenderData-&gt;m_GlobalTransform.m_vScale;</div>
 <div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span> </div>
 <div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>    <span class="comment">// the CompMax prevents division by zero (thus inf, thus NaN later, then crash)</span></div>
 <div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>    <span class="comment">// if negative scaling should be allowed, this would need to be changed</span></div>
-<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>    scale = <a class="code hl_class" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3</a>(1.0f).<a class="code hl_function" href="../../d9/d9a/classxii_vec3_template.html#a3d8df4f197167248cae93de23060f8f7">CompDiv</a>(scale.<a class="code hl_function" href="../../d9/d9a/classxii_vec3_template.html#a5b14a474a6d9f8e420ffb038387ce57b">CompMax</a>(<a class="code hl_class" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3</a>(0.00001f)));</div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>    scale = xiiVec3(1.0f).<a class="code hl_function" href="../../d9/d9a/classxii_vec3_template.html#a3d8df4f197167248cae93de23060f8f7">CompDiv</a>(scale.<a class="code hl_function" href="../../d9/d9a/classxii_vec3_template.html#a5b14a474a6d9f8e420ffb038387ce57b">CompMax</a>(xiiVec3(0.00001f)));</div>
 <div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span> </div>
-<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>    <span class="keyword">const</span> <a class="code hl_class" href="../../d1/dec/classxii_mat4_template.html">xiiMat4</a> lookAt   = xiiGraphicsUtils::CreateLookAtViewMatrix(position, position + dirForwards, dirUp);</div>
-<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span>    <a class="code hl_class" href="../../d1/dec/classxii_mat4_template.html">xiiMat4</a>       scaleMat = <a class="code hl_function" href="../../d1/dec/classxii_mat4_template.html#a4688c4babce4e64e1bad605bce75da84">xiiMat4::MakeScaling</a>(<a class="code hl_class" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3</a>(scale.y, -scale.z, scale.x));</div>
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>    <span class="keyword">const</span> xiiMat4 lookAt   = xiiGraphicsUtils::CreateLookAtViewMatrix(position, position + dirForwards, dirUp);</div>
+<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span>    xiiMat4       scaleMat = <a class="code hl_function" href="../../d1/dec/classxii_mat4_template.html#a4688c4babce4e64e1bad605bce75da84">xiiMat4::MakeScaling</a>(xiiVec3(scale.y, -scale.z, scale.x));</div>
 <div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span> </div>
 <div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span>    ref_perDecalData.worldToDecalMatrix   = scaleMat * lookAt;</div>
 <div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span>    ref_perDecalData.applyOnlyToId        = pDecalRenderData-&gt;m_uiApplyOnlyToId;</div>
@@ -358,24 +328,24 @@ $(function(){initNavTree('d7/d52/_clustered_data_utils_8h_source.html','../../')
 <div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span> </div>
 <div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>  <span class="keywordtype">void</span> FillReflectionProbeData(xiiPerReflectionProbeData&amp; ref_perReflectionProbeData, <span class="keyword">const</span> <a class="code hl_class" href="../../de/da3/classxii_reflection_probe_render_data.html">xiiReflectionProbeRenderData</a>* pReflectionProbeRenderData)</div>
 <div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>  {</div>
-<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>    <a class="code hl_class" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3</a> position = pReflectionProbeRenderData-&gt;m_GlobalTransform.m_vPosition;</div>
-<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>    <a class="code hl_class" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3</a> scale    = pReflectionProbeRenderData-&gt;m_GlobalTransform.m_vScale.<a class="code hl_function" href="../../d9/d9a/classxii_vec3_template.html#a5b71730344463b1face198a7e6dbecec">CompMul</a>(pReflectionProbeRenderData-&gt;m_vHalfExtents);</div>
+<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>    xiiVec3 position = pReflectionProbeRenderData-&gt;m_GlobalTransform.m_vPosition;</div>
+<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>    xiiVec3 scale    = pReflectionProbeRenderData-&gt;m_GlobalTransform.m_vScale.<a class="code hl_function" href="../../d9/d9a/classxii_vec3_template.html#a5b71730344463b1face198a7e6dbecec">CompMul</a>(pReflectionProbeRenderData-&gt;m_vHalfExtents);</div>
 <div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span> </div>
 <div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>    <span class="comment">// We store scale separately so we easily transform into probe projection space (with scale), influence space (scale + offset) and cube map space (no scale).</span></div>
 <div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>    <span class="keyword">auto</span> trans     = pReflectionProbeRenderData-&gt;m_GlobalTransform;</div>
-<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>    trans.m_vScale = <a class="code hl_class" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3</a>(1.0f, 1.0f, 1.0f);</div>
+<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>    trans.m_vScale = xiiVec3(1.0f, 1.0f, 1.0f);</div>
 <div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>    <span class="keyword">auto</span> inverse   = trans.GetAsMat4().GetInverse();</div>
 <div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span> </div>
 <div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>    <span class="comment">// the CompMax prevents division by zero (thus inf, thus NaN later, then crash)</span></div>
 <div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>    <span class="comment">// if negative scaling should be allowed, this would need to be changed</span></div>
-<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>    scale                                                   = <a class="code hl_class" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3</a>(1.0f).<a class="code hl_function" href="../../d9/d9a/classxii_vec3_template.html#a3d8df4f197167248cae93de23060f8f7">CompDiv</a>(scale.<a class="code hl_function" href="../../d9/d9a/classxii_vec3_template.html#a5b14a474a6d9f8e420ffb038387ce57b">CompMax</a>(<a class="code hl_class" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3</a>(0.00001f)));</div>
+<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>    scale                                                   = xiiVec3(1.0f).<a class="code hl_function" href="../../d9/d9a/classxii_vec3_template.html#a3d8df4f197167248cae93de23060f8f7">CompDiv</a>(scale.<a class="code hl_function" href="../../d9/d9a/classxii_vec3_template.html#a5b14a474a6d9f8e420ffb038387ce57b">CompMax</a>(xiiVec3(0.00001f)));</div>
 <div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>    ref_perReflectionProbeData.WorldToProbeProjectionMatrix = inverse;</div>
 <div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span> </div>
 <div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>    ref_perReflectionProbeData.ProbePosition = pReflectionProbeRenderData-&gt;<a class="code hl_variable" href="../../de/da3/classxii_reflection_probe_render_data.html#aa65e86d48405c699ea6776eabb924ff8">m_vProbePosition</a>.<a class="code hl_function" href="../../d9/d9a/classxii_vec3_template.html#ac0c2ea06ef463e3916f3efdb36b4aa6b">GetAsVec4</a>(1.0f); <span class="comment">// W isn&#39;t used.</span></div>
 <div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>    ref_perReflectionProbeData.Scale         = scale.<a class="code hl_function" href="../../d9/d9a/classxii_vec3_template.html#ac0c2ea06ef463e3916f3efdb36b4aa6b">GetAsVec4</a>(0.0f);                                        <span class="comment">// W isn&#39;t used.</span></div>
 <div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span> </div>
 <div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span>    ref_perReflectionProbeData.InfluenceScale = pReflectionProbeRenderData-&gt;m_vInfluenceScale.<a class="code hl_function" href="../../d9/d9a/classxii_vec3_template.html#ac0c2ea06ef463e3916f3efdb36b4aa6b">GetAsVec4</a>(0.0f);</div>
-<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span>    ref_perReflectionProbeData.InfluenceShift = pReflectionProbeRenderData-&gt;m_vInfluenceShift.<a class="code hl_function" href="../../d9/d9a/classxii_vec3_template.html#a5b71730344463b1face198a7e6dbecec">CompMul</a>(<a class="code hl_class" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3</a>(1.0f) - pReflectionProbeRenderData-&gt;m_vInfluenceScale).<a class="code hl_function" href="../../d9/d9a/classxii_vec3_template.html#ac0c2ea06ef463e3916f3efdb36b4aa6b">GetAsVec4</a>(0.0f);</div>
+<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span>    ref_perReflectionProbeData.InfluenceShift = pReflectionProbeRenderData-&gt;m_vInfluenceShift.<a class="code hl_function" href="../../d9/d9a/classxii_vec3_template.html#a5b71730344463b1face198a7e6dbecec">CompMul</a>(xiiVec3(1.0f) - pReflectionProbeRenderData-&gt;m_vInfluenceScale).<a class="code hl_function" href="../../d9/d9a/classxii_vec3_template.html#ac0c2ea06ef463e3916f3efdb36b4aa6b">GetAsVec4</a>(0.0f);</div>
 <div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span> </div>
 <div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span>    ref_perReflectionProbeData.PositiveFalloff = pReflectionProbeRenderData-&gt;m_vPositiveFalloff.<a class="code hl_function" href="../../d9/d9a/classxii_vec3_template.html#ac0c2ea06ef463e3916f3efdb36b4aa6b">GetAsVec4</a>(0.0f);</div>
 <div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span>    ref_perReflectionProbeData.NegativeFalloff = pReflectionProbeRenderData-&gt;m_vNegativeFalloff.<a class="code hl_function" href="../../d9/d9a/classxii_vec3_template.html#ac0c2ea06ef463e3916f3efdb36b4aa6b">GetAsVec4</a>(0.0f);</div>
@@ -478,10 +448,10 @@ $(function(){initNavTree('d7/d52/_clustered_data_utils_8h_source.html','../../')
 <div class="line"><a id="l00348" name="l00348"></a><span class="lineno">  348</span> </div>
 <div class="line"><a id="l00349" name="l00349"></a><span class="lineno">  349</span>  <span class="keyword">struct </span>BoundingCone</div>
 <div class="line"><a id="l00350" name="l00350"></a><span class="lineno">  350</span>  {</div>
-<div class="line"><a id="l00351" name="l00351"></a><span class="lineno">  351</span>    <a class="code hl_class" href="../../d6/da2/classxii_simd_b_sphere.html">xiiSimdBSphere</a> m_BoundingSphere;</div>
-<div class="line"><a id="l00352" name="l00352"></a><span class="lineno">  352</span>    <a class="code hl_class" href="../../d3/da5/classxii_simd_vec4f.html">xiiSimdVec4f</a>   m_PositionAndRange;</div>
-<div class="line"><a id="l00353" name="l00353"></a><span class="lineno">  353</span>    <a class="code hl_class" href="../../d3/da5/classxii_simd_vec4f.html">xiiSimdVec4f</a>   m_ForwardDir;</div>
-<div class="line"><a id="l00354" name="l00354"></a><span class="lineno">  354</span>    <a class="code hl_class" href="../../d3/da5/classxii_simd_vec4f.html">xiiSimdVec4f</a>   m_SinCosAngle;</div>
+<div class="line"><a id="l00351" name="l00351"></a><span class="lineno">  351</span>    xiiSimdBSphere m_BoundingSphere;</div>
+<div class="line"><a id="l00352" name="l00352"></a><span class="lineno">  352</span>    xiiSimdVec4f   m_PositionAndRange;</div>
+<div class="line"><a id="l00353" name="l00353"></a><span class="lineno">  353</span>    xiiSimdVec4f   m_ForwardDir;</div>
+<div class="line"><a id="l00354" name="l00354"></a><span class="lineno">  354</span>    xiiSimdVec4f   m_SinCosAngle;</div>
 <div class="line"><a id="l00355" name="l00355"></a><span class="lineno">  355</span>  };</div>
 <div class="line"><a id="l00356" name="l00356"></a><span class="lineno">  356</span> </div>
 <div class="line"><a id="l00357" name="l00357"></a><span class="lineno">  357</span>  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> Cluster&gt;</div>
@@ -543,13 +513,13 @@ $(function(){initNavTree('d7/d52/_clustered_data_utils_8h_source.html','../../')
 <div class="line"><a id="l00413" name="l00413"></a><span class="lineno">  413</span>  }</div>
 <div class="line"><a id="l00414" name="l00414"></a><span class="lineno">  414</span> </div>
 <div class="line"><a id="l00415" name="l00415"></a><span class="lineno">  415</span>  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> Cluster&gt;</div>
-<div class="line"><a id="l00416" name="l00416"></a><span class="lineno">  416</span>  <span class="keywordtype">void</span> RasterizeBox(<span class="keyword">const</span> <a class="code hl_class" href="../../d5/d13/classxii_transform_template.html">xiiTransform</a>&amp; transform, xiiUInt32 uiDecalIndex, <span class="keyword">const</span> <a class="code hl_class" href="../../d4/d8d/classxii_simd_mat4f.html">xiiSimdMat4f</a>&amp; mInvView, <span class="keyword">const</span> <a class="code hl_class" href="../../d4/d8d/classxii_simd_mat4f.html">xiiSimdMat4f</a>&amp; mViewProjection, Cluster* pClusters, <a class="code hl_class" href="../../d6/da2/classxii_simd_b_sphere.html">xiiSimdBSphere</a>* pClusterBoundingSpheres)</div>
+<div class="line"><a id="l00416" name="l00416"></a><span class="lineno">  416</span>  <span class="keywordtype">void</span> RasterizeBox(<span class="keyword">const</span> xiiTransform&amp; transform, xiiUInt32 uiDecalIndex, <span class="keyword">const</span> <a class="code hl_class" href="../../d4/d8d/classxii_simd_mat4f.html">xiiSimdMat4f</a>&amp; mInvView, <span class="keyword">const</span> <a class="code hl_class" href="../../d4/d8d/classxii_simd_mat4f.html">xiiSimdMat4f</a>&amp; mViewProjection, Cluster* pClusters, <a class="code hl_class" href="../../d6/da2/classxii_simd_b_sphere.html">xiiSimdBSphere</a>* pClusterBoundingSpheres)</div>
 <div class="line"><a id="l00417" name="l00417"></a><span class="lineno">  417</span>  {</div>
-<div class="line"><a id="l00418" name="l00418"></a><span class="lineno">  418</span>    <a class="code hl_class" href="../../d4/d8d/classxii_simd_mat4f.html">xiiSimdMat4f</a> boxToWorld = xiiSimdConversion::ToTransform(transform).<a class="code hl_function" href="../../d5/d13/classxii_transform_template.html#a806372139851347c072ab5c28c69acef">GetAsMat4</a>();</div>
+<div class="line"><a id="l00418" name="l00418"></a><span class="lineno">  418</span>    <a class="code hl_class" href="../../d4/d8d/classxii_simd_mat4f.html">xiiSimdMat4f</a> boxToWorld = xiiSimdConversion::ToTransform(transform).GetAsMat4();</div>
 <div class="line"><a id="l00419" name="l00419"></a><span class="lineno">  419</span>    <a class="code hl_class" href="../../d4/d8d/classxii_simd_mat4f.html">xiiSimdMat4f</a> viewToBox  = boxToWorld.<a class="code hl_function" href="../../d4/d8d/classxii_simd_mat4f.html#a9516b16c20bebad041276678fc145eb1">GetInverse</a>() * mInvView;</div>
 <div class="line"><a id="l00420" name="l00420"></a><span class="lineno">  420</span> </div>
-<div class="line"><a id="l00421" name="l00421"></a><span class="lineno">  421</span>    <a class="code hl_class" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3</a> corners[8];</div>
-<div class="line"><a id="l00422" name="l00422"></a><span class="lineno">  422</span>    <a class="code hl_class" href="../../d2/dd6/classxii_bounding_box_template.html">xiiBoundingBox</a>(<a class="code hl_class" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3</a>(-1), <a class="code hl_class" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3</a>(1)).<a class="code hl_function" href="../../d2/dd6/classxii_bounding_box_template.html#ad3c6279c81b0769503c2d1e05fc38fb6">GetCorners</a>(corners);</div>
+<div class="line"><a id="l00421" name="l00421"></a><span class="lineno">  421</span>    xiiVec3 corners[8];</div>
+<div class="line"><a id="l00422" name="l00422"></a><span class="lineno">  422</span>    xiiBoundingBox(xiiVec3(-1), xiiVec3(1)).GetCorners(corners);</div>
 <div class="line"><a id="l00423" name="l00423"></a><span class="lineno">  423</span> </div>
 <div class="line"><a id="l00424" name="l00424"></a><span class="lineno">  424</span>    <a class="code hl_class" href="../../d4/d8d/classxii_simd_mat4f.html">xiiSimdMat4f</a> decalToScreen     = mViewProjection * boxToWorld;</div>
 <div class="line"><a id="l00425" name="l00425"></a><span class="lineno">  425</span>    <span class="keywordtype">bool</span>         bInsideBox        = <span class="keyword">false</span>;</div>
@@ -589,11 +559,8 @@ $(function(){initNavTree('d7/d52/_clustered_data_utils_8h_source.html','../../')
 <div class="line"><a id="l00459" name="l00459"></a><span class="lineno">  459</span>    });</div>
 <div class="line"><a id="l00460" name="l00460"></a><span class="lineno">  460</span>  }</div>
 <div class="line"><a id="l00461" name="l00461"></a><span class="lineno">  461</span>} <span class="comment">// namespace</span></div>
-<div class="ttc" id="aclassxii_angle_template_html"><div class="ttname"><a href="../../d3/ddb/classxii_angle_template.html">xiiAngleTemplate&lt; float &gt;</a></div></div>
-<div class="ttc" id="aclassxii_array_ptr_html"><div class="ttname"><a href="../../d0/d60/classxii_array_ptr.html">xiiArrayPtr</a></div><div class="ttdoc">This class encapsulates an array and it's size. It is recommended to use this class instead of plain ...</div><div class="ttdef"><b>Definition</b> ArrayPtr.h:37</div></div>
+<div class="ttc" id="aclassxii_array_ptr_html"><div class="ttname"><a href="../../d0/d60/classxii_array_ptr.html">xiiArrayPtr</a></div><div class="ttdoc">This class encapsulates an array and it&#39;s size. It is recommended to use this class instead of plain ...</div><div class="ttdef"><b>Definition</b> ArrayPtr.h:37</div></div>
 <div class="ttc" id="aclassxii_array_ptr_html_af1e072a93ee1a583d0db00e821c2d999"><div class="ttname"><a href="../../d0/d60/classxii_array_ptr.html#af1e072a93ee1a583d0db00e821c2d999">xiiArrayPtr::GetCount</a></div><div class="ttdeci">XII_ALWAYS_INLINE xiiUInt32 GetCount() const</div><div class="ttdoc">Returns the number of elements in the array.</div><div class="ttdef"><b>Definition</b> ArrayPtr.h:146</div></div>
-<div class="ttc" id="aclassxii_bounding_box_template_html"><div class="ttname"><a href="../../d2/dd6/classxii_bounding_box_template.html">xiiBoundingBoxTemplate&lt; float &gt;</a></div></div>
-<div class="ttc" id="aclassxii_bounding_box_template_html_ad3c6279c81b0769503c2d1e05fc38fb6"><div class="ttname"><a href="../../d2/dd6/classxii_bounding_box_template.html#ad3c6279c81b0769503c2d1e05fc38fb6">xiiBoundingBoxTemplate::GetCorners</a></div><div class="ttdeci">void GetCorners(xiiVec3Template&lt; Type &gt; *out_pCorners) const</div><div class="ttdoc">Writes the 8 different corners of the box to the given array.</div><div class="ttdef"><b>Definition</b> BoundingBox_inl.h:62</div></div>
 <div class="ttc" id="aclassxii_camera_html"><div class="ttname"><a href="../../dc/d68/classxii_camera.html">xiiCamera</a></div><div class="ttdoc">A camera class that stores the orientation and some basic camera settings.</div><div class="ttdef"><b>Definition</b> Camera.h:42</div></div>
 <div class="ttc" id="aclassxii_camera_html_a2fda08438f8959b1f94e2fdd9dcbf738"><div class="ttname"><a href="../../dc/d68/classxii_camera.html#a2fda08438f8959b1f94e2fdd9dcbf738">xiiCamera::GetDirForwards</a></div><div class="ttdeci">xiiVec3 GetDirForwards(xiiCameraEye eye=xiiCameraEye::Left) const</div><div class="ttdoc">Returns the forwards vector that should be used for rendering etc.</div><div class="ttdef"><b>Definition</b> Camera.cpp:70</div></div>
 <div class="ttc" id="aclassxii_camera_html_a30634ebc42ddd1f2bb15289999a72841"><div class="ttname"><a href="../../dc/d68/classxii_camera.html#a30634ebc42ddd1f2bb15289999a72841">xiiCamera::GetDirUp</a></div><div class="ttdeci">xiiVec3 GetDirUp(xiiCameraEye eye=xiiCameraEye::Left) const</div><div class="ttdoc">Returns the up vector that should be used for rendering etc.</div><div class="ttdef"><b>Definition</b> Camera.cpp:78</div></div>
@@ -603,8 +570,7 @@ $(function(){initNavTree('d7/d52/_clustered_data_utils_8h_source.html','../../')
 <div class="ttc" id="aclassxii_decal_render_data_html"><div class="ttname"><a href="../../d6/d93/classxii_decal_render_data.html">xiiDecalRenderData</a></div><div class="ttdef"><b>Definition</b> DecalComponent.h:27</div></div>
 <div class="ttc" id="aclassxii_directional_light_render_data_html"><div class="ttname"><a href="../../d1/d98/classxii_directional_light_render_data.html">xiiDirectionalLightRenderData</a></div><div class="ttdoc">The render data object for directional lights.</div><div class="ttdef"><b>Definition</b> DirectionalLightComponent.h:12</div></div>
 <div class="ttc" id="aclassxii_light_render_data_html"><div class="ttname"><a href="../../d1/d33/classxii_light_render_data.html">xiiLightRenderData</a></div><div class="ttdoc">Base class for light render data objects.</div><div class="ttdef"><b>Definition</b> LightComponent.h:12</div></div>
-<div class="ttc" id="aclassxii_mat4_template_html"><div class="ttname"><a href="../../d1/dec/classxii_mat4_template.html">xiiMat4Template&lt; float &gt;</a></div></div>
-<div class="ttc" id="aclassxii_mat4_template_html_a4688c4babce4e64e1bad605bce75da84"><div class="ttname"><a href="../../d1/dec/classxii_mat4_template.html#a4688c4babce4e64e1bad605bce75da84">xiiMat4Template&lt; float &gt;::MakeScaling</a></div><div class="ttdeci">static xiiMat4Template&lt; float &gt; MakeScaling(const xiiVec3Template&lt; float &gt; &amp;vScale)</div><div class="ttdef"><b>Definition</b> Mat4_inl.h:157</div></div>
+<div class="ttc" id="aclassxii_mat4_template_html_a4688c4babce4e64e1bad605bce75da84"><div class="ttname"><a href="../../d1/dec/classxii_mat4_template.html#a4688c4babce4e64e1bad605bce75da84">xiiMat4Template&lt; float &gt;::MakeScaling</a></div><div class="ttdeci">static xiiMat4Template&lt; float &gt; MakeScaling(const xiiVec3Template&lt; float &gt; &amp;vScale)</div></div>
 <div class="ttc" id="aclassxii_memory_utils_html_aa46340f1eaae0121ec1bcb712ea2755f"><div class="ttname"><a href="../../d8/d9d/classxii_memory_utils.html#aa46340f1eaae0121ec1bcb712ea2755f">xiiMemoryUtils::ZeroFill</a></div><div class="ttdeci">static void ZeroFill(T *pDestination, size_t uiCount=1)</div><div class="ttdoc">Zeros every byte in the provided memory buffer.</div></div>
 <div class="ttc" id="aclassxii_point_light_render_data_html"><div class="ttname"><a href="../../d6/df4/classxii_point_light_render_data.html">xiiPointLightRenderData</a></div><div class="ttdoc">The render data object for point lights.</div><div class="ttdef"><b>Definition</b> PointLightComponent.h:13</div></div>
 <div class="ttc" id="aclassxii_reflection_probe_render_data_html"><div class="ttname"><a href="../../de/da3/classxii_reflection_probe_render_data.html">xiiReflectionProbeRenderData</a></div><div class="ttdoc">Render data for a reflection probe.</div><div class="ttdef"><b>Definition</b> ReflectionProbeData.h:54</div></div>
@@ -633,10 +599,6 @@ $(function(){initNavTree('d7/d52/_clustered_data_utils_8h_source.html','../../')
 <div class="ttc" id="aclassxii_simd_vec4i_html"><div class="ttname"><a href="../../d5/d4f/classxii_simd_vec4i.html">xiiSimdVec4i</a></div><div class="ttdoc">A SIMD 4-component vector class of signed 32b integers.</div><div class="ttdef"><b>Definition</b> SimdVec4i.h:9</div></div>
 <div class="ttc" id="aclassxii_simd_vec4i_html_a4936a387c1b5192d550e4b7a31db95a7"><div class="ttname"><a href="../../d5/d4f/classxii_simd_vec4i.html#a4936a387c1b5192d550e4b7a31db95a7">xiiSimdVec4i::MakeZero</a></div><div class="ttdeci">static xiiSimdVec4i MakeZero()</div><div class="ttdoc">Creates a xiiSimdVec4i that is initialized to zero.</div><div class="ttdef"><b>Definition</b> FPUVec4i_inl.h:25</div></div>
 <div class="ttc" id="aclassxii_spot_light_render_data_html"><div class="ttname"><a href="../../dc/d14/classxii_spot_light_render_data.html">xiiSpotLightRenderData</a></div><div class="ttdoc">The render data object for spot lights.</div><div class="ttdef"><b>Definition</b> SpotLightComponent.h:13</div></div>
-<div class="ttc" id="aclassxii_transform_template_html"><div class="ttname"><a href="../../d5/d13/classxii_transform_template.html">xiiTransformTemplate&lt; float &gt;</a></div></div>
-<div class="ttc" id="aclassxii_transform_template_html_a806372139851347c072ab5c28c69acef"><div class="ttname"><a href="../../d5/d13/classxii_transform_template.html#a806372139851347c072ab5c28c69acef">xiiTransformTemplate::GetAsMat4</a></div><div class="ttdeci">const xiiMat4Template&lt; Type &gt; GetAsMat4() const</div><div class="ttdoc">Returns the transformation as a matrix.</div><div class="ttdef"><b>Definition</b> Transform_inl.h:108</div></div>
-<div class="ttc" id="aclassxii_vec2_template_html"><div class="ttname"><a href="../../d1/d0d/classxii_vec2_template.html">xiiVec2Template&lt; float &gt;</a></div></div>
-<div class="ttc" id="aclassxii_vec3_template_html"><div class="ttname"><a href="../../d9/d9a/classxii_vec3_template.html">xiiVec3Template&lt; float &gt;</a></div></div>
 <div class="ttc" id="aclassxii_vec3_template_html_a3d8df4f197167248cae93de23060f8f7"><div class="ttname"><a href="../../d9/d9a/classxii_vec3_template.html#a3d8df4f197167248cae93de23060f8f7">xiiVec3Template::CompDiv</a></div><div class="ttdeci">const xiiVec3Template&lt; Type &gt; CompDiv(const xiiVec3Template&lt; Type &gt; &amp;rhs) const</div><div class="ttdoc">Returns the component-wise division of *this and rhs.</div><div class="ttdef"><b>Definition</b> Vec3_inl.h:365</div></div>
 <div class="ttc" id="aclassxii_vec3_template_html_a5b14a474a6d9f8e420ffb038387ce57b"><div class="ttname"><a href="../../d9/d9a/classxii_vec3_template.html#a5b14a474a6d9f8e420ffb038387ce57b">xiiVec3Template::CompMax</a></div><div class="ttdeci">const xiiVec3Template&lt; Type &gt; CompMax(const xiiVec3Template&lt; Type &gt; &amp;rhs) const</div><div class="ttdoc">Returns the component-wise maximum of *this and rhs.</div><div class="ttdef"><b>Definition</b> Vec3_inl.h:337</div></div>
 <div class="ttc" id="aclassxii_vec3_template_html_a5b71730344463b1face198a7e6dbecec"><div class="ttname"><a href="../../d9/d9a/classxii_vec3_template.html#a5b71730344463b1face198a7e6dbecec">xiiVec3Template::CompMul</a></div><div class="ttdeci">const xiiVec3Template&lt; Type &gt; CompMul(const xiiVec3Template&lt; Type &gt; &amp;rhs) const</div><div class="ttdoc">Returns the component-wise multiplication of *this and rhs.</div><div class="ttdef"><b>Definition</b> Vec3_inl.h:356</div></div>
@@ -652,7 +614,7 @@ $(function(){initNavTree('d7/d52/_clustered_data_utils_8h_source.html','../../')
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.html">home</a></li><li class="navelem"><a class="el" href="../../dir_1036706e55c22cab35bc1c58ee689f1d.html">runner</a></li><li class="navelem"><a class="el" href="../../dir_629f8151d55d307162ff2d619fb1783d.html">work</a></li><li class="navelem"><a class="el" href="../../dir_1ddc44fe1263a8c7935fa6130b7d9499.html">XII</a></li><li class="navelem"><a class="el" href="../../dir_2c1b6808f12952f4c36e05ba7068379a.html">XII</a></li><li class="navelem"><a class="el" href="../../dir_b5a1c4ecfca018ad24b729e213296d41.html">Source</a></li><li class="navelem"><a class="el" href="../../dir_e321052006a51284e67389ab20037e7c.html">Engine</a></li><li class="navelem"><a class="el" href="../../dir_d1b456933e20132afd1d01c7da962f40.html">GraphicsCore</a></li><li class="navelem"><a class="el" href="../../dir_d0e2fd164d9fb9422dfd9d016e3c1221.html">Lights</a></li><li class="navelem"><a class="el" href="../../dir_026691e24722955e08af78236915ded8.html">Implementation</a></li><li class="navelem"><b>ClusteredDataUtils.h</b></li>
-    <li class="footer">Generated on Fri Mar 21 2025 22:42:04 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
+    <li class="footer">Generated on Fri Mar 21 2025 23:27:43 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 </body>

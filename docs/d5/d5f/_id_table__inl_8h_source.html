@@ -1,39 +1,15 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<meta name="generator" content="Doxygen 1.12.0"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.13.2"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<!-- BEGIN opengraph metadata -->
-<meta property="og:title" content="XII" />
-<meta property="og:image" content="XII-Logo.png" />
-<meta property="og:description" content="An advanced high-performance simulation engine." />
-<meta property="og:url" content="https://www.xiitechnologies.com" />
-<!-- END opengraph metadata -->
-<!-- BEGIN twitter metadata -->
-<meta name="twitter:image:src" content="XII-Logo.png" />
-<meta name="twitter:title" content="XII" />
-<meta name="twitter:description" content="An advanced high-performance simulation engine." />
-<!-- END twitter metadata -->
 <title>XII: /home/runner/work/XII/XII/Source/Engine/Foundation/Containers/Implementation/IdTable_inl.h Source File</title>
+<link rel="icon" href="../../XII-Logo.png" type="image/x-icon" />
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
-<link rel="icon" type="image/svg+xml" href="XII-Logo.png"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
-<script type="text/javascript" src="../../doxygen-awesome-darkmode-toggle.js"></script>
-<script type="text/javascript" src="../../doxygen-awesome-fragment-copy-button.js"></script>
-<script type="text/javascript" src="../../doxygen-awesome-paragraph-link.js"></script>
-<script type="text/javascript" src="../../doxygen-awesome-interactive-toc.js"></script>
-<script type="text/javascript" src="../../doxygen-awesome-tabs.js"></script>
-<script type="text/javascript" src="../../toggle-alternative-theme.js"></script>
-<script type="text/javascript">
-    DoxygenAwesomeFragmentCopyButton.init()
-    DoxygenAwesomeDarkModeToggle.init()
-    DoxygenAwesomeParagraphLink.init()
-    DoxygenAwesomeInteractiveToc.init()
-    DoxygenAwesomeTabs.init()
-</script>
 <link href="../../navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../navtreedata.js"></script>
 <script type="text/javascript" src="../../navtree.js"></script>
@@ -45,28 +21,22 @@
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-<!-- https://tholman.com/github-corners/ -->
-<a href="https://github.com/XII-Technologies/APIDocumentation" class="github-corner" title="View source on GitHub" target="_blank" rel="noopener noreferrer">
-    <svg viewBox="0 0 250 250" width="40" height="40" style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
-    <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
  <tbody>
- <tr style="height: 56px;">
+ <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="../../XII-Logo.png"/></td>
-  <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">XII
-   &#160;<span id="projectnumber">1.0.0</span>
+  <td id="projectalign">
+   <div id="projectname">XII<span id="projectnumber">&#160;Release 0.1.0</span>
    </div>
-   <div id="projectbrief">A high-performance simulation engine.</div>
   </td>
  </tr>
  </tbody>
 </table>
 </div>
 <!-- end header part -->
-<!-- Generated by Doxygen 1.12.0 -->
+<!-- Generated by Doxygen 1.13.2 -->
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
 var searchBox = new SearchBox("searchBox", "../../search/",'.html');
@@ -134,7 +104,7 @@ $(function(){initNavTree('d5/d5f/_id_table__inl_8h_source.html','../../'); initR
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// ***** Const Iterator *****</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> IdType, <span class="keyword">typename</span> ValueType&gt;</div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><a class="code hl_class" href="../../d3/df7/classxii_id_table_base.html">xiiIdTableBase&lt;IdType, ValueType&gt;::ConstIterator::ConstIterator</a>(<span class="keyword">const</span> <a class="code hl_class" href="../../d3/df7/classxii_id_table_base.html">xiiIdTableBase&lt;IdType, ValueType&gt;</a>&amp; idTable) :</div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span>xiiIdTableBase&lt;IdType, ValueType&gt;::ConstIterator::ConstIterator(<span class="keyword">const</span> <a class="code hl_class" href="../../d3/df7/classxii_id_table_base.html">xiiIdTableBase&lt;IdType, ValueType&gt;</a>&amp; idTable) :</div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>  m_IdTable(idTable), m_CurrentIndex(0), m_CurrentCount(0)</div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>{</div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>  <span class="keywordflow">if</span> (m_IdTable.IsEmpty())</div>
@@ -202,7 +172,7 @@ $(function(){initNavTree('d5/d5f/_id_table__inl_8h_source.html','../../'); initR
 <div class="foldopen" id="foldopen00055" data-start="{" data-end="}">
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="../../da/db5/classxii_id_table_base_1_1_const_iterator.html#aef5156b56be32845228fe15b389047eb">   55</a></span>XII_ALWAYS_INLINE <span class="keywordtype">void</span> <a class="code hl_function" href="../../da/db5/classxii_id_table_base_1_1_const_iterator.html#aef5156b56be32845228fe15b389047eb">xiiIdTableBase&lt;IdType, ValueType&gt;::ConstIterator::operator++</a>()</div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>{</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>  Next();</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>  <a class="code hl_function" href="../../da/db5/classxii_id_table_base_1_1_const_iterator.html#ac7803d37c3358bf65f962edbe97320ad">Next</a>();</div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>}</div>
 </div>
 </div>
@@ -213,7 +183,7 @@ $(function(){initNavTree('d5/d5f/_id_table__inl_8h_source.html','../../'); initR
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
 <div class="foldopen" id="foldopen00063" data-start="{" data-end="}">
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="../../df/dcc/structxii_id_table_base_1_1_iterator.html#a18cae17cfc5edb8234df09b80cf75e58">   63</a></span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> IdType, <span class="keyword">typename</span> ValueType&gt;</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><a class="code hl_class" href="../../d3/df7/classxii_id_table_base.html">xiiIdTableBase&lt;IdType, ValueType&gt;::Iterator::Iterator</a>(<span class="keyword">const</span> <a class="code hl_class" href="../../d3/df7/classxii_id_table_base.html">xiiIdTableBase&lt;IdType, ValueType&gt;</a>&amp; idTable) :</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>xiiIdTableBase&lt;IdType, ValueType&gt;::Iterator::Iterator(<span class="keyword">const</span> <a class="code hl_function" href="../../d3/df7/classxii_id_table_base.html#aa3e2172ef62d8514836e1bff3290f93c">xiiIdTableBase&lt;IdType, ValueType&gt;</a>&amp; idTable) :</div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>  ConstIterator(idTable)</div>
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>{</div>
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>}</div>
@@ -248,7 +218,7 @@ $(function(){initNavTree('d5/d5f/_id_table__inl_8h_source.html','../../'); initR
 <div class="foldopen" id="foldopen00089" data-start="{" data-end="}">
 <div class="line"><a id="l00089" name="l00089"></a><span class="lineno"><a class="line" href="../../d3/df7/classxii_id_table_base.html#aee9358398db230d74286bc495e117746">   89</a></span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> IdType, <span class="keyword">typename</span> ValueType&gt;</div>
 <div class="foldopen" id="foldopen00090" data-start="{" data-end="}">
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno"><a class="line" href="../../d3/df7/classxii_id_table_base.html#ad5d131fda61103498e6addc6eb43c9c5">   90</a></span><a class="code hl_function" href="../../d3/df7/classxii_id_table_base.html#aa3e2172ef62d8514836e1bff3290f93c">xiiIdTableBase&lt;IdType, ValueType&gt;::xiiIdTableBase</a>(<span class="keyword">const</span> <a class="code hl_class" href="../../d3/df7/classxii_id_table_base.html">xiiIdTableBase&lt;IdType, ValueType&gt;</a>&amp; other, <a class="code hl_class" href="../../d5/d66/classxii_allocator_base.html">xiiAllocatorBase</a>* pAllocator)</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno"><a class="line" href="../../d3/df7/classxii_id_table_base.html#ad5d131fda61103498e6addc6eb43c9c5">   90</a></span><a class="code hl_function" href="../../d3/df7/classxii_id_table_base.html#aa3e2172ef62d8514836e1bff3290f93c">xiiIdTableBase&lt;IdType, ValueType&gt;::xiiIdTableBase</a>(<span class="keyword">const</span> <a class="code hl_function" href="../../d3/df7/classxii_id_table_base.html#aa3e2172ef62d8514836e1bff3290f93c">xiiIdTableBase&lt;IdType, ValueType&gt;</a>&amp; other, <a class="code hl_class" href="../../d5/d66/classxii_allocator_base.html">xiiAllocatorBase</a>* pAllocator)</div>
 <div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>{</div>
 <div class="foldopen" id="foldopen00092" data-start="{" data-end="}">
 <div class="line"><a id="l00092" name="l00092"></a><span class="lineno"><a class="line" href="../../d3/df7/classxii_id_table_base.html#a2c0b54f213459aa6bd34a82ad67d63c6">   92</a></span>  m_pEntries        = <span class="keyword">nullptr</span>;</div>
@@ -287,7 +257,7 @@ $(function(){initNavTree('d5/d5f/_id_table__inl_8h_source.html','../../'); initR
 <div class="line"><a id="l00116" name="l00116"></a><span class="lineno"><a class="line" href="../../d3/df7/classxii_id_table_base.html#a5c719b776a8b8ccec419429e258f338e">  116</a></span> </div>
 <div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> IdType, <span class="keyword">typename</span> ValueType&gt;</div>
 <div class="foldopen" id="foldopen00118" data-start="{" data-end="}">
-<div class="line"><a id="l00118" name="l00118"></a><span class="lineno"><a class="line" href="../../d3/df7/classxii_id_table_base.html#a7ebe6fe356a16e3038330f3f9af7471f">  118</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="../../d3/df7/classxii_id_table_base.html#a7ebe6fe356a16e3038330f3f9af7471f">xiiIdTableBase&lt;IdType, ValueType&gt;::operator=</a>(<span class="keyword">const</span> <a class="code hl_class" href="../../d3/df7/classxii_id_table_base.html">xiiIdTableBase&lt;IdType, ValueType&gt;</a>&amp; rhs)</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno"><a class="line" href="../../d3/df7/classxii_id_table_base.html#a7ebe6fe356a16e3038330f3f9af7471f">  118</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="../../d3/df7/classxii_id_table_base.html#a7ebe6fe356a16e3038330f3f9af7471f">xiiIdTableBase&lt;IdType, ValueType&gt;::operator=</a>(<span class="keyword">const</span> <a class="code hl_function" href="../../d3/df7/classxii_id_table_base.html#aa3e2172ef62d8514836e1bff3290f93c">xiiIdTableBase&lt;IdType, ValueType&gt;</a>&amp; rhs)</div>
 <div class="foldopen" id="foldopen00119" data-start="{" data-end="}">
 <div class="line"><a id="l00119" name="l00119"></a><span class="lineno"><a class="line" href="../../d3/df7/classxii_id_table_base.html#a9a73806c402a0b74619e4af5c9774aec">  119</a></span>{</div>
 <div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>  <a class="code hl_function" href="../../d3/df7/classxii_id_table_base.html#a041d00045a87ec0aef122a2174b537d5">Clear</a>();</div>
@@ -577,7 +547,7 @@ $(function(){initNavTree('d5/d5f/_id_table__inl_8h_source.html','../../'); initR
 <div class="line"><a id="l00361" name="l00361"></a><span class="lineno">  361</span> </div>
 <div class="line"><a id="l00362" name="l00362"></a><span class="lineno">  362</span><span class="comment">// private methods</span></div>
 <div class="line"><a id="l00363" name="l00363"></a><span class="lineno">  363</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> IdType, <span class="keyword">typename</span> ValueType&gt;</div>
-<div class="line"><a id="l00364" name="l00364"></a><span class="lineno">  364</span><span class="keywordtype">void</span> <a class="code hl_class" href="../../d3/df7/classxii_id_table_base.html">xiiIdTableBase&lt;IdType, ValueType&gt;::SetCapacity</a>(IndexType uiCapacity)</div>
+<div class="line"><a id="l00364" name="l00364"></a><span class="lineno">  364</span><span class="keywordtype">void</span> xiiIdTableBase&lt;IdType, ValueType&gt;::SetCapacity(IndexType uiCapacity)</div>
 <div class="line"><a id="l00365" name="l00365"></a><span class="lineno">  365</span>{</div>
 <div class="line"><a id="l00366" name="l00366"></a><span class="lineno">  366</span>  Entry* pNewEntries = XII_NEW_RAW_BUFFER(m_pAllocator, Entry, (<span class="keywordtype">size_t</span>)uiCapacity);</div>
 <div class="line"><a id="l00367" name="l00367"></a><span class="lineno">  367</span> </div>
@@ -599,7 +569,7 @@ $(function(){initNavTree('d5/d5f/_id_table__inl_8h_source.html','../../'); initR
 <div class="line"><a id="l00383" name="l00383"></a><span class="lineno">  383</span>}</div>
 <div class="line"><a id="l00384" name="l00384"></a><span class="lineno">  384</span> </div>
 <div class="line"><a id="l00385" name="l00385"></a><span class="lineno">  385</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> IdType, <span class="keyword">typename</span> ValueType&gt;</div>
-<div class="line"><a id="l00386" name="l00386"></a><span class="lineno">  386</span><span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code hl_class" href="../../d3/df7/classxii_id_table_base.html">xiiIdTableBase&lt;IdType, ValueType&gt;::InitializeFreelist</a>(IndexType uiStart, IndexType uiEnd)</div>
+<div class="line"><a id="l00386" name="l00386"></a><span class="lineno">  386</span><span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code hl_function" href="../../d3/df7/classxii_id_table_base.html#aa3e2172ef62d8514836e1bff3290f93c">xiiIdTableBase&lt;IdType, ValueType&gt;::InitializeFreelist</a>(IndexType uiStart, IndexType uiEnd)</div>
 <div class="line"><a id="l00387" name="l00387"></a><span class="lineno">  387</span>{</div>
 <div class="line"><a id="l00388" name="l00388"></a><span class="lineno">  388</span>  <span class="keywordflow">for</span> (IndexType i = uiStart; i &lt; uiEnd; ++i)</div>
 <div class="line"><a id="l00389" name="l00389"></a><span class="lineno">  389</span>  {</div>
@@ -612,37 +582,37 @@ $(function(){initNavTree('d5/d5f/_id_table__inl_8h_source.html','../../'); initR
 <div class="line"><a id="l00396" name="l00396"></a><span class="lineno">  396</span> </div>
 <div class="line"><a id="l00397" name="l00397"></a><span class="lineno">  397</span> </div>
 <div class="line"><a id="l00398" name="l00398"></a><span class="lineno">  398</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> IdType, <span class="keyword">typename</span> V, <span class="keyword">typename</span> A&gt;</div>
-<div class="line"><a id="l00399" name="l00399"></a><span class="lineno">  399</span><a class="code hl_class" href="../../d1/d8e/classxii_id_table.html">xiiIdTable&lt;IdType, V, A&gt;::xiiIdTable</a>() :</div>
-<div class="line"><a id="l00400" name="l00400"></a><span class="lineno">  400</span>  <a class="code hl_class" href="../../d3/df7/classxii_id_table_base.html">xiiIdTableBase</a>&lt;IdType, V&gt;(<a class="code hl_class" href="../../d8/d4f/class_a.html">A</a>::<a class="code hl_function" href="../../d3/df7/classxii_id_table_base.html#acc526a52e718245a2d13b2105a6b595b">GetAllocator</a>())</div>
+<div class="line"><a id="l00399" name="l00399"></a><span class="lineno">  399</span>xiiIdTable&lt;IdType, V, A&gt;::xiiIdTable() :</div>
+<div class="line"><a id="l00400" name="l00400"></a><span class="lineno">  400</span>  <a class="code hl_function" href="../../d3/df7/classxii_id_table_base.html#aa3e2172ef62d8514836e1bff3290f93c">xiiIdTableBase</a>&lt;IdType, V&gt;(A::<a class="code hl_function" href="../../d3/df7/classxii_id_table_base.html#acc526a52e718245a2d13b2105a6b595b">GetAllocator</a>())</div>
 <div class="line"><a id="l00401" name="l00401"></a><span class="lineno">  401</span>{</div>
 <div class="line"><a id="l00402" name="l00402"></a><span class="lineno">  402</span>}</div>
 <div class="line"><a id="l00403" name="l00403"></a><span class="lineno">  403</span> </div>
 <div class="line"><a id="l00404" name="l00404"></a><span class="lineno">  404</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> IdType, <span class="keyword">typename</span> V, <span class="keyword">typename</span> A&gt;</div>
-<div class="line"><a id="l00405" name="l00405"></a><span class="lineno">  405</span><a class="code hl_class" href="../../d1/d8e/classxii_id_table.html">xiiIdTable&lt;IdType, V, A&gt;::xiiIdTable</a>(<a class="code hl_class" href="../../d5/d66/classxii_allocator_base.html">xiiAllocatorBase</a>* pAllocator) :</div>
+<div class="line"><a id="l00405" name="l00405"></a><span class="lineno">  405</span>xiiIdTable&lt;IdType, V, A&gt;::xiiIdTable(<a class="code hl_class" href="../../d5/d66/classxii_allocator_base.html">xiiAllocatorBase</a>* pAllocator) :</div>
 <div class="line"><a id="l00406" name="l00406"></a><span class="lineno">  406</span>  <a class="code hl_class" href="../../d3/df7/classxii_id_table_base.html">xiiIdTableBase</a>&lt;IdType, V&gt;(pAllocator)</div>
 <div class="line"><a id="l00407" name="l00407"></a><span class="lineno">  407</span>{</div>
 <div class="line"><a id="l00408" name="l00408"></a><span class="lineno">  408</span>}</div>
 <div class="line"><a id="l00409" name="l00409"></a><span class="lineno">  409</span> </div>
 <div class="line"><a id="l00410" name="l00410"></a><span class="lineno">  410</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> IdType, <span class="keyword">typename</span> V, <span class="keyword">typename</span> A&gt;</div>
-<div class="line"><a id="l00411" name="l00411"></a><span class="lineno">  411</span><a class="code hl_class" href="../../d1/d8e/classxii_id_table.html">xiiIdTable&lt;IdType, V, A&gt;::xiiIdTable</a>(<span class="keyword">const</span> <a class="code hl_class" href="../../d1/d8e/classxii_id_table.html">xiiIdTable&lt;IdType, V, A&gt;</a>&amp; other) :</div>
-<div class="line"><a id="l00412" name="l00412"></a><span class="lineno">  412</span>  <a class="code hl_class" href="../../d3/df7/classxii_id_table_base.html">xiiIdTableBase</a>&lt;IdType, V&gt;(other, <a class="code hl_class" href="../../d8/d4f/class_a.html">A</a>::GetAllocator())</div>
+<div class="line"><a id="l00411" name="l00411"></a><span class="lineno">  411</span>xiiIdTable&lt;IdType, V, A&gt;::xiiIdTable(<span class="keyword">const</span> <a class="code hl_class" href="../../d1/d8e/classxii_id_table.html">xiiIdTable&lt;IdType, V, A&gt;</a>&amp; other) :</div>
+<div class="line"><a id="l00412" name="l00412"></a><span class="lineno">  412</span>  <a class="code hl_class" href="../../d3/df7/classxii_id_table_base.html">xiiIdTableBase</a>&lt;IdType, V&gt;(other, A::GetAllocator())</div>
 <div class="line"><a id="l00413" name="l00413"></a><span class="lineno">  413</span>{</div>
 <div class="line"><a id="l00414" name="l00414"></a><span class="lineno">  414</span>}</div>
 <div class="line"><a id="l00415" name="l00415"></a><span class="lineno">  415</span> </div>
 <div class="line"><a id="l00416" name="l00416"></a><span class="lineno">  416</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> IdType, <span class="keyword">typename</span> V, <span class="keyword">typename</span> A&gt;</div>
-<div class="line"><a id="l00417" name="l00417"></a><span class="lineno">  417</span><a class="code hl_class" href="../../d1/d8e/classxii_id_table.html">xiiIdTable&lt;IdType, V, A&gt;::xiiIdTable</a>(<span class="keyword">const</span> <a class="code hl_class" href="../../d3/df7/classxii_id_table_base.html">xiiIdTableBase&lt;IdType, V&gt;</a>&amp; other) :</div>
-<div class="line"><a id="l00418" name="l00418"></a><span class="lineno">  418</span>  <a class="code hl_class" href="../../d3/df7/classxii_id_table_base.html">xiiIdTableBase</a>&lt;IdType, V&gt;(other, <a class="code hl_class" href="../../d8/d4f/class_a.html">A</a>::GetAllocator())</div>
+<div class="line"><a id="l00417" name="l00417"></a><span class="lineno">  417</span>xiiIdTable&lt;IdType, V, A&gt;::xiiIdTable(<span class="keyword">const</span> <a class="code hl_class" href="../../d3/df7/classxii_id_table_base.html">xiiIdTableBase&lt;IdType, V&gt;</a>&amp; other) :</div>
+<div class="line"><a id="l00418" name="l00418"></a><span class="lineno">  418</span>  <a class="code hl_class" href="../../d3/df7/classxii_id_table_base.html">xiiIdTableBase</a>&lt;IdType, V&gt;(other, A::GetAllocator())</div>
 <div class="line"><a id="l00419" name="l00419"></a><span class="lineno">  419</span>{</div>
 <div class="line"><a id="l00420" name="l00420"></a><span class="lineno">  420</span>}</div>
 <div class="line"><a id="l00421" name="l00421"></a><span class="lineno">  421</span> </div>
 <div class="line"><a id="l00422" name="l00422"></a><span class="lineno">  422</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> IdType, <span class="keyword">typename</span> V, <span class="keyword">typename</span> A&gt;</div>
-<div class="line"><a id="l00423" name="l00423"></a><span class="lineno">  423</span><span class="keywordtype">void</span> <a class="code hl_class" href="../../d1/d8e/classxii_id_table.html">xiiIdTable&lt;IdType, V, A&gt;::operator=</a>(<span class="keyword">const</span> <a class="code hl_class" href="../../d1/d8e/classxii_id_table.html">xiiIdTable&lt;IdType, V, A&gt;</a>&amp; rhs)</div>
+<div class="line"><a id="l00423" name="l00423"></a><span class="lineno">  423</span><span class="keywordtype">void</span> xiiIdTable&lt;IdType, V, A&gt;::operator=(<span class="keyword">const</span> <a class="code hl_class" href="../../d1/d8e/classxii_id_table.html">xiiIdTable&lt;IdType, V, A&gt;</a>&amp; rhs)</div>
 <div class="line"><a id="l00424" name="l00424"></a><span class="lineno">  424</span>{</div>
 <div class="line"><a id="l00425" name="l00425"></a><span class="lineno">  425</span>  <a class="code hl_function" href="../../d3/df7/classxii_id_table_base.html#a7ebe6fe356a16e3038330f3f9af7471f">xiiIdTableBase&lt;IdType, V&gt;::operator=</a>(rhs);</div>
 <div class="line"><a id="l00426" name="l00426"></a><span class="lineno">  426</span>}</div>
 <div class="line"><a id="l00427" name="l00427"></a><span class="lineno">  427</span> </div>
 <div class="line"><a id="l00428" name="l00428"></a><span class="lineno">  428</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> IdType, <span class="keyword">typename</span> V, <span class="keyword">typename</span> A&gt;</div>
-<div class="line"><a id="l00429" name="l00429"></a><span class="lineno">  429</span><span class="keywordtype">void</span> <a class="code hl_class" href="../../d1/d8e/classxii_id_table.html">xiiIdTable&lt;IdType, V, A&gt;::operator=</a>(<span class="keyword">const</span> <a class="code hl_class" href="../../d3/df7/classxii_id_table_base.html">xiiIdTableBase&lt;IdType, V&gt;</a>&amp; rhs)</div>
+<div class="line"><a id="l00429" name="l00429"></a><span class="lineno">  429</span><span class="keywordtype">void</span> xiiIdTable&lt;IdType, V, A&gt;::operator=(<span class="keyword">const</span> <a class="code hl_class" href="../../d3/df7/classxii_id_table_base.html">xiiIdTableBase&lt;IdType, V&gt;</a>&amp; rhs)</div>
 <div class="line"><a id="l00430" name="l00430"></a><span class="lineno">  430</span>{</div>
 <div class="line"><a id="l00431" name="l00431"></a><span class="lineno">  431</span>  <a class="code hl_function" href="../../d3/df7/classxii_id_table_base.html#a7ebe6fe356a16e3038330f3f9af7471f">xiiIdTableBase&lt;IdType, V&gt;::operator=</a>(rhs);</div>
 <div class="line"><a id="l00432" name="l00432"></a><span class="lineno">  432</span>}</div>
@@ -676,15 +646,14 @@ $(function(){initNavTree('d5/d5f/_id_table__inl_8h_source.html','../../'); initR
 </div>
 </div>
 </div>
-<div class="ttc" id="aclass_a_html"><div class="ttname"><a href="../../d8/d4f/class_a.html">A</a></div><div class="ttdef"><b>Definition</b> diagrams_a.h:3</div></div>
 <div class="ttc" id="aclassxii_allocator_base_html"><div class="ttname"><a href="../../d5/d66/classxii_allocator_base.html">xiiAllocatorBase</a></div><div class="ttdoc">Base class for all memory allocators.</div><div class="ttdef"><b>Definition</b> AllocatorBase.h:22</div></div>
 <div class="ttc" id="aclassxii_id_table_base_1_1_const_iterator_html"><div class="ttname"><a href="../../da/db5/classxii_id_table_base_1_1_const_iterator.html">xiiIdTableBase::ConstIterator</a></div><div class="ttdoc">Const iterator.</div><div class="ttdef"><b>Definition</b> IdTable.h:25</div></div>
 <div class="ttc" id="aclassxii_id_table_base_1_1_const_iterator_html_a19342850dac5a978da6bc96d1fde7bb1"><div class="ttname"><a href="../../da/db5/classxii_id_table_base_1_1_const_iterator.html#a19342850dac5a978da6bc96d1fde7bb1">xiiIdTableBase::ConstIterator::IsValid</a></div><div class="ttdeci">bool IsValid() const</div><div class="ttdoc">Checks whether this iterator points to a valid element.</div><div class="ttdef"><b>Definition</b> IdTable_inl.h:18</div></div>
 <div class="ttc" id="aclassxii_id_table_base_1_1_const_iterator_html_a2adc02bc94651829c4c20b6d9d7ffa1a"><div class="ttname"><a href="../../da/db5/classxii_id_table_base_1_1_const_iterator.html#a2adc02bc94651829c4c20b6d9d7ffa1a">xiiIdTableBase::ConstIterator::operator==</a></div><div class="ttdeci">bool operator==(const typename xiiIdTableBase&lt; IdType, ValueType &gt;::ConstIterator &amp;it2) const</div><div class="ttdoc">Checks whether the two iterators point to the same element.</div><div class="ttdef"><b>Definition</b> IdTable_inl.h:24</div></div>
-<div class="ttc" id="aclassxii_id_table_base_1_1_const_iterator_html_a3cbe63131bbd556217462e512ee19983"><div class="ttname"><a href="../../da/db5/classxii_id_table_base_1_1_const_iterator.html#a3cbe63131bbd556217462e512ee19983">xiiIdTableBase::ConstIterator::Id</a></div><div class="ttdeci">IdType Id() const</div><div class="ttdoc">Returns the 'id' of the element that this iterator points to.</div><div class="ttdef"><b>Definition</b> IdTable_inl.h:30</div></div>
-<div class="ttc" id="aclassxii_id_table_base_1_1_const_iterator_html_a8f4a136e37cbd0f6819c101d4606c19c"><div class="ttname"><a href="../../da/db5/classxii_id_table_base_1_1_const_iterator.html#a8f4a136e37cbd0f6819c101d4606c19c">xiiIdTableBase::ConstIterator::Value</a></div><div class="ttdeci">const ValueType &amp; Value() const</div><div class="ttdoc">Returns the 'value' of the element that this iterator points to.</div><div class="ttdef"><b>Definition</b> IdTable_inl.h:36</div></div>
+<div class="ttc" id="aclassxii_id_table_base_1_1_const_iterator_html_a3cbe63131bbd556217462e512ee19983"><div class="ttname"><a href="../../da/db5/classxii_id_table_base_1_1_const_iterator.html#a3cbe63131bbd556217462e512ee19983">xiiIdTableBase::ConstIterator::Id</a></div><div class="ttdeci">IdType Id() const</div><div class="ttdoc">Returns the &#39;id&#39; of the element that this iterator points to.</div><div class="ttdef"><b>Definition</b> IdTable_inl.h:30</div></div>
+<div class="ttc" id="aclassxii_id_table_base_1_1_const_iterator_html_a8f4a136e37cbd0f6819c101d4606c19c"><div class="ttname"><a href="../../da/db5/classxii_id_table_base_1_1_const_iterator.html#a8f4a136e37cbd0f6819c101d4606c19c">xiiIdTableBase::ConstIterator::Value</a></div><div class="ttdeci">const ValueType &amp; Value() const</div><div class="ttdoc">Returns the &#39;value&#39; of the element that this iterator points to.</div><div class="ttdef"><b>Definition</b> IdTable_inl.h:36</div></div>
 <div class="ttc" id="aclassxii_id_table_base_1_1_const_iterator_html_ac7803d37c3358bf65f962edbe97320ad"><div class="ttname"><a href="../../da/db5/classxii_id_table_base_1_1_const_iterator.html#ac7803d37c3358bf65f962edbe97320ad">xiiIdTableBase::ConstIterator::Next</a></div><div class="ttdeci">void Next()</div><div class="ttdoc">Advances the iterator to the next element in the map. The iterator will not be valid anymore,...</div><div class="ttdef"><b>Definition</b> IdTable_inl.h:42</div></div>
-<div class="ttc" id="aclassxii_id_table_base_1_1_const_iterator_html_aef5156b56be32845228fe15b389047eb"><div class="ttname"><a href="../../da/db5/classxii_id_table_base_1_1_const_iterator.html#aef5156b56be32845228fe15b389047eb">xiiIdTableBase::ConstIterator::operator++</a></div><div class="ttdeci">void operator++()</div><div class="ttdoc">Shorthand for 'Next'.</div><div class="ttdef"><b>Definition</b> IdTable_inl.h:55</div></div>
+<div class="ttc" id="aclassxii_id_table_base_1_1_const_iterator_html_aef5156b56be32845228fe15b389047eb"><div class="ttname"><a href="../../da/db5/classxii_id_table_base_1_1_const_iterator.html#aef5156b56be32845228fe15b389047eb">xiiIdTableBase::ConstIterator::operator++</a></div><div class="ttdeci">void operator++()</div><div class="ttdoc">Shorthand for &#39;Next&#39;.</div><div class="ttdef"><b>Definition</b> IdTable_inl.h:55</div></div>
 <div class="ttc" id="aclassxii_id_table_base_html"><div class="ttname"><a href="../../d3/df7/classxii_id_table_base.html">xiiIdTableBase</a></div><div class="ttdoc">Implementation of an id mapping table which stores id/value pairs.</div><div class="ttdef"><b>Definition</b> IdTable.h:18</div></div>
 <div class="ttc" id="aclassxii_id_table_base_html_a041d00045a87ec0aef122a2174b537d5"><div class="ttname"><a href="../../d3/df7/classxii_id_table_base.html#a041d00045a87ec0aef122a2174b537d5">xiiIdTableBase::Clear</a></div><div class="ttdeci">void Clear()</div><div class="ttdoc">Clears the table.</div><div class="ttdef"><b>Definition</b> IdTable_inl.h:170</div></div>
 <div class="ttc" id="aclassxii_id_table_base_html_a22aed313a651afb42af61a461397b04d"><div class="ttname"><a href="../../d3/df7/classxii_id_table_base.html#a22aed313a651afb42af61a461397b04d">xiiIdTableBase::Remove</a></div><div class="ttdeci">bool Remove(const IdType id, ValueType *out_pOldValue=nullptr)</div><div class="ttdoc">Removes the entry with the given id. Returns if an entry was removed and optionally writes out the ol...</div><div class="ttdef"><b>Definition</b> IdTable_inl.h:227</div></div>
@@ -696,7 +665,7 @@ $(function(){initNavTree('d5/d5f/_id_table__inl_8h_source.html','../../'); initR
 <div class="ttc" id="aclassxii_id_table_base_html_a96afbaddee8e2b9bbf34683664c95fa3"><div class="ttname"><a href="../../d3/df7/classxii_id_table_base.html#a96afbaddee8e2b9bbf34683664c95fa3">xiiIdTableBase::GetIterator</a></div><div class="ttdeci">Iterator GetIterator()</div><div class="ttdoc">Returns an Iterator to the very first element.</div><div class="ttdef"><b>Definition</b> IdTable_inl.h:326</div></div>
 <div class="ttc" id="aclassxii_id_table_base_html_a9a73806c402a0b74619e4af5c9774aec"><div class="ttname"><a href="../../d3/df7/classxii_id_table_base.html#a9a73806c402a0b74619e4af5c9774aec">xiiIdTableBase::GetValueUnchecked</a></div><div class="ttdeci">const ValueType &amp; GetValueUnchecked(const IndexType index) const</div><div class="ttdoc">Returns the value at the given index. Does bounds checks in debug builds but does not check for stale...</div><div class="ttdef"><b>Definition</b> IdTable_inl.h:305</div></div>
 <div class="ttc" id="aclassxii_id_table_base_html_aa1a09c6eed7767f470cfaf9479e1c911"><div class="ttname"><a href="../../d3/df7/classxii_id_table_base.html#aa1a09c6eed7767f470cfaf9479e1c911">xiiIdTableBase::TryGetValue</a></div><div class="ttdeci">bool TryGetValue(const IdType id, ValueType &amp;out_value) const</div><div class="ttdoc">Returns if an entry with the given id was found and if found writes out the corresponding value to ou...</div><div class="ttdef"><b>Definition</b> IdTable_inl.h:257</div></div>
-<div class="ttc" id="aclassxii_id_table_base_html_aa3e2172ef62d8514836e1bff3290f93c"><div class="ttname"><a href="../../d3/df7/classxii_id_table_base.html#aa3e2172ef62d8514836e1bff3290f93c">xiiIdTableBase::xiiIdTableBase</a></div><div class="ttdeci">xiiIdTableBase(xiiAllocatorBase *pAllocator)</div><div class="ttdoc">Creates an empty id-table. Does not allocate any data yet.</div><div class="ttdef"><b>Definition</b> IdTable_inl.h:79</div></div>
+<div class="ttc" id="aclassxii_id_table_base_html_aa3e2172ef62d8514836e1bff3290f93c"><div class="ttname"><a href="../../d3/df7/classxii_id_table_base.html#aa3e2172ef62d8514836e1bff3290f93c">xiiIdTableBase&lt; xiiGenericId&lt; 24, 8 &gt;, xiiActionDescriptor * &gt;::xiiIdTableBase</a></div><div class="ttdeci">xiiIdTableBase(xiiAllocatorBase *pAllocator)</div><div class="ttdef"><b>Definition</b> IdTable_inl.h:79</div></div>
 <div class="ttc" id="aclassxii_id_table_base_html_ab335e73479fc6d2800af53627b93e6a1"><div class="ttname"><a href="../../d3/df7/classxii_id_table_base.html#ab335e73479fc6d2800af53627b93e6a1">xiiIdTableBase::Contains</a></div><div class="ttdeci">bool Contains(const IdType id) const</div><div class="ttdoc">Returns if the table contains an entry corresponding to the given id.</div><div class="ttdef"><b>Definition</b> IdTable_inl.h:319</div></div>
 <div class="ttc" id="aclassxii_id_table_base_html_abb5fbd92992721a2bc2e5310c14c6e7c"><div class="ttname"><a href="../../d3/df7/classxii_id_table_base.html#abb5fbd92992721a2bc2e5310c14c6e7c">xiiIdTableBase::Insert</a></div><div class="ttdeci">IdType Insert(const ValueType &amp;value)</div><div class="ttdoc">Inserts the value into the table and returns the corresponding id.</div><div class="ttdef"><b>Definition</b> IdTable_inl.h:191</div></div>
 <div class="ttc" id="aclassxii_id_table_base_html_acc526a52e718245a2d13b2105a6b595b"><div class="ttname"><a href="../../d3/df7/classxii_id_table_base.html#acc526a52e718245a2d13b2105a6b595b">xiiIdTableBase::GetAllocator</a></div><div class="ttdeci">xiiAllocatorBase * GetAllocator() const</div><div class="ttdoc">Returns the allocator that is used by this instance.</div><div class="ttdef"><b>Definition</b> IdTable_inl.h:338</div></div>
@@ -710,14 +679,14 @@ $(function(){initNavTree('d5/d5f/_id_table__inl_8h_source.html','../../'); initR
 <div class="ttc" id="anamespacexii_math_html_a2c660f80f0df5bb91a751d12a93cb9cb"><div class="ttname"><a href="../../d1/d37/namespacexii_math.html#a2c660f80f0df5bb91a751d12a93cb9cb">xiiMath::Min</a></div><div class="ttdeci">constexpr XII_ALWAYS_INLINE T Min(T f1, T f2)</div><div class="ttdoc">Returns the smaller value, f1 or f2.</div><div class="ttdef"><b>Definition</b> Math_inl.h:26</div></div>
 <div class="ttc" id="anamespacexii_math_html_a4d6f8bf4858245e40a706a3aabd0a59e"><div class="ttname"><a href="../../d1/d37/namespacexii_math.html#a4d6f8bf4858245e40a706a3aabd0a59e">xiiMath::Max</a></div><div class="ttdeci">constexpr XII_ALWAYS_INLINE T Max(T f1, T f2)</div><div class="ttdoc">Returns the greater value, f1 or f2.</div><div class="ttdef"><b>Definition</b> Math_inl.h:38</div></div>
 <div class="ttc" id="astructxii_id_table_base_1_1_iterator_html"><div class="ttname"><a href="../../df/dcc/structxii_id_table_base_1_1_iterator.html">xiiIdTableBase::Iterator</a></div><div class="ttdoc">Iterator with write access.</div><div class="ttdef"><b>Definition</b> IdTable.h:57</div></div>
-<div class="ttc" id="astructxii_id_table_base_1_1_iterator_html_a18cae17cfc5edb8234df09b80cf75e58"><div class="ttname"><a href="../../df/dcc/structxii_id_table_base_1_1_iterator.html#a18cae17cfc5edb8234df09b80cf75e58">xiiIdTableBase::Iterator::Value</a></div><div class="ttdeci">ValueType &amp; Value()</div><div class="ttdoc">Returns the 'value' of the element that this iterator points to.</div><div class="ttdef"><b>Definition</b> IdTable_inl.h:70</div></div>
+<div class="ttc" id="astructxii_id_table_base_1_1_iterator_html_a18cae17cfc5edb8234df09b80cf75e58"><div class="ttname"><a href="../../df/dcc/structxii_id_table_base_1_1_iterator.html#a18cae17cfc5edb8234df09b80cf75e58">xiiIdTableBase::Iterator::Value</a></div><div class="ttdeci">ValueType &amp; Value()</div><div class="ttdoc">Returns the &#39;value&#39; of the element that this iterator points to.</div><div class="ttdef"><b>Definition</b> IdTable_inl.h:70</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.html">home</a></li><li class="navelem"><a class="el" href="../../dir_1036706e55c22cab35bc1c58ee689f1d.html">runner</a></li><li class="navelem"><a class="el" href="../../dir_629f8151d55d307162ff2d619fb1783d.html">work</a></li><li class="navelem"><a class="el" href="../../dir_1ddc44fe1263a8c7935fa6130b7d9499.html">XII</a></li><li class="navelem"><a class="el" href="../../dir_2c1b6808f12952f4c36e05ba7068379a.html">XII</a></li><li class="navelem"><a class="el" href="../../dir_b5a1c4ecfca018ad24b729e213296d41.html">Source</a></li><li class="navelem"><a class="el" href="../../dir_e321052006a51284e67389ab20037e7c.html">Engine</a></li><li class="navelem"><a class="el" href="../../dir_be0c42c58b36f42c54ec54024ed4f6af.html">Foundation</a></li><li class="navelem"><a class="el" href="../../dir_7f59ab18dbc50035dfc0ee7070867286.html">Containers</a></li><li class="navelem"><a class="el" href="../../dir_acc055bf9d45372e5f916366fab93514.html">Implementation</a></li><li class="navelem"><b>IdTable_inl.h</b></li>
-    <li class="footer">Generated on Fri Mar 21 2025 22:42:01 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
+    <li class="footer">Generated on Fri Mar 21 2025 23:27:39 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 </body>
