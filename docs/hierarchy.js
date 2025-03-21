@@ -1649,6 +1649,7 @@ var hierarchy =
     [ "xiiArrayBase< T, xiiDynamicArrayBase< T > >", "da/d4c/classxii_array_base.html", [
       [ "xiiDynamicArrayBase< T >", "d2/dea/classxii_dynamic_array_base.html", [
         [ "xiiDynamicArray< T, xiiDefaultAllocatorWrapper >", "dc/da4/classxii_dynamic_array.html", [
+          [ "xiiHybridArray< xiiDynamicArray< xiiMat4Template, xiiAlignedAllocatorWrapper >, 2 >", "dc/da9/classxii_hybrid_array.html", null ],
           [ "xiiHybridArray< xiiTreeNode< T > *, 8 >", "dc/da9/classxii_hybrid_array.html", null ],
           [ "xiiHybridArray< T, Size, AllocatorWrapper >", "dc/da9/classxii_hybrid_array.html", null ]
         ] ],
@@ -2297,13 +2298,6 @@ var hierarchy =
         ] ]
       ] ]
     ] ],
-    [ "xiiArrayBase< xiiDynamicArray< xiiMat4Template, xiiAlignedAllocatorWrapper >, xiiDynamicArrayBase< xiiDynamicArray< xiiMat4Template, xiiAlignedAllocatorWrapper > > >", "da/d4c/classxii_array_base.html", [
-      [ "xiiDynamicArrayBase< xiiDynamicArray< xiiMat4Template, xiiAlignedAllocatorWrapper > >", "d2/dea/classxii_dynamic_array_base.html", [
-        [ "xiiDynamicArray< xiiDynamicArray< xiiMat4Template, xiiAlignedAllocatorWrapper >, xiiDefaultAllocatorWrapper >", "dc/da4/classxii_dynamic_array.html", [
-          [ "xiiHybridArray< xiiDynamicArray< xiiMat4Template, xiiAlignedAllocatorWrapper >, 2 >", "dc/da9/classxii_hybrid_array.html", null ]
-        ] ]
-      ] ]
-    ] ],
     [ "xiiArrayBase< xiiDynamicArray< xiiProfilingSystem::GPUScope >, xiiDynamicArrayBase< xiiDynamicArray< xiiProfilingSystem::GPUScope > > >", "da/d4c/classxii_array_base.html", [
       [ "xiiDynamicArrayBase< xiiDynamicArray< xiiProfilingSystem::GPUScope > >", "d2/dea/classxii_dynamic_array_base.html", [
         [ "xiiDynamicArray< xiiDynamicArray< xiiProfilingSystem::GPUScope > >", "dc/da4/classxii_dynamic_array.html", null ]
@@ -2774,11 +2768,6 @@ var hierarchy =
         [ "xiiDynamicArray< xiiManipulatorAdapter *, xiiDefaultAllocatorWrapper >", "dc/da4/classxii_dynamic_array.html", [
           [ "xiiHybridArray< xiiManipulatorAdapter *, 8 >", "dc/da9/classxii_hybrid_array.html", null ]
         ] ]
-      ] ]
-    ] ],
-    [ "xiiArrayBase< xiiMat4Template, xiiDynamicArrayBase< xiiMat4Template > >", "da/d4c/classxii_array_base.html", [
-      [ "xiiDynamicArrayBase< xiiMat4Template >", "d2/dea/classxii_dynamic_array_base.html", [
-        [ "xiiDynamicArray< xiiMat4Template, xiiAlignedAllocatorWrapper >", "dc/da4/classxii_dynamic_array.html", null ]
       ] ]
     ] ],
     [ "xiiArrayBase< xiiMaterialResourceDescriptor::Parameter, xiiDynamicArrayBase< xiiMaterialResourceDescriptor::Parameter > >", "da/d4c/classxii_array_base.html", [
