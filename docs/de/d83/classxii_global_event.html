@@ -108,7 +108,7 @@ $(function(){initNavTree('de/d83/classxii_global_event.html','../../'); initResi
 </div><!--header-->
 <div class="contents">
 
-<p><a class="el" href="../../d8/d4f/class_a.html">A</a> class to broadcast and handle global (system-wide) events.  
+<p>A class to broadcast and handle global (system-wide) events.  
  <a href="#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="../../db/d12/_global_event_8h_source.html">GlobalEvent.h</a>&gt;</code></p>
@@ -169,8 +169,8 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:afe563009387fc95276982bb4b87094e0 inherit pro_attribs_classxii_enumerable"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p><a class="el" href="../../d8/d4f/class_a.html">A</a> class to broadcast and handle global (system-wide) events. </p>
-<p><a class="el" href="../../d8/d4f/class_a.html">A</a> global event is an event that will be sent to all instances of <a class="el" href="../../de/d83/classxii_global_event.html" title="A class to broadcast and handle global (system-wide) events.">xiiGlobalEvent</a> (or rather their respective handler functions), without the need to first register these event-handlers anywhere. Thus they are very useful to notify sub-systems of certain important events, such as that some kind of initialization will be done shortly, which means they can react by preparing properly. For example the xiiStartup-class will send certain events before doing startup and shutdown steps, which allows code to free resources before a sub-system might be shut down. <a class="el" href="../../de/d83/classxii_global_event.html" title="A class to broadcast and handle global (system-wide) events.">xiiGlobalEvent</a>'s should be used when there is a kind of event that should be propagated throughout the entire engine, without knowledge which systems might want to know about it. These systems can then use an xiiGlobalEvent-instance to hook themselves into the global-event pipeline and react accordingly. Global events should mostly be used for startup / configuration / shutdown procedures. Also one should never assume any specific order of execution, all event handlers should be completely independent from each other.</p>
+<div class="textblock"><p>A class to broadcast and handle global (system-wide) events. </p>
+<p>A global event is an event that will be sent to all instances of <a class="el" href="../../de/d83/classxii_global_event.html" title="A class to broadcast and handle global (system-wide) events.">xiiGlobalEvent</a> (or rather their respective handler functions), without the need to first register these event-handlers anywhere. Thus they are very useful to notify sub-systems of certain important events, such as that some kind of initialization will be done shortly, which means they can react by preparing properly. For example the xiiStartup-class will send certain events before doing startup and shutdown steps, which allows code to free resources before a sub-system might be shut down. <a class="el" href="../../de/d83/classxii_global_event.html" title="A class to broadcast and handle global (system-wide) events.">xiiGlobalEvent</a>'s should be used when there is a kind of event that should be propagated throughout the entire engine, without knowledge which systems might want to know about it. These systems can then use an xiiGlobalEvent-instance to hook themselves into the global-event pipeline and react accordingly. Global events should mostly be used for startup / configuration / shutdown procedures. Also one should never assume any specific order of execution, all event handlers should be completely independent from each other.</p>
 <p>To create a global event handler, simply add this code inside a cpp file:</p>
 <p>XII_ON_GLOBAL_EVENT(EventName) { ... do something ... }</p>
 <p>You can also use XII_ON_GLOBAL_EVENT_ONCE, if the handler should only be executed the first time the event is sent. This is more efficient than filtering out duplicate events inside the event handler. </p>
@@ -260,7 +260,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../de/d83/classxii_global_event.html">xiiGlobalEvent</a></li>
-    <li class="footer">Generated on Fri Mar 21 2025 23:41:15 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Sat Mar 22 2025 03:24:49 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 </body>

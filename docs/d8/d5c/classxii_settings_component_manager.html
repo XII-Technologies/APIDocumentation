@@ -107,7 +107,7 @@ $(function(){initNavTree('d8/d5c/classxii_settings_component_manager.html','../.
 </div><!--header-->
 <div class="contents">
 
-<p><a class="el" href="../../d8/d4f/class_a.html">A</a> component manager that does no update at all on components and expects only a single instance to be created per world.  
+<p>A component manager that does no update at all on components and expects only a single instance to be created per world.  
  <a href="#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="../../d7/d38/_settings_component_manager_8h_source.html">SettingsComponentManager.h</a>&gt;</code></p>
@@ -252,10 +252,10 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>GetWorldSimulationEna
 <tr class="memdesc:a29662236f3eaea05938c1c8e0fd9a608 inherit pro_methods_classxii_world_module"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether the world simulation is enabled. <br /></td></tr>
 <tr class="separator:a29662236f3eaea05938c1c8e0fd9a608 inherit pro_methods_classxii_world_module"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a50dab4b361f5624a439508da01d1d936 inherit pro_methods_classxii_world_module" id="r_a50dab4b361f5624a439508da01d1d936"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dfe/classxii_world_module.html#a50dab4b361f5624a439508da01d1d936">Initialize</a> ()</td></tr>
-<tr class="memdesc:a50dab4b361f5624a439508da01d1d936 inherit pro_methods_classxii_world_module"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method is called after the constructor. <a class="el" href="../../d8/d4f/class_a.html">A</a> derived type can override this method to do initialization work. Typically this is the method where updates function are registered.  <br /></td></tr>
+<tr class="memdesc:a50dab4b361f5624a439508da01d1d936 inherit pro_methods_classxii_world_module"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method is called after the constructor. A derived type can override this method to do initialization work. Typically this is the method where updates function are registered.  <br /></td></tr>
 <tr class="separator:a50dab4b361f5624a439508da01d1d936 inherit pro_methods_classxii_world_module"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1536af5f9f223828a3afdf41894d91b6 inherit pro_methods_classxii_world_module" id="r_a1536af5f9f223828a3afdf41894d91b6"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dfe/classxii_world_module.html#a1536af5f9f223828a3afdf41894d91b6">Deinitialize</a> ()</td></tr>
-<tr class="memdesc:a1536af5f9f223828a3afdf41894d91b6 inherit pro_methods_classxii_world_module"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method is called before the destructor. <a class="el" href="../../d8/d4f/class_a.html">A</a> derived type can override this method to do deinitialization work.  <br /></td></tr>
+<tr class="memdesc:a1536af5f9f223828a3afdf41894d91b6 inherit pro_methods_classxii_world_module"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method is called before the destructor. A derived type can override this method to do deinitialization work.  <br /></td></tr>
 <tr class="separator:a1536af5f9f223828a3afdf41894d91b6 inherit pro_methods_classxii_world_module"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a01634779f8effe43f379fc573b19aef8 inherit pro_methods_classxii_world_module" id="r_a01634779f8effe43f379fc573b19aef8"><td class="memItemLeft" align="right" valign="top">
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>OnSimulationStarted</b> ()</td></tr>
@@ -275,7 +275,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>OnSimulationS
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;typename ComponentType&gt;<br />
-class xiiSettingsComponentManager&lt; ComponentType &gt;</div><p><a class="el" href="../../d8/d4f/class_a.html">A</a> component manager that does no update at all on components and expects only a single instance to be created per world. </p>
+class xiiSettingsComponentManager&lt; ComponentType &gt;</div><p>A component manager that does no update at all on components and expects only a single instance to be created per world. </p>
 <p>Easy access to this single component is provided through the <a class="el" href="#a993d8ccf4cb9d7a1a3ac9dde14bc6256" title="Returns the first component of this type that has been created.">GetSingletonComponent()</a> function. If a second component is created, the manager will log an error. The first created component will be used as the 'singleton', all other components are ignored. Use this for components derived from <a class="el" href="../../d3/d99/classxii_settings_component.html" title="Base class for settings components, of which only one per type should exist in each world.">xiiSettingsComponent</a>, of which one should only have zero or one per world. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a6c3164f8aa1c793754ff4f944cffbc2f" name="a6c3164f8aa1c793754ff4f944cffbc2f"></a>
@@ -358,7 +358,7 @@ template&lt;typename ComponentType&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d8/d5c/classxii_settings_component_manager.html">xiiSettingsComponentManager</a></li>
-    <li class="footer">Generated on Fri Mar 21 2025 23:41:16 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Sat Mar 22 2025 03:24:50 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 </body>

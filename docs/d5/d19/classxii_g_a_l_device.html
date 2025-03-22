@@ -1281,12 +1281,12 @@ Stride of a formatted buffer will be computed automatically from the format if t
 <dl class="section return"><dt>Returns</dt><dd>The handle to the created texture object. The function calls <a class="el" href="../../d7/df4/classxii_ref_counting_impl.html#af89a37294bfebe74f2f43c492d2c14c3" title="Increments the reference counter. Returns the new reference count.">AddRef()</a>, so that the new object will have one reference.</dd></dl>
 <dl class="section remark"><dt>Remarks</dt><dd>To create all mip levels, set the description.m_uiMipLevels to zero.<br  />
  Multi-sampled resources cannot be initialized with data when they are created. <br  />
-If initial data is provided, number of sub-resources must exactly match the number of sub-resources in the texture (which is the number of mip levels times the number of array slices. For a 3<a class="el" href="../../d0/dd0/class_d.html">D</a> texture, this is just the number of mip levels).</dd></dl>
-<p>For example, for a 15 x 6 x 2 2<a class="el" href="../../d0/dd0/class_d.html">D</a> texture array, the following array of sub-resources should be provided: <br  />
+If initial data is provided, number of sub-resources must exactly match the number of sub-resources in the texture (which is the number of mip levels times the number of array slices. For a 3D texture, this is just the number of mip levels).</dd></dl>
+<p>For example, for a 15 x 6 x 2 2D texture array, the following array of sub-resources should be provided: <br  />
  15x6, 7x3, 3x1, 1x1, 15x6, 7x3, 3x1, 1x1.<br  />
-For a 15 x 6 x 4 3<a class="el" href="../../d0/dd0/class_d.html">D</a> texture, the following array of sub-resources should be provided:<br  />
+For a 15 x 6 x 4 3D texture, the following array of sub-resources should be provided:<br  />
  15x6x4, 7x3x2, 3x1x1, 1x1x1 </p>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000096">Todo</a></b></dt><dd>GraphicsFoundation: Vulkan allows the creation of 2<a class="el" href="../../d0/dd0/class_d.html">D</a> texture arrays, and using a single slice for view even if <a class="el" href="../../dc/d5c/structxii_g_a_l_shading_rate_capability_flags.html#ae18051ba3e2592a63b1df04552e3f560aafeab8337981d7714bf8b3d47a052dd3" title="Allows to use texture 2D array for shading rate.">xiiGALShadingRateCapabilityFlags::TextureArray</a> is not supported by the device. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000096">Todo</a></b></dt><dd>GraphicsFoundation: Vulkan allows the creation of 2D texture arrays, and using a single slice for view even if <a class="el" href="../../dc/d5c/structxii_g_a_l_shading_rate_capability_flags.html#ae18051ba3e2592a63b1df04552e3f560aafeab8337981d7714bf8b3d47a052dd3" title="Allows to use texture 2D array for shading rate.">xiiGALShadingRateCapabilityFlags::TextureArray</a> is not supported by the device. </dd></dl>
 <dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000097">Todo</a></b></dt><dd>GraphicsFoundation: Validate texture mip size to the tile size property. </dd></dl>
 
 </div>
@@ -1492,7 +1492,7 @@ For a 15 x 6 x 4 3<a class="el" href="../../d0/dd0/class_d.html">D</a> texture, 
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d5/d19/classxii_g_a_l_device.html">xiiGALDevice</a></li>
-    <li class="footer">Generated on Fri Mar 21 2025 23:41:14 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Sat Mar 22 2025 03:24:48 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 </body>

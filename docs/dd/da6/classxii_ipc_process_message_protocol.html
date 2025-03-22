@@ -106,7 +106,7 @@ $(function(){initNavTree('dd/da6/classxii_ipc_process_message_protocol.html','..
 </div><!--header-->
 <div class="contents">
 
-<p><a class="el" href="../../d8/d4f/class_a.html">A</a> protocol around <a class="el" href="../../df/d60/classxii_ipc_channel.html" title="Base class for a communication channel between processes.">xiiIpcChannel</a> to send reflected messages instead of byte array messages between client and server.  
+<p>A protocol around <a class="el" href="../../df/d60/classxii_ipc_channel.html" title="Base class for a communication channel between processes.">xiiIpcChannel</a> to send reflected messages instead of byte array messages between client and server.  
  <a href="#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="../../d5/d0f/_ipc_process_message_protocol_8h_source.html">IpcProcessMessageProtocol.h</a>&gt;</code></p>
@@ -137,7 +137,7 @@ Public Attributes</h2></td></tr>
 <tr class="separator:aa064d0d9cd42a53979d9b6ef09b0ba53"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p><a class="el" href="../../d8/d4f/class_a.html">A</a> protocol around <a class="el" href="../../df/d60/classxii_ipc_channel.html" title="Base class for a communication channel between processes.">xiiIpcChannel</a> to send reflected messages instead of byte array messages between client and server. </p>
+<div class="textblock"><p>A protocol around <a class="el" href="../../df/d60/classxii_ipc_channel.html" title="Base class for a communication channel between processes.">xiiIpcChannel</a> to send reflected messages instead of byte array messages between client and server. </p>
 <p>This wrapper class hooks into an existing <a class="el" href="../../df/d60/classxii_ipc_channel.html" title="Base class for a communication channel between processes.">xiiIpcChannel</a>. The <a class="el" href="../../df/d60/classxii_ipc_channel.html" title="Base class for a communication channel between processes.">xiiIpcChannel</a> is still responsible for all connection logic. This class merely provides a high-level messaging protocol via reflected messages derived from <a class="el" href="../../d4/d06/classxii_process_message.html" title="Base class for IPC messages transmitted by xiiIpcChannel.">xiiProcessMessage</a>. Note that if this class is used, <a class="el" href="../../df/d60/classxii_ipc_channel.html#a5870df18aab875da68f82a22f6505ecf" title="Sends a message. pMsg can be destroyed after the call.">xiiIpcChannel::Send</a> must not be called manually anymore, only use <a class="el" href="#aa69dc71501813814927641b0a8baccf9" title="Sends a message. pMsg can be destroyed after the call.">xiiIpcProcessMessageProtocol::Send</a>. Received messages are stored in a queue and must be flushed via calling ProcessMessages or WaitForMessages. </p>
 </div><hr/>The documentation for this class was generated from the following files:<ul>
 <li>/home/runner/work/XII/XII/Source/Engine/Foundation/Communication/<a class="el" href="../../d5/d0f/_ipc_process_message_protocol_8h_source.html">IpcProcessMessageProtocol.h</a></li>
@@ -149,7 +149,7 @@ Public Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dd/da6/classxii_ipc_process_message_protocol.html">xiiIpcProcessMessageProtocol</a></li>
-    <li class="footer">Generated on Fri Mar 21 2025 23:41:15 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Sat Mar 22 2025 03:24:49 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 </body>

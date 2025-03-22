@@ -145,7 +145,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>PrintAllSubsys
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The startup system makes sure to initialize and shut down all known subsystems in the proper order. </p>
 <p>Each subsystem can define on which other subsystems (or entire group) it is dependent (i.e. which other code it needs in an initialized state, before it can run itself). The startup system will sort all subsystems by their dependencies and then initialize them in the proper order. The startup and shutdown sequence consists of two steps. First the 'core' functionality is initialized. This is usually all the functionality that does not depend on a working rendering context. After all systems have had their 'core' functionality initialized, the 'high level' functionality can be initialized. In between these steps the rendering context should be created. Tools that might not create a window or do not want to actually load GPU resources, might get away with only doing the 'core' initialization. Thus a subsystem should do all the initialization that is independent from a window or rendering context in 'core' startup, and it should be able to work (with some features disabled), even when 'high level' startup is not done.</p>
-<p><a class="el" href="../../d8/d4f/class_a.html">A</a> subsystem startup configuration for a static subsystem needs to be put in some cpp file of the subsystem and looks like this:</p>
+<p>A subsystem startup configuration for a static subsystem needs to be put in some cpp file of the subsystem and looks like this:</p>
 <p>// clang-format off XII_BEGIN_SUBSYSTEM_DECLARATION(ExampleGroup, ExampleSubSystem)</p>
 <p>BEGIN_SUBSYSTEM_DEPENDENCIES "SomeOtherSubSystem", "SomeOtherSubSystem2", "SomeGroup" END_SUBSYSTEM_DEPENDENCIES</p>
 <p>ON_CORESYSTEMS_STARTUP { xiiExampleSubSystem::BasicStartup(); }</p>
@@ -364,7 +364,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>PrintAllSubsys
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dd/d8e/classxii_startup.html">xiiStartup</a></li>
-    <li class="footer">Generated on Fri Mar 21 2025 23:41:16 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Sat Mar 22 2025 03:24:50 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 </body>

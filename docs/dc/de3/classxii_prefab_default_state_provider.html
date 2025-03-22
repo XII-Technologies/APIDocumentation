@@ -187,7 +187,7 @@ static <a class="el" href="../../d8/d9b/classxii_shared_ptr.html">xiiSharedPtr</
 <tr class="inherit_header pub_static_methods_classxii_default_state_provider"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_static_methods_classxii_default_state_provider')"><img src="../../closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="../../d8/d61/classxii_default_state_provider.html">xiiDefaultStateProvider</a></td></tr>
 <tr class="memitem:a18d3bad2cffd248f15c781f6ea0f2138 inherit pub_static_methods_classxii_default_state_provider" id="r_a18d3bad2cffd248f15c781f6ea0f2138"><td class="memItemLeft" align="right" valign="top">
 static bool&#160;</td><td class="memItemRight" valign="bottom"><b>DoesVariantMatchProperty</b> (const <a class="el" href="../../db/d1a/classxii_variant.html">xiiVariant</a> &amp;value, const <a class="el" href="../../da/d25/classxii_abstract_property.html">xiiAbstractProperty</a> *pProp, <a class="el" href="../../db/d1a/classxii_variant.html">xiiVariant</a> index=<a class="el" href="../../db/d1a/classxii_variant.html">xiiVariant</a>())</td></tr>
-<tr class="memdesc:a18d3bad2cffd248f15c781f6ea0f2138 inherit pub_static_methods_classxii_default_state_provider"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="../../d8/d4f/class_a.html">A</a> sanity check function that verifies that a given variant's value matches that expected of the property at the given index. If index is invalid and the property a container, the value must be an array or dictionary of the property's type. <br /></td></tr>
+<tr class="memdesc:a18d3bad2cffd248f15c781f6ea0f2138 inherit pub_static_methods_classxii_default_state_provider"><td class="mdescLeft">&#160;</td><td class="mdescRight">A sanity check function that verifies that a given variant's value matches that expected of the property at the given index. If index is invalid and the property a container, the value must be an array or dictionary of the property's type. <br /></td></tr>
 <tr class="separator:a18d3bad2cffd248f15c781f6ea0f2138 inherit pub_static_methods_classxii_default_state_provider"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
@@ -373,8 +373,8 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Returns the root depth of this provider instance. </p>
-<p>This is through how many properties and objects we needed to pass through from the object and property passed into the factory method to find the root object / property that this provider represents. For example if we have this object hierarchy: <a class="el" href="../../d8/d4f/class_a.html">A</a> |-children- <a class="el" href="../../df/d95/class_b.html">B</a> |-elements- <a class="el" href="../../dd/de0/class_c.html">C</a></p>
-<p>If <a class="el" href="../../d8/d4f/class_a.html">A</a> is a prefab and the factory method was called for <a class="el" href="../../dd/de0/class_c.html">C</a> (with no property) then we need to walk up the hierarchy via elements container, the <a class="el" href="../../df/d95/class_b.html">B</a> object, the children container and then finally <a class="el" href="../../d8/d4f/class_a.html">A</a>. Thus, we need 4 hops to get the the prefab root which means the root depth for this provider instance is 4. </p>
+<p>This is through how many properties and objects we needed to pass through from the object and property passed into the factory method to find the root object / property that this provider represents. For example if we have this object hierarchy: A |-children- B |-elements- C</p>
+<p>If A is a prefab and the factory method was called for C (with no property) then we need to walk up the hierarchy via elements container, the B object, the children container and then finally A. Thus, we need 4 hops to get the the prefab root which means the root depth for this provider instance is 4. </p>
 
 <p>Implements <a class="el" href="../../d8/d61/classxii_default_state_provider.html#a4479f0b870630830310e1b4d81902e5b">xiiDefaultStateProvider</a>.</p>
 
@@ -419,7 +419,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dc/de3/classxii_prefab_default_state_provider.html">xiiPrefabDefaultStateProvider</a></li>
-    <li class="footer">Generated on Fri Mar 21 2025 23:41:15 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Sat Mar 22 2025 03:24:49 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 </body>

@@ -151,15 +151,15 @@ static XII_ALWAYS_INLINE xiiUInt64&#160;</td><td class="memItemRight" valign="bo
 <tr class="separator:a021fce033a785995d34073ee825f5c0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acd9c630e67c3b7314bcc56db893e1197" id="r_acd9c630e67c3b7314bcc56db893e1197"><td class="memItemLeft" align="right" valign="top"><a id="acd9c630e67c3b7314bcc56db893e1197" name="acd9c630e67c3b7314bcc56db893e1197"></a>
 static <a class="el" href="../../de/dd4/structxii_g_a_l_texture_creation_description.html">xiiGALTextureCreationDescription</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetDefaultTexture1DDescription</b> () noexcept</td></tr>
-<tr class="memdesc:acd9c630e67c3b7314bcc56db893e1197"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the default texture 1<a class="el" href="../../d0/dd0/class_d.html">D</a> creation description. <br /></td></tr>
+<tr class="memdesc:acd9c630e67c3b7314bcc56db893e1197"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the default texture 1D creation description. <br /></td></tr>
 <tr class="separator:acd9c630e67c3b7314bcc56db893e1197"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a56b0385728889ce78e8d14915fcbf46e" id="r_a56b0385728889ce78e8d14915fcbf46e"><td class="memItemLeft" align="right" valign="top"><a id="a56b0385728889ce78e8d14915fcbf46e" name="a56b0385728889ce78e8d14915fcbf46e"></a>
 static <a class="el" href="../../de/dd4/structxii_g_a_l_texture_creation_description.html">xiiGALTextureCreationDescription</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetDefaultTexture2DDescription</b> () noexcept</td></tr>
-<tr class="memdesc:a56b0385728889ce78e8d14915fcbf46e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the default texture 2<a class="el" href="../../d0/dd0/class_d.html">D</a> creation description. <br /></td></tr>
+<tr class="memdesc:a56b0385728889ce78e8d14915fcbf46e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the default texture 2D creation description. <br /></td></tr>
 <tr class="separator:a56b0385728889ce78e8d14915fcbf46e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7311adbd3d720f08e17ff0562c3e737c" id="r_a7311adbd3d720f08e17ff0562c3e737c"><td class="memItemLeft" align="right" valign="top"><a id="a7311adbd3d720f08e17ff0562c3e737c" name="a7311adbd3d720f08e17ff0562c3e737c"></a>
 static <a class="el" href="../../de/dd4/structxii_g_a_l_texture_creation_description.html">xiiGALTextureCreationDescription</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetDefaultTexture3DDescription</b> () noexcept</td></tr>
-<tr class="memdesc:a7311adbd3d720f08e17ff0562c3e737c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the default texture 3<a class="el" href="../../d0/dd0/class_d.html">D</a> creation description. <br /></td></tr>
+<tr class="memdesc:a7311adbd3d720f08e17ff0562c3e737c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the default texture 3D creation description. <br /></td></tr>
 <tr class="separator:a7311adbd3d720f08e17ff0562c3e737c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acefacc42edd2a64304eb4ebaa77dbfc0" id="r_acefacc42edd2a64304eb4ebaa77dbfc0"><td class="memItemLeft" align="right" valign="top"><a id="acefacc42edd2a64304eb4ebaa77dbfc0" name="acefacc42edd2a64304eb4ebaa77dbfc0"></a>
 static <a class="el" href="../../de/dd4/structxii_g_a_l_texture_creation_description.html">xiiGALTextureCreationDescription</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetDefaultTextureCubeDescription</b> () noexcept</td></tr>
@@ -309,7 +309,7 @@ static <a class="el" href="../../de/dd4/structxii_g_a_l_texture_creation_descrip
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="../../d8/d4f/class_a.html">A</a> const reference to the <a class="el" href="../../d9/d73/structxii_g_a_l_resource_format_description.html" title="This describes the invariant texture format attributes. These attributes are intrinsic to the texture...">xiiGALResourceFormatDescription</a> structure containing the texture format description.</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>A const reference to the <a class="el" href="../../d9/d73/structxii_g_a_l_resource_format_description.html" title="This describes the invariant texture format attributes. These attributes are intrinsic to the texture...">xiiGALResourceFormatDescription</a> structure containing the texture format description.</dd></dl>
 <dl class="section remark"><dt>Remarks</dt><dd>This method must be externally synchronized. </dd></dl>
 
 </div>
@@ -418,7 +418,7 @@ static <a class="el" href="../../de/dd4/structxii_g_a_l_texture_creation_descrip
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Offset from the beginning of the buffer to the given location.</dd></dl>
 <dl class="section remark"><dt>Remarks</dt><dd>Alignment is applied to the subresource sizes, such that the beginning of data of every subresource starts at an offset aligned by 'Alignment'. The alignment is not applied to the row/depth strides and texels in all subresources are assumed to be tightly packed.</dd></dl>
-<p>Subres 0 stride |&lt;--------------&gt;| |________________| Subres 1 | | stride | | |&lt;-------&gt;| | | |_________| | Subres 0 | | | | | | Subres 1| | | | | _ |________________| |_________| ... |_| <a class="el" href="../../d8/d4f/class_a.html">A</a> <a class="el" href="../../d8/d4f/class_a.html">A</a> <a class="el" href="../../d8/d4f/class_a.html">A</a> | | | Buffer start Subres 1 offset, Subres N offset, aligned by 'Alignment' aligned by 'Alignment' </p>
+<p>Subres 0 stride |&lt;--------------&gt;| |________________| Subres 1 | | stride | | |&lt;-------&gt;| | | |_________| | Subres 0 | | | | | | Subres 1| | | | | _ |________________| |_________| ... |_| A A A | | | Buffer start Subres 1 offset, Subres N offset, aligned by 'Alignment' aligned by 'Alignment' </p>
 
 </div>
 </div>
@@ -432,7 +432,7 @@ static <a class="el" href="../../de/dd4/structxii_g_a_l_texture_creation_descrip
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d2/db9/classxii_g_a_l_texture_utilities.html">xiiGALTextureUtilities</a></li>
-    <li class="footer">Generated on Fri Mar 21 2025 23:41:14 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Sat Mar 22 2025 03:24:49 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 </body>

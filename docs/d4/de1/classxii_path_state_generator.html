@@ -131,7 +131,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SearchFinishe
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;typename PathStateType&gt;<br />
 class xiiPathStateGenerator&lt; PathStateType &gt;</div><p>The base class for all path state generates. </p>
-<p><a class="el" href="../../d8/d4f/class_a.html">A</a> path state generator is a class that takes one 'path state' (typically a node in a graph) and generates all the adjacent nodes that can be reached from there. It carries state, which allows to expand nodes only in certain directions, depending on what actions are possible at some graph node.</p>
+<p>A path state generator is a class that takes one 'path state' (typically a node in a graph) and generates all the adjacent nodes that can be reached from there. It carries state, which allows to expand nodes only in certain directions, depending on what actions are possible at some graph node.</p>
 <p>This can be used to do path searches where the capabilities of a unit are taken into account, such as limited turning speeds. The 'state' that is then carried is the current orientation of the unit at that point along the path, which determines into which directions the path search can be expanded.</p>
 <p>PathStateType needs to be derived from <a class="el" href="../../db/d85/structxii_path_state.html" title="Base class for all path finding state objects.">xiiPathState</a>. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
@@ -170,7 +170,7 @@ template&lt;typename PathStateType&gt; </div>
 </div><div class="memdoc">
 
 <p>Called by a <a class="el" href="../../d0/d0b/classxii_path_search.html" title="Implements a directed breadth-first search through a graph (A*).">xiiPathSearch</a> object to generate the adjacent states from graph node iNodeIndex. </p>
-<p>On a 2<a class="el" href="../../d0/dd0/class_d.html">D</a> grid the iNodeIndex would just be the grid cell index (GridHeight * Cell.y + Cell.x). This function would then 'expand' the 4 or 8 direct neighbor cells by creating a new PathStateType object for each and then passing that to the <a class="el" href="../../d0/d0b/classxii_path_search.html" title="Implements a directed breadth-first search through a graph (A*).">xiiPathSearch</a> object pPathSearch by calling <a class="el" href="../../d0/d0b/classxii_path_search.html#afea721c68d83ce3b00cbccf8f4060a34" title="Needs to be called by the used xiiPathStateGenerator to add nodes to evaluate.">xiiPathSearch::AddPathNode</a>. </p>
+<p>On a 2D grid the iNodeIndex would just be the grid cell index (GridHeight * Cell.y + Cell.x). This function would then 'expand' the 4 or 8 direct neighbor cells by creating a new PathStateType object for each and then passing that to the <a class="el" href="../../d0/d0b/classxii_path_search.html" title="Implements a directed breadth-first search through a graph (A*).">xiiPathSearch</a> object pPathSearch by calling <a class="el" href="../../d0/d0b/classxii_path_search.html#afea721c68d83ce3b00cbccf8f4060a34" title="Needs to be called by the used xiiPathStateGenerator to add nodes to evaluate.">xiiPathSearch::AddPathNode</a>. </p>
 
 </div>
 </div>
@@ -183,7 +183,7 @@ template&lt;typename PathStateType&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d4/de1/classxii_path_state_generator.html">xiiPathStateGenerator</a></li>
-    <li class="footer">Generated on Fri Mar 21 2025 23:41:15 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Sat Mar 22 2025 03:24:49 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 </body>

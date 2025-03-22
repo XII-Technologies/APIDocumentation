@@ -165,7 +165,7 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>PlatformNeedsP
 <p>To load a plugin, call <a class="el" href="#aa0eff5d5a60bda0b8e4a9e6476328d99" title="Tries to load a DLL dynamically into the program.">xiiPlugin::LoadPlugin()</a> with the filename of the plugin (without a path). The plugin DLL has to be located next to the application binary.</p>
 <p>It is not possible to unload individual plugins, but you can unload all plugins. Make sure to only do this when no code and data from any of the plugins is still referenced somewhere.</p>
 <p>When a plugin has a dependency on another plugin, it should contain a call to XII_PLUGIN_DEPENDENCY() in one of its cpp files. This instructs the system to load that plugin as well, and makes sure to delay initialization until all (transitive) dependencies are loaded.</p>
-<p><a class="el" href="../../d8/d4f/class_a.html">A</a> plugin may contain one or multiple XII_PLUGIN_ON_LOADED() and XII_PLUGIN_ON_UNLOADED() functions. These are called automatically once a plugin and all its dependencies are loaded. This can be used to make sure basic things get set up. For anything more complicated, use <a class="el" href="../../dd/d8e/classxii_startup.html" title="The startup system makes sure to initialize and shut down all known subsystems in the proper order.">xiiStartup</a> instead. Once a plugin is loaded, the startup system will initialize new startup code properly. </p>
+<p>A plugin may contain one or multiple XII_PLUGIN_ON_LOADED() and XII_PLUGIN_ON_UNLOADED() functions. These are called automatically once a plugin and all its dependencies are loaded. This can be used to make sure basic things get set up. For anything more complicated, use <a class="el" href="../../dd/d8e/classxii_startup.html" title="The startup system makes sure to initialize and shut down all known subsystems in the proper order.">xiiStartup</a> instead. Once a plugin is loaded, the startup system will initialize new startup code properly. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="ab6a3737635ce865bd504a9503b78c218" name="ab6a3737635ce865bd504a9503b78c218"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab6a3737635ce865bd504a9503b78c218">&#9670;&#160;</a></span>InitializeStaticallyLinkedPlugins()</h2>
@@ -296,7 +296,7 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>PlatformNeedsP
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d2/d89/classxii_plugin.html">xiiPlugin</a></li>
-    <li class="footer">Generated on Fri Mar 21 2025 23:41:15 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Sat Mar 22 2025 03:24:49 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 </body>

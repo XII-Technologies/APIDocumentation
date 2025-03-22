@@ -155,7 +155,7 @@ template&lt;typename TYPE&gt; </td></tr>
 <tr class="separator:afc376719aecc7a3d905c196f50ae6b7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaef30261db876ade1c53d907aaa68828" id="r_aaef30261db876ade1c53d907aaa68828"><td class="memTemplParams" colspan="2">template&lt;typename TYPE&gt; </td></tr>
 <tr class="memitem:aaef30261db876ade1c53d907aaa68828"><td class="memTemplItemLeft" align="right" valign="top">constexpr TYPE&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#aaef30261db876ade1c53d907aaa68828">HighValue</a> ()</td></tr>
-<tr class="memdesc:aaef30261db876ade1c53d907aaa68828"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="../../d8/d4f/class_a.html">A</a> very large value, that is slightly smaller than sqrt(MaxValue()).  <br /></td></tr>
+<tr class="memdesc:aaef30261db876ade1c53d907aaa68828"><td class="mdescLeft">&#160;</td><td class="mdescRight">A very large value, that is slightly smaller than sqrt(MaxValue()).  <br /></td></tr>
 <tr class="separator:aaef30261db876ade1c53d907aaa68828"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab7b5a123b24f43f648a24898407502ff" id="r_ab7b5a123b24f43f648a24898407502ff"><td class="memTemplParams" colspan="2"><a id="ab7b5a123b24f43f648a24898407502ff" name="ab7b5a123b24f43f648a24898407502ff"></a>
 template&lt;typename TYPE&gt; </td></tr>
@@ -1163,7 +1163,7 @@ XII_FOUNDATION_DLL double&#160;</td><td class="memItemRight" valign="bottom"><b>
 <tr class="memdesc:a822d73a93fd48bc8f80f443eebd2bcd8"><td class="mdescLeft">&#160;</td><td class="mdescRight">If 'value' is not-a-number (NaN) 'fallback' is returned, otherwise 'value' is passed through unmodified. <br /></td></tr>
 <tr class="separator:a822d73a93fd48bc8f80f443eebd2bcd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0274a87a99b3d69fa197d0130647e9de" id="r_a0274a87a99b3d69fa197d0130647e9de"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/d1a/classxii_variant.html">xiiVariant</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0274a87a99b3d69fa197d0130647e9de">Lerp</a> (const <a class="el" href="../../db/d1a/classxii_variant.html">xiiVariant</a> &amp;a, const <a class="el" href="../../db/d1a/classxii_variant.html">xiiVariant</a> &amp;b, double fFactor)</td></tr>
-<tr class="memdesc:a0274a87a99b3d69fa197d0130647e9de"><td class="mdescLeft">&#160;</td><td class="mdescRight">An overload of <a class="el" href="#af91f22a14862accf565f49eecc57cc3c" title="Returns the linear interpolation of f1 and f2. factor is a value between 0 and 1.">xiiMath::Lerp</a> to interpolate variants. <a class="el" href="../../d8/d4f/class_a.html">A</a> and b must have the same type.  <br /></td></tr>
+<tr class="memdesc:a0274a87a99b3d69fa197d0130647e9de"><td class="mdescLeft">&#160;</td><td class="mdescRight">An overload of <a class="el" href="#af91f22a14862accf565f49eecc57cc3c" title="Returns the linear interpolation of f1 and f2. factor is a value between 0 and 1.">xiiMath::Lerp</a> to interpolate variants. A and b must have the same type.  <br /></td></tr>
 <tr class="separator:a0274a87a99b3d69fa197d0130647e9de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -1593,7 +1593,7 @@ template&lt;typename TYPE&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p><a class="el" href="../../d8/d4f/class_a.html">A</a> very large value, that is slightly smaller than sqrt(MaxValue()). </p>
+<p>A very large value, that is slightly smaller than sqrt(MaxValue()). </p>
 <p>Useful to default initialize values, that may get squared in subsequent operations. </p>
 
 </div>
@@ -1622,7 +1622,7 @@ template&lt;typename TYPE&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>An overload of <a class="el" href="#af91f22a14862accf565f49eecc57cc3c" title="Returns the linear interpolation of f1 and f2. factor is a value between 0 and 1.">xiiMath::Lerp</a> to interpolate variants. <a class="el" href="../../d8/d4f/class_a.html">A</a> and b must have the same type. </p>
+<p>An overload of <a class="el" href="#af91f22a14862accf565f49eecc57cc3c" title="Returns the linear interpolation of f1 and f2. factor is a value between 0 and 1.">xiiMath::Lerp</a> to interpolate variants. A and b must have the same type. </p>
 <p>If the type can't be interpolated like e.g. strings, a is returned for a fFactor less than 0.5, b is returned for a fFactor greater or equal to 0.5. </p>
 
 </div>
@@ -1903,7 +1903,7 @@ template&lt;typename Type&gt; </div>
 </div><div class="memdoc">
 
 <p>Wraps iValue around the maximum value, so that it stays within the range [0; uiExcludedMaxValue-1]. </p>
-<p>Ie a value of uiExcludedMaxValue would be wrapped to 0, and (uiExcludedMaxValue+1) to 1, etc. Negative values are wrapped back around to a large value, ie -1 would be wrapped to (uiExcludedMaxValue-1). <a class="el" href="../../d8/d4f/class_a.html">A</a> value of 0 for uiExcludedMaxValue is invalid and results in a division by zero error. </p>
+<p>Ie a value of uiExcludedMaxValue would be wrapped to 0, and (uiExcludedMaxValue+1) to 1, etc. Negative values are wrapped back around to a large value, ie -1 would be wrapped to (uiExcludedMaxValue-1). A value of 0 for uiExcludedMaxValue is invalid and results in a division by zero error. </p>
 
 </div>
 </div>
@@ -1935,7 +1935,7 @@ template&lt;typename Type&gt; </div>
 </div><div class="memdoc">
 
 <p>Wraps uiValue around the maximum value, so that it stays within the range [0; uiExcludedMaxValue-1]. </p>
-<p>Ie a value of uiExcludedMaxValue would be wrapped to 0, and (uiExcludedMaxValue+1) to 1, etc. <a class="el" href="../../d8/d4f/class_a.html">A</a> value of 0 for uiExcludedMaxValue is invalid and results in a division by zero error. </p>
+<p>Ie a value of uiExcludedMaxValue would be wrapped to 0, and (uiExcludedMaxValue+1) to 1, etc. A value of 0 for uiExcludedMaxValue is invalid and results in a division by zero error. </p>
 
 </div>
 </div>
@@ -1945,7 +1945,7 @@ template&lt;typename Type&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d1/d37/namespacexii_math.html">xiiMath</a></li>
-    <li class="footer">Generated on Fri Mar 21 2025 23:41:17 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Sat Mar 22 2025 03:24:51 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 </body>

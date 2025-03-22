@@ -181,7 +181,7 @@ Protected Member Functions</h2></td></tr>
 class xiiEventBase&lt; EventData, MutexType, EventType &gt;</div><p>This class propagates event information to registered event handlers. </p>
 <p>An event can be anything that "happens" that might be of interest to other code, such that it can react on it in some way. Just create an instance of <a class="el" href="../../dc/d22/classxii_event.html">xiiEvent</a> and call <a class="el" href="#ae8ad85497f5d04bf7320cee2f74ab41f" title="This function will broadcast to all registered users, that this event has just happened....">Broadcast()</a> on it. Other interested code needs const access to the event variable to be able to call <a class="el" href="#ae7539570090c1f7b00c7a91005b45f50" title="Adds a function as an event handler. All handlers will be notified in the order that they were regist...">AddEventHandler()</a> and <a class="el" href="#aeec508e0a7fd0232284d9f84c4711e7e" title="Removes a previously registered handler. It is an error to remove a handler that was not registered.">RemoveEventHandler()</a>. To pass information to the handlers, create a custom struct with event information and then pass a (const) reference to that data through <a class="el" href="#ae8ad85497f5d04bf7320cee2f74ab41f" title="This function will broadcast to all registered users, that this event has just happened....">Broadcast()</a>.</p>
 <p>If you need to modify the event while broadcasting, for example inside one of the registered event handlers, set EventType = xiiEventType::CopyOnBroadcast. Each broadcast will then copy the event handler array before signaling them, allowing modifications during broadcasting.</p>
-<dl class="section note"><dt>Note</dt><dd><a class="el" href="../../d8/d4f/class_a.html">A</a> class holding a <a class="el" href="../../dc/d22/classxii_event.html">xiiEvent</a> member needs to provide public access to the member for external code to be able to register as an event handler. To make it possible to prevent external code from also raising events, all functions that are needed for listening are const, and all others are non-const. Therefore, simply make event members private and provide const reference access through a public getter. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>A class holding a <a class="el" href="../../dc/d22/classxii_event.html">xiiEvent</a> member needs to provide public access to the member for external code to be able to register as an event handler. To make it possible to prevent external code from also raising events, all functions that are needed for listening are const, and all others are non-const. Therefore, simply make event members private and provide const reference access through a public getter. </dd></dl>
 </div><h2 class="groupheader">Member Enumeration Documentation</h2>
 <a id="a47c0c3b0c09c926309f7fa6763933c9b" name="a47c0c3b0c09c926309f7fa6763933c9b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a47c0c3b0c09c926309f7fa6763933c9b">&#9670;&#160;</a></span>anonymous enum</h2>
@@ -227,7 +227,7 @@ template&lt;typename EventData, typename MutexType, xiiEventType EventType&gt; <
 
 <p>Adds a function as an event handler. All handlers will be notified in the order that they were registered. </p>
 <p>The return value can be stored and used to remove the event handler later again.</p>
-<p><a class="el" href="../../d8/d4f/class_a.html">A</a> callback can be registered multiple times with different pass-through data (or even with the same, though that is less useful). </p>
+<p>A callback can be registered multiple times with different pass-through data (or even with the same, though that is less useful). </p>
 
 </div>
 </div>
@@ -337,7 +337,7 @@ template&lt;typename EventData, typename MutexType, xiiEventType EventType&gt; <
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d0/d7f/classxii_event_base.html">xiiEventBase</a></li>
-    <li class="footer">Generated on Fri Mar 21 2025 23:41:14 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Sat Mar 22 2025 03:24:48 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 </body>

@@ -25,7 +25,6 @@
 var menudata={children:[
 {text:"Main Page",url:"index.html"},
 {text:"Related Pages",url:"pages.html"},
-{text:"Topics",url:"topics.html"},
 {text:"Classes",url:"annotated.html",children:[
 {text:"Class List",url:"annotated.html"},
 {text:"Class Index",url:"classes.html"},
@@ -156,5 +155,4 @@ var menudata={children:[
 {text:"w",url:"functions_eval_w.html#index_w"},
 {text:"x",url:"functions_eval_x.html#index_x"},
 {text:"z",url:"functions_eval_z.html#index_z"}]},
-{text:"Related Symbols",url:"functions_rela.html"}]}]},
-{text:"Examples",url:"examples.html"}]}
+{text:"Related Symbols",url:"functions_rela.html"}]}]}]}

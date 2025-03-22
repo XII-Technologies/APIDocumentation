@@ -93,8 +93,5 @@ var searchData=
   ['freeunusedresources_90',['FreeUnusedResources',['../d4/d8e/classxii_resource_manager.html#a208fef8fa6b340d120d03e78beda58ed',1,'xiiResourceManager']]],
   ['fromdxgiformat_91',['FromDxgiFormat',['../d3/d68/classxii_image_format_mappings.html#a240a9bb0224c021d617659c7e221aa86',1,'xiiImageFormatMappings']]],
   ['fromfourcc_92',['FromFourCc',['../d3/d68/classxii_image_format_mappings.html#a7fc4d31211d3f65d8f12600a138304a0',1,'xiiImageFormatMappings']]],
-  ['frompixelmask_93',['FromPixelMask',['../d5/dd3/structxii_image_format.html#ae710aadd41ae18e2cc44b034f5fbb754',1,'xiiImageFormat']]],
-  ['func_94',['func',['../da/d1f/group__group1.html#ga24f647174760cac13d2624b5ad74b00c',1,'group.cpp']]],
-  ['func2_95',['func2',['../da/d1f/group__group1.html#ga053929c0809a5f56f7548fd7d9968f31',1,'group.cpp']]],
-  ['func3_96',['func3',['../da/d1f/group__group1.html#gadbf675591ff057ec48ce35b0d5cdf755',1,'group.cpp']]]
+  ['frompixelmask_93',['FromPixelMask',['../d5/dd3/structxii_image_format.html#ae710aadd41ae18e2cc44b034f5fbb754',1,'xiiImageFormat']]]
 ];

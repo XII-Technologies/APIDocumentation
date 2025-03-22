@@ -133,8 +133,8 @@ static const <a class="el" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a>
 class xiiEnumerable&lt; Derived, Base &gt;</div><p>Base class to add the ability to another class to enumerate all active instance of it, across DLL boundaries. </p>
 <p>This creates a new class-type that has the static information about all instances that were created from that class. Another class now only has to derive from that class and will then gain the ability to count and enumerate its instances.</p>
 <p>Usage is as follows:</p>
-<p>If you have a class <a class="el" href="../../d8/d4f/class_a.html">A</a> that you want to be enumerable, add this to its header:</p>
-<p>class XII_DLL_IMPORT_EXPORT_STUFF <a class="el" href="../../d8/d4f/class_a.html">A</a> : public <a class="el" href="../../dc/d54/classxii_enumerable.html" title="Base class to add the ability to another class to enumerate all active instance of it,...">xiiEnumerable</a> { XII_DECLARE_ENUMERABLE_CLASS(A); // since <a class="el" href="../../d8/d4f/class_a.html">A</a> is declared as DLL import/export all code embedded in its body will also work properly ... };</p>
+<p>If you have a class A that you want to be enumerable, add this to its header:</p>
+<p>class XII_DLL_IMPORT_EXPORT_STUFF A : public <a class="el" href="../../dc/d54/classxii_enumerable.html" title="Base class to add the ability to another class to enumerate all active instance of it,...">xiiEnumerable</a> { XII_DECLARE_ENUMERABLE_CLASS(A); // since A is declared as DLL import/export all code embedded in its body will also work properly ... };</p>
 <p>Also add this somewhere in its source-file:</p>
 <p>XII_ENUMERABLE_CLASS_IMPLEMENTATION(A);</p>
 <p>That's it, now the class instances can be enumerated with 'GetFirstInstance' and 'GetNextInstance' </p>
@@ -147,7 +147,7 @@ class xiiEnumerable&lt; Derived, Base &gt;</div><p>Base class to add the ability
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dc/d54/classxii_enumerable.html">xiiEnumerable</a></li>
-    <li class="footer">Generated on Fri Mar 21 2025 23:41:14 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Sat Mar 22 2025 03:24:48 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 </body>

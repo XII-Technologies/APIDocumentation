@@ -451,7 +451,7 @@ template&lt;typename ResourceType&gt; </div>
   <table class="params">
     <tr><td class="paramname">hResource</td><td>The resource to acquire </td></tr>
     <tr><td class="paramname">mode</td><td>The desired way to acquire the resource. See xiiResourceAcquireMode for details. </td></tr>
-    <tr><td class="paramname">hLoadingFallback</td><td><a class="el" href="../../d8/d4f/class_a.html">A</a> custom fallback resource that should be returned if hResource is not yet available. Allows to use domain specific knowledge to get a better fallback. </td></tr>
+    <tr><td class="paramname">hLoadingFallback</td><td>A custom fallback resource that should be returned if hResource is not yet available. Allows to use domain specific knowledge to get a better fallback. </td></tr>
     <tr><td class="paramname">Priority</td><td>Allows to adjust the priority of the resource. This will affect how fast the resource is loaded, in case it is not yet available. </td></tr>
     <tr><td class="paramname">out_AcquireResult</td><td>Returns how successful the acquisition was. See xiiResourceAcquireResult for details. </td></tr>
   </table>
@@ -552,7 +552,7 @@ template&lt;typename ResourceType, typename DescriptorType&gt; </div>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">szResourceID</td><td>The unique ID by which the resource is identified. E.g. in <a class="el" href="#a6c851ae8ea9489fa0122f262fe75e152" title="Returns a handle to the resource with the given ID. If the resource does not exist,...">GetExistingResource()</a> </td></tr>
-    <tr><td class="paramname">descriptor</td><td><a class="el" href="../../d8/d4f/class_a.html">A</a> type specific descriptor that holds all the information to create the resource. </td></tr>
+    <tr><td class="paramname">descriptor</td><td>A type specific descriptor that holds all the information to create the resource. </td></tr>
     <tr><td class="paramname">szResourceDescription</td><td>An optional description that might help during debugging. Often a human readable name or path is stored here, to make it easier to identify this resource. </td></tr>
   </table>
   </dd>
@@ -656,7 +656,7 @@ template&lt;typename ResourceType, typename DescriptorType&gt; </div>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">szResourceID</td><td>The unique ID by which the resource is identified. E.g. in <a class="el" href="#a6c851ae8ea9489fa0122f262fe75e152" title="Returns a handle to the resource with the given ID. If the resource does not exist,...">GetExistingResource()</a> </td></tr>
-    <tr><td class="paramname">descriptor</td><td><a class="el" href="../../d8/d4f/class_a.html">A</a> type specific descriptor that holds all the information to create the resource. </td></tr>
+    <tr><td class="paramname">descriptor</td><td>A type specific descriptor that holds all the information to create the resource. </td></tr>
     <tr><td class="paramname">szResourceDescription</td><td>An optional description that might help during debugging. Often a human readable name or path is stored here, to make it easier to identify this resource. </td></tr>
   </table>
   </dd>
@@ -871,7 +871,7 @@ E50DCC85-D375-4999-9CFE-42F1377FAC85 }". If the lookup name already exists, it w
 </div><div class="memdoc">
 
 <p>Registers a resource type to be used instead of any of it's base classes, when loading specific data. </p>
-<p>When resource <a class="el" href="../../df/d95/class_b.html">B</a> is derived from <a class="el" href="../../d8/d4f/class_a.html">A</a> it can be registered to be instantiated when loading data, even if the code specifies to use a resource of type <a class="el" href="../../d8/d4f/class_a.html">A</a>. Whenever <a class="el" href="#aaf87c60a105c5b77125fc5954e776841" title="Returns a handle to the requested resource. szResourceID must uniquely identify the resource,...">LoadResource&lt;A&gt;()</a> is executed, the registered callback <em class="arg">OverrideDecider</em> is run to figure out whether <a class="el" href="../../df/d95/class_b.html">B</a> should be instantiated instead. If OverrideDecider returns true, <a class="el" href="../../df/d95/class_b.html">B</a> is used.</p>
+<p>When resource B is derived from A it can be registered to be instantiated when loading data, even if the code specifies to use a resource of type A. Whenever <a class="el" href="#aaf87c60a105c5b77125fc5954e776841" title="Returns a handle to the requested resource. szResourceID must uniquely identify the resource,...">LoadResource&lt;A&gt;()</a> is executed, the registered callback <em class="arg">OverrideDecider</em> is run to figure out whether B should be instantiated instead. If OverrideDecider returns true, B is used.</p>
 <p>OverrideDecider is given the resource ID after it has been resolved by the <a class="el" href="../../d7/d0a/classxii_file_system.html" title="The xiiFileSystem provides high-level functionality to manage files in a virtual file system.">xiiFileSystem</a>. So it has to be able to make its decision from the file path, name or extension. The override is registered for all base classes of <em class="arg">pDerivedTypeToUse</em>, in case the derivation hierarchy is longer.</p>
 <p>Without calling this at startup, a derived resource type has to be manually requested in code. </p>
 
@@ -1104,7 +1104,7 @@ template&lt;typename RESOURCE_TYPE&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d4/d8e/classxii_resource_manager.html">xiiResourceManager</a></li>
-    <li class="footer">Generated on Fri Mar 21 2025 23:41:16 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Sat Mar 22 2025 03:24:50 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 </body>
