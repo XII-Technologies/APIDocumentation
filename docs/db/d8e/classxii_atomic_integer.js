@@ -1,15 +1,15 @@
 var classxii_atomic_integer =
 [
-    [ "xiiAtomicInteger", "db/d8e/classxii_atomic_integer.html#ae503ca5506215aaad6b9ac0cf81e1602", null ],
-    [ "xiiAtomicInteger", "db/d8e/classxii_atomic_integer.html#afc4da0a4e5711eef631518c960d111e8", null ],
-    [ "xiiAtomicInteger", "db/d8e/classxii_atomic_integer.html#accd341a159b9735b35ce2d70371bbaaf", null ],
-    [ "CompareAndSwap", "db/d8e/classxii_atomic_integer.html#af3875b31191872344fbf3f6ee2e85cf0", null ],
-    [ "Decrement", "db/d8e/classxii_atomic_integer.html#aabdf5bd54862c616418be49fb3ae15ad", null ],
-    [ "Increment", "db/d8e/classxii_atomic_integer.html#ac1032efec3c4912df4382e9a6022c2ac", null ],
-    [ "operator=", "db/d8e/classxii_atomic_integer.html#a346c75b9a85811f7c82b228f2631223d", null ],
-    [ "operator=", "db/d8e/classxii_atomic_integer.html#a1be15c1b7933dba213183b8bb33c73f4", null ],
-    [ "PostDecrement", "db/d8e/classxii_atomic_integer.html#ae2446fa177ed8ee5ab2e095d02ae3e5a", null ],
-    [ "PostIncrement", "db/d8e/classxii_atomic_integer.html#ac46b08e464fdf6cb2fba8bafca570390", null ],
-    [ "Set", "db/d8e/classxii_atomic_integer.html#a02dd27ccc6c2157fc1cb8b794a3023c3", null ],
-    [ "TestAndSet", "db/d8e/classxii_atomic_integer.html#ab13c9aa234037950cbfbfacaca0e0168", null ]
+    [ "xiiAtomicInteger", "db/d8e/classxii_atomic_integer.html#aaae815b1ff29941dcdcd327b48544b31", null ],
+    [ "xiiAtomicInteger", "db/d8e/classxii_atomic_integer.html#a6d479a6e75335f5977e591d95abbed3f", null ],
+    [ "xiiAtomicInteger", "db/d8e/classxii_atomic_integer.html#aaaaf29dc420eac4863f32e5cf8c3b331", null ],
+    [ "CompareAndSwap", "db/d8e/classxii_atomic_integer.html#a3cae4b163656a4af5f2e23e33c169c00", null ],
+    [ "Decrement", "db/d8e/classxii_atomic_integer.html#afbbd20b217ecdeb21ffe3589e826291b", null ],
+    [ "Increment", "db/d8e/classxii_atomic_integer.html#a62dcc34d15dcef1e295e2a0e9292b8c3", null ],
+    [ "operator=", "db/d8e/classxii_atomic_integer.html#a66873e9504f89d9b10f91081d3d182c0", null ],
+    [ "operator=", "db/d8e/classxii_atomic_integer.html#a5ab8331a80b55ddef14e791320fda767", null ],
+    [ "PostDecrement", "db/d8e/classxii_atomic_integer.html#a503eaf4056b136f6ea154cf217f28980", null ],
+    [ "PostIncrement", "db/d8e/classxii_atomic_integer.html#a4ed9be03b3ebfdeb07772b70db4541dc", null ],
+    [ "Set", "db/d8e/classxii_atomic_integer.html#a4c091f8af0ad6d0011f8d1c7217325e4", null ],
+    [ "TestAndSet", "db/d8e/classxii_atomic_integer.html#ab981d601c3f44bfc0aa888a812d7dbcc", null ]
 ];

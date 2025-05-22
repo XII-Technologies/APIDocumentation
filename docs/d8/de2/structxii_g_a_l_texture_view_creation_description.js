@@ -4,7 +4,6 @@ var structxii_g_a_l_texture_view_creation_description =
     [ "m_ComponentSwizzle", "d8/de2/structxii_g_a_l_texture_view_creation_description.html#a7d7cb1790d2c74fe1d78e5fec214d76f", null ],
     [ "m_Flags", "d8/de2/structxii_g_a_l_texture_view_creation_description.html#af179d62ed43d8a162c90698f444b2b86", null ],
     [ "m_Format", "d8/de2/structxii_g_a_l_texture_view_creation_description.html#a164978a5d570f7530c5aa23ea42434d6", null ],
-    [ "m_hTexture", "d8/de2/structxii_g_a_l_texture_view_creation_description.html#a1c4f5b7f07c4159d2ae78f16129e44c2", null ],
     [ "m_ResourceDimension", "d8/de2/structxii_g_a_l_texture_view_creation_description.html#a8e9288f796ddcbc2c8dff1335b3bc6d7", null ],
     [ "m_uiArrayOrDepthSlicesCount", "d8/de2/structxii_g_a_l_texture_view_creation_description.html#ae3c05a7f5d8273103339a2f95dde6ae4", null ],
     [ "m_uiFirstArrayOrDepthSlice", "d8/de2/structxii_g_a_l_texture_view_creation_description.html#aa7ecc229c99b2c5ec0157c187a678750", null ],

@@ -145,6 +145,15 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>SortValues</b> ()</td
 <a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetStorageFile</b> () const</td></tr>
 <tr class="memdesc:a6690d6dcd919cbc9b78ce34a77128195"><td class="mdescLeft">&#160;</td><td class="mdescRight">The file where values will be stored. <br /></td></tr>
 <tr class="separator:a6690d6dcd919cbc9b78ce34a77128195"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad92e2d9e26c021e6125fc273268324bb" id="r_ad92e2d9e26c021e6125fc273268324bb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad92e2d9e26c021e6125fc273268324bb">SetEditCommand</a> (<a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sCmd, const <a class="el" href="../../db/d1a/classxii_variant.html">xiiVariant</a> &amp;value)</td></tr>
+<tr class="memdesc:ad92e2d9e26c021e6125fc273268324bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">If specified, the widget shows an "edit" option, which will run xiiActionManager::ExecuteAction(sCmd, value).  <br /></td></tr>
+<tr class="separator:ad92e2d9e26c021e6125fc273268324bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc4322a012fca6a856e37614edb645d9" id="r_acc4322a012fca6a856e37614edb645d9"><td class="memItemLeft" align="right" valign="top"><a id="acc4322a012fca6a856e37614edb645d9" name="acc4322a012fca6a856e37614edb645d9"></a>
+<a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetEditCommand</b> () const</td></tr>
+<tr class="separator:acc4322a012fca6a856e37614edb645d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3238ffea9359b7f3bc204dc190badee" id="r_ac3238ffea9359b7f3bc204dc190badee"><td class="memItemLeft" align="right" valign="top"><a id="ac3238ffea9359b7f3bc204dc190badee" name="ac3238ffea9359b7f3bc204dc190badee"></a>
+const <a class="el" href="../../db/d1a/classxii_variant.html">xiiVariant</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetEditCommandValue</b> () const</td></tr>
+<tr class="separator:ac3238ffea9359b7f3bc204dc190badee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac2b20b228516acc4499c87c7aa6087eb" id="r_ac2b20b228516acc4499c87c7aa6087eb"><td class="memItemLeft" align="right" valign="top"><a id="ac2b20b228516acc4499c87c7aa6087eb" name="ac2b20b228516acc4499c87c7aa6087eb"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>ReadFromStorage</b> ()</td></tr>
 <tr class="separator:ac2b20b228516acc4499c87c7aa6087eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -201,6 +210,30 @@ Static Public Attributes</h2></td></tr>
 
 <p>Returns a <a class="el" href="../../d0/dac/classxii_dynamic_enum.html" title="Stores the valid values and names for &#39;dynamic&#39; enums.">xiiDynamicEnum</a> under the given name. Creates a new one, if the name has not been used before. </p>
 <p>Calls s_RequestUnknownCallback, if the requested enum is not known yet, which will try to load the data. </p>
+
+</div>
+</div>
+<a id="ad92e2d9e26c021e6125fc273268324bb" name="ad92e2d9e26c021e6125fc273268324bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad92e2d9e26c021e6125fc273268324bb">&#9670;&#160;</a></span>SetEditCommand()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void xiiDynamicStringEnum::SetEditCommand </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a></td>          <td class="paramname"><span class="paramname"><em>sCmd</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../db/d1a/classxii_variant.html">xiiVariant</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>value</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>If specified, the widget shows an "edit" option, which will run xiiActionManager::ExecuteAction(sCmd, value). </p>
+<p>This is meant to be used to open existing config dialogs. There is currently no way to report back a selection, so after making changes, the user has to make another selection. </p>
 
 </div>
 </div>
@@ -268,7 +301,7 @@ Static Public Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d7/d13/classxii_dynamic_string_enum.html">xiiDynamicStringEnum</a></li>
-    <li class="footer">Generated on Sat Mar 22 2025 03:24:48 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Thu May 22 2025 22:11:35 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 </body>

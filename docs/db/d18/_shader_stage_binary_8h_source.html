@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.13.2"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>XII: /home/runner/work/XII/XII/Source/Engine/GraphicsCore/Shader/ShaderStageBinary.h Source File</title>
+<title>XII: /home/runner/work/XII/XII/Source/Engine/GraphicsFoundation/ShaderCompiler/ShaderStageBinary.h Source File</title>
 <link rel="icon" href="../../XII-Logo.png" type="image/x-icon" />
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
@@ -103,57 +103,43 @@ $(function(){initNavTree('db/d18/_shader_stage_binary_8h_source.html','../../');
 <div class="contents">
 <div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &lt;GraphicsCore/GraphicsCoreDLL.h&gt;</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &lt;GraphicsFoundation/GraphicsFoundationDLL.h&gt;</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;Foundation/Containers/HashTable.h&gt;</span></div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;Foundation/Containers/Map.h&gt;</span></div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;Foundation/IO/Stream.h&gt;</span></div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &lt;Foundation/Strings/HashedString.h&gt;</span></div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &lt;Foundation/Types/Enum.h&gt;</span></div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;Foundation/Types/SharedPtr.h&gt;</span></div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &lt;GraphicsFoundation/Shader/Shader.h&gt;</span></div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
-<div class="foldopen" id="foldopen00013" data-start="{" data-end="};">
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="../../d1/da4/classxii_shader_stage_binary.html">   13</a></span><span class="keyword">class </span>XII_GRAPHICSCORE_DLL xiiShaderStageBinary</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>{</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>  <span class="keyword">enum</span> Version</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>  {</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    Version0,</div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;Foundation/Containers/Map.h&gt;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;Foundation/Logging/Log.h&gt;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &lt;GraphicsFoundation/Shader/ShaderByteCode.h&gt;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
+<div class="foldopen" id="foldopen00010" data-start="{" data-end="};">
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="../../dc/de5/classxii_g_a_l_shader_stage_binary.html">   10</a></span><span class="keyword">class </span>XII_GRAPHICSFOUNDATION_DLL xiiGALShaderStageBinary</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>{</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>  xiiGALShaderStageBinary();</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>  ~xiiGALShaderStageBinary();</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>  <a class="code hl_class" href="../../d8/d9b/classxii_shared_ptr.html">xiiSharedPtr&lt;const xiiGALShaderByteCode&gt;</a> GetByteCode() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>  <span class="keyword">static</span> xiiGALShaderStageBinary* LoadStageBinary(<a class="code hl_struct" href="../../de/dfd/structxii_enum.html">xiiEnum&lt;xiiGALShaderType&gt;</a> stage, xiiUInt32 uiHash, <a class="code hl_class" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sPlatform);</div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    ENUM_COUNT,</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    VersionCurrent = ENUM_COUNT - 1</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>  };</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>  xiiShaderStageBinary();</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>  ~xiiShaderStageBinary();</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>  <a class="code hl_class" href="../../d8/d9b/classxii_shared_ptr.html">xiiSharedPtr&lt;const xiiGALShaderByteCode&gt;</a> GetByteCode() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>  <span class="keyword">friend</span> <span class="keyword">class </span>xiiRenderContext;</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>  <span class="keyword">friend</span> <span class="keyword">class </span>xiiShaderCompiler;</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>  <span class="keyword">friend</span> <span class="keyword">class </span>xiiShaderPermutationResource;</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>  <span class="keyword">friend</span> <span class="keyword">class </span>xiiShaderPermutationResourceLoader;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>  <span class="keyword">static</span> <span class="keywordtype">void</span> OnEngineStartup();</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>  <span class="keyword">static</span> <span class="keywordtype">void</span> OnEngineShutdown();</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>  <span class="keyword">friend</span> <span class="keyword">class </span>xiiGALShaderCompiler;</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>  <a class="code hl_struct" href="../../dd/dad/structxii_result.html">xiiResult</a> WriteStageBinary(<a class="code hl_class" href="../../d6/d6b/classxii_log_interface.html">xiiLogInterface</a>* pLog, <a class="code hl_class" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sPlatform) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>  <a class="code hl_struct" href="../../dd/dad/structxii_result.html">xiiResult</a> Write(<a class="code hl_class" href="../../d0/d18/classxii_stream_writer.html">xiiStreamWriter</a>&amp; inout_stream) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>  <a class="code hl_struct" href="../../dd/dad/structxii_result.html">xiiResult</a> Read(<a class="code hl_class" href="../../d4/d5e/classxii_stream_reader.html">xiiStreamReader</a>&amp; inout_stream);</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>  <a class="code hl_struct" href="../../dd/dad/structxii_result.html">xiiResult</a> Write(<a class="code hl_class" href="../../d0/d18/classxii_stream_writer.html">xiiStreamWriter</a>&amp; inout_stream, <span class="keyword">const</span> <a class="code hl_class" href="../../dc/da4/classxii_dynamic_array.html">xiiDynamicArray&lt;xiiGALShaderVariableDescription&gt;</a>&amp; layout) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>  <a class="code hl_struct" href="../../dd/dad/structxii_result.html">xiiResult</a> Read(<a class="code hl_class" href="../../d4/d5e/classxii_stream_reader.html">xiiStreamReader</a>&amp; inout_stream, <a class="code hl_class" href="../../dc/da4/classxii_dynamic_array.html">xiiDynamicArray&lt;xiiGALShaderVariableDescription&gt;</a>&amp; out_layout);</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>  xiiUInt32                          m_uiSourceHash = 0U;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>  <a class="code hl_class" href="../../d8/d9b/classxii_shared_ptr.html">xiiSharedPtr&lt;xiiGALShaderByteCode&gt;</a> m_pGALByteCode;</div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>  <a class="code hl_struct" href="../../dd/dad/structxii_result.html">xiiResult</a> WriteStageBinary(<a class="code hl_class" href="../../d6/d6b/classxii_log_interface.html">xiiLogInterface</a>* pLog, <a class="code hl_class" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sPlatform) <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>  <a class="code hl_struct" href="../../dd/dad/structxii_result.html">xiiResult</a> Write(<a class="code hl_class" href="../../d0/d18/classxii_stream_writer.html">xiiStreamWriter</a>&amp; inout_stream) <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>  <a class="code hl_struct" href="../../dd/dad/structxii_result.html">xiiResult</a> Read(<a class="code hl_class" href="../../d4/d5e/classxii_stream_reader.html">xiiStreamReader</a>&amp; inout_stream);</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>  <a class="code hl_struct" href="../../dd/dad/structxii_result.html">xiiResult</a> Write(<a class="code hl_class" href="../../d0/d18/classxii_stream_writer.html">xiiStreamWriter</a>&amp; inout_stream, <span class="keyword">const</span> <a class="code hl_class" href="../../dc/da4/classxii_dynamic_array.html">xiiDynamicArray&lt;xiiGALShaderVariableDescription&gt;</a>&amp; layout) <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>  <a class="code hl_struct" href="../../dd/dad/structxii_result.html">xiiResult</a> Read(<a class="code hl_class" href="../../d4/d5e/classxii_stream_reader.html">xiiStreamReader</a>&amp; inout_stream, <a class="code hl_class" href="../../dc/da4/classxii_dynamic_array.html">xiiDynamicArray&lt;xiiGALShaderVariableDescription&gt;</a>&amp; out_layout);</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>  xiiUInt32                          m_uiSourceHash = 0;</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>  <a class="code hl_class" href="../../d8/d9b/classxii_shared_ptr.html">xiiSharedPtr&lt;xiiGALShaderByteCode&gt;</a> m_pGALByteCode;</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="keyword">private</span>: <span class="comment">// statics</span></div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>  <span class="keyword">static</span> xiiShaderStageBinary* LoadStageBinary(<a class="code hl_enumeration" href="../../d1/dcf/structxii_g_a_l_shader_type.html#aa40e7f7b336f75b920cf5ab9d7f14763">xiiGALShaderType::Enum</a> Stage, xiiUInt32 uiHash, <a class="code hl_class" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sPlatform);</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>  <span class="keyword">static</span> <span class="keywordtype">void</span> OnEngineShutdown();</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>  <span class="keyword">static</span> <a class="code hl_class" href="../../d6/df7/classxii_map.html">xiiMap&lt;xiiUInt32, xiiShaderStageBinary&gt;</a> s_ShaderStageBinaries[xiiGALShaderType::ENUM_COUNT];</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>};</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="keyword">private</span>: <span class="comment">// statics</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>  <span class="keyword">static</span> <a class="code hl_class" href="../../d6/df7/classxii_map.html">xiiMap&lt;xiiUInt32, xiiGALShaderStageBinary, xiiCompareHelper&lt;xiiUInt32&gt;</a>, <a class="code hl_struct" href="../../df/d02/structxii_static_allocator_wrapper.html">xiiStaticAllocatorWrapper</a>&gt; s_ShaderStageBinaries[xiiGALShaderType::ENUM_COUNT];</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>};</div>
 </div>
 <div class="ttc" id="aclassxii_dynamic_array_html"><div class="ttname"><a href="../../dc/da4/classxii_dynamic_array.html">xiiDynamicArray</a></div><div class="ttdef"><b>Definition</b> DynamicArray.h:81</div></div>
 <div class="ttc" id="aclassxii_log_interface_html"><div class="ttname"><a href="../../d6/d6b/classxii_log_interface.html">xiiLogInterface</a></div><div class="ttdoc">Base class for all logging classes.</div><div class="ttdef"><b>Definition</b> Log.h:77</div></div>
@@ -162,15 +148,16 @@ $(function(){initNavTree('db/d18/_shader_stage_binary_8h_source.html','../../');
 <div class="ttc" id="aclassxii_stream_reader_html"><div class="ttname"><a href="../../d4/d5e/classxii_stream_reader.html">xiiStreamReader</a></div><div class="ttdoc">Interface for binary in (read) streams.</div><div class="ttdef"><b>Definition</b> Stream.h:22</div></div>
 <div class="ttc" id="aclassxii_stream_writer_html"><div class="ttname"><a href="../../d0/d18/classxii_stream_writer.html">xiiStreamWriter</a></div><div class="ttdoc">Interface for binary out (write) streams.</div><div class="ttdef"><b>Definition</b> Stream.h:107</div></div>
 <div class="ttc" id="aclassxii_string_view_html"><div class="ttname"><a href="../../d4/d85/classxii_string_view.html">xiiStringView</a></div><div class="ttdoc">xiiStringView represent a read-only sub-string of a larger string, as it can store a dedicated string...</div><div class="ttdef"><b>Definition</b> StringView.h:34</div></div>
-<div class="ttc" id="astructxii_g_a_l_shader_type_html_aa40e7f7b336f75b920cf5ab9d7f14763"><div class="ttname"><a href="../../d1/dcf/structxii_g_a_l_shader_type.html#aa40e7f7b336f75b920cf5ab9d7f14763">xiiGALShaderType::Enum</a></div><div class="ttdeci">Enum</div><div class="ttdef"><b>Definition</b> GraphicsTypes.h:183</div></div>
-<div class="ttc" id="astructxii_result_html"><div class="ttname"><a href="../../dd/dad/structxii_result.html">xiiResult</a></div><div class="ttdoc">Default enum for returning failure or success, instead of using a bool.</div><div class="ttdef"><b>Definition</b> Types.h:56</div></div>
+<div class="ttc" id="astructxii_enum_html"><div class="ttname"><a href="../../de/dfd/structxii_enum.html">xiiEnum</a></div><div class="ttdoc">A custom enum implementation that allows to define the underlying storage type to control its memory ...</div><div class="ttdef"><b>Definition</b> Enum.h:37</div></div>
+<div class="ttc" id="astructxii_result_html"><div class="ttname"><a href="../../dd/dad/structxii_result.html">xiiResult</a></div><div class="ttdoc">Default enum for returning failure or success, instead of using a bool.</div><div class="ttdef"><b>Definition</b> Types.h:58</div></div>
+<div class="ttc" id="astructxii_static_allocator_wrapper_html"><div class="ttname"><a href="../../df/d02/structxii_static_allocator_wrapper.html">xiiStaticAllocatorWrapper</a></div><div class="ttdef"><b>Definition</b> AllocatorWrapper.h:18</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.html">home</a></li><li class="navelem"><a class="el" href="../../dir_1036706e55c22cab35bc1c58ee689f1d.html">runner</a></li><li class="navelem"><a class="el" href="../../dir_629f8151d55d307162ff2d619fb1783d.html">work</a></li><li class="navelem"><a class="el" href="../../dir_1ddc44fe1263a8c7935fa6130b7d9499.html">XII</a></li><li class="navelem"><a class="el" href="../../dir_2c1b6808f12952f4c36e05ba7068379a.html">XII</a></li><li class="navelem"><a class="el" href="../../dir_b5a1c4ecfca018ad24b729e213296d41.html">Source</a></li><li class="navelem"><a class="el" href="../../dir_e321052006a51284e67389ab20037e7c.html">Engine</a></li><li class="navelem"><a class="el" href="../../dir_d1b456933e20132afd1d01c7da962f40.html">GraphicsCore</a></li><li class="navelem"><a class="el" href="../../dir_f216dd74c0d784fd92a8799e495c1447.html">Shader</a></li><li class="navelem"><b>ShaderStageBinary.h</b></li>
-    <li class="footer">Generated on Sat Mar 22 2025 03:24:46 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="navelem"><a class="el" href="../../dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.html">home</a></li><li class="navelem"><a class="el" href="../../dir_1036706e55c22cab35bc1c58ee689f1d.html">runner</a></li><li class="navelem"><a class="el" href="../../dir_629f8151d55d307162ff2d619fb1783d.html">work</a></li><li class="navelem"><a class="el" href="../../dir_1ddc44fe1263a8c7935fa6130b7d9499.html">XII</a></li><li class="navelem"><a class="el" href="../../dir_2c1b6808f12952f4c36e05ba7068379a.html">XII</a></li><li class="navelem"><a class="el" href="../../dir_b5a1c4ecfca018ad24b729e213296d41.html">Source</a></li><li class="navelem"><a class="el" href="../../dir_e321052006a51284e67389ab20037e7c.html">Engine</a></li><li class="navelem"><a class="el" href="../../dir_60f548c54f5a79fe3a3b3b88ff8146f5.html">GraphicsFoundation</a></li><li class="navelem"><a class="el" href="../../dir_0c5cfabbe25ea153e84a130260c33f5e.html">ShaderCompiler</a></li><li class="navelem"><b>ShaderStageBinary.h</b></li>
+    <li class="footer">Generated on Thu May 22 2025 22:11:33 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 </body>

@@ -105,36 +105,39 @@ $(function(){initNavTree('d7/d5b/_device_object_8h_source.html','../../'); initR
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &lt;GraphicsFoundation/GraphicsFoundationDLL.h&gt;</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;GraphicsFoundation/Declarations/Object.h&gt;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;GraphicsFoundation/Device/Device.h&gt;</span></div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span></div>
 <div class="foldopen" id="foldopen00008" data-start="{" data-end="};">
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno"><a class="line" href="../../d5/d12/classxii_g_a_l_device_object.html">    8</a></span><span class="keyword">class </span>XII_GRAPHICSFOUNDATION_DLL xiiGALDeviceObject : <span class="keyword">public</span> <a class="code hl_class" href="../../d3/dda/classxii_g_a_l_object.html">xiiGALObject</a></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno"><a class="line" href="../../d5/d12/classxii_g_a_l_device_object.html">    8</a></span><span class="keyword">class </span>XII_GRAPHICSFOUNDATION_DLL xiiGALDeviceObject : <span class="keyword">public</span> xiiGALObject</div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>{</div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>  XII_ADD_DYNAMIC_REFLECTION(xiiGALDeviceObject, <a class="code hl_class" href="../../d3/dda/classxii_g_a_l_object.html">xiiGALObject</a>);</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>  XII_ADD_DYNAMIC_REFLECTION(xiiGALDeviceObject, xiiGALObject);</div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="../../d5/d12/classxii_g_a_l_device_object.html#a3d8d11d00bda24e47458354124ffa77d">   16</a></span>  [[nodiscard]] XII_ALWAYS_INLINE xiiGALDevice* <a class="code hl_function" href="../../d5/d12/classxii_g_a_l_device_object.html#a3d8d11d00bda24e47458354124ffa77d">GetDevice</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_pDevice; };</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="../../d5/d12/classxii_g_a_l_device_object.html#a715bdc16bd4aebd13496561cdefd7323">   16</a></span>  [[nodiscard]] XII_ALWAYS_INLINE <a class="code hl_class" href="../../d8/d9b/classxii_shared_ptr.html">xiiSharedPtr&lt;xiiGALDevice&gt;</a> <a class="code hl_function" href="../../d5/d12/classxii_g_a_l_device_object.html#a715bdc16bd4aebd13496561cdefd7323">GetDevice</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_pDevice; };</div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="keyword">protected</span>:</div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>  <span class="keyword">friend</span> <span class="keyword">class </span><a class="code hl_class" href="../../d5/d19/classxii_g_a_l_device.html">xiiGALDevice</a>;</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>  <a class="code hl_class" href="../../d5/d12/classxii_g_a_l_device_object.html">xiiGALDeviceObject</a>(<a class="code hl_class" href="../../d5/d19/classxii_g_a_l_device.html">xiiGALDevice</a>* pDevice);</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="keyword">protected</span>:</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>  <a class="code hl_class" href="../../d5/d19/classxii_g_a_l_device.html">xiiGALDevice</a>* m_pDevice;</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>};</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>  <span class="keyword">friend</span> <span class="keyword">class </span><a class="code hl_class" href="../../d8/d9d/classxii_memory_utils.html">xiiMemoryUtils</a>;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>  <a class="code hl_class" href="../../d5/d12/classxii_g_a_l_device_object.html">xiiGALDeviceObject</a>(<a class="code hl_class" href="../../d8/d9b/classxii_shared_ptr.html">xiiSharedPtr&lt;xiiGALDevice&gt;</a> pDevice);</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>  <span class="keyword">virtual</span> <a class="code hl_class" href="../../d5/d12/classxii_g_a_l_device_object.html">~xiiGALDeviceObject</a>();</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="keyword">protected</span>:</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>  <a class="code hl_class" href="../../d8/d9b/classxii_shared_ptr.html">xiiSharedPtr&lt;xiiGALDevice&gt;</a> m_pDevice;</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>};</div>
 </div>
-<div class="ttc" id="aclassxii_g_a_l_device_html"><div class="ttname"><a href="../../d5/d19/classxii_g_a_l_device.html">xiiGALDevice</a></div><div class="ttdoc">The xiiRenderDevice class is the primary interface for interactions with rendering APIs....</div><div class="ttdef"><b>Definition</b> Device.h:16</div></div>
+<div class="ttc" id="aclassxii_g_a_l_device_html"><div class="ttname"><a href="../../d5/d19/classxii_g_a_l_device.html">xiiGALDevice</a></div><div class="ttdoc">The xiiGALDevice class is the primary interface for interactions with rendering APIs....</div><div class="ttdef"><b>Definition</b> Device.h:13</div></div>
 <div class="ttc" id="aclassxii_g_a_l_device_object_html"><div class="ttname"><a href="../../d5/d12/classxii_g_a_l_device_object.html">xiiGALDeviceObject</a></div><div class="ttdoc">Base Graphics Abstraction Layer Object.</div><div class="ttdef"><b>Definition</b> DeviceObject.h:9</div></div>
-<div class="ttc" id="aclassxii_g_a_l_device_object_html_a3d8d11d00bda24e47458354124ffa77d"><div class="ttname"><a href="../../d5/d12/classxii_g_a_l_device_object.html#a3d8d11d00bda24e47458354124ffa77d">xiiGALDeviceObject::GetDevice</a></div><div class="ttdeci">XII_ALWAYS_INLINE xiiGALDevice * GetDevice() const</div><div class="ttdoc">Returns the xiiGALDevice that created this resource.</div><div class="ttdef"><b>Definition</b> DeviceObject.h:16</div></div>
-<div class="ttc" id="aclassxii_g_a_l_object_html"><div class="ttname"><a href="../../d3/dda/classxii_g_a_l_object.html">xiiGALObject</a></div><div class="ttdoc">Base Graphics Abstraction Layer Object.</div><div class="ttdef"><b>Definition</b> Object.h:7</div></div>
+<div class="ttc" id="aclassxii_g_a_l_device_object_html_a715bdc16bd4aebd13496561cdefd7323"><div class="ttname"><a href="../../d5/d12/classxii_g_a_l_device_object.html#a715bdc16bd4aebd13496561cdefd7323">xiiGALDeviceObject::GetDevice</a></div><div class="ttdeci">XII_ALWAYS_INLINE xiiSharedPtr&lt; xiiGALDevice &gt; GetDevice() const</div><div class="ttdoc">Returns the xiiGALDevice that created this resource.</div><div class="ttdef"><b>Definition</b> DeviceObject.h:16</div></div>
+<div class="ttc" id="aclassxii_memory_utils_html"><div class="ttname"><a href="../../d8/d9d/classxii_memory_utils.html">xiiMemoryUtils</a></div><div class="ttdoc">This class provides functions to work on raw memory.</div><div class="ttdef"><b>Definition</b> MemoryUtils.h:26</div></div>
+<div class="ttc" id="aclassxii_shared_ptr_html"><div class="ttname"><a href="../../d8/d9b/classxii_shared_ptr.html">xiiSharedPtr</a></div><div class="ttdoc">A Shared ptr manages a shared object and destroys that object when no one references it anymore....</div><div class="ttdef"><b>Definition</b> SharedPtr.h:10</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.html">home</a></li><li class="navelem"><a class="el" href="../../dir_1036706e55c22cab35bc1c58ee689f1d.html">runner</a></li><li class="navelem"><a class="el" href="../../dir_629f8151d55d307162ff2d619fb1783d.html">work</a></li><li class="navelem"><a class="el" href="../../dir_1ddc44fe1263a8c7935fa6130b7d9499.html">XII</a></li><li class="navelem"><a class="el" href="../../dir_2c1b6808f12952f4c36e05ba7068379a.html">XII</a></li><li class="navelem"><a class="el" href="../../dir_b5a1c4ecfca018ad24b729e213296d41.html">Source</a></li><li class="navelem"><a class="el" href="../../dir_e321052006a51284e67389ab20037e7c.html">Engine</a></li><li class="navelem"><a class="el" href="../../dir_60f548c54f5a79fe3a3b3b88ff8146f5.html">GraphicsFoundation</a></li><li class="navelem"><a class="el" href="../../dir_d484e5b9d8e6c65d026f18a4e5dc4db3.html">Declarations</a></li><li class="navelem"><b>DeviceObject.h</b></li>
-    <li class="footer">Generated on Sat Mar 22 2025 03:24:46 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Thu May 22 2025 22:11:33 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 </body>

@@ -5,7 +5,7 @@ var searchData=
   ['s_5fballowrestorewindowlayout_2',['s_bAllowRestoreWindowLayout',['../d8/dd2/classxii_qt_document_window.html#aa4d6b8ae30fdd345ae0390534a777c0a',1,'xiiQtDocumentWindow']]],
   ['s_5fbforcefullqualityalways_3',['s_bForceFullQualityAlways',['../d3/d08/structxii_texture_utils.html#af4834c2f3cc0cd4f73c5a08ea4a7949f',1,'xiiTextureUtils']]],
   ['s_5fchangeevents_4',['s_ChangeEvents',['../d4/d9f/structxii_cpp_project.html#ab8954551ced4ffbf6211cb254bb4aa33',1,'xiiCppProject']]],
-  ['s_5fevents_5',['s_Events',['../da/d7f/classxii_g_a_l_swap_chain_d3_d11.html#a177ca4cf5c9c8b9e557fee07721b1e44',1,'xiiGALSwapChainD3D11::s_Events'],['../d5/d19/classxii_g_a_l_device.html#af589762978f8dd4853746b5e35963345',1,'xiiGALDevice::s_Events']]],
+  ['s_5fevents_5',['s_Events',['../d5/d19/classxii_g_a_l_device.html#af589762978f8dd4853746b5e35963345',1,'xiiGALDevice']]],
   ['s_5ffindcomponenttypecallback_6',['s_FindComponentTypeCallback',['../df/df8/classxii_world_reader.html#aa195b8556fd30fc2da1ca59652beceff',1,'xiiWorldReader']]],
   ['s_5ffindexnormalizer_7',['s_fIndexNormalizer',['../db/d75/classxii_color_scheme.html#ad0c316ce551708ce64ba26ff2c8e0db9',1,'xiiColorScheme']]],
   ['s_5ffixedresolution_8',['s_FixedResolution',['../d3/d93/classxii_qt_engine_view_widget.html#a6099e8d656c1f154084148e9bfba24e4',1,'xiiQtEngineViewWidget']]],

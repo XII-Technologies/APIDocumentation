@@ -104,12 +104,23 @@ $(function(){initNavTree('d8/d01/classxii_anim_pose_generator.html','../../'); i
   <div class="headertitle"><div class="title">xiiAnimPoseGenerator Class Reference<span class="mlabels"><span class="mlabel final">final</span></span></div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Low-level infrastructure to generate animation poses from animation clips and other inputs.  
+ <a href="#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="../../d6/d04/_anim_pose_generator_8h_source.html">AnimPoseGenerator.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a9fe8f39098e751e42cfc08b2634c766f" id="r_a9fe8f39098e751e42cfc08b2634c766f"><td class="memItemLeft" align="right" valign="top"><a id="a9fe8f39098e751e42cfc08b2634c766f" name="a9fe8f39098e751e42cfc08b2634c766f"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>Reset</b> (const <a class="el" href="../../d6/da3/classxii_skeleton_resource.html">xiiSkeletonResource</a> *pSkeleton)</td></tr>
-<tr class="separator:a9fe8f39098e751e42cfc08b2634c766f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a92f76f913bd959c72db6dde7b46da0" id="r_a0a92f76f913bd959c72db6dde7b46da0"><td class="memItemLeft" align="right" valign="top"><a id="a0a92f76f913bd959c72db6dde7b46da0" name="a0a92f76f913bd959c72db6dde7b46da0"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Reset</b> (const <a class="el" href="../../d6/da3/classxii_skeleton_resource.html">xiiSkeletonResource</a> *pSkeleton, <a class="el" href="../../d0/d91/classxii_game_object.html">xiiGameObject</a> *pTarget)</td></tr>
+<tr class="separator:a0a92f76f913bd959c72db6dde7b46da0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12bb7aca7940859960e08b5e4e0bf99c" id="r_a12bb7aca7940859960e08b5e4e0bf99c"><td class="memItemLeft" align="right" valign="top"><a id="a12bb7aca7940859960e08b5e4e0bf99c" name="a12bb7aca7940859960e08b5e4e0bf99c"></a>
+const <a class="el" href="../../d6/da3/classxii_skeleton_resource.html">xiiSkeletonResource</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetSkeleton</b> () const</td></tr>
+<tr class="separator:a12bb7aca7940859960e08b5e4e0bf99c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41f251dafb3cccdf9cb44dc5f96e5b60" id="r_a41f251dafb3cccdf9cb44dc5f96e5b60"><td class="memItemLeft" align="right" valign="top"><a id="a41f251dafb3cccdf9cb44dc5f96e5b60" name="a41f251dafb3cccdf9cb44dc5f96e5b60"></a>
+const <a class="el" href="../../d0/d91/classxii_game_object.html">xiiGameObject</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetTargetObject</b> () const</td></tr>
+<tr class="separator:a41f251dafb3cccdf9cb44dc5f96e5b60"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a53414512dddf69bd30af8ce6b4774a22" id="r_a53414512dddf69bd30af8ce6b4774a22"><td class="memItemLeft" align="right" valign="top"><a id="a53414512dddf69bd30af8ce6b4774a22" name="a53414512dddf69bd30af8ce6b4774a22"></a>
 <a class="el" href="../../da/d76/structxii_anim_pose_generator_command_sample_track.html">xiiAnimPoseGeneratorCommandSampleTrack</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>AllocCommandSampleTrack</b> (xiiUInt32 uiDeterministicID)</td></tr>
 <tr class="separator:a53414512dddf69bd30af8ce6b4774a22"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -122,23 +133,38 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>Reset</b> (const <a c
 <tr class="memitem:a2083c929093ec0fb55442271826875a0" id="r_a2083c929093ec0fb55442271826875a0"><td class="memItemLeft" align="right" valign="top"><a id="a2083c929093ec0fb55442271826875a0" name="a2083c929093ec0fb55442271826875a0"></a>
 <a class="el" href="../../d9/d66/structxii_anim_pose_generator_command_local_to_model_pose.html">xiiAnimPoseGeneratorCommandLocalToModelPose</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>AllocCommandLocalToModelPose</b> ()</td></tr>
 <tr class="separator:a2083c929093ec0fb55442271826875a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a738e703a8f774f08a22b1a53eaf19617" id="r_a738e703a8f774f08a22b1a53eaf19617"><td class="memItemLeft" align="right" valign="top"><a id="a738e703a8f774f08a22b1a53eaf19617" name="a738e703a8f774f08a22b1a53eaf19617"></a>
-<a class="el" href="../../d4/d98/structxii_anim_pose_generator_command_model_pose_to_output.html">xiiAnimPoseGeneratorCommandModelPoseToOutput</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>AllocCommandModelPoseToOutput</b> ()</td></tr>
-<tr class="separator:a738e703a8f774f08a22b1a53eaf19617"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa3bae1db73069f58282d490160912a54" id="r_aa3bae1db73069f58282d490160912a54"><td class="memItemLeft" align="right" valign="top"><a id="aa3bae1db73069f58282d490160912a54" name="aa3bae1db73069f58282d490160912a54"></a>
 <a class="el" href="../../d0/d97/structxii_anim_pose_generator_command_sample_event_track.html">xiiAnimPoseGeneratorCommandSampleEventTrack</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>AllocCommandSampleEventTrack</b> ()</td></tr>
 <tr class="separator:aa3bae1db73069f58282d490160912a54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9aea5e28670cfb1577918113c0214a0b" id="r_a9aea5e28670cfb1577918113c0214a0b"><td class="memItemLeft" align="right" valign="top"><a id="a9aea5e28670cfb1577918113c0214a0b" name="a9aea5e28670cfb1577918113c0214a0b"></a>
+<a class="el" href="../../d2/d96/structxii_anim_pose_generator_command_aim_i_k.html">xiiAnimPoseGeneratorCommandAimIK</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>AllocCommandAimIK</b> ()</td></tr>
+<tr class="separator:a9aea5e28670cfb1577918113c0214a0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa020a051d2bae1627aadf7507a7ce3f6" id="r_aa020a051d2bae1627aadf7507a7ce3f6"><td class="memItemLeft" align="right" valign="top"><a id="aa020a051d2bae1627aadf7507a7ce3f6" name="aa020a051d2bae1627aadf7507a7ce3f6"></a>
+<a class="el" href="../../db/d66/structxii_anim_pose_generator_command_two_bone_i_k.html">xiiAnimPoseGeneratorCommandTwoBoneIK</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>AllocCommandTwoBoneIK</b> ()</td></tr>
+<tr class="separator:aa020a051d2bae1627aadf7507a7ce3f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae8c8ba00122db4b876b6121cf14a3f91" id="r_ae8c8ba00122db4b876b6121cf14a3f91"><td class="memItemLeft" align="right" valign="top"><a id="ae8c8ba00122db4b876b6121cf14a3f91" name="ae8c8ba00122db4b876b6121cf14a3f91"></a>
 const <a class="el" href="../../d7/d05/structxii_anim_pose_generator_command.html">xiiAnimPoseGeneratorCommand</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetCommand</b> (xiiAnimPoseGeneratorCommandID id) const</td></tr>
 <tr class="separator:ae8c8ba00122db4b876b6121cf14a3f91"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a76285279513535638074f3d523866e23" id="r_a76285279513535638074f3d523866e23"><td class="memItemLeft" align="right" valign="top"><a id="a76285279513535638074f3d523866e23" name="a76285279513535638074f3d523866e23"></a>
 <a class="el" href="../../d7/d05/structxii_anim_pose_generator_command.html">xiiAnimPoseGeneratorCommand</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetCommand</b> (xiiAnimPoseGeneratorCommandID id)</td></tr>
 <tr class="separator:a76285279513535638074f3d523866e23"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a005d385382acb1f03efb07864e708231" id="r_a005d385382acb1f03efb07864e708231"><td class="memItemLeft" align="right" valign="top"><a id="a005d385382acb1f03efb07864e708231" name="a005d385382acb1f03efb07864e708231"></a>
-<a class="el" href="../../d0/d60/classxii_array_ptr.html">xiiArrayPtr</a>&lt; <a class="el" href="../../d1/dec/classxii_mat4_template.html">xiiMat4</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GeneratePose</b> (const <a class="el" href="../../d0/d91/classxii_game_object.html">xiiGameObject</a> *pSendAnimationEventsTo)</td></tr>
-<tr class="separator:a005d385382acb1f03efb07864e708231"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4673fbb7a742bd9f814445dc0368371e" id="r_a4673fbb7a742bd9f814445dc0368371e"><td class="memItemLeft" align="right" valign="top"><a id="a4673fbb7a742bd9f814445dc0368371e" name="a4673fbb7a742bd9f814445dc0368371e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>UpdatePose</b> (bool bRequestExternalPoseGeneration)</td></tr>
+<tr class="separator:a4673fbb7a742bd9f814445dc0368371e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac455367845684e95a9a2d07d18e21792" id="r_ac455367845684e95a9a2d07d18e21792"><td class="memItemLeft" align="right" valign="top"><a id="ac455367845684e95a9a2d07d18e21792" name="ac455367845684e95a9a2d07d18e21792"></a>
+<a class="el" href="../../d0/d60/classxii_array_ptr.html">xiiArrayPtr</a>&lt; <a class="el" href="../../d1/dec/classxii_mat4_template.html">xiiMat4</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetCurrentPose</b> () const</td></tr>
+<tr class="separator:ac455367845684e95a9a2d07d18e21792"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6069e31e426388a97885ceb626f34b44" id="r_a6069e31e426388a97885ceb626f34b44"><td class="memItemLeft" align="right" valign="top"><a id="a6069e31e426388a97885ceb626f34b44" name="a6069e31e426388a97885ceb626f34b44"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetFinalCommand</b> (xiiAnimPoseGeneratorCommandID cmdId)</td></tr>
+<tr class="separator:a6069e31e426388a97885ceb626f34b44"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8b10709c52f4e25f6b7f8b5510cb7d4" id="r_ae8b10709c52f4e25f6b7f8b5510cb7d4"><td class="memItemLeft" align="right" valign="top"><a id="ae8b10709c52f4e25f6b7f8b5510cb7d4" name="ae8b10709c52f4e25f6b7f8b5510cb7d4"></a>
+xiiAnimPoseGeneratorCommandID&#160;</td><td class="memItemRight" valign="bottom"><b>GetFinalCommand</b> () const</td></tr>
+<tr class="separator:ae8b10709c52f4e25f6b7f8b5510cb7d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<hr/>The documentation for this class was generated from the following files:<ul>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Low-level infrastructure to generate animation poses from animation clips and other inputs. </p>
+<p>Even though instances of this class should be reused over frames, it is assumed that all commands are recreated every frame, to build a new pose. Some commands take predecessor commands as inputs to combine. If a command turns out not be actually needed, it won't be evaluated. </p>
+</div><hr/>The documentation for this class was generated from the following files:<ul>
 <li>/home/runner/work/XII/XII/Source/Engine/GraphicsCore/AnimationSystem/<a class="el" href="../../d6/d04/_anim_pose_generator_8h_source.html">AnimPoseGenerator.h</a></li>
 <li>/home/runner/work/XII/XII/Source/Engine/GraphicsCore/AnimationSystem/Implementation/<b>AnimPoseGenerator.cpp</b></li>
 </ul>
@@ -148,7 +174,7 @@ const <a class="el" href="../../d7/d05/structxii_anim_pose_generator_command.htm
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d8/d01/classxii_anim_pose_generator.html">xiiAnimPoseGenerator</a></li>
-    <li class="footer">Generated on Sat Mar 22 2025 03:24:47 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Thu May 22 2025 22:11:34 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 </body>

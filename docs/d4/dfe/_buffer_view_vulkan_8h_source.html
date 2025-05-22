@@ -122,36 +122,35 @@ $(function(){initNavTree('d4/dfe/_buffer_view_vulkan_8h_source.html','../../'); 
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>  XII_ALWAYS_INLINE <span class="keyword">const</span> vk::DescriptorBufferInfo* GetVulkanDescriptorBufferInfo()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> &amp;m_vkDescriptorBufferInfo; }</div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="keyword">protected</span>:</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>  <span class="keyword">friend</span> <span class="keyword">class </span>xiiGALDeviceVulkan;</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>  <span class="keyword">friend</span> <span class="keyword">class </span>xiiMemoryUtils;</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>  xiiGALBufferViewVulkan(xiiGALDeviceVulkan* pDeviceVulkan, <a class="code hl_class" href="../../da/d03/classxii_g_a_l_buffer.html">xiiGALBuffer</a>* pBuffer, <span class="keyword">const</span> <a class="code hl_struct" href="../../d3/d47/structxii_g_a_l_buffer_view_creation_description.html">xiiGALBufferViewCreationDescription</a>&amp; creationDescription);</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>  <span class="keyword">virtual</span> ~xiiGALBufferViewVulkan();</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>  <span class="keyword">virtual</span> <a class="code hl_struct" href="../../dd/dad/structxii_result.html">xiiResult</a> InitPlatform() <span class="keyword">override</span> <span class="keyword">final</span>;</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>  <span class="keyword">virtual</span> <a class="code hl_struct" href="../../dd/dad/structxii_result.html">xiiResult</a> DeInitPlatform() <span class="keyword">override</span> <span class="keyword">final</span>;</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>  <span class="keyword">virtual</span> <span class="keywordtype">void</span> SetDebugNamePlatform(<a class="code hl_class" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sName) <span class="keyword">override</span> <span class="keyword">final</span>;</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>  vk::BufferView m_vkBufferView;</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>  vk::DescriptorBufferInfo m_vkDescriptorBufferInfo = {};</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>};</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>  <span class="keyword">friend</span> <span class="keyword">class </span>xiiMemoryUtils;</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>  <span class="keyword">friend</span> <span class="keyword">class </span>xiiGALDeviceVulkan;</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>  <span class="keyword">friend</span> <span class="keyword">class </span>xiiGALBufferVulkan;</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>  xiiGALBufferViewVulkan(<a class="code hl_class" href="../../d8/d9b/classxii_shared_ptr.html">xiiSharedPtr&lt;xiiGALDeviceVulkan&gt;</a> pDeviceVulkan, <a class="code hl_class" href="../../d8/d9b/classxii_shared_ptr.html">xiiSharedPtr&lt;xiiGALBuffer&gt;</a> pBuffer, <span class="keyword">const</span> <a class="code hl_struct" href="../../d3/d47/structxii_g_a_l_buffer_view_creation_description.html">xiiGALBufferViewCreationDescription</a>&amp; creationDescription);</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>  <span class="keyword">virtual</span> ~xiiGALBufferViewVulkan();</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>  <span class="keyword">virtual</span> <a class="code hl_struct" href="../../dd/dad/structxii_result.html">xiiResult</a> InitPlatform() <span class="keyword">override</span> <span class="keyword">final</span>;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>  <span class="keyword">virtual</span> <span class="keywordtype">void</span> SetDebugNamePlatform(<a class="code hl_class" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sName) <span class="keyword">override</span> <span class="keyword">final</span>;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>  vk::BufferView m_vkBufferView;</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>  vk::DescriptorBufferInfo m_vkDescriptorBufferInfo = {};</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>};</div>
 </div>
-<div class="ttc" id="aclassxii_g_a_l_buffer_html"><div class="ttname"><a href="../../da/d03/classxii_g_a_l_buffer.html">xiiGALBuffer</a></div><div class="ttdoc">Interface that defines methods to manipulate a buffer object.</div><div class="ttdef"><b>Definition</b> Buffer.h:92</div></div>
+<div class="ttc" id="aclassxii_shared_ptr_html"><div class="ttname"><a href="../../d8/d9b/classxii_shared_ptr.html">xiiSharedPtr</a></div><div class="ttdoc">A Shared ptr manages a shared object and destroys that object when no one references it anymore....</div><div class="ttdef"><b>Definition</b> SharedPtr.h:10</div></div>
 <div class="ttc" id="aclassxii_string_view_html"><div class="ttname"><a href="../../d4/d85/classxii_string_view.html">xiiStringView</a></div><div class="ttdoc">xiiStringView represent a read-only sub-string of a larger string, as it can store a dedicated string...</div><div class="ttdef"><b>Definition</b> StringView.h:34</div></div>
 <div class="ttc" id="astructxii_g_a_l_buffer_view_creation_description_html"><div class="ttname"><a href="../../d3/d47/structxii_g_a_l_buffer_view_creation_description.html">xiiGALBufferViewCreationDescription</a></div><div class="ttdoc">This describes the buffer view creation description.</div><div class="ttdef"><b>Definition</b> BufferView.h:9</div></div>
-<div class="ttc" id="astructxii_result_html"><div class="ttname"><a href="../../dd/dad/structxii_result.html">xiiResult</a></div><div class="ttdoc">Default enum for returning failure or success, instead of using a bool.</div><div class="ttdef"><b>Definition</b> Types.h:56</div></div>
+<div class="ttc" id="astructxii_result_html"><div class="ttname"><a href="../../dd/dad/structxii_result.html">xiiResult</a></div><div class="ttdoc">Default enum for returning failure or success, instead of using a bool.</div><div class="ttdef"><b>Definition</b> Types.h:58</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.html">home</a></li><li class="navelem"><a class="el" href="../../dir_1036706e55c22cab35bc1c58ee689f1d.html">runner</a></li><li class="navelem"><a class="el" href="../../dir_629f8151d55d307162ff2d619fb1783d.html">work</a></li><li class="navelem"><a class="el" href="../../dir_1ddc44fe1263a8c7935fa6130b7d9499.html">XII</a></li><li class="navelem"><a class="el" href="../../dir_2c1b6808f12952f4c36e05ba7068379a.html">XII</a></li><li class="navelem"><a class="el" href="../../dir_b5a1c4ecfca018ad24b729e213296d41.html">Source</a></li><li class="navelem"><a class="el" href="../../dir_e321052006a51284e67389ab20037e7c.html">Engine</a></li><li class="navelem"><a class="el" href="../../dir_32f911672529289aa73bbec1c1630508.html">GraphicsVulkan</a></li><li class="navelem"><a class="el" href="../../dir_4635b70c9add0e64929b318366bb7e72.html">Resources</a></li><li class="navelem"><b>BufferViewVulkan.h</b></li>
-    <li class="footer">Generated on Sat Mar 22 2025 03:24:46 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Thu May 22 2025 22:11:33 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 </body>

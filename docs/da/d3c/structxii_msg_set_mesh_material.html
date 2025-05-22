@@ -105,6 +105,11 @@ $(function(){initNavTree('da/d3c/structxii_msg_set_mesh_material.html','../../')
   <div class="headertitle"><div class="title">xiiMsgSetMeshMaterial Struct Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>This message is used to replace the material on a mesh.  
+ <a href="#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="../../d1/d6b/_mesh_component_base_8h_source.html">MeshComponentBase.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for xiiMsgSetMeshMaterial:</div>
 <div class="dyncontent">
@@ -117,7 +122,7 @@ Public Member Functions</h2></td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><b>XII_DECLARE_MESSAGE_TYPE</b> (<a class="el" href="../../da/d3c/structxii_msg_set_mesh_material.html">xiiMsgSetMeshMaterial</a>, <a class="el" href="../../d9/d55/classxii_message.html">xiiMessage</a>)</td></tr>
 <tr class="separator:aea8c8f1e20eaf6489891840dd81db8f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae03a72380aa65c3a34064a5940dda4ae" id="r_ae03a72380aa65c3a34064a5940dda4ae"><td class="memItemLeft" align="right" valign="top"><a id="ae03a72380aa65c3a34064a5940dda4ae" name="ae03a72380aa65c3a34064a5940dda4ae"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>XII_ADD_RESOURCEHANDLE_ACCESSORS</b> (Material, m_hMaterial)</td></tr>
+&#160;</td><td class="memItemRight" valign="bottom"><b>XII_ADD_RESOURCEHANDLE_ACCESSORS</b> (Material, <a class="el" href="#aba4586a099d920bf9da3a58c5108e395">m_hMaterial</a>)</td></tr>
 <tr class="separator:ae03a72380aa65c3a34064a5940dda4ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ade6a3594c1febd6ab5b5c7970596e515" id="r_ade6a3594c1febd6ab5b5c7970596e515"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ade6a3594c1febd6ab5b5c7970596e515">Serialize</a> (<a class="el" href="../../d0/d18/classxii_stream_writer.html">xiiStreamWriter</a> &amp;inout_stream) const override</td></tr>
 <tr class="memdesc:ade6a3594c1febd6ab5b5c7970596e515"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implement this for efficient transmission across process boundaries (e.g. network transfer etc.)  <br /></td></tr>
@@ -159,9 +164,11 @@ template&lt;typename T&gt; </td></tr>
 Public Attributes</h2></td></tr>
 <tr class="memitem:aba4586a099d920bf9da3a58c5108e395" id="r_aba4586a099d920bf9da3a58c5108e395"><td class="memItemLeft" align="right" valign="top"><a id="aba4586a099d920bf9da3a58c5108e395" name="aba4586a099d920bf9da3a58c5108e395"></a>
 <a class="el" href="../../d6/d16/classxii_typed_resource_handle.html">xiiMaterialResourceHandle</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_hMaterial</b></td></tr>
+<tr class="memdesc:aba4586a099d920bf9da3a58c5108e395"><td class="mdescLeft">&#160;</td><td class="mdescRight">The material to be used. <br /></td></tr>
 <tr class="separator:aba4586a099d920bf9da3a58c5108e395"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a38c6b73d56445477c6676e4cadd08dda" id="r_a38c6b73d56445477c6676e4cadd08dda"><td class="memItemLeft" align="right" valign="top"><a id="a38c6b73d56445477c6676e4cadd08dda" name="a38c6b73d56445477c6676e4cadd08dda"></a>
-xiiUInt32&#160;</td><td class="memItemRight" valign="bottom"><b>m_uiMaterialSlot</b> = 0xFFFFFFFFU</td></tr>
+xiiUInt32&#160;</td><td class="memItemRight" valign="bottom"><b>m_uiMaterialSlot</b> = 0</td></tr>
+<tr class="memdesc:a38c6b73d56445477c6676e4cadd08dda"><td class="mdescLeft">&#160;</td><td class="mdescRight">The slot on the mesh component where the material should be set. <br /></td></tr>
 <tr class="separator:a38c6b73d56445477c6676e4cadd08dda"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
@@ -197,7 +204,9 @@ xiiUInt16&#160;</td><td class="memItemRight" valign="bottom"><b>m_uiSize</b></td
 static xiiMessageId&#160;</td><td class="memItemRight" valign="bottom"><b>s_NextMsgId</b> = 0</td></tr>
 <tr class="separator:a4f8ba4f4a21b414c456ed2a1e835ddd0 inherit pro_static_attribs_classxii_message"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>This message is used to replace the material on a mesh. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="ad6ea44897a3ea1ba55776f39b35abebb" name="ad6ea44897a3ea1ba55776f39b35abebb"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad6ea44897a3ea1ba55776f39b35abebb">&#9670;&#160;</a></span>Deserialize()</h2>
 
@@ -271,7 +280,7 @@ static xiiMessageId&#160;</td><td class="memItemRight" valign="bottom"><b>s_Next
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../da/d3c/structxii_msg_set_mesh_material.html">xiiMsgSetMeshMaterial</a></li>
-    <li class="footer">Generated on Sat Mar 22 2025 03:24:49 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Thu May 22 2025 22:11:36 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 </body>

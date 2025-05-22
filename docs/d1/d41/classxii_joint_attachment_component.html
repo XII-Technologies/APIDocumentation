@@ -107,6 +107,11 @@ $(function(){initNavTree('d1/d41/classxii_joint_attachment_component.html','../.
   <div class="headertitle"><div class="title">xiiJointAttachmentComponent Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Used to expose an animated mesh's bone as a game object, such that objects can be attached to it to move along.  
+ <a href="#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="../../dd/dee/_joint_attachment_component_8h_source.html">JointAttachmentComponent.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for xiiJointAttachmentComponent:</div>
 <div class="dyncontent">
@@ -123,6 +128,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a0a4267fb730bb86e5af3bd0bc398266f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abc6923259386eac763212db29d439b5c" id="r_abc6923259386eac763212db29d439b5c"><td class="memItemLeft" align="right" valign="top"><a id="abc6923259386eac763212db29d439b5c" name="abc6923259386eac763212db29d439b5c"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetJointName</b> (const char *szName)</td></tr>
+<tr class="memdesc:abc6923259386eac763212db29d439b5c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the bone name whose transform should be copied into this game object. <br /></td></tr>
 <tr class="separator:abc6923259386eac763212db29d439b5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0501481592d47d44062bb9000ee9ed02" id="r_a0501481592d47d44062bb9000ee9ed02"><td class="memItemLeft" align="right" valign="top"><a id="a0501481592d47d44062bb9000ee9ed02" name="a0501481592d47d44062bb9000ee9ed02"></a>
 const char *&#160;</td><td class="memItemRight" valign="bottom"><b>GetJointName</b> () const</td></tr>
@@ -235,9 +241,11 @@ template&lt;typename T&gt; </td></tr>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a0e552369035bd4abac9aec817ec76f1d" id="r_a0e552369035bd4abac9aec817ec76f1d"><td class="memItemLeft" align="right" valign="top"><a id="a0e552369035bd4abac9aec817ec76f1d" name="a0e552369035bd4abac9aec817ec76f1d"></a>
 <a class="el" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_vLocalPositionOffset</b> = <a class="el" href="../../d9/d9a/classxii_vec3_template.html#a37d09e3acbca40bd816cf99a6b8e1489">xiiVec3::MakeZero</a>()</td></tr>
+<tr class="memdesc:a0e552369035bd4abac9aec817ec76f1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">An additional local offset to be added to the transform. <br /></td></tr>
 <tr class="separator:a0e552369035bd4abac9aec817ec76f1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a80b4153fd29e5c1d8b34d62d3f3042f1" id="r_a80b4153fd29e5c1d8b34d62d3f3042f1"><td class="memItemLeft" align="right" valign="top"><a id="a80b4153fd29e5c1d8b34d62d3f3042f1" name="a80b4153fd29e5c1d8b34d62d3f3042f1"></a>
 <a class="el" href="../../d9/d1b/classxii_quat_template.html">xiiQuat</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_vLocalRotationOffset</b> = <a class="el" href="../../d9/d1b/classxii_quat_template.html#a45c67720a172302b4e216ad10f0869b5">xiiQuat::MakeIdentity</a>()</td></tr>
+<tr class="memdesc:a80b4153fd29e5c1d8b34d62d3f3042f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">An additional local offset to be added to the transform. <br /></td></tr>
 <tr class="separator:a80b4153fd29e5c1d8b34d62d3f3042f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
@@ -316,7 +324,11 @@ Additional Inherited Members</h2></td></tr>
 static const <a class="el" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetStaticRTTI</b> ()</td></tr>
 <tr class="separator:a4bde433b55ebd55edf63c57239799bba inherit pub_static_methods_classxii_no_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Used to expose an animated mesh's bone as a game object, such that objects can be attached to it to move along. </p>
+<p>The animation system deals with bone animations internally. Sometimes it is desirable to move certain objects along with a bone, for example when a character should hold something in their hand.</p>
+<p>This component references a bone by name, and takes care to position the owner object at the same location as the bone whenever the animation pose changes. Thus it is possible to attach other objects as child objects to this one, so that they move along as well. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a0a4267fb730bb86e5af3bd0bc398266f" name="a0a4267fb730bb86e5af3bd0bc398266f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0a4267fb730bb86e5af3bd0bc398266f">&#9670;&#160;</a></span>DeserializeComponent()</h2>
 
@@ -386,7 +398,7 @@ static const <a class="el" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d1/d41/classxii_joint_attachment_component.html">xiiJointAttachmentComponent</a></li>
-    <li class="footer">Generated on Sat Mar 22 2025 03:24:49 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Thu May 22 2025 22:11:36 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 </body>

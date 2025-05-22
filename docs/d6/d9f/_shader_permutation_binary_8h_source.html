@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.13.2"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>XII: /home/runner/work/XII/XII/Source/Engine/GraphicsCore/Shader/ShaderPermutationBinary.h Source File</title>
+<title>XII: /home/runner/work/XII/XII/Source/Engine/GraphicsFoundation/ShaderCompiler/ShaderPermutationBinary.h Source File</title>
 <link rel="icon" href="../../XII-Logo.png" type="image/x-icon" />
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
@@ -101,21 +101,21 @@ $(function(){initNavTree('d6/d9f/_shader_permutation_binary_8h_source.html','../
   <div class="headertitle"><div class="title">ShaderPermutationBinary.h</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
+<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#include &lt;GraphicsFoundation/GraphicsFoundationDLL.h&gt;</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &lt;Foundation/IO/DependencyFile.h&gt;</span></div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;GraphicsCore/Declarations.h&gt;</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;GraphicsCore/Shader/ShaderStageBinary.h&gt;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;GraphicsFoundation/ShaderCompiler/Descriptors.h&gt;</span></div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;GraphicsFoundation/States/BlendState.h&gt;</span></div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;GraphicsFoundation/States/DepthStencilState.h&gt;</span></div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &lt;GraphicsFoundation/States/RasterizerState.h&gt;</span></div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
 <div class="foldopen" id="foldopen00010" data-start="{" data-end="};">
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="../../d8/d00/structxii_shader_state_resource_descriptor.html">   10</a></span><span class="keyword">struct </span>XII_GRAPHICSCORE_DLL <a class="code hl_struct" href="../../d8/d00/structxii_shader_state_resource_descriptor.html">xiiShaderStateResourceDescriptor</a></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="../../d6/d1b/structxii_g_a_l_shader_state_resource_descriptor.html">   10</a></span><span class="keyword">struct </span>XII_GRAPHICSFOUNDATION_DLL <a class="code hl_struct" href="../../d6/d1b/structxii_g_a_l_shader_state_resource_descriptor.html">xiiGALShaderStateResourceDescriptor</a></div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>{</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>  <a class="code hl_struct" href="../../d6/dd7/structxii_g_a_l_blend_state_creation_description.html">xiiGALBlendStateCreationDescription</a>        m_BlendDesc;</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>  <a class="code hl_struct" href="../../d8/d3c/structxii_g_a_l_depth_stencil_state_creation_description.html">xiiGALDepthStencilStateCreationDescription</a> m_DepthStencilDesc;</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>  <a class="code hl_struct" href="../../d2/d58/structxii_g_a_l_rasterizer_state_creation_description.html">xiiGALRasterizerStateCreationDescription</a>   m_RasterizerDesc;</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>  <a class="code hl_struct" href="../../d6/dd7/structxii_g_a_l_blend_state_creation_description.html">xiiGALBlendStateCreationDescription</a>        m_BlendDescription;</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>  <a class="code hl_struct" href="../../d8/d3c/structxii_g_a_l_depth_stencil_state_creation_description.html">xiiGALDepthStencilStateCreationDescription</a> m_DepthStencilDescription;</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>  <a class="code hl_struct" href="../../d2/d58/structxii_g_a_l_rasterizer_state_creation_description.html">xiiGALRasterizerStateCreationDescription</a>   m_RasterizerDescription;</div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>  <a class="code hl_struct" href="../../dd/dad/structxii_result.html">xiiResult</a> Parse(<a class="code hl_class" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sSource);</div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>  <span class="keywordtype">void</span>      Load(<a class="code hl_class" href="../../d4/d5e/classxii_stream_reader.html">xiiStreamReader</a>&amp; inout_stream);</div>
@@ -126,41 +126,42 @@ $(function(){initNavTree('d6/d9f/_shader_permutation_binary_8h_source.html','../
 </div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span></div>
 <div class="foldopen" id="foldopen00024" data-start="{" data-end="};">
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="../../de/de2/classxii_shader_permutation_binary.html">   24</a></span><span class="keyword">class </span>XII_GRAPHICSCORE_DLL xiiShaderPermutationBinary</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="../../df/d07/classxii_g_a_l_shader_permutation_binary.html">   24</a></span><span class="keyword">class </span>XII_GRAPHICSFOUNDATION_DLL xiiGALShaderPermutationBinary</div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>{</div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>  xiiShaderPermutationBinary();</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>  xiiGALShaderPermutationBinary();</div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>  <a class="code hl_struct" href="../../dd/dad/structxii_result.html">xiiResult</a> Write(<a class="code hl_class" href="../../d0/d18/classxii_stream_writer.html">xiiStreamWriter</a>&amp; inout_stream);</div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>  <a class="code hl_struct" href="../../dd/dad/structxii_result.html">xiiResult</a> Read(<a class="code hl_class" href="../../d4/d5e/classxii_stream_reader.html">xiiStreamReader</a>&amp; inout_stream, <span class="keywordtype">bool</span>&amp; out_bOldVersion);</div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>  <span class="comment">// Actual binary will be loaded from the hash via xiiShaderStageBinary::LoadStageBinary to produce xiiShaderStageBinary</span></div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>  xiiUInt32 m_uiShaderStageHashes[xiiGALShaderType::ENUM_COUNT];</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>  <span class="comment">// Actual binary will be loaded from the hash.</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>  <a class="code hl_class" href="../../d6/df7/classxii_map.html">xiiMap&lt;xiiGALShaderType::Enum, xiiUInt32&gt;</a> m_ShaderStageHashes;</div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>  <a class="code hl_class" href="../../d8/d7c/classxii_dependency_file.html">xiiDependencyFile</a> m_DependencyFile;</div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>  <a class="code hl_struct" href="../../d8/d00/structxii_shader_state_resource_descriptor.html">xiiShaderStateResourceDescriptor</a> m_StateDescriptor;</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>  <a class="code hl_struct" href="../../d6/d1b/structxii_g_a_l_shader_state_resource_descriptor.html">xiiGALShaderStateResourceDescriptor</a> m_StateDescriptor;</div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>  <a class="code hl_class" href="../../dc/da9/classxii_hybrid_array.html">xiiHybridArray&lt;xiiPermutationVar, 16&gt;</a> m_PermutationVars;</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>  <a class="code hl_class" href="../../dc/da9/classxii_hybrid_array.html">xiiHybridArray&lt;xiiGALPermutationVariable, 16&gt;</a> m_PermutationVariables;</div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>};</div>
 </div>
 <div class="ttc" id="aclassxii_dependency_file_html"><div class="ttname"><a href="../../d8/d7c/classxii_dependency_file.html">xiiDependencyFile</a></div><div class="ttdoc">This class represents a set of files of which one wants to know when any one of them changes.</div><div class="ttdef"><b>Definition</b> DependencyFile.h:15</div></div>
 <div class="ttc" id="aclassxii_hybrid_array_html"><div class="ttname"><a href="../../dc/da9/classxii_hybrid_array.html">xiiHybridArray</a></div><div class="ttdoc">A hybrid array uses in-place storage to handle the first few elements without any allocation....</div><div class="ttdef"><b>Definition</b> HybridArray.h:12</div></div>
+<div class="ttc" id="aclassxii_map_html"><div class="ttname"><a href="../../d6/df7/classxii_map.html">xiiMap</a></div><div class="ttdef"><b>Definition</b> Map.h:401</div></div>
 <div class="ttc" id="aclassxii_stream_reader_html"><div class="ttname"><a href="../../d4/d5e/classxii_stream_reader.html">xiiStreamReader</a></div><div class="ttdoc">Interface for binary in (read) streams.</div><div class="ttdef"><b>Definition</b> Stream.h:22</div></div>
 <div class="ttc" id="aclassxii_stream_writer_html"><div class="ttname"><a href="../../d0/d18/classxii_stream_writer.html">xiiStreamWriter</a></div><div class="ttdoc">Interface for binary out (write) streams.</div><div class="ttdef"><b>Definition</b> Stream.h:107</div></div>
 <div class="ttc" id="aclassxii_string_view_html"><div class="ttname"><a href="../../d4/d85/classxii_string_view.html">xiiStringView</a></div><div class="ttdoc">xiiStringView represent a read-only sub-string of a larger string, as it can store a dedicated string...</div><div class="ttdef"><b>Definition</b> StringView.h:34</div></div>
 <div class="ttc" id="astructxii_g_a_l_blend_state_creation_description_html"><div class="ttname"><a href="../../d6/dd7/structxii_g_a_l_blend_state_creation_description.html">xiiGALBlendStateCreationDescription</a></div><div class="ttdoc">This describes the blend state for all render targets in the graphics pipeline.</div><div class="ttdef"><b>Definition</b> BlendState.h:166</div></div>
 <div class="ttc" id="astructxii_g_a_l_depth_stencil_state_creation_description_html"><div class="ttname"><a href="../../d8/d3c/structxii_g_a_l_depth_stencil_state_creation_description.html">xiiGALDepthStencilStateCreationDescription</a></div><div class="ttdoc">This describes the depth stencil state creation description.</div><div class="ttdef"><b>Definition</b> DepthStencilState.h:59</div></div>
 <div class="ttc" id="astructxii_g_a_l_rasterizer_state_creation_description_html"><div class="ttname"><a href="../../d2/d58/structxii_g_a_l_rasterizer_state_creation_description.html">xiiGALRasterizerStateCreationDescription</a></div><div class="ttdoc">This describes the rasterizer state creation description.</div><div class="ttdef"><b>Definition</b> RasterizerState.h:58</div></div>
-<div class="ttc" id="astructxii_result_html"><div class="ttname"><a href="../../dd/dad/structxii_result.html">xiiResult</a></div><div class="ttdoc">Default enum for returning failure or success, instead of using a bool.</div><div class="ttdef"><b>Definition</b> Types.h:56</div></div>
-<div class="ttc" id="astructxii_shader_state_resource_descriptor_html"><div class="ttname"><a href="../../d8/d00/structxii_shader_state_resource_descriptor.html">xiiShaderStateResourceDescriptor</a></div><div class="ttdef"><b>Definition</b> ShaderPermutationBinary.h:11</div></div>
+<div class="ttc" id="astructxii_g_a_l_shader_state_resource_descriptor_html"><div class="ttname"><a href="../../d6/d1b/structxii_g_a_l_shader_state_resource_descriptor.html">xiiGALShaderStateResourceDescriptor</a></div><div class="ttdef"><b>Definition</b> ShaderPermutationBinary.h:11</div></div>
+<div class="ttc" id="astructxii_result_html"><div class="ttname"><a href="../../dd/dad/structxii_result.html">xiiResult</a></div><div class="ttdoc">Default enum for returning failure or success, instead of using a bool.</div><div class="ttdef"><b>Definition</b> Types.h:58</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.html">home</a></li><li class="navelem"><a class="el" href="../../dir_1036706e55c22cab35bc1c58ee689f1d.html">runner</a></li><li class="navelem"><a class="el" href="../../dir_629f8151d55d307162ff2d619fb1783d.html">work</a></li><li class="navelem"><a class="el" href="../../dir_1ddc44fe1263a8c7935fa6130b7d9499.html">XII</a></li><li class="navelem"><a class="el" href="../../dir_2c1b6808f12952f4c36e05ba7068379a.html">XII</a></li><li class="navelem"><a class="el" href="../../dir_b5a1c4ecfca018ad24b729e213296d41.html">Source</a></li><li class="navelem"><a class="el" href="../../dir_e321052006a51284e67389ab20037e7c.html">Engine</a></li><li class="navelem"><a class="el" href="../../dir_d1b456933e20132afd1d01c7da962f40.html">GraphicsCore</a></li><li class="navelem"><a class="el" href="../../dir_f216dd74c0d784fd92a8799e495c1447.html">Shader</a></li><li class="navelem"><b>ShaderPermutationBinary.h</b></li>
-    <li class="footer">Generated on Sat Mar 22 2025 03:24:46 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="navelem"><a class="el" href="../../dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.html">home</a></li><li class="navelem"><a class="el" href="../../dir_1036706e55c22cab35bc1c58ee689f1d.html">runner</a></li><li class="navelem"><a class="el" href="../../dir_629f8151d55d307162ff2d619fb1783d.html">work</a></li><li class="navelem"><a class="el" href="../../dir_1ddc44fe1263a8c7935fa6130b7d9499.html">XII</a></li><li class="navelem"><a class="el" href="../../dir_2c1b6808f12952f4c36e05ba7068379a.html">XII</a></li><li class="navelem"><a class="el" href="../../dir_b5a1c4ecfca018ad24b729e213296d41.html">Source</a></li><li class="navelem"><a class="el" href="../../dir_e321052006a51284e67389ab20037e7c.html">Engine</a></li><li class="navelem"><a class="el" href="../../dir_60f548c54f5a79fe3a3b3b88ff8146f5.html">GraphicsFoundation</a></li><li class="navelem"><a class="el" href="../../dir_0c5cfabbe25ea153e84a130260c33f5e.html">ShaderCompiler</a></li><li class="navelem"><b>ShaderPermutationBinary.h</b></li>
+    <li class="footer">Generated on Thu May 22 2025 22:11:33 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 </body>

@@ -107,6 +107,11 @@ $(function(){initNavTree('d3/db5/classxii_joint_override_component.html','../../
   <div class="headertitle"><div class="title">xiiJointOverrideComponent Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Overrides the local transform of a bone in a skeletal animation.  
+ <a href="#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="../../df/d7b/_joint_override_component_8h_source.html">JointOverrideComponent.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for xiiJointOverrideComponent:</div>
 <div class="dyncontent">
@@ -123,6 +128,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ab3bdd40580618863a62fc76c41bbf889"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1ae608871d5993a801d781a4166f9fab" id="r_a1ae608871d5993a801d781a4166f9fab"><td class="memItemLeft" align="right" valign="top"><a id="a1ae608871d5993a801d781a4166f9fab" name="a1ae608871d5993a801d781a4166f9fab"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetJointName</b> (const char *szName)</td></tr>
+<tr class="memdesc:a1ae608871d5993a801d781a4166f9fab"><td class="mdescLeft">&#160;</td><td class="mdescRight">The name of the bone whose transform should be replaced with the transform of this game object. <br /></td></tr>
 <tr class="separator:a1ae608871d5993a801d781a4166f9fab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7591771633e0416b5ae11a2be5e39565" id="r_a7591771633e0416b5ae11a2be5e39565"><td class="memItemLeft" align="right" valign="top"><a id="a7591771633e0416b5ae11a2be5e39565" name="a7591771633e0416b5ae11a2be5e39565"></a>
 const char *&#160;</td><td class="memItemRight" valign="bottom"><b>GetJointName</b> () const</td></tr>
@@ -235,12 +241,15 @@ template&lt;typename T&gt; </td></tr>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a1d4bb6becbd626d98bbe5e21aed7e973" id="r_a1d4bb6becbd626d98bbe5e21aed7e973"><td class="memItemLeft" align="right" valign="top"><a id="a1d4bb6becbd626d98bbe5e21aed7e973" name="a1d4bb6becbd626d98bbe5e21aed7e973"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_bOverridePosition</b> = false</td></tr>
+<tr class="memdesc:a1d4bb6becbd626d98bbe5e21aed7e973"><td class="mdescLeft">&#160;</td><td class="mdescRight">If true, the position of the bone will be overridden. <br /></td></tr>
 <tr class="separator:a1d4bb6becbd626d98bbe5e21aed7e973"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab8a31333dc9b63d3f945ec9df60fb843" id="r_ab8a31333dc9b63d3f945ec9df60fb843"><td class="memItemLeft" align="right" valign="top"><a id="ab8a31333dc9b63d3f945ec9df60fb843" name="ab8a31333dc9b63d3f945ec9df60fb843"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_bOverrideRotation</b> = true</td></tr>
+<tr class="memdesc:ab8a31333dc9b63d3f945ec9df60fb843"><td class="mdescLeft">&#160;</td><td class="mdescRight">If true, the rotation of the bone will be overridden. <br /></td></tr>
 <tr class="separator:ab8a31333dc9b63d3f945ec9df60fb843"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4b5d852c7381572444121ec29e42342e" id="r_a4b5d852c7381572444121ec29e42342e"><td class="memItemLeft" align="right" valign="top"><a id="a4b5d852c7381572444121ec29e42342e" name="a4b5d852c7381572444121ec29e42342e"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_bOverrideScale</b> = false</td></tr>
+<tr class="memdesc:a4b5d852c7381572444121ec29e42342e"><td class="mdescLeft">&#160;</td><td class="mdescRight">If true, the scale of the bone will be overridden. <br /></td></tr>
 <tr class="separator:a4b5d852c7381572444121ec29e42342e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
@@ -319,7 +328,12 @@ Additional Inherited Members</h2></td></tr>
 static const <a class="el" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetStaticRTTI</b> ()</td></tr>
 <tr class="separator:a4bde433b55ebd55edf63c57239799bba inherit pub_static_methods_classxii_no_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Overrides the local transform of a bone in a skeletal animation. </p>
+<p>Every time a new animation pose is prepared, this component replaces the transform of the chosen bone to be the same as the local transform of the owner game object.</p>
+<p>That allows you to do a simple kind of forward kinematics. For example it can be used to modify a targeting bone, so that an animated object points into the right direction.</p>
+<p>The global transform of the game object is irrelevant, but the local transform is used to copy over. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="ab3bdd40580618863a62fc76c41bbf889" name="ab3bdd40580618863a62fc76c41bbf889"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab3bdd40580618863a62fc76c41bbf889">&#9670;&#160;</a></span>DeserializeComponent()</h2>
 
@@ -389,7 +403,7 @@ static const <a class="el" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d3/db5/classxii_joint_override_component.html">xiiJointOverrideComponent</a></li>
-    <li class="footer">Generated on Sat Mar 22 2025 03:24:49 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Thu May 22 2025 22:11:36 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 </body>

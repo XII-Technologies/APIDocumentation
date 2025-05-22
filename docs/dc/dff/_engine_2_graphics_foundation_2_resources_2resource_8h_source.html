@@ -138,41 +138,47 @@ $(function(){initNavTree('dc/dff/_engine_2_graphics_foundation_2_resources_2reso
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="keyword">protected</span>:</div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>  <span class="keyword">friend</span> <span class="keyword">class </span><a class="code hl_class" href="../../d5/d19/classxii_g_a_l_device.html">xiiGALDevice</a>;</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>  <a class="code hl_class" href="../../d4/d2d/classxii_g_a_l_resource.html">xiiGALResource</a>(<a class="code hl_class" href="../../d5/d19/classxii_g_a_l_device.html">xiiGALDevice</a>* pDevice);</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>  <a class="code hl_struct" href="../../d7/d55/structxii_bitflags.html">xiiBitflags&lt;xiiGALResourceStateFlags&gt;</a> m_ResourceState;</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>};</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>  <span class="keyword">friend</span> <span class="keyword">class </span><a class="code hl_class" href="../../d8/d9d/classxii_memory_utils.html">xiiMemoryUtils</a>;</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>  <a class="code hl_class" href="../../d4/d2d/classxii_g_a_l_resource.html">xiiGALResource</a>(<a class="code hl_class" href="../../d8/d9b/classxii_shared_ptr.html">xiiSharedPtr&lt;xiiGALDevice&gt;</a> pDevice);</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>  <span class="keyword">virtual</span> <a class="code hl_class" href="../../d4/d2d/classxii_g_a_l_resource.html">~xiiGALResource</a>();</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>  <a class="code hl_struct" href="../../d7/d55/structxii_bitflags.html">xiiBitflags&lt;xiiGALResourceStateFlags&gt;</a> m_ResourceState;</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>};</div>
 </div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span></div>
-<div class="foldopen" id="foldopen00049" data-start="{" data-end="};">
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="../../dc/d10/classxii_g_a_l_resource_view.html">   49</a></span><span class="keyword">class </span>XII_GRAPHICSFOUNDATION_DLL xiiGALResourceView : <span class="keyword">public</span> xiiGALDeviceObject</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>{</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>  XII_ADD_DYNAMIC_REFLECTION(xiiGALResourceView, xiiGALDeviceObject);</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="keyword">protected</span>:</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>  <span class="keyword">friend</span> <span class="keyword">class </span>xiiGALDevice;</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>  xiiGALResourceView(xiiGALDevice* pDevice);</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>};</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span></div>
+<div class="foldopen" id="foldopen00051" data-start="{" data-end="};">
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="../../dc/d10/classxii_g_a_l_resource_view.html">   51</a></span><span class="keyword">class </span>XII_GRAPHICSFOUNDATION_DLL xiiGALResourceView : <span class="keyword">public</span> xiiGALDeviceObject</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>{</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>  XII_ADD_DYNAMIC_REFLECTION(xiiGALResourceView, xiiGALDeviceObject);</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="keyword">protected</span>:</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>  <span class="keyword">friend</span> <span class="keyword">class </span>xiiGALDevice;</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>  <span class="keyword">friend</span> <span class="keyword">class </span>xiiMemoryUtils;</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>  xiiGALResourceView(<a class="code hl_class" href="../../d8/d9b/classxii_shared_ptr.html">xiiSharedPtr&lt;xiiGALDevice&gt;</a> pDevice);</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>  <span class="keyword">virtual</span> ~xiiGALResourceView();</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>};</div>
 </div>
-<div class="ttc" id="aclassxii_g_a_l_device_html"><div class="ttname"><a href="../../d5/d19/classxii_g_a_l_device.html">xiiGALDevice</a></div><div class="ttdoc">The xiiRenderDevice class is the primary interface for interactions with rendering APIs....</div><div class="ttdef"><b>Definition</b> Device.h:16</div></div>
+<div class="ttc" id="aclassxii_g_a_l_device_html"><div class="ttname"><a href="../../d5/d19/classxii_g_a_l_device.html">xiiGALDevice</a></div><div class="ttdoc">The xiiGALDevice class is the primary interface for interactions with rendering APIs....</div><div class="ttdef"><b>Definition</b> Device.h:13</div></div>
 <div class="ttc" id="aclassxii_g_a_l_resource_html"><div class="ttname"><a href="../../d4/d2d/classxii_g_a_l_resource.html">xiiGALResource</a></div><div class="ttdoc">Base class for all GAL resources (textures, buffers, etc).</div><div class="ttdef"><b>Definition</b> Resource.h:10</div></div>
 <div class="ttc" id="aclassxii_g_a_l_resource_html_a0b8968fab076fbb97f6725c072abb594"><div class="ttname"><a href="../../d4/d2d/classxii_g_a_l_resource.html#a0b8968fab076fbb97f6725c072abb594">xiiGALResource::GetResourceState</a></div><div class="ttdeci">virtual XII_ALWAYS_INLINE xiiBitflags&lt; xiiGALResourceStateFlags &gt; GetResourceState() const</div><div class="ttdoc">This returns the buffer state.</div><div class="ttdef"><b>Definition</b> Resource.h:21</div></div>
 <div class="ttc" id="aclassxii_g_a_l_resource_html_a0db68325fe3b07c7064c6fc4cc07ce61"><div class="ttname"><a href="../../d4/d2d/classxii_g_a_l_resource.html#a0db68325fe3b07c7064c6fc4cc07ce61">xiiGALResource::IsInKnownState</a></div><div class="ttdeci">XII_ALWAYS_INLINE bool IsInKnownState() const</div><div class="ttdoc">This returns true if the resource is in known state by the engine.</div><div class="ttdef"><b>Definition</b> Resource.h:24</div></div>
 <div class="ttc" id="aclassxii_g_a_l_resource_html_a6c20f1b6750f5cdcf4530d47b2117256"><div class="ttname"><a href="../../d4/d2d/classxii_g_a_l_resource.html#a6c20f1b6750f5cdcf4530d47b2117256">xiiGALResource::SetResourceState</a></div><div class="ttdeci">virtual void SetResourceState(xiiBitflags&lt; xiiGALResourceStateFlags &gt; stateFlags)</div><div class="ttdoc">This sets the buffer usage state.</div><div class="ttdef"><b>Definition</b> Resource.h:18</div></div>
 <div class="ttc" id="aclassxii_g_a_l_resource_html_ac30ee727caa2ce6b3bdc69df386f62b5"><div class="ttname"><a href="../../d4/d2d/classxii_g_a_l_resource.html#ac30ee727caa2ce6b3bdc69df386f62b5">xiiGALResource::CheckAnyState</a></div><div class="ttdeci">XII_ALWAYS_INLINE bool CheckAnyState(xiiBitflags&lt; xiiGALResourceStateFlags &gt; resourceState) const</div><div class="ttdoc">This returns true if any of the given resource state are set.</div><div class="ttdef"><b>Definition</b> Resource.h:34</div></div>
 <div class="ttc" id="aclassxii_g_a_l_resource_html_af815e72a2c5336c13ae88bf2f5a8843c"><div class="ttname"><a href="../../d4/d2d/classxii_g_a_l_resource.html#af815e72a2c5336c13ae88bf2f5a8843c">xiiGALResource::CheckState</a></div><div class="ttdeci">XII_ALWAYS_INLINE bool CheckState(xiiGALResourceStateFlags::Enum resourceState) const</div><div class="ttdoc">This returns true if the given resource state is set.</div><div class="ttdef"><b>Definition</b> Resource.h:27</div></div>
+<div class="ttc" id="aclassxii_memory_utils_html"><div class="ttname"><a href="../../d8/d9d/classxii_memory_utils.html">xiiMemoryUtils</a></div><div class="ttdoc">This class provides functions to work on raw memory.</div><div class="ttdef"><b>Definition</b> MemoryUtils.h:26</div></div>
+<div class="ttc" id="aclassxii_shared_ptr_html"><div class="ttname"><a href="../../d8/d9b/classxii_shared_ptr.html">xiiSharedPtr</a></div><div class="ttdoc">A Shared ptr manages a shared object and destroys that object when no one references it anymore....</div><div class="ttdef"><b>Definition</b> SharedPtr.h:10</div></div>
 <div class="ttc" id="astructxii_bitflags_html"><div class="ttname"><a href="../../d7/d55/structxii_bitflags.html">xiiBitflags</a></div><div class="ttdoc">The xiiBitflags class allows you to work with type-safe bitflags.</div><div class="ttdef"><b>Definition</b> Bitflags.h:82</div></div>
-<div class="ttc" id="astructxii_g_a_l_resource_state_flags_html_a4863cdfd85d00744a4db3689c58b5e84"><div class="ttname"><a href="../../d6/dec/structxii_g_a_l_resource_state_flags.html#a4863cdfd85d00744a4db3689c58b5e84">xiiGALResourceStateFlags::Enum</a></div><div class="ttdeci">Enum</div><div class="ttdef"><b>Definition</b> GraphicsTypes.h:1718</div></div>
-<div class="ttc" id="astructxii_g_a_l_resource_state_flags_html_a4863cdfd85d00744a4db3689c58b5e84a3fe51028e788643e7b21c52cd9bf8c1b"><div class="ttname"><a href="../../d6/dec/structxii_g_a_l_resource_state_flags.html#a4863cdfd85d00744a4db3689c58b5e84a3fe51028e788643e7b21c52cd9bf8c1b">xiiGALResourceStateFlags::Unknown</a></div><div class="ttdeci">@ Unknown</div><div class="ttdoc">The resource state is not known directly.</div><div class="ttdef"><b>Definition</b> GraphicsTypes.h:1719</div></div>
+<div class="ttc" id="astructxii_g_a_l_resource_state_flags_html_a4863cdfd85d00744a4db3689c58b5e84"><div class="ttname"><a href="../../d6/dec/structxii_g_a_l_resource_state_flags.html#a4863cdfd85d00744a4db3689c58b5e84">xiiGALResourceStateFlags::Enum</a></div><div class="ttdeci">Enum</div><div class="ttdef"><b>Definition</b> GraphicsTypes.h:1760</div></div>
+<div class="ttc" id="astructxii_g_a_l_resource_state_flags_html_a4863cdfd85d00744a4db3689c58b5e84a3fe51028e788643e7b21c52cd9bf8c1b"><div class="ttname"><a href="../../d6/dec/structxii_g_a_l_resource_state_flags.html#a4863cdfd85d00744a4db3689c58b5e84a3fe51028e788643e7b21c52cd9bf8c1b">xiiGALResourceStateFlags::Unknown</a></div><div class="ttdeci">@ Unknown</div><div class="ttdoc">The resource state is not known directly.</div><div class="ttdef"><b>Definition</b> GraphicsTypes.h:1761</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.html">home</a></li><li class="navelem"><a class="el" href="../../dir_1036706e55c22cab35bc1c58ee689f1d.html">runner</a></li><li class="navelem"><a class="el" href="../../dir_629f8151d55d307162ff2d619fb1783d.html">work</a></li><li class="navelem"><a class="el" href="../../dir_1ddc44fe1263a8c7935fa6130b7d9499.html">XII</a></li><li class="navelem"><a class="el" href="../../dir_2c1b6808f12952f4c36e05ba7068379a.html">XII</a></li><li class="navelem"><a class="el" href="../../dir_b5a1c4ecfca018ad24b729e213296d41.html">Source</a></li><li class="navelem"><a class="el" href="../../dir_e321052006a51284e67389ab20037e7c.html">Engine</a></li><li class="navelem"><a class="el" href="../../dir_60f548c54f5a79fe3a3b3b88ff8146f5.html">GraphicsFoundation</a></li><li class="navelem"><a class="el" href="../../dir_f974d899601811362b57092dd8d00a65.html">Resources</a></li><li class="navelem"><b>Resource.h</b></li>
-    <li class="footer">Generated on Sat Mar 22 2025 03:24:39 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Thu May 22 2025 22:11:27 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 </body>

@@ -120,7 +120,7 @@ Inheritance diagram for xiiWindowOutputTargetGAL:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:a1957f797c37fc3d9be74f1d53030feef" id="r_a1957f797c37fc3d9be74f1d53030feef"><td class="memItemLeft" align="right" valign="top"><a id="a1957f797c37fc3d9be74f1d53030feef" name="a1957f797c37fc3d9be74f1d53030feef"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>OnSwapChainChanged</b> = <a class="el" href="../../dc/d84/structxii_delegate.html">xiiDelegate</a>&lt;void(<a class="el" href="../../de/dc7/classxii_g_a_l_swap_chain_handle.html">xiiGALSwapChainHandle</a> hSwapChain, <a class="el" href="../../db/d7f/classxii_size_template.html">xiiSizeU32</a> size)&gt;</td></tr>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>OnSwapChainChanged</b> = <a class="el" href="../../dc/d84/structxii_delegate.html">xiiDelegate</a>&lt;void(xiiGALSwapChainHandle hSwapChain, <a class="el" href="../../db/d7f/classxii_size_template.html">xiiSizeU32</a> size)&gt;</td></tr>
 <tr class="separator:a1957f797c37fc3d9be74f1d53030feef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -153,15 +153,15 @@ Public Attributes</h2></td></tr>
 <a class="el" href="../../d7/dc7/structxii_g_a_l_swap_chain_creation_description.html">xiiGALSwapChainCreationDescription</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_CurrentDesc</b></td></tr>
 <tr class="separator:ac4aa1c1e2bcb837d57ed8b95efc0d489"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af77d83d63da5738cfebfecc757ebc892" id="r_af77d83d63da5738cfebfecc757ebc892"><td class="memItemLeft" align="right" valign="top"><a id="af77d83d63da5738cfebfecc757ebc892" name="af77d83d63da5738cfebfecc757ebc892"></a>
-<a class="el" href="../../de/dc7/classxii_g_a_l_swap_chain_handle.html">xiiGALSwapChainHandle</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_hSwapChain</b></td></tr>
+xiiGALSwapChainHandle&#160;</td><td class="memItemRight" valign="bottom"><b>m_hSwapChain</b></td></tr>
 <tr class="separator:af77d83d63da5738cfebfecc757ebc892"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a44a27cb6161d9f6da0e7b176a1846046" id="r_a44a27cb6161d9f6da0e7b176a1846046"><td class="memItemLeft" align="right" valign="top"><a id="a44a27cb6161d9f6da0e7b176a1846046" name="a44a27cb6161d9f6da0e7b176a1846046"></a>
-<a class="el" href="../../df/de3/classxii_g_a_l_texture_handle.html">xiiGALTextureHandle</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_hBackbufferStagingTexture</b></td></tr>
+xiiGALTextureHandle&#160;</td><td class="memItemRight" valign="bottom"><b>m_hBackbufferStagingTexture</b></td></tr>
 <tr class="separator:a44a27cb6161d9f6da0e7b176a1846046"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Creates a swapchain and keeps it up to date with the window. </p>
-<p>If the window is resized or xiiGameApplication::cvar_AppVSync changes and onSwapChainChanged is valid, the swapchain is destroyed and recreated. It is up the the application to respond to the OnSwapChainChanged callback and update any references to the swap-chain, e.g. uses in <a class="el" href="../../dd/df1/classxii_view.html" title="Encapsulates a view on the given world through the given camera and rendered with the specified Rende...">xiiView</a> or uses as render targets in <a class="el" href="../../df/d8d/classxii_g_a_l_render_target_setup.html">xiiGALRenderTargetSetup</a>. If onSwapChainChanged is not set, the swapchain will not be re-created and it is up to the application to manage the swapchain and react to window changes. </p>
+<p>If the window is resized or xiiGameApplication::cvar_AppVSync changes and onSwapChainChanged is valid, the swapchain is destroyed and recreated. It is up the the application to respond to the OnSwapChainChanged callback and update any references to the swap-chain, e.g. uses in <a class="el" href="../../dd/df1/classxii_view.html" title="Encapsulates a view on the given world through the given camera and rendered with the specified Rende...">xiiView</a> or uses as render targets in xiiGALRenderTargetSetup. If onSwapChainChanged is not set, the swapchain will not be re-created and it is up to the application to manage the swapchain and react to window changes. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="aa67eb745cb05f4c5927cb5d402c0425b" name="aa67eb745cb05f4c5927cb5d402c0425b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa67eb745cb05f4c5927cb5d402c0425b">&#9670;&#160;</a></span>AcquireImage()</h2>
@@ -212,8 +212,8 @@ Public Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000067">Todo</a></b></dt><dd>Make this more efficient </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000068">Todo</a></b></dt><dd>Support depth pitch. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000066">Todo</a></b></dt><dd>Make this more efficient </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000067">Todo</a></b></dt><dd>Support depth pitch. </dd></dl>
 
 <p>Implements <a class="el" href="../../d7/d4b/classxii_window_output_target_base.html">xiiWindowOutputTargetBase</a>.</p>
 
@@ -256,7 +256,7 @@ Public Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d9/d8d/classxii_window_output_target_g_a_l.html">xiiWindowOutputTargetGAL</a></li>
-    <li class="footer">Generated on Sat Mar 22 2025 03:24:51 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Thu May 22 2025 22:11:38 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 </body>

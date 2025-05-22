@@ -107,6 +107,11 @@ $(function(){initNavTree('da/def/classxii_transform_component.html','../../'); i
   <div class="headertitle"><div class="title">xiiTransformComponent Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Base class for some components that modify an object's transform.  
+ <a href="#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="../../d4/d94/_transform_component_8h_source.html">TransformComponent.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for xiiTransformComponent:</div>
 <div class="dyncontent">
@@ -121,29 +126,34 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a19f6ac06ff4936bf418df56e5d8bedf4" id="r_a19f6ac06ff4936bf418df56e5d8bedf4"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a19f6ac06ff4936bf418df56e5d8bedf4">DeserializeComponent</a> (<a class="el" href="../../df/df8/classxii_world_reader.html">xiiWorldReader</a> &amp;inout_stream) override</td></tr>
 <tr class="memdesc:a19f6ac06ff4936bf418df56e5d8bedf4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Override this to load the current state of the component from the given stream.  <br /></td></tr>
 <tr class="separator:a19f6ac06ff4936bf418df56e5d8bedf4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4e3b74e4e1b3c405801f5edbe195f43d" id="r_a4e3b74e4e1b3c405801f5edbe195f43d"><td class="memItemLeft" align="right" valign="top"><a id="a4e3b74e4e1b3c405801f5edbe195f43d" name="a4e3b74e4e1b3c405801f5edbe195f43d"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SetDirectionForwards</b> (bool bForwards)</td></tr>
+<tr class="memitem:a4e3b74e4e1b3c405801f5edbe195f43d" id="r_a4e3b74e4e1b3c405801f5edbe195f43d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4e3b74e4e1b3c405801f5edbe195f43d">SetDirectionForwards</a> (bool bForwards)</td></tr>
+<tr class="memdesc:a4e3b74e4e1b3c405801f5edbe195f43d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the animation to be played forwards or backwards.  <br /></td></tr>
 <tr class="separator:a4e3b74e4e1b3c405801f5edbe195f43d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a77637d6f074b1af30dd1260e59865bf1" id="r_a77637d6f074b1af30dd1260e59865bf1"><td class="memItemLeft" align="right" valign="top"><a id="a77637d6f074b1af30dd1260e59865bf1" name="a77637d6f074b1af30dd1260e59865bf1"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>ToggleDirection</b> ()</td></tr>
+<tr class="memitem:a77637d6f074b1af30dd1260e59865bf1" id="r_a77637d6f074b1af30dd1260e59865bf1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a77637d6f074b1af30dd1260e59865bf1">ToggleDirection</a> ()</td></tr>
+<tr class="memdesc:a77637d6f074b1af30dd1260e59865bf1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Toggles the directon of the animation.  <br /></td></tr>
 <tr class="separator:a77637d6f074b1af30dd1260e59865bf1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a25fffe7276b81f30f9831865f19eb950" id="r_a25fffe7276b81f30f9831865f19eb950"><td class="memItemLeft" align="right" valign="top"><a id="a25fffe7276b81f30f9831865f19eb950" name="a25fffe7276b81f30f9831865f19eb950"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsDirectionForwards</b> () const</td></tr>
+<tr class="memdesc:a25fffe7276b81f30f9831865f19eb950"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether the animation is currently being played forwards or backwards. <br /></td></tr>
 <tr class="separator:a25fffe7276b81f30f9831865f19eb950"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a821b5db1f481101566bd776ff573666d" id="r_a821b5db1f481101566bd776ff573666d"><td class="memItemLeft" align="right" valign="top"><a id="a821b5db1f481101566bd776ff573666d" name="a821b5db1f481101566bd776ff573666d"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsRunning</b> (void) const</td></tr>
+<tr class="memdesc:a821b5db1f481101566bd776ff573666d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether the animation is currently being played back or paused. <br /></td></tr>
 <tr class="separator:a821b5db1f481101566bd776ff573666d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8bf32b320496f577a79df2f5fc95e2f5" id="r_a8bf32b320496f577a79df2f5fc95e2f5"><td class="memItemLeft" align="right" valign="top"><a id="a8bf32b320496f577a79df2f5fc95e2f5" name="a8bf32b320496f577a79df2f5fc95e2f5"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetRunning</b> (bool bRunning)</td></tr>
+<tr class="memdesc:a8bf32b320496f577a79df2f5fc95e2f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts or stops animation playback. <br /></td></tr>
 <tr class="separator:a8bf32b320496f577a79df2f5fc95e2f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9c55f56fb268ec538ed0b39e4e0ba3aa" id="r_a9c55f56fb268ec538ed0b39e4e0ba3aa"><td class="memItemLeft" align="right" valign="top"><a id="a9c55f56fb268ec538ed0b39e4e0ba3aa" name="a9c55f56fb268ec538ed0b39e4e0ba3aa"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>GetReverseAtStart</b> (void) const</td></tr>
+<tr class="memdesc:a9c55f56fb268ec538ed0b39e4e0ba3aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether the animation would turn around automatically when reaching the start point. <br /></td></tr>
 <tr class="separator:a9c55f56fb268ec538ed0b39e4e0ba3aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a67d3d4175b693d0646f917433f2f1833" id="r_a67d3d4175b693d0646f917433f2f1833"><td class="memItemLeft" align="right" valign="top"><a id="a67d3d4175b693d0646f917433f2f1833" name="a67d3d4175b693d0646f917433f2f1833"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetReverseAtStart</b> (bool b)</td></tr>
 <tr class="separator:a67d3d4175b693d0646f917433f2f1833"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8be36e475bce9b6802fc2ac66fd3e8cf" id="r_a8be36e475bce9b6802fc2ac66fd3e8cf"><td class="memItemLeft" align="right" valign="top"><a id="a8be36e475bce9b6802fc2ac66fd3e8cf" name="a8be36e475bce9b6802fc2ac66fd3e8cf"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>GetReverseAtEnd</b> (void) const</td></tr>
+<tr class="memdesc:a8be36e475bce9b6802fc2ac66fd3e8cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether the animation would turn around automatically when reaching the end point. <br /></td></tr>
 <tr class="separator:a8be36e475bce9b6802fc2ac66fd3e8cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a85b3459058aa6aa8fde8c2e0020baa8d" id="r_a85b3459058aa6aa8fde8c2e0020baa8d"><td class="memItemLeft" align="right" valign="top"><a id="a85b3459058aa6aa8fde8c2e0020baa8d" name="a85b3459058aa6aa8fde8c2e0020baa8d"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetReverseAtEnd</b> (bool b)</td></tr>
@@ -256,6 +266,7 @@ template&lt;typename T&gt; </td></tr>
 Public Attributes</h2></td></tr>
 <tr class="memitem:aa80a1121460c82612cb70fa2d635f3e9" id="r_aa80a1121460c82612cb70fa2d635f3e9"><td class="memItemLeft" align="right" valign="top"><a id="aa80a1121460c82612cb70fa2d635f3e9" name="aa80a1121460c82612cb70fa2d635f3e9"></a>
 float&#160;</td><td class="memItemRight" valign="bottom"><b>m_fAnimationSpeed</b> = 1.0f</td></tr>
+<tr class="memdesc:aa80a1121460c82612cb70fa2d635f3e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">The speed at which the animation should be played back. <br /></td></tr>
 <tr class="separator:aa80a1121460c82612cb70fa2d635f3e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
@@ -331,7 +342,9 @@ Additional Inherited Members</h2></td></tr>
 static const <a class="el" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetStaticRTTI</b> ()</td></tr>
 <tr class="separator:a4bde433b55ebd55edf63c57239799bba inherit pub_static_methods_classxii_no_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Base class for some components that modify an object's transform. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a19f6ac06ff4936bf418df56e5d8bedf4" name="a19f6ac06ff4936bf418df56e5d8bedf4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a19f6ac06ff4936bf418df56e5d8bedf4">&#9670;&#160;</a></span>DeserializeComponent()</h2>
 
@@ -430,6 +443,46 @@ static const <a class="el" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a>
 
 </div>
 </div>
+<a id="a4e3b74e4e1b3c405801f5edbe195f43d" name="a4e3b74e4e1b3c405801f5edbe195f43d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e3b74e4e1b3c405801f5edbe195f43d">&#9670;&#160;</a></span>SetDirectionForwards()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void xiiTransformComponent::SetDirectionForwards </td>
+          <td>(</td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>bForwards</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the animation to be played forwards or backwards. </p>
+<dl class="section note"><dt>Note</dt><dd>Does not start the animation, if it is currently not running. </dd></dl>
+
+</div>
+</div>
+<a id="a77637d6f074b1af30dd1260e59865bf1" name="a77637d6f074b1af30dd1260e59865bf1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a77637d6f074b1af30dd1260e59865bf1">&#9670;&#160;</a></span>ToggleDirection()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void xiiTransformComponent::ToggleDirection </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Toggles the directon of the animation. </p>
+<dl class="section note"><dt>Note</dt><dd>Does not start the animation, if it is currently not running. </dd></dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>/home/runner/work/XII/XII/Source/Engine/GameEngine/Animation/<a class="el" href="../../d4/d94/_transform_component_8h_source.html">TransformComponent.h</a></li>
 <li>/home/runner/work/XII/XII/Source/Engine/GameEngine/Animation/Implementation/<b>TransformComponent.cpp</b></li>
@@ -440,7 +493,7 @@ static const <a class="el" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../da/def/classxii_transform_component.html">xiiTransformComponent</a></li>
-    <li class="footer">Generated on Sat Mar 22 2025 03:24:51 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Thu May 22 2025 22:11:37 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 </body>

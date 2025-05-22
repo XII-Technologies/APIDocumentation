@@ -9,7 +9,7 @@ var classxii_data_directory_type =
     [ "InternalInitializeDataDirectory", "de/d33/classxii_data_directory_type.html#a65c551c72e3e70fc0185c784112e7343", null ],
     [ "OnReaderWriterClose", "de/d33/classxii_data_directory_type.html#a6bd08b2185798c937702e813ee4a8a1a", null ],
     [ "OpenFileToRead", "de/d33/classxii_data_directory_type.html#abd25b08e47282bae0e2fa87942fe23ec", null ],
-    [ "OpenFileToWrite", "de/d33/classxii_data_directory_type.html#a6c13ac855808b22240a77ca11d3655cd", null ],
+    [ "OpenFileToWrite", "de/d33/classxii_data_directory_type.html#a93fad0272237e4277b0c3403f5c282aa", null ],
     [ "ReloadExternalConfigs", "de/d33/classxii_data_directory_type.html#a188b02feb34f82ee3fda2d685f640f6b", null ],
     [ "RemoveDataDirectory", "de/d33/classxii_data_directory_type.html#ae00b69a7586651b18fe3a975f539c3a3", null ],
     [ "ResolveAssetRedirection", "de/d33/classxii_data_directory_type.html#a6bc3b529b723c4e6e4c88140cbef098e", null ],

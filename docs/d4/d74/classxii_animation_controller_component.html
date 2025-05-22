@@ -107,6 +107,11 @@ $(function(){initNavTree('d4/d74/classxii_animation_controller_component.html','
   <div class="headertitle"><div class="title">xiiAnimationControllerComponent Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Evaluates a <a class="el" href="../../d3/dcc/classxii_anim_graph_resource.html">xiiAnimGraphResource</a> and provides the result through the <a class="el" href="../../d9/d18/structxii_msg_animation_pose_updated.html" title="Used by components that skin a mesh to inform children whenever a new pose has been computed.">xiiMsgAnimationPoseUpdated</a>.  
+ <a href="#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="../../d2/d66/_animation_controller_component_8h_source.html">AnimationControllerComponent.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for xiiAnimationControllerComponent:</div>
 <div class="dyncontent">
@@ -229,7 +234,12 @@ template&lt;typename T&gt; </td></tr>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a1651f197370f7dde63cab01c77fc4605" id="r_a1651f197370f7dde63cab01c77fc4605"><td class="memItemLeft" align="right" valign="top"><a id="a1651f197370f7dde63cab01c77fc4605" name="a1651f197370f7dde63cab01c77fc4605"></a>
 <a class="el" href="../../de/dfd/structxii_enum.html">xiiEnum</a>&lt; <a class="el" href="../../d1/d14/structxii_animation_invisible_update_rate.html">xiiAnimationInvisibleUpdateRate</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_InvisibleUpdateRate</b></td></tr>
+<tr class="memdesc:a1651f197370f7dde63cab01c77fc4605"><td class="mdescLeft">&#160;</td><td class="mdescRight">How often to update the animation while the animated mesh is invisible. <br /></td></tr>
 <tr class="separator:a1651f197370f7dde63cab01c77fc4605"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7efd9b175f9ca53d9cdedb84a5b3ba3" id="r_ae7efd9b175f9ca53d9cdedb84a5b3ba3"><td class="memItemLeft" align="right" valign="top"><a id="ae7efd9b175f9ca53d9cdedb84a5b3ba3" name="ae7efd9b175f9ca53d9cdedb84a5b3ba3"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_bEnableIK</b> = false</td></tr>
+<tr class="memdesc:ae7efd9b175f9ca53d9cdedb84a5b3ba3"><td class="mdescLeft">&#160;</td><td class="mdescRight">If enabled, child game objects can add IK computation commands to influence the final pose. <br /></td></tr>
+<tr class="separator:ae7efd9b175f9ca53d9cdedb84a5b3ba3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -316,7 +326,11 @@ Additional Inherited Members</h2></td></tr>
 static const <a class="el" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetStaticRTTI</b> ()</td></tr>
 <tr class="separator:a4bde433b55ebd55edf63c57239799bba inherit pub_static_methods_classxii_no_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Evaluates a <a class="el" href="../../d3/dcc/classxii_anim_graph_resource.html">xiiAnimGraphResource</a> and provides the result through the <a class="el" href="../../d9/d18/structxii_msg_animation_pose_updated.html" title="Used by components that skin a mesh to inform children whenever a new pose has been computed.">xiiMsgAnimationPoseUpdated</a>. </p>
+<p><a class="el" href="../../d7/dd0/classxii_anim_graph.html">xiiAnimGraph</a>'s contain logic to generate an animation pose. This component decides when it is necessary to reevaluate the state, which mostly means it tracks when the object is visible.</p>
+<p>The result is sent as a recursive message, which is usually consumed by a <a class="el" href="../../d4/d85/classxii_animated_mesh_component.html" title="Instantiates a mesh that can be animated through skeletal animation.">xiiAnimatedMeshComponent</a>. The mesh component may be on the same game object or a child object. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="ae0e4860af3dc73ffc1219e19325b9e26" name="ae0e4860af3dc73ffc1219e19325b9e26"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae0e4860af3dc73ffc1219e19325b9e26">&#9670;&#160;</a></span>DeserializeComponent()</h2>
 
@@ -419,7 +433,7 @@ static const <a class="el" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d4/d74/classxii_animation_controller_component.html">xiiAnimationControllerComponent</a></li>
-    <li class="footer">Generated on Sat Mar 22 2025 03:24:47 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Thu May 22 2025 22:11:34 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 </body>

@@ -61,6 +61,7 @@ var classxii_world =
     [ "PostMessage", "d6/d89/classxii_world.html#a2c07b46101e775295fb6ba2d9f547fd9", null ],
     [ "PostMessage", "d6/d89/classxii_world.html#a086fb5c5c922948879a358e29442a28b", null ],
     [ "PostMessageRecursive", "d6/d89/classxii_world.html#a04af13eebc0ce73d6f29b343e7a184f0", null ],
+    [ "SearchForObject", "d6/d89/classxii_world.html#aaa752a3c9fbaac2dea4f016c9670a4a7", null ],
     [ "SearchForObject", "d6/d89/classxii_world.html#a2dbbb44b17ee9c8e4eed6de77653a5df", null ],
     [ "SendMessage", "d6/d89/classxii_world.html#afdad906583df4b46d38eb97aa7a456f8", null ],
     [ "SendMessage", "d6/d89/classxii_world.html#a2b007afa6b6e99aa0359e900cd610da3", null ],

@@ -6,6 +6,7 @@ var classxii_dynamic_string_enum =
     [ "GetStorageFile", "d7/d13/classxii_dynamic_string_enum.html#a6690d6dcd919cbc9b78ce34a77128195", null ],
     [ "IsValueValid", "d7/d13/classxii_dynamic_string_enum.html#acfc01d8a6f7c00d7eebf419eb41b202c", null ],
     [ "RemoveValue", "d7/d13/classxii_dynamic_string_enum.html#aed643bc21052589c5ed76e82c02f7542", null ],
+    [ "SetEditCommand", "d7/d13/classxii_dynamic_string_enum.html#ad92e2d9e26c021e6125fc273268324bb", null ],
     [ "SetStorageFile", "d7/d13/classxii_dynamic_string_enum.html#aee8e3822667a3cb6d9b8571dd2ec7ad5", null ],
     [ "SortValues", "d7/d13/classxii_dynamic_string_enum.html#a4a66ad259ba0e7c690958fcdf48ad91b", null ]
 ];

@@ -127,7 +127,7 @@ $(function(){initNavTree('d6/d8d/_small_array_8h_source.html','../../'); initRes
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>  <span class="comment">// Can&#39;t use regular assignment operators since we need to pass an allocator. Use CopyFrom or MoveFrom methods instead.</span></div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>  <span class="keywordtype">void</span> operator=(<span class="keyword">const</span> xiiSmallArrayBase&lt;T, Size&gt;&amp; rhs) = <span class="keyword">delete</span>;</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>  <span class="keywordtype">void</span> operator=(xiiSmallArrayBase&lt;T, Size&gt;&amp;&amp; rhs) = <span class="keyword">delete</span>;</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>  <span class="keywordtype">void</span> operator=(xiiSmallArrayBase&lt;T, Size&gt;&amp;&amp; rhs)      = <span class="keyword">delete</span>;</div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span></div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>  <span class="keywordtype">void</span> <a class="code hl_function" href="../../d0/d92/classxii_small_array_base.html#a8bc5875099d17be0928af6747512f050">CopyFrom</a>(<span class="keyword">const</span> <a class="code hl_class" href="../../d0/d60/classxii_array_ptr.html">xiiArrayPtr&lt;const T&gt;</a>&amp; other, <a class="code hl_class" href="../../d5/d66/classxii_allocator_base.html">xiiAllocatorBase</a>* pAllocator); <span class="comment">// [tested]</span></div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span></div>
@@ -250,7 +250,7 @@ $(function(){initNavTree('d6/d8d/_small_array_8h_source.html','../../'); initRes
 <div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span> </div>
 <div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>  <span class="keyword">union</span></div>
 <div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>  {</div>
-<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>    <span class="keyword">struct </span><span class="keyword">alignas</span>(XII_ALIGNMENT_OF(T))</div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>    <span class="keyword">struct </span><span class="keyword">alignas</span>(alignof(T))</div>
 <div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>    {</div>
 <div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>      xiiUInt8 m_StaticData[Size * <span class="keyword">sizeof</span>(T)];</div>
 <div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>    };</div>
@@ -346,7 +346,7 @@ $(function(){initNavTree('d6/d8d/_small_array_8h_source.html','../../'); initRes
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.html">home</a></li><li class="navelem"><a class="el" href="../../dir_1036706e55c22cab35bc1c58ee689f1d.html">runner</a></li><li class="navelem"><a class="el" href="../../dir_629f8151d55d307162ff2d619fb1783d.html">work</a></li><li class="navelem"><a class="el" href="../../dir_1ddc44fe1263a8c7935fa6130b7d9499.html">XII</a></li><li class="navelem"><a class="el" href="../../dir_2c1b6808f12952f4c36e05ba7068379a.html">XII</a></li><li class="navelem"><a class="el" href="../../dir_b5a1c4ecfca018ad24b729e213296d41.html">Source</a></li><li class="navelem"><a class="el" href="../../dir_e321052006a51284e67389ab20037e7c.html">Engine</a></li><li class="navelem"><a class="el" href="../../dir_be0c42c58b36f42c54ec54024ed4f6af.html">Foundation</a></li><li class="navelem"><a class="el" href="../../dir_7f59ab18dbc50035dfc0ee7070867286.html">Containers</a></li><li class="navelem"><b>SmallArray.h</b></li>
-    <li class="footer">Generated on Sat Mar 22 2025 03:24:43 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Thu May 22 2025 22:11:30 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 </body>

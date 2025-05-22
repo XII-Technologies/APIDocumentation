@@ -20,7 +20,8 @@ var searchData=
   ['local_17',['Local',['../db/d54/structxii_x_r_transform_space.html#a448e6f31de261f5e1a2ea40165bd7a59acd3b8e179f6a0d2205d0cbc618e67ee4',1,'xiiXRTransformSpace']]],
   ['longrunning_18',['LongRunning',['../d9/d69/structxii_task_priority.html#a2aa9f9ee2f9b337039c13a946945d93dae2f7bd116a9a63d4369575a52fc54546',1,'xiiTaskPriority']]],
   ['longrunninghighpriority_19',['LongRunningHighPriority',['../d9/d69/structxii_task_priority.html#a2aa9f9ee2f9b337039c13a946945d93da24b4c150458358323534f6b42cc5feb3',1,'xiiTaskPriority']]],
-  ['losefocus_20',['LoseFocus',['../d0/db4/structxii_input_action_config.html#a98ec8d63a11a646389b276dc78980ce4adbec3b5a8e1d1852f69e8817ae6134bc',1,'xiiInputActionConfig']]],
-  ['lowerfieldfirst_21',['LowerFieldFirst',['../dd/d96/structxii_g_a_l_scan_line_order.html#adfc935f7835900d8942ddaa31a0ebd00a6befe988d623840dafd36694f537b854',1,'xiiGALScanLineOrder']]],
-  ['lowmemory_22',['LowMemory',['../d5/d76/structxii_g_a_l_ray_tracing_build_a_s_flags.html#af642f139c8be62fe71f9766443859077a5b8de70daa508b826832348539f50f3e',1,'xiiGALRayTracingBuildASFlags']]]
+  ['loop_20',['Loop',['../d6/d5e/structxii_property_anim_mode.html#a4244c59d2afc02a33e7e0f30ba12ddfeae4c0fe4f6eb53ff8a7f68e25318562d3',1,'xiiPropertyAnimMode']]],
+  ['losefocus_21',['LoseFocus',['../d0/db4/structxii_input_action_config.html#a98ec8d63a11a646389b276dc78980ce4adbec3b5a8e1d1852f69e8817ae6134bc',1,'xiiInputActionConfig']]],
+  ['lowerfieldfirst_22',['LowerFieldFirst',['../dd/d96/structxii_g_a_l_scan_line_order.html#adfc935f7835900d8942ddaa31a0ebd00a6befe988d623840dafd36694f537b854',1,'xiiGALScanLineOrder']]],
+  ['lowmemory_23',['LowMemory',['../d5/d76/structxii_g_a_l_ray_tracing_build_a_s_flags.html#af642f139c8be62fe71f9766443859077a5b8de70daa508b826832348539f50f3e',1,'xiiGALRayTracingBuildASFlags']]]
 ];

@@ -137,13 +137,13 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>SetWorld</b> (<a clas
 <tr class="memitem:a874dd62d00047d31d3bdb3a5bb8c9971" id="r_a874dd62d00047d31d3bdb3a5bb8c9971"><td class="memItemLeft" align="right" valign="top"><a id="a874dd62d00047d31d3bdb3a5bb8c9971" name="a874dd62d00047d31d3bdb3a5bb8c9971"></a>
 const <a class="el" href="../../d6/d89/classxii_world.html">xiiWorld</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetWorld</b> () const</td></tr>
 <tr class="separator:a874dd62d00047d31d3bdb3a5bb8c9971"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0c6dc5fa9cee6367a46835c82a7c639d" id="r_a0c6dc5fa9cee6367a46835c82a7c639d"><td class="memItemLeft" align="right" valign="top"><a id="a0c6dc5fa9cee6367a46835c82a7c639d" name="a0c6dc5fa9cee6367a46835c82a7c639d"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SetSwapChain</b> (<a class="el" href="../../de/dc7/classxii_g_a_l_swap_chain_handle.html">xiiGALSwapChainHandle</a> hSwapChain)</td></tr>
-<tr class="memdesc:a0c6dc5fa9cee6367a46835c82a7c639d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the swapchain that this view will be rendering into. Can be invalid in case the render target is an off-screen buffer in which case SetRenderTargets needs to be called. Setting the swap-chain is necessary in order to acquire and present the image to the window. SetSwapChain and SetRenderTargets are mutually exclusive. Calling this function will reset the render targets. <br /></td></tr>
-<tr class="separator:a0c6dc5fa9cee6367a46835c82a7c639d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a05133441e2d1de6f4783d28d40975f04" id="r_a05133441e2d1de6f4783d28d40975f04"><td class="memItemLeft" align="right" valign="top"><a id="a05133441e2d1de6f4783d28d40975f04" name="a05133441e2d1de6f4783d28d40975f04"></a>
-<a class="el" href="../../de/dc7/classxii_g_a_l_swap_chain_handle.html">xiiGALSwapChainHandle</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetSwapChain</b> () const</td></tr>
-<tr class="separator:a05133441e2d1de6f4783d28d40975f04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ab50d3e8f5092993105f29ea0e8813d" id="r_a3ab50d3e8f5092993105f29ea0e8813d"><td class="memItemLeft" align="right" valign="top"><a id="a3ab50d3e8f5092993105f29ea0e8813d" name="a3ab50d3e8f5092993105f29ea0e8813d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetSwapChain</b> (<a class="el" href="../../d8/d9b/classxii_shared_ptr.html">xiiSharedPtr</a>&lt; <a class="el" href="../../d5/d07/classxii_g_a_l_swap_chain.html">xiiGALSwapChain</a> &gt; pSwapChain)</td></tr>
+<tr class="memdesc:a3ab50d3e8f5092993105f29ea0e8813d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the swapchain that this view will be rendering into. Can be invalid in case the render target is an off-screen buffer in which case SetRenderTargets needs to be called. Setting the swap-chain is necessary in order to acquire and present the image to the window. SetSwapChain and SetRenderTargets are mutually exclusive. Calling this function will reset the render targets. <br /></td></tr>
+<tr class="separator:a3ab50d3e8f5092993105f29ea0e8813d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74be02308cd02f62e6a10bff8dca3bae" id="r_a74be02308cd02f62e6a10bff8dca3bae"><td class="memItemLeft" align="right" valign="top"><a id="a74be02308cd02f62e6a10bff8dca3bae" name="a74be02308cd02f62e6a10bff8dca3bae"></a>
+<a class="el" href="../../d8/d9b/classxii_shared_ptr.html">xiiSharedPtr</a>&lt; <a class="el" href="../../d5/d07/classxii_g_a_l_swap_chain.html">xiiGALSwapChain</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetSwapChain</b> () const</td></tr>
+<tr class="separator:a74be02308cd02f62e6a10bff8dca3bae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aba98c7d1e4787ae15fe84ccd31f9936b" id="r_aba98c7d1e4787ae15fe84ccd31f9936b"><td class="memItemLeft" align="right" valign="top"><a id="aba98c7d1e4787ae15fe84ccd31f9936b" name="aba98c7d1e4787ae15fe84ccd31f9936b"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetRenderTargets</b> (const <a class="el" href="../../db/d0f/structxii_g_a_l_render_targets.html">xiiGALRenderTargets</a> &amp;renderTargets)</td></tr>
 <tr class="memdesc:aba98c7d1e4787ae15fe84ccd31f9936b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the off-screen render targets. Use SetSwapChain if rendering to a window. SetSwapChain and SetRenderTargets are mutually exclusive. Calling this function will reset the swap chain. <br /></td></tr>
@@ -443,7 +443,7 @@ static const <a class="el" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dd/df1/classxii_view.html">xiiView</a></li>
-    <li class="footer">Generated on Sat Mar 22 2025 03:24:51 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Thu May 22 2025 22:11:38 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 </body>

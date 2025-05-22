@@ -4,7 +4,7 @@ var classxii_reflection_probe_mapping =
     [ "AddProbe", "de/d49/classxii_reflection_probe_mapping.html#ae5a12f1242c2fedee3b79104107fef60", null ],
     [ "AddWeight", "de/d49/classxii_reflection_probe_mapping.html#a80cd3c65b9b7a8f114a92d781dc746b0", null ],
     [ "GetReflectionIndex", "de/d49/classxii_reflection_probe_mapping.html#a8a0b3f0015a9adab153fb8c3e400264b", null ],
-    [ "GetTexture", "de/d49/classxii_reflection_probe_mapping.html#a5a3757238d330cf85b14d6b54d62716b", null ],
+    [ "GetTexture", "de/d49/classxii_reflection_probe_mapping.html#a34e868872fcf93545b647a958e01695e", null ],
     [ "PostExtraction", "de/d49/classxii_reflection_probe_mapping.html#a838acada61f611ca192a15e885a75678", null ],
     [ "PreExtraction", "de/d49/classxii_reflection_probe_mapping.html#aecdb7aea60e737f6c8aafd3d8aa7ecb2", null ],
     [ "ProbeUpdateFinished", "de/d49/classxii_reflection_probe_mapping.html#abccf401d7817e62c945cc1b252df4edf", null ],

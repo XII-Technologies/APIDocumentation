@@ -106,6 +106,11 @@ $(function(){initNavTree('d4/d85/classxii_animated_mesh_component.html','../../'
   <div class="headertitle"><div class="title">xiiAnimatedMeshComponent Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Instantiates a mesh that can be animated through skeletal animation.  
+ <a href="#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="../../db/d3c/_animated_mesh_component_8h_source.html">AnimatedMeshComponent.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for xiiAnimatedMeshComponent:</div>
 <div class="dyncontent">
@@ -305,12 +310,12 @@ xiiUInt32&#160;</td><td class="memItemRight" valign="bottom"><b>Materials_GetCou
 <tr class="memitem:af02a53e49a5bc1630bcb449b66c58154 inherit pro_methods_classxii_mesh_component_base" id="r_af02a53e49a5bc1630bcb449b66c58154"><td class="memItemLeft" align="right" valign="top">
 <a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Materials_GetValue</b> (xiiUInt32 uiIndex) const</td></tr>
 <tr class="separator:af02a53e49a5bc1630bcb449b66c58154 inherit pro_methods_classxii_mesh_component_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a89f1fbc8a30a1a602188f31ed410442c inherit pro_methods_classxii_mesh_component_base" id="r_a89f1fbc8a30a1a602188f31ed410442c"><td class="memItemLeft" align="right" valign="top">
-void&#160;</td><td class="memItemRight" valign="bottom"><b>Materials_SetValue</b> (xiiUInt32 uiIndex, <a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> value)</td></tr>
-<tr class="separator:a89f1fbc8a30a1a602188f31ed410442c inherit pro_methods_classxii_mesh_component_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aff14423191c17b081e078ea5956601ea inherit pro_methods_classxii_mesh_component_base" id="r_aff14423191c17b081e078ea5956601ea"><td class="memItemLeft" align="right" valign="top">
-void&#160;</td><td class="memItemRight" valign="bottom"><b>Materials_Insert</b> (xiiUInt32 uiIndex, <a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> value)</td></tr>
-<tr class="separator:aff14423191c17b081e078ea5956601ea inherit pro_methods_classxii_mesh_component_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74acb5fc4defeb6011ab2f9384d81dc6 inherit pro_methods_classxii_mesh_component_base" id="r_a74acb5fc4defeb6011ab2f9384d81dc6"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Materials_SetValue</b> (xiiUInt32 uiIndex, <a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sValue)</td></tr>
+<tr class="separator:a74acb5fc4defeb6011ab2f9384d81dc6 inherit pro_methods_classxii_mesh_component_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af312bc60fd9986cd73a0db0169f1a1ab inherit pro_methods_classxii_mesh_component_base" id="r_af312bc60fd9986cd73a0db0169f1a1ab"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Materials_Insert</b> (xiiUInt32 uiIndex, <a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sValue)</td></tr>
+<tr class="separator:af312bc60fd9986cd73a0db0169f1a1ab inherit pro_methods_classxii_mesh_component_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad688ed0e4c4690a0ab531519f4db1825 inherit pro_methods_classxii_mesh_component_base" id="r_ad688ed0e4c4690a0ab531519f4db1825"><td class="memItemLeft" align="right" valign="top">
 void&#160;</td><td class="memItemRight" valign="bottom"><b>Materials_Remove</b> (xiiUInt32 uiIndex)</td></tr>
 <tr class="separator:ad688ed0e4c4690a0ab531519f4db1825 inherit pro_methods_classxii_mesh_component_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -413,7 +418,12 @@ static xiiUInt32&#160;</td><td class="memItemRight" valign="bottom"><b>GetUnique
 static const <a class="el" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetStaticRTTI</b> ()</td></tr>
 <tr class="separator:a4bde433b55ebd55edf63c57239799bba inherit pub_static_methods_classxii_no_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Instantiates a mesh that can be animated through skeletal animation. </p>
+<p>The referenced mesh has to contain skinning information.</p>
+<p>This component only creates an animated mesh for rendering. It does not animate the mesh in any way. The component handles messages of type <a class="el" href="../../d9/d18/structxii_msg_animation_pose_updated.html" title="Used by components that skin a mesh to inform children whenever a new pose has been computed.">xiiMsgAnimationPoseUpdated</a>. Using this message other systems can set a new pose for the animated mesh.</p>
+<p>For example the <a class="el" href="../../d4/dd1/classxii_skeleton_pose_component.html" title="Used in conjunction with a xiiAnimatedMeshComponent to set a specific pose for the animated mesh.">xiiSkeletonPoseComponent</a>, <a class="el" href="../../d1/d2a/classxii_simple_animation_component.html" title="Plays a single animation clip on an animated mesh.">xiiSimpleAnimationComponent</a> and <a class="el" href="../../d4/d74/classxii_animation_controller_component.html" title="Evaluates a xiiAnimGraphResource and provides the result through the xiiMsgAnimationPoseUpdated.">xiiAnimationControllerComponent</a> do this to change the pose of the animated mesh. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="abbc48576535fbbebea13cfe29a06edd2" name="abbc48576535fbbebea13cfe29a06edd2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abbc48576535fbbebea13cfe29a06edd2">&#9670;&#160;</a></span>CreateRenderData()</h2>
 
@@ -611,7 +621,7 @@ static const <a class="el" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d4/d85/classxii_animated_mesh_component.html">xiiAnimatedMeshComponent</a></li>
-    <li class="footer">Generated on Sat Mar 22 2025 03:24:47 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Thu May 22 2025 22:11:34 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 </body>

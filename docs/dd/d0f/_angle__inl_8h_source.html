@@ -183,131 +183,134 @@ $(function(){initNavTree('dd/d0f/_angle__inl_8h_source.html','../../'); initResi
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="../../d3/ddb/classxii_angle_template.html#a61b9cffe96c9937c13122e97f23417f9">   56</a></span> </div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Type&gt;</div>
 <div class="foldopen" id="foldopen00058" data-start="{" data-end="}">
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="../../d3/ddb/classxii_angle_template.html#a7e9e308308a55e19b03dbf5a3fed8c66">   58</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="../../d3/ddb/classxii_angle_template.html#a7e9e308308a55e19b03dbf5a3fed8c66">xiiAngleTemplate&lt;Type&gt;::NormalizeRange</a>()</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="../../d3/ddb/classxii_angle_template.html#a7e9e308308a55e19b03dbf5a3fed8c66">   58</a></span><span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code hl_function" href="../../d3/ddb/classxii_angle_template.html#a7e9e308308a55e19b03dbf5a3fed8c66">xiiAngleTemplate&lt;Type&gt;::NormalizeRange</a>()</div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>{</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>  <span class="keyword">const</span> Type fTwoPi    = <span class="keyword">static_cast&lt;</span>Type<span class="keyword">&gt;</span>(2.0f) * xiiAngleTemplate&lt;Type&gt;::Pi();</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>  <span class="keyword">const</span> Type fTwoPiTen = <span class="keyword">static_cast&lt;</span>Type<span class="keyword">&gt;</span>(10.0f) * xiiAngleTemplate&lt;Type&gt;::Pi();</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>  <span class="keyword">constexpr</span> Type fTwoPi    = <span class="keyword">static_cast&lt;</span>Type<span class="keyword">&gt;</span>(2) * xiiAngleTemplate&lt;Type&gt;::Pi();</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>  <span class="keyword">constexpr</span> Type fTwoPiTen = <span class="keyword">static_cast&lt;</span>Type<span class="keyword">&gt;</span>(10) * xiiAngleTemplate&lt;Type&gt;::Pi();</div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>  <span class="keywordflow">if</span> <span class="keyword">constexpr</span> (std::is_same_v&lt;Type, float&gt;)</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>  <span class="keywordflow">if</span> (m_fRadian &gt; fTwoPiTen || m_fRadian &lt; -fTwoPiTen)</div>
 <div class="foldopen" id="foldopen00064" data-start="{" data-end="}">
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno"><a class="line" href="../../d3/ddb/classxii_angle_template.html#a2b5342a182d1fdedc3db8a49cd4a2e21">   64</a></span>  {</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    m_fRadian = fmodf(m_fRadian, fTwoPi);</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>  }</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    <span class="keywordflow">if</span> <span class="keyword">constexpr</span> (std::is_same_v&lt;Type, float&gt;)</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    {</div>
 <div class="foldopen" id="foldopen00067" data-start="{" data-end="}">
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno"><a class="line" href="../../d3/ddb/classxii_angle_template.html#ad395aa30c07355b4af56067d542d6514">   67</a></span>  <span class="keywordflow">else</span></div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>  {</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    m_fRadian = fmod(m_fRadian, fTwoPi);</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>  }</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>  <span class="keywordflow">while</span> (m_fRadian &gt;= fTwoPi)</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>  {</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    m_fRadian -= fTwoPi;</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>  }</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>  <span class="keywordflow">while</span> (m_fRadian &lt; <span class="keyword">static_cast&lt;</span>Type<span class="keyword">&gt;</span>(0.0))</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>  {</div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    m_fRadian += fTwoPi;</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>  }</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>}</div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> </div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Type&gt;</div>
-<div class="foldopen" id="foldopen00084" data-start="{" data-end="}">
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno"><a class="line" href="../../d3/ddb/classxii_angle_template.html#a61b9cffe96c9937c13122e97f23417f9">   84</a></span><span class="keyword">inline</span> <a class="code hl_function" href="../../d3/ddb/classxii_angle_template.html#a8520af3ae2399283c66b78844af96692">xiiAngleTemplate&lt;Type&gt;</a> <a class="code hl_function" href="../../d3/ddb/classxii_angle_template.html#a61b9cffe96c9937c13122e97f23417f9">xiiAngleTemplate&lt;Type&gt;::GetNormalizedRange</a>()<span class="keyword"> const</span></div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span><span class="keyword"></span>{</div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>  <a class="code hl_function" href="../../d3/ddb/classxii_angle_template.html#a8520af3ae2399283c66b78844af96692">xiiAngleTemplate&lt;Type&gt;</a> out(m_fRadian);</div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>  out.<a class="code hl_function" href="../../d3/ddb/classxii_angle_template.html#a7e9e308308a55e19b03dbf5a3fed8c66">NormalizeRange</a>();</div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>  <span class="keywordflow">return</span> out;</div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>}</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno"><a class="line" href="../../d3/ddb/classxii_angle_template.html#ad395aa30c07355b4af56067d542d6514">   67</a></span>      m_fRadian = fmodf(m_fRadian, fTwoPi);</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    }</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    <span class="keywordflow">else</span></div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    {</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>      m_fRadian = fmod(m_fRadian, fTwoPi);</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    }</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>  }</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>  <span class="keywordflow">while</span> (m_fRadian &gt;= fTwoPi)</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>  {</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    m_fRadian -= fTwoPi;</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>  }</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span> </div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>  <span class="keywordflow">while</span> (m_fRadian &lt; 0.0f)</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>  {</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    m_fRadian += fTwoPi;</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>  }</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>}</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span> </div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Type&gt;</div>
+<div class="foldopen" id="foldopen00087" data-start="{" data-end="}">
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno"><a class="line" href="../../d3/ddb/classxii_angle_template.html#a61b9cffe96c9937c13122e97f23417f9">   87</a></span><span class="keyword">inline</span> <a class="code hl_function" href="../../d3/ddb/classxii_angle_template.html#a8520af3ae2399283c66b78844af96692">xiiAngleTemplate&lt;Type&gt;</a> <a class="code hl_function" href="../../d3/ddb/classxii_angle_template.html#a61b9cffe96c9937c13122e97f23417f9">xiiAngleTemplate&lt;Type&gt;::GetNormalizedRange</a>()<span class="keyword"> const</span></div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span><span class="keyword"></span>{</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>  <a class="code hl_function" href="../../d3/ddb/classxii_angle_template.html#a8520af3ae2399283c66b78844af96692">xiiAngleTemplate&lt;Type&gt;</a> out(m_fRadian);</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>  out.<a class="code hl_function" href="../../d3/ddb/classxii_angle_template.html#a7e9e308308a55e19b03dbf5a3fed8c66">NormalizeRange</a>();</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>  <span class="keywordflow">return</span> out;</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>}</div>
 </div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Type&gt;</div>
-<div class="foldopen" id="foldopen00092" data-start="{" data-end="}">
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno"><a class="line" href="../../d3/ddb/classxii_angle_template.html#a2b5342a182d1fdedc3db8a49cd4a2e21">   92</a></span><span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="../../d3/ddb/classxii_angle_template.html#a2b5342a182d1fdedc3db8a49cd4a2e21">xiiAngleTemplate&lt;Type&gt;::IsEqualSimple</a>(<a class="code hl_function" href="../../d3/ddb/classxii_angle_template.html#a8520af3ae2399283c66b78844af96692">xiiAngleTemplate&lt;Type&gt;</a> rhs, <a class="code hl_function" href="../../d3/ddb/classxii_angle_template.html#a8520af3ae2399283c66b78844af96692">xiiAngleTemplate&lt;Type&gt;</a> epsilon)<span class="keyword"> const</span></div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span><span class="keyword"></span>{</div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>  <span class="keyword">const</span> <a class="code hl_function" href="../../d3/ddb/classxii_angle_template.html#a8520af3ae2399283c66b78844af96692">xiiAngleTemplate&lt;Type&gt;</a> diff = <a class="code hl_function" href="../../d3/ddb/classxii_angle_template.html#a1b19be99c551b7a895730631b2e600e8">AngleBetween</a>(*<span class="keyword">this</span>, rhs);</div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span> </div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>  <span class="keywordflow">return</span> ((diff.m_fRadian &gt;= -epsilon.m_fRadian) &amp;&amp; (diff.m_fRadian &lt;= epsilon.m_fRadian));</div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>}</div>
-</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span> </div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Type&gt;</div>
+<div class="foldopen" id="foldopen00095" data-start="{" data-end="}">
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno"><a class="line" href="../../d3/ddb/classxii_angle_template.html#a2b5342a182d1fdedc3db8a49cd4a2e21">   95</a></span><span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="../../d3/ddb/classxii_angle_template.html#a2b5342a182d1fdedc3db8a49cd4a2e21">xiiAngleTemplate&lt;Type&gt;::IsEqualSimple</a>(<a class="code hl_function" href="../../d3/ddb/classxii_angle_template.html#a8520af3ae2399283c66b78844af96692">xiiAngleTemplate&lt;Type&gt;</a> rhs, <a class="code hl_function" href="../../d3/ddb/classxii_angle_template.html#a8520af3ae2399283c66b78844af96692">xiiAngleTemplate&lt;Type&gt;</a> epsilon)<span class="keyword"> const</span></div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span><span class="keyword"></span>{</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>  <span class="keyword">const</span> <a class="code hl_function" href="../../d3/ddb/classxii_angle_template.html#a8520af3ae2399283c66b78844af96692">xiiAngleTemplate&lt;Type&gt;</a> diff = <a class="code hl_function" href="../../d3/ddb/classxii_angle_template.html#a1b19be99c551b7a895730631b2e600e8">AngleBetween</a>(*<span class="keyword">this</span>, rhs);</div>
 <div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span> </div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Type&gt;</div>
-<div class="foldopen" id="foldopen00100" data-start="{" data-end="}">
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno"><a class="line" href="../../d3/ddb/classxii_angle_template.html#ad395aa30c07355b4af56067d542d6514">  100</a></span><span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="../../d3/ddb/classxii_angle_template.html#ad395aa30c07355b4af56067d542d6514">xiiAngleTemplate&lt;Type&gt;::IsEqualNormalized</a>(<a class="code hl_function" href="../../d3/ddb/classxii_angle_template.html#a8520af3ae2399283c66b78844af96692">xiiAngleTemplate&lt;Type&gt;</a> rhs, <a class="code hl_function" href="../../d3/ddb/classxii_angle_template.html#a8520af3ae2399283c66b78844af96692">xiiAngleTemplate&lt;Type&gt;</a> epsilon)<span class="keyword"> const</span></div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span><span class="keyword"></span>{</div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>  <span class="comment">// Equality between normalized angles</span></div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>  <span class="keyword">const</span> <a class="code hl_function" href="../../d3/ddb/classxii_angle_template.html#a8520af3ae2399283c66b78844af96692">xiiAngleTemplate&lt;Type&gt;</a> aNorm = <a class="code hl_function" href="../../d3/ddb/classxii_angle_template.html#a61b9cffe96c9937c13122e97f23417f9">GetNormalizedRange</a>();</div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>  <span class="keyword">const</span> <a class="code hl_function" href="../../d3/ddb/classxii_angle_template.html#a8520af3ae2399283c66b78844af96692">xiiAngleTemplate&lt;Type&gt;</a> bNorm = rhs.<a class="code hl_function" href="../../d3/ddb/classxii_angle_template.html#a61b9cffe96c9937c13122e97f23417f9">GetNormalizedRange</a>();</div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span> </div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>  <span class="keywordflow">return</span> aNorm.<a class="code hl_function" href="../../d3/ddb/classxii_angle_template.html#a2b5342a182d1fdedc3db8a49cd4a2e21">IsEqualSimple</a>(bNorm, epsilon);</div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>}</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>  <span class="keywordflow">return</span> ((diff.m_fRadian &gt;= -epsilon.m_fRadian) &amp;&amp; (diff.m_fRadian &lt;= epsilon.m_fRadian));</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>}</div>
 </div>
-</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span> </div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Type&gt;</div>
+<div class="foldopen" id="foldopen00103" data-start="{" data-end="}">
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno"><a class="line" href="../../d3/ddb/classxii_angle_template.html#ad395aa30c07355b4af56067d542d6514">  103</a></span><span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="../../d3/ddb/classxii_angle_template.html#ad395aa30c07355b4af56067d542d6514">xiiAngleTemplate&lt;Type&gt;::IsEqualNormalized</a>(<a class="code hl_function" href="../../d3/ddb/classxii_angle_template.html#a8520af3ae2399283c66b78844af96692">xiiAngleTemplate&lt;Type&gt;</a> rhs, <a class="code hl_function" href="../../d3/ddb/classxii_angle_template.html#a8520af3ae2399283c66b78844af96692">xiiAngleTemplate&lt;Type&gt;</a> epsilon)<span class="keyword"> const</span></div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span><span class="keyword"></span>{</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>  <span class="comment">// Equality between normalized angles</span></div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>  <span class="keyword">const</span> <a class="code hl_function" href="../../d3/ddb/classxii_angle_template.html#a8520af3ae2399283c66b78844af96692">xiiAngleTemplate&lt;Type&gt;</a> aNorm = <a class="code hl_function" href="../../d3/ddb/classxii_angle_template.html#a61b9cffe96c9937c13122e97f23417f9">GetNormalizedRange</a>();</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>  <span class="keyword">const</span> <a class="code hl_function" href="../../d3/ddb/classxii_angle_template.html#a8520af3ae2399283c66b78844af96692">xiiAngleTemplate&lt;Type&gt;</a> bNorm = rhs.<a class="code hl_function" href="../../d3/ddb/classxii_angle_template.html#a61b9cffe96c9937c13122e97f23417f9">GetNormalizedRange</a>();</div>
 <div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span> </div>
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Type&gt;</div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span><span class="keyword">constexpr</span> XII_ALWAYS_INLINE <a class="code hl_class" href="../../d3/ddb/classxii_angle_template.html">xiiAngleTemplate&lt;Type&gt;</a> xiiAngleTemplate&lt;Type&gt;::operator-()<span class="keyword"> const</span></div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span><span class="keyword"></span>{</div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>  <span class="keywordflow">return</span> <a class="code hl_class" href="../../d3/ddb/classxii_angle_template.html">xiiAngleTemplate&lt;Type&gt;</a>(-m_fRadian);</div>
-<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>}</div>
-<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span> </div>
-<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Type&gt;</div>
-<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>XII_ALWAYS_INLINE <span class="keywordtype">void</span> xiiAngleTemplate&lt;Type&gt;::operator+=(<a class="code hl_class" href="../../d3/ddb/classxii_angle_template.html">xiiAngleTemplate&lt;Type&gt;</a> r)</div>
-<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>{</div>
-<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>  m_fRadian += r.m_fRadian;</div>
-<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>}</div>
-<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span> </div>
-<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Type&gt;</div>
-<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>XII_ALWAYS_INLINE <span class="keywordtype">void</span> xiiAngleTemplate&lt;Type&gt;::operator-=(<a class="code hl_class" href="../../d3/ddb/classxii_angle_template.html">xiiAngleTemplate&lt;Type&gt;</a> r)</div>
-<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>{</div>
-<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>  m_fRadian -= r.m_fRadian;</div>
-<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>}</div>
-<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span> </div>
-<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Type&gt;</div>
-<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span><span class="keyword">constexpr</span> <span class="keyword">inline</span> <a class="code hl_class" href="../../d3/ddb/classxii_angle_template.html">xiiAngleTemplate&lt;Type&gt;</a> xiiAngleTemplate&lt;Type&gt;::operator+(<a class="code hl_class" href="../../d3/ddb/classxii_angle_template.html">xiiAngleTemplate&lt;Type&gt;</a> r)<span class="keyword"> const</span></div>
-<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span><span class="keyword"></span>{</div>
-<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>  <span class="keywordflow">return</span> <a class="code hl_class" href="../../d3/ddb/classxii_angle_template.html">xiiAngleTemplate&lt;Type&gt;</a>(m_fRadian + r.m_fRadian);</div>
-<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>}</div>
-<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span> </div>
-<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Type&gt;</div>
-<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span><span class="keyword">constexpr</span> <span class="keyword">inline</span> <a class="code hl_class" href="../../d3/ddb/classxii_angle_template.html">xiiAngleTemplate&lt;Type&gt;</a> xiiAngleTemplate&lt;Type&gt;::operator-(<a class="code hl_class" href="../../d3/ddb/classxii_angle_template.html">xiiAngleTemplate&lt;Type&gt;</a> r)<span class="keyword"> const</span></div>
-<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span><span class="keyword"></span>{</div>
-<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>  <span class="keywordflow">return</span> <a class="code hl_class" href="../../d3/ddb/classxii_angle_template.html">xiiAngleTemplate&lt;Type&gt;</a>(m_fRadian - r.m_fRadian);</div>
-<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>}</div>
-<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span> </div>
-<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Type&gt;</div>
-<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span><span class="keyword">constexpr</span> XII_ALWAYS_INLINE <span class="keywordtype">bool</span> xiiAngleTemplate&lt;Type&gt;::operator==(<span class="keyword">const</span> <a class="code hl_class" href="../../d3/ddb/classxii_angle_template.html">xiiAngleTemplate&lt;Type&gt;</a>&amp; r)<span class="keyword"> const</span></div>
-<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span><span class="keyword"></span>{</div>
-<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>  <span class="keywordflow">return</span> m_fRadian == r.m_fRadian;</div>
-<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>}</div>
-<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span> </div>
-<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Type&gt;</div>
-<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span><span class="keyword">constexpr</span> XII_ALWAYS_INLINE std::partial_ordering xiiAngleTemplate&lt;Type&gt;::operator&lt;=&gt;(<span class="keyword">const</span> <a class="code hl_class" href="../../d3/ddb/classxii_angle_template.html">xiiAngleTemplate&lt;Type&gt;</a>&amp; r)<span class="keyword"> const</span></div>
-<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span><span class="keyword"></span>{</div>
-<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>  <span class="keywordflow">return</span> m_fRadian &lt;=&gt; r.m_fRadian;</div>
-<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>}</div>
-<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span> </div>
-<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Type&gt;</div>
-<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span><span class="keyword">constexpr</span> <span class="keyword">inline</span> <a class="code hl_class" href="../../d3/ddb/classxii_angle_template.html">xiiAngleTemplate&lt;Type&gt;</a> operator*(<span class="keyword">const</span> <a class="code hl_class" href="../../d3/ddb/classxii_angle_template.html">xiiAngleTemplate&lt;Type&gt;</a>&amp; a, Type f)</div>
-<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>{</div>
-<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>  <span class="keywordflow">return</span> <a class="code hl_function" href="../../d3/ddb/classxii_angle_template.html#a9c40ebf5138d287759bf494db230a5b2">xiiAngleTemplate&lt;Type&gt;::MakeFromRadian</a>(a.GetRadian() * f);</div>
-<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>}</div>
-<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span> </div>
-<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Type&gt;</div>
-<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span><span class="keyword">constexpr</span> <span class="keyword">inline</span> <a class="code hl_class" href="../../d3/ddb/classxii_angle_template.html">xiiAngleTemplate&lt;Type&gt;</a> operator*(Type f, <span class="keyword">const</span> <a class="code hl_class" href="../../d3/ddb/classxii_angle_template.html">xiiAngleTemplate&lt;Type&gt;</a>&amp; a)</div>
-<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>{</div>
-<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>  <span class="keywordflow">return</span> <a class="code hl_function" href="../../d3/ddb/classxii_angle_template.html#a9c40ebf5138d287759bf494db230a5b2">xiiAngleTemplate&lt;Type&gt;::MakeFromRadian</a>(a.GetRadian() * f);</div>
-<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>}</div>
-<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span> </div>
-<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Type&gt;</div>
-<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span><span class="keyword">constexpr</span> <span class="keyword">inline</span> <a class="code hl_class" href="../../d3/ddb/classxii_angle_template.html">xiiAngleTemplate&lt;Type&gt;</a> operator/(<span class="keyword">const</span> <a class="code hl_class" href="../../d3/ddb/classxii_angle_template.html">xiiAngleTemplate&lt;Type&gt;</a>&amp; a, Type f)</div>
-<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>{</div>
-<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>  <span class="keywordflow">return</span> <a class="code hl_function" href="../../d3/ddb/classxii_angle_template.html#a9c40ebf5138d287759bf494db230a5b2">xiiAngleTemplate&lt;Type&gt;::MakeFromRadian</a>(a.GetRadian() / f);</div>
-<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>}</div>
-<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span> </div>
-<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Type&gt;</div>
-<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span><span class="keyword">constexpr</span> <span class="keyword">inline</span> Type operator/(<span class="keyword">const</span> <a class="code hl_class" href="../../d3/ddb/classxii_angle_template.html">xiiAngleTemplate&lt;Type&gt;</a>&amp; a, <span class="keyword">const</span> <a class="code hl_class" href="../../d3/ddb/classxii_angle_template.html">xiiAngleTemplate&lt;Type&gt;</a>&amp; b)</div>
-<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>{</div>
-<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>  <span class="keywordflow">return</span> a.GetRadian() / b.GetRadian();</div>
-<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>}</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>  <span class="keywordflow">return</span> aNorm.<a class="code hl_function" href="../../d3/ddb/classxii_angle_template.html#a2b5342a182d1fdedc3db8a49cd4a2e21">IsEqualSimple</a>(bNorm, epsilon);</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>}</div>
+</div>
+</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span> </div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Type&gt;</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span><span class="keyword">constexpr</span> XII_ALWAYS_INLINE <a class="code hl_class" href="../../d3/ddb/classxii_angle_template.html">xiiAngleTemplate&lt;Type&gt;</a> xiiAngleTemplate&lt;Type&gt;::operator-()<span class="keyword"> const</span></div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span><span class="keyword"></span>{</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>  <span class="keywordflow">return</span> <a class="code hl_class" href="../../d3/ddb/classxii_angle_template.html">xiiAngleTemplate&lt;Type&gt;</a>(-m_fRadian);</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>}</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span> </div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Type&gt;</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>XII_ALWAYS_INLINE <span class="keywordtype">void</span> xiiAngleTemplate&lt;Type&gt;::operator+=(<a class="code hl_class" href="../../d3/ddb/classxii_angle_template.html">xiiAngleTemplate&lt;Type&gt;</a> r)</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>{</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>  m_fRadian += r.m_fRadian;</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>}</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span> </div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Type&gt;</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>XII_ALWAYS_INLINE <span class="keywordtype">void</span> xiiAngleTemplate&lt;Type&gt;::operator-=(<a class="code hl_class" href="../../d3/ddb/classxii_angle_template.html">xiiAngleTemplate&lt;Type&gt;</a> r)</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>{</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>  m_fRadian -= r.m_fRadian;</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>}</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span> </div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Type&gt;</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span><span class="keyword">constexpr</span> <span class="keyword">inline</span> <a class="code hl_class" href="../../d3/ddb/classxii_angle_template.html">xiiAngleTemplate&lt;Type&gt;</a> xiiAngleTemplate&lt;Type&gt;::operator+(<a class="code hl_class" href="../../d3/ddb/classxii_angle_template.html">xiiAngleTemplate&lt;Type&gt;</a> r)<span class="keyword"> const</span></div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span><span class="keyword"></span>{</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>  <span class="keywordflow">return</span> <a class="code hl_class" href="../../d3/ddb/classxii_angle_template.html">xiiAngleTemplate&lt;Type&gt;</a>(m_fRadian + r.m_fRadian);</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>}</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span> </div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Type&gt;</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span><span class="keyword">constexpr</span> <span class="keyword">inline</span> <a class="code hl_class" href="../../d3/ddb/classxii_angle_template.html">xiiAngleTemplate&lt;Type&gt;</a> xiiAngleTemplate&lt;Type&gt;::operator-(<a class="code hl_class" href="../../d3/ddb/classxii_angle_template.html">xiiAngleTemplate&lt;Type&gt;</a> r)<span class="keyword"> const</span></div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span><span class="keyword"></span>{</div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>  <span class="keywordflow">return</span> <a class="code hl_class" href="../../d3/ddb/classxii_angle_template.html">xiiAngleTemplate&lt;Type&gt;</a>(m_fRadian - r.m_fRadian);</div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>}</div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span> </div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Type&gt;</div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span><span class="keyword">constexpr</span> XII_ALWAYS_INLINE <span class="keywordtype">bool</span> xiiAngleTemplate&lt;Type&gt;::operator==(<span class="keyword">const</span> <a class="code hl_class" href="../../d3/ddb/classxii_angle_template.html">xiiAngleTemplate&lt;Type&gt;</a>&amp; r)<span class="keyword"> const</span></div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span><span class="keyword"></span>{</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>  <span class="keywordflow">return</span> m_fRadian == r.m_fRadian;</div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>}</div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span> </div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Type&gt;</div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span><span class="keyword">constexpr</span> XII_ALWAYS_INLINE std::partial_ordering xiiAngleTemplate&lt;Type&gt;::operator&lt;=&gt;(<span class="keyword">const</span> <a class="code hl_class" href="../../d3/ddb/classxii_angle_template.html">xiiAngleTemplate&lt;Type&gt;</a>&amp; r)<span class="keyword"> const</span></div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span><span class="keyword"></span>{</div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>  <span class="keywordflow">return</span> m_fRadian &lt;=&gt; r.m_fRadian;</div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>}</div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span> </div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Type&gt;</div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span><span class="keyword">constexpr</span> <span class="keyword">inline</span> <a class="code hl_class" href="../../d3/ddb/classxii_angle_template.html">xiiAngleTemplate&lt;Type&gt;</a> operator*(<span class="keyword">const</span> <a class="code hl_class" href="../../d3/ddb/classxii_angle_template.html">xiiAngleTemplate&lt;Type&gt;</a>&amp; a, Type f)</div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>{</div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>  <span class="keywordflow">return</span> <a class="code hl_function" href="../../d3/ddb/classxii_angle_template.html#a9c40ebf5138d287759bf494db230a5b2">xiiAngleTemplate&lt;Type&gt;::MakeFromRadian</a>(a.GetRadian() * f);</div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>}</div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span> </div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Type&gt;</div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span><span class="keyword">constexpr</span> <span class="keyword">inline</span> <a class="code hl_class" href="../../d3/ddb/classxii_angle_template.html">xiiAngleTemplate&lt;Type&gt;</a> operator*(Type f, <span class="keyword">const</span> <a class="code hl_class" href="../../d3/ddb/classxii_angle_template.html">xiiAngleTemplate&lt;Type&gt;</a>&amp; a)</div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>{</div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>  <span class="keywordflow">return</span> <a class="code hl_function" href="../../d3/ddb/classxii_angle_template.html#a9c40ebf5138d287759bf494db230a5b2">xiiAngleTemplate&lt;Type&gt;::MakeFromRadian</a>(a.GetRadian() * f);</div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>}</div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span> </div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Type&gt;</div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span><span class="keyword">constexpr</span> <span class="keyword">inline</span> <a class="code hl_class" href="../../d3/ddb/classxii_angle_template.html">xiiAngleTemplate&lt;Type&gt;</a> operator/(<span class="keyword">const</span> <a class="code hl_class" href="../../d3/ddb/classxii_angle_template.html">xiiAngleTemplate&lt;Type&gt;</a>&amp; a, Type f)</div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>{</div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>  <span class="keywordflow">return</span> <a class="code hl_function" href="../../d3/ddb/classxii_angle_template.html#a9c40ebf5138d287759bf494db230a5b2">xiiAngleTemplate&lt;Type&gt;::MakeFromRadian</a>(a.GetRadian() / f);</div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>}</div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span> </div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Type&gt;</div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span><span class="keyword">constexpr</span> <span class="keyword">inline</span> Type operator/(<span class="keyword">const</span> <a class="code hl_class" href="../../d3/ddb/classxii_angle_template.html">xiiAngleTemplate&lt;Type&gt;</a>&amp; a, <span class="keyword">const</span> <a class="code hl_class" href="../../d3/ddb/classxii_angle_template.html">xiiAngleTemplate&lt;Type&gt;</a>&amp; b)</div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>{</div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>  <span class="keywordflow">return</span> a.GetRadian() / b.GetRadian();</div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>}</div>
 </div>
 </div>
 </div>
@@ -323,16 +326,16 @@ $(function(){initNavTree('dd/d0f/_angle__inl_8h_source.html','../../'); initResi
 <div class="ttc" id="aclassxii_angle_template_html"><div class="ttname"><a href="../../d3/ddb/classxii_angle_template.html">xiiAngleTemplate</a></div><div class="ttdoc">Wrapper class for a safe usage and conversions of angles.</div><div class="ttdef"><b>Definition</b> Angle.h:10</div></div>
 <div class="ttc" id="aclassxii_angle_template_html_a0981cd78050c0ee3b82197d6572d56be"><div class="ttname"><a href="../../d3/ddb/classxii_angle_template.html#a0981cd78050c0ee3b82197d6572d56be">xiiAngleTemplate::GetDegree</a></div><div class="ttdeci">constexpr Type GetDegree() const</div><div class="ttdoc">Returns the degree value. (Performs a conversion)</div><div class="ttdef"><b>Definition</b> Angle_inl.h:46</div></div>
 <div class="ttc" id="aclassxii_angle_template_html_a125b34adf00dc677204d2a7a5904b2ab"><div class="ttname"><a href="../../d3/ddb/classxii_angle_template.html#a125b34adf00dc677204d2a7a5904b2ab">xiiAngleTemplate::DegToRad</a></div><div class="ttdeci">static constexpr Type DegToRad(Type f)</div><div class="ttdoc">Converts an angle in degree to radians.</div><div class="ttdef"><b>Definition</b> Angle_inl.h:22</div></div>
-<div class="ttc" id="aclassxii_angle_template_html_a1b19be99c551b7a895730631b2e600e8"><div class="ttname"><a href="../../d3/ddb/classxii_angle_template.html#a1b19be99c551b7a895730631b2e600e8">xiiAngleTemplate::AngleBetween</a></div><div class="ttdeci">static constexpr xiiAngleTemplate&lt; Type &gt; AngleBetween(xiiAngleTemplate&lt; Type &gt; a, xiiAngleTemplate&lt; Type &gt; b)</div><div class="ttdoc">Computes the smallest angle between the two given angles. The angle will always be a positive value.</div><div class="ttdef"><b>Definition</b> Math_inl.h:465</div></div>
-<div class="ttc" id="aclassxii_angle_template_html_a2b5342a182d1fdedc3db8a49cd4a2e21"><div class="ttname"><a href="../../d3/ddb/classxii_angle_template.html#a2b5342a182d1fdedc3db8a49cd4a2e21">xiiAngleTemplate::IsEqualSimple</a></div><div class="ttdeci">bool IsEqualSimple(xiiAngleTemplate&lt; Type &gt; rhs, xiiAngleTemplate&lt; Type &gt; epsilon) const</div><div class="ttdoc">Equality check with epsilon. Simple check without normalization. 360 degree will equal 0 degree,...</div><div class="ttdef"><b>Definition</b> Angle_inl.h:92</div></div>
+<div class="ttc" id="aclassxii_angle_template_html_a1b19be99c551b7a895730631b2e600e8"><div class="ttname"><a href="../../d3/ddb/classxii_angle_template.html#a1b19be99c551b7a895730631b2e600e8">xiiAngleTemplate::AngleBetween</a></div><div class="ttdeci">static constexpr xiiAngleTemplate&lt; Type &gt; AngleBetween(xiiAngleTemplate&lt; Type &gt; a, xiiAngleTemplate&lt; Type &gt; b)</div><div class="ttdoc">Computes the smallest angle between the two given angles. The angle will always be a positive value.</div><div class="ttdef"><b>Definition</b> Math_inl.h:466</div></div>
+<div class="ttc" id="aclassxii_angle_template_html_a2b5342a182d1fdedc3db8a49cd4a2e21"><div class="ttname"><a href="../../d3/ddb/classxii_angle_template.html#a2b5342a182d1fdedc3db8a49cd4a2e21">xiiAngleTemplate::IsEqualSimple</a></div><div class="ttdeci">bool IsEqualSimple(xiiAngleTemplate&lt; Type &gt; rhs, xiiAngleTemplate&lt; Type &gt; epsilon) const</div><div class="ttdoc">Equality check with epsilon. Simple check without normalization. 360 degree will equal 0 degree,...</div><div class="ttdef"><b>Definition</b> Angle_inl.h:95</div></div>
 <div class="ttc" id="aclassxii_angle_template_html_a56b7439a2dd2efc94c847a302a32b820"><div class="ttname"><a href="../../d3/ddb/classxii_angle_template.html#a56b7439a2dd2efc94c847a302a32b820">xiiAngleTemplate::RadToDeg</a></div><div class="ttdeci">static constexpr Type RadToDeg(Type f)</div><div class="ttdoc">Converts an angle in radians to degree.</div><div class="ttdef"><b>Definition</b> Angle_inl.h:28</div></div>
-<div class="ttc" id="aclassxii_angle_template_html_a61b9cffe96c9937c13122e97f23417f9"><div class="ttname"><a href="../../d3/ddb/classxii_angle_template.html#a61b9cffe96c9937c13122e97f23417f9">xiiAngleTemplate::GetNormalizedRange</a></div><div class="ttdeci">xiiAngleTemplate&lt; Type &gt; GetNormalizedRange() const</div><div class="ttdoc">Returns an equivalent angle with range between 0 degree - 360 degree.</div><div class="ttdef"><b>Definition</b> Angle_inl.h:84</div></div>
+<div class="ttc" id="aclassxii_angle_template_html_a61b9cffe96c9937c13122e97f23417f9"><div class="ttname"><a href="../../d3/ddb/classxii_angle_template.html#a61b9cffe96c9937c13122e97f23417f9">xiiAngleTemplate::GetNormalizedRange</a></div><div class="ttdeci">xiiAngleTemplate&lt; Type &gt; GetNormalizedRange() const</div><div class="ttdoc">Returns an equivalent angle with range between 0 degree - 360 degree.</div><div class="ttdef"><b>Definition</b> Angle_inl.h:87</div></div>
 <div class="ttc" id="aclassxii_angle_template_html_a7da06216380b9e6d3e6f04570afb9a2c"><div class="ttname"><a href="../../d3/ddb/classxii_angle_template.html#a7da06216380b9e6d3e6f04570afb9a2c">xiiAngleTemplate::DegToRadMultiplier</a></div><div class="ttdeci">static constexpr XII_ALWAYS_INLINE Type DegToRadMultiplier()</div><div class="ttdoc">Returns the constant to multiply with an angle in degree to convert it to radians.</div><div class="ttdef"><b>Definition</b> Angle_inl.h:10</div></div>
 <div class="ttc" id="aclassxii_angle_template_html_a7e9e308308a55e19b03dbf5a3fed8c66"><div class="ttname"><a href="../../d3/ddb/classxii_angle_template.html#a7e9e308308a55e19b03dbf5a3fed8c66">xiiAngleTemplate::NormalizeRange</a></div><div class="ttdeci">void NormalizeRange()</div><div class="ttdoc">Brings the angle into the range of 0 degree - 360 degree.</div><div class="ttdef"><b>Definition</b> Angle_inl.h:58</div></div>
 <div class="ttc" id="aclassxii_angle_template_html_a8520af3ae2399283c66b78844af96692"><div class="ttname"><a href="../../d3/ddb/classxii_angle_template.html#a8520af3ae2399283c66b78844af96692">xiiAngleTemplate::xiiAngleTemplate</a></div><div class="ttdeci">constexpr xiiAngleTemplate()</div><div class="ttdoc">Standard constructor, initializing with 0.</div><div class="ttdef"><b>Definition</b> Angle.h:36</div></div>
 <div class="ttc" id="aclassxii_angle_template_html_a9c40ebf5138d287759bf494db230a5b2"><div class="ttname"><a href="../../d3/ddb/classxii_angle_template.html#a9c40ebf5138d287759bf494db230a5b2">xiiAngleTemplate::MakeFromRadian</a></div><div class="ttdeci">static constexpr xiiAngleTemplate&lt; Type &gt; MakeFromRadian(Type fRadian)</div><div class="ttdoc">Creates an instance of xiiAngleTemplate&lt;Type&gt; that was initialized from radian. (No need for any conv...</div><div class="ttdef"><b>Definition</b> Angle_inl.h:40</div></div>
 <div class="ttc" id="aclassxii_angle_template_html_aad83b7c65f38f601d03f3d0c7fbcefc5"><div class="ttname"><a href="../../d3/ddb/classxii_angle_template.html#aad83b7c65f38f601d03f3d0c7fbcefc5">xiiAngleTemplate::RadToDegMultiplier</a></div><div class="ttdeci">static constexpr XII_ALWAYS_INLINE Type RadToDegMultiplier()</div><div class="ttdoc">Returns the constant to multiply with an angle in degree to convert it to radians.</div><div class="ttdef"><b>Definition</b> Angle_inl.h:16</div></div>
-<div class="ttc" id="aclassxii_angle_template_html_ad395aa30c07355b4af56067d542d6514"><div class="ttname"><a href="../../d3/ddb/classxii_angle_template.html#ad395aa30c07355b4af56067d542d6514">xiiAngleTemplate::IsEqualNormalized</a></div><div class="ttdeci">bool IsEqualNormalized(xiiAngleTemplate&lt; Type &gt; rhs, xiiAngleTemplate&lt; Type &gt; epsilon) const</div><div class="ttdoc">Equality check with epsilon that uses normalized angles. Will recognize 720 degree == 0 degree.</div><div class="ttdef"><b>Definition</b> Angle_inl.h:100</div></div>
+<div class="ttc" id="aclassxii_angle_template_html_ad395aa30c07355b4af56067d542d6514"><div class="ttname"><a href="../../d3/ddb/classxii_angle_template.html#ad395aa30c07355b4af56067d542d6514">xiiAngleTemplate::IsEqualNormalized</a></div><div class="ttdeci">bool IsEqualNormalized(xiiAngleTemplate&lt; Type &gt; rhs, xiiAngleTemplate&lt; Type &gt; epsilon) const</div><div class="ttdoc">Equality check with epsilon that uses normalized angles. Will recognize 720 degree == 0 degree.</div><div class="ttdef"><b>Definition</b> Angle_inl.h:103</div></div>
 <div class="ttc" id="aclassxii_angle_template_html_ad54cb856684d34910eaa24e78e90c71f"><div class="ttname"><a href="../../d3/ddb/classxii_angle_template.html#ad54cb856684d34910eaa24e78e90c71f">xiiAngleTemplate::MakeFromDegree</a></div><div class="ttdeci">static constexpr xiiAngleTemplate&lt; Type &gt; MakeFromDegree(Type fDegree)</div><div class="ttdoc">Creates an instance of xiiAngleTemplate&lt;Type&gt; that was initialized from degree. (Performs a conversio...</div><div class="ttdef"><b>Definition</b> Angle_inl.h:34</div></div>
 <div class="ttc" id="aclassxii_angle_template_html_afaebb218561104c8b89d645dab3d8ded"><div class="ttname"><a href="../../d3/ddb/classxii_angle_template.html#afaebb218561104c8b89d645dab3d8ded">xiiAngleTemplate::GetRadian</a></div><div class="ttdeci">constexpr Type GetRadian() const</div><div class="ttdoc">Returns the radian value. (No need for any conversion)</div><div class="ttdef"><b>Definition</b> Angle_inl.h:52</div></div>
 </div><!-- fragment --></div><!-- contents -->
@@ -341,7 +344,7 @@ $(function(){initNavTree('dd/d0f/_angle__inl_8h_source.html','../../'); initResi
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.html">home</a></li><li class="navelem"><a class="el" href="../../dir_1036706e55c22cab35bc1c58ee689f1d.html">runner</a></li><li class="navelem"><a class="el" href="../../dir_629f8151d55d307162ff2d619fb1783d.html">work</a></li><li class="navelem"><a class="el" href="../../dir_1ddc44fe1263a8c7935fa6130b7d9499.html">XII</a></li><li class="navelem"><a class="el" href="../../dir_2c1b6808f12952f4c36e05ba7068379a.html">XII</a></li><li class="navelem"><a class="el" href="../../dir_b5a1c4ecfca018ad24b729e213296d41.html">Source</a></li><li class="navelem"><a class="el" href="../../dir_e321052006a51284e67389ab20037e7c.html">Engine</a></li><li class="navelem"><a class="el" href="../../dir_be0c42c58b36f42c54ec54024ed4f6af.html">Foundation</a></li><li class="navelem"><a class="el" href="../../dir_c1b0860bb61ff24e678d996d14e4bcdd.html">Math</a></li><li class="navelem"><a class="el" href="../../dir_fb7e93d80251333452775ccd3b7c417a.html">Implementation</a></li><li class="navelem"><b>Angle_inl.h</b></li>
-    <li class="footer">Generated on Sat Mar 22 2025 03:24:43 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Thu May 22 2025 22:11:31 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 </body>

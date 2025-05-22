@@ -105,6 +105,11 @@ $(function(){initNavTree('d4/d8d/structxii_transform_component_flags.html','../.
   <div class="headertitle"><div class="title">xiiTransformComponentFlags Struct Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Internal flags for the current state of a transform component.  
+ <a href="#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="../../d4/d94/_transform_component_8h_source.html">TransformComponent.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
@@ -113,13 +118,14 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:ae2e9faed973699ad530405d6cc22c042" id="r_ae2e9faed973699ad530405d6cc22c042"><td class="memItemLeft" align="right" valign="top"><a id="ae2e9faed973699ad530405d6cc22c042" name="ae2e9faed973699ad530405d6cc22c042"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>Enum</b> { <br />
+<tr class="memitem:ae2e9faed973699ad530405d6cc22c042" id="r_ae2e9faed973699ad530405d6cc22c042"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae2e9faed973699ad530405d6cc22c042">Enum</a> { <br />
 &#160;&#160;<b>None</b> = 0
-, <b>Running</b> = XII_BIT(0)
-, <b>AutoReturnStart</b> = XII_BIT(1)
-, <b>AutoReturnEnd</b> = XII_BIT(2)
+, <a class="el" href="#ae2e9faed973699ad530405d6cc22c042adae67f1628a1b3c9168a310940351e31">Running</a> = XII_BIT(0)
+, <a class="el" href="#ae2e9faed973699ad530405d6cc22c042aa8094a3f8fc6de017b80b369cc280bbe">AutoReturnStart</a> = XII_BIT(1)
+, <a class="el" href="#ae2e9faed973699ad530405d6cc22c042acf01aebb7a20dcd6bb2bdf5266d426c6">AutoReturnEnd</a> = XII_BIT(2)
 , <br />
-&#160;&#160;<b>AnimationReversed</b> = XII_BIT(5)
+&#160;&#160;<a class="el" href="#ae2e9faed973699ad530405d6cc22c042a058a3602f94aa5dde74f97ff1affa93f">CurrentlyRunning</a> = XII_BIT(3)
+, <a class="el" href="#ae2e9faed973699ad530405d6cc22c042a309afd76299bfb5a409c4fed72c7ca59">AnimationReversed</a> = XII_BIT(5)
 , <b>Default</b> = Running | AutoReturnStart | AutoReturnEnd
 <br />
  }</td></tr>
@@ -128,6 +134,35 @@ Public Types</h2></td></tr>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>StorageType</b> = xiiUInt16</td></tr>
 <tr class="separator:aaa2ba1368127bcffabb302a761748e4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Internal flags for the current state of a transform component. </p>
+</div><h2 class="groupheader">Member Enumeration Documentation</h2>
+<a id="ae2e9faed973699ad530405d6cc22c042" name="ae2e9faed973699ad530405d6cc22c042"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae2e9faed973699ad530405d6cc22c042">&#9670;&#160;</a></span>Enum</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="#ae2e9faed973699ad530405d6cc22c042">xiiTransformComponentFlags::Enum</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ae2e9faed973699ad530405d6cc22c042adae67f1628a1b3c9168a310940351e31" name="ae2e9faed973699ad530405d6cc22c042adae67f1628a1b3c9168a310940351e31"></a>Running&#160;</td><td class="fielddoc"><p>Start state for the CurrentlyRunning flag. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ae2e9faed973699ad530405d6cc22c042aa8094a3f8fc6de017b80b369cc280bbe" name="ae2e9faed973699ad530405d6cc22c042aa8094a3f8fc6de017b80b369cc280bbe"></a>AutoReturnStart&#160;</td><td class="fielddoc"><p>When reaching the start point, the transform should automatically turn around. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ae2e9faed973699ad530405d6cc22c042acf01aebb7a20dcd6bb2bdf5266d426c6" name="ae2e9faed973699ad530405d6cc22c042acf01aebb7a20dcd6bb2bdf5266d426c6"></a>AutoReturnEnd&#160;</td><td class="fielddoc"><p>When reaching the end point, the transform should automatically turn around. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ae2e9faed973699ad530405d6cc22c042a058a3602f94aa5dde74f97ff1affa93f" name="ae2e9faed973699ad530405d6cc22c042a058a3602f94aa5dde74f97ff1affa93f"></a>CurrentlyRunning&#160;</td><td class="fielddoc"><p>The component is currently modifying the transform. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ae2e9faed973699ad530405d6cc22c042a309afd76299bfb5a409c4fed72c7ca59" name="ae2e9faed973699ad530405d6cc22c042a309afd76299bfb5a409c4fed72c7ca59"></a>AnimationReversed&#160;</td><td class="fielddoc"><p>The animation playback is currently in reverse. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li>/home/runner/work/XII/XII/Source/Engine/GameEngine/Animation/<a class="el" href="../../d4/d94/_transform_component_8h_source.html">TransformComponent.h</a></li>
 </ul>
@@ -137,7 +172,7 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>StorageType</b> = xi
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d4/d8d/structxii_transform_component_flags.html">xiiTransformComponentFlags</a></li>
-    <li class="footer">Generated on Sat Mar 22 2025 03:24:51 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Thu May 22 2025 22:11:37 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 </body>

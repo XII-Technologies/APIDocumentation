@@ -123,11 +123,6 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a5070e57442809619777be033f46c6c0c" id="r_a5070e57442809619777be033f46c6c0c"><td class="memItemLeft" align="right" valign="top"><a id="a5070e57442809619777be033f46c6c0c" name="a5070e57442809619777be033f46c6c0c"></a>enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5070e57442809619777be033f46c6c0c">TransformPreservation</a> { <b>PreserveLocal</b>
-, <b>PreserveGlobal</b>
- }</td></tr>
-<tr class="memdesc:a5070e57442809619777be033f46c6c0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines during re-parenting what transform is going to be preserved. <br /></td></tr>
-<tr class="separator:a5070e57442809619777be033f46c6c0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a05ca9a629994b6e8be20ba6c74f46f45" id="r_a05ca9a629994b6e8be20ba6c74f46f45"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a05ca9a629994b6e8be20ba6c74f46f45">UpdateBehaviorIfStatic</a> { <a class="el" href="#a05ca9a629994b6e8be20ba6c74f46f45a6adf97f83acf6453d4a6a4b1070f3754">None</a>
 , <a class="el" href="#a05ca9a629994b6e8be20ba6c74f46f45a28495bc4bd0366e01fb565853b6bfcd2">UpdateImmediately</a>
  }</td></tr>
@@ -183,6 +178,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>SetName</b> (const <a
 <tr class="memitem:a71199ff9069c448012f25067178e201d" id="r_a71199ff9069c448012f25067178e201d"><td class="memItemLeft" align="right" valign="top"><a id="a71199ff9069c448012f25067178e201d" name="a71199ff9069c448012f25067178e201d"></a>
 <a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetName</b> () const</td></tr>
 <tr class="separator:a71199ff9069c448012f25067178e201d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac66e9dd15c5b9b8a5c515cc7206ced93" id="r_ac66e9dd15c5b9b8a5c515cc7206ced93"><td class="memItemLeft" align="right" valign="top"><a id="ac66e9dd15c5b9b8a5c515cc7206ced93" name="ac66e9dd15c5b9b8a5c515cc7206ced93"></a>
+const <a class="el" href="../../d6/d0c/classxii_hashed_string.html">xiiHashedString</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetNameHashed</b> () const</td></tr>
+<tr class="separator:ac66e9dd15c5b9b8a5c515cc7206ced93"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9ea4fd6b7ebe0f9491baafdbe62c927f" id="r_a9ea4fd6b7ebe0f9491baafdbe62c927f"><td class="memItemLeft" align="right" valign="top"><a id="a9ea4fd6b7ebe0f9491baafdbe62c927f" name="a9ea4fd6b7ebe0f9491baafdbe62c927f"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>HasName</b> (const <a class="el" href="../../d5/dd2/classxii_temp_hashed_string.html">xiiTempHashedString</a> &amp;sName) const</td></tr>
 <tr class="separator:a9ea4fd6b7ebe0f9491baafdbe62c927f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -210,10 +208,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>EnableParentChangesNo
 <tr class="memitem:acbc85acf8b0219d229d7ba4b80ccecd6" id="r_acbc85acf8b0219d229d7ba4b80ccecd6"><td class="memItemLeft" align="right" valign="top"><a id="acbc85acf8b0219d229d7ba4b80ccecd6" name="acbc85acf8b0219d229d7ba4b80ccecd6"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>DisableParentChangesNotifications</b> ()</td></tr>
 <tr class="separator:acbc85acf8b0219d229d7ba4b80ccecd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad78f72330e0143a7ec42b892b471eba2" id="r_ad78f72330e0143a7ec42b892b471eba2"><td class="memItemLeft" align="right" valign="top"><a id="ad78f72330e0143a7ec42b892b471eba2" name="ad78f72330e0143a7ec42b892b471eba2"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SetParent</b> (const <a class="el" href="../../da/d2c/structxii_game_object_handle.html">xiiGameObjectHandle</a> &amp;hParent, <a class="el" href="#a5070e57442809619777be033f46c6c0c">xiiGameObject::TransformPreservation</a> preserve=TransformPreservation::PreserveGlobal)</td></tr>
-<tr class="memdesc:ad78f72330e0143a7ec42b892b471eba2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the parent of this object to the given. <br /></td></tr>
-<tr class="separator:ad78f72330e0143a7ec42b892b471eba2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5a1c8eaeb1b2e8fa1250253e35e5810" id="r_af5a1c8eaeb1b2e8fa1250253e35e5810"><td class="memItemLeft" align="right" valign="top"><a id="af5a1c8eaeb1b2e8fa1250253e35e5810" name="af5a1c8eaeb1b2e8fa1250253e35e5810"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetParent</b> (const <a class="el" href="../../da/d2c/structxii_game_object_handle.html">xiiGameObjectHandle</a> &amp;hParent, xiiTransformPreservation::Enum preserve=xiiTransformPreservation::PreserveGlobal)</td></tr>
+<tr class="memdesc:af5a1c8eaeb1b2e8fa1250253e35e5810"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the parent of this object to the given. <br /></td></tr>
+<tr class="separator:af5a1c8eaeb1b2e8fa1250253e35e5810"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afde544261489c56e8b8f8a39daa4bd5a" id="r_afde544261489c56e8b8f8a39daa4bd5a"><td class="memItemLeft" align="right" valign="top"><a id="afde544261489c56e8b8f8a39daa4bd5a" name="afde544261489c56e8b8f8a39daa4bd5a"></a>
 <a class="el" href="../../d0/d91/classxii_game_object.html">xiiGameObject</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetParent</b> ()</td></tr>
 <tr class="memdesc:afde544261489c56e8b8f8a39daa4bd5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the parent of this object or nullptr if this is a top-level object. <br /></td></tr>
@@ -222,22 +220,22 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>SetParent</b> (const 
 const <a class="el" href="../../d0/d91/classxii_game_object.html">xiiGameObject</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetParent</b> () const</td></tr>
 <tr class="memdesc:ae0497696cfbff5835aaccc292a223bd1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the parent of this object or nullptr if this is a top-level object. <br /></td></tr>
 <tr class="separator:ae0497696cfbff5835aaccc292a223bd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7d2aead6479539d4b2e3cb6ff449d63e" id="r_a7d2aead6479539d4b2e3cb6ff449d63e"><td class="memItemLeft" align="right" valign="top"><a id="a7d2aead6479539d4b2e3cb6ff449d63e" name="a7d2aead6479539d4b2e3cb6ff449d63e"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>AddChild</b> (const <a class="el" href="../../da/d2c/structxii_game_object_handle.html">xiiGameObjectHandle</a> &amp;hChild, <a class="el" href="#a5070e57442809619777be033f46c6c0c">xiiGameObject::TransformPreservation</a> preserve=TransformPreservation::PreserveGlobal)</td></tr>
-<tr class="memdesc:a7d2aead6479539d4b2e3cb6ff449d63e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds the given object as a child object. <br /></td></tr>
-<tr class="separator:a7d2aead6479539d4b2e3cb6ff449d63e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a954c7f4aa69b9468e3ff29a6f309f2ec" id="r_a954c7f4aa69b9468e3ff29a6f309f2ec"><td class="memItemLeft" align="right" valign="top"><a id="a954c7f4aa69b9468e3ff29a6f309f2ec" name="a954c7f4aa69b9468e3ff29a6f309f2ec"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>AddChildren</b> (const <a class="el" href="../../d0/d60/classxii_array_ptr.html">xiiArrayPtr</a>&lt; const <a class="el" href="../../da/d2c/structxii_game_object_handle.html">xiiGameObjectHandle</a> &gt; &amp;children, <a class="el" href="#a5070e57442809619777be033f46c6c0c">xiiGameObject::TransformPreservation</a> preserve=TransformPreservation::PreserveGlobal)</td></tr>
-<tr class="memdesc:a954c7f4aa69b9468e3ff29a6f309f2ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds the given objects as child objects. <br /></td></tr>
-<tr class="separator:a954c7f4aa69b9468e3ff29a6f309f2ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac4167e4422bc4a8d62168613686977e6" id="r_ac4167e4422bc4a8d62168613686977e6"><td class="memItemLeft" align="right" valign="top"><a id="ac4167e4422bc4a8d62168613686977e6" name="ac4167e4422bc4a8d62168613686977e6"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>DetachChild</b> (const <a class="el" href="../../da/d2c/structxii_game_object_handle.html">xiiGameObjectHandle</a> &amp;hChild, <a class="el" href="#a5070e57442809619777be033f46c6c0c">xiiGameObject::TransformPreservation</a> preserve=TransformPreservation::PreserveGlobal)</td></tr>
-<tr class="memdesc:ac4167e4422bc4a8d62168613686977e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Detaches the given child object from this object and makes it a top-level object. <br /></td></tr>
-<tr class="separator:ac4167e4422bc4a8d62168613686977e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9b9590dc50b801f9f34be8863eb5eb9c" id="r_a9b9590dc50b801f9f34be8863eb5eb9c"><td class="memItemLeft" align="right" valign="top"><a id="a9b9590dc50b801f9f34be8863eb5eb9c" name="a9b9590dc50b801f9f34be8863eb5eb9c"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>DetachChildren</b> (const <a class="el" href="../../d0/d60/classxii_array_ptr.html">xiiArrayPtr</a>&lt; const <a class="el" href="../../da/d2c/structxii_game_object_handle.html">xiiGameObjectHandle</a> &gt; &amp;children, <a class="el" href="#a5070e57442809619777be033f46c6c0c">xiiGameObject::TransformPreservation</a> preserve=TransformPreservation::PreserveGlobal)</td></tr>
-<tr class="memdesc:a9b9590dc50b801f9f34be8863eb5eb9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Detaches the given child objects from this object and makes them top-level objects. <br /></td></tr>
-<tr class="separator:a9b9590dc50b801f9f34be8863eb5eb9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba35906b6c8229224c30df7e5064c0e7" id="r_aba35906b6c8229224c30df7e5064c0e7"><td class="memItemLeft" align="right" valign="top"><a id="aba35906b6c8229224c30df7e5064c0e7" name="aba35906b6c8229224c30df7e5064c0e7"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>AddChild</b> (const <a class="el" href="../../da/d2c/structxii_game_object_handle.html">xiiGameObjectHandle</a> &amp;hChild, xiiTransformPreservation::Enum preserve=xiiTransformPreservation::PreserveGlobal)</td></tr>
+<tr class="memdesc:aba35906b6c8229224c30df7e5064c0e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds the given object as a child object. <br /></td></tr>
+<tr class="separator:aba35906b6c8229224c30df7e5064c0e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9f46adcfc4ba323503a104395fd1235" id="r_af9f46adcfc4ba323503a104395fd1235"><td class="memItemLeft" align="right" valign="top"><a id="af9f46adcfc4ba323503a104395fd1235" name="af9f46adcfc4ba323503a104395fd1235"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>AddChildren</b> (const <a class="el" href="../../d0/d60/classxii_array_ptr.html">xiiArrayPtr</a>&lt; const <a class="el" href="../../da/d2c/structxii_game_object_handle.html">xiiGameObjectHandle</a> &gt; &amp;children, xiiTransformPreservation::Enum preserve=xiiTransformPreservation::PreserveGlobal)</td></tr>
+<tr class="memdesc:af9f46adcfc4ba323503a104395fd1235"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds the given objects as child objects. <br /></td></tr>
+<tr class="separator:af9f46adcfc4ba323503a104395fd1235"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac29b582accec09ea9bcde2c756f658a6" id="r_ac29b582accec09ea9bcde2c756f658a6"><td class="memItemLeft" align="right" valign="top"><a id="ac29b582accec09ea9bcde2c756f658a6" name="ac29b582accec09ea9bcde2c756f658a6"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>DetachChild</b> (const <a class="el" href="../../da/d2c/structxii_game_object_handle.html">xiiGameObjectHandle</a> &amp;hChild, xiiTransformPreservation::Enum preserve=xiiTransformPreservation::PreserveGlobal)</td></tr>
+<tr class="memdesc:ac29b582accec09ea9bcde2c756f658a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Detaches the given child object from this object and makes it a top-level object. <br /></td></tr>
+<tr class="separator:ac29b582accec09ea9bcde2c756f658a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa15cf4ab3dba9402650b02cfe98d7593" id="r_aa15cf4ab3dba9402650b02cfe98d7593"><td class="memItemLeft" align="right" valign="top"><a id="aa15cf4ab3dba9402650b02cfe98d7593" name="aa15cf4ab3dba9402650b02cfe98d7593"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>DetachChildren</b> (const <a class="el" href="../../d0/d60/classxii_array_ptr.html">xiiArrayPtr</a>&lt; const <a class="el" href="../../da/d2c/structxii_game_object_handle.html">xiiGameObjectHandle</a> &gt; &amp;children, xiiTransformPreservation::Enum preserve=xiiTransformPreservation::PreserveGlobal)</td></tr>
+<tr class="memdesc:aa15cf4ab3dba9402650b02cfe98d7593"><td class="mdescLeft">&#160;</td><td class="mdescRight">Detaches the given child objects from this object and makes them top-level objects. <br /></td></tr>
+<tr class="separator:aa15cf4ab3dba9402650b02cfe98d7593"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a94a14d4995ae6931f1edd4419c431617" id="r_a94a14d4995ae6931f1edd4419c431617"><td class="memItemLeft" align="right" valign="top"><a id="a94a14d4995ae6931f1edd4419c431617" name="a94a14d4995ae6931f1edd4419c431617"></a>
 xiiUInt32&#160;</td><td class="memItemRight" valign="bottom"><b>GetChildCount</b> () const</td></tr>
 <tr class="memdesc:a94a14d4995ae6931f1edd4419c431617"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of children. <br /></td></tr>
@@ -250,17 +248,31 @@ xiiUInt32&#160;</td><td class="memItemRight" valign="bottom"><b>GetChildCount</b
 <a class="el" href="../../d9/d28/classxii_game_object_1_1_const_child_iterator.html">ConstChildIterator</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetChildren</b> () const</td></tr>
 <tr class="memdesc:a04d205806494de881e7950bed39b002d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an iterator over all children of this object. <br /></td></tr>
 <tr class="separator:a04d205806494de881e7950bed39b002d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a94dc613501a62f92a4a4013566c13059" id="r_a94dc613501a62f92a4a4013566c13059"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d91/classxii_game_object.html">xiiGameObject</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a94dc613501a62f92a4a4013566c13059">FindChildByName</a> (const <a class="el" href="../../d5/dd2/classxii_temp_hashed_string.html">xiiTempHashedString</a> &amp;sName, bool bRecursive=true)</td></tr>
-<tr class="memdesc:a94dc613501a62f92a4a4013566c13059"><td class="mdescLeft">&#160;</td><td class="mdescRight">Searches for a child object with the given name. Optionally traverses the entire hierarchy.  <br /></td></tr>
+<tr class="memitem:a94dc613501a62f92a4a4013566c13059" id="r_a94dc613501a62f92a4a4013566c13059"><td class="memItemLeft" align="right" valign="top"><a id="a94dc613501a62f92a4a4013566c13059" name="a94dc613501a62f92a4a4013566c13059"></a>
+<a class="el" href="../../d0/d91/classxii_game_object.html">xiiGameObject</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>FindChildByName</b> (const <a class="el" href="../../d5/dd2/classxii_temp_hashed_string.html">xiiTempHashedString</a> &amp;sName, bool bRecursive=true)</td></tr>
+<tr class="memdesc:a94dc613501a62f92a4a4013566c13059"><td class="mdescLeft">&#160;</td><td class="mdescRight">Searches for a child object with the given name. Optionally traverses the entire hierarchy. <br /></td></tr>
 <tr class="separator:a94dc613501a62f92a4a4013566c13059"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3d58e8e60f3e8a2295a59264e726bb6" id="r_ab3d58e8e60f3e8a2295a59264e726bb6"><td class="memItemLeft" align="right" valign="top"><a id="ab3d58e8e60f3e8a2295a59264e726bb6" name="ab3d58e8e60f3e8a2295a59264e726bb6"></a>
+const <a class="el" href="../../d0/d91/classxii_game_object.html">xiiGameObject</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>FindChildByName</b> (const <a class="el" href="../../d5/dd2/classxii_temp_hashed_string.html">xiiTempHashedString</a> &amp;sName, bool bRecursive=true) const</td></tr>
+<tr class="memdesc:ab3d58e8e60f3e8a2295a59264e726bb6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Searches for a child object with the given name. Optionally traverses the entire hierarchy. <br /></td></tr>
+<tr class="separator:ab3d58e8e60f3e8a2295a59264e726bb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a757bc891dd3fc1d63a362822dbe812c0" id="r_a757bc891dd3fc1d63a362822dbe812c0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d91/classxii_game_object.html">xiiGameObject</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a757bc891dd3fc1d63a362822dbe812c0">FindChildByPath</a> (<a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sPath)</td></tr>
 <tr class="memdesc:a757bc891dd3fc1d63a362822dbe812c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Searches for a child using a path. Every path segment represents a child with a given name.  <br /></td></tr>
 <tr class="separator:a757bc891dd3fc1d63a362822dbe812c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8793b6e4502c1e6ceaed435fcebaa47" id="r_af8793b6e4502c1e6ceaed435fcebaa47"><td class="memItemLeft" align="right" valign="top"><a id="af8793b6e4502c1e6ceaed435fcebaa47" name="af8793b6e4502c1e6ceaed435fcebaa47"></a>
+const <a class="el" href="../../d0/d91/classxii_game_object.html">xiiGameObject</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>FindChildByPath</b> (<a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sPath) const</td></tr>
+<tr class="memdesc:af8793b6e4502c1e6ceaed435fcebaa47"><td class="mdescLeft">&#160;</td><td class="mdescRight">Const overload of <a class="el" href="#a757bc891dd3fc1d63a362822dbe812c0" title="Searches for a child using a path. Every path segment represents a child with a given name.">FindChildByPath()</a> <br /></td></tr>
+<tr class="separator:af8793b6e4502c1e6ceaed435fcebaa47"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a54f2f7e334ab1e5eb78a22ba01dffc9c" id="r_a54f2f7e334ab1e5eb78a22ba01dffc9c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d91/classxii_game_object.html">xiiGameObject</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a54f2f7e334ab1e5eb78a22ba01dffc9c">SearchForChildByNameSequence</a> (<a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sObjectSequence, const <a class="el" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a> *pExpectedComponent=nullptr)</td></tr>
 <tr class="memdesc:a54f2f7e334ab1e5eb78a22ba01dffc9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Searches for a child similar to <a class="el" href="#a94dc613501a62f92a4a4013566c13059" title="Searches for a child object with the given name. Optionally traverses the entire hierarchy.">FindChildByName()</a> but allows to search for multiple names in a sequence.  <br /></td></tr>
 <tr class="separator:a54f2f7e334ab1e5eb78a22ba01dffc9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adefff6a2000189a33bff703c7829f391" id="r_adefff6a2000189a33bff703c7829f391"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adefff6a2000189a33bff703c7829f391">SearchForChildrenByNameSequence</a> (<a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sObjectSequence, const <a class="el" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a> *pExpectedComponent, <a class="el" href="../../dc/da9/classxii_hybrid_array.html">xiiHybridArray</a>&lt; <a class="el" href="../../d0/d91/classxii_game_object.html">xiiGameObject</a> *, 8 &gt; &amp;out_objects)</td></tr>
-<tr class="memdesc:adefff6a2000189a33bff703c7829f391"><td class="mdescLeft">&#160;</td><td class="mdescRight">Same as SearchForChildByNameSequence but returns ALL matches, in case the given path could mean multiple objects.  <br /></td></tr>
+<tr class="memitem:add401bf5e442f61ff7ee2365e0b1abcd" id="r_add401bf5e442f61ff7ee2365e0b1abcd"><td class="memItemLeft" align="right" valign="top"><a id="add401bf5e442f61ff7ee2365e0b1abcd" name="add401bf5e442f61ff7ee2365e0b1abcd"></a>
+const <a class="el" href="../../d0/d91/classxii_game_object.html">xiiGameObject</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>SearchForChildByNameSequence</b> (<a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sObjectSequence, const <a class="el" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a> *pExpectedComponent=nullptr) const</td></tr>
+<tr class="memdesc:add401bf5e442f61ff7ee2365e0b1abcd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Const overload of <a class="el" href="#a54f2f7e334ab1e5eb78a22ba01dffc9c" title="Searches for a child similar to FindChildByName() but allows to search for multiple names in a sequen...">SearchForChildByNameSequence()</a> <br /></td></tr>
+<tr class="separator:add401bf5e442f61ff7ee2365e0b1abcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adefff6a2000189a33bff703c7829f391" id="r_adefff6a2000189a33bff703c7829f391"><td class="memItemLeft" align="right" valign="top"><a id="adefff6a2000189a33bff703c7829f391" name="adefff6a2000189a33bff703c7829f391"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SearchForChildrenByNameSequence</b> (<a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sObjectSequence, const <a class="el" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a> *pExpectedComponent, <a class="el" href="../../dc/da9/classxii_hybrid_array.html">xiiHybridArray</a>&lt; <a class="el" href="../../d0/d91/classxii_game_object.html">xiiGameObject</a> *, 8 &gt; &amp;out_objects)</td></tr>
+<tr class="memdesc:adefff6a2000189a33bff703c7829f391"><td class="mdescLeft">&#160;</td><td class="mdescRight">Same as SearchForChildByNameSequence but returns ALL matches, in case the given path could mean multiple objects. <br /></td></tr>
 <tr class="separator:adefff6a2000189a33bff703c7829f391"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a83a261b70a21925d671663bb4ff3846a" id="r_a83a261b70a21925d671663bb4ff3846a"><td class="memItemLeft" align="right" valign="top"><a id="a83a261b70a21925d671663bb4ff3846a" name="a83a261b70a21925d671663bb4ff3846a"></a>
 <a class="el" href="../../d6/d89/classxii_world.html">xiiWorld</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetWorld</b> ()</td></tr>
@@ -545,9 +557,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>SetTeamID</b> (xiiUIn
 <tr class="memitem:aa9e081f61d0ab03167601ab33fcca5d3" id="r_aa9e081f61d0ab03167601ab33fcca5d3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa9e081f61d0ab03167601ab33fcca5d3">SetStableRandomSeed</a> (xiiUInt32 uiSeed)</td></tr>
 <tr class="memdesc:aa9e081f61d0ab03167601ab33fcca5d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overwrites the object's random seed value.  <br /></td></tr>
 <tr class="separator:aa9e081f61d0ab03167601ab33fcca5d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1ea5c9cfec10d04daeb9711308eda4cb" id="r_a1ea5c9cfec10d04daeb9711308eda4cb"><td class="memItemLeft" align="right" valign="top">xiiVisibilityState&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1ea5c9cfec10d04daeb9711308eda4cb">GetVisibilityState</a> (xiiUInt32 uiNumFramesBeforeInvisible=5) const</td></tr>
-<tr class="memdesc:a1ea5c9cfec10d04daeb9711308eda4cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves a state describing how visible the object is.  <br /></td></tr>
-<tr class="separator:a1ea5c9cfec10d04daeb9711308eda4cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c1bb9fa29e1f69987f4697417a19159" id="r_a8c1bb9fa29e1f69987f4697417a19159"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d4/d78/structxii_visibility_state.html#a0513cab3edd2130d2caaef3405bd0ab6">xiiVisibilityState::Enum</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8c1bb9fa29e1f69987f4697417a19159">GetVisibilityState</a> (xiiUInt32 uiNumFramesBeforeInvisible=5) const</td></tr>
+<tr class="memdesc:a8c1bb9fa29e1f69987f4697417a19159"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves a state describing how visible the object is.  <br /></td></tr>
+<tr class="separator:a8c1bb9fa29e1f69987f4697417a19159"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a85cb70263b8f24740cbad96b46daa385" id="r_a85cb70263b8f24740cbad96b46daa385"><td class="memTemplParams" colspan="2"><a id="a85cb70263b8f24740cbad96b46daa385" name="a85cb70263b8f24740cbad96b46daa385"></a>
 template&lt;typename T&gt; </td></tr>
 <tr class="memitem:a85cb70263b8f24740cbad96b46daa385"><td class="memTemplItemLeft" align="right" valign="top">XII_ALWAYS_INLINE bool&#160;</td><td class="memTemplItemRight" valign="bottom"><b>TryGetComponentOfBaseType</b> (T *&amp;out_pComponent)</td></tr>
@@ -615,30 +627,6 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>xiiGameObjectTest</b
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a94dc613501a62f92a4a4013566c13059" name="a94dc613501a62f92a4a4013566c13059"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a94dc613501a62f92a4a4013566c13059">&#9670;&#160;</a></span>FindChildByName()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="../../d0/d91/classxii_game_object.html">xiiGameObject</a> * xiiGameObject::FindChildByName </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="../../d5/dd2/classxii_temp_hashed_string.html">xiiTempHashedString</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>sName</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>bRecursive</em></span><span class="paramdefsep"> = </span><span class="paramdefval">true</span>&#160;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Searches for a child object with the given name. Optionally traverses the entire hierarchy. </p>
-<dl class="test"><dt><b><a class="el" href="../../d4/df6/test.html#_test000002">Test</a></b></dt><dd>Needs a unit test </dd></dl>
-
-</div>
-</div>
 <a id="a757bc891dd3fc1d63a362822dbe812c0" name="a757bc891dd3fc1d63a362822dbe812c0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a757bc891dd3fc1d63a362822dbe812c0">&#9670;&#160;</a></span>FindChildByPath()</h2>
 
@@ -656,7 +644,6 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>xiiGameObjectTest</b
 
 <p>Searches for a child using a path. Every path segment represents a child with a given name. </p>
 <p>Paths are separated with single slashes: / When an empty path is given, 'this' is returned. When on any part of the path the next child cannot be found, nullptr is returned. This function expects an exact path to the destination. It does not search the full hierarchy for the next child, as SearchChildByNameSequence() does. </p>
-<dl class="test"><dt><b><a class="el" href="../../d4/df6/test.html#_test000003">Test</a></b></dt><dd>Needs a unit test </dd></dl>
 
 </div>
 </div>
@@ -730,14 +717,14 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>xiiGameObjectTest</b
 
 </div>
 </div>
-<a id="a1ea5c9cfec10d04daeb9711308eda4cb" name="a1ea5c9cfec10d04daeb9711308eda4cb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1ea5c9cfec10d04daeb9711308eda4cb">&#9670;&#160;</a></span>GetVisibilityState()</h2>
+<a id="a8c1bb9fa29e1f69987f4697417a19159" name="a8c1bb9fa29e1f69987f4697417a19159"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c1bb9fa29e1f69987f4697417a19159">&#9670;&#160;</a></span>GetVisibilityState()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">xiiVisibilityState xiiGameObject::GetVisibilityState </td>
+          <td class="memname"><a class="el" href="../../d4/d78/structxii_visibility_state.html#a0513cab3edd2130d2caaef3405bd0ab6">xiiVisibilityState::Enum</a> xiiGameObject::GetVisibilityState </td>
           <td>(</td>
           <td class="paramtype">xiiUInt32</td>          <td class="paramname"><span class="paramname"><em>uiNumFramesBeforeInvisible</em></span><span class="paramdefsep"> = </span><span class="paramdefval">5</span></td><td>)</td>
           <td> const</td>
@@ -843,36 +830,6 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>xiiGameObjectTest</b
 
 <p>Searches for a child similar to <a class="el" href="#a94dc613501a62f92a4a4013566c13059" title="Searches for a child object with the given name. Optionally traverses the entire hierarchy.">FindChildByName()</a> but allows to search for multiple names in a sequence. </p>
 <p>The names in the sequence are separated with slashes. For example, calling this with "a/b" will first search the entire hierarchy below this object for a child named "a". If that is found, the search continues from there for a child called "b". If such a child is found and pExpectedComponent != nullptr, it is verified that the object contains a component of that type. If it doesn't the search continues (including back-tracking). </p>
-<dl class="test"><dt><b><a class="el" href="../../d4/df6/test.html#_test000004">Test</a></b></dt><dd>Needs a unit test </dd></dl>
-
-</div>
-</div>
-<a id="adefff6a2000189a33bff703c7829f391" name="adefff6a2000189a33bff703c7829f391"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adefff6a2000189a33bff703c7829f391">&#9670;&#160;</a></span>SearchForChildrenByNameSequence()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void xiiGameObject::SearchForChildrenByNameSequence </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a></td>          <td class="paramname"><span class="paramname"><em>sObjectSequence</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a> *</td>          <td class="paramname"><span class="paramname"><em>pExpectedComponent</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="../../dc/da9/classxii_hybrid_array.html">xiiHybridArray</a>&lt; <a class="el" href="../../d0/d91/classxii_game_object.html">xiiGameObject</a> *, 8 &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>out_objects</em></span>&#160;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Same as SearchForChildByNameSequence but returns ALL matches, in case the given path could mean multiple objects. </p>
-<dl class="test"><dt><b><a class="el" href="../../d4/df6/test.html#_test000005">Test</a></b></dt><dd>Needs a unit test </dd></dl>
 
 </div>
 </div>
@@ -1096,7 +1053,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>xiiGameObjectTest</b
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d0/d91/classxii_game_object.html">xiiGameObject</a></li>
-    <li class="footer">Generated on Sat Mar 22 2025 03:24:49 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Thu May 22 2025 22:11:35 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 </body>

@@ -1,7 +1,7 @@
 var structxii_g_a_l_ray_tracing_procedural_hit_shader_group_description =
 [
-    [ "m_hAnyHitShader", "d7/deb/structxii_g_a_l_ray_tracing_procedural_hit_shader_group_description.html#ad37b80acaf66b22f030201bf943bc3c9", null ],
-    [ "m_hClosestHitShader", "d7/deb/structxii_g_a_l_ray_tracing_procedural_hit_shader_group_description.html#abc46056664032b1c03612b157bfa93b8", null ],
-    [ "m_hIntersectionShader", "d7/deb/structxii_g_a_l_ray_tracing_procedural_hit_shader_group_description.html#a80fe78dab73ce6a849644e5e82735e11", null ],
+    [ "m_pAnyHitShader", "d7/deb/structxii_g_a_l_ray_tracing_procedural_hit_shader_group_description.html#a5f213cea78ea378bfe7e8fd4ffe07376", null ],
+    [ "m_pClosestHitShader", "d7/deb/structxii_g_a_l_ray_tracing_procedural_hit_shader_group_description.html#a3eb8359ffa0bb728ad5ff6ca318b8270", null ],
+    [ "m_pIntersectionShader", "d7/deb/structxii_g_a_l_ray_tracing_procedural_hit_shader_group_description.html#a0b028c4e7f122c37e4c352e83bbb1b76", null ],
     [ "m_sName", "d7/deb/structxii_g_a_l_ray_tracing_procedural_hit_shader_group_description.html#acbf55cc540597cf8f952751f51b8ab2c", null ]
 ];

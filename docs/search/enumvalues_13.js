@@ -98,5 +98,6 @@ var searchData=
   ['successmsg_95',['SuccessMsg',['../d4/de6/structxii_log_msg_type.html#a7b991cbae5d585576d8269d959abbc49a4d46c2d38d8141617ac9d0bbf4212842',1,'xiiLogMsgType']]],
   ['suggestcontainerwindow_96',['SuggestContainerWindow',['../d6/da2/structxii_tools_project_request.html#a821169319afd58a297fdda40cc0d784daf4686fc522014d0da8fa39482f132a5a',1,'xiiToolsProjectRequest']]],
   ['supportsthumbnail_97',['SupportsThumbnail',['../dd/d3b/structxii_asset_document_flags.html#a8a9d3d28ff9f81b678c247c918074c17a819a353080f8d244dc1d1764765739ff',1,'xiiAssetDocumentFlags']]],
-  ['swipe_98',['Swipe',['../d0/d83/structxii_virtual_thumb_stick_1_1_center_mode.html#a1af768f6c415421a3276a3cf850c40e6ade53e805b455ef14cf2a35bc322fffad',1,'xiiVirtualThumbStick::CenterMode']]]
+  ['swingtwist_98',['SwingTwist',['../d3/de4/structxii_skeleton_joint_type.html#ad22d303ce372711c684d1e76c56b6245a6a517976a45e2b61989b941e68e15eb3',1,'xiiSkeletonJointType']]],
+  ['swipe_99',['Swipe',['../d0/d83/structxii_virtual_thumb_stick_1_1_center_mode.html#a1af768f6c415421a3276a3cf850c40e6ade53e805b455ef14cf2a35bc322fffad',1,'xiiVirtualThumbStick::CenterMode']]]
 ];

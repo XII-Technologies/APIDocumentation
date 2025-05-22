@@ -15,6 +15,7 @@ var structxii_property_flags =
       [ "Phantom", "d6/d7c/structxii_property_flags.html#a54fed1f9480831324a7b3840218228fba8e5ddfb02f184d85dea29c24d9ddb17a", null ],
       [ "VarOut", "d6/d7c/structxii_property_flags.html#a54fed1f9480831324a7b3840218228fbaf0827b75261231d712f76fa916cf503f", null ],
       [ "VarInOut", "d6/d7c/structxii_property_flags.html#a54fed1f9480831324a7b3840218228fba5a11a9a9b114d51c9d555065eaf467aa", null ],
+      [ "PureFunction", "d6/d7c/structxii_property_flags.html#a54fed1f9480831324a7b3840218228fba9885373a293376a94b16c9bc6504b239", null ],
       [ "Default", "d6/d7c/structxii_property_flags.html#a54fed1f9480831324a7b3840218228fba3774fb510451da29635073eaff4ed394", null ],
       [ "Void", "d6/d7c/structxii_property_flags.html#a54fed1f9480831324a7b3840218228fba66ce76fb28d9355a15a8dfd716fd0c7e", null ]
     ] ]

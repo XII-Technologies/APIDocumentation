@@ -109,7 +109,7 @@ $(function(){initNavTree('db/da0/structxii_g_a_l_state_transition_flags.html','.
 <p>Resource state transition flags.  
  <a href="#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="../../d0/db2/_command_list_vulkan_8h_source.html">CommandListVulkan.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="../../d0/d37/_command_list_8h_source.html">CommandList.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
@@ -128,9 +128,9 @@ Public Types</h2></td></tr>
 <br />
  }</td></tr>
 <tr class="separator:a633acb4fc10b4333cca2ad1b36b37490"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a83b196ff820748eab39fa81940273e74" id="r_a83b196ff820748eab39fa81940273e74"><td class="memItemLeft" align="right" valign="top"><a id="a83b196ff820748eab39fa81940273e74" name="a83b196ff820748eab39fa81940273e74"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>StorageType</b> = xiiUInt32</td></tr>
-<tr class="separator:a83b196ff820748eab39fa81940273e74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41770241a2a05ab4cca78e204afa57e3" id="r_a41770241a2a05ab4cca78e204afa57e3"><td class="memItemLeft" align="right" valign="top"><a id="a41770241a2a05ab4cca78e204afa57e3" name="a41770241a2a05ab4cca78e204afa57e3"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>StorageType</b> = xiiUInt8</td></tr>
+<tr class="separator:a41770241a2a05ab4cca78e204afa57e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Resource state transition flags. </p>
@@ -147,20 +147,20 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>StorageType</b> = xi
       </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a633acb4fc10b4333cca2ad1b36b37490a468ea353a7b492bddaefe9fe3859d5ef" name="a633acb4fc10b4333cca2ad1b36b37490a468ea353a7b492bddaefe9fe3859d5ef"></a>None&#160;</td><td class="fielddoc"><p>Undefined binding. </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a633acb4fc10b4333cca2ad1b36b37490a468ea353a7b492bddaefe9fe3859d5ef" name="a633acb4fc10b4333cca2ad1b36b37490a468ea353a7b492bddaefe9fe3859d5ef"></a>None&#160;</td><td class="fielddoc"><p>No state transition flags. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a633acb4fc10b4333cca2ad1b36b37490a74745250a5449ab469e0804b98ed1725" name="a633acb4fc10b4333cca2ad1b36b37490a74745250a5449ab469e0804b98ed1725"></a>UpdateState&#160;</td><td class="fielddoc"><p>A buffer may be bound as a vertex buffer. </p>
+<tr><td class="fieldname"><a id="a633acb4fc10b4333cca2ad1b36b37490a74745250a5449ab469e0804b98ed1725" name="a633acb4fc10b4333cca2ad1b36b37490a74745250a5449ab469e0804b98ed1725"></a>UpdateState&#160;</td><td class="fielddoc"><p>Indicates that the internal resource state should be updated to the new state specified by <a class="el" href="../../d2/d4e/structxii_g_a_l_state_transition_description.html" title="This describes the resource state barrier description.">xiiGALStateTransitionDescription</a>, and the GAL should take over the resource state management. If an application was managing the resource state manually, it is responsible for making sure that all subresources are indeed in the designated state. If not used, internal resource state will be unchanged. </p><pre class="fragment">                        \note This flag cannot be used when xiiGALStateTransitionDescription.m_TransitionType is xiiGALStateTransitionType::Begin. 
+</pre> </td></tr>
+<tr><td class="fieldname"><a id="a633acb4fc10b4333cca2ad1b36b37490a704c0a4251dd767eb31881062a6aa28e" name="a633acb4fc10b4333cca2ad1b36b37490a704c0a4251dd767eb31881062a6aa28e"></a>DiscardContent&#160;</td><td class="fielddoc"><p>If set, the contents of the resource will be discarded, when possible. This may avoid potentially expensive operations such as render target decompression or a pipeline stall when transitioning to <a class="el" href="../../d6/dec/structxii_g_a_l_resource_state_flags.html#a4863cdfd85d00744a4db3689c58b5e84a764a73dc41be671ccdac831c35a4d1d6" title="The resource state is used for read operations, but access to the resource may be slower compared to ...">xiiGALResourceStateFlags::Common</a> or <a class="el" href="../../d6/dec/structxii_g_a_l_resource_state_flags.html#a4863cdfd85d00744a4db3689c58b5e84a46c9f92d10113c7c7b7be8426eadca31" title="The resource is used for unordered access.">xiiGALResourceStateFlags::UnorderedAccess</a> state. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a633acb4fc10b4333cca2ad1b36b37490a704c0a4251dd767eb31881062a6aa28e" name="a633acb4fc10b4333cca2ad1b36b37490a704c0a4251dd767eb31881062a6aa28e"></a>DiscardContent&#160;</td><td class="fielddoc"><p>A buffer may be bound as an index buffer. </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a633acb4fc10b4333cca2ad1b36b37490a67e2ddd065a336c874863fe36965b83e" name="a633acb4fc10b4333cca2ad1b36b37490a67e2ddd065a336c874863fe36965b83e"></a>Aliasing&#160;</td><td class="fielddoc"><p>A buffer may be bound as a uniform buffer. Note that this flag may not be combined with any other bind flag. </p>
+<tr><td class="fieldname"><a id="a633acb4fc10b4333cca2ad1b36b37490a67e2ddd065a336c874863fe36965b83e" name="a633acb4fc10b4333cca2ad1b36b37490a67e2ddd065a336c874863fe36965b83e"></a>Aliasing&#160;</td><td class="fielddoc"><p>Indicates state transition between aliased resources that share the same memory. Currently, it is only supported for sparse resources that were created with aliasing flag. </p>
 </td></tr>
 </table>
 
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li>/home/runner/work/XII/XII/Source/Engine/GraphicsVulkan/CommandEncoder/<a class="el" href="../../d0/db2/_command_list_vulkan_8h_source.html">CommandListVulkan.h</a></li>
+<li>/home/runner/work/XII/XII/Source/Engine/GraphicsFoundation/CommandEncoder/<a class="el" href="../../d0/d37/_command_list_8h_source.html">CommandList.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -168,7 +168,7 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>StorageType</b> = xi
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../db/da0/structxii_g_a_l_state_transition_flags.html">xiiGALStateTransitionFlags</a></li>
-    <li class="footer">Generated on Sat Mar 22 2025 03:24:48 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Thu May 22 2025 22:11:35 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 </body>

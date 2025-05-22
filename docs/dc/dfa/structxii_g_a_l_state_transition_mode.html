@@ -112,10 +112,14 @@ $(function(){initNavTree('dc/dfa/structxii_g_a_l_state_transition_mode.html','..
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:aa5fa3cbafd6aa6285316726bbbb62b81" id="r_aa5fa3cbafd6aa6285316726bbbb62b81"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa5fa3cbafd6aa6285316726bbbb62b81">Enum</a> : StorageType { <a class="el" href="#aa5fa3cbafd6aa6285316726bbbb62b81aa3e6c63615da141c8e7bb4958b09a46f">None</a> = 0
+<tr class="memitem:aa5fa3cbafd6aa6285316726bbbb62b81" id="r_aa5fa3cbafd6aa6285316726bbbb62b81"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa5fa3cbafd6aa6285316726bbbb62b81">Enum</a> : StorageType { <br />
+&#160;&#160;<a class="el" href="#aa5fa3cbafd6aa6285316726bbbb62b81aa3e6c63615da141c8e7bb4958b09a46f">None</a> = 0
 , <a class="el" href="#aa5fa3cbafd6aa6285316726bbbb62b81aad65128e12a12e88e833b9ef0adbfa73">Transition</a>
-, <b>Verify</b>
-, <a class="el" href="#aa5fa3cbafd6aa6285316726bbbb62b81a73032a1a7e1c10740e6f3373de8915e1">Default</a> = None
+, <a class="el" href="#aa5fa3cbafd6aa6285316726bbbb62b81a96e6bc0be4e9730355d7e615a703414f">Verify</a>
+, <b>ENUM_COUNT</b>
+, <br />
+&#160;&#160;<b>Default</b> = None
+<br />
  }</td></tr>
 <tr class="separator:aa5fa3cbafd6aa6285316726bbbb62b81"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0c66043bece9662763bdf0652148d793" id="r_a0c66043bece9662763bdf0652148d793"><td class="memItemLeft" align="right" valign="top"><a id="a0c66043bece9662763bdf0652148d793" name="a0c66043bece9662763bdf0652148d793"></a>
@@ -139,10 +143,15 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>StorageType</b> = xi
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="aa5fa3cbafd6aa6285316726bbbb62b81aa3e6c63615da141c8e7bb4958b09a46f" name="aa5fa3cbafd6aa6285316726bbbb62b81aa3e6c63615da141c8e7bb4958b09a46f"></a>None&#160;</td><td class="fielddoc"><p>Perform no state transitions and no validation. Resource states are not accessed (either read or written) by the command. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="aa5fa3cbafd6aa6285316726bbbb62b81aad65128e12a12e88e833b9ef0adbfa73" name="aa5fa3cbafd6aa6285316726bbbb62b81aad65128e12a12e88e833b9ef0adbfa73"></a>Transition&#160;</td><td class="fielddoc"><p>Transition resources to the states required by the specific command. Resources in unknown state are ignored. </p>
-</td></tr>
-<tr><td class="fieldname"><a id="aa5fa3cbafd6aa6285316726bbbb62b81a73032a1a7e1c10740e6f3373de8915e1" name="aa5fa3cbafd6aa6285316726bbbb62b81a73032a1a7e1c10740e6f3373de8915e1"></a>Default&#160;</td><td class="fielddoc"><p>Do not transition, but verify that states are correct. No validation is performed on Shipping builds. </p>
-</td></tr>
+<tr><td class="fieldname"><a id="aa5fa3cbafd6aa6285316726bbbb62b81aad65128e12a12e88e833b9ef0adbfa73" name="aa5fa3cbafd6aa6285316726bbbb62b81aad65128e12a12e88e833b9ef0adbfa73"></a>Transition&#160;</td><td class="fielddoc"><p>Transition resources to the states required by the specific command. Resources in unknown state are ignored. </p><pre class="fragment">         \note Any method that uses this mode may alter the state of the resources it works with.
+               As automatic state management is not thread-safe, no other thread is allowed to read or write the state of the resources being transitioned.
+               If the application intends to use the same resources in other threads simultaneously, it needs to explicitly manage the states using xiiGALCommandList::TransitionResourceStates() method.
+
+         \note If a resource is used in multiple threads by multiple command lists, there will be race condition accessing internal resource state. An application should use manual resource state management in this case. 
+</pre> </td></tr>
+<tr><td class="fieldname"><a id="aa5fa3cbafd6aa6285316726bbbb62b81a96e6bc0be4e9730355d7e615a703414f" name="aa5fa3cbafd6aa6285316726bbbb62b81a96e6bc0be4e9730355d7e615a703414f"></a>Verify&#160;</td><td class="fielddoc"><p>Do not transition, but verify that states are correct. No validation is performed if the state is unknown to the GAL. This mode only has effect in debug and development builds. No validation is performed in shipping builds. </p><pre class="fragment">     \note Any method that uses this mode will read the state of resources it works with. As automatic state management is not thread-safe, no other thread is allowed to alter
+           the state of resources being used by the command. It is safe to read these states. 
+</pre> </td></tr>
 </table>
 
 </div>
@@ -156,7 +165,7 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>StorageType</b> = xi
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dc/dfa/structxii_g_a_l_state_transition_mode.html">xiiGALStateTransitionMode</a></li>
-    <li class="footer">Generated on Sat Mar 22 2025 03:24:48 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Thu May 22 2025 22:11:35 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 </body>

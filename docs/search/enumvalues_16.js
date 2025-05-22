@@ -28,11 +28,16 @@ var searchData=
   ['vector4i64_25',['Vector4I64',['../dd/dba/structxii_variant_type.html#a38d867476ba7137c38a09976ece9ee6baca7acfc317d0da41f1f4289062243bf2',1,'xiiVariantType']]],
   ['vector4u_26',['Vector4U',['../dd/dba/structxii_variant_type.html#a38d867476ba7137c38a09976ece9ee6ba69a6dcd72a912e37b60f63e8ec3b8883',1,'xiiVariantType']]],
   ['vector4u64_27',['Vector4U64',['../dd/dba/structxii_variant_type.html#a38d867476ba7137c38a09976ece9ee6babdefc4bfdb91cd26095efd2376b40fed',1,'xiiVariantType']]],
-  ['vertex_28',['Vertex',['../d1/dcf/structxii_g_a_l_shader_type.html#aa40e7f7b336f75b920cf5ab9d7f14763acc7274c333c8b62c62ee8fe84dda40e9',1,'xiiGALShaderType']]],
-  ['vertexbuffer_29',['VertexBuffer',['../d6/d24/structxii_g_a_l_bind_flags.html#a25f393130b89d8ef16082ac3ade3c33fa8f6a4a9e824870e8fe41e1ad1353d03d',1,'xiiGALBindFlags::VertexBuffer'],['../d6/dec/structxii_g_a_l_resource_state_flags.html#a4863cdfd85d00744a4db3689c58b5e84a94b59ccc76a405034e86a450a8482716',1,'xiiGALResourceStateFlags::VertexBuffer']]],
-  ['vertexinput_30',['VertexInput',['../dc/d29/structxii_g_a_l_pipeline_stage_flags.html#ab114e9a33a63968b73bdf79069b73282ad4f2fbba9eb5026da9c46cbc41d0c5b9',1,'xiiGALPipelineStageFlags']]],
-  ['vertexread_31',['VertexRead',['../d7/d8d/structxii_g_a_l_access_flags.html#a4c4d72bc05e2a6cd4819337ffa7f6b9aa58608fd56cb1c89400d71bf787a36fd6',1,'xiiGALAccessFlags']]],
-  ['vertexshader_32',['VertexShader',['../dc/d29/structxii_g_a_l_pipeline_stage_flags.html#ab114e9a33a63968b73bdf79069b73282a57e418645408f4d077c1461c3ddc8776',1,'xiiGALPipelineStageFlags']]],
-  ['void_33',['Void',['../de/d04/structxii_g_a_l_shader_primitive_type.html#a1610874798251f36546edc21e7db770caa772aa2ec2e52e89ccab80bb73a4d399',1,'xiiGALShaderPrimitiveType']]],
-  ['vulkan_34',['Vulkan',['../d1/dde/structxii_g_a_l_graphics_device_type.html#a4d3301594c1735e73ba0bbfe64122c68a98b84e8b37f9e3492d7a85fda9a46bfc',1,'xiiGALGraphicsDeviceType']]]
+  ['vectorw_28',['VectorW',['../df/d34/structxii_property_anim_target.html#a2ed704817d01e0321479309d16876e8fa12bc1f189c694bcba2d986478bf9011b',1,'xiiPropertyAnimTarget']]],
+  ['vectorx_29',['VectorX',['../df/d34/structxii_property_anim_target.html#a2ed704817d01e0321479309d16876e8fa8a7438aaa844d704ed9ad801d47545b3',1,'xiiPropertyAnimTarget']]],
+  ['vectory_30',['VectorY',['../df/d34/structxii_property_anim_target.html#a2ed704817d01e0321479309d16876e8fa7f93c6ff842b22a58b1580a53ea711be',1,'xiiPropertyAnimTarget']]],
+  ['vectorz_31',['VectorZ',['../df/d34/structxii_property_anim_target.html#a2ed704817d01e0321479309d16876e8faa42148400b957e82ae1b4a2dd66d55a1',1,'xiiPropertyAnimTarget']]],
+  ['verify_32',['Verify',['../dc/dfa/structxii_g_a_l_state_transition_mode.html#aa5fa3cbafd6aa6285316726bbbb62b81a96e6bc0be4e9730355d7e615a703414f',1,'xiiGALStateTransitionMode']]],
+  ['vertex_33',['Vertex',['../d1/dcf/structxii_g_a_l_shader_type.html#aa40e7f7b336f75b920cf5ab9d7f14763acc7274c333c8b62c62ee8fe84dda40e9',1,'xiiGALShaderType']]],
+  ['vertexbuffer_34',['VertexBuffer',['../d6/d24/structxii_g_a_l_bind_flags.html#a25f393130b89d8ef16082ac3ade3c33fa8f6a4a9e824870e8fe41e1ad1353d03d',1,'xiiGALBindFlags::VertexBuffer'],['../d6/dec/structxii_g_a_l_resource_state_flags.html#a4863cdfd85d00744a4db3689c58b5e84a94b59ccc76a405034e86a450a8482716',1,'xiiGALResourceStateFlags::VertexBuffer']]],
+  ['vertexinput_35',['VertexInput',['../dc/d29/structxii_g_a_l_pipeline_stage_flags.html#ab114e9a33a63968b73bdf79069b73282ad4f2fbba9eb5026da9c46cbc41d0c5b9',1,'xiiGALPipelineStageFlags']]],
+  ['vertexread_36',['VertexRead',['../d7/d8d/structxii_g_a_l_access_flags.html#a4c4d72bc05e2a6cd4819337ffa7f6b9aa58608fd56cb1c89400d71bf787a36fd6',1,'xiiGALAccessFlags']]],
+  ['vertexshader_37',['VertexShader',['../dc/d29/structxii_g_a_l_pipeline_stage_flags.html#ab114e9a33a63968b73bdf79069b73282a57e418645408f4d077c1461c3ddc8776',1,'xiiGALPipelineStageFlags']]],
+  ['void_38',['Void',['../de/d04/structxii_g_a_l_shader_primitive_type.html#a1610874798251f36546edc21e7db770caa772aa2ec2e52e89ccab80bb73a4d399',1,'xiiGALShaderPrimitiveType']]],
+  ['vulkan_39',['Vulkan',['../d1/dde/structxii_g_a_l_graphics_device_type.html#a4d3301594c1735e73ba0bbfe64122c68a98b84e8b37f9e3492d7a85fda9a46bfc',1,'xiiGALGraphicsDeviceType']]]
 ];
