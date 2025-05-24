@@ -155,6 +155,10 @@ XII_ALWAYS_INLINE <a class="el" href="../../d8/d9b/classxii_shared_ptr.html">xii
 XII_ALWAYS_INLINE <a class="el" href="../../d8/d9b/classxii_shared_ptr.html">xiiSharedPtr</a>&lt; <a class="el" href="../../db/d39/classxii_g_a_l_framebuffer.html">xiiGALFramebuffer</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetFramebuffer</b> () const</td></tr>
 <tr class="memdesc:a292c6eca551876d9da53fe74a6824c04"><td class="mdescLeft">&#160;</td><td class="mdescRight">This returns the active frame buffer handle for this object. <br /></td></tr>
 <tr class="separator:a292c6eca551876d9da53fe74a6824c04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05e3ccbb56622ac1d35216e6b7336ef6" id="r_a05e3ccbb56622ac1d35216e6b7336ef6"><td class="memItemLeft" align="right" valign="top"><a id="a05e3ccbb56622ac1d35216e6b7336ef6" name="a05e3ccbb56622ac1d35216e6b7336ef6"></a>
+XII_ALWAYS_INLINE const <a class="el" href="../../d3/ddd/structxii_g_a_l_command_list_statistics.html">xiiGALCommandListStatistics</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetCommandListStatistics</b> () const</td></tr>
+<tr class="memdesc:a05e3ccbb56622ac1d35216e6b7336ef6"><td class="mdescLeft">&#160;</td><td class="mdescRight">This returns the command list statistics. <br /></td></tr>
+<tr class="separator:a05e3ccbb56622ac1d35216e6b7336ef6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adff59b3e8c0ef8a8c0cc937fc0df0f84" id="r_adff59b3e8c0ef8a8c0cc937fc0df0f84"><td class="memItemLeft" align="right" valign="top">xiiUInt64&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adff59b3e8c0ef8a8c0cc937fc0df0f84">Submit</a> ()</td></tr>
 <tr class="memdesc:adff59b3e8c0ef8a8c0cc937fc0df0f84"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submits a command list to the command queue for execution. The command list is reset after the execution on the command queue.  <br /></td></tr>
 <tr class="separator:adff59b3e8c0ef8a8c0cc937fc0df0f84"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -922,7 +926,7 @@ static const <a class="el" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a>
   </table>
   </dd>
 </dl>
-<dl class="section note"><dt>Note</dt><dd>if NativeFence feature is not enabled (see <a class="el" href="../../d6/d8f/structxii_g_a_l_device_features.html" title="This describes the device features.">xiiGALDeviceFeatures</a>), then uiValue must be less than or equal to the last signalled or pending value. uiValue becomes pending when the command list is submitted. Waiting for a value that is greater than any pending value will cause a deadlock.</dd>
+<dl class="section note"><dt>Note</dt><dd>If NativeFence feature is not enabled (see <a class="el" href="../../d6/d8f/structxii_g_a_l_device_features.html" title="This describes the device features.">xiiGALDeviceFeatures</a>), then uiValue must be less than or equal to the last signalled or pending value. uiValue becomes pending when the command list is submitted. Waiting for a value that is greater than any pending value will cause a deadlock.</dd>
 <dd>
 If NativeFence feature is enabled (see <a class="el" href="../../d6/d8f/structxii_g_a_l_device_features.html" title="This describes the device features.">xiiGALDeviceFeatures</a>), then waiting for a value that is greater than any pending value will cause a GPU stall. </dd></dl>
 
@@ -2131,7 +2135,7 @@ If NativeFence feature is enabled (see <a class="el" href="../../d6/d8f/structxi
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dc/d80/classxii_g_a_l_command_list.html">xiiGALCommandList</a></li>
-    <li class="footer">Generated on Thu May 22 2025 22:11:35 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Sat May 24 2025 20:23:46 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 </body>

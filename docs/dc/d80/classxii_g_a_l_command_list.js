@@ -33,6 +33,7 @@ var classxii_g_a_l_command_list =
     [ "EndRenderPass", "dc/d80/classxii_g_a_l_command_list.html#aa857e47441756680037d20c39a8a169e", null ],
     [ "EnqueueSignal", "dc/d80/classxii_g_a_l_command_list.html#ad375651921e4c8a9ecbe351c47cbae46", null ],
     [ "GenerateMips", "dc/d80/classxii_g_a_l_command_list.html#a04476ca046c3014168703706a60bdbee", null ],
+    [ "GetCommandListStatistics", "dc/d80/classxii_g_a_l_command_list.html#a05e3ccbb56622ac1d35216e6b7336ef6", null ],
     [ "GetCommandQueue", "dc/d80/classxii_g_a_l_command_list.html#a0868adea18175793e479ea6b97b360b1", null ],
     [ "GetDescription", "dc/d80/classxii_g_a_l_command_list.html#a94c19111b0066ef08cd6062348770ebf", null ],
     [ "GetFramebuffer", "dc/d80/classxii_g_a_l_command_list.html#a292c6eca551876d9da53fe74a6824c04", null ],
