@@ -4642,6 +4642,7 @@ var hierarchy =
     [ "xiiGALCommandBufferPoolVulkan", "da/d84/classxii_g_a_l_command_buffer_pool_vulkan.html", null ],
     [ "xiiGALCommandListCounters", "d3/d20/structxii_g_a_l_command_list_counters.html", null ],
     [ "xiiGALCommandListStatistics", "d3/ddd/structxii_g_a_l_command_list_statistics.html", null ],
+    [ "xiiGALCommandListUtilities", "df/ddc/classxii_g_a_l_command_list_utilities.html", null ],
     [ "xiiGALCommandQueuePriority", "dd/d54/structxii_g_a_l_command_queue_priority.html", null ],
     [ "xiiGALCommandQueueType", "d7/db4/structxii_g_a_l_command_queue_type.html", null ],
     [ "xiiGALComparisonFunction", "d2/d6d/structxii_g_a_l_comparison_function.html", [
@@ -5445,9 +5446,6 @@ var hierarchy =
       [ "xiiLongOpWorkerManager", "dd/d8f/classxii_long_op_worker_manager.html", null ]
     ] ],
     [ "xiiLongOpsAdapter", "d7/d8d/classxii_long_ops_adapter.html", null ],
-    [ "xiiLSAODepthCompareFunction", "db/daa/structxii_l_s_a_o_depth_compare_function.html", [
-      [ "xiiEnum< xiiLSAODepthCompareFunction >", "de/dfd/structxii_enum.html", null ]
-    ] ],
     [ "xiiLUTAssetActions", "d7/d25/classxii_l_u_t_asset_actions.html", null ],
     [ "xiiMakeDelegateHelper< T >", "d2/dfd/structxii_make_delegate_helper.html", null ],
     [ "xiiMakeDelegateHelper< R(Class::*)(Args...) const >", "dc/d1b/structxii_make_delegate_helper_3_01_r_07_class_1_1_5_08_07_args_8_8_8_08_01const_01_4.html", null ],
@@ -6750,7 +6748,6 @@ var hierarchy =
             ] ],
             [ "xiiHistorySourcePass", "dd/d60/classxii_history_source_pass.html", null ],
             [ "xiiHistoryTargetPass", "d1/d11/classxii_history_target_pass.html", null ],
-            [ "xiiLSAOPass", "d5/d46/classxii_l_s_a_o_pass.html", null ],
             [ "xiiMsaaResolvePass", "de/d72/classxii_msaa_resolve_pass.html", null ],
             [ "xiiMsaaUpscalePass", "dc/dc3/classxii_msaa_upscale_pass.html", null ],
             [ "xiiPickingRenderPass", "db/d83/classxii_picking_render_pass.html", null ],

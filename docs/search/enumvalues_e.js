@@ -25,12 +25,11 @@ var searchData=
   ['nooverwrite_22',['NoOverWrite',['../d3/dc9/structxii_g_a_l_map_flags.html#a460dc4db6ae78167db15de29366559eaa6ec8ade4528c007078322b8fe2a9634d',1,'xiiGALMapFlags']]],
   ['nor_23',['NOR',['../d9/d7d/structxii_g_a_l_logic_operation.html#af8e2a0da0b43dfcff3ca28a2a3fca263a876c9a60c69ecd950db2db13185ef3ad',1,'xiiGALLogicOperation']]],
   ['norecent_24',['NoRecent',['../de/de9/structxii_qt_editor_app_1_1_startup_flags.html#ade46dd67224ae8b93e90a6566f683e22a2652da42770f70da3d9e870313c5305c',1,'xiiQtEditorApp::StartupFlags']]],
-  ['normal_25',['Normal',['../db/daa/structxii_l_s_a_o_depth_compare_function.html#aad613b6174c5f15954f7bad9f8f1819ea6f037a46084f8ccaba4015a800b66a37',1,'xiiLSAODepthCompareFunction::Normal'],['../d0/d47/classxii_editor_input_context.html#aed953d853f8fffd5fb4c4c5a02f10d20a960b44c579bc2f6818d2daaf9e4c16f0',1,'xiiEditorInputContext::Normal']]],
-  ['normalandsampledistance_26',['NormalAndSampleDistance',['../db/daa/structxii_l_s_a_o_depth_compare_function.html#aad613b6174c5f15954f7bad9f8f1819eab223cc0c122d8304514312aa89d086fc',1,'xiiLSAODepthCompareFunction']]],
-  ['notequal_27',['NotEqual',['../d2/d6d/structxii_g_a_l_comparison_function.html#a379b1dc5f2a81ba2b9a7f934fe9b9df3a3546bbd3fa810e872a4e84690b3571b5',1,'xiiGALComparisonFunction']]],
-  ['notsupported_28',['NotSupported',['../d8/da9/classxii_x_r_hand_tracking_interface.html#a33cc9e2909e26bb1a9d9af81d2091477a9ed2d871602556951e39f3cebd08d6cb',1,'xiiXRHandTrackingInterface']]],
-  ['null_29',['Null',['../d1/dde/structxii_g_a_l_graphics_device_type.html#a4d3301594c1735e73ba0bbfe64122c68af35943b4df25bd1746dc53e9daf1c6d8',1,'xiiGALGraphicsDeviceType']]],
-  ['number_30',['Number',['../df/d34/structxii_property_anim_target.html#a2ed704817d01e0321479309d16876e8fa6e6ed47fd8a38094d981d793c13700ad',1,'xiiPropertyAnimTarget']]],
-  ['numeric_31',['Numeric',['../d4/dc6/classxii_log.html#a9756be3754e6faf059dee9e11e461002a87322391cc6e8948ce9fd5d6cb84fced',1,'xiiLog']]],
-  ['nvidia_32',['Nvidia',['../d4/d31/structxii_g_a_l_graphics_adapter_vendor.html#acb0977587f7d17323a6efb5d12004508af51c4115f4eee748ce220e9aee6a119c',1,'xiiGALGraphicsAdapterVendor']]]
+  ['normal_25',['Normal',['../d0/d47/classxii_editor_input_context.html#aed953d853f8fffd5fb4c4c5a02f10d20a960b44c579bc2f6818d2daaf9e4c16f0',1,'xiiEditorInputContext']]],
+  ['notequal_26',['NotEqual',['../d2/d6d/structxii_g_a_l_comparison_function.html#a379b1dc5f2a81ba2b9a7f934fe9b9df3a3546bbd3fa810e872a4e84690b3571b5',1,'xiiGALComparisonFunction']]],
+  ['notsupported_27',['NotSupported',['../d8/da9/classxii_x_r_hand_tracking_interface.html#a33cc9e2909e26bb1a9d9af81d2091477a9ed2d871602556951e39f3cebd08d6cb',1,'xiiXRHandTrackingInterface']]],
+  ['null_28',['Null',['../d1/dde/structxii_g_a_l_graphics_device_type.html#a4d3301594c1735e73ba0bbfe64122c68af35943b4df25bd1746dc53e9daf1c6d8',1,'xiiGALGraphicsDeviceType']]],
+  ['number_29',['Number',['../df/d34/structxii_property_anim_target.html#a2ed704817d01e0321479309d16876e8fa6e6ed47fd8a38094d981d793c13700ad',1,'xiiPropertyAnimTarget']]],
+  ['numeric_30',['Numeric',['../d4/dc6/classxii_log.html#a9756be3754e6faf059dee9e11e461002a87322391cc6e8948ce9fd5d6cb84fced',1,'xiiLog']]],
+  ['nvidia_31',['Nvidia',['../d4/d31/structxii_g_a_l_graphics_adapter_vendor.html#acb0977587f7d17323a6efb5d12004508af51c4115f4eee748ce220e9aee6a119c',1,'xiiGALGraphicsAdapterVendor']]]
 ];

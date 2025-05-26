@@ -114,66 +114,67 @@ $(function(){initNavTree('d5/dba/_engine_2_graphics_core_2_declarations_8h_sourc
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="keyword">using </span>xiiTexture2DResourceHandle         = <a class="code hl_class" href="../../d6/d16/classxii_typed_resource_handle.html">xiiTypedResourceHandle&lt;class xiiTexture2DResource&gt;</a>;</div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="keyword">using </span>xiiRenderToTexture2DResourceHandle = <a class="code hl_class" href="../../d6/d16/classxii_typed_resource_handle.html">xiiTypedResourceHandle&lt;class xiiRenderToTexture2DResource&gt;</a>;</div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keyword">using </span>xiiTextureCubeResourceHandle       = <a class="code hl_class" href="../../d6/d16/classxii_typed_resource_handle.html">xiiTypedResourceHandle&lt;class xiiTextureCubeResource&gt;</a>;</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keyword">using </span>xiiMeshBufferResourceHandle        = <a class="code hl_class" href="../../d6/d16/classxii_typed_resource_handle.html">xiiTypedResourceHandle&lt;class xiiMeshBufferResource&gt;</a>;</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keyword">using </span>xiiDynamicMeshBufferResourceHandle = <a class="code hl_class" href="../../d6/d16/classxii_typed_resource_handle.html">xiiTypedResourceHandle&lt;class xiiDynamicMeshBufferResource&gt;</a>;</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="keyword">using </span>xiiMeshResourceHandle              = <a class="code hl_class" href="../../d6/d16/classxii_typed_resource_handle.html">xiiTypedResourceHandle&lt;class xiiMeshResource&gt;</a>;</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="keyword">using </span>xiiMaterialResourceHandle          = <a class="code hl_class" href="../../d6/d16/classxii_typed_resource_handle.html">xiiTypedResourceHandle&lt;class xiiMaterialResource&gt;</a>;</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="keyword">using </span>xiiShaderResourceHandle            = <a class="code hl_class" href="../../d6/d16/classxii_typed_resource_handle.html">xiiTypedResourceHandle&lt;class xiiShaderResource&gt;</a>;</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="keyword">using </span>xiiShaderPermutationResourceHandle = <a class="code hl_class" href="../../d6/d16/classxii_typed_resource_handle.html">xiiTypedResourceHandle&lt;class xiiShaderPermutationResource&gt;</a>;</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="keyword">using </span>xiiRenderPipelineResourceHandle    = <a class="code hl_class" href="../../d6/d16/classxii_typed_resource_handle.html">xiiTypedResourceHandle&lt;class xiiRenderPipelineResource&gt;</a>;</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="keyword">using </span>xiiDecalResourceHandle             = <a class="code hl_class" href="../../d6/d16/classxii_typed_resource_handle.html">xiiTypedResourceHandle&lt;class xiiDecalResource&gt;</a>;</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="keyword">using </span>xiiDecalAtlasResourceHandle        = <a class="code hl_class" href="../../d6/d16/classxii_typed_resource_handle.html">xiiTypedResourceHandle&lt;class xiiDecalAtlasResource&gt;</a>;</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
-<div class="foldopen" id="foldopen00024" data-start="{" data-end="};">
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="../../d8/d57/structxii_permutation_var.html">   24</a></span><span class="keyword">struct </span>XII_GRAPHICSCORE_DLL <a class="code hl_struct" href="../../d8/d57/structxii_permutation_var.html">xiiPermutationVar</a></div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>{</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>  XII_DECLARE_MEM_RELOCATABLE_TYPE();</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>  <a class="code hl_class" href="../../d6/d0c/classxii_hashed_string.html">xiiHashedString</a> m_sName;</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>  <a class="code hl_class" href="../../d6/d0c/classxii_hashed_string.html">xiiHashedString</a> m_sValue;</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>  XII_ALWAYS_INLINE <span class="keywordtype">bool</span> operator==(<span class="keyword">const</span> <a class="code hl_struct" href="../../d8/d57/structxii_permutation_var.html">xiiPermutationVar</a>&amp; other)<span class="keyword"> const</span></div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="keyword">  </span>{</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <span class="keywordflow">return</span> m_sName == other.m_sName &amp;&amp; m_sValue == other.m_sValue;</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>  }</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>};</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keyword">using </span>xiiTexture3DResourceHandle         = <a class="code hl_class" href="../../d6/d16/classxii_typed_resource_handle.html">xiiTypedResourceHandle&lt;class xiiTexture3DResource&gt;</a>;</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keyword">using </span>xiiMeshBufferResourceHandle        = <a class="code hl_class" href="../../d6/d16/classxii_typed_resource_handle.html">xiiTypedResourceHandle&lt;class xiiMeshBufferResource&gt;</a>;</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="keyword">using </span>xiiDynamicMeshBufferResourceHandle = <a class="code hl_class" href="../../d6/d16/classxii_typed_resource_handle.html">xiiTypedResourceHandle&lt;class xiiDynamicMeshBufferResource&gt;</a>;</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="keyword">using </span>xiiMeshResourceHandle              = <a class="code hl_class" href="../../d6/d16/classxii_typed_resource_handle.html">xiiTypedResourceHandle&lt;class xiiMeshResource&gt;</a>;</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="keyword">using </span>xiiMaterialResourceHandle          = <a class="code hl_class" href="../../d6/d16/classxii_typed_resource_handle.html">xiiTypedResourceHandle&lt;class xiiMaterialResource&gt;</a>;</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="keyword">using </span>xiiShaderResourceHandle            = <a class="code hl_class" href="../../d6/d16/classxii_typed_resource_handle.html">xiiTypedResourceHandle&lt;class xiiShaderResource&gt;</a>;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="keyword">using </span>xiiShaderPermutationResourceHandle = <a class="code hl_class" href="../../d6/d16/classxii_typed_resource_handle.html">xiiTypedResourceHandle&lt;class xiiShaderPermutationResource&gt;</a>;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="keyword">using </span>xiiRenderPipelineResourceHandle    = <a class="code hl_class" href="../../d6/d16/classxii_typed_resource_handle.html">xiiTypedResourceHandle&lt;class xiiRenderPipelineResource&gt;</a>;</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="keyword">using </span>xiiDecalResourceHandle             = <a class="code hl_class" href="../../d6/d16/classxii_typed_resource_handle.html">xiiTypedResourceHandle&lt;class xiiDecalResource&gt;</a>;</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="keyword">using </span>xiiDecalAtlasResourceHandle        = <a class="code hl_class" href="../../d6/d16/classxii_typed_resource_handle.html">xiiTypedResourceHandle&lt;class xiiDecalAtlasResource&gt;</a>;</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="foldopen" id="foldopen00025" data-start="{" data-end="};">
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="../../d8/d57/structxii_permutation_var.html">   25</a></span><span class="keyword">struct </span>XII_GRAPHICSCORE_DLL <a class="code hl_struct" href="../../d8/d57/structxii_permutation_var.html">xiiPermutationVar</a></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>{</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>  XII_DECLARE_MEM_RELOCATABLE_TYPE();</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>  <a class="code hl_class" href="../../d6/d0c/classxii_hashed_string.html">xiiHashedString</a> m_sName;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>  <a class="code hl_class" href="../../d6/d0c/classxii_hashed_string.html">xiiHashedString</a> m_sValue;</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>  XII_ALWAYS_INLINE <span class="keywordtype">bool</span> operator==(<span class="keyword">const</span> <a class="code hl_struct" href="../../d8/d57/structxii_permutation_var.html">xiiPermutationVar</a>&amp; other)<span class="keyword"> const</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="keyword">  </span>{</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <span class="keywordflow">return</span> m_sName == other.m_sName &amp;&amp; m_sValue == other.m_sValue;</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>  }</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>};</div>
 </div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
-<div class="foldopen" id="foldopen00037" data-start="{" data-end="};">
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="../../d7/d9b/structxii_mesh_import_transform.html">   37</a></span><span class="keyword">struct </span>XII_GRAPHICSCORE_DLL <a class="code hl_struct" href="../../d7/d9b/structxii_mesh_import_transform.html">xiiMeshImportTransform</a></div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>{</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>  <span class="keyword">using </span>StorageType = xiiInt8;</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>  <span class="keyword">enum</span> Enum</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>  {</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    Blender_YUp,</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    Blender_ZUp,</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    Custom = 127,</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    Default = Blender_YUp</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>  };</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>  <span class="keyword">static</span> <a class="code hl_enumeration" href="../../d9/dcc/structxii_basis_axis.html#a36c8166a71a3eb1739956b8873b1da2c">xiiBasisAxis::Enum</a> GetRightDir(xiiMeshImportTransform::Enum transform, <a class="code hl_enumeration" href="../../d9/dcc/structxii_basis_axis.html#a36c8166a71a3eb1739956b8873b1da2c">xiiBasisAxis::Enum</a> dir);</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>  <span class="keyword">static</span> <a class="code hl_enumeration" href="../../d9/dcc/structxii_basis_axis.html#a36c8166a71a3eb1739956b8873b1da2c">xiiBasisAxis::Enum</a> GetUpDir(xiiMeshImportTransform::Enum transform, <a class="code hl_enumeration" href="../../d9/dcc/structxii_basis_axis.html#a36c8166a71a3eb1739956b8873b1da2c">xiiBasisAxis::Enum</a> dir);</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>  <span class="keyword">static</span> <span class="keywordtype">bool</span>               GetFlipForward(xiiMeshImportTransform::Enum transform, <span class="keywordtype">bool</span> bFlip);</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>};</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
+<div class="foldopen" id="foldopen00038" data-start="{" data-end="};">
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="../../d7/d9b/structxii_mesh_import_transform.html">   38</a></span><span class="keyword">struct </span>XII_GRAPHICSCORE_DLL <a class="code hl_struct" href="../../d7/d9b/structxii_mesh_import_transform.html">xiiMeshImportTransform</a></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>{</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>  <span class="keyword">using </span>StorageType = xiiInt8;</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>  <span class="keyword">enum</span> Enum</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>  {</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    Blender_YUp,</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    Blender_ZUp,</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    Custom = 127,</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    Default = Blender_YUp</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>  };</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>  <span class="keyword">static</span> <a class="code hl_enumeration" href="../../d9/dcc/structxii_basis_axis.html#a36c8166a71a3eb1739956b8873b1da2c">xiiBasisAxis::Enum</a> GetRightDir(xiiMeshImportTransform::Enum transform, <a class="code hl_enumeration" href="../../d9/dcc/structxii_basis_axis.html#a36c8166a71a3eb1739956b8873b1da2c">xiiBasisAxis::Enum</a> dir);</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>  <span class="keyword">static</span> <a class="code hl_enumeration" href="../../d9/dcc/structxii_basis_axis.html#a36c8166a71a3eb1739956b8873b1da2c">xiiBasisAxis::Enum</a> GetUpDir(xiiMeshImportTransform::Enum transform, <a class="code hl_enumeration" href="../../d9/dcc/structxii_basis_axis.html#a36c8166a71a3eb1739956b8873b1da2c">xiiBasisAxis::Enum</a> dir);</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>  <span class="keyword">static</span> <span class="keywordtype">bool</span>               GetFlipForward(xiiMeshImportTransform::Enum transform, <span class="keywordtype">bool</span> bFlip);</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>};</div>
 </div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>XII_DECLARE_REFLECTABLE_TYPE(XII_GRAPHICSCORE_DLL, <a class="code hl_struct" href="../../d7/d9b/structxii_mesh_import_transform.html">xiiMeshImportTransform</a>);</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>XII_DECLARE_REFLECTABLE_TYPE(XII_GRAPHICSCORE_DLL, <a class="code hl_struct" href="../../d7/d9b/structxii_mesh_import_transform.html">xiiMeshImportTransform</a>);</div>
 <div class="ttc" id="aclassxii_hashed_string_html"><div class="ttname"><a href="../../d6/d0c/classxii_hashed_string.html">xiiHashedString</a></div><div class="ttdoc">This class is optimized to take nearly no memory (sizeof(void*)) and to allow very fast checks whethe...</div><div class="ttdef"><b>Definition</b> HashedString.h:25</div></div>
 <div class="ttc" id="aclassxii_typed_resource_handle_html"><div class="ttname"><a href="../../d6/d16/classxii_typed_resource_handle.html">xiiTypedResourceHandle</a></div><div class="ttdoc">The xiiTypedResourceHandle controls access to a xiiResource.</div><div class="ttdef"><b>Definition</b> ResourceHandle.h:138</div></div>
 <div class="ttc" id="astructxii_basis_axis_html_a36c8166a71a3eb1739956b8873b1da2c"><div class="ttname"><a href="../../d9/dcc/structxii_basis_axis.html#a36c8166a71a3eb1739956b8873b1da2c">xiiBasisAxis::Enum</a></div><div class="ttdeci">Enum</div><div class="ttdoc">An enum that allows to select on of the six main axis (positive / negative)</div><div class="ttdef"><b>Definition</b> Declarations.h:260</div></div>
 <div class="ttc" id="astructxii_input_layout_info_html"><div class="ttname"><a href="../../d8/d43/structxii_input_layout_info.html">xiiInputLayoutInfo</a></div><div class="ttdef"><b>Definition</b> MeshBufferResource.h:24</div></div>
-<div class="ttc" id="astructxii_mesh_import_transform_html"><div class="ttname"><a href="../../d7/d9b/structxii_mesh_import_transform.html">xiiMeshImportTransform</a></div><div class="ttdef"><b>Definition</b> Declarations.h:38</div></div>
-<div class="ttc" id="astructxii_permutation_var_html"><div class="ttname"><a href="../../d8/d57/structxii_permutation_var.html">xiiPermutationVar</a></div><div class="ttdef"><b>Definition</b> Declarations.h:25</div></div>
+<div class="ttc" id="astructxii_mesh_import_transform_html"><div class="ttname"><a href="../../d7/d9b/structxii_mesh_import_transform.html">xiiMeshImportTransform</a></div><div class="ttdef"><b>Definition</b> Declarations.h:39</div></div>
+<div class="ttc" id="astructxii_permutation_var_html"><div class="ttname"><a href="../../d8/d57/structxii_permutation_var.html">xiiPermutationVar</a></div><div class="ttdef"><b>Definition</b> Declarations.h:26</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.html">home</a></li><li class="navelem"><a class="el" href="../../dir_1036706e55c22cab35bc1c58ee689f1d.html">runner</a></li><li class="navelem"><a class="el" href="../../dir_629f8151d55d307162ff2d619fb1783d.html">work</a></li><li class="navelem"><a class="el" href="../../dir_1ddc44fe1263a8c7935fa6130b7d9499.html">XII</a></li><li class="navelem"><a class="el" href="../../dir_2c1b6808f12952f4c36e05ba7068379a.html">XII</a></li><li class="navelem"><a class="el" href="../../dir_b5a1c4ecfca018ad24b729e213296d41.html">Source</a></li><li class="navelem"><a class="el" href="../../dir_e321052006a51284e67389ab20037e7c.html">Engine</a></li><li class="navelem"><a class="el" href="../../dir_d1b456933e20132afd1d01c7da962f40.html">GraphicsCore</a></li><li class="navelem"><b>Declarations.h</b></li>
-    <li class="footer">Generated on Sat May 24 2025 20:23:37 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Mon May 26 2025 20:07:22 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 </body>
