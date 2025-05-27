@@ -103,6 +103,7 @@ var hierarchy =
     [ "xiiRenderData::Caching", "d7/dd0/structxii_render_data_1_1_caching.html", null ],
     [ "xiiRenderWorld::CameraConfig", "db/d4a/structxii_render_world_1_1_camera_config.html", null ],
     [ "xiiSkeletonComponent::CapsuleShape", "d0/d22/structxii_skeleton_component_1_1_capsule_shape.html", null ],
+    [ "xiiGALImageCapture::CaptureDescription", "dd/d8a/structxii_g_a_l_image_capture_1_1_capture_description.html", null ],
     [ "xiiRenderData::Category", "d0/d8b/structxii_render_data_1_1_category.html", null ],
     [ "xiiSpatialData::Category", "d4/d87/structxii_spatial_data_1_1_category.html", null ],
     [ "ads::CDockWidget", null, [
@@ -3218,6 +3219,9 @@ var hierarchy =
     ] ],
     [ "xiiArrayBase< xiiSharedPtr< xiiGALTexture >, xiiDynamicArrayBase< xiiSharedPtr< xiiGALTexture > > >", "da/d4c/classxii_array_base.html", [
       [ "xiiDynamicArrayBase< xiiSharedPtr< xiiGALTexture > >", "d2/dea/classxii_dynamic_array_base.html", [
+        [ "xiiDynamicArray< xiiSharedPtr< xiiGALTexture >, xiiDefaultAllocatorWrapper >", "dc/da4/classxii_dynamic_array.html", [
+          [ "xiiHybridArray< xiiSharedPtr< xiiGALTexture >, 2U >", "dc/da9/classxii_hybrid_array.html", null ]
+        ] ],
         [ "xiiDynamicArray< xiiSharedPtr< xiiGALTexture > >", "dc/da4/classxii_dynamic_array.html", null ]
       ] ]
     ] ],
@@ -4058,6 +4062,9 @@ var hierarchy =
     [ "xiiDequeBase< Node, Construct >", "d1/d7d/classxii_deque_base.html", [
       [ "xiiDeque< Node, xiiNullAllocatorWrapper, false >", "d8/df8/classxii_deque.html", null ]
     ] ],
+    [ "xiiDequeBase< PendingTextureDescription, true >", "d1/d7d/classxii_deque_base.html", [
+      [ "xiiDeque< PendingTextureDescription >", "d8/df8/classxii_deque.html", null ]
+    ] ],
     [ "xiiDequeBase< PoolEntry, true >", "d1/d7d/classxii_deque_base.html", [
       [ "xiiDeque< PoolEntry >", "d8/df8/classxii_deque.html", null ]
     ] ],
@@ -4695,6 +4702,7 @@ var hierarchy =
     [ "xiiGALHitGroupBindingMode", "d6/dee/structxii_g_a_l_hit_group_binding_mode.html", [
       [ "xiiEnum< xiiGALHitGroupBindingMode >", "de/dfd/structxii_enum.html", null ]
     ] ],
+    [ "xiiGALImageCapture", "d2/dd0/classxii_g_a_l_image_capture.html", null ],
     [ "xiiGALInputElementFrequency", "d4/d13/structxii_g_a_l_input_element_frequency.html", [
       [ "xiiEnum< xiiGALInputElementFrequency >", "de/dfd/structxii_enum.html", null ]
     ] ],

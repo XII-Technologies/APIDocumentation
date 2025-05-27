@@ -936,6 +936,7 @@ var annotated_dup =
     [ "xiiGALGraphicsPipelineStateVulkan", "da/d98/classxii_g_a_l_graphics_pipeline_state_vulkan.html", null ],
     [ "xiiGALGraphicsUtilities", "d4/d57/classxii_g_a_l_graphics_utilities.html", null ],
     [ "xiiGALHitGroupBindingMode", "d6/dee/structxii_g_a_l_hit_group_binding_mode.html", "d6/dee/structxii_g_a_l_hit_group_binding_mode" ],
+    [ "xiiGALImageCapture", "d2/dd0/classxii_g_a_l_image_capture.html", "d2/dd0/classxii_g_a_l_image_capture" ],
     [ "xiiGALImmutableSamplerDescription", "d3/de4/structxii_g_a_l_immutable_sampler_description.html", "d3/de4/structxii_g_a_l_immutable_sampler_description" ],
     [ "xiiGALInputElementFrequency", "d4/d13/structxii_g_a_l_input_element_frequency.html", "d4/d13/structxii_g_a_l_input_element_frequency" ],
     [ "xiiGALInputLayout", "dd/d38/classxii_g_a_l_input_layout.html", "dd/d38/classxii_g_a_l_input_layout" ],
