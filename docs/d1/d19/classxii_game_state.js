@@ -28,7 +28,7 @@ var classxii_game_state =
     [ "OnDeactivation", "d1/d19/classxii_game_state.html#a43c949ae7d5447924a3a4838193c60e6", null ],
     [ "ProcessInput", "d1/d19/classxii_game_state.html#abdc61b340536c59e9d74c1372b182fc0", null ],
     [ "RequestQuit", "d1/d19/classxii_game_state.html#a37f6f028d6df8a6ff0a9d97d9ef2ebbc", null ],
-    [ "SetupMainView", "d1/d19/classxii_game_state.html#a958e737aee2658061efe277105465f55", null ],
+    [ "SetupMainView", "d1/d19/classxii_game_state.html#a0d9583e909dd4c6edaf9fda920790cde", null ],
     [ "SpawnPlayer", "d1/d19/classxii_game_state.html#a24bec37786852825c0ec04dcd6fb2783", null ],
     [ "StartBackgroundSceneLoading", "d1/d19/classxii_game_state.html#a5c42a645feac6a576045fcf295cb817e", null ],
     [ "SwitchToLoadingScreen", "d1/d19/classxii_game_state.html#ae106c19597806f80ba07823cf464c8b0", null ],

@@ -1,6 +1,6 @@
 var classxii_g_a_l_device =
 [
-    [ "BeginFrame", "d5/d19/classxii_g_a_l_device.html#af9185650581a251148e864d02cf5bd99", null ],
+    [ "BeginFrame", "d5/d19/classxii_g_a_l_device.html#afd3bd25ee5dac5bac704cf3ff001dbbf", null ],
     [ "CreateBlendState", "d5/d19/classxii_g_a_l_device.html#adf635226cbcce4c8ecf11979bb4b77bb", null ],
     [ "CreateBottomLevelAS", "d5/d19/classxii_g_a_l_device.html#ac393b39491e890f8b0a83cf2c79e0c08", null ],
     [ "CreateBuffer", "d5/d19/classxii_g_a_l_device.html#a78cf8d72a95299f761ad4e669c9658e1", null ],
@@ -21,8 +21,7 @@ var classxii_g_a_l_device =
     [ "CreateTilePipelineState", "d5/d19/classxii_g_a_l_device.html#a9800e0e4533649b9ff8af35a210ba8a6", null ],
     [ "CreateTopLevelAS", "d5/d19/classxii_g_a_l_device.html#a4df55d3c9dabcbf1731cea0da07ec780", null ],
     [ "EndFrame", "d5/d19/classxii_g_a_l_device.html#a0cf5758c2b1ef8fb65823a53238f1a7a", null ],
-    [ "EnqueueFrameSwapChain", "d5/d19/classxii_g_a_l_device.html#a4749a808500c12bbdd85b97012a60484", null ],
-    [ "GetDefaultCommandQueue", "d5/d19/classxii_g_a_l_device.html#aec36b8ab2b91fabf44b348eb6d451204", null ],
+    [ "GetDefaultCommandQueue", "d5/d19/classxii_g_a_l_device.html#a7f6b7e1de45ce44addf8bdce598099e3", null ],
     [ "GetDescription", "d5/d19/classxii_g_a_l_device.html#a6f65c258973f8d479bfd1aa346446fcd", null ],
     [ "GetFeatures", "d5/d19/classxii_g_a_l_device.html#ac356d7a5b9dda8b2c2ad5e86916a752f", null ],
     [ "GetGraphicsDeviceAdapterProperties", "d5/d19/classxii_g_a_l_device.html#a6173a3623f59067122c40fb8f2d6e849", null ],

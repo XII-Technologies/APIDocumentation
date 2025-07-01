@@ -135,15 +135,15 @@ Public Types</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a5328176f39c53434765a998ad391c76a" id="r_a5328176f39c53434765a998ad391c76a"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d1/dd2/classxii_g_a_l_command_queue.html">xiiGALCommandQueue</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5328176f39c53434765a998ad391c76a">GetDefaultCommandQueue</a> (<a class="el" href="../../d7/d55/structxii_bitflags.html">xiiBitflags</a>&lt; <a class="el" href="../../d7/db4/structxii_g_a_l_command_queue_type.html">xiiGALCommandQueueType</a> &gt; queueType, bool bAllowGraphicsCommandQueueFallback) const override final</td></tr>
-<tr class="memdesc:a5328176f39c53434765a998ad391c76a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves a pointer to the compute queue if available, null otherwise.  <br /></td></tr>
-<tr class="separator:a5328176f39c53434765a998ad391c76a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a64f5b48b708d672a6c756ba0d7015e29" id="r_a64f5b48b708d672a6c756ba0d7015e29"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a64f5b48b708d672a6c756ba0d7015e29">SetDebugNamePlatform</a> (<a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sName) override final</td></tr>
-<tr class="separator:a64f5b48b708d672a6c756ba0d7015e29"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7cd4290bc072bff2fa0e36d12566168" id="r_ab7cd4290bc072bff2fa0e36d12566168"><td class="memTemplParams" colspan="2"><a id="ab7cd4290bc072bff2fa0e36d12566168" name="ab7cd4290bc072bff2fa0e36d12566168"></a>
+<tr class="memitem:aa054fd25ed4fbd06d292f2345173017c" id="r_aa054fd25ed4fbd06d292f2345173017c"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d1/dd2/classxii_g_a_l_command_queue.html">xiiGALCommandQueue</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa054fd25ed4fbd06d292f2345173017c">GetDefaultCommandQueue</a> (<a class="el" href="../../d7/d55/structxii_bitflags.html">xiiBitflags</a>&lt; <a class="el" href="../../d7/db4/structxii_g_a_l_command_queue_type.html">xiiGALCommandQueueType</a> &gt; queueType) const override final</td></tr>
+<tr class="memdesc:aa054fd25ed4fbd06d292f2345173017c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves a pointer to the compute queue if available, null otherwise.  <br /></td></tr>
+<tr class="separator:aa054fd25ed4fbd06d292f2345173017c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d3d99d93a68130c78a35d8d4d761a85" id="r_a0d3d99d93a68130c78a35d8d4d761a85"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0d3d99d93a68130c78a35d8d4d761a85">SetDebugNamePlatform</a> (<a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sName) const override final</td></tr>
+<tr class="separator:a0d3d99d93a68130c78a35d8d4d761a85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab83f41b3a7a19869806dd613981046f8" id="r_ab83f41b3a7a19869806dd613981046f8"><td class="memTemplParams" colspan="2"><a id="ab83f41b3a7a19869806dd613981046f8" name="ab83f41b3a7a19869806dd613981046f8"></a>
 template&lt;typename ObjectHandle, typename = typename std::enable_if&lt;std::is_object&lt;ObjectHandle&gt;::value&gt;::type&gt; </td></tr>
-<tr class="memitem:ab7cd4290bc072bff2fa0e36d12566168"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>SetVulkanObjectDebugName</b> (ObjectHandle &amp;vkObject, const char *szDebugName, VmaAllocation vmaAllocation={})</td></tr>
-<tr class="separator:ab7cd4290bc072bff2fa0e36d12566168"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab83f41b3a7a19869806dd613981046f8"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>SetVulkanObjectDebugName</b> (ObjectHandle &amp;vkObject, const char *szDebugName, VmaAllocation vmaAllocation={}) const</td></tr>
+<tr class="separator:ab83f41b3a7a19869806dd613981046f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7c5c19715c3310327e843da773158e56" id="r_a7c5c19715c3310327e843da773158e56"><td class="memTemplParams" colspan="2"><a id="a7c5c19715c3310327e843da773158e56" name="a7c5c19715c3310327e843da773158e56"></a>
 template&lt;typename T, typename = std::enable_if_t&lt;std::is_class_v&lt;T&gt; &amp;&amp; HasObjectType&lt;T&gt;::value&gt;&gt; </td></tr>
 <tr class="memitem:a7c5c19715c3310327e843da773158e56"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>SafeReleaseDeviceObject</b> (T &amp;&amp;vkObject, VmaAllocation &amp;&amp;vmaAllocation=nullptr)</td></tr>
@@ -268,17 +268,37 @@ XII_ALWAYS_INLINE xiiUInt64&#160;</td><td class="memItemRight" valign="bottom"><
 <a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Initialize</b> ()</td></tr>
 <tr class="memdesc:a64fd727410fb0d83a90f5b7999feaf7b inherit pub_methods_classxii_g_a_l_device"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize device. <br /></td></tr>
 <tr class="separator:a64fd727410fb0d83a90f5b7999feaf7b inherit pub_methods_classxii_g_a_l_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4749a808500c12bbdd85b97012a60484 inherit pub_methods_classxii_g_a_l_device" id="r_a4749a808500c12bbdd85b97012a60484"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d19/classxii_g_a_l_device.html#a4749a808500c12bbdd85b97012a60484">EnqueueFrameSwapChain</a> (<a class="el" href="../../d8/d9b/classxii_shared_ptr.html">xiiSharedPtr</a>&lt; <a class="el" href="../../d5/d07/classxii_g_a_l_swap_chain.html">xiiGALSwapChain</a> &gt; pSwapChain)</td></tr>
-<tr class="memdesc:a4749a808500c12bbdd85b97012a60484 inherit pub_methods_classxii_g_a_l_device"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a swapchain to be used for the next frame.  <br /></td></tr>
-<tr class="separator:a4749a808500c12bbdd85b97012a60484 inherit pub_methods_classxii_g_a_l_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af9185650581a251148e864d02cf5bd99 inherit pub_methods_classxii_g_a_l_device" id="r_af9185650581a251148e864d02cf5bd99"><td class="memItemLeft" align="right" valign="top">
-void&#160;</td><td class="memItemRight" valign="bottom"><b>BeginFrame</b> (const xiiUInt64 uiRenderFrame=0U)</td></tr>
-<tr class="memdesc:af9185650581a251148e864d02cf5bd99 inherit pub_methods_classxii_g_a_l_device"><td class="mdescLeft">&#160;</td><td class="mdescRight">Begins a render frame. <br /></td></tr>
-<tr class="separator:af9185650581a251148e864d02cf5bd99 inherit pub_methods_classxii_g_a_l_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd3bd25ee5dac5bac704cf3ff001dbbf inherit pub_methods_classxii_g_a_l_device" id="r_afd3bd25ee5dac5bac704cf3ff001dbbf"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><b>BeginFrame</b> ()</td></tr>
+<tr class="memdesc:afd3bd25ee5dac5bac704cf3ff001dbbf inherit pub_methods_classxii_g_a_l_device"><td class="mdescLeft">&#160;</td><td class="mdescRight">Begins a render frame. <br /></td></tr>
+<tr class="separator:afd3bd25ee5dac5bac704cf3ff001dbbf inherit pub_methods_classxii_g_a_l_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0cf5758c2b1ef8fb65823a53238f1a7a inherit pub_methods_classxii_g_a_l_device" id="r_a0cf5758c2b1ef8fb65823a53238f1a7a"><td class="memItemLeft" align="right" valign="top">
 void&#160;</td><td class="memItemRight" valign="bottom"><b>EndFrame</b> ()</td></tr>
 <tr class="memdesc:a0cf5758c2b1ef8fb65823a53238f1a7a inherit pub_methods_classxii_g_a_l_device"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ends a render frame. <br /></td></tr>
 <tr class="separator:a0cf5758c2b1ef8fb65823a53238f1a7a inherit pub_methods_classxii_g_a_l_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a828245f48cdb5625f11a2d04993621a3 inherit pub_methods_classxii_g_a_l_device" id="r_a828245f48cdb5625f11a2d04993621a3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d19/classxii_g_a_l_device.html#a828245f48cdb5625f11a2d04993621a3">WaitIdle</a> ()</td></tr>
+<tr class="memdesc:a828245f48cdb5625f11a2d04993621a3 inherit pub_methods_classxii_g_a_l_device"><td class="mdescLeft">&#160;</td><td class="mdescRight">Waits until all outstanding operations on the GPU are complete and destroys any pending resources and GPU objects.  <br /></td></tr>
+<tr class="separator:a828245f48cdb5625f11a2d04993621a3 inherit pub_methods_classxii_g_a_l_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f65c258973f8d479bfd1aa346446fcd inherit pub_methods_classxii_g_a_l_device" id="r_a6f65c258973f8d479bfd1aa346446fcd"><td class="memItemLeft" align="right" valign="top">
+const <a class="el" href="../../d6/dd5/structxii_g_a_l_device_creation_description.html">xiiGALDeviceCreationDescription</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetDescription</b> () const</td></tr>
+<tr class="memdesc:a6f65c258973f8d479bfd1aa346446fcd inherit pub_methods_classxii_g_a_l_device"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the creation description for this device. <br /></td></tr>
+<tr class="separator:a6f65c258973f8d479bfd1aa346446fcd inherit pub_methods_classxii_g_a_l_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6173a3623f59067122c40fb8f2d6e849 inherit pub_methods_classxii_g_a_l_device" id="r_a6173a3623f59067122c40fb8f2d6e849"><td class="memItemLeft" align="right" valign="top">
+const <a class="el" href="../../dd/d07/structxii_g_a_l_graphics_device_adapter_description.html">xiiGALGraphicsDeviceAdapterDescription</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetGraphicsDeviceAdapterProperties</b> () const</td></tr>
+<tr class="memdesc:a6173a3623f59067122c40fb8f2d6e849 inherit pub_methods_classxii_g_a_l_device"><td class="mdescLeft">&#160;</td><td class="mdescRight">This retrieves the device properties. See xiiGraphicsDeviceAdapterDescription. <br /></td></tr>
+<tr class="separator:a6173a3623f59067122c40fb8f2d6e849 inherit pub_methods_classxii_g_a_l_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac356d7a5b9dda8b2c2ad5e86916a752f inherit pub_methods_classxii_g_a_l_device" id="r_ac356d7a5b9dda8b2c2ad5e86916a752f"><td class="memItemLeft" align="right" valign="top">
+const <a class="el" href="../../d6/d8f/structxii_g_a_l_device_features.html">xiiGALDeviceFeatures</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetFeatures</b> () const</td></tr>
+<tr class="memdesc:ac356d7a5b9dda8b2c2ad5e86916a752f inherit pub_methods_classxii_g_a_l_device"><td class="mdescLeft">&#160;</td><td class="mdescRight">This retrieves the device feature states. See <a class="el" href="../../d6/d8f/structxii_g_a_l_device_features.html" title="This describes the device features.">xiiGALDeviceFeatures</a>. <br /></td></tr>
+<tr class="separator:ac356d7a5b9dda8b2c2ad5e86916a752f inherit pub_methods_classxii_g_a_l_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31b5126af59befd982a5eb0e45fcfa92 inherit pub_methods_classxii_g_a_l_device" id="r_a31b5126af59befd982a5eb0e45fcfa92"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="../../de/dfd/structxii_enum.html">xiiEnum</a>&lt; <a class="el" href="../../d1/dde/structxii_g_a_l_graphics_device_type.html">xiiGALGraphicsDeviceType</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetGraphicsDeviceType</b> () const</td></tr>
+<tr class="memdesc:a31b5126af59befd982a5eb0e45fcfa92 inherit pub_methods_classxii_g_a_l_device"><td class="mdescLeft">&#160;</td><td class="mdescRight">This retrieves the device graphics API type. See <a class="el" href="../../d1/dde/structxii_g_a_l_graphics_device_type.html" title="Defines the graphics device.">xiiGALGraphicsDeviceType</a>. <br /></td></tr>
+<tr class="separator:a31b5126af59befd982a5eb0e45fcfa92 inherit pub_methods_classxii_g_a_l_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae21a645986b141b2fe32552ba300dcb2 inherit pub_methods_classxii_g_a_l_device" id="r_ae21a645986b141b2fe32552ba300dcb2"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="../../dd/d52/classxii_mutex.html">xiiMutex</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetMutex</b> () const</td></tr>
+<tr class="memdesc:ae21a645986b141b2fe32552ba300dcb2 inherit pub_methods_classxii_g_a_l_device"><td class="mdescLeft">&#160;</td><td class="mdescRight">This returns critical section lock. <br /></td></tr>
+<tr class="separator:ae21a645986b141b2fe32552ba300dcb2 inherit pub_methods_classxii_g_a_l_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa92a1d6ee8fb8d4cfe333b9642cd6189 inherit pub_methods_classxii_g_a_l_device" id="r_aa92a1d6ee8fb8d4cfe333b9642cd6189"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d8/d9b/classxii_shared_ptr.html">xiiSharedPtr</a>&lt; <a class="el" href="../../d5/d07/classxii_g_a_l_swap_chain.html">xiiGALSwapChain</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d19/classxii_g_a_l_device.html#aa92a1d6ee8fb8d4cfe333b9642cd6189">CreateSwapChain</a> (const <a class="el" href="../../d7/dc7/structxii_g_a_l_swap_chain_creation_description.html">xiiGALSwapChainCreationDescription</a> &amp;description)</td></tr>
 <tr class="memdesc:aa92a1d6ee8fb8d4cfe333b9642cd6189 inherit pub_methods_classxii_g_a_l_device"><td class="mdescLeft">&#160;</td><td class="mdescRight">This creates a swap chain object.  <br /></td></tr>
 <tr class="separator:aa92a1d6ee8fb8d4cfe333b9642cd6189 inherit pub_methods_classxii_g_a_l_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -336,38 +356,15 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>EndFrame</b> ()</td><
 <tr class="memitem:a9800e0e4533649b9ff8af35a210ba8a6 inherit pub_methods_classxii_g_a_l_device" id="r_a9800e0e4533649b9ff8af35a210ba8a6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d8/d9b/classxii_shared_ptr.html">xiiSharedPtr</a>&lt; <a class="el" href="../../d1/df0/classxii_g_a_l_tile_pipeline_state.html">xiiGALTilePipelineState</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d19/classxii_g_a_l_device.html#a9800e0e4533649b9ff8af35a210ba8a6">CreateTilePipelineState</a> (const <a class="el" href="../../d6/dec/structxii_g_a_l_tile_pipeline_state_creation_description.html">xiiGALTilePipelineStateCreationDescription</a> &amp;description)</td></tr>
 <tr class="memdesc:a9800e0e4533649b9ff8af35a210ba8a6 inherit pub_methods_classxii_g_a_l_device"><td class="mdescLeft">&#160;</td><td class="mdescRight">This creates a new tile pipeline state object.  <br /></td></tr>
 <tr class="separator:a9800e0e4533649b9ff8af35a210ba8a6 inherit pub_methods_classxii_g_a_l_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a828245f48cdb5625f11a2d04993621a3 inherit pub_methods_classxii_g_a_l_device" id="r_a828245f48cdb5625f11a2d04993621a3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d19/classxii_g_a_l_device.html#a828245f48cdb5625f11a2d04993621a3">WaitIdle</a> ()</td></tr>
-<tr class="memdesc:a828245f48cdb5625f11a2d04993621a3 inherit pub_methods_classxii_g_a_l_device"><td class="mdescLeft">&#160;</td><td class="mdescRight">Waits until all outstanding operations on the GPU are complete and destroys any pending resources and GPU objects.  <br /></td></tr>
-<tr class="separator:a828245f48cdb5625f11a2d04993621a3 inherit pub_methods_classxii_g_a_l_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6f65c258973f8d479bfd1aa346446fcd inherit pub_methods_classxii_g_a_l_device" id="r_a6f65c258973f8d479bfd1aa346446fcd"><td class="memItemLeft" align="right" valign="top">
-const <a class="el" href="../../d6/dd5/structxii_g_a_l_device_creation_description.html">xiiGALDeviceCreationDescription</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetDescription</b> () const</td></tr>
-<tr class="memdesc:a6f65c258973f8d479bfd1aa346446fcd inherit pub_methods_classxii_g_a_l_device"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the creation description for this device. <br /></td></tr>
-<tr class="separator:a6f65c258973f8d479bfd1aa346446fcd inherit pub_methods_classxii_g_a_l_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6173a3623f59067122c40fb8f2d6e849 inherit pub_methods_classxii_g_a_l_device" id="r_a6173a3623f59067122c40fb8f2d6e849"><td class="memItemLeft" align="right" valign="top">
-const <a class="el" href="../../dd/d07/structxii_g_a_l_graphics_device_adapter_description.html">xiiGALGraphicsDeviceAdapterDescription</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetGraphicsDeviceAdapterProperties</b> () const</td></tr>
-<tr class="memdesc:a6173a3623f59067122c40fb8f2d6e849 inherit pub_methods_classxii_g_a_l_device"><td class="mdescLeft">&#160;</td><td class="mdescRight">This retrieves the device properties. See xiiGraphicsDeviceAdapterDescription. <br /></td></tr>
-<tr class="separator:a6173a3623f59067122c40fb8f2d6e849 inherit pub_methods_classxii_g_a_l_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac356d7a5b9dda8b2c2ad5e86916a752f inherit pub_methods_classxii_g_a_l_device" id="r_ac356d7a5b9dda8b2c2ad5e86916a752f"><td class="memItemLeft" align="right" valign="top">
-const <a class="el" href="../../d6/d8f/structxii_g_a_l_device_features.html">xiiGALDeviceFeatures</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetFeatures</b> () const</td></tr>
-<tr class="memdesc:ac356d7a5b9dda8b2c2ad5e86916a752f inherit pub_methods_classxii_g_a_l_device"><td class="mdescLeft">&#160;</td><td class="mdescRight">This retrieves the device feature states. See <a class="el" href="../../d6/d8f/structxii_g_a_l_device_features.html" title="This describes the device features.">xiiGALDeviceFeatures</a>. <br /></td></tr>
-<tr class="separator:ac356d7a5b9dda8b2c2ad5e86916a752f inherit pub_methods_classxii_g_a_l_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a31b5126af59befd982a5eb0e45fcfa92 inherit pub_methods_classxii_g_a_l_device" id="r_a31b5126af59befd982a5eb0e45fcfa92"><td class="memItemLeft" align="right" valign="top">
-<a class="el" href="../../de/dfd/structxii_enum.html">xiiEnum</a>&lt; <a class="el" href="../../d1/dde/structxii_g_a_l_graphics_device_type.html">xiiGALGraphicsDeviceType</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetGraphicsDeviceType</b> () const</td></tr>
-<tr class="memdesc:a31b5126af59befd982a5eb0e45fcfa92 inherit pub_methods_classxii_g_a_l_device"><td class="mdescLeft">&#160;</td><td class="mdescRight">This retrieves the device graphics API type. See <a class="el" href="../../d1/dde/structxii_g_a_l_graphics_device_type.html" title="Defines the graphics device.">xiiGALGraphicsDeviceType</a>. <br /></td></tr>
-<tr class="separator:a31b5126af59befd982a5eb0e45fcfa92 inherit pub_methods_classxii_g_a_l_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae21a645986b141b2fe32552ba300dcb2 inherit pub_methods_classxii_g_a_l_device" id="r_ae21a645986b141b2fe32552ba300dcb2"><td class="memItemLeft" align="right" valign="top">
-<a class="el" href="../../dd/d52/classxii_mutex.html">xiiMutex</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetMutex</b> () const</td></tr>
-<tr class="memdesc:ae21a645986b141b2fe32552ba300dcb2 inherit pub_methods_classxii_g_a_l_device"><td class="mdescLeft">&#160;</td><td class="mdescRight">This returns critical section lock. <br /></td></tr>
-<tr class="separator:ae21a645986b141b2fe32552ba300dcb2 inherit pub_methods_classxii_g_a_l_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classxii_g_a_l_object"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_classxii_g_a_l_object')"><img src="../../closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="../../d3/dda/classxii_g_a_l_object.html">xiiGALObject</a></td></tr>
 <tr class="memitem:ab332ceabb290d20c5aba58561733cbb0 inherit pub_methods_classxii_g_a_l_object" id="r_ab332ceabb290d20c5aba58561733cbb0"><td class="memItemLeft" align="right" valign="top">
 XII_ALWAYS_INLINE <a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetDebugName</b> () const</td></tr>
 <tr class="memdesc:ab332ceabb290d20c5aba58561733cbb0 inherit pub_methods_classxii_g_a_l_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the debug name of this resource. <br /></td></tr>
 <tr class="separator:ab332ceabb290d20c5aba58561733cbb0 inherit pub_methods_classxii_g_a_l_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aab252629a74f03a3c50d44c8c8a99911 inherit pub_methods_classxii_g_a_l_object" id="r_aab252629a74f03a3c50d44c8c8a99911"><td class="memItemLeft" align="right" valign="top">
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SetDebugName</b> (<a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sDebugName)</td></tr>
-<tr class="memdesc:aab252629a74f03a3c50d44c8c8a99911 inherit pub_methods_classxii_g_a_l_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the debug name for this resource. <br /></td></tr>
-<tr class="separator:aab252629a74f03a3c50d44c8c8a99911 inherit pub_methods_classxii_g_a_l_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9654da7ecbe5373db022ed43d265ca8a inherit pub_methods_classxii_g_a_l_object" id="r_a9654da7ecbe5373db022ed43d265ca8a"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetDebugName</b> (<a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sDebugName) const</td></tr>
+<tr class="memdesc:a9654da7ecbe5373db022ed43d265ca8a inherit pub_methods_classxii_g_a_l_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the debug name for this resource. <br /></td></tr>
+<tr class="separator:a9654da7ecbe5373db022ed43d265ca8a inherit pub_methods_classxii_g_a_l_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classxii_reflected_class"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_classxii_reflected_class')"><img src="../../closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="../../dc/d71/classxii_reflected_class.html">xiiReflectedClass</a></td></tr>
 <tr class="memitem:a00430d2230bc44ad262be3d0a4e62e10 inherit pub_methods_classxii_reflected_class" id="r_a00430d2230bc44ad262be3d0a4e62e10"><td class="memItemLeft" align="right" valign="top">
 virtual const <a class="el" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetDynamicRTTI</b> () const</td></tr>
@@ -397,22 +394,22 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~xiiRefCounted</b>
 <tr class="memitem:ad2594133c630abd15739894ef67c38b7 inherit pub_methods_classxii_ref_counting_impl" id="r_ad2594133c630abd15739894ef67c38b7"><td class="memItemLeft" align="right" valign="top">
 void&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="../../d7/df4/classxii_ref_counting_impl.html">xiiRefCountingImpl</a> &amp;rhs)</td></tr>
 <tr class="separator:ad2594133c630abd15739894ef67c38b7 inherit pub_methods_classxii_ref_counting_impl"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af89a37294bfebe74f2f43c492d2c14c3 inherit pub_methods_classxii_ref_counting_impl" id="r_af89a37294bfebe74f2f43c492d2c14c3"><td class="memItemLeft" align="right" valign="top">
-xiiInt32&#160;</td><td class="memItemRight" valign="bottom"><b>AddRef</b> () const</td></tr>
-<tr class="memdesc:af89a37294bfebe74f2f43c492d2c14c3 inherit pub_methods_classxii_ref_counting_impl"><td class="mdescLeft">&#160;</td><td class="mdescRight">Increments the reference counter. Returns the new reference count. <br /></td></tr>
-<tr class="separator:af89a37294bfebe74f2f43c492d2c14c3 inherit pub_methods_classxii_ref_counting_impl"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2cef7cdc6931aad7337348db21f38c64 inherit pub_methods_classxii_ref_counting_impl" id="r_a2cef7cdc6931aad7337348db21f38c64"><td class="memItemLeft" align="right" valign="top">
-xiiInt32&#160;</td><td class="memItemRight" valign="bottom"><b>ReleaseRef</b> () const</td></tr>
-<tr class="memdesc:a2cef7cdc6931aad7337348db21f38c64 inherit pub_methods_classxii_ref_counting_impl"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decrements the reference counter. Returns the new reference count. <br /></td></tr>
-<tr class="separator:a2cef7cdc6931aad7337348db21f38c64 inherit pub_methods_classxii_ref_counting_impl"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af87016b6ca63179b3bfa907d7fa1322d inherit pub_methods_classxii_ref_counting_impl" id="r_af87016b6ca63179b3bfa907d7fa1322d"><td class="memItemLeft" align="right" valign="top">
+xiiUInt32&#160;</td><td class="memItemRight" valign="bottom"><b>AddRef</b> () const</td></tr>
+<tr class="memdesc:af87016b6ca63179b3bfa907d7fa1322d inherit pub_methods_classxii_ref_counting_impl"><td class="mdescLeft">&#160;</td><td class="mdescRight">Increments the reference counter. Returns the new reference count. <br /></td></tr>
+<tr class="separator:af87016b6ca63179b3bfa907d7fa1322d inherit pub_methods_classxii_ref_counting_impl"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a134e2cf5e34230d57b5e9f16bc448fa2 inherit pub_methods_classxii_ref_counting_impl" id="r_a134e2cf5e34230d57b5e9f16bc448fa2"><td class="memItemLeft" align="right" valign="top">
+xiiUInt32&#160;</td><td class="memItemRight" valign="bottom"><b>ReleaseRef</b> () const</td></tr>
+<tr class="memdesc:a134e2cf5e34230d57b5e9f16bc448fa2 inherit pub_methods_classxii_ref_counting_impl"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decrements the reference counter. Returns the new reference count. <br /></td></tr>
+<tr class="separator:a134e2cf5e34230d57b5e9f16bc448fa2 inherit pub_methods_classxii_ref_counting_impl"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1ae4990ae83e124ddc5e1fa69261f88f inherit pub_methods_classxii_ref_counting_impl" id="r_a1ae4990ae83e124ddc5e1fa69261f88f"><td class="memItemLeft" align="right" valign="top">
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsReferenced</b> () const</td></tr>
 <tr class="memdesc:a1ae4990ae83e124ddc5e1fa69261f88f inherit pub_methods_classxii_ref_counting_impl"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the reference count is greater than 0, false otherwise. <br /></td></tr>
 <tr class="separator:a1ae4990ae83e124ddc5e1fa69261f88f inherit pub_methods_classxii_ref_counting_impl"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9f7119c376cfcd3e1d4a0264a1b3f218 inherit pub_methods_classxii_ref_counting_impl" id="r_a9f7119c376cfcd3e1d4a0264a1b3f218"><td class="memItemLeft" align="right" valign="top">
-xiiInt32&#160;</td><td class="memItemRight" valign="bottom"><b>GetRefCount</b> () const</td></tr>
-<tr class="memdesc:a9f7119c376cfcd3e1d4a0264a1b3f218 inherit pub_methods_classxii_ref_counting_impl"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current reference count. <br /></td></tr>
-<tr class="separator:a9f7119c376cfcd3e1d4a0264a1b3f218 inherit pub_methods_classxii_ref_counting_impl"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab635556f309ab33e77d52fc85cd48c37 inherit pub_methods_classxii_ref_counting_impl" id="r_ab635556f309ab33e77d52fc85cd48c37"><td class="memItemLeft" align="right" valign="top">
+xiiUInt32&#160;</td><td class="memItemRight" valign="bottom"><b>GetRefCount</b> () const</td></tr>
+<tr class="memdesc:ab635556f309ab33e77d52fc85cd48c37 inherit pub_methods_classxii_ref_counting_impl"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current reference count. <br /></td></tr>
+<tr class="separator:ab635556f309ab33e77d52fc85cd48c37 inherit pub_methods_classxii_ref_counting_impl"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -422,12 +419,12 @@ virtual <a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a>&#1
 <tr class="memitem:a2068dac3c212c9d354bd35bab612f17a" id="r_a2068dac3c212c9d354bd35bab612f17a"><td class="memItemLeft" align="right" valign="top"><a id="a2068dac3c212c9d354bd35bab612f17a" name="a2068dac3c212c9d354bd35bab612f17a"></a>
 virtual <a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><b>PostInitializePlatform</b> () override final</td></tr>
 <tr class="separator:a2068dac3c212c9d354bd35bab612f17a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abf8801db9aff067d5b91d394d3a9a9dc" id="r_abf8801db9aff067d5b91d394d3a9a9dc"><td class="memItemLeft" align="right" valign="top"><a id="abf8801db9aff067d5b91d394d3a9a9dc" name="abf8801db9aff067d5b91d394d3a9a9dc"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>BeginFramePlatform</b> (<a class="el" href="../../d0/d60/classxii_array_ptr.html">xiiArrayPtr</a>&lt; <a class="el" href="../../d8/d9b/classxii_shared_ptr.html">xiiSharedPtr</a>&lt; <a class="el" href="../../d5/d07/classxii_g_a_l_swap_chain.html">xiiGALSwapChain</a> &gt; &gt; pSwapChains, const xiiUInt64 uiRenderFrame) override final</td></tr>
-<tr class="separator:abf8801db9aff067d5b91d394d3a9a9dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a196a275016f523d08cddb7dc8c47989a" id="r_a196a275016f523d08cddb7dc8c47989a"><td class="memItemLeft" align="right" valign="top"><a id="a196a275016f523d08cddb7dc8c47989a" name="a196a275016f523d08cddb7dc8c47989a"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>EndFramePlatform</b> (<a class="el" href="../../d0/d60/classxii_array_ptr.html">xiiArrayPtr</a>&lt; <a class="el" href="../../d8/d9b/classxii_shared_ptr.html">xiiSharedPtr</a>&lt; <a class="el" href="../../d5/d07/classxii_g_a_l_swap_chain.html">xiiGALSwapChain</a> &gt; &gt; pSwapChains) override final</td></tr>
-<tr class="separator:a196a275016f523d08cddb7dc8c47989a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0bacbb6b5c26f90034f5ee79eb274acd" id="r_a0bacbb6b5c26f90034f5ee79eb274acd"><td class="memItemLeft" align="right" valign="top"><a id="a0bacbb6b5c26f90034f5ee79eb274acd" name="a0bacbb6b5c26f90034f5ee79eb274acd"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>BeginFramePlatform</b> () override final</td></tr>
+<tr class="separator:a0bacbb6b5c26f90034f5ee79eb274acd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a780daed1d7d930cbfb624f5986d71aff" id="r_a780daed1d7d930cbfb624f5986d71aff"><td class="memItemLeft" align="right" valign="top"><a id="a780daed1d7d930cbfb624f5986d71aff" name="a780daed1d7d930cbfb624f5986d71aff"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>EndFramePlatform</b> () override final</td></tr>
+<tr class="separator:a780daed1d7d930cbfb624f5986d71aff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab2b44bfa4edcf3b7380fa8379d6332de" id="r_ab2b44bfa4edcf3b7380fa8379d6332de"><td class="memItemLeft" align="right" valign="top"><a id="ab2b44bfa4edcf3b7380fa8379d6332de" name="ab2b44bfa4edcf3b7380fa8379d6332de"></a>
 virtual <a class="el" href="../../de/d3c/structxii_internal_1_1_new_instance.html">xiiInternal::NewInstance</a>&lt; <a class="el" href="../../d5/d07/classxii_g_a_l_swap_chain.html">xiiGALSwapChain</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>CreateSwapChainPlatform</b> (const <a class="el" href="../../d7/dc7/structxii_g_a_l_swap_chain_creation_description.html">xiiGALSwapChainCreationDescription</a> &amp;description) override final</td></tr>
 <tr class="separator:ab2b44bfa4edcf3b7380fa8379d6332de"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -560,8 +557,8 @@ static <a class="el" href="../../dc/d22/classxii_event.html">xiiEvent</a>&lt; co
 <tr class="separator:a3167cc9d01d6202f5a031b31c94ba3f5 inherit pro_attribs_classxii_g_a_l_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a5328176f39c53434765a998ad391c76a" name="a5328176f39c53434765a998ad391c76a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5328176f39c53434765a998ad391c76a">&#9670;&#160;</a></span>GetDefaultCommandQueue()</h2>
+<a id="aa054fd25ed4fbd06d292f2345173017c" name="aa054fd25ed4fbd06d292f2345173017c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa054fd25ed4fbd06d292f2345173017c">&#9670;&#160;</a></span>GetDefaultCommandQueue()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -572,12 +569,8 @@ static <a class="el" href="../../dc/d22/classxii_event.html">xiiEvent</a>&lt; co
         <tr>
           <td class="memname"><a class="el" href="../../d1/dd2/classxii_g_a_l_command_queue.html">xiiGALCommandQueue</a> * xiiGALDeviceVulkan::GetDefaultCommandQueue </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../d7/d55/structxii_bitflags.html">xiiBitflags</a>&lt; <a class="el" href="../../d7/db4/structxii_g_a_l_command_queue_type.html">xiiGALCommandQueueType</a> &gt;</td>          <td class="paramname"><span class="paramname"><em>queueType</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>bAllowGraphicsCommandQueueFallback</em></span>&#160;) const</td>
+          <td class="paramtype"><a class="el" href="../../d7/d55/structxii_bitflags.html">xiiBitflags</a>&lt; <a class="el" href="../../d7/db4/structxii_g_a_l_command_queue_type.html">xiiGALCommandQueueType</a> &gt;</td>          <td class="paramname"><span class="paramname"><em>queueType</em></span></td><td>)</td>
+          <td> const</td>
         </tr>
       </table>
   </td>
@@ -596,12 +589,12 @@ static <a class="el" href="../../dc/d22/classxii_event.html">xiiEvent</a>&lt; co
 </dl>
 <dl class="section note"><dt>Note</dt><dd>The default graphics queue is guaranteed to exist, for a successful device initialization. </dd></dl>
 
-<p>Implements <a class="el" href="../../d5/d19/classxii_g_a_l_device.html#aec36b8ab2b91fabf44b348eb6d451204">xiiGALDevice</a>.</p>
+<p>Implements <a class="el" href="../../d5/d19/classxii_g_a_l_device.html#a7f6b7e1de45ce44addf8bdce598099e3">xiiGALDevice</a>.</p>
 
 </div>
 </div>
-<a id="a64f5b48b708d672a6c756ba0d7015e29" name="a64f5b48b708d672a6c756ba0d7015e29"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a64f5b48b708d672a6c756ba0d7015e29">&#9670;&#160;</a></span>SetDebugNamePlatform()</h2>
+<a id="a0d3d99d93a68130c78a35d8d4d761a85" name="a0d3d99d93a68130c78a35d8d4d761a85"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d3d99d93a68130c78a35d8d4d761a85">&#9670;&#160;</a></span>SetDebugNamePlatform()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -613,7 +606,7 @@ static <a class="el" href="../../dc/d22/classxii_event.html">xiiEvent</a>&lt; co
           <td class="memname">void xiiGALDeviceVulkan::SetDebugNamePlatform </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a></td>          <td class="paramname"><span class="paramname"><em>sName</em></span></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
   </td>
@@ -637,7 +630,7 @@ static <a class="el" href="../../dc/d22/classxii_event.html">xiiEvent</a>&lt; co
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d3/d6b/classxii_g_a_l_device_vulkan.html">xiiGALDeviceVulkan</a></li>
-    <li class="footer">Generated on Tue May 27 2025 07:14:03 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Tue Jul 1 2025 18:05:59 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 </body>

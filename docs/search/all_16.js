@@ -46,12 +46,13 @@ var searchData=
   ['vertexinput_43',['VertexInput',['../dc/d29/structxii_g_a_l_pipeline_stage_flags.html#ab114e9a33a63968b73bdf79069b73282ad4f2fbba9eb5026da9c46cbc41d0c5b9',1,'xiiGALPipelineStageFlags']]],
   ['vertexread_44',['VertexRead',['../d7/d8d/structxii_g_a_l_access_flags.html#a4c4d72bc05e2a6cd4819337ffa7f6b9aa58608fd56cb1c89400d71bf787a36fd6',1,'xiiGALAccessFlags']]],
   ['vertexshader_45',['VertexShader',['../dc/d29/structxii_g_a_l_pipeline_stage_flags.html#ab114e9a33a63968b73bdf79069b73282a57e418645408f4d077c1461c3ddc8776',1,'xiiGALPipelineStageFlags']]],
-  ['violet_46',['Violet',['../d3/de6/classxii_color.html#ae0052e4284108807305eca16e26b98b5',1,'xiiColor']]],
-  ['visibility_47',['Visibility',['../de/d0e/structxii_property_ui_state.html#a887e1d807f50c059bac4e07ff19c047d',1,'xiiPropertyUiState']]],
-  ['visit_48',['Visit',['../da/d57/classxii_document_object_visitor.html#a1577c12b12bbaa58c0e3e3b673b9d834',1,'xiiDocumentObjectVisitor']]],
-  ['visitorfunc_49',['VisitorFunc',['../d6/d89/classxii_world.html#a2a28037bf6e0847c42b7941e4861ea4b',1,'xiiWorld']]],
-  ['visualstudio_50',['VisualStudio',['../d9/d2e/classxii_log_writer_1_1_visual_studio.html',1,'xiiLogWriter']]],
-  ['void_51',['Void',['../de/d04/structxii_g_a_l_shader_primitive_type.html#a1610874798251f36546edc21e7db770caa772aa2ec2e52e89ccab80bb73a4d399',1,'xiiGALShaderPrimitiveType']]],
-  ['vsnprintf_52',['vsnprintf',['../df/d65/classxii_string_utils.html#a0baa3e2dc382fae0d4bea6b91e10ab85',1,'xiiStringUtils']]],
-  ['vulkan_53',['Vulkan',['../d1/dde/structxii_g_a_l_graphics_device_type.html#a4d3301594c1735e73ba0bbfe64122c68a98b84e8b37f9e3492d7a85fda9a46bfc',1,'xiiGALGraphicsDeviceType']]]
+  ['vertexstreamdescription_46',['VertexStreamDescription',['../d6/d1d/structxii_g_a_l_command_list_1_1_vertex_stream_description.html',1,'xiiGALCommandList']]],
+  ['violet_47',['Violet',['../d3/de6/classxii_color.html#ae0052e4284108807305eca16e26b98b5',1,'xiiColor']]],
+  ['visibility_48',['Visibility',['../de/d0e/structxii_property_ui_state.html#a887e1d807f50c059bac4e07ff19c047d',1,'xiiPropertyUiState']]],
+  ['visit_49',['Visit',['../da/d57/classxii_document_object_visitor.html#a1577c12b12bbaa58c0e3e3b673b9d834',1,'xiiDocumentObjectVisitor']]],
+  ['visitorfunc_50',['VisitorFunc',['../d6/d89/classxii_world.html#a2a28037bf6e0847c42b7941e4861ea4b',1,'xiiWorld']]],
+  ['visualstudio_51',['VisualStudio',['../d9/d2e/classxii_log_writer_1_1_visual_studio.html',1,'xiiLogWriter']]],
+  ['void_52',['Void',['../de/d04/structxii_g_a_l_shader_primitive_type.html#a1610874798251f36546edc21e7db770caa772aa2ec2e52e89ccab80bb73a4d399',1,'xiiGALShaderPrimitiveType']]],
+  ['vsnprintf_53',['vsnprintf',['../df/d65/classxii_string_utils.html#a0baa3e2dc382fae0d4bea6b91e10ab85',1,'xiiStringUtils']]],
+  ['vulkan_54',['Vulkan',['../d1/dde/structxii_g_a_l_graphics_device_type.html#a4d3301594c1735e73ba0bbfe64122c68a98b84e8b37f9e3492d7a85fda9a46bfc',1,'xiiGALGraphicsDeviceType']]]
 ];
