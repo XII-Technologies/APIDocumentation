@@ -100,6 +100,7 @@ $(function(){initNavTree('dc/d0c/structxii_source_format.html','../../'); initRe
 <div class="header">
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="../../d3/d94/structxii_source_format-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">xiiSourceFormat Struct Reference</div></div>
 </div><!--header-->
@@ -112,18 +113,30 @@ Inheritance diagram for xiiSourceFormat:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a3a1fde28d4cda014762e29ecbe0be54c" id="r_a3a1fde28d4cda014762e29ecbe0be54c"><td class="memItemLeft" align="right" valign="top"><a id="a3a1fde28d4cda014762e29ecbe0be54c" name="a3a1fde28d4cda014762e29ecbe0be54c"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>Enum</b> : StorageType { <br />
-&#160;&#160;<b>Color4Channel8BitNormalized_sRGB</b>
-, <b>Color4Channel8BitNormalized</b>
-, <b>Color4Channel16BitFloat</b>
-, <b>Color4Channel32BitFloat</b>
+<tr class="memitem:a3a1fde28d4cda014762e29ecbe0be54c" id="r_a3a1fde28d4cda014762e29ecbe0be54c"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3a1fde28d4cda014762e29ecbe0be54c">Enum</a> : StorageType { <br />
+&#160;&#160;<a class="el" href="#a3a1fde28d4cda014762e29ecbe0be54ca538bbf7da570cacd4902ac06b69892a9">Color4Channel8BitNormalized_sRGB</a>
+, <a class="el" href="#a3a1fde28d4cda014762e29ecbe0be54ca2a29c5949346873fb43a413e2384f410">Color4Channel8BitNormalized</a>
+, <a class="el" href="#a3a1fde28d4cda014762e29ecbe0be54cac090c05e1fbaebca08e7e506a2de32ba">Color2Channel16BitFloat</a>
+, <a class="el" href="#a3a1fde28d4cda014762e29ecbe0be54ca3171c2d18e9114e8445e85c2cb82fbf2">Color4Channel16BitFloat</a>
 , <br />
-&#160;&#160;<b>Color3Channel11_11_10BitFloat</b>
-, <b>Depth16Bit</b>
-, <b>Depth24BitStencil8Bit</b>
-, <b>Depth32BitFloat</b>
+&#160;&#160;<a class="el" href="#a3a1fde28d4cda014762e29ecbe0be54ca2641fa3ea77224a02b93a647c9034d8b">Color2Channel32BitFloat</a>
+, <a class="el" href="#a3a1fde28d4cda014762e29ecbe0be54cae329a9d34d14af1bdfedba18003458d1">Color3Channel32BitFloat</a>
+, <a class="el" href="#a3a1fde28d4cda014762e29ecbe0be54ca05022ef1d58e935edd3452c0469d16c4">Color4Channel32BitFloat</a>
+, <a class="el" href="#a3a1fde28d4cda014762e29ecbe0be54caf583b4ef26eb51317ebae4c997c702b6">Color3Channel11_11_10BitFloat</a>
 , <br />
-&#160;&#160;<b>ENUM_COUNT</b>
+&#160;&#160;<a class="el" href="#a3a1fde28d4cda014762e29ecbe0be54caf0fe45f422802b2b6d3d9a84592c5854">Depth16Bit</a>
+, <a class="el" href="#a3a1fde28d4cda014762e29ecbe0be54ca4ddbd28721404389ef1c47d18b6a7929">Depth24BitStencil8Bit</a>
+, <a class="el" href="#a3a1fde28d4cda014762e29ecbe0be54cae7a4ebb34cc4d077492915b2d3877194">Depth32BitFloat</a>
+, <a class="el" href="#a3a1fde28d4cda014762e29ecbe0be54cac0acacc6c40a996c9d5fdebfaddaea8c">BC1_RGB_DXT1</a>
+, <br />
+&#160;&#160;<a class="el" href="#a3a1fde28d4cda014762e29ecbe0be54cac9526a60462dd1f7d69a9bfedd6bc0ec">BC2_RGBA_DXT3</a>
+, <a class="el" href="#a3a1fde28d4cda014762e29ecbe0be54caeb35511fb74d1adb47745036ae23c379">BC3_RGBA_DXT5</a>
+, <a class="el" href="#a3a1fde28d4cda014762e29ecbe0be54ca3b6f149f601a1d8a00768bf952545fc9">BC4_R_Grey_DXT5A</a>
+, <a class="el" href="#a3a1fde28d4cda014762e29ecbe0be54ca86d5eaff505a410dca06ef14be6a7afe">BC5_RG_Grey_DXT5A</a>
+, <br />
+&#160;&#160;<a class="el" href="#a3a1fde28d4cda014762e29ecbe0be54caddf505c4e029f3e47def8b6aba5dd58e">BC6H_RGB_Float</a>
+, <a class="el" href="#a3a1fde28d4cda014762e29ecbe0be54ca56c00d0bd62e2893100931f3ee9fd911">BC7_RGBA</a>
+, <b>ENUM_COUNT</b>
 , <b>Default</b> = Color4Channel8BitNormalized_sRGB
 <br />
  }</td></tr>
@@ -131,9 +144,69 @@ Public Types</h2></td></tr>
 <tr class="memitem:adc0391e228f337cb473f66a7e4eff78c" id="r_adc0391e228f337cb473f66a7e4eff78c"><td class="memItemLeft" align="right" valign="top"><a id="adc0391e228f337cb473f66a7e4eff78c" name="adc0391e228f337cb473f66a7e4eff78c"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>StorageType</b> = xiiUInt8</td></tr>
 <tr class="separator:adc0391e228f337cb473f66a7e4eff78c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:ab1eaf6fbf992ff0799277c86e0da5ebe" id="r_ab1eaf6fbf992ff0799277c86e0da5ebe"><td class="memItemLeft" align="right" valign="top"><a id="ab1eaf6fbf992ff0799277c86e0da5ebe" name="ab1eaf6fbf992ff0799277c86e0da5ebe"></a>
+static <a class="el" href="../../de/d10/structxii_g_a_l_resource_format.html#a85df1b2fc240485387136c2211fcebf6">xiiGALResourceFormat::Enum</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetGALResourceFormat</b> (<a class="el" href="#a3a1fde28d4cda014762e29ecbe0be54c">xiiSourceFormat::Enum</a> format, bool bFlipColorChannels=false)</td></tr>
+<tr class="separator:ab1eaf6fbf992ff0799277c86e0da5ebe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<hr/>The documentation for this struct was generated from the following file:<ul>
-<li>/home/runner/work/XII/XII/Source/Engine/GraphicsCore/Pipeline/Passes/<a class="el" href="../../d0/dad/_source_pass_8h_source.html">SourcePass.h</a></li>
+<h2 class="groupheader">Member Enumeration Documentation</h2>
+<a id="a3a1fde28d4cda014762e29ecbe0be54c" name="a3a1fde28d4cda014762e29ecbe0be54c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a1fde28d4cda014762e29ecbe0be54c">&#9670;&#160;</a></span>Enum</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="#a3a1fde28d4cda014762e29ecbe0be54c">xiiSourceFormat::Enum</a> : StorageType</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a3a1fde28d4cda014762e29ecbe0be54ca538bbf7da570cacd4902ac06b69892a9" name="a3a1fde28d4cda014762e29ecbe0be54ca538bbf7da570cacd4902ac06b69892a9"></a>Color4Channel8BitNormalized_sRGB&#160;</td><td class="fielddoc"><p>RGBA 8-bit normalized with sRGB colorspace (default). </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a3a1fde28d4cda014762e29ecbe0be54ca2a29c5949346873fb43a413e2384f410" name="a3a1fde28d4cda014762e29ecbe0be54ca2a29c5949346873fb43a413e2384f410"></a>Color4Channel8BitNormalized&#160;</td><td class="fielddoc"><p>RGBA 8-bit normalized linear. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a3a1fde28d4cda014762e29ecbe0be54cac090c05e1fbaebca08e7e506a2de32ba" name="a3a1fde28d4cda014762e29ecbe0be54cac090c05e1fbaebca08e7e506a2de32ba"></a>Color2Channel16BitFloat&#160;</td><td class="fielddoc"><p>RG 16-bit float. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a3a1fde28d4cda014762e29ecbe0be54ca3171c2d18e9114e8445e85c2cb82fbf2" name="a3a1fde28d4cda014762e29ecbe0be54ca3171c2d18e9114e8445e85c2cb82fbf2"></a>Color4Channel16BitFloat&#160;</td><td class="fielddoc"><p>RGBA 16-bit float. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a3a1fde28d4cda014762e29ecbe0be54ca2641fa3ea77224a02b93a647c9034d8b" name="a3a1fde28d4cda014762e29ecbe0be54ca2641fa3ea77224a02b93a647c9034d8b"></a>Color2Channel32BitFloat&#160;</td><td class="fielddoc"><p>RG 32-bit float. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a3a1fde28d4cda014762e29ecbe0be54cae329a9d34d14af1bdfedba18003458d1" name="a3a1fde28d4cda014762e29ecbe0be54cae329a9d34d14af1bdfedba18003458d1"></a>Color3Channel32BitFloat&#160;</td><td class="fielddoc"><p>RGB 32-bit float. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a3a1fde28d4cda014762e29ecbe0be54ca05022ef1d58e935edd3452c0469d16c4" name="a3a1fde28d4cda014762e29ecbe0be54ca05022ef1d58e935edd3452c0469d16c4"></a>Color4Channel32BitFloat&#160;</td><td class="fielddoc"><p>RGBA 32-bit float. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a3a1fde28d4cda014762e29ecbe0be54caf583b4ef26eb51317ebae4c997c702b6" name="a3a1fde28d4cda014762e29ecbe0be54caf583b4ef26eb51317ebae4c997c702b6"></a>Color3Channel11_11_10BitFloat&#160;</td><td class="fielddoc"><p>RGB 11-11-10 bit float. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a3a1fde28d4cda014762e29ecbe0be54caf0fe45f422802b2b6d3d9a84592c5854" name="a3a1fde28d4cda014762e29ecbe0be54caf0fe45f422802b2b6d3d9a84592c5854"></a>Depth16Bit&#160;</td><td class="fielddoc"><p>16-bit depth. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a3a1fde28d4cda014762e29ecbe0be54ca4ddbd28721404389ef1c47d18b6a7929" name="a3a1fde28d4cda014762e29ecbe0be54ca4ddbd28721404389ef1c47d18b6a7929"></a>Depth24BitStencil8Bit&#160;</td><td class="fielddoc"><p>24-bit depth + 8-bit stencil. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a3a1fde28d4cda014762e29ecbe0be54cae7a4ebb34cc4d077492915b2d3877194" name="a3a1fde28d4cda014762e29ecbe0be54cae7a4ebb34cc4d077492915b2d3877194"></a>Depth32BitFloat&#160;</td><td class="fielddoc"><p>32-bit float depth. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a3a1fde28d4cda014762e29ecbe0be54cac0acacc6c40a996c9d5fdebfaddaea8c" name="a3a1fde28d4cda014762e29ecbe0be54cac0acacc6c40a996c9d5fdebfaddaea8c"></a>BC1_RGB_DXT1&#160;</td><td class="fielddoc"><p>DXT1 compression (no alpha). </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a3a1fde28d4cda014762e29ecbe0be54cac9526a60462dd1f7d69a9bfedd6bc0ec" name="a3a1fde28d4cda014762e29ecbe0be54cac9526a60462dd1f7d69a9bfedd6bc0ec"></a>BC2_RGBA_DXT3&#160;</td><td class="fielddoc"><p>DXT3 compression. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a3a1fde28d4cda014762e29ecbe0be54caeb35511fb74d1adb47745036ae23c379" name="a3a1fde28d4cda014762e29ecbe0be54caeb35511fb74d1adb47745036ae23c379"></a>BC3_RGBA_DXT5&#160;</td><td class="fielddoc"><p>DXT5 compression. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a3a1fde28d4cda014762e29ecbe0be54ca3b6f149f601a1d8a00768bf952545fc9" name="a3a1fde28d4cda014762e29ecbe0be54ca3b6f149f601a1d8a00768bf952545fc9"></a>BC4_R_Grey_DXT5A&#160;</td><td class="fielddoc"><p>Single-channel compression (DXT5a). </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a3a1fde28d4cda014762e29ecbe0be54ca86d5eaff505a410dca06ef14be6a7afe" name="a3a1fde28d4cda014762e29ecbe0be54ca86d5eaff505a410dca06ef14be6a7afe"></a>BC5_RG_Grey_DXT5A&#160;</td><td class="fielddoc"><p>Dual-channel compression (DXT5a). </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a3a1fde28d4cda014762e29ecbe0be54caddf505c4e029f3e47def8b6aba5dd58e" name="a3a1fde28d4cda014762e29ecbe0be54caddf505c4e029f3e47def8b6aba5dd58e"></a>BC6H_RGB_Float&#160;</td><td class="fielddoc"><p>HDR RGB float block compression. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a3a1fde28d4cda014762e29ecbe0be54ca56c00d0bd62e2893100931f3ee9fd911" name="a3a1fde28d4cda014762e29ecbe0be54ca56c00d0bd62e2893100931f3ee9fd911"></a>BC7_RGBA&#160;</td><td class="fielddoc"><p>Modern RGBA compression with high quality. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<hr/>The documentation for this struct was generated from the following files:<ul>
+<li>/home/runner/work/XII/XII/Source/Engine/GraphicsCore/Pipeline/<a class="el" href="../../d6/d5e/_engine_2_graphics_core_2_pipeline_2_declarations_8h_source.html">Declarations.h</a></li>
+<li>/home/runner/work/XII/XII/Source/Engine/GraphicsCore/Pipeline/Implementation/<b>Declarations.cpp</b></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -141,7 +214,7 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>StorageType</b> = xi
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dc/d0c/structxii_source_format.html">xiiSourceFormat</a></li>
-    <li class="footer">Generated on Tue Jul 1 2025 18:06:02 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Sat Jul 5 2025 19:16:00 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 </body>

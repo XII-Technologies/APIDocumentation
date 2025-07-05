@@ -84,7 +84,8 @@ var hierarchy =
     [ "xiiQtNodeScene::ConnectionDecorationFlags::Bits", "d8/d80/structxii_qt_node_scene_1_1_connection_decoration_flags_1_1_bits.html", null ],
     [ "xiiReflectionProbeMapping::xiiProbeMappingFlags::Bits", "d9/d4c/structxii_reflection_probe_mapping_1_1xii_probe_mapping_flags_1_1_bits.html", null ],
     [ "xiiRenderContextFlags::Bits", "d8/d01/structxii_render_context_flags_1_1_bits.html", null ],
-    [ "xiiRenderPipelineNodePin::Type::Bits", "de/d14/structxii_render_pipeline_node_pin_1_1_type_1_1_bits.html", null ],
+    [ "xiiRenderPipelineNodePinFlags::Bits", "d8/df7/structxii_render_pipeline_node_pin_flags_1_1_bits.html", null ],
+    [ "xiiRenderPipelinePassFlags::Bits", "dc/d71/structxii_render_pipeline_pass_flags_1_1_bits.html", null ],
     [ "xiiResourceFlags::Bits", "df/d78/structxii_resource_flags_1_1_bits.html", null ],
     [ "xiiRTTI::ForEachOptions::Bits", "d3/d64/structxii_r_t_t_i_1_1_for_each_options_1_1_bits.html", null ],
     [ "xiiShaderBindFlags::Bits", "d4/d56/structxii_shader_bind_flags_1_1_bits.html", null ],
@@ -783,7 +784,6 @@ var hierarchy =
     [ "std::tuple_element< 1, xiiHashTableBaseIterator< K, V, H > >", "d0/d8e/structstd_1_1tuple__element_3_011_00_01xii_hash_table_base_iterator_3_01_k_00_01_v_00_01_h_01_4_01_4.html", null ],
     [ "std::tuple_element< 1, xiiMapBaseConstIteratorBase< KeyType, ValueType, Comparer, REVERSE > >", "d6/dfe/structstd_1_1tuple__element_3_011_00_01xii_map_base_const_iterator_base_3_01_key_type_00_01_valu3df242874468f573a047af2271c0290a.html", null ],
     [ "std::tuple_element< 1, xiiMapBaseIteratorBase< KeyType, ValueType, Comparer, REVERSE > >", "dc/d2a/structstd_1_1tuple__element_3_011_00_01xii_map_base_iterator_base_3_01_key_type_00_01_value_type6bc0a331d26363383746c6e0ddbc8247.html", null ],
-    [ "xiiRenderPipelineNodePin::Type", "d5/d69/structxii_render_pipeline_node_pin_1_1_type.html", null ],
     [ "xiiVisualScriptNodeDescription::Type", "db/d84/structxii_visual_script_node_description_1_1_type.html", [
       [ "xiiEnum< xiiVisualScriptNodeDescription::Type >", "de/dfd/structxii_enum.html", null ]
     ] ],
@@ -2408,9 +2408,7 @@ var hierarchy =
     ] ],
     [ "xiiArrayBase< xiiGALAttachmentReferenceDescription, xiiDynamicArrayBase< xiiGALAttachmentReferenceDescription > >", "da/d4c/classxii_array_base.html", [
       [ "xiiDynamicArrayBase< xiiGALAttachmentReferenceDescription >", "d2/dea/classxii_dynamic_array_base.html", [
-        [ "xiiDynamicArray< xiiGALAttachmentReferenceDescription, xiiDefaultAllocatorWrapper >", "dc/da4/classxii_dynamic_array.html", [
-          [ "xiiHybridArray< xiiGALAttachmentReferenceDescription, 4U >", "dc/da9/classxii_hybrid_array.html", null ]
-        ] ]
+        [ "xiiDynamicArray< xiiGALAttachmentReferenceDescription >", "dc/da4/classxii_dynamic_array.html", null ]
       ] ]
     ] ],
     [ "xiiArrayBase< xiiGALAttachmentReferenceDescription, xiiStaticArray< xiiGALAttachmentReferenceDescription, Capacity > >", "da/d4c/classxii_array_base.html", [
@@ -2502,9 +2500,7 @@ var hierarchy =
     ] ],
     [ "xiiArrayBase< xiiGALRenderPassAttachmentDescription, xiiDynamicArrayBase< xiiGALRenderPassAttachmentDescription > >", "da/d4c/classxii_array_base.html", [
       [ "xiiDynamicArrayBase< xiiGALRenderPassAttachmentDescription >", "d2/dea/classxii_dynamic_array_base.html", [
-        [ "xiiDynamicArray< xiiGALRenderPassAttachmentDescription, xiiDefaultAllocatorWrapper >", "dc/da4/classxii_dynamic_array.html", [
-          [ "xiiHybridArray< xiiGALRenderPassAttachmentDescription, 4U >", "dc/da9/classxii_hybrid_array.html", null ]
-        ] ]
+        [ "xiiDynamicArray< xiiGALRenderPassAttachmentDescription >", "dc/da4/classxii_dynamic_array.html", null ]
       ] ]
     ] ],
     [ "xiiArrayBase< xiiGALRenderTargetBlendDescription, xiiStaticArray< xiiGALRenderTargetBlendDescription, Capacity > >", "da/d4c/classxii_array_base.html", [
@@ -2559,16 +2555,12 @@ var hierarchy =
     ] ],
     [ "xiiArrayBase< xiiGALSubPassDependencyDescription, xiiDynamicArrayBase< xiiGALSubPassDependencyDescription > >", "da/d4c/classxii_array_base.html", [
       [ "xiiDynamicArrayBase< xiiGALSubPassDependencyDescription >", "d2/dea/classxii_dynamic_array_base.html", [
-        [ "xiiDynamicArray< xiiGALSubPassDependencyDescription, xiiDefaultAllocatorWrapper >", "dc/da4/classxii_dynamic_array.html", [
-          [ "xiiHybridArray< xiiGALSubPassDependencyDescription, 1U >", "dc/da9/classxii_hybrid_array.html", null ]
-        ] ]
+        [ "xiiDynamicArray< xiiGALSubPassDependencyDescription >", "dc/da4/classxii_dynamic_array.html", null ]
       ] ]
     ] ],
     [ "xiiArrayBase< xiiGALSubPassDescription, xiiDynamicArrayBase< xiiGALSubPassDescription > >", "da/d4c/classxii_array_base.html", [
       [ "xiiDynamicArrayBase< xiiGALSubPassDescription >", "d2/dea/classxii_dynamic_array_base.html", [
-        [ "xiiDynamicArray< xiiGALSubPassDescription, xiiDefaultAllocatorWrapper >", "dc/da4/classxii_dynamic_array.html", [
-          [ "xiiHybridArray< xiiGALSubPassDescription, 1U >", "dc/da9/classxii_hybrid_array.html", null ]
-        ] ]
+        [ "xiiDynamicArray< xiiGALSubPassDescription >", "dc/da4/classxii_dynamic_array.html", null ]
       ] ]
     ] ],
     [ "xiiArrayBase< xiiGALVertexBufferPool::AllocationHandle, xiiDynamicArrayBase< xiiGALVertexBufferPool::AllocationHandle > >", "da/d4c/classxii_array_base.html", [
@@ -3244,7 +3236,7 @@ var hierarchy =
     [ "xiiArrayBase< xiiSharedPtr< xiiGALTextureView >, xiiDynamicArrayBase< xiiSharedPtr< xiiGALTextureView > > >", "da/d4c/classxii_array_base.html", [
       [ "xiiDynamicArrayBase< xiiSharedPtr< xiiGALTextureView > >", "d2/dea/classxii_dynamic_array_base.html", [
         [ "xiiDynamicArray< xiiSharedPtr< xiiGALTextureView >, xiiDefaultAllocatorWrapper >", "dc/da4/classxii_dynamic_array.html", [
-          [ "xiiHybridArray< xiiSharedPtr< xiiGALTextureView >, 8U >", "dc/da9/classxii_hybrid_array.html", null ]
+          [ "xiiHybridArray< xiiSharedPtr< xiiGALTextureView >, 4U >", "dc/da9/classxii_hybrid_array.html", null ]
         ] ]
       ] ]
     ] ],
@@ -3455,7 +3447,6 @@ var hierarchy =
         [ "xiiDynamicArray< xiiUInt32, xiiDefaultAllocatorWrapper >", "dc/da4/classxii_dynamic_array.html", [
           [ "xiiHybridArray< xiiUInt32, 8 >", "dc/da9/classxii_hybrid_array.html", null ],
           [ "xiiHybridArray< xiiUInt32, 6U >", "dc/da9/classxii_hybrid_array.html", null ],
-          [ "xiiHybridArray< xiiUInt32, 4U >", "dc/da9/classxii_hybrid_array.html", null ],
           [ "xiiHybridArray< xiiUInt32, 4 >", "dc/da9/classxii_hybrid_array.html", null ],
           [ "xiiHybridArray< xiiUInt32, BufferSize >", "dc/da9/classxii_hybrid_array.html", null ]
         ] ],
@@ -3667,7 +3658,7 @@ var hierarchy =
     [ "xiiArrayBase< xiiVertexStreamInfo, xiiDynamicArrayBase< xiiVertexStreamInfo > >", "da/d4c/classxii_array_base.html", [
       [ "xiiDynamicArrayBase< xiiVertexStreamInfo >", "d2/dea/classxii_dynamic_array_base.html", [
         [ "xiiDynamicArray< xiiVertexStreamInfo, xiiDefaultAllocatorWrapper >", "dc/da4/classxii_dynamic_array.html", [
-          [ "xiiHybridArray< xiiVertexStreamInfo, 8 >", "dc/da9/classxii_hybrid_array.html", null ]
+          [ "xiiHybridArray< xiiVertexStreamInfo, 4U >", "dc/da9/classxii_hybrid_array.html", null ]
         ] ]
       ] ]
     ] ],
@@ -6586,7 +6577,6 @@ var hierarchy =
           [ "xiiMsgRetrieveBoneState", "d7/d35/structxii_msg_retrieve_bone_state.html", null ],
           [ "xiiMsgRopePoseUpdated", "d4/d46/structxii_msg_rope_pose_updated.html", null ],
           [ "xiiMsgSetColor", "de/d10/structxii_msg_set_color.html", null ],
-          [ "xiiMsgSetCustomData", "d1/deb/structxii_msg_set_custom_data.html", null ],
           [ "xiiMsgSetDoubleParameter", "d4/dfb/structxii_msg_set_double_parameter.html", null ],
           [ "xiiMsgSetFloatParameter", "dd/d07/structxii_msg_set_float_parameter.html", null ],
           [ "xiiMsgSetMeshMaterial", "da/d3c/structxii_msg_set_mesh_material.html", null ],
@@ -6809,6 +6799,9 @@ var hierarchy =
             [ "xiiStereoTestPass", "d3/db9/classxii_stereo_test_pass.html", null ],
             [ "xiiTargetPass", "d4/d19/classxii_target_pass.html", null ],
             [ "xiiTonemapPass", "d8/d40/classxii_tonemap_pass.html", null ]
+          ] ],
+          [ "xiiRenderPipelinePassBase", "dd/d7b/classxii_render_pipeline_pass_base.html", [
+            [ "xiiGraphicsPipelinePass", "de/d84/classxii_graphics_pipeline_pass.html", null ]
           ] ],
           [ "xiiView", "dd/df1/classxii_view.html", null ]
         ] ],
@@ -7278,15 +7271,41 @@ var hierarchy =
     [ "xiiRenderDataBatchList", "d7/d09/classxii_render_data_batch_list.html", null ],
     [ "xiiRenderingSetup", "d4/d1b/classxii_rendering_setup.html", null ],
     [ "xiiRenderPipelineNodePin", "d9/d96/structxii_render_pipeline_node_pin.html", [
-      [ "xiiRenderPipelineNodeInputPin", "d4/d12/structxii_render_pipeline_node_input_pin.html", [
-        [ "xiiRenderPipelineNodeInputProviderPin", "d9/d50/structxii_render_pipeline_node_input_provider_pin.html", null ]
-      ] ],
-      [ "xiiRenderPipelineNodeOutputPin", "d7/d3c/structxii_render_pipeline_node_output_pin.html", [
-        [ "xiiRenderPipelineNodeOutputProviderPin", "df/da0/structxii_render_pipeline_node_output_provider_pin.html", null ]
-      ] ],
-      [ "xiiRenderPipelineNodePassThroughPin", "d1/d2c/structxii_render_pipeline_node_pass_through_pin.html", null ]
+      [ "xiiRenderPipelineNodeInputAccelerationStructurePin", "dc/da8/structxii_render_pipeline_node_input_acceleration_structure_pin.html", null ],
+      [ "xiiRenderPipelineNodeInputAccelerationStructureProviderPin", "d4/d26/structxii_render_pipeline_node_input_acceleration_structure_provider_pin.html", null ],
+      [ "xiiRenderPipelineNodeInputBufferPin", "d7/da3/structxii_render_pipeline_node_input_buffer_pin.html", null ],
+      [ "xiiRenderPipelineNodeInputBufferProviderPin", "dc/dd7/structxii_render_pipeline_node_input_buffer_provider_pin.html", null ],
+      [ "xiiRenderPipelineNodeInputColourAttachmentPin", "d2/dbe/structxii_render_pipeline_node_input_colour_attachment_pin.html", null ],
+      [ "xiiRenderPipelineNodeInputColourAttachmentProviderPin", "d1/dc5/structxii_render_pipeline_node_input_colour_attachment_provider_pin.html", null ],
+      [ "xiiRenderPipelineNodeInputDepthAttachmentPin", "d3/d41/structxii_render_pipeline_node_input_depth_attachment_pin.html", null ],
+      [ "xiiRenderPipelineNodeInputDepthAttachmentProviderPin", "d9/dff/structxii_render_pipeline_node_input_depth_attachment_provider_pin.html", null ],
+      [ "xiiRenderPipelineNodeInputSamplerPin", "d0/d24/structxii_render_pipeline_node_input_sampler_pin.html", null ],
+      [ "xiiRenderPipelineNodeInputSamplerProviderPin", "de/d1a/structxii_render_pipeline_node_input_sampler_provider_pin.html", null ],
+      [ "xiiRenderPipelineNodeOutputAccelerationStructurePin", "d8/d94/structxii_render_pipeline_node_output_acceleration_structure_pin.html", null ],
+      [ "xiiRenderPipelineNodeOutputAccelerationStructureProviderPin", "d0/dfd/structxii_render_pipeline_node_output_acceleration_structure_provider_pin.html", null ],
+      [ "xiiRenderPipelineNodeOutputBufferPin", "db/d19/structxii_render_pipeline_node_output_buffer_pin.html", null ],
+      [ "xiiRenderPipelineNodeOutputBufferProviderPin", "d1/d21/structxii_render_pipeline_node_output_buffer_provider_pin.html", null ],
+      [ "xiiRenderPipelineNodeOutputColourAttachmentPin", "d4/d2d/structxii_render_pipeline_node_output_colour_attachment_pin.html", null ],
+      [ "xiiRenderPipelineNodeOutputColourAttachmentProviderPin", "d4/d3d/structxii_render_pipeline_node_output_colour_attachment_provider_pin.html", null ],
+      [ "xiiRenderPipelineNodeOutputDepthAttachmentPin", "d9/df5/structxii_render_pipeline_node_output_depth_attachment_pin.html", null ],
+      [ "xiiRenderPipelineNodeOutputDepthAttachmentProviderPin", "dd/d21/structxii_render_pipeline_node_output_depth_attachment_provider_pin.html", null ],
+      [ "xiiRenderPipelineNodeOutputSamplerPin", "d0/d9e/structxii_render_pipeline_node_output_sampler_pin.html", null ],
+      [ "xiiRenderPipelineNodeOutputSamplerProviderPin", "dd/da2/structxii_render_pipeline_node_output_sampler_provider_pin.html", null ],
+      [ "xiiRenderPipelineNodePassThroughAccelerationStructurePin", "d4/dbd/structxii_render_pipeline_node_pass_through_acceleration_structure_pin.html", null ],
+      [ "xiiRenderPipelineNodePassThroughBufferPin", "de/d78/structxii_render_pipeline_node_pass_through_buffer_pin.html", null ],
+      [ "xiiRenderPipelineNodePassThroughColourAttachmentPin", "d5/d51/structxii_render_pipeline_node_pass_through_colour_attachment_pin.html", null ],
+      [ "xiiRenderPipelineNodePassThroughDepthAttachmentPin", "de/d4f/structxii_render_pipeline_node_pass_through_depth_attachment_pin.html", null ],
+      [ "xiiRenderPipelineNodePassThroughSamplerPin", "d9/dcc/structxii_render_pipeline_node_pass_through_sampler_pin.html", null ]
+    ] ],
+    [ "xiiRenderPipelineNodePinFlags", "dd/d03/structxii_render_pipeline_node_pin_flags.html", null ],
+    [ "xiiRenderPipelineNodePinResourceType", "d5/d57/structxii_render_pipeline_node_pin_resource_type.html", [
+      [ "xiiEnum< xiiRenderPipelineNodePinResourceType >", "de/dfd/structxii_enum.html", null ]
+    ] ],
+    [ "xiiRenderPipelinePassConcurrencyHint", "d3/dac/structxii_render_pipeline_pass_concurrency_hint.html", [
+      [ "xiiEnum< xiiRenderPipelinePassConcurrencyHint >", "de/dfd/structxii_enum.html", null ]
     ] ],
     [ "xiiRenderPipelinePassConnection", "d3/deb/structxii_render_pipeline_pass_connection.html", null ],
+    [ "xiiRenderPipelinePassFlags", "d8/d63/structxii_render_pipeline_pass_flags.html", null ],
     [ "xiiRenderPipelineResourceDescriptor", "d7/d73/structxii_render_pipeline_resource_descriptor.html", null ],
     [ "xiiRenderPipelineResourceLoader", "d2/dbd/structxii_render_pipeline_resource_loader.html", null ],
     [ "xiiRenderPipelineResourceLoaderConnection", "d6/d62/structxii_render_pipeline_resource_loader_connection.html", null ],
@@ -7924,7 +7943,7 @@ var hierarchy =
       ] ],
       [ "xiiWindowXR", "d0/d31/classxii_window_x_r.html", null ]
     ] ],
-    [ "xiiWindowCreationDesc", "d6/d8c/structxii_window_creation_desc.html", null ],
+    [ "xiiWindowCreationDescription", "d1/dc4/structxii_window_creation_description.html", null ],
     [ "xiiWindowMode", "d4/d40/structxii_window_mode.html", [
       [ "xiiEnum< xiiWindowMode >", "de/dfd/structxii_enum.html", null ]
     ] ],

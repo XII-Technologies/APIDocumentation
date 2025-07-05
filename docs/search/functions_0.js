@@ -154,7 +154,7 @@ var searchData=
   ['addvibrationtrack_151',['AddVibrationTrack',['../d4/dc9/classxii_input_device_controller.html#a03e611f335759cd80f6a7932ec409aa6',1,'xiiInputDeviceController']]],
   ['addweight_152',['AddWeight',['../de/d49/classxii_reflection_probe_mapping.html#a80cd3c65b9b7a8f114a92d781dc746b0',1,'xiiReflectionProbeMapping']]],
   ['adjustroughness_153',['AdjustRoughness',['../da/d38/classxii_image_utils.html#a827a567563d8410b819ddb75fcd2ddba',1,'xiiImageUtils']]],
-  ['adjustwindowsizeandposition_154',['AdjustWindowSizeAndPosition',['../d6/d8c/structxii_window_creation_desc.html#a44d11053ebf6284ac36d3250b8fc6723',1,'xiiWindowCreationDesc']]],
+  ['adjustwindowsizeandposition_154',['AdjustWindowSizeAndPosition',['../d1/dc4/structxii_window_creation_description.html#a3e82ea99b5ff8ac733aa7e0e55b20661',1,'xiiWindowCreationDescription']]],
   ['advance_155',['Advance',['../dd/dc8/classxii_processing_stream_iterator.html#a6517c26af9f60d69533a240c4058c16c',1,'xiiProcessingStreamIterator::Advance()'],['../dd/dc8/classxii_processing_stream_iterator.html#aacf662ab10443a25c40f0afa78a9620d',1,'xiiProcessingStreamIterator::Advance(xiiUInt32 uiNumElements)'],['../de/d81/structxii_string_iterator.html#ac85be9d66a28a226c963abbcc0004d4a',1,'xiiStringIterator::Advance()']]],
   ['advancelinearsamplerby_156',['AdvanceLinearSamplerBy',['../dd/dd0/classxii_path_component.html#ae6ab2318487a9d3858262cdef0c1b309',1,'xiiPathComponent']]],
   ['aftercoresystemsshutdown_157',['AfterCoreSystemsShutdown',['../dd/d2b/classxii_application.html#a4192dfd474d1e3a6361bd851e0c8ed08',1,'xiiApplication']]],

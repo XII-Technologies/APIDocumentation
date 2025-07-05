@@ -115,100 +115,101 @@ $(function(){initNavTree('db/d85/_view_data_8h_source.html','../../'); initResiz
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>{</div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>  xiiViewData()</div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>  {</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    m_ViewPortRect   = xiiRectFloat(0.0f, 0.0f);</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    m_ViewRenderMode = xiiViewRenderMode::None;</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    <span class="keywordflow">for</span> (xiiUInt32 i = 0; i &lt; 2; ++i)</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    {</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>      m_ViewMatrix[i].SetIdentity();</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>      m_InverseViewMatrix[i].SetIdentity();</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>      m_ProjectionMatrix[i].SetIdentity();</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>      m_InverseProjectionMatrix[i].SetIdentity();</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>      m_ViewProjectionMatrix[i].SetIdentity();</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>      m_InverseViewProjectionMatrix[i].SetIdentity();</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    }</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>  }</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>  <a class="code hl_struct" href="../../de/df9/structxii_render_targets.html">xiiRenderTargets</a>           m_RenderTargets;</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>  <a class="code hl_struct" href="../../de/df9/structxii_render_targets.html">xiiRenderTargets</a>           m_SwapChainRenderTargets;</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>  <a class="code hl_class" href="../../d8/d9b/classxii_shared_ptr.html">xiiSharedPtr&lt;xiiGALSwapChain&gt;</a> m_pSwapChain;</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>  xiiRectFloat                  m_ViewPortRect;</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>  <a class="code hl_struct" href="../../de/dfd/structxii_enum.html">xiiEnum&lt;xiiViewRenderMode&gt;</a>    m_ViewRenderMode;</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>  <a class="code hl_struct" href="../../de/dfd/structxii_enum.html">xiiEnum&lt;xiiCameraUsageHint&gt;</a>   m_CameraUsageHint;</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>  <span class="comment">// Each matrix is there for both left and right camera lens.</span></div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>  xiiMat4 m_ViewMatrix[2];</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>  xiiMat4 m_InverseViewMatrix[2];</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>  xiiMat4 m_ProjectionMatrix[2];</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>  xiiMat4 m_InverseProjectionMatrix[2];</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>  xiiMat4 m_ViewProjectionMatrix[2];</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>  xiiMat4 m_InverseViewProjectionMatrix[2];</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span></div>
-<div class="foldopen" id="foldopen00048" data-start="{" data-end="}">
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="../../da/d3c/structxii_view_data.html#a926a89753de084252938061ef6a3640e">   48</a></span>  XII_ALWAYS_INLINE <a class="code hl_struct" href="../../dd/dad/structxii_result.html">xiiResult</a> <a class="code hl_function" href="../../da/d3c/structxii_view_data.html#a926a89753de084252938061ef6a3640e">ComputePickingRay</a>(<span class="keywordtype">float</span> fNormalizedScreenPosX, <span class="keywordtype">float</span> fNormalizedScreenPosY, xiiVec3&amp; out_vRayStartPos, xiiVec3&amp; out_vRayDir, xiiCameraEye eye = xiiCameraEye::Left)<span class="keyword"> const</span></div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="keyword">  </span>{</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    xiiVec3 vScreenPos;</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    vScreenPos.x = fNormalizedScreenPosX;</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    vScreenPos.y = fNormalizedScreenPosY;</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    vScreenPos.z = 0.0f;</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    <span class="keywordflow">return</span> xiiGraphicsUtils::ConvertScreenPosToWorldPos(m_InverseViewProjectionMatrix[<span class="keyword">static_cast&lt;</span>xiiInt32<span class="keyword">&gt;</span>(eye)], vScreenPos, out_vRayStartPos, &amp;out_vRayDir);</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>  }</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    m_pSwapChain     = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    m_ViewPortRect   = xiiRectFloat(0.0f, 0.0f);</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    m_ViewRenderMode = xiiViewRenderMode::None;</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <span class="keywordflow">for</span> (xiiUInt32 i = 0; i &lt; 2; ++i)</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    {</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>      m_ViewMatrix[i].SetIdentity();</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>      m_InverseViewMatrix[i].SetIdentity();</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>      m_ProjectionMatrix[i].SetIdentity();</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>      m_InverseProjectionMatrix[i].SetIdentity();</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>      m_ViewProjectionMatrix[i].SetIdentity();</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>      m_InverseViewProjectionMatrix[i].SetIdentity();</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    }</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>  }</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>  <a class="code hl_struct" href="../../de/df9/structxii_render_targets.html">xiiRenderTargets</a>            m_RenderTargets;</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>  <a class="code hl_struct" href="../../de/df9/structxii_render_targets.html">xiiRenderTargets</a>            m_SwapChainRenderTargets;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>  <a class="code hl_class" href="../../d5/d07/classxii_g_a_l_swap_chain.html">xiiGALSwapChain</a>*            m_pSwapChain;</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>  xiiRectFloat                m_ViewPortRect;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>  <a class="code hl_struct" href="../../de/dfd/structxii_enum.html">xiiEnum&lt;xiiViewRenderMode&gt;</a>  m_ViewRenderMode;</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>  <a class="code hl_struct" href="../../de/dfd/structxii_enum.html">xiiEnum&lt;xiiCameraUsageHint&gt;</a> m_CameraUsageHint;</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>  <span class="comment">// Each matrix is there for both left and right camera lens.</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>  xiiMat4 m_ViewMatrix[2];</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>  xiiMat4 m_InverseViewMatrix[2];</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>  xiiMat4 m_ProjectionMatrix[2];</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>  xiiMat4 m_InverseProjectionMatrix[2];</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>  xiiMat4 m_ViewProjectionMatrix[2];</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>  xiiMat4 m_InverseViewProjectionMatrix[2];</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span></div>
+<div class="foldopen" id="foldopen00049" data-start="{" data-end="}">
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="../../da/d3c/structxii_view_data.html#a926a89753de084252938061ef6a3640e">   49</a></span>  XII_ALWAYS_INLINE <a class="code hl_struct" href="../../dd/dad/structxii_result.html">xiiResult</a> <a class="code hl_function" href="../../da/d3c/structxii_view_data.html#a926a89753de084252938061ef6a3640e">ComputePickingRay</a>(<span class="keywordtype">float</span> fNormalizedScreenPosX, <span class="keywordtype">float</span> fNormalizedScreenPosY, xiiVec3&amp; out_vRayStartPos, xiiVec3&amp; out_vRayDir, xiiCameraEye eye = xiiCameraEye::Left)<span class="keyword"> const</span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="keyword">  </span>{</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    xiiVec3 vScreenPos;</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    vScreenPos.x = fNormalizedScreenPosX;</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    vScreenPos.y = fNormalizedScreenPosY;</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    vScreenPos.z = 0.0f;</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    <span class="keywordflow">return</span> xiiGraphicsUtils::ConvertScreenPosToWorldPos(m_InverseViewProjectionMatrix[<span class="keyword">static_cast&lt;</span>xiiInt32<span class="keyword">&gt;</span>(eye)], vScreenPos, out_vRayStartPos, &amp;out_vRayDir);</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>  }</div>
 </div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span></div>
-<div class="foldopen" id="foldopen00061" data-start="{" data-end="}">
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="../../da/d3c/structxii_view_data.html#a72c0ffbc3390ce9bec3521a5856c061c">   61</a></span>  XII_ALWAYS_INLINE <a class="code hl_struct" href="../../dd/dad/structxii_result.html">xiiResult</a> <a class="code hl_function" href="../../da/d3c/structxii_view_data.html#a72c0ffbc3390ce9bec3521a5856c061c">ComputeScreenSpacePos</a>(<span class="keyword">const</span> xiiVec3&amp; vWorldPos, xiiVec3&amp; out_vScreenPosNormalized, xiiCameraEye eye = xiiCameraEye::Left)<span class="keyword"> const</span></div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="keyword">  </span>{</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    <span class="keywordflow">return</span> xiiGraphicsUtils::ConvertWorldPosToScreenPos(m_ViewProjectionMatrix[<span class="keyword">static_cast&lt;</span>xiiInt32<span class="keyword">&gt;</span>(eye)], vWorldPos, out_vScreenPosNormalized);</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>  }</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span></div>
+<div class="foldopen" id="foldopen00062" data-start="{" data-end="}">
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="../../da/d3c/structxii_view_data.html#a72c0ffbc3390ce9bec3521a5856c061c">   62</a></span>  XII_ALWAYS_INLINE <a class="code hl_struct" href="../../dd/dad/structxii_result.html">xiiResult</a> <a class="code hl_function" href="../../da/d3c/structxii_view_data.html#a72c0ffbc3390ce9bec3521a5856c061c">ComputeScreenSpacePos</a>(<span class="keyword">const</span> xiiVec3&amp; vWorldPos, xiiVec3&amp; out_vScreenPosNormalized, xiiCameraEye eye = xiiCameraEye::Left)<span class="keyword"> const</span></div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="keyword">  </span>{</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    <span class="keywordflow">return</span> xiiGraphicsUtils::ConvertWorldPosToScreenPos(m_ViewProjectionMatrix[<span class="keyword">static_cast&lt;</span>xiiInt32<span class="keyword">&gt;</span>(eye)], vWorldPos, out_vScreenPosNormalized);</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>  }</div>
 </div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span></div>
-<div class="foldopen" id="foldopen00067" data-start="{" data-end="}">
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno"><a class="line" href="../../da/d3c/structxii_view_data.html#a7a94876433e2326823400f3950db61cc">   67</a></span>  XII_ALWAYS_INLINE <a class="code hl_struct" href="../../dd/dad/structxii_result.html">xiiResult</a> <a class="code hl_function" href="../../da/d3c/structxii_view_data.html#a7a94876433e2326823400f3950db61cc">ComputeWorldSpacePos</a>(<span class="keywordtype">float</span> fNormalizedScreenPosX, <span class="keywordtype">float</span> fNormalizedScreenPosY, xiiVec3&amp; out_vWorldPos, xiiCameraEye eye = xiiCameraEye::Left)<span class="keyword"> const</span></div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="keyword">  </span>{</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    <span class="keywordflow">return</span> xiiGraphicsUtils::ConvertScreenPosToWorldPos(m_InverseViewProjectionMatrix[<span class="keyword">static_cast&lt;</span>xiiInt32<span class="keyword">&gt;</span>(eye)], xiiVec3(fNormalizedScreenPosX, fNormalizedScreenPosY, 0.0f), out_vWorldPos);</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>  }</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span></div>
+<div class="foldopen" id="foldopen00068" data-start="{" data-end="}">
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno"><a class="line" href="../../da/d3c/structxii_view_data.html#a7a94876433e2326823400f3950db61cc">   68</a></span>  XII_ALWAYS_INLINE <a class="code hl_struct" href="../../dd/dad/structxii_result.html">xiiResult</a> <a class="code hl_function" href="../../da/d3c/structxii_view_data.html#a7a94876433e2326823400f3950db61cc">ComputeWorldSpacePos</a>(<span class="keywordtype">float</span> fNormalizedScreenPosX, <span class="keywordtype">float</span> fNormalizedScreenPosY, xiiVec3&amp; out_vWorldPos, xiiCameraEye eye = xiiCameraEye::Left)<span class="keyword"> const</span></div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="keyword">  </span>{</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    <span class="keywordflow">return</span> xiiGraphicsUtils::ConvertScreenPosToWorldPos(m_InverseViewProjectionMatrix[<span class="keyword">static_cast&lt;</span>xiiInt32<span class="keyword">&gt;</span>(eye)], xiiVec3(fNormalizedScreenPosX, fNormalizedScreenPosY, 0.0f), out_vWorldPos);</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>  }</div>
 </div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span></div>
-<div class="foldopen" id="foldopen00073" data-start="{" data-end="}">
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno"><a class="line" href="../../da/d3c/structxii_view_data.html#a830488d76481dcf4eb49da6f7aafa05f">   73</a></span>  XII_ALWAYS_INLINE <span class="keywordtype">void</span> <a class="code hl_function" href="../../da/d3c/structxii_view_data.html#a830488d76481dcf4eb49da6f7aafa05f">ConvertScreenPixelPosToNormalizedPos</a>(xiiVec3&amp; inout_vPixelPos)<span class="keyword"> const</span></div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span><span class="keyword">  </span>{</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    xiiUInt32 x = (xiiUInt32)m_ViewPortRect.x;</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    xiiUInt32 y = (xiiUInt32)m_ViewPortRect.y;</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    xiiUInt32 w = (xiiUInt32)m_ViewPortRect.width;</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    xiiUInt32 h = (xiiUInt32)m_ViewPortRect.height;</div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    xiiGraphicsUtils::ConvertScreenPixelPosToNormalizedPos(x, y, w, h, inout_vPixelPos);</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>  }</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span></div>
+<div class="foldopen" id="foldopen00074" data-start="{" data-end="}">
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno"><a class="line" href="../../da/d3c/structxii_view_data.html#a830488d76481dcf4eb49da6f7aafa05f">   74</a></span>  XII_ALWAYS_INLINE <span class="keywordtype">void</span> <a class="code hl_function" href="../../da/d3c/structxii_view_data.html#a830488d76481dcf4eb49da6f7aafa05f">ConvertScreenPixelPosToNormalizedPos</a>(xiiVec3&amp; inout_vPixelPos)<span class="keyword"> const</span></div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span><span class="keyword">  </span>{</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    xiiUInt32 x = (xiiUInt32)m_ViewPortRect.x;</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    xiiUInt32 y = (xiiUInt32)m_ViewPortRect.y;</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    xiiUInt32 w = (xiiUInt32)m_ViewPortRect.width;</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    xiiUInt32 h = (xiiUInt32)m_ViewPortRect.height;</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    xiiGraphicsUtils::ConvertScreenPixelPosToNormalizedPos(x, y, w, h, inout_vPixelPos);</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>  }</div>
 </div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span></div>
-<div class="foldopen" id="foldopen00083" data-start="{" data-end="}">
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno"><a class="line" href="../../da/d3c/structxii_view_data.html#a1659ce0bff0516ccee2e38f64b9dddcc">   83</a></span>  XII_ALWAYS_INLINE <span class="keywordtype">void</span> <a class="code hl_function" href="../../da/d3c/structxii_view_data.html#a1659ce0bff0516ccee2e38f64b9dddcc">ConvertScreenNormalizedPosToPixelPos</a>(xiiVec3&amp; inout_vNormalizedPos)<span class="keyword"> const</span></div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span><span class="keyword">  </span>{</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    xiiUInt32 x = (xiiUInt32)m_ViewPortRect.x;</div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    xiiUInt32 y = (xiiUInt32)m_ViewPortRect.y;</div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    xiiUInt32 w = (xiiUInt32)m_ViewPortRect.width;</div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>    xiiUInt32 h = (xiiUInt32)m_ViewPortRect.height;</div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>    xiiGraphicsUtils::ConvertScreenNormalizedPosToPixelPos(x, y, w, h, inout_vNormalizedPos);</div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>  }</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span></div>
+<div class="foldopen" id="foldopen00084" data-start="{" data-end="}">
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno"><a class="line" href="../../da/d3c/structxii_view_data.html#a1659ce0bff0516ccee2e38f64b9dddcc">   84</a></span>  XII_ALWAYS_INLINE <span class="keywordtype">void</span> <a class="code hl_function" href="../../da/d3c/structxii_view_data.html#a1659ce0bff0516ccee2e38f64b9dddcc">ConvertScreenNormalizedPosToPixelPos</a>(xiiVec3&amp; inout_vNormalizedPos)<span class="keyword"> const</span></div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span><span class="keyword">  </span>{</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    xiiUInt32 x = (xiiUInt32)m_ViewPortRect.x;</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    xiiUInt32 y = (xiiUInt32)m_ViewPortRect.y;</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>    xiiUInt32 w = (xiiUInt32)m_ViewPortRect.width;</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>    xiiUInt32 h = (xiiUInt32)m_ViewPortRect.height;</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>    xiiGraphicsUtils::ConvertScreenNormalizedPosToPixelPos(x, y, w, h, inout_vNormalizedPos);</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>  }</div>
 </div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>};</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>};</div>
 </div>
-<div class="ttc" id="aclassxii_shared_ptr_html"><div class="ttname"><a href="../../d8/d9b/classxii_shared_ptr.html">xiiSharedPtr</a></div><div class="ttdoc">A Shared ptr manages a shared object and destroys that object when no one references it anymore....</div><div class="ttdef"><b>Definition</b> SharedPtr.h:10</div></div>
+<div class="ttc" id="aclassxii_g_a_l_swap_chain_html"><div class="ttname"><a href="../../d5/d07/classxii_g_a_l_swap_chain.html">xiiGALSwapChain</a></div><div class="ttdoc">Interface that defines methods to manipulate a swap chain object.</div><div class="ttdef"><b>Definition</b> SwapChain.h:9</div></div>
 <div class="ttc" id="astructxii_enum_html"><div class="ttname"><a href="../../de/dfd/structxii_enum.html">xiiEnum</a></div><div class="ttdoc">A custom enum implementation that allows to define the underlying storage type to control its memory ...</div><div class="ttdef"><b>Definition</b> Enum.h:37</div></div>
-<div class="ttc" id="astructxii_render_targets_html"><div class="ttname"><a href="../../de/df9/structxii_render_targets.html">xiiRenderTargets</a></div><div class="ttdoc">This class can be used to define the render targets to be used by a xiiView.</div><div class="ttdef"><b>Definition</b> RenderTargetSetup.h:9</div></div>
+<div class="ttc" id="astructxii_render_targets_html"><div class="ttname"><a href="../../de/df9/structxii_render_targets.html">xiiRenderTargets</a></div><div class="ttdoc">This class can be used to define the render targets to be used by a xiiView.</div><div class="ttdef"><b>Definition</b> RenderTargetSetup.h:11</div></div>
 <div class="ttc" id="astructxii_result_html"><div class="ttname"><a href="../../dd/dad/structxii_result.html">xiiResult</a></div><div class="ttdoc">Default enum for returning failure or success, instead of using a bool.</div><div class="ttdef"><b>Definition</b> Types.h:58</div></div>
-<div class="ttc" id="astructxii_view_data_html_a1659ce0bff0516ccee2e38f64b9dddcc"><div class="ttname"><a href="../../da/d3c/structxii_view_data.html#a1659ce0bff0516ccee2e38f64b9dddcc">xiiViewData::ConvertScreenNormalizedPosToPixelPos</a></div><div class="ttdeci">XII_ALWAYS_INLINE void ConvertScreenNormalizedPosToPixelPos(xiiVec3 &amp;inout_vNormalizedPos) const</div><div class="ttdoc">Converts a screen-space position from normalized coordinates to pixel coordinates.</div><div class="ttdef"><b>Definition</b> ViewData.h:83</div></div>
-<div class="ttc" id="astructxii_view_data_html_a72c0ffbc3390ce9bec3521a5856c061c"><div class="ttname"><a href="../../da/d3c/structxii_view_data.html#a72c0ffbc3390ce9bec3521a5856c061c">xiiViewData::ComputeScreenSpacePos</a></div><div class="ttdeci">XII_ALWAYS_INLINE xiiResult ComputeScreenSpacePos(const xiiVec3 &amp;vWorldPos, xiiVec3 &amp;out_vScreenPosNormalized, xiiCameraEye eye=xiiCameraEye::Left) const</div><div class="ttdoc">Calculates the normalized screen-space coordinate ([0; 1] range) that the given world-space point pro...</div><div class="ttdef"><b>Definition</b> ViewData.h:61</div></div>
-<div class="ttc" id="astructxii_view_data_html_a7a94876433e2326823400f3950db61cc"><div class="ttname"><a href="../../da/d3c/structxii_view_data.html#a7a94876433e2326823400f3950db61cc">xiiViewData::ComputeWorldSpacePos</a></div><div class="ttdeci">XII_ALWAYS_INLINE xiiResult ComputeWorldSpacePos(float fNormalizedScreenPosX, float fNormalizedScreenPosY, xiiVec3 &amp;out_vWorldPos, xiiCameraEye eye=xiiCameraEye::Left) const</div><div class="ttdoc">Calculates the world-space position that the given normalized screen-space coordinate maps to.</div><div class="ttdef"><b>Definition</b> ViewData.h:67</div></div>
-<div class="ttc" id="astructxii_view_data_html_a830488d76481dcf4eb49da6f7aafa05f"><div class="ttname"><a href="../../da/d3c/structxii_view_data.html#a830488d76481dcf4eb49da6f7aafa05f">xiiViewData::ConvertScreenPixelPosToNormalizedPos</a></div><div class="ttdeci">XII_ALWAYS_INLINE void ConvertScreenPixelPosToNormalizedPos(xiiVec3 &amp;inout_vPixelPos) const</div><div class="ttdoc">Converts a screen-space position from pixel coordinates to normalized coordinates.</div><div class="ttdef"><b>Definition</b> ViewData.h:73</div></div>
-<div class="ttc" id="astructxii_view_data_html_a926a89753de084252938061ef6a3640e"><div class="ttname"><a href="../../da/d3c/structxii_view_data.html#a926a89753de084252938061ef6a3640e">xiiViewData::ComputePickingRay</a></div><div class="ttdeci">XII_ALWAYS_INLINE xiiResult ComputePickingRay(float fNormalizedScreenPosX, float fNormalizedScreenPosY, xiiVec3 &amp;out_vRayStartPos, xiiVec3 &amp;out_vRayDir, xiiCameraEye eye=xiiCameraEye::Left) const</div><div class="ttdoc">Calculates the start position and direction (in world space) of the picking ray through the screen po...</div><div class="ttdef"><b>Definition</b> ViewData.h:48</div></div>
+<div class="ttc" id="astructxii_view_data_html_a1659ce0bff0516ccee2e38f64b9dddcc"><div class="ttname"><a href="../../da/d3c/structxii_view_data.html#a1659ce0bff0516ccee2e38f64b9dddcc">xiiViewData::ConvertScreenNormalizedPosToPixelPos</a></div><div class="ttdeci">XII_ALWAYS_INLINE void ConvertScreenNormalizedPosToPixelPos(xiiVec3 &amp;inout_vNormalizedPos) const</div><div class="ttdoc">Converts a screen-space position from normalized coordinates to pixel coordinates.</div><div class="ttdef"><b>Definition</b> ViewData.h:84</div></div>
+<div class="ttc" id="astructxii_view_data_html_a72c0ffbc3390ce9bec3521a5856c061c"><div class="ttname"><a href="../../da/d3c/structxii_view_data.html#a72c0ffbc3390ce9bec3521a5856c061c">xiiViewData::ComputeScreenSpacePos</a></div><div class="ttdeci">XII_ALWAYS_INLINE xiiResult ComputeScreenSpacePos(const xiiVec3 &amp;vWorldPos, xiiVec3 &amp;out_vScreenPosNormalized, xiiCameraEye eye=xiiCameraEye::Left) const</div><div class="ttdoc">Calculates the normalized screen-space coordinate ([0; 1] range) that the given world-space point pro...</div><div class="ttdef"><b>Definition</b> ViewData.h:62</div></div>
+<div class="ttc" id="astructxii_view_data_html_a7a94876433e2326823400f3950db61cc"><div class="ttname"><a href="../../da/d3c/structxii_view_data.html#a7a94876433e2326823400f3950db61cc">xiiViewData::ComputeWorldSpacePos</a></div><div class="ttdeci">XII_ALWAYS_INLINE xiiResult ComputeWorldSpacePos(float fNormalizedScreenPosX, float fNormalizedScreenPosY, xiiVec3 &amp;out_vWorldPos, xiiCameraEye eye=xiiCameraEye::Left) const</div><div class="ttdoc">Calculates the world-space position that the given normalized screen-space coordinate maps to.</div><div class="ttdef"><b>Definition</b> ViewData.h:68</div></div>
+<div class="ttc" id="astructxii_view_data_html_a830488d76481dcf4eb49da6f7aafa05f"><div class="ttname"><a href="../../da/d3c/structxii_view_data.html#a830488d76481dcf4eb49da6f7aafa05f">xiiViewData::ConvertScreenPixelPosToNormalizedPos</a></div><div class="ttdeci">XII_ALWAYS_INLINE void ConvertScreenPixelPosToNormalizedPos(xiiVec3 &amp;inout_vPixelPos) const</div><div class="ttdoc">Converts a screen-space position from pixel coordinates to normalized coordinates.</div><div class="ttdef"><b>Definition</b> ViewData.h:74</div></div>
+<div class="ttc" id="astructxii_view_data_html_a926a89753de084252938061ef6a3640e"><div class="ttname"><a href="../../da/d3c/structxii_view_data.html#a926a89753de084252938061ef6a3640e">xiiViewData::ComputePickingRay</a></div><div class="ttdeci">XII_ALWAYS_INLINE xiiResult ComputePickingRay(float fNormalizedScreenPosX, float fNormalizedScreenPosY, xiiVec3 &amp;out_vRayStartPos, xiiVec3 &amp;out_vRayDir, xiiCameraEye eye=xiiCameraEye::Left) const</div><div class="ttdoc">Calculates the start position and direction (in world space) of the picking ray through the screen po...</div><div class="ttdef"><b>Definition</b> ViewData.h:49</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.html">home</a></li><li class="navelem"><a class="el" href="../../dir_1036706e55c22cab35bc1c58ee689f1d.html">runner</a></li><li class="navelem"><a class="el" href="../../dir_629f8151d55d307162ff2d619fb1783d.html">work</a></li><li class="navelem"><a class="el" href="../../dir_1ddc44fe1263a8c7935fa6130b7d9499.html">XII</a></li><li class="navelem"><a class="el" href="../../dir_2c1b6808f12952f4c36e05ba7068379a.html">XII</a></li><li class="navelem"><a class="el" href="../../dir_b5a1c4ecfca018ad24b729e213296d41.html">Source</a></li><li class="navelem"><a class="el" href="../../dir_e321052006a51284e67389ab20037e7c.html">Engine</a></li><li class="navelem"><a class="el" href="../../dir_d1b456933e20132afd1d01c7da962f40.html">GraphicsCore</a></li><li class="navelem"><a class="el" href="../../dir_dbd5e7b3b3ed2fc0d3f11d6b12eac684.html">Pipeline</a></li><li class="navelem"><b>ViewData.h</b></li>
-    <li class="footer">Generated on Tue Jul 1 2025 18:05:57 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Sat Jul 5 2025 19:15:55 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 </body>

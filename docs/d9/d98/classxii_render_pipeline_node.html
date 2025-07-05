@@ -104,6 +104,11 @@ $(function(){initNavTree('d9/d98/classxii_render_pipeline_node.html','../../'); 
   <div class="headertitle"><div class="title">xiiRenderPipelineNode Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Base class for all nodes in the render pipeline graph.  
+ <a href="#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="../../d0/d5b/_render_pipeline_node_8h_source.html">RenderPipelineNode.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for xiiRenderPipelineNode:</div>
 <div class="dyncontent">
@@ -112,24 +117,28 @@ Inheritance diagram for xiiRenderPipelineNode:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a0fe8cd60bb0dd5156717a1f8d12877ef" id="r_a0fe8cd60bb0dd5156717a1f8d12877ef"><td class="memItemLeft" align="right" valign="top"><a id="a0fe8cd60bb0dd5156717a1f8d12877ef" name="a0fe8cd60bb0dd5156717a1f8d12877ef"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>InitializePins</b> ()</td></tr>
+<tr class="memitem:a08cd1e21f88f872e7b298925b5689f97" id="r_a08cd1e21f88f872e7b298925b5689f97"><td class="memItemLeft" align="right" valign="top"><a id="a08cd1e21f88f872e7b298925b5689f97" name="a08cd1e21f88f872e7b298925b5689f97"></a>
+virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~xiiRenderPipelineNode</b> ()=default</td></tr>
+<tr class="memdesc:a08cd1e21f88f872e7b298925b5689f97"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual destructor. <br /></td></tr>
+<tr class="separator:a08cd1e21f88f872e7b298925b5689f97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0fe8cd60bb0dd5156717a1f8d12877ef" id="r_a0fe8cd60bb0dd5156717a1f8d12877ef"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0fe8cd60bb0dd5156717a1f8d12877ef">InitializePins</a> ()</td></tr>
+<tr class="memdesc:a0fe8cd60bb0dd5156717a1f8d12877ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Populates the internal arrays of input and output pins.  <br /></td></tr>
 <tr class="separator:a0fe8cd60bb0dd5156717a1f8d12877ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a90d7b2556a5981664aad289a51fdadd5" id="r_a90d7b2556a5981664aad289a51fdadd5"><td class="memItemLeft" align="right" valign="top"><a id="a90d7b2556a5981664aad289a51fdadd5" name="a90d7b2556a5981664aad289a51fdadd5"></a>
-<a class="el" href="../../d6/d0c/classxii_hashed_string.html">xiiHashedString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetPinName</b> (const <a class="el" href="../../d9/d96/structxii_render_pipeline_node_pin.html">xiiRenderPipelineNodePin</a> *pPin) const</td></tr>
+<tr class="memitem:a90d7b2556a5981664aad289a51fdadd5" id="r_a90d7b2556a5981664aad289a51fdadd5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d6/d0c/classxii_hashed_string.html">xiiHashedString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a90d7b2556a5981664aad289a51fdadd5">GetPinName</a> (const <a class="el" href="../../d9/d96/structxii_render_pipeline_node_pin.html">xiiRenderPipelineNodePin</a> *pPin) const</td></tr>
+<tr class="memdesc:a90d7b2556a5981664aad289a51fdadd5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the hashed name associated with a given pin.  <br /></td></tr>
 <tr class="separator:a90d7b2556a5981664aad289a51fdadd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9872b005badc9d9a85bbca00ea7f3c3a" id="r_a9872b005badc9d9a85bbca00ea7f3c3a"><td class="memItemLeft" align="right" valign="top"><a id="a9872b005badc9d9a85bbca00ea7f3c3a" name="a9872b005badc9d9a85bbca00ea7f3c3a"></a>
-const <a class="el" href="../../d9/d96/structxii_render_pipeline_node_pin.html">xiiRenderPipelineNodePin</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetPinByName</b> (<a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sName) const</td></tr>
+<tr class="memitem:a9872b005badc9d9a85bbca00ea7f3c3a" id="r_a9872b005badc9d9a85bbca00ea7f3c3a"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="../../d9/d96/structxii_render_pipeline_node_pin.html">xiiRenderPipelineNodePin</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9872b005badc9d9a85bbca00ea7f3c3a">GetPinByName</a> (<a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sName) const</td></tr>
+<tr class="memdesc:a9872b005badc9d9a85bbca00ea7f3c3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finds a pin by its string name.  <br /></td></tr>
 <tr class="separator:a9872b005badc9d9a85bbca00ea7f3c3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad9c5b544dcdc3fb8b20c5868a4108403" id="r_ad9c5b544dcdc3fb8b20c5868a4108403"><td class="memItemLeft" align="right" valign="top"><a id="ad9c5b544dcdc3fb8b20c5868a4108403" name="ad9c5b544dcdc3fb8b20c5868a4108403"></a>
-const <a class="el" href="../../d9/d96/structxii_render_pipeline_node_pin.html">xiiRenderPipelineNodePin</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetPinByName</b> (<a class="el" href="../../d6/d0c/classxii_hashed_string.html">xiiHashedString</a> sName) const</td></tr>
+<tr class="memitem:ad9c5b544dcdc3fb8b20c5868a4108403" id="r_ad9c5b544dcdc3fb8b20c5868a4108403"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="../../d9/d96/structxii_render_pipeline_node_pin.html">xiiRenderPipelineNodePin</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad9c5b544dcdc3fb8b20c5868a4108403">GetPinByName</a> (<a class="el" href="../../d6/d0c/classxii_hashed_string.html">xiiHashedString</a> sName) const</td></tr>
+<tr class="memdesc:ad9c5b544dcdc3fb8b20c5868a4108403"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finds a pin by its hashed name.  <br /></td></tr>
 <tr class="separator:ad9c5b544dcdc3fb8b20c5868a4108403"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae5537d0e7ac689901c6d86a4a4ee8541" id="r_ae5537d0e7ac689901c6d86a4a4ee8541"><td class="memItemLeft" align="right" valign="top"><a id="ae5537d0e7ac689901c6d86a4a4ee8541" name="ae5537d0e7ac689901c6d86a4a4ee8541"></a>
-const <a class="el" href="../../d0/d60/classxii_array_ptr.html">xiiArrayPtr</a>&lt; const <a class="el" href="../../d9/d96/structxii_render_pipeline_node_pin.html">xiiRenderPipelineNodePin</a> *const &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetInputPins</b> () const</td></tr>
-<tr class="separator:ae5537d0e7ac689901c6d86a4a4ee8541"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3668a6c700c2d6149b9a4b4982c31f40" id="r_a3668a6c700c2d6149b9a4b4982c31f40"><td class="memItemLeft" align="right" valign="top"><a id="a3668a6c700c2d6149b9a4b4982c31f40" name="a3668a6c700c2d6149b9a4b4982c31f40"></a>
-const <a class="el" href="../../d0/d60/classxii_array_ptr.html">xiiArrayPtr</a>&lt; const <a class="el" href="../../d9/d96/structxii_render_pipeline_node_pin.html">xiiRenderPipelineNodePin</a> *const &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetOutputPins</b> () const</td></tr>
-<tr class="separator:a3668a6c700c2d6149b9a4b4982c31f40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3fd27b660400c210c5871103c80d483c" id="r_a3fd27b660400c210c5871103c80d483c"><td class="memItemLeft" align="right" valign="top">XII_ALWAYS_INLINE const <a class="el" href="../../d0/d60/classxii_array_ptr.html">xiiArrayPtr</a>&lt; const <a class="el" href="../../d9/d96/structxii_render_pipeline_node_pin.html">xiiRenderPipelineNodePin</a> *const &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3fd27b660400c210c5871103c80d483c">GetInputPins</a> () const</td></tr>
+<tr class="memdesc:a3fd27b660400c210c5871103c80d483c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves all input pins of this node.  <br /></td></tr>
+<tr class="separator:a3fd27b660400c210c5871103c80d483c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a866ac94f5febb40a5b5a1c9b899cc1cf" id="r_a866ac94f5febb40a5b5a1c9b899cc1cf"><td class="memItemLeft" align="right" valign="top">XII_ALWAYS_INLINE const <a class="el" href="../../d0/d60/classxii_array_ptr.html">xiiArrayPtr</a>&lt; const <a class="el" href="../../d9/d96/structxii_render_pipeline_node_pin.html">xiiRenderPipelineNodePin</a> *const &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a866ac94f5febb40a5b5a1c9b899cc1cf">GetOutputPins</a> () const</td></tr>
+<tr class="memdesc:a866ac94f5febb40a5b5a1c9b899cc1cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves all output pins of this node.  <br /></td></tr>
+<tr class="separator:a866ac94f5febb40a5b5a1c9b899cc1cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classxii_reflected_class"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_classxii_reflected_class')"><img src="../../closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="../../dc/d71/classxii_reflected_class.html">xiiReflectedClass</a></td></tr>
 <tr class="memitem:a00430d2230bc44ad262be3d0a4e62e10 inherit pub_methods_classxii_reflected_class" id="r_a00430d2230bc44ad262be3d0a4e62e10"><td class="memItemLeft" align="right" valign="top">
 virtual const <a class="el" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetDynamicRTTI</b> () const</td></tr>
@@ -151,6 +160,164 @@ Additional Inherited Members</h2></td></tr>
 static const <a class="el" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetStaticRTTI</b> ()</td></tr>
 <tr class="separator:a4bde433b55ebd55edf63c57239799bba inherit pub_static_methods_classxii_no_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Base class for all nodes in the render pipeline graph. </p>
+<p>Each node owns a set of input and output pins and provides lookup and initialization logic. Nodes are reflectable via RTTI to support editor integration and serialization. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a3fd27b660400c210c5871103c80d483c" name="a3fd27b660400c210c5871103c80d483c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3fd27b660400c210c5871103c80d483c">&#9670;&#160;</a></span>GetInputPins()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">XII_ALWAYS_INLINE const <a class="el" href="../../d0/d60/classxii_array_ptr.html">xiiArrayPtr</a>&lt; const <a class="el" href="../../d9/d96/structxii_render_pipeline_node_pin.html">xiiRenderPipelineNodePin</a> *const  &gt; xiiRenderPipelineNode::GetInputPins </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Retrieves all input pins of this node. </p>
+<dl class="section return"><dt>Returns</dt><dd>An array pointer to the collection of input pin pointers. </dd></dl>
+
+</div>
+</div>
+<a id="a866ac94f5febb40a5b5a1c9b899cc1cf" name="a866ac94f5febb40a5b5a1c9b899cc1cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a866ac94f5febb40a5b5a1c9b899cc1cf">&#9670;&#160;</a></span>GetOutputPins()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">XII_ALWAYS_INLINE const <a class="el" href="../../d0/d60/classxii_array_ptr.html">xiiArrayPtr</a>&lt; const <a class="el" href="../../d9/d96/structxii_render_pipeline_node_pin.html">xiiRenderPipelineNodePin</a> *const  &gt; xiiRenderPipelineNode::GetOutputPins </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Retrieves all output pins of this node. </p>
+<dl class="section return"><dt>Returns</dt><dd>An array pointer to the collection of output pin pointers. </dd></dl>
+
+</div>
+</div>
+<a id="ad9c5b544dcdc3fb8b20c5868a4108403" name="ad9c5b544dcdc3fb8b20c5868a4108403"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad9c5b544dcdc3fb8b20c5868a4108403">&#9670;&#160;</a></span>GetPinByName() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="../../d9/d96/structxii_render_pipeline_node_pin.html">xiiRenderPipelineNodePin</a> * xiiRenderPipelineNode::GetPinByName </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d6/d0c/classxii_hashed_string.html">xiiHashedString</a></td>          <td class="paramname"><span class="paramname"><em>sName</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Finds a pin by its hashed name. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sName</td><td>- The hashed name of the pin to search for.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Pointer to the matching pin, or nullptr if no pin with that hash exists. </dd></dl>
+
+</div>
+</div>
+<a id="a9872b005badc9d9a85bbca00ea7f3c3a" name="a9872b005badc9d9a85bbca00ea7f3c3a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9872b005badc9d9a85bbca00ea7f3c3a">&#9670;&#160;</a></span>GetPinByName() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="../../d9/d96/structxii_render_pipeline_node_pin.html">xiiRenderPipelineNodePin</a> * xiiRenderPipelineNode::GetPinByName </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a></td>          <td class="paramname"><span class="paramname"><em>sName</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Finds a pin by its string name. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sName</td><td>- The textual name of the pin to search for.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Pointer to the matching pin, or nullptr if no pin with that name exists. </dd></dl>
+
+</div>
+</div>
+<a id="a90d7b2556a5981664aad289a51fdadd5" name="a90d7b2556a5981664aad289a51fdadd5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a90d7b2556a5981664aad289a51fdadd5">&#9670;&#160;</a></span>GetPinName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d6/d0c/classxii_hashed_string.html">xiiHashedString</a> xiiRenderPipelineNode::GetPinName </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d9/d96/structxii_render_pipeline_node_pin.html">xiiRenderPipelineNodePin</a> *</td>          <td class="paramname"><span class="paramname"><em>pPin</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the hashed name associated with a given pin. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pPin</td><td>- Pointer to the pin whose name is queried.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The hashed string name for the specified pin, or an empty hash if not found. </dd></dl>
+
+</div>
+</div>
+<a id="a0fe8cd60bb0dd5156717a1f8d12877ef" name="a0fe8cd60bb0dd5156717a1f8d12877ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0fe8cd60bb0dd5156717a1f8d12877ef">&#9670;&#160;</a></span>InitializePins()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void xiiRenderPipelineNode::InitializePins </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Populates the internal arrays of input and output pins. </p>
+<p>This must be called after all pins have been created or registered so that <a class="el" href="#a3fd27b660400c210c5871103c80d483c" title="Retrieves all input pins of this node.">GetInputPins()</a> and <a class="el" href="#a866ac94f5febb40a5b5a1c9b899cc1cf" title="Retrieves all output pins of this node.">GetOutputPins()</a> return valid data. </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>/home/runner/work/XII/XII/Source/Engine/GraphicsCore/Pipeline/<a class="el" href="../../d0/d5b/_render_pipeline_node_8h_source.html">RenderPipelineNode.h</a></li>
 <li>/home/runner/work/XII/XII/Source/Engine/GraphicsCore/Pipeline/Implementation/<b>RenderPipelineNode.cpp</b></li>
@@ -161,7 +328,7 @@ static const <a class="el" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d9/d98/classxii_render_pipeline_node.html">xiiRenderPipelineNode</a></li>
-    <li class="footer">Generated on Tue Jul 1 2025 18:06:01 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Sat Jul 5 2025 19:15:59 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 </body>

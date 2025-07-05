@@ -19,6 +19,6 @@ var classxii_view =
     [ "GetViewProjectionMatrix", "dd/df1/classxii_view.html#a1c9c430a5454f94bf8ec928893287024", null ],
     [ "SetCameraUsageHint", "dd/df1/classxii_view.html#aba46a11dff106d10e4cef139003b66b3", null ],
     [ "SetRenderTargets", "dd/df1/classxii_view.html#a4dd2ab9676bba80f348c9b1fadd5bfff", null ],
-    [ "SetSwapChain", "dd/df1/classxii_view.html#a3ab50d3e8f5092993105f29ea0e8813d", null ],
+    [ "SetSwapChain", "dd/df1/classxii_view.html#a52851fb491bf64a59039d606c2f68c0c", null ],
     [ "UpdateViewData", "dd/df1/classxii_view.html#a12975f2fe0d547f7e752ac2eea3a6a96", null ]
 ];
