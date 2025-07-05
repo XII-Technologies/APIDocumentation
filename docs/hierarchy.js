@@ -6801,7 +6801,11 @@ var hierarchy =
             [ "xiiTonemapPass", "d8/d40/classxii_tonemap_pass.html", null ]
           ] ],
           [ "xiiRenderPipelinePassBase", "dd/d7b/classxii_render_pipeline_pass_base.html", [
-            [ "xiiGraphicsPipelinePass", "de/d84/classxii_graphics_pipeline_pass.html", null ]
+            [ "xiiComputePipelinePass", "d3/d4e/classxii_compute_pipeline_pass.html", null ],
+            [ "xiiCopyPipelinePass", "d8/d35/classxii_copy_pipeline_pass.html", null ],
+            [ "xiiGraphicsPipelinePass", "de/d84/classxii_graphics_pipeline_pass.html", null ],
+            [ "xiiPresentPipelinePass", "df/dcc/classxii_present_pipeline_pass.html", null ],
+            [ "xiiUtilityPipelinePass", "d0/dac/classxii_utility_pipeline_pass.html", null ]
           ] ],
           [ "xiiView", "dd/df1/classxii_view.html", null ]
         ] ],
