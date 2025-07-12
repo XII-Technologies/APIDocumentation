@@ -99,45 +99,81 @@ $(function(){initNavTree('dd/dad/structxii_result.html','../../'); initResizable
 
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="../../dc/d82/structxii_result-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">xiiResult Struct Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
-<p>Default enum for returning failure or success, instead of using a bool.  
+<p>Encapsulates a result state (success or failure), with [[nodiscard]] enforcement.  
  <a href="#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="../../dc/d8c/_foundation_2_types_2_types_8h_source.html">Types.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ac125f9acb21fd67499570cf83336b4ba" id="r_ac125f9acb21fd67499570cf83336b4ba"><td class="memItemLeft" align="right" valign="top"><a id="ac125f9acb21fd67499570cf83336b4ba" name="ac125f9acb21fd67499570cf83336b4ba"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>xiiResult</b> (xiiResultEnum res)</td></tr>
-<tr class="separator:ac125f9acb21fd67499570cf83336b4ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8682014877909dd95316c4f916634c01" id="r_a8682014877909dd95316c4f916634c01"><td class="memItemLeft" align="right" valign="top"><a id="a8682014877909dd95316c4f916634c01" name="a8682014877909dd95316c4f916634c01"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (xiiResultEnum rhs)</td></tr>
-<tr class="separator:a8682014877909dd95316c4f916634c01"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a62e86ac1f8bd65166fc1b1bfdd651243" id="r_a62e86ac1f8bd65166fc1b1bfdd651243"><td class="memItemLeft" align="right" valign="top"><a id="a62e86ac1f8bd65166fc1b1bfdd651243" name="a62e86ac1f8bd65166fc1b1bfdd651243"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator==</b> (xiiResultEnum cmp) const</td></tr>
-<tr class="separator:a62e86ac1f8bd65166fc1b1bfdd651243"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">Constructors and Assignments</div></td></tr>
+<tr class="memitem:ab85249b4b6f5a74ec0338067b177ac69" id="r_ab85249b4b6f5a74ec0338067b177ac69"><td class="memItemLeft" align="right" valign="top">XII_ALWAYS_INLINE&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab85249b4b6f5a74ec0338067b177ac69">xiiResult</a> (xiiResultEnum result)</td></tr>
+<tr class="memdesc:ab85249b4b6f5a74ec0338067b177ac69"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a result from an enum value.  <br /></td></tr>
+<tr class="separator:ab85249b4b6f5a74ec0338067b177ac69"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19a2718b187e89c5ba6c034aa6592d0a" id="r_a19a2718b187e89c5ba6c034aa6592d0a"><td class="memItemLeft" align="right" valign="top"><a id="a19a2718b187e89c5ba6c034aa6592d0a" name="a19a2718b187e89c5ba6c034aa6592d0a"></a>
+XII_ALWAYS_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (xiiResultEnum rhs)</td></tr>
+<tr class="memdesc:a19a2718b187e89c5ba6c034aa6592d0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assigns a new result state. <br /></td></tr>
+<tr class="separator:a19a2718b187e89c5ba6c034aa6592d0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d2bfb6a4d467a5a540ce18b30429434" id="r_a6d2bfb6a4d467a5a540ce18b30429434"><td class="memItemLeft" align="right" valign="top"><a id="a6d2bfb6a4d467a5a540ce18b30429434" name="a6d2bfb6a4d467a5a540ce18b30429434"></a>
+XII_ALWAYS_INLINE bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator==</b> (xiiResultEnum cmp) const</td></tr>
+<tr class="memdesc:a6d2bfb6a4d467a5a540ce18b30429434"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compares the result to another enum value. <br /></td></tr>
+<tr class="separator:a6d2bfb6a4d467a5a540ce18b30429434"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">Status Queries</div></td></tr>
 <tr class="memitem:a8f1fe5590a2ad68e73d49621056c4e17" id="r_a8f1fe5590a2ad68e73d49621056c4e17"><td class="memItemLeft" align="right" valign="top"><a id="a8f1fe5590a2ad68e73d49621056c4e17" name="a8f1fe5590a2ad68e73d49621056c4e17"></a>
 XII_ALWAYS_INLINE bool&#160;</td><td class="memItemRight" valign="bottom"><b>Succeeded</b> () const</td></tr>
+<tr class="memdesc:a8f1fe5590a2ad68e73d49621056c4e17"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the result indicates success. <br /></td></tr>
 <tr class="separator:a8f1fe5590a2ad68e73d49621056c4e17"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae3212660774159ceaed4b2fcb090ff36" id="r_ae3212660774159ceaed4b2fcb090ff36"><td class="memItemLeft" align="right" valign="top"><a id="ae3212660774159ceaed4b2fcb090ff36" name="ae3212660774159ceaed4b2fcb090ff36"></a>
 XII_ALWAYS_INLINE bool&#160;</td><td class="memItemRight" valign="bottom"><b>Failed</b> () const</td></tr>
+<tr class="memdesc:ae3212660774159ceaed4b2fcb090ff36"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the result indicates failure. <br /></td></tr>
 <tr class="separator:ae3212660774159ceaed4b2fcb090ff36"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0e2e7a66dd1876db3912fc0f2dff69a6" id="r_a0e2e7a66dd1876db3912fc0f2dff69a6"><td class="memItemLeft" align="right" valign="top"><a id="a0e2e7a66dd1876db3912fc0f2dff69a6" name="a0e2e7a66dd1876db3912fc0f2dff69a6"></a>
-XII_ALWAYS_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><b>IgnoreResult</b> ()</td></tr>
-<tr class="memdesc:a0e2e7a66dd1876db3912fc0f2dff69a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used to silence compiler warnings, when success or failure doesn't matter. <br /></td></tr>
+<tr><td colspan="2"><div class="groupHeader">Control and Assertions</div></td></tr>
+<tr class="memitem:a0e2e7a66dd1876db3912fc0f2dff69a6" id="r_a0e2e7a66dd1876db3912fc0f2dff69a6"><td class="memItemLeft" align="right" valign="top">XII_ALWAYS_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0e2e7a66dd1876db3912fc0f2dff69a6">IgnoreResult</a> ()</td></tr>
+<tr class="memdesc:a0e2e7a66dd1876db3912fc0f2dff69a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Suppresses compiler warnings when intentionally ignoring the result.  <br /></td></tr>
 <tr class="separator:a0e2e7a66dd1876db3912fc0f2dff69a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4d2298578e92701ded834b6a177f0379" id="r_a4d2298578e92701ded834b6a177f0379"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4d2298578e92701ded834b6a177f0379">AssertSuccess</a> (const char *szMsg=nullptr, const char *szDetails=nullptr) const</td></tr>
-<tr class="memdesc:a4d2298578e92701ded834b6a177f0379"><td class="mdescLeft">&#160;</td><td class="mdescRight">Asserts that the function succeeded. In case of failure, the program will terminate.  <br /></td></tr>
+<tr class="memdesc:a4d2298578e92701ded834b6a177f0379"><td class="mdescLeft">&#160;</td><td class="mdescRight">Asserts that the result indicates success.  <br /></td></tr>
 <tr class="separator:a4d2298578e92701ded834b6a177f0379"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Default enum for returning failure or success, instead of using a bool. </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
+<div class="textblock"><p>Encapsulates a result state (success or failure), with [[nodiscard]] enforcement. </p>
+<p>Provides clearer semantics than using raw booleans and encourages consistent status checking in functions and APIs. Also includes convenience utilities for asserting or ignoring result values. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="ab85249b4b6f5a74ec0338067b177ac69" name="ab85249b4b6f5a74ec0338067b177ac69"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab85249b4b6f5a74ec0338067b177ac69">&#9670;&#160;</a></span>xiiResult()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">XII_ALWAYS_INLINE xiiResult::xiiResult </td>
+          <td>(</td>
+          <td class="paramtype">xiiResultEnum</td>          <td class="paramname"><span class="paramname"><em>result</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Constructs a result from an enum value. </p>
+<p>Example: </p><div class="fragment"><div class="line"><a class="code hl_function" href="#ab85249b4b6f5a74ec0338067b177ac69">xiiResult</a> result = XII_SUCCESS;</div>
+<div class="ttc" id="astructxii_result_html_ab85249b4b6f5a74ec0338067b177ac69"><div class="ttname"><a href="#ab85249b4b6f5a74ec0338067b177ac69">xiiResult::xiiResult</a></div><div class="ttdeci">XII_ALWAYS_INLINE xiiResult(xiiResultEnum result)</div><div class="ttdoc">Constructs a result from an enum value.</div><div class="ttdef"><b>Definition</b> Types.h:74</div></div>
+</div><!-- fragment --> 
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
 <a id="a4d2298578e92701ded834b6a177f0379" name="a4d2298578e92701ded834b6a177f0379"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4d2298578e92701ded834b6a177f0379">&#9670;&#160;</a></span>AssertSuccess()</h2>
 
@@ -157,8 +193,42 @@ XII_ALWAYS_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><b>Ign
       </table>
 </div><div class="memdoc">
 
-<p>Asserts that the function succeeded. In case of failure, the program will terminate. </p>
-<p>If <em class="arg">msg</em> is given, this will be the assert message. If <em class="arg">details</em> is provided, <em class="arg">msg</em> should contain a formatting element ({}), e.g. "Error: {}". </p>
+<p>Asserts that the result indicates success. </p>
+<p>If the result is failure, the program terminates. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">szMsg</td><td>Optional short message for assertion failure. </td></tr>
+    <tr><td class="paramname">szDetails</td><td>Optional detailed message, used in conjunction with <em class="arg">szMsg</em>. If <em class="arg">szDetails</em> is provided, <em class="arg">szMsg</em> should contain a formatting placeholder (<code>{}</code>). </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a0e2e7a66dd1876db3912fc0f2dff69a6" name="a0e2e7a66dd1876db3912fc0f2dff69a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e2e7a66dd1876db3912fc0f2dff69a6">&#9670;&#160;</a></span>IgnoreResult()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">XII_ALWAYS_INLINE void xiiResult::IgnoreResult </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Suppresses compiler warnings when intentionally ignoring the result. </p>
+<p>To be used when result checking isn't necessary, e.g., in best-effort cleanup code. </p>
 
 </div>
 </div>
@@ -172,7 +242,7 @@ XII_ALWAYS_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><b>Ign
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a></li>
-    <li class="footer">Generated on Sat Jul 5 2025 19:48:08 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Sat Jul 12 2025 04:06:42 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 </body>

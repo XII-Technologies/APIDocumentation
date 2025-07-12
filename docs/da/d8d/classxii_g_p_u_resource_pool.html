@@ -109,7 +109,7 @@ $(function(){initNavTree('da/d8d/classxii_g_p_u_resource_pool.html','../../'); i
 </div><!--header-->
 <div class="contents">
 
-<p>This class serves as a pool for GPU related resources (e.g. buffers and textures required for rendering). Note that the functions creating and returning render targets are thread safe (by using a mutex).  
+<p>Manages a pool of reusable GPU resources such as buffers, textures, and samplers.  
  <a href="#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="../../df/dd6/_g_p_u_resource_pool_8h_source.html">GPUResourcePool.h</a>&gt;</code></p>
@@ -118,54 +118,76 @@ $(function(){initNavTree('da/d8d/classxii_g_p_u_resource_pool.html','../../'); i
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/da1/structxii_g_p_u_resource_pool_1_1_buffer_handle_with_age.html">BufferHandleWithAge</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d20/structxii_g_p_u_resource_pool_1_1_sampler_handle_with_age.html">SamplerHandleWithAge</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dc4/structxii_g_p_u_resource_pool_1_1_texture_handle_with_age.html">TextureHandleWithAge</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aaef92430c7081845d959f1485dcf8d6f" id="r_aaef92430c7081845d959f1485dcf8d6f"><td class="memItemLeft" align="right" valign="top"><a id="aaef92430c7081845d959f1485dcf8d6f" name="aaef92430c7081845d959f1485dcf8d6f"></a>
-<a class="el" href="../../d8/d9b/classxii_shared_ptr.html">xiiSharedPtr</a>&lt; <a class="el" href="../../d3/d9a/classxii_g_a_l_texture.html">xiiGALTexture</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetRenderTarget</b> (const <a class="el" href="../../de/dd4/structxii_g_a_l_texture_creation_description.html">xiiGALTextureCreationDescription</a> &amp;textureDesc)</td></tr>
-<tr class="memdesc:aaef92430c7081845d959f1485dcf8d6f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a render target handle for the given texture description Note that you should return the handle to the pool and never destroy it directly with the device. <br /></td></tr>
-<tr class="separator:aaef92430c7081845d959f1485dcf8d6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6ad6ddeb97d091a40aa24a4ec29a8f37" id="r_a6ad6ddeb97d091a40aa24a4ec29a8f37"><td class="memItemLeft" align="right" valign="top"><a id="a6ad6ddeb97d091a40aa24a4ec29a8f37" name="a6ad6ddeb97d091a40aa24a4ec29a8f37"></a>
-<a class="el" href="../../d8/d9b/classxii_shared_ptr.html">xiiSharedPtr</a>&lt; <a class="el" href="../../d3/d9a/classxii_g_a_l_texture.html">xiiGALTexture</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetRenderTarget</b> (xiiUInt32 uiWidth, xiiUInt32 uiHeight, <a class="el" href="../../de/dfd/structxii_enum.html">xiiEnum</a>&lt; <a class="el" href="../../de/d10/structxii_g_a_l_resource_format.html">xiiGALResourceFormat</a> &gt; format, <a class="el" href="../../de/dfd/structxii_enum.html">xiiEnum</a>&lt; <a class="el" href="../../d3/d28/structxii_g_a_l_m_s_a_a_sample_count.html">xiiGALMSAASampleCount</a> &gt; sampleCount=<a class="el" href="../../d3/d28/structxii_g_a_l_m_s_a_a_sample_count.html#a4d174563bcfff207aa4b781b51a206b5a9b851c99c8fbc4326f36a78a115f4864">xiiGALMSAASampleCount::OneSample</a>, xiiUInt32 uiSliceColunt=1, bool bIsArray=false)</td></tr>
-<tr class="memdesc:a6ad6ddeb97d091a40aa24a4ec29a8f37"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convenience functions which creates a texture description fit for a 2d render target without a mip chains. <br /></td></tr>
-<tr class="separator:a6ad6ddeb97d091a40aa24a4ec29a8f37"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9da82d5a167d22708c2f15d70dc845a7" id="r_a9da82d5a167d22708c2f15d70dc845a7"><td class="memItemLeft" align="right" valign="top"><a id="a9da82d5a167d22708c2f15d70dc845a7" name="a9da82d5a167d22708c2f15d70dc845a7"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>ReturnRenderTarget</b> (<a class="el" href="../../d8/d9b/classxii_shared_ptr.html">xiiSharedPtr</a>&lt; <a class="el" href="../../d3/d9a/classxii_g_a_l_texture.html">xiiGALTexture</a> &gt; hRenderTarget)</td></tr>
-<tr class="memdesc:a9da82d5a167d22708c2f15d70dc845a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a render target to the pool so other consumers can use it. Note that targets which are returned to the pool are susceptible to destruction due to garbage collection. <br /></td></tr>
-<tr class="separator:a9da82d5a167d22708c2f15d70dc845a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6df10f69c33c3d44e529df5454567beb" id="r_a6df10f69c33c3d44e529df5454567beb"><td class="memItemLeft" align="right" valign="top"><a id="a6df10f69c33c3d44e529df5454567beb" name="a6df10f69c33c3d44e529df5454567beb"></a>
-<a class="el" href="../../d8/d9b/classxii_shared_ptr.html">xiiSharedPtr</a>&lt; <a class="el" href="../../da/d03/classxii_g_a_l_buffer.html">xiiGALBuffer</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetBuffer</b> (const <a class="el" href="../../d7/d69/structxii_g_a_l_buffer_creation_description.html">xiiGALBufferCreationDescription</a> &amp;bufferDesc)</td></tr>
-<tr class="memdesc:a6df10f69c33c3d44e529df5454567beb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a buffer handle for the given buffer description. <br /></td></tr>
-<tr class="separator:a6df10f69c33c3d44e529df5454567beb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a61fe22f6180f47311d3f87ecf694e1e0" id="r_a61fe22f6180f47311d3f87ecf694e1e0"><td class="memItemLeft" align="right" valign="top"><a id="a61fe22f6180f47311d3f87ecf694e1e0" name="a61fe22f6180f47311d3f87ecf694e1e0"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>ReturnBuffer</b> (<a class="el" href="../../d8/d9b/classxii_shared_ptr.html">xiiSharedPtr</a>&lt; <a class="el" href="../../da/d03/classxii_g_a_l_buffer.html">xiiGALBuffer</a> &gt; hBuffer)</td></tr>
-<tr class="memdesc:a61fe22f6180f47311d3f87ecf694e1e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a buffer to the pool so other consumers can use it. <br /></td></tr>
-<tr class="separator:a61fe22f6180f47311d3f87ecf694e1e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad78b2b601ea7f5bf9a63a2ee434949f8" id="r_ad78b2b601ea7f5bf9a63a2ee434949f8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad78b2b601ea7f5bf9a63a2ee434949f8">RunGC</a> (xiiUInt32 uiMinimumAge)</td></tr>
-<tr class="memdesc:ad78b2b601ea7f5bf9a63a2ee434949f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tries to free resources which are currently in the pool. Triggered automatically due to allocation number / size thresholds but can be triggered manually (e.g. after editor window resize)  <br /></td></tr>
-<tr class="separator:ad78b2b601ea7f5bf9a63a2ee434949f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adead9b5fae985a9f645da7cd2e7d3e1c" id="r_adead9b5fae985a9f645da7cd2e7d3e1c"><td class="memItemLeft" align="right" valign="top"><a id="adead9b5fae985a9f645da7cd2e7d3e1c" name="adead9b5fae985a9f645da7cd2e7d3e1c"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>xiiGPUResourcePool</b> ()</td></tr>
+<tr class="memdesc:adead9b5fae985a9f645da7cd2e7d3e1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a GPU resource pool with default garbage collection thresholds. <br /></td></tr>
+<tr class="separator:adead9b5fae985a9f645da7cd2e7d3e1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c2dc06d1ffeec55a2468736bce51c1f" id="r_a5c2dc06d1ffeec55a2468736bce51c1f"><td class="memItemLeft" align="right" valign="top"><a id="a5c2dc06d1ffeec55a2468736bce51c1f" name="a5c2dc06d1ffeec55a2468736bce51c1f"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>~xiiGPUResourcePool</b> ()</td></tr>
+<tr class="memdesc:a5c2dc06d1ffeec55a2468736bce51c1f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroys the resource pool and releases all remaining resources. <br /></td></tr>
+<tr class="separator:a5c2dc06d1ffeec55a2468736bce51c1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf003543f8d7f2f2c30344da06739e5c" id="r_abf003543f8d7f2f2c30344da06739e5c"><td class="memItemLeft" align="right" valign="top"><a id="abf003543f8d7f2f2c30344da06739e5c" name="abf003543f8d7f2f2c30344da06739e5c"></a>
+<a class="el" href="../../d8/d9b/classxii_shared_ptr.html">xiiSharedPtr</a>&lt; <a class="el" href="../../da/d03/classxii_g_a_l_buffer.html">xiiGALBuffer</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetBuffer</b> (const <a class="el" href="../../d7/d69/structxii_g_a_l_buffer_creation_description.html">xiiGALBufferCreationDescription</a> &amp;description)</td></tr>
+<tr class="memdesc:abf003543f8d7f2f2c30344da06739e5c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves a buffer from the pool or allocates a new one if no suitable match exists. <br /></td></tr>
+<tr class="separator:abf003543f8d7f2f2c30344da06739e5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb8b0607c3b3f25fbc53894c696d6ab6" id="r_abb8b0607c3b3f25fbc53894c696d6ab6"><td class="memItemLeft" align="right" valign="top"><a id="abb8b0607c3b3f25fbc53894c696d6ab6" name="abb8b0607c3b3f25fbc53894c696d6ab6"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ReturnBuffer</b> (<a class="el" href="../../d8/d9b/classxii_shared_ptr.html">xiiSharedPtr</a>&lt; <a class="el" href="../../da/d03/classxii_g_a_l_buffer.html">xiiGALBuffer</a> &gt; pBuffer)</td></tr>
+<tr class="memdesc:abb8b0607c3b3f25fbc53894c696d6ab6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a buffer to the pool for potential reuse. <br /></td></tr>
+<tr class="separator:abb8b0607c3b3f25fbc53894c696d6ab6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a649d7f9b2b537f0394632a090de7ebf6" id="r_a649d7f9b2b537f0394632a090de7ebf6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d8/d9b/classxii_shared_ptr.html">xiiSharedPtr</a>&lt; <a class="el" href="../../d3/d9a/classxii_g_a_l_texture.html">xiiGALTexture</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a649d7f9b2b537f0394632a090de7ebf6">GetRenderTarget</a> (xiiUInt32 uiWidth, xiiUInt32 uiHeight, <a class="el" href="../../de/dfd/structxii_enum.html">xiiEnum</a>&lt; <a class="el" href="../../de/d10/structxii_g_a_l_resource_format.html">xiiGALResourceFormat</a> &gt; format, <a class="el" href="../../de/dfd/structxii_enum.html">xiiEnum</a>&lt; <a class="el" href="../../d3/d28/structxii_g_a_l_m_s_a_a_sample_count.html">xiiGALMSAASampleCount</a> &gt; sampleCount, xiiUInt32 uiSliceColunt, bool bIsArray)</td></tr>
+<tr class="memdesc:a649d7f9b2b537f0394632a090de7ebf6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves a render target texture with simplified input parameters.  <br /></td></tr>
+<tr class="separator:a649d7f9b2b537f0394632a090de7ebf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b06726071fae2da9334c4172bb2a640" id="r_a5b06726071fae2da9334c4172bb2a640"><td class="memItemLeft" align="right" valign="top"><a id="a5b06726071fae2da9334c4172bb2a640" name="a5b06726071fae2da9334c4172bb2a640"></a>
+<a class="el" href="../../d8/d9b/classxii_shared_ptr.html">xiiSharedPtr</a>&lt; <a class="el" href="../../d3/d9a/classxii_g_a_l_texture.html">xiiGALTexture</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetTexture</b> (const <a class="el" href="../../de/dd4/structxii_g_a_l_texture_creation_description.html">xiiGALTextureCreationDescription</a> &amp;description)</td></tr>
+<tr class="memdesc:a5b06726071fae2da9334c4172bb2a640"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves a texture from the pool or creates a new one with the provided description. <br /></td></tr>
+<tr class="separator:a5b06726071fae2da9334c4172bb2a640"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ac28131b9650ad6598d2e9a9bbd5ceb" id="r_a2ac28131b9650ad6598d2e9a9bbd5ceb"><td class="memItemLeft" align="right" valign="top"><a id="a2ac28131b9650ad6598d2e9a9bbd5ceb" name="a2ac28131b9650ad6598d2e9a9bbd5ceb"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ReturnTexture</b> (<a class="el" href="../../d8/d9b/classxii_shared_ptr.html">xiiSharedPtr</a>&lt; <a class="el" href="../../d3/d9a/classxii_g_a_l_texture.html">xiiGALTexture</a> &gt; pTexture)</td></tr>
+<tr class="memdesc:a2ac28131b9650ad6598d2e9a9bbd5ceb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a texture to the pool for reuse. <br /></td></tr>
+<tr class="separator:a2ac28131b9650ad6598d2e9a9bbd5ceb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa15dd3f85ea51aa92db0a3bfcd7da211" id="r_aa15dd3f85ea51aa92db0a3bfcd7da211"><td class="memItemLeft" align="right" valign="top"><a id="aa15dd3f85ea51aa92db0a3bfcd7da211" name="aa15dd3f85ea51aa92db0a3bfcd7da211"></a>
+<a class="el" href="../../d8/d9b/classxii_shared_ptr.html">xiiSharedPtr</a>&lt; <a class="el" href="../../d3/d97/classxii_g_a_l_sampler.html">xiiGALSampler</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetSampler</b> (const <a class="el" href="../../d6/dbe/structxii_g_a_l_sampler_creation_description.html">xiiGALSamplerCreationDescription</a> &amp;description)</td></tr>
+<tr class="memdesc:aa15dd3f85ea51aa92db0a3bfcd7da211"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves a GPU sampler from the pool or allocates one if needed. <br /></td></tr>
+<tr class="separator:aa15dd3f85ea51aa92db0a3bfcd7da211"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a446f4ca6eb82a17885167f0b67587a9d" id="r_a446f4ca6eb82a17885167f0b67587a9d"><td class="memItemLeft" align="right" valign="top"><a id="a446f4ca6eb82a17885167f0b67587a9d" name="a446f4ca6eb82a17885167f0b67587a9d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ReturnSampler</b> (<a class="el" href="../../d8/d9b/classxii_shared_ptr.html">xiiSharedPtr</a>&lt; <a class="el" href="../../d3/d97/classxii_g_a_l_sampler.html">xiiGALSampler</a> &gt; pSampler)</td></tr>
+<tr class="memdesc:a446f4ca6eb82a17885167f0b67587a9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a sampler to the pool for reuse. <br /></td></tr>
+<tr class="separator:a446f4ca6eb82a17885167f0b67587a9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0d66f94e30c714bdea9340593ed3f40" id="r_ae0d66f94e30c714bdea9340593ed3f40"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae0d66f94e30c714bdea9340593ed3f40">ReleaseStaleResources</a> (xiiUInt32 uiMinimumAge)</td></tr>
+<tr class="memdesc:ae0d66f94e30c714bdea9340593ed3f40"><td class="mdescLeft">&#160;</td><td class="mdescRight">Releases resources that have not been used for at least <em class="arg">uiMinimumAge</em> frames.  <br /></td></tr>
+<tr class="separator:ae0d66f94e30c714bdea9340593ed3f40"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:ac703a861fdc086c93589448fb7c5f01c" id="r_ac703a861fdc086c93589448fb7c5f01c"><td class="memItemLeft" align="right" valign="top"><a id="ac703a861fdc086c93589448fb7c5f01c" name="ac703a861fdc086c93589448fb7c5f01c"></a>
 static <a class="el" href="../../da/d8d/classxii_g_p_u_resource_pool.html">xiiGPUResourcePool</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetDefaultInstance</b> ()</td></tr>
+<tr class="memdesc:ac703a861fdc086c93589448fb7c5f01c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the global default GPU resource pool instance, if any. <br /></td></tr>
 <tr class="separator:ac703a861fdc086c93589448fb7c5f01c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae5d34f6482e241cf994bf860f99639e6" id="r_ae5d34f6482e241cf994bf860f99639e6"><td class="memItemLeft" align="right" valign="top"><a id="ae5d34f6482e241cf994bf860f99639e6" name="ae5d34f6482e241cf994bf860f99639e6"></a>
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>SetDefaultInstance</b> (<a class="el" href="../../da/d8d/classxii_g_p_u_resource_pool.html">xiiGPUResourcePool</a> *pDefaultInstance)</td></tr>
+<tr class="memdesc:ae5d34f6482e241cf994bf860f99639e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the global default GPU resource pool instance. <br /></td></tr>
 <tr class="separator:ae5d34f6482e241cf994bf860f99639e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:a2a4d17067114a115c8330eb84a0683f9" id="r_a2a4d17067114a115c8330eb84a0683f9"><td class="memItemLeft" align="right" valign="top"><a id="a2a4d17067114a115c8330eb84a0683f9" name="a2a4d17067114a115c8330eb84a0683f9"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>CheckAndPotentiallyRunGC</b> ()</td></tr>
-<tr class="separator:a2a4d17067114a115c8330eb84a0683f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2df601419f14b1b349edc9e30dbb61f" id="r_ae2df601419f14b1b349edc9e30dbb61f"><td class="memItemLeft" align="right" valign="top"><a id="ae2df601419f14b1b349edc9e30dbb61f" name="ae2df601419f14b1b349edc9e30dbb61f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>CheckAndPotentiallyReleaseStaleResources</b> ()</td></tr>
+<tr class="memdesc:ae2df601419f14b1b349edc9e30dbb61f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Internal method that checks thresholds and releases stale resources if needed. <br /></td></tr>
+<tr class="separator:ae2df601419f14b1b349edc9e30dbb61f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa6e68bb932b4558349de04108c77b047" id="r_aa6e68bb932b4558349de04108c77b047"><td class="memItemLeft" align="right" valign="top"><a id="aa6e68bb932b4558349de04108c77b047" name="aa6e68bb932b4558349de04108c77b047"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>UpdateMemoryStats</b> () const</td></tr>
+<tr class="memdesc:aa6e68bb932b4558349de04108c77b047"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates internal memory statistics for debugging or visualization. <br /></td></tr>
 <tr class="separator:aa6e68bb932b4558349de04108c77b047"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a57232a42c17893d1c881f6f70556c486" id="r_a57232a42c17893d1c881f6f70556c486"><td class="memItemLeft" align="right" valign="top"><a id="a57232a42c17893d1c881f6f70556c486" name="a57232a42c17893d1c881f6f70556c486"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>GALDeviceEventHandler</b> (const <a class="el" href="../../df/d20/structxii_g_a_l_device_event.html">xiiGALDeviceEvent</a> &amp;e)</td></tr>
+<tr class="memdesc:a57232a42c17893d1c881f6f70556c486"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles events triggered by the underlying GAL device (e.g. EndFrame). <br /></td></tr>
 <tr class="separator:a57232a42c17893d1c881f6f70556c486"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
@@ -175,22 +197,27 @@ xiiEventSubscriptionID&#160;</td><td class="memItemRight" valign="bottom"><b>m_G
 <tr class="separator:afb2b3b346f7b9640724e112ca5effe28"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a21778fb457cd417fe5ce8767523dcd82" id="r_a21778fb457cd417fe5ce8767523dcd82"><td class="memItemLeft" align="right" valign="top"><a id="a21778fb457cd417fe5ce8767523dcd82" name="a21778fb457cd417fe5ce8767523dcd82"></a>
 xiiUInt64&#160;</td><td class="memItemRight" valign="bottom"><b>m_uiMemoryThresholdForGC</b> = 256 * 1024 * 1024</td></tr>
+<tr class="memdesc:a21778fb457cd417fe5ce8767523dcd82"><td class="mdescLeft">&#160;</td><td class="mdescRight">Memory limit (in bytes) that triggers resource garbage collection. <br /></td></tr>
 <tr class="separator:a21778fb457cd417fe5ce8767523dcd82"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1b6eef7a245ed50bfaa17bf09431d555" id="r_a1b6eef7a245ed50bfaa17bf09431d555"><td class="memItemLeft" align="right" valign="top"><a id="a1b6eef7a245ed50bfaa17bf09431d555" name="a1b6eef7a245ed50bfaa17bf09431d555"></a>
 xiiUInt64&#160;</td><td class="memItemRight" valign="bottom"><b>m_uiCurrentlyAllocatedMemory</b> = 0</td></tr>
+<tr class="memdesc:a1b6eef7a245ed50bfaa17bf09431d555"><td class="mdescLeft">&#160;</td><td class="mdescRight">Total memory currently allocated through this pool. <br /></td></tr>
 <tr class="separator:a1b6eef7a245ed50bfaa17bf09431d555"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaa3086e91c7cd10673018974f35cda15" id="r_aaa3086e91c7cd10673018974f35cda15"><td class="memItemLeft" align="right" valign="top"><a id="aaa3086e91c7cd10673018974f35cda15" name="aaa3086e91c7cd10673018974f35cda15"></a>
 xiiUInt16&#160;</td><td class="memItemRight" valign="bottom"><b>m_uiNumAllocationsThresholdForGC</b> = 128</td></tr>
+<tr class="memdesc:aaa3086e91c7cd10673018974f35cda15"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocation count threshold that triggers garbage collection. <br /></td></tr>
 <tr class="separator:aaa3086e91c7cd10673018974f35cda15"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4bbd7e6635c644172a19f0440c2f1191" id="r_a4bbd7e6635c644172a19f0440c2f1191"><td class="memItemLeft" align="right" valign="top"><a id="a4bbd7e6635c644172a19f0440c2f1191" name="a4bbd7e6635c644172a19f0440c2f1191"></a>
 xiiUInt16&#160;</td><td class="memItemRight" valign="bottom"><b>m_uiNumAllocationsSinceLastGC</b> = 0</td></tr>
+<tr class="memdesc:a4bbd7e6635c644172a19f0440c2f1191"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tracks how many allocations have occurred since the last GC. <br /></td></tr>
 <tr class="separator:a4bbd7e6635c644172a19f0440c2f1191"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a14c62d0711fab0f85e8d024a9b932034" id="r_a14c62d0711fab0f85e8d024a9b932034"><td class="memItemLeft" align="right" valign="top"><a id="a14c62d0711fab0f85e8d024a9b932034" name="a14c62d0711fab0f85e8d024a9b932034"></a>
 xiiUInt16&#160;</td><td class="memItemRight" valign="bottom"><b>m_uiFramesThresholdSinceLastGC</b> = 60</td></tr>
-<tr class="memdesc:a14c62d0711fab0f85e8d024a9b932034"><td class="mdescLeft">&#160;</td><td class="mdescRight">Every 60 frames resources unused for more than 10 frames in a row are GCed. <br /></td></tr>
+<tr class="memdesc:a14c62d0711fab0f85e8d024a9b932034"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of frames to wait before rechecking unused resources for GC. <br /></td></tr>
 <tr class="separator:a14c62d0711fab0f85e8d024a9b932034"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a79ae8c8ca83b98878a5e14a60cebe234" id="r_a79ae8c8ca83b98878a5e14a60cebe234"><td class="memItemLeft" align="right" valign="top"><a id="a79ae8c8ca83b98878a5e14a60cebe234" name="a79ae8c8ca83b98878a5e14a60cebe234"></a>
 xiiUInt16&#160;</td><td class="memItemRight" valign="bottom"><b>m_uiFramesSinceLastGC</b> = 0</td></tr>
+<tr class="memdesc:a79ae8c8ca83b98878a5e14a60cebe234"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of frames that have passed since the last GC. <br /></td></tr>
 <tr class="separator:a79ae8c8ca83b98878a5e14a60cebe234"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeb6bfe6d53cad9359ed8274b2d4e3e74" id="r_aeb6bfe6d53cad9359ed8274b2d4e3e74"><td class="memItemLeft" align="right" valign="top"><a id="aeb6bfe6d53cad9359ed8274b2d4e3e74" name="aeb6bfe6d53cad9359ed8274b2d4e3e74"></a>
 <a class="el" href="../../d6/df7/classxii_map.html">xiiMap</a>&lt; xiiUInt32, <a class="el" href="../../dc/da4/classxii_dynamic_array.html">xiiDynamicArray</a>&lt; <a class="el" href="../../d1/dc4/structxii_g_p_u_resource_pool_1_1_texture_handle_with_age.html">TextureHandleWithAge</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_AvailableTextures</b></td></tr>
@@ -204,6 +231,12 @@ xiiUInt16&#160;</td><td class="memItemRight" valign="bottom"><b>m_uiFramesSinceL
 <tr class="memitem:ab80b1b02e7c16e2d40d7723cdc95d1a1" id="r_ab80b1b02e7c16e2d40d7723cdc95d1a1"><td class="memItemLeft" align="right" valign="top"><a id="ab80b1b02e7c16e2d40d7723cdc95d1a1" name="ab80b1b02e7c16e2d40d7723cdc95d1a1"></a>
 <a class="el" href="../../d6/d31/classxii_set.html">xiiSet</a>&lt; <a class="el" href="../../d8/d9b/classxii_shared_ptr.html">xiiSharedPtr</a>&lt; <a class="el" href="../../da/d03/classxii_g_a_l_buffer.html">xiiGALBuffer</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_BuffersInUse</b></td></tr>
 <tr class="separator:ab80b1b02e7c16e2d40d7723cdc95d1a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a185dc6f6c53255d27d05013bcc291b60" id="r_a185dc6f6c53255d27d05013bcc291b60"><td class="memItemLeft" align="right" valign="top"><a id="a185dc6f6c53255d27d05013bcc291b60" name="a185dc6f6c53255d27d05013bcc291b60"></a>
+<a class="el" href="../../d6/df7/classxii_map.html">xiiMap</a>&lt; xiiUInt32, <a class="el" href="../../dc/da4/classxii_dynamic_array.html">xiiDynamicArray</a>&lt; <a class="el" href="../../de/d20/structxii_g_p_u_resource_pool_1_1_sampler_handle_with_age.html">SamplerHandleWithAge</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_AvailableSamplers</b></td></tr>
+<tr class="separator:a185dc6f6c53255d27d05013bcc291b60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b7f02d9f77d78276e413b5f76929e35" id="r_a4b7f02d9f77d78276e413b5f76929e35"><td class="memItemLeft" align="right" valign="top"><a id="a4b7f02d9f77d78276e413b5f76929e35" name="a4b7f02d9f77d78276e413b5f76929e35"></a>
+<a class="el" href="../../d6/d31/classxii_set.html">xiiSet</a>&lt; <a class="el" href="../../d8/d9b/classxii_shared_ptr.html">xiiSharedPtr</a>&lt; <a class="el" href="../../d3/d97/classxii_g_a_l_sampler.html">xiiGALSampler</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_SamplersInUse</b></td></tr>
+<tr class="separator:a4b7f02d9f77d78276e413b5f76929e35"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a60583d2afca0065df44de107236ed49a" id="r_a60583d2afca0065df44de107236ed49a"><td class="memItemLeft" align="right" valign="top"><a id="a60583d2afca0065df44de107236ed49a" name="a60583d2afca0065df44de107236ed49a"></a>
 <a class="el" href="../../dd/d52/classxii_mutex.html">xiiMutex</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_Lock</b></td></tr>
 <tr class="separator:a60583d2afca0065df44de107236ed49a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -212,16 +245,64 @@ xiiUInt16&#160;</td><td class="memItemRight" valign="bottom"><b>m_uiFramesSinceL
 <tr class="separator:ac4fa2ec97ac95db1e985131f936dd4fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>This class serves as a pool for GPU related resources (e.g. buffers and textures required for rendering). Note that the functions creating and returning render targets are thread safe (by using a mutex). </p>
+<div class="textblock"><p>Manages a pool of reusable GPU resources such as buffers, textures, and samplers. </p>
+<p>The GPU resource pool helps reduce allocation overhead and memory fragmentation by reusing previously created GPU resources based on matching creation parameters. It is thread-safe and supports garbage collection of unused resources based on usage age and memory thresholds.</p>
+<p>Resources can be retrieved using <a class="el" href="#abf003543f8d7f2f2c30344da06739e5c" title="Retrieves a buffer from the pool or allocates a new one if no suitable match exists.">GetBuffer()</a>, <a class="el" href="#a5b06726071fae2da9334c4172bb2a640" title="Retrieves a texture from the pool or creates a new one with the provided description.">GetTexture()</a>, <a class="el" href="#aa15dd3f85ea51aa92db0a3bfcd7da211" title="Retrieves a GPU sampler from the pool or allocates one if needed.">GetSampler()</a>, or <a class="el" href="#a649d7f9b2b537f0394632a090de7ebf6" title="Retrieves a render target texture with simplified input parameters.">GetRenderTarget()</a>, and must be returned to the pool using the corresponding Return*() methods. The pool will automatically release stale resources that have not been used for a defined number of frames, or when memory or allocation count thresholds are exceeded.</p>
+<p>A global default instance can be accessed and configured using <a class="el" href="#ac703a861fdc086c93589448fb7c5f01c" title="Returns the global default GPU resource pool instance, if any.">GetDefaultInstance()</a> and <a class="el" href="#ae5d34f6482e241cf994bf860f99639e6" title="Sets the global default GPU resource pool instance.">SetDefaultInstance()</a>.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d7/d69/structxii_g_a_l_buffer_creation_description.html" title="This describes the buffer creation description.">xiiGALBufferCreationDescription</a>, <a class="el" href="../../de/dd4/structxii_g_a_l_texture_creation_description.html" title="This describes the texture creation description.">xiiGALTextureCreationDescription</a>, <a class="el" href="../../d6/dbe/structxii_g_a_l_sampler_creation_description.html" title="This describes the sampler creation description.">xiiGALSamplerCreationDescription</a> </dd></dl>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="ad78b2b601ea7f5bf9a63a2ee434949f8" name="ad78b2b601ea7f5bf9a63a2ee434949f8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad78b2b601ea7f5bf9a63a2ee434949f8">&#9670;&#160;</a></span>RunGC()</h2>
+<a id="a649d7f9b2b537f0394632a090de7ebf6" name="a649d7f9b2b537f0394632a090de7ebf6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a649d7f9b2b537f0394632a090de7ebf6">&#9670;&#160;</a></span>GetRenderTarget()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void xiiGPUResourcePool::RunGC </td>
+          <td class="memname"><a class="el" href="../../d8/d9b/classxii_shared_ptr.html">xiiSharedPtr</a>&lt; <a class="el" href="../../d3/d9a/classxii_g_a_l_texture.html">xiiGALTexture</a> &gt; xiiGPUResourcePool::GetRenderTarget </td>
+          <td>(</td>
+          <td class="paramtype">xiiUInt32</td>          <td class="paramname"><span class="paramname"><em>uiWidth</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">xiiUInt32</td>          <td class="paramname"><span class="paramname"><em>uiHeight</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/dfd/structxii_enum.html">xiiEnum</a>&lt; <a class="el" href="../../de/d10/structxii_g_a_l_resource_format.html">xiiGALResourceFormat</a> &gt;</td>          <td class="paramname"><span class="paramname"><em>format</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/dfd/structxii_enum.html">xiiEnum</a>&lt; <a class="el" href="../../d3/d28/structxii_g_a_l_m_s_a_a_sample_count.html">xiiGALMSAASampleCount</a> &gt;</td>          <td class="paramname"><span class="paramname"><em>sampleCount</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">xiiUInt32</td>          <td class="paramname"><span class="paramname"><em>uiSliceColunt</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>bIsArray</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Retrieves a render target texture with simplified input parameters. </p>
+<p>Internally constructs a full texture creation description and either reuses or allocates a new texture. </p>
+
+</div>
+</div>
+<a id="ae0d66f94e30c714bdea9340593ed3f40" name="ae0d66f94e30c714bdea9340593ed3f40"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae0d66f94e30c714bdea9340593ed3f40">&#9670;&#160;</a></span>ReleaseStaleResources()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void xiiGPUResourcePool::ReleaseStaleResources </td>
           <td>(</td>
           <td class="paramtype">xiiUInt32</td>          <td class="paramname"><span class="paramname"><em>uiMinimumAge</em></span></td><td>)</td>
           <td></td>
@@ -229,10 +310,11 @@ xiiUInt16&#160;</td><td class="memItemRight" valign="bottom"><b>m_uiFramesSinceL
       </table>
 </div><div class="memdoc">
 
-<p>Tries to free resources which are currently in the pool. Triggered automatically due to allocation number / size thresholds but can be triggered manually (e.g. after editor window resize) </p>
+<p>Releases resources that have not been used for at least <em class="arg">uiMinimumAge</em> frames. </p>
+<p>This can be triggered automatically based on thresholds or manually, for example after editor window resizes or level transitions.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">uiMinimumAge</td><td>How many frames at least the resource needs to have been unused before it will be GCed. </td></tr>
+    <tr><td class="paramname">uiMinimumAge</td><td>How many frames at least the resource needs to have been unused before it will be stale. </td></tr>
   </table>
   </dd>
 </dl>
@@ -249,7 +331,7 @@ xiiUInt16&#160;</td><td class="memItemRight" valign="bottom"><b>m_uiFramesSinceL
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../da/d8d/classxii_g_p_u_resource_pool.html">xiiGPUResourcePool</a></li>
-    <li class="footer">Generated on Sat Jul 5 2025 19:48:06 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Sat Jul 12 2025 04:06:41 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 </body>

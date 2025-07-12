@@ -1,6 +1,9 @@
 var searchData=
 [
-  ['passthroughunknowncmdcb_0',['PassThroughUnknownCmdCB',['../db/d38/classxii_preprocessor.html#acb2a15381b13fc74d13e23f091f8548b',1,'xiiPreprocessor']]],
-  ['printfunc_1',['PrintFunc',['../de/df3/classxii_memory_tracker.html#a9e0c5201d0f08174d652f27f776326a8',1,'xiiMemoryTracker::PrintFunc'],['../dd/dbd/classxii_stack_tracer.html#ac9be1e0985532952abc0e2cdab65daaa',1,'xiiStackTracer::PrintFunc']]],
-  ['printfunction_2',['PrintFunction',['../d4/dc6/classxii_log.html#af838beaa42a4c659e59d66093741f46a',1,'xiiLog']]]
+  ['nonconstreferencepointertype_0',['NonConstReferencePointerType',['../dd/d53/structxii_type_traits.html#a35ea12912392837d91ed5e0a18795343',1,'xiiTypeTraits']]],
+  ['nonconstreferencetype_1',['NonConstReferenceType',['../dd/d53/structxii_type_traits.html#a235ccaef9604d6990ab760b4b1d4500b',1,'xiiTypeTraits']]],
+  ['nonconsttype_2',['NonConstType',['../dd/d53/structxii_type_traits.html#a2a09f646672608f6ea44944e8686ba13',1,'xiiTypeTraits']]],
+  ['nonpointertype_3',['NonPointerType',['../dd/d53/structxii_type_traits.html#a50d6dbecfc77df8e1f960acbc5b1ea83',1,'xiiTypeTraits']]],
+  ['nonreferencepointertype_4',['NonReferencePointerType',['../dd/d53/structxii_type_traits.html#aa739bf0c7eb83404ec30c3a0b9c99043',1,'xiiTypeTraits']]],
+  ['nonreferencetype_5',['NonReferenceType',['../dd/d53/structxii_type_traits.html#a2abe485244473e24cede8d76e5c1087e',1,'xiiTypeTraits']]]
 ];

@@ -105,7 +105,7 @@ $(function(){initNavTree('dd/d81/classxii_search_pattern_filter.html','../../');
 </div><!--header-->
 <div class="contents">
 
-<p>A small helper class to implement a simple search pattern filter that can contain multiple parts.  
+<p>A helper class to implement a multi-part, case-insensitive search pattern filter with support for exclusions.  
  <a href="#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="../../d0/df0/_search_pattern_filter_8h_source.html">SearchPatternFilter.h</a>&gt;</code></p>
@@ -118,12 +118,15 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>SetSearchText</b> (<a
 <tr class="separator:a3e603339114fb2d7e5b0e4c4e9ae5d5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7c325b9e765aa9fa1cdd12737abdb5a4" id="r_a7c325b9e765aa9fa1cdd12737abdb5a4"><td class="memItemLeft" align="right" valign="top"><a id="a7c325b9e765aa9fa1cdd12737abdb5a4" name="a7c325b9e765aa9fa1cdd12737abdb5a4"></a>
 const <a class="el" href="../../df/dfb/structxii_hybrid_string.html">xiiString</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetSearchText</b> () const</td></tr>
+<tr class="memdesc:a7c325b9e765aa9fa1cdd12737abdb5a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current search text. <br /></td></tr>
 <tr class="separator:a7c325b9e765aa9fa1cdd12737abdb5a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af955d6cfc40a8c4b310c08e37735387e" id="r_af955d6cfc40a8c4b310c08e37735387e"><td class="memItemLeft" align="right" valign="top"><a id="af955d6cfc40a8c4b310c08e37735387e" name="af955d6cfc40a8c4b310c08e37735387e"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsEmpty</b> () const</td></tr>
+<tr class="memdesc:af955d6cfc40a8c4b310c08e37735387e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the search text is empty. <br /></td></tr>
 <tr class="separator:af955d6cfc40a8c4b310c08e37735387e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:affe5a6a425238f8d049eb79d6376ae32" id="r_affe5a6a425238f8d049eb79d6376ae32"><td class="memItemLeft" align="right" valign="top"><a id="affe5a6a425238f8d049eb79d6376ae32" name="affe5a6a425238f8d049eb79d6376ae32"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>ContainsExclusions</b> () const</td></tr>
+<tr class="memdesc:affe5a6a425238f8d049eb79d6376ae32"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the filter contains any exclusion patterns. <br /></td></tr>
 <tr class="separator:affe5a6a425238f8d049eb79d6376ae32"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a42cbbd65393983cda48b8cf5c95b7dd0" id="r_a42cbbd65393983cda48b8cf5c95b7dd0"><td class="memItemLeft" align="right" valign="top"><a id="a42cbbd65393983cda48b8cf5c95b7dd0" name="a42cbbd65393983cda48b8cf5c95b7dd0"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>PassesFilters</b> (<a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sText) const</td></tr>
@@ -131,7 +134,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>PassesFilters</b> (<a
 <tr class="separator:a42cbbd65393983cda48b8cf5c95b7dd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A small helper class to implement a simple search pattern filter that can contain multiple parts. </p>
+<div class="textblock"><p>A helper class to implement a multi-part, case-insensitive search pattern filter with support for exclusions. </p>
 <p>The search text is split into multiple parts by spaces. A text passes the filter if it contains all parts. The check is always case insensitive and the order of the parts does not matter. It is also possible to exclude parts by prefixing them with a minus. E.g. "com mesh" would pass all texts that contain "com" and "mesh" like <a class="el" href="../../d6/d5e/classxii_mesh_component.html" title="Renders a single instance of a static mesh.">xiiMeshComponent</a>. "com -mesh" would pass <a class="el" href="../../dd/de7/classxii_light_component.html" title="Base class for all xii light components containing shared properties.">xiiLightComponent</a> but would fail <a class="el" href="../../d6/d5e/classxii_mesh_component.html" title="Renders a single instance of a static mesh.">xiiMeshComponent</a>. </p>
 </div><hr/>The documentation for this class was generated from the following files:<ul>
 <li>/home/runner/work/XII/XII/Source/Tools/Libs/ToolsFoundation/Utilities/<a class="el" href="../../d0/df0/_search_pattern_filter_8h_source.html">SearchPatternFilter.h</a></li>
@@ -143,7 +146,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>PassesFilters</b> (<a
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dd/d81/classxii_search_pattern_filter.html">xiiSearchPatternFilter</a></li>
-    <li class="footer">Generated on Sat Jul 5 2025 19:48:08 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Sat Jul 12 2025 04:06:43 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 </body>

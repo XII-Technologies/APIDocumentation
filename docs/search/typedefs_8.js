@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['visitorfunc_0',['VisitorFunc',['../d6/d89/classxii_world.html#a2a28037bf6e0847c42b7941e4861ea4b',1,'xiiWorld']]]
+  ['updatefunction_0',['UpdateFunction',['../d9/dfe/classxii_world_module.html#a37328ef7216b181772ed63453973897c',1,'xiiWorldModule']]]
 ];

@@ -1,6 +1,5 @@
 var classxii_render_pipeline_node =
 [
-    [ "~xiiRenderPipelineNode", "d9/d98/classxii_render_pipeline_node.html#a08cd1e21f88f872e7b298925b5689f97", null ],
     [ "GetInputPins", "d9/d98/classxii_render_pipeline_node.html#a3fd27b660400c210c5871103c80d483c", null ],
     [ "GetOutputPins", "d9/d98/classxii_render_pipeline_node.html#a866ac94f5febb40a5b5a1c9b899cc1cf", null ],
     [ "GetPinByName", "d9/d98/classxii_render_pipeline_node.html#ad9c5b544dcdc3fb8b20c5868a4108403", null ],

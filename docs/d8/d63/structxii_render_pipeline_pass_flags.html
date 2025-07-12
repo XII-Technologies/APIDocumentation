@@ -106,7 +106,7 @@ $(function(){initNavTree('d8/d63/structxii_render_pipeline_pass_flags.html','../
 </div><!--header-->
 <div class="contents">
 
-<p>This describes the render-pipeline pass behavior and optimizations to inform the render-pipeline compiler about per-pass requirements, capabilities, and tuning hints.  
+<p>Declares runtime-configurable behavior and tuning hints for a render-pipeline pass.  
  <a href="#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="../../da/d0b/_render_pipeline_pass_8h_source.html">RenderPipelinePass.h</a>&gt;</code></p>
@@ -120,13 +120,11 @@ Classes</h2></td></tr>
 Public Types</h2></td></tr>
 <tr class="memitem:aa7d8b044fa8e4a844bc09098892050e0" id="r_aa7d8b044fa8e4a844bc09098892050e0"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa7d8b044fa8e4a844bc09098892050e0">Enum</a> : StorageType { <br />
 &#160;&#160;<a class="el" href="#aa7d8b044fa8e4a844bc09098892050e0a49e176f11e61ddcc555a2f86c46d7c9a">None</a> = 0U
-, <a class="el" href="#aa7d8b044fa8e4a844bc09098892050e0a2732fb24bbee9df5cb4f9974dddda985">StereoAware</a> = XII_BIT(0)
-, <a class="el" href="#aa7d8b044fa8e4a844bc09098892050e0a8afdcfa81f84af5ba3e266d8c56eb4e9">AllowSubpassFuse</a> = XII_BIT(1)
-, <a class="el" href="#aa7d8b044fa8e4a844bc09098892050e0a7dca1805cd3c1006225bf26b6ab799e2">AsyncCompute</a> = XII_BIT(2)
+, <a class="el" href="#aa7d8b044fa8e4a844bc09098892050e0a7dca1805cd3c1006225bf26b6ab799e2">AsyncCompute</a> = XII_BIT(0)
+, <a class="el" href="#aa7d8b044fa8e4a844bc09098892050e0a7c3f6329aa86e4464ae72ddc7426fae5">AsyncTransfer</a> = XII_BIT(1)
+, <a class="el" href="#aa7d8b044fa8e4a844bc09098892050e0abebb1094202bbf5bf5817488057bd371">DynamicResolution</a> = XII_BIT(2)
 , <br />
-&#160;&#160;<a class="el" href="#aa7d8b044fa8e4a844bc09098892050e0a7c3f6329aa86e4464ae72ddc7426fae5">AsyncTransfer</a> = XII_BIT(3)
-, <a class="el" href="#aa7d8b044fa8e4a844bc09098892050e0abebb1094202bbf5bf5817488057bd371">DynamicResolution</a> = XII_BIT(4)
-, <a class="el" href="#aa7d8b044fa8e4a844bc09098892050e0a864a0495ba38e67e0381b6813965f811">DebugPass</a> = XII_BIT(5)
+&#160;&#160;<a class="el" href="#aa7d8b044fa8e4a844bc09098892050e0a864a0495ba38e67e0381b6813965f811">DebugPass</a> = XII_BIT(3)
 , <b>Default</b> = None
 <br />
  }</td></tr>
@@ -136,7 +134,9 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>StorageType</b> = xi
 <tr class="separator:a618a81dd307f085c34a8f69ec7714023"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>This describes the render-pipeline pass behavior and optimizations to inform the render-pipeline compiler about per-pass requirements, capabilities, and tuning hints. </p>
+<div class="textblock"><p>Declares runtime-configurable behavior and tuning hints for a render-pipeline pass. </p>
+<p>These flags inform the render-graph compiler or scheduler about how a pass should be dispatched and whether it should support dynamic features or be excluded from release builds.</p>
+<p>Unlike <a class="el" href="../../d9/d4d/structxii_render_pipeline_pass_capability_flags.html" title="Declares the fixed capabilities of a render-pipeline pass.">xiiRenderPipelinePassCapabilityFlags</a>, these flags can be toggled per pass instance. </p>
 </div><h2 class="groupheader">Member Enumeration Documentation</h2>
 <a id="aa7d8b044fa8e4a844bc09098892050e0" name="aa7d8b044fa8e4a844bc09098892050e0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa7d8b044fa8e4a844bc09098892050e0">&#9670;&#160;</a></span>Enum</h2>
@@ -150,19 +150,15 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>StorageType</b> = xi
       </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="aa7d8b044fa8e4a844bc09098892050e0a49e176f11e61ddcc555a2f86c46d7c9a" name="aa7d8b044fa8e4a844bc09098892050e0a49e176f11e61ddcc555a2f86c46d7c9a"></a>None&#160;</td><td class="fielddoc"><p>No special behavior; execute at full resolution on the graphics queue, do not fuse with neighbors. </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="aa7d8b044fa8e4a844bc09098892050e0a49e176f11e61ddcc555a2f86c46d7c9a" name="aa7d8b044fa8e4a844bc09098892050e0a49e176f11e61ddcc555a2f86c46d7c9a"></a>None&#160;</td><td class="fielddoc"><p>No behavioral overrides; pass runs on graphics queue without fusion or dynamic scaling. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="aa7d8b044fa8e4a844bc09098892050e0a2732fb24bbee9df5cb4f9974dddda985" name="aa7d8b044fa8e4a844bc09098892050e0a2732fb24bbee9df5cb4f9974dddda985"></a>StereoAware&#160;</td><td class="fielddoc"><p>Pass correctly handles stereo/XR rendering, invoked per eye. </p>
+<tr><td class="fieldname"><a id="aa7d8b044fa8e4a844bc09098892050e0a7dca1805cd3c1006225bf26b6ab799e2" name="aa7d8b044fa8e4a844bc09098892050e0a7dca1805cd3c1006225bf26b6ab799e2"></a>AsyncCompute&#160;</td><td class="fielddoc"><p>Run this pass on a compute queue asynchronously from graphics work. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="aa7d8b044fa8e4a844bc09098892050e0a8afdcfa81f84af5ba3e266d8c56eb4e9" name="aa7d8b044fa8e4a844bc09098892050e0a8afdcfa81f84af5ba3e266d8c56eb4e9"></a>AllowSubpassFuse&#160;</td><td class="fielddoc"><p>Allows fusion with adjacent passes into a single GPU render-pass when attachments and load/store operations match. </p>
+<tr><td class="fieldname"><a id="aa7d8b044fa8e4a844bc09098892050e0a7c3f6329aa86e4464ae72ddc7426fae5" name="aa7d8b044fa8e4a844bc09098892050e0a7c3f6329aa86e4464ae72ddc7426fae5"></a>AsyncTransfer&#160;</td><td class="fielddoc"><p>Schedule this pass on a dedicated transfer queue for background data movement. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="aa7d8b044fa8e4a844bc09098892050e0a7dca1805cd3c1006225bf26b6ab799e2" name="aa7d8b044fa8e4a844bc09098892050e0a7dca1805cd3c1006225bf26b6ab799e2"></a>AsyncCompute&#160;</td><td class="fielddoc"><p>Dispatch this pass on an asynchronous compute queue in parallel with graphics workloads. </p>
+<tr><td class="fieldname"><a id="aa7d8b044fa8e4a844bc09098892050e0abebb1094202bbf5bf5817488057bd371" name="aa7d8b044fa8e4a844bc09098892050e0abebb1094202bbf5bf5817488057bd371"></a>DynamicResolution&#160;</td><td class="fielddoc"><p>Allow targets used in this pass to be dynamically resized at runtime (e.g. based on performance). </p>
 </td></tr>
-<tr><td class="fieldname"><a id="aa7d8b044fa8e4a844bc09098892050e0a7c3f6329aa86e4464ae72ddc7426fae5" name="aa7d8b044fa8e4a844bc09098892050e0a7c3f6329aa86e4464ae72ddc7426fae5"></a>AsyncTransfer&#160;</td><td class="fielddoc"><p>Dispatch this pass on an asynchronous transfer queue to overlap copies/blits with graphics/compute work. </p>
-</td></tr>
-<tr><td class="fieldname"><a id="aa7d8b044fa8e4a844bc09098892050e0abebb1094202bbf5bf5817488057bd371" name="aa7d8b044fa8e4a844bc09098892050e0abebb1094202bbf5bf5817488057bd371"></a>DynamicResolution&#160;</td><td class="fielddoc"><p>Enable dynamic resolution scaling to render into targets resized each frame by a runtime scale factor. </p>
-</td></tr>
-<tr><td class="fieldname"><a id="aa7d8b044fa8e4a844bc09098892050e0a864a0495ba38e67e0381b6813965f811" name="aa7d8b044fa8e4a844bc09098892050e0a864a0495ba38e67e0381b6813965f811"></a>DebugPass&#160;</td><td class="fielddoc"><p>Mark this pass as debug-only; omit it in shipping or release builds. </p>
+<tr><td class="fieldname"><a id="aa7d8b044fa8e4a844bc09098892050e0a864a0495ba38e67e0381b6813965f811" name="aa7d8b044fa8e4a844bc09098892050e0a864a0495ba38e67e0381b6813965f811"></a>DebugPass&#160;</td><td class="fielddoc"><p>This pass is for debugging or visualization; skip it in shipping builds. </p>
 </td></tr>
 </table>
 
@@ -177,7 +173,7 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>StorageType</b> = xi
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d8/d63/structxii_render_pipeline_pass_flags.html">xiiRenderPipelinePassFlags</a></li>
-    <li class="footer">Generated on Sat Jul 5 2025 19:48:08 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Sat Jul 12 2025 04:06:42 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 </body>

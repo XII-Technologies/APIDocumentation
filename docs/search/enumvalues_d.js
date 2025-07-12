@@ -47,5 +47,6 @@ var searchData=
   ['mirroronce_44',['MirrorOnce',['../dd/dcf/structxii_g_a_l_texture_address_mode.html#abcf94f93eb06b8bebcee7b6474cc148faf0009eb764b5471b87f9f3b86d53dea5',1,'xiiGALTextureAddressMode']]],
   ['mixedresourcetypesupport_45',['MixedResourceTypeSupport',['../dd/de6/structxii_g_a_l_sparse_resource_capability_flags.html#afc7e83e9dd1f9d15babb136af5e90689aeeb23e8844c12db6578bc9d2afb280f7',1,'xiiGALSparseResourceCapabilityFlags']]],
   ['modulate_46',['Modulate',['../dc/d8d/structxii_set_color_mode.html#a5ae6dbcbc9375444a865aece17db9a52a7430810451eebe993196993b11406dc3',1,'xiiSetColorMode']]],
-  ['mouseposition_47',['MousePosition',['../df/de8/structxii_virtual_thumb_stick_1_1_input.html#a7189056b914d17469adedc28b2eb82eca37cce666f643d4f7d62c25badb2193df',1,'xiiVirtualThumbStick::Input']]]
+  ['mouseposition_47',['MousePosition',['../df/de8/structxii_virtual_thumb_stick_1_1_input.html#a7189056b914d17469adedc28b2eb82eca37cce666f643d4f7d62c25badb2193df',1,'xiiVirtualThumbStick::Input']]],
+  ['mutable_48',['Mutable',['../d9/d9e/structxii_g_a_l_resource_usage.html#aa3f7d7b5b5d7b94f2e8f6b55eb5fa7dcad9a1a07ab6776ba83dcbadf8c5cee7db',1,'xiiGALResourceUsage']]]
 ];

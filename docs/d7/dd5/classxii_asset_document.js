@@ -11,6 +11,7 @@ var classxii_asset_document =
     [ "AddReferences", "d7/dd5/classxii_asset_document.html#a99aa783e2bc5c449167384928d184e83", null ],
     [ "AddSyncObject", "d7/dd5/classxii_asset_document.html#ab59ed3e6a6c538a3aa0bdce8b3c64e64", null ],
     [ "AppendThumbnailInfo", "d7/dd5/classxii_asset_document.html#a816e9cdc1ba4011035fe9560b0dd1a41", null ],
+    [ "CreateDocumentInfo", "d7/dd5/classxii_asset_document.html#a7be35884f7ac32c8039ca508363f2e5c", null ],
     [ "CreateThumbnail", "d7/dd5/classxii_asset_document.html#a3141f2138d13a560537fb9de64131c18", null ],
     [ "FindSyncObject", "d7/dd5/classxii_asset_document.html#a278857d6a083408caaa14669c0098384", null ],
     [ "FindSyncObject", "d7/dd5/classxii_asset_document.html#ac93cd00111a2a00d4f0562ab06b3a57e", null ],

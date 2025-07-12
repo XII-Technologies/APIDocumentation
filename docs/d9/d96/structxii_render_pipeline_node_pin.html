@@ -105,6 +105,11 @@ $(function(){initNavTree('d9/d96/structxii_render_pipeline_node_pin.html','../..
   <div class="headertitle"><div class="title">xiiRenderPipelineNodePin Struct Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Base class for all pins used in the render pipeline graph.  
+ <a href="#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="../../d0/d5b/_render_pipeline_node_8h_source.html">RenderPipelineNode.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for xiiRenderPipelineNodePin:</div>
 <div class="dyncontent">
@@ -116,25 +121,96 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:adfc7a63c8f6daa0090c0cf2a37ce114c" id="r_adfc7a63c8f6daa0090c0cf2a37ce114c"><td class="memItemLeft" align="right" valign="top"><a id="adfc7a63c8f6daa0090c0cf2a37ce114c" name="adfc7a63c8f6daa0090c0cf2a37ce114c"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>XII_DECLARE_POD_TYPE</b> ()</td></tr>
 <tr class="separator:adfc7a63c8f6daa0090c0cf2a37ce114c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af68375b9a26d14b7b2764a486919ce06" id="r_af68375b9a26d14b7b2764a486919ce06"><td class="memItemLeft" align="right" valign="top">XII_ALWAYS_INLINE <a class="el" href="../../d7/d55/structxii_bitflags.html">xiiBitflags</a>&lt; <a class="el" href="../../dd/d03/structxii_render_pipeline_node_pin_flags.html">xiiRenderPipelineNodePinFlags</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af68375b9a26d14b7b2764a486919ce06">GetFlags</a> () const</td></tr>
+<tr class="memdesc:af68375b9a26d14b7b2764a486919ce06"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the directional and behavioral flags for this pin (Input, Output, PassThrough, etc.).  <br /></td></tr>
+<tr class="separator:af68375b9a26d14b7b2764a486919ce06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae57caa3feab58588156f4ece1a21cb81" id="r_ae57caa3feab58588156f4ece1a21cb81"><td class="memItemLeft" align="right" valign="top">XII_ALWAYS_INLINE <a class="el" href="../../de/dfd/structxii_enum.html">xiiEnum</a>&lt; <a class="el" href="../../d5/d57/structxii_render_pipeline_node_pin_resource_type.html">xiiRenderPipelineNodePinResourceType</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae57caa3feab58588156f4ece1a21cb81">GetResourceType</a> () const</td></tr>
+<tr class="memdesc:ae57caa3feab58588156f4ece1a21cb81"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the semantic resource type associated with this pin.  <br /></td></tr>
+<tr class="separator:ae57caa3feab58588156f4ece1a21cb81"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a43831bf0befc65b6e1f7f0c69dacb589" id="r_a43831bf0befc65b6e1f7f0c69dacb589"><td class="memItemLeft" align="right" valign="top"><a id="a43831bf0befc65b6e1f7f0c69dacb589" name="a43831bf0befc65b6e1f7f0c69dacb589"></a>
 <a class="el" href="../../d7/d55/structxii_bitflags.html">xiiBitflags</a>&lt; <a class="el" href="../../dd/d03/structxii_render_pipeline_node_pin_flags.html">xiiRenderPipelineNodePinFlags</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_Flags</b></td></tr>
+<tr class="memdesc:a43831bf0befc65b6e1f7f0c69dacb589"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flags describing the pin's directionality and behavior (input, output, passthrough, etc.). <br /></td></tr>
 <tr class="separator:a43831bf0befc65b6e1f7f0c69dacb589"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a11f348fda3fceb2bf75b994ebb3b68a3" id="r_a11f348fda3fceb2bf75b994ebb3b68a3"><td class="memItemLeft" align="right" valign="top"><a id="a11f348fda3fceb2bf75b994ebb3b68a3" name="a11f348fda3fceb2bf75b994ebb3b68a3"></a>
 <a class="el" href="../../de/dfd/structxii_enum.html">xiiEnum</a>&lt; <a class="el" href="../../d5/d57/structxii_render_pipeline_node_pin_resource_type.html">xiiRenderPipelineNodePinResourceType</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_ResourceType</b></td></tr>
+<tr class="memdesc:a11f348fda3fceb2bf75b994ebb3b68a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">The semantic type of resource this pin reads or writes (buffer, attachment, etc.). <br /></td></tr>
 <tr class="separator:a11f348fda3fceb2bf75b994ebb3b68a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a881648757880618f28cdeb34386e93c3" id="r_a881648757880618f28cdeb34386e93c3"><td class="memItemLeft" align="right" valign="top"><a id="a881648757880618f28cdeb34386e93c3" name="a881648757880618f28cdeb34386e93c3"></a>
 xiiUInt8&#160;</td><td class="memItemRight" valign="bottom"><b>m_uiInputIndex</b> = 0xFFU</td></tr>
+<tr class="memdesc:a881648757880618f28cdeb34386e93c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Index into the owning node's input pin list (set during initialization). <br /></td></tr>
 <tr class="separator:a881648757880618f28cdeb34386e93c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4871b96bbd6a08264c26574a1e4500bb" id="r_a4871b96bbd6a08264c26574a1e4500bb"><td class="memItemLeft" align="right" valign="top"><a id="a4871b96bbd6a08264c26574a1e4500bb" name="a4871b96bbd6a08264c26574a1e4500bb"></a>
 xiiUInt8&#160;</td><td class="memItemRight" valign="bottom"><b>m_uiOutputIndex</b> = 0xFFU</td></tr>
+<tr class="memdesc:a4871b96bbd6a08264c26574a1e4500bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Index into the owning node's output pin list (set during initialization) <br /></td></tr>
 <tr class="separator:a4871b96bbd6a08264c26574a1e4500bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9b8d9f2b2444ccdcda071f3ba4010f33" id="r_a9b8d9f2b2444ccdcda071f3ba4010f33"><td class="memItemLeft" align="right" valign="top"><a id="a9b8d9f2b2444ccdcda071f3ba4010f33" name="a9b8d9f2b2444ccdcda071f3ba4010f33"></a>
 <a class="el" href="../../d9/d98/classxii_render_pipeline_node.html">xiiRenderPipelineNode</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_pParent</b> = nullptr</td></tr>
+<tr class="memdesc:a9b8d9f2b2444ccdcda071f3ba4010f33"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer back to the owning node that this pin belongs to. <br /></td></tr>
 <tr class="separator:a9b8d9f2b2444ccdcda071f3ba4010f33"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Base class for all pins used in the render pipeline graph. </p>
+<p>Contains shared metadata and flags describing pin direction (input/output), resource type (buffer, attachment, etc.), and the owning node's relationship. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="af68375b9a26d14b7b2764a486919ce06" name="af68375b9a26d14b7b2764a486919ce06"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af68375b9a26d14b7b2764a486919ce06">&#9670;&#160;</a></span>GetFlags()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">XII_ALWAYS_INLINE <a class="el" href="../../d7/d55/structxii_bitflags.html">xiiBitflags</a>&lt; <a class="el" href="../../dd/d03/structxii_render_pipeline_node_pin_flags.html">xiiRenderPipelineNodePinFlags</a> &gt; xiiRenderPipelineNodePin::GetFlags </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the directional and behavioral flags for this pin (Input, Output, PassThrough, etc.). </p>
+<p>These flags determine how the pin is treated during graph compilation and validation. </p>
+
+</div>
+</div>
+<a id="ae57caa3feab58588156f4ece1a21cb81" name="ae57caa3feab58588156f4ece1a21cb81"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae57caa3feab58588156f4ece1a21cb81">&#9670;&#160;</a></span>GetResourceType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">XII_ALWAYS_INLINE <a class="el" href="../../de/dfd/structxii_enum.html">xiiEnum</a>&lt; <a class="el" href="../../d5/d57/structxii_render_pipeline_node_pin_resource_type.html">xiiRenderPipelineNodePinResourceType</a> &gt; xiiRenderPipelineNodePin::GetResourceType </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the semantic resource type associated with this pin. </p>
+<p>This controls compatibility with other pins, layout transitions, and backend allocation strategy. </p>
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li>/home/runner/work/XII/XII/Source/Engine/GraphicsCore/Pipeline/<a class="el" href="../../d0/d5b/_render_pipeline_node_8h_source.html">RenderPipelineNode.h</a></li>
 </ul>
@@ -144,7 +220,7 @@ xiiUInt8&#160;</td><td class="memItemRight" valign="bottom"><b>m_uiOutputIndex</
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d9/d96/structxii_render_pipeline_node_pin.html">xiiRenderPipelineNodePin</a></li>
-    <li class="footer">Generated on Sat Jul 5 2025 19:48:08 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Sat Jul 12 2025 04:06:42 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 </body>

@@ -6,5 +6,5 @@ var structxii_world_module_1_1_update_function_desc =
     [ "m_Function", "d6/dc3/structxii_world_module_1_1_update_function_desc.html#ab96e81c0f93f01cee78eb34e5a1259df", null ],
     [ "m_Phase", "d6/dc3/structxii_world_module_1_1_update_function_desc.html#a18036119cc5326e168f92947725d9ae7", null ],
     [ "m_sFunctionName", "d6/dc3/structxii_world_module_1_1_update_function_desc.html#aed3df5e61c65d6d022631d855a772874", null ],
-    [ "m_uiGranularity", "d6/dc3/structxii_world_module_1_1_update_function_desc.html#af2129e259499ad822acc98984e47a24b", null ]
+    [ "m_uiAsyncPhaseBatchSize", "d6/dc3/structxii_world_module_1_1_update_function_desc.html#a9940508fa5cda48e49eb5f438b8f69bd", null ]
 ];

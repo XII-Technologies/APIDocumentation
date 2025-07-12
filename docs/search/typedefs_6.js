@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['sortingkeyfunc_0',['SortingKeyFunc',['../d8/da5/classxii_render_data.html#aa7b3828acb943e031f920eaa428bf00e',1,'xiiRenderData']]],
-  ['superarray_1',['SuperArray',['../d8/d61/classxii_default_state_provider.html#a1d4fcc3ed23a3acda29b60c94cb07a31',1,'xiiDefaultStateProvider']]]
+  ['passthroughunknowncmdcb_0',['PassThroughUnknownCmdCB',['../db/d38/classxii_preprocessor.html#acb2a15381b13fc74d13e23f091f8548b',1,'xiiPreprocessor']]],
+  ['printfunc_1',['PrintFunc',['../de/df3/classxii_memory_tracker.html#a9e0c5201d0f08174d652f27f776326a8',1,'xiiMemoryTracker::PrintFunc'],['../dd/dbd/classxii_stack_tracer.html#ac9be1e0985532952abc0e2cdab65daaa',1,'xiiStackTracer::PrintFunc']]],
+  ['printfunction_2',['PrintFunction',['../d4/dc6/classxii_log.html#af838beaa42a4c659e59d66093741f46a',1,'xiiLog']]]
 ];

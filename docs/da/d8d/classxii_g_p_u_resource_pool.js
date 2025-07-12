@@ -1,12 +1,25 @@
 var classxii_g_p_u_resource_pool =
 [
     [ "BufferHandleWithAge", "d5/da1/structxii_g_p_u_resource_pool_1_1_buffer_handle_with_age.html", null ],
+    [ "SamplerHandleWithAge", "de/d20/structxii_g_p_u_resource_pool_1_1_sampler_handle_with_age.html", null ],
     [ "TextureHandleWithAge", "d1/dc4/structxii_g_p_u_resource_pool_1_1_texture_handle_with_age.html", null ],
-    [ "GetBuffer", "da/d8d/classxii_g_p_u_resource_pool.html#a6df10f69c33c3d44e529df5454567beb", null ],
-    [ "GetRenderTarget", "da/d8d/classxii_g_p_u_resource_pool.html#aaef92430c7081845d959f1485dcf8d6f", null ],
-    [ "GetRenderTarget", "da/d8d/classxii_g_p_u_resource_pool.html#a6ad6ddeb97d091a40aa24a4ec29a8f37", null ],
-    [ "ReturnBuffer", "da/d8d/classxii_g_p_u_resource_pool.html#a61fe22f6180f47311d3f87ecf694e1e0", null ],
-    [ "ReturnRenderTarget", "da/d8d/classxii_g_p_u_resource_pool.html#a9da82d5a167d22708c2f15d70dc845a7", null ],
-    [ "RunGC", "da/d8d/classxii_g_p_u_resource_pool.html#ad78b2b601ea7f5bf9a63a2ee434949f8", null ],
-    [ "m_uiFramesThresholdSinceLastGC", "da/d8d/classxii_g_p_u_resource_pool.html#a14c62d0711fab0f85e8d024a9b932034", null ]
+    [ "xiiGPUResourcePool", "da/d8d/classxii_g_p_u_resource_pool.html#adead9b5fae985a9f645da7cd2e7d3e1c", null ],
+    [ "~xiiGPUResourcePool", "da/d8d/classxii_g_p_u_resource_pool.html#a5c2dc06d1ffeec55a2468736bce51c1f", null ],
+    [ "CheckAndPotentiallyReleaseStaleResources", "da/d8d/classxii_g_p_u_resource_pool.html#ae2df601419f14b1b349edc9e30dbb61f", null ],
+    [ "GALDeviceEventHandler", "da/d8d/classxii_g_p_u_resource_pool.html#a57232a42c17893d1c881f6f70556c486", null ],
+    [ "GetBuffer", "da/d8d/classxii_g_p_u_resource_pool.html#abf003543f8d7f2f2c30344da06739e5c", null ],
+    [ "GetRenderTarget", "da/d8d/classxii_g_p_u_resource_pool.html#a649d7f9b2b537f0394632a090de7ebf6", null ],
+    [ "GetSampler", "da/d8d/classxii_g_p_u_resource_pool.html#aa15dd3f85ea51aa92db0a3bfcd7da211", null ],
+    [ "GetTexture", "da/d8d/classxii_g_p_u_resource_pool.html#a5b06726071fae2da9334c4172bb2a640", null ],
+    [ "ReleaseStaleResources", "da/d8d/classxii_g_p_u_resource_pool.html#ae0d66f94e30c714bdea9340593ed3f40", null ],
+    [ "ReturnBuffer", "da/d8d/classxii_g_p_u_resource_pool.html#abb8b0607c3b3f25fbc53894c696d6ab6", null ],
+    [ "ReturnSampler", "da/d8d/classxii_g_p_u_resource_pool.html#a446f4ca6eb82a17885167f0b67587a9d", null ],
+    [ "ReturnTexture", "da/d8d/classxii_g_p_u_resource_pool.html#a2ac28131b9650ad6598d2e9a9bbd5ceb", null ],
+    [ "UpdateMemoryStats", "da/d8d/classxii_g_p_u_resource_pool.html#aa6e68bb932b4558349de04108c77b047", null ],
+    [ "m_uiCurrentlyAllocatedMemory", "da/d8d/classxii_g_p_u_resource_pool.html#a1b6eef7a245ed50bfaa17bf09431d555", null ],
+    [ "m_uiFramesSinceLastGC", "da/d8d/classxii_g_p_u_resource_pool.html#a79ae8c8ca83b98878a5e14a60cebe234", null ],
+    [ "m_uiFramesThresholdSinceLastGC", "da/d8d/classxii_g_p_u_resource_pool.html#a14c62d0711fab0f85e8d024a9b932034", null ],
+    [ "m_uiMemoryThresholdForGC", "da/d8d/classxii_g_p_u_resource_pool.html#a21778fb457cd417fe5ce8767523dcd82", null ],
+    [ "m_uiNumAllocationsSinceLastGC", "da/d8d/classxii_g_p_u_resource_pool.html#a4bbd7e6635c644172a19f0440c2f1191", null ],
+    [ "m_uiNumAllocationsThresholdForGC", "da/d8d/classxii_g_p_u_resource_pool.html#aaa3086e91c7cd10673018974f35cda15", null ]
 ];

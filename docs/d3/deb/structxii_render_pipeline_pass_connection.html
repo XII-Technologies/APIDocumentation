@@ -105,30 +105,31 @@ $(function(){initNavTree('d3/deb/structxii_render_pipeline_pass_connection.html'
 </div><!--header-->
 <div class="contents">
 
-<p>Passed to <a class="el" href="../../d5/d44/classxii_render_pipeline_pass.html#af265133db86f9854baf0e9cf0b80c7cc" title="After GetRenderTargetDescriptions was called successfully for each pass, this function is called with...">xiiRenderPipelinePass::InitializeRenderPipelinePass</a> to inform about existing connections on each input / output pin index.  
+<p>Describes a resolved link between one output pin and one or more input pins in the render pipeline graph.  
  <a href="#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="../../da/d0b/_render_pipeline_pass_8h_source.html">RenderPipelinePass.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:ad5e8db670f04577af5f8fc3c0d8ee35f" id="r_ad5e8db670f04577af5f8fc3c0d8ee35f"><td class="memItemLeft" align="right" valign="top"><a id="ad5e8db670f04577af5f8fc3c0d8ee35f" name="ad5e8db670f04577af5f8fc3c0d8ee35f"></a>
-<a class="el" href="../../de/dd4/structxii_g_a_l_texture_creation_description.html">xiiGALTextureCreationDescription</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_TextureDescription</b></td></tr>
-<tr class="separator:ad5e8db670f04577af5f8fc3c0d8ee35f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8d7dba70b391a010e96b0e97b568e6dc" id="r_a8d7dba70b391a010e96b0e97b568e6dc"><td class="memItemLeft" align="right" valign="top"><a id="a8d7dba70b391a010e96b0e97b568e6dc" name="a8d7dba70b391a010e96b0e97b568e6dc"></a>
-<a class="el" href="../../d8/d9b/classxii_shared_ptr.html">xiiSharedPtr</a>&lt; <a class="el" href="../../d3/d9a/classxii_g_a_l_texture.html">xiiGALTexture</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_pTexture</b></td></tr>
-<tr class="separator:a8d7dba70b391a010e96b0e97b568e6dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a16fd5438b6bade57e95680b312eb8b17" id="r_a16fd5438b6bade57e95680b312eb8b17"><td class="memItemLeft" align="right" valign="top"><a id="a16fd5438b6bade57e95680b312eb8b17" name="a16fd5438b6bade57e95680b312eb8b17"></a>
-const <a class="el" href="../../d9/d96/structxii_render_pipeline_node_pin.html">xiiRenderPipelineNodePin</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_pOutput</b></td></tr>
-<tr class="memdesc:a16fd5438b6bade57e95680b312eb8b17"><td class="mdescLeft">&#160;</td><td class="mdescRight">The output pin that this connection spawns from. <br /></td></tr>
+const <a class="el" href="../../d9/d96/structxii_render_pipeline_node_pin.html">xiiRenderPipelineNodePin</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_pOutput</b> = nullptr</td></tr>
+<tr class="memdesc:a16fd5438b6bade57e95680b312eb8b17"><td class="mdescLeft">&#160;</td><td class="mdescRight">The originating output pin that produces the resource. <br /></td></tr>
 <tr class="separator:a16fd5438b6bade57e95680b312eb8b17"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8cb7d5e5faae3313c59b1324ec35b891" id="r_a8cb7d5e5faae3313c59b1324ec35b891"><td class="memItemLeft" align="right" valign="top"><a id="a8cb7d5e5faae3313c59b1324ec35b891" name="a8cb7d5e5faae3313c59b1324ec35b891"></a>
 <a class="el" href="../../dc/da9/classxii_hybrid_array.html">xiiHybridArray</a>&lt; const <a class="el" href="../../d9/d96/structxii_render_pipeline_node_pin.html">xiiRenderPipelineNodePin</a> *, 4 &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_Inputs</b></td></tr>
-<tr class="memdesc:a8cb7d5e5faae3313c59b1324ec35b891"><td class="mdescLeft">&#160;</td><td class="mdescRight">The various input pins this connection is connected to. <br /></td></tr>
+<tr class="memdesc:a8cb7d5e5faae3313c59b1324ec35b891"><td class="mdescLeft">&#160;</td><td class="mdescRight">All input pins across other passes that consume this resource. Each pin will receive the same shared resource instance declared in m_Resource. <br /></td></tr>
 <tr class="separator:a8cb7d5e5faae3313c59b1324ec35b891"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b1186f2c48e80f99fdc5901277f2756" id="r_a9b1186f2c48e80f99fdc5901277f2756"><td class="memItemLeft" align="right" valign="top"><a id="a9b1186f2c48e80f99fdc5901277f2756" name="a9b1186f2c48e80f99fdc5901277f2756"></a>
+<a class="el" href="../../d5/d51/structxii_render_pipeline_pass_resource.html">xiiRenderPipelinePassResource</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_Resource</b></td></tr>
+<tr class="memdesc:a9b1186f2c48e80f99fdc5901277f2756"><td class="mdescLeft">&#160;</td><td class="mdescRight">The resolved GPU resource produced by the output pin, including descriptor and handle. Only one active resource type is valid, as indicated by m_Resource.m_Type. <br /></td></tr>
+<tr class="separator:a9b1186f2c48e80f99fdc5901277f2756"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Passed to <a class="el" href="../../d5/d44/classxii_render_pipeline_pass.html#af265133db86f9854baf0e9cf0b80c7cc" title="After GetRenderTargetDescriptions was called successfully for each pass, this function is called with...">xiiRenderPipelinePass::InitializeRenderPipelinePass</a> to inform about existing connections on each input / output pin index. </p>
+<div class="textblock"><p>Describes a resolved link between one output pin and one or more input pins in the render pipeline graph. </p>
+<p>This structure is created by the graph compiler during pass initialization and represents a single directed edge in the dataflow graph, connecting a producing pass (via its output pin) to one or more consuming passes (via their input pins).</p>
+<p>It also holds the fully resolved resource (texture, buffer, etc.) and its creation metadata.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d5/d51/structxii_render_pipeline_pass_resource.html" title="Represents a strongly typed resource instance produced by a render pipeline pass, including its creat...">xiiRenderPipelinePassResource</a> </dd></dl>
 </div><hr/>The documentation for this struct was generated from the following file:<ul>
 <li>/home/runner/work/XII/XII/Source/Engine/GraphicsCore/Pipeline/<a class="el" href="../../da/d0b/_render_pipeline_pass_8h_source.html">RenderPipelinePass.h</a></li>
 </ul>
@@ -138,7 +139,7 @@ const <a class="el" href="../../d9/d96/structxii_render_pipeline_node_pin.html">
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d3/deb/structxii_render_pipeline_pass_connection.html">xiiRenderPipelinePassConnection</a></li>
-    <li class="footer">Generated on Sat Jul 5 2025 19:48:08 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Sat Jul 12 2025 04:06:42 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 </body>

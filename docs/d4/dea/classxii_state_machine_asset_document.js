@@ -4,5 +4,6 @@ var classxii_state_machine_asset_document =
     [ "GetSupportedMimeTypesForPasting", "d4/dea/classxii_state_machine_asset_document.html#a8f91bc0638a5cadb499c200000ed7c2c", null ],
     [ "InternalGetMetaDataHash", "d4/dea/classxii_state_machine_asset_document.html#a5f42acb7e645701675d0bc0eee99cd85", null ],
     [ "InternalTransformAsset", "d4/dea/classxii_state_machine_asset_document.html#a35f776355b3684b9b4b10f932a657c40", null ],
-    [ "InternalTransformAsset", "d4/dea/classxii_state_machine_asset_document.html#a216fef9ceb537515dd8cccc13bb3079d", null ]
+    [ "InternalTransformAsset", "d4/dea/classxii_state_machine_asset_document.html#a216fef9ceb537515dd8cccc13bb3079d", null ],
+    [ "Paste", "d4/dea/classxii_state_machine_asset_document.html#a4c3aa08f3098deed6899e8008e9de87d", null ]
 ];

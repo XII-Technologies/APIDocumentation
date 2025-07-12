@@ -74,7 +74,7 @@ var searchData=
   ['staticmember_71',['StaticMember',['../dc/d96/structxii_function_type.html#aa1f281549634c67b2db3e16e4a220520ac150232610215ceafcb9740638a8ce14',1,'xiiFunctionType']]],
   ['statictransformchangesnotifications_72',['StaticTransformChangesNotifications',['../dd/d15/structxii_object_flags.html#ab84c26953c65707e422df64a7fb08c30a1f8e99d82417934bd121d3bd93821be6',1,'xiiObjectFlags']]],
   ['stereo_73',['Stereo',['../db/d4a/structxii_camera_mode.html#ad88142773a407b01a024f00425d270dfa8831a78693b98403cad6a46a8b0fa4ed',1,'xiiCameraMode']]],
-  ['stereoaware_74',['StereoAware',['../d8/d63/structxii_render_pipeline_pass_flags.html#aa7d8b044fa8e4a844bc09098892050e0a2732fb24bbee9df5cb4f9974dddda985',1,'xiiRenderPipelinePassFlags']]],
+  ['stereoaware_74',['StereoAware',['../d9/d4d/structxii_render_pipeline_pass_capability_flags.html#ac711dd09c792287a330e21e3f00f9ff0a6708c21d68451f7c266f08914359524c',1,'xiiRenderPipelinePassCapabilityFlags']]],
   ['stop_75',['Stop',['../d8/d20/structxii_visitor_execution.html#a978acd3a25b8f23e406a940dad728818ad7c544ea9375de3874dc06554059c6e0',1,'xiiVisitorExecution::Stop'],['../d8/d2f/structxii_callback_result.html#a61924daca13a34a466bd4bd77734249da57585abcf5e8dc221f9f2b55670e2b5e',1,'xiiCallbackResult::Stop']]],
   ['stopother_76',['StopOther',['../de/da1/structxii_script_coroutine_creation_mode.html#a72c2dbb927d181f9a6bb2f1600f5b8dda6ec561132183ba483a050a40243693e5',1,'xiiScriptCoroutineCreationMode']]],
   ['stopped_77',['Stopped',['../d7/d75/classxii_asset_processor.html#a81e6219c01360c0763103efde52d041dac23e2b09ebe6bf4cb5e2a9abe85c0be2',1,'xiiAssetProcessor']]],

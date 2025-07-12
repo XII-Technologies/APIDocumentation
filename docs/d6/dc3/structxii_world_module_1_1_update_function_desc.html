@@ -139,10 +139,10 @@ Public Attributes</h2></td></tr>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_bOnlyUpdateWhenSimulating</b> = false</td></tr>
 <tr class="memdesc:aa1551f4b52491d83d44cb17b73d448ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">The update function is only called when the world simulation is enabled. <br /></td></tr>
 <tr class="separator:aa1551f4b52491d83d44cb17b73d448ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af2129e259499ad822acc98984e47a24b" id="r_af2129e259499ad822acc98984e47a24b"><td class="memItemLeft" align="right" valign="top"><a id="af2129e259499ad822acc98984e47a24b" name="af2129e259499ad822acc98984e47a24b"></a>
-xiiUInt16&#160;</td><td class="memItemRight" valign="bottom"><b>m_uiGranularity</b> = 0</td></tr>
-<tr class="memdesc:af2129e259499ad822acc98984e47a24b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The granularity in which batch updates should happen during the asynchronous phase. Has to be 0 for synchronous functions. <br /></td></tr>
-<tr class="separator:af2129e259499ad822acc98984e47a24b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9940508fa5cda48e49eb5f438b8f69bd" id="r_a9940508fa5cda48e49eb5f438b8f69bd"><td class="memItemLeft" align="right" valign="top"><a id="a9940508fa5cda48e49eb5f438b8f69bd" name="a9940508fa5cda48e49eb5f438b8f69bd"></a>
+xiiUInt16&#160;</td><td class="memItemRight" valign="bottom"><b>m_uiAsyncPhaseBatchSize</b> = 0</td></tr>
+<tr class="memdesc:a9940508fa5cda48e49eb5f438b8f69bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Zero means m_Function is called once per frame, to update all components, but still in parallel with other world modules. Non-zero means m_Function is called multiple times (in parallel) with batches of roughly this size. <br /></td></tr>
+<tr class="separator:a9940508fa5cda48e49eb5f438b8f69bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae38c19ee49147d3ac30f937f49cc6bf1" id="r_ae38c19ee49147d3ac30f937f49cc6bf1"><td class="memItemLeft" align="right" valign="top"><a id="ae38c19ee49147d3ac30f937f49cc6bf1" name="ae38c19ee49147d3ac30f937f49cc6bf1"></a>
 float&#160;</td><td class="memItemRight" valign="bottom"><b>m_fPriority</b> = 0.0f</td></tr>
 <tr class="memdesc:ae38c19ee49147d3ac30f937f49cc6bf1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Higher priority (higher number) means that this function is called earlier than a function with lower priority. <br /></td></tr>
@@ -159,7 +159,7 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>m_fPriority</b> = 0.
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d9/dfe/classxii_world_module.html">xiiWorldModule</a></li><li class="navelem"><a class="el" href="../../d6/dc3/structxii_world_module_1_1_update_function_desc.html">UpdateFunctionDesc</a></li>
-    <li class="footer">Generated on Sat Jul 5 2025 19:48:09 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Sat Jul 12 2025 04:06:43 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 </body>

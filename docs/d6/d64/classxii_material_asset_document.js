@@ -6,6 +6,7 @@ var classxii_material_asset_document =
     [ "InternalGetMetaDataHash", "d6/d64/classxii_material_asset_document.html#ab157a434468373f07645144ccf922f32", null ],
     [ "InternalTransformAsset", "d6/d64/classxii_material_asset_document.html#a947a5b65ea5031edc1a1d1c933980a32", null ],
     [ "InternalTransformAsset", "d6/d64/classxii_material_asset_document.html#a75548bdcab6a54e2ef21412e95d94fc7", null ],
+    [ "Paste", "d6/d64/classxii_material_asset_document.html#a17c8958738fc5a5a01246281aa001cda", null ],
     [ "RecreateVisualShaderFile", "d6/d64/classxii_material_asset_document.html#abac7e2234898933070ffebedfe0caf03", null ],
     [ "RemoveDisconnectedNodes", "d6/d64/classxii_material_asset_document.html#adccf3c2509f07a65321c861f1321fcf8", null ],
     [ "TagVisualShaderFileInvalid", "d6/d64/classxii_material_asset_document.html#ac2841d6d5dd19daeae97bb5c1825f715", null ],

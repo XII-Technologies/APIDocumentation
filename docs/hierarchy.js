@@ -85,6 +85,7 @@ var hierarchy =
     [ "xiiReflectionProbeMapping::xiiProbeMappingFlags::Bits", "d9/d4c/structxii_reflection_probe_mapping_1_1xii_probe_mapping_flags_1_1_bits.html", null ],
     [ "xiiRenderContextFlags::Bits", "d8/d01/structxii_render_context_flags_1_1_bits.html", null ],
     [ "xiiRenderPipelineNodePinFlags::Bits", "d8/df7/structxii_render_pipeline_node_pin_flags_1_1_bits.html", null ],
+    [ "xiiRenderPipelinePassCapabilityFlags::Bits", "db/d35/structxii_render_pipeline_pass_capability_flags_1_1_bits.html", null ],
     [ "xiiRenderPipelinePassFlags::Bits", "dc/d71/structxii_render_pipeline_pass_flags_1_1_bits.html", null ],
     [ "xiiResourceFlags::Bits", "df/d78/structxii_resource_flags_1_1_bits.html", null ],
     [ "xiiRTTI::ForEachOptions::Bits", "d3/d64/structxii_r_t_t_i_1_1_for_each_options_1_1_bits.html", null ],
@@ -728,6 +729,7 @@ var hierarchy =
     [ "S", null, [
       [ "xiiEnum< S >", "de/dfd/structxii_enum.html", null ]
     ] ],
+    [ "xiiGPUResourcePool::SamplerHandleWithAge", "de/d20/structxii_g_p_u_resource_pool_1_1_sampler_handle_with_age.html", null ],
     [ "xiiQtEventTrackWidget::SelectedPoint", "d1/d18/structxii_qt_event_track_widget_1_1_selected_point.html", null ],
     [ "xiiSceneDocument::SelectionHistory", "da/dc4/structxii_scene_document_1_1_selection_history.html", null ],
     [ "xiiSingletonRegistry::SingletonEntry", "d7/ddb/structxii_singleton_registry_1_1_singleton_entry.html", null ],
@@ -1568,6 +1570,11 @@ var hierarchy =
         ] ]
       ] ]
     ] ],
+    [ "xiiArrayBase< ResourceUsageData, xiiDynamicArrayBase< ResourceUsageData > >", "da/d4c/classxii_array_base.html", [
+      [ "xiiDynamicArrayBase< ResourceUsageData >", "d2/dea/classxii_dynamic_array_base.html", [
+        [ "xiiDynamicArray< ResourceUsageData >", "dc/da4/classxii_dynamic_array.html", null ]
+      ] ]
+    ] ],
     [ "xiiArrayBase< SortedCacheCandidate, xiiDynamicArrayBase< SortedCacheCandidate > >", "da/d4c/classxii_array_base.html", [
       [ "xiiDynamicArrayBase< SortedCacheCandidate >", "d2/dea/classxii_dynamic_array_base.html", [
         [ "xiiDynamicArray< SortedCacheCandidate >", "dc/da4/classxii_dynamic_array.html", null ]
@@ -1688,11 +1695,6 @@ var hierarchy =
         [ "xiiDynamicArray< Template, xiiDefaultAllocatorWrapper >", "dc/da4/classxii_dynamic_array.html", [
           [ "xiiHybridArray< Template, 32 >", "dc/da9/classxii_hybrid_array.html", null ]
         ] ]
-      ] ]
-    ] ],
-    [ "xiiArrayBase< TextureUsageData, xiiDynamicArrayBase< TextureUsageData > >", "da/d4c/classxii_array_base.html", [
-      [ "xiiDynamicArrayBase< TextureUsageData >", "d2/dea/classxii_dynamic_array_base.html", [
-        [ "xiiDynamicArray< TextureUsageData >", "dc/da4/classxii_dynamic_array.html", null ]
       ] ]
     ] ],
     [ "xiiArrayBase< TwoSet, xiiDynamicArrayBase< TwoSet > >", "da/d4c/classxii_array_base.html", [
@@ -3590,9 +3592,9 @@ var hierarchy =
         [ "xiiDynamicArray< xiiUniquePtr< xiiRenderer > >", "dc/da4/classxii_dynamic_array.html", null ]
       ] ]
     ] ],
-    [ "xiiArrayBase< xiiUniquePtr< xiiRenderPipelinePass >, xiiDynamicArrayBase< xiiUniquePtr< xiiRenderPipelinePass > > >", "da/d4c/classxii_array_base.html", [
-      [ "xiiDynamicArrayBase< xiiUniquePtr< xiiRenderPipelinePass > >", "d2/dea/classxii_dynamic_array_base.html", [
-        [ "xiiDynamicArray< xiiUniquePtr< xiiRenderPipelinePass > >", "dc/da4/classxii_dynamic_array.html", null ]
+    [ "xiiArrayBase< xiiUniquePtr< xiiRenderPipelinePassBase >, xiiDynamicArrayBase< xiiUniquePtr< xiiRenderPipelinePassBase > > >", "da/d4c/classxii_array_base.html", [
+      [ "xiiDynamicArrayBase< xiiUniquePtr< xiiRenderPipelinePassBase > >", "d2/dea/classxii_dynamic_array_base.html", [
+        [ "xiiDynamicArray< xiiUniquePtr< xiiRenderPipelinePassBase > >", "dc/da4/classxii_dynamic_array.html", null ]
       ] ]
     ] ],
     [ "xiiArrayBase< xiiUniquePtr< xiiScriptCoroutine >, xiiDynamicArrayBase< xiiUniquePtr< xiiScriptCoroutine > > >", "da/d4c/classxii_array_base.html", [
@@ -4617,9 +4619,6 @@ var hierarchy =
     [ "xiiFormatString", "da/d2e/classxii_format_string.html", [
       [ "xiiFormatStringImpl< ARGS >", "d2/df5/classxii_format_string_impl.html", null ]
     ] ],
-    [ "xiiForwardRenderShadingQuality", "d5/d4f/structxii_forward_render_shading_quality.html", [
-      [ "xiiEnum< xiiForwardRenderShadingQuality >", "de/dfd/structxii_enum.html", null ]
-    ] ],
     [ "xiiFoundation", "dd/daf/classxii_foundation.html", null ],
     [ "xiiFrameAllocator", "d1/d7d/classxii_frame_allocator.html", null ],
     [ "xiiFrameCaptureInterface", "da/d40/classxii_frame_capture_interface.html", [
@@ -5310,9 +5309,6 @@ var hierarchy =
     [ "xiiHashTableBase< xiiHybridString< 32, xiiDefaultAllocatorWrapper >, xiiSharedPtr< xiiAnimGraphSharedBoneWeights >, xiiHashHelper< xiiHybridString< 32, xiiDefaultAllocatorWrapper > > >", null, [
       [ "xiiHashTable< xiiHybridString< 32, xiiDefaultAllocatorWrapper >, xiiSharedPtr< xiiAnimGraphSharedBoneWeights > >", "d8/dc2/classxii_hash_table.html", null ]
     ] ],
-    [ "xiiHashTableBase< xiiHybridString< 32, xiiDefaultAllocatorWrapper >, xiiSharedPtr< xiiGALTexture >, xiiHashHelper< xiiHybridString< 32, xiiDefaultAllocatorWrapper > > >", null, [
-      [ "xiiHashTable< xiiHybridString< 32, xiiDefaultAllocatorWrapper >, xiiSharedPtr< xiiGALTexture > >", "d8/dc2/classxii_hash_table.html", null ]
-    ] ],
     [ "xiiHashTableBase< xiiPropertyReference, PropertyValue, PropertyKeyHash >", "d0/da6/classxii_hash_table_base.html", [
       [ "xiiHashTable< xiiPropertyReference, PropertyValue, PropertyKeyHash >", "d8/dc2/classxii_hash_table.html", null ]
     ] ],
@@ -5539,6 +5535,7 @@ var hierarchy =
       [ "xiiMap< xiiGALShaderType::Enum, xiiGALShaderProgramData::StageData >", "d6/df7/classxii_map.html", null ],
       [ "xiiMap< xiiUInt32, xiiDynamicArray< xiiGPUResourcePool::TextureHandleWithAge > >", "d6/df7/classxii_map.html", null ],
       [ "xiiMap< xiiUInt32, xiiDynamicArray< xiiGPUResourcePool::BufferHandleWithAge > >", "d6/df7/classxii_map.html", null ],
+      [ "xiiMap< xiiUInt32, xiiDynamicArray< xiiGPUResourcePool::SamplerHandleWithAge > >", "d6/df7/classxii_map.html", null ],
       [ "xiiMap< const xiiRTTI *, xiiGameObjectEditTool * >", "d6/df7/classxii_map.html", null ],
       [ "xiiMap< const xiiDocument *, Data >", "d6/df7/classxii_map.html", null ],
       [ "xiiMap< xiiUInt32, xiiHybridArray< MeshInstance, 4 > >", "d6/df7/classxii_map.html", null ],
@@ -5565,7 +5562,7 @@ var hierarchy =
       [ "xiiMap< const xiiRTTI *, ReflectedTypeStorageMapping * >", "d6/df7/classxii_map.html", null ],
       [ "xiiMap< xiiGALShaderType::Enum, xiiSharedPtr< xiiGALShader > >", "d6/df7/classxii_map.html", null ],
       [ "xiiMap< ShaderVertexDeclaration, xiiSharedPtr< xiiGALInputLayout > >", "d6/df7/classxii_map.html", null ],
-      [ "xiiMap< const xiiRenderPipelinePass *, ConnectionData >", "d6/df7/classxii_map.html", null ],
+      [ "xiiMap< const xiiRenderPipelinePassBase *, ConnectionData >", "d6/df7/classxii_map.html", null ],
       [ "xiiMap< const xiiRTTI *, xiiResourcePriority >", "d6/df7/classxii_map.html", null ],
       [ "xiiMap< const xiiRTTI *, xiiResourceTypeLoader * >", "d6/df7/classxii_map.html", null ],
       [ "xiiMap< xiiResource *, xiiUniquePtr< xiiResourceTypeLoader > >", "d6/df7/classxii_map.html", null ],
@@ -6415,8 +6412,7 @@ var hierarchy =
           [ "xiiFrameDataProvider< xiiSimplifiedDataGPU >", "df/de9/classxii_frame_data_provider.html", [
             [ "xiiSimplifiedDataProvider", "d4/de4/classxii_simplified_data_provider.html", null ]
           ] ],
-          [ "xiiFrameDataProvider< T >", "df/de9/classxii_frame_data_provider.html", null ],
-          [ "xiiHistorySourcePassTextureDataProvider", "de/d6e/classxii_history_source_pass_texture_data_provider.html", null ]
+          [ "xiiFrameDataProvider< T >", "df/de9/classxii_frame_data_provider.html", null ]
         ] ],
         [ "xiiGALMapHelper< DataType >", "d3/d2b/classxii_g_a_l_map_helper.html", null ],
         [ "xiiGALObject", "d3/dda/classxii_g_a_l_object.html", [
@@ -6773,39 +6769,21 @@ var hierarchy =
           [ "xiiSpriteRenderData", "d2/d0e/classxii_sprite_render_data.html", null ]
         ] ],
         [ "xiiRenderPipelineNode", "d9/d98/classxii_render_pipeline_node.html", [
-          [ "xiiRenderPipelinePass", "d5/d44/classxii_render_pipeline_pass.html", [
-            [ "xiiAOPass", "d7/d81/classxii_a_o_pass.html", null ],
-            [ "xiiAntialiasingPass", "da/de9/classxii_antialiasing_pass.html", null ],
-            [ "xiiBlendPass", "d1/d60/classxii_blend_pass.html", null ],
-            [ "xiiBloomPass", "d7/d88/classxii_bloom_pass.html", null ],
-            [ "xiiBlurPass", "dc/d83/classxii_blur_pass.html", null ],
-            [ "xiiCopyTexturePass", "d8/dbc/classxii_copy_texture_pass.html", null ],
-            [ "xiiDepthOnlyPass", "d9/dbf/classxii_depth_only_pass.html", null ],
-            [ "xiiForwardRenderPass", "da/d8f/classxii_forward_render_pass.html", [
-              [ "xiiOpaqueForwardRenderPass", "dd/dab/classxii_opaque_forward_render_pass.html", null ],
-              [ "xiiSkyRenderPass", "d8/dc0/classxii_sky_render_pass.html", null ],
-              [ "xiiTransparentForwardRenderPass", "d8/d86/classxii_transparent_forward_render_pass.html", null ]
-            ] ],
-            [ "xiiHistorySourcePass", "dd/d60/classxii_history_source_pass.html", null ],
-            [ "xiiHistoryTargetPass", "d1/d11/classxii_history_target_pass.html", null ],
-            [ "xiiMsaaResolvePass", "de/d72/classxii_msaa_resolve_pass.html", null ],
-            [ "xiiMsaaUpscalePass", "dc/dc3/classxii_msaa_upscale_pass.html", null ],
-            [ "xiiPickingRenderPass", "db/d83/classxii_picking_render_pass.html", null ],
-            [ "xiiReflectionFilterPass", "d7/df2/classxii_reflection_filter_pass.html", null ],
-            [ "xiiSelectionHighlightPass", "d9/d58/classxii_selection_highlight_pass.html", null ],
-            [ "xiiSeparatedBilateralBlurPass", "d1/db4/classxii_separated_bilateral_blur_pass.html", null ],
-            [ "xiiSimpleRenderPass", "d8/d79/classxii_simple_render_pass.html", null ],
-            [ "xiiSourcePass", "d8/d4c/classxii_source_pass.html", null ],
-            [ "xiiStereoTestPass", "d3/db9/classxii_stereo_test_pass.html", null ],
-            [ "xiiTargetPass", "d4/d19/classxii_target_pass.html", null ],
-            [ "xiiTonemapPass", "d8/d40/classxii_tonemap_pass.html", null ]
-          ] ],
           [ "xiiRenderPipelinePassBase", "dd/d7b/classxii_render_pipeline_pass_base.html", [
             [ "xiiComputePipelinePass", "d3/d4e/classxii_compute_pipeline_pass.html", null ],
             [ "xiiCopyPipelinePass", "d8/d35/classxii_copy_pipeline_pass.html", null ],
-            [ "xiiGraphicsPipelinePass", "de/d84/classxii_graphics_pipeline_pass.html", null ],
-            [ "xiiPresentPipelinePass", "df/dcc/classxii_present_pipeline_pass.html", null ],
-            [ "xiiUtilityPipelinePass", "d0/dac/classxii_utility_pipeline_pass.html", null ]
+            [ "xiiGraphicsPipelinePass", "de/d84/classxii_graphics_pipeline_pass.html", [
+              [ "xiiPickingRenderPass", "db/d83/classxii_picking_render_pass.html", null ]
+            ] ],
+            [ "xiiPresentPipelinePass", "df/dcc/classxii_present_pipeline_pass.html", [
+              [ "xiiTargetPass", "d4/d19/classxii_target_pass.html", null ]
+            ] ],
+            [ "xiiUtilityPipelinePass", "d0/dac/classxii_utility_pipeline_pass.html", [
+              [ "xiiCreateBufferPass", "d6/d08/classxii_create_buffer_pass.html", null ],
+              [ "xiiCreateColourAttachmentPass", "d2/d72/classxii_create_colour_attachment_pass.html", null ],
+              [ "xiiCreateDepthAttachmentPass", "d3/dcb/classxii_create_depth_attachment_pass.html", null ],
+              [ "xiiCreateSamplerPass", "dd/d65/classxii_create_sampler_pass.html", null ]
+            ] ]
           ] ],
           [ "xiiView", "dd/df1/classxii_view.html", null ]
         ] ],
@@ -7275,44 +7253,57 @@ var hierarchy =
     [ "xiiRenderDataBatchList", "d7/d09/classxii_render_data_batch_list.html", null ],
     [ "xiiRenderingSetup", "d4/d1b/classxii_rendering_setup.html", null ],
     [ "xiiRenderPipelineNodePin", "d9/d96/structxii_render_pipeline_node_pin.html", [
-      [ "xiiRenderPipelineNodeInputAccelerationStructurePin", "dc/da8/structxii_render_pipeline_node_input_acceleration_structure_pin.html", null ],
-      [ "xiiRenderPipelineNodeInputAccelerationStructureProviderPin", "d4/d26/structxii_render_pipeline_node_input_acceleration_structure_provider_pin.html", null ],
-      [ "xiiRenderPipelineNodeInputBufferPin", "d7/da3/structxii_render_pipeline_node_input_buffer_pin.html", null ],
-      [ "xiiRenderPipelineNodeInputBufferProviderPin", "dc/dd7/structxii_render_pipeline_node_input_buffer_provider_pin.html", null ],
-      [ "xiiRenderPipelineNodeInputColourAttachmentPin", "d2/dbe/structxii_render_pipeline_node_input_colour_attachment_pin.html", null ],
-      [ "xiiRenderPipelineNodeInputColourAttachmentProviderPin", "d1/dc5/structxii_render_pipeline_node_input_colour_attachment_provider_pin.html", null ],
-      [ "xiiRenderPipelineNodeInputDepthAttachmentPin", "d3/d41/structxii_render_pipeline_node_input_depth_attachment_pin.html", null ],
-      [ "xiiRenderPipelineNodeInputDepthAttachmentProviderPin", "d9/dff/structxii_render_pipeline_node_input_depth_attachment_provider_pin.html", null ],
-      [ "xiiRenderPipelineNodeInputSamplerPin", "d0/d24/structxii_render_pipeline_node_input_sampler_pin.html", null ],
-      [ "xiiRenderPipelineNodeInputSamplerProviderPin", "de/d1a/structxii_render_pipeline_node_input_sampler_provider_pin.html", null ],
-      [ "xiiRenderPipelineNodeOutputAccelerationStructurePin", "d8/d94/structxii_render_pipeline_node_output_acceleration_structure_pin.html", null ],
-      [ "xiiRenderPipelineNodeOutputAccelerationStructureProviderPin", "d0/dfd/structxii_render_pipeline_node_output_acceleration_structure_provider_pin.html", null ],
-      [ "xiiRenderPipelineNodeOutputBufferPin", "db/d19/structxii_render_pipeline_node_output_buffer_pin.html", null ],
-      [ "xiiRenderPipelineNodeOutputBufferProviderPin", "d1/d21/structxii_render_pipeline_node_output_buffer_provider_pin.html", null ],
-      [ "xiiRenderPipelineNodeOutputColourAttachmentPin", "d4/d2d/structxii_render_pipeline_node_output_colour_attachment_pin.html", null ],
-      [ "xiiRenderPipelineNodeOutputColourAttachmentProviderPin", "d4/d3d/structxii_render_pipeline_node_output_colour_attachment_provider_pin.html", null ],
-      [ "xiiRenderPipelineNodeOutputDepthAttachmentPin", "d9/df5/structxii_render_pipeline_node_output_depth_attachment_pin.html", null ],
-      [ "xiiRenderPipelineNodeOutputDepthAttachmentProviderPin", "dd/d21/structxii_render_pipeline_node_output_depth_attachment_provider_pin.html", null ],
-      [ "xiiRenderPipelineNodeOutputSamplerPin", "d0/d9e/structxii_render_pipeline_node_output_sampler_pin.html", null ],
-      [ "xiiRenderPipelineNodeOutputSamplerProviderPin", "dd/da2/structxii_render_pipeline_node_output_sampler_provider_pin.html", null ],
-      [ "xiiRenderPipelineNodePassThroughAccelerationStructurePin", "d4/dbd/structxii_render_pipeline_node_pass_through_acceleration_structure_pin.html", null ],
-      [ "xiiRenderPipelineNodePassThroughBufferPin", "de/d78/structxii_render_pipeline_node_pass_through_buffer_pin.html", null ],
-      [ "xiiRenderPipelineNodePassThroughColourAttachmentPin", "d5/d51/structxii_render_pipeline_node_pass_through_colour_attachment_pin.html", null ],
-      [ "xiiRenderPipelineNodePassThroughDepthAttachmentPin", "de/d4f/structxii_render_pipeline_node_pass_through_depth_attachment_pin.html", null ],
-      [ "xiiRenderPipelineNodePassThroughSamplerPin", "d9/dcc/structxii_render_pipeline_node_pass_through_sampler_pin.html", null ]
+      [ "xiiRenderPipelineNodeInputPin", "d4/d12/structxii_render_pipeline_node_input_pin.html", [
+        [ "xiiRenderPipelineNodeInputAccelerationStructurePin", "dc/da8/structxii_render_pipeline_node_input_acceleration_structure_pin.html", null ],
+        [ "xiiRenderPipelineNodeInputBufferPin", "d7/da3/structxii_render_pipeline_node_input_buffer_pin.html", null ],
+        [ "xiiRenderPipelineNodeInputColourAttachmentPin", "d2/dbe/structxii_render_pipeline_node_input_colour_attachment_pin.html", null ],
+        [ "xiiRenderPipelineNodeInputDepthAttachmentPin", "d3/d41/structxii_render_pipeline_node_input_depth_attachment_pin.html", null ],
+        [ "xiiRenderPipelineNodeInputProviderPin", "d9/d50/structxii_render_pipeline_node_input_provider_pin.html", [
+          [ "xiiRenderPipelineNodeInputAccelerationStructureProviderPin", "d4/d26/structxii_render_pipeline_node_input_acceleration_structure_provider_pin.html", null ],
+          [ "xiiRenderPipelineNodeInputBufferProviderPin", "dc/dd7/structxii_render_pipeline_node_input_buffer_provider_pin.html", null ],
+          [ "xiiRenderPipelineNodeInputColourAttachmentProviderPin", "d1/dc5/structxii_render_pipeline_node_input_colour_attachment_provider_pin.html", null ],
+          [ "xiiRenderPipelineNodeInputDepthAttachmentProviderPin", "d9/dff/structxii_render_pipeline_node_input_depth_attachment_provider_pin.html", null ],
+          [ "xiiRenderPipelineNodeInputSamplerProviderPin", "de/d1a/structxii_render_pipeline_node_input_sampler_provider_pin.html", null ]
+        ] ],
+        [ "xiiRenderPipelineNodeInputSamplerPin", "d0/d24/structxii_render_pipeline_node_input_sampler_pin.html", null ]
+      ] ],
+      [ "xiiRenderPipelineNodeOutputPin", "d7/d3c/structxii_render_pipeline_node_output_pin.html", [
+        [ "xiiRenderPipelineNodeOutputAccelerationStructurePin", "d8/d94/structxii_render_pipeline_node_output_acceleration_structure_pin.html", null ],
+        [ "xiiRenderPipelineNodeOutputBufferPin", "db/d19/structxii_render_pipeline_node_output_buffer_pin.html", null ],
+        [ "xiiRenderPipelineNodeOutputColourAttachmentPin", "d4/d2d/structxii_render_pipeline_node_output_colour_attachment_pin.html", null ],
+        [ "xiiRenderPipelineNodeOutputDepthAttachmentPin", "d9/df5/structxii_render_pipeline_node_output_depth_attachment_pin.html", null ],
+        [ "xiiRenderPipelineNodeOutputProviderPin", "df/da0/structxii_render_pipeline_node_output_provider_pin.html", [
+          [ "xiiRenderPipelineNodeOutputAccelerationStructureProviderPin", "d0/dfd/structxii_render_pipeline_node_output_acceleration_structure_provider_pin.html", null ],
+          [ "xiiRenderPipelineNodeOutputBufferProviderPin", "d1/d21/structxii_render_pipeline_node_output_buffer_provider_pin.html", null ],
+          [ "xiiRenderPipelineNodeOutputColourAttachmentProviderPin", "d4/d3d/structxii_render_pipeline_node_output_colour_attachment_provider_pin.html", null ],
+          [ "xiiRenderPipelineNodeOutputDepthAttachmentProviderPin", "dd/d21/structxii_render_pipeline_node_output_depth_attachment_provider_pin.html", null ],
+          [ "xiiRenderPipelineNodeOutputSamplerProviderPin", "dd/da2/structxii_render_pipeline_node_output_sampler_provider_pin.html", null ]
+        ] ],
+        [ "xiiRenderPipelineNodeOutputSamplerPin", "d0/d9e/structxii_render_pipeline_node_output_sampler_pin.html", null ]
+      ] ],
+      [ "xiiRenderPipelineNodePassThroughPin", "d1/d2c/structxii_render_pipeline_node_pass_through_pin.html", [
+        [ "xiiRenderPipelineNodePassThroughAccelerationStructurePin", "d4/dbd/structxii_render_pipeline_node_pass_through_acceleration_structure_pin.html", null ],
+        [ "xiiRenderPipelineNodePassThroughBufferPin", "de/d78/structxii_render_pipeline_node_pass_through_buffer_pin.html", null ],
+        [ "xiiRenderPipelineNodePassThroughColourAttachmentPin", "d5/d51/structxii_render_pipeline_node_pass_through_colour_attachment_pin.html", null ],
+        [ "xiiRenderPipelineNodePassThroughDepthAttachmentPin", "de/d4f/structxii_render_pipeline_node_pass_through_depth_attachment_pin.html", null ],
+        [ "xiiRenderPipelineNodePassThroughSamplerPin", "d9/dcc/structxii_render_pipeline_node_pass_through_sampler_pin.html", null ]
+      ] ]
     ] ],
     [ "xiiRenderPipelineNodePinFlags", "dd/d03/structxii_render_pipeline_node_pin_flags.html", null ],
     [ "xiiRenderPipelineNodePinResourceType", "d5/d57/structxii_render_pipeline_node_pin_resource_type.html", [
       [ "xiiEnum< xiiRenderPipelineNodePinResourceType >", "de/dfd/structxii_enum.html", null ]
     ] ],
+    [ "xiiRenderPipelinePassCapabilityFlags", "d9/d4d/structxii_render_pipeline_pass_capability_flags.html", null ],
     [ "xiiRenderPipelinePassConcurrencyHint", "d3/dac/structxii_render_pipeline_pass_concurrency_hint.html", [
       [ "xiiEnum< xiiRenderPipelinePassConcurrencyHint >", "de/dfd/structxii_enum.html", null ]
     ] ],
     [ "xiiRenderPipelinePassConnection", "d3/deb/structxii_render_pipeline_pass_connection.html", null ],
     [ "xiiRenderPipelinePassFlags", "d8/d63/structxii_render_pipeline_pass_flags.html", null ],
+    [ "xiiRenderPipelinePassResource", "d5/d51/structxii_render_pipeline_pass_resource.html", null ],
     [ "xiiRenderPipelineResourceDescriptor", "d7/d73/structxii_render_pipeline_resource_descriptor.html", null ],
     [ "xiiRenderPipelineResourceLoader", "d2/dbd/structxii_render_pipeline_resource_loader.html", null ],
     [ "xiiRenderPipelineResourceLoaderConnection", "d6/d62/structxii_render_pipeline_resource_loader_connection.html", null ],
+    [ "xiiRenderPipelineResourceRequest", "d5/dc2/structxii_render_pipeline_resource_request.html", null ],
     [ "xiiRenderSortingFunctions", "dd/d9a/classxii_render_sorting_functions.html", null ],
     [ "xiiRenderTargetFormat", "d8/dd8/structxii_render_target_format.html", [
       [ "xiiEnum< xiiRenderTargetFormat >", "de/dfd/structxii_enum.html", null ]
@@ -7461,6 +7452,9 @@ var hierarchy =
     ] ],
     [ "xiiSetBase< xiiSharedPtr< xiiGALBuffer >, xiiCompareHelper< xiiSharedPtr< xiiGALBuffer > > >", null, [
       [ "xiiSet< xiiSharedPtr< xiiGALBuffer > >", "d6/d31/classxii_set.html", null ]
+    ] ],
+    [ "xiiSetBase< xiiSharedPtr< xiiGALSampler >, xiiCompareHelper< xiiSharedPtr< xiiGALSampler > > >", null, [
+      [ "xiiSet< xiiSharedPtr< xiiGALSampler > >", "d6/d31/classxii_set.html", null ]
     ] ],
     [ "xiiSetBase< xiiSharedPtr< xiiGALTexture >, xiiCompareHelper< xiiSharedPtr< xiiGALTexture > > >", null, [
       [ "xiiSet< xiiSharedPtr< xiiGALTexture > >", "d6/d31/classxii_set.html", null ]

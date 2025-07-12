@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['waitformessagecallback_0',['WaitForMessageCallback',['../d3/d6f/classxii_process_communication_channel.html#a056a4185b6f696e55686efc59daa2897',1,'xiiProcessCommunicationChannel']]]
+  ['visitorfunc_0',['VisitorFunc',['../d6/d89/classxii_world.html#a2a28037bf6e0847c42b7941e4861ea4b',1,'xiiWorld']]]
 ];
