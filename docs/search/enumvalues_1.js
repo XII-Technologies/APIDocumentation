@@ -71,10 +71,12 @@ var searchData=
   ['asynctransfer_68',['AsyncTransfer',['../d8/d63/structxii_render_pipeline_pass_flags.html#aa7d8b044fa8e4a844bc09098892050e0a7c3f6329aa86e4464ae72ddc7426fae5',1,'xiiRenderPipelinePassFlags']]],
   ['attach_69',['Attach',['../d4/db0/structxii_projectile_reaction.html#ad85bbae8dcc67f4bdcd688d26a876d7ca6e599e22890ac3c38112b502678549cd',1,'xiiProjectileReaction']]],
   ['attachaschild_70',['AttachAsChild',['../df/df6/structxii_spawn_component_flags.html#ad8f31817365831bd91807d1f3db87b2ea201be4bde2a51c10bf1a23ec52dcab25',1,'xiiSpawnComponentFlags']]],
-  ['auto_71',['Auto',['../de/d6d/structxii_path_node_tangent_mode.html#abde1e08a9cb26ac69d24b015b6a71ba4a3c864a9190ff1fb3501c7f18918fa907',1,'xiiPathNodeTangentMode::Auto'],['../d9/dd9/structxii_tex_conv_usage.html#a5c58a263fc8562c1df4d677a87099f83aeaf7e25b4916248f73183fa81c81dcd3',1,'xiiTexConvUsage::Auto']]],
-  ['autoreset_72',['AutoReset',['../d7/d4b/classxii_thread_signal.html#a3371ecdc4f421d3f4c135f46b05ce0a3ae62847175f89146b052c1a1890d888e0',1,'xiiThreadSignal']]],
-  ['autoreturnend_73',['AutoReturnEnd',['../d4/d8d/structxii_transform_component_flags.html#ae2e9faed973699ad530405d6cc22c042acf01aebb7a20dcd6bb2bdf5266d426c6',1,'xiiTransformComponentFlags']]],
-  ['autoreturnstart_74',['AutoReturnStart',['../d4/d8d/structxii_transform_component_flags.html#ae2e9faed973699ad530405d6cc22c042aa8094a3f8fc6de017b80b369cc280bbe',1,'xiiTransformComponentFlags']]],
-  ['autothumbnailontransform_75',['AutoThumbnailOnTransform',['../dd/d3b/structxii_asset_document_flags.html#a8a9d3d28ff9f81b678c247c918074c17a4402e0270db99495e8b821e107adfc5b',1,'xiiAssetDocumentFlags']]],
-  ['autotransformonsave_76',['AutoTransformOnSave',['../dd/d3b/structxii_asset_document_flags.html#a8a9d3d28ff9f81b678c247c918074c17a835d2c04f74d199f685e53d259224e49',1,'xiiAssetDocumentFlags']]]
+  ['auto_71',['Auto',['../de/d6d/structxii_path_node_tangent_mode.html#abde1e08a9cb26ac69d24b015b6a71ba4a3c864a9190ff1fb3501c7f18918fa907',1,'xiiPathNodeTangentMode::Auto'],['../df/dbb/structxii_vulkan_memory_usage.html#a31c9beeded3760b1bcefa39c51dabe34aec22cf30a484f3229beff42e56e62a9b',1,'xiiVulkanMemoryUsage::Auto'],['../d9/dd9/structxii_tex_conv_usage.html#a5c58a263fc8562c1df4d677a87099f83aeaf7e25b4916248f73183fa81c81dcd3',1,'xiiTexConvUsage::Auto']]],
+  ['autopreferdevice_72',['AutoPreferDevice',['../df/dbb/structxii_vulkan_memory_usage.html#a31c9beeded3760b1bcefa39c51dabe34abbe2d53e381dfd88611d84541053d004',1,'xiiVulkanMemoryUsage']]],
+  ['autopreferhost_73',['AutoPreferHost',['../df/dbb/structxii_vulkan_memory_usage.html#a31c9beeded3760b1bcefa39c51dabe34a52e93dd159f9ad2807578ff6bf1a24b8',1,'xiiVulkanMemoryUsage']]],
+  ['autoreset_74',['AutoReset',['../d7/d4b/classxii_thread_signal.html#a3371ecdc4f421d3f4c135f46b05ce0a3ae62847175f89146b052c1a1890d888e0',1,'xiiThreadSignal']]],
+  ['autoreturnend_75',['AutoReturnEnd',['../d4/d8d/structxii_transform_component_flags.html#ae2e9faed973699ad530405d6cc22c042acf01aebb7a20dcd6bb2bdf5266d426c6',1,'xiiTransformComponentFlags']]],
+  ['autoreturnstart_76',['AutoReturnStart',['../d4/d8d/structxii_transform_component_flags.html#ae2e9faed973699ad530405d6cc22c042aa8094a3f8fc6de017b80b369cc280bbe',1,'xiiTransformComponentFlags']]],
+  ['autothumbnailontransform_77',['AutoThumbnailOnTransform',['../dd/d3b/structxii_asset_document_flags.html#a8a9d3d28ff9f81b678c247c918074c17a4402e0270db99495e8b821e107adfc5b',1,'xiiAssetDocumentFlags']]],
+  ['autotransformonsave_78',['AutoTransformOnSave',['../dd/d3b/structxii_asset_document_flags.html#a8a9d3d28ff9f81b678c247c918074c17a835d2c04f74d199f685e53d259224e49',1,'xiiAssetDocumentFlags']]]
 ];

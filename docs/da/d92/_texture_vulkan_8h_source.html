@@ -121,11 +121,11 @@ $(function(){initNavTree('da/d92/_texture_vulkan_8h_source.html','../../'); init
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="keyword">public</span>:</div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="../../d7/d2e/classxii_g_a_l_texture_vulkan.html#a2ff41f4ba7190cbacc3f5575ac25002d">   18</a></span>  [[nodiscard]] XII_ALWAYS_INLINE <span class="keyword">virtual</span> <span class="keyword">const</span> <a class="code hl_struct" href="../../d8/d52/structxii_g_a_l_sparse_texture_properties.html">xiiGALSparseTextureProperties</a>&amp; <a class="code hl_function" href="../../d7/d2e/classxii_g_a_l_texture_vulkan.html#a2ff41f4ba7190cbacc3f5575ac25002d">GetSparseProperties</a>() const override final { <span class="keywordflow">return</span> m_SparseTextureProperties; }</div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>  [[nodiscard]] XII_ALWAYS_INLINE vk::Image     GetVulkanImage()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_vkImage; }</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>  [[nodiscard]] XII_ALWAYS_INLINE VmaAllocation GetAllocationDescription()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_ImageMemoryAllocation; }</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>  [[nodiscard]] XII_ALWAYS_INLINE vk::Image           GetVulkanImage()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_vkImage; }</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>  [[nodiscard]] XII_ALWAYS_INLINE xiiVulkanAllocation GetAllocationDescription()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_ImageMemoryAllocation; }</div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>  [[nodiscard]] XII_ALWAYS_INLINE vk::Buffer    GetVulkanStagingBuffer()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_vkStagingBuffer; }</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>  [[nodiscard]] XII_ALWAYS_INLINE VmaAllocation GetStagingBufferAllocationDescription()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_StagingBufferMemoryAllocation; }</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>  [[nodiscard]] XII_ALWAYS_INLINE vk::Buffer          GetVulkanStagingBuffer()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_vkStagingBuffer; }</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>  [[nodiscard]] XII_ALWAYS_INLINE xiiVulkanAllocation GetStagingBufferAllocationDescription()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_StagingBufferMemoryAllocation; }</div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>  [[nodiscard]] XII_ALWAYS_INLINE <span class="keywordtype">bool</span> IsNativeObjectWrapper()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_Description.m_pExistingNativeObject != <span class="keyword">nullptr</span>; }</div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
@@ -161,11 +161,11 @@ $(function(){initNavTree('da/d92/_texture_vulkan_8h_source.html','../../'); init
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>  <span class="keyword">static</span> <span class="keywordtype">void</span> ComputeVkImageCreateInfo(<span class="keyword">const</span> xiiSharedPtr&lt;xiiGALDeviceVulkan&gt; pDeviceVulkan, <span class="keyword">const</span> xiiGALTextureCreationDescription&amp; creationDescription, vk::ImageCreateInfo&amp; ref_vkImageCreateInfo);</div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>  vk::Image     m_vkImage;</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>  VmaAllocation m_ImageMemoryAllocation;</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>  vk::Image           m_vkImage;</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>  xiiVulkanAllocation m_ImageMemoryAllocation;</div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>  vk::Buffer    m_vkStagingBuffer;</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>  VmaAllocation m_StagingBufferMemoryAllocation;</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>  vk::Buffer          m_vkStagingBuffer;</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>  xiiVulkanAllocation m_StagingBufferMemoryAllocation;</div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>  xiiGALSparseTextureProperties m_SparseTextureProperties;</div>
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>};</div>
@@ -178,7 +178,7 @@ $(function(){initNavTree('da/d92/_texture_vulkan_8h_source.html','../../'); init
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.html">home</a></li><li class="navelem"><a class="el" href="../../dir_1036706e55c22cab35bc1c58ee689f1d.html">runner</a></li><li class="navelem"><a class="el" href="../../dir_629f8151d55d307162ff2d619fb1783d.html">work</a></li><li class="navelem"><a class="el" href="../../dir_1ddc44fe1263a8c7935fa6130b7d9499.html">XII</a></li><li class="navelem"><a class="el" href="../../dir_2c1b6808f12952f4c36e05ba7068379a.html">XII</a></li><li class="navelem"><a class="el" href="../../dir_b5a1c4ecfca018ad24b729e213296d41.html">Source</a></li><li class="navelem"><a class="el" href="../../dir_e321052006a51284e67389ab20037e7c.html">Engine</a></li><li class="navelem"><a class="el" href="../../dir_32f911672529289aa73bbec1c1630508.html">GraphicsVulkan</a></li><li class="navelem"><a class="el" href="../../dir_4635b70c9add0e64929b318366bb7e72.html">Resources</a></li><li class="navelem"><b>TextureVulkan.h</b></li>
-    <li class="footer">Generated on Sat Jul 12 2025 04:06:39 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Sun Jul 20 2025 23:06:44 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 </body>

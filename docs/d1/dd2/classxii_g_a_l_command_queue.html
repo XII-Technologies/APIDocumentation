@@ -134,12 +134,12 @@ XII_ALWAYS_INLINE <a class="el" href="../../d5/d19/classxii_g_a_l_device.html">x
 <tr class="memitem:aa07a6a38d8758e4602affdb92ea6e571" id="r_aa07a6a38d8758e4602affdb92ea6e571"><td class="memItemLeft" align="right" valign="top">virtual xiiUInt64&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa07a6a38d8758e4602affdb92ea6e571">GetCompletedFenceValue</a> ()=0</td></tr>
 <tr class="memdesc:aa07a6a38d8758e4602affdb92ea6e571"><td class="mdescLeft">&#160;</td><td class="mdescRight">This returns the last completed value of the internal fence.  <br /></td></tr>
 <tr class="separator:aa07a6a38d8758e4602affdb92ea6e571"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a810a310bfcf71854214af46b2f59b346" id="r_a810a310bfcf71854214af46b2f59b346"><td class="memItemLeft" align="right" valign="top">virtual xiiUInt64&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a810a310bfcf71854214af46b2f59b346">Submit</a> (<a class="el" href="../../d8/d9b/classxii_shared_ptr.html">xiiSharedPtr</a>&lt; <a class="el" href="../../dc/d80/classxii_g_a_l_command_list.html">xiiGALCommandList</a> &gt; pCommandList)</td></tr>
+<tr class="memdesc:a810a310bfcf71854214af46b2f59b346"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submits a recorded command list to the GPU queue for execution.  <br /></td></tr>
+<tr class="separator:a810a310bfcf71854214af46b2f59b346"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a97866a364978a8d92272350bfdee3cc4" id="r_a97866a364978a8d92272350bfdee3cc4"><td class="memItemLeft" align="right" valign="top">virtual xiiUInt64&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a97866a364978a8d92272350bfdee3cc4">WaitForIdle</a> ()=0</td></tr>
 <tr class="memdesc:a97866a364978a8d92272350bfdee3cc4"><td class="mdescLeft">&#160;</td><td class="mdescRight">This blocks execution until all pending GPU commands are complete.  <br /></td></tr>
 <tr class="separator:a97866a364978a8d92272350bfdee3cc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2acbd61e1f081896d8c3af1128d152a7" id="r_a2acbd61e1f081896d8c3af1128d152a7"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d8/d9b/classxii_shared_ptr.html">xiiSharedPtr</a>&lt; <a class="el" href="../../dc/d80/classxii_g_a_l_command_list.html">xiiGALCommandList</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2acbd61e1f081896d8c3af1128d152a7">BeginCommandList</a> ()=0</td></tr>
-<tr class="memdesc:a2acbd61e1f081896d8c3af1128d152a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">This begins a command list for recording commands.  <br /></td></tr>
-<tr class="separator:a2acbd61e1f081896d8c3af1128d152a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classxii_g_a_l_object"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_classxii_g_a_l_object')"><img src="../../closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="../../d3/dda/classxii_g_a_l_object.html">xiiGALObject</a></td></tr>
 <tr class="memitem:ab332ceabb290d20c5aba58561733cbb0 inherit pub_methods_classxii_g_a_l_object" id="r_ab332ceabb290d20c5aba58561733cbb0"><td class="memItemLeft" align="right" valign="top">
 XII_ALWAYS_INLINE <a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetDebugName</b> () const</td></tr>
@@ -200,6 +200,9 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:a548bb7baaf1f0d62c7727f507d8049cc" id="r_a548bb7baaf1f0d62c7727f507d8049cc"><td class="memItemLeft" align="right" valign="top"><a id="a548bb7baaf1f0d62c7727f507d8049cc" name="a548bb7baaf1f0d62c7727f507d8049cc"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>xiiGALCommandQueue</b> (<a class="el" href="../../d5/d19/classxii_g_a_l_device.html">xiiGALDevice</a> *pDevice, const <a class="el" href="../../d3/dc4/structxii_g_a_l_command_queue_creation_description.html">xiiGALCommandQueueCreationDescription</a> &amp;creationDescription)</td></tr>
 <tr class="separator:a548bb7baaf1f0d62c7727f507d8049cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26dc8296724e76215e04c0fb7ab435e7" id="r_a26dc8296724e76215e04c0fb7ab435e7"><td class="memItemLeft" align="right" valign="top"><a id="a26dc8296724e76215e04c0fb7ab435e7" name="a26dc8296724e76215e04c0fb7ab435e7"></a>
+virtual xiiUInt64&#160;</td><td class="memItemRight" valign="bottom"><b>SubmitPlatform</b> (<a class="el" href="../../d8/d9b/classxii_shared_ptr.html">xiiSharedPtr</a>&lt; <a class="el" href="../../dc/d80/classxii_g_a_l_command_list.html">xiiGALCommandList</a> &gt; pCommandList)=0</td></tr>
+<tr class="separator:a26dc8296724e76215e04c0fb7ab435e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_classxii_g_a_l_object"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_methods_classxii_g_a_l_object')"><img src="../../closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="../../d3/dda/classxii_g_a_l_object.html">xiiGALObject</a></td></tr>
 <tr class="memitem:a5318e759b1a48c178bef4f80402c29a3 inherit pro_methods_classxii_g_a_l_object" id="r_a5318e759b1a48c178bef4f80402c29a3"><td class="memItemLeft" align="right" valign="top">
 virtual XII_ALWAYS_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><b>SetDebugNamePlatform</b> (<a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sName) const</td></tr>
@@ -230,35 +233,6 @@ static const <a class="el" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Interface that defines methods to manipulate a command queue object. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a2acbd61e1f081896d8c3af1128d152a7" name="a2acbd61e1f081896d8c3af1128d152a7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2acbd61e1f081896d8c3af1128d152a7">&#9670;&#160;</a></span>BeginCommandList()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual <a class="el" href="../../d8/d9b/classxii_shared_ptr.html">xiiSharedPtr</a>&lt; <a class="el" href="../../dc/d80/classxii_g_a_l_command_list.html">xiiGALCommandList</a> &gt; xiiGALCommandQueue::BeginCommandList </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel nodiscard">nodiscard</span><span class="mlabel pure-virtual">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>This begins a command list for recording commands. </p>
-
-<p>Implemented in <a class="el" href="../../d1/d83/classxii_g_a_l_command_queue_vulkan.html#a0b4fcf5b7756f9097659c7b0aaf6fda2">xiiGALCommandQueueVulkan</a>.</p>
-
-</div>
-</div>
 <a id="aa07a6a38d8758e4602affdb92ea6e571" name="aa07a6a38d8758e4602affdb92ea6e571"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa07a6a38d8758e4602affdb92ea6e571">&#9670;&#160;</a></span>GetCompletedFenceValue()</h2>
 
@@ -317,6 +291,41 @@ static const <a class="el" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a>
 
 </div>
 </div>
+<a id="a810a310bfcf71854214af46b2f59b346" name="a810a310bfcf71854214af46b2f59b346"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a810a310bfcf71854214af46b2f59b346">&#9670;&#160;</a></span>Submit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">xiiUInt64 xiiGALCommandQueue::Submit </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d8/d9b/classxii_shared_ptr.html">xiiSharedPtr</a>&lt; <a class="el" href="../../dc/d80/classxii_g_a_l_command_list.html">xiiGALCommandList</a> &gt;</td>          <td class="paramname"><span class="paramname"><em>pCommandList</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Submits a recorded command list to the GPU queue for execution. </p>
+<dl class="section note"><dt>Note</dt><dd>Command list must be compatible with the queue's flag configuration. Invalid or misconfigured lists may trigger assertions in development builds.</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pCommandList</td><td>- The command list to be submitted. Must not be null. Its recording state must be 'Ended' or 'Recording'.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The fence value that can be used to query GPU completion status for this submission. </dd></dl>
+
+</div>
+</div>
 <a id="a97866a364978a8d92272350bfdee3cc4" name="a97866a364978a8d92272350bfdee3cc4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a97866a364978a8d92272350bfdee3cc4">&#9670;&#160;</a></span>WaitForIdle()</h2>
 
@@ -356,7 +365,7 @@ static const <a class="el" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d1/dd2/classxii_g_a_l_command_queue.html">xiiGALCommandQueue</a></li>
-    <li class="footer">Generated on Sat Jul 12 2025 04:06:41 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Sun Jul 20 2025 23:06:46 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 </body>

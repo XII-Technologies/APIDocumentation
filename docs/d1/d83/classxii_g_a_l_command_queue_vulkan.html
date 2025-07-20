@@ -114,12 +114,6 @@ Inheritance diagram for xiiGALCommandQueueVulkan:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:af374e838530c57b715b53159692fadcf" id="r_af374e838530c57b715b53159692fadcf"><td class="memItemLeft" align="right" valign="top"><a id="af374e838530c57b715b53159692fadcf" name="af374e838530c57b715b53159692fadcf"></a>
-vk::PipelineStageFlags&#160;</td><td class="memItemRight" valign="bottom"><b>GetSupportedStagesFlags</b> () const</td></tr>
-<tr class="separator:af374e838530c57b715b53159692fadcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afb3a91f74ef622ab5e99e0cd7be5f197" id="r_afb3a91f74ef622ab5e99e0cd7be5f197"><td class="memItemLeft" align="right" valign="top"><a id="afb3a91f74ef622ab5e99e0cd7be5f197" name="afb3a91f74ef622ab5e99e0cd7be5f197"></a>
-vk::AccessFlags&#160;</td><td class="memItemRight" valign="bottom"><b>GetSupportedAccessFlags</b> () const</td></tr>
-<tr class="separator:afb3a91f74ef622ab5e99e0cd7be5f197"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a576cc7012703e2dcdcdcbeb1b1e88ae9" id="r_a576cc7012703e2dcdcdcbeb1b1e88ae9"><td class="memItemLeft" align="right" valign="top">virtual XII_ALWAYS_INLINE xiiUInt64&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a576cc7012703e2dcdcdcbeb1b1e88ae9">GetNextFenceValue</a> () const override final</td></tr>
 <tr class="memdesc:a576cc7012703e2dcdcdcbeb1b1e88ae9"><td class="mdescLeft">&#160;</td><td class="mdescRight">This returns the value of the internal fence that will be signaled the next time.  <br /></td></tr>
 <tr class="separator:a576cc7012703e2dcdcdcbeb1b1e88ae9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -129,15 +123,11 @@ vk::AccessFlags&#160;</td><td class="memItemRight" valign="bottom"><b>GetSupport
 <tr class="memitem:a2e834de5d3bda5d6123659980dbe92d9" id="r_a2e834de5d3bda5d6123659980dbe92d9"><td class="memItemLeft" align="right" valign="top"><a id="a2e834de5d3bda5d6123659980dbe92d9" name="a2e834de5d3bda5d6123659980dbe92d9"></a>
 XII_ALWAYS_INLINE const <a class="el" href="../../dc/d34/structxii_g_a_l_queue_information_vulkan.html">xiiGALQueueInformationVulkan</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetQueueInformation</b> () const</td></tr>
 <tr class="separator:a2e834de5d3bda5d6123659980dbe92d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa18f456c129d0bb0c1c36573cd4c532c" id="r_aa18f456c129d0bb0c1c36573cd4c532c"><td class="memItemLeft" align="right" valign="top">virtual xiiUInt64&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa18f456c129d0bb0c1c36573cd4c532c">SubmitPlatform</a> (<a class="el" href="../../d8/d9b/classxii_shared_ptr.html">xiiSharedPtr</a>&lt; <a class="el" href="../../dc/d80/classxii_g_a_l_command_list.html">xiiGALCommandList</a> &gt; pCommandList) override final</td></tr>
+<tr class="separator:aa18f456c129d0bb0c1c36573cd4c532c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adcce74f154ffb569269a1e8b0d76cc08" id="r_adcce74f154ffb569269a1e8b0d76cc08"><td class="memItemLeft" align="right" valign="top">virtual xiiUInt64&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adcce74f154ffb569269a1e8b0d76cc08">WaitForIdle</a> () override final</td></tr>
 <tr class="memdesc:adcce74f154ffb569269a1e8b0d76cc08"><td class="mdescLeft">&#160;</td><td class="mdescRight">This blocks execution until all pending GPU commands are complete.  <br /></td></tr>
 <tr class="separator:adcce74f154ffb569269a1e8b0d76cc08"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0b4fcf5b7756f9097659c7b0aaf6fda2" id="r_a0b4fcf5b7756f9097659c7b0aaf6fda2"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d8/d9b/classxii_shared_ptr.html">xiiSharedPtr</a>&lt; <a class="el" href="../../dc/d80/classxii_g_a_l_command_list.html">xiiGALCommandList</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0b4fcf5b7756f9097659c7b0aaf6fda2">BeginCommandList</a> () override final</td></tr>
-<tr class="memdesc:a0b4fcf5b7756f9097659c7b0aaf6fda2"><td class="mdescLeft">&#160;</td><td class="mdescRight">This begins a command list for recording commands.  <br /></td></tr>
-<tr class="separator:a0b4fcf5b7756f9097659c7b0aaf6fda2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ace7ee9cbdc85b8df8f4e0f9fcc7c5a5e" id="r_ace7ee9cbdc85b8df8f4e0f9fcc7c5a5e"><td class="memItemLeft" align="right" valign="top"><a id="ace7ee9cbdc85b8df8f4e0f9fcc7c5a5e" name="ace7ee9cbdc85b8df8f4e0f9fcc7c5a5e"></a>
-<a class="el" href="../../da/d84/classxii_g_a_l_command_buffer_pool_vulkan.html">xiiGALCommandBufferPoolVulkan</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetCommandBufferPool</b> ()</td></tr>
-<tr class="separator:ace7ee9cbdc85b8df8f4e0f9fcc7c5a5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classxii_g_a_l_command_queue"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_classxii_g_a_l_command_queue')"><img src="../../closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="../../d1/dd2/classxii_g_a_l_command_queue.html">xiiGALCommandQueue</a></td></tr>
 <tr class="memitem:ab5a6347c79bae9eece5802f9a0e17ccb inherit pub_methods_classxii_g_a_l_command_queue" id="r_ab5a6347c79bae9eece5802f9a0e17ccb"><td class="memItemLeft" align="right" valign="top">
 XII_ALWAYS_INLINE const <a class="el" href="../../d3/dc4/structxii_g_a_l_command_queue_creation_description.html">xiiGALCommandQueueCreationDescription</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetDescription</b> () const</td></tr>
@@ -147,6 +137,9 @@ XII_ALWAYS_INLINE const <a class="el" href="../../d3/dc4/structxii_g_a_l_command
 XII_ALWAYS_INLINE <a class="el" href="../../d5/d19/classxii_g_a_l_device.html">xiiGALDevice</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetDevice</b> () const</td></tr>
 <tr class="memdesc:a2adb05ac9c06b109bde8055ee2a303f9 inherit pub_methods_classxii_g_a_l_command_queue"><td class="mdescLeft">&#160;</td><td class="mdescRight">This returns the device for this object. <br /></td></tr>
 <tr class="separator:a2adb05ac9c06b109bde8055ee2a303f9 inherit pub_methods_classxii_g_a_l_command_queue"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a810a310bfcf71854214af46b2f59b346 inherit pub_methods_classxii_g_a_l_command_queue" id="r_a810a310bfcf71854214af46b2f59b346"><td class="memItemLeft" align="right" valign="top">virtual xiiUInt64&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dd2/classxii_g_a_l_command_queue.html#a810a310bfcf71854214af46b2f59b346">Submit</a> (<a class="el" href="../../d8/d9b/classxii_shared_ptr.html">xiiSharedPtr</a>&lt; <a class="el" href="../../dc/d80/classxii_g_a_l_command_list.html">xiiGALCommandList</a> &gt; pCommandList)</td></tr>
+<tr class="memdesc:a810a310bfcf71854214af46b2f59b346 inherit pub_methods_classxii_g_a_l_command_queue"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submits a recorded command list to the GPU queue for execution.  <br /></td></tr>
+<tr class="separator:a810a310bfcf71854214af46b2f59b346 inherit pub_methods_classxii_g_a_l_command_queue"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classxii_g_a_l_object"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_classxii_g_a_l_object')"><img src="../../closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="../../d3/dda/classxii_g_a_l_object.html">xiiGALObject</a></td></tr>
 <tr class="memitem:ab332ceabb290d20c5aba58561733cbb0 inherit pub_methods_classxii_g_a_l_object" id="r_ab332ceabb290d20c5aba58561733cbb0"><td class="memItemLeft" align="right" valign="top">
 XII_ALWAYS_INLINE <a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetDebugName</b> () const</td></tr>
@@ -207,12 +200,14 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:ab5b33825855650a0bde2aa968b472ac1" id="r_ab5b33825855650a0bde2aa968b472ac1"><td class="memItemLeft" align="right" valign="top"><a id="ab5b33825855650a0bde2aa968b472ac1" name="ab5b33825855650a0bde2aa968b472ac1"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>xiiGALCommandQueueVulkan</b> (<a class="el" href="../../d3/d6b/classxii_g_a_l_device_vulkan.html">xiiGALDeviceVulkan</a> *pDeviceVulkan, const <a class="el" href="../../d3/dc4/structxii_g_a_l_command_queue_creation_description.html">xiiGALCommandQueueCreationDescription</a> &amp;creationDescription, const <a class="el" href="../../dc/d34/structxii_g_a_l_queue_information_vulkan.html">xiiGALQueueInformationVulkan</a> &amp;queueInformation)</td></tr>
 <tr class="separator:ab5b33825855650a0bde2aa968b472ac1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8d41dac3a909546a21968e126423b925" id="r_a8d41dac3a909546a21968e126423b925"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8d41dac3a909546a21968e126423b925">SetDebugNamePlatform</a> (<a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sName) const override final</td></tr>
-<tr class="separator:a8d41dac3a909546a21968e126423b925"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_classxii_g_a_l_command_queue"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_methods_classxii_g_a_l_command_queue')"><img src="../../closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="../../d1/dd2/classxii_g_a_l_command_queue.html">xiiGALCommandQueue</a></td></tr>
 <tr class="memitem:a548bb7baaf1f0d62c7727f507d8049cc inherit pro_methods_classxii_g_a_l_command_queue" id="r_a548bb7baaf1f0d62c7727f507d8049cc"><td class="memItemLeft" align="right" valign="top">
 &#160;</td><td class="memItemRight" valign="bottom"><b>xiiGALCommandQueue</b> (<a class="el" href="../../d5/d19/classxii_g_a_l_device.html">xiiGALDevice</a> *pDevice, const <a class="el" href="../../d3/dc4/structxii_g_a_l_command_queue_creation_description.html">xiiGALCommandQueueCreationDescription</a> &amp;creationDescription)</td></tr>
 <tr class="separator:a548bb7baaf1f0d62c7727f507d8049cc inherit pro_methods_classxii_g_a_l_command_queue"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_classxii_g_a_l_object"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_methods_classxii_g_a_l_object')"><img src="../../closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="../../d3/dda/classxii_g_a_l_object.html">xiiGALObject</a></td></tr>
+<tr class="memitem:a5318e759b1a48c178bef4f80402c29a3 inherit pro_methods_classxii_g_a_l_object" id="r_a5318e759b1a48c178bef4f80402c29a3"><td class="memItemLeft" align="right" valign="top">
+virtual XII_ALWAYS_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><b>SetDebugNamePlatform</b> (<a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sName) const</td></tr>
+<tr class="separator:a5318e759b1a48c178bef4f80402c29a3 inherit pro_methods_classxii_g_a_l_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
 Friends</h2></td></tr>
@@ -241,35 +236,6 @@ static const <a class="el" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a>
 <tr class="separator:ab4e8e8621c03c91881e0915eebbff08c inherit pro_attribs_classxii_g_a_l_command_queue"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a0b4fcf5b7756f9097659c7b0aaf6fda2" name="a0b4fcf5b7756f9097659c7b0aaf6fda2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0b4fcf5b7756f9097659c7b0aaf6fda2">&#9670;&#160;</a></span>BeginCommandList()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="../../d8/d9b/classxii_shared_ptr.html">xiiSharedPtr</a>&lt; <a class="el" href="../../dc/d80/classxii_g_a_l_command_list.html">xiiGALCommandList</a> &gt; xiiGALCommandQueueVulkan::BeginCommandList </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel final">final</span><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>This begins a command list for recording commands. </p>
-
-<p>Implements <a class="el" href="../../d1/dd2/classxii_g_a_l_command_queue.html#a2acbd61e1f081896d8c3af1128d152a7">xiiGALCommandQueue</a>.</p>
-
-</div>
-</div>
 <a id="a09123e6969bc0a158158d5c422506283" name="a09123e6969bc0a158158d5c422506283"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a09123e6969bc0a158158d5c422506283">&#9670;&#160;</a></span>GetCompletedFenceValue()</h2>
 
@@ -328,8 +294,8 @@ static const <a class="el" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a>
 
 </div>
 </div>
-<a id="a8d41dac3a909546a21968e126423b925" name="a8d41dac3a909546a21968e126423b925"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8d41dac3a909546a21968e126423b925">&#9670;&#160;</a></span>SetDebugNamePlatform()</h2>
+<a id="aa18f456c129d0bb0c1c36573cd4c532c" name="aa18f456c129d0bb0c1c36573cd4c532c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa18f456c129d0bb0c1c36573cd4c532c">&#9670;&#160;</a></span>SubmitPlatform()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -338,20 +304,20 @@ static const <a class="el" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void xiiGALCommandQueueVulkan::SetDebugNamePlatform </td>
+          <td class="memname">xiiUInt64 xiiGALCommandQueueVulkan::SubmitPlatform </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a></td>          <td class="paramname"><span class="paramname"><em>sName</em></span></td><td>)</td>
-          <td> const</td>
+          <td class="paramtype"><a class="el" href="../../d8/d9b/classxii_shared_ptr.html">xiiSharedPtr</a>&lt; <a class="el" href="../../dc/d80/classxii_g_a_l_command_list.html">xiiGALCommandList</a> &gt;</td>          <td class="paramname"><span class="paramname"><em>pCommandList</em></span></td><td>)</td>
+          <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel final">final</span><span class="mlabel override">override</span><span class="mlabel protected">protected</span><span class="mlabel virtual">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel final">final</span><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Reimplemented from <a class="el" href="../../d3/dda/classxii_g_a_l_object.html">xiiGALObject</a>.</p>
+<p>Implements <a class="el" href="../../d1/dd2/classxii_g_a_l_command_queue.html">xiiGALCommandQueue</a>.</p>
 
 </div>
 </div>
@@ -394,7 +360,7 @@ static const <a class="el" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d1/d83/classxii_g_a_l_command_queue_vulkan.html">xiiGALCommandQueueVulkan</a></li>
-    <li class="footer">Generated on Sat Jul 12 2025 04:06:41 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Sun Jul 20 2025 23:06:46 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 </body>

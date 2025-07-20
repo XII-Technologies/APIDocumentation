@@ -106,7 +106,7 @@ $(function(){initNavTree('db/db0/structxii_g_a_l_command_list_creation_descripti
 </div><!--header-->
 <div class="contents">
 
-<p>This describes the command list creation description.  
+<p>Describes the parameters for creating a GAL command list.  
  <a href="#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="../../d0/d37/_command_list_8h_source.html">CommandList.h</a>&gt;</code></p>
@@ -138,14 +138,114 @@ xiiUInt32&#160;</td><td class="memItemRight" valign="bottom"><b>CalculateHash</b
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a0726477e89071e634f9c107188c09ab9" id="r_a0726477e89071e634f9c107188c09ab9"><td class="memItemLeft" align="right" valign="top"><a id="a0726477e89071e634f9c107188c09ab9" name="a0726477e89071e634f9c107188c09ab9"></a>
-<a class="el" href="../../d7/d55/structxii_bitflags.html">xiiBitflags</a>&lt; <a class="el" href="../../d7/db4/structxii_g_a_l_command_queue_type.html">xiiGALCommandQueueType</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_QueueType</b> = <a class="el" href="../../d7/db4/structxii_g_a_l_command_queue_type.html#a47dd1577b4fcd1112a73e9a4798421cba54e7b66302b3311cb9120db765bef28b">xiiGALCommandQueueType::Unknown</a></td></tr>
-<tr class="memdesc:a0726477e89071e634f9c107188c09ab9"><td class="mdescLeft">&#160;</td><td class="mdescRight">The command queue type that this command list uses. <br /></td></tr>
-<tr class="separator:a0726477e89071e634f9c107188c09ab9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab42bcca9367859e52df486cc5277bb2a" id="r_ab42bcca9367859e52df486cc5277bb2a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/d55/structxii_bitflags.html">xiiBitflags</a>&lt; <a class="el" href="../../d2/d0b/structxii_g_a_l_command_queue_flags.html">xiiGALCommandQueueFlags</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab42bcca9367859e52df486cc5277bb2a">m_QueueFlags</a> = <a class="el" href="../../d2/d0b/structxii_g_a_l_command_queue_flags.html#ab89533563cac26a42b13cdb1490ca97da3a8ec70336e6212c7f9845654930836c">xiiGALCommandQueueFlags::None</a></td></tr>
+<tr class="memdesc:ab42bcca9367859e52df486cc5277bb2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specifies the functional capabilities required by this command list.  <br /></td></tr>
+<tr class="separator:ab42bcca9367859e52df486cc5277bb2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b7d179857a97de0c46d5ad54496ee64" id="r_a7b7d179857a97de0c46d5ad54496ee64"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/d55/structxii_bitflags.html">xiiBitflags</a>&lt; <a class="el" href="../../da/db4/structxii_g_a_l_command_list_flags.html">xiiGALCommandListFlags</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7b7d179857a97de0c46d5ad54496ee64">m_Flags</a> = <a class="el" href="../../da/db4/structxii_g_a_l_command_list_flags.html#a28e497a5a7788ab05d35f451ed94ffd8a08bfd70748bac32dd86d2e30fc58852e">xiiGALCommandListFlags::None</a></td></tr>
+<tr class="memdesc:a7b7d179857a97de0c46d5ad54496ee64"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flags controlling command list submission and recording behavior.  <br /></td></tr>
+<tr class="separator:a7b7d179857a97de0c46d5ad54496ee64"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a627e1ead7554136ff944a16c052feb37" id="r_a627e1ead7554136ff944a16c052feb37"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d8/d9b/classxii_shared_ptr.html">xiiSharedPtr</a>&lt; <a class="el" href="../../d1/dbe/classxii_g_a_l_render_pass.html">xiiGALRenderPass</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a627e1ead7554136ff944a16c052feb37">m_pRenderPass</a></td></tr>
+<tr class="memdesc:a627e1ead7554136ff944a16c052feb37"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specifies the render pass to be used when recording this command list.  <br /></td></tr>
+<tr class="separator:a627e1ead7554136ff944a16c052feb37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93c72a218eb7d00fb8bb8dd3c23c2014" id="r_a93c72a218eb7d00fb8bb8dd3c23c2014"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d8/d9b/classxii_shared_ptr.html">xiiSharedPtr</a>&lt; <a class="el" href="../../db/d39/classxii_g_a_l_framebuffer.html">xiiGALFramebuffer</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a93c72a218eb7d00fb8bb8dd3c23c2014">m_pFramebuffer</a></td></tr>
+<tr class="memdesc:a93c72a218eb7d00fb8bb8dd3c23c2014"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specifies the framebuffer associated with the selected render pass.  <br /></td></tr>
+<tr class="separator:a93c72a218eb7d00fb8bb8dd3c23c2014"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0eace462a2df282d4486f416b9bfa294" id="r_a0eace462a2df282d4486f416b9bfa294"><td class="memItemLeft" align="right" valign="top">xiiUInt32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0eace462a2df282d4486f416b9bfa294">m_uiSubPassIndex</a> = 0U</td></tr>
+<tr class="memdesc:a0eace462a2df282d4486f416b9bfa294"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates the subpass within the render pass that this command list targets.  <br /></td></tr>
+<tr class="separator:a0eace462a2df282d4486f416b9bfa294"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>This describes the command list creation description. </p>
-</div><hr/>The documentation for this struct was generated from the following file:<ul>
+<div class="textblock"><p>Describes the parameters for creating a GAL command list. </p>
+<p>This structure is used to configure a command list in the Graphics Abstraction Layer (GAL). It defines which queue capabilities this command list targets and how it behaves in terms of submission and encoding.</p>
+<p>The queue flags represent the functional domains this command list is allowed to access (e.g., graphics, compute, copy), which are used to validate command recording. </p>
+</div><h2 class="groupheader">Member Data Documentation</h2>
+<a id="a7b7d179857a97de0c46d5ad54496ee64" name="a7b7d179857a97de0c46d5ad54496ee64"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b7d179857a97de0c46d5ad54496ee64">&#9670;&#160;</a></span>m_Flags</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d7/d55/structxii_bitflags.html">xiiBitflags</a>&lt;<a class="el" href="../../da/db4/structxii_g_a_l_command_list_flags.html">xiiGALCommandListFlags</a>&gt; xiiGALCommandListCreationDescription::m_Flags = <a class="el" href="../../da/db4/structxii_g_a_l_command_list_flags.html#a28e497a5a7788ab05d35f451ed94ffd8a08bfd70748bac32dd86d2e30fc58852e">xiiGALCommandListFlags::None</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Flags controlling command list submission and recording behavior. </p>
+<p>These flags define whether the command list is secondary, supports multiple submissions, or is immediately submitted after encoding. Use these flags to optimize command list lifetimes and submission patterns. </p>
+
+</div>
+</div>
+<a id="a93c72a218eb7d00fb8bb8dd3c23c2014" name="a93c72a218eb7d00fb8bb8dd3c23c2014"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a93c72a218eb7d00fb8bb8dd3c23c2014">&#9670;&#160;</a></span>m_pFramebuffer</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d8/d9b/classxii_shared_ptr.html">xiiSharedPtr</a>&lt;<a class="el" href="../../db/d39/classxii_g_a_l_framebuffer.html">xiiGALFramebuffer</a>&gt; xiiGALCommandListCreationDescription::m_pFramebuffer</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Specifies the framebuffer associated with the selected render pass. </p>
+<p>The framebuffer provides the actual image attachments used during rendering. It must be compatible with the render pass and is required when submitting graphics commands that depend on render targets. </p>
+
+</div>
+</div>
+<a id="a627e1ead7554136ff944a16c052feb37" name="a627e1ead7554136ff944a16c052feb37"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a627e1ead7554136ff944a16c052feb37">&#9670;&#160;</a></span>m_pRenderPass</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d8/d9b/classxii_shared_ptr.html">xiiSharedPtr</a>&lt;<a class="el" href="../../d1/dbe/classxii_g_a_l_render_pass.html">xiiGALRenderPass</a>&gt; xiiGALCommandListCreationDescription::m_pRenderPass</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Specifies the render pass to be used when recording this command list. </p>
+<p>The render pass defines the sequence of rendering operations and attachment formats. This must match the layout expected by the framebuffer. Required for command lists that record graphics operations within a render pass scope. </p>
+
+</div>
+</div>
+<a id="ab42bcca9367859e52df486cc5277bb2a" name="ab42bcca9367859e52df486cc5277bb2a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab42bcca9367859e52df486cc5277bb2a">&#9670;&#160;</a></span>m_QueueFlags</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d7/d55/structxii_bitflags.html">xiiBitflags</a>&lt;<a class="el" href="../../d2/d0b/structxii_g_a_l_command_queue_flags.html">xiiGALCommandQueueFlags</a>&gt; xiiGALCommandListCreationDescription::m_QueueFlags = <a class="el" href="../../d2/d0b/structxii_g_a_l_command_queue_flags.html#ab89533563cac26a42b13cdb1490ca97da3a8ec70336e6212c7f9845654930836c">xiiGALCommandQueueFlags::None</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Specifies the functional capabilities required by this command list. </p>
+<p>This bitmask defines which domains the command list can operate in (such as graphics, compute, or copy), and is used to validate that recorded commands are compatible with the submission queue.</p>
+<p>For example, command lists with graphics draw calls must declare support for the Graphics flag. </p>
+
+</div>
+</div>
+<a id="a0eace462a2df282d4486f416b9bfa294" name="a0eace462a2df282d4486f416b9bfa294"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0eace462a2df282d4486f416b9bfa294">&#9670;&#160;</a></span>m_uiSubPassIndex</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">xiiUInt32 xiiGALCommandListCreationDescription::m_uiSubPassIndex = 0U</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Indicates the subpass within the render pass that this command list targets. </p>
+<p>Used to determine which subpass to begin encoding commands in. If multiple subpasses are defined in the render pass, this value selects the active one during recording. Must be within the bounds defined by the render pass configuration. </p>
+
+</div>
+</div>
+<hr/>The documentation for this struct was generated from the following file:<ul>
 <li>/home/runner/work/XII/XII/Source/Engine/GraphicsFoundation/CommandEncoder/<a class="el" href="../../d0/d37/_command_list_8h_source.html">CommandList.h</a></li>
 </ul>
 </div><!-- contents -->
@@ -154,7 +254,7 @@ Public Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../db/db0/structxii_g_a_l_command_list_creation_description.html">xiiGALCommandListCreationDescription</a></li>
-    <li class="footer">Generated on Sat Jul 12 2025 04:06:41 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Sun Jul 20 2025 23:06:46 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 </body>

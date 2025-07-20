@@ -196,10 +196,6 @@ XII_ALWAYS_INLINE <a class="el" href="../../d5/d7f/classxii_g_a_l_staging_buffer
 XII_ALWAYS_INLINE const <a class="el" href="../../db/db0/structxii_g_a_l_command_list_creation_description.html">xiiGALCommandListCreationDescription</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetDescription</b> () const</td></tr>
 <tr class="memdesc:a94c19111b0066ef08cd6062348770ebf inherit pub_methods_classxii_g_a_l_command_list"><td class="mdescLeft">&#160;</td><td class="mdescRight">This returns the creation description for this object. <br /></td></tr>
 <tr class="separator:a94c19111b0066ef08cd6062348770ebf inherit pub_methods_classxii_g_a_l_command_list"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0868adea18175793e479ea6b97b360b1 inherit pub_methods_classxii_g_a_l_command_list" id="r_a0868adea18175793e479ea6b97b360b1"><td class="memItemLeft" align="right" valign="top">
-XII_ALWAYS_INLINE <a class="el" href="../../d1/dd2/classxii_g_a_l_command_queue.html">xiiGALCommandQueue</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetCommandQueue</b> () const</td></tr>
-<tr class="memdesc:a0868adea18175793e479ea6b97b360b1 inherit pub_methods_classxii_g_a_l_command_list"><td class="mdescLeft">&#160;</td><td class="mdescRight">This returns the command queue for this object. <br /></td></tr>
-<tr class="separator:a0868adea18175793e479ea6b97b360b1 inherit pub_methods_classxii_g_a_l_command_list"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4336a8bf755ceb095487227f6c585d0c inherit pub_methods_classxii_g_a_l_command_list" id="r_a4336a8bf755ceb095487227f6c585d0c"><td class="memItemLeft" align="right" valign="top">
 XII_ALWAYS_INLINE <a class="el" href="../../d8/d9b/classxii_shared_ptr.html">xiiSharedPtr</a>&lt; <a class="el" href="../../d0/d7b/classxii_g_a_l_pipeline_state.html">xiiGALPipelineState</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetPipelineState</b> () const</td></tr>
 <tr class="memdesc:a4336a8bf755ceb095487227f6c585d0c inherit pub_methods_classxii_g_a_l_command_list"><td class="mdescLeft">&#160;</td><td class="mdescRight">This returns the active pipeline state handle for this object. <br /></td></tr>
@@ -220,9 +216,19 @@ XII_ALWAYS_INLINE <a class="el" href="../../d8/d9b/classxii_shared_ptr.html">xii
 XII_ALWAYS_INLINE const <a class="el" href="../../d3/ddd/structxii_g_a_l_command_list_statistics.html">xiiGALCommandListStatistics</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetCommandListStatistics</b> () const</td></tr>
 <tr class="memdesc:a05e3ccbb56622ac1d35216e6b7336ef6 inherit pub_methods_classxii_g_a_l_command_list"><td class="mdescLeft">&#160;</td><td class="mdescRight">This returns the command list statistics. <br /></td></tr>
 <tr class="separator:a05e3ccbb56622ac1d35216e6b7336ef6 inherit pub_methods_classxii_g_a_l_command_list"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adff59b3e8c0ef8a8c0cc937fc0df0f84 inherit pub_methods_classxii_g_a_l_command_list" id="r_adff59b3e8c0ef8a8c0cc937fc0df0f84"><td class="memItemLeft" align="right" valign="top">xiiUInt64&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d80/classxii_g_a_l_command_list.html#adff59b3e8c0ef8a8c0cc937fc0df0f84">Submit</a> ()</td></tr>
-<tr class="memdesc:adff59b3e8c0ef8a8c0cc937fc0df0f84 inherit pub_methods_classxii_g_a_l_command_list"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submits a command list to the command queue for execution. The command list is reset after the execution on the command queue.  <br /></td></tr>
-<tr class="separator:adff59b3e8c0ef8a8c0cc937fc0df0f84 inherit pub_methods_classxii_g_a_l_command_list"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a857bc00c0ff79959d90eceb2c5debe89 inherit pub_methods_classxii_g_a_l_command_list" id="r_a857bc00c0ff79959d90eceb2c5debe89"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d80/classxii_g_a_l_command_list.html#a857bc00c0ff79959d90eceb2c5debe89">Begin</a> ()</td></tr>
+<tr class="memdesc:a857bc00c0ff79959d90eceb2c5debe89 inherit pub_methods_classxii_g_a_l_command_list"><td class="mdescLeft">&#160;</td><td class="mdescRight">Begins the command list for recording commands. This method should be called before any command is issued.  <br /></td></tr>
+<tr class="separator:a857bc00c0ff79959d90eceb2c5debe89 inherit pub_methods_classxii_g_a_l_command_list"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32f9b37ac7a21d38243e586497a46e70 inherit pub_methods_classxii_g_a_l_command_list" id="r_a32f9b37ac7a21d38243e586497a46e70"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d80/classxii_g_a_l_command_list.html#a32f9b37ac7a21d38243e586497a46e70">End</a> ()</td></tr>
+<tr class="memdesc:a32f9b37ac7a21d38243e586497a46e70 inherit pub_methods_classxii_g_a_l_command_list"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ends the command list. This method should be called after all commands are issued.  <br /></td></tr>
+<tr class="separator:a32f9b37ac7a21d38243e586497a46e70 inherit pub_methods_classxii_g_a_l_command_list"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aabe345fe21dc3c37d7d261d273a7c7b9 inherit pub_methods_classxii_g_a_l_command_list" id="r_aabe345fe21dc3c37d7d261d273a7c7b9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d80/classxii_g_a_l_command_list.html#aabe345fe21dc3c37d7d261d273a7c7b9">Reset</a> ()</td></tr>
+<tr class="memdesc:aabe345fe21dc3c37d7d261d273a7c7b9 inherit pub_methods_classxii_g_a_l_command_list"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resets the command list. This method is used to clear all commands that have been recorded in the command list.  <br /></td></tr>
+<tr class="separator:aabe345fe21dc3c37d7d261d273a7c7b9 inherit pub_methods_classxii_g_a_l_command_list"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0085c42a0e6525e4715cf85c3ee50b38 inherit pub_methods_classxii_g_a_l_command_list" id="r_a0085c42a0e6525e4715cf85c3ee50b38"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Submit</b> (<a class="el" href="../../d8/d9b/classxii_shared_ptr.html">xiiSharedPtr</a>&lt; <a class="el" href="../../dc/d80/classxii_g_a_l_command_list.html">xiiGALCommandList</a> &gt; pSecondaryCommandList)</td></tr>
+<tr class="memdesc:a0085c42a0e6525e4715cf85c3ee50b38 inherit pub_methods_classxii_g_a_l_command_list"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submits a secondary command list to a primary command list for execution. <br /></td></tr>
+<tr class="separator:a0085c42a0e6525e4715cf85c3ee50b38 inherit pub_methods_classxii_g_a_l_command_list"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6f05c35bde8196d6e7a570537ea7ae53 inherit pub_methods_classxii_g_a_l_command_list" id="r_a6f05c35bde8196d6e7a570537ea7ae53"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d80/classxii_g_a_l_command_list.html#a6f05c35bde8196d6e7a570537ea7ae53">SetPipelineState</a> (<a class="el" href="../../d8/d9b/classxii_shared_ptr.html">xiiSharedPtr</a>&lt; <a class="el" href="../../d0/d7b/classxii_g_a_l_pipeline_state.html">xiiGALPipelineState</a> &gt; pPipelineState)</td></tr>
 <tr class="memdesc:a6f05c35bde8196d6e7a570537ea7ae53 inherit pub_methods_classxii_g_a_l_command_list"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the pipeline state object for the command list.  <br /></td></tr>
 <tr class="separator:a6f05c35bde8196d6e7a570537ea7ae53 inherit pub_methods_classxii_g_a_l_command_list"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -404,7 +410,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>InvalidateState</b> (
 XII_ALWAYS_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><b>AssertRenderingThread</b> () const</td></tr>
 <tr class="separator:a5e135cda04a0e89ce9badc983e303526 inherit pub_methods_classxii_g_a_l_command_list"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a74b8aa790c7515312427252a3b0417ed inherit pub_methods_classxii_g_a_l_command_list" id="r_a74b8aa790c7515312427252a3b0417ed"><td class="memItemLeft" align="right" valign="top">
-XII_ALWAYS_INLINE <a class="el" href="../../dc/d80/classxii_g_a_l_command_list.html#a144bbbf6d64c7ff201bda0b60ab10121">RecordingState</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetRecordingState</b> () const</td></tr>
+XII_ALWAYS_INLINE <a class="el" href="../../dc/d80/classxii_g_a_l_command_list.html#a81baaed91d436d04e5c4b3b58c3d03f5">RecordingState</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetRecordingState</b> () const</td></tr>
 <tr class="memdesc:a74b8aa790c7515312427252a3b0417ed inherit pub_methods_classxii_g_a_l_command_list"><td class="mdescLeft">&#160;</td><td class="mdescRight">This returns the command list recording state. <br /></td></tr>
 <tr class="separator:a74b8aa790c7515312427252a3b0417ed inherit pub_methods_classxii_g_a_l_command_list"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaab04e8fafe6207b3002873337ff38a0 inherit pub_methods_classxii_g_a_l_command_list" id="r_aaab04e8fafe6207b3002873337ff38a0"><td class="memItemLeft" align="right" valign="top">
@@ -472,9 +478,11 @@ xiiUInt32&#160;</td><td class="memItemRight" valign="bottom"><b>GetRefCount</b> 
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:a4075b3fb0aa53c117b87bd411b1beb6a" id="r_a4075b3fb0aa53c117b87bd411b1beb6a"><td class="memItemLeft" align="right" valign="top"><a id="a4075b3fb0aa53c117b87bd411b1beb6a" name="a4075b3fb0aa53c117b87bd411b1beb6a"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>xiiGALCommandListVulkan</b> (<a class="el" href="../../d8/d9b/classxii_shared_ptr.html">xiiSharedPtr</a>&lt; <a class="el" href="../../d3/d6b/classxii_g_a_l_device_vulkan.html">xiiGALDeviceVulkan</a> &gt; pDeviceVulkan, <a class="el" href="../../d1/d83/classxii_g_a_l_command_queue_vulkan.html">xiiGALCommandQueueVulkan</a> *pCommandQueueVulkan, <a class="el" href="../../da/d84/classxii_g_a_l_command_buffer_pool_vulkan.html">xiiGALCommandBufferPoolVulkan</a> *pCommandBufferPool, const <a class="el" href="../../db/db0/structxii_g_a_l_command_list_creation_description.html">xiiGALCommandListCreationDescription</a> &amp;creationDescription)</td></tr>
-<tr class="separator:a4075b3fb0aa53c117b87bd411b1beb6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae73a3c21cfdd1e9bc430b89edf30f5a2" id="r_ae73a3c21cfdd1e9bc430b89edf30f5a2"><td class="memItemLeft" align="right" valign="top"><a id="ae73a3c21cfdd1e9bc430b89edf30f5a2" name="ae73a3c21cfdd1e9bc430b89edf30f5a2"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>xiiGALCommandListVulkan</b> (<a class="el" href="../../d8/d9b/classxii_shared_ptr.html">xiiSharedPtr</a>&lt; <a class="el" href="../../d3/d6b/classxii_g_a_l_device_vulkan.html">xiiGALDeviceVulkan</a> &gt; pDeviceVulkan, const <a class="el" href="../../db/db0/structxii_g_a_l_command_list_creation_description.html">xiiGALCommandListCreationDescription</a> &amp;creationDescription)</td></tr>
+<tr class="separator:ae73a3c21cfdd1e9bc430b89edf30f5a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58d6ecfea978d39075cd10b54465ef5b" id="r_a58d6ecfea978d39075cd10b54465ef5b"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a58d6ecfea978d39075cd10b54465ef5b">InitPlatform</a> () override final</td></tr>
+<tr class="separator:a58d6ecfea978d39075cd10b54465ef5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8c3fc02d7bd947df7dd995277419d93f" id="r_a8c3fc02d7bd947df7dd995277419d93f"><td class="memItemLeft" align="right" valign="top"><a id="a8c3fc02d7bd947df7dd995277419d93f" name="a8c3fc02d7bd947df7dd995277419d93f"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>BeginPlatform</b> () override final</td></tr>
 <tr class="separator:a8c3fc02d7bd947df7dd995277419d93f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -484,9 +492,9 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>EndPlatform</
 <tr class="memitem:a5125d9488e17762b9b13421ecb623532" id="r_a5125d9488e17762b9b13421ecb623532"><td class="memItemLeft" align="right" valign="top"><a id="a5125d9488e17762b9b13421ecb623532" name="a5125d9488e17762b9b13421ecb623532"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>ResetPlatform</b> () override final</td></tr>
 <tr class="separator:a5125d9488e17762b9b13421ecb623532"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae3a7110eb24ddafc9fbd854779618f90" id="r_ae3a7110eb24ddafc9fbd854779618f90"><td class="memItemLeft" align="right" valign="top"><a id="ae3a7110eb24ddafc9fbd854779618f90" name="ae3a7110eb24ddafc9fbd854779618f90"></a>
-virtual xiiUInt64&#160;</td><td class="memItemRight" valign="bottom"><b>SubmitPlatform</b> () override final</td></tr>
-<tr class="separator:ae3a7110eb24ddafc9fbd854779618f90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9377759ce7487a2812087bbb196eb4b1" id="r_a9377759ce7487a2812087bbb196eb4b1"><td class="memItemLeft" align="right" valign="top"><a id="a9377759ce7487a2812087bbb196eb4b1" name="a9377759ce7487a2812087bbb196eb4b1"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SubmitPlatform</b> (<a class="el" href="../../d8/d9b/classxii_shared_ptr.html">xiiSharedPtr</a>&lt; <a class="el" href="../../dc/d80/classxii_g_a_l_command_list.html">xiiGALCommandList</a> &gt; pSecondaryCommandList) override final</td></tr>
+<tr class="separator:a9377759ce7487a2812087bbb196eb4b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a220be9da005a9fdc215285eb7ae1bc61" id="r_a220be9da005a9fdc215285eb7ae1bc61"><td class="memItemLeft" align="right" valign="top"><a id="a220be9da005a9fdc215285eb7ae1bc61" name="a220be9da005a9fdc215285eb7ae1bc61"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SetPipelineStatePlatform</b> (<a class="el" href="../../d8/d9b/classxii_shared_ptr.html">xiiSharedPtr</a>&lt; <a class="el" href="../../d0/d7b/classxii_g_a_l_pipeline_state.html">xiiGALPipelineState</a> &gt; pPipelineState) override final</td></tr>
 <tr class="separator:a220be9da005a9fdc215285eb7ae1bc61"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -640,27 +648,18 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>InvalidateSta
 <tr class="memitem:a172d84215b3400a34b8da72e430f408d" id="r_a172d84215b3400a34b8da72e430f408d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a172d84215b3400a34b8da72e430f408d">SetDebugNamePlatform</a> (<a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sName) const override final</td></tr>
 <tr class="separator:a172d84215b3400a34b8da72e430f408d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_classxii_g_a_l_command_list"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_methods_classxii_g_a_l_command_list')"><img src="../../closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="../../dc/d80/classxii_g_a_l_command_list.html">xiiGALCommandList</a></td></tr>
-<tr class="memitem:a9384bcee9e53cecf24656fd52dcd44c9 inherit pro_methods_classxii_g_a_l_command_list" id="r_a9384bcee9e53cecf24656fd52dcd44c9"><td class="memItemLeft" align="right" valign="top">
-&#160;</td><td class="memItemRight" valign="bottom"><b>xiiGALCommandList</b> (<a class="el" href="../../d8/d9b/classxii_shared_ptr.html">xiiSharedPtr</a>&lt; <a class="el" href="../../d5/d19/classxii_g_a_l_device.html">xiiGALDevice</a> &gt; pDevice, <a class="el" href="../../d1/dd2/classxii_g_a_l_command_queue.html">xiiGALCommandQueue</a> *pCommandQueue, const <a class="el" href="../../db/db0/structxii_g_a_l_command_list_creation_description.html">xiiGALCommandListCreationDescription</a> &amp;creationDescription)</td></tr>
-<tr class="separator:a9384bcee9e53cecf24656fd52dcd44c9 inherit pro_methods_classxii_g_a_l_command_list"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a857bc00c0ff79959d90eceb2c5debe89 inherit pro_methods_classxii_g_a_l_command_list" id="r_a857bc00c0ff79959d90eceb2c5debe89"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d80/classxii_g_a_l_command_list.html#a857bc00c0ff79959d90eceb2c5debe89">Begin</a> ()</td></tr>
-<tr class="memdesc:a857bc00c0ff79959d90eceb2c5debe89 inherit pro_methods_classxii_g_a_l_command_list"><td class="mdescLeft">&#160;</td><td class="mdescRight">Begins the command list for recording commands. This method should be called before any command is issued.  <br /></td></tr>
-<tr class="separator:a857bc00c0ff79959d90eceb2c5debe89 inherit pro_methods_classxii_g_a_l_command_list"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a32f9b37ac7a21d38243e586497a46e70 inherit pro_methods_classxii_g_a_l_command_list" id="r_a32f9b37ac7a21d38243e586497a46e70"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d80/classxii_g_a_l_command_list.html#a32f9b37ac7a21d38243e586497a46e70">End</a> ()</td></tr>
-<tr class="memdesc:a32f9b37ac7a21d38243e586497a46e70 inherit pro_methods_classxii_g_a_l_command_list"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ends the command list. This method should be called after all commands are issued.  <br /></td></tr>
-<tr class="separator:a32f9b37ac7a21d38243e586497a46e70 inherit pro_methods_classxii_g_a_l_command_list"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aabe345fe21dc3c37d7d261d273a7c7b9 inherit pro_methods_classxii_g_a_l_command_list" id="r_aabe345fe21dc3c37d7d261d273a7c7b9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d80/classxii_g_a_l_command_list.html#aabe345fe21dc3c37d7d261d273a7c7b9">Reset</a> ()</td></tr>
-<tr class="memdesc:aabe345fe21dc3c37d7d261d273a7c7b9 inherit pro_methods_classxii_g_a_l_command_list"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resets the command list. This method is used to clear all commands that have been recorded in the command list.  <br /></td></tr>
-<tr class="separator:aabe345fe21dc3c37d7d261d273a7c7b9 inherit pro_methods_classxii_g_a_l_command_list"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af982f4918fc725709484b83f6c615c90 inherit pro_methods_classxii_g_a_l_command_list" id="r_af982f4918fc725709484b83f6c615c90"><td class="memItemLeft" align="right" valign="top">
+&#160;</td><td class="memItemRight" valign="bottom"><b>xiiGALCommandList</b> (<a class="el" href="../../d8/d9b/classxii_shared_ptr.html">xiiSharedPtr</a>&lt; <a class="el" href="../../d5/d19/classxii_g_a_l_device.html">xiiGALDevice</a> &gt; pDevice, const <a class="el" href="../../db/db0/structxii_g_a_l_command_list_creation_description.html">xiiGALCommandListCreationDescription</a> &amp;creationDescription)</td></tr>
+<tr class="separator:af982f4918fc725709484b83f6c615c90 inherit pro_methods_classxii_g_a_l_command_list"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aec3a6c9ecfc6776f0939eb07551a75ba inherit pro_methods_classxii_g_a_l_command_list" id="r_aec3a6c9ecfc6776f0939eb07551a75ba"><td class="memItemLeft" align="right" valign="top">
 void&#160;</td><td class="memItemRight" valign="bottom"><b>ValidateTextureRegion</b> (const <a class="el" href="../../de/dd4/structxii_g_a_l_texture_creation_description.html">xiiGALTextureCreationDescription</a> &amp;textureDescription, xiiUInt32 uiMipLevel, xiiUInt32 uiSlice, const <a class="el" href="../../d2/dd6/classxii_bounding_box_template.html">xiiBoundingBoxU32</a> &amp;box)</td></tr>
 <tr class="separator:aec3a6c9ecfc6776f0939eb07551a75ba inherit pro_methods_classxii_g_a_l_command_list"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a322a68bee12c326d74b980ceea9ea0de inherit pro_methods_classxii_g_a_l_command_list" id="r_a322a68bee12c326d74b980ceea9ea0de"><td class="memItemLeft" align="right" valign="top">
 void&#160;</td><td class="memItemRight" valign="bottom"><b>ValidateTextureUpdateRegion</b> (const <a class="el" href="../../de/dd4/structxii_g_a_l_texture_creation_description.html">xiiGALTextureCreationDescription</a> &amp;textureDescription, xiiUInt32 uiMipLevel, xiiUInt32 uiSlice, const <a class="el" href="../../d2/dd6/classxii_bounding_box_template.html">xiiBoundingBoxU32</a> &amp;destinationBox, const <a class="el" href="../../d3/d22/structxii_g_a_l_texture_sub_resource_data.html">xiiGALTextureSubResourceData</a> &amp;subresourceData)</td></tr>
 <tr class="separator:a322a68bee12c326d74b980ceea9ea0de inherit pro_methods_classxii_g_a_l_command_list"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aedc924576ad0aaf18eb52508998b7478 inherit pro_methods_classxii_g_a_l_command_list" id="r_aedc924576ad0aaf18eb52508998b7478"><td class="memItemLeft" align="right" valign="top">
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>VerifyResourceState</b> (<a class="el" href="../../d7/d55/structxii_bitflags.html">xiiBitflags</a>&lt; <a class="el" href="../../d6/dec/structxii_g_a_l_resource_state_flags.html">xiiGALResourceStateFlags</a> &gt; stateFlags, <a class="el" href="../../d7/d55/structxii_bitflags.html">xiiBitflags</a>&lt; <a class="el" href="../../d7/db4/structxii_g_a_l_command_queue_type.html">xiiGALCommandQueueType</a> &gt; queueType, const char *szParameterName) const</td></tr>
-<tr class="separator:aedc924576ad0aaf18eb52508998b7478 inherit pro_methods_classxii_g_a_l_command_list"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02abc389ed19352e36984e80ad3a5a68 inherit pro_methods_classxii_g_a_l_command_list" id="r_a02abc389ed19352e36984e80ad3a5a68"><td class="memItemLeft" align="right" valign="top">
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>VerifyResourceState</b> (<a class="el" href="../../d7/d55/structxii_bitflags.html">xiiBitflags</a>&lt; <a class="el" href="../../d6/dec/structxii_g_a_l_resource_state_flags.html">xiiGALResourceStateFlags</a> &gt; stateFlags, <a class="el" href="../../d7/d55/structxii_bitflags.html">xiiBitflags</a>&lt; <a class="el" href="../../d2/d0b/structxii_g_a_l_command_queue_flags.html">xiiGALCommandQueueFlags</a> &gt; queueFlags, const char *szParameterName) const</td></tr>
+<tr class="separator:a02abc389ed19352e36984e80ad3a5a68 inherit pro_methods_classxii_g_a_l_command_list"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a45f8d4ea2428fea8aaefb3ca41eccd5e inherit pro_methods_classxii_g_a_l_command_list" id="r_a45f8d4ea2428fea8aaefb3ca41eccd5e"><td class="memItemLeft" align="right" valign="top">
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>VerifyResourceStates</b> (<a class="el" href="../../d7/d55/structxii_bitflags.html">xiiBitflags</a>&lt; <a class="el" href="../../d6/dec/structxii_g_a_l_resource_state_flags.html">xiiGALResourceStateFlags</a> &gt; stateFlags, bool bIsTexture) const</td></tr>
 <tr class="separator:a45f8d4ea2428fea8aaefb3ca41eccd5e inherit pro_methods_classxii_g_a_l_command_list"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -696,13 +695,12 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>xiiMemoryUtils</b></
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pub_types_classxii_g_a_l_command_list"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_types_classxii_g_a_l_command_list')"><img src="../../closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="../../dc/d80/classxii_g_a_l_command_list.html">xiiGALCommandList</a></td></tr>
-<tr class="memitem:a144bbbf6d64c7ff201bda0b60ab10121 inherit pub_types_classxii_g_a_l_command_list" id="r_a144bbbf6d64c7ff201bda0b60ab10121"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d80/classxii_g_a_l_command_list.html#a144bbbf6d64c7ff201bda0b60ab10121">RecordingState</a> { <a class="el" href="../../dc/d80/classxii_g_a_l_command_list.html#a144bbbf6d64c7ff201bda0b60ab10121ac5564d2e8b8e0ae08bf4363f2b947166">Recording</a>
-, <a class="el" href="../../dc/d80/classxii_g_a_l_command_list.html#a144bbbf6d64c7ff201bda0b60ab10121a0157fbb99be9622bdaa6e544270c0622">Ended</a>
-, <a class="el" href="../../dc/d80/classxii_g_a_l_command_list.html#a144bbbf6d64c7ff201bda0b60ab10121a526d688f37a86d3c3f27d0c5016eb71d">Reset</a>
-, <a class="el" href="../../dc/d80/classxii_g_a_l_command_list.html#a144bbbf6d64c7ff201bda0b60ab10121a5c835c22429f25992b4371691ecde1a4">Submitted</a>
+<tr class="memitem:a81baaed91d436d04e5c4b3b58c3d03f5 inherit pub_types_classxii_g_a_l_command_list" id="r_a81baaed91d436d04e5c4b3b58c3d03f5"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d80/classxii_g_a_l_command_list.html#a81baaed91d436d04e5c4b3b58c3d03f5">RecordingState</a> : xiiUInt8 { <a class="el" href="../../dc/d80/classxii_g_a_l_command_list.html#a81baaed91d436d04e5c4b3b58c3d03f5a526d688f37a86d3c3f27d0c5016eb71d">Reset</a> = 0U
+, <a class="el" href="../../dc/d80/classxii_g_a_l_command_list.html#a81baaed91d436d04e5c4b3b58c3d03f5ac5564d2e8b8e0ae08bf4363f2b947166">Recording</a>
+, <a class="el" href="../../dc/d80/classxii_g_a_l_command_list.html#a81baaed91d436d04e5c4b3b58c3d03f5a0157fbb99be9622bdaa6e544270c0622">Ended</a>
  }</td></tr>
-<tr class="memdesc:a144bbbf6d64c7ff201bda0b60ab10121"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enum class representing the state of a command list recording.  <a href="../../dc/d80/classxii_g_a_l_command_list.html#a144bbbf6d64c7ff201bda0b60ab10121">More...</a><br /></td></tr>
-<tr class="separator:a144bbbf6d64c7ff201bda0b60ab10121 inherit pub_types_classxii_g_a_l_command_list"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memdesc:a81baaed91d436d04e5c4b3b58c3d03f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enum class representing the state of a command list recording.  <a href="../../dc/d80/classxii_g_a_l_command_list.html#a81baaed91d436d04e5c4b3b58c3d03f5">More...</a><br /></td></tr>
+<tr class="separator:a81baaed91d436d04e5c4b3b58c3d03f5 inherit pub_types_classxii_g_a_l_command_list"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_static_methods_classxii_no_base"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_static_methods_classxii_no_base')"><img src="../../closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="../../d2/d38/classxii_no_base.html">xiiNoBase</a></td></tr>
 <tr class="memitem:a4bde433b55ebd55edf63c57239799bba inherit pub_static_methods_classxii_no_base" id="r_a4bde433b55ebd55edf63c57239799bba"><td class="memItemLeft" align="right" valign="top">
 static const <a class="el" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetStaticRTTI</b> ()</td></tr>
@@ -711,11 +709,8 @@ static const <a class="el" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a>
 <tr class="memitem:a2e9c65f49c26a6dfedd1c07a7a28bc17 inherit pro_attribs_classxii_g_a_l_command_list" id="r_a2e9c65f49c26a6dfedd1c07a7a28bc17"><td class="memItemLeft" align="right" valign="top">
 <a class="el" href="../../db/db0/structxii_g_a_l_command_list_creation_description.html">xiiGALCommandListCreationDescription</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_Description</b></td></tr>
 <tr class="separator:a2e9c65f49c26a6dfedd1c07a7a28bc17 inherit pro_attribs_classxii_g_a_l_command_list"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5ee0791d823a1711c251458c10f1e90b inherit pro_attribs_classxii_g_a_l_command_list" id="r_a5ee0791d823a1711c251458c10f1e90b"><td class="memItemLeft" align="right" valign="top">
-<a class="el" href="../../d1/dd2/classxii_g_a_l_command_queue.html">xiiGALCommandQueue</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_pCommandQueue</b></td></tr>
-<tr class="separator:a5ee0791d823a1711c251458c10f1e90b inherit pro_attribs_classxii_g_a_l_command_list"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7f076dc33868533aebf99153b995521b inherit pro_attribs_classxii_g_a_l_command_list" id="r_a7f076dc33868533aebf99153b995521b"><td class="memItemLeft" align="right" valign="top">
-<a class="el" href="../../dc/d80/classxii_g_a_l_command_list.html#a144bbbf6d64c7ff201bda0b60ab10121">RecordingState</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_RecordingState</b> = <a class="el" href="../../dc/d80/classxii_g_a_l_command_list.html#a144bbbf6d64c7ff201bda0b60ab10121a526d688f37a86d3c3f27d0c5016eb71d">RecordingState::Reset</a></td></tr>
+<a class="el" href="../../dc/d80/classxii_g_a_l_command_list.html#a81baaed91d436d04e5c4b3b58c3d03f5">RecordingState</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_RecordingState</b> = <a class="el" href="../../dc/d80/classxii_g_a_l_command_list.html#a81baaed91d436d04e5c4b3b58c3d03f5a526d688f37a86d3c3f27d0c5016eb71d">RecordingState::Reset</a></td></tr>
 <tr class="separator:a7f076dc33868533aebf99153b995521b inherit pro_attribs_classxii_g_a_l_command_list"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab33ab3eba5ecb1c03ea19d73613be4b2 inherit pro_attribs_classxii_g_a_l_command_list" id="r_ab33ab3eba5ecb1c03ea19d73613be4b2"><td class="memItemLeft" align="right" valign="top">
 const bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_bNativeMultiDrawSupported</b></td></tr>
@@ -763,6 +758,33 @@ static constexpr xiiUInt32&#160;</td><td class="memItemRight" valign="bottom"><b
 <tr class="separator:a0757ad27741ed42dfe6876cfcf9c6528 inherit pro_static_attribs_classxii_g_a_l_command_list"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a58d6ecfea978d39075cd10b54465ef5b" name="a58d6ecfea978d39075cd10b54465ef5b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a58d6ecfea978d39075cd10b54465ef5b">&#9670;&#160;</a></span>InitPlatform()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a> xiiGALCommandListVulkan::InitPlatform </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel final">final</span><span class="mlabel override">override</span><span class="mlabel protected">protected</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="../../dc/d80/classxii_g_a_l_command_list.html">xiiGALCommandList</a>.</p>
+
+</div>
+</div>
 <a id="a172d84215b3400a34b8da72e430f408d" name="a172d84215b3400a34b8da72e430f408d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a172d84215b3400a34b8da72e430f408d">&#9670;&#160;</a></span>SetDebugNamePlatform()</h2>
 
@@ -800,7 +822,7 @@ static constexpr xiiUInt32&#160;</td><td class="memItemRight" valign="bottom"><b
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dd/d24/classxii_g_a_l_command_list_vulkan.html">xiiGALCommandListVulkan</a></li>
-    <li class="footer">Generated on Sat Jul 12 2025 04:06:41 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Sun Jul 20 2025 23:06:46 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 </body>

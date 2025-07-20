@@ -105,62 +105,67 @@ $(function(){initNavTree('d3/d10/_dynamic_buffer_pool_vulkan_8h_source.html','..
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &lt;GraphicsVulkan/GraphicsVulkanDLL.h&gt;</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
-<div class="foldopen" id="foldopen00005" data-start="{" data-end="};">
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno"><a class="line" href="../../de/d41/classxii_g_a_l_dynamic_buffer_pool_vulkan.html">    5</a></span><span class="keyword">class </span>XII_GRAPHICSVULKAN_DLL xiiGALDynamicBufferPoolVulkan</div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="keyword">namespace </span>vk</div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>{</div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>  XII_DISALLOW_COPY_AND_ASSIGN(xiiGALDynamicBufferPoolVulkan);</div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>  <span class="keyword">class </span>Buffer;</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>}</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
 <div class="foldopen" id="foldopen00010" data-start="{" data-end="};">
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="../../d9/d27/structxii_g_a_l_dynamic_buffer_pool_vulkan_1_1_dynamic_buffer_page.html">   10</a></span>  <span class="keyword">struct </span><a class="code hl_struct" href="../../d9/d27/structxii_g_a_l_dynamic_buffer_pool_vulkan_1_1_dynamic_buffer_page.html">DynamicBufferPage</a></div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>  {</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    vk::Buffer    m_vkBuffer;</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    VmaAllocation m_VmaAllocation;</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    xiiUInt64     m_uiSize;</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>  };</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="../../de/d41/classxii_g_a_l_dynamic_buffer_pool_vulkan.html">   10</a></span><span class="keyword">class </span>XII_GRAPHICSVULKAN_DLL xiiGALDynamicBufferPoolVulkan</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>{</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>  XII_DISALLOW_COPY_AND_ASSIGN(xiiGALDynamicBufferPoolVulkan);</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keyword">public</span>:</div>
+<div class="foldopen" id="foldopen00015" data-start="{" data-end="};">
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="../../d9/d27/structxii_g_a_l_dynamic_buffer_pool_vulkan_1_1_dynamic_buffer_page.html">   15</a></span>  <span class="keyword">struct </span><a class="code hl_struct" href="../../d9/d27/structxii_g_a_l_dynamic_buffer_pool_vulkan_1_1_dynamic_buffer_page.html">DynamicBufferPage</a></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>  {</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    vk::Buffer          m_vkBuffer;</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    xiiVulkanAllocation m_VulkanAllocation;</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    xiiUInt64           m_uiSize;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>  };</div>
 </div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>  <span class="keywordtype">void</span> CreateDynamicBufferPage();</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>  <span class="keywordtype">void</span> CreateLargeBuffer(xiiUInt64 uiSize);</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>  <a class="code hl_struct" href="../../d2/d1a/structxii_g_a_l_dynamic_buffer_allocation_vulkan.html">xiiGALDynamicBufferAllocationVulkan</a> Allocate(xiiUInt64 uiSize, <span class="keywordtype">bool</span> bForceLargePage = <span class="keyword">false</span>);</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>  <span class="keywordtype">void</span> Reset();</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>  <span class="keyword">friend</span> <span class="keyword">class </span>xiiMemoryUtils;</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>  <span class="keyword">friend</span> <span class="keyword">class </span>xiiGALDeviceVulkan;</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>  <span class="keyword">friend</span> <span class="keyword">class </span>xiiGALCommandQueueVulkan;</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>  <span class="keyword">friend</span> <span class="keyword">class </span>xiiGALCommandListVulkan;</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>  xiiGALDynamicBufferPoolVulkan(xiiGALDeviceVulkan* pDeviceVulkan, xiiUInt32 uiAlignment, vk::BufferUsageFlags vkBufferUsageFlags);</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>  ~xiiGALDynamicBufferPoolVulkan();</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>  <span class="keyword">static</span> <span class="keyword">constexpr</span> xiiUInt64 s_uiDynamicBufferDefaultPageSize = 1 * 1024 * 1024;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>  <span class="keywordtype">void</span> CreateDynamicBufferPage();</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>  <span class="keywordtype">void</span> CreateLargeBuffer(xiiUInt64 uiSize);</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>  <a class="code hl_struct" href="../../d2/d1a/structxii_g_a_l_dynamic_buffer_allocation_vulkan.html">xiiGALDynamicBufferAllocationVulkan</a> Allocate(xiiUInt64 uiSize, <span class="keywordtype">bool</span> bForceLargePage = <span class="keyword">false</span>);</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>  <span class="keywordtype">void</span> Reset();</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>  <span class="keyword">friend</span> <span class="keyword">class </span>xiiMemoryUtils;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>  <span class="keyword">friend</span> <span class="keyword">class </span>xiiGALDeviceVulkan;</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>  <span class="keyword">friend</span> <span class="keyword">class </span>xiiGALCommandQueueVulkan;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>  <span class="keyword">friend</span> <span class="keyword">class </span>xiiGALCommandListVulkan;</div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>  xiiGALDeviceVulkan* m_pDeviceVulkan;</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>  xiiUInt32            m_uiAlignment;</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>  vk::BufferUsageFlags m_vkBufferUsageFlags;</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>  xiiGALDynamicBufferPoolVulkan(xiiGALDeviceVulkan* pDeviceVulkan, xiiUInt32 uiAlignment, vk::BufferUsageFlags vkBufferUsageFlags);</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>  ~xiiGALDynamicBufferPoolVulkan();</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>  <span class="keyword">static</span> <span class="keyword">constexpr</span> xiiUInt64 s_uiDynamicBufferDefaultPageSize = 1 * 1024 * 1024;</div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>  <a class="code hl_class" href="../../dc/da4/classxii_dynamic_array.html">xiiDynamicArray&lt;xiiGALDynamicBufferPoolVulkan::DynamicBufferPage&gt;</a> m_DynamicBufferPages;</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>  <a class="code hl_class" href="../../dc/da4/classxii_dynamic_array.html">xiiDynamicArray&lt;xiiGALDynamicBufferPoolVulkan::DynamicBufferPage&gt;</a> m_LargeAllocations;</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>  xiiUInt32 m_uiPageAllocationCounter   = 0U;</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>  xiiUInt64 m_uiOffsetAllocationCounter = 0U;</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>};</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>  xiiGALDeviceVulkan* m_pDeviceVulkan;</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>  xiiUInt32            m_uiAlignment;</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>  vk::BufferUsageFlags m_vkBufferUsageFlags;</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>  <a class="code hl_class" href="../../dc/da4/classxii_dynamic_array.html">xiiDynamicArray&lt;xiiGALDynamicBufferPoolVulkan::DynamicBufferPage&gt;</a> m_DynamicBufferPages;</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>  <a class="code hl_class" href="../../dc/da4/classxii_dynamic_array.html">xiiDynamicArray&lt;xiiGALDynamicBufferPoolVulkan::DynamicBufferPage&gt;</a> m_LargeAllocations;</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>  xiiUInt32 m_uiPageAllocationCounter   = 0U;</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>  xiiUInt64 m_uiOffsetAllocationCounter = 0U;</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>};</div>
 </div>
 <div class="ttc" id="aclassxii_dynamic_array_html"><div class="ttname"><a href="../../dc/da4/classxii_dynamic_array.html">xiiDynamicArray</a></div><div class="ttdef"><b>Definition</b> DynamicArray.h:81</div></div>
-<div class="ttc" id="astructxii_g_a_l_dynamic_buffer_allocation_vulkan_html"><div class="ttname"><a href="../../d2/d1a/structxii_g_a_l_dynamic_buffer_allocation_vulkan.html">xiiGALDynamicBufferAllocationVulkan</a></div><div class="ttdef"><b>Definition</b> GraphicsVulkanDLL.h:130</div></div>
-<div class="ttc" id="astructxii_g_a_l_dynamic_buffer_pool_vulkan_1_1_dynamic_buffer_page_html"><div class="ttname"><a href="../../d9/d27/structxii_g_a_l_dynamic_buffer_pool_vulkan_1_1_dynamic_buffer_page.html">xiiGALDynamicBufferPoolVulkan::DynamicBufferPage</a></div><div class="ttdef"><b>Definition</b> DynamicBufferPoolVulkan.h:11</div></div>
+<div class="ttc" id="astructxii_g_a_l_dynamic_buffer_allocation_vulkan_html"><div class="ttname"><a href="../../d2/d1a/structxii_g_a_l_dynamic_buffer_allocation_vulkan.html">xiiGALDynamicBufferAllocationVulkan</a></div><div class="ttdef"><b>Definition</b> GraphicsVulkanDLL.h:133</div></div>
+<div class="ttc" id="astructxii_g_a_l_dynamic_buffer_pool_vulkan_1_1_dynamic_buffer_page_html"><div class="ttname"><a href="../../d9/d27/structxii_g_a_l_dynamic_buffer_pool_vulkan_1_1_dynamic_buffer_page.html">xiiGALDynamicBufferPoolVulkan::DynamicBufferPage</a></div><div class="ttdef"><b>Definition</b> DynamicBufferPoolVulkan.h:16</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.html">home</a></li><li class="navelem"><a class="el" href="../../dir_1036706e55c22cab35bc1c58ee689f1d.html">runner</a></li><li class="navelem"><a class="el" href="../../dir_629f8151d55d307162ff2d619fb1783d.html">work</a></li><li class="navelem"><a class="el" href="../../dir_1ddc44fe1263a8c7935fa6130b7d9499.html">XII</a></li><li class="navelem"><a class="el" href="../../dir_2c1b6808f12952f4c36e05ba7068379a.html">XII</a></li><li class="navelem"><a class="el" href="../../dir_b5a1c4ecfca018ad24b729e213296d41.html">Source</a></li><li class="navelem"><a class="el" href="../../dir_e321052006a51284e67389ab20037e7c.html">Engine</a></li><li class="navelem"><a class="el" href="../../dir_32f911672529289aa73bbec1c1630508.html">GraphicsVulkan</a></li><li class="navelem"><a class="el" href="../../dir_aa36bed1a3997cf58123d4006383f2d3.html">Pools</a></li><li class="navelem"><b>DynamicBufferPoolVulkan.h</b></li>
-    <li class="footer">Generated on Sat Jul 12 2025 04:06:39 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Sun Jul 20 2025 23:06:44 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 </body>

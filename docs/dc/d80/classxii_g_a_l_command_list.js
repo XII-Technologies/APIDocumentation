@@ -1,11 +1,10 @@
 var classxii_g_a_l_command_list =
 [
     [ "VertexStreamDescription", "d6/d1d/structxii_g_a_l_command_list_1_1_vertex_stream_description.html", "d6/d1d/structxii_g_a_l_command_list_1_1_vertex_stream_description" ],
-    [ "RecordingState", "dc/d80/classxii_g_a_l_command_list.html#a144bbbf6d64c7ff201bda0b60ab10121", [
-      [ "Recording", "dc/d80/classxii_g_a_l_command_list.html#a144bbbf6d64c7ff201bda0b60ab10121ac5564d2e8b8e0ae08bf4363f2b947166", null ],
-      [ "Ended", "dc/d80/classxii_g_a_l_command_list.html#a144bbbf6d64c7ff201bda0b60ab10121a0157fbb99be9622bdaa6e544270c0622", null ],
-      [ "Reset", "dc/d80/classxii_g_a_l_command_list.html#a144bbbf6d64c7ff201bda0b60ab10121a526d688f37a86d3c3f27d0c5016eb71d", null ],
-      [ "Submitted", "dc/d80/classxii_g_a_l_command_list.html#a144bbbf6d64c7ff201bda0b60ab10121a5c835c22429f25992b4371691ecde1a4", null ]
+    [ "RecordingState", "dc/d80/classxii_g_a_l_command_list.html#a81baaed91d436d04e5c4b3b58c3d03f5", [
+      [ "Reset", "dc/d80/classxii_g_a_l_command_list.html#a81baaed91d436d04e5c4b3b58c3d03f5a526d688f37a86d3c3f27d0c5016eb71d", null ],
+      [ "Recording", "dc/d80/classxii_g_a_l_command_list.html#a81baaed91d436d04e5c4b3b58c3d03f5ac5564d2e8b8e0ae08bf4363f2b947166", null ],
+      [ "Ended", "dc/d80/classxii_g_a_l_command_list.html#a81baaed91d436d04e5c4b3b58c3d03f5a0157fbb99be9622bdaa6e544270c0622", null ]
     ] ],
     [ "Begin", "dc/d80/classxii_g_a_l_command_list.html#a857bc00c0ff79959d90eceb2c5debe89", null ],
     [ "BeginDebugGroup", "dc/d80/classxii_g_a_l_command_list.html#a19992f27f81268a23e4e8c8f58680cb9", null ],
@@ -34,7 +33,6 @@ var classxii_g_a_l_command_list =
     [ "EnqueueSignal", "dc/d80/classxii_g_a_l_command_list.html#ad375651921e4c8a9ecbe351c47cbae46", null ],
     [ "GenerateMips", "dc/d80/classxii_g_a_l_command_list.html#a04476ca046c3014168703706a60bdbee", null ],
     [ "GetCommandListStatistics", "dc/d80/classxii_g_a_l_command_list.html#a05e3ccbb56622ac1d35216e6b7336ef6", null ],
-    [ "GetCommandQueue", "dc/d80/classxii_g_a_l_command_list.html#a0868adea18175793e479ea6b97b360b1", null ],
     [ "GetDescription", "dc/d80/classxii_g_a_l_command_list.html#a94c19111b0066ef08cd6062348770ebf", null ],
     [ "GetFramebuffer", "dc/d80/classxii_g_a_l_command_list.html#a292c6eca551876d9da53fe74a6824c04", null ],
     [ "GetPipelineResourceSignature", "dc/d80/classxii_g_a_l_command_list.html#ab0e93f53d9c193d3c0c8c17ef39945dd", null ],
@@ -72,7 +70,7 @@ var classxii_g_a_l_command_list =
     [ "SetVertexBuffers", "dc/d80/classxii_g_a_l_command_list.html#a34cdaff6dfab592758c89d9c77407279", null ],
     [ "SetViewport", "dc/d80/classxii_g_a_l_command_list.html#a6b9335507a53757b461a4c4c830630f4", null ],
     [ "SetViewports", "dc/d80/classxii_g_a_l_command_list.html#a659ffe468b7a3f5e287773493e0258e1", null ],
-    [ "Submit", "dc/d80/classxii_g_a_l_command_list.html#adff59b3e8c0ef8a8c0cc937fc0df0f84", null ],
+    [ "Submit", "dc/d80/classxii_g_a_l_command_list.html#a0085c42a0e6525e4715cf85c3ee50b38", null ],
     [ "TransitionResourceStates", "dc/d80/classxii_g_a_l_command_list.html#a8fa6b93159ca5dcb5b4e5bbfd20a83e4", null ],
     [ "UnmapBuffer", "dc/d80/classxii_g_a_l_command_list.html#a0c37a0c53841e69bcb476e929164ce94", null ],
     [ "UnmapTextureSubresource", "dc/d80/classxii_g_a_l_command_list.html#a6c4d7493fed8e0971bcaefea4534c2e6", null ],

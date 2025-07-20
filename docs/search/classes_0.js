@@ -16,5 +16,6 @@ var searchData=
   ['arraysizehelper_13',['ArraySizeHelper',['../d5/d39/structxii_internal_1_1_array_size_helper.html',1,'xiiInternal']]],
   ['arraysizehelper_3c_20t_5bn_5d_3e_14',['ArraySizeHelper&lt; T[N]&gt;',['../da/df6/structxii_internal_1_1_array_size_helper_3_01_t_0f_n_0e_4.html',1,'xiiInternal']]],
   ['astnode_15',['AstNode',['../d2/dc1/structxii_visual_script_compiler_1_1_ast_node.html',1,'xiiVisualScriptCompiler']]],
-  ['attributedefinition_16',['AttributeDefinition',['../d1/d4e/structxii_g_a_l_shader_parser_1_1_attribute_definition.html',1,'xiiGALShaderParser']]]
+  ['attributedefinition_16',['AttributeDefinition',['../d1/d4e/structxii_g_a_l_shader_parser_1_1_attribute_definition.html',1,'xiiGALShaderParser']]],
+  ['autocommandbuffer_17',['AutoCommandBuffer',['../db/d3c/structxii_g_a_l_command_buffer_pool_vulkan_1_1_auto_command_buffer.html',1,'xiiGALCommandBufferPoolVulkan']]]
 ];

@@ -105,6 +105,11 @@ $(function(){initNavTree('dc/d0c/structxii_source_format.html','../../'); initRe
   <div class="headertitle"><div class="title">xiiSourceFormat Struct Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Describes the format of pixel data used for textures and attachments in the rendering pipeline.  
+ <a href="#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="../../d6/d5e/_engine_2_graphics_core_2_pipeline_2_declarations_8h_source.html">Declarations.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for xiiSourceFormat:</div>
 <div class="dyncontent">
@@ -147,11 +152,15 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>StorageType</b> = xi
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:ab1eaf6fbf992ff0799277c86e0da5ebe" id="r_ab1eaf6fbf992ff0799277c86e0da5ebe"><td class="memItemLeft" align="right" valign="top"><a id="ab1eaf6fbf992ff0799277c86e0da5ebe" name="ab1eaf6fbf992ff0799277c86e0da5ebe"></a>
-static <a class="el" href="../../de/d10/structxii_g_a_l_resource_format.html#a85df1b2fc240485387136c2211fcebf6">xiiGALResourceFormat::Enum</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetGALResourceFormat</b> (<a class="el" href="#a3a1fde28d4cda014762e29ecbe0be54c">xiiSourceFormat::Enum</a> format, bool bFlipColorChannels=false)</td></tr>
+<tr class="memitem:ab1eaf6fbf992ff0799277c86e0da5ebe" id="r_ab1eaf6fbf992ff0799277c86e0da5ebe"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../de/d10/structxii_g_a_l_resource_format.html#a85df1b2fc240485387136c2211fcebf6">xiiGALResourceFormat::Enum</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab1eaf6fbf992ff0799277c86e0da5ebe">GetGALResourceFormat</a> (<a class="el" href="#a3a1fde28d4cda014762e29ecbe0be54c">xiiSourceFormat::Enum</a> format, bool bFlipColorChannels=false)</td></tr>
+<tr class="memdesc:ab1eaf6fbf992ff0799277c86e0da5ebe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts a <a class="el" href="../../dc/d0c/structxii_source_format.html" title="Describes the format of pixel data used for textures and attachments in the rendering pipeline.">xiiSourceFormat</a> into its corresponding <a class="el" href="../../de/d10/structxii_g_a_l_resource_format.html" title="This describes the available texture formats and generally mirrors the DXGI_FORMAT enumeratinon....">xiiGALResourceFormat</a> for low-level use.  <br /></td></tr>
 <tr class="separator:ab1eaf6fbf992ff0799277c86e0da5ebe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Enumeration Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Describes the format of pixel data used for textures and attachments in the rendering pipeline. </p>
+<p>The source format determines how color, depth, or compressed texture data is stored and interpreted during rendering. It includes both uncompressed and block-compressed formats, floating-point precision options, and sRGB or linear variants.</p>
+<p>These formats are typically used when specifying render target formats, texture asset loading, or framebuffer attachment configurations. </p>
+</div><h2 class="groupheader">Member Enumeration Documentation</h2>
 <a id="a3a1fde28d4cda014762e29ecbe0be54c" name="a3a1fde28d4cda014762e29ecbe0be54c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3a1fde28d4cda014762e29ecbe0be54c">&#9670;&#160;</a></span>Enum</h2>
 
@@ -164,43 +173,83 @@ static <a class="el" href="../../de/d10/structxii_g_a_l_resource_format.html#a85
       </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a3a1fde28d4cda014762e29ecbe0be54ca538bbf7da570cacd4902ac06b69892a9" name="a3a1fde28d4cda014762e29ecbe0be54ca538bbf7da570cacd4902ac06b69892a9"></a>Color4Channel8BitNormalized_sRGB&#160;</td><td class="fielddoc"><p>RGBA 8-bit normalized with sRGB colorspace (default). </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a3a1fde28d4cda014762e29ecbe0be54ca538bbf7da570cacd4902ac06b69892a9" name="a3a1fde28d4cda014762e29ecbe0be54ca538bbf7da570cacd4902ac06b69892a9"></a>Color4Channel8BitNormalized_sRGB&#160;</td><td class="fielddoc"><p>8-bit RGBA, normalized, stored in sRGB color space (default). </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a3a1fde28d4cda014762e29ecbe0be54ca2a29c5949346873fb43a413e2384f410" name="a3a1fde28d4cda014762e29ecbe0be54ca2a29c5949346873fb43a413e2384f410"></a>Color4Channel8BitNormalized&#160;</td><td class="fielddoc"><p>RGBA 8-bit normalized linear. </p>
+<tr><td class="fieldname"><a id="a3a1fde28d4cda014762e29ecbe0be54ca2a29c5949346873fb43a413e2384f410" name="a3a1fde28d4cda014762e29ecbe0be54ca2a29c5949346873fb43a413e2384f410"></a>Color4Channel8BitNormalized&#160;</td><td class="fielddoc"><p>8-bit RGBA, normalized, stored in linear color space. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a3a1fde28d4cda014762e29ecbe0be54cac090c05e1fbaebca08e7e506a2de32ba" name="a3a1fde28d4cda014762e29ecbe0be54cac090c05e1fbaebca08e7e506a2de32ba"></a>Color2Channel16BitFloat&#160;</td><td class="fielddoc"><p>RG 16-bit float. </p>
+<tr><td class="fieldname"><a id="a3a1fde28d4cda014762e29ecbe0be54cac090c05e1fbaebca08e7e506a2de32ba" name="a3a1fde28d4cda014762e29ecbe0be54cac090c05e1fbaebca08e7e506a2de32ba"></a>Color2Channel16BitFloat&#160;</td><td class="fielddoc"><p>16-bit float RG format. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a3a1fde28d4cda014762e29ecbe0be54ca3171c2d18e9114e8445e85c2cb82fbf2" name="a3a1fde28d4cda014762e29ecbe0be54ca3171c2d18e9114e8445e85c2cb82fbf2"></a>Color4Channel16BitFloat&#160;</td><td class="fielddoc"><p>RGBA 16-bit float. </p>
+<tr><td class="fieldname"><a id="a3a1fde28d4cda014762e29ecbe0be54ca3171c2d18e9114e8445e85c2cb82fbf2" name="a3a1fde28d4cda014762e29ecbe0be54ca3171c2d18e9114e8445e85c2cb82fbf2"></a>Color4Channel16BitFloat&#160;</td><td class="fielddoc"><p>16-bit float RGBA format. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a3a1fde28d4cda014762e29ecbe0be54ca2641fa3ea77224a02b93a647c9034d8b" name="a3a1fde28d4cda014762e29ecbe0be54ca2641fa3ea77224a02b93a647c9034d8b"></a>Color2Channel32BitFloat&#160;</td><td class="fielddoc"><p>RG 32-bit float. </p>
+<tr><td class="fieldname"><a id="a3a1fde28d4cda014762e29ecbe0be54ca2641fa3ea77224a02b93a647c9034d8b" name="a3a1fde28d4cda014762e29ecbe0be54ca2641fa3ea77224a02b93a647c9034d8b"></a>Color2Channel32BitFloat&#160;</td><td class="fielddoc"><p>32-bit float RG format. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a3a1fde28d4cda014762e29ecbe0be54cae329a9d34d14af1bdfedba18003458d1" name="a3a1fde28d4cda014762e29ecbe0be54cae329a9d34d14af1bdfedba18003458d1"></a>Color3Channel32BitFloat&#160;</td><td class="fielddoc"><p>RGB 32-bit float. </p>
+<tr><td class="fieldname"><a id="a3a1fde28d4cda014762e29ecbe0be54cae329a9d34d14af1bdfedba18003458d1" name="a3a1fde28d4cda014762e29ecbe0be54cae329a9d34d14af1bdfedba18003458d1"></a>Color3Channel32BitFloat&#160;</td><td class="fielddoc"><p>32-bit float RGB format. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a3a1fde28d4cda014762e29ecbe0be54ca05022ef1d58e935edd3452c0469d16c4" name="a3a1fde28d4cda014762e29ecbe0be54ca05022ef1d58e935edd3452c0469d16c4"></a>Color4Channel32BitFloat&#160;</td><td class="fielddoc"><p>RGBA 32-bit float. </p>
+<tr><td class="fieldname"><a id="a3a1fde28d4cda014762e29ecbe0be54ca05022ef1d58e935edd3452c0469d16c4" name="a3a1fde28d4cda014762e29ecbe0be54ca05022ef1d58e935edd3452c0469d16c4"></a>Color4Channel32BitFloat&#160;</td><td class="fielddoc"><p>32-bit float RGBA format. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a3a1fde28d4cda014762e29ecbe0be54caf583b4ef26eb51317ebae4c997c702b6" name="a3a1fde28d4cda014762e29ecbe0be54caf583b4ef26eb51317ebae4c997c702b6"></a>Color3Channel11_11_10BitFloat&#160;</td><td class="fielddoc"><p>RGB 11-11-10 bit float. </p>
+<tr><td class="fieldname"><a id="a3a1fde28d4cda014762e29ecbe0be54caf583b4ef26eb51317ebae4c997c702b6" name="a3a1fde28d4cda014762e29ecbe0be54caf583b4ef26eb51317ebae4c997c702b6"></a>Color3Channel11_11_10BitFloat&#160;</td><td class="fielddoc"><p>Packed 11-11-10 bit RGB float format. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a3a1fde28d4cda014762e29ecbe0be54caf0fe45f422802b2b6d3d9a84592c5854" name="a3a1fde28d4cda014762e29ecbe0be54caf0fe45f422802b2b6d3d9a84592c5854"></a>Depth16Bit&#160;</td><td class="fielddoc"><p>16-bit depth. </p>
+<tr><td class="fieldname"><a id="a3a1fde28d4cda014762e29ecbe0be54caf0fe45f422802b2b6d3d9a84592c5854" name="a3a1fde28d4cda014762e29ecbe0be54caf0fe45f422802b2b6d3d9a84592c5854"></a>Depth16Bit&#160;</td><td class="fielddoc"><p>16-bit depth-only format. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a3a1fde28d4cda014762e29ecbe0be54ca4ddbd28721404389ef1c47d18b6a7929" name="a3a1fde28d4cda014762e29ecbe0be54ca4ddbd28721404389ef1c47d18b6a7929"></a>Depth24BitStencil8Bit&#160;</td><td class="fielddoc"><p>24-bit depth + 8-bit stencil. </p>
+<tr><td class="fieldname"><a id="a3a1fde28d4cda014762e29ecbe0be54ca4ddbd28721404389ef1c47d18b6a7929" name="a3a1fde28d4cda014762e29ecbe0be54ca4ddbd28721404389ef1c47d18b6a7929"></a>Depth24BitStencil8Bit&#160;</td><td class="fielddoc"><p>Combined 24-bit depth and 8-bit stencil format. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a3a1fde28d4cda014762e29ecbe0be54cae7a4ebb34cc4d077492915b2d3877194" name="a3a1fde28d4cda014762e29ecbe0be54cae7a4ebb34cc4d077492915b2d3877194"></a>Depth32BitFloat&#160;</td><td class="fielddoc"><p>32-bit float depth. </p>
+<tr><td class="fieldname"><a id="a3a1fde28d4cda014762e29ecbe0be54cae7a4ebb34cc4d077492915b2d3877194" name="a3a1fde28d4cda014762e29ecbe0be54cae7a4ebb34cc4d077492915b2d3877194"></a>Depth32BitFloat&#160;</td><td class="fielddoc"><p>32-bit float depth-only format. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a3a1fde28d4cda014762e29ecbe0be54cac0acacc6c40a996c9d5fdebfaddaea8c" name="a3a1fde28d4cda014762e29ecbe0be54cac0acacc6c40a996c9d5fdebfaddaea8c"></a>BC1_RGB_DXT1&#160;</td><td class="fielddoc"><p>DXT1 compression (no alpha). </p>
+<tr><td class="fieldname"><a id="a3a1fde28d4cda014762e29ecbe0be54cac0acacc6c40a996c9d5fdebfaddaea8c" name="a3a1fde28d4cda014762e29ecbe0be54cac0acacc6c40a996c9d5fdebfaddaea8c"></a>BC1_RGB_DXT1&#160;</td><td class="fielddoc"><p>Block-compressed DXT1 format for RGB (no alpha). </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a3a1fde28d4cda014762e29ecbe0be54cac9526a60462dd1f7d69a9bfedd6bc0ec" name="a3a1fde28d4cda014762e29ecbe0be54cac9526a60462dd1f7d69a9bfedd6bc0ec"></a>BC2_RGBA_DXT3&#160;</td><td class="fielddoc"><p>DXT3 compression. </p>
+<tr><td class="fieldname"><a id="a3a1fde28d4cda014762e29ecbe0be54cac9526a60462dd1f7d69a9bfedd6bc0ec" name="a3a1fde28d4cda014762e29ecbe0be54cac9526a60462dd1f7d69a9bfedd6bc0ec"></a>BC2_RGBA_DXT3&#160;</td><td class="fielddoc"><p>Block-compressed DXT3 format for RGBA. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a3a1fde28d4cda014762e29ecbe0be54caeb35511fb74d1adb47745036ae23c379" name="a3a1fde28d4cda014762e29ecbe0be54caeb35511fb74d1adb47745036ae23c379"></a>BC3_RGBA_DXT5&#160;</td><td class="fielddoc"><p>DXT5 compression. </p>
+<tr><td class="fieldname"><a id="a3a1fde28d4cda014762e29ecbe0be54caeb35511fb74d1adb47745036ae23c379" name="a3a1fde28d4cda014762e29ecbe0be54caeb35511fb74d1adb47745036ae23c379"></a>BC3_RGBA_DXT5&#160;</td><td class="fielddoc"><p>Block-compressed DXT5 format for RGBA. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a3a1fde28d4cda014762e29ecbe0be54ca3b6f149f601a1d8a00768bf952545fc9" name="a3a1fde28d4cda014762e29ecbe0be54ca3b6f149f601a1d8a00768bf952545fc9"></a>BC4_R_Grey_DXT5A&#160;</td><td class="fielddoc"><p>Single-channel compression (DXT5a). </p>
+<tr><td class="fieldname"><a id="a3a1fde28d4cda014762e29ecbe0be54ca3b6f149f601a1d8a00768bf952545fc9" name="a3a1fde28d4cda014762e29ecbe0be54ca3b6f149f601a1d8a00768bf952545fc9"></a>BC4_R_Grey_DXT5A&#160;</td><td class="fielddoc"><p>Block-compressed DXT5A format for single-channel grayscale. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a3a1fde28d4cda014762e29ecbe0be54ca86d5eaff505a410dca06ef14be6a7afe" name="a3a1fde28d4cda014762e29ecbe0be54ca86d5eaff505a410dca06ef14be6a7afe"></a>BC5_RG_Grey_DXT5A&#160;</td><td class="fielddoc"><p>Dual-channel compression (DXT5a). </p>
+<tr><td class="fieldname"><a id="a3a1fde28d4cda014762e29ecbe0be54ca86d5eaff505a410dca06ef14be6a7afe" name="a3a1fde28d4cda014762e29ecbe0be54ca86d5eaff505a410dca06ef14be6a7afe"></a>BC5_RG_Grey_DXT5A&#160;</td><td class="fielddoc"><p>Block-compressed DXT5A format for dual-channel grayscale. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a3a1fde28d4cda014762e29ecbe0be54caddf505c4e029f3e47def8b6aba5dd58e" name="a3a1fde28d4cda014762e29ecbe0be54caddf505c4e029f3e47def8b6aba5dd58e"></a>BC6H_RGB_Float&#160;</td><td class="fielddoc"><p>HDR RGB float block compression. </p>
+<tr><td class="fieldname"><a id="a3a1fde28d4cda014762e29ecbe0be54caddf505c4e029f3e47def8b6aba5dd58e" name="a3a1fde28d4cda014762e29ecbe0be54caddf505c4e029f3e47def8b6aba5dd58e"></a>BC6H_RGB_Float&#160;</td><td class="fielddoc"><p>High dynamic range RGB compression (BC6H). </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a3a1fde28d4cda014762e29ecbe0be54ca56c00d0bd62e2893100931f3ee9fd911" name="a3a1fde28d4cda014762e29ecbe0be54ca56c00d0bd62e2893100931f3ee9fd911"></a>BC7_RGBA&#160;</td><td class="fielddoc"><p>Modern RGBA compression with high quality. </p>
+<tr><td class="fieldname"><a id="a3a1fde28d4cda014762e29ecbe0be54ca56c00d0bd62e2893100931f3ee9fd911" name="a3a1fde28d4cda014762e29ecbe0be54ca56c00d0bd62e2893100931f3ee9fd911"></a>BC7_RGBA&#160;</td><td class="fielddoc"><p>High-quality block compression for RGBA (BC7). </p>
 </td></tr>
 </table>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="ab1eaf6fbf992ff0799277c86e0da5ebe" name="ab1eaf6fbf992ff0799277c86e0da5ebe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab1eaf6fbf992ff0799277c86e0da5ebe">&#9670;&#160;</a></span>GetGALResourceFormat()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../de/d10/structxii_g_a_l_resource_format.html#a85df1b2fc240485387136c2211fcebf6">xiiGALResourceFormat::Enum</a> xiiSourceFormat::GetGALResourceFormat </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#a3a1fde28d4cda014762e29ecbe0be54c">xiiSourceFormat::Enum</a></td>          <td class="paramname"><span class="paramname"><em>format</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>bFlipColorChannels</em></span><span class="paramdefsep"> = </span><span class="paramdefval">false</span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Converts a <a class="el" href="../../dc/d0c/structxii_source_format.html" title="Describes the format of pixel data used for textures and attachments in the rendering pipeline.">xiiSourceFormat</a> into its corresponding <a class="el" href="../../de/d10/structxii_g_a_l_resource_format.html" title="This describes the available texture formats and generally mirrors the DXGI_FORMAT enumeratinon....">xiiGALResourceFormat</a> for low-level use. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">format</td><td>- The source format to translate. </td></tr>
+    <tr><td class="paramname">bFlipColorChannels</td><td>- Whether to flip color channel order during conversion (optional).</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The corresponding GAL format enum usable in GPU resource creation. </dd></dl>
 
 </div>
 </div>
@@ -214,7 +263,7 @@ static <a class="el" href="../../de/d10/structxii_g_a_l_resource_format.html#a85
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dc/d0c/structxii_source_format.html">xiiSourceFormat</a></li>
-    <li class="footer">Generated on Sat Jul 12 2025 04:06:43 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Sun Jul 20 2025 23:06:48 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 </body>

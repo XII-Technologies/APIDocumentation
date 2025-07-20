@@ -102,6 +102,7 @@ $(function(){initNavTree('da/d27/classxii_render_context.html','../../'); initRe
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#friends">Friends</a> &#124;
 <a href="../../d7/de3/classxii_render_context-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">xiiRenderContext Class Reference</div></div>
 </div><!--header-->
@@ -115,22 +116,14 @@ $(function(){initNavTree('da/d27/classxii_render_context.html','../../'); initRe
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:ac3a4f5ee14f69a0502ad294957c9a5c8" id="r_ac3a4f5ee14f69a0502ad294957c9a5c8"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac3a4f5ee14f69a0502ad294957c9a5c8">RenderContextScope</a> : xiiUInt8 { <a class="el" href="#ac3a4f5ee14f69a0502ad294957c9a5c8a6adf97f83acf6453d4a6a4b1070f3754">None</a> = 0
-, <a class="el" href="#ac3a4f5ee14f69a0502ad294957c9a5c8ad334dfcea59127bedfcdbe0a3ee7f494">Graphics</a> = 1
-, <a class="el" href="#ac3a4f5ee14f69a0502ad294957c9a5c8aa623a8d0366bf079411aa30be45b2d10">Compute</a> = 2
+, <a class="el" href="#ac3a4f5ee14f69a0502ad294957c9a5c8ad334dfcea59127bedfcdbe0a3ee7f494">Graphics</a>
+, <a class="el" href="#ac3a4f5ee14f69a0502ad294957c9a5c8aa623a8d0366bf079411aa30be45b2d10">Compute</a>
  }</td></tr>
 <tr class="memdesc:ac3a4f5ee14f69a0502ad294957c9a5c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specifies the context scope in which rendering commands can be issued.  <a href="#ac3a4f5ee14f69a0502ad294957c9a5c8">More...</a><br /></td></tr>
 <tr class="separator:ac3a4f5ee14f69a0502ad294957c9a5c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a9d14e605fbe9da20c32b75464959187d" id="r_a9d14e605fbe9da20c32b75464959187d"><td class="memItemLeft" align="right" valign="top"><a id="a9d14e605fbe9da20c32b75464959187d" name="a9d14e605fbe9da20c32b75464959187d"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>xiiRenderContext</b> (<a class="el" href="../../d8/d9b/classxii_shared_ptr.html">xiiSharedPtr</a>&lt; <a class="el" href="../../dc/d80/classxii_g_a_l_command_list.html">xiiGALCommandList</a> &gt; pCommandList)</td></tr>
-<tr class="memdesc:a9d14e605fbe9da20c32b75464959187d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the render context with a command list. <br /></td></tr>
-<tr class="separator:a9d14e605fbe9da20c32b75464959187d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6710bfef13943ef5c36b3f981c03a861" id="r_a6710bfef13943ef5c36b3f981c03a861"><td class="memItemLeft" align="right" valign="top"><a id="a6710bfef13943ef5c36b3f981c03a861" name="a6710bfef13943ef5c36b3f981c03a861"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>~xiiRenderContext</b> ()</td></tr>
-<tr class="memdesc:a6710bfef13943ef5c36b3f981c03a861"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cleans up stateful bindings. <br /></td></tr>
-<tr class="separator:a6710bfef13943ef5c36b3f981c03a861"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7755c4c81da3a66c949619e6bf09ca44" id="r_a7755c4c81da3a66c949619e6bf09ca44"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7755c4c81da3a66c949619e6bf09ca44">BeginRendering</a> (const <a class="el" href="../../d4/d1b/classxii_rendering_setup.html">xiiRenderingSetup</a> &amp;renderingSetup, const <a class="el" href="../../d2/d1d/classxii_rect_template.html">xiiRectFloat</a> &amp;viewport, <a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sName={}, bool bStereoRendering=false)</td></tr>
 <tr class="memdesc:a7755c4c81da3a66c949619e6bf09ca44"><td class="mdescLeft">&#160;</td><td class="mdescRight">Begins a graphics render pass with the given setup and viewport.  <br /></td></tr>
 <tr class="separator:a7755c4c81da3a66c949619e6bf09ca44"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -226,14 +219,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>BindMeshBuffer</b> (c
 <tr class="memitem:af3ae7ff269ca061b7d7111c47be0a8a1" id="r_af3ae7ff269ca061b7d7111c47be0a8a1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af3ae7ff269ca061b7d7111c47be0a8a1">ApplyContextStates</a> (bool bForce=false)</td></tr>
 <tr class="memdesc:af3ae7ff269ca061b7d7111c47be0a8a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applies all currently bound states to the GPU context.  <br /></td></tr>
 <tr class="separator:af3ae7ff269ca061b7d7111c47be0a8a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a14176aa8f1b98aec770e99acd71f5f66" id="r_a14176aa8f1b98aec770e99acd71f5f66"><td class="memItemLeft" align="right" valign="top"><a id="a14176aa8f1b98aec770e99acd71f5f66" name="a14176aa8f1b98aec770e99acd71f5f66"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>ResetContextState</b> ()</td></tr>
-<tr class="memdesc:a14176aa8f1b98aec770e99acd71f5f66"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resets all context bindings and internal states. <br /></td></tr>
-<tr class="separator:a14176aa8f1b98aec770e99acd71f5f66"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab0b90ac15493e05aaa907ae2a4353cdb" id="r_ab0b90ac15493e05aaa907ae2a4353cdb"><td class="memItemLeft" align="right" valign="top"><a id="ab0b90ac15493e05aaa907ae2a4353cdb" name="ab0b90ac15493e05aaa907ae2a4353cdb"></a>
-XII_ALWAYS_INLINE <a class="el" href="../../dc/d80/classxii_g_a_l_command_list.html">xiiGALCommandList</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetCommandList</b> () const</td></tr>
-<tr class="memdesc:ab0b90ac15493e05aaa907ae2a4353cdb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the command list in use by this render context. <br /></td></tr>
-<tr class="separator:ab0b90ac15493e05aaa907ae2a4353cdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39dd63e7c2e4b560c444b8627212c785" id="r_a39dd63e7c2e4b560c444b8627212c785"><td class="memItemLeft" align="right" valign="top"><a id="a39dd63e7c2e4b560c444b8627212c785" name="a39dd63e7c2e4b560c444b8627212c785"></a>
+XII_ALWAYS_INLINE <a class="el" href="../../d8/d9b/classxii_shared_ptr.html">xiiSharedPtr</a>&lt; <a class="el" href="../../dc/d80/classxii_g_a_l_command_list.html">xiiGALCommandList</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetCommandList</b> () const</td></tr>
+<tr class="memdesc:a39dd63e7c2e4b560c444b8627212c785"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the command list in use by this render context. <br /></td></tr>
+<tr class="separator:a39dd63e7c2e4b560c444b8627212c785"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2f46a49b8b4124f8f2439fa4fd4616da" id="r_a2f46a49b8b4124f8f2439fa4fd4616da"><td class="memItemLeft" align="right" valign="top"><a id="a2f46a49b8b4124f8f2439fa4fd4616da" name="a2f46a49b8b4124f8f2439fa4fd4616da"></a>
 XII_ALWAYS_INLINE <a class="el" href="#ac3a4f5ee14f69a0502ad294957c9a5c8">RenderContextScope</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetRenderContextScope</b> () const</td></tr>
 <tr class="memdesc:a2f46a49b8b4124f8f2439fa4fd4616da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current render context scope. <br /></td></tr>
@@ -264,23 +253,43 @@ XII_ALWAYS_INLINE bool&#160;</td><td class="memItemRight" valign="bottom"><b>Get
 <tr class="memitem:a3898c990f8bb3a24f947b9b95c0740ea" id="r_a3898c990f8bb3a24f947b9b95c0740ea"><td class="memItemLeft" align="right" valign="top">XII_ALWAYS_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3898c990f8bb3a24f947b9b95c0740ea">BindNullMeshBuffer</a> (<a class="el" href="../../de/dfd/structxii_enum.html">xiiEnum</a>&lt; <a class="el" href="../../db/d19/structxii_g_a_l_primitive_topology.html">xiiGALPrimitiveTopology</a> &gt; topology, xiiUInt32 uiPrimitiveCount)</td></tr>
 <tr class="memdesc:a3898c990f8bb3a24f947b9b95c0740ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a null mesh buffer to the pipeline for procedural or indirect drawing.  <br /></td></tr>
 <tr class="separator:a3898c990f8bb3a24f947b9b95c0740ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b2165c3bd8631adb22c199c36f857c1" id="r_a8b2165c3bd8631adb22c199c36f857c1"><td class="memItemLeft" align="right" valign="top"><a id="a8b2165c3bd8631adb22c199c36f857c1" name="a8b2165c3bd8631adb22c199c36f857c1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetGlobalAndWorldTimeConstants</b> ()</td></tr>
+<tr class="separator:a8b2165c3bd8631adb22c199c36f857c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d55ae5fddef11dbb60381750eb1be72" id="r_a4d55ae5fddef11dbb60381750eb1be72"><td class="memItemLeft" align="right" valign="top"><a id="a4d55ae5fddef11dbb60381750eb1be72" name="a4d55ae5fddef11dbb60381750eb1be72"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetGlobalAndWorldTimeConstants</b> (<a class="el" href="../../d7/dc1/structxii_time.html">xiiTime</a> worldTime)</td></tr>
+<tr class="separator:a4d55ae5fddef11dbb60381750eb1be72"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a658ca81dcdaf422b83b0210b2e566138" id="r_a658ca81dcdaf422b83b0210b2e566138"><td class="memItemLeft" align="right" valign="top"><a id="a658ca81dcdaf422b83b0210b2e566138" name="a658ca81dcdaf422b83b0210b2e566138"></a>
+static <a class="el" href="../../da/d27/classxii_render_context.html">xiiRenderContext</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetDefaultInstance</b> ()</td></tr>
+<tr class="separator:a658ca81dcdaf422b83b0210b2e566138"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c40a860439b84e6336edfa6b92eafe9" id="r_a2c40a860439b84e6336edfa6b92eafe9"><td class="memItemLeft" align="right" valign="top"><a id="a2c40a860439b84e6336edfa6b92eafe9" name="a2c40a860439b84e6336edfa6b92eafe9"></a>
+static <a class="el" href="../../da/d27/classxii_render_context.html">xiiRenderContext</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>CreateInstance</b> ()</td></tr>
+<tr class="separator:a2c40a860439b84e6336edfa6b92eafe9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf822c14a7f1d46b45a11acafa052786" id="r_aaf822c14a7f1d46b45a11acafa052786"><td class="memItemLeft" align="right" valign="top"><a id="aaf822c14a7f1d46b45a11acafa052786" name="aaf822c14a7f1d46b45a11acafa052786"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>DestroyInstance</b> (<a class="el" href="../../da/d27/classxii_render_context.html">xiiRenderContext</a> *pRenderContext)</td></tr>
+<tr class="separator:aaf822c14a7f1d46b45a11acafa052786"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a42b21d466ec0e6eb7c1cbb1908252dcf" id="r_a42b21d466ec0e6eb7c1cbb1908252dcf"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d6/dbe/structxii_g_a_l_sampler_creation_description.html">xiiGALSamplerCreationDescription</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a42b21d466ec0e6eb7c1cbb1908252dcf">GetDefaultSamplerDescription</a> (<a class="el" href="../../d7/d55/structxii_bitflags.html">xiiBitflags</a>&lt; <a class="el" href="../../d1/d9e/structxii_default_sampler_flags.html">xiiDefaultSamplerFlags</a> &gt; flags)</td></tr>
 <tr class="memdesc:a42b21d466ec0e6eb7c1cbb1908252dcf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves a default sampler creation description based on the given flags.  <br /></td></tr>
 <tr class="separator:a42b21d466ec0e6eb7c1cbb1908252dcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
+Friends</h2></td></tr>
+<tr class="memitem:aefc9ff75d6833fd2f05be48e16436db6" id="r_aefc9ff75d6833fd2f05be48e16436db6"><td class="memItemLeft" align="right" valign="top"><a id="aefc9ff75d6833fd2f05be48e16436db6" name="aefc9ff75d6833fd2f05be48e16436db6"></a>
+class&#160;</td><td class="memItemRight" valign="bottom"><b>xiiMemoryUtils</b></td></tr>
+<tr class="separator:aefc9ff75d6833fd2f05be48e16436db6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Provides an interface for issuing GPU rendering and compute commands within a single rendering scope. </p>
 <p>The render context encapsulates a command list and simplifies binding resources, setting up shaders, and issuing draw or dispatch commands.</p>
-<p>Typical usage: </p><div class="fragment"><div class="line"><a class="code hl_function" href="#a9d14e605fbe9da20c32b75464959187d">xiiRenderContext</a> context(pCommandList);</div>
+<p>Typical usage: </p><div class="fragment"><div class="line">xiiRenderContext context(pCommandList);</div>
 <div class="line">context.BeginRendering(setup, viewport);</div>
 <div class="line">context.BindShader(hShader);</div>
 <div class="line">context.BindMaterial(hMaterial);</div>
 <div class="line">context.DrawMeshBuffer();</div>
 <div class="line">context.EndRendering();</div>
-<div class="ttc" id="aclassxii_render_context_html_a9d14e605fbe9da20c32b75464959187d"><div class="ttname"><a href="#a9d14e605fbe9da20c32b75464959187d">xiiRenderContext::xiiRenderContext</a></div><div class="ttdeci">xiiRenderContext(xiiSharedPtr&lt; xiiGALCommandList &gt; pCommandList)</div><div class="ttdoc">Initializes the render context with a command list.</div><div class="ttdef"><b>Definition</b> RenderContext.cpp:15</div></div>
 </div><!-- fragment --> </div><h2 class="groupheader">Member Enumeration Documentation</h2>
 <a id="ac3a4f5ee14f69a0502ad294957c9a5c8" name="ac3a4f5ee14f69a0502ad294957c9a5c8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac3a4f5ee14f69a0502ad294957c9a5c8">&#9670;&#160;</a></span>RenderContextScope</h2>
@@ -867,7 +876,7 @@ Static Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../da/d27/classxii_render_context.html">xiiRenderContext</a></li>
-    <li class="footer">Generated on Sat Jul 12 2025 04:06:42 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Sun Jul 20 2025 23:06:48 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 </body>
