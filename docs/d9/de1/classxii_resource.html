@@ -103,7 +103,6 @@ $(function(){initNavTree('d9/de1/classxii_resource.html','../../'); initResizabl
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
-<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="#pro-types">Protected Types</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pri-methods">Private Member Functions</a> &#124;
@@ -130,11 +129,11 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a836bebaf3137ed6c57ddd1942e9531da" id="r_a836bebaf3137ed6c57ddd1942e9531da"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a836bebaf3137ed6c57ddd1942e9531da">DoUpdate</a> { <b>OnMainThread</b>
-, <b>OnAnyThread</b>
-, <a class="el" href="#a836bebaf3137ed6c57ddd1942e9531daa4b2667855c6142cf917891aca973ed3d">OnGraphicsResourceThreads</a>
+<tr class="memitem:ad3386f288d8a8ab633fba003a6187ed9" id="r_ad3386f288d8a8ab633fba003a6187ed9"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad3386f288d8a8ab633fba003a6187ed9">DoUpdate</a> : xiiUInt8 { <a class="el" href="#ad3386f288d8a8ab633fba003a6187ed9a817d39136a23588febde1f65edc02643">OnMainThread</a> = 0U
+, <a class="el" href="#ad3386f288d8a8ab633fba003a6187ed9aa8748188c286904944ef4d9ee11b8577">OnAnyThread</a>
  }</td></tr>
-<tr class="separator:a836bebaf3137ed6c57ddd1942e9531da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memdesc:ad3386f288d8a8ab633fba003a6187ed9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specifies the thread type on which update operations should be performed.  <a href="#ad3386f288d8a8ab633fba003a6187ed9">More...</a><br /></td></tr>
+<tr class="separator:ad3386f288d8a8ab633fba003a6187ed9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -232,25 +231,20 @@ Public Attributes</h2></td></tr>
 <a class="el" href="../../dc/d22/classxii_event.html">xiiEvent</a>&lt; const <a class="el" href="../../df/de3/structxii_resource_event.html">xiiResourceEvent</a> &amp;, <a class="el" href="../../dd/d52/classxii_mutex.html">xiiMutex</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_ResourceEvents</b></td></tr>
 <tr class="separator:a9208846df7ea88cb00063e6e4207066e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
-Static Public Attributes</h2></td></tr>
-<tr class="memitem:a3561af81850b6efd08c03ebd22d01952" id="r_a3561af81850b6efd08c03ebd22d01952"><td class="memItemLeft" align="right" valign="top"><a id="a3561af81850b6efd08c03ebd22d01952" name="a3561af81850b6efd08c03ebd22d01952"></a>
-static <a class="el" href="#a836bebaf3137ed6c57ddd1942e9531da">DoUpdate</a>&#160;</td><td class="memItemRight" valign="bottom"><b>UpdateGraphicsResource</b> = xiiResource::DoUpdate::OnAnyThread</td></tr>
-<tr class="separator:a3561af81850b6efd08c03ebd22d01952"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-types" name="pro-types"></a>
 Protected Types</h2></td></tr>
-<tr class="memitem:ada86fcf6467e3d07529b77df97218bdf" id="r_ada86fcf6467e3d07529b77df97218bdf"><td class="memItemLeft" align="right" valign="top"><a id="ada86fcf6467e3d07529b77df97218bdf" name="ada86fcf6467e3d07529b77df97218bdf"></a>enum class &#160;</td><td class="memItemRight" valign="bottom"><b>Unload</b> { <b>AllQualityLevels</b>
-, <b>OneQualityLevel</b>
+<tr class="memitem:abc81062ebb13c5e532e0323ccdcb468a" id="r_abc81062ebb13c5e532e0323ccdcb468a"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abc81062ebb13c5e532e0323ccdcb468a">Unload</a> : xiiUInt8 { <a class="el" href="#abc81062ebb13c5e532e0323ccdcb468aaab5abb5b50bfc44757200c84d1cd6bbb">AllQualityLevels</a> = 0U
+, <a class="el" href="#abc81062ebb13c5e532e0323ccdcb468aa12f14b5bb792151374f61de1621209a4">OneQualityLevel</a>
  }</td></tr>
-<tr class="separator:ada86fcf6467e3d07529b77df97218bdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memdesc:abc81062ebb13c5e532e0323ccdcb468a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines unloading behavior for quality levels.  <a href="#abc81062ebb13c5e532e0323ccdcb468a">More...</a><br /></td></tr>
+<tr class="separator:abc81062ebb13c5e532e0323ccdcb468a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:a8aa642893e0810df69cf75425eea0389" id="r_a8aa642893e0810df69cf75425eea0389"><td class="memItemLeft" align="right" valign="top"><a id="a8aa642893e0810df69cf75425eea0389" name="a8aa642893e0810df69cf75425eea0389"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>xiiResource</b> (<a class="el" href="#a836bebaf3137ed6c57ddd1942e9531da">DoUpdate</a> ResourceUpdateThread, xiiUInt8 uiQualityLevelsLoadable)</td></tr>
-<tr class="memdesc:a8aa642893e0810df69cf75425eea0389"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor. <br /></td></tr>
-<tr class="separator:a8aa642893e0810df69cf75425eea0389"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7c6f2fcc105e876c0165d6ca5edfedf" id="r_ae7c6f2fcc105e876c0165d6ca5edfedf"><td class="memItemLeft" align="right" valign="top"><a id="ae7c6f2fcc105e876c0165d6ca5edfedf" name="ae7c6f2fcc105e876c0165d6ca5edfedf"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>xiiResource</b> (<a class="el" href="#ad3386f288d8a8ab633fba003a6187ed9">DoUpdate</a> resourceUpdateThread, xiiUInt8 uiQualityLevelsLoadable)</td></tr>
+<tr class="memdesc:ae7c6f2fcc105e876c0165d6ca5edfedf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor. <br /></td></tr>
+<tr class="separator:ae7c6f2fcc105e876c0165d6ca5edfedf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7d596b2462ec0e8773e9c9a686b0f458" id="r_a7d596b2462ec0e8773e9c9a686b0f458"><td class="memItemLeft" align="right" valign="top"><a id="a7d596b2462ec0e8773e9c9a686b0f458" name="a7d596b2462ec0e8773e9c9a686b0f458"></a>
 virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~xiiResource</b> ()</td></tr>
 <tr class="memdesc:a7d596b2462ec0e8773e9c9a686b0f458"><td class="mdescLeft">&#160;</td><td class="mdescRight">virtual destructor. <br /></td></tr>
@@ -269,7 +263,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>SetHasLoadingFallback
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
-<tr class="memitem:a02b8e6565d09c03e0e7038eb05bf311c" id="r_a02b8e6565d09c03e0e7038eb05bf311c"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d7/d9e/structxii_resource_load_desc.html">xiiResourceLoadDesc</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a02b8e6565d09c03e0e7038eb05bf311c">UnloadData</a> (Unload WhatToUnload)=0</td></tr>
+<tr class="memitem:a02b8e6565d09c03e0e7038eb05bf311c" id="r_a02b8e6565d09c03e0e7038eb05bf311c"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d7/d9e/structxii_resource_load_desc.html">xiiResourceLoadDesc</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a02b8e6565d09c03e0e7038eb05bf311c">UnloadData</a> (<a class="el" href="#abc81062ebb13c5e532e0323ccdcb468a">Unload</a> WhatToUnload)=0</td></tr>
 <tr class="memdesc:a02b8e6565d09c03e0e7038eb05bf311c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Requests the resource to unload another quality level. If bFullUnload is true, the resource should unload all data, because it is going to be deleted afterwards.  <br /></td></tr>
 <tr class="separator:a02b8e6565d09c03e0e7038eb05bf311c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aec592e9010ff171261e3554aedc1f465" id="r_aec592e9010ff171261e3554aedc1f465"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d7/d9e/structxii_resource_load_desc.html">xiiResourceLoadDesc</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aec592e9010ff171261e3554aedc1f465">UpdateContent</a> (<a class="el" href="../../d4/d5e/classxii_stream_reader.html">xiiStreamReader</a> *pStream)=0</td></tr>
@@ -314,8 +308,8 @@ static const <a class="el" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The base class for all resources. </p>
 </div><h2 class="groupheader">Member Enumeration Documentation</h2>
-<a id="a836bebaf3137ed6c57ddd1942e9531da" name="a836bebaf3137ed6c57ddd1942e9531da"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a836bebaf3137ed6c57ddd1942e9531da">&#9670;&#160;</a></span>DoUpdate</h2>
+<a id="ad3386f288d8a8ab633fba003a6187ed9" name="ad3386f288d8a8ab633fba003a6187ed9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad3386f288d8a8ab633fba003a6187ed9">&#9670;&#160;</a></span>DoUpdate</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -324,7 +318,7 @@ static const <a class="el" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">enum class <a class="el" href="#a836bebaf3137ed6c57ddd1942e9531da">xiiResource::DoUpdate</a></td>
+          <td class="memname">enum class <a class="el" href="#ad3386f288d8a8ab633fba003a6187ed9">xiiResource::DoUpdate</a> : xiiUInt8</td>
         </tr>
       </table>
   </td>
@@ -333,8 +327,43 @@ static const <a class="el" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Specifies the thread type on which update operations should be performed. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a836bebaf3137ed6c57ddd1942e9531daa4b2667855c6142cf917891aca973ed3d" name="a836bebaf3137ed6c57ddd1942e9531daa4b2667855c6142cf917891aca973ed3d"></a>OnGraphicsResourceThreads&#160;</td><td class="fielddoc"><p>If set, the setting from UpdateGraphicsResource is used. This must be configured by the active renderer. </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ad3386f288d8a8ab633fba003a6187ed9a817d39136a23588febde1f65edc02643" name="ad3386f288d8a8ab633fba003a6187ed9a817d39136a23588febde1f65edc02643"></a>OnMainThread&#160;</td><td class="fielddoc"><p>Perform update operations on the main thread. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad3386f288d8a8ab633fba003a6187ed9aa8748188c286904944ef4d9ee11b8577" name="ad3386f288d8a8ab633fba003a6187ed9aa8748188c286904944ef4d9ee11b8577"></a>OnAnyThread&#160;</td><td class="fielddoc"><p>Allow update operations to occur on any available thread. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="abc81062ebb13c5e532e0323ccdcb468a" name="abc81062ebb13c5e532e0323ccdcb468a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc81062ebb13c5e532e0323ccdcb468a">&#9670;&#160;</a></span>Unload</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum class <a class="el" href="#abc81062ebb13c5e532e0323ccdcb468a">xiiResource::Unload</a> : xiiUInt8</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel strong">strong</span><span class="mlabel protected">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Defines unloading behavior for quality levels. </p>
+<p>Used to control how quality levels are removed or managed during runtime or resource cleanup. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="abc81062ebb13c5e532e0323ccdcb468aaab5abb5b50bfc44757200c84d1cd6bbb" name="abc81062ebb13c5e532e0323ccdcb468aaab5abb5b50bfc44757200c84d1cd6bbb"></a>AllQualityLevels&#160;</td><td class="fielddoc"><p>Unloads all available quality levels. This option is typically used when a full cleanup is required. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="abc81062ebb13c5e532e0323ccdcb468aa12f14b5bb792151374f61de1621209a4" name="abc81062ebb13c5e532e0323ccdcb468aa12f14b5bb792151374f61de1621209a4"></a>OneQualityLevel&#160;</td><td class="fielddoc"><p>Unloads only one quality level. Useful for selectively freeing memory or optimizing transitions. </p>
 </td></tr>
 </table>
 
@@ -574,7 +603,7 @@ static const <a class="el" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a>
         <tr>
           <td class="memname">virtual <a class="el" href="../../d7/d9e/structxii_resource_load_desc.html">xiiResourceLoadDesc</a> xiiResource::UnloadData </td>
           <td>(</td>
-          <td class="paramtype">Unload</td>          <td class="paramname"><span class="paramname"><em>WhatToUnload</em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="#abc81062ebb13c5e532e0323ccdcb468a">Unload</a></td>          <td class="paramname"><span class="paramname"><em>WhatToUnload</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -617,7 +646,7 @@ static const <a class="el" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a>
 <p>Called whenever more data for the resource is available. The resource must read the stream to update it's data. </p>
 <p>pStream may be nullptr in case the resource data could not be found. </p>
 
-<p>Implemented in <a class="el" href="../../d9/dca/classxii_animation_clip_resource.html#a3e7673c3aa7b87f70c2979022193ebd4">xiiAnimationClipResource</a>, <a class="el" href="../../d3/dcc/classxii_anim_graph_resource.html#a44fe707b0440c9761e55426bbafcc3f8">xiiAnimGraphResource</a>, <a class="el" href="../../da/dc4/classxii_blackboard_template_resource.html#ad903cd93459927fe8977a96fd4425886">xiiBlackboardTemplateResource</a>, <a class="el" href="../../d8/d56/classxii_collection_resource.html#a057ff6ce4599e9bd959d4d5675dd8273">xiiCollectionResource</a>, <a class="el" href="../../d3/dc0/classxii_color_gradient_resource.html#a9a30e177b53a0bd8d519b2ca8ab0c187">xiiColorGradientResource</a>, <a class="el" href="../../d0/d17/classxii_config_file_resource.html#abf7046f7741aa9abd7639bfa1271b293">xiiConfigFileResource</a>, <a class="el" href="../../d3/da1/classxii_cpu_mesh_resource.html#a006436f342baf176ed088a0eb5aa0aca">xiiCpuMeshResource</a>, <a class="el" href="../../da/de2/classxii_curve1_d_resource.html#a4171e6ad9206af34522da39c041fe039">xiiCurve1DResource</a>, <a class="el" href="../../d1/dac/classxii_custom_data_resource.html#a8e6175980cee72ef7e1dfc4473d200ba">xiiCustomDataResource&lt; T &gt;</a>, <a class="el" href="../../db/da6/classxii_decal_atlas_resource.html#a0c1e89f25a8416f96c5f9d2c5b5f6a8a">xiiDecalAtlasResource</a>, <a class="el" href="../../d9/d00/classxii_decal_resource.html#aa3cb912f8d58c7390da452ec56ca241a">xiiDecalResource</a>, <a class="el" href="../../dd/d17/classxii_dynamic_mesh_buffer_resource.html#a69ee234cf3c391c13622c341ff5ec2a1">xiiDynamicMeshBufferResource</a>, <a class="el" href="../../de/d75/classxii_image_data_resource.html#a0e0171be29bda4683b2c815cf4779402">xiiImageDataResource</a>, <a class="el" href="../../d5/df2/classxii_material_resource.html#ad295d53b5b2abaf2a6c24f06c6e01ff5">xiiMaterialResource</a>, <a class="el" href="../../da/d98/classxii_mesh_buffer_resource.html#a4b0b2df65a7ea39d42651764425143ae">xiiMeshBufferResource</a>, <a class="el" href="../../d0/d6b/classxii_mesh_resource.html#a998208d08497b4068495f43d67d48444">xiiMeshResource</a>, <a class="el" href="../../d8/d95/classxii_prefab_resource.html#a70ebf16a8686e36cbccde64a7e9a4f0b">xiiPrefabResource</a>, <a class="el" href="../../d8/d47/classxii_probe_tree_sector_resource.html#a51c36a1821de7a0d2f73dc982cf1c49f">xiiProbeTreeSectorResource</a>, <a class="el" href="../../d8/d88/classxii_property_anim_resource.html#af80ca6c9858e9654bc385462eb507609">xiiPropertyAnimResource</a>, <a class="el" href="../../d9/d26/classxii_render_pipeline_resource.html#a11528292b9b1ae4cc313f37397da45d7">xiiRenderPipelineResource</a>, <a class="el" href="../../d5/d63/classxii_render_to_texture2_d_resource.html#a0ff104cd65b0fab461adcc79ad47b7f5">xiiRenderToTexture2DResource</a>, <a class="el" href="../../d3/d91/classxii_shader_permutation_resource.html#a0c625c9191375aba11e7297c03012294">xiiShaderPermutationResource</a>, <a class="el" href="../../da/d7c/classxii_shader_resource.html#a3981c9abf1bb73d6958866be8f7ee480">xiiShaderResource</a>, <a class="el" href="../../d6/da3/classxii_skeleton_resource.html#a6477fc33bdd509ff6ef13977a44392cc">xiiSkeletonResource</a>, <a class="el" href="../../dd/d1e/classxii_state_machine_resource.html#a3290f7edc720ce268f0e765b8847880f">xiiStateMachineResource</a>, <a class="el" href="../../db/d96/classxii_surface_resource.html#a9f8776b9ca83cc029d32fb80fb7ddb2f">xiiSurfaceResource</a>, <a class="el" href="../../dc/d2e/classxii_texture2_d_resource.html#a8831cb9df311cbb598ccd6925170f3af">xiiTexture2DResource</a>, <a class="el" href="../../d3/d13/classxii_texture3_d_resource.html#a0d709b082d3972af6b91300b9cfc8014">xiiTexture3DResource</a>, <a class="el" href="../../d2/d07/classxii_texture_cube_resource.html#a9de2dde0fd1cc2f85cbaae30b36b1adf">xiiTextureCubeResource</a>, and <a class="el" href="../../d6/d14/classxii_visual_script_class_resource.html#afb93847932d3e40b77d7dcfb5dc95ca7">xiiVisualScriptClassResource</a>.</p>
+<p>Implemented in <a class="el" href="../../d9/dca/classxii_animation_clip_resource.html#a3e7673c3aa7b87f70c2979022193ebd4">xiiAnimationClipResource</a>, <a class="el" href="../../d3/dcc/classxii_anim_graph_resource.html#a44fe707b0440c9761e55426bbafcc3f8">xiiAnimGraphResource</a>, <a class="el" href="../../da/dc4/classxii_blackboard_template_resource.html#ad903cd93459927fe8977a96fd4425886">xiiBlackboardTemplateResource</a>, <a class="el" href="../../d8/d56/classxii_collection_resource.html#a057ff6ce4599e9bd959d4d5675dd8273">xiiCollectionResource</a>, <a class="el" href="../../d3/dc0/classxii_color_gradient_resource.html#a9a30e177b53a0bd8d519b2ca8ab0c187">xiiColorGradientResource</a>, <a class="el" href="../../d0/d17/classxii_config_file_resource.html#abf7046f7741aa9abd7639bfa1271b293">xiiConfigFileResource</a>, <a class="el" href="../../d3/da1/classxii_cpu_mesh_resource.html#a006436f342baf176ed088a0eb5aa0aca">xiiCpuMeshResource</a>, <a class="el" href="../../da/de2/classxii_curve1_d_resource.html#a4171e6ad9206af34522da39c041fe039">xiiCurve1DResource</a>, <a class="el" href="../../d1/dac/classxii_custom_data_resource.html#a8e6175980cee72ef7e1dfc4473d200ba">xiiCustomDataResource&lt; T &gt;</a>, <a class="el" href="../../db/da6/classxii_decal_atlas_resource.html#a0c1e89f25a8416f96c5f9d2c5b5f6a8a">xiiDecalAtlasResource</a>, <a class="el" href="../../d9/d00/classxii_decal_resource.html#aa3cb912f8d58c7390da452ec56ca241a">xiiDecalResource</a>, <a class="el" href="../../dd/d17/classxii_dynamic_mesh_buffer_resource.html#a69ee234cf3c391c13622c341ff5ec2a1">xiiDynamicMeshBufferResource</a>, <a class="el" href="../../de/d75/classxii_image_data_resource.html#a0e0171be29bda4683b2c815cf4779402">xiiImageDataResource</a>, <a class="el" href="../../d5/df2/classxii_material_resource.html#ad295d53b5b2abaf2a6c24f06c6e01ff5">xiiMaterialResource</a>, <a class="el" href="../../da/d98/classxii_mesh_buffer_resource.html#a4b0b2df65a7ea39d42651764425143ae">xiiMeshBufferResource</a>, <a class="el" href="../../d0/d6b/classxii_mesh_resource.html#aaa65f75546dd2004236e712b2392bcd7">xiiMeshResource</a>, <a class="el" href="../../d8/d95/classxii_prefab_resource.html#a70ebf16a8686e36cbccde64a7e9a4f0b">xiiPrefabResource</a>, <a class="el" href="../../d8/d47/classxii_probe_tree_sector_resource.html#a51c36a1821de7a0d2f73dc982cf1c49f">xiiProbeTreeSectorResource</a>, <a class="el" href="../../d8/d88/classxii_property_anim_resource.html#af80ca6c9858e9654bc385462eb507609">xiiPropertyAnimResource</a>, <a class="el" href="../../d9/d26/classxii_render_pipeline_resource.html#a11528292b9b1ae4cc313f37397da45d7">xiiRenderPipelineResource</a>, <a class="el" href="../../d5/d63/classxii_render_to_texture2_d_resource.html#a0ff104cd65b0fab461adcc79ad47b7f5">xiiRenderToTexture2DResource</a>, <a class="el" href="../../d3/d91/classxii_shader_permutation_resource.html#a0c625c9191375aba11e7297c03012294">xiiShaderPermutationResource</a>, <a class="el" href="../../da/d7c/classxii_shader_resource.html#a3981c9abf1bb73d6958866be8f7ee480">xiiShaderResource</a>, <a class="el" href="../../d6/da3/classxii_skeleton_resource.html#a6477fc33bdd509ff6ef13977a44392cc">xiiSkeletonResource</a>, <a class="el" href="../../dd/d1e/classxii_state_machine_resource.html#a3290f7edc720ce268f0e765b8847880f">xiiStateMachineResource</a>, <a class="el" href="../../db/d96/classxii_surface_resource.html#a9f8776b9ca83cc029d32fb80fb7ddb2f">xiiSurfaceResource</a>, <a class="el" href="../../dc/d2e/classxii_texture2_d_resource.html#a8831cb9df311cbb598ccd6925170f3af">xiiTexture2DResource</a>, <a class="el" href="../../d3/d13/classxii_texture3_d_resource.html#a0d709b082d3972af6b91300b9cfc8014">xiiTexture3DResource</a>, <a class="el" href="../../d2/d07/classxii_texture_cube_resource.html#a9de2dde0fd1cc2f85cbaae30b36b1adf">xiiTextureCubeResource</a>, and <a class="el" href="../../d6/d14/classxii_visual_script_class_resource.html#afb93847932d3e40b77d7dcfb5dc95ca7">xiiVisualScriptClassResource</a>.</p>
 
 </div>
 </div>
@@ -661,7 +690,7 @@ static const <a class="el" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d9/de1/classxii_resource.html">xiiResource</a></li>
-    <li class="footer">Generated on Sun Jul 20 2025 23:06:48 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Fri Jul 25 2025 02:01:11 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 </body>

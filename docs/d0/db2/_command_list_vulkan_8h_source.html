@@ -435,12 +435,12 @@ $(function(){initNavTree('d0/db2/_command_list_vulkan_8h_source.html','../../');
 <div class="line"><a id="l00321" name="l00321"></a><span class="lineno">  321</span> </div>
 <div class="line"><a id="l00322" name="l00322"></a><span class="lineno">  322</span>  xiiDynamicArray&lt;vk::ImageMemoryBarrier&gt; m_ImageBarriers;</div>
 <div class="line"><a id="l00323" name="l00323"></a><span class="lineno">  323</span> </div>
-<div class="line"><a id="l00324" name="l00324"></a><span class="lineno">  324</span>  xiiSharedPtr&lt;xiiGALTextureViewVulkan&gt; m_pBoundRenderTargets[XII_GAL_MAX_RENDERTARGET_COUNT] = {};</div>
-<div class="line"><a id="l00325" name="l00325"></a><span class="lineno">  325</span>  xiiSharedPtr&lt;xiiGALTextureViewVulkan&gt; m_pBoundDepthStencilTarget;</div>
-<div class="line"><a id="l00326" name="l00326"></a><span class="lineno">  326</span>  xiiUInt32                             m_uiBoundRenderTargetCount = 0U;</div>
+<div class="line"><a id="l00324" name="l00324"></a><span class="lineno">  324</span>  xiiHybridArray&lt;xiiSharedPtr&lt;xiiGALTextureViewVulkan&gt;, 2U&gt; m_pBoundRenderTargets;</div>
+<div class="line"><a id="l00325" name="l00325"></a><span class="lineno">  325</span>  xiiSharedPtr&lt;xiiGALTextureViewVulkan&gt;                     m_pBoundDepthStencilTarget;</div>
+<div class="line"><a id="l00326" name="l00326"></a><span class="lineno">  326</span>  xiiUInt32                                                 m_uiBoundRenderTargetCount = 0U;</div>
 <div class="line"><a id="l00327" name="l00327"></a><span class="lineno">  327</span> </div>
-<div class="line"><a id="l00328" name="l00328"></a><span class="lineno">  328</span>  xiiUInt32                                                          m_uiSubpassIndex = 0U;</div>
-<div class="line"><a id="l00329" name="l00329"></a><span class="lineno">  329</span>  xiiStaticArray&lt;vk::ClearValue, XII_GAL_MAX_RENDERTARGET_COUNT + 1&gt; m_AttachmentClearValues;</div>
+<div class="line"><a id="l00328" name="l00328"></a><span class="lineno">  328</span>  xiiUInt32                          m_uiSubpassIndex = 0U;</div>
+<div class="line"><a id="l00329" name="l00329"></a><span class="lineno">  329</span>  xiiHybridArray&lt;vk::ClearValue, 2U&gt; m_AttachmentClearValues;</div>
 <div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span> </div>
 <div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span>  <span class="keywordtype">bool</span> m_bPipelineStateModified = <span class="keyword">false</span>;</div>
 <div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span> </div>
@@ -500,7 +500,7 @@ $(function(){initNavTree('d0/db2/_command_list_vulkan_8h_source.html','../../');
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.html">home</a></li><li class="navelem"><a class="el" href="../../dir_1036706e55c22cab35bc1c58ee689f1d.html">runner</a></li><li class="navelem"><a class="el" href="../../dir_629f8151d55d307162ff2d619fb1783d.html">work</a></li><li class="navelem"><a class="el" href="../../dir_1ddc44fe1263a8c7935fa6130b7d9499.html">XII</a></li><li class="navelem"><a class="el" href="../../dir_2c1b6808f12952f4c36e05ba7068379a.html">XII</a></li><li class="navelem"><a class="el" href="../../dir_b5a1c4ecfca018ad24b729e213296d41.html">Source</a></li><li class="navelem"><a class="el" href="../../dir_e321052006a51284e67389ab20037e7c.html">Engine</a></li><li class="navelem"><a class="el" href="../../dir_32f911672529289aa73bbec1c1630508.html">GraphicsVulkan</a></li><li class="navelem"><a class="el" href="../../dir_de4bc7040d388118bd551b63725a1c19.html">CommandEncoder</a></li><li class="navelem"><b>CommandListVulkan.h</b></li>
-    <li class="footer">Generated on Sun Jul 20 2025 23:06:44 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Fri Jul 25 2025 02:01:07 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 </body>

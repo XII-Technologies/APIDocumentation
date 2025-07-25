@@ -203,7 +203,7 @@ var searchData=
   ['xiirenderpipelinenodepassthroughpin_200',['xiiRenderPipelineNodePassThroughPin',['../d1/d2c/structxii_render_pipeline_node_pass_through_pin.html#a1b432bdeb833892cc8b348408b22f183',1,'xiiRenderPipelineNodePassThroughPin']]],
   ['xiirenderpipelinenodepassthroughsamplerpin_201',['xiiRenderPipelineNodePassThroughSamplerPin',['../d9/dcc/structxii_render_pipeline_node_pass_through_sampler_pin.html#afcf1785f6b64f60040ae737fabadd736',1,'xiiRenderPipelineNodePassThroughSamplerPin']]],
   ['xiirenderpipelinepassbase_202',['xiiRenderPipelinePassBase',['../dd/d7b/classxii_render_pipeline_pass_base.html#a42d297f55edaea7f8102ae07d6cd298a',1,'xiiRenderPipelinePassBase']]],
-  ['xiiresource_203',['xiiResource',['../d9/de1/classxii_resource.html#a8aa642893e0810df69cf75425eea0389',1,'xiiResource']]],
+  ['xiiresource_203',['xiiResource',['../d9/de1/classxii_resource.html#ae7c6f2fcc105e876c0165d6ca5edfedf',1,'xiiResource']]],
   ['xiiresult_204',['xiiResult',['../dd/dad/structxii_result.html#ab85249b4b6f5a74ec0338067b177ac69',1,'xiiResult']]],
   ['xiirtti_205',['xiiRTTI',['../db/d89/classxii_r_t_t_i.html#a8c000b19c013abde6247863525e03cbd',1,'xiiRTTI']]],
   ['xiiscopedrefpointer_206',['xiiScopedRefPointer',['../d4/d8c/classxii_scoped_ref_pointer.html#ad70079408df5a0b9943aea6f1f19abc7',1,'xiiScopedRefPointer::xiiScopedRefPointer()'],['../d4/d8c/classxii_scoped_ref_pointer.html#adda4a312008774995ff2d980f0157c0b',1,'xiiScopedRefPointer::xiiScopedRefPointer(T *pReferencedObject)']]],

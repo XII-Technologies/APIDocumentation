@@ -5,6 +5,6 @@ var classxii_mesh_resource =
     [ "GetMeshBuffer", "d0/d6b/classxii_mesh_resource.html#a65a3742df24abeedbda02615a96efb88", null ],
     [ "GetSubMeshes", "d0/d6b/classxii_mesh_resource.html#a02d0d1b5657c921e1e7f09d7ad9af54e", null ],
     [ "UnloadData", "d0/d6b/classxii_mesh_resource.html#a1268ae4863c199d9f7b38e8ab4420180", null ],
-    [ "UpdateContent", "d0/d6b/classxii_mesh_resource.html#a998208d08497b4068495f43d67d48444", null ],
+    [ "UpdateContent", "d0/d6b/classxii_mesh_resource.html#aaa65f75546dd2004236e712b2392bcd7", null ],
     [ "UpdateMemoryUsage", "d0/d6b/classxii_mesh_resource.html#aa6a96b596a4f1b63679ce030da6954ad", null ]
 ];

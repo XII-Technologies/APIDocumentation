@@ -1,12 +1,15 @@
 var classxii_resource =
 [
     [ "MemoryUsage", "da/da5/structxii_resource_1_1_memory_usage.html", null ],
-    [ "DoUpdate", "d9/de1/classxii_resource.html#a836bebaf3137ed6c57ddd1942e9531da", [
-      [ "OnMainThread", "d9/de1/classxii_resource.html#a836bebaf3137ed6c57ddd1942e9531daa817d39136a23588febde1f65edc02643", null ],
-      [ "OnAnyThread", "d9/de1/classxii_resource.html#a836bebaf3137ed6c57ddd1942e9531daaa8748188c286904944ef4d9ee11b8577", null ],
-      [ "OnGraphicsResourceThreads", "d9/de1/classxii_resource.html#a836bebaf3137ed6c57ddd1942e9531daa4b2667855c6142cf917891aca973ed3d", null ]
+    [ "DoUpdate", "d9/de1/classxii_resource.html#ad3386f288d8a8ab633fba003a6187ed9", [
+      [ "OnMainThread", "d9/de1/classxii_resource.html#ad3386f288d8a8ab633fba003a6187ed9a817d39136a23588febde1f65edc02643", null ],
+      [ "OnAnyThread", "d9/de1/classxii_resource.html#ad3386f288d8a8ab633fba003a6187ed9aa8748188c286904944ef4d9ee11b8577", null ]
     ] ],
-    [ "xiiResource", "d9/de1/classxii_resource.html#a8aa642893e0810df69cf75425eea0389", null ],
+    [ "Unload", "d9/de1/classxii_resource.html#abc81062ebb13c5e532e0323ccdcb468a", [
+      [ "AllQualityLevels", "d9/de1/classxii_resource.html#abc81062ebb13c5e532e0323ccdcb468aaab5abb5b50bfc44757200c84d1cd6bbb", null ],
+      [ "OneQualityLevel", "d9/de1/classxii_resource.html#abc81062ebb13c5e532e0323ccdcb468aa12f14b5bb792151374f61de1621209a4", null ]
+    ] ],
+    [ "xiiResource", "d9/de1/classxii_resource.html#ae7c6f2fcc105e876c0165d6ca5edfedf", null ],
     [ "~xiiResource", "d9/de1/classxii_resource.html#a7d596b2462ec0e8773e9c9a686b0f458", null ],
     [ "GetBaseResourceFlags", "d9/de1/classxii_resource.html#aeac4e895d6de172e94a1b444ccb7e132", null ],
     [ "GetCurrentResourceChangeCounter", "d9/de1/classxii_resource.html#abe990d47a3607b9a99afa91656056d79", null ],

@@ -27,6 +27,7 @@ var classxii_g_a_l_device =
     [ "GetFeatures", "d5/d19/classxii_g_a_l_device.html#ac356d7a5b9dda8b2c2ad5e86916a752f", null ],
     [ "GetGraphicsDeviceAdapterProperties", "d5/d19/classxii_g_a_l_device.html#a6173a3623f59067122c40fb8f2d6e849", null ],
     [ "GetGraphicsDeviceType", "d5/d19/classxii_g_a_l_device.html#a31b5126af59befd982a5eb0e45fcfa92", null ],
+    [ "GetLimits", "d5/d19/classxii_g_a_l_device.html#a78fa7a53759c84870bce2e4fc35b6fa6", null ],
     [ "GetMutex", "d5/d19/classxii_g_a_l_device.html#ae21a645986b141b2fe32552ba300dcb2", null ],
     [ "Initialize", "d5/d19/classxii_g_a_l_device.html#a64fd727410fb0d83a90f5b7999feaf7b", null ],
     [ "PostInitialize", "d5/d19/classxii_g_a_l_device.html#a06e939d7dddfe73aa00bba50e7ad57a3", null ],
