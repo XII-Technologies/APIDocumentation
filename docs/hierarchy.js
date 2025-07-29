@@ -1774,11 +1774,6 @@ var hierarchy =
         [ "xiiDynamicArray< vk::Fence >", "dc/da4/classxii_dynamic_array.html", null ]
       ] ]
     ] ],
-    [ "xiiArrayBase< vk::Image, xiiDynamicArrayBase< vk::Image > >", "da/d4c/classxii_array_base.html", [
-      [ "xiiDynamicArrayBase< vk::Image >", "d2/dea/classxii_dynamic_array_base.html", [
-        [ "xiiDynamicArray< vk::Image >", "dc/da4/classxii_dynamic_array.html", null ]
-      ] ]
-    ] ],
     [ "xiiArrayBase< vk::ImageMemoryBarrier, xiiDynamicArrayBase< vk::ImageMemoryBarrier > >", "da/d4c/classxii_array_base.html", [
       [ "xiiDynamicArrayBase< vk::ImageMemoryBarrier >", "d2/dea/classxii_dynamic_array_base.html", [
         [ "xiiDynamicArray< vk::ImageMemoryBarrier >", "dc/da4/classxii_dynamic_array.html", null ]
