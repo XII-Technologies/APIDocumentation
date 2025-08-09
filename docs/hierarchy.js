@@ -213,6 +213,7 @@ var hierarchy =
       [ "xiiEnum< xiiExpressionAST::DataType >", "de/dfd/structxii_enum.html", null ]
     ] ],
     [ "xiiOpenDdlWriter::DdlState", "dc/d00/structxii_open_ddl_writer_1_1_ddl_state.html", null ],
+    [ "xiiGALDeviceVulkan::DeferredDeletionQueue", "d4/dba/classxii_g_a_l_device_vulkan_1_1_deferred_deletion_queue.html", null ],
     [ "Derived", null, [
       [ "xiiEnum< Derived >", "de/dfd/structxii_enum.html", null ]
     ] ],
@@ -729,6 +730,7 @@ var hierarchy =
     ] ],
     [ "xiiInternal::RenderDataCacheEntry", "dd/d26/structxii_internal_1_1_render_data_cache_entry.html", null ],
     [ "xiiDocumentManager::Request", "de/d51/structxii_document_manager_1_1_request.html", null ],
+    [ "xiiGALCommandListDataVulkan::ResourceSetBindings", "d9/dab/structxii_g_a_l_command_list_data_vulkan_1_1_resource_set_bindings.html", null ],
     [ "xiiGatherObjectsOfTypeMsgInterDoc::Result", "df/d88/structxii_gather_objects_of_type_msg_inter_doc_1_1_result.html", null ],
     [ "xiiScriptCoroutine::Result", "d0/dbc/structxii_script_coroutine_1_1_result.html", null ],
     [ "S", null, [
@@ -1566,13 +1568,6 @@ var hierarchy =
       [ "xiiDynamicArrayBase< ResolvedStep >", "d2/dea/classxii_dynamic_array_base.html", [
         [ "xiiDynamicArray< ResolvedStep, xiiDefaultAllocatorWrapper >", "dc/da4/classxii_dynamic_array.html", [
           [ "xiiHybridArray< ResolvedStep, 2 >", "dc/da9/classxii_hybrid_array.html", null ]
-        ] ]
-      ] ]
-    ] ],
-    [ "xiiArrayBase< ResourceSetBindings, xiiDynamicArrayBase< ResourceSetBindings > >", "da/d4c/classxii_array_base.html", [
-      [ "xiiDynamicArrayBase< ResourceSetBindings >", "d2/dea/classxii_dynamic_array_base.html", [
-        [ "xiiDynamicArray< ResourceSetBindings, xiiDefaultAllocatorWrapper >", "dc/da4/classxii_dynamic_array.html", [
-          [ "xiiHybridArray< ResourceSetBindings, 1U >", "dc/da9/classxii_hybrid_array.html", null ]
         ] ]
       ] ]
     ] ],
@@ -2464,6 +2459,13 @@ var hierarchy =
       [ "xiiDynamicArrayBase< xiiGALCommandList::VertexStreamDescription >", "d2/dea/classxii_dynamic_array_base.html", [
         [ "xiiDynamicArray< xiiGALCommandList::VertexStreamDescription, xiiDefaultAllocatorWrapper >", "dc/da4/classxii_dynamic_array.html", [
           [ "xiiHybridArray< xiiGALCommandList::VertexStreamDescription, 2U >", "dc/da9/classxii_hybrid_array.html", null ]
+        ] ]
+      ] ]
+    ] ],
+    [ "xiiArrayBase< xiiGALCommandListDataVulkan::ResourceSetBindings, xiiDynamicArrayBase< xiiGALCommandListDataVulkan::ResourceSetBindings > >", "da/d4c/classxii_array_base.html", [
+      [ "xiiDynamicArrayBase< xiiGALCommandListDataVulkan::ResourceSetBindings >", "d2/dea/classxii_dynamic_array_base.html", [
+        [ "xiiDynamicArray< xiiGALCommandListDataVulkan::ResourceSetBindings, xiiDefaultAllocatorWrapper >", "dc/da4/classxii_dynamic_array.html", [
+          [ "xiiHybridArray< xiiGALCommandListDataVulkan::ResourceSetBindings, 1U >", "dc/da9/classxii_hybrid_array.html", null ]
         ] ]
       ] ]
     ] ],
@@ -4707,6 +4709,7 @@ var hierarchy =
     [ "xiiGALColorMask", "d7/dd1/structxii_g_a_l_color_mask.html", null ],
     [ "xiiGALCommandBufferPoolVulkan", "da/d84/classxii_g_a_l_command_buffer_pool_vulkan.html", null ],
     [ "xiiGALCommandListCounters", "d3/d20/structxii_g_a_l_command_list_counters.html", null ],
+    [ "xiiGALCommandListDataVulkan", "d9/d5d/structxii_g_a_l_command_list_data_vulkan.html", null ],
     [ "xiiGALCommandListFlags", "da/db4/structxii_g_a_l_command_list_flags.html", null ],
     [ "xiiGALCommandListStatistics", "d3/ddd/structxii_g_a_l_command_list_statistics.html", null ],
     [ "xiiGALCommandQueueFlags", "d2/d0b/structxii_g_a_l_command_queue_flags.html", null ],
@@ -5575,6 +5578,7 @@ var hierarchy =
       [ "xiiMap< xiiUuid, ParamData >", "d6/df7/classxii_map.html", null ],
       [ "xiiMap< xiiUInt32, xiiDelegate< void(xiiFileserveClientContext &, xiiRemoteMessage &, xiiRemoteInterface &, xiiDelegate< void(const char *)>)> >", "d6/df7/classxii_map.html", null ],
       [ "xiiMap< xiiThreadID, xiiGALCommandBufferPoolVulkan::ThreadPool >", "d6/df7/classxii_map.html", null ],
+      [ "xiiMap< xiiThreadID, xiiDynamicArray< vk::CommandBuffer > >", "d6/df7/classxii_map.html", null ],
       [ "xiiMap< xiiUInt64, xiiUniquePtr< xiiGALCommandBufferPoolVulkan > >", "d6/df7/classxii_map.html", null ],
       [ "xiiMap< xiiHashedString, xiiHashSet< xiiHashedString > >", "d6/df7/classxii_map.html", null ],
       [ "xiiMap< xiiGALShaderType::Enum, xiiStringBuilder >", "d6/df7/classxii_map.html", null ],

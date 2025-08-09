@@ -875,6 +875,7 @@ var annotated_dup =
     [ "xiiGALCommandList", "dc/d80/classxii_g_a_l_command_list.html", "dc/d80/classxii_g_a_l_command_list" ],
     [ "xiiGALCommandListCounters", "d3/d20/structxii_g_a_l_command_list_counters.html", "d3/d20/structxii_g_a_l_command_list_counters" ],
     [ "xiiGALCommandListCreationDescription", "db/db0/structxii_g_a_l_command_list_creation_description.html", "db/db0/structxii_g_a_l_command_list_creation_description" ],
+    [ "xiiGALCommandListDataVulkan", "d9/d5d/structxii_g_a_l_command_list_data_vulkan.html", "d9/d5d/structxii_g_a_l_command_list_data_vulkan" ],
     [ "xiiGALCommandListFlags", "da/db4/structxii_g_a_l_command_list_flags.html", "da/db4/structxii_g_a_l_command_list_flags" ],
     [ "xiiGALCommandListStatistics", "d3/ddd/structxii_g_a_l_command_list_statistics.html", "d3/ddd/structxii_g_a_l_command_list_statistics" ],
     [ "xiiGALCommandListVulkan", "dd/d24/classxii_g_a_l_command_list_vulkan.html", "dd/d24/classxii_g_a_l_command_list_vulkan" ],

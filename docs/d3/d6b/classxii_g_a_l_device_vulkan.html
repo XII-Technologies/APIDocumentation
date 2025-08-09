@@ -115,6 +115,8 @@ Inheritance diagram for xiiGALDeviceVulkan:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dba/classxii_g_a_l_device_vulkan_1_1_deferred_deletion_queue.html">DeferredDeletionQueue</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/dcd/structxii_g_a_l_device_vulkan_1_1_extension_features.html">ExtensionFeatures</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d5d/structxii_g_a_l_device_vulkan_1_1_extension_properties.html">ExtensionProperties</a></td></tr>
@@ -219,9 +221,15 @@ XII_ALWAYS_INLINE <a class="el" href="../../d0/d60/classxii_array_ptr.html">xiiA
 <tr class="memitem:a95058926619a0a46802d17633117c46e" id="r_a95058926619a0a46802d17633117c46e"><td class="memItemLeft" align="right" valign="top"><a id="a95058926619a0a46802d17633117c46e" name="a95058926619a0a46802d17633117c46e"></a>
 XII_ALWAYS_INLINE vk::AccessFlags&#160;</td><td class="memItemRight" valign="bottom"><b>GetVulkanLogicalDeviceSupportedAccessFlags</b> (xiiUInt32 uiQueueFamilyIndex) const</td></tr>
 <tr class="separator:a95058926619a0a46802d17633117c46e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a932c2b9d4f92c098c157dee86103d9ff" id="r_a932c2b9d4f92c098c157dee86103d9ff"><td class="memItemLeft" align="right" valign="top"><a id="a932c2b9d4f92c098c157dee86103d9ff" name="a932c2b9d4f92c098c157dee86103d9ff"></a>
+XII_ALWAYS_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><b>LockCommandQueueAndRun</b> (<a class="el" href="../../d7/d55/structxii_bitflags.html">xiiBitflags</a>&lt; <a class="el" href="../../d2/d0b/structxii_g_a_l_command_queue_flags.html">xiiGALCommandQueueFlags</a> &gt; queueFlags, <a class="el" href="../../dc/d84/structxii_delegate.html">xiiDelegate</a>&lt; void(const vk::Queue &amp;)&gt; action)</td></tr>
+<tr class="separator:a932c2b9d4f92c098c157dee86103d9ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8fcec616a0febb0414c6740c76344cf2" id="r_a8fcec616a0febb0414c6740c76344cf2"><td class="memItemLeft" align="right" valign="top"><a id="a8fcec616a0febb0414c6740c76344cf2" name="a8fcec616a0febb0414c6740c76344cf2"></a>
 XII_ALWAYS_INLINE const <a class="el" href="../../dc/d34/structxii_g_a_l_queue_information_vulkan.html">xiiGALQueueInformationVulkan</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetCommandQueueInformation</b> (<a class="el" href="../../d7/d55/structxii_bitflags.html">xiiBitflags</a>&lt; <a class="el" href="../../d2/d0b/structxii_g_a_l_command_queue_flags.html">xiiGALCommandQueueFlags</a> &gt; queueFlags) const</td></tr>
 <tr class="separator:a8fcec616a0febb0414c6740c76344cf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3e0e7746fca8f86c1200ea0334744c3" id="r_ad3e0e7746fca8f86c1200ea0334744c3"><td class="memItemLeft" align="right" valign="top"><a id="ad3e0e7746fca8f86c1200ea0334744c3" name="ad3e0e7746fca8f86c1200ea0334744c3"></a>
+XII_ALWAYS_INLINE <a class="el" href="../../dd/d52/classxii_mutex.html">xiiMutex</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetCommandQueueMutex</b> (<a class="el" href="../../d7/d55/structxii_bitflags.html">xiiBitflags</a>&lt; <a class="el" href="../../d2/d0b/structxii_g_a_l_command_queue_flags.html">xiiGALCommandQueueFlags</a> &gt; queueFlags) const</td></tr>
+<tr class="separator:ad3e0e7746fca8f86c1200ea0334744c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a34fa19cd0416049c8a5c10855de9cd5c" id="r_a34fa19cd0416049c8a5c10855de9cd5c"><td class="memItemLeft" align="right" valign="top"><a id="a34fa19cd0416049c8a5c10855de9cd5c" name="a34fa19cd0416049c8a5c10855de9cd5c"></a>
 XII_ALWAYS_INLINE <a class="el" href="../../da/d84/classxii_g_a_l_command_buffer_pool_vulkan.html">xiiGALCommandBufferPoolVulkan</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetCommandBufferPool</b> (<a class="el" href="../../d7/d55/structxii_bitflags.html">xiiBitflags</a>&lt; <a class="el" href="../../d2/d0b/structxii_g_a_l_command_queue_flags.html">xiiGALCommandQueueFlags</a> &gt; queueFlags) const</td></tr>
 <tr class="separator:a34fa19cd0416049c8a5c10855de9cd5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -243,12 +251,9 @@ XII_ALWAYS_INLINE <a class="el" href="../../d1/d19/classxii_g_a_l_fence_pool_vul
 <tr class="memitem:a3b918938ff20cba2ac3122e0c692762b" id="r_a3b918938ff20cba2ac3122e0c692762b"><td class="memItemLeft" align="right" valign="top"><a id="a3b918938ff20cba2ac3122e0c692762b" name="a3b918938ff20cba2ac3122e0c692762b"></a>
 XII_ALWAYS_INLINE <a class="el" href="../../db/d3b/classxii_g_a_l_semaphore_pool_vulkan.html">xiiGALSemaphorePoolVulkan</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetVulkanSemaphorePool</b> () const</td></tr>
 <tr class="separator:a3b918938ff20cba2ac3122e0c692762b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2cb2a7a25e9872a549b0d38428cec211" id="r_a2cb2a7a25e9872a549b0d38428cec211"><td class="memItemLeft" align="right" valign="top"><a id="a2cb2a7a25e9872a549b0d38428cec211" name="a2cb2a7a25e9872a549b0d38428cec211"></a>
-XII_ALWAYS_INLINE <a class="el" href="../../d1/d76/classxii_g_a_l_descriptor_set_pool_vulkan.html">xiiGALDescriptorSetPoolVulkan</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetVulkanDescriptorSetPool</b> () const</td></tr>
-<tr class="separator:a2cb2a7a25e9872a549b0d38428cec211"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a08c532507f21f9946afaa8da294720f2" id="r_a08c532507f21f9946afaa8da294720f2"><td class="memItemLeft" align="right" valign="top"><a id="a08c532507f21f9946afaa8da294720f2" name="a08c532507f21f9946afaa8da294720f2"></a>
-XII_ALWAYS_INLINE xiiUInt64&#160;</td><td class="memItemRight" valign="bottom"><b>GetFrameNumber</b> () const</td></tr>
-<tr class="separator:a08c532507f21f9946afaa8da294720f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1bdd1fb140f0f3285810415e3dce6d9" id="r_ae1bdd1fb140f0f3285810415e3dce6d9"><td class="memItemLeft" align="right" valign="top"><a id="ae1bdd1fb140f0f3285810415e3dce6d9" name="ae1bdd1fb140f0f3285810415e3dce6d9"></a>
+XII_ALWAYS_INLINE <a class="el" href="../../d4/dba/classxii_g_a_l_device_vulkan_1_1_deferred_deletion_queue.html">DeferredDeletionQueue</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetDeferredDeletionQueue</b> () const</td></tr>
+<tr class="separator:ae1bdd1fb140f0f3285810415e3dce6d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0dfa00fd07556179ba18b1f98d4cb7cb" id="r_a0dfa00fd07556179ba18b1f98d4cb7cb"><td class="memTemplParams" colspan="2"><a id="a0dfa00fd07556179ba18b1f98d4cb7cb" name="a0dfa00fd07556179ba18b1f98d4cb7cb"></a>
 template&lt;typename T, typename&gt; </td></tr>
 <tr class="memitem:a0dfa00fd07556179ba18b1f98d4cb7cb"><td class="memTemplItemLeft" align="right" valign="top">XII_ALWAYS_INLINE void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>SafeReleaseDeviceObject</b> (T &amp;&amp;vkObject, xiiVulkanAllocation &amp;&amp;allocation)</td></tr>
@@ -551,7 +556,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>FinalizeBufferInterna
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d3/d6b/classxii_g_a_l_device_vulkan.html">xiiGALDeviceVulkan</a></li>
-    <li class="footer">Generated on Tue Jul 29 2025 06:55:05 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Sat Aug 9 2025 09:10:33 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 </body>

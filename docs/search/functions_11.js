@@ -50,7 +50,7 @@ var searchData=
   ['reconstructnormalz_47',['ReconstructNormalZ',['../da/d38/classxii_image_utils.html#a92bee8af95674e516d0810e492e1a700',1,'xiiImageUtils']]],
   ['recreateanchorat_48',['RecreateAnchorAt',['../df/d4a/classxii_spatial_anchor_component.html#aedc483ea821002c0b65ac4ece58613d3',1,'xiiSpatialAnchorComponent']]],
   ['recreatevisualshaderfile_49',['RecreateVisualShaderFile',['../d6/d64/classxii_material_asset_document.html#abac7e2234898933070ffebedfe0caf03',1,'xiiMaterialAssetDocument']]],
-  ['recycleaftersubmit_50',['RecycleAfterSubmit',['../da/d84/classxii_g_a_l_command_buffer_pool_vulkan.html#aeb5d7851a22144a15d8980a5db5edf92',1,'xiiGALCommandBufferPoolVulkan']]],
+  ['recycleaftersubmit_50',['RecycleAfterSubmit',['../da/d84/classxii_g_a_l_command_buffer_pool_vulkan.html#af1a5e6d0bda03c62d06e972f4d1fc28a',1,'xiiGALCommandBufferPoolVulkan']]],
   ['recyclestagingtexture_51',['RecycleStagingTexture',['../d2/dd0/classxii_g_a_l_image_capture.html#ab18c9f29edac528a8b2d4d8d25fb74c2',1,'xiiGALImageCapture']]],
   ['reduceintegralfraction_52',['ReduceIntegralFraction',['../d8/daa/classxii_rational.html#ae548aac037389052ab23ba117f146c54',1,'xiiRational']]],
   ['register_53',['Register',['../d2/d1c/classxii_singleton_registry.html#a064155a90341f3c2ab240122349e9bac',1,'xiiSingletonRegistry']]],

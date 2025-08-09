@@ -110,7 +110,7 @@ $(function(){initNavTree('da/d84/classxii_g_a_l_command_buffer_pool_vulkan.html'
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d3c/structxii_g_a_l_command_buffer_pool_vulkan_1_1_auto_command_buffer.html">AutoCommandBuffer</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">RAII handle for a VkCommandBuffer allocated from this pool. On destruction: if not submitted, returns it immediately to free-list. If submitted via <a class="el" href="#aeb5d7851a22144a15d8980a5db5edf92" title="Submit wrapper: after vkQueueSubmit(..., fence), call this to defer recycling.">xiiGALCommandBufferPoolVulkan::RecycleAfterSubmit</a>, the command buffer is moved out and not auto-recycled.  <a href="../../db/d3c/structxii_g_a_l_command_buffer_pool_vulkan_1_1_auto_command_buffer.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">RAII handle for a VkCommandBuffer allocated from this pool. On destruction: if not submitted, returns it immediately to free-list. If submitted via <a class="el" href="#af1a5e6d0bda03c62d06e972f4d1fc28a" title="Submit wrapper: after vkQueueSubmit(..., fence), call this to defer recycling.">xiiGALCommandBufferPoolVulkan::RecycleAfterSubmit</a>, the command buffer is moved out and not auto-recycled.  <a href="../../db/d3c/structxii_g_a_l_command_buffer_pool_vulkan_1_1_auto_command_buffer.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dbd/structxii_g_a_l_command_buffer_pool_vulkan_1_1_in_flight_command_buffer.html">InFlightCommandBuffer</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -127,10 +127,10 @@ Public Member Functions</h2></td></tr>
 <a class="el" href="../../db/d3c/structxii_g_a_l_command_buffer_pool_vulkan_1_1_auto_command_buffer.html">AutoCommandBuffer</a>&#160;</td><td class="memItemRight" valign="bottom"><b>AllocateSecondaryCommandBuffer</b> ()</td></tr>
 <tr class="memdesc:a927cf6a2229484b004d8c607a3e5b38d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate a secondary-level command buffer for the current thread. <br /></td></tr>
 <tr class="separator:a927cf6a2229484b004d8c607a3e5b38d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeb5d7851a22144a15d8980a5db5edf92" id="r_aeb5d7851a22144a15d8980a5db5edf92"><td class="memItemLeft" align="right" valign="top"><a id="aeb5d7851a22144a15d8980a5db5edf92" name="aeb5d7851a22144a15d8980a5db5edf92"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>RecycleAfterSubmit</b> (<a class="el" href="../../d1/d83/classxii_g_a_l_command_queue_vulkan.html">xiiGALCommandQueueVulkan</a> *pCommandQueueVulkan, <a class="el" href="../../db/d3c/structxii_g_a_l_command_buffer_pool_vulkan_1_1_auto_command_buffer.html">AutoCommandBuffer</a> &amp;&amp;commandBuffer, xiiUInt64 uiFenceValue)</td></tr>
-<tr class="memdesc:aeb5d7851a22144a15d8980a5db5edf92"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submit wrapper: after vkQueueSubmit(..., fence), call this to defer recycling. <br /></td></tr>
-<tr class="separator:aeb5d7851a22144a15d8980a5db5edf92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1a5e6d0bda03c62d06e972f4d1fc28a" id="r_af1a5e6d0bda03c62d06e972f4d1fc28a"><td class="memItemLeft" align="right" valign="top"><a id="af1a5e6d0bda03c62d06e972f4d1fc28a" name="af1a5e6d0bda03c62d06e972f4d1fc28a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>RecycleAfterSubmit</b> (<a class="el" href="../../db/d3c/structxii_g_a_l_command_buffer_pool_vulkan_1_1_auto_command_buffer.html">AutoCommandBuffer</a> &amp;&amp;commandBuffer, <a class="el" href="../../d9/d5d/structxii_g_a_l_command_list_data_vulkan.html">xiiGALCommandListDataVulkan</a> &amp;&amp;commandListData, xiiUInt64 uiFenceValue)</td></tr>
+<tr class="memdesc:af1a5e6d0bda03c62d06e972f4d1fc28a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submit wrapper: after vkQueueSubmit(..., fence), call this to defer recycling. <br /></td></tr>
+<tr class="separator:af1a5e6d0bda03c62d06e972f4d1fc28a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a87bb8306ed272194d56cad3f1f3b7eb8" id="r_a87bb8306ed272194d56cad3f1f3b7eb8"><td class="memItemLeft" align="right" valign="top"><a id="a87bb8306ed272194d56cad3f1f3b7eb8" name="a87bb8306ed272194d56cad3f1f3b7eb8"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>ReclaimCompleted</b> ()</td></tr>
 <tr class="memdesc:a87bb8306ed272194d56cad3f1f3b7eb8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Poll fences and reclaim any completed buffers. Call at the start of each frame or from a dedicated thread. <br /></td></tr>
@@ -162,7 +162,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>xiiGALCommandQueueVu
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../da/d84/classxii_g_a_l_command_buffer_pool_vulkan.html">xiiGALCommandBufferPoolVulkan</a></li>
-    <li class="footer">Generated on Tue Jul 29 2025 06:55:05 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Sat Aug 9 2025 09:10:33 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 </body>

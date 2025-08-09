@@ -137,24 +137,24 @@ $(function(){initNavTree('d9/dc0/_descriptor_set_pool_vulkan_8h_source.html','..
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="keyword">private</span>:</div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>  <span class="keyword">friend</span> <span class="keyword">class </span>xiiMemoryUtils;</div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>  <span class="keyword">friend</span> <span class="keyword">class </span>xiiGALDeviceVulkan;</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>  xiiGALDescriptorSetPoolVulkan(xiiGALDeviceVulkan* pDeviceVulkan, xiiUInt32 uiBaseSize);</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>  ~xiiGALDescriptorSetPoolVulkan();</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>  vk::DescriptorPool CreateVulkanDescriptorPool();</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>  xiiGALDeviceVulkan* m_pDeviceVulkan;</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>  <a class="code hl_class" href="../../dd/d52/classxii_mutex.html">xiiMutex</a>                            m_PoolMutex;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>  <span class="keyword">friend</span> <span class="keyword">class </span>xiiGALCommandListVulkan;</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>  xiiGALDescriptorSetPoolVulkan(xiiGALDeviceVulkan* pDeviceVulkan, xiiUInt32 uiBaseSize, xiiUInt32 uiMaxSets);</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>  ~xiiGALDescriptorSetPoolVulkan();</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>  vk::DescriptorPool CreateVulkanDescriptorPool();</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>  xiiGALDeviceVulkan* m_pDeviceVulkan;</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>  <a class="code hl_class" href="../../dc/da4/classxii_dynamic_array.html">xiiDynamicArray&lt;vk::DescriptorPool&gt;</a> m_DescriptorPools;</div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>  <a class="code hl_class" href="../../d8/df8/classxii_deque.html">xiiDeque&lt;vk::DescriptorPool&gt;</a>        m_QueuedDescriptorPools;</div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>  xiiUInt32                           m_uiBaseSize = 0U;</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>  vk::DescriptorPool                  m_vkCurrentDescriptorPool;</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>};</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>  xiiUInt32                           m_uiMaxSets  = 0U;</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>  vk::DescriptorPool                  m_vkCurrentDescriptorPool;</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>};</div>
 </div>
 <div class="ttc" id="aclassxii_deque_html"><div class="ttname"><a href="../../d8/df8/classxii_deque.html">xiiDeque</a></div><div class="ttdef"><b>Definition</b> Deque.h:267</div></div>
 <div class="ttc" id="aclassxii_dynamic_array_html"><div class="ttname"><a href="../../dc/da4/classxii_dynamic_array.html">xiiDynamicArray</a></div><div class="ttdef"><b>Definition</b> DynamicArray.h:81</div></div>
-<div class="ttc" id="aclassxii_mutex_html"><div class="ttname"><a href="../../dd/d52/classxii_mutex.html">xiiMutex</a></div><div class="ttdoc">Provides a simple mechanism for mutual exclusion to prevent multiple threads from accessing a shared ...</div><div class="ttdef"><b>Definition</b> Mutex.h:13</div></div>
 <div class="ttc" id="astructxii_hash_helper_html"><div class="ttname"><a href="../../d6/dcd/structxii_hash_helper.html">xiiHashHelper</a></div><div class="ttdoc">Helper struct to calculate the Hash of different types.</div><div class="ttdef"><b>Definition</b> HashingUtils.h:75</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -162,7 +162,7 @@ $(function(){initNavTree('d9/dc0/_descriptor_set_pool_vulkan_8h_source.html','..
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.html">home</a></li><li class="navelem"><a class="el" href="../../dir_1036706e55c22cab35bc1c58ee689f1d.html">runner</a></li><li class="navelem"><a class="el" href="../../dir_629f8151d55d307162ff2d619fb1783d.html">work</a></li><li class="navelem"><a class="el" href="../../dir_1ddc44fe1263a8c7935fa6130b7d9499.html">XII</a></li><li class="navelem"><a class="el" href="../../dir_2c1b6808f12952f4c36e05ba7068379a.html">XII</a></li><li class="navelem"><a class="el" href="../../dir_b5a1c4ecfca018ad24b729e213296d41.html">Source</a></li><li class="navelem"><a class="el" href="../../dir_e321052006a51284e67389ab20037e7c.html">Engine</a></li><li class="navelem"><a class="el" href="../../dir_32f911672529289aa73bbec1c1630508.html">GraphicsVulkan</a></li><li class="navelem"><a class="el" href="../../dir_aa36bed1a3997cf58123d4006383f2d3.html">Pools</a></li><li class="navelem"><b>DescriptorSetPoolVulkan.h</b></li>
-    <li class="footer">Generated on Tue Jul 29 2025 06:55:03 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Sat Aug 9 2025 09:10:31 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 </body>

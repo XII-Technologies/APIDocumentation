@@ -8,7 +8,8 @@ var searchData=
   ['dataoutput_5',['DataOutput',['../d4/dd1/structxii_visual_script_compiler_1_1_data_output.html',1,'xiiVisualScriptCompiler']]],
   ['datatype_6',['DataType',['../d7/d8f/structxii_expression_a_s_t_1_1_data_type.html',1,'xiiExpressionAST']]],
   ['ddlstate_7',['DdlState',['../dc/d00/structxii_open_ddl_writer_1_1_ddl_state.html',1,'xiiOpenDdlWriter']]],
-  ['deserializehelper_8',['DeserializeHelper',['../dc/dcf/structxii_internal_1_1_deserialize_helper.html',1,'xiiInternal']]],
-  ['direntry_9',['DirEntry',['../d7/d17/structxii_file_system_mirror_1_1_dir_entry.html',1,'xiiFileSystemMirror']]],
-  ['dynamicbufferpage_10',['DynamicBufferPage',['../d9/d27/structxii_g_a_l_dynamic_buffer_pool_vulkan_1_1_dynamic_buffer_page.html',1,'xiiGALDynamicBufferPoolVulkan']]]
+  ['deferreddeletionqueue_8',['DeferredDeletionQueue',['../d4/dba/classxii_g_a_l_device_vulkan_1_1_deferred_deletion_queue.html',1,'xiiGALDeviceVulkan']]],
+  ['deserializehelper_9',['DeserializeHelper',['../dc/dcf/structxii_internal_1_1_deserialize_helper.html',1,'xiiInternal']]],
+  ['direntry_10',['DirEntry',['../d7/d17/structxii_file_system_mirror_1_1_dir_entry.html',1,'xiiFileSystemMirror']]],
+  ['dynamicbufferpage_11',['DynamicBufferPage',['../d9/d27/structxii_g_a_l_dynamic_buffer_pool_vulkan_1_1_dynamic_buffer_page.html',1,'xiiGALDynamicBufferPoolVulkan']]]
 ];
