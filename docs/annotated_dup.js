@@ -1782,6 +1782,8 @@ var annotated_dup =
     [ "xiiQtCVarPanel", "d1/dab/classxii_qt_c_var_panel.html", null ],
     [ "xiiQtCVarsWidget", "d2/d0c/classxii_qt_c_vars_widget.html", null ],
     [ "xiiQtCVarWidget", "d7/d11/classxii_qt_c_var_widget.html", "d7/d11/classxii_qt_c_var_widget" ],
+    [ "xiiQtDarkEditorStyle", "dc/d4e/classxii_qt_dark_editor_style.html", "dc/d4e/classxii_qt_dark_editor_style" ],
+    [ "xiiQtDarkThemeColours", "de/d48/structxii_qt_dark_theme_colours.html", "de/d48/structxii_qt_dark_theme_colours" ],
     [ "xiiQtDashboardDlg", "d2/d52/classxii_qt_dashboard_dlg.html", null ],
     [ "xiiQtDataDirsDlg", "d5/d9c/classxii_qt_data_dirs_dlg.html", null ],
     [ "xiiQtDataWidget", "d9/dca/classxii_qt_data_widget.html", "d9/dca/classxii_qt_data_widget" ],

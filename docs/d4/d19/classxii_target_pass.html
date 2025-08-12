@@ -125,9 +125,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a9e742d3d620c355a2498313fbb26561e" id="r_a9e742d3d620c355a2498313fbb26561e"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d8/d9b/classxii_shared_ptr.html">xiiSharedPtr</a>&lt; <a class="el" href="../../d5/d12/classxii_g_a_l_device_object.html">xiiGALDeviceObject</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9e742d3d620c355a2498313fbb26561e">QueryResourceProvider</a> (const <a class="el" href="../../d9/d96/structxii_render_pipeline_node_pin.html">xiiRenderPipelineNodePin</a> *pPin, const <a class="el" href="../../d5/dc2/structxii_render_pipeline_resource_request.html">xiiRenderPipelineResourceRequest</a> &amp;request) override</td></tr>
 <tr class="memdesc:a9e742d3d620c355a2498313fbb26561e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allows a pass to override resource creation for one of its outputs, typically to reuse or share GPU resources.  <br /></td></tr>
 <tr class="separator:a9e742d3d620c355a2498313fbb26561e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0bdf58df04e7beb648f619aba94026d4" id="r_a0bdf58df04e7beb648f619aba94026d4"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0bdf58df04e7beb648f619aba94026d4">Execute</a> (const <a class="el" href="../../d9/d0f/structxii_render_view_context.html">xiiRenderViewContext</a> &amp;renderViewContext, const <a class="el" href="../../d0/d60/classxii_array_ptr.html">xiiArrayPtr</a>&lt; <a class="el" href="../../d3/deb/structxii_render_pipeline_pass_connection.html">xiiRenderPipelinePassConnection</a> *const &gt; inputs, const <a class="el" href="../../d0/d60/classxii_array_ptr.html">xiiArrayPtr</a>&lt; <a class="el" href="../../d3/deb/structxii_render_pipeline_pass_connection.html">xiiRenderPipelinePassConnection</a> *const &gt; outputs) override</td></tr>
-<tr class="memdesc:a0bdf58df04e7beb648f619aba94026d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Must be implemented by derived classes to perform the pass's actual rendering or processing logic.  <br /></td></tr>
-<tr class="separator:a0bdf58df04e7beb648f619aba94026d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a47292efcc0170ca3e951a973d79d90" id="r_a2a47292efcc0170ca3e951a973d79d90"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2a47292efcc0170ca3e951a973d79d90">Execute</a> (const <a class="el" href="../../d9/d0f/structxii_render_view_context.html">xiiRenderViewContext</a> &amp;renderViewContext, const <a class="el" href="../../d0/d60/classxii_array_ptr.html">xiiArrayPtr</a>&lt; <a class="el" href="../../d3/deb/structxii_render_pipeline_pass_connection.html">xiiRenderPipelinePassConnection</a> *const &gt; pInputs, const <a class="el" href="../../d0/d60/classxii_array_ptr.html">xiiArrayPtr</a>&lt; <a class="el" href="../../d3/deb/structxii_render_pipeline_pass_connection.html">xiiRenderPipelinePassConnection</a> *const &gt; pOutputs) override</td></tr>
+<tr class="memdesc:a2a47292efcc0170ca3e951a973d79d90"><td class="mdescLeft">&#160;</td><td class="mdescRight">Must be implemented by derived classes to perform the pass's actual rendering or processing logic.  <br /></td></tr>
+<tr class="separator:a2a47292efcc0170ca3e951a973d79d90"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classxii_present_pipeline_pass"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_classxii_present_pipeline_pass')"><img src="../../closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="../../df/dcc/classxii_present_pipeline_pass.html">xiiPresentPipelinePass</a></td></tr>
 <tr class="memitem:a8e37b0c74cfefe37671eacdeaf4fc14f inherit pub_methods_classxii_present_pipeline_pass" id="r_a8e37b0c74cfefe37671eacdeaf4fc14f"><td class="memItemLeft" align="right" valign="top">
 &#160;</td><td class="memItemRight" valign="bottom"><b>xiiPresentPipelinePass</b> (<a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sName)</td></tr>
@@ -223,30 +223,30 @@ template&lt;typename T&gt; </td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr class="memitem:a057faaa44184898526d3c0d226b0afb3" id="r_a057faaa44184898526d3c0d226b0afb3"><td class="memItemLeft" align="right" valign="top"><a id="a057faaa44184898526d3c0d226b0afb3" name="a057faaa44184898526d3c0d226b0afb3"></a>
-<a class="el" href="../../d1/dc5/structxii_render_pipeline_node_input_colour_attachment_provider_pin.html">xiiRenderPipelineNodeInputColourAttachmentProviderPin</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_PinColor0</b></td></tr>
-<tr class="separator:a057faaa44184898526d3c0d226b0afb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac9efaea62e4e2bad1ee9523be11d495c" id="r_ac9efaea62e4e2bad1ee9523be11d495c"><td class="memItemLeft" align="right" valign="top"><a id="ac9efaea62e4e2bad1ee9523be11d495c" name="ac9efaea62e4e2bad1ee9523be11d495c"></a>
-<a class="el" href="../../d1/dc5/structxii_render_pipeline_node_input_colour_attachment_provider_pin.html">xiiRenderPipelineNodeInputColourAttachmentProviderPin</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_PinColor1</b></td></tr>
-<tr class="separator:ac9efaea62e4e2bad1ee9523be11d495c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0954fc4bc3c4edd5d8b36ed9a29baf8d" id="r_a0954fc4bc3c4edd5d8b36ed9a29baf8d"><td class="memItemLeft" align="right" valign="top"><a id="a0954fc4bc3c4edd5d8b36ed9a29baf8d" name="a0954fc4bc3c4edd5d8b36ed9a29baf8d"></a>
-<a class="el" href="../../d1/dc5/structxii_render_pipeline_node_input_colour_attachment_provider_pin.html">xiiRenderPipelineNodeInputColourAttachmentProviderPin</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_PinColor2</b></td></tr>
-<tr class="separator:a0954fc4bc3c4edd5d8b36ed9a29baf8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9f22666eae57bf51a3e3d4eca4fba3f4" id="r_a9f22666eae57bf51a3e3d4eca4fba3f4"><td class="memItemLeft" align="right" valign="top"><a id="a9f22666eae57bf51a3e3d4eca4fba3f4" name="a9f22666eae57bf51a3e3d4eca4fba3f4"></a>
-<a class="el" href="../../d1/dc5/structxii_render_pipeline_node_input_colour_attachment_provider_pin.html">xiiRenderPipelineNodeInputColourAttachmentProviderPin</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_PinColor3</b></td></tr>
-<tr class="separator:a9f22666eae57bf51a3e3d4eca4fba3f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aba0a7083f61622ca33ab6da2fd4a59cb" id="r_aba0a7083f61622ca33ab6da2fd4a59cb"><td class="memItemLeft" align="right" valign="top"><a id="aba0a7083f61622ca33ab6da2fd4a59cb" name="aba0a7083f61622ca33ab6da2fd4a59cb"></a>
-<a class="el" href="../../d1/dc5/structxii_render_pipeline_node_input_colour_attachment_provider_pin.html">xiiRenderPipelineNodeInputColourAttachmentProviderPin</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_PinColor4</b></td></tr>
-<tr class="separator:aba0a7083f61622ca33ab6da2fd4a59cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aff476dd0e22d725cb016ede85c9ae6a6" id="r_aff476dd0e22d725cb016ede85c9ae6a6"><td class="memItemLeft" align="right" valign="top"><a id="aff476dd0e22d725cb016ede85c9ae6a6" name="aff476dd0e22d725cb016ede85c9ae6a6"></a>
-<a class="el" href="../../d1/dc5/structxii_render_pipeline_node_input_colour_attachment_provider_pin.html">xiiRenderPipelineNodeInputColourAttachmentProviderPin</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_PinColor5</b></td></tr>
-<tr class="separator:aff476dd0e22d725cb016ede85c9ae6a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abacd39a0c24d45431a2ff43fa4c39c0f" id="r_abacd39a0c24d45431a2ff43fa4c39c0f"><td class="memItemLeft" align="right" valign="top"><a id="abacd39a0c24d45431a2ff43fa4c39c0f" name="abacd39a0c24d45431a2ff43fa4c39c0f"></a>
-<a class="el" href="../../d1/dc5/structxii_render_pipeline_node_input_colour_attachment_provider_pin.html">xiiRenderPipelineNodeInputColourAttachmentProviderPin</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_PinColor6</b></td></tr>
-<tr class="separator:abacd39a0c24d45431a2ff43fa4c39c0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8f600edaf8dee64d8417509b280d88a0" id="r_a8f600edaf8dee64d8417509b280d88a0"><td class="memItemLeft" align="right" valign="top"><a id="a8f600edaf8dee64d8417509b280d88a0" name="a8f600edaf8dee64d8417509b280d88a0"></a>
-<a class="el" href="../../d1/dc5/structxii_render_pipeline_node_input_colour_attachment_provider_pin.html">xiiRenderPipelineNodeInputColourAttachmentProviderPin</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_PinColor7</b></td></tr>
-<tr class="separator:a8f600edaf8dee64d8417509b280d88a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0532f21615846005d1a15909ef4905d" id="r_ae0532f21615846005d1a15909ef4905d"><td class="memItemLeft" align="right" valign="top"><a id="ae0532f21615846005d1a15909ef4905d" name="ae0532f21615846005d1a15909ef4905d"></a>
+<a class="el" href="../../d1/dc5/structxii_render_pipeline_node_input_colour_attachment_provider_pin.html">xiiRenderPipelineNodeInputColourAttachmentProviderPin</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_PinColour0</b></td></tr>
+<tr class="separator:ae0532f21615846005d1a15909ef4905d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae06bf2b4914081ef9aee7fb06d9d4422" id="r_ae06bf2b4914081ef9aee7fb06d9d4422"><td class="memItemLeft" align="right" valign="top"><a id="ae06bf2b4914081ef9aee7fb06d9d4422" name="ae06bf2b4914081ef9aee7fb06d9d4422"></a>
+<a class="el" href="../../d1/dc5/structxii_render_pipeline_node_input_colour_attachment_provider_pin.html">xiiRenderPipelineNodeInputColourAttachmentProviderPin</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_PinColour1</b></td></tr>
+<tr class="separator:ae06bf2b4914081ef9aee7fb06d9d4422"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d5ef86fe3166e65052b4a99d0cb2234" id="r_a1d5ef86fe3166e65052b4a99d0cb2234"><td class="memItemLeft" align="right" valign="top"><a id="a1d5ef86fe3166e65052b4a99d0cb2234" name="a1d5ef86fe3166e65052b4a99d0cb2234"></a>
+<a class="el" href="../../d1/dc5/structxii_render_pipeline_node_input_colour_attachment_provider_pin.html">xiiRenderPipelineNodeInputColourAttachmentProviderPin</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_PinColour2</b></td></tr>
+<tr class="separator:a1d5ef86fe3166e65052b4a99d0cb2234"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f5ba4bec4839eef9bf9d53d7a5e409c" id="r_a2f5ba4bec4839eef9bf9d53d7a5e409c"><td class="memItemLeft" align="right" valign="top"><a id="a2f5ba4bec4839eef9bf9d53d7a5e409c" name="a2f5ba4bec4839eef9bf9d53d7a5e409c"></a>
+<a class="el" href="../../d1/dc5/structxii_render_pipeline_node_input_colour_attachment_provider_pin.html">xiiRenderPipelineNodeInputColourAttachmentProviderPin</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_PinColour3</b></td></tr>
+<tr class="separator:a2f5ba4bec4839eef9bf9d53d7a5e409c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4cb0d329f0df5a94d0520cce7e110599" id="r_a4cb0d329f0df5a94d0520cce7e110599"><td class="memItemLeft" align="right" valign="top"><a id="a4cb0d329f0df5a94d0520cce7e110599" name="a4cb0d329f0df5a94d0520cce7e110599"></a>
+<a class="el" href="../../d1/dc5/structxii_render_pipeline_node_input_colour_attachment_provider_pin.html">xiiRenderPipelineNodeInputColourAttachmentProviderPin</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_PinColour4</b></td></tr>
+<tr class="separator:a4cb0d329f0df5a94d0520cce7e110599"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d8b92d651c7f7fd8bde2a7fd7cf592c" id="r_a5d8b92d651c7f7fd8bde2a7fd7cf592c"><td class="memItemLeft" align="right" valign="top"><a id="a5d8b92d651c7f7fd8bde2a7fd7cf592c" name="a5d8b92d651c7f7fd8bde2a7fd7cf592c"></a>
+<a class="el" href="../../d1/dc5/structxii_render_pipeline_node_input_colour_attachment_provider_pin.html">xiiRenderPipelineNodeInputColourAttachmentProviderPin</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_PinColour5</b></td></tr>
+<tr class="separator:a5d8b92d651c7f7fd8bde2a7fd7cf592c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56975379ff3f6cb125403cbdc684d0c0" id="r_a56975379ff3f6cb125403cbdc684d0c0"><td class="memItemLeft" align="right" valign="top"><a id="a56975379ff3f6cb125403cbdc684d0c0" name="a56975379ff3f6cb125403cbdc684d0c0"></a>
+<a class="el" href="../../d1/dc5/structxii_render_pipeline_node_input_colour_attachment_provider_pin.html">xiiRenderPipelineNodeInputColourAttachmentProviderPin</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_PinColour6</b></td></tr>
+<tr class="separator:a56975379ff3f6cb125403cbdc684d0c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80ec01f1be9e49dd2a412975e4de555c" id="r_a80ec01f1be9e49dd2a412975e4de555c"><td class="memItemLeft" align="right" valign="top"><a id="a80ec01f1be9e49dd2a412975e4de555c" name="a80ec01f1be9e49dd2a412975e4de555c"></a>
+<a class="el" href="../../d1/dc5/structxii_render_pipeline_node_input_colour_attachment_provider_pin.html">xiiRenderPipelineNodeInputColourAttachmentProviderPin</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_PinColour7</b></td></tr>
+<tr class="separator:a80ec01f1be9e49dd2a412975e4de555c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae8436bc29324b65619c4cd4d98312f11" id="r_ae8436bc29324b65619c4cd4d98312f11"><td class="memItemLeft" align="right" valign="top"><a id="ae8436bc29324b65619c4cd4d98312f11" name="ae8436bc29324b65619c4cd4d98312f11"></a>
 <a class="el" href="../../d9/dff/structxii_render_pipeline_node_input_depth_attachment_provider_pin.html">xiiRenderPipelineNodeInputDepthAttachmentProviderPin</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_PinDepthStencil</b></td></tr>
 <tr class="separator:ae8436bc29324b65619c4cd4d98312f11"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -265,8 +265,8 @@ static const <a class="el" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a>
 <tr class="separator:a4bde433b55ebd55edf63c57239799bba inherit pub_static_methods_classxii_no_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a0bdf58df04e7beb648f619aba94026d4" name="a0bdf58df04e7beb648f619aba94026d4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0bdf58df04e7beb648f619aba94026d4">&#9670;&#160;</a></span>Execute()</h2>
+<a id="a2a47292efcc0170ca3e951a973d79d90" name="a2a47292efcc0170ca3e951a973d79d90"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a47292efcc0170ca3e951a973d79d90">&#9670;&#160;</a></span>Execute()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -431,7 +431,7 @@ static const <a class="el" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d4/d19/classxii_target_pass.html">xiiTargetPass</a></li>
-    <li class="footer">Generated on Sat Aug 9 2025 09:10:35 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Tue Aug 12 2025 13:35:25 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 </body>

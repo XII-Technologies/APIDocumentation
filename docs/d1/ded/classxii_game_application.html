@@ -319,8 +319,8 @@ Protected Member Functions</h2></td></tr>
 <tr class="separator:ae4a8f5ad7555c09c4faf2d9584b610f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9f98f1103e8f2a93a222431d1ecf84fd" id="r_a9f98f1103e8f2a93a222431d1ecf84fd"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9f98f1103e8f2a93a222431d1ecf84fd">Deinit_ShutdownGraphicsDevice</a> () override</td></tr>
 <tr class="separator:a9f98f1103e8f2a93a222431d1ecf84fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afcbe515109ce34a90a611898a0883f0f" id="r_afcbe515109ce34a90a611898a0883f0f"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afcbe515109ce34a90a611898a0883f0f">IsGameUpdateEnabled</a> () const override</td></tr>
-<tr class="separator:afcbe515109ce34a90a611898a0883f0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8cee81a6997203bf54d0243c0bdd86fb" id="r_a8cee81a6997203bf54d0243c0bdd86fb"><td class="memItemLeft" align="right" valign="top">virtual xiiGameUpdateMode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8cee81a6997203bf54d0243c0bdd86fb">GetGameUpdateMode</a> () const override</td></tr>
+<tr class="separator:a8cee81a6997203bf54d0243c0bdd86fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a32649ea0cb40870597b440ce6d93a3ee" id="r_a32649ea0cb40870597b440ce6d93a3ee"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a32649ea0cb40870597b440ce6d93a3ee">Run_ProcessApplicationInput</a> () override</td></tr>
 <tr class="separator:a32649ea0cb40870597b440ce6d93a3ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab2a49b91b92a7250d2130715c0ed0355" id="r_ab2a49b91b92a7250d2130715c0ed0355"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab2a49b91b92a7250d2130715c0ed0355">Run_AcquireImage</a> () override</td></tr>
@@ -582,6 +582,33 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="a8cee81a6997203bf54d0243c0bdd86fb" name="a8cee81a6997203bf54d0243c0bdd86fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8cee81a6997203bf54d0243c0bdd86fb">&#9670;&#160;</a></span>GetGameUpdateMode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">xiiGameUpdateMode xiiGameApplication::GetGameUpdateMode </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel override">override</span><span class="mlabel protected">protected</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented from <a class="el" href="../../da/d67/classxii_game_application_base.html">xiiGameApplicationBase</a>.</p>
+
+</div>
+</div>
 <a id="a104fad24666caa3a0838773e99249939" name="a104fad24666caa3a0838773e99249939"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a104fad24666caa3a0838773e99249939">&#9670;&#160;</a></span>Init_ConfigureAssetManagement()</h2>
 
@@ -715,33 +742,6 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Implements <a class="el" href="../../da/d67/classxii_game_application_base.html">xiiGameApplicationBase</a>.</p>
-
-</div>
-</div>
-<a id="afcbe515109ce34a90a611898a0883f0f" name="afcbe515109ce34a90a611898a0883f0f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afcbe515109ce34a90a611898a0883f0f">&#9670;&#160;</a></span>IsGameUpdateEnabled()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool xiiGameApplication::IsGameUpdateEnabled </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel override">override</span><span class="mlabel protected">protected</span><span class="mlabel virtual">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Reimplemented from <a class="el" href="../../da/d67/classxii_game_application_base.html">xiiGameApplicationBase</a>.</p>
 
 </div>
 </div>
@@ -895,7 +895,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d1/ded/classxii_game_application.html">xiiGameApplication</a></li>
-    <li class="footer">Generated on Sat Aug 9 2025 09:10:33 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Tue Aug 12 2025 13:35:23 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 </body>

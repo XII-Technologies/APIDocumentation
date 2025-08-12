@@ -140,7 +140,7 @@ $(function(){initNavTree('d4/d13/_string_utils__inl_8h_source.html','../../'); i
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>XII_ALWAYS_INLINE <span class="keywordtype">bool</span> <a class="code hl_function" href="../../df/d65/classxii_string_utils.html#acb10982c595d5619ce53fdd89313202f">xiiStringUtils::IsNullOrEmpty</a>(<span class="keyword">const</span> T* pString, <span class="keyword">const</span> T* pStringEnd)</div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>{</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>  <span class="keywordflow">return</span> (pString == <span class="keyword">nullptr</span>) || (pString[0] == <span class="charliteral">&#39;\0&#39;</span>) || pString == pStringEnd;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>  <span class="keywordflow">return</span> (pString == <span class="keyword">nullptr</span>) || pString == pStringEnd || (pString[0] == <span class="charliteral">&#39;\0&#39;</span>);</div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>}</div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
@@ -183,7 +183,7 @@ $(function(){initNavTree('d4/d13/_string_utils__inl_8h_source.html','../../'); i
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    <span class="keywordflow">return</span> (xiiUInt32)(pStringEnd - pString);</div>
 <div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
 <div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>  xiiUInt32 uiCount = 0;</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>  <span class="keywordflow">while</span> ((*pString != <span class="charliteral">&#39;\0&#39;</span>) &amp;&amp; (pString &lt; pStringEnd))</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>  <span class="keywordflow">while</span> ((pString &lt; pStringEnd) &amp;&amp; (*pString != <span class="charliteral">&#39;\0&#39;</span>))</div>
 <div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>  {</div>
 <div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    ++pString;</div>
 <div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    ++uiCount;</div>
@@ -201,7 +201,7 @@ $(function(){initNavTree('d4/d13/_string_utils__inl_8h_source.html','../../'); i
 <div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span> </div>
 <div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>  xiiUInt32 uiCharacters = 0;</div>
 <div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span> </div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>  <span class="keywordflow">while</span> ((*szUtf8 != <span class="charliteral">&#39;\0&#39;</span>) &amp;&amp; (szUtf8 &lt; pStringEnd))</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>  <span class="keywordflow">while</span> ((szUtf8 &lt; pStringEnd) &amp;&amp; (*szUtf8 != <span class="charliteral">&#39;\0&#39;</span>))</div>
 <div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>  {</div>
 <div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>    <span class="comment">// skip all the Utf8 continuation bytes</span></div>
 <div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    <span class="keywordflow">if</span> (!<a class="code hl_function" href="../../de/d05/classxii_unicode_utils.html#a0d197f1be47422c59038411aab8460a7">xiiUnicodeUtils::IsUtf8ContinuationByte</a>(*szUtf8)) ++uiCharacters;</div>
@@ -308,7 +308,7 @@ $(function(){initNavTree('d4/d13/_string_utils__inl_8h_source.html','../../'); i
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.html">home</a></li><li class="navelem"><a class="el" href="../../dir_1036706e55c22cab35bc1c58ee689f1d.html">runner</a></li><li class="navelem"><a class="el" href="../../dir_629f8151d55d307162ff2d619fb1783d.html">work</a></li><li class="navelem"><a class="el" href="../../dir_1ddc44fe1263a8c7935fa6130b7d9499.html">XII</a></li><li class="navelem"><a class="el" href="../../dir_2c1b6808f12952f4c36e05ba7068379a.html">XII</a></li><li class="navelem"><a class="el" href="../../dir_b5a1c4ecfca018ad24b729e213296d41.html">Source</a></li><li class="navelem"><a class="el" href="../../dir_e321052006a51284e67389ab20037e7c.html">Engine</a></li><li class="navelem"><a class="el" href="../../dir_be0c42c58b36f42c54ec54024ed4f6af.html">Foundation</a></li><li class="navelem"><a class="el" href="../../dir_b0d9e1007714c8956662e529025ab552.html">Strings</a></li><li class="navelem"><a class="el" href="../../dir_92c52eb4981d7c3a6633b9c574fc9e8f.html">Implementation</a></li><li class="navelem"><b>StringUtils_inl.h</b></li>
-    <li class="footer">Generated on Sat Aug 9 2025 09:10:29 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Tue Aug 12 2025 13:35:19 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 </body>

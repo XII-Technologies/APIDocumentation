@@ -132,6 +132,62 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ae49d6a47963e99afd6987d132f442453" id="r_ae49d6a47963e99afd6987d132f442453"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae49d6a47963e99afd6987d132f442453">Execute</a> (const <a class="el" href="../../d9/d0f/structxii_render_view_context.html">xiiRenderViewContext</a> &amp;renderViewContext, const <a class="el" href="../../d0/d60/classxii_array_ptr.html">xiiArrayPtr</a>&lt; <a class="el" href="../../d3/deb/structxii_render_pipeline_pass_connection.html">xiiRenderPipelinePassConnection</a> *const &gt; pInputs, const <a class="el" href="../../d0/d60/classxii_array_ptr.html">xiiArrayPtr</a>&lt; <a class="el" href="../../d3/deb/structxii_render_pipeline_pass_connection.html">xiiRenderPipelinePassConnection</a> *const &gt; pOutputs) override</td></tr>
 <tr class="memdesc:ae49d6a47963e99afd6987d132f442453"><td class="mdescLeft">&#160;</td><td class="mdescRight">Must be implemented by derived classes to perform the pass's actual rendering or processing logic.  <br /></td></tr>
 <tr class="separator:ae49d6a47963e99afd6987d132f442453"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3e59708076ab69c299801fb3f4238c3" id="r_ad3e59708076ab69c299801fb3f4238c3"><td class="memItemLeft" align="right" valign="top"><a id="ad3e59708076ab69c299801fb3f4238c3" name="ad3e59708076ab69c299801fb3f4238c3"></a>
+XII_ALWAYS_INLINE xiiUInt64&#160;</td><td class="memItemRight" valign="bottom"><b>GetSize</b> () const</td></tr>
+<tr class="memdesc:ad3e59708076ab69c299801fb3f4238c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the total buffer size in bytes. <br /></td></tr>
+<tr class="separator:ad3e59708076ab69c299801fb3f4238c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe00b3e3cc9a3c3f1dfae3a6c14f955f" id="r_afe00b3e3cc9a3c3f1dfae3a6c14f955f"><td class="memItemLeft" align="right" valign="top"><a id="afe00b3e3cc9a3c3f1dfae3a6c14f955f" name="afe00b3e3cc9a3c3f1dfae3a6c14f955f"></a>
+XII_ALWAYS_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><b>SetSize</b> (xiiUInt64 uiSize)</td></tr>
+<tr class="memdesc:afe00b3e3cc9a3c3f1dfae3a6c14f955f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the total buffer size in bytes. <br /></td></tr>
+<tr class="separator:afe00b3e3cc9a3c3f1dfae3a6c14f955f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5390493ce4ecb1294a45b88f6d561811" id="r_a5390493ce4ecb1294a45b88f6d561811"><td class="memItemLeft" align="right" valign="top"><a id="a5390493ce4ecb1294a45b88f6d561811" name="a5390493ce4ecb1294a45b88f6d561811"></a>
+XII_ALWAYS_INLINE xiiUInt32&#160;</td><td class="memItemRight" valign="bottom"><b>GetElementByteStride</b> () const</td></tr>
+<tr class="memdesc:a5390493ce4ecb1294a45b88f6d561811"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the stride in bytes for each buffer element. <br /></td></tr>
+<tr class="separator:a5390493ce4ecb1294a45b88f6d561811"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab19ddcbc3da3853e886ec3796469c227" id="r_ab19ddcbc3da3853e886ec3796469c227"><td class="memItemLeft" align="right" valign="top"><a id="ab19ddcbc3da3853e886ec3796469c227" name="ab19ddcbc3da3853e886ec3796469c227"></a>
+XII_ALWAYS_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><b>SetElementByteStride</b> (xiiUInt32 uiStride)</td></tr>
+<tr class="memdesc:ab19ddcbc3da3853e886ec3796469c227"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the stride in bytes for each buffer element. <br /></td></tr>
+<tr class="separator:ab19ddcbc3da3853e886ec3796469c227"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4d50daf016ab3a18d6429c1ca877722" id="r_aa4d50daf016ab3a18d6429c1ca877722"><td class="memItemLeft" align="right" valign="top"><a id="aa4d50daf016ab3a18d6429c1ca877722" name="aa4d50daf016ab3a18d6429c1ca877722"></a>
+XII_ALWAYS_INLINE <a class="el" href="../../d7/d55/structxii_bitflags.html">xiiBitflags</a>&lt; <a class="el" href="../../d6/d24/structxii_g_a_l_bind_flags.html">xiiGALBindFlags</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetBindFlags</b> () const</td></tr>
+<tr class="memdesc:aa4d50daf016ab3a18d6429c1ca877722"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the bind flags used for buffer creation. <br /></td></tr>
+<tr class="separator:aa4d50daf016ab3a18d6429c1ca877722"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c2a31a94797706cef5da469a90a5d73" id="r_a8c2a31a94797706cef5da469a90a5d73"><td class="memItemLeft" align="right" valign="top"><a id="a8c2a31a94797706cef5da469a90a5d73" name="a8c2a31a94797706cef5da469a90a5d73"></a>
+XII_ALWAYS_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><b>SetBindFlags</b> (<a class="el" href="../../d7/d55/structxii_bitflags.html">xiiBitflags</a>&lt; <a class="el" href="../../d6/d24/structxii_g_a_l_bind_flags.html">xiiGALBindFlags</a> &gt; bindFlags)</td></tr>
+<tr class="memdesc:a8c2a31a94797706cef5da469a90a5d73"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the bind flags used for buffer creation. <br /></td></tr>
+<tr class="separator:a8c2a31a94797706cef5da469a90a5d73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aede1e01982654051289c849fcfb5fb01" id="r_aede1e01982654051289c849fcfb5fb01"><td class="memItemLeft" align="right" valign="top"><a id="aede1e01982654051289c849fcfb5fb01" name="aede1e01982654051289c849fcfb5fb01"></a>
+XII_ALWAYS_INLINE <a class="el" href="../../de/dfd/structxii_enum.html">xiiEnum</a>&lt; <a class="el" href="../../d9/d9e/structxii_g_a_l_resource_usage.html">xiiGALResourceUsage</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetUsage</b> () const</td></tr>
+<tr class="memdesc:aede1e01982654051289c849fcfb5fb01"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the resource usage type. <br /></td></tr>
+<tr class="separator:aede1e01982654051289c849fcfb5fb01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeeae66d6cdb9770c0158912ca9405a2d" id="r_aeeae66d6cdb9770c0158912ca9405a2d"><td class="memItemLeft" align="right" valign="top"><a id="aeeae66d6cdb9770c0158912ca9405a2d" name="aeeae66d6cdb9770c0158912ca9405a2d"></a>
+XII_ALWAYS_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><b>SetUsage</b> (<a class="el" href="../../de/dfd/structxii_enum.html">xiiEnum</a>&lt; <a class="el" href="../../d9/d9e/structxii_g_a_l_resource_usage.html">xiiGALResourceUsage</a> &gt; usage)</td></tr>
+<tr class="memdesc:aeeae66d6cdb9770c0158912ca9405a2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the resource usage type. <br /></td></tr>
+<tr class="separator:aeeae66d6cdb9770c0158912ca9405a2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a5d72b28a7ccdfe6f1bd8f985287986" id="r_a9a5d72b28a7ccdfe6f1bd8f985287986"><td class="memItemLeft" align="right" valign="top"><a id="a9a5d72b28a7ccdfe6f1bd8f985287986" name="a9a5d72b28a7ccdfe6f1bd8f985287986"></a>
+XII_ALWAYS_INLINE <a class="el" href="../../d7/d55/structxii_bitflags.html">xiiBitflags</a>&lt; <a class="el" href="../../db/dca/structxii_g_a_l_c_p_u_access_flag.html">xiiGALCPUAccessFlag</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetAccessFlags</b> () const</td></tr>
+<tr class="memdesc:a9a5d72b28a7ccdfe6f1bd8f985287986"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the CPU access flags. <br /></td></tr>
+<tr class="separator:a9a5d72b28a7ccdfe6f1bd8f985287986"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36110cf78be2a25180bdc4d3b14ee770" id="r_a36110cf78be2a25180bdc4d3b14ee770"><td class="memItemLeft" align="right" valign="top"><a id="a36110cf78be2a25180bdc4d3b14ee770" name="a36110cf78be2a25180bdc4d3b14ee770"></a>
+XII_ALWAYS_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><b>SetAccessFlags</b> (<a class="el" href="../../d7/d55/structxii_bitflags.html">xiiBitflags</a>&lt; <a class="el" href="../../db/dca/structxii_g_a_l_c_p_u_access_flag.html">xiiGALCPUAccessFlag</a> &gt; accessFlags)</td></tr>
+<tr class="memdesc:a36110cf78be2a25180bdc4d3b14ee770"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the CPU access flags. <br /></td></tr>
+<tr class="separator:a36110cf78be2a25180bdc4d3b14ee770"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a355307539c0c22fa5ef5532c6e449db0" id="r_a355307539c0c22fa5ef5532c6e449db0"><td class="memItemLeft" align="right" valign="top"><a id="a355307539c0c22fa5ef5532c6e449db0" name="a355307539c0c22fa5ef5532c6e449db0"></a>
+XII_ALWAYS_INLINE <a class="el" href="../../de/dfd/structxii_enum.html">xiiEnum</a>&lt; <a class="el" href="../../de/dad/structxii_g_a_l_buffer_mode.html">xiiGALBufferMode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetMode</b> () const</td></tr>
+<tr class="memdesc:a355307539c0c22fa5ef5532c6e449db0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the buffer mode (e.g., structured, raw). <br /></td></tr>
+<tr class="separator:a355307539c0c22fa5ef5532c6e449db0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe86e6b286261e231b6a788ba30a99d7" id="r_afe86e6b286261e231b6a788ba30a99d7"><td class="memItemLeft" align="right" valign="top"><a id="afe86e6b286261e231b6a788ba30a99d7" name="afe86e6b286261e231b6a788ba30a99d7"></a>
+XII_ALWAYS_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><b>SetMode</b> (<a class="el" href="../../de/dfd/structxii_enum.html">xiiEnum</a>&lt; <a class="el" href="../../de/dad/structxii_g_a_l_buffer_mode.html">xiiGALBufferMode</a> &gt; mode)</td></tr>
+<tr class="memdesc:afe86e6b286261e231b6a788ba30a99d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the buffer mode (e.g., structured, raw). <br /></td></tr>
+<tr class="separator:afe86e6b286261e231b6a788ba30a99d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f874336cef6aadcc4ae35f2b6a3f668" id="r_a4f874336cef6aadcc4ae35f2b6a3f668"><td class="memItemLeft" align="right" valign="top"><a id="a4f874336cef6aadcc4ae35f2b6a3f668" name="a4f874336cef6aadcc4ae35f2b6a3f668"></a>
+XII_ALWAYS_INLINE <a class="el" href="../../d7/d55/structxii_bitflags.html">xiiBitflags</a>&lt; <a class="el" href="../../d4/da8/structxii_g_a_l_misc_buffer_flags.html">xiiGALMiscBufferFlags</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetMiscFlags</b> () const</td></tr>
+<tr class="memdesc:a4f874336cef6aadcc4ae35f2b6a3f668"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns miscellaneous buffer flags. <br /></td></tr>
+<tr class="separator:a4f874336cef6aadcc4ae35f2b6a3f668"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb67b516df871ec4cd21ff6cff1f5046" id="r_acb67b516df871ec4cd21ff6cff1f5046"><td class="memItemLeft" align="right" valign="top"><a id="acb67b516df871ec4cd21ff6cff1f5046" name="acb67b516df871ec4cd21ff6cff1f5046"></a>
+XII_ALWAYS_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><b>SetMiscFlags</b> (<a class="el" href="../../d7/d55/structxii_bitflags.html">xiiBitflags</a>&lt; <a class="el" href="../../d4/da8/structxii_g_a_l_misc_buffer_flags.html">xiiGALMiscBufferFlags</a> &gt; miscFlags)</td></tr>
+<tr class="memdesc:acb67b516df871ec4cd21ff6cff1f5046"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets miscellaneous buffer flags. <br /></td></tr>
+<tr class="separator:acb67b516df871ec4cd21ff6cff1f5046"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classxii_utility_pipeline_pass"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_classxii_utility_pipeline_pass')"><img src="../../closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="../../d0/dac/classxii_utility_pipeline_pass.html">xiiUtilityPipelinePass</a></td></tr>
 <tr class="memitem:abf095a2d6343a8cec8f795a8091fb516 inherit pub_methods_classxii_utility_pipeline_pass" id="r_abf095a2d6343a8cec8f795a8091fb516"><td class="memItemLeft" align="right" valign="top">
 &#160;</td><td class="memItemRight" valign="bottom"><b>xiiUtilityPipelinePass</b> (<a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sName)</td></tr>
@@ -382,7 +438,7 @@ static const <a class="el" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d6/d08/classxii_create_buffer_pass.html">xiiCreateBufferPass</a></li>
-    <li class="footer">Generated on Sat Aug 9 2025 09:10:32 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Tue Aug 12 2025 13:35:22 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 </body>

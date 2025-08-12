@@ -10,6 +10,7 @@ var classxii_qt_editor_app =
     [ "IsInHeadlessMode", "d1/d83/classxii_qt_editor_app.html#a5b271254bf0d2a8e7c5f39c6958d4019", null ],
     [ "IsInSafeMode", "d1/d83/classxii_qt_editor_app.html#a10db748af4e9ed5ad84c89db45b375fd", null ],
     [ "IsInUnitTestMode", "d1/d83/classxii_qt_editor_app.html#ad0b3b27f8447cff7a0414c915809b1d7", null ],
+    [ "IsRunning", "d1/d83/classxii_qt_editor_app.html#a4b9da769148d8e84a006f767d1754b13", null ],
     [ "LaunchEditor", "d1/d83/classxii_qt_editor_app.html#a5a6e25740c7bb1b850d2d1f943767d32", null ],
     [ "LoadOpenDocumentsList", "d1/d83/classxii_qt_editor_app.html#a37b99d6d58ac158e76328e5c573f1a6c", null ],
     [ "MakeRemoteProjectLocal", "d1/d83/classxii_qt_editor_app.html#a6594271d4f327e210acd2967b5206734", null ],

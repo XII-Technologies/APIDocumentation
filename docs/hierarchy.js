@@ -605,6 +605,9 @@ var hierarchy =
       [ "xiiQtUiServices", "d0/db6/classxii_qt_ui_services.html", null ],
       [ "xiiQtVersionChecker", "da/da2/classxii_qt_version_checker.html", null ]
     ] ],
+    [ "QProxyStyle", null, [
+      [ "xiiQtDarkEditorStyle", "dc/d4e/classxii_qt_dark_editor_style.html", null ]
+    ] ],
     [ "QSortFilterProxyModel", null, [
       [ "xiiQtTreeSearchFilterModel", "d5/d73/classxii_qt_tree_search_filter_model.html", null ]
     ] ],
@@ -7222,6 +7225,7 @@ var hierarchy =
     [ "xiiPropertyUiState", "de/d0e/structxii_property_ui_state.html", null ],
     [ "xiiMemoryPolicies::xiiProxyAllocation", "d9/d0b/classxii_memory_policies_1_1xii_proxy_allocation.html", null ],
     [ "xiiPushObjectStateData", "da/dd0/structxii_push_object_state_data.html", null ],
+    [ "xiiQtDarkThemeColours", "de/d48/structxii_qt_dark_theme_colours.html", null ],
     [ "xiiQtDocumentWindowEvent", "de/dfe/structxii_qt_document_window_event.html", null ],
     [ "xiiQtFileserveActivityItem", "d2/d9c/structxii_qt_fileserve_activity_item.html", null ],
     [ "xiiQtProgressbar", "d2/d20/classxii_qt_progressbar.html", null ],
