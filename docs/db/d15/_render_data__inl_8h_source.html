@@ -162,17 +162,20 @@ $(function(){initNavTree('db/d15/_render_data__inl_8h_source.html','../../'); in
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>  <span class="keywordflow">if</span> (pOwner != <span class="keyword">nullptr</span>)</div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>  {</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    pRenderData-&gt;m_hOwner = pOwner-&gt;<a class="code hl_function" href="../../d0/d91/classxii_game_object.html#a5ba3eef4642e9967b1ce0af17ed2549b">GetHandle</a>();</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>  }</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="preprocessor">#if XII_ENABLED(XII_COMPILE_FOR_DEVELOPMENT)</span></div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>  pRenderData-&gt;m_pOwner = pOwner;</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>  <span class="keywordflow">return</span> pRenderData;</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>}</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    pRenderData-&gt;m_Flags.AddOrRemove(xiiRenderData::Flags::Dynamic, pOwner-&gt;<a class="code hl_function" href="../../d0/d91/classxii_game_object.html#a5378a2055df6f62fd3c8703974021d77">IsDynamic</a>());</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    pRenderData-&gt;m_hOwner = pOwner-&gt;<a class="code hl_function" href="../../d0/d91/classxii_game_object.html#a5ba3eef4642e9967b1ce0af17ed2549b">GetHandle</a>();</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>  }</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="preprocessor">#if XII_ENABLED(XII_COMPILE_FOR_DEVELOPMENT)</span></div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>  pRenderData-&gt;m_pOwner = pOwner;</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>  <span class="keywordflow">return</span> pRenderData;</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>}</div>
 <div class="ttc" id="aclassxii_camera_html"><div class="ttname"><a href="../../dc/d68/classxii_camera.html">xiiCamera</a></div><div class="ttdoc">A camera class that stores the orientation and some basic camera settings.</div><div class="ttdef"><b>Definition</b> Camera.h:42</div></div>
 <div class="ttc" id="aclassxii_game_object_html"><div class="ttname"><a href="../../d0/d91/classxii_game_object.html">xiiGameObject</a></div><div class="ttdoc">This class represents an object inside the world.</div><div class="ttdef"><b>Definition</b> GameObject.h:47</div></div>
+<div class="ttc" id="aclassxii_game_object_html_a5378a2055df6f62fd3c8703974021d77"><div class="ttname"><a href="../../d0/d91/classxii_game_object.html#a5378a2055df6f62fd3c8703974021d77">xiiGameObject::IsDynamic</a></div><div class="ttdeci">bool IsDynamic() const</div><div class="ttdoc">Returns whether this object is dynamic.</div><div class="ttdef"><b>Definition</b> GameObject_inl.h:68</div></div>
 <div class="ttc" id="aclassxii_game_object_html_a5ba3eef4642e9967b1ce0af17ed2549b"><div class="ttname"><a href="../../d0/d91/classxii_game_object.html#a5ba3eef4642e9967b1ce0af17ed2549b">xiiGameObject::GetHandle</a></div><div class="ttdeci">xiiGameObjectHandle GetHandle() const</div><div class="ttdoc">Returns a handle to this object.</div><div class="ttdef"><b>Definition</b> GameObject_inl.h:63</div></div>
 <div class="ttc" id="aclassxii_render_data_html"><div class="ttname"><a href="../../d8/da5/classxii_render_data.html">xiiRenderData</a></div><div class="ttdoc">Base class for all render data. Render data must contain all information that is needed to render the...</div><div class="ttdef"><b>Definition</b> RenderData.h:14</div></div>
 <div class="ttc" id="aclassxii_render_data_html_a6ad19b1a61f0cb7ec53ca1fec0796d84"><div class="ttname"><a href="../../d8/da5/classxii_render_data.html#a6ad19b1a61f0cb7ec53ca1fec0796d84">xiiRenderData::GetFinalSortingKey</a></div><div class="ttdeci">xiiUInt64 GetFinalSortingKey(Category category, const xiiCamera &amp;camera) const</div><div class="ttdoc">Returns the final sorting for this render data with the given category and camera.</div><div class="ttdef"><b>Definition</b> RenderData_inl.h:46</div></div>
@@ -183,7 +186,7 @@ $(function(){initNavTree('db/d15/_render_data__inl_8h_source.html','../../'); in
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.html">home</a></li><li class="navelem"><a class="el" href="../../dir_1036706e55c22cab35bc1c58ee689f1d.html">runner</a></li><li class="navelem"><a class="el" href="../../dir_629f8151d55d307162ff2d619fb1783d.html">work</a></li><li class="navelem"><a class="el" href="../../dir_1ddc44fe1263a8c7935fa6130b7d9499.html">XII</a></li><li class="navelem"><a class="el" href="../../dir_2c1b6808f12952f4c36e05ba7068379a.html">XII</a></li><li class="navelem"><a class="el" href="../../dir_b5a1c4ecfca018ad24b729e213296d41.html">Source</a></li><li class="navelem"><a class="el" href="../../dir_e321052006a51284e67389ab20037e7c.html">Engine</a></li><li class="navelem"><a class="el" href="../../dir_d1b456933e20132afd1d01c7da962f40.html">GraphicsCore</a></li><li class="navelem"><a class="el" href="../../dir_dbd5e7b3b3ed2fc0d3f11d6b12eac684.html">Pipeline</a></li><li class="navelem"><a class="el" href="../../dir_eb8f95dbf6bd71c3ee11a80bf7c4f2ad.html">Implementation</a></li><li class="navelem"><b>RenderData_inl.h</b></li>
-    <li class="footer">Generated on Wed Aug 13 2025 04:53:01 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Wed Aug 13 2025 20:28:59 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 </body>

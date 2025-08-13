@@ -1,5 +1,6 @@
 var NAVTREEINDEX9 =
 {
+"d2/d96/structxii_anim_pose_generator_command_aim_i_k.html#af313adeaccf076bba410deabdbaf64fc":[3,0,159,3],
 "d2/d96/structxii_anim_pose_generator_command_aim_i_k.html#af5f60c6ea78d95e71134a80ec635f285":[3,0,159,5],
 "d2/d96/structxii_variant_adapter_3_01_t_00_01xii_enum_3_01_s_01_4_00_010_00_011_01_4.html":[3,0,2516],
 "d2/d9c/classxii_qt_game_object_view_widget.html":[3,0,1742],
@@ -53,6 +54,7 @@ var NAVTREEINDEX9 =
 "d2/dca/structxii_g_a_l_normalized_device_coordinates.html#a3d08f07e36b266368d49ac087daaeafa":[3,0,881,0],
 "d2/dcf/classxii_script_extension_class___physics.html":[3,0,2109],
 "d2/dd0/classxii_g_a_l_image_capture.html":[3,0,858],
+"d2/dd0/classxii_g_a_l_image_capture.html#a634a8aaad4cc971d2bb94b083ab9a3c2":[3,0,858,7],
 "d2/dd0/classxii_g_a_l_image_capture.html#a775f89869b5e3cb67a50d2c31657d33c":[3,0,858,1],
 "d2/dd0/classxii_g_a_l_image_capture.html#ab18c9f29edac528a8b2d4d8d25fb74c2":[3,0,858,6],
 "d2/dd0/classxii_g_a_l_image_capture.html#ae195aba4d165448130cfd8ac46017c25":[3,0,858,4],
@@ -247,7 +249,5 @@ var NAVTREEINDEX9 =
 "d3/d15/structxii_plugin_bundle.html#a35867c7f10c0e844f5f1d5f02c3b5475":[3,0,1548,9],
 "d3/d15/structxii_plugin_bundle.html#a4b9e524293e104fba1b4be7e6316f367":[3,0,1548,6],
 "d3/d15/structxii_plugin_bundle.html#a4ca176b19884e9e4161574be87c96a98":[3,0,1548,5],
-"d3/d15/structxii_plugin_bundle.html#a5751d27f8cc2c6c29a9873df141c4361":[3,0,1548,14],
-"d3/d15/structxii_plugin_bundle.html#a5fbbf8279194b1cfe5f411fe67dfe953":[3,0,1548,0],
-"d3/d15/structxii_plugin_bundle.html#a687d2dde2277a7309cda12b9355ffdb6":[3,0,1548,8]
+"d3/d15/structxii_plugin_bundle.html#a5751d27f8cc2c6c29a9873df141c4361":[3,0,1548,14]
 };

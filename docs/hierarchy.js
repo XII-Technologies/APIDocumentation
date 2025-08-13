@@ -86,6 +86,7 @@ var hierarchy =
     [ "xiiQtNodeScene::ConnectionDecorationFlags::Bits", "d8/d80/structxii_qt_node_scene_1_1_connection_decoration_flags_1_1_bits.html", null ],
     [ "xiiReflectionProbeMapping::xiiProbeMappingFlags::Bits", "d9/d4c/structxii_reflection_probe_mapping_1_1xii_probe_mapping_flags_1_1_bits.html", null ],
     [ "xiiRenderContextFlags::Bits", "d8/d01/structxii_render_context_flags_1_1_bits.html", null ],
+    [ "xiiRenderData::Flags::Bits", "d1/da9/structxii_render_data_1_1_flags_1_1_bits.html", null ],
     [ "xiiRenderPipelineNodePinFlags::Bits", "d8/df7/structxii_render_pipeline_node_pin_flags_1_1_bits.html", null ],
     [ "xiiRenderPipelinePassCapabilityFlags::Bits", "db/d35/structxii_render_pipeline_pass_capability_flags_1_1_bits.html", null ],
     [ "xiiRenderPipelinePassFlags::Bits", "dc/d71/structxii_render_pipeline_pass_flags_1_1_bits.html", null ],
@@ -268,6 +269,7 @@ var hierarchy =
     [ "xiiFileSystem::FileEventType", "d5/d74/structxii_file_system_1_1_file_event_type.html", null ],
     [ "xiiFileserveClientContext::FileStatus", "d9/d71/structxii_fileserve_client_context_1_1_file_status.html", null ],
     [ "xiiExpressionVM::Flags", "d4/d8b/structxii_expression_v_m_1_1_flags.html", null ],
+    [ "xiiRenderData::Flags", "d4/d43/structxii_render_data_1_1_flags.html", null ],
     [ "xiiSpatialData::Flags", "d9/dfa/structxii_spatial_data_1_1_flags.html", null ],
     [ "xiiVirtualThumbStick::Flags", "de/dd1/structxii_virtual_thumb_stick_1_1_flags.html", null ],
     [ "xiiRTTI::ForEachOptions", "d3/d09/structxii_r_t_t_i_1_1_for_each_options.html", null ],
@@ -1345,7 +1347,7 @@ var hierarchy =
     [ "xiiArrayBase< const xiiRenderData *, xiiDynamicArrayBase< const xiiRenderData * > >", "da/d4c/classxii_array_base.html", [
       [ "xiiDynamicArrayBase< const xiiRenderData * >", "d2/dea/classxii_dynamic_array_base.html", [
         [ "xiiDynamicArray< const xiiRenderData *, xiiDefaultAllocatorWrapper >", "dc/da4/classxii_dynamic_array.html", [
-          [ "xiiHybridArray< const xiiRenderData *, 16 >", "dc/da9/classxii_hybrid_array.html", null ]
+          [ "xiiHybridArray< const xiiRenderData *, 16U >", "dc/da9/classxii_hybrid_array.html", null ]
         ] ]
       ] ]
     ] ],
@@ -1399,7 +1401,7 @@ var hierarchy =
     [ "xiiArrayBase< DataPerCategory, xiiDynamicArrayBase< DataPerCategory > >", "da/d4c/classxii_array_base.html", [
       [ "xiiDynamicArrayBase< DataPerCategory >", "d2/dea/classxii_dynamic_array_base.html", [
         [ "xiiDynamicArray< DataPerCategory, xiiDefaultAllocatorWrapper >", "dc/da4/classxii_dynamic_array.html", [
-          [ "xiiHybridArray< DataPerCategory, 16 >", "dc/da9/classxii_hybrid_array.html", null ]
+          [ "xiiHybridArray< DataPerCategory, 32U >", "dc/da9/classxii_hybrid_array.html", null ]
         ] ]
       ] ]
     ] ],
@@ -2246,6 +2248,11 @@ var hierarchy =
     [ "xiiArrayBase< xiiDelegate< void()>, xiiDynamicArrayBase< xiiDelegate< void()> > >", "da/d4c/classxii_array_base.html", [
       [ "xiiDynamicArrayBase< xiiDelegate< void()> >", "d2/dea/classxii_dynamic_array_base.html", [
         [ "xiiDynamicArray< xiiDelegate< void()> >", "dc/da4/classxii_dynamic_array.html", null ]
+      ] ]
+    ] ],
+    [ "xiiArrayBase< xiiDelegate< void(xiiExtractedRenderData &)>, xiiDynamicArrayBase< xiiDelegate< void(xiiExtractedRenderData &)> > >", "da/d4c/classxii_array_base.html", [
+      [ "xiiDynamicArrayBase< xiiDelegate< void(xiiExtractedRenderData &)> >", "d2/dea/classxii_dynamic_array_base.html", [
+        [ "xiiDynamicArray< xiiDelegate< void(xiiExtractedRenderData &)> >", "dc/da4/classxii_dynamic_array.html", null ]
       ] ]
     ] ],
     [ "xiiArrayBase< xiiDGMLGraph::Connection, xiiDynamicArrayBase< xiiDGMLGraph::Connection > >", "da/d4c/classxii_array_base.html", [
@@ -4058,7 +4065,7 @@ var hierarchy =
       [ "xiiDelegate< void(IteratorType &)>", "dc/d84/structxii_delegate.html", null ],
       [ "xiiDelegate< ValueType(const IteratorType &)>", "dc/d84/structxii_delegate.html", null ],
       [ "xiiDelegate< void(xiiSharedPtr< xiiGALSwapChain > pSwapChain, xiiSizeU32 vSize)>", "dc/d84/structxii_delegate.html", null ],
-      [ "xiiDelegate< bool(const xiiRenderData *)>", "dc/d84/structxii_delegate.html", null ],
+      [ "xiiDelegate< void(xiiExtractedRenderData &)>", "dc/d84/structxii_delegate.html", null ],
       [ "xiiDelegate< xiiInternal::NewInstance< xiiGALDevice >(xiiAllocatorBase *, const xiiGALDeviceCreationDescription &)>", "dc/d84/structxii_delegate.html", null ],
       [ "xiiDelegate< void(xiiStringView, xiiStringView, const xiiGALShaderResourceDescription &, xiiStringBuilder &)>", "dc/d84/structxii_delegate.html", null ],
       [ "xiiDelegate< void(xiiFileserveClientContext &, xiiRemoteMessage &, xiiRemoteInterface &, xiiDelegate< void(const char *)>)>", "dc/d84/structxii_delegate.html", null ],

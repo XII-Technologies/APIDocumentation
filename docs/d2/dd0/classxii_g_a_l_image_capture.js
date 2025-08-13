@@ -6,5 +6,6 @@ var classxii_g_a_l_image_capture =
     [ "GetDevice", "d2/dd0/classxii_g_a_l_image_capture.html#aeaf7fce26c5d21190ccf27017643458c", null ],
     [ "GetPendingCaptureCount", "d2/dd0/classxii_g_a_l_image_capture.html#ae195aba4d165448130cfd8ac46017c25", null ],
     [ "HasCapture", "d2/dd0/classxii_g_a_l_image_capture.html#af2ca5fc887b1fa7c9f7d1c5097d642da", null ],
-    [ "RecycleStagingTexture", "d2/dd0/classxii_g_a_l_image_capture.html#ab18c9f29edac528a8b2d4d8d25fb74c2", null ]
+    [ "RecycleStagingTexture", "d2/dd0/classxii_g_a_l_image_capture.html#ab18c9f29edac528a8b2d4d8d25fb74c2", null ],
+    [ "WaitForCompletedValue", "d2/dd0/classxii_g_a_l_image_capture.html#a634a8aaad4cc971d2bb94b083ab9a3c2", null ]
 ];

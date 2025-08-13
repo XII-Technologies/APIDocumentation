@@ -37,11 +37,12 @@ var searchData=
   ['_7exiistaticringbuffer_34',['~xiiStaticRingBuffer',['../d1/de4/classxii_static_ring_buffer.html#a9fd6085ac7ba07731994c045134eddf0',1,'xiiStaticRingBuffer']]],
   ['_7exiistreamreader_35',['~xiiStreamReader',['../d4/d5e/classxii_stream_reader.html#a86369eb0da5e301a2a6fea4ced7b6316',1,'xiiStreamReader']]],
   ['_7exiistreamwriter_36',['~xiiStreamWriter',['../d0/d18/classxii_stream_writer.html#ad70638c916fcfe64adbda72349de099c',1,'xiiStreamWriter']]],
-  ['_7exiithread_37',['~xiiThread',['../d8/d8c/classxii_thread.html#a02f1587222e5accf36beb606d795633e',1,'xiiThread']]],
-  ['_7exiithreadwithdispatcher_38',['~xiiThreadWithDispatcher',['../de/d20/classxii_thread_with_dispatcher.html#a42060bad47baa43bc0db4c019feb6fe9',1,'xiiThreadWithDispatcher']]],
-  ['_7exiitypelessresourcehandle_39',['~xiiTypelessResourceHandle',['../d6/d01/classxii_typeless_resource_handle.html#aae55764f9f9d6af91456112c442947c1',1,'xiiTypelessResourceHandle']]],
-  ['_7exiiuniqueptr_40',['~xiiUniquePtr',['../d9/d4a/classxii_unique_ptr.html#a4b2ad18b78ae37387f0176fb09ceef63',1,'xiiUniquePtr']]],
-  ['_7exiivariant_41',['~xiiVariant',['../db/d1a/classxii_variant.html#a5e2564f36d44014dd6830e8492691f90',1,'xiiVariant']]],
-  ['_7exiivirtualthumbstick_42',['~xiiVirtualThumbStick',['../d2/d95/classxii_virtual_thumb_stick.html#adf653f1d42aaafbbddaef5131ac0910f',1,'xiiVirtualThumbStick']]],
-  ['_7exiiwindow_43',['~xiiWindow',['../d2/d13/classxii_window.html#a195cac2a8004e8b01085c52cb98c76c7',1,'xiiWindow']]]
+  ['_7exiitargetpass_37',['~xiiTargetPass',['../d4/d19/classxii_target_pass.html#acc2ed356375c7eaf3fc386d45b32223b',1,'xiiTargetPass']]],
+  ['_7exiithread_38',['~xiiThread',['../d8/d8c/classxii_thread.html#a02f1587222e5accf36beb606d795633e',1,'xiiThread']]],
+  ['_7exiithreadwithdispatcher_39',['~xiiThreadWithDispatcher',['../de/d20/classxii_thread_with_dispatcher.html#a42060bad47baa43bc0db4c019feb6fe9',1,'xiiThreadWithDispatcher']]],
+  ['_7exiitypelessresourcehandle_40',['~xiiTypelessResourceHandle',['../d6/d01/classxii_typeless_resource_handle.html#aae55764f9f9d6af91456112c442947c1',1,'xiiTypelessResourceHandle']]],
+  ['_7exiiuniqueptr_41',['~xiiUniquePtr',['../d9/d4a/classxii_unique_ptr.html#a4b2ad18b78ae37387f0176fb09ceef63',1,'xiiUniquePtr']]],
+  ['_7exiivariant_42',['~xiiVariant',['../db/d1a/classxii_variant.html#a5e2564f36d44014dd6830e8492691f90',1,'xiiVariant']]],
+  ['_7exiivirtualthumbstick_43',['~xiiVirtualThumbStick',['../d2/d95/classxii_virtual_thumb_stick.html#adf653f1d42aaafbbddaef5131ac0910f',1,'xiiVirtualThumbStick']]],
+  ['_7exiiwindow_44',['~xiiWindow',['../d2/d13/classxii_window.html#a195cac2a8004e8b01085c52cb98c76c7',1,'xiiWindow']]]
 ];

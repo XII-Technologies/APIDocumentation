@@ -1,5 +1,6 @@
 var NAVTREEINDEX8 =
 {
+"d2/d29/structxii_string_base.html#a492be752bac284a275f78166b67e1406":[3,0,2324,21],
 "d2/d29/structxii_string_base.html#a4ff1da418cd57f629e049c0cab04673c":[3,0,2324,8],
 "d2/d29/structxii_string_base.html#a52ad52604f0b98226a0342393b8db662":[3,0,2324,24],
 "d2/d29/structxii_string_base.html#a540637e5f22defeb32af069704c700d8":[3,0,2324,17],
@@ -248,6 +249,5 @@ var NAVTREEINDEX8 =
 "d2/d96/structxii_anim_pose_generator_command_aim_i_k.html#a6dfde175f239e5aa2d87dbb37f1e8cf2":[3,0,159,1],
 "d2/d96/structxii_anim_pose_generator_command_aim_i_k.html#a70a937759c0573013c85d7abebcabeac":[3,0,159,6],
 "d2/d96/structxii_anim_pose_generator_command_aim_i_k.html#aabda8ca253dc80015b2061945f690a6c":[3,0,159,0],
-"d2/d96/structxii_anim_pose_generator_command_aim_i_k.html#aafbcd895d890d3daa185657034c194ce":[3,0,159,2],
-"d2/d96/structxii_anim_pose_generator_command_aim_i_k.html#af313adeaccf076bba410deabdbaf64fc":[3,0,159,3]
+"d2/d96/structxii_anim_pose_generator_command_aim_i_k.html#aafbcd895d890d3daa185657034c194ce":[3,0,159,2]
 };

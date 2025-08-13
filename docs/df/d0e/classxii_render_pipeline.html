@@ -119,6 +119,9 @@ Public Types</h2></td></tr>
 , <b>Initialized</b>
  }</td></tr>
 <tr class="separator:ad5539f9397e6aef6c60fbd27f8dfa846"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab0eb162568553431490522628b2f7dc" id="r_aab0eb162568553431490522628b2f7dc"><td class="memItemLeft" align="right" valign="top"><a id="aab0eb162568553431490522628b2f7dc" name="aab0eb162568553431490522628b2f7dc"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>RenderDataProcessor</b> = <a class="el" href="../../dc/d84/structxii_delegate.html">xiiDelegate</a>&lt;void(<a class="el" href="../../d9/db2/classxii_extracted_render_data.html">xiiExtractedRenderData</a>&amp;)&gt;</td></tr>
+<tr class="separator:aab0eb162568553431490522628b2f7dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -170,9 +173,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>GetExtractors</b> (<a
 <tr class="memitem:ad5c599edbf7a0788cb063d8b0948c775" id="r_ad5c599edbf7a0788cb063d8b0948c775"><td class="memItemLeft" align="right" valign="top"><a id="ad5c599edbf7a0788cb063d8b0948c775" name="ad5c599edbf7a0788cb063d8b0948c775"></a>
 const <a class="el" href="../../d9/db2/classxii_extracted_render_data.html">xiiExtractedRenderData</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetRenderData</b> () const</td></tr>
 <tr class="separator:ad5c599edbf7a0788cb063d8b0948c775"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3f22cf24cb52cc39eccf40a603923bd1" id="r_a3f22cf24cb52cc39eccf40a603923bd1"><td class="memItemLeft" align="right" valign="top"><a id="a3f22cf24cb52cc39eccf40a603923bd1" name="a3f22cf24cb52cc39eccf40a603923bd1"></a>
-<a class="el" href="../../d7/d09/classxii_render_data_batch_list.html">xiiRenderDataBatchList</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetRenderDataBatchesWithCategory</b> (<a class="el" href="../../d0/d8b/structxii_render_data_1_1_category.html">xiiRenderData::Category</a> category, <a class="el" href="../../de/de6/classxii_render_data_batch.html#ae8823b7785d8c3eac98debed01eff75b">xiiRenderDataBatch::Filter</a> filter=<a class="el" href="../../de/de6/classxii_render_data_batch.html#ae8823b7785d8c3eac98debed01eff75b">xiiRenderDataBatch::Filter</a>()) const</td></tr>
-<tr class="separator:a3f22cf24cb52cc39eccf40a603923bd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc51682646bc8441c95ca7e106610ec7" id="r_afc51682646bc8441c95ca7e106610ec7"><td class="memItemLeft" align="right" valign="top"><a id="afc51682646bc8441c95ca7e106610ec7" name="afc51682646bc8441c95ca7e106610ec7"></a>
+<a class="el" href="../../d7/d09/classxii_render_data_batch_list.html">xiiRenderDataBatchList</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetRenderDataBatchesWithCategory</b> (<a class="el" href="../../d0/d8b/structxii_render_data_1_1_category.html">xiiRenderData::Category</a> category) const</td></tr>
+<tr class="separator:afc51682646bc8441c95ca7e106610ec7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9f60af263473998e07914659e42186d" id="r_ac9f60af263473998e07914659e42186d"><td class="memItemLeft" align="right" valign="top"><a id="ac9f60af263473998e07914659e42186d" name="ac9f60af263473998e07914659e42186d"></a>
+xiiUInt32&#160;</td><td class="memItemRight" valign="bottom"><b>AddRenderDataProcessor</b> (<a class="el" href="../../dc/d84/structxii_delegate.html">RenderDataProcessor</a> processor)</td></tr>
+<tr class="separator:ac9f60af263473998e07914659e42186d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a57d468baa0a3dcc4c00acfb3282139aa" id="r_a57d468baa0a3dcc4c00acfb3282139aa"><td class="memItemLeft" align="right" valign="top"><a id="a57d468baa0a3dcc4c00acfb3282139aa" name="a57d468baa0a3dcc4c00acfb3282139aa"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>CreateDgmlGraph</b> (<a class="el" href="../../d1/d8e/classxii_d_g_m_l_graph.html">xiiDGMLGraph</a> &amp;ref_graph)</td></tr>
 <tr class="memdesc:a57d468baa0a3dcc4c00acfb3282139aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a DGML graph of all passes and resources. Can be used to verify that no accidental temporary resources are created due to poorly constructed pipelines or errors in code. <br /></td></tr>
@@ -236,7 +242,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>xiiView</b></td></tr
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../df/d0e/classxii_render_pipeline.html">xiiRenderPipeline</a></li>
-    <li class="footer">Generated on Wed Aug 13 2025 04:53:05 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Wed Aug 13 2025 20:29:03 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 </body>
