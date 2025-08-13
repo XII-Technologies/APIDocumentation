@@ -1202,6 +1202,8 @@ var annotated_dup =
     [ "xiiGridSettingsMsgToEngine", "d9/dc1/classxii_grid_settings_msg_to_engine.html", null ],
     [ "xiiGroupAttribute", "da/d19/classxii_group_attribute.html", null ],
     [ "xiiHandedness", "df/d31/structxii_handedness.html", null ],
+    [ "xiiHash", "de/df8/structxii_hash.html", null ],
+    [ "xiiHash< T, typename std::enable_if< std::is_base_of< xiiHashableStruct< T >, T >::value >::type >", "d8/dcb/structxii_hash_3_01_t_00_01typename_01std_1_1enable__if_3_01std_1_1is__base__of_3_01xii_hashableea3159168a5091c10a6be14bbd8afc80.html", null ],
     [ "xiiHashableStruct", "d7/d9f/classxii_hashable_struct.html", "d7/d9f/classxii_hashable_struct" ],
     [ "xiiHashedString", "d6/d0c/classxii_hashed_string.html", "d6/d0c/classxii_hashed_string" ],
     [ "xiiHashHelper", "d6/dcd/structxii_hash_helper.html", null ],

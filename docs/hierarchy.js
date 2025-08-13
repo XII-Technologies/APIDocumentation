@@ -4975,6 +4975,8 @@ var hierarchy =
     [ "xiiGridNavmesh", "df/d99/classxii_grid_navmesh.html", null ],
     [ "xiiMemoryPolicies::xiiGuardedAllocation", "d0/df3/classxii_memory_policies_1_1xii_guarded_allocation.html", null ],
     [ "xiiHandedness", "df/d31/structxii_handedness.html", null ],
+    [ "xiiHash< T, typename >", "de/df8/structxii_hash.html", null ],
+    [ "xiiHash< T, typename std::enable_if< std::is_base_of< xiiHashableStruct< T >, T >::value >::type >", "d8/dcb/structxii_hash_3_01_t_00_01typename_01std_1_1enable__if_3_01std_1_1is__base__of_3_01xii_hashableea3159168a5091c10a6be14bbd8afc80.html", null ],
     [ "xiiHashableStruct< DERIVED >", "d7/d9f/classxii_hashable_struct.html", null ],
     [ "xiiHashableStruct< xiiGALAttachmentReferenceDescription >", "d7/d9f/classxii_hashable_struct.html", [
       [ "xiiGALAttachmentReferenceDescription", "d4/dae/structxii_g_a_l_attachment_reference_description.html", null ]
