@@ -104,16 +104,150 @@ $(function(){initNavTree('d2/dbd/classxii_script_extension_class___prefabs.html'
   <div class="headertitle"><div class="title">xiiScriptExtensionClass_Prefabs Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Script extension class providing prefab instantiation functionality for scripts.  
+ <a href="#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="../../dd/d09/_script_extension_class___prefabs_8h_source.html">ScriptExtensionClass_Prefabs.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:ad4d41b70c987da8e485202303eb98984" id="r_ad4d41b70c987da8e485202303eb98984"><td class="memItemLeft" align="right" valign="top"><a id="ad4d41b70c987da8e485202303eb98984" name="ad4d41b70c987da8e485202303eb98984"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>SpawnPrefab</b> (<a class="el" href="../../d6/d89/classxii_world.html">xiiWorld</a> *pWorld, <a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sPrefab, const <a class="el" href="../../d5/d13/classxii_transform_template.html">xiiTransform</a> &amp;globalTransform, const <a class="el" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3</a> &amp;vRelativePosition, const <a class="el" href="../../d9/d1b/classxii_quat_template.html">xiiQuat</a> &amp;qRelativeRotation)</td></tr>
-<tr class="separator:ad4d41b70c987da8e485202303eb98984"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a65cc4b591ff118d8a1a5ea775b17d014" id="r_a65cc4b591ff118d8a1a5ea775b17d014"><td class="memItemLeft" align="right" valign="top"><a id="a65cc4b591ff118d8a1a5ea775b17d014" name="a65cc4b591ff118d8a1a5ea775b17d014"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>SpawnPrefabAsChild</b> (<a class="el" href="../../d6/d89/classxii_world.html">xiiWorld</a> *pWorld, <a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sPrefab, <a class="el" href="../../d0/d91/classxii_game_object.html">xiiGameObject</a> *pParent, const <a class="el" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3</a> &amp;vRelativePosition, const <a class="el" href="../../d9/d1b/classxii_quat_template.html">xiiQuat</a> &amp;qRelativeRotation)</td></tr>
-<tr class="separator:a65cc4b591ff118d8a1a5ea775b17d014"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab00e34c5cc4c9d1544e1c9898292dc56" id="r_ab00e34c5cc4c9d1544e1c9898292dc56"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../dc/da4/classxii_dynamic_array.html">xiiVariantArray</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab00e34c5cc4c9d1544e1c9898292dc56">SpawnPrefab</a> (<a class="el" href="../../d6/d89/classxii_world.html">xiiWorld</a> *pWorld, <a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sPrefab, const <a class="el" href="../../d5/d13/classxii_transform_template.html">xiiTransform</a> &amp;globalTransform, xiiUInt32 uiUniqueID, bool bSetCreatedByPrefab, bool bSetHideShapeIcon)</td></tr>
+<tr class="separator:ab00e34c5cc4c9d1544e1c9898292dc56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad083140b1bda9dc5703dcb1da75b1ae2" id="r_ad083140b1bda9dc5703dcb1da75b1ae2"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../dc/da4/classxii_dynamic_array.html">xiiVariantArray</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad083140b1bda9dc5703dcb1da75b1ae2">SpawnPrefabAsChild</a> (<a class="el" href="../../d6/d89/classxii_world.html">xiiWorld</a> *pWorld, <a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sPrefab, <a class="el" href="../../d0/d91/classxii_game_object.html">xiiGameObject</a> *pParent, const <a class="el" href="../../d5/d13/classxii_transform_template.html">xiiTransform</a> &amp;localTransform, xiiUInt32 uiUniqueID, bool bSetCreatedByPrefab, bool bSetHideShapeIcon)</td></tr>
+<tr class="separator:ad083140b1bda9dc5703dcb1da75b1ae2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Script extension class providing prefab instantiation functionality for scripts. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="ab00e34c5cc4c9d1544e1c9898292dc56" name="ab00e34c5cc4c9d1544e1c9898292dc56"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab00e34c5cc4c9d1544e1c9898292dc56">&#9670;&#160;</a></span>SpawnPrefab()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dc/da4/classxii_dynamic_array.html">xiiVariantArray</a> xiiScriptExtensionClass_Prefabs::SpawnPrefab </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d6/d89/classxii_world.html">xiiWorld</a> *</td>          <td class="paramname"><span class="paramname"><em>pWorld</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a></td>          <td class="paramname"><span class="paramname"><em>sPrefab</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d5/d13/classxii_transform_template.html">xiiTransform</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>globalTransform</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">xiiUInt32</td>          <td class="paramname"><span class="paramname"><em>uiUniqueID</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>bSetCreatedByPrefab</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>bSetHideShapeIcon</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Spawns a prefab instance at the specified global transform.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sPrefab</td><td>Path or name of the prefab to spawn. </td></tr>
+    <tr><td class="paramname">globalTransform</td><td>World position, rotation and scale for the prefab. </td></tr>
+    <tr><td class="paramname">uiUniqueID</td><td>Unique identifier for deterministic spawning, use 0 for random. </td></tr>
+    <tr><td class="paramname">bSetCreatedByPrefab</td><td>Whether to mark spawned objects as created by prefab. </td></tr>
+    <tr><td class="paramname">bSetHideShapeIcon</td><td>Whether to hide shape icons in the editor for spawned objects. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Array of game object handles for the spawned prefab's top-level objects. </dd></dl>
+
+</div>
+</div>
+<a id="ad083140b1bda9dc5703dcb1da75b1ae2" name="ad083140b1bda9dc5703dcb1da75b1ae2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad083140b1bda9dc5703dcb1da75b1ae2">&#9670;&#160;</a></span>SpawnPrefabAsChild()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dc/da4/classxii_dynamic_array.html">xiiVariantArray</a> xiiScriptExtensionClass_Prefabs::SpawnPrefabAsChild </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d6/d89/classxii_world.html">xiiWorld</a> *</td>          <td class="paramname"><span class="paramname"><em>pWorld</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a></td>          <td class="paramname"><span class="paramname"><em>sPrefab</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d0/d91/classxii_game_object.html">xiiGameObject</a> *</td>          <td class="paramname"><span class="paramname"><em>pParent</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d5/d13/classxii_transform_template.html">xiiTransform</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>localTransform</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">xiiUInt32</td>          <td class="paramname"><span class="paramname"><em>uiUniqueID</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>bSetCreatedByPrefab</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>bSetHideShapeIcon</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Spawns a prefab instance as a child of the specified parent object.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sPrefab</td><td>Path or name of the prefab to spawn. </td></tr>
+    <tr><td class="paramname">pParent</td><td>Parent game object for the spawned prefab. </td></tr>
+    <tr><td class="paramname">localTransform</td><td>Local transform relative to the parent. </td></tr>
+    <tr><td class="paramname">uiUniqueID</td><td>Unique identifier for deterministic spawning, use 0 for random. </td></tr>
+    <tr><td class="paramname">bSetCreatedByPrefab</td><td>Whether to mark spawned objects as created by prefab. </td></tr>
+    <tr><td class="paramname">bSetHideShapeIcon</td><td>Whether to hide shape icons in the editor for spawned objects. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Array of game object handles for the spawned prefab's top-level objects. </dd></dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>/home/runner/work/XII/XII/Source/Engine/Core/Scripting/ScriptClasses/<a class="el" href="../../dd/d09/_script_extension_class___prefabs_8h_source.html">ScriptExtensionClass_Prefabs.h</a></li>
 <li>/home/runner/work/XII/XII/Source/Engine/Core/Scripting/ScriptClasses/Implementation/<b>ScriptExtensionClass_Prefabs.cpp</b></li>
@@ -124,7 +258,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>SpawnPrefabAsC
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d2/dbd/classxii_script_extension_class___prefabs.html">xiiScriptExtensionClass_Prefabs</a></li>
-    <li class="footer">Generated on Wed Aug 13 2025 20:29:03 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Tue Nov 11 2025 17:16:07 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 </body>

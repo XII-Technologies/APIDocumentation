@@ -17,6 +17,7 @@ var structxii_object_flags =
       [ "StaticTransformChangesNotifications", "dd/d15/structxii_object_flags.html#ab84c26953c65707e422df64a7fb08c30a1f8e99d82417934bd121d3bd93821be6", null ],
       [ "ParentChangesNotifications", "dd/d15/structxii_object_flags.html#ab84c26953c65707e422df64a7fb08c30a7f15dce180d10d5e11a0d250ebe45d28", null ],
       [ "CreatedByPrefab", "dd/d15/structxii_object_flags.html#ab84c26953c65707e422df64a7fb08c30acd065fa36ee7373201f20f81ef6d5277", null ],
+      [ "HideShapeIcon", "dd/d15/structxii_object_flags.html#ab84c26953c65707e422df64a7fb08c30ada80f9a9ebcb172a37ae56b253d50f90", null ],
       [ "UserFlag0", "dd/d15/structxii_object_flags.html#ab84c26953c65707e422df64a7fb08c30ab472bfeb029cdd69e51dd7e5151e9cc7", null ],
       [ "UserFlag1", "dd/d15/structxii_object_flags.html#ab84c26953c65707e422df64a7fb08c30a44e233638d1f9e252f893b2b45f46db6", null ],
       [ "UserFlag2", "dd/d15/structxii_object_flags.html#ab84c26953c65707e422df64a7fb08c30a808871f540b12f780f9c8e3b10c87425", null ],

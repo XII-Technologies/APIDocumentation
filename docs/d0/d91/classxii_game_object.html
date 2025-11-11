@@ -168,6 +168,14 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>SetCreatedByPrefab</b
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>WasCreatedByPrefab</b> () const</td></tr>
 <tr class="memdesc:ae631d92ec0ae1725f4769c87e2dfd536"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether the <a class="el" href="../../dd/d15/structxii_object_flags.html#ab84c26953c65707e422df64a7fb08c30acd065fa36ee7373201f20f81ef6d5277" title="Such flagged objects and components are ignored during scene export (see xiiWorldWriter) and will be ...">xiiObjectFlags::CreatedByPrefab</a> flag is set on this object. <br /></td></tr>
 <tr class="separator:ae631d92ec0ae1725f4769c87e2dfd536"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aabee63f39251e3a9f6115ee7160834d9" id="r_aabee63f39251e3a9f6115ee7160834d9"><td class="memItemLeft" align="right" valign="top"><a id="aabee63f39251e3a9f6115ee7160834d9" name="aabee63f39251e3a9f6115ee7160834d9"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetHideShapeIcon</b> ()</td></tr>
+<tr class="memdesc:aabee63f39251e3a9f6115ee7160834d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds <a class="el" href="../../dd/d15/structxii_object_flags.html#ab84c26953c65707e422df64a7fb08c30ada80f9a9ebcb172a37ae56b253d50f90" title="Hide the shape icon of the object in the editor.">xiiObjectFlags::HideShapeIcon</a> to the object. See the flag for details. <br /></td></tr>
+<tr class="separator:aabee63f39251e3a9f6115ee7160834d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0495c0a072315a1626c9825d9a200e05" id="r_a0495c0a072315a1626c9825d9a200e05"><td class="memItemLeft" align="right" valign="top"><a id="a0495c0a072315a1626c9825d9a200e05" name="a0495c0a072315a1626c9825d9a200e05"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsShapeIconHidden</b> () const</td></tr>
+<tr class="memdesc:a0495c0a072315a1626c9825d9a200e05"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether the <a class="el" href="../../dd/d15/structxii_object_flags.html#ab84c26953c65707e422df64a7fb08c30ada80f9a9ebcb172a37ae56b253d50f90" title="Hide the shape icon of the object in the editor.">xiiObjectFlags::HideShapeIcon</a> flag is set on this object. <br /></td></tr>
+<tr class="separator:a0495c0a072315a1626c9825d9a200e05"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a878733af26b46c9f715649821815b514" id="r_a878733af26b46c9f715649821815b514"><td class="memItemLeft" align="right" valign="top"><a id="a878733af26b46c9f715649821815b514" name="a878733af26b46c9f715649821815b514"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetName</b> (<a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sName)</td></tr>
 <tr class="memdesc:a878733af26b46c9f715649821815b514"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the name to identify this object. Does not have to be a unique name. <br /></td></tr>
@@ -184,9 +192,8 @@ const <a class="el" href="../../d6/d0c/classxii_hashed_string.html">xiiHashedStr
 <tr class="memitem:a9ea4fd6b7ebe0f9491baafdbe62c927f" id="r_a9ea4fd6b7ebe0f9491baafdbe62c927f"><td class="memItemLeft" align="right" valign="top"><a id="a9ea4fd6b7ebe0f9491baafdbe62c927f" name="a9ea4fd6b7ebe0f9491baafdbe62c927f"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>HasName</b> (const <a class="el" href="../../d5/dd2/classxii_temp_hashed_string.html">xiiTempHashedString</a> &amp;sName) const</td></tr>
 <tr class="separator:a9ea4fd6b7ebe0f9491baafdbe62c927f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa9a16caab67487fd3457dc52bc75ce7b" id="r_aa9a16caab67487fd3457dc52bc75ce7b"><td class="memItemLeft" align="right" valign="top"><a id="aa9a16caab67487fd3457dc52bc75ce7b" name="aa9a16caab67487fd3457dc52bc75ce7b"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SetGlobalKey</b> (<a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sGlobalKey)</td></tr>
-<tr class="memdesc:aa9a16caab67487fd3457dc52bc75ce7b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the global key to identify this object. Global keys must be unique within a world. <br /></td></tr>
+<tr class="memitem:aa9a16caab67487fd3457dc52bc75ce7b" id="r_aa9a16caab67487fd3457dc52bc75ce7b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa9a16caab67487fd3457dc52bc75ce7b">SetGlobalKey</a> (<a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sGlobalKey)</td></tr>
+<tr class="memdesc:aa9a16caab67487fd3457dc52bc75ce7b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the global key to identify this object. Global keys must be unique within a world.  <br /></td></tr>
 <tr class="separator:aa9a16caab67487fd3457dc52bc75ce7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0ff9994e44d6f7cb45822913fb3c87be" id="r_a0ff9994e44d6f7cb45822913fb3c87be"><td class="memItemLeft" align="right" valign="top"><a id="a0ff9994e44d6f7cb45822913fb3c87be" name="a0ff9994e44d6f7cb45822913fb3c87be"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetGlobalKey</b> (const <a class="el" href="../../d6/d0c/classxii_hashed_string.html">xiiHashedString</a> &amp;sGlobalKey)</td></tr>
@@ -1001,6 +1008,26 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>xiiGameObjectTest</b
 
 </div>
 </div>
+<a id="aa9a16caab67487fd3457dc52bc75ce7b" name="aa9a16caab67487fd3457dc52bc75ce7b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa9a16caab67487fd3457dc52bc75ce7b">&#9670;&#160;</a></span>SetGlobalKey()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">XII_ALWAYS_INLINE void xiiGameObject::SetGlobalKey </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a></td>          <td class="paramname"><span class="paramname"><em>sGlobalKey</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the global key to identify this object. Global keys must be unique within a world. </p>
+<p>If two objects use the same global key, the last one that registers it will be the referenced object. To prevent warnings about overwriting global keys, first clear the global key on the previous object. </p>
+
+</div>
+</div>
 <a id="a1d851774f4cc83eb369b41e058c58be9" name="a1d851774f4cc83eb369b41e058c58be9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1d851774f4cc83eb369b41e058c58be9">&#9670;&#160;</a></span>SetLocalPosition()</h2>
 
@@ -1053,7 +1080,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>xiiGameObjectTest</b
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d0/d91/classxii_game_object.html">xiiGameObject</a></li>
-    <li class="footer">Generated on Wed Aug 13 2025 20:29:02 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Tue Nov 11 2025 17:16:06 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 </body>

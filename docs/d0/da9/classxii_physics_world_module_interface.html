@@ -106,6 +106,8 @@ $(function(){initNavTree('d0/da9/classxii_physics_world_module_interface.html','
   <div class="headertitle"><div class="title">xiiPhysicsWorldModuleInterface Class Reference<span class="mlabels"><span class="mlabel abstract">abstract</span></span></div></div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="../../de/d7f/_physics_world_module_8h_source.html">PhysicsWorldModule.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for xiiPhysicsWorldModuleInterface:</div>
 <div class="dyncontent">
@@ -124,6 +126,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:acc5e0151f945abaeee891530ed49a9e2" id="r_acc5e0151f945abaeee891530ed49a9e2"><td class="memItemLeft" align="right" valign="top">virtual xiiUInt32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acc5e0151f945abaeee891530ed49a9e2">GetCollisionLayerByName</a> (<a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sName) const =0</td></tr>
 <tr class="memdesc:acc5e0151f945abaeee891530ed49a9e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Searches for a collision layer with the given name and returns its index.  <br /></td></tr>
 <tr class="separator:acc5e0151f945abaeee891530ed49a9e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad25370898a4ac85618736aa27b10c9e6" id="r_ad25370898a4ac85618736aa27b10c9e6"><td class="memItemLeft" align="right" valign="top">virtual xiiUInt8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad25370898a4ac85618736aa27b10c9e6">GetWeightCategoryByName</a> (<a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sName) const =0</td></tr>
+<tr class="memdesc:ad25370898a4ac85618736aa27b10c9e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Searches for a weight category with the given name and returns its key.  <br /></td></tr>
+<tr class="separator:ad25370898a4ac85618736aa27b10c9e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b718866694580addd00aefaeaf45a12" id="r_a8b718866694580addd00aefaeaf45a12"><td class="memItemLeft" align="right" valign="top">virtual xiiUInt8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8b718866694580addd00aefaeaf45a12">GetImpulseTypeByName</a> (<a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sName) const =0</td></tr>
+<tr class="memdesc:a8b718866694580addd00aefaeaf45a12"><td class="mdescLeft">&#160;</td><td class="mdescRight">Searches for an impulse type with the given name and returns its key.  <br /></td></tr>
+<tr class="separator:a8b718866694580addd00aefaeaf45a12"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a711031e9f2a45277101e919409e0e2a8" id="r_a711031e9f2a45277101e919409e0e2a8"><td class="memItemLeft" align="right" valign="top"><a id="a711031e9f2a45277101e919409e0e2a8" name="a711031e9f2a45277101e919409e0e2a8"></a>
 virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>Raycast</b> (<a class="el" href="../../d8/d2c/structxii_physics_cast_result.html">xiiPhysicsCastResult</a> &amp;out_result, const <a class="el" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3</a> &amp;vStart, const <a class="el" href="../../d9/d9a/classxii_vec3_template.html">xiiVec3</a> &amp;vDir, float fDistance, const <a class="el" href="../../d2/d9c/structxii_physics_query_parameters.html">xiiPhysicsQueryParameters</a> &amp;params, xiiPhysicsHitCollection collection=xiiPhysicsHitCollection::Closest) const =0</td></tr>
 <tr class="separator:a711031e9f2a45277101e919409e0e2a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -267,7 +275,10 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>UpdateFunction</b> =
 <a class="el" href="../../d6/d89/classxii_world.html">xiiWorld</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_pWorld</b></td></tr>
 <tr class="separator:ad5ff01d82d6adebe16c27dc651480de1 inherit pro_attribs_classxii_world_module"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Interface for physics world modules that provide physics simulation and queries.</p>
+<p>Physics world modules implement physics functionality for a world, including collision detection, raycasting, and shape queries. Different physics engines can provide their own implementations of this interface. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="acc5e0151f945abaeee891530ed49a9e2" name="acc5e0151f945abaeee891530ed49a9e2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#acc5e0151f945abaeee891530ed49a9e2">&#9670;&#160;</a></span>GetCollisionLayerByName()</h2>
 
@@ -296,6 +307,62 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>UpdateFunction</b> =
 
 </div>
 </div>
+<a id="a8b718866694580addd00aefaeaf45a12" name="a8b718866694580addd00aefaeaf45a12"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b718866694580addd00aefaeaf45a12">&#9670;&#160;</a></span>GetImpulseTypeByName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual xiiUInt8 xiiPhysicsWorldModuleInterface::GetImpulseTypeByName </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a></td>          <td class="paramname"><span class="paramname"><em>sName</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel pure-virtual">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Searches for an impulse type with the given name and returns its key. </p>
+<p>Returns xiiImpulseTypeConfig::InvalidKey if no such category exists. </p>
+
+</div>
+</div>
+<a id="ad25370898a4ac85618736aa27b10c9e6" name="ad25370898a4ac85618736aa27b10c9e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad25370898a4ac85618736aa27b10c9e6">&#9670;&#160;</a></span>GetWeightCategoryByName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual xiiUInt8 xiiPhysicsWorldModuleInterface::GetWeightCategoryByName </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a></td>          <td class="paramname"><span class="paramname"><em>sName</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel pure-virtual">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Searches for a weight category with the given name and returns its key. </p>
+<p>Returns xiiWeightCategoryConfig::InvalidKey if no such category exists. </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>/home/runner/work/XII/XII/Source/Engine/Core/Interfaces/<a class="el" href="../../de/d7f/_physics_world_module_8h_source.html">PhysicsWorldModule.h</a></li>
 </ul>
@@ -305,7 +372,7 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>UpdateFunction</b> =
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d0/da9/classxii_physics_world_module_interface.html">xiiPhysicsWorldModuleInterface</a></li>
-    <li class="footer">Generated on Wed Aug 13 2025 20:29:03 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Tue Nov 11 2025 17:16:06 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 </body>

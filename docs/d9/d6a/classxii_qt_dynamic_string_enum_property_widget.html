@@ -102,6 +102,7 @@ $(function(){initNavTree('d9/d6a/classxii_qt_dynamic_string_enum_property_widget
 <a href="#pro-slots">Protected Slots</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
+<a href="#pro-static-attribs">Static Protected Attributes</a> &#124;
 <a href="../../d2/d93/classxii_qt_dynamic_string_enum_property_widget-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">xiiQtDynamicStringEnumPropertyWidget Class Reference</div></div>
 </div><!--header-->
@@ -114,9 +115,9 @@ Inheritance diagram for xiiQtDynamicStringEnumPropertyWidget:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-slots" name="pro-slots"></a>
 Protected Slots</h2></td></tr>
-<tr class="memitem:ad3e187c7d6a3443c1b8c9cb13e8efb99" id="r_ad3e187c7d6a3443c1b8c9cb13e8efb99"><td class="memItemLeft" align="right" valign="top"><a id="ad3e187c7d6a3443c1b8c9cb13e8efb99" name="ad3e187c7d6a3443c1b8c9cb13e8efb99"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>on_CurrentEnum_changed</b> (int iEnum)</td></tr>
-<tr class="separator:ad3e187c7d6a3443c1b8c9cb13e8efb99"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77ecc0b19df448343bcd5d7928b859b9" id="r_a77ecc0b19df448343bcd5d7928b859b9"><td class="memItemLeft" align="right" valign="top"><a id="a77ecc0b19df448343bcd5d7928b859b9" name="a77ecc0b19df448343bcd5d7928b859b9"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>onMenuAboutToShow</b> ()</td></tr>
+<tr class="separator:a77ecc0b19df448343bcd5d7928b859b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -124,6 +125,9 @@ Protected Member Functions</h2></td></tr>
 <tr class="separator:a5df0c6bae96687392023ab7c670ac96d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6593180c372bb4a7ff28907b28ca2793" id="r_a6593180c372bb4a7ff28907b28ca2793"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6593180c372bb4a7ff28907b28ca2793">InternalSetValue</a> (const <a class="el" href="../../db/d1a/classxii_variant.html">xiiVariant</a> &amp;value) override</td></tr>
 <tr class="separator:a6593180c372bb4a7ff28907b28ca2793"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a178ec45a584abfdffe802824d217c005" id="r_a178ec45a584abfdffe802824d217c005"><td class="memItemLeft" align="right" valign="top"><a id="a178ec45a584abfdffe802824d217c005" name="a178ec45a584abfdffe802824d217c005"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetNewValue</b> (<a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sNewValue)</td></tr>
+<tr class="separator:a178ec45a584abfdffe802824d217c005"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_classxii_qt_standard_property_widget"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_methods_classxii_qt_standard_property_widget')"><img src="../../closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="../../d5/db2/classxii_qt_standard_property_widget.html">xiiQtStandardPropertyWidget</a></td></tr>
 <tr class="memitem:a2214e36e3251ce28960c2963c2407f75 inherit pro_methods_classxii_qt_standard_property_widget" id="r_a2214e36e3251ce28960c2963c2407f75"><td class="memItemLeft" align="right" valign="top">
 void&#160;</td><td class="memItemRight" valign="bottom"><b>BroadcastValueChanged</b> (const <a class="el" href="../../db/d1a/classxii_variant.html">xiiVariant</a> &amp;NewValue)</td></tr>
@@ -149,18 +153,24 @@ virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>eventFilter</
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr class="memitem:af48ca8d26d57870a405b0a23cb8cbddb" id="r_af48ca8d26d57870a405b0a23cb8cbddb"><td class="memItemLeft" align="right" valign="top"><a id="af48ca8d26d57870a405b0a23cb8cbddb" name="af48ca8d26d57870a405b0a23cb8cbddb"></a>
-QComboBox *&#160;</td><td class="memItemRight" valign="bottom"><b>m_pWidget</b></td></tr>
-<tr class="separator:af48ca8d26d57870a405b0a23cb8cbddb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a15b015720d592f87256af4dd43d97869" id="r_a15b015720d592f87256af4dd43d97869"><td class="memItemLeft" align="right" valign="top"><a id="a15b015720d592f87256af4dd43d97869" name="a15b015720d592f87256af4dd43d97869"></a>
-QHBoxLayout *&#160;</td><td class="memItemRight" valign="bottom"><b>m_pLayout</b></td></tr>
+QHBoxLayout *&#160;</td><td class="memItemRight" valign="bottom"><b>m_pLayout</b> = nullptr</td></tr>
 <tr class="separator:a15b015720d592f87256af4dd43d97869"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2a80083c47aa78438202d6779a43dce3" id="r_a2a80083c47aa78438202d6779a43dce3"><td class="memItemLeft" align="right" valign="top"><a id="a2a80083c47aa78438202d6779a43dce3" name="a2a80083c47aa78438202d6779a43dce3"></a>
 <a class="el" href="../../d7/d13/classxii_dynamic_string_enum.html">xiiDynamicStringEnum</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_pEnum</b> = nullptr</td></tr>
 <tr class="separator:a2a80083c47aa78438202d6779a43dce3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab53d184f222d6e9d6cd8b7c0c3e87fdb" id="r_ab53d184f222d6e9d6cd8b7c0c3e87fdb"><td class="memItemLeft" align="right" valign="top"><a id="ab53d184f222d6e9d6cd8b7c0c3e87fdb" name="ab53d184f222d6e9d6cd8b7c0c3e87fdb"></a>
-xiiInt32&#160;</td><td class="memItemRight" valign="bottom"><b>m_iLastIndex</b> = -1</td></tr>
-<tr class="separator:ab53d184f222d6e9d6cd8b7c0c3e87fdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aada5f049c551945d94d60911b25b7f6c" id="r_aada5f049c551945d94d60911b25b7f6c"><td class="memItemLeft" align="right" valign="top"><a id="aada5f049c551945d94d60911b25b7f6c" name="aada5f049c551945d94d60911b25b7f6c"></a>
+QPushButton *&#160;</td><td class="memItemRight" valign="bottom"><b>m_pButton</b> = nullptr</td></tr>
+<tr class="separator:aada5f049c551945d94d60911b25b7f6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae259a2541ff05aee45e1db10c5d396ef" id="r_ae259a2541ff05aee45e1db10c5d396ef"><td class="memItemLeft" align="right" valign="top"><a id="ae259a2541ff05aee45e1db10c5d396ef" name="ae259a2541ff05aee45e1db10c5d396ef"></a>
+QMenu *&#160;</td><td class="memItemRight" valign="bottom"><b>m_pMenu</b> = nullptr</td></tr>
+<tr class="separator:ae259a2541ff05aee45e1db10c5d396ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abbf42659323d6fd9605248387ec023d8" id="r_abbf42659323d6fd9605248387ec023d8"><td class="memItemLeft" align="right" valign="top"><a id="abbf42659323d6fd9605248387ec023d8" name="abbf42659323d6fd9605248387ec023d8"></a>
+<a class="el" href="../../d3/d9e/classxii_qt_searchable_menu.html">xiiQtSearchableMenu</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_pSearchableMenu</b> = nullptr</td></tr>
+<tr class="separator:abbf42659323d6fd9605248387ec023d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9ac32057faed45520ba34c6afc5a092" id="r_ae9ac32057faed45520ba34c6afc5a092"><td class="memItemLeft" align="right" valign="top"><a id="ae9ac32057faed45520ba34c6afc5a092" name="ae9ac32057faed45520ba34c6afc5a092"></a>
+<a class="el" href="../../df/dfb/structxii_hybrid_string.html">xiiString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_sEnumAttribute</b></td></tr>
+<tr class="separator:ae9ac32057faed45520ba34c6afc5a092"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_classxii_qt_standard_property_widget"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_attribs_classxii_qt_standard_property_widget')"><img src="../../closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="../../d5/db2/classxii_qt_standard_property_widget.html">xiiQtStandardPropertyWidget</a></td></tr>
 <tr class="memitem:a3e92713171e34172a78b4b50dbeeff58 inherit pro_attribs_classxii_qt_standard_property_widget" id="r_a3e92713171e34172a78b4b50dbeeff58"><td class="memItemLeft" align="right" valign="top">
 <a class="el" href="../../db/d1a/classxii_variant.html">xiiVariant</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_OldValue</b></td></tr>
@@ -185,6 +195,12 @@ const <a class="el" href="../../da/d25/classxii_abstract_property.html">xiiAbstr
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_bIsDefault</b></td></tr>
 <tr class="memdesc:a85f75c6eca752971da650c0d1668818a inherit pro_attribs_classxii_qt_property_widget"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether the variable that the widget represents is currently set to the default value or has been modified. <br /></td></tr>
 <tr class="separator:a85f75c6eca752971da650c0d1668818a inherit pro_attribs_classxii_qt_property_widget"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-static-attribs" name="pro-static-attribs"></a>
+Static Protected Attributes</h2></td></tr>
+<tr class="memitem:aa1598c0dd3a82e4a01f5ce81c3c34829" id="r_aa1598c0dd3a82e4a01f5ce81c3c34829"><td class="memItemLeft" align="right" valign="top"><a id="aa1598c0dd3a82e4a01f5ce81c3c34829" name="aa1598c0dd3a82e4a01f5ce81c3c34829"></a>
+static <a class="el" href="../../d6/df7/classxii_map.html">xiiMap</a>&lt; <a class="el" href="../../df/dfb/structxii_hybrid_string.html">xiiString</a>, QString &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>s_LastSearch</b></td></tr>
+<tr class="separator:aa1598c0dd3a82e4a01f5ce81c3c34829"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -313,7 +329,7 @@ static QColor&#160;</td><td class="memItemRight" valign="bottom"><b>SetPaletteBa
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d9/d6a/classxii_qt_dynamic_string_enum_property_widget.html">xiiQtDynamicStringEnumPropertyWidget</a></li>
-    <li class="footer">Generated on Wed Aug 13 2025 20:29:03 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Tue Nov 11 2025 17:16:07 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 </body>

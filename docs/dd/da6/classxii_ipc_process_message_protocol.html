@@ -99,6 +99,7 @@ $(function(){initNavTree('dd/da6/classxii_ipc_process_message_protocol.html','..
 
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="../../df/d14/classxii_ipc_process_message_protocol-members.html">List of all members</a>  </div>
@@ -106,40 +107,167 @@ $(function(){initNavTree('dd/da6/classxii_ipc_process_message_protocol.html','..
 </div><!--header-->
 <div class="contents">
 
-<p>A protocol around <a class="el" href="../../df/d60/classxii_ipc_channel.html" title="Base class for a communication channel between processes.">xiiIpcChannel</a> to send reflected messages instead of byte array messages between client and server.  
+<p>A protocol wrapper around <a class="el" href="../../df/d60/classxii_ipc_channel.html" title="Base class for a communication channel between processes.">xiiIpcChannel</a> to send and receive reflected messages instead of raw byte arrays.  
  <a href="#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="../../d5/d0f/_ipc_process_message_protocol_8h_source.html">IpcProcessMessageProtocol.h</a>&gt;</code></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/de4/structxii_ipc_process_message_protocol_1_1_event.html">Event</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="../../d5/de4/structxii_ipc_process_message_protocol_1_1_event.html" title="Event data structure for message notifications.">Event</a> data structure for message notifications.  <a href="../../d5/de4/structxii_ipc_process_message_protocol_1_1_event.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a4aaa160e30e9ea067f71fbbdcd42565f" id="r_a4aaa160e30e9ea067f71fbbdcd42565f"><td class="memItemLeft" align="right" valign="top"><a id="a4aaa160e30e9ea067f71fbbdcd42565f" name="a4aaa160e30e9ea067f71fbbdcd42565f"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>xiiIpcProcessMessageProtocol</b> (<a class="el" href="../../df/d60/classxii_ipc_channel.html">xiiIpcChannel</a> *pChannel)</td></tr>
+<tr class="memitem:a4aaa160e30e9ea067f71fbbdcd42565f" id="r_a4aaa160e30e9ea067f71fbbdcd42565f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4aaa160e30e9ea067f71fbbdcd42565f">xiiIpcProcessMessageProtocol</a> (<a class="el" href="../../df/d60/classxii_ipc_channel.html">xiiIpcChannel</a> *pChannel)</td></tr>
+<tr class="memdesc:a4aaa160e30e9ea067f71fbbdcd42565f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs the protocol wrapper for a given IPC channel.  <br /></td></tr>
 <tr class="separator:a4aaa160e30e9ea067f71fbbdcd42565f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa69dc71501813814927641b0a8baccf9" id="r_aa69dc71501813814927641b0a8baccf9"><td class="memItemLeft" align="right" valign="top"><a id="aa69dc71501813814927641b0a8baccf9" name="aa69dc71501813814927641b0a8baccf9"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>Send</b> (<a class="el" href="../../d4/d06/classxii_process_message.html">xiiProcessMessage</a> *pMsg)</td></tr>
-<tr class="memdesc:aa69dc71501813814927641b0a8baccf9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends a message. pMsg can be destroyed after the call. <br /></td></tr>
+<tr class="memitem:acc62ff1593202d56705abdf7b7b66d6f" id="r_acc62ff1593202d56705abdf7b7b66d6f"><td class="memItemLeft" align="right" valign="top"><a id="acc62ff1593202d56705abdf7b7b66d6f" name="acc62ff1593202d56705abdf7b7b66d6f"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>~xiiIpcProcessMessageProtocol</b> ()</td></tr>
+<tr class="memdesc:acc62ff1593202d56705abdf7b7b66d6f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor. Cleans up any queued messages and detaches from the channel. <br /></td></tr>
+<tr class="separator:acc62ff1593202d56705abdf7b7b66d6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa69dc71501813814927641b0a8baccf9" id="r_aa69dc71501813814927641b0a8baccf9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa69dc71501813814927641b0a8baccf9">Send</a> (<a class="el" href="../../d4/d06/classxii_process_message.html">xiiProcessMessage</a> *pMsg)</td></tr>
+<tr class="memdesc:aa69dc71501813814927641b0a8baccf9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends a reflected process message over the IPC channel.  <br /></td></tr>
 <tr class="separator:aa69dc71501813814927641b0a8baccf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a62ef3411c7ae4c0f1b356efb3ca6c4d5" id="r_a62ef3411c7ae4c0f1b356efb3ca6c4d5"><td class="memItemLeft" align="right" valign="top"><a id="a62ef3411c7ae4c0f1b356efb3ca6c4d5" name="a62ef3411c7ae4c0f1b356efb3ca6c4d5"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>ProcessMessages</b> ()</td></tr>
-<tr class="memdesc:a62ef3411c7ae4c0f1b356efb3ca6c4d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Processes all pending messages by broadcasting m_MessageEvent. Not re-entrant. <br /></td></tr>
+<tr class="memitem:a62ef3411c7ae4c0f1b356efb3ca6c4d5" id="r_a62ef3411c7ae4c0f1b356efb3ca6c4d5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a62ef3411c7ae4c0f1b356efb3ca6c4d5">ProcessMessages</a> ()</td></tr>
+<tr class="memdesc:a62ef3411c7ae4c0f1b356efb3ca6c4d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Processes all pending incoming messages.  <br /></td></tr>
 <tr class="separator:a62ef3411c7ae4c0f1b356efb3ca6c4d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a70c5c723bc86c631c764f3447a04fc96" id="r_a70c5c723bc86c631c764f3447a04fc96"><td class="memItemLeft" align="right" valign="top"><a id="a70c5c723bc86c631c764f3447a04fc96" name="a70c5c723bc86c631c764f3447a04fc96"></a>
-<a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><b>WaitForMessages</b> (<a class="el" href="../../d7/dc1/structxii_time.html">xiiTime</a> timeout=<a class="el" href="../../d7/dc1/structxii_time.html#af50981ed01769e51493ea3d573c007ae">xiiTime::MakeZero</a>())</td></tr>
-<tr class="memdesc:a70c5c723bc86c631c764f3447a04fc96"><td class="mdescLeft">&#160;</td><td class="mdescRight">Block and wait for new messages and call ProcessMessages. <br /></td></tr>
+<tr class="memitem:a70c5c723bc86c631c764f3447a04fc96" id="r_a70c5c723bc86c631c764f3447a04fc96"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a70c5c723bc86c631c764f3447a04fc96">WaitForMessages</a> (<a class="el" href="../../d7/dc1/structxii_time.html">xiiTime</a> timeout=<a class="el" href="../../d7/dc1/structxii_time.html#af50981ed01769e51493ea3d573c007ae">xiiTime::MakeZero</a>())</td></tr>
+<tr class="memdesc:a70c5c723bc86c631c764f3447a04fc96"><td class="mdescLeft">&#160;</td><td class="mdescRight">Waits for new messages to arrive and processes them.  <br /></td></tr>
 <tr class="separator:a70c5c723bc86c631c764f3447a04fc96"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:aa064d0d9cd42a53979d9b6ef09b0ba53" id="r_aa064d0d9cd42a53979d9b6ef09b0ba53"><td class="memItemLeft" align="right" valign="top"><a id="aa064d0d9cd42a53979d9b6ef09b0ba53" name="aa064d0d9cd42a53979d9b6ef09b0ba53"></a>
-<a class="el" href="../../dc/d22/classxii_event.html">xiiEvent</a>&lt; const <a class="el" href="../../d4/d06/classxii_process_message.html">xiiProcessMessage</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_MessageEvent</b></td></tr>
-<tr class="memdesc:aa064d0d9cd42a53979d9b6ef09b0ba53"><td class="mdescLeft">&#160;</td><td class="mdescRight">Will be sent from thread calling ProcessMessages or WaitForMessages. <br /></td></tr>
-<tr class="separator:aa064d0d9cd42a53979d9b6ef09b0ba53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26b7da96f5fcbf1143e2cf35c97d1f83" id="r_a26b7da96f5fcbf1143e2cf35c97d1f83"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dc/d22/classxii_event.html">xiiEvent</a>&lt; const <a class="el" href="../../d5/de4/structxii_ipc_process_message_protocol_1_1_event.html">Event</a> &amp; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a26b7da96f5fcbf1143e2cf35c97d1f83">m_MessageEvent</a></td></tr>
+<tr class="memdesc:a26b7da96f5fcbf1143e2cf35c97d1f83"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="../../d5/de4/structxii_ipc_process_message_protocol_1_1_event.html" title="Event data structure for message notifications.">Event</a> fired when a new message is processed.  <br /></td></tr>
+<tr class="separator:a26b7da96f5fcbf1143e2cf35c97d1f83"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A protocol around <a class="el" href="../../df/d60/classxii_ipc_channel.html" title="Base class for a communication channel between processes.">xiiIpcChannel</a> to send reflected messages instead of byte array messages between client and server. </p>
-<p>This wrapper class hooks into an existing <a class="el" href="../../df/d60/classxii_ipc_channel.html" title="Base class for a communication channel between processes.">xiiIpcChannel</a>. The <a class="el" href="../../df/d60/classxii_ipc_channel.html" title="Base class for a communication channel between processes.">xiiIpcChannel</a> is still responsible for all connection logic. This class merely provides a high-level messaging protocol via reflected messages derived from <a class="el" href="../../d4/d06/classxii_process_message.html" title="Base class for IPC messages transmitted by xiiIpcChannel.">xiiProcessMessage</a>. Note that if this class is used, <a class="el" href="../../df/d60/classxii_ipc_channel.html#a5870df18aab875da68f82a22f6505ecf" title="Sends a message. pMsg can be destroyed after the call.">xiiIpcChannel::Send</a> must not be called manually anymore, only use <a class="el" href="#aa69dc71501813814927641b0a8baccf9" title="Sends a message. pMsg can be destroyed after the call.">xiiIpcProcessMessageProtocol::Send</a>. Received messages are stored in a queue and must be flushed via calling ProcessMessages or WaitForMessages. </p>
-</div><hr/>The documentation for this class was generated from the following files:<ul>
+<div class="textblock"><p>A protocol wrapper around <a class="el" href="../../df/d60/classxii_ipc_channel.html" title="Base class for a communication channel between processes.">xiiIpcChannel</a> to send and receive reflected messages instead of raw byte arrays. </p>
+<p>This class hooks into an existing <a class="el" href="../../df/d60/classxii_ipc_channel.html" title="Base class for a communication channel between processes.">xiiIpcChannel</a> instance to provide a high-level messaging protocol using reflected messages derived from <a class="el" href="../../d4/d06/classxii_process_message.html" title="Base class for IPC messages transmitted by xiiIpcChannel.">xiiProcessMessage</a>. The underlying <a class="el" href="../../df/d60/classxii_ipc_channel.html" title="Base class for a communication channel between processes.">xiiIpcChannel</a> remains responsible for all connection logic, while this protocol focuses solely on message serialization, deserialization, and dispatch.</p>
+<dl class="section note"><dt>Note</dt><dd>When using this protocol, do not call <a class="el" href="../../df/d60/classxii_ipc_channel.html#a5870df18aab875da68f82a22f6505ecf" title="Sends a message. pMsg can be destroyed after the call.">xiiIpcChannel::Send</a> directly. Instead, use <a class="el" href="#aa69dc71501813814927641b0a8baccf9" title="Sends a reflected process message over the IPC channel.">xiiIpcProcessMessageProtocol::Send</a> to ensure proper message formatting and handling.</dd></dl>
+<p>Received messages are stored in an internal queue and must be processed explicitly by calling <a class="el" href="#a62ef3411c7ae4c0f1b356efb3ca6c4d5" title="Processes all pending incoming messages.">ProcessMessages()</a> or <a class="el" href="#a70c5c723bc86c631c764f3447a04fc96" title="Waits for new messages to arrive and processes them.">WaitForMessages()</a>. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a4aaa160e30e9ea067f71fbbdcd42565f" name="a4aaa160e30e9ea067f71fbbdcd42565f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4aaa160e30e9ea067f71fbbdcd42565f">&#9670;&#160;</a></span>xiiIpcProcessMessageProtocol()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">xiiIpcProcessMessageProtocol::xiiIpcProcessMessageProtocol </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/d60/classxii_ipc_channel.html">xiiIpcChannel</a> *</td>          <td class="paramname"><span class="paramname"><em>pChannel</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Constructs the protocol wrapper for a given IPC channel. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pChannel</td><td>- Pointer to an existing <a class="el" href="../../df/d60/classxii_ipc_channel.html" title="Base class for a communication channel between processes.">xiiIpcChannel</a> instance. The channel must remain valid for the lifetime of this protocol object. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a62ef3411c7ae4c0f1b356efb3ca6c4d5" name="a62ef3411c7ae4c0f1b356efb3ca6c4d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a62ef3411c7ae4c0f1b356efb3ca6c4d5">&#9670;&#160;</a></span>ProcessMessages()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool xiiIpcProcessMessageProtocol::ProcessMessages </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Processes all pending incoming messages. </p>
+<p>This method dequeues all received messages and broadcasts them via m_MessageEvent. It is not re-entrant; calling it from within a message handler is not supported.</p>
+<dl class="section return"><dt>Returns</dt><dd>True if any messages were processed, false otherwise. </dd></dl>
+
+</div>
+</div>
+<a id="aa69dc71501813814927641b0a8baccf9" name="aa69dc71501813814927641b0a8baccf9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa69dc71501813814927641b0a8baccf9">&#9670;&#160;</a></span>Send()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool xiiIpcProcessMessageProtocol::Send </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d4/d06/classxii_process_message.html">xiiProcessMessage</a> *</td>          <td class="paramname"><span class="paramname"><em>pMsg</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sends a reflected process message over the IPC channel. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pMsg</td><td>- Pointer to the message to send. Ownership is not transferred; the message can be safely destroyed after this call returns.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the message was successfully queued for sending, false otherwise. </dd></dl>
+
+</div>
+</div>
+<a id="a70c5c723bc86c631c764f3447a04fc96" name="a70c5c723bc86c631c764f3447a04fc96"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a70c5c723bc86c631c764f3447a04fc96">&#9670;&#160;</a></span>WaitForMessages()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a> xiiIpcProcessMessageProtocol::WaitForMessages </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d7/dc1/structxii_time.html">xiiTime</a></td>          <td class="paramname"><span class="paramname"><em>timeout</em></span><span class="paramdefsep"> = </span><span class="paramdefval"><a class="el" href="../../d7/dc1/structxii_time.html#af50981ed01769e51493ea3d573c007ae">xiiTime::MakeZero</a>()</span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Waits for new messages to arrive and processes them. </p>
+<p>This method blocks until either a message is received or the specified timeout elapses. Once unblocked, it calls <a class="el" href="#a62ef3411c7ae4c0f1b356efb3ca6c4d5" title="Processes all pending incoming messages.">ProcessMessages()</a> to handle all queued messages.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">timeout</td><td>Maximum time to wait for a message. Defaults to zero (non-blocking).</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>xiiResult::Success if messages were processed, xiiResult::Failure on timeout or error. </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a26b7da96f5fcbf1143e2cf35c97d1f83" name="a26b7da96f5fcbf1143e2cf35c97d1f83"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a26b7da96f5fcbf1143e2cf35c97d1f83">&#9670;&#160;</a></span>m_MessageEvent</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dc/d22/classxii_event.html">xiiEvent</a>&lt;const <a class="el" href="../../d5/de4/structxii_ipc_process_message_protocol_1_1_event.html">Event</a>&amp;&gt; xiiIpcProcessMessageProtocol::m_MessageEvent</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="../../d5/de4/structxii_ipc_process_message_protocol_1_1_event.html" title="Event data structure for message notifications.">Event</a> fired when a new message is processed. </p>
+<p>This event is triggered from the thread calling <a class="el" href="#a62ef3411c7ae4c0f1b356efb3ca6c4d5" title="Processes all pending incoming messages.">ProcessMessages()</a> or <a class="el" href="#a70c5c723bc86c631c764f3447a04fc96" title="Waits for new messages to arrive and processes them.">WaitForMessages()</a>. </p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
 <li>/home/runner/work/XII/XII/Source/Engine/Foundation/Communication/<a class="el" href="../../d5/d0f/_ipc_process_message_protocol_8h_source.html">IpcProcessMessageProtocol.h</a></li>
 <li>/home/runner/work/XII/XII/Source/Engine/Foundation/Communication/Implementation/<b>IpcProcessMessageProtocol.cpp</b></li>
 </ul>
@@ -149,7 +277,7 @@ Public Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dd/da6/classxii_ipc_process_message_protocol.html">xiiIpcProcessMessageProtocol</a></li>
-    <li class="footer">Generated on Wed Aug 13 2025 20:29:02 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Tue Nov 11 2025 17:16:06 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 </body>

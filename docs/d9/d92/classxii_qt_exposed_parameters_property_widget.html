@@ -105,6 +105,11 @@ $(function(){initNavTree('d9/d92/classxii_qt_exposed_parameters_property_widget.
   <div class="headertitle"><div class="title">xiiQtExposedParametersPropertyWidget Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Custom widget for properties annotated with the <a class="el" href="../../d6/d8c/classxii_exposed_parameters_attribute.html" title="Add this attribute to a variant map property to make it map to the exposed parameters of an asset....">xiiExposedParametersAttribute</a> attribute. Technically exposed parameters are stored as an xiiVariantDictionary but that leaves much to be desired for usability. This class uses <a class="el" href="../../d5/ded/classxii_exposed_parameter_command_accessor.html" title="Helper accessor to pretend all exposed parameters always have a value defined. The exposed parameters...">xiiExposedParameterCommandAccessor</a> to always show all exposed parameters in the dictionary even if none were overwritten. Additionally, <a class="el" href="../../d8/dfa/classxii_exposed_parameters_as_type_command_accessor.html" title="Accessor to pretend the exposed parameters map property is an object of the generated phantom type....">xiiExposedParametersAsTypeCommandAccessor</a> is used to project the exposed parameters into a phantom type widget to make editing exposed parameters indistinguishable from editing a normal type object. A button can be used to switch between the two representations.  
+ <a href="#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="../../d0/d98/_exposed_parameters_property_widget_8moc_8h_source.html">ExposedParametersPropertyWidget.moc.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for xiiQtExposedParametersPropertyWidget:</div>
 <div class="dyncontent">
@@ -171,15 +176,17 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>PrepareToDie</b> ()</
 Protected Member Functions</h2></td></tr>
 <tr class="memitem:aabfdb3a87ddee7b1e6266b80bb6508c2" id="r_aabfdb3a87ddee7b1e6266b80bb6508c2"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aabfdb3a87ddee7b1e6266b80bb6508c2">OnInit</a> () override</td></tr>
 <tr class="separator:aabfdb3a87ddee7b1e6266b80bb6508c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8a09ca9e2f0a1eca0d41f170f85cb4e5" id="r_a8a09ca9e2f0a1eca0d41f170f85cb4e5"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d9/d80/classxii_qt_property_widget.html">xiiQtPropertyWidget</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8a09ca9e2f0a1eca0d41f170f85cb4e5">CreateWidget</a> (xiiUInt32 index) override</td></tr>
-<tr class="separator:a8a09ca9e2f0a1eca0d41f170f85cb4e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7903ec2701f5addc7d1a25fbc01c1249" id="r_a7903ec2701f5addc7d1a25fbc01c1249"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7903ec2701f5addc7d1a25fbc01c1249">UpdateElement</a> (xiiUInt32 index) override</td></tr>
 <tr class="separator:a7903ec2701f5addc7d1a25fbc01c1249"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac6d03aae26cd1dfd88be22ea2da47d54" id="r_ac6d03aae26cd1dfd88be22ea2da47d54"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac6d03aae26cd1dfd88be22ea2da47d54">UpdatePropertyMetaState</a> () override</td></tr>
 <tr class="separator:ac6d03aae26cd1dfd88be22ea2da47d54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7b46ee4031a7d357e9da2a3d38b7c8f" id="r_aa7b46ee4031a7d357e9da2a3d38b7c8f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa7b46ee4031a7d357e9da2a3d38b7c8f">GetRequiredElements</a> (<a class="el" href="../../dc/da4/classxii_dynamic_array.html">xiiDynamicArray</a>&lt; <a class="el" href="../../db/d1a/classxii_variant.html">xiiVariant</a> &gt; &amp;out_keys) const override</td></tr>
+<tr class="separator:aa7b46ee4031a7d357e9da2a3d38b7c8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_classxii_qt_property_standard_type_container_widget"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_methods_classxii_qt_property_standard_type_container_widget')"><img src="../../closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="../../df/d59/classxii_qt_property_standard_type_container_widget.html">xiiQtPropertyStandardTypeContainerWidget</a></td></tr>
 <tr class="memitem:a71afcdebb64ef8798718e982e2dd3ae7 inherit pro_methods_classxii_qt_property_standard_type_container_widget" id="r_a71afcdebb64ef8798718e982e2dd3ae7"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d4/dc3/classxii_qt_group_box_base.html">xiiQtGroupBoxBase</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d59/classxii_qt_property_standard_type_container_widget.html#a71afcdebb64ef8798718e982e2dd3ae7">CreateElement</a> (QWidget *pParent) override</td></tr>
 <tr class="separator:a71afcdebb64ef8798718e982e2dd3ae7 inherit pro_methods_classxii_qt_property_standard_type_container_widget"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a008c362149c17bb4e26f7a707e5dc289 inherit pro_methods_classxii_qt_property_standard_type_container_widget" id="r_a008c362149c17bb4e26f7a707e5dc289"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d9/d80/classxii_qt_property_widget.html">xiiQtPropertyWidget</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d59/classxii_qt_property_standard_type_container_widget.html#a008c362149c17bb4e26f7a707e5dc289">CreateWidget</a> (xiiUInt32 index) override</td></tr>
+<tr class="separator:a008c362149c17bb4e26f7a707e5dc289 inherit pro_methods_classxii_qt_property_standard_type_container_widget"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af0782402ee4f63e5316b434b172dd50b inherit pro_methods_classxii_qt_property_standard_type_container_widget" id="r_af0782402ee4f63e5316b434b172dd50b"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d4/d8b/structxii_qt_property_container_widget_1_1_element.html">Element</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d59/classxii_qt_property_standard_type_container_widget.html#af0782402ee4f63e5316b434b172dd50b">AddElement</a> (xiiUInt32 index) override</td></tr>
 <tr class="separator:af0782402ee4f63e5316b434b172dd50b inherit pro_methods_classxii_qt_property_standard_type_container_widget"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acef776fd1506a817b80a458c3d9d8784 inherit pro_methods_classxii_qt_property_standard_type_container_widget" id="r_acef776fd1506a817b80a458c3d9d8784"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d59/classxii_qt_property_standard_type_container_widget.html#acef776fd1506a817b80a458c3d9d8784">RemoveElement</a> (xiiUInt32 index) override</td></tr>
@@ -188,9 +195,9 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:a126b8ccacafd913158dbca50f96ba2bb inherit pro_methods_classxii_qt_property_container_widget" id="r_a126b8ccacafd913158dbca50f96ba2bb"><td class="memItemLeft" align="right" valign="top">
 void&#160;</td><td class="memItemRight" valign="bottom"><b>UpdateElements</b> ()</td></tr>
 <tr class="separator:a126b8ccacafd913158dbca50f96ba2bb inherit pro_methods_classxii_qt_property_container_widget"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad9abe8f5ba9ee72fc75de2789bddeab4 inherit pro_methods_classxii_qt_property_container_widget" id="r_ad9abe8f5ba9ee72fc75de2789bddeab4"><td class="memItemLeft" align="right" valign="top">
-virtual xiiUInt32&#160;</td><td class="memItemRight" valign="bottom"><b>GetRequiredElementCount</b> () const</td></tr>
-<tr class="separator:ad9abe8f5ba9ee72fc75de2789bddeab4 inherit pro_methods_classxii_qt_property_container_widget"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a013ec105f52d43f124ac74c58238d4e1 inherit pro_methods_classxii_qt_property_container_widget" id="r_a013ec105f52d43f124ac74c58238d4e1"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d8/d9c/structxii_property_category.html#a955c0fc07dab4281c48ea7319c91a361">xiiPropertyCategory::Enum</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d44/classxii_qt_property_container_widget.html#a013ec105f52d43f124ac74c58238d4e1">GetContainerCategory</a> () const</td></tr>
+<tr class="memdesc:a013ec105f52d43f124ac74c58238d4e1 inherit pro_methods_classxii_qt_property_container_widget"><td class="mdescLeft">&#160;</td><td class="mdescRight">Some containers like <a class="el" href="../../db/d1a/classxii_variant.html" title="xiiVariant is a class that can store different types of variables, which is useful in situations wher...">xiiVariant</a> can be both a map or an array so we can't reply on the property type alone. For these containers, this method can be overwritten to retrieve the category from something other than <code>m_pProp-&gt;GetCategory()</code>.  <br /></td></tr>
+<tr class="separator:a013ec105f52d43f124ac74c58238d4e1 inherit pro_methods_classxii_qt_property_container_widget"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abd92472f9e0d7ffa9186c37b0f5499dc inherit pro_methods_classxii_qt_property_container_widget" id="r_abd92472f9e0d7ffa9186c37b0f5499dc"><td class="memItemLeft" align="right" valign="top">
 void&#160;</td><td class="memItemRight" valign="bottom"><b>Clear</b> ()</td></tr>
 <tr class="separator:abd92472f9e0d7ffa9186c37b0f5499dc inherit pro_methods_classxii_qt_property_container_widget"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -309,9 +316,11 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_bIsDefault</b></td>
 <tr class="memdesc:a85f75c6eca752971da650c0d1668818a inherit pro_attribs_classxii_qt_property_widget"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether the variable that the widget represents is currently set to the default value or has been modified. <br /></td></tr>
 <tr class="separator:a85f75c6eca752971da650c0d1668818a inherit pro_attribs_classxii_qt_property_widget"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a id="a8a09ca9e2f0a1eca0d41f170f85cb4e5" name="a8a09ca9e2f0a1eca0d41f170f85cb4e5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8a09ca9e2f0a1eca0d41f170f85cb4e5">&#9670;&#160;</a></span>CreateWidget()</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Custom widget for properties annotated with the <a class="el" href="../../d6/d8c/classxii_exposed_parameters_attribute.html" title="Add this attribute to a variant map property to make it map to the exposed parameters of an asset....">xiiExposedParametersAttribute</a> attribute. Technically exposed parameters are stored as an xiiVariantDictionary but that leaves much to be desired for usability. This class uses <a class="el" href="../../d5/ded/classxii_exposed_parameter_command_accessor.html" title="Helper accessor to pretend all exposed parameters always have a value defined. The exposed parameters...">xiiExposedParameterCommandAccessor</a> to always show all exposed parameters in the dictionary even if none were overwritten. Additionally, <a class="el" href="../../d8/dfa/classxii_exposed_parameters_as_type_command_accessor.html" title="Accessor to pretend the exposed parameters map property is an object of the generated phantom type....">xiiExposedParametersAsTypeCommandAccessor</a> is used to project the exposed parameters into a phantom type widget to make editing exposed parameters indistinguishable from editing a normal type object. A button can be used to switch between the two representations. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="aa7b46ee4031a7d357e9da2a3d38b7c8f" name="aa7b46ee4031a7d357e9da2a3d38b7c8f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa7b46ee4031a7d357e9da2a3d38b7c8f">&#9670;&#160;</a></span>GetRequiredElements()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -320,10 +329,10 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_bIsDefault</b></td>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d9/d80/classxii_qt_property_widget.html">xiiQtPropertyWidget</a> * xiiQtExposedParametersPropertyWidget::CreateWidget </td>
+          <td class="memname">void xiiQtExposedParametersPropertyWidget::GetRequiredElements </td>
           <td>(</td>
-          <td class="paramtype">xiiUInt32</td>          <td class="paramname"><span class="paramname"><em>index</em></span></td><td>)</td>
-          <td></td>
+          <td class="paramtype"><a class="el" href="../../dc/da4/classxii_dynamic_array.html">xiiDynamicArray</a>&lt; <a class="el" href="../../db/d1a/classxii_variant.html">xiiVariant</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>out_keys</em></span></td><td>)</td>
+          <td> const</td>
         </tr>
       </table>
   </td>
@@ -333,7 +342,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_bIsDefault</b></td>
 </table>
 </div><div class="memdoc">
 
-<p>Reimplemented from <a class="el" href="../../df/d59/classxii_qt_property_standard_type_container_widget.html">xiiQtPropertyStandardTypeContainerWidget</a>.</p>
+<p>Reimplemented from <a class="el" href="../../dd/d44/classxii_qt_property_container_widget.html">xiiQtPropertyContainerWidget</a>.</p>
 
 </div>
 </div>
@@ -458,7 +467,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_bIsDefault</b></td>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d9/d92/classxii_qt_exposed_parameters_property_widget.html">xiiQtExposedParametersPropertyWidget</a></li>
-    <li class="footer">Generated on Wed Aug 13 2025 20:29:03 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Tue Nov 11 2025 17:16:07 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 </body>

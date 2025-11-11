@@ -216,19 +216,20 @@ $(function(){initNavTree('d1/d89/_visual_script_node_registry_8h_source.html','.
 <div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span> </div>
 <div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>  <span class="keyword">const</span> xiiRTTI* RegisterNodeType(xiiReflectedTypeDescriptor&amp; typeDesc, <a class="code hl_struct" href="../../d8/de7/structxii_visual_script_node_registry_1_1_node_desc.html">NodeDesc</a>&amp;&amp; nodeDesc, <span class="keyword">const</span> xiiHashedString&amp; sCategory);</div>
 <div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span> </div>
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>  <span class="keyword">const</span> xiiRTTI*                   m_pBaseType            = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>  <span class="keyword">const</span> xiiRTTI*                   m_pSetPropertyType     = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>  <span class="keyword">const</span> xiiRTTI*                   m_pGetPropertyType     = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>  <span class="keyword">const</span> xiiRTTI*                   m_pSetVariableType     = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>  <span class="keyword">const</span> xiiRTTI*                   m_pGetVariableType     = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>  <span class="keywordtype">bool</span>                             m_bBuiltinTypesCreated = <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>  xiiMap&lt;const xiiRTTI*, NodeDesc&gt; m_TypeToNodeDescs;</div>
-<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>  xiiHashSet&lt;const xiiRTTI*&gt;       m_ExposedTypes;</div>
-<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span> </div>
-<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>  xiiDynamicArray&lt;NodeCreationTemplate&gt; m_NodeCreationTemplates;</div>
-<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>  xiiDynamicArray&lt;xiiNodePropertyValue&gt; m_PropertyValues;</div>
-<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>  xiiDeque&lt;xiiString&gt;                   m_PropertyNodeTypeNames;</div>
-<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>};</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>  <span class="keyword">const</span> xiiRTTI*                         m_pBaseType            = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>  <span class="keyword">const</span> xiiRTTI*                         m_pSetPropertyType     = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>  <span class="keyword">const</span> xiiRTTI*                         m_pGetPropertyType     = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>  <span class="keyword">const</span> xiiRTTI*                         m_pSetVariableType     = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>  <span class="keyword">const</span> xiiRTTI*                         m_pGetVariableType     = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>  <span class="keywordtype">bool</span>                                   m_bBuiltinTypesCreated = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>  xiiHashTable&lt;const xiiRTTI*, NodeDesc&gt; m_TypeToNodeDescs;</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>  xiiHashSet&lt;const xiiRTTI*&gt;             m_ExposedTypes;</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>  xiiHashSet&lt;const xiiRTTI*&gt;             m_TypesToUpdate;</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span> </div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>  xiiDynamicArray&lt;NodeCreationTemplate&gt; m_NodeCreationTemplates;</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>  xiiDynamicArray&lt;xiiNodePropertyValue&gt; m_PropertyValues;</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>  xiiSet&lt;xiiString&gt;                     m_PropertyNodeTypeNames;</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>};</div>
 </div>
 <div class="ttc" id="aclassxii_array_ptr_html"><div class="ttname"><a href="../../d0/d60/classxii_array_ptr.html">xiiArrayPtr</a></div><div class="ttdoc">This class encapsulates an array and it&#39;s size. It is recommended to use this class instead of plain ...</div><div class="ttdef"><b>Definition</b> ArrayPtr.h:37</div></div>
 <div class="ttc" id="aclassxii_color_html"><div class="ttname"><a href="../../d3/de6/classxii_color.html">xiiColor</a></div><div class="ttdoc">xiiColor represents an RGBA color in linear color space. Values are stored as float,...</div><div class="ttdef"><b>Definition</b> Color.h:44</div></div>
@@ -238,7 +239,7 @@ $(function(){initNavTree('d1/d89/_visual_script_node_registry_8h_source.html','.
 <div class="ttc" id="aclassxii_small_array_html"><div class="ttname"><a href="../../d6/d1f/classxii_small_array.html">xiiSmallArray</a></div><div class="ttdef"><b>Definition</b> SmallArray.h:214</div></div>
 <div class="ttc" id="aclassxii_string_utils_html_af9de18eab321e420a8c5e42fbbe4703d"><div class="ttname"><a href="../../df/d65/classxii_string_utils.html#af9de18eab321e420a8c5e42fbbe4703d">xiiStringUtils::GetStringElementCount</a></div><div class="ttdeci">static constexpr xiiUInt32 GetStringElementCount(const T *pString)</div><div class="ttdoc">Returns the number of elements of type T that the string contains, until it hits an element that is z...</div><div class="ttdef"><b>Definition</b> StringUtils_inl.h:45</div></div>
 <div class="ttc" id="aclassxii_string_view_html"><div class="ttname"><a href="../../d4/d85/classxii_string_view.html">xiiStringView</a></div><div class="ttdoc">xiiStringView represent a read-only sub-string of a larger string, as it can store a dedicated string...</div><div class="ttdef"><b>Definition</b> StringView.h:34</div></div>
-<div class="ttc" id="aclassxii_visual_script_pin_html"><div class="ttname"><a href="../../d3/d82/classxii_visual_script_pin.html">xiiVisualScriptPin</a></div><div class="ttdef"><b>Definition</b> VisualScriptGraph.h:7</div></div>
+<div class="ttc" id="aclassxii_visual_script_pin_html"><div class="ttname"><a href="../../d3/d82/classxii_visual_script_pin.html">xiiVisualScriptPin</a></div><div class="ttdef"><b>Definition</b> VisualScriptGraph.h:9</div></div>
 <div class="ttc" id="astructxii_enum_html"><div class="ttname"><a href="../../de/dfd/structxii_enum.html">xiiEnum</a></div><div class="ttdoc">A custom enum implementation that allows to define the underlying storage type to control its memory ...</div><div class="ttdef"><b>Definition</b> Enum.h:37</div></div>
 <div class="ttc" id="astructxii_node_property_value_html"><div class="ttname"><a href="../../d6/d48/structxii_node_property_value.html">xiiNodePropertyValue</a></div><div class="ttdef"><b>Definition</b> DocumentNodeManager.h:99</div></div>
 <div class="ttc" id="astructxii_visual_script_node_registry_1_1_node_creation_template_html"><div class="ttname"><a href="../../de/d4d/structxii_visual_script_node_registry_1_1_node_creation_template.html">xiiVisualScriptNodeRegistry::NodeCreationTemplate</a></div><div class="ttdef"><b>Definition</b> VisualScriptNodeRegistry.h:68</div></div>
@@ -250,7 +251,7 @@ $(function(){initNavTree('d1/d89/_visual_script_node_registry_8h_source.html','.
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.html">home</a></li><li class="navelem"><a class="el" href="../../dir_1036706e55c22cab35bc1c58ee689f1d.html">runner</a></li><li class="navelem"><a class="el" href="../../dir_629f8151d55d307162ff2d619fb1783d.html">work</a></li><li class="navelem"><a class="el" href="../../dir_1ddc44fe1263a8c7935fa6130b7d9499.html">XII</a></li><li class="navelem"><a class="el" href="../../dir_2c1b6808f12952f4c36e05ba7068379a.html">XII</a></li><li class="navelem"><a class="el" href="../../dir_b5a1c4ecfca018ad24b729e213296d41.html">Source</a></li><li class="navelem"><a class="el" href="../../dir_8b2872ebfb9e9766b55af832f324e224.html">EditorPlugins</a></li><li class="navelem"><a class="el" href="../../dir_fa9f0330731d8370bca39ebbf6b70846.html">VisualScript</a></li><li class="navelem"><a class="el" href="../../dir_0449c80e677a858758be9b852b1273c0.html">EditorPluginVisualScript</a></li><li class="navelem"><a class="el" href="../../dir_898ce1b74deb4ef8832db2683061eeeb.html">VisualScriptGraph</a></li><li class="navelem"><b>VisualScriptNodeRegistry.h</b></li>
-    <li class="footer">Generated on Wed Aug 13 2025 20:28:55 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Tue Nov 11 2025 17:15:59 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 </body>

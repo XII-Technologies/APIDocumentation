@@ -5,5 +5,7 @@ var classxii_physics_world_module_interface =
     [ "AddFixedJointComponent", "d0/da9/classxii_physics_world_module_interface.html#ab1ae8c4ac2b4ca599d0b19344a9d2a08", null ],
     [ "AddStaticCollisionBox", "d0/da9/classxii_physics_world_module_interface.html#a9431e65cfaf8d779e1a021d31490b4df", null ],
     [ "GetCollisionLayerByName", "d0/da9/classxii_physics_world_module_interface.html#acc5e0151f945abaeee891530ed49a9e2", null ],
+    [ "GetImpulseTypeByName", "d0/da9/classxii_physics_world_module_interface.html#a8b718866694580addd00aefaeaf45a12", null ],
+    [ "GetWeightCategoryByName", "d0/da9/classxii_physics_world_module_interface.html#ad25370898a4ac85618736aa27b10c9e6", null ],
     [ "GetWorldSpaceBounds", "d0/da9/classxii_physics_world_module_interface.html#a22b55d315689d6796095913bf9185fca", null ]
 ];

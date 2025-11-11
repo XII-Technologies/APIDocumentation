@@ -14,6 +14,7 @@ var classxii_create_colour_attachment_pass =
     [ "GetSampleCount", "d2/d72/classxii_create_colour_attachment_pass.html#a77c914ee5acc07257ca07ed64324599d", null ],
     [ "GetType", "d2/d72/classxii_create_colour_attachment_pass.html#af96061fb648cbdf5a8f5f3d1800b6d2e", null ],
     [ "GetUsage", "d2/d72/classxii_create_colour_attachment_pass.html#a7aa5869a71ddf22d78eb27cc13f08866", null ],
+    [ "InitializeRenderPipelinePass", "d2/d72/classxii_create_colour_attachment_pass.html#ad7fd4d6ce8fc845bdf7608b3ccebc805", null ],
     [ "Serialize", "d2/d72/classxii_create_colour_attachment_pass.html#a7d8588272f35b025215f916decb4ba31", null ],
     [ "SetAccessFlags", "d2/d72/classxii_create_colour_attachment_pass.html#a0cb3e3d4508c529bf9d85bcbed60ca6b", null ],
     [ "SetArraySizeOrDepth", "d2/d72/classxii_create_colour_attachment_pass.html#ac96afdf1add3ef7b769afb84a662c5fd", null ],

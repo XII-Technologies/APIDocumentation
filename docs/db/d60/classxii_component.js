@@ -2,6 +2,7 @@ var classxii_component =
 [
     [ "xiiComponent", "db/d60/classxii_component.html#a60c7db90d11a90e58501a07d0f051a92", null ],
     [ "Deinitialize", "db/d60/classxii_component.html#a86fcefe9cb84eec354b2dc8c64e61a4a", null ],
+    [ "DeleteComponent", "db/d60/classxii_component.html#ad3279c6654e2b6f2974b68154e3fdbd0", null ],
     [ "DeserializeComponent", "db/d60/classxii_component.html#acef0fa311a3f65a7f0f815923e80f8e2", null ],
     [ "EnableUnhandledMessageHandler", "db/d60/classxii_component.html#ad4967b57dd671d6b3c7b3de4984813af", null ],
     [ "EnsureInitialized", "db/d60/classxii_component.html#ad447ceab55bc400ab373ca31e2684190", null ],

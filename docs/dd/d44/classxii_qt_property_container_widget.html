@@ -116,7 +116,7 @@ $(function(){initNavTree('dd/d44/classxii_qt_property_container_widget.html','..
 <div class="dynheader">
 Inheritance diagram for xiiQtPropertyContainerWidget:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d5/d16/classxii_qt_property_container_widget__inherit__graph.svg" width="454" height="359"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d5/d16/classxii_qt_property_container_widget__inherit__graph.svg" width="576" height="359"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 <center><span class="legend">[<a target="top" href="../../graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
@@ -213,12 +213,15 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>UpdateElement
 <tr class="memitem:a126b8ccacafd913158dbca50f96ba2bb" id="r_a126b8ccacafd913158dbca50f96ba2bb"><td class="memItemLeft" align="right" valign="top"><a id="a126b8ccacafd913158dbca50f96ba2bb" name="a126b8ccacafd913158dbca50f96ba2bb"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>UpdateElements</b> ()</td></tr>
 <tr class="separator:a126b8ccacafd913158dbca50f96ba2bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad9abe8f5ba9ee72fc75de2789bddeab4" id="r_ad9abe8f5ba9ee72fc75de2789bddeab4"><td class="memItemLeft" align="right" valign="top"><a id="ad9abe8f5ba9ee72fc75de2789bddeab4" name="ad9abe8f5ba9ee72fc75de2789bddeab4"></a>
-virtual xiiUInt32&#160;</td><td class="memItemRight" valign="bottom"><b>GetRequiredElementCount</b> () const</td></tr>
-<tr class="separator:ad9abe8f5ba9ee72fc75de2789bddeab4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade0fe7de3685b4bff3d033766c88308e" id="r_ade0fe7de3685b4bff3d033766c88308e"><td class="memItemLeft" align="right" valign="top"><a id="ade0fe7de3685b4bff3d033766c88308e" name="ade0fe7de3685b4bff3d033766c88308e"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>GetRequiredElements</b> (<a class="el" href="../../dc/da4/classxii_dynamic_array.html">xiiDynamicArray</a>&lt; <a class="el" href="../../db/d1a/classxii_variant.html">xiiVariant</a> &gt; &amp;out_keys) const</td></tr>
+<tr class="separator:ade0fe7de3685b4bff3d033766c88308e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4ddef95bf2433d8d5789f79a35737914" id="r_a4ddef95bf2433d8d5789f79a35737914"><td class="memItemLeft" align="right" valign="top"><a id="a4ddef95bf2433d8d5789f79a35737914" name="a4ddef95bf2433d8d5789f79a35737914"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>UpdatePropertyMetaState</b> ()</td></tr>
 <tr class="separator:a4ddef95bf2433d8d5789f79a35737914"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a013ec105f52d43f124ac74c58238d4e1" id="r_a013ec105f52d43f124ac74c58238d4e1"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d8/d9c/structxii_property_category.html#a955c0fc07dab4281c48ea7319c91a361">xiiPropertyCategory::Enum</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a013ec105f52d43f124ac74c58238d4e1">GetContainerCategory</a> () const</td></tr>
+<tr class="memdesc:a013ec105f52d43f124ac74c58238d4e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Some containers like <a class="el" href="../../db/d1a/classxii_variant.html" title="xiiVariant is a class that can store different types of variables, which is useful in situations wher...">xiiVariant</a> can be both a map or an array so we can't reply on the property type alone. For these containers, this method can be overwritten to retrieve the category from something other than <code>m_pProp-&gt;GetCategory()</code>.  <br /></td></tr>
+<tr class="separator:a013ec105f52d43f124ac74c58238d4e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abd92472f9e0d7ffa9186c37b0f5499dc" id="r_abd92472f9e0d7ffa9186c37b0f5499dc"><td class="memItemLeft" align="right" valign="top"><a id="abd92472f9e0d7ffa9186c37b0f5499dc" name="abd92472f9e0d7ffa9186c37b0f5499dc"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>Clear</b> ()</td></tr>
 <tr class="separator:abd92472f9e0d7ffa9186c37b0f5499dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -354,6 +357,35 @@ static QColor&#160;</td><td class="memItemRight" valign="bottom"><b>SetPaletteBa
 
 </div>
 </div>
+<a id="a013ec105f52d43f124ac74c58238d4e1" name="a013ec105f52d43f124ac74c58238d4e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a013ec105f52d43f124ac74c58238d4e1">&#9670;&#160;</a></span>GetContainerCategory()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d8/d9c/structxii_property_category.html#a955c0fc07dab4281c48ea7319c91a361">xiiPropertyCategory::Enum</a> xiiQtPropertyContainerWidget::GetContainerCategory </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel protected">protected</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Some containers like <a class="el" href="../../db/d1a/classxii_variant.html" title="xiiVariant is a class that can store different types of variables, which is useful in situations wher...">xiiVariant</a> can be both a map or an array so we can't reply on the property type alone. For these containers, this method can be overwritten to retrieve the category from something other than <code>m_pProp-&gt;GetCategory()</code>. </p>
+
+<p>Reimplemented in <a class="el" href="../../d9/d0d/classxii_qt_variant_container_widget.html#adf386d2440c79fcc08a625c0ca8e0062">xiiQtVariantContainerWidget</a>.</p>
+
+</div>
+</div>
 <a id="a33247852b4f3595d6a24add0ba405de0" name="a33247852b4f3595d6a24add0ba405de0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a33247852b4f3595d6a24add0ba405de0">&#9670;&#160;</a></span>HasLabel()</h2>
 
@@ -467,7 +499,7 @@ static QColor&#160;</td><td class="memItemRight" valign="bottom"><b>SetPaletteBa
 
 <p>Reimplemented from <a class="el" href="../../d9/d80/classxii_qt_property_widget.html#a8cc5c68c374f1c198e0e69700494943c">xiiQtPropertyWidget</a>.</p>
 
-<p>Reimplemented in <a class="el" href="../../d9/d92/classxii_qt_exposed_parameters_property_widget.html#a5ea2c061785202eab06abf4b120378d1">xiiQtExposedParametersPropertyWidget</a>.</p>
+<p>Reimplemented in <a class="el" href="../../d9/d92/classxii_qt_exposed_parameters_property_widget.html#a5ea2c061785202eab06abf4b120378d1">xiiQtExposedParametersPropertyWidget</a>, and <a class="el" href="../../d9/d0d/classxii_qt_variant_container_widget.html#a7663dd1dec1933490da34a7edf38a1cd">xiiQtVariantContainerWidget</a>.</p>
 
 </div>
 </div>
@@ -481,7 +513,7 @@ static QColor&#160;</td><td class="memItemRight" valign="bottom"><b>SetPaletteBa
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dd/d44/classxii_qt_property_container_widget.html">xiiQtPropertyContainerWidget</a></li>
-    <li class="footer">Generated on Wed Aug 13 2025 20:29:03 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Tue Nov 11 2025 17:16:07 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 </body>

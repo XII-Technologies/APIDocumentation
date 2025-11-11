@@ -172,39 +172,40 @@ $(function(){initNavTree('d3/dbb/_physics_query_8h_source.html','../../'); initR
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>                               Character, </div>
 <div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>                               Ragdoll,   </div>
 <div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>                               Rope,      </div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>                               Cloth      </div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>);</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>XII_DECLARE_REFLECTABLE_TYPE(XII_CORE_DLL, xiiPhysicsShapeType);</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
-<div class="foldopen" id="foldopen00077" data-start="{" data-end="};">
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno"><a class="line" href="../../d2/d9c/structxii_physics_query_parameters.html">   77</a></span><span class="keyword">struct </span>xiiPhysicsQueryParameters</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>{</div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>  xiiPhysicsQueryParameters() = <span class="keywordflow">default</span>;</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>  <span class="keyword">explicit</span> xiiPhysicsQueryParameters(xiiUInt32 uiCollisionLayer, <a class="code hl_struct" href="../../d7/d55/structxii_bitflags.html">xiiBitflags&lt;xiiPhysicsShapeType&gt;</a> shapeTypes = xiiPhysicsShapeType::Default, xiiUInt32 uiIgnoreObjectFilterID = xiiInvalidIndex) :</div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    m_uiCollisionLayer(uiCollisionLayer), m_ShapeTypes(shapeTypes), m_uiIgnoreObjectFilterID(uiIgnoreObjectFilterID)</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>  {</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>  }</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span> </div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>  xiiUInt32                        m_uiCollisionLayer       = 0;</div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>  <a class="code hl_struct" href="../../d7/d55/structxii_bitflags.html">xiiBitflags&lt;xiiPhysicsShapeType&gt;</a> m_ShapeTypes             = xiiPhysicsShapeType::Default;</div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>  xiiUInt32                        m_uiIgnoreObjectFilterID = xiiInvalidIndex;</div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>  <span class="keywordtype">bool</span>                             m_bIgnoreInitialOverlap  = <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>};</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>                               Cloth,     </div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>                               Debris     </div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>);</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> </div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>XII_DECLARE_REFLECTABLE_TYPE(XII_CORE_DLL, xiiPhysicsShapeType);</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
+<div class="foldopen" id="foldopen00078" data-start="{" data-end="};">
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno"><a class="line" href="../../d2/d9c/structxii_physics_query_parameters.html">   78</a></span><span class="keyword">struct </span>xiiPhysicsQueryParameters</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>{</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>  xiiPhysicsQueryParameters() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>  <span class="keyword">explicit</span> xiiPhysicsQueryParameters(xiiUInt32 uiCollisionLayer, <a class="code hl_struct" href="../../d7/d55/structxii_bitflags.html">xiiBitflags&lt;xiiPhysicsShapeType&gt;</a> shapeTypes = xiiPhysicsShapeType::Default, xiiUInt32 uiIgnoreObjectFilterID = xiiInvalidIndex) :</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    m_uiCollisionLayer(uiCollisionLayer), m_ShapeTypes(shapeTypes), m_uiIgnoreObjectFilterID(uiIgnoreObjectFilterID)</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>  {</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>  }</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span> </div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>  xiiUInt32                        m_uiCollisionLayer       = 0;</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>  <a class="code hl_struct" href="../../d7/d55/structxii_bitflags.html">xiiBitflags&lt;xiiPhysicsShapeType&gt;</a> m_ShapeTypes             = xiiPhysicsShapeType::Default;</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>  xiiUInt32                        m_uiIgnoreObjectFilterID = xiiInvalidIndex;</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>  <span class="keywordtype">bool</span>                             m_bIgnoreInitialOverlap  = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>};</div>
 </div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span> </div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span><span class="keyword">enum class</span> xiiPhysicsHitCollection</div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>{</div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>  Closest,</div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>  Any</div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>};</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span> </div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span><span class="keyword">enum class</span> xiiPhysicsHitCollection</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>{</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>  Closest,</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>  Any</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>};</div>
 <div class="ttc" id="aclassxii_hybrid_array_html"><div class="ttname"><a href="../../dc/da9/classxii_hybrid_array.html">xiiHybridArray</a></div><div class="ttdoc">A hybrid array uses in-place storage to handle the first few elements without any allocation....</div><div class="ttdef"><b>Definition</b> HybridArray.h:12</div></div>
 <div class="ttc" id="aclassxii_typed_resource_handle_html"><div class="ttname"><a href="../../d6/d16/classxii_typed_resource_handle.html">xiiTypedResourceHandle</a></div><div class="ttdoc">The xiiTypedResourceHandle controls access to a xiiResource.</div><div class="ttdef"><b>Definition</b> ResourceHandle.h:138</div></div>
 <div class="ttc" id="astructxii_bitflags_html"><div class="ttname"><a href="../../d7/d55/structxii_bitflags.html">xiiBitflags</a></div><div class="ttdoc">The xiiBitflags class allows you to work with type-safe bitflags.</div><div class="ttdef"><b>Definition</b> Bitflags.h:82</div></div>
 <div class="ttc" id="astructxii_game_object_handle_html"><div class="ttname"><a href="../../da/d2c/structxii_game_object_handle.html">xiiGameObjectHandle</a></div><div class="ttdoc">A handle to a game object.</div><div class="ttdef"><b>Definition</b> Declarations.h:76</div></div>
 <div class="ttc" id="astructxii_physics_cast_result_array_html"><div class="ttname"><a href="../../d0/d3d/structxii_physics_cast_result_array.html">xiiPhysicsCastResultArray</a></div><div class="ttdef"><b>Definition</b> PhysicsQuery.h:35</div></div>
-<div class="ttc" id="astructxii_physics_cast_result_html"><div class="ttname"><a href="../../d8/d2c/structxii_physics_cast_result.html">xiiPhysicsCastResult</a></div><div class="ttdoc">Used for raycast and seep tests.</div><div class="ttdef"><b>Definition</b> PhysicsQuery.h:18</div></div>
+<div class="ttc" id="astructxii_physics_cast_result_html"><div class="ttname"><a href="../../d8/d2c/structxii_physics_cast_result.html">xiiPhysicsCastResult</a></div><div class="ttdoc">Used for raycast and sweep tests.</div><div class="ttdef"><b>Definition</b> PhysicsQuery.h:18</div></div>
 <div class="ttc" id="astructxii_physics_cast_result_html_a3555955adbbd10d024a0939cea68dc5a"><div class="ttname"><a href="../../d8/d2c/structxii_physics_cast_result.html#a3555955adbbd10d024a0939cea68dc5a">xiiPhysicsCastResult::m_hitType</a></div><div class="ttdeci">xiiPhysicsHitType m_hitType</div><div class="ttdoc">Classification of the triangle face, see xiiPhysicsHitType.</div><div class="ttdef"><b>Definition</b> PhysicsQuery.h:27</div></div>
 <div class="ttc" id="astructxii_physics_cast_result_html_a4c38be8619d3da1c6260161a57d44990"><div class="ttname"><a href="../../d8/d2c/structxii_physics_cast_result.html#a4c38be8619d3da1c6260161a57d44990">xiiPhysicsCastResult::m_hShapeObject</a></div><div class="ttdeci">xiiGameObjectHandle m_hShapeObject</div><div class="ttdoc">The game object to which the hit physics shape is attached.</div><div class="ttdef"><b>Definition</b> PhysicsQuery.h:23</div></div>
 <div class="ttc" id="astructxii_physics_cast_result_html_a7686293ee3a031df4d7cba366506b692"><div class="ttname"><a href="../../d8/d2c/structxii_physics_cast_result.html#a7686293ee3a031df4d7cba366506b692">xiiPhysicsCastResult::m_hSurface</a></div><div class="ttdeci">xiiSurfaceResourceHandle m_hSurface</div><div class="ttdoc">The type of surface that was hit (if available)</div><div class="ttdef"><b>Definition</b> PhysicsQuery.h:25</div></div>
@@ -222,7 +223,7 @@ $(function(){initNavTree('d3/dbb/_physics_query_8h_source.html','../../'); initR
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.html">home</a></li><li class="navelem"><a class="el" href="../../dir_1036706e55c22cab35bc1c58ee689f1d.html">runner</a></li><li class="navelem"><a class="el" href="../../dir_629f8151d55d307162ff2d619fb1783d.html">work</a></li><li class="navelem"><a class="el" href="../../dir_1ddc44fe1263a8c7935fa6130b7d9499.html">XII</a></li><li class="navelem"><a class="el" href="../../dir_2c1b6808f12952f4c36e05ba7068379a.html">XII</a></li><li class="navelem"><a class="el" href="../../dir_b5a1c4ecfca018ad24b729e213296d41.html">Source</a></li><li class="navelem"><a class="el" href="../../dir_e321052006a51284e67389ab20037e7c.html">Engine</a></li><li class="navelem"><a class="el" href="../../dir_6934db396743bb3844d563c7fa1f32a7.html">Core</a></li><li class="navelem"><a class="el" href="../../dir_97639a66b975f4162d134f9cd1034ac2.html">Interfaces</a></li><li class="navelem"><b>PhysicsQuery.h</b></li>
-    <li class="footer">Generated on Wed Aug 13 2025 20:28:55 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Tue Nov 11 2025 17:15:59 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 </body>

@@ -99,6 +99,7 @@ $(function(){initNavTree('d5/d73/classxii_qt_tree_search_filter_model.html','../
 
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
@@ -112,6 +113,13 @@ Inheritance diagram for xiiQtTreeSearchFilterModel:</div>
 <div class="center"><iframe scrolling="no" frameborder="0" src="../../d0/de0/classxii_qt_tree_search_filter_model__inherit__graph.svg" width="208" height="110"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 <center><span class="legend">[<a target="top" href="../../graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a26b5b55bcdb58aef70000a495cca59f0" id="r_a26b5b55bcdb58aef70000a495cca59f0"><td class="memItemLeft" align="right" valign="top"><a id="a26b5b55bcdb58aef70000a495cca59f0" name="a26b5b55bcdb58aef70000a495cca59f0"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>CustomFilterFunc</b> = <a class="el" href="../../dc/d84/structxii_delegate.html">xiiDelegate</a>&lt;bool(QModelIndex, const <a class="el" href="../../dd/d81/classxii_search_pattern_filter.html">xiiSearchPatternFilter</a>&amp;)&gt;</td></tr>
+<tr class="memdesc:a26b5b55bcdb58aef70000a495cca59f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true to indicate that the model index shall be visible. <br /></td></tr>
+<tr class="separator:a26b5b55bcdb58aef70000a495cca59f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:aa7a732455f9df392997c5cc66f2e8696" id="r_aa7a732455f9df392997c5cc66f2e8696"><td class="memItemLeft" align="right" valign="top"><a id="aa7a732455f9df392997c5cc66f2e8696" name="aa7a732455f9df392997c5cc66f2e8696"></a>
@@ -124,6 +132,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>SetFilterText</b> (co
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetIncludeChildren</b> (bool bInclude)</td></tr>
 <tr class="memdesc:a9e34a3e3a6b281f2e1a8297a254d62bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">By default only nodes (and their parents) are shown that fit the search criterion. If this is enabled, all child nodes of nodes that fit the criterion are included as well. <br /></td></tr>
 <tr class="separator:a9e34a3e3a6b281f2e1a8297a254d62bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a667a87e3b78d4726f9f0d306220d2345" id="r_a667a87e3b78d4726f9f0d306220d2345"><td class="memItemLeft" align="right" valign="top"><a id="a667a87e3b78d4726f9f0d306220d2345" name="a667a87e3b78d4726f9f0d306220d2345"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetCustomFilterFunc</b> (<a class="el" href="#a26b5b55bcdb58aef70000a495cca59f0">CustomFilterFunc</a> func)</td></tr>
+<tr class="memdesc:a667a87e3b78d4726f9f0d306220d2345"><td class="mdescLeft">&#160;</td><td class="mdescRight">The custom function is executed when when visibility is updated. Return false to hide an element. <br /></td></tr>
+<tr class="separator:a667a87e3b78d4726f9f0d306220d2345"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -151,6 +163,9 @@ QAbstractItemModel *&#160;</td><td class="memItemRight" valign="bottom"><b>m_pSo
 <tr class="memitem:acc5e20f03647dc03e38165378b9745c6" id="r_acc5e20f03647dc03e38165378b9745c6"><td class="memItemLeft" align="right" valign="top"><a id="acc5e20f03647dc03e38165378b9745c6" name="acc5e20f03647dc03e38165378b9745c6"></a>
 <a class="el" href="../../d6/df7/classxii_map.html">xiiMap</a>&lt; QModelIndex, bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_Visible</b></td></tr>
 <tr class="separator:acc5e20f03647dc03e38165378b9745c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac84b342c07554ca6cdecd47bf3d97364" id="r_ac84b342c07554ca6cdecd47bf3d97364"><td class="memItemLeft" align="right" valign="top"><a id="ac84b342c07554ca6cdecd47bf3d97364" name="ac84b342c07554ca6cdecd47bf3d97364"></a>
+<a class="el" href="#a26b5b55bcdb58aef70000a495cca59f0">CustomFilterFunc</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_CustomFilterFunc</b></td></tr>
+<tr class="separator:ac84b342c07554ca6cdecd47bf3d97364"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>/home/runner/work/XII/XII/Source/Tools/Libs/GuiFoundation/Models/<a class="el" href="../../dc/d52/_tree_search_filter_model_8moc_8h_source.html">TreeSearchFilterModel.moc.h</a></li>
@@ -162,7 +177,7 @@ QAbstractItemModel *&#160;</td><td class="memItemRight" valign="bottom"><b>m_pSo
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d5/d73/classxii_qt_tree_search_filter_model.html">xiiQtTreeSearchFilterModel</a></li>
-    <li class="footer">Generated on Wed Aug 13 2025 20:29:03 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Tue Nov 11 2025 17:16:07 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 </body>
