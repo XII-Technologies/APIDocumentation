@@ -901,6 +901,8 @@ var annotated_dup =
     [ "xiiGALCPUAccessFlag", "db/dca/structxii_g_a_l_c_p_u_access_flag.html", "db/dca/structxii_g_a_l_c_p_u_access_flag" ],
     [ "xiiGALCpuWaitOnlyFenceVulkan", "d7/dc0/classxii_g_a_l_cpu_wait_only_fence_vulkan.html", "d7/dc0/classxii_g_a_l_cpu_wait_only_fence_vulkan" ],
     [ "xiiGALCullMode", "de/ddb/structxii_g_a_l_cull_mode.html", "de/ddb/structxii_g_a_l_cull_mode" ],
+    [ "xiiGALDepthResolveDescription", "d0/d4b/structxii_g_a_l_depth_resolve_description.html", "d0/d4b/structxii_g_a_l_depth_resolve_description" ],
+    [ "xiiGALDepthResolveMode", "dd/dee/structxii_g_a_l_depth_resolve_mode.html", "dd/dee/structxii_g_a_l_depth_resolve_mode" ],
     [ "xiiGALDepthStencilClearValue", "d1/de4/structxii_g_a_l_depth_stencil_clear_value.html", "d1/de4/structxii_g_a_l_depth_stencil_clear_value" ],
     [ "xiiGALDepthStencilState", "d7/d17/classxii_g_a_l_depth_stencil_state.html", "d7/d17/classxii_g_a_l_depth_stencil_state" ],
     [ "xiiGALDepthStencilStateCreationDescription", "d8/d3c/structxii_g_a_l_depth_stencil_state_creation_description.html", "d8/d3c/structxii_g_a_l_depth_stencil_state_creation_description" ],

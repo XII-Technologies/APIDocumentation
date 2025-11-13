@@ -1,5 +1,6 @@
 var structxii_g_a_l_sub_pass_description =
 [
+    [ "m_DepthResolveAttachment", "d7/d1f/structxii_g_a_l_sub_pass_description.html#a119c0f6c42291774620013ade28a0e0a", null ],
     [ "m_DepthStencilAttachment", "d7/d1f/structxii_g_a_l_sub_pass_description.html#ad92103ba10d8fc6352af992eb078e6b9", null ],
     [ "m_InputAttachments", "d7/d1f/structxii_g_a_l_sub_pass_description.html#a845e59c798bfecb92e77349317e23cef", null ],
     [ "m_PreserveAttachments", "d7/d1f/structxii_g_a_l_sub_pass_description.html#afa111983c043621464ed79769d55b158", null ],

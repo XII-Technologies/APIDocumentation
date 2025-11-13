@@ -2500,6 +2500,9 @@ var hierarchy =
         ] ]
       ] ]
     ] ],
+    [ "xiiArrayBase< xiiGALDepthResolveDescription, xiiStaticArray< xiiGALDepthResolveDescription, Capacity > >", "da/d4c/classxii_array_base.html", [
+      [ "xiiStaticArray< xiiGALDepthResolveDescription, 1U >", "d9/d25/classxii_static_array.html", null ]
+    ] ],
     [ "xiiArrayBase< xiiGALDynamicBufferPoolVulkan::DynamicBufferPage, xiiDynamicArrayBase< xiiGALDynamicBufferPoolVulkan::DynamicBufferPage > >", "da/d4c/classxii_array_base.html", [
       [ "xiiDynamicArrayBase< xiiGALDynamicBufferPoolVulkan::DynamicBufferPage >", "d2/dea/classxii_dynamic_array_base.html", [
         [ "xiiDynamicArray< xiiGALDynamicBufferPoolVulkan::DynamicBufferPage >", "dc/da4/classxii_dynamic_array.html", null ]
@@ -4744,6 +4747,9 @@ var hierarchy =
     [ "xiiGALCullMode", "de/ddb/structxii_g_a_l_cull_mode.html", [
       [ "xiiEnum< xiiGALCullMode >", "de/dfd/structxii_enum.html", null ]
     ] ],
+    [ "xiiGALDepthResolveMode", "dd/dee/structxii_g_a_l_depth_resolve_mode.html", [
+      [ "xiiEnum< xiiGALDepthResolveMode >", "de/dfd/structxii_enum.html", null ]
+    ] ],
     [ "xiiGALDescriptorHash", "dc/dc7/classxii_g_a_l_descriptor_hash.html", null ],
     [ "xiiGALDescriptorSetPoolVulkan", "d1/d76/classxii_g_a_l_descriptor_set_pool_vulkan.html", null ],
     [ "xiiGALDeviceAdapterType", "d3/d09/structxii_g_a_l_device_adapter_type.html", [
@@ -5035,6 +5041,9 @@ var hierarchy =
     ] ],
     [ "xiiHashableStruct< xiiGALComputeShaderProperties >", "d7/d9f/classxii_hashable_struct.html", [
       [ "xiiGALComputeShaderProperties", "df/d89/structxii_g_a_l_compute_shader_properties.html", null ]
+    ] ],
+    [ "xiiHashableStruct< xiiGALDepthResolveDescription >", "d7/d9f/classxii_hashable_struct.html", [
+      [ "xiiGALDepthResolveDescription", "d0/d4b/structxii_g_a_l_depth_resolve_description.html", null ]
     ] ],
     [ "xiiHashableStruct< xiiGALDepthStencilClearValue >", "d7/d9f/classxii_hashable_struct.html", [
       [ "xiiGALDepthStencilClearValue", "d1/de4/structxii_g_a_l_depth_stencil_clear_value.html", null ]

@@ -6,6 +6,7 @@ var structxii_g_a_l_device_features =
     [ "m_ComputeShaders", "d6/d8f/structxii_g_a_l_device_features.html#a3125567abd4aa131cc75d82c5048fb10", null ],
     [ "m_DepthBiasClamp", "d6/d8f/structxii_g_a_l_device_features.html#a614b4ca286f8e17c07d17022d8ffda61", null ],
     [ "m_DepthClamp", "d6/d8f/structxii_g_a_l_device_features.html#a1a6296ed6a1c8a9a27fe89533de3350d", null ],
+    [ "m_DepthStencilResolve", "d6/d8f/structxii_g_a_l_device_features.html#a71fce7c570ef725502a8205e82fccf37", null ],
     [ "m_DualSourceBlend", "d6/d8f/structxii_g_a_l_device_features.html#a166a82d7090d63a50c45cb100389ed45", null ],
     [ "m_DurationQueries", "d6/d8f/structxii_g_a_l_device_features.html#a746249d97dc5ff956c57cad26bae3be6", null ],
     [ "m_GeometryShaders", "d6/d8f/structxii_g_a_l_device_features.html#acabcfd2b061248818fedd16c4e071be4", null ],
