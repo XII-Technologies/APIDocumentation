@@ -6880,7 +6880,8 @@ var hierarchy =
             [ "xiiGraphicsPipelinePass", "de/d84/classxii_graphics_pipeline_pass.html", [
               [ "xiiDepthOnlyPass", "d9/dbf/classxii_depth_only_pass.html", null ],
               [ "xiiForwardRenderPass", "da/d8f/classxii_forward_render_pass.html", null ],
-              [ "xiiPickingRenderPass", "db/d83/classxii_picking_render_pass.html", null ]
+              [ "xiiPickingRenderPass", "db/d83/classxii_picking_render_pass.html", null ],
+              [ "xiiSimpleRenderPass", "d8/d79/classxii_simple_render_pass.html", null ]
             ] ],
             [ "xiiPresentPipelinePass", "df/dcc/classxii_present_pipeline_pass.html", [
               [ "xiiTargetPass", "d4/d19/classxii_target_pass.html", null ]

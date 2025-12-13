@@ -2310,6 +2310,7 @@ var annotated_dup =
     [ "xiiSimpleDocumentConfigMsgToEditor", "d7/dc8/classxii_simple_document_config_msg_to_editor.html", null ],
     [ "xiiSimpleDocumentConfigMsgToEngine", "dd/de9/classxii_simple_document_config_msg_to_engine.html", null ],
     [ "xiiSimpleDocumentObjectManager", "de/d45/classxii_simple_document_object_manager.html", null ],
+    [ "xiiSimpleRenderPass", "d8/d79/classxii_simple_render_pass.html", "d8/d79/classxii_simple_render_pass" ],
     [ "xiiSimpleWindComponent", "df/d72/classxii_simple_wind_component.html", "df/d72/classxii_simple_wind_component" ],
     [ "xiiSimpleWindWorldModule", "d8/d21/classxii_simple_wind_world_module.html", null ],
     [ "xiiSimplifiedDataCPU", "d8/ddd/classxii_simplified_data_c_p_u.html", null ],

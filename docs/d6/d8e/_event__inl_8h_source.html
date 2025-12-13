@@ -324,11 +324,11 @@ $(function(){initNavTree('d6/d8e/_event__inl_8h_source.html','../../'); initResi
 <div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>    XII_ASSERT_ALWAYS(m_pSelf == <span class="keyword">this</span>, <span class="stringliteral">&quot;The xiiEvent was relocated in memory. This is not allowed, as it breaks the Unsubscribers.&quot;</span>);</div>
 <div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span><span class="preprocessor">#endif</span></div>
 <div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span> </div>
-<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>    m_uiRecursionDepth++;</div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>    ++m_uiRecursionDepth;</div>
 <div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span> </div>
 <div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>    <span class="comment">// RAII to ensure correctness in case exceptions are used</span></div>
 <div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>    <span class="keyword">auto</span> scopeExit = xiiMakeScopeExit([&amp;]() {</div>
-<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>      m_uiRecursionDepth--;</div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>      --m_uiRecursionDepth;</div>
 <div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>    });</div>
 <div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span> </div>
 <div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>    <span class="comment">// don&#39;t execute handlers that are added while we are broadcasting</span></div>
@@ -365,7 +365,7 @@ $(function(){initNavTree('d6/d8e/_event__inl_8h_source.html','../../'); initResi
 <div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>        XII_ASSERT_ALWAYS(m_pSelf == <span class="keyword">this</span>, <span class="stringliteral">&quot;The xiiEvent was relocated in memory. This is not allowed, as it breaks the Unsubscribers.&quot;</span>);</div>
 <div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span><span class="preprocessor">#endif</span></div>
 <div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span> </div>
-<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>        m_uiRecursionDepth++;</div>
+<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>        ++m_uiRecursionDepth;</div>
 <div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>      }</div>
 <div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span>      <span class="keywordflow">else</span></div>
 <div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span>      {</div>
@@ -385,12 +385,12 @@ $(function(){initNavTree('d6/d8e/_event__inl_8h_source.html','../../'); initResi
 <div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span><span class="preprocessor">#if XII_ENABLED(XII_COMPILER_MSVC) &amp;&amp; _MSC_VER &lt; 1920</span></div>
 <div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span>      <span class="keywordflow">if</span> (<a class="code hl_enumvalue" href="../../d0/d7f/classxii_event_base.html#a47c0c3b0c09c926309f7fa6763933c9babd0f5c5939dc65a7fc2af80ae3f87451">RecursionDepthSupported</a>)</div>
 <div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span>      {</div>
-<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span>        m_uiRecursionDepth--;</div>
+<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span>        --m_uiRecursionDepth;</div>
 <div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span>      }</div>
 <div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span><span class="preprocessor">#else</span></div>
 <div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span>      <span class="keywordflow">if</span> <span class="keyword">constexpr</span> (<a class="code hl_enumvalue" href="../../d0/d7f/classxii_event_base.html#a47c0c3b0c09c926309f7fa6763933c9babd0f5c5939dc65a7fc2af80ae3f87451">RecursionDepthSupported</a>)</div>
 <div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span>      {</div>
-<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span>        m_uiRecursionDepth--;</div>
+<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span>        --m_uiRecursionDepth;</div>
 <div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span>      }</div>
 <div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span><span class="preprocessor">#endif</span></div>
 <div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span>    });</div>
@@ -447,7 +447,7 @@ $(function(){initNavTree('d6/d8e/_event__inl_8h_source.html','../../'); initResi
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.html">home</a></li><li class="navelem"><a class="el" href="../../dir_1036706e55c22cab35bc1c58ee689f1d.html">runner</a></li><li class="navelem"><a class="el" href="../../dir_629f8151d55d307162ff2d619fb1783d.html">work</a></li><li class="navelem"><a class="el" href="../../dir_1ddc44fe1263a8c7935fa6130b7d9499.html">XII</a></li><li class="navelem"><a class="el" href="../../dir_2c1b6808f12952f4c36e05ba7068379a.html">XII</a></li><li class="navelem"><a class="el" href="../../dir_b5a1c4ecfca018ad24b729e213296d41.html">Source</a></li><li class="navelem"><a class="el" href="../../dir_e321052006a51284e67389ab20037e7c.html">Engine</a></li><li class="navelem"><a class="el" href="../../dir_be0c42c58b36f42c54ec54024ed4f6af.html">Foundation</a></li><li class="navelem"><a class="el" href="../../dir_a114401e9c99597f3e9367f4986aadc8.html">Communication</a></li><li class="navelem"><a class="el" href="../../dir_4ee8e8f80b4f116ca58de70cefde2b0a.html">Implementation</a></li><li class="navelem"><b>Event_inl.h</b></li>
-    <li class="footer">Generated on Sat Nov 15 2025 13:36:14 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Sat Dec 13 2025 20:54:52 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 </body>
