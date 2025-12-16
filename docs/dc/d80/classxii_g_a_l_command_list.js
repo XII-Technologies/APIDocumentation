@@ -67,7 +67,7 @@ var classxii_g_a_l_command_list =
     [ "SetStencilRef", "dc/d80/classxii_g_a_l_command_list.html#a786d9633bb9c400e51948967053394ad", null ],
     [ "SetUnorderedAccessBufferView", "dc/d80/classxii_g_a_l_command_list.html#a1c777d910c550da2265b95c6f6cd7ce7", null ],
     [ "SetUnorderedAccessTextureView", "dc/d80/classxii_g_a_l_command_list.html#a0c3659f0926971ddede760a62caf0cae", null ],
-    [ "SetVertexBuffers", "dc/d80/classxii_g_a_l_command_list.html#a34cdaff6dfab592758c89d9c77407279", null ],
+    [ "SetVertexBuffers", "dc/d80/classxii_g_a_l_command_list.html#a86ca4597e50366ba855e88f06b6f36eb", null ],
     [ "SetViewport", "dc/d80/classxii_g_a_l_command_list.html#a6b9335507a53757b461a4c4c830630f4", null ],
     [ "SetViewports", "dc/d80/classxii_g_a_l_command_list.html#a659ffe468b7a3f5e287773493e0258e1", null ],
     [ "Submit", "dc/d80/classxii_g_a_l_command_list.html#a0085c42a0e6525e4715cf85c3ee50b38", null ],

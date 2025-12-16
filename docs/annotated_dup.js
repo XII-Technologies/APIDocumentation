@@ -987,6 +987,7 @@ var annotated_dup =
     [ "xiiGALOptimizedClearValue", "d6/d5b/structxii_g_a_l_optimized_clear_value.html", "d6/d5b/structxii_g_a_l_optimized_clear_value" ],
     [ "xiiGALPermutationGenerator", "d6/dee/classxii_g_a_l_permutation_generator.html", "d6/dee/classxii_g_a_l_permutation_generator" ],
     [ "xiiGALPermutationVariable", "d4/d45/structxii_g_a_l_permutation_variable.html", null ],
+    [ "xiiGALPipelineCache", "d3/d6f/classxii_g_a_l_pipeline_cache.html", null ],
     [ "xiiGALPipelineResourceDescription", "d0/d99/structxii_g_a_l_pipeline_resource_description.html", "d0/d99/structxii_g_a_l_pipeline_resource_description" ],
     [ "xiiGALPipelineResourceDescriptionVulkan", "d0/d50/structxii_g_a_l_pipeline_resource_description_vulkan.html", null ],
     [ "xiiGALPipelineResourceFlags", "da/d8c/structxii_g_a_l_pipeline_resource_flags.html", "da/d8c/structxii_g_a_l_pipeline_resource_flags" ],

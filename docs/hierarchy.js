@@ -4828,6 +4828,7 @@ var hierarchy =
     [ "xiiGALMultiDrawItem", "d5/d70/structxii_g_a_l_multi_draw_item.html", null ],
     [ "xiiGALPermutationGenerator", "d6/dee/classxii_g_a_l_permutation_generator.html", null ],
     [ "xiiGALPermutationVariable", "d4/d45/structxii_g_a_l_permutation_variable.html", null ],
+    [ "xiiGALPipelineCache", "d3/d6f/classxii_g_a_l_pipeline_cache.html", null ],
     [ "xiiGALPipelineResourceFlags", "da/d8c/structxii_g_a_l_pipeline_resource_flags.html", null ],
     [ "xiiGALPipelineResourceSignatureCreationDescription", "de/d50/structxii_g_a_l_pipeline_resource_signature_creation_description.html", null ],
     [ "xiiGALPipelineShadingRateFlags", "de/d3d/structxii_g_a_l_pipeline_shading_rate_flags.html", null ],
@@ -5359,6 +5360,12 @@ var hierarchy =
       [ "xiiHashTable< xiiUuid, xiiComponentHandle >", "d8/dc2/classxii_hash_table.html", null ],
       [ "xiiHashTable< const xiiRTTI *, Components >", "d8/dc2/classxii_hash_table.html", null ],
       [ "xiiHashTable< KeyType, ValueType, Hasher, AllocatorWrapper >", "d8/dc2/classxii_hash_table.html", null ]
+    ] ],
+    [ "xiiHashTableBase< ComputePipelineCacheKey, xiiSharedPtr< xiiGALComputePipelineState >, CacheKeyHasher >", "d0/da6/classxii_hash_table_base.html", [
+      [ "xiiHashTable< ComputePipelineCacheKey, xiiSharedPtr< xiiGALComputePipelineState >, CacheKeyHasher >", "d8/dc2/classxii_hash_table.html", null ]
+    ] ],
+    [ "xiiHashTableBase< GraphicsPipelineCacheKey, xiiSharedPtr< xiiGALGraphicsPipelineState >, CacheKeyHasher >", "d0/da6/classxii_hash_table_base.html", [
+      [ "xiiHashTable< GraphicsPipelineCacheKey, xiiSharedPtr< xiiGALGraphicsPipelineState >, CacheKeyHasher >", "d8/dc2/classxii_hash_table.html", null ]
     ] ],
     [ "xiiHashTableBase< MappedBufferKey, MappedBuffer, Hasher >", "d0/da6/classxii_hash_table_base.html", [
       [ "xiiHashTable< MappedBufferKey, MappedBuffer, xiiGALCommandListVulkan::MappedBufferKey::Hasher >", "d8/dc2/classxii_hash_table.html", null ]
