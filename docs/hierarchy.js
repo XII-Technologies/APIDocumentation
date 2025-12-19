@@ -6886,7 +6886,11 @@ var hierarchy =
             [ "xiiCopyPipelinePass", "d8/d35/classxii_copy_pipeline_pass.html", null ],
             [ "xiiGraphicsPipelinePass", "de/d84/classxii_graphics_pipeline_pass.html", [
               [ "xiiDepthOnlyPass", "d9/dbf/classxii_depth_only_pass.html", null ],
-              [ "xiiForwardRenderPass", "da/d8f/classxii_forward_render_pass.html", null ],
+              [ "xiiForwardRenderPass", "da/d8f/classxii_forward_render_pass.html", [
+                [ "xiiSkyRenderPass", "d8/dc0/classxii_sky_render_pass.html", null ]
+              ] ],
+              [ "xiiMSAAResolvePass", "d4/de4/classxii_m_s_a_a_resolve_pass.html", null ],
+              [ "xiiMSAAUpscalePass", "da/da0/classxii_m_s_a_a_upscale_pass.html", null ],
               [ "xiiPickingRenderPass", "db/d83/classxii_picking_render_pass.html", null ],
               [ "xiiSimpleRenderPass", "d8/d79/classxii_simple_render_pass.html", null ]
             ] ],
