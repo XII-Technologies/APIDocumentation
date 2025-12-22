@@ -13,7 +13,7 @@ var searchData=
   ['beginarray_10',['BeginArray',['../d1/d23/classxii_j_s_o_n_writer.html#a1995171ae3cc76c4899121f347986f5a',1,'xiiJSONWriter::BeginArray()'],['../de/dad/classxii_standard_j_s_o_n_writer.html#a9c9f173b8a499b2a03d04e0e5cc5a1cd',1,'xiiStandardJSONWriter::BeginArray()']]],
   ['beginchunk_11',['BeginChunk',['../d1/d4f/classxii_chunk_stream_writer.html#af382f574d0275fa70deff4ba0ab8b688',1,'xiiChunkStreamWriter']]],
   ['begincompute_12',['BeginCompute',['../da/d27/classxii_render_context.html#a14282ef5c0f2c109fc4df973bd68ea54',1,'xiiRenderContext']]],
-  ['begindebuggroup_13',['BeginDebugGroup',['../dc/d80/classxii_g_a_l_command_list.html#a19992f27f81268a23e4e8c8f58680cb9',1,'xiiGALCommandList']]],
+  ['begindebuggroup_13',['BeginDebugGroup',['../dc/d80/classxii_g_a_l_command_list.html#a745cbd304821bd8fc62996d9dcd5678d',1,'xiiGALCommandList']]],
   ['begindragdropoperation_14',['BeginDragDropOperation',['../db/d24/classxii_drag_drop_handler.html#a970f672398c22b12af45abfbfd05df37',1,'xiiDragDropHandler']]],
   ['beginframe_15',['BeginFrame',['../d5/d19/classxii_g_a_l_device.html#afd3bd25ee5dac5bac704cf3ff001dbbf',1,'xiiGALDevice']]],
   ['beginlog_16',['BeginLog',['../d3/d7f/classxii_log_writer_1_1_h_t_m_l.html#abdf6bdb7039b4568087376289530e9e4',1,'xiiLogWriter::HTML']]],

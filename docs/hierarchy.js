@@ -3878,6 +3878,10 @@ var hierarchy =
     [ "xiiBlobPtr< T >", "d3/d93/classxii_blob_ptr.html", null ],
     [ "xiiBlockStorage< T, BlockSizeInByte, StorageType >", "da/da9/classxii_block_storage.html", null ],
     [ "xiiBlockStorageType", "d8/d63/structxii_block_storage_type.html", null ],
+    [ "xiiBlurSettings", "d6/dc6/structxii_blur_settings.html", null ],
+    [ "xiiBlurType", "d4/d08/structxii_blur_type.html", [
+      [ "xiiEnum< xiiBlurType >", "de/dfd/structxii_enum.html", null ]
+    ] ],
     [ "xiiBoundingBoxSphereTemplate< Type >", "d3/d90/classxii_bounding_box_sphere_template.html", null ],
     [ "xiiBoundingBoxTemplate< Type >", "d2/dd6/classxii_bounding_box_template.html", null ],
     [ "xiiBoundingSphereTemplate< Type >", "dd/d79/classxii_bounding_sphere_template.html", null ],
@@ -5372,12 +5376,6 @@ var hierarchy =
     ] ],
     [ "xiiHashTableBase< MappedTextureKey, MappedTexture, Hasher >", "d0/da6/classxii_hash_table_base.html", [
       [ "xiiHashTable< MappedTextureKey, MappedTexture, xiiGALCommandListVulkan::MappedTextureKey::Hasher >", "d8/dc2/classxii_hash_table.html", null ]
-    ] ],
-    [ "xiiHashTableBase< xiiGALComputePipelineStateCreationDescription, xiiSharedPtr< xiiGALComputePipelineState >, xiiGALDescriptorHash >", "d0/da6/classxii_hash_table_base.html", [
-      [ "xiiHashTable< xiiGALComputePipelineStateCreationDescription, xiiSharedPtr< xiiGALComputePipelineState >, xiiGALDescriptorHash >", "d8/dc2/classxii_hash_table.html", null ]
-    ] ],
-    [ "xiiHashTableBase< xiiGALGraphicsPipelineStateCreationDescription, xiiSharedPtr< xiiGALGraphicsPipelineState >, xiiGALDescriptorHash >", "d0/da6/classxii_hash_table_base.html", [
-      [ "xiiHashTable< xiiGALGraphicsPipelineStateCreationDescription, xiiSharedPtr< xiiGALGraphicsPipelineState >, xiiGALDescriptorHash >", "d8/dc2/classxii_hash_table.html", null ]
     ] ],
     [ "xiiHashTableBase< xiiGALRenderPassCreationDescription, FramebufferCache, xiiGALDescriptorHash >", "d0/da6/classxii_hash_table_base.html", [
       [ "xiiHashTable< xiiGALRenderPassCreationDescription, FramebufferCache, xiiGALDescriptorHash >", "d8/dc2/classxii_hash_table.html", null ]
@@ -6885,6 +6883,7 @@ var hierarchy =
             [ "xiiComputePipelinePass", "d3/d4e/classxii_compute_pipeline_pass.html", null ],
             [ "xiiCopyPipelinePass", "d8/d35/classxii_copy_pipeline_pass.html", null ],
             [ "xiiGraphicsPipelinePass", "de/d84/classxii_graphics_pipeline_pass.html", [
+              [ "xiiBlurPass", "dc/d83/classxii_blur_pass.html", null ],
               [ "xiiDepthOnlyPass", "d9/dbf/classxii_depth_only_pass.html", null ],
               [ "xiiForwardRenderPass", "da/d8f/classxii_forward_render_pass.html", [
                 [ "xiiSkyRenderPass", "d8/dc0/classxii_sky_render_pass.html", null ]

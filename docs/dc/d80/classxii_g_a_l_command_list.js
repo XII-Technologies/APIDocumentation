@@ -7,7 +7,7 @@ var classxii_g_a_l_command_list =
       [ "Ended", "dc/d80/classxii_g_a_l_command_list.html#a81baaed91d436d04e5c4b3b58c3d03f5a0157fbb99be9622bdaa6e544270c0622", null ]
     ] ],
     [ "Begin", "dc/d80/classxii_g_a_l_command_list.html#a857bc00c0ff79959d90eceb2c5debe89", null ],
-    [ "BeginDebugGroup", "dc/d80/classxii_g_a_l_command_list.html#a19992f27f81268a23e4e8c8f58680cb9", null ],
+    [ "BeginDebugGroup", "dc/d80/classxii_g_a_l_command_list.html#a745cbd304821bd8fc62996d9dcd5678d", null ],
     [ "BeginQuery", "dc/d80/classxii_g_a_l_command_list.html#aba79e4f2e2acdcb2bc5742c4f42dd353", null ],
     [ "BeginRenderPass", "dc/d80/classxii_g_a_l_command_list.html#a39d229a291c085dc7847f46182da31e0", null ],
     [ "ClearDepthStencilView", "dc/d80/classxii_g_a_l_command_list.html#a00356655eb2c27a5a02edb19a1c2e4bc", null ],
@@ -40,7 +40,7 @@ var classxii_g_a_l_command_list =
     [ "GetRecordingState", "dc/d80/classxii_g_a_l_command_list.html#a74b8aa790c7515312427252a3b0417ed", null ],
     [ "GetRenderPass", "dc/d80/classxii_g_a_l_command_list.html#a2ff0efac515f8ae33e8e089054cae109", null ],
     [ "GetStatistics", "dc/d80/classxii_g_a_l_command_list.html#aaab04e8fafe6207b3002873337ff38a0", null ],
-    [ "InsertDebugLabel", "dc/d80/classxii_g_a_l_command_list.html#a8b39ce41b621490a7e6be82f6bb11d11", null ],
+    [ "InsertDebugLabel", "dc/d80/classxii_g_a_l_command_list.html#a7006890a70d54d186cd9c18d9c9ade24", null ],
     [ "InvalidateState", "dc/d80/classxii_g_a_l_command_list.html#a1a142472ca204fe72c75e8c49beec4c9", null ],
     [ "MapBuffer", "dc/d80/classxii_g_a_l_command_list.html#aaebd2db28bfa7ce18b3bd608b00d804d", null ],
     [ "MapTextureSubresource", "dc/d80/classxii_g_a_l_command_list.html#abf7d5946b815772b2a5e6b6cd6c32ae4", null ],
