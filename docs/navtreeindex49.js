@@ -1,8 +1,5 @@
 var NAVTREEINDEX49 =
 {
-"de/da1/structxii_script_coroutine_creation_mode.html#a72c2dbb927d181f9a6bb2f1600f5b8dda6ec561132183ba483a050a40243693e5":[3,0,2128,0,0],
-"de/da1/structxii_script_coroutine_creation_mode.html#a72c2dbb927d181f9a6bb2f1600f5b8ddacfebdfb80fc2b274f4c5ae47446d114e":[3,0,2128,0,2],
-"de/da3/classxii_reflection_probe_render_data.html":[3,0,1952],
 "de/da3/classxii_reflection_probe_render_data.html#aa65e86d48405c699ea6776eabb924ff8":[3,0,1952,0],
 "de/da4/structxii_internal_1_1_message_handler_traits.html":[3,0,6,14],
 "de/da5/structxii_variant_1_1_string_wrapper.html":[3,0,2539,0],
@@ -17,13 +14,13 @@ var NAVTREEINDEX49 =
 "de/da7/classxii_render_doc.html#a7bf025725c42e51d5296c47e367dadf6":[3,0,1975,1],
 "de/da7/classxii_render_doc.html#acfe32e0317dfd9a0b98c1cdd5d6a0bf5":[3,0,1975,4],
 "de/da7/classxii_render_doc.html#ae501e4d63f5b8124153e8777560ec2bc":[3,0,1975,0],
-"de/da9/classxii_command_line_option_doc.html":[3,0,354],
-"de/da9/classxii_command_line_option_doc.html#a77f98eae10243a416eb64d7442944813":[3,0,354,3],
-"de/da9/classxii_command_line_option_doc.html#a8ad72d7964c537d538da4790daf5261f":[3,0,354,5],
-"de/da9/classxii_command_line_option_doc.html#a8f7315067eb8220911ee1af8c6681e3c":[3,0,354,2],
-"de/da9/classxii_command_line_option_doc.html#a99f7a571d006847b8997a91d9d29071f":[3,0,354,1],
-"de/da9/classxii_command_line_option_doc.html#aa4662d7ea78eba18780e05a71bdaa32a":[3,0,354,0],
-"de/da9/classxii_command_line_option_doc.html#aac33e0960145f8fa758e9e274ca07b51":[3,0,354,4],
+"de/da9/classxii_command_line_option_doc.html":[3,0,355],
+"de/da9/classxii_command_line_option_doc.html#a77f98eae10243a416eb64d7442944813":[3,0,355,3],
+"de/da9/classxii_command_line_option_doc.html#a8ad72d7964c537d538da4790daf5261f":[3,0,355,5],
+"de/da9/classxii_command_line_option_doc.html#a8f7315067eb8220911ee1af8c6681e3c":[3,0,355,2],
+"de/da9/classxii_command_line_option_doc.html#a99f7a571d006847b8997a91d9d29071f":[3,0,355,1],
+"de/da9/classxii_command_line_option_doc.html#aa4662d7ea78eba18780e05a71bdaa32a":[3,0,355,0],
+"de/da9/classxii_command_line_option_doc.html#aac33e0960145f8fa758e9e274ca07b51":[3,0,355,4],
 "de/da9/classxii_cone_length_manipulator_adapter.html":[3,0,396],
 "de/da9/classxii_volume_sphere_component.html":[3,0,2650],
 "de/da9/classxii_volume_sphere_component.html#a76133811019d51aee1a6e18dce55d005":[3,0,2650,1],
@@ -146,7 +143,7 @@ var NAVTREEINDEX49 =
 "de/dc4/structxii_is_pod_type_3_01_t_0f_n_0e_4.html":[3,0,1260],
 "de/dcb/structxii_qt_node_scene_1_1_connection_style.html":[3,0,1809,1],
 "de/dcc/classxii_document_open_msg_to_engine.html":[3,0,578],
-"de/dcd/classxii_camera_move_context.html":[3,0,279],
+"de/dcd/classxii_camera_move_context.html":[3,0,280],
 "de/dce/structxii_texture_packer_1_1_texture.html":[3,0,2447,0],
 "de/dcf/structxii_rope_simulator_1_1_node.html":[3,0,2067,0],
 "de/dd1/structxii_virtual_thumb_stick_1_1_flags.html":[3,0,2594,1],
@@ -249,5 +246,8 @@ var NAVTREEINDEX49 =
 "de/de9/structxii_qt_editor_app_1_1_startup_flags.html#ade46dd67224ae8b93e90a6566f683e22abc8bad44cc81b7b6adf002c29eae72f9":[3,0,1741,0,1,5],
 "de/dea/classxii_math_expression_anim_node.html":[3,0,1374],
 "de/dec/structxii_variant_type_deduction.html":[3,0,2567],
-"de/def/classxii_double_buffered_stack_allocator.html":[3,0,587]
+"de/def/classxii_double_buffered_stack_allocator.html":[3,0,587],
+"de/def/structxii_input_slot_flags_1_1_bits.html":[3,0,1229,0],
+"de/def/structxii_texture2_d_resource_descriptor.html":[3,0,2422],
+"de/def/structxii_texture2_d_resource_descriptor.html#a09ab317d10fd9c6531979a50e2299015":[3,0,2422,0]
 };

@@ -1,9 +1,5 @@
 var NAVTREEINDEX30 =
 {
-"d9/d2c/structxii_g_a_l_surface_transform.html#a79c57cb47773dc230f242eb53adc9148a9b28430a50a86d6771196225b1a27c1b":[3,0,1015,0,8],
-"d9/d2c/structxii_g_a_l_surface_transform.html#a79c57cb47773dc230f242eb53adc9148aa229b0cc0095b9bc295375c229e0a91e":[3,0,1015,0,10],
-"d9/d2c/structxii_g_a_l_surface_transform.html#a79c57cb47773dc230f242eb53adc9148abb8f1060e676de0e54f83f34fd4ec5d4":[3,0,1015,0,4],
-"d9/d2c/structxii_g_a_l_surface_transform.html#a79c57cb47773dc230f242eb53adc9148ac6c999fec560dd4ec22304c0a3fbd1c0":[3,0,1015,0,6],
 "d9/d2c/structxii_g_a_l_surface_transform.html#a79c57cb47773dc230f242eb53adc9148acb4a9bed9cd69f87b30098cc599060b0":[3,0,1015,0,9],
 "d9/d2c/structxii_g_a_l_surface_transform.html#a79c57cb47773dc230f242eb53adc9148ade5162c0b23228a11932b56dcf4abcba":[3,0,1015,0,0],
 "d9/d2c/structxii_g_a_l_surface_transform.html#a79c57cb47773dc230f242eb53adc9148aee4575638d5e481bd4423f179881ff5e":[3,0,1015,0,7],
@@ -28,7 +24,7 @@ var NAVTREEINDEX30 =
 "d9/d34/classxii_decal_resource_loader.html#ac32e70efff75c70b5512e76abe5b62e8":[3,0,518,1],
 "d9/d34/classxii_decal_resource_loader.html#ad78c4c71941e719258fc1ed41dc2017d":[3,0,518,3],
 "d9/d34/classxii_qt_tool_bar_action_map_view.html":[3,0,1889],
-"d9/d34/structxii_clean_type_3_01const_01char_01_5_01_4.html":[3,0,304],
+"d9/d34/structxii_clean_type_3_01const_01char_01_5_01_4.html":[3,0,305],
 "d9/d35/structxii_g_a_l_shading_rate_flags.html":[3,0,995],
 "d9/d35/structxii_g_a_l_shading_rate_flags.html#a7c74ca5da593dcb91c527a97d4c21a36":[3,0,995,1],
 "d9/d35/structxii_g_a_l_shading_rate_flags.html#a7c74ca5da593dcb91c527a97d4c21a36a0d4a2dc1715d9c345ad3f703d0de9d4d":[3,0,995,1,5],
@@ -172,7 +168,7 @@ var NAVTREEINDEX30 =
 "d9/d64/structxii_default_expression_functions.html":[3,0,524],
 "d9/d66/classxii_anim_graph_instance.html":[3,0,137],
 "d9/d66/structxii_anim_pose_generator_command_local_to_model_pose.html":[3,0,159],
-"d9/d66/structxii_atomic_utils.html":[3,0,219],
+"d9/d66/structxii_atomic_utils.html":[3,0,220],
 "d9/d67/classxii_qt_color_compare_widget.html":[3,0,1696],
 "d9/d68/classxii_qt_joint_adapter.html":[3,0,1783],
 "d9/d68/structxii_msg_release_object_grab.html":[3,0,1467],
@@ -206,6 +202,7 @@ var NAVTREEINDEX30 =
 "d9/d69/structxii_task_priority.html#a2aa9f9ee2f9b337039c13a946945d93dae6b065545bb61375653013907201666a":[3,0,2393,0,5],
 "d9/d69/structxii_task_priority.html#a2aa9f9ee2f9b337039c13a946945d93daf5e6961ca817f966a01211c523f93897":[3,0,2393,0,8],
 "d9/d6a/classxii_qt_dynamic_string_enum_property_widget.html":[3,0,1739],
+"d9/d6b/classxii_render_context_1_1_graphics_scope.html":[3,0,1970,2],
 "d9/d6b/structxii_vulkan_allocation_create_flags.html":[3,0,2651],
 "d9/d6b/structxii_vulkan_allocation_create_flags.html#aa2a0577e7e6530ab54dbe20169ca4311":[3,0,2651,1],
 "d9/d6b/structxii_vulkan_allocation_create_flags.html#aa2a0577e7e6530ab54dbe20169ca4311a2518122bd91d5548398b5aefc5a42892":[3,0,2651,1,11],
@@ -249,5 +246,8 @@ var NAVTREEINDEX30 =
 "d9/d74/structxii_property_meta_state_event.html#af90d9c4c58124f68622eda221a622a7d":[3,0,1656,0],
 "d9/d75/classxii_state_machine_component.html":[3,0,2313],
 "d9/d75/classxii_state_machine_component.html#a1fc9d0c32162afd02842cdecabcb1bce":[3,0,2313,3],
-"d9/d75/classxii_state_machine_component.html#a483cae03a4c58fed7322bf0f0327780c":[3,0,2313,1]
+"d9/d75/classxii_state_machine_component.html#a483cae03a4c58fed7322bf0f0327780c":[3,0,2313,1],
+"d9/d75/classxii_state_machine_component.html#a64646b03a3d6bb6b1501c10f080349fe":[3,0,2313,8],
+"d9/d75/classxii_state_machine_component.html#a72123c85ffe270ea1ee4fb8feb5ca1cf":[3,0,2313,4],
+"d9/d75/classxii_state_machine_component.html#a9d9372e3207c6f76f21c882a708a58d9":[3,0,2313,7]
 };

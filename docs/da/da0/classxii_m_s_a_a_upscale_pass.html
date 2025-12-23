@@ -100,7 +100,6 @@ $(function(){initNavTree('da/da0/classxii_m_s_a_a_upscale_pass.html','../../'); 
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="../../d9/da3/classxii_m_s_a_a_upscale_pass-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">xiiMSAAUpscalePass Class Reference</div></div>
@@ -126,9 +125,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ad5df6dcaa2f4082374655d300ed243f0" id="r_ad5df6dcaa2f4082374655d300ed243f0"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad5df6dcaa2f4082374655d300ed243f0">GetResourceDescriptions</a> (const <a class="el" href="../../dd/df1/classxii_view.html">xiiView</a> &amp;view, const <a class="el" href="../../d0/d60/classxii_array_ptr.html">xiiArrayPtr</a>&lt; <a class="el" href="../../d5/d51/structxii_render_pipeline_pass_resource.html">xiiRenderPipelinePassResource</a> *const &gt; pInputs, <a class="el" href="../../d0/d60/classxii_array_ptr.html">xiiArrayPtr</a>&lt; <a class="el" href="../../d5/d51/structxii_render_pipeline_pass_resource.html">xiiRenderPipelinePassResource</a> &gt; pOutputs) override</td></tr>
 <tr class="memdesc:ad5df6dcaa2f4082374655d300ed243f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Must be implemented by each pass to describe the GPU resources it requires on its output pins.  <br /></td></tr>
 <tr class="separator:ad5df6dcaa2f4082374655d300ed243f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a11d53f00072269dca26f8288c1c8e16c" id="r_a11d53f00072269dca26f8288c1c8e16c"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a11d53f00072269dca26f8288c1c8e16c">InitializeRenderPipelinePass</a> (const <a class="el" href="../../dd/df1/classxii_view.html">xiiView</a> &amp;view, const <a class="el" href="../../d0/d60/classxii_array_ptr.html">xiiArrayPtr</a>&lt; <a class="el" href="../../d3/deb/structxii_render_pipeline_pass_connection.html">xiiRenderPipelinePassConnection</a> *const &gt; pInputs, const <a class="el" href="../../d0/d60/classxii_array_ptr.html">xiiArrayPtr</a>&lt; <a class="el" href="../../d3/deb/structxii_render_pipeline_pass_connection.html">xiiRenderPipelinePassConnection</a> *const &gt; pOutputs) override</td></tr>
-<tr class="memdesc:a11d53f00072269dca26f8288c1c8e16c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called once before the first execution to allow the pass to initialize itself based on the graph and view context.  <br /></td></tr>
-<tr class="separator:a11d53f00072269dca26f8288c1c8e16c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a624e1444eb3f9b3689557025cb5d9e73" id="r_a624e1444eb3f9b3689557025cb5d9e73"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a624e1444eb3f9b3689557025cb5d9e73">Execute</a> (const <a class="el" href="../../d9/d0f/structxii_render_view_context.html">xiiRenderViewContext</a> &amp;renderViewContext, const <a class="el" href="../../d0/d60/classxii_array_ptr.html">xiiArrayPtr</a>&lt; <a class="el" href="../../d3/deb/structxii_render_pipeline_pass_connection.html">xiiRenderPipelinePassConnection</a> *const &gt; pInputs, const <a class="el" href="../../d0/d60/classxii_array_ptr.html">xiiArrayPtr</a>&lt; <a class="el" href="../../d3/deb/structxii_render_pipeline_pass_connection.html">xiiRenderPipelinePassConnection</a> *const &gt; pOutputs) override</td></tr>
 <tr class="memdesc:a624e1444eb3f9b3689557025cb5d9e73"><td class="mdescLeft">&#160;</td><td class="mdescRight">Must be implemented by derived classes to perform the pass's actual rendering or processing logic.  <br /></td></tr>
 <tr class="separator:a624e1444eb3f9b3689557025cb5d9e73"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -159,6 +155,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>SetPassFlags</b> (<a 
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetPassConcurrencyHint</b> (<a class="el" href="../../de/dfd/structxii_enum.html">xiiEnum</a>&lt; <a class="el" href="../../d3/dac/structxii_render_pipeline_pass_concurrency_hint.html">xiiRenderPipelinePassConcurrencyHint</a> &gt; concurrencyHint)</td></tr>
 <tr class="memdesc:ade0f809d4f3d12ebadc821b803ba507b inherit pub_methods_classxii_render_pipeline_pass_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides a hint to the graph scheduler regarding parallel execution potential. <br /></td></tr>
 <tr class="separator:ade0f809d4f3d12ebadc821b803ba507b inherit pub_methods_classxii_render_pipeline_pass_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1199f644520267014fe56f920e1097ec inherit pub_methods_classxii_render_pipeline_pass_base" id="r_a1199f644520267014fe56f920e1097ec"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d7b/classxii_render_pipeline_pass_base.html#a1199f644520267014fe56f920e1097ec">InitializeRenderPipelinePass</a> (const <a class="el" href="../../dd/df1/classxii_view.html">xiiView</a> &amp;view, const <a class="el" href="../../d0/d60/classxii_array_ptr.html">xiiArrayPtr</a>&lt; <a class="el" href="../../d3/deb/structxii_render_pipeline_pass_connection.html">xiiRenderPipelinePassConnection</a> *const &gt; pInputs, const <a class="el" href="../../d0/d60/classxii_array_ptr.html">xiiArrayPtr</a>&lt; <a class="el" href="../../d3/deb/structxii_render_pipeline_pass_connection.html">xiiRenderPipelinePassConnection</a> *const &gt; pOutputs)</td></tr>
+<tr class="memdesc:a1199f644520267014fe56f920e1097ec inherit pub_methods_classxii_render_pipeline_pass_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called once before the first execution to allow the pass to initialize itself based on the graph and view context.  <br /></td></tr>
+<tr class="separator:a1199f644520267014fe56f920e1097ec inherit pub_methods_classxii_render_pipeline_pass_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a67397e322044b45d24bf4d59bb5a8f10 inherit pub_methods_classxii_render_pipeline_pass_base" id="r_a67397e322044b45d24bf4d59bb5a8f10"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d8/d9b/classxii_shared_ptr.html">xiiSharedPtr</a>&lt; <a class="el" href="../../d5/d12/classxii_g_a_l_device_object.html">xiiGALDeviceObject</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d7b/classxii_render_pipeline_pass_base.html#a67397e322044b45d24bf4d59bb5a8f10">QueryResourceProvider</a> (const <a class="el" href="../../d9/d96/structxii_render_pipeline_node_pin.html">xiiRenderPipelineNodePin</a> *pPin, const <a class="el" href="../../d5/dc2/structxii_render_pipeline_resource_request.html">xiiRenderPipelineResourceRequest</a> &amp;request)</td></tr>
 <tr class="memdesc:a67397e322044b45d24bf4d59bb5a8f10 inherit pub_methods_classxii_render_pipeline_pass_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allows a pass to override resource creation for one of its outputs, typically to reuse or share GPU resources.  <br /></td></tr>
 <tr class="separator:a67397e322044b45d24bf4d59bb5a8f10 inherit pub_methods_classxii_render_pipeline_pass_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -225,12 +224,6 @@ template&lt;typename T&gt; </td></tr>
 <tr class="memdesc:ac0a423d0f813feb28b200d9a9756eab8 inherit pub_methods_classxii_reflected_class"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether the type of this instance is of the given type or derived from it. <br /></td></tr>
 <tr class="separator:ac0a423d0f813feb28b200d9a9756eab8 inherit pub_methods_classxii_reflected_class"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
-Protected Member Functions</h2></td></tr>
-<tr class="memitem:a7404d7888fcaefce0303a3991c700199" id="r_a7404d7888fcaefce0303a3991c700199"><td class="memItemLeft" align="right" valign="top"><a id="a7404d7888fcaefce0303a3991c700199" name="a7404d7888fcaefce0303a3991c700199"></a>
-<a class="el" href="../../d8/d9b/classxii_shared_ptr.html">xiiSharedPtr</a>&lt; <a class="el" href="../../d3/d05/classxii_g_a_l_graphics_pipeline_state.html">xiiGALGraphicsPipelineState</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>CreatePipelineState</b> (const <a class="el" href="../../d9/d0f/structxii_render_view_context.html">xiiRenderViewContext</a> &amp;renderViewContext) const</td></tr>
-<tr class="separator:a7404d7888fcaefce0303a3991c700199"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
 <tr class="memitem:ab1e1ad3e97ab90e277979c92f9ac5dc2" id="r_ab1e1ad3e97ab90e277979c92f9ac5dc2"><td class="memItemLeft" align="right" valign="top"><a id="ab1e1ad3e97ab90e277979c92f9ac5dc2" name="ab1e1ad3e97ab90e277979c92f9ac5dc2"></a>
@@ -242,15 +235,6 @@ Protected Attributes</h2></td></tr>
 <tr class="memitem:ab765baa80fcedaec527a393c1de16fd5" id="r_ab765baa80fcedaec527a393c1de16fd5"><td class="memItemLeft" align="right" valign="top"><a id="ab765baa80fcedaec527a393c1de16fd5" name="ab765baa80fcedaec527a393c1de16fd5"></a>
 <a class="el" href="../../d7/da3/structxii_render_pipeline_node_input_buffer_pin.html">xiiRenderPipelineNodeInputBufferPin</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_PinFrameConstants</b></td></tr>
 <tr class="separator:ab765baa80fcedaec527a393c1de16fd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:add1990ffbbb6718b27dde9689332937f" id="r_add1990ffbbb6718b27dde9689332937f"><td class="memItemLeft" align="right" valign="top"><a id="add1990ffbbb6718b27dde9689332937f" name="add1990ffbbb6718b27dde9689332937f"></a>
-<a class="el" href="../../d8/d9b/classxii_shared_ptr.html">xiiSharedPtr</a>&lt; <a class="el" href="../../d1/dbe/classxii_g_a_l_render_pass.html">xiiGALRenderPass</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_pRenderPass</b></td></tr>
-<tr class="separator:add1990ffbbb6718b27dde9689332937f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9274560bf0e055b25bd891df7240edb9" id="r_a9274560bf0e055b25bd891df7240edb9"><td class="memItemLeft" align="right" valign="top"><a id="a9274560bf0e055b25bd891df7240edb9" name="a9274560bf0e055b25bd891df7240edb9"></a>
-<a class="el" href="../../dc/da9/classxii_hybrid_array.html">xiiHybridArray</a>&lt; <a class="el" href="../../d8/d9b/classxii_shared_ptr.html">xiiSharedPtr</a>&lt; <a class="el" href="../../db/d39/classxii_g_a_l_framebuffer.html">xiiGALFramebuffer</a> &gt;, 2U &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_FramebufferCache</b></td></tr>
-<tr class="separator:a9274560bf0e055b25bd891df7240edb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0563b286e7abebb8dedeeb8237e02fc6" id="r_a0563b286e7abebb8dedeeb8237e02fc6"><td class="memItemLeft" align="right" valign="top"><a id="a0563b286e7abebb8dedeeb8237e02fc6" name="a0563b286e7abebb8dedeeb8237e02fc6"></a>
-<a class="el" href="../../d8/d9b/classxii_shared_ptr.html">xiiSharedPtr</a>&lt; <a class="el" href="../../da/d03/classxii_g_a_l_buffer.html">xiiGALBuffer</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_pPassConstantBuffer</b></td></tr>
-<tr class="separator:a0563b286e7abebb8dedeeb8237e02fc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac45828225b5626532a1c8d8405f4862f" id="r_ac45828225b5626532a1c8d8405f4862f"><td class="memItemLeft" align="right" valign="top"><a id="ac45828225b5626532a1c8d8405f4862f" name="ac45828225b5626532a1c8d8405f4862f"></a>
 <a class="el" href="../../de/dfd/structxii_enum.html">xiiEnum</a>&lt; <a class="el" href="../../d3/d28/structxii_g_a_l_m_s_a_a_sample_count.html">xiiGALMSAASampleCount</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_SampleCount</b> = <a class="el" href="../../d3/d28/structxii_g_a_l_m_s_a_a_sample_count.html#a4d174563bcfff207aa4b781b51a206b5a9b851c99c8fbc4326f36a78a115f4864">xiiGALMSAASampleCount::OneSample</a></td></tr>
 <tr class="separator:ac45828225b5626532a1c8d8405f4862f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -374,49 +358,6 @@ static const <a class="el" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a>
 
 </div>
 </div>
-<a id="a11d53f00072269dca26f8288c1c8e16c" name="a11d53f00072269dca26f8288c1c8e16c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a11d53f00072269dca26f8288c1c8e16c">&#9670;&#160;</a></span>InitializeRenderPipelinePass()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a> xiiMSAAUpscalePass::InitializeRenderPipelinePass </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="../../dd/df1/classxii_view.html">xiiView</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>view</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="../../d0/d60/classxii_array_ptr.html">xiiArrayPtr</a>&lt; <a class="el" href="../../d3/deb/structxii_render_pipeline_pass_connection.html">xiiRenderPipelinePassConnection</a> *const &gt;</td>          <td class="paramname"><span class="paramname"><em>pInputs</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="../../d0/d60/classxii_array_ptr.html">xiiArrayPtr</a>&lt; <a class="el" href="../../d3/deb/structxii_render_pipeline_pass_connection.html">xiiRenderPipelinePassConnection</a> *const &gt;</td>          <td class="paramname"><span class="paramname"><em>pOutputs</em></span>&#160;)</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Called once before the first execution to allow the pass to initialize itself based on the graph and view context. </p>
-<p>This is typically used to:</p><ul>
-<li>Resolve input/output resource handles from connections.</li>
-<li>Cache relevant view properties.</li>
-<li>Prepare internal state (e.g., sampler bindings, descriptor layouts). </li>
-</ul>
-
-<p>Reimplemented from <a class="el" href="../../dd/d7b/classxii_render_pipeline_pass_base.html#a1199f644520267014fe56f920e1097ec">xiiRenderPipelinePassBase</a>.</p>
-
-</div>
-</div>
 <a id="a8c931f11ebbc337573a06fa2400b8180" name="a8c931f11ebbc337573a06fa2400b8180"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8c931f11ebbc337573a06fa2400b8180">&#9670;&#160;</a></span>Serialize()</h2>
 
@@ -456,7 +397,7 @@ static const <a class="el" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../da/da0/classxii_m_s_a_a_upscale_pass.html">xiiMSAAUpscalePass</a></li>
-    <li class="footer">Generated on Mon Dec 22 2025 20:36:25 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Tue Dec 23 2025 16:25:37 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 </body>

@@ -1,8 +1,5 @@
 var NAVTREEINDEX50 =
 {
-"de/def/structxii_input_slot_flags_1_1_bits.html":[3,0,1229,0],
-"de/def/structxii_texture2_d_resource_descriptor.html":[3,0,2422],
-"de/def/structxii_texture2_d_resource_descriptor.html#a09ab317d10fd9c6531979a50e2299015":[3,0,2422,0],
 "de/def/structxii_texture2_d_resource_descriptor.html#a680e831b3757094b2f39263ff8e75b92":[3,0,2422,3],
 "de/def/structxii_texture2_d_resource_descriptor.html#a8d4ae42d43b4b321a9dbcb3c13d05b69":[3,0,2422,2],
 "de/def/structxii_texture2_d_resource_descriptor.html#acc0fee01b4740335a2941c67bdec8547":[3,0,2422,1],
@@ -249,5 +246,8 @@ var NAVTREEINDEX50 =
 "df/d65/structxii_expression_byte_code_1_1_op_code.html":[3,0,695,0],
 "df/d66/structxii_resource_load_data.html":[3,0,2048],
 "df/d66/structxii_resource_load_data.html#a19ac6e3a95299f8ab4616106884b6188":[3,0,2048,0],
-"df/d66/structxii_resource_load_data.html#a624007d09d6382ee2c4a1f9553de1e33":[3,0,2048,3]
+"df/d66/structxii_resource_load_data.html#a624007d09d6382ee2c4a1f9553de1e33":[3,0,2048,3],
+"df/d66/structxii_resource_load_data.html#a7c7c6ca608c5c946a8b0c988e1e335b8":[3,0,2048,1],
+"df/d66/structxii_resource_load_data.html#af78559358644dfa506f5e90ca7e5943b":[3,0,2048,2],
+"df/d67/structxii_reflection_utils_1_1_enum_key_value_pair.html":[3,0,1955,1]
 };

@@ -99,6 +99,7 @@ $(function(){initNavTree('da/d27/classxii_render_context.html','../../'); initRe
 
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
@@ -113,8 +114,23 @@ $(function(){initNavTree('da/d27/classxii_render_context.html','../../'); initRe
 
 <p><code>#include &lt;<a class="el" href="../../d3/dc5/_render_context_8h_source.html">RenderContext.h</a>&gt;</code></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d06/classxii_render_context_1_1_command_list_scope.html">CommandListScope</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d2c/classxii_render_context_1_1_compute_scope.html">ComputeScope</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d6b/classxii_render_context_1_1_graphics_scope.html">GraphicsScope</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
+<tr class="memitem:a2fce375200174a586d610678edb79505" id="r_a2fce375200174a586d610678edb79505"><td class="memItemLeft" align="right" valign="top"><a id="a2fce375200174a586d610678edb79505" name="a2fce375200174a586d610678edb79505"></a>enum class &#160;</td><td class="memItemRight" valign="bottom"><b>CommandListType</b> { <b>Graphics</b>
+, <b>Compute</b>
+, <b>Transfer</b>
+, <b>Unknown</b>
+ }</td></tr>
+<tr class="separator:a2fce375200174a586d610678edb79505"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac3a4f5ee14f69a0502ad294957c9a5c8" id="r_ac3a4f5ee14f69a0502ad294957c9a5c8"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac3a4f5ee14f69a0502ad294957c9a5c8">RenderContextScope</a> : xiiUInt8 { <a class="el" href="#ac3a4f5ee14f69a0502ad294957c9a5c8a6adf97f83acf6453d4a6a4b1070f3754">None</a> = 0
 , <a class="el" href="#ac3a4f5ee14f69a0502ad294957c9a5c8ad334dfcea59127bedfcdbe0a3ee7f494">Graphics</a>
 , <a class="el" href="#ac3a4f5ee14f69a0502ad294957c9a5c8aa623a8d0366bf079411aa30be45b2d10">Compute</a>
@@ -275,6 +291,16 @@ static <a class="el" href="../../da/d27/classxii_render_context.html">xiiRenderC
 <tr class="memitem:aaf822c14a7f1d46b45a11acafa052786" id="r_aaf822c14a7f1d46b45a11acafa052786"><td class="memItemLeft" align="right" valign="top"><a id="aaf822c14a7f1d46b45a11acafa052786" name="aaf822c14a7f1d46b45a11acafa052786"></a>
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>DestroyInstance</b> (<a class="el" href="../../da/d27/classxii_render_context.html">xiiRenderContext</a> *pRenderContext)</td></tr>
 <tr class="separator:aaf822c14a7f1d46b45a11acafa052786"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29b126a7d5ab527a1f0f3607e586a498" id="r_a29b126a7d5ab527a1f0f3607e586a498"><td class="memItemLeft" align="right" valign="top"><a id="a29b126a7d5ab527a1f0f3607e586a498" name="a29b126a7d5ab527a1f0f3607e586a498"></a>
+static XII_ALWAYS_INLINE <a class="el" href="../../d9/d6b/classxii_render_context_1_1_graphics_scope.html">GraphicsScope</a>&#160;</td><td class="memItemRight" valign="bottom"><b>BeginRenderingScope</b> (const <a class="el" href="../../d9/d0f/structxii_render_view_context.html">xiiRenderViewContext</a> &amp;viewContext, const <a class="el" href="../../d4/d1b/classxii_rendering_setup.html">xiiRenderingSetup</a> &amp;renderingSetup, <a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sName={}, bool bStereoRendering=false)</td></tr>
+<tr class="separator:a29b126a7d5ab527a1f0f3607e586a498"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44bb311567dac77517c28fece0530fdd" id="r_a44bb311567dac77517c28fece0530fdd"><td class="memItemLeft" align="right" valign="top"><a id="a44bb311567dac77517c28fece0530fdd" name="a44bb311567dac77517c28fece0530fdd"></a>
+static XII_ALWAYS_INLINE <a class="el" href="../../da/d2c/classxii_render_context_1_1_compute_scope.html">ComputeScope</a>&#160;</td><td class="memItemRight" valign="bottom"><b>BeginComputeScope</b> (const <a class="el" href="../../d9/d0f/structxii_render_view_context.html">xiiRenderViewContext</a> &amp;viewContext, <a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sName={})</td></tr>
+<tr class="separator:a44bb311567dac77517c28fece0530fdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0bd68096e2ed1ca1d2dcf98138347e49" id="r_a0bd68096e2ed1ca1d2dcf98138347e49"><td class="memTemplParams" colspan="2"><a id="a0bd68096e2ed1ca1d2dcf98138347e49" name="a0bd68096e2ed1ca1d2dcf98138347e49"></a>
+template&lt;CommandListType Type&gt; </td></tr>
+<tr class="memitem:a0bd68096e2ed1ca1d2dcf98138347e49"><td class="memTemplItemLeft" align="right" valign="top">static XII_ALWAYS_INLINE <a class="el" href="../../d4/d06/classxii_render_context_1_1_command_list_scope.html">CommandListScope</a>&lt; Type &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>BeginCommandListScope</b> (<a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sName={})</td></tr>
+<tr class="separator:a0bd68096e2ed1ca1d2dcf98138347e49"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a42b21d466ec0e6eb7c1cbb1908252dcf" id="r_a42b21d466ec0e6eb7c1cbb1908252dcf"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d6/dbe/structxii_g_a_l_sampler_creation_description.html">xiiGALSamplerCreationDescription</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a42b21d466ec0e6eb7c1cbb1908252dcf">GetDefaultSamplerDescription</a> (<a class="el" href="../../d7/d55/structxii_bitflags.html">xiiBitflags</a>&lt; <a class="el" href="../../d1/d9e/structxii_default_sampler_flags.html">xiiDefaultSamplerFlags</a> &gt; flags)</td></tr>
 <tr class="memdesc:a42b21d466ec0e6eb7c1cbb1908252dcf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves a default sampler creation description based on the given flags.  <br /></td></tr>
 <tr class="separator:a42b21d466ec0e6eb7c1cbb1908252dcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -875,7 +901,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>xiiMemoryUtils</b></
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../da/d27/classxii_render_context.html">xiiRenderContext</a></li>
-    <li class="footer">Generated on Mon Dec 22 2025 20:36:26 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Tue Dec 23 2025 16:25:38 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 </body>

@@ -1,5 +1,8 @@
 var classxii_render_context =
 [
+    [ "CommandListScope", "d4/d06/classxii_render_context_1_1_command_list_scope.html", null ],
+    [ "ComputeScope", "da/d2c/classxii_render_context_1_1_compute_scope.html", null ],
+    [ "GraphicsScope", "d9/d6b/classxii_render_context_1_1_graphics_scope.html", null ],
     [ "RenderContextScope", "da/d27/classxii_render_context.html#ac3a4f5ee14f69a0502ad294957c9a5c8", [
       [ "None", "da/d27/classxii_render_context.html#ac3a4f5ee14f69a0502ad294957c9a5c8a6adf97f83acf6453d4a6a4b1070f3754", null ],
       [ "Graphics", "da/d27/classxii_render_context.html#ac3a4f5ee14f69a0502ad294957c9a5c8ad334dfcea59127bedfcdbe0a3ee7f494", null ],

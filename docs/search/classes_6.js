@@ -8,5 +8,6 @@ var searchData=
   ['getargument_3c_200_2c_20head_2c_20tail_2e_2e_2e_20_3e_5',['getArgument&lt; 0, Head, Tail... &gt;',['../da/d80/structget_argument_3_010_00_01_head_00_01_tail_8_8_8_01_4.html',1,'']]],
   ['getargument_3c_20_5findex_2c_20head_2c_20tail_2e_2e_2e_20_3e_6',['getArgument&lt; _Index, Head, Tail... &gt;',['../d5/dfd/structget_argument_3_01___index_00_01_head_00_01_tail_8_8_8_01_4.html',1,'']]],
   ['gpuscope_7',['GPUScope',['../d6/dbd/structxii_profiling_system_1_1_g_p_u_scope.html',1,'xiiProfilingSystem']]],
-  ['gridvertex_8',['GridVertex',['../d6/dc8/struct_grid_vertex.html',1,'']]]
+  ['graphicsscope_8',['GraphicsScope',['../d9/d6b/classxii_render_context_1_1_graphics_scope.html',1,'xiiRenderContext']]],
+  ['gridvertex_9',['GridVertex',['../d6/dc8/struct_grid_vertex.html',1,'']]]
 ];

@@ -1,8 +1,5 @@
 var NAVTREEINDEX52 =
 {
-"df/de3/structxii_resource_event.html#a2b5ad3854f4f75171ab0cb2b9ae321c3a99f9890f79fbf9446f99ff34af09d099":[3,0,2044,0,0],
-"df/de3/structxii_resource_event.html#a2b5ad3854f4f75171ab0cb2b9ae321c3ac1a938ce8e0dc1299d8fe9a52faf2904":[3,0,2044,0,4],
-"df/de4/structxii_g_a_l_pipeline_resource_flags_1_1_bits.html":[3,0,902,0],
 "df/de8/structxii_virtual_thumb_stick_1_1_input.html":[3,0,2594,2],
 "df/de8/structxii_virtual_thumb_stick_1_1_input.html#a7189056b914d17469adedc28b2eb82ec":[3,0,2594,2,0],
 "df/de8/structxii_virtual_thumb_stick_1_1_input.html#a7189056b914d17469adedc28b2eb82eca37cce666f643d4f7d62c25badb2193df":[3,0,2594,2,0,1],

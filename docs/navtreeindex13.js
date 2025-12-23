@@ -1,5 +1,6 @@
 var NAVTREEINDEX13 =
 {
+"d4/d0b/classxii_g_a_l_buffer_vulkan.html#a4fa3d22615a815eff64bf55058d17590":[3,0,789,0],
 "d4/d0c/classxii_qt_pick_document_object_dlg.html":[3,0,1812],
 "d4/d0c/classxii_qt_pick_document_object_dlg.html#aa9a9f98b6eb735e66d7a34a7a2cbcf0b":[3,0,1812,1],
 "d4/d0e/classxii_qt_property_editor_double_angle_widget.html":[3,0,1828],
@@ -89,7 +90,7 @@ var NAVTREEINDEX13 =
 "d4/d1e/classxii_memory_stream_container_storage.html#ac163806ad9aa3329fdc7ca3be2a23bc3":[3,0,1389,3],
 "d4/d1e/classxii_memory_stream_container_storage.html#acbb92b71b541930dfb5d9afe51e376a5":[3,0,1389,1],
 "d4/d1e/classxii_memory_stream_container_storage.html#aff68ebadf17b547e375b47331f0ed20f":[3,0,1389,6],
-"d4/d1f/structxii_command_line_option_enum_1_1_enum_key_value.html":[3,0,355,0],
+"d4/d1f/structxii_command_line_option_enum_1_1_enum_key_value.html":[3,0,356,0],
 "d4/d20/classxii_simd_quatd.html":[3,0,2210],
 "d4/d20/classxii_simd_quatd.html#a0d51fb03fd47f878bbb368c9da7e7932":[3,0,2210,0],
 "d4/d20/classxii_simd_quatd.html#a5e66c5ec11d44c577fd258a0a9da0dc3":[3,0,2210,6],
@@ -138,11 +139,11 @@ var NAVTREEINDEX13 =
 "d4/d31/structxii_g_a_l_graphics_adapter_vendor.html#acb0977587f7d17323a6efb5d12004508adf369c0acc20ecb310b311537f303f85":[3,0,862,0,11],
 "d4/d31/structxii_g_a_l_graphics_adapter_vendor.html#acb0977587f7d17323a6efb5d12004508af51c4115f4eee748ce220e9aee6a119c":[3,0,862,0,1],
 "d4/d31/structxii_g_a_l_graphics_adapter_vendor.html#acb0977587f7d17323a6efb5d12004508af754a75f6beabb24da1777a43e6bccc0":[3,0,862,0,2],
-"d4/d34/classxii_camera_shake_component.html":[3,0,280],
-"d4/d34/classxii_camera_shake_component.html#a24fcec7c51ddd16256504972305edcc1":[3,0,280,0],
-"d4/d34/classxii_camera_shake_component.html#a317b81eadc13922aa9c02061eb9fa63a":[3,0,280,1],
-"d4/d34/classxii_camera_shake_component.html#a3b4098d83b909c5155707bcd8dc6da43":[3,0,280,3],
-"d4/d34/classxii_camera_shake_component.html#a522598ed028747ad9604bac80f2e31a0":[3,0,280,2],
+"d4/d34/classxii_camera_shake_component.html":[3,0,281],
+"d4/d34/classxii_camera_shake_component.html#a24fcec7c51ddd16256504972305edcc1":[3,0,281,0],
+"d4/d34/classxii_camera_shake_component.html#a317b81eadc13922aa9c02061eb9fa63a":[3,0,281,1],
+"d4/d34/classxii_camera_shake_component.html#a3b4098d83b909c5155707bcd8dc6da43":[3,0,281,3],
+"d4/d34/classxii_camera_shake_component.html#a522598ed028747ad9604bac80f2e31a0":[3,0,281,2],
 "d4/d35/structxii_plugin_bundle_set.html":[3,0,1575],
 "d4/d35/structxii_plugin_bundle_set.html#a32ecfa6fa88e5805f535421096bbc2c5":[3,0,1575,1],
 "d4/d35/structxii_plugin_bundle_set.html#ab91e074973f6a90987b2864bfbab6627":[3,0,1575,2],
@@ -181,7 +182,7 @@ var NAVTREEINDEX13 =
 "d4/d46/structxii_msg_rope_pose_updated.html":[3,0,1469],
 "d4/d48/classxii_view_action.html":[3,0,2577],
 "d4/d49/classxii_adobe_c_u_b_e_reader.html":[3,0,90],
-"d4/d4c/structxii_arg_file_size.html":[3,0,182],
+"d4/d4c/structxii_arg_file_size.html":[3,0,183],
 "d4/d4d/classxii_volume_component.html":[3,0,2647],
 "d4/d4d/classxii_volume_component.html#a20b95091cf53fff94ad899ab42c62362":[3,0,2647,4],
 "d4/d4d/classxii_volume_component.html#a2d3be3b3caecd4dd9616243f1e8c15fb":[3,0,2647,1],
@@ -219,7 +220,7 @@ var NAVTREEINDEX13 =
 "d4/d57/classxii_message_loop___no_impl.html":[3,0,1422],
 "d4/d57/classxii_message_loop___no_impl.html#a2ec7303f323eb554fc7b4ee5559bd2d2":[3,0,1422,1],
 "d4/d57/classxii_message_loop___no_impl.html#a3522ab057853b0aa484db5eb34c5dcc1":[3,0,1422,0],
-"d4/d57/structxii_clock_1_1_event_data.html":[3,0,308,0],
+"d4/d57/structxii_clock_1_1_event_data.html":[3,0,309,0],
 "d4/d5a/classxii_qt_c_var_item_delegate.html":[3,0,1714],
 "d4/d5a/classxii_qt_fileserve_widget.html":[3,0,1759],
 "d4/d5b/classxii_expression_a_s_t.html":[3,0,694],
@@ -248,6 +249,5 @@ var NAVTREEINDEX13 =
 "d4/d5e/classxii_stream_reader.html#ae1e08a125dd915e90b0d4ba2849fa216":[3,0,2351,6],
 "d4/d5e/classxii_stream_reader.html#af3371cb1fad8f094bc12d60bbcbe8bd5":[3,0,2351,13],
 "d4/d5e/classxii_stream_reader.html#afdea2791aefd953d9a209a0cfd95d9a8":[3,0,2351,3],
-"d4/d5f/structxii_qt_engine_view_widget_1_1_interaction_context.html":[3,0,1745,0],
-"d4/d60/classxii_simple_asset_document.html":[3,0,2220]
+"d4/d5f/structxii_qt_engine_view_widget_1_1_interaction_context.html":[3,0,1745,0]
 };
