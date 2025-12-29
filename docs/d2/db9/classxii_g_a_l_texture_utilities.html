@@ -165,6 +165,22 @@ static <a class="el" href="../../de/dd4/structxii_g_a_l_texture_creation_descrip
 static <a class="el" href="../../de/dd4/structxii_g_a_l_texture_creation_description.html">xiiGALTextureCreationDescription</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetDefaultTextureCubeDescription</b> () noexcept</td></tr>
 <tr class="memdesc:acefacc42edd2a64304eb4ebaa77dbfc0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the default texture cube creation description. <br /></td></tr>
 <tr class="separator:acefacc42edd2a64304eb4ebaa77dbfc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af000ae51120b8d25c3a8362befe84070" id="r_af000ae51120b8d25c3a8362befe84070"><td class="memItemLeft" align="right" valign="top"><a id="af000ae51120b8d25c3a8362befe84070" name="af000ae51120b8d25c3a8362befe84070"></a>
+static XII_ALWAYS_INLINE xiiUInt32&#160;</td><td class="memItemRight" valign="bottom"><b>GetSubResourceCount</b> (const <a class="el" href="../../de/dd4/structxii_g_a_l_texture_creation_description.html">xiiGALTextureCreationDescription</a> &amp;description) noexcept</td></tr>
+<tr class="memdesc:af000ae51120b8d25c3a8362befe84070"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the total number of subresources for the given texture description. <br /></td></tr>
+<tr class="separator:af000ae51120b8d25c3a8362befe84070"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b9694da2d50b877b3f9e79f29a23f8c" id="r_a7b9694da2d50b877b3f9e79f29a23f8c"><td class="memItemLeft" align="right" valign="top"><a id="a7b9694da2d50b877b3f9e79f29a23f8c" name="a7b9694da2d50b877b3f9e79f29a23f8c"></a>
+static XII_ALWAYS_INLINE xiiUInt32&#160;</td><td class="memItemRight" valign="bottom"><b>GetRequiredRowPitch</b> (const <a class="el" href="../../de/dd4/structxii_g_a_l_texture_creation_description.html">xiiGALTextureCreationDescription</a> &amp;description, xiiUInt32 uiMipLevel)</td></tr>
+<tr class="memdesc:a7b9694da2d50b877b3f9e79f29a23f8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the required row pitch for the given texture description and mip level. <br /></td></tr>
+<tr class="separator:a7b9694da2d50b877b3f9e79f29a23f8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1026ef82297518bd4b6a81d9276361f3" id="r_a1026ef82297518bd4b6a81d9276361f3"><td class="memItemLeft" align="right" valign="top"><a id="a1026ef82297518bd4b6a81d9276361f3" name="a1026ef82297518bd4b6a81d9276361f3"></a>
+static XII_ALWAYS_INLINE xiiUInt32&#160;</td><td class="memItemRight" valign="bottom"><b>GetRequiredSlicePitch</b> (const <a class="el" href="../../de/dd4/structxii_g_a_l_texture_creation_description.html">xiiGALTextureCreationDescription</a> &amp;description, xiiUInt32 uiMipLevel)</td></tr>
+<tr class="memdesc:a1026ef82297518bd4b6a81d9276361f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the required slice pitch for the given texture description and mip level. <br /></td></tr>
+<tr class="separator:a1026ef82297518bd4b6a81d9276361f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab557c7e5ab73d35182ef9a5462253883" id="r_ab557c7e5ab73d35182ef9a5462253883"><td class="memItemLeft" align="right" valign="top"><a id="ab557c7e5ab73d35182ef9a5462253883" name="ab557c7e5ab73d35182ef9a5462253883"></a>
+static <a class="el" href="../../dc/de1/structxii_g_a_l_texture_data.html">xiiGALTextureData</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetZeroMemoryInitialData</b> (const <a class="el" href="../../de/dd4/structxii_g_a_l_texture_creation_description.html">xiiGALTextureCreationDescription</a> description, <a class="el" href="../../dc/da9/classxii_hybrid_array.html">xiiHybridArray</a>&lt; <a class="el" href="../../d3/d22/structxii_g_a_l_texture_sub_resource_data.html">xiiGALTextureSubResourceData</a>, 2U &gt; &amp;out_subresourceData, <a class="el" href="../../dc/da4/classxii_dynamic_array.html">xiiDynamicArray</a>&lt; xiiUInt8 &gt; &amp;out_Data)</td></tr>
+<tr class="memdesc:ab557c7e5ab73d35182ef9a5462253883"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fills the out_subresourceData array with zero-initialized data pointers for all subresources of the given texture description. <br /></td></tr>
+<tr class="separator:ab557c7e5ab73d35182ef9a5462253883"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="ae83fb74f9c27ce37ed989ecf82f34f2c" name="ae83fb74f9c27ce37ed989ecf82f34f2c"></a>
@@ -432,7 +448,7 @@ static <a class="el" href="../../de/dd4/structxii_g_a_l_texture_creation_descrip
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d2/db9/classxii_g_a_l_texture_utilities.html">xiiGALTextureUtilities</a></li>
-    <li class="footer">Generated on Tue Dec 23 2025 16:25:37 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Mon Dec 29 2025 16:55:13 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 </body>
