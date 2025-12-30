@@ -53,7 +53,7 @@ var searchData=
   ['recreateanchorat_50',['RecreateAnchorAt',['../df/d4a/classxii_spatial_anchor_component.html#aedc483ea821002c0b65ac4ece58613d3',1,'xiiSpatialAnchorComponent']]],
   ['recreatevisualshaderfile_51',['RecreateVisualShaderFile',['../d6/d64/classxii_material_asset_document.html#abac7e2234898933070ffebedfe0caf03',1,'xiiMaterialAssetDocument']]],
   ['recycleaftersubmit_52',['RecycleAfterSubmit',['../da/d84/classxii_g_a_l_command_buffer_pool_vulkan.html#af1a5e6d0bda03c62d06e972f4d1fc28a',1,'xiiGALCommandBufferPoolVulkan']]],
-  ['recyclestagingtexture_53',['RecycleStagingTexture',['../d2/dd0/classxii_g_a_l_image_capture.html#ab18c9f29edac528a8b2d4d8d25fb74c2',1,'xiiGALImageCapture']]],
+  ['recyclestagingtexture_53',['RecycleStagingTexture',['../d2/dd0/classxii_g_a_l_image_capture.html#ab18c9f29edac528a8b2d4d8d25fb74c2',1,'xiiGALImageCapture::RecycleStagingTexture()'],['../d9/ded/classxii_g_a_l_texture_readback.html#aa553a792d314c81937f9a85d3c0917c4',1,'xiiGALTextureReadback::RecycleStagingTexture()']]],
   ['reduceintegralfraction_54',['ReduceIntegralFraction',['../d8/daa/classxii_rational.html#ae548aac037389052ab23ba117f146c54',1,'xiiRational']]],
   ['register_55',['Register',['../d2/d1c/classxii_singleton_registry.html#a064155a90341f3c2ab240122349e9bac',1,'xiiSingletonRegistry']]],
   ['registeractionmap_56',['RegisterActionMap',['../d5/db7/classxii_action_map_manager.html#a988a70291673ce5f786c038a62136c79',1,'xiiActionMapManager']]],

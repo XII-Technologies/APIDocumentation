@@ -733,6 +733,8 @@ var hierarchy =
       [ "xiiQtSearchableMenu", "d3/d9e/classxii_qt_searchable_menu.html", null ],
       [ "xiiQtSliderWidgetAction", "d9/d9c/classxii_qt_slider_widget_action.html", null ]
     ] ],
+    [ "xiiGALTextureReadback::ReadbackCapture", "d8/dae/structxii_g_a_l_texture_readback_1_1_readback_capture.html", null ],
+    [ "xiiGALTextureReadback::ReadbackRequest", "d4/d62/structxii_g_a_l_texture_readback_1_1_readback_request.html", null ],
     [ "xiiInternal::WorldData::ReadMarker", "dc/d8c/classxii_internal_1_1_world_data_1_1_read_marker.html", null ],
     [ "xiiRecentFilesList::RecentFile", "d6/d57/structxii_recent_files_list_1_1_recent_file.html", null ],
     [ "xiiExpression::Register", "d5/d08/structxii_expression_1_1_register.html", null ],
@@ -3312,7 +3314,8 @@ var hierarchy =
     [ "xiiArrayBase< xiiSharedPtr< xiiGALTexture >, xiiDynamicArrayBase< xiiSharedPtr< xiiGALTexture > > >", "da/d4c/classxii_array_base.html", [
       [ "xiiDynamicArrayBase< xiiSharedPtr< xiiGALTexture > >", "d2/dea/classxii_dynamic_array_base.html", [
         [ "xiiDynamicArray< xiiSharedPtr< xiiGALTexture >, xiiDefaultAllocatorWrapper >", "dc/da4/classxii_dynamic_array.html", [
-          [ "xiiHybridArray< xiiSharedPtr< xiiGALTexture >, 2U >", "dc/da9/classxii_hybrid_array.html", null ]
+          [ "xiiHybridArray< xiiSharedPtr< xiiGALTexture >, 2U >", "dc/da9/classxii_hybrid_array.html", null ],
+          [ "xiiHybridArray< xiiSharedPtr< xiiGALTexture >, 4U >", "dc/da9/classxii_hybrid_array.html", null ]
         ] ],
         [ "xiiDynamicArray< xiiSharedPtr< xiiGALTexture > >", "dc/da4/classxii_dynamic_array.html", null ]
       ] ]
@@ -4155,6 +4158,9 @@ var hierarchy =
     [ "xiiDequeBase< Node, Construct >", "d1/d7d/classxii_deque_base.html", [
       [ "xiiDeque< Node, xiiNullAllocatorWrapper, false >", "d8/df8/classxii_deque.html", null ]
     ] ],
+    [ "xiiDequeBase< Pending, true >", "d1/d7d/classxii_deque_base.html", [
+      [ "xiiDeque< Pending >", "d8/df8/classxii_deque.html", null ]
+    ] ],
     [ "xiiDequeBase< PendingTextureDescription, true >", "d1/d7d/classxii_deque_base.html", [
       [ "xiiDeque< PendingTextureDescription >", "d8/df8/classxii_deque.html", null ]
     ] ],
@@ -4956,6 +4962,7 @@ var hierarchy =
       [ "xiiEnum< xiiGALTextureComponentSwizzle >", "de/dfd/structxii_enum.html", null ]
     ] ],
     [ "xiiGALTextureData", "dc/de1/structxii_g_a_l_texture_data.html", null ],
+    [ "xiiGALTextureReadback", "d9/ded/classxii_g_a_l_texture_readback.html", null ],
     [ "xiiGALTextureSubResourceData", "d3/d22/structxii_g_a_l_texture_sub_resource_data.html", null ],
     [ "xiiGALTextureUtilities", "d2/db9/classxii_g_a_l_texture_utilities.html", null ],
     [ "xiiGALTextureViewFlags", "db/d49/structxii_g_a_l_texture_view_flags.html", null ],
@@ -6896,6 +6903,7 @@ var hierarchy =
               [ "xiiMSAAResolvePass", "d4/de4/classxii_m_s_a_a_resolve_pass.html", null ],
               [ "xiiMSAAUpscalePass", "da/da0/classxii_m_s_a_a_upscale_pass.html", null ],
               [ "xiiPickingRenderPass", "db/d83/classxii_picking_render_pass.html", null ],
+              [ "xiiSelectionHighlightPass", "d9/d58/classxii_selection_highlight_pass.html", null ],
               [ "xiiSimpleRenderPass", "d8/d79/classxii_simple_render_pass.html", null ]
             ] ],
             [ "xiiPresentPipelinePass", "df/dcc/classxii_present_pipeline_pass.html", [
